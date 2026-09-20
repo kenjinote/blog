@@ -4,7 +4,7 @@ description: "深入解說關於質數出現規律性的數學金字塔：質數
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["數學", "algorithms"]
+categories: ["mathematics", "algorithms"]
 tags:
   - "質數定理"
   - "黎曼猜想"

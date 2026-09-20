@@ -4,7 +4,7 @@ description: "شرح مفصل لـ 'نظرية الكرة المشعرة (Hairy 
 slug: "hairy-ball-theorem"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "topology"]
+categories: ["mathematics", "topology"]
 tags:
   - "رياضيات"
   - "طوبولوجيا"

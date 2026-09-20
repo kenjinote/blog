@@ -4,7 +4,7 @@ description: "谷山・志村予想で知られる世界的数学者、志村五
 slug: "shimura-goro"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "人物伝"]
+categories: ["mathematics", "biography"]
 tags: ["Goro Shimura", "Number Theory", "Taniyama-Shimura Conjecture", "Fermat's Last Theorem"]
 ---
 

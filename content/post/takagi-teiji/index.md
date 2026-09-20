@@ -5,13 +5,13 @@ slug: 'takagi-teiji'
 date: '2026-09-20T19:50:00+09:00'
 image: 'eyecatch.jpg'
 categories:
-  - '数学'
-  - '人物伝'
+  - 'mathematics'
+  - 'biography'
 tags:
   - 'Teiji Takagi'
   - 'Class Field Theory'
   - 'Number Theory'
-  - 'History of 数学'
+  - 'History of Mathematics'
 ---
 
 ## はじめに

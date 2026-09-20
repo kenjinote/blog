@@ -5,7 +5,7 @@ date: "2026-09-11T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "quantum-computing", "Mathematik"]
+categories: ["cryptography", "quantum-computing", "mathematics"]
 tags: ["PQC", "NIST", "Kyber", "Dilithium"]
 description: 'Wir erklären ausführlich die Bedrohung der Kryptographie durch das Aufkommen von Quantencomputern und die dagegen eingesetzten Algorithmen der Post-Quanten-Kryptographie (PQC) nach NIST-Standard wie Kyber, Dilithium, FALCON und SPHINCS+, von den mathematischen Grundlagen der Gitterkryptographie (LWE-Problem) bis hin zu detaillierten Mechanismen und Leistungsvergleichen.'
 ---

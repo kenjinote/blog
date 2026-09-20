@@ -4,7 +4,7 @@ description: "Explicamos en detalle el Teorema Chino del Resto (CRT), originado 
 slug: "chinese-remainder-theorem"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["Matemáticas", "cryptography"]
+categories: ["mathematics", "cryptography"]
 tags:
   - "Teorema Chino del Resto"
   - "CRT"

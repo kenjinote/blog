@@ -4,7 +4,7 @@ description: "Fermat's Last Theorem, the most famous unsolved problem in the his
 slug: "fermats-last-theorem"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematics", "history"]
+categories: ["mathematics", "history"]
 tags:
   - "Fermat's Last Theorem"
   - "Andrew Wiles"

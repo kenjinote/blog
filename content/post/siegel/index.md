@@ -4,7 +4,7 @@ description: "ジーゲルの生涯と、数論や天体力学における彼の
 slug: "siegel"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "人物伝"]
+categories: ["mathematics", "biography"]
 tags: ["ジーゲル", "数論", "数学者", "天体力学", "解析的整数論", "ディオファントス方程式"]
 ---
 

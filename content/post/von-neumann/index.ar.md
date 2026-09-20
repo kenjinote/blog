@@ -4,7 +4,7 @@ description: 'شرح مفصل لحياة عالم الرياضيات العبق�
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'
 image: 'eyecatch.jpg'
-categories: ['رياضيات', 'سيرة شخصية']
+categories: ['mathematics', 'biography']
 tags: ['جون فون نيومان', 'ميكانيكا الكم', 'نظرية الألعاب', 'علوم الحاسوب', 'عالم رياضيات', 'عبقري']
 ---
 

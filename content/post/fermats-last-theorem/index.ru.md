@@ -4,7 +4,7 @@ description: "«Великая теорема Ферма» — самая изв
 slug: "fermats-last-theorem"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["Математика", "history"]
+categories: ["mathematics", "history"]
 tags:
   - "Великая теорема Ферма"
   - "Эндрю Уайлс"

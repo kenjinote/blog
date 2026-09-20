@@ -4,7 +4,7 @@ description: "A detailed explanation of 'Goldbach's Conjecture', one of the most
 slug: "goldbachs-conjecture"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "unsolved-problems"]
+categories: ["mathematics", "unsolved-problems"]
 tags:
   - "Prime Numbers"
   - "Number Theory"

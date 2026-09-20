@@ -4,7 +4,7 @@ description: "An explanation of the Law of Large Numbers, a crucial theorem in p
 slug: "law-of-large-numbers"
 date: 2026-09-14
 image: "eyecatch.jpg"
-categories: ["Mathematics", "data-science", "gambling"]
+categories: ["mathematics", "data-science", "gambling"]
 tags:
   - "Law of Large Numbers"
   - "Probability"

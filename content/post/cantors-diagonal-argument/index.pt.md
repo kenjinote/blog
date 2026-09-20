@@ -4,7 +4,7 @@ description: "Existe uma diferença de \"tamanho\" no infinito. Explicaremos det
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemática", "foundations-of-Matemática", "set-theory"]
+categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "Argumento de Diagonalização", "Infinito", "Matemática", "Prova"]
 ---
 

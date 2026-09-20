@@ -4,7 +4,7 @@ description: "Was ist die Galois-Theorie? Warum gibt es keine Lösungsformel fü
 slug: "galois-theory"
 date: "2026-09-14T13:04:13+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "algebra"]
+categories: ["mathematics", "algebra"]
 tags:
   - "Galois-Theorie"
   - "Gruppentheorie"

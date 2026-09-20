@@ -5,7 +5,7 @@ slug: 'affine-and-projective-transformations'
 date: '2026-09-20T15:15:00+09:00'
 image: 'eyecatch.jpg'
 categories:
-  - 'गणित'
+  - 'mathematics'
 tags:
   - 'linear algebra'
   - 'geometry'

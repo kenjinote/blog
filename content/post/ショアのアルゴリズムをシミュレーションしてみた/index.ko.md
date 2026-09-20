@@ -5,7 +5,7 @@ date: "2026-09-11T08:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["quantum-computing", "python", "수학"]
+categories: ["quantum-computing", "python", "mathematics"]
 tags: ["Shor's Algorithm", "Qiskit", "Quantum Fourier Transform"]
 description: '양자 컴퓨터가 현재의 암호 기술을 어떻게 파괴할 가능성이 있는지, 쇼어 알고리즘의 수학적 배경부터 Python을 이용한 구현까지 상세히 해설합니다.'
 ---

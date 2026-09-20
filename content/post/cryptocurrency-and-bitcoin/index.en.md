@@ -4,7 +4,7 @@ description: "A comprehensive guide explaining the technical and mathematical me
 slug: "cryptocurrency-and-bitcoin"
 date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["technology", "Mathematics"]
+categories: ["technology", "mathematics"]
 tags: ["bitcoin", "cryptography", "blockchain"]
 ---
 

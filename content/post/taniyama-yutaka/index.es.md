@@ -4,7 +4,7 @@ description: 'Una inmersión profunda en la vida de Yutaka Taniyama, el brillant
 slug: "taniyama-yutaka"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemáticas", "Biografía"]
+categories: ["mathematics", "biography"]
 tags: ["Yutaka Taniyama", "Matemáticas", "Último Teorema de Fermat", "Conjetura de Taniyama-Shimura", "Curvas Elípticas", "Formas Modulares"]
 ---
 

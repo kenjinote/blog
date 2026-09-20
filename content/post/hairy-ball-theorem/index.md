@@ -4,7 +4,7 @@ description: "位相幾何学（トポロジー）の有名な定理である「
 slug: "hairy-ball-theorem"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "topology"]
+categories: ["mathematics", "topology"]
 tags:
   - "Math"
   - "Topology"

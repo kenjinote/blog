@@ -8,7 +8,7 @@ tags:
   - "Halting Problem"
   - "Alan Turing"
   - "Algorithm"
-  - "Mathematik"
+  - "Mathematics"
 slug: "halting-problem"
 ---
 

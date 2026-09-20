@@ -4,7 +4,7 @@ description: "什麼是秘書問題（Secretary Problem）？透過這個最佳�
 slug: "secretary-problem"
 date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "algorithms", "decision-making"]
+categories: ["mathematics", "algorithms", "decision-making"]
 tags:
   - "最佳停止"
   - "秘書問題"

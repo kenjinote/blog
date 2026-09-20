@@ -4,7 +4,7 @@ description: "अगर हम '1+2+3+4+...' को अनंत तक जो�
 slug: "ramanujan-summation"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "physics"]
+categories: ["mathematics", "physics"]
 tags:
   - "अनंत श्रेणी"
   - "विश्लेषणात्मक निरंतरता"

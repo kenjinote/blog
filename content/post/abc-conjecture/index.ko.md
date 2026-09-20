@@ -4,7 +4,7 @@ description: "ABC 추측의 개요와 모치즈키 신이치 교수에 의한 �
 slug: "abc-conjecture"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["수학", "science"]
+categories: ["mathematics", "science"]
 tags: ["ABC 추측", "정수론", "IUT 이론", "모치즈키 신이치"]
 ---
 

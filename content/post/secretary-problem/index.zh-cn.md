@@ -4,7 +4,7 @@ description: "什么是秘书问题（Secretary Problem）？通过这个最佳�
 slug: "secretary-problem"
 date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "algorithms", "decision-making"]
+categories: ["mathematics", "algorithms", "decision-making"]
 tags:
   - "最佳停止"
   - "秘书问题"

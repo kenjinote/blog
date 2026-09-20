@@ -4,7 +4,7 @@ description: "تعمق في وجود ونعومة حلول معادلات ناف
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["رياضيات", "physics"]
+categories: ["mathematics", "physics"]
 tags: ["نافييه-ستوكس", "ديناميكا الموائع", "مسائل جائزة الألفية"]
 ---
 

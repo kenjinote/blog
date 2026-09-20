@@ -4,8 +4,8 @@ description: "An in-depth look at the life of German mathematician Kurt Hensel, 
 slug: "hensel"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Biography"]
-tags: ["Kurt Hensel", "p-adic numbers", "algebraic number theory", "history of Mathematics"]
+categories: ["mathematics", "biography"]
+tags: ["Kurt Hensel", "p-adic numbers", "algebraic number theory", "history of mathematics"]
 ---
 
 ## 1. Introduction

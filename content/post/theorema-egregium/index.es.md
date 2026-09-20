@@ -4,7 +4,7 @@ description: "Sobre el 'Teorema Egregium' descubierto por Carl Friedrich Gauss, 
 slug: "theorema-egregium"
 date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemáticas", "science"]
+categories: ["mathematics", "science"]
 tags: ["Geometría", "Gauss", "Teorema de la pizza", "Theorema Egregium", "Geometría diferencial"]
 ---
 

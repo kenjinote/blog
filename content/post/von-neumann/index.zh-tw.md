@@ -4,7 +4,7 @@ description: '詳細解說天才數學家約翰·馮·紐曼的一生，從賽�
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'
 image: 'eyecatch.jpg'
-categories: ['數學', '傳記']
+categories: ['mathematics', 'biography']
 tags: ['約翰·馮·紐曼', '量子力學', '賽局理論', '計算機科學', '數學家', '天才']
 ---
 

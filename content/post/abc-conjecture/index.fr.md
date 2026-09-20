@@ -4,7 +4,7 @@ description: "Plongez dans l'aperçu de la conjecture ABC et l'approche révolut
 slug: "abc-conjecture"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "science"]
+categories: ["mathematics", "science"]
 tags: ["Conjecture ABC", "Théorie des nombres", "Théorie IUT", "Shinichi Mochizuki"]
 ---
 

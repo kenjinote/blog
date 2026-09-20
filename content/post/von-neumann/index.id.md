@@ -4,7 +4,7 @@ description: 'Penjelasan mendetail tentang kehidupan ahli matematika jenius John
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'
 image: 'eyecatch.jpg'
-categories: ['Matematika', 'Biografi']
+categories: ['mathematics', 'biography']
 tags: ['John von Neumann', 'Mekanika Kuantum', 'Teori Permainan', 'Ilmu Komputer', 'Matematikawan', 'Jenius']
 ---
 

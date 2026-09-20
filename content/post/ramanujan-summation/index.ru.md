@@ -4,7 +4,7 @@ description: "Что произойдет, если мы будем бескон
 slug: "ramanujan-summation"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories: ["Математика", "physics"]
+categories: ["mathematics", "physics"]
 tags:
   - "Бесконечные ряды"
   - "Аналитическое продолжение"

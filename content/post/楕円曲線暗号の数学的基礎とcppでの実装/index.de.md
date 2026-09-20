@@ -5,8 +5,8 @@ date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "cpp", "Mathematik"]
-tags: ["ECC", "Cryptography", "C++", "Mathematik"]
+categories: ["cryptography", "cpp", "mathematics"]
+tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 ---
 
 # Mathematische Grundlagen der Elliptischen-Kurven-Kryptographie (ECC) und ihre Implementierung in C++

@@ -4,7 +4,7 @@ description: 'Penyelaman mendalam ke dalam kehidupan Yutaka Taniyama, matematika
 slug: "taniyama-yutaka"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "Biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Yutaka Taniyama", "Matematika", "Teorema Terakhir Fermat", "Konjektur Taniyama-Shimura", "Kurva Eliptik", "Bentuk Modular"]
 ---
 

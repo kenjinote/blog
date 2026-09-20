@@ -4,7 +4,7 @@ image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Explicamos uno de los problemas no resueltos (demostrados) más famosos de la informática, el Problema de la Parada. Lo explicamos de manera fácil con demostraciones por reducción al absurdo, ejemplos intuitivos, fórmulas y diagramas."
 categories: ["computer-science", "theory-of-computation"]
-tags: ["Halting Problem", "Alan Turing", "Algorithm", "Matemáticas"]
+tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]
 slug: "halting-problem"
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-11T14:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cpp", "algorithms", "رياضيات"]
+categories: ["cpp", "algorithms", "mathematics"]
 tags: ["C++", "Miller-Rabin", "Prime Numbers", "Algorithm"]
 ---
 

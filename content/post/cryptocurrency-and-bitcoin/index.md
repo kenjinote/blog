@@ -4,7 +4,7 @@ description: "ビットコインと暗号資産の背後にある技術的・数
 slug: "cryptocurrency-and-bitcoin"
 date: "2026-09-20T23:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["technology", "数学"]
+categories: ["technology", "mathematics"]
 tags: ["bitcoin", "cryptography", "blockchain"]
 ---
 

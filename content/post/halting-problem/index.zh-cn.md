@@ -4,7 +4,7 @@ image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "解说计算机科学中最著名的未解决问题（已证明）之一的停机问题。通过反证法证明、直观的具体例子，结合数学公式和图解进行通俗易懂的说明。"
 categories: ["computer-science", "theory-of-computation"]
-tags: ["Halting Problem", "Alan Turing", "Algorithm", "数学"]
+tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]
 slug: "halting-problem"
 ---
 

@@ -5,7 +5,7 @@ slug: "cayley-hamilton-theorem"
 date: 2026-09-20T14:50:00+09:00
 image: "eyecatch.jpg"
 categories:
-  - "Mathematics"
+  - "mathematics"
 tags:
   - "linear algebra"
   - "matrix"

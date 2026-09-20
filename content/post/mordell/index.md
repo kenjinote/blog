@@ -4,7 +4,7 @@ description: "ディオファントス方程式や楕円曲線における画期
 slug: "mordell"
 date: 2026-09-20T20:10:00+09:00
 image: "eyecatch.jpg"
-categories: ["数学", "人物伝"]
+categories: ["mathematics", "biography"]
 tags: ["number theory", "Mordell", "elliptic curves", "Diophantine equations"]
 ---
 

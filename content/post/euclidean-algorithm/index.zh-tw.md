@@ -4,7 +4,7 @@ description: "全面解析用於計算最大公因數(GCD)的歐幾里得算法�
 slug: "euclidean-algorithm"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["數學"]
+categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 

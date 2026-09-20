@@ -4,7 +4,7 @@ description: "सेक्रेटरी समस्या (Secretary Problem)
 slug: "secretary-problem"
 date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "algorithms", "decision-making"]
+categories: ["mathematics", "algorithms", "decision-making"]
 tags:
   - "इष्टतम रुकावट"
   - "सेक्रेटरी समस्या"

@@ -5,8 +5,8 @@ slug: "roberval"
 date: "2026-09-20T18:50:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "Mathematics"
-  - "Biography"
+  - "mathematics"
+  - "biography"
 tags:
   - "Roberval"
   - "History of Mathematics"

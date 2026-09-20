@@ -4,7 +4,7 @@ description: "Kannst du Pi (π) finden, indem du einfach eine Nadel auf den Bode
 slug: "buffons-needle"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematik", "probability-theory"]
+categories: ["mathematics", "probability-theory"]
 tags:
   - "Pi"
   - "Simulation"

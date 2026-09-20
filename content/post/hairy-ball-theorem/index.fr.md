@@ -4,7 +4,7 @@ description: "Nous expliquons en détail le célèbre théorème de topologie ap
 slug: "hairy-ball-theorem"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "topology"]
+categories: ["mathematics", "topology"]
 tags:
   - "Mathématiques"
   - "Topologie"

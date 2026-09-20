@@ -4,7 +4,7 @@ description: "Eine detaillierte Erklärung der gesamten Geschichte der 'Poincar�
 date: "2026-09-14T13:04:13+09:00"
 slug: "poincare-conjecture"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "science"]
+categories: ["mathematics", "science"]
 tags: ["Topologie", "Poincaré-Vermutung", "Grigori Perelman", "Mathematik"]
 ---
 

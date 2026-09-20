@@ -5,8 +5,8 @@ date: "2026-09-11T10:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "cpp", "Matemáticas"]
-tags: ["ECC", "Cryptography", "C++", "Matemáticas"]
+categories: ["cryptography", "cpp", "mathematics"]
+tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 ---
 
 # Fundamentos matemáticos de la criptografía de curva elíptica (ECC) e implementación en C++

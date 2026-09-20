@@ -4,7 +4,7 @@ description: "수학 역사상 가장 유명한 미해결 문제 '페르마의 �
 slug: "fermats-last-theorem"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["수학", "history"]
+categories: ["mathematics", "history"]
 tags:
   - "페르마의 마지막 정리"
   - "앤드루 와일스"

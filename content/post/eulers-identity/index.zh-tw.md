@@ -4,7 +4,7 @@ description: "深入解說數學史上最美麗的尤拉恆等式的背景與意
 slug: "eulers-identity"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["數學"]
+categories: ["mathematics"]
 tags: ["尤拉", "數學", "科學"]
 ---
 

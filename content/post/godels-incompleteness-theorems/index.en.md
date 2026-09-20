@@ -3,7 +3,7 @@ title: "Gödel's Incompleteness Theorems: The Mathematical Proof of 'Truths That
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "We explain Gödel's Incompleteness Theorems, a historic theorem that showed the limits of mathematics, including its meaning and how the proof works, in an easy-to-understand manner with concrete examples and diagrams."
-categories: ["Mathematics", "computer-science"]
+categories: ["mathematics", "computer-science"]
 tags:
   - Logic
   - Gödel

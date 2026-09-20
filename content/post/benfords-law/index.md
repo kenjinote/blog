@@ -5,7 +5,7 @@ slug: "benfords-law"
 date: "2026-09-15T10:00:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "数学"
+  - "mathematics"
   - "statistics"
 tags:
   - "Benford's Law"

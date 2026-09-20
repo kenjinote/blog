@@ -4,7 +4,7 @@ description: "Ein umfassender Leitfaden zum euklidischen Algorithmus zur Berechn
 slug: "euclidean-algorithm"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematik"]
+categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 

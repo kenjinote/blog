@@ -5,7 +5,7 @@ date: "2026-09-11T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "quantum-computing", "数学"]
+categories: ["cryptography", "quantum-computing", "mathematics"]
 tags: ["PQC", "NIST", "Kyber", "Dilithium"]
 description: '针对量子计算机崛起带来的密码学危机威胁，以及作为应对措施的NIST标准抗量子密码学（PQC）算法如Kyber、Dilithium、FALCON、SPHINCS+等，本文将从格密码学的数学基础（LWE问题）出发，彻底解说其详细机制与性能比较。'
 ---

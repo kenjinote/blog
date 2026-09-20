@@ -4,7 +4,7 @@ description: "Uma explicação profunda do 'Teorema Notável' descoberto por Car
 slug: "theorema-egregium"
 date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemática", "science"]
+categories: ["mathematics", "science"]
 tags: ["Geometria", "Gauss", "Teorema da Pizza", "Theorema Egregium", "Geometria Diferencial"]
 ---
 

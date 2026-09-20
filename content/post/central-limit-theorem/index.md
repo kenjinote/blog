@@ -3,7 +3,7 @@ title: "中心極限定理（Central Limit Theorem） - どんなデータも足
 description: "統計学における最も重要な定理の一つである中心極限定理について、直感的な理解から数学的な証明、そしてPythonを用いたシミュレーションまで詳細に解説します。"
 date: 2026-09-14T13:20:38+09:00
 image: "eyecatch.jpg"
-categories: ["数学", "statistics"]
+categories: ["mathematics", "statistics"]
 tags: ["Central Limit Theorem", "Probability", "Data Science", "Python"]
 slug: "central-limit-theorem"
 ---

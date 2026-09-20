@@ -4,7 +4,7 @@ description: "无限也有“大小”之分。本文将详细讲解如何使用
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "foundations-of-数学", "set-theory"]
+categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "对角线论证", "无限", "数学", "证明"]
 ---
 

@@ -5,7 +5,7 @@ slug: "fourier-series-and-transform"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "Mathematics"
+  - "mathematics"
 tags:
   - "Fourier"
   - "Math"

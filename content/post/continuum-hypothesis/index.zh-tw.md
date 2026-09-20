@@ -4,7 +4,7 @@ description: "深入探討由格奧爾格·康托爾提出的連續統假設（C
 slug: "continuum-hypothesis"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學", "set-theory"]
+categories: ["mathematics", "set-theory"]
 tags: ["Continuum Hypothesis", "Cantor", "Infinity", "Math"]
 ---
 

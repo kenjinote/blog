@@ -4,7 +4,7 @@ image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "मानव इतिहास में हम कहाँ हैं? हम गणितीय सूत्रों और आरेखों का उपयोग करके 'कयामत के तर्क (Doomsday Argument)' की व्याख्या करेंगे, जो कोपरनिकन सिद्धांत और बायेसियन अनुमान (Bayesian inference) का उपयोग करके संभाव्यता के आधार पर मानव विलुप्त होने के समय की भविष्यवाणी करता है।"
 categories: ["probability-theory", "thought-experiment", "philosophy"]
-tags: ["बायेसियन अनुमान (Bayesian inference)", "प्रलय का तर्क", "Doomsday Argument", "गणित (गणित)"]
+tags: ["बायेसियन अनुमान (Bayesian inference)", "प्रलय का तर्क", "Doomsday Argument", "गणित (Mathematics)"]
 slug: "doomsday-argument"
 ---
 

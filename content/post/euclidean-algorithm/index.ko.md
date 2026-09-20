@@ -4,7 +4,7 @@ description: "최대공약수(GCD)를 계산하는 유클리드 호제법에 대
 slug: "euclidean-algorithm"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["수학"]
+categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 

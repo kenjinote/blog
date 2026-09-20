@@ -5,7 +5,7 @@ date: "2026-09-11T22:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["ai", "machine-learning", "Matematika"]
+categories: ["ai", "machine-learning", "mathematics"]
 tags: ["Transformer", "Deep Learning", "Attention", "Math"]
 ---
 

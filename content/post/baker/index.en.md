@@ -4,7 +4,7 @@ description: "An in-depth look at the life and mathematical achievements of Alan
 slug: "baker"
 date: "2026-09-20T20:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "Biography"]
+categories: ["mathematics", "biography"]
 tags: ["Alan Baker", "Number Theory", "Fields Medal", "Transcendental Number Theory"]
 ---
 

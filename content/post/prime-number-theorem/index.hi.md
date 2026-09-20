@@ -4,7 +4,7 @@ description: "अभाज्य संख्याओं की उपस्थ
 slug: "prime-number-theorem"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["गणित", "algorithms"]
+categories: ["mathematics", "algorithms"]
 tags:
   - "अभाज्य संख्या प्रमेय"
   - "रीमैन परिकल्पना"

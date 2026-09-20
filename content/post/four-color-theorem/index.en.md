@@ -4,7 +4,7 @@ description: "We explain in detail the history of the Four Color Theorem, a diff
 slug: "four-color-theorem"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "computer-science"]
+categories: ["mathematics", "computer-science"]
 tags: ["Four Color Theorem", "Graph Theory", "Computer-assisted Proof", "Topology"]
 ---
 

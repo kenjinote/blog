@@ -4,7 +4,7 @@ description: "Explicación exhaustiva sobre la Conjetura de Hodge, uno de los pr
 slug: "hodge-conjecture"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["Matemáticas", "science"]
+categories: ["mathematics", "science"]
 tags: ["Problemas del Premio del Milenio", "Topología", "Geometría Algebraica", "Conjetura de Hodge"]
 ---
 

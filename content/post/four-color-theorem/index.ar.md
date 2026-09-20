@@ -4,7 +4,7 @@ description: "نشرح بالتفصيل تاريخ مبرهنة الألوان �
 slug: "four-color-theorem"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "computer-science"]
+categories: ["mathematics", "computer-science"]
 tags: ["مبرهنة الألوان الأربعة", "نظرية المخططات", "إثبات بمساعدة الحاسوب", "الطوبولوجيا"]
 ---
 

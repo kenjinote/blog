@@ -4,7 +4,7 @@ description: "Menggali lebih dalam sejarah, latar belakang matematika dari Hipot
 slug: "continuum-hypothesis"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "set-theory"]
+categories: ["mathematics", "set-theory"]
 tags: ["Hipotesis Kontinum", "Cantor", "Ketakterhinggaan", "Matematika"]
 ---
 

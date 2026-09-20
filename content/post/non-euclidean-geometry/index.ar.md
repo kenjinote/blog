@@ -4,7 +4,7 @@ description: "نستعرض التاريخ العظيم للرياضيات وال
 slug: "non-euclidean-geometry"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["رياضيات", "physics"]
+categories: ["mathematics", "physics"]
 tags: ["الهندسة", "النسبية", "تاريخ العلوم", "الرياضيات"]
 ---
 

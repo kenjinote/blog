@@ -3,7 +3,7 @@ title: "안정 결혼 문제: 모두의 희망을 어떻게 조합할까?"
 description: "게일–섀플리 알고리즘을 수식, 관계도, 순위 비교 그래프와 Python으로 알아봅니다. 안정적인 매칭과 모두가 만족하는 매칭이 어떻게 다른지 살펴봅니다."
 date: "2026-09-16T14:30:00+09:00"
 image: "eyecatch.png"
-categories: ["수학"]
+categories: ["mathematics"]
 tags: ["안정 결혼 문제", "알고리즘", "게임 이론", "매칭", "Python"]
 slug: "stable-marriage-problem"
 math: true

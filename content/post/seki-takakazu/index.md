@@ -4,8 +4,8 @@ description: "江戸時代の天才数学者、関孝和の生涯と、円理や
 slug: "seki-takakazu"
 date: "2026-09-20T19:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "人物伝"]
-tags: ["Takakazu Seki", "Wasan", "Edo Period", "History of 数学", "Calculus", "Determinant"]
+categories: ["mathematics", "biography"]
+tags: ["Takakazu Seki", "Wasan", "Edo Period", "History of Mathematics", "Calculus", "Determinant"]
 ---
 
 # 1. はじめに：[関孝和](https://kenji.blog/p/seki-takakazu/)とは何者か？

@@ -4,7 +4,7 @@ description: "Подробное объяснение истории пробл�
 slug: "four-color-theorem"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Математика", "computer-science"]
+categories: ["mathematics", "computer-science"]
 tags: ["Проблема четырех красок", "Теория графов", "Компьютерное доказательство", "Топология"]
 ---
 

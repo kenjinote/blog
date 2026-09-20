@@ -4,7 +4,7 @@ description: "20世紀最大の論理学者クルト・ゲーデルの生涯と�
 slug: "godel"
 date: "2026-09-20T20:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "人物伝"]
+categories: ["mathematics", "biography"]
 tags: ["クルト・ゲーデル", "不完全性定理", "数学", "論理学", "歴史"]
 ---
 

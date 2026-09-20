@@ -4,7 +4,7 @@ description: "Подробное математическое объяснени
 slug: "bsd-conjecture"
 date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
-categories: ["Математика"]
+categories: ["mathematics"]
 tags: ["Number Theory", "Elliptic Curves", "BSD Conjecture", "Millennium Prize Problems"]
 ---
 

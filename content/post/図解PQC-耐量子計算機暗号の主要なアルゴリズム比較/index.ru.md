@@ -5,7 +5,7 @@ date: "2026-09-11T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "quantum-computing", "Математика"]
+categories: ["cryptography", "quantum-computing", "mathematics"]
 tags: ["PQC", "NIST", "Kyber", "Dilithium"]
 description: 'Подробный обзор угрозы компрометации криптографии из-за появления квантовых компьютеров и стандартизированных NIST алгоритмов постквантовой криптографии (PQC) для противодействия ей, таких как Kyber, Dilithium, FALCON, SPHINCS+ и др., начиная с математических основ криптографии на решетках (задача LWE) до детального разбора их работы и сравнения производительности.'
 ---

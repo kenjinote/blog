@@ -4,7 +4,7 @@ description: "Explicaremos de forma simples o contexto físico e as dificuldades
 slug: "yang-mills-mass-gap"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["physics", "Matemática"]
+categories: ["physics", "mathematics"]
 tags:
   - "Yang-Mills"
   - "Lacuna de Massa"

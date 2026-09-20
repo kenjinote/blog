@@ -5,7 +5,7 @@ date: "2026-09-11T16:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Matemáticas", "cryptography"]
+categories: ["mathematics", "cryptography"]
 tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 ---
 

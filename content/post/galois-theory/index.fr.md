@@ -4,7 +4,7 @@ description: "Qu'est-ce que la théorie de Galois ? Pourquoi n'y a-t-il pas de f
 slug: "galois-theory"
 date: "2026-09-14T13:04:13+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "algebra"]
+categories: ["mathematics", "algebra"]
 tags:
   - "Théorie de Galois"
   - "Théorie des groupes"

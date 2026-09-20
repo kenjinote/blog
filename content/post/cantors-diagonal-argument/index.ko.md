@@ -4,7 +4,7 @@ description: "무한에는 '크기'의 차이가 있습니다. 게오르크 칸�
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "foundations-of-수학", "set-theory"]
+categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "대각선논법", "무한", "수학", "증명"]
 ---
 

@@ -5,7 +5,7 @@ date: "2026-09-11T23:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["Mathematik", "computer-science", "cryptography"]
+categories: ["mathematics", "computer-science", "cryptography"]
 tags: ["Big O Notation", "Prime Factorization", "Algorithms", "RSA"]
 ---
 

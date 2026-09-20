@@ -4,7 +4,7 @@ description: "Começando pela dúvida sobre o postulado das paralelas de Euclide
 slug: "non-euclidean-geometry"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["Matemática", "physics"]
+categories: ["mathematics", "physics"]
 tags: ["Geometria", "Relatividade", "História da Ciência", "Matemática"]
 ---
 

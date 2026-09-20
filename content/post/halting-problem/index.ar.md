@@ -4,7 +4,7 @@ image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "نشرح إحدى أشهر المسائل غير المحلولة (والتي تم إثبات عدم قابليتها للحل) في علوم الكمبيوتر، وهي مشكلة التوقف. سنوضحها بشكل مبسط باستخدام الإثبات بالخُلف، وأمثلة عملية، وصيغ رياضية، ورسوم توضيحية."
 categories: ["computer-science", "theory-of-computation"]
-tags: ["Halting Problem", "Alan Turing", "Algorithm", "رياضيات"]
+tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]
 slug: "halting-problem"
 ---
 

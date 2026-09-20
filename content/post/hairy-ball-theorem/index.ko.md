@@ -4,7 +4,7 @@ description: "위상수학(토폴로지)의 유명한 정리인 '털 난 공 정
 slug: "hairy-ball-theorem"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "topology"]
+categories: ["mathematics", "topology"]
 tags:
   - "수학"
   - "위상수학"

@@ -4,7 +4,7 @@ description: "지겔의 생애와 정수론 및 천체역학에서 그가 이룬
 slug: "siegel"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "전기"]
+categories: ["mathematics", "biography"]
 tags: ["지겔", "정수론", "수학자", "천체역학", "해석적 정수론", "디오판토스 방정식"]
 ---
 

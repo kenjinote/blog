@@ -4,7 +4,7 @@ description: "A detailed explanation of how to amazingly simplify difficult defi
 slug: "residue-theorem"
 date: "2026-09-20T14:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics"]
+categories: ["mathematics"]
 tags: ["complex analysis", "calculus", "math"]
 ---
 

@@ -4,7 +4,7 @@ description: "O que é o Problema da Secretária (Secretary Problem)? Através d
 slug: "secretary-problem"
 date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemática", "algorithms", "decision-making"]
+categories: ["mathematics", "algorithms", "decision-making"]
 tags:
   - "Parada Ótima"
   - "Problema da Secretária"

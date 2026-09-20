@@ -4,7 +4,7 @@ description: "詳細解說起源於古代中國算術書的中國剩餘定理（
 slug: "chinese-remainder-theorem"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["數學", "cryptography"]
+categories: ["mathematics", "cryptography"]
 tags:
   - "中國剩餘定理"
   - "CRT"

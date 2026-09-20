@@ -4,7 +4,7 @@ description: "What is Galois Theory? Why is there no formula for solving equatio
 slug: "galois-theory"
 date: "2026-09-14T13:04:13+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "algebra"]
+categories: ["mathematics", "algebra"]
 tags:
   - "Galois Theory"
   - "Group Theory"

@@ -4,7 +4,7 @@ description: "Le problème des « sept ponts de Königsberg » résolu par le ma
 slug: "seven-bridges-of-konigsberg"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "history"]
+categories: ["mathematics", "history"]
 tags: ["Théorie des graphes", "Topologie", "Euler", "Mathématiques"]
 ---
 

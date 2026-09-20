@@ -4,7 +4,7 @@ description: "An in-depth explanation of the Intermediate Value Theorem and the 
 slug: "intermediate-and-mean-value-theorem"
 date: "2026-09-20T14:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics"]
+categories: ["mathematics"]
 tags: ["calculus", "theorems", "math-proofs"]
 ---
 

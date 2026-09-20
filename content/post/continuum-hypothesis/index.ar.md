@@ -4,7 +4,7 @@ description: "تعمق في تاريخ فرضية الاستمرار (CH) الت
 slug: "continuum-hypothesis"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "set-theory"]
+categories: ["mathematics", "set-theory"]
 tags: ["فرضية الاستمرار", "كانتور", "اللانهاية", "الرياضيات"]
 ---
 

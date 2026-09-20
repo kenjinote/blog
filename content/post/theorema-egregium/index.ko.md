@@ -4,7 +4,7 @@ description: "칼 프리드리히 가우스가 발견한 '경이로운 정리'�
 slug: "theorema-egregium"
 date: "2026-09-14T13:11:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "science"]
+categories: ["mathematics", "science"]
 tags: ["기하학", "가우스", "피자 정리", "Theorema Egregium", "미분 기하학"]
 ---
 

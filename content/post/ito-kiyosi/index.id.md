@@ -4,7 +4,7 @@ description: "Pandangan mendalam tentang kehidupan Kiyosi Ito, yang dikenal deng
 slug: "ito-kiyosi"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "Biografi"]
+categories: ["mathematics", "biography"]
 tags: ["Kiyosi Ito", "Persamaan Diferensial Stokastik", "Rekayasa Keuangan", "Sejarah Matematika"]
 ---
 

@@ -4,7 +4,7 @@ description: "गणित के इतिहास की सबसे प्�
 slug: "fermats-last-theorem"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["गणित", "history"]
+categories: ["mathematics", "history"]
 tags:
   - "फर्मेट का अंतिम प्रमेय"
   - "एंड्रयू विल्स"

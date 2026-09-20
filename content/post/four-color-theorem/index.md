@@ -4,7 +4,7 @@ description: "数学界の難問であった四色問題の歴史、証明のア
 slug: "four-color-theorem"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "computer-science"]
+categories: ["mathematics", "computer-science"]
 tags: ["Four Color Theorem", "Graph Theory", "Computer-assisted Proof", "Topology"]
 ---
 

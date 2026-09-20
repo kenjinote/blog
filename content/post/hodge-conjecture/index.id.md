@@ -4,7 +4,7 @@ description: "Kami akan membahas secara tuntas Konjektur Hodge, salah satu dari 
 slug: "hodge-conjecture"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["Matematika", "science"]
+categories: ["mathematics", "science"]
 tags: ["Masalah Hadiah Milenium", "Topologi", "Geometri Aljabar", "Konjektur Hodge"]
 ---
 

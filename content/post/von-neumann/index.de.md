@@ -4,7 +4,7 @@ description: 'Eine detaillierte Erklärung des Lebens des genialen Mathematikers
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'
 image: 'eyecatch.jpg'
-categories: ['Mathematik', 'Biografie']
+categories: ['mathematics', 'biography']
 tags: ['John von Neumann', 'Quantenmechanik', 'Spieltheorie', 'Informatik', 'Mathematiker', 'Genie']
 ---
 

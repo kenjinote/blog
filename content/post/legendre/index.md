@@ -4,8 +4,8 @@ description: "フランスの偉大な数学者アドリアン＝マリ・ルジ
 slug: "legendre"
 date: "2026-09-20T19:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "人物伝"]
-tags: ["Legendre", "Number Theory", "Geometry", "History of 数学"]
+categories: ["mathematics", "biography"]
+tags: ["Legendre", "Number Theory", "Geometry", "History of Mathematics"]
 ---
 
 # [アドリアン＝マリ・ルジャンドル](https://kenji.blog/p/legendre/)：数学の影の巨人とその波乱に満ちた生涯

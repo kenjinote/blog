@@ -4,7 +4,7 @@ description: "ドイツの偉大な数学者エルンスト・クンマーの生
 slug: "kummer"
 date: "2026-09-20T19:40:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "人物伝"]
+categories: ["mathematics", "biography"]
 tags: ["Ernst Kummer", "Fermat's Last Theorem", "Ideal Numbers", "Algebraic Number Theory", "Regular Primes"]
 ---
 

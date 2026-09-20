@@ -4,7 +4,7 @@ description: 'Ein tiefer Einblick in das Leben von Yutaka Taniyama, dem brillant
 slug: "taniyama-yutaka"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematik", "Biografie"]
+categories: ["mathematics", "biography"]
 tags: ["Yutaka Taniyama", "Mathematik", "Großer Fermatscher Satz", "Taniyama-Shimura-Vermutung", "Elliptische Kurven", "Modulformen"]
 ---
 

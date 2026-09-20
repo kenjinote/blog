@@ -4,7 +4,7 @@ description: "Une explication détaillée de la vie de Siegel et de ses grandes 
 slug: "siegel"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "Biographie"]
+categories: ["mathematics", "biography"]
 tags: ["Siegel", "théorie des nombres", "mathématicien", "mécanique céleste", "théorie analytique des nombres", "équations diophantiennes"]
 ---
 

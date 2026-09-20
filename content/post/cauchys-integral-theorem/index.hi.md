@@ -5,7 +5,7 @@ slug: 'cauchys-integral-theorem'
 date: 2026-09-20T14:30:00+09:00
 image: 'eyecatch.jpg'
 categories:
-  - 'गणित'
+  - 'mathematics'
 tags:
   - 'सम्मिश्र विश्लेषण'
   - 'कॉची का समाकलन प्रमेय'

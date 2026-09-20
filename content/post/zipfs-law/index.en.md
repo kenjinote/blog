@@ -4,7 +4,7 @@ description: "An in-depth look, using formulas and diagrams, into 'Zipf's Law', 
 slug: "zipfs-law"
 date: "2026-09-14T13:20:38+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathematics", "data-science", "linguistics"]
+categories: ["mathematics", "data-science", "linguistics"]
 tags:
   - "Zipf's Law"
   - "Power Law"

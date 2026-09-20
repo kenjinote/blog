@@ -4,7 +4,7 @@ description: "Подробное руководство по алгоритму 
 slug: "euclidean-algorithm"
 date: 2026-09-20T15:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["Математика"]
+categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 

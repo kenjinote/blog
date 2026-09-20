@@ -4,7 +4,7 @@ description: "게오르크 칸토어가 제창한 연속체 가설(CH)의 역사
 slug: "continuum-hypothesis"
 date: "2026-09-14T13:00:00+09:00"
 image: "eyecatch.jpg"
-categories: ["수학", "set-theory"]
+categories: ["mathematics", "set-theory"]
 tags: ["연속체 가설", "칸토어", "무한", "수학"]
 ---
 

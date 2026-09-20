@@ -4,7 +4,7 @@ description: "深入探讨ABC猜想的概述，以及望月新一教授提出的
 slug: "abc-conjecture"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["数学", "science"]
+categories: ["mathematics", "science"]
 tags: ["ABC猜想", "数论", "IUT理论", "望月新一"]
 ---
 

@@ -5,7 +5,7 @@ slug: "optimal-transport-problem"
 date: 2026-09-20T12:00:00+09:00
 image: "eyecatch.jpg"
 categories:
-  - "數學"
+  - "mathematics"
 tags:
   - "最佳傳輸"
   - "Wasserstein 距離"

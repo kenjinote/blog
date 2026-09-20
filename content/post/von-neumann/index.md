@@ -4,7 +4,7 @@ description: '天才数学者ジョン・フォン・ノイマンの生涯、ゲ
 slug: 'von-neumann'
 date: '2026-09-20T20:20:00+09:00'
 image: 'eyecatch.jpg'
-categories: ['数学', '人物伝']
+categories: ['mathematics', 'biography']
 tags: ['ジョン・フォン・ノイマン', '量子力学', 'ゲーム理論', 'コンピュータ科学', '数学者', '天才']
 ---
 

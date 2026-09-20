@@ -4,7 +4,7 @@ description: "Apa itu Masalah Sekretaris (Secretary Problem)? Melalui contoh umu
 slug: "secretary-problem"
 date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Matematika", "algorithms", "decision-making"]
+categories: ["mathematics", "algorithms", "decision-making"]
 tags:
   - "Penghentian Optimal"
   - "Masalah Sekretaris"

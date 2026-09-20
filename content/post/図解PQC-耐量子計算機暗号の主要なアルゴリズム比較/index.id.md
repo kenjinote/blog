@@ -5,7 +5,7 @@ date: "2026-09-11T07:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["cryptography", "quantum-computing", "Matematika"]
+categories: ["cryptography", "quantum-computing", "mathematics"]
 tags: ["PQC", "NIST", "Kyber", "Dilithium"]
 description: 'Penjelasan mendetail mengenai ancaman kompromi kriptografi akibat kebangkitan komputer kuantum dan algoritma Kriptografi Pasca-Kuantum (PQC) standar NIST seperti Kyber, Dilithium, FALCON, SPHINCS+, mulai dari dasar matematika kriptografi berbasis kisi (Masalah LWE) hingga mekanisme rinci dan perbandingan kinerjanya.'
 ---

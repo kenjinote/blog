@@ -4,8 +4,8 @@ description: "19世紀から20世紀にかけての最も偉大な数学者の�
 slug: "hilbert"
 date: "2026-09-20T19:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "人物伝"]
-tags: ["Hilbert", "History of 数学", "Geometry", "Functional Analysis", "Physics", "Number Theory"]
+categories: ["mathematics", "biography"]
+tags: ["Hilbert", "History of Mathematics", "Geometry", "Functional Analysis", "Physics", "Number Theory"]
 ---
 
 ## 1. はじめに：現代数学の父と呼ばれる所以

@@ -4,7 +4,7 @@ description: "深入探討克雷數學研究所的千禧年大獎難題之一：
 slug: "navier-stokes-equations"
 date: 2026-09-14T13:11:00+09:00
 image: "eyecatch.jpg"
-categories: ["數學", "physics"]
+categories: ["mathematics", "physics"]
 tags: ["納維-斯托克斯", "流體動力學", "千禧年大獎難題"]
 ---
 

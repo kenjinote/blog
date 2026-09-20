@@ -4,7 +4,7 @@ description: "कियोशी इतो के जीवन पर गहर�
 slug: "ito-kiyosi"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["गणित", "जीवनी"]
+categories: ["mathematics", "biography"]
 tags: ["कियोशी इतो", "स्टोकेस्टिक डिफरेंशियल इक्वेशन", "वित्तीय इंजीनियरिंग", "गणित का इतिहास"]
 ---
 

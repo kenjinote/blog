@@ -4,7 +4,7 @@ description: "نظرة متعمقة على حياة كيوشي إيتو، الم
 slug: "ito-kiyosi"
 date: "2026-09-20T20:30:00+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "سيرة شخصية"]
+categories: ["mathematics", "biography"]
 tags: ["كيوشي إيتو", "المعادلات التفاضلية التصادفية", "الهندسة المالية", "تاريخ الرياضيات"]
 ---
 

@@ -4,7 +4,7 @@ description: "Sobre a Conjectura de Birch e Swinnerton-Dyer (Conjectura de BSD),
 slug: "bsd-conjecture"
 date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
-categories: ["Matemática"]
+categories: ["mathematics"]
 tags: ["Teoria dos Números", "Curvas Elípticas", "Conjectura de BSD", "Problemas do Prêmio Millennium"]
 ---
 

@@ -5,14 +5,14 @@ slug: "hasse"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "数学"
-  - "人物伝"
+  - "mathematics"
+  - "biography"
 tags:
   - "Helmut Hasse"
   - "Number Theory"
   - "Hasse Principle"
   - "Elliptic Curves"
-  - "History of 数学"
+  - "History of Mathematics"
 ---
 
 ## 1. はじめに：局所と大域を結ぶ視点

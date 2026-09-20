@@ -4,7 +4,7 @@ description: "Menggali lebih dalam tentang ringkasan Konjektur ABC dan pendekata
 slug: "abc-conjecture"
 date: 2026-09-14T13:00:00+09:00
 image: "eyecatch.jpg"
-categories: ["Matematika", "science"]
+categories: ["mathematics", "science"]
 tags: ["Konjektur ABC", "Teori Bilangan", "Teori IUT", "Shinichi Mochizuki"]
 ---
 

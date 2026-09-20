@@ -4,7 +4,7 @@ description: "數學史上最著名的未解難題「費馬最後定理」。在
 slug: "fermats-last-theorem"
 date: 2026-09-14T13:04:13+09:00
 image: "eyecatch.jpg"
-categories: ["數學", "history"]
+categories: ["mathematics", "history"]
 tags:
   - "費馬最後定理"
   - "安德魯·懷爾斯"

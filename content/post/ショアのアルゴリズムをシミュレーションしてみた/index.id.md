@@ -5,7 +5,7 @@ date: "2026-09-11T08:00:00+09:00"
 image: "img/eyecatch.jpg"
 math: true
 mermaid: true
-categories: ["quantum-computing", "python", "Matematika"]
+categories: ["quantum-computing", "python", "mathematics"]
 tags: ["Shor's Algorithm", "Qiskit", "Quantum Fourier Transform"]
 description: 'Bagaimana komputer kuantum berpotensi menghancurkan teknologi kriptografi saat ini? Kami menjelaskan secara detail dari latar belakang matematis Algoritma Shor hingga implementasinya dalam Python.'
 ---

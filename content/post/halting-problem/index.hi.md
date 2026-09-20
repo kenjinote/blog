@@ -4,7 +4,7 @@ image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "हम कंप्यूटर विज्ञान में सबसे प्रसिद्ध अनसुलझी (प्रमाणित) समस्याओं में से एक, हाल्टिंग प्रॉब्लम की व्याख्या करेंगे। विरोधाभास (Proof by contradiction) द्वारा प्रमाण, सहज विशिष्ट उदाहरणों, गणितीय सूत्रों और आरेखों का उपयोग करके इसे आसानी से समझाया गया है।"
 categories: ["computer-science", "theory-of-computation"]
-tags: ["Halting Problem", "Alan Turing", "Algorithm", "गणित"]
+tags: ["Halting Problem", "Alan Turing", "Algorithm", "Mathematics"]
 slug: "halting-problem"
 ---
 

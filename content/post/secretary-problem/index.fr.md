@@ -4,7 +4,7 @@ description: "Qu'est-ce que le problème du secrétaire ? À travers cet exemple
 slug: "secretary-problem"
 date: "2026-09-14T13:20:00+09:00"
 image: "eyecatch.jpg"
-categories: ["Mathématiques", "algorithms", "decision-making"]
+categories: ["mathematics", "algorithms", "decision-making"]
 tags:
   - "Arrêt optimal"
   - "Problème du secrétaire"

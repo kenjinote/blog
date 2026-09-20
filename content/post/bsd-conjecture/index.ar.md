@@ -4,7 +4,7 @@ description: "شرح رياضي مفصل حول حدسية بيرتش وسوين
 slug: "bsd-conjecture"
 date: "2026-09-14T13:05:17+09:00"
 image: "eyecatch.jpg"
-categories: ["رياضيات"]
+categories: ["mathematics"]
 tags: ["Number Theory", "Elliptic Curves", "BSD Conjecture", "Millennium Prize Problems"]
 ---
 

@@ -4,7 +4,7 @@ description: "無限には「大きさ」の違いがある。ゲオルク・カ
 slug: "cantors-diagonal-argument"
 date: "2026-09-14T13:11:25+09:00"
 image: "eyecatch.jpg"
-categories: ["数学", "foundations-of-数学", "set-theory"]
+categories: ["mathematics", "foundations-of-mathematics", "set-theory"]
 tags: ["Cantor", "対角線論法", "無限", "数学", "証明"]
 ---
 

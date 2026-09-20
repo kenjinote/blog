@@ -4,7 +4,7 @@ description: "شرح مفصل لقصة 'حدسية بوانكاريه' التي 
 date: "2026-09-14T13:04:13+09:00"
 slug: "poincare-conjecture"
 image: "eyecatch.jpg"
-categories: ["رياضيات", "science"]
+categories: ["mathematics", "science"]
 tags: ["Topology", "Poincare Conjecture", "Grigori Perelman", "Math"]
 ---
 

@@ -3,7 +3,7 @@ title: "Gödels Unvollständigkeitssätze: Der mathematische Beweis für „abso
 image: "eyecatch.jpg"
 date: 2026-09-14T00:00:51+09:00
 description: "Eine verständliche Erklärung der historischen „Unvollständigkeitssätze“ von Gödel, die die Grenzen der Mathematik aufzeigten. Mit konkreten Beispielen und Diagrammen erklären wir die Bedeutung und die Mechanismen des Beweises."
-categories: ["Mathematik", "computer-science"]
+categories: ["mathematics", "computer-science"]
 tags:
   - "Logic"
   - "Gödel"

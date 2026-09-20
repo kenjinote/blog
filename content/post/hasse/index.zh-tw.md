@@ -5,8 +5,8 @@ slug: "hasse"
 date: "2026-09-20T20:10:00+09:00"
 image: "eyecatch.jpg"
 categories:
-  - "數學"
-  - "傳記"
+  - "mathematics"
+  - "biography"
 tags:
   - "赫爾穆特·哈塞"
   - "數論"

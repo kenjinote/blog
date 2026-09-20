@@ -4,7 +4,7 @@ description: "詳細講解線性代數中的對角化以及無法對角化的矩
 slug: "diagonalization-and-jordan-normal-form"
 date: "2026-09-20T14:50:00+09:00"
 image: "eyecatch.jpg"
-categories: ["數學"]
+categories: ["mathematics"]
 tags: ["linear-algebra", "matrix", "eigenvalue", "jordan-normal-form"]
 ---
 

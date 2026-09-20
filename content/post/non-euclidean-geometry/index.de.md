@@ -4,7 +4,7 @@ description: "Von den Zweifeln an Euklids Parallelenpostulat über die Etablieru
 slug: "non-euclidean-geometry"
 date: 2026-09-14T13:11:25+09:00
 image: "eyecatch.jpg"
-categories: ["Mathematik", "physics"]
+categories: ["mathematics", "physics"]
 tags: ["Geometrie", "Relativitätstheorie", "Wissenschaftsgeschichte", "Mathe"]
 ---
 
