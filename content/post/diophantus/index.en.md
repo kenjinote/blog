@@ -16,7 +16,7 @@ tags:
 
 ## 1. Introduction
 
-In the history of mathematics, there is a figure known as the "Father of Algebra". That figure is **Diophantus** (Diophantus of Alexandria), who was active in ancient Alexandria. His major work, *Arithmetica*, had a profound influence on later mathematicians in the Islamic world and mathematicians in Renaissance Europe. In particular, "Fermat's Last Theorem", which Pierre de Fermat wrote in the margins of *Arithmetica*, is extremely famous.
+In the history of mathematics, there is a figure known as the "Father of Algebra". That figure is **Diophantus** (Diophantus of Alexandria), who was active in ancient Alexandria. His major work, *Arithmetica*, had a profound influence on later mathematicians in the Islamic world and mathematicians in Renaissance Europe. In particular, "[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)", which Pierre de Fermat wrote in the margins of *Arithmetica*, is extremely famous.
 
 In this article, we will delve into the life of Diophantus, his mathematical achievements, the details of his masterpiece *Arithmetica*, and the "Diophantine equations" that bear his name. Furthermore, we will also unravel the mystery of his "epitaph", from which his lifespan can be deduced.
 
@@ -97,7 +97,7 @@ In the margin next to this problem, Pierre de Fermat, a 17th-century French judg
 
 > "It is impossible to separate a cube into two cubes, or a fourth power into two fourth powers, or in general, any power higher than the second, into two like powers. I have discovered a truly marvelous proof of this, which this margin is too narrow to contain."
 
-This is the famous **Fermat's Last Theorem** (that $x^n + y^n = z^n \ (n \ge 3)$ has no positive integer solutions). This theorem continued to reject the challenges of genius mathematicians around the world for about 350 years after it was proposed, until it was finally proved by Andrew Wiles in 1995. Without Diophantus's book, this great drama might never have occurred.
+This is the famous **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** (that $x^n + y^n = z^n \ (n \ge 3)$ has no positive integer solutions). This theorem continued to reject the challenges of genius mathematicians around the world for about 350 years after it was proposed, until it was finally proved by Andrew Wiles in 1995. Without Diophantus's book, this great drama might never have occurred.
 
 ```mermaid
 graph TD

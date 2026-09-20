@@ -10,7 +10,7 @@ tags: ["Ernst Kummer", "Fermat's Last Theorem", "Ideal Numbers", "Algebraic Numb
 
 # Ernst Kummer: Father of Ideal Numbers and the Dawn of Algebraic Number Theory
 
-In the history of mathematics, it is not uncommon for a challenge to a specific open problem to carve out entirely new fields of study. Ernst Eduard Kummer ( **Ernst Eduard Kummer** ) is a 19th-century German mathematical giant who created exactly such a historic turning point. During his profound struggle with **Fermat's Last Theorem** ( **Fermat's Last Theorem** ), he introduced the groundbreaking concept of **Ideal Numbers** ( **Ideal Numbers** ), laying the foundation for modern algebraic number theory.
+In the history of mathematics, it is not uncommon for a challenge to a specific open problem to carve out entirely new fields of study. Ernst Eduard Kummer ( **Ernst Eduard Kummer** ) is a 19th-century German mathematical giant who created exactly such a historic turning point. During his profound struggle with **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** ( **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** ), he introduced the groundbreaking concept of **Ideal Numbers** ( **Ideal Numbers** ), laying the foundation for modern algebraic number theory.
 
 In this article, we will delve deeply into Kummer's turbulent life, the humanizing episodes surrounding him, and his brilliant achievements that continue to shine in mathematical history.
 
@@ -54,9 +54,9 @@ This anecdote is still recounted among mathematicians today as a heartwarming ex
 
 ---
 
-## Fermat's Last Theorem and the Collapse of Unique Factorization
+## [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) and the Collapse of Unique Factorization
 
-Kummer's greatest achievement was his approach to **Fermat's Last Theorem** in number theory. The theorem states the following:
+Kummer's greatest achievement was his approach to **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** in number theory. The theorem states the following:
 
 $$
 x^n + y^n = z^n \quad (\text{where } n \ge 3 \text{ is an integer})
@@ -106,9 +106,9 @@ Later, Richard Dedekind ( **Richard Dedekind** ) generalized Kummer's ideal numb
 
 ---
 
-## Regular Primes and the Partial Proof of Fermat's Last Theorem
+## Regular Primes and the Partial Proof of [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)
 
-Using the theory of ideal numbers, Kummer struck a massive blow against Fermat's Last Theorem. He defined the concept of **Regular Primes** ( **Regular Primes** ) and proved the astonishing result that "if $p$ is a regular prime, then Fermat's Last Theorem holds for $p$."
+Using the theory of ideal numbers, Kummer struck a massive blow against [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/). He defined the concept of **Regular Primes** ( **Regular Primes** ) and proved the astonishing result that "if $p$ is a regular prime, then [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) holds for $p$."
 
 A regular prime is a prime number $p$ that does not divide the class number $h_p$ of the cyclotomic field $\mathbb{Q}(\zeta_p)$. The class number is an index that measures how badly unique factorization fails; if the class number is $1$, unique factorization holds.
 
@@ -118,7 +118,7 @@ $$
 B_2, B_4, B_6, \dots, B_{p-3}
 $$
 
-Using this criterion, Kummer proved that Fermat's Last Theorem holds for all primes under $100$, except for the irregular primes $37, 59$, and $67$. This was a monumental achievement that sent shockwaves through the mathematical community at the time.
+Using this criterion, Kummer proved that [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) holds for all primes under $100$, except for the irregular primes $37, 59$, and $67$. This was a monumental achievement that sent shockwaves through the mathematical community at the time.
 
 ---
 
@@ -138,7 +138,7 @@ This surface would later play a vital role in a wide range of fields, from Abeli
 
 ## Conclusion
 
-Ernst Kummer expanded the very framework of mathematics while tackling the "unsolvable puzzle" of Fermat's Last Theorem. His idea of **Ideal Numbers** became an indispensable language in later algebra and continues to influence every branch of modern mathematics.
+Ernst Kummer expanded the very framework of mathematics while tackling the "unsolvable puzzle" of [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/). His idea of **Ideal Numbers** became an indispensable language in later algebra and continues to influence every branch of modern mathematics.
 
 Possessing a human side of being poor at calculation, yet endowed with the insight to discover "invisible ideal numbers" beyond human intuition, Kummer's brilliance is truly worthy of the title of genius. Kummer's achievements teach us the importance of reconsidering the framework itself when faced with seemingly impossible problems.
 

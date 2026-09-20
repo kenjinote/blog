@@ -238,7 +238,7 @@ Even beginners in programming can try it, so please do play around with it!
 
 If you'd like to know more topics like this "mysterious mathematics × programming,"
 please feel free to request with a "tell me more."
-Eventually, I'll introduce various things like the Riemann hypothesis and stories about prime numbers!
+Eventually, I'll introduce various things like the [Riemann hypothesis](https://kenji.blog/p/riemann-hypothesis/) and stories about prime numbers!
 
 ---
 

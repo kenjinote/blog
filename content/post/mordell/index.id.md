@@ -12,7 +12,7 @@ tags: ["teori bilangan", "Mordell", "kurva eliptik", "persamaan diophantine"]
 
 Salah satu matematikawan yang meninggalkan jejak cemerlang di dunia matematika abad ke-20, khususnya di bidang **Teori Bilangan** (Number Theory), adalah Louis Joel Mordell (1888–1972). Ia mencapai hasil yang inovatif dalam studi persamaan Diophantine dan meletakkan dasar bagi banyak teori penting di persimpangan geometri aljabar modern dan teori bilangan. Dalam artikel ini, kita akan menjelaskan secara rinci kehidupan Mordell, teorema dan konjektur penting yang memakai namanya, serta dampak mendalam yang ia berikan pada komunitas matematika.
 
-Banyak orang yang pernah mendengar tentang Mordell mungkin mengenalnya melalui **Teorema Mordell** (Mordell's Theorem) atau **Konjektur Mordell** (Mordell Conjecture). Pencapaian ini bukan sekadar pembuktian teorema tunggal, tetapi berfungsi sebagai awal yang penting dari sebuah drama matematika yang luar biasa yang mengarah pada pembuktian **Teorema Terakhir Fermat** (Fermat's Last Theorem).
+Banyak orang yang pernah mendengar tentang Mordell mungkin mengenalnya melalui **Teorema Mordell** (Mordell's Theorem) atau **Konjektur Mordell** (Mordell Conjecture). Pencapaian ini bukan sekadar pembuktian teorema tunggal, tetapi berfungsi sebagai awal yang penting dari sebuah drama matematika yang luar biasa yang mengarah pada pembuktian **Teorema Terakhir Fermat** ([Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)).
 
 ## 2. Masa Muda: Dari Belajar Otodidak ke Cambridge
 

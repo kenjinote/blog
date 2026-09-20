@@ -43,7 +43,7 @@ Instead of chasing complex celestial trajectories with calculation formulas, Poi
 
 Another monumental achievement of Poincaré was his single-handed founding of **Topology** , a major field in modern mathematics. In his 1895 paper "Analysis Situs," he constructed a new mathematical framework to study the properties of figures that are preserved even when they are continuously deformed.
 
-In this research, he presented one of the most famous unsolved problems in mathematical history, the **Poincaré conjecture** .
+In this research, he presented one of the most famous unsolved problems in mathematical history, the **[Poincaré conjecture](https://kenji.blog/p/poincare-conjecture/)** .
 
 > "Is every simply connected, closed 3-manifold homeomorphic to the 3-sphere $S^3$?"
 

@@ -18,7 +18,7 @@ In the history of mathematics, one of the most dramatic and profound theories is
 This theory was constructed in the early 19th century by the young French mathematician Évariste Galois.
 Galois Theory brilliantly solved the age-old problem of "Why is there no general formula for equations of degree 5 or higher?" by using a completely new concept called a **Group**.
 
-In this article, we will explain everything from the basic ideas of Galois theory to its historical background and its impact on modern mathematics as deeply and clearly as possible. Let's open the door to algebra and touch the beauty of symmetry.
+In this article, we will explain everything from the basic ideas of [Galois theory](https://kenji.blog/p/galois-theory/) to its historical background and its impact on modern mathematics as deeply and clearly as possible. Let's open the door to algebra and touch the beauty of symmetry.
 
 ## 1.1 What is a Solution Formula for an Equation?
 
@@ -64,14 +64,14 @@ Galois proved that an equation being "solvable by radicals" (the solutions can b
 
 # 3. Why Can't Quintic Equations Be Solved?
 
-By using Galois theory, the reason why there is no solution formula for equations of degree 5 or higher becomes surprisingly clear.
+By using [Galois theory](https://kenji.blog/p/galois-theory/), the reason why there is no solution formula for equations of degree 5 or higher becomes surprisingly clear.
 
 ## 3.1 Field Extensions and the Galois Correspondence
 
 The process of solving an equation can be seen as a process of gradually expanding a set of numbers (a **Field**). A field is a set where the four arithmetic operations can be freely performed (e.g., the set of all rational numbers, the set of all real numbers, etc.).
 For example, starting from the set of rational numbers $\mathbb{Q}$, we create a new field by adding roots which are components of the equation's solutions. This is called a **field extension**.
 
-The fundamental theorem, which is the heart of Galois theory, shows that there is a beautiful one-to-one correspondence (**Galois correspondence**) between "intermediate fields of a field extension" and "subgroups of a Galois group". A magnificent inverse relationship exists, where a larger field corresponds to a smaller group, and a smaller field corresponds to a larger group.
+The fundamental theorem, which is the heart of [Galois theory](https://kenji.blog/p/galois-theory/), shows that there is a beautiful one-to-one correspondence (**Galois correspondence**) between "intermediate fields of a field extension" and "subgroups of a Galois group". A magnificent inverse relationship exists, where a larger field corresponds to a smaller group, and a smaller field corresponds to a larger group.
 
 ```mermaid
 graph LR
@@ -111,7 +111,7 @@ This does not simply mean "a formula hasn't been found yet," but shows the defin
 
 # 4. The Life of Évariste Galois
 
-While the beauty of Galois theory shines brilliantly in the history of mathematics, Galois's own dramatic life also never ceases to captivate many people.
+While the beauty of [Galois theory](https://kenji.blog/p/galois-theory/) shines brilliantly in the history of mathematics, Galois's own dramatic life also never ceases to captivate many people.
 
 Galois was born in 1811 near Paris, France. He blossomed with extraordinary mathematical talent from his teenage years, but the authorities of the mathematical world at the time (such as Cauchy, Fourier, and Poisson) could not understand the sheer novelty of his theories. He suffered misfortune, with his papers being lost or rejected as "insufficiently explained and incomprehensible." He also failed the entrance exam for the École Polytechnique twice due to clashes with examiners.
 
@@ -127,14 +127,14 @@ His difficult notes were carefully deciphered and organized by Joseph Liouville 
 # 5. The Impact of Galois Theory on Modern Mathematics
 
 The abstract seeds of "groups" and "field extensions" that Galois sowed greatly transformed subsequent mathematics.
-It is no exaggeration to say that modern **abstract algebra** developed with Galois theory as its starting point. The style of finding structures in collections of all kinds of objects—not just numbers, but polynomials, matrices, and functions—and studying them has become firmly established.
+It is no exaggeration to say that modern **abstract algebra** developed with [Galois theory](https://kenji.blog/p/galois-theory/) as its starting point. The style of finding structures in collections of all kinds of objects—not just numbers, but polynomials, matrices, and functions—and studying them has become firmly established.
 
 Furthermore, the idea of capturing symmetry as a group plays a fundamental role not only in mathematics but also in a wide range of fields such as physics, chemistry, and information science.
-For example, the Standard Model of particle physics is built on the continuous group theory called Lie groups. Cryptographic theories that support the security of information communication, and coding theories that correct errors in data communication (for instance, the Reed-Solomon codes used in CDs, DVDs, QR codes, etc.) are also direct applications of Galois theory over finite fields.
+For example, the Standard Model of particle physics is built on the continuous group theory called Lie groups. Cryptographic theories that support the security of information communication, and coding theories that correct errors in data communication (for instance, the Reed-Solomon codes used in CDs, DVDs, QR codes, etc.) are also direct applications of [Galois theory](https://kenji.blog/p/galois-theory/) over finite fields.
 
 # 6. Conclusion and Outlook
 
-Galois theory teaches us that behind the equations, which at first glance look like nothing more than a complex sequence of formulas, lies a beautiful geometric structure of symmetry.
+[Galois theory](https://kenji.blog/p/galois-theory/) teaches us that behind the equations, which at first glance look like nothing more than a complex sequence of formulas, lies a beautiful geometric structure of symmetry.
 It is perhaps the greatest paradox and miracle in the history of science that a theory born to show the "negative" result that quintic equations cannot be solved, ended up becoming an immense light that illuminated the entirety of modern mathematics, opening up a completely new mathematical world.
 
 The journey exploring the beauty of symmetry hidden in equations started with Galois and continues today into cutting-edge mathematics (such as the Langlands program). The flashes of brilliance left by Galois in his short life continue to provide us with infinite inspiration even now, nearly 200 years later.

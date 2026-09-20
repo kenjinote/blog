@@ -55,7 +55,7 @@ $$
 \end{cases}
 $$
 
-Thanks to this groundbreaking notation, complex propositions and proofs in number theory became extremely transparent, bringing immense benefits to later mathematicians. He also left many footprints in the abyss of number theory, such as his proof of Fermat's Last Theorem for $ n=5 $ (proven independently around the same time as Dirichlet) and his conjecture of Dirichlet's theorem on arithmetic progressions.
+Thanks to this groundbreaking notation, complex propositions and proofs in number theory became extremely transparent, bringing immense benefits to later mathematicians. He also left many footprints in the abyss of number theory, such as his proof of [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) for $ n=5 $ (proven independently around the same time as Dirichlet) and his conjecture of Dirichlet's theorem on arithmetic progressions.
 
 ### 2.2 Elliptic Integrals and Legendre Polynomials
 

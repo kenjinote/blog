@@ -137,9 +137,9 @@ Another of Lamé's great achievements is his systematic study of **curvilinear c
 
 In particular, to solve **Laplace's equation**, which describes heat conduction phenomena in space, he demonstrated the importance of choosing a coordinate system tailored to complex boundary conditions (such as ellipsoidal objects). The **Lamé scale factors** he introduced in this process form the foundation of modern vector calculus and tensor analysis.
 
-## 7. Challenge and Setback with Fermat's Last Theorem
+## 7. Challenge and Setback with [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)
 
-A dramatic episode in Lamé's life was his attempt to prove **Fermat's Last Theorem** in 1847. In March of that year, Lamé proudly announced at the French Academy of Sciences that he had "completely proven Fermat's Last Theorem." His proof involved a highly innovative and powerful approach for the time: factoring the equation using cyclotomic complex numbers.
+A dramatic episode in Lamé's life was his attempt to prove **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** in 1847. In March of that year, Lamé proudly announced at the French Academy of Sciences that he had "completely proven [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)." His proof involved a highly innovative and powerful approach for the time: factoring the equation using cyclotomic complex numbers.
 
 However, immediately after his presentation, his colleague, mathematician Joseph Liouville, sharply pointed out that "the proof rests on the unproven, tacit assumption that 'unique prime factorization' also holds in the realm of complex numbers." Shortly after, a letter arrived from German mathematician Ernst Kummer indicating that "unique prime factorization does not generally hold," effectively rendering Lamé's proof invalid.
 

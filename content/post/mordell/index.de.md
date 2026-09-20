@@ -12,7 +12,7 @@ tags: ["zahlentheorie", "Mordell", "elliptische kurven", "diophantische gleichun
 
 Einer der Mathematiker, der im 20. Jahrhundert insbesondere auf dem Gebiet der **Zahlentheorie** (Number Theory) brillante Spuren in der mathematischen Welt hinterlassen hat, ist Louis Joel Mordell (1888–1972). Er erzielte bahnbrechende Ergebnisse bei der Untersuchung diophantischer Gleichungen und legte den Grundstein für viele wichtige Theorien an der Schnittstelle von moderner algebraischer Geometrie und Zahlentheorie. In diesem Artikel werden wir das Leben von Mordell, die wichtigen Sätze und Vermutungen, die seinen Namen tragen, sowie seinen tiefgreifenden Einfluss auf die mathematische Gemeinschaft detailliert erläutern.
 
-Viele, die von Mordell gehört haben, kennen ihn wahrscheinlich durch den **Satz von Mordell** (Mordell's Theorem) oder die **Mordell-Vermutung** (Mordell Conjecture). Diese Errungenschaften waren nicht nur Beweise einzelner Sätze, sondern dienten als wichtige Vorspiele für ein großartiges mathematisches Drama, das zum Beweis von **Fermats Letztem Satz** (Fermat's Last Theorem) führte.
+Viele, die von Mordell gehört haben, kennen ihn wahrscheinlich durch den **Satz von Mordell** (Mordell's Theorem) oder die **Mordell-Vermutung** (Mordell Conjecture). Diese Errungenschaften waren nicht nur Beweise einzelner Sätze, sondern dienten als wichtige Vorspiele für ein großartiges mathematisches Drama, das zum Beweis von **Fermats Letztem Satz** ([Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)) führte.
 
 ## 2. Frühe Jahre: Vom Selbststudium nach Cambridge
 

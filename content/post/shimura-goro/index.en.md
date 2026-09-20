@@ -10,7 +10,7 @@ tags: ["Goro Shimura", "Number Theory", "Taniyama-Shimura Conjecture", "Fermat's
 
 ## 1. Introduction: A Giant of Number Theory, Goro Shimura
 
-In the history of modern mathematics, there is a Japanese mathematician who had a decisive impact on the field of arithmetic geometry. His name is **Goro Shimura** (1930 - 2019). His achievements are immeasurable, having proposed the "Taniyama-Shimura Conjecture" (now known as the Modularity Theorem), which later became the biggest key to the proof of "Fermat's Last Theorem", and constructing "Shimura varieties", an extremely important object in modern number theory.
+In the history of modern mathematics, there is a Japanese mathematician who had a decisive impact on the field of arithmetic geometry. His name is **Goro Shimura** (1930 - 2019). His achievements are immeasurable, having proposed the "Taniyama-Shimura Conjecture" (now known as the Modularity Theorem), which later became the biggest key to the proof of "[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)", and constructing "Shimura varieties", an extremely important object in modern number theory.
 
 In this article, while looking back on the life of Goro Shimura, a solitary mathematician, we will delve deeply into the monumental achievements he established in the mathematical world, and the fierce philosophy and aesthetics behind them. It is no exaggeration to say that understanding his achievements is synonymous with understanding how mathematics developed in the late 20th century.
 
@@ -85,25 +85,25 @@ In 1958, just as the construction of the theory was beginning in earnest, a trag
 
 For Shimura, the grief of losing Taniyama, his best understander and collaborator, was immeasurable. However, Shimura overcame the sorrow and harbored a strong sense of mission to prove the incomplete ideas Taniyama left behind with his own hands and have the world recognize them. Shimura later moved to the United States, continuing his research at Princeton University and elsewhere, while formulating this conjecture into a more precise form and raising its international profile. Because of this, the conjecture came to be called the "Taniyama-Shimura Conjecture".
 
-## 5. The Path to Fermat's Last Theorem
+## 5. The Path to [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)
 
 ### 5.1 Frey's Idea and Ribet's Proof
 
-Time passed, and in the 1980s, the Taniyama-Shimura Conjecture became dramatically linked to "Fermat's Last Theorem". In 1984, Gerhard Frey showed that if one assumes a counterexample $a^n + b^n = c^n$ to Fermat's Last Theorem exists, a strange elliptic curve (Frey curve) could be constructed from it.
+Time passed, and in the 1980s, the Taniyama-Shimura Conjecture became dramatically linked to "[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)". In 1984, Gerhard Frey showed that if one assumes a counterexample $a^n + b^n = c^n$ to [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) exists, a strange elliptic curve (Frey curve) could be constructed from it.
 
 $$
 y^2 = x(x - a^n)(x + b^n)
 $$
 
-Frey conjectured that because this curve has such extraordinarily abnormal properties, it **cannot be modular** (meaning it does not satisfy the Taniyama-Shimura Conjecture). If this were true, it would mean that "if the Taniyama-Shimura Conjecture is proven, Fermat's Last Theorem is also proven".
+Frey conjectured that because this curve has such extraordinarily abnormal properties, it **cannot be modular** (meaning it does not satisfy the Taniyama-Shimura Conjecture). If this were true, it would mean that "if the Taniyama-Shimura Conjecture is proven, [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) is also proven".
 
-In 1986, Ken Ribet completely proved Frey's conjecture (the epsilon conjecture). With this, Fermat's Last Theorem, which had been unsolved for 350 years, was completely reduced to the problem of proving the Taniyama-Shimura Conjecture.
+In 1986, Ken Ribet completely proved Frey's conjecture (the epsilon conjecture). With this, [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/), which had been unsolved for 350 years, was completely reduced to the problem of proving the Taniyama-Shimura Conjecture.
 
 ### 5.2 Proof by Andrew Wiles
 
 The one who stood up upon hearing this news was the British mathematician **Andrew Wiles**. After seven years of secret research, he announced a proof of the Taniyama-Shimura Conjecture for semistable elliptic curves in 1993. Along the way, there was a crisis where a critical flaw was found in the proof, but with the help of his former student Richard Taylor, it was completely fixed in 1994.
 
-Wiles' proof of (a part of) the Taniyama-Shimura Conjecture meant a complete proof of Fermat's Last Theorem. It was one of the greatest dramas in the history of mathematics.
+Wiles' proof of (a part of) the Taniyama-Shimura Conjecture meant a complete proof of [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/). It was one of the greatest dramas in the history of mathematics.
 
 ### 5.3 Shimura's Reaction: "I told you so"
 

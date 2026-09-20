@@ -31,7 +31,7 @@ AI画像生成技術は、Stable Diffusionのオープンソース化を皮切�
 
 ### 2.1 ノイズ付加プロセス（Forward Process）と除去プロセス（Reverse Process）
 
-拡散モデルの基本原理は、元のデータ（画像）に対して段階的にガウスノイズを加え、最終的に完全なノイズにする「Forward Process」と、そのノイズから元の画像を復元する「Reverse Process」から成り立ちます。
+拡散モデルの基本原理は、元のデータ（画像）に対して段階的に[ガウス](https://kenji.blog/p/gauss/)ノイズを加え、最終的に完全なノイズにする「Forward Process」と、そのノイズから元の画像を復元する「Reverse Process」から成り立ちます。
 
 Forward Process はマルコフ連鎖として定義され、ステップ $t$ における状態 $x_t$ は以下の式で表されます。
 

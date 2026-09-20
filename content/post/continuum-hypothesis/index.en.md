@@ -96,7 +96,7 @@ graph TD
 
 Combining the achievements of Gödel and Cohen, it was established that the continuum hypothesis can **neither be proved nor disproved** from the ZFC axiom system. Such a proposition is said to be **independent** from the axiom system.
 
-This gave an immeasurable shock to the mathematical community. What on earth is mathematical truth? The axiom system we have adopted (ZFC) was incomplete to determine the true size of the set of real numbers (it can also be said to be one manifestation of Gödel's incompleteness theorems).
+This gave an immeasurable shock to the mathematical community. What on earth is mathematical truth? The axiom system we have adopted (ZFC) was incomplete to determine the true size of the set of real numbers (it can also be said to be one manifestation of [Gödel's incompleteness theorems](https://kenji.blog/p/godels-incompleteness-theorems/)).
 
 ### Perspectives on Modern Set Theory
 

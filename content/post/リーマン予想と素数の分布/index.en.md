@@ -184,7 +184,7 @@ There is an urban legend that says, "If the Riemann Hypothesis is solved, RSA cr
 The proof of the Riemann Hypothesis itself would not immediately yield a magical algorithm that drastically speeds up integer factorization. This is because the Riemann Hypothesis is ultimately a theorem about the "macroscopic regularity of the distribution" of primes, and it does not directly tell us which primes divide an individual number $N$ (a local property).
 
 However, the impact is not zero.
-This is because, in the process of proving the Riemann Hypothesis, it is extremely likely that **"new mathematical tools" and "unknown analytical methods"** will be discovered. Looking at history, when Fermat's Last Theorem or the Poincaré Conjecture were proven, the new theories developed during the process greatly advanced the entirety of mathematics.
+This is because, in the process of proving the Riemann Hypothesis, it is extremely likely that **"new mathematical tools" and "unknown analytical methods"** will be discovered. Looking at history, when [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) or the Poincaré Conjecture were proven, the new theories developed during the process greatly advanced the entirety of mathematics.
 
 If unknown algebraic geometry methods or non-commutative geometry methods are established that can completely manipulate the properties of the zeros of the Riemann Zeta function, it cannot be denied that this might ultimately lead to the discovery of a groundbreaking integer factorization algorithm (for example, a classical algorithm that reduces the computational complexity to polynomial time). In that sense, cryptographers can never take their eyes off the developments surrounding the Riemann Hypothesis.
 

@@ -12,7 +12,7 @@ tags: ["Fermat", "History of Mathematics", "Fermat's Last Theorem", "Number Theo
 
 When speaking of the figure who generated the most famous and dramatic story in the history of mathematics, one must look no further than Pierre de Fermat. He was not a professional mathematician. He ordinarily worked as a regional judge and enjoyed mathematics in his spare time, making him a so-called **"amateur mathematician"**. However, the achievements he left behind astonished the greatest minds of Europe at the time and would go on to torment genius mathematicians around the world for more than 350 years after his death.
 
-In this article, we will delve deeply into Fermat's life, his major mathematical discoveries, and the romantic saga surrounding the monumental **"Fermat's Last Theorem"** that remains etched in the history of mathematics. Let us explore how he laid the foundations of modern mathematics and uncover the sources of his astonishing insight and imagination.
+In this article, we will delve deeply into Fermat's life, his major mathematical discoveries, and the romantic saga surrounding the monumental **"[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)"** that remains etched in the history of mathematics. Let us explore how he laid the foundations of modern mathematics and uncover the sources of his astonishing insight and imagination.
 
 ## 1. His Public Face as a Judge and His Passion for Mathematics
 
@@ -97,9 +97,9 @@ He introduced a concept called **"Adequality"**. This is a technique where a val
 
 Furthermore, in the field of physics (optics), he proposed **Fermat's Principle**, which states that "light travels between two points along the path that requires the shortest time." This mathematically derived Snell's law of refraction, formed the basis of modern optics, and became an extremely important discovery that led to the "principle of least action" traversing the entirety of later physics.
 
-## 6. Drama in the Margins: Fermat's Last Theorem
+## 6. Drama in the Margins: [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)
 
-Despite leaving behind such numerous great achievements, what unequivocally makes Fermat the most famous mathematician in history is the existence of **"Fermat's Last Theorem"**.
+Despite leaving behind such numerous great achievements, what unequivocally makes Fermat the most famous mathematician in history is the existence of **"[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)"**.
 
 In the margins of a passage regarding the Pythagorean theorem ( $x^2 + y^2 = z^2$ ) in Volume 2 of his favorite book, Diophantus's *Arithmetica*, Fermat penned the following astonishing note in Latin:
 

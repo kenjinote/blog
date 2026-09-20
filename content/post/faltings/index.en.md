@@ -34,7 +34,7 @@ The statement of the conjecture is as follows:
 
 > An algebraic curve over an algebraic number field $K$ of genus $g \ge 2$ has only finitely many rational points over $K$.
 
-This conjecture was deeply related to the Pythagorean theorem and Fermat's Last Theorem, and it was a formidable problem that many genius mathematicians had challenged and failed over the years.
+This conjecture was deeply related to the Pythagorean theorem and [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/), and it was a formidable problem that many genius mathematicians had challenged and failed over the years.
 
 Faltings attacked this problem by skillfully manipulating the massive machinery of algebraic geometry built by Alexander Grothendieck, such as scheme theory and étale cohomology, and by further introducing a new framework called Arakelov geometry.
 

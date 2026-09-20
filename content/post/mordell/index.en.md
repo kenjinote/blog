@@ -12,7 +12,7 @@ tags: ["number theory", "Mordell", "elliptic curves", "Diophantine equations"]
 
 One of the mathematicians who left a brilliant mark in the 20th-century mathematical world, particularly in the field of **Number Theory**, is Louis Joel Mordell (1888–1972). He achieved groundbreaking results in the study of Diophantine equations and laid the foundations for many important theories at the intersection of modern algebraic geometry and number theory. In this article, we will explain in detail the life of Mordell, the important theorems and conjectures bearing his name, and the profound impact he had on the mathematical community.
 
-Many who have heard of Mordell probably know him through **Mordell's Theorem** or the **Mordell Conjecture**. These achievements were not merely the proofs of single theorems but served as important preludes to a magnificent mathematical drama leading to the proof of **Fermat's Last Theorem**.
+Many who have heard of Mordell probably know him through **Mordell's Theorem** or the **Mordell Conjecture**. These achievements were not merely the proofs of single theorems but served as important preludes to a magnificent mathematical drama leading to the proof of **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)**.
 
 ## 2. Early Days: From Self-Study to Cambridge
 
@@ -30,7 +30,7 @@ The most famous example of a Diophantine equation is the one related to the Pyth
 
 $$ x^2 + y^2 = z^2 $$
 
-The integer solutions to this equation are called Pythagorean triples, and it is known that there are infinitely many of them. However, as the degree increases, the problem quickly becomes difficult. The following equation, known from Fermat's Last Theorem, is a prime example:
+The integer solutions to this equation are called Pythagorean triples, and it is known that there are infinitely many of them. However, as the degree increases, the problem quickly becomes difficult. The following equation, known from [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/), is a prime example:
 
 $$ x^n + y^n = z^n \quad (n \ge 3) $$
 
@@ -85,7 +85,7 @@ $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
 This conjecture remained unsolved for over 60 years. However, in 1983, it was finally proved by the German mathematician Gerd Faltings, becoming **Faltings's Theorem**. For this achievement, Faltings was awarded the Fields Medal in 1986.
 
-Furthermore, the equation for Fermat's Last Theorem, $x^n + y^n = z^n$, has a genus of 3 or more when $n \ge 4$. Therefore, from the Mordell Conjecture (Faltings's Theorem), it immediately follows that the Fermat equation has at most finitely many rational solutions for each $n$.
+Furthermore, the equation for [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/), $x^n + y^n = z^n$, has a genus of 3 or more when $n \ge 4$. Therefore, from the Mordell Conjecture (Faltings's Theorem), it immediately follows that the Fermat equation has at most finitely many rational solutions for each $n$.
 
 ## 7. Involvement with Ramanujan and Modular Forms
 
@@ -135,7 +135,7 @@ The legacy that Louis Mordell left in the mathematical world is deeply rooted in
 2. **Theory of Modular Forms**: The techniques he used in the proof of Ramanujan's conjecture became the starting point for a massive theory that extends to the modern Langlands Program.
 3. **Solving Diophantine Equations**: His concrete approaches and numerous papers still serve as the basis for algorithmic methods of solving equations using computers today.
 
-When Fermat's Last Theorem was proved by Andrew Wiles, concepts deeply involving Mordell, such as elliptic curves and modular forms, were indispensable to its theoretical background.
+When [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) was proved by Andrew Wiles, concepts deeply involving Mordell, such as elliptic curves and modular forms, were indispensable to its theoretical background.
 
 ## 12. Conclusion
 

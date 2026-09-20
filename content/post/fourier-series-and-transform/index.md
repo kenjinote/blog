@@ -44,7 +44,7 @@ $$
 
 ### 2.2 複素フーリエ級数
 
-オイラーの公式 $e^{i\theta} = \cos\theta + i\sin\theta$ を用いると、フーリエ級数はよりエレガントな複素指数関数の形で書き表すことができます。
+[オイラー](https://kenji.blog/p/euler/)の公式 $e^{i\theta} = \cos\theta + i\sin\theta$ を用いると、フーリエ級数はよりエレガントな複素指数関数の形で書き表すことができます。
 
 $$
 f(x) = \sum_{n=-\infty}^{\infty} c_n e^{inx}

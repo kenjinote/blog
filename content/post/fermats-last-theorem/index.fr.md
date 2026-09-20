@@ -13,7 +13,7 @@ tags:
 
 ## 1. Introduction : Le mystère mathématique le plus célèbre au monde
 
-Dans l'histoire des mathématiques, il y a un problème qui a fasciné et tourmenté le plus grand nombre de personnes. Il s'agit du **dernier théorème de Fermat** (Fermat's Last Theorem). C'est à partir d'une courte note laissée dans la marge de son livre de chevet, l'« Arithmétique » de Diophante, par Pierre de Fermat, juge français du XVIIe siècle et mathématicien amateur, qu'a commencé un drame mathématique épique qui a duré 360 ans.
+Dans l'histoire des mathématiques, il y a un problème qui a fasciné et tourmenté le plus grand nombre de personnes. Il s'agit du **dernier théorème de Fermat** ([Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)). C'est à partir d'une courte note laissée dans la marge de son livre de chevet, l'« Arithmétique » de Diophante, par Pierre de Fermat, juge français du XVIIe siècle et mathématicien amateur, qu'a commencé un drame mathématique épique qui a duré 360 ans.
 
 Le contenu du théorème lui-même est si simple qu'un collégien peut le comprendre.
 

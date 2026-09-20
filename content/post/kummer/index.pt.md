@@ -10,7 +10,7 @@ tags: ["Ernst Kummer", "Último Teorema de Fermat", "Números Ideais", "Teoria A
 
 # Ernst Kummer: Pai dos Números Ideais e o Amanhecer da Teoria Algébrica dos Números
 
-Na história da matemática, não é incomum que o desafio a um problema em aberto específico crie campos de estudo inteiramente novos. Ernst Eduard Kummer ( **Ernst Eduard Kummer** ) é um gigante matemático alemão do século XIX que criou exatamente esse ponto de virada histórico. Durante sua profunda luta com o **Último Teorema de Fermat** ( **Fermat's Last Theorem** ), ele introduziu o conceito revolucionário de **Números Ideais** ( **Ideal Numbers** ), estabelecendo as bases para a moderna teoria algébrica dos números.
+Na história da matemática, não é incomum que o desafio a um problema em aberto específico crie campos de estudo inteiramente novos. Ernst Eduard Kummer ( **Ernst Eduard Kummer** ) é um gigante matemático alemão do século XIX que criou exatamente esse ponto de virada histórico. Durante sua profunda luta com o **Último Teorema de Fermat** ( **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** ), ele introduziu o conceito revolucionário de **Números Ideais** ( **Ideal Numbers** ), estabelecendo as bases para a moderna teoria algébrica dos números.
 
 Neste artigo, vamos nos aprofundar na vida turbulenta de Kummer, nos episódios humanos que o cercam e em suas brilhantes realizações que continuam a brilhar na história da matemática.
 

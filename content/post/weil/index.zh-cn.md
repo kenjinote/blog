@@ -59,7 +59,7 @@ graph TD
 
 1.  **有理性质（Rationality）**：同余黎曼Zeta函数 $Z(X, t)$ 是一个有理函数。
 2.  **函数方程（Functional equation）**：Zeta函数满足一种特定的对称性。
-3.  **黎曼猜想的类比（Analogue of the Riemann hypothesis）**：Zeta函数的零点和极点的绝对值遵循特定的规则。
+3.  **黎曼猜想的类比（Analogue of the [Riemann hypothesis](https://kenji.blog/p/riemann-hypothesis/)）**：Zeta函数的零点和极点的绝对值遵循特定的规则。
 4.  **与贝蒂数的关系（Connection with Betti numbers）**：Zeta函数的次数与簇的贝蒂数一致。
 
 作为数学公式化，有限域 $\mathbb{F}_q$ 上非奇异射影簇 $X$ 的同余Zeta函数定义如下：

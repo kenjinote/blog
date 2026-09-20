@@ -144,7 +144,7 @@ $$
 H_n\approx\ln n+\gamma+\frac{1}{2n}
 $$
 
-$\ln$ は自然対数、$\gamma\approx0.57721$ はオイラー＝マスケローニ定数です。したがって、
+$\ln$ は自然対数、$\gamma\approx0.57721$ は[オイラー](https://kenji.blog/p/euler/)＝マスケローニ定数です。したがって、
 
 $$
 E[T]\approx n\ln n+\gamma n+\frac12

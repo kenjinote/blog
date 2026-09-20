@@ -55,13 +55,13 @@ The Theta-link ($\Theta$-link) plays the role of transmitting specific monodromy
 
 # Astounding Consequences Derived from the ABC Conjecture
 
-If the ABC Conjecture is completely proven (whether by IUT Theory or other methods), many important theorems in number theory would be derived all at once. Let us compare this with the **Mordell Conjecture** (now known as Faltings's theorem) and **Fermat's Last Theorem**.
+If the ABC Conjecture is completely proven (whether by IUT Theory or other methods), many important theorems in number theory would be derived all at once. Let us compare this with the **Mordell Conjecture** (now known as Faltings's theorem) and **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)**.
 
-## Application to Fermat's Last Theorem
+## Application to [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)
 
-Fermat's Last Theorem states that for $n \ge 3$, there are no tuples of positive integers $(x, y, z)$ that satisfy $x^n + y^n = z^n$. It was proven by Andrew Wiles in 1995, but it involved very advanced and complex mathematics.
+[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) states that for $n \ge 3$, there are no tuples of positive integers $(x, y, z)$ that satisfy $x^n + y^n = z^n$. It was proven by Andrew Wiles in 1995, but it involved very advanced and complex mathematics.
 
-If we assume the ABC Conjecture is correct, surprisingly, Fermat's Last Theorem (at least when $n$ is sufficiently large) can be proven in just a few lines.
+If we assume the ABC Conjecture is correct, surprisingly, [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) (at least when $n$ is sufficiently large) can be proven in just a few lines.
 
 Let $x^n + y^n = z^n$, and assume $(x, y, z)$ are coprime. Applying the ABC Conjecture to $a=x^n$, $b=y^n$, $c=z^n$:
 

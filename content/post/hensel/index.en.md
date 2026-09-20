@@ -148,7 +148,7 @@ Hensel made tremendous contributions not only as a researcher but also as an edu
 
 His lectures were clear and passionate, nurturing the next generation of brilliant mathematicians, including Helmut Hasse.
 
-Today, p-adic numbers are applied in a wide range of fields beyond algebraic number theory, including **p-adic analysis**, **p-adic Hodge theory**, and even **p-adic quantum mechanics** in theoretical physics. Andrew Wiles' historic proof of "Fermat's Last Theorem" would have been impossible without the theory of p-adic numbers.
+Today, p-adic numbers are applied in a wide range of fields beyond algebraic number theory, including **p-adic analysis**, **p-adic Hodge theory**, and even **p-adic quantum mechanics** in theoretical physics. Andrew Wiles' historic proof of "[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)" would have been impossible without the theory of p-adic numbers.
 
 ## 9. Conclusion
 

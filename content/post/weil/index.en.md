@@ -49,7 +49,7 @@ The defining characteristic of Bourbaki was its completely axiomatic and rigorou
 
 With the outbreak of World War II in 1939, Weil's fate was severely tossed about. He refused military service and fled to Finland, where he was mistakenly identified as a Soviet spy and nearly executed. He was saved by the efforts of the prominent mathematician Rolf Nevanlinna but was subsequently deported back to France and imprisoned in Rouen.
 
-Remarkably, however, Weil's mathematical creativity reached its zenith under these harsh conditions. Inside his prison cell, he completed one of his greatest achievements: the **"Proof of the Riemann hypothesis for algebraic curves over finite fields"** . In letters to his sister Simone, he passionately discussed the joy of this discovery and the importance of "analogy" in mathematics.
+Remarkably, however, Weil's mathematical creativity reached its zenith under these harsh conditions. Inside his prison cell, he completed one of his greatest achievements: the **"Proof of the [Riemann hypothesis](https://kenji.blog/p/riemann-hypothesis/) for algebraic curves over finite fields"** . In letters to his sister Simone, he passionately discussed the joy of this discovery and the importance of "analogy" in mathematics.
 
 ## 6. The Weil Conjectures: A Bridge Between Algebraic Geometry and Number Theory
 
@@ -59,7 +59,7 @@ In 1949, he published his signature work, the **"Weil conjectures"** . This prop
 
 1.  **Rationality**: The congruence zeta function $Z(X, t)$ is a rational function.
 2.  **Functional equation**: The zeta function satisfies a specific symmetry.
-3.  **Analogue of the Riemann hypothesis**: The absolute values of the zeros and poles of the zeta function follow specific rules.
+3.  **Analogue of the [Riemann hypothesis](https://kenji.blog/p/riemann-hypothesis/)**: The absolute values of the zeros and poles of the zeta function follow specific rules.
 4.  **Connection with Betti numbers**: The degree of the zeta function coincides with the Betti numbers of the variety.
 
 As a mathematical formulation, the congruence zeta function of a non-singular projective variety $X$ over a finite field $\mathbb{F}_q$ is defined as follows:
@@ -77,7 +77,7 @@ graph LR
 %% Connection between number theory and algebraic geometry
 ```
 
-To prove these profound conjectures, Alexander Grothendieck built the massive theoretical framework of scheme theory and étale cohomology from scratch. Then, in 1974, Grothendieck's student Pierre Deligne proved the final hurdle, the "analogue of the Riemann hypothesis," completely resolving the Weil conjectures. This grand drama is considered one of the greatest monumental achievements in 20th-century mathematics.
+To prove these profound conjectures, Alexander Grothendieck built the massive theoretical framework of scheme theory and étale cohomology from scratch. Then, in 1974, Grothendieck's student Pierre Deligne proved the final hurdle, the "analogue of the [Riemann hypothesis](https://kenji.blog/p/riemann-hypothesis/)," completely resolving the Weil conjectures. This grand drama is considered one of the greatest monumental achievements in 20th-century mathematics.
 
 ## 7. Other Significant Contributions: Adeles, Ideles, and the Weil Group
 

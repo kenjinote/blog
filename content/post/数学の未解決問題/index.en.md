@@ -40,7 +40,7 @@ The problem itself is very simple, but it remains unproven.
 
 ## Riemann Hypothesis
 
-The Riemann hypothesis is the conjecture that the zeros of the Riemann zeta function are restricted to negative even integers and complex numbers with real part 1 / 2.
+The [Riemann hypothesis](https://kenji.blog/p/riemann-hypothesis/) is the conjecture that the zeros of the Riemann zeta function are restricted to negative even integers and complex numbers with real part 1 / 2.
 
 The Riemann zeta function is the function $\zeta$ defined by:
 

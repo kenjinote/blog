@@ -176,4 +176,4 @@ In this article, we have looked in detail at the Fundamental Theorem of Algebra,
 
 At first glance, it is a theorem about algebraic equations, but the fact that its most elegant proof borrows the power of analysis (calculus) and topology demonstrates the profundity of mathematics and the beauty of how different fields are closely intertwined.
 
-Humanity's long quest to find the roots of equations gained the vast stage of the complex plane through the introduction of the new imaginary numbers, and the completeness of this stage was proven by the Fundamental Theorem of Algebra. This theorem became the key that opened the brilliant doors leading to Galois theory and algebraic geometry, which form the bedrock of modern mathematics.
+Humanity's long quest to find the roots of equations gained the vast stage of the complex plane through the introduction of the new imaginary numbers, and the completeness of this stage was proven by the Fundamental Theorem of Algebra. This theorem became the key that opened the brilliant doors leading to [Galois theory](https://kenji.blog/p/galois-theory/) and algebraic geometry, which form the bedrock of modern mathematics.

@@ -183,4 +183,4 @@ Cantor's diagonal argument looks like a simple puzzle at first glance, but behin
 2. Up to rational numbers, they have the same size as natural numbers (countably infinite).
 3. By shifting the diagonal to create a new number, it is proved that there are more real numbers than natural numbers (uncountably infinite).
 
-The absolute beauty of logic, which contradicts this intuition, can be said to be the greatest charm of the discipline of mathematics. The diagonal argument was later applied to theories fundamental to computer science and mathematical logic, such as Alan Turing's halting problem and the proof of Gödel's incompleteness theorems.
+The absolute beauty of logic, which contradicts this intuition, can be said to be the greatest charm of the discipline of mathematics. The diagonal argument was later applied to theories fundamental to computer science and mathematical logic, such as Alan Turing's halting problem and the proof of [Gödel's incompleteness theorems](https://kenji.blog/p/godels-incompleteness-theorems/).

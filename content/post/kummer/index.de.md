@@ -10,7 +10,7 @@ tags: ["Ernst Kummer", "Großer Fermatscher Satz", "Ideale Zahlen", "Algebraisch
 
 # Ernst Kummer: Vater der idealen Zahlen und die Morgendämmerung der algebraischen Zahlentheorie
 
-In der Geschichte der Mathematik ist es nicht ungewöhnlich, dass die Herausforderung eines bestimmten offenen Problems völlig neue Forschungsfelder eröffnet. Ernst Eduard Kummer ( **Ernst Eduard Kummer** ) ist ein deutscher mathematischer Gigant des 19. Jahrhunderts, der genau solch einen historischen Wendepunkt schuf. Während seines tiefgründigen Kampfes mit dem **Großen Fermatschen Satz** ( **Fermat's Last Theorem** ) führte er das bahnbrechende Konzept der **idealen Zahlen** ( **Ideal Numbers** ) ein und legte damit den Grundstein für die moderne algebraische Zahlentheorie.
+In der Geschichte der Mathematik ist es nicht ungewöhnlich, dass die Herausforderung eines bestimmten offenen Problems völlig neue Forschungsfelder eröffnet. Ernst Eduard Kummer ( **Ernst Eduard Kummer** ) ist ein deutscher mathematischer Gigant des 19. Jahrhunderts, der genau solch einen historischen Wendepunkt schuf. Während seines tiefgründigen Kampfes mit dem **Großen Fermatschen Satz** ( **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** ) führte er das bahnbrechende Konzept der **idealen Zahlen** ( **Ideal Numbers** ) ein und legte damit den Grundstein für die moderne algebraische Zahlentheorie.
 
 In diesem Artikel werden wir tief in Kummers turbulentes Leben, die menschlichen Episoden um ihn herum und seine brillanten Errungenschaften, die in der Mathematikgeschichte weiterhin strahlen, eintauchen.
 

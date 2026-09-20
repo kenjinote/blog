@@ -47,7 +47,7 @@ Legend has it that upon seeing this abstract proof completely devoid of calculat
 
 Following his success in invariant theory, Hilbert turned to algebraic number theory. Commissioned by the German Mathematical Society in 1897, he authored the "Zahlbericht" (Report on Numbers), a monumental work that synthesized existing knowledge of algebraic number theory and reconstructed it from an entirely new perspective.
 
-In this report, he applied Galois theory to number theory, laying the foundations for Hilbert's class field theory. Class field theory, later perfected by Teiji Takagi and Emil Artin, is considered one of the most beautiful theories in 20th-century number theory. Hilbert managed to unify seemingly disparate results in number theory under higher, beautiful laws.
+In this report, he applied [Galois theory](https://kenji.blog/p/galois-theory/) to number theory, laying the foundations for Hilbert's class field theory. Class field theory, later perfected by Teiji Takagi and Emil Artin, is considered one of the most beautiful theories in 20th-century number theory. Hilbert managed to unify seemingly disparate results in number theory under higher, beautiful laws.
 
 ## 5. Axiomatization of Geometry: The Philosophy of "Tables, Chairs, and Beer Mugs"
 

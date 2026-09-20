@@ -130,7 +130,7 @@ However, this problem served as a catalyst that made 20th-century mathematicians
 
 "We must not define numbers with words. Mathematics must be constructed entirely and exclusively with independent, rigorous symbols."
 
-This paradox became an important milestone leading to cutting-edge studies that changed the history of mathematics, such as "Gödel's incompleteness theorems" (there are truths in mathematics that can never be proven) and "Kolmogorov complexity" (the theory of how short information can be compressed) in computer science.
+This paradox became an important milestone leading to cutting-edge studies that changed the history of mathematics, such as "[Gödel's incompleteness theorems](https://kenji.blog/p/godels-incompleteness-theorems/)" (there are truths in mathematics that can never be proven) and "Kolmogorov complexity" (the theory of how short information can be compressed) in computer science.
 
 Just 16 characters of Japanese exposed the limits of mathematics. That is the beauty of the Berry Paradox.
 

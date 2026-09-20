@@ -15,7 +15,7 @@ When $p$ is a prime number, $(p−1)!≡−1 \pmod p$ holds.
 ## Euler's Formula
 $e^{iπ}+1=0$
 
-## Fermat's Last Theorem
+## [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)
 For any integer $n≥3$, there are no positive integer solutions $x, y, z$ to the equation $x^n+y^n=z^n$.
 
 ## Basel Problem

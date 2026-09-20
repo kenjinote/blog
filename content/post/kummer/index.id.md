@@ -10,7 +10,7 @@ tags: ["Ernst Kummer", "Teorema Terakhir Fermat", "Bilangan Ideal", "Teori Bilan
 
 # Ernst Kummer: Bapak Bilangan Ideal dan Fajar Teori Bilangan Aljabar
 
-Dalam sejarah matematika, bukan hal yang aneh bagi sebuah tantangan terhadap masalah terbuka tertentu untuk membuka bidang studi yang sama sekali baru. Ernst Eduard Kummer ( **Ernst Eduard Kummer** ) adalah seorang raksasa matematika Jerman abad ke-19 yang menciptakan titik balik bersejarah seperti itu. Selama perjuangannya yang mendalam dengan **Teorema Terakhir Fermat** ( **Fermat's Last Theorem** ), ia memperkenalkan konsep revolusioner **Bilangan Ideal** ( **Ideal Numbers** ), yang meletakkan dasar bagi teori bilangan aljabar modern.
+Dalam sejarah matematika, bukan hal yang aneh bagi sebuah tantangan terhadap masalah terbuka tertentu untuk membuka bidang studi yang sama sekali baru. Ernst Eduard Kummer ( **Ernst Eduard Kummer** ) adalah seorang raksasa matematika Jerman abad ke-19 yang menciptakan titik balik bersejarah seperti itu. Selama perjuangannya yang mendalam dengan **Teorema Terakhir Fermat** ( **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** ), ia memperkenalkan konsep revolusioner **Bilangan Ideal** ( **Ideal Numbers** ), yang meletakkan dasar bagi teori bilangan aljabar modern.
 
 Dalam artikel ini, kita akan mempelajari lebih dalam kehidupan Kummer yang bergejolak, kisah-kisah manusiawi di sekitarnya, dan pencapaiannya yang cemerlang yang terus bersinar dalam sejarah matematika.
 

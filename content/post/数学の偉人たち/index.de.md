@@ -173,4 +173,4 @@ In Großbritannien geborener Mathematiker. Er leistete große Beiträge zu wicht
 Deutscher Mathematiker. Er versetzte Mathematiker auf der ganzen Welt in Staunen, als er 1983 im Alter von 28 Jahren die "Mordell-Vermutung" (auf algebraischen Kurven eines Geschlechts größer oder gleich 2 gibt es nur endlich viele rationale Punkte), ein extrem schwieriges Problem der algebraischen und arithmetischen Geometrie, bewies. Für diese Leistung wurde er 1986 mit der Fields-Medaille ausgezeichnet. Darüber hinaus löste er auf einen Schlag auch die Schafarewitsch-Vermutung und die Tate-Vermutung und demonstrierte so die Mächtigkeit der abstrakten Theorie, die Grothendieck aufgebaut hatte. Er ist bekannt für seine extreme Strenge und seinen tiefen Scharfsinn und prägt bis heute als einer der Spitzenforscher in der arithmetischen Geometrie den Nachwuchs stark.
 
 ### Bibliografie
-Fermats letzter Satz gelöst! Von Euler bis zu Wiles' Beweis (フェルマーの大定理が解けた！オイラーからワイルズの証明まで) Kodansha
+Fermats letzter Satz gelöst! Von Euler bis zu Wiles' Beweis (フェルマーの大定理が解けた！[オイラー](https://kenji.blog/p/euler/)から[ワイルズ](https://kenji.blog/p/wiles/)の証明まで) Kodansha

@@ -208,7 +208,7 @@ The answer is, **by abstracting, we can realize that seemingly completely differ
    "Error-correcting codes" are used to restore data when it is corrupted by noise in CDs, DVDs, QR codes, and communications with deep space probes. The theory of polynomial rings over finite fields and vector spaces is used here as well.
 
 4. **From Geometry to Algebraic Geometry**
-   Geometry, which investigates the properties of shapes, can also be reduced to investigating the properties of "rings," which are collections of polynomials (Algebraic Geometry). The proof of Fermat's Last Theorem would not have been possible without the development of advanced ring and field theory.
+   Geometry, which investigates the properties of shapes, can also be reduced to investigating the properties of "rings," which are collections of polynomials (Algebraic Geometry). The proof of [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) would not have been possible without the development of advanced ring and field theory.
 
 ---
 

@@ -74,7 +74,7 @@ By solving for the point where the gradient of this function becomes zero ($\nab
 
 Lagrange also left brilliant achievements in number theory.
 - **Lagrange's four-square theorem**: He proved the theorem that every natural number can be represented as the sum of at most four integer squares (e.g., $7 = 2^2 + 1^2 + 1^2 + 1^2$).
-- **Algebraic solution of equations**: Using the idea of permutations of roots, he pioneered the research on whether equations of degree five or higher could be solved algebraically. This was an important step that later developed into Galois theory and group theory.
+- **Algebraic solution of equations**: Using the idea of permutations of roots, he pioneered the research on whether equations of degree five or higher could be solved algebraically. This was an important step that later developed into [Galois theory](https://kenji.blog/p/galois-theory/) and group theory.
 
 ## Philosophy and Influence on Later Generations
 

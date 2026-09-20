@@ -79,7 +79,7 @@ Here, $\lambda$ is the eigenvalue and $w(x)$ is the weight function. Their theor
 
 ### 4. Other Contributions
 
-Liouville has theorems bearing his name across a wide variety of fields. These include **Liouville's theorem in differential Galois theory**, which determines whether the antiderivative of an elementary function can again be expressed as an elementary function, and his theorem in dynamical systems showing the conservation of phase-space volume.
+Liouville has theorems bearing his name across a wide variety of fields. These include **Liouville's theorem in differential [Galois theory](https://kenji.blog/p/galois-theory/)**, which determines whether the antiderivative of an elementary function can again be expressed as an elementary function, and his theorem in dynamical systems showing the conservation of phase-space volume.
 
 ## Contributions as an Educator and Editor
 
