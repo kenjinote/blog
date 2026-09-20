@@ -50,7 +50,7 @@ Lewis Fry Richardson a découvert ce phénomène empiriquement en 1951. Au fur e
 
 ## Dimension fractale : Entre 1 dimension et 2 dimensions
 
-C'est le mathématicien Benoît Mandelbrot qui a donné une explication mathématique à ce paradoxe. En 1967, il a publié un célèbre article dans la revue Science intitulé « [Quelle est la longueur de la côte britannique ?](https://kenji.blog/p/海岸線のパラドックス/) Auto-similarité statistique et dimension fractionnaire ».
+C'est le mathématicien Benoît Mandelbrot qui a donné une explication mathématique à ce paradoxe. En 1967, il a publié un célèbre article dans la revue Science intitulé « [Quelle est la longueur de la côte britannique ?](https://kenji.blog/fr/p/海岸線のパラドックス/) Auto-similarité statistique et dimension fractionnaire ».
 
 Mandelbrot a souligné que les formes naturelles comme les littoraux ont une **auto-similarité (fractale)**, ce qui signifie que « peu importe à quel point vous les agrandissez, des structures complexes similaires apparaissent ».
 
@@ -71,5 +71,5 @@ Cela montre mathématiquement qu'à mesure que la longueur de la règle $s$ s'ap
 
 Le concept de « longueur » que nous utilisons quotidiennement ne fonctionne que pour les lignes droites et les courbes lisses. Demander la « longueur absolue » de figures fractales existant dans le monde naturel (littoraux, nuages, chaînes de montagnes, ramifications des vaisseaux sanguins, etc.) n'a en fait aucun sens mathématique.
 
-« [Quelle est la longueur de la côte britannique ?](https://kenji.blog/p/海岸線のパラドックス/) »
+« [Quelle est la longueur de la côte britannique ?](https://kenji.blog/fr/p/海岸線のパラドックス/) »
 La réponse correcte est : « Cela dépend de la longueur de la règle de mesure », et en théorie, c'est « infini ». Le fait qu'une longueur infinie soit repliée dans un petit espace limité peut être considéré comme un beau paradoxe pour notre perception de l'espace.

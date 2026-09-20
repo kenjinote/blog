@@ -118,7 +118,7 @@ Misalnya, misalkan kita ingin mencari sisa dari $7^{100}$ dibagi $5$. Jika kita 
 
 ## 4. Dasar Matematika yang Mendukung Enkripsi RSA 3: Fungsi Euler dan Teorema Euler
 
-Mulai dari sini, kita masuk ke inti keajaiban matematika dari enkripsi RSA. Muncullah "Teorema Euler" yang merupakan generalisasi dari "[Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/)".
+Mulai dari sini, kita masuk ke inti keajaiban matematika dari enkripsi RSA. Muncullah "Teorema Euler" yang merupakan generalisasi dari "[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)".
 
 ### 4.1 Fungsi Totient Euler $\phi(N)$
 
@@ -139,13 +139,13 @@ Sifat ini berfungsi sebagai "pintu belakang rahasia (trapdoor)" dari enkripsi RS
 
 ### 4.2 Teorema Euler
 
-[Leonhard Euler](https://kenji.blog/p/euler/) menggunakan $\phi(N)$ ini untuk membuktikan teorema yang indah sebagai berikut.
+[Leonhard Euler](https://kenji.blog/id/p/euler/) menggunakan $\phi(N)$ ini untuk membuktikan teorema yang indah sebagai berikut.
 
 **Teorema Euler:**
 Ketika bilangan bulat $a$ dan $N$ saling prima, persamaan kongruensi berikut berlaku.
 $$ a^{\phi(N)} \equiv 1 \pmod N $$
 
-Ini adalah sifat yang luar biasa, yang menyatakan bahwa "jika suatu bilangan $a$ dikalikan $\phi(N)$ kali lalu dibagi $N$, sisanya pasti akan menjadi $1$". (Jika $N$ adalah bilangan prima $p$, ia menjadi $a^{p-1} \equiv 1 \pmod p$ dan disebut [Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/)).
+Ini adalah sifat yang luar biasa, yang menyatakan bahwa "jika suatu bilangan $a$ dikalikan $\phi(N)$ kali lalu dibagi $N$, sisanya pasti akan menjadi $1$". (Jika $N$ adalah bilangan prima $p$, ia menjadi $a^{p-1} \equiv 1 \pmod p$ dan disebut [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)).
 
 Mari kita ubah bentuk Teorema Euler ini. Kita kalikan kedua sisi dengan $a$ sekali lagi.
 $$ a^{\phi(N) + 1} \equiv a \pmod N $$
@@ -267,11 +267,11 @@ Jika Anda mengeksekusi `(48 ** 103) % 143` di kalkulator (atau komputer), hasiln
 
 ---
 
-## 8. Cara Mencari Kunci Privat $d$: [Algoritma [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) Diperluas (Extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm)
+## 8. Cara Mencari Kunci Privat $d$: [Algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) Diperluas (Extended [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm)
 
-Pada contoh hitung manual, kita menebak nilai $k$ untuk mencari $d=103$, namun saat bilangannya menjadi ratusan digit, cara ini tidak mungkin dilakukan. Dalam program komputer yang nyata, digunakan algoritma yang disebut **"[Algoritma [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) Diperluas"** (Extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm).
+Pada contoh hitung manual, kita menebak nilai $k$ untuk mencari $d=103$, namun saat bilangannya menjadi ratusan digit, cara ini tidak mungkin dilakukan. Dalam program komputer yang nyata, digunakan algoritma yang disebut **"[Algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) Diperluas"** (Extended [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm).
 
-Menyelesaikan $7d \equiv 1 \pmod{120}$ sama artinya dengan mencari bilangan bulat $d, y$ yang memenuhi $7d + 120y = 1$. Dengan menghitung balik [Algoritma [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/), hal ini bisa didapatkan secara mekanis.
+Menyelesaikan $7d \equiv 1 \pmod{120}$ sama artinya dengan mencari bilangan bulat $d, y$ yang memenuhi $7d + 120y = 1$. Dengan menghitung balik [Algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/), hal ini bisa didapatkan secara mekanis.
 
 1. $120 \div 7 = 17$ sisa $1$ 
 2. Jika kita ubah persamaannya, $1 = 120 - 17 \times 7$

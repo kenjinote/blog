@@ -79,9 +79,9 @@ Daher beträgt die Gewinnquote beim Wechsel der Tür $\frac{2}{3}$, was genau **
 
 ---
 
-## 3. Strenger Beweis durch den [Satz von Bayes](https://kenji.blog/p/bayes-theorem/)
+## 3. Strenger Beweis durch den [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/)
 
-Um dieses Problem mathematisch exakt zu lösen, verwenden wir den "[Satz von Bayes](https://kenji.blog/p/bayes-theorem/)", der bedingte Wahrscheinlichkeiten berechnet.
+Um dieses Problem mathematisch exakt zu lösen, verwenden wir den "[Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/)", der bedingte Wahrscheinlichkeiten berechnet.
 
 $$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 
@@ -111,7 +111,7 @@ Als nächstes ermitteln wir die Gesamtwahrscheinlichkeit $P(M_B)$, dass der Mode
 $$ P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C) $$
 $$ P(M_B) = \left(\frac{1}{2} \times \frac{1}{3}\right) + \left(0 \times \frac{1}{3}\right) + \left(1 \times \frac{1}{3}\right) = \frac{1}{6} + 0 + \frac{1}{3} = \frac{1}{2} $$
 
-Nun wenden wir endlich den [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) an, um die a posteriori Wahrscheinlichkeiten für Tür A und Tür C zu berechnen.
+Nun wenden wir endlich den [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) an, um die a posteriori Wahrscheinlichkeiten für Tür A und Tür C zu berechnen.
 
 **Wahrscheinlichkeit, dass das neue Auto hinter Tür A ist (wenn man nicht wechselt):**
 $$ P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{\frac{1}{2} \times \frac{1}{3}}{\frac{1}{2}} = \frac{1}{3} $$

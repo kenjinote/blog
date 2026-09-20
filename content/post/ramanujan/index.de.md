@@ -17,7 +17,7 @@ tags:
 
 ## Einleitung: Der Mann, der Formeln von den Göttern erhielt
 
-[Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) (1887–1920) war ein indisches Mathematikgenie, das in der mathematischen Welt des frühen 20. Jahrhunderts wie ein Komet auftauchte, bevor sein tragisch kurzes Leben endete. Obwohl er fast keine formelle mathematische Ausbildung genossen hatte, leitete er durch bloße Intuition und einzigartige Einsicht zahlreiche erstaunliche Theoreme und Formeln ab. Seine überlieferten Notizbücher beeinflussen die Spitzenforschung in der modernen Mathematik und Physik noch mehr als ein Jahrhundert nach seinem Tod.
+[Srinivasa Ramanujan](https://kenji.blog/de/p/ramanujan/) (1887–1920) war ein indisches Mathematikgenie, das in der mathematischen Welt des frühen 20. Jahrhunderts wie ein Komet auftauchte, bevor sein tragisch kurzes Leben endete. Obwohl er fast keine formelle mathematische Ausbildung genossen hatte, leitete er durch bloße Intuition und einzigartige Einsicht zahlreiche erstaunliche Theoreme und Formeln ab. Seine überlieferten Notizbücher beeinflussen die Spitzenforschung in der modernen Mathematik und Physik noch mehr als ein Jahrhundert nach seinem Tod.
 
 In diesem Artikel tauchen wir tief in Ramanujans turbulentes Leben ein, in seine schicksalhaften Begegnungen mit dem britischen Mathematiker G.H. Hardy, der ihn entdeckte, und in das brillante mathematische Erbe, das er hinterließ. Sein Leben ist ein starkes Zeugnis dafür, wie Leidenschaft und Talent Widrigkeiten überwinden und die Welt verändern können.
 
@@ -138,7 +138,7 @@ Hinter diesem Ruhm jedoch hatte sein Körper seine Grenzen erreicht. Das kalte e
 
 Das letzte Notizbuch, das Ramanujan auf dem Sterbebett schrieb, war lange Zeit verschollen, wurde aber 1976 vom amerikanischen Mathematiker George Andrews in der Bibliothek der Universität Cambridge entdeckt. Es wurde als „Das verlorene Notizbuch“ (The Lost Notebook) bekannt und sandte erneut Schockwellen durch die mathematische Gemeinschaft. Es enthielt etwa 600 neue Formeln, und die Forschung nach ihrer Bedeutung und ihren Anwendungen wird bis heute fortgesetzt.
 
-Das turbulente Leben von [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) wurde in Robert Kanigels Biografie *Der Mann, der die Unendlichkeit kannte* und der gleichnamigen Verfilmung von 2015 dargestellt, die unzählige Menschen über die mathematische Gemeinschaft hinaus inspirierte.
+Das turbulente Leben von [Srinivasa Ramanujan](https://kenji.blog/de/p/ramanujan/) wurde in Robert Kanigels Biografie *Der Mann, der die Unendlichkeit kannte* und der gleichnamigen Verfilmung von 2015 dargestellt, die unzählige Menschen über die mathematische Gemeinschaft hinaus inspirierte.
 
 Sein größtes Vermächtnis ist die unzählige Menge an Formeln, die in seinen Notizbüchern hinterlassen wurden. Da sie oft ohne Beweise waren, verbrachten spätere Mathematiker Jahrzehnte damit, jede einzelne zu beweisen. Dank der unermüdlichen Bemühungen von Mathematikern wie Bruce Berndt ist die Entzifferung seiner Notizbücher vorangeschritten, aber die neuen Rätsel und Forschungsthemen, die daraus abgeleitet wurden, sind noch lange nicht erschöpft.
 

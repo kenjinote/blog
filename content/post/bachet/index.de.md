@@ -8,7 +8,7 @@ categories: ["Mathematik", "Biografie"]
 tags: ["Bachet", "Zahlentheorie", "Geschichte der Mathematik", "Unterhaltungsmathematik", "Diophantos"]
 ---
 
-In der Geschichte der Mathematik gibt es Persönlichkeiten, die eine entscheidende Rolle gespielt haben, auch wenn sie manchmal im Schatten späterer großer Entdeckungen stehen. Der französische Mathematiker des 17. Jahrhunderts, **[Claude Gaspard Bachet](https://kenji.blog/p/bachet/) de Méziriac (1581–1638)**, ist einer von ihnen. Er ist berühmt für seinen Einfluss auf [Pierre de Fermat](https://kenji.blog/p/fermat/), aber auch seine eigenen Errungenschaften waren äußerst vielfältig und bedeutend.
+In der Geschichte der Mathematik gibt es Persönlichkeiten, die eine entscheidende Rolle gespielt haben, auch wenn sie manchmal im Schatten späterer großer Entdeckungen stehen. Der französische Mathematiker des 17. Jahrhunderts, **[Claude Gaspard Bachet](https://kenji.blog/de/p/bachet/) de Méziriac (1581–1638)**, ist einer von ihnen. Er ist berühmt für seinen Einfluss auf [Pierre de Fermat](https://kenji.blog/de/p/fermat/), aber auch seine eigenen Errungenschaften waren äußerst vielfältig und bedeutend.
 
 In diesem Artikel werden wir das Leben von Bachet und seine wichtigsten mathematischen Errungenschaften näher betrachten.
 
@@ -31,7 +31,7 @@ flowchart TD
 
 Eine der bekanntesten Errungenschaften von Bachet ist seine Übersetzung der "Arithmetica" des antiken griechischen Mathematikers Diophantos ins Lateinische, die er mit Kommentaren versah und 1621 veröffentlichte.
 
-Dieses übersetzte Buch wurde für die europäischen Mathematiker jener Zeit zum Standardwerk, um antike Algebra und Zahlentheorie zu studieren. Eine der berühmtesten Anekdoten besagt, dass [Pierre de Fermat](https://kenji.blog/p/fermat/) seinen berühmten "Großen Fermatschen Satz" an den Rand seiner Ausgabe dieses Bachet-Buches schrieb.
+Dieses übersetzte Buch wurde für die europäischen Mathematiker jener Zeit zum Standardwerk, um antike Algebra und Zahlentheorie zu studieren. Eine der berühmtesten Anekdoten besagt, dass [Pierre de Fermat](https://kenji.blog/de/p/fermat/) seinen berühmten "Großen Fermatschen Satz" an den Rand seiner Ausgabe dieses Bachet-Buches schrieb.
 
 Bachet begnügte sich nicht mit einer bloßen Übersetzung, sondern fügte den Problemen von Diophantos seine eigenen hervorragenden Kommentare und Verallgemeinerungen hinzu. Ohne seine mathematischen Einsichten wäre die Entwicklung der Zahlentheorie im 17. Jahrhundert vielleicht viel langsamer vorangegangen.
 
@@ -83,4 +83,4 @@ $x$ und $y$ können durch den erweiterten euklidischen Algorithmus konkret berec
 
 ## Fazit
 
-[Claude Gaspard Bachet](https://kenji.blog/p/bachet/) war nicht nur eine "Hintergrundfigur" für Fermats Letzten Satz. Er war ein großer Pionier, der durch die Wiederbelebung antiker Weisheiten, während er seine eigenen Gleichungen untersuchte und die Unterhaltungsmathematik systematisierte, die Türen zur modernen Mathematik öffnete. Seine Kommentare zur "Arithmetica" und seine mathematischen Rätsel inspirieren Mathematiker auch heute noch, Jahrhunderte nach seinem Tod.
+[Claude Gaspard Bachet](https://kenji.blog/de/p/bachet/) war nicht nur eine "Hintergrundfigur" für Fermats Letzten Satz. Er war ein großer Pionier, der durch die Wiederbelebung antiker Weisheiten, während er seine eigenen Gleichungen untersuchte und die Unterhaltungsmathematik systematisierte, die Türen zur modernen Mathematik öffnete. Seine Kommentare zur "Arithmetica" und seine mathematischen Rätsel inspirieren Mathematiker auch heute noch, Jahrhunderte nach seinem Tod.

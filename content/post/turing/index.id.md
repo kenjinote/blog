@@ -20,7 +20,7 @@ Selama masa sekolahnya di Sherborne, ia telah menunjukkan bakat luar biasa denga
 
 # 3. Mesin Turing dan Teori Komputabilitas
 
-Salah satu masalah terbesar yang belum terpecahkan dalam dunia matematika pada saat itu adalah "Entscheidungsproblem" (Masalah Keputusan) yang diusulkan oleh [David Hilbert](https://kenji.blog/p/hilbert/) pada tahun 1928. Ini adalah pertanyaan mendasar: "Diberikan pernyataan matematika apa pun, adakah prosedur algoritmik mekanis untuk menentukan apakah itu benar atau salah?"
+Salah satu masalah terbesar yang belum terpecahkan dalam dunia matematika pada saat itu adalah "Entscheidungsproblem" (Masalah Keputusan) yang diusulkan oleh [David Hilbert](https://kenji.blog/id/p/hilbert/) pada tahun 1928. Ini adalah pertanyaan mendasar: "Diberikan pernyataan matematika apa pun, adakah prosedur algoritmik mekanis untuk menentukan apakah itu benar atau salah?"
 
 Turing menangani masalah ini dengan pendekatan yang sama sekali baru. Dalam makalah inovatifnya tahun 1936 "Tentang Angka-angka yang Dapat Dihitung, dengan Aplikasi pada Entscheidungsproblem", ia mendefinisikan mesin komputasi abstrak, **Mesin Turing**.
 
@@ -139,4 +139,4 @@ Pada tanggal 7 Juni 1954, ia meninggal dunia pada usia muda 41 tahun. Penyebab k
 
 Namun, puluhan tahun setelah kematiannya, penilaian ulang global atas pencapaiannya dan pemulihan kehormatannya mengalami kemajuan. Pada tahun 2009, pemerintah Inggris secara resmi meminta maaf atas perlakuan tidak adil yang diterimanya pada saat itu, dan pada tahun 2013, ia diberikan pengampunan kerajaan secara anumerta oleh Ratu Elizabeth II.
 
-Saat ini, penghargaan tertinggi dunia dalam ilmu komputer (sering disebut "Hadiah Nobel Komputer") dinamai **Penghargaan Turing** untuk selamanya menghormati pencapaiannya. [Alan Turing](https://kenji.blog/p/turing/) memiliki gagasan yang sangat maju pada zamannya dalam berbagai bidang: matematika, kriptografi, ilmu komputer, kecerdasan buatan, dan biologi. Teori dan gagasan yang ia tinggalkan terus bernapas kuat saat ini sebagai dasar masyarakat digital modern kita.
+Saat ini, penghargaan tertinggi dunia dalam ilmu komputer (sering disebut "Hadiah Nobel Komputer") dinamai **Penghargaan Turing** untuk selamanya menghormati pencapaiannya. [Alan Turing](https://kenji.blog/id/p/turing/) memiliki gagasan yang sangat maju pada zamannya dalam berbagai bidang: matematika, kriptografi, ilmu komputer, kecerdasan buatan, dan biologi. Teori dan gagasan yang ia tinggalkan terus bernapas kuat saat ini sebagai dasar masyarakat digital modern kita.

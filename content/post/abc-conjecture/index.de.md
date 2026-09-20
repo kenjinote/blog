@@ -12,7 +12,7 @@ tags: ["ABC-Vermutung", "Zahlentheorie", "IUT-Theorie", "Shinichi Mochizuki"]
 
 Im Bereich der Zahlentheorie gibt es viele ungelöste Probleme, aber eines, das als besonders wichtig erachtet wurde, ist die **ABC-Vermutung** (ABC Conjecture). Diese Vermutung wurde 1985 unabhängig voneinander von Joseph Oesterlé und David Masser formuliert.
 
-[Die ABC-Vermutung](https://kenji.blog/p/abc-conjecture/) deutet auf eine tiefe Beziehung zwischen der Addition und der Multiplikation (Primfaktorzerlegung) von ganzen Zahlen hin. Auf den ersten Blick beschreibt sie eine erstaunliche Eigenschaft, die in der einfachen Gleichung $a + b = c$ verborgen ist.
+[Die ABC-Vermutung](https://kenji.blog/de/p/abc-conjecture/) deutet auf eine tiefe Beziehung zwischen der Addition und der Multiplikation (Primfaktorzerlegung) von ganzen Zahlen hin. Auf den ersten Blick beschreibt sie eine erstaunliche Eigenschaft, die in der einfachen Gleichung $a + b = c$ verborgen ist.
 
 ## Die strenge Definition der ABC-Vermutung
 
@@ -20,7 +20,7 @@ Betrachten wir ein Tripel $(a, b, c)$ von teilerfremden positiven ganzen Zahlen,
 
 $$ \text{rad}(n) = \prod_{p | n} p $$
 
-[Die ABC-Vermutung](https://kenji.blog/p/abc-conjecture/) besagt, dass es für jedes $\epsilon > 0$ nur endlich viele teilerfremde Tripel $(a, b, c)$ positiver ganzer Zahlen gibt, die folgendes erfüllen:
+[Die ABC-Vermutung](https://kenji.blog/de/p/abc-conjecture/) besagt, dass es für jedes $\epsilon > 0$ nur endlich viele teilerfremde Tripel $(a, b, c)$ positiver ganzer Zahlen gibt, die folgendes erfüllen:
 
 $$ c > \text{rad}(abc)^{1 + \epsilon} $$
 
@@ -59,7 +59,7 @@ Wenn die ABC-Vermutung (ob durch die IUT-Theorie oder auf andere Weise) vollstä
 
 ## Anwendung auf Fermats letzten Satz
 
-Fermats letzter Satz besagt, dass es für $n \ge 3$ keine positiven ganzen Zahlen $(x, y, z)$ gibt, die $x^n + y^n = z^n$ erfüllen. Er wurde 1995 von [Andrew Wiles](https://kenji.blog/p/wiles/) bewiesen, aber es wurde eine sehr fortgeschrittene und komplexe Mathematik verwendet.
+Fermats letzter Satz besagt, dass es für $n \ge 3$ keine positiven ganzen Zahlen $(x, y, z)$ gibt, die $x^n + y^n = z^n$ erfüllen. Er wurde 1995 von [Andrew Wiles](https://kenji.blog/de/p/wiles/) bewiesen, aber es wurde eine sehr fortgeschrittene und komplexe Mathematik verwendet.
 
 Wenn wir annehmen, dass die ABC-Vermutung wahr ist, kann Fermats letzter Satz (zumindest für hinreichend große $n$) erstaunlicherweise in nur wenigen Zeilen bewiesen werden.
 
@@ -90,6 +90,6 @@ Einige prominente Mathematiker (wie Peter Scholze und Jakob Stix) äußerten Bed
 
 # Schlussfolgerung und Zukunftsperspektiven
 
-[Die ABC-Vermutung](https://kenji.blog/p/abc-conjecture/) und die Inter-universale Teichmüller-Theorie sind eines der größten Dramen in der Mathematik des 21. Jahrhunderts. Die unergründliche Tiefe der einfachsten Konzepte, Addition und Multiplikation, die man in der Grundschule lernt, testet gerade jetzt die Grenzen der menschlichen Intelligenz.
+[Die ABC-Vermutung](https://kenji.blog/de/p/abc-conjecture/) und die Inter-universale Teichmüller-Theorie sind eines der größten Dramen in der Mathematik des 21. Jahrhunderts. Die unergründliche Tiefe der einfachsten Konzepte, Addition und Multiplikation, die man in der Grundschule lernt, testet gerade jetzt die Grenzen der menschlichen Intelligenz.
 
 Ob die IUT-Theorie wirklich einen neuen mathematischen Horizont eröffnet oder ob weitere Modifikationen erforderlich sind. Bis eine endgültige Schlussfolgerung gezogen ist, wird es wahrscheinlich noch viel Zeit und Forschung durch eine neue Generation von Mathematikern erfordern. Die Vision der **Verbindung verschiedener mathematischer Universen** , die diese Theorie aufgeworfen hat, wird jedoch zweifellos weiterhin eine große Inspiration für die zukünftige Entwicklung der Mathematik sein.

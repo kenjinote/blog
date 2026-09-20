@@ -82,7 +82,7 @@ graph LR
 
 - **糟糕的卡片**: “写下 Dijkstra 算法的全部证明”
 - **优秀的卡片**: “在 Dijkstra 算法中，可以认为某个顶点的最短距离已经确定的条件是什么？”→“在未确定的顶点集合中，选择当前暂定距离最小的顶点时。”
-- **优秀的卡片**: “写出[费马小定理](https://kenji.blog/p/fermats-little-theorem/)的公式”→“对于素数 $p$ 和互素的整数 $a$， $a^{p-1} \equiv 1 \pmod p$”
+- **优秀的卡片**: “写出[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的公式”→“对于素数 $p$ 和互素的整数 $a$， $a^{p-1} \equiv 1 \pmod p$”
 
 在记忆公式时，以 LaTeX 格式录入 Anki，并活用填空题（Cloze Deletion）会非常有效。
 
@@ -98,7 +98,7 @@ graph LR
 
 ### 4.1 实例1：RSA加密的数学与 Python 实现
 
-作为公钥密码学代表的 RSA 加密，是初等数论（同余式、欧拉定理、扩展[[欧几里得](https://kenji.blog/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)）的绝美应用。
+作为公钥密码学代表的 RSA 加密，是初等数论（同余式、欧拉定理、扩展[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)）的绝美应用。
 
 #### 数学背景
 RSA 加密的密钥生成以及加解密过程可以用以下公式表示：
@@ -171,7 +171,7 @@ def rsa_demo():
 rsa_demo()
 ```
 
-为了找到满足公式 $e \cdot d \equiv 1 \pmod{\phi(n)}$ 的 $d$，我们需要实现名为扩展[[欧几里得](https://kenji.blog/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)的算法。像这样， **当尝试将公式代码化时，我们会面临“这个变量具体该如何计算？”的实现难题，而在解决这些难题的过程中，数学理解会得到飞跃性的加深。**
+为了找到满足公式 $e \cdot d \equiv 1 \pmod{\phi(n)}$ 的 $d$，我们需要实现名为扩展[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)的算法。像这样， **当尝试将公式代码化时，我们会面临“这个变量具体该如何计算？”的实现难题，而在解决这些难题的过程中，数学理解会得到飞跃性的加深。**
 
 ### 4.2 实例2：Dijkstra 算法与松弛（Relaxation）
 

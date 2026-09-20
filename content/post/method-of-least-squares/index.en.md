@@ -16,11 +16,11 @@ tags:
 
 Data observed in the real world almost always contains "noise" or "variance". To find the underlying rules from such data and predict the future or estimate unknown data, we need to build a mathematical model that **best fits** the data.
 
-The most fundamental method, which still plays an extremely important role as the foundation of modern machine learning, is the **[Method of Least Squares](https://kenji.blog/p/method-of-least-squares/)**.
+The most fundamental method, which still plays an extremely important role as the foundation of modern machine learning, is the **[Method of Least Squares](https://kenji.blog/en/p/method-of-least-squares/)**.
 
 In this article, rather than just memorizing formulas, we will deeply explore **"why this calculation finds the best fitting line"** from the beautiful geometric perspective of linear algebra (orthogonal projection).
 
-## 2. Intuitive Idea of the [Method of Least Squares](https://kenji.blog/p/method-of-least-squares/)
+## 2. Intuitive Idea of the [Method of Least Squares](https://kenji.blog/en/p/method-of-least-squares/)
 
 Suppose we have $n$ data points $(x_1, y_1), (x_2, y_2), \dots, (x_n, y_n)$. When plotting these points on a scatter plot, they may not line up perfectly straight, but overall they seem to follow the trend of a certain line.
 
@@ -30,7 +30,7 @@ For each data point $x_i$, the value predicted by this line is $\hat{y}_i = c + 
 
 $$ e_i = y_i - \hat{y}_i = y_i - (c + d x_i) $$
 
-The [Method of Least Squares](https://kenji.blog/p/method-of-least-squares/) is a technique to find the parameters $c$ and $d$ that minimize the **sum of squared** errors. The sum of squared errors $E$ is defined as follows:
+The [Method of Least Squares](https://kenji.blog/en/p/method-of-least-squares/) is a technique to find the parameters $c$ and $d$ that minimize the **sum of squared** errors. The sum of squared errors $E$ is defined as follows:
 
 $$ E = \sum_{i=1}^{n} e_i^2 = \sum_{i=1}^{n} (y_i - c - d x_i)^2 \quad (\text{Definition of error function}) $$
 

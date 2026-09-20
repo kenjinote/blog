@@ -23,9 +23,9 @@ $$
 1 + 2 + 3 + 4 + \dots = -\frac{1}{12}
 $$
 
-明明是在将正整数无限相加，不知为何却变成了一个 **负分数** 。这个违反直觉的结果，因印度天才数学家[斯里尼瓦瑟·拉马努金](https://kenji.blog/p/ramanujan/)（[Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/)）在给英国数学家G.H.哈代（G.H. Hardy）的信中提及而闻名。
+明明是在将正整数无限相加，不知为何却变成了一个 **负分数** 。这个违反直觉的结果，因印度天才数学家[斯里尼瓦瑟·拉马努金](https://kenji.blog/zh-cn/p/ramanujan/)（[Srinivasa Ramanujan](https://kenji.blog/zh-cn/p/ramanujan/)）在给英国数学家G.H.哈代（G.H. Hardy）的信中提及而闻名。
 
-在本文中，我们将解说这种被称为“[拉马努金求和（[Ramanujan Summation](https://kenji.blog/p/ramanujan-summation/)）](https://kenji.blog/p/ramanujan-summation/)”的方法，探讨这个奇妙的值是如何推导出来的，以及它是如何与现实世界中的物理现象联系在一起的。
+在本文中，我们将解说这种被称为“[拉马努金求和（[Ramanujan Summation](https://kenji.blog/zh-cn/p/ramanujan-summation/)）](https://kenji.blog/p/ramanujan-summation/)”的方法，探讨这个奇妙的值是如何推导出来的，以及它是如何与现实世界中的物理现象联系在一起的。
 
 ---
 

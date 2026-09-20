@@ -15,7 +15,7 @@ tags:
 
 ## 引言：数学中最美的定理之一
 
-在数学世界里，有一些犹如魔法般的公式，能在看似毫不相干的事物之间建立起令人惊叹的联系。其中，由[莱昂哈德·欧拉](https://kenji.blog/p/euler/)（[Leonhard Euler](https://kenji.blog/p/euler/)）发现的 **[欧拉多面体定理](https://kenji.blog/p/eulers-polyhedron-formula/)** （Euler's polyhedron formula），以其无与伦比的简洁性和普适性脱颖而出。
+在数学世界里，有一些犹如魔法般的公式，能在看似毫不相干的事物之间建立起令人惊叹的联系。其中，由[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）发现的 **[欧拉多面体定理](https://kenji.blog/zh-cn/p/eulers-polyhedron-formula/)** （Euler's polyhedron formula），以其无与伦比的简洁性和普适性脱颖而出。
 
 这个公式非常简单：
 
@@ -46,7 +46,7 @@ $$V - E + F = 2$$
 
 ## 欧拉公式的直观证明
 
-为什么结果总是 **$2$** 呢？让我们来看看法国数学家[奥古斯丁-路易·柯西](https://kenji.blog/p/cauchy/)（[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)）在1811年提出的直观证明。这个证明采用了一种突破性的方法，将三维立体转换为“二维平面上的图”。
+为什么结果总是 **$2$** 呢？让我们来看看法国数学家[奥古斯丁-路易·柯西](https://kenji.blog/zh-cn/p/cauchy/)（[Augustin-Louis Cauchy](https://kenji.blog/zh-cn/p/cauchy/)）在1811年提出的直观证明。这个证明采用了一种突破性的方法，将三维立体转换为“二维平面上的图”。
 
 ### 步骤1：将立体压平到平面上
 
@@ -90,7 +90,7 @@ flowchart TD
 
 ## 笛卡尔的秘密手稿：另一个发现的故事
 
-其实，在欧拉发表这个定理的大约一个世纪前，法国哲学家兼数学家[勒内·笛卡尔](https://kenji.blog/p/descartes/)（[René Descartes](https://kenji.blog/p/descartes/)）就已经得出了本质上相同的定理。
+其实，在欧拉发表这个定理的大约一个世纪前，法国哲学家兼数学家[勒内·笛卡尔](https://kenji.blog/zh-cn/p/descartes/)（[René Descartes](https://kenji.blog/zh-cn/p/descartes/)）就已经得出了本质上相同的定理。
 笛卡尔关注的是多面体顶点处的“角亏”概念。
 汇聚在单一顶点处的所有面的角度总和，在平面上是 $360^\circ$，但在立体的顶点上总是小于 $360^\circ$。与 $360^\circ$ 相比所缺少的这一部分被称为“角亏”。
 
@@ -135,7 +135,7 @@ flowchart LR
 
 ## 欧拉-庞加莱公式：向多维度的飞跃
 
-从19世纪末到20世纪，包括[亨利·庞加莱](https://kenji.blog/p/poincare/)（[Henri Poincaré](https://kenji.blog/p/poincare/)）在内的数学家们，将欧拉定理进一步扩展到了更高维度的空间。这就是 **欧拉-庞加莱公式** 。
+从19世纪末到20世纪，包括[亨利·庞加莱](https://kenji.blog/zh-cn/p/poincare/)（[Henri Poincaré](https://kenji.blog/zh-cn/p/poincare/)）在内的数学家们，将欧拉定理进一步扩展到了更高维度的空间。这就是 **欧拉-庞加莱公式** 。
 通过推广多面体的元素，他们考虑了在 $n$ 维图形中元素数量的交错和。
 
 $$ \chi = k_0 - k_1 + k_2 - k_3 + \dots + (-1)^n k_n $$
@@ -156,7 +156,7 @@ $$ \chi = b_0 - b_1 + b_2 - b_3 + \dots $$
 “富勒烯”是一种碳原子结合成足球形状的分子。化学家们利用欧拉定理，在理论上证明了“如果没有12个五边形，就不可能制造出闭合的球状分子”这一事实。
 
 ### 2. 网络理论与图论
-现代社会充满了各种“网络”，如互联网路由和交通网络设计。欧拉公式是判断这些网络能否在平面上不交叉地绘制出来的基础。同时，它在“[四色定理](https://kenji.blog/p/four-color-theorem/)”的证明中也是不可或缺的。
+现代社会充满了各种“网络”，如互联网路由和交通网络设计。欧拉公式是判断这些网络能否在平面上不交叉地绘制出来的基础。同时，它在“[四色定理](https://kenji.blog/zh-cn/p/four-color-theorem/)”的证明中也是不可或缺的。
 
 ### 3. 拓扑数据分析（TDA）
 近年来在人工智能和机器学习领域备受瞩目的是，利用拓扑学技术分析大数据“形状”的方法。通过计算高维复杂数据中的欧拉示性数，研究人员试图揭示隐藏在数据中的关键模式。
@@ -167,4 +167,4 @@ $$ \chi = b_0 - b_1 + b_2 - b_3 + \dots $$
 
 这个连小学生都会算的加减法公式，从柏拉图立体出发，连接了咖啡杯与甜甜圈，并最终触及了最前沿的数据科学。这一事实，正是数学这门学科最大的魅力所在。
 
-无论我们日常所见物体的形状如何改变，总存在着某种绝不改变的“本质”。[欧拉多面体定理](https://kenji.blog/p/eulers-polyhedron-formula/)，跨越了300多年的时光，正向我们诉说着这样美丽的真理。
+无论我们日常所见物体的形状如何改变，总存在着某种绝不改变的“本质”。[欧拉多面体定理](https://kenji.blog/zh-cn/p/eulers-polyhedron-formula/)，跨越了300多年的时光，正向我们诉说着这样美丽的真理。

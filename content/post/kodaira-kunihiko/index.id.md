@@ -10,11 +10,11 @@ tags: ["Kunihiko Kodaira", "Medali Fields", "Geometri Kompleks"]
 
 ## 1. Pengantar
 
-Matematikawan besar Jepang **[Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/)** (1915–1997) adalah peraih Medali Fields pertama dari Jepang dan memberikan kontribusi luar biasa pada geometri aljabar dan teori manifold kompleks pada abad ke-20. Karyanya sangat memengaruhi tidak hanya matematika modern tetapi juga fisika teoritis, seperti teori string. Dalam artikel ini, kita menjelajahi kehidupan Kodaira dan dunia matematikanya yang intuitif.
+Matematikawan besar Jepang **[Kunihiko Kodaira](https://kenji.blog/id/p/kodaira-kunihiko/)** (1915–1997) adalah peraih Medali Fields pertama dari Jepang dan memberikan kontribusi luar biasa pada geometri aljabar dan teori manifold kompleks pada abad ke-20. Karyanya sangat memengaruhi tidak hanya matematika modern tetapi juga fisika teoritis, seperti teori string. Dalam artikel ini, kita menjelajahi kehidupan Kodaira dan dunia matematikanya yang intuitif.
 
 ## 2. Perjalanan Hidup
 
-[Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/) lahir di Tokyo pada tahun 1915. Dia menikmati bermain piano sejak usia muda, dan dikatakan bahwa kecintaannya yang mendalam pada musik kemudian memengaruhi pemikiran matematikanya. Kutipannya, "Memahami matematika itu seperti mendengarkan musik dan merasa itu indah," sangat terkenal.
+[Kunihiko Kodaira](https://kenji.blog/id/p/kodaira-kunihiko/) lahir di Tokyo pada tahun 1915. Dia menikmati bermain piano sejak usia muda, dan dikatakan bahwa kecintaannya yang mendalam pada musik kemudian memengaruhi pemikiran matematikanya. Kutipannya, "Memahami matematika itu seperti mendengarkan musik dan merasa itu indah," sangat terkenal.
 
 ```mermaid
 flowchart TD
@@ -74,4 +74,4 @@ Setelah kembali ke Jepang pada tahun 1967, ia mengajar di Universitas Tokyo dan 
 
 ## 5. Kesimpulan
 
-Matematika yang ditinggalkan oleh [Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/) ibarat sebuah simfoni agung di mana analisis, aljabar, dan geometri diharmonisasikan dengan indah. Pendekatan intuitif dan wawasan mendalamnya terus memesona banyak matematikawan hingga hari ini.
+Matematika yang ditinggalkan oleh [Kunihiko Kodaira](https://kenji.blog/id/p/kodaira-kunihiko/) ibarat sebuah simfoni agung di mana analisis, aljabar, dan geometri diharmonisasikan dengan indah. Pendekatan intuitif dan wawasan mendalamnya terus memesona banyak matematikawan hingga hari ini.

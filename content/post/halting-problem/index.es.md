@@ -12,7 +12,7 @@ Cuando programamos, a veces nos preocupamos: "¿Habrá entrado este programa en 
 
 Sin embargo, en el campo de la informática, está matemáticamente demostrado que crear tal herramienta soñada es **"absolutamente imposible"**. Este es el famoso **"Problema de la Parada" (Halting Problem)**.
 
-En este artículo, explicaremos de forma clara este problema, demostrado en 1936 por [Alan Turing](https://kenji.blog/p/turing/), utilizando ejemplos intuitivos, fórmulas (KaTeX) y diagramas (Mermaid).
+En este artículo, explicaremos de forma clara este problema, demostrado en 1936 por [Alan Turing](https://kenji.blog/es/p/turing/), utilizando ejemplos intuitivos, fórmulas (KaTeX) y diagramas (Mermaid).
 
 ## ¿Qué es el Problema de la Parada?
 
@@ -150,7 +150,7 @@ Como se puede ver en el diagrama, en el momento en que se da $D$ a sí mismo com
 
 ## La historia de la informática y la máquina de Turing
 
-[Alan Turing](https://kenji.blog/p/turing/) planteó y demostró este problema en 1936, una época en la que los ordenadores electrónicos modernos (computadoras) aún no existían. Para definir matemáticamente y de manera estricta "¿qué es el cálculo?", inventó una máquina virtual llamada **"Máquina de Turing" (Turing Machine)**.
+[Alan Turing](https://kenji.blog/es/p/turing/) planteó y demostró este problema en 1936, una época en la que los ordenadores electrónicos modernos (computadoras) aún no existían. Para definir matemáticamente y de manera estricta "¿qué es el cálculo?", inventó una máquina virtual llamada **"Máquina de Turing" (Turing Machine)**.
 
 La Máquina de Turing consta de una cinta infinita, un cabezal que lee y escribe información en la cinta, y una tabla de transición de estados que gestiona el estado de la máquina. Se sabe que por muy complejo que sea un programa moderno, en teoría se puede reducir a esta Máquina de Turing. A esto se le llama la **"Tesis de Church-Turing" (Church-Turing Thesis)**.
 
@@ -158,7 +158,7 @@ Turing intentó trazar la línea entre los "problemas computables" y los "proble
 
 ## Profunda relación con el Teorema de Incompletitud de Gödel
 
-La "paradoja de autorreferencia" que subyace en la demostración del Problema de la Parada tiene una profunda conexión con los **"Teoremas de Incompletitud" (Incompleteness Theorems)** publicados por [Kurt Gödel](https://kenji.blog/p/godel/) en 1931, poco antes de Turing.
+La "paradoja de autorreferencia" que subyace en la demostración del Problema de la Parada tiene una profunda conexión con los **"Teoremas de Incompletitud" (Incompleteness Theorems)** publicados por [Kurt Gödel](https://kenji.blog/es/p/godel/) en 1931, poco antes de Turing.
 
 El Primer Teorema de Incompletitud de Gödel establece que "en cualquier sistema axiomático lo suficientemente poderoso como para incluir la teoría de números naturales, siempre habrá proposiciones verdaderas que no pueden ser probadas ni refutadas dentro del sistema". Gödel construyó matemáticamente una proposición autorreferencial como "Esta proposición no puede ser probada" al demostrar este teorema.
 

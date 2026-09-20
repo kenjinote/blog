@@ -8,13 +8,13 @@ categories: ["Matematika", "Biografi"]
 tags: ["Poincare", "Topologi", "Teori Kekacauan", "Sejarah Matematika", "Fisika"]
 ---
 
-[Henri Poincaré](https://kenji.blog/p/poincare/) (1854–1912) adalah salah satu matematikawan terbesar dalam sejarah yang pernah dilahirkan Prancis, sekaligus fisikawan teoretis, insinyur, dan filsuf sains. Ia sering disebut sebagai **"Universalis Terakhir"** karena ia sangat memahami setiap bidang matematika pada masanya dan memberikan kontribusi mendasar untuk masing-masing bidang tersebut. Mengingat betapa sangat terspesialisasi dan terfragmentasinya matematika modern saat ini, sangat kecil kemungkinannya akan muncul lagi seseorang dengan pandangan menyeluruh tentang semua bidang seperti dirinya.
+[Henri Poincaré](https://kenji.blog/id/p/poincare/) (1854–1912) adalah salah satu matematikawan terbesar dalam sejarah yang pernah dilahirkan Prancis, sekaligus fisikawan teoretis, insinyur, dan filsuf sains. Ia sering disebut sebagai **"Universalis Terakhir"** karena ia sangat memahami setiap bidang matematika pada masanya dan memberikan kontribusi mendasar untuk masing-masing bidang tersebut. Mengingat betapa sangat terspesialisasi dan terfragmentasinya matematika modern saat ini, sangat kecil kemungkinannya akan muncul lagi seseorang dengan pandangan menyeluruh tentang semua bidang seperti dirinya.
 
 Dalam artikel ini, kita akan mengeksplorasi dengan volume dan kedalaman yang luar biasa kehidupan dramatis Poincaré, episode-episodenya yang sangat manusiawi, dan warisan matematis serta fisika mendalam yang ia tinggalkan untuk dunia.
 
 ## 1. Kehidupan Awal dan Lingkungan Pendidikan yang Unik: Tumbuhnya Seorang Jenius
 
-[Henri Poincaré](https://kenji.blog/p/poincare/) lahir pada tanggal 29 April 1854, di kota Nancy, Prancis timur laut, dari keluarga elit yang sangat intelektual. Ayahnya, Léon Poincaré, adalah seorang profesor di fakultas kedokteran di Universitas Nancy, dan sepupunya, Raymond Poincaré, kelak menjadi politisi terkemuka yang menjabat sebagai Perdana Menteri dan Presiden Prancis. Lingkungan keluarga yang sangat mendukung ini sangat merangsang keingintahuan intelektualnya.
+[Henri Poincaré](https://kenji.blog/id/p/poincare/) lahir pada tanggal 29 April 1854, di kota Nancy, Prancis timur laut, dari keluarga elit yang sangat intelektual. Ayahnya, Léon Poincaré, adalah seorang profesor di fakultas kedokteran di Universitas Nancy, dan sepupunya, Raymond Poincaré, kelak menjadi politisi terkemuka yang menjabat sebagai Perdana Menteri dan Presiden Prancis. Lingkungan keluarga yang sangat mendukung ini sangat merangsang keingintahuan intelektualnya.
 
 Selama masa kecilnya, Poincaré menderita difteri, yang membuatnya tidak dapat berbicara untuk waktu yang lama dan harus terbaring di tempat tidur. Namun, periode isolasi ini secara tidak normal mengembangkan kemampuan berpikir internalnya. Ia memiliki **ingatan intuitif** yang memungkinkannya untuk menghafal isi sebuah buku dengan sempurna setelah membacanya hanya sekali, dan ia belajar untuk memanipulasi secara bebas susunan visual huruf dan hubungan spasial di dalam pikirannya.
 
@@ -39,11 +39,11 @@ graph TD
 
 Alih-alih mengejar lintasan benda langit yang kompleks dengan rumus perhitungan, Poincaré berfokus pada "bentuk geometris ruang" yang dilacak oleh seluruh lintasan. Ia sepenuhnya memanfaatkan konsep ruang fase dan merancang "Peta Poincaré," yang hanya mencatat titik-titik di mana lintasan melintasi bidang tertentu. Ini membuka jalan bagi pemahaman kualitatif tentang perilaku sistem mekanis yang kompleks.
 
-## 3. [Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/): Pendirian Topologi
+## 3. [Konjektur Poincaré](https://kenji.blog/id/p/poincare-conjecture/): Pendirian Topologi
 
 Pencapaian monumental lainnya dari Poincaré adalah pendirian **Topologi** oleh dirinya sendiri, sebuah bidang utama dalam matematika modern. Dalam makalahnya tahun 1895 "Analysis Situs," ia membangun kerangka kerja matematika baru untuk mempelajari sifat-sifat bangun yang dipertahankan bahkan ketika mereka dideformasi secara terus-menerus.
 
-Dalam penelitian ini, ia menyajikan salah satu masalah tak terpecahkan yang paling terkenal dalam sejarah matematika, **[Konjektur Poincaré](https://kenji.blog/p/poincare-conjecture/)** .
+Dalam penelitian ini, ia menyajikan salah satu masalah tak terpecahkan yang paling terkenal dalam sejarah matematika, **[Konjektur Poincaré](https://kenji.blog/id/p/poincare-conjecture/)** .
 
 > "Apakah setiap keragaman (manifold) 3-dimensi yang tertutup dan terhubung sederhana, homeomorfik dengan bola 3-dimensi $S^3$?"
 
@@ -75,18 +75,18 @@ Poincaré mengamati bagaimana intuisi matematika bekerja di dalam dirinya dan me
 
 Ia telah menderita karena masalah matematika yang sulit selama beberapa bulan, tidak dapat menemukan petunjuk untuk solusinya meskipun perhitungan sadar dan penalaran logis berulang kali dilakukan. Karena kelelahan, ia memutuskan untuk menjauh dari penelitiannya dan mengikuti tamasya geologi. Kemudian, selama perjalanan, tepat pada saat ia hendak naik omnibus yang ditarik kuda di kota Coutances, sebuah solusi sempurna tiba-tiba terlintas di benaknya.
 
-> "Pada saat saya menginjakkan kaki di tangga, ide itu datang kepada saya, tanpa ada satu pun dari pikiran saya sebelumnya yang tampaknya telah membuka jalan untuk itu, bahwa transformasi yang telah saya gunakan untuk mendefinisikan fungsi Fuchsian identik dengan geometri non-[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an. Saya tidak memverifikasi ide tersebut; saya tidak akan punya waktu, karena, setelah duduk di omnibus, saya melanjutkan percakapan yang sudah dimulai, tetapi saya merasakan kepastian yang sempurna."
+> "Pada saat saya menginjakkan kaki di tangga, ide itu datang kepada saya, tanpa ada satu pun dari pikiran saya sebelumnya yang tampaknya telah membuka jalan untuk itu, bahwa transformasi yang telah saya gunakan untuk mendefinisikan fungsi Fuchsian identik dengan geometri non-[[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an. Saya tidak memverifikasi ide tersebut; saya tidak akan punya waktu, karena, setelah duduk di omnibus, saya melanjutkan percakapan yang sudah dimulai, tetapi saya merasakan kepastian yang sempurna."
 
 Dari pengalaman ini, Poincaré mengkategorikan proses penemuan kreatif ke dalam empat tahap: "Persiapan" (upaya sadar), "Inkubasi" (menggabungkan informasi di alam bawah sadar), "Iluminasi" (pemahaman intuitif yang tiba-tiba), dan "Verifikasi" (bukti logis). Wawasannya membuktikan betapa kuatnya alam bawah sadar sebagai sumber daya komputasi di kedalaman pemikiran manusia.
 
 ## 6. Filsafat Sains: Pembelaan Konvensionalisme
 
-Poincaré juga meninggalkan jejak besar dalam bidang filsafat sains. Ia menganjurkan sebuah posisi yang dikenal sebagai **Konvensionalisme** . Ini adalah gagasan bahwa "aksioma dan hukum fundamental dalam sains (seperti aksioma geometri [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an) bukanlah kebenaran apriori maupun fakta empiris, melainkan sekadar 'konvensi yang nyaman' yang diadopsi manusia untuk menggambarkan alam."
+Poincaré juga meninggalkan jejak besar dalam bidang filsafat sains. Ia menganjurkan sebuah posisi yang dikenal sebagai **Konvensionalisme** . Ini adalah gagasan bahwa "aksioma dan hukum fundamental dalam sains (seperti aksioma geometri [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an) bukanlah kebenaran apriori maupun fakta empiris, melainkan sekadar 'konvensi yang nyaman' yang diadopsi manusia untuk menggambarkan alam."
 
-Ia menyatakan, "Bukannya geometri [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an benar dan geometri non-[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an salah. Sama halnya dengan mengatakan bahwa sistem metrik tidak lebih benar daripada sistem yard." Sikap filosofis yang fleksibel ini kemudian menjadi dasar ideologis yang penting ketika Einstein membangun Teori Relativitas Umum menggunakan geometri non-[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an.
+Ia menyatakan, "Bukannya geometri [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an benar dan geometri non-[[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an salah. Sama halnya dengan mengatakan bahwa sistem metrik tidak lebih benar daripada sistem yard." Sikap filosofis yang fleksibel ini kemudian menjadi dasar ideologis yang penting ketika Einstein membangun Teori Relativitas Umum menggunakan geometri non-[[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an.
 
 ## 7. Kesimpulan: Warisan Abadi Poincaré
 
-Pada tahun 1912, [Henri Poincaré](https://kenji.blog/p/poincare/) meninggal dunia di usia muda, 58 tahun. Ketika ia meninggal, para ilmuwan di seluruh dunia berduka bahwa "cahaya intelek Prancis telah padam."
+Pada tahun 1912, [Henri Poincaré](https://kenji.blog/id/p/poincare/) meninggal dunia di usia muda, 58 tahun. Ketika ia meninggal, para ilmuwan di seluruh dunia berduka bahwa "cahaya intelek Prancis telah padam."
 
 Dasar-dasar matematika yang ia tinggalkan untuk **Topologi** , **Teori Kekacauan** , dan **Prinsip Relativitas** menghembuskan kehidupan ke setiap bidang saat ini, dari fisika partikel modern dan kosmologi hingga prediksi cuaca dan model ekonomi. Poincaré mengajarkan kepada kita bukan sekadar serpihan pengetahuan khusus, melainkan keindahan matematika universal yang menembus seluruh dunia. Ketika kita merenungkan kehidupan dan pencapaiannya, kita menyaksikan kedalaman dan keluasan tertinggi yang dapat dicapai oleh jiwa manusia.

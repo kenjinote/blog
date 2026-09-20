@@ -25,7 +25,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 相比之下，个人开发者的优势在于 **“盈亏平衡点极低”** 。即使每月只有几十万日元的利润，对个人来说也足以成为一项可行的事业。这里正是“长尾理论”的最佳击球点。
 
-## 齐夫定律（[Zipf's Law](https://kenji.blog/p/zipfs-law/)）与市场分布
+## 齐夫定律（[Zipf's Law](https://kenji.blog/zh-cn/p/zipfs-law/)）与市场分布
 
 市场规模与数量之间的关系通常遵循齐夫定律或帕累托法则。如果将市场的排名设为 $k$，其市场规模（营收潜力）设为 $P(k)$，则可以用如下的幂律（Power Law）模型来表示。
 

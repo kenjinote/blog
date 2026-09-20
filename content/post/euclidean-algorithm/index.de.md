@@ -10,14 +10,14 @@ tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 
 # Was ist der euklidische Algorithmus?
 
-Der **euklidische Algorithmus** ([Euclide](https://kenji.blog/p/euclid/)an algorithm) ist eine effiziente Methode zur Berechnung des größten gemeinsamen Teilers (ggT) zweier natürlicher Zahlen (oder ganzer Zahlen). Er wurde um 300 v. Chr. vom antiken griechischen Mathematiker [Euklid](https://kenji.blog/p/euclid/) im Buch VII seiner mathematischen Abhandlung „Elemente“ (Elements) beschrieben und ist weithin als einer der „ältesten Algorithmen der Menschheit“ bekannt.
+Der **euklidische Algorithmus** ([Euclide](https://kenji.blog/de/p/euclid/)an algorithm) ist eine effiziente Methode zur Berechnung des größten gemeinsamen Teilers (ggT) zweier natürlicher Zahlen (oder ganzer Zahlen). Er wurde um 300 v. Chr. vom antiken griechischen Mathematiker [Euklid](https://kenji.blog/de/p/euclid/) im Buch VII seiner mathematischen Abhandlung „Elemente“ (Elements) beschrieben und ist weithin als einer der „ältesten Algorithmen der Menschheit“ bekannt.
 
 Die naivste Methode, den ggT zu ermitteln, besteht darin, die Primfaktorzerlegung beider Zahlen zu finden und die gemeinsamen Primfaktoren zu multiplizieren. Da die Zahlen jedoch größer werden, wird die rechnerische Komplexität der Primfaktorzerlegung selbst enorm, was es schwierig macht, sie in einem realistischen Zeitrahmen zu lösen. Andererseits ist es durch die Verwendung des **euklidischen Algorithmus** möglich, den ggT selbst für riesige Zahlen mit Tausenden von Ziffern extrem schnell zu berechnen.
 
 ## Grundlegender Satz und Mechanik
 
 Sei $\gcd(a, b)$ der größte gemeinsame Teiler zweier natürlicher Zahlen $a$ und $b$ (wobei $a \ge b$).
-[Der euklidische Algorithmus](https://kenji.blog/p/euclidean-algorithm/) basiert auf folgendem einfachen Satz:
+[Der euklidische Algorithmus](https://kenji.blog/de/p/euclidean-algorithm/) basiert auf folgendem einfachen Satz:
 
 $$
 a = bq + r \implies \gcd(a, b) = \gcd(b, r)
@@ -109,7 +109,7 @@ int main() {
 
 ## Zeitkomplexität und Satz von Lamé
 
-Wie schnell ist der euklidische Algorithmus? Bezüglich seiner rechnerischen Komplexität ist der **Satz von Lamé** (Lamé's theorem), der 1844 vom französischen Mathematiker [Gabriel Lamé](https://kenji.blog/p/lame/) bewiesen wurde, weithin bekannt.
+Wie schnell ist der euklidische Algorithmus? Bezüglich seiner rechnerischen Komplexität ist der **Satz von Lamé** (Lamé's theorem), der 1844 vom französischen Mathematiker [Gabriel Lamé](https://kenji.blog/de/p/lame/) bewiesen wurde, weithin bekannt.
 
 > **Satz von Lamé**
 > Die Anzahl der Divisionsschritte, die erforderlich sind, um den euklidischen Algorithmus auf zwei natürliche Zahlen $a, b$ ($a > b$) anzuwenden, beträgt höchstens das $5$ -fache der Anzahl der Ziffern in der Dezimaldarstellung von $b$ .
@@ -120,7 +120,7 @@ Das Worst-Case-Szenario (bei dem die Anzahl der Divisionen maximiert wird) tritt
 
 ## Erweiterter euklidischer Algorithmus
 
-Eine Erweiterung des Algorithmus, um ganze Zahlen $x, y$ zu finden, die die folgende Identität von Bézout (Bézout's identity) erfüllen, zusätzlich zur Findung des größten gemeinsamen Teilers, wird **erweiterter euklidischer Algorithmus** (Extended [Euclide](https://kenji.blog/p/euclid/)an algorithm) genannt.
+Eine Erweiterung des Algorithmus, um ganze Zahlen $x, y$ zu finden, die die folgende Identität von Bézout (Bézout's identity) erfüllen, zusätzlich zur Findung des größten gemeinsamen Teilers, wird **erweiterter euklidischer Algorithmus** (Extended [Euclide](https://kenji.blog/de/p/euclid/)an algorithm) genannt.
 
 $$
 ax + by = \gcd(a, b)

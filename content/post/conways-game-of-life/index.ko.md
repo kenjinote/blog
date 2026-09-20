@@ -15,9 +15,9 @@ tags:
   - "Python"
 ---
 
-## 1. [콘웨이의 생명 게임](https://kenji.blog/p/conways-game-of-life/)이란?
+## 1. [콘웨이의 생명 게임](https://kenji.blog/ko/p/conways-game-of-life/)이란?
 
-**[콘웨이의 생명 게임](https://kenji.blog/p/conways-game-of-life/)** ([Conway's Game of Life](https://kenji.blog/p/conways-game-of-life/))은 1970년 영국의 수학자 존 호튼 콘웨이(John Horton Conway)가 고안한 **셀룰러 오토마타**(Cellular Automaton)의 일종입니다. 게임이라는 이름이 붙어 있지만, 초기 상태를 설정한 후에는 규칙에 따라 자동으로 세대가 진행되는 '제로 플레이어 게임'입니다.
+**[콘웨이의 생명 게임](https://kenji.blog/ko/p/conways-game-of-life/)** ([Conway's Game of Life](https://kenji.blog/ko/p/conways-game-of-life/))은 1970년 영국의 수학자 존 호튼 콘웨이(John Horton Conway)가 고안한 **셀룰러 오토마타**(Cellular Automaton)의 일종입니다. 게임이라는 이름이 붙어 있지만, 초기 상태를 설정한 후에는 규칙에 따라 자동으로 세대가 진행되는 '제로 플레이어 게임'입니다.
 
 이 시스템의 가장 큰 매력은 **극히 단순한 결정론적 규칙에서 예측 불가능하고 복잡한 생명과 같은 행동(창발)이 만들어진다**는 점에 있습니다.
 
@@ -135,4 +135,4 @@ plt.show()
 
 ## 6. 결론
 
-[콘웨이의 생명 게임](https://kenji.blog/p/conways-game-of-life/)은 단순한 규칙에서 복잡성이 만들어지는 **창발**의 가장 아름답고 직관적인 예 중 하나입니다. 수학, 컴퓨터 과학, 물리학, 생물학의 경계에 있는 이 모델은 우리가 '생명'과 '계산'이라는 개념을 이해하기 위한 강력한 은유를 계속해서 제공하고 있습니다.
+[콘웨이의 생명 게임](https://kenji.blog/ko/p/conways-game-of-life/)은 단순한 규칙에서 복잡성이 만들어지는 **창발**의 가장 아름답고 직관적인 예 중 하나입니다. 수학, 컴퓨터 과학, 물리학, 생물학의 경계에 있는 이 모델은 우리가 '생명'과 '계산'이라는 개념을 이해하기 위한 강력한 은유를 계속해서 제공하고 있습니다.

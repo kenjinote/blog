@@ -80,7 +80,7 @@ Nous comparerons ici les approches structurelles des chaises ergonomiques haut d
 **Caractéristiques : répartition de la pression corporelle par pellicule (maille) et inclinaison vers l'avant**
 
 Apparue en 1994, c'est un chef-d'œuvre qui a changé l'histoire des chaises de bureau. Le matériau en maille unique appelé "pellicule" modifie sa tension en fonction de la morphologie de la personne assise, répartissant uniformément la pression sur les cuisses et les fesses.
-Il convient de mentionner son **mécanisme d'inclinaison vers l'avant** exceptionnel. [Pour les ingénieurs](https://kenji.blog/p/prompt-engineering-for-engineers/) qui effectuent souvent des tâches nécessitant de se concentrer sur l'écran, comme le développement de logiciels, la chaise Aeron, qui incline l'assise vers l'avant et redresse le bassin, est le meilleur outil pour minimiser la charge sur le bas du dos.
+Il convient de mentionner son **mécanisme d'inclinaison vers l'avant** exceptionnel. [Pour les ingénieurs](https://kenji.blog/fr/p/prompt-engineering-for-engineers/) qui effectuent souvent des tâches nécessitant de se concentrer sur l'écran, comme le développement de logiciels, la chaise Aeron, qui incline l'assise vers l'avant et redresse le bassin, est le meilleur outil pour minimiser la charge sur le bas du dos.
 
 ### Herman Miller Embody (Chaise Embody)
 **Caractéristiques : structure en pixels et posture inclinée vers l'arrière favorable à la santé**

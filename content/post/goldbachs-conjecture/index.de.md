@@ -29,7 +29,7 @@ Wie Sie sehen können, können kleine gerade Zahlen in der Tat als Summe zweier 
 
 ## Historischer Hintergrund
 
-Diese Vermutung wurde erstmals in einem Brief erwähnt, den der preußische Mathematiker **Christian Goldbach** 1742 an den großen Schweizer Mathematiker **[Leonhard Euler](https://kenji.blog/p/euler/)** schickte.
+Diese Vermutung wurde erstmals in einem Brief erwähnt, den der preußische Mathematiker **Christian Goldbach** 1742 an den großen Schweizer Mathematiker **[Leonhard Euler](https://kenji.blog/de/p/euler/)** schickte.
 
 ```mermaid
 graph TD
@@ -63,6 +63,6 @@ Erstaunlicherweise wurde diese "schwache" Vermutung 2013 von Harald Helfgott **v
 
 ## Fazit
 
-[Die Goldbachsche Vermutung](https://kenji.blog/p/goldbachs-conjecture/) ist ein Problem, das die Tiefe und das Geheimnis der Mathematik symbolisiert. Trotz ihres einfachen Erscheinungsbildes hat sie den Versuchen von Genies über Jahrhunderte hinweg widerstanden.
+[Die Goldbachsche Vermutung](https://kenji.blog/de/p/goldbachs-conjecture/) ist ein Problem, das die Tiefe und das Geheimnis der Mathematik symbolisiert. Trotz ihres einfachen Erscheinungsbildes hat sie den Versuchen von Genies über Jahrhunderte hinweg widerstanden.
 
 Wird jemals der Tag kommen, an dem diese wunderschöne Vermutung vollständig bewiesen wird? Oder wird sich herausstellen, dass sie unbeweisbar ist? Ungelöste mathematische Probleme bieten uns stets eine unendliche Faszination.

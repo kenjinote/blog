@@ -18,7 +18,7 @@ Dans cet article, nous plongerons profondément dans la vie mouvementée de Fibo
 
 ### Naissance à Pise et origine du nom "Fibonacci"
 
-[Leonardo Fibonacci](https://kenji.blog/p/fibonacci/) est né vers 1170 dans la cité-État italienne de Pise. À l'époque, Pise prospérait en tant que centre du commerce méditerranéen, une république prospère dotée d'une marine et d'un réseau commercial puissants. Son père, Guglielmo Bonacci, était un riche marchand qui travaillait également comme fonctionnaire des douanes pour Pise.
+[Leonardo Fibonacci](https://kenji.blog/fr/p/fibonacci/) est né vers 1170 dans la cité-État italienne de Pise. À l'époque, Pise prospérait en tant que centre du commerce méditerranéen, une république prospère dotée d'une marine et d'un réseau commercial puissants. Son père, Guglielmo Bonacci, était un riche marchand qui travaillait également comme fonctionnaire des douanes pour Pise.
 
 Le nom "Fibonacci" n'a en fait pas été utilisé de son vivant. C'est un terme inventé par des historiens ultérieurs, abrégeant le latin "filius Bonacci" (fils de Bonacci). Il s'appelait lui-même "Leonardo Pisano" (Léonard de Pise) ou, en raison de son amour pour les voyages, "Bigollo" (signifiant vagabond ou paresseux).
 
@@ -168,6 +168,6 @@ Dans les algorithmes informatiques, la suite de Fibonacci est très utile. L'alg
 
 ## Conclusion
 
-[Leonardo Fibonacci](https://kenji.blog/p/fibonacci/) a jeté un pont entre les connaissances du monde islamique et l'Europe, apportant la lumière des mathématiques au monde occidental. Sans les chiffres arabes qu'il a popularisés à travers le "Liber Abaci", la Révolution scientifique ultérieure et la société numérique moderne n'auraient peut-être pas existé.
+[Leonardo Fibonacci](https://kenji.blog/fr/p/fibonacci/) a jeté un pont entre les connaissances du monde islamique et l'Europe, apportant la lumière des mathématiques au monde occidental. Sans les chiffres arabes qu'il a popularisés à travers le "Liber Abaci", la Révolution scientifique ultérieure et la société numérique moderne n'auraient peut-être pas existé.
 
 De plus, la séquence née du ludique "Problème des lapins" incarne la beauté des mathématiques pures et continue de nous captiver aujourd'hui en tant que loi universelle s'étendant de la croissance des plantes aux spirales galactiques, et même à l'activité économique humaine. L'héritage de Fibonacci nous enseigne à travers le temps que les mathématiques ne sont pas seulement une technique de calcul, mais un "langage commun" pour déverrouiller les vérités de l'univers.

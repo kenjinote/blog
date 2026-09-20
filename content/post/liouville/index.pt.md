@@ -17,7 +17,7 @@ tags:
 
 ## Introdução
 
-Na história da matemática, o século XIX foi um período crucial em que a análise e a álgebra se desenvolveram até às suas formas modernas. No centro deste movimento estava o matemático francês **Joseph Liouville** (1809–1882). Ele estabeleceu teoremas fundamentais em análise complexa e foi a primeira pessoa na história humana a provar concretamente a existência de "números transcendentes". Ele também é bem conhecido como o benfeitor que decifrou e publicou os desafiadores manuscritos de [Évariste Galois](https://kenji.blog/p/galois/). Neste artigo, aprofundaremos a vida turbulenta de Liouville e as suas numerosas **conquistas matemáticas**.
+Na história da matemática, o século XIX foi um período crucial em que a análise e a álgebra se desenvolveram até às suas formas modernas. No centro deste movimento estava o matemático francês **Joseph Liouville** (1809–1882). Ele estabeleceu teoremas fundamentais em análise complexa e foi a primeira pessoa na história humana a provar concretamente a existência de "números transcendentes". Ele também é bem conhecido como o benfeitor que decifrou e publicou os desafiadores manuscritos de [Évariste Galois](https://kenji.blog/pt/p/galois/). Neste artigo, aprofundaremos a vida turbulenta de Liouville e as suas numerosas **conquistas matemáticas**.
 
 ## Primeiros Anos e Educação
 
@@ -27,7 +27,7 @@ Em 1825, ingressou na prestigiada **École Polytechnique**, onde aprendeu com os
 
 ## O Resgate dos Manuscritos de Galois
 
-Ao discutir Liouville, não se pode omitir a história de como ele salvou os manuscritos do jovem génio **[Évariste Galois](https://kenji.blog/p/galois/)**. Galois perdeu a vida num duelo com a tenra idade de 20 anos, mas imediatamente antes da sua morte, confiou as suas descobertas matemáticas ao seu amigo Auguste Chevalier.
+Ao discutir Liouville, não se pode omitir a história de como ele salvou os manuscritos do jovem génio **[Évariste Galois](https://kenji.blog/pt/p/galois/)**. Galois perdeu a vida num duelo com a tenra idade de 20 anos, mas imediatamente antes da sua morte, confiou as suas descobertas matemáticas ao seu amigo Auguste Chevalier.
 
 Foi Liouville quem lançou luz sobre a teoria de Galois, que tinha sido ignorada e incompreendida durante muito tempo. Em 1843, estudou exaustivamente os artigos de Galois e percebeu que continham descobertas profundamente importantes no que diz respeito à resolubilidade de equações algébricas. Em 1846, Liouville publicou os artigos de Galois na revista académica que ele próprio fundara, o *Journal de Mathématiques Pures et Appliquées*, apresentando-os assim ao mundo.
 
@@ -51,7 +51,7 @@ $$
 \text{Se } f(z) \text{ é uma função inteira e limitada, então } f(z) = C \text{ (constante).}
 $$
 
-Este teorema é espantosamente poderoso e é utilizado para fornecer provas extremamente concisas do [Teorema Fundamental da Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) (que afirma que todo polinómio não constante de uma variável com coeficientes complexos tem pelo menos uma raiz complexa).
+Este teorema é espantosamente poderoso e é utilizado para fornecer provas extremamente concisas do [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/) (que afirma que todo polinómio não constante de uma variável com coeficientes complexos tem pelo menos uma raiz complexa).
 
 ### 2. Descoberta dos Números Transcendentes e Números de Liouville
 

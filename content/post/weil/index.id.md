@@ -10,13 +10,13 @@ tags: ["André Weil", "Bourbaki", "Geometri Aljabar", "Teori Bilangan"]
 
 ## 1. Pendahuluan: Arsitek Matematika Modern
 
-[André Weil](https://kenji.blog/p/weil/) (6 Mei 1906 - 6 Agustus 1998) adalah salah satu tokoh paling berpengaruh di dunia matematika abad ke-20. Karyanya sangat menghubungkan bidang-bidang yang sebelumnya berkembang secara terpisah—teori bilangan, geometri aljabar, dan topologi—menciptakan paradigma yang sama sekali baru dalam matematika modern. Secara khusus, **"Dugaan Weil"** (Weil conjectures) yang diusulkannya berfungsi sebagai kompas untuk penelitian matematika selama beberapa dekade berikutnya, memberikan inspirasi luar biasa bagi generasi jenius berikutnya seperti [Alexander Grothendieck](https://kenji.blog/p/grothendieck/) dan Pierre Deligne. Artikel ini merinci kehidupannya yang luar biasa, perannya dalam mendirikan matematikawan fiksi **"Nicolas Bourbaki"** , dan warisan matematika mendalam yang ditinggalkannya.
+[André Weil](https://kenji.blog/id/p/weil/) (6 Mei 1906 - 6 Agustus 1998) adalah salah satu tokoh paling berpengaruh di dunia matematika abad ke-20. Karyanya sangat menghubungkan bidang-bidang yang sebelumnya berkembang secara terpisah—teori bilangan, geometri aljabar, dan topologi—menciptakan paradigma yang sama sekali baru dalam matematika modern. Secara khusus, **"Dugaan Weil"** (Weil conjectures) yang diusulkannya berfungsi sebagai kompas untuk penelitian matematika selama beberapa dekade berikutnya, memberikan inspirasi luar biasa bagi generasi jenius berikutnya seperti [Alexander Grothendieck](https://kenji.blog/id/p/grothendieck/) dan Pierre Deligne. Artikel ini merinci kehidupannya yang luar biasa, perannya dalam mendirikan matematikawan fiksi **"Nicolas Bourbaki"** , dan warisan matematika mendalam yang ditinggalkannya.
 
 ## 2. Perjalanan Sang Jenius Muda: Dari Paris ke Dunia
 
 Weil lahir di Paris, Prancis, dari keluarga Yahudi yang berbudaya. Adik perempuannya, Simone Weil, juga meninggalkan jejak dalam sejarah sebagai filsuf dan aktivis sosial yang terkenal. Sejak usia muda, Weil menunjukkan bakat luar biasa dalam bahasa dan matematika; dia adalah anak ajaib yang mampu membaca teks klasik dalam bahasa Sansekerta dan Yunani dalam bentuk aslinya.
 
-Pada usia muda 16 tahun, ia memasuki École Normale Supérieure (ENS), institusi pendidikan terkemuka di Prancis. Di sana, ia bertemu dengan matematikawan brilian seperti Henri Cartan, yang akan menjadi teman seumur hidupnya. Setelah lulus, Weil bepergian melintasi pusat akademik Eropa termasuk Roma, Göttingen, dan Berlin, memperluas wawasannya dengan belajar langsung dari matematikawan tingkat atas pada masanya, seperti [Carl Ludwig Siegel](https://kenji.blog/p/siegel/) dan [Emmy Noether](https://kenji.blog/p/noether/).
+Pada usia muda 16 tahun, ia memasuki École Normale Supérieure (ENS), institusi pendidikan terkemuka di Prancis. Di sana, ia bertemu dengan matematikawan brilian seperti Henri Cartan, yang akan menjadi teman seumur hidupnya. Setelah lulus, Weil bepergian melintasi pusat akademik Eropa termasuk Roma, Göttingen, dan Berlin, memperluas wawasannya dengan belajar langsung dari matematikawan tingkat atas pada masanya, seperti [Carl Ludwig Siegel](https://kenji.blog/id/p/siegel/) dan [Emmy Noether](https://kenji.blog/id/p/noether/).
 
 ## 3. Pengalaman di India dan Pengabdian pada Filsafat
 
@@ -77,7 +77,7 @@ graph LR
 %% Hubungan antara teori bilangan dan geometri aljabar
 ```
 
-Untuk membuktikan dugaan mendalam ini, [Alexander Grothendieck](https://kenji.blog/p/grothendieck/) membangun kerangka teoretis masif dari teori skema dan kohomologi étale dari awal. Kemudian, pada tahun 1974, murid Grothendieck Pierre Deligne membuktikan rintangan terakhir, "analog hipotesis Riemann," sepenuhnya menyelesaikan dugaan Weil. Drama besar ini dianggap sebagai salah satu pencapaian monumental terbesar dalam matematika abad ke-20.
+Untuk membuktikan dugaan mendalam ini, [Alexander Grothendieck](https://kenji.blog/id/p/grothendieck/) membangun kerangka teoretis masif dari teori skema dan kohomologi étale dari awal. Kemudian, pada tahun 1974, murid Grothendieck Pierre Deligne membuktikan rintangan terakhir, "analog hipotesis Riemann," sepenuhnya menyelesaikan dugaan Weil. Drama besar ini dianggap sebagai salah satu pencapaian monumental terbesar dalam matematika abad ke-20.
 
 ## 7. Kontribusi Signifikan Lainnya: Adele, Idele, dan Grup Weil
 
@@ -89,4 +89,4 @@ Selain itu, ia memperkenalkan **"Grup Weil"** , perluasan dari konsep grup Galoi
 
 Weil terlibat dalam penelitian dan pendidikan selama bertahun-tahun di Institute for Advanced Study di Princeton, membimbing banyak penerus. Dia memiliki pengetahuan luas dan wawasan yang tajam, dan kadang-kadang dikenal sebagai kritikus yang menggigit. Dia juga memiliki pengetahuan mendalam tentang sejarah matematika, dan buku-buku yang dia tulis tentang masalah ini sangat dihargai sebagai mahakarya yang penuh dengan wawasan sejarah.
 
-Pada tahun 1998, [André Weil](https://kenji.blog/p/weil/) meninggal dunia pada usia 92 tahun. Benih "perpaduan teori bilangan dan geometri" yang ia tabur telah mekar cemerlang dalam matematika modern. Pencapaiannya yang masih hidup, dan sikapnya yang tanpa kompromi terhadap matematika, tidak diragukan lagi akan terus memesona dan membimbing ahli matematika selamanya. Kehidupannya benar-benar epik agung di mana sejarah bergejolak abad ke-20 bersinggungan dengan kecemerlangan akal budi manusia.
+Pada tahun 1998, [André Weil](https://kenji.blog/id/p/weil/) meninggal dunia pada usia 92 tahun. Benih "perpaduan teori bilangan dan geometri" yang ia tabur telah mekar cemerlang dalam matematika modern. Pencapaiannya yang masih hidup, dan sikapnya yang tanpa kompromi terhadap matematika, tidak diragukan lagi akan terus memesona dan membimbing ahli matematika selamanya. Kehidupannya benar-benar epik agung di mana sejarah bergejolak abad ke-20 bersinggungan dengan kecemerlangan akal budi manusia.

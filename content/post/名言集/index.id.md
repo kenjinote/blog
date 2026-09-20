@@ -35,7 +35,7 @@ description: 'Kami akan memperkenalkan kutipan inspiratif pilihan dari tokoh sej
 
 ## Filsafat & Pemikiran
 
-> Hati memiliki nalar yang tidak diketahui oleh nalar ([Blaise Pascal](https://kenji.blog/p/pascal/))
+> Hati memiliki nalar yang tidak diketahui oleh nalar ([Blaise Pascal](https://kenji.blog/id/p/pascal/))
 
 > Tuhan telah mati (Friedrich Nietzsche)
 
@@ -54,7 +54,7 @@ description: 'Kami akan memperkenalkan kutipan inspiratif pilihan dari tokoh sej
 > Semuanya mengalir (Heraclitus)
 
 
-> Aku berpikir, maka aku ada ([René Descartes](https://kenji.blog/p/descartes/))
+> Aku berpikir, maka aku ada ([René Descartes](https://kenji.blog/id/p/descartes/))
 
 > Pengetahuan tentang ketidaktahuan (Saya hanya tahu bahwa saya tidak tahu apa-apa) (Socrates)
 
@@ -62,7 +62,7 @@ description: 'Kami akan memperkenalkan kutipan inspiratif pilihan dari tokoh sej
 
 > Manusia pada hakikatnya adalah hewan politik (Aristoteles)
 
-> Manusia adalah buluh yang berpikir ([Blaise Pascal](https://kenji.blog/p/pascal/))
+> Manusia adalah buluh yang berpikir ([Blaise Pascal](https://kenji.blog/id/p/pascal/))
 
 > Pengetahuan adalah kekuatan (Francis Bacon)
 
@@ -76,9 +76,9 @@ description: 'Kami akan memperkenalkan kutipan inspiratif pilihan dari tokoh sej
 
 ## Sains, Matematika & Teknologi
 
-> Matematika adalah ratu dari ilmu pengetahuan ([Carl Friedrich Gauss](https://kenji.blog/p/gauss/))
+> Matematika adalah ratu dari ilmu pengetahuan ([Carl Friedrich Gauss](https://kenji.blog/id/p/gauss/))
 
-> Kita harus tahu, kita akan tahu ([David Hilbert](https://kenji.blog/p/hilbert/))
+> Kita harus tahu, kita akan tahu ([David Hilbert](https://kenji.blog/id/p/hilbert/))
 
 > Tidak ada cabang matematika, betapapun abstraknya, yang suatu hari nanti tidak dapat diterapkan pada fenomena dunia nyata (Nikolai Lobachevsky)
 
@@ -90,7 +90,7 @@ description: 'Kami akan memperkenalkan kutipan inspiratif pilihan dari tokoh sej
 
 > Hal baik tentang sains adalah sains itu benar, entah Anda mempercayainya atau tidak (Neil deGrasse Tyson)
 
-> Dalam matematika, seni mengajukan masalah memiliki nilai lebih tinggi daripada menyelesaikannya ([Georg Cantor](https://kenji.blog/p/cantor/))
+> Dalam matematika, seni mengajukan masalah memiliki nilai lebih tinggi daripada menyelesaikannya ([Georg Cantor](https://kenji.blog/id/p/cantor/))
 
 > Jika kita tahu apa yang sedang kita lakukan, itu tidak akan disebut penelitian (Albert Einstein)
 
@@ -107,11 +107,11 @@ description: 'Kami akan memperkenalkan kutipan inspiratif pilihan dari tokoh sej
 
 > Seseorang yang tidak pernah berbuat salah adalah orang yang tidak pernah mencoba hal baru (Albert Einstein)
 
-> Jika saya bisa melihat lebih jauh, itu karena saya berdiri di atas bahu raksasa ([Isaac Newton](https://kenji.blog/p/newton/))
+> Jika saya bisa melihat lebih jauh, itu karena saya berdiri di atas bahu raksasa ([Isaac Newton](https://kenji.blog/id/p/newton/))
 
 > Namun bumi tetap berputar (Galileo Galilei)
 
-> Tidak ada jalan pintas menuju geometri ([Euclid](https://kenji.blog/p/euclid/))
+> Tidak ada jalan pintas menuju geometri ([Euclid](https://kenji.blog/id/p/euclid/))
 
 > Beri aku titik tumpu, dan aku akan menggerakkan bumi (Archimedes)
 

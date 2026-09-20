@@ -36,7 +36,7 @@ graph LR
     style D stroke:#ff9900,stroke-width:2px
 ```
 
-## [特徵值與特徵向量](https://kenji.blog/p/eigenvalues-and-eigenvectors/)的定義及數學背景
+## [特徵值與特徵向量](https://kenji.blog/zh-tw/p/eigenvalues-and-eigenvectors/)的定義及數學背景
 
 在數學上，對於一個方陣 $A$，如果存在一個非零向量 $\mathbf{v}$ 和一個純量 $\lambda$，滿足以下條件，那麼 $\mathbf{v}$ 就被稱為矩陣 $A$ 的 **特徵向量**，而 $\lambda$ 則被稱為 **特徵值**。
 
@@ -124,7 +124,7 @@ $$
 
 現在，我們求出了矩陣 $A$ 的所有特徵值和特徵向量。
 
-## 使用Python計算[特徵值與特徵向量](https://kenji.blog/p/eigenvalues-and-eigenvectors/)
+## 使用Python計算[特徵值與特徵向量](https://kenji.blog/zh-tw/p/eigenvalues-and-eigenvectors/)
 
 在現代實際應用中，我們絕不會手工去計算大型矩陣的特徵值。藉助Python的數值計算庫NumPy，只需短短幾行程式碼即可完成。
 
@@ -178,9 +178,9 @@ $$
 D^{100} = \begin{pmatrix} 2^{100} & 0 \\ 0 & 5^{100} \end{pmatrix}
 $$
 
-這一性質在預測[馬可夫鏈](https://kenji.blog/p/markov-chain/)等機率模型中的長期狀態、求解微分方程式組，甚至在推導費氏數列的一般項公式時，都是不可或缺的技巧。
+這一性質在預測[馬可夫鏈](https://kenji.blog/zh-tw/p/markov-chain/)等機率模型中的長期狀態、求解微分方程式組，甚至在推導費氏數列的一般項公式時，都是不可或缺的技巧。
 
-## [特徵值與特徵向量](https://kenji.blog/p/eigenvalues-and-eigenvectors/)在現實世界中的應用
+## [特徵值與特徵向量](https://kenji.blog/zh-tw/p/eigenvalues-and-eigenvectors/)在現實世界中的應用
 
 剛才我們探討了數學層面，但這些概念在解決現實世界的各種挑戰時發揮著引擎般的作用。
 
@@ -224,7 +224,7 @@ $$ \hat{H}\psi = E\psi $$
 
 ## 總結
 
-乍看之下，[特徵值與特徵向量](https://kenji.blog/p/eigenvalues-and-eigenvectors/)可能像是抽象的數學謎題。但在幾何上，它是從矩陣產生的複雜變換中，提取出「絕不改變的本質軸」的操作。它的應用範圍非常廣泛，涵蓋了計算機科學、資料科學、理論物理和機械工程等領域。
+乍看之下，[特徵值與特徵向量](https://kenji.blog/zh-tw/p/eigenvalues-and-eigenvectors/)可能像是抽象的數學謎題。但在幾何上，它是從矩陣產生的複雜變換中，提取出「絕不改變的本質軸」的操作。它的應用範圍非常廣泛，涵蓋了計算機科學、資料科學、理論物理和機械工程等領域。
 
 - **特徵向量**：變換後方向不變的，系統最本質的方向或模式。
 - **特徵值**：代表該方向在變換後被拉伸或壓縮了多少的縮放因子（重要度、能量、頻率等）。

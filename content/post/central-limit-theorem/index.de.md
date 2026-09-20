@@ -134,7 +134,7 @@ $$
 E[\bar X_n]=\mu,\qquad \operatorname{Var}(\bar X_n)=\frac{\sigma^2}{n},\qquad \operatorname{SE}(\bar X_n)=\frac{\sigma}{\sqrt n}.
 $$
 
-Eine Vervierfachung des Stichprobenumfangs halbiert den Standardfehler. [Das Gesetz der großen Zahlen](https://kenji.blog/p/law-of-large-numbers/) besagt, dass sich der Stichprobenmittelwert $\mu$ nähert, und der zentrale Grenzwertsatz beschreibt die Form der Verteilung, indem die Schwankung darum mit $\sqrt{n}$ multipliziert wird.
+Eine Vervierfachung des Stichprobenumfangs halbiert den Standardfehler. [Das Gesetz der großen Zahlen](https://kenji.blog/de/p/law-of-large-numbers/) besagt, dass sich der Stichprobenmittelwert $\mu$ nähert, und der zentrale Grenzwertsatz beschreibt die Form der Verteilung, indem die Schwankung darum mit $\sqrt{n}$ multipliziert wird.
 
 ### Anhang 4: Ergänzender Beweis mittels charakteristischer Funktionen
 

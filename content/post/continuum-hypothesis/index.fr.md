@@ -10,12 +10,12 @@ tags: ["Hypothèse du continu", "Cantor", "Infini", "Mathématiques"]
 
 ## 1. Introduction : Mesurer la taille de l'infini
 
-Dans le monde des mathématiques, le concept d'« infini » a longtemps fait l'objet de débats philosophiques. Cependant, jusqu'à l'apparition de [Georg Cantor](https://kenji.blog/p/cantor/) à la fin du 19e siècle, il n'existait aucune méthode mathématique rigoureuse pour comparer la taille des infinis. Cantor a fondé la théorie des ensembles et a prouvé qu'il existe **différentes tailles** (cardinalités) même pour l'infini.
+Dans le monde des mathématiques, le concept d'« infini » a longtemps fait l'objet de débats philosophiques. Cependant, jusqu'à l'apparition de [Georg Cantor](https://kenji.blog/fr/p/cantor/) à la fin du 19e siècle, il n'existait aucune méthode mathématique rigoureuse pour comparer la taille des infinis. Cantor a fondé la théorie des ensembles et a prouvé qu'il existe **différentes tailles** (cardinalités) même pour l'infini.
 
 En considérant l'ensemble des entiers naturels $\mathbb{N}$ et l'ensemble des nombres réels $\mathbb{R}$, l'argument de la diagonale de Cantor a montré que l'ensemble des nombres réels est « strictement plus grand » que l'ensemble des entiers naturels. Le cardinal des entiers naturels est noté $\aleph_0$ (aleph-zéro), et le cardinal des nombres réels est $\mathfrak{c}$ (cardinalité du continu) ou $2^{\aleph_0}$. Selon le théorème de Cantor, $\aleph_0 < 2^{\aleph_0}$.
 
 Ici, Cantor s'est posé une question naturelle. « Existe-il un ensemble dont la cardinalité se situe au **milieu** , entre la cardinalité des entiers naturels et celle des nombres réels ? »
-C'est le début de l'**Hypothèse du continu** ([Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/), HC), qui allait plus tard ébranler les fondements des mathématiques.
+C'est le début de l'**Hypothèse du continu** ([Continuum Hypothesis](https://kenji.blog/fr/p/continuum-hypothesis/), HC), qui allait plus tard ébranler les fondements des mathématiques.
 
 ## 2. Définition rigoureuse de l'hypothèse du continu (HC)
 
@@ -35,11 +35,11 @@ Par conséquent, pour l'ensemble des entiers naturels $\mathbb{N}$, on a :
 $$ |\mathbb{N}| < |\mathcal{P}(\mathbb{N})| = |\mathbb{R}| $$
 L'HC affirme qu'il n'existe aucune autre cardinalité entre les deux.
 
-## 3. Les tourments de Cantor et la proposition de [David Hilbert](https://kenji.blog/p/hilbert/)
+## 3. Les tourments de Cantor et la proposition de [David Hilbert](https://kenji.blog/fr/p/hilbert/)
 
 Cantor a passé sa vie à essayer de prouver cette hypothèse, mais n'y est jamais parvenu. Parfois il pensait l'avoir « prouvée », d'autres fois l'avoir « réfutée », et sa santé mentale a été grandement affectée par ce problème difficile.
 
-En 1900, lors du deuxième Congrès international des mathématiciens tenu à Paris, [David Hilbert](https://kenji.blog/p/hilbert/) a proposé les « 23 problèmes de Hilbert » que les mathématiques du 20e siècle devraient résoudre. Le mémorable **premier problème** de cette liste était précisément la « preuve de l'hypothèse du continu ».
+En 1900, lors du deuxième Congrès international des mathématiciens tenu à Paris, [David Hilbert](https://kenji.blog/fr/p/hilbert/) a proposé les « 23 problèmes de Hilbert » que les mathématiques du 20e siècle devraient résoudre. Le mémorable **premier problème** de cette liste était précisément la « preuve de l'hypothèse du continu ».
 
 ## 4. Axiomatisation de la théorie des ensembles : Le système d'axiomes ZFC
 
@@ -58,9 +58,9 @@ Le système d'axiomes ZFC est composé des 9 axiomes (ou schémas d'axiomes) sui
 
 En utilisant ces axiomes, les mathématiciens ont essayé de déterminer si l'HC était vraie ou fausse.
 
-## 5. [Kurt Gödel](https://kenji.blog/p/godel/) et « l'univers constructible »
+## 5. [Kurt Gödel](https://kenji.blog/fr/p/godel/) et « l'univers constructible »
 
-En 1940, [Kurt Gödel](https://kenji.blog/p/godel/) a publié un résultat étonnant. Il a prouvé que si l'on suppose que le système d'axiomes ZFC est non contradictoire, **« l'ajout de l'HC au système d'axiomes ZFC n'introduit pas de contradiction »** .
+En 1940, [Kurt Gödel](https://kenji.blog/fr/p/godel/) a publié un résultat étonnant. Il a prouvé que si l'on suppose que le système d'axiomes ZFC est non contradictoire, **« l'ajout de l'HC au système d'axiomes ZFC n'introduit pas de contradiction »** .
 
 Gödel a construit un modèle d'ensembles appelé **Univers constructible** (Constructible Universe, $L$). Dans $L$, tous les ensembles sont construits de manière hiérarchique par des formules logiques. Gödel a montré que dans ce $L$, tous les axiomes ZFC sont satisfaits, et de plus, l'**HC est également vraie** .
 
@@ -135,7 +135,7 @@ L'indépendance de l'HC soulève des questions profondes dans la philosophie des
 
 ## 10. Résumé
 
-L'exploration de la hiérarchie infinie dont rêvait [Georg Cantor](https://kenji.blog/p/cantor/) a connu une conclusion dramatique, « impossible à prouver ou à réfuter », grâce à deux génies, Gödel et Cohen. Cependant, cela ne signifie en aucun cas la défaite des mathématiques. Au contraire, cela a donné naissance à un outil puissant qu'est le forcing, faisant évoluer le domaine de la théorie des ensembles pour devenir plus riche et complexe que jamais.
+L'exploration de la hiérarchie infinie dont rêvait [Georg Cantor](https://kenji.blog/fr/p/cantor/) a connu une conclusion dramatique, « impossible à prouver ou à réfuter », grâce à deux génies, Gödel et Cohen. Cependant, cela ne signifie en aucun cas la défaite des mathématiques. Au contraire, cela a donné naissance à un outil puissant qu'est le forcing, faisant évoluer le domaine de la théorie des ensembles pour devenir plus riche et complexe que jamais.
 
 L'hypothèse du continu continue de nous poser les questions fondamentales : « Qu'est-ce que l'infini ? » et « Qu'est-ce que la vérité mathématique ? ».
 

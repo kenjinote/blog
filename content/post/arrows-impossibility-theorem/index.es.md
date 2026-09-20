@@ -18,13 +18,13 @@ Cuando decidimos algo en nuestra sociedad, lo más común es utilizar "eleccione
 
 De hecho, la respuesta matemática a esta pregunta es **"No"**.
 
-En 1951, el economista Kenneth Arrow demostró matemáticamente que no existe ninguna regla de toma de decisiones perfecta que satisfaga ciertas condiciones razonables. Esto es el **"[Teorema de la imposibilidad de Arrow](https://kenji.blog/p/arrows-impossibility-theorem/)" ([Arrow's Impossibility Theorem](https://kenji.blog/p/arrows-impossibility-theorem/))**. Gracias a sus contribuciones a la teoría de la elección social, incluyendo este teorema, Arrow recibió el Premio Nobel de Economía en 1972.
+En 1951, el economista Kenneth Arrow demostró matemáticamente que no existe ninguna regla de toma de decisiones perfecta que satisfaga ciertas condiciones razonables. Esto es el **"[Teorema de la imposibilidad de Arrow](https://kenji.blog/es/p/arrows-impossibility-theorem/)" ([Arrow's Impossibility Theorem](https://kenji.blog/es/p/arrows-impossibility-theorem/))**. Gracias a sus contribuciones a la teoría de la elección social, incluyendo este teorema, Arrow recibió el Premio Nobel de Economía en 1972.
 
 En este artículo, explicaremos en detalle qué significa este teorema, utilizando ejemplos concretos, fórmulas y diagramas.
 
-## 1. ¿Qué es el [Teorema de la imposibilidad de Arrow](https://kenji.blog/p/arrows-impossibility-theorem/)?
+## 1. ¿Qué es el [Teorema de la imposibilidad de Arrow](https://kenji.blog/es/p/arrows-impossibility-theorem/)?
 
-En pocas palabras, el [Teorema de la imposibilidad de Arrow](https://kenji.blog/p/arrows-impossibility-theorem/) establece que: **"Cuando 3 o más votantes deben elegir entre 3 o más alternativas, es imposible satisfacer simultáneamente todas las condiciones que debería cumplir una 'elección justa (regla de toma de decisiones)'"**.
+En pocas palabras, el [Teorema de la imposibilidad de Arrow](https://kenji.blog/es/p/arrows-impossibility-theorem/) establece que: **"Cuando 3 o más votantes deben elegir entre 3 o más alternativas, es imposible satisfacer simultáneamente todas las condiciones que debería cumplir una 'elección justa (regla de toma de decisiones)'"**.
 
 Las "elecciones justas" aquí se refieren a varias condiciones que intuitivamente sentimos que son "justas". Arrow definió las condiciones racionales mínimas que la sociedad debería cumplir, y demostró que son lógicamente incompatibles.
 
@@ -56,7 +56,7 @@ No debe ser un sistema donde, independientemente de la opinión de todas las dem
 
 ---
 
-El [Teorema de la imposibilidad de Arrow](https://kenji.blog/p/arrows-impossibility-theorem/) demostró matemáticamente el impactante hecho de que **"No existe ninguna función de bienestar social que satisfaga estas 4 condiciones al mismo tiempo (imponer la no dictadura siempre lleva a una contradicción)"**.
+El [Teorema de la imposibilidad de Arrow](https://kenji.blog/es/p/arrows-impossibility-theorem/) demostró matemáticamente el impactante hecho de que **"No existe ninguna función de bienestar social que satisfaga estas 4 condiciones al mismo tiempo (imponer la no dictadura siempre lleva a una contradicción)"**.
 
 ```mermaid
 graph TD

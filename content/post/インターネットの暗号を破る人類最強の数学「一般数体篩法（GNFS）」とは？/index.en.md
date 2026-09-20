@@ -51,7 +51,7 @@ With only the prime number $p$ in the $(X - Y)$ room, let's calculate the **"Gre
 * Contents of $N$ = $p \times q$
   The only common part is **"$p$"**!
 
-In other words, the moment you calculate the greatest common divisor, the hidden prime number $p$ pops out, and the cryptography is completely decrypted. (*The greatest common divisor can be calculated instantly even on a smartphone using the "[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm".)
+In other words, the moment you calculate the greatest common divisor, the hidden prime number $p$ pops out, and the cryptography is completely decrypted. (*The greatest common divisor can be calculated instantly even on a smartphone using the "[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm".)
 
 **[A Little Column: Why squared? Why not cubed or doubled?]**
 > If it's "$2X - 2Y$", it becomes $2(X - Y)$, and since there's only one room, you can't separate the primes. If it's "$X^3 - Y^3$", the size of the rooms becomes unbalanced, making the calculations unnecessarily heavy. To separate the primes into two, "squaring", which beautifully divides into two rooms, is the most cost-effective.

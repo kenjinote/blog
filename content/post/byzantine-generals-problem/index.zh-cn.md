@@ -8,13 +8,13 @@ tags: ["拜占庭将军问题", "区块链", "共识机制", "算法"]
 slug: "byzantine-generals-problem"
 ---
 
-在学习分布式系统或区块链技术时，必然会面临的一个问题就是 **[拜占庭将军问题](https://kenji.blog/p/byzantine-generals-problem/)** (Byzantine Generals Problem)。它探讨的是在网络中存在“叛徒”或“故障节点”的情况下，整个系统该如何达成正确的共识这一极其重要的课题。
+在学习分布式系统或区块链技术时，必然会面临的一个问题就是 **[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)** (Byzantine Generals Problem)。它探讨的是在网络中存在“叛徒”或“故障节点”的情况下，整个系统该如何达成正确的共识这一极其重要的课题。
 
-本文将结合具体的故事场景、数学条件公式以及图解，对这个 **[拜占庭将军问题](https://kenji.blog/p/byzantine-generals-problem/)** 进行从基础到应用的详细解说。
+本文将结合具体的故事场景、数学条件公式以及图解，对这个 **[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)** 进行从基础到应用的详细解说。
 
-## 1. 什么是[拜占庭将军问题](https://kenji.blog/p/byzantine-generals-problem/)？
+## 1. 什么是[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)？
 
-[拜占庭将军问题](https://kenji.blog/p/byzantine-generals-problem/)是1982年由莱斯利·兰伯特 (Leslie Lamport) 等人提出的分布式计算中关于共识形成的思维实验。
+[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)是1982年由莱斯利·兰伯特 (Leslie Lamport) 等人提出的分布式计算中关于共识形成的思维实验。
 
 ### 具体例子：拜占庭帝国的将军们
 
@@ -43,7 +43,7 @@ end
 
 在这种情况下，副官1会收到“司令官说要进攻，但副官2说要撤退”这样矛盾的信息，从而无法做出正确的判断。
 
-像这样，探讨“在一个恶意节点可以发送任意虚假信息的网络中，正常的节点之间如何才能达成一致结论”的问题，就是 **[拜占庭将军问题](https://kenji.blog/p/byzantine-generals-problem/)** 。
+像这样，探讨“在一个恶意节点可以发送任意虚假信息的网络中，正常的节点之间如何才能达成一致结论”的问题，就是 **[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)** 。
 
 ## 2. 达成共识的严格条件
 
@@ -98,7 +98,7 @@ end
 
 ## 3. 作为解决方案的算法
 
-为了解决[拜占庭将军问题](https://kenji.blog/p/byzantine-generals-problem/)并达成共识，需要什么样的算法呢？
+为了解决[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)并达成共识，需要什么样的算法呢？
 
 ### 递归的口头消息算法
 
@@ -118,9 +118,9 @@ end
 
 ## 4. 区块链与拜占庭容错
 
-对[拜占庭将军问题](https://kenji.blog/p/byzantine-generals-problem/)的抵御能力被称为 **拜占庭容错** (Byzantine Fault Tolerance, BFT)。它是衡量分布式系统在遭受故障或恶意攻击时，能否继续正常运行的重要指标。
+对[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)的抵御能力被称为 **拜占庭容错** (Byzantine Fault Tolerance, BFT)。它是衡量分布式系统在遭受故障或恶意攻击时，能否继续正常运行的重要指标。
 
-近年来，这个问题再次受到极大关注，这归功于 **区块链技术** 的出现。因为区块链是一个没有中央管理者的 P2P 网络，恶意参与者（节点）有可能会散布虚假的交易历史。这正是典型的[拜占庭将军问题](https://kenji.blog/p/byzantine-generals-problem/)。
+近年来，这个问题再次受到极大关注，这归功于 **区块链技术** 的出现。因为区块链是一个没有中央管理者的 P2P 网络，恶意参与者（节点）有可能会散布虚假的交易历史。这正是典型的[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)。
 
 ### PBFT (实用拜占庭容错) 的原理
 
@@ -151,7 +151,7 @@ end
 
 比特币的创始人中本聪采用了一种全新的方法来应对这个问题，那就是将 **工作量证明** (Proof of Work, PoW) 与“最长链有效”原则相结合的 **中本聪共识** 。
 
-在中本聪共识中，只有在数学计算竞争（挖矿）中获胜的人，才能获得提议区块的权利。为了让网络接受虚假信息，恶意者必须控制全网算力的过半数（51%以上），这在现实中是极其困难的设计。通过这种方式，它被评价为在不特定多数人参与的开放网络中，概率性地解决了[拜占庭将军问题](https://kenji.blog/p/byzantine-generals-problem/)。
+在中本聪共识中，只有在数学计算竞争（挖矿）中获胜的人，才能获得提议区块的权利。为了让网络接受虚假信息，恶意者必须控制全网算力的过半数（51%以上），这在现实中是极其困难的设计。通过这种方式，它被评价为在不特定多数人参与的开放网络中，概率性地解决了[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)。
 
 ### PoS (权益证明) 中 BFT 的应用
 
@@ -179,6 +179,6 @@ $$
 
 ## 6. 结语
 
-这个 **[拜占庭将军问题](https://kenji.blog/p/byzantine-generals-problem/)** 是确保分布式系统可靠性的核心理论。“在不知该信任谁的环境中，如何做出总体上正确的决定”——这个课题如今已被应用到从加密资产底层技术、到航空器控制系统、再到云计算的各种现代IT基础设施中。
+这个 **[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)** 是确保分布式系统可靠性的核心理论。“在不知该信任谁的环境中，如何做出总体上正确的决定”——这个课题如今已被应用到从加密资产底层技术、到航空器控制系统、再到云计算的各种现代IT基础设施中。
 
 在必须假设存在叛徒的情况下、依然保证系统不中断的算法演进，今后也不会停止。对于参与分布式系统设计的工程师来说，理解这个问题背后的数学证明和算法原理，将成为非常有力的武器。

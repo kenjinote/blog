@@ -8,7 +8,7 @@ categories: ["數學", "傳記"]
 tags: ["巴謝", "數論", "數學史", "趣味數學", "丟番圖"]
 ---
 
-在數學史上，有些人扮演了至關重要的角色，即使他們有時被掩蓋在後世偉大發現的光環之下。17 世紀的法國數學家 **克洛德·加斯帕爾·巴謝·德·梅濟里亞克 ([Claude Gaspard Bachet](https://kenji.blog/p/bachet/) de Méziriac, 1581–1638)** 就是其中之一。他因對[皮埃爾·德·費馬](https://kenji.blog/p/fermat/)產生影響而聞名，但他本人的成就同樣非常廣泛和多樣化。
+在數學史上，有些人扮演了至關重要的角色，即使他們有時被掩蓋在後世偉大發現的光環之下。17 世紀的法國數學家 **克洛德·加斯帕爾·巴謝·德·梅濟里亞克 ([Claude Gaspard Bachet](https://kenji.blog/zh-tw/p/bachet/) de Méziriac, 1581–1638)** 就是其中之一。他因對[皮埃爾·德·費馬](https://kenji.blog/zh-tw/p/fermat/)產生影響而聞名，但他本人的成就同樣非常廣泛和多樣化。
 
 在本文中，我們將深入了解巴謝的生平及其主要的數學成就。
 
@@ -27,17 +27,17 @@ flowchart TD
     D -->|"1612 年出版"| F["《令人愉快的趣味問題》"]
 ```
 
-## [丟番圖](https://kenji.blog/p/diophantus/)《算術》的拉丁文譯本
+## [丟番圖](https://kenji.blog/zh-tw/p/diophantus/)《算術》的拉丁文譯本
 
-巴謝最著名的成就之一是將古希臘數學家[丟番圖](https://kenji.blog/p/diophantus/) ([Diophantus](https://kenji.blog/p/diophantus/)) 的《算術 (Arithmetica)》翻譯成拉丁文，並加上了註釋，於 1621 年出版。
+巴謝最著名的成就之一是將古希臘數學家[丟番圖](https://kenji.blog/zh-tw/p/diophantus/) ([Diophantus](https://kenji.blog/zh-tw/p/diophantus/)) 的《算術 (Arithmetica)》翻譯成拉丁文，並加上了註釋，於 1621 年出版。
 
-這本譯著成為了當時歐洲數學家學習古代代數和數論的標準教科書。其中最著名的軼事之一是，[皮埃爾·德·費馬](https://kenji.blog/p/fermat/) ([Pierre de Fermat](https://kenji.blog/p/fermat/)) 就是在他所擁有的這本巴謝版《算術》的空白邊緣處寫下了著名的「費馬大定理」。
+這本譯著成為了當時歐洲數學家學習古代代數和數論的標準教科書。其中最著名的軼事之一是，[皮埃爾·德·費馬](https://kenji.blog/zh-tw/p/fermat/) ([Pierre de Fermat](https://kenji.blog/zh-tw/p/fermat/)) 就是在他所擁有的這本巴謝版《算術》的空白邊緣處寫下了著名的「費馬大定理」。
 
-巴謝並沒有止步於純粹的翻譯；他在[丟番圖](https://kenji.blog/p/diophantus/)的問題中加入了自己精彩的註釋和推廣。如果沒有他的數學洞察力，17 世紀數論的發展可能會緩慢得多。
+巴謝並沒有止步於純粹的翻譯；他在[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)的問題中加入了自己精彩的註釋和推廣。如果沒有他的數學洞察力，17 世紀數論的發展可能會緩慢得多。
 
 ## 巴謝方程 (Bachet's Equation)
 
-在數論中，巴謝研究了一種特定形式的[丟番圖](https://kenji.blog/p/diophantus/)方程，現在被稱為 **巴謝方程** 。它代表了以下形式的三次曲線（一種橢圓曲線）：
+在數論中，巴謝研究了一種特定形式的[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程，現在被稱為 **巴謝方程** 。它代表了以下形式的三次曲線（一種橢圓曲線）：
 
 $$
 y^2 = x^3 - c
@@ -45,7 +45,7 @@ $$
 
 （或者有時寫為 $y^2 = x^3 + k$，其中 $c$ 或 $k$ 是常數。）
 
-巴謝考慮了在給定特定有理數解的情況下，推導新有理數解的幾何和代數方法（相當於現在所謂的橢圓曲線上的點加法，特別是用於加倍的切線法）。這展示了一種生成[丟番圖](https://kenji.blog/p/diophantus/)方程無限多解的方法，並成為了後來橢圓曲線理論的基礎之一。
+巴謝考慮了在給定特定有理數解的情況下，推導新有理數解的幾何和代數方法（相當於現在所謂的橢圓曲線上的點加法，特別是用於加倍的切線法）。這展示了一種生成[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程無限多解的方法，並成為了後來橢圓曲線理論的基礎之一。
 
 ## 趣味數學之父：《令人愉快的趣味問題》
 
@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-透過擴展[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)（擴展[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)）可以具體計算出 $x$ 和 $y$，這已成為現代密碼學（如 RSA）中不可或缺的基礎定理。在重視歷史準確性的語境中，這有時被稱為 **巴謝定理** 。
+透過擴展[歐幾里得算法](https://kenji.blog/zh-tw/p/euclidean-algorithm/)（擴展[歐幾里得算法](https://kenji.blog/zh-tw/p/euclidean-algorithm/)）可以具體計算出 $x$ 和 $y$，這已成為現代密碼學（如 RSA）中不可或缺的基礎定理。在重視歷史準確性的語境中，這有時被稱為 **巴謝定理** 。
 
 ## 結論
 

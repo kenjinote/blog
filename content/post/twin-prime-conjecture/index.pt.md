@@ -23,7 +23,7 @@ Primos Gêmeos (Twin Primes) são pares de números primos cuja diferença é ex
 - $(29, 31)$
 - $(41, 43)$
 
-Sabe-se pelo Teorema do Número Primo ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/)) que, à medida que os números aumentam, a frequência de aparecimento dos próprios números primos diminui. Consequentemente, a frequência de aparecimento de primos gêmeos também diminui. No entanto, por maior que seja o número, os matemáticos têm especulado há muito tempo que esses "pares de primos com diferença de 2" aparecerão infinitamente sem se esgotarem.
+Sabe-se pelo Teorema do Número Primo ([Prime Number Theorem](https://kenji.blog/pt/p/prime-number-theorem/)) que, à medida que os números aumentam, a frequência de aparecimento dos próprios números primos diminui. Consequentemente, a frequência de aparecimento de primos gêmeos também diminui. No entanto, por maior que seja o número, os matemáticos têm especulado há muito tempo que esses "pares de primos com diferença de 2" aparecerão infinitamente sem se esgotarem.
 
 Esta é a **Conjectura dos Primos Gêmeos** .
 
@@ -76,7 +76,7 @@ $$
 
 Esse valor de convergência $B_2$ é chamado de **Constante de Brun** (Brun's Constant). De acordo com os cálculos atuais, estima-se que $B_2 \approx 1.90216058$.
 
-Foi provado por [Leonhard Euler](https://kenji.blog/p/euler/) que a soma dos inversos de todos os números primos diverge. Se a conjectura dos primos gêmeos for falsa e existirem apenas um número finito de primos gêmeos, a soma naturalmente convergirá, por ser a soma de uma quantidade finita de números. No entanto, o significado do teorema de Brun é que "mesmo se existirem infinitos primos gêmeos, eles são tão 'esparsos' que a soma de seus inversos converge". Este é um dos fatores que torna a resolução da conjectura dos primos gêmeos extremamente difícil.
+Foi provado por [Leonhard Euler](https://kenji.blog/pt/p/euler/) que a soma dos inversos de todos os números primos diverge. Se a conjectura dos primos gêmeos for falsa e existirem apenas um número finito de primos gêmeos, a soma naturalmente convergirá, por ser a soma de uma quantidade finita de números. No entanto, o significado do teorema de Brun é que "mesmo se existirem infinitos primos gêmeos, eles são tão 'esparsos' que a soma de seus inversos converge". Este é um dos fatores que torna a resolução da conjectura dos primos gêmeos extremamente difícil.
 
 ## 4. Avanços Dramáticos Recentes: O Avanço de Yitang Zhang
 

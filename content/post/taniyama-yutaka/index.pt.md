@@ -8,21 +8,21 @@ categories: ["mathematics", "biography"]
 tags: ["Yutaka Taniyama", "Matemática", "Último Teorema de Fermat", "Conjectura de Taniyama-Shimura", "Curvas Elípticas", "Formas Modulares"]
 ---
 
-# [[Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/): A Vida e as Conquistas do Gênio Matemático que Desafiou Problemas Não Resolvidos](https://kenji.blog/p/taniyama-yutaka/)
+# [[Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/): A Vida e as Conquistas do Gênio Matemático que Desafiou Problemas Não Resolvidos](https://kenji.blog/p/taniyama-yutaka/)
 
-A demonstração do **Último Teorema de Fermat** é um dos desenvolvimentos mais dramáticos e importantes da matemática moderna. Por trás dessa conquista monumental, reside uma espantosa conjectura proposta por dois matemáticos japoneses. Um deles foi **[Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/)** (1927 - 1958), que faleceu muito jovem. Neste artigo, vamos nos aprofundar na grandiosa visão por trás da "Conjectura de Taniyama-Shimura" que ele propôs, bem como em sua própria vida turbulenta.
+A demonstração do **Último Teorema de Fermat** é um dos desenvolvimentos mais dramáticos e importantes da matemática moderna. Por trás dessa conquista monumental, reside uma espantosa conjectura proposta por dois matemáticos japoneses. Um deles foi **[Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/)** (1927 - 1958), que faleceu muito jovem. Neste artigo, vamos nos aprofundar na grandiosa visão por trás da "Conjectura de Taniyama-Shimura" que ele propôs, bem como em sua própria vida turbulenta.
 
-## 1. O Início da Vida e a Juventude de [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/)
+## 1. O Início da Vida e a Juventude de [Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/)
 
-[Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/) nasceu em 1927, na cidade de Kisai, província de Saitama (hoje, cidade de Kazo). Ele demonstrou um talento extraordinário para a matemática desde a infância, mas seus anos de estudante coincidiram com o período caótico da Segunda Guerra Mundial. Ele contraiu tuberculose e muitas vezes perdeu longos períodos de aulas no ensino médio. Durante a sua recuperação, lia livros de matemática sozinho e desenvolveu um profundo pensamento matemático através do auto-estudo. Diz-se que esse tempo de isolamento aprimorou o seu sentido matemático, único e intuitivo.
+[Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/) nasceu em 1927, na cidade de Kisai, província de Saitama (hoje, cidade de Kazo). Ele demonstrou um talento extraordinário para a matemática desde a infância, mas seus anos de estudante coincidiram com o período caótico da Segunda Guerra Mundial. Ele contraiu tuberculose e muitas vezes perdeu longos períodos de aulas no ensino médio. Durante a sua recuperação, lia livros de matemática sozinho e desenvolveu um profundo pensamento matemático através do auto-estudo. Diz-se que esse tempo de isolamento aprimorou o seu sentido matemático, único e intuitivo.
 
 Após ingressar no Departamento de Matemática da Faculdade de Ciências da Universidade de Tóquio, desenvolveu um forte interesse em álgebra abstrata e teoria dos números. Apesar de estar num período de reconstrução pós-guerra, a comunidade matemática japonesa da época ambicionava realizar pesquisas de nível mundial, influenciada por jovens investigadores inspirados por Teiji Takagi e Emil Artin. Taniyama deixou o seu talento florescer no meio de todo esse entusiasmo.
 
-## 2. O Encontro com [Goro Shimura](https://kenji.blog/p/shimura-goro/)
+## 2. O Encontro com [Goro Shimura](https://kenji.blog/pt/p/shimura-goro/)
 
-Na Universidade de Tóquio, Taniyama conheceu **[Goro Shimura](https://kenji.blog/p/shimura-goro/)**, que se tornaria seu amigo e aliado para toda a vida. Os dois tinham personalidades opostas, mas partilhavam uma profunda paixão pela matemática. Enquanto Taniyama era intuitivo e estava constantemente a transbordar de ideias, Shimura sustentava-as com uma lógica rigorosa, formando uma relação complementar notável.
+Na Universidade de Tóquio, Taniyama conheceu **[Goro Shimura](https://kenji.blog/pt/p/shimura-goro/)**, que se tornaria seu amigo e aliado para toda a vida. Os dois tinham personalidades opostas, mas partilhavam uma profunda paixão pela matemática. Enquanto Taniyama era intuitivo e estava constantemente a transbordar de ideias, Shimura sustentava-as com uma lógica rigorosa, formando uma relação complementar notável.
 
-Mais tarde, [Goro Shimura](https://kenji.blog/p/shimura-goro/) disse sobre Taniyama: "Ele cometeu muitos erros, mas a maioria deles foram erros na direção certa". A intuição de Taniyama envolvia frequentemente saltos lógicos, mas além destes, um novo cenário matemático sempre se revelava. Os dois inspiraram-se mutuamente e mergulharam no estudo da teoria da multiplicação complexa e da geometria algébrica, que se encontravam na vanguarda da matemática da época.
+Mais tarde, [Goro Shimura](https://kenji.blog/pt/p/shimura-goro/) disse sobre Taniyama: "Ele cometeu muitos erros, mas a maioria deles foram erros na direção certa". A intuição de Taniyama envolvia frequentemente saltos lógicos, mas além destes, um novo cenário matemático sempre se revelava. Os dois inspiraram-se mutuamente e mergulharam no estudo da teoria da multiplicação complexa e da geometria algébrica, que se encontravam na vanguarda da matemática da época.
 
 ## 3. A Conjectura de Taniyama-Shimura: A Integração de Dois Mundos
 
@@ -62,7 +62,7 @@ graph LR
 
 ## 4. O Simpósio de Nikko de 1955
 
-Esta grandiosa conjectura foi sugerida publicamente pela primeira vez em 1955, num simpósio internacional sobre teoria algébrica dos números realizado em Nikko, no Japão. O simpósio contou com a participação dos melhores matemáticos do mundo da época, como [André Weil](https://kenji.blog/p/weil/) e Jean-Pierre Serre.
+Esta grandiosa conjectura foi sugerida publicamente pela primeira vez em 1955, num simpósio internacional sobre teoria algébrica dos números realizado em Nikko, no Japão. O simpósio contou com a participação dos melhores matemáticos do mundo da época, como [André Weil](https://kenji.blog/pt/p/weil/) e Jean-Pierre Serre.
 
 Taniyama imprimiu e distribuiu aos participantes vários problemas não resolvidos redigidos em inglês. Os problemas 12 e 13 continham as sementes das ideias que, mais tarde, se desenvolveriam na "Conjectura de Taniyama-Shimura". Taniyama propôs audaciosamente que a função zeta de uma curva elíptica poderia ser obtida a partir dos coeficientes de Fourier de um determinado tipo de forma modular.
 
@@ -76,7 +76,7 @@ A sua nota de suicídio não referia qualquer preocupação específica. Escreve
 
 ## 6. Uma Ponte para o Último Teorema de Fermat
 
-Após a morte de Taniyama, [Goro Shimura](https://kenji.blog/p/shimura-goro/) formulou rigorosamente esta conjectura e difundiu-a aos matemáticos de todo o mundo. Durante muito tempo, esta conjectura foi considerada um objetivo tão difícil que parecia "impossível de provar". No entanto, uma dramática reviravolta ocorreu na década de 1980. O matemático alemão Gerhard Frey propôs uma ideia espantosa: **"Se o Último Teorema de Fermat tiver um contraexemplo, a curva elíptica construída a partir desse contraexemplo não poderá ser modular."**
+Após a morte de Taniyama, [Goro Shimura](https://kenji.blog/pt/p/shimura-goro/) formulou rigorosamente esta conjectura e difundiu-a aos matemáticos de todo o mundo. Durante muito tempo, esta conjectura foi considerada um objetivo tão difícil que parecia "impossível de provar". No entanto, uma dramática reviravolta ocorreu na década de 1980. O matemático alemão Gerhard Frey propôs uma ideia espantosa: **"Se o Último Teorema de Fermat tiver um contraexemplo, a curva elíptica construída a partir desse contraexemplo não poderá ser modular."**
 
 A curva elíptica construída por Frey (a curva de Frey) tomava a seguinte forma. Suponhamos que existe uma solução inteira para a equação de Fermat $A^n + B^n = C^n$. Utilizando essa solução, criamos a seguinte curva elíptica:
 
@@ -101,7 +101,7 @@ flowchart TD
 
 ## 7. Prova da Conjectura e o Programa de Langlands
 
-A pessoa que mais se sentiu inspirada por este facto foi o matemático britânico **[Andrew Wiles](https://kenji.blog/p/wiles/)**. Desde a infância que era fascinado pelo Último Teorema de Fermat, e decidiu dedicar a sua vida a prová-lo. Após sete anos de pesquisa secreta, anunciou em 1993 que tinha "provado a Conjectura de Taniyama-Shimura para curvas elípticas semiestáveis". Embora tenha sido encontrada uma lacuna numa parte da demonstração, com a ajuda de um ex-aluno seu, Richard Taylor, conseguiu preenchê-la com sucesso em 1995 e publicou a demonstração completa. Como resultado, a parte crucial da conjectura deixada por Taniyama foi provada e, simultaneamente, o Último Teorema de Fermat tornou-se numa verdade eterna.
+A pessoa que mais se sentiu inspirada por este facto foi o matemático britânico **[Andrew Wiles](https://kenji.blog/pt/p/wiles/)**. Desde a infância que era fascinado pelo Último Teorema de Fermat, e decidiu dedicar a sua vida a prová-lo. Após sete anos de pesquisa secreta, anunciou em 1993 que tinha "provado a Conjectura de Taniyama-Shimura para curvas elípticas semiestáveis". Embora tenha sido encontrada uma lacuna numa parte da demonstração, com a ajuda de um ex-aluno seu, Richard Taylor, conseguiu preenchê-la com sucesso em 1995 e publicou a demonstração completa. Como resultado, a parte crucial da conjectura deixada por Taniyama foi provada e, simultaneamente, o Último Teorema de Fermat tornou-se numa verdade eterna.
 
 Posteriormente, através dos esforços adicionais de Christophe Breuil, Brian Conrad, Fred Diamond e Richard Taylor, a Conjectura de Taniyama-Shimura foi completamente provada para todas as curvas elípticas em 2001. Atualmente, este teorema é conhecido como o "Teorema de Modularidade (Modularity Theorem)".
 
@@ -109,6 +109,6 @@ A Conjectura de Taniyama-Shimura é o exemplo mais belo e bem-sucedido da grandi
 
 ## 8. Conclusão
 
-A modesta conjectura apresentada por [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/) no simpósio de Nikko tornou-se a base que estabeleceu o Último Teorema de Fermat, um pináculo do intelecto humano, meio século depois. A sua perceção das "ligações ocultas por detrás de diferentes objetos matemáticos" continua a inspirar os matemáticos dos dias de hoje.
+A modesta conjectura apresentada por [Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/) no simpósio de Nikko tornou-se a base que estabeleceu o Último Teorema de Fermat, um pináculo do intelecto humano, meio século depois. A sua perceção das "ligações ocultas por detrás de diferentes objetos matemáticos" continua a inspirar os matemáticos dos dias de hoje.
 
-O genial matemático [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/) morreu jovem, mas a belíssima conjectura que deixou para trás continuará a ser um guia a iluminar o vasto universo da matemática. Não há como não questionar que outras profundas verdades ele nos teria revelado, caso tivesse sobrevivido.
+O genial matemático [Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/) morreu jovem, mas a belíssima conjectura que deixou para trás continuará a ser um guia a iluminar o vasto universo da matemática. Não há como não questionar que outras profundas verdades ele nos teria revelado, caso tivesse sobrevivido.

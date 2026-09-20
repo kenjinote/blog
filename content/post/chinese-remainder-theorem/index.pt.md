@@ -14,7 +14,7 @@ tags:
 
 ## Introdução
 
-O Teorema Chinês do Resto ([Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/), abreviado CRT) é um dos teoremas mais importantes e belos da teoria dos números. As suas origens remontam ao "Sunzi Suanjing", um antigo livro de matemática chinês compilado entre os séculos III e V. Este teorema, que começou com simples problemas aritméticos na antiguidade, desempenha hoje, milhares de anos depois, um papel essencial nas tecnologias de criptografia de chave pública, como a **Criptografia RSA**, que suportam as comunicações seguras na internet que utilizamos diariamente.
+O Teorema Chinês do Resto ([Chinese Remainder Theorem](https://kenji.blog/pt/p/chinese-remainder-theorem/), abreviado CRT) é um dos teoremas mais importantes e belos da teoria dos números. As suas origens remontam ao "Sunzi Suanjing", um antigo livro de matemática chinês compilado entre os séculos III e V. Este teorema, que começou com simples problemas aritméticos na antiguidade, desempenha hoje, milhares de anos depois, um papel essencial nas tecnologias de criptografia de chave pública, como a **Criptografia RSA**, que suportam as comunicações seguras na internet que utilizamos diariamente.
 
 Neste artigo, explicaremos detalhadamente este **Teorema Chinês do Resto**, desde o seu contexto histórico, definições matemáticas rigorosas e procedimentos de cálculo específicos, até às suas aplicações na teoria da criptografia moderna, acompanhados de diagramas e exemplos concretos.
 

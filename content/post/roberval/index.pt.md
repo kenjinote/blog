@@ -17,9 +17,9 @@ tags:
 
 ## 1. Introdução: Gigantes às Vésperas do Cálculo e a Matemática do Século XVII
 
-A Europa no século XVII foi uma época de dramática explosão de conhecimento, mais tarde conhecida como a "Revolução Científica". Particularmente no campo da matemática, preparações rápidas estavam em andamento para o nascimento de uma nova matemática que ia além da estrutura da geometria euclidiana herdada da Grécia antiga para lidar com quantidades mutáveis, o infinitesimal e o infinito — a saber, o "cálculo". O monumento histórico da conclusão do cálculo por [Isaac Newton](https://kenji.blog/p/newton/) e Gottfried Wilhelm Leibniz não foi de forma alguma alcançado apenas pela genialidade dos dois. Por trás disso estavam as lutas de muitos matemáticos que lutaram com os conceitos de infinito e limites antes deles.
+A Europa no século XVII foi uma época de dramática explosão de conhecimento, mais tarde conhecida como a "Revolução Científica". Particularmente no campo da matemática, preparações rápidas estavam em andamento para o nascimento de uma nova matemática que ia além da estrutura da geometria euclidiana herdada da Grécia antiga para lidar com quantidades mutáveis, o infinitesimal e o infinito — a saber, o "cálculo". O monumento histórico da conclusão do cálculo por [Isaac Newton](https://kenji.blog/pt/p/newton/) e Gottfried Wilhelm Leibniz não foi de forma alguma alcançado apenas pela genialidade dos dois. Por trás disso estavam as lutas de muitos matemáticos que lutaram com os conceitos de infinito e limites antes deles.
 
-Um dos matemáticos mais importantes na França nesta "véspera do cálculo" foi [Gilles Personne de Roberval](https://kenji.blog/p/roberval/) (1602–1675). Roberval introduziu na França o "método dos indivisíveis" proposto pelo italiano Bonaventura Cavalieri e, ao refiná-lo independentemente, criou métodos poderosos para calcular a área de figuras delimitadas por curvas e o volume de sólidos de revolução. Ele também demonstrou excelente talento nos campos da física e da mecânica, deixando para trás uma invenção inovadora conhecida como a "balança de Roberval", que ainda hoje pode ser vista em mercados e laboratórios de ciências.
+Um dos matemáticos mais importantes na França nesta "véspera do cálculo" foi [Gilles Personne de Roberval](https://kenji.blog/pt/p/roberval/) (1602–1675). Roberval introduziu na França o "método dos indivisíveis" proposto pelo italiano Bonaventura Cavalieri e, ao refiná-lo independentemente, criou métodos poderosos para calcular a área de figuras delimitadas por curvas e o volume de sólidos de revolução. Ele também demonstrou excelente talento nos campos da física e da mecânica, deixando para trás uma invenção inovadora conhecida como a "balança de Roberval", que ainda hoje pode ser vista em mercados e laboratórios de ciências.
 
 Neste artigo, aprofundar-nos-emos na vida deste matemático solitário que viveu numa época turbulenta, nas suas ferozes controvérsias com os seus contemporâneos e nas profundas conquistas matemáticas e mecânicas que ele deixou para trás, completas com ricas ilustrações e fórmulas matemáticas.
 
@@ -29,9 +29,9 @@ Neste artigo, aprofundar-nos-emos na vida deste matemático solitário que viveu
 
 Gilles Personne nasceu em 10 de agosto de 1602, em uma pequena vila chamada Roberval perto de Beauvais no norte da França. Acredita-se que sua família tenha sido de camponeses, o que não era de forma alguma um histórico vantajoso para os estudos na estrita sociedade de classes da época. No entanto, desde tenra idade, ele demonstrou intelecto extraordinário e um forte interesse em matemática. Mais tarde, ele adotou o nome de sua vila natal e começou a se chamar "de Roberval". Isso pode ser visto como uma expressão de seu orgulho de suas origens, bem como uma tentativa de estabelecer sua identidade como um estudioso.
 
-Tendo aprendido matemática e línguas clássicas (latim e grego) como autodidata em uma idade jovem, Roberval almejou patamares acadêmicos mais elevados e mudou-se para a capital, Paris, por volta de 1628. Paris naquela época era um caldeirão de estudos, reunindo intelectuais de toda a Europa. Lá, ele começou a frequentar o encontro de intelectuais centrado em torno do Padre [Marin Mersenne](https://kenji.blog/p/mersenne/), conhecido como a "Académie de Mersenne". Mersenne, muitas vezes chamado de "o chefe dos correios da erudição europeia", agia como um intermediário para a correspondência entre os estudiosos de toda a Europa, desempenhando um papel no compartilhamento das mais recentes descobertas científicas.
+Tendo aprendido matemática e línguas clássicas (latim e grego) como autodidata em uma idade jovem, Roberval almejou patamares acadêmicos mais elevados e mudou-se para a capital, Paris, por volta de 1628. Paris naquela época era um caldeirão de estudos, reunindo intelectuais de toda a Europa. Lá, ele começou a frequentar o encontro de intelectuais centrado em torno do Padre [Marin Mersenne](https://kenji.blog/pt/p/mersenne/), conhecido como a "Académie de Mersenne". Mersenne, muitas vezes chamado de "o chefe dos correios da erudição europeia", agia como um intermediário para a correspondência entre os estudiosos de toda a Europa, desempenhando um papel no compartilhamento das mais recentes descobertas científicas.
 
-Através do salão de Mersenne, Roberval aprofundou suas interações com as mentes mais brilhantes da França na época, como [René Descartes](https://kenji.blog/p/descartes/), [Pierre de Fermat](https://kenji.blog/p/fermat/), [Blaise Pascal](https://kenji.blog/p/pascal/) e Étienne Pascal (pai de Blaise), permitindo que seus talentos matemáticos florescessem.
+Através do salão de Mersenne, Roberval aprofundou suas interações com as mentes mais brilhantes da França na época, como [René Descartes](https://kenji.blog/pt/p/descartes/), [Pierre de Fermat](https://kenji.blog/pt/p/fermat/), [Blaise Pascal](https://kenji.blog/pt/p/pascal/) e Étienne Pascal (pai de Blaise), permitindo que seus talentos matemáticos florescessem.
 
 ### 2.2. A Cátedra do Collège Royal e as Exaustivas Batalhas de Defesa
 
@@ -71,7 +71,7 @@ $$
 \int_{0}^{a} x^n dx = \frac{a^{n+1}}{n+1} \quad \left( \text{onde } n \text{ é um número inteiro positivo} \right)
 $$
 
-Por exemplo, quando $ n = 2 $, a área sob a parábola $ y = x^2 $ é $ \frac{a^3}{3} $. Este foi o mesmo resultado que [Pierre de Fermat](https://kenji.blog/p/fermat/) havia descoberto de forma independente quase ao mesmo tempo. Roberval e Fermat respeitavam os métodos um do outro e compartilharam esta descoberta através de cartas. Suas realizações tornaram-se um importante trampolim para a posterior formulação da integração por Leibniz.
+Por exemplo, quando $ n = 2 $, a área sob a parábola $ y = x^2 $ é $ \frac{a^3}{3} $. Este foi o mesmo resultado que [Pierre de Fermat](https://kenji.blog/pt/p/fermat/) havia descoberto de forma independente quase ao mesmo tempo. Roberval e Fermat respeitavam os métodos um do outro e compartilharam esta descoberta através de cartas. Suas realizações tornaram-se um importante trampolim para a posterior formulação da integração por Leibniz.
 
 ## 4. Estudo da Cicloide e Ferozes Disputas de Prioridade
 
@@ -118,7 +118,7 @@ Ao saber disso, Roberval ficou furioso. Ele acusou Torricelli, alegando: "Torric
 
 Roberval concebeu uma abordagem inovadora não apenas no campo da integração, mas também no campo da diferenciação (o problema do traçado de tangentes). Consistia em reexaminar os problemas geométricos como uma "cinemática" física.
 
-Naquela época, encontrar a tangente de uma curva era uma das questões mais importantes da geometria. [René Descartes](https://kenji.blog/p/descartes/) tentava encontrar tangentes usando uma abordagem geométrica algébrica com equações algébricas, mas apresentava a desvantagem de exigir cálculos extremamente pesados.
+Naquela época, encontrar a tangente de uma curva era uma das questões mais importantes da geometria. [René Descartes](https://kenji.blog/pt/p/descartes/) tentava encontrar tangentes usando uma abordagem geométrica algébrica com equações algébricas, mas apresentava a desvantagem de exigir cálculos extremamente pesados.
 
 Em contraste, Roberval pensou da seguinte forma: "Se uma curva é uma trajetória descrita por um ponto em movimento, então a direção na qual esse ponto se move em qualquer instante (o vetor velocidade) é precisamente a tangente à curva."
 
@@ -132,7 +132,7 @@ graph LR
     D -->|"Influência Ideológica"| E["Método dos Fluxões de Newton"]
 ```
 
-Esse "método da tangente cinemática" demonstrou enorme poder em encontrar tangentes para curvas transcendentais (curvas que não podem ser expressas por equações algébricas) como a cicloide. A abordagem de Roberval de trazer esse conceito físico de movimento para a matemática foi um passo extremamente importante que levou diretamente à ideologia fundamental do "Método dos Fluxões" (cálculo cinemático) fundado mais tarde por [Isaac Newton](https://kenji.blog/p/newton/).
+Esse "método da tangente cinemática" demonstrou enorme poder em encontrar tangentes para curvas transcendentais (curvas que não podem ser expressas por equações algébricas) como a cicloide. A abordagem de Roberval de trazer esse conceito físico de movimento para a matemática foi um passo extremamente importante que levou diretamente à ideologia fundamental do "Método dos Fluxões" (cálculo cinemático) fundado mais tarde por [Isaac Newton](https://kenji.blog/pt/p/newton/).
 
 ## 6. Contribuições para a Mecânica: A Balança de Roberval
 
@@ -154,11 +154,11 @@ Como resultado, foi criada uma balança com características práticas extremame
 
 Paralelamente ao seu notável talento, diz-se que Roberval tinha um temperamento muito impetuoso e uma personalidade teimosa que se recusava a ceder em suas teorias. Consequentemente, ele se envolveu em controvérsias ferozes com muitos estudiosos famosos de sua época.
 
-- **Conflito com [René Descartes](https://kenji.blog/p/descartes/)**:
+- **Conflito com [René Descartes](https://kenji.blog/pt/p/descartes/)**:
   Enquanto Descartes promovia a "geometria analítica", que resolvia a geometria usando a álgebra, Roberval valorizava métodos puramente geométricos e cinemáticos. Roberval criticava o método de Descartes como muito artificial e muitas vezes atacava as falhas nas teorias de Descartes. Descartes, por sua vez, menosprezava Roberval chamando-o de "grosseiro e sem instrução", e sua relação permaneceu hostil ao longo de suas vidas.
-- **Amizade com [Pierre de Fermat](https://kenji.blog/p/fermat/)**:
+- **Amizade com [Pierre de Fermat](https://kenji.blog/pt/p/fermat/)**:
   Em contraste com Descartes, Roberval construiu uma relação muito boa com Fermat, que vivia em Toulouse. Embora tivessem personalidades opostas, eles compartilharam ideias matemáticas por meio de cartas intermediadas por Mersenne, complementando a pesquisa um do outro em questões como os indivisíveis.
-- **Influência sobre [Blaise Pascal](https://kenji.blog/p/pascal/)**:
+- **Influência sobre [Blaise Pascal](https://kenji.blog/pt/p/pascal/)**:
   O jovem gênio Pascal também foi muito influenciado por Roberval. Pascal publicou mais tarde trabalhos sobre a cicloide sob o pseudônimo "A. Dettonville", e muitos dos métodos usados neles eram versões refinadas das ideias de Roberval sobre os indivisíveis. Roberval valorizava muito o talento de Pascal e o apoiava.
 
 ```mermaid
@@ -182,7 +182,7 @@ graph TD
 
 ## 8. Conclusão: O Gênio Solitário Que Construiu a Ponte para o Cálculo
 
-[Gilles Personne de Roberval](https://kenji.blog/p/roberval/), na época logo antes do nascimento formal do cálculo, utilizou totalmente duas armas poderosas — o método dos indivisíveis e a abordagem cinemática — para resolver de maneira sequencial os problemas matemáticos da mais alta dificuldade de sua época.
+[Gilles Personne de Roberval](https://kenji.blog/pt/p/roberval/), na época logo antes do nascimento formal do cálculo, utilizou totalmente duas armas poderosas — o método dos indivisíveis e a abordagem cinemática — para resolver de maneira sequencial os problemas matemáticos da mais alta dificuldade de sua época.
 
 Como resultado do atraso excessivo na publicação de suas descobertas devido à pressão de defender a sua cátedra a cada três anos, algumas das suas realizações não foram justamente avaliadas pelos seus contemporâneos, e ele foi por vezes arrastado para disputas indesejáveis de prioridades. No entanto, as sementes de ideias matemáticas que ele semeou certamente se espalharam pela rede de Mersenne e por conhecidos como Fermat e Pascal, tornando-se uma ponte sólida que levaria à fundação do cálculo por Newton e Leibniz mais tarde.
 

@@ -18,13 +18,13 @@ Saat kita memutuskan sesuatu dalam masyarakat, "pemilu" atau "suara terbanyak" (
 
 Faktanya, jawaban matematis untuk pertanyaan ini adalah **"Tidak"**.
 
-Pada tahun 1951, ekonom Kenneth Arrow membuktikan secara matematis bahwa aturan pengambilan keputusan yang sempurna dan memenuhi kondisi rasional tertentu tidaklah ada. Inilah yang disebut dengan **"[Teorema Ketidakmungkinan Arrow](https://kenji.blog/p/arrows-impossibility-theorem/) ([Arrow's Impossibility Theorem](https://kenji.blog/p/arrows-impossibility-theorem/))"**. Atas kontribusinya pada teori pilihan sosial, termasuk pencapaian ini, Arrow menerima Penghargaan Nobel Ekonomi pada tahun 1972.
+Pada tahun 1951, ekonom Kenneth Arrow membuktikan secara matematis bahwa aturan pengambilan keputusan yang sempurna dan memenuhi kondisi rasional tertentu tidaklah ada. Inilah yang disebut dengan **"[Teorema Ketidakmungkinan Arrow](https://kenji.blog/id/p/arrows-impossibility-theorem/) ([Arrow's Impossibility Theorem](https://kenji.blog/id/p/arrows-impossibility-theorem/))"**. Atas kontribusinya pada teori pilihan sosial, termasuk pencapaian ini, Arrow menerima Penghargaan Nobel Ekonomi pada tahun 1972.
 
 Dalam artikel ini, kami akan menjelaskan secara rinci apa arti dari teorema ini, disertai dengan contoh konkret, rumus matematika, dan ilustrasi.
 
-## 1. Apa itu [Teorema Ketidakmungkinan Arrow](https://kenji.blog/p/arrows-impossibility-theorem/)?
+## 1. Apa itu [Teorema Ketidakmungkinan Arrow](https://kenji.blog/id/p/arrows-impossibility-theorem/)?
 
-Singkatnya, [Teorema Ketidakmungkinan Arrow](https://kenji.blog/p/arrows-impossibility-theorem/) menyatakan bahwa: **"Ketika ada tiga atau lebih pemilih yang memilih dari tiga atau lebih pilihan, tidak mungkin untuk memenuhi semua kondisi dari 'pemilu (aturan pengambilan keputusan) yang adil' secara bersamaan."**
+Singkatnya, [Teorema Ketidakmungkinan Arrow](https://kenji.blog/id/p/arrows-impossibility-theorem/) menyatakan bahwa: **"Ketika ada tiga atau lebih pemilih yang memilih dari tiga atau lebih pilihan, tidak mungkin untuk memenuhi semua kondisi dari 'pemilu (aturan pengambilan keputusan) yang adil' secara bersamaan."**
 
 "Pemilu yang adil" di sini mengacu pada beberapa kondisi yang secara intuitif kita rasakan "adil". Arrow mendefinisikan kondisi rasional minimum yang harus dipenuhi masyarakat, dan menunjukkan bahwa kondisi-kondisi tersebut secara logis tidak selaras.
 
@@ -56,7 +56,7 @@ Sistem tidak boleh sedemikian rupa sehingga pendapat dari satu orang tertentu (d
 
 ---
 
-[Teorema Ketidakmungkinan Arrow](https://kenji.blog/p/arrows-impossibility-theorem/) membuktikan fakta mengejutkan secara matematis bahwa **"Fungsi kesejahteraan sosial yang memenuhi keempat kondisi ini secara bersamaan tidak ada (pasti akan terjadi kontradiksi jika syarat non-diktator diterapkan)."**
+[Teorema Ketidakmungkinan Arrow](https://kenji.blog/id/p/arrows-impossibility-theorem/) membuktikan fakta mengejutkan secara matematis bahwa **"Fungsi kesejahteraan sosial yang memenuhi keempat kondisi ini secara bersamaan tidak ada (pasti akan terjadi kontradiksi jika syarat non-diktator diterapkan)."**
 
 ```mermaid
 graph TD
@@ -134,7 +134,7 @@ Ini berarti keberadaan pilihan ketiga (C) telah memengaruhi hasil menang/kalah a
 
 ## 4. Representasi dengan Rumus Matematika dan Logika
 
-Mari kita ekspresikan [Teorema Ketidakmungkinan Arrow](https://kenji.blog/p/arrows-impossibility-theorem/) dengan lebih ketat menggunakan rumus matematika dan logika.
+Mari kita ekspresikan [Teorema Ketidakmungkinan Arrow](https://kenji.blog/id/p/arrows-impossibility-theorem/) dengan lebih ketat menggunakan rumus matematika dan logika.
 
 Misalkan himpunan pemilih adalah $V = \{1, 2, \dots, n\}$, dan himpunan pilihan adalah $X$ ($|X| \ge 3$).
 Misalkan preferensi dari pemilih $i$ adalah $\succeq_i$, dan himpunan profil preferensi dari seluruh pemilih adalah $P = (\succeq_1, \succeq_2, \dots, \succeq_n)$.
@@ -195,7 +195,7 @@ Kenyataannya, masyarakat kita berfungsi dengan melonggarkan sedikit salah satu d
 
 ## Penutup
 
-[Teorema Ketidakmungkinan Arrow](https://kenji.blog/p/arrows-impossibility-theorem/) membuktikan **"ketiadaan aturan yang sempurna bagi semua orang"** dengan menggunakan bahasa matematika yang sangat dingin dan objektif. Namun, hal itu tidak berarti kekalahan dari demokrasi.
+[Teorema Ketidakmungkinan Arrow](https://kenji.blog/id/p/arrows-impossibility-theorem/) membuktikan **"ketiadaan aturan yang sempurna bagi semua orang"** dengan menggunakan bahasa matematika yang sangat dingin dan objektif. Namun, hal itu tidak berarti kekalahan dari demokrasi.
 
 Sebaliknya, ini harus dilihat sebagai pesan yang sangat positif dan mendidik bahwa **"karena setiap sistem pasti memiliki kelemahan, maka sangatlah penting untuk memahami kelemahan tersebut, memilih aturan terbaik yang sesuai dengan situasi, dan berdiskusi secara mendalam."**
 

@@ -14,17 +14,17 @@ tags:
   - "Math History"
 ---
 
-# Who was [Georg Cantor](https://kenji.blog/p/cantor/)?
+# Who was [Georg Cantor](https://kenji.blog/en/p/cantor/)?
 
-In the history of mathematics, the concept of "infinity" was long considered a taboo. Infinity was strictly treated as an "endless state (potential infinity)" and it was viewed as dangerous to treat it as a "completed whole (actual infinity)". However, in the late 19th century, there was a man who challenged this taboo head-on and carved out infinity itself as a subject of mathematics. That man was **[Georg Cantor](https://kenji.blog/p/cantor/)**.
+In the history of mathematics, the concept of "infinity" was long considered a taboo. Infinity was strictly treated as an "endless state (potential infinity)" and it was viewed as dangerous to treat it as a "completed whole (actual infinity)". However, in the late 19th century, there was a man who challenged this taboo head-on and carved out infinity itself as a subject of mathematics. That man was **[Georg Cantor](https://kenji.blog/en/p/cantor/)**.
 
 His creation of "Set Theory" has become the foundation of every field in modern mathematics. In this article, we will look in detail at Cantor's life and his astonishing mathematical achievements.
 
 ## A Turbulent Life
 
-[Georg Cantor](https://kenji.blog/p/cantor/) was born in 1845 in St. Petersburg, Russia. His father was a wealthy merchant from Denmark, and his mother was a Russian musician. Showing an extraordinary talent for mathematics from an early age, he eventually moved to Germany and studied mathematics at the University of Berlin.
+[Georg Cantor](https://kenji.blog/en/p/cantor/) was born in 1845 in St. Petersburg, Russia. His father was a wealthy merchant from Denmark, and his mother was a Russian musician. Showing an extraordinary talent for mathematics from an early age, he eventually moved to Germany and studied mathematics at the University of Berlin.
 
-At the University of Berlin, he was guided by the leading figures of the mathematical world at the time, **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** and **Leopold Kronecker**. Kronecker in particular would later become Cantor's greatest opponent.
+At the University of Berlin, he was guided by the leading figures of the mathematical world at the time, **[Karl Weierstrass](https://kenji.blog/en/p/weierstrass/)** and **Leopold Kronecker**. Kronecker in particular would later become Cantor's greatest opponent.
 
 ### The Quest for Infinity and the Conflict with Kronecker
 
@@ -44,7 +44,7 @@ graph TD
 
 The fact that his theory was not understood and that he continued to receive relentless attacks from his former teacher deeply undermined Cantor's mental health. He developed depression and repeatedly entered and left psychiatric hospitals.
 
-However, his theory gradually became supported by younger generations of mathematicians, such as **[David Hilbert](https://kenji.blog/p/hilbert/)**. Hilbert praised Cantor with the highest compliments, stating, "No one shall expel us from the paradise which Cantor has created for us." Cantor closed his life in a psychiatric hospital in Halle in 1918, but after his death, set theory established an immovable position as the most important foundation of mathematics.
+However, his theory gradually became supported by younger generations of mathematicians, such as **[David Hilbert](https://kenji.blog/en/p/hilbert/)**. Hilbert praised Cantor with the highest compliments, stating, "No one shall expel us from the paradise which Cantor has created for us." Cantor closed his life in a psychiatric hospital in Halle in 1918, but after his death, set theory established an immovable position as the most important foundation of mathematics.
 
 ## Mathematical Achievements: Counting Infinity
 
@@ -70,7 +70,7 @@ A conclusion contrary to common sense is drawn: the whole (natural numbers) and 
 
 Even more surprisingly, Cantor proved that the set of rational numbers (numbers that can be expressed as fractions) $\mathbb{Q}$ also has the same cardinality as the natural numbers. Although rational numbers are densely packed on the number line, by cleverly rearranging the elements, it is possible to establish a one-to-one correspondence with the natural numbers.
 
-### [Cantor's Diagonal Argument](https://kenji.blog/p/cantors-diagonal-argument/)
+### [Cantor's Diagonal Argument](https://kenji.blog/en/p/cantors-diagonal-argument/)
 
 So, are all infinite sets the same size as the natural numbers? Cantor answered "No" to this question. He proved that the set of real numbers $\mathbb{R}$ has a "strictly greater" cardinality than the set of natural numbers. What was used for that proof is the famous **Diagonal argument**.
 
@@ -109,12 +109,12 @@ graph TD
     P2 -->|"Take the power set"| P3["Endlessly continuing..."]
 ```
 
-## The [Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/)
+## The [Continuum Hypothesis](https://kenji.blog/en/p/continuum-hypothesis/)
 
-Does there exist an intermediate cardinality between the cardinality of natural numbers $\aleph_0$ and the cardinality of real numbers $\mathfrak{c}$? Cantor hypothesized that "no such intermediate cardinality exists". This is the **[Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/) (CH)**.
+Does there exist an intermediate cardinality between the cardinality of natural numbers $\aleph_0$ and the cardinality of real numbers $\mathfrak{c}$? Cantor hypothesized that "no such intermediate cardinality exists". This is the **[Continuum Hypothesis](https://kenji.blog/en/p/continuum-hypothesis/) (CH)**.
 
-Cantor spent much of his later years trying to prove this hypothesis, but he was ultimately unable to resolve it. Later, through the research of [Kurt Gödel](https://kenji.blog/p/godel/) and Paul Cohen, it was discovered that the continuum hypothesis is an independent proposition that can "neither be proved nor disproved" from the standard axioms of set theory (ZFC axioms), once again giving a great shock to the mathematical community.
+Cantor spent much of his later years trying to prove this hypothesis, but he was ultimately unable to resolve it. Later, through the research of [Kurt Gödel](https://kenji.blog/en/p/godel/) and Paul Cohen, it was discovered that the continuum hypothesis is an independent proposition that can "neither be proved nor disproved" from the standard axioms of set theory (ZFC axioms), once again giving a great shock to the mathematical community.
 
 ## Conclusion
 
-[Georg Cantor](https://kenji.blog/p/cantor/) showed that human reason can reach the divine realm of "infinity". His tragic life tells the story of the loneliness of a genius who was far too ahead of his time, but the vast "Cantor's Paradise" he carved out continues to fascinate mathematicians all over the world today. It is no exaggeration to say that modern mathematics is built upon the foundation of his desperate quest.
+[Georg Cantor](https://kenji.blog/en/p/cantor/) showed that human reason can reach the divine realm of "infinity". His tragic life tells the story of the loneliness of a genius who was far too ahead of his time, but the vast "Cantor's Paradise" he carved out continues to fascinate mathematicians all over the world today. It is no exaggeration to say that modern mathematics is built upon the foundation of his desperate quest.

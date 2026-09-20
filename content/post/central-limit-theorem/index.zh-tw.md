@@ -10,7 +10,7 @@ slug: "central-limit-theorem"
 
 ## 1. 前言
 
-在學習資料科學與統計學時，絕對無法避開的就是 **中央極限定理** ([Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/))。這個定理擁有如同魔法般的特性：「無論資料服從何種分配，隨著樣本數的增加，其樣本平均數的分配都會趨近於常態分配。」
+在學習資料科學與統計學時，絕對無法避開的就是 **中央極限定理** ([Central Limit Theorem](https://kenji.blog/zh-tw/p/central-limit-theorem/))。這個定理擁有如同魔法般的特性：「無論資料服從何種分配，隨著樣本數的增加，其樣本平均數的分配都會趨近於常態分配。」
 
 本文將針對中央極限定理進行廣泛的解說，從直觀的印象到嚴謹的數學定義，再到實際的應用案例。
 
@@ -144,7 +144,7 @@ $$
 \phi_Y(t)=E[e^{itY}]=1-\frac{t^2}{2}+o(t^2)\quad(t\to0).
 $$
 
-根據獨立性可得下式。極限是標準常態分配的特徵函數，因此根據萊維連續性定理可知其依分配收斂。特徵函數與動差[母函數](https://kenji.blog/p/generating-functions/)不同，此證明並不需要動差[母函數](https://kenji.blog/p/generating-functions/)的存在。
+根據獨立性可得下式。極限是標準常態分配的特徵函數，因此根據萊維連續性定理可知其依分配收斂。特徵函數與動差[母函數](https://kenji.blog/zh-tw/p/generating-functions/)不同，此證明並不需要動差[母函數](https://kenji.blog/zh-tw/p/generating-functions/)的存在。
 
 $$
 \phi_{Z_n}(t)=\left[\phi_Y\!\left(\frac{t}{\sqrt n}\right)\right]^n

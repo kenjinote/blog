@@ -63,7 +63,7 @@ Le problème de trouver des points rationnels a longtemps été étudié comme u
 
 ## 3. Le théorème de Mordell et le rang
 
-En 1922, [Louis Mordell](https://kenji.blog/p/mordell/) a prouvé un théorème décisif sur la structure du groupe des points rationnels $E(\mathbb{Q})$. Il a ensuite été étendu à des corps de nombres algébriques et des variétés abéliennes plus généraux par [André Weil](https://kenji.blog/p/weil/), et est connu sous le nom de théorème de Mordell-Weil.
+En 1922, [Louis Mordell](https://kenji.blog/fr/p/mordell/) a prouvé un théorème décisif sur la structure du groupe des points rationnels $E(\mathbb{Q})$. Il a ensuite été étendu à des corps de nombres algébriques et des variétés abéliennes plus généraux par [André Weil](https://kenji.blog/fr/p/weil/), et est connu sous le nom de théorème de Mordell-Weil.
 
 ### 3.1. Théorème de Mordell (Mordell's Theorem)
 
@@ -133,7 +133,7 @@ flowchart LR
 
 Ce qui est crucial pour énoncer la conjecture BSD est la question de savoir si $L(E, s)$ peut être prolongée analytiquement à l'ensemble du plan complexe. En particulier, comme nous le verrons plus loin, nous voulons connaître son comportement en $s=1$, mais le produit dans la formule de définition ne converge pas pour $s=1$.
 
-Ce problème a été résolu par le **théorème de modularité** (anciennement conjecture de Taniyama-Shimura), qui a été entièrement prouvé en 2001. Grâce au travail monumental d'[Andrew Wiles](https://kenji.blog/p/wiles/), Richard Taylor, Christophe Breuil, Brian Conrad et Fred Diamond, il a été montré que « toutes les courbes elliptiques sur le corps des nombres rationnels sont modulaires ».
+Ce problème a été résolu par le **théorème de modularité** (anciennement conjecture de Taniyama-Shimura), qui a été entièrement prouvé en 2001. Grâce au travail monumental d'[Andrew Wiles](https://kenji.blog/fr/p/wiles/), Richard Taylor, Christophe Breuil, Brian Conrad et Fred Diamond, il a été montré que « toutes les courbes elliptiques sur le corps des nombres rationnels sont modulaires ».
 
 Être modulaire signifie que $L(E, s)$ correspond parfaitement à la fonction L $L(f, s)$ d'une forme modulaire $f$ de poids 2. La fonction L d'une forme modulaire est prolongée analytiquement à l'ensemble du plan complexe par la théorie de Hecke, et satisfait l'équation fonctionnelle suivante :
 

@@ -50,7 +50,7 @@ Com apenas o primo $p$ tendo entrado na sala de $(X - Y)$, vamos calcular o ** "
 * Conteúdo de $N$ = $p \times q$
   A única peça comum é ** "$p$" ** !
 
-Ou seja, no instante em que o máximo divisor comum é calculado, o número primo oculto $p$ é revelado e a criptografia é completamente decodificada. (*O máximo divisor comum pode ser calculado instantaneamente em um smartphone usando o "Algoritmo de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/)").
+Ou seja, no instante em que o máximo divisor comum é calculado, o número primo oculto $p$ é revelado e a criptografia é completamente decodificada. (*O máximo divisor comum pode ser calculado instantaneamente em um smartphone usando o "Algoritmo de [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/)").
 
 ** 【Pequena Coluna: Por que o quadrado? Cubo ou o dobro não servem?】 **
 > Com "$2X - 2Y$", torna-se $2(X - Y)$ e há apenas uma sala, então você não pode separar os primos. Com "$X^3 - Y^3$", os tamanhos das salas ficam desequilibrados e o cálculo torna-se desnecessariamente pesado. Para separar os primos em dois, o "quadrado" que se divide perfeitamente em duas salas tem o melhor custo-benefício.

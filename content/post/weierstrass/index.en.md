@@ -10,19 +10,19 @@ tags: ["Math", "Weierstrass", "Analysis", "History"]
 
 ## Introduction
 
-In the history of mathematics, the person most renowned for establishing calculus on a rigorous foundation is **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** (1815–1897). He is hailed as the "father of modern analysis" and established the foundations of differential and integral calculus (especially the $\epsilon-\delta$ definition) that we study in universities today. His achievements go beyond merely discovering theorems; he fundamentally transformed the "narrative" and "way of thinking" in the discipline of mathematics itself. In this article, we will delve deeply into the episodes of his turbulent life and his astonishing achievements in mathematics.
+In the history of mathematics, the person most renowned for establishing calculus on a rigorous foundation is **[Karl Weierstrass](https://kenji.blog/en/p/weierstrass/)** (1815–1897). He is hailed as the "father of modern analysis" and established the foundations of differential and integral calculus (especially the $\epsilon-\delta$ definition) that we study in universities today. His achievements go beyond merely discovering theorems; he fundamentally transformed the "narrative" and "way of thinking" in the discipline of mathematics itself. In this article, we will delve deeply into the episodes of his turbulent life and his astonishing achievements in mathematics.
 
 ## Historical Context: The 19th Century Mathematical World and the Crisis in Analysis
 
-Calculus, founded in the 17th century by [Isaac Newton](https://kenji.blog/p/newton/) and Gottfried Wilhelm Leibniz, achieved phenomenal development throughout the 18th century in the hands of [Leonhard Euler](https://kenji.blog/p/euler/) and others. While its applications in physics and astronomy yielded remarkable results, the underlying concepts of "infinitesimals" and "limits" remained highly ambiguous. The intuitive explanation of "a number that approaches infinitely close to zero but is not zero" became the target of philosophical criticism and lacked logical rigor.
+Calculus, founded in the 17th century by [Isaac Newton](https://kenji.blog/en/p/newton/) and Gottfried Wilhelm Leibniz, achieved phenomenal development throughout the 18th century in the hands of [Leonhard Euler](https://kenji.blog/en/p/euler/) and others. While its applications in physics and astronomy yielded remarkable results, the underlying concepts of "infinitesimals" and "limits" remained highly ambiguous. The intuitive explanation of "a number that approaches infinitely close to zero but is not zero" became the target of philosophical criticism and lacked logical rigor.
 
-Entering the 19th century, [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/), Bernhard Bolzano, and others set out to rigorize analysis, but their definitions still could not completely eliminate intuition. It was Weierstrass who took on the historical mission of breaking through this situation, which could be called the "crisis in analysis," and rebuilding analysis using purely arithmetical methods without relying on geometric intuition.
+Entering the 19th century, [Augustin-Louis Cauchy](https://kenji.blog/en/p/cauchy/), Bernhard Bolzano, and others set out to rigorize analysis, but their definitions still could not completely eliminate intuition. It was Weierstrass who took on the historical mission of breaking through this situation, which could be called the "crisis in analysis," and rebuilding analysis using purely arithmetical methods without relying on geometric intuition.
 
 ## Early Life and Frustrating Student Days
 
-[Karl Weierstrass](https://kenji.blog/p/weierstrass/) was born on October 31, 1815, in Ostenfelde, Kingdom of Prussia (present-day Germany). His father was a government official and a very strict man. His father strongly desired his son to become an excellent Prussian administrator just like himself, and Weierstrass's early life was bound by these strong expectations.
+[Karl Weierstrass](https://kenji.blog/en/p/weierstrass/) was born on October 31, 1815, in Ostenfelde, Kingdom of Prussia (present-day Germany). His father was a government official and a very strict man. His father strongly desired his son to become an excellent Prussian administrator just like himself, and Weierstrass's early life was bound by these strong expectations.
 
-In 1834, following his father's wishes, he entered the University of Bonn to study law and finance. However, his heart was not in law or economics, but strongly drawn to mathematics. As a result, instead of attending law lectures, he spent his time fencing and drinking beer, leading a freewheeling student life. At the same time, he personally devoured mathematical books (especially the works of Pierre-Simon Laplace, [Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/), and [Niels Henrik Abel](https://kenji.blog/p/abel/)) and taught himself advanced mathematics. Ultimately, he dropped out of the university four years later without obtaining a degree.
+In 1834, following his father's wishes, he entered the University of Bonn to study law and finance. However, his heart was not in law or economics, but strongly drawn to mathematics. As a result, instead of attending law lectures, he spent his time fencing and drinking beer, leading a freewheeling student life. At the same time, he personally devoured mathematical books (especially the works of Pierre-Simon Laplace, [Carl Gustav Jacob Jacobi](https://kenji.blog/en/p/jacobi/), and [Niels Henrik Abel](https://kenji.blog/en/p/abel/)) and taught himself advanced mathematics. Ultimately, he dropped out of the university four years later without obtaining a degree.
 
 This setback was a major turning point for him and deeply disappointed his father. However, the spirit of independence and self-study cultivated during this period undoubtedly had a great influence on his later research style.
 
@@ -108,7 +108,7 @@ graph TD
 
 At the University of Berlin, Weierstrass was not only a researcher but also an exceptionally outstanding educator. His lectures were very clear, without any leaps in logic, steadily approaching the truth step by step. His lecture notes circulated among students and were treated like textbooks in universities across Europe.
 
-Hearing of his fame, excellent students from all over Europe gathered around him. His disciples and mathematicians influenced by him include [Georg Cantor](https://kenji.blog/p/cantor/) (founder of set theory), Felix Klein, Ferdinand Georg Frobenius, Hermann Schwarz, and many other giants who later left their names in the history of mathematics.
+Hearing of his fame, excellent students from all over Europe gathered around him. His disciples and mathematicians influenced by him include [Georg Cantor](https://kenji.blog/en/p/cantor/) (founder of set theory), Felix Klein, Ferdinand Georg Frobenius, Hermann Schwarz, and many other giants who later left their names in the history of mathematics.
 
 ### Mentorship and Affection with Sofia Kovalevskaya
 
@@ -124,10 +124,10 @@ In his later years, Weierstrass experienced a fierce dispute over the foundation
 
 His health also gradually deteriorated, and in his later years, he suffered from dizziness and bronchitis, forcing him to live in a wheelchair. Nevertheless, he never lost his passion for mathematics until the end, working on compiling his own collected works with the help of his disciples.
 
-On February 19, 1897, [Karl Weierstrass](https://kenji.blog/p/weierstrass/) passed away from pneumonia in Berlin at the age of 81.
+On February 19, 1897, [Karl Weierstrass](https://kenji.blog/en/p/weierstrass/) passed away from pneumonia in Berlin at the age of 81.
 
 ## Conclusion
 
-Through his rigorous logic and indomitable spirit, [Karl Weierstrass](https://kenji.blog/p/weierstrass/) evolved mathematics into something more solid and beautiful. Overcoming youthful setbacks and a long, lonely period of obscurity as a rural teacher to eventually rise to the top of the world, his life gives immense courage to us living in the modern era.
+Through his rigorous logic and indomitable spirit, [Karl Weierstrass](https://kenji.blog/en/p/weierstrass/) evolved mathematics into something more solid and beautiful. Overcoming youthful setbacks and a long, lonely period of obscurity as a rural teacher to eventually rise to the top of the world, his life gives immense courage to us living in the modern era.
 
 Without the solid foundation of "rigor" that he built, the development of modern advanced mathematics, physics, and engineering would have been impossible. The achievements he left behind continue to shine brilliantly without fading in modern mathematics, and that is precisely why he is praised as the "father of modern analysis." The name of Weierstrass will be passed down forever as a great symbol proving that mathematics is an art of logic.

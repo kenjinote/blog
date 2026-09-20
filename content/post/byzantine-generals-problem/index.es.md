@@ -8,9 +8,9 @@ tags: ["Problema de los generales bizantinos", "Cadena de bloques", "Consenso", 
 slug: "byzantine-generals-problem"
 ---
 
-Al estudiar sistemas distribuidos o tecnología blockchain, invariablemente nos encontramos con el **[Problema de los generales bizantinos](https://kenji.blog/p/byzantine-generals-problem/)** (Byzantine Generals Problem). Este aborda un tema crucial: ¿cómo logra el sistema en su conjunto alcanzar un consenso correcto en una situación donde existen "traidores" o "nodos defectuosos" en la red?
+Al estudiar sistemas distribuidos o tecnología blockchain, invariablemente nos encontramos con el **[Problema de los generales bizantinos](https://kenji.blog/es/p/byzantine-generals-problem/)** (Byzantine Generals Problem). Este aborda un tema crucial: ¿cómo logra el sistema en su conjunto alcanzar un consenso correcto en una situación donde existen "traidores" o "nodos defectuosos" en la red?
 
-En este artículo, explicaremos detalladamente este **[Problema de los generales bizantinos](https://kenji.blog/p/byzantine-generals-problem/)**, desde sus fundamentos hasta sus aplicaciones, utilizando una historia concreta, fórmulas matemáticas y diagramas.
+En este artículo, explicaremos detalladamente este **[Problema de los generales bizantinos](https://kenji.blog/es/p/byzantine-generals-problem/)**, desde sus fundamentos hasta sus aplicaciones, utilizando una historia concreta, fórmulas matemáticas y diagramas.
 
 ## 1. ¿Qué es el problema de los generales bizantinos?
 
@@ -43,7 +43,7 @@ end
 
 En esta situación, el Teniente 1 (副官1) recibirá información contradictoria: "El comandante dice atacar, pero el Teniente 2 dice retirarse", lo que le impedirá tomar una decisión correcta.
 
-De esta manera, el **[Problema de los generales bizantinos](https://kenji.blog/p/byzantine-generals-problem/)** plantea la pregunta: "¿Cómo pueden los nodos normales llegar a una conclusión idéntica en una red donde los nodos maliciosos pueden enviar información falsa arbitrariamente?".
+De esta manera, el **[Problema de los generales bizantinos](https://kenji.blog/es/p/byzantine-generals-problem/)** plantea la pregunta: "¿Cómo pueden los nodos normales llegar a una conclusión idéntica en una red donde los nodos maliciosos pueden enviar información falsa arbitrariamente?".
 
 ## 2. Condiciones estrictas para el consenso
 
@@ -179,6 +179,6 @@ $$
 
 ## 6. Conclusión
 
-Este **[Problema de los generales bizantinos](https://kenji.blog/p/byzantine-generals-problem/)** es la teoría fundamental para garantizar la fiabilidad de los sistemas distribuidos. La cuestión de "cómo tomar la decisión correcta como un todo en un entorno donde no sabes en quién confiar" se aplica a toda la infraestructura de TI moderna, desde las tecnologías subyacentes de criptoactivos hasta los sistemas de control de aeronaves y el cloud computing.
+Este **[Problema de los generales bizantinos](https://kenji.blog/es/p/byzantine-generals-problem/)** es la teoría fundamental para garantizar la fiabilidad de los sistemas distribuidos. La cuestión de "cómo tomar la decisión correcta como un todo en un entorno donde no sabes en quién confiar" se aplica a toda la infraestructura de TI moderna, desde las tecnologías subyacentes de criptoactivos hasta los sistemas de control de aeronaves y el cloud computing.
 
 La evolución de los algoritmos diseñados para que el sistema no se detenga, asumiendo la existencia de traidores, no se detendrá en el futuro. Para los ingenieros implicados en el diseño de sistemas distribuidos, la comprensión de las demostraciones matemáticas y los algoritmos que subyacen a este problema será, sin duda, un arma muy poderosa.

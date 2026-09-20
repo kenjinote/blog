@@ -16,11 +16,11 @@ tags:
 
 现实世界中观察到的数据几乎总是包含“噪声”或“方差”。为了从这些数据中找出潜在的规律并预测未来或估计未知数据，我们需要建立一个能 **最好地** 拟合数据的数学模型。
 
-最基础的方法，至今仍作为现代机器学习基础发挥着极其重要作用的，就是 **[最小二乘法](https://kenji.blog/p/method-of-least-squares/)** ([Method of Least Squares](https://kenji.blog/p/method-of-least-squares/))。
+最基础的方法，至今仍作为现代机器学习基础发挥着极其重要作用的，就是 **[最小二乘法](https://kenji.blog/zh-cn/p/method-of-least-squares/)** ([Method of Least Squares](https://kenji.blog/zh-cn/p/method-of-least-squares/))。
 
 在这篇文章中，我们不再仅仅是死记硬背公式，而是从线性代数（正交投影）这一优美的几何视角，深入探讨 **“为什么这种计算能找到最佳拟合直线”**。
 
-## 2. [最小二乘法](https://kenji.blog/p/method-of-least-squares/)的直观概念
+## 2. [最小二乘法](https://kenji.blog/zh-cn/p/method-of-least-squares/)的直观概念
 
 假设我们有 $n$ 个数据点 $(x_1, y_1), (x_2, y_2), \dots, (x_n, y_n)$。将这些点绘制在散点图上时，它们可能并没有完美地排成一条直线，但总体上似乎遵循着某条直线的趋势。
 
@@ -30,7 +30,7 @@ tags:
 
 $$ e_i = y_i - \hat{y}_i = y_i - (c + d x_i) $$
 
-[最小二乘法](https://kenji.blog/p/method-of-least-squares/)是一种寻找能够使误差的 **平方和** 最小化的参数 $c$ 和 $d$ 的技术。误差的平方和 $E$ 定义如下：
+[最小二乘法](https://kenji.blog/zh-cn/p/method-of-least-squares/)是一种寻找能够使误差的 **平方和** 最小化的参数 $c$ 和 $d$ 的技术。误差的平方和 $E$ 定义如下：
 
 $$ E = \sum_{i=1}^{n} e_i^2 = \sum_{i=1}^{n} (y_i - c - d x_i)^2 \quad (\text{误差函数的定义}) $$
 
@@ -46,7 +46,7 @@ flowchart TD
 
 ## 3. 使用线性代数进行公式化与“无解的方程”
 
-当我们使用矩阵和向量的语言，即 **线性代数** 来重写这一点时，[最小二乘法](https://kenji.blog/p/method-of-least-squares/)的真正优美之处便显现出来了。
+当我们使用矩阵和向量的语言，即 **线性代数** 来重写这一点时，[最小二乘法](https://kenji.blog/zh-cn/p/method-of-least-squares/)的真正优美之处便显现出来了。
 
 假设所有数据点都完美地位于直线 $y = c + dx$ 上，我们得到以下 $n$ 个方程：
 
@@ -98,7 +98,7 @@ $$ A\mathbf{x} \in C(A) $$
 
 无解意味着向量 $\mathbf{b}$ 位于这个列空间 $C(A)$ 的 **外部**。
 
-我们正在寻找的不是一个完美的解，而是在 $C(A)$ 内一个尽可能接近 $\mathbf{b}$ 的向量。我们称之为 $A\hat{\mathbf{x}}$。此时，向量 $\mathbf{b}$ 与 $A\hat{\mathbf{x}}$ 之间的距离（的平方）最小。这正是[最小二乘法](https://kenji.blog/p/method-of-least-squares/)。
+我们正在寻找的不是一个完美的解，而是在 $C(A)$ 内一个尽可能接近 $\mathbf{b}$ 的向量。我们称之为 $A\hat{\mathbf{x}}$。此时，向量 $\mathbf{b}$ 与 $A\hat{\mathbf{x}}$ 之间的距离（的平方）最小。这正是[最小二乘法](https://kenji.blog/zh-cn/p/method-of-least-squares/)。
 
 在几何上，给出空间中某点 $\mathbf{b}$ 到某个平面 $C(A)$ 的最短距离的点，正是从 $\mathbf{b}$ 到 $C(A)$ 所作的 **垂足**。这被称为 **正交投影** (Orthogonal Projection)。
 
@@ -168,8 +168,8 @@ print(f"最优斜率: {d_hat:.4f}")
 
 ## 7. 总结与未来发展
 
-[最小二乘法](https://kenji.blog/p/method-of-least-squares/)是从数据中估计模型参数的最强大、最标准的技术。使用微积分的知识，它可以被推导为“误差函数的梯度变为0的点”，但通过从线性代数的角度将其理解为“在列空间上的正交投影”，其数学结构的优美性便凸显出来。
+[最小二乘法](https://kenji.blog/zh-cn/p/method-of-least-squares/)是从数据中估计模型参数的最强大、最标准的技术。使用微积分的知识，它可以被推导为“误差函数的梯度变为0的点”，但通过从线性代数的角度将其理解为“在列空间上的正交投影”，其数学结构的优美性便凸显出来。
 
-这种方法并不局限于简单的直线拟合（简单回归）。通过在设计矩阵 $A$ 的列中添加如 $x^2, x^3$ 等项，它可以自然地扩展到 **多项式回归**，也可以发展为对每个数据点的重要性进行加权的 **加权[最小二乘法](https://kenji.blog/p/method-of-least-squares/)**。
+这种方法并不局限于简单的直线拟合（简单回归）。通过在设计矩阵 $A$ 的列中添加如 $x^2, x^3$ 等项，它可以自然地扩展到 **多项式回归**，也可以发展为对每个数据点的重要性进行加权的 **加权[最小二乘法](https://kenji.blog/zh-cn/p/method-of-least-squares/)**。
 
-作为接近数据背后真相的第一步，对[最小二乘法](https://kenji.blog/p/method-of-least-squares/)本质的理解具有不可估量的价值。
+作为接近数据背后真相的第一步，对[最小二乘法](https://kenji.blog/zh-cn/p/method-of-least-squares/)本质的理解具有不可估量的价值。

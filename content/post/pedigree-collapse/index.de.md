@@ -14,7 +14,7 @@ slug: "pedigree-collapse"
 
 # 1. Einleitung: Das Rätsel der sich unendlich vermehrenden Vorfahren
 
-Wenn wir über unsere eigenen Wurzeln, also unseren „Stammbaum“, nachdenken, stoßen wir unweigerlich auf einen seltsamen mathematischen Widerspruch. Dies ist das **Vorfahren-Paradoxon** ([Ancestor Paradox](https://kenji.blog/p/pedigree-collapse/)).
+Wenn wir über unsere eigenen Wurzeln, also unseren „Stammbaum“, nachdenken, stoßen wir unweigerlich auf einen seltsamen mathematischen Widerspruch. Dies ist das **Vorfahren-Paradoxon** ([Ancestor Paradox](https://kenji.blog/de/p/pedigree-collapse/)).
 
 Der menschliche Stammbaum lässt sich im Grunde als einfacher Binärbaum modellieren. Sie haben 2 Eltern (Vater und Mutter), und jeder von ihnen hat 2 Eltern (Großeltern). Deren Eltern haben wiederum jeweils 2 Eltern (Urgroßeltern). Das heißt, wenn die Generation $g$ ist (wobei Sie selbst die 0. Generation sind), sollte die Anzahl der Vorfahren vor $g$ Generationen $2^g$ Personen betragen.
 

@@ -16,11 +16,11 @@ tags:
 
 In der realen Welt beobachtete Daten enthalten fast immer "Rauschen" oder "Varianz". Um aus solchen Daten die zugrunde liegenden Regeln zu finden und die Zukunft vorherzusagen oder unbekannte Daten zu schätzen, müssen wir ein mathematisches Modell erstellen, das **am besten** zu den Daten passt.
 
-Die grundlegendste Methode, die auch heute noch als Basis des modernen maschinellen Lernens eine extrem wichtige Rolle spielt, ist die **[Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/)** ([Method of Least Squares](https://kenji.blog/p/method-of-least-squares/)).
+Die grundlegendste Methode, die auch heute noch als Basis des modernen maschinellen Lernens eine extrem wichtige Rolle spielt, ist die **[Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/)** ([Method of Least Squares](https://kenji.blog/de/p/method-of-least-squares/)).
 
 In diesem Artikel werden wir, anstatt nur Formeln auswendig zu lernen, tiefgründig untersuchen, **"warum diese Berechnung die am besten passende Gerade findet"**, und zwar aus der wunderbaren geometrischen Perspektive der linearen Algebra (orthogonale Projektion).
 
-## 2. Intuitive Idee der [Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/)
+## 2. Intuitive Idee der [Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/)
 
 Angenommen, wir haben $n$ Datenpunkte $(x_1, y_1), (x_2, y_2), \dots, (x_n, y_n)$. Wenn man diese Punkte in einem Streudiagramm aufträgt, liegen sie vielleicht nicht perfekt auf einer geraden Linie, folgen aber insgesamt dem Trend einer bestimmten Geraden.
 
@@ -30,7 +30,7 @@ Für jeden Datenpunkt $x_i$ ist der von dieser Geraden vorhergesagte Wert $\hat{
 
 $$ e_i = y_i - \hat{y}_i = y_i - (c + d x_i) $$
 
-Die [Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/) ist eine Technik, um die Parameter $c$ und $d$ zu finden, die die **Summe der quadratischen** Fehler minimieren. Die Summe der quadratischen Fehler $E$ ist wie folgt definiert:
+Die [Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/) ist eine Technik, um die Parameter $c$ und $d$ zu finden, die die **Summe der quadratischen** Fehler minimieren. Die Summe der quadratischen Fehler $E$ ist wie folgt definiert:
 
 $$ E = \sum_{i=1}^{n} e_i^2 = \sum_{i=1}^{n} (y_i - c - d x_i)^2 \quad (\text{Definition der Fehlerfunktion}) $$
 
@@ -46,7 +46,7 @@ flowchart TD
 
 ## 3. Formulierung mittels linearer Algebra und "unlösbaren Gleichungen"
 
-Die wahre Schönheit der [Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/) zeigt sich, wenn wir dies in der Sprache von Matrizen und Vektoren, also der **linearen Algebra**, umschreiben.
+Die wahre Schönheit der [Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/) zeigt sich, wenn wir dies in der Sprache von Matrizen und Vektoren, also der **linearen Algebra**, umschreiben.
 
 Unter der Annahme, dass alle Datenpunkte perfekt auf der Geraden $y = c + dx$ liegen, erhalten wir die folgenden $n$ Gleichungen:
 
@@ -98,7 +98,7 @@ $$ A\mathbf{x} \in C(A) $$
 
 Das Fehlen einer Lösung bedeutet, dass der Vektor $\mathbf{b}$ **außerhalb** dieses Spaltenraums $C(A)$ liegt.
 
-Was wir suchen, ist keine perfekte Lösung, sondern ein Vektor innerhalb von $C(A)$, der so nah wie möglich an $\mathbf{b}$ liegt. Nennen wir dies $A\hat{\mathbf{x}}$. Zu diesem Zeitpunkt ist der Abstand (zum Quadrat) zwischen dem Vektor $\mathbf{b}$ und $A\hat{\mathbf{x}}$ minimiert. Dies ist genau die [Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/).
+Was wir suchen, ist keine perfekte Lösung, sondern ein Vektor innerhalb von $C(A)$, der so nah wie möglich an $\mathbf{b}$ liegt. Nennen wir dies $A\hat{\mathbf{x}}$. Zu diesem Zeitpunkt ist der Abstand (zum Quadrat) zwischen dem Vektor $\mathbf{b}$ und $A\hat{\mathbf{x}}$ minimiert. Dies ist genau die [Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/).
 
 Geometrisch gesehen ist der Punkt, der den kürzesten Abstand von einem bestimmten Punkt $\mathbf{b}$ im Raum zu einer bestimmten Ebene $C(A)$ angibt, nichts anderes als der **Fußpunkt des Lotes**, das von $\mathbf{b}$ auf $C(A)$ gefällt wird. Dies wird als **orthogonale Projektion** bezeichnet.
 
@@ -168,8 +168,8 @@ Die Ausführung dieses Codes berechnet den y-Achsenabschnitt und die Steigung de
 
 ## 7. Fazit und zukünftige Entwicklung
 
-Die [Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/) ist die stärkste und gebräuchlichste Technik zur Schätzung von Modellparametern aus Daten. Mit Kenntnissen der Infinitesimalrechnung kann sie als "der Punkt, an dem der Gradient der Fehlerfunktion 0 wird" abgeleitet werden, aber indem man sie aus der Perspektive der linearen Algebra als "orthogonale Projektion auf den Spaltenraum" versteht, tritt die Schönheit ihrer mathematischen Struktur hervor.
+Die [Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/) ist die stärkste und gebräuchlichste Technik zur Schätzung von Modellparametern aus Daten. Mit Kenntnissen der Infinitesimalrechnung kann sie als "der Punkt, an dem der Gradient der Fehlerfunktion 0 wird" abgeleitet werden, aber indem man sie aus der Perspektive der linearen Algebra als "orthogonale Projektion auf den Spaltenraum" versteht, tritt die Schönheit ihrer mathematischen Struktur hervor.
 
-Diese Methode ist nicht auf einfache Geradenanpassung (einfache Regression) beschränkt. Durch Hinzufügen von Termen wie $x^2, x^3$ zu den Spalten der Designmatrix $A$ kann sie natürlich auf die **polynomielle Regression** erweitert werden, und sie kann auch zur **gewichteten [Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/)** entwickelt werden, die die Bedeutung jedes Datenpunkts gewichtet.
+Diese Methode ist nicht auf einfache Geradenanpassung (einfache Regression) beschränkt. Durch Hinzufügen von Termen wie $x^2, x^3$ zu den Spalten der Designmatrix $A$ kann sie natürlich auf die **polynomielle Regression** erweitert werden, und sie kann auch zur **gewichteten [Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/)** entwickelt werden, die die Bedeutung jedes Datenpunkts gewichtet.
 
-Als erster Schritt, um der Wahrheit hinter den Daten näher zu kommen, ist ein wesentliches Verständnis der [Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/) von unschätzbarem Wert.
+Als erster Schritt, um der Wahrheit hinter den Daten näher zu kommen, ist ein wesentliches Verständnis der [Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/) von unschätzbarem Wert.

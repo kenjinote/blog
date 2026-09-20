@@ -32,7 +32,7 @@ However, the mathematically correct answer is **"about 0.98% (less than 1%)."**
 
 Why on earth does the actual probability become less than 1% even with 99% accuracy?
 
-## [Bayes' Theorem](https://kenji.blog/p/bayes-theorem/) and Visualizing the Whole
+## [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/) and Visualizing the Whole
 
 The key to solving this problem lies in considering not only the accuracy of the test but also **"how rare the disease originally is (base rate / prior probability)."**
 Let's visualize this counter-intuitive phenomenon using a large population of 1 million people.
@@ -87,7 +87,7 @@ Despite being told "positive," the probability that you are healthy (False Posit
 
 ## Why Does Intuition Make Mistakes?
 
-This phenomenon is mathematically explained by **"[Bayes' Theorem](https://kenji.blog/p/bayes-theorem/),"** which calculates conditional probability, but the human brain is very poor at this calculation.
+This phenomenon is mathematically explained by **"[Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/),"** which calculates conditional probability, but the human brain is very poor at this calculation.
 
 The reason we make mistakes is that we are distracted by the specific, intense information provided right in front of us ("Your test result is positive! The accuracy is 99%!"), and we ignore the vast, boring statistical background data ("In the first place, only 1 in 10,000 people has this disease (base rate)").
 

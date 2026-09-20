@@ -39,9 +39,9 @@ description: '문제 자체는 심플한데 아직 증명되지 않은, 매혹�
 현재 51개밖에 발견되지 않았지만, 무수히 많을 것으로 예상되고 있습니다만,
 아직 증명되지 않았습니다.
 
-## [골드바흐의 추측](https://kenji.blog/p/goldbachs-conjecture/)
+## [골드바흐의 추측](https://kenji.blog/ko/p/goldbachs-conjecture/)
 
-[골드바흐의 추측](https://kenji.blog/p/goldbachs-conjecture/)은, 2보다 큰 모든 짝수는 두 소수의 합으로 나타낼 수 있다는 추측입니다.
+[골드바흐의 추측](https://kenji.blog/ko/p/goldbachs-conjecture/)은, 2보다 큰 모든 짝수는 두 소수의 합으로 나타낼 수 있다는 추측입니다.
 (여기서 소수란, 1과 자기 자신 이외의 약수를 가지지 않는 자연수입니다.)
 
 예를 들어,

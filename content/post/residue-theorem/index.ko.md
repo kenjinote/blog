@@ -18,7 +18,7 @@ $$
 
 이 적분 자체는 $\arctan(x)$ 를 사용하여 풀 수 있지만, 분모가 더 고차 다항식이 되거나 사인, 코사인과 같은 삼각함수가 복잡하게 얽혀 있다면 실수 함수 범위 내에서 원시 함수(부정적분)를 찾는 것은 사실상 불가능해집니다.
 
-여기서 등장하는 것이 수학에서 가장 아름다운 이론 중 하나로 꼽히는 **복소해석학** 의 강력한 정리, 즉 **코시의 [유수 정리](https://kenji.blog/p/residue-theorem/)** (Cauchy's [Residue Theorem](https://kenji.blog/p/residue-theorem/))입니다. 실수 축(1차원)에서 수행하던 적분을 과감하게 **복소평면** (2차원)으로 확장함으로써 계산 불가능한 실수 적분을 멋지게 풀 수 있습니다.
+여기서 등장하는 것이 수학에서 가장 아름다운 이론 중 하나로 꼽히는 **복소해석학** 의 강력한 정리, 즉 **코시의 [유수 정리](https://kenji.blog/ko/p/residue-theorem/)** (Cauchy's [Residue Theorem](https://kenji.blog/ko/p/residue-theorem/))입니다. 실수 축(1차원)에서 수행하던 적분을 과감하게 **복소평면** (2차원)으로 확장함으로써 계산 불가능한 실수 적분을 멋지게 풀 수 있습니다.
 
 ## 복소 적분과 특이점
 
@@ -56,9 +56,9 @@ $$
 
 왜 $(z - z_0)^{-1}$ 의 계수만이 특별할까요? 그것은 특이점을 둘러싼 미소한 원 $C$ 를 따라 $\frac{1}{(z - z_0)^n}$ 을 적분하면, $n = 1$ 일 때만 $2\pi i$ 라는 값이 남고, 그 외의 모든 $n$ 에 대해서는 적분 결과가 $0$ 이 되기 때문입니다.
 
-## 코시의 [유수 정리](https://kenji.blog/p/residue-theorem/)
+## 코시의 [유수 정리](https://kenji.blog/ko/p/residue-theorem/)
 
-지금까지의 개념들을 통합한 것이 바로 **[유수 정리](https://kenji.blog/p/residue-theorem/)** 입니다. 폐곡선 $C$ 내부에 여러 개의 고립 특이점 $z_1, z_2, \dots, z_k$ 가 존재하는 경우, $C$ 를 따른 복소 적분은 다음과 같이 계산할 수 있습니다.
+지금까지의 개념들을 통합한 것이 바로 **[유수 정리](https://kenji.blog/ko/p/residue-theorem/)** 입니다. 폐곡선 $C$ 내부에 여러 개의 고립 특이점 $z_1, z_2, \dots, z_k$ 가 존재하는 경우, $C$ 를 따른 복소 적분은 다음과 같이 계산할 수 있습니다.
 
 $$
 \oint_C f(z) dz = 2\pi i \sum_{j=1}^{k} \text{Res}(f, z_j)
@@ -68,7 +68,7 @@ $$
 
 ## 응용 예: 실수 함수의 적분 계산
 
-그러면 실제로 [유수 정리](https://kenji.blog/p/residue-theorem/)를 사용하여 서두의 적분을 풀어봅시다.
+그러면 실제로 [유수 정리](https://kenji.blog/ko/p/residue-theorem/)를 사용하여 서두의 적분을 풀어봅시다.
 
 $$
 I = \int_{-\infty}^{\infty} \frac{1}{x^2 + 1} dx
@@ -106,8 +106,8 @@ $$
 \text{Res}(f, i) = \lim_{z \to i} (z - i) f(z) = \lim_{z \to i} \frac{1}{z + i} = \frac{1}{2i}
 $$
 
-### 단계 3: [유수 정리](https://kenji.blog/p/residue-theorem/)의 적용
-[유수 정리](https://kenji.blog/p/residue-theorem/)에 의해 폐곡선 $C$ 상의 적분은 다음과 같습니다.
+### 단계 3: [유수 정리](https://kenji.blog/ko/p/residue-theorem/)의 적용
+[유수 정리](https://kenji.blog/ko/p/residue-theorem/)에 의해 폐곡선 $C$ 상의 적분은 다음과 같습니다.
 
 $$
 \oint_C f(z) dz = 2\pi i \times \text{Res}(f, i) = 2\pi i \times \frac{1}{2i} = \pi
@@ -139,7 +139,7 @@ $$
 \text{Res}(f, ia) = \lim_{z \to ia} (z - ia) \frac{e^{ikz}}{(z - ia)(z + ia)} = \frac{e^{-ka}}{2ia}
 $$
 
-[유수 정리](https://kenji.blog/p/residue-theorem/)를 적용합니다.
+[유수 정리](https://kenji.blog/ko/p/residue-theorem/)를 적용합니다.
 
 $$
 \int_{-\infty}^{\infty} \frac{e^{ikx}}{x^2 + a^2} dx = 2\pi i \times \frac{e^{-ka}}{2ia} = \frac{\pi e^{-ka}}{a}
@@ -153,7 +153,7 @@ $$
 
 ## 분기 절단 (Branch Cut)과 키홀 적분
 
-[유수 정리](https://kenji.blog/p/residue-theorem/)의 더욱 고급 응용은 다가 함수(하나의 입력에 대해 여러 개의 출력을 가지는 함수)의 적분입니다. 대표적인 예가 로그 함수 $\log(z)$ 나 분수 거듭제곱 $z^a$ 를 포함하는 적분입니다. 이들을 일가 함수로 다루기 위해서는 복소평면 상에 **분기 절단** (Branch Cut)이라는 '절개선'을 설정해야 합니다.
+[유수 정리](https://kenji.blog/ko/p/residue-theorem/)의 더욱 고급 응용은 다가 함수(하나의 입력에 대해 여러 개의 출력을 가지는 함수)의 적분입니다. 대표적인 예가 로그 함수 $\log(z)$ 나 분수 거듭제곱 $z^a$ 를 포함하는 적분입니다. 이들을 일가 함수로 다루기 위해서는 복소평면 상에 **분기 절단** (Branch Cut)이라는 '절개선'을 설정해야 합니다.
 
 예로서 다음 적분을 생각해 봅시다 (단, $0 < a < 1$).
 
@@ -179,6 +179,6 @@ $$
 
 ## 결론
 
-[유수 정리](https://kenji.blog/p/residue-theorem/)는 언뜻 보기에 무관해 보이는 '복소수의 극'과 '실수 함수의 적분'을 훌륭하게 결합하는 수학적 우아함의 극치입니다. 실수 함수 문제를 풀기 위해 일단 복소평면이라는 넓은 세계로 뛰어들어 특이점이라는 '장애물'의 성질(유수)만을 조사하고 원래의 세계로 돌아오면 문제가 멋지게 해결되어 있는 것입니다.
+[유수 정리](https://kenji.blog/ko/p/residue-theorem/)는 언뜻 보기에 무관해 보이는 '복소수의 극'과 '실수 함수의 적분'을 훌륭하게 결합하는 수학적 우아함의 극치입니다. 실수 함수 문제를 풀기 위해 일단 복소평면이라는 넓은 세계로 뛰어들어 특이점이라는 '장애물'의 성질(유수)만을 조사하고 원래의 세계로 돌아오면 문제가 멋지게 해결되어 있는 것입니다.
 
-이러한 사고방식은 단순한 계산 테크닉에 그치지 않고, [라플라스 변환](https://kenji.blog/p/laplace-transform/)의 역변환, 양자장론에서 파인만 다이어그램의 평가, 나아가 신호 처리에서의 필터링 이론 등 현대 과학 기술의 모든 분야에서 응용되고 있습니다. 복소해석학의 세계는 실수의 세계를 조감하기 위한 궁극적인 시야를 제공해 줍니다.
+이러한 사고방식은 단순한 계산 테크닉에 그치지 않고, [라플라스 변환](https://kenji.blog/ko/p/laplace-transform/)의 역변환, 양자장론에서 파인만 다이어그램의 평가, 나아가 신호 처리에서의 필터링 이론 등 현대 과학 기술의 모든 분야에서 응용되고 있습니다. 복소해석학의 세계는 실수의 세계를 조감하기 위한 궁극적인 시야를 제공해 줍니다.

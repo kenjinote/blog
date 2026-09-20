@@ -12,13 +12,13 @@ tags: ["Kiyosi Ito", "Stochastic Differential Equations", "Financial Engineering
 
 Our world is filled with unpredictable events and uncertainty. From fluctuations in stock prices and the movement of particles in the air to the flow of rivers and the learning processes of neural networks, phenomena governed by randomness are innumerable. A powerful tool for mathematically and rigorously describing, predicting, and analyzing such "random movements" is **Stochastic Differential Equations (SDE)** .
 
-The Japanese mathematician who established the theory of these stochastic differential equations and erected the monumental pillar known as **Ito's Lemma** or **Ito's Formula** is the great **[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/)** . In this article, we delve deep into the episodes of his life and the core of his mathematical achievements, which continue to have an immense impact not only on the mathematical world but also on economics, physics, and engineering.
+The Japanese mathematician who established the theory of these stochastic differential equations and erected the monumental pillar known as **Ito's Lemma** or **Ito's Formula** is the great **[Kiyosi Ito](https://kenji.blog/en/p/ito-kiyosi/)** . In this article, we delve deep into the episodes of his life and the core of his mathematical achievements, which continue to have an immense impact not only on the mathematical world but also on economics, physics, and engineering.
 
-## 2. [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/)'s Life and Historical Background
+## 2. [Kiyosi Ito](https://kenji.blog/en/p/ito-kiyosi/)'s Life and Historical Background
 
 ### 2.1 Early Life and Awakening to Mathematics
 
-[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) was born on September 7, 1915, in Inabe District (now Inabe City), Mie Prefecture. Excelling in academics from a young age, he advanced through the Eighth Higher School (now Nagoya University) to the Department of Mathematics in the Faculty of Science at Tokyo Imperial University (now the University of Tokyo).
+[Kiyosi Ito](https://kenji.blog/en/p/ito-kiyosi/) was born on September 7, 1915, in Inabe District (now Inabe City), Mie Prefecture. Excelling in academics from a young age, he advanced through the Eighth Higher School (now Nagoya University) to the Department of Mathematics in the Faculty of Science at Tokyo Imperial University (now the University of Tokyo).
 
 At that time in the Japanese mathematical community, great mathematicians like Teiji Takagi (founder of Class Field Theory) were conducting world-class research. However, probability theory was still often treated as the "heretic of mathematics" or merely an "applied field," and its status as pure mathematics was not yet established. Nevertheless, Ito was profoundly struck by *Foundations of the Theory of Probability*, published by Andrey Kolmogorov in 1933. Using Lebesgue integration and measure theory, Kolmogorov axiomatized probability theory, placing it on a rigorous mathematical foundation.
 
@@ -38,7 +38,7 @@ However, the Wiener process had a fatal mathematical property: it is **"continuo
 
 ### 3.2 The Birth of the Ito Integral
 
-To solve this problem, [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) constructed a new concept of integration. This is the **Ito Integral** .
+To solve this problem, [Kiyosi Ito](https://kenji.blog/en/p/ito-kiyosi/) constructed a new concept of integration. This is the **Ito Integral** .
 
 $$
 \int_0^T f(t, \omega) dW_t(\omega)
@@ -71,11 +71,11 @@ $$
 
 The term on the right side of this equation is precisely the **Ito term** . It shows that the combination of uncertainty (variance $\sigma^2$) and the curvature of the function (second derivative) brings about an average upward (or downward) pushing effect on the entire system. This is a profound, counter-intuitive result, and truly deserves to be called the "Newton-Leibniz formula" in probability theory.
 
-## 4. [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/)'s Philosophy and Personality
+## 4. [Kiyosi Ito](https://kenji.blog/en/p/ito-kiyosi/)'s Philosophy and Personality
 
 ### 4.1 "Beauty" in Mathematics
 
-[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) deeply loved the "beauty" at the foundation of mathematics. He often likened mathematical research to the creation of poetry or music. "An excellent mathematical theorem reveals the simple and beautiful structure behind complex phenomena," he said. For him, stochastic differential equations were not just calculation tools, but works of art to express the harmony deep within the randomness of the natural world.
+[Kiyosi Ito](https://kenji.blog/en/p/ito-kiyosi/) deeply loved the "beauty" at the foundation of mathematics. He often likened mathematical research to the creation of poetry or music. "An excellent mathematical theorem reveals the simple and beautiful structure behind complex phenomena," he said. For him, stochastic differential equations were not just calculation tools, but works of art to express the harmony deep within the randomness of the natural world.
 
 ### 4.2 Wall Street Frenzy and His Own Bewilderment
 
@@ -101,10 +101,10 @@ graph TD
     E -->|"Stochastic Gradient Descent (SGD)"| E1["Machine Learning & Deep Learning (AI)"]
 ```
 
-Particularly in recent years, Ito's theory is back in the spotlight in the field of machine learning. The optimization of learning processes in deep learning (the process where noise is added in stochastic gradient descent) and the **Diffusion Models** used in image generation AI are direct applications of Ito's theory, literally solving stochastic differential equations in reverse time. [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/)'s research supports the very mathematical foundations of the modern AI revolution.
+Particularly in recent years, Ito's theory is back in the spotlight in the field of machine learning. The optimization of learning processes in deep learning (the process where noise is added in stochastic gradient descent) and the **Diffusion Models** used in image generation AI are direct applications of Ito's theory, literally solving stochastic differential equations in reverse time. [Kiyosi Ito](https://kenji.blog/en/p/ito-kiyosi/)'s research supports the very mathematical foundations of the modern AI revolution.
 
 ## 6. Conclusion: The First Gauss Prize and an Eternal Legacy
 
-In 2006, the International Congress of Mathematicians (ICM) established the **Gauss Prize** to honor the application and contribution of mathematics to society, and selected the 90-year-old [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) as its inaugural recipient. The reason for his selection was "laying the foundations of the theory of stochastic differential equations and its diverse applications." It is historically rare for a deep pursuit of pure mathematics to result in such broad and practical impacts on human society.
+In 2006, the International Congress of Mathematicians (ICM) established the **Gauss Prize** to honor the application and contribution of mathematics to society, and selected the 90-year-old [Kiyosi Ito](https://kenji.blog/en/p/ito-kiyosi/) as its inaugural recipient. The reason for his selection was "laying the foundations of the theory of stochastic differential equations and its diverse applications." It is historically rare for a deep pursuit of pure mathematics to result in such broad and practical impacts on human society.
 
-[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) passed away in 2008 at the age of 93, but his name is forever etched in textbooks around the world as "Ito's Lemma" and "Ito Integral." For us living in an uncertain world, the formulas left by [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) will remain the most beautiful and powerful lighthouse shining a light into the chaos.
+[Kiyosi Ito](https://kenji.blog/en/p/ito-kiyosi/) passed away in 2008 at the age of 93, but his name is forever etched in textbooks around the world as "Ito's Lemma" and "Ito Integral." For us living in an uncertain world, the formulas left by [Kiyosi Ito](https://kenji.blog/en/p/ito-kiyosi/) will remain the most beautiful and powerful lighthouse shining a light into the chaos.

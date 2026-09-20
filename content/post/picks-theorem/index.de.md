@@ -18,21 +18,21 @@ tags:
 
 Im Bereich der Geometrie in der Mathematik wird das Thema der Flächenberechnung einer Form seit der Zeit der alten Griechen von vielen Mathematikern studiert. Im Schulunterricht lernen wir verschiedene Ansätze, angefangen bei der Grundformel für die Fläche eines Dreiecks, "Grundseite $\times$ Höhe $\div 2$", über Flächenformeln mit trigonometrischen Verhältnissen in der Oberstufenmathematik, die Regel von Sarrus mit dem Kreuzprodukt von Vektoren in einer Koordinatenebene bis hin zur Formel von Heron, die die Fläche ausschließlich aus den Längen der drei Seiten ableitet.
 
-Wenn jedoch alle Eckpunkte eines Polygons auf **Gitterpunkten** liegen (Punkten, bei denen sowohl die $x$- als auch die $y$-Koordinate ganze Zahlen sind), gibt es eine magische Formel, mit der Sie die Fläche nur mit extrem einfachen arithmetischen Operationen berechnen können, ohne Längen zu messen oder komplexe Multiplikationen oder Quadratwurzelberechnungen durchzuführen. Das ist der **[Satz von Pick](https://kenji.blog/p/picks-theorem/)**, den wir diesmal im Detail erklären werden.
+Wenn jedoch alle Eckpunkte eines Polygons auf **Gitterpunkten** liegen (Punkten, bei denen sowohl die $x$- als auch die $y$-Koordinate ganze Zahlen sind), gibt es eine magische Formel, mit der Sie die Fläche nur mit extrem einfachen arithmetischen Operationen berechnen können, ohne Längen zu messen oder komplexe Multiplikationen oder Quadratwurzelberechnungen durchzuführen. Das ist der **[Satz von Pick](https://kenji.blog/de/p/picks-theorem/)**, den wir diesmal im Detail erklären werden.
 
-Der [Satz von Pick](https://kenji.blog/p/picks-theorem/) ist nicht nur eine "bequeme und mysteriöse Formel zum einfachen Finden der Fläche", sondern er hat einen sehr tiefen Hintergrund, der mit Topologie, Graphentheorie und algebraischer Geometrie in der modernen Mathematik verbunden ist. In diesem Artikel werden wir den [Satz von Pick](https://kenji.blog/p/picks-theorem/) aus verschiedenen Blickwinkeln eingehend betrachten, angefangen bei seiner grundlegenden Verwendung bis hin zum mathematischen Beweis, warum eine so einfache Formel gilt, seinem historischen Hintergrund und sogar den Grenzen des Satzes und der Möglichkeit seiner Erweiterung auf 3D.
+Der [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) ist nicht nur eine "bequeme und mysteriöse Formel zum einfachen Finden der Fläche", sondern er hat einen sehr tiefen Hintergrund, der mit Topologie, Graphentheorie und algebraischer Geometrie in der modernen Mathematik verbunden ist. In diesem Artikel werden wir den [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) aus verschiedenen Blickwinkeln eingehend betrachten, angefangen bei seiner grundlegenden Verwendung bis hin zum mathematischen Beweis, warum eine so einfache Formel gilt, seinem historischen Hintergrund und sogar den Grenzen des Satzes und der Möglichkeit seiner Erweiterung auf 3D.
 
 ## 2. Georg Alexander Pick und der historische Hintergrund
 
-Bevor wir den [Satz von Pick](https://kenji.blog/p/picks-theorem/) vollständig erklären, wollen wir kurz auf die Person eingehen, die diesen schönen Satz entdeckt hat, und auf seinen historischen Hintergrund.
+Bevor wir den [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) vollständig erklären, wollen wir kurz auf die Person eingehen, die diesen schönen Satz entdeckt hat, und auf seinen historischen Hintergrund.
 
 Dieser Satz wurde 1899 von dem in Österreich geborenen Mathematiker **Georg Alexander Pick (1859-1942)** veröffentlicht. Er studierte Mathematik an der Universität Wien und war später viele Jahre als Professor an der Deutschen Universität Prag (heute Karls-Universität Prag) tätig.
 
 Interessanterweise hatte Pick eine tiefe Verbindung zu dem berühmten Albert Einstein. Als Einstein 1911 eine Stelle an der Universität in Prag antrat, hieß Pick ihn herzlich willkommen, und sie bauten eine enge Freundschaft auf, führten nicht nur akademische Diskussionen, sondern spielten auch gemeinsam Violine. Es wird gesagt, dass Pick einer derjenigen war, die Einstein nachdrücklich empfahlen, "Tensoranalysis" und "Riemannsche Geometrie" zu studieren, die für die Konstruktion der allgemeinen Relativitätstheorie unerlässlich wurden.
 
-Picks spätere Jahre waren jedoch sehr tragisch. Da er jüdischer Abstammung war, war er mit dem Aufstieg des nationalsozialistischen Deutschlands Verfolgungen ausgesetzt. 1942 wurde er in das Konzentrationslager Theresienstadt deportiert, wo er nur zwei Wochen später im Alter von 82 Jahren verstarb. Obwohl sein Leben ein trauriges Ende nahm, wird der "[Satz von Pick](https://kenji.blog/p/picks-theorem/)", den er hinterließ, aufgrund seiner Schönheit und Einfachheit bis heute im Mathematikunterricht auf der ganzen Welt geliebt.
+Picks spätere Jahre waren jedoch sehr tragisch. Da er jüdischer Abstammung war, war er mit dem Aufstieg des nationalsozialistischen Deutschlands Verfolgungen ausgesetzt. 1942 wurde er in das Konzentrationslager Theresienstadt deportiert, wo er nur zwei Wochen später im Alter von 82 Jahren verstarb. Obwohl sein Leben ein trauriges Ende nahm, wird der "[Satz von Pick](https://kenji.blog/de/p/picks-theorem/)", den er hinterließ, aufgrund seiner Schönheit und Einfachheit bis heute im Mathematikunterricht auf der ganzen Welt geliebt.
 
-## 3. Was ist der [Satz von Pick](https://kenji.blog/p/picks-theorem/)?
+## 3. Was ist der [Satz von Pick](https://kenji.blog/de/p/picks-theorem/)?
 
 Kommen wir nun zum Kern des Satzes von Pick. Die Aussage des Satzes ist erstaunlich einfach und kann sogar von Grundschülern verstanden werden.
 
@@ -50,7 +50,7 @@ $$
 
 Der überraschendste Punkt dieser Formel ist die Tatsache, dass unabhängig davon, wie komplex die Form des Polygons ist (zum Beispiel eine gezackte Sternform oder eine extrem längliche Form), solange die Eckpunkte auf Gitterpunkten liegen und es keine Selbstdurchdringungen oder Löcher gibt, sie **immer ohne Ausnahme gilt**. Es hat einen mysteriösen Reiz, der kontraintuitiv erscheint, insofern als dass die Winkel der Form oder die Längen der Seiten überhaupt nicht berücksichtigt werden müssen.
 
-Das folgende Flussdiagramm zeigt visuell das Verfahren zur Flächenberechnung mit dem [Satz von Pick](https://kenji.blog/p/picks-theorem/).
+Das folgende Flussdiagramm zeigt visuell das Verfahren zur Flächenberechnung mit dem [Satz von Pick](https://kenji.blog/de/p/picks-theorem/).
 
 ```mermaid
 flowchart TD
@@ -62,7 +62,7 @@ flowchart TD
 
 ## 4. Bestätigung der Kraft des Satzes an Beispielen
 
-Es könnte schwierig sein, ein echtes Gefühl dafür zu bekommen, nur indem man die Formel betrachtet. Überprüfen wir doch einmal an einigen konkreten Formen, ob der [Satz von Pick](https://kenji.blog/p/picks-theorem/) wirklich die richtige Fläche ableiten kann.
+Es könnte schwierig sein, ein echtes Gefühl dafür zu bekommen, nur indem man die Formel betrachtet. Überprüfen wir doch einmal an einigen konkreten Formen, ob der [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) wirklich die richtige Fläche ableiten kann.
 
 ### Beispiel 1: Ein einfaches Rechteck
 
@@ -98,7 +98,7 @@ Auch hier stimmt es genau überein.
 
 ### Beispiel 3: Komplexes Polygon mit Einbuchtungen
 
-Der [Satz von Pick](https://kenji.blog/p/picks-theorem/) zeigt seine Kraft auch bei komplexeren Polygonen mit Einbuchtungen.
+Der [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) zeigt seine Kraft auch bei komplexeren Polygonen mit Einbuchtungen.
 
 ```mermaid
 flowchart LR
@@ -111,11 +111,11 @@ flowchart LR
 
 Bei einer so komplexen Form erfordern herkömmliche Berechnungsmethoden eine sehr langwierige Arbeit, wie z. B. das Unterteilen der Form in mehrere Dreiecke und Rechtecke oder das Subtrahieren der Fläche überschüssiger Teile von einem großen Rechteck, das die gesamte Form vollständig umschließt. Rechenfehler können dabei ebenfalls leicht auftreten.
 
-Wenn Sie jedoch den [Satz von Pick](https://kenji.blog/p/picks-theorem/) verwenden, können Sie die genaue Fläche im Handumdrehen berechnen, indem Sie einfach die Punkte innerhalb der Form zählen und die Punkte auf der Randlinie zählen. Man kann wirklich sagen, dass dies phänomenal ist.
+Wenn Sie jedoch den [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) verwenden, können Sie die genaue Fläche im Handumdrehen berechnen, indem Sie einfach die Punkte innerhalb der Form zählen und die Punkte auf der Randlinie zählen. Man kann wirklich sagen, dass dies phänomenal ist.
 
 ## 5. Beweis mit Eulerschem Polyedersatz
 
-Warum gilt eine so magische Formel? Es gibt mehrere Möglichkeiten, den [Satz von Pick](https://kenji.blog/p/picks-theorem/) zu beweisen, aber hier werden wir eine elegante Beweisidee vorstellen, die einen berühmten Satz aus der Graphentheorie verwendet, die **Eulersche Polyederformel**.
+Warum gilt eine so magische Formel? Es gibt mehrere Möglichkeiten, den [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) zu beweisen, aber hier werden wir eine elegante Beweisidee vorstellen, die einen berühmten Satz aus der Graphentheorie verwendet, die **Eulersche Polyederformel**.
 
 Nach dem eulerschen Polyedersatz gilt für einen zusammenhängenden Graphen (Netzwerk), der auf einer Ebene gezeichnet ist, folgende Beziehung, wenn die Anzahl der Eckpunkte $V$, die Anzahl der Kanten $E$ und die Anzahl der Flächen $F$ ist:
 
@@ -185,15 +185,15 @@ $$
 S = \frac{2I + B - 2}{2} = I + \frac{B}{2} - 1
 $$
 
-Der [Satz von Pick](https://kenji.blog/p/picks-theorem/) ist brillant hergeleitet! Der eulersche Polyedersatz, die Grundlage der Topologie, und die Summe der Innenwinkel, die Grundlage der Geometrie, verschmelzen perfekt, um diese schöne Formel zu beweisen.
+Der [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) ist brillant hergeleitet! Der eulersche Polyedersatz, die Grundlage der Topologie, und die Summe der Innenwinkel, die Grundlage der Geometrie, verschmelzen perfekt, um diese schöne Formel zu beweisen.
 
 ## 6. Anwendung auf Polygone mit Löchern
 
-Der [Satz von Pick](https://kenji.blog/p/picks-theorem/) geht von einem "lochfreien einfachen Polygon" aus, aber was passiert, wenn sich ein Loch im Polygon befindet?
+Der [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) geht von einem "lochfreien einfachen Polygon" aus, aber was passiert, wenn sich ein Loch im Polygon befindet?
 
 Stellen Sie sich zum Beispiel eine Form wie einen Donut vor, bei der ein inneres Polygon (Loch), das vollständig im äußeren Polygon enthalten ist, ausgehöhlt ist. Für solche Formen gilt Picks Formel nicht so wie sie ist. Es ist jedoch möglich, die Fläche zu ermitteln, indem man den Satz entsprechend der Anzahl der Löcher korrigiert.
 
-Gibt es $h$ unabhängige Löcher innerhalb des Polygons, lautet die Formel für den verallgemeinerten [Satz von Pick](https://kenji.blog/p/picks-theorem/) wie folgt:
+Gibt es $h$ unabhängige Löcher innerhalb des Polygons, lautet die Formel für den verallgemeinerten [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) wie folgt:
 
 $$
 S = I + \frac{B}{2} - 1 + h
@@ -226,7 +226,7 @@ Dies bedeutet, dass es möglich ist, das Volumen unendlich groß zu machen, inde
 
 ### Sublimierung zu Ehrhart-Polynomen
 
-Obwohl der [Satz von Pick](https://kenji.blog/p/picks-theorem/) nicht direkt auf 3D erweitert werden konnte, endete dieses Problem hier keineswegs. Der französische Mathematiker Eugène Ehrhart begründete durch einen Ansatzwechsel eine neue Theorie.
+Obwohl der [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) nicht direkt auf 3D erweitert werden konnte, endete dieses Problem hier keineswegs. Der französische Mathematiker Eugène Ehrhart begründete durch einen Ansatzwechsel eine neue Theorie.
 
 Er untersuchte, "wie sich die Anzahl der in einer Form enthaltenen Gitterpunkte ändert, wenn die Größe der Form um einen ganzzahligen Faktor $t$ vergrößert wird". Wenn $L(P, t)$ die Anzahl der Gitterpunkte ist, die in einer Form $tP$ enthalten sind, die durch $t$-fache Vergrößerung eines $d$-dimensionalen Polyeders $P$, dessen Eckpunkte auf Gitterpunkten liegen, erhalten wird, so bewies Ehrhart, dass dieses $L(P, t)$ ein Polynom vom Grad $d$ für $t$ wird. Dies ist das **Ehrhart-Polynom**.
 
@@ -234,7 +234,7 @@ Das Ehrhart-Polynom im zweidimensionalen Fall ist genau die verallgemeinerte For
 
 ## 8. Implementierung per Programm
 
-Implementieren wir ein einfaches Programm in Python, das die Fläche mit dem [Satz von Pick](https://kenji.blog/p/picks-theorem/) berechnet. Wenn die Eckpunktkoordinaten eines Polygons gegeben sind, müssen tatsächlich die Randgitterpunkte $B$ und die inneren Gitterpunkte $I$ gezählt werden.
+Implementieren wir ein einfaches Programm in Python, das die Fläche mit dem [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) berechnet. Wenn die Eckpunktkoordinaten eines Polygons gegeben sind, müssen tatsächlich die Randgitterpunkte $B$ und die inneren Gitterpunkte $I$ gezählt werden.
 
 Die Anzahl der Gitterpunkte auf den Liniensegmenten am Rand kann mit dem **größten gemeinsamen Teiler (ggT)** des Absolutwerts der Differenz der $x$-Koordinaten und des Absolutwerts der Differenz der $y$-Koordinaten der beiden Enden des Liniensegments ermittelt werden.
 
@@ -281,7 +281,7 @@ Auf diese Weise wird die Formel des Satzes von Pick selbst, auch wenn sie als Al
 
 ## 9. Fazit
 
-Der [Satz von Pick](https://kenji.blog/p/picks-theorem/) ist ein wunderschöner mathematischer Satz mit folgenden erstaunlichen Eigenschaften:
+Der [Satz von Pick](https://kenji.blog/de/p/picks-theorem/) ist ein wunderschöner mathematischer Satz mit folgenden erstaunlichen Eigenschaften:
 
 1. **Extrem einfache Formel** : Die Fläche kann mit einer Gleichung gefunden werden, die nur aus Addition und Division besteht, $S = I + \frac{B}{2} - 1$.
 2. **Kein Längenmessen nötig** : Die Skala eines Lineals oder ein Winkelmesser zum Messen von Winkeln ist absolut unnötig, und die Fläche wird nur durch den primitiven Akt des "Punktezählens" bestimmt.

@@ -110,7 +110,7 @@ Jedoch bedeutet die numerische Demonstration in Simulationen nicht, dass ein mat
 
 ## 6. Zusammenfassung und zukünftige Aussichten
 
-Die [Yang-Mills-Gleichungen und das Massenlücken-Problem](https://kenji.blog/p/yang-mills-mass-gap/) befinden sich in dem tiefsten und am schwersten verständlichen Bereich, in dem sich die moderne Physik und die moderne Mathematik überschneiden. Physiker haben diese Theorie bereits genutzt, um die Geheimnisse des Universums zu entschlüsseln, aber Mathematiker haben noch nicht bewiesen, dass die Grammatik der "Sprache", die ihre Grundlage bildet, korrekt ist.
+Die [Yang-Mills-Gleichungen und das Massenlücken-Problem](https://kenji.blog/de/p/yang-mills-mass-gap/) befinden sich in dem tiefsten und am schwersten verständlichen Bereich, in dem sich die moderne Physik und die moderne Mathematik überschneiden. Physiker haben diese Theorie bereits genutzt, um die Geheimnisse des Universums zu entschlüsseln, aber Mathematiker haben noch nicht bewiesen, dass die Grammatik der "Sprache", die ihre Grundlage bildet, korrekt ist.
 
 Wenn dieses Problem gelöst wird, wird der leistungsstarke mathematische Rahmen, mit dem wir das Universum verstehen, vervollständigt sein. Es wäre gleichzeitig ein bahnbrechendes Ereignis, das ein neues Feld in der Mathematik erschließt. Obwohl es noch keine Hinweise auf eine endgültige Lösung gibt, stellen sich viele Genies weiterhin diesem Millennium-Problem.
 

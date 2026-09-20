@@ -50,7 +50,7 @@ Wenn nur die Primzahl $p$ den Raum von $(X - Y)$ betreten hat, berechnen wir den
 * Inhalt von $N$ = $p \times q$
   Das einzige gemeinsame Teil ist ** "$p$" ** !
 
-Mit anderen Worten, in dem Moment, in dem der größte gemeinsame Teiler berechnet wird, wird die verborgene Primzahl $p$ enthüllt und die Verschlüsselung ist vollständig entschlüsselt. (*Der größte gemeinsame Teiler kann sogar auf einem Smartphone sofort mit dem "[Euklid](https://kenji.blog/p/euclid/)ischen Algorithmus" berechnet werden).
+Mit anderen Worten, in dem Moment, in dem der größte gemeinsame Teiler berechnet wird, wird die verborgene Primzahl $p$ enthüllt und die Verschlüsselung ist vollständig entschlüsselt. (*Der größte gemeinsame Teiler kann sogar auf einem Smartphone sofort mit dem "[Euklid](https://kenji.blog/de/p/euclid/)ischen Algorithmus" berechnet werden).
 
 ** 【Kleine Kolumne: Warum das Quadrat? Funktionieren Kubik oder das Doppelte nicht?】 ** 
 > Bei "$2X - 2Y$" wird es zu $2(X - Y)$ und es gibt nur einen Raum, sodass Sie die Primzahlen nicht trennen können. Bei "$X^3 - Y^3$" wird die Größe der Räume unausgewogen und die Berechnung wird unnötig schwer. Um die Primzahlen in zwei zu trennen, ist das "Quadrat", das sich wunderbar in zwei Räume aufteilt, am kostengünstigsten.

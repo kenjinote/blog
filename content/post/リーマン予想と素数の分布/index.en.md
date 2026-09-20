@@ -11,17 +11,17 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 # 1. Introduction: The Mystery of the Universe in Prime Numbers and the Riemann Hypothesis
 
-"Prime Numbers" are natural numbers divisible only by 1 and themselves, often called the "atoms" in the world of mathematics. The sequence of 2, 3, 5, 7, 11, 13... appears at first glance to be unordered and random. Ever since the ancient Greek mathematician [Euclid](https://kenji.blog/p/euclid/) proved that "there are infinitely many prime numbers," countless mathematicians have challenged themselves to unravel the regularity hidden in the arrangement of these primes.
+"Prime Numbers" are natural numbers divisible only by 1 and themselves, often called the "atoms" in the world of mathematics. The sequence of 2, 3, 5, 7, 11, 13... appears at first glance to be unordered and random. Ever since the ancient Greek mathematician [Euclid](https://kenji.blog/en/p/euclid/) proved that "there are infinitely many prime numbers," countless mathematicians have challenged themselves to unravel the regularity hidden in the arrangement of these primes.
 
-The closest anyone has come to the mystery of prime numbers is the **"Riemann Hypothesis"** proposed by the German mathematician [Bernhard Riemann](https://kenji.blog/p/riemann/) in 1859. The Riemann Hypothesis is one of the most important and unsolved difficult problems in modern mathematics, and carries a $1 million prize as one of the Millennium Prize Problems designated by the Clay Mathematics Institute.
+The closest anyone has come to the mystery of prime numbers is the **"Riemann Hypothesis"** proposed by the German mathematician [Bernhard Riemann](https://kenji.blog/en/p/riemann/) in 1859. The Riemann Hypothesis is one of the most important and unsolved difficult problems in modern mathematics, and carries a $1 million prize as one of the Millennium Prize Problems designated by the Clay Mathematics Institute.
 
 At first glance, a difficult problem in pure mathematics regarding the distribution of prime numbers may seem unrelated to our daily lives. However, internet security, which supports the infrastructure of modern society, especially **modern cryptographic technologies such as RSA cryptography and Elliptic Curve Cryptography (ECC)**, relies deeply on the properties of gigantic prime numbers.
 
-In this article, we will embark on a mathematical journey from the distribution of prime numbers to the [Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), the Riemann Zeta function, and the core of the Riemann Hypothesis. We will provide an extremely detailed and deep explanation of how it is connected to modern cryptography and what would happen to the world if the Riemann Hypothesis were proven.
+In this article, we will embark on a mathematical journey from the distribution of prime numbers to the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/), the Riemann Zeta function, and the core of the Riemann Hypothesis. We will provide an extremely detailed and deep explanation of how it is connected to modern cryptography and what would happen to the world if the Riemann Hypothesis were proven.
 
 ---
 
-# 2. The [Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/) and the Distribution of Primes: Gauss's Discovery
+# 2. The [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) and the Distribution of Primes: Gauss's Discovery
 
 To understand how prime numbers are distributed, mathematicians considered the **Prime-counting function** $\pi(x)$, which represents "how many prime numbers exist up to a certain number $x$."
 
@@ -30,13 +30,13 @@ For example:
 - $\pi(100) = 25$
 - $\pi(1000) = 168$
 
-The 15-year-old genius mathematician [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) calculated vast tables of prime numbers and discovered that the frequency of appearance of prime numbers decreases in inverse proportion to the natural logarithm $\ln x$. That is, he conjectured that the probability of finding a prime number near a certain number $x$ is approximately $\frac{1}{\ln x}$.
+The 15-year-old genius mathematician [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/) calculated vast tables of prime numbers and discovered that the frequency of appearance of prime numbers decreases in inverse proportion to the natural logarithm $\ln x$. That is, he conjectured that the probability of finding a prime number near a certain number $x$ is approximately $\frac{1}{\ln x}$.
 
 Expressing this using integration gives the **Logarithmic integral** $\text{Li}(x)$:
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-Gauss's conjecture was later independently proven in 1896 by Jacques Hadamard and Charles Jean de la Vallée Poussin, and was established as the **[Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/) (PNT)**.
+Gauss's conjecture was later independently proven in 1896 by Jacques Hadamard and Charles Jean de la Vallée Poussin, and was established as the **[Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) (PNT)**.
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -50,7 +50,7 @@ Through this theorem, it became clear that prime numbers have a very smooth and 
 
 # 3. The Riemann Zeta Function and the Euler Product
 
-The most powerful weapon for analyzing the distribution of prime numbers is the **Riemann Zeta Function**. Originally, it was an infinite series defined by [Leonhard Euler](https://kenji.blog/p/euler/) for real numbers $s > 1$.
+The most powerful weapon for analyzing the distribution of prime numbers is the **Riemann Zeta Function**. Originally, it was an infinite series defined by [Leonhard Euler](https://kenji.blog/en/p/euler/) for real numbers $s > 1$.
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -110,9 +110,9 @@ Riemann and later the mathematician von Mangoldt derived an "Explicit formula" t
 $$ \psi(x) = x - \sum_{\rho} \frac{x^\rho}{\rho} - \ln(2\pi) - \frac{1}{2}\ln(1 - x^{-2}) $$
 
 Here, $\rho$ runs over all the non-trivial zeros of the Zeta function.
-The main term is $x$ (which corresponds to the [Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/)), and by adding and subtracting wave-like terms depending on the zeros $\rho$, the precise step-like distribution of primes is restored. The non-trivial zeros can be said to represent the "frequencies (waves)" of the distribution of primes.
+The main term is $x$ (which corresponds to the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/)), and by adding and subtracting wave-like terms depending on the zeros $\rho$, the precise step-like distribution of primes is restored. The non-trivial zeros can be said to represent the "frequencies (waves)" of the distribution of primes.
 
-If the Riemann Hypothesis is true, and the real part of all non-trivial zeros $\rho$ is exactly $1/2$, the error term of the [Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/) would fall within the theoretically smallest possible range.
+If the Riemann Hypothesis is true, and the real part of all non-trivial zeros $\rho$ is exactly $1/2$, the error term of the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) would fall within the theoretically smallest possible range.
 
 $$ |\pi(x) - \text{Li}(x)| \le \frac{1}{8\pi} \sqrt{x} \ln x \quad \text{for} \quad x \ge 2657 $$
 
@@ -184,7 +184,7 @@ There is an urban legend that says, "If the Riemann Hypothesis is solved, RSA cr
 The proof of the Riemann Hypothesis itself would not immediately yield a magical algorithm that drastically speeds up integer factorization. This is because the Riemann Hypothesis is ultimately a theorem about the "macroscopic regularity of the distribution" of primes, and it does not directly tell us which primes divide an individual number $N$ (a local property).
 
 However, the impact is not zero.
-This is because, in the process of proving the Riemann Hypothesis, it is extremely likely that **"new mathematical tools" and "unknown analytical methods"** will be discovered. Looking at history, when [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) or the [Poincaré Conjecture](https://kenji.blog/p/poincare-conjecture/) were proven, the new theories developed during the process greatly advanced the entirety of mathematics.
+This is because, in the process of proving the Riemann Hypothesis, it is extremely likely that **"new mathematical tools" and "unknown analytical methods"** will be discovered. Looking at history, when [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) or the [Poincaré Conjecture](https://kenji.blog/en/p/poincare-conjecture/) were proven, the new theories developed during the process greatly advanced the entirety of mathematics.
 
 If unknown algebraic geometry methods or non-commutative geometry methods are established that can completely manipulate the properties of the zeros of the Riemann Zeta function, it cannot be denied that this might ultimately lead to the discovery of a groundbreaking integer factorization algorithm (for example, a classical algorithm that reduces the computational complexity to polynomial time). In that sense, cryptographers can never take their eyes off the developments surrounding the Riemann Hypothesis.
 

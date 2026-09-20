@@ -56,7 +56,7 @@ Pourquoi une telle ligne existe-t-elle toujours ? Réfléchissons en utilisant l
 
 C'est pourquoi vous pouvez couper deux objets simultanément dans le cas 2D.
 
-## 3. Extension à la 3D : [Le Théorème du Sandwich au Jambon](https://kenji.blog/p/ham-sandwich-theorem/)
+## 3. Extension à la 3D : [Le Théorème du Sandwich au Jambon](https://kenji.blog/fr/p/ham-sandwich-theorem/)
 
 Maintenant, passons enfin à l'histoire tridimensionnelle. Lorsque la dimension augmente de un, le nombre d'objets que vous pouvez diviser augmente également de un.
 
@@ -98,7 +98,7 @@ Pour une fonction $f(x) = \left( \text{Température}, \text{Pression} \right)$ q
 
 ### Esquisse de Preuve du Théorème du Sandwich au Jambon
 
-[Le Théorème du Sandwich au Jambon](https://kenji.blog/p/ham-sandwich-theorem/) (version 3D) peut être prouvé en utilisant le cas $n=2$ du Théorème de Borsuk-Ulam. Voici une esquisse de sa belle preuve.
+[Le Théorème du Sandwich au Jambon](https://kenji.blog/fr/p/ham-sandwich-theorem/) (version 3D) peut être prouvé en utilisant le cas $n=2$ du Théorème de Borsuk-Ulam. Voici une esquisse de sa belle preuve.
 
 1. Considérez un point $p$ sur la sphère unité $S^2$ centrée à l'origine (cela représente le vecteur normal du plan, c'est-à-dire la "direction" du plan).
 2. Lorsque la direction $p$ est fixée, un plan qui coupe le volume du "pain supérieur" en deux est déterminé de manière unique (appelons cela le Plan $H(p)$).
@@ -150,6 +150,6 @@ Par exemple, lorsqu'une quantité massive de points de données (nuages de point
 
 ## 7. Conclusion
 
-[Le Théorème du Sandwich au Jambon](https://kenji.blog/p/ham-sandwich-theorem/) peut sembler être une blague avec un drôle de nom à première vue, mais en réalité, c'est un résultat magnifique appliqué à partir d'un puissant théorème des mathématiques modernes, en particulier la topologie algébrique. Le fait qu'une théorie mathématique abstraite s'exprime à travers quelque chose d'aussi concret et quotidien qu'un sandwich est sans doute l'un des aspects fascinants des mathématiques.
+[Le Théorème du Sandwich au Jambon](https://kenji.blog/fr/p/ham-sandwich-theorem/) peut sembler être une blague avec un drôle de nom à première vue, mais en réalité, c'est un résultat magnifique appliqué à partir d'un puissant théorème des mathématiques modernes, en particulier la topologie algébrique. Le fait qu'une théorie mathématique abstraite s'exprime à travers quelque chose d'aussi concret et quotidien qu'un sandwich est sans doute l'un des aspects fascinants des mathématiques.
 
 La prochaine fois que vous couperez un sandwich au hasard, il pourrait y avoir un moment où les trois ingrédients seront parfaitement divisés par coïncidence. Lors de votre prochaine pause déjeuner, alors que vous saisissez votre couteau, pourquoi ne pas laisser vos pensées dériver vers les espaces de dimensions supérieures et le Théorème de Borsuk-Ulam ?

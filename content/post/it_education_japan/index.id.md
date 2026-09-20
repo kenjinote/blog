@@ -142,7 +142,7 @@ Dalam pendidikan literasi informasi, pendidikan keamanan siber masih berada pada
 
 Komunikasi HTTPS dan tanda tangan digital yang kita gunakan setiap hari dilindungi oleh kriptografi kunci publik seperti enkripsi RSA. Keamanan enkripsi RSA bergantung pada kesulitan matematika (dianggap sebagai masalah NP-intermediat) bahwa "faktorisasi prima dari bilangan bulat yang sangat besar tidak dapat diselesaikan dalam waktu yang realistis menggunakan komputer klasik saat ini".
 
-Rumus matematika yang menjadi dasar enkripsi RSA adalah penerapan dari fungsi totient Euler dan [Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/) yang indah.
+Rumus matematika yang menjadi dasar enkripsi RSA adalah penerapan dari fungsi totient Euler dan [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) yang indah.
 
 1. Pilih dua bilangan prima besar $p$ dan $q$
 2. Hitung $n = p \times q$ (Ini menjadi bagian dari kunci publik)

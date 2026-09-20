@@ -8,7 +8,7 @@ categories: ["数学", "传记"]
 tags: ["巴谢", "数论", "数学史", "趣味数学", "丢番图"]
 ---
 
-在数学史上，有些人扮演了至关重要的角色，即使他们有时被掩盖在后世伟大发现的光环之下。17 世纪的法国数学家 **克洛德·加斯帕尔·巴谢·德·梅济里亚克 ([Claude Gaspard Bachet](https://kenji.blog/p/bachet/) de Méziriac, 1581–1638)** 就是其中之一。他因对[皮埃尔·德·费马](https://kenji.blog/p/fermat/)产生影响而闻名，但他本人的成就同样非常广泛和多样化。
+在数学史上，有些人扮演了至关重要的角色，即使他们有时被掩盖在后世伟大发现的光环之下。17 世纪的法国数学家 **克洛德·加斯帕尔·巴谢·德·梅济里亚克 ([Claude Gaspard Bachet](https://kenji.blog/zh-cn/p/bachet/) de Méziriac, 1581–1638)** 就是其中之一。他因对[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)产生影响而闻名，但他本人的成就同样非常广泛和多样化。
 
 在本文中，我们将深入了解巴谢的生平及其主要的数学成就。
 
@@ -27,17 +27,17 @@ flowchart TD
     D -->|"1612 年出版"| F["《令人愉快的趣味问题》"]
 ```
 
-## [丢番图](https://kenji.blog/p/diophantus/)《算术》的拉丁文译本
+## [丢番图](https://kenji.blog/zh-cn/p/diophantus/)《算术》的拉丁文译本
 
-巴谢最著名的成就之一是将古希腊数学家[丢番图](https://kenji.blog/p/diophantus/) ([Diophantus](https://kenji.blog/p/diophantus/)) 的《算术 (Arithmetica)》翻译成拉丁文，并加上了注释，于 1621 年出版。
+巴谢最著名的成就之一是将古希腊数学家[丢番图](https://kenji.blog/zh-cn/p/diophantus/) ([Diophantus](https://kenji.blog/zh-cn/p/diophantus/)) 的《算术 (Arithmetica)》翻译成拉丁文，并加上了注释，于 1621 年出版。
 
-这本译著成为了当时欧洲数学家学习古代代数和数论的标准教科书。其中最著名的轶事之一是，[皮埃尔·德·费马](https://kenji.blog/p/fermat/) ([Pierre de Fermat](https://kenji.blog/p/fermat/)) 就是在他所拥有的这本巴谢版《算术》的空白边缘处写下了著名的“[费马大定理](https://kenji.blog/p/fermats-last-theorem/)”。
+这本译著成为了当时欧洲数学家学习古代代数和数论的标准教科书。其中最著名的轶事之一是，[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/) ([Pierre de Fermat](https://kenji.blog/zh-cn/p/fermat/)) 就是在他所拥有的这本巴谢版《算术》的空白边缘处写下了著名的“[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)”。
 
-巴谢并没有止步于纯粹的翻译；他在[丢番图](https://kenji.blog/p/diophantus/)的问题中加入了自己精彩的注释和推广。如果没有他的数学洞察力，17 世纪数论的发展可能会缓慢得多。
+巴谢并没有止步于纯粹的翻译；他在[丢番图](https://kenji.blog/zh-cn/p/diophantus/)的问题中加入了自己精彩的注释和推广。如果没有他的数学洞察力，17 世纪数论的发展可能会缓慢得多。
 
 ## 巴谢方程 (Bachet's Equation)
 
-在数论中，巴谢研究了一种特定形式的[丢番图](https://kenji.blog/p/diophantus/)方程，现在被称为 **巴谢方程** 。它代表了以下形式的三次曲线（一种椭圆曲线）：
+在数论中，巴谢研究了一种特定形式的[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程，现在被称为 **巴谢方程** 。它代表了以下形式的三次曲线（一种椭圆曲线）：
 
 $$
 y^2 = x^3 - c
@@ -45,7 +45,7 @@ $$
 
 （或者有时写为 $y^2 = x^3 + k$，其中 $c$ 或 $k$ 是常数。）
 
-巴谢考虑了在给定特定有理数解的情况下，推导新有理数解的几何和代数方法（相当于现在所谓的椭圆曲线上的点加法，特别是用于加倍的切线法）。这展示了一种生成[丢番图](https://kenji.blog/p/diophantus/)方程无限多解的方法，并成为了后来椭圆曲线理论的基础之一。
+巴谢考虑了在给定特定有理数解的情况下，推导新有理数解的几何和代数方法（相当于现在所谓的椭圆曲线上的点加法，特别是用于加倍的切线法）。这展示了一种生成[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程无限多解的方法，并成为了后来椭圆曲线理论的基础之一。
 
 ## 趣味数学之父：《令人愉快的趣味问题》
 
@@ -79,8 +79,8 @@ $$
 ax + by = 1
 $$
 
-通过扩展[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)（扩展[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)）可以具体计算出 $x$ 和 $y$，这已成为现代密码学（如 RSA）中不可或缺的基础定理。在重视历史准确性的语境中，这有时被称为 **巴谢定理** 。
+通过扩展[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)（扩展[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)）可以具体计算出 $x$ 和 $y$，这已成为现代密码学（如 RSA）中不可或缺的基础定理。在重视历史准确性的语境中，这有时被称为 **巴谢定理** 。
 
 ## 结论
 
-克洛德·加斯帕尔·巴谢不仅仅是[费马大定理](https://kenji.blog/p/fermats-last-theorem/)的“幕后人物”。他是一位伟大的先驱，通过复兴古代智慧，同时探索自己的方程并系统化趣味数学，打开了现代数学的大门。他对《算术》的注释和数学谜题在他去世几个世纪后的今天，依然继续激发着数学爱好者的灵感。
+克洛德·加斯帕尔·巴谢不仅仅是[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)的“幕后人物”。他是一位伟大的先驱，通过复兴古代智慧，同时探索自己的方程并系统化趣味数学，打开了现代数学的大门。他对《算术》的注释和数学谜题在他去世几个世纪后的今天，依然继续激发着数学爱好者的灵感。

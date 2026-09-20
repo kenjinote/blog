@@ -25,15 +25,15 @@ Les mathématiques apportent une réponse très claire et magnifique à cette qu
 
 Dans cet article, nous expliquerons en détail ce **Théorème fondamental de l'algèbre**, en partant de son contexte historique, en passant par une approche intuitive basée sur la topologie, pour finalement présenter une preuve rigoureuse et magnifique utilisant l'analyse complexe.
 
-## Contexte Historique du [Théorème Fondamental de l'Algèbre](https://kenji.blog/p/fundamental-theorem-of-algebra/)
+## Contexte Historique du [Théorème Fondamental de l'Algèbre](https://kenji.blog/fr/p/fundamental-theorem-of-algebra/)
 
 Le **Théorème fondamental de l'algèbre** n'a pas été prouvé du jour au lendemain. De nombreux grands mathématiciens ont lutté pour obtenir une preuve complète, sans jamais douter de la vérité du théorème.
 
-Au 17ème siècle, des mathématiciens comme [René Descartes](https://kenji.blog/p/descartes/) et Albert Girard savaient déjà empiriquement qu'une "équation de degré $n$ devrait avoir $n$ racines". Cependant, dans le cadre mathématique de l'époque, il n'y avait aucun moyen rigoureux de le prouver.
+Au 17ème siècle, des mathématiciens comme [René Descartes](https://kenji.blog/fr/p/descartes/) et Albert Girard savaient déjà empiriquement qu'une "équation de degré $n$ devrait avoir $n$ racines". Cependant, dans le cadre mathématique de l'époque, il n'y avait aucun moyen rigoureux de le prouver.
 
-Au début du 18ème siècle, des géants des mathématiques comme Jean le Rond d'Alembert et [Leonhard Euler](https://kenji.blog/p/euler/) ont tenté la preuve. D'Alembert a publié une preuve en 1746, et le théorème est parfois appelé "théorème de d'Alembert" en France ; cependant, selon les normes modernes, sa preuve manquait de rigueur topologique dans certains domaines. Euler a également essayé de montrer que tout polynôme à coefficients réels pouvait être factorisé en produit de polynômes linéaires et quadratiques, mais a laissé une lacune logique.
+Au début du 18ème siècle, des géants des mathématiques comme Jean le Rond d'Alembert et [Leonhard Euler](https://kenji.blog/fr/p/euler/) ont tenté la preuve. D'Alembert a publié une preuve en 1746, et le théorème est parfois appelé "théorème de d'Alembert" en France ; cependant, selon les normes modernes, sa preuve manquait de rigueur topologique dans certains domaines. Euler a également essayé de montrer que tout polynôme à coefficients réels pouvait être factorisé en produit de polynômes linéaires et quadratiques, mais a laissé une lacune logique.
 
-La première preuve essentiellement complète de ce théorème imprenable a été donnée par nul autre que [Carl Friedrich Gauss](https://kenji.blog/p/gauss/). Dans sa thèse de doctorat de 1799, il a souligné les défauts des preuves des mathématiciens précédents et a présenté une preuve basée sur l'intuition géométrique. Gauss a fourni quatre preuves différentes pour ce théorème au cours de sa vie, indiquant l'importance qu'il y attachait.
+La première preuve essentiellement complète de ce théorème imprenable a été donnée par nul autre que [Carl Friedrich Gauss](https://kenji.blog/fr/p/gauss/). Dans sa thèse de doctorat de 1799, il a souligné les défauts des preuves des mathématiciens précédents et a présenté une preuve basée sur l'intuition géométrique. Gauss a fourni quatre preuves différentes pour ce théorème au cours de sa vie, indiquant l'importance qu'il y attachait.
 
 La preuve la plus standard et la plus élégante aujourd'hui est considérée comme celle basée sur la théorie de l'analyse complexe, construite par le mathématicien français Joseph Liouville et d'autres. Dans la seconde moitié de cet article, nous présenterons la preuve utilisant le théorème de Liouville.
 
@@ -95,7 +95,7 @@ Ici, "bornée" signifie que pour tous les nombres complexes $z$, la valeur absol
 
 Dans le monde des nombres réels, une fonction comme $f(x) = \sin(x)$ est dérivable sur toute la droite des nombres et est bornée par $-1 \le \sin(x) \le 1$. Ce n'est pas une fonction constante. Cependant, le théorème de Liouville affirme que cela ne peut jamais se produire dans le monde complexe. Si une fonction est holomorphe sur tout le plan complexe et que sa valeur ne diverge pas vers l'infini, c'est simplement une constante plate.
 
-## Preuve Rigoureuse du [Théorème Fondamental de l'Algèbre](https://kenji.blog/p/fundamental-theorem-of-algebra/)
+## Preuve Rigoureuse du [Théorème Fondamental de l'Algèbre](https://kenji.blog/fr/p/fundamental-theorem-of-algebra/)
 
 Prouvons maintenant le théorème fondamental de l'algèbre en utilisant le théorème de Liouville. Vous serez étonné par l'éclat de cette preuve. Ici, nous utilisons un raisonnement par l'absurde (preuve par contradiction).
 

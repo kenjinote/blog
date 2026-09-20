@@ -60,7 +60,7 @@ $$ B' = B U $$
 SVP는 격자 이론에서 가장 고전적이고 유명한 문제입니다.
 
 **정의 (SVP):**
-임의의 격자 기저 $B$가 주어졌을 때, 그 격자 $\mathcal{L}(B)$에 속하는 영(zero)이 아닌 벡터 중에서 [유클리드](https://kenji.blog/p/euclid/) 노름(길이)이 최소가 되는 벡터 $\mathbf{v}$를 찾아라.
+임의의 격자 기저 $B$가 주어졌을 때, 그 격자 $\mathcal{L}(B)$에 속하는 영(zero)이 아닌 벡터 중에서 [유클리드](https://kenji.blog/ko/p/euclid/) 노름(길이)이 최소가 되는 벡터 $\mathbf{v}$를 찾아라.
 
 수식으로 표현하면, $\min_{\mathbf{v} \in \mathcal{L}(B) \setminus \{\mathbf{0}\}} \| \mathbf{v} \|$가 되는 $\mathbf{v}$를 구하는 문제입니다. 이 최소 길이를 $\lambda_1(\mathcal{L})$로 쓰고, '격자의 제1연속 최소값(First successive minimum)'이라고 부릅니다.
 

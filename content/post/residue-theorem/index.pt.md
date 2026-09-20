@@ -18,7 +18,7 @@ $$
 
 Embora essa integral em si possa ser resolvida usando $\arctan(x)$, se o denominador se tornar um polinômio de grau superior, ou se funções trigonométricas como seno e cosseno estiverem intricadamente envolvidas, encontrar uma antiderivada (integral indefinida) como uma função real torna-se virtualmente impossível.
 
-É aqui que entra em cena uma arma poderosa da **análise complexa** (a teoria das funções complexas), amplamente considerada uma das teorias mais belas da matemática: o **[Teorema dos Resíduos](https://kenji.blog/p/residue-theorem/) de Cauchy**. Ao estender de forma audaciosa uma integral realizada na reta numérica real (unidimensional) para o **plano complexo** (bidimensional), integrais reais impossíveis podem ser resolvidas de forma brilhante.
+É aqui que entra em cena uma arma poderosa da **análise complexa** (a teoria das funções complexas), amplamente considerada uma das teorias mais belas da matemática: o **[Teorema dos Resíduos](https://kenji.blog/pt/p/residue-theorem/) de Cauchy**. Ao estender de forma audaciosa uma integral realizada na reta numérica real (unidimensional) para o **plano complexo** (bidimensional), integrais reais impossíveis podem ser resolvidas de forma brilhante.
 
 ## Integração Complexa e Singularidades
 
@@ -56,9 +56,9 @@ $$
 
 Por que apenas o coeficiente de $(z - z_0)^{-1}$ é especial? Porque se você integrar $\frac{1}{(z - z_0)^n}$ ao longo de um círculo minúsculo $C$ englobando a singularidade, apenas quando $n = 1$ o valor $2\pi i$ permanece; para todos os outros valores de $n$, a integral é avaliada em $0$.
 
-## [Teorema dos Resíduos](https://kenji.blog/p/residue-theorem/) de Cauchy
+## [Teorema dos Resíduos](https://kenji.blog/pt/p/residue-theorem/) de Cauchy
 
-A integração desses conceitos produz o **[Teorema dos Resíduos](https://kenji.blog/p/residue-theorem/)**. Se uma curva fechada $C$ contém múltiplas singularidades isoladas $z_1, z_2, \dots, z_k$ dentro dela, a integral complexa ao longo de $C$ pode ser calculada da seguinte forma:
+A integração desses conceitos produz o **[Teorema dos Resíduos](https://kenji.blog/pt/p/residue-theorem/)**. Se uma curva fechada $C$ contém múltiplas singularidades isoladas $z_1, z_2, \dots, z_k$ dentro dela, a integral complexa ao longo de $C$ pode ser calculada da seguinte forma:
 
 $$
 \oint_C f(z) dz = 2\pi i \sum_{j=1}^{k} \text{Res}(f, z_j)
@@ -106,7 +106,7 @@ $$
 \text{Res}(f, i) = \lim_{z \to i} (z - i) f(z) = \lim_{z \to i} \frac{1}{z + i} = \frac{1}{2i}
 $$
 
-### Passo 3: Aplicando o [Teorema dos Resíduos](https://kenji.blog/p/residue-theorem/)
+### Passo 3: Aplicando o [Teorema dos Resíduos](https://kenji.blog/pt/p/residue-theorem/)
 Pelo teorema dos resíduos, a integral na curva fechada $C$ torna-se:
 
 $$

@@ -11,7 +11,7 @@ tags:
 slug: "godels-incompleteness-theorems"
 ---
 
-"A matemática é absolutamente correta" ── Certamente todos já pensaram nisto pelo menos uma vez. No entanto, um artigo publicado em 1931 pelo jovem matemático [Kurt Gödel](https://kenji.blog/p/godel/) abalou esse senso comum até aos seus alicerces. Trata-se dos **Teoremas da Incompletude de Gödel**.
+"A matemática é absolutamente correta" ── Certamente todos já pensaram nisto pelo menos uma vez. No entanto, um artigo publicado em 1931 pelo jovem matemático [Kurt Gödel](https://kenji.blog/pt/p/godel/) abalou esse senso comum até aos seus alicerces. Trata-se dos **Teoremas da Incompletude de Gödel**.
 
 Neste artigo, explicaremos em profundidade este teorema chocante, que afirma que existe uma "verdade que nunca pode ser provada", abordando o seu significado e a mecânica da prova com o uso de exemplos concretos e diagramas.
 
@@ -19,7 +19,7 @@ Neste artigo, explicaremos em profundidade este teorema chocante, que afirma que
 
 ## 1. O Pano de Fundo: O Programa de Hilbert e a Crise da Matemática
 
-Entre o final do século XIX e o início do século XX, o mundo da matemática enfrentou "paradoxos da teoria dos conjuntos (como o Paradoxo de Russell)", abalando os seus próprios fundamentos. Foi [David Hilbert](https://kenji.blog/p/hilbert/), a maior autoridade da matemática na altura, quem se levantou para salvar esta "crise da matemática".
+Entre o final do século XIX e o início do século XX, o mundo da matemática enfrentou "paradoxos da teoria dos conjuntos (como o Paradoxo de Russell)", abalando os seus próprios fundamentos. Foi [David Hilbert](https://kenji.blog/pt/p/hilbert/), a maior autoridade da matemática na altura, quem se levantou para salvar esta "crise da matemática".
 
 Hilbert tentou simbolizar completamente todos os raciocínios matemáticos e reconstruir a matemática baseando-se apenas em regras mecânicas. O "Programa de Hilbert" que ele propôs tinha como objetivo provar três propriedades dentro do Sistema Formal (Formal System) da matemática:
 
@@ -51,7 +51,7 @@ Hilbert acreditava que, ao expandir esses sistemas formais, um dia se conseguiri
 
 ## 3. O Choque do Primeiro Teorema da Incompletude: Proposições "Verdadeiras, mas Improváveis"
 
-Porém, em 1931, [Kurt Gödel](https://kenji.blog/p/godel/), então com apenas 25 anos, publicou um artigo que esmagou o sonho de Hilbert em pedaços. Foi o **Primeiro Teorema da Incompletude**.
+Porém, em 1931, [Kurt Gödel](https://kenji.blog/pt/p/godel/), então com apenas 25 anos, publicou um artigo que esmagou o sonho de Hilbert em pedaços. Foi o **Primeiro Teorema da Incompletude**.
 
 > **Primeiro Teorema da Incompletude**
 > Em qualquer sistema formal consistente que inclua a Aritmética de Peano, existe sempre pelo menos uma proposição que é verdadeira, mas que não pode ser provada dentro desse sistema.
@@ -132,11 +132,11 @@ Devido ao seu nome dramático, os Teoremas da Incompletude de Gödel são freque
 - **Mal-entendido 2: "A razão humana tem limites"**
   - **Facto**: O limite apontado pelo teorema aplica-se a "sistemas que obedecem a regras mecânicas pré-determinadas (sistemas formais)". No Primeiro Teorema da Incompletude, nós (do ponto de vista externo) conseguimos discernir que a proposição $G$ é "verdadeira". Alguns académicos (como Roger Penrose) consideram isso como a prova de que a razão humana tem a capacidade de compreender "significados (semântica)" além dos sistemas formais mecânicos.
 - **Mal-entendido 3: "Existem coisas que não podem ser provadas em qualquer contexto"**
-  - **Facto**: O teorema da incompletude aplica-se apenas a sistemas suficientemente complexos que incluam "adição e multiplicação de números naturais (Aritmética de Peano)". Por exemplo, a "Geometria [Euclid](https://kenji.blog/p/euclid/)iana" ou a "Teoria de Primeira Ordem dos Números Reais" são completas; todas as proposições verdadeiras são prováveis. A incompletude surge apenas quando o alvo tem uma estrutura suficientemente complexa (capaz de autorreferência).
+  - **Facto**: O teorema da incompletude aplica-se apenas a sistemas suficientemente complexos que incluam "adição e multiplicação de números naturais (Aritmética de Peano)". Por exemplo, a "Geometria [Euclid](https://kenji.blog/pt/p/euclid/)iana" ou a "Teoria de Primeira Ordem dos Números Reais" são completas; todas as proposições verdadeiras são prováveis. A incompletude surge apenas quando o alvo tem uma estrutura suficientemente complexa (capaz de autorreferência).
 
 ## 7. Passagem de testemunho à Máquina de Turing: O alvorecer da Ciência da Computação
 
-O impacto do teorema de Gödel não se limitou à matemática. Em 1936, o matemático britânico [Alan Turing](https://kenji.blog/p/turing/) substituiu o conceito do "sistema formal" de Gödel por processos de cálculo físico e idealizou o modelo de computador virtual chamado "Máquina de Turing".
+O impacto do teorema de Gödel não se limitou à matemática. Em 1936, o matemático britânico [Alan Turing](https://kenji.blog/pt/p/turing/) substituiu o conceito do "sistema formal" de Gödel por processos de cálculo físico e idealizou o modelo de computador virtual chamado "Máquina de Turing".
 
 Turing aplicou o teorema da incompletude de Gödel ao mundo dos computadores e provou que "não existe nenhum algoritmo universal que possa prever de antemão se um programa de computador alguma vez terminará o seu cálculo (ou se ficará num loop eterno)". Este é o famoso **Problema da Paragem** (Halting Problem).
 
@@ -152,8 +152,8 @@ A limitação matemática de que "há verdades que não podem ser provadas" tran
 
 ## 8. Conclusão: A jornada infindável do "saber"
 
-A "máquina matemática perfeita, capaz de provar tudo automaticamente", com que [David Hilbert](https://kenji.blog/p/hilbert/) sonhara, terminou numa ilusão pelos Teoremas da Incompletude de Gödel. Mas isso nunca significou a derrota da matemática.
+A "máquina matemática perfeita, capaz de provar tudo automaticamente", com que [David Hilbert](https://kenji.blog/pt/p/hilbert/) sonhara, terminou numa ilusão pelos Teoremas da Incompletude de Gödel. Mas isso nunca significou a derrota da matemática.
 
 Se a matemática fosse totalmente passível de ser mecanizada, o trabalho dos matemáticos teria-se tornado uma mera rotina e teria acabado por terminar. No entanto, a existência de proposições "verdadeiras mas improvável", demonstrada por Gödel, provou que o universo da matemática é muito mais rico do que poderíamos imaginar e que possui uma profundidade inesgotável.
 
-[Kurt Gödel](https://kenji.blog/p/godel/), através da matemática que é a lógica mais rigorosa, acabou por **provar** a existência da "verdade que nunca pode ser provada". O seu teorema da incompletude ensina-nos que a jornada humana em busca do "saber" é uma viagem sem fim que durará para a eternidade.
+[Kurt Gödel](https://kenji.blog/pt/p/godel/), através da matemática que é a lógica mais rigorosa, acabou por **provar** a existência da "verdade que nunca pode ser provada". O seu teorema da incompletude ensina-nos que a jornada humana em busca do "saber" é uma viagem sem fim que durará para a eternidade.

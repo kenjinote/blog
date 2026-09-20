@@ -24,7 +24,7 @@ For example,
 
 Currently, only 51 perfect numbers have been discovered. It is conjectured that there are infinitely many, but this has not yet been proven.
 
-## [Goldbach's Conjecture](https://kenji.blog/p/goldbachs-conjecture/)
+## [Goldbach's Conjecture](https://kenji.blog/en/p/goldbachs-conjecture/)
 
 Goldbach's conjecture states that every even integer greater than 2 can be expressed as the sum of two primes.
 (Here, a prime number is a natural number that has no positive divisors other than 1 and itself.)
@@ -40,7 +40,7 @@ The problem itself is very simple, but it remains unproven.
 
 ## Riemann Hypothesis
 
-The [Riemann hypothesis](https://kenji.blog/p/riemann-hypothesis/) is the conjecture that the zeros of the Riemann zeta function are restricted to negative even integers and complex numbers with real part 1 / 2.
+The [Riemann hypothesis](https://kenji.blog/en/p/riemann-hypothesis/) is the conjecture that the zeros of the Riemann zeta function are restricted to negative even integers and complex numbers with real part 1 / 2.
 
 The Riemann zeta function is the function $\zeta$ defined by:
 

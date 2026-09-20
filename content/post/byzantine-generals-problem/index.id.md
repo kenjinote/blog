@@ -8,13 +8,13 @@ tags: ["Masalah Jenderal Bizantium", "Blockchain", "Konsensus", "Algoritma"]
 slug: "byzantine-generals-problem"
 ---
 
-Dalam mempelajari sistem terdistribusi atau teknologi blockchain, kita hampir selalu dihadapkan pada **[Masalah Jenderal Bizantium](https://kenji.blog/p/byzantine-generals-problem/)** (Byzantine Generals Problem). Masalah ini membahas tema yang sangat penting mengenai bagaimana sistem secara keseluruhan dapat membentuk kesepakatan yang benar dalam situasi di mana terdapat "pengkhianat" atau "node yang rusak" di dalam jaringan.
+Dalam mempelajari sistem terdistribusi atau teknologi blockchain, kita hampir selalu dihadapkan pada **[Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/)** (Byzantine Generals Problem). Masalah ini membahas tema yang sangat penting mengenai bagaimana sistem secara keseluruhan dapat membentuk kesepakatan yang benar dalam situasi di mana terdapat "pengkhianat" atau "node yang rusak" di dalam jaringan.
 
-Dalam artikel ini, kami akan menjelaskan **[Masalah Jenderal Bizantium](https://kenji.blog/p/byzantine-generals-problem/)** secara rinci, mulai dari dasar hingga aplikasinya, disertai dengan cerita konkret, persamaan matematis, dan ilustrasi.
+Dalam artikel ini, kami akan menjelaskan **[Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/)** secara rinci, mulai dari dasar hingga aplikasinya, disertai dengan cerita konkret, persamaan matematis, dan ilustrasi.
 
-## 1. Apa itu [Masalah Jenderal Bizantium](https://kenji.blog/p/byzantine-generals-problem/)?
+## 1. Apa itu [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/)?
 
-[Masalah Jenderal Bizantium](https://kenji.blog/p/byzantine-generals-problem/) adalah sebuah eksperimen pemikiran tentang pembentukan kesepakatan (konsensus) dalam komputasi terdistribusi, yang diajukan oleh Leslie Lamport dkk. pada tahun 1982.
+[Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) adalah sebuah eksperimen pemikiran tentang pembentukan kesepakatan (konsensus) dalam komputasi terdistribusi, yang diajukan oleh Leslie Lamport dkk. pada tahun 1982.
 
 ### Contoh Konkret: Para Jenderal Kekaisaran Bizantium
 
@@ -43,7 +43,7 @@ end
 
 Dalam situasi ini, Letnan 1 menerima informasi yang kontradiktif, yaitu "Komandan mengatakan Serang, tetapi Letnan 2 mengatakan Mundur", sehingga ia tidak dapat membuat keputusan yang benar.
 
-Dengan demikian, pertanyaan mengenai "bagaimana node-node yang normal dapat mencapai kesimpulan yang sama dalam sebuah jaringan di mana node yang jahat dapat menyebarkan informasi bohong apa pun secara bebas" adalah esensi dari **[Masalah Jenderal Bizantium](https://kenji.blog/p/byzantine-generals-problem/)**.
+Dengan demikian, pertanyaan mengenai "bagaimana node-node yang normal dapat mencapai kesimpulan yang sama dalam sebuah jaringan di mana node yang jahat dapat menyebarkan informasi bohong apa pun secara bebas" adalah esensi dari **[Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/)**.
 
 ## 2. Kondisi Ketat untuk Mencapai Konsensus
 
@@ -98,7 +98,7 @@ Dari sudut pandang Letnan 1, **kombinasi informasi yang diterima persis sama** a
 
 ## 3. Algoritma sebagai Solusi
 
-Algoritma seperti apa yang diperlukan untuk menyelesaikan [Masalah Jenderal Bizantium](https://kenji.blog/p/byzantine-generals-problem/) dan mencapai konsensus?
+Algoritma seperti apa yang diperlukan untuk menyelesaikan [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) dan mencapai konsensus?
 
 ### Algoritma Pesan Lisan Rekursif
 
@@ -118,9 +118,9 @@ Dalam model ini, perintah yang dikeluarkan oleh komandan tidak dapat diubah di t
 
 ## 4. Blockchain dan Byzantine Fault Tolerance (BFT)
 
-Ketahanan terhadap [Masalah Jenderal Bizantium](https://kenji.blog/p/byzantine-generals-problem/) disebut **Byzantine Fault Tolerance** (BFT). Ini adalah metrik penting bagi sistem terdistribusi untuk dapat bertahan dari kegagalan dan serangan berbahaya, serta terus beroperasi secara normal.
+Ketahanan terhadap [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) disebut **Byzantine Fault Tolerance** (BFT). Ini adalah metrik penting bagi sistem terdistribusi untuk dapat bertahan dari kegagalan dan serangan berbahaya, serta terus beroperasi secara normal.
 
-Dalam beberapa tahun terakhir, masalah ini kembali menjadi sorotan utama karena kemunculan **teknologi blockchain**. Karena blockchain adalah jaringan P2P tanpa administrator pusat, ada kemungkinan peserta (node) jahat menyebarkan riwayat transaksi bohong. Ini persis seperti [Masalah Jenderal Bizantium](https://kenji.blog/p/byzantine-generals-problem/) itu sendiri.
+Dalam beberapa tahun terakhir, masalah ini kembali menjadi sorotan utama karena kemunculan **teknologi blockchain**. Karena blockchain adalah jaringan P2P tanpa administrator pusat, ada kemungkinan peserta (node) jahat menyebarkan riwayat transaksi bohong. Ini persis seperti [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) itu sendiri.
 
 ### Mekanisme PBFT (Practical Byzantine Fault Tolerance)
 
@@ -151,7 +151,7 @@ Dengan melalui proses ini, meskipun terdapat $m$ node yang gagal atau jahat di d
 
 Pencipta Bitcoin, Satoshi Nakamoto, menangani masalah ini dengan pendekatan yang sama sekali baru. Itulah **Konsensus Nakamoto**, yang menggabungkan **Proof of Work** (PoW) dengan aturan yang menganggap chain terpanjang sebagai yang valid.
 
-Dalam Konsensus Nakamoto, hanya mereka yang memenangkan kompetisi perhitungan matematis (penambangan/mining) yang mendapatkan hak untuk mengusulkan blok. Untuk membuat jaringan mengakui informasi palsu, seseorang harus menguasai lebih dari mayoritas (51% atau lebih) dari kekuatan komputasi seluruh jaringan, yang mana ini adalah desain yang sangat sulit diwujudkan di dunia nyata. Dengan ini, dinilai bahwa ia telah menyelesaikan [Masalah Jenderal Bizantium](https://kenji.blog/p/byzantine-generals-problem/) secara probabilistik di dalam jaringan terbuka di mana jumlah peserta tidak ditentukan.
+Dalam Konsensus Nakamoto, hanya mereka yang memenangkan kompetisi perhitungan matematis (penambangan/mining) yang mendapatkan hak untuk mengusulkan blok. Untuk membuat jaringan mengakui informasi palsu, seseorang harus menguasai lebih dari mayoritas (51% atau lebih) dari kekuatan komputasi seluruh jaringan, yang mana ini adalah desain yang sangat sulit diwujudkan di dunia nyata. Dengan ini, dinilai bahwa ia telah menyelesaikan [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) secara probabilistik di dalam jaringan terbuka di mana jumlah peserta tidak ditentukan.
 
 ### Aplikasi BFT dalam PoS (Proof of Stake)
 
@@ -179,6 +179,6 @@ $$
 
 ## 6. Penutup
 
-**[Masalah Jenderal Bizantium](https://kenji.blog/p/byzantine-generals-problem/)** ini adalah teori mendasar untuk menjamin keandalan sistem terdistribusi. Pertanyaan tentang "bagaimana membuat keputusan yang benar secara keseluruhan dalam lingkungan di mana kita tidak tahu siapa yang bisa dipercaya" telah diaplikasikan ke berbagai infrastruktur IT modern, mulai dari teknologi dasar aset kripto, sistem kontrol pesawat terbang, hingga komputasi awan (cloud computing).
+**[Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/)** ini adalah teori mendasar untuk menjamin keandalan sistem terdistribusi. Pertanyaan tentang "bagaimana membuat keputusan yang benar secara keseluruhan dalam lingkungan di mana kita tidak tahu siapa yang bisa dipercaya" telah diaplikasikan ke berbagai infrastruktur IT modern, mulai dari teknologi dasar aset kripto, sistem kontrol pesawat terbang, hingga komputasi awan (cloud computing).
 
 Evolusi algoritma yang mempertimbangkan keberadaan pengkhianat dan masih mencegah sistem agar tidak berhenti, tidak akan pernah berhenti di masa depan. Bagi para insinyur yang terlibat dalam desain sistem terdistribusi, memahami pembuktian matematis dan algoritma di balik masalah ini akan menjadi senjata yang sangat ampuh.

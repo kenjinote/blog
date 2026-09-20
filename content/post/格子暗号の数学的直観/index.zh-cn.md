@@ -60,7 +60,7 @@ $$ B' = B U $$
 SVP是格理论中最经典且最著名的问题。
 
 **定义（SVP）:**
-给定任意一个格的基 $B$，找到该格 $\mathcal{L}(B)$ 中除零向量以外[欧几里得](https://kenji.blog/p/euclid/)范数（长度）最小的向量 $\mathbf{v}$。
+给定任意一个格的基 $B$，找到该格 $\mathcal{L}(B)$ 中除零向量以外[欧几里得](https://kenji.blog/zh-cn/p/euclid/)范数（长度）最小的向量 $\mathbf{v}$。
 
 用数学公式表示，即寻找使 $\min_{\mathbf{v} \in \mathcal{L}(B) \setminus \{\mathbf{0}\}} \| \mathbf{v} \|$ 成立的 $\mathbf{v}$。这个最小长度记作 $\lambda_1(\mathcal{L})$，被称为“格的第一连续极小值（First successive minimum）”。
 

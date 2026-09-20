@@ -42,7 +42,7 @@ Evolusi algoritma faktorisasi prima di masa lalu juga merupakan sejarah dalam me
 
 ## 3. Gambaran Keseluruhan Algoritma dan Struktur Matematis GNFS (General Number Field Sieve)
 
-GNFS memiliki fondasi matematis yang sangat kompleks dan canggih. Ide dasarnya merupakan perpanjangan dari [Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/) dan Quadratic Sieve (QS), yaitu menemukan pasangan non-trivial $(X, Y)$ yang memenuhi kongruensi $X^2 \equiv Y^2 \pmod n$ dan $X \not\equiv \pm Y \pmod n$, untuk kemudian menurunkan faktor dari $n$ melalui $\gcd(X-Y, n)$.
+GNFS memiliki fondasi matematis yang sangat kompleks dan canggih. Ide dasarnya merupakan perpanjangan dari [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) dan Quadratic Sieve (QS), yaitu menemukan pasangan non-trivial $(X, Y)$ yang memenuhi kongruensi $X^2 \equiv Y^2 \pmod n$ dan $X \not\equiv \pm Y \pmod n$, untuk kemudian menurunkan faktor dari $n$ melalui $\gcd(X-Y, n)$.
 
 Namun, esensi sejati dari GNFS adalah bahwa ini tidak hanya dilakukan pada lapangan bilangan rasional $\mathbb{Q}$, tetapi mencari "bilangan halus (Smooth numbers)" secara bersamaan baik pada lapangan perluasan yang disebut lapangan bilangan aljabar (Algebraic Number Field) $\mathbb{Q}(\alpha)$ dan lapangan bilangan rasional, serta membangun hubungan kongruensi melalui homomorfisma.
 

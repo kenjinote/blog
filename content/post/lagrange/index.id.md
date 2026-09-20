@@ -17,7 +17,7 @@ tags:
 
 ## Pengantar
 
-Dalam sejarah matematika dan fisika, abad ke-18 adalah era di mana para jenius besar bersinar seperti bintang. Di antara mereka, salah satu matematikawan terbesar, yang sering disebut bersama [Leonhard Euler](https://kenji.blog/p/euler/), adalah **[Joseph-Louis Lagrange](https://kenji.blog/p/lagrange/)** (1736–1813). Ia dikenal sebagai pendiri "mekanika analitik," setelah menetapkan kalkulus variasi dan mengangkat mekanika dari intuisi geometris menjadi analisis matematika murni.
+Dalam sejarah matematika dan fisika, abad ke-18 adalah era di mana para jenius besar bersinar seperti bintang. Di antara mereka, salah satu matematikawan terbesar, yang sering disebut bersama [Leonhard Euler](https://kenji.blog/id/p/euler/), adalah **[Joseph-Louis Lagrange](https://kenji.blog/id/p/lagrange/)** (1736–1813). Ia dikenal sebagai pendiri "mekanika analitik," setelah menetapkan kalkulus variasi dan mengangkat mekanika dari intuisi geometris menjadi analisis matematika murni.
 
 Dalam artikel ini, kita akan menyelami kehidupan yang penuh gejolak dari Lagrange, yang memiliki kepribadian yang sederhana dan kontemplatif, dan pencapaian matematika dan fisikanya yang monumental yang membentuk dasar sains dan teknologi modern.
 
@@ -92,4 +92,4 @@ Konsep "Lagrangian" yang ditinggalkannya telah menjadi bahasa umum untuk menggam
 
 ## Kesimpulan
 
-[Joseph-Louis Lagrange](https://kenji.blog/p/lagrange/) selamat dari abad ke-18 yang bergejolak, namun pikirannya selalu berada di dunia kebenaran matematika murni. Pencapaiannya bukan hanya sekadar penemuan masa lalu; mereka masih bernapas di garis depan fisika dan matematika saat ini. Warisannya, percaya pada keindahan rumus matematika dan universalitas logika, akan terus memandu pencarian umat manusia akan pengetahuan.
+[Joseph-Louis Lagrange](https://kenji.blog/id/p/lagrange/) selamat dari abad ke-18 yang bergejolak, namun pikirannya selalu berada di dunia kebenaran matematika murni. Pencapaiannya bukan hanya sekadar penemuan masa lalu; mereka masih bernapas di garis depan fisika dan matematika saat ini. Warisannya, percaya pada keindahan rumus matematika dan universalitas logika, akan terus memandu pencarian umat manusia akan pengetahuan.

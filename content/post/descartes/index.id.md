@@ -16,7 +16,7 @@ tags:
 
 ## 1. Pendahuluan
 
-[René Descartes](https://kenji.blog/p/descartes/) (1596-1650) adalah seorang filsuf, matematikawan, dan ilmuwan Prancis. Ia meninggalkan ungkapan terkenal "Aku berpikir, maka aku ada (Cogito, ergo sum)" dan secara luas dikenal sebagai bapak filsafat modern. Namun, peran yang dimainkannya dalam sejarah matematika sama besarnya dengan pencapaian filosofisnya.
+[René Descartes](https://kenji.blog/id/p/descartes/) (1596-1650) adalah seorang filsuf, matematikawan, dan ilmuwan Prancis. Ia meninggalkan ungkapan terkenal "Aku berpikir, maka aku ada (Cogito, ergo sum)" dan secara luas dikenal sebagai bapak filsafat modern. Namun, peran yang dimainkannya dalam sejarah matematika sama besarnya dengan pencapaian filosofisnya.
 
 Pencapaian matematika terbesar Descartes adalah penciptaan **geometri analitik**, yang menggabungkan aljabar dan geometri. Dalam artikel ini, kami akan menjelaskan secara rinci tentang episode-episode kehidupannya dan revolusi yang dibawanya ke dunia matematika.
 
@@ -66,7 +66,7 @@ $$
 
 ## 4. Dampak pada Filsafat dan Sains
 
-Geometri analitik Descartes menjadi fondasi yang sangat diperlukan untuk perkembangan matematika dan fisika selanjutnya. Dapat dikatakan bahwa penciptaan kalkulus oleh [Isaac Newton](https://kenji.blog/p/newton/) dan [Gottfried Leibniz](https://kenji.blog/p/leibniz/) hanya mungkin terjadi karena panggung yang disediakan oleh sistem koordinat Kartesius.
+Geometri analitik Descartes menjadi fondasi yang sangat diperlukan untuk perkembangan matematika dan fisika selanjutnya. Dapat dikatakan bahwa penciptaan kalkulus oleh [Isaac Newton](https://kenji.blog/id/p/newton/) dan [Gottfried Leibniz](https://kenji.blog/id/p/leibniz/) hanya mungkin terjadi karena panggung yang disediakan oleh sistem koordinat Kartesius.
 
 Selain itu, "keraguan metodologis" miliknya dalam filsafat, sebuah pendekatan untuk menemukan kebenaran yang pasti setelah meragukan segalanya, menetapkan semangat rasionalisme yang berfungsi sebagai dasar penyelidikan ilmiah.
 
@@ -74,4 +74,4 @@ Selain itu, "keraguan metodologis" miliknya dalam filsafat, sebuah pendekatan un
 
 Descartes adalah seorang pria yang sangat menyukai pemikiran sehingga ada sebuah anekdot bahwa ia tetap berada di tempat tidur hingga larut pagi mengamati pergerakan lalat di langit-langit. (Menurut satu teori, mencoba mengekspresikan pergerakan lalat ini mengarah pada ide sistem koordinat).
 
-Kehidupan dan pemikiran [René Descartes](https://kenji.blog/p/descartes/) terus memberi kita banyak inspirasi hingga hari ini, melampaui batas-batas disiplin akademik. Ketika kita menganggap bahwa grafik komputer saat ini, AI, dan semua jenis teknologi ilmiah beroperasi pada sistem koordinat yang ditinggalkannya, kita dapat menyadari kehebatannya sekali lagi.
+Kehidupan dan pemikiran [René Descartes](https://kenji.blog/id/p/descartes/) terus memberi kita banyak inspirasi hingga hari ini, melampaui batas-batas disiplin akademik. Ketika kita menganggap bahwa grafik komputer saat ini, AI, dan semua jenis teknologi ilmiah beroperasi pada sistem koordinat yang ditinggalkannya, kita dapat menyadari kehebatannya sekali lagi.

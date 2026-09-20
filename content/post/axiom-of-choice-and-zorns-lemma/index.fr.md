@@ -8,7 +8,7 @@ categories: ["mathématiques", "théorie-des-ensembles"]
 tags: ["Axiome du choix", "Lemme de Zorn", "Système axiomatique ZFC", "Fondements des mathématiques", "Mermaid", "KaTeX"]
 ---
 
-# [L'axiome du choix et le lemme de Zorn](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/) : Le concept de « choix » qui a ébranlé les fondements des mathématiques
+# [L'axiome du choix et le lemme de Zorn](https://kenji.blog/fr/p/axiom-of-choice-and-zorns-lemma/) : Le concept de « choix » qui a ébranlé les fondements des mathématiques
 
 Dans l'histoire des mathématiques, aucun axiome n'a suscité autant de débats et n'est devenu aussi indispensable aux mathématiques modernes que l' **axiome du choix** (Axiom of Choice). Dans cet article, nous explorons en profondeur l'axiome du choix et sa proposition équivalente, le **lemme de Zorn** (Zorn's Lemma), depuis les bases. Nous proposons une explication complète couvrant la compréhension intuitive, la formalisation mathématique rigoureuse, le contexte historique et les applications dans divers domaines des mathématiques modernes.
 
@@ -73,7 +73,7 @@ graph TD
 
 ## 3. Le réseau des équivalences : axiome du choix, lemme de Zorn et théorème de bonne ordination
 
-[L'axiome du choix et le lemme de Zorn](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/) semblent être des affirmations totalement différentes, mais sous le système axiomatique ZF, ils sont équivalents (si l'un est vrai, l'autre l'est aussi). Dans ce réseau de preuves d'équivalence, le **théorème de bonne ordination** (Well-ordering theorem), démontré par Ernst Zermelo, joue un rôle crucial.
+[L'axiome du choix et le lemme de Zorn](https://kenji.blog/fr/p/axiom-of-choice-and-zorns-lemma/) semblent être des affirmations totalement différentes, mais sous le système axiomatique ZF, ils sont équivalents (si l'un est vrai, l'autre l'est aussi). Dans ce réseau de preuves d'équivalence, le **théorème de bonne ordination** (Well-ordering theorem), démontré par Ernst Zermelo, joue un rôle crucial.
 
 ### 3.1. Qu'est-ce que le théorème de bonne ordination ?
 
@@ -156,6 +156,6 @@ La raison est simple. Si l'axiome du choix est rejeté (en n'adoptant que le sys
 
 ## 7. Conclusion : un pont au-dessus de l'abîme de l'infini
 
-[L'axiome du choix et le lemme de Zorn](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/) démontrent comment l'opération de « choix » – si évidente dans le domaine fini qu'elle passe inaperçue – engendre des structures profondément profondes, terrifiantes et belles dès que l'on pénètre dans le domaine de l'infini.
+[L'axiome du choix et le lemme de Zorn](https://kenji.blog/fr/p/axiom-of-choice-and-zorns-lemma/) démontrent comment l'opération de « choix » – si évidente dans le domaine fini qu'elle passe inaperçue – engendre des structures profondément profondes, terrifiantes et belles dès que l'on pénètre dans le domaine de l'infini.
 
 Le lemme de Zorn, telle une baguette magique puissante garantissant l'existence du « maximal » à l'extrémité des chaînes infinies, a propulsé le développement de l'algèbre et de l'analyse. Au fondement des théorèmes mathématiques que nous utilisons quotidiennement sans y penser repose cette philosophie profonde qu'est l'« axiome du choix ». Les fondements des mathématiques ne sont pas de simples casse-têtes logiques, mais un grand drame illustrant comment la raison humaine affronte le concept d'infini.

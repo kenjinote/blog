@@ -11,9 +11,9 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 # 1. 前言：質數這宇宙之謎與黎曼猜想
 
-「質數（Prime Numbers）」是只能被1和自己整除的自然數，在數學世界中也被稱為「原子」。2, 3, 5, 7, 11, 13... 這般延續的數列，乍看之下似乎毫無秩序、隨機出現。自從古希臘數學家[歐幾里得](https://kenji.blog/p/euclid/)證明了「質數有無窮多個」以來，無數的數學家們便不斷挑戰，試圖解開隱藏在這個質數排列中的規律。
+「質數（Prime Numbers）」是只能被1和自己整除的自然數，在數學世界中也被稱為「原子」。2, 3, 5, 7, 11, 13... 這般延續的數列，乍看之下似乎毫無秩序、隨機出現。自從古希臘數學家[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)證明了「質數有無窮多個」以來，無數的數學家們便不斷挑戰，試圖解開隱藏在這個質數排列中的規律。
 
-最逼近這個質數之謎的，是1859年由德國數學家[波恩哈德·黎曼](https://kenji.blog/p/riemann/)（[Bernhard Riemann](https://kenji.blog/p/riemann/)）所提出的 **「黎曼猜想（Riemann Hypothesis）」** 。黎曼猜想是現代數學中最重要且未解決的難題之一，被克雷數學研究所列為千禧年大獎難題之一，並懸賞了100萬美元的獎金。
+最逼近這個質數之謎的，是1859年由德國數學家[波恩哈德·黎曼](https://kenji.blog/zh-tw/p/riemann/)（[Bernhard Riemann](https://kenji.blog/zh-tw/p/riemann/)）所提出的 **「黎曼猜想（Riemann Hypothesis）」** 。黎曼猜想是現代數學中最重要且未解決的難題之一，被克雷數學研究所列為千禧年大獎難題之一，並懸賞了100萬美元的獎金。
 
 乍看之下，關於質數分佈的純數學難題，似乎與我們的日常生活毫無關聯。然而，支撐現代社會基礎設施的網際網路安全，特別是 **RSA加密和橢圓曲線密碼學（ECC）等現代密碼技術** ，都深深依賴於巨大質數的性質。
 
@@ -30,13 +30,13 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 - $\pi(100) = 25$
 - $\pi(1000) = 168$
 
-15歲的天才數學家[卡爾·弗里德里希·高斯](https://kenji.blog/p/gauss/)（[Carl Friedrich Gauss](https://kenji.blog/p/gauss/)）在計算了龐大的質數表後，發現質數的出現頻率與自然對數 $\ln x$ 成反比地遞減。也就是說，他猜想在某個數 $x$ 附近找到質數的機率大約是 $\frac{1}{\ln x}$。
+15歲的天才數學家[卡爾·弗里德里希·高斯](https://kenji.blog/zh-tw/p/gauss/)（[Carl Friedrich Gauss](https://kenji.blog/zh-tw/p/gauss/)）在計算了龐大的質數表後，發現質數的出現頻率與自然對數 $\ln x$ 成反比地遞減。也就是說，他猜想在某個數 $x$ 附近找到質數的機率大約是 $\frac{1}{\ln x}$。
 
 將這個猜想用積分來表現，就是 **對數積分（Logarithmic integral）** $\text{Li}(x)$：
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-高斯的猜想後來在1896年由雅克·阿達馬和夏爾-讓·德拉瓦萊·普桑各自獨立證明，並確立為 **質數定理（[Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT）** 。
+高斯的猜想後來在1896年由雅克·阿達馬和夏爾-讓·德拉瓦萊·普桑各自獨立證明，並確立為 **質數定理（[Prime Number Theorem](https://kenji.blog/zh-tw/p/prime-number-theorem/), PNT）** 。
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -50,7 +50,7 @@ $$ \pi(x) \sim \frac{x}{\ln x} $$
 
 # 3. 黎曼ζ函數與歐拉乘積
 
-在解析質數分佈時，最強大的武器就是 **黎曼ζ函數（Riemann Zeta Function）** 。這原本是由萊昂哈德·歐拉（[Leonhard Euler](https://kenji.blog/p/euler/)）針對實數 $s > 1$ 所定義的無窮級數。
+在解析質數分佈時，最強大的武器就是 **黎曼ζ函數（Riemann Zeta Function）** 。這原本是由萊昂哈德·歐拉（[Leonhard Euler](https://kenji.blog/zh-tw/p/euler/)）針對實數 $s > 1$ 所定義的無窮級數。
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -74,7 +74,7 @@ $$ \zeta(s) = \prod_{p \text{ prime}} \frac{1}{1 - p^{-s}} = \left( \frac{1}{1 -
 
 $$ \zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s) $$
 
-這裡的 $\Gamma(x)$ 是[伽瑪函數](https://kenji.blog/p/gamma-function/)。透過這個方程式，我們可以從右半平面的性質得知左半平面的性質。
+這裡的 $\Gamma(x)$ 是[伽瑪函數](https://kenji.blog/zh-tw/p/gamma-function/)。透過這個方程式，我們可以從右半平面的性質得知左半平面的性質。
 
 ### 零點（Zeros of the Zeta Function）
 使ζ函數的值為 0 的複數 $s$ 被稱為「零點」。
@@ -184,7 +184,7 @@ graph LR
 黎曼猜想的證明本身，並不會立刻孕育出能讓質因數分解戲劇性加速的魔法演算法。因為黎曼猜想終究是關於質數「巨觀分佈規律性」的定理，並不能直接告訴我們個別數字 $N$ 能被哪個質數整除（局部性質）。
 
 然而，這並不代表影響為零。
-因為在證明黎曼猜想的過程中， **極有可能性會發現「新的數學工具」或「未知的解析手法」** 。回顧歷史，當[費馬最後定理](https://kenji.blog/p/fermats-last-theorem/)或[龐加萊猜想](https://kenji.blog/p/poincare-conjecture/)被證明時，在此過程中發展出的新理論，都讓整個數學領域有了大幅度的飛躍。
+因為在證明黎曼猜想的過程中， **極有可能性會發現「新的數學工具」或「未知的解析手法」** 。回顧歷史，當[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)或[龐加萊猜想](https://kenji.blog/zh-tw/p/poincare-conjecture/)被證明時，在此過程中發展出的新理論，都讓整個數學領域有了大幅度的飛躍。
 
 如果確立了能夠完全操作黎曼ζ函數零點性質的未知代數幾何手法，或是非交換幾何的手法，我們不能否認，這最終可能導致劃時代的質因數分解演算法（例如將計算複雜度降至多項式時間的古典演算法）被發現。就這個意義而言，密碼學家絕不能對黎曼猜想的動向掉以輕心。
 

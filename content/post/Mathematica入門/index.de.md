@@ -107,7 +107,7 @@ Ausgabe
 {{-2, 1}, {1.5, -0.5}}
 ```
 
-## [Eigenwerte und Eigenvektoren](https://kenji.blog/p/eigenvalues-and-eigenvectors/) berechnen
+## [Eigenwerte und Eigenvektoren](https://kenji.blog/de/p/eigenvalues-and-eigenvectors/) berechnen
 ```
 Eigensystem[m]
 ```

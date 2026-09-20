@@ -60,7 +60,7 @@ Ici, il est connu que $c_{n-1} = -\text{tr}(A)$ (l'opposé de la trace) et que $
 
 Nous en arrivons maintenant au cœur du **théorème de Cayley-Hamilton**. L'énoncé du théorème est très simple mais puissant.
 
-> **Théorème ([Théorème de Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/))**
+> **Théorème ([Théorème de Cayley-Hamilton](https://kenji.blog/fr/p/cayley-hamilton-theorem/))**
 > Pour toute matrice carrée $A$ d'ordre $n$ et son polynôme caractéristique $p(\lambda) = \det(\lambda I - A)$, substituer la matrice $A$ à la variable $\lambda$ dans le polynôme donne la matrice nulle $O$. C'est-à-dire que
 > $$ p(A) = A^n + c_{n-1}A^{n-1} + \dots + c_1 A + c_0 I = O $$
 > est vrai.

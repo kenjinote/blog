@@ -10,11 +10,11 @@ tags: ["小平邦彥", "菲爾茲獎", "複幾何"]
 
 ## 1. 引言
 
-日本偉大的數學家 **[小平邦彥](https://kenji.blog/p/kodaira-kunihiko/)** ([Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/), 1915–1997) 是日本首位菲爾茲獎得主，對20世紀的代數幾何和複流形理論做出了巨大貢獻。他的工作不僅對現代數學，而且對超弦理論等理論物理學也產生了深遠的影響。在本文中，我們將探索小平的生平及其充滿直覺的數學世界。
+日本偉大的數學家 **[小平邦彥](https://kenji.blog/zh-tw/p/kodaira-kunihiko/)** ([Kunihiko Kodaira](https://kenji.blog/zh-tw/p/kodaira-kunihiko/), 1915–1997) 是日本首位菲爾茲獎得主，對20世紀的代數幾何和複流形理論做出了巨大貢獻。他的工作不僅對現代數學，而且對超弦理論等理論物理學也產生了深遠的影響。在本文中，我們將探索小平的生平及其充滿直覺的數學世界。
 
 ## 2. 人生軌跡
 
-[小平邦彥](https://kenji.blog/p/kodaira-kunihiko/)於1915年出生在東京。他從小就喜歡彈鋼琴，據說他對音樂的深厚熱愛也影響了後來的數學思維。他的名言是：「理解數學就像聽音樂並感到它是美妙的一樣」。
+[小平邦彥](https://kenji.blog/zh-tw/p/kodaira-kunihiko/)於1915年出生在東京。他從小就喜歡彈鋼琴，據說他對音樂的深厚熱愛也影響了後來的數學思維。他的名言是：「理解數學就像聽音樂並感到它是美妙的一樣」。
 
 ```mermaid
 flowchart TD
@@ -74,4 +74,4 @@ def calculate_kodaira_dimension(is_general_type: bool, dim: int) -> int:
 
 ## 5. 結論
 
-[小平邦彥](https://kenji.blog/p/kodaira-kunihiko/)留下的數學就像是一部解析學、代數學和幾何學完美和諧交融的宏大交響樂。他直覺的方法和深刻的洞察力至今仍令許多數學家著迷。
+[小平邦彥](https://kenji.blog/zh-tw/p/kodaira-kunihiko/)留下的數學就像是一部解析學、代數學和幾何學完美和諧交融的宏大交響樂。他直覺的方法和深刻的洞察力至今仍令許多數學家著迷。

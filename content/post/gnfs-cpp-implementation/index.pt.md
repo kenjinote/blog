@@ -271,7 +271,7 @@ $X^2 - Y^2 \equiv 0 \pmod N$
 Em outras palavras, $(X-Y)(X+Y)$ é um múltiplo de $N$.
 
 Se $X \not\equiv \pm Y \pmod N$ (uma solução não trivial), então haverá um "divisor comum maior que 1 e menor que $N$" entre $(X-Y)$ e $N$.
-Aqui, usando o algoritmo de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) para calcular **$\gcd(X-Y, N)$** , os fatores primos de $N$ podem ser encontrados muito facilmente.
+Aqui, usando o algoritmo de [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) para calcular **$\gcd(X-Y, N)$** , os fatores primos de $N$ podem ser encontrados muito facilmente.
 
 No entanto, encontrar esses $X$ e $Y$ é como procurar uma agulha em um palheiro. Portanto, o GNFS tem uma abordagem genial: criar **dois mundos** - "o mundo dos inteiros reais" e "o mundo dos corpos algébricos dos polinômios" - e distribuir a computação.
 

@@ -18,7 +18,7 @@ tags:
 
 ## 1. Introducción: Un gigante de la teoría de números moderna
 
-[Gerd Faltings](https://kenji.blog/p/faltings/) es ampliamente reconocido como uno de los geómetras aritméticos más profundos e influyentes de la comunidad matemática desde finales del siglo XX hasta el siglo XXI. En particular, su demostración de la **Conjetura de Mordell** lograda en 1983 se erige como un brillante hito monumental en la historia de la teoría de números y la geometría algebraica. En este artículo, explicaremos detalladamente su vida, su enfoque matemático único y los logros revolucionarios que aportó al mundo matemático.
+[Gerd Faltings](https://kenji.blog/es/p/faltings/) es ampliamente reconocido como uno de los geómetras aritméticos más profundos e influyentes de la comunidad matemática desde finales del siglo XX hasta el siglo XXI. En particular, su demostración de la **Conjetura de Mordell** lograda en 1983 se erige como un brillante hito monumental en la historia de la teoría de números y la geometría algebraica. En este artículo, explicaremos detalladamente su vida, su enfoque matemático único y los logros revolucionarios que aportó al mundo matemático.
 
 ## 2. Primeros años y carrera
 
@@ -28,7 +28,7 @@ En 1978, obtuvo su doctorado bajo la supervisión de Hans-Joachim Nastold. Sus p
 
 ## 3. Logro histórico: Resolución de la Conjetura de Mordell
 
-Lo que grabó eternamente el nombre de Faltings en la historia de las matemáticas fue indudablemente su resolución de la **Conjetura de Mordell**. Propuesta por [Louis Mordell](https://kenji.blog/p/mordell/) en 1922, esta conjetura era un problema profundamente complejo con respecto al número de soluciones racionales de las ecuaciones diofánticas.
+Lo que grabó eternamente el nombre de Faltings en la historia de las matemáticas fue indudablemente su resolución de la **Conjetura de Mordell**. Propuesta por [Louis Mordell](https://kenji.blog/es/p/mordell/) en 1922, esta conjetura era un problema profundamente complejo con respecto al número de soluciones racionales de las ecuaciones diofánticas.
 
 El enunciado de la conjetura es el siguiente:
 
@@ -36,7 +36,7 @@ El enunciado de la conjetura es el siguiente:
 
 Esta conjetura estaba profundamente relacionada con el teorema de Pitágoras y el Último Teorema de Fermat, y fue un problema formidable que muchos genios matemáticos habían desafiado y fallado a lo largo de los años.
 
-Faltings atacó este problema manipulando hábilmente la enorme maquinaria de la geometría algebraica construida por [Alexander Grothendieck](https://kenji.blog/p/grothendieck/), como la teoría de esquemas y la cohomología etal, e introduciendo además un nuevo marco llamado geometría de Arakelov.
+Faltings atacó este problema manipulando hábilmente la enorme maquinaria de la geometría algebraica construida por [Alexander Grothendieck](https://kenji.blog/es/p/grothendieck/), como la teoría de esquemas y la cohomología etal, e introduciendo además un nuevo marco llamado geometría de Arakelov.
 
 Aunque la estructura lógica de su demostración es altamente compleja, la idea central se puede dividir en las siguientes tres etapas (demostraciones de conjeturas).
 
@@ -88,6 +88,6 @@ A lo largo de su tiempo como profesor en la Universidad de Princeton y como dire
 
 ## 7. Conclusión
 
-El nombre de [Gerd Faltings](https://kenji.blog/p/faltings/) se transmitirá para siempre como el solucionador de la **Conjetura de Mordell**. Sin embargo, su verdadera grandeza no reside simplemente en resolver un único problema difícil, sino en crear nuevos paradigmas matemáticos como la geometría de Arakelov y la teoría de Hodge p-ádica.
+El nombre de [Gerd Faltings](https://kenji.blog/es/p/faltings/) se transmitirá para siempre como el solucionador de la **Conjetura de Mordell**. Sin embargo, su verdadera grandeza no reside simplemente en resolver un único problema difícil, sino en crear nuevos paradigmas matemáticos como la geometría de Arakelov y la teoría de Hodge p-ádica.
 
 Incluso hoy en día, las teorías y la filosofía que creó continúan proporcionando una inmensa inspiración a matemáticos de todo el mundo. Siempre que intentamos tocar el abismo de la teoría de números, el camino forjado por Faltings siempre está ante nosotros.

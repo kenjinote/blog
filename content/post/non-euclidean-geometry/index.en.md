@@ -8,9 +8,9 @@ categories: ["mathematics", "physics"]
 tags: ["Geometry", "Relativity", "History of Science", "Math"]
 ---
 
-## 1. Introduction: The Curse of [Euclid](https://kenji.blog/p/euclid/)
+## 1. Introduction: The Curse of [Euclid](https://kenji.blog/en/p/euclid/)
 
-In the 3rd century BC, the ancient Greek mathematician [Euclid](https://kenji.blog/p/euclid/) axiomatically systematized the geometrical knowledge of the time in his book "Elements". He proposed 5 postulates (demands), but the 5th postulate, the so-called **parallel postulate**, was more complex than the other four and would plague many mathematicians.
+In the 3rd century BC, the ancient Greek mathematician [Euclid](https://kenji.blog/en/p/euclid/) axiomatically systematized the geometrical knowledge of the time in his book "Elements". He proposed 5 postulates (demands), but the 5th postulate, the so-called **parallel postulate**, was more complex than the other four and would plague many mathematicians.
 
 $$
 \text{5th Postulate: If a straight line intersects two straight lines and makes the interior angles on the same side less than two right angles, the two straight lines, if extended indefinitely, intersect on that side on which are the angles less than two right angles.}
@@ -34,7 +34,7 @@ graph TD
 
 ## 3. The Discovery of "Curved Space": The Birth of Hyperbolic Geometry
 
-Entering the 19th century, a revolution finally occurred. Three men, the German [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), the Hungarian János Bolyai, and the Russian Nikolai Lobachevsky, independently reached the conclusion that "the 5th postulate is independent of the other postulates, and there exists a completely new geometry where it does not hold."
+Entering the 19th century, a revolution finally occurred. Three men, the German [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/), the Hungarian János Bolyai, and the Russian Nikolai Lobachevsky, independently reached the conclusion that "the 5th postulate is independent of the other postulates, and there exists a completely new geometry where it does not hold."
 
 The geometry they discovered is now called **hyperbolic geometry**. In this space, there exist "infinitely many" parallel lines passing through a single point outside a straight line. Also, the sum of the interior angles of a triangle is always less than 180 degrees.
 
@@ -46,11 +46,11 @@ Because of the overwhelming innovation of this discovery, Gauss refrained from p
 
 ## 4. Riemannian Geometry: The Generalization of the Concept of Space
 
-The next leap in non-[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry was brought about by [Bernhard Riemann](https://kenji.blog/p/riemann/), a student of Gauss. In his 1854 inaugural lecture, Riemann presented groundbreaking ideas about the foundations of geometry.
+The next leap in non-[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry was brought about by [Bernhard Riemann](https://kenji.blog/en/p/riemann/), a student of Gauss. In his 1854 inaugural lecture, Riemann presented groundbreaking ideas about the foundations of geometry.
 
 He introduced the **metric tensor**, which locally defines the bending (curvature) of space, and constructed a more general geometry (**Riemannian geometry**) where the dimension and curvature of space can vary from place to place.
 
-Within Riemann's framework, in addition to [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry (zero curvature) and hyperbolic geometry (negative constant curvature), the geometry of a sphere (positive constant curvature, **elliptic geometry**) could also be treated uniformly. In elliptic geometry, parallel lines "do not exist", and the sum of the interior angles of a triangle is greater than 180 degrees.
+Within Riemann's framework, in addition to [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry (zero curvature) and hyperbolic geometry (negative constant curvature), the geometry of a sphere (positive constant curvature, **elliptic geometry**) could also be treated uniformly. In elliptic geometry, parallel lines "do not exist", and the sum of the interior angles of a triangle is greater than 180 degrees.
 
 $$
 \text{The sum of the interior angles of a triangle in elliptic geometry} > 180^\circ
@@ -80,6 +80,6 @@ In the above Einstein equation, the left side represents the geometric structure
 
 ## 6. Conclusion
 
-The exploration of non-[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry, which began with a modest doubt about [Euclid](https://kenji.blog/p/euclid/)'s 5th postulate, shattered human's intuitive preconceptions about space and proved the freedom of mathematics. And it ultimately bore fruit as the general theory of relativity, which unravels the fundamental structure of the universe.
+The exploration of non-[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry, which began with a modest doubt about [Euclid](https://kenji.blog/en/p/euclid/)'s 5th postulate, shattered human's intuitive preconceptions about space and proved the freedom of mathematics. And it ultimately bore fruit as the general theory of relativity, which unravels the fundamental structure of the universe.
 
-The pursuit of pure logic in mathematics would later become the indispensable language for describing the deepest truths of the physical world. The history of non-[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry teaches us the greatness of human intellect and the astonishing mysteries of the natural world.
+The pursuit of pure logic in mathematics would later become the indispensable language for describing the deepest truths of the physical world. The history of non-[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry teaches us the greatness of human intellect and the astonishing mysteries of the natural world.

@@ -42,7 +42,7 @@ No projeto de mineração, em particular, ele idealizou um sistema avançado de 
 
 Leibniz propôs o estabelecimento de academias a vários monarcas e atuou como o primeiro presidente da Academia Prussiana de Ciências, desempenhando um papel central na rede acadêmica europeia. Ele também teve uma audiência com Pedro, o Grande, da Rússia, e forneceu conselhos sobre a reforma do sistema educacional russo.
 
-Em seus últimos anos, no entanto, sua reputação foi profundamente manchada pela "controvérsia sobre a prioridade do cálculo" que eclodiu com [Isaac Newton](https://kenji.blog/p/newton/). Além disso, mesmo depois de seu soberano em Hanôver ter partido para Londres como Rei Jorge I da Grã-Bretanha, Leibniz recebeu ordens para concluir a compilação dos livros de história e foi forçado a permanecer em Hanôver, enfrentando um período de infortúnio. Quando ele morreu aos 70 anos em 1716, diz-se que apenas seu secretário compareceu ao seu funeral.
+Em seus últimos anos, no entanto, sua reputação foi profundamente manchada pela "controvérsia sobre a prioridade do cálculo" que eclodiu com [Isaac Newton](https://kenji.blog/pt/p/newton/). Além disso, mesmo depois de seu soberano em Hanôver ter partido para Londres como Rei Jorge I da Grã-Bretanha, Leibniz recebeu ordens para concluir a compilação dos livros de história e foi forçado a permanecer em Hanôver, enfrentando um período de infortúnio. Quando ele morreu aos 70 anos em 1716, diz-se que apenas seu secretário compareceu ao seu funeral.
 
 ## 2. Realizações Matemáticas: Construindo as Bases da Ciência Moderna
 
@@ -64,7 +64,7 @@ $$
 
 ### 2.2 A Controvérsia de Prioridade com Newton
 
-Sobre o cálculo, ocorreu uma das controvérsias mais famosas da história da ciência, com o inglês [Isaac Newton](https://kenji.blog/p/newton/). Newton havia chegado ao conceito de cálculo (o método das fluxões) antes de Leibniz, mas não o publicou por muito tempo. Enquanto isso, Leibniz descobriu o cálculo de forma independente e o publicou primeiro em um artigo de 1684.
+Sobre o cálculo, ocorreu uma das controvérsias mais famosas da história da ciência, com o inglês [Isaac Newton](https://kenji.blog/pt/p/newton/). Newton havia chegado ao conceito de cálculo (o método das fluxões) antes de Leibniz, mas não o publicou por muito tempo. Enquanto isso, Leibniz descobriu o cálculo de forma independente e o publicou primeiro em um artigo de 1684.
 
 Hoje, é consenso comum entre os historiadores que **ambos descobriram o cálculo de forma totalmente independente**. Enquanto o método de Newton estava enraizado na física e na cinemática, o método de Leibniz baseava-se em uma abordagem mais formal e algébrica.
 
@@ -99,7 +99,7 @@ Ao resolver sistemas de equações lineares, Leibniz chegou independentemente ao
 
 ### 2.5 A Invenção da Calculadora de Roda Escalonada
 
-Leibniz não foi apenas um matemático teórico, mas também um inventor prático que cravou seu nome na história das calculadoras mecânicas. Ele aprimorou a calculadora de [Blaise Pascal](https://kenji.blog/p/pascal/) (a Pascaline), que só podia realizar adição e subtração, e inventou uma calculadora usando a "Roda de Leibniz" (o Cilindro Escalonado) capaz de realizar multiplicação e divisão.
+Leibniz não foi apenas um matemático teórico, mas também um inventor prático que cravou seu nome na história das calculadoras mecânicas. Ele aprimorou a calculadora de [Blaise Pascal](https://kenji.blog/pt/p/pascal/) (a Pascaline), que só podia realizar adição e subtração, e inventou uma calculadora usando a "Roda de Leibniz" (o Cilindro Escalonado) capaz de realizar multiplicação e divisão.
 
 Esse mecanismo foi revolucionário e continuou a ser adotado como a estrutura padrão para calculadoras mecânicas ao longo dos séculos seguintes.
 
@@ -133,7 +133,7 @@ Leibniz também fez contribuições significativas à lógica. Ele propôs o "Pr
 
 Leibniz acreditava que o pensamento humano poderia ser reduzido a cálculos matemáticos. Ele sonhava em construir uma "Característica universal" (*Characteristica universalis*) que simbolizaria todos os conceitos, e um "Cálculo racional" (*Calculus ratiocinator*) para manipular esses símbolos de acordo com regras.
 
-A frase que ele deixou para trás, "Calculemos" (*Calculemus*), simboliza seu ideal de chegar à verdade por meio do cálculo, em vez da discussão, sempre que surgissem divergências. Esse conceito foi um precursor da lógica simbólica e uma visão histórica que se conecta diretamente com as teorias computacionais de [Alan Turing](https://kenji.blog/p/turing/) e o conceito moderno de **Inteligência Artificial (IA)**.
+A frase que ele deixou para trás, "Calculemos" (*Calculemus*), simboliza seu ideal de chegar à verdade por meio do cálculo, em vez da discussão, sempre que surgissem divergências. Esse conceito foi um precursor da lógica simbólica e uma visão histórica que se conecta diretamente com as teorias computacionais de [Alan Turing](https://kenji.blog/pt/p/turing/) e o conceito moderno de **Inteligência Artificial (IA)**.
 
 ## 5. Conclusão
 

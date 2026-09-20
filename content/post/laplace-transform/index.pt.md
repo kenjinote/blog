@@ -12,15 +12,15 @@ tags:
   - "Matemática aplicada"
 ---
 
-## Introdução: O que é a [Transformada de Laplace](https://kenji.blog/p/laplace-transform/)?
+## Introdução: O que é a [Transformada de Laplace](https://kenji.blog/pt/p/laplace-transform/)?
 
-Em áreas como física, engenharia e economia, as **equações diferenciais** são uma ferramenta essencial para descrever fenômenos que mudam ao longo do tempo. No entanto, resolver equações diferenciais complexas diretamente às vezes pode ser extremamente difícil. É aqui que entra a **[Transformada de Laplace](https://kenji.blog/p/laplace-transform/)** ([Laplace Transform](https://kenji.blog/p/laplace-transform/)).
+Em áreas como física, engenharia e economia, as **equações diferenciais** são uma ferramenta essencial para descrever fenômenos que mudam ao longo do tempo. No entanto, resolver equações diferenciais complexas diretamente às vezes pode ser extremamente difícil. É aqui que entra a **[Transformada de Laplace](https://kenji.blog/pt/p/laplace-transform/)** ([Laplace Transform](https://kenji.blog/pt/p/laplace-transform/)).
 
 Em termos simples, a transformada de Laplace é uma "ferramenta mágica que converte equações diferenciais difíceis em equações algébricas simples (equações que podem ser resolvidas usando apenas as quatro operações básicas)". O procedimento consiste em mapear um problema complexo expresso no domínio do tempo ($t$) para o domínio da frequência complexa ($s$), resolvê-lo facilmente lá e, em seguida, transformá-lo de volta para o domínio do tempo.
 
 Neste artigo, explicaremos detalhadamente tudo, desde os fundamentos da transformada de Laplace até suas propriedades poderosas e as etapas concretas para resolver equações diferenciais de fato.
 
-## Definição da [Transformada de Laplace](https://kenji.blog/p/laplace-transform/)
+## Definição da [Transformada de Laplace](https://kenji.blog/pt/p/laplace-transform/)
 
 A transformada de Laplace $\mathcal{L}\{f(t)\}$ para uma função de valor real $f(t)$ definida para o tempo $t \ge 0$ é definida pela seguinte integral imprópria:
 
@@ -32,14 +32,14 @@ Aqui, $s$ é uma variável complexa (frequência complexa) e é expressa como $s
 
 Para que esta integral não divirja para o infinito, mas exista como um valor finito (para que convirja), a parte real de $s$, $\sigma$, deve ser maior que um determinado valor. A região que satisfaz essa condição é chamada de **região de convergência**.
 
-## Por que a [Transformada de Laplace](https://kenji.blog/p/laplace-transform/) é Útil?
+## Por que a [Transformada de Laplace](https://kenji.blog/pt/p/laplace-transform/) é Útil?
 
 O motivo pelo qual a transformada de Laplace é extremamente poderosa na resolução de equações diferenciais reside principalmente nos dois pontos a seguir:
 
 1. **A diferenciação se transforma em "multiplicação"**: A operação de diferenciação $d/dt$ no domínio do tempo é transformada em uma operação algébrica simples de "multiplicar por $s$" no domínio $s$.
 2. **As condições iniciais são incorporadas naturalmente**: Como a fórmula de transformação inclui valores iniciais como $f(0)$, ela economiza o trabalho de substituir as condições iniciais posteriormente e ajuda a reduzir erros de cálculo.
 
-## Propriedades Importantes da [Transformada de Laplace](https://kenji.blog/p/laplace-transform/)
+## Propriedades Importantes da [Transformada de Laplace](https://kenji.blog/pt/p/laplace-transform/)
 
 A transformada de Laplace possui várias propriedades importantes que simplificam drasticamente os cálculos.
 
@@ -59,7 +59,7 @@ $$
 \mathcal{L}\{e^{at} f(t)\} = F(s - a)
 $$
 
-### 3. [Transformada de Laplace](https://kenji.blog/p/laplace-transform/) de Derivadas
+### 3. [Transformada de Laplace](https://kenji.blog/pt/p/laplace-transform/) de Derivadas
 
 Esta é a fórmula mais importante para resolver equações diferenciais.
 
@@ -107,7 +107,7 @@ $$
 
 Seja a condição inicial $q(0) = 0$.
 
-**Passo 1: [Transformada de Laplace](https://kenji.blog/p/laplace-transform/)**
+**Passo 1: [Transformada de Laplace](https://kenji.blog/pt/p/laplace-transform/)**
 Aplique a transformada de Laplace a ambos os lados. Seja a transformada de Laplace de $q(t)$ denotada por $Q(s)$.
 
 $$
@@ -133,7 +133,7 @@ $$
 Q(s) = C E \left( \frac{1}{s} - \frac{1}{s + \frac{1}{RC}} \right)
 $$
 
-**Passo 3: [Transformada de Laplace](https://kenji.blog/p/laplace-transform/) Inversa**
+**Passo 3: [Transformada de Laplace](https://kenji.blog/pt/p/laplace-transform/) Inversa**
 Retorne ao domínio do tempo usando a tabela de transformadas. Utilize o fato de que $\frac{1}{s}$ retorna a $1$, e $\frac{1}{s + a}$ retorna a $e^{-at}$.
 
 $$

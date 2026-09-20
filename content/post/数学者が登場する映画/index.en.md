@@ -30,7 +30,7 @@ Another story about cryptanalysis dealing with the Enigma. I love the atmosphere
 # The Man Who Knew Infinity
 ![img.png](img.webp)
 
-A film depicting the interaction between Cambridge University mathematician G.H. Hardy and Indian mathematician [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/). You can feel the beauty of mathematics.
+A film depicting the interaction between Cambridge University mathematician G.H. Hardy and Indian mathematician [Srinivasa Ramanujan](https://kenji.blog/en/p/ramanujan/). You can feel the beauty of mathematics.
 
 # The Theory of Everything
 ![img_1.png](img_1.webp)

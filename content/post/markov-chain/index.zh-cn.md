@@ -14,9 +14,9 @@ tags:
 
 ## 引言
 
-我们生活的世界充满了不确定性。明天的天气、股票价格的波动、互联网上的页面跳转等，存在许多难以预测的现象。用于在数学上对这些不确定现象进行建模的强大工具就是 **[马尔可夫链](https://kenji.blog/p/markov-chain/)** （Markov chain）。
+我们生活的世界充满了不确定性。明天的天气、股票价格的波动、互联网上的页面跳转等，存在许多难以预测的现象。用于在数学上对这些不确定现象进行建模的强大工具就是 **[马尔可夫链](https://kenji.blog/zh-cn/p/markov-chain/)** （Markov chain）。
 
-[马尔可夫链](https://kenji.blog/p/markov-chain/)最大的特点在于它具有 **马尔可夫性** （Markov property），即“未来的状态不依赖于过去的完整历史，而仅由当前状态决定”。在本文中，我们将详细解释这一迷人数理模型的基础知识、具体的计算方法，以及其在现实社会中的应用。
+[马尔可夫链](https://kenji.blog/zh-cn/p/markov-chain/)最大的特点在于它具有 **马尔可夫性** （Markov property），即“未来的状态不依赖于过去的完整历史，而仅由当前状态决定”。在本文中，我们将详细解释这一迷人数理模型的基础知识、具体的计算方法，以及其在现实社会中的应用。
 
 ## 什么是马尔可夫性？
 
@@ -30,7 +30,7 @@ $$
 
 ## 转移概率矩阵
 
-描述[马尔可夫链](https://kenji.blog/p/markov-chain/)不可或缺的是 **转移概率矩阵** （Transition Probability Matrix）。当状态空间有限时，假设从状态 $i$ 转移到状态 $j$ 的概率为 $p_{ij}$，则矩阵 $P$ 表示如下：
+描述[马尔可夫链](https://kenji.blog/zh-cn/p/markov-chain/)不可或缺的是 **转移概率矩阵** （Transition Probability Matrix）。当状态空间有限时，假设从状态 $i$ 转移到状态 $j$ 的概率为 $p_{ij}$，则矩阵 $P$ 表示如下：
 
 $$
 P = \begin{pmatrix}
@@ -74,7 +74,7 @@ graph TD
 
 ## 平稳分布：长期行为
 
-如果长期观察（ $n \to \infty$ ）一个[马尔可夫链](https://kenji.blog/p/markov-chain/)，状态的概率分布会变成什么样呢？在许多[马尔可夫链](https://kenji.blog/p/markov-chain/)中，无论初始状态如何，都会收敛到一个特定的概率分布。这被称为 **平稳分布** （Stationary distribution）。
+如果长期观察（ $n \to \infty$ ）一个[马尔可夫链](https://kenji.blog/zh-cn/p/markov-chain/)，状态的概率分布会变成什么样呢？在许多[马尔可夫链](https://kenji.blog/zh-cn/p/markov-chain/)中，无论初始状态如何，都会收敛到一个特定的概率分布。这被称为 **平稳分布** （Stationary distribution）。
 
 假设概率向量为 $\pi$，平稳分布满足以下方程：
 
@@ -98,21 +98,21 @@ $$
 
 解得 $\pi_{\text{晴天}} = \frac{4}{7} \approx 0.57$ ， $\pi_{\text{雨天}} = \frac{3}{7} \approx 0.43$。也就是说，从长期来看，大约有 57% 的概率是晴天，43% 的概率是雨天。
 
-## [马尔可夫链](https://kenji.blog/p/markov-chain/)的应用
+## [马尔可夫链](https://kenji.blog/zh-cn/p/markov-chain/)的应用
 
-[马尔可夫链](https://kenji.blog/p/markov-chain/)不仅停留在数学世界，还被应用于各种现实世界系统中。
+[马尔可夫链](https://kenji.blog/zh-cn/p/markov-chain/)不仅停留在数学世界，还被应用于各种现实世界系统中。
 
 ### 1. Google 的 PageRank 算法
 通过将互联网上的网页视为状态，将点击链接的行为视为概率转移，从而计算网页的重要性。可以说 PageRank 是在计算互联网这个巨大状态空间中的平稳分布。
 
 ### 2. 自然语言处理与文本生成
-通过使用[马尔可夫链](https://kenji.blog/p/markov-chain/)对句子中单词的序列进行建模，可以预测下一个可能出现的单词，并生成自然的句子（N元语法模型）。这是现代 AI 语言模型的基础思想。
+通过使用[马尔可夫链](https://kenji.blog/zh-cn/p/markov-chain/)对句子中单词的序列进行建模，可以预测下一个可能出现的单词，并生成自然的句子（N元语法模型）。这是现代 AI 语言模型的基础思想。
 
 ### 3. 经济学与金融工程
 对股票价格波动和消费者品牌转移（购买某产品的顾客转向其他产品的概率）进行建模，并被应用于市场预测和营销策略。
 
 ## 总结
 
-[马尔可夫链](https://kenji.blog/p/markov-chain/)基于一个简单而强大的假设：“只要有当前的信息，就可以预测未来”。凭借这种 **马尔可夫性** ，我们可以将看似复杂的现象公式化为转移概率矩阵，并在数学上推导出长期趋势（平稳分布）。
+[马尔可夫链](https://kenji.blog/zh-cn/p/markov-chain/)基于一个简单而强大的假设：“只要有当前的信息，就可以预测未来”。凭借这种 **马尔可夫性** ，我们可以将看似复杂的现象公式化为转移概率矩阵，并在数学上推导出长期趋势（平稳分布）。
 
-[马尔可夫链](https://kenji.blog/p/markov-chain/)不仅具有理论上的美感，在从信息检索到 AI 以及经济预测等领域也有着广泛的应用，可以说是解读不确定世界的非常重要的透镜之一。
+[马尔可夫链](https://kenji.blog/zh-cn/p/markov-chain/)不仅具有理论上的美感，在从信息检索到 AI 以及经济预测等领域也有着广泛的应用，可以说是解读不确定世界的非常重要的透镜之一。

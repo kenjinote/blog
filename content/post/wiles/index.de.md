@@ -10,21 +10,21 @@ tags: ["Andrew Wiles", "Fermat", "Zahlentheorie"]
 
 ## Einführung
 
-In der Geschichte der Mathematik sind nur wenige Geschichten so dramatisch und inspirierend wie diese. Der britische Mathematiker **[Andrew Wiles](https://kenji.blog/p/wiles/)** vollbrachte die monumentale Leistung, "Fermats Letzten Satz" zu beweisen, ein Problem, das über 350 Jahre lang ungelöst geblieben war.
+In der Geschichte der Mathematik sind nur wenige Geschichten so dramatisch und inspirierend wie diese. Der britische Mathematiker **[Andrew Wiles](https://kenji.blog/de/p/wiles/)** vollbrachte die monumentale Leistung, "Fermats Letzten Satz" zu beweisen, ein Problem, das über 350 Jahre lang ungelöst geblieben war.
 
 Sein Lebensweg liest sich wie ein Film, beginnend mit einem romantischen Kindheitstraum, gefolgt von sieben Jahren einsamer, geheimer Forschung, der niederschmetternden Entdeckung eines Fehlers und einem wundersamen Comeback. Dieser Artikel befasst sich mit den Episoden in Wiles' Leben und den tiefgreifenden mathematischen Errungenschaften, die er erbrachte.
 
 ## Der Traum eines Jungen: Eine Begegnung im Alter von 10 Jahren
 
-[Andrew Wiles](https://kenji.blog/p/wiles/) wurde am 11. April 1953 in Cambridge, England, geboren. Sein Schicksal besiegelte sich, als er erst 10 Jahre alt war. In seiner örtlichen Bibliothek nahm er ein Mathematikbuch mit dem Titel "Men of Mathematics" (von E. T. Bell) in die Hand.
+[Andrew Wiles](https://kenji.blog/de/p/wiles/) wurde am 11. April 1953 in Cambridge, England, geboren. Sein Schicksal besiegelte sich, als er erst 10 Jahre alt war. In seiner örtlichen Bibliothek nahm er ein Mathematikbuch mit dem Titel "Men of Mathematics" (von E. T. Bell) in die Hand.
 
-In diesem Buch stieß er auf das, was als das größte Rätsel in der Geschichte der Mathematik galt: [Fermats Letzter Satz](https://kenji.blog/p/fermats-last-theorem/). Es ist das berühmte Theorem, bei dem der französische Mathematiker [Pierre de Fermat](https://kenji.blog/p/fermat/) an den Rand eines Buches schrieb: "Ich habe einen wahrhaft wunderbaren Beweis für diesen Satz gefunden, doch ist der Rand hier zu schmal, um ihn zu fassen."
+In diesem Buch stieß er auf das, was als das größte Rätsel in der Geschichte der Mathematik galt: [Fermats Letzter Satz](https://kenji.blog/de/p/fermats-last-theorem/). Es ist das berühmte Theorem, bei dem der französische Mathematiker [Pierre de Fermat](https://kenji.blog/de/p/fermat/) an den Rand eines Buches schrieb: "Ich habe einen wahrhaft wunderbaren Beweis für diesen Satz gefunden, doch ist der Rand hier zu schmal, um ihn zu fassen."
 
 Als 10-jähriger Junge war Wiles zutiefst fasziniert davon, wie einfach der Satz aussah, aber wie er jahrhundertelang die Bemühungen großer Mathematiker vereitelt hatte. "Ich werde der erste Mensch sein, der diesen Satz beweist", schwor sich der Junge. Diese **reine Leidenschaft** wurde zur treibenden Kraft für den Rest seines Lebens.
 
-## Was ist [Fermats Letzter Satz](https://kenji.blog/p/fermats-last-theorem/)?
+## Was ist [Fermats Letzter Satz](https://kenji.blog/de/p/fermats-last-theorem/)?
 
-[Fermats Letzter Satz](https://kenji.blog/p/fermats-last-theorem/) wird durch die folgende sehr einfache Formel ausgedrückt:
+[Fermats Letzter Satz](https://kenji.blog/de/p/fermats-last-theorem/) wird durch die folgende sehr einfache Formel ausgedrückt:
 
 $$
 x^n + y^n = z^n \quad (\text{wobei } n \ge 3 \text{ eine ganze Zahl ist})
@@ -38,9 +38,9 @@ Obwohl die Aussage selbst für einen Mittelschüler verständlich zu sein schein
 
 In den 1980er Jahren, als Wiles seine Forschungen in Cambridge und Oxford vorangetrieben hatte und schließlich Professor an der Princeton University in den Vereinigten Staaten wurde, tauchte in der mathematischen Welt ein völlig neuer Ansatz zur Lösung von Fermats Letztem Satz auf. Es war eine Verbindung zur "Taniyama-Shimura-Vermutung".
 
-Die Taniyama-Shimura-Vermutung ist eine tiefe mathematische Vermutung, die besagt, dass "alle elliptischen Kurven über dem Körper der rationalen Zahlen modular sind", was auf den ersten Blick nichts mit Fermats Satz zu tun zu haben scheint. Im Jahr 1984 schlug Gerhard Frey jedoch die Idee vor, dass "wenn [Fermats Letzter Satz](https://kenji.blog/p/fermats-last-theorem/) falsch ist (was bedeutet, dass eine Lösung existiert), die daraus erstellte spezielle elliptische Kurve (die Frey-Kurve) nicht modular wäre, was der Taniyama-Shimura-Vermutung widersprechen würde."
+Die Taniyama-Shimura-Vermutung ist eine tiefe mathematische Vermutung, die besagt, dass "alle elliptischen Kurven über dem Körper der rationalen Zahlen modular sind", was auf den ersten Blick nichts mit Fermats Satz zu tun zu haben scheint. Im Jahr 1984 schlug Gerhard Frey jedoch die Idee vor, dass "wenn [Fermats Letzter Satz](https://kenji.blog/de/p/fermats-last-theorem/) falsch ist (was bedeutet, dass eine Lösung existiert), die daraus erstellte spezielle elliptische Kurve (die Frey-Kurve) nicht modular wäre, was der Taniyama-Shimura-Vermutung widersprechen würde."
 
-Die Situation änderte sich dramatisch im Jahr 1986, als Ken Ribet Freys Idee streng bewies (Satz von Ribet). Mit anderen Worten, es wurde die erstaunliche Tatsache etabliert, dass "wenn man die Taniyama-Shimura-Vermutung beweist, [Fermats Letzter Satz](https://kenji.blog/p/fermats-last-theorem/) automatisch bewiesen ist."
+Die Situation änderte sich dramatisch im Jahr 1986, als Ken Ribet Freys Idee streng bewies (Satz von Ribet). Mit anderen Worten, es wurde die erstaunliche Tatsache etabliert, dass "wenn man die Taniyama-Shimura-Vermutung beweist, [Fermats Letzter Satz](https://kenji.blog/de/p/fermats-last-theorem/) automatisch bewiesen ist."
 
 ```mermaid
 graph TD
@@ -67,7 +67,7 @@ Im Juni 1993 präsentierte Wiles auf einer internationalen Konferenz über Zahle
 
 Als sein Vortrag jedoch voranschritt, begannen die Mathematiker im Publikum zu erkennen, was er zu beweisen versuchte. Die Atmosphäre im Raum heizte sich allmählich auf, und zum Vortrag am letzten Tag strömte ein überfülltes Publikum herein.
 
-Am Ende des Vortrags schrieb Wiles die Formel für Fermats Letzten Satz an die Tafel und kündigte leise an: "Ich denke, ich werde hier aufhören." In diesem Moment brach der Raum in tosenden Applaus aus. Medien auf der ganzen Welt berichteten ausführlich: "[Fermats Letzter Satz](https://kenji.blog/p/fermats-last-theorem/) endlich bewiesen!" und machten Wiles plötzlich zu einer Berühmtheit.
+Am Ende des Vortrags schrieb Wiles die Formel für Fermats Letzten Satz an die Tafel und kündigte leise an: "Ich denke, ich werde hier aufhören." In diesem Moment brach der Raum in tosenden Applaus aus. Medien auf der ganzen Welt berichteten ausführlich: "[Fermats Letzter Satz](https://kenji.blog/de/p/fermats-last-theorem/) endlich bewiesen!" und machten Wiles plötzlich zu einer Berühmtheit.
 
 ## Der Albtraum beginnt: Ein Fehler im Beweis
 
@@ -85,7 +85,7 @@ Im September 1994 beschloss Wiles schließlich, aufzugeben, und dachte daran, ei
 
 Plötzlich durchzuckte eine Idee seinen Geist, den zuvor verworfenen Ansatz der Iwasawa-Theorie mit dieser Kolyvagin-Flach-Methode zu kombinieren. Es war ein Moment purer Offenbarung, in dem die Schwäche des einen den anderen perfekt ergänzte.
 
-> "Es war eine unglaubliche Offenbarung. Es war so schön, so einfach, und ich konnte nicht verstehen, wie ich es hatte übersehen können." ([Andrew Wiles](https://kenji.blog/p/wiles/))
+> "Es war eine unglaubliche Offenbarung. Es war so schön, so einfach, und ich konnte nicht verstehen, wie ich es hatte übersehen können." ([Andrew Wiles](https://kenji.blog/de/p/wiles/))
 
 Dank dieses "magischen Moments" wurde der Fehler im Beweis vollständig behoben. Im Oktober 1994 reichten Wiles und Taylor zwei korrigierte Papiere ein, was dem größten Rätsel der mathematischen Welt nach 350 Jahren endgültig ein Ende setzte.
 
@@ -99,6 +99,6 @@ Für diese Leistung erhielt Wiles zahlreiche prestigeträchtige Auszeichnungen, 
 
 ## Fazit
 
-Die Geschichte von [Andrew Wiles](https://kenji.blog/p/wiles/) zeigt die unendlichen Möglichkeiten der Menschen, die durch reine Neugier und einen unbezwingbaren Geist hervorgebracht werden. Der scheinbar **waghalsige Traum**, den ein 10-jähriger Junge hegte, wurde Jahrzehnte später Wirklichkeit, nachdem er zahlreiche Rückschläge überwunden hatte.
+Die Geschichte von [Andrew Wiles](https://kenji.blog/de/p/wiles/) zeigt die unendlichen Möglichkeiten der Menschen, die durch reine Neugier und einen unbezwingbaren Geist hervorgebracht werden. Der scheinbar **waghalsige Traum**, den ein 10-jähriger Junge hegte, wurde Jahrzehnte später Wirklichkeit, nachdem er zahlreiche Rückschläge überwunden hatte.
 
-Obwohl [Fermats Letzter Satz](https://kenji.blog/p/fermats-last-theorem/) gelöst wurde, erforschen viele Mathematiker weiterhin die fruchtbaren neuen Felder der Mathematik, die Wiles eröffnet hat, auf der Suche nach der nächsten Wahrheit. Sein Name wird zusammen mit [Pierre de Fermat](https://kenji.blog/p/fermat/) für immer in die Geschichte des menschlichen Intellekts eingraviert sein.
+Obwohl [Fermats Letzter Satz](https://kenji.blog/de/p/fermats-last-theorem/) gelöst wurde, erforschen viele Mathematiker weiterhin die fruchtbaren neuen Felder der Mathematik, die Wiles eröffnet hat, auf der Suche nach der nächsten Wahrheit. Sein Name wird zusammen mit [Pierre de Fermat](https://kenji.blog/de/p/fermat/) für immer in die Geschichte des menschlichen Intellekts eingraviert sein.

@@ -15,7 +15,7 @@ tags:
 
 ## 1. 前言：賭場為什麼不進行 **賭博** ？
 
-世界上有許多豪華的賭場。有些玩家一夜致富，而另一些則失去一切。然而，賭場經營者絕對不會進行 **賭博** 。他們基於堅實的數學基礎，即 **[大數法則（[Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/)）](https://kenji.blog/p/law-of-large-numbers/)** 開展業務。
+世界上有許多豪華的賭場。有些玩家一夜致富，而另一些則失去一切。然而，賭場經營者絕對不會進行 **賭博** 。他們基於堅實的數學基礎，即 **[大數法則（[Law of Large Numbers](https://kenji.blog/zh-tw/p/law-of-large-numbers/)）](https://kenji.blog/p/law-of-large-numbers/)** 開展業務。
 
 本文將全面解析機率論中最基本且最重要的定理「大數法則」，從直觀理解到嚴格的數學定義。此外，我們還將深入探討日常中的誤解以及它在社會中的應用。
 
@@ -64,7 +64,7 @@ sequenceDiagram
 
 ## 4. 大數法則的數學定義
 
-根據收斂強度的不同，大數法則分為 **大數弱法則** （Weak [Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/), WLLN）和 **大數強法則** （Strong [Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/), SLLN）兩種。其嚴格的數學表述如下。
+根據收斂強度的不同，大數法則分為 **大數弱法則** （Weak [Law of Large Numbers](https://kenji.blog/zh-tw/p/law-of-large-numbers/), WLLN）和 **大數強法則** （Strong [Law of Large Numbers](https://kenji.blog/zh-tw/p/law-of-large-numbers/), SLLN）兩種。其嚴格的數學表述如下。
 
 ### 4.1. 大數弱法則 (WLLN)
 

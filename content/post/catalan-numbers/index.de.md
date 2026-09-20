@@ -14,17 +14,17 @@ tags:
   - "bäume"
 ---
 
-## 1. Einführung: Was sind [Catalan-Zahlen](https://kenji.blog/p/catalan-numbers/)?
+## 1. Einführung: Was sind [Catalan-Zahlen](https://kenji.blog/de/p/catalan-numbers/)?
 
-In der Welt der Mathematik und Informatik beobachten wir oft ein wunderschönes Phänomen, bei dem mehrere scheinbar unterschiedliche Probleme in Wirklichkeit genau dieselbe zugrunde liegende Struktur teilen. Ein prominentes Beispiel dafür sind die **[Catalan-Zahlen](https://kenji.blog/p/catalan-numbers/)**.
+In der Welt der Mathematik und Informatik beobachten wir oft ein wunderschönes Phänomen, bei dem mehrere scheinbar unterschiedliche Probleme in Wirklichkeit genau dieselbe zugrunde liegende Struktur teilen. Ein prominentes Beispiel dafür sind die **[Catalan-Zahlen](https://kenji.blog/de/p/catalan-numbers/)**.
 
 Benannt nach dem belgischen Mathematiker Eugène Charles Catalan, beginnt die Catalan-Folge wie folgt:
 
 $$ C_0 = 1, \quad C_1 = 1, \quad C_2 = 2, \quad C_3 = 5, \quad C_4 = 14, \quad C_5 = 42, \quad C_6 = 132, \quad C_7 = 429, \quad \dots $$
 
-Diese Folge taucht als Lösung für eine erstaunlich vielfältige Reihe von kombinatorischen Problemen auf. In diesem Artikel werden wir vier berühmte Beispiele vorstellen, bei denen [Catalan-Zahlen](https://kenji.blog/p/catalan-numbers/) eine Rolle spielen (gültige Klammern, Binärbäume, Polygon-Triangulierung und Dyck-Pfade). Wir werden die rekursive Struktur dahinter entschlüsseln, um zu verstehen, warum sie alle exakt auf dieselbe Folge abgebildet werden. Darüber hinaus werden wir uns mit Berechnungsalgorithmen unter Verwendung der dynamischen Programmierung (DP) und mathematischen Herleitungen mittels erzeugender Funktionen befassen.
+Diese Folge taucht als Lösung für eine erstaunlich vielfältige Reihe von kombinatorischen Problemen auf. In diesem Artikel werden wir vier berühmte Beispiele vorstellen, bei denen [Catalan-Zahlen](https://kenji.blog/de/p/catalan-numbers/) eine Rolle spielen (gültige Klammern, Binärbäume, Polygon-Triangulierung und Dyck-Pfade). Wir werden die rekursive Struktur dahinter entschlüsseln, um zu verstehen, warum sie alle exakt auf dieselbe Folge abgebildet werden. Darüber hinaus werden wir uns mit Berechnungsalgorithmen unter Verwendung der dynamischen Programmierung (DP) und mathematischen Herleitungen mittels erzeugender Funktionen befassen.
 
-## 2. Vier konkrete Beispiele für [Catalan-Zahlen](https://kenji.blog/p/catalan-numbers/)
+## 2. Vier konkrete Beispiele für [Catalan-Zahlen](https://kenji.blog/de/p/catalan-numbers/)
 
 ### Beispiel 1: Gültige Klammern
 
@@ -74,13 +74,13 @@ graph TD
 
 ### Beispiel 3: Polygon-Triangulierung
 
-[Catalan-Zahlen](https://kenji.blog/p/catalan-numbers/) tauchen auch in der Geometrie auf. Die Anzahl der Möglichkeiten, ein konvexes $(n+2)$-Eck durch das Ziehen sich nicht schneidender Diagonalen zwischen den Eckpunkten in $n$ Dreiecke zu unterteilen, beträgt genau $C_n$.
+[Catalan-Zahlen](https://kenji.blog/de/p/catalan-numbers/) tauchen auch in der Geometrie auf. Die Anzahl der Möglichkeiten, ein konvexes $(n+2)$-Eck durch das Ziehen sich nicht schneidender Diagonalen zwischen den Eckpunkten in $n$ Dreiecke zu unterteilen, beträgt genau $C_n$.
 
 Wenn wir zum Beispiel $n = 3$ haben, betrachten wir die Möglichkeiten, ein Fünfeck ($3+2=5$) zu triangulieren. Es gibt exakt 5 Möglichkeiten, Diagonalen zu ziehen, um 3 Dreiecke zu bilden. Einmal mehr sehen wir die Zahl $C_3 = 5$.
 
 ### Beispiel 4: Dyck-Pfade
 
-[Catalan-Zahlen](https://kenji.blog/p/catalan-numbers/) kommen auch bei Gitterpfad-Problemen vor. Betrachten Sie auf einem $n \times n$-Gitter die kürzesten Pfade von der unteren linken Ecke $(0, 0)$ zur oberen rechten Ecke $(n, n)$, bei denen man sich jeweils nur um eine Einheit nach rechts oder nach oben bewegen darf. Die Anzahl solcher Pfade, die niemals über die Diagonale $y = x$ hinausgehen (was bedeutet, dass sie immer $y \le x$ erfüllen), ist $C_n$. Diese werden **Dyck-Pfade** genannt.
+[Catalan-Zahlen](https://kenji.blog/de/p/catalan-numbers/) kommen auch bei Gitterpfad-Problemen vor. Betrachten Sie auf einem $n \times n$-Gitter die kürzesten Pfade von der unteren linken Ecke $(0, 0)$ zur oberen rechten Ecke $(n, n)$, bei denen man sich jeweils nur um eine Einheit nach rechts oder nach oben bewegen darf. Die Anzahl solcher Pfade, die niemals über die Diagonale $y = x$ hinausgehen (was bedeutet, dass sie immer $y \le x$ erfüllen), ist $C_n$. Diese werden **Dyck-Pfade** genannt.
 
 Wenn wir eine Bewegung nach rechts als `R` und eine Bewegung nach oben als `U` bezeichnen, verlangt die Bedingung, dass in jedem Präfix des Pfades die Anzahl der `U` niemals die Anzahl der `R` übersteigt. Dies ist streng äquivalent zur Beziehung zwischen `(` und `)` in gültigen Klammerausdrücken.
 
@@ -122,7 +122,7 @@ Die exakt gleiche Zerlegung funktioniert auch für "Binärbäume". Wenn wir eine
 
 ## 4. Mathematische Herleitung der geschlossenen Formel
 
-[Catalan-Zahlen](https://kenji.blog/p/catalan-numbers/) können durch eine sehr einfache **geschlossene Formel** (Closed-form formula) unter Verwendung kombinatorischer Notation ausgedrückt werden:
+[Catalan-Zahlen](https://kenji.blog/de/p/catalan-numbers/) können durch eine sehr einfache **geschlossene Formel** (Closed-form formula) unter Verwendung kombinatorischer Notation ausgedrückt werden:
 
 $$ C_n = \frac{1}{n+1} \binom{2n}{n} = \frac{(2n)!}{(n+1)!n!} $$
 
@@ -150,7 +150,7 @@ $$ C_n = \binom{2n}{n} - \frac{n}{n+1} \binom{2n}{n} = \left( 1 - \frac{n}{n+1} 
 
 ### 4.2. Ansatz über erzeugende Funktionen
 
-Sei die erzeugende Funktion für [Catalan-Zahlen](https://kenji.blog/p/catalan-numbers/) $C(x) = \sum_{n=0}^\infty C_n x^n$.
+Sei die erzeugende Funktion für [Catalan-Zahlen](https://kenji.blog/de/p/catalan-numbers/) $C(x) = \sum_{n=0}^\infty C_n x^n$.
 Unter Verwendung der Rekursionsgleichung $C_{n} = \sum_{i=0}^{n-1} C_i C_{n-1-i}$ stellen wir fest, dass die erzeugende Funktion die folgende Gleichung erfüllt:
 
 $$ C(x) = 1 + x [C(x)]^2 $$
@@ -165,9 +165,9 @@ $$ C(x) = \frac{1 - \sqrt{1 - 4x}}{2x} $$
 
 Indem wir $\sqrt{1 - 4x} = (1 - 4x)^{1/2}$ unter Verwendung des verallgemeinerten binomischen Lehrsatzes (Taylorreihe) entwickeln und die Koeffizienten vergleichen, gelangen wir zu $C_n = \frac{1}{n+1} \binom{2n}{n}$.
 
-## 5. Berechnungsalgorithmen für [Catalan-Zahlen](https://kenji.blog/p/catalan-numbers/)
+## 5. Berechnungsalgorithmen für [Catalan-Zahlen](https://kenji.blog/de/p/catalan-numbers/)
 
-Für die programmgesteuerte Berechnung von [Catalan-Zahlen](https://kenji.blog/p/catalan-numbers/) gibt es hauptsächlich drei Ansätze.
+Für die programmgesteuerte Berechnung von [Catalan-Zahlen](https://kenji.blog/de/p/catalan-numbers/) gibt es hauptsächlich drei Ansätze.
 
 ### 5.1. Einfache Rekursion (Naive Recursion)
 
@@ -225,6 +225,6 @@ for i in range(7):
 
 ## 6. Fazit
 
-Die [Catalan-Zahlen](https://kenji.blog/p/catalan-numbers/)folge $C_n$ ist eine fesselnde Zahlenfolge, die einheitlich in einer Vielzahl scheinbar unterschiedlicher Probleme auftaucht, wie z.B. bei gültigen Klammerausdrücken, Formen von Binärbäumen, Polygon-Triangulierungen und Dyck-Pfaden. Der Grund, warum diese Probleme zum selben Ergebnis führen, ist, dass sie alle eine gemeinsame rekursive Struktur verkörpern: **"Das Ganze in zwei Teilprobleme zerlegen und diese kombinieren"**.
+Die [Catalan-Zahlen](https://kenji.blog/de/p/catalan-numbers/)folge $C_n$ ist eine fesselnde Zahlenfolge, die einheitlich in einer Vielzahl scheinbar unterschiedlicher Probleme auftaucht, wie z.B. bei gültigen Klammerausdrücken, Formen von Binärbäumen, Polygon-Triangulierungen und Dyck-Pfaden. Der Grund, warum diese Probleme zum selben Ergebnis führen, ist, dass sie alle eine gemeinsame rekursive Struktur verkörpern: **"Das Ganze in zwei Teilprobleme zerlegen und diese kombinieren"**.
 
 Beim Studium von Algorithmen und Datenstrukturen fördert das Verständnis dieser mathematischen Hintergründe die Fähigkeit, das Wesen eines Problems zu durchschauen. Es dient auch als hervorragende Übung in dynamischer Programmierung. Probieren Sie also unbedingt aus, den Code selbst zu schreiben und damit zu experimentieren!

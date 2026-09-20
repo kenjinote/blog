@@ -14,17 +14,17 @@ tags:
   - "História da matemática"
 ---
 
-# Quem foi [Georg Cantor](https://kenji.blog/p/cantor/)?
+# Quem foi [Georg Cantor](https://kenji.blog/pt/p/cantor/)?
 
-Na história da matemática, o conceito de "infinito" foi considerado um tabu por muito tempo. O infinito era tratado estritamente como um "estado sem fim (infinito potencial)" e era visto como perigoso tratá-lo como um "todo completo (infinito atual)". No entanto, no final do século XIX, houve um homem que desafiou esse tabu de frente e esculpiu o próprio infinito como um assunto da matemática. Esse homem foi **[Georg Cantor](https://kenji.blog/p/cantor/)**.
+Na história da matemática, o conceito de "infinito" foi considerado um tabu por muito tempo. O infinito era tratado estritamente como um "estado sem fim (infinito potencial)" e era visto como perigoso tratá-lo como um "todo completo (infinito atual)". No entanto, no final do século XIX, houve um homem que desafiou esse tabu de frente e esculpiu o próprio infinito como um assunto da matemática. Esse homem foi **[Georg Cantor](https://kenji.blog/pt/p/cantor/)**.
 
 Sua criação da "Teoria dos Conjuntos" tornou-se a base de todos os campos da matemática moderna. Neste artigo, examinaremos em detalhes a vida de Cantor e suas surpreendentes realizações matemáticas.
 
 ## Uma Vida Turbulenta
 
-[Georg Cantor](https://kenji.blog/p/cantor/) nasceu em 1845 em São Petersburgo, Rússia. Seu pai era um rico comerciante da Dinamarca e sua mãe uma musicista russa. Mostrando um talento extraordinário para a matemática desde tenra idade, ele acabou se mudando para a Alemanha e estudando matemática na Universidade de Berlim.
+[Georg Cantor](https://kenji.blog/pt/p/cantor/) nasceu em 1845 em São Petersburgo, Rússia. Seu pai era um rico comerciante da Dinamarca e sua mãe uma musicista russa. Mostrando um talento extraordinário para a matemática desde tenra idade, ele acabou se mudando para a Alemanha e estudando matemática na Universidade de Berlim.
 
-Na Universidade de Berlim, ele foi guiado pelas principais figuras do mundo matemático da época, **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** e **Leopold Kronecker**. Kronecker, em particular, se tornaria mais tarde o maior oponente de Cantor.
+Na Universidade de Berlim, ele foi guiado pelas principais figuras do mundo matemático da época, **[Karl Weierstrass](https://kenji.blog/pt/p/weierstrass/)** e **Leopold Kronecker**. Kronecker, em particular, se tornaria mais tarde o maior oponente de Cantor.
 
 ### A Busca pelo Infinito e o Conflito com Kronecker
 
@@ -44,7 +44,7 @@ graph TD
 
 O fato de sua teoria não ter sido compreendida e de ele ter continuado a receber ataques implacáveis de seu ex-professor minou profundamente a saúde mental de Cantor. Ele desenvolveu depressão e entrou e saiu repetidamente de hospitais psiquiátricos.
 
-No entanto, sua teoria foi gradualmente apoiada pelas gerações mais jovens de matemáticos, como **[David Hilbert](https://kenji.blog/p/hilbert/)**. Hilbert elogiou Cantor com os maiores elogios, afirmando: "Ninguém nos expulsará do paraíso que Cantor criou para nós." Cantor encerrou a vida em um hospital psiquiátrico em Halle em 1918, mas após sua morte, a teoria dos conjuntos estabeleceu uma posição inabalável como o fundamento mais importante da matemática.
+No entanto, sua teoria foi gradualmente apoiada pelas gerações mais jovens de matemáticos, como **[David Hilbert](https://kenji.blog/pt/p/hilbert/)**. Hilbert elogiou Cantor com os maiores elogios, afirmando: "Ninguém nos expulsará do paraíso que Cantor criou para nós." Cantor encerrou a vida em um hospital psiquiátrico em Halle em 1918, mas após sua morte, a teoria dos conjuntos estabeleceu uma posição inabalável como o fundamento mais importante da matemática.
 
 ## Realizações Matemáticas: Contando o Infinito
 
@@ -70,7 +70,7 @@ Chega-se a uma conclusão contrária ao senso comum: o todo (números naturais) 
 
 Ainda mais surpreendente, Cantor provou que o conjunto dos números racionais (números que podem ser expressos como frações) $\mathbb{Q}$ também tem a mesma cardinalidade que os números naturais. Embora os números racionais estejam densamente compactados na reta numérica, ao reorganizar habilmente os elementos, é possível estabelecer uma correspondência biunívoca com os números naturais.
 
-### [O Argumento de Diagonalização de Cantor](https://kenji.blog/p/cantors-diagonal-argument/)
+### [O Argumento de Diagonalização de Cantor](https://kenji.blog/pt/p/cantors-diagonal-argument/)
 
 Então, todos os conjuntos infinitos têm o mesmo tamanho que os números naturais? Cantor respondeu "Não" a esta pergunta. Ele provou que o conjunto dos números reais $\mathbb{R}$ tem uma cardinalidade "estritamente maior" do que o conjunto dos números naturais. O que foi usado para essa prova é o famoso **Argumento de diagonalização**.
 
@@ -113,8 +113,8 @@ graph TD
 
 Existe uma cardinalidade intermediária entre a cardinalidade dos números naturais $\aleph_0$ e a cardinalidade dos números reais $\mathfrak{c}$? Cantor levantou a hipótese de que "nenhuma cardinalidade intermediária existe". Esta é a **Hipótese do Contínuo (HC)**.
 
-Cantor passou grande parte de seus últimos anos tentando provar essa hipótese, mas ele foi incapaz de resolvê-la. Mais tarde, por meio da pesquisa de [Kurt Gödel](https://kenji.blog/p/godel/) e Paul Cohen, descobriu-se que a hipótese do contínuo é uma proposição independente que "não pode ser provada nem refutada" a partir dos axiomas padrão da teoria dos conjuntos (axiomas ZFC), dando mais uma vez um grande choque à comunidade matemática.
+Cantor passou grande parte de seus últimos anos tentando provar essa hipótese, mas ele foi incapaz de resolvê-la. Mais tarde, por meio da pesquisa de [Kurt Gödel](https://kenji.blog/pt/p/godel/) e Paul Cohen, descobriu-se que a hipótese do contínuo é uma proposição independente que "não pode ser provada nem refutada" a partir dos axiomas padrão da teoria dos conjuntos (axiomas ZFC), dando mais uma vez um grande choque à comunidade matemática.
 
 ## Conclusão
 
-[Georg Cantor](https://kenji.blog/p/cantor/) mostrou que a razão humana pode alcançar o reino divino do "infinito". Sua vida trágica conta a história da solidão de um gênio que estava muito à frente de seu tempo, mas o vasto "Paraíso de Cantor" que ele esculpiu continua a fascinar os matemáticos de todo o mundo hoje. Não é exagero dizer que a matemática moderna é construída sobre a base de sua busca desesperada.
+[Georg Cantor](https://kenji.blog/pt/p/cantor/) mostrou que a razão humana pode alcançar o reino divino do "infinito". Sua vida trágica conta a história da solidão de um gênio que estava muito à frente de seu tempo, mas o vasto "Paraíso de Cantor" que ele esculpiu continua a fascinar os matemáticos de todo o mundo hoje. Não é exagero dizer que a matemática moderna é construída sobre a base de sua busca desesperada.

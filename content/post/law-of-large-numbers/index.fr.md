@@ -21,7 +21,7 @@ Dans cet article, nous expliquons de manière exhaustive la "loi des grands nomb
 
 ## 2. Qu'est-ce que la loi des grands nombres ?
 
-[La loi des grands nombres](https://kenji.blog/p/law-of-large-numbers/) (LLN, pour [Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/)) est, pour faire simple, la loi selon laquelle **"si le nombre d'essais augmente suffisamment, la probabilité d'occurrence d'un événement converge vers sa valeur théorique (valeur espérée)."**
+[La loi des grands nombres](https://kenji.blog/fr/p/law-of-large-numbers/) (LLN, pour [Law of Large Numbers](https://kenji.blog/fr/p/law-of-large-numbers/)) est, pour faire simple, la loi selon laquelle **"si le nombre d'essais augmente suffisamment, la probabilité d'occurrence d'un événement converge vers sa valeur théorique (valeur espérée)."**
 
 Imaginez que vous lancez une pièce de monnaie. La probabilité d'obtenir face est de $1/2$ ($50\%$). Cependant, la lancer seulement 10 fois ne garantit pas que vous obtiendrez 5 faces et 5 piles. Vous pourriez obtenir 7 faces, ou seulement 2.
 Cependant, si vous répétez l'essai 10 000 ou 100 000 fois, la proportion de faces se rapprochera infiniment de $50\%$.
@@ -111,7 +111,7 @@ L' **erreur du parieur** est un biais psychologique célèbre né d'une mauvaise
 
 Lorsqu'à la roulette, le "rouge" sort 10 fois de suite, beaucoup de gens se disent "le noir devrait bientôt sortir". Ce raisonnement erroné repose sur l'idée que "puisque la loi des grands nombres stipule que la proportion de rouge et de noir doit converger vers $50\%$, le noir devient plus susceptible de sortir pour compenser le biais précédent".
 
-Cependant, la bille de la roulette n'a pas de mémoire. Au 11ème lancer, la probabilité d'obtenir rouge et celle d'obtenir noir restent indépendantes et identiques. [La loi des grands nombres](https://kenji.blog/p/law-of-large-numbers/) garantit que la proportion convergera dans "un futur infini", mais **elle ne signifie pas que des forces interviennent pour compenser les déséquilibres passés**.
+Cependant, la bille de la roulette n'a pas de mémoire. Au 11ème lancer, la probabilité d'obtenir rouge et celle d'obtenir noir restent indépendantes et identiques. [La loi des grands nombres](https://kenji.blog/fr/p/law-of-large-numbers/) garantit que la proportion convergera dans "un futur infini", mais **elle ne signifie pas que des forces interviennent pour compenser les déséquilibres passés**.
 
 ## 6. Simulation avec Python
 
@@ -148,14 +148,14 @@ En exécutant ce code, la moyenne fluctue grandement lors des premiers lancers, 
 
 ## 7. Les cas où la loi des grands nombres ne s'applique pas : la distribution de Cauchy
 
-[La loi des grands nombres](https://kenji.blog/p/law-of-large-numbers/) n'est pas universelle. L'une de ses conditions préalables est que "la valeur espérée (moyenne) doit être finie".
+[La loi des grands nombres](https://kenji.blog/fr/p/law-of-large-numbers/) n'est pas universelle. L'une de ses conditions préalables est que "la valeur espérée (moyenne) doit être finie".
 Par exemple, la loi de probabilité connue sous le nom de **loi de Cauchy** possède des queues très épaisses (les valeurs extrêmes se produisent facilement) et sa valeur espérée et sa variance ne peuvent pas être définies (elles divergent vers l'infini).
 
 Même si vous générez des nombres aléatoires suivant une loi de Cauchy et que vous en faites la moyenne, la valeur ne convergera jamais vers un nombre spécifique et continuera de fluctuer sauvagement. Dans le monde réel également, il est important de comprendre qu'il existe des situations (comme les marchés financiers où se produisent des événements imprévisibles et extrêmes appelés "cygnes noirs") où la simple loi des grands nombres ne s'applique pas (ou est dangereuse à appliquer).
 
 ## 8. Exemples d'applications dans le monde réel
 
-[La loi des grands nombres](https://kenji.blog/p/law-of-large-numbers/) n'est pas seulement utilisée dans les casinos, mais aussi dans divers systèmes qui soutiennent les fondements de notre société.
+[La loi des grands nombres](https://kenji.blog/fr/p/law-of-large-numbers/) n'est pas seulement utilisée dans les casinos, mais aussi dans divers systèmes qui soutiennent les fondements de notre société.
 
 ### 8.1. Le secteur de l'assurance
 L'assurance-vie et l'assurance automobile sont des modèles commerciaux basés exactement sur la loi des grands nombres. Il est impossible de prédire avec précision quand un individu tombera malade ou aura un accident. Cependant, en collectant des données à l'échelle de dizaines ou centaines de milliers de personnes, il est possible de prédire avec une très grande précision quelle proportion de paiements d'assurance sera effectuée sur une période donnée. Cela permet de calculer les primes appropriées et d'établir un modèle économique viable.
@@ -168,6 +168,6 @@ Les modèles modernes d'intelligence artificielle et d'apprentissage automatique
 
 ## 9. Conclusion
 
-[La loi des grands nombres](https://kenji.blog/p/law-of-large-numbers/) est un outil puissant qui nous permet de comprendre un monde hautement incertain et de prendre des décisions rationnelles. De la structure des profits des casinos aux assurances et à la technologie de l'IA, cette loi fonctionne discrètement mais sûrement partout dans la société moderne.
+[La loi des grands nombres](https://kenji.blog/fr/p/law-of-large-numbers/) est un outil puissant qui nous permet de comprendre un monde hautement incertain et de prendre des décisions rationnelles. De la structure des profits des casinos aux assurances et à la technologie de l'IA, cette loi fonctionne discrètement mais sûrement partout dans la société moderne.
 
 La prochaine fois que vous lancerez une pièce ou un dé, pourquoi ne pas songer aux grandes et belles lois mathématiques qui se cachent derrière chaque événement fortuit ? Au lieu de se réjouir ou de se désoler au gré de la chance à court terme, adopter une perspective à long terme pourrait changer un peu votre façon de voir le monde.

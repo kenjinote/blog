@@ -8,11 +8,11 @@ categories: ["matemáticas", "biografía"]
 tags: ["Legendre", "Teoría de números", "Geometría", "Historia de las matemáticas"]
 ---
 
-# [Adrien-Marie Legendre](https://kenji.blog/p/legendre/): El gigante en la sombra de las matemáticas y su turbulenta vida
+# [Adrien-Marie Legendre](https://kenji.blog/es/p/legendre/): El gigante en la sombra de las matemáticas y su turbulenta vida
 
-En la historia de las matemáticas, hay figuras cuyos nombres coronan numerosos teoremas y conceptos, y sin embargo, su vida personal y su verdadera imagen siguen siendo sorprendentemente desconocidas. El gran matemático francés **[Adrien-Marie Legendre](https://kenji.blog/p/legendre/)** (1752–1833) es posiblemente un excelente ejemplo.
+En la historia de las matemáticas, hay figuras cuyos nombres coronan numerosos teoremas y conceptos, y sin embargo, su vida personal y su verdadera imagen siguen siendo sorprendentemente desconocidas. El gran matemático francés **[Adrien-Marie Legendre](https://kenji.blog/es/p/legendre/)** (1752–1833) es posiblemente un excelente ejemplo.
 
-En este artículo, profundizamos en la vida de Legendre, sus inmensas contribuciones al mundo de las matemáticas, su feroz disputa con el genio contemporáneo [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), y el "misterio del retrato" que se resolvió hace muy poco. Al trazar la trayectoria de su vida, podrá sentir el aliento de la comunidad científica francesa entre los siglos XVIII y XIX.
+En este artículo, profundizamos en la vida de Legendre, sus inmensas contribuciones al mundo de las matemáticas, su feroz disputa con el genio contemporáneo [Carl Friedrich Gauss](https://kenji.blog/es/p/gauss/), y el "misterio del retrato" que se resolvió hace muy poco. Al trazar la trayectoria de su vida, podrá sentir el aliento de la comunidad científica francesa entre los siglos XVIII y XIX.
 
 ## 1. Vida y contexto histórico: Un matemático sobreviviendo a una Francia turbulenta
 
@@ -42,7 +42,7 @@ Los logros de Legendre abarcan casi todos los campos de las matemáticas de su t
 
 ### 2.1 Pasión por la teoría de números y el símbolo de Legendre
 
-Legendre estaba profundamente fascinado por la teoría de números, liderada por predecesores como [Pierre de Fermat](https://kenji.blog/p/fermat/) y [Leonhard Euler](https://kenji.blog/p/euler/). Uno de sus mayores logros es su trabajo sobre la "Ley de reciprocidad cuadrática". Esta ley es uno de los teoremas más hermosos e importantes en la teoría de números para determinar si un número primo es congruente con un cuadrado módulo otro número primo.
+Legendre estaba profundamente fascinado por la teoría de números, liderada por predecesores como [Pierre de Fermat](https://kenji.blog/es/p/fermat/) y [Leonhard Euler](https://kenji.blog/es/p/euler/). Uno de sus mayores logros es su trabajo sobre la "Ley de reciprocidad cuadrática". Esta ley es uno de los teoremas más hermosos e importantes en la teoría de números para determinar si un número primo es congruente con un cuadrado módulo otro número primo.
 
 Él formuló esta ley y dio una prueba parcial (una prueba completa fue proporcionada más tarde por el joven Gauss). Además, para expresar esta investigación de manera concisa y elegante, introdujo una notación conocida hoy como el **símbolo de Legendre**.
 
@@ -77,9 +77,9 @@ Estos polinomios se han convertido en una herramienta indispensable en todo tipo
 
 ### 2.3 'Éléments de géométrie' y su gran impacto en la educación matemática
 
-Junto a sus actividades de investigación, Legendre también fue un educador excepcional. Su libro "Éléments de géométrie" (Elementos de Geometría), publicado en 1794, reorganizó los "Elementos" de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) para hacerlos más accesibles y rigurosos a los estudiantes de su tiempo.
+Junto a sus actividades de investigación, Legendre también fue un educador excepcional. Su libro "Éléments de géométrie" (Elementos de Geometría), publicado en 1794, reorganizó los "Elementos" de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) para hacerlos más accesibles y rigurosos a los estudiantes de su tiempo.
 
-Este libro de texto logró un éxito fenomenal, siendo traducido al inglés y otros idiomas y leído en todo el mundo, no solo en Francia. Fue ampliamente adoptado en los Estados Unidos y siguió siendo el estándar absoluto para la educación en geometría a lo largo del siglo XIX. En este libro, intentó continuamente probar el postulado de las paralelas (el quinto postulado de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/)), agregando nuevas pruebas en cada edición, aunque en última instancia todas resultaron defectuosas. Sin embargo, su persistencia se convirtió en una de las fuerzas motrices importantes que impulsaron el nacimiento de la geometría no euclidiana.
+Este libro de texto logró un éxito fenomenal, siendo traducido al inglés y otros idiomas y leído en todo el mundo, no solo en Francia. Fue ampliamente adoptado en los Estados Unidos y siguió siendo el estándar absoluto para la educación en geometría a lo largo del siglo XIX. En este libro, intentó continuamente probar el postulado de las paralelas (el quinto postulado de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/)), agregando nuevas pruebas en cada edición, aunque en última instancia todas resultaron defectuosas. Sin embargo, su persistencia se convirtió en una de las fuerzas motrices importantes que impulsaron el nacimiento de la geometría no euclidiana.
 
 ### 2.4 Reto al teorema de los números primos
 
@@ -95,7 +95,7 @@ Más tarde se reveló que Gauss también había hecho una conjetura similar util
 
 ## 3. Disputa con Gauss: La tragedia sobre el descubrimiento de los mínimos cuadrados
 
-Al hablar de la vida de Legendre, no se puede evitar la feroz disputa de prioridad, especialmente en relación con el **Método de los mínimos cuadrados**, con [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), el "Príncipe de las Matemáticas" de Alemania.
+Al hablar de la vida de Legendre, no se puede evitar la feroz disputa de prioridad, especialmente en relación con el **Método de los mínimos cuadrados**, con [Carl Friedrich Gauss](https://kenji.blog/es/p/gauss/), el "Príncipe de las Matemáticas" de Alemania.
 
 En 1805, en su libro sobre el cálculo de las órbitas de los cometas, Legendre anunció públicamente el "Método de los mínimos cuadrados" por primera vez en el mundo, un método para encontrar el valor más probable minimizando los errores de los datos de observación. Esta fue una técnica revolucionaria que forma la base de todos los campos que se ocupan de datos, desde la astronomía y la geodesia hasta las estadísticas modernas y el aprendizaje automático.
 
@@ -116,7 +116,7 @@ Además, con respecto al teorema de los números primos (la conjetura de Legendr
 
 El episodio más extraño y, para nosotros hoy en día, el más divertido sobre Legendre se refiere al misterio de su "retrato".
 
-Durante muchos años, en los libros de texto de matemáticas y de historia de la ciencia de todo el mundo, se utilizó cierto retrato como el rostro de [Adrien-Marie Legendre](https://kenji.blog/p/legendre/). Era una litografía que representaba el perfil de un hombre con una expresión severa y malhumorada. Todos creían sin duda que este era el rostro del gran matemático Legendre.
+Durante muchos años, en los libros de texto de matemáticas y de historia de la ciencia de todo el mundo, se utilizó cierto retrato como el rostro de [Adrien-Marie Legendre](https://kenji.blog/es/p/legendre/). Era una litografía que representaba el perfil de un hombre con una expresión severa y malhumorada. Todos creían sin duda que este era el rostro del gran matemático Legendre.
 
 Sin embargo, en 2005, salió a la luz un hecho sorprendente que sacudió a la comunidad de la historia de las matemáticas. Sorprendentemente, el retrato que se había publicado como "Matemático Legendre" durante más de 200 años pertenecía en realidad a una persona completamente diferente: **Louis Legendre** (1752–1797), ¡un político durante la Revolución Francesa!
 
@@ -129,7 +129,7 @@ Allí, en lugar del severo perfil del político Louis Legendre, aparecía la fig
 
 ## 5. Conclusión
 
-[Adrien-Marie Legendre](https://kenji.blog/p/legendre/) terminó su vida en París en 1833. En sus últimos años, enfrentó eventos desafortunados, como que se le cortara su pensión debido a su oposición a las políticas del gobierno.
+[Adrien-Marie Legendre](https://kenji.blog/es/p/legendre/) terminó su vida en París en 1833. En sus últimos años, enfrentó eventos desafortunados, como que se le cortara su pensión debido a su oposición a las políticas del gobierno.
 
 A menudo se le trata como una "figura en la sombra" ante la abrumadora brillantez de genios de primer nivel de su época, como Gauss y Laplace. Sin embargo, el papel que desempeñó en la construcción de los cimientos de las matemáticas modernas es inconmensurable. El legado que dejó, como los polinomios de Legendre, el símbolo de Legendre y la formulación del método de mínimos cuadrados, continúa sustentando el núcleo de la ciencia y la tecnología modernas.
 

@@ -112,7 +112,7 @@ Hasilnya, ia menunjukkan bahwa angka tersebut tidak akan melebihi $8 \times 10^{
 
 Pada tahun 1906, sebuah palimpsest (sebuah manuskrip yang teksnya dikikis dan digunakan kembali) yang memuat banyak karya Archimedes yang hilang ditemukan di Konstantinopel (kini Istanbul). "Palimpsest Archimedes" ini memuat risalah tak ternilai yang berjudul "Metode Teorema Mekanik".
 
-Dalam karya ini, Archimedes mengungkapkan "proses berpikirnya" tentang bagaimana ia sampai pada banyak penemuan geometri. Ia membagi benda-benda ke dalam kumpulan "garis" atau "bidang" yang sangat tipis dan menebak luas dan volumenya menggunakan model mekanis dengan menyeimbangkannya di atas timbangan. Pendekatan ini pada dasarnya sama dengan "kalkulus integral" yang ditetapkan pada era selanjutnya oleh [Isaac Newton](https://kenji.blog/p/newton/) dan [Gottfried Leibniz](https://kenji.blog/p/leibniz/), menunjukkan bahwa Archimedes telah tiba beberapa langkah lagi dari konsep kalkulus.
+Dalam karya ini, Archimedes mengungkapkan "proses berpikirnya" tentang bagaimana ia sampai pada banyak penemuan geometri. Ia membagi benda-benda ke dalam kumpulan "garis" atau "bidang" yang sangat tipis dan menebak luas dan volumenya menggunakan model mekanis dengan menyeimbangkannya di atas timbangan. Pendekatan ini pada dasarnya sama dengan "kalkulus integral" yang ditetapkan pada era selanjutnya oleh [Isaac Newton](https://kenji.blog/id/p/newton/) dan [Gottfried Leibniz](https://kenji.blog/id/p/leibniz/), menunjukkan bahwa Archimedes telah tiba beberapa langkah lagi dari konsep kalkulus.
 
 ## 3.6 Padatan Archimedes
 
@@ -154,7 +154,7 @@ Konon alat ini diciptakan saat ia tinggal di Mesir untuk memompa air dari Sungai
 
 # 5. Pengaruh pada Anak Cucu dan Warisan
 
-Karya-karya yang ditinggalkan oleh Archimedes menjadi semacam Alkitab bagi para sarjana dari periode Helenistik hingga era Romawi, dan kemudian di dunia Arab abad pertengahan dan Eropa Renaisans. Galileo Galilei memuji Archimedes sebagai "sosok manusia super" dan dengan antusias mempelajari metode-metodenya. Johannes Kepler, [René Descartes](https://kenji.blog/p/descartes/), dan Newton, yang menyempurnakan kalkulus, juga sangat terpengaruh oleh tulisan-tulisan Archimedes, baik secara langsung maupun tidak langsung.
+Karya-karya yang ditinggalkan oleh Archimedes menjadi semacam Alkitab bagi para sarjana dari periode Helenistik hingga era Romawi, dan kemudian di dunia Arab abad pertengahan dan Eropa Renaisans. Galileo Galilei memuji Archimedes sebagai "sosok manusia super" dan dengan antusias mempelajari metode-metodenya. Johannes Kepler, [René Descartes](https://kenji.blog/id/p/descartes/), dan Newton, yang menyempurnakan kalkulus, juga sangat terpengaruh oleh tulisan-tulisan Archimedes, baik secara langsung maupun tidak langsung.
 
 Semangat penyelidikan dan metodologinya terus bersinar bukan sekadar peninggalan kuno, melainkan sebagai pola dasar pemikiran ilmiah. Archimedes adalah orang yang dengan usahanya sendiri mewujudkan tiga pilar ilmu pengetahuan modern: pembuktian ketat dalam matematika, pemodelan matematis untuk fenomena fisik, dan pengembangan teknologi praktis yang menerapkan teori.
 

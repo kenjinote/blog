@@ -15,13 +15,13 @@ tags:
 
 ## Pengantar
 
-[Marin Mersenne](https://kenji.blog/p/mersenne/) (1588–1648) adalah seorang teolog, filsuf, matematikawan, dan ahli teori musik Prancis abad ke-17. Meskipun ia membuat penemuan matematikanya sendiri, ia paling dikenal luas karena perannya sebagai **"kotak pos Eropa"**, menghubungkan para sarjana hebat pada masanya.
+[Marin Mersenne](https://kenji.blog/id/p/mersenne/) (1588–1648) adalah seorang teolog, filsuf, matematikawan, dan ahli teori musik Prancis abad ke-17. Meskipun ia membuat penemuan matematikanya sendiri, ia paling dikenal luas karena perannya sebagai **"kotak pos Eropa"**, menghubungkan para sarjana hebat pada masanya.
 
 Dalam artikel ini, kita akan menjelajahi kehidupan Mersenne, jaringan intelektual besar yang ia bangun, dan **bilangan prima Mersenne** yang sangat terhubung dengan kriptografi modern. Lebih jauh lagi, kita akan menyelami kontribusinya pada akustik dan pengaruhnya terhadap metodologi ilmiah.
 
 ## Kehidupan Awal dan Kehidupan Monastik
 
-[Marin Mersenne](https://kenji.blog/p/mersenne/) lahir pada tanggal 8 September 1588, di keluarga petani di Oizé, Maine, Prancis. Setelah menerima pendidikan dasar di sebuah perguruan tinggi di Le Mans, ia memasuki perguruan tinggi Jesuit di La Flèche pada tahun 1604. Di sana, ia bertemu [René Descartes](https://kenji.blog/p/descartes/), yang kemudian akan menjadi bapak filsafat modern, dan menjalin persahabatan seumur hidup yang mendalam dengannya.
+[Marin Mersenne](https://kenji.blog/id/p/mersenne/) lahir pada tanggal 8 September 1588, di keluarga petani di Oizé, Maine, Prancis. Setelah menerima pendidikan dasar di sebuah perguruan tinggi di Le Mans, ia memasuki perguruan tinggi Jesuit di La Flèche pada tahun 1604. Di sana, ia bertemu [René Descartes](https://kenji.blog/id/p/descartes/), yang kemudian akan menjadi bapak filsafat modern, dan menjalin persahabatan seumur hidup yang mendalam dengannya.
 
 Pada tahun 1611, Mersenne bergabung dengan Ordo Minims. Ordo Minims adalah ordo dengan disiplin yang ketat (seperti puasa dan vegetarianisme), tetapi mereka menumbuhkan budaya yang mendorong pengejaran keilmuan. Pada tahun 1619, ia menetap di Biara L'Annonciade di Paris, yang menjadi basisnya untuk membenamkan diri dalam teologi, filsafat, dan ilmu alam.
 
@@ -49,7 +49,7 @@ graph TD
     Mersenne <-->|"Akustik"| Huygens
 ```
 
-Di pusat jaringan ini, ketika seseorang menemukan teorema baru, Mersenne akan menyampaikannya kepada sarjana lain, mendorong kritik dan verifikasi. Misalnya, Mersennyalah yang mengkomunikasikan penemuan matematika [Pierre de Fermat](https://kenji.blog/p/fermat/) kepada Descartes, yang memicu perdebatan sengit di antara keduanya. Ia juga dikenal karena menerjemahkan karya-karya Galileo Galilei (seperti *Dialog Mengenai Dua Sistem Dunia Utama*) ke dalam bahasa Prancis, memperkenalkannya secara luas meskipun ada penyensoran ketat dari Gereja Katolik. Beberapa sejarawan menilai bahwa tanpa dirinya, Revolusi Ilmiah abad ke-17 mungkin akan tertunda puluhan tahun.
+Di pusat jaringan ini, ketika seseorang menemukan teorema baru, Mersenne akan menyampaikannya kepada sarjana lain, mendorong kritik dan verifikasi. Misalnya, Mersennyalah yang mengkomunikasikan penemuan matematika [Pierre de Fermat](https://kenji.blog/id/p/fermat/) kepada Descartes, yang memicu perdebatan sengit di antara keduanya. Ia juga dikenal karena menerjemahkan karya-karya Galileo Galilei (seperti *Dialog Mengenai Dua Sistem Dunia Utama*) ke dalam bahasa Prancis, memperkenalkannya secara luas meskipun ada penyensoran ketat dari Gereja Katolik. Beberapa sejarawan menilai bahwa tanpa dirinya, Revolusi Ilmiah abad ke-17 mungkin akan tertunda puluhan tahun.
 
 ## Pencapaian Matematika: Bilangan Prima Mersenne
 
@@ -137,6 +137,6 @@ Mersenne sangat percaya bahwa kemajuan ilmiah membuktikan kebesaran dunia yang d
 
 ## Kesimpulan
 
-[Marin Mersenne](https://kenji.blog/p/mersenne/) memiliki tidak hanya intuisi matematika yang luar biasa tetapi juga bakat langka untuk menghubungkan orang-orang dan pengetahuan. Jaringan intelektual yang ia dirikan pada akhirnya mengarah pada kelahiran masyarakat ilmiah formal, seperti Akademi Sains Prancis dan Royal Society di Inggris.
+[Marin Mersenne](https://kenji.blog/id/p/mersenne/) memiliki tidak hanya intuisi matematika yang luar biasa tetapi juga bakat langka untuk menghubungkan orang-orang dan pengetahuan. Jaringan intelektual yang ia dirikan pada akhirnya mengarah pada kelahiran masyarakat ilmiah formal, seperti Akademi Sains Prancis dan Royal Society di Inggris.
 
 Namanya selamanya terukir dalam sejarah matematika dalam bentuk bilangan prima Mersenne, tetapi perannya sebagai "fasilitator intelektual" dalam Revolusi Ilmiah abad ke-17 juga merupakan pencapaian besar yang tidak boleh dilupakan. Kehidupannya mengajarkan kepada kita bahwa sains berkembang tidak hanya melalui kejeniusan individu tetapi juga melalui komunikasi dan kolaborasi terbuka.

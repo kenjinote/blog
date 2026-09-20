@@ -9,7 +9,7 @@ categories: ["programming", "git"]
 tags: ["Git", "Version Control", "Troubleshooting"]
 ---
 
-# [Git初学者容易陷入的误区与解决命令集（冲突解决等）](https://kenji.blog/p/git初心者のミスと解決/)
+# [Git初学者容易陷入的误区与解决命令集（冲突解决等）](https://kenji.blog/zh-cn/p/git初心者のミスと解決/)
 
 ## 1. 引言：为什么会在Git上犯错？
 

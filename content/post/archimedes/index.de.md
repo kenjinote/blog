@@ -124,7 +124,7 @@ Als Ergebnis zeigte er, dass die Zahl (in moderner Notation) nicht größer als 
 
 Im Jahr 1906 wurde in Konstantinopel (dem heutigen Istanbul) ein Palimpsest (ein Manuskript, dessen Text abgekratzt und wiederverwendet wurde) entdeckt, das viele der verlorenen Werke des Archimedes enthielt. Dieses "Archimedes-Palimpsest" enthielt eine unschätzbare Abhandlung mit dem Titel "Die Methode der mechanischen Lehrsätze".
 
-In diesem Werk offenbart Archimedes seinen "Denkprozess", wie er zu zahlreichen geometrischen Entdeckungen gelangte. Er zerlegte Figuren in Ansammlungen unendlich dünner "Linien" oder "Ebenen" und schätzte ihre Flächen und Volumen mithilfe eines mechanischen Modells ab, bei dem sie auf einer Waage balanciert wurden. Dieser Ansatz entspricht im Wesentlichen der "Integralrechnung", die in späteren Epochen von [Isaac Newton](https://kenji.blog/p/newton/) und [Gottfried Leibniz](https://kenji.blog/p/leibniz/) etabliert wurde, und zeigt, dass Archimedes dem Konzept der Infinitesimalrechnung sehr nahe gekommen war.
+In diesem Werk offenbart Archimedes seinen "Denkprozess", wie er zu zahlreichen geometrischen Entdeckungen gelangte. Er zerlegte Figuren in Ansammlungen unendlich dünner "Linien" oder "Ebenen" und schätzte ihre Flächen und Volumen mithilfe eines mechanischen Modells ab, bei dem sie auf einer Waage balanciert wurden. Dieser Ansatz entspricht im Wesentlichen der "Integralrechnung", die in späteren Epochen von [Isaac Newton](https://kenji.blog/de/p/newton/) und [Gottfried Leibniz](https://kenji.blog/de/p/leibniz/) etabliert wurde, und zeigt, dass Archimedes dem Konzept der Infinitesimalrechnung sehr nahe gekommen war.
 
 ## 3.6 Archimedische Körper
 
@@ -166,7 +166,7 @@ Sie soll erfunden worden sein, als er sich in Ägypten aufhielt, um Wasser aus d
 
 # 5. Einfluss auf die Nachwelt und Vermächtnis
 
-Die von Archimedes hinterlassenen Werke wurden zu einer Bibel für Gelehrte von der hellenistischen Periode bis zur römischen Ära und später in der mittelalterlichen arabischen Welt und im Europa der Renaissance. Galileo Galilei lobte Archimedes als "übermenschliche Figur" und studierte dessen Methoden mit Begeisterung. Johannes Kepler, [René Descartes](https://kenji.blog/p/descartes/) und Newton, der die Infinitesimalrechnung perfektionierte, wurden ebenfalls direkt und indirekt stark von Archimedes' Schriften beeinflusst.
+Die von Archimedes hinterlassenen Werke wurden zu einer Bibel für Gelehrte von der hellenistischen Periode bis zur römischen Ära und später in der mittelalterlichen arabischen Welt und im Europa der Renaissance. Galileo Galilei lobte Archimedes als "übermenschliche Figur" und studierte dessen Methoden mit Begeisterung. Johannes Kepler, [René Descartes](https://kenji.blog/de/p/descartes/) und Newton, der die Infinitesimalrechnung perfektionierte, wurden ebenfalls direkt und indirekt stark von Archimedes' Schriften beeinflusst.
 
 Sein Forschergeist und seine Methodik strahlen nicht nur als antike Relikte weiter, sondern als Archetyp des wissenschaftlichen Denkens. Archimedes ist die Person, die im Alleingang die drei Säulen der modernen Wissenschaft verkörperte: strenge Beweisführung in der Mathematik, mathematische Modellierung physikalischer Phänomene und praktische technologische Entwicklung unter Anwendung der Theorie.
 

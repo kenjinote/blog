@@ -128,7 +128,7 @@ Dies erklärt das Auftreten von Resonanztermen wie $te^{\lambda t}$ in der Physi
 Jede Matrix erfüllt ihre charakteristische Gleichung $p(A) = 0$ (**Cayley-Hamilton-Theorem**).
 Das **Minimalpolynom** $m(\lambda)$ ist das Polynom kleinsten Grades mit $m(A) = 0$. Sind alle Nullstellen von $m$ einfach, ist die Matrix diagonalisierbar.
 
-## Unterschied zur [Singulärwertzerlegung (SVD)](https://kenji.blog/p/singular-value-decomposition/)
+## Unterschied zur [Singulärwertzerlegung (SVD)](https://kenji.blog/de/p/singular-value-decomposition/)
 
 ```mermaid
 graph LR
@@ -166,4 +166,4 @@ print(np.round(T, 4))
 
 ## Fazit
 
-[Diagonalisierung und Jordansche Normalform](https://kenji.blog/p/diagonalization-and-jordan-normal-form/) sind unverzichtbare Werkzeuge der modernen Mathematik und spielen in fast allen quantitativen Disziplinen eine Schlüsselrolle.
+[Diagonalisierung und Jordansche Normalform](https://kenji.blog/de/p/diagonalization-and-jordan-normal-form/) sind unverzichtbare Werkzeuge der modernen Mathematik und spielen in fast allen quantitativen Disziplinen eine Schlüsselrolle.

@@ -32,7 +32,7 @@ Namun, jawaban matematis yang benar adalah **"sekitar 0,98% (kurang dari 1%)"**.
 
 Mengapa dengan akurasi 99%, peluang sebenarnya bisa menjadi kurang dari 1%?
 
-## [Teorema Bayes](https://kenji.blog/p/bayes-theorem/) dan Visualisasi Keseluruhan
+## [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/) dan Visualisasi Keseluruhan
 
 Kunci untuk memecahkan masalah ini adalah dengan mempertimbangkan bukan hanya akurasi tes, tetapi juga **"seberapa langka penyakit itu pada awalnya (tingkat dasar/peluang prior)"**.
 Mari kita visualisasikan fenomena yang berlawanan dengan intuisi ini menggunakan populasi besar sebanyak 1.000.000 orang.
@@ -87,7 +87,7 @@ Meskipun dinyatakan "positif", peluang Anda sebenarnya sehat (positif palsu) jau
 
 ## Mengapa Intuisi Bisa Salah?
 
-Fenomena ini dijelaskan secara matematis melalui **"[Teorema Bayes](https://kenji.blog/p/bayes-theorem/)"** yang menghitung peluang bersyarat, tetapi otak manusia sangat buruk dalam melakukan perhitungan ini.
+Fenomena ini dijelaskan secara matematis melalui **"[Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/)"** yang menghitung peluang bersyarat, tetapi otak manusia sangat buruk dalam melakukan perhitungan ini.
 
 Alasan kita membuat kesalahan adalah karena kita terganggu oleh informasi individu yang kuat dan langsung di depan mata ("Hasil tes Anda positif! Akurasinya 99%!"), dan mengabaikan data statistik yang luas dan membosankan di latar belakang ("Sejak awal, hanya 1 dari 10.000 orang yang menderita penyakit ini (tingkat dasar)").
 

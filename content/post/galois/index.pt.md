@@ -8,13 +8,13 @@ categories: ["matemática", "biografia"]
 tags: ["Teoria de Galois", "Álgebra", "Teoria dos grupos", "História"]
 ---
 
-Na história da matemática, poucos tiveram uma vida tão dramática e trágica quanto [Évariste Galois](https://kenji.blog/p/galois/) (1811-1832). Este jovem francês, que perdeu a vida em um duelo na tenra idade de 20 anos, lançou as bases de uma magnífica teoria que mudaria fundamentalmente a matemática posterior em uma carta escrita na véspera de sua morte. Neste artigo, mergulhamos profundamente na vida turbulenta de Galois e no seu maior legado, a **[Teoria de Galois](https://kenji.blog/p/galois-theory/)**.
+Na história da matemática, poucos tiveram uma vida tão dramática e trágica quanto [Évariste Galois](https://kenji.blog/pt/p/galois/) (1811-1832). Este jovem francês, que perdeu a vida em um duelo na tenra idade de 20 anos, lançou as bases de uma magnífica teoria que mudaria fundamentalmente a matemática posterior em uma carta escrita na véspera de sua morte. Neste artigo, mergulhamos profundamente na vida turbulenta de Galois e no seu maior legado, a **[Teoria de Galois](https://kenji.blog/pt/p/galois-theory/)**.
 
 ## 1. Uma vida turbulenta: Paixão e frustração
 
 ### Início da vida e o despertar para a matemática
 
-[Évariste Galois](https://kenji.blog/p/galois/) nasceu em 1811 em Bourg-la-Reine, um subúrbio de Paris. Seu pai era um republicano instruído que mais tarde serviu como prefeito da cidade. Inicialmente educado por sua mãe, Galois entrou no Lycée Louis-le-Grand em Paris aos 12 anos.
+[Évariste Galois](https://kenji.blog/pt/p/galois/) nasceu em 1811 em Bourg-la-Reine, um subúrbio de Paris. Seu pai era um republicano instruído que mais tarde serviu como prefeito da cidade. Inicialmente educado por sua mãe, Galois entrou no Lycée Louis-le-Grand em Paris aos 12 anos.
 
 A vida escolar no liceu era monótona para ele, mas sua vida mudou completamente aos 15 anos, quando ele descobriu os *Éléments de Géométrie* de Legendre. Diz-se que Galois leu este difícil livro em questão de dias, como se estivesse lendo um romance. A partir de então, ignorou os livros didáticos normais e começou a devorar os escritos dos maiores matemáticos da época, como Lagrange e Cauchy.
 
@@ -48,9 +48,9 @@ Na véspera do duelo, tendo a premonição de sua morte, Galois escreveu uma lon
 
 Na manhã seguinte, em 30 de maio de 1832, Galois foi baleado no abdômen e morreu no dia seguinte. Tinha 20 anos. Suas últimas palavras ao seu irmão mais novo que chorava foram: "Não chore. Preciso de toda a minha coragem para morrer aos vinte".
 
-## 2. Realizações matemáticas: O que é a [Teoria de Galois](https://kenji.blog/p/galois-theory/)?
+## 2. Realizações matemáticas: O que é a [Teoria de Galois](https://kenji.blog/pt/p/galois-theory/)?
 
-O maior legado de Galois é o que agora chamamos de **[Teoria de Galois](https://kenji.blog/p/galois-theory/)**. Ela forneceu uma resposta completa e fundamental para um problema matemático de longa data: "Por que as equações de grau 5 ou superior não podem ser resolvidas algebricamente?"
+O maior legado de Galois é o que agora chamamos de **[Teoria de Galois](https://kenji.blog/pt/p/galois-theory/)**. Ela forneceu uma resposta completa e fundamental para um problema matemático de longa data: "Por que as equações de grau 5 ou superior não podem ser resolvidas algebricamente?"
 
 ### Raízes de equações e simetria
 
@@ -62,7 +62,7 @@ Galois se concentrou na **simetria** escondida por trás das raízes de uma equa
 
 ### Grupos e corpos: A correspondência de Galois
 
-O núcleo da [Teoria de Galois](https://kenji.blog/p/galois-theory/) reside em mostrar que existe uma bela correspondência entre dois objetos matemáticos aparentemente completamente diferentes: "Corpos" e "Grupos".
+O núcleo da [Teoria de Galois](https://kenji.blog/pt/p/galois-theory/) reside em mostrar que existe uma bela correspondência entre dois objetos matemáticos aparentemente completamente diferentes: "Corpos" e "Grupos".
 
 - **Corpo (Field)**: Um conjunto de números onde as quatro operações aritméticas básicas (adição, subtração, multiplicação, divisão) podem ser realizadas livremente. Ele representa a extensão do espaço que contém os coeficientes e as raízes de uma equação.
 - **Grupo (Group)**: Uma coleção de simetrias ou transformações. Ele representa a estrutura das operações (automorfismos) que permutam as raízes de uma equação.
@@ -116,4 +116,4 @@ Após a morte de Galois, suas cartas foram guardadas pelo seu amigo íntimo Chev
 
 O conceito de "grupo" introduzido por Galois tornou-se posteriormente a linguagem fundamental não apenas da álgebra, mas de todos os campos científicos, incluindo geometria, topologia e física (como a física de partículas e a cristalografia). Hoje, a álgebra abstrata, que estuda sistemas algébricos como "grupos, anéis e corpos", tornou-se um dos pilares mais importantes da matemática moderna.
 
-[Évariste Galois](https://kenji.blog/p/galois/) faleceu na tenra idade de 20 anos. No entanto, a obra monumental que ele estabeleceu durante sua curta vida não desapareceu, mesmo após quase 200 anos, e continua a brilhar com uma luz poderosa iluminando as profundezas da matemática moderna. Suas últimas palavras, "Não tenho tempo", parecem nos confrontar fortemente com a infinitude do intelecto humano e a brevidade da vida.
+[Évariste Galois](https://kenji.blog/pt/p/galois/) faleceu na tenra idade de 20 anos. No entanto, a obra monumental que ele estabeleceu durante sua curta vida não desapareceu, mesmo após quase 200 anos, e continua a brilhar com uma luz poderosa iluminando as profundezas da matemática moderna. Suas últimas palavras, "Não tenho tempo", parecem nos confrontar fortemente com a infinitude do intelecto humano e a brevidade da vida.

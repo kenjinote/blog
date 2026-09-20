@@ -8,9 +8,9 @@ categories: ["mathematics", "science"]
 tags: ["Topology", "Poincare Conjecture", "Grigori Perelman", "Math"]
 ---
 
-Dans le monde des mathématiques, il existe de nombreux mystères profonds et magnifiques qui mettent à l'épreuve l'intuition humaine. Parmi eux, le plus célèbre, et celui qui a connu le dénouement le plus dramatique, est la **conjecture de Poincaré** ([Poincaré Conjecture](https://kenji.blog/p/poincare-conjecture/)).
+Dans le monde des mathématiques, il existe de nombreux mystères profonds et magnifiques qui mettent à l'épreuve l'intuition humaine. Parmi eux, le plus célèbre, et celui qui a connu le dénouement le plus dramatique, est la **conjecture de Poincaré** ([Poincaré Conjecture](https://kenji.blog/fr/p/poincare-conjecture/)).
 
-Proposée en 1904 par le mathématicien génial français [Henri Poincaré](https://kenji.blog/p/poincare/), cette conjecture était un problème fondamental de la topologie directement lié au thème grandiose de la forme de l'Univers. Pendant près de 100 ans, de nombreux mathématiciens éminents s'y sont attaqués pour finalement échouer face à ce problème extrêmement difficile, jusqu'à ce qu'il soit soudainement prouvé entre 2002 et 2003 par le mathématicien russe solitaire Grigori Perelman, stupéfiant ainsi le monde entier.
+Proposée en 1904 par le mathématicien génial français [Henri Poincaré](https://kenji.blog/fr/p/poincare/), cette conjecture était un problème fondamental de la topologie directement lié au thème grandiose de la forme de l'Univers. Pendant près de 100 ans, de nombreux mathématiciens éminents s'y sont attaqués pour finalement échouer face à ce problème extrêmement difficile, jusqu'à ce qu'il soit soudainement prouvé entre 2002 et 2003 par le mathématicien russe solitaire Grigori Perelman, stupéfiant ainsi le monde entier.
 
 Dans cet article, nous allons explorer en profondeur, à l'aide de formules et de schémas, ce que signifie la conjecture de Poincaré, les concepts fondamentaux de la topologie, ainsi que le contexte de la démonstration par Perelman.
 
@@ -36,7 +36,7 @@ D'un autre côté, une sphère (la surface d'une balle) n'a pas de trou. Par con
 
 ## 2. Espace simplement connexe et l'énoncé de la conjecture de Poincaré
 
-[La conjecture de Poincaré](https://kenji.blog/p/poincare-conjecture/) tente de caractériser une « sphère » de ce point de vue topologique.
+[La conjecture de Poincaré](https://kenji.blog/fr/p/poincare-conjecture/) tente de caractériser une « sphère » de ce point de vue topologique.
 
 La « surface d'une sphère » que nous voyons tous les jours est appelée sphère de dimension 2 ( $S^2$ ). Poincaré a pensé que si une certaine figure géométrique est un espace fermé « sans trou », elle devrait être homéomorphe (topologiquement identique) à une sphère.
 

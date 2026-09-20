@@ -32,7 +32,7 @@ Die mathematisch korrekte Antwort lautet jedoch: **„ca. 0,98% (weniger als 1%)
 
 Warum in aller Welt liegt die tatsächliche Wahrscheinlichkeit bei unter 1%, obwohl die Genauigkeit 99% beträgt?
 
-## Der [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) und die Visualisierung des Ganzen
+## Der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) und die Visualisierung des Ganzen
 
 Der Schlüssel zur Lösung dieses Problems liegt darin, nicht nur die Genauigkeit des Tests zu berücksichtigen, sondern auch **„wie selten die Krankheit ursprünglich ist (Basisrate/A-priori-Wahrscheinlichkeit)“**.
 Lassen Sie uns dieses kontraintuitive Phänomen anhand einer großen Gruppe von 1.000.000 Menschen visualisieren.
@@ -87,7 +87,7 @@ Obwohl Sie „positiv“ getestet wurden, ist die Wahrscheinlichkeit, dass Sie g
 
 ## Warum irrt sich unsere Intuition?
 
-Dieses Phänomen wird mathematisch durch den **„[Satz von Bayes](https://kenji.blog/p/bayes-theorem/)“** zur Berechnung der bedingten Wahrscheinlichkeit erklärt, aber das menschliche Gehirn ist sehr schlecht darin, diese Berechnung durchzuführen.
+Dieses Phänomen wird mathematisch durch den **„[Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/)“** zur Berechnung der bedingten Wahrscheinlichkeit erklärt, aber das menschliche Gehirn ist sehr schlecht darin, diese Berechnung durchzuführen.
 
 Der Grund für unseren Fehler ist, dass wir von den unmittelbaren, spezifischen und eindringlichen Informationen („Ihr Testergebnis ist positiv! Die Genauigkeit beträgt 99%!“) abgelenkt werden und die riesigen, langweiligen statistischen Daten im Hintergrund ignorieren („Von vornherein ist nur 1 von 10.000 Personen an dieser Krankheit erkrankt (Basisrate)“).
 

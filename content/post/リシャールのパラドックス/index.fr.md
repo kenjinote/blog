@@ -121,7 +121,7 @@ Le paradoxe de Richard a explosé en une contradiction interne parce qu'il a ten
 Le paradoxe de Richard a provoqué une grande onde de choc dans le monde mathématique de l'époque.
 "Le langage humain (et les systèmes logiques), si l'on n'y prend pas garde, peuvent rapidement générer des contradictions internes. Que doit-on faire pour rendre les mathématiques parfaites et exemptes de contradictions ?"
 
-En 1931, c'est [Kurt Gödel](https://kenji.blog/p/godel/), un jeune mathématicien de génie de 25 ans, qui a apporté une conclusion définitive à ce problème.
+En 1931, c'est [Kurt Gödel](https://kenji.blog/fr/p/godel/), un jeune mathématicien de génie de 25 ans, qui a apporté une conclusion définitive à ce problème.
 Gödel a parfaitement traduit et reproduit la structure de ce paradoxe, que Richard avait provoqué en utilisant "l'ambiguïté du langage humain", à l'aide de **"formules mathématiques rigoureuses (nombres de Gödel)"**.
 
 Le résultat qui en a découlé est le célèbre **"théorème d'incomplétude de Gödel"**.

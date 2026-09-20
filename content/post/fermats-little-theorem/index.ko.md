@@ -12,17 +12,17 @@ tags:
   - "소수"
 ---
 
-현대 인터넷 사회에서 우리가 안전하게 통신할 수 있는 것은 **암호 이론** 덕분입니다. 그리고 그 암호 이론의 근저에는 17세기 수학자 [피에르 드 페르마](https://kenji.blog/p/fermat/)([Pierre de Fermat](https://kenji.blog/p/fermat/))가 발견한 아름다운 정리가 존재하고 있습니다.
+현대 인터넷 사회에서 우리가 안전하게 통신할 수 있는 것은 **암호 이론** 덕분입니다. 그리고 그 암호 이론의 근저에는 17세기 수학자 [피에르 드 페르마](https://kenji.blog/ko/p/fermat/)([Pierre de Fermat](https://kenji.blog/ko/p/fermat/))가 발견한 아름다운 정리가 존재하고 있습니다.
 
-본 기사에서는 정수론의 중요한 기초인 **[페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)** ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))에 대해, 그 의미와 증명, 그리고 현대의 RSA 암호에 어떻게 응용되고 있는지를 알기 쉽게 해설합니다.
+본 기사에서는 정수론의 중요한 기초인 **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)** ([Fermat's Little Theorem](https://kenji.blog/ko/p/fermats-little-theorem/))에 대해, 그 의미와 증명, 그리고 현대의 RSA 암호에 어떻게 응용되고 있는지를 알기 쉽게 해설합니다.
 
-## [페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)란?
+## [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)란?
 
-[페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)는 소수와 정수의 관계를 보여주는 매우 간단하면서도 강력한 정리입니다.
+[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)는 소수와 정수의 관계를 보여주는 매우 간단하면서도 강력한 정리입니다.
 
 정리의 주장은 다음과 같습니다.
 
-> **[페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)**
+> **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)**
 > $p$ 를 소수라 하고, $a$ 를 $p$ 의 배수가 아닌 임의의 정수(즉, $a$ 와 $p$ 는 서로소)라고 합시다. 이때, 다음 합동식이 성립합니다.
 > 
 > $$ a^{p-1} \equiv 1 \pmod p $$
@@ -52,7 +52,7 @@ tags:
 
 ## 정리의 증명
 
-[페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)를 증명하는 데는 몇 가지 접근법이 있지만, 여기서는 정수론에 기반한 대표적인 증명 방법을 소개합니다.
+[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)를 증명하는 데는 몇 가지 접근법이 있지만, 여기서는 정수론에 기반한 대표적인 증명 방법을 소개합니다.
 
 $p$ 를 소수라 하고, $a$ 를 $p$ 의 배수가 아닌 정수라고 합시다.
 집합 $S = \{1, 2, 3, \dots, p-1\}$ 을 생각합니다. 이 집합의 각 원소에 $a$ 를 곱한 새로운 집합을 $S'$ 라고 합시다.
@@ -94,9 +94,9 @@ flowchart TD
 
 ## 현대 암호 이론에의 응용: RSA 암호
 
-[페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)(및 그 일반화인 **오일러의 정리** )의 가장 중요한 응용처가 바로 인터넷의 보안을 지탱하는 **RSA 암호** 입니다.
+[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)(및 그 일반화인 **오일러의 정리** )의 가장 중요한 응용처가 바로 인터넷의 보안을 지탱하는 **RSA 암호** 입니다.
 
-RSA 암호는 거대한 수의 소인수분해가 어렵다는 점을 안전성의 근거로 삼고 있습니다. 그 구조에 있어서, '[페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)'의 원리가 키의 생성과 복호화 과정에서 결정적인 역할을 하고 있습니다.
+RSA 암호는 거대한 수의 소인수분해가 어렵다는 점을 안전성의 근거로 삼고 있습니다. 그 구조에 있어서, '[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)'의 원리가 키의 생성과 복호화 과정에서 결정적인 역할을 하고 있습니다.
 
 ```mermaid
 sequenceDiagram
@@ -112,10 +112,10 @@ sequenceDiagram
 ```
 
 RSA 암호에서는 $p$ 와 $q$ 라는 2개의 거대한 소수를 준비하고, $n = p \times q$ 로 둡니다.
-오일러의 정리에 의해 암호화와 복호화 과정에서 $M^{ed} \equiv M \pmod n$ 이 성립하도록 키($e$ 와 $d$)가 설계됩니다. 여기서 평문 $M$ 이 원래 모습으로 돌아간다는 마법 같은 현상은 본질적으로 [페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)가 보장하고 있는 수학적 성질에 의존하고 있는 것입니다.
+오일러의 정리에 의해 암호화와 복호화 과정에서 $M^{ed} \equiv M \pmod n$ 이 성립하도록 키($e$ 와 $d$)가 설계됩니다. 여기서 평문 $M$ 이 원래 모습으로 돌아간다는 마법 같은 현상은 본질적으로 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)가 보장하고 있는 수학적 성질에 의존하고 있는 것입니다.
 
 ## 요약
 
-17세기에 [피에르 드 페르마](https://kenji.blog/p/fermat/)에 의해 발견된 작은 정리는 수백 년 후인 현대 사회에서 정보 보안의 근간을 지탱하는 불가결한 요소가 되었습니다.
+17세기에 [피에르 드 페르마](https://kenji.blog/ko/p/fermat/)에 의해 발견된 작은 정리는 수백 년 후인 현대 사회에서 정보 보안의 근간을 지탱하는 불가결한 요소가 되었습니다.
 
-**[페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)** 는 순수 수학이 어떻게 실용적인 기술(암호 이론이나 알고리즘)로 결부되는지를 보여주는 가장 아름다운 예 중 하나라고 할 수 있을 것입니다. 수학의 심오함과 그 응용력의 넓이에는 놀라울 따름입니다.
+**[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)** 는 순수 수학이 어떻게 실용적인 기술(암호 이론이나 알고리즘)로 결부되는지를 보여주는 가장 아름다운 예 중 하나라고 할 수 있을 것입니다. 수학의 심오함과 그 응용력의 넓이에는 놀라울 따름입니다.

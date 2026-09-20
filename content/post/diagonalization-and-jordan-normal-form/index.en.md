@@ -215,9 +215,9 @@ $$
 
 This result clearly shows the mechanism by which secular terms like $te^{\lambda t}$ and $t^2e^{\lambda t}$ appear in the solutions of differential equations. This provides mathematical backing for physical phenomena such as resonance and critical damping in control systems.
 
-## The [Cayley-Hamilton Theorem](https://kenji.blog/p/cayley-hamilton-theorem/) and the Minimal Polynomial
+## The [Cayley-Hamilton Theorem](https://kenji.blog/en/p/cayley-hamilton-theorem/) and the Minimal Polynomial
 
-To understand the Jordan normal form more deeply, it is essential to consider the polynomials of a matrix. Every $n \times n$ matrix $A$ satisfies its own characteristic polynomial $p(\lambda) = \det(\lambda I - A)$. That is, $p(A) = 0$ (the zero matrix). This is called the **[Cayley-Hamilton Theorem](https://kenji.blog/p/cayley-hamilton-theorem/)**.
+To understand the Jordan normal form more deeply, it is essential to consider the polynomials of a matrix. Every $n \times n$ matrix $A$ satisfies its own characteristic polynomial $p(\lambda) = \det(\lambda I - A)$. That is, $p(A) = 0$ (the zero matrix). This is called the **[Cayley-Hamilton Theorem](https://kenji.blog/en/p/cayley-hamilton-theorem/)**.
 
 However, the characteristic polynomial is not the only polynomial that makes matrix $A$ the zero matrix. Among the monic polynomials (polynomials with a leading coefficient of 1) that make $A$ the zero matrix, the one with the lowest degree is called the **minimal polynomial**. If we let the minimal polynomial be $m(\lambda)$, there is a close relationship between the Jordan normal form and the minimal polynomial.
 
@@ -227,9 +227,9 @@ m(\lambda) = (\lambda - \lambda_1)(\lambda - \lambda_2)\cdots(\lambda - \lambda_
 $$
 then the matrix $A$ is diagonalizable. Conversely, if it has repeated roots, it cannot be diagonalized, and the highest multiplicity of the repeated root matches the size of the largest Jordan block. Thus, the minimal polynomial is a powerful tool for determining the diagonalizability of a matrix.
 
-## Difference Between Diagonalization and [Singular Value Decomposition (SVD)](https://kenji.blog/p/singular-value-decomposition/)
+## Difference Between Diagonalization and [Singular Value Decomposition (SVD)](https://kenji.blog/en/p/singular-value-decomposition/)
 
-A matrix decomposition method similar to diagonalization is **[Singular Value Decomposition (SVD)](https://kenji.blog/p/singular-value-decomposition/)**. These two methods differ in purpose and scope of application.
+A matrix decomposition method similar to diagonalization is **[Singular Value Decomposition (SVD)](https://kenji.blog/en/p/singular-value-decomposition/)**. These two methods differ in purpose and scope of application.
 
 Diagonalization $A = PDP^{-1}$ is applicable only to square matrices and is extremely useful when calculating matrix "repeated application (exponentiation)" or "exponential functions".
 
@@ -243,7 +243,7 @@ graph LR
     E -->|"Ideal for iterative calculations"| F["Dynamical systems and differential equations"]
 ```
 
-## Applications to Dynamical Systems and [Markov Chains](https://kenji.blog/p/markov-chain/)
+## Applications to Dynamical Systems and [Markov Chains](https://kenji.blog/en/p/markov-chain/)
 
 Powerful applications of diagonalization include discrete dynamical systems and Markov chains.
 

@@ -10,13 +10,13 @@ tags: ["William Brouncker", "Pi", "Fração Contínua", "Equação de Pell", "Ro
 
 ## 1. Introdução
 
-A Europa do século XVII estava no meio de uma revolução científica. Foi uma era em que a matemática e a física deram saltos dramáticos, como resumido pela descoberta do cálculo por [Isaac Newton](https://kenji.blog/p/newton/) e Gottfried Wilhelm Leibniz. Em meio a isso, a instituição que desempenhou um papel central no desenvolvimento do mundo acadêmico britânico foi **A Royal Society**.
+A Europa do século XVII estava no meio de uma revolução científica. Foi uma era em que a matemática e a física deram saltos dramáticos, como resumido pela descoberta do cálculo por [Isaac Newton](https://kenji.blog/pt/p/newton/) e Gottfried Wilhelm Leibniz. Em meio a isso, a instituição que desempenhou um papel central no desenvolvimento do mundo acadêmico britânico foi **A Royal Society**.
 
-Este artigo fornece uma explicação detalhada da vida e das notáveis conquistas matemáticas de **[William Brouncker](https://kenji.blog/p/brouncker/)**, que serviu como o primeiro Presidente da Royal Society e deixou sua marca na história como um matemático com sua "representação em fração contínua de Pi" e "solução para a equação de Pell". Brouncker interagiu com as mentes mais brilhantes da Europa da época e abordou vários problemas desafiadores. Suas conquistas contribuíram significativamente para estabelecer as bases para um tratamento matematicamente rigoroso do conceito de infinito.
+Este artigo fornece uma explicação detalhada da vida e das notáveis conquistas matemáticas de **[William Brouncker](https://kenji.blog/pt/p/brouncker/)**, que serviu como o primeiro Presidente da Royal Society e deixou sua marca na história como um matemático com sua "representação em fração contínua de Pi" e "solução para a equação de Pell". Brouncker interagiu com as mentes mais brilhantes da Europa da época e abordou vários problemas desafiadores. Suas conquistas contribuíram significativamente para estabelecer as bases para um tratamento matematicamente rigoroso do conceito de infinito.
 
 ## 2. Início de Vida e Carreira
 
-[William Brouncker](https://kenji.blog/p/brouncker/) (1620 - 5 de abril de 1684) nasceu como o filho mais velho de [William Brouncker](https://kenji.blog/p/brouncker/), 1º Visconde Brouncker, e Winifred Leigh. Embora haja muitos detalhes desconhecidos sobre seu local de nascimento exato e educação infantil, acredita-se que ele tenha estudado na Universidade de Oxford, cultivando excelentes habilidades no idioma e um senso matemático. Em 1645, após a morte de seu pai, ele se tornou o 2º Visconde Brouncker.
+[William Brouncker](https://kenji.blog/pt/p/brouncker/) (1620 - 5 de abril de 1684) nasceu como o filho mais velho de [William Brouncker](https://kenji.blog/pt/p/brouncker/), 1º Visconde Brouncker, e Winifred Leigh. Embora haja muitos detalhes desconhecidos sobre seu local de nascimento exato e educação infantil, acredita-se que ele tenha estudado na Universidade de Oxford, cultivando excelentes habilidades no idioma e um senso matemático. Em 1645, após a morte de seu pai, ele se tornou o 2º Visconde Brouncker.
 
 Na época, a Inglaterra estava no período caótico da Revolução Puritana (Guerra Civil Inglesa), mas Brouncker se dedicou mais ao mundo acadêmico do que ao palco político. Ele tinha um interesse particularmente forte em matemática e música, começando a construir suas próprias teorias. Em 1647, ele recebeu o título de Doutor em Medicina pela Universidade de Oxford, mas seu principal interesse sempre permaneceu nas ciências exatas. Seu irmão mais novo, Henry Brouncker, também era conhecido por atuar no mundo político e cortês, mantendo o interesse por xadrez e matemática.
 
@@ -24,7 +24,7 @@ Na época, a Inglaterra estava no período caótico da Revolução Puritana (Gue
 
 A Royal Society é uma das mais antigas sociedades científicas do mundo, dedicada a melhorar o conhecimento natural. Suas origens residem em um encontro formado após uma palestra de Christopher Wren em Londres em 1660, e foi lançada oficialmente em 1662 após receber uma Carta Real do Rei Charles II.
 
-Eleito como o **Primeiro Presidente** desta sociedade histórica estava [William Brouncker](https://kenji.blog/p/brouncker/). Em meio à sociedade tomando forma por meio dos esforços de Robert Moray e outros, Brouncker serviu como presidente por um longo período de 15 anos, de 1662 a 1677, dedicando-se à construção dos alicerces da sociedade.
+Eleito como o **Primeiro Presidente** desta sociedade histórica estava [William Brouncker](https://kenji.blog/pt/p/brouncker/). Em meio à sociedade tomando forma por meio dos esforços de Robert Moray e outros, Brouncker serviu como presidente por um longo período de 15 anos, de 1662 a 1677, dedicando-se à construção dos alicerces da sociedade.
 
 ```mermaid
 graph TD
@@ -40,7 +40,7 @@ Brouncker desempenhou um papel crucial em reunir cientistas notáveis como Rober
 
 ## 4. Conquista Matemática: Representação em Fração Contínua de Pi
 
-A conquista matemática mais famosa de Brouncker é a descoberta da fração contínua generalizada para a constante $\pi$. Isso foi introduzido no livro *Arithmetica Infinitorum* (1655) pelo matemático contemporâneo [John Wallis](https://kenji.blog/p/wallis/), o que o tornou amplamente conhecido.
+A conquista matemática mais famosa de Brouncker é a descoberta da fração contínua generalizada para a constante $\pi$. Isso foi introduzido no livro *Arithmetica Infinitorum* (1655) pelo matemático contemporâneo [John Wallis](https://kenji.blog/pt/p/wallis/), o que o tornou amplamente conhecido.
 
 ### Fórmula de Wallis e Transformação de Brouncker
 
@@ -62,7 +62,7 @@ Essa fração contínua cativou muitos matemáticos com sua beleza e regularidad
 
 As frações contínuas são ferramentas muito poderosas para aproximar números irracionais. Embora a fórmula de Brouncker convirja muito lentamente e fosse, portanto, inadequada para o cálculo prático de Pi, teve um impacto massivo na matemática posterior como um exemplo pioneiro de expansão de frações contínuas em análise. Euler posteriormente generalizaria esta fórmula ainda mais, desenvolvendo profundamente a teoria das frações contínuas.
 
-## 5. Conquista Matemática: Resolvendo a [Equação de Pell](https://kenji.blog/p/pell-equation/)
+## 5. Conquista Matemática: Resolvendo a [Equação de Pell](https://kenji.blog/pt/p/pell-equation/)
 
 Outra conquista significativa é a solução para a chamada **equação de Pell**. A equação de Pell é uma equação diofantina (uma equação polinomial com coeficientes inteiros) da seguinte forma para um número inteiro positivo $n$ que não é um quadrado perfeito:
 
@@ -72,7 +72,7 @@ $$
 
 ### O Desafio de Fermat
 
-Em 1657, o grande matemático francês [Pierre de Fermat](https://kenji.blog/p/fermat/) enviou um desafio aos matemáticos ingleses para encontrar soluções inteiras para esta equação. Fermat citou casos difíceis como $n=61$ como exemplos.
+Em 1657, o grande matemático francês [Pierre de Fermat](https://kenji.blog/pt/p/fermat/) enviou um desafio aos matemáticos ingleses para encontrar soluções inteiras para esta equação. Fermat citou casos difíceis como $n=61$ como exemplos.
 
 ### O Algoritmo de Brouncker
 
@@ -98,13 +98,13 @@ $$
 x = 1766319049, \quad y = 226153980
 $$
 
-Brouncker demonstrou que mesmo soluções tão gigantescas poderiam ser derivadas sistematicamente usando seu método. Ironicamente, devido a um mal-entendido de [Leonhard Euler](https://kenji.blog/p/euler/), esta equação foi mais tarde batizada com o nome do matemático inglês John Pell, mas a maior contribuição para estabelecer o método de solução pertence inegavelmente a Brouncker.
+Brouncker demonstrou que mesmo soluções tão gigantescas poderiam ser derivadas sistematicamente usando seu método. Ironicamente, devido a um mal-entendido de [Leonhard Euler](https://kenji.blog/pt/p/euler/), esta equação foi mais tarde batizada com o nome do matemático inglês John Pell, mas a maior contribuição para estabelecer o método de solução pertence inegavelmente a Brouncker.
 
 ## 6. Outras Conquistas e Anos Posteriores
 
 ### Contribuições para a Teoria Musical
 
-Brouncker estava interessado não apenas em matemática, mas também em teoria musical. Ele traduziu o *Musicae Compendium* de [René Descartes](https://kenji.blog/p/descartes/) para o inglês e o publicou anonimamente. Ao fazê-lo, não apenas traduziu, mas adicionou um apêndice propondo seu próprio sistema de afinação (temperamento igual de 17 tons) que dividia uma oitava em 17 intervalos iguais. Esta foi uma tentativa pioneira de analisar as escalas musicais matematicamente usando logaritmos.
+Brouncker estava interessado não apenas em matemática, mas também em teoria musical. Ele traduziu o *Musicae Compendium* de [René Descartes](https://kenji.blog/pt/p/descartes/) para o inglês e o publicou anonimamente. Ao fazê-lo, não apenas traduziu, mas adicionou um apêndice propondo seu próprio sistema de afinação (temperamento igual de 17 tons) que dividia uma oitava em 17 intervalos iguais. Esta foi uma tentativa pioneira de analisar as escalas musicais matematicamente usando logaritmos.
 
 ### Quadratura da Parábola e Curva Logarítmica
 
@@ -118,6 +118,6 @@ Em seus anos posteriores, mesmo após deixar a Presidência da Royal Society, Br
 
 ## 7. Conclusão
 
-[William Brouncker](https://kenji.blog/p/brouncker/) foi um líder notável e um matemático original que impulsionou a comunidade científica britânica do século XVII. Suas conquistas ao lançar as bases da ciência moderna como primeiro Presidente da Royal Society são imensuráveis. Além disso, suas conquistas matemáticas, como a representação em fração contínua de Pi e a solução da equação de Pell, tornaram-se marcos significativos no desenvolvimento da análise, que lida com o conceito do infinito, e da teoria dos números.
+[William Brouncker](https://kenji.blog/pt/p/brouncker/) foi um líder notável e um matemático original que impulsionou a comunidade científica britânica do século XVII. Suas conquistas ao lançar as bases da ciência moderna como primeiro Presidente da Royal Society são imensuráveis. Além disso, suas conquistas matemáticas, como a representação em fração contínua de Pi e a solução da equação de Pell, tornaram-se marcos significativos no desenvolvimento da análise, que lida com o conceito do infinito, e da teoria dos números.
 
 Sua abordagem simboliza o período de transição da rigorosa geometria para a análise utilizando álgebra e séries infinitas. Embora seu nome seja muitas vezes ofuscado por gigantes como Newton e Fermat, sem a existência de **Brouncker**, não se pode discutir a riqueza da matemática de hoje. Sua curiosidade intelectual e espírito de investigação continuam a brilhar diante de nós como a beleza da matemática, mesmo centenas de anos depois.

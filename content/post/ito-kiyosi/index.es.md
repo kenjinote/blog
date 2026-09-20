@@ -12,13 +12,13 @@ tags: ["Kiyosi Ito", "Ecuaciones Diferenciales Estocásticas", "Ingeniería Fina
 
 Nuestro mundo está lleno de eventos impredecibles e incertidumbre. Desde las fluctuaciones en los precios de las acciones y el movimiento de las partículas en el aire hasta el flujo de los ríos y los procesos de aprendizaje de las redes neuronales, los fenómenos gobernados por la aleatoriedad son innumerables. Una herramienta poderosa para describir, predecir y analizar de forma matemática y rigurosa estos "movimientos aleatorios" son las **Ecuaciones Diferenciales Estocásticas (EDE)** .
 
-Y fue el gran matemático japonés **[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/)** quien estableció la teoría de estas ecuaciones diferenciales estocásticas y erigió el monumento conocido como el **Lema de Ito** o la **Fórmula de Ito** . En este artículo, profundizamos en los episodios de su vida y en el núcleo de sus logros matemáticos, que siguen teniendo un impacto inmenso no solo en el mundo matemático, sino también en la economía, la física y la ingeniería.
+Y fue el gran matemático japonés **[Kiyosi Ito](https://kenji.blog/es/p/ito-kiyosi/)** quien estableció la teoría de estas ecuaciones diferenciales estocásticas y erigió el monumento conocido como el **Lema de Ito** o la **Fórmula de Ito** . En este artículo, profundizamos en los episodios de su vida y en el núcleo de sus logros matemáticos, que siguen teniendo un impacto inmenso no solo en el mundo matemático, sino también en la economía, la física y la ingeniería.
 
-## 2. La vida y el contexto histórico de [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/)
+## 2. La vida y el contexto histórico de [Kiyosi Ito](https://kenji.blog/es/p/ito-kiyosi/)
 
 ### 2.1 Primeros años y el despertar a las matemáticas
 
-[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) nació el 7 de septiembre de 1915 en el distrito de Inabe (ahora ciudad de Inabe), en la prefectura de Mie. Destacando en los estudios desde muy joven, pasó por la Octava Escuela Superior (ahora Universidad de Nagoya) para ingresar en el Departamento de Matemáticas de la Facultad de Ciencias de la Universidad Imperial de Tokio (ahora Universidad de Tokio).
+[Kiyosi Ito](https://kenji.blog/es/p/ito-kiyosi/) nació el 7 de septiembre de 1915 en el distrito de Inabe (ahora ciudad de Inabe), en la prefectura de Mie. Destacando en los estudios desde muy joven, pasó por la Octava Escuela Superior (ahora Universidad de Nagoya) para ingresar en el Departamento de Matemáticas de la Facultad de Ciencias de la Universidad Imperial de Tokio (ahora Universidad de Tokio).
 
 En esa época, en la comunidad matemática japonesa, grandes matemáticos como Teiji Takagi (fundador de la teoría de campos de clases) llevaban a cabo investigaciones de nivel mundial. Sin embargo, la teoría de la probabilidad a menudo era tratada todavía como la "herejía de las matemáticas" o meramente como un "campo aplicado", y su estatus como matemática pura aún no estaba establecido. No obstante, Ito quedó profundamente marcado por los *Fundamentos de la Teoría de la Probabilidad*, publicados por Andréi Kolmogórov en 1933. Utilizando la integración de Lebesgue y la teoría de la medida, Kolmogórov axiomatizó la teoría de la probabilidad, colocándola sobre bases matemáticas rigurosas.
 
@@ -38,7 +38,7 @@ Sin embargo, el proceso de Wiener tenía una propiedad matemática fatal: es **"
 
 ### 3.2 El nacimiento de la integral de Ito
 
-Para resolver este problema, [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) construyó un nuevo concepto de integración. Esta es la **Integral de Ito** .
+Para resolver este problema, [Kiyosi Ito](https://kenji.blog/es/p/ito-kiyosi/) construyó un nuevo concepto de integración. Esta es la **Integral de Ito** .
 
 $$
 \int_0^T f(t, \omega) dW_t(\omega)
@@ -71,11 +71,11 @@ $$
 
 El término entre paréntesis en el lado derecho de esta ecuación es precisamente el **término de Ito** . Muestra que la combinación de la incertidumbre (varianza $\sigma^2$) y la curvatura de la función (segunda derivada) produce un efecto promedio de empuje (hacia arriba o hacia abajo) sobre todo el sistema. Es un resultado profundo, contraintuitivo, que verdaderamente merece ser llamado la "fórmula de Newton-Leibniz" en la teoría de la probabilidad.
 
-## 4. La filosofía y personalidad de [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/)
+## 4. La filosofía y personalidad de [Kiyosi Ito](https://kenji.blog/es/p/ito-kiyosi/)
 
 ### 4.1 La "Belleza" en las matemáticas
 
-[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) amaba profundamente la "belleza" en los cimientos de las matemáticas. A menudo comparaba la investigación matemática con la creación de poesía o música. "Un excelente teorema matemático revela la estructura simple y hermosa detrás de los fenómenos complejos", dijo. Para él, las ecuaciones diferenciales estocásticas no eran solo herramientas de cálculo, sino obras de arte para expresar la armonía en lo más profundo de la aleatoriedad del mundo natural.
+[Kiyosi Ito](https://kenji.blog/es/p/ito-kiyosi/) amaba profundamente la "belleza" en los cimientos de las matemáticas. A menudo comparaba la investigación matemática con la creación de poesía o música. "Un excelente teorema matemático revela la estructura simple y hermosa detrás de los fenómenos complejos", dijo. Para él, las ecuaciones diferenciales estocásticas no eran solo herramientas de cálculo, sino obras de arte para expresar la armonía en lo más profundo de la aleatoriedad del mundo natural.
 
 ### 4.2 El frenesí de Wall Street y su propio desconcierto
 
@@ -101,10 +101,10 @@ graph TD
     E -->|"Descenso de Gradiente Estocástico (SGD)"| E1["Aprendizaje Automático y Deep Learning (IA)"]
 ```
 
-Particularmente en los últimos años, la teoría de Ito vuelve a ser el centro de atención en el campo del aprendizaje automático. La optimización de los procesos de aprendizaje en el aprendizaje profundo (el proceso donde se añade ruido en el descenso de gradiente estocástico) y los **Modelos de Difusión (Diffusion Models)** utilizados en la IA de generación de imágenes son aplicaciones directas de la teoría de Ito, resolviendo literalmente ecuaciones diferenciales estocásticas en tiempo inverso. La investigación de [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) respalda los mismísimos cimientos matemáticos de la revolución moderna de la IA.
+Particularmente en los últimos años, la teoría de Ito vuelve a ser el centro de atención en el campo del aprendizaje automático. La optimización de los procesos de aprendizaje en el aprendizaje profundo (el proceso donde se añade ruido en el descenso de gradiente estocástico) y los **Modelos de Difusión (Diffusion Models)** utilizados en la IA de generación de imágenes son aplicaciones directas de la teoría de Ito, resolviendo literalmente ecuaciones diferenciales estocásticas en tiempo inverso. La investigación de [Kiyosi Ito](https://kenji.blog/es/p/ito-kiyosi/) respalda los mismísimos cimientos matemáticos de la revolución moderna de la IA.
 
 ## 6. Conclusión: El primer premio Gauss y un legado eterno
 
-En 2006, el Congreso Internacional de Matemáticos (ICM) estableció el **Premio Gauss** para honrar la aplicación y contribución de las matemáticas a la sociedad, y seleccionó a [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/), de 90 años, como su primer galardonado. El motivo de su selección fue haber "sentado las bases de la teoría de ecuaciones diferenciales estocásticas y sus diversas aplicaciones". Es históricamente raro que una búsqueda profunda en matemáticas puras dé como resultado impactos tan amplios y prácticos en la sociedad humana.
+En 2006, el Congreso Internacional de Matemáticos (ICM) estableció el **Premio Gauss** para honrar la aplicación y contribución de las matemáticas a la sociedad, y seleccionó a [Kiyosi Ito](https://kenji.blog/es/p/ito-kiyosi/), de 90 años, como su primer galardonado. El motivo de su selección fue haber "sentado las bases de la teoría de ecuaciones diferenciales estocásticas y sus diversas aplicaciones". Es históricamente raro que una búsqueda profunda en matemáticas puras dé como resultado impactos tan amplios y prácticos en la sociedad humana.
 
-[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) falleció en 2008 a la edad de 93 años, pero su nombre está grabado para siempre en los libros de texto de todo el mundo como el "Lema de Ito" y la "Integral de Ito". Para nosotros, que vivimos en un mundo incierto, las fórmulas legadas por [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) seguirán siendo el faro más hermoso y poderoso para iluminar el caos.
+[Kiyosi Ito](https://kenji.blog/es/p/ito-kiyosi/) falleció en 2008 a la edad de 93 años, pero su nombre está grabado para siempre en los libros de texto de todo el mundo como el "Lema de Ito" y la "Integral de Ito". Para nosotros, que vivimos en un mundo incierto, las fórmulas legadas por [Kiyosi Ito](https://kenji.blog/es/p/ito-kiyosi/) seguirán siendo el faro más hermoso y poderoso para iluminar el caos.

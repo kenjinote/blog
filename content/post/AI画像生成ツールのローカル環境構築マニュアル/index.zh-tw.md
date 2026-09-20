@@ -33,7 +33,7 @@ AI圖像生成技術以Stable Diffusion的開源為開端，實現了爆發性�
 
 擴散模型的基本原理，是由對原始資料（圖像）階段性地加入高斯雜訊，最終使其變成完全雜訊的「Forward Process」，以及從該雜訊復原出原始圖像的「Reverse Process」所組成。
 
-Forward Process 被定義為[馬可夫鏈](https://kenji.blog/p/markov-chain/)，在步驟 $t$ 的狀態 $x_t$ 可以用以下公式表示：
+Forward Process 被定義為[馬可夫鏈](https://kenji.blog/zh-tw/p/markov-chain/)，在步驟 $t$ 的狀態 $x_t$ 可以用以下公式表示：
 
 $$ q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I) $$
 

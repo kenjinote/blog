@@ -8,7 +8,7 @@ categories: ["Matemática", "Biografia"]
 tags: ["Bachet", "Teoria dos Números", "História da Matemática", "Matemática Recreativa", "Diofanto"]
 ---
 
-Na história da matemática, há figuras que desempenharam papéis cruciais, mesmo que às vezes permaneçam escondidas à sombra de grandes descobertas posteriores. O matemático francês do século XVII **[Claude Gaspard Bachet](https://kenji.blog/p/bachet/) de Méziriac (1581–1638)** é um deles. Ele é famoso por sua influência sobre [Pierre de Fermat](https://kenji.blog/p/fermat/), mas suas próprias realizações também foram vastas e diversas.
+Na história da matemática, há figuras que desempenharam papéis cruciais, mesmo que às vezes permaneçam escondidas à sombra de grandes descobertas posteriores. O matemático francês do século XVII **[Claude Gaspard Bachet](https://kenji.blog/pt/p/bachet/) de Méziriac (1581–1638)** é um deles. Ele é famoso por sua influência sobre [Pierre de Fermat](https://kenji.blog/pt/p/fermat/), mas suas próprias realizações também foram vastas e diversas.
 
 Neste artigo, vamos nos aprofundar na vida de Bachet e em suas principais realizações matemáticas.
 
@@ -27,13 +27,13 @@ flowchart TD
     D -->|"Publicado em 1612"| F["'Problemas agradáveis e deleitáveis'"]
 ```
 
-## A Tradução Latina da "Arithmetica" de [Diofanto](https://kenji.blog/p/diophantus/)
+## A Tradução Latina da "Arithmetica" de [Diofanto](https://kenji.blog/pt/p/diophantus/)
 
-Uma das realizações mais conhecidas de Bachet é a sua tradução da "Arithmetica" do antigo matemático grego [Diofanto](https://kenji.blog/p/diophantus/) para o latim, adicionando comentários, e publicando-a em 1621.
+Uma das realizações mais conhecidas de Bachet é a sua tradução da "Arithmetica" do antigo matemático grego [Diofanto](https://kenji.blog/pt/p/diophantus/) para o latim, adicionando comentários, e publicando-a em 1621.
 
-Este livro traduzido tornou-se o texto padrão para os matemáticos europeus da época estudarem a álgebra antiga e a teoria dos números. Uma das anedotas mais famosas é que [Pierre de Fermat](https://kenji.blog/p/fermat/) escreveu o seu famoso "Último Teorema de Fermat" na margem da sua cópia desta edição de Bachet.
+Este livro traduzido tornou-se o texto padrão para os matemáticos europeus da época estudarem a álgebra antiga e a teoria dos números. Uma das anedotas mais famosas é que [Pierre de Fermat](https://kenji.blog/pt/p/fermat/) escreveu o seu famoso "Último Teorema de Fermat" na margem da sua cópia desta edição de Bachet.
 
-Bachet não parou na mera tradução; ele adicionou seus próprios excelentes comentários e generalizações aos problemas de [Diofanto](https://kenji.blog/p/diophantus/). Sem seus insights matemáticos, o desenvolvimento da teoria dos números no século XVII poderia ter sido muito mais lento.
+Bachet não parou na mera tradução; ele adicionou seus próprios excelentes comentários e generalizações aos problemas de [Diofanto](https://kenji.blog/pt/p/diophantus/). Sem seus insights matemáticos, o desenvolvimento da teoria dos números no século XVII poderia ter sido muito mais lento.
 
 ## Equação de Bachet
 
@@ -83,4 +83,4 @@ $x$ e $y$ podem ser calculados concretamente expandindo o algoritmo euclidiano (
 
 ## Conclusão
 
-[Claude Gaspard Bachet](https://kenji.blog/p/bachet/) não era apenas uma "figura de bastidores" para o Último Teorema de Fermat. Ele foi um grande pioneiro que abriu as portas para a matemática moderna ao reviver a sabedoria antiga enquanto explorava suas próprias equações e sistematizava a matemática recreativa. Seus comentários sobre a "Arithmetica" e seus quebra-cabeças matemáticos continuam a inspirar os amantes da matemática hoje, séculos após o seu falecimento.
+[Claude Gaspard Bachet](https://kenji.blog/pt/p/bachet/) não era apenas uma "figura de bastidores" para o Último Teorema de Fermat. Ele foi um grande pioneiro que abriu as portas para a matemática moderna ao reviver a sabedoria antiga enquanto explorava suas próprias equações e sistematizava a matemática recreativa. Seus comentários sobre a "Arithmetica" e seus quebra-cabeças matemáticos continuam a inspirar os amantes da matemática hoje, séculos após o seu falecimento.

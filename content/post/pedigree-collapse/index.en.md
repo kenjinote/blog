@@ -14,7 +14,7 @@ slug: "pedigree-collapse"
 
 # 1. Introduction: The Mystery of Infinitely Multiplying Ancestors
 
-When we think about our own roots, or our "family tree," we inevitably face a strange mathematical contradiction. This is the **[Ancestor Paradox](https://kenji.blog/p/pedigree-collapse/)**.
+When we think about our own roots, or our "family tree," we inevitably face a strange mathematical contradiction. This is the **[Ancestor Paradox](https://kenji.blog/en/p/pedigree-collapse/)**.
 
 A human family tree can basically be modeled as a simple binary tree. You have 2 parents (a father and a mother), and each of them has 2 parents (grandparents). Furthermore, those parents each have 2 parents (great-grandparents). In other words, if we let the generation be $g$ (with yourself as the 0th generation), the number of ancestors $g$ generations ago should be $2^g$.
 
@@ -36,7 +36,7 @@ In other words, the "calculated number of your ancestors" vastly exceeds the "to
 
 If we go even further back to 40 generations ago (about 1,000 years ago), the number of ancestors exceeds **about 1 trillion** (exactly $1,099,511,627,776$), which far surpasses the total number of people who have ever lived on Earth since the dawn of humanity (estimated to be about 100 to 110 billion).
 
-This is the true nature of the **[Ancestor Paradox](https://kenji.blog/p/pedigree-collapse/)**. Why does such a contradiction arise? Is the mathematics broken? The answer lies in the concept of **Pedigree Collapse**. In this article, we will delve deeply into **Pedigree Collapse**, incorporating mathematical models, historical examples, and the latest findings in population genetics.
+This is the true nature of the **[Ancestor Paradox](https://kenji.blog/en/p/pedigree-collapse/)**. Why does such a contradiction arise? Is the mathematics broken? The answer lies in the concept of **Pedigree Collapse**. In this article, we will delve deeply into **Pedigree Collapse**, incorporating mathematical models, historical examples, and the latest findings in population genetics.
 
 # 2. What is Pedigree Collapse?
 
@@ -150,7 +150,7 @@ In other words, a person living in ancient Egypt, Mesopotamia, or ancient China 
 
 # 6. Conclusion: We Are All 50th Cousins
 
-At first glance, the **[Ancestor Paradox](https://kenji.blog/p/pedigree-collapse/)** seems like merely a mathematical puzzle or calculation trick. However, by understanding the mechanism of **Pedigree Collapse** behind it, the true nature of marriages and interactions in human history is revealed.
+At first glance, the **[Ancestor Paradox](https://kenji.blog/en/p/pedigree-collapse/)** seems like merely a mathematical puzzle or calculation trick. However, by understanding the mechanism of **Pedigree Collapse** behind it, the true nature of marriages and interactions in human history is revealed.
 
 We tend to think of ourselves as divided into different races and ethnicities. Because of differences in borders, languages, and cultures, we believe we are "others" with no relation to one another. However, by tracing back the branches of our family trees just a little, those branches rapidly intertwine and ultimately consolidate into a single giant web.
 

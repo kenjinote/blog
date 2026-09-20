@@ -63,7 +63,7 @@ O problema de encontrar pontos racionais tem sido estudado desde a antiguidade c
 
 ## 3. Teorema de Mordell e o Posto (Rank)
 
-Em 1922, [Louis Mordell](https://kenji.blog/p/mordell/) provou um teorema decisivo sobre a estrutura do grupo de pontos racionais $E(\mathbb{Q})$. Mais tarde, [André Weil](https://kenji.blog/p/weil/) o estendeu para corpos de números e variedades abelianas mais gerais, ficando conhecido como o Teorema de Mordell-Weil.
+Em 1922, [Louis Mordell](https://kenji.blog/pt/p/mordell/) provou um teorema decisivo sobre a estrutura do grupo de pontos racionais $E(\mathbb{Q})$. Mais tarde, [André Weil](https://kenji.blog/pt/p/weil/) o estendeu para corpos de números e variedades abelianas mais gerais, ficando conhecido como o Teorema de Mordell-Weil.
 
 ### 3.1. Teorema de Mordell (Mordell's Theorem)
 
@@ -133,7 +133,7 @@ flowchart LR
 
 Crucial para enunciar a Conjectura de BSD é a questão de se $L(E, s)$ pode ser analiticamente continuada para todo o plano complexo. Em particular, como veremos depois, queremos saber seu comportamento em $s=1$, mas o produto na sua fórmula de definição não converge em $s=1$.
 
-Esse problema foi resolvido pelo **Teorema da Modularidade** (antiga Conjectura de Taniyama-Shimura), completamente provado em 2001. Através do trabalho monumental de [Andrew Wiles](https://kenji.blog/p/wiles/), Richard Taylor, Christophe Breuil, Brian Conrad e Fred Diamond, foi demonstrado que "todas as curvas elípticas sobre o corpo dos números racionais são modulares".
+Esse problema foi resolvido pelo **Teorema da Modularidade** (antiga Conjectura de Taniyama-Shimura), completamente provado em 2001. Através do trabalho monumental de [Andrew Wiles](https://kenji.blog/pt/p/wiles/), Richard Taylor, Christophe Breuil, Brian Conrad e Fred Diamond, foi demonstrado que "todas as curvas elípticas sobre o corpo dos números racionais são modulares".
 
 Ser modular significa que $L(E, s)$ coincide perfeitamente com a função L $L(f, s)$ de uma forma modular $f$ de peso 2. A função L de uma forma modular é analiticamente continuada para todo o plano complexo pela teoria de Hecke, e satisfaz a seguinte equação funcional:
 

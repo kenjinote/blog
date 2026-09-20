@@ -101,7 +101,7 @@ $$
 
 كل مصفوفة تحقق معادلتها المميزة $p(A) = 0$. متعدد الحدود الأصغر يحدد قابلية المصفوفة للاستقطار بناءً على تكرار الجذور.
 
-## الفرق بين الاستقطار و[تحليل القيمة المفردة (SVD)](https://kenji.blog/p/singular-value-decomposition/)
+## الفرق بين الاستقطار و[تحليل القيمة المفردة (SVD)](https://kenji.blog/ar/p/singular-value-decomposition/)
 
 ```mermaid
 graph LR
@@ -137,4 +137,4 @@ print(np.round(T, 4))
 ```
 
 ## الخاتمة
-[الاستقطار وصيغة جوردان القياسية](https://kenji.blog/p/diagonalization-and-jordan-normal-form/) هي أدوات رياضية قوية وأساسية في فهم النظم المعقدة في مجالات متعددة.
+[الاستقطار وصيغة جوردان القياسية](https://kenji.blog/ar/p/diagonalization-and-jordan-normal-form/) هي أدوات رياضية قوية وأساسية في فهم النظم المعقدة في مجالات متعددة.

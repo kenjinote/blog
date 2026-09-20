@@ -8,7 +8,7 @@ categories: ["mathematics", "science"]
 tags: ["Conjetura ABC", "Teoría de Números", "Teoría IUT", "Shinichi Mochizuki"]
 ---
 
-# Introducción: ¿Qué es la [Conjetura ABC](https://kenji.blog/p/abc-conjecture/)?
+# Introducción: ¿Qué es la [Conjetura ABC](https://kenji.blog/es/p/abc-conjecture/)?
 
 En el campo de la teoría de números, existen numerosos problemas sin resolver, pero entre ellos, la **conjetura ABC** (ABC Conjecture) ha sido considerada de particular importancia. Esta conjetura fue formulada de manera independiente por Joseph Oesterlé y David Masser en 1985.
 
@@ -59,7 +59,7 @@ Si la conjetura ABC se demostrara completamente (ya sea mediante la Teoría IUT 
 
 ## Aplicación al último teorema de Fermat
 
-[El último teorema de Fermat](https://kenji.blog/p/fermats-last-theorem/) establece que para $n \ge 3$, no existe ninguna terna de números enteros positivos $(x, y, z)$ que satisfaga $x^n + y^n = z^n$. Fue demostrado por [Andrew Wiles](https://kenji.blog/p/wiles/) en 1995, pero se utilizaron matemáticas sumamente avanzadas y complejas.
+[El último teorema de Fermat](https://kenji.blog/es/p/fermats-last-theorem/) establece que para $n \ge 3$, no existe ninguna terna de números enteros positivos $(x, y, z)$ que satisfaga $x^n + y^n = z^n$. Fue demostrado por [Andrew Wiles](https://kenji.blog/es/p/wiles/) en 1995, pero se utilizaron matemáticas sumamente avanzadas y complejas.
 
 Si asumimos que la conjetura ABC es cierta, sorprendentemente, el último teorema de Fermat (al menos cuando $n$ es suficientemente grande) puede demostrarse en apenas unas pocas líneas.
 

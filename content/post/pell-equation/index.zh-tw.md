@@ -15,11 +15,11 @@ tags:
 
 # 引言
 
-在數論領域中，**[佩爾方程](https://kenji.blog/p/pell-equation/)**（Pell's equation）被認為是最優美且具有深厚理論背景的[丟番圖](https://kenji.blog/p/diophantus/)方程之一。本文將從該方程的基本定義和性質出發，詳細講解使用連分數（Continued fractions）的優雅且高效的求解方法，以及其無限解的生成機制。為了所有熱愛數學的讀者，我們涵蓋了從公式推導、算法可視化，到使用程式語言實現的各個方面。
+在數論領域中，**[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)**（Pell's equation）被認為是最優美且具有深厚理論背景的[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程之一。本文將從該方程的基本定義和性質出發，詳細講解使用連分數（Continued fractions）的優雅且高效的求解方法，以及其無限解的生成機制。為了所有熱愛數學的讀者，我們涵蓋了從公式推導、算法可視化，到使用程式語言實現的各個方面。
 
-## 1. 什麼是[佩爾方程](https://kenji.blog/p/pell-equation/)？
+## 1. 什麼是[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)？
 
-[佩爾方程](https://kenji.blog/p/pell-equation/)是指具有以下形式的二元二次[丟番圖](https://kenji.blog/p/diophantus/)方程：
+[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)是指具有以下形式的二元二次[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程：
 
 $$ x^2 - ny^2 = 1 $$
 
@@ -28,23 +28,23 @@ $$ x^2 - ny^2 = 1 $$
 $$ x^2 - k^2y^2 = 1 $$
 $$ (x - ky)(x + ky) = 1 $$
 
-由於 $x$、$y$ 和 $k$ 都是整數，因此 $(x - ky)$ 和 $(x + ky)$ 也必須是整數。乘積為 1 的整數組合只有 $(1, 1)$ 或 $(-1, -1)$。解此方程組可得 $y = 0$，這意味著解僅限於非常簡單的 $(x, y) = (\pm 1, 0)$。因此，在[佩爾方程](https://kenji.blog/p/pell-equation/)中，要求 $n$ 不是完全平方數是尋找有意義解的必要前提。
+由於 $x$、$y$ 和 $k$ 都是整數，因此 $(x - ky)$ 和 $(x + ky)$ 也必須是整數。乘積為 1 的整數組合只有 $(1, 1)$ 或 $(-1, -1)$。解此方程組可得 $y = 0$，這意味著解僅限於非常簡單的 $(x, y) = (\pm 1, 0)$。因此，在[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)中，要求 $n$ 不是完全平方數是尋找有意義解的必要前提。
 
 ## 2. 歷史背景：佩爾、費馬以及古印度數學家們
 
-雖然這個方程冠有「佩爾」之名，但追溯歷史事實，其背景有些離奇。實際上，在近代歐洲，首先研究該方程的一般解法並強烈斷言解必然存在的是偉大的法國數學家**[皮埃爾·德·費馬](https://kenji.blog/p/fermat/)**（[Pierre de Fermat](https://kenji.blog/p/fermat/)）。
+雖然這個方程冠有「佩爾」之名，但追溯歷史事實，其背景有些離奇。實際上，在近代歐洲，首先研究該方程的一般解法並強烈斷言解必然存在的是偉大的法國數學家**[皮埃爾·德·費馬](https://kenji.blog/zh-tw/p/fermat/)**（[Pierre de Fermat](https://kenji.blog/zh-tw/p/fermat/)）。
 
-後來，**萊昂哈德·歐拉**（[Leonhard Euler](https://kenji.blog/p/euler/)）錯誤地將英國數學家**約翰·佩爾**（John Pell）的名字與這個方程聯繫在一起，因此至今它仍被廣泛稱為「[佩爾方程](https://kenji.blog/p/pell-equation/)」。佩爾本人在這個方程的求解方法中並沒有發揮核心作用。
+後來，**萊昂哈德·歐拉**（[Leonhard Euler](https://kenji.blog/zh-tw/p/euler/)）錯誤地將英國數學家**約翰·佩爾**（John Pell）的名字與這個方程聯繫在一起，因此至今它仍被廣泛稱為「[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)」。佩爾本人在這個方程的求解方法中並沒有發揮核心作用。
 
 如果將時間進一步往前推移，在費馬之前幾百年，印度數學家**婆羅摩笈多**（Brahmagupta）和**婆什迦羅第二**（Bhāskara II）就使用了一種名為查克拉瓦拉法（Chakravala method）的精妙算法，計算出了這類方程的解。從古代到中世紀，再到近代的數學家們的探索歷史，都銘刻在這個方程中。
 
 ## 3. 平凡解與非平凡解的區別
 
-對於[佩爾方程](https://kenji.blog/p/pell-equation/) $x^2 - ny^2 = 1$，無論 $n$ 取何值，始終存在解 $(x, y) = (\pm 1, 0)$。代入方程得到 $1^2 - n \cdot 0^2 = 1$，顯然成立。這被稱為**平凡解**（trivial solution）。
+對於[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/) $x^2 - ny^2 = 1$，無論 $n$ 取何值，始終存在解 $(x, y) = (\pm 1, 0)$。代入方程得到 $1^2 - n \cdot 0^2 = 1$，顯然成立。這被稱為**平凡解**（trivial solution）。
 
-然而，數學家真正感興趣的是 $y \neq 0$ 的**非平凡解**（non-trivial solution）。令人驚嘆的是，如果 $n$ 是一個非完全平方數的正整數，在數學上已經證明[佩爾方程](https://kenji.blog/p/pell-equation/)具有**無限多個非平凡解**。而且，在這無限多個解中，$x$ 和 $y$ 均為正整數的最小解被稱為**基本解**（fundamental solution），只要找到這個基本解，就可以通過代數操作輕鬆生成所有其他的解。
+然而，數學家真正感興趣的是 $y \neq 0$ 的**非平凡解**（non-trivial solution）。令人驚嘆的是，如果 $n$ 是一個非完全平方數的正整數，在數學上已經證明[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)具有**無限多個非平凡解**。而且，在這無限多個解中，$x$ 和 $y$ 均為正整數的最小解被稱為**基本解**（fundamental solution），只要找到這個基本解，就可以通過代數操作輕鬆生成所有其他的解。
 
-## 4. 連分數展開與[佩爾方程](https://kenji.blog/p/pell-equation/)的深層聯繫
+## 4. 連分數展開與[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)的深層聯繫
 
 有效尋找基本解的最強大且標準的工具是**連分數**（Continued fraction）。由於無理數 $\sqrt{n}$ 無法用有限的分數表示，它可以優美地表示為無限循環的簡單連分數。
 
@@ -52,7 +52,7 @@ $$ \sqrt{n} = [a_0; \overline{a_1, a_2, \dots, a_k, 2a_0}] $$
 
 在這裡，$a_0$ 是 $\sqrt{n}$ 的整數部分（即 $\lfloor \sqrt{n} \rfloor$），上方帶有橫線的部分代表連分數的循環部分。設這個循環的長度為 $m$。
 
-不進行無限展開，而是在中間某一項截斷所得到的有理數 $\frac{p_i}{q_i}$ 稱為**漸近分數**（convergent）。漸近分數提供了無理數 $\sqrt{n}$ 的最佳有理數近似。令人驚訝的是，[佩爾方程](https://kenji.blog/p/pell-equation/)的基本解 $(x_1, y_1)$ 可以直接從 $\sqrt{n}$ 的連分數展開中某個特定漸近分數的分子 $p$ 和分母 $q$ 獲得。具體來說，它由循環長度 $m$ 決定如下：
+不進行無限展開，而是在中間某一項截斷所得到的有理數 $\frac{p_i}{q_i}$ 稱為**漸近分數**（convergent）。漸近分數提供了無理數 $\sqrt{n}$ 的最佳有理數近似。令人驚訝的是，[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)的基本解 $(x_1, y_1)$ 可以直接從 $\sqrt{n}$ 的連分數展開中某個特定漸近分數的分子 $p$ 和分母 $q$ 獲得。具體來說，它由循環長度 $m$ 決定如下：
 
 - 如果循環長度 $m$ 為偶數：基本解為 $(p_{m-1}, q_{m-1})$。
 - 如果循環長度 $m$ 為奇數：基本解為 $(p_{2m-1}, q_{2m-1})$。
@@ -85,7 +85,7 @@ flowchart TD
 
 ## 6. 具體例子：n = 7 時的連分數展開與基本解的推導
 
-不僅僅是抽象的理論，讓我們來具體追踪一下 $n = 7$ 時的計算過程。此時的[佩爾方程](https://kenji.blog/p/pell-equation/)為 $x^2 - 7y^2 = 1$。
+不僅僅是抽象的理論，讓我們來具體追踪一下 $n = 7$ 時的計算過程。此時的[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)為 $x^2 - 7y^2 = 1$。
 
 首先，$\sqrt{7}$ 的整數部分是 $a_0 = 2$。通過重複取剩餘小數部分的倒數並提取整數部分的操作，可以求出 $\sqrt{7}$ 的連分數展開如下：
 
@@ -120,21 +120,21 @@ $$
 \begin{pmatrix} x_k \\ y_k \end{pmatrix} = \begin{pmatrix} x_1 & n y_1 \\ y_1 & x_1 \end{pmatrix}^{k-1} \begin{pmatrix} x_1 \\ y_1 \end{pmatrix}
 $$
 
-這個性質強烈暗示了[佩爾方程](https://kenji.blog/p/pell-equation/)的解不僅是簡單的數字羅列，而且具有代數結構（群結構）。
+這個性質強烈暗示了[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)的解不僅是簡單的數字羅列，而且具有代數結構（群結構）。
 
 ## 8. 婆羅摩笈多恆等式與查克拉瓦拉法
 
-在古印度數學中，在求解[佩爾方程](https://kenji.blog/p/pell-equation/)時發揮核心作用的是**婆羅摩笈多恆等式**（Brahmagupta's identity）。這個恆等式的形式如下：
+在古印度數學中，在求解[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)時發揮核心作用的是**婆羅摩笈多恆等式**（Brahmagupta's identity）。這個恆等式的形式如下：
 
 $$ (x_1^2 - ny_1^2)(x_2^2 - ny_2^2) = (x_1 x_2 + n y_1 y_2)^2 - n(x_1 y_2 + x_2 y_1)^2 $$
 
 這個恆等式的絕妙之處在於，通過組合 $x^2 - ny^2 = k_1$ 的解 $(x_1, y_1)$ 和 $x^2 - ny^2 = k_2$ 的解 $(x_2, y_2)$，可以直接合成出一個滿足 $X^2 - nY^2 = k_1 k_2$ 的新解 $(X, Y)$。
 
-印度數學家巧妙地利用這個強大的恆等式，將具有較小誤差的解不斷組合，最終推導出**查克拉瓦拉法**，以達到誤差為 $1$ 的解，也就是[佩爾方程](https://kenji.blog/p/pell-equation/)的解。這是人類數學史上的一項偉大成就，具有與連分數展開同等甚至更高的效率。
+印度數學家巧妙地利用這個強大的恆等式，將具有較小誤差的解不斷組合，最終推導出**查克拉瓦拉法**，以達到誤差為 $1$ 的解，也就是[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)的解。這是人類數學史上的一項偉大成就，具有與連分數展開同等甚至更高的效率。
 
 ## 9. Python 實現示例與解說
 
-在充分理解了理論背景之後，讓我們實際編寫一個程式。以下 Python 腳本針對指定的 $n$ 執行連分數遞迴，以搜索[佩爾方程](https://kenji.blog/p/pell-equation/)的基本解。由於計算過程不使用浮點數，完全依靠整數運算處理，因此不用擔心精度丟失。
+在充分理解了理論背景之後，讓我們實際編寫一個程式。以下 Python 腳本針對指定的 $n$ 執行連分數遞迴，以搜索[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)的基本解。由於計算過程不使用浮點數，完全依靠整數運算處理，因此不用擔心精度丟失。
 
 ```python
 import math
@@ -195,16 +195,16 @@ if solution:
     print(f"驗算: {x}^2 - {n}*{y}^2 = {x**2 - n * y**2}")
 ```
 
-運行這段代碼，就會瞬間輸出我們剛才手工計算出的基本解 $(x, y) = (8, 3)$。如果您嘗試將 $n$ 的值設置得更大，例如 $61$，您可以確認解會變成一個巨大的數字（$x = 1766319049, y = 226153980$），這會讓你真正體會到[佩爾方程](https://kenji.blog/p/pell-equation/)的深奧。
+運行這段代碼，就會瞬間輸出我們剛才手工計算出的基本解 $(x, y) = (8, 3)$。如果您嘗試將 $n$ 的值設置得更大，例如 $61$，您可以確認解會變成一個巨大的數字（$x = 1766319049, y = 226153980$），這會讓你真正體會到[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)的深奧。
 
 ## 10. 通向代數數論的橋樑：與狄利克雷單位定理的聯繫
 
-[佩爾方程](https://kenji.blog/p/pell-equation/)不僅僅是一個簡單的整數謎題。在近代數學中，它被定位為通向**實二次域**（real quadratic field）$\mathbb{Q}(\sqrt{n})$ 理論的重要入口。
+[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)不僅僅是一個簡單的整數謎題。在近代數學中，它被定位為通向**實二次域**（real quadratic field）$\mathbb{Q}(\sqrt{n})$ 理論的重要入口。
 
-[佩爾方程](https://kenji.blog/p/pell-equation/)的解與實二次域的代數整數環中的**單位**（unit，逆元也是代數整數的元素）密切對應。基本解對應於生成該單位群的**基本單位**（fundamental unit），[佩爾方程](https://kenji.blog/p/pell-equation/)存在無限解這一事實可以被視為更高級的定理——**狄利克雷單位定理**（Dirichlet's unit theorem）的一個特例。理解基本單位的性質，對於深入研究二次域的類數（class number）公式和理想類的結構至關重要。
+[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)的解與實二次域的代數整數環中的**單位**（unit，逆元也是代數整數的元素）密切對應。基本解對應於生成該單位群的**基本單位**（fundamental unit），[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)存在無限解這一事實可以被視為更高級的定理——**狄利克雷單位定理**（Dirichlet's unit theorem）的一個特例。理解基本單位的性質，對於深入研究二次域的類數（class number）公式和理想類的結構至關重要。
 
 ## 11. 總結
 
-在本文中，我們深入探討了[丟番圖](https://kenji.blog/p/diophantus/)方程中特別迷人的**[佩爾方程](https://kenji.blog/p/pell-equation/)**，從其基礎到應用進行了詳細講解。我們解釋了對於任何非完全平方數 $n$，方程始終存在無限非平凡解的驚人事實，利用連分數展開的高效搜索算法，以及利用矩陣從已生成的基本解不斷合成新解的動態過程。
+在本文中，我們深入探討了[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程中特別迷人的**[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)**，從其基礎到應用進行了詳細講解。我們解釋了對於任何非完全平方數 $n$，方程始終存在無限非平凡解的驚人事實，利用連分數展開的高效搜索算法，以及利用矩陣從已生成的基本解不斷合成新解的動態過程。
 
-幾百年前費馬和婆羅摩笈多思考的經典問題，如今能夠被優雅地實現為現代計算機算法，並進一步連接到高級代數數論，這一事實令人不禁感受到超越時代的深邃的數學浪漫。希望您能以此為契機，利用 Python 代碼探索不同 $n$ 值下的[佩爾方程](https://kenji.blog/p/pell-equation/)世界，並感受數字深奧的性質。
+幾百年前費馬和婆羅摩笈多思考的經典問題，如今能夠被優雅地實現為現代計算機算法，並進一步連接到高級代數數論，這一事實令人不禁感受到超越時代的深邃的數學浪漫。希望您能以此為契機，利用 Python 代碼探索不同 $n$ 值下的[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)世界，並感受數字深奧的性質。

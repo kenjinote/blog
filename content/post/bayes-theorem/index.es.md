@@ -16,13 +16,13 @@ tags:
 
 ## Introducción: "Actualizando creencias" en un mundo incierto
 
-El mundo en el que vivimos está lleno de incertidumbre. Desde la probabilidad de que llueva mañana hasta la probabilidad de que un nuevo medicamento sea efectivo contra una enfermedad específica, o la posibilidad de que un correo electrónico recibido sea spam, tomamos decisiones constantemente basándonos en información incompleta. Un marco poderoso para manejar matemáticamente esta incertidumbre y **actualizar nuestras predicciones cada vez que se obtiene nueva información (evidencia)** es el [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/p/bayes-theorem/)).
+El mundo en el que vivimos está lleno de incertidumbre. Desde la probabilidad de que llueva mañana hasta la probabilidad de que un nuevo medicamento sea efectivo contra una enfermedad específica, o la posibilidad de que un correo electrónico recibido sea spam, tomamos decisiones constantemente basándonos en información incompleta. Un marco poderoso para manejar matemáticamente esta incertidumbre y **actualizar nuestras predicciones cada vez que se obtiene nueva información (evidencia)** es el [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/es/p/bayes-theorem/)).
 
-Descubierto por Thomas Bayes, un ministro y matemático inglés del siglo XVIII, este teorema se ha convertido en una teoría fundamental que sustenta la IA (Inteligencia Artificial) moderna y el aprendizaje automático. En este artículo, profundizaremos en todo, desde las matemáticas básicas del [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) hasta las paradojas de probabilidad contrarias a la intuición, y cómo se aplica en la tecnología moderna.
+Descubierto por Thomas Bayes, un ministro y matemático inglés del siglo XVIII, este teorema se ha convertido en una teoría fundamental que sustenta la IA (Inteligencia Artificial) moderna y el aprendizaje automático. En este artículo, profundizaremos en todo, desde las matemáticas básicas del [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/) hasta las paradojas de probabilidad contrarias a la intuición, y cómo se aplica en la tecnología moderna.
 
-## Formulación matemática del [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/)
+## Formulación matemática del [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/)
 
-El [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) es un teorema utilizado para calcular la probabilidad $P(A|B)$ de un evento $A$ bajo la condición de que ha ocurrido un evento $B$, basándose en la probabilidad condicional inversa $P(B|A)$ y otros factores. Aunque la fórmula es extremadamente simple, sus implicaciones son profundas.
+El [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/) es un teorema utilizado para calcular la probabilidad $P(A|B)$ de un evento $A$ bajo la condición de que ha ocurrido un evento $B$, basándose en la probabilidad condicional inversa $P(B|A)$ y otros factores. Aunque la fórmula es extremadamente simple, sus implicaciones son profundas.
 
 $$
 P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
@@ -35,11 +35,11 @@ Cada término en esta ecuación recibe un nombre especial desde la perspectiva d
 - **Verosimilitud Marginal / Evidencia (Marginal Likelihood / Evidence)** $P(B)$ : La probabilidad general de observar la evidencia $B$ independientemente de si el evento $A$ es verdadero o falso. Actúa como una constante de normalización.
 - **Probabilidad A Posteriori (Posterior Probability)** $P(A|B)$ : La probabilidad del evento $A$ después de considerar la nueva evidencia $B$. Nuestra creencia actualizada.
 
-En resumen, el [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) se puede describir como la formulación matemática del proceso de **actualizar nuestra creencia a una "probabilidad a posteriori" multiplicando la "probabilidad a priori" por "qué tan bien encaja la nueva evidencia (verosimilitud)"**.
+En resumen, el [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/) se puede describir como la formulación matemática del proceso de **actualizar nuestra creencia a una "probabilidad a posteriori" multiplicando la "probabilidad a priori" por "qué tan bien encaja la nueva evidencia (verosimilitud)"**.
 
 ## Desviación de la intuición: La paradoja de los "Falsos Positivos" (Ejemplo de prueba médica)
 
-La intuición humana a menudo comete errores en los cálculos de probabilidad. Como un ejemplo clásico para comprender el poder del [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/), consideremos las pruebas de enfermedades (detección médica).
+La intuición humana a menudo comete errores en los cálculos de probabilidad. Como un ejemplo clásico para comprender el poder del [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/), consideremos las pruebas de enfermedades (detección médica).
 
 Supongamos que hay una enfermedad rara y el $1\%$ ($0.01$) de la población total está infectada con esta enfermedad (esta es la probabilidad a priori $P(\text{Enfermedad})$).
 La prueba para detectar esta enfermedad es muy precisa: si una persona con la enfermedad se hace la prueba, se la juzga "Positivo" con una probabilidad del $99\%$ (Tasa de verdaderos positivos: Verosimilitud $P(\text{Positivo}|\text{Enfermedad})$).
@@ -47,7 +47,7 @@ Sin embargo, esta prueba tiene un ligero defecto: incluso si se la hace una pers
 
 Ahora, supongamos que tomas esta prueba al azar y obtienes un resultado **"Positivo"** . ¿Cuál es la probabilidad de que realmente tengas esta enfermedad?
 
-Muchas personas tienden a pensar: "Como la prueba tiene una precisión del $99\%$, hay un $90\%$ o más de probabilidades de que tenga la enfermedad". Sin embargo, calculémoslo usando el [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/).
+Muchas personas tienden a pensar: "Como la prueba tiene una precisión del $99\%$, hay un $90\%$ o más de probabilidades de que tenga la enfermedad". Sin embargo, calculémoslo usando el [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/).
 
 Queremos encontrar $P(\text{Enfermedad}|\text{Positivo})$.
 
@@ -67,7 +67,7 @@ P(\text{Positivo}) &= P(\text{Positivo}|\text{Enfermedad}) \cdot P(\text{Enferme
 \end{aligned}
 $$
 
-A continuación, aplicamos el [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/).
+A continuación, aplicamos el [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/).
 
 $$
 \begin{aligned}
@@ -79,7 +79,7 @@ $$
 
 Sorprendentemente, incluso con un resultado positivo de la prueba, **la probabilidad de que realmente tengas la enfermedad es solo de aproximadamente un $16.7\%$**. El $83.3\%$ restante son casos de "personas sanas juzgadas incorrectamente como positivas" (falsos positivos). Esto se debe a que la prevalencia original de la enfermedad ($1\%$) es muy baja, lo que hace que los "falsos positivos de la gran población sana" superen abrumadoramente al pequeño número de "personas verdaderamente enfermas".
 
-De esta manera, el [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) corrige matemáticamente las trampas en las que nuestra intuición cae fácilmente y sirve como una herramienta poderosa para emitir juicios serenos.
+De esta manera, el [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/) corrige matemáticamente las trampas en las que nuestra intuición cae fácilmente y sirve como una herramienta poderosa para emitir juicios serenos.
 
 ```mermaid
 flowchart TD
@@ -98,13 +98,13 @@ flowchart TD
     AllPositives -->|"¿Probabilidad de estar realmente enfermo?"| Posterior["Probabilidad posterior: 99 / 594 = 16.7%"]
 ```
 
-## Aplicación del [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) en IA y Aprendizaje Automático
+## Aplicación del [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/) en IA y Aprendizaje Automático
 
-El [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) va más allá de ser un simple rompecabezas de probabilidad; juega un papel crucial en la ciencia de datos moderna y en la Inteligencia Artificial (IA). Esto se debe a que el propio proceso de aprender patrones de grandes cantidades de datos y hacer predicciones sobre datos desconocidos puede formularse como "maximizar la probabilidad a posteriori".
+El [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/) va más allá de ser un simple rompecabezas de probabilidad; juega un papel crucial en la ciencia de datos moderna y en la Inteligencia Artificial (IA). Esto se debe a que el propio proceso de aprender patrones de grandes cantidades de datos y hacer predicciones sobre datos desconocidos puede formularse como "maximizar la probabilidad a posteriori".
 
 ### 1. Clasificador Bayesiano Ingenuo (Naive Bayes)
 
-El "Clasificador Bayesiano Ingenuo", a menudo utilizado para filtrar correos electrónicos no deseados (spam), es una de las aplicaciones más directas del [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/). Este algoritmo trata las palabras contenidas en un correo electrónico (como "gratis", "ganador", "contraseña") como evidencia (características) y calcula la probabilidad a posteriori de que el correo sea spam.
+El "Clasificador Bayesiano Ingenuo", a menudo utilizado para filtrar correos electrónicos no deseados (spam), es una de las aplicaciones más directas del [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/). Este algoritmo trata las palabras contenidas en un correo electrónico (como "gratis", "ganador", "contraseña") como evidencia (características) y calcula la probabilidad a posteriori de que el correo sea spam.
 
 Se le llama "ingenuo" porque impone la fuerte suposición de que cada característica (palabra) ocurre independientemente de las demás. En realidad, las palabras están relacionadas, pero a pesar de esta suposición simplista, el clasificador Naive Bayes exhibe una precisión muy alta y velocidades de procesamiento rápidas en tareas como la clasificación de textos.
 
@@ -112,7 +112,7 @@ Se le llama "ingenuo" porque impone la fuerte suposición de que cada caracterí
 
 En sistemas donde múltiples variables están intrincadamente entrelazadas, las Redes Bayesianas expresan las dependencias entre las variables como una estructura gráfica (Grafo Acíclico Dirigido) para realizar razonamiento bajo incertidumbre.
 
-Por ejemplo, en la IA de diagnóstico médico, la influencia probabilística de la "edad del paciente", "hábitos de vida" y "factores genéticos" en una "enfermedad específica" es modelada, y luego se vincula la influencia de esa enfermedad en los "síntomas que aparecen". Cada vez que se introduce un nuevo síntoma (evidencia), las probabilidades en toda la red se actualizan según el [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/), infiriendo el nombre de la enfermedad más probable. Esto se utiliza en una amplia variedad de campos, como la evaluación de situaciones en automóviles autónomos y la predicción en mercados financieros.
+Por ejemplo, en la IA de diagnóstico médico, la influencia probabilística de la "edad del paciente", "hábitos de vida" y "factores genéticos" en una "enfermedad específica" es modelada, y luego se vincula la influencia de esa enfermedad en los "síntomas que aparecen". Cada vez que se introduce un nuevo síntoma (evidencia), las probabilidades en toda la red se actualizan según el [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/), infiriendo el nombre de la enfermedad más probable. Esto se utiliza en una amplia variedad de campos, como la evaluación de situaciones en automóviles autónomos y la predicción en mercados financieros.
 
 ```mermaid
 flowchart LR
@@ -145,14 +145,14 @@ En la historia de la estadística, dos grandes escuelas de pensamiento se han en
 
 En el Frecuentismo, la probabilidad se define como "la frecuencia relativa con la que ocurre un evento cuando el mismo ensayo se repite infinitamente". Decir que la probabilidad de que una moneda caiga en cara es del $50\%$ significa que si se lanza infinitamente, exactamente la mitad de las veces será cara. En esta postura, existe una probabilidad verdadera y fija para el evento en sí, sin dejar lugar para que el observador tenga una "creencia".
 
-Por otro lado, en el Bayesianismo, la probabilidad es tratada como **"el grado de creencia del observador (probabilidad subjetiva)"**. Una probabilidad del $70\%$ de lluvia para mañana representa el "grado de confianza" de la agencia meteorológica basado en los datos climáticos disponibles (evidencia). Si se observan nuevos datos (por ejemplo, una caída repentina de la presión atmosférica), esa confianza se actualiza según el [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/).
+Por otro lado, en el Bayesianismo, la probabilidad es tratada como **"el grado de creencia del observador (probabilidad subjetiva)"**. Una probabilidad del $70\%$ de lluvia para mañana representa el "grado de confianza" de la agencia meteorológica basado en los datos climáticos disponibles (evidencia). Si se observan nuevos datos (por ejemplo, una caída repentina de la presión atmosférica), esa confianza se actualiza según el [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/).
 
 El frecuentismo dominó gran parte del siglo XX, pero en la era moderna, donde el poder de procesamiento de las computadoras ha mejorado drásticamente, el enfoque flexible y práctico del Bayesianismo ha sido reevaluado, convirtiéndose en una de las fuerzas impulsoras detrás del auge de la IA.
 
 ## Conclusión: Sigue aprendiendo y actualizando
 
-El [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) proporciona una especie de marco de pensamiento que va más allá de una simple fórmula matemática.
+El [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/) proporciona una especie de marco de pensamiento que va más allá de una simple fórmula matemática.
 
-Todos tenemos "probabilidades a priori (creencias iniciales)" basadas en experiencias pasadas y sesgos. Esto no es necesariamente algo malo; es un punto de partida para percibir el mundo de manera eficiente. Sin embargo, lo importante es tener **la flexibilidad para actualizar elegantemente las propias creencias (actualizar a una probabilidad a posteriori), al igual que el [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/), en lugar de hacerse de la vista gorda al enfrentarse a nuevos hechos y evidencia**.
+Todos tenemos "probabilidades a priori (creencias iniciales)" basadas en experiencias pasadas y sesgos. Esto no es necesariamente algo malo; es un punto de partida para percibir el mundo de manera eficiente. Sin embargo, lo importante es tener **la flexibilidad para actualizar elegantemente las propias creencias (actualizar a una probabilidad a posteriori), al igual que el [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/), en lugar de hacerse de la vista gorda al enfrentarse a nuevos hechos y evidencia**.
 
-Al igual que la IA se vuelve más inteligente al consumir datos, nosotros los humanos también deberíamos incorporar nueva información como evidencia y actualizarnos constantemente, alcanzando una comprensión más precisa del mundo. Quizás, el [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) puede ser considerado una representación matemática de la "esencia misma de la inteligencia".
+Al igual que la IA se vuelve más inteligente al consumir datos, nosotros los humanos también deberíamos incorporar nueva información como evidencia y actualizarnos constantemente, alcanzando una comprensión más precisa del mundo. Quizás, el [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/) puede ser considerado una representación matemática de la "esencia misma de la inteligencia".

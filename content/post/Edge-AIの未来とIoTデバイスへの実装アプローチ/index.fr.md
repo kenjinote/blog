@@ -9,7 +9,7 @@ categories: ["ai", "iot", "edge-computing"]
 tags: ["Edge AI", "IoT", "ONNX", "NPU"]
 ---
 
-# [L'avenir de l'Edge AI et les approches d'implémentation pour les appareils IoT](https://kenji.blog/p/edge-ai-future-iot-implementation/)
+# [L'avenir de l'Edge AI et les approches d'implémentation pour les appareils IoT](https://kenji.blog/fr/p/edge-ai-future-iot-implementation/)
 
 ## 1. Introduction : Pourquoi l'Edge AI maintenant ?
 
@@ -258,7 +258,7 @@ L'Edge AI est passée du statut de simple "technologie complémentaire au cloud"
 
 Les techniques d'allègement côté logiciel, telles que la quantification et l'élagage des modèles, couplées aux avancées extraordinaires du matériel telles que les NPU, les TPU et Hailo, agissent de concert. Les modèles de deep learning qui nécessitaient autrefois des supercalculateurs peuvent désormais fonctionner sur les appareils dans le creux de notre main, en ne consommant que quelques milliwatts.
 
-De plus, grâce à des approches d'apprentissage distribué comme le Federated Learning et à l'exécution d'IA générative (SLM) à l'edge, la frontière technologique s'élargit rapidement. [Pour les ingénieurs](https://kenji.blog/p/prompt-engineering-for-engineers/) et les architectes, la recherche de "comment déployer un maximum d'intelligence à l'edge avec des ressources limitées", sans se reposer uniquement sur les énormes ressources du cloud, constituera le défi le plus exigeant et le plus passionnant de l'avenir.
+De plus, grâce à des approches d'apprentissage distribué comme le Federated Learning et à l'exécution d'IA générative (SLM) à l'edge, la frontière technologique s'élargit rapidement. [Pour les ingénieurs](https://kenji.blog/fr/p/prompt-engineering-for-engineers/) et les architectes, la recherche de "comment déployer un maximum d'intelligence à l'edge avec des ressources limitées", sans se reposer uniquement sur les énormes ressources du cloud, constituera le défi le plus exigeant et le plus passionnant de l'avenir.
 
 À la frontière de l'IoT, où fusionnent le monde physique et le monde numérique, l'Edge AI deviendra sans aucun doute le système nerveux central qui pilotera l'avenir.
 

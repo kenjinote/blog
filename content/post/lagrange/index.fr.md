@@ -17,7 +17,7 @@ tags:
 
 ## Introduction
 
-Dans l'histoire des mathématiques et de la physique, le XVIIIe siècle fut une époque où de grands génies brillaient comme des étoiles. Parmi eux, l'un des plus grands mathématiciens, souvent mentionné aux côtés de [Leonhard Euler](https://kenji.blog/p/euler/), est **[Joseph-Louis Lagrange](https://kenji.blog/p/lagrange/)** (1736–1813). Il est connu comme le fondateur de la « mécanique analytique », ayant établi le calcul des variations et élevé la mécanique de l'intuition géométrique à l'analyse mathématique pure.
+Dans l'histoire des mathématiques et de la physique, le XVIIIe siècle fut une époque où de grands génies brillaient comme des étoiles. Parmi eux, l'un des plus grands mathématiciens, souvent mentionné aux côtés de [Leonhard Euler](https://kenji.blog/fr/p/euler/), est **[Joseph-Louis Lagrange](https://kenji.blog/fr/p/lagrange/)** (1736–1813). Il est connu comme le fondateur de la « mécanique analytique », ayant établi le calcul des variations et élevé la mécanique de l'intuition géométrique à l'analyse mathématique pure.
 
 Dans cet article, nous plongerons dans la vie mouvementée de Lagrange, qui avait une personnalité modeste et contemplative, et dans ses réalisations mathématiques et physiques monumentales qui forment le fondement de la science et de la technologie modernes.
 
@@ -92,4 +92,4 @@ Le concept de « Lagrangien » qu'il a laissé derrière lui est devenu le langa
 
 ## Conclusion
 
-[Joseph-Louis Lagrange](https://kenji.blog/p/lagrange/) a survécu au turbulent XVIIIe siècle, mais son esprit était toujours dans le monde de la vérité mathématique pure. Ses réalisations ne sont pas de simples découvertes du passé ; elles respirent encore à l'avant-garde de la physique et des mathématiques d'aujourd'hui. Son héritage, croyant en la beauté des formules mathématiques et à l'universalité de la logique, continuera de guider la quête de connaissances de l'humanité.
+[Joseph-Louis Lagrange](https://kenji.blog/fr/p/lagrange/) a survécu au turbulent XVIIIe siècle, mais son esprit était toujours dans le monde de la vérité mathématique pure. Ses réalisations ne sont pas de simples découvertes du passé ; elles respirent encore à l'avant-garde de la physique et des mathématiques d'aujourd'hui. Son héritage, croyant en la beauté des formules mathématiques et à l'universalité de la logique, continuera de guider la quête de connaissances de l'humanité.

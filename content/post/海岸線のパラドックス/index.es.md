@@ -71,5 +71,5 @@ Esto demuestra matemáticamente que a medida que la longitud de la regla $s$ se 
 
 El concepto de "longitud" que utilizamos cotidianamente solo funciona para líneas rectas y curvas suaves. Para las figuras fractales que existen en la naturaleza (costas, nubes, cordilleras, ramificaciones de vasos sanguíneos, etc.), preguntar por una "longitud absoluta" en realidad carece de sentido matemático.
 
-"[¿Qué tan larga es la costa de Gran Bretaña?](https://kenji.blog/p/海岸線のパラドックス/)"
+"[¿Qué tan larga es la costa de Gran Bretaña?](https://kenji.blog/es/p/海岸線のパラドックス/)"
 La respuesta correcta a esto es que "depende de la longitud de la regla con la que se mida", y teóricamente es "infinita". El hecho de que una longitud infinita esté plegada dentro de un espacio pequeño y limitado puede decirse que es una hermosa paradoja para nuestra percepción del espacio.

@@ -215,9 +215,9 @@ $$
 
 Esto explica por qué aparecen términos seculares como $te^{\lambda t}$ y $t^2e^{\lambda t}$ en soluciones, apoyando matemáticamente fenómenos como la resonancia.
 
-## [Teorema de Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/) y el polinomio mínimo
+## [Teorema de Cayley-Hamilton](https://kenji.blog/es/p/cayley-hamilton-theorem/) y el polinomio mínimo
 
-Para comprender mejor, consideramos polinomios de matrices. Toda matriz $A$ satisface su polinomio característico $p(\lambda) = \det(\lambda I - A)$, o sea $p(A) = 0$. Esto es el **[Teorema de Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/)**.
+Para comprender mejor, consideramos polinomios de matrices. Toda matriz $A$ satisface su polinomio característico $p(\lambda) = \det(\lambda I - A)$, o sea $p(A) = 0$. Esto es el **[Teorema de Cayley-Hamilton](https://kenji.blog/es/p/cayley-hamilton-theorem/)**.
 
 El polinomio mónico de menor grado tal que $A$ es la matriz nula es el **polinomio mínimo** $m(\lambda)$. Si $m(\lambda)$ se factoriza en términos lineales sin raíces repetidas:
 $$
@@ -225,9 +225,9 @@ m(\lambda) = (\lambda - \lambda_1)(\lambda - \lambda_2)\cdots(\lambda - \lambda_
 $$
 la matriz es diagonalizable. Si tiene raíces repetidas, no lo es, y su grado coincide con el mayor bloque de Jordan.
 
-## Diferencia con la [Descomposición en Valores Singulares (SVD)](https://kenji.blog/p/singular-value-decomposition/)
+## Diferencia con la [Descomposición en Valores Singulares (SVD)](https://kenji.blog/es/p/singular-value-decomposition/)
 
-Similar es la **[Descomposición en Valores Singulares (SVD)](https://kenji.blog/p/singular-value-decomposition/)**.
+Similar es la **[Descomposición en Valores Singulares (SVD)](https://kenji.blog/es/p/singular-value-decomposition/)**.
 La diagonalización $A = PDP^{-1}$ aplica solo a matrices cuadradas y es útil para iteraciones y exponenciales.
 La SVD $A = U \Sigma V^*$ aplica a cualquier matriz $m \times n$. Aquí $U$ y $V$ son matrices unitarias. Descompone transformaciones en "rotación", "escalamiento" y "rotación", útil en compresión de datos.
 

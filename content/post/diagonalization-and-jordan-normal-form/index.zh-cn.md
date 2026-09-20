@@ -215,9 +215,9 @@ $$
 
 这个结果清晰地展示了 $te^{\lambda t}$ 和 $t^2e^{\lambda t}$ 这样的项（长期项）在微分方程解中出现的机制。这为控制系统中的共振现象和临界阻尼等物理现象提供了数学依据。
 
-## [凯莱-哈密顿定理](https://kenji.blog/p/cayley-hamilton-theorem/)与最小多项式
+## [凯莱-哈密顿定理](https://kenji.blog/zh-cn/p/cayley-hamilton-theorem/)与最小多项式
 
-为了更深入地理解若尔当标准型，不可避免地要探讨矩阵的多项式。所有的 $n$ 阶方阵 $A$ 都会满足其自身的特征多项式 $p(\lambda) = \det(\lambda I - A)$。也就是说，$p(A) = 0$ （零矩阵）。这被称为 **[凯莱-哈密顿定理](https://kenji.blog/p/cayley-hamilton-theorem/) ([Cayley-Hamilton Theorem](https://kenji.blog/p/cayley-hamilton-theorem/))**。
+为了更深入地理解若尔当标准型，不可避免地要探讨矩阵的多项式。所有的 $n$ 阶方阵 $A$ 都会满足其自身的特征多项式 $p(\lambda) = \det(\lambda I - A)$。也就是说，$p(A) = 0$ （零矩阵）。这被称为 **[凯莱-哈密顿定理](https://kenji.blog/zh-cn/p/cayley-hamilton-theorem/) ([Cayley-Hamilton Theorem](https://kenji.blog/zh-cn/p/cayley-hamilton-theorem/))**。
 
 然而，能让矩阵 $A$ 变成零矩阵的多项式不仅有特征多项式。在能让 $A$ 变为零矩阵的首一多项式（最高次项系数为1的多项式）中，次数最小的被称为 **最小多项式 (Minimal Polynomial)**。设最小多项式为 $m(\lambda)$，若尔当标准型和最小多项式之间有着密切的关系。
 
@@ -227,7 +227,7 @@ m(\lambda) = (\lambda - \lambda_1)(\lambda - \lambda_2)\cdots(\lambda - \lambda_
 $$
 那么该矩阵 $A$ 即可对角化。反之，如果具有重根则无法对角化，重根的最高次数与最大的若尔当块的大小一致。这样，最小多项式就成了判断矩阵是否可对角化的有力工具。
 
-## 对角化与[奇异值分解 (SVD)](https://kenji.blog/p/singular-value-decomposition/) 的区别
+## 对角化与[奇异值分解 (SVD)](https://kenji.blog/zh-cn/p/singular-value-decomposition/) 的区别
 
 与对角化非常相似的一种矩阵分解方法是 **奇异值分解 (Singular Value Decomposition: SVD)**。这两种方法在目的和适用范围上有所不同。
 
@@ -243,9 +243,9 @@ graph LR
     E -->|"非常适合迭代计算"| F["动力系统与微分方程"]
 ```
 
-## 在动力系统与[马尔可夫链](https://kenji.blog/p/markov-chain/)中的应用
+## 在动力系统与[马尔可夫链](https://kenji.blog/zh-cn/p/markov-chain/)中的应用
 
-对角化强大的应用实例包括离散动力系统和[马尔可夫链](https://kenji.blog/p/markov-chain/)。
+对角化强大的应用实例包括离散动力系统和[马尔可夫链](https://kenji.blog/zh-cn/p/markov-chain/)。
 
 假设某系统第 $k$ 步的状态向量为 $\mathbf{x}_k$，状态转移用 $\mathbf{x}_{k+1} = A \mathbf{x}_k$ 描述。此时，$k$ 步之后的状态就是 $\mathbf{x}_k = A^k \mathbf{x}_0$。
 

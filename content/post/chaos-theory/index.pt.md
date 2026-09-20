@@ -25,7 +25,7 @@ Neste artigo, explicaremos detalhadamente a teoria do caos e o efeito borboleta,
 
 ## 2. Contexto Histórico: De Poincaré a Lorenz
 
-As sementes da teoria do caos podem ser rastreadas até a pesquisa do grande matemático francês do século XIX, [Henri Poincaré](https://kenji.blog/p/poincare/). Na época, um dos maiores desafios da física era o "problema dos três corpos". Este era o problema de prever o movimento de três corpos celestes, como o Sol, a Terra e a Lua, exercendo forças gravitacionais uns sobre os outros com base na mecânica newtoniana.
+As sementes da teoria do caos podem ser rastreadas até a pesquisa do grande matemático francês do século XIX, [Henri Poincaré](https://kenji.blog/pt/p/poincare/). Na época, um dos maiores desafios da física era o "problema dos três corpos". Este era o problema de prever o movimento de três corpos celestes, como o Sol, a Terra e a Lua, exercendo forças gravitacionais uns sobre os outros com base na mecânica newtoniana.
 
 Ao estudar este problema profundamente, Poincaré descobriu que o movimento dos corpos celestes poderia se tornar extremamente complexo. Ele sugeriu matematicamente que erros imensuravelmente pequenos nas posições ou velocidades iniciais poderiam se expandir ao longo do tempo, levando a trajetórias completamente diferentes dos corpos celestes. Esta foi virtualmente a primeira descoberta do comportamento caótico, mostrando que mesmo em um sistema determinístico (um sistema onde as leis são completamente conhecidas), a previsão a longo prazo poderia às vezes se tornar impossível. No entanto, devido às limitações dos métodos matemáticos e poder computacional (a ausência de computadores) na época, esta descoberta inovadora não foi explorada profundamente por décadas.
 

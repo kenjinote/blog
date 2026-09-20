@@ -11,9 +11,9 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 # 1. Einleitung: Das Geheimnis des Universums der Primzahlen und die Riemannsche Vermutung
 
-"Primzahlen" (Prime Numbers) sind natürliche Zahlen, die nur durch 1 und sich selbst teilbar sind, und werden auch als die "Atome" der Mathematik bezeichnet. Die Folge 2, 3, 5, 7, 11, 13... scheint auf den ersten Blick unordentlich und zufällig aufzutreten. Seit der antike griechische Mathematiker [Euklid](https://kenji.blog/p/euclid/) bewiesen hat, dass "es unendlich viele Primzahlen gibt", haben unzählige Mathematiker versucht, die verborgenen Gesetzmäßigkeiten in dieser Anordnung von Primzahlen zu entschlüsseln.
+"Primzahlen" (Prime Numbers) sind natürliche Zahlen, die nur durch 1 und sich selbst teilbar sind, und werden auch als die "Atome" der Mathematik bezeichnet. Die Folge 2, 3, 5, 7, 11, 13... scheint auf den ersten Blick unordentlich und zufällig aufzutreten. Seit der antike griechische Mathematiker [Euklid](https://kenji.blog/de/p/euclid/) bewiesen hat, dass "es unendlich viele Primzahlen gibt", haben unzählige Mathematiker versucht, die verborgenen Gesetzmäßigkeiten in dieser Anordnung von Primzahlen zu entschlüsseln.
 
-Am nächsten an dieses Rätsel der Primzahlen kam die 1859 von dem deutschen Mathematiker [Bernhard Riemann](https://kenji.blog/p/riemann/) aufgestellte **"Riemannsche Vermutung" (Riemann Hypothesis)** heran. Die Riemannsche Vermutung ist eines der wichtigsten und ungelösten Probleme der modernen Mathematik und als eines der Millennium-Probleme des Clay Mathematics Institute mit einem Preisgeld von einer Million Dollar dotiert.
+Am nächsten an dieses Rätsel der Primzahlen kam die 1859 von dem deutschen Mathematiker [Bernhard Riemann](https://kenji.blog/de/p/riemann/) aufgestellte **"Riemannsche Vermutung" (Riemann Hypothesis)** heran. Die Riemannsche Vermutung ist eines der wichtigsten und ungelösten Probleme der modernen Mathematik und als eines der Millennium-Probleme des Clay Mathematics Institute mit einem Preisgeld von einer Million Dollar dotiert.
 
 Auf den ersten Blick mag ein Problem der reinen Mathematik über die Verteilung von Primzahlen nichts mit unserem Alltag zu tun haben. Die Sicherheit des Internets, das die Infrastruktur der modernen Gesellschaft stützt, insbesondere **moderne Verschlüsselungstechnologien wie die RSA-Kryptographie und die Elliptische-Kurven-Kryptographie (ECC)**, hängt jedoch stark von den Eigenschaften riesiger Primzahlen ab.
 
@@ -30,13 +30,13 @@ Zum Beispiel:
 - $\pi(100) = 25$
 - $\pi(1000) = 168$
 
-Der 15-jährige geniale Mathematiker [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) berechnete umfangreiche Primzahltabellen und fand heraus, dass die Häufigkeit des Auftretens von Primzahlen umgekehrt proportional zum natürlichen Logarithmus $\ln x$ abnimmt. Das heißt, er vermutete, dass die Wahrscheinlichkeit, eine Primzahl in der Nähe einer bestimmten Zahl $x$ zu finden, etwa $\frac{1}{\ln x}$ beträgt.
+Der 15-jährige geniale Mathematiker [Carl Friedrich Gauss](https://kenji.blog/de/p/gauss/) berechnete umfangreiche Primzahltabellen und fand heraus, dass die Häufigkeit des Auftretens von Primzahlen umgekehrt proportional zum natürlichen Logarithmus $\ln x$ abnimmt. Das heißt, er vermutete, dass die Wahrscheinlichkeit, eine Primzahl in der Nähe einer bestimmten Zahl $x$ zu finden, etwa $\frac{1}{\ln x}$ beträgt.
 
 Dies wird mit Hilfe eines Integrals als **Integrallogarithmus (Logarithmic integral)** $\text{Li}(x)$ ausgedrückt:
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-Die Vermutung von Gauss wurde später 1896 von Jacques Hadamard und Charles-Jean de La Vallée Poussin unabhängig voneinander bewiesen und als **Primzahlsatz ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT)** etabliert.
+Die Vermutung von Gauss wurde später 1896 von Jacques Hadamard und Charles-Jean de La Vallée Poussin unabhängig voneinander bewiesen und als **Primzahlsatz ([Prime Number Theorem](https://kenji.blog/de/p/prime-number-theorem/), PNT)** etabliert.
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -50,7 +50,7 @@ Durch diesen Satz wurde klar, dass Primzahlen makroskopisch betrachtet eine sehr
 
 # 3. Die Riemannsche Zeta-Funktion und das Euler-Produkt
 
-Die stärkste Waffe bei der Analyse der Verteilung von Primzahlen ist die **Riemannsche Zeta-Funktion (Riemann Zeta Function)**. Ursprünglich war es eine unendliche Reihe, die von [Leonhard Euler](https://kenji.blog/p/euler/) für reelle Zahlen $s > 1$ definiert wurde.
+Die stärkste Waffe bei der Analyse der Verteilung von Primzahlen ist die **Riemannsche Zeta-Funktion (Riemann Zeta Function)**. Ursprünglich war es eine unendliche Reihe, die von [Leonhard Euler](https://kenji.blog/de/p/euler/) für reelle Zahlen $s > 1$ definiert wurde.
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 

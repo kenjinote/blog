@@ -19,7 +19,7 @@ Par exemple, si vous extrayez le premier chiffre de diverses données dans la na
 
 Le chiffre qui apparaît le plus fréquemment parmi eux est le **« 1 »**. Étonnamment, près de 30 % de toutes les données commencent par 1. Intuitivement, nous pourrions nous attendre à ce que les chiffres de 1 à 9 apparaissent chacun environ 11,1 % du temps, mais les données du monde réel ne fonctionnent pas ainsi.
 
-La loi mathématique qui explique ce phénomène mystérieux est la **[Loi de Benford](https://kenji.blog/p/benfords-law/) ([Benford's Law](https://kenji.blog/p/benfords-law/))**.
+La loi mathématique qui explique ce phénomène mystérieux est la **[Loi de Benford](https://kenji.blog/fr/p/benfords-law/) ([Benford's Law](https://kenji.blog/fr/p/benfords-law/))**.
 
 Dans cet article, nous expliquerons en détail le fonctionnement de la loi de Benford, pourquoi ce phénomène se produit, et comment cette loi est appliquée pour détecter la fraude.
 
@@ -110,7 +110,7 @@ De plus, dans les données de comptage des voix électorales, le fait que les r�
 
 ## Conclusion
 
-La **[Loi de Benford](https://kenji.blog/p/benfords-law/)** est l'un des magnifiques ordres mathématiques cachés dans un monde apparemment chaotique.
+La **[Loi de Benford](https://kenji.blog/fr/p/benfords-law/)** est l'un des magnifiques ordres mathématiques cachés dans un monde apparemment chaotique.
 
 Notre intuition a tendance à penser que « les nombres apparaissent de manière égale », mais en réalité, le « 1 » a une présence écrasante. Connaître cette loi pourrait changer légèrement votre façon de voir les données que vous voyez aux informations, les états financiers des entreprises, et même l'étendue du monde naturel.
 

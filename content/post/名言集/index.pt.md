@@ -35,7 +35,7 @@ description: 'Apresentaremos cuidadosamente citações que tocam o coração, di
 
 ## Filosofia e Pensamento
 
-> O coração tem razões que a própria razão desconhece ([Blaise Pascal](https://kenji.blog/p/pascal/))
+> O coração tem razões que a própria razão desconhece ([Blaise Pascal](https://kenji.blog/pt/p/pascal/))
 
 > Deus está morto (Friedrich Nietzsche)
 
@@ -54,7 +54,7 @@ description: 'Apresentaremos cuidadosamente citações que tocam o coração, di
 > Tudo flui (Heráclito)
 
 
-> Penso, logo existo ([René Descartes](https://kenji.blog/p/descartes/))
+> Penso, logo existo ([René Descartes](https://kenji.blog/pt/p/descartes/))
 
 > Sei que nada sei (A única coisa que sei é que nada sei) (Sócrates)
 
@@ -62,7 +62,7 @@ description: 'Apresentaremos cuidadosamente citações que tocam o coração, di
 
 > O homem é por natureza um animal político (Aristóteles)
 
-> O homem é um caniço pensante ([Blaise Pascal](https://kenji.blog/p/pascal/))
+> O homem é um caniço pensante ([Blaise Pascal](https://kenji.blog/pt/p/pascal/))
 
 > Conhecimento é poder (Francis Bacon)
 
@@ -76,9 +76,9 @@ description: 'Apresentaremos cuidadosamente citações que tocam o coração, di
 
 ## Ciência, Matemática e Tecnologia
 
-> A matemática é a rainha das ciências ([Carl Friedrich Gauss](https://kenji.blog/p/gauss/))
+> A matemática é a rainha das ciências ([Carl Friedrich Gauss](https://kenji.blog/pt/p/gauss/))
 
-> Precisamos saber, nós saberemos ([David Hilbert](https://kenji.blog/p/hilbert/))
+> Precisamos saber, nós saberemos ([David Hilbert](https://kenji.blog/pt/p/hilbert/))
 
 > Não há ramo da matemática, por mais abstrato que seja, que não possa um dia ser aplicado aos fenômenos do mundo real (Nikolai Lobachevsky)
 
@@ -90,7 +90,7 @@ description: 'Apresentaremos cuidadosamente citações que tocam o coração, di
 
 > O bom da ciência é que ela é verdadeira, quer você acredite nela ou não (Neil deGrasse Tyson)
 
-> Na matemática, a arte de propor uma pergunta deve ser considerada de maior valor do que resolvê-la ([Georg Cantor](https://kenji.blog/p/cantor/))
+> Na matemática, a arte de propor uma pergunta deve ser considerada de maior valor do que resolvê-la ([Georg Cantor](https://kenji.blog/pt/p/cantor/))
 
 > Se soubéssemos o que estávamos fazendo, não se chamaria pesquisa, não é mesmo? (Albert Einstein)
 
@@ -107,11 +107,11 @@ description: 'Apresentaremos cuidadosamente citações que tocam o coração, di
 
 > Uma pessoa que nunca cometeu um erro nunca tentou nada novo (Albert Einstein)
 
-> Se vi mais longe, foi por estar de pé sobre ombros de gigantes ([Isaac Newton](https://kenji.blog/p/newton/))
+> Se vi mais longe, foi por estar de pé sobre ombros de gigantes ([Isaac Newton](https://kenji.blog/pt/p/newton/))
 
 > E, no entanto, ela se move (Galileu Galilei)
 
-> Não há estrada real para a geometria ([[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/))
+> Não há estrada real para a geometria ([[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/))
 
 > Dê-me um ponto de apoio e moverei a Terra (Arquimedes)
 

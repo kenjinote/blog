@@ -15,7 +15,7 @@ description: 'نقدم مجموعة من المعادلات الرياضية ا�
 ## صيغة أويلر
 $e^{iπ}+1=0$
 
-## [مبرهنة فيرما الأخيرة](https://kenji.blog/p/fermats-last-theorem/)
+## [مبرهنة فيرما الأخيرة](https://kenji.blog/ar/p/fermats-last-theorem/)
 لأي عدد صحيح $n≥3$，لا توجد أعداد صحيحة موجبة $x,y,z$ تحقق $x^n+y^n=z^n$
 
 ## مشكلة بازل

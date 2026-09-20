@@ -150,7 +150,7 @@ Teorema ini dapat diinterpretasikan sebagai Teorema Nilai Rata-rata untuk kurva 
 
 ## 6. Kesimpulan
 
-Dalam artikel ini, kami menjelaskan [Teorema Nilai Antara dan Teorema Nilai Rata-rata](https://kenji.blog/p/intermediate-and-mean-value-theorem/), yang membentuk dasar kalkulus.
+Dalam artikel ini, kami menjelaskan [Teorema Nilai Antara dan Teorema Nilai Rata-rata](https://kenji.blog/id/p/intermediate-and-mean-value-theorem/), yang membentuk dasar kalkulus.
 
 - **Teorema Nilai Antara** menjamin sifat "terhubung" dari fungsi kontinu dan menunjukkan keberadaan solusi untuk persamaan.
 - **Teorema Nilai Rata-rata** mengaitkan perubahan rata-rata suatu fungsi dengan perubahan sesaatnya, berfungsi sebagai alat yang sangat diperlukan untuk memahami perilaku keseluruhan suatu fungsi (seperti tren naik atau turunnya) menggunakan sifat-sifat turunan.

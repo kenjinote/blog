@@ -21,19 +21,19 @@ To solve this problem, a hypothetical number whose square is $-1$ was introduced
 
 Here, a grand question arises: "If we expand the number system to complex numbers, can we say that any equation will always have a solution?" Or, "Will we ever need to introduce yet another new type of number?"
 
-Mathematics provides a very clear and beautiful answer to this question. That is the subject of this article: the **[Fundamental Theorem of Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)**. This theorem asserts that "any $n$-th degree polynomial with complex coefficients always has a root (solution) within the complex numbers." In other words, within the vast ocean of complex numbers, the solution to any equation always exists, guaranteeing that there is no need to invent any more new numbers.
+Mathematics provides a very clear and beautiful answer to this question. That is the subject of this article: the **[Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/)**. This theorem asserts that "any $n$-th degree polynomial with complex coefficients always has a root (solution) within the complex numbers." In other words, within the vast ocean of complex numbers, the solution to any equation always exists, guaranteeing that there is no need to invent any more new numbers.
 
-In this article, we will explain this **[Fundamental Theorem of Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)** in detail, starting from its historical background, moving to an intuitive approach based on topology, and finally presenting a rigorous and beautiful proof using complex analysis.
+In this article, we will explain this **[Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/)** in detail, starting from its historical background, moving to an intuitive approach based on topology, and finally presenting a rigorous and beautiful proof using complex analysis.
 
-## Historical Background of the [Fundamental Theorem of Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)
+## Historical Background of the [Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/)
 
-The **[Fundamental Theorem of Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)** was not proven overnight. Many great mathematicians struggled to achieve a complete proof, never doubting the truth of the theorem.
+The **[Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/)** was not proven overnight. Many great mathematicians struggled to achieve a complete proof, never doubting the truth of the theorem.
 
-In the 17th century, mathematicians like [René Descartes](https://kenji.blog/p/descartes/) and Albert Girard already knew empirically that "an $n$-th degree equation should have $n$ roots." However, within the mathematical framework of the time, there was no rigorous means to prove it.
+In the 17th century, mathematicians like [René Descartes](https://kenji.blog/en/p/descartes/) and Albert Girard already knew empirically that "an $n$-th degree equation should have $n$ roots." However, within the mathematical framework of the time, there was no rigorous means to prove it.
 
-Entering the 18th century, mathematical giants like Jean le Rond d'Alembert and [Leonhard Euler](https://kenji.blog/p/euler/) attempted the proof. D'Alembert published a proof in 1746, and the theorem is sometimes called "d'Alembert's theorem" in France; however, by modern standards, his proof lacked topological rigor in certain areas. Euler also tried to show that any polynomial with real coefficients could be factored into the product of linear and quadratic polynomials, but left a logical gap.
+Entering the 18th century, mathematical giants like Jean le Rond d'Alembert and [Leonhard Euler](https://kenji.blog/en/p/euler/) attempted the proof. D'Alembert published a proof in 1746, and the theorem is sometimes called "d'Alembert's theorem" in France; however, by modern standards, his proof lacked topological rigor in certain areas. Euler also tried to show that any polynomial with real coefficients could be factored into the product of linear and quadratic polynomials, but left a logical gap.
 
-The first essentially complete proof of this impregnable theorem was given by none other than [Carl Friedrich Gauss](https://kenji.blog/p/gauss/). In his 1799 doctoral dissertation, he pointed out the flaws in the proofs of preceding mathematicians and presented a proof based on geometric intuition. Gauss provided four different proofs for this theorem over his lifetime, indicating how much importance he attached to it.
+The first essentially complete proof of this impregnable theorem was given by none other than [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/). In his 1799 doctoral dissertation, he pointed out the flaws in the proofs of preceding mathematicians and presented a proof based on geometric intuition. Gauss provided four different proofs for this theorem over his lifetime, indicating how much importance he attached to it.
 
 The most standard and elegant proof today is considered to be the one based on the theory of complex analysis, built by French mathematician Joseph Liouville and others. In the latter half of this article, we will introduce the proof using Liouville's theorem.
 
@@ -41,7 +41,7 @@ The most standard and elegant proof today is considered to be the one based on t
 
 First, let us describe the assertion of the theorem in mathematically precise terms.
 
-**Theorem ([Fundamental Theorem of Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/))**
+**Theorem ([Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/))**
 For any natural number $n \ge 1$ and complex coefficients $a_0, a_1, \dots, a_n$ (where $a_n \neq 0$), a polynomial $P(z)$ is defined as follows:
 
 $$
@@ -95,9 +95,9 @@ Here, "bounded" means that for all complex numbers $z$, the absolute value of th
 
 In the world of real numbers, a function like $f(x) = \sin(x)$ is differentiable over the entire number line and is bounded by $-1 \le \sin(x) \le 1$. It is not a constant function. However, Liouville's theorem asserts that this can never happen in the complex world. If a function is holomorphic over the entire complex plane and its value does not diverge to infinity, it is merely a flat constant.
 
-## Rigorous Proof of the [Fundamental Theorem of Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)
+## Rigorous Proof of the [Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/)
 
-Let us now prove the [Fundamental Theorem of Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) using Liouville's theorem. You will be amazed by the brilliance of this proof. Here, we use a proof by contradiction.
+Let us now prove the [Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/) using Liouville's theorem. You will be amazed by the brilliance of this proof. Here, we use a proof by contradiction.
 
 **Proof**
 
@@ -152,15 +152,15 @@ Thus, by contradiction, it is proven that $P(z) = 0$ has at least one solution o
 
 ## Corollary: Factorization into Linear Factors
 
-The [Fundamental Theorem of Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) guarantees the existence of "at least one solution." By combining this fact with the **Factor Theorem** for polynomial division, we can prove that a polynomial can be completely factored into a product of linear terms.
+The [Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/) guarantees the existence of "at least one solution." By combining this fact with the **Factor Theorem** for polynomial division, we can prove that a polynomial can be completely factored into a product of linear terms.
 
-Given an $n$-th degree polynomial $P_n(z)$, the [Fundamental Theorem of Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) states that there exists a solution $\alpha_1$ such that $P_n(\alpha_1) = 0$. According to the Factor Theorem, $P_n(z)$ has $(z - \alpha_1)$ as a factor. That is, it can be factored as follows:
+Given an $n$-th degree polynomial $P_n(z)$, the [Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/) states that there exists a solution $\alpha_1$ such that $P_n(\alpha_1) = 0$. According to the Factor Theorem, $P_n(z)$ has $(z - \alpha_1)$ as a factor. That is, it can be factored as follows:
 
 $$
 P_n(z) = (z - \alpha_1) P_{n-1}(z)
 $$
 
-Here, $P_{n-1}(z)$ is a polynomial of degree $n-1$. If $n-1 \ge 1$, we can apply the [Fundamental Theorem of Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) again to find a solution $\alpha_2$ for $P_{n-1}(z)$. By repeating this $n$ times, we can completely factorize it as follows:
+Here, $P_{n-1}(z)$ is a polynomial of degree $n-1$. If $n-1 \ge 1$, we can apply the [Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/) again to find a solution $\alpha_2$ for $P_{n-1}(z)$. By repeating this $n$ times, we can completely factorize it as follows:
 
 $$
 P_n(z) = a_n (z - \alpha_1)(z - \alpha_2) \dots (z - \alpha_n)
@@ -172,8 +172,8 @@ Moreover, for polynomials where all coefficients are real numbers, if $\alpha$ i
 
 ## Conclusion
 
-In this article, we have looked in detail at the [Fundamental Theorem of Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/), covering its historical background, topological intuition, and complex analytic proof using Liouville's theorem.
+In this article, we have looked in detail at the [Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/), covering its historical background, topological intuition, and complex analytic proof using Liouville's theorem.
 
 At first glance, it is a theorem about algebraic equations, but the fact that its most elegant proof borrows the power of analysis (calculus) and topology demonstrates the profundity of mathematics and the beauty of how different fields are closely intertwined.
 
-Humanity's long quest to find the roots of equations gained the vast stage of the complex plane through the introduction of the new imaginary numbers, and the completeness of this stage was proven by the [Fundamental Theorem of Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/). This theorem became the key that opened the brilliant doors leading to [Galois theory](https://kenji.blog/p/galois-theory/) and algebraic geometry, which form the bedrock of modern mathematics.
+Humanity's long quest to find the roots of equations gained the vast stage of the complex plane through the introduction of the new imaginary numbers, and the completeness of this stage was proven by the [Fundamental Theorem of Algebra](https://kenji.blog/en/p/fundamental-theorem-of-algebra/). This theorem became the key that opened the brilliant doors leading to [Galois theory](https://kenji.blog/en/p/galois-theory/) and algebraic geometry, which form the bedrock of modern mathematics.

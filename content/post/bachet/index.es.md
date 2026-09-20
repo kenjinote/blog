@@ -8,7 +8,7 @@ categories: ["Matemáticas", "Biografía"]
 tags: ["Bachet", "Teoría de Números", "Historia de las Matemáticas", "Matemáticas Recreativas", "Diofanto"]
 ---
 
-En la historia de las matemáticas, hay figuras que desempeñaron papeles cruciales, aunque a veces permanezcan ocultas a la sombra de grandes descubrimientos posteriores. El matemático francés del siglo XVII **[Claude Gaspard Bachet](https://kenji.blog/p/bachet/) de Méziriac (1581–1638)** es uno de ellos. Es famoso por su influencia sobre [Pierre de Fermat](https://kenji.blog/p/fermat/), pero sus propios logros también fueron vastos y diversos.
+En la historia de las matemáticas, hay figuras que desempeñaron papeles cruciales, aunque a veces permanezcan ocultas a la sombra de grandes descubrimientos posteriores. El matemático francés del siglo XVII **[Claude Gaspard Bachet](https://kenji.blog/es/p/bachet/) de Méziriac (1581–1638)** es uno de ellos. Es famoso por su influencia sobre [Pierre de Fermat](https://kenji.blog/es/p/fermat/), pero sus propios logros también fueron vastos y diversos.
 
 En este artículo, profundizaremos en la vida de Bachet y sus principales logros matemáticos.
 
@@ -27,13 +27,13 @@ flowchart TD
     D -->|"Publicado en 1612"| F["'Problemas agradables y deleitables'"]
 ```
 
-## La traducción latina de la "Arithmetica" de [Diofanto](https://kenji.blog/p/diophantus/)
+## La traducción latina de la "Arithmetica" de [Diofanto](https://kenji.blog/es/p/diophantus/)
 
-Uno de los logros más conocidos de Bachet es su traducción de la "Arithmetica" del antiguo matemático griego [Diofanto](https://kenji.blog/p/diophantus/) al latín, agregando comentarios y publicándola en 1621.
+Uno de los logros más conocidos de Bachet es su traducción de la "Arithmetica" del antiguo matemático griego [Diofanto](https://kenji.blog/es/p/diophantus/) al latín, agregando comentarios y publicándola en 1621.
 
-Este libro traducido se convirtió en el texto estándar para que los matemáticos europeos de la época estudiaran el álgebra antigua y la teoría de números. Una de las anécdotas más famosas es que [Pierre de Fermat](https://kenji.blog/p/fermat/) escribió su famoso "Último Teorema de Fermat" en el margen de su copia de esta edición de Bachet.
+Este libro traducido se convirtió en el texto estándar para que los matemáticos europeos de la época estudiaran el álgebra antigua y la teoría de números. Una de las anécdotas más famosas es que [Pierre de Fermat](https://kenji.blog/es/p/fermat/) escribió su famoso "Último Teorema de Fermat" en el margen de su copia de esta edición de Bachet.
 
-Bachet no se limitó a una mera traducción; añadió sus propios y excelentes comentarios y generalizaciones a los problemas de [Diofanto](https://kenji.blog/p/diophantus/). Sin sus conocimientos matemáticos, el desarrollo de la teoría de números en el siglo XVII podría haber sido mucho más lento.
+Bachet no se limitó a una mera traducción; añadió sus propios y excelentes comentarios y generalizaciones a los problemas de [Diofanto](https://kenji.blog/es/p/diophantus/). Sin sus conocimientos matemáticos, el desarrollo de la teoría de números en el siglo XVII podría haber sido mucho más lento.
 
 ## La ecuación de Bachet
 
@@ -79,8 +79,8 @@ $$
 ax + by = 1
 $$
 
-$x$ y $y$ se pueden calcular de manera concreta expandiendo el algoritmo de [Euclides](https://kenji.blog/p/euclid/) (el algoritmo de [Euclides](https://kenji.blog/p/euclid/) extendido), que se ha convertido en un teorema fundamental indispensable en la criptografía moderna (como RSA). En contextos que valoran la precisión histórica, esto a veces se llama el **teorema de Bachet**.
+$x$ y $y$ se pueden calcular de manera concreta expandiendo el algoritmo de [Euclides](https://kenji.blog/es/p/euclid/) (el algoritmo de [Euclides](https://kenji.blog/es/p/euclid/) extendido), que se ha convertido en un teorema fundamental indispensable en la criptografía moderna (como RSA). En contextos que valoran la precisión histórica, esto a veces se llama el **teorema de Bachet**.
 
 ## Conclusión
 
-[Claude Gaspard Bachet](https://kenji.blog/p/bachet/) no fue solo una "figura entre bastidores" para el Último Teorema de Fermat. Fue un gran pionero que abrió las puertas a las matemáticas modernas al revivir la sabiduría antigua mientras exploraba sus propias ecuaciones y sistematizaba las matemáticas recreativas. Sus comentarios sobre la "Arithmetica" y sus acertijos matemáticos continúan inspirando a los amantes de las matemáticas de hoy, siglos después de su fallecimiento.
+[Claude Gaspard Bachet](https://kenji.blog/es/p/bachet/) no fue solo una "figura entre bastidores" para el Último Teorema de Fermat. Fue un gran pionero que abrió las puertas a las matemáticas modernas al revivir la sabiduría antigua mientras exploraba sus propias ecuaciones y sistematizaba las matemáticas recreativas. Sus comentarios sobre la "Arithmetica" y sus acertijos matemáticos continúan inspirando a los amantes de las matemáticas de hoy, siglos después de su fallecimiento.

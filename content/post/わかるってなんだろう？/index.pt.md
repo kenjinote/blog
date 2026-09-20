@@ -36,7 +36,7 @@ Ainda assim, não devemos menosprezar o ato de "entender". Se nossa compreensão
 
 Existem muitas coisas no mundo que ainda não foram elucidadas. Por exemplo, os mecanismos das emoções e da consciência humanas, a origem do universo, entre outros. Esses são campos que ainda não são completamente "entendidos", mesmo com o avanço da ciência.
 
-Mesmo no mundo da matemática, existem problemas não resolvidos que são simples, como a "[Conjectura de Goldbach](https://kenji.blog/p/goldbachs-conjecture/)".
+Mesmo no mundo da matemática, existem problemas não resolvidos que são simples, como a "[Conjectura de Goldbach](https://kenji.blog/pt/p/goldbachs-conjecture/)".
 
 ---
 

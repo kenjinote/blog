@@ -15,7 +15,7 @@ Jika $p$ adalah bilangan prima, maka berlaku $(p−1)!≡−1 \pmod p$
 ## Rumus Euler
 $e^{iπ}+1=0$
 
-## [Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/)
+## [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)
 Untuk bilangan bulat $n≥3$, tidak ada bilangan bulat positif $x,y,z$ yang memenuhi $x^n+y^n=z^n$
 
 ## Masalah Basel

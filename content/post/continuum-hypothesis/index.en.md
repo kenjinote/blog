@@ -10,18 +10,18 @@ tags: ["Continuum Hypothesis", "Cantor", "Infinity", "Math"]
 
 ## 1. Introduction: Measuring the Size of Infinity
 
-In the world of mathematics, the concept of "infinity" has long been a subject of philosophical debate. However, until the emergence of [Georg Cantor](https://kenji.blog/p/cantor/) in the late 19th century, there was no rigorous mathematical method to compare the sizes of infinity. Cantor founded set theory and proved that there are **different sizes** (cardinalities) even within infinity.
+In the world of mathematics, the concept of "infinity" has long been a subject of philosophical debate. However, until the emergence of [Georg Cantor](https://kenji.blog/en/p/cantor/) in the late 19th century, there was no rigorous mathematical method to compare the sizes of infinity. Cantor founded set theory and proved that there are **different sizes** (cardinalities) even within infinity.
 
 Considering the set of natural numbers $\mathbb{N}$ and the set of real numbers $\mathbb{R}$, Cantor's diagonal argument showed that the set of real numbers is "strictly larger" than the set of natural numbers. The cardinality of the natural numbers is denoted by $\aleph_0$ (aleph-null), and the cardinality of the real numbers by $\mathfrak{c}$ (cardinality of the continuum) or $2^{\aleph_0}$. According to Cantor's theorem, $\aleph_0 < 2^{\aleph_0}$.
 
 Here, Cantor had a natural question: "Does there exist a set with a cardinality positioned in the **middle** of the cardinality of the natural numbers and the cardinality of the real numbers?"
-This is the origin of the **[Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/)** (CH), which would later shake the foundations of mathematics.
+This is the origin of the **[Continuum Hypothesis](https://kenji.blog/en/p/continuum-hypothesis/)** (CH), which would later shake the foundations of mathematics.
 
-## 2. Rigorous Definition of the [Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/) (CH)
+## 2. Rigorous Definition of the [Continuum Hypothesis](https://kenji.blog/en/p/continuum-hypothesis/) (CH)
 
 The continuum hypothesis is formulated as follows.
 
-> **[Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/) (CH)**
+> **[Continuum Hypothesis](https://kenji.blog/en/p/continuum-hypothesis/) (CH)**
 > There is no set whose cardinality is strictly between that of the integers $\aleph_0$ and the real numbers $2^{\aleph_0}$.
 > That is, $\aleph_1 = 2^{\aleph_0}$.
 
@@ -35,11 +35,11 @@ Therefore, for the set of natural numbers $\mathbb{N}$,
 $$ |\mathbb{N}| < |\mathcal{P}(\mathbb{N})| = |\mathbb{R}| $$
 holds. CH is the assertion that no other cardinality exists in between these.
 
-## 3. Cantor's Struggle and [David Hilbert](https://kenji.blog/p/hilbert/)'s Proposition
+## 3. Cantor's Struggle and [David Hilbert](https://kenji.blog/en/p/hilbert/)'s Proposition
 
 Cantor spent his life trying to prove this hypothesis, but he never succeeded. At times he believed he had "proved it", and at other times he thought he had "disproved it"; his mental state was greatly worn down by this profound problem.
 
-In 1900, at the second International Congress of Mathematicians held in Paris, [David Hilbert](https://kenji.blog/p/hilbert/) proposed "Hilbert's 23 problems" that 20th-century mathematics should solve. That memorable **first problem** was precisely this "proof of the continuum hypothesis".
+In 1900, at the second International Congress of Mathematicians held in Paris, [David Hilbert](https://kenji.blog/en/p/hilbert/) proposed "Hilbert's 23 problems" that 20th-century mathematics should solve. That memorable **first problem** was precisely this "proof of the continuum hypothesis".
 
 ## 4. Axiomatization of Set Theory: The ZFC Axiom System
 
@@ -58,9 +58,9 @@ The ZFC axiom system consists of the following 9 axioms (or axiom schemas):
 
 Using these axioms, mathematicians attempted to determine the truth or falsehood of CH.
 
-## 5. [Kurt Gödel](https://kenji.blog/p/godel/) and the "Constructible Universe"
+## 5. [Kurt Gödel](https://kenji.blog/en/p/godel/) and the "Constructible Universe"
 
-In 1940, [Kurt Gödel](https://kenji.blog/p/godel/) published a surprising result. He proved that, assuming the ZFC axiom system is consistent, **"adding CH to the ZFC axiom system does not lead to a contradiction."**
+In 1940, [Kurt Gödel](https://kenji.blog/en/p/godel/) published a surprising result. He proved that, assuming the ZFC axiom system is consistent, **"adding CH to the ZFC axiom system does not lead to a contradiction."**
 
 Gödel constructed a model of sets called the **Constructible Universe** ($L$). In $L$, all sets are constructed hierarchically by logical formulas. Gödel showed that all ZFC axioms are satisfied in this $L$, and furthermore, **CH is also true**.
 
@@ -96,7 +96,7 @@ graph TD
 
 Combining the achievements of Gödel and Cohen, it was established that the continuum hypothesis can **neither be proved nor disproved** from the ZFC axiom system. Such a proposition is said to be **independent** from the axiom system.
 
-This gave an immeasurable shock to the mathematical community. What on earth is mathematical truth? The axiom system we have adopted (ZFC) was incomplete to determine the true size of the set of real numbers (it can also be said to be one manifestation of [Gödel's incompleteness theorems](https://kenji.blog/p/godels-incompleteness-theorems/)).
+This gave an immeasurable shock to the mathematical community. What on earth is mathematical truth? The axiom system we have adopted (ZFC) was incomplete to determine the true size of the set of real numbers (it can also be said to be one manifestation of [Gödel's incompleteness theorems](https://kenji.blog/en/p/godels-incompleteness-theorems/)).
 
 ### Perspectives on Modern Set Theory
 
@@ -131,11 +131,11 @@ Cohen constructed a forcing method to add a large number of new functions from n
 
 The independence of CH poses deep problems for the mathematical philosophies of "Platonism" and "Formalism".
 - **Platonist viewpoint** : The ideal world of sets is singular, and CH must have an objective truth value of either "true" or "false". ZFC cannot determine it simply because ZFC is an incomplete axiom system due to the limitations of human cognition.
-- **Formalist viewpoint** : Mathematics is merely a game of manipulating symbols according to logical rules from axioms. Just like the parallel postulate in [Euclide](https://kenji.blog/p/euclid/)an geometry, different mathematical universes of "set theory where CH is true" and "set theory where CH is false" simply exist in parallel.
+- **Formalist viewpoint** : Mathematics is merely a game of manipulating symbols according to logical rules from axioms. Just like the parallel postulate in [Euclide](https://kenji.blog/en/p/euclid/)an geometry, different mathematical universes of "set theory where CH is true" and "set theory where CH is false" simply exist in parallel.
 
 ## 10. Summary
 
-The exploration of the infinite hierarchy dreamed of by [Georg Cantor](https://kenji.blog/p/cantor/) met a dramatic end of being "neither provable nor disprovable" thanks to two geniuses, Gödel and Cohen. However, that by no means signifies a defeat for mathematics. Rather, it produced the powerful tool of forcing, evolving the field of set theory into something richer and more complex than ever before.
+The exploration of the infinite hierarchy dreamed of by [Georg Cantor](https://kenji.blog/en/p/cantor/) met a dramatic end of being "neither provable nor disprovable" thanks to two geniuses, Gödel and Cohen. However, that by no means signifies a defeat for mathematics. Rather, it produced the powerful tool of forcing, evolving the field of set theory into something richer and more complex than ever before.
 
 The continuum hypothesis continues to throw fundamental questions at us today: "What is infinity?" and "What is mathematical truth?"
 

@@ -10,19 +10,19 @@ tags: ["Matemática", "Weierstrass", "Análise", "História"]
 
 ## Introdução
 
-Na história da matemática, a pessoa mais famosa por ter estabelecido o cálculo sobre bases rigorosas é **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** (1815-1897). Ele é aclamado como o "pai da análise moderna" e estabeleceu os fundamentos do cálculo diferencial e integral (especialmente a definição $\epsilon-\delta$) que estudamos hoje nas universidades. Suas conquistas vão além da mera descoberta de teoremas; ele transformou fundamentalmente a "narrativa" e a "forma de pensar" na própria disciplina da matemática. Neste artigo, vamos nos aprofundar nos episódios de sua vida turbulenta e em suas conquistas surpreendentes na matemática.
+Na história da matemática, a pessoa mais famosa por ter estabelecido o cálculo sobre bases rigorosas é **[Karl Weierstrass](https://kenji.blog/pt/p/weierstrass/)** (1815-1897). Ele é aclamado como o "pai da análise moderna" e estabeleceu os fundamentos do cálculo diferencial e integral (especialmente a definição $\epsilon-\delta$) que estudamos hoje nas universidades. Suas conquistas vão além da mera descoberta de teoremas; ele transformou fundamentalmente a "narrativa" e a "forma de pensar" na própria disciplina da matemática. Neste artigo, vamos nos aprofundar nos episódios de sua vida turbulenta e em suas conquistas surpreendentes na matemática.
 
 ## Contexto Histórico: O Mundo Matemático do Século XIX e a Crise na Análise
 
-O cálculo, fundado no século XVII por [Isaac Newton](https://kenji.blog/p/newton/) e Gottfried Wilhelm Leibniz, alcançou um desenvolvimento fenomenal ao longo do século XVIII nas mãos de [Leonhard Euler](https://kenji.blog/p/euler/) e outros. Embora suas aplicações na física e astronomia tenham rendido resultados notáveis, os conceitos subjacentes de "infinitesimais" e "limites" permaneceram altamente ambíguos. A explicação intuitiva de "um número que se aproxima infinitamente de zero, mas não é zero" tornou-se alvo de críticas filosóficas e carecia de rigor lógico.
+O cálculo, fundado no século XVII por [Isaac Newton](https://kenji.blog/pt/p/newton/) e Gottfried Wilhelm Leibniz, alcançou um desenvolvimento fenomenal ao longo do século XVIII nas mãos de [Leonhard Euler](https://kenji.blog/pt/p/euler/) e outros. Embora suas aplicações na física e astronomia tenham rendido resultados notáveis, os conceitos subjacentes de "infinitesimais" e "limites" permaneceram altamente ambíguos. A explicação intuitiva de "um número que se aproxima infinitamente de zero, mas não é zero" tornou-se alvo de críticas filosóficas e carecia de rigor lógico.
 
-No início do século XIX, [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/), Bernhard Bolzano e outros começaram a rigorizar a análise, mas suas definições ainda não conseguiam eliminar completamente a intuição. Foi Weierstrass quem assumiu a missão histórica de romper essa situação, que poderia ser chamada de "crise na análise", e de reconstruir a análise usando métodos puramente aritméticos, sem depender da intuição geométrica.
+No início do século XIX, [Augustin-Louis Cauchy](https://kenji.blog/pt/p/cauchy/), Bernhard Bolzano e outros começaram a rigorizar a análise, mas suas definições ainda não conseguiam eliminar completamente a intuição. Foi Weierstrass quem assumiu a missão histórica de romper essa situação, que poderia ser chamada de "crise na análise", e de reconstruir a análise usando métodos puramente aritméticos, sem depender da intuição geométrica.
 
 ## Início da Vida e Tempos de Estudante Frustrantes
 
-[Karl Weierstrass](https://kenji.blog/p/weierstrass/) nasceu em 31 de outubro de 1815, em Ostenfelde, Reino da Prússia (atual Alemanha). Seu pai era um funcionário do governo e um homem muito rigoroso. Seu pai desejava muito que seu filho se tornasse um excelente administrador prussiano como ele, e o início da vida de Weierstrass foi condicionado por essas fortes expectativas.
+[Karl Weierstrass](https://kenji.blog/pt/p/weierstrass/) nasceu em 31 de outubro de 1815, em Ostenfelde, Reino da Prússia (atual Alemanha). Seu pai era um funcionário do governo e um homem muito rigoroso. Seu pai desejava muito que seu filho se tornasse um excelente administrador prussiano como ele, e o início da vida de Weierstrass foi condicionado por essas fortes expectativas.
 
-Em 1834, seguindo a vontade de seu pai, ingressou na Universidade de Bonn para estudar direito e finanças. No entanto, seu coração não estava no direito ou na economia, mas sim fortemente atraído pela matemática. Como resultado, em vez de assistir às aulas de direito, passava seu tempo praticando esgrima e bebendo cerveja, levando uma vida de estudante despreocupada. Ao mesmo tempo, ele devorava secretamente livros de matemática (especialmente as obras de Pierre-Simon Laplace, [Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/) e [Niels Henrik Abel](https://kenji.blog/p/abel/)) e aprendeu matemática avançada sozinho. Por fim, ele abandonou a universidade quatro anos depois, sem obter um diploma.
+Em 1834, seguindo a vontade de seu pai, ingressou na Universidade de Bonn para estudar direito e finanças. No entanto, seu coração não estava no direito ou na economia, mas sim fortemente atraído pela matemática. Como resultado, em vez de assistir às aulas de direito, passava seu tempo praticando esgrima e bebendo cerveja, levando uma vida de estudante despreocupada. Ao mesmo tempo, ele devorava secretamente livros de matemática (especialmente as obras de Pierre-Simon Laplace, [Carl Gustav Jacob Jacobi](https://kenji.blog/pt/p/jacobi/) e [Niels Henrik Abel](https://kenji.blog/pt/p/abel/)) e aprendeu matemática avançada sozinho. Por fim, ele abandonou a universidade quatro anos depois, sem obter um diploma.
 
 Este revés foi um grande ponto de virada para ele e decepcionou profundamente seu pai. No entanto, o espírito de independência e autoestudo cultivado durante este período teve, sem dúvida, grande influência em seu estilo de pesquisa posterior.
 
@@ -108,7 +108,7 @@ graph TD
 
 Na Universidade de Berlim, Weierstrass não foi apenas um pesquisador, mas também um educador excepcionalmente notável. As suas palestras eram muito claras, sem saltos lógicos, aproximando-se da verdade passo a passo. As suas anotações de aulas circularam entre os alunos e foram tratadas como livros nas universidades de toda a Europa.
 
-Ao saberem da sua fama, excelentes estudantes de toda a Europa reuniram-se ao seu redor. Seus discípulos e matemáticos influenciados por ele incluem [Georg Cantor](https://kenji.blog/p/cantor/) (fundador da teoria dos conjuntos), Felix Klein, Ferdinand Georg Frobenius, Hermann Schwarz e muitos outros gigantes que mais tarde deixaram os seus nomes na história da matemática.
+Ao saberem da sua fama, excelentes estudantes de toda a Europa reuniram-se ao seu redor. Seus discípulos e matemáticos influenciados por ele incluem [Georg Cantor](https://kenji.blog/pt/p/cantor/) (fundador da teoria dos conjuntos), Felix Klein, Ferdinand Georg Frobenius, Hermann Schwarz e muitos outros gigantes que mais tarde deixaram os seus nomes na história da matemática.
 
 ### Tutoria e Afeto com Sofia Kovalevskaya
 
@@ -124,10 +124,10 @@ Nos seus últimos anos, Weierstrass viveu uma disputa acirrada sobre os fundamen
 
 Sua saúde também piorou gradualmente e, nos seus últimos anos, sofreu de tonturas e bronquite, sendo forçado a viver numa cadeira de rodas. No entanto, ele nunca perdeu a paixão pela matemática até ao fim, trabalhando na compilação de suas próprias obras completas com a ajuda dos seus discípulos.
 
-Em 19 de fevereiro de 1897, [Karl Weierstrass](https://kenji.blog/p/weierstrass/) faleceu de pneumonia em Berlim, aos 81 anos.
+Em 19 de fevereiro de 1897, [Karl Weierstrass](https://kenji.blog/pt/p/weierstrass/) faleceu de pneumonia em Berlim, aos 81 anos.
 
 ## Conclusão
 
-Através de sua lógica rigorosa e do seu espírito indomável, [Karl Weierstrass](https://kenji.blog/p/weierstrass/) fez a matemática evoluir para algo mais sólido e belo. Superando os contratempos da juventude e um longo e solitário período de obscuridade como professor rural, para finalmente chegar ao topo do mundo, a sua vida dá imensa coragem a nós que vivemos na era moderna.
+Através de sua lógica rigorosa e do seu espírito indomável, [Karl Weierstrass](https://kenji.blog/pt/p/weierstrass/) fez a matemática evoluir para algo mais sólido e belo. Superando os contratempos da juventude e um longo e solitário período de obscuridade como professor rural, para finalmente chegar ao topo do mundo, a sua vida dá imensa coragem a nós que vivemos na era moderna.
 
 Sem a base sólida de "rigor" que ele construiu, o desenvolvimento da matemática avançada, física e engenharia modernas teria sido impossível. As conquistas que ele deixou continuam a brilhar intensamente, sem desaparecer, na matemática moderna, e é exatamente por isso que ele é elogiado como o "pai da análise moderna". O nome de Weierstrass será transmitido para sempre como um grande símbolo, provando que a matemática é uma arte da lógica.

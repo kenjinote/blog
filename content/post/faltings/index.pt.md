@@ -18,7 +18,7 @@ tags:
 
 ## 1. Introdução: Um gigante da moderna teoria dos números
 
-[Gerd Faltings](https://kenji.blog/p/faltings/) é amplamente reconhecido como um dos geômetras aritméticos mais profundos e influentes na comunidade matemática do final do século XX e adentrando o século XXI. Em particular, sua demonstração da **Conjectura de Mordell** alcançada em 1983 permanece como um marco monumental e brilhante na história da teoria dos números e da geometria algébrica. Neste artigo, explicaremos detalhadamente sua vida, sua abordagem matemática única e as realizações revolucionárias que ele trouxe para o mundo da matemática.
+[Gerd Faltings](https://kenji.blog/pt/p/faltings/) é amplamente reconhecido como um dos geômetras aritméticos mais profundos e influentes na comunidade matemática do final do século XX e adentrando o século XXI. Em particular, sua demonstração da **Conjectura de Mordell** alcançada em 1983 permanece como um marco monumental e brilhante na história da teoria dos números e da geometria algébrica. Neste artigo, explicaremos detalhadamente sua vida, sua abordagem matemática única e as realizações revolucionárias que ele trouxe para o mundo da matemática.
 
 ## 2. Início de Vida e Carreira
 
@@ -28,7 +28,7 @@ Em 1978, ele obteve seu Ph.D. sob a orientação de Hans-Joachim Nastold. Sua pe
 
 ## 3. Realização Histórica: Resolvendo a Conjectura de Mordell
 
-O que gravou eternamente o nome de Faltings na história da matemática foi sem dúvida a sua resolução da **Conjectura de Mordell**. Proposta por [Louis Mordell](https://kenji.blog/p/mordell/) em 1922, esta conjectura era um problema profundamente complexo sobre o número de soluções racionais para equações diofantinas.
+O que gravou eternamente o nome de Faltings na história da matemática foi sem dúvida a sua resolução da **Conjectura de Mordell**. Proposta por [Louis Mordell](https://kenji.blog/pt/p/mordell/) em 1922, esta conjectura era um problema profundamente complexo sobre o número de soluções racionais para equações diofantinas.
 
 O enunciado da conjectura é o seguinte:
 
@@ -36,7 +36,7 @@ O enunciado da conjectura é o seguinte:
 
 Esta conjectura estava profundamente relacionada ao teorema de Pitágoras e ao Último Teorema de Fermat, e foi um problema formidável que muitos gênios matemáticos haviam desafiado e falhado ao longo dos anos.
 
-Faltings atacou este problema manipulando habilmente o maquinário massivo da geometria algébrica construído por [Alexander Grothendieck](https://kenji.blog/p/grothendieck/), como a teoria dos esquemas e a cohomologia étale, e introduzindo ainda uma nova estrutura chamada geometria de Arakelov.
+Faltings atacou este problema manipulando habilmente o maquinário massivo da geometria algébrica construído por [Alexander Grothendieck](https://kenji.blog/pt/p/grothendieck/), como a teoria dos esquemas e a cohomologia étale, e introduzindo ainda uma nova estrutura chamada geometria de Arakelov.
 
 Embora a estrutura lógica de sua demonstração seja altamente complexa, a ideia central pode ser dividida nas seguintes três etapas (demonstrações de conjecturas).
 
@@ -88,6 +88,6 @@ Ao longo de seu tempo como professor na Universidade de Princeton e como diretor
 
 ## 7. Conclusão
 
-O nome de [Gerd Faltings](https://kenji.blog/p/faltings/) será para sempre transmitido como o solucionador da **Conjectura de Mordell**. No entanto, sua verdadeira grandeza reside não apenas em resolver um único problema difícil, mas em criar novos paradigmas matemáticos como a geometria de Arakelov e a teoria de Hodge p-ádica.
+O nome de [Gerd Faltings](https://kenji.blog/pt/p/faltings/) será para sempre transmitido como o solucionador da **Conjectura de Mordell**. No entanto, sua verdadeira grandeza reside não apenas em resolver um único problema difícil, mas em criar novos paradigmas matemáticos como a geometria de Arakelov e a teoria de Hodge p-ádica.
 
 Ainda hoje, as teorias e a filosofia que ele criou continuam a fornecer imensa inspiração a matemáticos em todo o mundo. Sempre que tentamos tocar o abismo da teoria dos números, o caminho forjado por Faltings sempre se encontra diante de nós.

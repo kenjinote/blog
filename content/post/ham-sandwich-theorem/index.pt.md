@@ -56,7 +56,7 @@ Por que tal linha sempre existe? Vamos pensar usando o conceito de continuidade.
 
 É por isso que você pode dividir dois objetos simultaneamente no caso 2D.
 
-## 3. Extensão para 3D: [O Teorema do Sanduíche de Presunto](https://kenji.blog/p/ham-sandwich-theorem/)
+## 3. Extensão para 3D: [O Teorema do Sanduíche de Presunto](https://kenji.blog/pt/p/ham-sandwich-theorem/)
 
 Agora, vamos finalmente para a história tridimensional. Quando a dimensão sobe um, o número de objetos que você pode dividir também aumenta em um.
 
@@ -98,7 +98,7 @@ Para uma função $f(x) = \left( \text{Temperatura}, \text{Pressão} \right)$ qu
 
 ### Esboço da Prova do Teorema do Sanduíche de Presunto
 
-[O Teorema do Sanduíche de Presunto](https://kenji.blog/p/ham-sandwich-theorem/) (versão 3D) pode ser provado usando o caso $n=2$ do Teorema de Borsuk-Ulam. Abaixo está um esboço de sua bela prova.
+[O Teorema do Sanduíche de Presunto](https://kenji.blog/pt/p/ham-sandwich-theorem/) (versão 3D) pode ser provado usando o caso $n=2$ do Teorema de Borsuk-Ulam. Abaixo está um esboço de sua bela prova.
 
 1. Considere um ponto $p$ na esfera unitária $S^2$ centrada na origem (isso representa o vetor normal do plano, ou seja, a "direção" do plano).
 2. Quando a direção $p$ é fixada, um plano que divide o volume do "pão superior" é determinado de forma única (vamos chamar isso de Plano $H(p)$).
@@ -150,6 +150,6 @@ Por exemplo, quando uma quantidade massiva de pontos de dados (nuvens de pontos)
 
 ## 7. Conclusão
 
-[O Teorema do Sanduíche de Presunto](https://kenji.blog/p/ham-sandwich-theorem/) pode parecer uma piada com um nome engraçado à primeira vista, mas na realidade, é um belo resultado aplicado de um teorema poderoso na matemática moderna, especificamente na topologia algébrica. O fato de que uma teoria matemática abstrata seja expressa através de algo tão concreto e cotidiano como um sanduíche é indiscutivelmente um dos aspectos fascinantes da matemática.
+[O Teorema do Sanduíche de Presunto](https://kenji.blog/pt/p/ham-sandwich-theorem/) pode parecer uma piada com um nome engraçado à primeira vista, mas na realidade, é um belo resultado aplicado de um teorema poderoso na matemática moderna, especificamente na topologia algébrica. O fato de que uma teoria matemática abstrata seja expressa através de algo tão concreto e cotidiano como um sanduíche é indiscutivelmente um dos aspectos fascinantes da matemática.
 
 Da próxima vez que você cortar um sanduíche casualmente, pode haver apenas um momento em que todos os três ingredientes sejam divididos perfeitamente por coincidência. Durante sua próxima pausa para o almoço, ao agarrar sua faca, por que não deixar seus pensamentos vagarem para espaços de dimensões superiores e o Teorema de Borsuk-Ulam?

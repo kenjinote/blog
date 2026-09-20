@@ -15,7 +15,7 @@ tags:
 
 ## Was ist der Primzahlsatz?
 
-Eines der schönsten Ergebnisse im Bereich der Mathematik ist der **Primzahlsatz** ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT). Er zeigt, dass Primzahlen, die auf den ersten Blick unregelmäßig und zufällig erscheinen, bei makroskopischer Betrachtung eine erstaunlich glatte Regelmäßigkeit aufweisen.
+Eines der schönsten Ergebnisse im Bereich der Mathematik ist der **Primzahlsatz** ([Prime Number Theorem](https://kenji.blog/de/p/prime-number-theorem/), PNT). Er zeigt, dass Primzahlen, die auf den ersten Blick unregelmäßig und zufällig erscheinen, bei makroskopischer Betrachtung eine erstaunlich glatte Regelmäßigkeit aufweisen.
 
 Konkret besagt der Satz: Wenn $\pi(x)$ (die Primzahlzählfunktion) die "Anzahl der Primzahlen bis zu einer reellen Zahl $x$" ist, nähert sich $\pi(x)$ für sehr große $x$ asymptotisch $x / \ln(x)$ an.
 
@@ -42,11 +42,11 @@ graph TD;
 
 ## Historischer Hintergrund: Von der Gaußschen Vermutung zum Beweis
 
-Die Geschichte des Primzahlsatzes reicht bis in das späte 18. Jahrhundert zurück. Der erst 15-jährige geniale Mathematiker [Carl Friedrich Gauß](https://kenji.blog/p/gauss/) bemerkte beim Betrachten von Primzahltabellen, dass die Häufigkeit des Auftretens von Primzahlen mit logarithmischen Funktionen zusammenhängt. Etwa zur gleichen Zeit stellte [Adrien-Marie Legendre](https://kenji.blog/p/legendre/) unabhängig davon eine ähnliche Vermutung auf.
+Die Geschichte des Primzahlsatzes reicht bis in das späte 18. Jahrhundert zurück. Der erst 15-jährige geniale Mathematiker [Carl Friedrich Gauß](https://kenji.blog/de/p/gauss/) bemerkte beim Betrachten von Primzahltabellen, dass die Häufigkeit des Auftretens von Primzahlen mit logarithmischen Funktionen zusammenhängt. Etwa zur gleichen Zeit stellte [Adrien-Marie Legendre](https://kenji.blog/de/p/legendre/) unabhängig davon eine ähnliche Vermutung auf.
 
 Allerdings gelang es ihnen nicht, dies streng zu beweisen.
 
-Ein großer Durchbruch beim Beweis kam durch die bahnbrechende Arbeit "Ueber die Anzahl der Primzahlen unter einer gegebenen Grösse" von [Bernhard Riemann](https://kenji.blog/p/riemann/) im Jahr 1859. Riemann präsentierte einen völlig neuen Ansatz, indem er die **Zeta-Funktion** $\zeta(s)$, eine komplexe Funktion, verwendete, um die Verteilung von Primzahlen in ein Problem auf der komplexen Zahlenebene zu transformieren.
+Ein großer Durchbruch beim Beweis kam durch die bahnbrechende Arbeit "Ueber die Anzahl der Primzahlen unter einer gegebenen Grösse" von [Bernhard Riemann](https://kenji.blog/de/p/riemann/) im Jahr 1859. Riemann präsentierte einen völlig neuen Ansatz, indem er die **Zeta-Funktion** $\zeta(s)$, eine komplexe Funktion, verwendete, um die Verteilung von Primzahlen in ein Problem auf der komplexen Zahlenebene zu transformieren.
 
 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ prim}} \left(1 - \frac{1}{p^s}\right)^{-1} $$
 

@@ -8,9 +8,9 @@ categories: ["mathematik", "biografie"]
 tags: ["Ernst Kummer", "Großer Fermatscher Satz", "Ideale Zahlen", "Algebraische Zahlentheorie", "Reguläre Primzahlen"]
 ---
 
-# [Ernst Kummer](https://kenji.blog/p/kummer/): Vater der idealen Zahlen und die Morgendämmerung der algebraischen Zahlentheorie
+# [Ernst Kummer](https://kenji.blog/de/p/kummer/): Vater der idealen Zahlen und die Morgendämmerung der algebraischen Zahlentheorie
 
-In der Geschichte der Mathematik ist es nicht ungewöhnlich, dass die Herausforderung eines bestimmten offenen Problems völlig neue Forschungsfelder eröffnet. Ernst Eduard Kummer ( **Ernst Eduard Kummer** ) ist ein deutscher mathematischer Gigant des 19. Jahrhunderts, der genau solch einen historischen Wendepunkt schuf. Während seines tiefgründigen Kampfes mit dem **Großen Fermatschen Satz** ( **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** ) führte er das bahnbrechende Konzept der **idealen Zahlen** ( **Ideal Numbers** ) ein und legte damit den Grundstein für die moderne algebraische Zahlentheorie.
+In der Geschichte der Mathematik ist es nicht ungewöhnlich, dass die Herausforderung eines bestimmten offenen Problems völlig neue Forschungsfelder eröffnet. Ernst Eduard Kummer ( **Ernst Eduard Kummer** ) ist ein deutscher mathematischer Gigant des 19. Jahrhunderts, der genau solch einen historischen Wendepunkt schuf. Während seines tiefgründigen Kampfes mit dem **Großen Fermatschen Satz** ( **[Fermat's Last Theorem](https://kenji.blog/de/p/fermats-last-theorem/)** ) führte er das bahnbrechende Konzept der **idealen Zahlen** ( **Ideal Numbers** ) ein und legte damit den Grundstein für die moderne algebraische Zahlentheorie.
 
 In diesem Artikel werden wir tief in Kummers turbulentes Leben, die menschlichen Episoden um ihn herum und seine brillanten Errungenschaften, die in der Mathematikgeschichte weiterhin strahlen, eintauchen.
 
@@ -20,7 +20,7 @@ In diesem Artikel werden wir tief in Kummers turbulentes Leben, die menschlichen
 
 ### Frühes Leben und Wechsel von der Theologie
 
-[Ernst Kummer](https://kenji.blog/p/kummer/) wurde am 29. Januar 1810 in Sorau ( **Sorau** ), im Königreich Preußen (heute in Polen), geboren. Sein Vater, ein Arzt, verstarb, als Kummer noch sehr jung war, und er wurde von seiner Mutter aufgezogen. Obwohl sie arm waren, erhielt Kummer eine engagierte Ausbildung und trat 1828 in die Universität Halle ein.
+[Ernst Kummer](https://kenji.blog/de/p/kummer/) wurde am 29. Januar 1810 in Sorau ( **Sorau** ), im Königreich Preußen (heute in Polen), geboren. Sein Vater, ein Arzt, verstarb, als Kummer noch sehr jung war, und er wurde von seiner Mutter aufgezogen. Obwohl sie arm waren, erhielt Kummer eine engagierte Ausbildung und trat 1828 in die Universität Halle ein.
 
 Zunächst studierte er protestantische Theologie, aber unter dem Einfluss von Professor Heinrich Ferdinand Scherk ( **Heinrich Ferdinand Scherk** ) wurde er von der Schönheit und Tiefe der Mathematik fasziniert. Unter der Anleitung von Professor Scherk widmete sich Kummer der Mathematik und promovierte bereits drei Jahre später, im Jahr 1831.
 
@@ -32,9 +32,9 @@ Einer dieser Schüler war Leopold Kronecker ( **Leopold Kronecker** ), der spät
 
 ### Ruhm als Universitätsprofessor
 
-Seine bemerkenswerten Forschungsleistungen zogen die Aufmerksamkeit der führenden Mathematiker der damaligen Zeit auf sich. 1842 wurde Kummer auf Empfehlung von [Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/)** ) und Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ) ordentlicher Professor an der Universität Breslau. Darüber hinaus wurde er 1855 zum Professor an der Universität Berlin ernannt, um Dirichlet nachzufolgen, der nach Göttingen gewechselt war.
+Seine bemerkenswerten Forschungsleistungen zogen die Aufmerksamkeit der führenden Mathematiker der damaligen Zeit auf sich. 1842 wurde Kummer auf Empfehlung von [Carl Gustav Jacob Jacobi](https://kenji.blog/de/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/de/p/jacobi/)** ) und Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ) ordentlicher Professor an der Universität Breslau. Darüber hinaus wurde er 1855 zum Professor an der Universität Berlin ernannt, um Dirichlet nachzufolgen, der nach Göttingen gewechselt war.
 
-An der Universität Berlin machte Kummer zusammen mit [Karl Weierstrass](https://kenji.blog/p/weierstrass/) ( **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** ) und seinem ehemaligen Schüler Kronecker Berlin zu einem globalen Zentrum der Mathematik. Seine Vorlesungen waren extrem klar und leidenschaftlich und zogen viele brillante Studenten aus ganz Europa an.
+An der Universität Berlin machte Kummer zusammen mit [Karl Weierstrass](https://kenji.blog/de/p/weierstrass/) ( **[Karl Weierstrass](https://kenji.blog/de/p/weierstrass/)** ) und seinem ehemaligen Schüler Kronecker Berlin zu einem globalen Zentrum der Mathematik. Seine Vorlesungen waren extrem klar und leidenschaftlich und zogen viele brillante Studenten aus ganz Europa an.
 
 ---
 
@@ -64,7 +64,7 @@ $$
 
 Es gibt keine positiven ganzzahligen Lösungen $(x, y, z)$, die diese Gleichung erfüllen.
 
-1847 gaben die französischen Mathematiker [Gabriel Lamé](https://kenji.blog/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/p/lame/)** ) und [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)** ) bekannt, dass es ihnen gelungen sei, diesen Satz zu beweisen. Ihr Ansatz bestand darin, die Faktorisierung auf das Reich der komplexen Zahlen (Kreisteilungskörper) auszudehnen.
+1847 gaben die französischen Mathematiker [Gabriel Lamé](https://kenji.blog/de/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/de/p/lame/)** ) und [Augustin-Louis Cauchy](https://kenji.blog/de/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/de/p/cauchy/)** ) bekannt, dass es ihnen gelungen sei, diesen Satz zu beweisen. Ihr Ansatz bestand darin, die Faktorisierung auf das Reich der komplexen Zahlen (Kreisteilungskörper) auszudehnen.
 
 Unter Verwendung der primitiven $p$-ten Einheitswurzel $\zeta$ (wobei $\zeta^p = 1, \zeta \neq 1$) kann die Gleichung $x^p + y^p = z^p$ wie folgt faktorisiert werden:
 
@@ -138,7 +138,7 @@ Diese Fläche sollte später eine entscheidende Rolle in einer Vielzahl von Bere
 
 ## Fazit
 
-[Ernst Kummer](https://kenji.blog/p/kummer/) erweiterte den Rahmen der Mathematik selbst, während er das "unlösbare Rätsel" des Großen Fermatschen Satzes in Angriff nahm. Seine Idee der **idealen Zahlen** wurde zu einer unverzichtbaren Sprache in der späteren Algebra und beeinflusst weiterhin jeden Zweig der modernen Mathematik.
+[Ernst Kummer](https://kenji.blog/de/p/kummer/) erweiterte den Rahmen der Mathematik selbst, während er das "unlösbare Rätsel" des Großen Fermatschen Satzes in Angriff nahm. Seine Idee der **idealen Zahlen** wurde zu einer unverzichtbaren Sprache in der späteren Algebra und beeinflusst weiterhin jeden Zweig der modernen Mathematik.
 
 Mit der menschlichen Seite, schlecht im Rechnen zu sein, aber mit der Einsicht ausgestattet, "unsichtbare ideale Zahlen" jenseits der menschlichen Intuition zu entdecken, ist Kummers Brillanz den Titel eines Genies wahrlich wert. Kummers Errungenschaften lehren uns, wie wichtig es ist, den Rahmen selbst zu überdenken, wenn wir mit scheinbar unmöglichen Problemen konfrontiert sind.
 

@@ -9,7 +9,7 @@ categories: ["career", "ai", "software-engineering"]
 tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 ---
 
-# [Habilidades de ingeniería 'exclusivas de los humanos' requeridas en la era en que la IA escribe código](https://kenji.blog/p/human_engineer_skills/)
+# [Habilidades de ingeniería 'exclusivas de los humanos' requeridas en la era en que la IA escribe código](https://kenji.blog/es/p/human_engineer_skills/)
 
 En los últimos años, la rápida evolución de la IA Generativa y los Grandes Modelos de Lenguaje (LLM) ha cambiado drásticamente el panorama de la ingeniería de software. GitHub Copilot y varios asistentes de codificación de IA se utilizan a diario, y el fenómeno de "dar instrucciones en lenguaje natural y hacer que la IA genere código al instante" ya no es ciencia ficción del futuro, sino una realidad de hoy.
 

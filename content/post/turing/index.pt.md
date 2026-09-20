@@ -20,7 +20,7 @@ Durante seus dias de escola em Sherborne, ele já demonstrava um talento extraor
 
 # 3. A Máquina de Turing e a Teoria da Computabilidade
 
-Um dos maiores problemas não resolvidos no mundo matemático na época era o "Entscheidungsproblem" (Problema de Decisão) proposto por [David Hilbert](https://kenji.blog/p/hilbert/) em 1928. Esta era uma questão fundamental: "Dada qualquer afirmação matemática, existe um procedimento algorítmico mecânico para determinar se ela é verdadeira ou falsa?"
+Um dos maiores problemas não resolvidos no mundo matemático na época era o "Entscheidungsproblem" (Problema de Decisão) proposto por [David Hilbert](https://kenji.blog/pt/p/hilbert/) em 1928. Esta era uma questão fundamental: "Dada qualquer afirmação matemática, existe um procedimento algorítmico mecânico para determinar se ela é verdadeira ou falsa?"
 
 Turing abordou esse problema com uma abordagem totalmente nova. Em seu artigo inovador de 1936, "Sobre os Números Computáveis, com uma Aplicação ao Entscheidungsproblem", ele definiu uma máquina de computação abstrata, a **Máquina de Turing**.
 
@@ -139,4 +139,4 @@ Em 7 de junho de 1954, ele faleceu na tenra idade de 41 anos. A causa da morte f
 
 No entanto, décadas após sua morte, a reavaliação global de suas conquistas e a restauração de sua honra progrediram. Em 2009, o governo britânico pediu desculpas oficialmente pelo tratamento injusto que ele recebeu na época, e em 2013, ele recebeu um perdão real póstumo da Rainha Elizabeth II.
 
-Hoje, o prêmio mais alto do mundo em ciência da computação (frequentemente chamado de "Prêmio Nobel da Computação") é nomeado o **Prêmio Turing** para honrar sempre suas conquistas. [Alan Turing](https://kenji.blog/p/turing/) possuía ideias que estavam muito à frente de seu tempo em diversos campos: matemática, criptografia, ciência da computação, inteligência artificial e biologia. As teorias e ideias que ele deixou para trás continuam a respirar poderosamente hoje como a base da nossa moderna sociedade digital.
+Hoje, o prêmio mais alto do mundo em ciência da computação (frequentemente chamado de "Prêmio Nobel da Computação") é nomeado o **Prêmio Turing** para honrar sempre suas conquistas. [Alan Turing](https://kenji.blog/pt/p/turing/) possuía ideias que estavam muito à frente de seu tempo em diversos campos: matemática, criptografia, ciência da computação, inteligência artificial e biologia. As teorias e ideias que ele deixou para trás continuam a respirar poderosamente hoje como a base da nossa moderna sociedade digital.

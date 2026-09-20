@@ -10,19 +10,19 @@ tags: ["Matematika", "Weierstrass", "Analisis", "Sejarah"]
 
 ## Pengantar
 
-Dalam sejarah matematika, orang yang paling terkenal karena membangun kalkulus di atas fondasi yang ketat adalah **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** (1815–1897). Ia dipuji sebagai "bapak analisis modern" dan membangun dasar-dasar kalkulus diferensial dan integral (terutama definisi $\epsilon-\delta$) yang kita pelajari di universitas saat ini. Pencapaiannya lebih dari sekadar menemukan teorema; ia secara mendasar mengubah "naratif" dan "cara berpikir" dalam disiplin matematika itu sendiri. Dalam artikel ini, kita akan menggali lebih dalam episode-episode kehidupannya yang penuh gejolak dan pencapaiannya yang menakjubkan dalam matematika.
+Dalam sejarah matematika, orang yang paling terkenal karena membangun kalkulus di atas fondasi yang ketat adalah **[Karl Weierstrass](https://kenji.blog/id/p/weierstrass/)** (1815–1897). Ia dipuji sebagai "bapak analisis modern" dan membangun dasar-dasar kalkulus diferensial dan integral (terutama definisi $\epsilon-\delta$) yang kita pelajari di universitas saat ini. Pencapaiannya lebih dari sekadar menemukan teorema; ia secara mendasar mengubah "naratif" dan "cara berpikir" dalam disiplin matematika itu sendiri. Dalam artikel ini, kita akan menggali lebih dalam episode-episode kehidupannya yang penuh gejolak dan pencapaiannya yang menakjubkan dalam matematika.
 
 ## Konteks Sejarah: Dunia Matematika Abad ke-19 dan Krisis dalam Analisis
 
-Kalkulus, yang didirikan pada abad ke-17 oleh [Isaac Newton](https://kenji.blog/p/newton/) dan Gottfried Wilhelm Leibniz, mencapai perkembangan fenomenal sepanjang abad ke-18 di tangan [Leonhard Euler](https://kenji.blog/p/euler/) dan lainnya. Sementara penerapannya dalam fisika dan astronomi membuahkan hasil yang luar biasa, konsep-konsep yang mendasarinya tentang "infinitesimal" dan "limit" tetap sangat ambigu. Penjelasan intuitif tentang "angka yang mendekati nol tak terhingga tetapi bukan nol" menjadi sasaran kritik filosofis dan tidak memiliki ketegasan logis.
+Kalkulus, yang didirikan pada abad ke-17 oleh [Isaac Newton](https://kenji.blog/id/p/newton/) dan Gottfried Wilhelm Leibniz, mencapai perkembangan fenomenal sepanjang abad ke-18 di tangan [Leonhard Euler](https://kenji.blog/id/p/euler/) dan lainnya. Sementara penerapannya dalam fisika dan astronomi membuahkan hasil yang luar biasa, konsep-konsep yang mendasarinya tentang "infinitesimal" dan "limit" tetap sangat ambigu. Penjelasan intuitif tentang "angka yang mendekati nol tak terhingga tetapi bukan nol" menjadi sasaran kritik filosofis dan tidak memiliki ketegasan logis.
 
-Memasuki abad ke-19, [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/), Bernhard Bolzano, dan lainnya mulai memperketat analisis, tetapi definisi mereka masih belum dapat sepenuhnya menghilangkan intuisi. Weierstrass-lah yang mengambil misi bersejarah untuk menerobos situasi ini, yang bisa disebut "krisis dalam analisis," dan membangun kembali analisis menggunakan metode murni aritmatika tanpa mengandalkan intuisi geometris.
+Memasuki abad ke-19, [Augustin-Louis Cauchy](https://kenji.blog/id/p/cauchy/), Bernhard Bolzano, dan lainnya mulai memperketat analisis, tetapi definisi mereka masih belum dapat sepenuhnya menghilangkan intuisi. Weierstrass-lah yang mengambil misi bersejarah untuk menerobos situasi ini, yang bisa disebut "krisis dalam analisis," dan membangun kembali analisis menggunakan metode murni aritmatika tanpa mengandalkan intuisi geometris.
 
 ## Kehidupan Awal dan Masa Mahasiswa yang Membuat Frustrasi
 
-[Karl Weierstrass](https://kenji.blog/p/weierstrass/) lahir pada 31 Oktober 1815, di Ostenfelde, Kerajaan Prusia (sekarang Jerman). Ayahnya adalah seorang pejabat pemerintah dan seorang pria yang sangat tegas. Ayahnya sangat mendambakan putranya menjadi administrator Prusia yang luar biasa seperti dirinya, dan kehidupan awal Weierstrass terikat oleh harapan-harapan kuat ini.
+[Karl Weierstrass](https://kenji.blog/id/p/weierstrass/) lahir pada 31 Oktober 1815, di Ostenfelde, Kerajaan Prusia (sekarang Jerman). Ayahnya adalah seorang pejabat pemerintah dan seorang pria yang sangat tegas. Ayahnya sangat mendambakan putranya menjadi administrator Prusia yang luar biasa seperti dirinya, dan kehidupan awal Weierstrass terikat oleh harapan-harapan kuat ini.
 
-Pada tahun 1834, mengikuti keinginan ayahnya, ia masuk Universitas Bonn untuk belajar hukum dan keuangan. Namun, hatinya tidak berada pada hukum atau ekonomi, melainkan sangat tertarik pada matematika. Akibatnya, alih-alih menghadiri kuliah hukum, ia menghabiskan waktunya dengan anggar dan minum bir, menjalani kehidupan mahasiswa yang bebas. Pada saat yang sama, ia secara pribadi melahap buku-buku matematika (terutama karya-karya Pierre-Simon Laplace, [Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/), dan [Niels Henrik Abel](https://kenji.blog/p/abel/)) dan belajar matematika tingkat lanjut secara otodidak. Pada akhirnya, ia putus kuliah empat tahun kemudian tanpa mendapatkan gelar.
+Pada tahun 1834, mengikuti keinginan ayahnya, ia masuk Universitas Bonn untuk belajar hukum dan keuangan. Namun, hatinya tidak berada pada hukum atau ekonomi, melainkan sangat tertarik pada matematika. Akibatnya, alih-alih menghadiri kuliah hukum, ia menghabiskan waktunya dengan anggar dan minum bir, menjalani kehidupan mahasiswa yang bebas. Pada saat yang sama, ia secara pribadi melahap buku-buku matematika (terutama karya-karya Pierre-Simon Laplace, [Carl Gustav Jacob Jacobi](https://kenji.blog/id/p/jacobi/), dan [Niels Henrik Abel](https://kenji.blog/id/p/abel/)) dan belajar matematika tingkat lanjut secara otodidak. Pada akhirnya, ia putus kuliah empat tahun kemudian tanpa mendapatkan gelar.
 
 Kemunduran ini merupakan titik balik besar baginya dan sangat mengecewakan ayahnya. Namun, semangat kemandirian dan belajar otodidak yang dibudayakan selama periode ini tidak diragukan lagi memberikan pengaruh besar pada gaya penelitiannya di kemudian hari.
 
@@ -108,7 +108,7 @@ graph TD
 
 Di Universitas Berlin, Weierstrass tidak hanya seorang peneliti tetapi juga seorang pendidik yang luar biasa. Kuliahnya sangat jelas, tanpa lompatan logika apa pun, dengan mantap mendekati kebenaran selangkah demi selangkah. Catatan kuliahnya beredar di kalangan mahasiswa dan diperlakukan seperti buku teks di universitas-universitas di seluruh Eropa.
 
-Mendengar ketenarannya, siswa-siswa berprestasi dari seluruh Eropa berkumpul di sekelilingnya. Murid-muridnya dan matematikawan yang dipengaruhi olehnya termasuk [Georg Cantor](https://kenji.blog/p/cantor/) (pendiri teori himpunan), Felix Klein, Ferdinand Georg Frobenius, Hermann Schwarz, dan banyak raksasa lain yang kemudian meninggalkan nama mereka dalam sejarah matematika.
+Mendengar ketenarannya, siswa-siswa berprestasi dari seluruh Eropa berkumpul di sekelilingnya. Murid-muridnya dan matematikawan yang dipengaruhi olehnya termasuk [Georg Cantor](https://kenji.blog/id/p/cantor/) (pendiri teori himpunan), Felix Klein, Ferdinand Georg Frobenius, Hermann Schwarz, dan banyak raksasa lain yang kemudian meninggalkan nama mereka dalam sejarah matematika.
 
 ### Bimbingan dan Kasih Sayang dengan Sofia Kovalevskaya
 
@@ -124,10 +124,10 @@ Di tahun-tahun terakhirnya, Weierstrass mengalami perselisihan sengit mengenai d
 
 Kesehatannya juga berangsur-angsur memburuk, dan pada tahun-tahun terakhirnya, ia menderita pusing dan bronkitis, yang memaksanya hidup di kursi roda. Meskipun demikian, ia tidak pernah kehilangan hasratnya terhadap matematika sampai akhir hayatnya, mengerjakan kompilasi karya-karyanya sendiri dengan bantuan murid-muridnya.
 
-Pada 19 Februari 1897, [Karl Weierstrass](https://kenji.blog/p/weierstrass/) meninggal dunia karena pneumonia di Berlin pada usia 81 tahun.
+Pada 19 Februari 1897, [Karl Weierstrass](https://kenji.blog/id/p/weierstrass/) meninggal dunia karena pneumonia di Berlin pada usia 81 tahun.
 
 ## Kesimpulan
 
-Melalui logikanya yang ketat dan semangatnya yang gigih, [Karl Weierstrass](https://kenji.blog/p/weierstrass/) mengembangkan matematika menjadi sesuatu yang lebih solid dan indah. Mengatasi kemunduran masa muda dan periode isolasi yang panjang sebagai guru pedesaan untuk akhirnya naik ke puncak dunia, hidupnya memberi kita, yang hidup di era modern, keberanian yang luar biasa.
+Melalui logikanya yang ketat dan semangatnya yang gigih, [Karl Weierstrass](https://kenji.blog/id/p/weierstrass/) mengembangkan matematika menjadi sesuatu yang lebih solid dan indah. Mengatasi kemunduran masa muda dan periode isolasi yang panjang sebagai guru pedesaan untuk akhirnya naik ke puncak dunia, hidupnya memberi kita, yang hidup di era modern, keberanian yang luar biasa.
 
 Tanpa landasan "ketegasan" yang kuat yang ia bangun, perkembangan matematika lanjutan, fisika, dan teknik modern akan mustahil terjadi. Pencapaian yang ditinggalkannya terus bersinar cemerlang tanpa memudar dalam matematika modern, dan itulah sebabnya ia dipuji sebagai "bapak analisis modern." Nama Weierstrass akan diwariskan selamanya sebagai simbol kebesaran yang membuktikan bahwa matematika adalah seni logika.

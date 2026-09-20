@@ -17,9 +17,9 @@ tags:
 
 ## 1. Einleitung: Giganten am Vorabend der Infinitesimalrechnung und die Mathematik des 17. Jahrhunderts
 
-Das Europa des 17. Jahrhunderts war eine Zeit einer dramatischen Wissensexplosion, die später als „Wissenschaftliche Revolution“ bekannt wurde. Insbesondere auf dem Gebiet der Mathematik wurden hastig Vorbereitungen für die Geburt einer neuen Mathematik getroffen, die über den aus dem antiken Griechenland überlieferten Rahmen der euklidischen Geometrie hinausging, um mit veränderlichen Größen, dem Unendlichkleinen und dem Unendlichen umzugehen – nämlich der „Infinitesimalrechnung“. Das historische Monument der Vollendung der Infinitesimalrechnung durch [Isaac Newton](https://kenji.blog/p/newton/) und Gottfried Wilhelm Leibniz wurde keineswegs durch das Genie dieser beiden allein erreicht. Dahinter standen die Kämpfe zahlreicher Mathematiker, die sich vor ihnen mit den Konzepten von Unendlichkeit und Grenzwerten auseinandergesetzt hatten.
+Das Europa des 17. Jahrhunderts war eine Zeit einer dramatischen Wissensexplosion, die später als „Wissenschaftliche Revolution“ bekannt wurde. Insbesondere auf dem Gebiet der Mathematik wurden hastig Vorbereitungen für die Geburt einer neuen Mathematik getroffen, die über den aus dem antiken Griechenland überlieferten Rahmen der euklidischen Geometrie hinausging, um mit veränderlichen Größen, dem Unendlichkleinen und dem Unendlichen umzugehen – nämlich der „Infinitesimalrechnung“. Das historische Monument der Vollendung der Infinitesimalrechnung durch [Isaac Newton](https://kenji.blog/de/p/newton/) und Gottfried Wilhelm Leibniz wurde keineswegs durch das Genie dieser beiden allein erreicht. Dahinter standen die Kämpfe zahlreicher Mathematiker, die sich vor ihnen mit den Konzepten von Unendlichkeit und Grenzwerten auseinandergesetzt hatten.
 
-Einer der wichtigsten Mathematiker in Frankreich an diesem „Vorabend der Infinitesimalrechnung“ war [Gilles Personne de Roberval](https://kenji.blog/p/roberval/) (1602–1675). Roberval führte die von dem Italiener Bonaventura Cavalieri vorgeschlagene „Methode der Indivisiblen“ (Unteilbaren) in Frankreich ein und schuf durch ihre eigenständige Verfeinerung leistungsstarke Methoden zur Berechnung der Fläche von durch Kurven begrenzten Figuren und des Volumens von Rotationskörpern. Er zeigte auch herausragendes Talent in den Bereichen Physik und Mechanik und hinterließ eine bahnbrechende Erfindung, die als „Roberval-Waage“ (Tafelwaage) bekannt ist und noch heute auf Märkten und in naturwissenschaftlichen Labors zu sehen ist.
+Einer der wichtigsten Mathematiker in Frankreich an diesem „Vorabend der Infinitesimalrechnung“ war [Gilles Personne de Roberval](https://kenji.blog/de/p/roberval/) (1602–1675). Roberval führte die von dem Italiener Bonaventura Cavalieri vorgeschlagene „Methode der Indivisiblen“ (Unteilbaren) in Frankreich ein und schuf durch ihre eigenständige Verfeinerung leistungsstarke Methoden zur Berechnung der Fläche von durch Kurven begrenzten Figuren und des Volumens von Rotationskörpern. Er zeigte auch herausragendes Talent in den Bereichen Physik und Mechanik und hinterließ eine bahnbrechende Erfindung, die als „Roberval-Waage“ (Tafelwaage) bekannt ist und noch heute auf Märkten und in naturwissenschaftlichen Labors zu sehen ist.
 
 In diesem Artikel werden wir tief in das Leben dieses einsamen Mathematikers, der eine turbulente Zeit durchlebte, in seine heftigen Kontroversen mit Zeitgenossen und in die tiefgreifenden mathematischen und mechanischen Errungenschaften, die er hinterließ, eintauchen – komplett mit reichhaltigen Illustrationen und mathematischen Formeln.
 
@@ -29,9 +29,9 @@ In diesem Artikel werden wir tief in das Leben dieses einsamen Mathematikers, de
 
 Gilles Personne wurde am 10. August 1602 in einem kleinen Dorf namens Roberval in der Nähe von Beauvais im Norden Frankreichs geboren. Es wird angenommen, dass seine Familie Bauern waren, was in der strengen Klassengesellschaft der damaligen Zeit keineswegs ein vorteilhafter Hintergrund für Gelehrsamkeit war. Schon in jungen Jahren zeigte er jedoch einen außergewöhnlichen Intellekt und ein starkes Interesse an Mathematik. Später nahm er den Namen seines Heimatdorfes an und begann, sich „de Roberval“ zu nennen. Dies kann sowohl als Ausdruck seines Stolzes auf seine Herkunft als auch als Versuch gesehen werden, seine Identität als Gelehrter zu etablieren.
 
-Nachdem er sich in jungen Jahren Mathematik und klassische Sprachen (Latein und Griechisch) selbst beigebracht hatte, strebte Roberval nach höheren akademischen Weihen und zog um 1628 in die Hauptstadt Paris. Paris war zu dieser Zeit ein Schmelztiegel der Gelehrsamkeit und versammelte Intellektuelle aus ganz Europa. Dort begann er, die Versammlung von Intellektuellen rund um Pater [Marin Mersenne](https://kenji.blog/p/mersenne/), bekannt als die „Académie de Mersenne“, zu besuchen. Mersenne, der oft als „der Postmeister der europäischen Gelehrsamkeit“ bezeichnet wird, fungierte als Vermittler für die Korrespondenz zwischen Gelehrten in ganz Europa und spielte eine Rolle beim Austausch der neuesten wissenschaftlichen Entdeckungen.
+Nachdem er sich in jungen Jahren Mathematik und klassische Sprachen (Latein und Griechisch) selbst beigebracht hatte, strebte Roberval nach höheren akademischen Weihen und zog um 1628 in die Hauptstadt Paris. Paris war zu dieser Zeit ein Schmelztiegel der Gelehrsamkeit und versammelte Intellektuelle aus ganz Europa. Dort begann er, die Versammlung von Intellektuellen rund um Pater [Marin Mersenne](https://kenji.blog/de/p/mersenne/), bekannt als die „Académie de Mersenne“, zu besuchen. Mersenne, der oft als „der Postmeister der europäischen Gelehrsamkeit“ bezeichnet wird, fungierte als Vermittler für die Korrespondenz zwischen Gelehrten in ganz Europa und spielte eine Rolle beim Austausch der neuesten wissenschaftlichen Entdeckungen.
 
-Durch Mersennes Salon vertiefte Roberval seine Interaktionen mit den führenden Köpfen Frankreichs der damaligen Zeit, wie [René Descartes](https://kenji.blog/p/descartes/), [Pierre de Fermat](https://kenji.blog/p/fermat/), [Blaise Pascal](https://kenji.blog/p/pascal/) und Étienne Pascal (Blaises Vater), wodurch seine mathematischen Talente aufblühen konnten.
+Durch Mersennes Salon vertiefte Roberval seine Interaktionen mit den führenden Köpfen Frankreichs der damaligen Zeit, wie [René Descartes](https://kenji.blog/de/p/descartes/), [Pierre de Fermat](https://kenji.blog/de/p/fermat/), [Blaise Pascal](https://kenji.blog/de/p/pascal/) und Étienne Pascal (Blaises Vater), wodurch seine mathematischen Talente aufblühen konnten.
 
 ### 2.2. Die Professur am Collège Royal und aufreibende Verteidigungskämpfe
 
@@ -71,7 +71,7 @@ $$
 \int_{0}^{a} x^n dx = \frac{a^{n+1}}{n+1} \quad \left( \text{wobei } n \text{ eine positive ganze Zahl ist} \right)
 $$
 
-Wenn beispielsweise $ n = 2 $ ist, beträgt die Fläche unter der Parabel $ y = x^2 $ $ \frac{a^3}{3} $. Dies war dasselbe Ergebnis, das [Pierre de Fermat](https://kenji.blog/p/fermat/) etwa zur gleichen Zeit unabhängig voneinander entdeckt hatte. Roberval und Fermat respektierten die Methoden des jeweils anderen und teilten diese Entdeckung durch Briefe. Ihre Errungenschaften wurden zu einem wichtigen Sprungbrett für Leibnizens spätere Formulierung der Integration.
+Wenn beispielsweise $ n = 2 $ ist, beträgt die Fläche unter der Parabel $ y = x^2 $ $ \frac{a^3}{3} $. Dies war dasselbe Ergebnis, das [Pierre de Fermat](https://kenji.blog/de/p/fermat/) etwa zur gleichen Zeit unabhängig voneinander entdeckt hatte. Roberval und Fermat respektierten die Methoden des jeweils anderen und teilten diese Entdeckung durch Briefe. Ihre Errungenschaften wurden zu einem wichtigen Sprungbrett für Leibnizens spätere Formulierung der Integration.
 
 ## 4. Untersuchung der Zykloide und heftige Prioritätsstreitigkeiten
 
@@ -118,7 +118,7 @@ Als Roberval davon erfuhr, war er wütend. Er beschuldigte Torricelli und behaup
 
 Roberval entwickelte einen bahnbrechenden Ansatz nicht nur auf dem Gebiet der Integration, sondern auch auf dem Gebiet der Differenziation (dem Problem des Ziehens von Tangenten). Es bestand darin, geometrische Probleme als physikalische „Kinematik“ (Bewegungslehre) neu zu betrachten.
 
-Damals war das Finden der Tangente an eine Kurve eines der wichtigsten Probleme in der Geometrie. [René Descartes](https://kenji.blog/p/descartes/) versuchte, Tangenten mit einem algebraisch-geometrischen Ansatz mit algebraischen Gleichungen zu finden, aber dies hatte den Nachteil extrem umständlicher Berechnungen.
+Damals war das Finden der Tangente an eine Kurve eines der wichtigsten Probleme in der Geometrie. [René Descartes](https://kenji.blog/de/p/descartes/) versuchte, Tangenten mit einem algebraisch-geometrischen Ansatz mit algebraischen Gleichungen zu finden, aber dies hatte den Nachteil extrem umständlicher Berechnungen.
 
 Im Gegensatz dazu dachte Roberval wie folgt: „Wenn eine Kurve eine Bahn ist, die von einem sich bewegenden Punkt beschrieben wird, dann ist die Richtung, in die sich dieser Punkt zu einem bestimmten Zeitpunkt bewegt (der Geschwindigkeitsvektor), genau die Tangente an die Kurve.“
 
@@ -132,7 +132,7 @@ graph LR
     D -->|"Ideologischer Einfluss"| E["Newtons Fluxionsmethode"]
 ```
 
-Diese „kinematische Tangentenmethode“ erwies sich beim Finden von Tangenten für transzendente Kurven (Kurven, die nicht durch algebraische Gleichungen ausgedrückt werden können) wie die Zykloide als enorm wirkungsvoll. Robervals Ansatz, dieses physikalische Konzept der Bewegung in die Mathematik einzubringen, war ein äußerst wichtiger Schritt, der direkt zur grundlegenden Ideologie der später von [Isaac Newton](https://kenji.blog/p/newton/) begründeten „Fluxionsmethode“ (kinematische Infinitesimalrechnung) führte.
+Diese „kinematische Tangentenmethode“ erwies sich beim Finden von Tangenten für transzendente Kurven (Kurven, die nicht durch algebraische Gleichungen ausgedrückt werden können) wie die Zykloide als enorm wirkungsvoll. Robervals Ansatz, dieses physikalische Konzept der Bewegung in die Mathematik einzubringen, war ein äußerst wichtiger Schritt, der direkt zur grundlegenden Ideologie der später von [Isaac Newton](https://kenji.blog/de/p/newton/) begründeten „Fluxionsmethode“ (kinematische Infinitesimalrechnung) führte.
 
 ## 6. Beiträge zur Mechanik: Die Roberval-Waage
 
@@ -154,11 +154,11 @@ Infolgedessen wurde eine Waage mit äußerst hervorragenden praktischen Eigensch
 
 Neben seinem herausragenden Talent soll Roberval ein sehr feuriges Temperament und eine sture Persönlichkeit gehabt haben, die sich weigerte, bei seinen Theorien nachzugeben. Folglich lieferte er sich heftige Kontroversen mit vielen berühmten Gelehrten seiner Zeit.
 
-- **Konflikt mit [René Descartes](https://kenji.blog/p/descartes/)**:
+- **Konflikt mit [René Descartes](https://kenji.blog/de/p/descartes/)**:
   Während Descartes die „analytische Geometrie“ förderte, die die Geometrie mithilfe der Algebra löste, schätzte Roberval rein geometrische und kinematische Methoden. Roberval kritisierte Descartes' Methode als zu künstlich und griff oft Fehler in Descartes' Theorien an. Descartes wiederum blickte auf Roberval als „grob und ungebildet“ herab, und ihre Beziehung blieb ihr Leben lang feindselig.
-- **Freundschaft mit [Pierre de Fermat](https://kenji.blog/p/fermat/)**:
+- **Freundschaft mit [Pierre de Fermat](https://kenji.blog/de/p/fermat/)**:
   Im Gegensatz zu Descartes baute Roberval eine sehr gute Beziehung zu Fermat auf, der in Toulouse lebte. Obwohl sie gegensätzliche Persönlichkeiten hatten, teilten sie mathematische Ideen durch Briefe, die von Mersenne vermittelt wurden, und ergänzten so die Forschung des anderen zu Themen wie den Indivisiblen.
-- **Einfluss auf [Blaise Pascal](https://kenji.blog/p/pascal/)**:
+- **Einfluss auf [Blaise Pascal](https://kenji.blog/de/p/pascal/)**:
   Auch das junge Genie Pascal wurde stark von Roberval beeinflusst. Pascal veröffentlichte später Arbeiten über die Zykloide unter dem Pseudonym „A. Dettonville“, und viele der darin verwendeten Methoden waren verfeinerte Versionen von Robervals Ideen über Indivisible. Roberval schätzte Pascals Talent sehr und unterstützte ihn.
 
 ```mermaid
@@ -182,7 +182,7 @@ graph TD
 
 ## 8. Fazit: Das einsame Genie, das die Brücke zur Infinitesimalrechnung schlug
 
-[Gilles Personne de Roberval](https://kenji.blog/p/roberval/) schöpfte in der Zeit kurz vor der formellen Geburt der Infinitesimalrechnung zwei mächtige Waffen – die Methode der Indivisiblen und den kinematischen Ansatz – voll aus, um nacheinander die schwierigsten mathematischen Probleme seiner Zeit zu lösen.
+[Gilles Personne de Roberval](https://kenji.blog/de/p/roberval/) schöpfte in der Zeit kurz vor der formellen Geburt der Infinitesimalrechnung zwei mächtige Waffen – die Methode der Indivisiblen und den kinematischen Ansatz – voll aus, um nacheinander die schwierigsten mathematischen Probleme seiner Zeit zu lösen.
 
 Als Folge davon, dass er die Veröffentlichung seiner Entdeckungen aus Druck, seine Professur alle drei Jahre verteidigen zu müssen, übermäßig verzögerte, wurden einige seiner Errungenschaften von seinen Zeitgenossen nicht gerecht bewertet, und er wurde manchmal in ungewollte Prioritätsstreitigkeiten verwickelt. Die Saat der mathematischen Ideen, die er säte, verbreitete sich jedoch mit Sicherheit durch Mersennes Netzwerk und Bekannte wie Fermat und Pascal und wurde zu einer starken Brücke, die später zur Gründung der Infinitesimalrechnung durch Newton und Leibniz führte.
 

@@ -37,7 +37,7 @@ graph LR
     A -.->|"Complex Operations"| D
 ```
 
-## 2. Coin Payment Combinations and [Generating Functions](https://kenji.blog/p/generating-functions/)
+## 2. Coin Payment Combinations and [Generating Functions](https://kenji.blog/en/p/generating-functions/)
 
 To intuitively understand the power of generating functions, let's consider the "coin payment" problem.
 
@@ -137,7 +137,7 @@ graph TD
     PF -->|"Power Series Expansion & Coefficient Comparison"| AN["General Term (Binet's Formula)"]
 ```
 
-## 4. Exponential [Generating Functions](https://kenji.blog/p/generating-functions/) and Permutations
+## 4. Exponential [Generating Functions](https://kenji.blog/en/p/generating-functions/) and Permutations
 
 When dealing with combinatorial problems that consider order, meaning "permutations," the **Exponential Generating Function** comes into play.
 

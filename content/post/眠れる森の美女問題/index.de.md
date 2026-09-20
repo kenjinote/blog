@@ -84,9 +84,9 @@ Dies ist eine starke Meinung, die auf dem "Frequentismus" oder dem "Anthropische
 
 ---
 
-## 3. Berechnung mit dem [Satz von Bayes](https://kenji.blog/p/bayes-theorem/)
+## 3. Berechnung mit dem [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/)
 
-Es gibt auch Versuche, dieses Problem mit dem "[Satz von Bayes](https://kenji.blog/p/bayes-theorem/)", einem mathematischen Werkzeug zur Aktualisierung von Wahrscheinlichkeiten, zu lösen.
+Es gibt auch Versuche, dieses Problem mit dem "[Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/)", einem mathematischen Werkzeug zur Aktualisierung von Wahrscheinlichkeiten, zu lösen.
 Lassen Sie uns die Logik der "1/3-Fraktion" unter dem Gesichtspunkt der bedingten Wahrscheinlichkeit ordnen.
 
 Der Zustand beim Aufwachen ist einer der folgenden drei:

@@ -52,11 +52,11 @@ bool is_prime_trial_division(long long n) {
 
 # 2. फर्मेंट टेस्ट: संभाव्य अभाज्य परीक्षण की शुरुआत
 
-परीक्षण विभाजन विधि की सीमाओं को पार करने के लिए, संख्या सिद्धांत के प्रमेयों का उपयोग करके "संभाव्य एल्गोरिदम (Probabilistic Algorithm)" तैयार किए गए थे। इसका एक प्रमुख उदाहरण "फर्मेंट टेस्ट (Fermat Primality Test)" है, जो फर्मेंट के छोटे प्रमेय ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)) का उपयोग करता है।
+परीक्षण विभाजन विधि की सीमाओं को पार करने के लिए, संख्या सिद्धांत के प्रमेयों का उपयोग करके "संभाव्य एल्गोरिदम (Probabilistic Algorithm)" तैयार किए गए थे। इसका एक प्रमुख उदाहरण "फर्मेंट टेस्ट (Fermat Primality Test)" है, जो फर्मेंट के छोटे प्रमेय ([Fermat's Little Theorem](https://kenji.blog/hi/p/fermats-little-theorem/)) का उपयोग करता है।
 
-## [फर्मेंट का छोटा प्रमेय](https://kenji.blog/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))
+## [फर्मेंट का छोटा प्रमेय](https://kenji.blog/hi/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/hi/p/fermats-little-theorem/))
 
-पियरे डी फर्मेंट ([Pierre de Fermat](https://kenji.blog/p/fermat/)) द्वारा खोजा गया यह प्रमेय निम्नलिखित बताता है:
+पियरे डी फर्मेंट ([Pierre de Fermat](https://kenji.blog/hi/p/fermat/)) द्वारा खोजा गया यह प्रमेय निम्नलिखित बताता है:
 
 > किसी भी अभाज्य संख्या $p$ और किसी भी पूर्णांक $a$ जो कि $p$ का गुणज नहीं है (अर्थात् $a$ और $p$ सह-अभाज्य हैं), के लिए निम्नलिखित सर्वांगसमता (congruence) लागू होती है:
 > $$ a^{p-1} \equiv 1 \pmod p $$

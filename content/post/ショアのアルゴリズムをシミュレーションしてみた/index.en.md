@@ -84,7 +84,7 @@ $$ a^r - 1 \equiv 0 \pmod N $$
 If $r$ is even, we can factor it using the difference of squares formula:
 $$ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $$
 
-This means that $N$ shares a common divisor with either $(a^{r/2} - 1)$ or $(a^{r/2} + 1)$ (provided that the condition $a^{r/2} \not\equiv -1 \pmod N$ is met). Therefore, using the [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm to calculate:
+This means that $N$ shares a common divisor with either $(a^{r/2} - 1)$ or $(a^{r/2} + 1)$ (provided that the condition $a^{r/2} \not\equiv -1 \pmod N$ is met). Therefore, using the [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm to calculate:
 
 $$ p = \gcd(a^{r/2} - 1, N) $$
 $$ q = \gcd(a^{r/2} + 1, N) $$

@@ -10,7 +10,7 @@ tags: ["Euler", "Sejarah Matematika", "Jenius", "Fisika"]
 
 ## Pendahuluan
 
-Saat menengok kembali sejarah matematika, sangat mustahil untuk mengabaikan nama **[Leonhard Euler](https://kenji.blog/p/euler/)** (1707–1783). Ia secara luas diakui sebagai salah satu matematikawan paling produktif dan berpengaruh dalam sejarah manusia. Mulai dari kalkulus dan teori bilangan hingga teori graf, mekanika, optik, dan astronomi, pemikirannya yang kritis dan jejak karyanya meluas ke berbagai bidang sains.
+Saat menengok kembali sejarah matematika, sangat mustahil untuk mengabaikan nama **[Leonhard Euler](https://kenji.blog/id/p/euler/)** (1707–1783). Ia secara luas diakui sebagai salah satu matematikawan paling produktif dan berpengaruh dalam sejarah manusia. Mulai dari kalkulus dan teori bilangan hingga teori graf, mekanika, optik, dan astronomi, pemikirannya yang kritis dan jejak karyanya meluas ke berbagai bidang sains.
 
 Dalam artikel ini, kita akan menyelami lebih dalam tentang kehidupan penuh liku si jenius Euler dan pencapaian cemerlang yang ia wariskan untuk generasi mendatang. Hukum dan rumus yang ia temukan membentuk fondasi sains dan teknologi masa kini, menjadikan karyanya sangat relevan bagi kita yang hidup di dunia modern.
 
@@ -72,9 +72,9 @@ $$
 
 Berkat penemuan ini, ia langsung menarik perhatian seluruh Eropa.
 
-### 4.2 [Tujuh Jembatan Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)
+### 4.2 [Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/)
 
-Pada tahun 1736, Euler memecahkan teka-teki yang dikenal sebagai "[Tujuh Jembatan Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)". Pertanyaannya adalah: "Apakah mungkin berjalan melewati ketujuh jembatan di atas Sungai Pregel tepat satu kali dan kembali ke titik awal?"
+Pada tahun 1736, Euler memecahkan teka-teki yang dikenal sebagai "[Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/)". Pertanyaannya adalah: "Apakah mungkin berjalan melewati ketujuh jembatan di atas Sungai Pregel tepat satu kali dan kembali ke titik awal?"
 
 Euler memodelkan masalah ini sebagai jaringan abstrak, menganggap daratan sebagai "titik" (node) dan jembatan sebagai "garis" (edge).
 
@@ -133,6 +133,6 @@ Dalam buku pelajaran matematika yang kita pelajari hari ini, jejak Euler terasa 
 
 ## Kesimpulan
 
-[Leonhard Euler](https://kenji.blog/p/euler/) bukan hanya seorang jenius dalam berhitung; ia memiliki intuisi dan wawasan yang luar biasa, memungkinkan dirinya memecahkan struktur-struktur esensial dari fenomena rumit dan mengungkapkannya dalam rumus dan konsep yang indah.
+[Leonhard Euler](https://kenji.blog/id/p/euler/) bukan hanya seorang jenius dalam berhitung; ia memiliki intuisi dan wawasan yang luar biasa, memungkinkan dirinya memecahkan struktur-struktur esensial dari fenomena rumit dan mengungkapkannya dalam rumus dan konsep yang indah.
 
 Bahkan dalam kondisi putus asa saat ia kehilangan penglihatannya, Euler tidak pernah kehilangan hasratnya terhadap matematika, ia terus menjelajahi alam semesta pemikirannya dengan ingatan dan konsentrasi yang luar biasa. Rumus dan teorema indah yang ia tinggalkan akan selamanya bersinar sebagai kekayaan intelektual umat manusia. Hidupnya mengajarkan kita betapa hebat dan mulianya jiwa manusia.

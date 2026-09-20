@@ -138,7 +138,7 @@ Für jedes zusätzliche Bit (was einer Verdoppelung des Zahlenwertes entspricht)
 
 ## 2. Fermats Faktorisierungsmethode (Fermat's Factorization Method)
 
-Dies ist eine Methode, die von dem Mathematiker [Pierre de Fermat](https://kenji.blog/p/fermat/) im 17. Jahrhundert entwickelt wurde. Gegeben eine ungerade zusammengesetzte Zahl $N$, versucht die Methode, $N$ als Differenz zweier Quadratzahlen darzustellen.
+Dies ist eine Methode, die von dem Mathematiker [Pierre de Fermat](https://kenji.blog/de/p/fermat/) im 17. Jahrhundert entwickelt wurde. Gegeben eine ungerade zusammengesetzte Zahl $N$, versucht die Methode, $N$ als Differenz zweier Quadratzahlen darzustellen.
 
 $$ N = x^2 - y^2 = (x - y)(x + y) $$
 

@@ -8,7 +8,7 @@ categories: ["mathématiques"]
 tags: ["algèbre", "théorie des groupes", "théorie des anneaux", "théorie des corps"]
 ---
 
-# [Groupes, Anneaux et Corps](https://kenji.blog/p/groups-rings-and-fields/) : La Beauté de la « Structure » Décrite par l'Algèbre Moderne
+# [Groupes, Anneaux et Corps](https://kenji.blog/fr/p/groups-rings-and-fields/) : La Beauté de la « Structure » Décrite par l'Algèbre Moderne
 
 Pour beaucoup d'entre nous, les « mathématiques » que nous apprenons à l'école sont un monde d'addition et de multiplication, c'est-à-dire les « quatre opérations fondamentales ». Les calculs tels que $1 + 1 = 2$ et $3 \times 4 = 12$ sont utiles pour décrire le monde réel.
 
@@ -111,7 +111,7 @@ flowchart TD
 
 ---
 
-## 8. [Théorie de Galois](https://kenji.blog/p/galois-theory/)
+## 8. [Théorie de Galois](https://kenji.blog/fr/p/galois-theory/)
 
 Lien magnifique entre les équations algébriques et la théorie des groupes.
 

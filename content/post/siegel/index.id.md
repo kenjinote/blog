@@ -8,9 +8,9 @@ categories: ["mathematics", "biography"]
 tags: ["Siegel", "teori bilangan", "matematikawan", "mekanika benda langit", "teori bilangan analitik", "persamaan Diophantine"]
 ---
 
-## 1. Pendahuluan: Siapakah [Carl Ludwig Siegel](https://kenji.blog/p/siegel/)?
+## 1. Pendahuluan: Siapakah [Carl Ludwig Siegel](https://kenji.blog/id/p/siegel/)?
 
-[Carl Ludwig Siegel](https://kenji.blog/p/siegel/) (31 Desember 1896 – 4 April 1981) adalah salah satu matematikawan Jerman paling menonjol pada abad ke-20, yang meninggalkan warisan luar biasa di dunia matematika. Penelitiannya terutama difokuskan pada teori bilangan (teori bilangan analitik dan aljabar), persamaan Diophantine, aproksimasi Diophantine, dan mekanika benda langit (sistem dinamis kompleks). Pencapaiannya terus menempati posisi yang sangat penting dalam matematika modern.
+[Carl Ludwig Siegel](https://kenji.blog/id/p/siegel/) (31 Desember 1896 – 4 April 1981) adalah salah satu matematikawan Jerman paling menonjol pada abad ke-20, yang meninggalkan warisan luar biasa di dunia matematika. Penelitiannya terutama difokuskan pada teori bilangan (teori bilangan analitik dan aljabar), persamaan Diophantine, aproksimasi Diophantine, dan mekanika benda langit (sistem dinamis kompleks). Pencapaiannya terus menempati posisi yang sangat penting dalam matematika modern.
 
 Siegel terkenal karena kemampuan komputasinya yang menakjubkan, wawasannya yang mendalam, dan kemampuannya untuk menguasai teknik analitik kompleks dengan luar biasa. Dalam lanskap matematika abad ke-20 yang bergerak cepat menuju abstraksi dan aksiomatisasi, ia sangat menghargai pemecahan masalah konkret dan penyempurnaan metode klasik di atas segalanya, dengan mempertahankan gaya yang sangat independen. Ia juga terkenal karena kritik tajamnya terhadap abstraksi ekstrem yang dipromosikan oleh kelompok matematika Prancis, Bourbaki. Artikel ini menggali secara mendalam pencapaian matematikanya yang luar biasa bersama dengan episode-episode dari kehidupannya yang penuh gejolak.
 
@@ -20,7 +20,7 @@ Siegel terkenal karena kemampuan komputasinya yang menakjubkan, wawasannya yang 
 
 Siegel lahir pada tahun 1896 di Berlin, Kekaisaran Jerman. Menunjukkan bakat luar biasa dalam matematika dan sains sejak usia muda, ia masuk ke Universitas Humboldt Berlin (Universitas Berlin) pada tahun 1915. Di sana, ia beruntung dapat belajar dari beberapa cendekiawan terbesar pada era tersebut, termasuk fisikawan Max Planck dan pakar aljabar serta teori grup, Ferdinand Georg Frobenius. Awalnya, Siegel juga tertarik pada astronomi dan fisika, namun kuliah-kuliah Frobenius yang penuh semangat memicu ketertarikan mendalam pada teori bilangan, yang menjadi katalisator penentu baginya untuk meniti jalan di bidang matematika.
 
-Namun, pecahnya Perang Dunia I memaksanya untuk menghentikan studinya. Pada tahun 1917, Siegel wajib militer, namun ia menolak untuk bertugas karena sentimen anti-perangnya yang kuat dan keyakinan pribadinya. Pada saat itu, menolak wajib militer adalah kejahatan serius di Jerman, dan ia menanggung penderitaan berat dengan dikurung di rumah sakit jiwa. Ia diselamatkan dari situasi putus asa ini oleh matematikawan terkemuka Edmund Landau. Dibebaskan berkat upaya Landau, Siegel pindah ke Universitas Göttingen pada tahun 1917. Göttingen pada saat itu adalah kiblat matematika global, rumah bagi raksasa seperti [David Hilbert](https://kenji.blog/p/hilbert/) dan Felix Klein. Di lingkungan ini, Siegel berkembang dan membiarkan bakat-bakatnya benar-benar mekar.
+Namun, pecahnya Perang Dunia I memaksanya untuk menghentikan studinya. Pada tahun 1917, Siegel wajib militer, namun ia menolak untuk bertugas karena sentimen anti-perangnya yang kuat dan keyakinan pribadinya. Pada saat itu, menolak wajib militer adalah kejahatan serius di Jerman, dan ia menanggung penderitaan berat dengan dikurung di rumah sakit jiwa. Ia diselamatkan dari situasi putus asa ini oleh matematikawan terkemuka Edmund Landau. Dibebaskan berkat upaya Landau, Siegel pindah ke Universitas Göttingen pada tahun 1917. Göttingen pada saat itu adalah kiblat matematika global, rumah bagi raksasa seperti [David Hilbert](https://kenji.blog/id/p/hilbert/) dan Felix Klein. Di lingkungan ini, Siegel berkembang dan membiarkan bakat-bakatnya benar-benar mekar.
 
 ```mermaid
 graph TD
@@ -46,7 +46,7 @@ Di Amerika Serikat, ia disambut di Institute for Advanced Study (IAS) di Princet
 
 Setelah berakhirnya Perang Dunia II, Siegel memilih untuk tidak menetap secara permanen di Amerika Serikat, dan mengambil keputusan penting untuk kembali ke tanah airnya, Jerman, pada tahun 1951. Ia kembali sebagai profesor ke Universitas Göttingen, tempat ia pernah belajar, dan mendedikasikan dirinya untuk membangun kembali komunitas matematika Jerman yang telah hancur oleh perang. Ia melanjutkan aktivitas penelitiannya yang penuh semangat dan melatih banyak penerus yang luar biasa. Kuliahnya ketat dan jernih, yang membuatnya mendapatkan rasa hormat yang mendalam dari murid-muridnya.
 
-Pada tahun 1978, sebagai pengakuan atas pencapaian seumur hidupnya yang luar biasa, ia secara bersama-sama dianugerahi Penghargaan Wolf dalam Matematika yang pertama, salah satu penghargaan tertinggi di dunia matematika, bersama dengan Israel Gelfand. Pada 4 April 1981, [Carl Ludwig Siegel](https://kenji.blog/p/siegel/) wafat di Göttingen, menutup kehidupannya yang penuh peristiwa selama 84 tahun.
+Pada tahun 1978, sebagai pengakuan atas pencapaian seumur hidupnya yang luar biasa, ia secara bersama-sama dianugerahi Penghargaan Wolf dalam Matematika yang pertama, salah satu penghargaan tertinggi di dunia matematika, bersama dengan Israel Gelfand. Pada 4 April 1981, [Carl Ludwig Siegel](https://kenji.blog/id/p/siegel/) wafat di Göttingen, menutup kehidupannya yang penuh peristiwa selama 84 tahun.
 
 ## 3. Pencapaian Matematika yang Luar Biasa
 
@@ -64,7 +64,7 @@ $$
 
 Sebagai contoh, meskipun mungkin terdapat tak terhingga banyak solusi real atau rasional untuk kurva eliptik (genus $g=1$) seperti $x^3 + y^3 = c$ (di mana $c$ adalah bilangan bulat bukan nol), teorema ini menjamin bahwa jika dibatasi pada **solusi integral**, maka akan selalu ada jumlah yang berhingga.
 
-Hasil ini merupakan terobosan mengenai keterhinggaan solusi persamaan Diophantine dan menjadi langkah sejarah yang krusial yang membuka jalan bagi pembuktian selanjutnya dari teorema Mordell-Weil (keterhinggaan titik-titik rasional pada kurva dengan genus 2 atau lebih tinggi) oleh [Gerd Faltings](https://kenji.blog/p/faltings/). Siegel menurunkan hasil yang mencengangkan ini dengan memperluas secara signifikan teorema Axel Thue tentang aproksimasi Diophantine dan menggabungkannya dengan teori Jacobian pada varietas Abelian.
+Hasil ini merupakan terobosan mengenai keterhinggaan solusi persamaan Diophantine dan menjadi langkah sejarah yang krusial yang membuka jalan bagi pembuktian selanjutnya dari teorema Mordell-Weil (keterhinggaan titik-titik rasional pada kurva dengan genus 2 atau lebih tinggi) oleh [Gerd Faltings](https://kenji.blog/id/p/faltings/). Siegel menurunkan hasil yang mencengangkan ini dengan memperluas secara signifikan teorema Axel Thue tentang aproksimasi Diophantine dan menggabungkannya dengan teori Jacobian pada varietas Abelian.
 
 ### 3.2 Nol Siegel (Siegel Zero)
 
@@ -107,11 +107,11 @@ Di bidang teori bilangan transenden juga, ia membuktikan teorema yang sangat kua
 
 Penegasan dari teorema ini adalah sebagai berikut: "Dalam sistem persamaan linear simultan di mana koefisiennya adalah bilangan bulat, jika jumlah variabel yang tidak diketahui $N$ cukup lebih besar dari jumlah persamaan $M$ ( $N > M$ ), maka selalu ada solusi bilangan bulat tak-trivial di mana nilai absolut dari setiap komponen relatif kecil (dibatasi di atas secara tepat sesuai dengan ukuran koefisiennya)."
 
-Memiliki pembuktian elegan dengan menggunakan prinsip sarang burung merpati (prinsip kotak Dirichlet), lema ini sering digunakan sebagai alat dasar yang sangat diperlukan dalam teori transendensi modern, seperti dalam konstruksi bilangan transenden, aproksimasi Diophantine, dan kemudian dalam teori [Alan Baker](https://kenji.blog/p/baker/) mengenai bentuk linear dalam logaritma.
+Memiliki pembuktian elegan dengan menggunakan prinsip sarang burung merpati (prinsip kotak Dirichlet), lema ini sering digunakan sebagai alat dasar yang sangat diperlukan dalam teori transendensi modern, seperti dalam konstruksi bilangan transenden, aproksimasi Diophantine, dan kemudian dalam teori [Alan Baker](https://kenji.blog/id/p/baker/) mengenai bentuk linear dalam logaritma.
 
 ### 3.5 Mekanika Benda Langit dan Masalah Pembagi Kecil
 
-Siegel tidak membatasi dirinya pada matematika murni; ia menyala dengan obsesi yang luar biasa terhadap mekanika benda langit, terutama masalah tiga benda, yang menggambarkan gerak sistem banyak benda. Ia mengembangkan studi sistem dinamis yang dirintis oleh [Henri Poincaré](https://kenji.blog/p/poincare/) dan meninggalkan hasil terobosan mengenai stabilitas solusi persamaan diferensial.
+Siegel tidak membatasi dirinya pada matematika murni; ia menyala dengan obsesi yang luar biasa terhadap mekanika benda langit, terutama masalah tiga benda, yang menggambarkan gerak sistem banyak benda. Ia mengembangkan studi sistem dinamis yang dirintis oleh [Henri Poincaré](https://kenji.blog/id/p/poincare/) dan meninggalkan hasil terobosan mengenai stabilitas solusi persamaan diferensial.
 
 Pada tahun 1941, ia membuktikan "teorema pusat Siegel" dalam mekanika analitik dan sistem dinamis kompleks. Hal ini memecahkan pertanyaan kapan fungsi holomorfik dapat dilinearisasi di sekitar titik tetapnya di bidang kompleks. Dalam ekspansi Taylor dari fungsi tersebut, jika $\lambda$ mewakili nilai turunan, ketika $\lambda$ mengambil nilai yang mendekati akar persatuan, nilai yang sangat kecil muncul di penyebut, yang menyebabkan deret menjadi divergen—sebuah fenomena yang dikenal sebagai "masalah pembagi kecil" (small divisor problem).
 
@@ -135,7 +135,7 @@ Karena keyakinan yang kuat ini, makalah-makalahnya sangat berharga untuk dibaca;
 
 ## 5. Kesimpulan dan Warisan Siegel
 
-Melalui bakat analitiknya yang tak tertandingi dan rasa hormat yang mendalam terhadap matematika klasik, [Carl Ludwig Siegel](https://kenji.blog/p/siegel/) meninggalkan pencapaian yang menentukan dan mengubah zaman dalam teori bilangan, geometri Diophantine, dan mekanika benda langit.
+Melalui bakat analitiknya yang tak tertandingi dan rasa hormat yang mendalam terhadap matematika klasik, [Carl Ludwig Siegel](https://kenji.blog/id/p/siegel/) meninggalkan pencapaian yang menentukan dan mengubah zaman dalam teori bilangan, geometri Diophantine, dan mekanika benda langit.
 
 Berbagai konsep dan teorema yang menyandang namanya, seperti nol Siegel, teorema Siegel, bentuk modular Siegel, dan lema Siegel, telah menjadi bahasa umum yang digunakan setiap hari oleh matematikawan modern, berfungsi sebagai landasan yang sangat diperlukan bahkan dalam penelitian mutakhir yang sedang berlangsung.
 

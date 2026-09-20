@@ -74,7 +74,7 @@ graph TD
 
 ## Stationäre Verteilung: Langzeitverhalten
 
-Wenn eine Markow-Kette über einen langen Zeitraum ( $n \to \infty$ ) beobachtet wird, was passiert dann mit der Wahrscheinlichkeitsverteilung der Zustände? Bei vielen [Markow-Ketten](https://kenji.blog/p/markov-chain/) konvergiert sie unabhängig vom Anfangszustand gegen eine bestimmte Wahrscheinlichkeitsverteilung. Dies wird als **stationäre Verteilung** bezeichnet.
+Wenn eine Markow-Kette über einen langen Zeitraum ( $n \to \infty$ ) beobachtet wird, was passiert dann mit der Wahrscheinlichkeitsverteilung der Zustände? Bei vielen [Markow-Ketten](https://kenji.blog/de/p/markov-chain/) konvergiert sie unabhängig vom Anfangszustand gegen eine bestimmte Wahrscheinlichkeitsverteilung. Dies wird als **stationäre Verteilung** bezeichnet.
 
 Angenommen, der Wahrscheinlichkeitsvektor ist $\pi$, dann erfüllt die stationäre Verteilung die folgende Gleichung:
 
@@ -98,9 +98,9 @@ Das Lösen des Gleichungssystems ergibt Folgendes:
 
 Das Auflösen ergibt $\pi_{\text{Sonnig}} = \frac{4}{7} \approx 0.57$ und $\pi_{\text{Regnerisch}} = \frac{3}{7} \approx 0.43$. Mit anderen Worten, langfristig besteht eine Wahrscheinlichkeit von etwa 57%, dass es sonnig ist, und eine Wahrscheinlichkeit von 43%, dass es regnet.
 
-## Anwendungen von [Markow-Ketten](https://kenji.blog/p/markov-chain/)
+## Anwendungen von [Markow-Ketten](https://kenji.blog/de/p/markov-chain/)
 
-[Markow-Ketten](https://kenji.blog/p/markov-chain/) sind nicht auf die Welt der Mathematik beschränkt; sie werden in verschiedenen realen Systemen angewendet.
+[Markow-Ketten](https://kenji.blog/de/p/markov-chain/) sind nicht auf die Welt der Mathematik beschränkt; sie werden in verschiedenen realen Systemen angewendet.
 
 ### 1. PageRank-Algorithmus von Google
 Durch die Behandlung von Webseiten im Internet als Zustände und den Vorgang des Verfolgens von Links als Wahrscheinlichkeitsübergänge wird die Wichtigkeit von Seiten berechnet. Man kann sagen, dass PageRank eine stationäre Verteilung im riesigen Zustandsraum des Internets sucht.
@@ -113,6 +113,6 @@ Die Modellierung von Aktienkursschwankungen und der Markenmigration von Verbrauc
 
 ## Fazit
 
-[Markow-Ketten](https://kenji.blog/p/markov-chain/) basieren auf der einfachen, aber mächtigen Annahme, dass "Zukunftsvorhersagen möglich sind, solange aktuelle Informationen verfügbar sind". Aufgrund dieser **Markow-Eigenschaft** können komplex erscheinende Phänomene als Übergangswahrscheinlichkeitsmatrix formuliert und langfristige Trends (stationäre Verteilungen) mathematisch abgeleitet werden.
+[Markow-Ketten](https://kenji.blog/de/p/markov-chain/) basieren auf der einfachen, aber mächtigen Annahme, dass "Zukunftsvorhersagen möglich sind, solange aktuelle Informationen verfügbar sind". Aufgrund dieser **Markow-Eigenschaft** können komplex erscheinende Phänomene als Übergangswahrscheinlichkeitsmatrix formuliert und langfristige Trends (stationäre Verteilungen) mathematisch abgeleitet werden.
 
 Mit breiten Anwendungen, die vom Information Retrieval über KI bis hin zu Wirtschaftsprognosen reichen, ist die Markow-Kette neben ihrer theoretischen Schönheit zweifellos eine der wichtigsten Linsen zur Entschlüsselung einer unsicheren Welt.

@@ -14,13 +14,13 @@ tags:
 
 ## Introducción
 
-En la rama de las matemáticas llamada topología, existen numerosos teoremas que son tanto intuitivamente fascinantes como poderosos. Entre ellos, destaca especialmente el **Teorema de la bola peluda** ([Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/)). Este teorema se expresa de manera muy visual y comprensible: "no puedes peinar una bola peluda de forma que el pelo quede plano sin crear al menos un remolino".
+En la rama de las matemáticas llamada topología, existen numerosos teoremas que son tanto intuitivamente fascinantes como poderosos. Entre ellos, destaca especialmente el **Teorema de la bola peluda** ([Hairy Ball Theorem](https://kenji.blog/es/p/hairy-ball-theorem/)). Este teorema se expresa de manera muy visual y comprensible: "no puedes peinar una bola peluda de forma que el pelo quede plano sin crear al menos un remolino".
 
 Sin embargo, detrás de esto se esconde un profundo significado matemático que afecta desde el clima de la Tierra hasta los gráficos por computadora e incluso las leyes fundamentales de la física. En este artículo, explicaremos detalladamente desde el significado intuitivo de este teorema hasta su formulación matemática y sorprendentes ejemplos de aplicación.
 
 ## ¿Qué es el Teorema de la bola peluda?
 
-El teorema de la bola peluda fue mencionado por primera vez por [Henri Poincaré](https://kenji.blog/p/poincare/) en 1885 y probado rigurosamente en 1912 por Luitzen Egbertus Jan Brouwer.
+El teorema de la bola peluda fue mencionado por primera vez por [Henri Poincaré](https://kenji.blog/es/p/poincare/) en 1885 y probado rigurosamente en 1912 por Luitzen Egbertus Jan Brouwer.
 
 ### Comprensión intuitiva
 

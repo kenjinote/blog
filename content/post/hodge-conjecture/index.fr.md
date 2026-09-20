@@ -10,7 +10,7 @@ tags: ["Problèmes du prix du millénaire", "Topologie", "Géométrie algébriqu
 
 # Introduction
 
-Dans le monde des mathématiques, il existe encore de nombreux mystères non résolus. Parmi eux, les **problèmes du prix du millénaire** (Millennium Prize Problems) se dressent comme un mur majeur des mathématiques modernes. Chacun des sept problèmes non résolus annoncés par l'Institut de mathématiques Clay en 2000 est doté d'un prix d'un million de dollars, et les mathématiciens de génie du monde entier tentent de les résoudre. Dans cet article, nous allons plonger profondément dans la **conjecture de Hodge** ([Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/)), une conjecture extrêmement belle qui relie la géométrie algébrique et la topologie, parmi ces problèmes du prix du millénaire.
+Dans le monde des mathématiques, il existe encore de nombreux mystères non résolus. Parmi eux, les **problèmes du prix du millénaire** (Millennium Prize Problems) se dressent comme un mur majeur des mathématiques modernes. Chacun des sept problèmes non résolus annoncés par l'Institut de mathématiques Clay en 2000 est doté d'un prix d'un million de dollars, et les mathématiciens de génie du monde entier tentent de les résoudre. Dans cet article, nous allons plonger profondément dans la **conjecture de Hodge** ([Hodge Conjecture](https://kenji.blog/fr/p/hodge-conjecture/)), une conjecture extrêmement belle qui relie la géométrie algébrique et la topologie, parmi ces problèmes du prix du millénaire.
 
 En un mot, la conjecture de Hodge est une conjecture concernant la relation profonde entre les « formes géométriques » et les « équations algébriques ». Plus précisément, elle demande si des objets ayant des propriétés topologiques spécifiques dans des variétés algébriques projectives non singulières sur le corps des nombres complexes peuvent être représentés par des combinaisons de sous-variétés algébriques.
 
@@ -68,7 +68,7 @@ sont appelées **classes de Hodge** (Hodge Class).
 
 Nous sommes maintenant prêts. L'énoncé de la conjecture de Hodge est étonnamment puissant tout en étant très simple.
 
-> **Conjecture de Hodge ([Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/))**
+> **Conjecture de Hodge ([Hodge Conjecture](https://kenji.blog/fr/p/hodge-conjecture/))**
 > Toute classe de Hodge sur une variété algébrique projective non singulière X sur le corps des nombres complexes est représentée par une combinaison linéaire à coefficients rationnels de cycles algébriques.
 
 En d'autres termes, elle affirme que « les classes de cohomologie (classes de Hodge) qui semblent provenir de la géométrie algébrique du point de vue de la topologie et de l'analyse complexe proviennent en réalité de figures construites à partir d'équations algébriques (cycles algébriques) ».
@@ -106,7 +106,7 @@ Une méthode générale pour reconstruire des équations algébriques spécifiqu
 
 Il existe diverses généralisations et conjectures liées à la conjecture de Hodge.
 
-- **Conjecture de Hodge généralisée (Generalized [Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/))** : Il s'agit d'une tentative d'étendre la conjecture de Hodge à un cadre plus général (par exemple, des variétés avec des singularités, ou des variétés ouvertes). Bien qu'elle ait été formulée par [Alexander Grothendieck](https://kenji.blog/p/grothendieck/) et d'autres, la formulation appropriée elle-même est devenue une tâche difficile, des contre-exemples ayant été trouvés.
+- **Conjecture de Hodge généralisée (Generalized [Hodge Conjecture](https://kenji.blog/fr/p/hodge-conjecture/))** : Il s'agit d'une tentative d'étendre la conjecture de Hodge à un cadre plus général (par exemple, des variétés avec des singularités, ou des variétés ouvertes). Bien qu'elle ait été formulée par [Alexander Grothendieck](https://kenji.blog/fr/p/grothendieck/) et d'autres, la formulation appropriée elle-même est devenue une tâche difficile, des contre-exemples ayant été trouvés.
 - **Conjecture de Tate (Tate Conjecture)** : Connue comme l'analogue arithmétique de la conjecture de Hodge, c'est la conjecture de Tate. Elle est formulée en utilisant le concept de cohomologie étale (Étale Cohomology) non pas pour les variétés sur le corps des nombres complexes, mais pour les variétés sur des corps finis. C'est également un problème non résolu extrêmement difficile.
 
 ## 6. Conclusion et perspectives d'avenir
@@ -145,7 +145,7 @@ La conjecture de Hodge n'est pas un problème isolé et est profondément liée 
 
 ### 8.1 Conjectures standard de Grothendieck (Grothendieck's Standard Conjectures)
 
-[Alexander Grothendieck](https://kenji.blog/p/grothendieck/) a formulé une série de conjectures grandioses sur les cycles algébriques sur les variétés algébriques. Ce sont les **conjectures standard** (Standard Conjectures on Algebraic Cycles).
+[Alexander Grothendieck](https://kenji.blog/fr/p/grothendieck/) a formulé une série de conjectures grandioses sur les cycles algébriques sur les variétés algébriques. Ce sont les **conjectures standard** (Standard Conjectures on Algebraic Cycles).
 
 Les conjectures standard incluent la théorie de l'intersection des cycles algébriques et la généralisation du théorème de Lefschetz à n'importe quelle dimension. Si la conjecture de Hodge est vraie, on pense qu'une partie des conjectures standard s'ensuivra pour les variétés sur le corps des nombres complexes. À l'inverse, si les conjectures standard sont résolues, elles fourniront un moyen puissant pour la conjecture de Hodge. Ce sont des pièces indispensables pour achever la "théorie des motifs" (Theory of Motives), qui est le but ultime de la géométrie algébrique.
 

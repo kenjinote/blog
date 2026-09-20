@@ -19,7 +19,7 @@ tags: ["Math", "Algorithms", "Python", "C++"]
 
 ---
 
-## 1. [Тождество Эйлера ([Euler's Identity](https://kenji.blog/p/eulers-identity/))](https://kenji.blog/p/eulers-identity/)
+## 1. [Тождество Эйлера ([Euler's Identity](https://kenji.blog/ru/p/eulers-identity/))](https://kenji.blog/p/eulers-identity/)
 
 ### Красота формулы и обзор
 Тождество Эйлера называют «сокровищем человечества» и «самой красивой математической формулой в мире». Пять самых важных констант в математике (число Непера $e$, мнимая единица $i$, число пи $\pi$, нейтральный элемент по умножению $1$ и нейтральный элемент по сложению $0$) объединены в одной простой формуле.
@@ -132,10 +132,10 @@ print(f"Taylor series sin: {taylor_sin(angle, terms=5)}")
 
 ---
 
-## 3. [Теорема Байеса](https://kenji.blog/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/p/bayes-theorem/))
+## 3. [Теорема Байеса](https://kenji.blog/ru/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/ru/p/bayes-theorem/))
 
 ### Красота формулы и обзор
-[Теорема Байеса](https://kenji.blog/p/bayes-theorem/) — это теорема для обновления вероятности события (апостериорной вероятности) на основе предварительных знаний (априорной вероятности), связанных с этим событием. Это одна из самых важных формул в теории вероятностей и статистике.
+[Теорема Байеса](https://kenji.blog/ru/p/bayes-theorem/) — это теорема для обновления вероятности события (апостериорной вероятности) на основе предварительных знаний (априорной вероятности), связанных с этим событием. Это одна из самых важных формул в теории вероятностей и статистике.
 
 $$ P(A|B) = \frac{P(B|A)P(A)}{P(B)} $$
 
@@ -559,12 +559,12 @@ for val, prob in zip(logits, probabilities):
 
 ---
 
-## 10. [Евклид](https://kenji.blog/p/euclid/)ово расстояние и теорема Пифагора ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. [Евклид](https://kenji.blog/ru/p/euclid/)ово расстояние и теорема Пифагора ([[Euclid](https://kenji.blog/ru/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### Красота формулы и обзор
 Это основа геометрии со времен Древней Греции и формула, определяющая прямолинейное расстояние между двумя точками в $n$-мерном пространстве. В двумерном пространстве это сама теорема Пифагора ($a^2 + b^2 = c^2$).
 
-[Евклид](https://kenji.blog/p/euclid/)ово расстояние $d$ между точкой $P(x_1, y_1, z_1)$ и $Q(x_2, y_2, z_2)$ в трехмерном пространстве выражается следующим образом:
+[Евклид](https://kenji.blog/ru/p/euclid/)ово расстояние $d$ между точкой $P(x_1, y_1, z_1)$ и $Q(x_2, y_2, z_2)$ в трехмерном пространстве выражается следующим образом:
 
 $$ d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2} $$
 

@@ -12,7 +12,7 @@ tags: ["ABC Conjecture", "Number Theory", "IUT Theory", "Shinichi Mochizuki"]
 
 In the field of number theory, there are many unsolved problems, but one of the most highly regarded among them is the **ABC Conjecture**. This conjecture was independently formulated in 1985 by Joseph Oesterlé and David Masser.
 
-[The ABC Conjecture](https://kenji.blog/p/abc-conjecture/) suggests a deep relationship between the addition and multiplication (prime factorization) of integers. It describes surprising properties hidden in the seemingly simple equation $a + b = c$.
+[The ABC Conjecture](https://kenji.blog/en/p/abc-conjecture/) suggests a deep relationship between the addition and multiplication (prime factorization) of integers. It describes surprising properties hidden in the seemingly simple equation $a + b = c$.
 
 ## Rigorous Definition of the ABC Conjecture
 
@@ -20,7 +20,7 @@ Consider a tuple of coprime positive integers $(a, b, c)$ that satisfies $a + b 
 
 $$ \text{rad}(n) = \prod_{p | n} p $$
 
-[The ABC Conjecture](https://kenji.blog/p/abc-conjecture/) claims that for any $\epsilon > 0$, there are only finitely many tuples of coprime positive integers $(a, b, c)$ that satisfy the following:
+[The ABC Conjecture](https://kenji.blog/en/p/abc-conjecture/) claims that for any $\epsilon > 0$, there are only finitely many tuples of coprime positive integers $(a, b, c)$ that satisfy the following:
 
 $$ c > \text{rad}(abc)^{1 + \epsilon} $$
 
@@ -55,13 +55,13 @@ The Theta-link ($\Theta$-link) plays the role of transmitting specific monodromy
 
 # Astounding Consequences Derived from the ABC Conjecture
 
-If the ABC Conjecture is completely proven (whether by IUT Theory or other methods), many important theorems in number theory would be derived all at once. Let us compare this with the **Mordell Conjecture** (now known as Faltings's theorem) and **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)**.
+If the ABC Conjecture is completely proven (whether by IUT Theory or other methods), many important theorems in number theory would be derived all at once. Let us compare this with the **Mordell Conjecture** (now known as Faltings's theorem) and **[Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)**.
 
-## Application to [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)
+## Application to [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)
 
-[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) states that for $n \ge 3$, there are no tuples of positive integers $(x, y, z)$ that satisfy $x^n + y^n = z^n$. It was proven by [Andrew Wiles](https://kenji.blog/p/wiles/) in 1995, but it involved very advanced and complex mathematics.
+[Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) states that for $n \ge 3$, there are no tuples of positive integers $(x, y, z)$ that satisfy $x^n + y^n = z^n$. It was proven by [Andrew Wiles](https://kenji.blog/en/p/wiles/) in 1995, but it involved very advanced and complex mathematics.
 
-If we assume the ABC Conjecture is correct, surprisingly, [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) (at least when $n$ is sufficiently large) can be proven in just a few lines.
+If we assume the ABC Conjecture is correct, surprisingly, [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) (at least when $n$ is sufficiently large) can be proven in just a few lines.
 
 Let $x^n + y^n = z^n$, and assume $(x, y, z)$ are coprime. Applying the ABC Conjecture to $a=x^n$, $b=y^n$, $c=z^n$:
 
@@ -92,6 +92,6 @@ In 2021, Professor Mochizuki's papers were officially published in "PRIMS," a sp
 
 # Conclusion and Future Outlook
 
-[The ABC Conjecture](https://kenji.blog/p/abc-conjecture/) and Inter-Universal Teichmüller Theory constitute one of the greatest dramas in 21st-century mathematics. The bottomless depth of addition and multiplication, the simplest concepts learned in elementary school, is right now testing the limits of human intelligence.
+[The ABC Conjecture](https://kenji.blog/en/p/abc-conjecture/) and Inter-Universal Teichmüller Theory constitute one of the greatest dramas in 21st-century mathematics. The bottomless depth of addition and multiplication, the simplest concepts learned in elementary school, is right now testing the limits of human intelligence.
 
 Whether IUT Theory truly opens up a new horizon in mathematics or requires further modifications, it will likely take much more time and research by a new generation of mathematicians before a final conclusion is reached. However, the vision proposed by this theory of **connecting different mathematical universes** will undoubtedly continue to provide great inspiration for the future development of mathematics.

@@ -30,7 +30,7 @@ Pernyataan ini bukan sekadar puitis; ia didukung oleh keyakinannya yang kuat pad
 
 Kronecker lahir pada tahun 1823 di sebuah keluarga Yahudi yang kaya raya di Liegnitz, Prusia (sekarang Legnica, Polandia). Menunjukkan kecerdasan yang luar biasa sejak usia muda, ia mendaftar di Gymnasium (sekolah menengah lanjutan) setempat.
 
-Di sinilah pertemuan yang menentukan terjadi. Seorang guru baru tiba di Gymnasium— **[Ernst Kummer](https://kenji.blog/p/kummer/)** , yang nantinya akan menjadi pelopor teori ideal. Kummer segera mengenali bakat Kronecker dan memberinya instruksi matematika tingkat lanjut yang disesuaikan secara khusus.
+Di sinilah pertemuan yang menentukan terjadi. Seorang guru baru tiba di Gymnasium— **[Ernst Kummer](https://kenji.blog/id/p/kummer/)** , yang nantinya akan menjadi pelopor teori ideal. Kummer segera mengenali bakat Kronecker dan memberinya instruksi matematika tingkat lanjut yang disesuaikan secara khusus.
 
 ```mermaid
 graph TD
@@ -42,7 +42,7 @@ graph TD
 
 ## 2.2. Akademisi dan Kesuksesan sebagai Pengusaha
 
-Pada tahun 1841, Kronecker masuk ke Universitas Berlin, belajar di bawah bimbingan matematikawan papan atas seperti Peter Gustav Lejeune Dirichlet dan [Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/). Pada tahun 1845, ia memperoleh gelar doktornya dengan tesis yang luar biasa mengenai teori bilangan aljabar.
+Pada tahun 1841, Kronecker masuk ke Universitas Berlin, belajar di bawah bimbingan matematikawan papan atas seperti Peter Gustav Lejeune Dirichlet dan [Carl Gustav Jacob Jacobi](https://kenji.blog/id/p/jacobi/). Pada tahun 1845, ia memperoleh gelar doktornya dengan tesis yang luar biasa mengenai teori bilangan aljabar.
 
 Namun, Kronecker kemudian mengambil jalur karir yang aneh. Alih-alih mencari posisi di universitas, ia kembali ke kampung halamannya untuk mengambil alih perkebunan pertanian dan bisnis perbankan pamannya yang luas. Ia meraih kesuksesan luar biasa sebagai pengusaha dan mengumpulkan kekayaan yang besar. Sepanjang periode ini, ia melanjutkan penelitian matematikanya sebagai hobi, yang pada dasarnya menjadikannya matematikawan amatir terkuat di masanya.
 
@@ -60,15 +60,15 @@ Saat membahas kehidupan Kronecker, seseorang tidak dapat mengabaikan perdebatan 
 
 Kronecker memiliki keyakinan yang kuat bahwa "hanya hal-hal yang dapat dihitung secara eksplisit dan dibangun dalam jumlah operasi yang terbatas yang ada secara matematis." Ia sangat membenci bukti eksistensi non-konstruktif melalui kontradiksi (logika bahwa "jika kita berasumsi ia tidak ada, kontradiksi muncul; oleh karena itu, ia ada").
 
-Misalnya, mengenai [Teorema Fundamental Aljabar](https://kenji.blog/p/fundamental-theorem-of-algebra/), ia berpendapat bahwa sekadar membuktikan "akar itu ada" tidaklah cukup; sebuah algoritma yang merinci "bagaimana membangun akar tersebut secara eksplisit" harus menyertainya.
+Misalnya, mengenai [Teorema Fundamental Aljabar](https://kenji.blog/id/p/fundamental-theorem-of-algebra/), ia berpendapat bahwa sekadar membuktikan "akar itu ada" tidaklah cukup; sebuah algoritma yang merinci "bagaimana membangun akar tersebut secara eksplisit" harus menyertainya.
 
 ## 3.2. Bentrokan dengan Cantor dan Weierstrass
 
 Ideologi ekstrem ini membawanya ke dalam konflik dengan rekan-rekan sezamannya.
 
-Yang paling terkenal dari ini adalah kritiknya yang keras terhadap **[Georg Cantor](https://kenji.blog/p/cantor/)** dan Teori Himpunan-nya. Kronecker mengutuk konsep Cantor tentang kardinalitas himpunan tak terhingga dan bilangan transfinit sebagai "mistisisme, bukan matematika," dan bahkan mengambil tindakan untuk menghalangi publikasi makalah Cantor.
+Yang paling terkenal dari ini adalah kritiknya yang keras terhadap **[Georg Cantor](https://kenji.blog/id/p/cantor/)** dan Teori Himpunan-nya. Kronecker mengutuk konsep Cantor tentang kardinalitas himpunan tak terhingga dan bilangan transfinit sebagai "mistisisme, bukan matematika," dan bahkan mengambil tindakan untuk menghalangi publikasi makalah Cantor.
 
-Ia juga bentrok dengan **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** , yang dulunya adalah teman dekat. Mengenai analisis Weierstrass (seperti konstruksi fungsi kontinu yang tidak dapat didiferensialkan di mana pun), Kronecker mengkritik fungsi semacam itu sebagai "patologis" dan menyatakan bahwa fungsi tersebut tidak ada.
+Ia juga bentrok dengan **[Karl Weierstrass](https://kenji.blog/id/p/weierstrass/)** , yang dulunya adalah teman dekat. Mengenai analisis Weierstrass (seperti konstruksi fungsi kontinu yang tidak dapat didiferensialkan di mana pun), Kronecker mengkritik fungsi semacam itu sebagai "patologis" dan menyatakan bahwa fungsi tersebut tidak ada.
 
 # 4. Kontribusi Hebat untuk Matematika
 

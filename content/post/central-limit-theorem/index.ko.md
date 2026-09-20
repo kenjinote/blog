@@ -10,7 +10,7 @@ slug: "central-limit-theorem"
 
 ## 1. 머리말
 
-데이터 과학이나 통계학을 배울 때 피할 수 없는 것이 바로 **중심극한정리** ([Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/))입니다. 이 정리는 "어떤 분포를 가진 데이터라도, 그 표본평균의 분포는 표본 크기가 커짐에 따라 정규분포에 가까워진다"라는 마치 마법 같은 성질을 가지고 있습니다.
+데이터 과학이나 통계학을 배울 때 피할 수 없는 것이 바로 **중심극한정리** ([Central Limit Theorem](https://kenji.blog/ko/p/central-limit-theorem/))입니다. 이 정리는 "어떤 분포를 가진 데이터라도, 그 표본평균의 분포는 표본 크기가 커짐에 따라 정규분포에 가까워진다"라는 마치 마법 같은 성질을 가지고 있습니다.
 
 본 기사에서는 이 중심극한정리에 대해 직관적인 이미지부터 엄밀한 수학적 정의, 그리고 실제 응용 예까지 폭넓게 해설합니다.
 
@@ -144,7 +144,7 @@ $$
 \phi_Y(t)=E[e^{itY}]=1-\frac{t^2}{2}+o(t^2)\quad(t\to0).
 $$
 
-독립성으로부터 다음 식을 얻습니다. 극한은 표준정규분포의 특성함수이므로 레비의 연속성 정리에 의해 분포수렴이 따릅니다. 특성함수와 적률[생성함수](https://kenji.blog/p/generating-functions/)는 다른 것이며, 이 증명에 적률[생성함수](https://kenji.blog/p/generating-functions/)의 존재는 필요하지 않습니다.
+독립성으로부터 다음 식을 얻습니다. 극한은 표준정규분포의 특성함수이므로 레비의 연속성 정리에 의해 분포수렴이 따릅니다. 특성함수와 적률[생성함수](https://kenji.blog/ko/p/generating-functions/)는 다른 것이며, 이 증명에 적률[생성함수](https://kenji.blog/ko/p/generating-functions/)의 존재는 필요하지 않습니다.
 
 $$
 \phi_{Z_n}(t)=\left[\phi_Y\!\left(\frac{t}{\sqrt n}\right)\right]^n

@@ -21,7 +21,7 @@ Un exemple typique de ceci est **"l'énumération d'objets avec symétrie"**. La
 
 Par exemple, supposons que nous fassions un collier en enfilant quatre perles ensemble dans une boucle. Les couleurs des perles disponibles sont "rouge" et "bleu". Dans ce cas, combien y a-t-il de modèles de colliers différents au total ?
 
-Dans cet article, à partir de cette question apparemment simple, nous expliquerons en détail le puissant outil mathématique de comptage tenant compte de la symétrie, le **"[Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/)"**, depuis les bases jusqu'à ses applications. C'est un sujet parfait pour une introduction pratique à la théorie des groupes, alors restez avec nous jusqu'à la fin.
+Dans cet article, à partir de cette question apparemment simple, nous expliquerons en détail le puissant outil mathématique de comptage tenant compte de la symétrie, le **"[Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/)"**, depuis les bases jusqu'à ses applications. C'est un sujet parfait pour une introduction pratique à la théorie des groupes, alors restez avec nous jusqu'à la fin.
 
 ## 2. Les pièges du comptage simple
 
@@ -79,9 +79,9 @@ Par exemple, l'application des opérations de $G$ au motif "Rouge-Bleu-Bleu-Bleu
 
 Ces 4 motifs appartiennent à la même "Orbite". Le "nombre de conceptions essentiellement différentes" que nous voulons connaître n'est rien d'autre que **"le nombre d'orbites différentes dans lesquelles l'ensemble entier $X$ est partitionné"**. Ceci est dénoté par la formule $|X/G|$.
 
-## 5. [Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/)
+## 5. [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/)
 
-Ici enfin, la vedette de cette fois, le **[Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/)**, fait son apparition. On l'appelle aussi parfois le lemme de Cauchy-Frobenius. Il s'agit d'un théorème étonnant qui nous permet de calculer facilement le "nombre d'orbites (nombre de motifs essentiellement différents)" lorsqu'un groupe $G$ agit sur un ensemble fini $X$.
+Ici enfin, la vedette de cette fois, le **[Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/)**, fait son apparition. On l'appelle aussi parfois le lemme de Cauchy-Frobenius. Il s'agit d'un théorème étonnant qui nous permet de calculer facilement le "nombre d'orbites (nombre de motifs essentiellement différents)" lorsqu'un groupe $G$ agit sur un ensemble fini $X$.
 
 La formule du théorème est la suivante :
 
@@ -97,7 +97,7 @@ Examinons en détail la signification de chaque symbole apparaissant dans la for
 - $X^g$ : L'ensemble de motifs qui "ne changent pas (sont fixés)" même lorsque l'opération $g$ est effectuée.
 - $|X^g|$ : Le nombre de motifs fixés par l'opération $g$. C'est ce qu'on appelle le **"nombre de points fixes"**.
 
-Ce que signifie cette formule est très intuitif. Le [Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/) affirme que l'on peut obtenir le nombre d'orbites souhaité en **"comptant le 'nombre de motifs immuables (nombre de points fixes)' pour chaque opération, en les additionnant tous, et en divisant par le nombre total d'opérations (c'est-à-dire en prenant la moyenne)"**.
+Ce que signifie cette formule est très intuitif. Le [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/) affirme que l'on peut obtenir le nombre d'orbites souhaité en **"comptant le 'nombre de motifs immuables (nombre de points fixes)' pour chaque opération, en les additionnant tous, et en divisant par le nombre total d'opérations (c'est-à-dire en prenant la moyenne)"**.
 
 La plus grande force de ce théorème est qu'il peut décomposer le jugement complexe des doublons en calculs indépendants et simples de "comptage de ce qui ne change pas sous chaque opération".
 
@@ -128,7 +128,7 @@ Par conséquent, il n'y a que $2$ façons : "tout rouge" ou "tout bleu".
 $$ |X^{R_{270}}| = 2 $$
 
 ### 6.5. Calcul du résultat final
-Maintenant, nous avons tous les nombres de points fixes pour toutes les opérations. Nous les substituons dans la formule du [Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/).
+Maintenant, nous avons tous les nombres de points fixes pour toutes les opérations. Nous les substituons dans la formule du [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/).
 
 $$
 |X/G| = \frac{|X^{R_0}| + |X^{R_{90}}| + |X^{R_{180}}| + |X^{R_{270}}|}{|G|}
@@ -188,7 +188,7 @@ $$
 
 Par coïncidence, dans ce cas spécifique (4 perles, 2 couleurs), il a été constaté que les types essentiellement distincts restent **$6$ façons** même lorsque la réflexion est prise en compte. En effet, tous les $6$ motifs que nous avons trouvés précédemment incluaient déjà leurs propres motifs réfléchis (si la rotation est incluse). Cependant, si le nombre de perles ou de couleurs augmente, les résultats différeront grandement entre le groupe de rotations uniquement $C_n$ et le groupe diédral $D_n$.
 
-## 8. Esquisse de la preuve du [Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/)
+## 8. Esquisse de la preuve du [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/)
 
 Pourquoi la "moyenne du nombre de points fixes" donne-t-elle le "nombre d'orbites" ? Derrière cela se cache un théorème très important en théorie des groupes appelé le **"Théorème orbite-stabilisateur"**.
 
@@ -215,27 +215,27 @@ $$
 |G| \sum_{x \in X} \frac{1}{|O_x|} = |G| \times |X/G|
 $$
 
-En divisant les deux côtés par $|G|$, on obtient la formule du [Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/). C'est un développement logique très beau et sophistiqué.
+En divisant les deux côtés par $|G|$, on obtient la formule du [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/). C'est un développement logique très beau et sophistiqué.
 
 ## 9. Développement vers le Théorème de dénombrement de Pólya
 
-Le [Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/) est puissant, mais trouver manuellement le nombre de points fixes un par un devient difficile à mesure que l'échelle du problème augmente. Par exemple, pour un problème tel que "Combien y a-t-il de façons de peindre chaque face d'un dodécaèdre régulier avec 3 couleurs ?", il y a 60 types d'opérations de rotation, ce qui rend le calcul énorme.
+Le [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/) est puissant, mais trouver manuellement le nombre de points fixes un par un devient difficile à mesure que l'échelle du problème augmente. Par exemple, pour un problème tel que "Combien y a-t-il de façons de peindre chaque face d'un dodécaèdre régulier avec 3 couleurs ?", il y a 60 types d'opérations de rotation, ce qui rend le calcul énorme.
 
 La généralisation de cela et la possibilité d'un calcul mécanique à l'aide de polynômes algébriques (Indicateur de cycles) constituent le **"Théorème de dénombrement de Pólya"**.
 
-Le [Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/) est une étape importante vers la compréhension du théorème de Pólya, posant les bases du dénombrement en théorie des groupes.
+Le [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/) est une étape importante vers la compréhension du théorème de Pólya, posant les bases du dénombrement en théorie des groupes.
 
-## 10. Contexte historique du [Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/)
+## 10. Contexte historique du [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/)
 
 En fait, ce théorème n'a pas été découvert en premier par William Burnside. Il a été introduit dans le livre de Burnside "Theory of Groups of Finite Order" publié en 1897 et est devenu largement popularisé, c'est pourquoi il porte son nom.
 
-Cependant, historiquement, [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) avait déjà publié un cas particulier de ce théorème (concernant les groupes symétriques) en 1845, et plus tard en 1887 Ferdinand Georg Frobenius a donné une preuve pour les groupes finis en général.
+Cependant, historiquement, [Augustin-Louis Cauchy](https://kenji.blog/fr/p/cauchy/) avait déjà publié un cas particulier de ce théorème (concernant les groupes symétriques) en 1845, et plus tard en 1887 Ferdinand Georg Frobenius a donné une preuve pour les groupes finis en général.
 
 Par conséquent, ceux qui essaient d'être rigoureux quant à l'histoire des mathématiques appellent parfois ce théorème avec espièglerie le **"Lemme de Cauchy-Frobenius"** ou **"Le Lemme qui n'est pas de Burnside"**. Indépendamment de l'origine de son nom, l'ampleur du rôle que ce lemme a joué dans l'histoire de la théorie des groupes et de la combinatoire est incommensurable.
 
 ## 11. Exemple 2 : Coloration des faces d'un cube
 
-Pour mieux comprendre la puissance du [Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/), donnons un autre exemple célèbre. C'est le problème : "Combien y a-t-il de façons de peindre les 6 faces d'un cube avec 2 couleurs, rouge et bleu ?" Ici aussi, on traite comme identiques ceux qui deviennent les mêmes lorsqu'ils sont tournés.
+Pour mieux comprendre la puissance du [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/), donnons un autre exemple célèbre. C'est le problème : "Combien y a-t-il de façons de peindre les 6 faces d'un cube avec 2 couleurs, rouge et bleu ?" Ici aussi, on traite comme identiques ceux qui deviennent les mêmes lorsqu'ils sont tournés.
 
 Le groupe de rotation d'un cube comprend les 24 opérations suivantes :
 1. **Ne rien faire** : 1 opération
@@ -245,17 +245,17 @@ Le groupe de rotation d'un cube comprend les 24 opérations suivantes :
 
 Il y a un total de $1 + 9 + 8 + 6 = 24$ éléments ($|G| = 24$).
 
-En calculant le nombre de points fixes (colorations où les couleurs ne changent pas) pour chaque opération de rotation et en prenant la moyenne, on peut trouver le nombre total de façons de colorer le cube. Même pour un problème extrêmement difficile à compter de manière intuitive, l'utilisation du [Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/) le réduit à des problèmes "locaux" de symétrie le long de chaque axe de rotation. En conséquence, on sait que le nombre de façons de colorer ce cube est de **$10$ façons**.
+En calculant le nombre de points fixes (colorations où les couleurs ne changent pas) pour chaque opération de rotation et en prenant la moyenne, on peut trouver le nombre total de façons de colorer le cube. Même pour un problème extrêmement difficile à compter de manière intuitive, l'utilisation du [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/) le réduit à des problèmes "locaux" de symétrie le long de chaque axe de rotation. En conséquence, on sait que le nombre de façons de colorer ce cube est de **$10$ façons**.
 
 ## 12. Conclusion
 
-Qu'en avez-vous pensé ? Dans cet article, en utilisant le nombre de modèles de colliers comme exemple, nous avons expliqué le [Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/) en détail.
+Qu'en avez-vous pensé ? Dans cet article, en utilisant le nombre de modèles de colliers comme exemple, nous avons expliqué le [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/) en détail.
 
 *   Les permutations et combinaisons simples ne peuvent pas bien gérer la duplication due à la symétrie.
 *   La symétrie peut être décrite mathématiquement à l'aide d'un **"Groupe"**.
-*   En utilisant le **[Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/)**, le nombre de modèles essentiellement différents peut être calculé par la procédure mécanique "d'établir la moyenne du nombre de points fixes dans chaque opération".
+*   En utilisant le **[Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/)**, le nombre de modèles essentiellement différents peut être calculé par la procédure mécanique "d'établir la moyenne du nombre de points fixes dans chaque opération".
 *   Ce théorème est basé sur une propriété profonde de la théorie des groupes appelée le Théorème orbite-stabilisateur.
 
-Le [Lemme de Burnside](https://kenji.blog/p/burnsides-lemma/) est un théorème très pratique appliqué dans un large éventail de domaines, tels que le dénombrement des isomères moléculaires en chimie, la détermination de l'isomorphisme de graphe dans la théorie des graphes, et même la mécanique statistique en physique.
+Le [Lemme de Burnside](https://kenji.blog/fr/p/burnsides-lemma/) est un théorème très pratique appliqué dans un large éventail de domaines, tels que le dénombrement des isomères moléculaires en chimie, la détermination de l'isomorphisme de graphe dans la théorie des graphes, et même la mécanique statistique en physique.
 
 À travers les concepts de base introduits cette fois-ci, nous espérons que vous avez pu apercevoir comment le domaine des mathématiques appelé "Théorie des Groupes", qui a tendance à paraître abstrait, peut résoudre brillamment des problèmes concrets du monde réel.

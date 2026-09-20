@@ -11,7 +11,7 @@ tags:
   - "Goldbach's Conjecture"
 ---
 
-## What is [Goldbach's Conjecture](https://kenji.blog/p/goldbachs-conjecture/)?
+## What is [Goldbach's Conjecture](https://kenji.blog/en/p/goldbachs-conjecture/)?
 
 **Goldbach's conjecture** is one of the oldest and most famous unsolved problems in number theory. Its statement is so simple that even an elementary school student can understand it.
 
@@ -29,7 +29,7 @@ As you can see, for small even numbers, they can indeed be expressed as the sum 
 
 ## Historical Background
 
-This conjecture was first mentioned in a letter sent in 1742 by the Prussian mathematician **Christian Goldbach** to the great Swiss mathematician **[Leonhard Euler](https://kenji.blog/p/euler/)**.
+This conjecture was first mentioned in a letter sent in 1742 by the Prussian mathematician **Christian Goldbach** to the great Swiss mathematician **[Leonhard Euler](https://kenji.blog/en/p/euler/)**.
 
 ```mermaid
 graph TD

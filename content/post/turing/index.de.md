@@ -20,7 +20,7 @@ Während seiner Schulzeit in Sherborne bewies er bereits außergewöhnliches Tal
 
 # 3. Die Turingmaschine und die Theorie der Berechenbarkeit
 
-Eines der größten ungelösten Probleme in der mathematischen Welt zu dieser Zeit war das 1928 von [David Hilbert](https://kenji.blog/p/hilbert/) vorgeschlagene "Entscheidungsproblem". Dies war eine grundlegende Frage: "Gibt es für eine beliebige mathematische Aussage ein mechanisches algorithmisches Verfahren, um festzustellen, ob sie wahr oder falsch ist?"
+Eines der größten ungelösten Probleme in der mathematischen Welt zu dieser Zeit war das 1928 von [David Hilbert](https://kenji.blog/de/p/hilbert/) vorgeschlagene "Entscheidungsproblem". Dies war eine grundlegende Frage: "Gibt es für eine beliebige mathematische Aussage ein mechanisches algorithmisches Verfahren, um festzustellen, ob sie wahr oder falsch ist?"
 
 Turing ging dieses Problem mit einem völlig neuen Ansatz an. In seiner bahnbrechenden Arbeit von 1936 "On Computable Numbers, with an Application to the Entscheidungsproblem" definierte er eine abstrakte Rechenmaschine, die **Turingmaschine**.
 
@@ -139,4 +139,4 @@ Am 7. Juni 1954 verstarb er im jungen Alter von 41 Jahren. Die Todesursache war 
 
 Jahrzehnte nach seinem Tod schritten jedoch die weltweite Neubewertung seiner Errungenschaften und die Wiederherstellung seiner Ehre voran. 2009 entschuldigte sich die britische Regierung offiziell für die ungerechte Behandlung, die er damals erfahren hatte, und 2013 wurde ihm von Königin Elisabeth II. posthum eine königliche Begnadigung gewährt.
 
-Heute ist die weltweit höchste Auszeichnung in der Informatik (oft als "Nobelpreis der Informatik" bezeichnet) zu Ehren seiner Leistungen als **Turing Award** benannt. [Alan Turing](https://kenji.blog/p/turing/) besaß in verschiedenen Bereichen Ideen, die seiner Zeit weit voraus waren: Mathematik, Kryptographie, Informatik, künstliche Intelligenz und Biologie. Die Theorien und Ideen, die er hinterließ, atmen heute als Fundament unserer modernen digitalen Gesellschaft kraftvoll weiter.
+Heute ist die weltweit höchste Auszeichnung in der Informatik (oft als "Nobelpreis der Informatik" bezeichnet) zu Ehren seiner Leistungen als **Turing Award** benannt. [Alan Turing](https://kenji.blog/de/p/turing/) besaß in verschiedenen Bereichen Ideen, die seiner Zeit weit voraus waren: Mathematik, Kryptographie, Informatik, künstliche Intelligenz und Biologie. Die Theorien und Ideen, die er hinterließ, atmen heute als Fundament unserer modernen digitalen Gesellschaft kraftvoll weiter.

@@ -22,9 +22,9 @@ En ese momento, Budapest era un centro mundial de cultura y erudición, producie
 
 ## 3. Contribuciones a los fundamentos de las matemáticas: Teoría axiomática de conjuntos
 
-Uno de los logros iniciales más importantes de von Neumann fue su investigación sobre la axiomatización de la teoría de conjuntos. Se esperaba que la teoría de conjuntos, fundada por [Georg Cantor](https://kenji.blog/p/cantor/), fuera la base de las matemáticas, pero se enfrentaba a contradicciones lógicas (paradojas) como la paradoja de Russell. Para resolver este problema, Ernst Zermelo, Adolf Fraenkel y otros estaban construyendo la teoría axiomática de conjuntos, pero von Neumann adoptó un enfoque diferente.
+Uno de los logros iniciales más importantes de von Neumann fue su investigación sobre la axiomatización de la teoría de conjuntos. Se esperaba que la teoría de conjuntos, fundada por [Georg Cantor](https://kenji.blog/es/p/cantor/), fuera la base de las matemáticas, pero se enfrentaba a contradicciones lógicas (paradojas) como la paradoja de Russell. Para resolver este problema, Ernst Zermelo, Adolf Fraenkel y otros estaban construyendo la teoría axiomática de conjuntos, pero von Neumann adoptó un enfoque diferente.
 
-Introdujo el concepto de "clases" y evitó brillantemente las paradojas distinguiendo estrictamente entre conjuntos normales y clases que son demasiado grandes para ser conjuntos (clases propias). Este sistema fue posteriormente mejorado por Paul Bernays y [Kurt Gödel](https://kenji.blog/p/godel/), y ahora se conoce como la **teoría de conjuntos de von Neumann-Bernays-Gödel** (teoría de conjuntos NBG).
+Introdujo el concepto de "clases" y evitó brillantemente las paradojas distinguiendo estrictamente entre conjuntos normales y clases que son demasiado grandes para ser conjuntos (clases propias). Este sistema fue posteriormente mejorado por Paul Bernays y [Kurt Gödel](https://kenji.blog/es/p/godel/), y ahora se conoce como la **teoría de conjuntos de von Neumann-Bernays-Gödel** (teoría de conjuntos NBG).
 
 $$
 \forall X \ ( X \in V \iff \exists Y \ (X \in Y) )

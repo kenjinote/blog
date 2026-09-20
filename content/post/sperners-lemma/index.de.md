@@ -10,15 +10,15 @@ tags: ["topologie", "kombinatorik", "fixpunktsatz"]
 
 # 1. Einleitung: Das Geheimnis der Mathematik, das mit einem Puzzle beginnt
 
-Die Schönheit der Mathematik liegt oft darin, wie extrem einfache Regeln zu tiefgreifenden und völlig unerwarteten Ergebnissen führen können. Eines der ikonischsten Beispiele dafür ist das **Spernersche Lemma** ([Sperner's Lemma](https://kenji.blog/p/sperners-lemma/)). Veröffentlicht 1928 von dem deutschen Mathematiker Emanuel Sperner, scheint dieses Lemma auf den ersten Blick nichts weiter als ein "Dreiecks-Färbepuzzle" zu sein, das selbst ein Grundschüler verstehen könnte.
+Die Schönheit der Mathematik liegt oft darin, wie extrem einfache Regeln zu tiefgreifenden und völlig unerwarteten Ergebnissen führen können. Eines der ikonischsten Beispiele dafür ist das **Spernersche Lemma** ([Sperner's Lemma](https://kenji.blog/de/p/sperners-lemma/)). Veröffentlicht 1928 von dem deutschen Mathematiker Emanuel Sperner, scheint dieses Lemma auf den ersten Blick nichts weiter als ein "Dreiecks-Färbepuzzle" zu sein, das selbst ein Grundschüler verstehen könnte.
 
 Dieses einfache Puzzle nimmt jedoch eine extrem wichtige Position in der modernen Mathematik ein. Insbesondere dient es als mächtiges Werkzeug für einen kombinatorischen und konstruktiven Beweis des **Brouwerschen Fixpunktsatzes** (Brouwer Fixed-Point Theorem), der ein grundlegender Satz in der Topologie ist und in Bereichen wie der Spieltheorie in den Wirtschaftswissenschaften (z. B. beim Beweis der Existenz des Nash-Gleichgewichts) breite Anwendung findet.
 
-In diesem Artikel werden wir [Sperners Lemma](https://kenji.blog/p/sperners-lemma/) im Detail mit Diagrammen erklären und dabei alles von seiner intuitiven Bedeutung und seinem strengen mathematischen Beweis bis hin zu seiner Anwendung auf Fixpunktsätze behandeln, die eine Brücke zur kontinuierlichen Welt schlagen.
+In diesem Artikel werden wir [Sperners Lemma](https://kenji.blog/de/p/sperners-lemma/) im Detail mit Diagrammen erklären und dabei alles von seiner intuitiven Bedeutung und seinem strengen mathematischen Beweis bis hin zu seiner Anwendung auf Fixpunktsätze behandeln, die eine Brücke zur kontinuierlichen Welt schlagen.
 
 # 2. Simplizes und Simplizialkomplexe: Die Grundlagen der Geometrie
 
-Um [Sperners Lemma](https://kenji.blog/p/sperners-lemma/) zu verstehen, müssen wir zunächst die Konzepte eines **Simplexes** (Simplex) und eines **Simplizialkomplexes** (Simplicial Complex / Triangulation) klären.
+Um [Sperners Lemma](https://kenji.blog/de/p/sperners-lemma/) zu verstehen, müssen wir zunächst die Konzepte eines **Simplexes** (Simplex) und eines **Simplizialkomplexes** (Simplicial Complex / Triangulation) klären.
 
 ## 2.1. Was ist ein Simplex?
 
@@ -48,7 +48,7 @@ graph TD
     %% Dies ist ein Beispiel für einen einfachen Simplizialkomplex
 ```
 
-Für das auf diese Weise unterteilte Netzwerk von Dreiecken bereitet die Färbung jedes Knotens die Bühne für [Sperners Lemma](https://kenji.blog/p/sperners-lemma/).
+Für das auf diese Weise unterteilte Netzwerk von Dreiecken bereitet die Färbung jedes Knotens die Bühne für [Sperners Lemma](https://kenji.blog/de/p/sperners-lemma/).
 
 # 3. Sperner-Färbung: Die Randregeln
 
@@ -65,9 +65,9 @@ Sie müssen sie jedoch nach der folgenden strengen **Sperner-Bedingung** (Randre
 
 Eine Färbung, die diesen Regeln folgt, wird als **Sperner-Färbung** (Sperner Coloring) bezeichnet.
 
-# 4. Die Aussage von [Sperners Lemma](https://kenji.blog/p/sperners-lemma/)
+# 4. Die Aussage von [Sperners Lemma](https://kenji.blog/de/p/sperners-lemma/)
 
-Wenn Sie die Färbung gemäß den Regeln der Sperner-Färbung abgeschlossen haben, welches Phänomen tritt auf? [Sperners Lemma](https://kenji.blog/p/sperners-lemma/) behauptet die folgende erstaunliche Tatsache.
+Wenn Sie die Färbung gemäß den Regeln der Sperner-Färbung abgeschlossen haben, welches Phänomen tritt auf? [Sperners Lemma](https://kenji.blog/de/p/sperners-lemma/) behauptet die folgende erstaunliche Tatsache.
 
 > **Spernersches Lemma (2D)**
 > Bei jeder Sperner-Färbung **muss die Anzahl** der kleinen Dreiecke, bei denen alle drei Knoten in verschiedenen Farben (Farbe 1, Farbe 2 und Farbe 3) gemalt sind, **eine ungerade Zahl sein**.
@@ -135,7 +135,7 @@ Damit ist perfekt bewiesen, dass es mindestens ein komplettes Dreieck gibt.
 
 # 6. Verallgemeinerung auf höhere Dimensionen
 
-[Sperners Lemma](https://kenji.blog/p/sperners-lemma/) ist nicht auf 2D-Dreiecke beschränkt, sondern gilt für jedes $n$-dimensionale Simplex.
+[Sperners Lemma](https://kenji.blog/de/p/sperners-lemma/) ist nicht auf 2D-Dreiecke beschränkt, sondern gilt für jedes $n$-dimensionale Simplex.
 
 Im Falle eines $n$-dimensionalen Simplexes (z. B. eines Tetraeders für $n=3$) gibt es $n+1$ Knoten, und wir verwenden $n+1$ Farben, $1, 2, \dots, n+1$.
 Die Randbedingung ist wie folgt generalisiert: "Die Knoten auf jeder $k$-dimensionalen Fläche (Facette) dürfen nur dieselben Farben verwenden wie die $k+1$ Knoten, die diese Fläche bilden."
@@ -146,7 +146,7 @@ Der Beweis verwendet mathematische Induktion.
 
 # 7. Anwendung auf den Brouwerschen Fixpunktsatz
 
-Warum wird [Sperners Lemma](https://kenji.blog/p/sperners-lemma/) als so wichtig angesehen? Das liegt daran, dass dieser diskrete Satz als Brücke dient, um einen kontinuierlichen topologischen Satz zu beweisen, den **Brouwerschen Fixpunktsatz**.
+Warum wird [Sperners Lemma](https://kenji.blog/de/p/sperners-lemma/) als so wichtig angesehen? Das liegt daran, dass dieser diskrete Satz als Brücke dient, um einen kontinuierlichen topologischen Satz zu beweisen, den **Brouwerschen Fixpunktsatz**.
 
 ## 7.1. Was ist der Brouwersche Fixpunktsatz?
 
@@ -155,9 +155,9 @@ Warum wird [Sperners Lemma](https://kenji.blog/p/sperners-lemma/) als so wichtig
 
 Dies ist ein berühmter Satz, der oft mit der folgenden Metapher erklärt wird: Wenn Sie Ihren Kaffee umrühren und die Tasse absetzen, gibt es immer mindestens ein Kaffeeteilchen, das sich genau in derselben Position befindet wie bevor Sie mit dem Rühren begonnen haben.
 
-## 7.2. Ansatz aus [Sperners Lemma](https://kenji.blog/p/sperners-lemma/)
+## 7.2. Ansatz aus [Sperners Lemma](https://kenji.blog/de/p/sperners-lemma/)
 
-Die Logik zur Ableitung des Fixpunktsatzes aus [Sperners Lemma](https://kenji.blog/p/sperners-lemma/) ist sehr elegant.
+Die Logik zur Ableitung des Fixpunktsatzes aus [Sperners Lemma](https://kenji.blog/de/p/sperners-lemma/) ist sehr elegant.
 
 1. **Auswertung von baryzentrischen Koordinaten und Verschiebungsvektoren**
    Wenden Sie die stetige Abbildung $f$ auf einen beliebigen Punkt $x$ auf dem Simplex an und betrachten Sie das Ziel $f(x)$. Weisen Sie dem Punkt $x$ eine Farbe zu, basierend auf der Richtung, in die er sich bewegt hat (welche Komponente der baryzentrischen Koordinaten abgenommen hat).
@@ -167,7 +167,7 @@ Die Logik zur Ableitung des Fixpunktsatzes aus [Sperners Lemma](https://kenji.bl
    Aufgrund der Natur stetiger Abbildungen, bei denen Sie sich an den Rändern nicht nach außen bewegen können, erfüllt diese Färbemethode genau die Bedingungen der Sperner-Färbung.
 
 3. **Übergang zum Grenzwert**
-   Wir triangulieren das Dreieck immer feiner. In jeder Triangulierung gibt es nach [Sperners Lemma](https://kenji.blog/p/sperners-lemma/) immer ein kleines Dreieck, in dem alle 3 Farben vorhanden sind.
+   Wir triangulieren das Dreieck immer feiner. In jeder Triangulierung gibt es nach [Sperners Lemma](https://kenji.blog/de/p/sperners-lemma/) immer ein kleines Dreieck, in dem alle 3 Farben vorhanden sind.
    
 4. **Kompaktheit und Konvergenz**
    Wir bilden den Grenzwert, wenn sich die Größe der Unterteilung Null nähert. Nach dem Satz von Bolzano-Weierstraß (eine Folge in einem kompakten Raum hat eine konvergente Teilfolge) konvergiert diese Folge kompletter Dreiecke gegen einen einzigen Punkt $x^*$.
@@ -177,15 +177,15 @@ Die Logik zur Ableitung des Fixpunktsatzes aus [Sperners Lemma](https://kenji.bl
 
 # 8. Weitere Anwendungen: Faire Aufteilung und Wirtschaft
 
-Neben dem Fixpunktsatz wird [Sperners Lemma](https://kenji.blog/p/sperners-lemma/) direkt auf reale Probleme angewendet.
+Neben dem Fixpunktsatz wird [Sperners Lemma](https://kenji.blog/de/p/sperners-lemma/) direkt auf reale Probleme angewendet.
 Typische Beispiele sind das "Problem der fairen Mietaufteilung" und das "Kuchenschneideproblem".
 
-Wenn sich mehrere Personen ein Haus teilen, kann es zu Konflikten darüber kommen, wer welches Zimmer für wie viel mietet, da Größe und Bedingungen der Zimmer variieren. Mithilfe von Algorithmen, die [Sperners Lemma](https://kenji.blog/p/sperners-lemma/) anwenden (wie Su's Algorithmus), kann bewiesen werden, dass es immer eine faire Zuteilung gibt, bei der "jeder mit seinem gewählten Zimmer und der Miete zufrieden ist und die Summe der Mieten mit dem ursprünglichen Betrag übereinstimmt", und darüber hinaus kann sie näherungsweise gefunden werden.
+Wenn sich mehrere Personen ein Haus teilen, kann es zu Konflikten darüber kommen, wer welches Zimmer für wie viel mietet, da Größe und Bedingungen der Zimmer variieren. Mithilfe von Algorithmen, die [Sperners Lemma](https://kenji.blog/de/p/sperners-lemma/) anwenden (wie Su's Algorithmus), kann bewiesen werden, dass es immer eine faire Zuteilung gibt, bei der "jeder mit seinem gewählten Zimmer und der Miete zufrieden ist und die Summe der Mieten mit dem ursprünglichen Betrag übereinstimmt", und darüber hinaus kann sie näherungsweise gefunden werden.
 
-Auch die von John Nash in den Wirtschaftswissenschaften bewiesene "Existenz des Nash-Gleichgewichts" hängt von Fixpunktsätzen (Brouwer oder Kakutani) ab, die grundlegend kombinatorische Strukturen wie [Sperners Lemma](https://kenji.blog/p/sperners-lemma/) verbergen.
+Auch die von John Nash in den Wirtschaftswissenschaften bewiesene "Existenz des Nash-Gleichgewichts" hängt von Fixpunktsätzen (Brouwer oder Kakutani) ab, die grundlegend kombinatorische Strukturen wie [Sperners Lemma](https://kenji.blog/de/p/sperners-lemma/) verbergen.
 
 # 9. Fazit
 
-[Sperners Lemma](https://kenji.blog/p/sperners-lemma/) beginnt mit einer fast spielerischen Anordnung der Färbung der Knoten eines Dreiecks nach Regeln. Doch in dieser einfachen Logik des "Zählens der Türen" verbargen sich tiefgreifende Wahrheiten über die Kontinuität und Invarianz des Raumes.
+[Sperners Lemma](https://kenji.blog/de/p/sperners-lemma/) beginnt mit einer fast spielerischen Anordnung der Färbung der Knoten eines Dreiecks nach Regeln. Doch in dieser einfachen Logik des "Zählens der Türen" verbargen sich tiefgreifende Wahrheiten über die Kontinuität und Invarianz des Raumes.
 
 Diskrete Mathematik und kontinuierliche Mathematik. Die Tatsache, dass diese beiden scheinbar völlig unterschiedlichen Welten durch einen so schönen Satz verbunden sind, ist wohl einer der größten Reize der Mathematik als Disziplin. Wir ermutigen die Leser, sich Papier und Stift zu schnappen, ein Dreieck willkürlich zu unterteilen und es in 3 Farben zu malen. Wenn Sie das "komplette Dreieck" finden, das sich dort immer versteckt, sollten auch Sie in der Lage sein, das Geheimnis der Mathematik zu berühren.

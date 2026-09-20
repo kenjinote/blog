@@ -21,19 +21,19 @@ Um dieses Problem zu lösen, wurde eine hypothetische Zahl eingeführt, deren Qu
 
 Hier stellt sich eine große Frage: "Wenn wir das Zahlensystem auf komplexe Zahlen erweitern, können wir dann sagen, dass jede Gleichung immer eine Lösung haben wird?" Oder: "Werden wir jemals eine weitere neue Art von Zahl einführen müssen?"
 
-Die Mathematik liefert eine sehr klare und schöne Antwort auf diese Frage. Das ist das Thema dieses Artikels: der **[Fundamentalsatz der Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)**. Dieser Satz besagt, dass "jedes Polynom $n$-ten Grades mit komplexen Koeffizienten immer eine Wurzel (Lösung) innerhalb der komplexen Zahlen hat". Mit anderen Worten, in dem riesigen Ozean der komplexen Zahlen existiert die Lösung für jede Gleichung immer, was garantiert, dass keine weiteren neuen Zahlen erfunden werden müssen.
+Die Mathematik liefert eine sehr klare und schöne Antwort auf diese Frage. Das ist das Thema dieses Artikels: der **[Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/)**. Dieser Satz besagt, dass "jedes Polynom $n$-ten Grades mit komplexen Koeffizienten immer eine Wurzel (Lösung) innerhalb der komplexen Zahlen hat". Mit anderen Worten, in dem riesigen Ozean der komplexen Zahlen existiert die Lösung für jede Gleichung immer, was garantiert, dass keine weiteren neuen Zahlen erfunden werden müssen.
 
-In diesem Artikel werden wir diesen **[Fundamentalsatz der Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)** im Detail erklären, angefangen bei seinem historischen Hintergrund über einen intuitiven Ansatz basierend auf der Topologie bis hin zur Präsentation eines strengen und schönen Beweises unter Verwendung der komplexen Analysis.
+In diesem Artikel werden wir diesen **[Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/)** im Detail erklären, angefangen bei seinem historischen Hintergrund über einen intuitiven Ansatz basierend auf der Topologie bis hin zur Präsentation eines strengen und schönen Beweises unter Verwendung der komplexen Analysis.
 
 ## Historischer Hintergrund des Fundamentalsatzes der Algebra
 
-Der **[Fundamentalsatz der Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)** wurde nicht über Nacht bewiesen. Viele große Mathematiker kämpften darum, einen vollständigen Beweis zu erbringen, ohne jemals an der Wahrheit des Satzes zu zweifeln.
+Der **[Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/)** wurde nicht über Nacht bewiesen. Viele große Mathematiker kämpften darum, einen vollständigen Beweis zu erbringen, ohne jemals an der Wahrheit des Satzes zu zweifeln.
 
-Im 17. Jahrhundert wussten Mathematiker wie [René Descartes](https://kenji.blog/p/descartes/) und Albert Girard bereits empirisch, dass "eine Gleichung $n$-ten Grades $n$ Wurzeln haben sollte". Innerhalb des mathematischen Rahmens der damaligen Zeit gab es jedoch keine strenge Möglichkeit, dies zu beweisen.
+Im 17. Jahrhundert wussten Mathematiker wie [René Descartes](https://kenji.blog/de/p/descartes/) und Albert Girard bereits empirisch, dass "eine Gleichung $n$-ten Grades $n$ Wurzeln haben sollte". Innerhalb des mathematischen Rahmens der damaligen Zeit gab es jedoch keine strenge Möglichkeit, dies zu beweisen.
 
-Zu Beginn des 18. Jahrhunderts versuchten mathematische Riesen wie Jean le Rond d'Alembert und [Leonhard Euler](https://kenji.blog/p/euler/) den Beweis. D'Alembert veröffentlichte 1746 einen Beweis, und der Satz wird in Frankreich manchmal als "Satz von d'Alembert" bezeichnet; nach modernen Maßstäben mangelte es seinem Beweis jedoch in bestimmten Bereichen an topologischer Strenge. Euler versuchte auch zu zeigen, dass jedes Polynom mit reellen Koeffizienten in das Produkt linearer und quadratischer Polynome faktorisiert werden könnte, hinterließ aber eine logische Lücke.
+Zu Beginn des 18. Jahrhunderts versuchten mathematische Riesen wie Jean le Rond d'Alembert und [Leonhard Euler](https://kenji.blog/de/p/euler/) den Beweis. D'Alembert veröffentlichte 1746 einen Beweis, und der Satz wird in Frankreich manchmal als "Satz von d'Alembert" bezeichnet; nach modernen Maßstäben mangelte es seinem Beweis jedoch in bestimmten Bereichen an topologischer Strenge. Euler versuchte auch zu zeigen, dass jedes Polynom mit reellen Koeffizienten in das Produkt linearer und quadratischer Polynome faktorisiert werden könnte, hinterließ aber eine logische Lücke.
 
-Der erste im Wesentlichen vollständige Beweis für diesen uneinnehmbaren Satz wurde von keinem Geringeren als [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) erbracht. In seiner Dissertation von 1799 wies er auf die Mängel in den Beweisen der vorhergehenden Mathematiker hin und präsentierte einen Beweis, der auf geometrischer Intuition basierte. Gauss lieferte im Laufe seines Lebens vier verschiedene Beweise für diesen Satz, was zeigt, welche Bedeutung er ihm beimaß.
+Der erste im Wesentlichen vollständige Beweis für diesen uneinnehmbaren Satz wurde von keinem Geringeren als [Carl Friedrich Gauss](https://kenji.blog/de/p/gauss/) erbracht. In seiner Dissertation von 1799 wies er auf die Mängel in den Beweisen der vorhergehenden Mathematiker hin und präsentierte einen Beweis, der auf geometrischer Intuition basierte. Gauss lieferte im Laufe seines Lebens vier verschiedene Beweise für diesen Satz, was zeigt, welche Bedeutung er ihm beimaß.
 
 Der heute standardmäßigste und eleganteste Beweis gilt als derjenige, der auf der Theorie der komplexen Analysis basiert, die von dem französischen Mathematiker Joseph Liouville und anderen aufgebaut wurde. In der zweiten Hälfte dieses Artikels werden wir den Beweis mit Hilfe des Satzes von Liouville vorstellen.
 
@@ -41,7 +41,7 @@ Der heute standardmäßigste und eleganteste Beweis gilt als derjenige, der auf 
 
 Lassen Sie uns zunächst die Aussage des Satzes in mathematisch genauen Begriffen beschreiben.
 
-**Satz ([Fundamentalsatz der Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/))**
+**Satz ([Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/))**
 Für jede natürliche Zahl $n \ge 1$ und komplexe Koeffizienten $a_0, a_1, \dots, a_n$ (wobei $a_n \neq 0$), wird ein Polynom $P(z)$ wie folgt definiert:
 
 $$
@@ -97,7 +97,7 @@ In der Welt der reellen Zahlen ist eine Funktion wie $f(x) = \sin(x)$ über die 
 
 ## Strenger Beweis des Fundamentalsatzes der Algebra
 
-Lassen Sie uns nun den [Fundamentalsatz der Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) mit Hilfe des Satzes von Liouville beweisen. Sie werden von der Brillanz dieses Beweises erstaunt sein. Hier verwenden wir einen Beweis durch Widerspruch.
+Lassen Sie uns nun den [Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/) mit Hilfe des Satzes von Liouville beweisen. Sie werden von der Brillanz dieses Beweises erstaunt sein. Hier verwenden wir einen Beweis durch Widerspruch.
 
 **Beweis**
 
@@ -152,15 +152,15 @@ Somit ist durch Widerspruch bewiesen, dass $P(z) = 0$ mindestens eine Lösung in
 
 ## Korollar des Satzes: Faktorisierung in Linearfaktoren
 
-Der [Fundamentalsatz der Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) garantiert die Existenz von "mindestens einer Lösung". Durch die Kombination dieser Tatsache mit dem **Faktorsatz** für die Polynomdivision können wir beweisen, dass ein Polynom vollständig in ein Produkt von linearen Termen faktorisiert werden kann.
+Der [Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/) garantiert die Existenz von "mindestens einer Lösung". Durch die Kombination dieser Tatsache mit dem **Faktorsatz** für die Polynomdivision können wir beweisen, dass ein Polynom vollständig in ein Produkt von linearen Termen faktorisiert werden kann.
 
-Gegeben sei ein Polynom $n$-ten Grades $P_n(z)$, besagt der [Fundamentalsatz der Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/), dass eine Lösung $\alpha_1$ existiert, so dass $P_n(\alpha_1) = 0$. Nach dem Faktorsatz hat $P_n(z)$ den Faktor $(z - \alpha_1)$. Das heißt, es kann wie folgt faktorisiert werden:
+Gegeben sei ein Polynom $n$-ten Grades $P_n(z)$, besagt der [Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/), dass eine Lösung $\alpha_1$ existiert, so dass $P_n(\alpha_1) = 0$. Nach dem Faktorsatz hat $P_n(z)$ den Faktor $(z - \alpha_1)$. Das heißt, es kann wie folgt faktorisiert werden:
 
 $$
 P_n(z) = (z - \alpha_1) P_{n-1}(z)
 $$
 
-Hier ist $P_{n-1}(z)$ ein Polynom vom Grad $n-1$. Wenn $n-1 \ge 1$, können wir den [Fundamentalsatz der Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) erneut anwenden, um eine Lösung $\alpha_2$ für $P_{n-1}(z)$ zu finden. Durch $n$-maliges Wiederholen können wir es vollständig wie folgt faktorisieren:
+Hier ist $P_{n-1}(z)$ ein Polynom vom Grad $n-1$. Wenn $n-1 \ge 1$, können wir den [Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/) erneut anwenden, um eine Lösung $\alpha_2$ für $P_{n-1}(z)$ zu finden. Durch $n$-maliges Wiederholen können wir es vollständig wie folgt faktorisieren:
 
 $$
 P_n(z) = a_n (z - \alpha_1)(z - \alpha_2) \dots (z - \alpha_n)
@@ -172,8 +172,8 @@ Darüber hinaus muss für Polynome, bei denen alle Koeffizienten reelle Zahlen s
 
 ## Fazit
 
-In diesem Artikel haben wir uns eingehend mit dem [Fundamentalsatz der Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) befasst und seinen historischen Hintergrund, die topologische Intuition und den komplex analytischen Beweis mit Hilfe des Satzes von Liouville behandelt.
+In diesem Artikel haben wir uns eingehend mit dem [Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/) befasst und seinen historischen Hintergrund, die topologische Intuition und den komplex analytischen Beweis mit Hilfe des Satzes von Liouville behandelt.
 
 Auf den ersten Blick handelt es sich um einen Satz über algebraische Gleichungen, aber die Tatsache, dass sein elegantester Beweis die Kraft der Analysis (Infinitesimalrechnung) und der Topologie ausleiht, zeigt die Tiefe der Mathematik und die Schönheit, wie verschiedene Bereiche eng miteinander verflochten sind.
 
-Die lange Suche der Menschheit nach den Wurzeln von Gleichungen gewann durch die Einführung der neuen imaginären Zahlen die riesige Bühne der komplexen Ebene, und die Vollständigkeit dieser Bühne wurde durch den [Fundamentalsatz der Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) bewiesen. Dieser Satz wurde zum Schlüssel, der die glänzenden Türen zur Galois-Theorie und zur algebraischen Geometrie öffnete, die das Fundament der modernen Mathematik bilden.
+Die lange Suche der Menschheit nach den Wurzeln von Gleichungen gewann durch die Einführung der neuen imaginären Zahlen die riesige Bühne der komplexen Ebene, und die Vollständigkeit dieser Bühne wurde durch den [Fundamentalsatz der Algebra](https://kenji.blog/de/p/fundamental-theorem-of-algebra/) bewiesen. Dieser Satz wurde zum Schlüssel, der die glänzenden Türen zur Galois-Theorie und zur algebraischen Geometrie öffnete, die das Fundament der modernen Mathematik bilden.

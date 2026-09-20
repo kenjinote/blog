@@ -110,12 +110,12 @@ e^{At} = P e^{Dt} P^{-1}
 $$
 Para blocos de Jordan, temos termos como $t e^{\lambda t}$, que explicam fenômenos de ressonância na física.
 
-## [Teorema de Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/) e Polinômio Mínimo
+## [Teorema de Cayley-Hamilton](https://kenji.blog/pt/p/cayley-hamilton-theorem/) e Polinômio Mínimo
 
 Toda matriz zera seu polinômio característico ($p(A)=0$).
 O **polinômio mínimo** $m(\lambda)$ tem raízes que determinam a diagonalização (se não houver raízes múltiplas, é diagonalizável).
 
-## Diferença da [Decomposição em Valores Singulares (SVD)](https://kenji.blog/p/singular-value-decomposition/)
+## Diferença da [Decomposição em Valores Singulares (SVD)](https://kenji.blog/pt/p/singular-value-decomposition/)
 
 A SVD ($A = U \Sigma V^*$) aplica-se a matrizes $m \times n$. Diagonalização só a quadradas para iterações.
 

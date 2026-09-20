@@ -8,7 +8,7 @@ categories: ["mathematics", "science"]
 tags: ["Geometria", "Gauss", "Teorema da Pizza", "Theorema Egregium", "Geometria Diferencial"]
 ---
 
-No mundo da matemática, conceitos aparentemente abstratos e difíceis podem por vezes ser úteis em situações inesperadas da nossa vida quotidiana. Um dos melhores exemplos disto é o ** Teorema Notável ** (Theorema Egregium) descoberto por [Carl Friedrich Gauss](https://kenji.blog/p/gauss/). Este teorema é conhecido como um dos resultados mais importantes e belos no campo da geometria diferencial.
+No mundo da matemática, conceitos aparentemente abstratos e difíceis podem por vezes ser úteis em situações inesperadas da nossa vida quotidiana. Um dos melhores exemplos disto é o ** Teorema Notável ** (Theorema Egregium) descoberto por [Carl Friedrich Gauss](https://kenji.blog/pt/p/gauss/). Este teorema é conhecido como um dos resultados mais importantes e belos no campo da geometria diferencial.
 
 Neste artigo, aprofundaremos o significado matemático deste ** Teorema Notável **, o que é uma superfície, e por que este teorema é extremamente útil quando comemos pizza.
 
@@ -92,10 +92,10 @@ Para além de como comer pizza, este princípio pode ser visto na engenharia, ar
 - ** Folhas de plantas **: As folhas e pétalas de muitas plantas evoluíram naturalmente formas onduladas para resistir ao vento e ao seu próprio peso.
 - ** Arquitetura **: Estruturas de casca (shell structures), edifícios que cobrem grandes espaços com materiais finos, utilizam a força mecânica e as propriedades geométricas de superfícies curvas.
 
-Este teorema descoberto por Gauss foi mais tarde expandido para variedades de alta dimensão pelo seu aluno [Bernhard Riemann](https://kenji.blog/p/riemann/) (geometria Riemanniana), e tornou-se a base matemática para descrever a gravidade como a "curvatura do espaço-tempo" na teoria da relatividade geral de Albert Einstein.
+Este teorema descoberto por Gauss foi mais tarde expandido para variedades de alta dimensão pelo seu aluno [Bernhard Riemann](https://kenji.blog/pt/p/riemann/) (geometria Riemanniana), e tornou-se a base matemática para descrever a gravidade como a "curvatura do espaço-tempo" na teoria da relatividade geral de Albert Einstein.
 
 ## 5. Conclusão
 
 Por detrás da nossa ação inconsciente de "dobrar a côdea da pizza" esconde-se uma lei matemática profunda e bela que até se liga à cosmologia de Einstein.
 
-O ** Teorema Notável ** é indiscutivelmente o exemplo mais saboroso e fácil de compreender de como a matemática abstrata governa o mundo real. Da próxima vez que comer pizza, saboreie a sua fatia perfeitamente dobrada enquanto pensa em [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) e na sua grande descoberta.
+O ** Teorema Notável ** é indiscutivelmente o exemplo mais saboroso e fácil de compreender de como a matemática abstrata governa o mundo real. Da próxima vez que comer pizza, saboreie a sua fatia perfeitamente dobrada enquanto pensa em [Carl Friedrich Gauss](https://kenji.blog/pt/p/gauss/) e na sua grande descoberta.

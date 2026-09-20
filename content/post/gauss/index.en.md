@@ -10,7 +10,7 @@ tags: ["Gauss", "History of Mathematics", "Genius", "Geometry", "Number Theory"]
 
 ## 1. Introduction: The Man Known as the "Prince of Mathematicians"
 
-Johann [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) (April 30, 1777 - February 23, 1855) was a great German mathematician, astronomer, and physicist. Due to his overwhelming intellect and decisive contributions to a wide range of fields, he is hailed as the **"Prince of Mathematicians"** (Princeps mathematicorum). Gauss's achievements cover an extremely broad spectrum, from profound theories in pure mathematics to applied mathematics that describes physical phenomena in the real world.
+Johann [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/) (April 30, 1777 - February 23, 1855) was a great German mathematician, astronomer, and physicist. Due to his overwhelming intellect and decisive contributions to a wide range of fields, he is hailed as the **"Prince of Mathematicians"** (Princeps mathematicorum). Gauss's achievements cover an extremely broad spectrum, from profound theories in pure mathematics to applied mathematics that describes physical phenomena in the real world.
 
 The numerous theorems and concepts he left behind form the foundation of modern mathematics and science. The laws discovered by Gauss breathe life into the technologies we benefit from daily. In this article, we will follow the life of this unprecedented genius chronologically, delving deeply into his detailed episodes and mathematical achievements to see how he accomplished so many great feats.
 
@@ -85,13 +85,13 @@ $$
 
 Gauss called this law the "Golden Theorem" and published eight different proofs of it throughout his life.
 
-## 4. Contributions to Astronomy: Orbit Calculation of Ceres and the [Method of Least Squares](https://kenji.blog/p/method-of-least-squares/)
+## 4. Contributions to Astronomy: Orbit Calculation of Ceres and the [Method of Least Squares](https://kenji.blog/en/p/method-of-least-squares/)
 
 Gauss's talents were not limited to pure mathematics; he also achieved phenomenal results in astronomy.
 
 On January 1, 1801, Italian astronomer Giuseppe Piazzi discovered a new celestial body (later called the dwarf planet Ceres). However, after a few days of observation, the celestial body hid behind the sun and was lost sight of. Astronomers of the time attempted to predict its subsequent orbit from just a few days of observation data, but all failed.
 
-This is where Gauss came in. He calculated the orbit of Ceres using a new mathematical technique he had secretly built up for some time, the **"[Method of Least Squares](https://kenji.blog/p/method-of-least-squares/)"**. The method of least squares is a technique for estimating the most probable parameters to minimize the errors contained in observation data.
+This is where Gauss came in. He calculated the orbit of Ceres using a new mathematical technique he had secretly built up for some time, the **"[Method of Least Squares](https://kenji.blog/en/p/method-of-least-squares/)"**. The method of least squares is a technique for estimating the most probable parameters to minimize the errors contained in observation data.
 
 Assuming the observed value is $y_i$ and the theoretical value is $f(x_i, \boldsymbol{\theta})$, we find the parameter $\boldsymbol{\theta}$ that minimizes the sum of squared errors $S$.
 
@@ -123,7 +123,7 @@ $$
 
 (Where $E, F, G$ are the coefficients of the first fundamental form, and $L, M, N$ are the coefficients of the second fundamental form)
 
-According to this theorem, it is mathematically proven that, for example, no matter how a flat piece of paper (curvature 0) is rolled up, it is impossible to make a sphere (positive curvature) without distortion. This idea of Gauss's differential geometry was later generalized to higher dimensions by [Bernhard Riemann](https://kenji.blog/p/riemann/) (Riemannian geometry) and further became indispensable as the mathematical foundation for Albert Einstein's general theory of relativity in later years.
+According to this theorem, it is mathematically proven that, for example, no matter how a flat piece of paper (curvature 0) is rolled up, it is impossible to make a sphere (positive curvature) without distortion. This idea of Gauss's differential geometry was later generalized to higher dimensions by [Bernhard Riemann](https://kenji.blog/en/p/riemann/) (Riemannian geometry) and further became indispensable as the mathematical foundation for Albert Einstein's general theory of relativity in later years.
 
 ## 6. Gaussian Distribution and Electromagnetism
 
@@ -151,13 +151,13 @@ $$
 
 The unit of magnetic flux density, the "Gauss (G)", is also named after him.
 
-## 7. Hidden Insights into Non-[Euclide](https://kenji.blog/p/euclid/)an Geometry
+## 7. Hidden Insights into Non-[Euclide](https://kenji.blog/en/p/euclid/)an Geometry
 
-An episode showing Gauss's amazing foresight is the anecdote regarding **"Non-[Euclide](https://kenji.blog/p/euclid/)an Geometry"**. Whether [Euclid](https://kenji.blog/p/euclid/)'s parallel postulate (through a point outside a line, there is exactly one parallel line) could be proven had been a great mathematical mystery for over 2,000 years.
+An episode showing Gauss's amazing foresight is the anecdote regarding **"Non-[Euclide](https://kenji.blog/en/p/euclid/)an Geometry"**. Whether [Euclid](https://kenji.blog/en/p/euclid/)'s parallel postulate (through a point outside a line, there is exactly one parallel line) could be proven had been a great mathematical mystery for over 2,000 years.
 
 In his unpublished notes, Gauss was completely aware of the existence of a new geometry (hyperbolic geometry) in which the parallel postulate does not hold, and had constructed its system. However, in the conservative philosophical circles of the time (an era when Kantian philosophy was mainstream), he feared getting involved in uncomprehending criticism and controversy (in Gauss's words, "the clamor of the Boeotians") if he published a theory denying the absoluteness of space, so he never published it during his lifetime.
 
-Later, when Nikolai Lobachevsky and János Bolyai independently published non-[Euclide](https://kenji.blog/p/euclid/)an geometry, Gauss, upon receiving a paper from Bolyai's father (an old friend of Gauss), replied, "To praise it would amount to praising myself. For the entire content of the work coincides almost exactly with my own meditations which have occupied my mind for from thirty to thirty-five years." It is said that the young Bolyai was deeply disappointed by this, but at the same time, it serves as evidence of how far ahead of his time Gauss was.
+Later, when Nikolai Lobachevsky and János Bolyai independently published non-[Euclide](https://kenji.blog/en/p/euclid/)an geometry, Gauss, upon receiving a paper from Bolyai's father (an old friend of Gauss), replied, "To praise it would amount to praising myself. For the entire content of the work coincides almost exactly with my own meditations which have occupied my mind for from thirty to thirty-five years." It is said that the young Bolyai was deeply disappointed by this, but at the same time, it serves as evidence of how far ahead of his time Gauss was.
 
 ## 8. Later Years and Legacy
 
@@ -165,6 +165,6 @@ Gauss was a perfectionist, with the motto **"Few, but ripe"** (Pauca sed matura)
 
 He also mentored the next generation. In addition to the aforementioned Riemann, great mathematicians of the next generation such as Richard Dedekind and Ferdinand Gotthold Max Eisenstein received Gauss's guidance.
 
-On February 23, 1855, [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) passed away in Göttingen at the age of 77. His legacy transcends the boundaries of mathematics and flows at the root of all modern science and technology. From pure abstract thought to the calculation of planetary orbits, and down to the physical phenomenon of electromagnetism, the light of his intellect continues to shine even today.
+On February 23, 1855, [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/) passed away in Göttingen at the age of 77. His legacy transcends the boundaries of mathematics and flows at the root of all modern science and technology. From pure abstract thought to the calculation of planetary orbits, and down to the physical phenomenon of electromagnetism, the light of his intellect continues to shine even today.
 
 When we look up at the night sky or use communication on our smartphones, the great footprints of Gauss, the "Prince of Mathematicians," are certainly there.

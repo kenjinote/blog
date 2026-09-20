@@ -9,7 +9,7 @@ categories: ["mathematics", "programming", "algorithms"]
 tags: ["Math", "Algorithms", "Python", "C++"]
 ---
 
-# [¡Imprescindible para los amantes de las matemáticas! 10 hermosas fórmulas matemáticas útiles para la programación](https://kenji.blog/p/プログラミングに役立つ数式10選/)
+# [¡Imprescindible para los amantes de las matemáticas! 10 hermosas fórmulas matemáticas útiles para la programación](https://kenji.blog/es/p/プログラミングに役立つ数式10選/)
 
 La programación y las matemáticas pueden parecer, a primera vista, campos completamente diferentes. La programación es la tarea de escribir código lógico y concreto, mientras que las matemáticas son el estudio que persigue verdades abstractas y universales. Sin embargo, las matemáticas siempre están presentes en la base de la informática. En la optimización de algoritmos, ciencia de datos, aprendizaje automático, gráficos por computadora, e incluso detrás de las aplicaciones cotidianas, hermosas fórmulas matemáticas están trabajando silenciosa y poderosamente.
 
@@ -19,7 +19,7 @@ Bienvenido a un mundo donde la belleza de las matemáticas y la practicidad de l
 
 ---
 
-## 1. Identidad de Euler ([Euler's Identity](https://kenji.blog/p/eulers-identity/))
+## 1. Identidad de Euler ([Euler's Identity](https://kenji.blog/es/p/eulers-identity/))
 
 ### Belleza matemática y resumen
 Esta es la Identidad de Euler, a menudo llamada "el tesoro de la humanidad" o "la fórmula más hermosa del mundo". Cinco de las constantes más importantes de las matemáticas (el número de Euler $e$, la unidad imaginaria $i$, pi $\pi$, el elemento neutro multiplicativo $1$ y el elemento neutro aditivo $0$) se integran en una sola ecuación simple.
@@ -132,7 +132,7 @@ En el código anterior, el valor de entrada `x` se normaliza al rango $[-\pi, \p
 
 ---
 
-## 3. [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/p/bayes-theorem/))
+## 3. [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/es/p/bayes-theorem/))
 
 ### Belleza matemática y resumen
 El teorema de Bayes es un teorema para actualizar la probabilidad de un evento (probabilidad a posteriori) en función del conocimiento previo relacionado con ese evento (probabilidad a priori). Es una de las fórmulas más importantes en teoría de la probabilidad y estadística.
@@ -559,12 +559,12 @@ En el código anterior, la bifurcación basada en `x >= 0` es para prevenir el "
 
 ---
 
-## 10. Distancia [Euclid](https://kenji.blog/p/euclid/)iana y Teorema de Pitágoras ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. Distancia [Euclid](https://kenji.blog/es/p/euclid/)iana y Teorema de Pitágoras ([[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### Belleza matemática y resumen
 Es la base de la geometría desde la antigua Grecia y una fórmula que define la distancia en línea recta entre dos puntos en un espacio de $n$ dimensiones. En un espacio de 2 dimensiones, es el propio Teorema de Pitágoras ($a^2 + b^2 = c^2$).
 
-La distancia [Euclid](https://kenji.blog/p/euclid/)iana $d$ entre el punto $P(x_1, y_1, z_1)$ y $Q(x_2, y_2, z_2)$ en un espacio tridimensional se expresa de la siguiente manera:
+La distancia [Euclid](https://kenji.blog/es/p/euclid/)iana $d$ entre el punto $P(x_1, y_1, z_1)$ y $Q(x_2, y_2, z_2)$ en un espacio tridimensional se expresa de la siguiente manera:
 
 $$ d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2} $$
 

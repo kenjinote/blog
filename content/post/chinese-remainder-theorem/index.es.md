@@ -14,7 +14,7 @@ tags:
 
 ## Introducción
 
-El Teorema Chino del Resto ([Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/), abreviado CRT) es uno de los teoremas más importantes y hermosos en la teoría de números. Sus orígenes se remontan al "Sunzi Suanjing", un antiguo libro de matemáticas chino que se cree fue compilado entre los siglos III y V. Este teorema, que comenzó con problemas aritméticos simples en la antigüedad, juega un papel indispensable miles de años después en la actualidad, en tecnologías de criptografía de clave pública como la **criptografía RSA**, que respaldan la comunicación segura en Internet que usamos a diario.
+El Teorema Chino del Resto ([Chinese Remainder Theorem](https://kenji.blog/es/p/chinese-remainder-theorem/), abreviado CRT) es uno de los teoremas más importantes y hermosos en la teoría de números. Sus orígenes se remontan al "Sunzi Suanjing", un antiguo libro de matemáticas chino que se cree fue compilado entre los siglos III y V. Este teorema, que comenzó con problemas aritméticos simples en la antigüedad, juega un papel indispensable miles de años después en la actualidad, en tecnologías de criptografía de clave pública como la **criptografía RSA**, que respaldan la comunicación segura en Internet que usamos a diario.
 
 En este artículo, explicaremos en detalle este **Teorema Chino del Resto**, desde sus antecedentes históricos hasta su rigurosa definición matemática, procedimientos de cálculo específicos y aplicaciones en la teoría de la criptografía moderna, acompañados de diagramas y ejemplos concretos.
 
@@ -63,7 +63,7 @@ Lo maravilloso de este teorema no es solo que garantiza la existencia de una sol
 
 1. Calcular el producto total $M = m_1 m_2 \dots m_k$.
 2. Para cada $i$, calcular $M_i = \frac{M}{m_i}$. ($M_i$ es el producto de todos los módulos excepto $m_i$).
-3. Dado que $\gcd(M_i, m_i) = 1$, existe un inverso multiplicativo $y_i$ de $M_i$ módulo $m_i$. Es decir, encontrar un $y_i$ que satisfaga $M_i y_i \equiv 1 \pmod{m_i}$ utilizando el algoritmo de [Euclides](https://kenji.blog/p/euclid/) extendido u otro método.
+3. Dado que $\gcd(M_i, m_i) = 1$, existe un inverso multiplicativo $y_i$ de $M_i$ módulo $m_i$. Es decir, encontrar un $y_i$ que satisfaga $M_i y_i \equiv 1 \pmod{m_i}$ utilizando el algoritmo de [Euclides](https://kenji.blog/es/p/euclid/) extendido u otro método.
 4. La solución final $x$ viene dada por la siguiente fórmula.
 
 $$

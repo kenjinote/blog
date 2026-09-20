@@ -14,7 +14,7 @@ slug: "pedigree-collapse"
 
 # 1. Introduction : Le mystère de la multiplication infinie des ancêtres
 
-Lorsque nous réfléchissons à nos propres racines, c'est-à-dire à notre « arbre généalogique », nous sommes inévitablement confrontés à une étrange contradiction mathématique. Il s'agit du **paradoxe des ancêtres** ([Ancestor Paradox](https://kenji.blog/p/pedigree-collapse/)).
+Lorsque nous réfléchissons à nos propres racines, c'est-à-dire à notre « arbre généalogique », nous sommes inévitablement confrontés à une étrange contradiction mathématique. Il s'agit du **paradoxe des ancêtres** ([Ancestor Paradox](https://kenji.blog/fr/p/pedigree-collapse/)).
 
 La généalogie humaine peut être fondamentalement modélisée comme un simple arbre binaire (binary tree). Vous avez 2 parents (un père et une mère), et chacun d'eux a 2 parents (vos grands-parents). De plus, ces parents ont chacun 2 parents (vos arrière-grands-parents). En d'autres termes, si nous considérons la génération $g$ (où vous êtes la génération 0), le nombre d'ancêtres il y a $g$ générations devrait être de $2^g$ personnes.
 

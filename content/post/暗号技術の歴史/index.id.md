@@ -95,10 +95,10 @@ Selama Perang Dunia II, "Enigma" yang digunakan oleh Nazi Jerman adalah mesin sa
 
 Setiap kali sebuah huruf diketik pada keyboard, rotor berputar, sehingga meskipun huruf yang sama diketik berturut-turut, huruf sandi yang berbeda akan dihasilkan (puncak dari sandi polialfabetik). Ruang kunci (kombinasi pengaturan) mencapai sekitar $1.58 \times 10^{19}$ (sekitar 15,8 kuintiliun), dan dengan teknologi saat itu dianggap tidak mungkin untuk dipecahkan dengan serangan brute force.
 
-## [Alan Turing](https://kenji.blog/p/turing/) dan "Bombe"
+## [Alan Turing](https://kenji.blog/id/p/turing/) dan "Bombe"
 Tim pemecah kode Bletchley Park di Inggris, yang melanjutkan pencapaian awal ahli matematika Polandia seperti Marian Rejewski, menantang Enigma yang tampaknya tidak dapat ditembus ini.
 
-Secara khusus, [Alan Turing](https://kenji.blog/p/turing/) mengembangkan mesin pemecah sandi elektromekanis yang disebut "Bombe", yang memanfaatkan tebakan plainteks (Crib) yang sesuai dengan bagian dari cipherteks. Bombe mendeteksi kontradiksi logis pada kecepatan tinggi, berhasil memecahkan Enigma dengan terus menerus menghilangkan pengaturan rotor yang tidak mungkin. Pencapaian ini konon telah mempercepat kemenangan pihak Sekutu selama beberapa tahun.
+Secara khusus, [Alan Turing](https://kenji.blog/id/p/turing/) mengembangkan mesin pemecah sandi elektromekanis yang disebut "Bombe", yang memanfaatkan tebakan plainteks (Crib) yang sesuai dengan bagian dari cipherteks. Bombe mendeteksi kontradiksi logis pada kecepatan tinggi, berhasil memecahkan Enigma dengan terus menerus menghilangkan pengaturan rotor yang tidak mungkin. Pencapaian ini konon telah mempercepat kemenangan pihak Sekutu selama beberapa tahun.
 
 ---
 

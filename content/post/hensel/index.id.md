@@ -10,21 +10,21 @@ tags: ["Kurt Hensel", "bilangan p-adik", "teori bilangan aljabar", "sejarah mate
 
 ## 1. Pengantar
 
-Dalam teori bilangan modern, khususnya teori bilangan aljabar dan geometri aritmetika, **bilangan p-adik** adalah alat yang sangat diperlukan. Konsep revolusioner ini diperkenalkan pada akhir abad ke-19 oleh matematikawan Jerman **[Kurt Hensel](https://kenji.blog/p/hensel/)** (1861–1941).
+Dalam teori bilangan modern, khususnya teori bilangan aljabar dan geometri aritmetika, **bilangan p-adik** adalah alat yang sangat diperlukan. Konsep revolusioner ini diperkenalkan pada akhir abad ke-19 oleh matematikawan Jerman **[Kurt Hensel](https://kenji.blog/id/p/hensel/)** (1861–1941).
 
-Penemuannya berfungsi sebagai jembatan yang menghubungkan perspektif "lokal" dan "global" dalam matematika, membawa pergeseran paradigma dalam matematika abad ke-20. Artikel ini memberikan eksplorasi terperinci tentang kehidupan [Kurt Hensel](https://kenji.blog/p/hensel/), pencapaian terbesarnya—penemuan **bilangan p-adik**—fondasi matematisnya, dan dampak mendalam yang telah mereka berikan pada matematika modern.
+Penemuannya berfungsi sebagai jembatan yang menghubungkan perspektif "lokal" dan "global" dalam matematika, membawa pergeseran paradigma dalam matematika abad ke-20. Artikel ini memberikan eksplorasi terperinci tentang kehidupan [Kurt Hensel](https://kenji.blog/id/p/hensel/), pencapaian terbesarnya—penemuan **bilangan p-adik**—fondasi matematisnya, dan dampak mendalam yang telah mereka berikan pada matematika modern.
 
 ## 2. Garis Keturunan yang Luar Biasa dan Kehidupan Awal
 
-[Kurt Hensel](https://kenji.blog/p/hensel/) lahir pada tanggal 29 Desember 1861, di Königsberg, Prusia Timur (sekarang Kaliningrad, Rusia). Keluarganya memegang tempat yang sangat penting dalam sejarah intelektual dan artistik Jerman.
+[Kurt Hensel](https://kenji.blog/id/p/hensel/) lahir pada tanggal 29 Desember 1861, di Königsberg, Prusia Timur (sekarang Kaliningrad, Rusia). Keluarganya memegang tempat yang sangat penting dalam sejarah intelektual dan artistik Jerman.
 
-Kakeknya adalah pelukis terkenal **Wilhelm Hensel**, dan neneknya adalah pianis dan komposer luar biasa **Fanny Mendelssohn** (saudara perempuan dari komposer terkenal Felix Mendelssohn). Lebih jauh ke belakang, kakek buyutnya adalah filsuf perwakilan Pencerahan, **Moses Mendelssohn**. Dapat dikatakan bahwa lingkungan keluarga yang kaya secara budaya dan intelektual ini mendorong pemikiran [Kurt Hensel](https://kenji.blog/p/hensel/) yang bebas dan kreatif.
+Kakeknya adalah pelukis terkenal **Wilhelm Hensel**, dan neneknya adalah pianis dan komposer luar biasa **Fanny Mendelssohn** (saudara perempuan dari komposer terkenal Felix Mendelssohn). Lebih jauh ke belakang, kakek buyutnya adalah filsuf perwakilan Pencerahan, **Moses Mendelssohn**. Dapat dikatakan bahwa lingkungan keluarga yang kaya secara budaya dan intelektual ini mendorong pemikiran [Kurt Hensel](https://kenji.blog/id/p/hensel/) yang bebas dan kreatif.
 
 Ketika dia masih muda, keluarganya pindah ke Berlin, di mana dia menerima pendidikan dasar dan menengah yang berkualitas tinggi. Bakatnya di bidang matematika berkembang lebih awal, secara alami membawanya ke jalur penelitian matematika di tingkat universitas.
 
 ## 3. Hari-hari Universitas dan Pengaruh Kronecker
 
-Hensel belajar matematika di Universitas Bonn dan Berlin. Pada saat itu, Universitas Berlin adalah salah satu pusat penelitian matematika dunia, dengan tokoh-tokoh raksasa seperti **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** dan **Leopold Kronecker** mengajar di sana.
+Hensel belajar matematika di Universitas Bonn dan Berlin. Pada saat itu, Universitas Berlin adalah salah satu pusat penelitian matematika dunia, dengan tokoh-tokoh raksasa seperti **[Karl Weierstrass](https://kenji.blog/id/p/weierstrass/)** dan **Leopold Kronecker** mengajar di sana.
 
 Di antara mereka, Kronecker memiliki pengaruh terdalam pada Hensel. Seperti yang diketahui dari kutipannya yang terkenal, "Tuhan menciptakan bilangan bulat, semua yang lain adalah karya manusia," Kronecker memegang keyakinan kuat bahwa semua matematika harus direkonstruksi secara ketat berdasarkan bilangan bulat. Di bawah bimbingan Kronecker, Hensel mengabdikan dirinya secara mendalam pada aljabar dan teori bilangan.
 
@@ -140,18 +140,18 @@ Konsep Hensel lebih lanjut disempurnakan oleh matematikawan lain.
 
 Pada tahun 1916, Alexander Ostrowski membuktikan **Teorema Ostrowski**. Ini adalah fakta mengejutkan bahwa "setiap nilai mutlak non-trivial pada lapangan bilangan rasional ekuivalen dengan nilai mutlak biasa atau nilai mutlak p-adik untuk suatu bilangan prima $p$." Dengan demikian, mengumpulkan bilangan real dan semua bilangan p-adik "secara mendalam mencakup" semua kemungkinan kelengkapan bilangan rasional.
 
-Lebih jauh, murid Hensel, **[Helmut Hasse](https://kenji.blog/p/hasse/)**, menetapkan **Prinsip Lokal-Global** (Prinsip Hasse). Ini adalah teorema yang indah yang menyatakan bahwa "syarat perlu dan cukup bagi suatu persamaan untuk memiliki solusi pada bilangan rasional (secara global) adalah ia memiliki solusi pada bilangan real dan bilangan p-adik untuk semua prima $p$ (secara lokal)." Dengan ini, bilangan p-adik mengamankan posisi yang tak tergoyahkan sebagai alat penting dalam teori bilangan.
+Lebih jauh, murid Hensel, **[Helmut Hasse](https://kenji.blog/id/p/hasse/)**, menetapkan **Prinsip Lokal-Global** (Prinsip Hasse). Ini adalah teorema yang indah yang menyatakan bahwa "syarat perlu dan cukup bagi suatu persamaan untuk memiliki solusi pada bilangan rasional (secara global) adalah ia memiliki solusi pada bilangan real dan bilangan p-adik untuk semua prima $p$ (secara lokal)." Dengan ini, bilangan p-adik mengamankan posisi yang tak tergoyahkan sebagai alat penting dalam teori bilangan.
 
 ## 8. Kontribusi sebagai Pendidik dan Editor, serta Warisan
 
 Hensel memberikan kontribusi luar biasa tidak hanya sebagai peneliti tetapi juga sebagai pendidik dan editor. Dari tahun 1901 selama bertahun-tahun, ia menjabat sebagai pemimpin redaksi "Crelle's Journal" (secara resmi: Journal für die reine und angewandte Mathematik), salah satu jurnal matematika tertua di dunia, yang mendukung penyebaran penelitian matematika mutakhir di masanya.
 
-Kuliahnya jelas dan penuh semangat, membina generasi berikutnya dari matematikawan brilian, termasuk [Helmut Hasse](https://kenji.blog/p/hasse/).
+Kuliahnya jelas dan penuh semangat, membina generasi berikutnya dari matematikawan brilian, termasuk [Helmut Hasse](https://kenji.blog/id/p/hasse/).
 
-Saat ini, bilangan p-adik diterapkan di berbagai bidang di luar teori bilangan aljabar, termasuk **analisis p-adik**, **teori Hodge p-adik**, dan bahkan **mekanika kuantum p-adik** dalam fisika teoretis. Bukti historis "[Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/)" oleh [Andrew Wiles](https://kenji.blog/p/wiles/) tidak akan mungkin terjadi tanpa teori bilangan p-adik.
+Saat ini, bilangan p-adik diterapkan di berbagai bidang di luar teori bilangan aljabar, termasuk **analisis p-adik**, **teori Hodge p-adik**, dan bahkan **mekanika kuantum p-adik** dalam fisika teoretis. Bukti historis "[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)" oleh [Andrew Wiles](https://kenji.blog/id/p/wiles/) tidak akan mungkin terjadi tanpa teori bilangan p-adik.
 
 ## 9. Kesimpulan
 
-Berangkat dari analogi indah antara fungsi dan bilangan, [Kurt Hensel](https://kenji.blog/p/hensel/) membawa dimensi yang sama sekali baru ke dunia matematika dengan **bilangan p-adik**. Pendekatannya dalam "memahami global dengan melihat lokal" menjadi salah satu filosofi fundamental matematika dari abad ke-20 dan seterusnya.
+Berangkat dari analogi indah antara fungsi dan bilangan, [Kurt Hensel](https://kenji.blog/id/p/hensel/) membawa dimensi yang sama sekali baru ke dunia matematika dengan **bilangan p-adik**. Pendekatannya dalam "memahami global dengan melihat lokal" menjadi salah satu filosofi fundamental matematika dari abad ke-20 dan seterusnya.
 
 Gagasannya yang kaya dan orisinal terus menginspirasi para matematikawan di seluruh dunia yang mencari kebenaran angka dan alam saat ini.

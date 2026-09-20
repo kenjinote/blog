@@ -12,17 +12,17 @@ tags:
   - "質數"
 ---
 
-在現代網際網路社會中，我們能夠安全地進行通訊，全靠 **密碼學** 的功勞。而在這密碼學的基礎之中，存在著由17世紀數學家[皮埃爾·德·費馬](https://kenji.blog/p/fermat/)（[Pierre de Fermat](https://kenji.blog/p/fermat/)）發現的一條優美的定理。
+在現代網際網路社會中，我們能夠安全地進行通訊，全靠 **密碼學** 的功勞。而在這密碼學的基礎之中，存在著由17世紀數學家[皮埃爾·德·費馬](https://kenji.blog/zh-tw/p/fermat/)（[Pierre de Fermat](https://kenji.blog/zh-tw/p/fermat/)）發現的一條優美的定理。
 
-本文將以通俗易懂的方式，為您講解數論的重要基礎—— **[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)** （[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)），探討它的含義、證明方法，以及它是如何被應用到現代RSA密碼學中的。
+本文將以通俗易懂的方式，為您講解數論的重要基礎—— **[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)** （[Fermat's Little Theorem](https://kenji.blog/zh-tw/p/fermats-little-theorem/)），探討它的含義、證明方法，以及它是如何被應用到現代RSA密碼學中的。
 
-## 什麼是[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)？
+## 什麼是[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)？
 
-[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)是一個揭示質數與整數之間關係的非常簡單卻強大的定理。
+[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)是一個揭示質數與整數之間關係的非常簡單卻強大的定理。
 
 該定理的主張如下：
 
-> **[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)**
+> **[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)**
 > 設 $p$ 為一個質數，且 $a$ 是任意一個不是 $p$ 的倍數的整數（即 $a$ 與 $p$ 互質）。此時，以下同餘式成立：
 > 
 > $$ a^{p-1} \equiv 1 \pmod p $$
@@ -52,7 +52,7 @@ tags:
 
 ## 定理的證明
 
-[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)的證明有多種途徑，這裡我們介紹一種基於數論的經典證明方法。
+[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的證明有多種途徑，這裡我們介紹一種基於數論的經典證明方法。
 
 設 $p$ 為質數，$a$ 為不是 $p$ 的倍數的整數。
 考慮集合 $S = \{1, 2, 3, \dots, p-1\}$。我們將這個集合中的每一個元素都乘以 $a$，得到一個新的集合 $S'$。
@@ -94,9 +94,9 @@ flowchart TD
 
 ## 在現代密碼學中的應用：RSA密碼
 
-[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)（以及它的推廣，即 **歐拉定理** ）最重要的應用領域，就是支撐著網際網路安全的 **RSA密碼**。
+[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)（以及它的推廣，即 **歐拉定理** ）最重要的應用領域，就是支撐著網際網路安全的 **RSA密碼**。
 
-RSA密碼的安全性建立在大整數分解的困難性之上。在其機制中，「[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)」的原理在金鑰生成與解密過程中發揮著決定性的作用。
+RSA密碼的安全性建立在大整數分解的困難性之上。在其機制中，「[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)」的原理在金鑰生成與解密過程中發揮著決定性的作用。
 
 ```mermaid
 sequenceDiagram
@@ -112,10 +112,10 @@ sequenceDiagram
 ```
 
 在RSA密碼中，準備兩個巨大的質數 $p$ 和 $q$，並令 $n = p \times q$。
-根據歐拉定理，在加密和解密的過程中，金鑰（$e$ 和 $d$）被設計成使得 $M^{ed} \equiv M \pmod n$ 成立。在這裡，明文 $M$ 能夠神奇地恢復原貌，本質上正是依賴於[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)所保證的數學性質。
+根據歐拉定理，在加密和解密的過程中，金鑰（$e$ 和 $d$）被設計成使得 $M^{ed} \equiv M \pmod n$ 成立。在這裡，明文 $M$ 能夠神奇地恢復原貌，本質上正是依賴於[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)所保證的數學性質。
 
 ## 總結
 
-17世紀由[皮埃爾·德·費馬](https://kenji.blog/p/fermat/)發現的這個小小的定理，在幾百年後的現代社會中，已經成為了支撐資訊安全根基的不可或缺的元素。
+17世紀由[皮埃爾·德·費馬](https://kenji.blog/zh-tw/p/fermat/)發現的這個小小的定理，在幾百年後的現代社會中，已經成為了支撐資訊安全根基的不可或缺的元素。
 
-**[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)** 可以說是展示純數學如何與實用技術（密碼學和演算法）相結合的最優美的例子之一。我們不禁要為數學的深奧與其應用範圍的廣泛而驚嘆。
+**[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)** 可以說是展示純數學如何與實用技術（密碼學和演算法）相結合的最優美的例子之一。我們不禁要為數學的深奧與其應用範圍的廣泛而驚嘆。

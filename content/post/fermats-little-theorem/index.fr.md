@@ -12,7 +12,7 @@ tags:
   - "Nombres Premiers"
 ---
 
-Dans la société Internet moderne, nous devons notre capacité à communiquer en toute sécurité à la **cryptographie**. À la base même de cette cryptographie se trouve un magnifique théorème découvert par le mathématicien du XVIIe siècle [Pierre de Fermat](https://kenji.blog/p/fermat/).
+Dans la société Internet moderne, nous devons notre capacité à communiquer en toute sécurité à la **cryptographie**. À la base même de cette cryptographie se trouve un magnifique théorème découvert par le mathématicien du XVIIe siècle [Pierre de Fermat](https://kenji.blog/fr/p/fermat/).
 
 Dans cet article, nous expliquerons **le petit théorème de Fermat**, une pierre angulaire cruciale de la théorie des nombres, d'une manière facile à comprendre, en couvrant sa signification, sa démonstration et la façon dont il est appliqué à la cryptographie RSA moderne.
 
@@ -116,6 +116,6 @@ Par le théorème d'Euler, les clés ($e$ et $d$) sont conçues pour que $M^{ed}
 
 ## Conclusion
 
-Un petit théorème découvert par [Pierre de Fermat](https://kenji.blog/p/fermat/) au XVIIe siècle est devenu un élément indispensable soutenant le fondement de la sécurité de l'information dans la société moderne des centaines d'années plus tard.
+Un petit théorème découvert par [Pierre de Fermat](https://kenji.blog/fr/p/fermat/) au XVIIe siècle est devenu un élément indispensable soutenant le fondement de la sécurité de l'information dans la société moderne des centaines d'années plus tard.
 
 **Le petit théorème de Fermat** peut être considéré comme l'un des plus beaux exemples démontrant comment les mathématiques pures se connectent à la technologie pratique (cryptographie et algorithmes). On ne peut s'empêcher d'être étonné par la profondeur des mathématiques et l'étendue de leur applicabilité.

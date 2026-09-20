@@ -14,13 +14,13 @@ tags:
 
 ## Introduction
 
-Dans le domaine des mathématiques appelé topologie, il existe de nombreux théorèmes à la fois intuitivement intéressants et puissants. Parmi eux, le **théorème de la boule chevelue** ([Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/)) est particulièrement célèbre. Ce théorème s'exprime dans des termes très visuels et faciles à comprendre : « on ne peut pas peigner une boule chevelue sans faire au moins un épi ».
+Dans le domaine des mathématiques appelé topologie, il existe de nombreux théorèmes à la fois intuitivement intéressants et puissants. Parmi eux, le **théorème de la boule chevelue** ([Hairy Ball Theorem](https://kenji.blog/fr/p/hairy-ball-theorem/)) est particulièrement célèbre. Ce théorème s'exprime dans des termes très visuels et faciles à comprendre : « on ne peut pas peigner une boule chevelue sans faire au moins un épi ».
 
 Cependant, un sens mathématique profond se cache derrière ce théorème, influençant la météorologie de notre Terre, l'infographie (CG), et même les lois fondamentales de la physique. Dans cet article, nous expliquerons en détail ce théorème, de sa signification intuitive à sa formulation mathématique, jusqu'à ses applications étonnantes.
 
 ## Qu'est-ce que le théorème de la boule chevelue ?
 
-Le théorème de la boule chevelue a été énoncé pour la première fois en 1885 par [Henri Poincaré](https://kenji.blog/p/poincare/), et a été rigoureusement prouvé en 1912 par Luitzen Egbertus Jan Brouwer.
+Le théorème de la boule chevelue a été énoncé pour la première fois en 1885 par [Henri Poincaré](https://kenji.blog/fr/p/poincare/), et a été rigoureusement prouvé en 1912 par Luitzen Egbertus Jan Brouwer.
 
 ### Compréhension intuitive
 

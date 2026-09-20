@@ -8,7 +8,7 @@ tags: ["Ship of Theseus", "Refactoring", "Microservices", "Object-Oriented", "DD
 slug: "ship-of-theseus"
 ---
 
-Hello, everyone. Are you familiar with the paradox (thought experiment) called **[The Ship of Theseus](https://kenji.blog/p/ship-of-theseus/)**?
+Hello, everyone. Are you familiar with the paradox (thought experiment) called **[The Ship of Theseus](https://kenji.blog/en/p/ship-of-theseus/)**?
 
 The ship ridden by the hero Theseus from Greek mythology was preserved as a monument by later generations. However, because it was a wooden ship, parts of it decayed over time. People continued to repair the ship by replacing the decayed wood with new wood. After a long time had passed, it finally reached a state where **not a single part of the original ship remained**.
 
@@ -18,9 +18,9 @@ Here, a question arises.
 
 This thought experiment has been discussed since ancient times in philosophy as a way to question what "identity" is. Surprisingly, this problem is also a theme we routinely face in modern **software engineering** and **system development**.
 
-In this article, using the paradox of **[The Ship of Theseus](https://kenji.blog/p/ship-of-theseus/)** as a starting point, we will deeply explore refactoring in software development, migration of legacy systems, and "identity" in object-oriented programming.
+In this article, using the paradox of **[The Ship of Theseus](https://kenji.blog/en/p/ship-of-theseus/)** as a starting point, we will deeply explore refactoring in software development, migration of legacy systems, and "identity" in object-oriented programming.
 
-## 1. "[The Ship of Theseus](https://kenji.blog/p/ship-of-theseus/)" in Software
+## 1. "[The Ship of Theseus](https://kenji.blog/en/p/ship-of-theseus/)" in Software
 
 In modern software development, it is rare for a system to continue running completely unchanged after it has been released once. The code is continuously rewritten for various reasons, such as adding business requirements, fixing bugs, improving performance, or updating the underlying technology.
 
@@ -41,7 +41,7 @@ graph LR
 
 When this process is complete, the internal structure of the system the user is accessing is **completely different**. There might not be a single line of old code left. However, from the user's perspective, it is the "same old service," and neither the URL nor the brand name has changed.
 
-This is exactly **[The Ship of Theseus](https://kenji.blog/p/ship-of-theseus/)**. Even if all the components (parts) that make up the system are replaced, the "identity" of the system as a whole is considered to be maintained.
+This is exactly **[The Ship of Theseus](https://kenji.blog/en/p/ship-of-theseus/)**. Even if all the components (parts) that make up the system are replaced, the "identity" of the system as a whole is considered to be maintained.
 
 ## 2. "Identity" in Object-Oriented Programming
 
@@ -104,7 +104,7 @@ graph TD
 
 What guarantees this "externally observable behavior" is **automated testing**. As long as all tests continue to pass, no matter how many internal parts (methods, classes, or the entire architecture) you replace, the software remains the "same thing," just like the Ship of Theseus.
 
-## 4. "[The Ship of Theseus](https://kenji.blog/p/ship-of-theseus/)" in Project Teams
+## 4. "[The Ship of Theseus](https://kenji.blog/en/p/ship-of-theseus/)" in Project Teams
 
 Not only the software system itself but also the **development team** that builds it can become a Ship of Theseus.
 

@@ -15,13 +15,13 @@ tags:
 
 ## Introduction
 
-[Marin Mersenne](https://kenji.blog/p/mersenne/) (1588-1648) était un théologien, philosophe, mathématicien et théoricien de la musique français du XVIIe siècle. Bien qu'il ait fait ses propres découvertes mathématiques, il est surtout connu pour son rôle de **« chef de poste de l'Europe »** (le facteur de l'Europe), reliant les grands savants de son temps.
+[Marin Mersenne](https://kenji.blog/fr/p/mersenne/) (1588-1648) était un théologien, philosophe, mathématicien et théoricien de la musique français du XVIIe siècle. Bien qu'il ait fait ses propres découvertes mathématiques, il est surtout connu pour son rôle de **« chef de poste de l'Europe »** (le facteur de l'Europe), reliant les grands savants de son temps.
 
 Dans cet article, nous explorerons la vie de Mersenne, l'immense réseau intellectuel qu'il a construit, et les **nombres premiers de Mersenne** qui sont profondément liés à la cryptographie moderne. De plus, nous nous pencherons sur ses contributions à l'acoustique et son influence sur la méthodologie scientifique.
 
 ## Jeunesse et vie monastique
 
-[Marin Mersenne](https://kenji.blog/p/mersenne/) est né le 8 septembre 1588 dans une famille de paysans à Oizé, dans le Maine, en France. Après avoir reçu une éducation de base au collège du Mans, il entre au collège jésuite de La Flèche en 1604. C'est là qu'il rencontre [René Descartes](https://kenji.blog/p/descartes/), qui deviendra plus tard le père de la philosophie moderne, et noue avec lui une amitié de toute une vie.
+[Marin Mersenne](https://kenji.blog/fr/p/mersenne/) est né le 8 septembre 1588 dans une famille de paysans à Oizé, dans le Maine, en France. Après avoir reçu une éducation de base au collège du Mans, il entre au collège jésuite de La Flèche en 1604. C'est là qu'il rencontre [René Descartes](https://kenji.blog/fr/p/descartes/), qui deviendra plus tard le père de la philosophie moderne, et noue avec lui une amitié de toute une vie.
 
 En 1611, Mersenne rejoint l'Ordre des Minimes. Les Minimes étaient un ordre aux règles strictes (comme le jeûne et le végétarisme), mais ils favorisaient une culture qui encourageait la poursuite des études. En 1619, il s'installe au couvent de l'Annonciade à Paris, qui devient sa base pour se plonger dans la théologie, la philosophie et les sciences naturelles.
 
@@ -49,7 +49,7 @@ graph TD
     Mersenne <-->|"Acoustique"| Huygens
 ```
 
-Au centre de ce réseau, lorsque quelqu'un découvrait un nouveau théorème, Mersenne le transmettait à d'autres savants, encourageant la critique et la vérification. Par exemple, c'est Mersenne qui a communiqué les découvertes mathématiques de [Pierre de Fermat](https://kenji.blog/p/fermat/) à Descartes, déclenchant un débat féroce entre les deux. Il est également connu pour avoir traduit en français les œuvres de Galileo Galilei (comme le *Dialogue sur les deux grands systèmes du monde*), les faisant largement connaître malgré la stricte censure de l'Église catholique. Certains historiens estiment que sans lui, la révolution scientifique du XVIIe siècle aurait pu être retardée de plusieurs décennies.
+Au centre de ce réseau, lorsque quelqu'un découvrait un nouveau théorème, Mersenne le transmettait à d'autres savants, encourageant la critique et la vérification. Par exemple, c'est Mersenne qui a communiqué les découvertes mathématiques de [Pierre de Fermat](https://kenji.blog/fr/p/fermat/) à Descartes, déclenchant un débat féroce entre les deux. Il est également connu pour avoir traduit en français les œuvres de Galileo Galilei (comme le *Dialogue sur les deux grands systèmes du monde*), les faisant largement connaître malgré la stricte censure de l'Église catholique. Certains historiens estiment que sans lui, la révolution scientifique du XVIIe siècle aurait pu être retardée de plusieurs décennies.
 
 ## Réalisations mathématiques : les nombres premiers de Mersenne
 
@@ -137,6 +137,6 @@ Mersenne croyait fermement que les progrès scientifiques prouvaient la grandeur
 
 ## Conclusion
 
-[Marin Mersenne](https://kenji.blog/p/mersenne/) possédait non seulement une intuition mathématique exceptionnelle, mais aussi un talent rare pour relier les personnes et les connaissances. Le réseau intellectuel qu'il a mis en place a finalement conduit à la naissance de sociétés scientifiques formelles, telles que l'Académie des sciences en France et la Royal Society en Angleterre.
+[Marin Mersenne](https://kenji.blog/fr/p/mersenne/) possédait non seulement une intuition mathématique exceptionnelle, mais aussi un talent rare pour relier les personnes et les connaissances. Le réseau intellectuel qu'il a mis en place a finalement conduit à la naissance de sociétés scientifiques formelles, telles que l'Académie des sciences en France et la Royal Society en Angleterre.
 
 Son nom est à jamais gravé dans l'histoire des mathématiques sous la forme des nombres premiers de Mersenne, mais son rôle de « facilitateur intellectuel » dans la révolution scientifique du XVIIe siècle est également une grande réalisation qui ne doit jamais être oubliée. Sa vie nous enseigne que la science se développe non seulement grâce au génie des individus, mais aussi grâce à une communication et une collaboration ouvertes.

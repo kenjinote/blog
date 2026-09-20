@@ -15,13 +15,13 @@ tags:
 
 ## 1. Pendahuluan: Mengapa Kasino Tidak Pernah "Berjudi"
 
-Kasino-kasino mewah di seluruh dunia. Beberapa pemain menghasilkan kekayaan dalam semalam, sementara yang lain kehilangan segalanya. Namun, operator kasino tidak pernah **berjudi**. Mereka menjalankan bisnis berdasarkan fondasi matematis yang kuat, yaitu **[Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/)** ([Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/)).
+Kasino-kasino mewah di seluruh dunia. Beberapa pemain menghasilkan kekayaan dalam semalam, sementara yang lain kehilangan segalanya. Namun, operator kasino tidak pernah **berjudi**. Mereka menjalankan bisnis berdasarkan fondasi matematis yang kuat, yaitu **[Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/)** ([Law of Large Numbers](https://kenji.blog/id/p/law-of-large-numbers/)).
 
-Dalam artikel ini, kami menjelaskan secara komprehensif tentang "[Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/)," teorema paling mendasar dan penting dalam teori probabilitas, dari pemahaman intuitif hingga definisi matematis yang ketat. Selain itu, kami menggali kesalahpahaman umum dan bagaimana hal ini diterapkan dalam masyarakat.
+Dalam artikel ini, kami menjelaskan secara komprehensif tentang "[Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/)," teorema paling mendasar dan penting dalam teori probabilitas, dari pemahaman intuitif hingga definisi matematis yang ketat. Selain itu, kami menggali kesalahpahaman umum dan bagaimana hal ini diterapkan dalam masyarakat.
 
-## 2. Apa Itu [Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/)?
+## 2. Apa Itu [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/)?
 
-[Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/) (LLN) secara sederhana adalah hukum bahwa **"seiring dengan peningkatan jumlah percobaan yang cukup, probabilitas terjadinya suatu peristiwa akan konvergen menuju nilai teoretisnya (nilai harapan)."**
+[Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) (LLN) secara sederhana adalah hukum bahwa **"seiring dengan peningkatan jumlah percobaan yang cukup, probabilitas terjadinya suatu peristiwa akan konvergen menuju nilai teoretisnya (nilai harapan)."**
 
 Bayangkan melempar koin. Probabilitas mendapatkan sisi angka adalah $1/2$ ($50\%$). Namun, hanya melemparnya 10 kali tidak menjamin 5 angka dan 5 gambar. Anda mungkin mendapatkan 7 angka, atau hanya 2.
 Namun, jika Anda mengulang percobaan 10.000 atau 100.000 kali, proporsi angka akan mendekati $50\%$ tanpa batas.
@@ -47,7 +47,7 @@ $$
 $$
 
 Dengan kata lain, untuk setiap 1 dolar yang dipertaruhkan, pemain kehilangan rata-rata sekitar $5,26$ sen.
-Dalam jangka pendek, pemain mungkin menang berturut-turut dan mendapatkan banyak uang. Namun, ketika puluhan ribu atau jutaan percobaan (banyak permainan oleh banyak pemain) diulang, [Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/) mulai bekerja, dan margin keuntungan kasino secara pasti akan konvergen di angka $5,26\%$. Bagi kasino, apakah individu pemain menang atau kalah bukanlah hal yang penting. Mereka hanya perlu fokus pada mengumpulkan jumlah percobaan sesuai dengan **[Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/)**.
+Dalam jangka pendek, pemain mungkin menang berturut-turut dan mendapatkan banyak uang. Namun, ketika puluhan ribu atau jutaan percobaan (banyak permainan oleh banyak pemain) diulang, [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) mulai bekerja, dan margin keuntungan kasino secara pasti akan konvergen di angka $5,26\%$. Bagi kasino, apakah individu pemain menang atau kalah bukanlah hal yang penting. Mereka hanya perlu fokus pada mengumpulkan jumlah percobaan sesuai dengan **[Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/)**.
 
 ```mermaid
 sequenceDiagram
@@ -62,9 +62,9 @@ sequenceDiagram
     C-->>C: "Menjamin pendapatan yang stabil"
 ```
 
-## 4. Definisi Matematis dari [Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/)
+## 4. Definisi Matematis dari [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/)
 
-Bergantung pada kekuatan konvergensinya, [Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/) memiliki dua jenis: **Hukum Lemah Bilangan Besar** (WLLN) dan **Hukum Kuat Bilangan Besar** (SLLN). Dinyatakan secara matematis dan ketat, bunyinya adalah sebagai berikut.
+Bergantung pada kekuatan konvergensinya, [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) memiliki dua jenis: **Hukum Lemah Bilangan Besar** (WLLN) dan **Hukum Kuat Bilangan Besar** (SLLN). Dinyatakan secara matematis dan ketat, bunyinya adalah sebagai berikut.
 
 ### 4.1. Hukum Lemah Bilangan Besar (WLLN)
 
@@ -107,15 +107,15 @@ Saat $n \to \infty$, sisi kanan mendekati $0$. Oleh karena itu, probabilitas di 
 
 ## 5. Kekeliruan Penjudi (Gambler's Fallacy)
 
-Salah satu bias psikologis terkenal yang lahir dari kesalahpahaman terhadap [Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/) adalah **Kekeliruan Penjudi**.
+Salah satu bias psikologis terkenal yang lahir dari kesalahpahaman terhadap [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) adalah **Kekeliruan Penjudi**.
 
-Ketika orang melihat "merah" muncul 10 kali berturut-turut pada rolet, banyak yang berpikir "seharusnya hitam segera keluar". Hal ini didasarkan pada penalaran yang salah bahwa "karena [Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/) menyatakan rasio merah dan hitam harus konvergen ke $50\%$, hitam menjadi lebih mungkin muncul untuk mengimbangi bias sebelumnya."
+Ketika orang melihat "merah" muncul 10 kali berturut-turut pada rolet, banyak yang berpikir "seharusnya hitam segera keluar". Hal ini didasarkan pada penalaran yang salah bahwa "karena [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) menyatakan rasio merah dan hitam harus konvergen ke $50\%$, hitam menjadi lebih mungkin muncul untuk mengimbangi bias sebelumnya."
 
-Namun, bola rolet tidak memiliki ingatan. Pada putaran ke-11, probabilitas munculnya merah dan probabilitas munculnya hitam tetap mandiri dan sama. [Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/) hanya menjamin bahwa rasio akan konvergen di "masa depan yang tak terhingga," dan **bukan berarti ada kekuatan yang bekerja untuk mengimbangi penyimpangan masa lalu**.
+Namun, bola rolet tidak memiliki ingatan. Pada putaran ke-11, probabilitas munculnya merah dan probabilitas munculnya hitam tetap mandiri dan sama. [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) hanya menjamin bahwa rasio akan konvergen di "masa depan yang tak terhingga," dan **bukan berarti ada kekuatan yang bekerja untuk mengimbangi penyimpangan masa lalu**.
 
 ## 6. Simulasi dengan Python
 
-Mari kita visualisasikan [Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/) secara konkret menggunakan pemrograman. Kita akan menyimulasikan melempar dadu dan melihat bagaimana rata-rata hasilnya konvergen menuju nilai harapan 3.5.
+Mari kita visualisasikan [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) secara konkret menggunakan pemrograman. Kita akan menyimulasikan melempar dadu dan melihat bagaimana rata-rata hasilnya konvergen menuju nilai harapan 3.5.
 
 ```python
 import numpy as np
@@ -144,30 +144,30 @@ plt.grid(True)
 plt.show()
 ```
 
-Saat Anda menjalankan kode ini, rata-rata berfluktuasi secara tajam pada beberapa lemparan awal, tetapi seiring bertambahnya jumlah percobaan, Anda mendapatkan grafik yang mengikuti garis putus-putus merah (nilai harapan 3.5) dengan sempurna. Ini adalah bukti visual dari [Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/).
+Saat Anda menjalankan kode ini, rata-rata berfluktuasi secara tajam pada beberapa lemparan awal, tetapi seiring bertambahnya jumlah percobaan, Anda mendapatkan grafik yang mengikuti garis putus-putus merah (nilai harapan 3.5) dengan sempurna. Ini adalah bukti visual dari [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/).
 
-## 7. Kasus di Mana [Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/) Tidak Berlaku: Distribusi Cauchy
+## 7. Kasus di Mana [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) Tidak Berlaku: Distribusi Cauchy
 
-[Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/) tidak bersifat universal. Salah satu prasyaratnya adalah "nilai harapan (rata-rata) harus berhingga."
+[Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) tidak bersifat universal. Salah satu prasyaratnya adalah "nilai harapan (rata-rata) harus berhingga."
 Misalnya, distribusi probabilitas yang disebut **Distribusi Cauchy** memiliki ekor yang sangat tebal (nilai ekstrem mudah terjadi) dan nilai harapan serta variansnya tidak dapat ditentukan (mereka divergen tak terhingga).
 
-Meskipun Anda menghasilkan angka acak yang mengikuti distribusi Cauchy dan menghitung rata-ratanya, nilainya tidak akan pernah konvergen ke satu angka spesifik dan akan terus melonjak tak beraturan. Di dunia nyata juga, penting untuk memahami bahwa ada kasus-kasus (seperti pasar keuangan di mana peristiwa ekstrem yang tak terduga disebut "Angsa Hitam" terjadi) di mana [Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/) sederhana tidak dapat diterapkan (atau berbahaya untuk diterapkan).
+Meskipun Anda menghasilkan angka acak yang mengikuti distribusi Cauchy dan menghitung rata-ratanya, nilainya tidak akan pernah konvergen ke satu angka spesifik dan akan terus melonjak tak beraturan. Di dunia nyata juga, penting untuk memahami bahwa ada kasus-kasus (seperti pasar keuangan di mana peristiwa ekstrem yang tak terduga disebut "Angsa Hitam" terjadi) di mana [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) sederhana tidak dapat diterapkan (atau berbahaya untuk diterapkan).
 
 ## 8. Contoh Penerapan di Dunia Nyata
 
-[Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/) digunakan tidak hanya di kasino, tetapi dalam berbagai sistem yang mendukung fondasi masyarakat kita.
+[Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) digunakan tidak hanya di kasino, tetapi dalam berbagai sistem yang mendukung fondasi masyarakat kita.
 
 ### 8.1. Bisnis Asuransi
-Asuransi jiwa dan asuransi mobil adalah model bisnis yang persis didasarkan pada [Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/). Sangat tidak mungkin untuk memprediksi secara akurat kapan seseorang akan jatuh sakit atau mengalami kecelakaan. Namun, dengan mengumpulkan data pada skala puluhan atau ratusan ribu orang, kita dapat memprediksi dengan tingkat akurasi yang sangat tinggi berapa proporsi pembayaran asuransi yang akan terjadi dalam suatu periode. Hal ini memungkinkan perhitungan premi yang sesuai dan membangun bisnis yang layak.
+Asuransi jiwa dan asuransi mobil adalah model bisnis yang persis didasarkan pada [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/). Sangat tidak mungkin untuk memprediksi secara akurat kapan seseorang akan jatuh sakit atau mengalami kecelakaan. Namun, dengan mengumpulkan data pada skala puluhan atau ratusan ribu orang, kita dapat memprediksi dengan tingkat akurasi yang sangat tinggi berapa proporsi pembayaran asuransi yang akan terjadi dalam suatu periode. Hal ini memungkinkan perhitungan premi yang sesuai dan membangun bisnis yang layak.
 
 ### 8.2. Pengendalian Kualitas Statistik
-Dalam pembuatan produk di pabrik, memeriksa seluruh produk seringkali tidak mungkin dilakukan dari sudut pandang biaya dan waktu. Oleh karena itu, sebagian produk yang dipilih secara acak (sampel) diperiksa, dan tingkat cacat keseluruhan diestimasi dari hasilnya. Di sini juga, [Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/) berfungsi sebagai dasar yang kuat untuk menyimpulkan sifat-sifat suatu populasi dari sampel.
+Dalam pembuatan produk di pabrik, memeriksa seluruh produk seringkali tidak mungkin dilakukan dari sudut pandang biaya dan waktu. Oleh karena itu, sebagian produk yang dipilih secara acak (sampel) diperiksa, dan tingkat cacat keseluruhan diestimasi dari hasilnya. Di sini juga, [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) berfungsi sebagai dasar yang kuat untuk menyimpulkan sifat-sifat suatu populasi dari sampel.
 
 ### 8.3. Pembelajaran Mesin (Machine Learning) dan Big Data
-Model kecerdasan buatan (AI) dan pembelajaran mesin modern mencapai akurasi tinggi dengan mempelajari dari kumpulan data yang sangat besar (big data). Saat data pelatihan meningkat, pengaruh noise (gangguan) berkurang, dan model yang lebih mendekati pola sebenarnya atau distribusi probabilitas dapat diperoleh. Ini dimungkinkan karena adanya dukungan matematis dari [Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/). Proses konvergensi ke hukum sebenarnya melalui pengolahan data masif pada dasarnya adalah inti dari pembelajaran mesin.
+Model kecerdasan buatan (AI) dan pembelajaran mesin modern mencapai akurasi tinggi dengan mempelajari dari kumpulan data yang sangat besar (big data). Saat data pelatihan meningkat, pengaruh noise (gangguan) berkurang, dan model yang lebih mendekati pola sebenarnya atau distribusi probabilitas dapat diperoleh. Ini dimungkinkan karena adanya dukungan matematis dari [Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/). Proses konvergensi ke hukum sebenarnya melalui pengolahan data masif pada dasarnya adalah inti dari pembelajaran mesin.
 
 ## 9. Kesimpulan
 
-[Hukum Bilangan Besar](https://kenji.blog/p/law-of-large-numbers/) adalah alat yang ampuh bagi kita untuk memahami dunia yang sangat tidak pasti ini dan membuat keputusan yang rasional. Dari struktur keuntungan kasino hingga asuransi dan teknologi AI, hukum ini diam-diam tetapi pasti beroperasi di mana-mana dalam masyarakat modern.
+[Hukum Bilangan Besar](https://kenji.blog/id/p/law-of-large-numbers/) adalah alat yang ampuh bagi kita untuk memahami dunia yang sangat tidak pasti ini dan membuat keputusan yang rasional. Dari struktur keuntungan kasino hingga asuransi dan teknologi AI, hukum ini diam-diam tetapi pasti beroperasi di mana-mana dalam masyarakat modern.
 
 Lain kali saat Anda melempar koin atau melempar dadu, bagaimana jika Anda memikirkan tentang hukum matematika yang besar dan indah yang tersembunyi di balik setiap kebetulan? Daripada hanyut dalam suka atau duka akibat keberuntungan jangka pendek, memiliki perspektif jangka panjang mungkin akan sedikit mengubah cara Anda memandang dunia.

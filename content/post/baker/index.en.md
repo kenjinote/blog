@@ -8,20 +8,20 @@ categories: ["mathematics", "biography"]
 tags: ["Alan Baker", "Number Theory", "Fields Medal", "Transcendental Number Theory"]
 ---
 
-# [Alan Baker: The Fields Medalist Who Revolutionized Transcendental Number Theory](https://kenji.blog/p/baker/)
+# [Alan Baker: The Fields Medalist Who Revolutionized Transcendental Number Theory](https://kenji.blog/en/p/baker/)
 
 ## 1. Introduction
 
 In the long history of mathematics, there are countless problems that seem deceptively simple yet have puzzled the world's greatest minds for centuries. Among these, the study of "Transcendental numbers" is known as one of the deepest fields in modern mathematics, demanding exceptionally powerful theoretical frameworks, with roots tracing back to the ancient Greek problem of "squaring the circle."
 
-The British mathematician **[Alan Baker](https://kenji.blog/p/baker/)** brought a historic breakthrough to this immensely challenging field of transcendental number theory. His greatest achievement, the "Theorem on Linear Forms in Logarithms" (often simply called Baker's Theorem), transcended the boundaries of pure transcendental number theory. It played a decisive role in solving long-standing open problems, including methods for solving specific Diophantine equations and resolving Gauss's class number problem. For these groundbreaking contributions, he was awarded the **Fields Medal**—the highest honor in mathematics—at the 1970 International Congress of Mathematicians at the young age of 31.
+The British mathematician **[Alan Baker](https://kenji.blog/en/p/baker/)** brought a historic breakthrough to this immensely challenging field of transcendental number theory. His greatest achievement, the "Theorem on Linear Forms in Logarithms" (often simply called Baker's Theorem), transcended the boundaries of pure transcendental number theory. It played a decisive role in solving long-standing open problems, including methods for solving specific Diophantine equations and resolving Gauss's class number problem. For these groundbreaking contributions, he was awarded the **Fields Medal**—the highest honor in mathematics—at the 1970 International Congress of Mathematicians at the young age of 31.
 
-In this article, we will delve deeply into [Alan Baker](https://kenji.blog/p/baker/)'s life, the mathematical challenges he faced, and how the theories he established have influenced modern mathematics, all while exploring the mathematical details.
+In this article, we will delve deeply into [Alan Baker](https://kenji.blog/en/p/baker/)'s life, the mathematical challenges he faced, and how the theories he established have influenced modern mathematics, all while exploring the mathematical details.
 
 ## 2. Life and Education
 
 ### 2.1 Early Life and the Path to Cambridge
-[Alan Baker](https://kenji.blog/p/baker/) was born on August 19, 1939, in London, England. Showing extraordinary talent in mathematics from an early age, he attended a local grammar school before proceeding to University College London (UCL). There, he rigorously studied the foundations of mathematics and graduated with top honors.
+[Alan Baker](https://kenji.blog/en/p/baker/) was born on August 19, 1939, in London, England. Showing extraordinary talent in mathematics from an early age, he attended a local grammar school before proceeding to University College London (UCL). There, he rigorously studied the foundations of mathematics and graduated with top honors.
 
 Seeking greater heights, he then moved to Trinity College, Cambridge. At the time, the University of Cambridge was one of the world's leading centers for number theory research. There, Baker studied under the great mathematician **Harold Davenport**, who was leading the British number theory community. Davenport was an authority on Diophantine approximation and analytic number theory. Under his mentorship, Baker honed his advanced mathematical intuition and rigorous proof techniques.
 
@@ -30,7 +30,7 @@ In 1964, Baker obtained his Ph.D. from the University of Cambridge. Even in his 
 
 In 1966, he began publishing a series of groundbreaking papers on "Linear forms in logarithms." This achievement sent shockwaves through the global mathematical community, leading to his award of the **Fields Medal** at the 1970 International Congress of Mathematicians (ICM) held in Nice, France.
 
-Baker remained at Cambridge for the rest of his career as a Professor of Pure Mathematics, contributing immensely to number theory research and the mentoring of the next generation. He traveled the world giving lectures and served as a visiting professor at many universities in India, the United States, and elsewhere. [Alan Baker](https://kenji.blog/p/baker/) passed away on February 4, 2018, at the age of 78, but the theorems and methods he left behind remain deeply ingrained in modern computational number theory and cryptography.
+Baker remained at Cambridge for the rest of his career as a Professor of Pure Mathematics, contributing immensely to number theory research and the mentoring of the next generation. He traveled the world giving lectures and served as a visiting professor at many universities in India, the United States, and elsewhere. [Alan Baker](https://kenji.blog/en/p/baker/) passed away on February 4, 2018, at the age of 78, but the theorems and methods he left behind remain deeply ingrained in modern computational number theory and cryptography.
 
 ## 3. Mathematical Achievements: Transcendental Number Theory and Baker's Theorem
 
@@ -40,10 +40,10 @@ To appreciate the true value of Baker's work, we must first review the classific
 - **Algebraic number**: A complex number that is a root of a non-zero polynomial with rational coefficients $\mathbb{Q}$. For example, $\sqrt{2}$, which is a root of $x^2 - 2 = 0$, and the roots of $x^4 + 1 = 0$ fall into this category. All rational numbers are also algebraic numbers since they are roots of linear equations $qx - p = 0$.
 - **Transcendental number**: A complex number that is not a root of any non-zero polynomial with rational coefficients. Prime examples include the mathematical constants $\pi$ (pi) and $e$ (the base of the natural logarithm).
 
-In the late 19th century, [Georg Cantor](https://kenji.blog/p/cantor/) proved from a set-theoretic perspective that while the set of algebraic numbers is countably infinite, the set of all complex numbers is uncountably infinite. This means that "almost all numbers are transcendental." However, proving that a specific given number is transcendental is exceedingly difficult.
+In the late 19th century, [Georg Cantor](https://kenji.blog/en/p/cantor/) proved from a set-theoretic perspective that while the set of algebraic numbers is countably infinite, the set of all complex numbers is uncountably infinite. This means that "almost all numbers are transcendental." However, proving that a specific given number is transcendental is exceedingly difficult.
 
 ### 3.2 Hilbert's 7th Problem and the Gelfond-Schneider Theorem
-In 1900, [David Hilbert](https://kenji.blog/p/hilbert/) presented 23 unsolved problems (Hilbert's 23 Problems) at the International Congress of Mathematicians in Paris. His 7th problem was as follows:
+In 1900, [David Hilbert](https://kenji.blog/en/p/hilbert/) presented 23 unsolved problems (Hilbert's 23 Problems) at the International Congress of Mathematicians in Paris. His 7th problem was as follows:
 
 > "If $\alpha$ is an algebraic number other than $0$ or $1$, and $\beta$ is an irrational algebraic number, is $\alpha^\beta$ always a transcendental number?"
 
@@ -98,10 +98,10 @@ eq = x^3 - 2*y^3 == 1
 ```
 
 ### 4.2 Solving Gauss's Class Number 1 Problem
-The great 19th-century mathematician [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) posited a conjecture regarding the class number (the order of the ideal class group) of imaginary quadratic fields $\mathbb{Q}(\sqrt{-d})$. He conjectured that the only values of $d > 0$ for which the class number is 1 (meaning unique factorization holds) are the nine values $d = 3, 4, 7, 8, 11, 19, 43, 67, 163$. This is known as the **Class number 1 problem**.
+The great 19th-century mathematician [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/) posited a conjecture regarding the class number (the order of the ideal class group) of imaginary quadratic fields $\mathbb{Q}(\sqrt{-d})$. He conjectured that the only values of $d > 0$ for which the class number is 1 (meaning unique factorization holds) are the nine values $d = 3, 4, 7, 8, 11, 19, 43, 67, 163$. This is known as the **Class number 1 problem**.
 
 This problem was essentially solved in 1952 by Kurt Heegner using modular functions, but his paper was deemed to have unclear points and was not widely accepted by the mathematical community at the time.
-Later, in 1967, Harold Stark rigorously formalized Heegner's proof, independently completing it. Astonishingly, around the exact same time, [Alan Baker](https://kenji.blog/p/baker/) proved this conjecture using a completely different approach based on his "linear forms in logarithms" method, without using any modular functions.
+Later, in 1967, Harold Stark rigorously formalized Heegner's proof, independently completing it. Astonishingly, around the exact same time, [Alan Baker](https://kenji.blog/en/p/baker/) proved this conjecture using a completely different approach based on his "linear forms in logarithms" method, without using any modular functions.
 Baker's method proved to be highly versatile, and it was subsequently applied to solve further generalized problems, such as determining all imaginary quadratic fields with class number 2.
 
 ## 5. Genealogy of Transcendental Number Theory
@@ -120,7 +120,7 @@ flowchart TD
 
 ## 6. Conclusion
 
-With the emergence of [Alan Baker](https://kenji.blog/p/baker/), number theory—especially the study of transcendental number theory and Diophantine equations—entered a completely new era. The "effective computation methods" he presented brought algorithmic approaches to abstract pure mathematics, and they now serve as part of the mathematical foundation underpinning modern computer science and cryptography.
+With the emergence of [Alan Baker](https://kenji.blog/en/p/baker/), number theory—especially the study of transcendental number theory and Diophantine equations—entered a completely new era. The "effective computation methods" he presented brought algorithmic approaches to abstract pure mathematics, and they now serve as part of the mathematical foundation underpinning modern computer science and cryptography.
 
 His research on bounding the solutions to Diophantine equations also provided a bridge to deeper theories, such as the **abc conjecture**, which remains one of the greatest unsolved problems in number theory today.
-A great mathematician who combined brilliant intuition with the overwhelming logical power to complete highly complex and technical proofs, [Alan Baker](https://kenji.blog/p/baker/) left a legacy of theorems and a passion for number theory that will undoubtedly continue to shine brightly in the history of mathematics without ever fading.
+A great mathematician who combined brilliant intuition with the overwhelming logical power to complete highly complex and technical proofs, [Alan Baker](https://kenji.blog/en/p/baker/) left a legacy of theorems and a passion for number theory that will undoubtedly continue to shine brightly in the history of mathematics without ever fading.

@@ -8,13 +8,13 @@ categories: ["matematika", "biografi"]
 tags: ["Teori Galois", "Aljabar", "Teori Grup", "Sejarah"]
 ---
 
-Dalam sejarah matematika, hanya sedikit yang menjalani kehidupan yang begitu dramatis dan tragis seperti [Évariste Galois](https://kenji.blog/p/galois/) (1811–1832). Pemuda Prancis ini, yang kehilangan nyawanya dalam duel pada usia muda 20 tahun, meletakkan dasar bagi teori luar biasa yang pada dasarnya akan mengubah matematika selanjutnya dalam sebuah surat yang ditulis pada malam kematiannya. Dalam artikel ini, kita menyelami lebih dalam kehidupan Galois yang bergejolak dan warisan terbesarnya, **Teori Galois**.
+Dalam sejarah matematika, hanya sedikit yang menjalani kehidupan yang begitu dramatis dan tragis seperti [Évariste Galois](https://kenji.blog/id/p/galois/) (1811–1832). Pemuda Prancis ini, yang kehilangan nyawanya dalam duel pada usia muda 20 tahun, meletakkan dasar bagi teori luar biasa yang pada dasarnya akan mengubah matematika selanjutnya dalam sebuah surat yang ditulis pada malam kematiannya. Dalam artikel ini, kita menyelami lebih dalam kehidupan Galois yang bergejolak dan warisan terbesarnya, **Teori Galois**.
 
 ## 1. Kehidupan yang Bergejolak: Semangat dan Frustrasi
 
 ### Kehidupan Awal dan Kebangkitan pada Matematika
 
-[Évariste Galois](https://kenji.blog/p/galois/) lahir pada tahun 1811 di Bourg-la-Reine, pinggiran kota Paris. Ayahnya adalah seorang Republikan terpelajar yang kemudian menjabat sebagai walikota. Awalnya dididik oleh ibunya, Galois memasuki Lycée Louis-le-Grand di Paris pada usia 12 tahun.
+[Évariste Galois](https://kenji.blog/id/p/galois/) lahir pada tahun 1811 di Bourg-la-Reine, pinggiran kota Paris. Ayahnya adalah seorang Republikan terpelajar yang kemudian menjabat sebagai walikota. Awalnya dididik oleh ibunya, Galois memasuki Lycée Louis-le-Grand di Paris pada usia 12 tahun.
 
 Kehidupan sekolah di lycée membosankan baginya, tetapi hidupnya berubah total pada usia 15 tahun ketika ia menemukan *Éléments de Géométrie* karya Legendre. Dikatakan bahwa Galois membaca buku sulit ini dalam hitungan hari, seolah-olah sedang membaca novel. Sejak saat itu, ia mengabaikan buku teks biasa dan mulai melahap tulisan-tulisan matematikawan terhebat pada masanya, seperti Lagrange dan Cauchy.
 
@@ -116,4 +116,4 @@ Setelah kematian Galois, surat-suratnya disimpan oleh sahabat karibnya Chevalier
 
 Konsep "grup" yang diperkenalkan oleh Galois kemudian menjadi bahasa dasar bukan hanya untuk aljabar tetapi untuk semua bidang ilmiah, termasuk geometri, topologi, dan fisika (seperti fisika partikel dan kristalografi). Saat ini, aljabar abstrak, yang mempelajari sistem aljabar seperti "grup, gelanggang, dan lapangan", telah menjadi salah satu pilar terpenting matematika modern.
 
-[Évariste Galois](https://kenji.blog/p/galois/) meninggal di usia muda, 20 tahun. Namun, pencapaian monumental yang ia capai selama hidupnya yang singkat belum pudar bahkan setelah hampir 200 tahun, dan terus memancarkan cahaya kuat yang menerangi kedalaman matematika modern. Kata-kata terakhirnya, "Saya tidak punya waktu," seakan sangat mengonfrontasi kita dengan ketidakterbatasan kecerdasan manusia dan singkatnya kehidupan.
+[Évariste Galois](https://kenji.blog/id/p/galois/) meninggal di usia muda, 20 tahun. Namun, pencapaian monumental yang ia capai selama hidupnya yang singkat belum pudar bahkan setelah hampir 200 tahun, dan terus memancarkan cahaya kuat yang menerangi kedalaman matematika modern. Kata-kata terakhirnya, "Saya tidak punya waktu," seakan sangat mengonfrontasi kita dengan ketidakterbatasan kecerdasan manusia dan singkatnya kehidupan.

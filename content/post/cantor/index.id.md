@@ -14,17 +14,17 @@ tags:
   - "Sejarah Matematika"
 ---
 
-# Siapakah [Georg Cantor](https://kenji.blog/p/cantor/)?
+# Siapakah [Georg Cantor](https://kenji.blog/id/p/cantor/)?
 
-Dalam sejarah matematika, konsep "ketakterhinggaan" telah lama dianggap sebagai tabu. Ketakterhinggaan secara ketat diperlakukan sebagai "keadaan tanpa akhir (ketakterhinggaan potensial)" dan dipandang berbahaya untuk memperlakukannya sebagai "keseluruhan yang selesai (ketakterhinggaan aktual)". Namun, pada akhir abad ke-19, ada seorang pria yang menantang tabu ini secara langsung dan mengukir ketakterhinggaan itu sendiri sebagai subjek matematika. Pria itu adalah **[Georg Cantor](https://kenji.blog/p/cantor/)**.
+Dalam sejarah matematika, konsep "ketakterhinggaan" telah lama dianggap sebagai tabu. Ketakterhinggaan secara ketat diperlakukan sebagai "keadaan tanpa akhir (ketakterhinggaan potensial)" dan dipandang berbahaya untuk memperlakukannya sebagai "keseluruhan yang selesai (ketakterhinggaan aktual)". Namun, pada akhir abad ke-19, ada seorang pria yang menantang tabu ini secara langsung dan mengukir ketakterhinggaan itu sendiri sebagai subjek matematika. Pria itu adalah **[Georg Cantor](https://kenji.blog/id/p/cantor/)**.
 
 Penciptaannya tentang "Teori Himpunan" telah menjadi fondasi dari setiap bidang dalam matematika modern. Pada artikel ini, kita akan melihat secara mendetail kehidupan Cantor dan pencapaian matematisnya yang menakjubkan.
 
 ## Kehidupan yang Penuh Gejolak
 
-[Georg Cantor](https://kenji.blog/p/cantor/) lahir pada tahun 1845 di St. Petersburg, Rusia. Ayahnya adalah seorang saudagar kaya dari Denmark, dan ibunya adalah seorang musisi Rusia. Menunjukkan bakat luar biasa dalam matematika sejak usia dini, ia akhirnya pindah ke Jerman dan belajar matematika di Universitas Berlin.
+[Georg Cantor](https://kenji.blog/id/p/cantor/) lahir pada tahun 1845 di St. Petersburg, Rusia. Ayahnya adalah seorang saudagar kaya dari Denmark, dan ibunya adalah seorang musisi Rusia. Menunjukkan bakat luar biasa dalam matematika sejak usia dini, ia akhirnya pindah ke Jerman dan belajar matematika di Universitas Berlin.
 
-Di Universitas Berlin, ia dibimbing oleh tokoh-tokoh terkemuka dunia matematika pada masa itu, **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** dan **Leopold Kronecker**. Kronecker secara khusus kelak akan menjadi penentang terbesar Cantor.
+Di Universitas Berlin, ia dibimbing oleh tokoh-tokoh terkemuka dunia matematika pada masa itu, **[Karl Weierstrass](https://kenji.blog/id/p/weierstrass/)** dan **Leopold Kronecker**. Kronecker secara khusus kelak akan menjadi penentang terbesar Cantor.
 
 ### Pencarian Ketakterhinggaan dan Konflik dengan Kronecker
 
@@ -44,7 +44,7 @@ graph TD
 
 Fakta bahwa teorinya tidak dipahami dan bahwa ia terus menerima serangan tanpa henti dari mantan gurunya sangat merusak kesehatan mental Cantor. Ia menderita depresi dan berulang kali masuk dan keluar dari rumah sakit jiwa.
 
-Namun, teorinya perlahan-lahan didukung oleh generasi ahli matematika yang lebih muda, seperti **[David Hilbert](https://kenji.blog/p/hilbert/)**. Hilbert memuji Cantor dengan pujian tertinggi, menyatakan, "Tidak ada seorang pun yang akan mengusir kita dari surga yang telah diciptakan Cantor untuk kita." Cantor mengakhiri hidupnya di rumah sakit jiwa di Halle pada tahun 1918, tetapi setelah kematiannya, teori himpunan menetapkan posisi yang tidak tergoyahkan sebagai fondasi matematika yang paling penting.
+Namun, teorinya perlahan-lahan didukung oleh generasi ahli matematika yang lebih muda, seperti **[David Hilbert](https://kenji.blog/id/p/hilbert/)**. Hilbert memuji Cantor dengan pujian tertinggi, menyatakan, "Tidak ada seorang pun yang akan mengusir kita dari surga yang telah diciptakan Cantor untuk kita." Cantor mengakhiri hidupnya di rumah sakit jiwa di Halle pada tahun 1918, tetapi setelah kematiannya, teori himpunan menetapkan posisi yang tidak tergoyahkan sebagai fondasi matematika yang paling penting.
 
 ## Pencapaian Matematis: Menghitung Ketakterhinggaan
 
@@ -113,8 +113,8 @@ graph TD
 
 Apakah ada kardinalitas perantara antara kardinalitas bilangan asli $\aleph_0$ dan kardinalitas bilangan real $\mathfrak{c}$? Cantor berhipotesis bahwa "kardinalitas perantara seperti itu tidak ada". Ini adalah **Hipotesis Kontinum (CH)**.
 
-Cantor menghabiskan sebagian besar tahun-tahun terakhirnya untuk mencoba membuktikan hipotesis ini, tetapi ia pada akhirnya tidak dapat menyelesaikannya. Belakangan, melalui penelitian [Kurt Gödel](https://kenji.blog/p/godel/) dan Paul Cohen, ditemukan bahwa hipotesis kontinum adalah proposisi independen yang "tidak dapat dibuktikan maupun disangkal" dari aksioma standar teori himpunan (aksioma ZFC), sekali lagi memberikan kejutan besar bagi komunitas matematika.
+Cantor menghabiskan sebagian besar tahun-tahun terakhirnya untuk mencoba membuktikan hipotesis ini, tetapi ia pada akhirnya tidak dapat menyelesaikannya. Belakangan, melalui penelitian [Kurt Gödel](https://kenji.blog/id/p/godel/) dan Paul Cohen, ditemukan bahwa hipotesis kontinum adalah proposisi independen yang "tidak dapat dibuktikan maupun disangkal" dari aksioma standar teori himpunan (aksioma ZFC), sekali lagi memberikan kejutan besar bagi komunitas matematika.
 
 ## Kesimpulan
 
-[Georg Cantor](https://kenji.blog/p/cantor/) menunjukkan bahwa nalar manusia dapat mencapai ranah ilahi "ketakterhinggaan". Kehidupannya yang tragis menceritakan kisah kesepian seorang jenius yang terlalu jauh mendahului zamannya, tetapi "Surga Cantor" luas yang ia ukir terus memesona ahli matematika di seluruh dunia saat ini. Tidak berlebihan untuk mengatakan bahwa matematika modern dibangun di atas fondasi pencariannya yang gigih.
+[Georg Cantor](https://kenji.blog/id/p/cantor/) menunjukkan bahwa nalar manusia dapat mencapai ranah ilahi "ketakterhinggaan". Kehidupannya yang tragis menceritakan kisah kesepian seorang jenius yang terlalu jauh mendahului zamannya, tetapi "Surga Cantor" luas yang ia ukir terus memesona ahli matematika di seluruh dunia saat ini. Tidak berlebihan untuk mengatakan bahwa matematika modern dibangun di atas fondasi pencariannya yang gigih.

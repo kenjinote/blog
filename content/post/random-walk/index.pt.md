@@ -8,7 +8,7 @@ categories: ["Matemática"]
 tags: ["Passeio Aleatório", "Probabilidade", "Equação de Difusão", "Movimento Browniano", "Python"]
 ---
 
-# Introdução: O que é um [Passeio Aleatório](https://kenji.blog/p/random-walk/)?
+# Introdução: O que é um [Passeio Aleatório](https://kenji.blog/pt/p/random-walk/)?
 
 Um passeio aleatório é um conceito matemático referente a um movimento em que a próxima posição é determinada aleatoriamente (probabilisticamente). Muitas vezes é chamado de "caminhada do bêbado".
 

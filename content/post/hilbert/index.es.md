@@ -10,7 +10,7 @@ tags: ["Hilbert", "Historia de las Matemáticas", "Geometría", "Análisis Funci
 
 ## 1. Introducción: El Padre de la Matemática Moderna
 
-[David Hilbert](https://kenji.blog/p/hilbert/) (23 de enero de 1862 – 14 de febrero de 1943) fue un matemático alemán, ampliamente reconocido como uno de los matemáticos más influyentes y grandes de finales del siglo XIX y principios del siglo XX. A menudo comparado con su brillante contemporáneo francés [Henri Poincaré](https://kenji.blog/p/poincare/), Hilbert enfatizó la lógica estricta y el formalismo, en contraste con la dependencia de Poincaré en la intuición. Hilbert influyó profundamente en casi todos los campos de la matemática moderna, ganándose el apodo de **"El Rey de las Matemáticas"**.
+[David Hilbert](https://kenji.blog/es/p/hilbert/) (23 de enero de 1862 – 14 de febrero de 1943) fue un matemático alemán, ampliamente reconocido como uno de los matemáticos más influyentes y grandes de finales del siglo XIX y principios del siglo XX. A menudo comparado con su brillante contemporáneo francés [Henri Poincaré](https://kenji.blog/es/p/poincare/), Hilbert enfatizó la lógica estricta y el formalismo, en contraste con la dependencia de Poincaré en la intuición. Hilbert influyó profundamente en casi todos los campos de la matemática moderna, ganándose el apodo de **"El Rey de las Matemáticas"**.
 
 Sus contribuciones abarcan la teoría de invariantes, la teoría de números algebraicos, la axiomatización de la geometría, las ecuaciones integrales, el análisis funcional (espacios de Hilbert) y la física teórica (los fundamentos matemáticos de la relatividad general). Su mayor legado no radica simplemente en resolver problemas abiertos aislados, sino en reimaginar fundamentalmente la estructura y la naturaleza de las matemáticas en sí, estableciendo los nuevos paradigmas del axiomatismo y el formalismo. En este artículo, echamos un vistazo profundo y detallado a los dramáticos episodios de la vida de Hilbert y sus brillantes logros.
 
@@ -18,7 +18,7 @@ Sus contribuciones abarcan la teoría de invariantes, la teoría de números alg
 
 Hilbert nació el 23 de enero de 1862, en Wehlau, cerca de Königsberg (ahora Kaliningrado, Rusia), la capital de la Provincia de Prusia Oriental en el Reino de Prusia. Su padre, Otto Hilbert, era un juez de distrito estricto. Su madre, Maria Therese, era una mujer bien educada con un profundo interés en la filosofía y la astronomía. Se dice que Hilbert heredó su pensamiento lógico y su sed de conocimiento de sus padres.
 
-Königsberg era una ciudad con profundas raíces académicas; fue el lugar de nacimiento del gran filósofo Immanuel Kant y era famosa por el problema de los "Siete puentes de Königsberg" resuelto por [Leonhard Euler](https://kenji.blog/p/euler/). Durante sus días de escuela, las calificaciones de Hilbert no fueron notables, pero poseía una intuición y pasión especiales por las matemáticas. Odiaba la memorización, prefiriendo resolver problemas construyendo la lógica desde cero en su propia mente. Este enfoque—construir a partir de fundamentos lógicos en lugar de depender de la memorización—se convirtió en el núcleo de su posterior estilo matemático.
+Königsberg era una ciudad con profundas raíces académicas; fue el lugar de nacimiento del gran filósofo Immanuel Kant y era famosa por el problema de los "Siete puentes de Königsberg" resuelto por [Leonhard Euler](https://kenji.blog/es/p/euler/). Durante sus días de escuela, las calificaciones de Hilbert no fueron notables, pero poseía una intuición y pasión especiales por las matemáticas. Odiaba la memorización, prefiriendo resolver problemas construyendo la lógica desde cero en su propia mente. Este enfoque—construir a partir de fundamentos lógicos en lugar de depender de la memorización—se convirtió en el núcleo de su posterior estilo matemático.
 
 ### "Paseos Matemáticos" y Amigos de Toda la Vida
 
@@ -53,17 +53,17 @@ En este informe, aplicó la teoría de Galois a la teoría de números, sentando
 
 En 1899, Hilbert publicó el libro "Grundlagen der Geometrie" (Fundamentos de la Geometría). Reconstruyó por completo el sistema axiomático de la geometría euclidiana, que había sido el fundamento absoluto de la geometría durante más de 2000 años, desde una perspectiva moderna.
 
-Los "Elementos" de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) contenían varias suposiciones implícitas y elementos dependientes de la intuición visual. Hilbert los eliminó rigurosamente, presentando un sistema de axiomas estrictamente definido que constaba de cinco grupos: axiomas de incidencia, orden, congruencia, paralelismo y continuidad.
+Los "Elementos" de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) contenían varias suposiciones implícitas y elementos dependientes de la intuición visual. Hilbert los eliminó rigurosamente, presentando un sistema de axiomas estrictamente definido que constaba de cinco grupos: axiomas de incidencia, orden, congruencia, paralelismo y continuidad.
 
 Declaró célebremente: **"Uno debe poder decir en todo momento, en lugar de puntos, líneas rectas y planos, mesas, sillas y jarras de cerveza"**. Esta fue una declaración rotunda de **formalismo**, despojando a la geometría de cualquier realidad intuitiva o física con respecto a lo que son los objetos, y estableciendo solo las relaciones lógicas entre los objetos como el fundamento de las matemáticas. Este enfoque innovador se convirtió en el estilo estándar del método axiomático en las matemáticas modernas.
 
 ## 6. Invitación a la Universidad de Gotinga y el Amanecer de una Edad de Oro
 
-En 1895, gracias a la fuerte recomendación de Felix Klein, un peso pesado en la matemática alemana, Hilbert fue nombrado profesor en la Universidad de Gotinga. Gotinga ya era famosa como tierra sagrada para las matemáticas, habiendo sido el hogar de [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) y [Bernhard Riemann](https://kenji.blog/p/riemann/).
+En 1895, gracias a la fuerte recomendación de Felix Klein, un peso pesado en la matemática alemana, Hilbert fue nombrado profesor en la Universidad de Gotinga. Gotinga ya era famosa como tierra sagrada para las matemáticas, habiendo sido el hogar de [Carl Friedrich Gauss](https://kenji.blog/es/p/gauss/) y [Bernhard Riemann](https://kenji.blog/es/p/riemann/).
 
-Con la llegada de Hilbert, Gotinga se restableció firmemente como el principal centro matemático del mundo. Sus conferencias siempre fueron claras y rebosantes de pasión por las nuevas ideas matemáticas, atrayendo a estudiantes e investigadores brillantes de todo el mundo. Muchas superestrellas que luego liderarían las matemáticas del siglo XX, como [Emmy Noether](https://kenji.blog/p/noether/), Hermann Weyl, Richard Courant y John von Neumann, fueron guiados por Hilbert.
+Con la llegada de Hilbert, Gotinga se restableció firmemente como el principal centro matemático del mundo. Sus conferencias siempre fueron claras y rebosantes de pasión por las nuevas ideas matemáticas, atrayendo a estudiantes e investigadores brillantes de todo el mundo. Muchas superestrellas que luego liderarían las matemáticas del siglo XX, como [Emmy Noether](https://kenji.blog/es/p/noether/), Hermann Weyl, Richard Courant y John von Neumann, fueron guiados por Hilbert.
 
-La anécdota sobre [Emmy Noether](https://kenji.blog/p/noether/) es particularmente famosa. En ese momento, las reglas de la universidad prohibían a las mujeres ocupar puestos académicos. Hilbert, valorando mucho su talento excepcional en el álgebra, protestó ferozmente en la reunión de la facultad, declarando: **"¡El senado de la universidad no es una casa de baños, por lo que el género no importa!"** Esta declaración ilustra vívidamente su carácter progresista, meritocrático y sin prejuicios.
+La anécdota sobre [Emmy Noether](https://kenji.blog/es/p/noether/) es particularmente famosa. En ese momento, las reglas de la universidad prohibían a las mujeres ocupar puestos académicos. Hilbert, valorando mucho su talento excepcional en el álgebra, protestó ferozmente en la reunión de la facultad, declarando: **"¡El senado de la universidad no es una casa de baños, por lo que el género no importa!"** Esta declaración ilustra vívidamente su carácter progresista, meritocrático y sin prejuicios.
 
 ## 7. El Congreso Internacional de Matemáticos de París de 1900: Los 23 Problemas de Hilbert
 
@@ -128,15 +128,15 @@ Este programa desencadenó feroces debates (la crisis de los fundamentos) con in
 
 ## 11. El Impacto de los Teoremas de Incompletitud de Gödel y la Transformación del Programa
 
-Sin embargo, en 1931, el joven lógico austriaco [Kurt Gödel](https://kenji.blog/p/godel/) publicó sus **teoremas de incompletitud**, asestando un golpe decisivo al Programa de Hilbert.
+Sin embargo, en 1931, el joven lógico austriaco [Kurt Gödel](https://kenji.blog/es/p/godel/) publicó sus **teoremas de incompletitud**, asestando un golpe decisivo al Programa de Hilbert.
 
 Gödel demostró matemática y perfectamente que en cualquier sistema formal lo suficientemente poderoso que contenga los axiomas de la aritmética, siempre existirán proposiciones que son "verdaderas dentro del sistema pero no se pueden probar ni refutar" (Primer Teorema de Incompletitud), y que "es imposible demostrar la consistencia del sistema dentro del propio sistema" (Segundo Teorema de Incompletitud).
 
-Esto demostró que la construcción del "sistema matemático perfecto donde todo se puede probar, incluida su propia consistencia", con el que Hilbert había soñado, era imposible. Aunque se dice que Hilbert se sintió inicialmente profundamente decepcionado y enojado por este resultado, los métodos rigurosos de la metamatemática y la lógica formal desarrollados durante la búsqueda del Programa de Hilbert llevaron finalmente directamente a la fundación de la informática y la informática teórica por [Alan Turing](https://kenji.blog/p/turing/).
+Esto demostró que la construcción del "sistema matemático perfecto donde todo se puede probar, incluida su propia consistencia", con el que Hilbert había soñado, era imposible. Aunque se dice que Hilbert se sintió inicialmente profundamente decepcionado y enojado por este resultado, los métodos rigurosos de la metamatemática y la lógica formal desarrollados durante la búsqueda del Programa de Hilbert llevaron finalmente directamente a la fundación de la informática y la informática teórica por [Alan Turing](https://kenji.blog/es/p/turing/).
 
 ## 12. Los Últimos Años en Gotinga: El Ascenso de los Nazis y el Fin de un Santuario Matemático
 
-En la década de 1930, el Partido Nazi, dirigido por Adolf Hitler, tomó el poder en Alemania. La "Ley para la Restauración del Servicio Civil Profesional" se promulgó en 1933, lo que resultó en la expulsión despiadada de muchos destacados matemáticos judíos y académicos disidentes en la Universidad de Gotinga, incluidos [Emmy Noether](https://kenji.blog/p/noether/), Hermann Weyl, Richard Courant y Max Born.
+En la década de 1930, el Partido Nazi, dirigido por Adolf Hitler, tomó el poder en Alemania. La "Ley para la Restauración del Servicio Civil Profesional" se promulgó en 1933, lo que resultó en la expulsión despiadada de muchos destacados matemáticos judíos y académicos disidentes en la Universidad de Gotinga, incluidos [Emmy Noether](https://kenji.blog/es/p/noether/), Hermann Weyl, Richard Courant y Max Born.
 
 Gotinga, una vez un vibrante santuario matemático donde se reunía el talento de todo el mundo, colapsó casi de la noche a la mañana. Una vez, en un banquete, el Ministro de Educación nazi, Bernhard Rust, le preguntó a Hilbert: "¿Cómo son las matemáticas en su instituto ahora que ha sido liberado de la influencia judía?" Hilbert respondió con ira y tristeza: "¿Instituto de Matemáticas? En realidad ya no hay ninguno".
 
@@ -144,7 +144,7 @@ El 14 de febrero de 1943, en medio de la Segunda Guerra Mundial, Hilbert falleci
 
 ## 13. Conclusión: "Debemos Saber, Sabremos"
 
-Incluso después de la muerte de [David Hilbert](https://kenji.blog/p/hilbert/), el legado matemático que dejó nunca se ha desvanecido. La trayectoria de sus pensamientos está inscrita en cada rincón de la matemática moderna.
+Incluso después de la muerte de [David Hilbert](https://kenji.blog/es/p/hilbert/), el legado matemático que dejó nunca se ha desvanecido. La trayectoria de sus pensamientos está inscrita en cada rincón de la matemática moderna.
 
 En su lápida están grabadas las famosas palabras que concluyeron su discurso de jubilación en su ciudad natal de Königsberg en 1930, demostrando su fe inquebrantable y absoluta en la razón humana y la investigación científica. Esta fue una poderosa refutación al agnosticismo pesimista de la época, resumido por la frase "ignoramus et ignorabimus" (no sabemos y no sabremos).
 
@@ -152,7 +152,7 @@ En su lápida están grabadas las famosas palabras que concluyeron su discurso d
 > **Wir werden wissen.**
 > (Debemos saber. Sabremos.)
 
-[David Hilbert](https://kenji.blog/p/hilbert/) creía profundamente en las infinitas posibilidades de las matemáticas y continuó siendo pionero en sus fronteras a lo largo de su vida. Su espíritu resistente, su filosofía y sus brillantes logros se han convertido en la propia carne y hueso de los matemáticos modernos, dando vida a todos los rincones de las matemáticas en la actualidad y continuando inspirando a los futuros exploradores.
+[David Hilbert](https://kenji.blog/es/p/hilbert/) creía profundamente en las infinitas posibilidades de las matemáticas y continuó siendo pionero en sus fronteras a lo largo de su vida. Su espíritu resistente, su filosofía y sus brillantes logros se han convertido en la propia carne y hueso de los matemáticos modernos, dando vida a todos los rincones de las matemáticas en la actualidad y continuando inspirando a los futuros exploradores.
 
 ## Cronología
 

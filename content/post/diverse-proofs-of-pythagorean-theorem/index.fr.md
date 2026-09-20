@@ -36,9 +36,9 @@ graph TD
 
 ---
 
-## 1. Preuve géométrique basée sur les "Éléments" d'[Euclide](https://kenji.blog/p/euclid/)
+## 1. Preuve géométrique basée sur les "Éléments" d'[Euclide](https://kenji.blog/fr/p/euclid/)
 
-L'ancien mathématicien grec [Euclide](https://kenji.blog/p/euclid/) a fourni une preuve visuelle et rigoureuse dans son livre "Éléments" (Livre I, Proposition 47), parfois appelée **la preuve du moulin à vent**.
+L'ancien mathématicien grec [Euclide](https://kenji.blog/fr/p/euclid/) a fourni une preuve visuelle et rigoureuse dans son livre "Éléments" (Livre I, Proposition 47), parfois appelée **la preuve du moulin à vent**.
 
 ### Idée de la preuve
 

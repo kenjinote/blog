@@ -94,7 +94,7 @@ $ a^r \equiv 1 \pmod N $
 
 만약 이 주기 $ r $ 이 발견되고 $ r $ 이 짝수라면, $ a^r - 1 \equiv 0 \pmod N $ 이 되어 인수 분해 공식을 사용하여
 $ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $
-와 같이 변형할 수 있습니다. 여기서 [[유클리드](https://kenji.blog/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/)을 사용하여 $ N $ 과 $ a^{r/2} \pm 1 $ 의 최대공약수를 계산함으로써, $ N $ 의 소인수를 극히 높은 확률로 얻을 수 있습니다.
+와 같이 변형할 수 있습니다. 여기서 [[유클리드](https://kenji.blog/ko/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/)을 사용하여 $ N $ 과 $ a^{r/2} \pm 1 $ 의 최대공약수를 계산함으로써, $ N $ 의 소인수를 극히 높은 확률로 얻을 수 있습니다.
 
 고전 컴퓨터로 주기 $ r $ 을 찾기 위해서는 결국 지수 시간적인 단계가 필요해져 고속화할 수 없습니다. 하지만 양자 컴퓨터라면 이 주기 $ r $ 을 순식간에(다항 시간 안에) 찾을 수 있는 것입니다.
 

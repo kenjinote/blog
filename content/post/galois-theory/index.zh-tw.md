@@ -14,8 +14,8 @@ tags:
 
 # 1. 前言：什麼是伽羅瓦理論？
 
-在數學的歷史中，最富有戲劇性且最深奧的理論之一就是 **伽羅瓦理論** （[Galois Theory](https://kenji.blog/p/galois-theory/)）。
-這個理論是由 19 世紀初法國年輕數學家[埃瓦里斯特·伽羅瓦](https://kenji.blog/p/galois/)（[Évariste Galois](https://kenji.blog/p/galois/)）所建構的。
+在數學的歷史中，最富有戲劇性且最深奧的理論之一就是 **伽羅瓦理論** （[Galois Theory](https://kenji.blog/zh-tw/p/galois-theory/)）。
+這個理論是由 19 世紀初法國年輕數學家[埃瓦里斯特·伽羅瓦](https://kenji.blog/zh-tw/p/galois/)（[Évariste Galois](https://kenji.blog/zh-tw/p/galois/)）所建構的。
 伽羅瓦理論使用了一種名為 **群** （Group）的全新概念，完美解決了「為何五次以上方程式不存在一般公式解？」這個古老的難題。
 
 在本篇文章中，我們將盡可能深入淺出地解說伽羅瓦理論的基本概念、其歷史背景，以及對現代數學的影響。讓我們一起推開代數學的大門，接觸對稱性的美妙吧。
@@ -109,7 +109,7 @@ $$
 
 這並不僅僅是「還沒找到公式」，而是展現出「這種公式在數學上不可能存在」的決定性事實。
 
-# 4. [埃瓦里斯特·伽羅瓦](https://kenji.blog/p/galois/)的一生
+# 4. [埃瓦里斯特·伽羅瓦](https://kenji.blog/zh-tw/p/galois/)的一生
 
 伽羅瓦理論的絕美在數學史上閃耀著燦爛的光芒，而伽羅瓦本身戲劇化的一生，同樣深深地吸引著眾人。
 

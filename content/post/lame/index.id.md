@@ -8,19 +8,19 @@ categories: ["Matematika", "Biografi"]
 tags: ["Gabriel Lamé", "Sejarah Matematika", "Teori Bilangan", "Elastisitas", "Geometri"]
 ---
 
-## 1. Pendahuluan: Siapakah [Gabriel Lamé](https://kenji.blog/p/lame/)?
+## 1. Pendahuluan: Siapakah [Gabriel Lamé](https://kenji.blog/id/p/lame/)?
 
-[Gabriel Lamé](https://kenji.blog/p/lame/) (22 Juli 1795 – 1 Mei 1870) adalah seorang matematikawan, fisikawan, dan insinyur Prancis terkemuka abad ke-19. Kontribusinya mencakup rentang yang sangat luas, dari matematika murni hingga matematika terapan, dan bahkan teknik sipil praktis. Saat ini, namanya tetap terukir dalam buku teks matematika dan fisika melalui **kurva Lamé** (superelips), **Teorema Lamé** dalam algoritma [[Euklid](https://kenji.blog/p/euclid/)es](https://kenji.blog/p/euclid/), dan **parameter Lamé** dalam teori elastisitas.
+[Gabriel Lamé](https://kenji.blog/id/p/lame/) (22 Juli 1795 – 1 Mei 1870) adalah seorang matematikawan, fisikawan, dan insinyur Prancis terkemuka abad ke-19. Kontribusinya mencakup rentang yang sangat luas, dari matematika murni hingga matematika terapan, dan bahkan teknik sipil praktis. Saat ini, namanya tetap terukir dalam buku teks matematika dan fisika melalui **kurva Lamé** (superelips), **Teorema Lamé** dalam algoritma [[Euklid](https://kenji.blog/id/p/euclid/)es](https://kenji.blog/p/euclid/), dan **parameter Lamé** dalam teori elastisitas.
 
 Dalam artikel ini, kita akan menelusuri lintasan kehidupan Lamé yang penuh peristiwa sambil menjelaskan secara komprehensif dan sistematis pencapaian matematika dan fisika inovatif yang ia tinggalkan. Memahami kehidupan dan proses pemikirannya memberikan perspektif yang sangat berharga tentang bagaimana sains abad ke-19 meletakkan dasar bagi era modern.
 
-## 2. Kehidupan dan Karier [Gabriel Lamé](https://kenji.blog/p/lame/)
+## 2. Kehidupan dan Karier [Gabriel Lamé](https://kenji.blog/id/p/lame/)
 
 Kehidupan Lamé sangat terkait erat dengan masyarakat Eropa yang bergejolak pada awal abad ke-19. Kariernya tidak terbatas pada menara gading akademis, tetapi didasarkan pada pengalaman praktis yang keras di lapangan.
 
 ### 2.1 Kelahiran dan Pendidikan di Masa Pergolakan
 
-[Gabriel Lamé](https://kenji.blog/p/lame/) lahir pada tahun 1795 di kota Tours, Prancis tengah. Ini adalah masa setelah Revolusi Prancis, suatu periode ketika masyarakat secara keseluruhan mengalami transformasi besar-besaran. Bakat matematikanya berkembang pesat sejak dini, dan pada tahun 1813 ia masuk ke **École Polytechnique** yang bergengsi. Di sana, ia bersaing dan belajar bersama banyak pemikir brilian yang kelak akan memimpin dunia ilmiah. Setelah lulus, ia memperdalam pengetahuan teknik praktisnya di **École des Mines**.
+[Gabriel Lamé](https://kenji.blog/id/p/lame/) lahir pada tahun 1795 di kota Tours, Prancis tengah. Ini adalah masa setelah Revolusi Prancis, suatu periode ketika masyarakat secara keseluruhan mengalami transformasi besar-besaran. Bakat matematikanya berkembang pesat sejak dini, dan pada tahun 1813 ia masuk ke **École Polytechnique** yang bergengsi. Di sana, ia bersaing dan belajar bersama banyak pemikir brilian yang kelak akan memimpin dunia ilmiah. Setelah lulus, ia memperdalam pengetahuan teknik praktisnya di **École des Mines**.
 
 ### 2.2 Bekerja di Rusia: Praktik sebagai Insinyur
 
@@ -95,15 +95,15 @@ def calculate_lame_curve(a, b, n, num_points=100):
     return points
 ```
 
-## 4. Kontribusi pada Teori Bilangan: Teorema Lamé dan Algoritma [[Euklid](https://kenji.blog/p/euclid/)es](https://kenji.blog/p/euclid/)
+## 4. Kontribusi pada Teori Bilangan: Teorema Lamé dan Algoritma [[Euklid](https://kenji.blog/id/p/euclid/)es](https://kenji.blog/p/euclid/)
 
 Dalam ilmu komputer dan teori bilangan, apa yang membuat nama Lamé paling terkenal adalah **Teorema Lamé**. Ini dikenal sebagai salah satu contoh paling awal dalam sejarah yang mengevaluasi kompleksitas komputasi (waktu eksekusi) suatu algoritma secara matematis dan ketat.
 
 ### 4.1 Tinjauan dan Signifikansi Teorema
 
-**Algoritma [[Euklid](https://kenji.blog/p/euclid/)es](https://kenji.blog/p/euclid/)**, yang diwariskan dari Yunani kuno, adalah algoritma yang efisien untuk menemukan pembagi persekutuan terbesar dari dua bilangan asli. Namun, hingga Lamé pada tahun 1844, tidak ada seorang pun yang secara akurat membuktikan dengan pasti "seberapa cepat" algoritma ini selesai. Teorema Lamé menyatakan hal berikut:
+**Algoritma [[Euklid](https://kenji.blog/id/p/euclid/)es](https://kenji.blog/p/euclid/)**, yang diwariskan dari Yunani kuno, adalah algoritma yang efisien untuk menemukan pembagi persekutuan terbesar dari dua bilangan asli. Namun, hingga Lamé pada tahun 1844, tidak ada seorang pun yang secara akurat membuktikan dengan pasti "seberapa cepat" algoritma ini selesai. Teorema Lamé menyatakan hal berikut:
 
-> "Ketika mencari pembagi persekutuan terbesar dari dua bilangan bulat menggunakan algoritma [[Euklid](https://kenji.blog/p/euclid/)es](https://kenji.blog/p/euclid/), jumlah pembagian (langkah) yang diperlukan tidak pernah melebihi 5 kali jumlah digit desimal dari bilangan yang lebih kecil."
+> "Ketika mencari pembagi persekutuan terbesar dari dua bilangan bulat menggunakan algoritma [[Euklid](https://kenji.blog/id/p/euclid/)es](https://kenji.blog/p/euclid/), jumlah pembagian (langkah) yang diperlukan tidak pernah melebihi 5 kali jumlah digit desimal dari bilangan yang lebih kecil."
 
 Dinyatakan sebagai rumus, yaitu:
 
@@ -111,7 +111,7 @@ $$ \text{Jumlah langkah} \le 5 \times \text{Jumlah digit dari bilangan yang lebi
 
 ### 4.2 Hubungan Mendalam dengan Deret Fibonacci
 
-Dalam proses pembuktian teorema ini, Lamé menemukan bahwa skenario terburuk (berarti yang mengambil langkah paling banyak) untuk algoritma [[Euklid](https://kenji.blog/p/euclid/)es](https://kenji.blog/p/euclid/) terjadi ketika inputnya adalah dua **bilangan Fibonacci** yang berurutan. Dengan memanfaatkan tingkat pertumbuhan deret Fibonacci dan sifat-sifat rasio emas, ia memperoleh batas atas yang indah ini. Karena pencapaian ini, Lamé dianggap sebagai salah satu "bapak teori kompleksitas" dalam ilmu komputer modern.
+Dalam proses pembuktian teorema ini, Lamé menemukan bahwa skenario terburuk (berarti yang mengambil langkah paling banyak) untuk algoritma [[Euklid](https://kenji.blog/id/p/euclid/)es](https://kenji.blog/p/euclid/) terjadi ketika inputnya adalah dua **bilangan Fibonacci** yang berurutan. Dengan memanfaatkan tingkat pertumbuhan deret Fibonacci dan sifat-sifat rasio emas, ia memperoleh batas atas yang indah ini. Karena pencapaian ini, Lamé dianggap sebagai salah satu "bapak teori kompleksitas" dalam ilmu komputer modern.
 
 ## 5. Kontribusi pada Fisika: Teori Elastisitas dan Parameter Lamé
 
@@ -137,11 +137,11 @@ Pencapaian hebat Lamé lainnya adalah studi sistematisnya tentang **koordinat ku
 
 Secara khusus, untuk memecahkan **persamaan Laplace**, yang menggambarkan fenomena konduksi panas dalam ruang, ia menunjukkan pentingnya memilih sistem koordinat yang disesuaikan dengan kondisi batas yang kompleks (seperti benda elipsoidal). **Faktor skala Lamé** yang ia perkenalkan dalam proses ini membentuk dasar dari kalkulus vektor modern dan analisis tensor.
 
-## 7. Tantangan dan Kemunduran dengan [Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/)
+## 7. Tantangan dan Kemunduran dengan [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)
 
-Sebuah episode dramatis dalam kehidupan Lamé adalah usahanya untuk membuktikan **[Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/)** pada tahun 1847. Pada bulan Maret tahun itu, Lamé dengan bangga mengumumkan di Akademi Ilmu Pengetahuan Prancis bahwa ia telah "sepenuhnya membuktikan [Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/)." Buktinya melibatkan pendekatan yang sangat inovatif dan kuat pada masa itu: memfaktorkan persamaan menggunakan bilangan kompleks siklotomik.
+Sebuah episode dramatis dalam kehidupan Lamé adalah usahanya untuk membuktikan **[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)** pada tahun 1847. Pada bulan Maret tahun itu, Lamé dengan bangga mengumumkan di Akademi Ilmu Pengetahuan Prancis bahwa ia telah "sepenuhnya membuktikan [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)." Buktinya melibatkan pendekatan yang sangat inovatif dan kuat pada masa itu: memfaktorkan persamaan menggunakan bilangan kompleks siklotomik.
 
-Namun, segera setelah presentasinya, koleganya, matematikawan Joseph Liouville, dengan tajam menunjukkan bahwa "bukti tersebut bersandar pada asumsi diam-diam yang belum terbukti bahwa 'faktorisasi prima unik' juga berlaku di ranah bilangan kompleks." Tak lama kemudian, sepucuk surat tiba dari matematikawan Jerman [Ernst Kummer](https://kenji.blog/p/kummer/) yang menunjukkan bahwa "faktorisasi prima unik secara umum tidak berlaku," yang secara efektif membuat bukti Lamé tidak sah.
+Namun, segera setelah presentasinya, koleganya, matematikawan Joseph Liouville, dengan tajam menunjukkan bahwa "bukti tersebut bersandar pada asumsi diam-diam yang belum terbukti bahwa 'faktorisasi prima unik' juga berlaku di ranah bilangan kompleks." Tak lama kemudian, sepucuk surat tiba dari matematikawan Jerman [Ernst Kummer](https://kenji.blog/id/p/kummer/) yang menunjukkan bahwa "faktorisasi prima unik secara umum tidak berlaku," yang secara efektif membuat bukti Lamé tidak sah.
 
 Ini adalah kemunduran besar bagi Lamé, tetapi serangkaian diskusi ini memicu lahirnya teori "bilangan ideal" (ideals) Kummer, yang kemudian membuka bidang matematika masif teori bilangan aljabar. Tantangan berani Lamé pada akhirnya mendorong sejarah matematika maju secara signifikan.
 
@@ -155,6 +155,6 @@ Di tahun-tahun terakhirnya, Lamé menderita kemalangan kehilangan pendengarannya
 
 ## 9. Kesimpulan: Apa yang Lamé Tinggalkan untuk Era Modern
 
-Melihat kembali kehidupan dan pencapaian [Gabriel Lamé](https://kenji.blog/p/lame/), jelas bahwa ia dengan sempurna menggabungkan "keindahan abstrak dari matematika murni" dengan "kegunaan dari matematika terapan dan fisika."
+Melihat kembali kehidupan dan pencapaian [Gabriel Lamé](https://kenji.blog/id/p/lame/), jelas bahwa ia dengan sempurna menggabungkan "keindahan abstrak dari matematika murni" dengan "kegunaan dari matematika terapan dan fisika."
 
 Di balkon lantai pertama Menara Eiffel, nama 72 ilmuwan hebat yang berkontribusi pada sains dan teknologi Prancis terukir, dan di antara mereka berdiri dengan bangga nama Lamé (LAMÉ). Teorema, konstanta, dan pendekatan inovatif yang ia tinggalkan terus hidup hingga saat ini di ujung tombak sains dan teknologi, di tangan para insinyur dan matematikawan modern.

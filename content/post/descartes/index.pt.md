@@ -16,7 +16,7 @@ tags:
 
 ## 1. Introdução
 
-[René Descartes](https://kenji.blog/p/descartes/) (1596-1650) foi um filósofo, matemático e cientista francês. Ele deixou a famosa frase "Penso, logo existo (Cogito, ergo sum)" e é amplamente conhecido como o pai da filosofia moderna. No entanto, o papel que ele desempenhou na história da matemática foi tão imenso quanto suas conquistas filosóficas.
+[René Descartes](https://kenji.blog/pt/p/descartes/) (1596-1650) foi um filósofo, matemático e cientista francês. Ele deixou a famosa frase "Penso, logo existo (Cogito, ergo sum)" e é amplamente conhecido como o pai da filosofia moderna. No entanto, o papel que ele desempenhou na história da matemática foi tão imenso quanto suas conquistas filosóficas.
 
 A maior conquista matemática de Descartes foi a criação da **geometria analítica**, que fundiu álgebra e geometria. Neste artigo, explicaremos em detalhes os episódios de sua vida e a revolução que ele trouxe ao mundo da matemática.
 
@@ -66,7 +66,7 @@ $$
 
 ## 4. Impacto na Filosofia e na Ciência
 
-A geometria analítica de Descartes tornou-se uma base indispensável para o desenvolvimento subsequente da matemática e da física. Pode-se dizer que a criação do cálculo por [Isaac Newton](https://kenji.blog/p/newton/) e [Gottfried Leibniz](https://kenji.blog/p/leibniz/) só foi possível por causa do cenário fornecido pelo sistema de coordenadas cartesianas.
+A geometria analítica de Descartes tornou-se uma base indispensável para o desenvolvimento subsequente da matemática e da física. Pode-se dizer que a criação do cálculo por [Isaac Newton](https://kenji.blog/pt/p/newton/) e [Gottfried Leibniz](https://kenji.blog/pt/p/leibniz/) só foi possível por causa do cenário fornecido pelo sistema de coordenadas cartesianas.
 
 Além disso, sua "dúvida metódica" na filosofia, uma abordagem para encontrar verdades certas depois de duvidar de tudo, estabeleceu o espírito do racionalismo que serve de base para a investigação científica.
 
@@ -74,4 +74,4 @@ Além disso, sua "dúvida metódica" na filosofia, uma abordagem para encontrar 
 
 Descartes foi um homem que amava tanto o pensamento que permanece uma anedota de que ele ficava na cama até o final da manhã observando o movimento de uma mosca no teto. (De acordo com uma teoria, tentar expressar o movimento desta mosca levou à ideia do sistema de coordenadas).
 
-A vida e o pensamento de [René Descartes](https://kenji.blog/p/descartes/) continuam a nos dar muita inspiração hoje, transcendendo as fronteiras das disciplinas acadêmicas. Quando consideramos que os gráficos de computador, a IA e todos os tipos de tecnologia científica de hoje operam no sistema de coordenadas que ele deixou para trás, podemos mais uma vez perceber sua grandeza.
+A vida e o pensamento de [René Descartes](https://kenji.blog/pt/p/descartes/) continuam a nos dar muita inspiração hoje, transcendendo as fronteiras das disciplinas acadêmicas. Quando consideramos que os gráficos de computador, a IA e todos os tipos de tecnologia científica de hoje operam no sistema de coordenadas que ele deixou para trás, podemos mais uma vez perceber sua grandeza.

@@ -15,7 +15,7 @@ tags:
 
 ## 1. Pendahuluan: Apa itu Masalah Hadiah Milenium?
 
-Pada tahun 2000, Clay Mathematics Institute menawarkan hadiah masing-masing sebesar 1 juta dolar untuk 7 masalah matematika terpenting yang belum terpecahkan. Masalah-masalah ini disebut **Masalah Hadiah Milenium** (Millennium Prize Problems). Di antaranya terdapat masalah terkenal seperti "Hipotesis Riemann" dan "Masalah P vs NP", namun ada satu masalah yang sangat berkaitan erat dengan fisika. Masalah tersebut adalah **"[Persamaan Yang-Mills dan Masalah Kesenjangan Massa](https://kenji.blog/p/yang-mills-mass-gap/)"** (Yang-Mills and Mass Gap).
+Pada tahun 2000, Clay Mathematics Institute menawarkan hadiah masing-masing sebesar 1 juta dolar untuk 7 masalah matematika terpenting yang belum terpecahkan. Masalah-masalah ini disebut **Masalah Hadiah Milenium** (Millennium Prize Problems). Di antaranya terdapat masalah terkenal seperti "Hipotesis Riemann" dan "Masalah P vs NP", namun ada satu masalah yang sangat berkaitan erat dengan fisika. Masalah tersebut adalah **"[Persamaan Yang-Mills dan Masalah Kesenjangan Massa](https://kenji.blog/id/p/yang-mills-mass-gap/)"** (Yang-Mills and Mass Gap).
 
 Masalah ini bertujuan untuk menetapkan dasar matematika dari "Model Standar" fisika partikel yang mendeskripsikan gaya-gaya dasar di alam semesta. Perilaku materi dan gaya yang membentuk dunia kita telah dikonfirmasi dengan akurasi yang sangat tinggi melalui eksperimen, namun pembuktian secara matematis dan ketat (rigor) merupakan salah satu tantangan terbesar dalam matematika modern.
 
@@ -72,7 +72,7 @@ Dalam Kromodinamika Kuantum (QCD), quark dan gluon tidak dapat diekstraksi sendi
 
 Bahkan jika massa quark dan gluon adalah nol, hadron (seperti proton atau meson) yang terbentuk dari ikatan kuat mereka memiliki massa yang terhingga. Ketika energi keadaan vakum dari teori (keadaan dengan energi terendah) dianggap nol, energi dari keadaan terendah berikutnya (keadaan tereksitasi pertama, yaitu partikel teringan) adalah $ \Delta > 0 $. $ \Delta $ inilah yang disebut **Kesenjangan Massa**.
 
-Pernyataan resmi dari "[Persamaan Yang-Mills dan Masalah Kesenjangan Massa](https://kenji.blog/p/yang-mills-mass-gap/)" dalam Masalah Hadiah Milenium matematika kira-kira berbunyi sebagai berikut:
+Pernyataan resmi dari "[Persamaan Yang-Mills dan Masalah Kesenjangan Massa](https://kenji.blog/id/p/yang-mills-mass-gap/)" dalam Masalah Hadiah Milenium matematika kira-kira berbunyi sebagai berikut:
 
 > Untuk sembarang grup gauge sederhana kompak $ G $, buktikan secara ketat secara matematis bahwa teori kuantum Yang-Mills nontrivial ada di $ \mathbb{R}^4 $ dan memiliki kesenjangan massa $ \Delta > 0 $ yang terhingga.
 
@@ -110,7 +110,7 @@ Namun, hanya karena itu telah ditunjukkan secara numerik melalui simulasi, bukan
 
 ## 6. Kesimpulan dan Prospek ke Depan
 
-[Persamaan Yang-Mills dan Masalah Kesenjangan Massa](https://kenji.blog/p/yang-mills-mass-gap/) berada di area yang terdalam dan tersulit di mana fisika modern dan matematika modern bersilangan. Fisikawan telah menggunakan teori ini untuk memecahkan misteri alam semesta, tetapi para matematikawan belum mampu membuktikan bahwa tata bahasa dari "bahasa" dasar teori ini adalah benar.
+[Persamaan Yang-Mills dan Masalah Kesenjangan Massa](https://kenji.blog/id/p/yang-mills-mass-gap/) berada di area yang terdalam dan tersulit di mana fisika modern dan matematika modern bersilangan. Fisikawan telah menggunakan teori ini untuk memecahkan misteri alam semesta, tetapi para matematikawan belum mampu membuktikan bahwa tata bahasa dari "bahasa" dasar teori ini adalah benar.
 
 Jika masalah ini terpecahkan, kerangka matematika yang kuat untuk pemahaman kita tentang alam semesta akan menjadi lengkap. Pada saat yang sama, hal itu akan menjadi peristiwa penting yang membuka bidang matematika yang baru. Meskipun belum ada petunjuk penyelesaian yang pasti terlihat, banyak orang jenius terus menantang Masalah Hadiah Milenium ini.
 

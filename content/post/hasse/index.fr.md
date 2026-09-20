@@ -17,21 +17,21 @@ tags:
 
 ## 1. Introduction : Relier le local et le global
 
-Dans le monde des mathématiques, en particulier dans la théorie des nombres, de nombreux lecteurs ont peut-être entendu parler du "principe local-global". La figure centrale qui a établi ce concept profond et a puissamment dirigé la théorie algébrique des nombres du 20e siècle était le mathématicien allemand **[Helmut Hasse](https://kenji.blog/p/hasse/)** (1898–1979). Il a élevé la théorie des nombres p-adiques, initiée par son mentor [Kurt Hensel](https://kenji.blog/p/hensel/), au rang d'outil puissant, construisant des cadres cruciaux dans les mathématiques modernes.
+Dans le monde des mathématiques, en particulier dans la théorie des nombres, de nombreux lecteurs ont peut-être entendu parler du "principe local-global". La figure centrale qui a établi ce concept profond et a puissamment dirigé la théorie algébrique des nombres du 20e siècle était le mathématicien allemand **[Helmut Hasse](https://kenji.blog/fr/p/hasse/)** (1898–1979). Il a élevé la théorie des nombres p-adiques, initiée par son mentor [Kurt Hensel](https://kenji.blog/fr/p/hensel/), au rang d'outil puissant, construisant des cadres cruciaux dans les mathématiques modernes.
 
 Dans cet article, nous plongerons en détail dans les épisodes de la vie tumultueuse de Hasse et ses brillantes réalisations mathématiques. Le **principe de Hasse** qu'il a défendu est devenu un concept indispensable dans les mathématiques modernes, continuant d'inspirer de nombreux mathématiciens aujourd'hui.
 
 ## 2. Contexte et début de vie : De Kassel à la Marine
 
-[Helmut Hasse](https://kenji.blog/p/hasse/) est né le 25 août 1898 dans la ville de Kassel, dans l'Empire allemand. Son père était juge, et il a grandi dans un environnement strict et intellectuel. Bien que Hasse ait montré un talent extraordinaire pour les mathématiques dès son plus jeune âge, sa jeunesse a été profondément affectée par le déclenchement de la Première Guerre mondiale.
+[Helmut Hasse](https://kenji.blog/fr/p/hasse/) est né le 25 août 1898 dans la ville de Kassel, dans l'Empire allemand. Son père était juge, et il a grandi dans un environnement strict et intellectuel. Bien que Hasse ait montré un talent extraordinaire pour les mathématiques dès son plus jeune âge, sa jeunesse a été profondément affectée par le déclenchement de la Première Guerre mondiale.
 
 En 1915, alors qu'il n'était qu'un adolescent, Hasse s'est engagé dans la Marine impériale allemande et a servi à bord d'un navire de guerre. Même dans la vie militaire dure et incessamment déchirée par la guerre, sa passion pour les mathématiques ne s'est jamais refroidie. On dit que lors de chaque permission, il lisait avidement des manuels de mathématiques et travaillait de manière indépendante sur des calculs, conservant une soif inépuisable d'apprentissage.
 
-## 3. Göttingen et Marbourg : Rencontre avec [Kurt Hensel](https://kenji.blog/p/hensel/)
+## 3. Göttingen et Marbourg : Rencontre avec [Kurt Hensel](https://kenji.blog/fr/p/hensel/)
 
-Après la fin de la guerre en 1918, Hasse s'est officiellement inscrit à l'Université de Göttingen. À l'époque, Göttingen était le summum mondial des mathématiques, abritant des géants comme [David Hilbert](https://kenji.blog/p/hilbert/), Edmund Landau et [Emmy Noether](https://kenji.blog/p/noether/). Là, Hasse a rencontré le souffle des mathématiques de pointe, permettant à ses talents de s'épanouir davantage.
+Après la fin de la guerre en 1918, Hasse s'est officiellement inscrit à l'Université de Göttingen. À l'époque, Göttingen était le summum mondial des mathématiques, abritant des géants comme [David Hilbert](https://kenji.blog/fr/p/hilbert/), Edmund Landau et [Emmy Noether](https://kenji.blog/fr/p/noether/). Là, Hasse a rencontré le souffle des mathématiques de pointe, permettant à ses talents de s'épanouir davantage.
 
-Plus tard, Hasse a été transféré à l'Université de Marbourg, où il a fait une rencontre fatidique avec **[Kurt Hensel](https://kenji.blog/p/hensel/)**, qui allait devenir son mentor pour la vie. Hensel était le découvreur d'un système de nombres entièrement nouveau : les nombres p-adiques. Alors que de nombreux mathématiciens de l'époque considéraient les nombres p-adiques comme de simples curiosités mathématiques, Hasse a immédiatement reconnu l'immense potentiel de ce nouveau concept et l'a raffiné en une arme puissante pour ses propres recherches.
+Plus tard, Hasse a été transféré à l'Université de Marbourg, où il a fait une rencontre fatidique avec **[Kurt Hensel](https://kenji.blog/fr/p/hensel/)**, qui allait devenir son mentor pour la vie. Hensel était le découvreur d'un système de nombres entièrement nouveau : les nombres p-adiques. Alors que de nombreux mathématiciens de l'époque considéraient les nombres p-adiques comme de simples curiosités mathématiques, Hasse a immédiatement reconnu l'immense potentiel de ce nouveau concept et l'a raffiné en une arme puissante pour ses propres recherches.
 
 ## 4. Que sont les nombres p-adiques : Un nouveau système de nombres
 
@@ -91,7 +91,7 @@ $$
 |N - (q + 1)| \le 2\sqrt{q}
 $$
 
-Cette belle inégalité a ensuite été étendue aux courbes algébriques générales par son propre élève [André Weil](https://kenji.blog/p/weil/) (les conjectures de Weil) et finalement résolue par Pierre Deligne, marquant un point de départ crucial dans une grande histoire des mathématiques.
+Cette belle inégalité a ensuite été étendue aux courbes algébriques générales par son propre élève [André Weil](https://kenji.blog/fr/p/weil/) (les conjectures de Weil) et finalement résolue par Pierre Deligne, marquant un point de départ crucial dans une grande histoire des mathématiques.
 
 ## 9. Contribution à la théorie du corps de classes : Théorie locale et réciprocité d'Artin
 
@@ -99,9 +99,9 @@ Lorsqu'on discute des réalisations de Hasse, sa contribution massive à la **th
 
 Dans la démonstration de la "loi de réciprocité" proposée par Emil Artin, Hasse a joué un rôle d'une importance vitale. Utilisant des méthodes analytiques et la théorie des nombres p-adiques, Hasse a offert des conseils cruciaux à Artin, contribuant grandement à l'achèvement de la preuve. Hasse a également joué un rôle central dans la construction de la théorie locale du corps de classes, reconstruisant la théorie globale du corps de classes du point de vue des corps locaux.
 
-## 10. Interaction avec [Emmy Noether](https://kenji.blog/p/noether/) et ses contemporains
+## 10. Interaction avec [Emmy Noether](https://kenji.blog/fr/p/noether/) et ses contemporains
 
-Une figure particulièrement notable dans les interactions académiques de Hasse est **[Emmy Noether](https://kenji.blog/p/noether/)**, souvent appelée la mère de l'algèbre abstraite. Hasse résonnait profondément avec l'approche abstraite et structurelle de Noether, intégrant activement son cadre d'algèbre non commutative dans ses propres recherches en théorie des nombres.
+Une figure particulièrement notable dans les interactions académiques de Hasse est **[Emmy Noether](https://kenji.blog/fr/p/noether/)**, souvent appelée la mère de l'algèbre abstraite. Hasse résonnait profondément avec l'approche abstraite et structurelle de Noether, intégrant activement son cadre d'algèbre non commutative dans ses propres recherches en théorie des nombres.
 
 À la suite de cette collaboration, le **théorème d'Albert-Brauer-Hasse-Noether**, prouvé par Hasse, Noether, Richard Brauer et A. A. Albert, se dresse comme une réalisation monumentale dans la théorie des algèbres. C'est également un bel exemple du principe local-global.
 
@@ -121,6 +121,6 @@ Hasse a également versé sa passion dans l'édition de la revue spécialisée e
 
 ## 14. Conclusion : Héritage pour les mathématiques modernes
 
-[Helmut Hasse](https://kenji.blog/p/hasse/) a mis fin à ses jours en 1979. Le fait qu'il ait toujours magistralement intégré les concepts opposés de "concret et abstrait" et de "local et global" est prouvé par les nombreux théorèmes qu'il a laissés derrière lui.
+[Helmut Hasse](https://kenji.blog/fr/p/hasse/) a mis fin à ses jours en 1979. Le fait qu'il ait toujours magistralement intégré les concepts opposés de "concret et abstrait" et de "local et global" est prouvé par les nombreux théorèmes qu'il a laissés derrière lui.
 
 Son approche p-adique et le principe de Hasse ont étendu leurs applications à un large éventail de domaines, y compris la géométrie arithmétique moderne et la cryptographie. La figure d'un savant qui a continué à poursuivre la vérité tout en survivant à une époque turbulente, et les belles théories mathématiques qu'il a tissées, resteront sûrement un fil conducteur pour ceux qui aspirent à étudier les mathématiques pendant longtemps encore.

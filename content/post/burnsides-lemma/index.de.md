@@ -21,7 +21,7 @@ Ein typisches Beispiel dafür ist die **"Aufzählung von Objekten mit Symmetrie"
 
 Angenommen, wir machen eine Halskette, indem wir vier Perlen zu einer Schleife auffädeln. Die verfügbaren Perlenfarben sind "rot" und "blau". Wie viele verschiedene Halskettendesigns gibt es in diesem Fall insgesamt?
 
-In diesem Artikel werden wir ausgehend von dieser scheinbar einfachen Frage das leistungsstarke mathematische Werkzeug für das Zählen unter Berücksichtigung der Symmetrie, das **"[Lemma von Burnside](https://kenji.blog/p/burnsides-lemma/)"**, von den Grundlagen bis zu seinen Anwendungen im Detail erklären. Dies ist ein perfektes Thema für eine praktische Einführung in die Gruppentheorie, also bleiben Sie bitte bis zum Ende bei uns.
+In diesem Artikel werden wir ausgehend von dieser scheinbar einfachen Frage das leistungsstarke mathematische Werkzeug für das Zählen unter Berücksichtigung der Symmetrie, das **"[Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/)"**, von den Grundlagen bis zu seinen Anwendungen im Detail erklären. Dies ist ein perfektes Thema für eine praktische Einführung in die Gruppentheorie, also bleiben Sie bitte bis zum Ende bei uns.
 
 ## 2. Die Tücken des einfachen Zählens
 
@@ -79,9 +79,9 @@ Beispielsweise liefert die Anwendung der Operationen von $G$ auf das Muster "Rot
 
 Diese 4 Muster gehören zur selben "Bahn". Die "Anzahl der im Wesentlichen unterschiedlichen Designs", die wir wissen wollen, ist genau nichts anderes als **"in wie viele verschiedene Bahnen die gesamte Menge $X$ unterteilt ist"**. Dies wird durch die Formel $|X/G|$ bezeichnet.
 
-## 5. [Lemma von Burnside](https://kenji.blog/p/burnsides-lemma/)
+## 5. [Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/)
 
-Hier tritt schließlich der Star dieses Mals, das **[Lemma von Burnside](https://kenji.blog/p/burnsides-lemma/)**, auf. Es wird manchmal auch Cauchy-Frobenius-Lemma genannt. Dies ist ein erstaunlicher Lehrsatz, der es uns ermöglicht, die "Anzahl der Bahnen (Anzahl der im Wesentlichen unterschiedlichen Muster)" leicht zu berechnen, wenn eine Gruppe $G$ auf eine endliche Menge $X$ wirkt.
+Hier tritt schließlich der Star dieses Mals, das **[Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/)**, auf. Es wird manchmal auch Cauchy-Frobenius-Lemma genannt. Dies ist ein erstaunlicher Lehrsatz, der es uns ermöglicht, die "Anzahl der Bahnen (Anzahl der im Wesentlichen unterschiedlichen Muster)" leicht zu berechnen, wenn eine Gruppe $G$ auf eine endliche Menge $X$ wirkt.
 
 Die Formel für den Lehrsatz lautet wie folgt:
 
@@ -97,13 +97,13 @@ Lassen Sie uns die Bedeutung jedes in der Formel vorkommenden Symbols im Detail 
 - $X^g$: Die Menge von Mustern, die sich "nicht ändern (fixiert sind)", selbst wenn die Operation $g$ durchgeführt wird.
 - $|X^g|$: Die Anzahl der durch die Operation $g$ fixierten Muster. Dies wird als **"Anzahl der Fixpunkte"** bezeichnet.
 
-Was diese Formel bedeutet, ist sehr intuitiv. Das [Lemma von Burnside](https://kenji.blog/p/burnsides-lemma/) besagt, dass wir die gewünschte Anzahl von Bahnen erhalten können, indem wir **"die 'Anzahl der unveränderlichen Muster (Anzahl der Fixpunkte)' für jede Operation zählen, alle addieren und durch die Gesamtzahl der Operationen dividieren (d.h. den Durchschnitt bilden)"**.
+Was diese Formel bedeutet, ist sehr intuitiv. Das [Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/) besagt, dass wir die gewünschte Anzahl von Bahnen erhalten können, indem wir **"die 'Anzahl der unveränderlichen Muster (Anzahl der Fixpunkte)' für jede Operation zählen, alle addieren und durch die Gesamtzahl der Operationen dividieren (d.h. den Durchschnitt bilden)"**.
 
 Die größte Stärke dieses Lehrsatzes ist, dass er die komplexe Beurteilung von Duplikaten in unabhängige, einfache Berechnungen von "Zählen, was sich unter jeder Operation nicht ändert" zerlegen kann.
 
 ## 6. Anwendung und Berechnung für das Halskettenproblem
 
-Lassen Sie uns nun tatsächlich das [Lemma von Burnside](https://kenji.blog/p/burnsides-lemma/) verwenden, um die Anzahl der Designs für eine Halskette mit 4 Perlen (2 Farben, rot und blau) zu berechnen.
+Lassen Sie uns nun tatsächlich das [Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/) verwenden, um die Anzahl der Designs für eine Halskette mit 4 Perlen (2 Farben, rot und blau) zu berechnen.
 Die Anzahl der Elemente in der ursprünglichen Menge der Muster $X$ ist $16$. Wir werden die Anzahl der Fixpunkte $|X^g|$ für jede Operation $g \in G$ der Gruppe $G$ nacheinander untersuchen.
 
 ### 6.1. Fixpunkte für Nichts-Tun ($R_0$)
@@ -188,7 +188,7 @@ $$
 
 Zufällig wurde in diesem speziellen Fall (4 Perlen, 2 Farben) festgestellt, dass die im Wesentlichen verschiedenen Typen **$6$ Möglichkeiten** bleiben, selbst wenn Reflexion berücksichtigt wird. Dies liegt daran, dass alle $6$ Muster, die wir zuvor gefunden haben, bereits ihre eigenen reflektierten Muster enthielten (wenn die Rotation einbezogen wird). Wenn jedoch die Anzahl der Perlen oder Farben steigt, unterscheiden sich die Ergebnisse stark zwischen der reinen Rotationsgruppe $C_n$ und der Diedergruppe $D_n$.
 
-## 8. Skizze des Beweises für das [Lemma von Burnside](https://kenji.blog/p/burnsides-lemma/)
+## 8. Skizze des Beweises für das [Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/)
 
 Warum ergibt die "durchschnittliche Anzahl von Fixpunkten" die "Anzahl der Bahnen"? Dahinter verbirgt sich ein sehr wichtiger Lehrsatz der Gruppentheorie, der **"Bahnensatz"** (Orbit-Stabilisator-Satz) genannt wird.
 
@@ -215,21 +215,21 @@ $$
 |G| \sum_{x \in X} \frac{1}{|O_x|} = |G| \times |X/G|
 $$
 
-Indem man beide Seiten durch $|G|$ dividiert, erhält man die Formel für das [Lemma von Burnside](https://kenji.blog/p/burnsides-lemma/). Es ist eine sehr schöne und raffinierte logische Entwicklung.
+Indem man beide Seiten durch $|G|$ dividiert, erhält man die Formel für das [Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/). Es ist eine sehr schöne und raffinierte logische Entwicklung.
 
 ## 9. Entwicklung zum Abzählsatz von Pólya
 
-Das [Lemma von Burnside](https://kenji.blog/p/burnsides-lemma/) ist leistungsstark, aber das manuelle Finden der Anzahl von Fixpunkten nacheinander wird schwierig, wenn der Umfang des Problems zunimmt. Bei einem Problem wie "Wie viele Möglichkeiten gibt es, jede Seite eines regelmäßigen Dodekaeders mit 3 Farben zu bemalen?" gibt es beispielsweise 60 Arten von Rotationsoperationen, was die Berechnung enorm macht.
+Das [Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/) ist leistungsstark, aber das manuelle Finden der Anzahl von Fixpunkten nacheinander wird schwierig, wenn der Umfang des Problems zunimmt. Bei einem Problem wie "Wie viele Möglichkeiten gibt es, jede Seite eines regelmäßigen Dodekaeders mit 3 Farben zu bemalen?" gibt es beispielsweise 60 Arten von Rotationsoperationen, was die Berechnung enorm macht.
 
 Die weitere Verallgemeinerung davon und die Ermöglichung mechanischer Berechnungen unter Verwendung algebraischer Polynome (Zyklenzeiger) ist der **"Abzählsatz von Pólya"**.
 
-Das [Lemma von Burnside](https://kenji.blog/p/burnsides-lemma/) ist ein wichtiger Schritt zum Verständnis des Satzes von Pólya und legt den Grundstein für gruppentheoretische Abzählungen.
+Das [Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/) ist ein wichtiger Schritt zum Verständnis des Satzes von Pólya und legt den Grundstein für gruppentheoretische Abzählungen.
 
 ## 10. Historischer Hintergrund des Lemmas von Burnside
 
 Tatsächlich wurde dieser Lehrsatz nicht zuerst von William Burnside entdeckt. Er wurde in Burnsides 1897 veröffentlichtem Buch "Theory of Groups of Finite Order" eingeführt und wurde weithin populär, weshalb er seinen Namen trägt.
 
-Historisch gesehen hatte [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) jedoch bereits 1845 einen Spezialfall dieses Lehrsatzes (bezüglich symmetrischer Gruppen) veröffentlicht, und später 1887 lieferte Ferdinand Georg Frobenius einen Beweis für endliche Gruppen im Allgemeinen.
+Historisch gesehen hatte [Augustin-Louis Cauchy](https://kenji.blog/de/p/cauchy/) jedoch bereits 1845 einen Spezialfall dieses Lehrsatzes (bezüglich symmetrischer Gruppen) veröffentlicht, und später 1887 lieferte Ferdinand Georg Frobenius einen Beweis für endliche Gruppen im Allgemeinen.
 
 Deshalb nennen diejenigen, die versuchen, bei der Mathematikgeschichte streng zu sein, diesen Lehrsatz manchmal spielerisch das **"Cauchy-Frobenius-Lemma"** oder **"Das Lemma, das nicht von Burnside ist"**. Unabhängig vom Ursprung seines Namens ist die Bedeutung der Rolle, die dieses Lemma in der Geschichte der Gruppentheorie und Kombinatorik gespielt hat, unermesslich.
 
@@ -249,13 +249,13 @@ Durch Berechnen der Anzahl der Fixpunkte (Färbungen, bei denen sich die Farben 
 
 ## 12. Fazit
 
-Wie war es? In diesem Artikel haben wir am Beispiel der Anzahl der Halskettendesigns das [Lemma von Burnside](https://kenji.blog/p/burnsides-lemma/) im Detail erklärt.
+Wie war es? In diesem Artikel haben wir am Beispiel der Anzahl der Halskettendesigns das [Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/) im Detail erklärt.
 
 *   Einfache Permutation und Kombination können Duplikationen aufgrund von Symmetrie nicht gut bewältigen.
 *   Symmetrie kann mathematisch mithilfe einer **"Gruppe"** beschrieben werden.
 *   Unter Verwendung des **Lemmas von Burnside** kann die Anzahl der im Wesentlichen unterschiedlichen Muster durch das mechanische Verfahren der "Mittelung der Anzahl von Fixpunkten in jeder Operation" berechnet werden.
 *   Dieser Lehrsatz basiert auf einer tiefen Eigenschaft der Gruppentheorie, die als Bahnensatz (Orbit-Stabilisator-Satz) bezeichnet wird.
 
-Das [Lemma von Burnside](https://kenji.blog/p/burnsides-lemma/) ist ein sehr praktischer Lehrsatz, der in einer Vielzahl von Bereichen angewendet wird, wie z.B. bei der Zählung von molekularen Isomeren in der Chemie, der Bestimmung der Graphenisomorphie in der Graphentheorie und sogar in der statistischen Mechanik der Physik.
+Das [Lemma von Burnside](https://kenji.blog/de/p/burnsides-lemma/) ist ein sehr praktischer Lehrsatz, der in einer Vielzahl von Bereichen angewendet wird, wie z.B. bei der Zählung von molekularen Isomeren in der Chemie, der Bestimmung der Graphenisomorphie in der Graphentheorie und sogar in der statistischen Mechanik der Physik.
 
 Wir hoffen, dass Sie durch die diesmal vorgestellten Grundlagen einen Einblick gewinnen konnten, wie das oft abstrakt erscheinende Feld der Mathematik namens "Gruppentheorie" konkrete reale Probleme brillant lösen kann.

@@ -10,7 +10,7 @@ tags: ["Gauss", "Histoire des mathématiques", "Génie", "Géométrie", "Théori
 
 ## 1. Introduction : L'homme connu sous le nom de "Prince des Mathématiciens"
 
-Johann [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) (30 avril 1777 - 23 février 1855) était un grand mathématicien, astronome et physicien allemand. En raison de son intellect écrasant et de ses contributions décisives dans de très nombreux domaines, il est salué comme le **"Prince des Mathématiciens"** (Princeps mathematicorum). Les réalisations de Gauss couvrent un spectre extrêmement large, des théories profondes des mathématiques pures aux mathématiques appliquées qui décrivent les phénomènes physiques du monde réel.
+Johann [Carl Friedrich Gauss](https://kenji.blog/fr/p/gauss/) (30 avril 1777 - 23 février 1855) était un grand mathématicien, astronome et physicien allemand. En raison de son intellect écrasant et de ses contributions décisives dans de très nombreux domaines, il est salué comme le **"Prince des Mathématiciens"** (Princeps mathematicorum). Les réalisations de Gauss couvrent un spectre extrêmement large, des théories profondes des mathématiques pures aux mathématiques appliquées qui décrivent les phénomènes physiques du monde réel.
 
 Les nombreux théorèmes et concepts qu'il a laissés derrière lui forment le fondement des mathématiques et des sciences modernes. Les lois découvertes par Gauss insufflent la vie aux technologies dont nous bénéficions quotidiennement. Dans cet article, nous suivrons la vie de ce génie sans précédent de manière chronologique, en plongeant profondément dans ses épisodes détaillés et ses réalisations mathématiques pour voir comment il a accompli tant de grands exploits.
 
@@ -91,7 +91,7 @@ Les talents de Gauss ne se limitaient pas aux mathématiques pures ; il a égale
 
 Le 1er janvier 1801, l'astronome italien Giuseppe Piazzi découvre un nouveau corps céleste (appelé plus tard la planète naine Cérès). Cependant, après quelques jours d'observation, le corps céleste s'est caché derrière le soleil et a été perdu de vue. Les astronomes de l'époque ont tenté de prédire son orbite ultérieure à partir de quelques jours seulement de données d'observation, mais tous ont échoué.
 
-C'est là qu'intervient Gauss. Il calcula l'orbite de Cérès en utilisant une nouvelle technique mathématique qu'il avait secrètement mise au point pendant un certain temps, la **"[Méthode des moindres carrés](https://kenji.blog/p/method-of-least-squares/)"**. La méthode des moindres carrés est une technique permettant d'estimer les paramètres les plus probables pour minimiser les erreurs contenues dans les données d'observation.
+C'est là qu'intervient Gauss. Il calcula l'orbite de Cérès en utilisant une nouvelle technique mathématique qu'il avait secrètement mise au point pendant un certain temps, la **"[Méthode des moindres carrés](https://kenji.blog/fr/p/method-of-least-squares/)"**. La méthode des moindres carrés est une technique permettant d'estimer les paramètres les plus probables pour minimiser les erreurs contenues dans les données d'observation.
 
 En supposant que la valeur observée est $y_i$ et la valeur théorique est $f(x_i, \boldsymbol{\theta})$, nous trouvons le paramètre $\boldsymbol{\theta}$ qui minimise la somme des erreurs au carré $S$.
 
@@ -123,7 +123,7 @@ $$
 
 (Où $E, F, G$ sont les coefficients de la première forme fondamentale, et $L, M, N$ sont les coefficients de la seconde forme fondamentale)
 
-Selon ce théorème, il est mathématiquement prouvé que, par exemple, quelle que soit la façon dont un morceau de papier plat (courbure 0) est enroulé, il est impossible de réaliser une sphère (courbure positive) sans distorsion. Cette idée de la géométrie différentielle de Gauss a ensuite été généralisée à des dimensions supérieures par [Bernhard Riemann](https://kenji.blog/p/riemann/) (géométrie riemannienne) et est en outre devenue indispensable en tant que base mathématique pour la théorie de la relativité générale d'Albert Einstein dans les années ultérieures.
+Selon ce théorème, il est mathématiquement prouvé que, par exemple, quelle que soit la façon dont un morceau de papier plat (courbure 0) est enroulé, il est impossible de réaliser une sphère (courbure positive) sans distorsion. Cette idée de la géométrie différentielle de Gauss a ensuite été généralisée à des dimensions supérieures par [Bernhard Riemann](https://kenji.blog/fr/p/riemann/) (géométrie riemannienne) et est en outre devenue indispensable en tant que base mathématique pour la théorie de la relativité générale d'Albert Einstein dans les années ultérieures.
 
 ## 6. Distribution gaussienne et électromagnétisme
 
@@ -153,7 +153,7 @@ L'unité de densité de flux magnétique, le "Gauss (G)", porte également son n
 
 ## 7. Aperçus cachés sur la géométrie non euclidienne
 
-Un épisode montrant l'étonnante prévoyance de Gauss est l'anecdote concernant la **"Géométrie non euclidienne"**. La question de savoir si le postulat des parallèles d'[Euclide](https://kenji.blog/p/euclid/) (par un point extérieur à une droite, il passe exactement une droite parallèle) pouvait être prouvé a été un grand mystère mathématique pendant plus de 2 000 ans.
+Un épisode montrant l'étonnante prévoyance de Gauss est l'anecdote concernant la **"Géométrie non euclidienne"**. La question de savoir si le postulat des parallèles d'[Euclide](https://kenji.blog/fr/p/euclid/) (par un point extérieur à une droite, il passe exactement une droite parallèle) pouvait être prouvé a été un grand mystère mathématique pendant plus de 2 000 ans.
 
 Dans ses notes inédites, Gauss était tout à fait conscient de l'existence d'une nouvelle géométrie (géométrie hyperbolique) dans laquelle le postulat des parallèles n'est pas valable, et en avait construit le système. Cependant, dans les cercles philosophiques conservateurs de l'époque (une époque où la philosophie kantienne était dominante), il craignait de se retrouver impliqué dans des critiques et controverses incompréhensibles (selon les mots de Gauss, "la clameur des Béotiens") s'il publiait une théorie niant l'absolu de l'espace, il ne l'a donc jamais publié de son vivant.
 
@@ -165,6 +165,6 @@ Gauss était un perfectionniste, avec pour devise **"Peu, mais mûr"** (Pauca se
 
 Il a également encadré la génération suivante. Outre Riemann mentionné ci-dessus, de grands mathématiciens de la génération suivante tels que Richard Dedekind et Ferdinand Gotthold Max Eisenstein ont reçu les conseils de Gauss.
 
-Le 23 février 1855, [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) décède à Göttingen à l'âge de 77 ans. Son héritage transcende les frontières des mathématiques et se retrouve à la base de toutes les sciences et technologies modernes. De la pure pensée abstraite au calcul de l'orbite des planètes, en passant par le phénomène physique de l'électromagnétisme, la lumière de son intelligence continue de briller encore aujourd'hui.
+Le 23 février 1855, [Carl Friedrich Gauss](https://kenji.blog/fr/p/gauss/) décède à Göttingen à l'âge de 77 ans. Son héritage transcende les frontières des mathématiques et se retrouve à la base de toutes les sciences et technologies modernes. De la pure pensée abstraite au calcul de l'orbite des planètes, en passant par le phénomène physique de l'électromagnétisme, la lumière de son intelligence continue de briller encore aujourd'hui.
 
 Lorsque nous regardons le ciel nocturne ou utilisons la communication sur nos smartphones, les grandes empreintes de Gauss, le "Prince des Mathématiciens", sont certainement là.

@@ -28,11 +28,11 @@ Dans cet article, nous explorerons pourquoi la définition intuitive est insuffi
 
 ## 2. Histoire du Calcul et la Crise de la Rigueur
 
-Lorsque [Isaac Newton](https://kenji.blog/p/newton/) et [Gottfried Leibniz](https://kenji.blog/p/leibniz/) ont fondé le calcul au 17ème siècle, ils se sont fortement appuyés sur le concept d'"infinitésimaux" (des quantités infiniment petites mais non nulles). Bien que leurs calculs aient donné des résultats remarquables en physique et en géométrie, la base mathématique était extrêmement fragile.
+Lorsque [Isaac Newton](https://kenji.blog/fr/p/newton/) et [Gottfried Leibniz](https://kenji.blog/fr/p/leibniz/) ont fondé le calcul au 17ème siècle, ils se sont fortement appuyés sur le concept d'"infinitésimaux" (des quantités infiniment petites mais non nulles). Bien que leurs calculs aient donné des résultats remarquables en physique et en géométrie, la base mathématique était extrêmement fragile.
 
 Le philosophe George Berkeley de l'époque a sévèrement critiqué ce concept d'infinitésimaux, les qualifiant de " **fantômes de quantités disparues** ". Il a souligné l'incohérence logique de les traiter comme des quantités non nulles lors d'une division au milieu d'un calcul, pour ensuite les rejeter de manière opportuniste comme étant nuls à la fin.
 
-Le calcul a continué à se développer tout au long du 18ème siècle, mais à l'aube du 19ème siècle, des "fonctions pathologiques" qui ne pouvaient être traitées par la seule intuition ont été découvertes les unes après les autres, exacerbant le sentiment de crise chez les mathématiciens. Pour surmonter cela, [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) et [Karl Weierstrass](https://kenji.blog/p/weierstrass/) ont banni le concept douteux d'infinitésimaux et ont reconstruit le calcul en utilisant uniquement les propriétés des nombres réels et les inégalités. Cela a marqué la naissance de la définition $\varepsilon-\delta$.
+Le calcul a continué à se développer tout au long du 18ème siècle, mais à l'aube du 19ème siècle, des "fonctions pathologiques" qui ne pouvaient être traitées par la seule intuition ont été découvertes les unes après les autres, exacerbant le sentiment de crise chez les mathématiciens. Pour surmonter cela, [Augustin-Louis Cauchy](https://kenji.blog/fr/p/cauchy/) et [Karl Weierstrass](https://kenji.blog/fr/p/weierstrass/) ont banni le concept douteux d'infinitésimaux et ont reconstruit le calcul en utilisant uniquement les propriétés des nombres réels et les inégalités. Cela a marqué la naissance de la définition $\varepsilon-\delta$.
 
 ## 3. La Définition Formelle ε-δ
 

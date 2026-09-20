@@ -11,7 +11,7 @@ tags:
 slug: "godels-incompleteness-theorems"
 ---
 
-"Matematika itu mutlak benar"──Setiap orang mungkin pernah berpikir seperti itu setidaknya sekali. Namun, sebuah makalah yang diterbitkan pada tahun 1931 oleh matematikawan muda [Kurt Gödel](https://kenji.blog/p/godel/) menjungkirbalikkan akal sehat tersebut dari akarnya. Itulah **[Teorema Ketidaklengkapan Gödel](https://kenji.blog/p/godels-incompleteness-theorems/)**.
+"Matematika itu mutlak benar"──Setiap orang mungkin pernah berpikir seperti itu setidaknya sekali. Namun, sebuah makalah yang diterbitkan pada tahun 1931 oleh matematikawan muda [Kurt Gödel](https://kenji.blog/id/p/godel/) menjungkirbalikkan akal sehat tersebut dari akarnya. Itulah **[Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/)**.
 
 Dalam artikel ini, kami akan menjelaskan secara menyeluruh tentang teorema mengejutkan bahwa "kebenaran yang sama sekali tidak dapat dibuktikan" itu ada, mulai dari maknanya hingga mekanisme pembuktiannya dengan menyertakan contoh konkret dan ilustrasi.
 
@@ -19,7 +19,7 @@ Dalam artikel ini, kami akan menjelaskan secara menyeluruh tentang teorema menge
 
 ## 1. Latar Belakang: Program Hilbert dan Krisis Matematika
 
-Dari akhir abad ke-19 hingga awal abad ke-20, dunia matematika menghadapi "paradoks teori himpunan (seperti Paradoks Russell)", dan fondasinya goyah. Orang yang bangkit untuk menyelamatkan "krisis matematika" ini adalah otoritas tertinggi dalam dunia matematika saat itu, [David Hilbert](https://kenji.blog/p/hilbert/).
+Dari akhir abad ke-19 hingga awal abad ke-20, dunia matematika menghadapi "paradoks teori himpunan (seperti Paradoks Russell)", dan fondasinya goyah. Orang yang bangkit untuk menyelamatkan "krisis matematika" ini adalah otoritas tertinggi dalam dunia matematika saat itu, [David Hilbert](https://kenji.blog/id/p/hilbert/).
 
 Hilbert mencoba menyimbolkan sepenuhnya semua penalaran matematika dan merekonstruksi matematika hanya dengan aturan mekanis. "Program Hilbert" yang ia advokasikan bertujuan untuk membuktikan tiga sifat berikut dalam sistem formal (Formal System) matematika:
 
@@ -51,7 +51,7 @@ Hilbert berpikir bahwa dengan memperbesar sistem formal ini, suatu hari nanti ia
 
 ## 3. Kejutan Teorema Ketidaklengkapan Pertama: Proposisi "Benar tetapi Tidak Dapat Dibuktikan"
 
-Namun pada tahun 1931, [Kurt Gödel](https://kenji.blog/p/godel/), yang saat itu baru berusia 25 tahun, menerbitkan sebuah makalah yang menghancurkan impian Hilbert. Itulah **Teorema Ketidaklengkapan Pertama**.
+Namun pada tahun 1931, [Kurt Gödel](https://kenji.blog/id/p/godel/), yang saat itu baru berusia 25 tahun, menerbitkan sebuah makalah yang menghancurkan impian Hilbert. Itulah **Teorema Ketidaklengkapan Pertama**.
 
 > **Teorema Ketidaklengkapan Pertama**
 > Dalam setiap sistem formal yang konsisten yang mencakup Aritmatika Peano, selalu ada proposisi yang benar tetapi tidak dapat dibuktikan dalam sistem tersebut.
@@ -125,20 +125,20 @@ Teorema Ketidaklengkapan Kedua menunjukkan batasan definitif bahwa mustahil bagi
 
 ## 6. Kesalahpahaman Umum tentang Teorema Ketidaklengkapan
 
-Karena namanya yang dramatis, [Teorema Ketidaklengkapan Gödel](https://kenji.blog/p/godels-incompleteness-theorems/) sering kali disalahgunakan dalam konteks filsafat, ideologi, dan okultisme. Di sini, mari kita luruskan kesalahpahaman yang paling umum.
+Karena namanya yang dramatis, [Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/) sering kali disalahgunakan dalam konteks filsafat, ideologi, dan okultisme. Di sini, mari kita luruskan kesalahpahaman yang paling umum.
 
 - **Kesalahpahaman 1: "Matematika telah runtuh"**
   - **Fakta**: Teorema Ketidaklengkapan tidak berarti kehancuran matematika. Sebaliknya, ia mengklarifikasi sifat logika formal bahwa "kebenaran keseluruhan tidak dapat ditangkap hanya oleh sistem aksioma tunggal yang tetap". Matematikawan terus mengembangkan penelitian dengan menciptakan sistem yang lebih kuat melalui penambahan aksioma baru sesuai kebutuhan (seperti "Aksioma Pilihan" atau "Aksioma Kardinal Besar").
 - **Kesalahpahaman 2: "Akal budi manusia memiliki batasan"**
   - **Fakta**: Batasan yang ditunjukkan oleh teorema ini adalah tentang "sistem (sistem formal) yang mengikuti aturan mekanis yang telah ditentukan sebelumnya". Dalam Teorema Ketidaklengkapan Pertama, kita bisa melihat bahwa proposisi $G$ adalah "benar" dari sudut pandang luar. Beberapa ahli (seperti Roger Penrose) menganggap ini sebagai bukti bahwa akal budi manusia memiliki kemampuan untuk memahami "makna (semantik)" yang melampaui sistem formal mekanis.
 - **Kesalahpahaman 3: "Ada hal yang tidak bisa dibuktikan apa pun itu"**
-  - **Fakta**: Teorema Ketidaklengkapan hanya berlaku pada sistem yang cukup kompleks, yang mencakup "penjumlahan dan perkalian bilangan asli (Aritmatika Peano)". Misalnya, "Geometri [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an" atau "Teori Orde Pertama dari Bilangan Real" sepenuhnya lengkap, dan semua proposisi yang benar di sana dapat dibuktikan. Ketidaklengkapan hanya terjadi ketika subjeknya memiliki struktur yang cukup kompleks (struktur yang memungkinkan referensi ke diri sendiri).
+  - **Fakta**: Teorema Ketidaklengkapan hanya berlaku pada sistem yang cukup kompleks, yang mencakup "penjumlahan dan perkalian bilangan asli (Aritmatika Peano)". Misalnya, "Geometri [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an" atau "Teori Orde Pertama dari Bilangan Real" sepenuhnya lengkap, dan semua proposisi yang benar di sana dapat dibuktikan. Ketidaklengkapan hanya terjadi ketika subjeknya memiliki struktur yang cukup kompleks (struktur yang memungkinkan referensi ke diri sendiri).
 
 ## 7. Tongkat Estafet ke Mesin Turing: Fajar Ilmu Komputer
 
-Dampak dari teorema Gödel tidak terbatas pada batas matematika. Pada tahun 1936, matematikawan Inggris [Alan Turing](https://kenji.blog/p/turing/) mengganti konsep "sistem formal" Gödel dengan proses komputasi fisik, dan merancang model komputer virtual yang disebut "Mesin Turing".
+Dampak dari teorema Gödel tidak terbatas pada batas matematika. Pada tahun 1936, matematikawan Inggris [Alan Turing](https://kenji.blog/id/p/turing/) mengganti konsep "sistem formal" Gödel dengan proses komputasi fisik, dan merancang model komputer virtual yang disebut "Mesin Turing".
 
-Turing menerapkan [Teorema Ketidaklengkapan Gödel](https://kenji.blog/p/godels-incompleteness-theorems/) ke dalam dunia komputer dan membuktikan bahwa "tidak ada algoritma universal untuk menentukan sebelumnya apakah program komputer mana pun akan berjalan selamanya tanpa akhir atau tidak". Inilah **Masalah Penghentian** (Halting Problem) yang terkenal.
+Turing menerapkan [Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/) ke dalam dunia komputer dan membuktikan bahwa "tidak ada algoritma universal untuk menentukan sebelumnya apakah program komputer mana pun akan berjalan selamanya tanpa akhir atau tidak". Inilah **Masalah Penghentian** (Halting Problem) yang terkenal.
 
 ```mermaid
 graph TD
@@ -152,8 +152,8 @@ Batasan matematika berupa "ada kebenaran yang tidak bisa dibuktikan" dengan inda
 
 ## 8. Kesimpulan: Perjalanan Panjang yang Tiada Akhir untuk "Mengetahui"
 
-"Mesin matematika sempurna yang dapat membuktikan segalanya secara otomatis" yang diimpikan oleh [David Hilbert](https://kenji.blog/p/hilbert/) hancur menjadi ilusi karena [Teorema Ketidaklengkapan Gödel](https://kenji.blog/p/godels-incompleteness-theorems/). Namun, itu sama sekali tidak berarti kekalahan matematika.
+"Mesin matematika sempurna yang dapat membuktikan segalanya secara otomatis" yang diimpikan oleh [David Hilbert](https://kenji.blog/id/p/hilbert/) hancur menjadi ilusi karena [Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/). Namun, itu sama sekali tidak berarti kekalahan matematika.
 
 Jika matematika bisa sepenuhnya diotomatisasi, pekerjaan seorang matematikawan akan menjadi sekadar tugas biasa dan suatu hari akan berakhir. Akan tetapi, keberadaan "proposisi yang tidak dapat dibuktikan tetapi benar" yang ditunjukkan Gödel membuktikan bahwa alam semesta matematika jauh lebih kaya dan memiliki kedalaman yang tidak akan pernah habis dibandingkan yang bisa kita bayangkan.
 
-[Kurt Gödel](https://kenji.blog/p/godel/) telah **membuktikan** eksistensi "kebenaran yang sama sekali tidak dapat dibuktikan" melalui matematika itu sendiri, yang merupakan logika paling ketat. Teorema ketidaklengkapannya mengajarkan kita bahwa pencarian manusia untuk "mengetahui" adalah perjalanan tiada akhir yang akan berlangsung selamanya.
+[Kurt Gödel](https://kenji.blog/id/p/godel/) telah **membuktikan** eksistensi "kebenaran yang sama sekali tidak dapat dibuktikan" melalui matematika itu sendiri, yang merupakan logika paling ketat. Teorema ketidaklengkapannya mengajarkan kita bahwa pencarian manusia untuk "mengetahui" adalah perjalanan tiada akhir yang akan berlangsung selamanya.

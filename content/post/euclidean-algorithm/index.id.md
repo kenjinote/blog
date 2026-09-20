@@ -8,16 +8,16 @@ categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 
-# Apa itu [Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/)?
+# Apa itu [Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/)?
 
-**[Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/)** ([Euclide](https://kenji.blog/p/euclid/)an algorithm) adalah metode yang efisien untuk menghitung Faktor Persekutuan Terbesar (FPB) dari dua bilangan asli (atau bilangan bulat). Dijelaskan sekitar tahun 300 SM oleh matematikawan Yunani kuno [Euclid](https://kenji.blog/p/euclid/) dalam Buku VII dari risalah matematikanya "Elements", ini secara luas dikenal sebagai salah satu "algoritma tertua umat manusia."
+**[Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/)** ([Euclide](https://kenji.blog/id/p/euclid/)an algorithm) adalah metode yang efisien untuk menghitung Faktor Persekutuan Terbesar (FPB) dari dua bilangan asli (atau bilangan bulat). Dijelaskan sekitar tahun 300 SM oleh matematikawan Yunani kuno [Euclid](https://kenji.blog/id/p/euclid/) dalam Buku VII dari risalah matematikanya "Elements", ini secara luas dikenal sebagai salah satu "algoritma tertua umat manusia."
 
-Cara paling naif untuk menemukan FPB adalah dengan menemukan faktorisasi prima dari kedua bilangan dan mengalikan faktor prima persekutuannya. Namun, seiring bertambahnya bilangan, kompleksitas komputasi dari faktorisasi prima itu sendiri menjadi sangat besar, sehingga sulit untuk dipecahkan dalam kerangka waktu yang realistis. Di sisi lain, dengan menggunakan **[Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/)** , dimungkinkan untuk menghitung FPB dengan sangat cepat, bahkan untuk bilangan masif yang mencakup ribuan digit.
+Cara paling naif untuk menemukan FPB adalah dengan menemukan faktorisasi prima dari kedua bilangan dan mengalikan faktor prima persekutuannya. Namun, seiring bertambahnya bilangan, kompleksitas komputasi dari faktorisasi prima itu sendiri menjadi sangat besar, sehingga sulit untuk dipecahkan dalam kerangka waktu yang realistis. Di sisi lain, dengan menggunakan **[Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/)** , dimungkinkan untuk menghitung FPB dengan sangat cepat, bahkan untuk bilangan masif yang mencakup ribuan digit.
 
 ## Teorema Dasar dan Mekanika
 
 Misalkan $\gcd(a, b)$ menyatakan faktor persekutuan terbesar dari dua bilangan asli $a$ dan $b$ (di mana $a \ge b$).
-[Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/) didasarkan pada teorema sederhana berikut:
+[Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/) didasarkan pada teorema sederhana berikut:
 
 $$
 a = bq + r \implies \gcd(a, b) = \gcd(b, r)
@@ -39,7 +39,7 @@ Mengapa $\gcd(a, b) = \gcd(b, r)$ berlaku? Mari kita buktikan secara singkat.
 
 ## Diagram Alir Algoritma
 
-Dengan memanfaatkan properti ini, algoritma [Euclide](https://kenji.blog/p/euclid/)an berulang kali melakukan pembagian hingga sisanya mencapai $0$ .
+Dengan memanfaatkan properti ini, algoritma [Euclide](https://kenji.blog/id/p/euclid/)an berulang kali melakukan pembagian hingga sisanya mencapai $0$ .
 
 ```mermaid
 flowchart TD
@@ -109,24 +109,24 @@ int main() {
 
 ## Kompleksitas Waktu dan Teorema Lamé
 
-Seberapa cepat algoritma [Euclide](https://kenji.blog/p/euclid/)an? Mengenai kompleksitas komputasinya, **teorema Lamé** (Lamé's theorem), yang dibuktikan oleh matematikawan Prancis [Gabriel Lamé](https://kenji.blog/p/lame/) pada tahun 1844, sangat terkenal.
+Seberapa cepat algoritma [Euclide](https://kenji.blog/id/p/euclid/)an? Mengenai kompleksitas komputasinya, **teorema Lamé** (Lamé's theorem), yang dibuktikan oleh matematikawan Prancis [Gabriel Lamé](https://kenji.blog/id/p/lame/) pada tahun 1844, sangat terkenal.
 
 > **Teorema Lamé**
-> Jumlah langkah pembagian yang diperlukan untuk menerapkan algoritma [Euclide](https://kenji.blog/p/euclid/)an ke dua bilangan asli $a, b$ ($a > b$) paling banyak $5$ kali jumlah digit representasi desimal dari $b$ .
+> Jumlah langkah pembagian yang diperlukan untuk menerapkan algoritma [Euclide](https://kenji.blog/id/p/euclid/)an ke dua bilangan asli $a, b$ ($a > b$) paling banyak $5$ kali jumlah digit representasi desimal dari $b$ .
 
 Sebagai hasil, kompleksitas waktu algoritma adalah $O(\log(\min(a, b)))$ .
 
 Skenario terburuk (di mana jumlah pembagian dimaksimalkan) terjadi ketika dua bilangan berurutan dari deret Fibonacci disediakan. Misalnya, dalam proses mencari FPB dari $F_{n+2}$ dan $F_{n+1}$ , hasil baginya selalu $1$ , secara kontinu bertransisi ke bilangan Fibonacci yang lebih kecil.
 
-## [Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/) Diperluas
+## [Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/) Diperluas
 
-Perluasan algoritma untuk menemukan bilangan bulat $x, y$ yang memenuhi identitas Bézout (Bézout's identity) berikut, selain mencari faktor persekutuan terbesar, disebut **[Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/) Diperluas** (Extended [Euclide](https://kenji.blog/p/euclid/)an algorithm).
+Perluasan algoritma untuk menemukan bilangan bulat $x, y$ yang memenuhi identitas Bézout (Bézout's identity) berikut, selain mencari faktor persekutuan terbesar, disebut **[Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/) Diperluas** (Extended [Euclide](https://kenji.blog/id/p/euclid/)an algorithm).
 
 $$
 ax + by = \gcd(a, b)
 $$
 
-### Implementasi [Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/) Diperluas
+### Implementasi [Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/) Diperluas
 
 Dalam proses pengembalian dari pemanggilan rekursif, kita mundur untuk menghitung koefisien $x$ dan $y$ .
 
@@ -152,10 +152,10 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 
 ## Aplikasi dalam Masyarakat Modern (Kriptografi RSA, dll.)
 
-[Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/) Diperluas bukan sekadar teka-teki matematika, melainkan teknologi esensial yang mendukung masyarakat internet modern.
+[Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/) Diperluas bukan sekadar teka-teki matematika, melainkan teknologi esensial yang mendukung masyarakat internet modern.
 Contoh utamanya adalah **kriptografi RSA** . Dalam proses pembuatan kunci enkripsi RSA, perlu ditemukan kunci privat $d$ (invers modular) yang memenuhi $e d \equiv 1 \pmod{\phi(N)}$ untuk suatu bilangan $e$ dan fungsi totient Euler $\phi(N)$ .
-Karena ini dapat disusun ulang ke dalam bentuk $ed + k\phi(N) = 1$ , kita dapat menggunakan [Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/) Diperluas untuk menghitung $d$ pada kecepatan yang sangat tinggi.
+Karena ini dapat disusun ulang ke dalam bentuk $ed + k\phi(N) = 1$ , kita dapat menggunakan [Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/) Diperluas untuk menghitung $d$ pada kecepatan yang sangat tinggi.
 
 ## Kesimpulan
 
-Meskipun ditemukan sejak lama di era SM, algoritma [Euclide](https://kenji.blog/p/euclid/)an terus menopang landasan ilmu komputer modern karena logikanya yang efisien dan efisiensi komputasi yang tinggi. Meskipun seringkali merupakan topik pertama yang dijumpai saat mempelajari algoritma, ia dikemas dengan keindahan matematika dan kepraktisan di balik layar.
+Meskipun ditemukan sejak lama di era SM, algoritma [Euclide](https://kenji.blog/id/p/euclid/)an terus menopang landasan ilmu komputer modern karena logikanya yang efisien dan efisiensi komputasi yang tinggi. Meskipun seringkali merupakan topik pertama yang dijumpai saat mempelajari algoritma, ia dikemas dengan keindahan matematika dan kepraktisan di balik layar.

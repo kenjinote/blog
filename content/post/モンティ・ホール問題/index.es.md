@@ -79,9 +79,9 @@ Por lo tanto, la probabilidad de ganar si cambias de puerta es de $\frac{2}{3}$,
 
 ---
 
-## 3. Demostración rigurosa mediante el [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/)
+## 3. Demostración rigurosa mediante el [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/)
 
-Para resolver estrictamente este problema de forma matemática, utilizamos el "[Teorema de Bayes](https://kenji.blog/p/bayes-theorem/)", que calcula la probabilidad condicional.
+Para resolver estrictamente este problema de forma matemática, utilizamos el "[Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/)", que calcula la probabilidad condicional.
 
 $$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 

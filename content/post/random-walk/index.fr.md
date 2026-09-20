@@ -8,7 +8,7 @@ categories: ["Mathématiques"]
 tags: ["Marche Aléatoire", "Probabilité", "Équation de Diffusion", "Mouvement Brownien", "Python"]
 ---
 
-# Introduction : Qu'est-ce que la [Marche Aléatoire](https://kenji.blog/p/random-walk/) ?
+# Introduction : Qu'est-ce que la [Marche Aléatoire](https://kenji.blog/fr/p/random-walk/) ?
 
 La marche aléatoire est un concept mathématique qui décrit un mouvement où la position suivante est déterminée de manière aléatoire (probabiliste). Elle est souvent appelée "la marche de l'ivrogne", car elle ressemble à une personne ivre titubant de gauche à droite avec des pas incertains. À première vue, il s'agit d'un mouvement chaotique et imprévisible, mais à mesure que le nombre de pas augmente, des lois mathématiques étonnamment belles et régulières émergent.
 
@@ -22,7 +22,7 @@ Le terme "marche aléatoire" a été utilisé académiquement pour la première 
 
 En réponse à cette question, Lord Rayleigh a souligné que les formules mathématiques de ses propres recherches en acoustique concernant la "superposition de multiples ondes sonores" pouvaient s'appliquer directement. Cela a été le catalyseur d'une large reconnaissance de la théorie de la marche aléatoire.
 
-## Formulation Mathématique Rigoureuse de la [Marche Aléatoire](https://kenji.blog/p/random-walk/) en 1D
+## Formulation Mathématique Rigoureuse de la [Marche Aléatoire](https://kenji.blog/fr/p/random-walk/) en 1D
 
 ### Définition du Mouvement Probabiliste
 
@@ -94,7 +94,7 @@ $$
 
 Ce résultat est très important. Une espérance de $0$ signifie que **en moyenne, la particule reste à l'origine**. Cependant, parce que la variance augmente proportionnellement à $n$, l'écart-type (indicateur de dispersion) devient $\sqrt{n}$. Autrement dit, à mesure que le nombre de pas $n$ augmente, la zone de présence de la particule s'étend progressivement à l'ordre de $\sqrt{n}$. L'inefficacité où le temps avance de $n$ mais la distance de déplacement n'avance que de $\sqrt{n}$ est la caractéristique la plus marquante de la marche aléatoire.
 
-## Approximation de Stirling et [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/)
+## Approximation de Stirling et [Théorème Central Limite](https://kenji.blog/fr/p/central-limit-theorem/)
 
 Lorsque le nombre de pas $n$ est très grand, le calcul de la distribution binomiale devient difficile. Si l'on évalue les coefficients binomiaux à l'aide de l'approximation de Stirling pour les factorielles $n! \approx \sqrt{2\pi n} (n/e)^n$, la distribution de probabilité discrète converge vers une **distribution normale** (distribution de Gauss) continue.
 
@@ -104,7 +104,7 @@ $$
 f(x, n) \approx \frac{1}{\sqrt{2\pi n}} \exp\left( - \frac{x^2}{2n} \right)
 $$
 
-Ceci est l'expression directe du [Théorème Central Limite](https://kenji.blog/p/central-limit-theorem/).
+Ceci est l'expression directe du [Théorème Central Limite](https://kenji.blog/fr/p/central-limit-theorem/).
 
 ## Dérivation de l'Équation de Diffusion (Équation de la Chaleur)
 

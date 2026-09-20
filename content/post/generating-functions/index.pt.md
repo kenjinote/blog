@@ -137,7 +137,7 @@ graph TD
     PF -->|"Expansão em Série de Potências e Comparação de Coeficientes"| AN["Termo Geral (Fórmula de Binet)"]
 ```
 
-## 4. [Funções geradoras](https://kenji.blog/p/generating-functions/) exponenciais e permutações
+## 4. [Funções geradoras](https://kenji.blog/pt/p/generating-functions/) exponenciais e permutações
 
 Ao lidar com problemas combinatórios que consideram a ordem, ou seja, "permutações", a **função geradora exponencial** (Exponential Generating Function) entra em jogo.
 

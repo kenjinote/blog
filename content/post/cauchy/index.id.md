@@ -16,7 +16,7 @@ tags:
 
 ## Pengantar
 
-Dalam sejarah matematika, abad ke-19 dikenal sebagai "Era Ketelitian". Matematikawan Prancis **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)** (1789-1857) adalah orang yang memberikan landasan logis yang kuat untuk kalkulus, yang sebelumnya telah diperlakukan secara intuitif. Namanya memahkotai begitu banyak teorema dan konsep sehingga siapa pun yang mempelajari matematika modern pasti akan menemukannya.
+Dalam sejarah matematika, abad ke-19 dikenal sebagai "Era Ketelitian". Matematikawan Prancis **[Augustin-Louis Cauchy](https://kenji.blog/id/p/cauchy/)** (1789-1857) adalah orang yang memberikan landasan logis yang kuat untuk kalkulus, yang sebelumnya telah diperlakukan secara intuitif. Namanya memahkotai begitu banyak teorema dan konsep sehingga siapa pun yang mempelajari matematika modern pasti akan menemukannya.
 
 Artikel ini mengeksplorasi kehidupan Cauchy yang penuh gejolak, seorang raksasa dalam dunia matematika, dan pencapaian matematika brilian yang ia tinggalkan.
 
@@ -95,6 +95,6 @@ Subjek penelitiannya tidak terbatas pada analisis tetapi diperluas ke berbagai b
 
 ## Kesimpulan
 
-[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) menempa matematika, yang sebelumnya mengandalkan intuisi, menjadi disiplin akademis yang ketat melalui kekuatan logika. Konsep dan teorema yang ia ciptakan berakar dalam di mana-mana dalam matematika modern.
+[Augustin-Louis Cauchy](https://kenji.blog/id/p/cauchy/) menempa matematika, yang sebelumnya mengandalkan intuisi, menjadi disiplin akademis yang ketat melalui kekuatan logika. Konsep dan teorema yang ia ciptakan berakar dalam di mana-mana dalam matematika modern.
 
 Meskipun hidupnya tidak mulus, karena ia memilih pengasingan sebagai martir atas keyakinan politiknya, hasratnya untuk mengejar kebenaran tidak pernah goyah. Warisan intelektual luar biasa yang ia tinggalkan terus membimbing ahli matematika dan ilmuwan di seluruh dunia saat ini.

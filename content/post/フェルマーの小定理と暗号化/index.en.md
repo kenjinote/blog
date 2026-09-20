@@ -13,15 +13,15 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 In modern digital society, especially in communication over the Internet, "encryption" has become an indispensable foundational technology. The reason we can securely browse websites via HTTPS, perform financial transactions through online banking, and exchange private messages on messaging apps is because cryptographic protocols backed by highly advanced mathematical theories are working behind the scenes. Among them, "Public-Key Cryptography" plays a particularly important role, and its prime representative is **RSA cryptography**.
 
-The security and correctness of many cryptographic algorithms, including RSA cryptography, depend heavily on a very beautiful and powerful theorem discovered by the 17th-century French mathematician [Pierre de Fermat](https://kenji.blog/p/fermat/). That is **[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)**. Furthermore, [Leonhard Euler](https://kenji.blog/p/euler/)'s theorem, which generalizes this, also plays a decisive role in cryptographic theory.
+The security and correctness of many cryptographic algorithms, including RSA cryptography, depend heavily on a very beautiful and powerful theorem discovered by the 17th-century French mathematician [Pierre de Fermat](https://kenji.blog/en/p/fermat/). That is **[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)**. Furthermore, [Leonhard Euler](https://kenji.blog/en/p/euler/)'s theorem, which generalizes this, also plays a decisive role in cryptographic theory.
 
-In this article, we will thoroughly explain from the basics how the pure mathematical discovery of [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/) is applied to modern practical cryptographic technologies, especially "primality testing" and "RSA cryptography". This will be a highly detailed technical guide covering mathematical proofs, encryption and decryption mechanisms, and specific algorithm implementations using C++ and Python.
+In this article, we will thoroughly explain from the basics how the pure mathematical discovery of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) is applied to modern practical cryptographic technologies, especially "primality testing" and "RSA cryptography". This will be a highly detailed technical guide covering mathematical proofs, encryption and decryption mechanisms, and specific algorithm implementations using C++ and Python.
 
 ---
 
 ## 2. Fundamentals of Congruences and Modular Arithmetic
 
-To understand [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/), you first need to become familiar with the mathematical concept of "modular arithmetic (congruence)". Modular arithmetic is a calculation system that focuses on the "remainder" when dividing by a certain fixed number (called the modulus). Because it's a calculation like a clock face (which cycles every 12 hours), it is also called "clock mathematics".
+To understand [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/), you first need to become familiar with the mathematical concept of "modular arithmetic (congruence)". Modular arithmetic is a calculation system that focuses on the "remainder" when dividing by a certain fixed number (called the modulus). Because it's a calculation like a clock face (which cycles every 12 hours), it is also called "clock mathematics".
 
 When the remainders of dividing integers $a$ and $b$ by a positive integer $n$ are equal, it is described mathematically as follows:
 
@@ -46,15 +46,15 @@ However, care must be taken with **division**. In general, just because $a \time
 
 ---
 
-## 3. Mathematical Background and Proof of [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)
+## 3. Mathematical Background and Proof of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)
 
-Having grasped the basics of modular arithmetic, let's look at the main subject, [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/).
+Having grasped the basics of modular arithmetic, let's look at the main subject, [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/).
 
 ### 3.1 Definition of the Theorem
 
-[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/) is formulated as follows:
+[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) is formulated as follows:
 
-> **[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)**
+> **[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)**
 > Let $p$ be a prime number, and let $a$ be any integer that is not a multiple of $p$ (i.e., $a$ and $p$ are coprime). Then, the following congruence holds:
 > $$ a^{p-1} \equiv 1 \pmod p $$
 
@@ -106,13 +106,13 @@ $$
 a^{p-1} \equiv 1 \pmod p
 $$
 
-This is the proof of [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/).
+This is the proof of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/).
 
 ---
 
 ## 4. Euler's Totient Function and Euler's Theorem
 
-[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/) is a theorem concerning "prime numbers $p$", but it was [Leonhard Euler](https://kenji.blog/p/euler/) who generalized this to "any positive integer $n$". This extension is essential for understanding RSA cryptography.
+[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) is a theorem concerning "prime numbers $p$", but it was [Leonhard Euler](https://kenji.blog/en/p/euler/) who generalized this to "any positive integer $n$". This extension is essential for understanding RSA cryptography.
 
 ### 4.1 Euler's Totient Function $\phi(n)$
 
@@ -126,13 +126,13 @@ This property is the fundamental logic in RSA key generation.
 
 ### 4.2 Euler's Theorem
 
-Euler generalized [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/) as follows:
+Euler generalized [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) as follows:
 
 > **Euler's Theorem**
 > For a positive integer $n$ and an integer $a$ coprime to it, the following holds:
 > $$ a^{\phi(n)} \equiv 1 \pmod n $$
 
-If $n$ is a prime number $p$, then $\phi(p) = p - 1$, so this becomes [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/) itself ($a^{p-1} \equiv 1 \pmod p$). In other words, [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/) is merely a special case of Euler's Theorem.
+If $n$ is a prime number $p$, then $\phi(p) = p - 1$, so this becomes [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) itself ($a^{p-1} \equiv 1 \pmod p$). In other words, [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) is merely a special case of Euler's Theorem.
 
 ---
 
@@ -140,11 +140,11 @@ If $n$ is a prime number $p$, then $\phi(p) = p - 1$, so this becomes [Fermat's 
 
 In cryptographic technologies (such as RSA cryptography and Diffie-Hellman key exchange), it is necessary to find "giant prime numbers" spanning hundreds of digits at high speed. However, to test whether a giant number $N$ is prime, checking if it is divisible by every number from $2$ to $\sqrt{N}$ (trial division) would take as long as the lifespan of the universe.
 
-This is where the **Fermat Primality Test** comes in, a "probabilistic primality test" that takes advantage of [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/).
+This is where the **Fermat Primality Test** comes in, a "probabilistic primality test" that takes advantage of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/).
 
 ### 5.1 What is a Probabilistic Primality Test?
 
-According to [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/), if $p$ is prime, then for any $a$ ($1 < a < p$), $a^{p-1} \equiv 1 \pmod p$ must hold.
+According to [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/), if $p$ is prime, then for any $a$ ($1 < a < p$), $a^{p-1} \equiv 1 \pmod p$ must hold.
 Taking the contrapositive, we can say that "if $a^{p-1} \not\equiv 1 \pmod p$ for some $a$, then $p$ is **absolutely not a prime number (it is a composite number)**".
 
 Therefore, if we want to determine whether $N$ is prime, we randomly choose several $a$'s, calculate $a^{N-1} \pmod N$, and check if it equals $1$. If an answer other than $1$ appears even once, $N$ is definitively a composite number. If it equals $1$ no matter how many times we try, we can determine with high probability that $N$ is "probably prime".
@@ -283,7 +283,7 @@ else:
 
 ## 7. Application to RSA Cryptography: Where Fermat and Euler Bear Fruit
 
-The greatest application of [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/) (and Euler's Theorem) is **RSA cryptography**, developed in 1977 by Rivest, Shamir, and Adleman.
+The greatest application of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) (and Euler's Theorem) is **RSA cryptography**, developed in 1977 by Rivest, Shamir, and Adleman.
 RSA cryptography is an epoch-making system called "public-key cryptography", realizing a mechanism where the key for encryption (public key) is published to the whole world, while the key for decryption (private key) is known only to the receiver themselves.
 
 This asymmetry is based on the computational security that "factorizing a giant composite number into its prime factors is extremely difficult."
@@ -317,7 +317,7 @@ The mathematical detail steps are explained below.
 4. Choose an integer $e$ (public exponent) that is coprime to $\phi(N)$ (often $e = 65537$ is used).
 5. Calculate the modular inverse $d$ (private exponent) of $e$. In other words, find $d$ that satisfies:
    $$ e \cdot d \equiv 1 \pmod{\phi(N)} $$
-   The **extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm** is used for this calculation.
+   The **extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm** is used for this calculation.
 
 Now, the **public key is $(N, e)$**, and the **private key is $(N, d)$**. ($p, q, \phi(N)$ are immediately discarded or strictly hidden).
 
@@ -344,7 +344,7 @@ Surprisingly, this calculation result $M'$ perfectly matches the original messag
 
 ### 7.2 Why can it be decrypted? (Mathematical Proof)
 
-Here, [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/) (Euler's Theorem) shows its true worth. Why does $C^d \pmod N$ return to $M$?
+Here, [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) (Euler's Theorem) shows its true worth. Why does $C^d \pmod N$ return to $M$?
 
 Let's expand the decryption equation.
 Since $C \equiv M^e \pmod N$,
@@ -356,7 +356,7 @@ $$ e \cdot d = 1 + k \cdot \phi(N) $$
 Substitute this into the above equation:
 $$ M^{ed} = M^{1 + k \cdot \phi(N)} = M \cdot M^{k \cdot \phi(N)} = M \cdot (M^{\phi(N)})^k \pmod N $$
 
-Here, **Euler's Theorem** ($M^{\phi(N)} \equiv 1 \pmod N$) comes into play. (*Strictly speaking, $M$ and $N$ need to be coprime, but in RSA, the probability that $M$ and $N$ are not coprime is astronomically low, and using the [Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/), it can be proven to hold even if they are not coprime).
+Here, **Euler's Theorem** ($M^{\phi(N)} \equiv 1 \pmod N$) comes into play. (*Strictly speaking, $M$ and $N$ need to be coprime, but in RSA, the probability that $M$ and $N$ are not coprime is astronomically low, and using the [Chinese Remainder Theorem](https://kenji.blog/en/p/chinese-remainder-theorem/), it can be proven to hold even if they are not coprime).
 
 Applying Euler's Theorem, since $M^{\phi(N)} \equiv 1$:
 $$ M \cdot (1)^k \equiv M \pmod N $$
@@ -369,7 +369,7 @@ $M$ is beautifully restored! The properties of numbers discovered hundreds of ye
 
 It's hard to get a real feel from theory alone, so let's actually implement the key generation, encryption, and decryption process of RSA cryptography using Python. This is a "toy implementation" for educational purposes, but the math used is exactly the same as the real thing.
 
-The "extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm" for finding the modular inverse $d$ is also included in the implementation.
+The "extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm" for finding the modular inverse $d$ is also included in the implementation.
 
 ```python
 import random
@@ -466,11 +466,11 @@ When you run this code, you can see how an array of characters is converted into
 
 ## 9. Conclusion: The Intersection of Mathematical Beauty and Practicality
 
-In the 17th century when [Pierre de Fermat](https://kenji.blog/p/fermat/) discovered this "Little Theorem", no one thought it would be of any use. Fermat himself studied number theory out of pure mathematical curiosity.
+In the 17th century when [Pierre de Fermat](https://kenji.blog/en/p/fermat/) discovered this "Little Theorem", no one thought it would be of any use. Fermat himself studied number theory out of pure mathematical curiosity.
 
-However, about 300 years later in the 1970s, at the dawn of computer networks, Fermat's theorem made a dramatic comeback as an indispensable cryptographic technology for establishing secure communication protocols. Primality testing technology based on [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/) and RSA cryptography based on Euler's theorem literally support modern Internet infrastructure.
+However, about 300 years later in the 1970s, at the dawn of computer networks, Fermat's theorem made a dramatic comeback as an indispensable cryptographic technology for establishing secure communication protocols. Primality testing technology based on [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) and RSA cryptography based on Euler's theorem literally support modern Internet infrastructure.
 
-The LINE messages we casually send every day, the shopping on Amazon, all dance on this simple and beautiful formula $a^{p-1} \equiv 1 \pmod p$. No matter how abstract mathematics may be, [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/) teaches us that the time will definitely come when it will be useful to humanity.
+The LINE messages we casually send every day, the shopping on Amazon, all dance on this simple and beautiful formula $a^{p-1} \equiv 1 \pmod p$. No matter how abstract mathematics may be, [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) teaches us that the time will definitely come when it will be useful to humanity.
 
 When studying programming or cryptographic theory, understanding the mathematical structures at their foundation will become a great weapon for deeply understanding the behavior of libraries provided as black boxes and designing more secure systems.
 

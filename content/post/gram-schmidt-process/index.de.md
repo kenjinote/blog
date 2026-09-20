@@ -213,7 +213,7 @@ flowchart LR
     D --> E
 ```
 
-Im Kontext des maschinellen Lernens wird die QR-Zerlegung genutzt, um die Berechnungen der „[Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/)“ stabil und schnell durchzuführen, um optimale Parameter in der multiplen Regressionsanalyse zu finden. Der Ansatz, die Normalgleichung ($A^T A \mathbf{x} = A^T \mathbf{b}$) direkt zu lösen, wird in der Praxis üblicherweise vermieden, da sich die Konditionszahl der Matrix $A^T A$ leicht verschlechtert, was sie extrem anfällig für numerische Fehler macht. Stattdessen ist es gängige Praxis, sie in $A=QR$ zu zerlegen und $R \mathbf{x} = Q^T \mathbf{b}$ durch Rückwärtseinsetzen zu lösen.
+Im Kontext des maschinellen Lernens wird die QR-Zerlegung genutzt, um die Berechnungen der „[Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/)“ stabil und schnell durchzuführen, um optimale Parameter in der multiplen Regressionsanalyse zu finden. Der Ansatz, die Normalgleichung ($A^T A \mathbf{x} = A^T \mathbf{b}$) direkt zu lösen, wird in der Praxis üblicherweise vermieden, da sich die Konditionszahl der Matrix $A^T A$ leicht verschlechtert, was sie extrem anfällig für numerische Fehler macht. Stattdessen ist es gängige Praxis, sie in $A=QR$ zu zerlegen und $R \mathbf{x} = Q^T \mathbf{b}$ durch Rückwärtseinsetzen zu lösen.
 
 ## 9. Fazit: Die Schönheit eines neu ausgerichteten Raumes
 

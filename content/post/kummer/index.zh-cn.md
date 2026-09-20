@@ -8,9 +8,9 @@ categories: ["数学", "传记"]
 tags: ["恩斯特·库默尔", "费马大定理", "理想数", "代数数论", "正则素数"]
 ---
 
-# [恩斯特·库默尔](https://kenji.blog/p/kummer/)：理想数之父与代数数论的黎明
+# [恩斯特·库默尔](https://kenji.blog/zh-cn/p/kummer/)：理想数之父与代数数论的黎明
 
-在数学的历史上，对某个特定未解之谜的挑战开启了全新研究领域的现象并不罕见。恩斯特·爱德华·库默尔 ( **Ernst Eduard Kummer** ) 就是一位创造了如此历史转折点的 19 世纪德国数学巨人。在与 **[费马大定理](https://kenji.blog/p/fermats-last-theorem/)** ( **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** ) 深刻搏斗的过程中，他引入了具有突破性的 **理想数** ( **Ideal Numbers** ) 概念，为现代代数数论奠定了基础。
+在数学的历史上，对某个特定未解之谜的挑战开启了全新研究领域的现象并不罕见。恩斯特·爱德华·库默尔 ( **Ernst Eduard Kummer** ) 就是一位创造了如此历史转折点的 19 世纪德国数学巨人。在与 **[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)** ( **[Fermat's Last Theorem](https://kenji.blog/zh-cn/p/fermats-last-theorem/)** ) 深刻搏斗的过程中，他引入了具有突破性的 **理想数** ( **Ideal Numbers** ) 概念，为现代代数数论奠定了基础。
 
 在本文中，我们将深入探讨库默尔波澜壮阔的一生、围绕他的充满人情味的轶事，以及他在数学史上持续闪耀的辉煌成就。
 
@@ -20,7 +20,7 @@ tags: ["恩斯特·库默尔", "费马大定理", "理想数", "代数数论", "
 
 ### 早年生活与从神学转向
 
-[恩斯特·库默尔](https://kenji.blog/p/kummer/)于 1810 年 1 月 29 日出生在普鲁士王国（今属波兰）的索劳 ( **Sorau** )。他的父亲是一名医生，在库默尔很小的时候就去世了，他由母亲抚养长大。尽管家境贫寒，库默尔还是接受了良好的教育，并于 1828 年进入哈雷大学。
+[恩斯特·库默尔](https://kenji.blog/zh-cn/p/kummer/)于 1810 年 1 月 29 日出生在普鲁士王国（今属波兰）的索劳 ( **Sorau** )。他的父亲是一名医生，在库默尔很小的时候就去世了，他由母亲抚养长大。尽管家境贫寒，库默尔还是接受了良好的教育，并于 1828 年进入哈雷大学。
 
 起初，他主修新教神学，但在海因里希·费迪南德·谢尔克 ( **Heinrich Ferdinand Scherk** ) 教授的影响下，他被数学的美和深度所吸引。在谢尔克教授的指导下，库默尔全身心投入数学研究，仅仅三年后的 1831 年就获得了博士学位。
 
@@ -32,9 +32,9 @@ tags: ["恩斯特·库默尔", "费马大定理", "理想数", "代数数论", "
 
 ### 作为大学教授的荣耀
 
-他卓越的研究成果吸引了当时顶尖数学家的注意。1842 年，在[卡尔·古斯塔夫·雅各布·雅可比](https://kenji.blog/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/)** ) 和彼得·古斯塔夫·勒热纳·狄利克雷 ( **Peter Gustav Lejeune Dirichlet** ) 的推荐下，库默尔成为布雷斯劳大学的正式教授。此外，在 1855 年，他被任命为柏林大学教授，接替前往哥廷根的狄利克雷。
+他卓越的研究成果吸引了当时顶尖数学家的注意。1842 年，在[卡尔·古斯塔夫·雅各布·雅可比](https://kenji.blog/zh-cn/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/zh-cn/p/jacobi/)** ) 和彼得·古斯塔夫·勒热纳·狄利克雷 ( **Peter Gustav Lejeune Dirichlet** ) 的推荐下，库默尔成为布雷斯劳大学的正式教授。此外，在 1855 年，他被任命为柏林大学教授，接替前往哥廷根的狄利克雷。
 
-在柏林大学，库默尔与[卡尔·魏尔斯特拉斯](https://kenji.blog/p/weierstrass/) ( **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** ) 以及他以前的学生克罗内克一起，将柏林提升为全球数学中心。他的讲座极其清晰且充满激情，吸引了来自欧洲各地的许多才华横溢的学生。
+在柏林大学，库默尔与[卡尔·魏尔斯特拉斯](https://kenji.blog/zh-cn/p/weierstrass/) ( **[Karl Weierstrass](https://kenji.blog/zh-cn/p/weierstrass/)** ) 以及他以前的学生克罗内克一起，将柏林提升为全球数学中心。他的讲座极其清晰且充满激情，吸引了来自欧洲各地的许多才华横溢的学生。
 
 ---
 
@@ -54,9 +54,9 @@ tags: ["恩斯特·库默尔", "费马大定理", "理想数", "代数数论", "
 
 ---
 
-## [费马大定理](https://kenji.blog/p/fermats-last-theorem/)与唯一分解的崩溃
+## [费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)与唯一分解的崩溃
 
-库默尔最大的成就是他在数论中对 **[费马大定理](https://kenji.blog/p/fermats-last-theorem/)** 的研究。该定理指出以下内容：
+库默尔最大的成就是他在数论中对 **[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)** 的研究。该定理指出以下内容：
 
 $$
 x^n + y^n = z^n \quad (\text{其中 } n \ge 3 \text{ 是整数})
@@ -64,7 +64,7 @@ $$
 
 不存在满足该方程的正整数解 $(x, y, z)$。
 
-1847 年，法国数学家[加布里埃尔·拉梅](https://kenji.blog/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/p/lame/)** ) 和[奥古斯丁-路易·柯西](https://kenji.blog/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)** ) 宣布他们已成功证明了这一定理。他们的方法是将因式分解扩展到复数（分圆域）领域。
+1847 年，法国数学家[加布里埃尔·拉梅](https://kenji.blog/zh-cn/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/zh-cn/p/lame/)** ) 和[奥古斯丁-路易·柯西](https://kenji.blog/zh-cn/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/zh-cn/p/cauchy/)** ) 宣布他们已成功证明了这一定理。他们的方法是将因式分解扩展到复数（分圆域）领域。
 
 使用 $1$ 的本原 $p$ 次方根 $\zeta$（其中 $\zeta^p = 1, \zeta \neq 1$），方程 $x^p + y^p = z^p$ 可以分解如下：
 
@@ -106,9 +106,9 @@ graph LR
 
 ---
 
-## 正则素数与[费马大定理](https://kenji.blog/p/fermats-last-theorem/)的部分证明
+## 正则素数与[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)的部分证明
 
-利用理想数理论，库默尔对[费马大定理](https://kenji.blog/p/fermats-last-theorem/)发起了重击。他定义了 **正则素数** ( **Regular Primes** ) 的概念，并证明了一个惊人的结果：“如果 $p$ 是一个正则素数，那么[费马大定理](https://kenji.blog/p/fermats-last-theorem/)对 $p$ 成立。”
+利用理想数理论，库默尔对[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)发起了重击。他定义了 **正则素数** ( **Regular Primes** ) 的概念，并证明了一个惊人的结果：“如果 $p$ 是一个正则素数，那么[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)对 $p$ 成立。”
 
 正则素数是指不能整除分圆域 $\mathbb{Q}(\zeta_p)$ 的类数 $h_p$ 的素数 $p$。类数是衡量唯一分解失败程度的一个指标；如果类数为 $1$，则唯一分解成立。
 
@@ -118,7 +118,7 @@ $$
 B_2, B_4, B_6, \dots, B_{p-3}
 $$
 
-利用这一标准，库默尔证明了[费马大定理](https://kenji.blog/p/fermats-last-theorem/)对于 $100$ 以下的所有素数都成立，除了非正则素数 $37, 59$ 和 $67$。这是一项具有里程碑意义的成就，在当时的数学界引起了轰动。
+利用这一标准，库默尔证明了[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)对于 $100$ 以下的所有素数都成立，除了非正则素数 $37, 59$ 和 $67$。这是一项具有里程碑意义的成就，在当时的数学界引起了轰动。
 
 ---
 
@@ -138,7 +138,7 @@ $$
 
 ## 结论
 
-[恩斯特·库默尔](https://kenji.blog/p/kummer/)在解决[费马大定理](https://kenji.blog/p/fermats-last-theorem/)这个“无解之谜”时，扩展了数学本身的框架。他的 **理想数** 思想成为后来代数学中不可或缺的语言，并继续影响着现代数学的各个分支。
+[恩斯特·库默尔](https://kenji.blog/zh-cn/p/kummer/)在解决[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)这个“无解之谜”时，扩展了数学本身的框架。他的 **理想数** 思想成为后来代数学中不可或缺的语言，并继续影响着现代数学的各个分支。
 
 虽然有着不擅长计算的普通人的一面，却被赋予了超越人类直觉发现“看不见的理想数”的洞察力，库默尔的才华无愧于天才的称号。库默尔的成就教会了我们，当面对看似不可能的问题时，重新思考框架本身是多么重要。
 

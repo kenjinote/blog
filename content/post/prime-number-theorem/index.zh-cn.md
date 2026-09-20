@@ -15,7 +15,7 @@ tags:
 
 ## 什么是素数定理？
 
-数学领域中最美丽的结果之一就是 **素数定理** （[Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT）。它表明，那些乍看之下不规则且随机出现的素数，从宏观上看却有着令人惊叹的平滑规律性。
+数学领域中最美丽的结果之一就是 **素数定理** （[Prime Number Theorem](https://kenji.blog/zh-cn/p/prime-number-theorem/), PNT）。它表明，那些乍看之下不规则且随机出现的素数，从宏观上看却有着令人惊叹的平滑规律性。
 
 具体而言，如果将“小于或等于某个实数 $x$ 的素数个数”记为 $\pi(x)$ （素数计数函数），当 $x$ 非常大时，$\pi(x)$ 会渐近于 $x / \ln(x)$，这就是该定理的内容。
 
@@ -42,11 +42,11 @@ graph TD;
 
 ## 历史背景：从高斯的猜想到证明
 
-素数定理的历史可以追溯到18世纪末。年仅15岁的天才数学家[卡尔·弗里德里希·高斯](https://kenji.blog/p/gauss/)（[Carl Friedrich Gauss](https://kenji.blog/p/gauss/)）在观察素数表时，发现素数出现的频率与对数函数有关。大约在同一时间，[阿德里安-马里·勒让德](https://kenji.blog/p/legendre/)（[Adrien-Marie Legendre](https://kenji.blog/p/legendre/)）也独立提出了类似的猜想。
+素数定理的历史可以追溯到18世纪末。年仅15岁的天才数学家[卡尔·弗里德里希·高斯](https://kenji.blog/zh-cn/p/gauss/)（[Carl Friedrich Gauss](https://kenji.blog/zh-cn/p/gauss/)）在观察素数表时，发现素数出现的频率与对数函数有关。大约在同一时间，[阿德里安-马里·勒让德](https://kenji.blog/zh-cn/p/legendre/)（[Adrien-Marie Legendre](https://kenji.blog/zh-cn/p/legendre/)）也独立提出了类似的猜想。
 
 然而，他们都没能给出严格的证明。
 
-证明上的重大进展，是由[波恩哈德·黎曼](https://kenji.blog/p/riemann/)（[Bernhard Riemann](https://kenji.blog/p/riemann/)）在1859年发表的一篇划时代论文《论小于给定数值的素数个数》带来的。黎曼提出了一种全新的方法，他利用复变函数 **黎曼ζ函数** $\zeta(s)$ ，将素数分布的问题转化为了复平面上的问题。
+证明上的重大进展，是由[波恩哈德·黎曼](https://kenji.blog/zh-cn/p/riemann/)（[Bernhard Riemann](https://kenji.blog/zh-cn/p/riemann/)）在1859年发表的一篇划时代论文《论小于给定数值的素数个数》带来的。黎曼提出了一种全新的方法，他利用复变函数 **黎曼ζ函数** $\zeta(s)$ ，将素数分布的问题转化为了复平面上的问题。
 
 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ 素数}} \left(1 - \frac{1}{p^s}\right)^{-1} $$
 

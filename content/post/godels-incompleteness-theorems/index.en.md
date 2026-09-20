@@ -11,7 +11,7 @@ tags:
 slug: "godels-incompleteness-theorems"
 ---
 
-"Mathematics is absolutely correct" ── Everyone has probably thought this at least once. However, a single paper published in 1931 by the young mathematician [Kurt Gödel](https://kenji.blog/p/godel/) completely overturned this common sense from its very foundation. That is **[Gödel's Incompleteness Theorems](https://kenji.blog/p/godels-incompleteness-theorems/)**.
+"Mathematics is absolutely correct" ── Everyone has probably thought this at least once. However, a single paper published in 1931 by the young mathematician [Kurt Gödel](https://kenji.blog/en/p/godel/) completely overturned this common sense from its very foundation. That is **[Gödel's Incompleteness Theorems](https://kenji.blog/en/p/godels-incompleteness-theorems/)**.
 
 In this article, we will thoroughly explain this shocking theorem, which states that there exist "truths that can never be proven," including its meaning and how the proof works, incorporating concrete examples and diagrams.
 
@@ -19,7 +19,7 @@ In this article, we will thoroughly explain this shocking theorem, which states 
 
 ## 1. Stage Background: Hilbert's Program and the Crisis of Mathematics
 
-From the end of the 19th century to the beginning of the 20th century, the world of mathematics faced "paradoxes of set theory (such as Russell's paradox)," and its foundation was shaken. It was [David Hilbert](https://kenji.blog/p/hilbert/), the highest authority in the mathematics world at the time, who stood up to save this "crisis of mathematics."
+From the end of the 19th century to the beginning of the 20th century, the world of mathematics faced "paradoxes of set theory (such as Russell's paradox)," and its foundation was shaken. It was [David Hilbert](https://kenji.blog/en/p/hilbert/), the highest authority in the mathematics world at the time, who stood up to save this "crisis of mathematics."
 
 Hilbert attempted to completely symbolize all mathematical reasoning and reconstruct mathematics solely with mechanical rules. The "Hilbert's Program" he advocated aimed to prove the following three properties in the Formal System of mathematics:
 
@@ -51,7 +51,7 @@ Hilbert thought that if we expanded such formal systems, we could eventually enc
 
 ## 3. The Shock of the First Incompleteness Theorem: "True but Unprovable" Propositions
 
-However, in 1931, [Kurt Gödel](https://kenji.blog/p/godel/), who was only 25 years old at the time, published a paper that shattered Hilbert's dream to pieces. That is the **First Incompleteness Theorem**.
+However, in 1931, [Kurt Gödel](https://kenji.blog/en/p/godel/), who was only 25 years old at the time, published a paper that shattered Hilbert's dream to pieces. That is the **First Incompleteness Theorem**.
 
 > **First Incompleteness Theorem** 
 > In any consistent formal system that includes Peano Arithmetic, there will always exist propositions that are true but cannot be proven within that system.
@@ -132,11 +132,11 @@ Because of its dramatic name, Gödel's Incompleteness Theorem is often misused i
 - **Misunderstanding 2: "Human reason has limits."**
   - **Fact**: The limit the theorem points to is about "systems (formal systems) that follow predetermined mechanical rules." In the First Incompleteness Theorem, we could see from an outside perspective that proposition $G$ is "true." Some scholars (like Roger Penrose) take this as evidence that human reason has the ability to understand "meaning (semantics)" that transcends mechanical formal systems.
 - **Misunderstanding 3: "There are things that cannot be proven about anything."**
-  - **Fact**: The Incompleteness Theorem applies only to sufficiently complex systems that include "addition and multiplication of natural numbers (Peano Arithmetic)." For example, "[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry" or the "first-order theory of real numbers" are complete, and all true propositions are provable. Incompleteness only arises when the subject has a sufficiently complex structure (a structure that enables self-reference).
+  - **Fact**: The Incompleteness Theorem applies only to sufficiently complex systems that include "addition and multiplication of natural numbers (Peano Arithmetic)." For example, "[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry" or the "first-order theory of real numbers" are complete, and all true propositions are provable. Incompleteness only arises when the subject has a sufficiently complex structure (a structure that enables self-reference).
 
 ## 7. Baton to the Turing Machine: The Dawn of Computer Science
 
-The impact brought by Gödel's theorems was not confined to the framework of mathematics. In 1936, the British mathematician [Alan Turing](https://kenji.blog/p/turing/) replaced Gödel's concept of a "formal system" with a physical computational process and devised a hypothetical computational machine model called the "Turing Machine."
+The impact brought by Gödel's theorems was not confined to the framework of mathematics. In 1936, the British mathematician [Alan Turing](https://kenji.blog/en/p/turing/) replaced Gödel's concept of a "formal system" with a physical computational process and devised a hypothetical computational machine model called the "Turing Machine."
 
 Turing applied Gödel's Incompleteness Theorem to the world of computers and proved that "there is no universal algorithm that can determine in advance whether any computer program will never finish calculating." This is the famous **Halting Problem**.
 
@@ -152,8 +152,8 @@ The mathematical limit that "there are unprovable truths" beautifully transforme
 
 ## 8. Conclusion: The Endless Journey of "Knowing"
 
-The "perfect mathematical machine that can automatically prove everything" dreamt of by [David Hilbert](https://kenji.blog/p/hilbert/) ended up as an illusion due to [Gödel's Incompleteness Theorems](https://kenji.blog/p/godels-incompleteness-theorems/). However, that by no means signifies the defeat of mathematics.
+The "perfect mathematical machine that can automatically prove everything" dreamt of by [David Hilbert](https://kenji.blog/en/p/hilbert/) ended up as an illusion due to [Gödel's Incompleteness Theorems](https://kenji.blog/en/p/godels-incompleteness-theorems/). However, that by no means signifies the defeat of mathematics.
 
 If mathematics could be completely mechanized, the work of mathematicians would have become mere labor, and it would have met its end eventually. However, the existence of "propositions that are true but cannot be proven" shown by Gödel proved that the universe of mathematics is far richer than we imagine and possesses an inexhaustible depth.
 
-[Kurt Gödel](https://kenji.blog/p/godel/) **proved** the existence of "truths that can never be proven" by the hands of mathematics itself, which is the strictest logic. His Incompleteness Theorems teach us that the human quest for "knowing" is an endless journey that continues forever.
+[Kurt Gödel](https://kenji.blog/en/p/godel/) **proved** the existence of "truths that can never be proven" by the hands of mathematics itself, which is the strictest logic. His Incompleteness Theorems teach us that the human quest for "knowing" is an endless journey that continues forever.

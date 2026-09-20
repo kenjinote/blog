@@ -42,7 +42,7 @@ Insbesondere bei dem Bergbauprojekt entwarf er ein fortschrittliches Pumpensyste
 
 Leibniz schlug verschiedenen Monarchen die Gründung akademischer Akademien vor und diente als erster Präsident der Preußischen Akademie der Wissenschaften, womit er eine zentrale Rolle im akademischen Netzwerk Europas spielte. Er hatte auch eine Audienz bei Peter dem Großen von Russland und beriet ihn bei der Reform des russischen Bildungssystems.
 
-In seinen späten Jahren wurde sein Ruf jedoch durch den mit [Isaac Newton](https://kenji.blog/p/newton/) entbrannten „Prioritätsstreit um die Infinitesimalrechnung“ schwer beschädigt. Nachdem sein Lehnsherr in Hannover als König Georg I. von Großbritannien nach London abgereist war, wurde Leibniz zudem angewiesen, in Hannover zu bleiben, um die Arbeit an den Geschichtsbüchern abzuschließen. Als er 1716 im Alter von 70 Jahren starb, soll nur sein Sekretär bei seiner Beerdigung anwesend gewesen sein.
+In seinen späten Jahren wurde sein Ruf jedoch durch den mit [Isaac Newton](https://kenji.blog/de/p/newton/) entbrannten „Prioritätsstreit um die Infinitesimalrechnung“ schwer beschädigt. Nachdem sein Lehnsherr in Hannover als König Georg I. von Großbritannien nach London abgereist war, wurde Leibniz zudem angewiesen, in Hannover zu bleiben, um die Arbeit an den Geschichtsbüchern abzuschließen. Als er 1716 im Alter von 70 Jahren starb, soll nur sein Sekretär bei seiner Beerdigung anwesend gewesen sein.
 
 ## 2. Mathematische Errungenschaften: Das Fundament der modernen Wissenschaft
 
@@ -64,7 +64,7 @@ $$
 
 ### 2.2 Der Prioritätsstreit mit Newton
 
-Um die Infinitesimalrechnung entbrannte mit dem Engländer [Isaac Newton](https://kenji.blog/p/newton/) einer der berühmtesten Streitigkeiten in der Geschichte der Wissenschaft. Newton war vor Leibniz auf das Konzept der Infinitesimalrechnung (die Fluxionsmethode) gekommen, hatte es jedoch lange Zeit nicht veröffentlicht. Leibniz hingegen entdeckte die Infinitesimalrechnung unabhängig davon und veröffentlichte sie 1684 als Erster in einer wissenschaftlichen Arbeit.
+Um die Infinitesimalrechnung entbrannte mit dem Engländer [Isaac Newton](https://kenji.blog/de/p/newton/) einer der berühmtesten Streitigkeiten in der Geschichte der Wissenschaft. Newton war vor Leibniz auf das Konzept der Infinitesimalrechnung (die Fluxionsmethode) gekommen, hatte es jedoch lange Zeit nicht veröffentlicht. Leibniz hingegen entdeckte die Infinitesimalrechnung unabhängig davon und veröffentlichte sie 1684 als Erster in einer wissenschaftlichen Arbeit.
 
 Heute ist es unter Historikern allgemein anerkannt, dass **beide Männer die Infinitesimalrechnung völlig unabhängig voneinander entdeckt haben**. Während Newtons Methode in der Physik und Kinematik verwurzelt war, basierte Leibniz' Ansatz auf einem formaleren und algebraischen Weg.
 
@@ -99,7 +99,7 @@ Bei der Lösung linearer Gleichungssysteme gelangte Leibniz etwa zur gleichen Ze
 
 ### 2.5 Die Erfindung der Staffelwalzen-Rechenmaschine
 
-Leibniz war nicht nur ein theoretischer Mathematiker, sondern auch ein praktischer Erfinder, der sich in der Geschichte der mechanischen Rechenmaschinen einen Namen machte. Er verbesserte die Rechenmaschine von [Blaise Pascal](https://kenji.blog/p/pascal/) (die Pascaline), die nur addieren und subtrahieren konnte, und erfand eine Rechenmaschine (die Staffelwalze), die auch zur Multiplikation und Division fähig war.
+Leibniz war nicht nur ein theoretischer Mathematiker, sondern auch ein praktischer Erfinder, der sich in der Geschichte der mechanischen Rechenmaschinen einen Namen machte. Er verbesserte die Rechenmaschine von [Blaise Pascal](https://kenji.blog/de/p/pascal/) (die Pascaline), die nur addieren und subtrahieren konnte, und erfand eine Rechenmaschine (die Staffelwalze), die auch zur Multiplikation und Division fähig war.
 
 Dieser Mechanismus war revolutionär und wurde in den folgenden Jahrhunderten als Standardstruktur für mechanische Rechenmaschinen übernommen.
 
@@ -133,7 +133,7 @@ Leibniz leistete auch bedeutende Beiträge zur Logik. Er stellte den „Satz vom
 
 Leibniz glaubte, dass das menschliche Denken auf mathematische Berechnungen reduziert werden könne. Er träumte davon, eine „Universalsprache“ (*Characteristica universalis*) zu konstruieren, die alle Konzepte symbolisiert, und einen *Calculus ratiocinator* (logischen Kalkül), um diese Symbole nach Regeln zu manipulieren.
 
-Sein berühmter Satz „Lasst uns rechnen!“ (*Calculemus*) symbolisiert sein Ideal, die Wahrheit durch Berechnung statt durch Streit zu finden, wenn Meinungsverschiedenheiten auftraten. Dieses Konzept war ein Vorläufer der symbolischen Logik und eine historische Vision, die direkt mit den Berechnungsmodellen von [Alan Turing](https://kenji.blog/p/turing/) und dem modernen Konzept der **Künstlichen Intelligenz (KI)** verbunden ist.
+Sein berühmter Satz „Lasst uns rechnen!“ (*Calculemus*) symbolisiert sein Ideal, die Wahrheit durch Berechnung statt durch Streit zu finden, wenn Meinungsverschiedenheiten auftraten. Dieses Konzept war ein Vorläufer der symbolischen Logik und eine historische Vision, die direkt mit den Berechnungsmodellen von [Alan Turing](https://kenji.blog/de/p/turing/) und dem modernen Konzept der **Künstlichen Intelligenz (KI)** verbunden ist.
 
 ## 5. Fazit
 

@@ -13,11 +13,11 @@ tags:
   - "Algoritma"
 ---
 
-Di dunia matematika, terdapat konsep-konsep yang bertindak seperti "jembatan ajaib", menghubungkan bidang-bidang yang tampaknya tidak berkaitan. Salah satunya adalah **[Fungsi Pembangkit](https://kenji.blog/p/generating-functions/)** (Generating Function). Dengan mengubah "barisan" diskrit menjadi "fungsi" kontinu, masalah kombinatorik yang kompleks dapat disederhanakan menjadi perhitungan aljabar.
+Di dunia matematika, terdapat konsep-konsep yang bertindak seperti "jembatan ajaib", menghubungkan bidang-bidang yang tampaknya tidak berkaitan. Salah satunya adalah **[Fungsi Pembangkit](https://kenji.blog/id/p/generating-functions/)** (Generating Function). Dengan mengubah "barisan" diskrit menjadi "fungsi" kontinu, masalah kombinatorik yang kompleks dapat disederhanakan menjadi perhitungan aljabar.
 
 Artikel ini dimulai dengan ide dasar fungsi pembangkit, dan menjelaskan secara rinci kehebatannya yang luar biasa—dari menghitung kombinasi pembayaran koin hingga menurunkan suku umum dari barisan Fibonacci. Selain itu, kita juga akan menyinggung penerapannya pada Deret Pangkat Formal (Formal Power Series/FPS) dalam algoritma dan pemrograman kompetitif.
 
-## 1. Apa itu [Fungsi Pembangkit](https://kenji.blog/p/generating-functions/)?
+## 1. Apa itu [Fungsi Pembangkit](https://kenji.blog/id/p/generating-functions/)?
 
 Diberikan sebuah barisan $a_0, a_1, a_2, \dots$, kita tinjau sebuah fungsi $A(x)$ yang memiliki setiap suku sebagai koefisien dari pangkat $x$.
 
@@ -25,7 +25,7 @@ $$
 A(x) = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \dots = \sum_{n=0}^{\infty} a_n x^n
 $$
 
-Fungsi $A(x)$ ini disebut **[Fungsi Pembangkit](https://kenji.blog/p/generating-functions/) Biasa** (Ordinary Generating Function) dari barisan $\{a_n\}$.
+Fungsi $A(x)$ ini disebut **[Fungsi Pembangkit](https://kenji.blog/id/p/generating-functions/) Biasa** (Ordinary Generating Function) dari barisan $\{a_n\}$.
 
 Mengapa kita melakukan transformasi semacam itu? Karena **operasi pada barisan dapat digantikan oleh operasi aljabar pada fungsi**. Operasi seperti pergeseran barisan, penjumlahan, atau konvolusi diubah menjadi operasi yang sudah lazim seperti penjumlahan, perkalian, diferensiasi, dan integrasi fungsi.
 
@@ -37,7 +37,7 @@ graph LR
     A -.->|"Operasi Kompleks"| D
 ```
 
-## 2. Kombinasi Pembayaran Koin dan [Fungsi Pembangkit](https://kenji.blog/p/generating-functions/)
+## 2. Kombinasi Pembayaran Koin dan [Fungsi Pembangkit](https://kenji.blog/id/p/generating-functions/)
 
 Untuk memahami kehebatan fungsi pembangkit secara intuitif, mari kita pertimbangkan masalah "pembayaran koin".
 
@@ -137,9 +137,9 @@ graph TD
     PF -->|"Ekspansi Deret Pangkat & Perbandingan Koefisien"| AN["Suku Umum (Rumus Binet)"]
 ```
 
-## 4. [Fungsi Pembangkit](https://kenji.blog/p/generating-functions/) Eksponensial dan Permutasi
+## 4. [Fungsi Pembangkit](https://kenji.blog/id/p/generating-functions/) Eksponensial dan Permutasi
 
-Ketika berhadapan dengan masalah kombinatorik yang memperhatikan urutan, yang berarti "permutasi", **[Fungsi Pembangkit](https://kenji.blog/p/generating-functions/) Eksponensial** (Exponential Generating Function) mulai berperan.
+Ketika berhadapan dengan masalah kombinatorik yang memperhatikan urutan, yang berarti "permutasi", **[Fungsi Pembangkit](https://kenji.blog/id/p/generating-functions/) Eksponensial** (Exponential Generating Function) mulai berperan.
 
 Untuk sebuah barisan $a_n$, fungsi pembangkit eksponensial $E(x)$ didefinisikan sebagai berikut:
 

@@ -84,7 +84,7 @@ $$ a^r - 1 \equiv 0 \pmod N $$
 Jika $r$ adalah bilangan genap, kita dapat memfaktorkannya menggunakan rumus selisih kuadrat:
 $$ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $$
 
-Ini berarti bahwa $N$ memiliki pembagi persekutuan dengan $(a^{r/2} - 1)$ atau $(a^{r/2} + 1)$ (dengan syarat kondisi $a^{r/2} \not\equiv -1 \pmod N$ terpenuhi). Oleh karena itu, dengan menggunakan [Algoritma [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm),
+Ini berarti bahwa $N$ memiliki pembagi persekutuan dengan $(a^{r/2} - 1)$ atau $(a^{r/2} + 1)$ (dengan syarat kondisi $a^{r/2} \not\equiv -1 \pmod N$ terpenuhi). Oleh karena itu, dengan menggunakan [Algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) ([[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm),
 
 $$ p = \gcd(a^{r/2} - 1, N) $$
 $$ q = \gcd(a^{r/2} + 1, N) $$

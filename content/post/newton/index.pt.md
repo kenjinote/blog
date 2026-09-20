@@ -13,7 +13,7 @@ tags:
   - "Física"
 ---
 
-Se tivéssemos que nomear uma pessoa que teve o impacto mais profundo no desenvolvimento da ciência na história da humanidade, muitos nomeariam **[Isaac Newton](https://kenji.blog/p/newton/)** . Ele alcançou descobertas revolucionárias em campos tão diversos quanto a física, a matemática e a astronomia. Não é exagero dizer que suas realizações não foram meras descobertas de uma única época, mas construíram os próprios fundamentos da ciência moderna.
+Se tivéssemos que nomear uma pessoa que teve o impacto mais profundo no desenvolvimento da ciência na história da humanidade, muitos nomeariam **[Isaac Newton](https://kenji.blog/pt/p/newton/)** . Ele alcançou descobertas revolucionárias em campos tão diversos quanto a física, a matemática e a astronomia. Não é exagero dizer que suas realizações não foram meras descobertas de uma única época, mas construíram os próprios fundamentos da ciência moderna.
 
 Neste artigo, traçaremos os episódios extraordinários desde a educação de Newton até seus últimos anos, e exploraremos profundamente suas façanhas matemáticas e físicas, com foco particular no **cálculo** (o método das fluxões), o **teorema binomial generalizado** , e o **método de Newton** .
 
@@ -21,7 +21,7 @@ Neste artigo, traçaremos os episódios extraordinários desde a educação de N
 
 ### Uma Infância Solitária e Nascimento em Woolsthorpe
 
-[Isaac Newton](https://kenji.blog/p/newton/) nasceu no dia de Natal de 1642 (calendário juliano; 4 de janeiro de 1643, no calendário gregoriano) na pequena vila de Woolsthorpe, Lincolnshire, Inglaterra. Nascido prematuramente, seu corpo era extremamente pequeno e, a princípio, sua sobrevivência era duvidosa. Para piorar a situação, o pai de Newton havia falecido três meses antes de seu nascimento.
+[Isaac Newton](https://kenji.blog/pt/p/newton/) nasceu no dia de Natal de 1642 (calendário juliano; 4 de janeiro de 1643, no calendário gregoriano) na pequena vila de Woolsthorpe, Lincolnshire, Inglaterra. Nascido prematuramente, seu corpo era extremamente pequeno e, a princípio, sua sobrevivência era duvidosa. Para piorar a situação, o pai de Newton havia falecido três meses antes de seu nascimento.
 
 Quando ele tinha três anos, sua mãe se casou novamente e deixou Newton aos cuidados da avó para se juntar ao novo marido. Diz-se que essa experiência precoce de separação de seus pais influenciou profundamente a personalidade de Newton, contribuindo para o caráter extremamente reservado e desconfiado que ele desenvolveu mais tarde na vida.
 
@@ -29,7 +29,7 @@ Quando começou a frequentar a escola local, Newton inicialmente não era um alu
 
 ### A Universidade de Cambridge e o "Ano Miraculoso"
 
-Em 1661, Newton ingressou no Trinity College, em Cambridge. Embora a universidade da época ensinasse principalmente filosofia aristotélica, Newton foi fortemente atraído pelos novos pensamentos científicos de [René Descartes](https://kenji.blog/p/descartes/), Galileu Galilei e Johannes Kepler. Ele deixou uma nota em seu caderno afirmando: **"Amicus Plato amicus Aristoteles magis amica veritas"** (Platão é meu amigo, Aristóteles é meu amigo, mas minha maior amiga é a verdade).
+Em 1661, Newton ingressou no Trinity College, em Cambridge. Embora a universidade da época ensinasse principalmente filosofia aristotélica, Newton foi fortemente atraído pelos novos pensamentos científicos de [René Descartes](https://kenji.blog/pt/p/descartes/), Galileu Galilei e Johannes Kepler. Ele deixou uma nota em seu caderno afirmando: **"Amicus Plato amicus Aristoteles magis amica veritas"** (Platão é meu amigo, Aristóteles é meu amigo, mas minha maior amiga é a verdade).
 
 Em 1665, um grave surto da Grande Peste atingiu Londres, forçando a universidade a fechar. Newton voltou para sua cidade natal de Woolsthorpe e mergulhou na contemplação por cerca de um ano e meio. Durante este período de silêncio e solidão, ele encontrou a inspiração para as suas três grandes realizações: os fundamentos do cálculo, a óptica (análise espectral da luz usando um prisma) e a lei da gravitação universal. Na história da ciência, este período é conhecido como o **Annus Mirabilis** (Ano Miraculoso).
 
@@ -164,4 +164,4 @@ Estas palavras expressam seu respeito, reconhecendo que suas descobertas só for
 
 O sistema de mecânica clássica que ele estabeleceu permaneceu o fundamento absoluto da física por cerca de 200 anos, até que Albert Einstein publicou a teoria da relatividade no início do século 20. Ainda hoje, a mecânica newtoniana é usada com extrema precisão e eficácia no cálculo dos fenômenos físicos de nossa escala diária e das órbitas das sondas espaciais.
 
-[Isaac Newton](https://kenji.blog/p/newton/), partindo de uma infância solitária, desvendou as verdades do universo por meio de sua extraordinária concentração e intuição genial. As numerosas leis e teoremas matemáticos que ele deixou para trás continuam a apoiar nossa tecnologia e sociedade até hoje.
+[Isaac Newton](https://kenji.blog/pt/p/newton/), partindo de uma infância solitária, desvendou as verdades do universo por meio de sua extraordinária concentração e intuição genial. As numerosas leis e teoremas matemáticos que ele deixou para trás continuam a apoiar nossa tecnologia e sociedade até hoje.

@@ -10,12 +10,12 @@ tags: ["Kontinuumshypothese", "Cantor", "Unendlichkeit", "Mathematik"]
 
 ## 1. Einleitung: Die Messung der Unendlichkeit
 
-In der Welt der Mathematik ist das Konzept der „Unendlichkeit“ seit langem Gegenstand philosophischer Debatten. Bis zum Auftreten von [Georg Cantor](https://kenji.blog/p/cantor/) Ende des 19. Jahrhunderts gab es jedoch keine strengen mathematischen Methoden, um die Größen von Unendlichkeiten zu vergleichen. Cantor begründete die Mengenlehre und bewies, dass es auch bei der Unendlichkeit **unterschiedliche Größen** (Mächtigkeiten, Kardinalitäten) gibt.
+In der Welt der Mathematik ist das Konzept der „Unendlichkeit“ seit langem Gegenstand philosophischer Debatten. Bis zum Auftreten von [Georg Cantor](https://kenji.blog/de/p/cantor/) Ende des 19. Jahrhunderts gab es jedoch keine strengen mathematischen Methoden, um die Größen von Unendlichkeiten zu vergleichen. Cantor begründete die Mengenlehre und bewies, dass es auch bei der Unendlichkeit **unterschiedliche Größen** (Mächtigkeiten, Kardinalitäten) gibt.
 
 Betrachtet man die Menge der natürlichen Zahlen $\mathbb{N}$ und die Menge der reellen Zahlen $\mathbb{R}$, so zeigte Cantors zweites Diagonalargument, dass die Menge der reellen Zahlen „echt größer“ ist als die Menge der natürlichen Zahlen. Die Mächtigkeit der natürlichen Zahlen wird mit $\aleph_0$ (Aleph-null) und die der reellen Zahlen mit $\mathfrak{c}$ (Mächtigkeit des Kontinuums) oder $2^{\aleph_0}$ bezeichnet. Nach dem Satz von Cantor gilt $\aleph_0 < 2^{\aleph_0}$.
 
 Hier stellte sich Cantor eine natürliche Frage: „Gibt es eine Menge mit einer Mächtigkeit, die genau in der **Mitte** zwischen der Mächtigkeit der natürlichen Zahlen und der Mächtigkeit der reellen Zahlen liegt?“
-Dies ist der Ursprung der **Kontinuumshypothese** ([Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/), CH), die später die Grundlagen der Mathematik erschüttern sollte.
+Dies ist der Ursprung der **Kontinuumshypothese** ([Continuum Hypothesis](https://kenji.blog/de/p/continuum-hypothesis/), CH), die später die Grundlagen der Mathematik erschüttern sollte.
 
 ## 2. Strenge Definition der Kontinuumshypothese (CH)
 
@@ -35,11 +35,11 @@ Daher gilt für die Menge der natürlichen Zahlen $\mathbb{N}$:
 $$ |\mathbb{N}| < |\mathcal{P}(\mathbb{N})| = |\mathbb{R}| $$
 Die CH behauptet, dass es zwischen diesen beiden keine weitere Mächtigkeit gibt.
 
-## 3. Cantors Leiden und [David Hilbert](https://kenji.blog/p/hilbert/)s These
+## 3. Cantors Leiden und [David Hilbert](https://kenji.blog/de/p/hilbert/)s These
 
 Cantor verbrachte sein Leben damit, diese Hypothese zu beweisen, doch ohne Erfolg. Manchmal glaubte er, sie „bewiesen“ zu haben, und ein anderes Mal, er hätte sie „widerlegt“. Sein mentaler Zustand wurde durch dieses schwierige Problem stark beeinträchtigt.
 
-Im Jahr 1900 stellte [David Hilbert](https://kenji.blog/p/hilbert/) auf dem 2. Internationalen Mathematikerkongress in Paris seine berühmten „23 mathematischen Probleme“ vor, die die Mathematik im 20. Jahrhundert lösen sollte. Das denkwürdige **erste Problem** war genau dieser „Beweis der Kontinuumshypothese“.
+Im Jahr 1900 stellte [David Hilbert](https://kenji.blog/de/p/hilbert/) auf dem 2. Internationalen Mathematikerkongress in Paris seine berühmten „23 mathematischen Probleme“ vor, die die Mathematik im 20. Jahrhundert lösen sollte. Das denkwürdige **erste Problem** war genau dieser „Beweis der Kontinuumshypothese“.
 
 ## 4. Axiomatisierung der Mengenlehre: Das ZFC-Axiomensystem
 
@@ -58,9 +58,9 @@ Das ZFC-Axiomensystem besteht aus den folgenden 9 Axiomen (oder Axiomenschemata)
 
 Mit Hilfe dieser Axiome versuchten Mathematiker, den Wahrheitsgehalt der CH zu bestimmen.
 
-## 5. [Kurt Gödel](https://kenji.blog/p/godel/) und die „Konstruktiblen Mengen“
+## 5. [Kurt Gödel](https://kenji.blog/de/p/godel/) und die „Konstruktiblen Mengen“
 
-Im Jahr 1940 veröffentlichte [Kurt Gödel](https://kenji.blog/p/godel/) ein erstaunliches Ergebnis. Er bewies, dass unter der Annahme, das ZFC-Axiomensystem sei widerspruchsfrei, **„das Hinzufügen der CH zum ZFC-Axiomensystem keinen Widerspruch erzeugt“**.
+Im Jahr 1940 veröffentlichte [Kurt Gödel](https://kenji.blog/de/p/godel/) ein erstaunliches Ergebnis. Er bewies, dass unter der Annahme, das ZFC-Axiomensystem sei widerspruchsfrei, **„das Hinzufügen der CH zum ZFC-Axiomensystem keinen Widerspruch erzeugt“**.
 
 Gödel konstruierte ein Modell der Mengenlehre, das als **konstruktibles Universum** (Constructible Universe, $L$) bezeichnet wird. In $L$ werden alle Mengen hierarchisch durch logische Formeln aufgebaut. Gödel zeigte, dass in diesem $L$ alle ZFC-Axiome erfüllt sind und zudem **die CH wahr wird**.
 
@@ -135,7 +135,7 @@ Die Unabhängigkeit der CH wirft tiefgreifende Probleme für die Philosophie der
 
 ## 10. Zusammenfassung
 
-Die von [Georg Cantor](https://kenji.blog/p/cantor/) erträumte Suche nach einer Hierarchie der Unendlichkeit fand durch zwei Genies, Gödel und Cohen, ein dramatisches Ende: Sie ist „weder beweisbar noch widerlegbar“. Dies bedeutet jedoch keineswegs eine Niederlage für die Mathematik. Im Gegenteil, es führte zur Entwicklung des leistungsstarken Werkzeugs des Forcing und ließ das Gebiet der Mengenlehre reicher und komplexer als je zuvor werden.
+Die von [Georg Cantor](https://kenji.blog/de/p/cantor/) erträumte Suche nach einer Hierarchie der Unendlichkeit fand durch zwei Genies, Gödel und Cohen, ein dramatisches Ende: Sie ist „weder beweisbar noch widerlegbar“. Dies bedeutet jedoch keineswegs eine Niederlage für die Mathematik. Im Gegenteil, es führte zur Entwicklung des leistungsstarken Werkzeugs des Forcing und ließ das Gebiet der Mengenlehre reicher und komplexer als je zuvor werden.
 
 Die Kontinuumshypothese stellt uns auch heute noch die fundamentalen Fragen: „Was ist Unendlichkeit?“ und „Was ist mathematische Wahrheit?“.
 

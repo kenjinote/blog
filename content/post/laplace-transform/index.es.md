@@ -14,7 +14,7 @@ tags:
 
 ## Introducción: ¿Qué es la transformada de Laplace?
 
-En campos como la física, la ingeniería y la economía, las **ecuaciones diferenciales** son una herramienta esencial para describir fenómenos que cambian con el tiempo. Sin embargo, resolver ecuaciones diferenciales complejas directamente a veces puede ser extremadamente difícil. Aquí es donde entra en juego la **[Transformada de Laplace](https://kenji.blog/p/laplace-transform/)** ([Laplace Transform](https://kenji.blog/p/laplace-transform/)).
+En campos como la física, la ingeniería y la economía, las **ecuaciones diferenciales** son una herramienta esencial para describir fenómenos que cambian con el tiempo. Sin embargo, resolver ecuaciones diferenciales complejas directamente a veces puede ser extremadamente difícil. Aquí es donde entra en juego la **[Transformada de Laplace](https://kenji.blog/es/p/laplace-transform/)** ([Laplace Transform](https://kenji.blog/es/p/laplace-transform/)).
 
 En pocas palabras, la transformada de Laplace es una "herramienta mágica que convierte ecuaciones diferenciales difíciles en ecuaciones algebraicas simples (ecuaciones que se pueden resolver utilizando solo las cuatro operaciones básicas)". El procedimiento consiste en mapear un problema complejo expresado en el dominio del tiempo ($t$) al dominio de la frecuencia compleja ($s$), resolverlo fácilmente allí y luego transformarlo de nuevo al dominio del tiempo.
 
@@ -59,7 +59,7 @@ $$
 \mathcal{L}\{e^{at} f(t)\} = F(s - a)
 $$
 
-### 3. [Transformada de Laplace](https://kenji.blog/p/laplace-transform/) de las derivadas
+### 3. [Transformada de Laplace](https://kenji.blog/es/p/laplace-transform/) de las derivadas
 
 Esta es la fórmula más importante para resolver ecuaciones diferenciales.
 
@@ -107,7 +107,7 @@ $$
 
 Sea la condición inicial $q(0) = 0$.
 
-**Paso 1: [Transformada de Laplace](https://kenji.blog/p/laplace-transform/)**
+**Paso 1: [Transformada de Laplace](https://kenji.blog/es/p/laplace-transform/)**
 Aplique la transformada de Laplace a ambos lados. Sea la transformada de Laplace de $q(t)$ denotada como $Q(s)$.
 
 $$
@@ -133,7 +133,7 @@ $$
 Q(s) = C E \left( \frac{1}{s} - \frac{1}{s + \frac{1}{RC}} \right)
 $$
 
-**Paso 3: [Transformada de Laplace](https://kenji.blog/p/laplace-transform/) inversa**
+**Paso 3: [Transformada de Laplace](https://kenji.blog/es/p/laplace-transform/) inversa**
 Regrese al dominio del tiempo utilizando la tabla de transformadas. Utilice el hecho de que $\frac{1}{s}$ regresa a $1$, y $\frac{1}{s + a}$ regresa a $e^{-at}$.
 
 $$

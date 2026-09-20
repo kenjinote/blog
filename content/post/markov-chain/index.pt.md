@@ -98,7 +98,7 @@ A resolução do sistema de equações fornece o seguinte:
 
 Resolvendo isso, obtemos $\pi_{\text{Ensolarado}} = \frac{4}{7} \approx 0.57$ e $\pi_{\text{Chuvoso}} = \frac{3}{7} \approx 0.43$. Em outras palavras, a longo prazo, há cerca de 57% de chance de ser ensolarado e 43% de chance de chover.
 
-## Aplicações das [Cadeias de Markov](https://kenji.blog/p/markov-chain/)
+## Aplicações das [Cadeias de Markov](https://kenji.blog/pt/p/markov-chain/)
 
 As cadeias de Markov não se limitam ao mundo da matemática; elas são aplicadas a vários sistemas do mundo real.
 

@@ -8,9 +8,9 @@ categories: ["mathematics", "biography"]
 tags: ["Siegel", "théorie des nombres", "mathématicien", "mécanique céleste", "théorie analytique des nombres", "équations diophantiennes"]
 ---
 
-## 1. Introduction : Qui est [Carl Ludwig Siegel](https://kenji.blog/p/siegel/) ?
+## 1. Introduction : Qui est [Carl Ludwig Siegel](https://kenji.blog/fr/p/siegel/) ?
 
-[Carl Ludwig Siegel](https://kenji.blog/p/siegel/) (31 décembre 1896 – 4 avril 1981) fut l'un des mathématiciens allemands les plus exceptionnels du 20e siècle, laissant un héritage colossal dans le monde mathématique. Ses recherches se sont principalement concentrées sur la théorie des nombres (théorie analytique et algébrique des nombres), les équations diophantiennes, les approximations diophantiennes et la mécanique céleste (systèmes dynamiques complexes). Ses réalisations continuent d'occuper une position extrêmement cruciale dans les mathématiques modernes.
+[Carl Ludwig Siegel](https://kenji.blog/fr/p/siegel/) (31 décembre 1896 – 4 avril 1981) fut l'un des mathématiciens allemands les plus exceptionnels du 20e siècle, laissant un héritage colossal dans le monde mathématique. Ses recherches se sont principalement concentrées sur la théorie des nombres (théorie analytique et algébrique des nombres), les équations diophantiennes, les approximations diophantiennes et la mécanique céleste (systèmes dynamiques complexes). Ses réalisations continuent d'occuper une position extrêmement cruciale dans les mathématiques modernes.
 
 Siegel était réputé pour ses prouesses de calcul étonnantes, sa perspicacité profonde et sa capacité à manier avec brio des techniques analytiques complexes. Dans un paysage mathématique du 20e siècle s'orientant rapidement vers l'abstraction et l'axiomatisation, il privilégiait par-dessus tout la résolution de problèmes concrets et le raffinement des méthodes classiques, conservant un style farouchement indépendant. Il est également célèbre pour sa forte critique de l'abstraction extrême promue par le groupe mathématique français Bourbaki. Cet article plonge au cœur de ses réalisations mathématiques extraordinaires, aux côtés d'épisodes de sa vie tumultueuse.
 
@@ -20,7 +20,7 @@ Siegel était réputé pour ses prouesses de calcul étonnantes, sa perspicacit�
 
 Siegel est né en 1896 à Berlin, dans l'Empire allemand. Faisant preuve d'un talent exceptionnel en mathématiques et en sciences dès son plus jeune âge, il est entré à l'Université Humboldt de Berlin (Université de Berlin) en 1915. Là, il eut la chance d'apprendre auprès de certains des plus grands érudits de l'époque, dont le physicien Max Planck et le maître de l'algèbre et de la théorie des groupes, Ferdinand Georg Frobenius. Initialement, Siegel s'intéressait également à l'astronomie et à la physique, mais les conférences passionnées de Frobenius ont suscité un profond intérêt pour la théorie des nombres, devenant le catalyseur décisif qui l'a poussé à poursuivre une voie en mathématiques.
 
-Cependant, le déclenchement de la Première Guerre mondiale l'a contraint à interrompre ses études. En 1917, Siegel fut enrôlé pour le service militaire, mais il refusa de servir en raison de ses forts sentiments anti-guerre et de ses convictions personnelles. À l'époque, le refus du service militaire était un crime grave en Allemagne, et il a enduré la dure épreuve d'être confiné dans un hôpital psychiatrique. Il a été sauvé de cette situation désespérée par l'éminent mathématicien Edmund Landau. Libéré grâce aux efforts de Landau, Siegel a été transféré à l'Université de Göttingen en 1917. Göttingen était alors la Mecque mondiale des mathématiques, abritant des géants tels que [David Hilbert](https://kenji.blog/p/hilbert/) et Felix Klein. Dans cet environnement, Siegel s'est épanoui et a laissé ses talents véritablement éclore.
+Cependant, le déclenchement de la Première Guerre mondiale l'a contraint à interrompre ses études. En 1917, Siegel fut enrôlé pour le service militaire, mais il refusa de servir en raison de ses forts sentiments anti-guerre et de ses convictions personnelles. À l'époque, le refus du service militaire était un crime grave en Allemagne, et il a enduré la dure épreuve d'être confiné dans un hôpital psychiatrique. Il a été sauvé de cette situation désespérée par l'éminent mathématicien Edmund Landau. Libéré grâce aux efforts de Landau, Siegel a été transféré à l'Université de Göttingen en 1917. Göttingen était alors la Mecque mondiale des mathématiques, abritant des géants tels que [David Hilbert](https://kenji.blog/fr/p/hilbert/) et Felix Klein. Dans cet environnement, Siegel s'est épanoui et a laissé ses talents véritablement éclore.
 
 ```mermaid
 graph TD
@@ -46,7 +46,7 @@ Aux États-Unis, il est accueilli à l'Institute for Advanced Study (IAS) de Pri
 
 Après la fin de la Seconde Guerre mondiale, Siegel a choisi de ne pas résider de façon permanente aux États-Unis, prenant la décision importante de retourner dans son pays natal, l'Allemagne, en 1951. Il est revenu en tant que professeur à l'Université de Göttingen, où il avait autrefois étudié, et s'est consacré à la reconstruction de la communauté mathématique allemande, dévastée par la guerre. Il a poursuivi ses vigoureuses activités de recherche et a formé de nombreux successeurs exceptionnels. Ses cours étaient rigoureux et lucides, ce qui lui a valu le profond respect de ses étudiants.
 
-En 1978, en reconnaissance des réalisations extraordinaires de toute une vie, il a reçu conjointement le premier prix Wolf de mathématiques, l'une des plus hautes distinctions du monde mathématique, avec Israel Gelfand. Le 4 avril 1981, [Carl Ludwig Siegel](https://kenji.blog/p/siegel/) s'est éteint à Göttingen, clôturant sa vie mouvementée de 84 ans.
+En 1978, en reconnaissance des réalisations extraordinaires de toute une vie, il a reçu conjointement le premier prix Wolf de mathématiques, l'une des plus hautes distinctions du monde mathématique, avec Israel Gelfand. Le 4 avril 1981, [Carl Ludwig Siegel](https://kenji.blog/fr/p/siegel/) s'est éteint à Göttingen, clôturant sa vie mouvementée de 84 ans.
 
 ## 3. Grandes réalisations mathématiques
 
@@ -64,7 +64,7 @@ $$
 
 Par exemple, alors qu'il peut y avoir une infinité de solutions réelles ou rationnelles pour une courbe elliptique (genre $g=1$) comme $x^3 + y^3 = c$ (où $c$ est un entier non nul), ce théorème garantit que si on se limite aux **solutions entières**, il y en aura toujours seulement un nombre fini.
 
-Ce résultat a été révolutionnaire concernant la finitude des solutions des équations diophantiennes et est devenu une étape historique cruciale ouvrant la voie à la preuve ultérieure du théorème de Mordell-Weil (la finitude des points rationnels sur les courbes de genre 2 ou plus) par [Gerd Faltings](https://kenji.blog/p/faltings/). Siegel a dérivé ce résultat étonnant en étendant considérablement le théorème d'Axel Thue sur les approximations diophantiennes et en le combinant avec la théorie des jacobiennes sur les variétés abéliennes.
+Ce résultat a été révolutionnaire concernant la finitude des solutions des équations diophantiennes et est devenu une étape historique cruciale ouvrant la voie à la preuve ultérieure du théorème de Mordell-Weil (la finitude des points rationnels sur les courbes de genre 2 ou plus) par [Gerd Faltings](https://kenji.blog/fr/p/faltings/). Siegel a dérivé ce résultat étonnant en étendant considérablement le théorème d'Axel Thue sur les approximations diophantiennes et en le combinant avec la théorie des jacobiennes sur les variétés abéliennes.
 
 ### 3.2 Zéro de Siegel
 
@@ -107,11 +107,11 @@ Dans le domaine de la théorie des nombres transcendants également, il a prouv�
 
 L'assertion du théorème est la suivante : "Dans un système d'équations linéaires simultanées où les coefficients sont des entiers, si le nombre d'inconnues $N$ est suffisamment supérieur au nombre d'équations $M$ ( $N > M$ ), il existe toujours une solution entière non triviale où la valeur absolue de chaque composante est relativement petite (de manière appropriée majorée selon la taille des coefficients)."
 
-Ayant une preuve élégante utilisant le principe des tiroirs (principe de la boîte de Dirichlet), ce lemme est fréquemment utilisé comme un outil de base indispensable dans la théorie moderne de la transcendance, par exemple dans la construction de nombres transcendants, les approximations diophantiennes, et plus tard dans la théorie d'[Alan Baker](https://kenji.blog/p/baker/) sur les formes linéaires de logarithmes.
+Ayant une preuve élégante utilisant le principe des tiroirs (principe de la boîte de Dirichlet), ce lemme est fréquemment utilisé comme un outil de base indispensable dans la théorie moderne de la transcendance, par exemple dans la construction de nombres transcendants, les approximations diophantiennes, et plus tard dans la théorie d'[Alan Baker](https://kenji.blog/fr/p/baker/) sur les formes linéaires de logarithmes.
 
 ### 3.5 Mécanique céleste et problème des petits diviseurs
 
-Siegel ne s'est pas limité aux mathématiques pures ; il brûlait d'une obsession extraordinaire pour la mécanique céleste, en particulier le problème des trois corps, qui décrit le mouvement des systèmes à plusieurs corps. Il a développé l'étude des systèmes dynamiques initiée par [Henri Poincaré](https://kenji.blog/p/poincare/) et a laissé des résultats révolutionnaires concernant la stabilité des solutions aux équations différentielles.
+Siegel ne s'est pas limité aux mathématiques pures ; il brûlait d'une obsession extraordinaire pour la mécanique céleste, en particulier le problème des trois corps, qui décrit le mouvement des systèmes à plusieurs corps. Il a développé l'étude des systèmes dynamiques initiée par [Henri Poincaré](https://kenji.blog/fr/p/poincare/) et a laissé des résultats révolutionnaires concernant la stabilité des solutions aux équations différentielles.
 
 En 1941, il prouve le "théorème du centre de Siegel" en mécanique analytique et en systèmes dynamiques complexes. Cela a résolu la question de savoir quand une fonction holomorphe est linéarisable au voisinage de son point fixe dans le plan complexe. Dans le développement de Taylor de la fonction, si $\lambda$ représente la valeur de la dérivée, lorsque $\lambda$ prend une valeur proche d'une racine de l'unité, de très petites valeurs apparaissent au dénominateur, ce qui fait diverger la série—un phénomène connu sous le nom de "problème des petits diviseurs" (small divisor problem).
 
@@ -135,7 +135,7 @@ En raison de cette forte conviction, ses articles sont très gratifiants à lire
 
 ## 5. Conclusion et héritage de Siegel
 
-Grâce à son talent analytique sans précédent et à son profond respect pour les mathématiques classiques, [Carl Ludwig Siegel](https://kenji.blog/p/siegel/) a laissé des réalisations décisives et marquantes en théorie des nombres, en géométrie diophantienne et en mécanique céleste.
+Grâce à son talent analytique sans précédent et à son profond respect pour les mathématiques classiques, [Carl Ludwig Siegel](https://kenji.blog/fr/p/siegel/) a laissé des réalisations décisives et marquantes en théorie des nombres, en géométrie diophantienne et en mécanique céleste.
 
 Les nombreux concepts et théorèmes portant son nom, tels que le zéro de Siegel, le théorème de Siegel, les formes modulaires de Siegel et le lemme de Siegel, sont devenus des langages communs utilisés quotidiennement par les mathématiciens modernes, servant de fondements indispensables même dans les recherches de pointe en cours.
 

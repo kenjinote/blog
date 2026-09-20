@@ -95,10 +95,10 @@ Pendant la Seconde Guerre mondiale, l'« Enigma », utilisée par l'Allemagne na
 
 Le rotor tournant chaque fois qu'une lettre était tapée sur le clavier, taper la même lettre de suite produirait des caractères chiffrés différents (le summum du chiffrement polyalphabétique). Son espace de clés (combinaisons de paramètres) atteignait environ $1.58 \times 10^{19}$ (environ 15,8 quintillions), ce qui rendait le déchiffrement par force brute impossible avec la technologie de l'époque.
 
-## [Alan Turing](https://kenji.blog/p/turing/) et la « Bombe »
+## [Alan Turing](https://kenji.blog/fr/p/turing/) et la « Bombe »
 L'équipe de cryptanalyse de Bletchley Park en Grande-Bretagne a relevé le défi de cette imprenable Enigma, en s'appuyant sur les travaux initiaux de mathématiciens polonais comme Marian Rejewski.
 
-En particulier, [Alan Turing](https://kenji.blog/p/turing/) a développé la « Bombe », une machine de déchiffrement électromécanique, en utilisant des suppositions de texte clair (Cribs) correspondant à des parties du texte chiffré. La Bombe détectait rapidement les contradictions logiques et éliminait un par un les paramètres de rotor impossibles, réussissant ainsi à déchiffrer Enigma. On dit que cet exploit a avancé la victoire des Alliés de plusieurs années.
+En particulier, [Alan Turing](https://kenji.blog/fr/p/turing/) a développé la « Bombe », une machine de déchiffrement électromécanique, en utilisant des suppositions de texte clair (Cribs) correspondant à des parties du texte chiffré. La Bombe détectait rapidement les contradictions logiques et éliminait un par un les paramètres de rotor impossibles, réussissant ainsi à déchiffrer Enigma. On dit que cet exploit a avancé la victoire des Alliés de plusieurs années.
 
 ---
 

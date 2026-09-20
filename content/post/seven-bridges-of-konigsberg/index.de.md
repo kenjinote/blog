@@ -10,11 +10,11 @@ tags: ["Graphentheorie", "Topologie", "Euler", "Mathematik"]
 
 ## Einführung
 
-In der Geschichte der Mathematik kommt es manchmal vor, dass alltägliche, triviale Fragen oder Spiele völlig neue mathematische Disziplinen eröffnen. Eines der berühmtesten und schönsten Beispiele dafür ist das Problem der **"Sieben Brücken von Königsberg"** ([Seven Bridges of Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)).
+In der Geschichte der Mathematik kommt es manchmal vor, dass alltägliche, triviale Fragen oder Spiele völlig neue mathematische Disziplinen eröffnen. Eines der berühmtesten und schönsten Beispiele dafür ist das Problem der **"Sieben Brücken von Königsberg"** ([Seven Bridges of Königsberg](https://kenji.blog/de/p/seven-bridges-of-konigsberg/)).
 
 Im 18. Jahrhundert floss durch die preußische Stadt Königsberg (das heutige Kaliningrad in der Russischen Föderation) der große Fluss Pregel. Es gab sieben Brücken, die die Flussinseln mit beiden Ufern verbanden. Die damaligen Bürger erdachten sich bei ihren abendlichen Spaziergängen folgendes Spiel: "Ist es möglich, einen Spaziergang zu machen, bei dem man alle sieben Brücken der Stadt genau einmal überquert und zum Ausgangspunkt zurückkehrt?"
 
-Als dieses scheinbar bloße Rätsel in die Hände des genialen Mathematikers **[Leonhard Euler](https://kenji.blog/p/euler/)** ([Leonhard Euler](https://kenji.blog/p/euler/)) fiel, kam es zu einer Revolution in der Welt der Mathematik. Euler bewies nicht nur, dass dieses Problem unlösbar ist, sondern betrachtete in diesem Prozess die Eigenschaften des Raumes aus einer völlig neuen Perspektive und legte den Grundstein für zwei in der modernen Mathematik äußerst wichtige Gebiete: die **Graphentheorie** (Graph Theory) und die **Topologie** (Topology).
+Als dieses scheinbar bloße Rätsel in die Hände des genialen Mathematikers **[Leonhard Euler](https://kenji.blog/de/p/euler/)** ([Leonhard Euler](https://kenji.blog/de/p/euler/)) fiel, kam es zu einer Revolution in der Welt der Mathematik. Euler bewies nicht nur, dass dieses Problem unlösbar ist, sondern betrachtete in diesem Prozess die Eigenschaften des Raumes aus einer völlig neuen Perspektive und legte den Grundstein für zwei in der modernen Mathematik äußerst wichtige Gebiete: die **Graphentheorie** (Graph Theory) und die **Topologie** (Topology).
 
 In diesem Artikel werden wir den historischen Hintergrund des Problems der sieben Brücken von Königsberg, Eulers brillante Lösung und wie dies mit moderner Wissenschaft und Technologie zusammenhängt, mit mathematischen Details tiefgehend untersuchen. Genießen Sie nicht nur die historische Einführung, sondern auch die Schönheit der dahinterliegenden mathematischen Struktur.
 
@@ -36,7 +36,7 @@ Die Intellektuellen und Bürger des damaligen Königsbergs versuchten bei ihren 
 
 ## Vom Brückenrätsel zum mathematischen Problem: Leibniz' Traum und Eulers Intuition
 
-Dieses Gerücht der Bürger erreichte schließlich die Ohren des großen Schweizer Mathematikers **[Leonhard Euler](https://kenji.blog/p/euler/)**, der sich damals an der Russischen Akademie der Wissenschaften in Sankt Petersburg aufhielt. Es war das Jahr 1735.
+Dieses Gerücht der Bürger erreichte schließlich die Ohren des großen Schweizer Mathematikers **[Leonhard Euler](https://kenji.blog/de/p/euler/)**, der sich damals an der Russischen Akademie der Wissenschaften in Sankt Petersburg aufhielt. Es war das Jahr 1735.
 
 Anfänglich hatte Euler offenbar das Gefühl: "Ist das nicht bloß eine logische Spielerei und keine Mathematik?" Die damaligen Hauptströmungen der Mathematik waren die euklidische Geometrie (die sich mit Länge, Winkel, Fläche, Volumen usw. befasst), die Algebra oder die gerade erst von Newton und Leibniz begründete Differential- und Integralrechnung. Das Problem der Königsberger Brücken hängt überhaupt nicht von traditionellen geometrischen Eigenschaften ab, wie etwa davon, wie viele Meter die Brücken lang sind, wie groß die Flächen der Inseln sind oder in welchem Winkel die Brücken zum Fluss stehen. Wichtig war nur die reine Beziehung der **Verbindung**: "Welches Land ist durch wie viele Brücken mit welchem Land verbunden?"
 
@@ -157,7 +157,7 @@ Auch in verschiedenen Maßstäben der Naturwissenschaften ist die Graphentheorie
 
 ## Fazit
 
-Ein einziges im Jahr 1736 von [Leonhard Euler](https://kenji.blog/p/euler/) veröffentlichtes Papier, "Lösung eines Problems bezüglich der Geometrie der Lage", gab dem trivialen Sonntagsspaziergangsrätsel der Königsberger Bürger eine vollständige Antwort. Was es jedoch wirklich bedeutete, war nicht das Ende eines Problems, sondern die Geburt eines riesigen mathematischen Universums mit zahllosen Anwendungen.
+Ein einziges im Jahr 1736 von [Leonhard Euler](https://kenji.blog/de/p/euler/) veröffentlichtes Papier, "Lösung eines Problems bezüglich der Geometrie der Lage", gab dem trivialen Sonntagsspaziergangsrätsel der Königsberger Bürger eine vollständige Antwort. Was es jedoch wirklich bedeutete, war nicht das Ende eines Problems, sondern die Geburt eines riesigen mathematischen Universums mit zahllosen Anwendungen.
 
 Es ist die **Kraft der Abstraktion**, die nicht an den oberflächlichen Formen und Größen der Dinge festhält, sondern scharfsinnig nur die wesentlichste Struktur durchschaut: "Was ist wie womit verbunden?". Die Geschichte der sieben Brücken von Königsberg lehrt uns über alle Zeiten hinweg, wie abstraktes mathematisches Denken eine mächtige Waffe sein kann, um die reale Welt zu entschlüsseln und die Technologie der Zukunft zu erschaffen.
 

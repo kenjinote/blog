@@ -8,13 +8,13 @@ categories: ["Matemática", "Biografia"]
 tags: ["Poincaré", "Topologia", "Teoria do Caos", "História da Matemática", "Física"]
 ---
 
-[Henri Poincaré](https://kenji.blog/p/poincare/) (1854–1912) é um dos maiores matemáticos da história que a França já produziu, bem como físico teórico, engenheiro e filósofo da ciência. Ele é frequentemente chamado de **"O Último Universalista"** porque compreendia profundamente todos os campos matemáticos de sua época e fez contribuições fundamentais a cada um deles. Considerando o quão altamente especializada e fragmentada a matemática moderna se tornou, é improvável que alguém com uma visão tão abrangente de todos os campos apareça novamente.
+[Henri Poincaré](https://kenji.blog/pt/p/poincare/) (1854–1912) é um dos maiores matemáticos da história que a França já produziu, bem como físico teórico, engenheiro e filósofo da ciência. Ele é frequentemente chamado de **"O Último Universalista"** porque compreendia profundamente todos os campos matemáticos de sua época e fez contribuições fundamentais a cada um deles. Considerando o quão altamente especializada e fragmentada a matemática moderna se tornou, é improvável que alguém com uma visão tão abrangente de todos os campos apareça novamente.
 
 Neste artigo, exploraremos com volume e profundidade esmagadores a vida dramática de Poincaré, seus episódios muito humanos e o profundo legado matemático e físico que ele deixou para o mundo.
 
 ## 1. Juventude e Ambiente Educacional Único: O Desabrochar de um Gênio
 
-[Henri Poincaré](https://kenji.blog/p/poincare/) nasceu em 29 de abril de 1854, na cidade de Nancy, no nordeste da França, em uma família de elite altamente intelectual. Seu pai, Léon Poincaré, era professor da faculdade de medicina da Universidade de Nancy, e seu primo, Raymond Poincaré, mais tarde se tornaria um político proeminente, servindo como Primeiro-Ministro e Presidente da França. Um ambiente familiar tão abençoado estimulou imensamente sua curiosidade intelectual.
+[Henri Poincaré](https://kenji.blog/pt/p/poincare/) nasceu em 29 de abril de 1854, na cidade de Nancy, no nordeste da França, em uma família de elite altamente intelectual. Seu pai, Léon Poincaré, era professor da faculdade de medicina da Universidade de Nancy, e seu primo, Raymond Poincaré, mais tarde se tornaria um político proeminente, servindo como Primeiro-Ministro e Presidente da França. Um ambiente familiar tão abençoado estimulou imensamente sua curiosidade intelectual.
 
 Durante sua infância, Poincaré sofreu de difteria, o que o deixou incapaz de falar por um longo período e confinado ao leito. No entanto, esse período de isolamento desenvolveu de forma anormal suas habilidades de pensamento interno. Ele possuía uma **memória intuitiva** que lhe permitia memorizar perfeitamente o conteúdo de um livro após lê-lo apenas uma vez, e aprendeu a manipular livremente a disposição visual das letras e as relações espaciais em sua mente.
 
@@ -39,7 +39,7 @@ graph TD
 
 Em vez de perseguir trajetórias celestes complexas com fórmulas de cálculo, Poincaré concentrou-se na "forma geométrica do espaço" traçada por toda a trajetória. Ele utilizou plenamente o conceito de espaço de fase e concebeu o "Mapa de Poincaré", que registra apenas os pontos onde a trajetória cruza um plano específico. Isso abriu caminho para uma compreensão qualitativa do comportamento de sistemas mecânicos complexos.
 
-## 3. [A Conjectura de Poincaré](https://kenji.blog/p/poincare-conjecture/): A Fundação da Topologia
+## 3. [A Conjectura de Poincaré](https://kenji.blog/pt/p/poincare-conjecture/): A Fundação da Topologia
 
 Outra realização monumental de Poincaré foi a fundação, por ele mesmo, da **Topologia** , um campo importante da matemática moderna. Em seu artigo de 1895, "Analysis Situs", ele construiu um novo arcabouço matemático para estudar as propriedades de figuras que são preservadas mesmo quando deformadas continuamente.
 
@@ -87,6 +87,6 @@ Ele afirmou: "Não é que a geometria euclidiana seja verdadeira e a geometria n
 
 ## 7. Conclusão: O Legado Eterno de Poincaré
 
-Em 1912, [Henri Poincaré](https://kenji.blog/p/poincare/) faleceu prematuramente, aos 58 anos de idade. Quando ele morreu, cientistas de todo o mundo lamentaram que "a luz do intelecto francês se extinguiu".
+Em 1912, [Henri Poincaré](https://kenji.blog/pt/p/poincare/) faleceu prematuramente, aos 58 anos de idade. Quando ele morreu, cientistas de todo o mundo lamentaram que "a luz do intelecto francês se extinguiu".
 
 Os fundamentos matemáticos que ele deixou para a **Topologia** , a **Teoria do Caos** e o **Princípio da Relatividade** dão vida a todos os campos hoje, da física de partículas moderna e cosmologia à previsão do tempo e modelos econômicos. Poincaré nos ensinou não apenas fragmentos de conhecimento especializado, mas a beleza universal da matemática que atravessa o mundo inteiro. Quando refletimos sobre sua vida e suas realizações, somos testemunhas da profundidade e da amplitude supremas que o espírito humano pode alcançar.

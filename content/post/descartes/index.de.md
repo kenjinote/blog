@@ -16,7 +16,7 @@ tags:
 
 ## 1. Einführung
 
-[René Descartes](https://kenji.blog/p/descartes/) (1596-1650) war ein französischer Philosoph, Mathematiker und Wissenschaftler. Er hinterließ den berühmten Satz "Ich denke, also bin ich (Cogito, ergo sum)" und ist weithin als Vater der modernen Philosophie bekannt. Die Rolle, die er in der Geschichte der Mathematik spielte, war jedoch ebenso gewaltig wie seine philosophischen Errungenschaften.
+[René Descartes](https://kenji.blog/de/p/descartes/) (1596-1650) war ein französischer Philosoph, Mathematiker und Wissenschaftler. Er hinterließ den berühmten Satz "Ich denke, also bin ich (Cogito, ergo sum)" und ist weithin als Vater der modernen Philosophie bekannt. Die Rolle, die er in der Geschichte der Mathematik spielte, war jedoch ebenso gewaltig wie seine philosophischen Errungenschaften.
 
 Descartes' größte mathematische Leistung war die Erschaffung der **analytischen Geometrie**, die Algebra und Geometrie verschmolz. In diesem Artikel werden wir die Episoden seines Lebens und die Revolution, die er in der Welt der Mathematik auslöste, im Detail erklären.
 
@@ -66,7 +66,7 @@ $$
 
 ## 4. Auswirkungen auf Philosophie und Wissenschaft
 
-Descartes' analytische Geometrie wurde zu einer unverzichtbaren Grundlage für die spätere Entwicklung von Mathematik und Physik. Man kann sagen, dass die Erschaffung der Infinitesimalrechnung durch [Isaac Newton](https://kenji.blog/p/newton/) und [Gottfried Leibniz](https://kenji.blog/p/leibniz/) nur wegen der Bühne möglich war, die das kartesische Koordinatensystem bot.
+Descartes' analytische Geometrie wurde zu einer unverzichtbaren Grundlage für die spätere Entwicklung von Mathematik und Physik. Man kann sagen, dass die Erschaffung der Infinitesimalrechnung durch [Isaac Newton](https://kenji.blog/de/p/newton/) und [Gottfried Leibniz](https://kenji.blog/de/p/leibniz/) nur wegen der Bühne möglich war, die das kartesische Koordinatensystem bot.
 
 Darüber hinaus begründete sein "methodischer Zweifel" in der Philosophie, ein Ansatz, um nach dem Anzweifeln von allem sichere Wahrheiten zu finden, den Geist des Rationalismus, der als Grundlage der wissenschaftlichen Forschung dient.
 
@@ -74,4 +74,4 @@ Darüber hinaus begründete sein "methodischer Zweifel" in der Philosophie, ein 
 
 Descartes war ein Mann, der das Denken so sehr liebte, dass eine Anekdote besagt, dass er bis spät in den Morgen im Bett blieb, um die Bewegung einer Fliege an der Decke zu beobachten. (Einer Theorie zufolge führte der Versuch, die Bewegung dieser Fliege auszudrücken, zur Idee des Koordinatensystems).
 
-Das Leben und Denken von [René Descartes](https://kenji.blog/p/descartes/) bietet uns auch heute noch viel Inspiration, indem es die Grenzen akademischer Disziplinen überschreitet. Wenn wir bedenken, dass die heutige Computergrafik, KI und alle Arten von wissenschaftlicher Technologie auf dem von ihm hinterlassenen Koordinatensystem basieren, können wir seine Größe einmal mehr erkennen.
+Das Leben und Denken von [René Descartes](https://kenji.blog/de/p/descartes/) bietet uns auch heute noch viel Inspiration, indem es die Grenzen akademischer Disziplinen überschreitet. Wenn wir bedenken, dass die heutige Computergrafik, KI und alle Arten von wissenschaftlicher Technologie auf dem von ihm hinterlassenen Koordinatensystem basieren, können wir seine Größe einmal mehr erkennen.

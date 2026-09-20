@@ -42,7 +42,7 @@ The history of the evolution of past integer factorization algorithms has also b
 
 ## 3. The Full Picture and Mathematical Structure of the GNFS Algorithm
 
-GNFS has a very complex and advanced mathematical foundation. The basic idea is an extension of [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/) and the Quadratic Sieve (QS), finding a non-trivial pair $(X, Y)$ that satisfies the congruence $X^2 \equiv Y^2 \pmod n$ and $X \not\equiv \pm Y \pmod n$, thereby deriving the factor $\gcd(X-Y, n)$ of $n$.
+GNFS has a very complex and advanced mathematical foundation. The basic idea is an extension of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) and the Quadratic Sieve (QS), finding a non-trivial pair $(X, Y)$ that satisfies the congruence $X^2 \equiv Y^2 \pmod n$ and $X \not\equiv \pm Y \pmod n$, thereby deriving the factor $\gcd(X-Y, n)$ of $n$.
 
 However, the essence of GNFS is that it does not do this only in the rational number field $\mathbb{Q}$, but simultaneously searches for "smooth numbers" in both an extension field called an Algebraic Number Field $\mathbb{Q}(\alpha)$ and the rational number field, building congruence relations through homomorphisms.
 

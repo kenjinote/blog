@@ -17,7 +17,7 @@ tags:
 
 ## Introducción
 
-En la historia de las matemáticas y la física, el siglo XVIII fue una época en la que grandes genios brillaron como estrellas. Entre ellos, uno de los matemáticos más grandes, a menudo mencionado junto a [Leonhard Euler](https://kenji.blog/p/euler/), es **[Joseph-Louis Lagrange](https://kenji.blog/p/lagrange/)** (1736–1813). Es conocido como el fundador de la "mecánica analítica", habiendo establecido el cálculo de variaciones y elevado la mecánica de la intuición geométrica al puro análisis matemático.
+En la historia de las matemáticas y la física, el siglo XVIII fue una época en la que grandes genios brillaron como estrellas. Entre ellos, uno de los matemáticos más grandes, a menudo mencionado junto a [Leonhard Euler](https://kenji.blog/es/p/euler/), es **[Joseph-Louis Lagrange](https://kenji.blog/es/p/lagrange/)** (1736–1813). Es conocido como el fundador de la "mecánica analítica", habiendo establecido el cálculo de variaciones y elevado la mecánica de la intuición geométrica al puro análisis matemático.
 
 En este artículo, profundizaremos en la turbulenta vida de Lagrange, quien tenía una personalidad modesta y contemplativa, y sus monumentales logros matemáticos y físicos que forman la base de la ciencia y la tecnología modernas.
 
@@ -92,4 +92,4 @@ El concepto del "Lagrangiano" que dejó atrás se ha convertido en el lenguaje c
 
 ## Conclusión
 
-[Joseph-Louis Lagrange](https://kenji.blog/p/lagrange/) sobrevivió al turbulento siglo XVIII, pero su mente siempre estuvo en el mundo de la pura verdad matemática. Sus logros no son meros descubrimientos del pasado; todavía respiran a la vanguardia de la física y las matemáticas en la actualidad. Su legado, creyendo en la belleza de las fórmulas matemáticas y la universalidad de la lógica, seguirá guiando la búsqueda de conocimiento de la humanidad.
+[Joseph-Louis Lagrange](https://kenji.blog/es/p/lagrange/) sobrevivió al turbulento siglo XVIII, pero su mente siempre estuvo en el mundo de la pura verdad matemática. Sus logros no son meros descubrimientos del pasado; todavía respiran a la vanguardia de la física y las matemáticas en la actualidad. Su legado, creyendo en la belleza de las fórmulas matemáticas y la universalidad de la lógica, seguirá guiando la búsqueda de conocimiento de la humanidad.

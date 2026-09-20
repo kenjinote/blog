@@ -21,9 +21,9 @@ Fornecendo uma estrutura poderosa para representar e analisar de forma simples e
 
 Este artigo explicará de forma abrangente e sistemática a teoria dos grafos, começando por suas origens históricas, abrangendo definições matemáticas básicas e estruturas de dados para programação de computadores, e introduzindo algoritmos representativos que sustentam a base da tecnologia moderna.
 
-## 2. O Nascimento da Teoria dos Grafos: [As Sete Pontes de Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)
+## 2. O Nascimento da Teoria dos Grafos: [As Sete Pontes de Königsberg](https://kenji.blog/pt/p/seven-bridges-of-konigsberg/)
 
-A história da teoria dos grafos remonta ao século XVIII. Em 1736, o brilhante matemático suíço [Leonhard Euler](https://kenji.blog/p/euler/) resolveu com elegância um famoso quebra-cabeças matemático, marcando o início deste campo. Este quebra-cabeças é conhecido como as "Sete Pontes de Königsberg".
+A história da teoria dos grafos remonta ao século XVIII. Em 1736, o brilhante matemático suíço [Leonhard Euler](https://kenji.blog/pt/p/euler/) resolveu com elegância um famoso quebra-cabeças matemático, marcando o início deste campo. Este quebra-cabeças é conhecido como as "Sete Pontes de Königsberg".
 
 Na bela cidade de Königsberg, no Reino da Prússia (atual Kaliningrado, Rússia), fluía o rio Pregel, com duas ilhas no meio e um total de sete pontes que as ligavam às margens do rio. Um jogo tornou-se popular entre os cidadãos: "É possível atravessar cada ponte exatamente uma vez e voltar ao ponto de partida original?" Muitas pessoas tentaram, mas ninguém teve sucesso.
 

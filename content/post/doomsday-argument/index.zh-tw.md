@@ -10,7 +10,7 @@ slug: "doomsday-argument"
 
 ## 1. 前言：我們生活在一個「特別的」時代嗎？
 
-人類何時會滅亡？這個問題自古以來就被視為宗教、哲學，以及科幻作品的主題。然而，1980年代之後，出現了使用 **機率論** 與 **貝氏推斷** 對這個問題嘗試進行數學探討的研究者。這就是本次要介紹的 **[終末論（Doomsday Argument）](https://kenji.blog/p/doomsday-argument/)** 。
+人類何時會滅亡？這個問題自古以來就被視為宗教、哲學，以及科幻作品的主題。然而，1980年代之後，出現了使用 **機率論** 與 **貝氏推斷** 對這個問題嘗試進行數學探討的研究者。這就是本次要介紹的 **[終末論（Doomsday Argument）](https://kenji.blog/zh-tw/p/doomsday-argument/)** 。
 
 終末論最初由物理學家布蘭登·卡特（Brandon Carter）提出，其後由哲學家約翰·萊斯里（John Leslie）、天體物理學家 J·理查德·戈特（J. Richard Gott）以及尼克·博斯特羅姆（Nick Bostrom）等人加以完善。這個論述的驚人之處在於，它不需要使用複雜的氣候變遷模型、核戰模擬或小行星撞擊的機率等，僅憑單純的「機率原則」與「統計推斷」，就能推導出對人類存續期間極度悲觀的預測。
 
@@ -61,7 +61,7 @@ graph TD
 
 ## 4. 使用貝氏推斷進行數學公式化
 
-讓我們使用 **貝氏推斷** 來將這個直覺嚴謹地進行數學公式化。[貝氏定理](https://kenji.blog/p/bayes-theorem/)是一項定理，用於說明當獲得新證據（觀測數據）時，應當如何更新某項假說的機率（事後機率）。
+讓我們使用 **貝氏推斷** 來將這個直覺嚴謹地進行數學公式化。[貝氏定理](https://kenji.blog/zh-tw/p/bayes-theorem/)是一項定理，用於說明當獲得新證據（觀測數據）時，應當如何更新某項假說的機率（事後機率）。
 
 $$ P(H|E) = \frac{P(E|H) \cdot P(H)}{P(E)} $$
 
@@ -88,7 +88,7 @@ $$ P(H_{DOOM}) = P(H_{BOOM}) = 0.5 $$
 $$ P(n | H_{DOOM}) = \frac{1}{N_{DOOM}} = \frac{1}{2 \times 10^{11}} $$
 $$ P(n | H_{BOOM}) = \frac{1}{N_{BOOM}} = \frac{1}{2 \times 10^{13}} $$
 
-我們使用上述數值來計算 $H_{DOOM}$ 的事後機率。利用全機率定理來展開[貝氏定理](https://kenji.blog/p/bayes-theorem/)，會得到以下算式：
+我們使用上述數值來計算 $H_{DOOM}$ 的事後機率。利用全機率定理來展開[貝氏定理](https://kenji.blog/zh-tw/p/bayes-theorem/)，會得到以下算式：
 
 $$ P(H_{DOOM} | n) = \frac{P(n | H_{DOOM}) P(H_{DOOM})}{P(n | H_{DOOM}) P(H_{DOOM}) + P(n | H_{BOOM}) P(H_{BOOM})} $$
 

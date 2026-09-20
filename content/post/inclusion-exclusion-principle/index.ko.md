@@ -17,7 +17,7 @@ tags:
 
 수학이나 컴퓨터 과학 분야에서는 여러 조건을 만족하는 원소의 개수를 세어야 하는 상황이 자주 발생합니다. 그러나 여러 조건이 있을 때, 각각의 조건을 만족하는 원소들의 집합은 서로 겹치는(교집합을 갖는) 경우가 많아 단순히 합산하면 원소를 중복해서 세게 됩니다.
 
-이러한 중복을 정확하게 제거하고 올바른 원소의 수를 도출하기 위한 강력한 방법이 **[포함-배제의 원리](https://kenji.blog/p/inclusion-exclusion-principle/)** ([Inclusion-Exclusion Principle](https://kenji.blog/p/inclusion-exclusion-principle/))입니다.
+이러한 중복을 정확하게 제거하고 올바른 원소의 수를 도출하기 위한 강력한 방법이 **[포함-배제의 원리](https://kenji.blog/ko/p/inclusion-exclusion-principle/)** ([Inclusion-Exclusion Principle](https://kenji.blog/ko/p/inclusion-exclusion-principle/))입니다.
 
 이 글에서는 포함-배제 원리의 기본 개념부터 일반화된 수학적 공식, 수학적 증명, 그리고 구체적인 응용 사례(오일러의 파이 함수나 완전순열 등)까지 상세하게 설명할 것입니다. 나아가 프로그래밍을 활용한 구현 예제도 소개하여 이론과 실무 양면에서 이해를 깊게 하는 것을 목표로 합니다.
 
@@ -143,7 +143,7 @@ $$
 \varphi(N) = N - \left| \bigcup_{i=1}^k A_i \right|
 $$
 
-[포함-배제의 원리](https://kenji.blog/p/inclusion-exclusion-principle/)를 적용하여 정리하면 다음의 유명한 공식이 유도됩니다.
+[포함-배제의 원리](https://kenji.blog/ko/p/inclusion-exclusion-principle/)를 적용하여 정리하면 다음의 유명한 공식이 유도됩니다.
 
 $$
 \varphi(N) = N \left(1 - \frac{1}{p_1}\right) \left(1 - \frac{1}{p_2}\right) \dots \left(1 - \frac{1}{p_k}\right)
@@ -156,7 +156,7 @@ $$
 $A_i$ 를 " $i$ 번째 위치에 $i$ 가 오는 순열의 집합"이라고 합니다. 전체집합의 원소 개수는 $n!$ 입니다.
 우리가 구하는 것은 $n! - |A_1 \cup A_2 \cup \dots \cup A_n|$ 입니다.
 
-임의의 $k$ 개 집합의 교집합의 원소 개수는 $(n-k)!$ 이며, 그러한 $k$ 개 집합을 고르는 방법은 $\binom{n}{k}$ 가지이므로 [포함-배제의 원리](https://kenji.blog/p/inclusion-exclusion-principle/)를 적용하면 완전순열의 수 $D_n$ 은 다음과 같이 구해집니다.
+임의의 $k$ 개 집합의 교집합의 원소 개수는 $(n-k)!$ 이며, 그러한 $k$ 개 집합을 고르는 방법은 $\binom{n}{k}$ 가지이므로 [포함-배제의 원리](https://kenji.blog/ko/p/inclusion-exclusion-principle/)를 적용하면 완전순열의 수 $D_n$ 은 다음과 같이 구해집니다.
 
 $$
 D_n = n! \sum_{k=0}^n \frac{(-1)^k}{k!}
@@ -164,7 +164,7 @@ $$
 
 ## 8. 프로그래밍을 통한 계산과 구현
 
-[포함-배제의 원리](https://kenji.blog/p/inclusion-exclusion-principle/)는 프로그래밍에서도 매우 유용합니다. 특히 비트마스킹을 활용한 완전탐색과 결합하면 $n$ 개의 조건에 대한 포함-배제 원리를 간결하게 구현할 수 있습니다.
+[포함-배제의 원리](https://kenji.blog/ko/p/inclusion-exclusion-principle/)는 프로그래밍에서도 매우 유용합니다. 특히 비트마스킹을 활용한 완전탐색과 결합하면 $n$ 개의 조건에 대한 포함-배제 원리를 간결하게 구현할 수 있습니다.
 
 아래는 파이썬(Python)을 사용하여 "1부터 $M$ 까지의 정수 중, 주어진 소수 리스트의 어느 하나로 나누어 떨어지는 수의 개수"를 구하는 코드입니다.
 
@@ -203,7 +203,7 @@ print(f"결과: {count_multiples(M, primes)}")
 
 ## 9. 결론
 
-[포함-배제의 원리](https://kenji.blog/p/inclusion-exclusion-principle/)는 언뜻 복잡해 보이는 집합의 겹침을 단순하고 기계적인 덧셈과 뺄셈의 반복으로 분해해 주는 마법과 같은 수식입니다.
+[포함-배제의 원리](https://kenji.blog/ko/p/inclusion-exclusion-principle/)는 언뜻 복잡해 보이는 집합의 겹침을 단순하고 기계적인 덧셈과 뺄셈의 반복으로 분해해 주는 마법과 같은 수식입니다.
 
 기초적인 확률 문제부터 고도의 경쟁 프로그래밍, 암호학과 관련된 오일러의 파이 함수 계산에 이르기까지 그 응용 범위는 실로 광범위합니다.
 이 강력한 기법을 마스터함으로써 수학과 알고리즘 분야에서의 문제 해결 능력이 비약적으로 향상될 것입니다. 부디 다양한 문제에 적용하여 그 위력을 실감해 보시기 바랍니다.

@@ -12,7 +12,7 @@ tags: ["Conjecture ABC", "Théorie des nombres", "Théorie IUT", "Shinichi Mochi
 
 Dans le domaine de la théorie des nombres, il existe de nombreux problèmes non résolus, mais l'un des plus importants est la **conjecture ABC** (ABC Conjecture). Cette conjecture a été formulée indépendamment par Joseph Oesterlé et David Masser en 1985.
 
-[La conjecture ABC](https://kenji.blog/p/abc-conjecture/) suggère une relation profonde entre l'addition et la multiplication (factorisation en nombres premiers) des nombres entiers. Elle décrit les propriétés étonnantes cachées dans une équation apparemment simple, $a + b = c$.
+[La conjecture ABC](https://kenji.blog/fr/p/abc-conjecture/) suggère une relation profonde entre l'addition et la multiplication (factorisation en nombres premiers) des nombres entiers. Elle décrit les propriétés étonnantes cachées dans une équation apparemment simple, $a + b = c$.
 
 ## Définition rigoureuse de la conjecture ABC
 
@@ -20,7 +20,7 @@ Considérons un triplet d'entiers positifs premiers entre eux $(a, b, c)$ satisf
 
 $$ \text{rad}(n) = \prod_{p | n} p $$
 
-[La conjecture ABC](https://kenji.blog/p/abc-conjecture/) affirme que pour tout $\epsilon > 0$, il n'existe qu'un nombre fini de triplets d'entiers positifs premiers entre eux $(a, b, c)$ satisfaisant la condition suivante.
+[La conjecture ABC](https://kenji.blog/fr/p/abc-conjecture/) affirme que pour tout $\epsilon > 0$, il n'existe qu'un nombre fini de triplets d'entiers positifs premiers entre eux $(a, b, c)$ satisfaisant la condition suivante.
 
 $$ c > \text{rad}(abc)^{1 + \epsilon} $$
 
@@ -59,7 +59,7 @@ Si la conjecture ABC était (par la théorie IUT ou par d'autres méthodes) comp
 
 ## Application au dernier théorème de Fermat
 
-[Le dernier théorème de Fermat](https://kenji.blog/p/fermats-last-theorem/) stipule que pour $n \ge 3$, il n'existe pas de triplet d'entiers positifs $(x, y, z)$ satisfaisant $x^n + y^n = z^n$. Il a été prouvé par [Andrew Wiles](https://kenji.blog/p/wiles/) en 1995, mais des mathématiques extrêmement avancées et complexes ont été utilisées.
+[Le dernier théorème de Fermat](https://kenji.blog/fr/p/fermats-last-theorem/) stipule que pour $n \ge 3$, il n'existe pas de triplet d'entiers positifs $(x, y, z)$ satisfaisant $x^n + y^n = z^n$. Il a été prouvé par [Andrew Wiles](https://kenji.blog/fr/p/wiles/) en 1995, mais des mathématiques extrêmement avancées et complexes ont été utilisées.
 
 Si nous supposons que la conjecture ABC est vraie, étonnamment, le dernier théorème de Fermat (au moins lorsque $n$ est suffisamment grand) peut être prouvé en quelques lignes seulement.
 
@@ -92,6 +92,6 @@ En 2021, l'article du professeur Mochizuki a été officiellement publié dans "
 
 # Conclusion et perspectives d'avenir
 
-[La conjecture ABC](https://kenji.blog/p/abc-conjecture/) et la théorie inter-universelle de Teichmüller sont l'un des plus grands drames des mathématiques du 21e siècle. La profondeur insondable des concepts les plus simples appris à l'école primaire, l'addition et la multiplication, met actuellement à l'épreuve les limites de l'intelligence humaine.
+[La conjecture ABC](https://kenji.blog/fr/p/abc-conjecture/) et la théorie inter-universelle de Teichmüller sont l'un des plus grands drames des mathématiques du 21e siècle. La profondeur insondable des concepts les plus simples appris à l'école primaire, l'addition et la multiplication, met actuellement à l'épreuve les limites de l'intelligence humaine.
 
 La théorie IUT ouvre-t-elle véritablement un nouvel horizon mathématique, ou nécessite-t-elle des corrections supplémentaires ? Il faudra encore beaucoup de temps et de recherche par une nouvelle génération de mathématiciens avant qu'une conclusion finale ne soit atteinte. Cependant, la vision de **connecter différents univers mathématiques** proposée par cette théorie continuera sans aucun doute à fournir une grande inspiration pour le développement futur des mathématiques.

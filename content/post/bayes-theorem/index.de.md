@@ -16,13 +16,13 @@ tags:
 
 ## Einleitung: "Überzeugungen aktualisieren" in einer unsicheren Welt
 
-Die Welt, in der wir leben, ist voller Unsicherheiten. Von der Wahrscheinlichkeit, dass es morgen regnet, über die Wahrscheinlichkeit, dass ein neues Medikament gegen eine bestimmte Krankheit wirksam ist, bis hin zur Chance, dass eine empfangene E-Mail Spam ist – wir treffen ständig Entscheidungen auf der Grundlage unvollständiger Informationen. Ein mächtiger Rahmen, um diese Unsicherheit mathematisch zu handhaben und **unsere Vorhersagen jedes Mal zu aktualisieren, wenn neue Informationen (Beweise) gewonnen werden**, ist der [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/p/bayes-theorem/)).
+Die Welt, in der wir leben, ist voller Unsicherheiten. Von der Wahrscheinlichkeit, dass es morgen regnet, über die Wahrscheinlichkeit, dass ein neues Medikament gegen eine bestimmte Krankheit wirksam ist, bis hin zur Chance, dass eine empfangene E-Mail Spam ist – wir treffen ständig Entscheidungen auf der Grundlage unvollständiger Informationen. Ein mächtiger Rahmen, um diese Unsicherheit mathematisch zu handhaben und **unsere Vorhersagen jedes Mal zu aktualisieren, wenn neue Informationen (Beweise) gewonnen werden**, ist der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/de/p/bayes-theorem/)).
 
 Dieses Theorem wurde von Thomas Bayes, einem englischen Geistlichen und Mathematiker des 18. Jahrhunderts, entdeckt und ist zu einer grundlegenden Theorie geworden, die der modernen KI (Künstliche Intelligenz) und dem maschinellen Lernen zugrunde liegt. In diesem Artikel werden wir tief in alles eintauchen, von der grundlegenden Mathematik des Satzes von Bayes bis hin zu kontraintuitiven Wahrscheinlichkeitsparadoxien und wie er in der modernen Technologie angewendet wird.
 
 ## Mathematische Formulierung des Satzes von Bayes
 
-Der [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) ist ein Theorem, das verwendet wird, um die Wahrscheinlichkeit $P(A|B)$ eines Ereignisses $A$ unter der Bedingung, dass ein Ereignis $B$ eingetreten ist, basierend auf der inversen bedingten Wahrscheinlichkeit $P(B|A)$ und anderen Faktoren zu berechnen. Obwohl die Formel extrem einfach ist, sind ihre Auswirkungen tiefgreifend.
+Der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) ist ein Theorem, das verwendet wird, um die Wahrscheinlichkeit $P(A|B)$ eines Ereignisses $A$ unter der Bedingung, dass ein Ereignis $B$ eingetreten ist, basierend auf der inversen bedingten Wahrscheinlichkeit $P(B|A)$ und anderen Faktoren zu berechnen. Obwohl die Formel extrem einfach ist, sind ihre Auswirkungen tiefgreifend.
 
 $$
 P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
@@ -35,7 +35,7 @@ Jedem Term in dieser Gleichung wird aus der Perspektive der statistischen "Aktua
 - **Marginale Likelihood / Evidenz (Marginal Likelihood / Evidence)** $P(B)$ : Die Gesamtwahrscheinlichkeit, Beweis $B$ zu beobachten, unabhängig davon, ob Ereignis $A$ wahr oder falsch ist. Sie fungiert als Normalisierungskonstante.
 - **A-posteriori-Wahrscheinlichkeit (Posterior Probability)** $P(A|B)$ : Die Wahrscheinlichkeit von Ereignis $A$ nach Berücksichtigung des neuen Beweises $B$. Unsere aktualisierte Überzeugung.
 
-Kurz gesagt, der [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) kann als mathematische Formulierung des Prozesses beschrieben werden, **unsere Überzeugung auf eine "A-posteriori-Wahrscheinlichkeit" zu aktualisieren, indem die "A-priori-Wahrscheinlichkeit" mit "wie gut der neue Beweis passt (Likelihood)" multipliziert wird**.
+Kurz gesagt, der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) kann als mathematische Formulierung des Prozesses beschrieben werden, **unsere Überzeugung auf eine "A-posteriori-Wahrscheinlichkeit" zu aktualisieren, indem die "A-priori-Wahrscheinlichkeit" mit "wie gut der neue Beweis passt (Likelihood)" multipliziert wird**.
 
 ## Abweichung von der Intuition: Das Paradoxon der "Falsch-Positiven" (Beispiel eines medizinischen Tests)
 
@@ -47,7 +47,7 @@ Dieser Test hat jedoch einen leichten Fehler: Selbst wenn eine gesunde Person oh
 
 Angenommen, Sie machen diesen Test zufällig und erhalten ein **"Positives"** Ergebnis. Wie hoch ist die Wahrscheinlichkeit, dass Sie diese Krankheit tatsächlich haben?
 
-Viele Menschen neigen zu der Annahme: "Da der Test zu $99\%$ genau ist, besteht eine Chance von $90\%$ oder mehr, dass ich die Krankheit habe." Lassen Sie uns dies jedoch mit dem [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) berechnen.
+Viele Menschen neigen zu der Annahme: "Da der Test zu $99\%$ genau ist, besteht eine Chance von $90\%$ oder mehr, dass ich die Krankheit habe." Lassen Sie uns dies jedoch mit dem [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) berechnen.
 
 Wir wollen $P(\text{Krankheit}|\text{Positiv})$ finden.
 
@@ -67,7 +67,7 @@ P(\text{Positiv}) &= P(\text{Positiv}|\text{Krankheit}) \cdot P(\text{Krankheit}
 \end{aligned}
 $$
 
-Als nächstes wenden wir den [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) an.
+Als nächstes wenden wir den [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) an.
 
 $$
 \begin{aligned}
@@ -79,7 +79,7 @@ $$
 
 Überraschenderweise beträgt die Wahrscheinlichkeit, dass Sie die Krankheit tatsächlich haben, selbst bei einem positiven Testergebnis **nur etwa $16.7\%$**. Die restlichen $83.3\%$ sind Fälle von "gesunden Menschen, die fälschlicherweise als positiv beurteilt wurden" (Falsch-Positive). Dies liegt daran, dass die ursprüngliche Prävalenz der Krankheit ($1\%$) sehr niedrig ist, sodass die "Falsch-Positiven aus der großen gesunden Bevölkerung" die kleine Anzahl der "wirklich kranken Menschen" überwältigend übertreffen.
 
-Auf diese Weise korrigiert der [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) mathematisch die Fallen, in die unsere Intuition leicht tappt, und dient als mächtiges Werkzeug, um ruhige Urteile zu fällen.
+Auf diese Weise korrigiert der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) mathematisch die Fallen, in die unsere Intuition leicht tappt, und dient als mächtiges Werkzeug, um ruhige Urteile zu fällen.
 
 ```mermaid
 flowchart TD
@@ -100,7 +100,7 @@ flowchart TD
 
 ## Anwendung des Satzes von Bayes in KI und Maschinellem Lernen
 
-Der [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) ist mehr als nur ein Wahrscheinlichkeitsrätsel; er spielt eine entscheidende Rolle in der modernen Datenwissenschaft und Künstlichen Intelligenz (KI). Denn der eigentliche Prozess des Lernens von Mustern aus großen Datenmengen und der Vorhersage unbekannter Daten kann als "Maximierung der A-posteriori-Wahrscheinlichkeit" formuliert werden.
+Der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) ist mehr als nur ein Wahrscheinlichkeitsrätsel; er spielt eine entscheidende Rolle in der modernen Datenwissenschaft und Künstlichen Intelligenz (KI). Denn der eigentliche Prozess des Lernens von Mustern aus großen Datenmengen und der Vorhersage unbekannter Daten kann als "Maximierung der A-posteriori-Wahrscheinlichkeit" formuliert werden.
 
 ### 1. Naive Bayes Klassifikator
 
@@ -112,7 +112,7 @@ Er wird als "naiv" bezeichnet, weil er die starke Annahme trifft, dass jedes Mer
 
 In Systemen, in denen mehrere Variablen kompliziert miteinander verflochten sind, drücken Bayessche Netze die Abhängigkeiten zwischen den Variablen als Graphenstruktur (Gerichteter azyklischer Graph) aus, um Schlussfolgerungen unter Unsicherheit durchzuführen.
 
-Zum Beispiel wird in der medizinischen Diagnose-KI der probabilistische Einfluss von "Alter des Patienten", "Lebensgewohnheiten" und "genetischen Faktoren" auf eine "bestimmte Krankheit" modelliert und dann der Einfluss dieser Krankheit auf "auftretende Symptome" verknüpft. Jedes Mal, wenn ein neues Symptom (Beweis) eingegeben wird, werden die Wahrscheinlichkeiten im gesamten Netzwerk gemäß dem [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) aktualisiert, wodurch auf den wahrscheinlichsten Namen der Krankheit geschlossen wird. Dies wird in einer Vielzahl von Bereichen eingesetzt, wie z. B. bei der Situationsbeurteilung in selbstfahrenden Autos und bei der Vorhersage von Finanzmärkten.
+Zum Beispiel wird in der medizinischen Diagnose-KI der probabilistische Einfluss von "Alter des Patienten", "Lebensgewohnheiten" und "genetischen Faktoren" auf eine "bestimmte Krankheit" modelliert und dann der Einfluss dieser Krankheit auf "auftretende Symptome" verknüpft. Jedes Mal, wenn ein neues Symptom (Beweis) eingegeben wird, werden die Wahrscheinlichkeiten im gesamten Netzwerk gemäß dem [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) aktualisiert, wodurch auf den wahrscheinlichsten Namen der Krankheit geschlossen wird. Dies wird in einer Vielzahl von Bereichen eingesetzt, wie z. B. bei der Situationsbeurteilung in selbstfahrenden Autos und bei der Vorhersage von Finanzmärkten.
 
 ```mermaid
 flowchart LR
@@ -145,14 +145,14 @@ In der Geschichte der Statistik sind zwei große Denkschulen in der Frage aufein
 
 Im Frequentismus wird Wahrscheinlichkeit als "die relative Häufigkeit, mit der ein Ereignis auftritt, wenn derselbe Versuch unendlich oft wiederholt wird" definiert. Zu sagen, dass die Wahrscheinlichkeit, dass eine Münze auf Kopf landet, bei $50\%$ liegt, bedeutet, dass bei unendlich vielen Würfen genau die Hälfte Kopf sein wird. In dieser Haltung existiert eine wahre, feste Wahrscheinlichkeit für das Ereignis selbst und lässt dem Beobachter keinen Raum für eine "Überzeugung".
 
-Andererseits wird Wahrscheinlichkeit im Bayesianismus als **"der Grad der Überzeugung des Beobachters (subjektive Wahrscheinlichkeit)"** behandelt. Eine Regenwahrscheinlichkeit von $70\%$ für morgen repräsentiert den "Grad des Vertrauens" des Wetterdienstes auf der Grundlage verfügbarer Wetterdaten (Beweise). Wenn neue Daten (z. B. ein plötzlicher Abfall des Luftdrucks) beobachtet werden, wird dieses Vertrauen gemäß dem [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) aktualisiert.
+Andererseits wird Wahrscheinlichkeit im Bayesianismus als **"der Grad der Überzeugung des Beobachters (subjektive Wahrscheinlichkeit)"** behandelt. Eine Regenwahrscheinlichkeit von $70\%$ für morgen repräsentiert den "Grad des Vertrauens" des Wetterdienstes auf der Grundlage verfügbarer Wetterdaten (Beweise). Wenn neue Daten (z. B. ein plötzlicher Abfall des Luftdrucks) beobachtet werden, wird dieses Vertrauen gemäß dem [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) aktualisiert.
 
 Der Frequentismus dominierte einen Großteil des 20. Jahrhunderts, aber in der modernen Ära, in der sich die Rechenleistung von Computern drastisch verbessert hat, wurde der flexible und praktische Ansatz des Bayesianismus neu bewertet und wurde zu einer der treibenden Kräfte hinter dem KI-Boom.
 
 ## Fazit: Weiter lernen und aktualisieren
 
-Der [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) bietet eine Art Denkrahmen, der über eine bloße mathematische Formel hinausgeht.
+Der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) bietet eine Art Denkrahmen, der über eine bloße mathematische Formel hinausgeht.
 
-Wir alle haben "A-priori-Wahrscheinlichkeiten (anfängliche Überzeugungen)", die auf vergangenen Erfahrungen und Vorurteilen basieren. Das ist nicht unbedingt etwas Schlechtes; es ist ein Ausgangspunkt, um die Welt effizient wahrzunehmen. Wichtig ist jedoch, **die Flexibilität zu haben, die eigenen Überzeugungen anmutig zu aktualisieren (auf A-posteriori-Wahrscheinlichkeit aktualisieren), genau wie der [Satz von Bayes](https://kenji.blog/p/bayes-theorem/), anstatt die Augen zu verschließen, wenn man mit neuen Fakten und Beweisen konfrontiert wird**.
+Wir alle haben "A-priori-Wahrscheinlichkeiten (anfängliche Überzeugungen)", die auf vergangenen Erfahrungen und Vorurteilen basieren. Das ist nicht unbedingt etwas Schlechtes; es ist ein Ausgangspunkt, um die Welt effizient wahrzunehmen. Wichtig ist jedoch, **die Flexibilität zu haben, die eigenen Überzeugungen anmutig zu aktualisieren (auf A-posteriori-Wahrscheinlichkeit aktualisieren), genau wie der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/), anstatt die Augen zu verschließen, wenn man mit neuen Fakten und Beweisen konfrontiert wird**.
 
-Genauso wie KI durch den Konsum von Daten intelligenter wird, sollten auch wir Menschen neue Informationen als Beweise aufnehmen und uns ständig aktualisieren, um ein genaueres Verständnis der Welt zu erreichen. Vielleicht lässt sich sagen, dass der [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) eine mathematische Darstellung des "Wesens der Intelligenz" selbst ist.
+Genauso wie KI durch den Konsum von Daten intelligenter wird, sollten auch wir Menschen neue Informationen als Beweise aufnehmen und uns ständig aktualisieren, um ein genaueres Verständnis der Welt zu erreichen. Vielleicht lässt sich sagen, dass der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) eine mathematische Darstellung des "Wesens der Intelligenz" selbst ist.

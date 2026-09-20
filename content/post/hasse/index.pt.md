@@ -17,21 +17,21 @@ tags:
 
 ## 1. Introdução: Conectando o local e o global
 
-No mundo da matemática, particularmente na teoria dos números, muitos leitores podem ter ouvido falar do "princípio local-global". A figura central que estabeleceu este conceito profundo e liderou poderosamente a teoria algébrica dos números do século XX foi o matemático alemão **[Helmut Hasse](https://kenji.blog/p/hasse/)** (1898–1979). Ele elevou a teoria dos números p-ádicos, iniciada por seu mentor [Kurt Hensel](https://kenji.blog/p/hensel/), a uma ferramenta poderosa, construindo estruturas cruciais na matemática moderna.
+No mundo da matemática, particularmente na teoria dos números, muitos leitores podem ter ouvido falar do "princípio local-global". A figura central que estabeleceu este conceito profundo e liderou poderosamente a teoria algébrica dos números do século XX foi o matemático alemão **[Helmut Hasse](https://kenji.blog/pt/p/hasse/)** (1898–1979). Ele elevou a teoria dos números p-ádicos, iniciada por seu mentor [Kurt Hensel](https://kenji.blog/pt/p/hensel/), a uma ferramenta poderosa, construindo estruturas cruciais na matemática moderna.
 
 Neste artigo, aprofundaremos os episódios da vida turbulenta de Hasse e suas brilhantes realizações matemáticas. O **Princípio de Hasse** que ele defendeu tornou-se um conceito indispensável na matemática moderna, continuando a inspirar muitos matemáticos até hoje.
 
 ## 2. Antecedentes e primeiros anos: De Kassel à Marinha
 
-[Helmut Hasse](https://kenji.blog/p/hasse/) nasceu em 25 de agosto de 1898 na cidade de Kassel, no Império Alemão. O seu pai era juiz, e ele cresceu num ambiente intelectual e rigoroso. Embora Hasse tenha demonstrado um talento extraordinário para a matemática desde tenra idade, a sua juventude foi profundamente afetada pela eclosão da Primeira Guerra Mundial.
+[Helmut Hasse](https://kenji.blog/pt/p/hasse/) nasceu em 25 de agosto de 1898 na cidade de Kassel, no Império Alemão. O seu pai era juiz, e ele cresceu num ambiente intelectual e rigoroso. Embora Hasse tenha demonstrado um talento extraordinário para a matemática desde tenra idade, a sua juventude foi profundamente afetada pela eclosão da Primeira Guerra Mundial.
 
 Em 1915, ainda adolescente, Hasse ingressou na Marinha Imperial Alemã e serviu a bordo de um navio de guerra. Mesmo na vida militar dura e incessantemente dilacerada pela guerra, a sua paixão pela matemática nunca arrefeceu. Diz-se que durante cada licença, lia avidamente livros de matemática e trabalhava de forma independente em cálculos, mantendo uma sede inesgotável de aprendizagem.
 
-## 3. Göttingen e Marburgo: Encontro com [Kurt Hensel](https://kenji.blog/p/hensel/)
+## 3. Göttingen e Marburgo: Encontro com [Kurt Hensel](https://kenji.blog/pt/p/hensel/)
 
-Após o fim da guerra em 1918, Hasse matriculou-se oficialmente na Universidade de Göttingen. Naquela época, Göttingen era o ápice mundial da matemática, lar de gigantes como [David Hilbert](https://kenji.blog/p/hilbert/), Edmund Landau e [Emmy Noether](https://kenji.blog/p/noether/). Lá, Hasse encontrou o sopro da matemática de vanguarda, permitindo que seus talentos florescessem ainda mais.
+Após o fim da guerra em 1918, Hasse matriculou-se oficialmente na Universidade de Göttingen. Naquela época, Göttingen era o ápice mundial da matemática, lar de gigantes como [David Hilbert](https://kenji.blog/pt/p/hilbert/), Edmund Landau e [Emmy Noether](https://kenji.blog/pt/p/noether/). Lá, Hasse encontrou o sopro da matemática de vanguarda, permitindo que seus talentos florescessem ainda mais.
 
-Mais tarde, Hasse transferiu-se para a Universidade de Marburgo, onde teve um encontro fatídico com **[Kurt Hensel](https://kenji.blog/p/hensel/)**, que se tornaria o seu mentor para toda a vida. Hensel foi o descobridor de um sistema numérico completamente novo: os números p-ádicos. Enquanto muitos matemáticos da época viam os números p-ádicos como meras curiosidades matemáticas, Hasse reconheceu imediatamente o imenso potencial deste novo conceito e o refinou para transformá-lo numa arma poderosa para a sua própria investigação.
+Mais tarde, Hasse transferiu-se para a Universidade de Marburgo, onde teve um encontro fatídico com **[Kurt Hensel](https://kenji.blog/pt/p/hensel/)**, que se tornaria o seu mentor para toda a vida. Hensel foi o descobridor de um sistema numérico completamente novo: os números p-ádicos. Enquanto muitos matemáticos da época viam os números p-ádicos como meras curiosidades matemáticas, Hasse reconheceu imediatamente o imenso potencial deste novo conceito e o refinou para transformá-lo numa arma poderosa para a sua própria investigação.
 
 ## 4. O que são os números p-ádicos? Um novo sistema numérico
 
@@ -91,7 +91,7 @@ $$
 |N - (q + 1)| \le 2\sqrt{q}
 $$
 
-Esta bela desigualdade foi mais tarde estendida a curvas algébricas gerais pelo seu próprio aluno [André Weil](https://kenji.blog/p/weil/) (as Conjeturas de Weil) e finalmente resolvida por Pierre Deligne, marcando um ponto de partida crucial numa grande história da matemática.
+Esta bela desigualdade foi mais tarde estendida a curvas algébricas gerais pelo seu próprio aluno [André Weil](https://kenji.blog/pt/p/weil/) (as Conjeturas de Weil) e finalmente resolvida por Pierre Deligne, marcando um ponto de partida crucial numa grande história da matemática.
 
 ## 9. Contribuição para a Teoria dos Corpos de Classes: Teoria Local e Reciprocidade de Artin
 
@@ -99,9 +99,9 @@ Ao discutir as realizações de Hasse, a sua enorme contribuição para a **Teor
 
 Na demonstração da "Lei de Reciprocidade" proposta por Emil Artin, Hasse desempenhou um papel de vital importância. Utilizando métodos analíticos e a teoria dos números p-ádicos, Hasse ofereceu conselhos cruciais a Artin, contribuindo grandemente para a conclusão da demonstração. O próprio Hasse também desempenhou um papel central na construção da Teoria Local dos Corpos de Classes, reconstruindo a teoria global dos corpos de classes a partir da perspetiva dos corpos locais.
 
-## 10. Interação com [Emmy Noether](https://kenji.blog/p/noether/) e contemporâneos
+## 10. Interação com [Emmy Noether](https://kenji.blog/pt/p/noether/) e contemporâneos
 
-Uma figura particularmente notável nas interações académicas de Hasse é **[Emmy Noether](https://kenji.blog/p/noether/)**, frequentemente chamada a mãe da álgebra abstrata. Hasse ressoou profundamente com a abordagem abstrata e estrutural de Noether, incorporando ativamente o seu quadro de álgebra não comutativa na sua própria investigação na teoria dos números.
+Uma figura particularmente notável nas interações académicas de Hasse é **[Emmy Noether](https://kenji.blog/pt/p/noether/)**, frequentemente chamada a mãe da álgebra abstrata. Hasse ressoou profundamente com a abordagem abstrata e estrutural de Noether, incorporando ativamente o seu quadro de álgebra não comutativa na sua própria investigação na teoria dos números.
 
 Como resultado desta colaboração, o **Teorema de Albert-Brauer-Hasse-Noether**, provado por Hasse, Noether, Richard Brauer e A. A. Albert, ergue-se como uma realização monumental na teoria das álgebras. Este é também um belo exemplo do princípio local-global.
 
@@ -121,6 +121,6 @@ Hasse também depositou a sua paixão na edição da revista especializada em ma
 
 ## 14. Conclusão: Legado para a matemática moderna
 
-[Helmut Hasse](https://kenji.blog/p/hasse/) pôs fim à sua vida em 1979. O facto de ele ter sempre integrado magistralmente os conceitos opostos de "concreto e abstrato" e "local e global" é comprovado pelos numerosos teoremas que deixou para trás.
+[Helmut Hasse](https://kenji.blog/pt/p/hasse/) pôs fim à sua vida em 1979. O facto de ele ter sempre integrado magistralmente os conceitos opostos de "concreto e abstrato" e "local e global" é comprovado pelos numerosos teoremas que deixou para trás.
 
 A sua abordagem p-ádica e o Princípio de Hasse expandiram as suas aplicações numa vasta gama de áreas, incluindo a geometria aritmética moderna e a criptografia. A figura de um académico que continuou a procurar a verdade enquanto sobrevivia a uma época turbulenta, e as belas teorias matemáticas que ele teceu, continuarão certamente a ser um guia para aqueles que aspiram a estudar matemática por muito tempo.

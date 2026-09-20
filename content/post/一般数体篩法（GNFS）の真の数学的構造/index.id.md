@@ -157,7 +157,7 @@ Lebih jauh lagi, karena pasangan asli $(a, b)$ dibentuk dengan cara yang berkore
 Sekarang, tinggal berdoa agar $X$ dan $Y$ bukan merupakan solusi trivial ($X \equiv \pm Y$), lalu kita hitung:
 **$\gcd(X - Y, N)$**
 
-Jika itu adalah solusi non-trivial, algoritma [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an akan melesat dalam 0,001 detik, dan bilangan prima rahasia $p$ dan $q$, yang merupakan jantung kriptografi RSA, akan dicetak di layar keluaran.
+Jika itu adalah solusi non-trivial, algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an akan melesat dalam 0,001 detik, dan bilangan prima rahasia $p$ dan $q$, yang merupakan jantung kriptografi RSA, akan dicetak di layar keluaran.
 
 ---
 

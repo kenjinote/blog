@@ -12,13 +12,13 @@ tags: ["Kiyosi Ito", "Persamaan Diferensial Stokastik", "Rekayasa Keuangan", "Se
 
 Dunia kita penuh dengan peristiwa yang tidak dapat diprediksi dan ketidakpastian. Dari fluktuasi harga saham dan pergerakan partikel di udara hingga aliran sungai dan proses pembelajaran jaringan saraf, fenomena yang diatur oleh keacakan tidak terhitung jumlahnya. Alat yang ampuh untuk mendeskripsikan, memprediksi, dan menganalisis "pergerakan acak" semacam itu secara matematis dan ketat adalah **Persamaan Diferensial Stokastik (SDE)** .
 
-Dan matematikawan besar Jepang **[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/)**-lah yang membangun teori persamaan diferensial stokastik ini dan mendirikan monumen yang dikenal sebagai **Lemma Ito** atau **Rumus Ito** . Dalam artikel ini, kita menyelidiki lebih dalam episode kehidupannya dan inti dari pencapaian matematisnya, yang terus memberikan dampak luar biasa tidak hanya pada dunia matematika tetapi juga pada ekonomi, fisika, dan teknik.
+Dan matematikawan besar Jepang **[Kiyosi Ito](https://kenji.blog/id/p/ito-kiyosi/)**-lah yang membangun teori persamaan diferensial stokastik ini dan mendirikan monumen yang dikenal sebagai **Lemma Ito** atau **Rumus Ito** . Dalam artikel ini, kita menyelidiki lebih dalam episode kehidupannya dan inti dari pencapaian matematisnya, yang terus memberikan dampak luar biasa tidak hanya pada dunia matematika tetapi juga pada ekonomi, fisika, dan teknik.
 
-## 2. Kehidupan [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) dan Latar Belakang Sejarah
+## 2. Kehidupan [Kiyosi Ito](https://kenji.blog/id/p/ito-kiyosi/) dan Latar Belakang Sejarah
 
 ### 2.1 Kehidupan Awal dan Kebangkitan Terhadap Matematika
 
-[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) lahir pada 7 September 1915, di Distrik Inabe (sekarang Kota Inabe), Prefektur Mie. Unggul dalam bidang akademik sejak usia muda, ia melewati Sekolah Menengah Atas Kedelapan (sekarang Universitas Nagoya) menuju Departemen Matematika di Fakultas Sains di Universitas Kekaisaran Tokyo (sekarang Universitas Tokyo).
+[Kiyosi Ito](https://kenji.blog/id/p/ito-kiyosi/) lahir pada 7 September 1915, di Distrik Inabe (sekarang Kota Inabe), Prefektur Mie. Unggul dalam bidang akademik sejak usia muda, ia melewati Sekolah Menengah Atas Kedelapan (sekarang Universitas Nagoya) menuju Departemen Matematika di Fakultas Sains di Universitas Kekaisaran Tokyo (sekarang Universitas Tokyo).
 
 Pada saat itu di komunitas matematika Jepang, matematikawan besar seperti Teiji Takagi (pendiri Teori Medan Kelas) sedang melakukan penelitian kelas dunia. Namun, teori probabilitas masih sering diperlakukan sebagai "bidat matematika" atau sekadar "bidang terapan," dan statusnya sebagai matematika murni belum terbentuk. Namun demikian, Ito sangat terpukul oleh *Dasar-dasar Teori Probabilitas*, yang diterbitkan oleh Andrey Kolmogorov pada tahun 1933. Dengan menggunakan integrasi Lebesgue dan teori ukuran, Kolmogorov mengaksiomakan teori probabilitas, menempatkannya pada fondasi matematika yang ketat.
 
@@ -38,7 +38,7 @@ Namun, proses Wiener memiliki sifat matematis yang fatal: proses ini **"kontinu 
 
 ### 3.2 Kelahiran Integral Ito
 
-Untuk memecahkan masalah ini, [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) membangun konsep integrasi baru. Ini adalah **Integral Ito** .
+Untuk memecahkan masalah ini, [Kiyosi Ito](https://kenji.blog/id/p/ito-kiyosi/) membangun konsep integrasi baru. Ini adalah **Integral Ito** .
 
 $$
 \int_0^T f(t, \omega) dW_t(\omega)
@@ -71,11 +71,11 @@ $$
 
 Suku di dalam kurung di sisi kanan persamaan ini adalah tepat **suku Ito** . Suku ini menunjukkan bahwa kombinasi ketidakpastian (varians $\sigma^2$) dan kelengkungan fungsi (turunan kedua) menghasilkan efek dorongan ke atas (atau ke bawah) rata-rata pada keseluruhan sistem. Ini adalah hasil yang mendalam, berlawanan dengan intuisi, dan benar-benar layak disebut "rumus Newton-Leibniz" dalam teori probabilitas.
 
-## 4. Filosofi dan Kepribadian [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/)
+## 4. Filosofi dan Kepribadian [Kiyosi Ito](https://kenji.blog/id/p/ito-kiyosi/)
 
 ### 4.1 "Keindahan" dalam Matematika
 
-[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) sangat mencintai "keindahan" pada fondasi matematika. Ia sering mengibaratkan penelitian matematika seperti penciptaan puisi atau musik. "Sebuah teorema matematika yang sangat baik mengungkapkan struktur sederhana dan indah di balik fenomena yang kompleks," katanya. Baginya, persamaan diferensial stokastik bukan sekadar alat hitung, tetapi karya seni untuk mengekspresikan harmoni yang mendalam dalam keacakan alam.
+[Kiyosi Ito](https://kenji.blog/id/p/ito-kiyosi/) sangat mencintai "keindahan" pada fondasi matematika. Ia sering mengibaratkan penelitian matematika seperti penciptaan puisi atau musik. "Sebuah teorema matematika yang sangat baik mengungkapkan struktur sederhana dan indah di balik fenomena yang kompleks," katanya. Baginya, persamaan diferensial stokastik bukan sekadar alat hitung, tetapi karya seni untuk mengekspresikan harmoni yang mendalam dalam keacakan alam.
 
 ### 4.2 Kegilaan Wall Street dan Kebingungannya Sendiri
 
@@ -101,10 +101,10 @@ graph TD
     E -->|"Penurunan Gradien Stokastik (SGD)"| E1["Pembelajaran Mesin & Deep Learning (AI)"]
 ```
 
-Terutama dalam beberapa tahun terakhir, teori Ito kembali menjadi sorotan di bidang pembelajaran mesin. Optimalisasi proses pembelajaran dalam pembelajaran mendalam (proses di mana noise ditambahkan dalam penurunan gradien stokastik) dan **Model Difusi (Diffusion Models)** yang digunakan dalam AI pembuatan gambar adalah aplikasi langsung dari teori Ito, secara harfiah memecahkan persamaan diferensial stokastik dalam waktu mundur. Penelitian [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) mendukung fondasi matematis dari revolusi AI modern.
+Terutama dalam beberapa tahun terakhir, teori Ito kembali menjadi sorotan di bidang pembelajaran mesin. Optimalisasi proses pembelajaran dalam pembelajaran mendalam (proses di mana noise ditambahkan dalam penurunan gradien stokastik) dan **Model Difusi (Diffusion Models)** yang digunakan dalam AI pembuatan gambar adalah aplikasi langsung dari teori Ito, secara harfiah memecahkan persamaan diferensial stokastik dalam waktu mundur. Penelitian [Kiyosi Ito](https://kenji.blog/id/p/ito-kiyosi/) mendukung fondasi matematis dari revolusi AI modern.
 
 ## 6. Kesimpulan: Hadiah Gauss Pertama dan Warisan Abadi
 
-Pada tahun 2006, Kongres Internasional Matematikawan (ICM) menetapkan **Hadiah Gauss** untuk menghormati penerapan dan kontribusi matematika pada masyarakat, dan memilih [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) yang berusia 90 tahun sebagai penerima perdananya. Alasan pemilihannya adalah "meletakkan dasar-dasar teori persamaan diferensial stokastik dan beragam aplikasinya." Secara historis jarang terjadi bahwa pengejaran mendalam terhadap matematika murni menghasilkan dampak yang begitu luas dan praktis pada masyarakat manusia.
+Pada tahun 2006, Kongres Internasional Matematikawan (ICM) menetapkan **Hadiah Gauss** untuk menghormati penerapan dan kontribusi matematika pada masyarakat, dan memilih [Kiyosi Ito](https://kenji.blog/id/p/ito-kiyosi/) yang berusia 90 tahun sebagai penerima perdananya. Alasan pemilihannya adalah "meletakkan dasar-dasar teori persamaan diferensial stokastik dan beragam aplikasinya." Secara historis jarang terjadi bahwa pengejaran mendalam terhadap matematika murni menghasilkan dampak yang begitu luas dan praktis pada masyarakat manusia.
 
-[Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) meninggal pada tahun 2008 pada usia 93 tahun, tetapi namanya selamanya terukir dalam buku-buku pelajaran di seluruh dunia sebagai "Lemma Ito" dan "Integral Ito." Bagi kita yang hidup di dunia yang penuh ketidakpastian, rumus-rumus yang ditinggalkan oleh [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/) akan tetap menjadi mercusuar yang paling indah dan kuat yang menyinari kekacauan.
+[Kiyosi Ito](https://kenji.blog/id/p/ito-kiyosi/) meninggal pada tahun 2008 pada usia 93 tahun, tetapi namanya selamanya terukir dalam buku-buku pelajaran di seluruh dunia sebagai "Lemma Ito" dan "Integral Ito." Bagi kita yang hidup di dunia yang penuh ketidakpastian, rumus-rumus yang ditinggalkan oleh [Kiyosi Ito](https://kenji.blog/id/p/ito-kiyosi/) akan tetap menjadi mercusuar yang paling indah dan kuat yang menyinari kekacauan.

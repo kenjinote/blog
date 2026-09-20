@@ -10,7 +10,7 @@ tags: ["Teorema de los Cuatro Colores", "Teoría de Grafos", "Prueba asistida po
 
 ## 1. ¿Qué es el problema de los cuatro colores?
 
-El problema de los cuatro colores ([Four Color Theorem](https://kenji.blog/p/four-color-theorem/)) es uno de los problemas más famosos y fascinantes de las matemáticas, especialmente en la teoría de grafos y la topología. Su afirmación es muy simple y tan intuitiva que incluso un estudiante de primaria puede entenderla. Afirma que "para cualquier mapa en un plano, un máximo de **4 colores** es suficiente para colorear las regiones adyacentes de modo que tengan colores diferentes".
+El problema de los cuatro colores ([Four Color Theorem](https://kenji.blog/es/p/four-color-theorem/)) es uno de los problemas más famosos y fascinantes de las matemáticas, especialmente en la teoría de grafos y la topología. Su afirmación es muy simple y tan intuitiva que incluso un estudiante de primaria puede entenderla. Afirma que "para cualquier mapa en un plano, un máximo de **4 colores** es suficiente para colorear las regiones adyacentes de modo que tengan colores diferentes".
 
 Aquí, "adyacentes" significa que comparten un límite, no solo un punto. Si solo se tocan en un punto, se pueden colorear con el mismo color sin problema. Esta hipótesis intuitiva fue propuesta por primera vez en 1852 por Francis Guthrie. Mientras coloreaba un mapa de los condados de Inglaterra, se dio cuenta de que sin importar cuán complejos fueran los límites, cuatro colores eran suficientes para colorear el mapa.
 
@@ -67,7 +67,7 @@ La exploración de este problema nos enseña cuán poderosa es la intuición hum
 
 ## 1. ¿Qué es el problema de los cuatro colores?
 
-El problema de los cuatro colores ([Four Color Theorem](https://kenji.blog/p/four-color-theorem/)) es uno de los problemas más famosos y fascinantes de las matemáticas, especialmente en la teoría de grafos y la topología. Su afirmación es muy simple y tan intuitiva que incluso un estudiante de primaria puede entenderla. Afirma que "para cualquier mapa en un plano, un máximo de **4 colores** es suficiente para colorear las regiones adyacentes de modo que tengan colores diferentes".
+El problema de los cuatro colores ([Four Color Theorem](https://kenji.blog/es/p/four-color-theorem/)) es uno de los problemas más famosos y fascinantes de las matemáticas, especialmente en la teoría de grafos y la topología. Su afirmación es muy simple y tan intuitiva que incluso un estudiante de primaria puede entenderla. Afirma que "para cualquier mapa en un plano, un máximo de **4 colores** es suficiente para colorear las regiones adyacentes de modo que tengan colores diferentes".
 
 Aquí, "adyacentes" significa que comparten un límite, no solo un punto. Si solo se tocan en un punto, se pueden colorear con el mismo color sin problema. Esta hipótesis intuitiva fue propuesta por primera vez en 1852 por Francis Guthrie. Mientras coloreaba un mapa de los condados de Inglaterra, se dio cuenta de que sin importar cuán complejos fueran los límites, cuatro colores eran suficientes para colorear el mapa.
 
@@ -124,7 +124,7 @@ La exploración de este problema nos enseña cuán poderosa es la intuición hum
 
 ## 1. ¿Qué es el problema de los cuatro colores?
 
-El problema de los cuatro colores ([Four Color Theorem](https://kenji.blog/p/four-color-theorem/)) es uno de los problemas más famosos y fascinantes de las matemáticas, especialmente en la teoría de grafos y la topología. Su afirmación es muy simple y tan intuitiva que incluso un estudiante de primaria puede entenderla. Afirma que "para cualquier mapa en un plano, un máximo de **4 colores** es suficiente para colorear las regiones adyacentes de modo que tengan colores diferentes".
+El problema de los cuatro colores ([Four Color Theorem](https://kenji.blog/es/p/four-color-theorem/)) es uno de los problemas más famosos y fascinantes de las matemáticas, especialmente en la teoría de grafos y la topología. Su afirmación es muy simple y tan intuitiva que incluso un estudiante de primaria puede entenderla. Afirma que "para cualquier mapa en un plano, un máximo de **4 colores** es suficiente para colorear las regiones adyacentes de modo que tengan colores diferentes".
 
 Aquí, "adyacentes" significa que comparten un límite, no solo un punto. Si solo se tocan en un punto, se pueden colorear con el mismo color sin problema. Esta hipótesis intuitiva fue propuesta por primera vez en 1852 por Francis Guthrie. Mientras coloreaba un mapa de los condados de Inglaterra, se dio cuenta de que sin importar cuán complejos fueran los límites, cuatro colores eran suficientes para colorear el mapa.
 
@@ -181,7 +181,7 @@ La exploración de este problema nos enseña cuán poderosa es la intuición hum
 
 ## 1. ¿Qué es el problema de los cuatro colores?
 
-El problema de los cuatro colores ([Four Color Theorem](https://kenji.blog/p/four-color-theorem/)) es uno de los problemas más famosos y fascinantes de las matemáticas, especialmente en la teoría de grafos y la topología. Su afirmación es muy simple y tan intuitiva que incluso un estudiante de primaria puede entenderla. Afirma que "para cualquier mapa en un plano, un máximo de **4 colores** es suficiente para colorear las regiones adyacentes de modo que tengan colores diferentes".
+El problema de los cuatro colores ([Four Color Theorem](https://kenji.blog/es/p/four-color-theorem/)) es uno de los problemas más famosos y fascinantes de las matemáticas, especialmente en la teoría de grafos y la topología. Su afirmación es muy simple y tan intuitiva que incluso un estudiante de primaria puede entenderla. Afirma que "para cualquier mapa en un plano, un máximo de **4 colores** es suficiente para colorear las regiones adyacentes de modo que tengan colores diferentes".
 
 Aquí, "adyacentes" significa que comparten un límite, no solo un punto. Si solo se tocan en un punto, se pueden colorear con el mismo color sin problema. Esta hipótesis intuitiva fue propuesta por primera vez en 1852 por Francis Guthrie. Mientras coloreaba un mapa de los condados de Inglaterra, se dio cuenta de que sin importar cuán complejos fueran los límites, cuatro colores eran suficientes para colorear el mapa.
 

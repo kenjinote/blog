@@ -15,7 +15,7 @@ tags:
 
 ## ¿Qué es el teorema de los números primos?
 
-Uno de los resultados más hermosos en el campo de las matemáticas es el **Teorema de los números primos** ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT). Demuestra que los números primos, que a primera vista parecen aparecer de manera irregular y aleatoria, poseen una regularidad sorprendentemente suave cuando se observan macroscópicamente.
+Uno de los resultados más hermosos en el campo de las matemáticas es el **Teorema de los números primos** ([Prime Number Theorem](https://kenji.blog/es/p/prime-number-theorem/), PNT). Demuestra que los números primos, que a primera vista parecen aparecer de manera irregular y aleatoria, poseen una regularidad sorprendentemente suave cuando se observan macroscópicamente.
 
 Específicamente, si definimos la "cantidad de números primos menores o iguales a un número real $x$" como $\pi(x)$ (la función contadora de números primos), el teorema establece que cuando $x$ es muy grande, $\pi(x)$ se aproxima asintóticamente a $x / \ln(x)$.
 
@@ -42,11 +42,11 @@ graph TD;
 
 ## Contexto histórico: De la conjetura de Gauss a la demostración
 
-La historia del teorema de los números primos se remonta a finales del siglo XVIII. El genio matemático [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), con apenas 15 años, se dio cuenta al observar tablas de números primos que la frecuencia de su aparición estaba relacionada con funciones logarítmicas. Por la misma época, [Adrien-Marie Legendre](https://kenji.blog/p/legendre/) también formuló de manera independiente una conjetura similar.
+La historia del teorema de los números primos se remonta a finales del siglo XVIII. El genio matemático [Carl Friedrich Gauss](https://kenji.blog/es/p/gauss/), con apenas 15 años, se dio cuenta al observar tablas de números primos que la frecuencia de su aparición estaba relacionada con funciones logarítmicas. Por la misma época, [Adrien-Marie Legendre](https://kenji.blog/es/p/legendre/) también formuló de manera independiente una conjetura similar.
 
 Sin embargo, no lograron demostrar esto rigurosamente.
 
-El gran avance en la demostración llegó en 1859 con el revolucionario artículo de [Bernhard Riemann](https://kenji.blog/p/riemann/) "Sobre el número de primos menores que una magnitud dada". Riemann presentó un enfoque completamente nuevo, utilizando una función compleja, la **función zeta** $\zeta(s)$, para transformar el problema de la distribución de los números primos en un problema sobre el plano complejo.
+El gran avance en la demostración llegó en 1859 con el revolucionario artículo de [Bernhard Riemann](https://kenji.blog/es/p/riemann/) "Sobre el número de primos menores que una magnitud dada". Riemann presentó un enfoque completamente nuevo, utilizando una función compleja, la **función zeta** $\zeta(s)$, para transformar el problema de la distribución de los números primos en un problema sobre el plano complejo.
 
 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ primo}} \left(1 - \frac{1}{p^s}\right)^{-1} $$
 

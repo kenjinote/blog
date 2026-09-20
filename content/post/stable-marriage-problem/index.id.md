@@ -15,7 +15,7 @@ Bayangkan mahasiswa dipasangkan dengan pembimbing penelitian, satu mahasiswa unt
 
 Namun, beberapa mahasiswa bisa menginginkan pembimbing yang sama, dan pilihan tidak selalu berbalas. Memenuhi pilihan pertama seseorang dapat menggagalkan pilihan pertama orang lain. Jadi, apa arti pencocokan yang “baik”?
 
-**[Masalah pernikahan stabil](https://kenji.blog/p/stable-marriage-problem/)** memberikan kriteria yang jelas. Inti matematikanya adalah pencocokan satu lawan satu antara dua kelompok. Kita memakai A, B, C dan X, Y, Z, tanpa menetapkan gender atau membahas pernikahan nyata.
+**[Masalah pernikahan stabil](https://kenji.blog/id/p/stable-marriage-problem/)** memberikan kriteria yang jelas. Inti matematikanya adalah pencocokan satu lawan satu antara dua kelompok. Kita memakai A, B, C dan X, Y, Z, tanpa menetapkan gender atau membahas pernikahan nyata.
 
 **Stabil bukan berarti semua orang senang.** Stabil berarti tidak ada dua orang yang belum berpasangan satu sama lain tetapi sama-sama lebih memilih satu sama lain daripada pasangan saat ini. Algoritma Gale–Shapley menjamin kondisi ini dengan asumsi berikut.
 

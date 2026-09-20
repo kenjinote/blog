@@ -18,7 +18,7 @@ In this article, we will delve deeply into Fibonacci's turbulent life, the impac
 
 ### Birth in Pisa and the Origin of the Name "Fibonacci"
 
-[Leonardo Fibonacci](https://kenji.blog/p/fibonacci/) was born around 1170 in the Italian city-state of Pisa. Pisa at the time flourished as a center of Mediterranean trade, a prosperous republic with a powerful navy and commercial network. His father, Guglielmo Bonacci, was a wealthy merchant who also worked as a customs official for Pisa.
+[Leonardo Fibonacci](https://kenji.blog/en/p/fibonacci/) was born around 1170 in the Italian city-state of Pisa. Pisa at the time flourished as a center of Mediterranean trade, a prosperous republic with a powerful navy and commercial network. His father, Guglielmo Bonacci, was a wealthy merchant who also worked as a customs official for Pisa.
 
 The name "Fibonacci" was actually not used during his lifetime. It is a coined term created by later historians, abbreviating the Latin "filius Bonacci" (son of Bonacci). He called himself "Leonardo Pisano" (Leonardo of Pisa) or, due to his love for travel, "Bigollo" (meaning wanderer or idler).
 
@@ -152,7 +152,7 @@ Written in 1225, this book is an advanced treatise on Diophantine equations (equ
 
 ### "Practica Geometriae" (Practical Geometry)
 
-Authored in 1220, this book details surveying and geometry. It provided rigorous methods for calculating area and volume, and practical applications of the principles of ancient Greek [Euclide](https://kenji.blog/p/euclid/)an geometry, making it a valuable resource for engineers and surveyors of the time.
+Authored in 1220, this book details surveying and geometry. It provided rigorous methods for calculating area and volume, and practical applications of the principles of ancient Greek [Euclide](https://kenji.blog/en/p/euclid/)an geometry, making it a valuable resource for engineers and surveyors of the time.
 
 ## Modern Society and Fibonacci's Legacy
 
@@ -168,6 +168,6 @@ Surprisingly, his name is frequently heard in the world of finance as well. A te
 
 ## Conclusion
 
-[Leonardo Fibonacci](https://kenji.blog/p/fibonacci/) bridged the knowledge of the Islamic world and Europe, bringing the light of mathematics to the Western world. Without the Arabic numerals he popularized through "Liber Abaci," the subsequent Scientific Revolution and modern digital society might not have existed.
+[Leonardo Fibonacci](https://kenji.blog/en/p/fibonacci/) bridged the knowledge of the Islamic world and Europe, bringing the light of mathematics to the Western world. Without the Arabic numerals he popularized through "Liber Abaci," the subsequent Scientific Revolution and modern digital society might not have existed.
 
 Moreover, the sequence born from the playful "Rabbit Problem" embodies the beauty of pure mathematics and continues to captivate us today as a universal law extending from plant growth to galactic spirals, and even human economic activity. Fibonacci's legacy teaches us across time that mathematics is not just a calculation technique, but a "common language" for unlocking the truths of the universe.

@@ -18,7 +18,7 @@ $$
 
 虽然这个积分本身可以使用 $\arctan(x)$ 来求解，但如果分母变成了更高次的连续多项式，或者错综复杂地混合了正弦和余弦等三角函数，在实函数范围内找到原函数（不定积分）实际上是不可能的。
 
-这时就轮到 **复分析** （复变函数论）中被誉为数学中最优美理论之一的强大定理登场了，那就是 **柯西[留数定理](https://kenji.blog/p/residue-theorem/)** （Cauchy's [Residue Theorem](https://kenji.blog/p/residue-theorem/)）。通过将原本在实数轴（一维）上进行的积分果断扩展到 **复平面** （二维），我们就可以巧妙地解出原本无法计算的实数积分。
+这时就轮到 **复分析** （复变函数论）中被誉为数学中最优美理论之一的强大定理登场了，那就是 **柯西[留数定理](https://kenji.blog/zh-cn/p/residue-theorem/)** （Cauchy's [Residue Theorem](https://kenji.blog/zh-cn/p/residue-theorem/)）。通过将原本在实数轴（一维）上进行的积分果断扩展到 **复平面** （二维），我们就可以巧妙地解出原本无法计算的实数积分。
 
 ## 复积分与奇点
 
@@ -56,9 +56,9 @@ $$
 
 为什么只有 $(z - z_0)^{-1}$ 的系数是特殊的呢？这是因为，如果沿着包围奇点的微小圆 $C$ 对 $\frac{1}{(z - z_0)^n}$ 进行积分，只有当 $n = 1$ 时会留下 $2\pi i$ 这个值，而对于其他所有的 $n$ ，积分结果都为 $0$ 。
 
-## 柯西[留数定理](https://kenji.blog/p/residue-theorem/)
+## 柯西[留数定理](https://kenji.blog/zh-cn/p/residue-theorem/)
 
-将上述概念综合起来，就是 **[留数定理](https://kenji.blog/p/residue-theorem/)** 。如果闭曲线 $C$ 内部存在多个孤立奇点 $z_1, z_2, \dots, z_k$ ，那么沿着 $C$ 的复积分可以按如下方式计算：
+将上述概念综合起来，就是 **[留数定理](https://kenji.blog/zh-cn/p/residue-theorem/)** 。如果闭曲线 $C$ 内部存在多个孤立奇点 $z_1, z_2, \dots, z_k$ ，那么沿着 $C$ 的复积分可以按如下方式计算：
 
 $$
 \oint_C f(z) dz = 2\pi i \sum_{j=1}^{k} \text{Res}(f, z_j)
@@ -68,7 +68,7 @@ $$
 
 ## 应用示例：计算实函数积分
 
-那么，让我们实际使用[留数定理](https://kenji.blog/p/residue-theorem/)来解开开头的积分吧。
+那么，让我们实际使用[留数定理](https://kenji.blog/zh-cn/p/residue-theorem/)来解开开头的积分吧。
 
 $$
 I = \int_{-\infty}^{\infty} \frac{1}{x^2 + 1} dx
@@ -106,8 +106,8 @@ $$
 \text{Res}(f, i) = \lim_{z \to i} (z - i) f(z) = \lim_{z \to i} \frac{1}{z + i} = \frac{1}{2i}
 $$
 
-### 步骤3：应用[留数定理](https://kenji.blog/p/residue-theorem/)
-根据[留数定理](https://kenji.blog/p/residue-theorem/)，闭曲线 $C$ 上的积分为：
+### 步骤3：应用[留数定理](https://kenji.blog/zh-cn/p/residue-theorem/)
+根据[留数定理](https://kenji.blog/zh-cn/p/residue-theorem/)，闭曲线 $C$ 上的积分为：
 
 $$
 \oint_C f(z) dz = 2\pi i \times \text{Res}(f, i) = 2\pi i \times \frac{1}{2i} = \pi
@@ -139,7 +139,7 @@ $$
 \text{Res}(f, ia) = \lim_{z \to ia} (z - ia) \frac{e^{ikz}}{(z - ia)(z + ia)} = \frac{e^{-ka}}{2ia}
 $$
 
-应用[留数定理](https://kenji.blog/p/residue-theorem/)：
+应用[留数定理](https://kenji.blog/zh-cn/p/residue-theorem/)：
 
 $$
 \int_{-\infty}^{\infty} \frac{e^{ikx}}{x^2 + a^2} dx = 2\pi i \times \frac{e^{-ka}}{2ia} = \frac{\pi e^{-ka}}{a}
@@ -153,7 +153,7 @@ $$
 
 ## 分支切割（Branch Cut）与钥匙孔积分
 
-[留数定理](https://kenji.blog/p/residue-theorem/)更高级的应用涉及多值函数（对一个输入有多个输出的函数）的积分。典型的例子是包含对数函数 $\log(z)$ 或分数次幂 $z^a$ 的积分。为了将这些作为单值函数处理，必须在复平面上设置称为 **分支切割** （Branch Cut）的“切口”。
+[留数定理](https://kenji.blog/zh-cn/p/residue-theorem/)更高级的应用涉及多值函数（对一个输入有多个输出的函数）的积分。典型的例子是包含对数函数 $\log(z)$ 或分数次幂 $z^a$ 的积分。为了将这些作为单值函数处理，必须在复平面上设置称为 **分支切割** （Branch Cut）的“切口”。
 
 例如，考虑以下积分（其中 $0 < a < 1$ ）：
 
@@ -179,6 +179,6 @@ $$
 
 ## 结论
 
-[留数定理](https://kenji.blog/p/residue-theorem/)是数学优雅的极致体现，它将看似无关的“复数极点”和“实函数积分”完美地结合在了一起。为了解决实函数的问题，我们暂时跳跃到复平面这个更广阔的世界中，仅考察奇点这个“障碍物”的性质（留数），然后再回到原来的世界，问题就已经迎刃而解了。
+[留数定理](https://kenji.blog/zh-cn/p/residue-theorem/)是数学优雅的极致体现，它将看似无关的“复数极点”和“实函数积分”完美地结合在了一起。为了解决实函数的问题，我们暂时跳跃到复平面这个更广阔的世界中，仅考察奇点这个“障碍物”的性质（留数），然后再回到原来的世界，问题就已经迎刃而解了。
 
-这种思想不仅局限于单纯的计算技巧，还被广泛应用于现代科学技术的各个领域，例如[拉普拉斯变换](https://kenji.blog/p/laplace-transform/)的逆变换、量子场论中费曼图的评估，乃至信号处理中的滤波理论等。复分析的世界为我们提供了一个俯瞰实数世界的终极视角。
+这种思想不仅局限于单纯的计算技巧，还被广泛应用于现代科学技术的各个领域，例如[拉普拉斯变换](https://kenji.blog/zh-cn/p/laplace-transform/)的逆变换、量子场论中费曼图的评估，乃至信号处理中的滤波理论等。复分析的世界为我们提供了一个俯瞰实数世界的终极视角。

@@ -78,7 +78,7 @@ Masalah mencari bilangan bulat positif terkecil $ r $ ini adalah "Period Finding
 
 Jika periode $ r $ ini ditemukan dan $ r $ genap, menjadi $ a^r - 1 \equiv 0 \pmod N $, dan dengan menggunakan rumus faktorisasi dapat diubah menjadi
 $ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $.
-Dari sini, dengan menggunakan algoritma [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an untuk menghitung faktor persekutuan terbesar $ N $ dan $ a^{r/2} \pm 1 $, faktor prima $ N $ dapat diperoleh dengan probabilitas yang sangat tinggi.
+Dari sini, dengan menggunakan algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an untuk menghitung faktor persekutuan terbesar $ N $ dan $ a^{r/2} \pm 1 $, faktor prima $ N $ dapat diperoleh dengan probabilitas yang sangat tinggi.
 
 Untuk menemukan periode $ r $ dengan komputer klasik, bagaimanapun juga langkah eksponensial diperlukan dan tidak dapat dipercepat. Namun, dengan komputer kuantum, periode $ r $ ini dapat ditemukan secara instan (dalam waktu polinomial).
 

@@ -21,9 +21,9 @@ Menyediakan kerangka kerja yang kuat untuk merepresentasikan dan menganalisis ja
 
 Artikel ini akan secara komprehensif dan sistematis menjelaskan teori graf, mulai dari asal-usul historisnya, mencakup definisi matematis dasar dan struktur data untuk pemrograman komputer, dan memperkenalkan algoritma representatif yang mendukung fondasi teknologi modern.
 
-## 2. Kelahiran Teori Graf: [Tujuh Jembatan Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)
+## 2. Kelahiran Teori Graf: [Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/)
 
-Sejarah teori graf berawal pada abad ke-18. Pada tahun 1736, ahli matematika Swiss yang brilian [Leonhard Euler](https://kenji.blog/p/euler/) secara elegan memecahkan teka-teki matematika yang terkenal, menandai dimulainya bidang ini. Teka-teki ini dikenal sebagai "[Tujuh Jembatan Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)".
+Sejarah teori graf berawal pada abad ke-18. Pada tahun 1736, ahli matematika Swiss yang brilian [Leonhard Euler](https://kenji.blog/id/p/euler/) secara elegan memecahkan teka-teki matematika yang terkenal, menandai dimulainya bidang ini. Teka-teki ini dikenal sebagai "[Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/)".
 
 Di kota Königsberg yang indah di Kerajaan Prusia (sekarang Kaliningrad, Rusia), mengalir Sungai Pregel, dengan dua pulau di tengahnya dan total tujuh jembatan yang menghubungkannya ke tepi sungai. Sebuah permainan menjadi populer di kalangan warga: "Apakah mungkin untuk menyeberangi setiap jembatan tepat satu kali dan kembali ke titik awal semula?" Banyak orang mencoba, tetapi tidak ada yang berhasil.
 

@@ -8,20 +8,20 @@ categories: ["matemática", "biografia"]
 tags: ["Alan Baker", "Teoria dos Números", "Medalha Fields", "Teoria dos Números Transcendentes"]
 ---
 
-# [Alan Baker: O medalhista Fields que revolucionou a teoria dos números transcendentes](https://kenji.blog/p/baker/)
+# [Alan Baker: O medalhista Fields que revolucionou a teoria dos números transcendentes](https://kenji.blog/pt/p/baker/)
 
 ## 1. Introdução
 
 Na longa história da matemática, existem inúmeros problemas que parecem enganosamente simples, mas que têm intrigado as mentes mais brilhantes do mundo durante séculos. Entre eles, o estudo dos "números transcendentes" é conhecido como um dos campos mais profundos da matemática moderna, exigindo referenciais teóricos excepcionalmente poderosos, com raízes que remontam ao antigo problema grego da "quadratura do círculo".
 
-O matemático britânico **[Alan Baker](https://kenji.blog/p/baker/)** trouxe um avanço histórico para este campo imensamente desafiador da teoria dos números transcendentes. Sua maior conquista, o "Teorema sobre formas lineares em logaritmos" (frequentemente chamado simplesmente de Teorema de Baker), transcendeu as fronteiras da teoria pura dos números transcendentes. Desempenhou um papel decisivo na resolução de problemas abertos de longa data, incluindo métodos para resolver equações diofantinas específicas e a resolução do problema do número de classes de Gauss. Por essas contribuições inovadoras, ele foi premiado com a **Medalha Fields** — a maior honra da matemática — no Congresso Internacional de Matemáticos de 1970, na tenra idade de 31 anos.
+O matemático britânico **[Alan Baker](https://kenji.blog/pt/p/baker/)** trouxe um avanço histórico para este campo imensamente desafiador da teoria dos números transcendentes. Sua maior conquista, o "Teorema sobre formas lineares em logaritmos" (frequentemente chamado simplesmente de Teorema de Baker), transcendeu as fronteiras da teoria pura dos números transcendentes. Desempenhou um papel decisivo na resolução de problemas abertos de longa data, incluindo métodos para resolver equações diofantinas específicas e a resolução do problema do número de classes de Gauss. Por essas contribuições inovadoras, ele foi premiado com a **Medalha Fields** — a maior honra da matemática — no Congresso Internacional de Matemáticos de 1970, na tenra idade de 31 anos.
 
-Neste artigo, aprofundaremos a vida de [Alan Baker](https://kenji.blog/p/baker/), os desafios matemáticos que ele enfrentou e como as teorias que ele estabeleceu influenciaram a matemática moderna, tudo isso enquanto exploramos os detalhes matemáticos.
+Neste artigo, aprofundaremos a vida de [Alan Baker](https://kenji.blog/pt/p/baker/), os desafios matemáticos que ele enfrentou e como as teorias que ele estabeleceu influenciaram a matemática moderna, tudo isso enquanto exploramos os detalhes matemáticos.
 
 ## 2. Vida e Educação
 
 ### 2.1 Primeiros anos e o caminho para Cambridge
-[Alan Baker](https://kenji.blog/p/baker/) nasceu em 19 de agosto de 1939, em Londres, Inglaterra. Demonstrando um talento extraordinário em matemática desde cedo, frequentou uma escola primária local antes de prosseguir para o University College London (UCL). Lá, estudou rigorosamente os fundamentos da matemática e graduou-se com as mais altas honras.
+[Alan Baker](https://kenji.blog/pt/p/baker/) nasceu em 19 de agosto de 1939, em Londres, Inglaterra. Demonstrando um talento extraordinário em matemática desde cedo, frequentou uma escola primária local antes de prosseguir para o University College London (UCL). Lá, estudou rigorosamente os fundamentos da matemática e graduou-se com as mais altas honras.
 
 Buscando alcançar voos maiores, transferiu-se em seguida para o Trinity College, Cambridge. Na época, a Universidade de Cambridge era um dos principais centros mundiais de pesquisa em teoria dos números. Lá, Baker estudou sob a orientação do grande matemático **Harold Davenport**, que liderava a comunidade britânica de teoria dos números. Davenport era uma autoridade em aproximação diofantina e teoria analítica dos números. Sob sua mentoria, Baker aprimorou sua intuição matemática avançada e suas rigorosas técnicas de demonstração.
 
@@ -30,7 +30,7 @@ Em 1964, Baker obteve seu doutorado pela Universidade de Cambridge. Mesmo em sua
 
 Em 1966, ele começou a publicar uma série de artigos inovadores sobre "formas lineares em logaritmos". Essa conquista enviou ondas de choque através da comunidade matemática global, levando-o a receber a **Medalha Fields** no Congresso Internacional de Matemáticos (ICM) de 1970 realizado em Nice, França.
 
-Baker permaneceu em Cambridge pelo resto de sua carreira como Professor de Matemática Pura, contribuindo imensamente para a pesquisa em teoria dos números e a orientação da próxima geração. Viajou pelo mundo dando palestras e atuou como professor visitante em muitas universidades na Índia, Estados Unidos e outros lugares. [Alan Baker](https://kenji.blog/p/baker/) faleceu em 4 de fevereiro de 2018, aos 78 anos, mas os teoremas e métodos que ele deixou para trás permanecem profundamente enraizados na moderna teoria computacional dos números e criptografia.
+Baker permaneceu em Cambridge pelo resto de sua carreira como Professor de Matemática Pura, contribuindo imensamente para a pesquisa em teoria dos números e a orientação da próxima geração. Viajou pelo mundo dando palestras e atuou como professor visitante em muitas universidades na Índia, Estados Unidos e outros lugares. [Alan Baker](https://kenji.blog/pt/p/baker/) faleceu em 4 de fevereiro de 2018, aos 78 anos, mas os teoremas e métodos que ele deixou para trás permanecem profundamente enraizados na moderna teoria computacional dos números e criptografia.
 
 ## 3. Conquistas Matemáticas: Teoria dos Números Transcendentes e o Teorema de Baker
 
@@ -40,10 +40,10 @@ Para apreciar o verdadeiro valor do trabalho de Baker, devemos primeiro revisar 
 - **Número algébrico**: Um número complexo que é raiz de um polinômio não nulo com coeficientes racionais $\mathbb{Q}$. Por exemplo, $\sqrt{2}$, que é uma raiz de $x^2 - 2 = 0$, e as raízes de $x^4 + 1 = 0$ enquadram-se nesta categoria. Todos os números racionais também são números algébricos, pois são raízes de equações lineares $qx - p = 0$.
 - **Número transcendente**: Um número complexo que não é raiz de nenhum polinômio não nulo com coeficientes racionais. Exemplos proeminentes incluem as constantes matemáticas $\pi$ (pi) e $e$ (a base do logaritmo natural).
 
-No final do século XIX, [Georg Cantor](https://kenji.blog/p/cantor/) provou a partir de uma perspectiva da teoria dos conjuntos que, embora o conjunto dos números algébricos seja infinito enumerável, o conjunto de todos os números complexos é infinito não enumerável. Isso significa que "quase todos os números são transcendentes". No entanto, provar que um determinado número específico é transcendente é extremamente difícil.
+No final do século XIX, [Georg Cantor](https://kenji.blog/pt/p/cantor/) provou a partir de uma perspectiva da teoria dos conjuntos que, embora o conjunto dos números algébricos seja infinito enumerável, o conjunto de todos os números complexos é infinito não enumerável. Isso significa que "quase todos os números são transcendentes". No entanto, provar que um determinado número específico é transcendente é extremamente difícil.
 
 ### 3.2 O 7º Problema de Hilbert e o Teorema de Gelfond-Schneider
-Em 1900, [David Hilbert](https://kenji.blog/p/hilbert/) apresentou 23 problemas não resolvidos (Problemas de Hilbert) no Congresso Internacional de Matemáticos em Paris. Seu 7º problema era o seguinte:
+Em 1900, [David Hilbert](https://kenji.blog/pt/p/hilbert/) apresentou 23 problemas não resolvidos (Problemas de Hilbert) no Congresso Internacional de Matemáticos em Paris. Seu 7º problema era o seguinte:
 
 > "Se $\alpha$ for um número algébrico diferente de $0$ ou $1$, e $\beta$ for um número algébrico irracional, então $\alpha^\beta$ será sempre um número transcendente?"
 
@@ -98,10 +98,10 @@ eq = x^3 - 2*y^3 == 1
 ```
 
 ### 4.2 Resolução do Problema 1 do Número de Classes de Gauss
-O grande matemático do século XIX, [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), postulou uma conjectura a respeito do número de classes (a ordem do grupo de classes de ideais) de corpos quadráticos imaginários $\mathbb{Q}(\sqrt{-d})$. Ele conjecturou que os únicos valores de $d > 0$ para os quais o número de classes é 1 (o que significa que a fatoração única é válida) são os nove valores $d = 3, 4, 7, 8, 11, 19, 43, 67, 163$. Isso é conhecido como o **Problema do número de classes 1**.
+O grande matemático do século XIX, [Carl Friedrich Gauss](https://kenji.blog/pt/p/gauss/), postulou uma conjectura a respeito do número de classes (a ordem do grupo de classes de ideais) de corpos quadráticos imaginários $\mathbb{Q}(\sqrt{-d})$. Ele conjecturou que os únicos valores de $d > 0$ para os quais o número de classes é 1 (o que significa que a fatoração única é válida) são os nove valores $d = 3, 4, 7, 8, 11, 19, 43, 67, 163$. Isso é conhecido como o **Problema do número de classes 1**.
 
 Este problema foi essencialmente resolvido em 1952 por Kurt Heegner usando funções modulares, mas seu artigo foi considerado como tendo pontos obscuros e não foi amplamente aceito pela comunidade matemática da época.
-Mais tarde, em 1967, Harold Stark formalizou rigorosamente a prova de Heegner, completando-a de forma independente. Surpreendentemente, quase ao mesmo tempo, [Alan Baker](https://kenji.blog/p/baker/) provou essa conjectura usando uma abordagem completamente diferente, baseada em seu método das "formas lineares em logaritmos", sem usar nenhuma função modular.
+Mais tarde, em 1967, Harold Stark formalizou rigorosamente a prova de Heegner, completando-a de forma independente. Surpreendentemente, quase ao mesmo tempo, [Alan Baker](https://kenji.blog/pt/p/baker/) provou essa conjectura usando uma abordagem completamente diferente, baseada em seu método das "formas lineares em logaritmos", sem usar nenhuma função modular.
 O método de Baker provou ser altamente versátil, e foi subsequentemente aplicado para resolver problemas mais generalizados, como determinar todos os corpos quadráticos imaginários com número de classes 2.
 
 ## 5. Genealogia da Teoria dos Números Transcendentes
@@ -120,7 +120,7 @@ flowchart TD
 
 ## 6. Conclusão
 
-Com o surgimento de [Alan Baker](https://kenji.blog/p/baker/), a teoria dos números — especialmente o estudo da teoria dos números transcendentes e das equações diofantinas — entrou em uma era completamente nova. Os "métodos de computação efetivos" que ele apresentou trouxeram abordagens algorítmicas à matemática pura e abstrata, e agora servem como parte da fundação matemática que sustenta a ciência da computação e a criptografia modernas.
+Com o surgimento de [Alan Baker](https://kenji.blog/pt/p/baker/), a teoria dos números — especialmente o estudo da teoria dos números transcendentes e das equações diofantinas — entrou em uma era completamente nova. Os "métodos de computação efetivos" que ele apresentou trouxeram abordagens algorítmicas à matemática pura e abstrata, e agora servem como parte da fundação matemática que sustenta a ciência da computação e a criptografia modernas.
 
 Suas pesquisas sobre a limitação das soluções para equações diofantinas também forneceram uma ponte para teorias mais profundas, como a **conjectura abc**, que continua sendo hoje um dos maiores problemas não resolvidos da teoria dos números.
-Um grande matemático que combinou intuição brilhante com uma força lógica esmagadora para concluir provas altamente complexas e técnicas, [Alan Baker](https://kenji.blog/p/baker/) deixou um legado de teoremas e uma paixão pela teoria dos números que, sem dúvida, continuará a brilhar na história da matemática sem nunca se apagar.
+Um grande matemático que combinou intuição brilhante com uma força lógica esmagadora para concluir provas altamente complexas e técnicas, [Alan Baker](https://kenji.blog/pt/p/baker/) deixou um legado de teoremas e uma paixão pela teoria dos números que, sem dúvida, continuará a brilhar na história da matemática sem nunca se apagar.

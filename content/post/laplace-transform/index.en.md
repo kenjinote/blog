@@ -12,15 +12,15 @@ tags:
   - "Applied mathematics"
 ---
 
-## Introduction: What is the [Laplace Transform](https://kenji.blog/p/laplace-transform/)?
+## Introduction: What is the [Laplace Transform](https://kenji.blog/en/p/laplace-transform/)?
 
-In fields such as physics, engineering, and economics, **differential equations** are an essential tool for describing phenomena that change over time. However, solving complex differential equations directly can sometimes be extremely difficult. This is where the **[Laplace Transform](https://kenji.blog/p/laplace-transform/)** comes into play.
+In fields such as physics, engineering, and economics, **differential equations** are an essential tool for describing phenomena that change over time. However, solving complex differential equations directly can sometimes be extremely difficult. This is where the **[Laplace Transform](https://kenji.blog/en/p/laplace-transform/)** comes into play.
 
 Simply put, the Laplace transform is a "magical tool that converts difficult differential equations into simple algebraic equations (equations that can be solved using only basic arithmetic)." The procedure involves mapping a complex problem expressed in the time domain ($t$) to the complex frequency domain ($s$), solving it easily there, and then transforming it back to the time domain.
 
 In this article, we will explain in detail everything from the basics of the Laplace transform to its powerful properties and the concrete steps to actually solve differential equations.
 
-## Definition of the [Laplace Transform](https://kenji.blog/p/laplace-transform/)
+## Definition of the [Laplace Transform](https://kenji.blog/en/p/laplace-transform/)
 
 The Laplace transform $\mathcal{L}\{f(t)\}$ for a real-valued function $f(t)$ defined for time $t \ge 0$ is defined by the following improper integral:
 
@@ -32,14 +32,14 @@ Here, $s$ is a complex variable (complex frequency) and is expressed as $s = \si
 
 For this integral to not diverge to infinity but exist as a finite value (to converge), the real part of $s$, $\sigma$, must be greater than a certain value. The region that satisfies this condition is called the **region of convergence**.
 
-## Why is the [Laplace Transform](https://kenji.blog/p/laplace-transform/) Useful?
+## Why is the [Laplace Transform](https://kenji.blog/en/p/laplace-transform/) Useful?
 
 The reason the Laplace transform is extremely powerful in solving differential equations lies mainly in the following two points:
 
 1. **Differentiation turns into "multiplication"**: The differentiation operation $d/dt$ in the time domain is transformed into a simple algebraic operation of "multiplying by $s$" in the $s$-domain.
 2. **Initial conditions are naturally incorporated**: Since the transformation formula includes initial values such as $f(0)$, it saves the trouble of substituting initial conditions later and helps reduce calculation errors.
 
-## Important Properties of the [Laplace Transform](https://kenji.blog/p/laplace-transform/)
+## Important Properties of the [Laplace Transform](https://kenji.blog/en/p/laplace-transform/)
 
 The Laplace transform has several important properties that dramatically simplify calculations.
 
@@ -59,7 +59,7 @@ $$
 \mathcal{L}\{e^{at} f(t)\} = F(s - a)
 $$
 
-### 3. [Laplace Transform](https://kenji.blog/p/laplace-transform/) of Derivatives
+### 3. [Laplace Transform](https://kenji.blog/en/p/laplace-transform/) of Derivatives
 
 This is the most important formula for solving differential equations.
 
@@ -107,7 +107,7 @@ $$
 
 Let the initial condition be $q(0) = 0$.
 
-**Step 1: [Laplace Transform](https://kenji.blog/p/laplace-transform/)**
+**Step 1: [Laplace Transform](https://kenji.blog/en/p/laplace-transform/)**
 Take the Laplace transform of both sides. Let the Laplace transform of $q(t)$ be $Q(s)$.
 
 $$
@@ -133,7 +133,7 @@ $$
 Q(s) = C E \left( \frac{1}{s} - \frac{1}{s + \frac{1}{RC}} \right)
 $$
 
-**Step 3: Inverse [Laplace Transform](https://kenji.blog/p/laplace-transform/)**
+**Step 3: Inverse [Laplace Transform](https://kenji.blog/en/p/laplace-transform/)**
 Return to the time domain using the transform table. Utilize the fact that $\frac{1}{s}$ returns to $1$, and $\frac{1}{s + a}$ returns to $e^{-at}$.
 
 $$

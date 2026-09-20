@@ -21,19 +21,19 @@ tags:
 
 這時，一個宏大的疑問產生了：「如果把數的範圍擴大到複數，是否可以斷言任何方程式都一定會有解？」或者說，「未來是否還需要引入更新種類的數呢？」
 
-對於這個疑問，數學準備了一個極其明確且優美的答案。這就是本文的主題—— **[代數基本定理](https://kenji.blog/p/fundamental-theorem-of-algebra/)** （[Fundamental Theorem of Algebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)）。該定理斷言：「任何複係數的 $n$ 次多項式，在複數範圍內必定存在根（解）。」也就是說，在複數這片廣袤的數字海洋中，任何方程式的解必定存在，保證了我們再也不需要去創造新的數系。
+對於這個疑問，數學準備了一個極其明確且優美的答案。這就是本文的主題—— **[代數基本定理](https://kenji.blog/zh-tw/p/fundamental-theorem-of-algebra/)** （[Fundamental Theorem of Algebra](https://kenji.blog/zh-tw/p/fundamental-theorem-of-algebra/)）。該定理斷言：「任何複係數的 $n$ 次多項式，在複數範圍內必定存在根（解）。」也就是說，在複數這片廣袤的數字海洋中，任何方程式的解必定存在，保證了我們再也不需要去創造新的數系。
 
-在本文中，我們將詳細講解這個 **[代數基本定理](https://kenji.blog/p/fundamental-theorem-of-algebra/)** ，從它的歷史背景出發，介紹基於拓撲學直覺的方法，最後展示利用複變分析進行嚴謹而優美的證明。
+在本文中，我們將詳細講解這個 **[代數基本定理](https://kenji.blog/zh-tw/p/fundamental-theorem-of-algebra/)** ，從它的歷史背景出發，介紹基於拓撲學直覺的方法，最後展示利用複變分析進行嚴謹而優美的證明。
 
-## [代數基本定理](https://kenji.blog/p/fundamental-theorem-of-algebra/)的歷史背景
+## [代數基本定理](https://kenji.blog/zh-tw/p/fundamental-theorem-of-algebra/)的歷史背景
 
-**[代數基本定理](https://kenji.blog/p/fundamental-theorem-of-algebra/)** 並非一朝一夕就能證明的。許多偉大的數學家從未懷疑過這個定理的真理，並為得到其完整證明而努力奮鬥。
+**[代數基本定理](https://kenji.blog/zh-tw/p/fundamental-theorem-of-algebra/)** 並非一朝一夕就能證明的。許多偉大的數學家從未懷疑過這個定理的真理，並為得到其完整證明而努力奮鬥。
 
-在17世紀，[勒內·笛卡兒](https://kenji.blog/p/descartes/)和阿爾貝·吉拉爾等數學家已經在經驗上認識到了「 $n$ 次方程式應有 $n$ 個根」這一事實。然而，在當時的數學框架下，缺乏嚴謹證明的手段。
+在17世紀，[勒內·笛卡兒](https://kenji.blog/zh-tw/p/descartes/)和阿爾貝·吉拉爾等數學家已經在經驗上認識到了「 $n$ 次方程式應有 $n$ 個根」這一事實。然而，在當時的數學框架下，缺乏嚴謹證明的手段。
 
-進入18世紀，尚·勒朗·達朗貝爾和[李昂哈德·歐拉](https://kenji.blog/p/euler/)等巨星開始挑戰證明。達朗貝爾在1746年發表了證明，因此該定理在法國有時被稱為「達朗貝爾定理」，但以現代的標準來看，他的證明在拓撲學的嚴密性上存在缺陷。歐拉也曾試圖證明實係數多項式都可以分解為一次式和二次式的乘積，但留下了邏輯上的空白。
+進入18世紀，尚·勒朗·達朗貝爾和[李昂哈德·歐拉](https://kenji.blog/zh-tw/p/euler/)等巨星開始挑戰證明。達朗貝爾在1746年發表了證明，因此該定理在法國有時被稱為「達朗貝爾定理」，但以現代的標準來看，他的證明在拓撲學的嚴密性上存在缺陷。歐拉也曾試圖證明實係數多項式都可以分解為一次式和二次式的乘積，但留下了邏輯上的空白。
 
-真正對這個堅不可摧的定理給出第一個實質性完整證明的，正是[卡爾·弗里德里希·高斯](https://kenji.blog/p/gauss/)。在1799年的博士論文中，他指出了前人證明中的缺陷，並提供了一個基於幾何直覺的證明。高斯一生中為這個定理給出了4種不同的證明，足以見得他對此定理的重視程度。
+真正對這個堅不可摧的定理給出第一個實質性完整證明的，正是[卡爾·弗里德里希·高斯](https://kenji.blog/zh-tw/p/gauss/)。在1799年的博士論文中，他指出了前人證明中的缺陷，並提供了一個基於幾何直覺的證明。高斯一生中為這個定理給出了4種不同的證明，足以見得他對此定理的重視程度。
 
 現代被認為最標準且最優雅的證明，是基於法國數學家約瑟夫·李歐維爾等人所建立的複變分析（函數論）理論。在本文的後半部分，我們將介紹利用李歐維爾定理的證明。
 
@@ -41,7 +41,7 @@ tags:
 
 首先，讓我們用準確的數學語言來描述定理的表述。
 
-**定理（[代數基本定理](https://kenji.blog/p/fundamental-theorem-of-algebra/)）**
+**定理（[代數基本定理](https://kenji.blog/zh-tw/p/fundamental-theorem-of-algebra/)）**
 對於任意滿足 $n \ge 1$ 的自然數 $n$，以及複數係數 $a_0, a_1, \dots, a_n$ （其中 $a_n \neq 0$ ），定義多項式 $P(z)$ 如下：
 
 $$
@@ -95,9 +95,9 @@ flowchart TD
 
 在實數世界裡，像 $f(x) = \sin(x)$ 這樣的函數，在整個數線上可微，同時滿足 $-1 \le \sin(x) \le 1$，也就是有界。但它並非定值函數。然而，李歐維爾定理斷言，在複數世界裡這種事絕對不會發生。如果在整個複數平面上全純，並且函數值沒有發散到無限的彼方，那它就只能是一個平坦的常數。
 
-## [代數基本定理](https://kenji.blog/p/fundamental-theorem-of-algebra/)的嚴謹證明
+## [代數基本定理](https://kenji.blog/zh-tw/p/fundamental-theorem-of-algebra/)的嚴謹證明
 
-那麼，讓我們運用李歐維爾定理來證明[代數基本定理](https://kenji.blog/p/fundamental-theorem-of-algebra/)吧。你定會驚訝於這證明的精妙。在這裡，我們使用反證法（Proof by contradiction）。
+那麼，讓我們運用李歐維爾定理來證明[代數基本定理](https://kenji.blog/zh-tw/p/fundamental-theorem-of-algebra/)吧。你定會驚訝於這證明的精妙。在這裡，我們使用反證法（Proof by contradiction）。
 
 **證明**
 
@@ -152,15 +152,15 @@ $$
 
 ## 定理的推論：分解為一次式的乘積
 
-[代數基本定理](https://kenji.blog/p/fundamental-theorem-of-algebra/)保證了「至少存在一個解」。將這個事實與關於多項式除法的 **因式定理** （Factor Theorem）結合起來，就可以證明多項式能夠完全分解為一次式的乘積。
+[代數基本定理](https://kenji.blog/zh-tw/p/fundamental-theorem-of-algebra/)保證了「至少存在一個解」。將這個事實與關於多項式除法的 **因式定理** （Factor Theorem）結合起來，就可以證明多項式能夠完全分解為一次式的乘積。
 
-當有一個 $n$ 次多項式 $P_n(z)$ 時，根據[代數基本定理](https://kenji.blog/p/fundamental-theorem-of-algebra/)，存在解 $\alpha_1$ 使得 $P_n(\alpha_1) = 0$。根據因式定理， $P_n(z)$ 必含有因式 $(z - \alpha_1)$。即可以像下面這樣因式分解：
+當有一個 $n$ 次多項式 $P_n(z)$ 時，根據[代數基本定理](https://kenji.blog/zh-tw/p/fundamental-theorem-of-algebra/)，存在解 $\alpha_1$ 使得 $P_n(\alpha_1) = 0$。根據因式定理， $P_n(z)$ 必含有因式 $(z - \alpha_1)$。即可以像下面這樣因式分解：
 
 $$
 P_n(z) = (z - \alpha_1) P_{n-1}(z)
 $$
 
-這裡的 $P_{n-1}(z)$ 是 $n-1$ 次的多項式。如果 $n-1 \ge 1$，就可以再次應用[代數基本定理](https://kenji.blog/p/fundamental-theorem-of-algebra/)找到 $P_{n-1}(z)$ 的解 $\alpha_2$。透過重複 $n$ 次，最終可以完全因式分解如下：
+這裡的 $P_{n-1}(z)$ 是 $n-1$ 次的多項式。如果 $n-1 \ge 1$，就可以再次應用[代數基本定理](https://kenji.blog/zh-tw/p/fundamental-theorem-of-algebra/)找到 $P_{n-1}(z)$ 的解 $\alpha_2$。透過重複 $n$ 次，最終可以完全因式分解如下：
 
 $$
 P_n(z) = a_n (z - \alpha_1)(z - \alpha_2) \dots (z - \alpha_n)
@@ -172,8 +172,8 @@ $$
 
 ## 結語
 
-在本文中，我們圍繞[代數基本定理](https://kenji.blog/p/fundamental-theorem-of-algebra/)，詳細審視了它的歷史背景、拓撲學的直觀認識，以及利用李歐維爾定理所做的複變分析證明。
+在本文中，我們圍繞[代數基本定理](https://kenji.blog/zh-tw/p/fundamental-theorem-of-algebra/)，詳細審視了它的歷史背景、拓撲學的直觀認識，以及利用李歐維爾定理所做的複變分析證明。
 
 乍看之下這是一個關於代數方程式的定理，但其最為優雅的證明卻是藉助分析學（微積分）和拓撲學的力量完成的，這一點展現了數學這門學問的深奧，以及各個分支領域緊密相連的美感。
 
-人類尋求方程式解的漫長探索，藉由引入虛數這一全新的數，獲得了複數平面這片廣闊的舞台，而[代數基本定理](https://kenji.blog/p/fundamental-theorem-of-algebra/)則證明了這個舞台的完整性。這個定理，成為了打開通往現代數學根基——伽羅瓦理論與代數幾何學輝煌大門的一把鑰匙。
+人類尋求方程式解的漫長探索，藉由引入虛數這一全新的數，獲得了複數平面這片廣闊的舞台，而[代數基本定理](https://kenji.blog/zh-tw/p/fundamental-theorem-of-algebra/)則證明了這個舞台的完整性。這個定理，成為了打開通往現代數學根基——伽羅瓦理論與代數幾何學輝煌大門的一把鑰匙。

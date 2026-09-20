@@ -54,9 +54,9 @@ A complexidade de tempo deste algoritmo é $O(\sqrt{N})$. Se for em torno de $N 
 
 O que foi concebido para superar as limitações do método de divisão por tentativa foi o "Algoritmo Probabilístico" usando teoremas da teoria dos números. Um exemplo representativo é o "Teste de Primalidade de Fermat" que utiliza o Pequeno Teorema de Fermat.
 
-## [O Pequeno Teorema de Fermat](https://kenji.blog/p/fermats-little-theorem/)
+## [O Pequeno Teorema de Fermat](https://kenji.blog/pt/p/fermats-little-theorem/)
 
-Este teorema, descoberto por [Pierre de Fermat](https://kenji.blog/p/fermat/), afirma o seguinte:
+Este teorema, descoberto por [Pierre de Fermat](https://kenji.blog/pt/p/fermat/), afirma o seguinte:
 
 > Para qualquer número primo $p$ e qualquer inteiro $a$ coprimo com $p$ (que não seja um múltiplo de $p$), a seguinte congruência é válida.
 > $$ a^{p-1} \equiv 1 \pmod p $$

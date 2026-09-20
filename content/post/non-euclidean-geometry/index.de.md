@@ -8,9 +8,9 @@ categories: ["mathematics", "physics"]
 tags: ["Geometrie", "Relativitätstheorie", "Wissenschaftsgeschichte", "Mathe"]
 ---
 
-## 1. Einleitung: Der Fluch des [Euklid](https://kenji.blog/p/euclid/)
+## 1. Einleitung: Der Fluch des [Euklid](https://kenji.blog/de/p/euclid/)
 
-Im 3. Jahrhundert v. Chr. systematisierte der antike griechische Mathematiker [Euklid](https://kenji.blog/p/euclid/) in seinem Werk „Die Elemente“ das geometrische Wissen seiner Zeit auf axiomatische Weise. Er stellte 5 Postulate (Forderungen) auf, aber sein 5. Postulat, das sogenannte **Parallelenpostulat**, war im Vergleich zu den anderen vier komplexer und sollte viele Mathematiker plagen.
+Im 3. Jahrhundert v. Chr. systematisierte der antike griechische Mathematiker [Euklid](https://kenji.blog/de/p/euclid/) in seinem Werk „Die Elemente“ das geometrische Wissen seiner Zeit auf axiomatische Weise. Er stellte 5 Postulate (Forderungen) auf, aber sein 5. Postulat, das sogenannte **Parallelenpostulat**, war im Vergleich zu den anderen vier komplexer und sollte viele Mathematiker plagen.
 
 $$
 \text{5. Postulat: Wenn eine gerade Linie zwei gerade Linien schneidet und die Summe der inneren Winkel auf derselben Seite kleiner als zwei rechte Winkel ist, dann schneiden sich die beiden geraden Linien, wenn sie unendlich verlängert werden, auf der Seite, auf der die Summe der inneren Winkel kleiner als zwei rechte Winkel ist.}
@@ -34,7 +34,7 @@ graph TD
 
 ## 3. Die Entdeckung des „gekrümmten Raums“: Die Geburt der hyperbolischen Geometrie
 
-Zu Beginn des 19. Jahrhunderts kam es schließlich zu einer Revolution. Drei Männer – der Deutsche [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), der Ungar János Bolyai und der Russe Nikolai Lobatschewski – kamen unabhängig voneinander zu dem Schluss: „Das 5. Postulat ist unabhängig von den anderen Postulaten, und es gibt eine völlig neue Geometrie, in der dieses nicht gilt.“
+Zu Beginn des 19. Jahrhunderts kam es schließlich zu einer Revolution. Drei Männer – der Deutsche [Carl Friedrich Gauss](https://kenji.blog/de/p/gauss/), der Ungar János Bolyai und der Russe Nikolai Lobatschewski – kamen unabhängig voneinander zu dem Schluss: „Das 5. Postulat ist unabhängig von den anderen Postulaten, und es gibt eine völlig neue Geometrie, in der dieses nicht gilt.“
 
 Die Geometrie, die sie entdeckten, wird heute als **hyperbolische Geometrie** bezeichnet. In diesem Raum gibt es „unendlich viele“ parallele Linien, die durch einen einzelnen Punkt außerhalb einer geraden Linie verlaufen. Außerdem ist die Summe der Innenwinkel eines Dreiecks immer kleiner als 180 Grad.
 
@@ -46,7 +46,7 @@ Aufgrund der außergewöhnlichen Innovationskraft dieser Entdeckung fürchtete G
 
 ## 4. Riemannsche Geometrie: Die Verallgemeinerung des Raumkonzepts
 
-Der nächste große Sprung in der nichteuklidischen Geometrie wurde durch [Bernhard Riemann](https://kenji.blog/p/riemann/), einen Schüler von Gauss, eingeleitet. In seiner Antrittsvorlesung im Jahr 1854 präsentierte Riemann eine bahnbrechende Idee über die Grundlagen der Geometrie.
+Der nächste große Sprung in der nichteuklidischen Geometrie wurde durch [Bernhard Riemann](https://kenji.blog/de/p/riemann/), einen Schüler von Gauss, eingeleitet. In seiner Antrittsvorlesung im Jahr 1854 präsentierte Riemann eine bahnbrechende Idee über die Grundlagen der Geometrie.
 
 Er führte den **metrischen Tensor** ein, der lokal die Krümmung des Raumes definiert, und konstruierte eine allgemeinere Geometrie (**Riemannsche Geometrie**), in der sich Dimension und Krümmung des Raumes je nach Ort ändern.
 
@@ -80,6 +80,6 @@ In der obigen Einstein-Gleichung repräsentiert die linke Seite die geometrische
 
 ## 6. Fazit
 
-Die Erforschung der nichteuklidischen Geometrie, die mit einem kleinen Zweifel an [Euklid](https://kenji.blog/p/euclid/)s 5. Postulat begann, durchbrach die intuitiven Annahmen der Menschheit über den Raum und bewies die Freiheit der Mathematik. Und dies gipfelte schließlich in der allgemeinen Relativitätstheorie, die die fundamentale Struktur des Universums erklärt.
+Die Erforschung der nichteuklidischen Geometrie, die mit einem kleinen Zweifel an [Euklid](https://kenji.blog/de/p/euclid/)s 5. Postulat begann, durchbrach die intuitiven Annahmen der Menschheit über den Raum und bewies die Freiheit der Mathematik. Und dies gipfelte schließlich in der allgemeinen Relativitätstheorie, die die fundamentale Struktur des Universums erklärt.
 
 Die Suche nach reiner Logik in der Mathematik wird später zu einer unverzichtbaren Sprache, um die tiefsten Wahrheiten der physischen Welt zu beschreiben. Die Geschichte der nichteuklidischen Geometrie lehrt uns die Größe des menschlichen Intellekts und die erstaunlichen Geheimnisse der Natur.

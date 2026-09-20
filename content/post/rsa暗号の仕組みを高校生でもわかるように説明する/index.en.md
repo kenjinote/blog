@@ -118,7 +118,7 @@ For example, suppose you want to find the remainder of $7^{100}$ divided by $5$.
 
 ## 4. The Mathematical Foundation Supporting RSA 3: Euler's Totient Function and Euler's Theorem
 
-From here on is the magic mathematics that forms the core of RSA encryption. "Euler's Theorem", a generalization of "[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)", makes its appearance.
+From here on is the magic mathematics that forms the core of RSA encryption. "Euler's Theorem", a generalization of "[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)", makes its appearance.
 
 ### 4.1 Euler's Totient Function $\phi(N)$
 
@@ -139,13 +139,13 @@ This property functions as the "secret backdoor (trapdoor)" in RSA encryption. T
 
 ### 4.2 Euler's Theorem
 
-[Leonhard Euler](https://kenji.blog/p/euler/) used this $\phi(N)$ to prove the following beautiful theorem.
+[Leonhard Euler](https://kenji.blog/en/p/euler/) used this $\phi(N)$ to prove the following beautiful theorem.
 
 **Euler's Theorem:**
 When the integer $a$ and $N$ are coprime, the following congruence holds.
 $$ a^{\phi(N)} \equiv 1 \pmod N $$
 
-This is an amazing property that says, "If you multiply a number $a$ by itself $\phi(N)$ times and divide by $N$, the remainder will always be $1$." (When $N$ is a prime number $p$, it becomes $a^{p-1} \equiv 1 \pmod p$, which is called [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)).
+This is an amazing property that says, "If you multiply a number $a$ by itself $\phi(N)$ times and divide by $N$, the remainder will always be $1$." (When $N$ is a prime number $p$, it becomes $a^{p-1} \equiv 1 \pmod p$, which is called [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)).
 
 Let's modify this Euler's Theorem. Multiply both sides by $a$ one more time.
 $$ a^{\phi(N) + 1} \equiv a \pmod N $$
@@ -267,11 +267,11 @@ If you run `(48 ** 103) % 143` on a calculator, the result wonderfully turns out
 
 ---
 
-## 8. How to Find the Private Key $d$: Extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm
+## 8. How to Find the Private Key $d$: Extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm
 
-In the hand calculation example, we found $d=103$ by guessing to find $k$, but this method is impossible when the numbers are hundreds of digits long. In actual programs, an algorithm called the **"Extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm"** is used.
+In the hand calculation example, we found $d=103$ by guessing to find $k$, but this method is impossible when the numbers are hundreds of digits long. In actual programs, an algorithm called the **"Extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm"** is used.
 
-Solving $7d \equiv 1 \pmod{120}$ is the same as finding integers $d, y$ that satisfy $7d + 120y = 1$. By working backwards through the [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm, this can be calculated mechanically.
+Solving $7d \equiv 1 \pmod{120}$ is the same as finding integers $d, y$ that satisfy $7d + 120y = 1$. By working backwards through the [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm, this can be calculated mechanically.
 
 1. $120 \div 7 = 17$ remainder $1$ 
 2. Transforming this, $1 = 120 - 17 \times 7$

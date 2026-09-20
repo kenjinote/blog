@@ -50,7 +50,7 @@ Lewis Fry Richardson descobriu esse fenômeno empiricamente em 1951. À medida q
 
 ## Dimensão Fractal: Entre 1D e 2D
 
-Foi o matemático Benoît Mandelbrot quem deu uma explicação matemática a este paradoxo. Em 1967, ele publicou um artigo famoso na revista Science intitulado "[How Long Is the Coast of Britain?](https://kenji.blog/p/海岸線のパラドックス/) Statistical Self-Similarity and Fractional Dimension".
+Foi o matemático Benoît Mandelbrot quem deu uma explicação matemática a este paradoxo. Em 1967, ele publicou um artigo famoso na revista Science intitulado "[How Long Is the Coast of Britain?](https://kenji.blog/pt/p/海岸線のパラドックス/) Statistical Self-Similarity and Fractional Dimension".
 
 Mandelbrot apontou que formas no mundo natural, como linhas costeiras, possuem **autossimilaridade (fractal)**, o que significa que "não importa o quanto você as amplie, estruturas complexas semelhantes aparecem".
 
@@ -71,5 +71,5 @@ Isso demonstra matematicamente que à medida que o comprimento da régua $s$ se 
 
 O conceito de "comprimento" que usamos diariamente só funciona para retas ou curvas suaves. Para formas fractais existentes no mundo natural (linhas costeiras, nuvens, cadeias de montanhas, ramificações de vasos sanguíneos, etc.), perguntar o seu "comprimento absoluto" na verdade não faz sentido matematicamente.
 
-"[Qual é o comprimento da costa da Grã-Bretanha?](https://kenji.blog/p/海岸線のパラドックス/)"
+"[Qual é o comprimento da costa da Grã-Bretanha?](https://kenji.blog/pt/p/海岸線のパラドックス/)"
 A resposta correta é "depende do comprimento da régua usada para medi-la", e teoricamente é "infinito". O fato de que um comprimento infinito é dobrado dentro de um espaço pequeno e limitado pode ser considerado um belo paradoxo em nossa percepção do espaço.

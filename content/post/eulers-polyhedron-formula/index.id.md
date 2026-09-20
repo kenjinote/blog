@@ -15,7 +15,7 @@ tags:
 
 ## Pendahuluan: Salah Satu Teorema Paling Indah dalam Matematika
 
-Di dunia matematika, terdapat beberapa rumus ajaib yang mengungkapkan hubungan mengejutkan antara fenomena yang tampaknya tidak berkaitan. Di antaranya, **Rumus polyhedron Euler** yang ditemukan oleh [Leonhard Euler](https://kenji.blog/p/euler/), menonjol karena kesederhanaan mutlak dan universalitasnya.
+Di dunia matematika, terdapat beberapa rumus ajaib yang mengungkapkan hubungan mengejutkan antara fenomena yang tampaknya tidak berkaitan. Di antaranya, **Rumus polyhedron Euler** yang ditemukan oleh [Leonhard Euler](https://kenji.blog/id/p/euler/), menonjol karena kesederhanaan mutlak dan universalitasnya.
 
 Rumusnya sangat sederhana:
 
@@ -46,7 +46,7 @@ Memang benar, tidak peduli polyhedron beraturan mana yang kita pilih, hasilnya s
 
 ## Pembuktian Intuitif dari Rumus Euler
 
-Mengapa hasilnya selalu sama dengan **$2$**? Mari kita lihat pembuktian intuitif oleh matematikawan Prancis [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) (1811). Bukti ini mengambil pendekatan revolusioner dengan mengubah bentuk padat 3D menjadi "graf planar".
+Mengapa hasilnya selalu sama dengan **$2$**? Mari kita lihat pembuktian intuitif oleh matematikawan Prancis [Augustin-Louis Cauchy](https://kenji.blog/id/p/cauchy/) (1811). Bukti ini mengambil pendekatan revolusioner dengan mengubah bentuk padat 3D menjadi "graf planar".
 
 ### Langkah 1: Meratakan Bangun Ruang ke Bidang Datar
 
@@ -90,7 +90,7 @@ flowchart TD
 
 ## Manuskrip Rahasia Descartes: Kisah Penemuan Lain
 
-Sebenarnya, sekitar satu abad sebelum Euler menerbitkan teorema ini, filsuf dan matematikawan Prancis [René Descartes](https://kenji.blog/p/descartes/) telah mencapai teorema yang pada dasarnya sama.
+Sebenarnya, sekitar satu abad sebelum Euler menerbitkan teorema ini, filsuf dan matematikawan Prancis [René Descartes](https://kenji.blog/id/p/descartes/) telah mencapai teorema yang pada dasarnya sama.
 Descartes berfokus pada konsep "cacat sudut" (angular defect) pada titik-titik sudut sebuah polyhedron.
 Jumlah sudut yang bertemu pada satu titik sudut adalah $360^\circ$ pada bidang datar, tetapi pada titik sudut bangun ruang, jumlahnya selalu kurang dari $360^\circ$. Kekurangan dari $360^\circ$ ini disebut "cacat sudut".
 
@@ -135,7 +135,7 @@ flowchart LR
 
 ## Rumus Euler-Poincaré: Lompatan ke Multi-Dimensi
 
-Dari akhir abad ke-19 hingga abad ke-20, para matematikawan, termasuk [Henri Poincaré](https://kenji.blog/p/poincare/), memperluas teorema Euler ke ruang dengan dimensi yang lebih tinggi lagi. Ini menjadi **Rumus Euler-Poincaré**.
+Dari akhir abad ke-19 hingga abad ke-20, para matematikawan, termasuk [Henri Poincaré](https://kenji.blog/id/p/poincare/), memperluas teorema Euler ke ruang dengan dimensi yang lebih tinggi lagi. Ini menjadi **Rumus Euler-Poincaré**.
 Dengan menggeneralisasi elemen-elemen dari polyhedron, mereka mempertimbangkan jumlah bolak-balik dari jumlah elemen dalam bentuk $n$-dimensi.
 
 $$ \chi = k_0 - k_1 + k_2 - k_3 + \dots + (-1)^n k_n $$

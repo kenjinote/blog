@@ -8,19 +8,19 @@ categories: ["Mathematik", "Biografie"]
 tags: ["Gabriel Lamé", "Geschichte der Mathematik", "Zahlentheorie", "Elastizität", "Geometrie"]
 ---
 
-## 1. Einführung: Wer war [Gabriel Lamé](https://kenji.blog/p/lame/)?
+## 1. Einführung: Wer war [Gabriel Lamé](https://kenji.blog/de/p/lame/)?
 
-[Gabriel Lamé](https://kenji.blog/p/lame/) (22. Juli 1795 – 1. Mai 1870) war ein herausragender französischer Mathematiker, Physiker und Ingenieur des 19. Jahrhunderts. Seine Beiträge erstreckten sich über ein breites Spektrum, von der reinen über die angewandte Mathematik bis hin zum praktischen Bauingenieurwesen. Noch heute ist sein Name durch die **Lamé-Kurve** (Superellipse), den **Satz von Lamé** im euklidischen Algorithmus und die **Lamé-Konstanten** in der Elastizitätstheorie tief in Mathematik- und Physikbüchern verankert.
+[Gabriel Lamé](https://kenji.blog/de/p/lame/) (22. Juli 1795 – 1. Mai 1870) war ein herausragender französischer Mathematiker, Physiker und Ingenieur des 19. Jahrhunderts. Seine Beiträge erstreckten sich über ein breites Spektrum, von der reinen über die angewandte Mathematik bis hin zum praktischen Bauingenieurwesen. Noch heute ist sein Name durch die **Lamé-Kurve** (Superellipse), den **Satz von Lamé** im euklidischen Algorithmus und die **Lamé-Konstanten** in der Elastizitätstheorie tief in Mathematik- und Physikbüchern verankert.
 
 In diesem Artikel werden wir die Spuren von Lamés turbulentem Leben verfolgen und seine zahlreichen bahnbrechenden mathematischen und physikalischen Errungenschaften detailliert und systematisch erläutern. Das Verständnis von Lamés Leben und seinen Denkprozessen bietet eine äußerst wertvolle Perspektive, um zu verstehen, wie die Wissenschaft des 19. Jahrhunderts den Grundstein für die Moderne legte.
 
-## 2. Leben und Karriere von [Gabriel Lamé](https://kenji.blog/p/lame/)
+## 2. Leben und Karriere von [Gabriel Lamé](https://kenji.blog/de/p/lame/)
 
 Lamés Leben war eng mit der turbulenten europäischen Gesellschaft des frühen 19. Jahrhunderts verknüpft. Seine Karriere beschränkte sich nicht auf den akademischen Elfenbeinturm, sondern wurde von harten praktischen Erfahrungen vor Ort untermauert.
 
 ### 2.1 Geburt und Ausbildung in turbulenten Zeiten
 
-[Gabriel Lamé](https://kenji.blog/p/lame/) wurde 1795 in der Stadt Tours in Zentralfrankreich geboren. Es war die Zeit der Nachwehen der Französischen Revolution, eine Zeit tiefgreifender Veränderungen in der gesamten Gesellschaft. Sein mathematisches Talent blühte früh auf, und 1813 trat er in die renommierte **École Polytechnique** ein. Dort wetteiferte er mit vielen brillanten Köpfen, die später die wissenschaftliche Welt anführen sollten. Nach seinem Abschluss besuchte er die **École des Mines**, um sein praktisches Ingenieurwissen zu vertiefen.
+[Gabriel Lamé](https://kenji.blog/de/p/lame/) wurde 1795 in der Stadt Tours in Zentralfrankreich geboren. Es war die Zeit der Nachwehen der Französischen Revolution, eine Zeit tiefgreifender Veränderungen in der gesamten Gesellschaft. Sein mathematisches Talent blühte früh auf, und 1813 trat er in die renommierte **École Polytechnique** ein. Dort wetteiferte er mit vielen brillanten Köpfen, die später die wissenschaftliche Welt anführen sollten. Nach seinem Abschluss besuchte er die **École des Mines**, um sein praktisches Ingenieurwissen zu vertiefen.
 
 ### 2.2 Wirken in Russland: Praxis als Ingenieur
 
@@ -141,7 +141,7 @@ Insbesondere bei der Lösung der **Laplace-Gleichung**, die das Phänomen der W�
 
 Eine dramatische Episode im Leben Lamés war sein Versuch von 1847, **Fermats Letzten Satz** zu beweisen. Im März desselben Jahres verkündete Lamé vor der Französischen Akademie der Wissenschaften mit großem Pomp, er habe "Fermats Letzten Satz vollständig bewiesen". Sein Beweis war ein zu dieser Zeit äußerst innovativer und leistungsstarker Ansatz, der die Faktorisierung von Gleichungen mithilfe komplexer Zahlen zyklotomischer Körper umfasste.
 
-Unmittelbar nach seiner Präsentation wies sein Kollege und Mathematiker Joseph Liouville jedoch scharfsinnig darauf hin, dass "dieser Beweis auf der stillschweigenden Annahme beruht, dass die 'Eindeutigkeit der Primfaktorzerlegung' auch im Bereich der komplexen Zahlen gilt, was jedoch nicht bewiesen ist." Kurze Zeit später traf ein Brief des deutschen Mathematikers [Ernst Kummer](https://kenji.blog/p/kummer/) ein, in dem er aufzeigte, dass "die Eindeutigkeit der Primfaktorzerlegung im Allgemeinen nicht gilt", womit Lamés Beweis endgültig widerlegt war.
+Unmittelbar nach seiner Präsentation wies sein Kollege und Mathematiker Joseph Liouville jedoch scharfsinnig darauf hin, dass "dieser Beweis auf der stillschweigenden Annahme beruht, dass die 'Eindeutigkeit der Primfaktorzerlegung' auch im Bereich der komplexen Zahlen gilt, was jedoch nicht bewiesen ist." Kurze Zeit später traf ein Brief des deutschen Mathematikers [Ernst Kummer](https://kenji.blog/de/p/kummer/) ein, in dem er aufzeigte, dass "die Eindeutigkeit der Primfaktorzerlegung im Allgemeinen nicht gilt", womit Lamés Beweis endgültig widerlegt war.
 
 Dies war ein großer Rückschlag für Lamé, aber diese Reihe von Diskussionen führte zur Entstehung von Kummers Theorie der "idealen Zahlen" (Ideale), die später ein riesiges neues Feld der Mathematik eröffnete: die algebraische Zahlentheorie. Lamés kühne Herausforderung trieb somit die Geschichte der Mathematik erheblich voran.
 
@@ -155,6 +155,6 @@ In seinen späteren Jahren erlitt Lamé das Unglück, sein Gehör zu verlieren, 
 
 ## 9. Fazit: Lamés Erbe für die Moderne
 
-Wenn man auf das Leben und die Leistungen von [Gabriel Lamé](https://kenji.blog/p/lame/) zurückblickt, wird deutlich, dass er "die abstrakte Schönheit der reinen Mathematik" und "die Nützlichkeit der angewandten Mathematik und Physik" perfekt miteinander verschmolz.
+Wenn man auf das Leben und die Leistungen von [Gabriel Lamé](https://kenji.blog/de/p/lame/) zurückblickt, wird deutlich, dass er "die abstrakte Schönheit der reinen Mathematik" und "die Nützlichkeit der angewandten Mathematik und Physik" perfekt miteinander verschmolz.
 
 Auf dem Balkon im ersten Stock des Eiffelturms sind die Namen von 72 großen Wissenschaftlern eingraviert, die zur französischen Wissenschaft und Technologie beigetragen haben, und unter ihnen prangt stolz der Name Lamé (LAMÉ). Die von ihm hinterlassenen Theoreme, Konstanten und innovativen Ansätze leben noch heute an der Spitze von Wissenschaft und Technologie durch die Hände moderner Ingenieure und Mathematiker weiter.

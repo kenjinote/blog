@@ -12,7 +12,7 @@ tags: ["Cantor", "Argumento diagonal", "Infinito", "Matemáticas", "Demostració
 
 El concepto de «infinito» que pensamos cotidianamente significa literalmente «que no tiene fin». Los números naturales ($1, 2, 3, \dots$) se pueden seguir contando infinitamente, por lo que su cantidad es infinita. Por otro lado, los números reales (todos los puntos en la recta numérica) también existen de manera infinita.
 
-Intuitivamente, solemos pensar que «el infinito es infinito, y ambos no tienen fin de la misma manera», pero el matemático del siglo XIX [Georg Cantor](https://kenji.blog/p/cantor/) ([Georg Cantor](https://kenji.blog/p/cantor/)) demostró un hecho asombroso: **«el infinito tiene diferencias de tamaño (cardinalidad)»** .
+Intuitivamente, solemos pensar que «el infinito es infinito, y ambos no tienen fin de la misma manera», pero el matemático del siglo XIX [Georg Cantor](https://kenji.blog/es/p/cantor/) ([Georg Cantor](https://kenji.blog/es/p/cantor/)) demostró un hecho asombroso: **«el infinito tiene diferencias de tamaño (cardinalidad)»** .
 
 En este artículo, explicaremos en detalle que el conjunto de los números reales es «abrumadoramente más grande» que el conjunto de los números naturales, utilizando el **argumento diagonal (Diagonal Argument)** , un método de demostración revolucionario ideado por Cantor.
 
@@ -158,7 +158,7 @@ En conclusión, **no se puede crear una correspondencia uno a uno entre el conju
 
 ---
 
-## El camino hacia la hipótesis del continuo ([Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/))
+## El camino hacia la hipótesis del continuo ([Continuum Hypothesis](https://kenji.blog/es/p/continuum-hypothesis/))
 
 El argumento diagonal de Cantor demostró que existen «jerarquías» en el infinito.
 Si representamos la cardinalidad de los números naturales como $\aleph_0$ y la cardinalidad de los números reales como $\aleph_1$ o $2^{\aleph_0}$, se cumple la siguiente relación:
@@ -169,9 +169,9 @@ $$
 
 Aquí, Cantor se enfrentó a una enorme pregunta: **«¿Existe un conjunto infinito que tenga una cardinalidad intermedia entre $\aleph_0$ y $2^{\aleph_0}$?»** 
 
-A la hipótesis de que «no existe una cardinalidad intermedia» se le llama la **hipótesis del continuo ([Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/), CH)** . Cantor dedicó su vida a intentar demostrar esto, pero no pudo resolverlo.
+A la hipótesis de que «no existe una cardinalidad intermedia» se le llama la **hipótesis del continuo ([Continuum Hypothesis](https://kenji.blog/es/p/continuum-hypothesis/), CH)** . Cantor dedicó su vida a intentar demostrar esto, pero no pudo resolverlo.
 
-Más tarde, [Kurt Gödel](https://kenji.blog/p/godel/) y Paul Cohen demostraron que la hipótesis del continuo es **«indemostrable e irrefutable (independiente) bajo el sistema axiomático actual de las matemáticas (ZFC)»** . Este es uno de los descubrimientos más profundos de las matemáticas del siglo XX.
+Más tarde, [Kurt Gödel](https://kenji.blog/es/p/godel/) y Paul Cohen demostraron que la hipótesis del continuo es **«indemostrable e irrefutable (independiente) bajo el sistema axiomático actual de las matemáticas (ZFC)»** . Este es uno de los descubrimientos más profundos de las matemáticas del siglo XX.
 
 ---
 
@@ -183,4 +183,4 @@ El argumento diagonal de Cantor, a primera vista, parece un rompecabezas simple,
 2. Hasta los números racionales, el tamaño es el mismo que el de los números naturales (infinito numerable).
 3. Mediante el argumento de desplazar la diagonal para crear un número nuevo, se demuestra que hay más números reales que naturales (infinito no numerable).
 
-Esta belleza lógica absoluta, aunque contraintuitiva, se puede decir que es el mayor atractivo de la disciplina matemática. El argumento diagonal se aplicaría más tarde a teorías fundamentales en ciencias de la computación y lógica matemática, como el problema de la parada de [Alan Turing](https://kenji.blog/p/turing/) ([Alan Turing](https://kenji.blog/p/turing/)) y la demostración de los teoremas de incompletitud de Gödel.
+Esta belleza lógica absoluta, aunque contraintuitiva, se puede decir que es el mayor atractivo de la disciplina matemática. El argumento diagonal se aplicaría más tarde a teorías fundamentales en ciencias de la computación y lógica matemática, como el problema de la parada de [Alan Turing](https://kenji.blog/es/p/turing/) ([Alan Turing](https://kenji.blog/es/p/turing/)) y la demostración de los teoremas de incompletitud de Gödel.

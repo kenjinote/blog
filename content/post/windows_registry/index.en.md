@@ -9,7 +9,7 @@ categories: ["windows", "administration", "programming"]
 tags: ["Registry", "PowerShell", "C#", "Windows 11"]
 ---
 
-# [Basic Knowledge of the Windows Registry and Safe Programmable Editing Methods](https://kenji.blog/p/windows_registry/)
+# [Basic Knowledge of the Windows Registry and Safe Programmable Editing Methods](https://kenji.blog/en/p/windows_registry/)
 
 In the Windows operating system, the "Registry" is a massive hierarchical database that stores various settings for the system and applications. This article provides a very detailed explanation, starting from the basic architecture of the Windows Registry to programmable and safe registry editing methods using PowerShell and C#.
 

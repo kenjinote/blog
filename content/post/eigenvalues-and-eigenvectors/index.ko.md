@@ -12,13 +12,13 @@ tags: ["선형대수학", "고윳값", "고유벡터", "수학", "머신러닝",
 
 선형대수학을 배울 때 많은 사람들이 처음 겪는 장벽은 아마도 '행렬의 곱셈'이나 '행렬식'일 것입니다. 하지만 이러한 장벽을 넘어섰을 때 만나는 **고윳값** (Eigenvalue) 과 **고유벡터** (Eigenvector) 야말로 선형대수학이 현대 과학과 공학에서 막강한 위력을 발휘하는 근원입니다.
 
-머신러닝에서의 차원 축소 (PCA), 구글의 검색 엔진을 지탱한 PageRank 알고리즘, 건물의 내진 설계부터 양자역학의 슈뢰딩거 방정식에 이르기까지 [고윳값과 고유벡터](https://kenji.blog/p/eigenvalues-and-eigenvectors/)는 어디에나 등장합니다.
+머신러닝에서의 차원 축소 (PCA), 구글의 검색 엔진을 지탱한 PageRank 알고리즘, 건물의 내진 설계부터 양자역학의 슈뢰딩거 방정식에 이르기까지 [고윳값과 고유벡터](https://kenji.blog/ko/p/eigenvalues-and-eigenvectors/)는 어디에나 등장합니다.
 
 본 문서에서는 단순히 수학 공식을 따라가는 것을 넘어 그 '기하학적 의미'를 직관적으로 이해하는 것을 목표로 하며, 실용적인 계산 방법부터 실제 세계에서의 응용까지 포괄적으로 설명합니다.
 
 ## 행렬에 의한 선형 변환과 기하학적 직관
 
-[고윳값과 고유벡터](https://kenji.blog/p/eigenvalues-and-eigenvectors/)를 이해하기 위해서는 먼저 '행렬이란 무엇인가'에 대한 관점을 바꿔야 합니다. 행렬은 단순한 숫자들의 배열이 아닙니다. 공간 내의 **변환기 (Transformation)** 입니다.
+[고윳값과 고유벡터](https://kenji.blog/ko/p/eigenvalues-and-eigenvectors/)를 이해하기 위해서는 먼저 '행렬이란 무엇인가'에 대한 관점을 바꿔야 합니다. 행렬은 단순한 숫자들의 배열이 아닙니다. 공간 내의 **변환기 (Transformation)** 입니다.
 
 어떤 벡터 $\mathbf{v}$ 에 행렬 $A$ 를 곱하는 작업 $A\mathbf{v}$ 는 벡터 $\mathbf{v}$ 를 다른 새로운 벡터 $\mathbf{v}'$ 로 변환한다는 것을 의미합니다.
 
@@ -36,7 +36,7 @@ graph LR
     style D stroke:#ff9900,stroke-width:2px
 ```
 
-## [고윳값과 고유벡터](https://kenji.blog/p/eigenvalues-and-eigenvectors/)의 정의 및 수학적 배경
+## [고윳값과 고유벡터](https://kenji.blog/ko/p/eigenvalues-and-eigenvectors/)의 정의 및 수학적 배경
 
 수학적으로, 정방행렬 $A$ 에 대하여 다음 조건을 만족하는 영이 아닌 벡터 $\mathbf{v}$ 와 스칼라 $\lambda$ 가 존재할 때, $\mathbf{v}$ 를 행렬 $A$ 의 **고유벡터**, $\lambda$ 를 **고윳값** 이라고 부릅니다.
 
@@ -58,7 +58,7 @@ $$ \det(A - \lambda I) = 0 $$
 
 ## 특성 방정식과 구체적인 계산 단계
 
-그러면 구체적인 $2 \times 2$ 행렬을 사용하여 손으로 [고윳값과 고유벡터](https://kenji.blog/p/eigenvalues-and-eigenvectors/)를 구해보겠습니다. 이는 선형대수학 시험 등에서도 자주 출제되는 단계입니다.
+그러면 구체적인 $2 \times 2$ 행렬을 사용하여 손으로 [고윳값과 고유벡터](https://kenji.blog/ko/p/eigenvalues-and-eigenvectors/)를 구해보겠습니다. 이는 선형대수학 시험 등에서도 자주 출제되는 단계입니다.
 
 예를 들어, 다음과 같은 행렬 $A$ 를 생각해 보겠습니다.
 
@@ -126,9 +126,9 @@ $$
 
 이 됩니다.
 
-이제 행렬 $A$ 의 [고윳값과 고유벡터](https://kenji.blog/p/eigenvalues-and-eigenvectors/)를 모두 구했습니다.
+이제 행렬 $A$ 의 [고윳값과 고유벡터](https://kenji.blog/ko/p/eigenvalues-and-eigenvectors/)를 모두 구했습니다.
 
-## Python을 이용한 [고윳값과 고유벡터](https://kenji.blog/p/eigenvalues-and-eigenvectors/) 계산
+## Python을 이용한 [고윳값과 고유벡터](https://kenji.blog/ko/p/eigenvalues-and-eigenvectors/) 계산
 
 현대의 실무에서는 큰 행렬의 고윳값을 손으로 계산하는 일은 없습니다. Python의 수치 계산 라이브러리인 NumPy를 사용하면 불과 몇 줄만으로 계산이 가능합니다.
 
@@ -156,7 +156,7 @@ NumPy의 `np.linalg.eig` 함수는 정규화된 (길이가 1인) 고유벡터를
 
 ## 행렬의 대각화와 그 강력한 이점
 
-[고윳값과 고유벡터](https://kenji.blog/p/eigenvalues-and-eigenvectors/)의 가장 중요한 응용 중 하나가 **행렬의 대각화** 입니다. 대각화란 복잡한 행렬 $A$ 를 계산이 쉬운 대각행렬 $D$ 를 사용하여 다음과 같이 분해하는 것입니다.
+[고윳값과 고유벡터](https://kenji.blog/ko/p/eigenvalues-and-eigenvectors/)의 가장 중요한 응용 중 하나가 **행렬의 대각화** 입니다. 대각화란 복잡한 행렬 $A$ 를 계산이 쉬운 대각행렬 $D$ 를 사용하여 다음과 같이 분해하는 것입니다.
 
 $$ A = P D P^{-1} $$
 
@@ -192,7 +192,7 @@ $$
 
 머신러닝이나 데이터 사이언스 분야에서 고차원의 데이터(예: 수백 픽셀의 이미지 데이터나 수많은 사용자 행동 이력)를 분석 가능한 저차원으로 압축하는 **주성분 분석 (Principal Component Analysis, PCA)** 이라는 기법이 있습니다.
 
-PCA에서는 데이터의 공분산 행렬의 [고윳값과 고유벡터](https://kenji.blog/p/eigenvalues-and-eigenvectors/)를 계산합니다.
+PCA에서는 데이터의 공분산 행렬의 [고윳값과 고유벡터](https://kenji.blog/ko/p/eigenvalues-and-eigenvectors/)를 계산합니다.
 - **고유벡터**: 데이터의 분산이 가장 커지는 '새로운 축(주성분)'의 방향을 나타냅니다.
 - **고윳값**: 그 새로운 축을 따른 데이터 분산의 크기(정보량)를 나타냅니다.
 
@@ -228,7 +228,7 @@ $$ \hat{H}\psi = E\psi $$
 
 ## 결론
 
-얼핏 보면 [고윳값과 고유벡터](https://kenji.blog/p/eigenvalues-and-eigenvectors/)는 추상적인 수학 퍼즐처럼 보일지도 모릅니다. 하지만 기하학적으로 볼 때 이는 '행렬에 의한 복잡한 변환 속에서 결코 변하지 않는 본질적인 축'을 추출하는 작업이며, 그 응용 범위는 컴퓨터 과학, 데이터 사이언스, 이론 물리학, 기계 공학까지 다방면에 걸쳐 있습니다.
+얼핏 보면 [고윳값과 고유벡터](https://kenji.blog/ko/p/eigenvalues-and-eigenvectors/)는 추상적인 수학 퍼즐처럼 보일지도 모릅니다. 하지만 기하학적으로 볼 때 이는 '행렬에 의한 복잡한 변환 속에서 결코 변하지 않는 본질적인 축'을 추출하는 작업이며, 그 응용 범위는 컴퓨터 과학, 데이터 사이언스, 이론 물리학, 기계 공학까지 다방면에 걸쳐 있습니다.
 
 - **고유벡터**: 변환에 의해 방향이 변하지 않는, 시스템의 본질적인 방향 또는 모드.
 - **고윳값**: 그 방향이 변환에 의해 얼마나 확대·축소되는지를 나타내는 스케일 팩터(중요도, 에너지, 주파수 등).

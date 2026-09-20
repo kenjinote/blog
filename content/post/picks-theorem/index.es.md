@@ -18,7 +18,7 @@ tags:
 
 En el campo de la geometría matemática, el tema de encontrar el área de una figura ha sido estudiado por muchos matemáticos desde la época de la antigua Grecia. En las clases escolares, aprendemos varios enfoques, comenzando desde la fórmula básica para el área de un triángulo, "base $\times$ altura $\div 2$", hasta las fórmulas de área utilizando razones trigonométricas en matemáticas de la escuela secundaria, la regla de Sarrus usando el producto cruz de vectores en un plano coordenado, e incluso la fórmula de Herón, que deriva el área basándose únicamente en las longitudes de los tres lados.
 
-Sin embargo, si todos los vértices de un polígono se encuentran en **puntos de una cuadrícula** (puntos donde las coordenadas $x$ e $y$ son ambas números enteros), existe una fórmula mágica que le permite calcular el área utilizando solo operaciones aritméticas extremadamente simples, sin medir longitudes ni realizar multiplicaciones complejas o cálculos de raíces cuadradas. Ese es el **[Teorema de Pick](https://kenji.blog/p/picks-theorem/)**, que explicaremos en detalle esta vez.
+Sin embargo, si todos los vértices de un polígono se encuentran en **puntos de una cuadrícula** (puntos donde las coordenadas $x$ e $y$ son ambas números enteros), existe una fórmula mágica que le permite calcular el área utilizando solo operaciones aritméticas extremadamente simples, sin medir longitudes ni realizar multiplicaciones complejas o cálculos de raíces cuadradas. Ese es el **[Teorema de Pick](https://kenji.blog/es/p/picks-theorem/)**, que explicaremos en detalle esta vez.
 
 El teorema de Pick no es solo una "fórmula conveniente y misteriosa para encontrar el área fácilmente", sino que tiene un trasfondo muy profundo que se conecta con la topología, la teoría de grafos y la geometría algebraica en las matemáticas modernas. En este artículo, profundizaremos en el teorema de Pick desde múltiples ángulos, desde cómo usarlo de manera básica, hasta la demostración matemática de por qué se cumple una fórmula tan simple, sus antecedentes históricos e incluso las limitaciones del teorema y la posibilidad de su extensión a 3D.
 
@@ -30,9 +30,9 @@ Este teorema fue publicado en 1899 por el matemático de origen austríaco **Geo
 
 Curiosamente, Pick tenía una profunda conexión con el famoso Albert Einstein. Cuando Einstein asumió un puesto en la universidad en Praga en 1911, Pick le dio una cálida bienvenida y construyeron una estrecha amistad, no solo participando en discusiones académicas sino también tocando el violín juntos. Se dice que Pick fue una de las personas que recomendó encarecidamente a Einstein estudiar el "análisis tensorial" y la "geometría de Riemann", que se volvieron esenciales para la construcción de la teoría de la relatividad general.
 
-Sin embargo, los últimos años de Pick fueron muy trágicos. Al ser de ascendencia judía, se enfrentó a la persecución con el surgimiento de la Alemania nazi. En 1942, fue enviado al campo de concentración de Theresienstadt, donde falleció solo dos semanas después a la edad de 82 años. Aunque su vida tuvo un triste final, el "[Teorema de Pick](https://kenji.blog/p/picks-theorem/)" que dejó atrás continúa siendo amado en la educación matemática en todo el mundo actual debido a su belleza y simplicidad.
+Sin embargo, los últimos años de Pick fueron muy trágicos. Al ser de ascendencia judía, se enfrentó a la persecución con el surgimiento de la Alemania nazi. En 1942, fue enviado al campo de concentración de Theresienstadt, donde falleció solo dos semanas después a la edad de 82 años. Aunque su vida tuvo un triste final, el "[Teorema de Pick](https://kenji.blog/es/p/picks-theorem/)" que dejó atrás continúa siendo amado en la educación matemática en todo el mundo actual debido a su belleza y simplicidad.
 
-## 3. ¿Qué es el [Teorema de Pick](https://kenji.blog/p/picks-theorem/)?
+## 3. ¿Qué es el [Teorema de Pick](https://kenji.blog/es/p/picks-theorem/)?
 
 Ahora, vayamos al núcleo del teorema de Pick. La afirmación del teorema es sorprendentemente simple y puede ser comprendida incluso por estudiantes de escuela primaria.
 

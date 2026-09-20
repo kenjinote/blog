@@ -14,15 +14,15 @@ slug: "maxwells-demon"
 
 ## Einleitung
 
-In der Geschichte der Physik ist **[Maxwells Dämon](https://kenji.blog/p/maxwells-demon/)** (Maxwell's demon) eines der berühmtesten und meistdiskutierten Gedankenexperimente. Dieser „Dämon“, der 1867 vom Physiker James Clerk Maxwell vorgeschlagen wurde, hat Physiker auf der ganzen Welt viele Jahre lang geplagt. Denn die Existenz dieses Dämons schien eines der stärksten Gesetze der Physik direkt zu brechen: den **Zweiten Hauptsatz der Thermodynamik**, der die Irreversibilität des Universums definiert.
+In der Geschichte der Physik ist **[Maxwells Dämon](https://kenji.blog/de/p/maxwells-demon/)** (Maxwell's demon) eines der berühmtesten und meistdiskutierten Gedankenexperimente. Dieser „Dämon“, der 1867 vom Physiker James Clerk Maxwell vorgeschlagen wurde, hat Physiker auf der ganzen Welt viele Jahre lang geplagt. Denn die Existenz dieses Dämons schien eines der stärksten Gesetze der Physik direkt zu brechen: den **Zweiten Hauptsatz der Thermodynamik**, der die Irreversibilität des Universums definiert.
 
 Wenn dieser Dämon in der Realität existieren würde, könnten wir unendlich viel Wärmeenergie aus der Luft extrahieren und in Arbeit umwandeln, wodurch wir ein „Perpetuum mobile zweiter Art“ erschaffen würden. Dies würde bedeuten, dass unsere Energieprobleme für immer gelöst wären, aber gleichzeitig würden die Prämissen der uns bekannten physikalischen Gesetze zusammenbrechen.
 
-In diesem Artikel werden wir ausführlich mit Formeln und Diagrammen erläutern, welches Paradoxon [Maxwells Dämon](https://kenji.blog/p/maxwells-demon/) aufzeigte und wie dieses Paradoxon nach etwa einem Jahrhundert durch das scheinbar nicht mit der Physik verwandte Konzept der „Information“ gelöst wurde.
+In diesem Artikel werden wir ausführlich mit Formeln und Diagrammen erläutern, welches Paradoxon [Maxwells Dämon](https://kenji.blog/de/p/maxwells-demon/) aufzeigte und wie dieses Paradoxon nach etwa einem Jahrhundert durch das scheinbar nicht mit der Physik verwandte Konzept der „Information“ gelöst wurde.
 
 ## Der Zweite Hauptsatz der Thermodynamik und das Gesetz der Entropiezunahme
 
-Um die Bedrohung durch [Maxwells Dämon](https://kenji.blog/p/maxwells-demon/) richtig zu verstehen, betrachten wir zunächst die Grundlagen des **Zweiten Hauptsatzes der Thermodynamik** (Gesetz der Entropiezunahme).
+Um die Bedrohung durch [Maxwells Dämon](https://kenji.blog/de/p/maxwells-demon/) richtig zu verstehen, betrachten wir zunächst die Grundlagen des **Zweiten Hauptsatzes der Thermodynamik** (Gesetz der Entropiezunahme).
 
 Der Zweite Hauptsatz der Thermodynamik ist eine absolute Regel der Natur: „Die Entropie (das Maß für Unordnung) in einem isolierten System nimmt immer zu oder bleibt konstant.“ In einer Formel ausgedrückt sieht dies wie folgt aus:
 
@@ -42,7 +42,7 @@ Hierbei ist $k_B$ die Boltzmann-Konstante ($1.38 \times 10^{-23} \ \mathrm{J/K}$
 
 Als alltägliches Beispiel betrachten wir heißen Kaffee und kalte Milch, die in dieselbe Tasse gegossen werden. Im Laufe der Zeit mischen sich beide auf natürliche Weise und ergeben lauwarmen Milchkaffee. Dabei wird das System unordentlicher, und die Entropie nimmt zu. Das Gegenteil jedoch, dass lauwarmer Milchkaffee sich spontan wieder in heißen Kaffee und kalte Milch trennt, passiert absolut nie. Es gibt eine irreversible Richtung in den Phänomenen der Natur, und dies drückt sich in Form der Zunahme der Entropie aus.
 
-## Das Gedankenexperiment von [Maxwells Dämon](https://kenji.blog/p/maxwells-demon/)
+## Das Gedankenexperiment von [Maxwells Dämon](https://kenji.blog/de/p/maxwells-demon/)
 
 Angesichts dieses fundamentalen Gesetzes der Physik schlug Maxwell folgendes raffiniertes Gedankenexperiment vor:
 
@@ -95,13 +95,13 @@ $$
 \Delta S < 0
 $$
 
-Maxwell selbst wollte durch dieses Gedankenexperiment zeigen, dass der Zweite Hauptsatz der Thermodynamik kein absolutes mechanisches Gesetz ist, sondern nur „ein probabilistisches Gesetz, das nur bei der statistischen Betrachtung einer großen Anzahl von Molekülen gilt“. Aber wenn wir ein solches Dämonen-ähnliches Wesen künstlich erschaffen könnten, wäre ein „Perpetuum mobile zweiter Art“ perfekt. [Maxwells Dämon](https://kenji.blog/p/maxwells-demon/) stellte einen klaren Widerspruch zum Zweiten Hauptsatz der Thermodynamik dar.
+Maxwell selbst wollte durch dieses Gedankenexperiment zeigen, dass der Zweite Hauptsatz der Thermodynamik kein absolutes mechanisches Gesetz ist, sondern nur „ein probabilistisches Gesetz, das nur bei der statistischen Betrachtung einer großen Anzahl von Molekülen gilt“. Aber wenn wir ein solches Dämonen-ähnliches Wesen künstlich erschaffen könnten, wäre ein „Perpetuum mobile zweiter Art“ perfekt. [Maxwells Dämon](https://kenji.blog/de/p/maxwells-demon/) stellte einen klaren Widerspruch zum Zweiten Hauptsatz der Thermodynamik dar.
 
 ## Szilárds Maschine: Informationsbeschaffung und Arbeitsumwandlung
 
 Das Paradoxon des Dämons hielt die Physiker ein ganzes Jahrhundert lang in tiefer Verzweiflung gefangen. Denn der Dämon bedient lediglich eine Tür (die theoretisch ohne Masse ist und somit keine Energie zum Öffnen/Schließen benötigt) auf der Grundlage von Informationen, und es war überhaupt nicht klar, wo im System die Entropie zunehmen sollte.
 
-Den ersten Schritt zur Lösung dieses Rätsels tat der Physiker Leó Szilárd im Jahr 1929. Szilárd konzipierte ein extrem vereinfachtes Gedankenexperiment, **Szilárds Maschine**, das das Wesen von [Maxwells Dämon](https://kenji.blog/p/maxwells-demon/) auf den Punkt brachte.
+Den ersten Schritt zur Lösung dieses Rätsels tat der Physiker Leó Szilárd im Jahr 1929. Szilárd konzipierte ein extrem vereinfachtes Gedankenexperiment, **Szilárds Maschine**, das das Wesen von [Maxwells Dämon](https://kenji.blog/de/p/maxwells-demon/) auf den Punkt brachte.
 
 Szilárds Maschine besteht aus einem Zylinder, der nur ein einziges Gasmolekül enthält, und einer Trennwand (Kolben), die in die Mitte eingeschoben werden kann. Das Verfahren ist wie folgt:
 
@@ -150,9 +150,9 @@ $$
 
 Das „Schreiben“ oder „Berechnen“ von Informationen kann im Prinzip durchgeführt werden, ohne Energie zu verbrauchen. Bei irreversiblen Operationen wie dem „Vergessen“ oder „Löschen“ von Informationen muss jedoch ein thermodynamischer Preis bezahlt werden.
 
-## Der Tod von [Maxwells Dämon](https://kenji.blog/p/maxwells-demon/) und das Ende des Paradoxons
+## Der Tod von [Maxwells Dämon](https://kenji.blog/de/p/maxwells-demon/) und das Ende des Paradoxons
 
-Im Jahr 1982 lieferte Charles Bennett mithilfe des Landauer-Prinzips schließlich den ultimativen Schlag gegen das Paradoxon von [Maxwells Dämon](https://kenji.blog/p/maxwells-demon/).
+Im Jahr 1982 lieferte Charles Bennett mithilfe des Landauer-Prinzips schließlich den ultimativen Schlag gegen das Paradoxon von [Maxwells Dämon](https://kenji.blog/de/p/maxwells-demon/).
 
 Bennetts Logik lautet wie folgt:
 
@@ -196,11 +196,11 @@ graph LR
 
 ## Informationsthermodynamik und Entwicklungen für die Zukunft
 
-Das Paradoxon von [Maxwells Dämon](https://kenji.blog/p/maxwells-demon/) offenbarte, dass das abstrakte Konzept der „Information“ und die physikalischen Konzepte von „Energie“ und „Entropie“ letztlich äquivalent und eng miteinander verbunden sind.
+Das Paradoxon von [Maxwells Dämon](https://kenji.blog/de/p/maxwells-demon/) offenbarte, dass das abstrakte Konzept der „Information“ und die physikalischen Konzepte von „Energie“ und „Entropie“ letztlich äquivalent und eng miteinander verbunden sind.
 
 Diese großartige Entdeckung entwickelt sich derzeit rasant zu einer neuen Grenze in der Physik, der **Informationsthermodynamik** und der **Nichtgleichgewichtsstatistik**.
 
-In den letzten Jahren wurde erforscht, wie biomolekulare Maschinen (wie DNA-Polymerase oder Kinesin), die in Zellen von Lebewesen arbeiten, ähnlich wie [Maxwells Dämon](https://kenji.blog/p/maxwells-demon/) Informationen nutzen, um Energie effizient umzuwandeln und gerichtete Bewegungen zu erzeugen. Die Gesetze der Informationsthermodynamik sind auch tief in den Grundlagen der Lebensphänomene verwurzelt.
+In den letzten Jahren wurde erforscht, wie biomolekulare Maschinen (wie DNA-Polymerase oder Kinesin), die in Zellen von Lebewesen arbeiten, ähnlich wie [Maxwells Dämon](https://kenji.blog/de/p/maxwells-demon/) Informationen nutzen, um Energie effizient umzuwandeln und gerichtete Bewegungen zu erzeugen. Die Gesetze der Informationsthermodynamik sind auch tief in den Grundlagen der Lebensphänomene verwurzelt.
 
 Zusätzlich bildet das Landauer-Limit, das die ultimative energetische Grenze für die Informationsverarbeitung darstellt, die wichtigste theoretische Basis, wenn es darum geht, in Zukunft noch stromsparendere Computer zu entwickeln. Um die physikalische Wand der grundlegenden Wärmeerzeugung beim Löschen von Informationen zu durchbrechen, wird auch intensiv an „Reversiblem Computing“ (bei dem keine Informationen gelöscht werden) geforscht.
 
@@ -210,4 +210,4 @@ Der kleine Dämon, den Maxwell im 19. Jahrhundert erschaffen hat, wurde zu einem
 
 Das „Wissen“ und das „Vergessen“.
 
-Hinter der Informationsverarbeitung, die wir tagtäglich durchführen, behält die Thermodynamik als grundlegendes Gesetz des Universums immer alles im Blick. **Information** und **Energie** sind zwei Seiten derselben Medaille. Diese tiefe Verbindung wird auch in Zukunft noch viele Revolutionen in verschiedenen Bereichen auslösen. [Maxwells Dämon](https://kenji.blog/p/maxwells-demon/) öffnet uns auch nach seinem Tod weiterhin die Türen zu neuen Erkenntnissen.
+Hinter der Informationsverarbeitung, die wir tagtäglich durchführen, behält die Thermodynamik als grundlegendes Gesetz des Universums immer alles im Blick. **Information** und **Energie** sind zwei Seiten derselben Medaille. Diese tiefe Verbindung wird auch in Zukunft noch viele Revolutionen in verschiedenen Bereichen auslösen. [Maxwells Dämon](https://kenji.blog/de/p/maxwells-demon/) öffnet uns auch nach seinem Tod weiterhin die Türen zu neuen Erkenntnissen.

@@ -21,7 +21,7 @@ In diesem Artikel erklären wir das "Gesetz der großen Zahlen", das grundlegend
 
 ## 2. Was ist das Gesetz der großen Zahlen?
 
-[Das Gesetz der großen Zahlen](https://kenji.blog/p/law-of-large-numbers/) ([Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/), LLN) ist einfach ausgedrückt das Gesetz, dass **"wenn die Anzahl der Versuche ausreichend steigt, die Eintrittswahrscheinlichkeit eines Ereignisses gegen den theoretischen Wert (Erwartungswert) konvergiert."**
+[Das Gesetz der großen Zahlen](https://kenji.blog/de/p/law-of-large-numbers/) ([Law of Large Numbers](https://kenji.blog/de/p/law-of-large-numbers/), LLN) ist einfach ausgedrückt das Gesetz, dass **"wenn die Anzahl der Versuche ausreichend steigt, die Eintrittswahrscheinlichkeit eines Ereignisses gegen den theoretischen Wert (Erwartungswert) konvergiert."**
 
 Stellen Sie sich einen Münzwurf vor. Die Wahrscheinlichkeit für "Kopf" liegt bei $1/2$ ($50\%$). Es nur 10 Mal zu werfen garantiert jedoch nicht, dass 5 Mal Kopf und 5 Mal Zahl fallen. Man könnte 7 Mal Kopf oder auch nur 2 Mal bekommen.
 Wenn man den Versuch jedoch 10.000 oder 100.000 Mal wiederholt, wird sich der Anteil von "Kopf" unendlich nahe an $50\%$ annähern.
@@ -111,7 +111,7 @@ Eine bekannte psychologische Verzerrung, die aus einem Missverständnis des Gese
 
 Wenn die Leute sehen, dass beim Roulette 10 Mal hintereinander "Rot" fällt, denken viele: "Als nächstes sollte bald Schwarz kommen". Dies beruht auf der falschen Annahme, dass "da das Gesetz der großen Zahlen besagt, dass das Verhältnis von Rot und Schwarz gegen $50\%$ konvergieren sollte, Schwarz wahrscheinlicher wird, um die vorherige Unausgewogenheit auszugleichen."
 
-Die Roulettekugel hat jedoch kein Gedächtnis. Beim 11. Dreh ist die Wahrscheinlichkeit für Rot und die Wahrscheinlichkeit für Schwarz immer noch unabhängig und gleich hoch. [Das Gesetz der großen Zahlen](https://kenji.blog/p/law-of-large-numbers/) garantiert nur, dass das Verhältnis in der "unendlichen Zukunft" konvergiert, und **bedeutet nicht, dass Kräfte am Werk sind, um vergangene Abweichungen auszugleichen**.
+Die Roulettekugel hat jedoch kein Gedächtnis. Beim 11. Dreh ist die Wahrscheinlichkeit für Rot und die Wahrscheinlichkeit für Schwarz immer noch unabhängig und gleich hoch. [Das Gesetz der großen Zahlen](https://kenji.blog/de/p/law-of-large-numbers/) garantiert nur, dass das Verhältnis in der "unendlichen Zukunft" konvergiert, und **bedeutet nicht, dass Kräfte am Werk sind, um vergangene Abweichungen auszugleichen**.
 
 ## 6. Simulation mit Python
 
@@ -148,14 +148,14 @@ Wenn Sie diesen Code ausführen, schwankt der Durchschnitt bei den ersten Würfe
 
 ## 7. Fälle, in denen das Gesetz der großen Zahlen nicht gilt: Cauchy-Verteilung
 
-[Das Gesetz der großen Zahlen](https://kenji.blog/p/law-of-large-numbers/) ist nicht universell. Eine Voraussetzung ist, dass "der Erwartungswert (Mittelwert) endlich sein muss".
+[Das Gesetz der großen Zahlen](https://kenji.blog/de/p/law-of-large-numbers/) ist nicht universell. Eine Voraussetzung ist, dass "der Erwartungswert (Mittelwert) endlich sein muss".
 Eine Wahrscheinlichkeitsverteilung namens **Cauchy-Verteilung** hat beispielsweise sehr schwere Ränder (extreme Werte treten leicht auf) und ihr Erwartungswert und ihre Varianz können nicht definiert werden (sie divergieren gegen unendlich).
 
 Selbst wenn Sie Zufallszahlen generieren, die einer Cauchy-Verteilung folgen, und den Durchschnitt bilden, wird der Wert nie gegen eine bestimmte Zahl konvergieren und weiterhin wild springen. Auch in der realen Welt ist es wichtig zu verstehen, dass es Situationen (wie auf Finanzmärkten, wo unvorhersehbare und extreme Ereignisse namens "Schwarze Schwäne" auftreten) gibt, in denen das einfache Gesetz der großen Zahlen nicht angewandt werden kann (oder seine Anwendung gefährlich ist).
 
 ## 8. Anwendungsbeispiele in der realen Welt
 
-[Das Gesetz der großen Zahlen](https://kenji.blog/p/law-of-large-numbers/) wird nicht nur in Casinos genutzt, sondern in zahlreichen Systemen, die das Fundament unserer Gesellschaft stützen.
+[Das Gesetz der großen Zahlen](https://kenji.blog/de/p/law-of-large-numbers/) wird nicht nur in Casinos genutzt, sondern in zahlreichen Systemen, die das Fundament unserer Gesellschaft stützen.
 
 ### 8.1. Versicherungsgeschäft
 Lebensversicherungen und Kfz-Versicherungen sind Geschäftsmodelle, die genau auf dem Gesetz der großen Zahlen basieren. Es ist unmöglich vorherzusagen, wann ein einzelner Mensch krank wird oder einen Unfall hat. Sammelt man jedoch Daten in der Größenordnung von zehntausenden oder hunderttausenden Personen, lässt sich mit sehr hoher Genauigkeit vorhersagen, in welchem Verhältnis innerhalb eines bestimmten Zeitraums Versicherungszahlungen fällig werden. So lassen sich angemessene Prämien kalkulieren und ein funktionierendes Geschäft aufbauen.
@@ -168,6 +168,6 @@ Moderne KI- und maschinelle Lernmodelle erreichen eine hohe Genauigkeit, indem s
 
 ## 9. Fazit
 
-[Das Gesetz der großen Zahlen](https://kenji.blog/p/law-of-large-numbers/) ist ein mächtiges Werkzeug für uns, um eine hochgradig unsichere Welt zu verstehen und rationale Entscheidungen zu treffen. Von der Gewinnstruktur eines Casinos bis hin zu Versicherungen und KI-Technologie wirkt dieses Gesetz leise, aber zuverlässig überall in der modernen Gesellschaft.
+[Das Gesetz der großen Zahlen](https://kenji.blog/de/p/law-of-large-numbers/) ist ein mächtiges Werkzeug für uns, um eine hochgradig unsichere Welt zu verstehen und rationale Entscheidungen zu treffen. Von der Gewinnstruktur eines Casinos bis hin zu Versicherungen und KI-Technologie wirkt dieses Gesetz leise, aber zuverlässig überall in der modernen Gesellschaft.
 
 Wenn Sie das nächste Mal eine Münze werfen oder würfeln, warum denken Sie nicht einmal an die großartigen und wunderschönen mathematischen Gesetze, die sich hinter jedem zufälligen Ereignis verbergen? Anstatt sich über kurzfristiges Glück zu freuen oder zu ärgern, kann eine langfristige Perspektive vielleicht Ihre Sicht auf die Welt ein wenig verändern.

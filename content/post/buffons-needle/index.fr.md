@@ -211,7 +211,7 @@ L'exécution de ce code lâche un nombre énorme d'aiguilles virtuelles en utili
 
 ## Résumé
 
-[L'aiguille de Buffon](https://kenji.blog/p/buffons-needle/) semble à première vue être un simple jeu de hasard physique, mais il y a une solide théorie mathématique derrière cela. La façon dont des événements aléatoires (probabilité), des formes géométriques (lignes et segments de ligne) et l'ultime nombre irrationnel $\pi$ fusionnent dans une seule formule mathématique simple incarne la beauté des mathématiques.
+[L'aiguille de Buffon](https://kenji.blog/fr/p/buffons-needle/) semble à première vue être un simple jeu de hasard physique, mais il y a une solide théorie mathématique derrière cela. La façon dont des événements aléatoires (probabilité), des formes géométriques (lignes et segments de ligne) et l'ultime nombre irrationnel $\pi$ fusionnent dans une seule formule mathématique simple incarne la beauté des mathématiques.
 
 De plus, ce problème a une importance historique en tant qu'origine de la méthode de Monte-Carlo, qui est indispensable pour la science et la technologie modernes. La simulation de systèmes complexes et le calcul d'intégrales difficiles à résoudre analytiquement, l'idée de Buffon soutient encore notre monde sous diverses formes aujourd'hui.
 

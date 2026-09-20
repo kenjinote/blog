@@ -95,10 +95,10 @@ Die von Nazi-Deutschland im Zweiten Weltkrieg eingesetzte "Enigma" ist die berü
 
 Da sich die Rotoren jedes Mal drehten, wenn ein Buchstabe auf der Tastatur getippt wurde, erzeugte selbst das wiederholte Tippen desselben Buchstabens unterschiedliche Chiffretextzeichen (das Extrem der polyalphabetischen Chiffre). Der Schlüsselraum (die Kombination von Einstellungen) betrug etwa $1.58 \times 10^{19}$ Möglichkeiten (etwa 15,8 Trillionen), und ein Brute-Force-Angriff galt mit der damaligen Technologie als unmöglich.
 
-## [Alan Turing](https://kenji.blog/p/turing/) und die "Bombe (Bombe)"
+## [Alan Turing](https://kenji.blog/de/p/turing/) und die "Bombe (Bombe)"
 Das Team zur Entschlüsselung von Codes in Bletchley Park in Großbritannien, das auf den frühen Arbeiten des polnischen Mathematikers Marian Rejewski und anderer aufbaute, nahm die Herausforderung dieser uneinnehmbaren Enigma an.
 
-Insbesondere [Alan Turing](https://kenji.blog/p/turing/) entwickelte eine elektromechanische Entschlüsselungsmaschine namens "Bombe", die Vermutungen über den Klartext (Crib) nutzte, die Teilen des Chiffretextes entsprachen. Die Bombe erkannte schnell logische Widersprüche, schloss unmögliche Rotoreinstellungen eine nach der anderen aus und entschlüsselte erfolgreich die Enigma. Man sagt, dass diese bemerkenswerte Leistung den Sieg der Alliierten um mehrere Jahre beschleunigte.
+Insbesondere [Alan Turing](https://kenji.blog/de/p/turing/) entwickelte eine elektromechanische Entschlüsselungsmaschine namens "Bombe", die Vermutungen über den Klartext (Crib) nutzte, die Teilen des Chiffretextes entsprachen. Die Bombe erkannte schnell logische Widersprüche, schloss unmögliche Rotoreinstellungen eine nach der anderen aus und entschlüsselte erfolgreich die Enigma. Man sagt, dass diese bemerkenswerte Leistung den Sieg der Alliierten um mehrere Jahre beschleunigte.
 
 ---
 

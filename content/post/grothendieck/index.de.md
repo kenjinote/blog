@@ -8,9 +8,9 @@ categories: ["Mathematik", "Biografie"]
 tags: ["Grothendieck", "Algebraische Geometrie", "Schema-Theorie", "Kategorientheorie"]
 ---
 
-# [[Alexander Grothendieck](https://kenji.blog/p/grothendieck/): Leben und Werk des größten Mathematikers des 20. Jahrhunderts](https://kenji.blog/p/grothendieck/)
+# [[Alexander Grothendieck](https://kenji.blog/de/p/grothendieck/): Leben und Werk des größten Mathematikers des 20. Jahrhunderts](https://kenji.blog/p/grothendieck/)
 
-[Alexander Grothendieck](https://kenji.blog/p/grothendieck/) ist einer der größten Mathematiker der Geschichte, der in der Mathematikergemeinschaft des späten 20. Jahrhunderts, insbesondere im Bereich der algebraischen Geometrie, einen grundlegenden Paradigmenwechsel herbeiführte. Seine Errungenschaften gingen weit über die Lösung einzelner offener Probleme hinaus; sie rekonstruierten die Sprache und den konzeptionellen Rahmen der Mathematik selbst von Grund auf. In diesem Artikel geben wir eine detaillierte Erklärung seines außergewöhnlichen und dramatischen Lebens sowie seines unermesslichen Einflusses auf die moderne Mathematik.
+[Alexander Grothendieck](https://kenji.blog/de/p/grothendieck/) ist einer der größten Mathematiker der Geschichte, der in der Mathematikergemeinschaft des späten 20. Jahrhunderts, insbesondere im Bereich der algebraischen Geometrie, einen grundlegenden Paradigmenwechsel herbeiführte. Seine Errungenschaften gingen weit über die Lösung einzelner offener Probleme hinaus; sie rekonstruierten die Sprache und den konzeptionellen Rahmen der Mathematik selbst von Grund auf. In diesem Artikel geben wir eine detaillierte Erklärung seines außergewöhnlichen und dramatischen Lebens sowie seines unermesslichen Einflusses auf die moderne Mathematik.
 
 ## 1. Eine turbulente Kindheit und der Schatten des Krieges
 
@@ -124,4 +124,4 @@ In den 1980er Jahren schrieb er umfangreiche Memoiren mit dem Titel *Récoltes e
 
 ## Fazit
 
-[Alexander Grothendieck](https://kenji.blog/p/grothendieck/) war ein Gigant, der der Disziplin der Mathematik eine völlig neue Landschaft brachte. Die Konzepte, die er hinterließ, überschreiten den bloßen Rahmen der Mathematik und demonstrieren die sich erweiternden Möglichkeiten des menschlichen logischen Denkens. Die tiefe Welt, die er betrachtete, bringt bis heute reiche Früchte.
+[Alexander Grothendieck](https://kenji.blog/de/p/grothendieck/) war ein Gigant, der der Disziplin der Mathematik eine völlig neue Landschaft brachte. Die Konzepte, die er hinterließ, überschreiten den bloßen Rahmen der Mathematik und demonstrieren die sich erweiternden Möglichkeiten des menschlichen logischen Denkens. Die tiefe Welt, die er betrachtete, bringt bis heute reiche Früchte.

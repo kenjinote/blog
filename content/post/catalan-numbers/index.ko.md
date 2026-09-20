@@ -14,21 +14,21 @@ tags:
   - "트리"
 ---
 
-## 1. 들어가며: [카탈란 수](https://kenji.blog/p/catalan-numbers/)란?
+## 1. 들어가며: [카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)란?
 
-수학이나 컴퓨터 과학의 세계에서는 언뜻 보기에 전혀 달라 보이는 여러 문제들이 사실 이면에서 완전히 동일한 구조를 가지고 있는 아름다운 현상을 종종 볼 수 있습니다. 그 대표적인 예 중 하나가 바로 **[카탈란 수](https://kenji.blog/p/catalan-numbers/)** (Catalan numbers)입니다.
+수학이나 컴퓨터 과학의 세계에서는 언뜻 보기에 전혀 달라 보이는 여러 문제들이 사실 이면에서 완전히 동일한 구조를 가지고 있는 아름다운 현상을 종종 볼 수 있습니다. 그 대표적인 예 중 하나가 바로 **[카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)** (Catalan numbers)입니다.
 
-[카탈란 수](https://kenji.blog/p/catalan-numbers/)는 벨기에의 수학자 외젠 샤를 카탈란의 이름을 따서 명명된 수열로, 다음과 같이 시작합니다.
+[카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)는 벨기에의 수학자 외젠 샤를 카탈란의 이름을 따서 명명된 수열로, 다음과 같이 시작합니다.
 
 $$ C_0 = 1, \quad C_1 = 1, \quad C_2 = 2, \quad C_3 = 5, \quad C_4 = 14, \quad C_5 = 42, \quad C_6 = 132, \quad C_7 = 429, \quad \dots $$
 
-이 수열은 놀랍게도 매우 다양한 조합 문제의 해답으로 등장합니다. 본 글에서는 [카탈란 수](https://kenji.blog/p/catalan-numbers/)가 등장하는 유명한 4가지 예시(올바른 괄호 배열, 이진 트리, 다각형의 삼각 분할, 디크 경로)를 소개하고, 왜 이것들이 완전히 같은 수열이 되는지, 그 이면에 있는 재귀적인 구조를 파헤쳐 봅니다. 또한 동적 계획법(DP)을 사용한 계산 알고리즘과 생성 함수를 이용한 수학적 도출에 대해서도 자세히 설명합니다.
+이 수열은 놀랍게도 매우 다양한 조합 문제의 해답으로 등장합니다. 본 글에서는 [카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)가 등장하는 유명한 4가지 예시(올바른 괄호 배열, 이진 트리, 다각형의 삼각 분할, 디크 경로)를 소개하고, 왜 이것들이 완전히 같은 수열이 되는지, 그 이면에 있는 재귀적인 구조를 파헤쳐 봅니다. 또한 동적 계획법(DP)을 사용한 계산 알고리즘과 생성 함수를 이용한 수학적 도출에 대해서도 자세히 설명합니다.
 
-## 2. [카탈란 수](https://kenji.blog/p/catalan-numbers/)가 나타나는 4가지 구체적인 예
+## 2. [카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)가 나타나는 4가지 구체적인 예
 
 ### 예시 1: 올바른 괄호 배열 (Valid Parentheses)
 
-프로그래밍에서 괄호의 짝이 올바르게 맞는 것은 매우 중요합니다. $n$ 쌍의 괄호 `()` 를 사용하여 만들 수 있는 '올바른 괄호 배열'의 수는 [카탈란 수](https://kenji.blog/p/catalan-numbers/) $C_n$ 이 됩니다.
+프로그래밍에서 괄호의 짝이 올바르게 맞는 것은 매우 중요합니다. $n$ 쌍의 괄호 `()` 를 사용하여 만들 수 있는 '올바른 괄호 배열'의 수는 [카탈란 수](https://kenji.blog/ko/p/catalan-numbers/) $C_n$ 이 됩니다.
 
 올바른 괄호 배열이란 왼쪽에서 오른쪽으로 문자를 읽을 때, 어느 시점에서도 닫는 괄호 `)` 의 수가 여는 괄호 `(` 의 수를 초과하지 않는 문자열을 말합니다.
 
@@ -45,7 +45,7 @@ graph TD
 
 ### 예시 2: 이진 트리 구조 (Binary Trees)
 
-다음으로 데이터 구조로 친숙한 이진 트리를 생각해 봅시다. $n$ 개의 내부 노드를 가지는 이진 트리의 모양의 수도 [카탈란 수](https://kenji.blog/p/catalan-numbers/) $C_n$ 이 됩니다.
+다음으로 데이터 구조로 친숙한 이진 트리를 생각해 봅시다. $n$ 개의 내부 노드를 가지는 이진 트리의 모양의 수도 [카탈란 수](https://kenji.blog/ko/p/catalan-numbers/) $C_n$ 이 됩니다.
 
 $n = 3$ 인 경우, 3개의 노드를 가지는 이진 트리의 형태는 다음의 5가지가 존재합니다. 각각은 노드가 왼쪽 하위 트리와 오른쪽 하위 트리 중 어느 쪽에 연결되느냐에 따라 구별됩니다.
 
@@ -74,21 +74,21 @@ graph TD
 
 ### 예시 3: 다각형의 삼각 분할 (Polygon Triangulation)
 
-기하학의 세계에서도 [카탈란 수](https://kenji.blog/p/catalan-numbers/)는 등장합니다. 볼록 $(n+2)$ 각형을 꼭짓점끼리 연결하는 서로 교차하지 않는 대각선으로 $n$ 개의 삼각형으로 분할하는 방법의 수는 $C_n$ 가지입니다.
+기하학의 세계에서도 [카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)는 등장합니다. 볼록 $(n+2)$ 각형을 꼭짓점끼리 연결하는 서로 교차하지 않는 대각선으로 $n$ 개의 삼각형으로 분할하는 방법의 수는 $C_n$ 가지입니다.
 
 예를 들어 $n = 3$ 인 경우, 5각형($3+2=5$)을 3개의 삼각형으로 분할하는 방법을 생각해 봅니다. 대각선을 그어 삼각형을 만드는 방법은 정확히 5가지 존재합니다. 여기서도 $C_3 = 5$ 라는 숫자가 나타납니다.
 
 ### 예시 4: 디크 경로 (Dyck Paths)
 
-그리드 상의 경로 문제에서도 [카탈란 수](https://kenji.blog/p/catalan-numbers/)가 나타납니다. $n \times n$ 그리드에서 왼쪽 아래 $(0, 0)$ 부터 오른쪽 위 $(n, n)$ 까지 오른쪽 또는 위쪽으로 1칸씩 이동하는 최단 경로 중, 대각선 $y = x$ 를 한 번도 넘지 않는(항상 $y \le x$ 를 만족하는) 경로의 수는 $C_n$ 이 됩니다. 이를 **디크 경로** (Dyck path)라고 부릅니다.
+그리드 상의 경로 문제에서도 [카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)가 나타납니다. $n \times n$ 그리드에서 왼쪽 아래 $(0, 0)$ 부터 오른쪽 위 $(n, n)$ 까지 오른쪽 또는 위쪽으로 1칸씩 이동하는 최단 경로 중, 대각선 $y = x$ 를 한 번도 넘지 않는(항상 $y \le x$ 를 만족하는) 경로의 수는 $C_n$ 이 됩니다. 이를 **디크 경로** (Dyck path)라고 부릅니다.
 
 오른쪽으로의 이동을 `R`, 위쪽으로의 이동을 `U` 라고 하면, 어떤 접두사(prefix)에서도 `U` 의 수가 `R` 의 수를 초과하지 않는다는 조건이 됩니다. 이는 '올바른 괄호 배열'에서 `(` 와 `)` 의 관계와 완전히 동일합니다.
 
 ## 3. 왜 같은 수가 되는가? (이면에 있는 구조)
 
-전혀 달라 보이는 이 문제들이 왜 모두 같은 [카탈란 수](https://kenji.blog/p/catalan-numbers/)가 되는 것일까요? 그것은 이 문제들이 **완전히 동일한 재귀적 구조** 를 가지고 있기 때문입니다.
+전혀 달라 보이는 이 문제들이 왜 모두 같은 [카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)가 되는 것일까요? 그것은 이 문제들이 **완전히 동일한 재귀적 구조** 를 가지고 있기 때문입니다.
 
-[카탈란 수](https://kenji.blog/p/catalan-numbers/) $C_n$ 은 다음의 점화식으로 정의됩니다.
+[카탈란 수](https://kenji.blog/ko/p/catalan-numbers/) $C_n$ 은 다음의 점화식으로 정의됩니다.
 
 $$ C_0 = 1 $$
 $$ C_{n} = \sum_{i=0}^{n-1} C_i C_{n-1-i} \quad (n \ge 1) $$
@@ -122,7 +122,7 @@ graph LR
 
 ## 4. 닫힌 형태의 공식의 수학적 도출
 
-[카탈란 수](https://kenji.blog/p/catalan-numbers/)는 조합론 기호를 사용하여 매우 간단한 **닫힌 형태의 공식** (Closed-form formula)으로 표현할 수 있습니다.
+[카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)는 조합론 기호를 사용하여 매우 간단한 **닫힌 형태의 공식** (Closed-form formula)으로 표현할 수 있습니다.
 
 $$ C_n = \frac{1}{n+1} \binom{2n}{n} = \frac{(2n)!}{(n+1)!n!} $$
 
@@ -148,9 +148,9 @@ $$ C_n = \binom{2n}{n} - \binom{2n}{n-1} $$
 
 $$ C_n = \binom{2n}{n} - \frac{n}{n+1} \binom{2n}{n} = \left( 1 - \frac{n}{n+1} \right) \binom{2n}{n} = \frac{1}{n+1} \binom{2n}{n} $$
 
-### 4.2. 생성 함수 ([Generating Functions](https://kenji.blog/p/generating-functions/))를 이용한 접근
+### 4.2. 생성 함수 ([Generating Functions](https://kenji.blog/ko/p/generating-functions/))를 이용한 접근
 
-[카탈란 수](https://kenji.blog/p/catalan-numbers/)의 생성 함수를 $C(x) = \sum_{n=0}^\infty C_n x^n$ 이라고 합시다.
+[카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)의 생성 함수를 $C(x) = \sum_{n=0}^\infty C_n x^n$ 이라고 합시다.
 점화식 $C_{n} = \sum_{i=0}^{n-1} C_i C_{n-1-i}$ 를 이용하면 이 생성 함수가 다음 방정식을 만족함을 알 수 있습니다.
 
 $$ C(x) = 1 + x [C(x)]^2 $$
@@ -165,9 +165,9 @@ $$ C(x) = \frac{1 - \sqrt{1 - 4x}}{2x} $$
 
 여기서 일반화된 이항 정리(테일러 전개)를 사용하여 $\sqrt{1 - 4x} = (1 - 4x)^{1/2}$ 를 전개하고 계수를 비교하면 $C_n = \frac{1}{n+1} \binom{2n}{n}$ 이 도출됩니다.
 
-## 5. [카탈란 수](https://kenji.blog/p/catalan-numbers/)의 계산 알고리즘
+## 5. [카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)의 계산 알고리즘
 
-프로그래밍을 통해 [카탈란 수](https://kenji.blog/p/catalan-numbers/)를 계산할 때 주로 세 가지 접근 방식이 있습니다.
+프로그래밍을 통해 [카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)를 계산할 때 주로 세 가지 접근 방식이 있습니다.
 
 ### 5.1. 단순 재귀 (Naive Recursion)
 
@@ -225,6 +225,6 @@ for i in range(7):
 
 ## 6. 요약
 
-[카탈란 수](https://kenji.blog/p/catalan-numbers/)열 $C_n$ 은 올바른 괄호 배열, 이진 트리의 모양, 다각형의 삼각 분할, 디크 경로 등 언뜻 보기에 달라 보이는 수많은 문제에 공통적으로 나타나는 매혹적인 수열입니다. 이 문제들이 같은 수를 도출하는 이유는 모두가 **'전체를 두 개의 부분 문제로 분할하고 조합하는'** 공통의 재귀적 구조를 체현하고 있기 때문입니다.
+[카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)열 $C_n$ 은 올바른 괄호 배열, 이진 트리의 모양, 다각형의 삼각 분할, 디크 경로 등 언뜻 보기에 달라 보이는 수많은 문제에 공통적으로 나타나는 매혹적인 수열입니다. 이 문제들이 같은 수를 도출하는 이유는 모두가 **'전체를 두 개의 부분 문제로 분할하고 조합하는'** 공통의 재귀적 구조를 체현하고 있기 때문입니다.
 
 알고리즘과 데이터 구조를 배울 때 이러한 수학적 배경을 이해하면 문제의 본질을 꿰뚫어 보는 능력이 길러집니다. 동적 계획법의 훌륭한 연습 문제이기도 하니, 꼭 직접 코드를 작성하여 실험해 보시기 바랍니다!

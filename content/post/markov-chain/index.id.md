@@ -98,9 +98,9 @@ Pemecahan sistem persamaan menghasilkan hal berikut:
 
 Pemecahan ini memberikan $\pi_{\text{Cerah}} = \frac{4}{7} \approx 0.57$ dan $\pi_{\text{Hujan}} = \frac{3}{7} \approx 0.43$. Dengan kata lain, dalam jangka panjang, ada sekitar 57% kemungkinan cuaca cerah dan 43% kemungkinan hujan.
 
-## Aplikasi [Rantai Markov](https://kenji.blog/p/markov-chain/)
+## Aplikasi [Rantai Markov](https://kenji.blog/id/p/markov-chain/)
 
-[Rantai Markov](https://kenji.blog/p/markov-chain/) tidak terbatas pada dunia matematika; rantai Markov diterapkan pada berbagai sistem dunia nyata.
+[Rantai Markov](https://kenji.blog/id/p/markov-chain/) tidak terbatas pada dunia matematika; rantai Markov diterapkan pada berbagai sistem dunia nyata.
 
 ### 1. Algoritma PageRank Google
 Dengan memperlakukan halaman web di Internet sebagai keadaan dan tindakan mengikuti tautan sebagai transisi probabilitas, pentingnya halaman dihitung. Dapat dikatakan bahwa PageRank mencari distribusi stasioner di ruang keadaan Internet yang luas.
@@ -113,6 +113,6 @@ Pemodelan fluktuasi harga saham dan migrasi merek konsumen (kemungkinan bahwa se
 
 ## Kesimpulan
 
-[Rantai Markov](https://kenji.blog/p/markov-chain/) didasarkan pada asumsi sederhana namun kuat bahwa "prediksi masa depan dimungkinkan selama informasi saat ini tersedia". Karena **sifat Markov** ini, fenomena yang tampaknya kompleks dapat dirumuskan sebagai matriks probabilitas transisi, dan tren jangka panjang (distribusi stasioner) dapat diturunkan secara matematis.
+[Rantai Markov](https://kenji.blog/id/p/markov-chain/) didasarkan pada asumsi sederhana namun kuat bahwa "prediksi masa depan dimungkinkan selama informasi saat ini tersedia". Karena **sifat Markov** ini, fenomena yang tampaknya kompleks dapat dirumuskan sebagai matriks probabilitas transisi, dan tren jangka panjang (distribusi stasioner) dapat diturunkan secara matematis.
 
 Dengan aplikasi luas mulai dari pencarian informasi hingga AI dan prakiraan ekonomi, di samping keindahan teoretisnya, rantai Markov tidak diragukan lagi adalah salah satu lensa yang sangat penting untuk menguraikan dunia yang tidak pasti.

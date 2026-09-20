@@ -17,13 +17,13 @@ tags:
 
 Na matemática e na ciência da computação, frequentemente encontramos situações em que precisamos contar o número de elementos que satisfazem várias condições. No entanto, quando existem várias condições, os conjuntos de elementos que satisfazem cada condição frequentemente se sobrepõem (têm interseções). Simplesmente somá-los resultará em contar os elementos várias vezes.
 
-Um método poderoso para eliminar com precisão essas sobreposições e derivar o número correto de elementos é o **[Princípio da Inclusão-Exclusão](https://kenji.blog/p/inclusion-exclusion-principle/)**.
+Um método poderoso para eliminar com precisão essas sobreposições e derivar o número correto de elementos é o **[Princípio da Inclusão-Exclusão](https://kenji.blog/pt/p/inclusion-exclusion-principle/)**.
 
-Neste artigo, explicaremos de forma abrangente o [Princípio da Inclusão-Exclusão](https://kenji.blog/p/inclusion-exclusion-principle/) em detalhes, desde seus conceitos básicos até fórmulas matemáticas generalizadas, provas matemáticas e exemplos concretos de aplicação (como a função totiente de Euler e desarranjos). Além disso, apresentaremos exemplos de implementação de programação para aprofundar sua compreensão sob perspectivas teóricas e práticas.
+Neste artigo, explicaremos de forma abrangente o [Princípio da Inclusão-Exclusão](https://kenji.blog/pt/p/inclusion-exclusion-principle/) em detalhes, desde seus conceitos básicos até fórmulas matemáticas generalizadas, provas matemáticas e exemplos concretos de aplicação (como a função totiente de Euler e desarranjos). Além disso, apresentaremos exemplos de implementação de programação para aprofundar sua compreensão sob perspectivas teóricas e práticas.
 
 ## 2. Noções básicas de Conjuntos e Cardinalidade
 
-Antes de aprender o [Princípio da Inclusão-Exclusão](https://kenji.blog/p/inclusion-exclusion-principle/), vamos rever a notação básica de conjuntos.
+Antes de aprender o [Princípio da Inclusão-Exclusão](https://kenji.blog/pt/p/inclusion-exclusion-principle/), vamos rever a notação básica de conjuntos.
 
 - $A, B$ : Conjuntos
 - $|A|$ : Número de elementos (cardinalidade) do conjunto $A$
@@ -32,7 +32,7 @@ Antes de aprender o [Princípio da Inclusão-Exclusão](https://kenji.blog/p/inc
 
 O que queremos encontrar é a cardinalidade da união de vários conjuntos, ou seja, $|A \cup B \cup \dots|$.
 
-## 3. [Princípio da Inclusão-Exclusão](https://kenji.blog/p/inclusion-exclusion-principle/) para 2 Conjuntos
+## 3. [Princípio da Inclusão-Exclusão](https://kenji.blog/pt/p/inclusion-exclusion-principle/) para 2 Conjuntos
 
 Consideremos o caso mais simples com dois conjuntos, $A$ e $B$.
 
@@ -59,7 +59,7 @@ flowchart TD
     B -->|"Sobreposição"| AandB
 ```
 
-## 4. [Princípio da Inclusão-Exclusão](https://kenji.blog/p/inclusion-exclusion-principle/) para 3 Conjuntos
+## 4. [Princípio da Inclusão-Exclusão](https://kenji.blog/pt/p/inclusion-exclusion-principle/) para 3 Conjuntos
 
 Quando há três conjuntos, torna-se um pouco mais complexo. Considere os conjuntos $A, B, C$.
 
@@ -133,7 +133,7 @@ Isso prova que cada elemento é contado exatamente uma vez, sem duplicação.
 
 ## 6. Exemplo de Aplicação 1: Função Totiente de Euler
 
-A função totiente de Euler $\varphi(N)$ representa o número de inteiros de $1$ a $N$ que são coprimos com $N$. Isso também pode ser calculado usando o [Princípio da Inclusão-Exclusão](https://kenji.blog/p/inclusion-exclusion-principle/).
+A função totiente de Euler $\varphi(N)$ representa o número de inteiros de $1$ a $N$ que são coprimos com $N$. Isso também pode ser calculado usando o [Princípio da Inclusão-Exclusão](https://kenji.blog/pt/p/inclusion-exclusion-principle/).
 
 Sejam os fatores primos de $N$ representados por $p_1, p_2, \dots, p_k$.
 Seja o conjunto universal $U = \{1, 2, \dots, N\}$, e $A_i$ seja "o conjunto de múltiplos de $p_i$".
@@ -143,7 +143,7 @@ $$
 \varphi(N) = N - \left| \bigcup_{i=1}^k A_i \right|
 $$
 
-A aplicação do [Princípio da Inclusão-Exclusão](https://kenji.blog/p/inclusion-exclusion-principle/) e sua simplificação leva a esta famosa fórmula:
+A aplicação do [Princípio da Inclusão-Exclusão](https://kenji.blog/pt/p/inclusion-exclusion-principle/) e sua simplificação leva a esta famosa fórmula:
 
 $$
 \varphi(N) = N \left(1 - \frac{1}{p_1}\right) \left(1 - \frac{1}{p_2}\right) \dots \left(1 - \frac{1}{p_k}\right)
@@ -156,7 +156,7 @@ Um desarranjo é uma permutação dos números de $1$ a $n$ tal que nenhum $i$-�
 Seja $A_i$ "o conjunto de permutações onde $i$ está na $i$-ésima posição". A cardinalidade do conjunto universal é $n!$.
 Queremos encontrar $n! - |A_1 \cup A_2 \cup \dots \cup A_n|$.
 
-A cardinalidade da interseção de quaisquer $k$ conjuntos é $(n-k)!$, e existem $\binom{n}{k}$ maneiras de escolher tais $k$ conjuntos. Aplicando o [Princípio da Inclusão-Exclusão](https://kenji.blog/p/inclusion-exclusion-principle/), o número de desarranjos $D_n$ é obtido da seguinte forma:
+A cardinalidade da interseção de quaisquer $k$ conjuntos é $(n-k)!$, e existem $\binom{n}{k}$ maneiras de escolher tais $k$ conjuntos. Aplicando o [Princípio da Inclusão-Exclusão](https://kenji.blog/pt/p/inclusion-exclusion-principle/), o número de desarranjos $D_n$ é obtido da seguinte forma:
 
 $$
 D_n = n! \sum_{k=0}^n \frac{(-1)^k}{k!}
@@ -164,7 +164,7 @@ $$
 
 ## 8. Cálculo e Implementação via Programação
 
-O [Princípio da Inclusão-Exclusão](https://kenji.blog/p/inclusion-exclusion-principle/) é extremamente útil na programação. Especialmente quando combinado com pesquisa exaustiva bit a bit, o [Princípio da Inclusão-Exclusão](https://kenji.blog/p/inclusion-exclusion-principle/) para $n$ condições pode ser implementado de forma concisa.
+O [Princípio da Inclusão-Exclusão](https://kenji.blog/pt/p/inclusion-exclusion-principle/) é extremamente útil na programação. Especialmente quando combinado com pesquisa exaustiva bit a bit, o [Princípio da Inclusão-Exclusão](https://kenji.blog/pt/p/inclusion-exclusion-principle/) para $n$ condições pode ser implementado de forma concisa.
 
 Abaixo está o código Python para encontrar "o número de inteiros de 1 a $M$ que são divisíveis por qualquer um dos números primos em uma determinada lista".
 
@@ -203,7 +203,7 @@ A complexidade de tempo desse algoritmo é $O(n \cdot 2^n)$, que é executado co
 
 ## 9. Conclusão
 
-O [Princípio da Inclusão-Exclusão](https://kenji.blog/p/inclusion-exclusion-principle/) é uma fórmula matemática mágica que divide as sobreposições de conjuntos aparentemente complexas em uma repetição simples e mecânica de adição e subtração.
+O [Princípio da Inclusão-Exclusão](https://kenji.blog/pt/p/inclusion-exclusion-principle/) é uma fórmula matemática mágica que divide as sobreposições de conjuntos aparentemente complexas em uma repetição simples e mecânica de adição e subtração.
 
 Sua gama de aplicações é excepcionalmente ampla, abrangendo desde problemas básicos de probabilidade a programação competitiva avançada e o cálculo da função totiente de Euler relacionada à criptografia.
 Dominar essa técnica poderosa melhorará drasticamente suas habilidades de resolução de problemas em matemática e algoritmos. Não deixe de tentar aplicá-lo a vários problemas e experimentar o seu poder.

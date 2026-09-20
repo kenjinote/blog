@@ -80,7 +80,7 @@ Le problème de trouver le plus petit entier positif $ r $ qui satisfait cette c
 
 Si cette période $ r $ est trouvée et que $ r $ est pair, alors $ a^r - 1 \equiv 0 \pmod N $, et en utilisant la formule de factorisation, on peut la transformer en
 $ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $
-À partir de là, en utilisant l'algorithme d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/) pour calculer le plus grand commun diviseur de $ N $ et de $ a^{r/2} \pm 1 $, les facteurs premiers de $ N $ peuvent être obtenus avec une probabilité extrêmement élevée.
+À partir de là, en utilisant l'algorithme d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) pour calculer le plus grand commun diviseur de $ N $ et de $ a^{r/2} \pm 1 $, les facteurs premiers de $ N $ peuvent être obtenus avec une probabilité extrêmement élevée.
 
 En fin de compte, pour trouver la période $ r $ avec un ordinateur classique, des étapes exponentielles sont nécessaires et ne peuvent pas être accélérées. Cependant, avec un ordinateur quantique, cette période $ r $ peut être trouvée instantanément (en temps polynomial).
 

@@ -42,7 +42,7 @@ Dalam proyek pertambangan tersebut secara khusus, ia merancang sistem pompa cang
 
 Leibniz mengusulkan pendirian akademi akademik kepada berbagai raja dan menjabat sebagai presiden pertama Akademi Ilmu Pengetahuan Prusia, memainkan peran sentral dalam jaringan akademik Eropa. Ia juga bertemu dengan Peter yang Agung dari Rusia dan memberikan nasihat mengenai reformasi sistem pendidikan Rusia.
 
-Akan tetapi, pada tahun-tahun terakhirnya, reputasinya sangat ternoda oleh "perselisihan prioritas kalkulus" yang meletus dengan [Isaac Newton](https://kenji.blog/p/newton/). Selain itu, bahkan setelah tuannya di Hannover berangkat ke London sebagai Raja George I dari Britania Raya, Leibniz diperintahkan untuk menyelesaikan penyusunan buku-buku sejarah dan dipaksa tetap tinggal di Hannover. Ketika ia meninggal pada usia 70 tahun pada 1716, konon hanya sekretarisnya yang menghadiri pemakamannya.
+Akan tetapi, pada tahun-tahun terakhirnya, reputasinya sangat ternoda oleh "perselisihan prioritas kalkulus" yang meletus dengan [Isaac Newton](https://kenji.blog/id/p/newton/). Selain itu, bahkan setelah tuannya di Hannover berangkat ke London sebagai Raja George I dari Britania Raya, Leibniz diperintahkan untuk menyelesaikan penyusunan buku-buku sejarah dan dipaksa tetap tinggal di Hannover. Ketika ia meninggal pada usia 70 tahun pada 1716, konon hanya sekretarisnya yang menghadiri pemakamannya.
 
 ## 2. Pencapaian Matematika: Membangun Fondasi Sains Modern
 
@@ -64,7 +64,7 @@ $$
 
 ### 2.2 Sengketa Prioritas dengan Newton
 
-Mengenai kalkulus, salah satu perselisihan paling terkenal dalam sejarah sains terjadi dengan ilmuwan Inggris [Isaac Newton](https://kenji.blog/p/newton/). Newton telah sampai pada konsep kalkulus (metode fluksion) lebih awal dari Leibniz tetapi tidak mempublikasikannya untuk waktu yang lama. Sementara itu, Leibniz menemukan kalkulus secara mandiri dan mempublikasikannya lebih dulu dalam sebuah makalah pada tahun 1684.
+Mengenai kalkulus, salah satu perselisihan paling terkenal dalam sejarah sains terjadi dengan ilmuwan Inggris [Isaac Newton](https://kenji.blog/id/p/newton/). Newton telah sampai pada konsep kalkulus (metode fluksion) lebih awal dari Leibniz tetapi tidak mempublikasikannya untuk waktu yang lama. Sementara itu, Leibniz menemukan kalkulus secara mandiri dan mempublikasikannya lebih dulu dalam sebuah makalah pada tahun 1684.
 
 Saat ini, merupakan konsensus umum di antara para sejarawan bahwa **kedua pria tersebut menemukan kalkulus secara sepenuhnya mandiri**. Sementara metode Newton berakar pada fisika dan kinematika, metode Leibniz didasarkan pada pendekatan yang lebih formal dan aljabar.
 
@@ -99,7 +99,7 @@ Dalam menyelesaikan sistem persamaan linear, Leibniz secara mandiri sampai pada 
 
 ### 2.5 Penemuan Kalkulator Stepped Reckoner
 
-Leibniz bukan hanya seorang matematikawan teoretis tetapi juga seorang penemu praktis yang mengukir namanya dalam sejarah kalkulator mekanis. Ia menyempurnakan kalkulator [Blaise Pascal](https://kenji.blog/p/pascal/) (Pascaline), yang hanya bisa melakukan penambahan dan pengurangan, dan menemukan kalkulator yang menggunakan "Roda Leibniz" (Stepped Reckoner) yang mampu melakukan perkalian dan pembagian.
+Leibniz bukan hanya seorang matematikawan teoretis tetapi juga seorang penemu praktis yang mengukir namanya dalam sejarah kalkulator mekanis. Ia menyempurnakan kalkulator [Blaise Pascal](https://kenji.blog/id/p/pascal/) (Pascaline), yang hanya bisa melakukan penambahan dan pengurangan, dan menemukan kalkulator yang menggunakan "Roda Leibniz" (Stepped Reckoner) yang mampu melakukan perkalian dan pembagian.
 
 Mekanisme ini revolusioner dan terus diadopsi sebagai struktur standar untuk kalkulator mekanis selama beberapa ratus tahun berikutnya.
 
@@ -133,7 +133,7 @@ Leibniz juga memberikan kontribusi signifikan pada logika. Ia mengusulkan "Prins
 
 Leibniz percaya bahwa pemikiran manusia dapat direduksi menjadi perhitungan matematika. Ia bermimpi membangun sebuah "Karakteristik universal" (*Characteristica universalis*) yang akan menyimbolkan semua konsep, dan sebuah *Calculus ratiocinator* untuk memanipulasi simbol-simbol tersebut menurut aturan.
 
-Frasa yang ia tinggalkan, "Mari kita hitung" (*Calculemus*), melambangkan idealnya untuk mendapatkan kebenaran melalui perhitungan daripada perdebatan setiap kali terjadi perselisihan. Konsep ini adalah pelopor logika simbolik dan visi historis yang terhubung langsung dengan teori komputasi [Alan Turing](https://kenji.blog/p/turing/) dan konsep modern **Kecerdasan Buatan (AI)**.
+Frasa yang ia tinggalkan, "Mari kita hitung" (*Calculemus*), melambangkan idealnya untuk mendapatkan kebenaran melalui perhitungan daripada perdebatan setiap kali terjadi perselisihan. Konsep ini adalah pelopor logika simbolik dan visi historis yang terhubung langsung dengan teori komputasi [Alan Turing](https://kenji.blog/id/p/turing/) dan konsep modern **Kecerdasan Buatan (AI)**.
 
 ## 5. Kesimpulan
 

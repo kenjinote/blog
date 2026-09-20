@@ -32,7 +32,7 @@ Porém, a resposta matemática correta é **"aproximadamente 0,98% (menos de 1%)
 
 Por que, apesar de uma precisão de 99%, a probabilidade real acaba sendo inferior a 1%?
 
-## [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) e a Visualização do Todo
+## [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/) e a Visualização do Todo
 
 A chave para desvendar esse problema está em considerar não apenas a precisão do teste, mas também **"quão rara é a doença em primeiro lugar (taxa base/probabilidade prévia)"**.
 Vamos visualizar esse fenômeno contraintuitivo usando uma grande população de 1 milhão de pessoas.
@@ -87,7 +87,7 @@ Apesar de ser informado de que testou "positivo", a probabilidade de você estar
 
 ## Por Que a Intuição Erra?
 
-Embora esse fenômeno seja explicado matematicamente pelo **"[Teorema de Bayes](https://kenji.blog/p/bayes-theorem/)"**, que calcula a probabilidade condicional, o cérebro humano é muito ruim em lidar com esse tipo de cálculo.
+Embora esse fenômeno seja explicado matematicamente pelo **"[Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/)"**, que calcula a probabilidade condicional, o cérebro humano é muito ruim em lidar com esse tipo de cálculo.
 
 O motivo pelo qual cometemos erros é que nos distraímos com as informações individuais e fortes fornecidas imediatamente diante de nós ("O resultado do seu teste é positivo! A precisão é de 99%!"), e ignoramos os imensos e monótonos dados estatísticos ao fundo ("Em primeiro lugar, apenas 1 em 10.000 pessoas contrai essa doença (taxa base)").
 

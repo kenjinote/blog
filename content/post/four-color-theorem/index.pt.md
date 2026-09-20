@@ -10,7 +10,7 @@ tags: ["Teorema das Quatro Cores", "Teoria dos Grafos", "Prova Assistida por Com
 
 ## 1. O que é o Teorema das Quatro Cores?
 
-O [Teorema das Quatro Cores (Four Color Theorem)](https://kenji.blog/p/four-color-theorem/) é um dos problemas mais famosos e fascinantes da matemática, especialmente na teoria dos grafos e topologia. Sua afirmação é muito simples, tão intuitiva que até um estudante do ensino fundamental pode entender. Ele afirma que "qualquer mapa em um plano pode ser colorido de tal forma que regiões adjacentes tenham cores diferentes usando no máximo **4 cores**".
+O [Teorema das Quatro Cores (Four Color Theorem)](https://kenji.blog/pt/p/four-color-theorem/) é um dos problemas mais famosos e fascinantes da matemática, especialmente na teoria dos grafos e topologia. Sua afirmação é muito simples, tão intuitiva que até um estudante do ensino fundamental pode entender. Ele afirma que "qualquer mapa em um plano pode ser colorido de tal forma que regiões adjacentes tenham cores diferentes usando no máximo **4 cores**".
 
 O termo "adjacentes" aqui refere-se ao estado de compartilhar uma fronteira, e não apenas um ponto. Se as regiões se tocarem apenas por um ponto, não há problema em colori-las com a mesma cor. Esta hipótese intuitiva foi levantada pela primeira vez em 1852 por Francis Guthrie. Ao colorir um mapa da Inglaterra, ele percebeu que não importava quão complexas fossem as fronteiras, bastavam 4 cores para colorir o mapa.
 
@@ -67,7 +67,7 @@ A exploração deste problema nos ensina quão poderosa é a intuição humana, 
 
 ## 1. O que é o Teorema das Quatro Cores?
 
-O [Teorema das Quatro Cores (Four Color Theorem)](https://kenji.blog/p/four-color-theorem/) é um dos problemas mais famosos e fascinantes da matemática, especialmente na teoria dos grafos e topologia. Sua afirmação é muito simples, tão intuitiva que até um estudante do ensino fundamental pode entender. Ele afirma que "qualquer mapa em um plano pode ser colorido de tal forma que regiões adjacentes tenham cores diferentes usando no máximo **4 cores**".
+O [Teorema das Quatro Cores (Four Color Theorem)](https://kenji.blog/pt/p/four-color-theorem/) é um dos problemas mais famosos e fascinantes da matemática, especialmente na teoria dos grafos e topologia. Sua afirmação é muito simples, tão intuitiva que até um estudante do ensino fundamental pode entender. Ele afirma que "qualquer mapa em um plano pode ser colorido de tal forma que regiões adjacentes tenham cores diferentes usando no máximo **4 cores**".
 
 O termo "adjacentes" aqui refere-se ao estado de compartilhar uma fronteira, e não apenas um ponto. Se as regiões se tocarem apenas por um ponto, não há problema em colori-las com a mesma cor. Esta hipótese intuitiva foi levantada pela primeira vez em 1852 por Francis Guthrie. Ao colorir um mapa da Inglaterra, ele percebeu que não importava quão complexas fossem as fronteiras, bastavam 4 cores para colorir o mapa.
 
@@ -124,7 +124,7 @@ A exploração deste problema nos ensina quão poderosa é a intuição humana, 
 
 ## 1. O que é o Teorema das Quatro Cores?
 
-O [Teorema das Quatro Cores (Four Color Theorem)](https://kenji.blog/p/four-color-theorem/) é um dos problemas mais famosos e fascinantes da matemática, especialmente na teoria dos grafos e topologia. Sua afirmação é muito simples, tão intuitiva que até um estudante do ensino fundamental pode entender. Ele afirma que "qualquer mapa em um plano pode ser colorido de tal forma que regiões adjacentes tenham cores diferentes usando no máximo **4 cores**".
+O [Teorema das Quatro Cores (Four Color Theorem)](https://kenji.blog/pt/p/four-color-theorem/) é um dos problemas mais famosos e fascinantes da matemática, especialmente na teoria dos grafos e topologia. Sua afirmação é muito simples, tão intuitiva que até um estudante do ensino fundamental pode entender. Ele afirma que "qualquer mapa em um plano pode ser colorido de tal forma que regiões adjacentes tenham cores diferentes usando no máximo **4 cores**".
 
 O termo "adjacentes" aqui refere-se ao estado de compartilhar uma fronteira, e não apenas um ponto. Se as regiões se tocarem apenas por um ponto, não há problema em colori-las com a mesma cor. Esta hipótese intuitiva foi levantada pela primeira vez em 1852 por Francis Guthrie. Ao colorir um mapa da Inglaterra, ele percebeu que não importava quão complexas fossem as fronteiras, bastavam 4 cores para colorir o mapa.
 
@@ -181,7 +181,7 @@ A exploração deste problema nos ensina quão poderosa é a intuição humana, 
 
 ## 1. O que é o Teorema das Quatro Cores?
 
-O [Teorema das Quatro Cores (Four Color Theorem)](https://kenji.blog/p/four-color-theorem/) é um dos problemas mais famosos e fascinantes da matemática, especialmente na teoria dos grafos e topologia. Sua afirmação é muito simples, tão intuitiva que até um estudante do ensino fundamental pode entender. Ele afirma que "qualquer mapa em um plano pode ser colorido de tal forma que regiões adjacentes tenham cores diferentes usando no máximo **4 cores**".
+O [Teorema das Quatro Cores (Four Color Theorem)](https://kenji.blog/pt/p/four-color-theorem/) é um dos problemas mais famosos e fascinantes da matemática, especialmente na teoria dos grafos e topologia. Sua afirmação é muito simples, tão intuitiva que até um estudante do ensino fundamental pode entender. Ele afirma que "qualquer mapa em um plano pode ser colorido de tal forma que regiões adjacentes tenham cores diferentes usando no máximo **4 cores**".
 
 O termo "adjacentes" aqui refere-se ao estado de compartilhar uma fronteira, e não apenas um ponto. Se as regiões se tocarem apenas por um ponto, não há problema em colori-las com a mesma cor. Esta hipótese intuitiva foi levantada pela primeira vez em 1852 por Francis Guthrie. Ao colorir um mapa da Inglaterra, ele percebeu que não importava quão complexas fossem as fronteiras, bastavam 4 cores para colorir o mapa.
 

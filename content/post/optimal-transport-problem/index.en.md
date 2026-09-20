@@ -14,7 +14,7 @@ tags:
 
 ## Introduction
 
-The [Optimal Transport Problem](https://kenji.blog/p/optimal-transport-problem/) is a mathematical problem that asks **"how to move material with minimal effort"** when moving a substance (like a sandpile) from one place to another (like a hole).
+The [Optimal Transport Problem](https://kenji.blog/en/p/optimal-transport-problem/) is a mathematical problem that asks **"how to move material with minimal effort"** when moving a substance (like a sandpile) from one place to another (like a hole).
 
 It was posed by the French mathematician Gaspard Monge in the 18th century, and a modern formulation was established by Leonid Kantorovich in the 20th century. Today, it is widely applied in fields ranging from resource allocation in economics to machine learning.
 

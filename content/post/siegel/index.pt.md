@@ -8,9 +8,9 @@ categories: ["mathematics", "biography"]
 tags: ["Siegel", "teoria dos números", "matemático", "mecânica celeste", "teoria analítica dos números", "equações diofantinas"]
 ---
 
-## 1. Introdução: Quem é [Carl Ludwig Siegel](https://kenji.blog/p/siegel/)?
+## 1. Introdução: Quem é [Carl Ludwig Siegel](https://kenji.blog/pt/p/siegel/)?
 
-[Carl Ludwig Siegel](https://kenji.blog/p/siegel/) (31 de dezembro de 1896 – 4 de abril de 1981) foi um dos matemáticos alemães mais excepcionais do século XX, deixando um legado maciço no mundo matemático. Sua pesquisa concentrou-se principalmente na teoria dos números (teoria analítica e algébrica dos números), equações diofantinas, aproximações diofantinas e mecânica celeste (sistemas dinâmicos complexos). Suas realizações continuam a ocupar uma posição extremamente crucial na matemática moderna.
+[Carl Ludwig Siegel](https://kenji.blog/pt/p/siegel/) (31 de dezembro de 1896 – 4 de abril de 1981) foi um dos matemáticos alemães mais excepcionais do século XX, deixando um legado maciço no mundo matemático. Sua pesquisa concentrou-se principalmente na teoria dos números (teoria analítica e algébrica dos números), equações diofantinas, aproximações diofantinas e mecânica celeste (sistemas dinâmicos complexos). Suas realizações continuam a ocupar uma posição extremamente crucial na matemática moderna.
 
 Siegel era conhecido por sua impressionante proeza computacional, profundo discernimento e capacidade de lidar com maestria com técnicas analíticas complexas. Em um cenário matemático do século XX que se movia rapidamente em direção à abstração e axiomatização, ele valorizava acima de tudo a resolução de problemas concretos e o refinamento de métodos clássicos, mantendo um estilo ferozmente independente. Ele também é famoso por sua forte crítica à abstração extrema promovida pelo grupo matemático francês Bourbaki. Este artigo investiga profundamente suas extraordinárias realizações matemáticas, juntamente com episódios de sua vida turbulenta.
 
@@ -20,7 +20,7 @@ Siegel era conhecido por sua impressionante proeza computacional, profundo disce
 
 Siegel nasceu em 1896 em Berlim, no Império Alemão. Demonstrando talento excepcional em matemática e ciências desde tenra idade, ele ingressou na Universidade Humboldt de Berlim (Universidade de Berlim) em 1915. Lá, ele teve a sorte de aprender com alguns dos maiores estudiosos da época, incluindo o físico Max Planck e o mestre em álgebra e teoria dos grupos, Ferdinand Georg Frobenius. Inicialmente, Siegel também se interessava por astronomia e física, mas as palestras apaixonadas de Frobenius despertaram um profundo interesse pela teoria dos números, tornando-se o catalisador decisivo para que ele seguisse um caminho na matemática.
 
-No entanto, a eclosão da Primeira Guerra Mundial forçou a interrupção de seus estudos. Em 1917, Siegel foi convocado para o serviço militar, mas recusou-se a servir devido a seus fortes sentimentos antiguerra e convicções pessoais. Naquela época, recusar o serviço militar era um crime grave na Alemanha, e ele suportou a dura provação de ser confinado em um hospital psiquiátrico. Ele foi resgatado dessa situação desesperadora pelo eminente matemático Edmund Landau. Libertado graças aos esforços de Landau, Siegel transferiu-se para a Universidade de Göttingen em 1917. Göttingen era então a meca global da matemática, lar de gigantes como [David Hilbert](https://kenji.blog/p/hilbert/) e Felix Klein. Nesse ambiente, Siegel prosperou e deixou seus talentos florescerem de verdade.
+No entanto, a eclosão da Primeira Guerra Mundial forçou a interrupção de seus estudos. Em 1917, Siegel foi convocado para o serviço militar, mas recusou-se a servir devido a seus fortes sentimentos antiguerra e convicções pessoais. Naquela época, recusar o serviço militar era um crime grave na Alemanha, e ele suportou a dura provação de ser confinado em um hospital psiquiátrico. Ele foi resgatado dessa situação desesperadora pelo eminente matemático Edmund Landau. Libertado graças aos esforços de Landau, Siegel transferiu-se para a Universidade de Göttingen em 1917. Göttingen era então a meca global da matemática, lar de gigantes como [David Hilbert](https://kenji.blog/pt/p/hilbert/) e Felix Klein. Nesse ambiente, Siegel prosperou e deixou seus talentos florescerem de verdade.
 
 ```mermaid
 graph TD
@@ -46,7 +46,7 @@ Nos Estados Unidos, foi recebido no Instituto de Estudos Avançados (IAS) em Pri
 
 Após o fim da Segunda Guerra Mundial, Siegel optou por não residir permanentemente nos Estados Unidos, tomando a importante decisão de retornar à sua terra natal, a Alemanha, em 1951. Voltou como professor para a Universidade de Göttingen, onde outrora estudara, e dedicou-se à reconstrução da comunidade matemática alemã, que fora devastada pela guerra. Ele continuou suas vigorosas atividades de pesquisa e formou muitos sucessores de destaque. Suas palestras eram rigorosas e lúcidas, o que lhe rendeu o profundo respeito de seus alunos.
 
-Em 1978, em reconhecimento às extraordinárias realizações de toda a sua vida, foi premiado conjuntamente com o primeiro Prêmio Wolf de Matemática, uma das maiores honrarias no mundo matemático, juntamente com Israel Gelfand. Em 4 de abril de 1981, [Carl Ludwig Siegel](https://kenji.blog/p/siegel/) faleceu em Göttingen, encerrando sua vida agitada de 84 anos.
+Em 1978, em reconhecimento às extraordinárias realizações de toda a sua vida, foi premiado conjuntamente com o primeiro Prêmio Wolf de Matemática, uma das maiores honrarias no mundo matemático, juntamente com Israel Gelfand. Em 4 de abril de 1981, [Carl Ludwig Siegel](https://kenji.blog/pt/p/siegel/) faleceu em Göttingen, encerrando sua vida agitada de 84 anos.
 
 ## 3. Grandes Realizações Matemáticas
 
@@ -64,7 +64,7 @@ $$
 
 Por exemplo, embora possa haver infinitas soluções reais ou racionais para uma curva elíptica (gênero $g=1$) como $x^3 + y^3 = c$ (onde $c$ é um inteiro não nulo), este teorema garante que se nos restringirmos a **soluções inteiras**, haverá sempre apenas um número finito.
 
-Este resultado foi inovador em relação à finitude das soluções das equações diofantinas e tornou-se um passo histórico crucial que abriu caminho para a posterior prova do teorema de Mordell-Weil (a finitude dos pontos racionais em curvas de gênero 2 ou superior) por [Gerd Faltings](https://kenji.blog/p/faltings/). Siegel derivou este resultado surpreendente ampliando significativamente o teorema de Axel Thue sobre aproximações diofantinas e combinando-o com a teoria dos jacobianos sobre variedades abelianas.
+Este resultado foi inovador em relação à finitude das soluções das equações diofantinas e tornou-se um passo histórico crucial que abriu caminho para a posterior prova do teorema de Mordell-Weil (a finitude dos pontos racionais em curvas de gênero 2 ou superior) por [Gerd Faltings](https://kenji.blog/pt/p/faltings/). Siegel derivou este resultado surpreendente ampliando significativamente o teorema de Axel Thue sobre aproximações diofantinas e combinando-o com a teoria dos jacobianos sobre variedades abelianas.
 
 ### 3.2 Zero de Siegel
 
@@ -107,11 +107,11 @@ No campo da teoria dos números transcendentes, ele também provou um teorema ex
 
 A afirmação do teorema é a seguinte: "Em um sistema de equações lineares simultâneas onde os coeficientes são inteiros, se o número de incógnitas $N$ é suficientemente maior que o número de equações $M$ ( $N > M$ ), existe sempre uma solução inteira não trivial onde o valor absoluto de cada componente é relativamente pequeno (limitado superiormente de forma apropriada, de acordo com o tamanho dos coeficientes)."
 
-Com uma demonstração elegante usando o princípio da casa dos pombos (princípio das gavetas de Dirichlet), esse lema é usado com frequência como uma ferramenta básica indispensável na moderna teoria da transcendência, como na construção de números transcendentes, aproximações diofantinas e, mais tarde, na teoria de [Alan Baker](https://kenji.blog/p/baker/) das formas lineares em logaritmos.
+Com uma demonstração elegante usando o princípio da casa dos pombos (princípio das gavetas de Dirichlet), esse lema é usado com frequência como uma ferramenta básica indispensável na moderna teoria da transcendência, como na construção de números transcendentes, aproximações diofantinas e, mais tarde, na teoria de [Alan Baker](https://kenji.blog/pt/p/baker/) das formas lineares em logaritmos.
 
 ### 3.5 Mecânica Celeste e o Problema dos Pequenos Divisores
 
-Siegel não se limitou à matemática pura; ele ardia de uma obsessão extraordinária pela mecânica celeste, especialmente pelo problema dos três corpos, que descreve o movimento dos sistemas de muitos corpos. Ele desenvolveu o estudo dos sistemas dinâmicos iniciado por [Henri Poincaré](https://kenji.blog/p/poincare/) e deixou resultados inovadores sobre a estabilidade das soluções de equações diferenciais.
+Siegel não se limitou à matemática pura; ele ardia de uma obsessão extraordinária pela mecânica celeste, especialmente pelo problema dos três corpos, que descreve o movimento dos sistemas de muitos corpos. Ele desenvolveu o estudo dos sistemas dinâmicos iniciado por [Henri Poincaré](https://kenji.blog/pt/p/poincare/) e deixou resultados inovadores sobre a estabilidade das soluções de equações diferenciais.
 
 Em 1941, provou o "teorema do centro de Siegel" na mecânica analítica e em sistemas dinâmicos complexos. Isso resolveu a questão de quando uma função holomorfa é linearizável na vizinhança de seu ponto fixo no plano complexo. Na expansão de Taylor da função, se $\lambda$ representa o valor da derivada, quando $\lambda$ assume um valor próximo de uma raiz da unidade, valores muito pequenos aparecem no denominador, causando a divergência da série - um fenômeno conhecido como o "problema dos pequenos divisores" (small divisor problem).
 
@@ -135,7 +135,7 @@ Devido a essa forte convicção, a leitura de seus artigos é muito recompensado
 
 ## 5. Conclusão e o Legado de Siegel
 
-Através de seu talento analítico inigualável e profunda reverência pela matemática clássica, [Carl Ludwig Siegel](https://kenji.blog/p/siegel/) deixou realizações decisivas e que marcaram época na teoria dos números, geometria diofantina e mecânica celeste.
+Através de seu talento analítico inigualável e profunda reverência pela matemática clássica, [Carl Ludwig Siegel](https://kenji.blog/pt/p/siegel/) deixou realizações decisivas e que marcaram época na teoria dos números, geometria diofantina e mecânica celeste.
 
 Os numerosos conceitos e teoremas com seu nome, como o zero de Siegel, o teorema de Siegel, as formas modulares de Siegel e o lema de Siegel, tornaram-se linguagens comuns usadas diariamente pelos matemáticos modernos, servindo como alicerces indispensáveis mesmo nas pesquisas de ponta em andamento.
 

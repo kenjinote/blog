@@ -9,7 +9,7 @@ categories: ["mathematics", "programming", "algorithms"]
 tags: ["Math", "Algorithms", "Python", "C++"]
 ---
 
-# [A Must-See for Math Lovers! 10 Beautiful Math Formulas Useful for Programming](https://kenji.blog/p/プログラミングに役立つ数式10選/)
+# [A Must-See for Math Lovers! 10 Beautiful Math Formulas Useful for Programming](https://kenji.blog/en/p/プログラミングに役立つ数式10選/)
 
 At first glance, programming and mathematics might seem like completely different fields. Programming is the act of writing logical and concrete code, while mathematics is the study of abstract and universal truths. However, mathematics is always at the foundation of computer science. Beautiful mathematical formulas work quietly and powerfully behind the scenes of algorithm optimization, data science, machine learning, computer graphics, and even everyday applications.
 
@@ -19,7 +19,7 @@ Welcome to the world where the beauty of mathematics intersects with the practic
 
 ---
 
-## 1. [Euler's Identity](https://kenji.blog/p/eulers-identity/)
+## 1. [Euler's Identity](https://kenji.blog/en/p/eulers-identity/)
 
 ### Beauty and Overview of the Formula
 This is Euler's identity, hailed as the "jewel of humanity" and the "most beautiful formula in the world". Five of the most important constants in mathematics (Napier's constant $e$, the imaginary unit $i$, pi $\pi$, the multiplicative identity $1$, and the additive identity $0$) are unified into a single simple equation.
@@ -132,7 +132,7 @@ In the code above, the input value `x` is normalized to the range $[-\pi, \pi]$.
 
 ---
 
-## 3. [Bayes' Theorem](https://kenji.blog/p/bayes-theorem/)
+## 3. [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/)
 
 ### Beauty and Overview of the Formula
 Bayes' theorem is a theorem for updating the probability of an event (posterior probability) based on prior knowledge (prior probability) related to that event. It is one of the most important formulas in probability theory and statistics.
@@ -559,12 +559,12 @@ Branching at `x >= 0` in the code above is to prevent "overflow," a problem spec
 
 ---
 
-## 10. [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem
+## 10. [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem
 
 ### Beauty and Overview of the Formula
 Passed down from ancient Greek geometry, this is the foundational mathematical formula defining the linear distance between two points in an $n$-dimensional space. In 2D space, it is exactly the Pythagorean theorem ($a^2 + b^2 = c^2$).
 
-The [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an distance $d$ between point $P(x_1, y_1, z_1)$ and $Q(x_2, y_2, z_2)$ in a 3D space is expressed as follows:
+The [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an distance $d$ between point $P(x_1, y_1, z_1)$ and $Q(x_2, y_2, z_2)$ in a 3D space is expressed as follows:
 
 $$ d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2} $$
 

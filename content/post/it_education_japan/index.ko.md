@@ -142,7 +142,7 @@ int main() {
 
 우리가 매일 이용하고 있는 HTTPS 통신이나 전자 서명은 RSA 암호 등의 공개키 암호 방식에 의해 보호받고 있습니다. RSA 암호의 안전성은 '거대한 정수의 소인수분해는 현재의 고전 컴퓨터로는 현실적인 시간 내에 풀 수 없다'는 수학적 곤란성(NP-중간 문제로 여겨짐)에 의존하고 있습니다.
 
-RSA 암호의 기초가 되는 수식은 오일러의 피 함수(Totient function)와 [페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)를 응용한 아름다운 것입니다.
+RSA 암호의 기초가 되는 수식은 오일러의 피 함수(Totient function)와 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)를 응용한 아름다운 것입니다.
 
 1. 2개의 거대한 소수 $p$와 $q$를 고른다
 2. $n = p \times q$를 계산한다 (이것이 공개키의 일부가 된다)

@@ -8,16 +8,16 @@ categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 
-# O que é o Algoritmo de [Euclides](https://kenji.blog/p/euclid/)?
+# O que é o Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/)?
 
-O **Algoritmo de [Euclides](https://kenji.blog/p/euclid/)** ([Euclide](https://kenji.blog/p/euclid/)an algorithm) é um método eficiente para calcular o máximo divisor comum (MDC) de dois números naturais (ou inteiros). Descrito por volta de 300 a.C. pelo antigo matemático grego [Euclides](https://kenji.blog/p/euclid/) no Livro VII de seu tratado matemático "Elementos" (Elements), é amplamente conhecido como um dos "algoritmos mais antigos da humanidade".
+O **Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/)** ([Euclide](https://kenji.blog/pt/p/euclid/)an algorithm) é um método eficiente para calcular o máximo divisor comum (MDC) de dois números naturais (ou inteiros). Descrito por volta de 300 a.C. pelo antigo matemático grego [Euclides](https://kenji.blog/pt/p/euclid/) no Livro VII de seu tratado matemático "Elementos" (Elements), é amplamente conhecido como um dos "algoritmos mais antigos da humanidade".
 
-A maneira mais ingênua de encontrar o MDC é encontrar a fatoração em primos de ambos os números e multiplicar os fatores primos comuns. No entanto, à medida que os números crescem, a complexidade computacional da própria fatoração em primos torna-se enorme, dificultando sua resolução em um período de tempo realista. Por outro lado, usando o **Algoritmo de [Euclides](https://kenji.blog/p/euclid/)** , é possível calcular o MDC de forma extremamente rápida, mesmo para números enormes com milhares de dígitos.
+A maneira mais ingênua de encontrar o MDC é encontrar a fatoração em primos de ambos os números e multiplicar os fatores primos comuns. No entanto, à medida que os números crescem, a complexidade computacional da própria fatoração em primos torna-se enorme, dificultando sua resolução em um período de tempo realista. Por outro lado, usando o **Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/)** , é possível calcular o MDC de forma extremamente rápida, mesmo para números enormes com milhares de dígitos.
 
 ## Teorema Básico e Mecânica
 
 Seja $\gcd(a, b)$ o máximo divisor comum de dois números naturais $a$ e $b$ (onde $a \ge b$).
-O algoritmo de [Euclides](https://kenji.blog/p/euclid/) é baseado no seguinte teorema simples:
+O algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) é baseado no seguinte teorema simples:
 
 $$
 a = bq + r \implies \gcd(a, b) = \gcd(b, r)
@@ -39,7 +39,7 @@ Por que $\gcd(a, b) = \gcd(b, r)$ é verdadeiro? Vamos prová-lo brevemente.
 
 ## Fluxograma do Algoritmo
 
-Aproveitando esta propriedade, o algoritmo de [Euclides](https://kenji.blog/p/euclid/) realiza repetidas divisões até que o resto chegue a $0$ .
+Aproveitando esta propriedade, o algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) realiza repetidas divisões até que o resto chegue a $0$ .
 
 ```mermaid
 flowchart TD
@@ -109,24 +109,24 @@ int main() {
 
 ## Complexidade de Tempo e Teorema de Lamé
 
-Quão rápido é o algoritmo de [Euclides](https://kenji.blog/p/euclid/)? Em relação à sua complexidade computacional, o **Teorema de Lamé** (Lamé's theorem), provado pelo matemático francês [Gabriel Lamé](https://kenji.blog/p/lame/) em 1844, é bem conhecido.
+Quão rápido é o algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/)? Em relação à sua complexidade computacional, o **Teorema de Lamé** (Lamé's theorem), provado pelo matemático francês [Gabriel Lamé](https://kenji.blog/pt/p/lame/) em 1844, é bem conhecido.
 
 > **Teorema de Lamé**
-> O número de passos de divisão necessários para aplicar o algoritmo de [Euclides](https://kenji.blog/p/euclid/) a dois números naturais $a, b$ ($a > b$) é no máximo $5$ vezes o número de dígitos na representação decimal de $b$ .
+> O número de passos de divisão necessários para aplicar o algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) a dois números naturais $a, b$ ($a > b$) é no máximo $5$ vezes o número de dígitos na representação decimal de $b$ .
 
 Como resultado, a complexidade de tempo do algoritmo é $O(\log(\min(a, b)))$ .
 
 O pior cenário (onde o número de divisões é maximizado) ocorre quando são fornecidos dois números consecutivos da sequência de Fibonacci. Por exemplo, no processo de encontrar o MDC de $F_{n+2}$ e $F_{n+1}$ , o quociente é sempre $1$ , em transição contínua para números menores de Fibonacci.
 
-## Algoritmo de [Euclides](https://kenji.blog/p/euclid/) Estendido
+## Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) Estendido
 
-Uma extensão do algoritmo para encontrar números inteiros $x, y$ que satisfaçam a seguinte identidade de Bézout (Bézout's identity), além de encontrar o máximo divisor comum, é chamada de **Algoritmo de [Euclides](https://kenji.blog/p/euclid/) Estendido** (Extended [Euclide](https://kenji.blog/p/euclid/)an algorithm).
+Uma extensão do algoritmo para encontrar números inteiros $x, y$ que satisfaçam a seguinte identidade de Bézout (Bézout's identity), além de encontrar o máximo divisor comum, é chamada de **Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) Estendido** (Extended [Euclide](https://kenji.blog/pt/p/euclid/)an algorithm).
 
 $$
 ax + by = \gcd(a, b)
 $$
 
-### Implementação do Algoritmo de [Euclides](https://kenji.blog/p/euclid/) Estendido
+### Implementação do Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) Estendido
 
 No processo de retorno de chamadas recursivas, retrocedemos para calcular os coeficientes $x$ e $y$ .
 
@@ -152,10 +152,10 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 
 ## Aplicações na Sociedade Moderna (Criptografia RSA, etc.)
 
-O algoritmo de [Euclides](https://kenji.blog/p/euclid/) Estendido não é apenas um quebra-cabeça matemático, mas uma tecnologia essencial de apoio à sociedade moderna da Internet.
+O algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) Estendido não é apenas um quebra-cabeça matemático, mas uma tecnologia essencial de apoio à sociedade moderna da Internet.
 Um excelente exemplo é a **criptografia RSA** . No processo de geração de chaves da criptografia RSA, é necessário encontrar uma chave privada $d$ (inverso modular) que satisfaça $e d \equiv 1 \pmod{\phi(N)}$ para um determinado número $e$ e a função totiente de Euler $\phi(N)$ .
-Como isso pode ser reorganizado na forma $ed + k\phi(N) = 1$ , podemos usar o Algoritmo de [Euclides](https://kenji.blog/p/euclid/) Estendido para calcular $d$ em velocidades extremamente altas.
+Como isso pode ser reorganizado na forma $ed + k\phi(N) = 1$ , podemos usar o Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) Estendido para calcular $d$ em velocidades extremamente altas.
 
 ## Conclusão
 
-Apesar de ter sido descoberto há muito tempo, na era a.C., o algoritmo de [Euclides](https://kenji.blog/p/euclid/) continua a sustentar os fundamentos da ciência da computação moderna devido à sua lógica simplificada e alta eficiência computacional. Embora seja frequentemente o primeiro tópico encontrado no estudo de algoritmos, ele está repleto de beleza matemática e praticidade nos bastidores.
+Apesar de ter sido descoberto há muito tempo, na era a.C., o algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) continua a sustentar os fundamentos da ciência da computação moderna devido à sua lógica simplificada e alta eficiência computacional. Embora seja frequentemente o primeiro tópico encontrado no estudo de algoritmos, ele está repleto de beleza matemática e praticidade nos bastidores.

@@ -19,7 +19,7 @@ Willkommen in einer Welt, in der sich die Schönheit der Mathematik und die Prak
 
 ---
 
-## 1. [Eulersche Identität ([Euler's Identity](https://kenji.blog/p/eulers-identity/))](https://kenji.blog/p/eulers-identity/)
+## 1. [Eulersche Identität ([Euler's Identity](https://kenji.blog/de/p/eulers-identity/))](https://kenji.blog/p/eulers-identity/)
 
 ### Schönheit der Formel und Übersicht
 Die Eulersche Identität wird oft als "der Schatz der Menschheit" oder "die schönste mathematische Formel der Welt" bezeichnet. Fünf der wichtigsten Konstanten der Mathematik (die Eulersche Zahl $e$, die imaginäre Einheit $i$, die Kreiszahl $\pi$, das neutrale Element der Multiplikation $1$ und das neutrale Element der Addition $0$) sind in einer einzigen, einfachen Gleichung vereint.
@@ -132,10 +132,10 @@ Im obigen Code wird der Eingabewert `x` in den Bereich $[-\pi, \pi]$ normalisier
 
 ---
 
-## 3. [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/p/bayes-theorem/))
+## 3. [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/de/p/bayes-theorem/))
 
 ### Schönheit der Formel und Übersicht
-Der [Satz von Bayes](https://kenji.blog/p/bayes-theorem/) ist ein Theorem zur Aktualisierung der Wahrscheinlichkeit eines Ereignisses (A-posteriori-Wahrscheinlichkeit) basierend auf Vorwissen, das mit diesem Ereignis zusammenhängt (A-priori-Wahrscheinlichkeit). Es ist eine der wichtigsten Formeln in der Wahrscheinlichkeitstheorie und Statistik.
+Der [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) ist ein Theorem zur Aktualisierung der Wahrscheinlichkeit eines Ereignisses (A-posteriori-Wahrscheinlichkeit) basierend auf Vorwissen, das mit diesem Ereignis zusammenhängt (A-priori-Wahrscheinlichkeit). Es ist eine der wichtigsten Formeln in der Wahrscheinlichkeitstheorie und Statistik.
 
 $$ P(A|B) = \frac{P(B|A)P(A)}{P(B)} $$
 
@@ -559,7 +559,7 @@ Die Verzweigung des obigen Codes mit `x >= 0` und anderen Werten dient dazu, "Ü
 
 ---
 
-## 10. [Euklid](https://kenji.blog/p/euclid/)ischer Abstand und Satz des Pythagoras ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. [Euklid](https://kenji.blog/de/p/euclid/)ischer Abstand und Satz des Pythagoras ([[Euclid](https://kenji.blog/de/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### Schönheit der Formel und Übersicht
 Es ist die Grundlage der aus dem antiken Griechenland überlieferten Geometrie und die Formel, die den geradlinigen Abstand zwischen zwei Punkten in einem $n$-dimensionalen Raum definiert. Im zweidimensionalen Raum ist es der Satz des Pythagoras ($a^2 + b^2 = c^2$) selbst.

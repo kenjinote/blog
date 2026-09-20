@@ -8,11 +8,11 @@ categories: ["mathematics", "biography"]
 tags: ["Legendre", "Number Theory", "Geometry", "History of Mathematics"]
 ---
 
-# [Adrien-Marie Legendre](https://kenji.blog/p/legendre/): The Shadow Giant of Mathematics and His Turbulent Life
+# [Adrien-Marie Legendre](https://kenji.blog/en/p/legendre/): The Shadow Giant of Mathematics and His Turbulent Life
 
-In the history of mathematics, there are figures whose names crown numerous theorems and concepts, yet whose personal lives and true images remain surprisingly unknown. The great French mathematician **[Adrien-Marie Legendre](https://kenji.blog/p/legendre/)** (1752–1833) is arguably a prime example.
+In the history of mathematics, there are figures whose names crown numerous theorems and concepts, yet whose personal lives and true images remain surprisingly unknown. The great French mathematician **[Adrien-Marie Legendre](https://kenji.blog/en/p/legendre/)** (1752–1833) is arguably a prime example.
 
-In this article, we delve deeply into Legendre's life, his immense contributions to the mathematical world, his fierce feud with contemporary genius [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), and the "portrait mystery" that was only recently unraveled. By tracing his life's trajectory, you will be able to feel the breath of the French scientific community from the 18th to the 19th century.
+In this article, we delve deeply into Legendre's life, his immense contributions to the mathematical world, his fierce feud with contemporary genius [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/), and the "portrait mystery" that was only recently unraveled. By tracing his life's trajectory, you will be able to feel the breath of the French scientific community from the 18th to the 19th century.
 
 ## 1. Life and Historical Context: A Mathematician Surviving a Turbulent France
 
@@ -42,7 +42,7 @@ Legendre's achievements span almost all fields of mathematics of his time, inclu
 
 ### 2.1 Passion for Number Theory and the Legendre Symbol
 
-Legendre was deeply fascinated by number theory, pioneered by predecessors like [Pierre de Fermat](https://kenji.blog/p/fermat/) and [Leonhard Euler](https://kenji.blog/p/euler/). One of his greatest achievements is his work on the "Law of quadratic reciprocity." This law is one of the most beautiful and important theorems in number theory for determining whether a prime number is congruent to a square modulo another prime number.
+Legendre was deeply fascinated by number theory, pioneered by predecessors like [Pierre de Fermat](https://kenji.blog/en/p/fermat/) and [Leonhard Euler](https://kenji.blog/en/p/euler/). One of his greatest achievements is his work on the "Law of quadratic reciprocity." This law is one of the most beautiful and important theorems in number theory for determining whether a prime number is congruent to a square modulo another prime number.
 
 He formulated this law and gave a partial proof (a complete proof was later provided by the young Gauss). Furthermore, to express this research concisely and elegantly, he introduced a notation known today as the **Legendre symbol**.
 
@@ -55,7 +55,7 @@ $$
 \end{cases}
 $$
 
-Thanks to this groundbreaking notation, complex propositions and proofs in number theory became extremely transparent, bringing immense benefits to later mathematicians. He also left many footprints in the abyss of number theory, such as his proof of [Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/) for $ n=5 $ (proven independently around the same time as Dirichlet) and his conjecture of Dirichlet's theorem on arithmetic progressions.
+Thanks to this groundbreaking notation, complex propositions and proofs in number theory became extremely transparent, bringing immense benefits to later mathematicians. He also left many footprints in the abyss of number theory, such as his proof of [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) for $ n=5 $ (proven independently around the same time as Dirichlet) and his conjecture of Dirichlet's theorem on arithmetic progressions.
 
 ### 2.2 Elliptic Integrals and Legendre Polynomials
 
@@ -77,11 +77,11 @@ These polynomials have become an indispensable tool in all kinds of calculations
 
 ### 2.3 'Éléments de géométrie' and Its Great Impact on Mathematics Education
 
-Alongside his research activities, Legendre was also an outstanding educator. His book "Éléments de géométrie" (Elements of Geometry), published in 1794, reorganized [Euclid](https://kenji.blog/p/euclid/)'s "Elements" to be more accessible and rigorous for students of his time.
+Alongside his research activities, Legendre was also an outstanding educator. His book "Éléments de géométrie" (Elements of Geometry), published in 1794, reorganized [Euclid](https://kenji.blog/en/p/euclid/)'s "Elements" to be more accessible and rigorous for students of his time.
 
-This textbook achieved phenomenal success, being translated into English and other languages and read worldwide, not just in France. It was widely adopted in the United States and remained the absolute standard for geometry education throughout the 19th century. In this book, he continuously attempted to prove the parallel postulate ([Euclid](https://kenji.blog/p/euclid/)'s fifth postulate), adding new proofs with each edition, though ultimately they all proved to be flawed. However, his persistence became one of the important driving forces prompting the birth of non-[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry.
+This textbook achieved phenomenal success, being translated into English and other languages and read worldwide, not just in France. It was widely adopted in the United States and remained the absolute standard for geometry education throughout the 19th century. In this book, he continuously attempted to prove the parallel postulate ([Euclid](https://kenji.blog/en/p/euclid/)'s fifth postulate), adding new proofs with each edition, though ultimately they all proved to be flawed. However, his persistence became one of the important driving forces prompting the birth of non-[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry.
 
-### 2.4 Challenge to the [Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/)
+### 2.4 Challenge to the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/)
 
 The question of how prime numbers are distributed among natural numbers had long fascinated mathematicians. Legendre painstakingly examined prime number tables and, with astonishing sharpness, conjectured the following approximation formula for the number of primes $ \pi(x) $ less than or equal to $ x $.
 
@@ -95,9 +95,9 @@ It was later revealed that Gauss had also made a similar conjecture using the lo
 
 ## 3. Feud with Gauss: The Tragedy Over the Discovery of Least Squares
 
-In discussing Legendre's life, one cannot avoid the fierce priority dispute, especially concerning the **[Method of Least Squares](https://kenji.blog/p/method-of-least-squares/)**, with [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), the "Prince of Mathematics" from Germany.
+In discussing Legendre's life, one cannot avoid the fierce priority dispute, especially concerning the **[Method of Least Squares](https://kenji.blog/en/p/method-of-least-squares/)**, with [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/), the "Prince of Mathematics" from Germany.
 
-In 1805, in his book on calculating the orbits of comets, Legendre publicly announced the "[Method of Least Squares](https://kenji.blog/p/method-of-least-squares/)" for the first time in the world—a method to find the most probable value by minimizing the errors of observation data. This was a revolutionary technique that forms the foundation of every field dealing with data, from astronomy and geodesy to modern statistics and machine learning.
+In 1805, in his book on calculating the orbits of comets, Legendre publicly announced the "[Method of Least Squares](https://kenji.blog/en/p/method-of-least-squares/)" for the first time in the world—a method to find the most probable value by minimizing the errors of observation data. This was a revolutionary technique that forms the foundation of every field dealing with data, from astronomy and geodesy to modern statistics and machine learning.
 
 ```mermaid
 flowchart LR
@@ -116,7 +116,7 @@ Furthermore, regarding the prime number theorem (Legendre's conjecture of $ \pi(
 
 The strangest and, for us today, the most amusing episode about Legendre concerns the mystery of his "portrait."
 
-For many years, in math textbooks and history of science books worldwide, a particular portrait had been used as the face of [Adrien-Marie Legendre](https://kenji.blog/p/legendre/). It was a lithograph depicting a profile of a man with a stern, grumpy expression. Everyone believed without a doubt that this was the face of the great mathematician Legendre.
+For many years, in math textbooks and history of science books worldwide, a particular portrait had been used as the face of [Adrien-Marie Legendre](https://kenji.blog/en/p/legendre/). It was a lithograph depicting a profile of a man with a stern, grumpy expression. Everyone believed without a doubt that this was the face of the great mathematician Legendre.
 
 However, in 2005, a startling fact came to light that shook the history of mathematics community. Shockingly, the portrait that had been published as "Mathematician Legendre" for over 200 years actually belonged to a completely different person: **Louis Legendre** (1752–1797), a politician during the French Revolution!
 
@@ -129,7 +129,7 @@ There, instead of the stern profile of the politician Louis Legendre, was the fi
 
 ## 5. Conclusion
 
-[Adrien-Marie Legendre](https://kenji.blog/p/legendre/) closed his life in Paris in 1833. In his later years, he faced unfortunate events, such as his pension being cut off due to his opposition to government policies.
+[Adrien-Marie Legendre](https://kenji.blog/en/p/legendre/) closed his life in Paris in 1833. In his later years, he faced unfortunate events, such as his pension being cut off due to his opposition to government policies.
 
 He is often treated as a "shadow figure" before the overwhelming brilliance of top-tier geniuses of his time, like Gauss and Laplace. However, the role he played in building the foundations of modern mathematics is immeasurable. The legacy he left behind, such as Legendre polynomials, the Legendre symbol, and the formulation of the method of least squares, continues to support the core of modern science and technology.
 

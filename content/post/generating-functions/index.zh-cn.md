@@ -13,11 +13,11 @@ tags:
   - "算法"
 ---
 
-在数学的世界里，存在着一些像“魔法桥梁”一样的概念，能够将看似毫不相干的领域连接起来。其中之一就是 **[生成函数](https://kenji.blog/p/generating-functions/)** (Generating Function)。通过将离散的“数列”转化为连续的“函数”，可以将复杂的组合问题转化为代数计算。
+在数学的世界里，存在着一些像“魔法桥梁”一样的概念，能够将看似毫不相干的领域连接起来。其中之一就是 **[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)** (Generating Function)。通过将离散的“数列”转化为连续的“函数”，可以将复杂的组合问题转化为代数计算。
 
-本文将从[生成函数](https://kenji.blog/p/generating-functions/)的基本思想出发，详细讲解其惊人的威力——从计算硬币支付方式的组合，到推导斐波那契数列的通项公式。此外，我们还将提及它在算法和竞技编程中的形式幂级数 (FPS) 应用。
+本文将从[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)的基本思想出发，详细讲解其惊人的威力——从计算硬币支付方式的组合，到推导斐波那契数列的通项公式。此外，我们还将提及它在算法和竞技编程中的形式幂级数 (FPS) 应用。
 
-## 1. 什么是[生成函数](https://kenji.blog/p/generating-functions/)？
+## 1. 什么是[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)？
 
 给定一个数列 $a_0, a_1, a_2, \dots$，我们考虑一个函数 $A(x)$，它的每一项系数正好对应数列中各个项作为 $x$ 的幂的系数。
 
@@ -25,7 +25,7 @@ $$
 A(x) = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \dots = \sum_{n=0}^{\infty} a_n x^n
 $$
 
-这个函数 $A(x)$ 就被称为数列 $\{a_n\}$ 的 **普通[生成函数](https://kenji.blog/p/generating-functions/)** (Ordinary Generating Function)。
+这个函数 $A(x)$ 就被称为数列 $\{a_n\}$ 的 **普通[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)** (Ordinary Generating Function)。
 
 为什么要进行这样的转换呢？这是因为 **可以将对数列的操作替换为对函数的代数操作**。数列的平移、求和或卷积等操作，都被转换为函数之间的加法、乘法、微分和积分等我们熟悉的操作。
 
@@ -37,14 +37,14 @@ graph LR
     A -.->|"复杂操作"| D
 ```
 
-## 2. 硬币支付方式与[生成函数](https://kenji.blog/p/generating-functions/)
+## 2. 硬币支付方式与[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)
 
-要直观地理解[生成函数](https://kenji.blog/p/generating-functions/)的威力，让我们考虑一个“硬币支付方式”的问题。
+要直观地理解[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)的威力，让我们考虑一个“硬币支付方式”的问题。
 
 **问题：**
 使用1日元、2日元和5日元硬币，求恰好支付 $n$ 日元的组合数 $a_n$。
 
-我们使用[生成函数](https://kenji.blog/p/generating-functions/)来解这个问题。
+我们使用[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)来解这个问题。
 对于每种硬币，我们根据使用的数量构建一个多项式。
 
 *   1日元硬币的选择: $1 + x + x^2 + x^3 + \dots$ (0枚、1枚、2枚...)
@@ -67,7 +67,7 @@ $$
 
 ### 卷积与多项式乘积
 
-为什么函数的乘积对应于组合的计数呢？让我们看看两个数列 $a_n$ 和 $b_n$ 的[生成函数](https://kenji.blog/p/generating-functions/) $A(x), B(x)$ 相乘会发生什么。
+为什么函数的乘积对应于组合的计数呢？让我们看看两个数列 $a_n$ 和 $b_n$ 的[生成函数](https://kenji.blog/zh-cn/p/generating-functions/) $A(x), B(x)$ 相乘会发生什么。
 
 $$
 A(x)B(x) = (a_0 + a_1 x + a_2 x^2 + \dots)(b_0 + b_1 x + b_2 x^2 + \dots)
@@ -83,7 +83,7 @@ $$
 *   $F_1 = 1$
 *   $F_n = F_{n-1} + F_{n-2} \quad (n \ge 2)$
 
-设这个数列的[生成函数](https://kenji.blog/p/generating-functions/)为 $F(x) = \sum_{n=0}^{\infty} F_n x^n$。
+设这个数列的[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)为 $F(x) = \sum_{n=0}^{\infty} F_n x^n$。
 
 $$
 \begin{aligned}
@@ -100,7 +100,7 @@ $$
 F(x) = x + x F(x) + x^2 F(x)
 $$
 
-解关于 $F(x)$ 的方程，我们得到了斐波那契数列的[生成函数](https://kenji.blog/p/generating-functions/)。
+解关于 $F(x)$ 的方程，我们得到了斐波那契数列的[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)。
 
 $$
 F(x) = \frac{x}{1 - x - x^2}
@@ -137,17 +137,17 @@ graph TD
     PF -->|"幂级数展开及比较系数"| AN["通项公式 (比内公式)"]
 ```
 
-## 4. 指数型[生成函数](https://kenji.blog/p/generating-functions/)与排列
+## 4. 指数型[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)与排列
 
-在处理考虑顺序的组合问题，即“排列”时，**指数型[生成函数](https://kenji.blog/p/generating-functions/)** (Exponential Generating Function) 将大显身手。
+在处理考虑顺序的组合问题，即“排列”时，**指数型[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)** (Exponential Generating Function) 将大显身手。
 
-对于数列 $a_n$，其指数型[生成函数](https://kenji.blog/p/generating-functions/) $E(x)$ 定义如下：
+对于数列 $a_n$，其指数型[生成函数](https://kenji.blog/zh-cn/p/generating-functions/) $E(x)$ 定义如下：
 
 $$
 E(x) = \sum_{n=0}^{\infty} \frac{a_n}{n!} x^n = a_0 + a_1 x + \frac{a_2}{2!} x^2 + \frac{a_3}{3!} x^3 + \dots
 $$
 
-通过除以 $n!$，考虑顺序的计算（如微分操作）会变得非常整洁。例如，所有元素均为 $1$ 的数列 $1, 1, 1, \dots$ 的指数型[生成函数](https://kenji.blog/p/generating-functions/)是 $e^x$。
+通过除以 $n!$，考虑顺序的计算（如微分操作）会变得非常整洁。例如，所有元素均为 $1$ 的数列 $1, 1, 1, \dots$ 的指数型[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)是 $e^x$。
 
 $$
 e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \dots
@@ -157,14 +157,14 @@ $$
 
 ## 5. 向形式幂级数 (FPS) 的发展
 
-在现代计算机科学和竞技编程中，[生成函数](https://kenji.blog/p/generating-functions/)常常被作为 **形式幂级数** (Formal Power Series, FPS) 来实现。
+在现代计算机科学和竞技编程中，[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)常常被作为 **形式幂级数** (Formal Power Series, FPS) 来实现。
 在 FPS 中，我们不关心将具体的数值代入 $x$ 后是否收敛（解析性质），而是将重点放在将“系数序列”作为多项式进行代数操作上。
 
 利用快速傅里叶变换 (FFT) 或数论变换 (NTT)，可以在 $\mathcal{O}(N \log N)$ 的时间复杂度内求出两个 $N$ 次多项式的乘积（即长度为 $N$ 的数列的卷积）。这使得原本用动态规划需要 $\mathcal{O}(N^2)$ 的计算得到了极大的加速。
 
 ## 6. 总结
 
-[生成函数](https://kenji.blog/p/generating-functions/)不仅仅是“存放数列的盒子”。它是一个“翻译机”，能将数列的规律和性质转化为函数的形式，从而可以应用微积分和代数计算等强大的数学工具。
+[生成函数](https://kenji.blog/zh-cn/p/generating-functions/)不仅仅是“存放数列的盒子”。它是一个“翻译机”，能将数列的规律和性质转化为函数的形式，从而可以应用微积分和代数计算等强大的数学工具。
 
 *   **组合的计数** 被替换成了函数的乘积。
 *   **求解递推式** 被替换成了求解方程和进行泰勒展开。

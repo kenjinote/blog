@@ -42,7 +42,7 @@ $$
 
 ## 3. GNFS(일반 수체 체)의 알고리즘 전모와 수학적 구조
 
-GNFS는 매우 복잡하고 고도화된 수학적 기반을 가지고 있습니다. 기본 아이디어는 [페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)나 이차 체(QS)의 연장선에 있으며, 합동식 $X^2 \equiv Y^2 \pmod n$을 만족하면서 $X \not\equiv \pm Y \pmod n$이 되는 자명하지 않은 쌍 $(X, Y)$를 찾음으로써 $n$의 인수 $\gcd(X-Y, n)$을 도출해내는 것입니다.
+GNFS는 매우 복잡하고 고도화된 수학적 기반을 가지고 있습니다. 기본 아이디어는 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)나 이차 체(QS)의 연장선에 있으며, 합동식 $X^2 \equiv Y^2 \pmod n$을 만족하면서 $X \not\equiv \pm Y \pmod n$이 되는 자명하지 않은 쌍 $(X, Y)$를 찾음으로써 $n$의 인수 $\gcd(X-Y, n)$을 도출해내는 것입니다.
 
 하지만 GNFS의 진수는 이를 유리수체 $\mathbb{Q}$에서만 수행하는 것이 아니라, 대수체(Algebraic Number Field)라 불리는 확대체 $\mathbb{Q}(\alpha)$와 유리수체 양쪽에서 동시에 '매끄러운 수(Smooth numbers)'를 탐색하고, 준동형 사상을 통해 합동 관계를 구축한다는 점에 있습니다.
 

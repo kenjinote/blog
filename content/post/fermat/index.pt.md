@@ -10,17 +10,17 @@ tags: ["Fermat", "História da Matemática", "Último Teorema de Fermat", "Teori
 
 ## Introdução: O Homem Que Deixou o Maior Mistério da Matemática
 
-Ao falar da figura que gerou a história mais famosa e dramática da história da matemática, não é preciso procurar além de [Pierre de Fermat](https://kenji.blog/p/fermat/). Ele não era um matemático profissional. Normalmente, trabalhava como juiz regional e desfrutava da matemática no seu tempo livre, o que o tornou um chamado **"matemático amador"**. No entanto, as realizações que deixou surpreenderam as mentes mais brilhantes da Europa na época e atormentariam matemáticos geniais em todo o mundo durante mais de 350 anos após a sua morte.
+Ao falar da figura que gerou a história mais famosa e dramática da história da matemática, não é preciso procurar além de [Pierre de Fermat](https://kenji.blog/pt/p/fermat/). Ele não era um matemático profissional. Normalmente, trabalhava como juiz regional e desfrutava da matemática no seu tempo livre, o que o tornou um chamado **"matemático amador"**. No entanto, as realizações que deixou surpreenderam as mentes mais brilhantes da Europa na época e atormentariam matemáticos geniais em todo o mundo durante mais de 350 anos após a sua morte.
 
 Neste artigo, vamos aprofundar a vida de Fermat, as suas principais descobertas matemáticas e a saga romântica em torno do monumental **"Último Teorema de Fermat"** que permanece gravado na história da matemática. Vamos explorar como ele lançou as bases da matemática moderna e descobrir as fontes da sua surpreendente perspicácia e imaginação.
 
 ## 1. A Sua Face Pública como Juiz e a Sua Paixão pela Matemática
 
-[Pierre de Fermat](https://kenji.blog/p/fermat/) nasceu no final de 1607 (ou 1601, de acordo com algumas teorias) no seio de uma rica família de comerciantes de couro em Beaumont-de-Lomagne, no sudoeste de França. Excecionalmente brilhante desde tenra idade, estudou direito na Universidade de Orleães e, em 1631, assumiu o honroso cargo de conselheiro (juiz) no Parlamento de Toulouse. A partir de então, passou toda a sua vida como funcionário público.
+[Pierre de Fermat](https://kenji.blog/pt/p/fermat/) nasceu no final de 1607 (ou 1601, de acordo com algumas teorias) no seio de uma rica família de comerciantes de couro em Beaumont-de-Lomagne, no sudoeste de França. Excecionalmente brilhante desde tenra idade, estudou direito na Universidade de Orleães e, em 1631, assumiu o honroso cargo de conselheiro (juiz) no Parlamento de Toulouse. A partir de então, passou toda a sua vida como funcionário público.
 
 Na França da época, os juízes eram encorajados a evitar expandir demasiado os seus círculos sociais para evitar conflitos políticos e sociais. Ironicamente, este ambiente isolado proporcionou a Fermat o tempo de sossego de que necessitava, impulsionando-o para as profundezas da matemática. Para ele, a matemática era uma pura alegria que o libertava das pesadas pressões dos seus deveres, e não algo que lhe fosse imposto por alguém.
 
-Fermat não gostava de publicar as suas investigações sob a forma de artigos formais; contentava-se em anotar as suas ideias e provas em cadernos ou nas margens de livros, ou trocando cartas com outros estudiosos através de [Marin Mersenne](https://kenji.blog/p/mersenne/), um frade em Paris que funcionava como um centro académico na época. Ele gostava de apresentar as suas descobertas como **"problemas"** a outros matemáticos, exigindo de forma provocatória as suas soluções. Sabe-se também que se envolveu em debates acesos com grandes matemáticos, como [René Descartes](https://kenji.blog/p/descartes/) e [John Wallis](https://kenji.blog/p/wallis/).
+Fermat não gostava de publicar as suas investigações sob a forma de artigos formais; contentava-se em anotar as suas ideias e provas em cadernos ou nas margens de livros, ou trocando cartas com outros estudiosos através de [Marin Mersenne](https://kenji.blog/pt/p/mersenne/), um frade em Paris que funcionava como um centro académico na época. Ele gostava de apresentar as suas descobertas como **"problemas"** a outros matemáticos, exigindo de forma provocatória as suas soluções. Sabe-se também que se envolveu em debates acesos com grandes matemáticos, como [René Descartes](https://kenji.blog/pt/p/descartes/) e [John Wallis](https://kenji.blog/pt/p/wallis/).
 
 ```mermaid
 flowchart TD
@@ -35,7 +35,7 @@ flowchart TD
 
 ## 2. Imensas Contribuições para a Teoria dos Números
 
-O maior interesse de Fermat e o campo onde deixou a sua marca mais profunda foi a **Teoria dos Números** (o ramo que explora as propriedades dos números). Dedicado à leitura da *Arithmetica* do antigo matemático grego [Diofanto](https://kenji.blog/p/diophantus/), inspirou-se nela para descobrir numerosos teoremas revolucionários.
+O maior interesse de Fermat e o campo onde deixou a sua marca mais profunda foi a **Teoria dos Números** (o ramo que explora as propriedades dos números). Dedicado à leitura da *Arithmetica* do antigo matemático grego [Diofanto](https://kenji.blog/pt/p/diophantus/), inspirou-se nela para descobrir numerosos teoremas revolucionários.
 
 ### 2.1. Pequeno Teorema de Fermat
 
@@ -64,7 +64,7 @@ Por exemplo, se $p = 5$, é $5 = 1^2 + 2^2$; se $p = 13$, é $13 = 2^2 + 3^2$; s
 
 Fermat também considerou fórmulas matemáticas que geram números primos. Conjeturou que todos os números da forma $F_n = 2^{2^n} + 1$ são primos. De facto, para $n=0, 1, 2, 3, 4$, os resultados são $3, 5, 17, 257, 65537$, respetivamente, e todos eles são primos. Estes são chamados **Primos de Fermat**.
 
-No entanto, [Leonhard Euler](https://kenji.blog/p/euler/) mostrou mais tarde que quando $n=5$, $2^{32} + 1 = 4294967297 = 641 \times 6700417$, refutando assim a própria conjetura de Fermat. Ainda assim, [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) provou mais tarde que estes primos de Fermat estavam profundamente ligados às "condições para que um polígono regular de $n$ lados seja construível com compasso e régua sem escala", desempenhando um papel extremamente importante na fusão da geometria e da álgebra para as gerações posteriores.
+No entanto, [Leonhard Euler](https://kenji.blog/pt/p/euler/) mostrou mais tarde que quando $n=5$, $2^{32} + 1 = 4294967297 = 641 \times 6700417$, refutando assim a própria conjetura de Fermat. Ainda assim, [Carl Friedrich Gauss](https://kenji.blog/pt/p/gauss/) provou mais tarde que estes primos de Fermat estavam profundamente ligados às "condições para que um polígono regular de $n$ lados seja construível com compasso e régua sem escala", desempenhando um papel extremamente importante na fusão da geometria e da álgebra para as gerações posteriores.
 
 ## 3. O Método da Descida Infinita: A Espada Afiada de Fermat
 
@@ -82,7 +82,7 @@ Utilizando esta técnica, o próprio Fermat provou proposições como "a área d
 
 ## 4. Como Fundador da Teoria das Probabilidades
 
-O extraordinário talento de Fermat não se limitava à teoria dos números. Em 1654, trocou uma série de cartas com o genial pensador e matemático [Blaise Pascal](https://kenji.blog/p/pascal/). Esta mesma correspondência é considerada a aurora da **Teoria das Probabilidades** moderna.
+O extraordinário talento de Fermat não se limitava à teoria dos números. Em 1654, trocou uma série de cartas com o genial pensador e matemático [Blaise Pascal](https://kenji.blog/pt/p/pascal/). Esta mesma correspondência é considerada a aurora da **Teoria das Probabilidades** moderna.
 
 O catalisador para a sua discussão foi uma pergunta relacionada com o jogo conhecida como o **"Problema dos pontos"**, trazida a Pascal por um homem chamado Chevalier de Méré.
 A pergunta era: "Dois jogadores de igual habilidade estão a jogar um jogo em que o primeiro a ganhar um certo número de rondas leva o prémio total. No entanto, se o jogo for interrompido a meio, como deve o prémio ser dividido de forma justa com base no estado atual de vitórias e derrotas?"
@@ -91,17 +91,17 @@ Embora Fermat e Pascal tenham empregado cada um abordagens matemáticas inteiram
 
 ## 5. Contribuições Pioneiras para o Cálculo e a Física
 
-Décadas antes de [Isaac Newton](https://kenji.blog/p/newton/) e [Gottfried Leibniz](https://kenji.blog/p/leibniz/) estabelecerem o cálculo, Fermat tinha concebido os seus próprios métodos para traçar tangentes a curvas e encontrar os valores máximos e mínimos de funções.
+Décadas antes de [Isaac Newton](https://kenji.blog/pt/p/newton/) e [Gottfried Leibniz](https://kenji.blog/pt/p/leibniz/) estabelecerem o cálculo, Fermat tinha concebido os seus próprios métodos para traçar tangentes a curvas e encontrar os valores máximos e mínimos de funções.
 
 Introduziu um conceito chamado **"Adeigualdade"** (Adequality). Trata-se de uma técnica em que um valor é tratado como "quase igual" quando uma quantidade minúscula $E$ é variada, e o valor extremo é encontrado tratando $E$ como $0$ na fase final do cálculo. Esta é essencialmente a própria ideia da diferenciação moderna, e o próprio Newton observou mais tarde: "Tive a pista deste método a partir da forma de Fermat traçar tangentes". Sem Fermat, a conclusão do cálculo poderia ter sido ainda mais adiada.
 
 Além disso, no campo da física (ótica), propôs o **Princípio de Fermat**, que afirma que "a luz viaja entre dois pontos ao longo do caminho que requer o tempo mais curto". Isto derivou matematicamente a lei de refração de Snell, formou a base da ótica moderna e tornou-se uma descoberta extremamente importante que conduziu ao "princípio da menor ação" que atravessa a totalidade da física posterior.
 
-## 6. Drama nas Margens: [O Último Teorema de Fermat](https://kenji.blog/p/fermats-last-theorem/)
+## 6. Drama nas Margens: [O Último Teorema de Fermat](https://kenji.blog/pt/p/fermats-last-theorem/)
 
 Apesar de ter deixado para trás tantas grandes realizações, o que inequivocamente faz de Fermat o matemático mais famoso da história é a existência do **"Último Teorema de Fermat"**.
 
-Nas margens de uma passagem relativa ao teorema de Pitágoras ( $x^2 + y^2 = z^2$ ) no Volume 2 do seu livro favorito, a *Arithmetica* de [Diofanto](https://kenji.blog/p/diophantus/), Fermat escreveu a seguinte nota surpreendente em latim:
+Nas margens de uma passagem relativa ao teorema de Pitágoras ( $x^2 + y^2 = z^2$ ) no Volume 2 do seu livro favorito, a *Arithmetica* de [Diofanto](https://kenji.blog/pt/p/diophantus/), Fermat escreveu a seguinte nota surpreendente em latim:
 
 > "Cubum autem in duos cubos, aut quadratoquadratum in duos quadratoquadratos, et generaliter nullam in infinitum ultra quadratum potestatem in duas eiusdem nominis fas est dividere cuius rei demonstrationem mirabilem sane detexi. Hanc marginis exiguitas non caperet."
 > 
@@ -123,7 +123,7 @@ Génios sucessivos como Euler, Legendre, Dirichlet, Gauss e Sophie Germain enfre
 
 Durante mais de 350 anos após a sua proposta, este problema reinou como o "maior problema por resolver da matemática", sem ser resolvido por ninguém. Na segunda metade do século XX, quando muitos começaram a suspeitar que "Fermat não o tinha realmente provado (ou tinha cometido um erro)", um matemático finalmente pôs fim a este formidável enigma.
 
-Tratava-se do matemático britânico [Andrew Wiles](https://kenji.blog/p/wiles/). Tendo-se deparado com o problema na sua biblioteca local aos 10 anos de idade, jurou dedicar a sua vida a resolvê-lo. Adotou uma abordagem grandiosa, inimaginável na época de Fermat, combinando a **Conjetura de Taniyama-Shimura** — que propunha que "todas as curvas elípticas são modulares", apresentada pelos matemáticos japoneses [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/) e [Goro Shimura](https://kenji.blog/p/shimura-goro/) — com a investigação de Ken Ribet sobre as curvas de Frey (a conjetura epsilon).
+Tratava-se do matemático britânico [Andrew Wiles](https://kenji.blog/pt/p/wiles/). Tendo-se deparado com o problema na sua biblioteca local aos 10 anos de idade, jurou dedicar a sua vida a resolvê-lo. Adotou uma abordagem grandiosa, inimaginável na época de Fermat, combinando a **Conjetura de Taniyama-Shimura** — que propunha que "todas as curvas elípticas são modulares", apresentada pelos matemáticos japoneses [Yutaka Taniyama](https://kenji.blog/pt/p/taniyama-yutaka/) e [Goro Shimura](https://kenji.blog/pt/p/shimura-goro/) — com a investigação de Ken Ribet sobre as curvas de Frey (a conjetura epsilon).
 
 Wiles isolou-se no seu sótão e, após sete anos de investigação solitária, publicou a prova completa em 1995. A sua prova foi o culminar da matemática moderna abrangendo centenas de páginas, inteiramente diferente dos métodos matemáticos do século XVII ("demonstração verdadeiramente maravilhosa") que Fermat provavelmente imaginou.
 
@@ -131,6 +131,6 @@ Se Fermat possuía realmente uma prova correta, continua a ser um mistério eter
 
 ## Conclusão: O Legado do Príncipe dos Amadores
 
-[Pierre de Fermat](https://kenji.blog/p/fermat/) era apenas um juiz que não gostava de subir ao palco principal e glamoroso do mundo académico. No entanto, as ideias que ele anotou em pedaços de papel e nas margens de livros abriram as portas de par em par a campos tão diversos como a teoria dos números, a probabilidade, o cálculo e a ótica.
+[Pierre de Fermat](https://kenji.blog/pt/p/fermat/) era apenas um juiz que não gostava de subir ao palco principal e glamoroso do mundo académico. No entanto, as ideias que ele anotou em pedaços de papel e nas margens de livros abriram as portas de par em par a campos tão diversos como a teoria dos números, a probabilidade, o cálculo e a ótica.
 
 O maior mistério que ele deixou para trás cativou e atormentou inúmeros matemáticos ao longo de vários séculos, nutrindo novas teorias matemáticas no processo. A própria existência de Fermat continua a falar-nos hoje do romance inesgotável e da profundidade que a disciplina da matemática encerra. Ele é, sem dúvida, o **"Príncipe dos Amadores"** mais grandioso e comovente da história.

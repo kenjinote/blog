@@ -16,13 +16,13 @@ tags:
 
 ## Introduction : Le génie du XVIIe siècle qui a symbolisé l'infini
 
-Le symbole de **l'infini** ( $\infty$ ) est quelque chose que nous rencontrons régulièrement. La première personne à introduire ce symbole magnifique et mystérieux dans le monde des mathématiques fut le mathématicien anglais du XVIIe siècle **[John Wallis](https://kenji.blog/p/wallis/)** (1616–1703). Il est connu comme une figure ayant joué un rôle extrêmement important dans l'histoire des mathématiques, faisant le pont entre la géométrie analytique de [René Descartes](https://kenji.blog/p/descartes/) et le calcul d'[Isaac Newton](https://kenji.blog/p/newton/).
+Le symbole de **l'infini** ( $\infty$ ) est quelque chose que nous rencontrons régulièrement. La première personne à introduire ce symbole magnifique et mystérieux dans le monde des mathématiques fut le mathématicien anglais du XVIIe siècle **[John Wallis](https://kenji.blog/fr/p/wallis/)** (1616–1703). Il est connu comme une figure ayant joué un rôle extrêmement important dans l'histoire des mathématiques, faisant le pont entre la géométrie analytique de [René Descartes](https://kenji.blog/fr/p/descartes/) et le calcul d'[Isaac Newton](https://kenji.blog/fr/p/newton/).
 
-L'Europe du XVIIe siècle était l'ère de la « Révolution scientifique », où des figures telles que Galileo Galilei, Johannes Kepler et [René Descartes](https://kenji.blog/p/descartes/) jetaient les bases de la science et des mathématiques modernes. Dans ce contexte, Wallis a brisé les limites de la géométrie grecque classique et a ouvert une nouvelle frontière en mathématiques en introduisant des méthodes algébriques et analytiques dans la géométrie. Dans cet article, nous plongeons profondément dans la vie tumultueuse de Wallis, de son parcours unique en tant que cryptographe à ses réalisations mathématiques et physiques qui ont grandement influencé les générations futures.
+L'Europe du XVIIe siècle était l'ère de la « Révolution scientifique », où des figures telles que Galileo Galilei, Johannes Kepler et [René Descartes](https://kenji.blog/fr/p/descartes/) jetaient les bases de la science et des mathématiques modernes. Dans ce contexte, Wallis a brisé les limites de la géométrie grecque classique et a ouvert une nouvelle frontière en mathématiques en introduisant des méthodes algébriques et analytiques dans la géométrie. Dans cet article, nous plongeons profondément dans la vie tumultueuse de Wallis, de son parcours unique en tant que cryptographe à ses réalisations mathématiques et physiques qui ont grandement influencé les générations futures.
 
 ## Jeunesse et éducation : La voie vers la médecine, la logique et la théologie
 
-[John Wallis](https://kenji.blog/p/wallis/) est né le 23 novembre 1616 à Ashford, dans le Kent, en Angleterre. Son père était un pasteur paroissial respecté, et on s'attendait initialement à ce que Wallis lui-même suive la voie de l'Église. Pour éviter une épidémie de peste pendant son enfance, il a été transféré dans une école à Tenterden, puis a maîtrisé les langues classiques telles que le latin, le grec et l'hébreu à la Felsted School, dans l'Essex.
+[John Wallis](https://kenji.blog/fr/p/wallis/) est né le 23 novembre 1616 à Ashford, dans le Kent, en Angleterre. Son père était un pasteur paroissial respecté, et on s'attendait initialement à ce que Wallis lui-même suive la voie de l'Église. Pour éviter une épidémie de peste pendant son enfance, il a été transféré dans une école à Tenterden, puis a maîtrisé les langues classiques telles que le latin, le grec et l'hébreu à la Felsted School, dans l'Essex.
 
 En 1632, il entre à l'Emmanuel College de l'Université de Cambridge. À Cambridge à l'époque, les mathématiques n'étaient pas considérées comme une discipline universitaire majeure ; elles étaient vues simplement comme une compétence pratique ou une arithmétique pour les marchands. Par conséquent, il portait lui-même un grand intérêt à la médecine, l'anatomie, la logique et la théologie. Particulièrement inspiré par la théorie de la circulation sanguine de William Harvey, il a obtenu d'excellents résultats dans le domaine de l'anatomie. Quant aux mathématiques, il n'avait appris que quelques bases d'arithmétique avec son frère aîné pendant son enfance, et ce n'est qu'un peu plus tard qu'il s'est sérieusement plongé dans les mathématiques.
 
@@ -119,20 +119,20 @@ Hobbes affirmait avoir résolu le « problème de la quadrature du cercle » (le
 
 En tant que mathématicien hors pair, Wallis a immédiatement perçu les erreurs dans la preuve géométrique de Hobbes et l'a critiqué sans merci. Hobbes s'est rebellé contre cela, et la controverse a dépassé le domaine des mathématiques pures pour s'étendre à la politique, à la religion et à la diffamation personnelle. Cette querelle a duré un quart de siècle jusqu'à la mort de Hobbes, et est connue comme un épisode illustrant le caractère intransigeant et strict de Wallis.
 
-## Influence colossale sur le jeune [Isaac Newton](https://kenji.blog/p/newton/)
+## Influence colossale sur le jeune [Isaac Newton](https://kenji.blog/fr/p/newton/)
 
-L'« Arithmetica Infinitorum » de Wallis a eu un impact incommensurable sur un certain jeune homme qui allait plus tard bouleverser fondamentalement l'histoire des sciences. Ce jeune homme était **[Isaac Newton](https://kenji.blog/p/newton/)**.
+L'« Arithmetica Infinitorum » de Wallis a eu un impact incommensurable sur un certain jeune homme qui allait plus tard bouleverser fondamentalement l'histoire des sciences. Ce jeune homme était **[Isaac Newton](https://kenji.blog/fr/p/newton/)**.
 
 Pendant ses années d'études à l'Université de Cambridge, Newton a lu attentivement l'« Arithmetica Infinitorum » de Wallis et en fut profondément impressionné. En généralisant et en développant davantage la méthode d'interpolation de Wallis, Newton a découvert le **théorème du binôme généralisé** pour n'importe quelle puissance rationnelle. De plus, en faisant progresser le concept algébrique de limites de Wallis, il est finalement parvenu à la fondation du **calcul**.
 
 Si l'« Arithmetica Infinitorum » de Wallis n'avait pas existé, la découverte du calcul par Newton aurait pu être considérablement retardée, ou elle aurait pu prendre une forme complètement différente.
 
-Wallis lui-même faisait l'éloge du talent exceptionnel de Newton et l'exhortait vivement à publier ses résultats de recherche sur le calcul. Plus tard, lorsque la violente dispute sur la « priorité du calcul » a éclaté entre Newton et [Gottfried Leibniz](https://kenji.blog/p/leibniz/), Wallis a pleinement soutenu Newton en tant que puissant défenseur du camp britannique.
+Wallis lui-même faisait l'éloge du talent exceptionnel de Newton et l'exhortait vivement à publier ses résultats de recherche sur le calcul. Plus tard, lorsque la violente dispute sur la « priorité du calcul » a éclaté entre Newton et [Gottfried Leibniz](https://kenji.blog/fr/p/leibniz/), Wallis a pleinement soutenu Newton en tant que puissant défenseur du camp britannique.
 
 ## Conclusion : Un grand pont dans l'histoire des mathématiques
 
-[John Wallis](https://kenji.blog/p/wallis/) a continué à être actif en tant que chercheur de premier plan jusqu'à son décès en 1703 à l'âge de 86 ans.
+[John Wallis](https://kenji.blog/fr/p/wallis/) a continué à être actif en tant que chercheur de premier plan jusqu'à son décès en 1703 à l'âge de 86 ans.
 
 Il a joué un rôle crucial en tant que **pont** dans la période de transition entre la géométrie centrée sur les figures, qui se poursuivait depuis la Grèce antique, et l'analyse moderne, qui manipule librement les formules mathématiques. La puissance du raisonnement logique cultivée par la cryptographie et la puissance imaginative pour faire des conjectures audacieuses dans des territoires inconnus. Ses réalisations, nées de la fusion de ces éléments, ont été héritées par la génération suivante de génies comme Newton et continuent de vivre aujourd'hui comme le fondement des mathématiques et de la science modernes.
 
-Lorsque nous dessinons nonchalamment le symbole ' $\infty$ ', il y est gravé le souffle d'un grand intellect, [John Wallis](https://kenji.blog/p/wallis/), qui a survécu au tumultueux XVIIe siècle et a inséré le scalpel de la logique dans le domaine divin de l'infini.
+Lorsque nous dessinons nonchalamment le symbole ' $\infty$ ', il y est gravé le souffle d'un grand intellect, [John Wallis](https://kenji.blog/fr/p/wallis/), qui a survécu au tumultueux XVIIe siècle et a inséré le scalpel de la logique dans le domaine divin de l'infini.

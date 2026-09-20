@@ -13,7 +13,7 @@ tags:
 
 ## 1. Einführung: Das berühmteste Mathematikrätsel der Welt
 
-In der Geschichte der Mathematik gibt es ein Problem, das die meisten Menschen fasziniert und gequält hat. Das ist **[Fermats Letzter Satz](https://kenji.blog/p/fermats-last-theorem/)** ([Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)). Ein kurzes Memo, das von [Pierre de Fermat](https://kenji.blog/p/fermat/), einem französischen Richter und Amateurmathematiker des 17. Jahrhunderts, am Rand seines Lieblingsbuchs „Arithmetica“ von [Diophantus](https://kenji.blog/p/diophantus/) hinterlassen wurde, war der Beginn eines grandiosen mathematischen Dramas, das 360 Jahre dauerte.
+In der Geschichte der Mathematik gibt es ein Problem, das die meisten Menschen fasziniert und gequält hat. Das ist **[Fermats Letzter Satz](https://kenji.blog/de/p/fermats-last-theorem/)** ([Fermat's Last Theorem](https://kenji.blog/de/p/fermats-last-theorem/)). Ein kurzes Memo, das von [Pierre de Fermat](https://kenji.blog/de/p/fermat/), einem französischen Richter und Amateurmathematiker des 17. Jahrhunderts, am Rand seines Lieblingsbuchs „Arithmetica“ von [Diophantus](https://kenji.blog/de/p/diophantus/) hinterlassen wurde, war der Beginn eines grandiosen mathematischen Dramas, das 360 Jahre dauerte.
 
 Der Inhalt des Theorems selbst ist so einfach, dass selbst ein Mittelschüler ihn verstehen kann.
 
@@ -23,11 +23,11 @@ $$
 
 „Wenn $n$ eine natürliche Zahl größer oder gleich 3 ist, existiert keine Gruppe von von null verschiedenen natürlichen Zahlen $x, y, z$, die diese Gleichung erfüllt.“
 
-Doch der Beweis dieser einfachen Behauptung war für die Menschheit ein unvorstellbar schwieriger Weg. Dieser Artikel verfolgt die Geschichte, wie **[Fermats Letzter Satz](https://kenji.blog/p/fermats-last-theorem/)** entstand, welche Mathematiker ihn herausforderten und wie er schließlich bewiesen wurde.
+Doch der Beweis dieser einfachen Behauptung war für die Menschheit ein unvorstellbar schwieriger Weg. Dieser Artikel verfolgt die Geschichte, wie **[Fermats Letzter Satz](https://kenji.blog/de/p/fermats-last-theorem/)** entstand, welche Mathematiker ihn herausforderten und wie er schließlich bewiesen wurde.
 
 ## 2. Der am Rand hinterlassene „teuflische Zauber“
 
-[Pierre de Fermat](https://kenji.blog/p/fermat/) war kein professioneller Mathematiker. Er arbeitete als Richter am Parlament von Toulouse und genoss die Mathematik in seiner Freizeit. Seine mathematische Intuition und sein Talent gehörten jedoch zum höchsten Niveau der Zeit, und es wird gesagt, dass er die Grundlage der modernen Zahlentheorie legte.
+[Pierre de Fermat](https://kenji.blog/de/p/fermat/) war kein professioneller Mathematiker. Er arbeitete als Richter am Parlament von Toulouse und genoss die Mathematik in seiner Freizeit. Seine mathematische Intuition und sein Talent gehörten jedoch zum höchsten Niveau der Zeit, und es wird gesagt, dass er die Grundlage der modernen Zahlentheorie legte.
 
 Fermat hatte die Angewohnheit, Ideen und Theoreme, die ihm beim Lesen einfielen, in die Ränder der Bücher zu schreiben. Unter den Notizen, die er hinterließ, blieb dieser „Letzte Satz“ als einziger bis zum Ende unbewiesen. Fermat hinterließ das folgende berühmte Zitat am Rand:
 
@@ -39,9 +39,9 @@ Diese Worte wurden zu einer Herausforderung für Mathematiker späterer Generati
 
 Nach Fermats Tod wurden die anderen Theoreme, die er hinterlassen hatte, nacheinander bewiesen, aber nur dieser letzte Satz blieb als unüberwindbare Wand stehen. Viele Mathematiker versuchten, ihn für bestimmte Werte von $n$ zu beweisen.
 
-- **[Leonhard Euler](https://kenji.blog/p/euler/)**: Der größte Mathematiker des 18. Jahrhunderts, Euler, gelang es, den Beweis für die Fälle $n = 3$ und $n = 4$ zu erbringen (es wird auch gesagt, dass Fermat selbst den Fall $n = 4$ bewiesen hatte).
+- **[Leonhard Euler](https://kenji.blog/de/p/euler/)**: Der größte Mathematiker des 18. Jahrhunderts, Euler, gelang es, den Beweis für die Fälle $n = 3$ und $n = 4$ zu erbringen (es wird auch gesagt, dass Fermat selbst den Fall $n = 4$ bewiesen hatte).
 - **Sophie Germain**: Anfang des 19. Jahrhunderts zeigte die Mathematikerin Sophie Germain, dass das Theorem für bestimmte Primzahlen (heute als „Sophie-Germain-Primzahlen“ bekannt) gilt. Dies war ein großer Schritt in Richtung eines allgemeinen Beweises.
-- **[Ernst Kummer](https://kenji.blog/p/kummer/)**: Mitte des 19. Jahrhunderts führte Kummer das Konzept der „idealen Zahlen“ ein und bewies das Theorem für viele Primzahlen, die als reguläre Primzahlen bezeichnet werden.
+- **[Ernst Kummer](https://kenji.blog/de/p/kummer/)**: Mitte des 19. Jahrhunderts führte Kummer das Konzept der „idealen Zahlen“ ein und bewies das Theorem für viele Primzahlen, die als reguläre Primzahlen bezeichnet werden.
 
 Das Ziel, das Theorem für alle unendlich vielen natürlichen Zahlen $n$ zu beweisen, blieb jedoch in weiter Ferne.
 
@@ -56,9 +56,9 @@ graph TD
 
 ## 4. Die Brücke zur modernen Mathematik: Taniyama-Shimura-Vermutung
 
-Im 20. Jahrhundert wurde [Fermats Letzter Satz](https://kenji.blog/p/fermats-last-theorem/) mit einem scheinbar völlig unzusammenhängenden Bereich der Mathematik verknüpft. Das war die **Taniyama-Shimura-Vermutung**.
+Im 20. Jahrhundert wurde [Fermats Letzter Satz](https://kenji.blog/de/p/fermats-last-theorem/) mit einem scheinbar völlig unzusammenhängenden Bereich der Mathematik verknüpft. Das war die **Taniyama-Shimura-Vermutung**.
 
-Im Jahr 1955 stellten [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/) und [Goro Shimura](https://kenji.blog/p/shimura-goro/), zwei junge japanische Mathematiker, eine kühne Vermutung auf: „Alle elliptischen Kurven sind modular.“
+Im Jahr 1955 stellten [Yutaka Taniyama](https://kenji.blog/de/p/taniyama-yutaka/) und [Goro Shimura](https://kenji.blog/de/p/shimura-goro/), zwei junge japanische Mathematiker, eine kühne Vermutung auf: „Alle elliptischen Kurven sind modular.“
 
 - **Elliptische Kurven**: Kurven, die durch Gleichungen in der Form $y^2 = x^3 + ax + b$ ausgedrückt werden.
 - **Modulformen**: Spezielle Funktionen mit extrem hoher Symmetrie in der komplexen Ebene.
@@ -81,9 +81,9 @@ graph LR
     C ==>|"Beweis abgeschlossen"| A
 ```
 
-## 5. Der Ruhm von [Andrew Wiles](https://kenji.blog/p/wiles/)
+## 5. Der Ruhm von [Andrew Wiles](https://kenji.blog/de/p/wiles/)
 
-Dieser dramatische Verlauf inspirierte den britischen Mathematiker **[Andrew Wiles](https://kenji.blog/p/wiles/)** stark. Er war ein Mann, der bereits im Alter von 10 Jahren in einer Bibliothek auf ein Buch über Fermats Letzten Satz stieß und beschloss, Mathematiker zu werden.
+Dieser dramatische Verlauf inspirierte den britischen Mathematiker **[Andrew Wiles](https://kenji.blog/de/p/wiles/)** stark. Er war ein Mann, der bereits im Alter von 10 Jahren in einer Bibliothek auf ein Buch über Fermats Letzten Satz stieß und beschloss, Mathematiker zu werden.
 
 Wiles unterbrach alle anderen Forschungen, schloss sich auf dem Dachboden ein und arbeitete heimlich am Beweis der **Taniyama-Shimura-Vermutung**. Nach 7 Jahren einsamer Forschung schrieb er im Juni 1993 am Ende seines Vortrags an der Universität Cambridge die Schlussfolgerung seines Beweises auf die Tafel und erklärte leise: „Ich denke, ich werde hier aufhören.“ Der Saal brach in tosenden Applaus aus.
 
@@ -95,4 +95,4 @@ Nach etwa einem Jahr des Kampfes hatte Wiles im September 1994 endlich eine Erle
 
 Der Beweis von **Fermats Letztem Satz** hat eine weitreichendere Bedeutung als nur die Lösung eines alten Problems. Die zahlreichen mathematischen Methoden und Theorien, die dabei entwickelt wurden (wie z. B. die Iwasawa-Theorie und die Kolyvagin-Flach-Methode), fungieren als mächtige Werkzeuge in der modernen Mathematik.
 
-Das Geheimnis, das ein Amateurmathematiker im Rand eines Buches hinterließ, wurde zum Leitstern für Mathematiker über Jahrhunderte hinweg und erweiterte die Grenzen des menschlichen Wissens. [Fermats Letzter Satz](https://kenji.blog/p/fermats-last-theorem/) ist ein ewiges Monument, das die Größe des menschlichen Geistes symbolisiert, der immer wieder das Unmögliche herausfordert.
+Das Geheimnis, das ein Amateurmathematiker im Rand eines Buches hinterließ, wurde zum Leitstern für Mathematiker über Jahrhunderte hinweg und erweiterte die Grenzen des menschlichen Wissens. [Fermats Letzter Satz](https://kenji.blog/de/p/fermats-last-theorem/) ist ein ewiges Monument, das die Größe des menschlichen Geistes symbolisiert, der immer wieder das Unmögliche herausfordert.

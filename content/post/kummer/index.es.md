@@ -8,9 +8,9 @@ categories: ["matemáticas", "biografía"]
 tags: ["Ernst Kummer", "Último teorema de Fermat", "Números ideales", "Teoría algebraica de números", "Números primos regulares"]
 ---
 
-# [Ernst Kummer](https://kenji.blog/p/kummer/): Padre de los números ideales y el amanecer de la teoría algebraica de números
+# [Ernst Kummer](https://kenji.blog/es/p/kummer/): Padre de los números ideales y el amanecer de la teoría algebraica de números
 
-En la historia de las matemáticas, no es infrecuente que el desafío a un problema abierto específico abra campos de estudio completamente nuevos. Ernst Eduard Kummer ( **Ernst Eduard Kummer** ) es un gigante matemático alemán del siglo XIX que creó exactamente ese punto de inflexión histórico. Durante su profunda lucha con el **último teorema de Fermat** ( **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** ), introdujo el concepto revolucionario de **números ideales** ( **Ideal Numbers** ), sentando las bases para la teoría algebraica de números moderna.
+En la historia de las matemáticas, no es infrecuente que el desafío a un problema abierto específico abra campos de estudio completamente nuevos. Ernst Eduard Kummer ( **Ernst Eduard Kummer** ) es un gigante matemático alemán del siglo XIX que creó exactamente ese punto de inflexión histórico. Durante su profunda lucha con el **último teorema de Fermat** ( **[Fermat's Last Theorem](https://kenji.blog/es/p/fermats-last-theorem/)** ), introdujo el concepto revolucionario de **números ideales** ( **Ideal Numbers** ), sentando las bases para la teoría algebraica de números moderna.
 
 En este artículo, profundizaremos en la turbulenta vida de Kummer, los episodios humanos que lo rodean y sus brillantes logros que continúan brillando en la historia matemática.
 
@@ -20,7 +20,7 @@ En este artículo, profundizaremos en la turbulenta vida de Kummer, los episodio
 
 ### Primeros años y cambio de la teología
 
-[Ernst Kummer](https://kenji.blog/p/kummer/) nació el 29 de enero de 1810 en Sorau ( **Sorau** ), Reino de Prusia (actualmente en Polonia). Su padre, médico, falleció cuando Kummer era muy joven, y fue criado por su madre. A pesar de ser pobre, Kummer recibió una educación dedicada e ingresó a la Universidad de Halle en 1828.
+[Ernst Kummer](https://kenji.blog/es/p/kummer/) nació el 29 de enero de 1810 en Sorau ( **Sorau** ), Reino de Prusia (actualmente en Polonia). Su padre, médico, falleció cuando Kummer era muy joven, y fue criado por su madre. A pesar de ser pobre, Kummer recibió una educación dedicada e ingresó a la Universidad de Halle en 1828.
 
 Inicialmente, se especializó en teología protestante, pero bajo la influencia del profesor Heinrich Ferdinand Scherk ( **Heinrich Ferdinand Scherk** ), quedó cautivado por la belleza y profundidad de las matemáticas. Guiado por el profesor Scherk, Kummer se dedicó a las matemáticas y obtuvo su doctorado solo tres años después, en 1831.
 
@@ -32,9 +32,9 @@ Uno de estos estudiantes fue Leopold Kronecker ( **Leopold Kronecker** ), quien 
 
 ### Gloria como profesor universitario
 
-Sus notables logros de investigación atrajeron la atención de los principales matemáticos de la época. En 1842, por recomendación de [Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/)** ) y Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ), Kummer se convirtió en profesor titular en la Universidad de Breslau. Además, en 1855, fue nombrado profesor en la Universidad de Berlín para suceder a Dirichlet, quien se había mudado a Gotinga.
+Sus notables logros de investigación atrajeron la atención de los principales matemáticos de la época. En 1842, por recomendación de [Carl Gustav Jacob Jacobi](https://kenji.blog/es/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/es/p/jacobi/)** ) y Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ), Kummer se convirtió en profesor titular en la Universidad de Breslau. Además, en 1855, fue nombrado profesor en la Universidad de Berlín para suceder a Dirichlet, quien se había mudado a Gotinga.
 
-En la Universidad de Berlín, Kummer, junto con [Karl Weierstrass](https://kenji.blog/p/weierstrass/) ( **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** ) y su antiguo alumno Kronecker, elevaron a Berlín a un centro mundial de matemáticas. Sus conferencias eran extremadamente claras y apasionadas, atrayendo a muchos estudiantes brillantes de toda Europa.
+En la Universidad de Berlín, Kummer, junto con [Karl Weierstrass](https://kenji.blog/es/p/weierstrass/) ( **[Karl Weierstrass](https://kenji.blog/es/p/weierstrass/)** ) y su antiguo alumno Kronecker, elevaron a Berlín a un centro mundial de matemáticas. Sus conferencias eran extremadamente claras y apasionadas, atrayendo a muchos estudiantes brillantes de toda Europa.
 
 ---
 
@@ -54,7 +54,7 @@ Esta anécdota todavía se cuenta hoy entre los matemáticos como un ejemplo con
 
 ---
 
-## [El último teorema de Fermat](https://kenji.blog/p/fermats-last-theorem/) y el colapso de la factorización única
+## [El último teorema de Fermat](https://kenji.blog/es/p/fermats-last-theorem/) y el colapso de la factorización única
 
 El mayor logro de Kummer fue su enfoque del **último teorema de Fermat** en la teoría de números. El teorema establece lo siguiente:
 
@@ -64,7 +64,7 @@ $$
 
 No hay soluciones enteras positivas $(x, y, z)$ que satisfagan esta ecuación.
 
-En 1847, los matemáticos franceses [Gabriel Lamé](https://kenji.blog/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/p/lame/)** ) y [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)** ) anunciaron que habían logrado probar este teorema. Su enfoque consistía en extender la factorización al ámbito de los números complejos (cuerpos ciclotómicos).
+En 1847, los matemáticos franceses [Gabriel Lamé](https://kenji.blog/es/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/es/p/lame/)** ) y [Augustin-Louis Cauchy](https://kenji.blog/es/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/es/p/cauchy/)** ) anunciaron que habían logrado probar este teorema. Su enfoque consistía en extender la factorización al ámbito de los números complejos (cuerpos ciclotómicos).
 
 Usando la $p$-ésima raíz primitiva de la unidad $\zeta$ (donde $\zeta^p = 1, \zeta \neq 1$), la ecuación $x^p + y^p = z^p$ puede ser factorizada de la siguiente manera:
 
@@ -138,7 +138,7 @@ Esta superficie desempeñaría más tarde un papel vital en una amplia gama de c
 
 ## Conclusión
 
-[Ernst Kummer](https://kenji.blog/p/kummer/) amplió el marco mismo de las matemáticas al abordar el "rompecabezas irresoluble" del último teorema de Fermat. Su idea de los **números ideales** se convirtió en un lenguaje indispensable en el álgebra posterior y continúa influyendo en todas las ramas de las matemáticas modernas.
+[Ernst Kummer](https://kenji.blog/es/p/kummer/) amplió el marco mismo de las matemáticas al abordar el "rompecabezas irresoluble" del último teorema de Fermat. Su idea de los **números ideales** se convirtió en un lenguaje indispensable en el álgebra posterior y continúa influyendo en todas las ramas de las matemáticas modernas.
 
 Poseyendo el lado humano de ser malo para el cálculo, pero dotado de la perspicacia para descubrir "números ideales invisibles" más allá de la intuición humana, la brillantez de Kummer es verdaderamente digna del título de genio. Los logros de Kummer nos enseñan la importancia de reconsiderar el marco en sí cuando nos enfrentamos a problemas aparentemente imposibles.
 

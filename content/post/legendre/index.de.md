@@ -8,11 +8,11 @@ categories: ["Mathematik", "Biografie"]
 tags: ["Legendre", "Zahlentheorie", "Geometrie", "Geschichte der Mathematik"]
 ---
 
-# [Adrien-Marie Legendre](https://kenji.blog/p/legendre/): Der Schattengigant der Mathematik und sein turbulentes Leben
+# [Adrien-Marie Legendre](https://kenji.blog/de/p/legendre/): Der Schattengigant der Mathematik und sein turbulentes Leben
 
-In der Geschichte der Mathematik gibt es Persönlichkeiten, deren Namen zahlreiche Lehrsätze und Konzepte krönen, deren Privatleben und wahres Gesicht jedoch überraschend unbekannt bleiben. Der große französische Mathematiker **[Adrien-Marie Legendre](https://kenji.blog/p/legendre/)** (1752–1833) ist wohl ein Paradebeispiel dafür.
+In der Geschichte der Mathematik gibt es Persönlichkeiten, deren Namen zahlreiche Lehrsätze und Konzepte krönen, deren Privatleben und wahres Gesicht jedoch überraschend unbekannt bleiben. Der große französische Mathematiker **[Adrien-Marie Legendre](https://kenji.blog/de/p/legendre/)** (1752–1833) ist wohl ein Paradebeispiel dafür.
 
-In diesem Artikel tauchen wir tief in das Leben Legendres ein, beleuchten seine immensen Beiträge zur Welt der Mathematik, seine erbitterte Fehde mit dem zeitgenössischen Genie [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) und das "Porträt-Mysterium", das erst vor kurzem gelöst wurde. Indem wir seinen Lebensweg nachzeichnen, werden Sie den Geist der französischen wissenschaftlichen Gemeinschaft vom 18. bis zum 19. Jahrhundert spüren.
+In diesem Artikel tauchen wir tief in das Leben Legendres ein, beleuchten seine immensen Beiträge zur Welt der Mathematik, seine erbitterte Fehde mit dem zeitgenössischen Genie [Carl Friedrich Gauss](https://kenji.blog/de/p/gauss/) und das "Porträt-Mysterium", das erst vor kurzem gelöst wurde. Indem wir seinen Lebensweg nachzeichnen, werden Sie den Geist der französischen wissenschaftlichen Gemeinschaft vom 18. bis zum 19. Jahrhundert spüren.
 
 ## 1. Leben und historischer Kontext: Ein Mathematiker, der ein turbulentes Frankreich überlebte
 
@@ -42,7 +42,7 @@ Legendres Errungenschaften umfassen fast alle Bereiche der Mathematik seiner Zei
 
 ### 2.1 Leidenschaft für Zahlentheorie und das Legendre-Symbol
 
-Legendre war tief fasziniert von der Zahlentheorie, die von Vorgängern wie [Pierre de Fermat](https://kenji.blog/p/fermat/) und [Leonhard Euler](https://kenji.blog/p/euler/) vorangetrieben worden war. Eine seiner größten Errungenschaften ist seine Arbeit am "Quadratischen Reziprozitätsgesetz". Dieses Gesetz ist einer der schönsten und wichtigsten Lehrsätze der Zahlentheorie, um festzustellen, ob eine Primzahl kongruent zu einem Quadrat modulo einer anderen Primzahl ist.
+Legendre war tief fasziniert von der Zahlentheorie, die von Vorgängern wie [Pierre de Fermat](https://kenji.blog/de/p/fermat/) und [Leonhard Euler](https://kenji.blog/de/p/euler/) vorangetrieben worden war. Eine seiner größten Errungenschaften ist seine Arbeit am "Quadratischen Reziprozitätsgesetz". Dieses Gesetz ist einer der schönsten und wichtigsten Lehrsätze der Zahlentheorie, um festzustellen, ob eine Primzahl kongruent zu einem Quadrat modulo einer anderen Primzahl ist.
 
 Er formulierte dieses Gesetz und lieferte einen teilweisen Beweis (ein vollständiger Beweis wurde später vom jungen Gauss geliefert). Darüber hinaus führte er zur prägnanten und eleganten Darstellung dieser Forschung eine Notation ein, die heute als **Legendre-Symbol** bekannt ist.
 
@@ -77,9 +77,9 @@ Diese Polynome sind zu einem unverzichtbaren Werkzeug bei allen Arten von Berech
 
 ### 2.3 'Éléments de géométrie' und ihr großer Einfluss auf den Mathematikunterricht
 
-Neben seinen Forschungstätigkeiten war Legendre auch ein herausragender Pädagoge. Sein 1794 veröffentlichtes Buch "Éléments de géométrie" (Elemente der Geometrie) strukturierte [Euklid](https://kenji.blog/p/euclid/)s "Elemente" neu, um sie für Schüler seiner Zeit zugänglicher und strenger zu machen.
+Neben seinen Forschungstätigkeiten war Legendre auch ein herausragender Pädagoge. Sein 1794 veröffentlichtes Buch "Éléments de géométrie" (Elemente der Geometrie) strukturierte [Euklid](https://kenji.blog/de/p/euclid/)s "Elemente" neu, um sie für Schüler seiner Zeit zugänglicher und strenger zu machen.
 
-Dieses Lehrbuch war ein phänomenaler Erfolg, wurde ins Englische und in andere Sprachen übersetzt und weltweit gelesen, nicht nur in Frankreich. Es wurde in den Vereinigten Staaten weit verbreitet und blieb das absolute Standardwerk für den Geometrieunterricht während des gesamten 19. Jahrhunderts. In diesem Buch versuchte er kontinuierlich, das Parallelenpostulat ([Euklid](https://kenji.blog/p/euclid/)s fünftes Postulat) zu beweisen, fügte mit jeder Ausgabe neue Beweise hinzu, obwohl sich letztendlich alle als fehlerhaft erwiesen. Seine Beharrlichkeit wurde jedoch zu einer der wichtigen Triebkräfte, die die Entstehung der nicht-euklidischen Geometrie anregten.
+Dieses Lehrbuch war ein phänomenaler Erfolg, wurde ins Englische und in andere Sprachen übersetzt und weltweit gelesen, nicht nur in Frankreich. Es wurde in den Vereinigten Staaten weit verbreitet und blieb das absolute Standardwerk für den Geometrieunterricht während des gesamten 19. Jahrhunderts. In diesem Buch versuchte er kontinuierlich, das Parallelenpostulat ([Euklid](https://kenji.blog/de/p/euclid/)s fünftes Postulat) zu beweisen, fügte mit jeder Ausgabe neue Beweise hinzu, obwohl sich letztendlich alle als fehlerhaft erwiesen. Seine Beharrlichkeit wurde jedoch zu einer der wichtigen Triebkräfte, die die Entstehung der nicht-euklidischen Geometrie anregten.
 
 ### 2.4 Herausforderung durch den Primzahlsatz
 
@@ -95,9 +95,9 @@ Später stellte sich heraus, dass Gauss mit dem logarithmischen Integral $ \text
 
 ## 3. Fehde mit Gauss: Die Tragödie um die Entdeckung der kleinsten Quadrate
 
-Wenn man über das Leben von Legendre spricht, kommt man nicht um den erbitterten Prioritätsstreit herum, insbesondere bezüglich der **[Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/)**, mit [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), dem "Fürsten der Mathematik" aus Deutschland.
+Wenn man über das Leben von Legendre spricht, kommt man nicht um den erbitterten Prioritätsstreit herum, insbesondere bezüglich der **[Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/)**, mit [Carl Friedrich Gauss](https://kenji.blog/de/p/gauss/), dem "Fürsten der Mathematik" aus Deutschland.
 
-Im Jahr 1805 kündigte Legendre in seinem Buch über die Berechnung der Kometenbahnen zum ersten Mal weltweit die "[Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/)" an – eine Methode zur Ermittlung des wahrscheinlichsten Wertes durch Minimierung der Fehler von Beobachtungsdaten. Dies war eine revolutionäre Technik, die die Grundlage für jeden Bereich bildet, der sich mit Daten befasst, von Astronomie und Geodäsie bis hin zu moderner Statistik und maschinellem Lernen.
+Im Jahr 1805 kündigte Legendre in seinem Buch über die Berechnung der Kometenbahnen zum ersten Mal weltweit die "[Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/)" an – eine Methode zur Ermittlung des wahrscheinlichsten Wertes durch Minimierung der Fehler von Beobachtungsdaten. Dies war eine revolutionäre Technik, die die Grundlage für jeden Bereich bildet, der sich mit Daten befasst, von Astronomie und Geodäsie bis hin zu moderner Statistik und maschinellem Lernen.
 
 ```mermaid
 flowchart LR
@@ -106,7 +106,7 @@ flowchart LR
     C -->|"Bahnvorhersage etc."| D["Anwendungen"]
 ```
 
-Vier Jahre später, im Jahr 1809, nutzte Gauss die [Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/) jedoch ausgiebig in seinem eigenen Buch über Himmelsmechanik und behauptete: "Ich wende diese Methode seit 1795 routinemäßig an." Aus historischen Beweisen geht hervor, dass Gauss' Behauptung der Wahrheit entsprach, aber die akademische Priorität der Veröffentlichung gebührte zweifellos Legendre.
+Vier Jahre später, im Jahr 1809, nutzte Gauss die [Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/) jedoch ausgiebig in seinem eigenen Buch über Himmelsmechanik und behauptete: "Ich wende diese Methode seit 1795 routinemäßig an." Aus historischen Beweisen geht hervor, dass Gauss' Behauptung der Wahrheit entsprach, aber die akademische Priorität der Veröffentlichung gebührte zweifellos Legendre.
 
 Gauss' Verhalten verletzte Legendres Stolz zutiefst. Legendre schickte einen Brief an Gauss und forderte ihn auf, seine frühere Veröffentlichung anzuerkennen, aber Gauss bewahrte eine kalte Haltung. Im Anhang seines eigenen Werkes brachte Legendre seine heftige Wut auf Gauss deutlich zum Ausdruck und erklärte, dass "eine gewisse Person die Entdeckung eines anderen als ihre eigene ausgibt."
 
@@ -116,7 +116,7 @@ Darüber hinaus bezüglich des Primzahlsatzes (Legendres Vermutung von $ \pi(x) 
 
 Die seltsamste und für uns heute amüsanteste Episode über Legendre betrifft das Geheimnis seines "Porträts".
 
-Viele Jahre lang wurde in Mathematik-Lehrbüchern und wissenschaftshistorischen Büchern auf der ganzen Welt ein bestimmtes Porträt als Gesicht von [Adrien-Marie Legendre](https://kenji.blog/p/legendre/) verwendet. Es war eine Lithographie, die das Profil eines Mannes mit einem strengen, mürrischen Ausdruck zeigte. Jeder glaubte ohne Zweifel, dass dies das Gesicht des großen Mathematikers Legendre war.
+Viele Jahre lang wurde in Mathematik-Lehrbüchern und wissenschaftshistorischen Büchern auf der ganzen Welt ein bestimmtes Porträt als Gesicht von [Adrien-Marie Legendre](https://kenji.blog/de/p/legendre/) verwendet. Es war eine Lithographie, die das Profil eines Mannes mit einem strengen, mürrischen Ausdruck zeigte. Jeder glaubte ohne Zweifel, dass dies das Gesicht des großen Mathematikers Legendre war.
 
 Im Jahr 2005 kam jedoch eine überraschende Tatsache ans Licht, die die Gemeinschaft der Mathematikgeschichte erschütterte. Schockierenderweise gehörte das Porträt, das über 200 Jahre lang als "Mathematiker Legendre" veröffentlicht worden war, tatsächlich einer völlig anderen Person: **Louis Legendre** (1752–1797), einem Politiker während der Französischen Revolution!
 
@@ -129,8 +129,8 @@ Dort war anstelle des strengen Profils des Politikers Louis Legendre die Figur e
 
 ## 5. Fazit
 
-[Adrien-Marie Legendre](https://kenji.blog/p/legendre/) beendete sein Leben 1833 in Paris. In seinen späteren Jahren erlebte er unglückliche Ereignisse, wie z.B. die Streichung seiner Rente aufgrund seines Widerstands gegen die Regierungspolitik.
+[Adrien-Marie Legendre](https://kenji.blog/de/p/legendre/) beendete sein Leben 1833 in Paris. In seinen späteren Jahren erlebte er unglückliche Ereignisse, wie z.B. die Streichung seiner Rente aufgrund seines Widerstands gegen die Regierungspolitik.
 
-Er wird oft als "Schattenfigur" vor der überwältigenden Brillanz der hochkarätigen Genies seiner Zeit, wie Gauss und Laplace, behandelt. Die Rolle, die er beim Aufbau der Grundlagen der modernen Mathematik spielte, ist jedoch unermesslich. Das Erbe, das er hinterließ, wie Legendre-Polynome, das Legendre-Symbol und die Formulierung der [Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/), stützt weiterhin den Kern der modernen Wissenschaft und Technologie.
+Er wird oft als "Schattenfigur" vor der überwältigenden Brillanz der hochkarätigen Genies seiner Zeit, wie Gauss und Laplace, behandelt. Die Rolle, die er beim Aufbau der Grundlagen der modernen Mathematik spielte, ist jedoch unermesslich. Das Erbe, das er hinterließ, wie Legendre-Polynome, das Legendre-Symbol und die Formulierung der [Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/), stützt weiterhin den Kern der modernen Wissenschaft und Technologie.
 
 Sein Leben war von einem bizarren Schicksal geprägt, das nicht nur spektakuläre Erfolge umfasste, sondern auch Qualen um die Priorität und die posthume Verwechslung seines Porträts. Wenn wir in den Formeln der Mathematik und Physik auf den Namen **Legendre** stoßen, denken Sie bitte nicht nur als Symbol an ihn, sondern nehmen Sie sich einen Moment Zeit, um über das Leben dieses einen großen Mathematikers nachzudenken, der einen unbeugsamen Geist voller Menschlichkeit besaß.

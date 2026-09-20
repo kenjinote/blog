@@ -28,11 +28,11 @@ In diesem Artikel werden wir untersuchen, warum die intuitive Definition unzurei
 
 ## 2. Die Geschichte der Analysis und die Krise der Strenge
 
-Als [Isaac Newton](https://kenji.blog/p/newton/) und [Gottfried Leibniz](https://kenji.blog/p/leibniz/) im 17. Jahrhundert die Infinitesimalrechnung begründeten, stützten sie sich stark auf das Konzept der "Infinitesimalen" (Größen, die unendlich klein, aber nicht null sind). Während ihre Berechnungen in der Physik und Geometrie bemerkenswerte Ergebnisse lieferten, war das mathematische Fundament äußerst fragil.
+Als [Isaac Newton](https://kenji.blog/de/p/newton/) und [Gottfried Leibniz](https://kenji.blog/de/p/leibniz/) im 17. Jahrhundert die Infinitesimalrechnung begründeten, stützten sie sich stark auf das Konzept der "Infinitesimalen" (Größen, die unendlich klein, aber nicht null sind). Während ihre Berechnungen in der Physik und Geometrie bemerkenswerte Ergebnisse lieferten, war das mathematische Fundament äußerst fragil.
 
 Der damalige Philosoph George Berkeley kritisierte dieses Konzept der Infinitesimalen scharf und nannte sie die " **Geister verschwundener Größen** ". Er wies auf die logische Inkonsistenz hin, sie während einer Division mitten in einer Berechnung als nicht-null-Größen zu behandeln, nur um sie am Ende bequemerweise als null abzutun.
 
-Die Analysis entwickelte sich im Laufe des 18. Jahrhunderts weiter, aber zu Beginn des 19. Jahrhunderts wurden nacheinander "pathologische Funktionen" entdeckt, die nicht allein mit Intuition gehandhabt werden konnten, was das Krisenbewusstsein der Mathematiker schärfte. Um dies zu überwinden, verbannten [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) und [Karl Weierstrass](https://kenji.blog/p/weierstrass/) das zweifelhafte Konzept der Infinitesimalen und rekonstruierten die Analysis nur unter Verwendung der Eigenschaften reeller Zahlen und Ungleichungen. Dies markierte die Geburtsstunde der $\varepsilon-\delta$-Definition.
+Die Analysis entwickelte sich im Laufe des 18. Jahrhunderts weiter, aber zu Beginn des 19. Jahrhunderts wurden nacheinander "pathologische Funktionen" entdeckt, die nicht allein mit Intuition gehandhabt werden konnten, was das Krisenbewusstsein der Mathematiker schärfte. Um dies zu überwinden, verbannten [Augustin-Louis Cauchy](https://kenji.blog/de/p/cauchy/) und [Karl Weierstrass](https://kenji.blog/de/p/weierstrass/) das zweifelhafte Konzept der Infinitesimalen und rekonstruierten die Analysis nur unter Verwendung der Eigenschaften reeller Zahlen und Ungleichungen. Dies markierte die Geburtsstunde der $\varepsilon-\delta$-Definition.
 
 ## 3. Die Formale ε-δ-Definition
 

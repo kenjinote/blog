@@ -13,7 +13,7 @@ tags:
   - "Physics"
 ---
 
-If we were to name one person who had the most profound impact on the development of science in human history, many would name **[Isaac Newton](https://kenji.blog/p/newton/)** . He achieved revolutionary discoveries across diverse fields such as physics, mathematics, and astronomy. It is no exaggeration to say that his achievements were not merely discoveries of a single era, but built the very foundations of modern science.
+If we were to name one person who had the most profound impact on the development of science in human history, many would name **[Isaac Newton](https://kenji.blog/en/p/newton/)** . He achieved revolutionary discoveries across diverse fields such as physics, mathematics, and astronomy. It is no exaggeration to say that his achievements were not merely discoveries of a single era, but built the very foundations of modern science.
 
 In this article, we will trace the extraordinary episodes from Newton's upbringing to his later years, and deeply explore his mathematical and physical feats, particularly focusing on **calculus** (the method of fluxions), the **generalized binomial theorem** , and **Newton's method** .
 
@@ -21,7 +21,7 @@ In this article, we will trace the extraordinary episodes from Newton's upbringi
 
 ### A Solitary Childhood and Birth in Woolsthorpe
 
-[Isaac Newton](https://kenji.blog/p/newton/) was born on Christmas Day in 1642 (Julian calendar; January 4, 1643, in the Gregorian calendar) in the small village of Woolsthorpe, Lincolnshire, England. Born prematurely, his body was extremely small, and at first, his survival was in doubt. To make matters worse, Newton's father had passed away three months before his birth.
+[Isaac Newton](https://kenji.blog/en/p/newton/) was born on Christmas Day in 1642 (Julian calendar; January 4, 1643, in the Gregorian calendar) in the small village of Woolsthorpe, Lincolnshire, England. Born prematurely, his body was extremely small, and at first, his survival was in doubt. To make matters worse, Newton's father had passed away three months before his birth.
 
 When he was three years old, his mother remarried and left Newton in the care of his grandmother to join her new husband. This early experience of separation from his parent is said to have profoundly influenced Newton's personality, contributing to the extremely secretive and suspicious character he developed later in life.
 
@@ -29,7 +29,7 @@ When he began attending the local school, Newton was initially not an outstandin
 
 ### Cambridge University and the "Year of Wonders"
 
-In 1661, Newton entered Trinity College, Cambridge. While the university at the time mainly taught Aristotelian philosophy, Newton was strongly drawn to the new scientific thoughts of [René Descartes](https://kenji.blog/p/descartes/), Galileo Galilei, and Johannes Kepler. He left a note in his notebook stating, **"Amicus Plato amicus Aristoteles magis amica veritas"** (Plato is my friend, Aristotle is my friend, but my greatest friend is truth).
+In 1661, Newton entered Trinity College, Cambridge. While the university at the time mainly taught Aristotelian philosophy, Newton was strongly drawn to the new scientific thoughts of [René Descartes](https://kenji.blog/en/p/descartes/), Galileo Galilei, and Johannes Kepler. He left a note in his notebook stating, **"Amicus Plato amicus Aristoteles magis amica veritas"** (Plato is my friend, Aristotle is my friend, but my greatest friend is truth).
 
 In 1665, a severe outbreak of the Great Plague hit London, forcing the university to close. Newton returned to his hometown of Woolsthorpe and immersed himself in contemplation for about a year and a half. During this quiet and solitary period, he found the inspiration for his three major achievements: the foundations of calculus, optics (spectral analysis of light using a prism), and the law of universal gravitation. In the history of science, this period is known as the **Annus Mirabilis** (Year of Wonders).
 
@@ -164,4 +164,4 @@ These words express his respect, acknowledging that his discoveries were only po
 
 The system of classical mechanics he established remained the absolute foundation of physics for about 200 years until Albert Einstein published the theory of relativity in the early 20th century. Even today, Newtonian mechanics is used extremely accurately and effectively in calculating the physical phenomena of our daily scale and the orbits of space probes.
 
-[Isaac Newton](https://kenji.blog/p/newton/), starting from a solitary childhood, unlocked the truths of the universe through his extraordinary concentration and genius intuition. The numerous laws and mathematical theorems he left behind continue to support our technology and society to this day.
+[Isaac Newton](https://kenji.blog/en/p/newton/), starting from a solitary childhood, unlocked the truths of the universe through his extraordinary concentration and genius intuition. The numerous laws and mathematical theorems he left behind continue to support our technology and society to this day.

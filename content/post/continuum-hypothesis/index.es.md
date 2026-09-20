@@ -10,12 +10,12 @@ tags: ["Hipótesis del continuo", "Cantor", "Infinito", "Matemáticas"]
 
 ## 1. Introducción: Medir el tamaño del infinito
 
-En el mundo de las matemáticas, el concepto de "infinito" ha sido objeto de debate filosófico desde tiempos antiguos. Sin embargo, no existía un método matemático riguroso para comparar el tamaño del infinito hasta que apareció [Georg Cantor](https://kenji.blog/p/cantor/) a finales del siglo XIX. Cantor fundó la teoría de conjuntos y demostró que existen **diferentes tamaños** (cardinalidades) incluso en el infinito.
+En el mundo de las matemáticas, el concepto de "infinito" ha sido objeto de debate filosófico desde tiempos antiguos. Sin embargo, no existía un método matemático riguroso para comparar el tamaño del infinito hasta que apareció [Georg Cantor](https://kenji.blog/es/p/cantor/) a finales del siglo XIX. Cantor fundó la teoría de conjuntos y demostró que existen **diferentes tamaños** (cardinalidades) incluso en el infinito.
 
 Al considerar el conjunto de los números naturales $\mathbb{N}$ y el conjunto de los números reales $\mathbb{R}$, el argumento de la diagonalización de Cantor demostró que el conjunto de los números reales es "verdaderamente mayor" que el conjunto de los números naturales. La cardinalidad de los números naturales se denota por $\aleph_0$ (álef sub cero), y la de los números reales por $\mathfrak{c}$ (cardinalidad del continuo) o $2^{\aleph_0}$. Según el teorema de Cantor, $\aleph_0 < 2^{\aleph_0}$.
 
 Aquí, Cantor se planteó una pregunta natural: "¿Existe un conjunto con una cardinalidad que se encuentre en el **medio** de la cardinalidad de los números naturales y la de los números reales?"
-Este fue el comienzo de la **Hipótesis del continuo** ([Continuum Hypothesis](https://kenji.blog/p/continuum-hypothesis/), CH), que más tarde sacudiría los fundamentos de las matemáticas.
+Este fue el comienzo de la **Hipótesis del continuo** ([Continuum Hypothesis](https://kenji.blog/es/p/continuum-hypothesis/), CH), que más tarde sacudiría los fundamentos de las matemáticas.
 
 ## 2. Definición rigurosa de la Hipótesis del continuo (CH)
 
@@ -35,11 +35,11 @@ Por lo tanto, para el conjunto de los números naturales $\mathbb{N}$, se cumple
 $$ |\mathbb{N}| < |\mathcal{P}(\mathbb{N})| = |\mathbb{R}| $$
 La CH es la afirmación de que no existen otras cardinalidades entre estas dos.
 
-## 3. La agonía de Cantor y la propuesta de [David Hilbert](https://kenji.blog/p/hilbert/)
+## 3. La agonía de Cantor y la propuesta de [David Hilbert](https://kenji.blog/es/p/hilbert/)
 
 Cantor intentó demostrar esta hipótesis durante toda su vida, pero nunca tuvo éxito. A veces creía haberla "demostrado", y otras veces creía haberla "refutado"; su estado mental se vio gravemente afectado por este difícil problema.
 
-En el Segundo Congreso Internacional de Matemáticos celebrado en París en el año 1900, [David Hilbert](https://kenji.blog/p/hilbert/) propuso los "23 problemas de Hilbert" que las matemáticas del siglo XX debían resolver. El memorable **primer problema** fue precisamente esta "demostración de la Hipótesis del continuo".
+En el Segundo Congreso Internacional de Matemáticos celebrado en París en el año 1900, [David Hilbert](https://kenji.blog/es/p/hilbert/) propuso los "23 problemas de Hilbert" que las matemáticas del siglo XX debían resolver. El memorable **primer problema** fue precisamente esta "demostración de la Hipótesis del continuo".
 
 ## 4. Axiomatización de la teoría de conjuntos: El sistema de axiomas ZFC
 
@@ -58,9 +58,9 @@ El sistema de axiomas ZFC consta de los siguientes 9 axiomas (o esquemas axiomá
 
 Usando estos axiomas, los matemáticos intentaron determinar la veracidad de la CH.
 
-## 5. [Kurt Gödel](https://kenji.blog/p/godel/) y el "universo constructible"
+## 5. [Kurt Gödel](https://kenji.blog/es/p/godel/) y el "universo constructible"
 
-En 1940, [Kurt Gödel](https://kenji.blog/p/godel/) publicó un resultado sorprendente. Demostró que, suponiendo que el sistema de axiomas ZFC sea consistente, **"añadir la CH al sistema de axiomas ZFC no genera contradicciones"**.
+En 1940, [Kurt Gödel](https://kenji.blog/es/p/godel/) publicó un resultado sorprendente. Demostró que, suponiendo que el sistema de axiomas ZFC sea consistente, **"añadir la CH al sistema de axiomas ZFC no genera contradicciones"**.
 
 Gödel construyó un modelo de conjuntos llamado el **universo constructible** (Constructible Universe, $L$). Dentro de $L$, todos los conjuntos se construyen jerárquicamente mediante fórmulas lógicas. Gödel demostró que todos los axiomas ZFC se cumplen dentro de este $L$, y además, **la CH también es verdadera**.
 
@@ -135,7 +135,7 @@ La independencia de la CH plantea problemas profundos en la filosofía de las ma
 
 ## 10. Resumen
 
-La búsqueda de la jerarquía de los infinitos que soñó [Georg Cantor](https://kenji.blog/p/cantor/) llegó a una conclusión dramática de "ni demostrable ni refutable" gracias a dos genios, Gödel y Cohen. Sin embargo, esto no significa en absoluto una derrota para las matemáticas. Al contrario, generó una herramienta poderosa llamada forcing y evolucionó el campo de la teoría de conjuntos hasta hacerlo más rico y complejo que nunca.
+La búsqueda de la jerarquía de los infinitos que soñó [Georg Cantor](https://kenji.blog/es/p/cantor/) llegó a una conclusión dramática de "ni demostrable ni refutable" gracias a dos genios, Gödel y Cohen. Sin embargo, esto no significa en absoluto una derrota para las matemáticas. Al contrario, generó una herramienta poderosa llamada forcing y evolucionó el campo de la teoría de conjuntos hasta hacerlo más rico y complejo que nunca.
 
 La Hipótesis del continuo sigue planteándonos hoy en día las preguntas fundamentales de "qué es el infinito" y "qué es la verdad matemática".
 

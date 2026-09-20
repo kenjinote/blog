@@ -82,7 +82,7 @@ graph LR
 
 - **糟糕的卡片** ：「寫下 Dijkstra 演算法的完整證明」
 - **好的卡片** ：「在 Dijkstra 演算法中，某個頂點的最短距離被視為確定的條件是什麼？」→「在未確定的頂點集合中，選出暫定距離最小的頂點時。」
-- **好的卡片** ：「寫出[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)的公式」→「對於質數 $p$ 以及與其互質的整數 $a$，$a^{p-1} \equiv 1 \pmod p$」
+- **好的卡片** ：「寫出[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的公式」→「對於質數 $p$ 以及與其互質的整數 $a$，$a^{p-1} \equiv 1 \pmod p$」
 
 在記憶公式時，建議使用 LaTeX 格式將其登錄至 Anki，並活用填空題（Cloze Deletion）來提升效果。
 
@@ -98,7 +98,7 @@ graph LR
 
 ### 4.1 範例 1：RSA 加密的數學原理與 Python 實作
 
-作為公開金鑰加密技術代表的 RSA 加密，是初等整數論（同餘式、歐拉定理、擴展[歐幾里得](https://kenji.blog/p/euclid/)演算法）的完美應用。
+作為公開金鑰加密技術代表的 RSA 加密，是初等整數論（同餘式、歐拉定理、擴展[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法）的完美應用。
 
 #### 數學背景
 RSA 加密的金鑰產生及加密與解密過程可由以下數學公式表示：
@@ -171,7 +171,7 @@ def rsa_demo():
 rsa_demo()
 ```
 
-為了找到滿足公式 $e \cdot d \equiv 1 \pmod{\phi(n)}$ 的 $d$，我們必須實作稱為擴展[歐幾里得](https://kenji.blog/p/euclid/)演算法的演算法。像這樣， **當試圖將數學公式寫成程式碼時，就會面臨「這個變數具體該如何計算？」的實作問題，而在解決這些問題的過程中，對數學的理解將會突飛猛進** 。
+為了找到滿足公式 $e \cdot d \equiv 1 \pmod{\phi(n)}$ 的 $d$，我們必須實作稱為擴展[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法的演算法。像這樣， **當試圖將數學公式寫成程式碼時，就會面臨「這個變數具體該如何計算？」的實作問題，而在解決這些問題的過程中，對數學的理解將會突飛猛進** 。
 
 ### 4.2 範例 2：Dijkstra 演算法與鬆弛操作（Relaxation）
 

@@ -19,7 +19,7 @@ Bem-vindo ao mundo onde a beleza da matemática e a praticidade da programação
 
 ---
 
-## 1. [Identidade de Euler ([Euler's Identity](https://kenji.blog/p/eulers-identity/))](https://kenji.blog/p/eulers-identity/)
+## 1. [Identidade de Euler ([Euler's Identity](https://kenji.blog/pt/p/eulers-identity/))](https://kenji.blog/p/eulers-identity/)
 
 ### A beleza e visão geral da fórmula
 Esta é a identidade de Euler, aclamada como "o tesouro da humanidade" e "a fórmula mais bela do mundo". As cinco constantes mais importantes da matemática (o número de Euler $e$, a unidade imaginária $i$, a constante pi $\pi$, o elemento neutro da multiplicação $1$ e o elemento neutro da adição $0$) estão integradas em uma única e simples equação.
@@ -132,7 +132,7 @@ No código acima, o valor de entrada `x` é normalizado no intervalo $[-\pi, \pi
 
 ---
 
-## 3. [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/p/bayes-theorem/))
+## 3. [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/pt/p/bayes-theorem/))
 
 ### A beleza e visão geral da fórmula
 O teorema de Bayes é um teorema para atualizar a probabilidade de um evento (probabilidade a posteriori) com base no conhecimento prévio (probabilidade a priori) relacionado a esse evento. É uma das fórmulas mais importantes na teoria das probabilidades e na estatística.
@@ -559,12 +559,12 @@ O motivo de criarmos uma ramificação condicional separando o caso `x >= 0` dos
 
 ---
 
-## 10. Distância [Euclid](https://kenji.blog/p/euclid/)iana e Teorema de Pitágoras ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. Distância [Euclid](https://kenji.blog/pt/p/euclid/)iana e Teorema de Pitágoras ([[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### A beleza e visão geral da fórmula
 Tendo as suas origens baseadas na Grécia antiga, é a fórmula geométrica clássica que define a medição da distância da linha reta exata calculada entre dois pontos em qualquer espaço de dimensão $n$. Quando no espaço 2D, ela trata-se rigorosamente do mundialmente prestigiado "Teorema de Pitágoras" ($a^2 + b^2 = c^2$).
 
-Em um espaço 3D, a "Distância [Euclid](https://kenji.blog/p/euclid/)iana $d$" estabelecida entre o ponto $P(x_1, y_1, z_1)$ e $Q(x_2, y_2, z_2)$ é maravilhosamente descrita matematicamente na seguinte equação:
+Em um espaço 3D, a "Distância [Euclid](https://kenji.blog/pt/p/euclid/)iana $d$" estabelecida entre o ponto $P(x_1, y_1, z_1)$ e $Q(x_2, y_2, z_2)$ é maravilhosamente descrita matematicamente na seguinte equação:
 
 $$ d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2} $$
 

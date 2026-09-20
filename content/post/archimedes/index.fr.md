@@ -124,7 +124,7 @@ En conséquence, il a montré que ce nombre ne dépasserait pas $8 \times 10^{63
 
 En 1906, un palimpseste (un manuscrit dont le texte a été gratté et réutilisé) contenant bon nombre des œuvres perdues d'Archimède a été découvert à Constantinople (aujourd'hui Istanbul). Ce « Palimpseste d'Archimède » contenait un traité inestimable intitulé « La Méthode des Théorèmes Mécaniques ».
 
-Dans cet ouvrage, Archimède révèle son « processus de pensée » sur la façon dont il est parvenu à de nombreuses découvertes géométriques. Il divisait les figures en collections de « lignes » ou de « plans » infiniment minces et devinait leurs aires et volumes à l'aide d'un modèle mécanique consistant à les équilibrer sur une balance. Cette approche est essentiellement la même que le « calcul intégral » établi à des époques ultérieures par [Isaac Newton](https://kenji.blog/p/newton/) et [Gottfried Leibniz](https://kenji.blog/p/leibniz/), montrant qu'Archimède était arrivé à quelques pas seulement du concept de calcul infinitésimal.
+Dans cet ouvrage, Archimède révèle son « processus de pensée » sur la façon dont il est parvenu à de nombreuses découvertes géométriques. Il divisait les figures en collections de « lignes » ou de « plans » infiniment minces et devinait leurs aires et volumes à l'aide d'un modèle mécanique consistant à les équilibrer sur une balance. Cette approche est essentiellement la même que le « calcul intégral » établi à des époques ultérieures par [Isaac Newton](https://kenji.blog/fr/p/newton/) et [Gottfried Leibniz](https://kenji.blog/fr/p/leibniz/), montrant qu'Archimède était arrivé à quelques pas seulement du concept de calcul infinitésimal.
 
 ## 3.6 Solides d'Archimède
 
@@ -166,7 +166,7 @@ On dit qu'elle a été inventée pendant qu'il séjournait en Égypte pour pompe
 
 # 5. Influence sur la Postérité et Héritage
 
-Les œuvres laissées par Archimède sont devenues une bible pour les savants de la période hellénistique à l'époque romaine, et plus tard dans le monde arabe médiéval et l'Europe de la Renaissance. Galilée a salué Archimède comme une « figure surhumaine » et a étudié ses méthodes avec enthousiasme. Johannes Kepler, [René Descartes](https://kenji.blog/p/descartes/) et Newton, qui a perfectionné le calcul, ont également été grandement influencés par les écrits d'Archimède, directement et indirectement.
+Les œuvres laissées par Archimède sont devenues une bible pour les savants de la période hellénistique à l'époque romaine, et plus tard dans le monde arabe médiéval et l'Europe de la Renaissance. Galilée a salué Archimède comme une « figure surhumaine » et a étudié ses méthodes avec enthousiasme. Johannes Kepler, [René Descartes](https://kenji.blog/fr/p/descartes/) et Newton, qui a perfectionné le calcul, ont également été grandement influencés par les écrits d'Archimède, directement et indirectement.
 
 Son esprit de recherche et sa méthodologie continuent de briller non pas simplement comme des reliques antiques, mais comme l'archétype de la pensée scientifique. Archimède est la personne qui a incarné à elle seule les trois piliers de la science moderne : la démonstration rigoureuse en mathématiques, la modélisation mathématique des phénomènes physiques et le développement technologique pratique appliquant la théorie.
 

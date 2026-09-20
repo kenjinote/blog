@@ -150,7 +150,7 @@ $$f(x_2) - f(x_1) = f'(c)(x_2 - x_1)$$
 
 ## 6. 總結
 
-在本文中，我們探討了作為微積分基礎的[介值定理與均值定理](https://kenji.blog/p/intermediate-and-mean-value-theorem/)。
+在本文中，我們探討了作為微積分基礎的[介值定理與均值定理](https://kenji.blog/zh-tw/p/intermediate-and-mean-value-theorem/)。
 
 - **介值定理** 保證了連續函數的「相連」性質，揭示了方程式解的存在性。
 - **均值定理** 將函數的平均變化與瞬時變化聯繫起來，是利用導數性質掌握函數整體行為（如增減性）的不可或缺的工具。

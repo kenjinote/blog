@@ -18,13 +18,13 @@ When we decide something in society, the most commonly used methods are "electio
 
 In fact, the mathematical answer to this question is **"No."**
 
-In 1951, the economist Kenneth Arrow mathematically proved that there is no perfect decision-making rule that satisfies certain reasonable conditions. This is **"[Arrow's Impossibility Theorem](https://kenji.blog/p/arrows-impossibility-theorem/)."** Arrow was awarded the Nobel Memorial Prize in Economic Sciences in 1972 for his contributions to social choice theory, including this achievement.
+In 1951, the economist Kenneth Arrow mathematically proved that there is no perfect decision-making rule that satisfies certain reasonable conditions. This is **"[Arrow's Impossibility Theorem](https://kenji.blog/en/p/arrows-impossibility-theorem/)."** Arrow was awarded the Nobel Memorial Prize in Economic Sciences in 1972 for his contributions to social choice theory, including this achievement.
 
 In this article, we will explain in detail what this theorem means, incorporating concrete examples, mathematical formulas, and diagrams.
 
-## 1. What is [Arrow's Impossibility Theorem](https://kenji.blog/p/arrows-impossibility-theorem/)?
+## 1. What is [Arrow's Impossibility Theorem](https://kenji.blog/en/p/arrows-impossibility-theorem/)?
 
-To put [Arrow's Impossibility Theorem](https://kenji.blog/p/arrows-impossibility-theorem/) simply, it states that **"When 3 or more voters are choosing from 3 or more options, it is impossible for a 'fair election (decision-making rule)' to simultaneously satisfy multiple conditions that it should meet."**
+To put [Arrow's Impossibility Theorem](https://kenji.blog/en/p/arrows-impossibility-theorem/) simply, it states that **"When 3 or more voters are choosing from 3 or more options, it is impossible for a 'fair election (decision-making rule)' to simultaneously satisfy multiple conditions that it should meet."**
 
 Here, a "fair election" refers to several conditions that we intuitively feel "would make it fair." Arrow defined the minimum reasonable conditions that a society should meet and showed that they are logically incompatible.
 
@@ -56,7 +56,7 @@ The system must not be such that the opinion of one specific person (a dictator)
 
 ---
 
-[Arrow's Impossibility Theorem](https://kenji.blog/p/arrows-impossibility-theorem/) mathematically proved the shocking fact that **"there exists no social welfare function that satisfies all these 4 conditions simultaneously (imposing non-dictatorship always leads to a contradiction)."**
+[Arrow's Impossibility Theorem](https://kenji.blog/en/p/arrows-impossibility-theorem/) mathematically proved the shocking fact that **"there exists no social welfare function that satisfies all these 4 conditions simultaneously (imposing non-dictatorship always leads to a contradiction)."**
 
 ```mermaid
 graph TD
@@ -134,7 +134,7 @@ This means that the existence of the third option C affected the win/loss of A a
 
 ## 4. Expression Using Mathematical and Logical Formulas
 
-Let's express [Arrow's Impossibility Theorem](https://kenji.blog/p/arrows-impossibility-theorem/) more rigorously using mathematical and logical formulas.
+Let's express [Arrow's Impossibility Theorem](https://kenji.blog/en/p/arrows-impossibility-theorem/) more rigorously using mathematical and logical formulas.
 
 Let the set of voters be $V = \{1, 2, \dots, n\}$, and the set of options be $X$ ($|X| \ge 3$).
 Let the preference of voter $i$ be $\succeq_i$, and the set of preferences of all voters (profile) be $P = (\succeq_1, \succeq_2, \dots, \succeq_n)$.
@@ -195,7 +195,7 @@ In reality, our society functions by slightly relaxing one of the "conditions" o
 
 ## Conclusion
 
-[Arrow's Impossibility Theorem](https://kenji.blog/p/arrows-impossibility-theorem/) used the cold language of mathematics to prove **"the absence of a rule that is perfect for everyone."** However, that does not mean the defeat of democracy.
+[Arrow's Impossibility Theorem](https://kenji.blog/en/p/arrows-impossibility-theorem/) used the cold language of mathematics to prove **"the absence of a rule that is perfect for everyone."** However, that does not mean the defeat of democracy.
 
 Rather, we should take it as a very positive and educational message: **"Since every system inevitably has weaknesses, it is important to understand those weaknesses, choose the most optimal rule for the situation, and thoroughly discuss."**
 

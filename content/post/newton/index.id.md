@@ -13,7 +13,7 @@ tags:
   - "Fisika"
 ---
 
-Jika kita harus menyebutkan satu orang yang memiliki dampak paling mendalam terhadap perkembangan ilmu pengetahuan dalam sejarah manusia, banyak yang akan menyebut **[Isaac Newton](https://kenji.blog/p/newton/)** . Ia mencapai penemuan-penemuan revolusioner di berbagai bidang seperti fisika, matematika, dan astronomi. Tidak berlebihan untuk mengatakan bahwa pencapaiannya bukan sekadar penemuan pada satu era, melainkan membangun fondasi bagi ilmu pengetahuan modern.
+Jika kita harus menyebutkan satu orang yang memiliki dampak paling mendalam terhadap perkembangan ilmu pengetahuan dalam sejarah manusia, banyak yang akan menyebut **[Isaac Newton](https://kenji.blog/id/p/newton/)** . Ia mencapai penemuan-penemuan revolusioner di berbagai bidang seperti fisika, matematika, dan astronomi. Tidak berlebihan untuk mengatakan bahwa pencapaiannya bukan sekadar penemuan pada satu era, melainkan membangun fondasi bagi ilmu pengetahuan modern.
 
 Dalam artikel ini, kita akan menelusuri episode luar biasa dari masa kecil Newton hingga tahun-tahun terakhirnya, dan menggali lebih dalam pencapaian matematis dan fisikanya, dengan fokus khusus pada **kalkulus** (metode fluksion), **teorema binomial yang digeneralisasi** , dan **metode Newton** .
 
@@ -21,7 +21,7 @@ Dalam artikel ini, kita akan menelusuri episode luar biasa dari masa kecil Newto
 
 ### Masa Kecil yang Sepi dan Kelahiran di Woolsthorpe
 
-[Isaac Newton](https://kenji.blog/p/newton/) lahir pada Hari Natal tahun 1642 (kalender Julian; 4 Januari 1643, dalam kalender Gregorian) di desa kecil Woolsthorpe, Lincolnshire, Inggris. Lahir prematur, tubuhnya sangat kecil, dan pada awalnya, kelangsungan hidupnya diragukan. Lebih buruk lagi, ayah Newton telah meninggal tiga bulan sebelum kelahirannya.
+[Isaac Newton](https://kenji.blog/id/p/newton/) lahir pada Hari Natal tahun 1642 (kalender Julian; 4 Januari 1643, dalam kalender Gregorian) di desa kecil Woolsthorpe, Lincolnshire, Inggris. Lahir prematur, tubuhnya sangat kecil, dan pada awalnya, kelangsungan hidupnya diragukan. Lebih buruk lagi, ayah Newton telah meninggal tiga bulan sebelum kelahirannya.
 
 Ketika ia berusia tiga tahun, ibunya menikah lagi dan menitipkan Newton dalam asuhan neneknya untuk bergabung dengan suami barunya. Pengalaman awal perpisahan dari orang tuanya ini dikatakan sangat memengaruhi kepribadian Newton, berkontribusi pada karakter yang sangat tertutup dan curiga yang ia kembangkan di kemudian hari.
 
@@ -29,7 +29,7 @@ Saat mulai bersekolah di sekolah setempat, Newton pada awalnya bukanlah murid ya
 
 ### Universitas Cambridge dan "Tahun Keajaiban"
 
-Pada tahun 1661, Newton masuk ke Trinity College, Cambridge. Meskipun universitas pada saat itu terutama mengajarkan filosofi Aristoteles, Newton sangat tertarik pada pemikiran ilmiah baru dari [René Descartes](https://kenji.blog/p/descartes/), Galileo Galilei, dan Johannes Kepler. Ia meninggalkan catatan di buku catatannya yang menyatakan: **"Amicus Plato amicus Aristoteles magis amica veritas"** (Plato adalah temanku, Aristoteles adalah temanku, tetapi teman terbesarku adalah kebenaran).
+Pada tahun 1661, Newton masuk ke Trinity College, Cambridge. Meskipun universitas pada saat itu terutama mengajarkan filosofi Aristoteles, Newton sangat tertarik pada pemikiran ilmiah baru dari [René Descartes](https://kenji.blog/id/p/descartes/), Galileo Galilei, dan Johannes Kepler. Ia meninggalkan catatan di buku catatannya yang menyatakan: **"Amicus Plato amicus Aristoteles magis amica veritas"** (Plato adalah temanku, Aristoteles adalah temanku, tetapi teman terbesarku adalah kebenaran).
 
 Pada tahun 1665, wabah besar Melanda London, memaksa universitas untuk ditutup. Newton kembali ke kampung halamannya di Woolsthorpe dan tenggelam dalam perenungan selama sekitar satu setengah tahun. Selama periode yang tenang dan sepi ini, ia menemukan inspirasi untuk tiga pencapaian utamanya: dasar-dasar kalkulus, optika (analisis spektrum cahaya menggunakan prisma), dan hukum gravitasi universal. Dalam sejarah sains, periode ini dikenal sebagai **Annus Mirabilis** (Tahun Keajaiban).
 
@@ -164,4 +164,4 @@ Kata-kata ini mengungkapkan rasa hormatnya, yang mengakui bahwa penemuannya hany
 
 Sistem mekanika klasik yang ia bangun tetap menjadi fondasi mutlak fisika selama sekitar 200 tahun hingga Albert Einstein menerbitkan teori relativitas pada awal abad ke-20. Bahkan hingga hari ini, mekanika Newton digunakan dengan sangat akurat dan efektif dalam menghitung fenomena fisik skala sehari-hari kita dan orbit wahana antariksa.
 
-[Isaac Newton](https://kenji.blog/p/newton/), bermula dari masa kecil yang sepi, membuka kebenaran alam semesta melalui konsentrasinya yang luar biasa dan intuisi jeniusnya. Banyak hukum dan teorema matematis yang ia tinggalkan terus mendukung teknologi dan masyarakat kita hingga hari ini.
+[Isaac Newton](https://kenji.blog/id/p/newton/), bermula dari masa kecil yang sepi, membuka kebenaran alam semesta melalui konsentrasinya yang luar biasa dan intuisi jeniusnya. Banyak hukum dan teorema matematis yang ia tinggalkan terus mendukung teknologi dan masyarakat kita hingga hari ini.

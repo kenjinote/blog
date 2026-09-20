@@ -10,21 +10,21 @@ tags: ["Kurt Hensel", "números p-ádicos", "teoria algébrica dos números", "h
 
 ## 1. Introdução
 
-Na teoria dos números moderna, particularmente na teoria algébrica dos números e na geometria aritmética, os **números p-ádicos** são uma ferramenta indispensável. Este conceito revolucionário foi introduzido no final do século XIX pelo matemático alemão **[Kurt Hensel](https://kenji.blog/p/hensel/)** (1861–1941).
+Na teoria dos números moderna, particularmente na teoria algébrica dos números e na geometria aritmética, os **números p-ádicos** são uma ferramenta indispensável. Este conceito revolucionário foi introduzido no final do século XIX pelo matemático alemão **[Kurt Hensel](https://kenji.blog/pt/p/hensel/)** (1861–1941).
 
-Sua descoberta serviu como uma ponte conectando as perspectivas "local" e "global" na matemática, provocando uma mudança de paradigma na matemática do século XX. Este artigo fornece uma exploração detalhada da vida de [Kurt Hensel](https://kenji.blog/p/hensel/), sua maior conquista — a descoberta dos **números p-ádicos** —, seus fundamentos matemáticos e o profundo impacto que tiveram na matemática moderna.
+Sua descoberta serviu como uma ponte conectando as perspectivas "local" e "global" na matemática, provocando uma mudança de paradigma na matemática do século XX. Este artigo fornece uma exploração detalhada da vida de [Kurt Hensel](https://kenji.blog/pt/p/hensel/), sua maior conquista — a descoberta dos **números p-ádicos** —, seus fundamentos matemáticos e o profundo impacto que tiveram na matemática moderna.
 
 ## 2. Linhagem notável e início de vida
 
-[Kurt Hensel](https://kenji.blog/p/hensel/) nasceu em 29 de dezembro de 1861, em Königsberg, Prússia Oriental (agora Kaliningrado, Rússia). Sua família ocupa um lugar altamente significativo na história intelectual e artística da Alemanha.
+[Kurt Hensel](https://kenji.blog/pt/p/hensel/) nasceu em 29 de dezembro de 1861, em Königsberg, Prússia Oriental (agora Kaliningrado, Rússia). Sua família ocupa um lugar altamente significativo na história intelectual e artística da Alemanha.
 
-Seu avô foi o famoso pintor **Wilhelm Hensel**, e sua avó foi a excelente pianista e compositora **Fanny Mendelssohn** (irmã do famoso compositor Felix Mendelssohn). Indo mais atrás, seu bisavô foi o filósofo representativo do Iluminismo, **Moses Mendelssohn**. Pode-se dizer que esse ambiente familiar, culturalmente e intelectualmente rico, promoveu o pensamento livre e criativo de [Kurt Hensel](https://kenji.blog/p/hensel/).
+Seu avô foi o famoso pintor **Wilhelm Hensel**, e sua avó foi a excelente pianista e compositora **Fanny Mendelssohn** (irmã do famoso compositor Felix Mendelssohn). Indo mais atrás, seu bisavô foi o filósofo representativo do Iluminismo, **Moses Mendelssohn**. Pode-se dizer que esse ambiente familiar, culturalmente e intelectualmente rico, promoveu o pensamento livre e criativo de [Kurt Hensel](https://kenji.blog/pt/p/hensel/).
 
 Quando era jovem, sua família mudou-se para Berlim, onde recebeu uma educação primária e secundária de alta qualidade. Seu talento para a matemática floresceu cedo, levando-o naturalmente ao caminho da pesquisa matemática na universidade.
 
 ## 3. Dias de universidade e a influência de Kronecker
 
-Hensel estudou matemática nas Universidades de Bonn e Berlim. Na época, a Universidade de Berlim era um dos centros mundiais de pesquisa matemática, com gigantes como **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** e **Leopold Kronecker** lecionando lá.
+Hensel estudou matemática nas Universidades de Bonn e Berlim. Na época, a Universidade de Berlim era um dos centros mundiais de pesquisa matemática, com gigantes como **[Karl Weierstrass](https://kenji.blog/pt/p/weierstrass/)** e **Leopold Kronecker** lecionando lá.
 
 Entre eles, Kronecker teve a influência mais profunda sobre Hensel. Como se sabe por sua famosa citação: "Deus fez os números inteiros, tudo o mais é obra do homem", Kronecker mantinha uma forte crença de que toda a matemática deveria ser rigorosamente reconstruída com base nos números inteiros. Sob a orientação de Kronecker, Hensel dedicou-se profundamente à álgebra e à teoria dos números.
 
@@ -140,18 +140,18 @@ Os conceitos de Hensel foram ainda mais refinados por outros matemáticos.
 
 Em 1916, Alexander Ostrowski provou o **Teorema de Ostrowski**. Este é o fato surpreendente de que "todo valor absoluto não-trivial no corpo dos números racionais é equivalente ou ao valor absoluto usual ou ao valor absoluto p-ádico para algum número primo $p$". Assim, reunir os números reais e todos os números p-ádicos "cobre exaustivamente" todas as possibilidades de completar os números racionais.
 
-Além disso, o estudante de Hensel, **[Helmut Hasse](https://kenji.blog/p/hasse/)**, estabeleceu o **Princípio Local-Global** (Princípio de Hasse). Este é um belo teorema que afirma que "uma condição necessária e suficiente para uma equação ter uma solução sobre os números racionais (globalmente) é que ela tenha uma solução sobre os números reais e os números p-ádicos para todos os primos $p$ (localmente)". Com isso, os números p-ádicos garantiram uma posição inabalável como ferramentas essenciais na teoria dos números.
+Além disso, o estudante de Hensel, **[Helmut Hasse](https://kenji.blog/pt/p/hasse/)**, estabeleceu o **Princípio Local-Global** (Princípio de Hasse). Este é um belo teorema que afirma que "uma condição necessária e suficiente para uma equação ter uma solução sobre os números racionais (globalmente) é que ela tenha uma solução sobre os números reais e os números p-ádicos para todos os primos $p$ (localmente)". Com isso, os números p-ádicos garantiram uma posição inabalável como ferramentas essenciais na teoria dos números.
 
 ## 8. Contribuições como educador e editor, e legado
 
 Hensel fez tremendas contribuições não apenas como pesquisador, mas também como educador e editor. A partir de 1901, por muitos anos, atuou como editor-chefe do "Crelle's Journal" (oficialmente: Journal für die reine und angewandte Mathematik), um dos jornais de matemática mais antigos do mundo, apoiando a disseminação de pesquisas matemáticas de ponta de seu tempo.
 
-Suas palestras eram claras e apaixonadas, nutrindo a próxima geração de matemáticos brilhantes, incluindo [Helmut Hasse](https://kenji.blog/p/hasse/).
+Suas palestras eram claras e apaixonadas, nutrindo a próxima geração de matemáticos brilhantes, incluindo [Helmut Hasse](https://kenji.blog/pt/p/hasse/).
 
-Hoje, os números p-ádicos são aplicados em uma ampla gama de campos além da teoria algébrica dos números, incluindo a **análise p-ádica**, a **teoria de Hodge p-ádica**, e até a **mecânica quântica p-ádica** na física teórica. A prova histórica do "Último Teorema de Fermat" por [Andrew Wiles](https://kenji.blog/p/wiles/) teria sido impossível sem a teoria dos números p-ádicos.
+Hoje, os números p-ádicos são aplicados em uma ampla gama de campos além da teoria algébrica dos números, incluindo a **análise p-ádica**, a **teoria de Hodge p-ádica**, e até a **mecânica quântica p-ádica** na física teórica. A prova histórica do "Último Teorema de Fermat" por [Andrew Wiles](https://kenji.blog/pt/p/wiles/) teria sido impossível sem a teoria dos números p-ádicos.
 
 ## 9. Conclusão
 
-Partindo da bela analogia entre funções e números, [Kurt Hensel](https://kenji.blog/p/hensel/) trouxe uma dimensão inteiramente nova ao mundo da matemática com os **números p-ádicos**. Sua abordagem de "entender o global olhando localmente" tornou-se uma das filosofias fundamentais da matemática do século XX em diante.
+Partindo da bela analogia entre funções e números, [Kurt Hensel](https://kenji.blog/pt/p/hensel/) trouxe uma dimensão inteiramente nova ao mundo da matemática com os **números p-ádicos**. Sua abordagem de "entender o global olhando localmente" tornou-se uma das filosofias fundamentais da matemática do século XX em diante.
 
 Suas ideias ricas e originais continuam a inspirar matemáticos de todo o mundo que buscam hoje as verdades dos números e do mundo natural.

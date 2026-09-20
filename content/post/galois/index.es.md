@@ -8,13 +8,13 @@ categories: ["matemáticas", "biografía"]
 tags: ["Teoría de Galois", "Álgebra", "Teoría de grupos", "Historia"]
 ---
 
-En la historia de las matemáticas, pocos han llevado una vida tan dramática y trágica como [Évariste Galois](https://kenji.blog/p/galois/) (1811-1832). Este joven francés, que perdió la vida en un duelo a la temprana edad de 20 años, sentó las bases de una magnífica teoría que cambiaría fundamentalmente las matemáticas posteriores en una carta escrita en la víspera de su muerte. En este artículo, profundizamos en la turbulenta vida de Galois y su mayor legado, la **Teoría de Galois**.
+En la historia de las matemáticas, pocos han llevado una vida tan dramática y trágica como [Évariste Galois](https://kenji.blog/es/p/galois/) (1811-1832). Este joven francés, que perdió la vida en un duelo a la temprana edad de 20 años, sentó las bases de una magnífica teoría que cambiaría fundamentalmente las matemáticas posteriores en una carta escrita en la víspera de su muerte. En este artículo, profundizamos en la turbulenta vida de Galois y su mayor legado, la **Teoría de Galois**.
 
 ## 1. Una vida turbulenta: Pasión y frustración
 
 ### Vida temprana y despertar a las matemáticas
 
-[Évariste Galois](https://kenji.blog/p/galois/) nació en 1811 en Bourg-la-Reine, un suburbio de París. Su padre era un republicano educado que más tarde se desempeñó como alcalde de la ciudad. Inicialmente educado por su madre, Galois ingresó al Lycée Louis-le-Grand en París a la edad de 12 años.
+[Évariste Galois](https://kenji.blog/es/p/galois/) nació en 1811 en Bourg-la-Reine, un suburbio de París. Su padre era un republicano educado que más tarde se desempeñó como alcalde de la ciudad. Inicialmente educado por su madre, Galois ingresó al Lycée Louis-le-Grand en París a la edad de 12 años.
 
 La vida escolar en el liceo era aburrida para él, pero su vida cambió por completo a la edad de 15 años cuando descubrió los *Éléments de Géométrie* de Legendre. Se dice que Galois leyó este difícil libro en cuestión de días, como si estuviera leyendo una novela. A partir de entonces, ignoró los libros de texto normales y comenzó a devorar los escritos de los matemáticos más grandes de la época, como Lagrange y Cauchy.
 
@@ -116,4 +116,4 @@ Después de la muerte de Galois, sus cartas fueron guardadas por su amigo cercan
 
 El concepto de "grupo" introducido por Galois se convirtió posteriormente en el lenguaje fundamental no solo para el álgebra, sino para todos los campos científicos, incluyendo la geometría, la topología y la física (como la física de partículas y la cristalografía). Hoy en día, el álgebra abstracta, que estudia sistemas algebraicos como "grupos, anillos y cuerpos", se ha convertido en uno de los pilares más importantes de las matemáticas modernas.
 
-[Évariste Galois](https://kenji.blog/p/galois/) falleció a la temprana edad de 20 años. Sin embargo, el logro monumental que estableció durante su corta vida no se ha desvanecido incluso después de casi 200 años, y continúa brillando con una poderosa luz iluminando las profundidades de las matemáticas modernas. Sus últimas palabras, "No tengo tiempo", parecen confrontarnos fuertemente con la infinidad del intelecto humano y la brevedad de la vida.
+[Évariste Galois](https://kenji.blog/es/p/galois/) falleció a la temprana edad de 20 años. Sin embargo, el logro monumental que estableció durante su corta vida no se ha desvanecido incluso después de casi 200 años, y continúa brillando con una poderosa luz iluminando las profundidades de las matemáticas modernas. Sus últimas palabras, "No tengo tiempo", parecen confrontarnos fuertemente con la infinidad del intelecto humano y la brevedad de la vida.

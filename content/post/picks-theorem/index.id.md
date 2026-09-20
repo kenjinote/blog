@@ -18,9 +18,9 @@ tags:
 
 Di bidang geometri dalam matematika, tema mencari luas suatu bangun telah dipelajari oleh banyak matematikawan sejak zaman Yunani kuno. Di kelas sekolah, kita mempelajari berbagai pendekatan, mulai dari rumus dasar untuk luas segitiga, "alas $\times$ tinggi $\div 2$", hingga rumus luas yang menggunakan perbandingan trigonometri dalam matematika sekolah menengah, aturan Sarrus yang menggunakan perkalian silang vektor pada bidang koordinat, dan bahkan rumus Heron, yang memperoleh luas hanya berdasarkan panjang ketiga sisinya.
 
-Namun, jika semua titik sudut dari suatu poligon terletak pada **titik kisi** (titik di mana koordinat $x$ dan $y$ keduanya adalah bilangan bulat), ada rumus ajaib yang memungkinkan Anda menghitung luas hanya dengan menggunakan operasi aritmatika yang sangat sederhana, tanpa mengukur panjang atau melakukan perkalian yang rumit atau perhitungan akar kuadrat. Itu adalah **[Teorema Pick](https://kenji.blog/p/picks-theorem/)**, yang akan kita jelaskan secara detail kali ini.
+Namun, jika semua titik sudut dari suatu poligon terletak pada **titik kisi** (titik di mana koordinat $x$ dan $y$ keduanya adalah bilangan bulat), ada rumus ajaib yang memungkinkan Anda menghitung luas hanya dengan menggunakan operasi aritmatika yang sangat sederhana, tanpa mengukur panjang atau melakukan perkalian yang rumit atau perhitungan akar kuadrat. Itu adalah **[Teorema Pick](https://kenji.blog/id/p/picks-theorem/)**, yang akan kita jelaskan secara detail kali ini.
 
-[Teorema Pick](https://kenji.blog/p/picks-theorem/) bukan sekadar "rumus yang nyaman dan misterius untuk menemukan luas dengan mudah", melainkan memiliki latar belakang yang sangat dalam yang menghubungkan topologi, teori graf, dan geometri aljabar dalam matematika modern. Dalam artikel ini, kita akan menggali lebih dalam teorema Pick dari berbagai sudut, mulai dari cara menggunakannya pada dasarnya, hingga bukti matematis mengapa rumus sesederhana itu berlaku, latar belakang historisnya, dan bahkan keterbatasan teorema dan kemungkinan perluasannya ke 3D.
+[Teorema Pick](https://kenji.blog/id/p/picks-theorem/) bukan sekadar "rumus yang nyaman dan misterius untuk menemukan luas dengan mudah", melainkan memiliki latar belakang yang sangat dalam yang menghubungkan topologi, teori graf, dan geometri aljabar dalam matematika modern. Dalam artikel ini, kita akan menggali lebih dalam teorema Pick dari berbagai sudut, mulai dari cara menggunakannya pada dasarnya, hingga bukti matematis mengapa rumus sesederhana itu berlaku, latar belakang historisnya, dan bahkan keterbatasan teorema dan kemungkinan perluasannya ke 3D.
 
 ## 2. Georg Alexander Pick dan Latar Belakang Sejarah
 
@@ -30,9 +30,9 @@ Teorema ini diterbitkan pada tahun 1899 oleh matematikawan kelahiran Austria **G
 
 Menariknya, Pick memiliki hubungan yang mendalam dengan Albert Einstein yang terkenal. Ketika Einstein mengambil posisi di universitas di Praha pada tahun 1911, Pick menyambutnya dengan hangat, dan mereka membangun persahabatan yang erat, tidak hanya terlibat dalam diskusi akademis tetapi juga bermain biola bersama. Dikatakan bahwa Pick adalah salah satu orang yang sangat merekomendasikan agar Einstein mempelajari "analisis tensor" dan "geometri Riemann", yang menjadi penting untuk membangun teori relativitas umum.
 
-Namun, tahun-tahun terakhir Pick sangatlah tragis. Sebagai orang keturunan Yahudi, ia menghadapi penganiayaan dengan bangkitnya Nazi Jerman. Pada tahun 1942, ia dikirim ke kamp konsentrasi Theresienstadt, di mana ia meninggal dunia hanya dua minggu kemudian pada usia 82 tahun. Meskipun hidupnya menemui akhir yang menyedihkan, "[Teorema Pick](https://kenji.blog/p/picks-theorem/)" yang ditinggalkannya terus disukai dalam pendidikan matematika di seluruh dunia saat ini karena keindahan dan kesederhanaannya.
+Namun, tahun-tahun terakhir Pick sangatlah tragis. Sebagai orang keturunan Yahudi, ia menghadapi penganiayaan dengan bangkitnya Nazi Jerman. Pada tahun 1942, ia dikirim ke kamp konsentrasi Theresienstadt, di mana ia meninggal dunia hanya dua minggu kemudian pada usia 82 tahun. Meskipun hidupnya menemui akhir yang menyedihkan, "[Teorema Pick](https://kenji.blog/id/p/picks-theorem/)" yang ditinggalkannya terus disukai dalam pendidikan matematika di seluruh dunia saat ini karena keindahan dan kesederhanaannya.
 
-## 3. Apa itu [Teorema Pick](https://kenji.blog/p/picks-theorem/)?
+## 3. Apa itu [Teorema Pick](https://kenji.blog/id/p/picks-theorem/)?
 
 Sekarang, mari kita masuk ke inti teorema Pick. Pernyataan teorema ini secara mengejutkan sangat sederhana dan dapat dipahami bahkan oleh siswa sekolah dasar.
 
@@ -98,7 +98,7 @@ Sekali lagi, cocok dengan tepat.
 
 ### Contoh 3: Poligon Kompleks dengan Lekukan
 
-[Teorema Pick](https://kenji.blog/p/picks-theorem/) menunjukkan kekuatannya bahkan dengan poligon yang lebih kompleks yang memiliki lekukan.
+[Teorema Pick](https://kenji.blog/id/p/picks-theorem/) menunjukkan kekuatannya bahkan dengan poligon yang lebih kompleks yang memiliki lekukan.
 
 ```mermaid
 flowchart LR
@@ -185,11 +185,11 @@ $$
 S = \frac{2I + B - 2}{2} = I + \frac{B}{2} - 1
 $$
 
-[Teorema Pick](https://kenji.blog/p/picks-theorem/) diturunkan dengan cemerlang! Teorema Euler, landasan topologi, dan jumlah sudut dalam, landasan geometri, berpadu sempurna untuk membuktikan rumus yang indah ini.
+[Teorema Pick](https://kenji.blog/id/p/picks-theorem/) diturunkan dengan cemerlang! Teorema Euler, landasan topologi, dan jumlah sudut dalam, landasan geometri, berpadu sempurna untuk membuktikan rumus yang indah ini.
 
 ## 6. Penerapan pada Poligon dengan Lubang
 
-[Teorema Pick](https://kenji.blog/p/picks-theorem/) mengasumsikan "poligon sederhana tanpa lubang", tetapi apa yang terjadi jika ada lubang pada poligon?
+[Teorema Pick](https://kenji.blog/id/p/picks-theorem/) mengasumsikan "poligon sederhana tanpa lubang", tetapi apa yang terjadi jika ada lubang pada poligon?
 
 Misalnya, bayangkan sebuah bentuk seperti donat, di mana poligon dalam (lubang) yang sepenuhnya berada di dalam poligon luar dilubangi. Untuk bentuk seperti itu, rumus Pick tidak berlaku sebagaimana adanya. Akan tetapi, luasnya dapat dicari dengan mengoreksi teorema tersebut sesuai dengan jumlah lubangnya.
 
@@ -281,7 +281,7 @@ Dengan cara ini, meskipun jika diuraikan dalam bentuk algoritma, rumus teorema P
 
 ## 9. Kesimpulan
 
-[Teorema Pick](https://kenji.blog/p/picks-theorem/) adalah teorema matematika yang indah dengan berbagai karakteristik mengagumkan berikut ini:
+[Teorema Pick](https://kenji.blog/id/p/picks-theorem/) adalah teorema matematika yang indah dengan berbagai karakteristik mengagumkan berikut ini:
 
 1. **Rumus yang luar biasa sederhana** : Luas dapat ditemukan dengan persamaan yang hanya terdiri dari penjumlahan dan pembagian, $S = I + \frac{B}{2} - 1$.
 2. **Tidak butuh mengukur panjang** : Skala dari penggaris maupun busur derajat untuk mengukur sudut sungguh tidak lagi dibutuhkan, melainkan hanya tindakan yang sebatas "menghitung titik" untuk bisa menemukan jawabannya.

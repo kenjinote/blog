@@ -118,7 +118,7 @@ $$ 15 \equiv 3 \pmod{12} $$
 
 ## 4. 支撑RSA加密的数学基础3：欧拉函数与欧拉定理
 
-接下来的部分是RSA加密核心的魔法数学。作为“[费马小定理](https://kenji.blog/p/fermats-little-theorem/)”的推广，“欧拉定理”即将登场。
+接下来的部分是RSA加密核心的魔法数学。作为“[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)”的推广，“欧拉定理”即将登场。
 
 ### 4.1 欧拉函数 $\phi(N)$
 
@@ -139,13 +139,13 @@ $$ \phi(N) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
 
 ### 4.2 欧拉定理
 
-[莱昂哈德·欧拉](https://kenji.blog/p/euler/)利用这个 $\phi(N)$，证明了以下这个优美的定理。
+[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)利用这个 $\phi(N)$，证明了以下这个优美的定理。
 
 **欧拉定理：**
 当整数 $a$ 和 $N$ 互质时，以下同余式成立。
 $$ a^{\phi(N)} \equiv 1 \pmod N $$
 
-这是一个惊人的性质，意思是“将某个数 $a$ 连续相乘 $\phi(N)$ 次后除以 $N$，余数必定是 $1$”。（当 $N$ 为素数 $p$ 时，变为 $a^{p-1} \equiv 1 \pmod p$，这被称为[费马小定理](https://kenji.blog/p/fermats-little-theorem/)）。
+这是一个惊人的性质，意思是“将某个数 $a$ 连续相乘 $\phi(N)$ 次后除以 $N$，余数必定是 $1$”。（当 $N$ 为素数 $p$ 时，变为 $a^{p-1} \equiv 1 \pmod p$，这被称为[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)）。
 
 让我们对这个欧拉定理进行变形。在等式两边再乘一次 $a$。
 $$ a^{\phi(N) + 1} \equiv a \pmod N $$
@@ -267,11 +267,11 @@ $9^7 = 4,782,969$。除以 143 后商是 $33447$，余数为 $48$。
 
 ---
 
-## 8. 求私钥 $d$ 的方法：扩展[[欧几里得](https://kenji.blog/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)
+## 8. 求私钥 $d$ 的方法：扩展[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)
 
-在手工计算的例子中，我们是靠直觉寻找 $k$ 来得出 $d=103$ 的，但当数字达到几百位时，这种方法就行不通了。实际的程序中会使用名为 **“扩展[[欧几里得](https://kenji.blog/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)”** 的算法。
+在手工计算的例子中，我们是靠直觉寻找 $k$ 来得出 $d=103$ 的，但当数字达到几百位时，这种方法就行不通了。实际的程序中会使用名为 **“扩展[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)”** 的算法。
 
-求解 $7d \equiv 1 \pmod{120}$，就等同于寻找满足 $7d + 120y = 1$ 的整数 $d$ 和 $y$。通过逆向推导[[欧几里得](https://kenji.blog/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)，就可以机械地求出这个解。
+求解 $7d \equiv 1 \pmod{120}$，就等同于寻找满足 $7d + 120y = 1$ 的整数 $d$ 和 $y$。通过逆向推导[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)，就可以机械地求出这个解。
 
 1. $120 \div 7 = 17$ 余 $1$
 2. 变形后得到，$1 = 120 - 17 \times 7$

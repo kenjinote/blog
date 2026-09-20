@@ -14,7 +14,7 @@ tags:
 
 ## Introdução
 
-O [Problema de Transporte Ótimo](https://kenji.blog/p/optimal-transport-problem/) ([Optimal Transport Problem](https://kenji.blog/p/optimal-transport-problem/)) é um problema matemático que pergunta **"como mover material com o mínimo de esforço"** ao mover uma substância (como um monte de areia) de um lugar para outro (como um buraco).
+O [Problema de Transporte Ótimo](https://kenji.blog/pt/p/optimal-transport-problem/) ([Optimal Transport Problem](https://kenji.blog/pt/p/optimal-transport-problem/)) é um problema matemático que pergunta **"como mover material com o mínimo de esforço"** ao mover uma substância (como um monte de areia) de um lugar para outro (como um buraco).
 
 Foi proposto pelo matemático francês Gaspard Monge no século 18, e uma formulação moderna foi estabelecida por Leonid Kantorovich no século 20. Hoje, é amplamente aplicado em campos que vão desde a alocação de recursos na economia até o aprendizado de máquina.
 

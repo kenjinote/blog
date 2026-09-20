@@ -12,7 +12,7 @@ tags: ["Gamma Function", "Euler", "Complex Analysis", "Calculus"]
 
 When studying mathematics, we sometimes face the question: "Can a discrete concept be extended to a continuous one?" One of the most beautiful and important examples of this is the **Gamma Function**.
 
-The Gamma function extends the "factorial" ($n!$), defined for natural numbers, to positive real numbers and even to the entire complex plane. Discovered by the great 18th-century mathematician [Leonhard Euler](https://kenji.blog/p/euler/), this function appears in almost every field, from mathematical analysis and probability theory to statistics and physics.
+The Gamma function extends the "factorial" ($n!$), defined for natural numbers, to positive real numbers and even to the entire complex plane. Discovered by the great 18th-century mathematician [Leonhard Euler](https://kenji.blog/en/p/euler/), this function appears in almost every field, from mathematical analysis and probability theory to statistics and physics.
 
 In this article, we will take a closer look at the basics of the Gamma function and its profound properties.
 

@@ -18,7 +18,7 @@ Dalam artikel ini, kita akan menggali lebih dalam kehidupan Fibonacci yang penuh
 
 ### Kelahiran di Pisa dan Asal Usul Nama "Fibonacci"
 
-[Leonardo Fibonacci](https://kenji.blog/p/fibonacci/) lahir sekitar tahun 1170 di negara-kota Italia, Pisa. Pisa pada saat itu berkembang pesat sebagai pusat perdagangan Mediterania, sebuah republik yang makmur dengan angkatan laut dan jaringan komersial yang kuat. Ayahnya, Guglielmo Bonacci, adalah seorang pedagang kaya yang juga bekerja sebagai pejabat bea cukai untuk Pisa.
+[Leonardo Fibonacci](https://kenji.blog/id/p/fibonacci/) lahir sekitar tahun 1170 di negara-kota Italia, Pisa. Pisa pada saat itu berkembang pesat sebagai pusat perdagangan Mediterania, sebuah republik yang makmur dengan angkatan laut dan jaringan komersial yang kuat. Ayahnya, Guglielmo Bonacci, adalah seorang pedagang kaya yang juga bekerja sebagai pejabat bea cukai untuk Pisa.
 
 Nama "Fibonacci" sebenarnya tidak digunakan selama masa hidupnya. Itu adalah istilah ciptaan yang dibuat oleh sejarawan di kemudian hari, menyingkat bahasa Latin "filius Bonacci" (putra Bonacci). Ia menyebut dirinya "Leonardo Pisano" (Leonardo dari Pisa) atau, karena kecintaannya pada perjalanan, "Bigollo" (yang berarti pengembara atau pemalas).
 
@@ -152,7 +152,7 @@ Ditulis pada tahun 1225, buku ini adalah risalah lanjutan tentang persamaan Diop
 
 ### "Practica Geometriae" (Geometri Praktis)
 
-Ditulis pada tahun 1220, buku ini merinci survei dan geometri. Buku ini menyediakan metode yang ketat untuk menghitung luas dan volume, dan penerapan praktis dari prinsip-prinsip geometri [Euclide](https://kenji.blog/p/euclid/)an Yunani kuno, menjadikannya sumber daya yang berharga bagi para insinyur dan surveyor pada masa itu.
+Ditulis pada tahun 1220, buku ini merinci survei dan geometri. Buku ini menyediakan metode yang ketat untuk menghitung luas dan volume, dan penerapan praktis dari prinsip-prinsip geometri [Euclide](https://kenji.blog/id/p/euclid/)an Yunani kuno, menjadikannya sumber daya yang berharga bagi para insinyur dan surveyor pada masa itu.
 
 ## Masyarakat Modern dan Warisan Fibonacci
 
@@ -168,6 +168,6 @@ Mengejutkannya, namanya juga sering terdengar di dunia keuangan. Sebuah metode a
 
 ## Kesimpulan
 
-[Leonardo Fibonacci](https://kenji.blog/p/fibonacci/) menjembatani pengetahuan dunia Islam dan Eropa, membawa cahaya matematika ke dunia Barat. Tanpa angka Arab yang ia populerkan melalui "Liber Abaci", Revolusi Ilmiah yang menyusul dan masyarakat digital modern mungkin tidak akan pernah ada.
+[Leonardo Fibonacci](https://kenji.blog/id/p/fibonacci/) menjembatani pengetahuan dunia Islam dan Eropa, membawa cahaya matematika ke dunia Barat. Tanpa angka Arab yang ia populerkan melalui "Liber Abaci", Revolusi Ilmiah yang menyusul dan masyarakat digital modern mungkin tidak akan pernah ada.
 
 Lebih jauh lagi, deret yang lahir dari "Masalah Kelinci" yang main-main mewujudkan keindahan matematika murni dan terus memikat kita hari ini sebagai hukum universal yang meluas dari pertumbuhan tanaman hingga spiral galaksi, dan bahkan aktivitas ekonomi manusia. Warisan Fibonacci mengajarkan kita melintasi waktu bahwa matematika bukan sekadar teknik berhitung, melainkan "bahasa universal" untuk membuka kebenaran alam semesta.

@@ -84,9 +84,9 @@ Ini adalah pendapat kuat yang didasarkan pada "Frekuentisme" dan "Prinsip Antrop
 
 ---
 
-## 3. Mencoba Menghitung dengan [Teorema Bayes](https://kenji.blog/p/bayes-theorem/)
+## 3. Mencoba Menghitung dengan [Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/)
 
-Ada juga upaya untuk menyelesaikan masalah ini menggunakan "[Teorema Bayes](https://kenji.blog/p/bayes-theorem/)", sebuah alat secara matematis untuk memperbarui peluang.
+Ada juga upaya untuk menyelesaikan masalah ini menggunakan "[Teorema Bayes](https://kenji.blog/id/p/bayes-theorem/)", sebuah alat secara matematis untuk memperbarui peluang.
 Mari kita menyusun logika "Kubu 1/3" dari perspektif peluang bersyarat.
 
 Saat Anda terbangun, kondisinya adalah salah satu dari 3 hal berikut:

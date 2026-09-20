@@ -79,7 +79,7 @@ $ a^r \equiv 1 \pmod N $
 
 如果找到了这个周期 $ r $，且 $ r $ 是偶数，则 $ a^r - 1 \equiv 0 \pmod N $，利用因式分解公式可以变形为：
 $ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $
-由此，通过使用[[欧几里得](https://kenji.blog/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)（辗转相除法）计算 $ N $ 与 $ a^{r/2} \pm 1 $ 的最大公约数，就能以极高的概率获得 $ N $ 的质因数。
+由此，通过使用[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)（辗转相除法）计算 $ N $ 与 $ a^{r/2} \pm 1 $ 的最大公约数，就能以极高的概率获得 $ N $ 的质因数。
 
 在经典计算机上寻找周期 $ r $ 最终还是需要指数级的步骤，无法实现加速。但是，如果是量子计算机，就能在瞬间（多项式时间内）找到这个周期 $ r $。
 

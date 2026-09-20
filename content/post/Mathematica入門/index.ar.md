@@ -107,7 +107,7 @@ Inverse[m]
 {{-2, 1}, {1.5, -0.5}}
 ```
 
-## إيجاد [القيم الذاتية والمتجهات الذاتية](https://kenji.blog/p/eigenvalues-and-eigenvectors/)
+## إيجاد [القيم الذاتية والمتجهات الذاتية](https://kenji.blog/ar/p/eigenvalues-and-eigenvectors/)
 ```
 Eigensystem[m]
 ```

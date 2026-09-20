@@ -29,7 +29,7 @@ Como puedes ver, los números pares pequeños ciertamente pueden expresarse como
 
 ## Antecedentes Históricos
 
-Esta conjetura fue mencionada por primera vez en una carta enviada en 1742 por el matemático prusiano **Christian Goldbach** al gran matemático suizo **[Leonhard Euler](https://kenji.blog/p/euler/)**.
+Esta conjetura fue mencionada por primera vez en una carta enviada en 1742 por el matemático prusiano **Christian Goldbach** al gran matemático suizo **[Leonhard Euler](https://kenji.blog/es/p/euler/)**.
 
 ```mermaid
 graph TD

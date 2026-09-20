@@ -11,9 +11,9 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 # 1. 서론: 소수라는 우주의 신비와 리만 가설
 
-'소수(Prime Numbers)'는 1과 자기 자신으로만 나누어 떨어지는 자연수이며, 수학 세계에서 '원자'라고도 불립니다. 2, 3, 5, 7, 11, 13... 으로 이어지는 이 수열은 언뜻 보면 무질서하고 무작위로 나타나는 것처럼 보입니다. 고대 그리스의 수학자 [유클리드](https://kenji.blog/p/euclid/)가 '소수가 무한히 존재한다'는 것을 증명한 이후, 수많은 수학자들이 이 소수의 배열에 숨겨진 규칙성을 밝혀내기 위해 도전해 왔습니다.
+'소수(Prime Numbers)'는 1과 자기 자신으로만 나누어 떨어지는 자연수이며, 수학 세계에서 '원자'라고도 불립니다. 2, 3, 5, 7, 11, 13... 으로 이어지는 이 수열은 언뜻 보면 무질서하고 무작위로 나타나는 것처럼 보입니다. 고대 그리스의 수학자 [유클리드](https://kenji.blog/ko/p/euclid/)가 '소수가 무한히 존재한다'는 것을 증명한 이후, 수많은 수학자들이 이 소수의 배열에 숨겨진 규칙성을 밝혀내기 위해 도전해 왔습니다.
 
-그 소수의 수수께끼에 가장 근접한 것이 1859년 독일의 수학자 [베른하르트 리만](https://kenji.blog/p/riemann/)([Bernhard Riemann](https://kenji.blog/p/riemann/))이 제안한 **'리만 가설(Riemann Hypothesis)'** 입니다. 리만 가설은 현대 수학에서 가장 중요하고 미해결된 난제 중 하나이며, 클레이 수학연구소가 정한 밀레니엄 현상 문제 중 하나로 100만 달러의 상금이 걸려 있습니다.
+그 소수의 수수께끼에 가장 근접한 것이 1859년 독일의 수학자 [베른하르트 리만](https://kenji.blog/ko/p/riemann/)([Bernhard Riemann](https://kenji.blog/ko/p/riemann/))이 제안한 **'리만 가설(Riemann Hypothesis)'** 입니다. 리만 가설은 현대 수학에서 가장 중요하고 미해결된 난제 중 하나이며, 클레이 수학연구소가 정한 밀레니엄 현상 문제 중 하나로 100만 달러의 상금이 걸려 있습니다.
 
 언뜻 보기에 소수의 분포에 관한 순수 수학의 난제는 우리의 일상생활과는 무관해 보일지도 모릅니다. 하지만 현대 사회의 인프라를 지탱하는 인터넷 보안, 특히 **RSA 암호나 타원곡선암호(ECC) 같은 현대 암호 기술** 은 거대한 소수의 성질에 깊이 의존하고 있습니다.
 
@@ -30,13 +30,13 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 - $\pi(100) = 25$
 - $\pi(1000) = 168$
 
-15세의 천재 수학자 [카를 프리드리히 가우스](https://kenji.blog/p/gauss/)([Carl Friedrich Gauss](https://kenji.blog/p/gauss/))는 방대한 소수표를 계산하여 소수의 출현 빈도가 자연로그 $\ln x$ 에 반비례하여 감소해 나간다는 것을 발견했습니다. 즉, 어떤 수 $x$ 근처에서 소수가 발견될 확률은 약 $\frac{1}{\ln x}$ 일 것이라고 예상한 것입니다.
+15세의 천재 수학자 [카를 프리드리히 가우스](https://kenji.blog/ko/p/gauss/)([Carl Friedrich Gauss](https://kenji.blog/ko/p/gauss/))는 방대한 소수표를 계산하여 소수의 출현 빈도가 자연로그 $\ln x$ 에 반비례하여 감소해 나간다는 것을 발견했습니다. 즉, 어떤 수 $x$ 근처에서 소수가 발견될 확률은 약 $\frac{1}{\ln x}$ 일 것이라고 예상한 것입니다.
 
 이것을 적분을 사용하여 표현한 것이 **로그 적분(Logarithmic integral)** $\text{Li}(x)$ 입니다.
 
 $$ \text{Li}(x) = \int_{2}^{x} \frac{dt}{\ln t} $$
 
-가우스의 예상은 훗날 1896년 자크 아다마르와 샤를 장 드 라 발레 푸생에 의해 독립적으로 증명되었고, **소수 정리([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT)** 로서 확립되었습니다.
+가우스의 예상은 훗날 1896년 자크 아다마르와 샤를 장 드 라 발레 푸생에 의해 독립적으로 증명되었고, **소수 정리([Prime Number Theorem](https://kenji.blog/ko/p/prime-number-theorem/), PNT)** 로서 확립되었습니다.
 
 $$ \lim_{x \to \infty} \frac{\pi(x)}{\text{Li}(x)} = 1 $$
 
@@ -50,7 +50,7 @@ $$ \pi(x) \sim \frac{x}{\ln x} $$
 
 # 3. 리만 제타 함수와 오일러 곱
 
-소수의 분포를 분석하는 데 있어 가장 강력한 무기가 되는 것이 **리만 제타 함수(Riemann Zeta Function)** 입니다. 원래는 [레온하르트 오일러](https://kenji.blog/p/euler/)([Leonhard Euler](https://kenji.blog/p/euler/))에 의해 실수 $s > 1$ 에 대해 정의된 무한급수였습니다.
+소수의 분포를 분석하는 데 있어 가장 강력한 무기가 되는 것이 **리만 제타 함수(Riemann Zeta Function)** 입니다. 원래는 [레온하르트 오일러](https://kenji.blog/ko/p/euler/)([Leonhard Euler](https://kenji.blog/ko/p/euler/))에 의해 실수 $s > 1$ 에 대해 정의된 무한급수였습니다.
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -74,7 +74,7 @@ $$ \zeta(s) = \prod_{p \text{ prime}} \frac{1}{1 - p^{-s}} = \left( \frac{1}{1 -
 
 $$ \zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-s) $$
 
-여기서 $\Gamma(x)$ 는 [감마 함수](https://kenji.blog/p/gamma-function/)입니다. 이 방정식에 의해 우반평면의 성질로부터 좌반평면의 성질을 알 수 있습니다.
+여기서 $\Gamma(x)$ 는 [감마 함수](https://kenji.blog/ko/p/gamma-function/)입니다. 이 방정식에 의해 우반평면의 성질로부터 좌반평면의 성질을 알 수 있습니다.
 
 ### 영점(Zeros of the Zeta Function)
 제타 함수의 값이 0이 되는 복소수 $s$ 를 '영점'이라고 부릅니다.
@@ -184,7 +184,7 @@ GRH가 참이라면, 밀러-라빈 판별법에서의 테스트 횟수 상한이
 리만 가설의 증명 자체가 즉각적으로 소인수분해를 극적으로 고속화하는 마법의 알고리즘을 만들어내는 것은 아닙니다. 리만 가설은 어디까지나 소수의 '거시적인 분포의 규칙성'에 대한 정리이며, 개별 수 $N$ 이 어떤 소수로 나누어떨어지는지(국소적인 성질)를 직접 가르쳐 주는 것은 아니기 때문입니다.
 
 하지만 그 영향이 제로는 아닙니다.
-리만 가설이 증명되는 과정에서 **'새로운 수학적 도구'나 '미지의 해석 기법'이 발견될 가능성** 이 매우 높기 때문입니다. 역사를 보더라도, [페르마의 마지막 정리](https://kenji.blog/p/fermats-last-theorem/)나 [푸앵카레 추측](https://kenji.blog/p/poincare-conjecture/)이 증명되었을 때 그 과정에서 개발된 새로운 이론이 수학 전체를 크게 도약시켰습니다.
+리만 가설이 증명되는 과정에서 **'새로운 수학적 도구'나 '미지의 해석 기법'이 발견될 가능성** 이 매우 높기 때문입니다. 역사를 보더라도, [페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)나 [푸앵카레 추측](https://kenji.blog/ko/p/poincare-conjecture/)이 증명되었을 때 그 과정에서 개발된 새로운 이론이 수학 전체를 크게 도약시켰습니다.
 
 만약 리만 제타 함수의 영점의 성질을 완전히 조작할 수 있는 미지의 대수 기하학적 기법이나, 비가환 기하의 기법이 확립된다면, 그것이 결과적으로 소인수분해의 획기적인 알고리즘(예를 들어, 계산 복잡도를 다항 시간으로 줄이는 고전 알고리즘)의 발견으로 이어질 가능성은 부정할 수 없습니다. 그런 의미에서 암호학자들은 리만 가설의 동향에서 결코 눈을 뗄 수 없는 것입니다.
 

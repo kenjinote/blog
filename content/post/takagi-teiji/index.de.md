@@ -32,7 +32,7 @@ Anschließend studierte er an der Abteilung für Mathematik der naturwissenschaf
 
 Im Jahr 1898 reiste Takagi als Auslandsstudent des Bildungsministeriums nach Deutschland. Zunächst studierte er an der Universität Berlin, wechselte dann aber an die Universität Göttingen, die zu dieser Zeit das Weltzentrum der Mathematik war.
 
-Dort erwarteten ihn große Mathematiker, die in der Geschichte der Mathematik ihre Spuren hinterlassen haben, wie [David Hilbert](https://kenji.blog/p/hilbert/) und Felix Klein. Insbesondere Hilbert hatte gerade seinen "Zahlbericht" veröffentlicht, der den Höhepunkt der algebraischen Zahlentheorie darstellte, und dessen Inhalt einen tiefgreifenden Einfluss auf Takagi hatte. Unter Hilbert löste er einen Teil von "Kroneckers Jugendtraum" (ein Problem der Theorie der komplexen Multiplikation), erlangte 1903 seinen Doktortitel und kehrte nach Japan zurück.
+Dort erwarteten ihn große Mathematiker, die in der Geschichte der Mathematik ihre Spuren hinterlassen haben, wie [David Hilbert](https://kenji.blog/de/p/hilbert/) und Felix Klein. Insbesondere Hilbert hatte gerade seinen "Zahlbericht" veröffentlicht, der den Höhepunkt der algebraischen Zahlentheorie darstellte, und dessen Inhalt einen tiefgreifenden Einfluss auf Takagi hatte. Unter Hilbert löste er einen Teil von "Kroneckers Jugendtraum" (ein Problem der Theorie der komplexen Multiplikation), erlangte 1903 seinen Doktortitel und kehrte nach Japan zurück.
 
 ## 2. Durchbruch in der Isolation: Die Geburt der Klassenkörpertheorie
 
@@ -80,7 +80,7 @@ Takagis Klassenkörpertheorie bestimmte vollständig, welche Art von Körper die
 
 1920, auf dem Internationalen Mathematikerkongress, der nach dem Ende des Ersten Weltkriegs in Straßburg stattfand, präsentierte Takagi diese Klassenkörpertheorie. Da der Inhalt jedoch anfangs so innovativ war, wurde er nicht vollständig verstanden.
 
-Die spätere Zusendung eines Sonderdrucks seiner Arbeit an Carl Siegel in Deutschland weckte die Aufmerksamkeit aufstrebender Mathematiker wie Emil Artin und [Helmut Hasse](https://kenji.blog/p/hasse/). Sie verstanden sofort die Größe von Takagis Theorie und trieben auf dieser Grundlage weitere Forschungen voran.
+Die spätere Zusendung eines Sonderdrucks seiner Arbeit an Carl Siegel in Deutschland weckte die Aufmerksamkeit aufstrebender Mathematiker wie Emil Artin und [Helmut Hasse](https://kenji.blog/de/p/hasse/). Sie verstanden sofort die Größe von Takagis Theorie und trieben auf dieser Grundlage weitere Forschungen voran.
 
 Insbesondere bewies Artin unter Verwendung von Takagis Theorie das **Artinsche Reziprozitätsgesetz** und vollendete damit die Formulierung der Klassenkörpertheorie. Damit wurde der Name Teiji Takagi für immer in die Geschichte der Mathematik eingraviert.
 
@@ -109,7 +109,7 @@ graph TD
 - **"Vorlesungen über elementare Zahlentheorie"**: Ein Lehrbuch, das alles von den Grundlagen der Zahlentheorie bis zum quadratischen Reziprozitätsgesetz von Gauß erklärt.
 - **"Historische Erzählungen der modernen Mathematik"**: Ein historisches Buch, das die Gruppe der Mathematiker im 19. Jahrhundert lebendig beschreibt. Es vermittelt die Dramatik der mathematischen Entwicklung.
 
-Die Samen, die er säte, wurden an japanische Mathematiker weitergegeben, die später weltweit aktiv sein sollten, wie [Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/), Kiyoshi Ito und darüber hinaus [Goro Shimura](https://kenji.blog/p/shimura-goro/) und [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/).
+Die Samen, die er säte, wurden an japanische Mathematiker weitergegeben, die später weltweit aktiv sein sollten, wie [Kunihiko Kodaira](https://kenji.blog/de/p/kodaira-kunihiko/), Kiyoshi Ito und darüber hinaus [Goro Shimura](https://kenji.blog/de/p/shimura-goro/) und [Yutaka Taniyama](https://kenji.blog/de/p/taniyama-yutaka/).
 
 ## Fazit
 

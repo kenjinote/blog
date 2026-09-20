@@ -11,7 +11,7 @@ tags:
 slug: "godels-incompleteness-theorems"
 ---
 
-« Les mathématiques sont absolument exactes » — tout le monde l'a probablement pensé au moins une fois. Pourtant, en 1931, un article publié par le jeune mathématicien [Kurt Gödel](https://kenji.blog/p/godel/) a fondamentalement bouleversé ce bon sens. Ce sont les **théorèmes d'incomplétude de Gödel**.
+« Les mathématiques sont absolument exactes » — tout le monde l'a probablement pensé au moins une fois. Pourtant, en 1931, un article publié par le jeune mathématicien [Kurt Gödel](https://kenji.blog/fr/p/godel/) a fondamentalement bouleversé ce bon sens. Ce sont les **théorèmes d'incomplétude de Gödel**.
 
 Dans cet article, nous allons expliquer de manière approfondie et claire la signification de ce théorème troublant qui affirme qu'il existe « des vérités qui ne peuvent absolument pas être prouvées », ainsi que les mécanismes de sa démonstration, à grand renfort d'exemples concrets et de schémas.
 
@@ -19,7 +19,7 @@ Dans cet article, nous allons expliquer de manière approfondie et claire la sig
 
 ## 1. Contexte : Le programme de Hilbert et la crise des fondements des mathématiques
 
-De la fin du 19ème siècle au début du 20ème siècle, le monde des mathématiques était confronté aux « paradoxes de la théorie des ensembles (comme le paradoxe de Russell) » ; les fondations de la discipline en étaient ébranlées. C'est [David Hilbert](https://kenji.blog/p/hilbert/), l'autorité suprême des mathématiques à l'époque, qui s'est levé pour sauver les mathématiques de cette crise.
+De la fin du 19ème siècle au début du 20ème siècle, le monde des mathématiques était confronté aux « paradoxes de la théorie des ensembles (comme le paradoxe de Russell) » ; les fondations de la discipline en étaient ébranlées. C'est [David Hilbert](https://kenji.blog/fr/p/hilbert/), l'autorité suprême des mathématiques à l'époque, qui s'est levé pour sauver les mathématiques de cette crise.
 
 Hilbert a tenté de symboliser intégralement tous les raisonnements mathématiques, dans l'espoir de reconstruire les mathématiques en n'utilisant que des règles mécaniques. L'objectif de son « Programme de Hilbert » était de prouver que, dans un système formel mathématique, les trois propriétés suivantes étaient réunies :
 
@@ -51,7 +51,7 @@ Hilbert pensait qu'en agrandissant ce type de système formel, on finirait un jo
 
 ## 3. Le choc du premier théorème d'incomplétude : une proposition « Vraie mais indémontrable »
 
-Cependant, en 1931, [Kurt Gödel](https://kenji.blog/p/godel/), alors âgé de 25 ans seulement, publia un article qui pulvérisa les rêves de Hilbert. Il s'agissait du **premier théorème d'incomplétude**.
+Cependant, en 1931, [Kurt Gödel](https://kenji.blog/fr/p/godel/), alors âgé de 25 ans seulement, publia un article qui pulvérisa les rêves de Hilbert. Il s'agissait du **premier théorème d'incomplétude**.
 
 > **Premier théorème d'incomplétude**
 > Dans tout système formel cohérent (non contradictoire) contenant l'arithmétique de Peano, il existera toujours une proposition qui est vraie, mais qui ne peut être prouvée à l'intérieur de ce système.
@@ -132,11 +132,11 @@ En raison de leur nom dramatique, les théorèmes d'incomplétude de Gödel sont
 - **Idée fausse 2 : "La rationalité humaine a ses limites"**
   - **La réalité** : Les limites indiquées par le théorème ne concernent que les « systèmes qui suivent des règles mécaniques préétablies (les systèmes formels) ». Dans le premier théorème, nous (humains), depuis notre point de vue extérieur, avons pu comprendre que la proposition $G$ était « vraie ». Certains savants (comme Roger Penrose) interprètent cela comme la preuve que la rationalité humaine possède une capacité de compréhension du « sens (sémantique) » qui dépasse le système mécanique formel.
 - **Idée fausse 3 : "Il y a des choses qui ne peuvent être prouvées en toutes circonstances"**
-  - **La réalité** : Les théorèmes d'incomplétude ne s'appliquent qu'à des systèmes suffisamment complexes contenant au moins « l'addition et la multiplication des nombres entiers naturels (l'arithmétique de Peano) ». Par exemple, la « géométrie d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/) » ou la « théorie du premier ordre des nombres réels » sont complètes, et toutes leurs propositions vraies peuvent être prouvées. L'incomplétude n'apparaît que lorsqu'un système possède une structure suffisamment complexe pour permettre l'autoréférence.
+  - **La réalité** : Les théorèmes d'incomplétude ne s'appliquent qu'à des systèmes suffisamment complexes contenant au moins « l'addition et la multiplication des nombres entiers naturels (l'arithmétique de Peano) ». Par exemple, la « géométrie d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) » ou la « théorie du premier ordre des nombres réels » sont complètes, et toutes leurs propositions vraies peuvent être prouvées. L'incomplétude n'apparaît que lorsqu'un système possède une structure suffisamment complexe pour permettre l'autoréférence.
 
 ## 7. Passage de témoin à la machine de Turing : L'aube de l'informatique
 
-L'impact du théorème de Gödel n'est pas resté confiné au monde mathématique. En 1936, le mathématicien britannique [Alan Turing](https://kenji.blog/p/turing/) a remplacé le concept de « système formel » de Gödel par un processus de calcul physique et a conçu un modèle informatique virtuel appelé « la machine de Turing ».
+L'impact du théorème de Gödel n'est pas resté confiné au monde mathématique. En 1936, le mathématicien britannique [Alan Turing](https://kenji.blog/fr/p/turing/) a remplacé le concept de « système formel » de Gödel par un processus de calcul physique et a conçu un modèle informatique virtuel appelé « la machine de Turing ».
 
 Turing a appliqué le théorème d'incomplétude de Gödel au domaine informatique et a prouvé que « pour n'importe quel programme informatique, il n'existe pas d'algorithme universel permettant de déterminer à l'avance si le calcul finira un jour par s'arrêter ou non ». C'est le fameux **problème de l'arrêt (Halting Problem)**.
 
@@ -152,8 +152,8 @@ La limite mathématique selon laquelle « certaines vérités ne peuvent être p
 
 ## 8. Conclusion : L'interminable voyage vers le « Savoir »
 
-« La machine mathématique parfaite, capable de tout prouver automatiquement », dont rêvait tant [David Hilbert](https://kenji.blog/p/hilbert/), s'est évanouie en mirage avec le théorème d'incomplétude de Gödel. Toutefois, cela ne représente absolument pas une défaite pour les mathématiques.
+« La machine mathématique parfaite, capable de tout prouver automatiquement », dont rêvait tant [David Hilbert](https://kenji.blog/fr/p/hilbert/), s'est évanouie en mirage avec le théorème d'incomplétude de Gödel. Toutefois, cela ne représente absolument pas une défaite pour les mathématiques.
 
 Si les mathématiques avaient pu être entièrement automatisées, le travail du mathématicien se serait réduit à de simples manipulations et aurait fini par atteindre une conclusion définitive. Mais l'existence de « propositions vraies mais indémontrables », révélée par Gödel, prouve que l'univers mathématique est infiniment plus riche et plus insondable que nous ne l'avions jamais imaginé.
 
-[Kurt Gödel](https://kenji.blog/p/godel/) est celui qui a **prouvé** l'existence des « vérités absolument indémontrables » en se servant de l'outil logique le plus rigoureux qui soit : les mathématiques elles-mêmes. Ses théorèmes d'incomplétude continuent de nous rappeler que la quête de la connaissance de l'humanité est un long voyage, sans fin ni limite.
+[Kurt Gödel](https://kenji.blog/fr/p/godel/) est celui qui a **prouvé** l'existence des « vérités absolument indémontrables » en se servant de l'outil logique le plus rigoureux qui soit : les mathématiques elles-mêmes. Ses théorèmes d'incomplétude continuent de nous rappeler que la quête de la connaissance de l'humanité est un long voyage, sans fin ni limite.

@@ -19,7 +19,7 @@ Wenn Sie beispielsweise die erste Ziffer verschiedener Daten in Natur und Gesell
 
 Die am häufigsten auftretende Zahl darunter ist die **"1"**. Überraschenderweise beginnen etwa 30 % aller Daten mit einer 1. Intuitiv könnten wir erwarten, dass die Zahlen 1 bis 9 jeweils in etwa 11,1 % der Fälle auftreten, aber so funktionieren reale Daten nicht.
 
-Das mathematische Gesetz, das dieses mysteriöse Phänomen erklärt, ist das **Benfordsche Gesetz ([Benford's Law](https://kenji.blog/p/benfords-law/))**.
+Das mathematische Gesetz, das dieses mysteriöse Phänomen erklärt, ist das **Benfordsche Gesetz ([Benford's Law](https://kenji.blog/de/p/benfords-law/))**.
 
 In diesem Artikel werden wir im Detail erklären, wie das Benfordsche Gesetz funktioniert, warum dieses Phänomen auftritt und wie dieses Gesetz zur Aufdeckung von Betrug angewendet wird.
 

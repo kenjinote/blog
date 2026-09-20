@@ -8,9 +8,9 @@ categories: ["mathematics", "biography"]
 tags: ["Siegel", "number theory", "mathematician", "celestial mechanics", "analytic number theory", "Diophantine equations"]
 ---
 
-## 1. Introduction: Who is [Carl Ludwig Siegel](https://kenji.blog/p/siegel/)?
+## 1. Introduction: Who is [Carl Ludwig Siegel](https://kenji.blog/en/p/siegel/)?
 
-[Carl Ludwig Siegel](https://kenji.blog/p/siegel/) (December 31, 1896 – April 4, 1981) was one of the most outstanding German mathematicians of the 20th century, leaving a massive legacy in the mathematical world. His research primarily focused on number theory (analytic and algebraic number theory), Diophantine equations, Diophantine approximations, and celestial mechanics (complex dynamical systems). His achievements continue to occupy a highly crucial position in modern mathematics.
+[Carl Ludwig Siegel](https://kenji.blog/en/p/siegel/) (December 31, 1896 – April 4, 1981) was one of the most outstanding German mathematicians of the 20th century, leaving a massive legacy in the mathematical world. His research primarily focused on number theory (analytic and algebraic number theory), Diophantine equations, Diophantine approximations, and celestial mechanics (complex dynamical systems). His achievements continue to occupy a highly crucial position in modern mathematics.
 
 Siegel was renowned for his astonishing computational prowess, deep insight, and ability to masterfully handle complex analytic techniques. In a 20th-century mathematical landscape rapidly moving toward abstraction and axiomatization, he valued concrete problem-solving and the refinement of classical methods above all else, maintaining a fiercely independent style. He is also famous for his strong criticism of the extreme abstraction promoted by the French mathematical group Bourbaki. This article delves deeply into his extraordinary mathematical achievements alongside episodes from his turbulent life.
 
@@ -20,7 +20,7 @@ Siegel was renowned for his astonishing computational prowess, deep insight, and
 
 Siegel was born in 1896 in Berlin, German Empire. Displaying exceptional talent in mathematics and science from a young age, he entered Humboldt University of Berlin (University of Berlin) in 1915. There, he had the good fortune to learn from some of the greatest scholars of the era, including the physicist Max Planck and the master of algebra and group theory, Ferdinand Georg Frobenius. Initially, Siegel was also interested in astronomy and physics, but Frobenius's passionate lectures sparked a profound interest in number theory, becoming the decisive catalyst for him to pursue a path in mathematics.
 
-However, the outbreak of World War I forced an interruption to his studies. In 1917, Siegel was drafted into military service, but he refused to serve due to his strong anti-war sentiments and personal convictions. At the time, refusing military service was a severe crime in Germany, and he endured the harsh ordeal of being confined to a psychiatric hospital. He was rescued from this desperate situation by the eminent mathematician Edmund Landau. Freed through Landau's efforts, Siegel transferred to the University of Göttingen in 1917. Göttingen was then a global mecca for mathematics, home to giants like [David Hilbert](https://kenji.blog/p/hilbert/) and Felix Klein. In this environment, Siegel flourished and let his talents truly blossom.
+However, the outbreak of World War I forced an interruption to his studies. In 1917, Siegel was drafted into military service, but he refused to serve due to his strong anti-war sentiments and personal convictions. At the time, refusing military service was a severe crime in Germany, and he endured the harsh ordeal of being confined to a psychiatric hospital. He was rescued from this desperate situation by the eminent mathematician Edmund Landau. Freed through Landau's efforts, Siegel transferred to the University of Göttingen in 1917. Göttingen was then a global mecca for mathematics, home to giants like [David Hilbert](https://kenji.blog/en/p/hilbert/) and Felix Klein. In this environment, Siegel flourished and let his talents truly blossom.
 
 ```mermaid
 graph TD
@@ -46,7 +46,7 @@ In the United States, he was welcomed at the Institute for Advanced Study (IAS) 
 
 After the end of World War II, Siegel chose not to reside permanently in the United States, making the important decision to return to his homeland, Germany, in 1951. He returned as a professor at the University of Göttingen, where he had once studied, and dedicated himself to rebuilding the German mathematical community, which had been devastated by the war. He continued his vigorous research activities and trained many outstanding successors. His lectures were rigorous and lucid, earning him the deep respect of his students.
 
-In 1978, in recognition of his extraordinary lifetime achievements, he was jointly awarded the first Wolf Prize in Mathematics, one of the highest honors in the mathematical world, along with Israel Gelfand. On April 4, 1981, [Carl Ludwig Siegel](https://kenji.blog/p/siegel/) passed away in Göttingen, closing his eventful 84-year life.
+In 1978, in recognition of his extraordinary lifetime achievements, he was jointly awarded the first Wolf Prize in Mathematics, one of the highest honors in the mathematical world, along with Israel Gelfand. On April 4, 1981, [Carl Ludwig Siegel](https://kenji.blog/en/p/siegel/) passed away in Göttingen, closing his eventful 84-year life.
 
 ## 3. Great Mathematical Achievements
 
@@ -64,7 +64,7 @@ $$
 
 For example, while there may be infinitely many real or rational solutions for an elliptic curve (genus $g=1$) like $x^3 + y^3 = c$ (where $c$ is a non-zero integer), this theorem guarantees that if restricted to **integral solutions**, there will always be only finitely many.
 
-This result was groundbreaking regarding the finiteness of solutions to Diophantine equations and became a crucial historical step paving the way for the later proof of the Mordell-Weil theorem (the finiteness of rational points on curves of genus 2 or higher) by [Gerd Faltings](https://kenji.blog/p/faltings/). Siegel derived this astonishing result by significantly extending Axel Thue's theorem on Diophantine approximations and combining it with the theory of Jacobians on Abelian varieties.
+This result was groundbreaking regarding the finiteness of solutions to Diophantine equations and became a crucial historical step paving the way for the later proof of the Mordell-Weil theorem (the finiteness of rational points on curves of genus 2 or higher) by [Gerd Faltings](https://kenji.blog/en/p/faltings/). Siegel derived this astonishing result by significantly extending Axel Thue's theorem on Diophantine approximations and combining it with the theory of Jacobians on Abelian varieties.
 
 ### 3.2 Siegel Zero
 
@@ -107,11 +107,11 @@ In the field of transcendental number theory as well, he proved an extremely pow
 
 The assertion of the theorem is as follows: "In a system of simultaneous linear equations where the coefficients are integers, if the number of unknowns $N$ is sufficiently larger than the number of equations $M$ ( $N > M$ ), there always exists a non-trivial integer solution where the absolute value of each component is relatively small (appropriately bounded from above according to the size of the coefficients)."
 
-Having an elegant proof using the pigeonhole principle (Dirichlet's box principle), this lemma is frequently used as an indispensable basic tool in modern transcendence theory, such as in the construction of transcendental numbers, Diophantine approximations, and later in [Alan Baker](https://kenji.blog/p/baker/)'s theory of linear forms in logarithms.
+Having an elegant proof using the pigeonhole principle (Dirichlet's box principle), this lemma is frequently used as an indispensable basic tool in modern transcendence theory, such as in the construction of transcendental numbers, Diophantine approximations, and later in [Alan Baker](https://kenji.blog/en/p/baker/)'s theory of linear forms in logarithms.
 
 ### 3.5 Celestial Mechanics and the Small Divisor Problem
 
-Siegel did not limit himself to pure mathematics; he burned with an extraordinary obsession for celestial mechanics, especially the three-body problem, which describes the motion of many-body systems. He developed the study of dynamical systems pioneered by [Henri Poincaré](https://kenji.blog/p/poincare/) and left groundbreaking results regarding the stability of solutions to differential equations.
+Siegel did not limit himself to pure mathematics; he burned with an extraordinary obsession for celestial mechanics, especially the three-body problem, which describes the motion of many-body systems. He developed the study of dynamical systems pioneered by [Henri Poincaré](https://kenji.blog/en/p/poincare/) and left groundbreaking results regarding the stability of solutions to differential equations.
 
 In 1941, he proved the "Siegel center theorem" in analytic mechanics and complex dynamical systems. This resolved the question of when a holomorphic function is linearizable in the neighborhood of its fixed point in the complex plane. In the Taylor expansion of the function, if $\lambda$ represents the value of the derivative, when $\lambda$ takes a value close to a root of unity, very small values appear in the denominator, causing the series to diverge—a phenomenon known as the "small divisor problem."
 
@@ -135,7 +135,7 @@ Because of this strong conviction, his papers are very rewarding to read; on the
 
 ## 5. Conclusion and Siegel's Legacy
 
-Through his unparalleled analytical talent and deep reverence for classical mathematics, [Carl Ludwig Siegel](https://kenji.blog/p/siegel/) left decisive, epoch-making achievements in number theory, Diophantine geometry, and celestial mechanics.
+Through his unparalleled analytical talent and deep reverence for classical mathematics, [Carl Ludwig Siegel](https://kenji.blog/en/p/siegel/) left decisive, epoch-making achievements in number theory, Diophantine geometry, and celestial mechanics.
 
 The numerous concepts and theorems bearing his name, such as the Siegel zero, Siegel's theorem, Siegel modular forms, and Siegel's lemma, have become common languages used daily by modern mathematicians, serving as indispensable foundations even in ongoing, cutting-edge research.
 

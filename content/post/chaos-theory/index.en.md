@@ -25,7 +25,7 @@ In this article, we will thoroughly explain chaos theory and the butterfly effec
 
 ## 2. Historical Background: From Poincaré to Lorenz
 
-The seeds of chaos theory can be traced back to the research of the great 19th-century French mathematician [Henri Poincaré](https://kenji.blog/p/poincare/). At the time, one of the greatest challenges in physics was the "three-body problem." This was the problem of predicting the motion of three celestial bodies, such as the Sun, Earth, and Moon, exerting gravitational forces on each other based on Newtonian mechanics.
+The seeds of chaos theory can be traced back to the research of the great 19th-century French mathematician [Henri Poincaré](https://kenji.blog/en/p/poincare/). At the time, one of the greatest challenges in physics was the "three-body problem." This was the problem of predicting the motion of three celestial bodies, such as the Sun, Earth, and Moon, exerting gravitational forces on each other based on Newtonian mechanics.
 
 While studying this problem deeply, Poincaré discovered that the motion of celestial bodies could become extremely complex. He mathematically suggested that immeasurably small errors in initial positions or velocities could expand over time, ultimately leading to completely different trajectories of celestial bodies. This was virtually the first discovery of chaotic behavior, showing that even in a deterministic system (a system where the laws are completely known), long-term prediction could sometimes become impossible. However, due to the limitations of mathematical methods and computational power (the absence of computers) at the time, this groundbreaking discovery was not deeply explored for decades afterward.
 

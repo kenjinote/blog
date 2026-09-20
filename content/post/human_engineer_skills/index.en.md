@@ -9,7 +9,7 @@ categories: ["career", "ai", "software-engineering"]
 tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 ---
 
-# [The 'Human-Specific Engineering Skills' Required in the Era of AI Writing Code](https://kenji.blog/p/human_engineer_skills/)
+# [The 'Human-Specific Engineering Skills' Required in the Era of AI Writing Code](https://kenji.blog/en/p/human_engineer_skills/)
 
 In recent years, the landscape of software engineering has changed dramatically with the rapid evolution of Generative AI and Large Language Models (LLMs). GitHub Copilot and various AI coding assistants are now used on a daily basis, and the phenomenon where "AI instantly generates code if you give instructions in natural language" is no longer science fiction from the future, but today's reality.
 

@@ -157,7 +157,7 @@ Furthermore, because the original pairs $(a, b)$ were correspondingly created in
 All that is left is to pray that these $X$ and $Y$ are not trivial solutions ($X \equiv \pm Y$) and calculate:
 **$\gcd(X - Y, N)$**
 
-If it is a non-trivial solution, the [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm will race through in 0.001 seconds, and the secret primes $p$ and $q$, which are the heart of RSA encryption, will be printed on the output screen.
+If it is a non-trivial solution, the [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm will race through in 0.001 seconds, and the secret primes $p$ and $q$, which are the heart of RSA encryption, will be printed on the output screen.
 
 ---
 

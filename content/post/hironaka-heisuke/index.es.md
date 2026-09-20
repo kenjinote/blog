@@ -10,7 +10,7 @@ tags: ["Heisuke Hironaka", "Geometría Algebraica", "Resolución de Singularidad
 
 ## Introducción
 
- **[Heisuke Hironaka](https://kenji.blog/p/hironaka-heisuke/)** es un matemático japonés que dejó una marca revolucionaria en el mundo matemático a finales del siglo XX, particularmente en el campo de la geometría algebraica. La Medalla Fields que recibió en 1970 es el mayor honor en matemáticas, otorgada por su solución a la "resolución de singularidades de una variedad algebraica sobre un cuerpo de característica cero", un problema monumental que todos en ese entonces consideraban imposible.
+ **[Heisuke Hironaka](https://kenji.blog/es/p/hironaka-heisuke/)** es un matemático japonés que dejó una marca revolucionaria en el mundo matemático a finales del siglo XX, particularmente en el campo de la geometría algebraica. La Medalla Fields que recibió en 1970 es el mayor honor en matemáticas, otorgada por su solución a la "resolución de singularidades de una variedad algebraica sobre un cuerpo de característica cero", un problema monumental que todos en ese entonces consideraban imposible.
 
 En este artículo, profundizaremos en la dramática vida de Hironaka desde su infancia hasta su premio de la Medalla Fields, los antecedentes matemáticos de su sinónimo "Teorema de Resolución de Singularidades" y su filosofía única con respecto a la "creatividad" que continuamente defendió.
 
@@ -103,4 +103,4 @@ Para Hironaka, llegar a un callejón sin salida en el pensamiento (una singulari
 
 ## Conclusión
 
-El Teorema de Resolución de Singularidades de [Heisuke Hironaka](https://kenji.blog/p/hironaka-heisuke/) transformó el paisaje de la geometría algebraica y sigue siendo una herramienta indispensable en diversos campos como la teoría de supercuerdas. Cuando nos enfrentamos a muros difíciles, su actitud de "desenredar" los enredos complejos continúa fascinando a muchas personas hoy en día.
+El Teorema de Resolución de Singularidades de [Heisuke Hironaka](https://kenji.blog/es/p/hironaka-heisuke/) transformó el paisaje de la geometría algebraica y sigue siendo una herramienta indispensable en diversos campos como la teoría de supercuerdas. Cuando nos enfrentamos a muros difíciles, su actitud de "desenredar" los enredos complejos continúa fascinando a muchas personas hoy en día.

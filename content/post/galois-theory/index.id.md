@@ -14,8 +14,8 @@ tags:
 
 # 1. Pendahuluan: Apa itu Teori Galois?
 
-Dalam sejarah matematika, salah satu teori yang paling dramatis dan paling mendalam adalah **Teori Galois** ([Galois Theory](https://kenji.blog/p/galois-theory/)).
-Teori ini dibangun pada awal abad ke-19 oleh seorang matematikawan muda Prancis, [Évariste Galois](https://kenji.blog/p/galois/).
+Dalam sejarah matematika, salah satu teori yang paling dramatis dan paling mendalam adalah **Teori Galois** ([Galois Theory](https://kenji.blog/id/p/galois-theory/)).
+Teori ini dibangun pada awal abad ke-19 oleh seorang matematikawan muda Prancis, [Évariste Galois](https://kenji.blog/id/p/galois/).
 Teori Galois berhasil memecahkan masalah sulit yang sudah ada sejak lama, "Mengapa tidak ada rumus solusi umum untuk persamaan derajat 5 atau lebih?", dengan menggunakan konsep yang sama sekali baru yaitu **Grup** (Group).
 
 Dalam artikel ini, kami akan menjelaskan mulai dari ide dasar Teori Galois, latar belakang sejarahnya, hingga pengaruhnya terhadap matematika modern, sedalam dan semudah mungkin. Mari kita buka pintu aljabar dan sentuh keindahan simetri.
@@ -109,7 +109,7 @@ $$
 
 Ini bukan sekadar "rumusnya belum ditemukan", melainkan menunjukkan fakta menentukan bahwa "rumus semacam itu secara matematis tidak mungkin ada".
 
-# 4. Kehidupan [Évariste Galois](https://kenji.blog/p/galois/)
+# 4. Kehidupan [Évariste Galois](https://kenji.blog/id/p/galois/)
 
 Meskipun keindahan Teori Galois bersinar cemerlang dalam sejarah matematika, kehidupan dramatis Galois sendiri juga tak henti-hentinya memikat banyak orang.
 

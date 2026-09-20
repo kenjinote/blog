@@ -15,7 +15,7 @@ tags:
 
 ## Introduction : L'un des Plus Beaux Théorèmes des Mathématiques
 
-Dans le monde des mathématiques, il existe quelques formules magiques qui révèlent des connexions étonnantes entre des phénomènes apparemment sans rapport. Parmi elles, la **Formule des polyèdres d'Euler**, découverte par [Leonhard Euler](https://kenji.blog/p/euler/), se distingue par sa pure simplicité et son universalité.
+Dans le monde des mathématiques, il existe quelques formules magiques qui révèlent des connexions étonnantes entre des phénomènes apparemment sans rapport. Parmi elles, la **Formule des polyèdres d'Euler**, découverte par [Leonhard Euler](https://kenji.blog/fr/p/euler/), se distingue par sa pure simplicité et son universalité.
 
 La formule est tout simplement ceci :
 
@@ -46,7 +46,7 @@ En effet, quel que soit le polyèdre régulier que nous choisissons, le résulta
 
 ## Une Démonstration Intuitive de la Formule d'Euler
 
-Pourquoi est-ce toujours égal à **$2$** ? Regardons une démonstration intuitive par le mathématicien français [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) (1811). Cette démonstration adopte une approche révolutionnaire en transformant un solide 3D en un "graphe plan".
+Pourquoi est-ce toujours égal à **$2$** ? Regardons une démonstration intuitive par le mathématicien français [Augustin-Louis Cauchy](https://kenji.blog/fr/p/cauchy/) (1811). Cette démonstration adopte une approche révolutionnaire en transformant un solide 3D en un "graphe plan".
 
 ### Étape 1 : Aplatir le Solide sur un Plan
 
@@ -90,7 +90,7 @@ flowchart TD
 
 ## Le Manuscrit Secret de Descartes : Une Autre Histoire de Découverte
 
-En fait, environ un siècle avant la publication de ce théorème par Euler, le philosophe et mathématicien français [René Descartes](https://kenji.blog/p/descartes/) avait atteint essentiellement le même résultat.
+En fait, environ un siècle avant la publication de ce théorème par Euler, le philosophe et mathématicien français [René Descartes](https://kenji.blog/fr/p/descartes/) avait atteint essentiellement le même résultat.
 Descartes s'était concentré sur le concept de "défaut angulaire" aux sommets d'un polyèdre.
 La somme des angles se rejoignant en un seul sommet est de $360^\circ$ sur un plan, mais au sommet d'un solide, elle est toujours inférieure à $360^\circ$. Ce manque par rapport à $360^\circ$ est appelé le "défaut angulaire".
 
@@ -135,7 +135,7 @@ flowchart LR
 
 ## La Formule d'Euler-Poincaré : Un Saut dans les Multidimensions
 
-De la fin du 19ème siècle jusqu'au 20ème siècle, des mathématiciens, dont [Henri Poincaré](https://kenji.blog/p/poincare/), ont étendu le théorème d'Euler dans des espaces de dimensions encore plus grandes. Cela est devenu la **Formule d'Euler-Poincaré**.
+De la fin du 19ème siècle jusqu'au 20ème siècle, des mathématiciens, dont [Henri Poincaré](https://kenji.blog/fr/p/poincare/), ont étendu le théorème d'Euler dans des espaces de dimensions encore plus grandes. Cela est devenu la **Formule d'Euler-Poincaré**.
 En généralisant les éléments d'un polyèdre, ils ont considéré la somme alternée du nombre d'éléments dans une forme de dimension $n$.
 
 $$ \chi = k_0 - k_1 + k_2 - k_3 + \dots + (-1)^n k_n $$

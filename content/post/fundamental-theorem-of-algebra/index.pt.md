@@ -21,19 +21,19 @@ Para resolver este problema, foi introduzido um número hipotético cujo quadrad
 
 Aqui, surge uma grande questão: "Se expandirmos o sistema numérico para números complexos, podemos dizer que qualquer equação sempre terá uma solução?" Ou, "Alguma vez precisaremos introduzir outro novo tipo de número?"
 
-A matemática fornece uma resposta muito clara e bela a esta questão. Esse é o assunto deste artigo: o **[Teorema Fundamental da Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)**. Este teorema afirma que "qualquer polinômio de grau $n$ com coeficientes complexos sempre tem uma raiz (solução) dentro dos números complexos". Em outras palavras, no vasto oceano dos números complexos, a solução para qualquer equação sempre existe, garantindo que não há necessidade de inventar mais números novos.
+A matemática fornece uma resposta muito clara e bela a esta questão. Esse é o assunto deste artigo: o **[Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/)**. Este teorema afirma que "qualquer polinômio de grau $n$ com coeficientes complexos sempre tem uma raiz (solução) dentro dos números complexos". Em outras palavras, no vasto oceano dos números complexos, a solução para qualquer equação sempre existe, garantindo que não há necessidade de inventar mais números novos.
 
-Neste artigo, explicaremos detalhadamente este **[Teorema Fundamental da Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)**, partindo do seu contexto histórico, passando para uma abordagem intuitiva baseada na topologia e, finalmente, apresentando uma prova rigorosa e bela usando análise complexa.
+Neste artigo, explicaremos detalhadamente este **[Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/)**, partindo do seu contexto histórico, passando para uma abordagem intuitiva baseada na topologia e, finalmente, apresentando uma prova rigorosa e bela usando análise complexa.
 
-## Contexto Histórico do [Teorema Fundamental da Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)
+## Contexto Histórico do [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/)
 
-O **[Teorema Fundamental da Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)** não foi provado da noite para o dia. Muitos grandes matemáticos lutaram para alcançar uma prova completa, nunca duvidando da verdade do teorema.
+O **[Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/)** não foi provado da noite para o dia. Muitos grandes matemáticos lutaram para alcançar uma prova completa, nunca duvidando da verdade do teorema.
 
-No século XVII, matemáticos como [René Descartes](https://kenji.blog/p/descartes/) e Albert Girard já sabiam empiricamente que "uma equação de grau $n$ deveria ter $n$ raízes". No entanto, dentro da estrutura matemática da época, não havia meios rigorosos para prová-lo.
+No século XVII, matemáticos como [René Descartes](https://kenji.blog/pt/p/descartes/) e Albert Girard já sabiam empiricamente que "uma equação de grau $n$ deveria ter $n$ raízes". No entanto, dentro da estrutura matemática da época, não havia meios rigorosos para prová-lo.
 
-Entrando no século XVIII, gigantes matemáticos como Jean le Rond d'Alembert e [Leonhard Euler](https://kenji.blog/p/euler/) tentaram a prova. D'Alembert publicou uma prova em 1746, e o teorema é por vezes chamado de "teorema de d'Alembert" na França; no entanto, pelos padrões modernos, a sua prova carecia de rigor topológico em certas áreas. Euler também tentou mostrar que qualquer polinômio com coeficientes reais poderia ser fatorado no produto de polinômios lineares e quadráticos, mas deixou uma lacuna lógica.
+Entrando no século XVIII, gigantes matemáticos como Jean le Rond d'Alembert e [Leonhard Euler](https://kenji.blog/pt/p/euler/) tentaram a prova. D'Alembert publicou uma prova em 1746, e o teorema é por vezes chamado de "teorema de d'Alembert" na França; no entanto, pelos padrões modernos, a sua prova carecia de rigor topológico em certas áreas. Euler também tentou mostrar que qualquer polinômio com coeficientes reais poderia ser fatorado no produto de polinômios lineares e quadráticos, mas deixou uma lacuna lógica.
 
-A primeira prova essencialmente completa deste teorema inexpugnável foi dada por ninguém menos que [Carl Friedrich Gauss](https://kenji.blog/p/gauss/). Em sua dissertação de doutorado de 1799, ele apontou as falhas nas provas dos matemáticos anteriores e apresentou uma prova baseada na intuição geométrica. Gauss forneceu quatro provas diferentes para este teorema ao longo da sua vida, indicando a importância que lhe atribuía.
+A primeira prova essencialmente completa deste teorema inexpugnável foi dada por ninguém menos que [Carl Friedrich Gauss](https://kenji.blog/pt/p/gauss/). Em sua dissertação de doutorado de 1799, ele apontou as falhas nas provas dos matemáticos anteriores e apresentou uma prova baseada na intuição geométrica. Gauss forneceu quatro provas diferentes para este teorema ao longo da sua vida, indicando a importância que lhe atribuía.
 
 A prova mais padrão e elegante hoje é considerada aquela baseada na teoria da análise complexa, construída pelo matemático francês Joseph Liouville e outros. Na segunda metade deste artigo, introduziremos a prova usando o teorema de Liouville.
 
@@ -41,7 +41,7 @@ A prova mais padrão e elegante hoje é considerada aquela baseada na teoria da 
 
 Primeiro, vamos descrever a afirmação do teorema em termos matematicamente precisos.
 
-**Teorema ([Teorema Fundamental da Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/))**
+**Teorema ([Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/))**
 Para qualquer número natural $n \ge 1$ e coeficientes complexos $a_0, a_1, \dots, a_n$ (onde $a_n \neq 0$), um polinômio $P(z)$ é definido da seguinte forma:
 
 $$
@@ -95,9 +95,9 @@ Aqui, "limitada" significa que para todos os números complexos $z$, o valor abs
 
 No mundo dos números reais, uma função como $f(x) = \sin(x)$ é diferenciável ao longo de toda a reta numérica e é limitada por $-1 \le \sin(x) \le 1$. Não é uma função constante. No entanto, o teorema de Liouville afirma que isso nunca pode acontecer no mundo complexo. Se uma função é holomorfa sobre todo o plano complexo e o seu valor não diverge para o infinito, é meramente uma constante plana.
 
-## Prova Rigorosa do [Teorema Fundamental da Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/)
+## Prova Rigorosa do [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/)
 
-Vamos agora provar o [Teorema Fundamental da Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) usando o teorema de Liouville. Você ficará surpreso com o brilhantismo desta prova. Aqui, usamos uma prova por contradição (redução ao absurdo).
+Vamos agora provar o [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/) usando o teorema de Liouville. Você ficará surpreso com o brilhantismo desta prova. Aqui, usamos uma prova por contradição (redução ao absurdo).
 
 **Prova**
 
@@ -152,15 +152,15 @@ Assim, por contradição, fica provado que $P(z) = 0$ tem pelo menos uma soluç�
 
 ## Corolário do Teorema: Fatorização em Fatores Lineares
 
-O [Teorema Fundamental da Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) garante a existência de "pelo menos uma solução". Ao combinar este fato com o **Teorema do Fator** para a divisão polinomial, podemos provar que um polinômio pode ser completamente fatorado em um produto de termos lineares.
+O [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/) garante a existência de "pelo menos uma solução". Ao combinar este fato com o **Teorema do Fator** para a divisão polinomial, podemos provar que um polinômio pode ser completamente fatorado em um produto de termos lineares.
 
-Dado um polinômio $P_n(z)$ de grau $n$, o [Teorema Fundamental da Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) estabelece que existe uma solução $\alpha_1$ tal que $P_n(\alpha_1) = 0$. De acordo com o Teorema do Fator, $P_n(z)$ tem $(z - \alpha_1)$ como um fator. Isto é, pode ser fatorado da seguinte forma:
+Dado um polinômio $P_n(z)$ de grau $n$, o [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/) estabelece que existe uma solução $\alpha_1$ tal que $P_n(\alpha_1) = 0$. De acordo com o Teorema do Fator, $P_n(z)$ tem $(z - \alpha_1)$ como um fator. Isto é, pode ser fatorado da seguinte forma:
 
 $$
 P_n(z) = (z - \alpha_1) P_{n-1}(z)
 $$
 
-Aqui, $P_{n-1}(z)$ é um polinômio de grau $n-1$. Se $n-1 \ge 1$, podemos aplicar novamente o [Teorema Fundamental da Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/) para encontrar uma solução $\alpha_2$ para $P_{n-1}(z)$. Repetindo isso $n$ vezes, podemos fatorá-lo completamente da seguinte forma:
+Aqui, $P_{n-1}(z)$ é um polinômio de grau $n-1$. Se $n-1 \ge 1$, podemos aplicar novamente o [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/) para encontrar uma solução $\alpha_2$ para $P_{n-1}(z)$. Repetindo isso $n$ vezes, podemos fatorá-lo completamente da seguinte forma:
 
 $$
 P_n(z) = a_n (z - \alpha_1)(z - \alpha_2) \dots (z - \alpha_n)
@@ -172,8 +172,8 @@ Além disso, para polinômios em que todos os coeficientes são números reais, 
 
 ## Conclusão
 
-Neste artigo, analisamos em detalhe o [Teorema Fundamental da Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/), cobrindo o seu contexto histórico, a intuição topológica e a prova analítica complexa usando o teorema de Liouville.
+Neste artigo, analisamos em detalhe o [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/), cobrindo o seu contexto histórico, a intuição topológica e a prova analítica complexa usando o teorema de Liouville.
 
 À primeira vista, é um teorema sobre equações algébricas, mas o fato de a sua prova mais elegante tomar emprestado o poder da análise (cálculo) e da topologia demonstra a profundidade da matemática e a beleza de como diferentes campos estão intimamente entrelaçados.
 
-A longa busca da humanidade para encontrar as raízes das equações ganhou o vasto palco do plano complexo através da introdução dos novos números imaginários, e a completude deste palco foi provada pelo [Teorema Fundamental da Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/). Este teorema tornou-se a chave que abriu as portas brilhantes que conduzem à teoria de Galois e à geometria algébrica, que formam a base da matemática moderna.
+A longa busca da humanidade para encontrar as raízes das equações ganhou o vasto palco do plano complexo através da introdução dos novos números imaginários, e a completude deste palco foi provada pelo [Teorema Fundamental da Álgebra](https://kenji.blog/pt/p/fundamental-theorem-of-algebra/). Este teorema tornou-se a chave que abriu as portas brilhantes que conduzem à teoria de Galois e à geometria algébrica, que formam a base da matemática moderna.

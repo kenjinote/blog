@@ -140,7 +140,7 @@ La pregunta es si realmente podemos decir que los 5,000 yenes y los 20,000 yenes
 
 Por ejemplo, digamos que el presupuesto máximo del programa es de 100 millones de yenes. Si abres el sobre A y tiene "60 millones de yenes", la probabilidad de que el sobre B tenga "120 millones de yenes" es cero (porque supera el presupuesto). En otras palabras, cuanto mayor sea la cantidad en el sobre A, menor debería ser la probabilidad de que el sobre B tenga "el doble", y mayor debería ser la probabilidad de que tenga "la mitad".
 
-Si calculamos el valor esperado usando el [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) asumiendo una distribución a priori arbitraria $P(x)$, se ha demostrado matemáticamente que **para cualquier distribución de probabilidad realista (cuya suma es 1), no existe una distribución mágica en la que "sea más rentable cambiar" para todas las cantidades $X$**.
+Si calculamos el valor esperado usando el [Teorema de Bayes](https://kenji.blog/es/p/bayes-theorem/) asumiendo una distribución a priori arbitraria $P(x)$, se ha demostrado matemáticamente que **para cualquier distribución de probabilidad realista (cuya suma es 1), no existe una distribución mágica en la que "sea más rentable cambiar" para todas las cantidades $X$**.
 
 ---
 

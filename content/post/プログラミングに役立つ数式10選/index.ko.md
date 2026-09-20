@@ -19,7 +19,7 @@ tags: ["Math", "Algorithms", "Python", "C++"]
 
 ---
 
-## 1. 오일러의 등식 ([Euler's Identity](https://kenji.blog/p/eulers-identity/))
+## 1. 오일러의 등식 ([Euler's Identity](https://kenji.blog/ko/p/eulers-identity/))
 
 ### 수식의 아름다움과 개요
 '인류의 보배', '세상에서 가장 아름다운 수식'으로 불리는 오일러의 등식입니다. 수학에서 가장 중요한 5가지 상수(자연로그의 밑 $e$, 허수 단위 $i$, 원주율 $\pi$, 곱셈의 항등원 $1$, 덧셈의 항등원 $0$)가 단 하나의 단순한 식에 통합되어 있습니다.
@@ -132,10 +132,10 @@ print(f"Taylor series sin: {taylor_sin(angle, terms=5)}")
 
 ---
 
-## 3. [베이즈 정리](https://kenji.blog/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/p/bayes-theorem/))
+## 3. [베이즈 정리](https://kenji.blog/ko/p/bayes-theorem/) ([Bayes' Theorem](https://kenji.blog/ko/p/bayes-theorem/))
 
 ### 수식의 아름다움과 개요
-[베이즈 정리](https://kenji.blog/p/bayes-theorem/)는 어떤 사건과 관련된 사전 지식(사전 확률)을 바탕으로, 그 사건의 확률(사후 확률)을 갱신해 나가기 위한 정리입니다. 확률론과 통계학에서 가장 중요한 공식 중 하나입니다.
+[베이즈 정리](https://kenji.blog/ko/p/bayes-theorem/)는 어떤 사건과 관련된 사전 지식(사전 확률)을 바탕으로, 그 사건의 확률(사후 확률)을 갱신해 나가기 위한 정리입니다. 확률론과 통계학에서 가장 중요한 공식 중 하나입니다.
 
 $$ P(A|B) = \frac{P(B|A)P(A)}{P(B)} $$
 
@@ -559,12 +559,12 @@ for val, prob in zip(logits, probabilities):
 
 ---
 
-## 10. [유클리드](https://kenji.blog/p/euclid/) 거리와 피타고라스 정리 ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. [유클리드](https://kenji.blog/ko/p/euclid/) 거리와 피타고라스 정리 ([[Euclid](https://kenji.blog/ko/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### 수식의 아름다움과 개요
 고대 그리스에서 전해져 내려오는 기하학의 기초이며, $n$차원 공간에서 두 점 사이의 직선 거리를 정의하는 수식입니다. 2차원 공간에서는 피타고라스 정리($a^2 + b^2 = c^2$) 그 자체입니다.
 
-3차원 공간에서 점 $P(x_1, y_1, z_1)$ 과 $Q(x_2, y_2, z_2)$ 의 [유클리드](https://kenji.blog/p/euclid/) 거리 $d$ 는 다음과 같이 표현됩니다.
+3차원 공간에서 점 $P(x_1, y_1, z_1)$ 과 $Q(x_2, y_2, z_2)$ 의 [유클리드](https://kenji.blog/ko/p/euclid/) 거리 $d$ 는 다음과 같이 표현됩니다.
 
 $$ d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2} $$
 

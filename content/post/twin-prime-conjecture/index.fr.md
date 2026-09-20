@@ -23,7 +23,7 @@ Les nombres premiers jumeaux (Twin Primes) sont des paires de nombres premiers d
 - $(29, 31)$
 - $(41, 43)$
 
-Le [Théorème des Nombres Premiers ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/))](https://kenji.blog/p/prime-number-theorem/) indique qu'à mesure que les nombres deviennent plus grands, la fréquence d'apparition des nombres premiers eux-mêmes diminue. Par conséquent, la fréquence d'apparition des nombres premiers jumeaux diminue également. Cependant, les mathématiciens supposent depuis longtemps que, peu importe la grandeur des nombres, ces "paires de nombres premiers avec une différence de 2" continueront d'apparaître indéfiniment.
+Le [Théorème des Nombres Premiers ([Prime Number Theorem](https://kenji.blog/fr/p/prime-number-theorem/))](https://kenji.blog/p/prime-number-theorem/) indique qu'à mesure que les nombres deviennent plus grands, la fréquence d'apparition des nombres premiers eux-mêmes diminue. Par conséquent, la fréquence d'apparition des nombres premiers jumeaux diminue également. Cependant, les mathématiciens supposent depuis longtemps que, peu importe la grandeur des nombres, ces "paires de nombres premiers avec une différence de 2" continueront d'apparaître indéfiniment.
 
 C'est la **Conjecture des Nombres Premiers Jumeaux** .
 
@@ -76,7 +76,7 @@ $$
 
 Cette valeur de convergence $B_2$ est appelée la **Constante de Brun** (Brun's Constant). Selon les calculs actuels, on estime que $B_2 \approx 1.90216058$.
 
-[Leonhard Euler](https://kenji.blog/p/euler/) a prouvé que la somme des inverses de tous les nombres premiers diverge. Si la conjecture des nombres premiers jumeaux était fausse et qu'il n'y avait qu'un nombre fini de nombres premiers jumeaux, la somme convergerait naturellement puisqu'il s'agirait de la somme d'un nombre fini d'éléments. Cependant, ce que signifie le théorème de Brun, c'est que "même si les nombres premiers jumeaux existent en quantité infinie, ils sont suffisamment 'rares' pour que la somme de leurs inverses converge". C'est l'un des facteurs qui rend la résolution de la conjecture des nombres premiers jumeaux si difficile.
+[Leonhard Euler](https://kenji.blog/fr/p/euler/) a prouvé que la somme des inverses de tous les nombres premiers diverge. Si la conjecture des nombres premiers jumeaux était fausse et qu'il n'y avait qu'un nombre fini de nombres premiers jumeaux, la somme convergerait naturellement puisqu'il s'agirait de la somme d'un nombre fini d'éléments. Cependant, ce que signifie le théorème de Brun, c'est que "même si les nombres premiers jumeaux existent en quantité infinie, ils sont suffisamment 'rares' pour que la somme de leurs inverses converge". C'est l'un des facteurs qui rend la résolution de la conjecture des nombres premiers jumeaux si difficile.
 
 ## 4. Avancées spectaculaires récentes : La percée de Yitang Zhang
 

@@ -138,7 +138,7 @@ Chaque fois que le nombre de bits augmente de 1 (le nombre double), le temps de 
 
 ## 2. Méthode de factorisation de Fermat (Fermat's Factorization Method)
 
-Il s'agit d'une méthode inventée par le mathématicien du 17ème siècle, [Pierre de Fermat](https://kenji.blog/p/fermat/). Étant donné un nombre composé impair $N$, on tente de représenter $N$ comme la différence de deux carrés.
+Il s'agit d'une méthode inventée par le mathématicien du 17ème siècle, [Pierre de Fermat](https://kenji.blog/fr/p/fermat/). Étant donné un nombre composé impair $N$, on tente de représenter $N$ comme la différence de deux carrés.
 
 $$ N = x^2 - y^2 = (x - y)(x + y) $$
 

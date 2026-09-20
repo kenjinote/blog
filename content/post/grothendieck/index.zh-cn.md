@@ -8,9 +8,9 @@ categories: ["数学", "传记"]
 tags: ["格罗滕迪克", "代数几何", "概形理论", "范畴论"]
 ---
 
-# [[亚历山大·格罗滕迪克](https://kenji.blog/p/grothendieck/)：20世纪最伟大数学家的生平与成就](https://kenji.blog/p/grothendieck/)
+# [[亚历山大·格罗滕迪克](https://kenji.blog/zh-cn/p/grothendieck/)：20世纪最伟大数学家的生平与成就](https://kenji.blog/p/grothendieck/)
 
-[亚历山大·格罗滕迪克](https://kenji.blog/p/grothendieck/)（[Alexander Grothendieck](https://kenji.blog/p/grothendieck/)）是历史上最伟大的数学家之一，他在20世纪后半叶的数学界，特别是在代数几何领域，带来了根本性的范式转变。他的成就远不止于解决个别的未解难题；他从根本上重构了数学本身的语言和概念框架。在本文中，我们将详细解说他非凡而充满戏剧性的生平，以及他对现代数学不可估量的影响。
+[亚历山大·格罗滕迪克](https://kenji.blog/zh-cn/p/grothendieck/)（[Alexander Grothendieck](https://kenji.blog/zh-cn/p/grothendieck/)）是历史上最伟大的数学家之一，他在20世纪后半叶的数学界，特别是在代数几何领域，带来了根本性的范式转变。他的成就远不止于解决个别的未解难题；他从根本上重构了数学本身的语言和概念框架。在本文中，我们将详细解说他非凡而充满戏剧性的生平，以及他对现代数学不可估量的影响。
 
 ## 1. 动荡的童年与战争的阴影
 
@@ -124,4 +124,4 @@ graph TD
 
 ## 结论
 
-[亚历山大·格罗滕迪克](https://kenji.blog/p/grothendieck/)是一位将全新的风景带入数学学科的巨人。他留下来的概念超越了单纯的数学框架，展示了人类逻辑思维扩展的可能性。他曾凝视的深邃世界至今仍在结出丰硕的果实。
+[亚历山大·格罗滕迪克](https://kenji.blog/zh-cn/p/grothendieck/)是一位将全新的风景带入数学学科的巨人。他留下来的概念超越了单纯的数学框架，展示了人类逻辑思维扩展的可能性。他曾凝视的深邃世界至今仍在结出丰硕的果实。

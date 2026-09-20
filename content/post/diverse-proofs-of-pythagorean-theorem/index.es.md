@@ -36,9 +36,9 @@ graph TD
 
 ---
 
-## 1. Demostración geométrica basada en los "Elementos" de [Euclides](https://kenji.blog/p/euclid/)
+## 1. Demostración geométrica basada en los "Elementos" de [Euclides](https://kenji.blog/es/p/euclid/)
 
-El antiguo matemático griego [Euclides](https://kenji.blog/p/euclid/) proporcionó una demostración visual y rigurosa en su libro "Elementos" (Libro I, Proposición 47), a la que a veces se hace referencia como la **demostración del molino de viento**.
+El antiguo matemático griego [Euclides](https://kenji.blog/es/p/euclid/) proporcionó una demostración visual y rigurosa en su libro "Elementos" (Libro I, Proposición 47), a la que a veces se hace referencia como la **demostración del molino de viento**.
 
 ### Idea de la demostración
 

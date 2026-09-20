@@ -16,7 +16,7 @@ tags:
 
 # 1. Pendahuluan: Seorang Pencari Pemikiran Murni
 
-[Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/) (1804–1851) adalah seorang **matematikawan Jerman** abad ke-19 yang memberikan kontribusi menentukan pada berbagai bidang seperti aljabar, analisis, teori bilangan, dan mekanika. Bersama dengan [Niels Henrik Abel](https://kenji.blog/p/abel/), ia dirayakan sebagai "penemu fungsi eliptik", dan namanya diabadikan dalam "Jacobian" (determinan Jacobian) yang sering kita temui dalam kalkulus multivariabel saat ini.
+[Carl Gustav Jacob Jacobi](https://kenji.blog/id/p/jacobi/) (1804–1851) adalah seorang **matematikawan Jerman** abad ke-19 yang memberikan kontribusi menentukan pada berbagai bidang seperti aljabar, analisis, teori bilangan, dan mekanika. Bersama dengan [Niels Henrik Abel](https://kenji.blog/id/p/abel/), ia dirayakan sebagai "penemu fungsi eliptik", dan namanya diabadikan dalam "Jacobian" (determinan Jacobian) yang sering kita temui dalam kalkulus multivariabel saat ini.
 
 Ia menghargai keindahan matematika itu sendiri dan kehormatan jiwa manusia di atas utilitas praktis. Dalam artikel ini, kita akan mendalami kehidupan Jacobi, pencapaian matematika utamanya, dan episode-episode terkenal yang ia tinggalkan.
 

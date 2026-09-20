@@ -79,9 +79,9 @@ graph TD
 
 ---
 
-## 3. 基于[贝叶斯定理](https://kenji.blog/p/bayes-theorem/)的严格证明
+## 3. 基于[贝叶斯定理](https://kenji.blog/zh-cn/p/bayes-theorem/)的严格证明
 
-为了在数学上严格解决这个问题，我们使用计算条件概率的“[贝叶斯定理](https://kenji.blog/p/bayes-theorem/)”。
+为了在数学上严格解决这个问题，我们使用计算条件概率的“[贝叶斯定理](https://kenji.blog/zh-cn/p/bayes-theorem/)”。
 
 $$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 
@@ -111,7 +111,7 @@ $$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 $$ P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C) $$
 $$ P(M_B) = \left(\frac{1}{2} \times \frac{1}{3}\right) + \left(0 \times \frac{1}{3}\right) + \left(1 \times \frac{1}{3}\right) = \frac{1}{6} + 0 + \frac{1}{3} = \frac{1}{2} $$
 
-终于，我们可以应用[贝叶斯定理](https://kenji.blog/p/bayes-theorem/)，计算门A和门C的后验概率。
+终于，我们可以应用[贝叶斯定理](https://kenji.blog/zh-cn/p/bayes-theorem/)，计算门A和门C的后验概率。
 
 **门A（不改变选择）有新车的概率：**
 $$ P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{\frac{1}{2} \times \frac{1}{3}}{\frac{1}{2}} = \frac{1}{3} $$

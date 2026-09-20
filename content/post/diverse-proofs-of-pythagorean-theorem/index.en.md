@@ -36,9 +36,9 @@ graph TD
 
 ---
 
-## 1. Geometrical Proof Based on [Euclid](https://kenji.blog/p/euclid/)'s "Elements"
+## 1. Geometrical Proof Based on [Euclid](https://kenji.blog/en/p/euclid/)'s "Elements"
 
-The ancient Greek mathematician [Euclid](https://kenji.blog/p/euclid/) provided a visual and rigorous proof in his book "Elements" (Book I, Proposition 47), which is sometimes referred to as the **Windmill proof**.
+The ancient Greek mathematician [Euclid](https://kenji.blog/en/p/euclid/) provided a visual and rigorous proof in his book "Elements" (Book I, Proposition 47), which is sometimes referred to as the **Windmill proof**.
 
 ### Proof Idea
 

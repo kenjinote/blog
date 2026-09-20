@@ -10,7 +10,7 @@ tags: ["Théorème des quatre couleurs", "Théorie des graphes", "Preuve assist�
 
 ## 1. Qu'est-ce que le problème des quatre couleurs ?
 
-Le théorème des quatre couleurs ([Four Color Theorem](https://kenji.blog/p/four-color-theorem/)) est l'un des problèmes les plus célèbres et fascinants des mathématiques, en particulier de la théorie des graphes et de la topologie. Son affirmation est très simple et suffisamment intuitive pour qu'un élève du primaire la comprenne. Elle stipule que « pour colorier n'importe quelle carte sur un plan de telle sorte que les régions adjacentes soient de couleurs différentes, un maximum de **4 couleurs** suffit ».
+Le théorème des quatre couleurs ([Four Color Theorem](https://kenji.blog/fr/p/four-color-theorem/)) est l'un des problèmes les plus célèbres et fascinants des mathématiques, en particulier de la théorie des graphes et de la topologie. Son affirmation est très simple et suffisamment intuitive pour qu'un élève du primaire la comprenne. Elle stipule que « pour colorier n'importe quelle carte sur un plan de telle sorte que les régions adjacentes soient de couleurs différentes, un maximum de **4 couleurs** suffit ».
 
 Ici, « adjacent » ne désigne pas un point, mais un état de partage d'une ligne de démarcation. S'ils ne se touchent qu'en un point, ce n'est pas un problème de les colorier de la même couleur. Cette hypothèse intuitive a été proposée pour la première fois en 1852 par Francis Guthrie. En coloriant une carte des comtés d'Angleterre, il s'est rendu compte que, quelle que soit la complexité de leurs frontières, quatre couleurs suffisaient pour les distinguer.
 
@@ -67,7 +67,7 @@ L'exploration de ce problème nous enseigne à quel point l'intuition humaine es
 
 ## 1. Qu'est-ce que le problème des quatre couleurs ?
 
-Le théorème des quatre couleurs ([Four Color Theorem](https://kenji.blog/p/four-color-theorem/)) est l'un des problèmes les plus célèbres et fascinants des mathématiques, en particulier de la théorie des graphes et de la topologie. Son affirmation est très simple et suffisamment intuitive pour qu'un élève du primaire la comprenne. Elle stipule que « pour colorier n'importe quelle carte sur un plan de telle sorte que les régions adjacentes soient de couleurs différentes, un maximum de **4 couleurs** suffit ».
+Le théorème des quatre couleurs ([Four Color Theorem](https://kenji.blog/fr/p/four-color-theorem/)) est l'un des problèmes les plus célèbres et fascinants des mathématiques, en particulier de la théorie des graphes et de la topologie. Son affirmation est très simple et suffisamment intuitive pour qu'un élève du primaire la comprenne. Elle stipule que « pour colorier n'importe quelle carte sur un plan de telle sorte que les régions adjacentes soient de couleurs différentes, un maximum de **4 couleurs** suffit ».
 
 Ici, « adjacent » ne désigne pas un point, mais un état de partage d'une ligne de démarcation. S'ils ne se touchent qu'en un point, ce n'est pas un problème de les colorier de la même couleur. Cette hypothèse intuitive a été proposée pour la première fois en 1852 par Francis Guthrie. En coloriant une carte des comtés d'Angleterre, il s'est rendu compte que, quelle que soit la complexité de leurs frontières, quatre couleurs suffisaient pour les distinguer.
 
@@ -124,7 +124,7 @@ L'exploration de ce problème nous enseigne à quel point l'intuition humaine es
 
 ## 1. Qu'est-ce que le problème des quatre couleurs ?
 
-Le théorème des quatre couleurs ([Four Color Theorem](https://kenji.blog/p/four-color-theorem/)) est l'un des problèmes les plus célèbres et fascinants des mathématiques, en particulier de la théorie des graphes et de la topologie. Son affirmation est très simple et suffisamment intuitive pour qu'un élève du primaire la comprenne. Elle stipule que « pour colorier n'importe quelle carte sur un plan de telle sorte que les régions adjacentes soient de couleurs différentes, un maximum de **4 couleurs** suffit ».
+Le théorème des quatre couleurs ([Four Color Theorem](https://kenji.blog/fr/p/four-color-theorem/)) est l'un des problèmes les plus célèbres et fascinants des mathématiques, en particulier de la théorie des graphes et de la topologie. Son affirmation est très simple et suffisamment intuitive pour qu'un élève du primaire la comprenne. Elle stipule que « pour colorier n'importe quelle carte sur un plan de telle sorte que les régions adjacentes soient de couleurs différentes, un maximum de **4 couleurs** suffit ».
 
 Ici, « adjacent » ne désigne pas un point, mais un état de partage d'une ligne de démarcation. S'ils ne se touchent qu'en un point, ce n'est pas un problème de les colorier de la même couleur. Cette hypothèse intuitive a été proposée pour la première fois en 1852 par Francis Guthrie. En coloriant une carte des comtés d'Angleterre, il s'est rendu compte que, quelle que soit la complexité de leurs frontières, quatre couleurs suffisaient pour les distinguer.
 
@@ -181,7 +181,7 @@ L'exploration de ce problème nous enseigne à quel point l'intuition humaine es
 
 ## 1. Qu'est-ce que le problème des quatre couleurs ?
 
-Le théorème des quatre couleurs ([Four Color Theorem](https://kenji.blog/p/four-color-theorem/)) est l'un des problèmes les plus célèbres et fascinants des mathématiques, en particulier de la théorie des graphes et de la topologie. Son affirmation est très simple et suffisamment intuitive pour qu'un élève du primaire la comprenne. Elle stipule que « pour colorier n'importe quelle carte sur un plan de telle sorte que les régions adjacentes soient de couleurs différentes, un maximum de **4 couleurs** suffit ».
+Le théorème des quatre couleurs ([Four Color Theorem](https://kenji.blog/fr/p/four-color-theorem/)) est l'un des problèmes les plus célèbres et fascinants des mathématiques, en particulier de la théorie des graphes et de la topologie. Son affirmation est très simple et suffisamment intuitive pour qu'un élève du primaire la comprenne. Elle stipule que « pour colorier n'importe quelle carte sur un plan de telle sorte que les régions adjacentes soient de couleurs différentes, un maximum de **4 couleurs** suffit ».
 
 Ici, « adjacent » ne désigne pas un point, mais un état de partage d'une ligne de démarcation. S'ils ne se touchent qu'en un point, ce n'est pas un problème de les colorier de la même couleur. Cette hypothèse intuitive a été proposée pour la première fois en 1852 par Francis Guthrie. En coloriant une carte des comtés d'Angleterre, il s'est rendu compte que, quelle que soit la complexité de leurs frontières, quatre couleurs suffisaient pour les distinguer.
 

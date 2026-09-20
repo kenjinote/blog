@@ -36,7 +36,7 @@ Meskipun begitu, bukan berarti kita boleh meremehkan apa yang dimaksud dengan "m
 
 Ada banyak hal di dunia ini yang belum terpecahkan. Misalnya, mekanisme emosi dan kesadaran manusia, atau asal usul alam semesta. Bidang-bidang ini masih belum sepenuhnya "dimengerti" bahkan dengan kemajuan sains.
 
-Dalam dunia matematika juga, ada masalah yang masih belum terpecahkan, seperti "[Konjektur Goldbach](https://kenji.blog/p/goldbachs-conjecture/)", meskipun itu adalah masalah yang sederhana.
+Dalam dunia matematika juga, ada masalah yang masih belum terpecahkan, seperti "[Konjektur Goldbach](https://kenji.blog/id/p/goldbachs-conjecture/)", meskipun itu adalah masalah yang sederhana.
 
 ---
 

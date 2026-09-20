@@ -13,15 +13,15 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 在現代數位社會，特別是透過網際網路進行通訊時，「加密」已成為不可或缺的基礎技術。我們能透過網頁瀏覽器經由 HTTPS 安全地瀏覽網站、在網路銀行進行金融交易，以及在通訊應用程式中進行私密對話，全是因為有高度數學理論支持的加密協定在背後運作。其中扮演特別重要角色的就是「公開金鑰加密」，而其代表正是 **RSA 加密** 。
 
-包含 RSA 加密在內的許多加密演算法，其安全性與正確性在很大程度上依賴於 17 世紀法國數學家皮耶·德·費馬（[Pierre de Fermat](https://kenji.blog/p/fermat/)）所發現的一個非常優美且強大的定理。這就是 **[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)）** 。此外，將其一般化的[李昂哈德·歐拉](https://kenji.blog/p/euler/)（[Leonhard Euler](https://kenji.blog/p/euler/)）定理，在密碼學理論中也發揮了決定性的作用。
+包含 RSA 加密在內的許多加密演算法，其安全性與正確性在很大程度上依賴於 17 世紀法國數學家皮耶·德·費馬（[Pierre de Fermat](https://kenji.blog/zh-tw/p/fermat/)）所發現的一個非常優美且強大的定理。這就是 **[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/zh-tw/p/fermats-little-theorem/)）** 。此外，將其一般化的[李昂哈德·歐拉](https://kenji.blog/zh-tw/p/euler/)（[Leonhard Euler](https://kenji.blog/zh-tw/p/euler/)）定理，在密碼學理論中也發揮了決定性的作用。
 
-本篇文章將從基礎開始，徹底解說[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)這個純數學的發現，是如何應用於現代實用的加密技術，特別是「質數判定」與「RSA 加密」。這是一份非常詳細的技術指南，內容涵蓋數學證明、加密與解密機制，以及使用 C++ 與 Python 進行具體演算法實作。
+本篇文章將從基礎開始，徹底解說[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)這個純數學的發現，是如何應用於現代實用的加密技術，特別是「質數判定」與「RSA 加密」。這是一份非常詳細的技術指南，內容涵蓋數學證明、加密與解密機制，以及使用 C++ 與 Python 進行具體演算法實作。
 
 ---
 
 ## 2. 同餘與模算數基礎
 
-為了理解[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)，首先必須熟悉「模算數（同餘式）」這個數學概念。模算數是一種著眼於除以某個固定數字（稱為模數）後的「餘數」之計算系統。因為它像時鐘的表面（每 12 小時繞一圈）一樣運算，所以也被稱為「時鐘數學」。
+為了理解[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)，首先必須熟悉「模算數（同餘式）」這個數學概念。模算數是一種著眼於除以某個固定數字（稱為模數）後的「餘數」之計算系統。因為它像時鐘的表面（每 12 小時繞一圈）一樣運算，所以也被稱為「時鐘數學」。
 
 當整數 $a$ 和 $b$ 除以正整數 $n$ 的餘數相等時，數學上會以下列方式表示：
 
@@ -46,15 +46,15 @@ $$
 
 ---
 
-## 3. [費馬小定理](https://kenji.blog/p/fermats-little-theorem/)的數學背景與證明
+## 3. [費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的數學背景與證明
 
-掌握了模算數的基礎後，讓我們來看看本篇的主題——[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)。
+掌握了模算數的基礎後，讓我們來看看本篇的主題——[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)。
 
 ### 3.1 定理的定義
 
-[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)可以表述如下：
+[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)可以表述如下：
 
-> **[費馬小定理](https://kenji.blog/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))**
+> **[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/zh-tw/p/fermats-little-theorem/))**
 > 設 $p$ 為質數，$a$ 為不是 $p$ 的倍數（即 $a$ 與 $p$ 互質）的任意整數。此時，以下同餘式成立：
 > $$ a^{p-1} \equiv 1 \pmod p $$
 
@@ -106,13 +106,13 @@ $$
 a^{p-1} \equiv 1 \pmod p
 $$
 
-這就是[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)的證明。
+這就是[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的證明。
 
 ---
 
 ## 4. 歐拉函數與歐拉定理
 
-[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)是關於「質數 $p$」的定理，而將其推廣至「任意正整數 $n$」的人，就是[李昂哈德·歐拉](https://kenji.blog/p/euler/)。為了理解 RSA 加密，這個推廣是不可或缺的。
+[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)是關於「質數 $p$」的定理，而將其推廣至「任意正整數 $n$」的人，就是[李昂哈德·歐拉](https://kenji.blog/zh-tw/p/euler/)。為了理解 RSA 加密，這個推廣是不可或缺的。
 
 ### 4.1 歐拉函數 $\phi(n)$
 
@@ -126,13 +126,13 @@ $$
 
 ### 4.2 歐拉定理
 
-歐拉將[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)推廣如下：
+歐拉將[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)推廣如下：
 
 > **歐拉定理 (Euler's Theorem)**
 > 對於正整數 $n$ 以及與其互質的整數 $a$，以下關係成立：
 > $$ a^{\phi(n)} \equiv 1 \pmod n $$
 
-如果 $n$ 是質數 $p$，則 $\phi(p) = p - 1$，這就變成了[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)本身（$a^{p-1} \equiv 1 \pmod p$）。也就是說，[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)只不過是歐拉定理的一個特例。
+如果 $n$ 是質數 $p$，則 $\phi(p) = p - 1$，這就變成了[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)本身（$a^{p-1} \equiv 1 \pmod p$）。也就是說，[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)只不過是歐拉定理的一個特例。
 
 ---
 
@@ -140,11 +140,11 @@ $$
 
 在加密技術（如 RSA 加密與 Diffie-Hellman 金鑰交換等）中，必須能高速找出長達數百位數的「巨大質數」。然而，如果要判定一個巨大數字 $N$ 是否為質數，若使用測試除以從 $2$ 到 $\sqrt{N}$ 的所有數字是否能整除的「試除法」，將會花費等同於宇宙壽命般漫長的時間。
 
-因此，反過來利用[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)的「機率性質數判定法」，即 **費馬質數判定法（Fermat Primality Test）** 便應運而生。
+因此，反過來利用[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的「機率性質數判定法」，即 **費馬質數判定法（Fermat Primality Test）** 便應運而生。
 
 ### 5.1 什麼是機率性質數判定法
 
-根據[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)，若 $p$ 為質數，則對於任意的 $a$ ($1 < a < p$)，$a^{p-1} \equiv 1 \pmod p$ 必然成立。
+根據[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)，若 $p$ 為質數，則對於任意的 $a$ ($1 < a < p$)，$a^{p-1} \equiv 1 \pmod p$ 必然成立。
 取其逆否命題，可以說「如果對於某個 $a$，得出 $a^{p-1} \not\equiv 1 \pmod p$，那麼 $p$ **絕對不是質數（是合數）** 」。
 
 因此，如果想判定 $N$ 是否為質數，隨機選擇幾個 $a$，計算 $a^{N-1} \pmod N$ 並確認結果是否為 $1$。如果只要有一次得出 $1$ 以外的答案，就可以確定 $N$ 是合數。如果試了多次結果都是 $1$，則可以高度機率地判斷 $N$ 「大概是質數」。
@@ -283,7 +283,7 @@ else:
 
 ## 7. 在 RSA 加密中的應用：費馬與歐拉結果的地方
 
-[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)（以及歐拉定理）最偉大的應用領域，就是 1977 年由 Rivest、Shamir 與 Adleman 三人所開發的 **RSA 加密** 。
+[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)（以及歐拉定理）最偉大的應用領域，就是 1977 年由 Rivest、Shamir 與 Adleman 三人所開發的 **RSA 加密** 。
 RSA 加密是一個名為「公開金鑰加密」的劃時代系統，它實現了一種機制：用來加密的金鑰（公開金鑰）對全世界公開，但用來解密的金鑰（私鑰）只有接收者本人知道。
 
 這種不對稱性，是基於「將巨大的合數進行質因數分解是極度困難的」這一計算複雜度上的安全性。
@@ -317,7 +317,7 @@ sequenceDiagram
 4. 選擇與 $\phi(N)$ 互質的整數 $e$（公開指數）（常使用 $e = 65537$）。
 5. 計算 $e$ 的模反元素 $d$（私密指數）。亦即，找出滿足下式的 $d$：
    $$ e \cdot d \equiv 1 \pmod{\phi(N)} $$
-   這個計算使用了 **擴展[歐幾里得](https://kenji.blog/p/euclid/)演算法** 。
+   這個計算使用了 **擴展[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法** 。
 
 至此， **公開金鑰為 $(N, e)$** ， **私鑰為 $(N, d)$** 。（$p, q, \phi(N)$ 會立即銷毀或嚴格保密）。
 
@@ -344,7 +344,7 @@ $$
 
 ### 7.2 為什麼能解密？（數學證明）
 
-在這裡，[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)（歐拉定理）發揮了它的真正價值。為什麼 $C^d \pmod N$ 能變回 $M$ 呢？
+在這裡，[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)（歐拉定理）發揮了它的真正價值。為什麼 $C^d \pmod N$ 能變回 $M$ 呢？
 
 我們將解密的式子展開。
 因為 $C \equiv M^e \pmod N$，所以：
@@ -369,7 +369,7 @@ $$ M \cdot (1)^k \equiv M \pmod N $$
 
 因為只有理論較難體會，所以我們用 Python 來實際實作 RSA 加密的金鑰生成、加密、解密的過程吧。這是一個供教育用途的「簡易（玩具）實作」，但所使用的數學與真實情況完全相同。
 
-用來求得模反元素 $d$ 的「擴展[歐幾里得](https://kenji.blog/p/euclid/)演算法」也包含在實作中。
+用來求得模反元素 $d$ 的「擴展[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法」也包含在實作中。
 
 ```python
 import random
@@ -468,9 +468,9 @@ if __name__ == '__main__':
 
 在 17 世紀，當皮耶·德·費馬發現這個「小定理」時，沒有人認為這會有什麼實際用途。費馬本人也是出於純粹的數學探求心在進行數論的研究。
 
-然而，大約 300 年後的 1970 年代，在電腦網路的黎明期，作為確立安全通訊協定不可或缺的加密技術，費馬定理實現了戲劇性的復活。基於[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)的質數判定技術，以及基於歐拉定理的 RSA 加密，字面上支撐著現代的網際網路基礎設施。
+然而，大約 300 年後的 1970 年代，在電腦網路的黎明期，作為確立安全通訊協定不可或缺的加密技術，費馬定理實現了戲劇性的復活。基於[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的質數判定技術，以及基於歐拉定理的 RSA 加密，字面上支撐著現代的網際網路基礎設施。
 
-我們每天不經意發送的 LINE 訊息、在 Amazon 上的購物，全都是在這個 $a^{p-1} \equiv 1 \pmod p$ 簡單而優美的數學公式之上舞動著的。[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)告訴我們，無論數學多麼抽象，總有一天必定會派上用場。
+我們每天不經意發送的 LINE 訊息、在 Amazon 上的購物，全都是在這個 $a^{p-1} \equiv 1 \pmod p$ 簡單而優美的數學公式之上舞動著的。[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)告訴我們，無論數學多麼抽象，總有一天必定會派上用場。
 
 在學習程式設計或密碼學理論時，理解其基礎的數學結構，將會成為深入理解那些被當作黑盒子般提供的函式庫運作方式，並設計出更安全系統的一大武器。
 

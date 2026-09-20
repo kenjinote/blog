@@ -18,7 +18,7 @@ tags:
 
 In the field of geometry in mathematics, the theme of finding the area of a shape has been studied by many mathematicians since ancient Greek times. In school classes, we learn various approaches, starting from the basic formula for the area of a triangle, "base $\times$ height $\div 2$", to area formulas using trigonometric ratios in high school mathematics, Sarrus' rule using the cross product of vectors on a coordinate plane, and even Heron's formula, which derives the area solely from the lengths of the three sides.
 
-However, if all the vertices of a polygon lie on **lattice points** (points where both the $x$ and $y$ coordinates are integers), there is a magical formula that allows you to calculate the area using only extremely simple arithmetic operations, without measuring lengths or performing complex multiplications or square root calculations. That is **[Pick's Theorem](https://kenji.blog/p/picks-theorem/)**, which we will explain in detail this time.
+However, if all the vertices of a polygon lie on **lattice points** (points where both the $x$ and $y$ coordinates are integers), there is a magical formula that allows you to calculate the area using only extremely simple arithmetic operations, without measuring lengths or performing complex multiplications or square root calculations. That is **[Pick's Theorem](https://kenji.blog/en/p/picks-theorem/)**, which we will explain in detail this time.
 
 Pick's theorem is not just a "convenient and mysterious formula for easily finding area", but it has a very deep background that connects to topology, graph theory, and algebraic geometry in modern mathematics. In this article, we will delve deeply into Pick's theorem from multiple angles, from how to use it basically, to the mathematical proof of why such a simple formula holds, its historical background, and even the limitations of the theorem and the possibility of its extension to 3D.
 
@@ -32,7 +32,7 @@ Interestingly, Pick had a deep connection with the famous Albert Einstein. When 
 
 However, Pick's later years were very tragic. Being of Jewish descent, he faced persecution with the rise of Nazi Germany. In 1942, he was sent to the Theresienstadt concentration camp, where he passed away just two weeks later at the age of 82. Although his life met a sad end, "Pick's theorem," which he left behind, continues to be loved in mathematics education around the world today because of its beauty and simplicity.
 
-## 3. What is [Pick's Theorem](https://kenji.blog/p/picks-theorem/)?
+## 3. What is [Pick's Theorem](https://kenji.blog/en/p/picks-theorem/)?
 
 Now, let's get to the core of Pick's theorem. The claim of the theorem is surprisingly simple and can be understood even by elementary school students.
 

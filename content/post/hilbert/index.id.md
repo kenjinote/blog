@@ -10,7 +10,7 @@ tags: ["Hilbert", "Sejarah Matematika", "Geometri", "Analisis Fungsional", "Fisi
 
 ## 1. Pendahuluan: Bapak Matematika Modern
 
-[David Hilbert](https://kenji.blog/p/hilbert/) (23 Januari 1862 – 14 Februari 1943) adalah seorang matematikawan Jerman, diakui secara luas sebagai salah satu matematikawan paling berpengaruh dan terhebat pada akhir abad ke-19 dan awal abad ke-20. Sering dibandingkan dengan rekannya yang brilian dari Prancis, [Henri Poincaré](https://kenji.blog/p/poincare/), Hilbert menekankan logika dan formalisme yang ketat, berbeda dengan ketergantungan Poincaré pada intuisi. Hilbert sangat memengaruhi hampir setiap bidang matematika modern, membuatnya mendapat julukan **"Raja Matematika"**.
+[David Hilbert](https://kenji.blog/id/p/hilbert/) (23 Januari 1862 – 14 Februari 1943) adalah seorang matematikawan Jerman, diakui secara luas sebagai salah satu matematikawan paling berpengaruh dan terhebat pada akhir abad ke-19 dan awal abad ke-20. Sering dibandingkan dengan rekannya yang brilian dari Prancis, [Henri Poincaré](https://kenji.blog/id/p/poincare/), Hilbert menekankan logika dan formalisme yang ketat, berbeda dengan ketergantungan Poincaré pada intuisi. Hilbert sangat memengaruhi hampir setiap bidang matematika modern, membuatnya mendapat julukan **"Raja Matematika"**.
 
 Kontribusinya membentang di seluruh teori invarian, teori bilangan aljabar, aksiomatisasi geometri, persamaan integral, analisis fungsional (ruang Hilbert), dan fisika teoretis (dasar-dasar matematika relativitas umum). Warisan terbesarnya tidak hanya terletak pada pemecahan masalah terbuka yang terisolasi, tetapi dalam membayangkan kembali struktur dan sifat matematika itu sendiri secara mendasar, membangun paradigma baru aksiomatisme dan formalisme. Dalam artikel ini, kita akan melihat lebih dalam dan mendetail pada episode kehidupan dramatis Hilbert dan pencapaiannya yang cemerlang.
 
@@ -18,7 +18,7 @@ Kontribusinya membentang di seluruh teori invarian, teori bilangan aljabar, aksi
 
 Hilbert lahir pada tanggal 23 Januari 1862, di Wehlau, dekat Königsberg (sekarang Kaliningrad, Rusia), ibu kota Provinsi Prusia Timur di Kerajaan Prusia. Ayahnya, Otto Hilbert, adalah seorang hakim distrik yang tegas. Ibunya, Maria Therese, adalah wanita berpendidikan baik dengan minat mendalam pada filsafat dan astronomi. Dikatakan bahwa Hilbert mewarisi pemikiran logis dan kehausannya akan pengetahuan dari orang tuanya.
 
-Königsberg adalah kota dengan akar akademik yang dalam; itu adalah tempat kelahiran filsuf besar Immanuel Kant dan terkenal dengan masalah "[Tujuh Jembatan Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)" yang diselesaikan oleh [Leonhard Euler](https://kenji.blog/p/euler/). Selama masa sekolahnya, nilai Hilbert tidak luar biasa, tetapi ia memiliki intuisi dan hasrat khusus pada matematika. Dia membenci hafalan, lebih suka memecahkan masalah dengan membangun logika dari awal dalam pikirannya sendiri. Pendekatan ini—membangun dari fondasi logis daripada mengandalkan hafalan—menjadi inti gaya matematikanya di kemudian hari.
+Königsberg adalah kota dengan akar akademik yang dalam; itu adalah tempat kelahiran filsuf besar Immanuel Kant dan terkenal dengan masalah "[Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/)" yang diselesaikan oleh [Leonhard Euler](https://kenji.blog/id/p/euler/). Selama masa sekolahnya, nilai Hilbert tidak luar biasa, tetapi ia memiliki intuisi dan hasrat khusus pada matematika. Dia membenci hafalan, lebih suka memecahkan masalah dengan membangun logika dari awal dalam pikirannya sendiri. Pendekatan ini—membangun dari fondasi logis daripada mengandalkan hafalan—menjadi inti gaya matematikanya di kemudian hari.
 
 ### "Jalan-jalan Matematika" dan Teman Seumur Hidup
 
@@ -51,19 +51,19 @@ Dalam laporan ini, ia menerapkan teori Galois pada teori bilangan, meletakkan da
 
 ## 5. Aksiomatisasi Geometri: Filosofi "Meja, Kursi, dan Gelas Bir"
 
-Pada tahun 1899, Hilbert menerbitkan buku "Grundlagen der Geometrie" (Dasar-dasar Geometri). Buku itu sepenuhnya merekonstruksi sistem aksioma geometri [[Euklid](https://kenji.blog/p/euclid/)es](https://kenji.blog/p/euclid/), yang telah menjadi fondasi absolut geometri selama lebih dari 2000 tahun, dari sudut pandang modern.
+Pada tahun 1899, Hilbert menerbitkan buku "Grundlagen der Geometrie" (Dasar-dasar Geometri). Buku itu sepenuhnya merekonstruksi sistem aksioma geometri [[Euklid](https://kenji.blog/id/p/euclid/)es](https://kenji.blog/p/euclid/), yang telah menjadi fondasi absolut geometri selama lebih dari 2000 tahun, dari sudut pandang modern.
 
-"Elemen" [[Euklid](https://kenji.blog/p/euclid/)es](https://kenji.blog/p/euclid/) berisi beberapa asumsi dan elemen implisit yang bergantung pada intuisi visual. Hilbert menyingkirkan hal-hal ini dengan cermat, menghadirkan sistem aksioma yang didefinisikan secara ketat yang terdiri dari lima kelompok: aksioma insiden, urutan, kekongruenan, kesejajaran, dan kontinuitas.
+"Elemen" [[Euklid](https://kenji.blog/id/p/euclid/)es](https://kenji.blog/p/euclid/) berisi beberapa asumsi dan elemen implisit yang bergantung pada intuisi visual. Hilbert menyingkirkan hal-hal ini dengan cermat, menghadirkan sistem aksioma yang didefinisikan secara ketat yang terdiri dari lima kelompok: aksioma insiden, urutan, kekongruenan, kesejajaran, dan kontinuitas.
 
 Ia terkenal menyatakan: **"Seseorang harus selalu bisa mengatakan — alih-alih titik, garis lurus, dan bidang — meja, kursi, dan gelas bir."** Ini adalah deklarasi **formalisme** yang bergema, melucuti geometri dari realitas intuitif atau fisik apa pun mengenai apa benda itu, dan menetapkan hanya hubungan logis antar benda sebagai fondasi matematika. Pendekatan inovatif ini menjadi gaya standar metode aksiomatik dalam matematika modern.
 
 ## 6. Undangan ke Universitas Göttingen dan Fajar Zaman Keemasan
 
-Pada tahun 1895, berkat rekomendasi kuat dari Felix Klein, tokoh kelas berat dalam matematika Jerman, Hilbert diangkat menjadi profesor di Universitas Göttingen. Göttingen sudah terkenal sebagai tanah suci bagi matematika, pernah menjadi rumah bagi [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) dan [Bernhard Riemann](https://kenji.blog/p/riemann/).
+Pada tahun 1895, berkat rekomendasi kuat dari Felix Klein, tokoh kelas berat dalam matematika Jerman, Hilbert diangkat menjadi profesor di Universitas Göttingen. Göttingen sudah terkenal sebagai tanah suci bagi matematika, pernah menjadi rumah bagi [Carl Friedrich Gauss](https://kenji.blog/id/p/gauss/) dan [Bernhard Riemann](https://kenji.blog/id/p/riemann/).
 
-Dengan kedatangan Hilbert, Göttingen dengan mantap membangun kembali dirinya sebagai pusat matematika utama dunia. Kuliahnya selalu jelas dan penuh gairah akan ide-ide matematika baru, menarik para mahasiswa dan peneliti brilian dari seluruh dunia. Banyak superstar yang nantinya akan memimpin matematika abad ke-20, seperti [Emmy Noether](https://kenji.blog/p/noether/), Hermann Weyl, Richard Courant, dan John von Neumann, dibimbing oleh Hilbert.
+Dengan kedatangan Hilbert, Göttingen dengan mantap membangun kembali dirinya sebagai pusat matematika utama dunia. Kuliahnya selalu jelas dan penuh gairah akan ide-ide matematika baru, menarik para mahasiswa dan peneliti brilian dari seluruh dunia. Banyak superstar yang nantinya akan memimpin matematika abad ke-20, seperti [Emmy Noether](https://kenji.blog/id/p/noether/), Hermann Weyl, Richard Courant, dan John von Neumann, dibimbing oleh Hilbert.
 
-Anekdot mengenai [Emmy Noether](https://kenji.blog/p/noether/) sangat terkenal. Pada saat itu, peraturan universitas melarang wanita memegang posisi akademis. Hilbert, yang sangat menghargai bakat luar biasanya dalam aljabar, memprotes keras pada rapat fakultas, menyatakan: **"Senat universitas bukanlah pemandian, jadi gender tidak masalah!"** Pernyataan ini dengan jelas menggambarkan karakternya yang progresif, meritokratis, dan tanpa prasangka.
+Anekdot mengenai [Emmy Noether](https://kenji.blog/id/p/noether/) sangat terkenal. Pada saat itu, peraturan universitas melarang wanita memegang posisi akademis. Hilbert, yang sangat menghargai bakat luar biasanya dalam aljabar, memprotes keras pada rapat fakultas, menyatakan: **"Senat universitas bukanlah pemandian, jadi gender tidak masalah!"** Pernyataan ini dengan jelas menggambarkan karakternya yang progresif, meritokratis, dan tanpa prasangka.
 
 ## 7. Kongres Internasional Matematikawan Paris 1900: 23 Masalah Hilbert
 
@@ -84,7 +84,7 @@ Masalah-masalah Hilbert tetap menjadi penunjuk jalan penting bagi matematikawan 
 
 Memasuki tahun 1900-an, minat Hilbert bergeser dari aljabar dan geometri ke analisis. Ia mempelajari secara mendalam teori persamaan integral dari matematikawan Swedia Ivar Fredholm dan membangun teori spektral dalam ruang berdimensi tak terhingga.
 
-Melalui proses ini, ia memperkenalkan konsep **ruang Hilbert**, generalisasi ruang [[Euklid](https://kenji.blog/p/euclid/)es](https://kenji.blog/p/euclid/) berdimensi terhingga ke dalam dimensi tak terhingga. Hasil kali dalam $\langle x, y \rangle$ dalam ruang hasil kali dalam $\mathcal{H}$ didefinisikan secara ketat sebagai ruang yang memiliki linearitas dan simetri Hermitian, serta memenuhi kelengkapan (semua barisan Cauchy konvergen). Diungkapkan secara matematis, hasil kali dalam memenuhi:
+Melalui proses ini, ia memperkenalkan konsep **ruang Hilbert**, generalisasi ruang [[Euklid](https://kenji.blog/id/p/euclid/)es](https://kenji.blog/p/euclid/) berdimensi terhingga ke dalam dimensi tak terhingga. Hasil kali dalam $\langle x, y \rangle$ dalam ruang hasil kali dalam $\mathcal{H}$ didefinisikan secara ketat sebagai ruang yang memiliki linearitas dan simetri Hermitian, serta memenuhi kelengkapan (semua barisan Cauchy konvergen). Diungkapkan secara matematis, hasil kali dalam memenuhi:
 
 $$
 \langle a x_1 + b x_2, y \rangle = a \langle x_1, y \rangle + b \langle x_2, y \rangle
@@ -126,17 +126,17 @@ graph LR
 
 Program ini memicu perdebatan sengit (krisis fondasional) dengan para intuisionis seperti L. E. J. Brouwer. Namun, Hilbert dengan berani mendorong programnya maju, menyatakan, "Tidak ada yang akan mengusir kita dari surga yang telah diciptakan Cantor untuk kita."
 
-## 11. Guncangan [Teorema Ketidaklengkapan Gödel](https://kenji.blog/p/godels-incompleteness-theorems/) dan Transformasi Program
+## 11. Guncangan [Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/) dan Transformasi Program
 
-Namun, pada tahun 1931, ahli logika muda Austria [Kurt Gödel](https://kenji.blog/p/godel/) menerbitkan **teorema ketidaklengkapan** miliknya, memberikan pukulan telak pada Program Hilbert.
+Namun, pada tahun 1931, ahli logika muda Austria [Kurt Gödel](https://kenji.blog/id/p/godel/) menerbitkan **teorema ketidaklengkapan** miliknya, memberikan pukulan telak pada Program Hilbert.
 
 Gödel secara matematis dan sempurna membuktikan bahwa dalam sistem formal apa pun yang cukup kuat yang mengandung aksioma aritmatika, akan selalu ada proposisi yang "benar di dalam sistem tetapi tidak dapat dibuktikan atau disangkal" (Teorema Ketidaklengkapan Pertama), dan bahwa "mustahil untuk membuktikan konsistensi sistem di dalam sistem itu sendiri" (Teorema Ketidaklengkapan Kedua).
 
-Hal ini menunjukkan bahwa pembangunan "sistem matematika sempurna di mana semuanya dapat dibuktikan, termasuk konsistensinya sendiri", yang telah diimpikan Hilbert, adalah mustahil. Meskipun Hilbert dilaporkan awalnya sangat kecewa dan marah dengan hasil ini, metode metamatematika dan logika formal yang ketat yang dikembangkan selama pencarian Program Hilbert pada akhirnya mengarah langsung ke pendirian ilmu komputer dan ilmu komputer teoretis oleh [Alan Turing](https://kenji.blog/p/turing/).
+Hal ini menunjukkan bahwa pembangunan "sistem matematika sempurna di mana semuanya dapat dibuktikan, termasuk konsistensinya sendiri", yang telah diimpikan Hilbert, adalah mustahil. Meskipun Hilbert dilaporkan awalnya sangat kecewa dan marah dengan hasil ini, metode metamatematika dan logika formal yang ketat yang dikembangkan selama pencarian Program Hilbert pada akhirnya mengarah langsung ke pendirian ilmu komputer dan ilmu komputer teoretis oleh [Alan Turing](https://kenji.blog/id/p/turing/).
 
 ## 12. Tahun-tahun Terakhir di Göttingen: Bangkitnya Nazi dan Berakhirnya Tempat Suci Matematika
 
-Pada tahun 1930-an, Partai Nazi, yang dipimpin oleh Adolf Hitler, merebut kekuasaan di Jerman. "Undang-Undang Pemulihan Layanan Sipil Profesional" diberlakukan pada tahun 1933, yang mengakibatkan pengusiran kejam terhadap banyak matematikawan Yahudi terkemuka dan cendekiawan pembangkang di Universitas Göttingen, termasuk [Emmy Noether](https://kenji.blog/p/noether/), Hermann Weyl, Richard Courant, dan Max Born.
+Pada tahun 1930-an, Partai Nazi, yang dipimpin oleh Adolf Hitler, merebut kekuasaan di Jerman. "Undang-Undang Pemulihan Layanan Sipil Profesional" diberlakukan pada tahun 1933, yang mengakibatkan pengusiran kejam terhadap banyak matematikawan Yahudi terkemuka dan cendekiawan pembangkang di Universitas Göttingen, termasuk [Emmy Noether](https://kenji.blog/id/p/noether/), Hermann Weyl, Richard Courant, dan Max Born.
 
 Göttingen, yang pernah menjadi tempat suci matematika yang semarak di mana bakat-bakat dari seluruh dunia berkumpul, runtuh hampir dalam semalam. Suatu kali, di sebuah jamuan makan, Menteri Pendidikan Nazi Bernhard Rust bertanya kepada Hilbert, "Bagaimana matematika di institut Anda sekarang karena telah dibebaskan dari pengaruh Yahudi?" Hilbert menjawab dengan marah dan sedih: "Institut Matematika? Benar-benar tidak ada lagi."
 
@@ -144,7 +144,7 @@ Pada 14 Februari 1943, di tengah-tengah Perang Dunia II, Hilbert meninggal dalam
 
 ## 13. Kesimpulan: "Kita Harus Tahu, Kita Akan Tahu"
 
-Bahkan setelah [David Hilbert](https://kenji.blog/p/hilbert/) meninggal dunia, warisan matematika yang ditinggalkannya tidak pernah pudar. Lintasan pemikirannya tertulis di setiap sudut matematika modern.
+Bahkan setelah [David Hilbert](https://kenji.blog/id/p/hilbert/) meninggal dunia, warisan matematika yang ditinggalkannya tidak pernah pudar. Lintasan pemikirannya tertulis di setiap sudut matematika modern.
 
 Di batu nisannya terukir kata-kata terkenal yang mengakhiri pidato pensiunnya di kampung halamannya di Königsberg pada tahun 1930, menunjukkan keyakinannya yang mutlak dan tak tergoyahkan pada nalar manusia dan penyelidikan ilmiah. Ini adalah sanggahan kuat terhadap agnostisisme pesimis pada masa itu, yang diringkas dengan frasa "ignoramus et ignorabimus" (kita tidak tahu dan kita tidak akan tahu).
 
@@ -152,7 +152,7 @@ Di batu nisannya terukir kata-kata terkenal yang mengakhiri pidato pensiunnya di
 > **Wir werden wissen.**
 > (Kita harus tahu. Kita akan tahu.)
 
-[David Hilbert](https://kenji.blog/p/hilbert/) sangat percaya pada kemungkinan tak terbatas dari matematika dan terus memelopori batas-batasnya sepanjang hidupnya. Semangatnya yang tangguh, filosofinya, dan pencapaiannya yang cemerlang telah menjadi darah daging ahli matematika modern, menghembuskan kehidupan ke setiap sudut matematika hari ini dan terus menginspirasi penjelajah masa depan.
+[David Hilbert](https://kenji.blog/id/p/hilbert/) sangat percaya pada kemungkinan tak terbatas dari matematika dan terus memelopori batas-batasnya sepanjang hidupnya. Semangatnya yang tangguh, filosofinya, dan pencapaiannya yang cemerlang telah menjadi darah daging ahli matematika modern, menghembuskan kehidupan ke setiap sudut matematika hari ini dan terus menginspirasi penjelajah masa depan.
 
 ## Kronologi
 

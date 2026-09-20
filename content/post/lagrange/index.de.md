@@ -17,7 +17,7 @@ tags:
 
 ## Einleitung
 
-In der Geschichte der Mathematik und Physik war das 18. Jahrhundert eine Ära, in der große Genies wie Sterne leuchteten. Unter ihnen ist einer der größten Mathematiker, der oft neben [Leonhard Euler](https://kenji.blog/p/euler/) erwähnt wird, **[Joseph-Louis Lagrange](https://kenji.blog/p/lagrange/)** (1736–1813). Er ist als Begründer der „analytischen Mechanik“ bekannt, da er die Variationsrechnung etablierte und die Mechanik aus der geometrischen Intuition in die reine mathematische Analyse erhob.
+In der Geschichte der Mathematik und Physik war das 18. Jahrhundert eine Ära, in der große Genies wie Sterne leuchteten. Unter ihnen ist einer der größten Mathematiker, der oft neben [Leonhard Euler](https://kenji.blog/de/p/euler/) erwähnt wird, **[Joseph-Louis Lagrange](https://kenji.blog/de/p/lagrange/)** (1736–1813). Er ist als Begründer der „analytischen Mechanik“ bekannt, da er die Variationsrechnung etablierte und die Mechanik aus der geometrischen Intuition in die reine mathematische Analyse erhob.
 
 In diesem Artikel werden wir uns mit dem turbulenten Leben von Lagrange, der eine bescheidene und nachdenkliche Persönlichkeit besaß, und seinen monumentalen mathematischen und physikalischen Errungenschaften befassen, die das Fundament der modernen Wissenschaft und Technologie bilden.
 
@@ -92,4 +92,4 @@ Das Konzept der „Lagrange-Funktion“ (Lagrangian), das er hinterließ, ist zu
 
 ## Fazit
 
-[Joseph-Louis Lagrange](https://kenji.blog/p/lagrange/) überlebte das turbulente 18. Jahrhundert, doch sein Geist befand sich stets in der Welt der reinen mathematischen Wahrheit. Seine Errungenschaften sind nicht nur Entdeckungen der Vergangenheit; sie atmen noch heute an vorderster Front von Physik und Mathematik. Sein Vermächtnis, der Glaube an die Schönheit mathematischer Formeln und die Universalität der Logik, wird weiterhin das Streben der Menschheit nach Wissen leiten.
+[Joseph-Louis Lagrange](https://kenji.blog/de/p/lagrange/) überlebte das turbulente 18. Jahrhundert, doch sein Geist befand sich stets in der Welt der reinen mathematischen Wahrheit. Seine Errungenschaften sind nicht nur Entdeckungen der Vergangenheit; sie atmen noch heute an vorderster Front von Physik und Mathematik. Sein Vermächtnis, der Glaube an die Schönheit mathematischer Formeln und die Universalität der Logik, wird weiterhin das Streben der Menschheit nach Wissen leiten.

@@ -16,7 +16,7 @@ Beim Programmieren macht man sich oft Sorgen: „Könnte dieses Programm irgendw
 
 In der Informatik ist jedoch mathematisch bewiesen, dass ein solches Traum-Tool **„absolut unmöglich zu erschaffen“** ist. Dies ist das berühmte **„Halteproblem“** (Halting Problem).
 
-In diesem Artikel erklären wir dieses Problem, das 1936 von [Alan Turing](https://kenji.blog/p/turing/) bewiesen wurde, verständlich anhand von intuitiven Beispielen, mathematischen Formeln (KaTeX) und Diagrammen (Mermaid).
+In diesem Artikel erklären wir dieses Problem, das 1936 von [Alan Turing](https://kenji.blog/de/p/turing/) bewiesen wurde, verständlich anhand von intuitiven Beispielen, mathematischen Formeln (KaTeX) und Diagrammen (Mermaid).
 
 ## Was ist das Halteproblem?
 
@@ -153,15 +153,15 @@ Wie das Diagramm zeigt, entsteht in dem Moment, in dem $D$ sich selbst als Einga
 
 ## Die Geschichte des Computers und die Turingmaschine
 
-Als [Alan Turing](https://kenji.blog/p/turing/) dieses Problem 1936 aufwarf und bewies, gab es noch keine elektronischen Rechenmaschinen (Computer) wie heute. Um die Frage „Was ist Berechnung?“ mathematisch exakt zu definieren, erfand er eine fiktive Maschine, die **„Turingmaschine“** (Turing Machine).
+Als [Alan Turing](https://kenji.blog/de/p/turing/) dieses Problem 1936 aufwarf und bewies, gab es noch keine elektronischen Rechenmaschinen (Computer) wie heute. Um die Frage „Was ist Berechnung?“ mathematisch exakt zu definieren, erfand er eine fiktive Maschine, die **„Turingmaschine“** (Turing Machine).
 
 Eine Turingmaschine besteht aus einem unendlich langen Band, einem Schreib-Lese-Kopf, der Informationen auf dem Band liest und schreibt, und einer Zustandsübergangstabelle, die den Zustand der Maschine verwaltet. Es ist bekannt, dass selbst die komplexesten modernen Programme theoretisch auf diese Turingmaschine reduziert werden können. Dies wird als **„Church-Turing-These“** (Church-Turing Thesis) bezeichnet.
 
 Turing nutzte dieses einfache Modell, um zu versuchen, eine Grenze zwischen „berechenbaren Problemen“ und „unberechenbaren Problemen“ zu ziehen. Das Halteproblem, als Paradebeispiel für ein unentscheidbares Problem, war das Resultat dieser Entdeckung.
 
-## Tiefe Verbindung zu [Gödels Unvollständigkeitssätze](https://kenji.blog/p/godels-incompleteness-theorems/)n
+## Tiefe Verbindung zu [Gödels Unvollständigkeitssätze](https://kenji.blog/de/p/godels-incompleteness-theorems/)n
 
-Das „Paradoxon der Selbstreferenz“, das dem Beweis des Halteproblems zugrunde liegt, hat eine tiefe Verbindung zu den **„Unvollständigkeitssätzen“** (Incompleteness Theorems), die [Kurt Gödel](https://kenji.blog/p/godel/) kurz vor Turing im Jahr 1931 veröffentlichte.
+Das „Paradoxon der Selbstreferenz“, das dem Beweis des Halteproblems zugrunde liegt, hat eine tiefe Verbindung zu den **„Unvollständigkeitssätzen“** (Incompleteness Theorems), die [Kurt Gödel](https://kenji.blog/de/p/godel/) kurz vor Turing im Jahr 1931 veröffentlichte.
 
 Gödels Erster Unvollständigkeitssatz besagt: „In jedem hinreichend starken Axiomensystem, das die Zahlentheorie umfasst, gibt es immer wahre Aussagen, die weder bewiesen noch widerlegt werden können.“ Um dieses Theorem zu beweisen, konstruierte Gödel mathematisch eine selbstreferenzielle Aussage der Form „Diese Aussage ist nicht beweisbar“.
 

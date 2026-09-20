@@ -14,13 +14,13 @@ tags:
 
 ## 머리말
 
-위상수학(토폴로지)이라는 수학 분야에는 직관적으로 재미있고 강력한 정리가 많이 존재합니다. 그중에서도 특히 유명한 것이 **털 난 공 정리** ([Hairy Ball Theorem](https://kenji.blog/p/hairy-ball-theorem/))입니다. 이 정리는 "털이 난 공을, 가마를 하나도 만들지 않고 예쁘게 빗질할 수는 없다"라는, 매우 시각적이고 알기 쉬운 말로 표현됩니다.
+위상수학(토폴로지)이라는 수학 분야에는 직관적으로 재미있고 강력한 정리가 많이 존재합니다. 그중에서도 특히 유명한 것이 **털 난 공 정리** ([Hairy Ball Theorem](https://kenji.blog/ko/p/hairy-ball-theorem/))입니다. 이 정리는 "털이 난 공을, 가마를 하나도 만들지 않고 예쁘게 빗질할 수는 없다"라는, 매우 시각적이고 알기 쉬운 말로 표현됩니다.
 
 하지만 그 이면에는 깊은 수학적 의미가 숨겨져 있으며, 우리가 사는 이 지구의 기상이나 컴퓨터 그래픽스, 나아가 물리학의 기본 법칙에까지 영향을 미치고 있습니다. 본 기사에서는 이 정리의 직관적인 의미부터 수학적 정식화, 그리고 놀라운 응용 사례까지 자세히 해설해 나갑니다.
 
 ## 털 난 공 정리란 무엇인가?
 
-털 난 공 정리는 1885년에 [앙리 푸앵카레](https://kenji.blog/p/poincare/)([Henri Poincaré](https://kenji.blog/p/poincare/))에 의해 처음 언급되었고, 1912년에 라위천 에흐베르튀스 얀 브라우어르(Luitzen Egbertus Jan Brouwer)에 의해 엄밀하게 증명되었습니다.
+털 난 공 정리는 1885년에 [앙리 푸앵카레](https://kenji.blog/ko/p/poincare/)([Henri Poincaré](https://kenji.blog/ko/p/poincare/))에 의해 처음 언급되었고, 1912년에 라위천 에흐베르튀스 얀 브라우어르(Luitzen Egbertus Jan Brouwer)에 의해 엄밀하게 증명되었습니다.
 
 ### 직관적인 이해
 
@@ -60,7 +60,7 @@ $$
 
 이 정리의 이면에 있는 것은 위상수학의 불변량인 **오일러 지표** (Euler characteristic)입니다.
 
-다면체의 오일러 지표 $\chi$ 는 꼭짓점의 수($V$), 모서리의 수($E$), 면의 수($F$)를 사용하여 다음과 같은 유명한 공식([오일러의 다면체 정리](https://kenji.blog/p/eulers-polyhedron-formula/))으로 계산됩니다.
+다면체의 오일러 지표 $\chi$ 는 꼭짓점의 수($V$), 모서리의 수($E$), 면의 수($F$)를 사용하여 다음과 같은 유명한 공식([오일러의 다면체 정리](https://kenji.blog/ko/p/eulers-polyhedron-formula/))으로 계산됩니다.
 
 $$
 \chi = V - E + F

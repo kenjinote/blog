@@ -15,7 +15,7 @@ tags:
 
 ## Introduction: One of the Most Beautiful Theorems in Mathematics
 
-In the world of mathematics, there are a few magical formulas that reveal astonishing connections between seemingly unrelated phenomena. Among them, **Euler's polyhedron formula**, discovered by [Leonhard Euler](https://kenji.blog/p/euler/), stands out for its sheer simplicity and universality.
+In the world of mathematics, there are a few magical formulas that reveal astonishing connections between seemingly unrelated phenomena. Among them, **Euler's polyhedron formula**, discovered by [Leonhard Euler](https://kenji.blog/en/p/euler/), stands out for its sheer simplicity and universality.
 
 The formula is simply this:
 
@@ -46,7 +46,7 @@ Indeed, no matter which regular polyhedron we choose, the result is splendidly *
 
 ## An Intuitive Proof of Euler's Formula
 
-Why does it always equal **$2$**? Let's look at an intuitive proof by the French mathematician [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) (1811). This proof takes a groundbreaking approach by transforming a 3D solid into a "graph on a 2D plane."
+Why does it always equal **$2$**? Let's look at an intuitive proof by the French mathematician [Augustin-Louis Cauchy](https://kenji.blog/en/p/cauchy/) (1811). This proof takes a groundbreaking approach by transforming a 3D solid into a "graph on a 2D plane."
 
 ### Step 1: Flattening the Solid onto a Plane
 
@@ -90,7 +90,7 @@ flowchart TD
 
 ## Descartes' Secret Manuscript: Another Tale of Discovery
 
-Actually, about a century before Euler published this theorem, the French philosopher and mathematician [René Descartes](https://kenji.blog/p/descartes/) had reached essentially the same theorem.
+Actually, about a century before Euler published this theorem, the French philosopher and mathematician [René Descartes](https://kenji.blog/en/p/descartes/) had reached essentially the same theorem.
 Descartes focused on the concept of "angular defect" at the vertices of a polyhedron.
 The sum of the angles meeting at a single vertex is $360^\circ$ on a flat plane, but at the vertex of a solid, it is always less than $360^\circ$. This shortfall from $360^\circ$ is called the "angular defect."
 
@@ -135,7 +135,7 @@ flowchart LR
 
 ## The Euler-Poincaré Formula: A Leap into Multi-Dimensions
 
-From the late 19th century into the 20th century, mathematicians, including [Henri Poincaré](https://kenji.blog/p/poincare/), extended Euler's theorem into even higher-dimensional spaces. This became the **Euler-Poincaré formula**.
+From the late 19th century into the 20th century, mathematicians, including [Henri Poincaré](https://kenji.blog/en/p/poincare/), extended Euler's theorem into even higher-dimensional spaces. This became the **Euler-Poincaré formula**.
 By generalizing the elements of a polyhedron, they considered the alternating sum of the number of elements (simplices) in an $n$-dimensional shape.
 
 $$ \chi = k_0 - k_1 + k_2 - k_3 + \dots + (-1)^n k_n $$
@@ -156,7 +156,7 @@ The concepts of topology, which began with the simple equation $V - E + F = 2$, 
 The "fullerene" is a molecule in which carbon atoms bond in a soccer-ball shape. Chemists used Euler's theorem to theoretically prove the fact that "you cannot create a closed spherical molecule without 12 pentagons."
 
 ### 2. Network Theory and Graph Theory
-Modern society is filled with "networks," such as internet routing and transportation network design. Euler's formula serves as the foundation for determining whether these networks can be drawn on a plane without intersecting. It is also indispensable in proving the "[Four Color Theorem](https://kenji.blog/p/four-color-theorem/)."
+Modern society is filled with "networks," such as internet routing and transportation network design. Euler's formula serves as the foundation for determining whether these networks can be drawn on a plane without intersecting. It is also indispensable in proving the "[Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/)."
 
 ### 3. Topological Data Analysis (TDA)
 Recently gaining attention in AI and machine learning is a method of analyzing the "shape" of big data using topological techniques. By calculating the Euler characteristic from complex high-dimensional data, researchers attempt to uncover critical hidden patterns.

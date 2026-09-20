@@ -60,7 +60,7 @@ $$ B' = B U $$
 SVP 是格子理論中最經典且著名的問題。
 
 **定義（SVP）：**
-給定任意格子基底 $B$，在該格子 $\mathcal{L}(B)$ 所屬的非零向量中，找出[歐幾里得](https://kenji.blog/p/euclid/)範數（長度）最小的向量 $\mathbf{v}$。
+給定任意格子基底 $B$，在該格子 $\mathcal{L}(B)$ 所屬的非零向量中，找出[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)範數（長度）最小的向量 $\mathbf{v}$。
 
 用數學公式表示，就是求出使得 $\min_{\mathbf{v} \in \mathcal{L}(B) \setminus \{\mathbf{0}\}} \| \mathbf{v} \|$ 成立的 $\mathbf{v}$ 的問題。這個最小的長度記為 $\lambda_1(\mathcal{L})$，被稱為「格子的第一連續最小值（First successive minimum）」。
 

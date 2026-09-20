@@ -9,7 +9,7 @@ categories: ["tech-career", "ai", "software-engineering"]
 tags: ["Career", "AI", "Future", "Programming"]
 ---
 
-# [How Should Programmers Survive in the AI Era?](https://kenji.blog/p/how-programmers-survive-in-ai-era/) The End of Coding and the Dawn of a New Engineering
+# [How Should Programmers Survive in the AI Era?](https://kenji.blog/en/p/how-programmers-survive-in-ai-era/) The End of Coding and the Dawn of a New Engineering
 
 As of 2026, the field of software development is undergoing a period of unprecedented and dramatic change. Until just a few years ago, the concept of "AI writing code" was limited to the role of an "auxiliary tool" for programmers, such as generating boilerplate code or auto-completing functions at best. However, due to the astonishing evolution of Large Language Models (LLMs), the situation has been fundamentally overturned. Modern AI is not just a "smart typewriter," but has transformed into an "autonomous junior engineer" capable of autonomously assembling an entire system in an instant, from front-end to back-end logic, database schema design, and even building CI/CD pipelines, given a requirements definition document.
 

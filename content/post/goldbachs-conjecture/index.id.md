@@ -11,9 +11,9 @@ tags:
   - "Konjektur Goldbach"
 ---
 
-## Apa itu [Konjektur Goldbach](https://kenji.blog/p/goldbachs-conjecture/)?
+## Apa itu [Konjektur Goldbach](https://kenji.blog/id/p/goldbachs-conjecture/)?
 
-**[Konjektur Goldbach](https://kenji.blog/p/goldbachs-conjecture/)** adalah salah satu masalah yang belum terpecahkan paling tua dan paling terkenal dalam teori bilangan. Pernyataannya sangat sederhana sehingga bahkan seorang siswa sekolah dasar pun dapat memahaminya.
+**[Konjektur Goldbach](https://kenji.blog/id/p/goldbachs-conjecture/)** adalah salah satu masalah yang belum terpecahkan paling tua dan paling terkenal dalam teori bilangan. Pernyataannya sangat sederhana sehingga bahkan seorang siswa sekolah dasar pun dapat memahaminya.
 
 > "Setiap bilangan bulat genap yang lebih besar dari 2 dapat dinyatakan sebagai jumlah dari dua bilangan prima."
 
@@ -29,7 +29,7 @@ Seperti yang Anda lihat, untuk bilangan genap kecil, mereka memang dapat dinyata
 
 ## Latar Belakang Sejarah
 
-Konjektur ini pertama kali disebutkan dalam sebuah surat yang dikirim pada tahun 1742 oleh matematikawan Prusia **Christian Goldbach** kepada matematikawan hebat Swiss **[Leonhard Euler](https://kenji.blog/p/euler/)**.
+Konjektur ini pertama kali disebutkan dalam sebuah surat yang dikirim pada tahun 1742 oleh matematikawan Prusia **Christian Goldbach** kepada matematikawan hebat Swiss **[Leonhard Euler](https://kenji.blog/id/p/euler/)**.
 
 ```mermaid
 graph TD
@@ -51,7 +51,7 @@ Di zaman modern, dengan peningkatan daya komputasi komputer, konjektur ini telah
 
 Namun, dalam dunia matematika, mengonfirmasi sesuatu untuk "jumlah kasus yang sangat besar" tidak merupakan **bukti** yang lengkap. Sangat perlu untuk mendeduksi secara logis bahwa hal ini berlaku untuk semua bilangan genap yang jumlahnya tak terhingga.
 
-## [Konjektur Goldbach](https://kenji.blog/p/goldbachs-conjecture/) Lemah
+## [Konjektur Goldbach](https://kenji.blog/id/p/goldbachs-conjecture/) Lemah
 
 Ada konjektur lain yang terkait dengan konjektur Goldbach, yang dikenal sebagai **konjektur Goldbach lemah**.
 
@@ -63,6 +63,6 @@ Hebatnya, konjektur "lemah" ini **sepenuhnya dibuktikan** oleh Harald Helfgott p
 
 ## Kesimpulan
 
-[Konjektur Goldbach](https://kenji.blog/p/goldbachs-conjecture/) adalah masalah yang melambangkan kedalaman dan misteri matematika. Meskipun penampilannya sederhana, masalah ini telah menolak upaya para jenius selama berabad-abad.
+[Konjektur Goldbach](https://kenji.blog/id/p/goldbachs-conjecture/) adalah masalah yang melambangkan kedalaman dan misteri matematika. Meskipun penampilannya sederhana, masalah ini telah menolak upaya para jenius selama berabad-abad.
 
 Apakah akan tiba harinya ketika konjektur yang indah ini sepenuhnya dibuktikan? Atau akankah terbukti tidak dapat dibuktikan? Masalah matematika yang belum terpecahkan selalu memberi kita romansa yang tak terbatas.

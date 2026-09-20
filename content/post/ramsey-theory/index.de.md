@@ -18,7 +18,7 @@ Stellen wir uns vor, dass sich 6 Personen auf einer Party treffen. Manche kennen
 
 Es heißt nicht „meistens findet sich eine solche Gruppe“. Ganz gleich, wie die Beziehungen beschaffen sind, man findet sie ausnahmslos. Zudem ist die Zahl 6 minimal. Bei 5 Personen ist eine Konstellation möglich, die keine der beiden Dreiergruppen enthält.
 
-Diese kleine Überraschung ist das Tor zur **[Ramsey-Theorie](https://kenji.blog/p/ramsey-theory/)**. Egal wie komplex man eine große Struktur unterteilt: Ist sie nur groß genug, lässt sich eine wohlgeordnete kleine Teilstruktur niemals vollständig vermeiden. Die [Ramsey-Theorie](https://kenji.blog/p/ramsey-theory/) befasst sich genau mit solchen „unvermeidbaren Regelmäßigkeiten“.
+Diese kleine Überraschung ist das Tor zur **[Ramsey-Theorie](https://kenji.blog/de/p/ramsey-theory/)**. Egal wie komplex man eine große Struktur unterteilt: Ist sie nur groß genug, lässt sich eine wohlgeordnete kleine Teilstruktur niemals vollständig vermeiden. Die [Ramsey-Theorie](https://kenji.blog/de/p/ramsey-theory/) befasst sich genau mit solchen „unvermeidbaren Regelmäßigkeiten“.
 
 Das bedeutet jedoch nicht, dass im Chaos beliebig gewünschte Muster entstehen. Erst wenn präzise festgelegt ist, was die Objekte sind, in wie viele Kategorien unterteilt wird und nach welcher Form gesucht wird, entsteht eine fundierte mathematische Aussage. Beginnen wir mit einem anschaulichen Beispiel, für das man lediglich 6 Punkte auf ein Blatt Papier zeichnen muss.
 
@@ -153,7 +153,7 @@ $$
 
 Bei 6 Personen sind es im Durchschnitt $\binom{6}{3} \cdot \frac{1}{4} = 20 \cdot \frac{1}{4} = 5$ Dreiecke. Zwar sind die Dreiecke nicht stochastisch unabhängig, da sie Kanten teilen, doch für die Linearität des Erwartungswerts ist Unabhängigkeit nicht erforderlich.
 
-Allerdings bedeutet ein positiver Erwartungswert keineswegs, dass in jeder einzelnen Färbung ein Dreieck existieren muss. Auch bei 5 Personen liegt der Erwartungswert bei 2,5 Dreiecken, und dennoch gibt es Gegenbeispiele mit genau 0 Dreiecken. „Durchschnitt“ und „Worst Case“ nicht miteinander zu verwechseln, ist eine der zentralen Lehren der [Ramsey-Theorie](https://kenji.blog/p/ramsey-theory/).
+Allerdings bedeutet ein positiver Erwartungswert keineswegs, dass in jeder einzelnen Färbung ein Dreieck existieren muss. Auch bei 5 Personen liegt der Erwartungswert bei 2,5 Dreiecken, und dennoch gibt es Gegenbeispiele mit genau 0 Dreiecken. „Durchschnitt“ und „Worst Case“ nicht miteinander zu verwechseln, ist eine der zentralen Lehren der [Ramsey-Theorie](https://kenji.blog/de/p/ramsey-theory/).
 
 ## 7. Verifikation aller 32.768 Fälle mit Python
 
@@ -254,7 +254,7 @@ Drei Kernpunkte sollten in Erinnerung bleiben:
 - **Die Existenz eines Musters ist nicht gleichbedeutend mit seiner inhaltlichen Bedeutung.** Das bloße Vorhandensein eines monochromatischen Dreiecks oder einer monotonen Teilfolge sagt nichts über die Gesamteigenschaften oder kausale Zusammenhänge der Daten aus.
 - **Jede Garantie erfordert präzise Annahmen und Rahmenbedingungen.** Es muss geklärt sein, ob die Beziehungen symmetrisch sind, ob sich jedes Paar eindeutig in zwei Kategorien einteilen lässt und nach welcher Teilstruktur gesucht wird.
 
-Die Faszination der [Ramsey-Theorie](https://kenji.blog/p/ramsey-theory/) liegt nicht darin, dass ein komplexes Ganzes plötzlich einfach würde. Vielmehr bleibt das Gesamtsystem so chaotisch wie zuvor – und dennoch lassen sich kleine, wohlgeordnete Strukturen niemals vollständig auslöschen. Mit wenigen gezeichneten Linien auf einem Blatt Papier lässt sich dieses fundamentale Prinzip unmittelbar nachvollziehen.
+Die Faszination der [Ramsey-Theorie](https://kenji.blog/de/p/ramsey-theory/) liegt nicht darin, dass ein komplexes Ganzes plötzlich einfach würde. Vielmehr bleibt das Gesamtsystem so chaotisch wie zuvor – und dennoch lassen sich kleine, wohlgeordnete Strukturen niemals vollständig auslöschen. Mit wenigen gezeichneten Linien auf einem Blatt Papier lässt sich dieses fundamentale Prinzip unmittelbar nachvollziehen.
 
 ### Weiterführende Quellen
 

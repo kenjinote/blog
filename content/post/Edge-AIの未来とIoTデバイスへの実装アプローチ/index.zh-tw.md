@@ -9,7 +9,7 @@ categories: ["ai", "iot", "edge-computing"]
 tags: ["Edge AI", "IoT", "ONNX", "NPU"]
 ---
 
-# [Edge AI的未來與IoT裝置的實作方法](https://kenji.blog/p/edge-ai-future-iot-implementation/)
+# [Edge AI的未來與IoT裝置的實作方法](https://kenji.blog/zh-tw/p/edge-ai-future-iot-implementation/)
 
 ## 1. 前言：為什麼現在需要邊緣AI（Edge AI）？
 

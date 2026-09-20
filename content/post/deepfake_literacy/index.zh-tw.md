@@ -54,7 +54,7 @@ flowchart LR
 
 近年來，以超越 GAN 的畫質與穩定性為傲，並成為 Midjourney 與 Stable Diffusion 基礎技術的，就是「擴散模型」。擴散模型由逐漸對資料加入雜訊的「前向擴散過程」與從雜訊中還原原始資料的「反向擴散過程」所組成。
 
-在 **前向擴散過程（Forward Process）** 中，會對乾淨的圖像 $x_0$，在每個時間步長 $t$ 加入高斯雜訊。這個過程以[馬可夫鏈](https://kenji.blog/p/markov-chain/)的數學公式表示如下：
+在 **前向擴散過程（Forward Process）** 中，會對乾淨的圖像 $x_0$，在每個時間步長 $t$ 加入高斯雜訊。這個過程以[馬可夫鏈](https://kenji.blog/zh-tw/p/markov-chain/)的數學公式表示如下：
 
 $$
 q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t \mathbf{I})

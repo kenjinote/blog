@@ -14,17 +14,17 @@ tags:
 
 ## 1. Einleitung
 
-Beim Studium der linearen Algebra begegnet man vielen schönen Sätzen und Formeln. Unter ihnen ist der **[Satz von Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/)** (Cayley-Hamilton theorem) eines der wundersamsten Ergebnisse, das auf den ersten Blick fast wie Magie wirkt.
+Beim Studium der linearen Algebra begegnet man vielen schönen Sätzen und Formeln. Unter ihnen ist der **[Satz von Cayley-Hamilton](https://kenji.blog/de/p/cayley-hamilton-theorem/)** (Cayley-Hamilton theorem) eines der wundersamsten Ergebnisse, das auf den ersten Blick fast wie Magie wirkt.
 
 Kurz gesagt besagt dieser Satz, dass "jede quadratische Matrix ihre eigene charakteristische Gleichung erfüllt". Die charakteristische Gleichung ist eine algebraische Gleichung, die gelöst wird, um die Eigenwerte einer Matrix zu finden. Der Satz stellt die überraschende Behauptung auf, dass das Einsetzen der Matrix selbst in die Variable dieser Gleichung die Nullmatrix ergibt. Es ist ein faszinierendes Phänomen, dass eine Anordnung von Zahlen – eine Matrix – die Wurzel eines Polynoms ist, das aus ihren eigenen Eigenschaften abgeleitet wurde.
 
-In diesem Artikel werden wir den **[Satz von Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/)** im Detail erklären, beginnend mit einer Wiederholung der Grundbegriffe über seine intuitive Bedeutung und den strengen Beweis bis hin zu praktischen Anwendungen bei der Berechnung von Matrixpotenzen und Inversen, ergänzt durch zahlreiche konkrete Beispiele.
+In diesem Artikel werden wir den **[Satz von Cayley-Hamilton](https://kenji.blog/de/p/cayley-hamilton-theorem/)** im Detail erklären, beginnend mit einer Wiederholung der Grundbegriffe über seine intuitive Bedeutung und den strengen Beweis bis hin zu praktischen Anwendungen bei der Berechnung von Matrixpotenzen und Inversen, ergänzt durch zahlreiche konkrete Beispiele.
 
 ## 2. Stellung und Bedeutung in der linearen Algebra
 
 Die lineare Algebra ist heute eine Grundlagendisziplin für viele Bereiche, von Mathematik und Physik bis hin zu Ingenieurwesen, maschinellem Lernen und Datenwissenschaft. Matrizen sind dabei mächtige Werkzeuge zur Darstellung linearer Abbildungen.
 
-Der **[Satz von Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/)** ist der Schlüssel zu einem tieferen Verständnis der algebraischen Eigenschaften von Matrizen. Er ermöglicht es, Matrixpolynome höheren Grades auf Polynome niedrigeren Grades zu reduzieren, und fungiert als Brücke zwischen unendlichdimensionalen und endlichdimensionalen Räumen. Er taucht häufig in praktischen Situationen auf, etwa bei der Analyse von Steuerbarkeit und Beobachtbarkeit in der Regelungstechnik oder der Berechnung von Operatoren in der Quantenmechanik.
+Der **[Satz von Cayley-Hamilton](https://kenji.blog/de/p/cayley-hamilton-theorem/)** ist der Schlüssel zu einem tieferen Verständnis der algebraischen Eigenschaften von Matrizen. Er ermöglicht es, Matrixpolynome höheren Grades auf Polynome niedrigeren Grades zu reduzieren, und fungiert als Brücke zwischen unendlichdimensionalen und endlichdimensionalen Räumen. Er taucht häufig in praktischen Situationen auf, etwa bei der Analyse von Steuerbarkeit und Beobachtbarkeit in der Regelungstechnik oder der Berechnung von Operatoren in der Quantenmechanik.
 
 ## 3. Wiederholung von charakteristischer Gleichung und Eigenwerten
 
@@ -60,7 +60,7 @@ Hierbei ist bekannt, dass $c_{n-1} = -\text{tr}(A)$ (das Negative der Spur) und 
 
 Nun kommen wir zum Kern des **Satzes von Cayley-Hamilton**. Die Aussage des Satzes ist sehr einfach, aber wirkungsvoll.
 
-> **Satz ([Satz von Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/))**
+> **Satz ([Satz von Cayley-Hamilton](https://kenji.blog/de/p/cayley-hamilton-theorem/))**
 > Für jede quadratische $n \times n$-Matrix $A$ und ihr charakteristisches Polynom $p(\lambda) = \det(\lambda I - A)$ liefert das Einsetzen der Matrix $A$ für die Variable $\lambda$ im Polynom die Nullmatrix $O$. Das heißt,
 > $$ p(A) = A^n + c_{n-1}A^{n-1} + \dots + c_1 A + c_0 I = O $$
 > ist erfüllt.
@@ -101,7 +101,7 @@ $$
 p(\lambda) = \lambda^2 - \text{tr}(A)\lambda + \det(A)
 $$
 
-Der [Satz von Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/) besagt, dass das Einsetzen von $\lambda = A$ die Nullmatrix ergibt, was bedeutet, dass folgende Gleichung gilt:
+Der [Satz von Cayley-Hamilton](https://kenji.blog/de/p/cayley-hamilton-theorem/) besagt, dass das Einsetzen von $\lambda = A$ die Nullmatrix ergibt, was bedeutet, dass folgende Gleichung gilt:
 
 $$
 A^2 - \text{tr}(A)A + \det(A)I = O
@@ -128,7 +128,7 @@ Jede Komponente hebt sich perfekt auf, was tatsächlich die Nullmatrix ergibt!
 
 ## 6. Intuitives Verständnis und häufige Missverständnisse
 
-Wenn Menschen den [Satz von Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/) zum ersten Mal sehen, verfallen sie oft einem **häufigen Missverständnis**.
+Wenn Menschen den [Satz von Cayley-Hamilton](https://kenji.blog/de/p/cayley-hamilton-theorem/) zum ersten Mal sehen, verfallen sie oft einem **häufigen Missverständnis**.
 
 > **Beispiel für einen falschen Beweis:**
 > Das charakteristische Polynom ist $p(\lambda) = \det(\lambda I - A)$.
@@ -215,7 +215,7 @@ $$
 O = A^n + c_{n-1}A^{n-1} + \dots + c_1 A + c_0 I
 $$
 
-Dies ist genau $p(A) = O$, und somit ist der [Satz von Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/) bewiesen.
+Dies ist genau $p(A) = O$, und somit ist der [Satz von Cayley-Hamilton](https://kenji.blog/de/p/cayley-hamilton-theorem/) bewiesen.
 
 ## 8. Anwendung 1: Berechnung von Matrixpotenzen
 
@@ -247,7 +247,7 @@ Auf diese Weise reicht es, den Rest $R(A)$ zu berechnen, um $A^m$ zu erhalten, u
 
 ## 9. Anwendung 2: Berechnung der inversen Matrix
 
-Wenn die inverse Matrix existiert (d. h. $\det(A) \neq 0$ und somit der konstante Term $c_0 \neq 0$ ist), kann der [Satz von Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/) auch verwendet werden, um die inverse Matrix $A^{-1}$ zu berechnen.
+Wenn die inverse Matrix existiert (d. h. $\det(A) \neq 0$ und somit der konstante Term $c_0 \neq 0$ ist), kann der [Satz von Cayley-Hamilton](https://kenji.blog/de/p/cayley-hamilton-theorem/) auch verwendet werden, um die inverse Matrix $A^{-1}$ zu berechnen.
 
 Wir stellen die Gleichung des Satzes um:
 
@@ -277,11 +277,11 @@ Somit reduziert sich das Problem, eine inverse Matrix zu finden, auf Berechnunge
 
 ## 10. Fazit
 
-In diesem Artikel haben wir den **[Satz von Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/)**, einen der Höhepunkte der linearen Algebra, ausführlich erklärt.
+In diesem Artikel haben wir den **[Satz von Cayley-Hamilton](https://kenji.blog/de/p/cayley-hamilton-theorem/)**, einen der Höhepunkte der linearen Algebra, ausführlich erklärt.
 
 * Die erstaunliche Eigenschaft, dass das Einsetzen einer Matrix in ihr eigenes charakteristisches Polynom $p(\lambda)$ die Nullmatrix ergibt ($p(A) = O$).
 * Das intuitive Verständnis durch Diagonalisierung sowie das häufige Missverständnis einer Verwechslung mit einer skalaren Substitution.
 * Ein eleganter und strenger Beweis, der Identitäten mit der Adjunkten nutzt.
 * Praktische Anwendungen wie die schnelle Berechnung von Matrixpotenzen mittels Polynomdivision und Formeln zur Bestimmung der Inversen.
 
-Der [Satz von Cayley-Hamilton](https://kenji.blog/p/cayley-hamilton-theorem/) besitzt nicht nur eine große theoretische Eleganz, sondern ist auch ein äußerst nützliches Werkzeug bei konkreten Berechnungen. Wenn Sie sich bei der Arbeit mit Matrizen stets bewusst machen, dass dieser Satz im Hintergrund wirkt, wird dies zweifellos Ihr Verständnis der linearen Algebra vertiefen.
+Der [Satz von Cayley-Hamilton](https://kenji.blog/de/p/cayley-hamilton-theorem/) besitzt nicht nur eine große theoretische Eleganz, sondern ist auch ein äußerst nützliches Werkzeug bei konkreten Berechnungen. Wenn Sie sich bei der Arbeit mit Matrizen stets bewusst machen, dass dieser Satz im Hintergrund wirkt, wird dies zweifellos Ihr Verständnis der linearen Algebra vertiefen.

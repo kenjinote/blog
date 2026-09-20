@@ -213,7 +213,7 @@ flowchart LR
     D --> E
 ```
 
-在機器學習的語境下，為了在多元迴歸分析中穩定且高速地計算求出最佳參數的「[最小平方法](https://kenji.blog/p/method-of-least-squares/)」，常常會用到QR分解。直接求解正規方程式（$A^T A \mathbf{x} = A^T \mathbf{b}$）的方法，在實際應用中因為矩陣 $A^T A$ 的條件數容易惡化，對數值誤差極為敏感，因此常規的做法是將其分解為 $A=QR$，然後透過回代求解 $R \mathbf{x} = Q^T \mathbf{b}$。
+在機器學習的語境下，為了在多元迴歸分析中穩定且高速地計算求出最佳參數的「[最小平方法](https://kenji.blog/zh-tw/p/method-of-least-squares/)」，常常會用到QR分解。直接求解正規方程式（$A^T A \mathbf{x} = A^T \mathbf{b}$）的方法，在實際應用中因為矩陣 $A^T A$ 的條件數容易惡化，對數值誤差極為敏感，因此常規的做法是將其分解為 $A=QR$，然後透過回代求解 $R \mathbf{x} = Q^T \mathbf{b}$。
 
 ## 9. 結語：被重整空間的數學之美
 

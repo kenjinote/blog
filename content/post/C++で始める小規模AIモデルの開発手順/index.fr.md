@@ -10,7 +10,7 @@ tags: ["TinyLLaMA", "C++", "ggml", "Local AI", "Development"]
 description: "Nous expliquons en détail la procédure de développement et l'architecture interne pour l'inférence de petits modèles d'IA tels que TinyLLaMA dans un environnement local à l'aide de C++ et ggml. Couvre le mappage mémoire, les opérations tensorielles et l'optimisation SIMD."
 ---
 
-# [Procédure de développement de petits modèles d'IA (TinyLLaMA, etc.) avec C++](https://kenji.blog/p/cpp-small-ai-model-tinyllama-dev-guide/)
+# [Procédure de développement de petits modèles d'IA (TinyLLaMA, etc.) avec C++](https://kenji.blog/fr/p/cpp-small-ai-model-tinyllama-dev-guide/)
 
 Ces dernières années, l'intérêt pour l'exécution locale de grands modèles de langage (LLM) a augmenté rapidement. En particulier, les petits modèles tels que TinyLLaMA (1,1B paramètres) peuvent effectuer des inférences à une vitesse pratique même sur des appareils périphériques aux ressources limitées ou des PC portables standards (y compris les environnements Windows). Bien que le développement utilisant Python et PyTorch soit courant, lorsqu'il s'agit d'atteindre des performances et une efficacité mémoire ultimes, la combinaison du C++ et de « ggml », une bibliothèque de tenseurs basée sur le langage C, est devenue la norme de facto.
 

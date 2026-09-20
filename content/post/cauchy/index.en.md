@@ -16,7 +16,7 @@ tags:
 
 ## Introduction
 
-In the history of mathematics, the 19th century is known as the "Era of Rigor." The French mathematician **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)** (1789-1857) is the one who provided a firm logical foundation for calculus, which had previously been treated intuitively. His name crowns so many theorems and concepts that anyone studying modern mathematics is bound to encounter it.
+In the history of mathematics, the 19th century is known as the "Era of Rigor." The French mathematician **[Augustin-Louis Cauchy](https://kenji.blog/en/p/cauchy/)** (1789-1857) is the one who provided a firm logical foundation for calculus, which had previously been treated intuitively. His name crowns so many theorems and concepts that anyone studying modern mathematics is bound to encounter it.
 
 This article explores the turbulent life of Cauchy, a giant in the mathematical world, and the brilliant mathematical achievements he left behind.
 
@@ -95,6 +95,6 @@ His research subjects were not limited to analysis but extended to a wide range 
 
 ## Conclusion
 
-[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) forged mathematics, which had relied on intuition, into a rigorous academic discipline through the power of logic. The concepts and theorems he created are deeply rooted everywhere in modern mathematics.
+[Augustin-Louis Cauchy](https://kenji.blog/en/p/cauchy/) forged mathematics, which had relied on intuition, into a rigorous academic discipline through the power of logic. The concepts and theorems he created are deeply rooted everywhere in modern mathematics.
 
 Although his life was not smooth, as he chose exile as a martyr to his political beliefs, his passion for pursuing the truth never wavered. The immense intellectual legacy he left behind continues to guide mathematicians and scientists around the world today.

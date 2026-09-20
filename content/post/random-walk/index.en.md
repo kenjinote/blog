@@ -8,7 +8,7 @@ categories: ["Mathematics"]
 tags: ["Random Walk", "Probability Theory", "Diffusion Equation", "Brownian Motion", "Python"]
 ---
 
-# Introduction: What is a [Random Walk](https://kenji.blog/p/random-walk/)?
+# Introduction: What is a [Random Walk](https://kenji.blog/en/p/random-walk/)?
 
 A random walk is a mathematical concept referring to a motion where the next position is determined randomly (probabilistically). It is often referred to as the "drunkard's walk," as it resembles a drunk person staggering left and right with unsteady steps. At first glance, it appears to be a chaotic and unpredictable movement, but as the number of steps increases, surprisingly beautiful and regular mathematical laws emerge.
 
@@ -22,7 +22,7 @@ The term "random walk" was first used academically in a short question submitted
 
 In response to this question, Lord Rayleigh pointed out that the mathematical formulas from his own research on acoustics regarding the "superposition of multiple sound waves" could be applied directly. This became the catalyst for the widespread recognition of random walk theory.
 
-## Strict Mathematical Formulation of the 1D [Random Walk](https://kenji.blog/p/random-walk/)
+## Strict Mathematical Formulation of the 1D [Random Walk](https://kenji.blog/en/p/random-walk/)
 
 ### Definition of Probabilistic Movement
 
@@ -94,7 +94,7 @@ $$
 
 This result is extremely important. An expected value of $0$ means that **on average, the particle remains at the origin**. However, because the variance increases proportionally to $n$, the standard deviation (a measure of dispersion) becomes $\sqrt{n}$. In other words, as the number of steps $n$ increases, the existence range of the particle gradually expands on the order of $\sqrt{n}$. The inefficiency where time advances by $n$ but the movement distance only advances by $\sqrt{n}$ is the most significant characteristic of a random walk.
 
-## Stirling's Approximation and the [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/): Convergence to the Gaussian Distribution
+## Stirling's Approximation and the [Central Limit Theorem](https://kenji.blog/en/p/central-limit-theorem/): Convergence to the Gaussian Distribution
 
 When the number of steps $n$ is very large, calculating the binomial distribution becomes difficult. Here, if we evaluate the binomial coefficient using Stirling's approximation for factorials $n! \approx \sqrt{2\pi n} (n/e)^n$, the discrete probability distribution converges to a continuous **normal distribution** (Gaussian distribution).
 
@@ -104,7 +104,7 @@ $$
 f(x, n) \approx \frac{1}{\sqrt{2\pi n}} \exp\left( - \frac{x^2}{2n} \right)
 $$
 
-This is precisely a direct manifestation of the [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/), which states that the sum of independent and identically distributed random variables converges to a normal distribution.
+This is precisely a direct manifestation of the [Central Limit Theorem](https://kenji.blog/en/p/central-limit-theorem/), which states that the sum of independent and identically distributed random variables converges to a normal distribution.
 
 ## Derivation of the Diffusion Equation (Heat Equation): From Discrete to Continuous
 
@@ -200,7 +200,7 @@ $$
 
 Here, $\mu$ is the drift (expected return), $\sigma$ is the volatility (rate of price fluctuation), and $W_t$ is the Wiener process. Based on this model, the **Black-Scholes equation**, which derives the fair price of an option, was formulated, becoming the foundation of modern financial engineering.
 
-## Simulation of a [Random Walk](https://kenji.blog/p/random-walk/) in Python
+## Simulation of a [Random Walk](https://kenji.blog/en/p/random-walk/) in Python
 
 Understanding deepens not just through theory, but also by actually running a program and visualizing it. Let's perform a simulation of a 2D random walk using Python.
 
@@ -246,6 +246,6 @@ When you run this code, it will draw a trajectory wandering aimlessly on a plane
 
 ## Conclusion
 
-In this article, we started from the simplest "drunkard's walk" and detailed the mathematical background surrounding random walks: convergence to the Gaussian distribution via the [Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/), derivation of the diffusion equation, Einstein's explanation of Brownian motion, Pólya's theorem, and applications to financial engineering.
+In this article, we started from the simplest "drunkard's walk" and detailed the mathematical background surrounding random walks: convergence to the Gaussian distribution via the [Central Limit Theorem](https://kenji.blog/en/p/central-limit-theorem/), derivation of the diffusion equation, Einstein's explanation of Brownian motion, Pólya's theorem, and applications to financial engineering.
 
 The fact that universal laws (differential equations and normal distributions) governing the macroscopic world naturally emerge from the repetition of extremely simple and chaotic rules is one of the most fascinating and inspiring aspects of mathematics and physics. The concept of the random walk will undoubtedly continue to be a powerful weapon for unraveling various unknown phenomena.

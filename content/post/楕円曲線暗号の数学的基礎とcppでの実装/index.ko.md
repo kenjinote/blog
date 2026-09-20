@@ -67,8 +67,8 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 **곱셈 역원(Modular Multiplicative Inverse)** 의 계산은 암호 구현에서 매우 중요합니다. $b \times b^{-1} \equiv 1 \pmod p$를 만족하는 $b^{-1}$을 구하기 위해서는 주로 다음 두 가지 알고리즘이 사용됩니다.
 
-1. **확장 [[유클리드](https://kenji.blog/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/)(Extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm)**: 빠르지만, 구현에 따라 처리 시간이 입력값에 의존하기 때문에 타이밍 공격의 위험이 있습니다.
-2. **[페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))**: $p$가 소수이고 $b \neq 0$일 때, $b^{p-1} \equiv 1 \pmod p$가 성립합니다. 양변을 $b$로 나누면 $b^{p-2} \equiv b^{-1} \pmod p$가 됩니다. 즉, $b$의 $p-2$ 제곱을 계산함으로써 역원을 구할 수 있습니다. 거듭제곱 연산은 상수 시간(Constant-Time)으로 구현하기 쉽기 때문에, 암호 구현에서는 이 방법을 선호합니다.
+1. **확장 [[유클리드](https://kenji.blog/ko/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/)(Extended [[Euclid](https://kenji.blog/ko/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm)**: 빠르지만, 구현에 따라 처리 시간이 입력값에 의존하기 때문에 타이밍 공격의 위험이 있습니다.
+2. **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)([Fermat's Little Theorem](https://kenji.blog/ko/p/fermats-little-theorem/))**: $p$가 소수이고 $b \neq 0$일 때, $b^{p-1} \equiv 1 \pmod p$가 성립합니다. 양변을 $b$로 나누면 $b^{p-2} \equiv b^{-1} \pmod p$가 됩니다. 즉, $b$의 $p-2$ 제곱을 계산함으로써 역원을 구할 수 있습니다. 거듭제곱 연산은 상수 시간(Constant-Time)으로 구현하기 쉽기 때문에, 암호 구현에서는 이 방법을 선호합니다.
 
 ---
 
@@ -278,7 +278,7 @@ Montgomery Ladder의 아름다운 점은 비트가 `0`이든 `1`이든, **"항�
 거대한 정수의 연산에는 `boost::multiprecision::cpp_int`를 사용한다고 가정합니다.
 
 ### 8.1. 모듈로 연산과 역원
-먼저 유한체 상의 연산 헬퍼 함수를 정의합니다. [페르마의 소정리](https://kenji.blog/p/fermats-little-theorem/)에 의한 역원 계산을 구현합니다.
+먼저 유한체 상의 연산 헬퍼 함수를 정의합니다. [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)에 의한 역원 계산을 구현합니다.
 
 ```cpp
 #include <iostream>

@@ -10,11 +10,11 @@ tags: ["Kunihiko Kodaira", "Médaille Fields", "Géométrie Complexe"]
 
 ## 1. Introduction
 
-Le grand mathématicien japonais **[Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/)** (1915-1997) a été le premier médaillé Fields du Japon et a apporté d'immenses contributions à la géométrie algébrique et à la théorie des variétés complexes au XXe siècle. Ses travaux ont profondément influencé non seulement les mathématiques modernes, mais aussi la physique théorique, comme la théorie des cordes. Dans cet article, nous explorons la vie de Kodaira et son monde mathématique rempli d'intuition.
+Le grand mathématicien japonais **[Kunihiko Kodaira](https://kenji.blog/fr/p/kodaira-kunihiko/)** (1915-1997) a été le premier médaillé Fields du Japon et a apporté d'immenses contributions à la géométrie algébrique et à la théorie des variétés complexes au XXe siècle. Ses travaux ont profondément influencé non seulement les mathématiques modernes, mais aussi la physique théorique, comme la théorie des cordes. Dans cet article, nous explorons la vie de Kodaira et son monde mathématique rempli d'intuition.
 
 ## 2. Trajectoire de vie
 
-[Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/) est né à Tokyo en 1915. Il aimait jouer du piano dès son plus jeune âge, et l'on dit que son amour profond pour la musique a plus tard influencé sa pensée mathématique. Sa citation est célèbre : "Comprendre les mathématiques, c'est comme écouter de la musique et la trouver belle."
+[Kunihiko Kodaira](https://kenji.blog/fr/p/kodaira-kunihiko/) est né à Tokyo en 1915. Il aimait jouer du piano dès son plus jeune âge, et l'on dit que son amour profond pour la musique a plus tard influencé sa pensée mathématique. Sa citation est célèbre : "Comprendre les mathématiques, c'est comme écouter de la musique et la trouver belle."
 
 ```mermaid
 flowchart TD
@@ -74,4 +74,4 @@ Après son retour au Japon en 1967, il a enseigné à l'Université de Tokyo et 
 
 ## 5. Conclusion
 
-Les mathématiques laissées par [Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/) sont comme une grande symphonie où l'analyse, l'algèbre et la géométrie s'harmonisent magnifiquement. Son approche intuitive et sa profonde perspicacité continuent de fasciner de nombreux mathématiciens aujourd'hui.
+Les mathématiques laissées par [Kunihiko Kodaira](https://kenji.blog/fr/p/kodaira-kunihiko/) sont comme une grande symphonie où l'analyse, l'algèbre et la géométrie s'harmonisent magnifiquement. Son approche intuitive et sa profonde perspicacité continuent de fasciner de nombreux mathématiciens aujourd'hui.

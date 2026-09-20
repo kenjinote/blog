@@ -10,7 +10,7 @@ tags: ["Gauß", "Mathematikgeschichte", "Genie", "Geometrie", "Zahlentheorie"]
 
 ## 1. Einführung: Der Mann, bekannt als „Fürst der Mathematiker“
 
-Johann [Carl Friedrich Gauß](https://kenji.blog/p/gauss/) (30. April 1777 - 23. Februar 1855) war ein großer deutscher Mathematiker, Astronom und Physiker. Aufgrund seines überwältigenden Intellekts und seiner entscheidenden Beiträge zu einer Vielzahl von Bereichen wird er als **„Fürst der Mathematiker“** (Princeps mathematicorum) gefeiert. Die Leistungen von Gauß umfassen ein extrem breites Spektrum, von tiefgründigen Theorien in der reinen Mathematik bis hin zur angewandten Mathematik, die physikalische Phänomene in der realen Welt beschreibt.
+Johann [Carl Friedrich Gauß](https://kenji.blog/de/p/gauss/) (30. April 1777 - 23. Februar 1855) war ein großer deutscher Mathematiker, Astronom und Physiker. Aufgrund seines überwältigenden Intellekts und seiner entscheidenden Beiträge zu einer Vielzahl von Bereichen wird er als **„Fürst der Mathematiker“** (Princeps mathematicorum) gefeiert. Die Leistungen von Gauß umfassen ein extrem breites Spektrum, von tiefgründigen Theorien in der reinen Mathematik bis hin zur angewandten Mathematik, die physikalische Phänomene in der realen Welt beschreibt.
 
 Die zahlreichen Theoreme und Konzepte, die er hinterließ, bilden das Fundament der modernen Mathematik und Wissenschaft. Die von Gauß entdeckten Gesetze hauchen den Technologien Leben ein, von denen wir täglich profitieren. In diesem Artikel werden wir das Leben dieses beispiellosen Genies chronologisch verfolgen und tief in seine detaillierten Episoden und mathematischen Leistungen eintauchen, um zu sehen, wie er so viele große Taten vollbrachte.
 
@@ -85,13 +85,13 @@ $$
 
 Gauß nannte dieses Gesetz das „Goldene Theorem“ und veröffentlichte im Laufe seines Lebens acht verschiedene Beweise dafür.
 
-## 4. Beiträge zur Astronomie: Bahnberechnung von Ceres und die [Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/)
+## 4. Beiträge zur Astronomie: Bahnberechnung von Ceres und die [Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/)
 
 Das Talent von Gauß beschränkte sich nicht auf die reine Mathematik; er erzielte auch phänomenale Ergebnisse in der Astronomie.
 
 Am 1. Januar 1801 entdeckte der italienische Astronom Giuseppe Piazzi einen neuen Himmelskörper (später Zwergplanet Ceres genannt). Nach einigen Tagen der Beobachtung verschwand der Himmelskörper jedoch hinter der Sonne und geriet aus den Augen. Astronomen der Zeit versuchten, seine weitere Bahn aus nur wenigen Tagen Beobachtungsdaten vorherzusagen, scheiterten jedoch alle.
 
-Hier kam Gauß ins Spiel. Er berechnete die Bahn von Ceres mit einer neuen mathematischen Technik, die er seit einiger Zeit heimlich aufgebaut hatte, der **„[Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/)“**. Die [Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/) ist ein Verfahren zur Schätzung der wahrscheinlichsten Parameter, um die in den Beobachtungsdaten enthaltenen Fehler zu minimieren.
+Hier kam Gauß ins Spiel. Er berechnete die Bahn von Ceres mit einer neuen mathematischen Technik, die er seit einiger Zeit heimlich aufgebaut hatte, der **„[Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/)“**. Die [Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/) ist ein Verfahren zur Schätzung der wahrscheinlichsten Parameter, um die in den Beobachtungsdaten enthaltenen Fehler zu minimieren.
 
 Unter der Annahme, dass der beobachtete Wert $y_i$ und der theoretische Wert $f(x_i, \boldsymbol{\theta})$ ist, finden wir den Parameter $\boldsymbol{\theta}$, der die Summe der quadratischen Fehler $S$ minimiert.
 
@@ -123,11 +123,11 @@ $$
 
 (Wobei $E, F, G$ die Koeffizienten der ersten Fundamentalform und $L, M, N$ die Koeffizienten der zweiten Fundamentalform sind)
 
-Nach diesem Satz ist mathematisch bewiesen, dass es beispielsweise unmöglich ist, eine Kugel (positive Krümmung) ohne Verzerrung aus einem flachen Stück Papier (Krümmung 0) herzustellen, egal wie man es aufrollt. Diese Idee der Gaußschen Differentialgeometrie wurde später von [Bernhard Riemann](https://kenji.blog/p/riemann/) in höhere Dimensionen verallgemeinert (Riemannsche Geometrie) und wurde in späteren Jahren als mathematische Grundlage für Albert Einsteins allgemeine Relativitätstheorie unverzichtbar.
+Nach diesem Satz ist mathematisch bewiesen, dass es beispielsweise unmöglich ist, eine Kugel (positive Krümmung) ohne Verzerrung aus einem flachen Stück Papier (Krümmung 0) herzustellen, egal wie man es aufrollt. Diese Idee der Gaußschen Differentialgeometrie wurde später von [Bernhard Riemann](https://kenji.blog/de/p/riemann/) in höhere Dimensionen verallgemeinert (Riemannsche Geometrie) und wurde in späteren Jahren als mathematische Grundlage für Albert Einsteins allgemeine Relativitätstheorie unverzichtbar.
 
 ## 6. Normalverteilung und Elektromagnetismus
 
-Die **„Normalverteilung“**, die wichtigste Verteilung in der Statistik, wird oft als **„Gauß-Verteilung“** bezeichnet. Bei der Rechtfertigung der oben genannten [Methode der kleinsten Quadrate](https://kenji.blog/p/method-of-least-squares/) ging Gauß davon aus, dass Beobachtungsfehler einer Normalverteilung folgen. Die Wahrscheinlichkeitsdichtefunktion $f(x)$ wird durch folgende Formel ausgedrückt:
+Die **„Normalverteilung“**, die wichtigste Verteilung in der Statistik, wird oft als **„Gauß-Verteilung“** bezeichnet. Bei der Rechtfertigung der oben genannten [Methode der kleinsten Quadrate](https://kenji.blog/de/p/method-of-least-squares/) ging Gauß davon aus, dass Beobachtungsfehler einer Normalverteilung folgen. Die Wahrscheinlichkeitsdichtefunktion $f(x)$ wird durch folgende Formel ausgedrückt:
 
 $$
 f(x) = \frac{1}{\sigma \sqrt{2\pi}} \exp\left( -\frac{1}{2} \left( \frac{x-\mu}{\sigma} \right)^2 \right)
@@ -153,7 +153,7 @@ Die Einheit der magnetischen Flussdichte, das „Gauß (G)“, ist ebenfalls nac
 
 ## 7. Verborgene Einblicke in die nicht-euklidische Geometrie
 
-Eine Episode, die die erstaunliche Weitsicht von Gauß zeigt, ist die Anekdote zur **„Nicht-euklidischen Geometrie“**. Ob [Euklid](https://kenji.blog/p/euclid/)s Parallelenaxiom (durch einen Punkt außerhalb einer Geraden gibt es genau eine parallele Gerade) bewiesen werden könnte, war über 2.000 Jahre lang ein großes mathematisches Rätsel gewesen.
+Eine Episode, die die erstaunliche Weitsicht von Gauß zeigt, ist die Anekdote zur **„Nicht-euklidischen Geometrie“**. Ob [Euklid](https://kenji.blog/de/p/euclid/)s Parallelenaxiom (durch einen Punkt außerhalb einer Geraden gibt es genau eine parallele Gerade) bewiesen werden könnte, war über 2.000 Jahre lang ein großes mathematisches Rätsel gewesen.
 
 In seinen unveröffentlichten Notizen war sich Gauß der Existenz einer neuen Geometrie (hyperbolische Geometrie), in der das Parallelenaxiom nicht gilt, völlig bewusst und hatte deren System aufgebaut. In den konservativen philosophischen Kreisen der Zeit (eine Ära, in der die kantische Philosophie vorherrschend war) befürchtete er jedoch, in unverständliche Kritik und Kontroversen (in Gauß' Worten „das Geschrei der Böotier“) verwickelt zu werden, wenn er eine Theorie veröffentlichte, die die Absolutheit des Raumes leugnet, weshalb er sie zu seinen Lebzeiten nie veröffentlichte.
 
@@ -165,6 +165,6 @@ Gauß war ein Perfektionist, mit dem Motto **„Pauca sed matura“** (Weniges, 
 
 Er war auch Mentor der nächsten Generation. Neben dem bereits erwähnten Riemann erhielten große Mathematiker der nächsten Generation wie Richard Dedekind und Ferdinand Gotthold Max Eisenstein die Anleitung von Gauß.
 
-Am 23. Februar 1855 verstarb [Carl Friedrich Gauß](https://kenji.blog/p/gauss/) in Göttingen im Alter von 77 Jahren. Sein Vermächtnis überschreitet die Grenzen der Mathematik und fließt an der Wurzel aller modernen Wissenschaft und Technologie. Vom reinen abstrakten Denken über die Berechnung von Planetenbahnen bis hin zum physikalischen Phänomen des Elektromagnetismus leuchtet das Licht seines Intellekts auch heute noch.
+Am 23. Februar 1855 verstarb [Carl Friedrich Gauß](https://kenji.blog/de/p/gauss/) in Göttingen im Alter von 77 Jahren. Sein Vermächtnis überschreitet die Grenzen der Mathematik und fließt an der Wurzel aller modernen Wissenschaft und Technologie. Vom reinen abstrakten Denken über die Berechnung von Planetenbahnen bis hin zum physikalischen Phänomen des Elektromagnetismus leuchtet das Licht seines Intellekts auch heute noch.
 
 Wenn wir in den Nachthimmel blicken oder Kommunikation über unsere Smartphones nutzen, sind die großartigen Fußstapfen von Gauß, dem „Fürsten der Mathematiker“, mit Sicherheit dort.

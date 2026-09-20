@@ -17,21 +17,21 @@ tags:
 
 ## 1. Einführung: Die Brücke zwischen dem Lokalen und Globalen
 
-In der Welt der Mathematik, insbesondere in der Zahlentheorie, haben viele Leser vielleicht schon vom "Lokal-Global-Prinzip" gehört. Die zentrale Figur, die dieses tiefgründige Konzept etablierte und die algebraische Zahlentheorie des 20. Jahrhunderts maßgeblich vorantrieb, war der deutsche Mathematiker **[Helmut Hasse](https://kenji.blog/p/hasse/)** (1898–1979). Er erhob die Theorie der p-adischen Zahlen, die von seinem Mentor [Kurt Hensel](https://kenji.blog/p/hensel/) begründet wurde, zu einem mächtigen Werkzeug und schuf entscheidende Rahmenbedingungen für die moderne Mathematik.
+In der Welt der Mathematik, insbesondere in der Zahlentheorie, haben viele Leser vielleicht schon vom "Lokal-Global-Prinzip" gehört. Die zentrale Figur, die dieses tiefgründige Konzept etablierte und die algebraische Zahlentheorie des 20. Jahrhunderts maßgeblich vorantrieb, war der deutsche Mathematiker **[Helmut Hasse](https://kenji.blog/de/p/hasse/)** (1898–1979). Er erhob die Theorie der p-adischen Zahlen, die von seinem Mentor [Kurt Hensel](https://kenji.blog/de/p/hensel/) begründet wurde, zu einem mächtigen Werkzeug und schuf entscheidende Rahmenbedingungen für die moderne Mathematik.
 
 In diesem Artikel werden wir detailliert auf die Episoden aus Hasses turbulentem Leben und seine brillanten mathematischen Errungenschaften eingehen. Das von ihm propagierte **Lokal-Global-Prinzip** (Hasse-Prinzip) ist zu einem unverzichtbaren Konzept in der modernen Mathematik geworden und inspiriert auch heute noch viele Mathematiker.
 
 ## 2. Hintergrund und frühes Leben: Von Kassel zur Marine
 
-[Helmut Hasse](https://kenji.blog/p/hasse/) wurde am 25. August 1898 in der Stadt Kassel im Deutschen Kaiserreich geboren. Sein Vater war Richter, und er wuchs in einem strengen, intellektuellen Umfeld auf. Obwohl Hasse schon in jungen Jahren ein außergewöhnliches Talent für Mathematik zeigte, wurde seine Jugend durch den Ausbruch des Ersten Weltkriegs stark beeinträchtigt.
+[Helmut Hasse](https://kenji.blog/de/p/hasse/) wurde am 25. August 1898 in der Stadt Kassel im Deutschen Kaiserreich geboren. Sein Vater war Richter, und er wuchs in einem strengen, intellektuellen Umfeld auf. Obwohl Hasse schon in jungen Jahren ein außergewöhnliches Talent für Mathematik zeigte, wurde seine Jugend durch den Ausbruch des Ersten Weltkriegs stark beeinträchtigt.
 
 Im Jahr 1915 trat Hasse als Teenager in die Kaiserliche Marine ein und diente auf einem Kriegsschiff. Selbst im harten und vom Krieg gezeichneten Militäralltag kühlte seine Leidenschaft für die Mathematik nie ab. Es wird berichtet, dass er in jedem Heimaturlaub eifrig mathematische Fachbücher las, eigenständig Berechnungen anstellte und so seinen unstillbaren Wissensdurst bewahrte.
 
-## 3. Göttingen und Marburg: Begegnung mit [Kurt Hensel](https://kenji.blog/p/hensel/)
+## 3. Göttingen und Marburg: Begegnung mit [Kurt Hensel](https://kenji.blog/de/p/hensel/)
 
-Nach Kriegsende 1918 schrieb sich Hasse offiziell an der Universität Göttingen ein. Damals war Göttingen das weltweite Zentrum der Mathematik und die Heimat von Giganten wie [David Hilbert](https://kenji.blog/p/hilbert/), Edmund Landau und [Emmy Noether](https://kenji.blog/p/noether/). Dort kam Hasse mit der modernsten Mathematik in Berührung, wodurch seine Talente weiter aufblühen konnten.
+Nach Kriegsende 1918 schrieb sich Hasse offiziell an der Universität Göttingen ein. Damals war Göttingen das weltweite Zentrum der Mathematik und die Heimat von Giganten wie [David Hilbert](https://kenji.blog/de/p/hilbert/), Edmund Landau und [Emmy Noether](https://kenji.blog/de/p/noether/). Dort kam Hasse mit der modernsten Mathematik in Berührung, wodurch seine Talente weiter aufblühen konnten.
 
-Später wechselte Hasse an die Universität Marburg, wo er eine schicksalhafte Begegnung mit **[Kurt Hensel](https://kenji.blog/p/hensel/)** hatte, der sein lebenslanger Mentor werden sollte. Hensel war der Entdecker eines völlig neuen Zahlensystems: der p-adischen Zahlen. Während viele Mathematiker zu dieser Zeit p-adische Zahlen lediglich als mathematische Kuriosität betrachteten, erkannte Hasse sofort das immense Potenzial dieses neuen Konzepts und verfeinerte es zu einer mächtigen Waffe für seine eigene Forschung.
+Später wechselte Hasse an die Universität Marburg, wo er eine schicksalhafte Begegnung mit **[Kurt Hensel](https://kenji.blog/de/p/hensel/)** hatte, der sein lebenslanger Mentor werden sollte. Hensel war der Entdecker eines völlig neuen Zahlensystems: der p-adischen Zahlen. Während viele Mathematiker zu dieser Zeit p-adische Zahlen lediglich als mathematische Kuriosität betrachteten, erkannte Hasse sofort das immense Potenzial dieses neuen Konzepts und verfeinerte es zu einer mächtigen Waffe für seine eigene Forschung.
 
 ## 4. Was sind p-adische Zahlen: Ein neues Zahlensystem
 
@@ -91,7 +91,7 @@ $$
 |N - (q + 1)| \le 2\sqrt{q}
 $$
 
-Diese wunderschöne Ungleichung wurde später von seinem eigenen Schüler [André Weil](https://kenji.blog/p/weil/) auf allgemeine algebraische Kurven erweitert (die Weil-Vermutungen) und schließlich von Pierre Deligne gelöst, was einen entscheidenden Wendepunkt in einer großartigen Geschichte der Mathematik markierte.
+Diese wunderschöne Ungleichung wurde später von seinem eigenen Schüler [André Weil](https://kenji.blog/de/p/weil/) auf allgemeine algebraische Kurven erweitert (die Weil-Vermutungen) und schließlich von Pierre Deligne gelöst, was einen entscheidenden Wendepunkt in einer großartigen Geschichte der Mathematik markierte.
 
 ## 9. Beitrag zur Klassenkörpertheorie: Lokale Klassenkörpertheorie und Artin-Reziprozität
 
@@ -99,9 +99,9 @@ Wenn man über Hasses Errungenschaften spricht, ist sein massiver Beitrag zur **
 
 Beim Beweis des von Emil Artin vorgeschlagenen "Reziprozitätsgesetzes" spielte Hasse eine überaus wichtige Rolle. Durch den Einsatz analytischer Methoden und der Theorie der p-adischen Zahlen gab Hasse Artin entscheidende Ratschläge und trug so maßgeblich zur Vollendung des Beweises bei. Hasse selbst spielte auch eine zentrale Rolle bei der Entwicklung der lokalen Klassenkörpertheorie, indem er die globale Klassenkörpertheorie aus der Perspektive der lokalen Körper rekonstruierte.
 
-## 10. Interaktion mit [Emmy Noether](https://kenji.blog/p/noether/) und Zeitgenossen
+## 10. Interaktion mit [Emmy Noether](https://kenji.blog/de/p/noether/) und Zeitgenossen
 
-Eine besonders bemerkenswerte Figur in Hasses akademischen Interaktionen ist **[Emmy Noether](https://kenji.blog/p/noether/)**, die oft als die Mutter der abstrakten Algebra bezeichnet wird. Hasse identifizierte sich stark mit Noethers abstraktem und strukturellem Ansatz und bezog ihren Rahmen der nichtkommutativen Algebra aktiv in seine eigene zahlentheoretische Forschung ein.
+Eine besonders bemerkenswerte Figur in Hasses akademischen Interaktionen ist **[Emmy Noether](https://kenji.blog/de/p/noether/)**, die oft als die Mutter der abstrakten Algebra bezeichnet wird. Hasse identifizierte sich stark mit Noethers abstraktem und strukturellem Ansatz und bezog ihren Rahmen der nichtkommutativen Algebra aktiv in seine eigene zahlentheoretische Forschung ein.
 
 Als Ergebnis dieser Zusammenarbeit steht der von Hasse, Noether, Richard Brauer und A. A. Albert bewiesene **Satz von Albert-Brauer-Hasse-Noether** als monumentale Errungenschaft in der Theorie der Algebren. Dies ist ebenfalls ein schönes Beispiel für das Lokal-Global-Prinzip.
 
@@ -121,6 +121,6 @@ Hasse steckte seine Leidenschaft auch in die Herausgabe der mathematischen Fachz
 
 ## 14. Fazit: Vermächtnis für die moderne Mathematik
 
-[Helmut Hasse](https://kenji.blog/p/hasse/) schloss sein Leben im Jahr 1979 ab. Dass er die gegensätzlichen Konzepte von "konkret und abstrakt" sowie "lokal und global" stets meisterhaft integrierte, wird durch die zahlreichen Theoreme, die er hinterlassen hat, bewiesen.
+[Helmut Hasse](https://kenji.blog/de/p/hasse/) schloss sein Leben im Jahr 1979 ab. Dass er die gegensätzlichen Konzepte von "konkret und abstrakt" sowie "lokal und global" stets meisterhaft integrierte, wird durch die zahlreichen Theoreme, die er hinterlassen hat, bewiesen.
 
 Sein p-adischer Ansatz und das Lokal-Global-Prinzip haben ihre Anwendungen über ein breites Spektrum von Bereichen ausgedehnt, darunter die moderne arithmetische Geometrie und die Kryptographie. Die Gestalt eines Gelehrten, der stets nach der Wahrheit suchte, während er eine turbulente Ära überlebte, und die wunderschönen mathematischen Theorien, die er webte, werden sicherlich noch lange als Wegweiser für jene dienen, die Mathematik studieren möchten.

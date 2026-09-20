@@ -14,7 +14,7 @@ tags:
   - "árvores"
 ---
 
-## 1. Introdução: O que são os [Números de Catalan](https://kenji.blog/p/catalan-numbers/)?
+## 1. Introdução: O que são os [Números de Catalan](https://kenji.blog/pt/p/catalan-numbers/)?
 
 No mundo da matemática e da ciência da computação, muitas vezes observamos um belo fenômeno onde múltiplos problemas aparentemente distintos compartilham, na verdade, exatamente a mesma estrutura subjacente. Um exemplo proeminente são os **números de Catalan**.
 

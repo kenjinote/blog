@@ -8,7 +8,7 @@ categories: ["matematika", "teori-himpunan"]
 tags: ["Aksioma Pilihan", "Lemma Zorn", "Sistem Aksioma ZFC", "Fondasi Matematika", "Mermaid", "KaTeX"]
 ---
 
-# [Aksioma Pilihan dan Lemma Zorn](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/): Konsep 'Pilihan' yang Mengguncang Fondasi Matematika
+# [Aksioma Pilihan dan Lemma Zorn](https://kenji.blog/id/p/axiom-of-choice-and-zorns-lemma/): Konsep 'Pilihan' yang Mengguncang Fondasi Matematika
 
 Dalam sejarah matematika, tidak ada aksioma yang menimbulkan perdebatan sebanyak **Aksioma Pilihan** (Axiom of Choice), sekaligus menjadi tak terpisahkan dari matematika modern. Dalam artikel ini, kita akan mendalami aksioma pilihan dan proposisi yang setara dengannya, yaitu **Lemma Zorn** (Zorn's Lemma), dari dasar hingga ke kedalaman. Kita akan memberikan penjelasan komprehensif mulai dari pemahaman intuitif, formulasi matematis yang ketat, latar belakang historis, hingga penerapannya di berbagai cabang matematika modern.
 
@@ -130,7 +130,7 @@ Sementara aksioma pilihan memberikan kekuatan besar pada matematika, ia juga men
 
 ### 5.1. Isi Paradoks
 
-> Sebuah bola pejal dalam ruang [Euklides](https://kenji.blog/p/euclid/) tiga dimensi dapat dipecah menjadi sejumlah hingga bagian (misalnya 5 potongan). Dengan mengatur ulang dan merakit kembali bagian-bagian tersebut hanya melalui rotasi dan translasi (gerak benda tegar), dapat dibuat **dua** bola dengan ukuran yang persis sama dengan bola aslinya.
+> Sebuah bola pejal dalam ruang [Euklides](https://kenji.blog/id/p/euclid/) tiga dimensi dapat dipecah menjadi sejumlah hingga bagian (misalnya 5 potongan). Dengan mengatur ulang dan merakit kembali bagian-bagian tersebut hanya melalui rotasi dan translasi (gerak benda tegar), dapat dibuat **dua** bola dengan ukuran yang persis sama dengan bola aslinya.
 
 $$
 1 \text{ Bola} \xrightarrow{\text{Dipotong menjadi } 5 \text{ bagian, Rotasi \& Translasi}} 2 \text{ Bola dengan ukuran yang sama}

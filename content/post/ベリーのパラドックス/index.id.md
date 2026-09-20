@@ -130,7 +130,7 @@ Namun, masalah ini menjadi pemicu yang membuat para matematikawan abad ke-20 men
 
 "Kita tidak boleh mendefinisikan angka dengan kata-kata. Matematika harus dibangun menggunakan simbol ketat yang sepenuhnya independen."
 
-Paradoks ini menjadi tonggak penting yang mengarah pada studi-studi mutakhir yang mengubah sejarah matematika selanjutnya, seperti "[Teorema Ketidaklengkapan Gödel](https://kenji.blog/p/godels-incompleteness-theorems/)" (bahwa ada kebenaran dalam matematika yang tidak akan pernah bisa dibuktikan) dan "Kompleksitas Kolmogorov" dalam ilmu komputer (teori tentang seberapa pendek informasi dapat dikompresi).
+Paradoks ini menjadi tonggak penting yang mengarah pada studi-studi mutakhir yang mengubah sejarah matematika selanjutnya, seperti "[Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/)" (bahwa ada kebenaran dalam matematika yang tidak akan pernah bisa dibuktikan) dan "Kompleksitas Kolmogorov" dalam ilmu komputer (teori tentang seberapa pendek informasi dapat dikompresi).
 
 Hanya dengan 16 karakter bahasa Jepang telah mengungkap batasan-batasan matematika. Itulah keindahan dari Paradoks Berry.
 

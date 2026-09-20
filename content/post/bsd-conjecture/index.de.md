@@ -63,7 +63,7 @@ Das Problem, rationale Punkte zu finden, wird seit langem als Hauptproblem von d
 
 ## 3. Der Satz von Mordell und der Rang
 
-Im Jahr 1922 bewies [Louis Mordell](https://kenji.blog/p/mordell/) einen entscheidenden Satz über die Struktur der Gruppe der rationalen Punkte $E(\mathbb{Q})$. Dieser wurde später von [André Weil](https://kenji.blog/p/weil/) auf allgemeinere algebraische Zahlkörper und abelsche Varietäten erweitert und ist als Satz von Mordell-Weil bekannt.
+Im Jahr 1922 bewies [Louis Mordell](https://kenji.blog/de/p/mordell/) einen entscheidenden Satz über die Struktur der Gruppe der rationalen Punkte $E(\mathbb{Q})$. Dieser wurde später von [André Weil](https://kenji.blog/de/p/weil/) auf allgemeinere algebraische Zahlkörper und abelsche Varietäten erweitert und ist als Satz von Mordell-Weil bekannt.
 
 ### 3.1. Der Satz von Mordell (Mordell's Theorem)
 
@@ -134,7 +134,7 @@ flowchart LR
 
 Entscheidend für die Formulierung der BSD-Vermutung ist die Frage, ob $L(E, s)$ auf die gesamte komplexe Ebene analytisch fortgesetzt werden kann. Insbesondere wollen wir das Verhalten bei $s=1$ wissen, wie später beschrieben wird, aber das Produkt der Definitionsgleichung konvergiert bei $s=1$ nicht.
 
-Dieses Problem wurde durch den **Modularitätssatz** (ehemals Taniyama-Shimura-Vermutung) gelöst, der 2001 vollständig bewiesen wurde. Durch die großartige Arbeit von [Andrew Wiles](https://kenji.blog/p/wiles/), Richard Taylor, Christophe Breuil, Brian Conrad und Fred Diamond wurde gezeigt, dass "alle elliptischen Kurven über dem Körper der rationalen Zahlen modular sind".
+Dieses Problem wurde durch den **Modularitätssatz** (ehemals Taniyama-Shimura-Vermutung) gelöst, der 2001 vollständig bewiesen wurde. Durch die großartige Arbeit von [Andrew Wiles](https://kenji.blog/de/p/wiles/), Richard Taylor, Christophe Breuil, Brian Conrad und Fred Diamond wurde gezeigt, dass "alle elliptischen Kurven über dem Körper der rationalen Zahlen modular sind".
 
 Modular zu sein bedeutet, dass $L(E, s)$ vollständig mit der L-Funktion $L(f, s)$ einer Modulform $f$ vom Gewicht 2 übereinstimmt. Die L-Funktion der Modulform wird durch die Hecke-Theorie auf die gesamte komplexe Ebene analytisch fortgesetzt und erfüllt die folgende Funktionalgleichung:
 

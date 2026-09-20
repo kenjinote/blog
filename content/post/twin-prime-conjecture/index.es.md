@@ -23,7 +23,7 @@ Los números primos gemelos (Twin Primes) son pares de números primos cuya dife
 - $(29, 31)$
 - $(41, 43)$
 
-A medida que los números aumentan, el [Teorema de los números primos ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/))](https://kenji.blog/p/prime-number-theorem/) establece que la frecuencia de aparición de los números primos en sí disminuye. En consecuencia, la frecuencia de los números primos gemelos también disminuye. Sin embargo, los matemáticos han especulado durante mucho tiempo que, sin importar cuán grandes sean los números, estos "pares de números primos con una diferencia de 2" seguirán apareciendo sin fin.
+A medida que los números aumentan, el [Teorema de los números primos ([Prime Number Theorem](https://kenji.blog/es/p/prime-number-theorem/))](https://kenji.blog/p/prime-number-theorem/) establece que la frecuencia de aparición de los números primos en sí disminuye. En consecuencia, la frecuencia de los números primos gemelos también disminuye. Sin embargo, los matemáticos han especulado durante mucho tiempo que, sin importar cuán grandes sean los números, estos "pares de números primos con una diferencia de 2" seguirán apareciendo sin fin.
 
 Esta es la **conjetura de los números primos gemelos** .
 
@@ -76,7 +76,7 @@ $$
 
 Este valor de convergencia $B_2$ se llama la **constante de Brun** (Brun's Constant). Según los cálculos actuales, se estima que $B_2 \approx 1.90216058$.
 
-[Leonhard Euler](https://kenji.blog/p/euler/) demostró que la suma de los recíprocos de todos los números primos diverge. Si la conjetura de los números primos gemelos fuera falsa y solo existiera un número finito de números primos gemelos, naturalmente convergería al ser la suma de un número finito de términos. Sin embargo, lo que significa el teorema de Brun es que, "incluso si existen infinitos números primos gemelos, están tan 'esparcidos' que la suma de sus recíprocos converge". Este es uno de los factores que dificultan enormemente la resolución de la conjetura de los números primos gemelos.
+[Leonhard Euler](https://kenji.blog/es/p/euler/) demostró que la suma de los recíprocos de todos los números primos diverge. Si la conjetura de los números primos gemelos fuera falsa y solo existiera un número finito de números primos gemelos, naturalmente convergería al ser la suma de un número finito de términos. Sin embargo, lo que significa el teorema de Brun es que, "incluso si existen infinitos números primos gemelos, están tan 'esparcidos' que la suma de sus recíprocos converge". Este es uno de los factores que dificultan enormemente la resolución de la conjetura de los números primos gemelos.
 
 ## 4. Un avance dramático reciente: El gran avance de Yitang Zhang
 

@@ -12,13 +12,13 @@ tags:
   - "Números Primos"
 ---
 
-En la sociedad actual de Internet, nuestra capacidad para comunicarnos de forma segura se debe a la **criptografía**. En la base de esta criptografía se encuentra un hermoso teorema descubierto en el siglo XVII por el matemático [Pierre de Fermat](https://kenji.blog/p/fermat/).
+En la sociedad actual de Internet, nuestra capacidad para comunicarnos de forma segura se debe a la **criptografía**. En la base de esta criptografía se encuentra un hermoso teorema descubierto en el siglo XVII por el matemático [Pierre de Fermat](https://kenji.blog/es/p/fermat/).
 
 En este artículo, explicaremos **el Pequeño Teorema de Fermat**, una piedra angular crucial de la teoría de números, de una manera fácil de entender, cubriendo su significado, demostración y cómo se aplica en la criptografía RSA moderna.
 
 ## ¿Qué es el Pequeño Teorema de Fermat?
 
-[El Pequeño Teorema de Fermat](https://kenji.blog/p/fermats-little-theorem/) es un teorema extremadamente simple pero poderoso que demuestra la relación entre los números primos y los números enteros.
+[El Pequeño Teorema de Fermat](https://kenji.blog/es/p/fermats-little-theorem/) es un teorema extremadamente simple pero poderoso que demuestra la relación entre los números primos y los números enteros.
 
 El teorema establece lo siguiente:
 
@@ -116,6 +116,6 @@ Por el Teorema de Euler, las claves ($e$ y $d$) se diseñan para que $M^{ed} \eq
 
 ## Conclusión
 
-Un pequeño teorema descubierto por [Pierre de Fermat](https://kenji.blog/p/fermat/) en el siglo XVII se ha convertido en un elemento indispensable que sustenta la base de la seguridad de la información en la sociedad moderna cientos de años después.
+Un pequeño teorema descubierto por [Pierre de Fermat](https://kenji.blog/es/p/fermat/) en el siglo XVII se ha convertido en un elemento indispensable que sustenta la base de la seguridad de la información en la sociedad moderna cientos de años después.
 
-**[El Pequeño Teorema de Fermat](https://kenji.blog/p/fermats-little-theorem/)** puede considerarse uno de los ejemplos más hermosos que demuestran cómo las matemáticas puras se conectan con la tecnología práctica (criptografía y algoritmos). Uno no puede evitar asombrarse por la profundidad de las matemáticas y la amplitud de su aplicabilidad.
+**[El Pequeño Teorema de Fermat](https://kenji.blog/es/p/fermats-little-theorem/)** puede considerarse uno de los ejemplos más hermosos que demuestran cómo las matemáticas puras se conectan con la tecnología práctica (criptografía y algoritmos). Uno no puede evitar asombrarse por la profundidad de las matemáticas y la amplitud de su aplicabilidad.

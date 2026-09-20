@@ -10,7 +10,7 @@ tags: ["Heisuke Hironaka", "Geometria Algébrica", "Resolução de Singularidade
 
 ## Introdução
 
- **[Heisuke Hironaka](https://kenji.blog/p/hironaka-heisuke/)** é um matemático japonês que deixou uma marca revolucionária no mundo matemático no final do século 20, particularmente no campo da geometria algébrica. A Medalha Fields que ele recebeu em 1970 é a mais alta honraria da matemática, concedida por sua solução para a "resolução de singularidades de uma variedade algébrica sobre um corpo de característica zero" — um problema monumental que todos na época consideravam impossível.
+ **[Heisuke Hironaka](https://kenji.blog/pt/p/hironaka-heisuke/)** é um matemático japonês que deixou uma marca revolucionária no mundo matemático no final do século 20, particularmente no campo da geometria algébrica. A Medalha Fields que ele recebeu em 1970 é a mais alta honraria da matemática, concedida por sua solução para a "resolução de singularidades de uma variedade algébrica sobre um corpo de característica zero" — um problema monumental que todos na época consideravam impossível.
 
 Neste artigo, nos aprofundamos na vida dramática de Hironaka desde sua infância até o prêmio da Medalha Fields, o contexto matemático de seu homônimo "Teorema da Resolução de Singularidades", e a filosofia única sobre a "criatividade" que ele defendia continuamente.
 
@@ -103,4 +103,4 @@ Para Hironaka, chegar a um beco sem saída no pensamento (uma singularidade inte
 
 ## Conclusão
 
-O Teorema da Resolução de Singularidades de [Heisuke Hironaka](https://kenji.blog/p/hironaka-heisuke/) transformou a paisagem da geometria algébrica e continua a ser uma ferramenta indispensável em diversos campos como a teoria das supercordas. Ao enfrentar paredes difíceis, sua atitude de "desvendar" emaranhados complexos continua a fascinar muitas pessoas hoje.
+O Teorema da Resolução de Singularidades de [Heisuke Hironaka](https://kenji.blog/pt/p/hironaka-heisuke/) transformou a paisagem da geometria algébrica e continua a ser uma ferramenta indispensável em diversos campos como a teoria das supercordas. Ao enfrentar paredes difíceis, sua atitude de "desvendar" emaranhados complexos continua a fascinar muitas pessoas hoje.

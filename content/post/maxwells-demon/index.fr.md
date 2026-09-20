@@ -91,7 +91,7 @@ $$
 \Delta S < 0
 $$
 
-À travers cette expérience de pensée, Maxwell essayait de démontrer que la deuxième loi de la thermodynamique n'est pas une loi mécanique absolue, mais plutôt une « loi probabiliste, valable seulement lorsque l'on traite statistiquement un grand nombre de molécules ». Cependant, si l'on parvenait à recréer artificiellement une entité similaire à ce démon, on pourrait construire une « machine à mouvement perpétuel de deuxième espèce ». [Le démon de Maxwell](https://kenji.blog/p/maxwells-demon/) exposait ainsi une contradiction flagrante vis-à-vis de la deuxième loi de la thermodynamique.
+À travers cette expérience de pensée, Maxwell essayait de démontrer que la deuxième loi de la thermodynamique n'est pas une loi mécanique absolue, mais plutôt une « loi probabiliste, valable seulement lorsque l'on traite statistiquement un grand nombre de molécules ». Cependant, si l'on parvenait à recréer artificiellement une entité similaire à ce démon, on pourrait construire une « machine à mouvement perpétuel de deuxième espèce ». [Le démon de Maxwell](https://kenji.blog/fr/p/maxwells-demon/) exposait ainsi une contradiction flagrante vis-à-vis de la deuxième loi de la thermodynamique.
 
 ## Le moteur de Szilárd : Acquisition d'information et conversion en travail
 

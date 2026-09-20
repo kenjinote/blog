@@ -30,7 +30,7 @@ Esta afirmación no fue meramente poética; estaba respaldada por su feroz creen
 
 Kronecker nació en 1823 en una adinerada familia judía en Liegnitz, Prusia (actualmente Legnica, Polonia). Mostrando un intelecto extraordinario desde temprana edad, se matriculó en el Gymnasium (escuela secundaria avanzada) local.
 
-Fue aquí donde ocurrió un encuentro fatídico. Un nuevo profesor llegó al Gymnasium: **[Ernst Kummer](https://kenji.blog/p/kummer/)** , quien más tarde se convertiría en pionero de la teoría de ideales. Kummer reconoció de inmediato el talento de Kronecker y le brindó una instrucción matemática avanzada y personalizada.
+Fue aquí donde ocurrió un encuentro fatídico. Un nuevo profesor llegó al Gymnasium: **[Ernst Kummer](https://kenji.blog/es/p/kummer/)** , quien más tarde se convertiría en pionero de la teoría de ideales. Kummer reconoció de inmediato el talento de Kronecker y le brindó una instrucción matemática avanzada y personalizada.
 
 ```mermaid
 graph TD
@@ -42,7 +42,7 @@ graph TD
 
 ## 2.2. Vida académica y éxito como empresario
 
-En 1841, Kronecker ingresó a la Universidad de Berlín, estudiando con matemáticos de primer nivel como Peter Gustav Lejeune Dirichlet y [Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/). Para 1845, obtuvo su doctorado con una destacada tesis sobre teoría algebraica de números.
+En 1841, Kronecker ingresó a la Universidad de Berlín, estudiando con matemáticos de primer nivel como Peter Gustav Lejeune Dirichlet y [Carl Gustav Jacob Jacobi](https://kenji.blog/es/p/jacobi/). Para 1845, obtuvo su doctorado con una destacada tesis sobre teoría algebraica de números.
 
 Sin embargo, Kronecker tomó luego un rumbo profesional extraño. En lugar de buscar un puesto universitario, regresó a su ciudad natal para hacerse cargo de la vasta finca agrícola y el negocio bancario de su tío. Logró un tremendo éxito como hombre de negocios y amasó una gran riqueza. Durante todo este período, continuó su investigación matemática como pasatiempo, lo que lo convirtió esencialmente en el matemático aficionado más fuerte de su tiempo.
 
@@ -60,15 +60,15 @@ Al hablar de la vida de Kronecker, no se pueden omitir sus feroces debates con o
 
 Kronecker tenía la firme convicción de que "solo las cosas que pueden ser calculadas y construidas explícitamente en un número finito de operaciones existen matemáticamente". Despreciaba ferozmente las pruebas de existencia no constructivas por reducción al absurdo (la lógica de que "si asumimos que no existe, surge una contradicción; por lo tanto, existe").
 
-Por ejemplo, con respecto al [Teorema Fundamental del Álgebra](https://kenji.blog/p/fundamental-theorem-of-algebra/), argumentó que demostrar simplemente que "existe una raíz" era insuficiente; debía ir acompañado de un algoritmo que detallara "cómo construir explícitamente la raíz".
+Por ejemplo, con respecto al [Teorema Fundamental del Álgebra](https://kenji.blog/es/p/fundamental-theorem-of-algebra/), argumentó que demostrar simplemente que "existe una raíz" era insuficiente; debía ir acompañado de un algoritmo que detallara "cómo construir explícitamente la raíz".
 
 ## 3.2. Enfrentamientos con Cantor y Weierstrass
 
 Esta ideología extrema lo llevó a entrar en conflicto con sus contemporáneos.
 
-El más famoso de estos fue su vehemente crítica a **[Georg Cantor](https://kenji.blog/p/cantor/)** y su Teoría de Conjuntos. Kronecker condenó los conceptos de Cantor sobre cardinalidades de conjuntos infinitos y números transfinitos como "misticismo, no matemáticas", e incluso tomó medidas para obstaculizar la publicación de los artículos de Cantor.
+El más famoso de estos fue su vehemente crítica a **[Georg Cantor](https://kenji.blog/es/p/cantor/)** y su Teoría de Conjuntos. Kronecker condenó los conceptos de Cantor sobre cardinalidades de conjuntos infinitos y números transfinitos como "misticismo, no matemáticas", e incluso tomó medidas para obstaculizar la publicación de los artículos de Cantor.
 
-También se enfrentó a **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** , quien alguna vez fue un amigo cercano. Con respecto al análisis de Weierstrass (como la construcción de funciones continuas que no son diferenciables en ninguna parte), Kronecker criticó tales funciones como "patológicas" y declaró que no existían.
+También se enfrentó a **[Karl Weierstrass](https://kenji.blog/es/p/weierstrass/)** , quien alguna vez fue un amigo cercano. Con respecto al análisis de Weierstrass (como la construcción de funciones continuas que no son diferenciables en ninguna parte), Kronecker criticó tales funciones como "patológicas" y declaró que no existían.
 
 # 4. Grandes contribuciones a las matemáticas
 

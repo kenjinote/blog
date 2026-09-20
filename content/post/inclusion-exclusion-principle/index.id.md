@@ -17,13 +17,13 @@ tags:
 
 Dalam matematika dan ilmu komputer, kita sering menjumpai situasi di mana kita perlu menghitung jumlah elemen yang memenuhi beberapa kondisi. Namun, ketika terdapat beberapa kondisi, himpunan elemen yang memenuhi masing-masing kondisi sering kali tumpang tindih (memiliki irisan). Menjumlahkannya secara langsung akan menyebabkan elemen dihitung berkali-kali.
 
-Metode yang ampuh untuk menghilangkan tumpang tindih ini secara akurat dan mendapatkan jumlah elemen yang benar adalah **[Prinsip Inklusi-Eksklusi](https://kenji.blog/p/inclusion-exclusion-principle/)**.
+Metode yang ampuh untuk menghilangkan tumpang tindih ini secara akurat dan mendapatkan jumlah elemen yang benar adalah **[Prinsip Inklusi-Eksklusi](https://kenji.blog/id/p/inclusion-exclusion-principle/)**.
 
-Dalam artikel ini, kami akan menjelaskan [Prinsip Inklusi-Eksklusi](https://kenji.blog/p/inclusion-exclusion-principle/) secara mendetail, mulai dari konsep dasarnya hingga rumus matematika umum, bukti matematika, dan contoh penerapan konkret (seperti fungsi totient Euler dan derangement). Selain itu, kami akan memperkenalkan contoh implementasi pemrograman untuk memperdalam pemahaman Anda dari perspektif teoretis dan praktis.
+Dalam artikel ini, kami akan menjelaskan [Prinsip Inklusi-Eksklusi](https://kenji.blog/id/p/inclusion-exclusion-principle/) secara mendetail, mulai dari konsep dasarnya hingga rumus matematika umum, bukti matematika, dan contoh penerapan konkret (seperti fungsi totient Euler dan derangement). Selain itu, kami akan memperkenalkan contoh implementasi pemrograman untuk memperdalam pemahaman Anda dari perspektif teoretis dan praktis.
 
 ## 2. Dasar-dasar Himpunan dan Kardinalitas
 
-Sebelum mempelajari [Prinsip Inklusi-Eksklusi](https://kenji.blog/p/inclusion-exclusion-principle/), mari kita tinjau kembali notasi dasar himpunan.
+Sebelum mempelajari [Prinsip Inklusi-Eksklusi](https://kenji.blog/id/p/inclusion-exclusion-principle/), mari kita tinjau kembali notasi dasar himpunan.
 
 - $A, B$ : Himpunan
 - $|A|$ : Jumlah elemen (kardinalitas) dari himpunan $A$
@@ -32,7 +32,7 @@ Sebelum mempelajari [Prinsip Inklusi-Eksklusi](https://kenji.blog/p/inclusion-ex
 
 Yang ingin kita cari adalah kardinalitas gabungan dari beberapa himpunan, yaitu $|A \cup B \cup \dots|$.
 
-## 3. [Prinsip Inklusi-Eksklusi](https://kenji.blog/p/inclusion-exclusion-principle/) untuk 2 Himpunan
+## 3. [Prinsip Inklusi-Eksklusi](https://kenji.blog/id/p/inclusion-exclusion-principle/) untuk 2 Himpunan
 
 Mari kita pertimbangkan kasus paling sederhana dengan dua himpunan, $A$ dan $B$.
 
@@ -59,7 +59,7 @@ flowchart TD
     B -->|"Tumpang Tindih"| AandB
 ```
 
-## 4. [Prinsip Inklusi-Eksklusi](https://kenji.blog/p/inclusion-exclusion-principle/) untuk 3 Himpunan
+## 4. [Prinsip Inklusi-Eksklusi](https://kenji.blog/id/p/inclusion-exclusion-principle/) untuk 3 Himpunan
 
 Ketika terdapat tiga himpunan, perhitungannya menjadi sedikit lebih kompleks. Pertimbangkan himpunan $A, B, C$.
 
@@ -98,7 +98,7 @@ $$
 $$
 Oleh karena itu, terdapat **74** bilangan yang habis dibagi 2, 3, atau 5.
 
-## 5. [Prinsip Inklusi-Eksklusi](https://kenji.blog/p/inclusion-exclusion-principle/) Umum untuk $n$ Himpunan
+## 5. [Prinsip Inklusi-Eksklusi](https://kenji.blog/id/p/inclusion-exclusion-principle/) Umum untuk $n$ Himpunan
 
 Generalisasi dari prinsip ini untuk $n$ himpunan $A_1, A_2, \dots, A_n$ menghasilkan rumus indah berikut.
 
@@ -133,7 +133,7 @@ Ini membuktikan bahwa setiap elemen dihitung tepat satu kali tanpa duplikasi.
 
 ## 6. Contoh Penerapan 1: Fungsi Totient Euler
 
-Fungsi totient Euler $\varphi(N)$ merepresentasikan jumlah bilangan bulat dari $1$ hingga $N$ yang saling prima (coprime) dengan $N$. Hal ini juga dapat dihitung menggunakan [Prinsip Inklusi-Eksklusi](https://kenji.blog/p/inclusion-exclusion-principle/).
+Fungsi totient Euler $\varphi(N)$ merepresentasikan jumlah bilangan bulat dari $1$ hingga $N$ yang saling prima (coprime) dengan $N$. Hal ini juga dapat dihitung menggunakan [Prinsip Inklusi-Eksklusi](https://kenji.blog/id/p/inclusion-exclusion-principle/).
 
 Misalkan faktor prima dari $N$ adalah $p_1, p_2, \dots, p_k$.
 Misalkan himpunan semesta $U = \{1, 2, \dots, N\}$, dan $A_i$ adalah "himpunan kelipatan $p_i$".
@@ -143,7 +143,7 @@ $$
 \varphi(N) = N - \left| \bigcup_{i=1}^k A_i \right|
 $$
 
-Menerapkan [Prinsip Inklusi-Eksklusi](https://kenji.blog/p/inclusion-exclusion-principle/) dan menyederhanakannya mengarah pada rumus terkenal ini:
+Menerapkan [Prinsip Inklusi-Eksklusi](https://kenji.blog/id/p/inclusion-exclusion-principle/) dan menyederhanakannya mengarah pada rumus terkenal ini:
 
 $$
 \varphi(N) = N \left(1 - \frac{1}{p_1}\right) \left(1 - \frac{1}{p_2}\right) \dots \left(1 - \frac{1}{p_k}\right)
@@ -156,7 +156,7 @@ Derangement adalah permutasi dari bilangan $1$ hingga $n$ di mana tidak ada bila
 Misalkan $A_i$ adalah "himpunan permutasi di mana $i$ berada pada posisi ke-$i$". Kardinalitas himpunan semesta adalah $n!$.
 Kita ingin mencari $n! - |A_1 \cup A_2 \cup \dots \cup A_n|$.
 
-Kardinalitas dari irisan himpunan $k$ mana pun adalah $(n-k)!$, dan ada $\binom{n}{k}$ cara untuk memilih $k$ himpunan tersebut. Dengan menerapkan [Prinsip Inklusi-Eksklusi](https://kenji.blog/p/inclusion-exclusion-principle/), jumlah derangement $D_n$ diperoleh sebagai berikut:
+Kardinalitas dari irisan himpunan $k$ mana pun adalah $(n-k)!$, dan ada $\binom{n}{k}$ cara untuk memilih $k$ himpunan tersebut. Dengan menerapkan [Prinsip Inklusi-Eksklusi](https://kenji.blog/id/p/inclusion-exclusion-principle/), jumlah derangement $D_n$ diperoleh sebagai berikut:
 
 $$
 D_n = n! \sum_{k=0}^n \frac{(-1)^k}{k!}
@@ -164,7 +164,7 @@ $$
 
 ## 8. Perhitungan dan Implementasi Melalui Pemrograman
 
-[Prinsip Inklusi-Eksklusi](https://kenji.blog/p/inclusion-exclusion-principle/) sangat berguna dalam pemrograman. Khususnya bila dikombinasikan dengan pencarian bitwise exhaustif (bitwise exhaustive search), [Prinsip Inklusi-Eksklusi](https://kenji.blog/p/inclusion-exclusion-principle/) untuk kondisi $n$ dapat diimplementasikan secara ringkas.
+[Prinsip Inklusi-Eksklusi](https://kenji.blog/id/p/inclusion-exclusion-principle/) sangat berguna dalam pemrograman. Khususnya bila dikombinasikan dengan pencarian bitwise exhaustif (bitwise exhaustive search), [Prinsip Inklusi-Eksklusi](https://kenji.blog/id/p/inclusion-exclusion-principle/) untuk kondisi $n$ dapat diimplementasikan secara ringkas.
 
 Di bawah ini adalah kode Python untuk mencari "jumlah bilangan bulat dari 1 hingga $M$ yang habis dibagi oleh bilangan prima mana pun dalam daftar yang diberikan".
 
@@ -203,7 +203,7 @@ Kompleksitas waktu algoritma ini adalah $O(n \cdot 2^n)$, yang berjalan cukup ce
 
 ## 9. Kesimpulan
 
-[Prinsip Inklusi-Eksklusi](https://kenji.blog/p/inclusion-exclusion-principle/) adalah rumus matematika ajaib yang memecah tumpang tindih dari himpunan yang tampaknya kompleks menjadi pengulangan penjumlahan dan pengurangan yang sederhana dan mekanis.
+[Prinsip Inklusi-Eksklusi](https://kenji.blog/id/p/inclusion-exclusion-principle/) adalah rumus matematika ajaib yang memecah tumpang tindih dari himpunan yang tampaknya kompleks menjadi pengulangan penjumlahan dan pengurangan yang sederhana dan mekanis.
 
 Rentang penerapannya sangat luas, mulai dari masalah probabilitas dasar hingga pemrograman kompetitif tingkat lanjut, serta penghitungan fungsi totient Euler yang berkaitan dengan kriptografi.
 Menguasai teknik yang ampuh ini akan secara dramatis meningkatkan kemampuan pemecahan masalah Anda dalam matematika dan algoritma. Oleh karena itu, cobalah menerapkannya ke berbagai masalah dan rasakan kekuatannya.

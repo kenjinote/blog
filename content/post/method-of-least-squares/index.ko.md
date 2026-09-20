@@ -16,11 +16,11 @@ tags:
 
 현실 세계에서 관찰되는 데이터에는 거의 항상 "노이즈"나 "산포"가 포함되어 있습니다. 이러한 데이터에서 이면의 법칙성을 찾아내어 미래를 예측하거나 미지의 데이터를 추정하기 위해서는, 데이터에 **가장 잘 맞는** (피팅되는) 수리 모델을 구축해야 합니다.
 
-그 가장 기본적이며 현재의 기계학습 기초로서도 극히 중요한 역할을 하고 있는 기법이 바로 **[최소제곱법](https://kenji.blog/p/method-of-least-squares/)** ([Method of Least Squares](https://kenji.blog/p/method-of-least-squares/))입니다.
+그 가장 기본적이며 현재의 기계학습 기초로서도 극히 중요한 역할을 하고 있는 기법이 바로 **[최소제곱법](https://kenji.blog/ko/p/method-of-least-squares/)** ([Method of Least Squares](https://kenji.blog/ko/p/method-of-least-squares/))입니다.
 
 이 글에서는 단순히 미분 공식을 적용하는 것뿐만 아니라, 선형대수의 아름다운 기하학적 관점, 특히 **직교 사영** (Orthogonal Projection)의 개념을 이용하여 **"왜 그 계산으로 가장 잘 맞는 직선을 구할 수 있는지"**를 깊이 파고들어 해설합니다.
 
-## 2. [최소제곱법](https://kenji.blog/p/method-of-least-squares/)의 직관적인 아이디어
+## 2. [최소제곱법](https://kenji.blog/ko/p/method-of-least-squares/)의 직관적인 아이디어
 
 $n$ 개의 데이터 포인트 $(x_1, y_1), (x_2, y_2), \dots, (x_n, y_n)$가 있다고 가정해 봅시다. 이 점들을 산점도에 플롯했을 때, 완전히 일직선 위에 배열되어 있지는 않지만 전체적으로 어떤 직선의 경향을 따르는 것처럼 보이는 경우가 있습니다.
 
@@ -30,7 +30,7 @@ $n$ 개의 데이터 포인트 $(x_1, y_1), (x_2, y_2), \dots, (x_n, y_n)$가 �
 
 $$ e_i = y_i - \hat{y}_i = y_i - (c + d x_i) $$
 
-[최소제곱법](https://kenji.blog/p/method-of-least-squares/)은 이러한 오차들의 **제곱합**을 최소로 만드는 파라미터 $c$와 $d$를 찾는 기법입니다. 오차의 제곱합 $E$는 다음과 같이 정의됩니다.
+[최소제곱법](https://kenji.blog/ko/p/method-of-least-squares/)은 이러한 오차들의 **제곱합**을 최소로 만드는 파라미터 $c$와 $d$를 찾는 기법입니다. 오차의 제곱합 $E$는 다음과 같이 정의됩니다.
 
 $$ E = \sum_{i=1}^{n} e_i^2 = \sum_{i=1}^{n} (y_i - c - d x_i)^2 \quad (\text{오차 함수의 정의}) $$
 
@@ -46,7 +46,7 @@ flowchart TD
 
 ## 3. 선형대수에 의한 공식화와 "풀 수 없는 연립방정식"
 
-[최소제곱법](https://kenji.blog/p/method-of-least-squares/)의 진정한 아름다움은 이것을 행렬과 벡터의 언어, 즉 **선형대수학**을 사용하여 다시 썼을 때 나타납니다.
+[최소제곱법](https://kenji.blog/ko/p/method-of-least-squares/)의 진정한 아름다움은 이것을 행렬과 벡터의 언어, 즉 **선형대수학**을 사용하여 다시 썼을 때 나타납니다.
 
 모든 데이터 포인트가 직선 $y = c + dx$ 위에 완벽하게 올라가 있다고 가정하면, 다음과 같은 $n$ 개의 방정식을 얻을 수 있습니다.
 
@@ -98,7 +98,7 @@ $$ A\mathbf{x} \in C(A) $$
 
 해가 존재하지 않는다는 것은 벡터 $\mathbf{b}$가 이 열공간 $C(A)$의 **바깥쪽**에 있다는 것입니다.
 
-우리가 찾고 있는 것은 완벽한 해가 아니라, 가능한 한 $\mathbf{b}$에 가까운 $C(A)$ 안의 벡터를 찾는 것입니다. 이것을 $A\hat{\mathbf{x}}$라고 합시다. 이때 벡터 $\mathbf{b}$와 $A\hat{\mathbf{x}}$의 거리(의 제곱)가 최소가 됩니다. 이것이 바로 [최소제곱법](https://kenji.blog/p/method-of-least-squares/)입니다.
+우리가 찾고 있는 것은 완벽한 해가 아니라, 가능한 한 $\mathbf{b}$에 가까운 $C(A)$ 안의 벡터를 찾는 것입니다. 이것을 $A\hat{\mathbf{x}}$라고 합시다. 이때 벡터 $\mathbf{b}$와 $A\hat{\mathbf{x}}$의 거리(의 제곱)가 최소가 됩니다. 이것이 바로 [최소제곱법](https://kenji.blog/ko/p/method-of-least-squares/)입니다.
 
 기하학적으로 공간 내의 어떤 점 $\mathbf{b}$에서 어떤 평면 $C(A)$까지의 최단 거리를 주는 점은, $\mathbf{b}$에서 $C(A)$로 내린 **수선의 발**에 다름 아닙니다. 이것을 **직교 사영** (Orthogonal Projection)이라고 부릅니다.
 
@@ -168,8 +168,8 @@ print(f"최적의 기울기: {d_hat:.4f}")
 
 ## 7. 정리와 발전
 
-[최소제곱법](https://kenji.blog/p/method-of-least-squares/)은 데이터로부터 모델의 파라미터를 추정하는 가장 강력하고 표준적인 기법입니다. 미분 지식을 사용하면 "오차 함수의 기울기가 0이 되는 점"으로 도출할 수 있지만, 선형대수의 관점에서 "열공간으로의 직교 사영"으로 이해함으로써 그 수리적 구조의 아름다움이 돋보입니다.
+[최소제곱법](https://kenji.blog/ko/p/method-of-least-squares/)은 데이터로부터 모델의 파라미터를 추정하는 가장 강력하고 표준적인 기법입니다. 미분 지식을 사용하면 "오차 함수의 기울기가 0이 되는 점"으로 도출할 수 있지만, 선형대수의 관점에서 "열공간으로의 직교 사영"으로 이해함으로써 그 수리적 구조의 아름다움이 돋보입니다.
 
-이 기법은 단순한 직선에 대한 피팅(단순 회귀)에 그치지 않습니다. 계획 행렬 $A$의 열에 $x^2, x^3$ 등의 항을 추가하면 **다항식 회귀**로 자연스럽게 확장할 수 있으며, 각 데이터 포인트에 중요도의 가중치를 두는 **가중 [최소제곱법](https://kenji.blog/p/method-of-least-squares/)** 등으로 발전시킬 수도 있습니다.
+이 기법은 단순한 직선에 대한 피팅(단순 회귀)에 그치지 않습니다. 계획 행렬 $A$의 열에 $x^2, x^3$ 등의 항을 추가하면 **다항식 회귀**로 자연스럽게 확장할 수 있으며, 각 데이터 포인트에 중요도의 가중치를 두는 **가중 [최소제곱법](https://kenji.blog/ko/p/method-of-least-squares/)** 등으로 발전시킬 수도 있습니다.
 
-데이터 이면의 진리에 다가가기 위한 첫걸음으로서, [최소제곱법](https://kenji.blog/p/method-of-least-squares/)의 본질적인 이해는 헤아릴 수 없는 가치를 지닙니다.
+데이터 이면의 진리에 다가가기 위한 첫걸음으로서, [최소제곱법](https://kenji.blog/ko/p/method-of-least-squares/)의 본질적인 이해는 헤아릴 수 없는 가치를 지닙니다.

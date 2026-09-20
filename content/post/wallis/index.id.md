@@ -16,13 +16,13 @@ tags:
 
 ## Pendahuluan: Jenius Abad ke-17 yang Menyimbolkan Tak Terhingga
 
-Simbol **tak terhingga** ( $\infty$ ) adalah sesuatu yang sering kita jumpai. Orang pertama yang memperkenalkan simbol indah dan misterius ini ke dalam dunia matematika adalah matematikawan Inggris abad ke-17, **[John Wallis](https://kenji.blog/p/wallis/)** (1616–1703). Ia dikenal sebagai sosok yang memainkan peran yang sangat penting dalam sejarah matematika, menjembatani geometri analitis [René Descartes](https://kenji.blog/p/descartes/) dan kalkulus [Isaac Newton](https://kenji.blog/p/newton/).
+Simbol **tak terhingga** ( $\infty$ ) adalah sesuatu yang sering kita jumpai. Orang pertama yang memperkenalkan simbol indah dan misterius ini ke dalam dunia matematika adalah matematikawan Inggris abad ke-17, **[John Wallis](https://kenji.blog/id/p/wallis/)** (1616–1703). Ia dikenal sebagai sosok yang memainkan peran yang sangat penting dalam sejarah matematika, menjembatani geometri analitis [René Descartes](https://kenji.blog/id/p/descartes/) dan kalkulus [Isaac Newton](https://kenji.blog/id/p/newton/).
 
-Eropa abad ke-17 adalah era "Revolusi Ilmiah", di mana tokoh-tokoh seperti Galileo Galilei, Johannes Kepler, dan [René Descartes](https://kenji.blog/p/descartes/) membangun fondasi sains dan matematika modern. Di tengah semua ini, Wallis menerobos batasan geometri klasik Yunani dan membuka batas baru dalam matematika dengan memperkenalkan metode aljabar dan analitis ke dalam geometri. Dalam artikel ini, kita akan menggali lebih dalam kehidupan Wallis yang penuh gejolak, dari latar belakangnya yang unik sebagai seorang kriptografer hingga pencapaian matematika dan fisikanya yang sangat memengaruhi generasi masa depan.
+Eropa abad ke-17 adalah era "Revolusi Ilmiah", di mana tokoh-tokoh seperti Galileo Galilei, Johannes Kepler, dan [René Descartes](https://kenji.blog/id/p/descartes/) membangun fondasi sains dan matematika modern. Di tengah semua ini, Wallis menerobos batasan geometri klasik Yunani dan membuka batas baru dalam matematika dengan memperkenalkan metode aljabar dan analitis ke dalam geometri. Dalam artikel ini, kita akan menggali lebih dalam kehidupan Wallis yang penuh gejolak, dari latar belakangnya yang unik sebagai seorang kriptografer hingga pencapaian matematika dan fisikanya yang sangat memengaruhi generasi masa depan.
 
 ## Kehidupan Awal dan Pendidikan: Jalan Menuju Kedokteran, Logika, dan Teologi
 
-[John Wallis](https://kenji.blog/p/wallis/) lahir pada 23 November 1616, di Ashford, Kent, Inggris. Ayahnya adalah seorang pendeta paroki yang dihormati, dan Wallis sendiri awalnya diharapkan untuk mengikuti jejak sebagai seorang rohaniwan. Untuk menghindari wabah pes pada masa kecilnya, ia pindah ke sebuah sekolah di Tenterden, dan kemudian menguasai bahasa-bahasa klasik seperti bahasa Latin, Yunani, dan Ibrani di Felsted School di Essex.
+[John Wallis](https://kenji.blog/id/p/wallis/) lahir pada 23 November 1616, di Ashford, Kent, Inggris. Ayahnya adalah seorang pendeta paroki yang dihormati, dan Wallis sendiri awalnya diharapkan untuk mengikuti jejak sebagai seorang rohaniwan. Untuk menghindari wabah pes pada masa kecilnya, ia pindah ke sebuah sekolah di Tenterden, dan kemudian menguasai bahasa-bahasa klasik seperti bahasa Latin, Yunani, dan Ibrani di Felsted School di Essex.
 
 Pada tahun 1632, ia masuk ke Emmanuel College, Universitas Cambridge. Di Cambridge pada saat itu, matematika tidak ditekankan sebagai disiplin ilmu utama; ia hanya dianggap sebagai keterampilan praktis atau aritmatika bagi para pedagang. Oleh karena itu, ia sendiri memiliki minat yang kuat pada bidang kedokteran, anatomi, logika, dan teologi. Terinspirasi secara khusus oleh teori sirkulasi darah William Harvey, ia meraih nilai yang sangat baik di bidang anatomi. Adapun matematika, ia hanya mempelajari sedikit aritmatika dari kakak laki-lakinya pada masa kecilnya, dan butuh waktu sedikit lebih lama sebelum ia secara serius membenamkan dirinya dalam matematika.
 
@@ -119,20 +119,20 @@ Hobbes mengklaim telah memecahkan "masalah mengkuadratkan lingkaran" (masalah me
 
 Sebagai matematikawan yang luar biasa, Wallis segera melihat kesalahan dalam pembuktian geometris Hobbes dan mengkritiknya tanpa ampun. Hobbes memberontak menentang ini, dan kontroversi pun meluas melampaui ranah matematika murni ke politik, agama, dan fitnah pribadi. Perselisihan ini berlangsung selama seperempat abad hingga Hobbes meninggal, dan dikenal sebagai episode yang menggambarkan karakter Wallis yang keras dan pantang menyerah.
 
-## Pengaruh Luar Biasa terhadap [Isaac Newton](https://kenji.blog/p/newton/) Muda
+## Pengaruh Luar Biasa terhadap [Isaac Newton](https://kenji.blog/id/p/newton/) Muda
 
-"Arithmetica Infinitorum" karya Wallis memberikan dampak yang tak terukur pada seorang pemuda tertentu yang kelak akan membalikkan sejarah sains secara fundamental. Pemuda itu adalah **[Isaac Newton](https://kenji.blog/p/newton/)**.
+"Arithmetica Infinitorum" karya Wallis memberikan dampak yang tak terukur pada seorang pemuda tertentu yang kelak akan membalikkan sejarah sains secara fundamental. Pemuda itu adalah **[Isaac Newton](https://kenji.blog/id/p/newton/)**.
 
 Selama masa mahasiswanya di Universitas Cambridge, Newton dengan saksama membaca "Arithmetica Infinitorum" karya Wallis dan sangat terkesan. Dengan lebih jauh menggeneralisasi dan memperluas metode interpolasi Wallis, Newton menemukan **teorema binomial umum** untuk setiap pangkat rasional. Lebih jauh lagi, dengan memajukan konsep batas aljabar Wallis, ia akhirnya sampai pada dasar **kalkulus**.
 
 Jika "Arithmetica Infinitorum" Wallis tidak pernah ada, penemuan kalkulus Newton mungkin akan sangat tertunda, atau mungkin mengambil bentuk yang sama sekali berbeda.
 
-Wallis sendiri sangat memuji bakat luar biasa Newton dan sangat mendesaknya untuk mempublikasikan hasil penelitiannya tentang kalkulus. Di kemudian hari, ketika perselisihan sengit mengenai "prioritas kalkulus" pecah antara Newton dan [Gottfried Leibniz](https://kenji.blog/p/leibniz/), Wallis mendukung penuh Newton sebagai pembela tangguh dari pihak Inggris.
+Wallis sendiri sangat memuji bakat luar biasa Newton dan sangat mendesaknya untuk mempublikasikan hasil penelitiannya tentang kalkulus. Di kemudian hari, ketika perselisihan sengit mengenai "prioritas kalkulus" pecah antara Newton dan [Gottfried Leibniz](https://kenji.blog/id/p/leibniz/), Wallis mendukung penuh Newton sebagai pembela tangguh dari pihak Inggris.
 
 ## Kesimpulan: Jembatan Besar dalam Sejarah Matematika
 
-[John Wallis](https://kenji.blog/p/wallis/) terus aktif sebagai sarjana terkemuka hingga wafatnya pada tahun 1703 di usia 86 tahun.
+[John Wallis](https://kenji.blog/id/p/wallis/) terus aktif sebagai sarjana terkemuka hingga wafatnya pada tahun 1703 di usia 86 tahun.
 
 Ia memainkan peran krusial sebagai sebuah **jembatan** dalam masa transisi dari geometri yang berpusat pada bangun ruang, yang berlanjut sejak zaman Yunani Kuno, menuju analisis modern, yang secara bebas memanipulasi rumus matematika. Daya nalar logis yang dipupuk melalui kriptografi dan daya imajinasi untuk membuat konjektur berani di wilayah-wilayah yang belum diketahui. Pencapaian-pencapaiannya, yang lahir dari perpaduan elemen-elemen ini, diwarisi oleh generasi jenius berikutnya seperti Newton dan terus hidup hari ini sebagai fondasi matematika dan sains modern.
 
-Saat kita dengan santai menggambar simbol ' $\infty$ ', terukir di dalamnya napas dari seorang intelek besar, [John Wallis](https://kenji.blog/p/wallis/), yang bertahan melalui gejolak abad ke-17 dan menyisipkan pisau logika ke dalam ranah ketakterhinggaan yang ilahi.
+Saat kita dengan santai menggambar simbol ' $\infty$ ', terukir di dalamnya napas dari seorang intelek besar, [John Wallis](https://kenji.blog/id/p/wallis/), yang bertahan melalui gejolak abad ke-17 dan menyisipkan pisau logika ke dalam ranah ketakterhinggaan yang ilahi.

@@ -82,7 +82,7 @@ Dalam menghafal buku teknis, "menghafal pembuktian panjang secara utuh" adalah h
 
 - **Kartu yang buruk**: "Tulis seluruh pembuktian Algoritma Dijkstra."
 - **Kartu yang baik**: "Dalam Algoritma Dijkstra, apa syarat agar jarak terpendek sebuah simpul dianggap sudah pasti?" → "Ketika simpul dengan jarak sementara terkecil dipilih dari himpunan simpul yang belum pasti."
-- **Kartu yang baik**: "Sebutkan rumus [Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/)." → "Untuk bilangan prima $p$ dan bilangan bulat $a$ yang saling prima, $a^{p-1} \equiv 1 \pmod p$."
+- **Kartu yang baik**: "Sebutkan rumus [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)." → "Untuk bilangan prima $p$ dan bilangan bulat $a$ yang saling prima, $a^{p-1} \equiv 1 \pmod p$."
 
 Saat menghafal rumus matematika, sangat efektif jika Anda mendaftarkannya di Anki dalam format LaTeX dan memanfaatkan metode rumpang (Cloze Deletion).
 
@@ -98,7 +98,7 @@ Di sini, mari kita lihat proses menerjemahkan rumus ke dalam kode melalui dua co
 
 ### 4.1 Contoh 1: Matematika Kriptografi RSA dan Implementasi Python
 
-Kriptografi RSA, yang merupakan representasi dari kriptografi kunci publik, adalah aplikasi yang indah dari teori bilangan dasar (Aritmatika modular, Teorema Euler, [Algoritma [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) Lanjutan).
+Kriptografi RSA, yang merupakan representasi dari kriptografi kunci publik, adalah aplikasi yang indah dari teori bilangan dasar (Aritmatika modular, Teorema Euler, [Algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) Lanjutan).
 
 #### Latar Belakang Matematika
 Proses pembuatan kunci, enkripsi, dan dekripsi kriptografi RSA direpresentasikan oleh rumus berikut.
@@ -171,7 +171,7 @@ def rsa_demo():
 rsa_demo()
 ```
 
-Untuk menemukan $d$ yang memenuhi rumus $e \cdot d \equiv 1 \pmod{\phi(n)}$, kita perlu mengimplementasikan algoritma yang disebut [Algoritma [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) Lanjutan. Dengan cara ini, **ketika Anda mencoba menerjemahkan rumus matematika ke dalam kode, Anda akan dihadapkan pada tantangan implementasi "bagaimana secara spesifik menghitung variabel ini?", dan dalam proses memecahkannya, pemahaman matematis Anda akan menjadi jauh lebih dalam**.
+Untuk menemukan $d$ yang memenuhi rumus $e \cdot d \equiv 1 \pmod{\phi(n)}$, kita perlu mengimplementasikan algoritma yang disebut [Algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) Lanjutan. Dengan cara ini, **ketika Anda mencoba menerjemahkan rumus matematika ke dalam kode, Anda akan dihadapkan pada tantangan implementasi "bagaimana secara spesifik menghitung variabel ini?", dan dalam proses memecahkannya, pemahaman matematis Anda akan menjadi jauh lebih dalam**.
 
 ### 4.2 Contoh 2: Algoritma Dijkstra dan Relaksasi (Relaxation)
 

@@ -78,7 +78,7 @@ Dalam ruang multidimensi (ruang laten) ini, telah dipelajari bahwa kalimat denga
 
 ## Latar Belakang Matematis Perhitungan Kemiripan: Kesamaan Kosinus
 
-Ketika database vektor mencari dokumen yang relevan, metrik jarak yang paling umum digunakan adalah **Kesamaan Kosinus (Cosine Similarity)**. Berbeda dengan jarak [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an (jarak spasial absolut), Kesamaan Kosinus berfokus pada "sudut antara dua vektor". Karena tidak terlalu terpengaruh oleh panjang kalimat (norma vektor), metrik ini sangat cocok untuk menghitung kemiripan teks.
+Ketika database vektor mencari dokumen yang relevan, metrik jarak yang paling umum digunakan adalah **Kesamaan Kosinus (Cosine Similarity)**. Berbeda dengan jarak [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an (jarak spasial absolut), Kesamaan Kosinus berfokus pada "sudut antara dua vektor". Karena tidak terlalu terpengaruh oleh panjang kalimat (norma vektor), metrik ini sangat cocok untuk menghitung kemiripan teks.
 
 Dinyatakan secara matematis, Kesamaan Kosinus dari vektor $\mathbf{A}$ dan $\mathbf{B}$ adalah sebagai berikut.
 

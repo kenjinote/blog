@@ -14,17 +14,17 @@ tags:
   - "Mathematikgeschichte"
 ---
 
-# Wer war [Georg Cantor](https://kenji.blog/p/cantor/)?
+# Wer war [Georg Cantor](https://kenji.blog/de/p/cantor/)?
 
-In der Geschichte der Mathematik galt das Konzept der "Unendlichkeit" lange Zeit als Tabu. Die Unendlichkeit wurde strikt als ein "endloser Zustand (potenzielle Unendlichkeit)" behandelt, und es wurde als gefährlich angesehen, sie als "abgeschlossenes Ganzes (aktuale Unendlichkeit)" zu behandeln. Im späten 19. Jahrhundert gab es jedoch einen Mann, der dieses Tabu frontal herausforderte und die Unendlichkeit selbst als Gegenstand der Mathematik erschloss. Dieser Mann war **[Georg Cantor](https://kenji.blog/p/cantor/)**.
+In der Geschichte der Mathematik galt das Konzept der "Unendlichkeit" lange Zeit als Tabu. Die Unendlichkeit wurde strikt als ein "endloser Zustand (potenzielle Unendlichkeit)" behandelt, und es wurde als gefährlich angesehen, sie als "abgeschlossenes Ganzes (aktuale Unendlichkeit)" zu behandeln. Im späten 19. Jahrhundert gab es jedoch einen Mann, der dieses Tabu frontal herausforderte und die Unendlichkeit selbst als Gegenstand der Mathematik erschloss. Dieser Mann war **[Georg Cantor](https://kenji.blog/de/p/cantor/)**.
 
 Seine Schaffung der "Mengenlehre" ist zur Grundlage jedes Bereichs der modernen Mathematik geworden. In diesem Artikel werden wir uns detailliert mit Cantors Leben und seinen erstaunlichen mathematischen Errungenschaften befassen.
 
 ## Ein turbulentes Leben
 
-[Georg Cantor](https://kenji.blog/p/cantor/) wurde 1845 in St. Petersburg, Russland, geboren. Sein Vater war ein wohlhabender Kaufmann aus Dänemark und seine Mutter eine russische Musikerin. Da er von klein auf ein außergewöhnliches Talent für Mathematik zeigte, zog er schließlich nach Deutschland und studierte Mathematik an der Universität Berlin.
+[Georg Cantor](https://kenji.blog/de/p/cantor/) wurde 1845 in St. Petersburg, Russland, geboren. Sein Vater war ein wohlhabender Kaufmann aus Dänemark und seine Mutter eine russische Musikerin. Da er von klein auf ein außergewöhnliches Talent für Mathematik zeigte, zog er schließlich nach Deutschland und studierte Mathematik an der Universität Berlin.
 
-An der Universität Berlin wurde er von den damals führenden Persönlichkeiten der mathematischen Welt, **[Karl Weierstraß](https://kenji.blog/p/weierstrass/)** und **Leopold Kronecker**, betreut. Insbesondere Kronecker sollte später zu Cantors größtem Gegner werden.
+An der Universität Berlin wurde er von den damals führenden Persönlichkeiten der mathematischen Welt, **[Karl Weierstraß](https://kenji.blog/de/p/weierstrass/)** und **Leopold Kronecker**, betreut. Insbesondere Kronecker sollte später zu Cantors größtem Gegner werden.
 
 ### Die Suche nach Unendlichkeit und der Konflikt mit Kronecker
 
@@ -44,7 +44,7 @@ graph TD
 
 Die Tatsache, dass seine Theorie nicht verstanden wurde und er weiterhin unerbittlichen Angriffen von seinem ehemaligen Lehrer ausgesetzt war, untergrub Cantors geistige Gesundheit zutiefst. Er entwickelte eine Depression und wurde wiederholt in psychiatrische Kliniken eingewiesen und entlassen.
 
-Allerdings wurde seine Theorie nach und nach von jüngeren Generationen von Mathematikern, wie etwa **[David Hilbert](https://kenji.blog/p/hilbert/)**, unterstützt. Hilbert lobte Cantor mit den höchsten Komplimenten und erklärte: "Aus dem Paradies, das Cantor uns geschaffen, soll uns niemand vertreiben können." Cantor beendete sein Leben 1918 in einer psychiatrischen Klinik in Halle, aber nach seinem Tod etablierte sich die Mengenlehre unumstößlich als die wichtigste Grundlage der Mathematik.
+Allerdings wurde seine Theorie nach und nach von jüngeren Generationen von Mathematikern, wie etwa **[David Hilbert](https://kenji.blog/de/p/hilbert/)**, unterstützt. Hilbert lobte Cantor mit den höchsten Komplimenten und erklärte: "Aus dem Paradies, das Cantor uns geschaffen, soll uns niemand vertreiben können." Cantor beendete sein Leben 1918 in einer psychiatrischen Klinik in Halle, aber nach seinem Tod etablierte sich die Mengenlehre unumstößlich als die wichtigste Grundlage der Mathematik.
 
 ## Mathematische Errungenschaften: Die Unendlichkeit zählen
 
@@ -113,8 +113,8 @@ graph TD
 
 Gibt es eine mittlere Mächtigkeit zwischen der Mächtigkeit der natürlichen Zahlen $\aleph_0$ und der Mächtigkeit der reellen Zahlen $\mathfrak{c}$? Cantor stellte die Hypothese auf, dass "keine solche mittlere Mächtigkeit existiert". Dies ist die **Kontinuumshypothese (CH)**.
 
-Cantor verbrachte einen Großteil seiner späten Jahre damit, diese Hypothese zu beweisen, konnte sie jedoch letztendlich nicht lösen. Später wurde durch die Forschungen von [Kurt Gödel](https://kenji.blog/p/godel/) und Paul Cohen entdeckt, dass die Kontinuumshypothese eine unabhängige Aussage ist, die aus den Standardaxiomen der Mengenlehre (ZFC-Axiome) "weder bewiesen noch widerlegt" werden kann, was der mathematischen Welt erneut einen großen Schock versetzte.
+Cantor verbrachte einen Großteil seiner späten Jahre damit, diese Hypothese zu beweisen, konnte sie jedoch letztendlich nicht lösen. Später wurde durch die Forschungen von [Kurt Gödel](https://kenji.blog/de/p/godel/) und Paul Cohen entdeckt, dass die Kontinuumshypothese eine unabhängige Aussage ist, die aus den Standardaxiomen der Mengenlehre (ZFC-Axiome) "weder bewiesen noch widerlegt" werden kann, was der mathematischen Welt erneut einen großen Schock versetzte.
 
 ## Fazit
 
-[Georg Cantor](https://kenji.blog/p/cantor/) zeigte, dass die menschliche Vernunft den göttlichen Bereich der "Unendlichkeit" erreichen kann. Sein tragisches Leben erzählt die Geschichte der Einsamkeit eines Genies, das seiner Zeit weit voraus war, aber das riesige "Cantor-Paradies", das er erschuf, fasziniert heute noch Mathematiker auf der ganzen Welt. Es ist keine Übertreibung zu sagen, dass die moderne Mathematik auf dem Fundament seiner verzweifelten Suche aufbaut.
+[Georg Cantor](https://kenji.blog/de/p/cantor/) zeigte, dass die menschliche Vernunft den göttlichen Bereich der "Unendlichkeit" erreichen kann. Sein tragisches Leben erzählt die Geschichte der Einsamkeit eines Genies, das seiner Zeit weit voraus war, aber das riesige "Cantor-Paradies", das er erschuf, fasziniert heute noch Mathematiker auf der ganzen Welt. Es ist keine Übertreibung zu sagen, dass die moderne Mathematik auf dem Fundament seiner verzweifelten Suche aufbaut.

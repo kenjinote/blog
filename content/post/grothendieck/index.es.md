@@ -8,9 +8,9 @@ categories: ["Matemáticas", "Biografía"]
 tags: ["Grothendieck", "Geometría Algebraica", "Teoría de Esquemas", "Teoría de Categorías"]
 ---
 
-# [[Alexander Grothendieck](https://kenji.blog/p/grothendieck/): La vida y los logros del mayor matemático del siglo XX](https://kenji.blog/p/grothendieck/)
+# [[Alexander Grothendieck](https://kenji.blog/es/p/grothendieck/): La vida y los logros del mayor matemático del siglo XX](https://kenji.blog/p/grothendieck/)
 
-[Alexander Grothendieck](https://kenji.blog/p/grothendieck/) es uno de los matemáticos más grandes de la historia que provocó un cambio de paradigma fundamental en la comunidad matemática de finales del siglo XX, particularmente en el campo de la geometría algebraica. Sus logros fueron mucho más allá de resolver problemas abiertos individuales; reconstruyeron fundamentalmente el lenguaje mismo y el marco conceptual de las matemáticas. En este artículo, proporcionaremos una explicación detallada de su vida extraordinaria y dramática, así como de su inmenso impacto en las matemáticas modernas.
+[Alexander Grothendieck](https://kenji.blog/es/p/grothendieck/) es uno de los matemáticos más grandes de la historia que provocó un cambio de paradigma fundamental en la comunidad matemática de finales del siglo XX, particularmente en el campo de la geometría algebraica. Sus logros fueron mucho más allá de resolver problemas abiertos individuales; reconstruyeron fundamentalmente el lenguaje mismo y el marco conceptual de las matemáticas. En este artículo, proporcionaremos una explicación detallada de su vida extraordinaria y dramática, así como de su inmenso impacto en las matemáticas modernas.
 
 ## 1. Una infancia tumultuosa y la sombra de la guerra
 
@@ -124,4 +124,4 @@ En la década de 1980, escribió unas enormes memorias tituladas *Récoltes et S
 
 ## Conclusión
 
-[Alexander Grothendieck](https://kenji.blog/p/grothendieck/) fue un gigante que trajo un paisaje completamente nuevo a la disciplina de las matemáticas. Los conceptos que dejó trascienden el mero marco de las matemáticas, demostrando las posibilidades de expansión del pensamiento lógico humano. El mundo profundo que contempló continúa dando ricos frutos hasta el día de hoy.
+[Alexander Grothendieck](https://kenji.blog/es/p/grothendieck/) fue un gigante que trajo un paisaje completamente nuevo a la disciplina de las matemáticas. Los conceptos que dejó trascienden el mero marco de las matemáticas, demostrando las posibilidades de expansión del pensamiento lógico humano. El mundo profundo que contempló continúa dando ricos frutos hasta el día de hoy.

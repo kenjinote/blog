@@ -121,9 +121,9 @@ Paradoks Richard meledak dalam kontradiksi diri karena secara diam-diam mencoba 
 Paradoks Richard ini memberikan kejutan besar bagi dunia matematika pada saat itu.
 "Kata-kata manusia (dan sistem logika), jika tidak berhati-hati, dapat dengan cepat menyebabkan kontradiksi diri. Bagaimana kita bisa membuat matematika menjadi sempurna dan bebas dari kontradiksi?"
 
-Pada tahun 1931, masalah ini akhirnya diselesaikan oleh matematikawan jenius berusia 25 tahun, [Kurt Gödel](https://kenji.blog/p/godel/).
+Pada tahun 1931, masalah ini akhirnya diselesaikan oleh matematikawan jenius berusia 25 tahun, [Kurt Gödel](https://kenji.blog/id/p/godel/).
 Gödel menerjemahkan dan mereproduksi secara sempurna struktur paradoks yang disebabkan oleh Richard menggunakan "ambiguitas bahasa", dengan menggunakan **"rumus matematika yang ketat (bilangan Gödel)"**.
 
-Hasil yang diturunkan darinya adalah **"[Teorema Ketidaklengkapan Gödel](https://kenji.blog/p/godels-incompleteness-theorems/)"** yang terkenal.
+Hasil yang diturunkan darinya adalah **"[Teorema Ketidaklengkapan Gödel](https://kenji.blog/id/p/godels-incompleteness-theorems/)"** yang terkenal.
 Itu adalah penemuan besar yang membuktikan batas pengetahuan umat manusia: "Tidak peduli seberapa ketat Anda membuat aturan matematika, 'kebenaran yang tidak dapat dibuktikan maupun disangkal' pasti akan muncul di dalam aturan tersebut (matematika itu tidak lengkap)".
 

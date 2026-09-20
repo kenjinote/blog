@@ -10,13 +10,13 @@ tags: ["Graph Theory", "Topology", "Euler", "Mathematics"]
 
 ## Introduction
 
-In the history of mathematics, trivial everyday questions or games can sometimes act as catalysts for pioneering entirely new fields of mathematics. One of the most famous and beautiful examples of this is the **"[Seven Bridges of Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)"** problem.
+In the history of mathematics, trivial everyday questions or games can sometimes act as catalysts for pioneering entirely new fields of mathematics. One of the most famous and beautiful examples of this is the **"[Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/)"** problem.
 
 In the 18th century, the city of Königsberg in the Kingdom of Prussia (now Kaliningrad, Russian Federation) was divided by the large Pregel River, and seven bridges were built to connect its islands and both banks. During their evening walks, the citizens of the time came up with the following game: "Is it possible to walk across all seven bridges in the city exactly once and return to the starting point?"
 
-When this seemingly simple puzzle fell into the hands of the genius mathematician **[Leonhard Euler](https://kenji.blog/p/euler/)**, a revolution occurred in the world of mathematics. Euler not only proved that this problem was impossible but, in the process, also re-examined the properties of space from an entirely new perspective, laying the foundations for two critically important fields in modern mathematics: **Graph Theory** and **Topology**.
+When this seemingly simple puzzle fell into the hands of the genius mathematician **[Leonhard Euler](https://kenji.blog/en/p/euler/)**, a revolution occurred in the world of mathematics. Euler not only proved that this problem was impossible but, in the process, also re-examined the properties of space from an entirely new perspective, laying the foundations for two critically important fields in modern mathematics: **Graph Theory** and **Topology**.
 
-In this article, we will delve deeply into the historical background of the [Seven Bridges of Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/) problem, Euler's brilliant method of solving it, and how it connects to modern science and technology, incorporating mathematical details. Go beyond a mere historical introduction and enjoy the beauty of the mathematical structure behind it.
+In this article, we will delve deeply into the historical background of the [Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/) problem, Euler's brilliant method of solving it, and how it connects to modern science and technology, incorporating mathematical details. Go beyond a mere historical introduction and enjoy the beauty of the mathematical structure behind it.
 
 ## The City of Königsberg and the Seven Bridges: Historical Background
 
@@ -36,11 +36,11 @@ Intellectuals and citizens of Königsberg at the time tried to find a route arou
 
 ## From a Bridge Puzzle to a Mathematical Problem: Leibniz's Dream and Euler's Intuition
 
-This rumor among the citizens eventually reached the ears of the great Swiss-born mathematician, **[Leonhard Euler](https://kenji.blog/p/euler/)**, who was staying at the St. Petersburg Academy of Sciences in Russia. It was the year 1735.
+This rumor among the citizens eventually reached the ears of the great Swiss-born mathematician, **[Leonhard Euler](https://kenji.blog/en/p/euler/)**, who was staying at the St. Petersburg Academy of Sciences in Russia. It was the year 1735.
 
-Initially, Euler seemed to feel that "this is not mathematics, but merely a logical game." The mainstream mathematics of the time was [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry (dealing with length, angle, area, volume, etc.), algebra, or the newly founded calculus by Newton and Leibniz. The Königsberg bridge problem does not depend at all on traditional geometric properties such as how many meters long the bridges are, how large the islands are, or at what angle the bridges are built relative to the river. The only important thing was the pure **connection** relationship of "which landmass is connected to which landmass by how many bridges."
+Initially, Euler seemed to feel that "this is not mathematics, but merely a logical game." The mainstream mathematics of the time was [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry (dealing with length, angle, area, volume, etc.), algebra, or the newly founded calculus by Newton and Leibniz. The Königsberg bridge problem does not depend at all on traditional geometric properties such as how many meters long the bridges are, how large the islands are, or at what angle the bridges are built relative to the river. The only important thing was the pure **connection** relationship of "which landmass is connected to which landmass by how many bridges."
 
-This was a completely new type of geometric problem that could not be handled within the metric framework of [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry of the time. However, Euler gradually began to realize the depth of this problem. He recognized it as an important problem related to the "Geometry of Position (Geometria Situs)" or "Analysis Situs" that Gottfried Wilhelm Leibniz once dreamed of, and resolved to earnestly work on solving it.
+This was a completely new type of geometric problem that could not be handled within the metric framework of [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry of the time. However, Euler gradually began to realize the depth of this problem. He recognized it as an important problem related to the "Geometry of Position (Geometria Situs)" or "Analysis Situs" that Gottfried Wilhelm Leibniz once dreamed of, and resolved to earnestly work on solving it.
 
 ## Euler's Abstraction: Stripping Away Unnecessary Information
 
@@ -111,7 +111,7 @@ Expressing this theorem more rigorously using mathematical formulas, for a conne
 
 ## Application to the Königsberg Graph and Conclusion
 
-Now, let's apply this beautiful and perfect theorem deduced by Euler through deductive reasoning to the actual graph of the [Seven Bridges of Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/).
+Now, let's apply this beautiful and perfect theorem deduced by Euler through deductive reasoning to the actual graph of the [Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/).
 
 Let's count the degrees of each of the four abstracted landmasses (vertices $A, B, C, D$).
 
@@ -131,7 +131,7 @@ This was an extremely important moment in the history of mathematics. Because Eu
 
 ## Evolution into Topology: The Birth of the Geometry of Position
 
-Through the Königsberg bridge problem, Euler opened up an entirely new paradigm of geometry that essentially studies only the "way things are connected (continuity and connectivity)" of figures and spaces, without relying at all on traditional [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometric "metric" properties such as distance, length, angle, and area.
+Through the Königsberg bridge problem, Euler opened up an entirely new paradigm of geometry that essentially studies only the "way things are connected (continuity and connectivity)" of figures and spaces, without relying at all on traditional [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometric "metric" properties such as distance, length, angle, and area.
 
 This was the dawn of the field that would later be called **Topology**. In topology, "properties that do not change even if continuously deformed (topological properties)" are studied. A well-known joke is that "a topologist cannot distinguish between a coffee cup and a doughnut." Both are "solid bodies with one hole," and since they can be continuously deformed into each other like clay without cutting or pasting, they are considered to be the "same shape" in the world of topology.
 
@@ -157,8 +157,8 @@ Graph theory is also active across various scales in natural sciences. In chemis
 
 ## Conclusion
 
-In 1736, a single paper published by [Leonhard Euler](https://kenji.blog/p/euler/), "The Solution of a Problem Relating to the Geometry of Position," provided a complete answer to the harmless holiday walking puzzle of the citizens of Königsberg. However, what it truly signified was not the end of a single problem, but the birth of a vast mathematical universe with infinite applications.
+In 1736, a single paper published by [Leonhard Euler](https://kenji.blog/en/p/euler/), "The Solution of a Problem Relating to the Geometry of Position," provided a complete answer to the harmless holiday walking puzzle of the citizens of Königsberg. However, what it truly signified was not the end of a single problem, but the birth of a vast mathematical universe with infinite applications.
 
-The **power of abstraction**, which sharply discerns only the most essential structure of "what is connected to what and how," without being caught up in the superficial shape or size of things. The story of the [Seven Bridges of Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/) teaches us across eras how abstract mathematical thinking can unravel the real world and become a powerful weapon for creating future technologies.
+The **power of abstraction**, which sharply discerns only the most essential structure of "what is connected to what and how," without being caught up in the superficial shape or size of things. The story of the [Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/) teaches us across eras how abstract mathematical thinking can unravel the real world and become a powerful weapon for creating future technologies.
 
 The next time you walk through a city, see bridges over a river, or gaze at a subway map, please think about the structure of "connections" behind it. There, the invisible beautiful threads of mathematics discovered by a genius mathematician over 280 years ago are still stretched out today, as if to envelop us in modern times.

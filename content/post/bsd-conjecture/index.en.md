@@ -63,7 +63,7 @@ The problem of finding rational points has long been studied as a major problem 
 
 ## 3. Mordell's Theorem and the Rank
 
-In 1922, [Louis Mordell](https://kenji.blog/p/mordell/) proved a decisive theorem regarding the structure of the rational point group $E(\mathbb{Q})$. Later, [André Weil](https://kenji.blog/p/weil/) extended this to more general number fields and abelian varieties, and it is known as the Mordell-Weil theorem.
+In 1922, [Louis Mordell](https://kenji.blog/en/p/mordell/) proved a decisive theorem regarding the structure of the rational point group $E(\mathbb{Q})$. Later, [André Weil](https://kenji.blog/en/p/weil/) extended this to more general number fields and abelian varieties, and it is known as the Mordell-Weil theorem.
 
 ### 3.1. Mordell's Theorem (Mordell's Theorem)
 
@@ -134,7 +134,7 @@ flowchart LR
 
 What is decisively important in stating the BSD Conjecture is whether $L(E, s)$ can be analytically continued to the entire complex plane. In particular, we want to know its behavior at $s=1$ as described later, but the product in the definition does not converge at $s=1$.
 
-This problem was completely solved by the **Modularity Theorem** (formerly the Taniyama-Shimura Conjecture), which was fully proved in 2001. Through the monumental work of [Andrew Wiles](https://kenji.blog/p/wiles/), Richard Taylor, Christophe Breuil, Brian Conrad, and Fred Diamond, it was shown that "all elliptic curves over the field of rational numbers are modular."
+This problem was completely solved by the **Modularity Theorem** (formerly the Taniyama-Shimura Conjecture), which was fully proved in 2001. Through the monumental work of [Andrew Wiles](https://kenji.blog/en/p/wiles/), Richard Taylor, Christophe Breuil, Brian Conrad, and Fred Diamond, it was shown that "all elliptic curves over the field of rational numbers are modular."
 
 Being modular means that $L(E, s)$ completely matches the L-function $L(f, s)$ of a certain modular form $f$ of weight 2. The L-function of a modular form is analytically continued to the entire complex plane by Hecke's theory, and satisfies the following functional equations:
 

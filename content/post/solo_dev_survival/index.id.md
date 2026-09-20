@@ -25,9 +25,9 @@ Perusahaan besar menargetkan pasar massal yang memiliki TAM (Total Addressable M
 
 Sebaliknya, kekuatan pengembang solo terletak pada **"titik impas yang sangat rendah"**. Jika bisa menghasilkan keuntungan ratusan ribu yen sebulan, itu sudah cukup menjadikannya sebagai bisnis bagi individu. Di sinilah letak titik manis dari "Teori Long Tail".
 
-## [Hukum Zipf](https://kenji.blog/p/zipfs-law/) ([Zipf's Law](https://kenji.blog/p/zipfs-law/)) dan Distribusi Pasar
+## [Hukum Zipf](https://kenji.blog/id/p/zipfs-law/) ([Zipf's Law](https://kenji.blog/id/p/zipfs-law/)) dan Distribusi Pasar
 
-Hubungan antara ukuran dan jumlah pasar sering kali mengikuti [Hukum Zipf](https://kenji.blog/p/zipfs-law/) atau Hukum Pareto. Jika peringkat pasar adalah $k$ dan ukuran pasarnya (potensi penjualan) adalah $P(k)$, itu dapat dinyatakan dengan model hukum pangkat (power law) berikut.
+Hubungan antara ukuran dan jumlah pasar sering kali mengikuti [Hukum Zipf](https://kenji.blog/id/p/zipfs-law/) atau Hukum Pareto. Jika peringkat pasar adalah $k$ dan ukuran pasarnya (potensi penjualan) adalah $P(k)$, itu dapat dinyatakan dengan model hukum pangkat (power law) berikut.
 
 $$ P(k) \propto \frac{1}{k^\alpha} $$
 

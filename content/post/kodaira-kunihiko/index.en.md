@@ -10,11 +10,11 @@ tags: ["Kodaira Kunihiko", "Fields Medal", "Complex Geometry"]
 
 ## 1. Introduction
 
-The great Japanese mathematician **[Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/)** (1915–1997) was Japan's first Fields Medalist and made immense contributions to algebraic geometry and the theory of complex manifolds in the 20th century. His work profoundly influenced not only modern mathematics but also theoretical physics, such as string theory. In this article, we explore Kodaira's life and his mathematically intuitive world.
+The great Japanese mathematician **[Kunihiko Kodaira](https://kenji.blog/en/p/kodaira-kunihiko/)** (1915–1997) was Japan's first Fields Medalist and made immense contributions to algebraic geometry and the theory of complex manifolds in the 20th century. His work profoundly influenced not only modern mathematics but also theoretical physics, such as string theory. In this article, we explore Kodaira's life and his mathematically intuitive world.
 
 ## 2. Life Trajectory
 
-[Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/) was born in Tokyo in 1915. He enjoyed playing the piano from a young age, and it is said that his deep love for music later influenced his mathematical thinking. His quote, "Understanding mathematics is like listening to music and feeling it is beautiful," is famous.
+[Kunihiko Kodaira](https://kenji.blog/en/p/kodaira-kunihiko/) was born in Tokyo in 1915. He enjoyed playing the piano from a young age, and it is said that his deep love for music later influenced his mathematical thinking. His quote, "Understanding mathematics is like listening to music and feeling it is beautiful," is famous.
 
 ```mermaid
 flowchart TD
@@ -74,4 +74,4 @@ After returning to Japan in 1967, he taught at the University of Tokyo and other
 
 ## 5. Conclusion
 
-The mathematics left by [Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/) is like a grand symphony where analysis, algebra, and geometry are beautifully harmonized. His intuitive approach and deep insights continue to fascinate many mathematicians today.
+The mathematics left by [Kunihiko Kodaira](https://kenji.blog/en/p/kodaira-kunihiko/) is like a grand symphony where analysis, algebra, and geometry are beautifully harmonized. His intuitive approach and deep insights continue to fascinate many mathematicians today.

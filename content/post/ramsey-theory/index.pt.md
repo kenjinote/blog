@@ -18,7 +18,7 @@ Imagine que 6 pessoas se reúnem em uma festa. Alguns podem ser velhos conhecido
 
 Não estamos dizendo que isso acontece "na maioria das vezes". Independentemente de como os relacionamentos estejam configurados, o trio será encontrado sem exceção. Além disso, o número 6 é o mínimo. Com 5 pessoas, é perfeitamente possível construir uma configuração na qual nenhum dos dois tipos de trio se forme.
 
-Essa pequena surpresa é a porta de entrada para a **[Teoria de Ramsey](https://kenji.blog/p/ramsey-theory/)**. Por mais que você particione ou subdivida uma grande estrutura de maneira complexa, se ela for grande o suficiente, será impossível evitar completamente o surgimento de uma subestrutura menor com propriedades homogêneas. Essa área da matemática estuda justamente essa "regularidade inevitável".
+Essa pequena surpresa é a porta de entrada para a **[Teoria de Ramsey](https://kenji.blog/pt/p/ramsey-theory/)**. Por mais que você particione ou subdivida uma grande estrutura de maneira complexa, se ela for grande o suficiente, será impossível evitar completamente o surgimento de uma subestrutura menor com propriedades homogêneas. Essa área da matemática estuda justamente essa "regularidade inevitável".
 
 No entanto, isso não significa que qualquer regra arbitrária surja do caos. Só se torna uma proposição matemática quando definimos com precisão qual é o objeto de estudo, em quantas classes ele é classificado e qual formato estamos procurando. Comecemos por um exemplo simples e intuitivo que pode ser desenhado com 6 pontos em uma folha de papel.
 
@@ -153,7 +153,7 @@ $$
 
 Para 6 pessoas, a média é de exatamente 5 triângulos. Embora diferentes triângulos compartilhem arestas e não sejam independentes entre si, a linearidade da esperança não requer independência.
 
-Contudo, o fato de o valor esperado ser estritamente positivo não implica que triângulos existam em todas as colorações possíveis. Para 5 pessoas, a média é de 2,5 triângulos, mas ainda assim existem contraexemplos com exatamente 0 triângulos. Não confundir o "caso médio" com o "pior caso" é uma lição fundamental proporcionada pela [Teoria de Ramsey](https://kenji.blog/p/ramsey-theory/).
+Contudo, o fato de o valor esperado ser estritamente positivo não implica que triângulos existam em todas as colorações possíveis. Para 5 pessoas, a média é de 2,5 triângulos, mas ainda assim existem contraexemplos com exatamente 0 triângulos. Não confundir o "caso médio" com o "pior caso" é uma lição fundamental proporcionada pela [Teoria de Ramsey](https://kenji.blog/pt/p/ramsey-theory/).
 
 ## 7. Verificando todas as 32.768 possibilidades em Python
 
@@ -254,7 +254,7 @@ Os três pontos essenciais a reter são:
 - **A existência de um padrão difere do seu significado prático.** Encontrar um triângulo monocromático ou uma subsequência crescente não dita as propriedades globais nem relações de causa e efeito no conjunto de dados.
 - **Toda garantia matemática depende de premissas e condições bem definidas.** É necessário especificar se a relação é simétrica, se todos os pares podem ser bipartidos e qual subestrutura exata está sendo buscada.
 
-O fascínio da [Teoria de Ramsey](https://kenji.blog/p/ramsey-theory/) não reside em tornar um sistema complexo simples, mas sim em demonstrar que, mesmo que o todo permaneça caótico e desordenado, é absolutamente impossível eliminar pequenas regularidades locais dentro dele. Com apenas alguns pontos e linhas traçados no papel, podemos comprovar a força desse pensamento matemático.
+O fascínio da [Teoria de Ramsey](https://kenji.blog/pt/p/ramsey-theory/) não reside em tornar um sistema complexo simples, mas sim em demonstrar que, mesmo que o todo permaneça caótico e desordenado, é absolutamente impossível eliminar pequenas regularidades locais dentro dele. Com apenas alguns pontos e linhas traçados no papel, podemos comprovar a força desse pensamento matemático.
 
 ### Referências
 

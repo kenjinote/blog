@@ -79,9 +79,9 @@ Therefore, the win rate when you change doors is $\frac{2}{3}$, which is **doubl
 
 ---
 
-## 3. Strict Proof Using [Bayes' Theorem](https://kenji.blog/p/bayes-theorem/)
+## 3. Strict Proof Using [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/)
 
-To strictly solve this problem mathematically, we use "[Bayes' Theorem](https://kenji.blog/p/bayes-theorem/)" to calculate conditional probabilities.
+To strictly solve this problem mathematically, we use "[Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/)" to calculate conditional probabilities.
 
 $$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 
@@ -111,7 +111,7 @@ Next, we find the total probability $P(M_B)$ that the host opens Door B using th
 $$ P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C) $$
 $$ P(M_B) = \left(\frac{1}{2} \times \frac{1}{3}\right) + \left(0 \times \frac{1}{3}\right) + \left(1 \times \frac{1}{3}\right) = \frac{1}{6} + 0 + \frac{1}{3} = \frac{1}{2} $$
 
-Finally, we apply [Bayes' Theorem](https://kenji.blog/p/bayes-theorem/) to calculate the posterior probabilities for Door A and Door C.
+Finally, we apply [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/) to calculate the posterior probabilities for Door A and Door C.
 
 **Probability that the new car is behind Door A (if you stay):**
 $$ P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{\frac{1}{2} \times \frac{1}{3}}{\frac{1}{2}} = \frac{1}{3} $$

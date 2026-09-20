@@ -21,7 +21,7 @@ Contoh khas dari ini adalah **"pencacahan objek dengan simetri"**. Simetri menga
 
 Misalnya, misalkan kita membuat kalung dengan merangkai empat manik-manik menjadi sebuah simpul. Warna manik-manik yang tersedia adalah "merah" dan "biru". Dalam hal ini, berapa banyak desain kalung yang berbeda secara total?
 
-Dalam artikel ini, berawal dari pertanyaan yang tampaknya sederhana ini, kita akan menjelaskan secara rinci alat matematika yang kuat untuk menghitung dengan mempertimbangkan simetri, yaitu **"[Lema Burnside](https://kenji.blog/p/burnsides-lemma/)"**, mulai dari dasar-dasar hingga aplikasinya. Ini adalah topik yang sempurna untuk pengantar praktis ke Teori Grup, jadi mohon tetap bersama kami sampai akhir.
+Dalam artikel ini, berawal dari pertanyaan yang tampaknya sederhana ini, kita akan menjelaskan secara rinci alat matematika yang kuat untuk menghitung dengan mempertimbangkan simetri, yaitu **"[Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/)"**, mulai dari dasar-dasar hingga aplikasinya. Ini adalah topik yang sempurna untuk pengantar praktis ke Teori Grup, jadi mohon tetap bersama kami sampai akhir.
 
 ## 2. Jebakan Perhitungan Sederhana
 
@@ -79,9 +79,9 @@ Misalnya, penerapan operasi $G$ ke pola "Merah-Biru-Biru-Biru" menghasilkan 4 po
 
 Ke-4 pola ini termasuk dalam "Orbit" yang sama. "Jumlah desain yang pada dasarnya berbeda" yang ingin kita ketahui tidak lain adalah **"menjadi berapa banyak orbit yang berbeda seluruh himpunan $X$ dibagi"**. Ini dilambangkan dengan rumus $|X/G|$.
 
-## 5. [Lema Burnside](https://kenji.blog/p/burnsides-lemma/)
+## 5. [Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/)
 
-Di sini akhirnya, bintang kita kali ini, **[Lema Burnside](https://kenji.blog/p/burnsides-lemma/)**, muncul. Ini terkadang juga disebut lema Cauchy-Frobenius. Ini adalah teorema mencengangkan yang memungkinkan kita menghitung dengan mudah "jumlah orbit (jumlah pola yang pada dasarnya berbeda)" ketika grup $G$ bekerja pada himpunan berhingga $X$.
+Di sini akhirnya, bintang kita kali ini, **[Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/)**, muncul. Ini terkadang juga disebut lema Cauchy-Frobenius. Ini adalah teorema mencengangkan yang memungkinkan kita menghitung dengan mudah "jumlah orbit (jumlah pola yang pada dasarnya berbeda)" ketika grup $G$ bekerja pada himpunan berhingga $X$.
 
 Rumus untuk teorema adalah sebagai berikut:
 
@@ -97,13 +97,13 @@ Mari kita lihat arti dari masing-masing simbol yang muncul dalam rumus secara te
 - $X^g$: Kumpulan pola yang "tidak berubah (tetap)" bahkan ketika operasi $g$ dilakukan.
 - $|X^g|$: Jumlah pola yang ditetapkan oleh operasi $g$. Ini disebut **"jumlah titik tetap"**.
 
-Apa arti rumus ini sangat intuitif. [Lema Burnside](https://kenji.blog/p/burnsides-lemma/) menegaskan bahwa kita dapat memperoleh jumlah orbit yang diinginkan dengan **"menghitung 'jumlah pola yang tidak berubah (jumlah titik tetap)' untuk setiap operasi, menjumlahkan semuanya, dan membaginya dengan jumlah total operasi (yaitu mengambil rata-ratanya)"**.
+Apa arti rumus ini sangat intuitif. [Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/) menegaskan bahwa kita dapat memperoleh jumlah orbit yang diinginkan dengan **"menghitung 'jumlah pola yang tidak berubah (jumlah titik tetap)' untuk setiap operasi, menjumlahkan semuanya, dan membaginya dengan jumlah total operasi (yaitu mengambil rata-ratanya)"**.
 
 Kekuatan terbesar dari teorema ini adalah kemampuannya memecah penilaian kompleks tentang duplikat menjadi kalkulasi independen dan sederhana dari "menghitung apa yang tidak berubah di bawah setiap operasi".
 
 ## 6. Penerapan dan Perhitungan untuk Masalah Kalung
 
-Sekarang, mari kita benar-benar menggunakan [Lema Burnside](https://kenji.blog/p/burnsides-lemma/) untuk menghitung jumlah desain untuk sebuah kalung dengan 4 manik-manik (2 warna, merah dan biru).
+Sekarang, mari kita benar-benar menggunakan [Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/) untuk menghitung jumlah desain untuk sebuah kalung dengan 4 manik-manik (2 warna, merah dan biru).
 Jumlah elemen pada himpunan pola asli $X$ adalah $16$. Kita akan menyelidiki jumlah titik tetap $|X^g|$ untuk setiap operasi $g \in G$ dari grup $G$ satu demi satu.
 
 ### 6.1. Titik tetap untuk tidak melakukan apa-apa ($R_0$)
@@ -128,7 +128,7 @@ Oleh karena itu, hanya ada $2$ cara: "semua merah" atau "semua biru".
 $$ |X^{R_{270}}| = 2 $$
 
 ### 6.5. Perhitungan hasil akhir
-Sekarang, kita memiliki semua angka titik tetap untuk semua operasi. Kita mensubstitusikan angka-angka ini ke dalam rumus [Lema Burnside](https://kenji.blog/p/burnsides-lemma/).
+Sekarang, kita memiliki semua angka titik tetap untuk semua operasi. Kita mensubstitusikan angka-angka ini ke dalam rumus [Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/).
 
 $$
 |X/G| = \frac{|X^{R_0}| + |X^{R_{90}}| + |X^{R_{180}}| + |X^{R_{270}}|}{|G|}
@@ -188,7 +188,7 @@ $$
 
 Secara kebetulan, dalam kasus spesifik ini (4 manik-manik, 2 warna), ditemukan bahwa tipe-tipe yang pada dasarnya berbeda tetap **$6$ cara** bahkan ketika refleksi dipertimbangkan. Ini karena ke-$6$ pola yang kita temukan sebelumnya sudah menyertakan pola pantulannya sendiri (jika rotasi disertakan). Namun, jika jumlah manik-manik atau warna meningkat, hasilnya akan sangat berbeda antara kelompok rotasi saja $C_n$ dan grup dihedral $D_n$.
 
-## 8. Sketsa Bukti [Lema Burnside](https://kenji.blog/p/burnsides-lemma/)
+## 8. Sketsa Bukti [Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/)
 
 Mengapa mengambil "rata-rata jumlah titik tetap" menghasilkan "jumlah orbit"? Di balik ini terletak sebuah teorema yang sangat penting dalam teori grup yang disebut **"Teorema Orbit-Penstabil"** (Orbit-Stabilizer Theorem).
 
@@ -215,27 +215,27 @@ $$
 |G| \sum_{x \in X} \frac{1}{|O_x|} = |G| \times |X/G|
 $$
 
-Dengan membagi kedua ruas dengan $|G|$, kita mendapatkan rumus [Lema Burnside](https://kenji.blog/p/burnsides-lemma/). Ini adalah pengembangan logis yang sangat indah dan canggih.
+Dengan membagi kedua ruas dengan $|G|$, kita mendapatkan rumus [Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/). Ini adalah pengembangan logis yang sangat indah dan canggih.
 
 ## 9. Pengembangan menjadi Teorema Pencacahan Pólya
 
-[Lema Burnside](https://kenji.blog/p/burnsides-lemma/) itu kuat, tetapi menemukan jumlah titik tetap satu per satu secara manual akan menjadi sulit jika skala permasalahan membesar. Misalnya, untuk masalah seperti "Ada berapa cara mengecat setiap sisi dodesahedron beraturan dengan 3 warna?", ada 60 tipe operasi rotasi, membuat perhitungannya menjadi sangat besar.
+[Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/) itu kuat, tetapi menemukan jumlah titik tetap satu per satu secara manual akan menjadi sulit jika skala permasalahan membesar. Misalnya, untuk masalah seperti "Ada berapa cara mengecat setiap sisi dodesahedron beraturan dengan 3 warna?", ada 60 tipe operasi rotasi, membuat perhitungannya menjadi sangat besar.
 
 Menggeneralisasikan hal ini lebih jauh dan mengaktifkan penghitungan mekanis menggunakan polinomial aljabar (Indeks Siklus) adalah **"Teorema Pencacahan Pólya"**.
 
-[Lema Burnside](https://kenji.blog/p/burnsides-lemma/) adalah langkah penting menuju pemahaman teorema Pólya, yang meletakkan dasar untuk pencacahan teoretis grup.
+[Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/) adalah langkah penting menuju pemahaman teorema Pólya, yang meletakkan dasar untuk pencacahan teoretis grup.
 
-## 10. Latar Belakang Historis [Lema Burnside](https://kenji.blog/p/burnsides-lemma/)
+## 10. Latar Belakang Historis [Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/)
 
 Faktanya, teorema ini tidak pertama kali ditemukan oleh William Burnside. Itu diperkenalkan dalam buku Burnside "Teori Grup Orde Hingga" yang diterbitkan pada tahun 1897 dan menjadi populer secara luas, sehingga menyandang namanya.
 
-Namun, secara historis, [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) telah menerbitkan sebuah kasus khusus dari teorema ini (mengenai grup simetris) pada tahun 1845, dan kemudian pada tahun 1887 Ferdinand Georg Frobenius memberikan bukti untuk grup hingga secara umum.
+Namun, secara historis, [Augustin-Louis Cauchy](https://kenji.blog/id/p/cauchy/) telah menerbitkan sebuah kasus khusus dari teorema ini (mengenai grup simetris) pada tahun 1845, dan kemudian pada tahun 1887 Ferdinand Georg Frobenius memberikan bukti untuk grup hingga secara umum.
 
 Oleh karena itu, orang-orang yang mencoba keras tentang sejarah matematika kadang-kadang dengan bercanda menyebut teorema ini **"Lema Cauchy-Frobenius"** atau **"Lema yang bukan milik Burnside"**. Terlepas dari asal usul namanya, besarnya peran yang dimainkan lema ini dalam sejarah teori grup dan kombinatorika tidak terukur.
 
 ## 11. Contoh 2: Mewarnai Sisi-sisi Kubus
 
-Untuk menyadari lebih lanjut kehebatan [Lema Burnside](https://kenji.blog/p/burnsides-lemma/), mari kita berikan contoh terkenal lainnya. Masalahnya: "Ada berapa cara untuk mengecat 6 sisi kubus dengan 2 warna, merah dan biru?" Di sini juga, kita memperlakukan warna yang menjadi sama ketika diputar sebagai hal yang identik.
+Untuk menyadari lebih lanjut kehebatan [Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/), mari kita berikan contoh terkenal lainnya. Masalahnya: "Ada berapa cara untuk mengecat 6 sisi kubus dengan 2 warna, merah dan biru?" Di sini juga, kita memperlakukan warna yang menjadi sama ketika diputar sebagai hal yang identik.
 
 Grup rotasi kubus terdiri dari 24 operasi berikut:
 1. **Tidak melakukan apa-apa**: 1 operasi
@@ -245,17 +245,17 @@ Grup rotasi kubus terdiri dari 24 operasi berikut:
 
 Ada total $1 + 9 + 8 + 6 = 24$ elemen ($|G| = 24$).
 
-Dengan menghitung jumlah titik tetap (pewarnaan di mana warna tidak berubah) untuk setiap operasi rotasi dan mengambil rata-rata, jumlah total cara untuk mewarnai kubus dapat ditemukan. Bahkan untuk masalah yang sangat sulit dihitung secara intuitif, penggunaan [Lema Burnside](https://kenji.blog/p/burnsides-lemma/) menguranginya menjadi masalah "lokal" dari simetri di sepanjang masing-masing sumbu rotasi. Akibatnya, diketahui bahwa jumlah cara untuk mewarnai kubus ini adalah **$10$ cara**.
+Dengan menghitung jumlah titik tetap (pewarnaan di mana warna tidak berubah) untuk setiap operasi rotasi dan mengambil rata-rata, jumlah total cara untuk mewarnai kubus dapat ditemukan. Bahkan untuk masalah yang sangat sulit dihitung secara intuitif, penggunaan [Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/) menguranginya menjadi masalah "lokal" dari simetri di sepanjang masing-masing sumbu rotasi. Akibatnya, diketahui bahwa jumlah cara untuk mewarnai kubus ini adalah **$10$ cara**.
 
 ## 12. Kesimpulan
 
-Bagaimana? Dalam artikel ini, dengan menggunakan jumlah desain kalung sebagai contoh, kami menjelaskan [Lema Burnside](https://kenji.blog/p/burnsides-lemma/) secara rinci.
+Bagaimana? Dalam artikel ini, dengan menggunakan jumlah desain kalung sebagai contoh, kami menjelaskan [Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/) secara rinci.
 
 *   Permutasi dan kombinasi sederhana tidak dapat menangani duplikasi akibat simetri dengan baik.
 *   Simetri dapat dideskripsikan secara matematis menggunakan **"Grup"**.
-*   Dengan menggunakan **[Lema Burnside](https://kenji.blog/p/burnsides-lemma/)**, jumlah pola yang secara substansial berbeda dapat dihitung dengan prosedur mekanis "merata-ratakan jumlah titik tetap di setiap operasi".
+*   Dengan menggunakan **[Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/)**, jumlah pola yang secara substansial berbeda dapat dihitung dengan prosedur mekanis "merata-ratakan jumlah titik tetap di setiap operasi".
 *   Teorema ini didasarkan pada properti mendalam dari teori grup yang disebut Teorema Orbit-Penstabil.
 
-[Lema Burnside](https://kenji.blog/p/burnsides-lemma/) adalah teorema yang sangat praktis yang diterapkan dalam berbagai bidang, seperti menghitung isomer molekuler dalam bidang kimia, menentukan isomorfisme grafis dalam teori graf, dan bahkan mekanika statistik dalam ilmu fisika.
+[Lema Burnside](https://kenji.blog/id/p/burnsides-lemma/) adalah teorema yang sangat praktis yang diterapkan dalam berbagai bidang, seperti menghitung isomer molekuler dalam bidang kimia, menentukan isomorfisme grafis dalam teori graf, dan bahkan mekanika statistik dalam ilmu fisika.
 
 Melalui dasar-dasar yang diperkenalkan kali ini, kami harap Anda dapat melihat sekilas bagaimana bidang matematika yang disebut "Teori Grup", yang cenderung terlihat abstrak, dapat memecahkan masalah dunia nyata yang nyata dengan cemerlang.

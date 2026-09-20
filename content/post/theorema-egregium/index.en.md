@@ -8,7 +8,7 @@ categories: ["mathematics", "science"]
 tags: ["Geometry", "Gauss", "Pizza Theorem", "Theorema Egregium", "Differential Geometry"]
 ---
 
-In the world of mathematics, concepts that seem abstract and difficult at first glance can sometimes be useful in unexpected situations in our daily lives. One of the best examples of this is the ** Theorema Egregium ** discovered by [Carl Friedrich Gauss](https://kenji.blog/p/gauss/). This theorem is known as one of the most important and beautiful results in the field of differential geometry.
+In the world of mathematics, concepts that seem abstract and difficult at first glance can sometimes be useful in unexpected situations in our daily lives. One of the best examples of this is the ** Theorema Egregium ** discovered by [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/). This theorem is known as one of the most important and beautiful results in the field of differential geometry.
 
 In this article, we will delve deeply, starting from the mathematical meaning of this ** Theorema Egregium ** , exploring what a surface is, and uncovering why this theorem is extremely useful when we eat pizza.
 
@@ -92,10 +92,10 @@ Beyond just how to eat pizza, this principle can be seen everywhere in engineeri
 - ** Plant leaves **: Many plant leaves and petals have naturally evolved into wavy shapes to withstand wind and their own weight.
 - ** Architecture **: In buildings that cover large spaces with thin materials, such as shell structures, the mechanical strength and geometric properties of curved surfaces are utilized.
 
-This theorem discovered by Gauss was later extended to higher-dimensional manifolds by his student [Bernhard Riemann](https://kenji.blog/p/riemann/) (Riemannian geometry), and eventually became the mathematical foundation for describing gravity as the "distortion of spacetime" in Albert Einstein's general theory of relativity.
+This theorem discovered by Gauss was later extended to higher-dimensional manifolds by his student [Bernhard Riemann](https://kenji.blog/en/p/riemann/) (Riemannian geometry), and eventually became the mathematical foundation for describing gravity as the "distortion of spacetime" in Albert Einstein's general theory of relativity.
 
 ## 5. Conclusion
 
 Behind the act of "folding the crust of a pizza," which we do unconsciously, lay deep and beautiful mathematical laws that connect even to Einstein's cosmology.
 
-The ** Theorema Egregium ** can be said to be the most delicious and easy-to-understand example showing how abstract mathematics governs the real world. The next time you eat pizza, please enjoy your perfectly folded slice while thinking of [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) and his great discovery.
+The ** Theorema Egregium ** can be said to be the most delicious and easy-to-understand example showing how abstract mathematics governs the real world. The next time you eat pizza, please enjoy your perfectly folded slice while thinking of [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/) and his great discovery.

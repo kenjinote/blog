@@ -59,7 +59,7 @@ To simulate a system of merely $N = 300$ quantum bits (qubits), one would need t
 
 It was David Deutsch, a physicist at the University of Oxford, who rigorously formalized Feynman's intuitive vision within theoretical computer science. In his groundbreaking 1985 paper, Deutsch pointed out that the "Strong Church-Turing Thesis"—which asserts that any physical process can be efficiently simulated by a probabilistic Turing machine—might not hold in a physical universe governed by quantum mechanics.
 
-Deutsch extended [Alan Turing](https://kenji.blog/p/turing/)'s deterministic model to formulate the concept of the "Quantum Turing Machine" (QTM). In this machine, internal states, tape symbols, and head positions can exist in quantum superpositions, with state transitions governed by unitary operators $U$ .
+Deutsch extended [Alan Turing](https://kenji.blog/en/p/turing/)'s deterministic model to formulate the concept of the "Quantum Turing Machine" (QTM). In this machine, internal states, tape symbols, and head positions can exist in quantum superpositions, with state transitions governed by unitary operators $U$ .
 
 The foundational unit of quantum computation is the "quantum bit" or "qubit." Whereas a classical bit is restricted to the definite states $0$ or $1$ , a qubit can exist in an arbitrary linear superposition of $|0\rangle$ and $|1\rangle$ :
 
@@ -1826,7 +1826,7 @@ In modern digital society, public-key cryptography is the foundation that ensure
 
 Let's first mathematically formulate the mechanism of RSA cryptography. Key generation in RSA cryptography begins by randomly selecting two massive prime numbers $p$ and $q$ (currently, sizes of 2048 bits or more each are recommended). We calculate the composite number $N = pq$, which is the product of these, and publish this to the public as part of the public key. Next, we calculate Euler's totient function $\phi(N)$. From the properties of prime numbers, this becomes $\phi(N) = (p-1)(q-1)$.
 
-The exponent $e$, which becomes the key for encryption, is chosen such that $1 < e < \phi(N)$ and $\text{gcd}(e, \phi(N)) = 1$ (i.e., coprime to $\phi(N)$). Then, the decryption exponent $d$, which becomes the private key, is calculated to satisfy the congruence $ed \equiv 1 \pmod{\phi(N)}$. This can be easily found in polynomial time using the extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm.
+The exponent $e$, which becomes the key for encryption, is chosen such that $1 < e < \phi(N)$ and $\text{gcd}(e, \phi(N)) = 1$ (i.e., coprime to $\phi(N)$). Then, the decryption exponent $d$, which becomes the private key, is calculated to satisfy the congruence $ed \equiv 1 \pmod{\phi(N)}$. This can be easily found in polynomial time using the extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm.
 
 If the plaintext is an integer $M$ (where $0 \le M < N$), encryption is performed by modular exponentiation modulo $N$ as follows:
 
@@ -1854,7 +1854,7 @@ However, the quantum algorithm published by Peter Shor in 1994 overturned this p
 
 The genius insight of Shor's algorithm lies in the fact that "it reduced the prime factorization problem to a period-finding problem, rather than solving it directly." By pure number theory theorems, it is proven that prime factorization is equivalent to a problem called the "Order-Finding Problem". This reduction process itself is entirely a classical algorithm and does not require quantum computation.
 
-Let's follow the procedure for prime factorizing a given composite number $N$. First, choose a random integer $a$ satisfying $1 < a < N$. Using the [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm, calculate the greatest common divisor $\text{gcd}(a, N)$. If this is greater than $1$, fortunately, we have already found a non-trivial factor of $N$, and the computation is complete (however, the probability of this happening by chance for massive numbers like those used in cryptography is astronomically low).
+Let's follow the procedure for prime factorizing a given composite number $N$. First, choose a random integer $a$ satisfying $1 < a < N$. Using the [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm, calculate the greatest common divisor $\text{gcd}(a, N)$. If this is greater than $1$, fortunately, we have already found a non-trivial factor of $N$, and the computation is complete (however, the probability of this happening by chance for massive numbers like those used in cryptography is astronomically low).
 
 If $\text{gcd}(a, N) = 1$, $a$ and $N$ are coprime. Here, we define a modular exponential function as follows:
 
@@ -2192,7 +2192,7 @@ $$
 G = U_s U_w = (2|s\rangle\langle s| - I) (I - 2|w\rangle\langle w|)
 $$
 
-Here, an exquisitely beautiful theorem woven from [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry and linear algebra takes center stage: "The composition of two reflections across two intersecting lines is a pure rotation by twice the angle between the two lines."
+Here, an exquisitely beautiful theorem woven from [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry and linear algebra takes center stage: "The composition of two reflections across two intersecting lines is a pure rotation by twice the angle between the two lines."
 
 From the analysis so far, it is guaranteed that no matter which of these operations is applied, the state vector always remains strictly within the two-dimensional real vector space (plane) spanned by $|s^\perp\rangle$ and $|w\rangle$. Let us re-examine the action of each operator within this plane:
 

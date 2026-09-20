@@ -95,10 +95,10 @@ Durante la Segunda Guerra Mundial, la Alemania nazi utilizó "Enigma", la máqui
 
 Dado que los rotores giraban cada vez que se escribía una letra en el teclado, incluso si se escribía la misma letra consecutivamente, se emitían diferentes letras cifradas (el pináculo de la criptografía polialfabética). Su espacio de claves (combinaciones de configuraciones) era de aproximadamente $1.58 \times 10^{19}$ (unos 15,8 trillones), y se consideraba imposible de descifrar por fuerza bruta con la tecnología de la época.
 
-## [Alan Turing](https://kenji.blog/p/turing/) y la "Bombe"
+## [Alan Turing](https://kenji.blog/es/p/turing/) y la "Bombe"
 El equipo de descifrado británico de Bletchley Park, basándose en los logros iniciales de matemáticos polacos como Marian Rejewski, desafió a la inexpugnable Enigma.
 
-En particular, [Alan Turing](https://kenji.blog/p/turing/) ([Alan Turing](https://kenji.blog/p/turing/)) utilizó conjeturas de texto plano que correspondían a partes del texto cifrado (Crib) para desarrollar la "Bombe (Bombe)", una máquina de descifrado electromecánica. La Bombe detectaba rápidamente contradicciones lógicas, descartando rápidamente configuraciones imposibles de los rotores y teniendo éxito en descifrar Enigma. Se dice que este logro adelantó la victoria de los Aliados en varios años.
+En particular, [Alan Turing](https://kenji.blog/es/p/turing/) ([Alan Turing](https://kenji.blog/es/p/turing/)) utilizó conjeturas de texto plano que correspondían a partes del texto cifrado (Crib) para desarrollar la "Bombe (Bombe)", una máquina de descifrado electromecánica. La Bombe detectaba rápidamente contradicciones lógicas, descartando rápidamente configuraciones imposibles de los rotores y teniendo éxito en descifrar Enigma. Se dice que este logro adelantó la victoria de los Aliados en varios años.
 
 ---
 

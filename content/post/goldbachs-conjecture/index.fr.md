@@ -29,7 +29,7 @@ Comme vous pouvez le voir, pour les petits nombres pairs, ils peuvent effectivem
 
 ## Contexte Historique
 
-Cette conjecture a été mentionnée pour la première fois dans une lettre envoyée en 1742 par le mathématicien prussien **Christian Goldbach** au grand mathématicien suisse **[Leonhard Euler](https://kenji.blog/p/euler/)**.
+Cette conjecture a été mentionnée pour la première fois dans une lettre envoyée en 1742 par le mathématicien prussien **Christian Goldbach** au grand mathématicien suisse **[Leonhard Euler](https://kenji.blog/fr/p/euler/)**.
 
 ```mermaid
 graph TD

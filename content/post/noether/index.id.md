@@ -8,17 +8,17 @@ categories: ["Matematika", "Biografi"]
 tags: ["Emmy Noether", "Aljabar Abstrak", "Fisika", "Perempuan di STEM"]
 ---
 
-Dalam sejarah matematika dan fisika, terdapat seorang jenius yang memberikan beberapa kontribusi paling signifikan, namun namanya tidak banyak dikenal oleh masyarakat umum. Orang tersebut adalah matematikawan kelahiran Jerman, **[Emmy Noether](https://kenji.blog/p/noether/)** (1882–1935). Sering dijuluki sebagai "Ibu Aljabar Modern", dia benar-benar mengubah bidang aljabar abstrak. Selanjutnya, dalam bidang fisika, dia membuktikan **Teorema Noether**, yang dengan elegan menghubungkan simetri dengan hukum kekekalan, meletakkan dasar bagi teori relativitas umum Einstein dan fisika partikel modern.
+Dalam sejarah matematika dan fisika, terdapat seorang jenius yang memberikan beberapa kontribusi paling signifikan, namun namanya tidak banyak dikenal oleh masyarakat umum. Orang tersebut adalah matematikawan kelahiran Jerman, **[Emmy Noether](https://kenji.blog/id/p/noether/)** (1882–1935). Sering dijuluki sebagai "Ibu Aljabar Modern", dia benar-benar mengubah bidang aljabar abstrak. Selanjutnya, dalam bidang fisika, dia membuktikan **Teorema Noether**, yang dengan elegan menghubungkan simetri dengan hukum kekekalan, meletakkan dasar bagi teori relativitas umum Einstein dan fisika partikel modern.
 
-Setelah kematiannya, Albert Einstein menulis penghormatan di The New York Times yang menyatakan: "Dalam penilaian para matematikawan hidup yang paling kompeten, Fräulein Noether adalah jenius matematika kreatif paling signifikan yang pernah dihasilkan sejak dimulainya pendidikan tinggi bagi perempuan." Dalam artikel ini, kita akan menjelajahi secara menyeluruh kehidupan [Emmy Noether](https://kenji.blog/p/noether/), yang mengatasi berbagai kesulitan dan mempertahankan hasrat murni terhadap ilmu pengetahuan, serta warisan luar biasa yang ditinggalkannya.
+Setelah kematiannya, Albert Einstein menulis penghormatan di The New York Times yang menyatakan: "Dalam penilaian para matematikawan hidup yang paling kompeten, Fräulein Noether adalah jenius matematika kreatif paling signifikan yang pernah dihasilkan sejak dimulainya pendidikan tinggi bagi perempuan." Dalam artikel ini, kita akan menjelajahi secara menyeluruh kehidupan [Emmy Noether](https://kenji.blog/id/p/noether/), yang mengatasi berbagai kesulitan dan mempertahankan hasrat murni terhadap ilmu pengetahuan, serta warisan luar biasa yang ditinggalkannya.
 
 ## 1. Kehidupan Awal dan Kesulitan Awal
 
-Amalie [Emmy Noether](https://kenji.blog/p/noether/) lahir pada tanggal 23 Maret 1882, di Erlangen, Bavaria, Jerman. Ayahnya, Max Noether, juga seorang ahli matematika terkemuka yang memberikan kontribusi signifikan pada geometri aljabar. Keluarga Noether adalah keturunan Yahudi, dan ia tumbuh dalam lingkungan rumah yang sangat menghargai pengejaran akademis.
+Amalie [Emmy Noether](https://kenji.blog/id/p/noether/) lahir pada tanggal 23 Maret 1882, di Erlangen, Bavaria, Jerman. Ayahnya, Max Noether, juga seorang ahli matematika terkemuka yang memberikan kontribusi signifikan pada geometri aljabar. Keluarga Noether adalah keturunan Yahudi, dan ia tumbuh dalam lingkungan rumah yang sangat menghargai pengejaran akademis.
 
 Namun, dalam masyarakat Jerman pada saat itu, sangat sulit bagi perempuan untuk mengejar karir akademis. Perempuan tidak diizinkan untuk mendaftar sebagai mahasiswa reguler di universitas, dan bahkan untuk menghadiri kuliah sebagai pendengar memerlukan izin khusus dari para profesor. Emmy muda unggul dalam bidang bahasa dan pada awalnya memperoleh kualifikasi untuk menjadi guru bahasa Prancis dan Inggris, tetapi hatinya perlahan-lapan terpikat oleh matematika.
 
-Pada tahun 1900, ia mulai mengikuti kuliah matematika di Universitas Erlangen sebagai pendengar. Di antara ratusan mahasiswa, hanya ada dua perempuan, termasuk dirinya. Ia menunjukkan bakat matematika yang luar biasa dan lulus ujian kualifikasi masuk universitas (Abitur) di Nuremberg pada tahun 1903. Selanjutnya, ia belajar sebagai pendengar di Universitas Göttingen, menghadiri kuliah-kuliah dari beberapa matematikawan dan fisikawan terhebat pada masa itu, seperti Karl Schwarzschild, Hermann Minkowski, Felix Klein, dan [David Hilbert](https://kenji.blog/p/hilbert/).
+Pada tahun 1900, ia mulai mengikuti kuliah matematika di Universitas Erlangen sebagai pendengar. Di antara ratusan mahasiswa, hanya ada dua perempuan, termasuk dirinya. Ia menunjukkan bakat matematika yang luar biasa dan lulus ujian kualifikasi masuk universitas (Abitur) di Nuremberg pada tahun 1903. Selanjutnya, ia belajar sebagai pendengar di Universitas Göttingen, menghadiri kuliah-kuliah dari beberapa matematikawan dan fisikawan terhebat pada masa itu, seperti Karl Schwarzschild, Hermann Minkowski, Felix Klein, dan [David Hilbert](https://kenji.blog/id/p/hilbert/).
 
 ```mermaid
 flowchart TD
@@ -35,11 +35,11 @@ flowchart TD
 
 Pada tahun 1904, Universitas Erlangen akhirnya mengizinkan pendaftaran reguler bagi perempuan, dan Noether segera mendaftar untuk program gelar matematika. Ia memajukan penelitiannya di bawah bimbingan Paul Gordan, seorang ahli dalam teori invarian, dan pada tahun 1907 ia meraih gelar Ph.D. dengan pujian tertinggi untuk disertasinya yang berjudul "Sistem Invarian Lengkap untuk Bentuk Bikuadratik Terner". Dalam makalah ini, ia menunjukkan puncak kekuatan komputasi dan kesabaran dengan menghitung secara mendalam 331 invarian spesifik.
 
-Meskipun meraih gelar doktornya, tidak ada posisi universitas yang tersedia untuknya hanya karena ia seorang perempuan. Ia melanjutkan penelitiannya di Universitas Erlangen tanpa bayaran, terkadang menggantikan ayahnya yang sakit untuk memberikan kuliah. Selama periode ini, gaya penelitiannya bergeser secara signifikan dari metode konstruktif yang menekankan perhitungan konkret, seperti milik Gordan, ke metode yang lebih abstrak dan konseptual yang dipelopori oleh [David Hilbert](https://kenji.blog/p/hilbert/). Dipengaruhi juga oleh Ernst Fischer, ia mulai membuka pintu menuju aljabar abstrak modern.
+Meskipun meraih gelar doktornya, tidak ada posisi universitas yang tersedia untuknya hanya karena ia seorang perempuan. Ia melanjutkan penelitiannya di Universitas Erlangen tanpa bayaran, terkadang menggantikan ayahnya yang sakit untuk memberikan kuliah. Selama periode ini, gaya penelitiannya bergeser secara signifikan dari metode konstruktif yang menekankan perhitungan konkret, seperti milik Gordan, ke metode yang lebih abstrak dan konseptual yang dipelopori oleh [David Hilbert](https://kenji.blog/id/p/hilbert/). Dipengaruhi juga oleh Ernst Fischer, ia mulai membuka pintu menuju aljabar abstrak modern.
 
 ## 3. Undangan ke Göttingen dan "Teorema Noether"
 
-Pada tahun 1915, [David Hilbert](https://kenji.blog/p/hilbert/) dan Felix Klein dari Universitas Göttingen mengundang Noether ke Göttingen untuk membantu memecahkan masalah matematika terkait kekekalan energi dalam teori relativitas umum Albert Einstein. Pengetahuannya yang mendalam tentang teori invarian dianggap sangat diperlukan.
+Pada tahun 1915, [David Hilbert](https://kenji.blog/id/p/hilbert/) dan Felix Klein dari Universitas Göttingen mengundang Noether ke Göttingen untuk membantu memecahkan masalah matematika terkait kekekalan energi dalam teori relativitas umum Albert Einstein. Pengetahuannya yang mendalam tentang teori invarian dianggap sangat diperlukan.
 
 Namun, kemungkinan pengangkatannya sebagai anggota fakultas reguler (Privatdozent) mendapat tentangan sengit dari para profesor di disiplin ilmu lain di dalam Fakultas Filsafat, sekali lagi hanya karena ia adalah seorang "perempuan". Mereka berargumen, "Apa yang akan dipikirkan tentara kita ketika mereka kembali ke universitas dan menemukan bahwa mereka diharuskan belajar di bawah kaki seorang perempuan?" Menanggapi hal ini, Hilbert memberikan jawaban yang terkenal:
 
@@ -140,10 +140,10 @@ Jenazahnya dimakamkan di bawah jalan setapak perpustakaan di Bryn Mawr College.
 
 Matematikawan Norbert Wiener berkomentar tentang dirinya: "Nona Noether adalah... matematikawan wanita terhebat yang pernah hidup; dan ilmuwan wanita terhebat dalam bentuk apa pun yang hidup sekarang, dan seorang sarjana setidaknya pada tingkat Madame Curie."
 
-Konsep aljabar abstrak yang dipelopori oleh [Emmy Noether](https://kenji.blog/p/noether/) terus mengalir di dasar kriptografi, ilmu komputer, dan geometri aljabar saat ini. Selanjutnya, teoremanya mengenai simetri dan hukum kekekalan terus hidup sebagai bahasa yang sangat diperlukan dalam fisika mutakhir, seperti penemuan boson Higgs dan studi tentang lubang hitam.
+Konsep aljabar abstrak yang dipelopori oleh [Emmy Noether](https://kenji.blog/id/p/noether/) terus mengalir di dasar kriptografi, ilmu komputer, dan geometri aljabar saat ini. Selanjutnya, teoremanya mengenai simetri dan hukum kekekalan terus hidup sebagai bahasa yang sangat diperlukan dalam fisika mutakhir, seperti penemuan boson Higgs dan studi tentang lubang hitam.
 
-Menghadapi diskriminasi gender, [Emmy Noether](https://kenji.blog/p/noether/) hanya mencintai matematika secara murni dan terus mengejar kebenaran. Semangat pantang menyerah dan kecerdasannya yang luar biasa terus memberi kita inspirasi tanpa batas melintasi zaman.
+Menghadapi diskriminasi gender, [Emmy Noether](https://kenji.blog/id/p/noether/) hanya mencintai matematika secara murni dan terus mengejar kebenaran. Semangat pantang menyerah dan kecerdasannya yang luar biasa terus memberi kita inspirasi tanpa batas melintasi zaman.
 
 ---
 
-*(Artikel ini ditulis untuk menghormati pencapaian [Emmy Noether](https://kenji.blog/p/noether/), ditujukan bagi mereka yang tertarik dengan sejarah matematika dan dasar-dasar fisika.)*
+*(Artikel ini ditulis untuk menghormati pencapaian [Emmy Noether](https://kenji.blog/id/p/noether/), ditujukan bagi mereka yang tertarik dengan sejarah matematika dan dasar-dasar fisika.)*

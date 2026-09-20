@@ -24,9 +24,9 @@ Sebagai contoh,
 
 Saat ini hanya 51 yang telah ditemukan, dan meskipun diperkirakan jumlahnya tidak terbatas, hal itu belum terbukti.
 
-## [Konjektur Goldbach](https://kenji.blog/p/goldbachs-conjecture/)
+## [Konjektur Goldbach](https://kenji.blog/id/p/goldbachs-conjecture/)
 
-[Konjektur Goldbach](https://kenji.blog/p/goldbachs-conjecture/) adalah konjektur yang menyatakan bahwa setiap bilangan genap yang lebih besar dari 2 dapat dinyatakan sebagai jumlah dari dua bilangan prima.
+[Konjektur Goldbach](https://kenji.blog/id/p/goldbachs-conjecture/) adalah konjektur yang menyatakan bahwa setiap bilangan genap yang lebih besar dari 2 dapat dinyatakan sebagai jumlah dari dua bilangan prima.
 (Di sini, bilangan prima adalah bilangan asli yang tidak memiliki pembagi selain 1 dan dirinya sendiri).
 
 Sebagai contoh,

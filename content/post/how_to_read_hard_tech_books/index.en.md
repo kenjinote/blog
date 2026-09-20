@@ -82,7 +82,7 @@ In memorizing technical books, "memorizing long proofs completely" is meaningles
 
 - **Bad Card**: "Write the entire proof of Dijkstra's algorithm."
 - **Good Card**: "In Dijkstra's algorithm, what is the condition for a vertex's shortest distance to be considered confirmed?" -> "When the vertex with the minimum provisional distance is selected from the set of unconfirmed vertices."
-- **Good Card**: "State the formula for [Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)." -> "For a prime $p$ and an integer $a$ coprime to $p$, $a^{p-1} \equiv 1 \pmod p$."
+- **Good Card**: "State the formula for [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)." -> "For a prime $p$ and an integer $a$ coprime to $p$, $a^{p-1} \equiv 1 \pmod p$."
 
 When memorizing formulas, it is also effective to register them in Anki in LaTeX format and utilize Cloze Deletion questions.
 
@@ -98,7 +98,7 @@ Let's look at the process of dropping formulas into code through two concrete ex
 
 ### 4.1 Example 1: The Mathematics and Python Implementation of RSA Encryption
 
-RSA encryption, the representative of public-key cryptography, is a beautiful application of elementary number theory (congruences, Euler's theorem, and the extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm).
+RSA encryption, the representative of public-key cryptography, is a beautiful application of elementary number theory (congruences, Euler's theorem, and the extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm).
 
 #### Mathematical Background
 The key generation and encryption/decryption processes of RSA encryption are represented by the following formulas.
@@ -171,7 +171,7 @@ def rsa_demo():
 rsa_demo()
 ```
 
-To find $d$ satisfying the formula $e \cdot d \equiv 1 \pmod{\phi(n)}$, it is necessary to implement an algorithm called the extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm. In this way, **when you try to code a formula, you face implementation challenges like "how exactly is this variable calculated?", and in the process of solving them, your mathematical understanding deepens dramatically**.
+To find $d$ satisfying the formula $e \cdot d \equiv 1 \pmod{\phi(n)}$, it is necessary to implement an algorithm called the extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm. In this way, **when you try to code a formula, you face implementation challenges like "how exactly is this variable calculated?", and in the process of solving them, your mathematical understanding deepens dramatically**.
 
 ### 4.2 Example 2: Dijkstra's Algorithm and Relaxation
 

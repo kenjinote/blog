@@ -15,13 +15,13 @@ tags:
 
 ## Einführung
 
-[Marin Mersenne](https://kenji.blog/p/mersenne/) (1588–1648) war ein französischer Theologe, Philosoph, Mathematiker und Musiktheoretiker des 17. Jahrhunderts. Obwohl er eigene mathematische Entdeckungen machte, ist er vor allem für seine Rolle als **„Postamt Europas“** bekannt, das die großen Gelehrten seiner Zeit miteinander verband.
+[Marin Mersenne](https://kenji.blog/de/p/mersenne/) (1588–1648) war ein französischer Theologe, Philosoph, Mathematiker und Musiktheoretiker des 17. Jahrhunderts. Obwohl er eigene mathematische Entdeckungen machte, ist er vor allem für seine Rolle als **„Postamt Europas“** bekannt, das die großen Gelehrten seiner Zeit miteinander verband.
 
 In diesem Artikel werden wir das Leben von Mersenne, das riesige intellektuelle Netzwerk, das er aufgebaut hat, und die **Mersenne-Primzahlen**, die tief mit der modernen Kryptographie verbunden sind, untersuchen. Darüber hinaus werden wir uns mit seinen Beiträgen zur Akustik und seinem Einfluss auf die wissenschaftliche Methodik befassen.
 
 ## Frühes Leben und klösterliches Leben
 
-[Marin Mersenne](https://kenji.blog/p/mersenne/) wurde am 8. September 1588 in einer Bauernfamilie in Oizé, Maine, Frankreich, geboren. Nach einer Grundausbildung an einem Collège in Le Mans trat er 1604 in das Jesuitenkolleg von La Flèche ein. Dort lernte er [René Descartes](https://kenji.blog/p/descartes/) kennen, der später zum Vater der modernen Philosophie werden sollte, und schloss mit ihm eine lebenslange Freundschaft.
+[Marin Mersenne](https://kenji.blog/de/p/mersenne/) wurde am 8. September 1588 in einer Bauernfamilie in Oizé, Maine, Frankreich, geboren. Nach einer Grundausbildung an einem Collège in Le Mans trat er 1604 in das Jesuitenkolleg von La Flèche ein. Dort lernte er [René Descartes](https://kenji.blog/de/p/descartes/) kennen, der später zum Vater der modernen Philosophie werden sollte, und schloss mit ihm eine lebenslange Freundschaft.
 
 Im Jahr 1611 trat Mersenne dem Paulanerorden (Minimen) bei. Die Minimen waren ein Orden mit strengen Disziplinen (wie Fasten und Vegetarismus), förderten aber eine Kultur, die das Streben nach Gelehrsamkeit ermutigte. 1619 ließ er sich im Kloster L'Annonciade in Paris nieder, das zu seiner Basis wurde, um sich in Theologie, Philosophie und Naturwissenschaften zu vertiefen.
 
@@ -49,7 +49,7 @@ graph TD
     Mersenne <-->|"Akustik"| Huygens
 ```
 
-Im Zentrum dieses Netzwerks gab Mersenne, wenn jemand ein neues Theorem entdeckte, es an andere Gelehrte weiter und förderte Kritik und Überprüfung. So war es beispielsweise Mersenne, der die mathematischen Entdeckungen von [Pierre de Fermat](https://kenji.blog/p/fermat/) an Descartes weiterleitete und damit eine heftige Debatte zwischen den beiden auslöste. Er ist auch dafür bekannt, Werke von Galileo Galilei (wie den *Dialog über die beiden wichtigsten Weltsysteme*) ins Französische übersetzt und trotz strenger Zensur durch die katholische Kirche weithin bekannt gemacht zu haben. Einige Historiker schätzen, dass sich die wissenschaftliche Revolution des 17. Jahrhunderts ohne ihn um Jahrzehnte hätte verzögern können.
+Im Zentrum dieses Netzwerks gab Mersenne, wenn jemand ein neues Theorem entdeckte, es an andere Gelehrte weiter und förderte Kritik und Überprüfung. So war es beispielsweise Mersenne, der die mathematischen Entdeckungen von [Pierre de Fermat](https://kenji.blog/de/p/fermat/) an Descartes weiterleitete und damit eine heftige Debatte zwischen den beiden auslöste. Er ist auch dafür bekannt, Werke von Galileo Galilei (wie den *Dialog über die beiden wichtigsten Weltsysteme*) ins Französische übersetzt und trotz strenger Zensur durch die katholische Kirche weithin bekannt gemacht zu haben. Einige Historiker schätzen, dass sich die wissenschaftliche Revolution des 17. Jahrhunderts ohne ihn um Jahrzehnte hätte verzögern können.
 
 ## Mathematische Errungenschaften: Mersenne-Primzahlen
 
@@ -137,6 +137,6 @@ Mersenne glaubte fest daran, dass der wissenschaftliche Fortschritt die Größe 
 
 ## Fazit
 
-[Marin Mersenne](https://kenji.blog/p/mersenne/) besaß nicht nur eine herausragende mathematische Intuition, sondern auch ein seltenes Talent, Menschen und Wissen miteinander zu verbinden. Das von ihm aufgebaute intellektuelle Netzwerk führte schließlich zur Gründung formeller wissenschaftlicher Gesellschaften wie der Académie des Sciences in Frankreich und der Royal Society in England.
+[Marin Mersenne](https://kenji.blog/de/p/mersenne/) besaß nicht nur eine herausragende mathematische Intuition, sondern auch ein seltenes Talent, Menschen und Wissen miteinander zu verbinden. Das von ihm aufgebaute intellektuelle Netzwerk führte schließlich zur Gründung formeller wissenschaftlicher Gesellschaften wie der Académie des Sciences in Frankreich und der Royal Society in England.
 
 Sein Name hat sich in Form der Mersenne-Primzahlen für immer in die Geschichte der Mathematik eingeprägt, aber seine Rolle als „intellektueller Vermittler“ in der wissenschaftlichen Revolution des 17. Jahrhunderts ist ebenfalls eine große Errungenschaft, die niemals vergessen werden darf. Sein Leben lehrt uns, dass sich Wissenschaft nicht nur durch das Genie des Einzelnen entwickelt, sondern auch durch offene Kommunikation und Zusammenarbeit.

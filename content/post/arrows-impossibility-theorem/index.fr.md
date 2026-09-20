@@ -18,7 +18,7 @@ Lorsque nous devons décider de quelque chose dans la société, la méthode la 
 
 En réalité, la réponse mathématique à cette question est **« non »**.
 
-En 1951, l'économiste Kenneth Arrow a prouvé mathématiquement qu'il n'existe pas de règle de décision parfaite satisfaisant simultanément un ensemble de conditions raisonnables. C'est le **« théorème d'impossibilité d'Arrow ([Arrow's Impossibility Theorem](https://kenji.blog/p/arrows-impossibility-theorem/)) »**. Pour ses travaux, incluant cette contribution majeure à la théorie du choix social, Arrow a reçu le prix Nobel d'économie en 1972.
+En 1951, l'économiste Kenneth Arrow a prouvé mathématiquement qu'il n'existe pas de règle de décision parfaite satisfaisant simultanément un ensemble de conditions raisonnables. C'est le **« théorème d'impossibilité d'Arrow ([Arrow's Impossibility Theorem](https://kenji.blog/fr/p/arrows-impossibility-theorem/)) »**. Pour ses travaux, incluant cette contribution majeure à la théorie du choix social, Arrow a reçu le prix Nobel d'économie en 1972.
 
 Dans cet article, nous allons expliquer en détail ce que signifie ce théorème, en utilisant des exemples concrets, des formules mathématiques et des schémas.
 
@@ -56,7 +56,7 @@ Le système ne doit pas permettre que l'opinion d'une seule personne (le dictate
 
 ---
 
-[Le théorème d'impossibilité d'Arrow](https://kenji.blog/p/arrows-impossibility-theorem/) prouve le fait choquant qu'**« il n'existe aucune fonction de bien-être social satisfaisant ces 4 conditions simultanément (imposer la non-dictature conduit toujours à une contradiction). »**
+[Le théorème d'impossibilité d'Arrow](https://kenji.blog/fr/p/arrows-impossibility-theorem/) prouve le fait choquant qu'**« il n'existe aucune fonction de bien-être social satisfaisant ces 4 conditions simultanément (imposer la non-dictature conduit toujours à une contradiction). »**
 
 ```mermaid
 graph TD
@@ -195,7 +195,7 @@ En réalité, notre société fonctionne en assouplissant légèrement l'une des
 
 ## Pour finir
 
-[Le théorème d'impossibilité d'Arrow](https://kenji.blog/p/arrows-impossibility-theorem/) a utilisé le langage froid et implacable des mathématiques pour prouver **« l'absence d'une règle qui soit parfaite pour tous »**. Cependant, cela ne signifie en aucun cas l'échec de la démocratie.
+[Le théorème d'impossibilité d'Arrow](https://kenji.blog/fr/p/arrows-impossibility-theorem/) a utilisé le langage froid et implacable des mathématiques pour prouver **« l'absence d'une règle qui soit parfaite pour tous »**. Cependant, cela ne signifie en aucun cas l'échec de la démocratie.
 
 C'est plutôt un message extrêmement positif et instructif qui devrait être perçu comme tel : **« Puisque tout système a obligatoirement des faiblesses, il est essentiel de comprendre ces faiblesses, de choisir la règle la plus adaptée à la situation et de débattre activement. »**
 

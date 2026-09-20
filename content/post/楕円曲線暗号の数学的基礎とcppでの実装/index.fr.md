@@ -67,8 +67,8 @@ Le corps fini le plus fondamental est le **corps premier $\mathbb{F}_p$** utilis
 
 Le calcul de l'**inverse multiplicatif (Modular Multiplicative Inverse)** est extrêmement important dans l'implémentation cryptographique. Pour trouver $b^{-1}$ satisfaisant $b \times b^{-1} \equiv 1 \pmod p$, les deux algorithmes suivants sont principalement utilisés :
 
-1. **Algorithme d'[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/) étendu (Extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm)** : Il est rapide, mais selon l'implémentation, le temps de traitement dépend des valeurs d'entrée, ce qui présente un risque d'attaque temporelle.
-2. **Petit théorème de Fermat ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))** : Lorsque $p$ est un nombre premier et $b \neq 0$, $b^{p-1} \equiv 1 \pmod p$ est vrai. En divisant les deux côtés par $b$, on obtient $b^{p-2} \equiv b^{-1} \pmod p$. Autrement dit, l'inverse peut être trouvé en calculant $b$ à la puissance $p-2$. Comme l'opération d'exponentiation est plus facile à implémenter en temps constant, elle est préférée dans les implémentations cryptographiques.
+1. **Algorithme d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) étendu (Extended [[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm)** : Il est rapide, mais selon l'implémentation, le temps de traitement dépend des valeurs d'entrée, ce qui présente un risque d'attaque temporelle.
+2. **Petit théorème de Fermat ([Fermat's Little Theorem](https://kenji.blog/fr/p/fermats-little-theorem/))** : Lorsque $p$ est un nombre premier et $b \neq 0$, $b^{p-1} \equiv 1 \pmod p$ est vrai. En divisant les deux côtés par $b$, on obtient $b^{p-2} \equiv b^{-1} \pmod p$. Autrement dit, l'inverse peut être trouvé en calculant $b$ à la puissance $p-2$. Comme l'opération d'exponentiation est plus facile à implémenter en temps constant, elle est préférée dans les implémentations cryptographiques.
 
 ---
 

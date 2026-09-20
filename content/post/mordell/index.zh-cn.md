@@ -10,9 +10,9 @@ tags: ["数论", "莫德尔", "椭圆曲线", "丢番图方程"]
 
 ## 1. 引言
 
-在20世纪的数学界，尤其是在 **数论** 领域留下辉煌足迹的数学家之一，便是路易斯·乔尔·莫德尔（Louis Joel Mordell, 1888–1972）。他在[丢番图](https://kenji.blog/p/diophantus/)方程的研究中取得了突破性成果，并为现代代数几何与数论交叉领域的许多重要理论奠定了基础。在本文中，我们将详细探讨莫德尔的生平、以他名字命名的重要定理与猜想，以及他对数学界产生的深远影响。
+在20世纪的数学界，尤其是在 **数论** 领域留下辉煌足迹的数学家之一，便是路易斯·乔尔·莫德尔（Louis Joel Mordell, 1888–1972）。他在[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程的研究中取得了突破性成果，并为现代代数几何与数论交叉领域的许多重要理论奠定了基础。在本文中，我们将详细探讨莫德尔的生平、以他名字命名的重要定理与猜想，以及他对数学界产生的深远影响。
 
-许多听说过莫德尔名字的人，大概都是通过 **莫德尔定理** （Mordell's Theorem）或 **莫德尔猜想** （Mordell Conjecture）认识他的。这些成就不仅仅是证明了某个单一定理，更成为了后来通向证明 **[费马大定理](https://kenji.blog/p/fermats-last-theorem/)** （[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)）那场宏大数学戏剧的重要伏笔。
+许多听说过莫德尔名字的人，大概都是通过 **莫德尔定理** （Mordell's Theorem）或 **莫德尔猜想** （Mordell Conjecture）认识他的。这些成就不仅仅是证明了某个单一定理，更成为了后来通向证明 **[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)** （[Fermat's Last Theorem](https://kenji.blog/zh-cn/p/fermats-last-theorem/)）那场宏大数学戏剧的重要伏笔。
 
 ## 2. 早年的莫德尔：从自学到剑桥
 
@@ -22,15 +22,15 @@ tags: ["数论", "莫德尔", "椭圆曲线", "丢番图方程"]
 
 1906年，18岁的莫德尔为了参加奖学金考试，带着微薄的资金只身前往英国。他出色地赢得了奖学金，进入了剑桥大学圣约翰学院。在1909年的Tripos考试中，他取得了总成绩第三名的优异成绩，荣获 **Third Wrangler** 的称号。
 
-## 3. 对[丢番图](https://kenji.blog/p/diophantus/)方程的热情
+## 3. 对[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程的热情
 
-莫德尔研究的中心始终是 **[丢番图](https://kenji.blog/p/diophantus/)方程** （Diophantine equations）。[丢番图](https://kenji.blog/p/diophantus/)方程是指在具有整数系数的多项式方程中，求解整数解或有理数解的问题。它以古希腊数学家[丢番图](https://kenji.blog/p/diophantus/)的名字命名。
+莫德尔研究的中心始终是 **[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程** （Diophantine equations）。[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程是指在具有整数系数的多项式方程中，求解整数解或有理数解的问题。它以古希腊数学家[丢番图](https://kenji.blog/zh-cn/p/diophantus/)的名字命名。
 
-最著名的[丢番图](https://kenji.blog/p/diophantus/)方程例子是与毕达哥拉斯定理相关的方程：
+最著名的[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程例子是与毕达哥拉斯定理相关的方程：
 
 $$ x^2 + y^2 = z^2 $$
 
-这个方程的整数解被称为毕达哥拉斯三元组，已知它们是无限存在的。然而，随着次数的升高，问题瞬间变得极其困难。因[费马大定理](https://kenji.blog/p/fermats-last-theorem/)而闻名的以下方程便是一个典型例子：
+这个方程的整数解被称为毕达哥拉斯三元组，已知它们是无限存在的。然而，随着次数的升高，问题瞬间变得极其困难。因[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)而闻名的以下方程便是一个典型例子：
 
 $$ x^n + y^n = z^n \quad (n \ge 3) $$
 
@@ -42,7 +42,7 @@ $$ x^n + y^n = z^n \quad (n \ge 3) $$
 
 $$ y^2 = x^3 + k $$
 
-这里 $k$ 是非零整数。这个方程是椭圆曲线（Elliptic curve）最简单的形式之一。自从17世纪[皮埃尔·德·费马](https://kenji.blog/p/fermat/)（[Pierre de Fermat](https://kenji.blog/p/fermat/)）证明了在 $k = -2$ 的情况下，即 $y^2 = x^3 - 2$ 的整数解仅有 $(x, y) = (3, \pm 5)$ 以来，这类方程得到了广泛的研究。
+这里 $k$ 是非零整数。这个方程是椭圆曲线（Elliptic curve）最简单的形式之一。自从17世纪[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)（[Pierre de Fermat](https://kenji.blog/zh-cn/p/fermat/)）证明了在 $k = -2$ 的情况下，即 $y^2 = x^3 - 2$ 的整数解仅有 $(x, y) = (3, \pm 5)$ 以来，这类方程得到了广泛的研究。
 
 莫德尔深入研究了求解该方程整数解的一般方法以及解的有限性。他的方法应用了代数数论中的理想类理论，使传统的古典方法实现了重大飞跃。
 
@@ -58,7 +58,7 @@ $$ E(\mathbb{Q}) \cong E(\mathbb{Q})_{\text{tors}} \oplus \mathbb{Z}^r $$
 
 这一定理意味着，为了找到椭圆曲线上无限多个有理点，只需找到有限个“基底”点即可，它是算术几何中的一座丰碑。莫德尔的证明是对费马的“无限递降法”（Method of infinite descent）进行现代洗练后的结果。
 
-此后，1928年法国数学家[安德烈·韦伊](https://kenji.blog/p/weil/)（[André Weil](https://kenji.blog/p/weil/)）将该定理推广到一般的代数数域和阿贝尔簇，因此现在通常被称为 **莫德尔-韦伊定理** （Mordell-Weil Theorem）。
+此后，1928年法国数学家[安德烈·韦伊](https://kenji.blog/zh-cn/p/weil/)（[André Weil](https://kenji.blog/zh-cn/p/weil/)）将该定理推广到一般的代数数域和阿贝尔簇，因此现在通常被称为 **莫德尔-韦伊定理** （Mordell-Weil Theorem）。
 
 ```mermaid
 graph TD
@@ -83,13 +83,13 @@ graph TD
 
 $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
-这个猜想在60多年的时间里一直悬而未决。然而，在1983年，它终于被德国数学家[格尔德·法尔廷斯](https://kenji.blog/p/faltings/)（[Gerd Faltings](https://kenji.blog/p/faltings/)）证明，成为了 **法尔廷斯定理** （Faltings's Theorem）。凭借这一成就，法尔廷斯在1986年荣获了菲尔兹奖。
+这个猜想在60多年的时间里一直悬而未决。然而，在1983年，它终于被德国数学家[格尔德·法尔廷斯](https://kenji.blog/zh-cn/p/faltings/)（[Gerd Faltings](https://kenji.blog/zh-cn/p/faltings/)）证明，成为了 **法尔廷斯定理** （Faltings's Theorem）。凭借这一成就，法尔廷斯在1986年荣获了菲尔兹奖。
 
-此外，[费马大定理](https://kenji.blog/p/fermats-last-theorem/)的方程 $x^n + y^n = z^n$ ，当 $n \ge 4$ 时，亏格大于等于3。因此，由莫德尔猜想（法尔廷斯定理）可以直接推导出，对于每一个 $n$，费马方程的有理数解至多只有有限个。
+此外，[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)的方程 $x^n + y^n = z^n$ ，当 $n \ge 4$ 时，亏格大于等于3。因此，由莫德尔猜想（法尔廷斯定理）可以直接推导出，对于每一个 $n$，费马方程的有理数解至多只有有限个。
 
 ## 7. 与拉马努金的交集及模形式
 
-莫德尔的成就并不仅限于[丢番图](https://kenji.blog/p/diophantus/)方程。他对天才数学家斯里尼瓦萨·拉马努金（[Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/)）留下的未解问题也做出了巨大贡献。
+莫德尔的成就并不仅限于[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程。他对天才数学家斯里尼瓦萨·拉马努金（[Srinivasa Ramanujan](https://kenji.blog/zh-cn/p/ramanujan/)）留下的未解问题也做出了巨大贡献。
 
 拉马努金对如下定义的拉马努金 $\tau$ 函数 $\tau(n)$ 提出了几个令人惊叹的性质猜想：
 
@@ -123,22 +123,22 @@ graph LR
 
 莫德尔非常坦率，有时也以毫不留情的言辞而闻名。尽管长期居住在英国，他一生都在使用带有浓重美国口音的英语交流。
 
-比起为了理论而构建抽象理论，他更喜欢解决具体问题。“数学是为了解决问题的”这一哲学，深深地烙印在他撰写的名著《[丢番图](https://kenji.blog/p/diophantus/)方程》（Diophantine Equations）中。这本书是他一生研究的集大成之作，启发了许多年轻数学家。
+比起为了理论而构建抽象理论，他更喜欢解决具体问题。“数学是为了解决问题的”这一哲学，深深地烙印在他撰写的名著《[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程》（Diophantine Equations）中。这本书是他一生研究的集大成之作，启发了许多年轻数学家。
 
 莫德尔还非常善于发现他人的才华。培养出诸如J.W.S.卡塞尔斯（J. W. S. Cassels）等日后扛起英国数论界大旗的数学家们，也是他的一大功绩。
 
 ## 11. 留给现代数学的遗产
 
-[路易斯·莫德尔](https://kenji.blog/p/mordell/)在数学界留下的遗产，深深扎根于现代数学的根基之中。
+[路易斯·莫德尔](https://kenji.blog/zh-cn/p/mordell/)在数学界留下的遗产，深深扎根于现代数学的根基之中。
 
 1. **算术几何的基础** ：莫德尔定理与莫德尔猜想，强烈地推动了从几何视角审视数论对象的“算术几何”（Arithmetic Geometry）的发展。
 2. **模形式论** ：在证明拉马努金猜想时使用的方法，成为了延续至现代朗兰兹纲领（Langlands Program）的宏大理论的出发点。
-3. **[丢番图](https://kenji.blog/p/diophantus/)方程的解法** ：他具体的解题路径与大量论文，至今仍是使用计算机求解方程的算法基础。
+3. **[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程的解法** ：他具体的解题路径与大量论文，至今仍是使用计算机求解方程的算法基础。
 
-当[费马大定理](https://kenji.blog/p/fermats-last-theorem/)被[安德鲁·怀尔斯](https://kenji.blog/p/wiles/)（[Andrew Wiles](https://kenji.blog/p/wiles/)）证明时，其理论背景中同样离不开椭圆曲线和模形式这些与莫德尔有着深厚渊源的概念。
+当[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)被[安德鲁·怀尔斯](https://kenji.blog/zh-cn/p/wiles/)（[Andrew Wiles](https://kenji.blog/zh-cn/p/wiles/)）证明时，其理论背景中同样离不开椭圆曲线和模形式这些与莫德尔有着深厚渊源的概念。
 
 ## 12. 结论
 
-[路易斯·莫德尔](https://kenji.blog/p/mordell/)，从一个充满热情的自学青年，登上了代表20世纪数论巨星的宝座。他的名字以 **莫德尔定理** 和 **莫德尔猜想** 的形式，永远铭刻在了数学的历史中。
+[路易斯·莫德尔](https://kenji.blog/zh-cn/p/mordell/)，从一个充满热情的自学青年，登上了代表20世纪数论巨星的宝座。他的名字以 **莫德尔定理** 和 **莫德尔猜想** 的形式，永远铭刻在了数学的历史中。
 
-对解决具体问题的强烈执着，以及拯救难民数学家的温暖人性。莫德尔的生平与成就，向我们展示了数学这门学问是如何发展的，以及人们是如何为这种发展做出贡献的，堪称绝佳的楷模。他所探索的[丢番图](https://kenji.blog/p/diophantus/)方程的世界，至今依然吸引着无数数学家。
+对解决具体问题的强烈执着，以及拯救难民数学家的温暖人性。莫德尔的生平与成就，向我们展示了数学这门学问是如何发展的，以及人们是如何为这种发展做出贡献的，堪称绝佳的楷模。他所探索的[丢番图](https://kenji.blog/zh-cn/p/diophantus/)方程的世界，至今依然吸引着无数数学家。

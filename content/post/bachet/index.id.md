@@ -8,7 +8,7 @@ categories: ["Matematika", "Biografi"]
 tags: ["Bachet", "Teori Bilangan", "Sejarah Matematika", "Matematika Rekreasi", "Diophantus"]
 ---
 
-Dalam sejarah matematika, ada tokoh-tokoh yang memainkan peran penting, meskipun kadang-kadang mereka tetap tersembunyi di bawah bayang-bayang penemuan besar di kemudian hari. Matematikawan Prancis abad ke-17 **[Claude Gaspard Bachet](https://kenji.blog/p/bachet/) de Méziriac (1581–1638)** adalah salah satunya. Dia terkenal karena pengaruhnya terhadap [Pierre de Fermat](https://kenji.blog/p/fermat/), tetapi pencapaiannya sendiri juga sangat luas dan beragam.
+Dalam sejarah matematika, ada tokoh-tokoh yang memainkan peran penting, meskipun kadang-kadang mereka tetap tersembunyi di bawah bayang-bayang penemuan besar di kemudian hari. Matematikawan Prancis abad ke-17 **[Claude Gaspard Bachet](https://kenji.blog/id/p/bachet/) de Méziriac (1581–1638)** adalah salah satunya. Dia terkenal karena pengaruhnya terhadap [Pierre de Fermat](https://kenji.blog/id/p/fermat/), tetapi pencapaiannya sendiri juga sangat luas dan beragam.
 
 Dalam artikel ini, kita akan mendalami kehidupan Bachet dan pencapaian utamanya dalam matematika.
 
@@ -27,13 +27,13 @@ flowchart TD
     D -->|"Diterbitkan 1612"| F["'Masalah yang Menyenangkan dan Mengasyikkan'"]
 ```
 
-## Terjemahan Latin dari "Arithmetica" karya [Diophantus](https://kenji.blog/p/diophantus/)
+## Terjemahan Latin dari "Arithmetica" karya [Diophantus](https://kenji.blog/id/p/diophantus/)
 
-Salah satu pencapaian Bachet yang paling terkenal adalah terjemahannya atas buku "Arithmetica" oleh matematikawan Yunani kuno [Diophantus](https://kenji.blog/p/diophantus/) ke dalam bahasa Latin, menambahkan komentar, dan menerbitkannya pada tahun 1621.
+Salah satu pencapaian Bachet yang paling terkenal adalah terjemahannya atas buku "Arithmetica" oleh matematikawan Yunani kuno [Diophantus](https://kenji.blog/id/p/diophantus/) ke dalam bahasa Latin, menambahkan komentar, dan menerbitkannya pada tahun 1621.
 
-Buku terjemahan ini menjadi teks standar bagi matematikawan Eropa pada saat itu untuk mempelajari aljabar kuno dan teori bilangan. Salah satu anekdot yang paling terkenal adalah bahwa [Pierre de Fermat](https://kenji.blog/p/fermat/) menulis "[Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/)" yang terkenal di margin salinan edisi Bachet miliknya.
+Buku terjemahan ini menjadi teks standar bagi matematikawan Eropa pada saat itu untuk mempelajari aljabar kuno dan teori bilangan. Salah satu anekdot yang paling terkenal adalah bahwa [Pierre de Fermat](https://kenji.blog/id/p/fermat/) menulis "[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)" yang terkenal di margin salinan edisi Bachet miliknya.
 
-Bachet tidak berhenti pada sekadar terjemahan; ia menambahkan komentar dan generalisasi yang sangat baik pada masalah-masalah [Diophantus](https://kenji.blog/p/diophantus/). Tanpa wawasan matematikanya, perkembangan teori bilangan pada abad ke-17 mungkin akan jauh lebih lambat.
+Bachet tidak berhenti pada sekadar terjemahan; ia menambahkan komentar dan generalisasi yang sangat baik pada masalah-masalah [Diophantus](https://kenji.blog/id/p/diophantus/). Tanpa wawasan matematikanya, perkembangan teori bilangan pada abad ke-17 mungkin akan jauh lebih lambat.
 
 ## Persamaan Bachet (Bachet's Equation)
 
@@ -79,8 +79,8 @@ $$
 ax + by = 1
 $$
 
-$x$ dan $y$ dapat dihitung secara konkret dengan memperluas algoritma [Euclide](https://kenji.blog/p/euclid/)an (algoritma [Euclide](https://kenji.blog/p/euclid/)an yang diperluas), yang telah menjadi teorema fundamental yang sangat diperlukan dalam kriptografi modern (seperti RSA). Dalam konteks yang menghargai keakuratan sejarah, ini kadang-kadang disebut **Teorema Bachet**.
+$x$ dan $y$ dapat dihitung secara konkret dengan memperluas algoritma [Euclide](https://kenji.blog/id/p/euclid/)an (algoritma [Euclide](https://kenji.blog/id/p/euclid/)an yang diperluas), yang telah menjadi teorema fundamental yang sangat diperlukan dalam kriptografi modern (seperti RSA). Dalam konteks yang menghargai keakuratan sejarah, ini kadang-kadang disebut **Teorema Bachet**.
 
 ## Kesimpulan
 
-[Claude Gaspard Bachet](https://kenji.blog/p/bachet/) bukan sekadar "tokoh di balik layar" untuk [Teorema Terakhir Fermat](https://kenji.blog/p/fermats-last-theorem/). Ia adalah pelopor hebat yang membuka pintu bagi matematika modern dengan menghidupkan kembali kebijaksanaan kuno sembari mengeksplorasi persamaannya sendiri dan menyistematisasi matematika rekreasi. Komentarnya pada "Arithmetica" dan teka-teki matematikanya terus menginspirasi para pecinta matematika saat ini, berabad-abad setelah kematiannya.
+[Claude Gaspard Bachet](https://kenji.blog/id/p/bachet/) bukan sekadar "tokoh di balik layar" untuk [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/). Ia adalah pelopor hebat yang membuka pintu bagi matematika modern dengan menghidupkan kembali kebijaksanaan kuno sembari mengeksplorasi persamaannya sendiri dan menyistematisasi matematika rekreasi. Komentarnya pada "Arithmetica" dan teka-teki matematikanya terus menginspirasi para pecinta matematika saat ini, berabad-abad setelah kematiannya.

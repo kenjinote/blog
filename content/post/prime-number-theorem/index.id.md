@@ -15,7 +15,7 @@ tags:
 
 ## Apa itu Teorema Bilangan Prima?
 
-Salah satu hasil paling indah dalam bidang matematika adalah **Teorema Bilangan Prima** ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/), PNT). Teorema ini menunjukkan bahwa bilangan prima, angka-angka yang sekilas tampak muncul secara tidak teratur dan acak, secara makroskopis memiliki keteraturan yang sangat halus.
+Salah satu hasil paling indah dalam bidang matematika adalah **Teorema Bilangan Prima** ([Prime Number Theorem](https://kenji.blog/id/p/prime-number-theorem/), PNT). Teorema ini menunjukkan bahwa bilangan prima, angka-angka yang sekilas tampak muncul secara tidak teratur dan acak, secara makroskopis memiliki keteraturan yang sangat halus.
 
 Secara khusus, jika kita memisalkan "jumlah bilangan prima yang kurang dari atau sama dengan bilangan real $x$" sebagai $\pi(x)$ (fungsi penghitungan bilangan prima), maka ketika $x$ sangat besar, $\pi(x)$ asimtotik terhadap $x / \ln(x)$. Inilah teoremanya.
 
@@ -42,11 +42,11 @@ graph TD;
 
 ## Latar Belakang Sejarah: Dari Dugaan Gauss hingga Pembuktian
 
-Sejarah Teorema Bilangan Prima berawal pada akhir abad ke-18. Matematikawan jenius berusia 15 tahun, [Carl Friedrich Gauss](https://kenji.blog/p/gauss/), memperhatikan saat melihat tabel bilangan prima bahwa frekuensi kemunculan bilangan prima berhubungan dengan fungsi logaritma. Sekitar waktu yang sama, [Adrien-Marie Legendre](https://kenji.blog/p/legendre/) juga secara independen membuat dugaan serupa.
+Sejarah Teorema Bilangan Prima berawal pada akhir abad ke-18. Matematikawan jenius berusia 15 tahun, [Carl Friedrich Gauss](https://kenji.blog/id/p/gauss/), memperhatikan saat melihat tabel bilangan prima bahwa frekuensi kemunculan bilangan prima berhubungan dengan fungsi logaritma. Sekitar waktu yang sama, [Adrien-Marie Legendre](https://kenji.blog/id/p/legendre/) juga secara independen membuat dugaan serupa.
 
 Namun, mereka belum berhasil membuktikannya secara ketat.
 
-Kemajuan besar dalam pembuktian dicapai melalui makalah terobosan [Bernhard Riemann](https://kenji.blog/p/riemann/) tahun 1859 yang berjudul "Tentang Jumlah Bilangan Prima yang Kurang dari Besaran Tertentu". Riemann menyajikan pendekatan yang sama sekali baru, yaitu mengubah masalah distribusi bilangan prima menjadi masalah pada bidang kompleks menggunakan fungsi kompleks, **Fungsi Zeta** $\zeta(s)$.
+Kemajuan besar dalam pembuktian dicapai melalui makalah terobosan [Bernhard Riemann](https://kenji.blog/id/p/riemann/) tahun 1859 yang berjudul "Tentang Jumlah Bilangan Prima yang Kurang dari Besaran Tertentu". Riemann menyajikan pendekatan yang sama sekali baru, yaitu mengubah masalah distribusi bilangan prima menjadi masalah pada bidang kompleks menggunakan fungsi kompleks, **Fungsi Zeta** $\zeta(s)$.
 
 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ prima}} \left(1 - \frac{1}{p^s}\right)^{-1} $$
 

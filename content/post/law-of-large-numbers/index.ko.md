@@ -15,7 +15,7 @@ tags:
 
 ## 1. 서론: 카지노는 왜 **도박** 을 하지 않는가?
 
-전 세계에 있는 호화찬란한 카지노. 하룻밤 사이에 큰돈을 손에 쥐는 플레이어도 있는 반면, 모든 것을 잃는 플레이어도 있습니다. 그러나 카지노 운영측은 결코 **도박** 을 하지 않습니다. 그들은 확고한 수학적 근거, 즉 **대수의 법칙([Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/))** 에 기반하여 비즈니스를 하고 있습니다.
+전 세계에 있는 호화찬란한 카지노. 하룻밤 사이에 큰돈을 손에 쥐는 플레이어도 있는 반면, 모든 것을 잃는 플레이어도 있습니다. 그러나 카지노 운영측은 결코 **도박** 을 하지 않습니다. 그들은 확고한 수학적 근거, 즉 **대수의 법칙([Law of Large Numbers](https://kenji.blog/ko/p/law-of-large-numbers/))** 에 기반하여 비즈니스를 하고 있습니다.
 
 이 글에서는 확률론의 가장 기본적이고 중요한 정리인 '대수의 법칙'에 대해 직관적인 이해부터 엄밀한 수학적 정의까지 망라하여 해설합니다. 나아가 일상 속에 숨어 있는 오해나 사회에서 어떻게 응용되고 있는지에 대해서도 깊이 파헤쳐 봅니다.
 
@@ -64,7 +64,7 @@ sequenceDiagram
 
 ## 4. 대수의 법칙의 수학적 정의
 
-대수의 법칙에는 수렴의 강도에 따라 **대수의 약법칙** (Weak [Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/), WLLN)과 **대수의 강법칙** (Strong [Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/), SLLN) 두 종류가 존재합니다. 수학적으로 엄밀하게 표현하면 다음과 같습니다.
+대수의 법칙에는 수렴의 강도에 따라 **대수의 약법칙** (Weak [Law of Large Numbers](https://kenji.blog/ko/p/law-of-large-numbers/), WLLN)과 **대수의 강법칙** (Strong [Law of Large Numbers](https://kenji.blog/ko/p/law-of-large-numbers/), SLLN) 두 종류가 존재합니다. 수학적으로 엄밀하게 표현하면 다음과 같습니다.
 
 ### 4.1. 대수의 약법칙 (WLLN)
 

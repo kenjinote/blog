@@ -8,19 +8,19 @@ categories: ["matemática", "biografia"]
 tags: ["Kiyosi Oka", "Análise complexa", "História da matemática"]
 ---
 
-# [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/): A fusão da matemática e da emoção
+# [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/): A fusão da matemática e da emoção
 
-[Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) (1901–1978) foi um matemático japonês que deixou um legado de classe mundial no campo de várias variáveis complexas (Several Complex Variables). Conceitos que levam seu nome, como o "teorema da coerência de Oka" (Oka's coherence theorem) e o "princípio de Oka" (Oka's principle), servem como fundamentos indispensáveis na matemática moderna. Neste artigo, detalhamos sua vida extraordinária, sua filosofia única e suas profundas conquistas matemáticas na teoria de funções de várias variáveis complexas sem omitir nada.
+[Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/) (1901–1978) foi um matemático japonês que deixou um legado de classe mundial no campo de várias variáveis complexas (Several Complex Variables). Conceitos que levam seu nome, como o "teorema da coerência de Oka" (Oka's coherence theorem) e o "princípio de Oka" (Oka's principle), servem como fundamentos indispensáveis na matemática moderna. Neste artigo, detalhamos sua vida extraordinária, sua filosofia única e suas profundas conquistas matemáticas na teoria de funções de várias variáveis complexas sem omitir nada.
 
 ## 1. Início de vida e carreira: O caminho para a matemática
 
-[Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) nasceu em 19 de abril de 1901, na cidade de Osaka, província de Osaka, e posteriormente foi criado na província de Wakayama. Sua familiaridade com a natureza desde tenra idade e sua criação em um ambiente transbordante de emoção japonesa (Jousho) influenciaram fortemente sua filosofia posterior.
+[Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/) nasceu em 19 de abril de 1901, na cidade de Osaka, província de Osaka, e posteriormente foi criado na província de Wakayama. Sua familiaridade com a natureza desde tenra idade e sua criação em um ambiente transbordante de emoção japonesa (Jousho) influenciaram fortemente sua filosofia posterior.
 
 Ao ingressar no Departamento de Matemática da Faculdade de Ciências da Universidade Imperial de Kyoto, Oka conheceu excelentes mentores e amigos, tornando-se cativado pelas profundezas da matemática. Após se formar, ele ensinou como palestrante na Universidade Imperial de Kyoto enquanto buscava seu próprio tema de pesquisa. Naquela época, a comunidade matemática japonesa estava em um período de transição, absorvendo a matemática ocidental e visando alcançar seu próprio desenvolvimento único. Oka, também, embarcou no caminho para se tornar um matemático de renome mundial desafiando problemas difíceis não resolvidos.
 
 ## 2. Estudando na França e o despertar para várias variáveis complexas
 
-Em 1929, [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) viajou para Paris, França, para estudar no exterior como pesquisador para o Ministério da Educação. Esta estadia de três anos em Paris determinou decisivamente seu destino como matemático.
+Em 1929, [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/) viajou para Paris, França, para estudar no exterior como pesquisador para o Ministério da Educação. Esta estadia de três anos em Paris determinou decisivamente seu destino como matemático.
 
 Na Universidade de Paris, ele interagiu com gênios que lideravam o mundo matemático europeu na época, como Henri Cartan e Gaston Julia. Particularmente enquanto frequentava o laboratório de Julia, Oka encontrou o campo de **várias variáveis complexas**, que então ainda era uma selva inexplorada.
 
@@ -34,7 +34,7 @@ Este teorema demonstra a impressionante rigidez que as funções holomorfas de v
 
 ## 3. Conquistas matemáticas: Resolvendo os três grandes problemas
 
-A maior conquista de [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) é ter resolvido independentemente os "Três Grandes Problemas" em várias variáveis complexas. Esses eram problemas formidáveis que mesmo as maiores mentes do mundo matemático da época não conseguiam tocar.
+A maior conquista de [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/) é ter resolvido independentemente os "Três Grandes Problemas" em várias variáveis complexas. Esses eram problemas formidáveis que mesmo as maiores mentes do mundo matemático da época não conseguiam tocar.
 
 ### Problemas de Cousin (Cousin Problems)
 
@@ -59,7 +59,7 @@ $$
 \mathcal{O}_{\mathbb{C}^n} \text{ é um feixe coerente (Coherent Sheaf).}
 $$
 
-Este teorema tornou-se a base dos "Teoremas A e B de Cartan" de Henri Cartan, e foi posteriormente aplicado à geometria algébrica por Jean-Pierre Serre e [Alexander Grothendieck](https://kenji.blog/p/grothendieck/). A "teoria de feixes" (Sheaf Theory), a linguagem comum da matemática moderna, nasceu da luta solitária de [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/).
+Este teorema tornou-se a base dos "Teoremas A e B de Cartan" de Henri Cartan, e foi posteriormente aplicado à geometria algébrica por Jean-Pierre Serre e [Alexander Grothendieck](https://kenji.blog/pt/p/grothendieck/). A "teoria de feixes" (Sheaf Theory), a linguagem comum da matemática moderna, nasceu da luta solitária de [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/).
 
 ```mermaid
 sequenceDiagram
@@ -75,7 +75,7 @@ sequenceDiagram
 
 ## 4. Excentricidade e uma vida solitária: Numerosos episódios
 
-Diz-se que os gênios frequentemente têm excentricidades, e [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) não foi exceção. Suas ações foram uma manifestação de sua atitude de perseguir puramente a verdade.
+Diz-se que os gênios frequentemente têm excentricidades, e [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/) não foi exceção. Suas ações foram uma manifestação de sua atitude de perseguir puramente a verdade.
 
 *   **Botas de borracha mesmo em dias ensolarados:** Oka costumava caminhar usando botas de borracha mesmo em dias claros. Diz-se que ele se ressentia do tempo para amarrar os cadarços ou queria mergulhar em pensamentos sem se preocupar com seus passos.
 *   **Sem gravata:** Odiando coisas apertadas, não era incomum que ele aparecesse em conferências acadêmicas sem gravata.
@@ -85,7 +85,7 @@ Durante e após a Segunda Guerra Mundial, ele continuou sua pesquisa enquanto lu
 
 ## 5. A filosofia de "Jousho" (Emoção): A essência da criação matemática
 
-Indispensável ao falar sobre [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) é sua filosofia única de "Jousho" (Emoção). Em seu livro *Dez discursos nas noites de primavera*, ele afirma: "O centro da matemática é a emoção".
+Indispensável ao falar sobre [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/) é sua filosofia única de "Jousho" (Emoção). Em seu livro *Dez discursos nas noites de primavera*, ele afirma: "O centro da matemática é a emoção".
 
 De acordo com Oka, a nova matemática nunca nasce apenas da lógica. A lógica é apenas uma estrutura construída posteriormente; sua fonte reside em um "anseio por coisas belas" e um "coração que sente harmonia com a natureza".
 
@@ -99,9 +99,9 @@ graph TD
 
 Ele amava profundamente o haicai de Matsuo Basho e a filosofia zen de Dogen, pregando que um "coração altruísta" enraizado na cultura japonesa é essencial para a verdadeira criatividade. Por mais que os computadores e a IA avancem, ele acreditava que esse lampejo de percepção acompanhado por "emoção" é um privilégio da humanidade e a atividade mental mais sublime.
 
-## 6. Apêndice: A trajetória dos principais artigos de [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) (Oka I - Oka IX)
+## 6. Apêndice: A trajetória dos principais artigos de [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/) (Oka I - Oka IX)
 
-Ao discutir as conquistas de [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/), não se pode evitar os nove artigos publicados entre 1936 e 1953, conhecidos como "Oka I" a "Oka IX".
+Ao discutir as conquistas de [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/), não se pode evitar os nove artigos publicados entre 1936 e 1953, conhecidos como "Oka I" a "Oka IX".
 
 1.  **Oka I (1936):** Pesquisa sobre domínios racionalmente convexos. Aqui, o conceito de convexidade em várias variáveis foi aprofundado pela primeira vez.
 2.  **Oka II (1937):** Solução do primeiro problema de Cousin em domínios de holomorfia.
@@ -115,9 +115,9 @@ Ao discutir as conquistas de [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/), n�
 
 ## 7. Impacto nas gerações futuras e legado
 
-Em 1960, [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) foi premiado com a Ordem da Cultura do Japão por suas conquistas inigualáveis. Posteriormente, ele continuou a ensinar na Universidade de Mulheres de Nara e em outras instituições, fomentando muitos sucessores. Em seus últimos anos, ele também se concentrou em escrever e dar palestras sobre educação matemática e cultura japonesa, comovendo profundamente muitos leitores gerais.
+Em 1960, [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/) foi premiado com a Ordem da Cultura do Japão por suas conquistas inigualáveis. Posteriormente, ele continuou a ensinar na Universidade de Mulheres de Nara e em outras instituições, fomentando muitos sucessores. Em seus últimos anos, ele também se concentrou em escrever e dar palestras sobre educação matemática e cultura japonesa, comovendo profundamente muitos leitores gerais.
 
-Até falecer em 1978, aos 76 anos, ele continuamente perguntava: "O que é a verdade?". A teoria de várias variáveis complexas da qual ele foi pioneiro é agora amplamente aplicada à geometria diferencial, geometria algébrica e física teórica. A vida de [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) não é meramente a história de sucesso de um matemático. É o registro de uma alma humana tentando alcançar a verdade absoluta ouvindo atentamente sua voz interior na solidão. A palavra-chave "emoção" que ele deixou para trás nos pergunta silenciosamente: "O que é a verdadeira riqueza?" em uma sociedade moderna onde a eficiência e a lógica tendem a ser priorizadas. Uma única e solitária flor de cerejeira desabrochando no vasto mundo da matemática – essa foi a pessoa chamada [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/).
+Até falecer em 1978, aos 76 anos, ele continuamente perguntava: "O que é a verdade?". A teoria de várias variáveis complexas da qual ele foi pioneiro é agora amplamente aplicada à geometria diferencial, geometria algébrica e física teórica. A vida de [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/) não é meramente a história de sucesso de um matemático. É o registro de uma alma humana tentando alcançar a verdade absoluta ouvindo atentamente sua voz interior na solidão. A palavra-chave "emoção" que ele deixou para trás nos pergunta silenciosamente: "O que é a verdadeira riqueza?" em uma sociedade moderna onde a eficiência e a lógica tendem a ser priorizadas. Uma única e solitária flor de cerejeira desabrochando no vasto mundo da matemática – essa foi a pessoa chamada [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/).
 
 ## 8. Explicação detalhada: O que é um ideal indeterminado?
 
@@ -131,9 +131,9 @@ Especificamente, considere o anel $\mathcal{O}_p$ formado pelos germes de funç�
 
 Essa abordagem derrubou fundamentalmente o senso comum do mundo matemático da época. Ao transformar um problema analítico dependente da forma de um domínio em um problema de estrutura algébrica (ideais) de funções, ele abriu o caminho para aplicar os métodos poderosos da topologia e da geometria algébrica.
 
-## 9. Palavras de [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/): Uma coleção de citações
+## 9. Palavras de [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/): Uma coleção de citações
 
-Ao longo de sua vida, [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) deixou muitas palavras cheias de profundas implicações. Aqui, apresentamos algumas citações famosas que expressam adequadamente sua filosofia.
+Ao longo de sua vida, [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/) deixou muitas palavras cheias de profundas implicações. Aqui, apresentamos algumas citações famosas que expressam adequadamente sua filosofia.
 
 *   **"O objetivo da matemática é a busca da verdade. E a verdade é bela."**
     (Uma citação enfatizando que a verdade matemática e a beleza são inseparáveis.)
@@ -142,22 +142,22 @@ Ao longo de sua vida, [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) deixou mui
 *   **"Como uma violeta desabrochando em um campo de primavera, um coração que simplesmente busca a verdade inocentemente. Essa é a força motriz da criação."**
     (Uma citação expressando o espírito oriental de altruísmo, descartando o ego e se unificando com o objeto.)
 
-Como se pode ver por essas palavras, para [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/), a matemática não era meramente um ramo acadêmico, mas poderia ser dita ser um "Tao (Caminho)" para guiar o espírito humano para reinos superiores.
+Como se pode ver por essas palavras, para [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/), a matemática não era meramente um ramo acadêmico, mas poderia ser dita ser um "Tao (Caminho)" para guiar o espírito humano para reinos superiores.
 
 ## 10. Conclusão e perspectivas
 
-O legado que [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) nos deixou não é apenas teoremas matemáticos. Ele nos mostrou o estado mais elevado que o intelecto humano pode alcançar por meio de seu modo de vida.
+O legado que [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/) nos deixou não é apenas teoremas matemáticos. Ele nos mostrou o estado mais elevado que o intelecto humano pode alcançar por meio de seu modo de vida.
 
 A matemática moderna está se tornando cada vez mais subdividida e altamente especializada. Além disso, com o rápido desenvolvimento da inteligência artificial (IA), está chegando uma era em que até mesmo a prova de teoremas matemáticos será realizada automaticamente por máquinas. No entanto, não importa o quanto a tecnologia avance, desde que a "emoção" de que Oka falou – curiosidade por mundos desconhecidos, se comover com coisas belas e um coração altruísta perseguindo a verdade – não se perca, a matemática continuará a ser o empreendimento intelectual mais fascinante e valioso para a humanidade.
 
-O espírito de [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) certamente continuará a viver quieta, mas poderosamente, dentro de cada um de nós vivendo na era que se aproxima.
+O espírito de [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/) certamente continuará a viver quieta, mas poderosamente, dentro de cada um de nós vivendo na era que se aproxima.
 
 ## Material Adicional: A filosofia de Oka e as implicações para a era moderna
 
-O conceito de "emoção" perseguido por [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) não desapareceu mesmo hoje; em vez disso, é na sociedade moderna que seu verdadeiro valor é demonstrado. Enquanto a riqueza material e a racionalidade lógica são perseguidas até o limite, a riqueza espiritual das pessoas e a harmonia com a natureza estão sendo perdidas. Em tal sociedade moderna, sua filosofia serve como um guia.
+O conceito de "emoção" perseguido por [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/) não desapareceu mesmo hoje; em vez disso, é na sociedade moderna que seu verdadeiro valor é demonstrado. Enquanto a riqueza material e a racionalidade lógica são perseguidas até o limite, a riqueza espiritual das pessoas e a harmonia com a natureza estão sendo perdidas. Em tal sociedade moderna, sua filosofia serve como um guia.
 
 O fato de uma pessoa que estava no auge da matemática – a disciplina mais rigorosa e lógica – ter retornado a elementos aparentemente ilógicos e humanos como "emoção" e "altruísmo" contém uma verdade profunda, embora muito paradoxal. Sugere que a criatividade humana nunca é uma extensão do cálculo mecânico ou do mero processamento de informações, mas nasce de atividades vitais mais fundamentais e da ressonância com a natureza. A matemática e a filosofia de Oka continuarão a nos iluminar por toda a eternidade.
 
 Além disso, olhando para trás em sua vida, nos surpreendemos com seu espírito resiliente, que nunca desistiu da busca pela verdade mesmo em situações difíceis como a pobreza extrema e a incompreensão daqueles ao seu redor. Enquanto se envolvia na agricultura para ganhar o pão de cada dia, ele estava constantemente lutando com problemas difíceis de várias variáveis complexas em sua mente. Foi essa concentração mental em condições tão extremas que se tornou a força motriz para gerar o conceito inovador de "ideais indeterminados" que derrubou o senso comum matemático da época.
 
-Podemos aprender muito não apenas com as conquistas matemáticas que Oka deixou para trás, mas também com o seu modo de vida em si. O que é a verdadeira criatividade e o que significa viver ricamente como ser humano? Pode-se dizer que a vida de [Kiyosi Oka](https://kenji.blog/p/oka-kiyoshi/) fornece uma resposta poderosa a essas questões fundamentais. Os passos que ele deixou continuam a inspirar não apenas a comunidade matemática japonesa, mas pessoas de todo o mundo.
+Podemos aprender muito não apenas com as conquistas matemáticas que Oka deixou para trás, mas também com o seu modo de vida em si. O que é a verdadeira criatividade e o que significa viver ricamente como ser humano? Pode-se dizer que a vida de [Kiyosi Oka](https://kenji.blog/pt/p/oka-kiyoshi/) fornece uma resposta poderosa a essas questões fundamentais. Os passos que ele deixou continuam a inspirar não apenas a comunidade matemática japonesa, mas pessoas de todo o mundo.

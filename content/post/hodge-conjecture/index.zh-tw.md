@@ -10,7 +10,7 @@ tags: ["千禧年大獎難題", "拓樸學", "代數幾何學", "霍奇猜想"]
 
 # 簡介
 
-在數學世界中，仍存在許多尚未解開的謎團。其中特別重要、並作為現代數學巨大屏障而存在的，便是**千禧年大獎難題** (Millennium Prize Problems)。2000年由克雷數學研究所發表的七個未解決問題，每個都懸賞了一百萬美元，全世界的天才數學家們都在挑戰解開它們。在本篇文章中，我們將深入探討千禧年大獎難題中，連結代數幾何學與拓樸學 (Topology) 的一個非常美麗的猜想：**霍奇猜想** ([Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/))。
+在數學世界中，仍存在許多尚未解開的謎團。其中特別重要、並作為現代數學巨大屏障而存在的，便是**千禧年大獎難題** (Millennium Prize Problems)。2000年由克雷數學研究所發表的七個未解決問題，每個都懸賞了一百萬美元，全世界的天才數學家們都在挑戰解開它們。在本篇文章中，我們將深入探討千禧年大獎難題中，連結代數幾何學與拓樸學 (Topology) 的一個非常美麗的猜想：**霍奇猜想** ([Hodge Conjecture](https://kenji.blog/zh-tw/p/hodge-conjecture/))。
 
 霍奇猜想，簡單來說是一個關於「幾何形狀」與「代數方程式」之間深層關聯性的猜想。更準確地說，它探討在複數體上的非奇異射影代數簇中，具有特定拓樸性質的對象是否可以透過代數子簇的組合來表示。
 
@@ -68,7 +68,7 @@ graph TD
 
 準備工作完成了。霍奇猜想的主張雖然非常簡單，卻具有驚人的威力。
 
-> **[霍奇猜想 ([Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/))](https://kenji.blog/p/hodge-conjecture/)**
+> **[霍奇猜想 ([Hodge Conjecture](https://kenji.blog/zh-tw/p/hodge-conjecture/))](https://kenji.blog/p/hodge-conjecture/)**
 > 複數體上非奇異射影代數簇 X 上的任何霍奇類，都可以表示為代數循環之有理數係數的線性組合。
 
 換句話說，它主張「從拓樸學和複分析的觀點來看，似乎是代數幾何學的上同調類 (霍奇類)，實際上是由代數方程式所構成的圖形 (代數循環) 所產生的」。
@@ -106,7 +106,7 @@ sequenceDiagram
 
 霍奇猜想有各種推廣和相關的猜想。
 
-- **廣義霍奇猜想 (Generalized [Hodge Conjecture](https://kenji.blog/p/hodge-conjecture/))**：試圖將霍奇猜想擴展到更一般的框架 (例如，帶有奇異點的流形或開流形等)。由[亞歷山大·格羅滕迪克](https://kenji.blog/p/grothendieck/) ([Alexander Grothendieck](https://kenji.blog/p/grothendieck/)) 等人公式化，但由於發現了反例，尋找適當的公式化本身就成了一個艱難的課題。
+- **廣義霍奇猜想 (Generalized [Hodge Conjecture](https://kenji.blog/zh-tw/p/hodge-conjecture/))**：試圖將霍奇猜想擴展到更一般的框架 (例如，帶有奇異點的流形或開流形等)。由[亞歷山大·格羅滕迪克](https://kenji.blog/zh-tw/p/grothendieck/) ([Alexander Grothendieck](https://kenji.blog/zh-tw/p/grothendieck/)) 等人公式化，但由於發現了反例，尋找適當的公式化本身就成了一個艱難的課題。
 - **泰特猜想 (Tate Conjecture)**：作為霍奇猜想的數論類比而為人所知的是泰特猜想。它不使用複數體上的流形，而是針對有限體上的流形，利用平展上同調 (Étale Cohomology) 的概念來公式化。這也是一個極其深奧的未解決問題。
 
 ## 6. 總結與未來展望
@@ -144,7 +144,7 @@ X 上的霍奇類與滿足特定條件的相交形式有關。在這種情況下
 
 ### 8.1 格羅滕迪克的標準猜想 (Grothendieck's Standard Conjectures)
 
-[亞歷山大·格羅滕迪克](https://kenji.blog/p/grothendieck/)提出了一系列關於代數流形上代數循環的宏大猜想。這就是**標準猜想** (Standard Conjectures on Algebraic Cycles)。
+[亞歷山大·格羅滕迪克](https://kenji.blog/zh-tw/p/grothendieck/)提出了一系列關於代數流形上代數循環的宏大猜想。這就是**標準猜想** (Standard Conjectures on Algebraic Cycles)。
 
 標準猜想包含了代數循環的相交理論，以及雷夫謝茨定理推廣到任意維度。如果霍奇猜想為真，那麼對於複數體上的流形，人們認為標準猜想的一部分也會隨之成立。反過來，如果標準猜想被解決，將為霍奇猜想提供強大的工具。這些是完成代數幾何學終極目標「動機理論」 (Theory of Motives) 不可或缺的拼圖。
 

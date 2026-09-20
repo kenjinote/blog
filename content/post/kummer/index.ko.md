@@ -8,9 +8,9 @@ categories: ["수학", "전기"]
 tags: ["에른스트 쿰머", "페르마의 마지막 정리", "이상수", "대수적 정수론", "정규 소수"]
 ---
 
-# [에른스트 쿰머](https://kenji.blog/p/kummer/): 이상수의 아버지와 대수적 정수론의 여명
+# [에른스트 쿰머](https://kenji.blog/ko/p/kummer/): 이상수의 아버지와 대수적 정수론의 여명
 
-수학의 역사에서 특정 난제에 대한 도전이 완전히 새로운 수학 분야를 개척하는 것은 드문 일이 아닙니다. 에른스트 에두아르트 쿰머 ( **Ernst Eduard Kummer** )는 바로 그러한 역사적 전환점을 만들어낸 19세기 독일의 위대한 수학자입니다. 그는 **[페르마의 마지막 정리](https://kenji.blog/p/fermats-last-theorem/)** ( **[Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)** )라는 초난제와 씨름하는 과정에서 **이상수** ( **Ideal Numbers** )라는 획기적인 개념을 도입하여 현대 대수적 정수론의 기초를 다졌습니다.
+수학의 역사에서 특정 난제에 대한 도전이 완전히 새로운 수학 분야를 개척하는 것은 드문 일이 아닙니다. 에른스트 에두아르트 쿰머 ( **Ernst Eduard Kummer** )는 바로 그러한 역사적 전환점을 만들어낸 19세기 독일의 위대한 수학자입니다. 그는 **[페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)** ( **[Fermat's Last Theorem](https://kenji.blog/ko/p/fermats-last-theorem/)** )라는 초난제와 씨름하는 과정에서 **이상수** ( **Ideal Numbers** )라는 획기적인 개념을 도입하여 현대 대수적 정수론의 기초를 다졌습니다.
 
 본 기사에서는 쿰머의 파란만장한 생애, 그를 둘러싼 인간미 넘치는 에피소드, 그리고 수학사에 찬란하게 빛나는 그의 업적에 대해 깊이 파헤쳐 보겠습니다.
 
@@ -20,7 +20,7 @@ tags: ["에른스트 쿰머", "페르마의 마지막 정리", "이상수", "대
 
 ### 청년기와 신학에서의 전향
 
-[에른스트 쿰머](https://kenji.blog/p/kummer/)는 1810년 1월 29일 프로이센 왕국(현재의 폴란드)의 조라우 ( **Sorau** )에서 태어났습니다. 의사였던 아버지는 쿰머가 아주 어렸을 때 세상을 떠났고, 그는 어머니 손에 자랐습니다. 가난했지만 열성적인 교육을 받은 쿰머는 1828년 할레 대학교에 입학했습니다.
+[에른스트 쿰머](https://kenji.blog/ko/p/kummer/)는 1810년 1월 29일 프로이센 왕국(현재의 폴란드)의 조라우 ( **Sorau** )에서 태어났습니다. 의사였던 아버지는 쿰머가 아주 어렸을 때 세상을 떠났고, 그는 어머니 손에 자랐습니다. 가난했지만 열성적인 교육을 받은 쿰머는 1828년 할레 대학교에 입학했습니다.
 
 처음에 그는 개신교 신학을 전공했지만, 하인리히 페르디난트 셰르크 ( **Heinrich Ferdinand Scherk** ) 교수의 영향을 받아 수학의 아름다움과 깊이에 매료되었습니다. 셰르크 교수의 지도 아래 쿰머는 수학에 전념하게 되었고 불과 3년 후인 1831년에 박사 학위를 취득했습니다.
 
@@ -32,9 +32,9 @@ tags: ["에른스트 쿰머", "페르마의 마지막 정리", "이상수", "대
 
 ### 대학교수로서의 영광
 
-그의 놀라운 연구 성과는 당시 주요 수학자들의 관심을 끌었습니다. 1842년, [카를 구스타프 야코프 야코비](https://kenji.blog/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/p/jacobi/)** )와 페터 구스타프 르죈 디리클레 ( **Peter Gustav Lejeune Dirichlet** )의 추천으로 쿰머는 브레스라우 대학교의 정교수가 되었습니다. 또한 1855년에는 괴팅겐으로 떠난 디리클레의 후임으로 베를린 대학교의 교수로 임명되었습니다.
+그의 놀라운 연구 성과는 당시 주요 수학자들의 관심을 끌었습니다. 1842년, [카를 구스타프 야코프 야코비](https://kenji.blog/ko/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/ko/p/jacobi/)** )와 페터 구스타프 르죈 디리클레 ( **Peter Gustav Lejeune Dirichlet** )의 추천으로 쿰머는 브레스라우 대학교의 정교수가 되었습니다. 또한 1855년에는 괴팅겐으로 떠난 디리클레의 후임으로 베를린 대학교의 교수로 임명되었습니다.
 
-베를린 대학교에서 쿰머는 [카를 바이어슈트라스](https://kenji.blog/p/weierstrass/) ( **[Karl Weierstrass](https://kenji.blog/p/weierstrass/)** )와 옛 제자 크로네커와 함께 베를린을 세계적인 수학의 중심지로 끌어올렸습니다. 그의 강의는 매우 명쾌하고 열정적이어서 유럽 전역에서 수많은 수재들이 모여들었습니다.
+베를린 대학교에서 쿰머는 [카를 바이어슈트라스](https://kenji.blog/ko/p/weierstrass/) ( **[Karl Weierstrass](https://kenji.blog/ko/p/weierstrass/)** )와 옛 제자 크로네커와 함께 베를린을 세계적인 수학의 중심지로 끌어올렸습니다. 그의 강의는 매우 명쾌하고 열정적이어서 유럽 전역에서 수많은 수재들이 모여들었습니다.
 
 ---
 
@@ -54,9 +54,9 @@ tags: ["에른스트 쿰머", "페르마의 마지막 정리", "이상수", "대
 
 ---
 
-## [페르마의 마지막 정리](https://kenji.blog/p/fermats-last-theorem/)와 소인수분해의 유일성 붕괴
+## [페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)와 소인수분해의 유일성 붕괴
 
-쿰머의 가장 큰 업적은 정수론에서 **[페르마의 마지막 정리](https://kenji.blog/p/fermats-last-theorem/)** 에 대한 그의 접근 방식이었습니다. 정리는 다음과 같이 명시합니다.
+쿰머의 가장 큰 업적은 정수론에서 **[페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)** 에 대한 그의 접근 방식이었습니다. 정리는 다음과 같이 명시합니다.
 
 $$
 x^n + y^n = z^n \quad (\text{단, } n \ge 3 \text{ 은 정수})
@@ -64,7 +64,7 @@ $$
 
 이 방정식을 만족하는 양의 정수해 $(x, y, z)$는 존재하지 않는다.
 
-1847년 프랑스의 수학자 [가브리엘 라메](https://kenji.blog/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/p/lame/)** )와 [오귀스탱 루이 코시](https://kenji.blog/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)** )는 이 정리를 증명하는 데 성공했다고 발표했습니다. 그들의 접근 방식은 복소수 영역(원분체)으로 인수분해를 확장하는 것이었습니다.
+1847년 프랑스의 수학자 [가브리엘 라메](https://kenji.blog/ko/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/ko/p/lame/)** )와 [오귀스탱 루이 코시](https://kenji.blog/ko/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/ko/p/cauchy/)** )는 이 정리를 증명하는 데 성공했다고 발표했습니다. 그들의 접근 방식은 복소수 영역(원분체)으로 인수분해를 확장하는 것이었습니다.
 
 1의 원시 $p$제곱근 $\zeta$ (단, $\zeta^p = 1, \zeta \neq 1$)를 사용하여 방정식 $x^p + y^p = z^p$는 다음과 같이 인수분해 될 수 있습니다.
 
@@ -106,9 +106,9 @@ graph LR
 
 ---
 
-## 정규 소수와 [페르마의 마지막 정리](https://kenji.blog/p/fermats-last-theorem/)의 부분적 증명
+## 정규 소수와 [페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)의 부분적 증명
 
-이상수 이론을 사용하여 쿰머는 [페르마의 마지막 정리](https://kenji.blog/p/fermats-last-theorem/)에 큰 타격을 입혔습니다. 그는 **정규 소수** ( **Regular Primes** )라는 개념을 정의하고 "$p$가 정규 소수이면 $p$에 대해 [페르마의 마지막 정리](https://kenji.blog/p/fermats-last-theorem/)가 성립한다"는 놀라운 결과를 증명했습니다.
+이상수 이론을 사용하여 쿰머는 [페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)에 큰 타격을 입혔습니다. 그는 **정규 소수** ( **Regular Primes** )라는 개념을 정의하고 "$p$가 정규 소수이면 $p$에 대해 [페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)가 성립한다"는 놀라운 결과를 증명했습니다.
 
 정규 소수란 원분체 $\mathbb{Q}(\zeta_p)$의 류수 $h_p$를 나누지 않는 소수 $p$입니다. 류수는 유일한 인수분해가 얼마나 크게 실패하는지 측정하는 지수이며, 류수가 $1$이면 유일한 인수분해가 성립합니다.
 
@@ -118,7 +118,7 @@ $$
 B_2, B_4, B_6, \dots, B_{p-3}
 $$
 
-이 기준을 사용하여 쿰머는 불규칙 소수인 $37, 59, 67$을 제외한 $100$ 이하의 모든 소수에 대해 [페르마의 마지막 정리](https://kenji.blog/p/fermats-last-theorem/)가 성립함을 증명했습니다. 이것은 당시 수학계에 충격파를 던진 기념비적인 성과였습니다.
+이 기준을 사용하여 쿰머는 불규칙 소수인 $37, 59, 67$을 제외한 $100$ 이하의 모든 소수에 대해 [페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)가 성립함을 증명했습니다. 이것은 당시 수학계에 충격파를 던진 기념비적인 성과였습니다.
 
 ---
 
@@ -138,7 +138,7 @@ $$
 
 ## 결론
 
-[에른스트 쿰머](https://kenji.blog/p/kummer/)는 [페르마의 마지막 정리](https://kenji.blog/p/fermats-last-theorem/)라는 "풀 수 없는 퍼즐"에 도전하면서 수학 그 자체의 틀을 확장했습니다. 그의 **이상수** 아이디어는 후대 대수학에서 없어서는 안 될 언어가 되었으며 현대 수학의 모든 분야에 계속 영향을 미치고 있습니다.
+[에른스트 쿰머](https://kenji.blog/ko/p/kummer/)는 [페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)라는 "풀 수 없는 퍼즐"에 도전하면서 수학 그 자체의 틀을 확장했습니다. 그의 **이상수** 아이디어는 후대 대수학에서 없어서는 안 될 언어가 되었으며 현대 수학의 모든 분야에 계속 영향을 미치고 있습니다.
 
 계산에 서툴렀다는 인간적인 면모를 지니면서도 인간의 직관을 초월한 "보이지 않는 이상수"를 발견하는 통찰력을 지녔던 쿰머의 천재성은 참으로 그 칭호에 걸맞습니다. 쿰머의 업적은 불가능해 보이는 문제에 직면했을 때 틀 자체를 재고하는 것이 얼마나 중요한지 가르쳐 줍니다.
 

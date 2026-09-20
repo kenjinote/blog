@@ -32,7 +32,7 @@ He then proceeded to the Department of Mathematics in the College of Science at 
 
 In 1898, Takagi traveled to Germany as an overseas student of the Ministry of Education. He initially studied at the University of Berlin, but later transferred to the University of Göttingen, which was the center of mathematics in the world at that time.
 
-Waiting for him there were great mathematicians who left their names in the history of mathematics, such as [David Hilbert](https://kenji.blog/p/hilbert/) and Felix Klein. In particular, Hilbert had just published his "Zahlbericht" (Report on Numbers), which was the culmination of algebraic number theory, and its contents had a profound impact on Takagi. Under Hilbert, he solved a part of "Kronecker's Youthful Dream" (a problem concerning the theory of complex multiplication), obtained his doctorate in 1903, and returned to Japan.
+Waiting for him there were great mathematicians who left their names in the history of mathematics, such as [David Hilbert](https://kenji.blog/en/p/hilbert/) and Felix Klein. In particular, Hilbert had just published his "Zahlbericht" (Report on Numbers), which was the culmination of algebraic number theory, and its contents had a profound impact on Takagi. Under Hilbert, he solved a part of "Kronecker's Youthful Dream" (a problem concerning the theory of complex multiplication), obtained his doctorate in 1903, and returned to Japan.
 
 ## 2. Breakthrough in Isolation: The Birth of Class Field Theory
 
@@ -80,7 +80,7 @@ Takagi's Class Field Theory completely determined what kind of field plays the r
 
 In 1920, at the International Congress of Mathematicians held in Strasbourg after the end of World War I, Takagi presented this Class Field Theory. However, because the content was so innovative at first, it was not fully understood.
 
-Later, sending a reprint of his paper to Carl Siegel in Germany caught the attention of up-and-coming mathematicians such as Emil Artin and [Helmut Hasse](https://kenji.blog/p/hasse/). They immediately understood the greatness of Takagi's theory and advanced further research based on this foundation.
+Later, sending a reprint of his paper to Carl Siegel in Germany caught the attention of up-and-coming mathematicians such as Emil Artin and [Helmut Hasse](https://kenji.blog/en/p/hasse/). They immediately understood the greatness of Takagi's theory and advanced further research based on this foundation.
 
 In particular, Artin proved **Artin's Reciprocity Law** using Takagi's theory, completing the formulation of Class Field Theory. With this, the name of Teiji Takagi was forever etched in the history of mathematics.
 
@@ -109,7 +109,7 @@ Beyond his mathematical achievements, Teiji Takagi made immeasurable contributio
 - **"Lectures on Elementary Number Theory"**: A textbook explaining everything from the basics of number theory to Gauss's law of reciprocity.
 - **"Historical Tales of Modern Mathematics"**: A historical book that vividly depicts the ensemble of mathematicians in the 19th century. It conveys the drama of mathematical development.
 
-The seeds he sowed were passed on to Japanese mathematicians who would later be active worldwide, such as [Kunihiko Kodaira](https://kenji.blog/p/kodaira-kunihiko/), [Kiyosi Ito](https://kenji.blog/p/ito-kiyosi/), and furthermore, [Goro Shimura](https://kenji.blog/p/shimura-goro/) and [Yutaka Taniyama](https://kenji.blog/p/taniyama-yutaka/).
+The seeds he sowed were passed on to Japanese mathematicians who would later be active worldwide, such as [Kunihiko Kodaira](https://kenji.blog/en/p/kodaira-kunihiko/), [Kiyosi Ito](https://kenji.blog/en/p/ito-kiyosi/), and furthermore, [Goro Shimura](https://kenji.blog/en/p/shimura-goro/) and [Yutaka Taniyama](https://kenji.blog/en/p/taniyama-yutaka/).
 
 ## Conclusion
 

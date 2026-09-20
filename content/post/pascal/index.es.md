@@ -11,19 +11,19 @@ tags: ["Pascal", "Teoría de la probabilidad", "Geometría proyectiva", "Teorema
 ## 1. Introducción: El genio que cambió el mundo en solo 39 años de vida
 
 "El hombre no es más que una caña, la más débil de la naturaleza; pero es una caña pensante."
-[Blaise Pascal](https://kenji.blog/p/pascal/) (19 de junio de 1623 - 19 de agosto de 1662), quien dejó esta famosa cita, es un gigante del intelecto que representa a la Francia del siglo XVII. Como matemático, físico, filósofo y teólogo cristiano, dejó logros monumentales profundamente grabados en la historia humana en varios campos.
+[Blaise Pascal](https://kenji.blog/es/p/pascal/) (19 de junio de 1623 - 19 de agosto de 1662), quien dejó esta famosa cita, es un gigante del intelecto que representa a la Francia del siglo XVII. Como matemático, físico, filósofo y teólogo cristiano, dejó logros monumentales profundamente grabados en la historia humana en varios campos.
 
 Su vida fue una batalla constante contra la enfermedad, y falleció a la temprana edad de 39 años. Sin embargo, durante esta corta vida, sentó las bases de la geometría proyectiva, inventó la primera calculadora mecánica práctica del mundo, fue pionero en el nuevo campo matemático de la teoría de la probabilidad y estableció principios fundamentales de la física con respecto a la mecánica de fluidos y la presión atmosférica. Este artículo detalla la vida de este genio que partió pronto, cómo llegó a estos descubrimientos revolucionarios y el profundo impacto que tuvo en las generaciones posteriores.
 
 ## 2. Nacimiento de un prodigio y un entorno educativo único (1623 - 1639)
 
 ### 2.1. Nacimiento en Auvernia y la muerte de su madre
-[Blaise Pascal](https://kenji.blog/p/pascal/) nació en 1623 en Clermont-Ferrand, Auvernia, en el centro-sur de Francia. Su padre, Étienne Pascal, era una figura destacada que se desempeñaba como presidente de la Corte de Ayudas (tribunal de impuestos) local y también era un excelente matemático. La familia Pascal se encontraba en un entorno intelectual muy privilegiado, pero cuando Blaise tenía solo tres años, su madre, Antoinette, falleció. Su padre Étienne decidió no volver a casarse y se dedicó por entero a la educación de sus tres hijos: Blaise, su hermana mayor Gilberte y su hermana menor Jacqueline.
+[Blaise Pascal](https://kenji.blog/es/p/pascal/) nació en 1623 en Clermont-Ferrand, Auvernia, en el centro-sur de Francia. Su padre, Étienne Pascal, era una figura destacada que se desempeñaba como presidente de la Corte de Ayudas (tribunal de impuestos) local y también era un excelente matemático. La familia Pascal se encontraba en un entorno intelectual muy privilegiado, pero cuando Blaise tenía solo tres años, su madre, Antoinette, falleció. Su padre Étienne decidió no volver a casarse y se dedicó por entero a la educación de sus tres hijos: Blaise, su hermana mayor Gilberte y su hermana menor Jacqueline.
 
 ### 2.2. Traslado a París y la política educativa de Étienne
 En 1631, para brindar a sus hijos la mejor educación posible, Étienne mudó a la familia a París. Insatisfecho con la educación escolar de la época, Étienne decidió convertirse él mismo en tutor privado de sus hijos. Su política educativa era muy singular: "No enseñar matemáticas, que es una materia demasiado abstracta, hasta que la razón del niño esté suficientemente desarrollada". Dio prioridad a los idiomas y la historia, y eliminó todos los libros matemáticos de la casa.
 
-Sin embargo, esta "prohibición", paradójicamente, estimuló intensamente la curiosidad del joven Blaise. A la edad de 12 años, Blaise comenzó a explorar la geometría por su cuenta durante su tiempo de juego. Dibujando figuras en el suelo con carbón, demostró de forma independiente la 32ª proposición de los *Elementos* de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/): "La suma de los ángulos interiores de un triángulo es igual a dos ángulos rectos (180 grados)". Al presenciar este abrumador destello de talento, su padre cambió su política, le permitió estudiar matemáticas y comenzó a llevarlo a las reuniones de los intelectuales más grandes de Europa organizadas por el padre Mersenne (la predecesora de la Academia de Ciencias de Francia).
+Sin embargo, esta "prohibición", paradójicamente, estimuló intensamente la curiosidad del joven Blaise. A la edad de 12 años, Blaise comenzó a explorar la geometría por su cuenta durante su tiempo de juego. Dibujando figuras en el suelo con carbón, demostró de forma independiente la 32ª proposición de los *Elementos* de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/): "La suma de los ángulos interiores de un triángulo es igual a dos ángulos rectos (180 grados)". Al presenciar este abrumador destello de talento, su padre cambió su política, le permitió estudiar matemáticas y comenzó a llevarlo a las reuniones de los intelectuales más grandes de Europa organizadas por el padre Mersenne (la predecesora de la Academia de Ciencias de Francia).
 
 ## 3. Logros innovadores en matemáticas
 
@@ -66,7 +66,7 @@ graph TD
     Q -.->|"Línea de Pascal"| R
 ```
 
-Este descubrimiento causó una enorme conmoción en la comunidad matemática de la época. Existe una anécdota de que incluso el gran matemático [René Descartes](https://kenji.blog/p/descartes/) se negó a creer que un joven de 16 años hubiera producido una prueba tan avanzada, sospechando que "debía haber sido escrita por el padre". Pascal derivó más de 400 corolarios de este teorema, haciendo avanzar significativamente la geometría de su tiempo.
+Este descubrimiento causó una enorme conmoción en la comunidad matemática de la época. Existe una anécdota de que incluso el gran matemático [René Descartes](https://kenji.blog/es/p/descartes/) se negó a creer que un joven de 16 años hubiera producido una prueba tan avanzada, sospechando que "debía haber sido escrita por el padre". Pascal derivó más de 400 corolarios de este teorema, haciendo avanzar significativamente la geometría de su tiempo.
 
 ### 3.2. La primera calculadora mecánica del mundo: La "Pascalina"
 
@@ -93,7 +93,7 @@ Uno de los papeles más cruciales de Pascal en la historia de las matemáticas f
 **El Problema de los Puntos**:
 > Dos jugadores de igual habilidad juegan a un juego en el que el primero en alcanzar un cierto número de victorias (por ejemplo, 3 victorias) se lleva todo el premio. Sin embargo, el juego se ve obligado a detenerse cuando un jugador tiene 2 victorias y el otro tiene 1 victoria. ¿Cómo se debe distribuir el premio de la manera más justa en este punto?
 
-Para abordar este difícil problema, Pascal escribió cartas a [Pierre de Fermat](https://kenji.blog/p/fermat/), otro genio matemático que vivía en Toulouse. Los dos llegaron a la solución a través de enfoques completamente diferentes.
+Para abordar este difícil problema, Pascal escribió cartas a [Pierre de Fermat](https://kenji.blog/es/p/fermat/), otro genio matemático que vivía en Toulouse. Los dos llegaron a la solución a través de enfoques completamente diferentes.
 
 - **El enfoque de Fermat**: Un método combinatorio que enumera todos los escenarios futuros posibles (diagrama de árbol) y calcula la probabilidad de que ocurra cada uno para determinar la proporción de distribución.
 - **El enfoque de Pascal**: Un método recursivo que calcula el "Valor esperado" de jugar el siguiente juego individual a partir del estado actual y lo resuelve de forma recursiva.
@@ -148,7 +148,7 @@ A raíz de esta experiencia, se retiró de la investigación científica secular
 
 Aunque dedicado a la religión, Pascal volvió a la investigación matemática solo una vez. En 1658, sufriendo de severos dolores de muelas, Pascal comenzó a pensar en problemas matemáticos relacionados con la "Cicloide (la trayectoria trazada por un punto en la circunferencia de un círculo mientras rueda a lo largo de una línea recta)" para distraerse. Misteriosamente, el dolor desapareció, lo que Pascal tomó como una revelación divina. En solo ocho días, descubrió métodos innovadores para encontrar el área, el centro de gravedad y el volumen de sólidos de revolución de la cicloide.
 
-Anunció un concurso de premios sobre este problema bajo el seudónimo de Amos Dettonville, y él mismo publicó soluciones perfectas. El "método de los indivisibles" que empleó aquí sirvió como un puente esencial para el descubrimiento del cálculo por [Isaac Newton](https://kenji.blog/p/newton/) y Gottfried Wilhelm Leibniz más tarde.
+Anunció un concurso de premios sobre este problema bajo el seudónimo de Amos Dettonville, y él mismo publicó soluciones perfectas. El "método de los indivisibles" que empleó aquí sirvió como un puente esencial para el descubrimiento del cálculo por [Isaac Newton](https://kenji.blog/es/p/newton/) y Gottfried Wilhelm Leibniz más tarde.
 
 ### 5.3. La apuesta de Pascal y la teoría de la decisión
 
@@ -179,7 +179,7 @@ Pascal se enfrentó al hecho de que, en comparación con la abrumadora inmensida
 
 ## 6. Conclusión: El legado de Pascal sigue vivo hoy
 
-Los 39 años por los que pasó [Blaise Pascal](https://kenji.blog/p/pascal/) fueron demasiado cortos en su conjunto y estuvieron llenos de la agonía de la enfermedad. Sin embargo, su intuición aguda y su pensamiento profundo saltaron sin esfuerzo los límites de las matemáticas, la física, la ingeniería y la filosofía, expandiendo enormemente los horizontes del conocimiento humano.
+Los 39 años por los que pasó [Blaise Pascal](https://kenji.blog/es/p/pascal/) fueron demasiado cortos en su conjunto y estuvieron llenos de la agonía de la enfermedad. Sin embargo, su intuición aguda y su pensamiento profundo saltaron sin esfuerzo los límites de las matemáticas, la física, la ingeniería y la filosofía, expandiendo enormemente los horizontes del conocimiento humano.
 
 Las semillas que sembró dan vida a los datos de presión atmosférica (hectopascales) que usamos a diario en los pronósticos meteorológicos, los frenos de los automóviles (principio de Pascal), la evaluación de riesgos en seguros y finanzas (teoría de la probabilidad), e incluso los cimientos mismos de la arquitectura informática. El lenguaje de programación "Pascal", desarrollado por Niklaus Wirth en 1970, fue nombrado en honor a él, el creador de la primera calculadora del mundo.
 

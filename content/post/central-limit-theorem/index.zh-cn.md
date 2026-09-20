@@ -10,7 +10,7 @@ slug: "central-limit-theorem"
 
 ## 1. 引言
 
-在学习数据科学和统计学时，无法避开的就是 **中心极限定理** ([Central Limit Theorem](https://kenji.blog/p/central-limit-theorem/))。这个定理有着如同魔法般的性质：“无论数据服从什么分布，随着样本量的增加，其样本均值的分布都会趋近于正态分布。”
+在学习数据科学和统计学时，无法避开的就是 **中心极限定理** ([Central Limit Theorem](https://kenji.blog/zh-cn/p/central-limit-theorem/))。这个定理有着如同魔法般的性质：“无论数据服从什么分布，随着样本量的增加，其样本均值的分布都会趋近于正态分布。”
 
 本文将对中心极限定理进行广泛的讲解，从直观的印象到严谨的数学定义，再到实际的应用案例。
 

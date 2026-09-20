@@ -118,7 +118,7 @@ $$ 15 \equiv 3 \pmod{12} $$
 
 ## 4. 支撐RSA加密的數學基礎3：歐拉函數與歐拉定理
 
-接下來就是RSA加密核心的數學魔法了。作為「[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)」推廣的「歐拉定理」即將登場。
+接下來就是RSA加密核心的數學魔法了。作為「[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)」推廣的「歐拉定理」即將登場。
 
 ### 4.1 歐拉的總計函數 $\phi(N)$
 
@@ -139,13 +139,13 @@ $$ \phi(N) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
 
 ### 4.2 歐拉定理
 
-萊昂哈德·歐拉（[Leonhard Euler](https://kenji.blog/p/euler/)）利用這個 $\phi(N)$，證明了以下優美的定理：
+萊昂哈德·歐拉（[Leonhard Euler](https://kenji.blog/zh-tw/p/euler/)）利用這個 $\phi(N)$，證明了以下優美的定理：
 
 **歐拉定理：**
 當整數 $a$ 與 $N$ 互質時，以下的同餘式成立：
 $$ a^{\phi(N)} \equiv 1 \pmod N $$
 
-這是一個驚人的性質：「將某個數字 $a$ 自乘 $\phi(N)$ 次後除以 $N$，餘數必定會是 $1$」。（當 $N$ 是質數 $p$ 時，公式為 $a^{p-1} \equiv 1 \pmod p$，這被稱為[費馬小定理](https://kenji.blog/p/fermats-little-theorem/)）。
+這是一個驚人的性質：「將某個數字 $a$ 自乘 $\phi(N)$ 次後除以 $N$，餘數必定會是 $1$」。（當 $N$ 是質數 $p$ 時，公式為 $a^{p-1} \equiv 1 \pmod p$，這被稱為[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)）。
 
 讓我們變形一下這個歐拉定理。兩邊再乘以 $a$：
 $$ a^{\phi(N) + 1} \equiv a \pmod N $$
@@ -267,11 +267,11 @@ $9^7 = 4,782,969$。把它除以 143，商為 $33447$ 餘數 $48$。
 
 ---
 
-## 8. 私鑰 $d$ 的求法：擴展[歐幾里得](https://kenji.blog/p/euclid/)演算法
+## 8. 私鑰 $d$ 的求法：擴展[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法
 
-在手動計算的例子中，我們是靠直覺找 $k$ 才找出 $d=103$，但當數字高達幾百位數時，這種方法就行不通了。在實際的程式中，會使用 **「擴展[歐幾里得](https://kenji.blog/p/euclid/)演算法」** 。
+在手動計算的例子中，我們是靠直覺找 $k$ 才找出 $d=103$，但當數字高達幾百位數時，這種方法就行不通了。在實際的程式中，會使用 **「擴展[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法」** 。
 
-解開 $7d \equiv 1 \pmod{120}$，就等同於尋找滿足 $7d + 120y = 1$ 的整數 $d, y$。透過逆推[歐幾里得](https://kenji.blog/p/euclid/)演算法，就可以機械化地求出這個值。
+解開 $7d \equiv 1 \pmod{120}$，就等同於尋找滿足 $7d + 120y = 1$ 的整數 $d, y$。透過逆推[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法，就可以機械化地求出這個值。
 
 1. $120 \div 7 = 17$ 餘 $1$
 2. 將其變形後為 $1 = 120 - 17 \times 7$

@@ -8,16 +8,16 @@ categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 
-# Qu'est-ce que l'algorithme d'[Euclide](https://kenji.blog/p/euclid/) ?
+# Qu'est-ce que l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) ?
 
-L' **algorithme d'[Euclide](https://kenji.blog/p/euclid/)** ([Euclide](https://kenji.blog/p/euclid/)an algorithm) est une méthode efficace pour calculer le plus grand commun diviseur (PGCD) de deux entiers naturels (ou entiers relatifs). Décrit vers 300 av. J.-C. par le mathématicien grec de l'Antiquité [Euclide](https://kenji.blog/p/euclid/) dans le livre VII de son traité de mathématiques « Éléments » (Elements), il est largement reconnu comme l'un des « plus anciens algorithmes de l'humanité ».
+L' **algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/)** ([Euclide](https://kenji.blog/fr/p/euclid/)an algorithm) est une méthode efficace pour calculer le plus grand commun diviseur (PGCD) de deux entiers naturels (ou entiers relatifs). Décrit vers 300 av. J.-C. par le mathématicien grec de l'Antiquité [Euclide](https://kenji.blog/fr/p/euclid/) dans le livre VII de son traité de mathématiques « Éléments » (Elements), il est largement reconnu comme l'un des « plus anciens algorithmes de l'humanité ».
 
-La manière la plus naïve de trouver le PGCD est de trouver la décomposition en produit de facteurs premiers des deux nombres et de multiplier les facteurs premiers communs. Cependant, à mesure que les nombres s'agrandissent, la complexité de calcul de la décomposition en produit de facteurs premiers devient elle-même énorme, ce qui rend difficile la résolution dans un laps de temps réaliste. D'autre part, en utilisant l' **algorithme d'[Euclide](https://kenji.blog/p/euclid/)** , il est possible de calculer le PGCD extrêmement rapidement, même pour des nombres gigantesques de plusieurs milliers de chiffres.
+La manière la plus naïve de trouver le PGCD est de trouver la décomposition en produit de facteurs premiers des deux nombres et de multiplier les facteurs premiers communs. Cependant, à mesure que les nombres s'agrandissent, la complexité de calcul de la décomposition en produit de facteurs premiers devient elle-même énorme, ce qui rend difficile la résolution dans un laps de temps réaliste. D'autre part, en utilisant l' **algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/)** , il est possible de calculer le PGCD extrêmement rapidement, même pour des nombres gigantesques de plusieurs milliers de chiffres.
 
 ## Théorème fondamental et mécanique
 
 Soit $\gcd(a, b)$ le plus grand commun diviseur de deux entiers naturels $a$ et $b$ (où $a \ge b$).
-[L'algorithme d'Euclide](https://kenji.blog/p/euclidean-algorithm/) est basé sur le théorème simple suivant :
+[L'algorithme d'Euclide](https://kenji.blog/fr/p/euclidean-algorithm/) est basé sur le théorème simple suivant :
 
 $$
 a = bq + r \implies \gcd(a, b) = \gcd(b, r)
@@ -39,7 +39,7 @@ Pourquoi $\gcd(a, b) = \gcd(b, r)$ est-il vrai ? Prouvons-le brièvement.
 
 ## Organigramme de l'algorithme
 
-En tirant parti de cette propriété, l'algorithme d'[Euclide](https://kenji.blog/p/euclid/) effectue des divisions à plusieurs reprises jusqu'à ce que le reste atteigne $0$ .
+En tirant parti de cette propriété, l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) effectue des divisions à plusieurs reprises jusqu'à ce que le reste atteigne $0$ .
 
 ```mermaid
 flowchart TD
@@ -109,24 +109,24 @@ int main() {
 
 ## Complexité temporelle et théorème de Lamé
 
-À quelle vitesse s'exécute l'algorithme d'[Euclide](https://kenji.blog/p/euclid/) ? En ce qui concerne sa complexité de calcul, le **théorème de Lamé** (Lamé's theorem), prouvé par le mathématicien français [Gabriel Lamé](https://kenji.blog/p/lame/) en 1844, est bien connu.
+À quelle vitesse s'exécute l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) ? En ce qui concerne sa complexité de calcul, le **théorème de Lamé** (Lamé's theorem), prouvé par le mathématicien français [Gabriel Lamé](https://kenji.blog/fr/p/lame/) en 1844, est bien connu.
 
 > **Théorème de Lamé**
-> Le nombre d'étapes de division nécessaires pour appliquer l'algorithme d'[Euclide](https://kenji.blog/p/euclid/) à deux entiers naturels $a, b$ ($a > b$) est d'au plus $5$ fois le nombre de chiffres dans la représentation décimale de $b$ .
+> Le nombre d'étapes de division nécessaires pour appliquer l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) à deux entiers naturels $a, b$ ($a > b$) est d'au plus $5$ fois le nombre de chiffres dans la représentation décimale de $b$ .
 
 En conséquence, la complexité temporelle de l'algorithme est de $O(\log(\min(a, b)))$ .
 
 Le pire des cas (où le nombre de divisions est maximisé) se produit lorsque deux nombres consécutifs de la suite de Fibonacci sont fournis. Par exemple, dans le processus de recherche du PGCD de $F_{n+2}$ et $F_{n+1}$ , le quotient est toujours de $1$ , passant continuellement à des nombres de Fibonacci plus petits.
 
-## Algorithme d'[Euclide](https://kenji.blog/p/euclid/) étendu
+## Algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) étendu
 
-Une extension de l'algorithme pour trouver des entiers $x, y$ qui satisfont l'identité de Bézout suivante (Bézout's identity), en plus de trouver le plus grand commun diviseur, est appelée l' **algorithme d'[Euclide](https://kenji.blog/p/euclid/) étendu** (Extended [Euclide](https://kenji.blog/p/euclid/)an algorithm).
+Une extension de l'algorithme pour trouver des entiers $x, y$ qui satisfont l'identité de Bézout suivante (Bézout's identity), en plus de trouver le plus grand commun diviseur, est appelée l' **algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) étendu** (Extended [Euclide](https://kenji.blog/fr/p/euclid/)an algorithm).
 
 $$
 ax + by = \gcd(a, b)
 $$
 
-### Implémentation de l'algorithme d'[Euclide](https://kenji.blog/p/euclid/) étendu
+### Implémentation de l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) étendu
 
 Dans le processus de retour des appels récursifs, nous revenons en arrière pour calculer les coefficients $x$ et $y$ .
 
@@ -152,10 +152,10 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 
 ## Applications dans la société moderne (Cryptographie RSA, etc.)
 
-[L'algorithme d'Euclide](https://kenji.blog/p/euclidean-algorithm/) étendu n'est pas qu'un puzzle mathématique, mais une technologie essentielle qui soutient la société Internet moderne.
+[L'algorithme d'Euclide](https://kenji.blog/fr/p/euclidean-algorithm/) étendu n'est pas qu'un puzzle mathématique, mais une technologie essentielle qui soutient la société Internet moderne.
 Un excellent exemple est la **cryptographie RSA** . Dans le processus de génération de clés du chiffrement RSA, il est nécessaire de trouver une clé privée $d$ (inverse modulaire) qui satisfait $e d \equiv 1 \pmod{\phi(N)}$ pour un nombre donné $e$ et la fonction indicatrice d'Euler $\phi(N)$ .
-Étant donné que cela peut être réorganisé sous la forme $ed + k\phi(N) = 1$ , nous pouvons utiliser l'algorithme d'[Euclide](https://kenji.blog/p/euclid/) étendu pour calculer $d$ à des vitesses extrêmement élevées.
+Étant donné que cela peut être réorganisé sous la forme $ed + k\phi(N) = 1$ , nous pouvons utiliser l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) étendu pour calculer $d$ à des vitesses extrêmement élevées.
 
 ## Conclusion
 
-Bien qu'il ait été découvert il y a longtemps dans l'ère av. J.-C., l'algorithme d'[Euclide](https://kenji.blog/p/euclid/) continue de sous-tendre les fondements de l'informatique moderne en raison de sa logique simplifiée et de sa grande efficacité de calcul. Bien que ce soit souvent le premier sujet rencontré lors de l'étude des algorithmes, il regorge de beauté mathématique et d'aspect pratique en coulisses.
+Bien qu'il ait été découvert il y a longtemps dans l'ère av. J.-C., l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) continue de sous-tendre les fondements de l'informatique moderne en raison de sa logique simplifiée et de sa grande efficacité de calcul. Bien que ce soit souvent le premier sujet rencontré lors de l'étude des algorithmes, il regorge de beauté mathématique et d'aspect pratique en coulisses.

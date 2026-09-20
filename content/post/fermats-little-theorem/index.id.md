@@ -12,17 +12,17 @@ tags:
   - "Bilangan Prima"
 ---
 
-Dalam masyarakat internet modern, kemampuan kita untuk berkomunikasi secara aman berkat **kriptografi**. Di dasar kriptografi ini terdapat sebuah teorema indah yang ditemukan pada abad ke-17 oleh matematikawan [Pierre de Fermat](https://kenji.blog/p/fermat/).
+Dalam masyarakat internet modern, kemampuan kita untuk berkomunikasi secara aman berkat **kriptografi**. Di dasar kriptografi ini terdapat sebuah teorema indah yang ditemukan pada abad ke-17 oleh matematikawan [Pierre de Fermat](https://kenji.blog/id/p/fermat/).
 
-Dalam artikel ini, kita akan menjelaskan **[Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/)**, landasan penting dari teori bilangan, dengan cara yang mudah dipahami, mencakup makna, pembuktian, dan bagaimana hal itu diterapkan pada kriptografi RSA modern.
+Dalam artikel ini, kita akan menjelaskan **[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)**, landasan penting dari teori bilangan, dengan cara yang mudah dipahami, mencakup makna, pembuktian, dan bagaimana hal itu diterapkan pada kriptografi RSA modern.
 
-## Apa itu [Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/)?
+## Apa itu [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)?
 
-[Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/) adalah teorema yang sangat sederhana namun kuat yang menunjukkan hubungan antara bilangan prima dan bilangan bulat.
+[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) adalah teorema yang sangat sederhana namun kuat yang menunjukkan hubungan antara bilangan prima dan bilangan bulat.
 
 Teorema tersebut menyatakan sebagai berikut:
 
-> **[Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/)**
+> **[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)**
 > Misalkan $p$ adalah bilangan prima, dan $a$ adalah bilangan bulat apa pun yang tidak habis dibagi oleh $p$ (artinya $a$ dan $p$ adalah koprima). Maka, relasi kongruensi berikut berlaku:
 > 
 > $$ a^{p-1} \equiv 1 \pmod p $$
@@ -52,7 +52,7 @@ Dengan cara ini, tidak peduli bilangan prima $p$ apa yang Anda pilih, hukum mist
 
 ## Pembuktian Teorema
 
-Ada beberapa pendekatan untuk membuktikan [Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/), namun di sini kami memperkenalkan metode pembuktian representatif berdasarkan teori bilangan.
+Ada beberapa pendekatan untuk membuktikan [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/), namun di sini kami memperkenalkan metode pembuktian representatif berdasarkan teori bilangan.
 
 Misalkan $p$ adalah bilangan prima dan $a$ bilangan bulat yang tidak habis dibagi oleh $p$.
 Pertimbangkan himpunan $S = \{1, 2, 3, \dots, p-1\}$. Misalkan $S'$ adalah himpunan baru yang dibuat dengan mengalikan setiap elemen dari himpunan ini dengan $a$.
@@ -94,9 +94,9 @@ Namun, karena terdapat bilangan-bilangan pengecualian yang disebut **bilangan Ca
 
 ## Aplikasi pada Kriptografi Modern: Kriptografi RSA
 
-Aplikasi terpenting dari [Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/) (dan generalisasinya, **Teorema Euler**) adalah **kriptografi RSA**, yang mendasari keamanan internet.
+Aplikasi terpenting dari [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) (dan generalisasinya, **Teorema Euler**) adalah **kriptografi RSA**, yang mendasari keamanan internet.
 
-Kriptografi RSA bergantung pada kesulitan memfaktorkan bilangan besar untuk keamanannya. Dalam mekanismenya, prinsip "[Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/)" memainkan peran yang sangat penting dalam proses pembuatan kunci dan dekripsi.
+Kriptografi RSA bergantung pada kesulitan memfaktorkan bilangan besar untuk keamanannya. Dalam mekanismenya, prinsip "[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)" memainkan peran yang sangat penting dalam proses pembuatan kunci dan dekripsi.
 
 ```mermaid
 sequenceDiagram
@@ -112,10 +112,10 @@ sequenceDiagram
 ```
 
 Dalam kriptografi RSA, dua bilangan prima besar, $p$ dan $q$, disiapkan, dan kita menetapkan $n = p \times q$.
-Menurut Teorema Euler, kunci ($e$ dan $d$) dirancang sedemikian rupa sehingga $M^{ed} \equiv M \pmod n$ berlaku dalam proses enkripsi dan dekripsi. Di sini, fenomena magis dari teks terang $M$ yang kembali ke bentuk aslinya pada dasarnya bergantung pada sifat-sifat matematis yang dijamin oleh [Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/).
+Menurut Teorema Euler, kunci ($e$ dan $d$) dirancang sedemikian rupa sehingga $M^{ed} \equiv M \pmod n$ berlaku dalam proses enkripsi dan dekripsi. Di sini, fenomena magis dari teks terang $M$ yang kembali ke bentuk aslinya pada dasarnya bergantung pada sifat-sifat matematis yang dijamin oleh [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/).
 
 ## Kesimpulan
 
-Sebuah teorema kecil yang ditemukan oleh [Pierre de Fermat](https://kenji.blog/p/fermat/) pada abad ke-17 telah menjadi elemen tak terpisahkan yang mendukung fondasi keamanan informasi dalam masyarakat modern ratusan tahun kemudian.
+Sebuah teorema kecil yang ditemukan oleh [Pierre de Fermat](https://kenji.blog/id/p/fermat/) pada abad ke-17 telah menjadi elemen tak terpisahkan yang mendukung fondasi keamanan informasi dalam masyarakat modern ratusan tahun kemudian.
 
-**[Teorema Kecil Fermat](https://kenji.blog/p/fermats-little-theorem/)** dapat dikatakan sebagai salah satu contoh paling indah yang menunjukkan bagaimana matematika murni terhubung dengan teknologi praktis (kriptografi dan algoritma). Seseorang tidak bisa tidak kagum dengan kedalaman matematika dan luasnya penerapannya.
+**[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)** dapat dikatakan sebagai salah satu contoh paling indah yang menunjukkan bagaimana matematika murni terhubung dengan teknologi praktis (kriptografi dan algoritma). Seseorang tidak bisa tidak kagum dengan kedalaman matematika dan luasnya penerapannya.

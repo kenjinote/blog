@@ -10,7 +10,7 @@ tags: ["topología", "combinatoria", "teorema-del-punto-fijo"]
 
 # 1. Introducción: El Misterio de las Matemáticas a Partir de un Rompecabezas
 
-La belleza de las matemáticas a menudo radica en cómo reglas extremadamente simples pueden llevar a resultados profundos y completamente inesperados. Uno de los ejemplos más icónicos de esto es el **Lema de Sperner** ([Sperner's Lemma](https://kenji.blog/p/sperners-lemma/)). Publicado en 1928 por el matemático alemán Emanuel Sperner, este lema, a primera vista, parece no ser más que un "rompecabezas de colorear triángulos" que incluso un estudiante de primaria podría entender.
+La belleza de las matemáticas a menudo radica en cómo reglas extremadamente simples pueden llevar a resultados profundos y completamente inesperados. Uno de los ejemplos más icónicos de esto es el **Lema de Sperner** ([Sperner's Lemma](https://kenji.blog/es/p/sperners-lemma/)). Publicado en 1928 por el matemático alemán Emanuel Sperner, este lema, a primera vista, parece no ser más que un "rompecabezas de colorear triángulos" que incluso un estudiante de primaria podría entender.
 
 Sin embargo, este simple rompecabezas ocupa una posición extremadamente importante en las matemáticas modernas. En particular, sirve como una herramienta poderosa para una prueba combinatoria y constructiva del **Teorema del Punto Fijo de Brouwer** (Brouwer Fixed-Point Theorem), que es un teorema fundamental en topología y se aplica ampliamente en campos como la teoría de juegos en economía (como en la demostración de la existencia del Equilibrio de Nash).
 
@@ -67,7 +67,7 @@ Una coloración que sigue estas reglas se llama **Coloración de Sperner** (Sper
 
 # 4. El Enunciado del Lema de Sperner
 
-Cuando terminas de colorear de acuerdo con las reglas de la coloración de Sperner, ¿qué fenómeno ocurre? [El Lema de Sperner](https://kenji.blog/p/sperners-lemma/) afirma el siguiente hecho asombroso.
+Cuando terminas de colorear de acuerdo con las reglas de la coloración de Sperner, ¿qué fenómeno ocurre? [El Lema de Sperner](https://kenji.blog/es/p/sperners-lemma/) afirma el siguiente hecho asombroso.
 
 > **Lema de Sperner (2D)**
 > En cualquier coloración de Sperner, el número de pequeños triángulos donde los tres vértices están pintados de colores diferentes (color 1, color 2 y color 3) **debe ser un número impar**.
@@ -135,7 +135,7 @@ Con esto, queda perfectamente demostrado que hay al menos un triángulo completo
 
 # 6. Generalización a Dimensiones Superiores
 
-[El Lema de Sperner](https://kenji.blog/p/sperners-lemma/) no se limita a triángulos 2D, sino que es válido para cualquier símplice $n$-dimensional.
+[El Lema de Sperner](https://kenji.blog/es/p/sperners-lemma/) no se limita a triángulos 2D, sino que es válido para cualquier símplice $n$-dimensional.
 
 En el caso de un símplice $n$-dimensional (por ejemplo, un tetraedro para $n=3$), hay $n+1$ vértices, y utilizamos $n+1$ colores, $1, 2, \dots, n+1$.
 La condición de frontera se generaliza de la siguiente manera: "Los vértices de cualquier cara $k$-dimensional (faceta) deben usar sólo los mismos colores que los $k+1$ vértices que constituyen esa cara."
@@ -186,6 +186,6 @@ Además, la "existencia del Equilibrio de Nash" demostrada por John Nash en econ
 
 # 9. Conclusión
 
-[El Lema de Sperner](https://kenji.blog/p/sperners-lemma/) comienza con un escenario casi parecido a un juego, de colorear los vértices de un triángulo según unas reglas. Sin embargo, dentro de esa simple lógica de "contar el número de puertas", se ocultaban profundas verdades sobre la continuidad y la invariancia del espacio.
+[El Lema de Sperner](https://kenji.blog/es/p/sperners-lemma/) comienza con un escenario casi parecido a un juego, de colorear los vértices de un triángulo según unas reglas. Sin embargo, dentro de esa simple lógica de "contar el número de puertas", se ocultaban profundas verdades sobre la continuidad y la invariancia del espacio.
 
 Matemáticas discretas y matemáticas continuas. El hecho de que estos dos mundos aparentemente completamente diferentes estén conectados por un teorema tan hermoso es discutiblemente uno de los mayores atractivos de las matemáticas como disciplina. Animamos a los lectores a agarrar un papel y un bolígrafo, dividir un triángulo arbitrariamente y pintarlo de 3 colores. Cuando encuentres el "triángulo completo" que siempre se esconde allí, tú también deberías poder tocar el misterio de las matemáticas.

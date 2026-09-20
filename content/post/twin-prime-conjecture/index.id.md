@@ -23,7 +23,7 @@ Bilangan Prima Kembar (Twin Primes) adalah pasangan bilangan prima yang selisihn
 - $(29, 31)$
 - $(41, 43)$
 
-Seiring bertambah besarnya bilangan, frekuensi kemunculan bilangan prima itu sendiri akan menurun, seperti yang diketahui dari [Teorema Bilangan Prima ([Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/))](https://kenji.blog/p/prime-number-theorem/). Seiring dengan itu, frekuensi kemunculan bilangan prima kembar juga menurun. Namun, tidak peduli seberapa besar bilangannya, para matematikawan telah lama menduga bahwa "pasangan bilangan prima dengan selisih 2" ini akan terus muncul tanpa henti.
+Seiring bertambah besarnya bilangan, frekuensi kemunculan bilangan prima itu sendiri akan menurun, seperti yang diketahui dari [Teorema Bilangan Prima ([Prime Number Theorem](https://kenji.blog/id/p/prime-number-theorem/))](https://kenji.blog/p/prime-number-theorem/). Seiring dengan itu, frekuensi kemunculan bilangan prima kembar juga menurun. Namun, tidak peduli seberapa besar bilangannya, para matematikawan telah lama menduga bahwa "pasangan bilangan prima dengan selisih 2" ini akan terus muncul tanpa henti.
 
 Inilah **Konjektur Bilangan Prima Kembar**.
 
@@ -76,7 +76,7 @@ $$
 
 Nilai konvergen $B_2$ ini disebut **Konstanta Brun** (Brun's Constant). Menurut perhitungan saat ini, diperkirakan $B_2 \approx 1.90216058$.
 
-Fakta bahwa jumlah kebalikan dari semua bilangan prima divergen telah dibuktikan oleh [Leonhard Euler](https://kenji.blog/p/euler/). Jika Konjektur Bilangan Prima Kembar salah dan bilangan prima kembar hanya berjumlah berhingga, maka wajar saja jika jumlah itu konvergen karena itu adalah jumlah dari angka-angka yang berhingga. Namun, apa yang disiratkan oleh Teorema Brun adalah "Bahkan jika bilangan prima kembar ada tak terhingga banyaknya, jumlah kebalikan mereka konvergen, yang berarti mereka tersebar sangat 'jarang'." Hal ini merupakan salah satu faktor yang membuat pemecahan Konjektur Bilangan Prima Kembar menjadi sangat sulit.
+Fakta bahwa jumlah kebalikan dari semua bilangan prima divergen telah dibuktikan oleh [Leonhard Euler](https://kenji.blog/id/p/euler/). Jika Konjektur Bilangan Prima Kembar salah dan bilangan prima kembar hanya berjumlah berhingga, maka wajar saja jika jumlah itu konvergen karena itu adalah jumlah dari angka-angka yang berhingga. Namun, apa yang disiratkan oleh Teorema Brun adalah "Bahkan jika bilangan prima kembar ada tak terhingga banyaknya, jumlah kebalikan mereka konvergen, yang berarti mereka tersebar sangat 'jarang'." Hal ini merupakan salah satu faktor yang membuat pemecahan Konjektur Bilangan Prima Kembar menjadi sangat sulit.
 
 ## 4. Kemajuan Dramatis dalam Beberapa Tahun Terakhir: Terobosan Yitang Zhang
 

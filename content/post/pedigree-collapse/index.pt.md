@@ -14,7 +14,7 @@ slug: "pedigree-collapse"
 
 # 1. Introdução: O mistério dos ancestrais que se multiplicam infinitamente
 
-Quando pensamos sobre as nossas próprias raízes, ou seja, a nossa "árvore genealógica", inevitavelmente deparamo-nos com uma estranha contradição matemática. Este é o **Paradoxo do Ancestral** ([Ancestor Paradox](https://kenji.blog/p/pedigree-collapse/)).
+Quando pensamos sobre as nossas próprias raízes, ou seja, a nossa "árvore genealógica", inevitavelmente deparamo-nos com uma estranha contradição matemática. Este é o **Paradoxo do Ancestral** ([Ancestor Paradox](https://kenji.blog/pt/p/pedigree-collapse/)).
 
 A genealogia humana pode ser modelada basicamente como uma árvore binária simples. Você tem 2 pais (pai e mãe), e cada um deles tem 2 pais (avós). Além disso, cada um desses pais tem 2 pais (bisavós). Em outras palavras, se considerarmos a geração como $g$ (sendo você a geração 0), o número de ancestrais $g$ gerações atrás deveria ser de $2^g$ pessoas.
 

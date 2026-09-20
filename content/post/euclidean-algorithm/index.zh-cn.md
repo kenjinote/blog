@@ -8,16 +8,16 @@ categories: ["mathematics"]
 tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 ---
 
-# 什么是[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)
+# 什么是[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)
 
-**[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)** （[Euclide](https://kenji.blog/p/euclid/)an algorithm），又称辗转相除法，是一种用于高效计算两个自然数（或整数）最大公约数（Greatest Common Divisor, GCD）的算法。大约在公元前300年，古希腊数学家[欧几里得](https://kenji.blog/p/euclid/)在其数学著作《几何原本》（Elements）第7卷中记载了该算法，它也被广泛认为是“人类最古老的算法”之一。
+**[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)** （[Euclide](https://kenji.blog/zh-cn/p/euclid/)an algorithm），又称辗转相除法，是一种用于高效计算两个自然数（或整数）最大公约数（Greatest Common Divisor, GCD）的算法。大约在公元前300年，古希腊数学家[欧几里得](https://kenji.blog/zh-cn/p/euclid/)在其数学著作《几何原本》（Elements）第7卷中记载了该算法，它也被广泛认为是“人类最古老的算法”之一。
 
-求最大公约数最朴素的方法是将两个数分别进行质因数分解，然后将相同的质因数相乘。但是，当数字变得非常庞大时，质因数分解本身的计算量会变得极其巨大，难以在现实时间内得出结果。相反，如果使用 **[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)** ，即使是长达数千位的巨大数字，也能以极快的速度计算出它们的最大公约数。
+求最大公约数最朴素的方法是将两个数分别进行质因数分解，然后将相同的质因数相乘。但是，当数字变得非常庞大时，质因数分解本身的计算量会变得极其巨大，难以在现实时间内得出结果。相反，如果使用 **[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)** ，即使是长达数千位的巨大数字，也能以极快的速度计算出它们的最大公约数。
 
 ## 基本定理与原理
 
 设两个自然数 $a$ 和 $b$ （$a \ge b$）的最大公约数为 $\gcd(a, b)$。
-[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)基于以下简单的定理：
+[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)基于以下简单的定理：
 
 $$
 a = bq + r \implies \gcd(a, b) = \gcd(b, r)
@@ -39,7 +39,7 @@ $$
 
 ## 算法流程图
 
-利用这一性质，[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)通过不断重复除法运算，直到余数为 $0$ 为止。
+利用这一性质，[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)通过不断重复除法运算，直到余数为 $0$ 为止。
 
 ```mermaid
 flowchart TD
@@ -109,24 +109,24 @@ int main() {
 
 ## 时间复杂度与拉梅定理
 
-[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)到底有多快呢？关于其计算复杂度，法国数学家[加布里埃尔·拉梅](https://kenji.blog/p/lame/)在1844年证明的 **拉梅定理** （Lamé's theorem）非常著名。
+[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)到底有多快呢？关于其计算复杂度，法国数学家[加布里埃尔·拉梅](https://kenji.blog/zh-cn/p/lame/)在1844年证明的 **拉梅定理** （Lamé's theorem）非常著名。
 
 > **拉梅定理**
-> 对两个自然数 $a, b$ （$a > b$）应用[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)时，除法的次数不超过 $b$ 在十进制下位数的 $5$ 倍。
+> 对两个自然数 $a, b$ （$a > b$）应用[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)时，除法的次数不超过 $b$ 在十进制下位数的 $5$ 倍。
 
 由此可知，该算法的时间复杂度为 $O(\log(\min(a, b)))$。
 
 最坏的情况（即除法次数最多的情况）发生在输入斐波那契数列的相邻两项时。例如，在求 $F_{n+2}$ 和 $F_{n+1}$ 的最大公约数的过程中，商始终为 $1$，并不断向更小的斐波那契数过渡。
 
-## 扩展[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)
+## 扩展[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)
 
-不仅能求出最大公约数，还能求出满足以下裴蜀定理（Bézout's identity）的整数 $x, y$ 的算法，被称为 **扩展[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)** （Extended [Euclide](https://kenji.blog/p/euclid/)an algorithm）。
+不仅能求出最大公约数，还能求出满足以下裴蜀定理（Bézout's identity）的整数 $x, y$ 的算法，被称为 **扩展[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)** （Extended [Euclide](https://kenji.blog/zh-cn/p/euclid/)an algorithm）。
 
 $$
 ax + by = \gcd(a, b)
 $$
 
-### 扩展[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)的实现
+### 扩展[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)的实现
 
 在递归调用返回的过程中，逆向推导出 $x, y$ 的系数。
 
@@ -152,10 +152,10 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 
 ## 在现代社会中的应用（RSA加密等）
 
-扩展[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)不仅仅是一个数学难题，它还是支撑现代互联网社会不可或缺的技术。
+扩展[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)不仅仅是一个数学难题，它还是支撑现代互联网社会不可或缺的技术。
 一个典型的例子就是 **RSA加密** 。在RSA加密的密钥生成过程中，对于某个数 $e$ 和欧拉函数 $\phi(N)$ ，需要求解满足 $e d \equiv 1 \pmod{\phi(N)}$ 的私钥 $d$ （模逆元）。
-因为它可以转化为 $ed + k\phi(N) = 1$ 的形式，所以我们可以直接使用扩展[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)以极快的速度计算出 $d$。
+因为它可以转化为 $ed + k\phi(N) = 1$ 的形式，所以我们可以直接使用扩展[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)以极快的速度计算出 $d$。
 
 ## 总结
 
-尽管[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)早在公元前就被发现，但由于其精简的逻辑和极高的计算效率，它至今仍在支撑着现代计算机科学的根基。在学习算法时，这往往是我们最先接触的主题之一，但其背后却蕴含着丰富的数学之美与实用性。
+尽管[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)早在公元前就被发现，但由于其精简的逻辑和极高的计算效率，它至今仍在支撑着现代计算机科学的根基。在学习算法时，这往往是我们最先接触的主题之一，但其背后却蕴含着丰富的数学之美与实用性。

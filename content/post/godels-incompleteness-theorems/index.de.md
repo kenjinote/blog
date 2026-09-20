@@ -11,7 +11,7 @@ tags:
 slug: "godels-incompleteness-theorems"
 ---
 
-„Mathematik ist absolut korrekt“ ── Jeder hat wahrscheinlich schon einmal so gedacht. Aber eine von dem jungen Mathematiker [Kurt Gödel](https://kenji.blog/p/godel/) im Jahr 1931 veröffentlichte Arbeit hat diesen gesunden Menschenverstand grundlegend erschüttert. Dies sind **[Gödels Unvollständigkeitssätze](https://kenji.blog/p/godels-incompleteness-theorems/)**.
+„Mathematik ist absolut korrekt“ ── Jeder hat wahrscheinlich schon einmal so gedacht. Aber eine von dem jungen Mathematiker [Kurt Gödel](https://kenji.blog/de/p/godel/) im Jahr 1931 veröffentlichte Arbeit hat diesen gesunden Menschenverstand grundlegend erschüttert. Dies sind **[Gödels Unvollständigkeitssätze](https://kenji.blog/de/p/godels-incompleteness-theorems/)**.
 
 In diesem Artikel werden wir dieses schockierende Theorem, das besagt, dass es „absolut unbeweisbare Wahrheiten“ gibt, hinsichtlich seiner Bedeutung und der Funktionsweise seines Beweises mit konkreten Beispielen und Diagrammen ausführlich erklären.
 
@@ -19,7 +19,7 @@ In diesem Artikel werden wir dieses schockierende Theorem, das besagt, dass es �
 
 ## 1. Hintergrund: Das Hilbert-Programm und die Krise der Mathematik
 
-Vom späten 19. bis zum frühen 20. Jahrhundert sah sich die mathematische Welt mit den „Paradoxien der Mengenlehre (z. B. dem Russellschen Paradoxon)“ konfrontiert, was ihre Grundlagen erschütterte. [David Hilbert](https://kenji.blog/p/hilbert/), die höchste Autorität der damaligen mathematischen Welt, stand auf, um diese „Krise der Mathematik“ zu lösen.
+Vom späten 19. bis zum frühen 20. Jahrhundert sah sich die mathematische Welt mit den „Paradoxien der Mengenlehre (z. B. dem Russellschen Paradoxon)“ konfrontiert, was ihre Grundlagen erschütterte. [David Hilbert](https://kenji.blog/de/p/hilbert/), die höchste Autorität der damaligen mathematischen Welt, stand auf, um diese „Krise der Mathematik“ zu lösen.
 
 Hilbert versuchte, alle mathematischen Schlussfolgerungen vollständig zu symbolisieren und die Mathematik nur durch mechanische Regeln neu aufzubauen. Das von ihm vorgeschlagene „Hilbert-Programm“ zielte darauf ab, in einem formalen System der Mathematik die folgenden drei Eigenschaften zu beweisen:
 
@@ -51,7 +51,7 @@ Hilbert dachte, dass wenn man solche formalen Systeme vergrößert, man irgendwa
 
 ## 3. Der Schock des Ersten Unvollständigkeitssatzes: Aussagen, die „wahr, aber nicht beweisbar“ sind
 
-Aber 1931 veröffentlichte der damals erst 25-jährige [Kurt Gödel](https://kenji.blog/p/godel/) eine Arbeit, die Hilberts Traum zunichtemachte. Das ist der **Erste Unvollständigkeitssatz**.
+Aber 1931 veröffentlichte der damals erst 25-jährige [Kurt Gödel](https://kenji.blog/de/p/godel/) eine Arbeit, die Hilberts Traum zunichtemachte. Das ist der **Erste Unvollständigkeitssatz**.
 
 > **Erster Unvollständigkeitssatz**
 > In jedem widerspruchsfreien formalen System, das stark genug ist (um die Peano-Arithmetik zu enthalten), gibt es immer Aussagen, die wahr sind, aber innerhalb dieses Systems nicht bewiesen werden können.
@@ -125,7 +125,7 @@ Der Zweite Unvollständigkeitssatz zeigte die entscheidende Grenze auf, dass es 
 
 ## 6. Häufige Missverständnisse über die Unvollständigkeitssätze
 
-[Gödels Unvollständigkeitssätze](https://kenji.blog/p/godels-incompleteness-theorems/) werden aufgrund ihres dramatischen Namens oft fälschlicherweise in philosophischen, weltanschaulichen oder okkulten Kontexten verwendet. Hier klären wir typische Missverständnisse auf.
+[Gödels Unvollständigkeitssätze](https://kenji.blog/de/p/godels-incompleteness-theorems/) werden aufgrund ihres dramatischen Namens oft fälschlicherweise in philosophischen, weltanschaulichen oder okkulten Kontexten verwendet. Hier klären wir typische Missverständnisse auf.
 
 - **Missverständnis 1: „Die Mathematik ist zusammengebrochen“**
   - **Fakt**: Die Unvollständigkeitssätze bedeuten nicht den Zusammenbruch der Mathematik. Sie offenbarten vielmehr die Natur der formalen Logik, dass „ein bestimmtes fixes Axiomensystem allein nicht alle Wahrheiten erfassen kann“. Mathematiker haben neue, mächtigere Systeme geschaffen und die Forschung weiterentwickelt, indem sie bei Bedarf neue Axiome hinzufügten (z. B. das Auswahlaxiom oder Axiome über große Kardinalzahlen).
@@ -136,7 +136,7 @@ Der Zweite Unvollständigkeitssatz zeigte die entscheidende Grenze auf, dass es 
 
 ## 7. Die Übergabe an die Turingmaschine: Der Beginn der Informatik
 
-Die Auswirkungen von Gödels Theorem beschränkten sich nicht auf die Mathematik. 1936 übertrug der britische Mathematiker [Alan Turing](https://kenji.blog/p/turing/) Gödels Konzept des „formalen Systems“ auf physische Rechenprozesse und erdachte ein virtuelles Computermodell namens „Turingmaschine“.
+Die Auswirkungen von Gödels Theorem beschränkten sich nicht auf die Mathematik. 1936 übertrug der britische Mathematiker [Alan Turing](https://kenji.blog/de/p/turing/) Gödels Konzept des „formalen Systems“ auf physische Rechenprozesse und erdachte ein virtuelles Computermodell namens „Turingmaschine“.
 
 Turing wandte Gödels Unvollständigkeitssatz auf die Welt der Computer an und bewies: „Es gibt keinen universellen Algorithmus, der im Voraus bestimmen kann, ob ein Computerprogramm jemals anhalten wird.“ Dies ist das berühmte **Halteproblem** (Halting Problem).
 
@@ -152,8 +152,8 @@ Die Grenze der Mathematik, dass es „unbeweisbare Wahrheiten“ gibt, verwandel
 
 ## 8. Fazit: Die unendliche Reise des „Wissens“
 
-[David Hilbert](https://kenji.blog/p/hilbert/)s Traum von einer „perfekten mathematischen Maschine, die alles automatisch beweisen kann“ wurde durch [Gödels Unvollständigkeitssätze](https://kenji.blog/p/godels-incompleteness-theorems/) zerstört. Aber das bedeutete keineswegs eine Niederlage der Mathematik.
+[David Hilbert](https://kenji.blog/de/p/hilbert/)s Traum von einer „perfekten mathematischen Maschine, die alles automatisch beweisen kann“ wurde durch [Gödels Unvollständigkeitssätze](https://kenji.blog/de/p/godels-incompleteness-theorems/) zerstört. Aber das bedeutete keineswegs eine Niederlage der Mathematik.
 
 Wenn Mathematik vollständig mechanisierbar wäre, wäre die Arbeit von Mathematikern bloße Routine geworden und hätte irgendwann geendet. Die von Gödel aufgezeigte Existenz von „Aussagen, die unbeweisbar, aber wahr sind“, bewies jedoch, dass das Universum der Mathematik weitaus reicher ist und eine unerschöpfliche Tiefe besitzt, als wir uns vorstellen konnten.
 
-[Kurt Gödel](https://kenji.blog/p/godel/) bewies die Existenz „absolut unbeweisbarer Wahrheiten“ durch das präziseste Mittel der Logik: die Mathematik selbst. Seine Unvollständigkeitssätze lehren uns, dass die menschliche Suche nach Wissen eine unendliche Reise ist.
+[Kurt Gödel](https://kenji.blog/de/p/godel/) bewies die Existenz „absolut unbeweisbarer Wahrheiten“ durch das präziseste Mittel der Logik: die Mathematik selbst. Seine Unvollständigkeitssätze lehren uns, dass die menschliche Suche nach Wissen eine unendliche Reise ist.

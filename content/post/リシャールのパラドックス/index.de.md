@@ -79,7 +79,7 @@ graph TD
 
 Die nach dieser Methode erstellte neue Zahl $X$ (im obigen Beispiel $X = 0.4128...$) wird **absolut nicht mit irgendeiner Zahl** in der Liste übereinstimmen.
 Der Grund dafür ist, dass die $n$-te Ziffer nach dem Komma absichtlich gegenüber der $n$-ten Zahl verschoben wurde.
-(Diese Methode wird als **"Diagonalargument"** bezeichnet, das vom genialen Mathematiker [Georg Cantor](https://kenji.blog/p/cantor/) erfunden wurde, um die unendliche Größe der reellen Zahlen zu beweisen.)
+(Diese Methode wird als **"Diagonalargument"** bezeichnet, das vom genialen Mathematiker [Georg Cantor](https://kenji.blog/de/p/cantor/) erfunden wurde, um die unendliche Größe der reellen Zahlen zu beweisen.)
 
 ---
 
@@ -121,7 +121,7 @@ Das Richard-Paradoxon explodierte in einem Selbstwiderspruch, weil es versuchte,
 Dieses Richard-Paradoxon löste in der damaligen mathematischen Welt einen großen Schock aus.
 "Menschliche Worte (und logische Systeme) führen schnell zu Selbstwidersprüchen, wenn man nicht aufpasst. Wie kann man die Mathematik perfekt und widerspruchsfrei machen?"
 
-Im Jahr 1931 löste der junge und brillante Mathematiker [Kurt Gödel](https://kenji.blog/p/godel/) im Alter von 25 Jahren dieses Problem endgültig.
+Im Jahr 1931 löste der junge und brillante Mathematiker [Kurt Gödel](https://kenji.blog/de/p/godel/) im Alter von 25 Jahren dieses Problem endgültig.
 Gödel übersetzte und reproduzierte die Struktur dieses Paradoxons, das Richard unter Ausnutzung der "Mehrdeutigkeit der Sprache" ausgelöst hatte, perfekt mithilfe von **"strengen mathematischen Formeln (Gödelnummern)"**.
 
 Das Ergebnis war der berühmte **"Gödelsche Unvollständigkeitssatz"**.

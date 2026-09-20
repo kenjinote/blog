@@ -79,9 +79,9 @@ Portanto, a probabilidade de ganhar se você mudar de porta é $\frac{2}{3}$, o 
 
 ---
 
-## 3. Prova Rigorosa Através do [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/)
+## 3. Prova Rigorosa Através do [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/)
 
-Para resolver esse problema rigorosamente de forma matemática, usamos o "[Teorema de Bayes](https://kenji.blog/p/bayes-theorem/)" para calcular a probabilidade condicional.
+Para resolver esse problema rigorosamente de forma matemática, usamos o "[Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/)" para calcular a probabilidade condicional.
 
 $$ P(H|E) = \frac{P(E|H) P(H)}{P(E)} $$
 
@@ -111,7 +111,7 @@ A seguir, encontramos a probabilidade total de o apresentador abrir a porta B, $
 $$ P(M_B) = P(M_B|C_A)P(C_A) + P(M_B|C_B)P(C_B) + P(M_B|C_C)P(C_C) $$
 $$ P(M_B) = \left(\frac{1}{2} \times \frac{1}{3}\right) + \left(0 \times \frac{1}{3}\right) + \left(1 \times \frac{1}{3}\right) = \frac{1}{6} + 0 + \frac{1}{3} = \frac{1}{2} $$
 
-Finalmente, aplicamos o [Teorema de Bayes](https://kenji.blog/p/bayes-theorem/) para calcular as probabilidades a posteriori das portas A e C.
+Finalmente, aplicamos o [Teorema de Bayes](https://kenji.blog/pt/p/bayes-theorem/) para calcular as probabilidades a posteriori das portas A e C.
 
 **Probabilidade do carro estar na porta A (caso você não mude):**
 $$ P(C_A|M_B) = \frac{P(M_B|C_A) P(C_A)}{P(M_B)} = \frac{\frac{1}{2} \times \frac{1}{3}}{\frac{1}{2}} = \frac{1}{3} $$

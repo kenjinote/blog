@@ -15,7 +15,7 @@ tags:
 
 ## Introdução: Um dos Teoremas Mais Belos da Matemática
 
-No mundo da matemática, existem algumas fórmulas mágicas que revelam conexões surpreendentes entre fenômenos aparentemente não relacionados. Entre elas, a **Fórmula de Euler para poliedros**, descoberta por [Leonhard Euler](https://kenji.blog/p/euler/), destaca-se por sua simplicidade e universalidade.
+No mundo da matemática, existem algumas fórmulas mágicas que revelam conexões surpreendentes entre fenômenos aparentemente não relacionados. Entre elas, a **Fórmula de Euler para poliedros**, descoberta por [Leonhard Euler](https://kenji.blog/pt/p/euler/), destaca-se por sua simplicidade e universalidade.
 
 A fórmula é simplesmente esta:
 
@@ -46,7 +46,7 @@ De fato, independentemente de qual poliedro regular escolhamos, o resultado é e
 
 ## Uma Demonstração Intuitiva da Fórmula de Euler
 
-Por que é sempre igual a **$2$**? Vejamos uma demonstração intuitiva pelo matemático francês [Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/) (1811). Esta demonstração adota uma abordagem revolucionária ao transformar um sólido 3D em um "grafo planar".
+Por que é sempre igual a **$2$**? Vejamos uma demonstração intuitiva pelo matemático francês [Augustin-Louis Cauchy](https://kenji.blog/pt/p/cauchy/) (1811). Esta demonstração adota uma abordagem revolucionária ao transformar um sólido 3D em um "grafo planar".
 
 ### Passo 1: Achatando o Sólido em um Plano
 
@@ -90,7 +90,7 @@ flowchart TD
 
 ## O Manuscrito Secreto de Descartes: Outra História de Descoberta
 
-Na verdade, cerca de um século antes de Euler publicar este teorema, o filósofo e matemático francês [René Descartes](https://kenji.blog/p/descartes/) já havia chegado essencialmente ao mesmo resultado.
+Na verdade, cerca de um século antes de Euler publicar este teorema, o filósofo e matemático francês [René Descartes](https://kenji.blog/pt/p/descartes/) já havia chegado essencialmente ao mesmo resultado.
 Descartes concentrou-se no conceito de "defeito angular" nos vértices de um poliedro.
 A soma dos ângulos que se encontram em um único vértice é de $360^\circ$ em um plano, mas no vértice de um sólido, é sempre menor que $360^\circ$. A essa diferença para chegar a $360^\circ$ dá-se o nome de "defeito angular".
 
@@ -135,7 +135,7 @@ flowchart LR
 
 ## A Fórmula de Euler-Poincaré: Um Salto para as Multidimensões
 
-Desde o final do século XIX até ao século XX, matemáticos como [Henri Poincaré](https://kenji.blog/p/poincare/) expandiram ainda mais o teorema de Euler para espaços de maior dimensão. Isto tornou-se na **Fórmula de Euler-Poincaré**.
+Desde o final do século XIX até ao século XX, matemáticos como [Henri Poincaré](https://kenji.blog/pt/p/poincare/) expandiram ainda mais o teorema de Euler para espaços de maior dimensão. Isto tornou-se na **Fórmula de Euler-Poincaré**.
 Ao generalizar os elementos de um poliedro, consideraram a soma alternada do número de elementos numa forma de $n$-dimensões.
 
 $$ \chi = k_0 - k_1 + k_2 - k_3 + \dots + (-1)^n k_n $$

@@ -8,7 +8,7 @@ categories: ["mathematics", "science"]
 tags: ["Géométrie", "Gauss", "Théorème de la pizza", "Theorema Egregium", "Géométrie différentielle"]
 ---
 
-Dans le monde des mathématiques, des concepts qui semblent à première vue abstraits et difficiles peuvent s'avérer utiles dans des situations inattendues de notre vie quotidienne. L'un des meilleurs exemples est le ** Theorema Egregium ** (Théorème remarquable) découvert par [Carl Friedrich Gauss](https://kenji.blog/p/gauss/). Ce théorème est connu comme l'un des résultats les plus importants et les plus beaux dans le domaine de la géométrie différentielle.
+Dans le monde des mathématiques, des concepts qui semblent à première vue abstraits et difficiles peuvent s'avérer utiles dans des situations inattendues de notre vie quotidienne. L'un des meilleurs exemples est le ** Theorema Egregium ** (Théorème remarquable) découvert par [Carl Friedrich Gauss](https://kenji.blog/fr/p/gauss/). Ce théorème est connu comme l'un des résultats les plus importants et les plus beaux dans le domaine de la géométrie différentielle.
 
 Dans cet article, nous allons explorer en profondeur la signification mathématique de ce ** Theorema Egregium **, ce qu'est une surface, et pourquoi ce théorème est extrêmement utile lorsque nous mangeons une pizza.
 
@@ -92,10 +92,10 @@ Outre la façon de manger une pizza, ce principe se retrouve partout dans l'ing�
 - ** Feuilles de plantes ** : De nombreuses feuilles et pétales de plantes ont naturellement évolué vers des formes ondulées pour résister au vent et à leur propre poids.
 - ** Bâtiments ** : Les structures en coque et autres bâtiments qui couvrent de grands espaces avec des matériaux fins exploitent la résistance mécanique et les propriétés géométriques des surfaces courbes.
 
-Ce théorème découvert par Gauss a ensuite été étendu aux variétés de dimensions supérieures par son disciple [Bernhard Riemann](https://kenji.blog/p/riemann/) (géométrie riemannienne), et a fini par devenir le fondement mathématique de la théorie de la relativité générale d'Albert Einstein pour décrire la gravité comme une « distorsion de l'espace-temps ».
+Ce théorème découvert par Gauss a ensuite été étendu aux variétés de dimensions supérieures par son disciple [Bernhard Riemann](https://kenji.blog/fr/p/riemann/) (géométrie riemannienne), et a fini par devenir le fondement mathématique de la théorie de la relativité générale d'Albert Einstein pour décrire la gravité comme une « distorsion de l'espace-temps ».
 
 ## 5. Conclusion
 
 Derrière notre acte inconscient de « plier la croûte d'une pizza » se cachait une loi mathématique profonde et magnifique qui est liée jusqu'à la cosmologie d'Einstein.
 
-Le ** Theorema Egregium ** est sans doute l'exemple le plus délicieux et le plus facile à comprendre de la façon dont des mathématiques abstraites régissent le monde réel. La prochaine fois que vous mangerez une pizza, n'hésitez pas à déguster votre part pliée à la perfection tout en pensant à [Carl Friedrich Gauss](https://kenji.blog/p/gauss/) et à sa grande découverte.
+Le ** Theorema Egregium ** est sans doute l'exemple le plus délicieux et le plus facile à comprendre de la façon dont des mathématiques abstraites régissent le monde réel. La prochaine fois que vous mangerez une pizza, n'hésitez pas à déguster votre part pliée à la perfection tout en pensant à [Carl Friedrich Gauss](https://kenji.blog/fr/p/gauss/) et à sa grande découverte.

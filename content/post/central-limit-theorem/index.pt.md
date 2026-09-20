@@ -10,13 +10,13 @@ slug: "central-limit-theorem"
 
 ## 1. Introdução
 
-Ao estudar ciência de dados e estatística, não podemos evitar o **[Teorema do Limite Central](https://kenji.blog/p/central-limit-theorem/)** (TLC). Este teorema tem uma propriedade quase mágica: "Não importa qual seja a distribuição dos dados, a distribuição da média da amostra se aproxima de uma distribuição normal à medida que o tamanho da amostra aumenta."
+Ao estudar ciência de dados e estatística, não podemos evitar o **[Teorema do Limite Central](https://kenji.blog/pt/p/central-limit-theorem/)** (TLC). Este teorema tem uma propriedade quase mágica: "Não importa qual seja a distribuição dos dados, a distribuição da média da amostra se aproxima de uma distribuição normal à medida que o tamanho da amostra aumenta."
 
-Neste artigo, explicaremos amplamente o [Teorema do Limite Central](https://kenji.blog/p/central-limit-theorem/), desde uma imagem intuitiva até uma rigorosa definição matemática e exemplos práticos de aplicação.
+Neste artigo, explicaremos amplamente o [Teorema do Limite Central](https://kenji.blog/pt/p/central-limit-theorem/), desde uma imagem intuitiva até uma rigorosa definição matemática e exemplos práticos de aplicação.
 
-## 2. O que é o [Teorema do Limite Central](https://kenji.blog/p/central-limit-theorem/)?
+## 2. O que é o [Teorema do Limite Central](https://kenji.blog/pt/p/central-limit-theorem/)?
 
-O [Teorema do Limite Central](https://kenji.blog/p/central-limit-theorem/) (TLC) é um dos resultados mais poderosos e surpreendentes na teoria da probabilidade e estatística. Simplificando, a soma (ou média) de um grande número de variáveis aleatórias independentes amostradas aleatoriamente se aproxima de uma distribuição normal, independentemente da distribuição original das variáveis.
+O [Teorema do Limite Central](https://kenji.blog/pt/p/central-limit-theorem/) (TLC) é um dos resultados mais poderosos e surpreendentes na teoria da probabilidade e estatística. Simplificando, a soma (ou média) de um grande número de variáveis aleatórias independentes amostradas aleatoriamente se aproxima de uma distribuição normal, independentemente da distribuição original das variáveis.
 
 ### 2.1 Compreensão Intuitiva
 
@@ -26,7 +26,7 @@ Pense nos dados. Quando você rola um dado, a distribuição dos resultados é u
 
 Suponha que $n$ amostras $X_1, X_2, \dots, X_n$ sorteadas aleatoriamente de uma população sigam distribuições idênticas e independentes (i.i.d.). Seja a média (valor esperado) desta população $\mu$ e a variância $\sigma^2$.
 
-Seja a média amostral $\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$. De acordo com o [Teorema do Limite Central](https://kenji.blog/p/central-limit-theorem/), quando $n$ é suficientemente grande, a variável padronizada $Z$ conforme mostrado abaixo converge para a distribuição normal padrão $\mathcal{N}(0, 1)$.
+Seja a média amostral $\bar{X} = \frac{1}{n} \sum_{i=1}^{n} X_i$. De acordo com o [Teorema do Limite Central](https://kenji.blog/pt/p/central-limit-theorem/), quando $n$ é suficientemente grande, a variável padronizada $Z$ conforme mostrado abaixo converge para a distribuição normal padrão $\mathcal{N}(0, 1)$.
 
 
 $$
@@ -36,9 +36,9 @@ $$
 
 Aqui, $\xrightarrow{d}$ significa convergência em distribuição. $\text{ quando } n \to \infty$ indica que o tamanho da amostra se aproxima do infinito.
 
-## 3. Visualização do [Teorema do Limite Central](https://kenji.blog/p/central-limit-theorem/)
+## 3. Visualização do [Teorema do Limite Central](https://kenji.blog/pt/p/central-limit-theorem/)
 
-Para entender visualmente como o [Teorema do Limite Central](https://kenji.blog/p/central-limit-theorem/) funciona, aqui está um diagrama de processo usando Mermaid.
+Para entender visualmente como o [Teorema do Limite Central](https://kenji.blog/pt/p/central-limit-theorem/) funciona, aqui está um diagrama de processo usando Mermaid.
 
 ```mermaid
 graph TD
@@ -96,37 +96,37 @@ plt.show()
 
 Ao executar este código, você pode confirmar que para $n=1$ é uma distribuição uniforme, mas à medida que $n$ aumenta, o histograma se aproxima da distribuição normal da linha vermelha.
 
-## 5. Importância e Aplicações do [Teorema do Limite Central](https://kenji.blog/p/central-limit-theorem/)
+## 5. Importância e Aplicações do [Teorema do Limite Central](https://kenji.blog/pt/p/central-limit-theorem/)
 
-Por que o [Teorema do Limite Central](https://kenji.blog/p/central-limit-theorem/) é tão importante? É porque, mesmo que não saibamos exatamente qual distribuição muitos dados do mundo real têm, podemos supor uma distribuição normal ao usar estatísticas como a média da amostra para conduzir testes de hipóteses e construir intervalos de confiança.
+Por que o [Teorema do Limite Central](https://kenji.blog/pt/p/central-limit-theorem/) é tão importante? É porque, mesmo que não saibamos exatamente qual distribuição muitos dados do mundo real têm, podemos supor uma distribuição normal ao usar estatísticas como a média da amostra para conduzir testes de hipóteses e construir intervalos de confiança.
 
 ### 5.1 Fundamento da Inferência Estatística
-Quando inferimos algo dos dados, como em pesquisas de opinião, controle de qualidade ou testes A/B, grande parte do raciocínio baseia-se no [Teorema do Limite Central](https://kenji.blog/p/central-limit-theorem/).
+Quando inferimos algo dos dados, como em pesquisas de opinião, controle de qualidade ou testes A/B, grande parte do raciocínio baseia-se no [Teorema do Limite Central](https://kenji.blog/pt/p/central-limit-theorem/).
 
 ### 5.2 Acúmulo de Erros
 Os erros de medição e muitos ruídos na natureza também podem ser modelados como a soma de muitos pequenos fatores independentes, portanto, frequentemente seguem uma distribuição normal. É por isso que ela também é chamada de distribuição gaussiana.
 
 ## 6. Aprofundando: Abordagem para a Prova
 
-Funções características e expansão de Taylor são usadas para uma prova estrita do [Teorema do Limite Central](https://kenji.blog/p/central-limit-theorem/). Aqui está um breve resumo.
+Funções características e expansão de Taylor são usadas para uma prova estrita do [Teorema do Limite Central](https://kenji.blog/pt/p/central-limit-theorem/). Aqui está um breve resumo.
 
 Usando a função característica $\phi_X(t) = E[e^{itX}]$, a função característica da soma de variáveis aleatórias independentes é o produto de suas respectivas funções características. Quando calculamos a função característica da variável padronizada $Z$ e tomamos o limite quando $n \to \infty$, pode-se provar que converge para $e^{-t^2/2}$, que é a função característica da distribuição normal padrão. Isso prova que a própria distribuição converge para uma distribuição normal.
 
 ## 7. Conclusão
 
-O [Teorema do Limite Central](https://kenji.blog/p/central-limit-theorem/) é um teorema extremamente belo que revela a ordem escondida por trás de dados caóticos. Ao compreender este teorema, você poderá obter percepções mais profundas na análise de dados e na construção de modelos estatísticos.
+O [Teorema do Limite Central](https://kenji.blog/pt/p/central-limit-theorem/) é um teorema extremamente belo que revela a ordem escondida por trás de dados caóticos. Ao compreender este teorema, você poderá obter percepções mais profundas na análise de dados e na construção de modelos estatísticos.
 
 
 ## Apêndice: Contexto Matemático Detalhado e História
 
 ### Apêndice 1: Desenvolvimento na Teoria da Probabilidade
-A história do [Teorema do Limite Central](https://kenji.blog/p/central-limit-theorem/) é profunda, originando-se de Abraham de Moivre mostrando a aproximação normal da distribuição binomial. Mais tarde foi expandida por Pierre-Simon Laplace, e Aleksandr Lyapunov forneceu uma prova sob condições mais gerais. Na moderna teoria das probabilidades, existem várias extensões, como a condição de Lindeberg e a condição de Lyapunov. Essas condições garantem que as variáveis aleatórias individuais não tenham uma influência dominante sobre a soma total. Isso fornece uma resposta à questão fundamental de por que diversos fenômenos na natureza e nas ciências sociais podem ser aproximados por uma distribuição normal.
+A história do [Teorema do Limite Central](https://kenji.blog/pt/p/central-limit-theorem/) é profunda, originando-se de Abraham de Moivre mostrando a aproximação normal da distribuição binomial. Mais tarde foi expandida por Pierre-Simon Laplace, e Aleksandr Lyapunov forneceu uma prova sob condições mais gerais. Na moderna teoria das probabilidades, existem várias extensões, como a condição de Lindeberg e a condição de Lyapunov. Essas condições garantem que as variáveis aleatórias individuais não tenham uma influência dominante sobre a soma total. Isso fornece uma resposta à questão fundamental de por que diversos fenômenos na natureza e nas ciências sociais podem ser aproximados por uma distribuição normal.
 
 ### Apêndice 2: Condições de Aplicação e o Significado do Teorema
 
 Na forma básica discutida neste texto, é necessário que $X_1,\ldots,X_n$ sejam independentes e identicamente distribuídas, com uma média finita $\mu$ e uma variância positiva finita $0<\sigma^2<\infty$. Por favor, compreenda a explicação "qualquer distribuição" dentro do escopo dessas condições. O que se aproxima de uma distribuição normal é a distribuição da soma padronizada ou da média amostral, e a distribuição das observações individuais não muda.
 
-### Apêndice 3: Erro Padrão e a [Lei dos Grandes Números](https://kenji.blog/p/law-of-large-numbers/)
+### Apêndice 3: Erro Padrão e a [Lei dos Grandes Números](https://kenji.blog/pt/p/law-of-large-numbers/)
 
 Devido à independência, o valor esperado e a variância da média da amostra são os seguintes. O erro padrão é a dispersão da média amostral e é diferente do desvio padrão dos dados individuais.
 
@@ -134,7 +134,7 @@ $$
 E[\bar X_n]=\mu,\qquad \operatorname{Var}(\bar X_n)=\frac{\sigma^2}{n},\qquad \operatorname{SE}(\bar X_n)=\frac{\sigma}{\sqrt n}.
 $$
 
-Quadruplicar o número de amostras reduz pela metade o erro padrão. A lei dos grandes números afirma que a média da amostra se aproxima de $\mu$, e o [Teorema do Limite Central](https://kenji.blog/p/central-limit-theorem/) descreve a forma da distribuição multiplicando a flutuação ao seu redor por $\sqrt{n}$.
+Quadruplicar o número de amostras reduz pela metade o erro padrão. A lei dos grandes números afirma que a média da amostra se aproxima de $\mu$, e o [Teorema do Limite Central](https://kenji.blog/pt/p/central-limit-theorem/) descreve a forma da distribuição multiplicando a flutuação ao seu redor por $\sqrt{n}$.
 
 ### Apêndice 4: Prova Suplementar Usando Funções Características
 

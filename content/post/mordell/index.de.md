@@ -12,7 +12,7 @@ tags: ["zahlentheorie", "Mordell", "elliptische kurven", "diophantische gleichun
 
 Einer der Mathematiker, der im 20. Jahrhundert insbesondere auf dem Gebiet der **Zahlentheorie** (Number Theory) brillante Spuren in der mathematischen Welt hinterlassen hat, ist Louis Joel Mordell (1888–1972). Er erzielte bahnbrechende Ergebnisse bei der Untersuchung diophantischer Gleichungen und legte den Grundstein für viele wichtige Theorien an der Schnittstelle von moderner algebraischer Geometrie und Zahlentheorie. In diesem Artikel werden wir das Leben von Mordell, die wichtigen Sätze und Vermutungen, die seinen Namen tragen, sowie seinen tiefgreifenden Einfluss auf die mathematische Gemeinschaft detailliert erläutern.
 
-Viele, die von Mordell gehört haben, kennen ihn wahrscheinlich durch den **Satz von Mordell** (Mordell's Theorem) oder die **Mordell-Vermutung** (Mordell Conjecture). Diese Errungenschaften waren nicht nur Beweise einzelner Sätze, sondern dienten als wichtige Vorspiele für ein großartiges mathematisches Drama, das zum Beweis von **Fermats Letztem Satz** ([Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)) führte.
+Viele, die von Mordell gehört haben, kennen ihn wahrscheinlich durch den **Satz von Mordell** (Mordell's Theorem) oder die **Mordell-Vermutung** (Mordell Conjecture). Diese Errungenschaften waren nicht nur Beweise einzelner Sätze, sondern dienten als wichtige Vorspiele für ein großartiges mathematisches Drama, das zum Beweis von **Fermats Letztem Satz** ([Fermat's Last Theorem](https://kenji.blog/de/p/fermats-last-theorem/)) führte.
 
 ## 2. Frühe Jahre: Vom Selbststudium nach Cambridge
 
@@ -42,7 +42,7 @@ Besondere Aufmerksamkeit schenkte Mordell der Form von Gleichungen, die heute al
 
 $$ y^2 = x^3 + k $$
 
-Hier ist $k$ eine von null verschiedene ganze Zahl. Diese Gleichung ist eine der einfachsten Formen einer elliptischen Kurve. Seit [Pierre de Fermat](https://kenji.blog/p/fermat/) im 17. Jahrhundert bewies, dass für $k = -2$, d. h. $y^2 = x^3 - 2$, die einzigen ganzzahligen Lösungen $(x, y) = (3, \pm 5)$ sind, wurden viele solcher Gleichungen untersucht.
+Hier ist $k$ eine von null verschiedene ganze Zahl. Diese Gleichung ist eine der einfachsten Formen einer elliptischen Kurve. Seit [Pierre de Fermat](https://kenji.blog/de/p/fermat/) im 17. Jahrhundert bewies, dass für $k = -2$, d. h. $y^2 = x^3 - 2$, die einzigen ganzzahligen Lösungen $(x, y) = (3, \pm 5)$ sind, wurden viele solcher Gleichungen untersucht.
 
 Mordell erforschte intensiv allgemeine Methoden, um ganzzahlige Lösungen für diese Gleichung zu finden, sowie die Endlichkeit ihrer Lösungen. Sein Ansatz wendete die Theorie der Idealklassen in der algebraischen Zahlentheorie an und stellte einen bedeutenden Sprung gegenüber klassischen Methoden dar.
 
@@ -58,7 +58,7 @@ Hierbei ist $E(\mathbb{Q})_{\text{tors}}$ eine **Torsionsuntergruppe** (torsion 
 
 Dieser Satz bedeutet, dass es ausreicht, eine endliche Anzahl von "Basis"-Punkten zu finden, um alle unendlich vielen rationalen Punkte einer elliptischen Kurve zu finden. Es ist ein monumentales Ergebnis in der arithmetischen Geometrie. Mordells Beweis war eine moderne Verfeinerung von Fermats "Methode des unendlichen Abstiegs" (Method of infinite descent).
 
-Später, im Jahr 1928, verallgemeinerte der französische Mathematiker [André Weil](https://kenji.blog/p/weil/) diesen Satz auf allgemeine Zahlkörper und abelsche Varietäten, weshalb er heute oft als **Satz von Mordell-Weil** (Mordell-Weil Theorem) bezeichnet wird.
+Später, im Jahr 1928, verallgemeinerte der französische Mathematiker [André Weil](https://kenji.blog/de/p/weil/) diesen Satz auf allgemeine Zahlkörper und abelsche Varietäten, weshalb er heute oft als **Satz von Mordell-Weil** (Mordell-Weil Theorem) bezeichnet wird.
 
 ```mermaid
 graph TD
@@ -83,13 +83,13 @@ Die Behauptung für den Fall $g \ge 2$ ist die Mordell-Vermutung. Diese Vermutun
 
 $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
-Diese Vermutung blieb über 60 Jahre lang ungelöst. 1983 wurde sie jedoch schließlich vom deutschen Mathematiker [Gerd Faltings](https://kenji.blog/p/faltings/) bewiesen und wurde so zum **Satz von Faltings** (Faltings's Theorem). Für diese Leistung wurde Faltings 1986 mit der Fields-Medaille ausgezeichnet.
+Diese Vermutung blieb über 60 Jahre lang ungelöst. 1983 wurde sie jedoch schließlich vom deutschen Mathematiker [Gerd Faltings](https://kenji.blog/de/p/faltings/) bewiesen und wurde so zum **Satz von Faltings** (Faltings's Theorem). Für diese Leistung wurde Faltings 1986 mit der Fields-Medaille ausgezeichnet.
 
 Darüber hinaus hat die Gleichung für Fermats Letzten Satz, $x^n + y^n = z^n$, ein Geschlecht von 3 oder mehr, wenn $n \ge 4$. Daher folgt aus der Mordell-Vermutung (Satz von Faltings) unmittelbar, dass die Fermat-Gleichung für jedes $n$ höchstens endlich viele rationale Lösungen hat.
 
 ## 7. Beteiligung an Ramanujan und Modulformen
 
-Mordells Leistungen beschränkten sich nicht auf diophantische Gleichungen. Er leistete auch bedeutende Beiträge zu ungelösten Problemen, die das Mathematikgenie [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/) hinterlassen hatte.
+Mordells Leistungen beschränkten sich nicht auf diophantische Gleichungen. Er leistete auch bedeutende Beiträge zu ungelösten Problemen, die das Mathematikgenie [Srinivasa Ramanujan](https://kenji.blog/de/p/ramanujan/) hinterlassen hatte.
 
 Ramanujan vermutete mehrere überraschende Eigenschaften der Ramanujan-Tau-Funktion $\tau(n)$, die wie folgt definiert ist:
 
@@ -129,16 +129,16 @@ Mordell hatte auch ein scharfes Auge für das Talent anderer. Eine seiner große
 
 ## 11. Vermächtnis an die moderne Mathematik
 
-Das Vermächtnis, das [Louis Mordell](https://kenji.blog/p/mordell/) in der mathematischen Welt hinterlassen hat, ist tief in den Grundlagen der modernen Mathematik verwurzelt.
+Das Vermächtnis, das [Louis Mordell](https://kenji.blog/de/p/mordell/) in der mathematischen Welt hinterlassen hat, ist tief in den Grundlagen der modernen Mathematik verwurzelt.
 
 1. **Grundlagen der arithmetischen Geometrie**: Der Satz von Mordell und die Mordell-Vermutung haben die Entwicklung der "Arithmetischen Geometrie", die zahlentheoretische Objekte aus einer geometrischen Perspektive betrachtet, stark vorangetrieben.
 2. **Theorie der Modulformen**: Die Techniken, die er beim Beweis der Ramanujan-Vermutung verwendete, wurden zum Ausgangspunkt für eine massive Theorie, die bis zum modernen Langlands-Programm reicht.
 3. **Lösen diophantischer Gleichungen**: Seine konkreten Ansätze und zahlreichen Arbeiten dienen noch heute als Grundlage für algorithmische Methoden zur Lösung von Gleichungen mit Computern.
 
-Als [Fermats Letzter Satz](https://kenji.blog/p/fermats-last-theorem/) von [Andrew Wiles](https://kenji.blog/p/wiles/) bewiesen wurde, waren Konzepte, an denen Mordell stark beteiligt war, wie elliptische Kurven und Modulformen, für dessen theoretischen Hintergrund unverzichtbar.
+Als [Fermats Letzter Satz](https://kenji.blog/de/p/fermats-last-theorem/) von [Andrew Wiles](https://kenji.blog/de/p/wiles/) bewiesen wurde, waren Konzepte, an denen Mordell stark beteiligt war, wie elliptische Kurven und Modulformen, für dessen theoretischen Hintergrund unverzichtbar.
 
 ## 12. Fazit
 
-[Louis Mordell](https://kenji.blog/p/mordell/) stieg von einem leidenschaftlichen autodidaktischen Jugendlichen zu einem Giganten der Zahlentheorie auf, der das 20. Jahrhundert repräsentiert. Sein Name ist in Form des **Satzes von Mordell** und der **Mordell-Vermutung** auf ewig in die Geschichte der Mathematik eingraviert.
+[Louis Mordell](https://kenji.blog/de/p/mordell/) stieg von einem leidenschaftlichen autodidaktischen Jugendlichen zu einem Giganten der Zahlentheorie auf, der das 20. Jahrhundert repräsentiert. Sein Name ist in Form des **Satzes von Mordell** und der **Mordell-Vermutung** auf ewig in die Geschichte der Mathematik eingraviert.
 
 Mit seinem starken Engagement für die Lösung konkreter Probleme und der warmherzigen Menschlichkeit, die Flüchtlingsmathematiker rettete, sind Mordells Leben und Errungenschaften ein hervorragendes Modell, das zeigt, wie sich die Disziplin der Mathematik entwickelt und wie eine Person zu dieser Entwicklung beitragen kann. Die Welt der diophantischen Gleichungen, die er erforschte, fasziniert bis heute viele Mathematiker.

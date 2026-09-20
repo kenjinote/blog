@@ -13,15 +13,15 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 在现代数字社会，尤其是基于互联网的通信中，“加密”已经成为不可或缺的基础设施技术。我们在网络浏览器上通过HTTPS安全地浏览网站、在网上银行进行金融交易、在即时通讯应用上进行私密交流，这一切的背后，都是由基于高级数学理论的加密协议在发挥作用。其中发挥关键作用的是“公钥加密算法”，其代表就是 **RSA加密** 。
 
-包括RSA加密在内的许多加密算法的安全性与合理性，都极大地依赖于17世纪法国数学家[皮埃尔·德·费马](https://kenji.blog/p/fermat/)（[Pierre de Fermat](https://kenji.blog/p/fermat/)）发现的一个非常优美且强大的定理。那就是 **[费马小定理](https://kenji.blog/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)）** 。此外，将其一般化的[莱昂哈德·欧拉](https://kenji.blog/p/euler/)（[Leonhard Euler](https://kenji.blog/p/euler/)）定理也在密码学理论中发挥了决定性作用。
+包括RSA加密在内的许多加密算法的安全性与合理性，都极大地依赖于17世纪法国数学家[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)（[Pierre de Fermat](https://kenji.blog/zh-cn/p/fermat/)）发现的一个非常优美且强大的定理。那就是 **[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/zh-cn/p/fermats-little-theorem/)）** 。此外，将其一般化的[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）定理也在密码学理论中发挥了决定性作用。
 
-本文将从基础开始全面解析，纯数学的发现——[费马小定理](https://kenji.blog/p/fermats-little-theorem/)，是如何被应用到现代实用的加密技术中，特别是在“素数测试”和“RSA加密”中的。本篇将是一份非常详细的技术指南，涵盖数学证明、加密与解密的机制，以及使用 C++ 和 Python 进行的具体算法实现。
+本文将从基础开始全面解析，纯数学的发现——[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)，是如何被应用到现代实用的加密技术中，特别是在“素数测试”和“RSA加密”中的。本篇将是一份非常详细的技术指南，涵盖数学证明、加密与解密的机制，以及使用 C++ 和 Python 进行的具体算法实现。
 
 ---
 
 ## 2. 同余与模运算基础
 
-要理解[费马小定理](https://kenji.blog/p/fermats-little-theorem/)，首先需要熟悉“模运算（同余式）”这一数学概念。模运算是一种关注除以某个固定数（称为模数）后所得“余数”的计算体系。因为类似于钟表表盘（12小时转一圈）的计算，所以也被称为“时钟算术”。
+要理解[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)，首先需要熟悉“模运算（同余式）”这一数学概念。模运算是一种关注除以某个固定数（称为模数）后所得“余数”的计算体系。因为类似于钟表表盘（12小时转一圈）的计算，所以也被称为“时钟算术”。
 
 当整数 $a$ 和 $b$ 除以正整数 $n$ 的余数相等时，在数学上可以这样描述：
 
@@ -46,15 +46,15 @@ $$
 
 ---
 
-## 3. [费马小定理](https://kenji.blog/p/fermats-little-theorem/)的数学背景与证明
+## 3. [费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的数学背景与证明
 
-掌握了模运算的基础后，让我们进入正题，来看[费马小定理](https://kenji.blog/p/fermats-little-theorem/)。
+掌握了模运算的基础后，让我们进入正题，来看[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)。
 
 ### 3.1 定理的定义
 
-[费马小定理](https://kenji.blog/p/fermats-little-theorem/)的表述如下：
+[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的表述如下：
 
-> **[费马小定理](https://kenji.blog/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))**
+> **[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/zh-cn/p/fermats-little-theorem/))**
 > 设 $p$ 为一个素数，且 $a$ 是任意一个不是 $p$ 的倍数的整数（即 $a$ 和 $p$ 互质）。此时，以下同余式成立：
 > $$ a^{p-1} \equiv 1 \pmod p $$
 
@@ -106,13 +106,13 @@ $$
 a^{p-1} \equiv 1 \pmod p
 $$
 
-这就是[费马小定理](https://kenji.blog/p/fermats-little-theorem/)的证明。
+这就是[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的证明。
 
 ---
 
 ## 4. 欧拉函数与欧拉定理
 
-[费马小定理](https://kenji.blog/p/fermats-little-theorem/)是关于“素数 $p$”的定理，而将其推广到“任意正整数 $n$”的人，正是[莱昂哈德·欧拉](https://kenji.blog/p/euler/)。要理解RSA加密，这种推广是必不可少的。
+[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)是关于“素数 $p$”的定理，而将其推广到“任意正整数 $n$”的人，正是[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)。要理解RSA加密，这种推广是必不可少的。
 
 ### 4.1 欧拉函数 $\phi(n)$
 
@@ -126,13 +126,13 @@ $$
 
 ### 4.2 欧拉定理
 
-欧拉对[费马小定理](https://kenji.blog/p/fermats-little-theorem/)进行了如下的推广。
+欧拉对[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)进行了如下的推广。
 
 > **欧拉定理 (Euler's Theorem)**
 > 对于正整数 $n$ 以及与其互质的整数 $a$，以下等式成立：
 > $$ a^{\phi(n)} \equiv 1 \pmod n $$
 
-如果 $n$ 是素数 $p$，那么 $\phi(p) = p - 1$，此时就变成了[费马小定理](https://kenji.blog/p/fermats-little-theorem/)本身（$a^{p-1} \equiv 1 \pmod p$）。换句话说，[费马小定理](https://kenji.blog/p/fermats-little-theorem/)只是欧拉定理的一个特例。
+如果 $n$ 是素数 $p$，那么 $\phi(p) = p - 1$，此时就变成了[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)本身（$a^{p-1} \equiv 1 \pmod p$）。换句话说，[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)只是欧拉定理的一个特例。
 
 ---
 
@@ -140,11 +140,11 @@ $$
 
 在加密技术（如RSA加密或Diffie-Hellman密钥交换等）中，需要高速地找出长达数百位的“巨大素数”。然而，为了判断一个巨大的数 $N$ 是否为素数，如果尝试用 $2$ 到 $\sqrt{N}$ 之间的所有数去试除，这种“试除法”可能需要耗费宇宙寿命般的时间。
 
-于是，利用[费马小定理](https://kenji.blog/p/fermats-little-theorem/)逆向思维的“概率素性测试”—— **费马测试（Fermat Primality Test）** 登场了。
+于是，利用[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)逆向思维的“概率素性测试”—— **费马测试（Fermat Primality Test）** 登场了。
 
 ### 5.1 什么是概率素性测试
 
-根据[费马小定理](https://kenji.blog/p/fermats-little-theorem/)，如果 $p$ 是素数，那么对于任意的 $a$ ($1 < a < p$)，$a^{p-1} \equiv 1 \pmod p$ 必定成立。
+根据[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)，如果 $p$ 是素数，那么对于任意的 $a$ ($1 < a < p$)，$a^{p-1} \equiv 1 \pmod p$ 必定成立。
 取其逆否命题，可以说：“如果对于某个 $a$，$a^{p-1} \not\equiv 1 \pmod p$，那么 $p$ **绝对不是素数（是合数）** ”。
 
 因此，如果想判断 $N$ 是否为素数，可以随机选取几个 $a$，计算 $a^{N-1} \pmod N$ 看是否等于 $1$。如果只要有一次得出除 $1$ 以外的结果，就可以确定 $N$ 是合数。如果尝试多次结果都为 $1$，就可以以很高的概率判断 $N$ “可能是一个素数”。
@@ -283,7 +283,7 @@ else:
 
 ## 7. 在RSA加密中的应用：费马与欧拉的结晶
 
-[费马小定理](https://kenji.blog/p/fermats-little-theorem/)（以及欧拉定理）最伟大的应用领域，就是1977年由Rivest、Shamir和Adleman三人开发的 **RSA加密** 。
+[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)（以及欧拉定理）最伟大的应用领域，就是1977年由Rivest、Shamir和Adleman三人开发的 **RSA加密** 。
 RSA加密是一种革命性的“公钥加密”系统，它实现了一种机制：用于加密的密钥（公钥）对全世界公开，而用于解密的密钥（私钥）只有接收者本人知晓。
 
 这种非对称性，是基于“对巨大的合数进行质因数分解极其困难”的计算复杂性安全保证的。
@@ -317,7 +317,7 @@ sequenceDiagram
 4. 选择一个与 $\phi(N)$ 互质的整数 $e$ （公开指数）（通常使用 $e = 65537$）。
 5. 计算 $e$ 的模逆元 $d$ （私有指数）。即，找到满足以下条件的 $d$：
    $$ e \cdot d \equiv 1 \pmod{\phi(N)} $$
-   这个计算需要用到 **扩展[[欧几里得](https://kenji.blog/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)** 。
+   这个计算需要用到 **扩展[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)** 。
 
 至此， **公钥为 $(N, e)$** ， **私钥为 $(N, d)$** 。（$p, q, \phi(N)$ 应立即销毁或严格保密）。
 
@@ -344,7 +344,7 @@ $$
 
 ### 7.2 为什么能够解密？（数学证明）
 
-在这里，[费马小定理](https://kenji.blog/p/fermats-little-theorem/)（欧拉定理）发挥了真正的价值。为什么 $C^d \pmod N$ 能够还原成 $M$ 呢？
+在这里，[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)（欧拉定理）发挥了真正的价值。为什么 $C^d \pmod N$ 能够还原成 $M$ 呢？
 
 展开解密的公式。
 因为 $C \equiv M^e \pmod N$，所以：
@@ -369,7 +369,7 @@ $$ M \cdot (1)^k \equiv M \pmod N $$
 
 仅凭理论可能难以有直观感受，所以我们用Python来实际实现一下RSA加密的密钥生成、加密、解密的过程。这是一个用于教学的“玩具实现（Toy Implementation）”，但所使用的数学原理与实际完全相同。
 
-求模逆元 $d$ 的“扩展[[欧几里得](https://kenji.blog/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)”也会包含在实现中。
+求模逆元 $d$ 的“扩展[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)”也会包含在实现中。
 
 ```python
 import random
@@ -466,11 +466,11 @@ if __name__ == '__main__':
 
 ## 9. 结语：数学之美与实用性的交汇点
 
-17世纪[皮埃尔·德·费马](https://kenji.blog/p/fermat/)发现这个“小定理”时，没有人觉得这会有什么用处。费马本人也是出于纯粹的数学探求欲才去研究数论的。
+17世纪[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)发现这个“小定理”时，没有人觉得这会有什么用处。费马本人也是出于纯粹的数学探求欲才去研究数论的。
 
-然而，在大约300年后的20世纪70年代，计算机网络黎明期，作为确立安全通信协议不可或缺的加密技术，费马定理迎来了戏剧性的复苏。基于[费马小定理](https://kenji.blog/p/fermats-little-theorem/)的素性测试技术和基于欧拉定理的RSA加密，字面意义上支撑了现代的互联网基础设施。
+然而，在大约300年后的20世纪70年代，计算机网络黎明期，作为确立安全通信协议不可或缺的加密技术，费马定理迎来了戏剧性的复苏。基于[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的素性测试技术和基于欧拉定理的RSA加密，字面意义上支撑了现代的互联网基础设施。
 
-我们每天不经意间发送的微信消息、在淘宝上的购物，这一切都在 $a^{p-1} \equiv 1 \pmod p$ 这个简单而优美的数学公式之上舞动。[费马小定理](https://kenji.blog/p/fermats-little-theorem/)告诉我们，无论数学多么抽象，总有一天它必然会为人类所用。
+我们每天不经意间发送的微信消息、在淘宝上的购物，这一切都在 $a^{p-1} \equiv 1 \pmod p$ 这个简单而优美的数学公式之上舞动。[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)告诉我们，无论数学多么抽象，总有一天它必然会为人类所用。
 
 在学习编程和密码学理论时，理解其基础的数学结构，将成为深入理解那些作为黑盒提供的库的行为、并设计出更加安全的系统的强大武器。
 

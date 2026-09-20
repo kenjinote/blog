@@ -10,13 +10,13 @@ tags: ["Graph Theory", "Topology", "Euler", "Mathematics"]
 
 ## Pendahuluan
 
-Dalam sejarah matematika, pertanyaan kecil atau permainan sehari-hari terkadang bisa menjadi pemicu yang membuka bidang matematika yang sama sekali baru. Salah satu contoh paling terkenal dan indah dari hal ini adalah masalah **"[Tujuh Jembatan Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)"** ([Seven Bridges of Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/)).
+Dalam sejarah matematika, pertanyaan kecil atau permainan sehari-hari terkadang bisa menjadi pemicu yang membuka bidang matematika yang sama sekali baru. Salah satu contoh paling terkenal dan indah dari hal ini adalah masalah **"[Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/)"** ([Seven Bridges of Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/)).
 
 Pada abad ke-18, di kota Königsberg di Kerajaan Prusia (sekarang Kaliningrad, Federasi Rusia), mengalir sungai besar yang disebut Sungai Pregel, dengan tujuh jembatan yang menghubungkan pulau di tengah sungai dan kedua tepinya. Penduduk kota pada masa itu memikirkan permainan berikut saat mereka berjalan-jalan di sore hari: "Mungkinkah kita berjalan melintasi ketujuh jembatan di kota masing-masing tepat satu kali, lalu kembali ke titik awal?"
 
-Ketika masalah yang sekilas tampak seperti teka-teki sederhana ini jatuh ke tangan matematikawan jenius **[Leonhard Euler](https://kenji.blog/p/euler/)**, revolusi terjadi di dunia matematika. Euler tidak hanya membuktikan bahwa masalah ini mustahil, tetapi dalam prosesnya ia juga mendefinisikan ulang sifat-sifat ruang dari perspektif yang sama sekali baru, meletakkan dasar bagi dua bidang yang sangat penting dalam matematika modern: **Teori Graf** (Graph Theory) dan **Topologi** (Topology).
+Ketika masalah yang sekilas tampak seperti teka-teki sederhana ini jatuh ke tangan matematikawan jenius **[Leonhard Euler](https://kenji.blog/id/p/euler/)**, revolusi terjadi di dunia matematika. Euler tidak hanya membuktikan bahwa masalah ini mustahil, tetapi dalam prosesnya ia juga mendefinisikan ulang sifat-sifat ruang dari perspektif yang sama sekali baru, meletakkan dasar bagi dua bidang yang sangat penting dalam matematika modern: **Teori Graf** (Graph Theory) dan **Topologi** (Topology).
 
-Dalam artikel ini, kita akan menggali lebih dalam tentang latar belakang sejarah masalah [Tujuh Jembatan Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/), solusi brilian Euler, dan bagaimana hal tersebut terhubung dengan ilmu pengetahuan dan teknologi modern, beserta rincian matematisnya. Jangan hanya berhenti pada pengenalan sejarah, tetapi nikmatilah keindahan struktur matematis di baliknya.
+Dalam artikel ini, kita akan menggali lebih dalam tentang latar belakang sejarah masalah [Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/), solusi brilian Euler, dan bagaimana hal tersebut terhubung dengan ilmu pengetahuan dan teknologi modern, beserta rincian matematisnya. Jangan hanya berhenti pada pengenalan sejarah, tetapi nikmatilah keindahan struktur matematis di baliknya.
 
 ## Kota Königsberg dan Tujuh Jembatan: Latar Belakang Sejarah
 
@@ -36,11 +36,11 @@ Para cendekiawan dan penduduk Königsberg pada masa itu, sebagai hiburan saat ja
 
 ## Dari Teka-Teki Jembatan Menjadi Masalah Matematika: Impian Leibniz dan Intuisi Euler
 
-Rumor dari warga kota ini akhirnya sampai ke telinga matematikawan besar asal Swiss, **[Leonhard Euler](https://kenji.blog/p/euler/)**, yang saat itu tinggal di Akademi Ilmu Pengetahuan Saint Petersburg di Rusia. Hal itu terjadi pada tahun 1735.
+Rumor dari warga kota ini akhirnya sampai ke telinga matematikawan besar asal Swiss, **[Leonhard Euler](https://kenji.blog/id/p/euler/)**, yang saat itu tinggal di Akademi Ilmu Pengetahuan Saint Petersburg di Rusia. Hal itu terjadi pada tahun 1735.
 
-Pada awalnya, Euler sepertinya merasa bahwa masalah ini "bukanlah matematika, melainkan hanya permainan logika belaka." Arus utama matematika pada waktu itu adalah geometri [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an (yang membahas panjang, sudut, luas, volume, dll.), aljabar, atau kalkulus yang baru saja diciptakan oleh Newton dan Leibniz. Masalah jembatan Königsberg sama sekali tidak bergantung pada sifat-sifat geometris tradisional seperti berapa meter panjang jembatan, seberapa besar luas pulau-pulau itu, atau pada sudut berapa jembatan itu dibangun terhadap sungai. Yang penting hanyalah relasi **koneksi** (hubungan) murni, yaitu "daratan mana yang terhubung dengan daratan mana, dan oleh berapa banyak jembatan."
+Pada awalnya, Euler sepertinya merasa bahwa masalah ini "bukanlah matematika, melainkan hanya permainan logika belaka." Arus utama matematika pada waktu itu adalah geometri [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an (yang membahas panjang, sudut, luas, volume, dll.), aljabar, atau kalkulus yang baru saja diciptakan oleh Newton dan Leibniz. Masalah jembatan Königsberg sama sekali tidak bergantung pada sifat-sifat geometris tradisional seperti berapa meter panjang jembatan, seberapa besar luas pulau-pulau itu, atau pada sudut berapa jembatan itu dibangun terhadap sungai. Yang penting hanyalah relasi **koneksi** (hubungan) murni, yaitu "daratan mana yang terhubung dengan daratan mana, dan oleh berapa banyak jembatan."
 
-Ini adalah jenis masalah geometris yang sama sekali baru, yang tidak dapat ditangani dalam kerangka pengukuran geometri [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an saat itu. Namun, Euler secara bertahap mulai menyadari kedalaman masalah ini. Ia menyadari bahwa ini merupakan masalah penting yang berkaitan dengan "Analisis Posisi" (Analysis Situs) atau "Geometri Posisi" (Geometria Situs) yang pernah diimpikan oleh Gottfried Wilhelm Leibniz, dan ia pun memutuskan untuk mengatasinya dengan sungguh-sungguh.
+Ini adalah jenis masalah geometris yang sama sekali baru, yang tidak dapat ditangani dalam kerangka pengukuran geometri [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an saat itu. Namun, Euler secara bertahap mulai menyadari kedalaman masalah ini. Ia menyadari bahwa ini merupakan masalah penting yang berkaitan dengan "Analisis Posisi" (Analysis Situs) atau "Geometri Posisi" (Geometria Situs) yang pernah diimpikan oleh Gottfried Wilhelm Leibniz, dan ia pun memutuskan untuk mengatasinya dengan sungguh-sungguh.
 
 ## Abstraksi Euler: Membuang Informasi yang Tidak Perlu
 
@@ -111,7 +111,7 @@ Dengan menggunakan rumus matematika, teorema ini dapat direpresentasikan dengan 
 
 ## Penerapan pada Graf Königsberg dan Kesimpulan
 
-Sekarang, mari kita terapkan teorema yang indah dan sempurna ini, yang diturunkan oleh Euler melalui penalaran deduktif, ke graf sebenarnya dari [Tujuh Jembatan Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/).
+Sekarang, mari kita terapkan teorema yang indah dan sempurna ini, yang diturunkan oleh Euler melalui penalaran deduktif, ke graf sebenarnya dari [Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/).
 
 Kita akan menghitung derajat dari masing-masing 4 daratan yang telah diabstraksi (simpul $A, B, C, D$).
 
@@ -131,7 +131,7 @@ Ini merupakan momen yang sangat penting dalam sejarah matematika. Karena Euler t
 
 ## Berkembang Menjadi Topologi: Lahirnya Geometri Posisi
 
-Melalui masalah jembatan Königsberg, Euler membuka paradigma geometri yang sama sekali baru, yang subjek studi esensialnya hanya pada "bagaimana bentuk dan ruang terhubung" (hubungan konektivitas dan kontinuitas), tanpa bergantung sedikitpun pada sifat "metrik" geometri [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an konvensional seperti jarak, panjang, sudut, atau luas.
+Melalui masalah jembatan Königsberg, Euler membuka paradigma geometri yang sama sekali baru, yang subjek studi esensialnya hanya pada "bagaimana bentuk dan ruang terhubung" (hubungan konektivitas dan kontinuitas), tanpa bergantung sedikitpun pada sifat "metrik" geometri [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an konvensional seperti jarak, panjang, sudut, atau luas.
 
 Inilah awal mula dari bidang yang kelak dikenal sebagai **Topologi** (Topology). Dalam topologi, yang dipelajari adalah "sifat-sifat yang tidak berubah bahkan jika dideformasi (diubah bentuknya) secara kontinu" (sifat-sifat topologis). Ada lelucon terkenal yang mengatakan bahwa "seorang topolog tidak bisa membedakan antara cangkir kopi dan donat." Keduanya adalah "benda padat dengan satu lubang", dan karena keduanya dapat berubah satu sama lain jika dideformasi secara kontinu seperti tanah liat tanpa dipotong atau direkatkan, keduanya dianggap memiliki "bentuk yang sama" di dunia topologi.
 
@@ -157,8 +157,8 @@ Teori graf juga berperan aktif dalam berbagai skala ilmu alam. Dalam kimia, saat
 
 ## Penutup
 
-Pada tahun 1736, makalah "Solusi Masalah Terkait Geometri Posisi" yang diterbitkan oleh [Leonhard Euler](https://kenji.blog/p/euler/) memberikan jawaban lengkap atas teka-teki jalan-jalan sore yang sederhana dari warga Königsberg. Namun, makna sesungguhnya bukanlah akhir dari sebuah masalah, melainkan kelahiran alam semesta matematis yang luas dengan penerapan tak terbatas.
+Pada tahun 1736, makalah "Solusi Masalah Terkait Geometri Posisi" yang diterbitkan oleh [Leonhard Euler](https://kenji.blog/id/p/euler/) memberikan jawaban lengkap atas teka-teki jalan-jalan sore yang sederhana dari warga Königsberg. Namun, makna sesungguhnya bukanlah akhir dari sebuah masalah, melainkan kelahiran alam semesta matematis yang luas dengan penerapan tak terbatas.
 
-**Kekuatan abstraksi** yang secara tajam hanya melihat struktur paling esensial, yakni "apa yang terhubung dengan apa dan bagaimana," tanpa terperangkap oleh bentuk fisik permukaan. Kisah [Tujuh Jembatan Königsberg](https://kenji.blog/p/seven-bridges-of-konigsberg/) mengajarkan kita lintas zaman tentang bagaimana pemikiran matematis yang abstrak menjadi senjata ampuh untuk mengungkap dunia nyata dan menciptakan teknologi masa depan.
+**Kekuatan abstraksi** yang secara tajam hanya melihat struktur paling esensial, yakni "apa yang terhubung dengan apa dan bagaimana," tanpa terperangkap oleh bentuk fisik permukaan. Kisah [Tujuh Jembatan Königsberg](https://kenji.blog/id/p/seven-bridges-of-konigsberg/) mengajarkan kita lintas zaman tentang bagaimana pemikiran matematis yang abstrak menjadi senjata ampuh untuk mengungkap dunia nyata dan menciptakan teknologi masa depan.
 
 Jika Anda berjalan di kota dan melihat jembatan di atas sungai, atau melihat peta rute kereta bawah tanah, luangkanlah waktu untuk memikirkan struktur "koneksi" di baliknya. Di sana, benang-benang matematika tak kasatmata yang indah yang ditemukan oleh seorang jenius matematika lebih dari 280 tahun yang lalu, terus terjalin hingga hari ini, membungkus kita yang hidup di era modern ini.

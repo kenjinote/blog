@@ -10,9 +10,9 @@ slug: "halting-problem"
 
 在编程时，有时会担心“这个程序，会不会在某个地方变成了无限循环？”。如果有一个 **能准确判断任意程序是否会无限循环的工具** ，开发和调试将会变得极其简单。
 
-然而，在计算机科学领域，这种梦想般的工具已经在数学上被证明为 **“绝对无法做出”** 。这就是著名的 **“[停机问题（Halting Problem）](https://kenji.blog/p/halting-problem/)”** 。
+然而，在计算机科学领域，这种梦想般的工具已经在数学上被证明为 **“绝对无法做出”** 。这就是著名的 **“[停机问题（Halting Problem）](https://kenji.blog/zh-cn/p/halting-problem/)”** 。
 
-本文将对阿兰·图灵（[Alan Turing](https://kenji.blog/p/turing/)）在1936年证明的这个问题，通过直观的具体例子、数学公式（KaTeX）以及图解（Mermaid），进行通俗易懂的解说。
+本文将对阿兰·图灵（[Alan Turing](https://kenji.blog/zh-cn/p/turing/)）在1936年证明的这个问题，通过直观的具体例子、数学公式（KaTeX）以及图解（Mermaid），进行通俗易懂的解说。
 
 ## 什么是停机问题？
 
@@ -156,9 +156,9 @@ graph TD
 
 图灵试图使用这个简单的模型，在“可计算问题”和“不可计算问题”之间划一条界线。作为结果被发现的，就是不可判定问题的代表作——停机问题。
 
-## 与[哥德尔不完备定理](https://kenji.blog/p/godels-incompleteness-theorems/)的深刻联系
+## 与[哥德尔不完备定理](https://kenji.blog/zh-cn/p/godels-incompleteness-theorems/)的深刻联系
 
-停机问题证明根底里的“自我指涉的悖论”，与图灵提出该问题稍早之前的1931年，[库尔特·哥德尔](https://kenji.blog/p/godel/)（[Kurt Gödel](https://kenji.blog/p/godel/)）发表的 **“不完备定理（Incompleteness Theorems）”** 有着深刻的联系。
+停机问题证明根底里的“自我指涉的悖论”，与图灵提出该问题稍早之前的1931年，[库尔特·哥德尔](https://kenji.blog/zh-cn/p/godel/)（[Kurt Gödel](https://kenji.blog/zh-cn/p/godel/)）发表的 **“不完备定理（Incompleteness Theorems）”** 有着深刻的联系。
 
 哥德尔的第一不完备定理指出，“在包含自然数论的足够强大的公理系统中，必然存在既不能被证明也不能被证伪的真命题”。哥德尔在证明这个定理时，在数学上构建了一个“这个命题无法被证明”的自我指涉的命题。
 

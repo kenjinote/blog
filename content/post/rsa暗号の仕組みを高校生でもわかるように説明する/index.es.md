@@ -139,7 +139,7 @@ Esta propiedad funciona como la "puerta trasera secreta (trapdoor)" del cifrado 
 
 ### 4.2 El Teorema de Euler
 
-[Leonhard Euler](https://kenji.blog/p/euler/) demostró un teorema hermoso usando esta $\phi(N)$.
+[Leonhard Euler](https://kenji.blog/es/p/euler/) demostró un teorema hermoso usando esta $\phi(N)$.
 
 **Teorema de Euler:**
 Cuando dos enteros $a$ y $N$ son coprimos, se cumple la siguiente congruencia:
@@ -267,11 +267,11 @@ Si ejecutas `(48 ** 103) % 143` en una calculadora, ¡el resultado es espectacul
 
 ---
 
-## 8. Cómo calcular la clave privada $d$: Algoritmo de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) extendido
+## 8. Cómo calcular la clave privada $d$: Algoritmo de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) extendido
 
-En el ejemplo de cálculo a mano, buscamos $k$ por intuición para encontrar $d=103$, pero cuando los números tienen cientos de dígitos, este método es imposible. En los programas reales, se utiliza un algoritmo llamado **"Algoritmo de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) extendido"**.
+En el ejemplo de cálculo a mano, buscamos $k$ por intuición para encontrar $d=103$, pero cuando los números tienen cientos de dígitos, este método es imposible. En los programas reales, se utiliza un algoritmo llamado **"Algoritmo de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) extendido"**.
 
-Resolver $7d \equiv 1 \pmod{120}$ es lo mismo que encontrar enteros $d, y$ que cumplan con $7d + 120y = 1$. Se puede encontrar esto mecánicamente haciendo el proceso inverso del algoritmo de [[[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/).
+Resolver $7d \equiv 1 \pmod{120}$ es lo mismo que encontrar enteros $d, y$ que cumplan con $7d + 120y = 1$. Se puede encontrar esto mecánicamente haciendo el proceso inverso del algoritmo de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/).
 
 1. $120 \div 7 = 17$ con resto $1$ 
 2. Transformando esto, $1 = 120 - 17 \times 7$

@@ -23,9 +23,9 @@ $$
 1 + 2 + 3 + 4 + \dots = -\frac{1}{12}
 $$
 
-Meskipun bilangan bulat positif ditambahkan tanpa henti, entah bagaimana hasilnya menjadi **pecahan negatif**. Hasil yang berlawanan dengan intuisi ini menjadi terkenal ketika ahli matematika jenius asal India, [Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/), menyebutkannya dalam sebuah surat kepada ahli matematika Inggris G.H. Hardy.
+Meskipun bilangan bulat positif ditambahkan tanpa henti, entah bagaimana hasilnya menjadi **pecahan negatif**. Hasil yang berlawanan dengan intuisi ini menjadi terkenal ketika ahli matematika jenius asal India, [Srinivasa Ramanujan](https://kenji.blog/id/p/ramanujan/), menyebutkannya dalam sebuah surat kepada ahli matematika Inggris G.H. Hardy.
 
-Dalam artikel ini, kami akan menjelaskan teknik yang disebut "[Penjumlahan Ramanujan ([Ramanujan Summation](https://kenji.blog/p/ramanujan-summation/))](https://kenji.blog/p/ramanujan-summation/)" ini, bagaimana nilai aneh ini diperoleh, dan bagaimana hal itu berkaitan dengan fenomena fisika di dunia nyata.
+Dalam artikel ini, kami akan menjelaskan teknik yang disebut "[Penjumlahan Ramanujan ([Ramanujan Summation](https://kenji.blog/id/p/ramanujan-summation/))](https://kenji.blog/p/ramanujan-summation/)" ini, bagaimana nilai aneh ini diperoleh, dan bagaimana hal itu berkaitan dengan fenomena fisika di dunia nyata.
 
 ---
 

@@ -8,9 +8,9 @@ categories: ["mathematics", "science"]
 tags: ["Topologie", "Poincaré-Vermutung", "Grigori Perelman", "Mathematik"]
 ---
 
-In der Welt der Mathematik gibt es viele tiefe und schöne Rätsel, die die menschliche Intuition auf die Probe stellen. Darunter ist das berühmteste mit dem dramatischsten Ende die **Poincaré-Vermutung** ([Poincaré Conjecture](https://kenji.blog/p/poincare-conjecture/)).
+In der Welt der Mathematik gibt es viele tiefe und schöne Rätsel, die die menschliche Intuition auf die Probe stellen. Darunter ist das berühmteste mit dem dramatischsten Ende die **Poincaré-Vermutung** ([Poincaré Conjecture](https://kenji.blog/de/p/poincare-conjecture/)).
 
-Diese Vermutung, die 1904 von dem brillanten französischen Mathematiker [Henri Poincaré](https://kenji.blog/p/poincare/) aufgestellt wurde, war ein grundlegendes Problem der Topologie (Analysis Situs), das direkt mit dem großen Thema der Form des Universums verbunden war. Etwa 100 Jahre lang versuchten viele berühmte Mathematiker, dieses extrem schwierige Problem zu lösen, und scheiterten. Von 2002 bis 2003 wurde es dann plötzlich von dem einsamen russischen Mathematiker Grigori Perelman bewiesen, was die ganze Welt überraschte.
+Diese Vermutung, die 1904 von dem brillanten französischen Mathematiker [Henri Poincaré](https://kenji.blog/de/p/poincare/) aufgestellt wurde, war ein grundlegendes Problem der Topologie (Analysis Situs), das direkt mit dem großen Thema der Form des Universums verbunden war. Etwa 100 Jahre lang versuchten viele berühmte Mathematiker, dieses extrem schwierige Problem zu lösen, und scheiterten. Von 2002 bis 2003 wurde es dann plötzlich von dem einsamen russischen Mathematiker Grigori Perelman bewiesen, was die ganze Welt überraschte.
 
 In diesem Artikel werden wir tief eintauchen, beginnend mit der Bedeutung der Poincaré-Vermutung über die grundlegenden Konzepte der Topologie bis hin zum Hintergrund von Perelmans Beweis, und dabei mathematische Formeln und Diagramme verwenden.
 
@@ -36,7 +36,7 @@ Andererseits hat eine Kugel (die Oberfläche eines Balls) keine Löcher. Daher k
 
 ## 2. Einfach zusammenhängender Raum und die Aussage der Poincaré-Vermutung
 
-[Die Poincaré-Vermutung](https://kenji.blog/p/poincare-conjecture/) ist ein Versuch, eine "Sphäre" aus dieser topologischen Perspektive zu charakterisieren.
+[Die Poincaré-Vermutung](https://kenji.blog/de/p/poincare-conjecture/) ist ein Versuch, eine "Sphäre" aus dieser topologischen Perspektive zu charakterisieren.
 
 Die "Kugeloberfläche", die wir im Alltag sehen, wird als 2-dimensionale Sphäre ( $S^2$ ) bezeichnet. Poincaré dachte, dass, wenn eine Form ein geschlossener Raum "ohne Löcher" ist, sie homöomorph (topologisch gleich) zu einer Sphäre sein könnte.
 
