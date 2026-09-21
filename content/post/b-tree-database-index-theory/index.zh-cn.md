@@ -4,7 +4,7 @@ description: "深入探讨作为数据库索引根基的B树（B-Tree）与B+树
 slug: "b-tree-database-index-theory"
 date: "2026-09-21T02:45:54+09:00"
 image: "eyecatch.jpg"
-categories: ["computer-science", "databases"]
+categories: ["computer-science", "database"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 ---
 

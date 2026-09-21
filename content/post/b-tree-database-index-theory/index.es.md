@@ -4,7 +4,7 @@ description: "Profundizaremos en la teoría de B-Tree y B+Tree, que forman la ba
 slug: "b-tree-database-index-theory"
 date: "2026-09-21T02:45:54+09:00"
 image: "eyecatch.jpg"
-categories: ["computer-science", "databases"]
+categories: ["computer-science", "database"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 ---
 
