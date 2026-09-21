@@ -19,7 +19,7 @@ However, in building and operating distributed systems, engineers are constantly
 
 In this article, we will deeply explore the basics of the CAP theorem, its proof, how modern distributed databases confront this dilemma, and the **PACELC theorem**, which extends the CAP theorem, using mathematical formulas, diagrams, and implementation examples.
 
-## 1. What is a Distributed System?
+## 1. What is a [Distributed System](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)?
 
 Before discussing the CAP theorem, let's clarify what a **Distributed System** is.
 
@@ -44,20 +44,20 @@ graph LR
 The main objectives of a distributed system are as follows:
 
 1. **Scalability** : Improving the overall processing capacity of the system by adding nodes when traffic or data volume increases.
-2. **Availability** : Continuing to provide services as an overall system by having other nodes continue processing even if some nodes fail.
+2. **[Availability](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)** : Continuing to provide services as an overall system by having other nodes continue processing even if some nodes fail.
 3. **Performance** : Reducing latency for geographically distributed users by having physically closer nodes respond.
 
 However, since it is built on the unstable foundation of a network, a distributed system inevitably involves challenges such as "network partitions" and "message delays/losses".
 
-## 2. The Three Elements of the CAP Theorem
+## 2. The Three Elements of the [CAP Theorem](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)
 
 The CAP theorem was proposed by Eric Brewer in 2000 and strictly proven by Seth Gilbert and Nancy Lynch in 2002.
 
 The theorem asserts that in a distributed system, it is possible to simultaneously satisfy at most **two** of the following three properties:
 
-1. **C: Consistency** 
+1. **C: [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)** 
 2. **A: Availability** 
-3. **P: Partition Tolerance** 
+3. **P: [Partition Tolerance](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)** 
 
 Let's look at the strict definition of each.
 
@@ -113,14 +113,14 @@ sequenceDiagram
 
 Here the system is forced to make a decision.
 
-* **When choosing Consistency (C)** : $ N_2 $ does not know the latest data of $ N_1 $. Therefore, $ N_2 $ cannot return stale data ( $ 0 $ ), and must either return an error to the client or block the response. This is a **loss of Availability (A)**. (CP System)
+* **When choosing [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/) (C)** : $ N_2 $ does not know the latest data of $ N_1 $. Therefore, $ N_2 $ cannot return stale data ( $ 0 $ ), and must either return an error to the client or block the response. This is a **loss of [Availability](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/) (A)**. (CP System)
 * **When choosing Availability (A)** : $ N_2 $ must return some kind of response. Therefore, it returns the stale data it holds ( $ 0 $ ). Since this is not the latest data ( $ 1 $ ), this is a **loss of Consistency (C)**. (AP System)
 
 In real-world distributed systems where network partitions ( **P** ) can occur, we must always choose either **CP** or **AP**. The option "CA" is only viable under the unrealistic assumption that "network partitions never occur", such as on a single server.
 
 ## 4. Tuning Consistency with Quorum
 
-In many distributed databases (e.g., Cassandra, DynamoDB), rather than binding the entire system to a fixed CP or AP, it is possible to adjust the balance of C and A per request through parameter tuning using **Quorum**.
+In many distributed databases (e.g., [Cassandra](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/), DynamoDB), rather than binding the entire system to a fixed CP or AP, it is possible to adjust the balance of C and A per request through parameter tuning using **Quorum**.
 
 Let $ N $ be the number of replicas.
 Let $ W $ be the number of nodes that must respond for a write to be considered successful.
@@ -154,7 +154,7 @@ print(system.check_consistency(W=1, R=1))  # 1 + 1 <= 3 -> Eventual Consistency 
 
 For example, when $ N = 3 $:
 * Setting $ W=2, R=2 $ always guarantees consistency. However, if two nodes go down, both reads and writes will fail (CP-like).
-* Setting $ W=1, R=1 $ results in high speed and availability, but may read stale data (AP-like, Eventual Consistency).
+* Setting $ W=1, R=1 $ results in high speed and availability, but may read stale data (AP-like, Eventual [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)).
 
 ## 5. From CAP to the PACELC Theorem
 
@@ -163,7 +163,7 @@ The CAP theorem only defines behavior during a "network partition (Partition)". 
 PACELC can be read as follows:
 
 * **If P (Partition)** : If a partition occurs,
-* **A or C** : Choose between Availability ( **A** vailability) or Consistency ( **C** onsistency).
+* **A or C** : Choose between [Availability](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/) ( **A** vailability) or Consistency ( **C** onsistency).
 * **E (Else)** : Otherwise (during normal times when no partition occurs),
 * **L or C** : Choose between Latency ( **L** atency) or Consistency ( **C** onsistency).
 
@@ -171,10 +171,10 @@ In a distributed system, synchronously writing data to all nodes (choosing C) de
 
 ### 5.1. PACELC Classification of Representative Databases
 
-* **PC/EC** (HBase, MongoDB, Zookeeper)
+* **PC/EC** (HBase, [MongoDB](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/), Zookeeper)
     * Prioritizes consistency during partitions (PC). Also prioritizes consistency during normal times, accepting latency (EC).
-* **PA/EL** (Cassandra, Riak, DynamoDB)
-    * Prioritizes availability during partitions (PA). Prioritizes low latency during normal times, accepting Eventual Consistency (EL).
+* **PA/EL** ([Cassandra](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/), Riak, DynamoDB)
+    * Prioritizes availability during partitions (PA). Prioritizes low latency during normal times, accepting [Eventual Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/) (EL).
 * **PA/EC** (MySQL Cluster, etc.)
     * Prioritizes availability during partitions while attempting to maintain consistency during normal times.
 
@@ -274,17 +274,17 @@ stateDiagram-v2
 
 By doing so, data inconsistencies in a distributed environment are completely mathematically and algorithmically eliminated. `etcd`, the backend datastore for [Kubernetes](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/), also achieves strict state management of the cluster by adopting this [Raft](https://kenji.blog/en/p/byzantine-generals-problem-consensus/).
 
-## 8. Microservices and Transactions
+## 8. [[Microservice](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/) and [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)s
 
 The CAP theorem does not only apply to standalone databases; it also has a profound impact on modern **Microservice Architectures**.
 
-In a monolithic application, it was easy to maintain data consistency using ACID transactions with a single relational database. However, in microservices where services and databases are split by business domain, distributed transactions spanning services become necessary.
+In a monolithic application, it was easy to maintain data consistency using [ACID](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) transactions with a single relational database. However, in microservices where services and databases are split by business domain, distributed transactions spanning services become necessary.
 
 This is where the CAP theorem bears its fangs. If strong consistency (C) is sought using a distributed transaction (e.g., Two-Phase Commit - 2PC), if any service goes down or a communication delay occurs, the entire system is blocked, and availability (A) and latency (L) significantly decrease.
 
 To address this issue, the **Saga Pattern** is widely adopted in microservices.
 
-The Saga pattern is a method of dividing a large transaction into a series of local transactions, coordinating them using asynchronous messaging (like Kafka or RabbitMQ).
+The Saga pattern is a method of dividing a large transaction into a series of local transactions, coordinating them using asynchronous messaging (like [Kafka](https://kenji.blog/en/p/event-driven-architecture-message-queue-kafka-rabbitmq/) or [RabbitMQ](https://kenji.blog/en/p/event-driven-architecture-message-queue-kafka-rabbitmq/)).
 
 ```mermaid
 flowchart TD
@@ -298,16 +298,16 @@ flowchart TD
     MessageBroker -->|"Cancel"| Order
 ```
 
-In the Saga pattern, strong consistency is abandoned, and **Eventual Consistency** is accepted (an AP-like approach). If processing fails midway, instead of a rollback, a **Compensating Transaction** is issued to implement processing that logically reverts the state. This makes it possible to maintain high scalability and availability while achieving a level of consistency acceptable for business.
+In the Saga pattern, strong consistency is abandoned, and **Eventual [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)** is accepted (an AP-like approach). If processing fails midway, instead of a rollback, a **Compensating [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)** is issued to implement processing that logically reverts the state. This makes it possible to maintain high scalability and availability while achieving a level of consistency acceptable for business.
 
 ## Conclusion
 
 In this article, we took an in-depth look at the CAP theorem, the most important principle in distributed systems.
 
-* The **CAP theorem** shows that it is impossible to simultaneously satisfy all three of Consistency, Availability, and Partition Tolerance in a distributed system, and in the real world where partitions (P) are inevitable, it effectively becomes a choice between **CP** and **AP**.
+* The **CAP theorem** shows that it is impossible to simultaneously satisfy all three of Consistency, [Availability](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/), and [Partition Tolerance](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/) in a distributed system, and in the real world where partitions (P) are inevitable, it effectively becomes a choice between **CP** and **AP**.
 * The **PACELC theorem** extended this, showing that even during normal operation when no partitions occur, there is a tradeoff between latency (L) and consistency (C).
 * By using **Quorum**, you can flexibly adjust the balance between consistency and availability ( $ W+R>N $ ) according to requirements.
 * **Vector Clocks** are utilized for conflict resolution in AP systems, while consensus algorithms like **[Raft](https://kenji.blog/en/p/byzantine-generals-problem-consensus/)** are used for strict ordering in CP systems.
-* These concepts are essential foundational knowledge not only for databases but also for designing distributed transactions (such as the Saga pattern) in modern **Microservice Architectures**.
+* These concepts are essential foundational knowledge not only for databases but also for designing distributed transactions (such as the Saga pattern) in modern **[Microservice](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/) Architectures**.
 
 There is no "silver bullet" in system design. The greatest skill required of a top architect is to correctly understand the CAP theorem and the PACELC theorem, properly assess whether your business requirements mean "consistency must be protected at all costs (like payments)" or "the system must never be stopped even if temporary inconsistency is allowed (like an SNS timeline)", and choose the optimal tradeoffs.

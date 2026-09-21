@@ -131,7 +131,7 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 최신 웹 애플리케이션 개발에서는 웹 서버, 데이터베이스, 캐시 서버 등 여러 구성 요소가 연동하는 마이크로서비스 아키텍처가 일반적입니다. 로컬 환경에서 이들을 일원화하여 관리하기 위해 `docker-compose.yml`을 사용합니다.
 
-이번에는 "Web (FastAPI)", "Database (PostgreSQL)", "Cache (Redis)"의 3계층 구조 시스템을 로컬에 구축합니다.
+이번에는 "Web (FastAPI)", "Database (PostgreSQL)", "Cache ([Redis](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/))"의 3계층 구조 시스템을 로컬에 구축합니다.
 
 ### 아키텍처 다이어그램 (Mermaid)
 
@@ -348,7 +348,7 @@ sequenceDiagram
 각 처리의 레이턴시를 다음과 같이 정의합니다.
 - $T_{\text{net}}$: 클라이언트와 웹 컨테이너 간의 네트워크 레이턴시
 - $T_{\text{app}}$: 애플리케이션 측의 순수한 처리 시간 (직렬화 등)
-- $T_{\text{cache}}$: Redis로부터의 읽기/쓰기에 걸리는 시간
+- $T_{\text{cache}}$: [Redis](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/)로부터의 읽기/쓰기에 걸리는 시간
 - $T_{\text{db}}$: PostgreSQL로의 쿼리 실행에 걸리는 시간
 - $p_{\text{miss}}$: 캐시 미스 비율 ($0 \le p_{\text{miss}} \le 1$)
 

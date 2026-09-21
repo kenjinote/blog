@@ -412,7 +412,7 @@ private:
 `std::string_view` 的建構時間不取決於字串的長度 $L$，能在 $O(1)$ 內完成。
 
 ### 6.2. 數值解析的最佳化 (`std::from_chars`)
-標準函式庫的 `std::stod` 或 `sscanf`，會依賴於當前的語系（Locale）設定來運作，因此會在內部取得互斥鎖（Lock），或是產生在地化的額外負擔。
+標準函式庫的 `std::stod` 或 `sscanf`，會依賴於當前的語系（Locale）設定來運作，因此會在內部取得互斥鎖（[Lock](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)），或是產生在地化的額外負擔。
 C++17 引入的 `std::from_chars`，由於不依賴語系設定，也不伴隨記憶體複製，因此在解析數值時具備壓倒性的效能。若將位數設為 $M$，時間複雜度為 $O(M)$。
 
 ### 6.3. 記憶體配置與 `std::pmr` (Polymorphic Memory Resources)

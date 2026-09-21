@@ -67,7 +67,7 @@ Frühe Versionen von llama.cpp verwendeten das `ggml`-Format (und Varianten wie 
 
 ### 3.2. Die Geburt des GGUF-Formats
 
-Das im August 2023 eingeführte **GGUF** ist ein äußerst vielseitiges Format, das zur Lösung dieser Probleme entwickelt wurde. Sein Hauptmerkmal ist die Einführung einer **Metadatenstruktur basierend auf Schlüssel-Wert-Paaren (Key-Value)**.
+Das im August 2023 eingeführte **GGUF** ist ein äußerst vielseitiges Format, das zur Lösung dieser Probleme entwickelt wurde. Sein Hauptmerkmal ist die Einführung einer **Metadatenstruktur basierend auf Schlüssel-Wert-Paaren ([Key-Value](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/))**.
 
 Das folgende Mermaid-Diagramm ist eine abstrahierte Darstellung der GGUF-Dateistruktur.
 
@@ -88,7 +88,7 @@ graph TD
 ```
 
 **Hauptvorteile von GGUF:**
-1. **Flexibilität:** Modell-Hyperparameter, RoPE (Rotary Positional Embedding)-Einstellungen, Tokenizer-Vokabulardaten usw. werden alle als benannte Key-Value-Paare gespeichert. Unbekannte Schlüssel werden ignoriert, was das Hinzufügen neuer Funktionen erleichtert.
+1. **Flexibilität:** Modell-Hyperparameter, RoPE (Rotary Positional Embedding)-Einstellungen, Tokenizer-Vokabulardaten usw. werden alle als benannte [Key-Value](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/)-Paare gespeichert. Unbekannte Schlüssel werden ignoriert, was das Hinzufügen neuer Funktionen erleichtert.
 2. **Endian-Unabhängigkeit:** GGUF verwendet standardmäßig Little-Endian, verfügt jedoch über ein explizites Flag, sodass es sicher portabel zwischen verschiedenen Architekturen ist.
 3. **Optimierung für mmap (Memory Mapping):** Tensor-Daten werden an bestimmten Grenzen ausgerichtet (Padding) und können über den `mmap()`-Systemaufruf des Betriebssystems direkt von der Festplatte in den Speicherraum abgebildet werden. Dadurch wird die Initialisierungszeit für das Laden des Modells praktisch auf Null reduziert.
 

@@ -122,19 +122,19 @@ AI से "पूरा सिस्टम बनाओ" कहने के ब
 
 डिस्ट्रिब्यूटेड सिस्टम डिज़ाइन करते समय, इंजीनियरों का सामना हमेशा "CAP थ्योरम" से होता है। CAP थ्योरम यह सिद्धांत है कि एक डिस्ट्रिब्यूटेड सिस्टम निम्नलिखित 3 विशेषताओं में से एक साथ केवल 2 को ही पूरा कर सकता है:
 
-- **Consistency (निरंतरता / एकरूपता)**: क्या सभी नोड्स पर एक ही समय में समान डेटा दिखाई देता है?
-- **Availability (उपलब्धता)**: क्या सिस्टम का कुछ हिस्सा डाउन होने पर भी सिस्टम काम करता रहता है?
+- **[Consistency](https://kenji.blog/hi/p/cap-theorem-distributed-systems-tradeoff/) (निरंतरता / एकरूपता)**: क्या सभी नोड्स पर एक ही समय में समान डेटा दिखाई देता है?
+- **[Availability](https://kenji.blog/hi/p/cap-theorem-distributed-systems-tradeoff/) (उपलब्धता)**: क्या सिस्टम का कुछ हिस्सा डाउन होने पर भी सिस्टम काम करता रहता है?
 - **[Partition Tolerance](https://kenji.blog/hi/p/cap-theorem-distributed-systems/) (विभाजन सहनशीलता)**: क्या नेटवर्क टूट जाने पर भी सिस्टम काम करता रहता है?
 
-$$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
+$$ P(\text{[Availability](https://kenji.blog/hi/p/cap-theorem-distributed-systems-tradeoff/)} \cup \text{[Consistency](https://kenji.blog/hi/p/cap-theorem-distributed-systems-tradeoff/)}) | \text{PartitionTolerance} $$
 
 असल दुनिया के नेटवर्क में विभाजन (Partition) को टाला नहीं जा सकता, इसलिए इंजीनियरों को गंभीर ट्रेड-ऑफ फैसले लेने पड़ते हैं, जो सीधे व्यवसाय से जुड़े होते हैं। जैसे, "इस पेमेंट सिस्टम में हम Consistency (C) को प्राथमिकता देंगे, और दिक्कत आने पर सर्विस रोक देंगे (CP)", या "इस सोशल मीडिया (SNS) टाइमलाइन में हम Availability (A) को प्राथमिकता देंगे, और कुछ समय के लिए डेटा अलग-अलग दिखने (inconsistency) को सह लेंगे (AP)"।
 
 AI "C को प्राथमिकता देने वाला कोड" या "A को प्राथमिकता देने वाला कोड" लिख सकता है, लेकिन वह अपने-आप यह तय नहीं कर सकता कि "किसे प्राथमिकता देनी चाहिए", क्योंकि इस फैसले में व्यावसायिक जोखिम (business risk) शामिल होता है।
 
-### 4.2 असिंक्रोनस कम्युनिकेशन ([Asynchronous](https://kenji.blog/hi/p/event-driven-architecture-async/) Communication) और इवेंचुअल कंसिस्टेंसी (Eventual Consistency)
+### 4.2 असिंक्रोनस कम्युनिकेशन ([Asynchronous](https://kenji.blog/hi/p/event-driven-architecture-async/) Communication) और इवेंचुअल कंसिस्टेंसी (Eventual [Consistency](https://kenji.blog/hi/p/cap-theorem-distributed-systems-tradeoff/))
 
-जब सिस्टम बड़े हो जाते हैं, तो सेवाओं के बीच संपर्क (communication) [REST API](https://kenji.blog/hi/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/hi/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) के ज़रिए होने वाले सिंक्रोनस संचार से हटकर, मैसेज क्यू (जैसे Kafka, RabbitMQ) का उपयोग करने वाले असिंक्रोनस संचार (asynchronous communication) में बदल जाता है। ऐसे में, डेटा की एकरूपता तुरंत (immediate consistency) के बजाय "इवेंचुअल कंसिस्टेंसी (Eventual Consistency - अंततः एकरूपता)" में बदल जाती है।
+जब सिस्टम बड़े हो जाते हैं, तो सेवाओं के बीच संपर्क (communication) [REST API](https://kenji.blog/hi/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/hi/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) के ज़रिए होने वाले सिंक्रोनस संचार से हटकर, मैसेज क्यू (जैसे [Kafka](https://kenji.blog/hi/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/hi/p/event-driven-architecture-message-queue-kafka-rabbitmq/)) का उपयोग करने वाले असिंक्रोनस संचार (asynchronous communication) में बदल जाता है। ऐसे में, डेटा की एकरूपता तुरंत (immediate consistency) के बजाय "इवेंचुअल कंसिस्टेंसी (Eventual [Consistency](https://kenji.blog/hi/p/cap-theorem-distributed-systems-tradeoff/) - अंततः एकरूपता)" में बदल जाती है।
 सागा पैटर्न (Saga Pattern) या [CQRS](https://kenji.blog/hi/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) जैसे उन्नत आर्किटेक्चर पैटर्न (architecture patterns) को कब लागू करना चाहिए? ऐसे जटिल फैसले लेना और पूरे सिस्टम का ब्लूप्रिंट तैयार करना, एक अनुभवी (senior) इंजीनियर की ही असली खूबी है।
 
 ```mermaid

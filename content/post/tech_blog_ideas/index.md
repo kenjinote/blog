@@ -314,8 +314,8 @@ $$ R = e^{-\frac{t}{S}} $$
 
 技術ブログにおける組み合わせのパターンとしては、以下のようなマトリックスが考えられます。
 
-1. **[古い技術] × [新しいパラダイム]**: 例「COBOLのアーキテクチャから学ぶ、現代のマイクロサービス設計のアンチパターン」
-2. **[フロントエンド] × [バックエンドの概念]**: 例「Reactの仮想DOM更新アルゴリズムを、データベースのトランザクション分離レベルの視点で解説する」
+1. **[古い技術] × [新しいパラダイム]**: 例「COBOLのアーキテクチャから学ぶ、現代の[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)設計のアンチパターン」
+2. **[フロントエンド] × [バックエンドの概念]**: 例「Reactの仮想DOM更新アルゴリズムを、データベースの[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)[分離レベル](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の視点で解説する」
 3. **[抽象的な数学・理論] × [具体的な実装]**: 例「[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)で読み解く、[Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)の[Pod](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)スケジューリングの最適化」
 
 この組み合わせを意図的に発生させるため、先ほど構築したPineconeのセマンティック検索システムを利用し、ランダムな概念Aと概念Bを抽出し、AI（ChatGPTなど）に「これら2つを組み合わせた技術ブログのタイトルと目次案を5つ提案して」とプロンプトを投げることで、自分では思いつかないような斬新な切り口の記事アイデアを無限に生成することができます。

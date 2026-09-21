@@ -73,7 +73,7 @@ Hal ini membuktikan secara matematis bahwa **B-Tree** sangat efisien untuk penca
 
 ## 4. Standar Basis Data: Evolusi ke B+Tree
 
-Dalam praktiknya, RDBMS (seperti InnoDB pada MySQL atau PostgreSQL) menggunakan versi perbaikan dari B-Tree, yaitu **B+Tree**.
+Dalam praktiknya, [RDBMS](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/) (seperti InnoDB pada MySQL atau PostgreSQL) menggunakan versi perbaikan dari B-Tree, yaitu **B+Tree**.
 
 ### 4.1 Perbedaan Antara B-Tree dan B+Tree
 

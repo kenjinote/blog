@@ -67,7 +67,7 @@ Les premières versions de llama.cpp utilisaient le format `ggml` (ainsi que ses
 
 ### 3.2. La naissance du format GGUF
 
-Introduit en août 2023, **GGUF** est un format très polyvalent conçu pour résoudre ces problèmes. Sa principale caractéristique est l'adoption d'une **structure de métadonnées basée sur des paires clé-valeur (Key-Value)**.
+Introduit en août 2023, **GGUF** est un format très polyvalent conçu pour résoudre ces problèmes. Sa principale caractéristique est l'adoption d'une **structure de métadonnées basée sur des paires clé-valeur ([Key-Value](https://kenji.blog/fr/p/nosql-database-selection-kvs-document-graph-wide-column/))**.
 
 Le diagramme Mermaid suivant résume la structure d'un fichier GGUF.
 

@@ -165,7 +165,7 @@ Forçar esse processo permite transformar o "Hype (Entusiasmo)" em "Engineering 
 
 Há um mantra famoso no mundo da tecnologia: **"Choose Boring Technology" (Escolha uma tecnologia entediante/chata)**. Este é um ensinamento de que os *tokens de inovação* (os recursos limitados que uma organização pode gastar em novas tecnologias desconhecidas) não devem ser desperdiçados na escolha de infraestruturas ou frameworks que não estão diretamente ligados ao valor central do negócio.
 
-Os algoritmos de redes sociais preferem a "novidade". No entanto, o que é necessário para construir um sistema robusto que suporte a operação no mundo real são as tecnologias "entediantes" (como PostgreSQL, Redis, APIs REST padrão) que possuem mais de 10 anos de histórico operacional e cujos procedimentos de recuperação de falhas resultam em milhões de acertos em uma pesquisa no Google.
+Os algoritmos de redes sociais preferem a "novidade". No entanto, o que é necessário para construir um sistema robusto que suporte a operação no mundo real são as tecnologias "entediantes" (como PostgreSQL, [Redis](https://kenji.blog/pt/p/nosql-database-selection-kvs-document-graph-wide-column/), APIs REST padrão) que possuem mais de 10 anos de histórico operacional e cujos procedimentos de recuperação de falhas resultam em milhões de acertos em uma pesquisa no Google.
 
 ---
 

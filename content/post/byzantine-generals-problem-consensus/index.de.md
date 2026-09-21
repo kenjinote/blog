@@ -289,7 +289,7 @@ Auf diese Weise wird die Konsistenz des gesamten Systems bewiesen, denn selbst w
 In diesem Artikel haben wir die Konsensbildung, die größte Herausforderung in verteilten Systemen, von dem theoretischen "Problem der byzantinischen Generäle" über das absturztolerante **Paxos** und **Raft** bis hin zu **PBFT**, das resistent gegen böswillige Knoten ist, erklärt.
 
 *   **Paxos** : Eine mathematisch bewiesene, robuste Grundlage, aber die Komplexität ist ein Problem.
-*   **Raft** : Legt den Fokus auf Verständlichkeit und einfache Implementierung und ist zum De-facto-Standard für moderne verteilte KVS geworden.
+*   **Raft** : Legt den Fokus auf Verständlichkeit und einfache Implementierung und ist zum De-facto-Standard für moderne verteilte [KVS](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/) geworden.
 *   **PBFT** : Erreicht einen deterministischen Konsens in Umgebungen mit böswilligen Knoten und wurde zur Grundlage der Blockchain-Technologie.
 
 Heute entstehen ständig neue BFT-Algorithmen, wie der in Bitcoin verwendete **Nakamoto [Consensus](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) ([PoW](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/))**, Tendermint und HotStuff, die den Kommunikations-Overhead von PBFT reduzieren und die Skalierbarkeit verbessern. Die Wahl des richtigen Konsensalgorithmus in Abhängigkeit von den Systemanforderungen (Knotenzuverlässigkeit, erforderlicher Durchsatz, Latenz) ist der Schlüssel zum Aufbau eines robusten verteilten Systems.

@@ -24,7 +24,7 @@ description: '量子コンピュータの驚異的な計算能力がブロック
 
 ## 2. [量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)の基礎と[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)に与える2つの大きな脅威
 
-現在のブロックチェーンシステムは、主に以下の2つの暗号要素で構成されており、これらはそれぞれ量子アルゴリズムによる異なる脅威に晒されています。
+現在のブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンシステムは、主に以下の2つの暗号要素で構成されており、これらはそれぞれ量子アルゴリズムによる異なる脅威に晒されています。
 
 ```mermaid
 graph TD
@@ -147,10 +147,10 @@ $$
 前述の通り、ハッシュ関数は量子攻撃（グローバーのアルゴリズム）に対して耐性を持つため、ハッシュ値である「アドレス」から元の「[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)」を逆算することは[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)でも不可能です。
 つまり、 **「未使用（一度も資金の送信を行っていない）のアドレス」** については、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)上に[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)が一切露出しておらず、ハッシュ値のみが記録されている状態です。したがって、公開鍵が分からない以上、[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)を実行する標的が存在せず、秘密鍵を特定することはできません。この状態のウォレットは量子的に安全（Quantum-safe）であると言えます。
 
-### 3.2. トランザクション送信時の致命的な[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)（フロントランニング攻撃）
+### 3.2. [トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)送信時の致命的な[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)（フロントランニング攻撃）
 
 問題が発生するのは、ユーザーが資金を送金するタイミングです。
-トランザクションをネットワークにブロードキャスト（送信）する際、ユーザーはデジタル署名とともに、検証のために **自身の[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)をトランザクションデータ内に含めてネットワーク全体に公開** する必要があります。
+[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)をネットワークにブロードキャスト（送信）する際、ユーザーはデジタル署名とともに、検証のために **自身の[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)を[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)データ内に含めてネットワーク全体に公開** する必要があります。
 
 ```mermaid
 sequenceDiagram
@@ -168,11 +168,11 @@ sequenceDiagram
     Miner-->>User: ブロックチェーンに記録 (アリスの資金喪失)
 ```
 
-一度[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)がMempool（未承認トランザクションの待機場所）に送信されると、そのデータは世界中のノードに共有されます。もし攻撃者が超高速な[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)を保持していた場合、以下のプロセスで資金を奪うことができます。
+一度[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)がMempool（未承認[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の待機場所）に送信されると、そのデータは世界中のノードに共有されます。もし攻撃者が超高速な[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)を保持していた場合、以下のプロセスで資金を奪うことができます。
 
-1. Mempoolから正当なユーザー（アリス）のトランザクションを傍受し、 **[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)を抽出** する。
-2. [ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)を実行し、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)から **秘密鍵を数分以内（ブロックが承認される前）に計算** する。
-3. 取得した秘密鍵を用いて、アリスの資金を攻撃者のアドレスに送金する **偽のトランザクションを作成** する。
+1. Mempoolから正当なユーザー（アリス）の[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を傍受し、 **[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)を抽出** する。
+2. [ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)を実行し、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)から **秘密鍵を数分以内（ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が承認される前）に計算** する。
+3. 取得した秘密鍵を用いて、アリスの資金を攻撃者のアドレスに送金する **偽の[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を作成** する。
 4. この偽トランザクションに、アリスの元のトランザクションよりも **はるかに高いマイナー手数料（Fee）を設定** してネットワークに送信する。
 
 マイナーは経済的インセンティブに従い、手数料の高いトランザクションを優先的にブロックに組み込みます。結果として、攻撃者の不正な送金が先に承認（Confirm）され、アリスの正当な送金は「残高不足（Double Spend）」として破棄されます。
@@ -180,9 +180,9 @@ sequenceDiagram
 
 ### 3.3. 再利用アドレスと古いアドレス（[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)K）の危機
 
-さらに深刻な問題として、過去に一度でも送金を行ったことのあるアドレス（お釣りアドレスなどとして再利用している場合）は、すでに[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)上に[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)が永続的に記録されています。これらはトランザクションの送信を待つまでもなく、いつでも秘密鍵を計算されて残高を奪われる危険に晒されています。
+さらに深刻な問題として、過去に一度でも送金を行ったことのあるアドレス（お釣りアドレスなどとして再利用している場合）は、すでに[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)上に[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)が永続的に記録されています。これらは[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の送信を待つまでもなく、いつでも秘密鍵を計算されて残高を奪われる危険に晒されています。
 
-また、サトシ・ナカモトの初期マイニング報酬（約100万BTC以上）を含む、2009年〜2010年頃に主流だった **P2PK（Pay-to-Public-Key）** フォーマットでは、アドレスとしてハッシュではなく公開鍵そのものが直接ブロックチェーンに記録されていました。これらの大量の休眠[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)は、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)にとって最も容易な標的となり、一斉に盗まれて市場でダンピングされることで、価格の大暴落を引き起こす可能性があります。
+また、サトシ・ナカモトの初期マイニング報酬（約100万BTC以上）を含む、2009年〜2010年頃に主流だった **P2PK（Pay-to-Public-Key）** フォーマットでは、アドレスとしてハッシュではなく公開鍵そのものが直接ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンに記録されていました。これらの大量の休眠[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)は、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)にとって最も容易な標的となり、一斉に盗まれて市場でダンピングされることで、価格の大暴落を引き起こす可能性があります。
 
 ---
 
@@ -191,7 +191,7 @@ sequenceDiagram
 このような「Q-Day（[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)による暗号突破の日）」の破局を回避するため、暗号学界と[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)コミュニティは、量子アルゴリズムでも解読が困難な **耐量子計算機暗号（PQC）** への移行を計画しています。
 米国立標準技術研究所（NIST）は長年にわたりPQCの標準化プロセスを進めており、数次にわたる厳しい評価を経て、いくつかの有望な暗号方式が最終標準として選定されました。
 
-ブロックチェーンのデジタル署名代替として注目されている主要なPQCアルゴリズムを、その数理的メカニズムとともに詳細に解説します。
+ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンのデジタル署名代替として注目されている主要なPQCアルゴリズムを、その数理的メカニズムとともに詳細に解説します。
 
 ### 4.1. ハッシュベース署名（Hash-Based Signatures）
 
@@ -214,10 +214,10 @@ $$
 $$
 \text{pk}_{i,0} = H(\text{sk}_{i,0}), \quad \text{pk}_{i,1} = H(\text{sk}_{i,1})
 $$
-公開鍵も同様に $16,384$ バイトとなります。これをブロックチェーンネットワークに公開します。
+公開鍵も同様に $16,384$ バイトとなります。これをブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンネットワークに公開します。
 
 **【署名生成】**
-アリスは、トランザクションデータ $M$ に署名するために、まずそのハッシュ値を計算します。
+アリスは、[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)データ $M$ に署名するために、まずそのハッシュ値を計算します。
 $$
 h = H(M) \in \{0, 1\}^{256}
 $$
@@ -229,8 +229,8 @@ $$
 つまり、メッセージハッシュのビットが `0` ならば $\text{sk}_{i,0}$ を公開し、`1` ならば $\text{sk}_{i,1}$ を公開します。署名サイズは $256 \times 32 = 8,192$ バイトとなります。
 
 **【署名検証】**
-マイナー（検証者）は、受け取ったトランザクション $M$ と署名 $\sigma = (s_1, s_2, \dots, s_{256})$、そして[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) $\text{pk}$ を用いて検証を行います。
-トランザクションのハッシュ $h = H(M)$ を再計算し、各 $s_i$ をハッシュ化したものが、公開鍵の対応する要素 $\text{pk}_{i, h_i}$ と一致するかを確認します。
+マイナー（検証者）は、受け取った[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/) $M$ と署名 $\sigma = (s_1, s_2, \dots, s_{256})$、そして[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) $\text{pk}$ を用いて検証を行います。
+[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)のハッシュ $h = H(M)$ を再計算し、各 $s_i$ をハッシュ化したものが、公開鍵の対応する要素 $\text{pk}_{i, h_i}$ と一致するかを確認します。
 $$
 H(s_i) \overset{?}{=} \text{pk}_{i, h_i} \quad (\text{for all } 1 \le i \le 256)
 $$
@@ -262,7 +262,7 @@ $$
 
 ---
 
-## 5. ブロックチェーンのPQC移行における技術的課題
+## 5. ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンのPQC移行における技術的課題
 
 PQCのアルゴリズム（DilithiumやSPHINCS+など）が存在するからといって、これを明日にでも[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)やイーサリアムに導入できるわけではありません。分散型システム特有の重い課題がいくつも存在します。
 
@@ -271,7 +271,7 @@ PQCのアルゴリズム（DilithiumやSPHINCS+など）が存在するからと
 PQC導入における最大の障壁は、データサイズの大幅な肥大化です。
 現在のECDSAの署名サイズが約70バイトであるのに対し、格子暗号のDilithium（ML-DSA）では署名サイズが約2,420バイト〜4,595バイト（セキュリティレベルによる）、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)サイズも1,300バイトを超えます。ハッシュベースのSPHINCS+に至っては署名だけで数万バイトに達します。
 
-もし[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)が現在と同じブロックサイズ上限（SegWit込みで約4MBのウェイト）のままPQCを導入した場合、1つのブロックに格納できるトランザクションの数は激減します。ネットワークのスループット（TPS：Transactions Per Second）は壊滅的に低下し、送金詰まりが常態化するでしょう。
+もし[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)が現在と同じブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)サイズ上限（SegWit込みで約4MBのウェイト）のままPQCを導入した場合、1つのブロックに格納できる[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の数は激減します。ネットワークのスループット（TPS：[Transaction](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)s Per Second）は壊滅的に低下し、送金詰まりが常態化するでしょう。
 これを解決するためにはブロックサイズの大幅な引き上げが必要となりますが、それはフルノードのストレージ要件やネットワーク帯域幅の要件を増大させ、個人でのノード運用を困難にし、結果として **ネットワークの中央集権化** を招くというジレンマに陥ります。
 
 ```mermaid
@@ -280,14 +280,14 @@ pie title ブロックチェーンにおける署名データサイズ比較 (�
     "Dilithium ML-DSA (約2,500 Bytes)" : 58
     "SPHINCS+ (約17,000 Bytes)" : 40
 ```
-*(※ PQC導入に伴うトランザクションデータの肥大化は、スケーラビリティに対する致命的なボトルネックとなります)*
+*(※ PQC導入に伴う[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)データの肥大化は、スケーラビリティに対する致命的なボトルネックとなります)*
 
 ### 5.2. Ethereum Virtual Machine (EVM) への影響と事前コンパイル済みコントラクト
 
 Ethereumのような[チューリング](https://kenji.blog/p/turing/)完全な[スマートコントラクト](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)プラットフォームにおいて、PQCの導入はEVM（Ethereum Virtual Machine）の根本的なアップグレードを要求します。
 現在のEVMでは、ECDSA署名の検証のために `ecrecover` (アドレス: `0x01`) という事前コンパイル済みコントラクト（Precompiled Contract）が用意されており、非常に低いガス代（3000 Gas）で署名検証が行えるよう最適化されています。
 
-しかし、DilithiumやFalconといった新しい格子暗号アルゴリズムの検証処理は、複雑な多項式演算や行列演算を伴うため、既存のEVMオペコード（Opcode）だけで実装すると、1回の署名検証だけで数百万から数千万ガスを消費する可能性があります。これは、現在のブロックガスリミット（約3000万Gas）を1トランザクションで枯渇させるレベルです。
+しかし、DilithiumやFalconといった新しい格子暗号アルゴリズムの検証処理は、複雑な多項式演算や行列演算を伴うため、既存のEVMオペコード（Opcode）だけで実装すると、1回の署名検証だけで数百万から数千万ガスを消費する可能性があります。これは、現在のブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ガスリミット（約3000万Gas）を1[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)で枯渇させるレベルです。
 
 これを回避するためには、ネットワークのハードフォークを通じて、新たにPQC検証用のPrecompiled Contract（例：`0x10` に DilithiumVerify を割り当てるなど）をEVM自体に組み込む必要があります。これには、各イーサリアムクライアント（Geth, Nethermind, Erigonなど）のコア開発者が協調してC++、Go、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)などの言語レベルで格子暗号検証ロジックを最適化実装し、セキュリティ監査を実施するという長期間にわたるプロセスが必要です。
 
@@ -305,12 +305,12 @@ Ethereumのような[チューリング](https://kenji.blog/p/turing/)完全な[
 [暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)のエコシステムが手遅れになる前に取るべきロードマップは以下の通りです。
 
 ### フェーズ1：ハイブリッド署名とアカウント抽象化（現在〜2028年頃）
-現在の[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)界隈、特にEthereumの開発陣（Vitalik Buterin氏など）は、ECDSAとPQC（ハッシュベース署名や格子暗号）を組み合わせた **「ハイブリッド署名」** を検討しています。これは、既存の安全なECDSAによる署名と、PQCによる署名の両方をトランザクションに付与し、どちらか一方が破られても安全性を保つというアプローチです。
+現在の[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)界隈、特にEthereumの開発陣（Vitalik Buterin氏など）は、ECDSAとPQC（ハッシュベース署名や格子暗号）を組み合わせた **「ハイブリッド署名」** を検討しています。これは、既存の安全なECDSAによる署名と、PQCによる署名の両方を[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)に付与し、どちらか一方が破られても安全性を保つというアプローチです。
 また、アカウント抽象化（Account Abstraction, ERC-4337）を利用することで、プロトコルレベルのハードフォークを待たずに、[スマートコントラクト](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)ウォレット上でオプトイン（希望するユーザーのみ）でPQC署名を実装・サポートする取り組みも進められています。
 
 ### フェーズ2：ゼロ知識証明（ZK-Rollups）の活用（2025年〜）
 PQCの最大の弱点である「署名データの肥大化」を解決する切り札として期待されているのが、レイヤー2技術である **ZK-Rollups（ゼロ知識証明）** の活用です。
-巨大なPQC署名データをLayer 1（メインチェーン）に直接書き込むのではなく、Layer 2上で多数のPQCトランザクションを検証・集約します。そして、ZK-SNARKs や ZK-STARKs を使ってそれらを一つの極めて小さな「証明データ（Proof）」に圧縮し、Layer 1に記録するのです。
+巨大なPQC署名データをLayer 1（メインチェーン）に直接書き込むのではなく、Layer 2上で多数のPQC[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を検証・集約します。そして、ZK-SNARKs や ZK-STARKs を使ってそれらを一つの極めて小さな「証明データ（Proof）」に圧縮し、Layer 1に記録するのです。
 なお、SNARKsの一部の構成（Groth16など）はそれ自体が量子脆弱であるため、耐量子性を持つハッシュ関数のみに依存する **ZK-STARKs** の採用が鍵となります。
 
 ### フェーズ3：プロトコルレベルのハードフォーク（2030年頃）
@@ -319,7 +319,7 @@ NISTによるPQCの標準化が完全に定着し、業界標準のライブラ�
 ### 先駆的なプロジェクト事例
 
 一部の[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)プロジェクトは、この量子脅威を先取りし、初期段階から耐量子性を謳って開発されています。
-* **QRL (Quantum Resistant Ledger)**: XMSS（拡張マークル署名方式）というハッシュベースのPQCをプロトコルレベルでネイティブに実装した初期のブロックチェーンです。
+* **QRL (Quantum Resistant Ledger)**: XMSS（拡張マークル署名方式）というハッシュベースのPQCをプロトコルレベルでネイティブに実装した初期のブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンです。
 * **Algorand / Cellframe**: 将来のPQCアップデートを見据えた柔軟な暗号層のモジュラーアーキテクチャを持ち、格子暗号の統合を積極的に模索しているプロジェクト群です。
 
 ---
@@ -330,7 +330,7 @@ NISTによるPQCの標準化が完全に定着し、業界標準のライブラ�
 
 [ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)とグローバーのアルゴリズムという[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)の二つの剣は、現在の[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の基盤である[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号とハッシュ関数をそれぞれ脅かします。特にECDSAの[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)は致命的であり、フロントランニング攻撃による資金の盗難リスクを避けるためには、耐量子計算機暗号（PQC）への移行が絶対的に避けられない道です。
 
-しかし、技術界とブロックチェーンコミュニティはただ指をくわえて破滅を待っているわけではありません。格子暗号やハッシュベース署名といったPQCアルゴリズムの選定と標準化が着実に進んでおり、ゼロ知識証明（ZK-STARKs）やLayer 2のスケーリング技術を活用することで、PQC導入の最大の壁である「データサイズの肥大化」を克服する道筋も見え始めています。
+しかし、技術界とブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンコミュニティはただ指をくわえて破滅を待っているわけではありません。格子暗号やハッシュベース署名といったPQCアルゴリズムの選定と標準化が着実に進んでおり、ゼロ知識証明（ZK-STARKs）やLayer 2のスケーリング技術を活用することで、PQC導入の最大の壁である「データサイズの肥大化」を克服する道筋も見え始めています。
 
 私たち一般の[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)ユーザーや投資家が今すぐパニックになって資金をすべて売却する必要はありません。しかし、以下のような基本的なリテラシーと自己防衛の意識を持つことが重要です。
 

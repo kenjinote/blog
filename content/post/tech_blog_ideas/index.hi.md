@@ -314,8 +314,8 @@ $$ R = e^{-\frac{t}{S}} $$
 
 तकनीकी ब्लॉग के लिए संयोजन पैटर्न के रूप में निम्नलिखित मैट्रिक्स पर विचार किया जा सकता है:
 
-1. **[पुरानी तकनीक] × [नया प्रतिमान (Paradigm)]**: उदाहरण "COBOL की वास्तुकला से सीखना: आधुनिक माइक्रोसेवाओं (Microservices) के डिजाइन का एंटी-पैटर्न"
-2. **[फ्रंट-एंड] × [बैक-एंड की अवधारणा]**: उदाहरण "डेटाबेस के लेनदेन अलगाव स्तरों (Transaction Isolation Levels) के परिप्रेक्ष्य से React के वर्चुअल DOM अपडेट एल्गोरिदम की व्याख्या"
+1. **[पुरानी तकनीक] × [नया प्रतिमान (Paradigm)]**: उदाहरण "COBOL की वास्तुकला से सीखना: आधुनिक माइक्रोसेवाओं ([[Microservice](https://kenji.blog/hi/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/hi/p/microservices-architecture-bff-api-gateway/)) के डिजाइन का एंटी-पैटर्न"
+2. **[फ्रंट-एंड] × [बैक-एंड की अवधारणा]**: उदाहरण "डेटाबेस के लेनदेन अलगाव स्तरों ([Transaction](https://kenji.blog/hi/p/rdbms-transaction-acid-isolation-level-lock/) [Isolation Level](https://kenji.blog/hi/p/rdbms-transaction-acid-isolation-level-lock/)s) के परिप्रेक्ष्य से React के वर्चुअल DOM अपडेट एल्गोरिदम की व्याख्या"
 3. **[सार गणित/सिद्धांत] × [विशिष्ट कार्यान्वयन]**: उदाहरण "ग्राफ सिद्धांत ([Graph Theory](https://kenji.blog/hi/p/graph-theory-dijkstra-a-star/)) का उपयोग करके [Kubernetes](https://kenji.blog/hi/p/kubernetes-k8s-architecture-pod-service-ingress/) के पॉड शेड्यूलिंग अनुकूलन ([Pod](https://kenji.blog/hi/p/kubernetes-k8s-architecture-pod-service-ingress/) Scheduling Optimization) को समझना"
 
 इस संयोजन को जानबूझकर उत्पन्न करने के लिए, आप पहले बनाए गए पाइनकोन (Pinecone) सिमेंटिक खोज सिस्टम का उपयोग करके यादृच्छिक अवधारणा A और अवधारणा B को निकाल सकते हैं, और AI (जैसे ChatGPT) को एक प्रॉम्प्ट दे सकते हैं, "इन दोनों को मिलाकर तकनीकी ब्लॉग के 5 शीर्षक और अनुक्रमणिका (Table of Contents) विचार सुझाएँ।" ऐसा करके, आप अनंत संख्या में उपन्यास लेख विचार उत्पन्न कर सकते हैं जिनके बारे में आप स्वयं कभी नहीं सोच सकते थे।

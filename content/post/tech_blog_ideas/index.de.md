@@ -312,7 +312,7 @@ Innovation und Kreativität entstehen selten aus dem Nichts, sondern durch neue 
 
 Für technische Blogs ist beispielsweise folgende Matrix als Kombinationsmuster denkbar:
 
-1. **[Alte Technologien] × [Neue Paradigmen]**: Beispiel: "Anti-Patterns im modernen Microservice-Design – gelernt aus der Architektur von COBOL"
+1. **[Alte Technologien] × [Neue Paradigmen]**: Beispiel: "Anti-Patterns im modernen [Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Design – gelernt aus der Architektur von COBOL"
 2. **[Frontend] × [Backend-Konzepte]**: Beispiel: "Erklärung des virtuellen DOM-Aktualisierungsalgorithmus von React aus der Perspektive von Transaktionsisolationsstufen in Datenbanken"
 3. **[Abstrakte Mathematik/Theorie] × [Konkrete Implementierung]**: Beispiel: "Optimierung des [Pod](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)-Schedulings in [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/) durch Graphentheorie"
 

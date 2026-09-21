@@ -64,7 +64,7 @@ flowchart TD
 
 ### Struktur Blok
 
-Satu blok secara garis besar terdiri dari "Header Blok (Block Header)" dan "Data Transaksi (Transaction Data)".
+Satu blok secara garis besar terdiri dari "Header Blok (Block Header)" dan "Data Transaksi ([Transaction](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/) Data)".
 
 Header blok berisi informasi berikut:
 1. **Versi (Version)**: Versi perangkat lunak
@@ -187,7 +187,7 @@ Jika hashrate meningkat, target menjadi lebih kecil (kesulitan meningkat), dan j
 
 ## 6. Model Transaksi dan UTXO
 
-Transaksi Bitcoin tidak menggunakan mekanisme seperti saldo rekening bank (model berbasis akun), melainkan mengadopsi model **UTXO (Unspent Transaction Output: Output Transaksi Belum Terpakai)**.
+Transaksi Bitcoin tidak menggunakan mekanisme seperti saldo rekening bank (model berbasis akun), melainkan mengadopsi model **UTXO (Unspent [Transaction](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/) Output: Output Transaksi Belum Terpakai)**.
 
 ### Input dan Output
 
@@ -285,7 +285,7 @@ Pencapaian terbesar Satoshi Nakamoto bukanlah hanya memecahkan teka-teki kriptog
 
 ### Hadiah Blok dan Halving
 
-Alasan penambang menambang blok meskipun harus menginvestasikan perangkat keras dan listrik dalam jumlah besar adalah karena adanya imbalan ekonomi. Ketika penambang berhasil membuat blok baru, mereka menerima Bitcoin yang baru dicetak melalui transaksi khusus yang disebut **Transaksi Coinbase (Coinbase Transaction)**.
+Alasan penambang menambang blok meskipun harus menginvestasikan perangkat keras dan listrik dalam jumlah besar adalah karena adanya imbalan ekonomi. Ketika penambang berhasil membuat blok baru, mereka menerima Bitcoin yang baru dicetak melalui transaksi khusus yang disebut **Transaksi Coinbase (Coinbase [Transaction](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/))**.
 
 Total penerbitan Bitcoin dibatasi hingga **21 juta koin** oleh program. Selain itu, ada mekanisme yang disebut **Halving** di mana hadiah penambangan per blok dibagi dua setiap 210.000 blok (sekitar 4 tahun).
 

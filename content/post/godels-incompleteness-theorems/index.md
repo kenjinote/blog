@@ -23,7 +23,7 @@ slug: "godels-incompleteness-theorems"
 
 [ヒルベルト](https://kenji.blog/p/hilbert/)は、数学のすべての推論を完全に記号化し、機械的なルールだけで数学を再構築しようと試みました。彼が提唱した「[ヒルベルト](https://kenji.blog/p/hilbert/)・プログラム」が目指したのは、数学の形式的体系（Formal System）において、以下の3つの性質を証明することでした。
 
-1. **無矛盾性** （Consistency）：体系内に矛盾（ある命題 $P$ とその否定 $\neg P$ が両方証明されること）が存在しないこと。
+1. **無矛盾性** （[Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）：体系内に矛盾（ある命題 $P$ とその否定 $\neg P$ が両方証明されること）が存在しないこと。
 2. **完全性** （Completeness）：どんな数学的命題も、その体系内で真か偽のどちらかとして必ず証明できること。
 3. **決定可能性** （Decidability）：任意の命題が与えられたとき、それが証明可能かどうかを判定する機械的な手順が存在すること。
 

@@ -290,7 +290,7 @@ Dengan cara ini, bahkan jika $ f $ node berbahaya termasuk dalam kedua kuorum, a
 Artikel ini telah menjelaskan pembentukan konsensus, tantangan terbesar dalam sistem terdistribusi, dimulai dari "Masalah Jenderal Bizantium" secara teoritis, **Paxos** dan **Raft** yang memiliki toleransi *crash*, serta **PBFT** yang tahan terhadap lingkungan dengan node berbahaya.
 
 *   **Paxos** : Fondasi tangguh yang terbukti secara matematis, tetapi kompleksitasnya menjadi masalah.
-*   **Raft** : Mengutamakan kemudahan pemahaman dan implementasi, menjadi standar *de facto* untuk KVS terdistribusi modern.
+*   **Raft** : Mengutamakan kemudahan pemahaman dan implementasi, menjadi standar *de facto* untuk [KVS](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/) terdistribusi modern.
 *   **PBFT** : Mewujudkan kesepakatan deterministik di lingkungan dengan node berbahaya, menjadi dasar teknologi blockchain.
 
 Saat ini, bermunculan algoritma BFT baru yang mengurangi biaya (overhead) komunikasi PBFT dan meningkatkan skalabilitas, seperti **Nakamoto [Consensus](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) ([PoW](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/))** yang diadopsi oleh Bitcoin, Tendermint, HotStuff, dan lainnya. Memilih algoritma konsensus yang tepat sesuai dengan persyaratan sistem (keandalan node, *throughput* yang diperlukan, latensi) adalah kunci dalam membangun sistem terdistribusi yang tangguh.

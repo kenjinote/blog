@@ -210,7 +210,7 @@ let result = divide(10.0, 2.0).and_then(|res| divide(res, 2.0));
 
 Not all GoF patterns have died out. Patterns active at architectural boundaries remain extremely important today.
 
-1. **Facade**: The concept of providing a simple interface to a complex subsystem has scaled up as an API Gateway (BFF: Backend for Frontend) in microservices architecture.
+1. **Facade**: The concept of providing a simple interface to a complex subsystem has scaled up as an [API Gateway](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/) ([BFF](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/): [Backend for Frontend](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/)) in microservices architecture.
 2. **Adapter**: It is the keystone for keeping the system loosely coupled, acting as an integration with external systems or as "ports and adapters" in clean and hexagonal architectures.
 3. **Decorator**: In Python and TypeScript, it has been sublimated into a language feature as annotation-based metaprogramming `@Decorator`.
 

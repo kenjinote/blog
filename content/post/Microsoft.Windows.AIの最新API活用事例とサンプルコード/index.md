@@ -51,7 +51,7 @@ P_{\text{peak}} = f \times N_{\text{cores}} \times N_{\text{MACs/core}} \times 2
 $$
 
 ここで、
-- $f$ はNPUのクロック周波数（Hz）
+- $f$ はNPUのク[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)周波数（Hz）
 - $N_{\text{cores}}$ はNPU内のコア数
 - $N_{\text{MACs/core}}$ は1コアあたりのMAC（Multiply-Accumulate）ユニット数
 - 最後の $2$ は、1回のMAC演算が乗算と加算の2つのオペレーション（FLOPs/OPs）としてカウントされるためです。
@@ -92,7 +92,7 @@ LPDDR5x-8533メモリ（$f_{\text{mem}} = 8533 \text{ MT/s}$）、128ビット�
 
 Windows Copilot Runtimeには、Microsoftが開発した高効率な小規模言語モデル「Phi-Silica」がOS標準コンポーネントとして組み込まれています。これにより、GB単位のモデルをネットワークからダウンロードすることなく、[オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)環境で高度な自然言語処理（文章要約、コード生成、チャットボット）が可能になります。
 
-以下は、`Microsoft.Windows.AI.Generative` 名前空間を使用して、C#でチャットAIを構築する高度なサンプルコードです。ストリーミングレスポンスに対応し、UIスレッドをブロックせずにリアルタイムにテキストを生成します。
+以下は、`Microsoft.Windows.AI.Generative` 名前空間を使用して、C#でチャットAIを構築する高度なサンプルコードです。ストリーミングレスポンスに対応し、UIスレッドをブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)せずにリアルタイムにテキストを生成します。
 
 ```csharp
 using System;
@@ -337,7 +337,7 @@ sequenceDiagram
     Note over ORT,NPU: "完了するまでこのループを高速で繰り返す"
 ```
 
-このシーケンス図は、UIスレッドを一切ブロックすることなく、最下層のNPUハードウェアからアプリケーションのプレゼンテーション層まで、データが流れるようにストリーミングされる[非同期処理](https://kenji.blog/p/event-driven-architecture-async/)の美しさを示しています。
+このシーケンス図は、UIスレッドを一切ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)することなく、最下層のNPUハードウェアからアプリケーションのプレゼンテーション層まで、データが流れるようにストリーミングされる[非同期処理](https://kenji.blog/p/event-driven-architecture-async/)の美しさを示しています。
 
 ## 8. 将来の展望とWindows AIの進化
 

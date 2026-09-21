@@ -209,7 +209,7 @@ Com essas poucas linhas de código, você pode processar instantaneamente pagame
 
 ---
 
-# 6. Evitando o Lock-in de Infraestrutura e Portabilidade
+# 6. Evitando o [Lock](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/)-in de Infraestrutura e Portabilidade
 
 Em uma estratégia que faz uso intensivo de BaaS e serviços gerenciados, o risco de "vendor lock-in" (ficar preso a um fornecedor) é sempre motivo de debate. Por exemplo, se você se tornar muito dependente do Firestore do Firebase, será extremamente difícil migrar para um RDB (Banco de Dados Relacional) mais tarde.
 

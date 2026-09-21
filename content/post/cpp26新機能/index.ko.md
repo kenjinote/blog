@@ -328,7 +328,7 @@ int main() {
 
 ## 6.2 Hazard Pointers 와 RCU (Read-Copy Update)
 
-락 프리(Lock-free) 데이터 구조의 구현을 뒷받침하는 표준 기능으로서 **Hazard Pointers** (`std::hazard_pointer`) 와 **RCU** (`std::rcu`) 가 표준화되었습니다. 이로써 C++에서 고성능 동시성 데이터 구조를 구현할 때의 진입 장벽이 크게 낮아졌습니다.
+락 프리([Lock](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/)-free) 데이터 구조의 구현을 뒷받침하는 표준 기능으로서 **Hazard Pointers** (`std::hazard_pointer`) 와 **RCU** (`std::rcu`) 가 표준화되었습니다. 이로써 C++에서 고성능 동시성 데이터 구조를 구현할 때의 진입 장벽이 크게 낮아졌습니다.
 
 RCU는 특히 읽기(Read)가 압도적으로 많은 워크로드에서 캐시 라인의 경합을 배제하고 선형적인 확장성을 실현합니다. 수학적으로 표현하면 스레드 수 $T$ 에 대해 읽기 처리량(Throughput)은 이상적인 $O(T)$ 의 증가를 보입니다.
 

@@ -37,7 +37,7 @@ TinyLLaMAは、Meta社が開発したLLaMA（Large Language Model Meta AI）ア�
 4. **Grouped Query Attention (GQA):**
    Multi-Head Attention (MHA) と Multi-Query Attention (MQA) の中間的なアプローチであり、キーとバリューのヘッドをグループ化することで、メモリ帯域幅を節約し推論速度を劇的に向上させます。
 
-以下のMermaid図は、TinyLLaMAの全体的なデータフローとTransformerブロックの構造を示しています。
+以下のMermaid図は、TinyLLaMAの全体的なデータフローとTransformerブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の構造を示しています。
 
 ```mermaid
 graph TD

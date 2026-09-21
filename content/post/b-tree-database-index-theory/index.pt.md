@@ -73,7 +73,7 @@ Isso fundamenta matematicamente que a **Árvore B** é extremamente eficiente pa
 
 ## 4. O Padrão de Banco de Dados: Evolução para a Árvore B+
 
-Nos RDBMS reais (como o InnoDB do MySQL e o PostgreSQL), a **Árvore B+** (B+Tree), uma versão melhorada da Árvore B, é utilizada.
+Nos [RDBMS](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/) reais (como o InnoDB do MySQL e o PostgreSQL), a **Árvore B+** (B+Tree), uma versão melhorada da Árvore B, é utilizada.
 
 ### 4.1 Diferenças entre a Árvore B e a Árvore B+
 

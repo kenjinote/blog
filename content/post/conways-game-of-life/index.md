@@ -70,7 +70,7 @@ flowchart TD
 
 ### 3.1 固定物体 (Still Lifes)
 世代が進んでも状態が全く変化しないパターンです。
-- **ブロック** (Block): 2x2の生きたセル。
+- **ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)** (Block): 2x2の生きたセル。
 - **蜂の巣** (Beehive): 6つのセルで構成される六角形。
 
 ### 3.2 振動子 (Oscillators)

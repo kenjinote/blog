@@ -40,7 +40,7 @@ These files are mapped into the kernel paged pool memory by the kernel's "Config
 
 It is worth noting that not all registry data exists on the disk. For example, the `HARDWARE` hive is volatile and is never saved to a file on the disk. It is dynamically rebuilt in memory every time the OS boots and the Plug and Play (PnP) manager detects hardware.
 
-Also, recent versions of Windows implement transaction logging to enhance registry reliability. Changes to hive files are not directly written to the data files, but are first recorded in transaction logs (`.log1`, `.log2`). This prevents data corruption during unexpected power losses or system crashes while writing, ensuring database integrity in a form close to ACID properties.
+Also, recent versions of Windows implement transaction logging to enhance registry reliability. Changes to hive files are not directly written to the data files, but are first recorded in transaction logs (`.log1`, `.log2`). This prevents data corruption during unexpected power losses or system crashes while writing, ensuring database integrity in a form close to [ACID](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) properties.
 
 ## 3. Hierarchical Structure of Registry Keys and Values
 
@@ -408,7 +408,7 @@ Finally, we summarize the important design principles and best practices for han
 
 1. **Strictly Enforce the Principle of Least Privilege**: Application and script settings should be stored under the `Software` key within `HKCU` (Current User) whenever possible. Writing to `HKLM` requires an administrator privilege escalation via UAC, which expands the security attack surface and degrades user experience.
 2. **Enable Auditing**: For keys that are extremely critical to security (e.g., the `Run` key responsible for automatic startup, or service configuration keys), configure a SACL (System Access Control List) to record (audit) who modified or deleted values and when, in the Windows Event Viewer's "Security Log".
-3. **Address the Deprecation of Transaction Features**: The registry transaction feature (TxR) utilizing the "Kernel Transaction Manager (KTM)", introduced back in Windows Vista, has been deprecated since Windows 10. The application side must implement its own backup and rollback mechanisms (such as reading the original value and keeping it in memory before making changes).
+3. **Address the Deprecation of [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) Features**: The registry transaction feature (TxR) utilizing the "Kernel Transaction Manager (KTM)", introduced back in Windows Vista, has been deprecated since Windows 10. The application side must implement its own backup and rollback mechanisms (such as reading the original value and keeping it in memory before making changes).
 4. **Beware of Conflicts with Group Policy (GPO)**: The `HKLM\SOFTWARE\Policies` and `HKCU\Software\Policies` areas are to be centrally managed by Active Directory Group Policies. Even if you modify these keys directly from a script, they will be forcefully overwritten by the Domain Controller's settings during the next background Group Policy update cycle (typically every 90 to 120 minutes), causing your settings to not persist.
 
 ## Conclusion

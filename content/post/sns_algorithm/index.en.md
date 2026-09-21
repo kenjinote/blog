@@ -68,7 +68,7 @@ $$
 $$
 
 **Impact on Tech Selection:**
-Giant models like DLRM capture even extremely subtle signals (for example, a slight increase in retention time for "posts with videos" or "posts containing specific buzzwords") and reflect them in the prediction score. As a result, technical information that includes "radical titles (e.g., 'React is dead', 'The End of Microservices')" or "visually flashy demos" tends to be algorithmically favored.
+Giant models like DLRM capture even extremely subtle signals (for example, a slight increase in retention time for "posts with videos" or "posts containing specific buzzwords") and reflect them in the prediction score. As a result, technical information that includes "radical titles (e.g., 'React is dead', 'The End of [[Microservice](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/)')" or "visually flashy demos" tends to be algorithmically favored.
 
 ### 2.3 Reinforcement Learning and Multi-Armed Bandits
 
@@ -165,7 +165,7 @@ By enforcing this process, "Hype" can be transformed into "Engineering."
 
 There is a famous mantra in the tech community: **"Choose Boring Technology."** This is a teaching that Innovation Tokens (the limited resources an organization can spend on new, unknown technologies) should not be wasted on selecting infrastructure or frameworks that are not directly tied to the core value of the business.
 
-SNS algorithms prefer "novelty." However, to build a robust system that can withstand real-world operations, what is needed is "boring" technology (like PostgreSQL, Redis, or standard [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)s) that has over 10 years of operational track record and yields millions of Google search hits for disaster recovery procedures.
+SNS algorithms prefer "novelty." However, to build a robust system that can withstand real-world operations, what is needed is "boring" technology (like PostgreSQL, [Redis](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/), or standard [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)s) that has over 10 years of operational track record and yields millions of Google search hits for disaster recovery procedures.
 
 ---
 

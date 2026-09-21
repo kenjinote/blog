@@ -126,7 +126,7 @@ int main() {
 
 ## 5. 数据库与持久化之墙：关系代数的缺失
 
-在现代应用程序中，数据的保存与检索（持久化）是不可避免的主题。然而，学校教育多半停留在程序执行结束后即消失的“内存上的数据处理”。关系型数据库（RDBMS）与SQL背后的数学理论，即由埃德加·F·科德博士提出的“关系代数（Relational Algebra）”，却鲜少被教授。
+在现代应用程序中，数据的保存与检索（持久化）是不可避免的主题。然而，学校教育多半停留在程序执行结束后即消失的“内存上的数据处理”。关系型数据库（[RDBMS](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)）与SQL背后的数学理论，即由埃德加·F·科德博士提出的“关系代数（Relational Algebra）”，却鲜少被教授。
 
 数据库的运算由基于集合论的以下基本运算定义：
 
@@ -134,7 +134,7 @@ int main() {
 - 投影（Projection, $\pi$）: 提取特定属性（列）
 - 连接（Join, $\bowtie$）: 多个关系的有条件交集
 
-此外，为了从海量记录中瞬间检索目标数据而学习“[B-Tree](https://kenji.blog/zh-cn/p/b-tree-database-index-theory/)（B树）索引”的结构，是数据结构应用的绝佳实践。B-Tree在确保将磁盘I/O次数降至最低的同时，保证了 $O(\log N)$ 的搜索速度。如果不了解事务的ACID特性（原子性、一致性、隔离性、持久性），就无法构建稳健的系统。
+此外，为了从海量记录中瞬间检索目标数据而学习“[B-Tree](https://kenji.blog/zh-cn/p/b-tree-database-index-theory/)（B树）索引”的结构，是数据结构应用的绝佳实践。B-Tree在确保将磁盘I/O次数降至最低的同时，保证了 $O(\log N)$ 的搜索速度。如果不了解事务的[ACID](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)特性（原子性、一致性、隔离性、持久性），就无法构建稳健的系统。
 
 ## 6. 安全与密码学理论：因式分解的困难性支撑着社会基础设施
 

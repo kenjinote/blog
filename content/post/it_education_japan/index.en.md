@@ -126,7 +126,7 @@ Knowledge of pointers (direct references to memory addresses), data placement to
 
 ## 5. The Wall of Databases and Persistence: The Absence of Relational Algebra
 
-In modern applications, data saving and retrieval (persistence) is an unavoidable theme. However, much of school education remains stuck in "data processing in memory," which disappears once the program finishes executing. The mathematical theory behind Relational Databases (RDBMS) and SQL, namely the "Relational Algebra" proposed by Dr. Edgar F. Codd, is rarely taught.
+In modern applications, data saving and retrieval (persistence) is an unavoidable theme. However, much of school education remains stuck in "data processing in memory," which disappears once the program finishes executing. The mathematical theory behind Relational Databases ([RDBMS](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)) and SQL, namely the "Relational Algebra" proposed by Dr. Edgar F. Codd, is rarely taught.
 
 Database operations are defined by the following basic operations based on set theory:
 
@@ -134,7 +134,7 @@ Database operations are defined by the following basic operations based on set t
 - Projection ($\pi$): Extracting specific attributes (columns)
 - Join ($\bowtie$): Conditional intersection of multiple relations
 
-Furthermore, learning the structure of the "[B-Tree](https://kenji.blog/en/p/b-tree-database-index-theory/) index" to instantly search for the desired data from a vast number of records is the best practical application of data structures. The B-Tree minimizes disk I/O operations while guaranteeing a search speed of $O(\log N)$. Without knowing the ACID properties (Atomicity, Consistency, Isolation, Durability) of a transaction, it is impossible to build robust systems.
+Furthermore, learning the structure of the "[B-Tree](https://kenji.blog/en/p/b-tree-database-index-theory/) index" to instantly search for the desired data from a vast number of records is the best practical application of data structures. The B-Tree minimizes disk I/O operations while guaranteeing a search speed of $O(\log N)$. Without knowing the [ACID](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) properties (Atomicity, [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability) of a transaction, it is impossible to build robust systems.
 
 ## 6. Security and [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: The Social Infrastructure Supported by the Difficulty of Prime Factorization
 

@@ -116,25 +116,25 @@ flowchart TD
 
 ## 4. 人類專屬技能③：分散式系統的架構設計與擴展
 
-現代軟體已經從運行於單一伺服器上的單體架構 (Monolith)，進化到雲端原生的微服務架構 (Microservices Architecture) 及事件驅動架構 ([Event-Driven](https://kenji.blog/zh-tw/p/event-driven-architecture-async/) Architecture)。設計這種分散式系統，對於只能做到局部邏輯最佳化的 AI 來說，是一個非常困難的領域。
+現代軟體已經從運行於單一伺服器上的單體架構 (Monolith)，進化到雲端原生的微服務架構 ([[Microservice](https://kenji.blog/zh-tw/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/zh-tw/p/microservices-architecture-bff-api-gateway/) Architecture) 及事件驅動架構 ([Event-Driven](https://kenji.blog/zh-tw/p/event-driven-architecture-async/) Architecture)。設計這種分散式系統，對於只能做到局部邏輯最佳化的 AI 來說，是一個非常困難的領域。
 
 ### 4.1 CAP 定理與取捨 (Trade-off) 判斷
 
 在設計分散式系統時，工程師總是會面臨「CAP 定理」。CAP 定理是指，分散式系統在以下三個特性中，最多只能同時滿足兩個：
 
-- **Consistency (一致性)**: 所有節點在同一時間是否能看到相同的資料
-- **Availability (可用性)**: 即使部分節點發生故障，系統是否仍能持續回應
+- **[Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/) (一致性)**: 所有節點在同一時間是否能看到相同的資料
+- **[Availability](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/) (可用性)**: 即使部分節點發生故障，系統是否仍能持續回應
 - **[Partition Tolerance](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems/) (分區容忍性)**: 即使發生網路分區（斷線），系統是否仍能持續運作
 
-$$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
+$$ P(\text{[Availability](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)} \cup \text{[Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)}) | \text{PartitionTolerance} $$
 
 在實際的網路中，分區 (Partition) 是不可避免的，因此工程師必須做出與商業需求直接相關的嚴格取捨判斷，例如「這個支付系統優先考慮 Consistency，發生故障時寧可停止服務 (CP)」或是「這個社群網站的時間軸優先考慮 Availability，容許暫時的資料不一致 (AP)」。
 
 AI 雖然能寫出「優先考慮 C 的程式碼」或「優先考慮 A 的程式碼」，但它無法自主做出「應該優先考慮哪一個」這種包含商業風險的決定。
 
-### 4.2 非同步通訊與最終一致性 (Eventual Consistency)
+### 4.2 非同步通訊與最終一致性 ([Eventual Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/))
 
-當系統規模擴大時，服務間的整合會從基於 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 的同步通訊，轉移到使用訊息佇列 (Message Queue，如 Kafka, RabbitMQ) 的非同步通訊。此時，資料一致性就會從即時一致性變為「最終一致性 (Eventual Consistency)」。
+當系統規模擴大時，服務間的整合會從基於 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 的同步通訊，轉移到使用訊息佇列 ([Message Queue](https://kenji.blog/zh-tw/p/event-driven-architecture-message-queue-kafka-rabbitmq/)，如 [Kafka](https://kenji.blog/zh-tw/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/zh-tw/p/event-driven-architecture-message-queue-kafka-rabbitmq/)) 的非同步通訊。此時，資料一致性就會從即時一致性變為「最終一致性 (Eventual [Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/))」。
 應該在什麼時機導入 Saga 模式或 [CQRS](https://kenji.blog/zh-tw/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) 等進階架構模式？制定這些複雜的決策與描繪系統整體的藍圖，正是資深工程師的真本領。
 
 ```mermaid

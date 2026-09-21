@@ -84,7 +84,7 @@ Der **kube-apiserver** ist das Frontend der Kubernetes Control Plane. Er legt di
 
 ### 3.2. etcd
 
-**etcd** ist ein konsistenter, hochverfügbarer Key-Value-Store zur Speicherung aller Clusterdaten von Kubernetes. Der Status des Clusters, Konfigurationsinformationen, Secrets und mehr werden in etcd gespeichert. Da der Verlust von etcd-Daten die Wiederherstellung des Clusters erschwert, sind regelmäßige Backups äußerst wichtig.
+**etcd** ist ein konsistenter, hochverfügbarer [Key-Value](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/)-Store zur Speicherung aller Clusterdaten von Kubernetes. Der Status des Clusters, Konfigurationsinformationen, Secrets und mehr werden in etcd gespeichert. Da der Verlust von etcd-Daten die Wiederherstellung des Clusters erschwert, sind regelmäßige Backups äußerst wichtig.
 
 ### 3.3. kube-scheduler
 
@@ -203,7 +203,7 @@ Die Lösung für dieses Problem ist der **Service**.
 
 ### 7.1. Die Rolle eines Services
 
-Ein Service ist eine Abstraktion, die einen logischen Satz von Pods und eine Richtlinie für den Zugriff auf diese (manchmal auch als Microservice bezeichnet) definiert. Einem Service wird eine feste IP-Adresse (ClusterIP) zugewiesen, und er führt einen Lastausgleich (Load Balancing) zu den dahinter liegenden Pods durch.
+Ein Service ist eine Abstraktion, die einen logischen Satz von Pods und eine Richtlinie für den Zugriff auf diese (manchmal auch als [Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/) bezeichnet) definiert. Einem Service wird eine feste IP-Adresse (ClusterIP) zugewiesen, und er führt einen Lastausgleich (Load Balancing) zu den dahinter liegenden Pods durch.
 
 ### 7.2. Service-Typen
 

@@ -16,7 +16,7 @@ Dalam pengembangan AI modern, Python adalah standar de facto. Berkat framework t
 
 Lalu, mengapa kita perlu repot-repot menyingkirkan Python dan membuat mesin inferensi AI menggunakan C++ saja? Ada beberapa alasan kuat untuk itu.
 
-1. **Performa Ekstrem dan Latensi Rendah**: Kita dapat sepenuhnya menghilangkan overhead dari GIL (Global Interpreter Lock) dan pengetikan dinamis (dynamic typing) milik Python. Terutama dalam sistem yang membutuhkan pemrosesan real-time, keterlambatan dalam skala milidetik bisa sangat fatal.
+1. **Performa Ekstrem dan Latensi Rendah**: Kita dapat sepenuhnya menghilangkan overhead dari GIL (Global Interpreter [Lock](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/)) dan pengetikan dinamis (dynamic typing) milik Python. Terutama dalam sistem yang membutuhkan pemrosesan real-time, keterlambatan dalam skala milidetik bisa sangat fatal.
 2. **Kemudahan Deployment**: Membangun lingkungan Python (kumpulan library raksasa dan neraka dependensi) di lingkungan pengguna akhir (end-user) sangatlah sulit. Dengan C++, kita hanya perlu mendistribusikan sebuah binari eksekusi tunggal yang ditautkan secara statis (file `.exe` atau binari ELF).
 3. **Dukungan untuk Perangkat Edge**: Di lingkungan dengan sumber daya yang sangat terbatas seperti smartphone, perangkat tertanam (embedded devices), atau Raspberry Pi, tidak ada ruang untuk menjalankan runtime Python yang memakan memori hingga beberapa gigabyte.
 4. **Kontrol Perangkat Keras Secara Langsung**: Kontrol tingkat rendah seperti penentuan waktu alokasi memori, penggunaan instruksi SIMD secara eksplisit, dan pengoptimalan transfer memori dengan GPU dimungkinkan dengan C++.
@@ -352,7 +352,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-Selain itu, dalam generasi token tipe Autoregresif (Autoregressive), kita perlu menyimpan hasil komputasi (Key dan Value) dari token-token sebelumnya. Hal ini disebut "**Cache KV (Key-Value Cache)**".
+Selain itu, dalam generasi token tipe Autoregresif (Autoregressive), kita perlu menyimpan hasil komputasi (Key dan Value) dari token-token sebelumnya. Hal ini disebut "**Cache KV ([Key-Value](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)**".
 
 ```mermaid
 graph TD

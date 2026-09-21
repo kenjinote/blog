@@ -45,7 +45,7 @@ graph TD
 
 VSCodeの本体は、C++のテンプレートメタプログラミングや[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の複雑なライフタイム指定子を理解しているわけではありません。エディタの役割はソースコードの表示とユーザーからの入力の受付に専念し、コードの意味解析（Semantic Analysis）、型推論（Type Inference）、エラーチェックといった計算コストの高い処理は、背後で動く「言語サーバー」にJSON-RPCを通じて委譲されます。
 
-これにより、エディタのUIスレッドをブロックすることなく、数百万行の大規模コードベースであってもスムーズなタイピングと高速なレスポンスを実現しています。
+これにより、エディタのUIスレッドをブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)することなく、数百万行の大規模コードベースであってもスムーズなタイピングと高速なレスポンスを実現しています。
 
 ---
 
@@ -170,7 +170,7 @@ VSCodeでデバッグを開始するための `.vscode/launch.json` の設定で
     ]
 }
 ```
-[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の構成ブロックに注目してください。`CodeLLDB`は `cargo` オプションをネイティブにサポートしているため、コンパイル後の複雑なハッシュ値が含まれたバイナリパスを直接指定する必要がありません。エディタが自動的に `cargo build` を実行し、生成された最新の実行ファイルを捕捉してデバッガをアタッチしてくれます。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の構成ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)に注目してください。`CodeLLDB`は `cargo` オプションをネイティブにサポートしているため、コンパイル後の複雑なハッシュ値が含まれたバイナリパスを直接指定する必要がありません。エディタが自動的に `cargo build` を実行し、生成された最新の実行ファイルを捕捉してデバッガをアタッチしてくれます。
 
 ---
 
@@ -226,7 +226,7 @@ reqwest = "0.11" # <- アップデートが必要な場合はワンクリック�
 
 **`GitLens`** は、現在のカーソル位置にある行の `git blame` 情報をエディタ上にアノテーションとして薄く表示します。また、ファイル全体のコミット履歴をグラフィカルに探索する機能や、行単位での履歴（Line History）を辿る機能を備えています。
 
-[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の `unsafe` ブロックやC++のトリッキーなキャスト処理に遭遇した際、そのコードがマージされた当時のPull Requestや詳細なコミットメッセージを即座に参照できることは、リバースエンジニアリングにおける強力な武器となります。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の `unsafe` ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)やC++のトリッキーなキャスト処理に遭遇した際、そのコードがマージされた当時のPull Requestや詳細なコミットメッセージを即座に参照できることは、リバースエンジニアリングにおける強力な武器となります。
 
 ---
 

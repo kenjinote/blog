@@ -299,8 +299,8 @@ El enrutamiento es un elemento clave para decidir en qué nivel controlar la nav
   * `/checkout/*` -> Delega a la aplicación del equipo de pagos.
   Dentro de cada micro frontend, puede tener un enrutamiento interno adicional.
 
-* **Enrutamiento en la capa BFF (Backend For Frontend)** :
-  Un método en el que se evalúa la ruta a nivel de la infraestructura del servidor (ej: Nginx o API Gateway), y se sirve desde el principio el HTML del micro frontend adecuado. Ocurre una recarga completa en cada transición de página, pero el nivel de separación arquitectónica es el más alto.
+* **Enrutamiento en la capa [BFF](https://kenji.blog/es/p/microservices-architecture-bff-api-gateway/) (Backend For Frontend)** :
+  Un método en el que se evalúa la ruta a nivel de la infraestructura del servidor (ej: Nginx o [API Gateway](https://kenji.blog/es/p/microservices-architecture-bff-api-gateway/)), y se sirve desde el principio el HTML del micro frontend adecuado. Ocurre una recarga completa en cada transición de página, pero el nivel de separación arquitectónica es el más alto.
 
 ## 7. Impacto organizacional y autonomía del equipo
 

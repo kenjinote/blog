@@ -67,7 +67,7 @@ API経由でコード生成やJSONデータ抽出（Structured Output）を行�
 
 ## 2. プロンプトの構造アーキテクチャ：System Prompt vs User Prompt
 
-OpenAIのAPI（GPT-4など）やAnthropicのAPI（Claudeなど）を利用してAIアプリケーションを構築する際、プロンプトは単一のテキストブロックではなく、メッセージの配列として構造化されます。その中で最も重要なのが「System Prompt（システムプロンプト）」と「User Prompt（ユーザープロンプト）」の分離です。
+OpenAIのAPI（GPT-4など）やAnthropicのAPI（Claudeなど）を利用してAIアプリケーションを構築する際、プロンプトは単一のテキストブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ではなく、メッセージの配列として構造化されます。その中で最も重要なのが「System Prompt（システムプロンプト）」と「User Prompt（ユーザープロンプト）」の分離です。
 
 ### 2.1 システムプロンプト：グローバルな制約とペルソナの定義
 

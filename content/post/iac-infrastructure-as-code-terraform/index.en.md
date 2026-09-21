@@ -40,7 +40,7 @@ By codifying the infrastructure, excellent practices cultivated in software deve
 1. **Version control**: You can manage the change history of the infrastructure using a VCS (Version Control System) such as Git.
 2. **Review process**: Code reviews via Pull Requests (PRs) become possible, ensuring quality before making changes.
 3. **Automation and Continuous Integration**: By integrating it into a [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) pipeline, you can automate testing and deployment.
-4. **Consistency and Idempotency**: It is guaranteed that no matter how many times it is executed, the result (state) will always be the same.
+4. **[Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/) and Idempotency**: It is guaranteed that no matter how many times it is executed, the result (state) will always be the same.
 
 ## 1.3. Difference Between Imperative and Declarative
 
@@ -184,7 +184,7 @@ The reasons are as follows:
 2. **Performance**: In a large-scale infrastructure, fetching the state of all resources via API every time would hit timeouts or API rate limits.
 3. **Resource tracking**: If you delete a resource definition from the code, Terraform identifies "a resource that exists in the State file but not in the code" and executes a delete action. Without State, resources deleted from the code would simply be "abandoned".
 
-## 5.2. Remote State and Lock Management
+## 5.2. Remote State and [Lock](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) Management
 
 In team development, placing `terraform.tfstate` on a local machine is an **absolute anti-pattern**. If multiple people run `terraform apply` at the same time, the State will conflict, and the infrastructure will be corrupted.
 
@@ -328,7 +328,7 @@ You should integrate static analysis tools into your [CI/CD](https://kenji.blog/
 # 9. A Mathematical Approach to Reliability and Cost Modeling
 
 When designing infrastructure using IaC, it is important to evaluate the balance between reliability and cost.
-For example, the availability of a system in a multi-AZ (Availability Zone) configuration can be represented by a mathematical model.
+For example, the availability of a system in a multi-AZ ([Availability](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/) Zone) configuration can be represented by a mathematical model.
 
 Let the reliability of a single component (AZ) be $R_1$.
 If resources are placed in 2 AZs (redundancy), and the entire system is considered operational if either one is running, the reliability of the entire system $R_{total}$ is expressed by the following formula.

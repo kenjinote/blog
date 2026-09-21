@@ -122,19 +122,19 @@ El software moderno ha evolucionado desde monolitos que se ejecutan en un solo s
 
 Al diseñar sistemas distribuidos, los ingenieros siempre enfrentan el "Teorema CAP". El teorema CAP es el principio de que un sistema distribuido solo puede satisfacer simultáneamente dos de las tres propiedades siguientes:
 
-- **Consistency (Consistencia)**: ¿Se ven los mismos datos al mismo tiempo en todos los nodos?
-- **Availability (Disponibilidad)**: ¿Sigue respondiendo el sistema incluso si fallan algunos de los nodos?
+- **[Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/) (Consistencia)**: ¿Se ven los mismos datos al mismo tiempo en todos los nodos?
+- **[Availability](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/) (Disponibilidad)**: ¿Sigue respondiendo el sistema incluso si fallan algunos de los nodos?
 - **[Partition Tolerance](https://kenji.blog/es/p/cap-theorem-distributed-systems/) (Tolerancia a particiones)**: ¿Continúa funcionando el sistema incluso si ocurre una división en la red?
 
-$$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
+$$ P(\text{[Availability](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/)} \cup \text{[Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/)}) | \text{PartitionTolerance} $$
 
 Dado que las particiones (Partition) de red son inevitables en redes reales, los ingenieros deben tomar decisiones de compensación severas que están directamente vinculadas a los requisitos del negocio, como "Este sistema de pago prioriza la Consistencia y en caso de fallo detiene el servicio (CP)" o "La línea de tiempo de esta red social prioriza la Disponibilidad y tolera inconsistencias temporales en los datos (AP)".
 
 La IA puede escribir "código que prioriza C" o "código que prioriza A", pero no puede tomar de manera autónoma la decisión de "cuál priorizar" que incluye el riesgo empresarial.
 
-### 4.2 Comunicación asíncrona y Consistencia Eventual (Eventual Consistency)
+### 4.2 Comunicación asíncrona y Consistencia Eventual ([Eventual Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/))
 
-A medida que los sistemas crecen, la coordinación entre servicios pasa de la comunicación síncrona a través de [REST API](https://kenji.blog/es/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/es/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) a la comunicación asíncrona utilizando colas de mensajes (Kafka, RabbitMQ, etc.). La consistencia de datos aquí cambia de consistencia inmediata a "consistencia eventual (Eventual Consistency)".
+A medida que los sistemas crecen, la coordinación entre servicios pasa de la comunicación síncrona a través de [REST API](https://kenji.blog/es/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/es/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) a la comunicación asíncrona utilizando colas de mensajes ([Kafka](https://kenji.blog/es/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/es/p/event-driven-architecture-message-queue-kafka-rabbitmq/), etc.). La consistencia de datos aquí cambia de consistencia inmediata a "consistencia eventual (Eventual [Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/))".
 ¿En qué momento se deben introducir patrones arquitectónicos avanzados como el patrón Saga o [CQRS](https://kenji.blog/es/p/event-driven-architecture-async/) (Command Query Responsibility Segregation)? Tomar estas decisiones complejas y dibujar el plano arquitectónico general del sistema es la verdadera esencia de un ingeniero senior.
 
 ```mermaid

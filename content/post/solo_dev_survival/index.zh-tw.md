@@ -211,7 +211,7 @@ export async function POST(req: Request) {
 
 # 6. 避免基礎設施綁定與保持可攜性
 
-在大量依賴BaaS和託管服務的戰略中，經常被討論的風險就是「供應商綁定（Vendor Lock-in）」。例如，如果過度依賴 Firebase 的 Firestore，日後想要轉移到 RDB（關聯式資料庫）將會非常困難。
+在大量依賴BaaS和託管服務的戰略中，經常被討論的風險就是「供應商綁定（Vendor [Lock](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)-in）」。例如，如果過度依賴 Firebase 的 Firestore，日後想要轉移到 RDB（關聯式資料庫）將會非常困難。
 
 作為生存戰略的最佳解答是， **「雖然會被基礎設施綁定，但確保資料和業務邏輯保持可攜性」** 的做法。
 

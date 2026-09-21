@@ -51,7 +51,7 @@ $$ P(w_t | w_{1:t-1}) = \text{softmax}(W \cdot h_t) $$
 
 ### 1.3 実世界グラウンディング（Grounding）の欠如
 
-AIには「物理的な制約」や「実ビジネスの制約」を肌感覚で理解する能力（Grounding）がありません。例えば、「決済処理のレイテンシが100ms遅れると、コンバージョン率が5%低下する」というビジネスの現実や、「このレガシーDBは深夜2時にバッチ処理が走るため、その時間帯のトランザクションはタイムアウトしやすい」といった環境特有の暗黙知を、明示的にテキストとして与えられない限り考慮できません。
+AIには「物理的な制約」や「実ビジネスの制約」を肌感覚で理解する能力（Grounding）がありません。例えば、「決済処理のレイテンシが100ms遅れると、コンバージョン率が5%低下する」というビジネスの現実や、「このレガシーDBは深夜2時にバッチ処理が走るため、その時間帯の[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)はタイムアウトしやすい」といった環境特有の暗黙知を、明示的にテキストとして与えられない限り考慮できません。
 
 これらの技術的・構造的な限界を踏まえると、AIは「明確に定義された狭いスコープ（関数、クラス、モジュール）のコードを高速に生成するツール」としては極めて優秀ですが、「曖昧な要件からシステム全体を設計し、現実世界の制約と整合させる」ことは人間にしかできない領域であることがわかります。
 
@@ -116,25 +116,25 @@ AIに「システム全体を作って」と指示するのではなく、人間
 
 ## 4. 人間ならではのスキル③：[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)のアーキテクチャ設計とスケール
 
-現代のソフトウェアは、単一のサーバーで動くモノリスから、クラウドネイティブなマイクロサービスアーキテクチャ、[イベント駆動](https://kenji.blog/p/event-driven-architecture-async/)アーキテクチャへと進化しています。このような分散システムの設計は、局所的なロジックの最適化しかできないAIにとっては非常に困難な領域です。
+現代のソフトウェアは、単一のサーバーで動くモノリスから、クラウドネイティブな[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)アーキテクチャ、[イベント駆動](https://kenji.blog/p/event-driven-architecture-async/)アーキテクチャへと進化しています。このような[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)の設計は、局所的なロジックの最適化しかできないAIにとっては非常に困難な領域です。
 
 ### 4.1 [CAP定理](https://kenji.blog/p/cap-theorem-distributed-systems/)とトレードオフの判断
 
-分散システムを設計する際、エンジニアは常に「CAP定理」に直面します。CAP定理とは、分散システムは以下の3つの特性のうち、同時に2つしか満たすことができないという原則です。
+[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)を設計する際、エンジニアは常に「[CAP定理](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)」に直面します。CAP定理とは、分散システムは以下の3つの特性のうち、同時に2つしか満たすことができないという原則です。
 
-- **Consistency（一貫性）**: すべてのノードで同時に同じデータが見えるか
-- **Availability（可用性）**: ノードの一部に障害が起きてもシステムが応答し続けるか
+- **[Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)（一貫性）**: すべてのノードで同時に同じデータが見えるか
+- **[Availability](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)（可用性）**: ノードの一部に障害が起きてもシステムが応答し続けるか
 - **[Partition Tolerance](https://kenji.blog/p/cap-theorem-distributed-systems/)（分断耐性）**: ネットワークの分断が発生してもシステムが動作し続けるか
 
-$$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
+$$ P(\text{[Availability](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)} \cup \text{[Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)}) | \text{PartitionTolerance} $$
 
 実際のネットワークでは分断（Partition）は避けられないため、エンジニアは「この決済システムはConsistencyを優先して、障害時はサービスを停止する（CP）」「このSNSのタイムラインはAvailabilityを優先して、一時的なデータの不整合を許容する（AP）」といった、ビジネス要件に直結するシビアなトレードオフ判断を下さなければなりません。
 
 AIは「Cを優先するコード」や「Aを優先するコード」を書くことはできても、「どちらを優先すべきか」というビジネスリスクを含んだ決定を自律的に行うことはできません。
 
-### 4.2 非同期通信と結果整合性（Eventual Consistency）
+### 4.2 非同期通信と結果整合性（[Eventual Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）
 
-システムが大規模になると、サービス間の連携は[REST API](https://kenji.blog/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)による同期通信から、メッセージキュー（Kafka, RabbitMQなど）を用いた非同期通信へと移行します。ここでのデータ整合性は、即時整合性から「結果整合性（Eventual Consistency）」へと変化します。
+システムが大規模になると、サービス間の連携は[REST API](https://kenji.blog/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)による同期通信から、[メッセージキュー](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/)（[Kafka](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/)など）を用いた非同期通信へと移行します。ここでのデータ整合性は、即時整合性から「結果整合性（Eventual [Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）」へと変化します。
 Sagaパターンや[CQRS](https://kenji.blog/p/event-driven-architecture-async/)（Command Query Responsibility Segregation）といった高度なアーキテクチャパターンをどのタイミングで導入するべきか。これらの複雑な意思決定とシステム全体の青写真を描くことは、まさにシニアエンジニアの真骨頂です。
 
 ```mermaid
@@ -157,12 +157,12 @@ AIが生成したコードが多くなればなるほど、「誰も完全に理
 
 ### 5.1 オブザーバビリティ（可観測性）の設計
 
-システム障害を迅速に解決するためには、AIにエラーログを貼り付けるだけでは不十分です。マイクロサービス環境では、1つのリクエストが数十のサービスを横断します。
+システム障害を迅速に解決するためには、AIにエラーログを貼り付けるだけでは不十分です。[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)環境では、1つのリクエストが数十のサービスを横断します。
 エンジニアは、ログ（Logs）、メトリクス（Metrics）、トレース（Traces）の「オブザーバビリティの3本柱」をシステムに適切に組み込む必要があります。OpenTelemetryなどを活用し、分散トレーシングによって「どのサービスのどのデータベースクエリで遅延が発生しているのか」を特定できる基盤を作るのは人間の役割です。
 
 ### 5.2 環境依存のバグとカオスエンジニアリング
 
-「ローカル環境やテスト環境では再現しないが、本番環境のピークタイムにのみ発生するバグ」——例えば、メモリリーク、データベースのデッドロック、コネクションプールの枯渇、ネットワークのパケットロスといった問題は、ソースコードの静的解析だけでは決して見つかりません。
+「ローカル環境やテスト環境では再現しないが、本番環境のピークタイムにのみ発生するバグ」——例えば、メモリリーク、データベースのデッド[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)、コネクションプールの枯渇、ネットワークのパケットロスといった問題は、ソースコードの静的解析だけでは決して見つかりません。
 
 人間のエンジニアは、本番環境のメトリクスを睨みながら仮説を立て、スレッドダンプやヒープダンプを解析し、ボトルネックを特定します。AIはターミナルを叩いて本番サーバーのプロセスを直接プロファイリングすることはできません（セキュリティ要件としても許可すべきではありません）。
 システムが複雑化すればするほど、物理インフラ、ネットワークプロトコル、OSのカーネルチューニングといった「低レイヤーの知識」と「直感的な仮説推論能力」を持つエンジニアの価値は急上昇します。

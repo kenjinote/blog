@@ -69,7 +69,7 @@ int main() {
 ```
 
 **Penjelasan Rinci**:
-Keuntungan dari pendekatan ini adalah bahwa perhitungan matriks rotasi (4 perkalian dan 2 penjumlahan) dapat dienkapsulasi sebagai operasi bilangan kompleks. Selain itu, dalam ruang 3D, konsep perluasannya yaitu "Quaternion" digunakan. Dengan menggunakan quaternion, kita dapat menghindari masalah fatal yang disebut "Gimbal Lock" yang terjadi dengan sudut Euler, dan mewujudkan interpolasi linier bola yang halus (Slerp).
+Keuntungan dari pendekatan ini adalah bahwa perhitungan matriks rotasi (4 perkalian dan 2 penjumlahan) dapat dienkapsulasi sebagai operasi bilangan kompleks. Selain itu, dalam ruang 3D, konsep perluasannya yaitu "Quaternion" digunakan. Dengan menggunakan quaternion, kita dapat menghindari masalah fatal yang disebut "Gimbal [Lock](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/)" yang terjadi dengan sudut Euler, dan mewujudkan interpolasi linier bola yang halus (Slerp).
 
 ---
 

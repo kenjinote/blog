@@ -165,7 +165,7 @@ En rendant ce processus obligatoire, nous pouvons transformer la "Hype (l'enthou
 
 Dans le monde de la technologie, il existe un mantra célèbre : **"Choose Boring Technology" (Choisissez une technologie ennuyeuse)**. Cela nous enseigne que les jetons d'innovation (les ressources limitées qu'une organisation peut consacrer à de nouvelles technologies inconnues) ne doivent pas être gaspillés dans le choix d'infrastructures ou de frameworks qui ne sont pas directement liés à la valeur fondamentale de l'entreprise.
 
-Les algorithmes des réseaux sociaux aiment la "nouveauté". Cependant, ce qui est nécessaire pour construire un système robuste capable de résister à une utilisation en production, ce sont des technologies "ennuyeuses" (PostgreSQL, Redis, des API REST standards, etc.) qui ont plus de 10 ans de recul et dont les procédures de récupération en cas de panne génèrent des millions de résultats sur Google.
+Les algorithmes des réseaux sociaux aiment la "nouveauté". Cependant, ce qui est nécessaire pour construire un système robuste capable de résister à une utilisation en production, ce sont des technologies "ennuyeuses" (PostgreSQL, [Redis](https://kenji.blog/fr/p/nosql-database-selection-kvs-document-graph-wide-column/), des API REST standards, etc.) qui ont plus de 10 ans de recul et dont les procédures de récupération en cas de panne génèrent des millions de résultats sur Google.
 
 ---
 

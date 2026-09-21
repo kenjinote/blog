@@ -16,7 +16,7 @@ description: '昨今のAI開発はPythonが主流ですが、エッジデバイ�
 
 では、なぜわざわざPythonを排除し、C++単独でAI推論エンジンを作る必要があるのでしょうか？それにはいくつかの強力な理由があります。
 
-1. **極限のパフォーマンスと低レイテンシ**: PythonのGIL（Global Interpreter Lock）や動的型付けによるオーバーヘッドを完全に排除できます。特にリアルタイム性が求められるシステムでは、ミリ秒単位の遅延が命取りになります。
+1. **極限のパフォーマンスと低レイテンシ**: PythonのGIL（Global Interpreter [Lock](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)）や動的型付けによるオーバーヘッドを完全に排除できます。特にリアルタイム性が求められるシステムでは、ミリ秒単位の遅延が命取りになります。
 2. **デプロイの容易さ**: Python環境（巨大なライブラリ群、依存関係の地獄）をエンドユーザーの環境に構築するのは非常に困難です。C++であれば、静的リンクされた単一の実行バイナリ（`.exe`やELFバイナリ）を配布するだけで済みます。
 3. **エッジデバイスへの対応**: スマートフォンや組み込み機器、Raspberry Piのようなリソース制約の厳しい環境において、数ギガバイトものメモリを消費するPythonランタイムを動かす余裕はありません。
 4. **ハードウェアの直接制御**: メモリアロケーションのタイミング、SIMD命令の明示的な利用、GPUとのメモリ転送の最適化など、低レイヤーの制御がC++なら可能です。
@@ -202,9 +202,9 @@ $$
 ### 6.1 CPUでのキャッシュブロッキングとSIMD最適化
 
 CPUでGEMMを高速化するための基本戦略は以下の通りです。
-1. **ループタイリング（キャッシュブロッキング）**: L1/L2キャッシュに収まる小さなブロックに行列を分割して計算します。
+1. **ループタイリング（キャッシュブロッキング）**: L1/L2キャッシュに収まる小さなブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)に行列を分割して計算します。
 2. **データのパック**: メモリアクセスパターンが連続になるように、内部的にデータを並べ替えます。
-3. **SIMDの活用**: AVX-512における `_mm512_fmadd_ps` のようなFMA（Fused Multiply-Add）命令を使い、一度のクロックサイクルで多数の積和演算をこなします。
+3. **SIMDの活用**: AVX-512における `_mm512_fmadd_ps` のようなFMA（Fused Multiply-Add）命令を使い、一度のク[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)サイクルで多数の積和演算をこなします。
 
 C++とSIMD Intrinsicsを用いた、単純化されたベクトルの内積（Dot Product）の例を示します。
 
@@ -352,7 +352,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-また、自己回帰型（Autoregressive）のトークン生成では、過去のトークンの計算結果（KeyとValue）を保持しておく必要があります。これを「 **KVキャッシュ（Key-Value Cache）** 」と呼びます。
+また、自己回帰型（Autoregressive）のトークン生成では、過去のトークンの計算結果（KeyとValue）を保持しておく必要があります。これを「 **KVキャッシュ（[Key-Value](https://kenji.blog/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache）** 」と呼びます。
 
 ```mermaid
 graph TD

@@ -129,9 +129,9 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 ## 4. تنسيق حاويات متعددة باستخدام [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/) Compose
 
-في تطوير تطبيقات الويب الحديثة، من الشائع استخدام بنية الخدمات المصغرة (Microservices Architecture) حيث تتعاون مكونات متعددة مثل خوادم الويب، وقواعد البيانات، وخوادم التخزين المؤقت (Cache). نستخدم `docker-compose.yml` لإدارة هذه المكونات بشكل مركزي في البيئة المحلية.
+في تطوير تطبيقات الويب الحديثة، من الشائع استخدام بنية الخدمات المصغرة ([[Microservice](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/) Architecture) حيث تتعاون مكونات متعددة مثل خوادم الويب، وقواعد البيانات، وخوادم التخزين المؤقت (Cache). نستخدم `docker-compose.yml` لإدارة هذه المكونات بشكل مركزي في البيئة المحلية.
 
-في هذا المثال، سنقوم ببناء نظام محلي يتكون من 3 طبقات: "الويب (FastAPI)"، و "قاعدة البيانات (PostgreSQL)"، و "التخزين المؤقت (Redis)".
+في هذا المثال، سنقوم ببناء نظام محلي يتكون من 3 طبقات: "الويب (FastAPI)"، و "قاعدة البيانات (PostgreSQL)"، و "التخزين المؤقت ([Redis](https://kenji.blog/ar/p/nosql-database-selection-kvs-document-graph-wide-column/))".
 
 ### مخطط البنية (Mermaid)
 
@@ -348,7 +348,7 @@ sequenceDiagram
 نعرّف تأخير (Latency) كل عملية على النحو التالي:
 - $T_{\text{net}}$: تأخير الشبكة بين العميل وحاوية الويب
 - $T_{\text{app}}$: وقت المعالجة الخالص من جانب التطبيق (مثل التسلسل Serialization)
-- $T_{\text{cache}}$: الوقت المستغرق في القراءة/الكتابة من وإلى Redis
+- $T_{\text{cache}}$: الوقت المستغرق في القراءة/الكتابة من وإلى [Redis](https://kenji.blog/ar/p/nosql-database-selection-kvs-document-graph-wide-column/)
 - $T_{\text{db}}$: الوقت المستغرق لتنفيذ الاستعلام على PostgreSQL
 - $p_{\text{miss}}$: معدل فشل التخزين المؤقت (Cache Miss Rate) ($0 \le p_{\text{miss}} \le 1$)
 

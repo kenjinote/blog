@@ -19,7 +19,7 @@ description: 'Hugo를 사용한 정적 사이트를 Cloudflare Pages나 GitHub P
 ## 1. 정적 사이트 생성기(SSG)와 Jamstack의 기초
 
 ### 1.1 왜 정적 사이트인가?
-기존의 동적 CMS(예: WordPress)는 사용자로부터 요청이 있을 때마다 데이터베이스(MySQL 등)에 쿼리를 실행하고, 서버 사이드(PHP 등)에서 HTML을 동적으로 생성하여 반환합니다. 이 방식은 유연성이 높은 반면, 트래픽의 급증(이른바 화제성 집중이나 DDoS 공격)에 대한 내성이 낮아 캐시 서버(Redis나 Varnish)를 전면에 두는 등 인프라 구성이 복잡해지기 쉽습니다.
+기존의 동적 CMS(예: WordPress)는 사용자로부터 요청이 있을 때마다 데이터베이스(MySQL 등)에 쿼리를 실행하고, 서버 사이드(PHP 등)에서 HTML을 동적으로 생성하여 반환합니다. 이 방식은 유연성이 높은 반면, 트래픽의 급증(이른바 화제성 집중이나 DDoS 공격)에 대한 내성이 낮아 캐시 서버([Redis](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/)나 Varnish)를 전면에 두는 등 인프라 구성이 복잡해지기 쉽습니다.
 
 반면, Jamstack(JavaScript, APIs, and Markup) 아키텍처를 채택한 정적 사이트 생성기(SSG)에서는 사전에(빌드 시에) 모든 HTML 파일, CSS, JavaScript를 생성해 둡니다. 사용자의 요청에 대해서는 이미 생성된 정적 파일을 웹 서버(또는 CDN)가 그대로 반환하기만 하므로, 압도적인 고속성과 견고한 보안을 실현할 수 있습니다.
 

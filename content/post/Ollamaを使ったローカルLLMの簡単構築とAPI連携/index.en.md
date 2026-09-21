@@ -16,7 +16,7 @@ The rise of Large Language Models (LLMs) has brought about dramatic changes to o
 1. **Privacy and Security Issues**: Sending data containing confidential or personal information to external servers is often unacceptable from a corporate compliance and security perspective.
 2. **Cost Uncertainty**: Since API usage fees depend on the number of tokens, there is a risk of running costs skyrocketing in systems that process large amounts of data or make frequent requests.
 3. **Latency and Network Dependency**: Network communication becomes a bottleneck for use in [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/) environments or for execution on edge devices requiring extremely low latency.
-4. **Vendor Lock-in**: Relying on models from a specific provider makes you susceptible to future service terminations, terms of service changes, and unintended behavioral changes due to model updates.
+4. **Vendor [Lock](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)-in**: Relying on models from a specific provider makes you susceptible to future service terminations, terms of service changes, and unintended behavioral changes due to model updates.
 
 "Local LLMs" are attracting attention as a means to solve these challenges. By running models on your own hardware, you can freely utilize AI without sending any data externally and without worrying about monthly costs.
 

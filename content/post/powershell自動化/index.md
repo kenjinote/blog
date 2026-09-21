@@ -34,7 +34,7 @@ Windowsでは、デフォルトの状態で悪意のあるスクリプトが誤�
 - **AllSigned**: 信頼された発行元によって署名されたスクリプトのみ実行を許可します。
 - **RemoteSigned**: ローカルで作成されたスクリプトはそのまま実行可能ですが、インターネットからダウンロードしたスクリプトには署名が必要です。
 - **Unrestricted**: すべてのスクリプトを実行できますが、インターネットからダウンロードしたスクリプトを実行する際には警告が表示されます。
-- **Bypass**: 何もブロックされず、警告も表示されません。一時的なスクリプト実行（[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)など）でよく使われます。
+- **Bypass**: 何もブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)されず、警告も表示されません。一時的なスクリプト実行（[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)など）でよく使われます。
 
 企業のローカル環境で自作スクリプトをタスクスケジューラ等で実行する場合、最も現実的かつ安全な設定は `RemoteSigned` です。管理者権限でPowerShellを起動し、以下のコマンドを実行します。
 
@@ -42,7 +42,7 @@ Windowsでは、デフォルトの状態で悪意のあるスクリプトが誤�
 Set-ExecutionPolicy RemoteSigned -Scope LocalMachine -Force
 ```
 
-これにより、ローカルで作成したバックアップスクリプトなどがブロックされることなく動作するようになります。
+これにより、ローカルで作成したバックアップスクリプトなどがブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)されることなく動作するようになります。
 
 ### 2. モジュール化によるコードの再利用（.psm1 / .psd1）
 
@@ -82,7 +82,7 @@ Write-CustomLog -Message "バックアップ処理を開始します。" -Level 
 
 ### 3. 堅牢なエラーハンドリング（try / catch）
 
-自動化において最も重要なのは「失敗したときにどう振る舞うか」です。PowerShellでは `$ErrorActionPreference` という組み込み変数を設定することで、コマンド失敗時のデフォルトの挙動を制御できます。デフォルトは `Continue`（エラーを表示して処理を継続する）ですが、自動化スクリプトでは `Stop` に設定し、`try / catch` ブロックで例外を明示的に捕捉するのがベストプラクティスです。
+自動化において最も重要なのは「失敗したときにどう振る舞うか」です。PowerShellでは `$ErrorActionPreference` という組み込み変数を設定することで、コマンド失敗時のデフォルトの挙動を制御できます。デフォルトは `Continue`（エラーを表示して処理を継続する）ですが、自動化スクリプトでは `Stop` に設定し、`try / catch` ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)で例外を明示的に捕捉するのがベストプラクティスです。
 
 ```powershell
 $ErrorActionPreference = 'Stop'

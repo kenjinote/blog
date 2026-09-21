@@ -23,7 +23,7 @@ Desde finales del siglo XIX hasta principios del XX, el mundo de las matemática
 
 [Hilbert](https://kenji.blog/es/p/hilbert/) intentó simbolizar completamente todo el razonamiento matemático y reconstruir las matemáticas únicamente mediante reglas mecánicas. Lo que su propuesto "Programa de [Hilbert](https://kenji.blog/es/p/hilbert/)" buscaba era demostrar las siguientes 3 propiedades dentro de un Sistema Formal (Formal System) para las matemáticas:
 
-1. **Consistencia** (Consistency): Que no haya contradicciones dentro del sistema (es decir, que una proposición $P$ y su negación $\neg P$ no puedan ser demostradas a la vez).
+1. **Consistencia** ([Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/)): Que no haya contradicciones dentro del sistema (es decir, que una proposición $P$ y su negación $\neg P$ no puedan ser demostradas a la vez).
 2. **Completitud** (Completeness): Que cualquier proposición matemática pueda ser forzosamente demostrada como verdadera o falsa dentro del sistema.
 3. **Decidibilidad** (Decidability): Que dada cualquier proposición, exista un procedimiento mecánico para determinar si es demostrable o no.
 

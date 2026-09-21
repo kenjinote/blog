@@ -40,7 +40,7 @@ Ces fichiers sont mappés dans la mémoire du pool paginé du noyau par le « Co
 
 Il est à noter que toutes les données du registre n'existent pas sur le disque. Par exemple, la ruche `HARDWARE` est volatile et n'est jamais enregistrée dans un fichier sur le disque. Chaque fois que le système d'exploitation démarre et que le gestionnaire Plug-and-Play (PnP) détecte du matériel, elle est reconstruite de manière dynamique en mémoire.
 
-De plus, dans les versions récentes de Windows, la journalisation des transactions est implémentée pour améliorer la fiabilité du registre. Les modifications apportées aux fichiers de ruche ne sont pas directement écrites dans les fichiers de données, mais sont d'abord enregistrées dans un journal de transactions (`.log1`, `.log2`). Cela empêche la corruption des données lors d'une perte d'alimentation inattendue pendant l'écriture ou lors d'un plantage du système, garantissant l'intégrité de la base de données d'une manière proche des propriétés ACID.
+De plus, dans les versions récentes de Windows, la journalisation des transactions est implémentée pour améliorer la fiabilité du registre. Les modifications apportées aux fichiers de ruche ne sont pas directement écrites dans les fichiers de données, mais sont d'abord enregistrées dans un journal de transactions (`.log1`, `.log2`). Cela empêche la corruption des données lors d'une perte d'alimentation inattendue pendant l'écriture ou lors d'un plantage du système, garantissant l'intégrité de la base de données d'une manière proche des propriétés [ACID](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/).
 
 ## 3. Structure hiérarchique des clés et des valeurs du Registre
 

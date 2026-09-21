@@ -16,7 +16,7 @@ El auge de los Modelos de Lenguaje Grande (LLM) ha transformado drásticamente n
 1. **Problemas de privacidad y seguridad**: Enviar datos que contienen información confidencial o personal a servidores externos suele ser inaceptable desde la perspectiva del cumplimiento corporativo y la seguridad.
 2. **Incertidumbre en los costos**: Dado que las tarifas de uso de API dependen de la cantidad de tokens, existe el riesgo de que los costos operativos se disparen sin límite en sistemas que realizan un procesamiento masivo de datos o solicitudes frecuentes.
 3. **Dependencia de la red y latencia**: Las comunicaciones de red se convierten en un cuello de botella para el uso en entornos sin conexión o la ejecución en dispositivos perimetrales (edge) que requieren una latencia extremadamente baja.
-4. **Dependencia del proveedor (Vendor Lock-in)**: Al depender del modelo de un proveedor específico, uno puede verse afectado por una futura finalización del servicio, cambios en los términos o alteraciones inesperadas en el comportamiento debido a actualizaciones del modelo.
+4. **Dependencia del proveedor (Vendor [Lock](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/)-in)**: Al depender del modelo de un proveedor específico, uno puede verse afectado por una futura finalización del servicio, cambios en los términos o alteraciones inesperadas en el comportamiento debido a actualizaciones del modelo.
 
 Como medio para resolver estos problemas, los "LLM locales" están ganando atención. Al ejecutar los modelos en su propio hardware, puede aprovechar la IA libremente sin enviar ningún dato externamente y sin preocuparse por los costos mensuales.
 

@@ -328,7 +328,7 @@ sequenceDiagram
 # 9. 可靠性與成本模型的數學方法
 
 在使用 IaC 設計基礎設施時，評估可靠性 (Reliability) 與成本的平衡是相當重要的。
-例如，多個 AZ (Availability Zone) 架構中的系統可用性，可以用數學模型來表現。
+例如，多個 AZ ([Availability](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/) Zone) 架構中的系統可用性，可以用數學模型來表現。
 
 假設單一元件 (AZ) 的可靠性為 $R_1$。
 如果在 2 個 AZ (冗餘化) 中配置資源，只要其中一方運作中即可視為整個系統都在運作的話，則整個系統的可靠性 $R_{total}$ 可以用以下算式表示。

@@ -113,7 +113,7 @@ graph TD
 
 ## DES (Data Encryption Standard)
 1977年、アメリカ国立標準技術研究所（NIST、当時はNBS）は、IBMの設計をベースとした「DES」を標準暗号として制定しました。
-DESは「ファイステル構造（Feistel Network）」と呼ばれるアーキテクチャを採用しており、64ビットのブロック長と56ビットの鍵長を持ちます。[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)と復号のアルゴリズムがほぼ同じ構造になるという実装上の利点がありました。
+DESは「ファイステル構造（Feistel Network）」と呼ばれるアーキテクチャを採用しており、64ビットのブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)長と56ビットの鍵長を持ちます。[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)と復号のアルゴリズムがほぼ同じ構造になるという実装上の利点がありました。
 
 しかし、コンピュータの計算能力が向上するにつれ、56ビットの鍵長（約 $7.2 \times 10^{16}$ 通り）では不十分であることが明らかになります。1998年には電子フロンティア財団（EFF）が専用マシン「Deep Crack」を開発し、数日でDESを解読してみせました。
 

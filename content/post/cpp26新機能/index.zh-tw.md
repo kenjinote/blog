@@ -328,7 +328,7 @@ int main() {
 
 ## 6.2 Hazard Pointers 與 RCU (Read-Copy Update)
 
-作為支援無鎖（Lock-free）資料結構實作的標準功能， **Hazard Pointers** (`std::hazard_pointer`) 與 **RCU** (`std::rcu`) 已經標準化。這大幅降低了在 C++ 中實作高效能並行資料結構的門檻。
+作為支援無鎖（[Lock](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)-free）資料結構實作的標準功能， **Hazard Pointers** (`std::hazard_pointer`) 與 **RCU** (`std::rcu`) 已經標準化。這大幅降低了在 C++ 中實作高效能並行資料結構的門檻。
 
 RCU 特別在讀取（Read）佔絕大多數的工作負載中，能排除快取行（Cache line）的競爭，實現線性的可擴展性（Scalability）。若用數學來表達，對於執行緒數量 $T$，讀取吞吐量呈現出理想的 $O(T)$ 增長。
 

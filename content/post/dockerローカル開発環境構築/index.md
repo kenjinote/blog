@@ -129,13 +129,13 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 ## 4. [Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/) Composeによる複数[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)のオーケストレーション
 
-最新のWebアプリケーション開発では、Webサーバー、データベース、キャッシュサーバーなど、複数のコンポーネントが連携するマイクロサービスアーキテクチャが一般的です。ローカル環境でこれらを一元管理するために `docker-compose.yml` を使用します。
+最新のWebアプリケーション開発では、Webサーバー、データベース、キャッシュサーバーなど、複数のコンポーネントが連携する[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)アーキテクチャが一般的です。ローカル環境でこれらを一元管理するために `docker-compose.yml` を使用します。
 
-今回は、「Web (FastAPI)」「Database (PostgreSQL)」「Cache (Redis)」の3層構造のシステムをローカルに構築します。
+今回は、「Web (FastAPI)」「Database (PostgreSQL)」「Cache ([Redis](https://kenji.blog/p/nosql-database-selection-kvs-document-graph-wide-column/))」の3層構造のシステムをローカルに構築します。
 
 ### アーキテクチャ図（Mermaid）
 
-以下の図は、ローカルマシンにおける各[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)、ネットワーク、そしてボリュームの関係性を表したブロックダイアグラムです。
+以下の図は、ローカルマシンにおける各[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)、ネットワーク、そしてボリュームの関係性を表したブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ダイアグラムです。
 
 ```mermaid
 graph TD
@@ -348,7 +348,7 @@ sequenceDiagram
 各処理のレイテンシを以下のように定義します。
 - $T_{\text{net}}$: クライアントとWebコンテナ間のネットワークレイテンシ
 - $T_{\text{app}}$: アプリケーション側の純粋な処理時間（シリアライズ等）
-- $T_{\text{cache}}$: Redisからの読み書きにかかる時間
+- $T_{\text{cache}}$: [Redis](https://kenji.blog/p/nosql-database-selection-kvs-document-graph-wide-column/)からの読み書きにかかる時間
 - $T_{\text{db}}$: PostgreSQLへのクエリ実行にかかる時間
 - $p_{\text{miss}}$: キャッシュミス率（$0 \le p_{\text{miss}} \le 1$）
 

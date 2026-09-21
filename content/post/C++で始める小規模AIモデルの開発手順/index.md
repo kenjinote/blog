@@ -22,7 +22,7 @@ description: 'C++とggmlを用いて、TinyLLaMAのような小規模AIモデル
 
 AIの学習段階においては、柔軟性と豊富なエコシステムを持つPythonが圧倒的に有利です。しかし、デプロイや「推論（Inference）」のフェーズにおいては、以下の理由からC++が強力な選択肢となります。
 
-1. **オーバーヘッドの削減**: Pythonのグローバルインタプリタロック（GIL）やランタイムのオーバーヘッドを完全に排除できます。
+1. **オーバーヘッドの削減**: Pythonのグローバルインタプリタ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)（GIL）やランタイムのオーバーヘッドを完全に排除できます。
 2. **メモリ効率とアリーナアロケーション**: メモリの確保と解放をマニュアルで制御できるため、[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)による予測不能なスパイクを防げます。
 3. **ハードウェアへの直接アクセス**: AVX-512、AVX2、ARM NEONなどのSIMD組み込み関数（Intrinsics）を直接呼び出し、CPUの演算能力を極限まで引き出せます。
 4. **依存関係の排除**: ggmlは依存関係ゼロ（Zero dependencies）のC/C++ライブラリであり、コンパイラさえあればWindows上のMSVC環境でも容易にビルド可能です。
@@ -86,7 +86,7 @@ Hugging Face等の`.safetensors`フォーマットから変換された **GGUF (
 1. **Magic Bytes**: `0x46554747` (GGUF)。
 2. **Version**: フォーマットのバージョン番号。
 3. **Tensor Count & Metadata Count**: テンソル数とメタデータのキーバリューペア数。
-4. **Metadata (Key-Value Pairs)**: 文字列長プレフィックス付きのキーと、型付けされた値。
+4. **Metadata ([Key-Value](https://kenji.blog/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs)**: 文字列長プレフィックス付きのキーと、型付けされた値。
 5. **Tensor Info**: 各テンソルの名前、次元数、データ型（FP16, Q4_Kなど）、ファイル内のオフセット位置。
 6. **Padding**: テンソルデータが特定の境界（通常は32バイトまたは64バイト）にアライメントされるように挿入されるパディング。SIMD命令（特にAVX）での高速なメモリアクセスに不可欠です。
 7. **Tensor Data**: アライメントされた実際の重みデータ配列。
@@ -167,10 +167,10 @@ graph TD
 
 TinyLLaMA (1.1B) をFP16で扱うと約2.2GBのメモリが必要ですが、4ビット量子化（Q4_Kなど）により約600MB程度まで劇的に圧縮できます。
 
-### 6.1 ブロック量子化アーキテクチャ
+### 6.1 ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)量子化アーキテクチャ
 
 ggmlはテンソル全体を一律に量子化するのではなく、「ブロック」単位で行います。
-`Q4_0` フォーマットでは、32個のFP16値を1つのブロックにまとめます。
+`Q4_0` フォーマットでは、32個のFP16値を1つのブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)にまとめます。
 - **スケールファクタ**: 1つのFP16値（2バイト）
 - **量子化データ**: 32個の4ビット値（16バイト）
 これにより、局所的な外れ値の影響を最小限に抑えています。

@@ -14,7 +14,7 @@ description: 'ゼロ知識証明（ZKP）の数学的基礎から、zk-SNARKs、
 
 現代のデジタル社会において、データプライバシーとスケーラビリティは最も重要な課題の2つとなっています。個人情報の漏洩や不正利用のリスクが高まる中、「自分に関する情報を相手に明かすことなく、自分がその情報を持っていることを証明する」技術が強く求められています。これを実現するのが **ゼロ知識証明（Zero-Knowledge Proof: ZKP）** です。
 
-ゼロ知識証明は、1980年代にShafi Goldwasser、Silvio Micali、Charles Rackoffによって初めて提唱された暗号理論の概念ですが、長らく理論的な研究にとどまっていました。しかし、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術とWeb3の台頭により、状況は一変しました。Ethereumなどのパブリックブロックチェーンが直面するスケーラビリティ問題（処理能力の限界）とプライバシー問題（すべてのトランザクションが公開されること）を同時に解決する「魔法の杖」として、ZKPは一躍脚光を浴びることとなったのです。
+ゼロ知識証明は、1980年代にShafi Goldwasser、Silvio Micali、Charles Rackoffによって初めて提唱された暗号理論の概念ですが、長らく理論的な研究にとどまっていました。しかし、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術とWeb3の台頭により、状況は一変しました。Ethereumなどのパブリックブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンが直面するスケーラビリティ問題（処理能力の限界）とプライバシー問題（すべての[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が公開されること）を同時に解決する「魔法の杖」として、ZKPは一躍脚光を浴びることとなったのです。
 
 本記事では、ゼロ知識証明の基本的な概念から、現在主流となっている **zk-SNARKs** および **zk-STARKs** の深淵なる数学的・暗号学的メカニズム、そしてZK-Rollupsや分散型アイデンティティ（DID）といった最新のWeb3・セキュリティへの応用例に至るまで、極めて詳細かつ技術的に深く掘り下げて解説します。
 
@@ -168,7 +168,7 @@ graph TD
 
 EthereumのようなL1（レイヤー1）[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)は、分散性とセキュリティを重視するあまり、スケーラビリティに大きな制約（トリレンマ）を抱えています。これを解決するL2（レイヤー2）ソリューションの決定版が **ZK-Rollups** です。
 
-ZK-Rollupでは、何千ものトランザクションをオフチェーン（L2）で実行・処理し、それらがすべて正しく実行されたことを示す「1つのZKP（Validity Proof）」を生成します。L1チェーン上の[スマートコントラクト](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)は、この証明を検証するだけで済みます。
+ZK-Rollupでは、何千もの[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)をオフチェーン（L2）で実行・処理し、それらがすべて正しく実行されたことを示す「1つのZKP（Validity Proof）」を生成します。L1チェーン上の[スマートコントラクト](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)は、この証明を検証するだけで済みます。
 
 ```mermaid
 flowchart LR
@@ -192,9 +192,9 @@ WorldcoinのようなProof of Personhood（人間性の証明）プロジェク�
 
 ### 3. 機密[スマートコントラクト](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)とエンタープライズ利用
 
-パブリック[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の「すべてのデータが公開される」という性質は、企業が機密の取引やサプライチェーン情報をブロックチェーン上で扱う際の大きな障壁でした。
+パブリック[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の「すべてのデータが公開される」という性質は、企業が機密の取引やサプライチェーン情報をブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーン上で扱う際の大きな障壁でした。
 
-ZKP技術（例えばAleoやAztecなどのプライバシー特化型ネットワーク）を用いれば、トランザクションの入力値、出力値、さらには実行されるスマートコントラクトのロジック自体を[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)したまま、状態の更新の正当性だけをパブリックチェーンに刻むことができます。これにより、DeFi（分散型金融）におけるフロントランニング（MEV）の防止や、企業間での機密コンソーシアムネットワークの構築が、パブリックチェーンの高いセキュリティを享受しながら実現可能となります。
+ZKP技術（例えばAleoやAztecなどのプライバシー特化型ネットワーク）を用いれば、[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の入力値、出力値、さらには実行されるスマートコントラクトのロジック自体を[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)したまま、状態の更新の正当性だけをパブリックチェーンに刻むことができます。これにより、DeFi（分散型金融）におけるフロントランニング（MEV）の防止や、企業間での機密コンソーシアムネットワークの構築が、パブリックチェーンの高いセキュリティを享受しながら実現可能となります。
 
 ---
 

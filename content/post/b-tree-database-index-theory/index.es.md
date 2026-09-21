@@ -73,7 +73,7 @@ Esto prueba matemáticamente que el **B-Tree** es extremadamente eficiente en la
 
 ## 4. El estándar de la base de datos: La evolución hacia el B+Tree
 
-Lo que se usa en los RDBMS reales (como InnoDB de MySQL y PostgreSQL) es el **B+Tree**, una versión mejorada del B-Tree.
+Lo que se usa en los [RDBMS](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/) reales (como InnoDB de MySQL y PostgreSQL) es el **B+Tree**, una versión mejorada del B-Tree.
 
 ### 4.1 Diferencias entre B-Tree y B+Tree
 

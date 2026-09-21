@@ -29,7 +29,7 @@ $$ S(N) = \frac{1}{(1 - P) + \frac{P}{N}} $$
 
 Eine wichtige Erkenntnis aus dieser Formel ist, dass "unabhängig davon, wie sehr man die Anzahl der Prozessoren $N$ erhöht, der nicht parallelisierbare serielle Teil $(1 - P)$ zu einem Engpass wird und es eine Obergrenze für die Geschwindigkeitssteigerung gibt." Selbst wenn beispielsweise $90\%$ des Programms parallelisierbar sind ($P = 0.9$), bleibt der restliche Teil von $10\%$ sequenziell, sodass die maximale Beschleunigung selbst mit einer unendlichen Anzahl von Prozessoren nur das $10$-fache ($S(\infty) = 1 / 0.1$) beträgt.
 
-Daher ist bei der Multithreading-Programmierung in C++ nicht nur das Hinzufügen von Threads erforderlich, sondern ein **Design, das die sequenziellen Verarbeitungsteile (wie Lock-Konflikte und Synchronisations-Overhead) so weit wie möglich reduziert**.
+Daher ist bei der Multithreading-Programmierung in C++ nicht nur das Hinzufügen von Threads erforderlich, sondern ein **Design, das die sequenziellen Verarbeitungsteile (wie [Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)-Konflikte und Synchronisations-Overhead) so weit wie möglich reduziert**.
 
 ---
 
@@ -316,7 +316,7 @@ Um die beste Leistung bei der Multithreading-Programmierung zu erzielen, muss ni
 
 * **False Sharing (Falsches Teilen):** 
   Wenn mehrere Threads verschiedene Variablen aktualisieren, diese Variablen sich jedoch in derselben Cache-Zeile (normalerweise 64 Byte) der CPU befinden, kommt es zu unnötigen Speichersynchronisationen, um die Cache-Kohärenz aufrechtzuerhalten, was zu einem drastischen Leistungsabfall führt. Um dies zu verhindern, ist es erforderlich, Variablen mithilfe des `alignas`-Spezifikators an den Grenzen von Cache-Zeilen auszurichten.
-* **Lock-Free (Sperrfrei) und `std::atomic`:**
+* **[Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)-Free (Sperrfrei) und `std::atomic`:**
   Um den Overhead des Sperrens/Entsperrens von Mutexen zu vermeiden, wird der Einsatz unteilbarer Operationen (wie Compare-And-Swap) mittels `<atomic>` oder sperrfreier Datenstrukturen in Betracht gezogen. Da jedoch ein korrektes Verständnis der Speicherordnung (`std::memory_order`) erforderlich ist und die Implementierung sehr schwierig ist, sollten diese in der Regel nur eingeführt werden, wenn sie nach sorgfältigen Leistungsmessungen als notwendig erachtet werden.
 
 ---

@@ -271,7 +271,7 @@ Auch wenn es PQC-Algorithmen (wie Dilithium oder SPHINCS+) gibt, bedeutet das ni
 Die größte Hürde bei der Einführung von PQC ist die massive Aufblähung der Datengrößen.
 Während die aktuelle Signaturgröße von ECDSA etwa 70 Byte beträgt, beträgt die Signaturgröße von Dilithium (ML-DSA) etwa 2.420 bis 4.595 Byte (je nach Sicherheitsniveau) und die Größe des öffentlichen Schlüssels übersteigt 1.300 Byte. Bei Hash-basiertem SPHINCS+ erreicht allein die Signatur mehrere zehntausend Byte.
 
-Wenn [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) PQC bei gleicher Blockgrößenbeschränkung (etwa 4 MB Gewicht einschließlich SegWit) einführen würde, würde die Anzahl der Transaktionen, die in einem Block gespeichert werden können, drastisch sinken. Der Durchsatz des Netzwerks (TPS: Transactions Per Second) würde katastrophal abnehmen, und Transaktionsstaus würden zur Norm werden.
+Wenn [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) PQC bei gleicher Blockgrößenbeschränkung (etwa 4 MB Gewicht einschließlich SegWit) einführen würde, würde die Anzahl der Transaktionen, die in einem Block gespeichert werden können, drastisch sinken. Der Durchsatz des Netzwerks (TPS: [Transaction](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)s Per Second) würde katastrophal abnehmen, und Transaktionsstaus würden zur Norm werden.
 Um dies zu beheben, wäre eine deutliche Erhöhung der Blockgröße erforderlich, was jedoch die Speicheranforderungen und Netzwerkbandbreitenanforderungen für Full Nodes erhöhen würde, was es für Einzelpersonen schwierig macht, Nodes zu betreiben, und letztendlich zum Dilemma einer **Zentralisierung des Netzwerks** führt.
 
 ```mermaid

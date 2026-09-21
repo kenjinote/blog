@@ -29,7 +29,7 @@ $$ S(N) = \frac{1}{(1 - P) + \frac{P}{N}} $$
 
 この数式が示す重要な事実は、「どれだけプロセッサ数 $N$ を増やしても、並列化できない直列部分 $(1 - P)$ がボトルネックとなり、スピードアップには上限がある」ということです。たとえば、プログラムの $90\%$ が並列化可能（$P = 0.9$）であっても、残りの $10\%$ が直列処理である限り、無限のプロセッサを用いても最大で $10$ 倍（$S(\infty) = 1 / 0.1$）しか高速化されません。
 
-したがって、C++でマルチスレッドプログラミングを行う際は、単にスレッドを増やすだけでなく、 **直列処理の部分（ロックの競合や同期のオーバーヘッドなど）を極力減らす設計** が求められます。
+したがって、C++でマルチスレッドプログラミングを行う際は、単にスレッドを増やすだけでなく、 **直列処理の部分（[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の競合や同期のオーバーヘッドなど）を極力減らす設計** が求められます。
 
 ---
 
@@ -102,13 +102,13 @@ int main() {
 
 ---
 
-## 3. データ競合の回避と同期：ミューテックスとロック
+## 3. データ競合の回避と同期：ミューテックスと[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)
 
 複数のスレッドが同時に同じメモリ領域（変数など）にアクセスし、少なくとも1つが書き込みを行う場合、 **データ競合 (Data Race)** が発生します。C++標準において、データ競合は未定義動作 (Undefined Behavior) を引き起こします。これを防ぐためには、`std::mutex` を用いた排他制御が必要です。
 
 ### `std::mutex` と `std::lock_guard`
 
-生の `std::mutex::lock()` と `unlock()` を手動で呼び出すのは、例外発生時に `unlock()` が呼ばれずデッドロックを引き起こすリスクがあるため推奨されません。C++ではRAIIパターンを用いた `std::lock_guard` (C++11) や `std::scoped_lock` (C++17) を使用します。
+生の `std::mutex::lock()` と `unlock()` を手動で呼び出すのは、例外発生時に `unlock()` が呼ばれずデッド[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を引き起こすリスクがあるため推奨されません。C++ではRAIIパターンを用いた `std::lock_guard` (C++11) や `std::scoped_lock` (C++17) を使用します。
 
 ```cpp
 #include <iostream>
@@ -145,7 +145,7 @@ int main() {
 
 ### `std::unique_lock`
 
-`std::lock_guard` はスコープベースの単純なロックですが、より柔軟な制御（遅延ロック、時間制限付きロック、途中でアンロックなど）が必要な場合は `std::unique_lock` を使用します。次に解説する `std::condition_variable` では `std::unique_lock` が必須となります。
+`std::lock_guard` はスコープベースの単純な[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ですが、より柔軟な制御（遅延ロック、時間制限付きロック、途中でアンロックなど）が必要な場合は `std::unique_lock` を使用します。次に解説する `std::condition_variable` では `std::unique_lock` が必須となります。
 
 ---
 
@@ -316,8 +316,8 @@ C++の標準ライブラリ（C++23時点）には標準のスレッドプール
 
 * **フォルスシェアリング (False Sharing):** 
   複数のスレッドが別々の変数を更新しているにもかかわらず、それらの変数がCPUの同じキャッシュライン（通常64バイト）に配置されていると、キャッシュコヒーレンシの維持のために無駄なメモリ同期が発生し、パフォーマンスが劇的に低下します。これを防ぐためには、`alignas` 指定子を使って変数をキャッシュラインの境界に配置する工夫が必要です。
-* **ロックフリー (Lock-Free) と `std::atomic`:**
-  ミューテックスのロック/アンロックのオーバーヘッドを避けるため、`<atomic>` を用いた不可分操作（Compare-And-Swapなど）やロックフリーデータ構造の導入が検討されます。ただし、メモリオーダー (`std::memory_order`) の正しい理解が必要であり、実装難易度が非常に高いため、通常は慎重なパフォーマンス計測の末に必要だと判断された場合にのみ導入します。
+* **[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)フリー ([Lock](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)-Free) と `std::atomic`:**
+  ミューテックスの[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)/アンロックのオーバーヘッドを避けるため、`<atomic>` を用いた不可分操作（Compare-And-Swapなど）や[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)フリーデータ構造の導入が検討されます。ただし、メモリオーダー (`std::memory_order`) の正しい理解が必要であり、実装難易度が非常に高いため、通常は慎重なパフォーマンス計測の末に必要だと判断された場合にのみ導入します。
 
 ---
 
@@ -327,9 +327,9 @@ C++におけるマルチスレッドと非同期プログラミングについ�
 
 1. **基本は `std::async` を使う:** 単発の非同期タスクや結果を返す並行処理には、手動でスレッドを管理するよりも安全な `std::async` と `std::future` を利用する。
 2. **スレッド管理には `std::jthread`:** 長期的にバックグラウンドで動くスレッドには、C++20の `std::jthread` を使い、安全な終了処理を保証する。
-3. **同期にはRAIIを活用:** データ競合を防ぐためのミューテックスのロックは、必ず `std::lock_guard` や `std::unique_lock` を介して行う。
+3. **同期にはRAIIを活用:** データ競合を防ぐためのミューテックスの[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)は、必ず `std::lock_guard` や `std::unique_lock` を介して行う。
 4. **オーバーヘッドを意識する:** スレッドの過剰な生成は避け、必要に応じてスレッドプールアーキテクチャを導入する。
 
-並行処理のバグ（デッドロック、データ競合）は再現性が低く、デバッグが最も困難な部類に入ります。スレッドセーフティを常に意識し、適切な標準ライブラリのツールを選択することで、モダンC++による堅牢で高速なシステム開発を実現しましょう。
+並行処理のバグ（デッド[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)、データ競合）は再現性が低く、デバッグが最も困難な部類に入ります。スレッドセーフティを常に意識し、適切な標準ライブラリのツールを選択することで、モダンC++による堅牢で高速なシステム開発を実現しましょう。
 
 

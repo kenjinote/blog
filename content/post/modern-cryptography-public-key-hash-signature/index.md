@@ -174,7 +174,7 @@ print("Decrypted Message:", decrypted_message.decode('utf-8'))
 
 現在最も広く使われているハッシュ関数がSHA-2ファミリ（特に **SHA-256** ）です。SHA-2は **Merkle-Damgård（マークル・ダンゴード）構造** を採用しています。
 
-Merkle-Damgård構造では、入力メッセージを固定長のブロック（SHA-256の場合は512ビット）に分割し、パディングを行って長さを調整します。そして、初期ハッシュ値（IV）と最初のブロックを **圧縮関数** （Compression function）に入力し、その出力を次のブロックの入力として連鎖的に処理していきます。
+Merkle-Damgård構造では、入力メッセージを固定長のブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)（SHA-256の場合は512ビット）に分割し、パディングを行って長さを調整します。そして、初期ハッシュ値（IV）と最初のブロックを **圧縮関数** （Compression function）に入力し、その出力を次のブロックの入力として連鎖的に処理していきます。
 
 $$ H_i = f(H_{i-1}, M_i) $$
 

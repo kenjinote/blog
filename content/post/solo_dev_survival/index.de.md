@@ -50,7 +50,7 @@ Einzelentwickler sollten gezielt auf nischenspezifische und spezialisierte Probl
 
 # 2. Architekturdesign für überwältigende Agilität
 
-Unternehmenssysteme werden mit "Stabilität" und "Skalierbarkeit" als oberste Priorität entwickelt, weshalb [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/) und Microservices-Architekturen verwendet werden. Wenn jedoch ein Einzelentwickler dasselbe tut, werden seine Ressourcen allein durch die Wartung und Verwaltung der Infrastruktur (Ops) aufgebraucht.
+Unternehmenssysteme werden mit "Stabilität" und "Skalierbarkeit" als oberste Priorität entwickelt, weshalb [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/) und [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen verwendet werden. Wenn jedoch ein Einzelentwickler dasselbe tut, werden seine Ressourcen allein durch die Wartung und Verwaltung der Infrastruktur (Ops) aufgebraucht.
 
 Das Motto für den Tech-Stack des Einzelentwicklers lautet **"No-Ops" (Null Betrieb)**. Nutzen Sie serverlose Architekturen bis an die Grenzen aus und konzentrieren Sie sich ausschließlich auf das Schreiben der Geschäftslogik.
 
@@ -209,9 +209,9 @@ Mit diesen wenigen Codezeilen können Sie sofort Kreditkartenzahlungen von Benut
 
 ---
 
-# 6. Vermeidung von Infrastruktur-Lock-ins und Portabilität
+# 6. Vermeidung von Infrastruktur-[Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)-ins und Portabilität
 
-In einer Strategie, die stark auf BaaS und Managed [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)s setzt, ist das Risiko eines "Vendor-Lock-in" ein ständiges Diskussionsthema. Wenn man sich beispielsweise zu sehr auf Firebase Firestore verlässt, wird es extrem schwierig, später auf eine RDB (relationale Datenbank) umzusteigen.
+In einer Strategie, die stark auf BaaS und Managed [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)s setzt, ist das Risiko eines "Vendor-[Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)-in" ein ständiges Diskussionsthema. Wenn man sich beispielsweise zu sehr auf Firebase Firestore verlässt, wird es extrem schwierig, später auf eine RDB (relationale Datenbank) umzusteigen.
 
 Die optimale Überlebensstrategie ist der Ansatz: **"Infrastruktur ist gebunden, aber Daten und Geschäftslogik behalten ihre Portabilität"**.
 

@@ -64,7 +64,7 @@ flowchart TD
 
 ### Structure du bloc
 
-Un bloc est grossièrement divisé en un « en-tête de bloc (Block Header) » et des « données de transaction (Transaction Data) ».
+Un bloc est grossièrement divisé en un « en-tête de bloc (Block Header) » et des « données de transaction ([Transaction](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/) Data) ».
 
 L'en-tête de bloc contient les informations suivantes :
 1. **Version (Version)** : La version du logiciel
@@ -185,7 +185,7 @@ $$
 
 Si le taux de hachage augmente, la cible devient plus petite (la difficulté augmente), et si le taux de hachage diminue, la cible devient plus grande (la difficulté diminue).
 
-## 6. Transactions et modèle UTXO
+## 6. [Transaction](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/)s et modèle UTXO
 
 Les transactions Bitcoin n'adoptent pas un mécanisme tel que les soldes de comptes bancaires (modèle basé sur les comptes), mais un modèle appelé **UTXO (Unspent Transaction Output : Sortie de transaction non dépensée)** .
 
@@ -205,7 +205,7 @@ flowchart LR
 Supposons qu'Alice veuille envoyer 1,8 BTC à Bob. Alice spécifie deux UTXO (totalisant 2,0 BTC) de 1,5 BTC et 0,5 BTC qu'elle détient en tant qu'entrées, et crée une sortie de 1,8 BTC adressée à Bob. Sur les 0,2 BTC restants, 0,19 BTC devient une sortie vers la propre nouvelle adresse d'Alice en tant que monnaie (Change), et la différence de 0,01 BTC devient les frais (Fee) pour le mineur qui a traité la transaction.
 
 $$
-\sum \text{Entrées} = \sum \text{Sorties} + \text{Frais\_de\_Transaction}
+\sum \text{Entrées} = \sum \text{Sorties} + \text{Frais\_de\_[Transaction](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/)}
 $$
 
 Ce modèle UTXO est facile à traiter en parallèle car les transactions sont hautement indépendantes, et il est également excellent du point de vue de la confidentialité (une nouvelle adresse de monnaie peut être utilisée à chaque fois).
@@ -285,7 +285,7 @@ La plus grande réalisation de Satoshi Nakamoto n'est pas seulement d'avoir rés
 
 ### Récompense de bloc et réduction de moitié (Halving)
 
-La raison pour laquelle les mineurs investissent d'énormes quantités d'électricité et de matériel pour miner des blocs est qu'il y a une récompense financière. Lorsqu'un mineur réussit à générer un nouveau bloc, il reçoit des Bitcoins nouvellement émis via une transaction spéciale appelée **transaction coinbase (Coinbase Transaction)** .
+La raison pour laquelle les mineurs investissent d'énormes quantités d'électricité et de matériel pour miner des blocs est qu'il y a une récompense financière. Lorsqu'un mineur réussit à générer un nouveau bloc, il reçoit des Bitcoins nouvellement émis via une transaction spéciale appelée **transaction coinbase (Coinbase [Transaction](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/))** .
 
 L'émission totale de Bitcoin est plafonnée à **21 millions de pièces** par le programme. Il intègre également un mécanisme appelé **réduction de moitié (Halving)** , où la récompense de minage par bloc est divisée par deux tous les 210 000 blocs (environ 4 ans).
 

@@ -16,7 +16,7 @@ tags:
   - "러스트"
 ---
 
-현대의 소프트웨어 개발에서 시스템의 확장성과 가용성을 높이기 위해서는 **비동기 처리** 와 **이벤트 기반 아키텍처** (EDA: Event-Driven Architecture)에 대한 이해가 필수적입니다. 본 문서에서는 이를 뒷받침하는 핵심 개념인 Event Loop, Actor 모델, 그리고 CQRS(Command Query Responsibility Segregation)에 대해 이론부터 구현, 그리고 아키텍처 수준의 설계에 이르기까지 깊이 파헤쳐 설명합니다.
+현대의 소프트웨어 개발에서 시스템의 확장성과 가용성을 높이기 위해서는 **비동기 처리** 와 **이벤트 기반 아키텍처** (EDA: [Event-Driven](https://kenji.blog/ko/p/event-driven-architecture-message-queue-kafka-rabbitmq/) Architecture)에 대한 이해가 필수적입니다. 본 문서에서는 이를 뒷받침하는 핵심 개념인 Event Loop, Actor 모델, 그리고 CQRS(Command Query Responsibility Segregation)에 대해 이론부터 구현, 그리고 아키텍처 수준의 설계에 이르기까지 깊이 파헤쳐 설명합니다.
 
 ## 1. 비동기 처리의 기초와 과제
 
@@ -110,7 +110,7 @@ const main = async () => {
 main();
 ```
 
-Event Loop의 장점은 공유 상태에 대한 락(Lock) 관리가 필요 없다는 것입니다. 그러나 CPU 바운드인 무거운 처리를 Call Stack에서 실행해 버리면 Event Loop 전체가 블록되어 시스템이 정지 상태에 빠질 위험이 있습니다(Event Loop의 블로킹). 계산량은 $ O(1) $ 에서 $ O(N) $ 의 가벼운 처리로 유지해야 합니다.
+Event Loop의 장점은 공유 상태에 대한 락([Lock](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/)) 관리가 필요 없다는 것입니다. 그러나 CPU 바운드인 무거운 처리를 Call Stack에서 실행해 버리면 Event Loop 전체가 블록되어 시스템이 정지 상태에 빠질 위험이 있습니다(Event Loop의 블로킹). 계산량은 $ O(1) $ 에서 $ O(N) $ 의 가벼운 처리로 유지해야 합니다.
 
 ---
 
@@ -215,7 +215,7 @@ async fn main() {
 
 비동기 처리나 Actor 모델은 단일 애플리케이션 내부에서의 병행 처리를 최적화하는 기법입니다. 이를 시스템 전체(마이크로서비스 간 등)로 확장한 개념이 **이벤트 기반 아키텍처(EDA)** 입니다.
 
-EDA에서는 시스템 내의 상태 변화를 '이벤트'로 표현하고, 이벤트 버스나 메시지 브로커(Apache Kafka, RabbitMQ, AWS EventBridge 등)를 통해 비동기적으로 전달합니다.
+EDA에서는 시스템 내의 상태 변화를 '이벤트'로 표현하고, 이벤트 버스나 메시지 브로커(Apache [Kafka](https://kenji.blog/ko/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/ko/p/event-driven-architecture-message-queue-kafka-rabbitmq/), AWS EventBridge 등)를 통해 비동기적으로 전달합니다.
 
 ### 4.1 EDA의 주요 구성 요소
 
@@ -290,7 +290,7 @@ $ Balance = \sum_{i=1}^{n} (Deposit_i) - \sum_{j=1}^{m} (Withdrawal_j) $
 
 ### 6.1 과제 및 모범 사례
 
-이벤트 기반 및 비동기 아키텍처는 강력하지만, **결과적 일관성(Eventual Consistency)** 을 수용해야 합니다. 데이터가 즉시 모든 시스템에 반영되는 것(강한 일관성)은 아니므로 UI/UX 측면에서의 고려(예: 낙관적 UI 업데이트)가 요구됩니다.
+이벤트 기반 및 비동기 아키텍처는 강력하지만, **결과적 일관성(Eventual [Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/))** 을 수용해야 합니다. 데이터가 즉시 모든 시스템에 반영되는 것(강한 일관성)은 아니므로 UI/UX 측면에서의 고려(예: 낙관적 UI 업데이트)가 요구됩니다.
 
 또한, 분산 시스템에서의 **멱등성(Idempotency)** 보장도 중요합니다. 네트워크 재전송으로 인해 동일한 이벤트가 여러 번 처리되더라도 결과가 달라지지 않도록 설계해야 합니다.
 

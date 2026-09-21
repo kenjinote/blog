@@ -23,7 +23,7 @@ Vom späten 19. bis zum frühen 20. Jahrhundert sah sich die mathematische Welt 
 
 [Hilbert](https://kenji.blog/de/p/hilbert/) versuchte, alle mathematischen Schlussfolgerungen vollständig zu symbolisieren und die Mathematik nur durch mechanische Regeln neu aufzubauen. Das von ihm vorgeschlagene „[Hilbert](https://kenji.blog/de/p/hilbert/)-Programm“ zielte darauf ab, in einem formalen System der Mathematik die folgenden drei Eigenschaften zu beweisen:
 
-1. **Widerspruchsfreiheit** (Consistency): Es gibt keine Widersprüche im System (d. h. eine Aussage $P$ und ihre Verneinung $\neg P$ werden nicht beide bewiesen).
+1. **Widerspruchsfreiheit** ([Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)): Es gibt keine Widersprüche im System (d. h. eine Aussage $P$ und ihre Verneinung $\neg P$ werden nicht beide bewiesen).
 2. **Vollständigkeit** (Completeness): Jede mathematische Aussage kann innerhalb des Systems zwingend entweder als wahr oder falsch bewiesen werden.
 3. **Entscheidbarkeit** (Decidability): Für jede gegebene Aussage gibt es ein mechanisches Verfahren, um zu bestimmen, ob sie beweisbar ist oder nicht.
 

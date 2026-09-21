@@ -210,7 +210,7 @@ let result = divide(10.0, 2.0).and_then(|res| divide(res, 2.0));
 
 Tous les patrons GoF ne sont pas morts. Les patrons qui opèrent aux limites architecturales sont toujours extrêmement importants aujourd'hui.
 
-1. **Facade (Façade)** : Le concept de fournir une interface simple à un sous-système complexe a été mis à l'échelle sous forme d'API Gateway (BFF : Backend for Frontend) dans l'architecture de microservices.
+1. **Facade (Façade)** : Le concept de fournir une interface simple à un sous-système complexe a été mis à l'échelle sous forme d'[API Gateway](https://kenji.blog/fr/p/microservices-architecture-bff-api-gateway/) ([BFF](https://kenji.blog/fr/p/microservices-architecture-bff-api-gateway/) : [Backend for Frontend](https://kenji.blog/fr/p/microservices-architecture-bff-api-gateway/)) dans l'architecture de microservices.
 2. **Adapter (Adaptateur)** : Il sert de pierre angulaire pour l'intégration avec des systèmes externes et pour maintenir le système faiblement couplé, comme les « ports et adaptateurs » dans l'architecture propre (Clean Architecture) ou l'architecture hexagonale.
 3. **Decorator (Décorateur)** : Dans Python et TypeScript, il a été sublimé en une fonctionnalité de métaprogrammation basée sur des annotations, `@Decorator`, au niveau du langage.
 

@@ -64,7 +64,7 @@ flowchart TD
 
 ### Die Struktur eines Blocks
 
-Ein einzelner Block besteht im Wesentlichen aus einem "Block-Header" und "Transaktionsdaten" (Transaction Data).
+Ein einzelner Block besteht im Wesentlichen aus einem "Block-Header" und "Transaktionsdaten" ([Transaction](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/) Data).
 
 Der Block-Header enthält die folgenden Informationen:
 1. **Version**: Die Softwareversion
@@ -187,7 +187,7 @@ Wenn die Hashrate steigt, wird das Ziel kleiner (die Schwierigkeit steigt); wenn
 
 ## 6. Transaktionen und das UTXO-Modell
 
-Transaktionen in Bitcoin verwenden nicht das gleiche System wie Bankkontensalden (kontobasiertes Modell), sondern nutzen das Modell **UTXO (Unspent Transaction Output: nicht ausgegebene Transaktionsausgaben)**.
+Transaktionen in Bitcoin verwenden nicht das gleiche System wie Bankkontensalden (kontobasiertes Modell), sondern nutzen das Modell **UTXO (Unspent [Transaction](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/) Output: nicht ausgegebene Transaktionsausgaben)**.
 
 ### Eingaben und Ausgaben (Inputs and Outputs)
 
@@ -285,7 +285,7 @@ Die größte Leistung von Satoshi Nakamoto bestand nicht nur darin, ein kryptogr
 
 ### Blockbelohnung und Halving
 
-Der Grund, warum Miner massiv in Strom und Hardware investieren, um Blöcke zu schürfen, ist, dass es eine wirtschaftliche Belohnung gibt. Wenn ein Miner erfolgreich einen neuen Block generiert, erhält er neu ausgegebene Bitcoins durch eine spezielle Transaktion namens **Coinbase-Transaktion (Coinbase Transaction)**.
+Der Grund, warum Miner massiv in Strom und Hardware investieren, um Blöcke zu schürfen, ist, dass es eine wirtschaftliche Belohnung gibt. Wenn ein Miner erfolgreich einen neuen Block generiert, erhält er neu ausgegebene Bitcoins durch eine spezielle Transaktion namens **Coinbase-Transaktion (Coinbase [Transaction](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/))**.
 
 Die Gesamtausgabemenge von Bitcoin ist algorithmisch auf **21 Millionen Münzen** begrenzt. Darüber hinaus ist ein Mechanismus namens **Halving** eingebaut, bei dem die Mining-Belohnung pro Block alle 210.000 Blöcke (etwa alle 4 Jahre) halbiert wird.
 
@@ -324,7 +324,7 @@ Für diejenigen, die nach dem Lesen dieses Artikels tiefer in die Blockchain-Tec
 ### Lesenswerte Original-Whitepapers
 - **Bitcoin: A Peer-to-Peer Electronic Cash System** (Satoshi Nakamoto, 2008)
   - Das monumentale Whitepaper, mit dem alles begann. In nur 9 Seiten wird das grundlegende Design eines [Distributed Ledger](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s, das PoW, Anreize und Merkle-Bäume kombiniert, in perfekter Form beschrieben.
-- **Ethereum: A Secure Decentralised Generalised Transaction Ledger** (Gavin Wood, 2014)
+- **Ethereum: A Secure Decentralised Generalised [Transaction](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/) Ledger** (Gavin Wood, 2014)
   - Das Yellow Paper von Ethereum. Es definierte die Blockchain neu als kontobasierte [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smaschine, die Turing-vollständige [Smart Contract](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s ausführen kann, im Gegensatz zu Bitcoins UTXO-Modell.
 
 ### Grundlagen der Kryptografie und Mathematik

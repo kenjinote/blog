@@ -151,7 +151,7 @@ Si les équations mathématiques ne vous convainquent toujours pas (ou si vous a
 
 Le principe de base de la comptabilité en partie double est que le "Débit (Debit)" et le "Crédit (Credit)" doivent toujours correspondre. Faisons les écritures de journal (Journal Entry) pour les mouvements d'argent.
 
-### Transaction 1 : Les clients paient 30 dollars
+### [Transaction](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/) 1 : Les clients paient 30 dollars
 L'état initial du point de vue de l'hôtel.
 
 | Débit (Augmentation des actifs) | Crédit (Augmentation du passif/capitaux propres) |

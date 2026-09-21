@@ -42,7 +42,7 @@ This assumes Windows 11, but many of them should work on Windows 10 as well.
 - `Win + +` opens Windows Magnifier. You can further zoom in or out of the screen using `Win + + or -`.
 - In apps like Notepad or browsers, you can zoom in/out with `Ctrl + + or -` (only for supported apps).
 
-## Lock Windows
+## [Lock](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) Windows
 - `Win + L`
 - `Ctrl + Alt + Del` -> `Space` or `Enter`
 

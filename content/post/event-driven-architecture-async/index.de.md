@@ -16,7 +16,7 @@ tags:
   - "rust"
 ---
 
-In der modernen Softwareentwicklung ist das Verständnis von **asynchroner Verarbeitung** und **Event-Driven Architecture** (EDA) unerlässlich, um die Skalierbarkeit und Verfügbarkeit von Systemen zu verbessern. In diesem Artikel werden wir tief in die Kernkonzepte eintauchen, die diese unterstützen: Event Loop, das Actor-Modell und CQRS (Command Query Responsibility Segregation) – von der Theorie über die Implementierung bis hin zum Design auf Architekturebene.
+In der modernen Softwareentwicklung ist das Verständnis von **asynchroner Verarbeitung** und **[Event-Driven](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/) Architecture** (EDA) unerlässlich, um die Skalierbarkeit und Verfügbarkeit von Systemen zu verbessern. In diesem Artikel werden wir tief in die Kernkonzepte eintauchen, die diese unterstützen: Event Loop, das Actor-Modell und CQRS (Command Query Responsibility Segregation) – von der Theorie über die Implementierung bis hin zum Design auf Architekturebene.
 
 ## 1. Grundlagen und Herausforderungen der asynchronen Verarbeitung
 
@@ -124,7 +124,7 @@ Im Actor-Modell wird die grundlegende Verarbeitungseinheit als "Actor" bezeichne
 
 - **Kapselung des Zustands**: Auf den internen Zustand eines Actors kann von außen nicht direkt zugegriffen werden.
 - **Nachrichtenwarteschlange (Mailbox)**: Eingehende Nachrichten werden in einer Mailbox in die Warteschlange gestellt und sequenziell verarbeitet.
-- **Lock-frei**: Da der Zustand nicht geteilt wird, sind Locking-Mechanismen wie Mutexe nicht erforderlich.
+- **[Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)-frei**: Da der Zustand nicht geteilt wird, sind Locking-Mechanismen wie Mutexe nicht erforderlich.
 
 ```mermaid
 flowchart LR
@@ -211,11 +211,11 @@ Das Ownership- und Typsystem von [Rust](https://kenji.blog/de/p/webassembly-wasm
 
 ---
 
-## 4. Auf in die Welt der Event-Driven Architecture (EDA)
+## 4. Auf in die Welt der [Event-Driven](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/) Architecture (EDA)
 
-Asynchrone Verarbeitung und das Actor-Modell sind Methoden zur Optimierung der parallelen Verarbeitung innerhalb einer einzelnen Anwendung. Das Konzept der Erweiterung auf das gesamte System (z. B. zwischen Microservices) ist die **Event-Driven Architecture (EDA)**.
+Asynchrone Verarbeitung und das Actor-Modell sind Methoden zur Optimierung der parallelen Verarbeitung innerhalb einer einzelnen Anwendung. Das Konzept der Erweiterung auf das gesamte System (z. B. zwischen [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)) ist die **Event-Driven Architecture (EDA)**.
 
-In EDA werden [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sänderungen innerhalb des Systems als "Ereignisse" dargestellt und asynchron über einen Event-Bus oder Message-Broker (Apache Kafka, RabbitMQ, AWS EventBridge usw.) verteilt.
+In EDA werden [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sänderungen innerhalb des Systems als "Ereignisse" dargestellt und asynchron über einen Event-Bus oder Message-Broker (Apache [Kafka](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/), AWS EventBridge usw.) verteilt.
 
 ### 4.1 Hauptkomponenten von EDA
 
@@ -237,7 +237,7 @@ Der größte Vorteil dieser Architektur ist die **lose Kopplung (Loose Coupling)
 
 ## 5. CQRS und Event Sourcing
 
-Wenn Sie sich eingehend mit der Event-Driven Architecture befassen, werden Sie feststellen, dass sich die Anforderungen an das Schreiben (Command) und Lesen (Query) von Daten stark unterscheiden. Das Muster, das dieses Problem löst, ist **CQRS (Command Query Responsibility Segregation)**.
+Wenn Sie sich eingehend mit der [Event-Driven](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/) Architecture befassen, werden Sie feststellen, dass sich die Anforderungen an das Schreiben (Command) und Lesen (Query) von Daten stark unterscheiden. Das Muster, das dieses Problem löst, ist **CQRS (Command Query Responsibility Segregation)**.
 
 ### 5.1 Architektur von CQRS
 
@@ -290,7 +290,7 @@ Jede der bisher besprochenen Technologien hat ihre eigenen geeigneten Anwendungs
 
 ### 6.1 Herausforderungen und Best Practices
 
-Event-Driven und asynchrone Architekturen sind leistungsstark, aber es ist notwendig, **Eventual Consistency** (letztendliche Konsistenz) zu akzeptieren. Da Daten nicht sofort auf das gesamte System angewendet werden (starke Konsistenz), sind auf der UI/UX-Seite Anpassungen erforderlich (z. B. optimistische UI-Aktualisierungen).
+[Event-Driven](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/) und asynchrone Architekturen sind leistungsstark, aber es ist notwendig, **Eventual [Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)** (letztendliche Konsistenz) zu akzeptieren. Da Daten nicht sofort auf das gesamte System angewendet werden (starke Konsistenz), sind auf der UI/UX-Seite Anpassungen erforderlich (z. B. optimistische UI-Aktualisierungen).
 
 Zusätzlich ist die Gewährleistung von **Idempotenz** in verteilten Systemen wichtig. Es muss so konzipiert sein, dass das Ergebnis unverändert bleibt, auch wenn dasselbe Ereignis aufgrund von Netzwerk-Neuübertragungen mehrmals verarbeitet wird.
 

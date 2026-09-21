@@ -365,7 +365,7 @@ Service Worker 的 `caches` API（Cache Storage）非常适合保存整个 HTTP 
 
 这时候登场的就是 **IndexedDB** 了。
 
-IndexedDB 是内置于浏览器中的异步事务型 NoSQL 数据库。它可以保存非常大量的数据，并且能够进行复杂的索引搜索。
+IndexedDB 是内置于浏览器中的异步事务型 [NoSQL](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/) 数据库。它可以保存非常大量的数据，并且能够进行复杂的索引搜索。
 
 ### 8.1. 为什么仅用 Cache Storage 是不够的？
 

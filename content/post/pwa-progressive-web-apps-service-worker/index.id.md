@@ -365,7 +365,7 @@ API `caches` (Cache Storage) milik Service Worker sangat cocok untuk menyimpan s
 
 Di sinilah **IndexedDB** berperan.
 
-IndexedDB adalah database NoSQL asinkron dan transaksional yang tertanam di dalam browser. Ia dapat menyimpan data dalam kapasitas sangat besar dan memungkinkan pencarian indeks yang kompleks.
+IndexedDB adalah database [NoSQL](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/) asinkron dan transaksional yang tertanam di dalam browser. Ia dapat menyimpan data dalam kapasitas sangat besar dan memungkinkan pencarian indeks yang kompleks.
 
 ### 8.1. Mengapa Penyimpanan Cache Saja Tidak Cukup?
 

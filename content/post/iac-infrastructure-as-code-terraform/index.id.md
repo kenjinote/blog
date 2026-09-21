@@ -328,7 +328,7 @@ Di dalam *pipeline* [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions
 # 9. Keandalan dan Pendekatan Matematis untuk Pemodelan Biaya
 
 Saat merancang infrastruktur menggunakan IaC, mengevaluasi keseimbangan antara keandalan (*Reliability*) dan biaya adalah hal yang penting.
-Misalnya, ketersediaan sistem dalam konfigurasi *multi-AZ* (*Availability Zone*) dapat direpresentasikan oleh model matematis.
+Misalnya, ketersediaan sistem dalam konfigurasi *multi-AZ* (*[Availability](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/) Zone*) dapat direpresentasikan oleh model matematis.
 
 Misalkan keandalan satu komponen (AZ) adalah $\text{R}_1$.
 Jika Anda menempatkan sumber daya di 2 AZ (redundansi), dan jika salah satu dari mereka beroperasi, keseluruhan sistem dianggap beroperasi, maka keandalan keseluruhan sistem $\text{R}_{total}$ dinyatakan dengan rumus berikut:

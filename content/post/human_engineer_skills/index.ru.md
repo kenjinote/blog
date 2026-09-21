@@ -122,19 +122,19 @@ flowchart TD
 
 При проектировании распределенной системы инженеры постоянно сталкиваются с «теоремой CAP». Теорема CAP — это принцип, согласно которому распределенная система может одновременно обеспечивать только два из следующих трех свойств:
 
-- **Consistency (Согласованность)**: Видят ли все узлы одновременно одни и те же данные?
-- **Availability (Доступность)**: Будет ли система продолжать отвечать на запросы, даже если часть узлов выйдет из строя?
+- **[Consistency](https://kenji.blog/ru/p/cap-theorem-distributed-systems-tradeoff/) (Согласованность)**: Видят ли все узлы одновременно одни и те же данные?
+- **[Availability](https://kenji.blog/ru/p/cap-theorem-distributed-systems-tradeoff/) (Доступность)**: Будет ли система продолжать отвечать на запросы, даже если часть узлов выйдет из строя?
 - **[Partition Tolerance](https://kenji.blog/ru/p/cap-theorem-distributed-systems/) (Устойчивость к разделению)**: Будет ли система продолжать работать в случае разделения сети?
 
-$$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
+$$ P(\text{[Availability](https://kenji.blog/ru/p/cap-theorem-distributed-systems-tradeoff/)} \cup \text{[Consistency](https://kenji.blog/ru/p/cap-theorem-distributed-systems-tradeoff/)}) | \text{PartitionTolerance} $$
 
 Поскольку в реальных сетях разделения (Partition) неизбежны, инженеры должны принимать жесткие компромиссные решения, напрямую связанные с бизнес-требованиями. Например, «Эта платежная система отдает приоритет Consistency, поэтому в случае сбоя сервис будет остановлен (CP)» или «Эта лента социальной сети отдает приоритет Availability, поэтому допускается временная несогласованность данных (AP)».
 
 Хотя ИИ может написать код, отдающий приоритет C, или код, отдающий приоритет A, он не может автономно принимать решения, сопряженные с бизнес-рисками, относительно того, «чему именно следует отдать приоритет».
 
-### 4.2 Асинхронная коммуникация и итоговая согласованность (Eventual Consistency)
+### 4.2 Асинхронная коммуникация и итоговая согласованность ([Eventual Consistency](https://kenji.blog/ru/p/cap-theorem-distributed-systems-tradeoff/))
 
-По мере роста масштабов системы взаимодействие между сервисами переходит от синхронной связи через [REST API](https://kenji.blog/ru/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ru/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) к асинхронной связи с использованием очередей сообщений (Kafka, RabbitMQ и т. д.). Согласованность данных в этом случае смещается от немедленной согласованности к «итоговой согласованности» (Eventual Consistency).
+По мере роста масштабов системы взаимодействие между сервисами переходит от синхронной связи через [REST API](https://kenji.blog/ru/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ru/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) к асинхронной связи с использованием очередей сообщений ([Kafka](https://kenji.blog/ru/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/ru/p/event-driven-architecture-message-queue-kafka-rabbitmq/) и т. д.). Согласованность данных в этом случае смещается от немедленной согласованности к «итоговой согласованности» (Eventual [Consistency](https://kenji.blog/ru/p/cap-theorem-distributed-systems-tradeoff/)).
 В какой момент следует внедрять сложные архитектурные шаблоны, такие как Saga или [CQRS](https://kenji.blog/ru/p/event-driven-architecture-async/) (Command Query Responsibility Segregation)? Принятие этих комплексных решений и создание чертежа всей системы — это истинное предназначение Senior-инженера.
 
 ```mermaid

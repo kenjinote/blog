@@ -73,7 +73,7 @@ Dies untermauert mathematisch, dass der **B-Baum** bei der Suche in sehr großen
 
 ## 4. Der Datenbank-Standard: Die Evolution zum B+-Baum
 
-In tatsächlichen RDBMS (wie MySQL InnoDB oder PostgreSQL) wird eine verbesserte Version des B-Baums, der **B+-Baum** (B+Tree), verwendet.
+In tatsächlichen [RDBMS](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/) (wie MySQL InnoDB oder PostgreSQL) wird eine verbesserte Version des B-Baums, der **B+-Baum** (B+Tree), verwendet.
 
 ### 4.1 Unterschiede zwischen B-Baum und B+-Baum
 

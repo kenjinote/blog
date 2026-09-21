@@ -102,7 +102,7 @@ int main() {
 
 ---
 
-## 3. 避免資料競爭與同步：互斥鎖 (Mutex) 與鎖 (Lock)
+## 3. 避免資料競爭與同步：互斥鎖 (Mutex) 與鎖 ([Lock](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/))
 
 當多個執行緒同時存取相同的記憶體區域（如變數），且至少有一個執行緒進行寫入時，就會發生 **資料競爭 (Data Race)** 。在 C++ 標準中，資料競爭會導致未定義行為 (Undefined Behavior)。為了防止這種情況，需要使用 `std::mutex` 進行互斥控制。
 
@@ -316,7 +316,7 @@ graph TD
 
 * **偽共享 (False Sharing):** 
   即使多個執行緒更新的是不同的變數，但只要這些變數被配置在 CPU 的同一個快取行 (Cache Line, 通常為 64 bytes) 中，為了維持快取一致性 (Cache Coherency)，就會發生無謂的記憶體同步，導致效能大幅下降。為了防止這種情況，需要使用 `alignas` 標示符將變數對齊到快取行的邊界。
-* **無鎖 (Lock-Free) 與 `std::atomic`:**
+* **無鎖 ([Lock](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)-Free) 與 `std::atomic`:**
   為了避免互斥鎖的鎖定/解鎖負擔，可以考慮導入使用 `<atomic>` 的不可分割操作（如 Compare-And-Swap）或無鎖資料結構。不過，這需要對記憶體順序 (`std::memory_order`) 有正確的理解，且實作難度極高，因此通常只在經過謹慎的效能測量後，判斷為必要時才會引入。
 
 ---

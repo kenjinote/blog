@@ -33,7 +33,7 @@ Genau wie beim Austausch von verrottetem Holz durch neues werden alte Module suk
 
 ### Strangler Fig Pattern (Würgefeigen-Muster)
 
-Ein typisches Architekturmuster für den Systemersatz ist das **Strangler Fig Pattern**. Dabei wird ein riesiges und komplexes Legacy-System (Monolith) nicht auf einmal ersetzt, sondern die Funktionen werden nach und nach in ein neues System (z. B. Microservices) migriert.
+Ein typisches Architekturmuster für den Systemersatz ist das **Strangler Fig Pattern**. Dabei wird ein riesiges und komplexes Legacy-System (Monolith) nicht auf einmal ersetzt, sondern die Funktionen werden nach und nach in ein neues System (z. B. [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)) migriert.
 
 ```mermaid
 graph LR

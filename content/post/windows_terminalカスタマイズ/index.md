@@ -409,7 +409,7 @@ $$
 各変数の意味と典型的な所要時間は以下の通りです：
 
 - $ T_{hw\_input} $: キーボードのメカニカルスイッチがオンになり、USBコントローラ経由でポーリングされ、割り込み信号が送られるまでのハードウェア遅延（約 1〜5 ms）。
-- $ T_{os} $: OSのHID（Human Interface Device）ドライバ層によるメッセージキュー処理遅延（約 1〜2 ms）。
+- $ T_{os} $: OSのHID（Human Interface Device）ドライバ層による[メッセージキュー](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/)処理遅延（約 1〜2 ms）。
 - $ T_{pty} $: ConPTY（擬似ターミナル）によるバッファリングと文字エンコーディング（UTF-8からUTF-16など）変換の遅延（約 2〜10 ms）。
 - $ T_{app} $: シェル（PowerShell/Bash）側のコマンド解釈と、画面出力を決定する処理時間。Oh My PoshやStarshipによるGitステータス取得などの処理時間もここに含まれます（約 10〜50 ms）。
 - $ T_{render} $: Windows Terminal（DirectWrite/DirectX）がテキストグリフをテクスチャとしてラスタライズし、GPUメモリに転送、スワップチェーンをフリップするまでのレンダリング遅延（約 2〜8 ms）。
@@ -433,7 +433,7 @@ Windows Terminalを極限までカスタマイズしていくと、設定ファ�
 `settings.json` の構造は厳密に定義されており、JSON Schemaを用いてエディタ（VS Codeなど）でリアルタイムに構文チェックを行うことが推奨されます。VS Codeで `settings.json` を開くと、デフォルトでWindows Terminalのスキーマが適用され、無効なプロパティ名や値の型エラー（例えば、数値を期待する箇所に文字列を指定した場合など）が波線で即座に警告されます。
 
 ## 9.2 プロンプトのパフォーマンスプロファイリング
-プロンプトの表示が極端に遅い場合（エンターキーを押してから次の入力行が出るまでにラグがある場合）、Oh My PoshやStarshipの実行時間に問題がある可能性が高いです。Oh My Poshには、各ブロックの描画時間を計測する高度なデバッグ機能が備わっています。
+プロンプトの表示が極端に遅い場合（エンターキーを押してから次の入力行が出るまでにラグがある場合）、Oh My PoshやStarshipの実行時間に問題がある可能性が高いです。Oh My Poshには、各ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の描画時間を計測する高度なデバッグ機能が備わっています。
 
 ```powershell
 oh-my-posh debug

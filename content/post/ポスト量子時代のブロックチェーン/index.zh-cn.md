@@ -271,7 +271,7 @@ $$
 引入PQC面临的最大障碍是数据量的大幅膨胀。
 目前的ECDSA签名大小约为70字节，而格密码学Dilithium（ML-DSA）的签名大小约为2,420到4,595字节（取决于安全级别），公钥大小也超过1,300字节。基于哈希的SPHINCS+的单个签名大小更是高达几万字节。
 
-如果[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)在不改变现有区块大小上限（包含SegWit在内约4MB的权重）的情况下引入PQC，那么一个区块能容纳的交易数量将急剧下降。网络的吞吐量（TPS：Transactions Per Second）将遭到毁灭性打击，转账拥堵将成为常态。
+如果[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)在不改变现有区块大小上限（包含SegWit在内约4MB的权重）的情况下引入PQC，那么一个区块能容纳的交易数量将急剧下降。网络的吞吐量（TPS：[Transaction](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)s Per Second）将遭到毁灭性打击，转账拥堵将成为常态。
 为了解决这个问题，需要大幅提高区块大小，但这会增加全节点的存储和网络带宽要求，让个人运行节点变得更加困难，从而陷入导致 **网络中心化** 的困境。
 
 ```mermaid

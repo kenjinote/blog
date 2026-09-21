@@ -210,7 +210,7 @@ let result = divide(10.0, 2.0).and_then(|res| divide(res, 2.0));
 
 並非所有的 GoF 模式都已消亡。在架構邊界發揮作用的模式，至今依然極為重要。
 
-1. **Facade（外觀）** : 為複雜的子系統提供簡單介面的概念，已擴展為微服務架構中的 API Gateway（BFF: Backend for Frontend）。
+1. **Facade（外觀）** : 為複雜的子系統提供簡單介面的概念，已擴展為微服務架構中的 [API Gateway](https://kenji.blog/zh-tw/p/microservices-architecture-bff-api-gateway/)（[BFF](https://kenji.blog/zh-tw/p/microservices-architecture-bff-api-gateway/): [Backend for Frontend](https://kenji.blog/zh-tw/p/microservices-architecture-bff-api-gateway/)）。
 2. **Adapter（轉接器）** : 作為與外部系統整合，或在整潔架構（Clean Architecture）、六角架構中的「埠與轉接器（Ports and Adapters）」，是保持系統鬆散耦合的關鍵。
 3. **Decorator（裝飾者）** : 在 Python 或 TypeScript 中，已昇華為基於標註的元編程（Metaprogramming）功能 `@Decorator` 作為語言特性。
 

@@ -16,7 +16,7 @@ Dans le développement moderne de l'IA, Python est le standard de facto. Grâce 
 
 Alors, pourquoi s'embêter à exclure Python et à créer un moteur d'inférence d'IA uniquement en C++ ? Il y a plusieurs raisons fortes à cela.
 
-1. **Performances extrêmes et faible latence** : Vous pouvez complètement éliminer les surcoûts liés au GIL (Global Interpreter Lock) de Python et au typage dynamique. Particulièrement dans les systèmes nécessitant un temps réel, un délai de quelques millisecondes peut être fatal.
+1. **Performances extrêmes et faible latence** : Vous pouvez complètement éliminer les surcoûts liés au GIL (Global Interpreter [Lock](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/)) de Python et au typage dynamique. Particulièrement dans les systèmes nécessitant un temps réel, un délai de quelques millisecondes peut être fatal.
 2. **Facilité de déploiement** : Il est très difficile de configurer un environnement Python (avec d'énormes bibliothèques et l'enfer des dépendances) sur la machine de l'utilisateur final. Avec C++, il vous suffit de distribuer un seul exécutable binaire lié statiquement (un `.exe` ou un binaire ELF).
 3. **Prise en charge des périphériques Edge** : Dans des environnements aux ressources très limitées comme les smartphones, les systèmes embarqués ou le Raspberry Pi, il n'y a pas la marge pour exécuter un runtime Python consommant plusieurs gigaoctets de mémoire.
 4. **Contrôle direct du matériel** : C++ permet un contrôle de bas niveau tel que le moment de l'allocation de la mémoire, l'utilisation explicite d'instructions SIMD et l'optimisation des transferts de mémoire avec le GPU.
@@ -352,7 +352,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-De plus, lors de la génération de tokens de type autorégressif (Autoregressive), il est nécessaire de conserver les résultats calculés des tokens passés (Key et Value). C'est ce qu'on appelle le « **Cache KV (Key-Value Cache)** ».
+De plus, lors de la génération de tokens de type autorégressif (Autoregressive), il est nécessaire de conserver les résultats calculés des tokens passés (Key et Value). C'est ce qu'on appelle le « **Cache KV ([Key-Value](https://kenji.blog/fr/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)** ».
 
 ```mermaid
 graph TD

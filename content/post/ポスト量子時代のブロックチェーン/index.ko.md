@@ -271,7 +271,7 @@ PQC 알고리즘(Dilithium이나 SPHINCS+ 등)이 존재한다고 해서 이를 
 PQC 도입에 있어서 가장 큰 장벽은 데이터 크기의 대폭적인 비대화입니다.
 현재 ECDSA의 서명 크기가 약 70바이트인 것에 반해, 격자 기반 암호인 Dilithium(ML-DSA)에서는 서명 크기가 약 2,420바이트~4,595바이트(보안 레벨에 따라 다름)이며 공개키 크기도 1,300바이트를 넘습니다. 해시 기반인 SPHINCS+에 이르러서는 서명만으로 수만 바이트에 달합니다.
 
-만약 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)이 현재와 동일한 블록 크기 상한(SegWit 포함 약 4MB의 가중치) 그대로 PQC를 도입할 경우, 1개의 블록에 저장할 수 있는 트랜잭션의 수는 격감합니다. 네트워크의 처리량(TPS: Transactions Per Second)은 파멸적으로 저하되고 송금 지연이 상태화될 것입니다.
+만약 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)이 현재와 동일한 블록 크기 상한(SegWit 포함 약 4MB의 가중치) 그대로 PQC를 도입할 경우, 1개의 블록에 저장할 수 있는 트랜잭션의 수는 격감합니다. 네트워크의 처리량(TPS: [Transaction](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/)s Per Second)은 파멸적으로 저하되고 송금 지연이 상태화될 것입니다.
 이를 해결하기 위해서는 블록 크기를 대폭 늘려야 하지만, 이는 풀 노드의 스토리지 요구 사항이나 네트워크 대역폭 요구 사항을 증대시켜 개인의 노드 운영을 어렵게 만들고, 결과적으로 **네트워크의 중앙집권화** 를 초래한다는 딜레마에 빠지게 됩니다.
 
 ```mermaid

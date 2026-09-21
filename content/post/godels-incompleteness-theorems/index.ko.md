@@ -23,7 +23,7 @@ slug: "godels-incompleteness-theorems"
 
 힐베르트는 수학의 모든 추론을 완전히 기호화하고 기계적인 규칙만으로 수학을 재구축하려고 시도했습니다. 그가 제창한 '힐베르트 프로그램'이 목표로 한 것은 수학의 형식적 체계(Formal System)에서 다음 3가지 성질을 증명하는 것이었습니다.
 
-1. ** 무모순성 ** (Consistency): 체계 내에 모순(어떤 명제 $P$ 와 그 부정 $\neg P$ 가 모두 증명되는 것)이 존재하지 않을 것.
+1. ** 무모순성 ** ([Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/)): 체계 내에 모순(어떤 명제 $P$ 와 그 부정 $\neg P$ 가 모두 증명되는 것)이 존재하지 않을 것.
 2. ** 완전성 ** (Completeness): 어떠한 수학적 명제라도 그 체계 내에서 참 또는 거짓 어느 한쪽으로 반드시 증명할 수 있을 것.
 3. ** 결정 가능성 ** (Decidability): 임의의 명제가 주어졌을 때 그것이 증명 가능한지 여부를 판정하는 기계적인 절차가 존재할 것.
 

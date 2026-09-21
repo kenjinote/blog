@@ -73,7 +73,7 @@ $$
 
 ## 4. 数据库的标准：向B+树的进化
 
-实际的RDBMS（如MySQL的InnoDB或PostgreSQL等）使用的是B树的改进版，即 **B+树** （B+Tree）。
+实际的[RDBMS](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)（如MySQL的InnoDB或PostgreSQL等）使用的是B树的改进版，即 **B+树** （B+Tree）。
 
 ### 4.1 B树与B+树的区别
 

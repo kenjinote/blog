@@ -15,13 +15,13 @@ tags:
 
 在現代軟體架構中，將系統分散化已經成為不可避免的需求。隨著雲端運算的普及、微服務架構的採用以及巨量資料處理需求的增加，依賴單一強大伺服器（垂直擴展，Scale-up）的作法已不再是主流，取而代之的是協調多台廉價伺服器（水平擴展，Scale-out）的方法。
 
-然而，在建置與維運分散式系統時，工程師經常面臨沉重的選擇，那就是「資料一致性」與「系統可用性」之間的權衡。將這個本質性的困境以數學方式證明並公式化的，就是 **CAP定理** （CAP theorem）。
+然而，在建置與維運分散式系統時，工程師經常面臨沉重的選擇，那就是「資料一致性」與「系統可用性」之間的權衡。將這個本質性的困境以數學方式證明並公式化的，就是 **[CAP定理](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)** （CAP theorem）。
 
 這篇文章將從CAP定理的基礎、證明，到現代分散式資料庫如何應對這個困境，甚至擴展到 **PACELC定理** ，透過數學公式、圖解以及實作範例，進行極為詳細的深入探討。
 
 ## 1. 什麼是分散式系統？
 
-在討論CAP定理之前，讓我們先釐清什麼是 **分散式系統** （Distributed System）。
+在討論CAP定理之前，讓我們先釐清什麼是 **分散式系統** （[Distributed System](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)）。
 
 分散式系統是由透過網路互連的多個獨立電腦（節點）所組成，對使用者而言，它們的行為就像是一個單一且一致的系統。
 
@@ -44,20 +44,20 @@ graph LR
 分散式系統的主要目的如下：
 
 1.  **擴展性** （Scalability）：當流量或資料量增加時，透過新增節點來提升整體系統的處理能力。
-2.  **可用性** （Availability）：即使部分節點發生故障，其他節點仍能繼續處理，確保整個系統持續提供服務。
+2.  **可用性** （[Availability](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)）：即使部分節點發生故障，其他節點仍能繼續處理，確保整個系統持續提供服務。
 3.  **效能** （Performance）：對於地理位置分散的使用者，由物理上較近的節點進行回應以降低延遲。
 
 然而，建立在不穩定的網路基礎之上，分散式系統不可避免地會伴隨「網路分割（Network Partition）」或「訊息延遲與遺失」等挑戰。
 
-## 2. CAP定理的三個要素
+## 2. [CAP定理](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)的三個要素
 
 CAP定理於2000年由Eric Brewer提出，並在2002年由Seth Gilbert與Nancy Lynch給予了嚴格的證明。
 
 該定理主張，在分散式系統中，以下三個特性 **最多只能同時滿足兩個** 。
 
-1.  **C: Consistency** （一致性）
+1.  **C: [Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)** （一致性）
 2.  **A: Availability** （可用性）
-3.  **P: Partition Tolerance** （分區容錯性）
+3.  **P: [Partition Tolerance](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)** （分區容錯性）
 
 讓我們來看看各自的嚴格定義。
 
@@ -120,7 +120,7 @@ sequenceDiagram
 
 ## 4. Quorum（法定人數）與一致性調校
 
-在許多分散式資料庫（例如：Cassandra、DynamoDB等）中，並不會將整個系統綁定死在CP或AP上，而是允許透過針對每個請求使用 **Quorum** （法定人數）進行參數調整，來平衡C與A。
+在許多分散式資料庫（例如：[Cassandra](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/)、DynamoDB等）中，並不會將整個系統綁定死在CP或AP上，而是允許透過針對每個請求使用 **Quorum** （法定人數）進行參數調整，來平衡C與A。
 
 假設副本數為 $ N $。
 假設要將寫入視為成功所需收到回應的節點數為 $ W $。
@@ -156,7 +156,7 @@ print(system.check_consistency(W=1, R=1))  # 1 + 1 <= 3 -> Eventual Consistency 
 *   設定為 $ W=2, R=2 $ 時，可始終保證一致性。但若有兩個節點當機，讀寫都將會失敗（偏CP）。
 *   設定為 $ W=1, R=1 $ 時，具備高速且高可用性，但有可能讀取到舊資料（偏AP，最終一致性）。
 
-## 5. 從CAP定理到PACELC定理
+## 5. 從[CAP定理](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)到PACELC定理
 
 CAP定理只定義了「網路分割發生時（Partition）」的行為。然而，即使系統正常運作（無分割）時，系統設計中仍存在著權衡。彌補了這一點的，是耶魯大學的Daniel Abadi於2010年提出的 **PACELC定理** 。
 
@@ -171,10 +171,10 @@ PACELC可以這樣解讀：
 
 ### 5.1. 代表性資料庫的PACELC分類
 
-*   **PC/EC** (HBase, MongoDB, Zookeeper)
+*   **PC/EC** (HBase, [MongoDB](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/), Zookeeper)
     *   分割時優先考量一致性（PC）。正常時也優先考量一致性，並容忍較高的延遲（EC）。
-*   **PA/EL** (Cassandra, Riak, DynamoDB)
-    *   分割時優先考量可用性（PA）。正常時優先考量低延遲，並接受最終一致性（Eventual Consistency）（EL）。
+*   **PA/EL** ([Cassandra](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/), Riak, DynamoDB)
+    *   分割時優先考量可用性（PA）。正常時優先考量低延遲，並接受最終一致性（Eventual [Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)）（EL）。
 *   **PA/EC** (MySQL Cluster等)
     *   分割時優先考量可用性，而在正常時嘗試維持一致性。
 
@@ -273,15 +273,15 @@ stateDiagram-v2
 
 ## 8. 微服務與交易處理
 
-CAP定理並不僅限於單一資料庫的討論，它對現代的 **微服務架構** 也有深遠的影響。
+[CAP定理](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)並不僅限於單一資料庫的討論，它對現代的 **微服務架構** 也有深遠的影響。
 
-在單體式應用程式（Monolithic Application）中，可以透過單一關聯式資料庫的 ACID 交易處理輕鬆保持資料的一致性。然而，在根據業務領域將服務與資料庫切割的微服務架構中，就必須面對跨服務的分散式交易處理。
+在單體式應用程式（Monolithic Application）中，可以透過單一關聯式資料庫的 [ACID](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) 交易處理輕鬆保持資料的一致性。然而，在根據業務領域將服務與資料庫切割的微服務架構中，就必須面對跨服務的分散式交易處理。
 
 這時CAP定理就會發揮作用。如果使用分散式交易處理（例如：二階段提交 - 2PC）來追求強一致性（C），當任何一個服務發生故障或產生通訊延遲時，整個系統就會被阻塞，導致可用性（A）與延遲（L）大幅降低。
 
 為了解決這個問題，微服務中廣泛採用了 **Saga模式** 。
 
-Saga模式是將一個大型交易分割為連續的區域性交易，並使用非同步訊息傳遞（如 Kafka 或 RabbitMQ）來進行協調的手法。
+Saga模式是將一個大型交易分割為連續的區域性交易，並使用非同步訊息傳遞（如 [Kafka](https://kenji.blog/zh-tw/p/event-driven-architecture-message-queue-kafka-rabbitmq/) 或 [RabbitMQ](https://kenji.blog/zh-tw/p/event-driven-architecture-message-queue-kafka-rabbitmq/)）來進行協調的手法。
 
 ```mermaid
 flowchart TD
@@ -295,16 +295,16 @@ flowchart TD
     MessageBroker -->|"取消"| Order
 ```
 
-在Saga模式中，放棄了強一致性，並接受了 **最終一致性（Eventual Consistency）** （偏向AP的做法）。如果在途中處理失敗，它不會執行退回（Rollback），而是發出 **補償交易（Compensating Transaction）** ，實作邏輯上將狀態恢復原狀的處理。如此一來，在維持高擴展性與可用性的同時，也能實現商業上可接受的一致性水準。
+在Saga模式中，放棄了強一致性，並接受了 **最終一致性（Eventual [Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)）** （偏向AP的做法）。如果在途中處理失敗，它不會執行退回（Rollback），而是發出 **補償交易（Compensating [Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)）** ，實作邏輯上將狀態恢復原狀的處理。如此一來，在維持高擴展性與可用性的同時，也能實現商業上可接受的一致性水準。
 
 ## 總結
 
-本文中，我們深入探討了分散式系統中最重要原則的CAP定理。
+本文中，我們深入探討了分散式系統中最重要原則的[CAP定理](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)。
 
-*   **CAP定理** 說明了在分散式系統中，無法同時滿足 Consistency（一致性）、Availability（可用性）與 Partition Tolerance（分區容錯性）這三項，在分割（P）無可避免的現實世界中，實際上就是 **CP** 與 **AP** 之間的選擇。
+*   **CAP定理** 說明了在分散式系統中，無法同時滿足 Consistency（一致性）、[Availability](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)（可用性）與 [Partition Tolerance](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)（分區容錯性）這三項，在分割（P）無可避免的現實世界中，實際上就是 **CP** 與 **AP** 之間的選擇。
 *   **PACELC定理** 擴展了此概念，指出即使在未發生分割的正常運作期間，延遲（L）與一致性（C）之間也存在著權衡。
 *   透過使用 **Quorum（法定人數）** ，可以根據需求彈性調整一致性與可用性的平衡（ $ W+R>N $ ）。
 *   AP系統運用 **向量時鐘** 解決衝突，CP系統則運用如 **[Raft](https://kenji.blog/zh-tw/p/byzantine-generals-problem-consensus/)** 的共識演算法來進行嚴格的排序。
 *   這些概念不僅適用於資料庫，也是現代 **微服務架構** 中設計分散式交易處理（如Saga模式）不可或缺的基礎知識。
 
-系統設計中沒有「銀彈」。正確理解CAP定理與PACELC定理，適當釐清自家業務需求究竟是「無論如何都要守護一致性（如支付）」，還是「即使容忍短暫的不一致也絕對不能讓系統停止（如社群網站的時間軸）」，並選擇最佳的權衡，可以說是卓越的架構師所必備的最大技能。
+系統設計中沒有「銀彈」。正確理解[CAP定理](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)與PACELC定理，適當釐清自家業務需求究竟是「無論如何都要守護一致性（如支付）」，還是「即使容忍短暫的不一致也絕對不能讓系統停止（如社群網站的時間軸）」，並選擇最佳的權衡，可以說是卓越的架構師所必備的最大技能。

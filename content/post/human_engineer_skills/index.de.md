@@ -116,25 +116,25 @@ Anstatt die KI anzuweisen, „das gesamte System zu erstellen“, delegiert der 
 
 ## 4. Menschliche Fähigkeit ③: Architekturdesign und Skalierung verteilter Systeme
 
-Moderne Software hat sich von Monolithen, die auf einem einzigen Server laufen, zu Cloud-nativen Microservices-Architekturen und ereignisgesteuerten Architekturen ([Event-Driven](https://kenji.blog/de/p/event-driven-architecture-async/) Architecture) entwickelt. Der Entwurf solcher verteilten Systeme ist für eine KI, die nur lokale Logik optimieren kann, ein äußerst schwieriges Terrain.
+Moderne Software hat sich von Monolithen, die auf einem einzigen Server laufen, zu Cloud-nativen [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen und ereignisgesteuerten Architekturen ([Event-Driven](https://kenji.blog/de/p/event-driven-architecture-async/) Architecture) entwickelt. Der Entwurf solcher verteilten Systeme ist für eine KI, die nur lokale Logik optimieren kann, ein äußerst schwieriges Terrain.
 
 ### 4.1 CAP-Theorem und Kompromissentscheidungen
 
 Beim Entwurf verteilter Systeme werden Ingenieure immer mit dem „CAP-Theorem“ konfrontiert. Das CAP-Theorem ist das Prinzip, dass ein verteiltes System nur zwei der folgenden drei Eigenschaften gleichzeitig erfüllen kann:
 
-- **Consistency (Konsistenz)**: Sehen alle Knoten gleichzeitig dieselben Daten?
-- **Availability (Verfügbarkeit)**: Antwortet das System weiterhin, auch wenn ein Teil der Knoten ausfällt?
+- **[Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/) (Konsistenz)**: Sehen alle Knoten gleichzeitig dieselben Daten?
+- **[Availability](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/) (Verfügbarkeit)**: Antwortet das System weiterhin, auch wenn ein Teil der Knoten ausfällt?
 - **[Partition Tolerance](https://kenji.blog/de/p/cap-theorem-distributed-systems/) (Ausfalltoleranz/Netzwerkpartitionierung)**: Funktioniert das System auch bei Netzwerkunterbrechungen weiter?
 
-$$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
+$$ P(\text{[Availability](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)} \cup \text{[Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)}) | \text{PartitionTolerance} $$
 
 Da Partitionen in realen Netzwerken unvermeidlich sind, müssen Ingenieure strenge Kompromissentscheidungen treffen, die direkt mit den Geschäftsanforderungen verknüpft sind, wie z.B. „Dieses Zahlungssystem priorisiert Konsistenz und stoppt den Dienst im Fehlerfall (CP)“ oder „Die Timeline dieses sozialen Netzwerks priorisiert Verfügbarkeit und toleriert vorübergehende Dateninkonsistenzen (AP)“.
 
 Eine KI kann zwar „Code schreiben, der C priorisiert“ oder „Code, der A priorisiert“, aber sie kann nicht autonom die mit Geschäftsrisiken verbundene Entscheidung treffen, „welches von beiden priorisiert werden sollte“.
 
-### 4.2 Asynchrone Kommunikation und Eventual Consistency
+### 4.2 Asynchrone Kommunikation und [Eventual Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)
 
-Wenn Systeme größer werden, verlagert sich die Kommunikation zwischen Diensten von der synchronen Kommunikation über REST-APIs zur asynchronen Kommunikation über Message Queues (Kafka, RabbitMQ usw.). Die Datenkonsistenz ändert sich hier von sofortiger Konsistenz zu „Eventual Consistency“ (letztendlicher Konsistenz).
+Wenn Systeme größer werden, verlagert sich die Kommunikation zwischen Diensten von der synchronen Kommunikation über REST-APIs zur asynchronen Kommunikation über [Message Queue](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/)s ([Kafka](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/) usw.). Die Datenkonsistenz ändert sich hier von sofortiger Konsistenz zu „Eventual Consistency“ (letztendlicher Konsistenz).
 Wann sollten fortschrittliche Architekturmuster wie das Saga-Muster oder [CQRS](https://kenji.blog/de/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) eingeführt werden? Solche komplexen Entscheidungen zu treffen und die Blaupause für das gesamte System zu entwerfen, ist die wahre Meisterleistung eines Senior-Engineers.
 
 ```mermaid
@@ -157,7 +157,7 @@ Je mehr von KI generierter Code vorhanden ist, desto höher ist das Risiko, dass
 
 ### 5.1 Design der Observability (Beobachtbarkeit)
 
-Um Systemausfälle schnell beheben zu können, reicht es nicht aus, Fehlermeldungen in eine KI einzufügen. In einer Microservices-Umgebung durchläuft eine einzige Anfrage Dutzende von Diensten.
+Um Systemausfälle schnell beheben zu können, reicht es nicht aus, Fehlermeldungen in eine KI einzufügen. In einer [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Umgebung durchläuft eine einzige Anfrage Dutzende von Diensten.
 Ingenieure müssen die „drei Säulen der Observability“ – Logs, Metriken und Traces – angemessen in das System integrieren. Es ist die Aufgabe des Menschen, eine Infrastruktur aufzubauen, die Tools wie OpenTelemetry nutzt, um durch Distributed Tracing zu identifizieren, „in welcher Datenbankabfrage welchen Dienstes die Verzögerung auftritt“.
 
 ### 5.2 Umgebungsabhängige Bugs und Chaos Engineering

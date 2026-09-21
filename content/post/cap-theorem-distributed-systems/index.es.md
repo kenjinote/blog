@@ -21,7 +21,7 @@ En este artículo, exploraremos con gran detalle desde los conceptos básicos de
 
 ## 1. ¿Qué es un Sistema Distribuido?
 
-Antes de hablar sobre el teorema CAP, aclaremos qué es exactamente un **Sistema Distribuido** (Distributed System).
+Antes de hablar sobre el teorema CAP, aclaremos qué es exactamente un **Sistema Distribuido** ([Distributed System](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/)).
 
 Un sistema distribuido es aquel en el que múltiples computadoras independientes (nodos) interconectadas por una red actúan como un único sistema coherente desde el punto de vista del usuario.
 
@@ -55,9 +55,9 @@ El teorema CAP fue propuesto por Eric Brewer en el año 2000, y fue estrictament
 
 El teorema sostiene que, en un sistema distribuido, de las siguientes tres propiedades, solo se pueden satisfacer simultáneamente **un máximo de dos**.
 
-1.  **C: Consistency** (Consistencia)
-2.  **A: Availability** (Disponibilidad)
-3.  **P: Partition Tolerance** (Tolerancia a particiones)
+1.  **C: [Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/)** (Consistencia)
+2.  **A: [Availability](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/)** (Disponibilidad)
+3.  **P: [Partition Tolerance](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/)** (Tolerancia a particiones)
 
 Veamos las definiciones estrictas de cada una de ellas.
 
@@ -120,7 +120,7 @@ En los sistemas distribuidos reales donde pueden ocurrir particiones de red (**P
 
 ## 4. Quorum y el ajuste de la Consistencia
 
-En muchas bases de datos distribuidas (ej: Cassandra, DynamoDB, etc.), en lugar de limitar el sistema por completo a CP o AP fijo, se puede ajustar el equilibrio entre C y A mediante la configuración de parámetros usando **Quorum** (cuórum) para cada solicitud.
+En muchas bases de datos distribuidas (ej: [Cassandra](https://kenji.blog/es/p/nosql-database-selection-kvs-document-graph-wide-column/), DynamoDB, etc.), en lugar de limitar el sistema por completo a CP o AP fijo, se puede ajustar el equilibrio entre C y A mediante la configuración de parámetros usando **Quorum** (cuórum) para cada solicitud.
 
 Sea $ N $ el número de réplicas.
 Sea $ W $ el número de nodos que deben responder para considerar que una escritura ha tenido éxito.
@@ -171,10 +171,10 @@ En un sistema distribuido, si se escriben datos de forma sincrónica en todos lo
 
 ### 5.1. Clasificación PACELC de bases de datos representativas
 
-*   **PC/EC** (HBase, MongoDB, Zookeeper)
+*   **PC/EC** (HBase, [MongoDB](https://kenji.blog/es/p/nosql-database-selection-kvs-document-graph-wide-column/), Zookeeper)
     *   Priorizan la consistencia durante las particiones (PC). También priorizan la consistencia en tiempos normales, tolerando la latencia (EC).
-*   **PA/EL** (Cassandra, Riak, DynamoDB)
-    *   Priorizan la disponibilidad durante las particiones (PA). Priorizan la baja latencia en tiempos normales, aceptando la consistencia eventual (Eventual Consistency) (EL).
+*   **PA/EL** ([Cassandra](https://kenji.blog/es/p/nosql-database-selection-kvs-document-graph-wide-column/), Riak, DynamoDB)
+    *   Priorizan la disponibilidad durante las particiones (PA). Priorizan la baja latencia en tiempos normales, aceptando la consistencia eventual (Eventual [Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/)) (EL).
 *   **PA/EC** (MySQL Cluster, etc.)
     *   Priorizan la disponibilidad durante las particiones, pero intentan mantener la consistencia en tiempos normales.
 
@@ -275,13 +275,13 @@ Gracias a esto, se eliminan completa y algorítmicamente las inconsistencias de 
 
 El teorema CAP no se limita a bases de datos individuales, sino que también tiene un profundo impacto en la **arquitectura de microservicios** moderna.
 
-En aplicaciones monolíticas, era fácil mantener la consistencia de los datos mediante transacciones ACID usando una única base de datos relacional. Sin embargo, en los microservicios, donde los servicios y las bases de datos están divididos por dominio de negocio, se requieren transacciones distribuidas que abarquen múltiples servicios.
+En aplicaciones monolíticas, era fácil mantener la consistencia de los datos mediante transacciones [ACID](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/) usando una única base de datos relacional. Sin embargo, en los microservicios, donde los servicios y las bases de datos están divididos por dominio de negocio, se requieren transacciones distribuidas que abarquen múltiples servicios.
 
 Aquí es donde el teorema CAP muestra sus colmillos. Si se busca una consistencia fuerte (C) mediante transacciones distribuidas (ej: confirmación en dos fases - 2PC), y algún servicio se cae o hay un retraso en la comunicación, todo el sistema se bloqueará, disminuyendo drásticamente la disponibilidad (A) y la latencia (L).
 
 Para hacer frente a este problema, el **Patrón Saga** (Saga pattern) es ampliamente adoptado en microservicios.
 
-El patrón Saga es una técnica que divide una transacción grande en una serie de transacciones locales secuenciales, coordinándolas mediante mensajería asíncrona (como Kafka o RabbitMQ).
+El patrón Saga es una técnica que divide una transacción grande en una serie de transacciones locales secuenciales, coordinándolas mediante mensajería asíncrona (como [Kafka](https://kenji.blog/es/p/event-driven-architecture-message-queue-kafka-rabbitmq/) o [RabbitMQ](https://kenji.blog/es/p/event-driven-architecture-message-queue-kafka-rabbitmq/)).
 
 ```mermaid
 flowchart TD
@@ -295,13 +295,13 @@ flowchart TD
     MessageBroker -->|"Cancelar"| Order
 ```
 
-En el patrón Saga, se renuncia a la consistencia fuerte y se acepta la **consistencia eventual (Eventual Consistency)** (enfoque AP). Si el proceso falla a mitad de camino, en lugar de un rollback (reversión), se emite una **transacción de compensación (Compensating Transaction)**, implementando una lógica para revertir el estado lógicamente. De este modo, se logra un nivel de consistencia aceptable para el negocio, manteniendo al mismo tiempo una alta escalabilidad y disponibilidad.
+En el patrón Saga, se renuncia a la consistencia fuerte y se acepta la **consistencia eventual (Eventual [Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/))** (enfoque AP). Si el proceso falla a mitad de camino, en lugar de un rollback (reversión), se emite una **transacción de compensación (Compensating [Transaction](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/))**, implementando una lógica para revertir el estado lógicamente. De este modo, se logra un nivel de consistencia aceptable para el negocio, manteniendo al mismo tiempo una alta escalabilidad y disponibilidad.
 
 ## Conclusión
 
 En este artículo, hemos profundizado en el teorema CAP, el principio más importante de los sistemas distribuidos.
 
-*   El **Teorema CAP** demuestra que es imposible satisfacer simultáneamente Consistencia (Consistency), Disponibilidad (Availability) y Tolerancia a particiones (Partition Tolerance) en un sistema distribuido. En el mundo real, donde las particiones (P) son inevitables, en la práctica se debe elegir entre **CP** o **AP**.
+*   El **Teorema CAP** demuestra que es imposible satisfacer simultáneamente Consistencia (Consistency), Disponibilidad ([Availability](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/)) y Tolerancia a particiones ([Partition Tolerance](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/)) en un sistema distribuido. En el mundo real, donde las particiones (P) son inevitables, en la práctica se debe elegir entre **CP** o **AP**.
 *   El **Teorema PACELC** extiende esto y muestra que, incluso en funcionamiento normal sin particiones, existe un compromiso (trade-off) entre Latencia (L) y Consistencia (C).
 *   Mediante el uso de **Quorum (cuórum)**, se puede ajustar flexiblemente el equilibrio entre consistencia y disponibilidad ($ W+R>N $) según los requerimientos.
 *   En los sistemas AP, se utilizan **relojes vectoriales** para resolver conflictos, mientras que en los sistemas CP se aprovechan algoritmos de consenso como **[Raft](https://kenji.blog/es/p/byzantine-generals-problem-consensus/)** para un ordenamiento estricto.

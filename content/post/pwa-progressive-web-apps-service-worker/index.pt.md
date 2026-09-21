@@ -365,7 +365,7 @@ A API `caches` do Service Worker (Cache Storage) é excelente para armazenar res
 
 É aqui que entra o **IndexedDB**.
 
-O IndexedDB é um banco de dados NoSQL transacional e assíncrono integrado ao navegador. Pode armazenar quantidades muito grandes de dados e permite pesquisas indexadas complexas.
+O IndexedDB é um banco de dados [NoSQL](https://kenji.blog/pt/p/nosql-database-selection-kvs-document-graph-wide-column/) transacional e assíncrono integrado ao navegador. Pode armazenar quantidades muito grandes de dados e permite pesquisas indexadas complexas.
 
 ### 8.1. Por que apenas o Cache Storage é insuficiente?
 

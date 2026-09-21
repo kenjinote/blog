@@ -16,7 +16,7 @@ tags:
   - "rust"
 ---
 
-En el desarrollo de software moderno, para aumentar la escalabilidad y disponibilidad de los sistemas, es indispensable comprender el **procesamiento asíncrono** y la **arquitectura orientada a eventos** (EDA: Event-Driven Architecture). En este artículo, profundizaremos teóricamente, implementacionalmente y en el diseño a nivel de arquitectura sobre los conceptos centrales que sustentan esto: Event Loop, modelo de Actores y CQRS (Command Query Responsibility Segregation).
+En el desarrollo de software moderno, para aumentar la escalabilidad y disponibilidad de los sistemas, es indispensable comprender el **procesamiento asíncrono** y la **arquitectura orientada a eventos** (EDA: [Event-Driven](https://kenji.blog/es/p/event-driven-architecture-message-queue-kafka-rabbitmq/) Architecture). En este artículo, profundizaremos teóricamente, implementacionalmente y en el diseño a nivel de arquitectura sobre los conceptos centrales que sustentan esto: Event Loop, modelo de Actores y CQRS (Command Query Responsibility Segregation).
 
 ## 1. Fundamentos y desafíos del procesamiento asíncrono
 
@@ -124,7 +124,7 @@ En el modelo de Actores, la unidad básica de procesamiento se llama "Actor". Ca
 
 - **Encapsulación del estado**: El estado interno del Actor no es accesible directamente desde el exterior.
 - **Cola de mensajes (Mailbox)**: Los mensajes recibidos se encolan en el Mailbox y se procesan secuencialmente.
-- **Libre de bloqueos (Lock-free)**: Al no compartir el estado, no se requieren mecanismos de bloqueo como mutex.
+- **Libre de bloqueos ([Lock](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/)-free)**: Al no compartir el estado, no se requieren mecanismos de bloqueo como mutex.
 
 ```mermaid
 flowchart LR
@@ -215,7 +215,7 @@ La propiedad (Ownership) y el sistema de tipos en [Rust](https://kenji.blog/es/p
 
 El procesamiento asíncrono y el modelo de Actores son técnicas para optimizar el procesamiento concurrente dentro de una única aplicación. El concepto de extender esto a todo el sistema (como entre microservicios) es la **Arquitectura Orientada a Eventos (EDA)**.
 
-En EDA, los cambios de estado dentro del sistema se representan como "eventos" y se distribuyen asíncronamente a través de un bus de eventos o un broker de mensajes (Apache Kafka, RabbitMQ, AWS EventBridge, etc.).
+En EDA, los cambios de estado dentro del sistema se representan como "eventos" y se distribuyen asíncronamente a través de un bus de eventos o un broker de mensajes (Apache [Kafka](https://kenji.blog/es/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/es/p/event-driven-architecture-message-queue-kafka-rabbitmq/), AWS EventBridge, etc.).
 
 ### 4.1 Componentes principales de EDA
 
@@ -279,7 +279,7 @@ Las ventajas del Event Sourcing son las siguientes:
 Las tecnologías que hemos visto hasta ahora tienen sus propios casos de uso adecuados.
 
 1. **Event Loop (Node.js)**: 
-   - Pasarelas API (API Gateways) y sistemas de chat en tiempo real con mucho procesamiento I/O-bound.
+   - Pasarelas API ([API Gateway](https://kenji.blog/es/p/microservices-architecture-bff-api-gateway/)s) y sistemas de chat en tiempo real con mucho procesamiento I/O-bound.
    - Servidores WebSocket que manejan una gran cantidad de conexiones simultáneas.
 2. **Modelo de Actores ([Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) / Akka)**: 
    - Procesamiento concurrente con estados complejos (servidores de juegos, seguimiento en tiempo real).
@@ -290,7 +290,7 @@ Las tecnologías que hemos visto hasta ahora tienen sus propios casos de uso ade
 
 ### 6.1 Desafíos y mejores prácticas
 
-La arquitectura orientada a eventos y asíncrona es potente, pero es necesario aceptar la **consistencia eventual (Eventual Consistency)**. Dado que los datos no se reflejan instantáneamente en todos los sistemas (consistencia fuerte), se requieren consideraciones del lado de UI/UX (ej. actualizaciones de interfaz de usuario optimistas).
+La arquitectura orientada a eventos y asíncrona es potente, pero es necesario aceptar la **consistencia eventual (Eventual [Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/))**. Dado que los datos no se reflejan instantáneamente en todos los sistemas (consistencia fuerte), se requieren consideraciones del lado de UI/UX (ej. actualizaciones de interfaz de usuario optimistas).
 
 Además, es importante garantizar la **idempotencia (Idempotency)** en los sistemas distribuidos. Debe diseñarse de manera que, incluso si el mismo evento se procesa varias veces debido a retransmisiones de red, el resultado no cambie.
 

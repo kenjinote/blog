@@ -154,7 +154,7 @@ Webアプリケーションが複雑化し、APIベースのSPA（Single Page Ap
 
 Webには古くから **同一オリジンポリシー（Same-Origin Policy: SOP）** という強力なセキュリティモデルが存在します。SOPは、「あるオリジン（スキーム、ホスト、ポートの組み合わせ）から読み込まれたドキュメントやスクリプトが、他のオリジンのリソースにアクセスすることを制限する」というものです。これにより、悪意のあるサイトからのデータの読み取りを防いでいます。
 
-しかし、現代のWebでは、フロントエンド（例： `https://frontend.example.com` ）とバックエンドAPI（例： `https://api.example.com` ）のオリジンが異なる構成が一般的です。SOPの下では、フロントエンドからAPIへのAjaxリクエストがブロックされてしまいます。
+しかし、現代のWebでは、フロントエンド（例： `https://frontend.example.com` ）とバックエンドAPI（例： `https://api.example.com` ）のオリジンが異なる構成が一般的です。SOPの下では、フロントエンドからAPIへのAjaxリクエストがブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)されてしまいます。
 
 この制限を安全に緩和し、許可されたオリジン間でのリソース共有を実現する仕組みが **CORS（Cross-Origin Resource Sharing）** です。
 
@@ -236,7 +236,7 @@ Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.c
 
 ### 2.2.2 インラインスクリプトの禁止による[XSS](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)根絶
 
-CSPの最大の特徴は、デフォルトで **インラインスクリプト（ `<script>...</script>` ）の実行や `eval()` の使用を禁止** することです。これにより、攻撃者がHTML内に悪意のあるスクリプトを注入（Stored [XSS](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)やReflected XSS）しても、ブラウザはCSP違反として実行をブロックします。
+CSPの最大の特徴は、デフォルトで **インラインスクリプト（ `<script>...</script>` ）の実行や `eval()` の使用を禁止** することです。これにより、攻撃者がHTML内に悪意のあるスクリプトを注入（Stored [XSS](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)やReflected XSS）しても、ブラウザはCSP違反として実行をブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)します。
 
 ```mermaid
 flowchart TD
@@ -320,9 +320,9 @@ Set-Cookie: session_id=abc123xyz; SameSite=Strict; Secure; HttpOnly
 | :--- | :--- | :--- | :--- | :--- |
 | リンク (`<a>`) のクリック | GET | トップレベルナビゲーション | **送信される** | GETは状態を変更しないため安全 |
 | フォーム (`<form>`) の送信 | GET | トップレベルナビゲーション | **送信される** | GETは状態を変更しないため安全 |
-| フォーム (`<form>`) の送信 | POST | トップレベルナビゲーション | **ブロック** | **[CSRF](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)攻撃を防止** |
-| 非同期通信 (fetch, XHR) | GET/POST | サブリクエスト | **ブロック** | **CSRF攻撃を防止** |
-| 画像の読み込み (`<img>`) | GET | サブリクエスト | **ブロック** | 安全 |
+| フォーム (`<form>`) の送信 | POST | トップレベルナビゲーション | **ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)** | **[CSRF](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)攻撃を防止** |
+| 非同期通信 (fetch, XHR) | GET/POST | サブリクエスト | **ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)** | **CSRF攻撃を防止** |
+| 画像の読み込み (`<img>`) | GET | サブリクエスト | **ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)** | 安全 |
 
 このように、 `SameSite=Lax` が設定されている（あるいはブラウザのデフォルトとして機能している）だけで、POSTメソッドを用いた古典的な[CSRF](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)攻撃は無効化されます。しかし、完全な防御のためには、従来のCSRFトークンとの併用が推奨されます。
 

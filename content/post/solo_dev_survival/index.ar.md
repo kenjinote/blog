@@ -50,7 +50,7 @@ xychart-beta
 
 # 2. تصميم البنية التحتية الذي يولد مرونة هائلة (Agility)
 
-تُصمم أنظمة الشركات الكبرى مع إعطاء الأولوية القصوى لـ "الاستقرار" و "قابلية التوسع"، ولذلك يتم اعتماد تقنيات مثل [Kubernetes](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/) وهياكل الخدمات المصغرة (Microservices). ولكن، إذا قام المطور المستقل بنفس الشيء، فستستنفد موارده بمجرد الحفاظ على البنية التحتية وإدارتها (Ops).
+تُصمم أنظمة الشركات الكبرى مع إعطاء الأولوية القصوى لـ "الاستقرار" و "قابلية التوسع"، ولذلك يتم اعتماد تقنيات مثل [Kubernetes](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/) وهياكل الخدمات المصغرة ([[Microservice](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)). ولكن، إذا قام المطور المستقل بنفس الشيء، فستستنفد موارده بمجرد الحفاظ على البنية التحتية وإدارتها (Ops).
 
 الكلمة السرية في مجموعة التقنيات (Tech Stack) للمطور المستقل هي **"No-Ops" (صفر عمليات التشغيل)**. حيث يتم الاستفادة من البنية التحتية الخالية من الخوادم ([Serverless](https://kenji.blog/ar/p/serverless-architecture-aws-lambda-cold-start/)) إلى أقصى حد، والتركيز فقط على كتابة منطق العمل (Business Logic).
 
@@ -209,7 +209,7 @@ export async function POST(req: Request) {
 
 ---
 
-# 6. تجنب تقييد البنية التحتية (Vendor Lock-in) وقابلية النقل
+# 6. تجنب تقييد البنية التحتية (Vendor [Lock](https://kenji.blog/ar/p/rdbms-transaction-acid-isolation-level-lock/)-in) وقابلية النقل
 
 في استراتيجية الاعتماد المكثف على BaaS والخدمات المدارة، دائمًا ما يكون خطر "تقييد المورد" (Vendor Lock-in) موضع نقاش. على سبيل المثال، إذا كنت تعتمد بشكل كبير جدًا على Firebase Firestore، فسيصبح من الصعب للغاية الانتقال لاحقًا إلى قواعد البيانات العلائقية (RDB).
 

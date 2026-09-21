@@ -19,7 +19,7 @@ tags:
 
 ## 1. [分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)における合意形成と課題
 
-分散システムでは、ネットワークの遅延、パケットの欠損、ノードのクラッシュ、あるいは悪意のある改ざんなど、単一のコンピュータでは起こり得ない様々な障害が発生します。これらの障害に耐えつつ、システム全体として一貫した状態（ステート）を保つための仕組みがコンセンサスアルゴリズムです。
+[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)では、ネットワークの遅延、パケットの欠損、ノードのクラッシュ、あるいは悪意のある改ざんなど、単一のコンピュータでは起こり得ない様々な障害が発生します。これらの障害に耐えつつ、システム全体として一貫した状態（ステート）を保つための仕組みがコンセンサスアルゴリズムです。
 
 システムの耐障害性は、主に以下の2つに分類されます。
 
@@ -287,7 +287,7 @@ $$ |Q_1 \cap Q_2| = 2Q - n = 2(2f + 1) - (3f + 1) = f + 1 $$
 本記事では、[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)における最大の課題であるコンセンサス形成について、理論的な「ビザンチン将軍問題」から始まり、クラッシュ耐性を持つ **Paxos** や **Raft** 、そして悪意あるノードに耐性を持つ **PBFT** について解説しました。
 
 *   **Paxos** : 数学的に証明された堅牢な基盤ですが、複雑さが課題。
-*   **Raft** : 理解しやすさと実装のしやすさを追求し、現代の分散KVSのデファクトスタンダードに。
+*   **Raft** : 理解しやすさと実装のしやすさを追求し、現代の分散[KVS](https://kenji.blog/p/nosql-database-selection-kvs-document-graph-wide-column/)のデファクトスタンダードに。
 *   **PBFT** : 悪意あるノードが混在する環境下での確定的合意を実現し、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術の基盤へ。
 
-今日では、ビットコインが採用した **Nakamoto [Consensus](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/) ([PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/))** や、Tendermint, HotStuffなど、PBFTの通信オーバーヘッドを削減しつつスケーラビリティを向上させた新しいBFTアルゴリズムが次々と誕生しています。システムの要件（ノードの信頼性、必要なスループット、レイテンシ）に応じて、適切なコンセンサスアルゴリズムを選択することが、堅牢な分散システムを構築する上での鍵となります。
+今日では、ビットコインが採用した **Nakamoto [Consensus](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/) ([PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/))** や、Tendermint, HotStuffなど、PBFTの通信オーバーヘッドを削減しつつスケーラビリティを向上させた新しいBFTアルゴリズムが次々と誕生しています。システムの要件（ノードの信頼性、必要なスループット、レイテンシ）に応じて、適切なコンセンサスアルゴリズムを選択することが、堅牢な[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)を構築する上での鍵となります。

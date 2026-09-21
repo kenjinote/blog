@@ -122,19 +122,19 @@ AI에게 "시스템 전체를 만들어 줘"라고 지시하는 것이 아니라
 
 분산 시스템을 설계할 때, 엔지니어는 항상 'CAP 정리'에 직면합니다. CAP 정리란 분산 시스템은 아래의 3가지 특성 중 동시에 2가지만을 만족시킬 수 있다는 원칙입니다.
 
-- **Consistency(일관성)**: 모든 노드에서 동시에 같은 데이터가 보이는가
-- **Availability(가용성)**: 노드의 일부에 장애가 발생해도 시스템이 계속해서 응답하는가
+- **[Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/)(일관성)**: 모든 노드에서 동시에 같은 데이터가 보이는가
+- **[Availability](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/)(가용성)**: 노드의 일부에 장애가 발생해도 시스템이 계속해서 응답하는가
 - **[Partition Tolerance](https://kenji.blog/ko/p/cap-theorem-distributed-systems/)(분할 내성)**: 네트워크 분할이 발생해도 시스템이 계속해서 동작하는가
 
-$$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
+$$ P(\text{[Availability](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/)} \cup \text{[Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/)}) | \text{PartitionTolerance} $$
 
 실제 네트워크에서는 분할(Partition)을 피할 수 없기 때문에, 엔지니어는 "이 결제 시스템은 Consistency를 우선하여 장애 발생 시 서비스를 중단한다(CP)", "이 SNS의 타임라인은 Availability를 우선하여 일시적인 데이터 불일치를 허용한다(AP)"와 같은, 비즈니스 요건과 직결되는 엄격한 트레이드오프 판단을 내려야 합니다.
 
 AI는 "C를 우선하는 코드"나 "A를 우선하는 코드"를 작성할 수는 있어도, "어느 쪽을 우선해야 하는가"라는 비즈니스 리스크를 포함한 결정을 자율적으로 내릴 수는 없습니다.
 
-### 4.2 비동기 통신과 결과적 일관성(Eventual Consistency)
+### 4.2 비동기 통신과 결과적 일관성([Eventual Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/))
 
-시스템의 규모가 커지면 서비스 간의 연동은 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)에 의한 동기 통신에서 메시지 큐(Kafka, RabbitMQ 등)를 활용한 비동기 통신으로 이행합니다. 여기서의 데이터 일관성은 즉각적 일관성에서 '결과적 일관성(Eventual Consistency)'으로 변화합니다.
+시스템의 규모가 커지면 서비스 간의 연동은 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)에 의한 동기 통신에서 메시지 큐([Kafka](https://kenji.blog/ko/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/ko/p/event-driven-architecture-message-queue-kafka-rabbitmq/) 등)를 활용한 비동기 통신으로 이행합니다. 여기서의 데이터 일관성은 즉각적 일관성에서 '결과적 일관성(Eventual [Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/))'으로 변화합니다.
 Saga 패턴이나 [CQRS](https://kenji.blog/ko/p/event-driven-architecture-async/)(Command Query Responsibility Segregation)와 같은 고도화된 아키텍처 패턴을 어느 타이밍에 도입해야 할까. 이러한 복잡한 의사결정과 시스템 전체의 청사진을 그리는 것은 그야말로 시니어 엔지니어의 진면목입니다.
 
 ```mermaid

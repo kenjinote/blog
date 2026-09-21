@@ -120,21 +120,21 @@ flowchart TD
 
 ### 4.1 [CAP定理](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems/)与权衡判断
 
-在设计分布式系统时，工程师始终要面临“CAP定理”。CAP定理指出，分布式系统在以下三个特性中，同时只能满足两个。
+在设计分布式系统时，工程师始终要面临“[CAP定理](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)”。CAP定理指出，分布式系统在以下三个特性中，同时只能满足两个。
 
-- **Consistency（一致性）**: 所有节点在同一时间是否能看到相同的数据
-- **Availability（可用性）**: 即使部分节点发生故障，系统是否还能继续响应
+- **[Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)（一致性）**: 所有节点在同一时间是否能看到相同的数据
+- **[Availability](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)（可用性）**: 即使部分节点发生故障，系统是否还能继续响应
 - **[Partition Tolerance](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems/)（分区容错性）**: 在网络发生分区时，系统是否还能继续运行
 
-$$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
+$$ P(\text{[Availability](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)} \cup \text{[Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)}) | \text{PartitionTolerance} $$
 
 在实际网络中，网络分区（Partition）是不可避免的，因此工程师必须做出直接关系到业务需求的严苛的权衡判断，例如“这个支付系统优先考虑一致性（Consistency），在发生故障时停止服务（CP）”，“这个社交网络的动态消息优先考虑可用性（Availability），容忍短暂的数据不一致（AP）”。
 
 AI也许能写出“优先考虑C的代码”或“优先考虑A的代码”，但它无法自主决定“应该优先考虑哪一个”这种包含业务风险的决策。
 
-### 4.2 异步通信与最终一致性（Eventual Consistency）
+### 4.2 异步通信与最终一致性（[Eventual Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)）
 
-当系统规模变大时，服务间的协同将从通过[REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)进行的同步通信，转变为使用消息队列（Kafka, RabbitMQ等）的异步通信。此时数据的一致性也从强一致性转变为“最终一致性（Eventual Consistency）”。
+当系统规模变大时，服务间的协同将从通过[REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)进行的同步通信，转变为使用消息队列（[Kafka](https://kenji.blog/zh-cn/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/zh-cn/p/event-driven-architecture-message-queue-kafka-rabbitmq/)等）的异步通信。此时数据的一致性也从强一致性转变为“最终一致性（Eventual [Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)）”。
 应该在什么时候引入Saga模式或[CQRS](https://kenji.blog/zh-cn/p/event-driven-architecture-async/)（Command Query Responsibility Segregation，命令查询职责分离）等高级架构模式？做出这些复杂的决策并描绘系统整体的蓝图，正是高级工程师的真正价值所在。
 
 ```mermaid

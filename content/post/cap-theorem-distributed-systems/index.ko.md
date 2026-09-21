@@ -21,7 +21,7 @@ tags:
 
 ## 1. 분산 시스템이란 무엇인가?
 
-CAP 정리에 대해 이야기하기 전에, 우선 **분산 시스템** (Distributed System)이란 무엇인지를 명확히 해둡시다.
+CAP 정리에 대해 이야기하기 전에, 우선 **분산 시스템** ([Distributed System](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/))이란 무엇인지를 명확히 해둡시다.
 
 분산 시스템이란, 네트워크로 상호 연결된 여러 독립적인 컴퓨터(노드)가 사용자에게는 단일의 일관된 시스템인 것처럼 동작하는 시스템을 말합니다.
 
@@ -55,9 +55,9 @@ CAP 정리는 2000년에 에릭 브루어(Eric Brewer)에 의해 제창되었고
 
 정리는 분산 시스템에서 다음의 3가지 특성 중, 동시에 만족시킬 수 있는 것은 **최대 2개** 까지라고 주장하고 있습니다.
 
-1.  **C: Consistency** (일관성)
-2.  **A: Availability** (가용성)
-3.  **P: Partition Tolerance** (분단 내성)
+1.  **C: [Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/)** (일관성)
+2.  **A: [Availability](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/)** (가용성)
+3.  **P: [Partition Tolerance](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/)** (분단 내성)
 
 각각에 대해 엄밀한 정의를 살펴보겠습니다.
 
@@ -120,7 +120,7 @@ sequenceDiagram
 
 ## 4. Quorum(쿼럼)과 일관성 튜닝
 
-많은 분산 데이터베이스(예: Cassandra, DynamoDB 등)에서는 시스템 전체를 고정된 CP나 AP에 묶어두는 것이 아니라, 요청마다 **Quorum** (쿼럼, 정족수)을 이용한 파라미터 조정을 통해 C와 A의 균형을 조절할 수 있게 되어 있습니다.
+많은 분산 데이터베이스(예: [Cassandra](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/), DynamoDB 등)에서는 시스템 전체를 고정된 CP나 AP에 묶어두는 것이 아니라, 요청마다 **Quorum** (쿼럼, 정족수)을 이용한 파라미터 조정을 통해 C와 A의 균형을 조절할 수 있게 되어 있습니다.
 
 레플리카 수를 $ N $ 이라고 합시다.
 쓰기가 성공했다고 간주하기 위해 응답이 필요한 노드 수를 $ W $ 라고 합시다.
@@ -171,10 +171,10 @@ PACELC는 다음과 같이 읽을 수 있습니다.
 
 ### 5.1. 대표적인 데이터베이스의 PACELC 분류
 
-*   **PC/EC** (HBase, MongoDB, Zookeeper)
+*   **PC/EC** (HBase, [MongoDB](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/), Zookeeper)
     *   분단 시에는 일관성을 우선(PC). 정상 시에도 일관성을 우선하고, 레이턴시를 허용한다(EC).
-*   **PA/EL** (Cassandra, Riak, DynamoDB)
-    *   분단 시에는 가용성을 우선(PA). 정상 시에는 낮은 레이턴시를 우선하고, 결과적 일관성(Eventual Consistency)을 받아들인다(EL).
+*   **PA/EL** ([Cassandra](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/), Riak, DynamoDB)
+    *   분단 시에는 가용성을 우선(PA). 정상 시에는 낮은 레이턴시를 우선하고, 결과적 일관성(Eventual [Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/))을 받아들인다(EL).
 *   **PA/EC** (MySQL Cluster 등)
     *   분단 시에는 가용성을 우선하면서도, 정상 시에는 일관성을 유지하려고 한다.
 
@@ -275,13 +275,13 @@ stateDiagram-v2
 
 CAP 정리는 데이터베이스 단일의 이야기에 그치지 않고, 현대의 **마이크로서비스 아키텍처** 에도 깊은 영향을 미치고 있습니다.
 
-모놀리식 애플리케이션에서는 단일 관계형 데이터베이스를 사용한 ACID 트랜잭션에 의해 데이터의 일관성을 쉽게 유지할 수 있었습니다. 그러나 비즈니스 도메인별로 서비스와 데이터베이스가 분할된 마이크로서비스에서는 서비스를 넘나드는 분산 트랜잭션이 필요하게 됩니다.
+모놀리식 애플리케이션에서는 단일 관계형 데이터베이스를 사용한 [ACID](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/) 트랜잭션에 의해 데이터의 일관성을 쉽게 유지할 수 있었습니다. 그러나 비즈니스 도메인별로 서비스와 데이터베이스가 분할된 마이크로서비스에서는 서비스를 넘나드는 분산 트랜잭션이 필요하게 됩니다.
 
 여기서 CAP 정리가 이빨을 드러냅니다. 분산 트랜잭션(예: 2단계 커밋 - 2PC)을 사용하여 강한 일관성(C)을 요구하면, 어느 하나의 서비스가 다운되거나 통신 지연이 발생한 경우에 시스템 전체가 블록되어 가용성(A)과 레이턴시(L)가 현저히 저하됩니다.
 
 이 문제에 대처하기 위해 마이크로서비스에서는 **Saga 패턴** 이 널리 채택되고 있습니다.
 
-Saga 패턴은 거대한 1개의 트랜잭션을 로컬 트랜잭션의 연속으로 분할하고, 비동기 메시징(Kafka나 RabbitMQ 등)을 사용하여 연동시키는 기법입니다.
+Saga 패턴은 거대한 1개의 트랜잭션을 로컬 트랜잭션의 연속으로 분할하고, 비동기 메시징([Kafka](https://kenji.blog/ko/p/event-driven-architecture-message-queue-kafka-rabbitmq/)나 [RabbitMQ](https://kenji.blog/ko/p/event-driven-architecture-message-queue-kafka-rabbitmq/) 등)을 사용하여 연동시키는 기법입니다.
 
 ```mermaid
 flowchart TD
@@ -295,13 +295,13 @@ flowchart TD
     MessageBroker -->|"취소"| Order
 ```
 
-Saga 패턴에서는 강한 일관성을 포기하고, **결과적 일관성** (Eventual Consistency)을 받아들입니다(AP적 접근). 도중에 처리가 실패한 경우에는 롤백 대신 **보상 트랜잭션** (Compensating Transaction)을 발행하여 논리적으로 상태를 원래대로 되돌리는 처리를 구현합니다. 이를 통해 높은 확장성과 가용성을 유지하면서도 비즈니스상 허용할 수 있는 수준의 일관성을 실현하고 있는 것입니다.
+Saga 패턴에서는 강한 일관성을 포기하고, **결과적 일관성** (Eventual [Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/))을 받아들입니다(AP적 접근). 도중에 처리가 실패한 경우에는 롤백 대신 **보상 트랜잭션** (Compensating [Transaction](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/))을 발행하여 논리적으로 상태를 원래대로 되돌리는 처리를 구현합니다. 이를 통해 높은 확장성과 가용성을 유지하면서도 비즈니스상 허용할 수 있는 수준의 일관성을 실현하고 있는 것입니다.
 
 ## 정리
 
 본 기사에서는 분산 시스템에서 가장 중요한 원칙인 CAP 정리에 대해 깊이 파헤쳐 보았습니다.
 
-*   **CAP 정리** 는 분산 시스템에서 Consistency(일관성), Availability(가용성), Partition Tolerance(분단 내성)의 3가지를 동시에 만족시키는 것은 불가능하며, 분단(P)이 불가피한 현실 세계에서는 사실상 **CP** 거나 **AP** 의 선택이 됨을 보여줍니다.
+*   **CAP 정리** 는 분산 시스템에서 Consistency(일관성), [Availability](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/)(가용성), [Partition Tolerance](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/)(분단 내성)의 3가지를 동시에 만족시키는 것은 불가능하며, 분단(P)이 불가피한 현실 세계에서는 사실상 **CP** 거나 **AP** 의 선택이 됨을 보여줍니다.
 *   **PACELC 정리** 는 이를 확장하여 분단이 발생하지 않은 정상 가동 시에도 레이턴시(L)와 일관성(C) 사이에 트레이드오프가 존재함을 보여주었습니다.
 *   **Quorum** (정족수)을 사용함으로써 요구사항에 따라 유연하게 일관성과 가용성의 균형( $ W+R>N $ )을 조절할 수 있습니다.
 *   AP 시스템에서는 충돌 해결을 위해 **벡터 클락** 이, CP 시스템에서는 엄밀한 순서 지정을 위해 **[Raft](https://kenji.blog/ko/p/byzantine-generals-problem-consensus/)** 와 같은 합의 알고리즘이 활용되고 있습니다.

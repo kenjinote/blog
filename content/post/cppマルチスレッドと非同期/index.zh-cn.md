@@ -316,7 +316,7 @@ graph TD
 
 * **伪共享 (False Sharing):** 
   即使多个线程分别更新不同的变量，如果这些变量被分配在CPU的同一个缓存行（通常为64字节）中，也会为了维持缓存一致性而产生无谓的内存同步，导致性能急剧下降。为了防止这种情况，需要使用 `alignas` 说明符将变量对齐到缓存行的边界。
-* **无锁 (Lock-Free) 与 `std::atomic`:**
+* **无锁 ([Lock](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)-Free) 与 `std::atomic`:**
   为了避免互斥锁锁定/解锁的开销，可以考虑引入使用 `<atomic>` 的原子操作（如Compare-And-Swap等）以及无锁数据结构。但是，这需要对内存序 (`std::memory_order`) 有着正确的理解，且实现难度非常高，通常只有在经过谨慎的性能测试并判断确有必要时才应引入。
 
 ---

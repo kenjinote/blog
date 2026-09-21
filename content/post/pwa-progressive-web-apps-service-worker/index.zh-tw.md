@@ -365,7 +365,7 @@ Service Worker 的 `caches` API（Cache Storage）非常適合用來儲存整個
 
 這時就輪到 **IndexedDB** 登場了。
 
-IndexedDB 是內建於瀏覽器的非同步交易式 NoSQL 資料庫。它可以儲存非常大量的資料，並支援複雜的索引搜尋。
+IndexedDB 是內建於瀏覽器的非同步交易式 [NoSQL](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/) 資料庫。它可以儲存非常大量的資料，並支援複雜的索引搜尋。
 
 ### 8.1. 為什麼只有 Cache Storage 還不夠？
 

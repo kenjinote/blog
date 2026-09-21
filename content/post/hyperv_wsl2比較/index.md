@@ -116,7 +116,7 @@ I/Oのレイテンシ $L_{total}$ は以下のように計算されます。
 $$ L_{total} = L_{guest\_fs} + L_{vmbus} + L_{host\_fs} + L_{physical\_disk} $$
 
 **Hyper-Vの場合**:
-一般的なHyper-Vゲストは `VHDX` フォーマットの仮想ディスクを使用します。ゲストOS内のファイルシステム（ext4やNTFS）から発行されたI/O要求は、VMBusのブロックデバイスストレージドライバ（storvsc）を通過し、Windows側のNTFS上でVHDXファイルへのアクセスとして処理されます。
+一般的なHyper-Vゲストは `VHDX` フォーマットの仮想ディスクを使用します。ゲストOS内のファイルシステム（ext4やNTFS）から発行されたI/O要求は、VMBusのブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)デバイスストレージドライバ（storvsc）を通過し、Windows側のNTFS上でVHDXファイルへのアクセスとして処理されます。
 
 **WSL2の場合**:
 WSL2のLinuxディストリビューションは、専用の `ext4.vhdx` ファイル内に構築されたネイティブのext4ファイルシステム上で動作します。Linux内でのファイル操作（`~` ディレクトリ内など）は、上記のHyper-Vと同等のネイティブパフォーマンスを発揮します。
@@ -205,7 +205,7 @@ Hyper-Vは、「インフラストラクチャの仮想化と完全な分離」�
 
 ## 6. 数理モデルによるI/Oスループットの考察 (付録)
 
-システムエンジニアとして両者のI/O性能限界を見極める際、スループット $S$ とブロックサイズ $B$ の関係を理論的に把握することは重要です。
+システムエンジニアとして両者のI/O性能限界を見極める際、スループット $S$ とブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)サイズ $B$ の関係を理論的に把握することは重要です。
 
 データ転送のスループット $S$ は、単位時間あたりのデータ転送量であり、次のようにモデル化されます。
 

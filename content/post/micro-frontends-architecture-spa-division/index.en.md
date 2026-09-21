@@ -28,9 +28,9 @@ The result of this is the **frontend monolith**. By centralizing all UI componen
 
 * **Prolonged Build Times**: As the codebase grows, the time required for builds and tests increases exponentially.
 * **Inter-team Dependencies and Coordination Costs**: Because multiple teams touch the same codebase, merge conflicts occur frequently, and adjusting release cycles requires significant effort.
-* **Accumulation of Technical Debt and Lock-in**: Since the entire application relies on a single version of a framework or library, gradual refactoring or the introduction of new technologies becomes difficult.
+* **Accumulation of Technical Debt and [Lock](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)-in**: Since the entire application relies on a single version of a framework or library, gradual refactoring or the introduction of new technologies becomes difficult.
 
-### Contrast with Backend Microservices
+### Contrast with Backend [[Microservice](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/)
 
 In the backend world, the **Microservices Architecture**—which splits giant monoliths to build independently deployable services—has become widely adopted. This allows each team to have its own database, technology stack, and deployment cycle, drastically improving scalability and development velocity.
 
@@ -299,8 +299,8 @@ Routing is an important factor in determining at what level user navigation is c
   * `/checkout/*` -> Delegates to the payment team's application.
   Within each micro frontend, it can have further internal routing.
 
-* **Routing at the BFF (Backend For Frontend) Layer**:
-  This is a method of determining paths at the server infrastructure level (e.g., Nginx or API Gateway) and serving the HTML of the appropriate micro frontend from the start. Although hard refreshes occur during page transitions, the degree of architectural separation is the highest.
+* **Routing at the [BFF](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/) (Backend For Frontend) Layer**:
+  This is a method of determining paths at the server infrastructure level (e.g., Nginx or [API Gateway](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/)) and serving the HTML of the appropriate micro frontend from the start. Although hard refreshes occur during page transitions, the degree of architectural separation is the highest.
 
 ## 7. Organizational Impact and Team Autonomy
 

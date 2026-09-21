@@ -165,7 +165,7 @@ SNS 的貼文是為了「奪取讀者的注意力（Attention）」而最佳化�
 
 技術圈有一個很有名的箴言： **「選擇無聊的技術（Choose Boring Technology）」** 。這個教誨告訴我們，不應該將創新代幣（Innovation Token，組織能夠花費在未知新技術上的有限資源）浪費在與商業核心價值無直接關聯的基礎設施或框架選型上。
 
-SNS 的演算法偏好「新奇性」。然而，為了建構出能夠經得起實際營運考驗的穩健系統，所需要的正是那些有著 10 年以上運作實績，且在發生故障時的復原步驟能在 Google 上搜尋到數百萬筆結果的「無聊」技術（如 PostgreSQL、Redis、標準的 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 等）。
+SNS 的演算法偏好「新奇性」。然而，為了建構出能夠經得起實際營運考驗的穩健系統，所需要的正是那些有著 10 年以上運作實績，且在發生故障時的復原步驟能在 Google 上搜尋到數百萬筆結果的「無聊」技術（如 PostgreSQL、[Redis](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/)、標準的 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 等）。
 
 ---
 

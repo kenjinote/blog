@@ -15,7 +15,7 @@ tags: ["Transformer", "Deep Learning", "Attention", "Math"]
 
 然而，現狀是我們經常看到關於Transformer機制的定性解釋，例如「使用Attention（注意力機制）來理解上下文」，但針對初學者深入探討其背後 **數學結構** 的解說卻意外地少。為了真正理解AI是如何將「語言」作為「數學公式」進行處理，並生成出令人驚訝地自然的文本，解讀其數學機制是不可或缺的。
 
-本文針對具備數學和程式設計基礎知識（了解高中程度的矩陣和微分概念）的讀者，將徹底且淺顯易懂地解開Transformer核心的「Self-Attention機制」、「Query-Key-Value（Q/K/V）模型」、「透過Softmax函數進行的正規化」，以及「Positional Encoding」等數學結構。
+本文針對具備數學和程式設計基礎知識（了解高中程度的矩陣和微分概念）的讀者，將徹底且淺顯易懂地解開Transformer核心的「Self-Attention機制」、「Query-[Key-Value](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/)（Q/K/V）模型」、「透過Softmax函數進行的正規化」，以及「Positional Encoding」等數學結構。
 
 你可能會被一連串的數學公式給震撼，但每一個計算都有其明確的「意義」。當你讀完這篇文章時，你應該能夠理解Transformer並不僅僅是一個神奇的黑盒子，而是經過精心設計的數學與統計學結晶。
 

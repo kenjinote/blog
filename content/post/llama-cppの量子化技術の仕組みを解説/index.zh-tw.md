@@ -67,7 +67,7 @@ $$ \tilde{W} = S \times (W_q - Z) $$
 
 ### 3.2. GGUF 格式的誕生
 
-為了解決這些問題，於 2023 年 8 月導入的 **GGUF** 是被設計為具有高度通用性的格式。其最大的特色在於採用了 ** 基於鍵值對（Key-Value）的後設資料（Metadata）結構**。
+為了解決這些問題，於 2023 年 8 月導入的 **GGUF** 是被設計為具有高度通用性的格式。其最大的特色在於採用了 ** 基於鍵值對（[Key-Value](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/)）的後設資料（Metadata）結構**。
 
 以下的 Mermaid 圖是 GGUF 檔案結構的抽象化表示。
 
@@ -88,7 +88,7 @@ graph TD
 ```
 
 **GGUF 的主要優點：**
-1. **彈性：** 模型的超參數、RoPE（旋轉位置嵌入, Rotary Positional Embedding）的設定、分詞器的詞彙資料等，全數作為具名的 Key-Value 對儲存。由於未知的鍵會被忽略，因此新增功能變得非常容易。
+1. **彈性：** 模型的超參數、RoPE（旋轉位置嵌入, Rotary Positional Embedding）的設定、分詞器的詞彙資料等，全數作為具名的 [Key-Value](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/) 對儲存。由於未知的鍵會被忽略，因此新增功能變得非常容易。
 2. **與位元組順序 (Endian) 無關：** GGUF 預設採用小端序 (Little-endian)，但因為具有明確的旗標標示，所以在不同架構之間也能安全地移植。
 3. **對 mmap (記憶體映射) 的最佳化：** 張量資料在特定的邊界上對齊（Padding），可以使用作業系統的 `mmap()` 系統呼叫將其從磁碟直接映射到記憶體空間中。這樣一來，模型載入的初始化時間實際上降為了零。
 
@@ -237,7 +237,7 @@ sequenceDiagram
 
 本文深入探討並解說了身為 llama.cpp 心臟部位的 GGUF 格式與 k-quants 量化技術的內部結構。
 
-1. **GGUF 的彈性：** 透過鍵值對（Key-Value）型的後設資料結構，建立了一個堅固的生態系統，即使面對 LLM 的急速進化（新模型架構的出現），也能在沒有破壞性變更的情況下隨之發展。
+1. **GGUF 的彈性：** 透過鍵值對（[Key-Value](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/)）型的後設資料結構，建立了一個堅固的生態系統，即使面對 LLM 的急速進化（新模型架構的出現），也能在沒有破壞性變更的情況下隨之發展。
 2. **k-quants 的極限壓縮：** 透過超級區塊與子區塊的階層性縮放因子管理，在保留離群值資訊的同時，達成了每個權重平均僅需 4.8 位元（Q4_K_M）的驚人壓縮率。
 3. **消除記憶體頻寬瓶頸：** 透過在 SIMD 或 CUDA 中實作的高階核心程式碼（Kernel），在即時反量化的同時進行計算，減少了 VRAM 的傳輸量，並飛躍性地提升了推論速度。
 

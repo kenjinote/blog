@@ -260,7 +260,7 @@ sequenceDiagram
 
 ## 8. [WebAssembly](https://kenji.blog/p/webassembly-wasm-current-future/) バイナリフォーマット (.wasm) の解剖
 
-ここで、コンパイラが出力する `.wasm` ファイルの内部構造を見てみましょう。[Wasm](https://kenji.blog/p/webassembly-wasm-current-future/)のバイナリは、拡張性とパース速度を重視して「セクション」と呼ばれる論理的なブロックの集合で構成されています。
+ここで、コンパイラが出力する `.wasm` ファイルの内部構造を見てみましょう。[Wasm](https://kenji.blog/p/webassembly-wasm-current-future/)のバイナリは、拡張性とパース速度を重視して「セクション」と呼ばれる論理的なブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の集合で構成されています。
 
 ```mermaid
 graph TD

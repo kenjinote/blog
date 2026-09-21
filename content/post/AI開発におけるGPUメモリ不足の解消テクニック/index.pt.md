@@ -46,7 +46,7 @@ Em outras palavras, puramente carregar os pesos do modelo na GPU consumirá 16 G
 
 ## 1.2 Consumo de Memória Durante a Inferência: Aumento do Cache KV
 
-Durante a inferência de LLMs (especialmente na geração de texto autorregressiva), o **Cache KV (Key-Value Cache)** pressiona a VRAM tão ou mais intensamente do que os próprios pesos.
+Durante a inferência de LLMs (especialmente na geração de texto autorregressiva), o **Cache KV ([Key-Value](https://kenji.blog/pt/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)** pressiona a VRAM tão ou mais intensamente do que os próprios pesos.
 Na arquitetura Transformer, para evitar o recálculo de informações de tokens gerados ou processados no passado, os tensores de Key e Value em cada camada de atenção são mantidos em cache na VRAM. Isso melhora a velocidade de cálculo (Compute), mas o consumo de memória aumenta linearmente e de forma explosiva à medida que o comprimento do contexto (comprimento do prompt de entrada + comprimento do texto gerado) aumenta.
 
 A quantidade de memória de cache KV $M_{kv\_token}$ consumida ao processar 1 token é rigorosamente calculada pela seguinte fórmula com base na arquitetura do modelo:

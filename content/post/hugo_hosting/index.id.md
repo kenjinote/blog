@@ -19,7 +19,7 @@ Artikel ini akan membahas secara mendalam dari perspektif teknis langkah-langkah
 ## 1. Dasar-dasar Generator Situs Statis (SSG) dan Jamstack
 
 ### 1.1 Mengapa Situs Statis?
-CMS dinamis konvensional (misalnya WordPress) menjalankan kueri ke basis data (seperti MySQL) setiap kali ada permintaan dari pengguna, kemudian secara dinamis menghasilkan HTML di sisi server (seperti PHP) dan mengembalikannya. Metode ini menawarkan fleksibilitas tinggi, namun kurang tahan terhadap lonjakan lalu lintas yang tiba-tiba (seperti saat viral atau serangan DDoS), dan arsitektur infrastrukturnya cenderung menjadi rumit karena memerlukan server cache (seperti Redis atau Varnish) di bagian depan.
+CMS dinamis konvensional (misalnya WordPress) menjalankan kueri ke basis data (seperti MySQL) setiap kali ada permintaan dari pengguna, kemudian secara dinamis menghasilkan HTML di sisi server (seperti PHP) dan mengembalikannya. Metode ini menawarkan fleksibilitas tinggi, namun kurang tahan terhadap lonjakan lalu lintas yang tiba-tiba (seperti saat viral atau serangan DDoS), dan arsitektur infrastrukturnya cenderung menjadi rumit karena memerlukan server cache (seperti [Redis](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/) atau Varnish) di bagian depan.
 
 Sebaliknya, Generator Situs Statis (SSG) yang mengadopsi arsitektur Jamstack (JavaScript, APIs, and Markup) akan menghasilkan (saat proses build) seluruh file HTML, CSS, dan JavaScript terlebih dahulu. Untuk setiap permintaan pengguna, server web (atau CDN) hanya akan mengembalikan file statis yang sudah dihasilkan tersebut, sehingga mampu memberikan kecepatan luar biasa dan keamanan yang kuat.
 

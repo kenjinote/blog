@@ -21,7 +21,7 @@ Dans cet article, nous explorerons en profondeur les bases du théorème CAP, sa
 
 ## 1. Qu'est-ce qu'un système distribué ?
 
-Avant de parler du théorème CAP, clarifions ce qu'est un **système distribué** (Distributed System).
+Avant de parler du théorème CAP, clarifions ce qu'est un **système distribué** ([Distributed System](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/)).
 
 Un système distribué est un système dans lequel plusieurs ordinateurs (nœuds) indépendants et interconnectés par un réseau se comportent, du point de vue de l'utilisateur, comme un système unique et cohérent.
 
@@ -44,7 +44,7 @@ graph LR
 Les principaux objectifs d'un système distribué sont les suivants :
 
 1.  **Évolutivité (Scalability)** : Améliorer la capacité de traitement globale du système en ajoutant des nœuds lorsque le trafic ou le volume de données augmente.
-2.  **Disponibilité (Availability)** : Même si certains nœuds tombent en panne, les autres nœuds continuent le traitement, permettant au système global de continuer à fournir le service.
+2.  **Disponibilité ([Availability](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/))** : Même si certains nœuds tombent en panne, les autres nœuds continuent le traitement, permettant au système global de continuer à fournir le service.
 3.  **Performances (Performance)** : Réduire la latence en permettant au nœud physiquement le plus proche de répondre aux utilisateurs géographiquement dispersés.
 
 Cependant, étant construit sur la fondation instable qu'est le réseau, un système distribué s'accompagne de défis inévitables tels que les "partitions réseau" et la "latence ou perte de messages".
@@ -55,9 +55,9 @@ Le théorème CAP a été proposé par Eric Brewer en 2000 et rigoureusement pro
 
 Le théorème stipule que dans un système distribué, parmi les trois propriétés suivantes, il est possible d'en satisfaire **au maximum deux** simultanément.
 
-1.  **C: Consistency** (Cohérence)
+1.  **C: [Consistency](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/)** (Cohérence)
 2.  **A: Availability** (Disponibilité)
-3.  **P: Partition Tolerance** (Tolérance au partitionnement)
+3.  **P: [Partition Tolerance](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/)** (Tolérance au partitionnement)
 
 Examinons la définition rigoureuse de chacune d'elles.
 
@@ -120,7 +120,7 @@ Dans les systèmes distribués du monde réel où le partitionnement du réseau 
 
 ## 4. Quorum et ajustement de la cohérence
 
-Dans de nombreuses bases de données distribuées (ex. Cassandra, DynamoDB, etc.), au lieu de lier l'ensemble du système à un modèle CP ou AP fixe, il est possible d'ajuster l'équilibre entre C et A par requête en ajustant les paramètres via un **Quorum**.
+Dans de nombreuses bases de données distribuées (ex. [Cassandra](https://kenji.blog/fr/p/nosql-database-selection-kvs-document-graph-wide-column/), DynamoDB, etc.), au lieu de lier l'ensemble du système à un modèle CP ou AP fixe, il est possible d'ajuster l'équilibre entre C et A par requête en ajustant les paramètres via un **Quorum**.
 
 Soit $ N $ le nombre de réplicas.
 Soit $ W $ le nombre de nœuds dont une réponse est requise pour qu'une écriture soit considérée comme réussie.
@@ -171,10 +171,10 @@ Dans un système distribué, si vous écrivez des données de manière synchrone
 
 ### 5.1. Classification PACELC des bases de données représentatives
 
-*   **PC/EC** (HBase, MongoDB, Zookeeper)
+*   **PC/EC** (HBase, [MongoDB](https://kenji.blog/fr/p/nosql-database-selection-kvs-document-graph-wide-column/), Zookeeper)
     *   Priorise la cohérence lors d'une partition (PC). Priorise également la cohérence en temps normal, tolérant la latence (EC).
-*   **PA/EL** (Cassandra, Riak, DynamoDB)
-    *   Priorise la disponibilité lors d'une partition (PA). Priorise une faible latence en temps normal et accepte la cohérence éventuelle (Eventual Consistency) (EL).
+*   **PA/EL** ([Cassandra](https://kenji.blog/fr/p/nosql-database-selection-kvs-document-graph-wide-column/), Riak, DynamoDB)
+    *   Priorise la disponibilité lors d'une partition (PA). Priorise une faible latence en temps normal et accepte la cohérence éventuelle (Eventual [Consistency](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/)) (EL).
 *   **PA/EC** (MySQL Cluster, etc.)
     *   Priorise la disponibilité lors d'une partition tout en essayant de maintenir la cohérence en temps normal.
 
@@ -271,17 +271,17 @@ La sécurité de [Raft](https://kenji.blog/fr/p/byzantine-generals-problem-conse
 
 Cela élimine complètement de manière mathématique et algorithmique les incohérences de données dans un environnement distribué. `etcd`, le magasin de données backend de [Kubernetes](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/), adopte également [Raft](https://kenji.blog/fr/p/byzantine-generals-problem-consensus/) pour réaliser une gestion d'état stricte du cluster.
 
-## 8. Microservices et transactions
+## 8. [[Microservice](https://kenji.blog/fr/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/fr/p/microservices-architecture-bff-api-gateway/) et transactions
 
 Le théorème CAP ne se limite pas aux bases de données individuelles, il a également une influence profonde sur l' **architecture en microservices** moderne.
 
-Dans une application monolithique, il était facile de maintenir la cohérence des données grâce aux transactions ACID utilisant une seule base de données relationnelle. Cependant, dans les microservices où les services et les bases de données sont divisés par domaine métier, des transactions distribuées couvrant plusieurs services sont nécessaires.
+Dans une application monolithique, il était facile de maintenir la cohérence des données grâce aux transactions [ACID](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/) utilisant une seule base de données relationnelle. Cependant, dans les microservices où les services et les bases de données sont divisés par domaine métier, des transactions distribuées couvrant plusieurs services sont nécessaires.
 
 C'est là que le théorème CAP montre les dents. Si vous exigez une forte cohérence (C) en utilisant des transactions distribuées (ex. validation en deux phases - 2PC), si un service tombe en panne ou si une latence réseau se produit, l'ensemble du système sera bloqué, réduisant considérablement la disponibilité (A) et la latence (L).
 
 Pour résoudre ce problème, le **modèle Saga** est largement adopté dans les microservices.
 
-Le modèle Saga est une technique qui divise une grande transaction en une série de transactions locales, les coordonnant à l'aide d'une messagerie asynchrone (comme Kafka ou RabbitMQ).
+Le modèle Saga est une technique qui divise une grande transaction en une série de transactions locales, les coordonnant à l'aide d'une messagerie asynchrone (comme [Kafka](https://kenji.blog/fr/p/event-driven-architecture-message-queue-kafka-rabbitmq/) ou [RabbitMQ](https://kenji.blog/fr/p/event-driven-architecture-message-queue-kafka-rabbitmq/)).
 
 ```mermaid
 flowchart TD
@@ -295,13 +295,13 @@ flowchart TD
     MessageBroker -->|"Annulation"| Order
 ```
 
-Dans le modèle Saga, on abandonne la forte cohérence et on accepte la **cohérence éventuelle (Eventual Consistency)** (approche de type AP). Si le traitement échoue en cours de route, au lieu d'un rollback, une **transaction de compensation (Compensating Transaction)** est émise pour implémenter la logique d'annulation de l'état. Cela permet d'atteindre un niveau de cohérence acceptable d'un point de vue métier, tout en maintenant une évolutivité et une disponibilité élevées.
+Dans le modèle Saga, on abandonne la forte cohérence et on accepte la **cohérence éventuelle (Eventual [Consistency](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/))** (approche de type AP). Si le traitement échoue en cours de route, au lieu d'un rollback, une **transaction de compensation (Compensating [Transaction](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/))** est émise pour implémenter la logique d'annulation de l'état. Cela permet d'atteindre un niveau de cohérence acceptable d'un point de vue métier, tout en maintenant une évolutivité et une disponibilité élevées.
 
 ## Résumé
 
 Dans cet article, nous avons approfondi le théorème CAP, qui est le principe le plus important dans les systèmes distribués.
 
-*   Le **théorème CAP** démontre qu'il est impossible de satisfaire simultanément Consistency (Cohérence), Availability (Disponibilité) et Partition Tolerance (Tolérance au partitionnement) dans un système distribué. Dans le monde réel où les partitions (P) sont inévitables, il s'agit en fait de choisir entre **CP** ou **AP**.
+*   Le **théorème CAP** démontre qu'il est impossible de satisfaire simultanément Consistency (Cohérence), [Availability](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/) (Disponibilité) et [Partition Tolerance](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/) (Tolérance au partitionnement) dans un système distribué. Dans le monde réel où les partitions (P) sont inévitables, il s'agit en fait de choisir entre **CP** ou **AP**.
 *   Le **théorème PACELC** étend cela pour montrer que même en fonctionnement normal sans partition, il y a un compromis entre la latence (L) et la cohérence (C).
 *   En utilisant un **Quorum**, il est possible d'ajuster de manière flexible l'équilibre entre cohérence et disponibilité ( $ W+R>N $ ) en fonction des exigences.
 *   Dans les systèmes AP, les **horloges vectorielles** sont utilisées pour résoudre les conflits, tandis que dans les systèmes CP, des algorithmes de consensus comme **[Raft](https://kenji.blog/fr/p/byzantine-generals-problem-consensus/)** sont utilisés pour un séquençage strict.

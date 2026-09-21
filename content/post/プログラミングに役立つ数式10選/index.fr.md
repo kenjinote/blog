@@ -69,7 +69,7 @@ int main() {
 ```
 
 **Explication détaillée** :
-L'avantage de cette approche est que le calcul de la matrice de rotation (4 multiplications et 2 additions) peut être encapsulé sous forme d'opération sur les nombres complexes. De plus, dans l'espace tridimensionnel, on utilise les "quaternions", qui sont une extension de ce concept. L'utilisation des quaternions permet d'éviter le problème fatal du "blocage de cardan" (Gimbal Lock) qui se produit avec les angles d'Euler, et d'obtenir une interpolation linéaire sphérique fluide (Slerp).
+L'avantage de cette approche est que le calcul de la matrice de rotation (4 multiplications et 2 additions) peut être encapsulé sous forme d'opération sur les nombres complexes. De plus, dans l'espace tridimensionnel, on utilise les "quaternions", qui sont une extension de ce concept. L'utilisation des quaternions permet d'éviter le problème fatal du "blocage de cardan" (Gimbal [Lock](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/)) qui se produit avec les angles d'Euler, et d'obtenir une interpolation linéaire sphérique fluide (Slerp).
 
 ---
 

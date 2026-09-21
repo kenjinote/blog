@@ -20,7 +20,7 @@ description: '2020年度の小学校におけるプログラミング教育必�
 
 ## 2. ビジュアルプログラミングの罠：Scratchからテキストコーディングへの深く険しい溝
 
-小学校のプログラミング教育においてデファクトスタンダードとして君臨しているのが、MITメディアラボが開発した「Scratch」に代表されるビジュアルプログラミング言語（ブロックプログラミング）です。直感的なグラフィカルインターフェースを用いて、パズルのようにブロックを組み合わせることで、「順次（シーケンス）」「分岐（セレクション）」「反復（イテレーション）」というアルゴリズムの3つの基本制御構造を視覚的かつ直感的に学べる点は、導入教育として高く評価されるべき偉大な発明です。
+小学校のプログラミング教育においてデファクトスタンダードとして君臨しているのが、MITメディアラボが開発した「Scratch」に代表されるビジュアルプログラミング言語（ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)プログラミング）です。直感的なグラフィカルインターフェースを用いて、パズルのようにブロックを組み合わせることで、「順次（シーケンス）」「分岐（セレクション）」「反復（イテレーション）」というアルゴリズムの3つの基本制御構造を視覚的かつ直感的に学べる点は、導入教育として高く評価されるべき偉大な発明です。
 
 しかし、ここには重大な落とし穴、いわば「抽象化の罠」が存在します。それは、「ビジュアルプログラミングからテキストベースの本格的なプログラミング言語（Python, JavaScript, C++, [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)など）への移行が極めて困難であり、多くの学習者がこの段階で挫折してしまう」という残酷な事実です。
 
@@ -49,7 +49,7 @@ flowchart TD
     class J success;
 ```
 
-このフローチャートから明白なように、単に「画面上のキャラクターを動かすコードを書く体験」を積むだけでは、スケーラブルな[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)アーキテクチャを設計し、パフォーマンスをミリ秒単位で最適化できる真のソフトウェアエンジニアは育ちません。Scratchのカラフルなブロックをマウスで組み合わせる作業と、LinuxカーネルのC言語ソースコードを読み解き、[TCP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)/IPスタックの挙動を追跡する作業の間には、単なる「使用する言語の違い」という言葉では片付けられない、概念的理解の絶対的な断絶が存在しているのです。
+このフローチャートから明白なように、単に「画面上のキャラクターを動かすコードを書く体験」を積むだけでは、スケーラブルな[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)アーキテクチャを設計し、パフォーマンスをミリ秒単位で最適化できる真のソフトウェアエンジニアは育ちません。Scratchのカラフルなブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)をマウスで組み合わせる作業と、LinuxカーネルのC言語ソースコードを読み解き、[TCP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)/IPスタックの挙動を追跡する作業の間には、単なる「使用する言語の違い」という言葉では片付けられない、概念的理解の絶対的な断絶が存在しているのです。
 
 ## 3. 「数学」と「離散論理」なきコーディングの限界：計算量理論からのアプローチ
 
@@ -126,7 +126,7 @@ int main() {
 
 ## 5. データベースと永続化の壁：リレーショナル代数の不在
 
-現代のアプリケーションにおいて、データの保存と検索（永続化）は不可避のテーマです。しかし、学校教育の多くは、プログラムの実行が終了すると消えてしまう「メモリ上でのデータ処理」に留まっています。リレーショナルデータベース（RDBMS）とSQLの背後にある数学的理論、すなわちエドガー・F・コッド博士によって提唱された「リレーショナル代数（Relational Algebra）」が教えられることは稀です。
+現代のアプリケーションにおいて、データの保存と検索（永続化）は不可避のテーマです。しかし、学校教育の多くは、プログラムの実行が終了すると消えてしまう「メモリ上でのデータ処理」に留まっています。リレーショナルデータベース（[RDBMS](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)）とSQLの背後にある数学的理論、すなわちエドガー・F・コッド博士によって提唱された「リレーショナル代数（Relational Algebra）」が教えられることは稀です。
 
 データベースの演算は、集合論に基づく以下の基本演算で定義されます。
 
@@ -134,7 +134,7 @@ int main() {
 - 射影（Projection, $\pi$）: 特定の属性（列）の抽出
 - 結合（Join, $\bowtie$）: 複数のリレーションの条件付き交差
 
-さらに、膨大なレコードから一瞬で目的のデータを検索するための「[B-Tree](https://kenji.blog/p/b-tree-database-index-theory/)（[B木](https://kenji.blog/p/b-tree-database-index-theory/)）インデックス」の構造を学ぶことは、データ構造の応用として最高の実践です。B-Treeは、ディスクI/Oの回数を最小限に抑えつつ、$O(\log N)$ の検索速度を保証します。トランザクションのACID特性（Atomicity, Consistency, Isolation, Durability）を知らずして、堅牢なシステムを作ることはできません。
+さらに、膨大なレコードから一瞬で目的のデータを検索するための「[B-Tree](https://kenji.blog/p/b-tree-database-index-theory/)（[B木](https://kenji.blog/p/b-tree-database-index-theory/)）インデックス」の構造を学ぶことは、データ構造の応用として最高の実践です。B-Treeは、ディスクI/Oの回数を最小限に抑えつつ、$O(\log N)$ の検索速度を保証します。[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の[ACID](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)特性（Atomicity, [Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability）を知らずして、堅牢なシステムを作ることはできません。
 
 ## 6. セキュリティと暗号理論：素因数分解の困難性が支える社会インフラ
 
@@ -204,7 +204,7 @@ flowchart LR
 
 ### 要求されるスキルと教えられるスキルの絶望的な乖離
 
-現代の産業界、特にグローバルに展開するメガベンチャーやテックジャイアント（GAFAM等）が新卒のソフトウェアエンジニアに求める要件は、年々恐ろしいスピードで高度化しています。クラウドネイティブインフラ（AWS, GCP, [Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)）の構築、マイクロサービスアーキテクチャの[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)設計、機械学習[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の実装、そして高度なセキュリティ知識など、広範かつ深い専門性が求められます。
+現代の産業界、特にグローバルに展開するメガベンチャーやテックジャイアント（GAFAM等）が新卒のソフトウェアエンジニアに求める要件は、年々恐ろしいスピードで高度化しています。クラウドネイティブインフラ（AWS, GCP, [Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)）の構築、[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)アーキテクチャの[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)設計、機械学習[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の実装、そして高度なセキュリティ知識など、広範かつ深い専門性が求められます。
 
 以下のグラフは、現在の日本の学校教育で提供されているスキルの到達度と、最前線の産業界が要求するスキルの水準との絶望的な乖離を概念的に示しています。
 

@@ -40,7 +40,7 @@ tags: ["Registry", "PowerShell", "C#", "Windows 11"]
 
 值得一提的是，並非所有登錄檔資料都存在於磁碟上。例如，`HARDWARE` Hive 是揮發性（Volatile）的，完全不會儲存在磁碟上的檔案中。每次作業系統啟動，隨插即用（PnP）管理員偵測到硬體時，就會在記憶體中動態重建。
 
-此外，為了提高登錄檔的可靠性，最新的 Windows 實作了交易記錄（Transaction Logging）。對 Hive 檔案的變更不會直接寫入資料檔，而是會先記錄在交易記錄檔（`.log1`, `.log2`）中。這可以防止在寫入過程中發生意外斷電或系統當機時的資料損毀（Corruption），並以接近 ACID 特性的方式確保資料庫的完整性。
+此外，為了提高登錄檔的可靠性，最新的 Windows 實作了交易記錄（[Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) Logging）。對 Hive 檔案的變更不會直接寫入資料檔，而是會先記錄在交易記錄檔（`.log1`, `.log2`）中。這可以防止在寫入過程中發生意外斷電或系統當機時的資料損毀（Corruption），並以接近 [ACID](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) 特性的方式確保資料庫的完整性。
 
 ## 3. 登錄檔機碼與值的階層結構
 

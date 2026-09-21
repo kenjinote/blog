@@ -287,7 +287,7 @@ $ |Q_1 \cap Q_2| = 2Q - n = 2(2f + 1) - (3f + 1) = f + 1 $
 本文中，針對分散式系統中最大的挑戰——共識建立，我們從理論層面的「拜占庭將軍問題」開始，解說了具有崩潰容錯能力的 **Paxos** 與 **Raft** ，以及能抵抗惡意節點的 **PBFT** 。
 
 *   **Paxos** ：在數學上被證明的穩固基礎，但複雜度為其挑戰。
-*   **Raft** ：追求易懂性與實作的便利性，成為現代分散式 KVS 的業界標準。
+*   **Raft** ：追求易懂性與實作的便利性，成為現代分散式 [KVS](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/) 的業界標準。
 *   **PBFT** ：在混雜惡意節點的環境中實現確定性共識，成為區塊鏈技術的基礎。
 
 時至今日，比特幣採用的 **Nakamoto [Consensus](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/) ([PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/))** ，以及 Tendermint、HotStuff 等新型 BFT 演算法不斷誕生，它們在減少 PBFT 通訊開銷的同時提升了擴展性。根據系統的需求（節點的可靠性、所需的吞吐量、延遲），選擇合適的共識演算法，正是建構穩健分散式系統的關鍵。

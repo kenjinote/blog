@@ -299,8 +299,8 @@ export default App;
   * `/checkout/*` -> 결제 팀의 애플리케이션에 위임.
   각 마이크로 프론트엔드 내에서는 추가적으로 내부 라우팅을 가질 수 있습니다.
 
-* **BFF (Backend For Frontend) 계층에서의 라우팅** :
-  서버 인프라(예: Nginx나 API Gateway) 수준에서 경로를 판단하여 처음부터 적절한 마이크로 프론트엔드의 HTML을 제공하는 기법입니다. 페이지 전환 시 하드 리프레시가 발생하지만 아키텍처의 분리도는 가장 높습니다.
+* **[BFF](https://kenji.blog/ko/p/microservices-architecture-bff-api-gateway/) (Backend For Frontend) 계층에서의 라우팅** :
+  서버 인프라(예: Nginx나 [API Gateway](https://kenji.blog/ko/p/microservices-architecture-bff-api-gateway/)) 수준에서 경로를 판단하여 처음부터 적절한 마이크로 프론트엔드의 HTML을 제공하는 기법입니다. 페이지 전환 시 하드 리프레시가 발생하지만 아키텍처의 분리도는 가장 높습니다.
 
 ## 7. 조직에 미치는 영향과 팀의 자율성
 

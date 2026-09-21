@@ -184,7 +184,7 @@ Die Gründe dafür sind wie folgt:
 2. **Leistung** : In groß angelegten Infrastrukturen führt das Abrufen des [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s aller Ressourcen über die API jedes Mal zu Timeouts und dem Erreichen von API-Ratenlimits.
 3. **Nachverfolgung von Ressourcen** : Wenn eine Ressourcendefinition aus dem Code gelöscht wird, identifiziert Terraform "Ressourcen, die in der State-Datei, aber nicht im Code existieren", und führt eine Löschaktion aus. Ohne den State würden Ressourcen, die aus dem Code verschwunden sind, einfach "aufgegeben" werden.
 
-## 5.2. Remote State und Sperrenverwaltung (Lock Management)
+## 5.2. Remote State und Sperrenverwaltung ([Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/) Management)
 
 In der Teamentwicklung ist es ein **absolutes Anti-Pattern** , die Datei `terraform.tfstate` auf dem lokalen Rechner abzulegen. Wenn mehrere Personen gleichzeitig `terraform apply` ausführen, kollidiert der State und die Infrastruktur wird beschädigt.
 
@@ -328,7 +328,7 @@ sequenceDiagram
 # 9. Mathematischer Ansatz zur Zuverlässigkeit und Kostenmodellierung
 
 Beim Entwurf einer Infrastruktur mit IaC ist es wichtig, das Gleichgewicht zwischen Zuverlässigkeit (Reliability) und Kosten zu bewerten.
-Beispielsweise kann die Verfügbarkeit eines Systems in einer Multi-AZ-Konfiguration (Availability Zone) in einem mathematischen Modell ausgedrückt werden.
+Beispielsweise kann die Verfügbarkeit eines Systems in einer Multi-AZ-Konfiguration ([Availability](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/) Zone) in einem mathematischen Modell ausgedrückt werden.
 
 Sei die Zuverlässigkeit einer einzelnen Komponente (AZ) $R_1$ .
 Wenn Ressourcen in zwei AZs (Redundanz) platziert werden und das gesamte System als betriebsbereit gilt, wenn eines von beiden betriebsbereit ist, wird die Gesamtzuverlässigkeit des Systems $R_{total}$ durch die folgende Formel ausgedrückt:

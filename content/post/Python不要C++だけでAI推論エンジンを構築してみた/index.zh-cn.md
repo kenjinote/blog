@@ -352,7 +352,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-另外，在自回归（Autoregressive）令牌生成中，必须保留过去令牌的计算结果（Key和Value）。这被称为“ **KV缓存（Key-Value Cache）** ”。
+另外，在自回归（Autoregressive）令牌生成中，必须保留过去令牌的计算结果（Key和Value）。这被称为“ **KV缓存（[Key-Value](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache）** ”。
 
 ```mermaid
 graph TD

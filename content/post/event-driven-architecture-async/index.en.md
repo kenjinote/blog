@@ -16,7 +16,7 @@ tags:
   - "rust"
 ---
 
-In modern software development, understanding **asynchronous processing** and **Event-Driven Architecture** (EDA) is essential for improving system scalability and availability. In this article, we will delve deeply into the core concepts supporting these: the Event Loop, the Actor model, and CQRS (Command Query Responsibility Segregation), from theory to implementation and architectural level design.
+In modern software development, understanding **asynchronous processing** and **[Event-Driven](https://kenji.blog/en/p/event-driven-architecture-message-queue-kafka-rabbitmq/) Architecture** (EDA) is essential for improving system scalability and availability. In this article, we will delve deeply into the core concepts supporting these: the Event Loop, the Actor model, and CQRS (Command Query Responsibility Segregation), from theory to implementation and architectural level design.
 
 ## 1. Basics and Challenges of Asynchronous Processing
 
@@ -123,8 +123,8 @@ If the Event Loop is an approach that challenges the limits of a single thread, 
 In the Actor model, the basic unit of processing is called an "Actor". Each Actor has an independent state and behavior, and does not directly share state with other Actors. Communication between Actors is entirely done through **asynchronous message passing**.
 
 - **[State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Encapsulation**: The internal state of an Actor cannot be accessed directly from the outside.
-- **Message Queue (Mailbox)**: Received messages are queued in the Mailbox and processed sequentially.
-- **Lock-free**: Because states are not shared, lock mechanisms like mutexes are unnecessary.
+- **[Message Queue](https://kenji.blog/en/p/event-driven-architecture-message-queue-kafka-rabbitmq/) (Mailbox)**: Received messages are queued in the Mailbox and processed sequentially.
+- **[Lock](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)-free**: Because states are not shared, lock mechanisms like mutexes are unnecessary.
 
 ```mermaid
 flowchart LR
@@ -211,11 +211,11 @@ Ownership and the type system in [Rust](https://kenji.blog/en/p/webassembly-wasm
 
 ---
 
-## 4. Into the World of Event-Driven Architecture (EDA)
+## 4. Into the World of [Event-Driven](https://kenji.blog/en/p/event-driven-architecture-message-queue-kafka-rabbitmq/) Architecture (EDA)
 
 Asynchronous processing and the Actor model are techniques for optimizing concurrent processing within a single application. The concept that extends this to the entire system (such as between microservices) is **Event-Driven Architecture (EDA)**.
 
-In EDA, state changes within the system are expressed as "events" and asynchronously delivered through an event bus or message broker (Apache Kafka, RabbitMQ, AWS EventBridge, etc.).
+In EDA, state changes within the system are expressed as "events" and asynchronously delivered through an event bus or message broker (Apache [Kafka](https://kenji.blog/en/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/en/p/event-driven-architecture-message-queue-kafka-rabbitmq/), AWS EventBridge, etc.).
 
 ### 4.1 Key Components of EDA
 
@@ -290,7 +290,7 @@ The technologies we have looked at so far each have their suitable use cases.
 
 ### 6.1 Challenges and Best Practices
 
-While event-driven and asynchronous architectures are powerful, it is necessary to accept **Eventual Consistency**. Because data is not instantly reflected across all systems (strong consistency), ingenuity on the UI/UX side (e.g., optimistic UI updates) is required.
+While event-driven and asynchronous architectures are powerful, it is necessary to accept **Eventual [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)**. Because data is not instantly reflected across all systems (strong consistency), ingenuity on the UI/UX side (e.g., optimistic UI updates) is required.
 
 Additionally, ensuring **Idempotency** in distributed systems is crucial. Systems must be designed so that even if the same event is processed multiple times due to network retries, the result remains the same.
 

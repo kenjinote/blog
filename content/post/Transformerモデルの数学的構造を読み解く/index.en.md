@@ -15,7 +15,7 @@ It is no exaggeration to say that the "Transformer" is the architecture that rew
 
 However, while qualitative explanations like "understanding context using Attention mechanisms" are commonly seen regarding how Transformers work, surprisingly few resources dive deep into the **mathematical structure** behind it for beginners. To truly understand how AI processes "words" as "mathematical formulas" and generates incredibly natural sentences, deciphering its mathematical mechanisms is essential.
 
-This article is aimed at those with a basic understanding of mathematics and programming (those who grasp high school-level concepts of matrices and derivatives). It thoroughly and clearly uncovers the mathematical structures of the Transformer's core components: the "Self-Attention mechanism," the "Query-Key-Value (Q/K/V) model," "normalization using the Softmax function," and "Positional Encoding."
+This article is aimed at those with a basic understanding of mathematics and programming (those who grasp high school-level concepts of matrices and derivatives). It thoroughly and clearly uncovers the mathematical structures of the Transformer's core components: the "Self-Attention mechanism," the "Query-[Key-Value](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/) (Q/K/V) model," "normalization using the Softmax function," and "Positional Encoding."
 
 You might be overwhelmed by the list of mathematical formulas, but each calculation has a clear "meaning." By the time you finish reading this article, you should understand that the Transformer is not just a magical black box, but an exquisitely designed crystallization of mathematics and statistics.
 

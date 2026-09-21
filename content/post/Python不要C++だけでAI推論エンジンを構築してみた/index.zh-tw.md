@@ -352,7 +352,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-此外，在自迴歸型（Autoregressive）的Token生成中，必須保留過去Token的計算結果（Key與Value）。我們稱之為「 **KV快取（Key-Value Cache）** 」。
+此外，在自迴歸型（Autoregressive）的Token生成中，必須保留過去Token的計算結果（Key與Value）。我們稱之為「 **KV快取（[Key-Value](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache）** 」。
 
 ```mermaid
 graph TD

@@ -158,7 +158,7 @@ int main() {
 
 ## Rusts Mutex "besitzt" die Daten
 
-In [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) kapselt (besitzt) `Mutex<T>` den zu schützenden Datentyp `T` mithilfe von Generics. Um auf die Daten zuzugreifen, ist es zwingend erforderlich, `lock()` aufzurufen, um ein Guard-Objekt zu erhalten. Es ist syntaktisch unmöglich, die Daten zu berühren, ohne die Sperre (Lock) zu erwerben.
+In [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) kapselt (besitzt) `Mutex<T>` den zu schützenden Datentyp `T` mithilfe von Generics. Um auf die Daten zuzugreifen, ist es zwingend erforderlich, `lock()` aufzurufen, um ein Guard-Objekt zu erhalten. Es ist syntaktisch unmöglich, die Daten zu berühren, ohne die Sperre ([Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)) zu erwerben.
 
 ```rust
 use std::sync::{Arc, Mutex};

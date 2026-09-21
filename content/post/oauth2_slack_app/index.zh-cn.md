@@ -352,7 +352,7 @@ sequenceDiagram
 最后是关于已获取的访问令牌保存方法的最佳实践。
 
 ## 1. 存入数据库时必须加密
-访问令牌（`xoxb-...`）简直就是 Slack 工作区的“万能钥匙”。绝不能以明文（纯文本）形式将其保存在数据库（MySQL, PostgreSQL, MongoDB 等）中。万一发生 SQL 注入等导致数据库泄露的情况，将演变成所有客户的 Slack 被劫持的大惨剧。
+访问令牌（`xoxb-...`）简直就是 Slack 工作区的“万能钥匙”。绝不能以明文（纯文本）形式将其保存在数据库（MySQL, PostgreSQL, [MongoDB](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/) 等）中。万一发生 SQL 注入等导致数据库泄露的情况，将演变成所有客户的 Slack 被劫持的大惨剧。
 
 请务必在应用层使用 **AES-256-GCM** 等强对称密钥加密算法进行加密后再存入 DB。用于加密/解密的主密钥，应使用 AWS KMS (Key Management [Service](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/)) 或 GCP Cloud KMS 等安全的密钥管理服务进行严格管理。
 

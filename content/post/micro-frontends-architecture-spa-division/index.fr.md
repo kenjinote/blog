@@ -299,8 +299,8 @@ Le routage est un élément clé qui détermine à quel niveau la navigation de 
   * `/checkout/*` -> Délègue à l'application de l'équipe de paiement.
   Chaque micro-frontend peut avoir en plus un routage interne.
 
-* **Routage au niveau du BFF (Backend For Frontend)** :
-  C'est une méthode où le chemin d'accès est déterminé au niveau de l'infrastructure du serveur (ex: Nginx ou API Gateway) et où le HTML du micro-frontend approprié est servi dès le début. Bien qu'un rafraîchissement complet (hard refresh) se produise lors de la transition de page, le degré de séparation de l'architecture est le plus élevé.
+* **Routage au niveau du [BFF](https://kenji.blog/fr/p/microservices-architecture-bff-api-gateway/) (Backend For Frontend)** :
+  C'est une méthode où le chemin d'accès est déterminé au niveau de l'infrastructure du serveur (ex: Nginx ou [API Gateway](https://kenji.blog/fr/p/microservices-architecture-bff-api-gateway/)) et où le HTML du micro-frontend approprié est servi dès le début. Bien qu'un rafraîchissement complet (hard refresh) se produise lors de la transition de page, le degré de séparation de l'architecture est le plus élevé.
 
 ## 7. Impact sur l'organisation et autonomie des équipes
 

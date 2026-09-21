@@ -16,7 +16,7 @@ tags:
   - "rust"
 ---
 
-Dalam pengembangan perangkat lunak modern, pemahaman tentang **pemrosesan asinkron** dan **arsitektur berbasis peristiwa** (EDA: Event-Driven Architecture) sangat penting untuk meningkatkan skalabilitas dan ketersediaan sistem. Artikel ini akan membahas secara mendalam konsep-konsep inti yang mendukung hal tersebut, yaitu Event Loop, model Actor, dan CQRS (Command Query Responsibility Segregation), mulai dari teori, implementasi, hingga desain tingkat arsitektur.
+Dalam pengembangan perangkat lunak modern, pemahaman tentang **pemrosesan asinkron** dan **arsitektur berbasis peristiwa** (EDA: [Event-Driven](https://kenji.blog/id/p/event-driven-architecture-message-queue-kafka-rabbitmq/) Architecture) sangat penting untuk meningkatkan skalabilitas dan ketersediaan sistem. Artikel ini akan membahas secara mendalam konsep-konsep inti yang mendukung hal tersebut, yaitu Event Loop, model Actor, dan CQRS (Command Query Responsibility Segregation), mulai dari teori, implementasi, hingga desain tingkat arsitektur.
 
 ## 1. Dasar dan Tantangan Pemrosesan Asinkron
 
@@ -124,7 +124,7 @@ Dalam model Actor, unit dasar pemrosesan disebut "Actor" (aktor). Setiap Actor m
 
 - **Enkapsulasi Keadaan**: Keadaan internal Actor tidak dapat diakses secara langsung dari luar.
 - **Antrean Pesan (Mailbox)**: Pesan yang diterima akan diantrekan di Mailbox dan diproses secara berurutan.
-- **Bebas Kunci (Lock-free)**: Karena keadaan tidak dibagikan, mekanisme penguncian seperti mutex tidak diperlukan.
+- **Bebas Kunci ([Lock](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/)-free)**: Karena keadaan tidak dibagikan, mekanisme penguncian seperti mutex tidak diperlukan.
 
 ```mermaid
 flowchart LR
@@ -215,7 +215,7 @@ Kepemilikan (Ownership) dan sistem tipe dalam [Rust](https://kenji.blog/id/p/web
 
 Pemrosesan asinkron dan model Actor adalah teknik untuk mengoptimalkan pemrosesan konkuren di dalam aplikasi tunggal. Konsep yang memperluas hal ini ke seluruh sistem (seperti antar layanan mikro) adalah **Arsitektur Berbasis Peristiwa (EDA)**.
 
-Dalam EDA, perubahan keadaan di dalam sistem direpresentasikan sebagai "peristiwa" dan didistribusikan secara asinkron melalui bus peristiwa atau pialang pesan (Apache Kafka, RabbitMQ, AWS EventBridge, dll.).
+Dalam EDA, perubahan keadaan di dalam sistem direpresentasikan sebagai "peristiwa" dan didistribusikan secara asinkron melalui bus peristiwa atau pialang pesan (Apache [Kafka](https://kenji.blog/id/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/id/p/event-driven-architecture-message-queue-kafka-rabbitmq/), AWS EventBridge, dll.).
 
 ### 4.1 Komponen Utama EDA
 
@@ -279,7 +279,7 @@ Keuntungan dari Event Sourcing adalah sebagai berikut:
 Teknologi yang telah dibahas sejauh ini memiliki kasus penggunaan masing-masing yang sesuai.
 
 1. **Event Loop (Node.js)**: 
-   - API Gateway dan sistem obrolan waktu nyata yang banyak melakukan pemrosesan yang dibatasi oleh I/O (I/O bound).
+   - [API Gateway](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/) dan sistem obrolan waktu nyata yang banyak melakukan pemrosesan yang dibatasi oleh I/O (I/O bound).
    - Server WebSocket yang menangani koneksi bersamaan dalam jumlah besar.
 2. **Model Actor ([Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) / Akka)**: 
    - Pemrosesan konkuren yang memiliki keadaan kompleks (server permainan, pelacakan waktu nyata).
@@ -290,7 +290,7 @@ Teknologi yang telah dibahas sejauh ini memiliki kasus penggunaan masing-masing 
 
 ### 6.1 Tantangan dan Praktik Terbaik
 
-Meskipun arsitektur asinkron dan berbasis peristiwa sangat kuat, penerimaan terhadap **Konsistensi Akhir (Eventual Consistency)** sangat diperlukan. Karena data tidak langsung direfleksikan di seluruh sistem (konsistensi kuat), inovasi dari sisi UI/UX (misalnya: pembaruan UI yang optimis) sangat dibutuhkan.
+Meskipun arsitektur asinkron dan berbasis peristiwa sangat kuat, penerimaan terhadap **Konsistensi Akhir (Eventual [Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/))** sangat diperlukan. Karena data tidak langsung direfleksikan di seluruh sistem (konsistensi kuat), inovasi dari sisi UI/UX (misalnya: pembaruan UI yang optimis) sangat dibutuhkan.
 
 Selain itu, sangat penting untuk memastikan **Idempotensi (Idempotency)** dalam sistem terdistribusi. Bahkan jika peristiwa yang sama diproses beberapa kali karena transmisi ulang dari jaringan, sistem harus dirancang sedemikian rupa agar hasilnya tidak berubah.
 

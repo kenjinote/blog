@@ -126,7 +126,7 @@ El concepto de punteros (referencias directas a direcciones de memoria), la disp
 
 ## 5. El muro de las bases de datos y la persistencia: La ausencia del álgebra relacional
 
-En las aplicaciones modernas, guardar y buscar datos (persistencia) es un tema inevitable. Sin embargo, gran parte de la educación escolar se detiene en el "procesamiento de datos en la memoria", que desaparece una vez finalizada la ejecución del programa. Rara vez se enseña la teoría matemática detrás de las bases de datos relacionales (RDBMS) y SQL, a saber, el "álgebra relacional" propuesta por el Dr. Edgar F. Codd.
+En las aplicaciones modernas, guardar y buscar datos (persistencia) es un tema inevitable. Sin embargo, gran parte de la educación escolar se detiene en el "procesamiento de datos en la memoria", que desaparece una vez finalizada la ejecución del programa. Rara vez se enseña la teoría matemática detrás de las bases de datos relacionales ([RDBMS](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/)) y SQL, a saber, el "álgebra relacional" propuesta por el Dr. Edgar F. Codd.
 
 Las operaciones de bases de datos se definen por las siguientes operaciones básicas basadas en la teoría de conjuntos:
 
@@ -134,7 +134,7 @@ Las operaciones de bases de datos se definen por las siguientes operaciones bás
 - Proyección (Projection, $\pi$): Extracción de atributos específicos (columnas)
 - Reunión (Join, $\bowtie$): Intersección condicional de múltiples relaciones
 
-Además, aprender la estructura de los índices "[B-Tree](https://kenji.blog/es/p/b-tree-database-index-theory/) (Árbol B)" para buscar instantáneamente los datos deseados en grandes volúmenes de registros es la mejor práctica de aplicación de estructuras de datos. B-Tree garantiza una velocidad de búsqueda de $O(\log N)$ minimizando el número de E/S de disco. Uno no puede construir sistemas robustos sin conocer las propiedades ACID de las transacciones (Atomicidad, Consistencia, Aislamiento, Durabilidad).
+Además, aprender la estructura de los índices "[B-Tree](https://kenji.blog/es/p/b-tree-database-index-theory/) (Árbol B)" para buscar instantáneamente los datos deseados en grandes volúmenes de registros es la mejor práctica de aplicación de estructuras de datos. B-Tree garantiza una velocidad de búsqueda de $O(\log N)$ minimizando el número de E/S de disco. Uno no puede construir sistemas robustos sin conocer las propiedades [ACID](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/) de las transacciones (Atomicidad, Consistencia, Aislamiento, Durabilidad).
 
 ## 6. Seguridad y teoría criptográfica: La infraestructura social sustentada por la dificultad de la factorización prima
 

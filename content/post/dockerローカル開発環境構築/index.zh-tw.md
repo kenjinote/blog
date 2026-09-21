@@ -131,7 +131,7 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 在現代的 Web 應用程式開發中，Web 伺服器、資料庫、快取伺服器等多個元件協同運作的微服務架構已經非常普遍。為了在本地環境集中管理這些元件，我們使用 `docker-compose.yml`。
 
-本次我們將在本地建置由「Web (FastAPI)」、「Database (PostgreSQL)」、「Cache (Redis)」構成的三層式架構系統。
+本次我們將在本地建置由「Web (FastAPI)」、「Database (PostgreSQL)」、「Cache ([Redis](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/))」構成的三層式架構系統。
 
 ### 架構圖（Mermaid）
 
@@ -348,7 +348,7 @@ sequenceDiagram
 將各項處理的延遲定義如下：
 - $T_{\text{net}}$：客戶端與 Web 容器之間的網路延遲
 - $T_{\text{app}}$：應用程式端的純粹處理時間（如序列化等）
-- $T_{\text{cache}}$：向 Redis 讀取與寫入所花費的時間
+- $T_{\text{cache}}$：向 [Redis](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/) 讀取與寫入所花費的時間
 - $T_{\text{db}}$：向 PostgreSQL 執行查詢所花費的時間
 - $p_{\text{miss}}$：快取未命中率（$0 \le p_{\text{miss}} \le 1$）
 

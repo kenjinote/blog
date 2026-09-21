@@ -131,7 +131,7 @@ De esta manera, al introducir construcciones en múltiples etapas, el tamaño de
 
 En el desarrollo de aplicaciones web modernas, es común utilizar una arquitectura de microservicios donde múltiples componentes colaboran, como servidores web, bases de datos y servidores de caché. Usamos `docker-compose.yml` para gestionar esto de forma centralizada en un entorno local.
 
-Esta vez, construiremos localmente un sistema de tres capas compuesto por "Web (FastAPI)", "Base de datos (PostgreSQL)" y "Caché (Redis)".
+Esta vez, construiremos localmente un sistema de tres capas compuesto por "Web (FastAPI)", "Base de datos (PostgreSQL)" y "Caché ([Redis](https://kenji.blog/es/p/nosql-database-selection-kvs-document-graph-wide-column/))".
 
 ### Diagrama de arquitectura (Mermaid)
 
@@ -348,7 +348,7 @@ Modelaremos matemáticamente el tiempo promedio de procesamiento de peticiones $
 Definimos la latencia de cada proceso de la siguiente manera:
 - $T_{\text{net}}$: Latencia de red entre el cliente y el contenedor web
 - $T_{\text{app}}$: Tiempo de procesamiento puro del lado de la aplicación (serialización, etc.)
-- $T_{\text{cache}}$: Tiempo requerido para leer y escribir en Redis
+- $T_{\text{cache}}$: Tiempo requerido para leer y escribir en [Redis](https://kenji.blog/es/p/nosql-database-selection-kvs-document-graph-wide-column/)
 - $T_{\text{db}}$: Tiempo requerido para ejecutar consultas en PostgreSQL
 - $p_{\text{miss}}$: Tasa de fallos en caché (cache miss rate) ($0 \le p_{\text{miss}} \le 1$)
 

@@ -11,7 +11,7 @@ tags: ["C++", "Smart Pointers", "Memory Management", "Modern C++"]
 
 C++における[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)は、長年にわたり開発者にとって最大の課題の一つでした。手動での `new` と `delete` に依存する従来の[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)スタイルは、メモリリークやダングリングポインタ、二重解放といった深刻なバグを引き起こす温床となっていました。しかし、Modern C++（C++11以降）の登場により、状況は劇的に変化しました。その中核をなすのが「スマートポインタ（Smart Pointers）」です。
 
-本記事では、メモリリークを根絶し、安全かつ効率的なリソース管理を実現するための強力なツールである `std::unique_ptr`、`std::shared_ptr`、そして `std::weak_ptr` の仕組みと高度な活用術について、内部実装（コントロールブロックやアトミック操作）、パフォーマンスへの影響、数学的モデルによる参照カウントの定式化を交えて極めて詳細に解説します。
+本記事では、メモリリークを根絶し、安全かつ効率的なリソース管理を実現するための強力なツールである `std::unique_ptr`、`std::shared_ptr`、そして `std::weak_ptr` の仕組みと高度な活用術について、内部実装（コントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)やアトミック操作）、パフォーマンスへの影響、数学的モデルによる参照カウントの定式化を交えて極めて詳細に解説します。
 
 ## 1. 導入：C++[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)の暗黒時代とModern C++の夜明け
 
@@ -116,16 +116,16 @@ int main() {
 
 カスタムデリータとして関数ポインタやラムダ式を使用すると `unique_ptr` のサイズが増加する可能性がありますが、上記のようにステートレスな関数オブジェクト（Functor）を使用すると、C++の **EBCO（Empty Base Class Optimization）** またはC++20の `[[no_unique_address]]` によりサイズは生のポインタから増加しません（ゼロオーバーヘッドが維持されます）。
 
-## 3. `std::shared_ptr`：共有所有権とコントロールブロック
+## 3. `std::shared_ptr`：共有所有権とコントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)
 
 `std::shared_ptr` は、複数のポインタが同一のオブジェクトを共有して所有するためのスマートポインタです。最後の `shared_ptr` が破棄されたときに、管理しているオブジェクトが解放されます。
 
-### 3.1 内部アーキテクチャ：コントロールブロック
+### 3.1 内部アーキテクチャ：コントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)
 
-`std::shared_ptr` は、管理対象のオブジェクトへのポインタとは別に、 **コントロールブロック（Control Block）** と呼ばれるメタデータをヒープ上に割り当てて共有します。コントロールブロックには以下の情報が含まれます：
+`std::shared_ptr` は、管理対象のオブジェクトへのポインタとは別に、 **コントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)（Control Block）** と呼ばれるメタデータをヒープ上に割り当てて共有します。コントロールブロックには以下の情報が含まれます：
 
 1.  **Strong Count (強参照カウント)** ：オブジェクトを所有している `shared_ptr` の数。これが0になるとオブジェクトが破棄されます。
-2.  **Weak Count (弱参照カウント)** ：オブジェクトを監視している `weak_ptr` の数。Strong CountとWeak Countの両方が0になると、コントロールブロック自体が解放されます。
+2.  **Weak Count (弱参照カウント)** ：オブジェクトを監視している `weak_ptr` の数。Strong CountとWeak Countの両方が0になると、コントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)自体が解放されます。
 3.  **カスタムデリータとアロケータ** （指定された場合）。
 
 ```mermaid
@@ -142,7 +142,7 @@ graph TD
     C -.->|"Custom Deleter"| G["Deleter"]
 ```
 
-このため、`std::shared_ptr` オブジェクト自体のサイズは通常、生のポインタの2倍（オブジェクトへのポインタと、コントロールブロックへのポインタ）になります。
+このため、`std::shared_ptr` オブジェクト自体のサイズは通常、生のポインタの2倍（オブジェクトへのポインタと、コントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)へのポインタ）になります。
 
 ### 3.2 パフォーマンスとアトミック操作
 
@@ -157,7 +157,7 @@ x86/x64アーキテクチャでは、参照カウントの増減には `lock xad
 `shared_ptr` を生成する際は、可能な限り `std::make_shared` を使用すべきです。これには2つの重大な理由があります。
 
 1.  **メモリ割り当ての最適化** ：
-    `new` を使用すると、オブジェクト本体の割り当てとコントロールブロックの割り当ての2回のヒープアロケーションが発生します。`std::make_shared` を使用すると、両方を包含する1つの大きなメモリブロックを1回のヒープアロケーションで確保でき、キャッシュ効率も向上します。
+    `new` を使用すると、オブジェクト本体の割り当てとコントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の割り当ての2回のヒープアロケーションが発生します。`std::make_shared` を使用すると、両方を包含する1つの大きなメモリブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を1回のヒープアロケーションで確保でき、キャッシュ効率も向上します。
 2.  **例外安全性** ：
     C++17より前の規格では、関数の引数評価順序が未規定であったため、`new` で確保したポインタを `shared_ptr` のコンストラクタに渡す前に他の引数の評価で例外が発生すると、メモリリークのリスクがありました。`make_shared` はこの問題を完全に回避します。
 
@@ -231,16 +231,16 @@ int main() {
 
 ## 5. マルチスレッド環境における共有所有権の制約
 
-`shared_ptr` のスレッドセーフティについては誤解されがちです。「コントロールブロック内の参照カウントの更新はスレッドセーフ」ですが、「`shared_ptr` オブジェクト自体の読み書きはスレッドセーフではありません」。
+`shared_ptr` のスレッドセーフティについては誤解されがちです。「コントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)内の参照カウントの更新はスレッドセーフ」ですが、「`shared_ptr` オブジェクト自体の読み書きはスレッドセーフではありません」。
 
-- **安全な操作** ：複数のスレッドが、*それぞれ自身の* `shared_ptr` インスタンス（ただし同じコントロールブロックを共有している）を読み書きすること。
+- **安全な操作** ：複数のスレッドが、*それぞれ自身の* `shared_ptr` インスタンス（ただし同じコントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を共有している）を読み書きすること。
 - **データレース（危険）** ：複数のスレッドが、*全く同じ* `shared_ptr` インスタンスに対して同時に読み書きすること。
 
 同じインスタンスを複数のスレッドで共有する必要がある場合は、`std::atomic<std::shared_ptr<T>>`（C++20）を使用するか、ミューテックス（`std::mutex`）で保護する必要があります。
 
 ## 6. 参照カウントの数学的定式化
 
-コントロールブロックにおけるライフサイクルの状態遷移を数学的に表現すると以下のようになります。
+コントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)におけるライフサイクルの状態遷移を数学的に表現すると以下のようになります。
 時刻 $t$ における Strong Count を $S(t)$、Weak Count を $W(t)$ とします。
 
 初期状態（`make_shared` 直後）：
@@ -252,12 +252,12 @@ $$ S(t_{next}) = S(t) + 1 $$
 管理オブジェクト（Managed Object）が破棄される条件：
 $$ \lim_{t \to t_d} S(t) = 0 $$
 
-コントロールブロック（Control Block）自身がメモリから解放される条件：
+コントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)（Control Block）自身がメモリから解放される条件：
 $$ S(t) = 0 \quad \land \quad W(t) = 0 $$
 つまり、
 $$ S(t) + W(t) = 0 $$
 
-この数式が示すように、`weak_ptr` が存在し続ける限り（$W(t) > 0$）、管理オブジェクトが破棄されていてもコントロールブロック用の小さなメモリ空間は確保され続けます。これが `make_shared` の唯一の欠点（管理オブジェクトのメモリとコントロールブロックが一体化しているため、弱い参照が残っていると管理オブジェクト用の巨大なメモリ空間もシステムに返還されない）となるケースがありますが、通常は `make_shared` のパフォーマンス上の利点が圧倒的に上回ります。
+この数式が示すように、`weak_ptr` が存在し続ける限り（$W(t) > 0$）、管理オブジェクトが破棄されていてもコントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)用の小さなメモリ空間は確保され続けます。これが `make_shared` の唯一の欠点（管理オブジェクトのメモリとコントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が一体化しているため、弱い参照が残っていると管理オブジェクト用の巨大なメモリ空間もシステムに返還されない）となるケースがありますが、通常は `make_shared` のパフォーマンス上の利点が圧倒的に上回ります。
 
 ## 7. 結論
 

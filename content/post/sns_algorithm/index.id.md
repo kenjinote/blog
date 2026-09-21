@@ -68,7 +68,7 @@ $$
 $$
 
 **Dampak pada Pemilihan Teknologi:**
-Model raksasa seperti DLRM menangkap bahkan sinyal yang sangat halus (misalnya, sedikit peningkatan pada waktu tinggal untuk "postingan dengan video" atau "postingan yang berisi buzzword tertentu") dan merefleksikannya dalam skor prediksi. Akibatnya, informasi teknis yang mengandung "judul ekstrem (misalnya, 'React sudah usang', 'Akhir dari Microservices')" atau "demo visual yang mencolok" lebih cenderung diunggulkan secara algoritmik.
+Model raksasa seperti DLRM menangkap bahkan sinyal yang sangat halus (misalnya, sedikit peningkatan pada waktu tinggal untuk "postingan dengan video" atau "postingan yang berisi buzzword tertentu") dan merefleksikannya dalam skor prediksi. Akibatnya, informasi teknis yang mengandung "judul ekstrem (misalnya, 'React sudah usang', 'Akhir dari [[Microservice](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)')" atau "demo visual yang mencolok" lebih cenderung diunggulkan secara algoritmik.
 
 ### 2.3 Pembelajaran Penguatan dan Masalah Bandit Berlengan Banyak (Multi-Armed Bandits)
 
@@ -165,7 +165,7 @@ Dengan menerapkan proses ini secara paksa, kita bisa mengubah "Hype (Antusiasme 
 
 Di dunia teknologi, ada sebuah mantra terkenal yang berbunyi **"Choose Boring Technology" (Pilihlah Teknologi yang Membosankan)**. Ini adalah ajaran bahwa inovasi token (sumber daya terbatas yang dapat digunakan organisasi pada teknologi baru yang tidak diketahui) tidak boleh disia-siakan dalam memilih infrastruktur dan kerangka kerja yang tidak terkait langsung dengan nilai inti dari bisnis.
 
-Algoritma SNS menyukai "kebaruan". Namun, yang dibutuhkan untuk membangun sistem yang kuat dan mampu bertahan dalam operasi nyata adalah teknologi "membosankan" (seperti PostgreSQL, Redis, dan [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) standar) yang memiliki rekam jejak operasional selama lebih dari 10 tahun, dan prosedur pemulihannya ketika terjadi kegagalan dapat mencapai jutaan klik dalam pencarian Google.
+Algoritma SNS menyukai "kebaruan". Namun, yang dibutuhkan untuk membangun sistem yang kuat dan mampu bertahan dalam operasi nyata adalah teknologi "membosankan" (seperti PostgreSQL, [Redis](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/), dan [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) standar) yang memiliki rekam jejak operasional selama lebih dari 10 tahun, dan prosedur pemulihannya ketika terjadi kegagalan dapat mencapai jutaan klik dalam pencarian Google.
 
 ---
 

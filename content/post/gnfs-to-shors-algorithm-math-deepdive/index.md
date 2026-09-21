@@ -80,7 +80,7 @@ $$ g(m) \equiv 0 \pmod N $$
 
 $$ M \mathbf{x} \equiv \mathbf{0} \pmod 2 $$
 
-という線形方程式系を解くことに他なりません。ここで、ブロック・ランチョス法（Block Lanczos Algorithm）やブロック・ウィーデマン法（Block Wiedemann Algorithm）などの高度な数値計算アルゴリズムが活用されます。
+という線形方程式系を解くことに他なりません。ここで、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)・ランチョス法（Block Lanczos Algorithm）やブロック・ウィーデマン法（Block Wiedemann Algorithm）などの高度な数値計算アルゴリズムが活用されます。
 
 #### 2.4. 平方根の計算
 

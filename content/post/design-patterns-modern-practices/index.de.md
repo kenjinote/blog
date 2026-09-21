@@ -210,7 +210,7 @@ let result = divide(10.0, 2.0).and_then(|res| divide(res, 2.0));
 
 Nicht alle GoF-Muster sind ausgestorben. Muster, die an den Grenzen von Architekturen operieren, sind nach wie vor äußerst wichtig.
 
-1. **Facade (Fassade)**: Das Konzept, eine einfache Schnittstelle zu einem komplexen Subsystem bereitzustellen, wurde als API-Gateway (BFF: Backend for Frontend) in Microservice-Architekturen skaliert.
+1. **Facade (Fassade)**: Das Konzept, eine einfache Schnittstelle zu einem komplexen Subsystem bereitzustellen, wurde als API-Gateway ([BFF](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/): [Backend for Frontend](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)) in [Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen skaliert.
 2. **Adapter**: Als Grundlage für die Integration externer Systeme oder als "Ports und Adapter" in einer sauberen oder hexagonalen Architektur ist es der Schlüssel zur losen Kopplung von Systemen.
 3. **Decorator (Dekorierer)**: In Python und TypeScript hat es sich zu einer Sprachfunktion als annotationsbasierte Metaprogrammierungsfunktion `@Decorator` weiterentwickelt.
 

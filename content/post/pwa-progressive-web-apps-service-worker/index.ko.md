@@ -365,7 +365,7 @@ Service Worker의 `caches` API(Cache Storage)는 HTTP 응답 전체(HTML 파일,
 
 그래서 등장하는 것이 **IndexedDB** 입니다.
 
-IndexedDB는 브라우저에 내장된 비동기 트랜잭션 방식의 NoSQL 데이터베이스입니다. 매우 대용량의 데이터를 저장할 수 있으며, 복잡한 인덱스 검색도 가능합니다.
+IndexedDB는 브라우저에 내장된 비동기 트랜잭션 방식의 [NoSQL](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/) 데이터베이스입니다. 매우 대용량의 데이터를 저장할 수 있으며, 복잡한 인덱스 검색도 가능합니다.
 
 ### 8.1. 왜 Cache Storage만으로는 불충분한가?
 

@@ -22,7 +22,7 @@ En este artículo, explicaremos en gran detalle el proceso de desarrollo para co
 
 En la fase de entrenamiento de IA, Python tiene una ventaja abrumadora debido a su flexibilidad y rico ecosistema. Sin embargo, en las fases de despliegue e "Inferencia", C++ se convierte en una opción poderosa por las siguientes razones:
 
-1. **Reducción de sobrecarga**: Se puede eliminar por completo la sobrecarga del entorno de ejecución y del Global Interpreter Lock (GIL) de Python.
+1. **Reducción de sobrecarga**: Se puede eliminar por completo la sobrecarga del entorno de ejecución y del Global Interpreter [Lock](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/) (GIL) de Python.
 2. **Eficiencia de memoria y asignación por arenas**: Al poder controlar manualmente la asignación y liberación de memoria, se evitan los picos impredecibles causados por el recolector de basura.
 3. **Acceso directo al hardware**: Se pueden invocar directamente funciones intrínsecas SIMD como AVX-512, AVX2 y ARM NEON para maximizar la capacidad de procesamiento de la CPU.
 4. **Eliminación de dependencias**: ggml es una biblioteca C/C++ sin dependencias (Zero dependencies), y se puede compilar fácilmente incluso en un entorno MSVC en Windows siempre que haya un compilador.

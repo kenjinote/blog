@@ -44,7 +44,7 @@ Driver ProcMon didaftarkan sebagai driver minifilter, yang memantau semua IRP (I
 
 Process Explorer adalah "Task Manager super kuat". Tidak hanya penggunaan CPU/memori, alat ini juga memvisualisasikan pohon proses, handle, DLL yang dimuat, hingga tumpukan panggilan (call stack) thread.
 
-### 2.1 Mengidentifikasi Kebocoran Handle dan Penguncian (Lock)
+### 2.1 Mengidentifikasi Kebocoran Handle dan Penguncian ([Lock](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/))
 Sering terjadi masalah di mana sebuah aplikasi macet (crash) dengan file masih terbuka, dan file tersebut kemudian tidak dapat dihapus atau dipindahkan. Saat Anda menemukan pesan kesalahan "File is open in another program" (File sedang dibuka oleh program lain), Anda dapat menggunakan fitur **Find** (`Ctrl+F`) pada ProcExp untuk mencari nama file atau direktori tersebut.
 Setelah Anda mengidentifikasi proses yang menahan handle tersebut (File, Section, Mutex, Event, dll.), Anda dapat mengeklik kanan pada proses tersebut dan menjalankan `Close Handle` secara paksa untuk membuka kunci file tanpa mematikan proses (namun, perlu diingat adanya risiko perilaku aplikasi menjadi tidak stabil).
 

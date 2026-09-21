@@ -73,7 +73,7 @@ $$
 
 ## 4. 資料庫的標準：向 B+Tree 的演進
 
-實際在 RDBMS（如 MySQL 的 InnoDB 或 PostgreSQL 等）中所使用的，是 B-Tree 的改良版 **B+Tree** 。
+實際在 [RDBMS](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)（如 MySQL 的 InnoDB 或 PostgreSQL 等）中所使用的，是 B-Tree 的改良版 **B+Tree** 。
 
 ### 4.1 B-Tree 與 B+Tree 的差異
 

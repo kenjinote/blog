@@ -316,7 +316,7 @@ To extract the maximum performance in multithreaded programming, it is necessary
 
 * **False Sharing:** 
   Even if multiple threads update different variables, if those variables are placed in the same CPU cache line (typically 64 bytes), unnecessary memory synchronization occurs to maintain cache coherency, resulting in a dramatic drop in performance. To prevent this, it is necessary to align variables on cache line boundaries using the `alignas` specifier.
-* **Lock-Free and `std::atomic`:**
+* **[Lock](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)-Free and `std::atomic`:**
   To avoid the overhead of locking/unlocking mutexes, introducing atomic operations (like Compare-And-Swap) using `<atomic>` or lock-free data structures is considered. However, this requires a correct understanding of memory ordering (`std::memory_order`) and is very difficult to implement. Therefore, it is usually introduced only when deemed necessary after careful performance measurements.
 
 ---

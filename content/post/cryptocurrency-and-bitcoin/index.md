@@ -41,7 +41,7 @@ tags: ["bitcoin", "cryptography", "blockchain"]
 
 タイトルは『Bitcoin: A Peer-to-Peer Electronic Cash System』（ビットコイン：[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)電子マネーシステム）。この9ページの論文は、これまでの電子マネーの試みが抱えていた二重支払い問題を、 **プルーフ・オブ・ワーク（Proof of Work: [PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)）** という仕組みを使って完全に分散化された形で解決する方法を示していました。
 
-### ジェネシスブロック（Genesis Block）
+### ジェネシスブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)（Genesis Block）
 
 2009年1月3日、ビットコインのネットワークが稼働を開始しました。最初に採掘されたブロックは「ジェネシスブロック（ブロック0）」と呼ばれます。このブロックには、サトシ・ナカモトによって次のようなメッセージが刻まれていました。
 
@@ -52,7 +52,7 @@ tags: ["bitcoin", "cryptography", "blockchain"]
 
 ## 3. [ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)のアーキテクチャ
 
-ビットコインを支える中核技術が「ブロックチェーン（[Blockchain](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)）」です。ブロックチェーンは、分散型台帳技術（[Distributed Ledger](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT）のひとつの形態であり、データが「ブロック」と呼ばれる単位でまとめられ、それらが暗号学的にチェーン（鎖）のようにつながった構造をしています。
+ビットコインを支える中核技術が「ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーン（[Blockchain](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)）」です。ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンは、分散型台帳技術（[Distributed Ledger](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT）のひとつの形態であり、データが「ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)」と呼ばれる単位でまとめられ、それらが暗号学的にチェーン（鎖）のようにつながった構造をしています。
 
 ```mermaid
 flowchart TD
@@ -62,9 +62,9 @@ flowchart TD
     D -.-> E["..."]
 ```
 
-### ブロックの構造
+### ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の構造
 
-ひとつのブロックは、大きく分けて「ブロックヘッダ（Block Header）」と「トランザクションデータ（Transaction Data）」から構成されています。
+ひとつのブロックは、大きく分けて「ブロックヘッダ（Block Header）」と「[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)データ（[Transaction](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/) Data）」から構成されています。
 
 ブロックヘッダには以下の情報が含まれます。
 1. **バージョン（Version）**: ソフトウェアのバージョン
@@ -76,7 +76,7 @@ flowchart TD
 
 ### マークルツリー（Merkle Trees）
 
-[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、ブロックサイズを抑えつつ、データの改ざんを効率的に検出するために **マークルツリー（Merkle Tree）** というデータ構造を利用します。マークルツリーは二分木の一種で、葉ノードに各トランザクションのハッシュ値が入り、親ノードは子ノードのハッシュ値を連結して再度ハッシュ化したものになります。
+[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)サイズを抑えつつ、データの改ざんを効率的に検出するために **マークルツリー（Merkle Tree）** というデータ構造を利用します。マークルツリーは二分木の一種で、葉ノードに各[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)のハッシュ値が入り、親ノードは子ノードのハッシュ値を連結して再度ハッシュ化したものになります。
 
 ```mermaid
 flowchart TD
@@ -88,7 +88,7 @@ flowchart TD
     H34 --> H4["Hash(Tx4)"]
 ```
 
-トランザクションのデータが少しでも変更されると、その葉ノードのハッシュが変わり、連鎖的にマークルルートの値も全く違うものになります。これにより、膨大なトランザクションデータの中から、一つでも改ざんがあれば即座に検知することが可能になります。
+[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)のデータが少しでも変更されると、その葉ノードのハッシュが変わり、連鎖的にマークルルートの値も全く違うものになります。これにより、膨大なトランザクションデータの中から、一つでも改ざんがあれば即座に検知することが可能になります。
 
 ## 4. 数理的・暗号学的基盤
 
@@ -103,7 +103,7 @@ flowchart TD
 2. **弱衝突耐性（Second pre-image resistance）**: 与えられた入力 $x_1$ に対して、$H(x_1) = H(x_2)$ となるような別の入力 $x_2$ を見つけることが困難であること。
 3. **強衝突耐性（Collision resistance）**: $H(x_1) = H(x_2)$ となるような任意の2つの入力 $x_1, x_2$ を見つけることが困難であること。
 
-ビットコインでは、ブロックハッシュの計算や、公開鍵からアドレスを生成するプロセスなどでSHA-256が二重に適用されます（これを `SHA256(SHA256(x))`、またはHash256と呼びます）。
+ビットコインでは、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ハッシュの計算や、公開鍵からアドレスを生成するプロセスなどでSHA-256が二重に適用されます（これを `SHA256(SHA256(x))`、またはHash256と呼びます）。
 
 ### [公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号（[Public Key](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) [Cryptography](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)）とデジタル署名
 
@@ -111,7 +111,7 @@ flowchart TD
 - **秘密鍵** $k$: ランダムに生成された256ビットの整数。絶対に他人に知られてはなりません。
 - **公開鍵** $K$: 秘密鍵から一方向関数を用いて計算される鍵。ネットワーク上に公開されます。
 
-アリスがボブにビットコインを送金する場合、アリスは自身の秘密鍵を使ってトランザクションデータに対して **デジタル署名（[Digital Signature](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)）** を作成します。ネットワークの参加者は、アリスの公開鍵を使ってその署名が正当なものか（本当にアリスが秘密鍵を使って作成したものか）を検証することができます。
+アリスがボブにビットコインを送金する場合、アリスは自身の秘密鍵を使って[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)データに対して **デジタル署名（[Digital Signature](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)）** を作成します。ネットワークの参加者は、アリスの公開鍵を使ってその署名が正当なものか（本当にアリスが秘密鍵を使って作成したものか）を検証することができます。
 
 ### 楕円曲線暗号（Elliptic Curve Cryptography: ECC）と secp256k1
 
@@ -138,7 +138,7 @@ $$
 
 ### ECDSA（Elliptic Curve Digital Signature Algorithm）
 
-トランザクションの署名には **ECDSA** が用いられます。メッセージ（トランザクションのハッシュ）を $z$ としたときの署名プロセスは以下の通りです。
+[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の署名には **ECDSA** が用いられます。メッセージ（トランザクションのハッシュ）を $z$ としたときの署名プロセスは以下の通りです。
 
 1. $1$ から $n-1$ のランダムな整数 $k_e$ （エフェメラル鍵）を選択する。
 2. 曲線上の点 $(x_1, y_1) = k_e \cdot G$ を計算する。
@@ -165,7 +165,7 @@ $$
 
 ### マイニングの数理とナンス（Nonce）
 
-PoWにおける「作業（Work）」とは、特定の条件を満たすハッシュ値を見つけるための計算競争を指します。マイナー（採掘者）は、ブロックヘッダのハッシュ値が、ネットワークによって定められた **ターゲット（Target）** よりも小さくなるようなナンス（Nonce）の値を探し続けます。
+PoWにおける「作業（Work）」とは、特定の条件を満たすハッシュ値を見つけるための計算競争を指します。マイナー（採掘者）は、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ヘッダのハッシュ値が、ネットワークによって定められた **ターゲット（Target）** よりも小さくなるようなナンス（Nonce）の値を探し続けます。
 
 $$
 \text{SHA256}(\text{SHA256}(\text{Block\_Header})) < \text{Target}
@@ -177,7 +177,7 @@ $$
 
 ### 難易度調整（Difficulty Adjustment）
 
-ビットコインネットワークは、約10分に1つのブロックが生成されるように設計されています。しかし、ネットワーク全体の計算能力（ハッシュレート）は常に変動します。そこで、2016ブロック（約2週間）ごとに、過去のブロック生成間隔を基にしてターゲットの値が自動的に調整されます。
+ビットコインネットワークは、約10分に1つのブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が生成されるように設計されています。しかし、ネットワーク全体の計算能力（ハッシュレート）は常に変動します。そこで、2016ブロック（約2週間）ごとに、過去のブロック生成間隔を基にしてターゲットの値が自動的に調整されます。
 
 $$
 \text{New\_Target} = \text{Old\_Target} \times \frac{\text{Actual\_Time\_of\_Last\_2016\_Blocks}}{\text{20160\_Minutes}}
@@ -185,9 +185,9 @@ $$
 
 ハッシュレートが上がればターゲットは小さくなり（難易度上昇）、ハッシュレートが下がればターゲットは大きくなります（難易度低下）。
 
-## 6. トランザクションとUTXOモデル
+## 6. [トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)とUTXOモデル
 
-ビットコインのトランザクションは、銀行の口座残高（アカウントベース・モデル）のような仕組みではなく、**UTXO（Unspent Transaction Output：未使用トランザクションアウトプット）** というモデルを採用しています。
+ビットコインのトランザクションは、銀行の口座残高（アカウントベース・モデル）のような仕組みではなく、**UTXO（Unspent [Transaction](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/) Output：未使用トランザクションアウトプット）** というモデルを採用しています。
 
 ### インプットとアウトプット
 
@@ -202,10 +202,10 @@ flowchart LR
     B -->|"Miner Fee (0.01 BTC)"| E["Miner"]
 ```
 
-アリスがボブに1.8 BTCを送りたいとします。アリスは自身が保有する1.5 BTCと0.5 BTCの2つのUTXO（合計2.0 BTC）をインプットとして指定し、ボブ宛てに1.8 BTCのアウトプットを作成します。残りの0.2 BTCのうち、0.19 BTCはお釣り（Change）としてアリス自身の新しいアドレス宛てのアウトプットとなり、差額の0.01 BTCはトランザクションを処理したマイナーへの手数料（Fee）となります。
+アリスがボブに1.8 BTCを送りたいとします。アリスは自身が保有する1.5 BTCと0.5 BTCの2つのUTXO（合計2.0 BTC）をインプットとして指定し、ボブ宛てに1.8 BTCのアウトプットを作成します。残りの0.2 BTCのうち、0.19 BTCはお釣り（Change）としてアリス自身の新しいアドレス宛てのアウトプットとなり、差額の0.01 BTCは[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を処理したマイナーへの手数料（Fee）となります。
 
 $$
-\sum \text{Inputs} = \sum \text{Outputs} + \text{Transaction\_Fee}
+\sum \text{Inputs} = \sum \text{Outputs} + \text{[Transaction](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)\_Fee}
 $$
 
 このUTXOモデルは、トランザクションの独立性が高いため並列処理がしやすく、またプライバシーの観点（毎回新しいお釣りアドレスを使うことができる）でも優れています。
@@ -217,20 +217,20 @@ $$
 ### フォーク（Forks）：ソフトフォークとハードフォーク
 
 [ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)のプロトコルをアップグレードする際、「フォーク（分岐）」と呼ばれる事象が発生することがあります。
-- **ソフトフォーク（Soft Fork）**: 後方互換性のあるアップグレード。古いルールのノードでも、新しいルールのブロックを有効とみなします（例：SegWitの導入）。
+- **ソフトフォーク（Soft Fork）**: 後方互換性のあるアップグレード。古いルールのノードでも、新しいルールのブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を有効とみなします（例：SegWitの導入）。
 - **ハードフォーク（Hard Fork）**: 後方互換性のないアップグレード。新しいルールのブロックは古いノードには拒否されるため、ネットワークが完全に2つに分裂する可能性があります（例：Bitcoin Cashの誕生）。
 
 ### ライトニングネットワーク（Lightning Network）
 
 スケーラビリティ問題を解決するための有力なアプローチが、**レイヤー2（Layer 2）** ソリューションであるライトニングネットワークです。
 
-ライトニングネットワークでは、参加者同士がブロックチェーン外（オフチェーン）で「ペイメントチャネル（Payment Channel）」を開設します。チャネル内では、双方が納得する限り、ブロックチェーンにトランザクションを記録することなく、一瞬で、かつほぼ無料で何度でも資金のやり取りが可能です。最終的な残高の精算時のみ、ブロックチェーン（レイヤー1）にトランザクションを記録します。
+ライトニングネットワークでは、参加者同士がブロックチェーン外（オフチェーン）で「ペイメントチャネル（Payment Channel）」を開設します。チャネル内では、双方が納得する限り、ブロックチェーンに[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を記録することなく、一瞬で、かつほぼ無料で何度でも資金のやり取りが可能です。最終的な残高の精算時のみ、ブロックチェーン（レイヤー1）にトランザクションを記録します。
 
 ### Proof of Stake（[PoS](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)）との比較
 
 [PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)のもう一つの大きな課題は、マイニングによる莫大な電力消費です。この環境問題への対策として、Ethereumなどは **プルーフ・オブ・ステーク（Proof of Stake: PoS）** という別の[コンセンサスアルゴリズム](https://kenji.blog/p/byzantine-generals-problem-consensus/)に移行しました。
 
-[PoS](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、計算能力（ハッシュレート）ではなく、保有している暗号資産の量（ステーク）と保有期間に応じて、次のブロックを生成する権利（バリデータ）が確率的に割り当てられます。これにより電力消費は99%以上削減されますが、「お金持ちがよりお金持ちになるシステムではないか」「完全な分散化が損なわれるのではないか」という批判も存在します。ビットコインは、どれほど批判されようとも、「エネルギーを消費することによる物理的なセキュリティ担保」という[PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の哲学を堅持し続けています。
+[PoS](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、計算能力（ハッシュレート）ではなく、保有している暗号資産の量（ステーク）と保有期間に応じて、次のブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を生成する権利（バリデータ）が確率的に割り当てられます。これにより電力消費は99%以上削減されますが、「お金持ちがよりお金持ちになるシステムではないか」「完全な分散化が損なわれるのではないか」という批判も存在します。ビットコインは、どれほど批判されようとも、「エネルギーを消費することによる物理的なセキュリティ担保」という[PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の哲学を堅持し続けています。
 
 ## 8. 暗号理論の深淵：数学的証明とプロトコルの堅牢性
 
@@ -253,7 +253,7 @@ $$
 もし、十分な量子ビット（Qubits）と低いエラー率を持つ実用的な大規模量子コンピュータが完成すれば、ビットコインの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)から秘密鍵が逆算されるリスクが生じます。
 これに対するビットコインネットワークの防衛策は以下の通りです。
 
-1. **ハッシュ関数の保護**: ビットコインアドレスは公開鍵そのものではなく、公開鍵にSHA-256とRIPEMD-160というハッシュ関数を適用したものです。量子コンピュータを使っても、ハッシュ関数の逆算（グローバーのアルゴリズムを用いたとしても計算量は $\mathcal{O}(\sqrt{N})$）は依然として困難です。そのため、トランザクションを行って公開鍵をネットワークにさらすまでは、アドレスの中身は量子コンピュータに対しても安全と言えます。
+1. **ハッシュ関数の保護**: ビットコインアドレスは公開鍵そのものではなく、公開鍵にSHA-256とRIPEMD-160というハッシュ関数を適用したものです。量子コンピュータを使っても、ハッシュ関数の逆算（グローバーのアルゴリズムを用いたとしても計算量は $\mathcal{O}(\sqrt{N})$）は依然として困難です。そのため、[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を行って公開鍵をネットワークにさらすまでは、アドレスの中身は量子コンピュータに対しても安全と言えます。
 2. **耐量子暗号（Post-Quantum [Cryptography](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/): PQC）への移行**: 量子コンピュータが実用化される前に、ビットコインのプロトコルをハードフォークさせ、NIST（米国国立標準技術研究所）が選定する格子ベース暗号（Lattice-based cryptography）や多変数多項式暗号（Multivariate polynomial cryptography）といった、量子コンピュータでも解読が困難な新しい署名アルゴリズムに移行することが議論されています。
 
 ## 9. ネットワーク・トポロジーと[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)プロトコルの詳細
@@ -264,11 +264,11 @@ $$
 
 ネットワークに参加するコンピュータは「ノード（Node）」と呼ばれます。ノードにはいくつか種類があり、それぞれ役割が異なります。
 
-- **フルノード（Full Node）**: ジェネシスブロックから最新のブロックに至るまで、すべての[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)データ（数百GB以上）をダウンロードし、検証するノードです。トランザクションの正当性や二重支払いの有無を独立してチェックするため、ネットワークのセキュリティの根幹を担います。
-- **SPVノード（Simplified Payment Verification Node）**: ブロックチェーン全体ではなく、ブロックヘッダのみをダウンロードする軽量ノードです。主にスマートフォン用のウォレットなどで使われます。自身のトランザクションがブロックに含まれているか（マークルパスの検証）は確認できますが、フルノードほどの検証能力はありません。
-- **マイニングノード（Mining Node）**: [PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の計算を行い、新しいブロックを生成するノードです。現在では、ASIC（Application Specific Integrated Circuit）と呼ばれるマイニング専用のハードウェアを束ねた巨大な「マイニングプール」がこの役割を担っています。
+- **フルノード（Full Node）**: ジェネシスブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)から最新のブロックに至るまで、すべての[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)データ（数百GB以上）をダウンロードし、検証するノードです。[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の正当性や二重支払いの有無を独立してチェックするため、ネットワークのセキュリティの根幹を担います。
+- **SPVノード（Simplified Payment Verification Node）**: ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーン全体ではなく、ブロックヘッダのみをダウンロードする軽量ノードです。主にスマートフォン用のウォレットなどで使われます。自身のトランザクションがブロックに含まれているか（マークルパスの検証）は確認できますが、フルノードほどの検証能力はありません。
+- **マイニングノード（Mining Node）**: [PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の計算を行い、新しいブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を生成するノードです。現在では、ASIC（Application Specific Integrated Circuit）と呼ばれるマイニング専用のハードウェアを束ねた巨大な「マイニングプール」がこの役割を担っています。
 
-### トランザクションの伝播プロセス（Gossip Protocol）
+### [トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の伝播プロセス（Gossip Protocol）
 
 あるユーザー（アリス）がビットコインを送金するトランザクションを作成した際、そのデータはどのように世界中に広がるのでしょうか。
 
@@ -285,7 +285,7 @@ $$
 
 ### ブロック報酬と半減期（Halving）
 
-マイナーが膨大な電力とハードウェア投資を行ってまでブロックを採掘する理由は、経済的な報酬があるからです。マイナーが新しいブロックの生成に成功すると、**コインベーストランザクション（Coinbase Transaction）** と呼ばれる特殊なトランザクションを通じて、新たに発行されたビットコインを受け取ります。
+マイナーが膨大な電力とハードウェア投資を行ってまでブロックを採掘する理由は、経済的な報酬があるからです。マイナーが新しいブロックの生成に成功すると、**コインベーストランザクション（Coinbase [Transaction](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)）** と呼ばれる特殊なトランザクションを通じて、新たに発行されたビットコインを受け取ります。
 
 ビットコインの総発行枚数はプログラムによって **2,100万枚** に上限が設定されています。また、1ブロックあたりのマイニング報酬は、210,000ブロック（約4年）ごとに半分になる **半減期（Halving）** というメカニズムが組み込まれています。
 
@@ -325,7 +325,7 @@ $$
 - **Bitcoin: A Peer-to-Peer Electronic Cash System** (Satoshi Nakamoto, 2008)
   - すべての始まりとなった記念碑的論文。わずか9ページの中に、PoW、インセンティブ、マークルツリーを組み合わせた分散型台帳の基本設計が完璧な形で記述されています。
 - **Ethereum: A Secure Decentralised Generalised Transaction Ledger** (Gavin Wood, 2014)
-  - イーサリアムのYellow Paper。ビットコインのUTXOモデルに対して、チューリング完全な[スマートコントラクト](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)を実行可能なアカウントベースのステートマシンとしてブロックチェーンを再定義しました。
+  - イーサリアムのYellow Paper。ビットコインのUTXOモデルに対して、チューリング完全な[スマートコントラクト](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)を実行可能なアカウントベースのステートマシンとしてブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンを再定義しました。
 
 ### 暗号理論と数学の基礎
 ブロックチェーンを真に理解するためには、情報セキュリティと応用数学の知識が不可欠です。以下の分野を学習することをお勧めします。
@@ -336,4 +336,4 @@ $$
 > **Warning: 投資に関する免責事項**
 > 本記事は、暗号資産の基盤技術およびその歴史・数理的構造について解説する目的で作成されており、いかなる暗号資産への投資を推奨、勧誘するものではありません。暗号資産の価格は極めてボラティリティが高く、投資には元本割れを含む大きなリスクが伴います。
 
-[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の技術的探求は、コンピュータサイエンス、経済学、社会学が交差する知のフロンティアです。コードを読み、自身でノードを立ち上げ、テストネットでトランザクションを生成してみることで、この技術の真の可能性とその限界を肌で感じることができるでしょう。
+[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の技術的探求は、コンピュータサイエンス、経済学、社会学が交差する知のフロンティアです。コードを読み、自身でノードを立ち上げ、テストネットで[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を生成してみることで、この技術の真の可能性とその限界を肌で感じることができるでしょう。

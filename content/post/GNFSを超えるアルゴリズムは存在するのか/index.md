@@ -17,7 +17,7 @@ tags: ["GNFS", "Integer Factorization", "RSA", "Algorithms"]
 
 しかし、暗号学者や数学者たちは常に次のような疑問を抱いています。「GNFSを超える古典的アルゴリズムは存在するのか？」「古典コンピュータの限界はどこにあるのか？」そして、「[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)はどのようにこの状況を打破するのか？」
 
-本記事では、GNFSの背後にある深淵なる数学的構造を徹底的に解剖し、多項式選択、篩処理、ブロック・ヴィーデマン法による線形代数ステップなどの詳細な技術的分析を行います。さらに、Coppersmithの改良などによるGNFSの拡張手法について考察し、古典的な準指数関数時間（Sub-exponential time）アルゴリズムと量子的多項式時間アルゴリズムの決定的な違いを数理的な観点から比較・解説します。
+本記事では、GNFSの背後にある深淵なる数学的構造を徹底的に解剖し、多項式選択、篩処理、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)・ヴィーデマン法による線形代数ステップなどの詳細な技術的分析を行います。さらに、Coppersmithの改良などによるGNFSの拡張手法について考察し、古典的な準指数関数時間（Sub-exponential time）アルゴリズムと量子的多項式時間アルゴリズムの決定的な違いを数理的な観点から比較・解説します。
 
 ---
 
@@ -96,7 +96,7 @@ $n = c_d m^d + c_{d-1} m^{d-1} + \dots + c_1 m + c_0$
 
 ここでは、方程式 $\mathbf{A} \mathbf{x} \equiv \mathbf{0} \pmod 2$ の非自明な解ベクトル $\mathbf{x}$ を見つけます。つまり、巨大な疎行列の左零空間（Left Nullspace）を求める問題です。
 
-行列のサイズが極端に大きいため、通常の[ガウス](https://kenji.blog/p/gauss/)の消去法（$O(N^3)$）では到底計算不可能です。そこで、クリロフ部分空間法の一種である反復法が用いられます。歴史的には **ブロック・ランチョス法（Block Lanczos）** が使われてきましたが、現在の分散コンピューティング環境においては、通信オーバーヘッドを劇的に削減できる **ブロック・ヴィーデマン法（Block Wiedemann Algorithm）** が主流です。
+行列のサイズが極端に大きいため、通常の[ガウス](https://kenji.blog/p/gauss/)の消去法（$O(N^3)$）では到底計算不可能です。そこで、クリロフ部分空間法の一種である反復法が用いられます。歴史的には **ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)・ランチョス法（Block Lanczos）** が使われてきましたが、現在の分散コンピューティング環境においては、通信オーバーヘッドを劇的に削減できる **ブロック・ヴィーデマン法（Block Wiedemann Algorithm）** が主流です。
 
 ブロック・ヴィーデマン法は、行列 $\mathbf{A}$ とベクトル系列から最小多項式を計算し、ベルカンプ・マッシー（Berlekamp-Massey）アルゴリズムを用いて零空間の基底を構成します。このステップは並列化が非常に困難であり、スーパーコンピュータや大規模クラスターの密結合な通信ネットワークを要求する、GNFS最大のボトルネックの1つです。
 
@@ -172,7 +172,7 @@ graph LR
 
 「GNFSを超える古典アルゴリズムは存在するのか？」という問いに対する現在の科学界のコンセンサスは以下の通りです。
 
-1. **実践的な改良は続くが、漸近的な飛躍は無い**: MNFSや多項式選択の最適化、ブロック・ヴィーデマン法の並列化など、GNFSの定数項 $c$ を改善する試みは続いています。しかし、$\alpha = 1/3$ を下回る古典的アルゴリズムが発見される可能性は極めて低いと考えられています。
+1. **実践的な改良は続くが、漸近的な飛躍は無い**: MNFSや多項式選択の最適化、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)・ヴィーデマン法の並列化など、GNFSの定数項 $c$ を改善する試みは続いています。しかし、$\alpha = 1/3$ を下回る古典的アルゴリズムが発見される可能性は極めて低いと考えられています。
 2. **古典計算機上での[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)の安全性は依然として強固**: GNFSの計算量は依然として莫大であり、RSA-2048やRSA-4096は古典コンピュータに対する攻撃に対しては今後数十年にわたり安全性を保ち続けます。
 3. **真の脅威は量子アルゴリズムである**: 計算複雑性の壁を越えたのは量子力学の原理に基づく[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)です。これにより、世界は耐量子計算機暗号（PQC: Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）への移行を余儀なくされています。格子暗号やハッシュベース暗号など、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)でも解読が困難（多項式時間で解けない）とされる新しい数学的問題への移行が、現在の暗号学の最前線となっています。
 

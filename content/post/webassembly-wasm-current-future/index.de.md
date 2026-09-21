@@ -260,7 +260,7 @@ Derzeit werden Projekte wie Kwasm und Spin aktiv entwickelt, um Wasm-Module anst
 Die größte Herausforderung für WebAssembly besteht derzeit darin, dass es schwierig ist, in verschiedenen Sprachen geschriebene Wasm-Module miteinander zu verknüpfen (da die Speicherdarstellung von Zeichenketten und komplexen Datentypen je nach Sprache variiert).
 
 Dieses Problem wird durch das **WebAssembly Component Model** gelöst.
-Wenn das Komponentenmodell realisiert wird, wird es beispielsweise möglich sein, Funktionsaufrufe nahtlos von einem "in Python geschriebenen Wasm-Modul" zu einem "in Rust geschriebenen Wasm-Modul" durchzuführen. Dies hat das Potenzial, die Grundlage für eine plattform- und sprachunabhängige Microservices-Architektur der nächsten Generation zu bilden.
+Wenn das Komponentenmodell realisiert wird, wird es beispielsweise möglich sein, Funktionsaufrufe nahtlos von einem "in Python geschriebenen Wasm-Modul" zu einem "in Rust geschriebenen Wasm-Modul" durchzuführen. Dies hat das Potenzial, die Grundlage für eine plattform- und sprachunabhängige [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur der nächsten Generation zu bilden.
 
 ## 8.2 Wasm als Plugin-System
 Bereits jetzt nutzen viele Softwareanwendungen wie Figma, EnvoyProxy und Microsoft Flight Simulator WebAssembly als ihr eigenes Plugin-System. Dies liegt daran, dass von Benutzern erstellter Code von Drittanbietern sicher und schnell innerhalb der Hauptanwendung ausgeführt werden kann.

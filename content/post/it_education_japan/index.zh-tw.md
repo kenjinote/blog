@@ -126,7 +126,7 @@ int main() {
 
 ## 5. 資料庫與持久化的障礙：關聯代數的缺席
 
-在現代的應用程式中，資料的保存與搜尋（持久化）是不可避免的主題。然而，許多學校教育僅停留在程式執行結束後就會消失的「記憶體上的資料處理」。關係資料庫（RDBMS）與 SQL 背後的數學理論，也就是埃德加·F·科德（Edgar F. Codd）博士所提出的「關聯代數（Relational Algebra）」，卻鮮少被教授。
+在現代的應用程式中，資料的保存與搜尋（持久化）是不可避免的主題。然而，許多學校教育僅停留在程式執行結束後就會消失的「記憶體上的資料處理」。關係資料庫（[RDBMS](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)）與 SQL 背後的數學理論，也就是埃德加·F·科德（Edgar F. Codd）博士所提出的「關聯代數（Relational Algebra）」，卻鮮少被教授。
 
 資料庫的運算是基於集合論的以下基本運算來定義的：
 
@@ -134,7 +134,7 @@ int main() {
 - 投影（Projection, $\pi$）: 擷取特定的屬性（行）
 - 結合（Join, $\bowtie$）: 多個關聯的條件式交集
 
-此外，為了能從龐大的紀錄中瞬間搜尋出目標資料，學習「[B-Tree](https://kenji.blog/zh-tw/p/b-tree-database-index-theory/)（B樹）索引」的結構，是資料結構應用的最佳實踐。B-Tree 能將磁碟 I/O 的次數降至最低，同時保證 $O(\log N)$ 的搜尋速度。不了解交易（Transaction）的 ACID 特性（原子性、一致性、隔離性、持久性），是無法建立出強健的系統的。
+此外，為了能從龐大的紀錄中瞬間搜尋出目標資料，學習「[B-Tree](https://kenji.blog/zh-tw/p/b-tree-database-index-theory/)（B樹）索引」的結構，是資料結構應用的最佳實踐。B-Tree 能將磁碟 I/O 的次數降至最低，同時保證 $O(\log N)$ 的搜尋速度。不了解交易（[Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)）的 [ACID](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) 特性（原子性、一致性、隔離性、持久性），是無法建立出強健的系統的。
 
 ## 6. 安全性與密碼學：質因數分解困難性支撐著社會基礎設施
 

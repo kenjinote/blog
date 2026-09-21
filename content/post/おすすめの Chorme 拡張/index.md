@@ -31,7 +31,7 @@ description: 'マウスジェスチャー、広告ブロック、DeepL翻訳、C
 
 ![img_3.png](img_3.webp)
 
-広告をブロックする拡張です。オープンソースのため信頼性が高い。また、CPUやメモリの使用量も少なく快適に動作します。
+広告をブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)する拡張です。オープンソースのため信頼性が高い。また、CPUやメモリの使用量も少なく快適に動作します。
 
 - [uBlock Origin](https://microsoftedge.microsoft.com/addons/detail/ublock-origin/odfafepnkmbhccpbejgmiehpchacaeak)
 - [github](https://github.com/gorhill/uBlock/)

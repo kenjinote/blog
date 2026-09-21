@@ -22,7 +22,7 @@ Artikel ini akan menjelaskan secara rinci prosedur pengembangan (atau pemahaman 
 
 Dalam tahap pelatihan AI, Python sangat diuntungkan dengan fleksibilitas dan ekosistemnya yang kaya. Namun, dalam fase penerapan dan "Inferensi", C++ menjadi pilihan yang kuat karena alasan berikut:
 
-1. **Pengurangan Overhead**: Global Interpreter Lock (GIL) Python dan overhead runtime dapat dihilangkan sepenuhnya.
+1. **Pengurangan Overhead**: Global Interpreter [Lock](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/) (GIL) Python dan overhead runtime dapat dihilangkan sepenuhnya.
 2. **Efisiensi Memori dan Alokasi Arena**: Karena alokasi dan dealokasi memori dapat dikontrol secara manual, lonjakan yang tidak dapat diprediksi akibat *garbage collection* dapat dicegah.
 3. **Akses Langsung ke Perangkat Keras**: Dapat langsung memanggil fungsi bawaan SIMD (Intrinsics) seperti AVX-512, AVX2, dan ARM NEON untuk memaksimalkan kemampuan komputasi CPU.
 4. **Tanpa Dependensi**: ggml adalah pustaka C/C++ dengan nol dependensi (Zero dependencies), yang dapat dengan mudah dibangun bahkan di lingkungan MSVC di Windows asalkan ada kompilator.
@@ -86,7 +86,7 @@ sequenceDiagram
 1. **Magic Bytes**: `0x46554747` (GGUF).
 2. **Version**: Nomor versi format.
 3. **Tensor Count & Metadata Count**: Jumlah tensor dan jumlah pasangan kunci-nilai metadata.
-4. **Metadata (Key-Value Pairs)**: Kunci dengan prefiks panjang string, dan nilai yang diketik.
+4. **Metadata ([Key-Value](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs)**: Kunci dengan prefiks panjang string, dan nilai yang diketik.
 5. **Tensor Info**: Nama setiap tensor, jumlah dimensi, tipe data (FP16, Q4_K, dll.), dan posisi *offset* di dalam file.
 6. **Padding**: Padding yang dimasukkan agar data tensor sejajar (aligned) pada batas tertentu (biasanya 32 byte atau 64 byte). Ini penting untuk akses memori cepat dalam instruksi SIMD (khususnya AVX).
 7. **Tensor Data**: Array data bobot aktual yang telah disejajarkan.

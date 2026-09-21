@@ -19,7 +19,7 @@ description: '使用 Cloudflare Pages 或 GitHub Pages 免費且高速地代管 
 ## 1. 靜態網站產生器（SSG）與 Jamstack 基礎
 
 ### 1.1 為什麼選擇靜態網站？
-傳統的動態 CMS（例如：WordPress）在每次收到使用者請求時，都會向資料庫（如 MySQL）發出查詢，並在伺服器端（如 PHP）動態產生 HTML 後回傳。這種方式雖然靈活性高，但對流量激增（所謂的爆紅或 DDoS 攻擊）的承受力較低，往往需要將快取伺服器（如 Redis 或 Varnish）放置在前端，導致基礎設施架構變得複雜。
+傳統的動態 CMS（例如：WordPress）在每次收到使用者請求時，都會向資料庫（如 MySQL）發出查詢，並在伺服器端（如 PHP）動態產生 HTML 後回傳。這種方式雖然靈活性高，但對流量激增（所謂的爆紅或 DDoS 攻擊）的承受力較低，往往需要將快取伺服器（如 [Redis](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/) 或 Varnish）放置在前端，導致基礎設施架構變得複雜。
 
 另一方面，採用 Jamstack（JavaScript, APIs, and Markup）架構的靜態網站產生器（SSG），會事先（在建置時）產生所有的 HTML 檔案、CSS 和 JavaScript。對於使用者的請求，網頁伺服器（或 CDN）只需直接回傳已產生的靜態檔案，因此能實現壓倒性的高速與堅固的安全性。
 

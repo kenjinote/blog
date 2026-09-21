@@ -210,7 +210,7 @@ let result = divide(10.0, 2.0).and_then(|res| divide(res, 2.0));
 
 لم تمت جميع أنماط GoF. لا تزال الأنماط التي تعمل في حدود البنية المعمارية مهمة للغاية حتى اليوم.
 
-1. **Facade (الواجهة)**: تطور مفهوم توفير واجهة بسيطة لأنظمة فرعية معقدة ليتوسع كبوابة API (أو BFF: Backend for Frontend) في بنية الخدمات المصغرة.
+1. **Facade (الواجهة)**: تطور مفهوم توفير واجهة بسيطة لأنظمة فرعية معقدة ليتوسع كبوابة API (أو [BFF](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/): [Backend for Frontend](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)) في بنية الخدمات المصغرة.
 2. **Adapter (المحول)**: أصبح حجر الزاوية في الحفاظ على اقتران النظام بشكل فضفاض (Loosely coupled)، كعمليات التكامل مع الأنظمة الخارجية أو كـ "منافذ ومحولات (Ports and Adapters)" في البنية النظيفة والبنية السداسية.
 3. **Decorator (المزخرف)**: في Python و TypeScript، ارتقى ليصبح ميزة في اللغة نفسها كـ `@Decorator` للبرمجة الوصفية القائمة على التعليقات التوضيحية (Annotations).
 

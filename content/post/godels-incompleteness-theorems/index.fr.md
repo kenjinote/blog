@@ -23,7 +23,7 @@ De la fin du 19ème siècle au début du 20ème siècle, le monde des mathémati
 
 [Hilbert](https://kenji.blog/fr/p/hilbert/) a tenté de symboliser intégralement tous les raisonnements mathématiques, dans l'espoir de reconstruire les mathématiques en n'utilisant que des règles mécaniques. L'objectif de son « Programme de [Hilbert](https://kenji.blog/fr/p/hilbert/) » était de prouver que, dans un système formel mathématique, les trois propriétés suivantes étaient réunies :
 
-1. **La cohérence** (Consistency) : Le fait qu'il n'existe aucune contradiction au sein du système (c'est-à-dire qu'une proposition $P$ et sa négation $\neg P$ ne puissent pas être prouvées toutes les deux).
+1. **La cohérence** ([Consistency](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/)) : Le fait qu'il n'existe aucune contradiction au sein du système (c'est-à-dire qu'une proposition $P$ et sa négation $\neg P$ ne puissent pas être prouvées toutes les deux).
 2. **La complétude** (Completeness) : Le fait que toute proposition mathématique puisse toujours être prouvée au sein de ce système, soit comme vraie, soit comme fausse.
 3. **La décidabilité** (Decidability) : Le fait qu'il existe une procédure mécanique permettant de déterminer, pour toute proposition donnée, si elle est prouvable ou non.
 

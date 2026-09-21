@@ -129,7 +129,7 @@ AI産業の中心地である米国では、成文法による直接的なAI規�
 法規制の整備には時間がかかり、また国境を越えるAI企業の活動を完全にコントロールすることは困難です。そのため、クリエイターやパブリッシャーは技術的な手段を用いて自己の著作物を主体的に守る動きを加速させています。
 
 ### 5.1. robots.txt と TDMオプトアウトプロトコル
-Webサイトのルートディレクトリに配置される `robots.txt` は、本来検索エンジンのクローラーを制御するためのプロトコルですが、2026年にはAI学習用のクローラー（例：OpenAIの `GPTBot`、Googleの `Google-Extended`、Anthropicの `ClaudeBot`）を一律にブロックするための標準的な手段として定着しています。
+Webサイトのルートディレクトリに配置される `robots.txt` は、本来検索エンジンのクローラーを制御するためのプロトコルですが、2026年にはAI学習用のクローラー（例：OpenAIの `GPTBot`、Googleの `Google-Extended`、Anthropicの `ClaudeBot`）を一律にブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)するための標準的な手段として定着しています。
 しかし、`robots.txt` には法的拘束力がなく、悪意のある野良スクレイパーには容易に無視されるという根本的な欠陥があります。そのため、TDM（Text and Data Mining）オプトアウトの意思をHTTPヘッダーやHTMLのメタタグ（例：`<meta name="tdm-reservation" content="1">`）に直接埋め込み、機械可読な形で法的効力を持たせる標準化（W3C TDM Rep等）が世界的に普及しました。EU AI Act下では、このメタタグを無視してスクレイピングを行った場合、明確な違法行為として扱われます。
 
 ### 5.2. C2PAとコンテンツ来歴[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)のネイティブ実装

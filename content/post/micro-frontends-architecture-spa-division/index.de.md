@@ -16,7 +16,7 @@ tags:
 
 In den letzten Jahren sind die Anforderungen an UI/UX von Webanwendungen stetig gestiegen, und die Codebasis im Frontend ist so groß wie nie zuvor. Während das Aufkommen von Single Page Applications ( **SPA** ) reichhaltige Benutzererlebnisse ermöglicht hat, wird der komplex gewordene „Frontend-Monolith“ zunehmend zu einem Engpass in der Entwicklung.
 
-Dieser Artikel erklärt detailliert die Architektur der **Micro Frontends** (Mikro-Frontends), die dazu dient, riesige SPAs aufzuteilen und die Autonomie von Teams zu erhöhen. Dabei werden der Vergleich mit Backend-Microservices, verschiedene Integrationsmethoden sowie Implementierungsmuster unter Verwendung der **Module Federation** von Webpack, die sich als aktueller De-facto-Standard etabliert, behandelt.
+Dieser Artikel erklärt detailliert die Architektur der **Micro Frontends** (Mikro-Frontends), die dazu dient, riesige SPAs aufzuteilen und die Autonomie von Teams zu erhöhen. Dabei werden der Vergleich mit Backend-[[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/), verschiedene Integrationsmethoden sowie Implementierungsmuster unter Verwendung der **Module Federation** von Webpack, die sich als aktueller De-facto-Standard etabliert, behandelt.
 
 ## 1. Warum sind Micro Frontends notwendig?
 
@@ -28,9 +28,9 @@ Das Ergebnis ist der **Frontend-Monolith**. Indem alle UI-Komponenten, das Routi
 
 * **Verlängerte Build-Zeiten**: Mit wachsender Codebasis steigt die für Builds und Tests benötigte Zeit exponentiell an.
 * **Abhängigkeiten und Koordinationsaufwand zwischen Teams**: Da mehrere Teams an derselben Codebasis arbeiten, kommt es häufig zu Merge-Konflikten, und die Abstimmung der Release-Zyklen erfordert enormen Aufwand.
-* **Anhäufung technischer Schulden und Lock-in**: Da die gesamte Anwendung an bestimmte Versionen eines einzelnen Frameworks oder von Bibliotheken gebunden ist, werden schrittweises Refactoring und die Einführung neuer Technologien erschwert.
+* **Anhäufung technischer Schulden und [Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)-in**: Da die gesamte Anwendung an bestimmte Versionen eines einzelnen Frameworks oder von Bibliotheken gebunden ist, werden schrittweises Refactoring und die Einführung neuer Technologien erschwert.
 
-### Kontrast zu Microservices im Backend
+### Kontrast zu [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/) im Backend
 
 In der Backend-Welt hat sich die **Microservices-Architektur** weit verbreitet, bei der ein riesiger Monolith aufgeteilt und eine Sammlung unabhängig bereitstellbarer Dienste aufgebaut wird. Dies ermöglicht es jedem Team, eigene Datenbanken, Technologie-Stacks und Deployment-Zyklen zu haben, was die Skalierbarkeit und Entwicklungsgeschwindigkeit drastisch verbessert.
 
@@ -299,7 +299,7 @@ Das Routing ist ein wichtiges Element bei der Entscheidung, auf welcher Ebene di
   * `/checkout/*` -> Delegiert an die Anwendung des Zahlungs-Teams.
   Innerhalb jedes Micro Frontends kann es zudem ein eigenes internes Routing geben.
 
-* **Routing in der BFF-Ebene (Backend For Frontend)**:
+* **Routing in der [BFF](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Ebene (Backend For Frontend)**:
   Hier wird der Pfad auf der Ebene der Serverinfrastruktur (z. B. Nginx oder API-Gateway) bewertet, und von Beginn an wird der HTML-Code des passenden Micro Frontends serviert. Bei Seitenwechseln kommt es zu einem Hard Refresh, aber der Trennungsgrad der Architektur ist am höchsten.
 
 ## 7. Auswirkungen auf die Organisation und Team-Autonomie

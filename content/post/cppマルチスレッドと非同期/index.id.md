@@ -102,7 +102,7 @@ int main() {
 
 ---
 
-## 3. Menghindari Data Race dan Sinkronisasi: Mutex dan Lock
+## 3. Menghindari Data Race dan Sinkronisasi: Mutex dan [Lock](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/)
 
 Jika beberapa thread mengakses area memori yang sama (misalnya sebuah variabel) secara bersamaan, dan setidaknya satu di antaranya melakukan operasi penulisan, maka **Data Race (Perlombaan Data)** akan terjadi. Dalam standar C++, data race akan menyebabkan Undefined Behavior (perilaku yang tidak terdefinisi). Untuk mencegah hal ini, diperlukan kontrol eksklusif (mutual exclusion) menggunakan `std::mutex`.
 
@@ -316,7 +316,7 @@ Untuk mengeluarkan performa terbaik dalam pemrograman multithreading, perhatian 
 
 * **Berbagi Palsu (False Sharing):** 
   Jika beberapa thread memperbarui variabel yang berbeda, namun variabel tersebut terletak di dalam satu garis cache (cache line) yang sama (biasanya 64 byte) di dalam CPU, sinkronisasi memori yang sia-sia akan terjadi untuk menjaga koherensi cache, dan kinerja akan menurun drastis. Untuk mencegah hal ini, diperlukan strategi seperti menggunakan penentu (specifier) `alignas` untuk menyelaraskan variabel pada batas cache line.
-* **Bebas Kunci (Lock-Free) dan `std::atomic`:**
+* **Bebas Kunci ([Lock](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/)-Free) dan `std::atomic`:**
   Untuk menghindari overhead penguncian/pembukaan kunci dari mutex, kita dapat mempertimbangkan penggunaan operasi tak terpisahkan (seperti Compare-And-Swap) menggunakan `<atomic>` dan pengenalan struktur data lock-free. Akan tetapi, hal ini membutuhkan pemahaman yang mendalam tentang urutan memori (`std::memory_order`) dan tingkat kesulitannya sangat tinggi, sehingga pendekatan ini biasanya hanya diperkenalkan setelah diputuskan benar-benar perlu melalui pengukuran kinerja yang hati-hati.
 
 ---

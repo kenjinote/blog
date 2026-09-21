@@ -19,7 +19,7 @@ In diesem Artikel werden wir die konkreten Schritte zur Veröffentlichung einer 
 ## 1. Grundlagen von Static Site Generatoren (SSG) und Jamstack
 
 ### 1.1 Warum eine statische Website?
-Herkömmliche dynamische CMS (z. B. WordPress) senden bei jeder Benutzeranfrage eine Abfrage an eine Datenbank (z. B. MySQL) und generieren serverseitig (z. B. mit PHP) dynamisch HTML, das dann zurückgegeben wird. Während dieser Ansatz sehr flexibel ist, weist er eine geringere Widerstandsfähigkeit gegen plötzliche Traffic-Spitzen (sogenannte virale Hits oder DDoS-Angriffe) auf. Dies führt oft zu einer komplexeren Infrastruktur, bei der beispielsweise Cache-Server (wie Redis oder Varnish) vorgeschaltet werden müssen.
+Herkömmliche dynamische CMS (z. B. WordPress) senden bei jeder Benutzeranfrage eine Abfrage an eine Datenbank (z. B. MySQL) und generieren serverseitig (z. B. mit PHP) dynamisch HTML, das dann zurückgegeben wird. Während dieser Ansatz sehr flexibel ist, weist er eine geringere Widerstandsfähigkeit gegen plötzliche Traffic-Spitzen (sogenannte virale Hits oder DDoS-Angriffe) auf. Dies führt oft zu einer komplexeren Infrastruktur, bei der beispielsweise Cache-Server (wie [Redis](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/) oder Varnish) vorgeschaltet werden müssen.
 
 Andererseits generieren Static Site Generatoren (SSG), die die Jamstack-Architektur (JavaScript, APIs und Markup) verwenden, bereits im Voraus (zur Build-Zeit) alle HTML-Dateien, CSS und JavaScript. Bei Benutzeranfragen gibt der Webserver (oder das CDN) lediglich die bereits generierten statischen Dateien zurück. Dies ermöglicht eine überwältigende Geschwindigkeit und robuste Sicherheit.
 

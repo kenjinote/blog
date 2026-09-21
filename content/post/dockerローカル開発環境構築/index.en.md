@@ -131,7 +131,7 @@ In this way, introducing multi-stage builds can reduce the image size by about h
 
 In modern web application development, a microservices architecture where multiple components like web servers, databases, and cache servers collaborate is common. We use `docker-compose.yml` to centrally manage these in a local environment.
 
-Here, we will build a 3-tier system locally consisting of "Web (FastAPI)," "Database (PostgreSQL)," and "Cache (Redis)."
+Here, we will build a 3-tier system locally consisting of "Web (FastAPI)," "Database (PostgreSQL)," and "Cache ([Redis](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/))."
 
 ### Architecture Diagram (Mermaid)
 
@@ -348,7 +348,7 @@ We mathematically model the average request processing time $T_{\text{total}}$ i
 We define the latency of each process as follows:
 - $T_{\text{net}}$: Network latency between the client and the Web container
 - $T_{\text{app}}$: Pure processing time on the application side (serialization, etc.)
-- $T_{\text{cache}}$: Time required to read/write from/to Redis
+- $T_{\text{cache}}$: Time required to read/write from/to [Redis](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/)
 - $T_{\text{db}}$: Time required to execute queries on PostgreSQL
 - $p_{\text{miss}}$: Cache miss rate ($0 \le p_{\text{miss}} \le 1$)
 

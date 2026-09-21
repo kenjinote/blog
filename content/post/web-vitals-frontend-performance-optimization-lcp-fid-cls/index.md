@@ -40,7 +40,7 @@ flowchart TD
 4. **Paint (ペイント)** : レイアウト情報に基づいて、テキスト、色、画像、境界線などの視覚的な要素をピクセルとしてメモリ上のレイヤーに描画します。
 5. **Composite (コンポジット / 合成)** : 複数のレイヤーを正しい順序で重ね合わせ、最終的な画面として出力します。
 
-パフォーマンスの最適化とは、このパイプラインの各ステップにかかる時間を短縮し、メインスレッドのブロックを防ぐことに他なりません。特に、JavaScriptの実行や重いCSSの計算は、このパイプラインをブロックする主な要因となります。
+パフォーマンスの最適化とは、このパイプラインの各ステップにかかる時間を短縮し、メインスレッドのブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を防ぐことに他なりません。特に、JavaScriptの実行や重いCSSの計算は、このパイプラインをブロックする主な要因となります。
 
 ## 2. LCP (Largest Contentful Paint) の深い理解と改善手法
 
@@ -78,7 +78,7 @@ LCP要素（例えば、ヒーロー画像やメインのWebフォント）を�
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 ```
 
-#### レンダリングブロックリソースの排除
+#### レンダリングブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)リソースの排除
 
 CSSはデフォルトでレンダリングブロックリソースです。CSSOMが構築されるまで、ブラウザは画面を描画しません。クリティカルCSS（ファーストビューに必要なCSS）をインライン化し、それ以外のCSSを非同期で読み込むことで、LCPを改善できます。
 
@@ -124,7 +124,7 @@ CSSはデフォルトでレンダリングブロックリソースです。CSSOM
 
 #### スクリプトの非同期読み込み (`async` / `defer`)
 
-JavaScriptの読み込みがHTMLのパースをブロックしないように、 `async` または `defer` 属性を使用します。
+JavaScriptの読み込みがHTMLのパースをブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)しないように、 `async` または `defer` 属性を使用します。
 
 ```mermaid
 gantt
@@ -155,7 +155,7 @@ gantt
 
 #### Code Splitting（コードスプリッティング）
 
-バンドルされた巨大なJavaScriptファイルを一度に読み込むと、メインスレッドが長時間ブロックされます。 **Code Splitting** を行い、必要なコードだけを必要なタイミングで読み込むようにします。以下はReactでのコンポーネントレベルのコードスプリッティングの例です。
+バンドルされた巨大なJavaScriptファイルを一度に読み込むと、メインスレッドが長時間ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)されます。 **Code Splitting** を行い、必要なコードだけを必要なタイミングで読み込むようにします。以下はReactでのコンポーネントレベルのコードスプリッティングの例です。
 
 ```javascript
 import React, { Suspense, lazy } from 'react';
@@ -253,7 +253,7 @@ Webフォントが読み込まれるまでの間、テキストが見えなく�
 Core Web Vitalsの各指標（ **LCP** 、 **FID/INP** 、 **CLS** ）は、それぞれが異なる視点からユーザー体験を評価しています。
 
 - **LCP** を改善するには、クリティカルパスの最適化とリソース（画像やフォント）の早期読み込みが鍵となります。
-- **FID/INP** を改善するには、メインスレッドをブロックする過剰なJavaScriptの実行を防ぎ、Code Splittingやタスクの分割を行う必要があります。
+- **FID/INP** を改善するには、メインスレッドをブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)する過剰なJavaScriptの実行を防ぎ、Code Splittingやタスクの分割を行う必要があります。
 - **CLS** を改善するには、画像や埋め込み要素のスペースを事前に確保し、フォントの読み込み戦略を適切に設定することで、視覚的な安定性を保つことが重要です。
 
 ブラウザの **レンダリングパイプライン** を深く理解し、各指標が悪化する根本的な原因を特定することで、効果的かつ持続可能なパフォーマンス最適化を実現することができます。これらのベストプラクティスをプロジェクトの初期段階から組み込み、最高水準のユーザー体験を提供しましょう。

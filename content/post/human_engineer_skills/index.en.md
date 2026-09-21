@@ -119,21 +119,21 @@ Modern software is evolving from monoliths running on a single server to cloud-n
 
 ### 4.1 The [CAP Theorem](https://kenji.blog/en/p/cap-theorem-distributed-systems/) and Judging Trade-offs
 
-When designing a distributed system, engineers constantly confront the "CAP Theorem." The CAP Theorem is the principle that a distributed system can only satisfy two out of the following three properties simultaneously:
+When designing a distributed system, engineers constantly confront the "[CAP Theorem](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)." The CAP Theorem is the principle that a distributed system can only satisfy two out of the following three properties simultaneously:
 
-- **Consistency**: Does every node see the same data at the same time?
-- **Availability**: Does the system continue to respond even if some nodes fail?
+- **[Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)**: Does every node see the same data at the same time?
+- **[Availability](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)**: Does the system continue to respond even if some nodes fail?
 - **[Partition Tolerance](https://kenji.blog/en/p/cap-theorem-distributed-systems/)**: Does the system continue to operate even if a network partition occurs?
 
-$$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
+$$ P(\text{[Availability](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)} \cup \text{[Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)}) | \text{PartitionTolerance} $$
 
 Since partitions are unavoidable in real-world networks, engineers must make severe trade-off decisions directly tied to business requirements, such as "This payment system prioritizes Consistency, so we stop the service during a failure (CP)" or "This SNS timeline prioritizes Availability, so we tolerate temporary data inconsistency (AP)."
 
 While AI can write "code that prioritizes C" or "code that prioritizes A", it cannot autonomously make the decision of "which should be prioritized," a decision that involves business risks.
 
-### 4.2 [Asynchronous](https://kenji.blog/en/p/event-driven-architecture-async/) Communication and Eventual Consistency
+### 4.2 [Asynchronous](https://kenji.blog/en/p/event-driven-architecture-async/) Communication and Eventual [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)
 
-As systems scale up, inter-service coordination transitions from synchronous communication via [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)s to asynchronous communication using message queues (such as Kafka or RabbitMQ). Here, data consistency shifts from immediate consistency to "Eventual Consistency."
+As systems scale up, inter-service coordination transitions from synchronous communication via [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)s to asynchronous communication using message queues (such as [Kafka](https://kenji.blog/en/p/event-driven-architecture-message-queue-kafka-rabbitmq/) or [RabbitMQ](https://kenji.blog/en/p/event-driven-architecture-message-queue-kafka-rabbitmq/)). Here, data consistency shifts from immediate consistency to "Eventual [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)."
 At what point should advanced architectural patterns like the Saga pattern or [CQRS](https://kenji.blog/en/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) be introduced? Making these complex decisions and drawing the blueprint for the entire system is exactly where the true worth of a senior engineer shines.
 
 ```mermaid

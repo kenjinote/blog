@@ -287,7 +287,7 @@ $ |Q_1 \cap Q_2| = 2Q - n = 2(2f + 1) - (3f + 1) = f + 1 $
 在本文中，关于分布式系统中最大的挑战——共识形成，我们从理论上的“拜占庭将军问题”开始，解说了具有崩溃容错能力的 **Paxos** 和 **Raft** ，以及对恶意节点具有容错能力的 **PBFT** 。
 
 *   **Paxos** ：数学上证明的坚固基础，但复杂性是一大挑战。
-*   **Raft** ：追求易于理解和易于实现，成为了现代分布式KVS的事实标准。
+*   **Raft** ：追求易于理解和易于实现，成为了现代分布式[KVS](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/)的事实标准。
 *   **PBFT** ：在混杂恶意节点的环境下实现了确定性共识，成为了区块链技术的基础。
 
 如今，比特币采用的 **Nakamoto [Consensus](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/) ([PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/))** ，以及Tendermint、HotStuff等在减少PBFT通信开销的同时提高了可扩展性的新型BFT算法不断涌现。根据系统的需求（节点的可靠性、所需的吞吐量、延迟），选择合适的共识算法是构建稳健的分布式系统的关键。

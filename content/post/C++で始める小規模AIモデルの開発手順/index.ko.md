@@ -86,7 +86,7 @@ Hugging Face 등의 `.safetensors` 포맷에서 변환된 **GGUF (GPT-Generated 
 1. **Magic Bytes**: `0x46554747` (GGUF).
 2. **Version**: 포맷의 버전 번호.
 3. **Tensor Count & Metadata Count**: 텐서 개수와 메타데이터의 키-값 쌍 개수.
-4. **Metadata (Key-Value Pairs)**: 문자열 길이 접두사가 붙은 키와 타입이 지정된 값.
+4. **Metadata ([Key-Value](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs)**: 문자열 길이 접두사가 붙은 키와 타입이 지정된 값.
 5. **Tensor Info**: 각 텐서의 이름, 차원 수, 데이터 타입(FP16, Q4_K 등), 파일 내의 오프셋 위치.
 6. **Padding**: 텐서 데이터가 특정 경계(일반적으로 32바이트 또는 64바이트)에 정렬되도록 삽입되는 패딩. SIMD 명령(특히 AVX)에서의 빠른 메모리 접근에 필수적입니다.
 7. **Tensor Data**: 정렬된 실제 가중치 데이터 배열.

@@ -352,7 +352,7 @@ Saat ini, PKCE mulai didukung dalam alur baru di Slack API dan API SaaS modern l
 Terakhir, berikut adalah praktik terbaik tentang cara menyimpan akses token yang diperoleh.
 
 ## 1. Menyimpan dalam database harus dienkripsi
-Akses token (`xoxb-...`) ibarat "kunci duplikat" ke ruang kerja Slack. Anda tidak boleh menyimpannya dalam teks biasa (plaintext) di database (MySQL, PostgreSQL, MongoDB, dll.). Jika database bocor karena injeksi SQL atau sejenisnya, ini akan menjadi bencana besar di mana saluran Slack semua pelanggan dibajak.
+Akses token (`xoxb-...`) ibarat "kunci duplikat" ke ruang kerja Slack. Anda tidak boleh menyimpannya dalam teks biasa (plaintext) di database (MySQL, PostgreSQL, [MongoDB](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/), dll.). Jika database bocor karena injeksi SQL atau sejenisnya, ini akan menjadi bencana besar di mana saluran Slack semua pelanggan dibajak.
 
 Pastikan untuk mengenkripsinya di lapisan aplikasi menggunakan kriptografi kunci simetris yang kuat seperti **AES-256-GCM** sebelum menyimpannya di DB. Kunci master (master key) untuk enkripsi/dekripsi harus dikelola secara ketat menggunakan layanan manajemen kunci yang aman seperti AWS KMS (Key Management [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)) atau GCP Cloud KMS.
 

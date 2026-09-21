@@ -23,7 +23,7 @@ Dari akhir abad ke-19 hingga awal abad ke-20, dunia matematika menghadapi "parad
 
 [Hilbert](https://kenji.blog/id/p/hilbert/) mencoba menyimbolkan sepenuhnya semua penalaran matematika dan merekonstruksi matematika hanya dengan aturan mekanis. "Program [Hilbert](https://kenji.blog/id/p/hilbert/)" yang ia advokasikan bertujuan untuk membuktikan tiga sifat berikut dalam sistem formal (Formal System) matematika:
 
-1. **Konsistensi** (Consistency): Tidak ada kontradiksi (di mana suatu proposisi $P$ dan negasinya $\neg P$ keduanya terbukti) di dalam sistem.
+1. **Konsistensi** ([Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/)): Tidak ada kontradiksi (di mana suatu proposisi $P$ dan negasinya $\neg P$ keduanya terbukti) di dalam sistem.
 2. **Kelengkapan** (Completeness): Setiap proposisi matematika harus dapat dibuktikan sebagai benar atau salah di dalam sistem tersebut.
 3. **Keputusan** (Decidability): Jika diberikan proposisi sembarang, ada prosedur mekanis untuk menentukan apakah itu dapat dibuktikan atau tidak.
 

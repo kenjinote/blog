@@ -13,7 +13,7 @@ tags:
   - "تصميم-النظام"
 ---
 
-في بنية البرمجيات الحديثة، أصبح جعل الأنظمة موزعة متطلبًا لا يمكن تجنبه. مع انتشار الحوسبة السحابية، واعتماد بنية الخدمات المصغرة (Microservices)، وزيادة الطلب على معالجة البيانات الضخمة، أصبح النهج السائد هو ربط العديد من الخوادم غير المكلفة (Scale-out) بدلاً من الاعتماد على خادم واحد قوي (Scale-up).
+في بنية البرمجيات الحديثة، أصبح جعل الأنظمة موزعة متطلبًا لا يمكن تجنبه. مع انتشار الحوسبة السحابية، واعتماد بنية الخدمات المصغرة ([[Microservice](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/))، وزيادة الطلب على معالجة البيانات الضخمة، أصبح النهج السائد هو ربط العديد من الخوادم غير المكلفة (Scale-out) بدلاً من الاعتماد على خادم واحد قوي (Scale-up).
 
 ومع ذلك، عند بناء وتشغيل الأنظمة الموزعة، يواجه المهندسون دائمًا خيارات صعبة. إنها المقايضة بين "اتساق البيانات" و "توافر النظام". **نظرية CAP** (CAP theorem) هي التي أثبتت هذه المعضلة الجوهرية رياضيًا وصاغتها.
 
@@ -21,7 +21,7 @@ tags:
 
 ## 1. ما هو النظام الموزع؟
 
-قبل التحدث عن نظرية CAP، دعونا نوضح أولاً ما هو **النظام الموزع** (Distributed System).
+قبل التحدث عن نظرية CAP، دعونا نوضح أولاً ما هو **النظام الموزع** ([Distributed System](https://kenji.blog/ar/p/cap-theorem-distributed-systems-tradeoff/)).
 
 النظام الموزع هو نظام يتكون من عدة أجهزة كمبيوتر (عقد) مستقلة متصلة ببعضها البعض عبر شبكة، وتتصرف كما لو كانت نظامًا واحدًا متسقًا من وجهة نظر المستخدم.
 
@@ -55,9 +55,9 @@ graph LR
 
 تؤكد النظرية أنه في النظام الموزع، من بين الخصائص الثلاث التالية، يمكن تلبية **اثنتين كحد أقصى** في نفس الوقت.
 
-1. **C: Consistency** (الاتساق)
-2. **A: Availability** (التوافر)
-3. **P: Partition Tolerance** (تحمل التجزئة)
+1. **C: [Consistency](https://kenji.blog/ar/p/cap-theorem-distributed-systems-tradeoff/)** (الاتساق)
+2. **A: [Availability](https://kenji.blog/ar/p/cap-theorem-distributed-systems-tradeoff/)** (التوافر)
+3. **P: [Partition Tolerance](https://kenji.blog/ar/p/cap-theorem-distributed-systems-tradeoff/)** (تحمل التجزئة)
 
 دعونا نلقي نظرة على التعريف الدقيق لكل منها.
 
@@ -120,7 +120,7 @@ sequenceDiagram
 
 ## 4. نصاب (Quorum) وضبط الاتساق
 
-في العديد من قواعد البيانات الموزعة (مثل: Cassandra و DynamoDB وغيرها)، بدلاً من تقييد النظام بأكمله بـ CP أو AP ثابت، يمكنك ضبط التوازن بين C و A من خلال تعديل المعلمات باستخدام **النصاب** (Quorum) لكل طلب.
+في العديد من قواعد البيانات الموزعة (مثل: [Cassandra](https://kenji.blog/ar/p/nosql-database-selection-kvs-document-graph-wide-column/) و DynamoDB وغيرها)، بدلاً من تقييد النظام بأكمله بـ CP أو AP ثابت، يمكنك ضبط التوازن بين C و A من خلال تعديل المعلمات باستخدام **النصاب** (Quorum) لكل طلب.
 
 لنفترض أن عدد النسخ المتماثلة هو $ N $.
 عدد العقد المطلوبة للاستجابة لاعتبار الكتابة ناجحة هو $ W $.
@@ -171,10 +171,10 @@ print(system.check_consistency(W=1, R=1))  # 1 + 1 <= 3 -> اتساق نهائي
 
 ### 5.1. تصنيف PACELC لقواعد البيانات النموذجية
 
-*   **PC/EC** (HBase, MongoDB, Zookeeper)
+*   **PC/EC** (HBase, [MongoDB](https://kenji.blog/ar/p/nosql-database-selection-kvs-document-graph-wide-column/), Zookeeper)
     *   أثناء التجزئة، يُعطى الأولوية للاتساق (PC). في الأوقات العادية أيضًا، يُعطى الأولوية للاتساق، ويُسمح بزمن انتقال أعلى (EC).
-*   **PA/EL** (Cassandra, Riak, DynamoDB)
-    *   أثناء التجزئة، يُعطى الأولوية للتوافر (PA). في الأوقات العادية، يُعطى الأولوية لزمن انتقال منخفض، ويُقبل الاتساق النهائي (Eventual Consistency) (EL).
+*   **PA/EL** ([Cassandra](https://kenji.blog/ar/p/nosql-database-selection-kvs-document-graph-wide-column/), Riak, DynamoDB)
+    *   أثناء التجزئة، يُعطى الأولوية للتوافر (PA). في الأوقات العادية، يُعطى الأولوية لزمن انتقال منخفض، ويُقبل الاتساق النهائي (Eventual [Consistency](https://kenji.blog/ar/p/cap-theorem-distributed-systems-tradeoff/)) (EL).
 *   **PA/EC** (MySQL Cluster وغيرها)
     *   يُعطى الأولوية للتوافر أثناء التجزئة، بينما يحاول الحفاظ على الاتساق في الأوقات العادية.
 
@@ -271,17 +271,17 @@ stateDiagram-v2
 
 وهذا يقضي تمامًا على عدم اتساق البيانات في بيئة موزعة رياضيًا وخوارزميًا. يستخدم `etcd`، وهو مخزن البيانات الخلفي لـ [Kubernetes](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/)، أيضًا [Raft](https://kenji.blog/ar/p/byzantine-generals-problem-consensus/) لتحقيق إدارة حالة صارمة للمجموعة.
 
-## 8. الخدمات المصغرة والمعاملات (Transactions)
+## 8. الخدمات المصغرة والمعاملات ([Transaction](https://kenji.blog/ar/p/rdbms-transaction-acid-isolation-level-lock/)s)
 
-لا تقتصر نظرية CAP على قواعد البيانات الفردية، بل لها تأثير عميق على **بنية الخدمات المصغرة (Microservices Architecture)** الحديثة.
+لا تقتصر نظرية CAP على قواعد البيانات الفردية، بل لها تأثير عميق على **بنية الخدمات المصغرة ([[Microservice](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/) Architecture)** الحديثة.
 
-في التطبيقات الأحادية (Monolithic)، كان من السهل الحفاظ على اتساق البيانات من خلال معاملات ACID باستخدام قاعدة بيانات علائقية واحدة. ولكن في الخدمات المصغرة، حيث يتم تقسيم الخدمات وقواعد البيانات حسب مجال العمل، تصبح هناك حاجة إلى معاملات موزعة (Distributed Transactions) تمتد عبر الخدمات.
+في التطبيقات الأحادية (Monolithic)، كان من السهل الحفاظ على اتساق البيانات من خلال معاملات [ACID](https://kenji.blog/ar/p/rdbms-transaction-acid-isolation-level-lock/) باستخدام قاعدة بيانات علائقية واحدة. ولكن في الخدمات المصغرة، حيث يتم تقسيم الخدمات وقواعد البيانات حسب مجال العمل، تصبح هناك حاجة إلى معاملات موزعة (Distributed Transactions) تمتد عبر الخدمات.
 
 هنا تُظهر نظرية CAP أنيابها. إذا كنت تبحث عن اتساق قوي (C) باستخدام المعاملات الموزعة (مثل الالتزام ثنائي الطور - 2PC)، وإذا تعطلت أي خدمة أو حدث تأخير في الاتصال، فسيتم حظر النظام بأكمله، وسينخفض التوافر (A) وزمن الانتقال (L) بشكل كبير.
 
 لمعالجة هذه المشكلة، يُستخدم **نمط Saga (Saga Pattern)** على نطاق واسع في الخدمات المصغرة.
 
-نمط Saga هو تقنية تقسم معاملة واحدة كبيرة إلى سلسلة من المعاملات المحلية، وتربطها باستخدام رسائل غير متزامنة (مثل Kafka أو RabbitMQ).
+نمط Saga هو تقنية تقسم معاملة واحدة كبيرة إلى سلسلة من المعاملات المحلية، وتربطها باستخدام رسائل غير متزامنة (مثل [Kafka](https://kenji.blog/ar/p/event-driven-architecture-message-queue-kafka-rabbitmq/) أو [RabbitMQ](https://kenji.blog/ar/p/event-driven-architecture-message-queue-kafka-rabbitmq/)).
 
 ```mermaid
 flowchart TD
@@ -295,13 +295,13 @@ flowchart TD
     MessageBroker -->|"إلغاء"| Order
 ```
 
-في نمط Saga، نتخلى عن الاتساق القوي ونقبل **الاتساق النهائي (Eventual Consistency)** (نهج AP). في حالة فشل المعالجة في المنتصف، بدلاً من التراجع (Rollback)، نقوم بإصدار **معاملة تعويضية (Compensating Transaction)** لتنفيذ معالجة تعيد الحالة منطقيًا إلى ما كانت عليه. وبهذا، نحقق مستوى من الاتساق مقبولاً من الناحية التجارية مع الحفاظ على قابلية توسع وتوافر عاليين.
+في نمط Saga، نتخلى عن الاتساق القوي ونقبل **الاتساق النهائي (Eventual [Consistency](https://kenji.blog/ar/p/cap-theorem-distributed-systems-tradeoff/))** (نهج AP). في حالة فشل المعالجة في المنتصف، بدلاً من التراجع (Rollback)، نقوم بإصدار **معاملة تعويضية (Compensating [Transaction](https://kenji.blog/ar/p/rdbms-transaction-acid-isolation-level-lock/))** لتنفيذ معالجة تعيد الحالة منطقيًا إلى ما كانت عليه. وبهذا، نحقق مستوى من الاتساق مقبولاً من الناحية التجارية مع الحفاظ على قابلية توسع وتوافر عاليين.
 
 ## الخلاصة
 
 في هذا المقال، تعمقنا في نظرية CAP، المبدأ الأهم في الأنظمة الموزعة.
 
-*   توضح **نظرية CAP** أنه من المستحيل تلبية الاتساق (Consistency)، والتوافر (Availability)، وتحمل التجزئة (Partition Tolerance) الثلاثة معًا في نظام موزع، وفي العالم الحقيقي حيث لا مفر من التجزئة (P)، يصبح الخيار فعليًا إما **CP** أو **AP**.
+*   توضح **نظرية CAP** أنه من المستحيل تلبية الاتساق (Consistency)، والتوافر ([Availability](https://kenji.blog/ar/p/cap-theorem-distributed-systems-tradeoff/))، وتحمل التجزئة ([Partition Tolerance](https://kenji.blog/ar/p/cap-theorem-distributed-systems-tradeoff/)) الثلاثة معًا في نظام موزع، وفي العالم الحقيقي حيث لا مفر من التجزئة (P)، يصبح الخيار فعليًا إما **CP** أو **AP**.
 *   وسعت **نظرية PACELC** هذا المفهوم، موضحةً أنه حتى أثناء التشغيل العادي بدون تجزئة، هناك مقايضة بين زمن الانتقال (L) والاتساق (C).
 *   باستخدام **النصاب (Quorum)**، يمكنك ضبط التوازن بين الاتساق والتوافر ($ W+R>N $) بمرونة بناءً على المتطلبات.
 *   في أنظمة AP، تُستخدم **ساعات المتجهات (Vector Clocks)** لحل التعارض، بينما في أنظمة CP تُستخدم خوارزميات إجماع مثل **[Raft](https://kenji.blog/ar/p/byzantine-generals-problem-consensus/)** لفرض ترتيب صارم.

@@ -210,7 +210,7 @@ let result = divide(10.0, 2.0).and_then(|res| divide(res, 2.0));
 
 Nem todos os padrões GoF morreram. Padrões que operam nas fronteiras da arquitetura continuam sendo de extrema importância.
 
-1. **Facade**: O conceito de fornecer uma interface simples para um subsistema complexo escalou como um API Gateway (BFF: Backend for Frontend) em arquiteturas de microsserviços.
+1. **Facade**: O conceito de fornecer uma interface simples para um subsistema complexo escalou como um [API Gateway](https://kenji.blog/pt/p/microservices-architecture-bff-api-gateway/) ([BFF](https://kenji.blog/pt/p/microservices-architecture-bff-api-gateway/): [Backend for Frontend](https://kenji.blog/pt/p/microservices-architecture-bff-api-gateway/)) em arquiteturas de microsserviços.
 2. **Adapter**: É a chave para manter o baixo acoplamento do sistema, integrando sistemas externos e atuando como "portas e adaptadores" na arquitetura limpa e hexagonal.
 3. **Decorator**: Em Python e TypeScript, foi elevado a um recurso de linguagem como a funcionalidade de metaprogramação baseada em anotação `@Decorator`.
 

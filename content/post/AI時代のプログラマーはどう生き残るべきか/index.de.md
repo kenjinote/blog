@@ -76,7 +76,7 @@ $$ P_{auto}(T) = 1 - \exp\left(-\lambda \cdot \frac{\text{Predictability}(T)}{\t
 *   $\text{Context Dependency}(T)$: Stärke des "impliziten Kontexts" (domänenspezifisches Wissen oder menschliche Beziehungen), von dem die Aufgabe abhängt
 *   $\lambda$: Technologische Fortschrittsrate der KI
 
-Aufgaben mit hoher Vorhersehbarkeit und geringer Kontextabhängigkeit, wie das Schreiben von API-Routings oder das Erstellen einfacher CRUD-Bildschirme, haben ein $P_{auto} \approx 1$ und werden fast vollständig automatisiert. Andererseits sind Aufgaben mit extrem hoher Kontextabhängigkeit schwer zu automatisieren, wie zum Beispiel "Wie integriert man ein bestehendes Legacy-System sicher mit neuen Microservices?" oder "Wie gestaltet man einen Authentifizierungsfluss, der die Anforderungen der Rechtsabteilung erfüllt, ohne die Benutzererfahrung zu beeinträchtigen?".
+Aufgaben mit hoher Vorhersehbarkeit und geringer Kontextabhängigkeit, wie das Schreiben von API-Routings oder das Erstellen einfacher CRUD-Bildschirme, haben ein $P_{auto} \approx 1$ und werden fast vollständig automatisiert. Andererseits sind Aufgaben mit extrem hoher Kontextabhängigkeit schwer zu automatisieren, wie zum Beispiel "Wie integriert man ein bestehendes Legacy-System sicher mit neuen [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)?" oder "Wie gestaltet man einen Authentifizierungsfluss, der die Anforderungen der Rechtsabteilung erfüllt, ohne die Benutzererfahrung zu beeinträchtigen?".
 
 ---
 
@@ -102,7 +102,7 @@ graph LR
 
 Die KI übertrifft den Menschen bei der "lokalen Optimierung". Wenn es um die Geschwindigkeit und Genauigkeit beim Schreiben einer einzigen Funktion, einer einzigen Klasse oder eines einzelnen Moduls geht, hat der Mensch keine Chance. Allerdings ist die KI sehr anfällig, wenn es um "globale Optimierung" oder "fehlenden Kontext (Missing Context)" geht.
 
-Programmierer der Zukunft müssen ihre Rolle von "Code schreibenden Arbeitern" zu "Architekten, die unzählige von der KI generierte Komponenten orchestrieren" wandeln. Das gesamte System überblicken, entscheiden, wo die Grenzen von Microservices gezogen werden, wie der Kompromiss zwischen Verfügbarkeit und Konsistenz im CAP-Theorem im geschäftlichen Kontext gelöst wird, oder wie man technische Schulden kontrolliert: Dies sind hochgradig intellektuelle Aufgaben, die nur von Menschen ausgeführt werden können, die das Gesamtbild und die Geschäftsziele verstehen.
+Programmierer der Zukunft müssen ihre Rolle von "Code schreibenden Arbeitern" zu "Architekten, die unzählige von der KI generierte Komponenten orchestrieren" wandeln. Das gesamte System überblicken, entscheiden, wo die Grenzen von [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/) gezogen werden, wie der Kompromiss zwischen Verfügbarkeit und Konsistenz im CAP-Theorem im geschäftlichen Kontext gelöst wird, oder wie man technische Schulden kontrolliert: Dies sind hochgradig intellektuelle Aufgaben, die nur von Menschen ausgeführt werden können, die das Gesamtbild und die Geschäftsziele verstehen.
 
 ---
 

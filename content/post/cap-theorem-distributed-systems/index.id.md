@@ -15,13 +15,13 @@ tags:
 
 Dalam arsitektur perangkat lunak modern, mendistribusikan sistem telah menjadi persyaratan yang tidak bisa dihindari. Dengan memasyarakatnya komputasi awan (cloud computing), adopsi arsitektur layanan mikro (microservices), dan peningkatan permintaan pemrosesan data besar (big data), pendekatan mengandalkan satu server yang kuat (scale-up) tidak lagi menjadi arus utama, melainkan digantikan oleh kolaborasi banyak server murah (scale-out).
 
-Namun, dalam membangun dan mengoperasikan sistem terdistribusi, para insinyur selalu dihadapkan pada pilihan yang berat. Itu adalah pertukaran (trade-off) antara **Konsistensi Data (Data Consistency)** dan **Ketersediaan Sistem (System Availability)** . Dilema esensial ini dibuktikan secara matematis dan dirumuskan dalam **Teorema CAP** (CAP theorem).
+Namun, dalam membangun dan mengoperasikan sistem terdistribusi, para insinyur selalu dihadapkan pada pilihan yang berat. Itu adalah pertukaran (trade-off) antara **Konsistensi Data (Data [Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/))** dan **Ketersediaan Sistem (System [Availability](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/))** . Dilema esensial ini dibuktikan secara matematis dan dirumuskan dalam **Teorema CAP** (CAP theorem).
 
 Dalam artikel ini, kita akan membahas secara mendalam mulai dari dasar teorema CAP, pembuktiannya, bagaimana database terdistribusi modern menghadapi dilema ini, hingga **Teorema PACELC** yang merupakan perluasan dari teorema CAP, lengkap dengan rumus, ilustrasi, dan contoh implementasi.
 
 ## 1. Apa itu Sistem Terdistribusi?
 
-Sebelum membahas teorema CAP, mari kita perjelas apa yang dimaksud dengan **Sistem Terdistribusi** (Distributed System).
+Sebelum membahas teorema CAP, mari kita perjelas apa yang dimaksud dengan **Sistem Terdistribusi** ([Distributed System](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/)).
 
 Sistem terdistribusi adalah sekumpulan komputer independen (node) yang saling terhubung melalui jaringan, yang bagi pengguna terlihat bertindak sebagai satu sistem yang koheren dan utuh.
 
@@ -44,7 +44,7 @@ graph LR
 Tujuan utama dari sistem terdistribusi adalah sebagai berikut:
 
 1.  **Skalabilitas (Scalability)** : Meningkatkan kapasitas pemrosesan sistem secara keseluruhan dengan menambahkan node saat lalu lintas atau volume data meningkat.
-2.  **Ketersediaan (Availability)** : Jika beberapa node mengalami kegagalan, node lain tetap melanjutkan pemrosesan sehingga layanan secara keseluruhan tetap berjalan.
+2.  **Ketersediaan ([Availability](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/))** : Jika beberapa node mengalami kegagalan, node lain tetap melanjutkan pemrosesan sehingga layanan secara keseluruhan tetap berjalan.
 3.  **Kinerja (Performance)** : Untuk pengguna yang tersebar secara geografis, node yang secara fisik lebih dekat akan memberikan respons sehingga mengurangi latensi.
 
 Namun, karena dibangun di atas fondasi jaringan yang tidak stabil, sistem terdistribusi selalu menghadapi tantangan yang tak terhindarkan seperti "partisi jaringan" atau "penundaan dan kehilangan pesan".
@@ -55,9 +55,9 @@ Teorema CAP diusulkan oleh Eric Brewer pada tahun 2000, dan dibuktikan secara ke
 
 Teorema ini menyatakan bahwa dalam sebuah sistem terdistribusi, dari 3 karakteristik berikut, hanya dapat dipenuhi **maksimal 2** secara bersamaan.
 
-1.  **C: Consistency** (Konsistensi)
+1.  **C: [Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/)** (Konsistensi)
 2.  **A: Availability** (Ketersediaan)
-3.  **P: Partition Tolerance** (Toleransi Partisi)
+3.  **P: [Partition Tolerance](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/)** (Toleransi Partisi)
 
 Mari kita lihat definisi ketat masing-masing.
 
@@ -120,7 +120,7 @@ Dalam sistem terdistribusi di dunia nyata di mana partisi jaringan ( **P** ) san
 
 ## 4. Quorum dan Penyesuaian Konsistensi
 
-Dalam banyak database terdistribusi (contoh: Cassandra, DynamoDB, dll.), sistem secara keseluruhan tidak terikat kaku pada CP atau AP, melainkan menyeimbangkan C dan A menggunakan parameter yang disebut **Quorum** untuk setiap permintaan.
+Dalam banyak database terdistribusi (contoh: [Cassandra](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/), DynamoDB, dll.), sistem secara keseluruhan tidak terikat kaku pada CP atau AP, melainkan menyeimbangkan C dan A menggunakan parameter yang disebut **Quorum** untuk setiap permintaan.
 
 Misalkan jumlah replika adalah $ N $.
 Misalkan jumlah node yang perlu merespons agar penulisan dianggap berhasil adalah $ W $.
@@ -171,9 +171,9 @@ Dalam sistem terdistribusi, jika data ditulis secara sinkron ke semua node (memi
 
 ### 5.1. Klasifikasi PACELC dari Database Populer
 
-*   **PC/EC** (HBase, MongoDB, Zookeeper)
+*   **PC/EC** (HBase, [MongoDB](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/), Zookeeper)
     *   Memprioritaskan konsistensi saat partisi (PC). Juga memprioritaskan konsistensi saat keadaan normal dan mentolerir latensi (EC).
-*   **PA/EL** (Cassandra, Riak, DynamoDB)
+*   **PA/EL** ([Cassandra](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/), Riak, DynamoDB)
     *   Memprioritaskan ketersediaan saat partisi (PA). Memprioritaskan latensi rendah saat normal, dan menerima konsistensi pada akhirnya/eventual consistency (EL).
 *   **PA/EC** (MySQL Cluster, dll.)
     *   Memprioritaskan ketersediaan saat partisi, tetapi mencoba mempertahankan konsistensi saat normal.
@@ -271,17 +271,17 @@ Keamanan [Raft](https://kenji.blog/id/p/byzantine-generals-problem-consensus/) b
 
 Hal ini secara matematis dan algoritmik sepenuhnya menghilangkan inkonsistensi data di lingkungan terdistribusi. `etcd`, datastore backend dari [Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/), juga menggunakan [Raft](https://kenji.blog/id/p/byzantine-generals-problem-consensus/) untuk mencapai manajemen status (state management) klaster yang ketat.
 
-## 8. Layanan Mikro (Microservices) dan Transaksi
+## 8. Layanan Mikro ([[Microservice](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)) dan Transaksi
 
 Teorema CAP tidak hanya terbatas pada database tunggal, tetapi juga memiliki dampak yang mendalam pada **Arsitektur Microservices (Layanan Mikro)** modern.
 
-Dalam aplikasi monolitik, konsistensi data dapat dengan mudah dipertahankan melalui transaksi ACID menggunakan database relasional tunggal. Namun, dengan layanan mikro di mana layanan dan database dibagi berdasarkan domain bisnis, transaksi terdistribusi yang mencakup berbagai layanan menjadi sebuah keharusan.
+Dalam aplikasi monolitik, konsistensi data dapat dengan mudah dipertahankan melalui transaksi [ACID](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/) menggunakan database relasional tunggal. Namun, dengan layanan mikro di mana layanan dan database dibagi berdasarkan domain bisnis, transaksi terdistribusi yang mencakup berbagai layanan menjadi sebuah keharusan.
 
 Di sinilah teorema CAP menunjukkan taringnya. Jika Anda menuntut konsistensi kuat (C) menggunakan transaksi terdistribusi (contoh: Two-Phase Commit - 2PC), sistem keseluruhan akan terblokir jika salah satu layanan down atau jika ada latensi komunikasi, sehingga secara drastis menurunkan ketersediaan (A) dan latensi (L).
 
 Untuk mengatasi masalah ini, **Pola Saga (Saga Pattern)** diadopsi secara luas di dunia layanan mikro.
 
-Pola Saga adalah teknik yang membagi satu transaksi besar menjadi serangkaian transaksi lokal yang berkelanjutan, dan mengoordinasikannya menggunakan antrean pesan (messaging) asinkron (seperti Kafka atau RabbitMQ).
+Pola Saga adalah teknik yang membagi satu transaksi besar menjadi serangkaian transaksi lokal yang berkelanjutan, dan mengoordinasikannya menggunakan antrean pesan (messaging) asinkron (seperti [Kafka](https://kenji.blog/id/p/event-driven-architecture-message-queue-kafka-rabbitmq/) atau [RabbitMQ](https://kenji.blog/id/p/event-driven-architecture-message-queue-kafka-rabbitmq/)).
 
 ```mermaid
 flowchart TD
@@ -295,16 +295,16 @@ flowchart TD
     MessageBroker -->|"Batal"| Order
 ```
 
-Dalam Pola Saga, konsistensi kuat ditinggalkan demi **Konsistensi pada Akhirnya (Eventual Consistency)** (Pendekatan AP). Jika proses gagal di tengah jalan, alih-alih melakukan rollback biasa, kita mengeluarkan **Transaksi Kompensasi (Compensating Transaction)** untuk mengimplementasikan proses logis yang mengembalikan status sebelumnya. Hal ini memungkinkan pencapaian tingkat konsistensi yang dapat ditolerir secara bisnis, sambil mempertahankan skalabilitas dan ketersediaan yang tinggi.
+Dalam Pola Saga, konsistensi kuat ditinggalkan demi **Konsistensi pada Akhirnya (Eventual [Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/))** (Pendekatan AP). Jika proses gagal di tengah jalan, alih-alih melakukan rollback biasa, kita mengeluarkan **Transaksi Kompensasi (Compensating [Transaction](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/))** untuk mengimplementasikan proses logis yang mengembalikan status sebelumnya. Hal ini memungkinkan pencapaian tingkat konsistensi yang dapat ditolerir secara bisnis, sambil mempertahankan skalabilitas dan ketersediaan yang tinggi.
 
 ## Ringkasan
 
 Dalam artikel ini, kita telah menggali jauh ke dalam Teorema CAP, prinsip paling penting dalam sistem terdistribusi.
 
-*   **Teorema CAP** menunjukkan bahwa tidak mungkin untuk secara bersamaan memenuhi ketiga syarat: Konsistensi (Consistency), Ketersediaan (Availability), dan Toleransi Partisi (Partition Tolerance) dalam sebuah sistem terdistribusi. Di dunia nyata di mana partisi (P) tak terhindarkan, ini secara de facto menjadi pilihan antara **CP** atau **AP**.
+*   **Teorema CAP** menunjukkan bahwa tidak mungkin untuk secara bersamaan memenuhi ketiga syarat: Konsistensi (Consistency), Ketersediaan ([Availability](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/)), dan Toleransi Partisi ([Partition Tolerance](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/)) dalam sebuah sistem terdistribusi. Di dunia nyata di mana partisi (P) tak terhindarkan, ini secara de facto menjadi pilihan antara **CP** atau **AP**.
 *   **Teorema PACELC** memperluas hal ini, menunjukkan bahwa bahkan selama operasi normal tanpa partisi, terdapat pertukaran (trade-off) antara latensi (L) dan konsistensi (C).
 *   Dengan menggunakan **Quorum**, Anda dapat secara fleksibel menyesuaikan keseimbangan ( $ W+R>N $ ) antara konsistensi dan ketersediaan sesuai dengan kebutuhan Anda.
 *   Dalam sistem AP, **Jam Vektor (Vector Clocks)** digunakan untuk resolusi konflik, sedangkan dalam sistem CP, algoritma konsensus seperti **[Raft](https://kenji.blog/id/p/byzantine-generals-problem-consensus/)** dimanfaatkan untuk pengurutan log yang ketat.
-*   Konsep-konsep ini merupakan pengetahuan dasar yang sangat penting tidak hanya untuk database, tetapi juga untuk desain transaksi terdistribusi (seperti Pola Saga) dalam **Arsitektur Microservices** modern.
+*   Konsep-konsep ini merupakan pengetahuan dasar yang sangat penting tidak hanya untuk database, tetapi juga untuk desain transaksi terdistribusi (seperti Pola Saga) dalam **Arsitektur [[Microservice](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)** modern.
 
 Tidak ada "peluru perak" dalam desain sistem. Memahami Teorema CAP dan Teorema PACELC secara benar, menilai dengan tepat apakah kebutuhan bisnis mengharuskan Anda "melindungi konsistensi bagaimanapun caranya (seperti pada sistem pembayaran)" atau "sistem pantang mati meskipun menoleransi inkonsistensi sementara (seperti timeline media sosial)", dan membuat keputusan trade-off yang optimal—inilah keterampilan terbesar yang dituntut dari seorang arsitek yang hebat.

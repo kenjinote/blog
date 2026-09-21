@@ -352,7 +352,7 @@ Actualmente, el soporte de PKCE está avanzando en algunos de los nuevos flujos 
 Por último, aquí están las mejores prácticas sobre cómo guardar los tokens de acceso obtenidos.
 
 ## 1. La encriptación es obligatoria al guardar en bases de datos
-Los tokens de acceso (`xoxb-...`) son literalmente "llaves maestras" para tu espacio de trabajo de Slack. No deben ser guardados en texto plano en la base de datos (MySQL, PostgreSQL, MongoDB, etc.). En el improbable caso de que la base de datos se filtre por algo como una inyección SQL, se convertiría en un desastre masivo donde los Slacks de todos los clientes serían secuestrados.
+Los tokens de acceso (`xoxb-...`) son literalmente "llaves maestras" para tu espacio de trabajo de Slack. No deben ser guardados en texto plano en la base de datos (MySQL, PostgreSQL, [MongoDB](https://kenji.blog/es/p/nosql-database-selection-kvs-document-graph-wide-column/), etc.). En el improbable caso de que la base de datos se filtre por algo como una inyección SQL, se convertiría en un desastre masivo donde los Slacks de todos los clientes serían secuestrados.
 
 Asegúrate siempre de encriptarlos a nivel de aplicación usando encriptación de clave simétrica fuerte como **AES-256-GCM** antes de guardarlos en la base de datos. La clave maestra para encriptación/desencriptación debe ser gestionada rigurosamente utilizando servicios seguros de gestión de claves como AWS KMS (Key Management [Service](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/)) o GCP Cloud KMS.
 

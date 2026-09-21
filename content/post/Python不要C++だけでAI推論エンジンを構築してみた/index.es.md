@@ -16,7 +16,7 @@ En el desarrollo de IA moderno, Python es el estándar de facto. Gracias a la ve
 
 Entonces, ¿por qué molestarse en eliminar Python y crear un motor de inferencia de IA usando únicamente C++? Hay varias razones de peso para ello.
 
-1. **Rendimiento extremo y baja latencia**: Puedes eliminar por completo la sobrecarga causada por el GIL (Global Interpreter Lock) de Python y su tipado dinámico. Especialmente en sistemas que requieren tiempo real, un retraso de milisegundos puede ser fatal.
+1. **Rendimiento extremo y baja latencia**: Puedes eliminar por completo la sobrecarga causada por el GIL (Global Interpreter [Lock](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/)) de Python y su tipado dinámico. Especialmente en sistemas que requieren tiempo real, un retraso de milisegundos puede ser fatal.
 2. **Facilidad de implementación (Deployment)**: Construir un entorno de Python (una enorme colección de bibliotecas, un infierno de dependencias) en el entorno del usuario final es extremadamente difícil. Con C++, solo necesitas distribuir un único binario ejecutable enlazado estáticamente (un `.exe` o binario ELF).
 3. **Compatibilidad con dispositivos Edge**: En entornos con recursos estrictamente limitados, como teléfonos inteligentes, dispositivos integrados o Raspberry Pi, no hay margen para ejecutar un entorno de ejecución de Python que consume varios gigabytes de memoria.
 4. **Control directo del hardware**: C++ permite el control a bajo nivel, como la temporización de la asignación de memoria, el uso explícito de instrucciones SIMD y la optimización de las transferencias de memoria con la GPU.
@@ -352,7 +352,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-Además, en la generación de tokens autorregresiva (Autoregressive), es necesario mantener los resultados de cálculos de los tokens pasados (Key y Value). Esto se denomina "**Caché KV (Key-Value Cache)**".
+Además, en la generación de tokens autorregresiva (Autoregressive), es necesario mantener los resultados de cálculos de los tokens pasados (Key y Value). Esto se denomina "**Caché KV ([Key-Value](https://kenji.blog/es/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)**".
 
 ```mermaid
 graph TD

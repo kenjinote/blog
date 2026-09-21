@@ -352,7 +352,7 @@ Currently, newer flows of the Slack API and other modern SaaS APIs (Auth0, Okta,
 Finally, here are best practices for storing the acquired access tokens.
 
 ## 1. Encryption is Mandatory for Database Storage
-An access token (`xoxb-...`) is the very "master key" to the Slack workspace. It must not be stored in plaintext in a database (MySQL, PostgreSQL, MongoDB, etc.). In the unlikely event of a database breach via SQL injection or similar, it would result in a disaster where all customers' Slack workspaces are hijacked.
+An access token (`xoxb-...`) is the very "master key" to the Slack workspace. It must not be stored in plaintext in a database (MySQL, PostgreSQL, [MongoDB](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/), etc.). In the unlikely event of a database breach via SQL injection or similar, it would result in a disaster where all customers' Slack workspaces are hijacked.
 
 Always encrypt it at the application layer using a strong symmetric key encryption such as **AES-256-GCM** before saving it to the DB. The master key for encryption/decryption should be strictly managed using a secure key management service like AWS KMS (Key Management [Service](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/)) or GCP Cloud KMS.
 

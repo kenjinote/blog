@@ -131,7 +131,7 @@ Ainsi, en introduisant le build multi-étapes, la taille de l'image peut être r
 
 Dans le développement d'applications Web modernes, il est courant d'avoir une architecture de microservices où plusieurs composants tels qu'un serveur Web, une base de données, et un serveur de cache interagissent. Pour gérer cela de manière centralisée dans un environnement local, nous utilisons `docker-compose.yml`.
 
-Cette fois, nous allons construire localement un système à 3 couches : « Web (FastAPI) », « Database (PostgreSQL) », et « Cache (Redis) ».
+Cette fois, nous allons construire localement un système à 3 couches : « Web (FastAPI) », « Database (PostgreSQL) », et « Cache ([Redis](https://kenji.blog/fr/p/nosql-database-selection-kvs-document-graph-wide-column/)) ».
 
 ### Diagramme d'architecture (Mermaid)
 
@@ -348,7 +348,7 @@ Nous modélisons mathématiquement le temps de traitement moyen des requêtes $T
 La latence de chaque processus est définie comme suit :
 - $T_{\text{net}}$ : Latence réseau entre le client et le conteneur Web
 - $T_{\text{app}}$ : Temps de traitement pur côté application (sérialisation, etc.)
-- $T_{\text{cache}}$ : Temps requis pour la lecture/écriture depuis Redis
+- $T_{\text{cache}}$ : Temps requis pour la lecture/écriture depuis [Redis](https://kenji.blog/fr/p/nosql-database-selection-kvs-document-graph-wide-column/)
 - $T_{\text{db}}$ : Temps requis pour l'exécution des requêtes vers PostgreSQL
 - $p_{\text{miss}}$ : Taux d'échec du cache ($0 \le p_{\text{miss}} \le 1$)
 

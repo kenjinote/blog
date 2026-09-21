@@ -210,7 +210,7 @@ let result = divide(10.0, 2.0).and_then(|res| divide(res, 2.0));
 
 Не все паттерны GoF вымерли. Паттерны, которые работают на границах архитектуры, по-прежнему крайне важны.
 
-1. **Facade (Фасад)**: Концепция предоставления простого интерфейса к сложной подсистеме масштабировалась до API Gateway (BFF: Backend for Frontend) в микросервисной архитектуре.
+1. **Facade (Фасад)**: Концепция предоставления простого интерфейса к сложной подсистеме масштабировалась до [API Gateway](https://kenji.blog/ru/p/microservices-architecture-bff-api-gateway/) ([BFF](https://kenji.blog/ru/p/microservices-architecture-bff-api-gateway/): [Backend for Frontend](https://kenji.blog/ru/p/microservices-architecture-bff-api-gateway/)) в микросервисной архитектуре.
 2. **Adapter (Адаптер)**: Он является ключом к поддержанию слабой связанности системы, выступая в качестве «портов и адаптеров» в чистой архитектуре (Clean Architecture) и гексагональной архитектуре, а также при интеграции с внешними системами.
 3. **Decorator (Декоратор)**: В Python и TypeScript он был возвышен до языковой функции как метапрограммирование на основе аннотаций `@Decorator`.
 

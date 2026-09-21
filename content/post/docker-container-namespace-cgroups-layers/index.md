@@ -100,7 +100,7 @@ PID Namespaceを使用すると、新しいNamespace内で最初に起動した�
 
 ### 3.5 IPC Namespace（プロセス間通信の隔離）
 
-System V IPC（Inter-Process Communication）オブジェクトやPOSIXメッセージキューを隔離します。異なるコンテナのプロセスが誤って共有メモリにアクセスしてしまうのを防ぎます。
+System V IPC（Inter-Process Communication）オブジェクトやPOSIX[メッセージキュー](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/)を隔離します。異なるコンテナのプロセスが誤って共有メモリにアクセスしてしまうのを防ぎます。
 
 ### 3.6 User Namespace（ユーザーとグループの隔離）
 
@@ -140,7 +140,7 @@ Namespaceが「空間の隔離」を担当するのに対し、 **cgroups（Cont
 
 - **cpu** : CPUのスケジューリング（使用時間の割合や上限）を制御します。
 - **memory** : メモリの使用量の上限を設定し、上限に達した場合の挙動（OOM Killerによるプロセス終了など）を制御します。
-- **blkio** : ブロックデバイス（ディスク）へのI/O帯域幅を制限します。
+- **blkio** : ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)デバイス（ディスク）へのI/O帯域幅を制限します。
 - **pids** : cgroup内で作成できるプロセス（スレッド）の数を制限し、フォーク爆弾（Fork Bomb）などの攻撃を防ぎます。
 
 ### 💡 Hands-on: cgroupsを手動で設定してみる

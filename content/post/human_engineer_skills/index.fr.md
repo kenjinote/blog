@@ -122,19 +122,19 @@ Les logiciels modernes ont évolué de monolithes fonctionnant sur un seul serve
 
 Lors de la conception de systèmes distribués, les ingénieurs sont constamment confrontés au "théorème CAP". Le théorème CAP est un principe stipulant qu'un système distribué ne peut satisfaire simultanément que deux des trois propriétés suivantes :
 
-- **Consistency (Cohérence)** : Tous les nœuds voient-ils les mêmes données au même moment ?
-- **Availability (Disponibilité)** : Le système continue-t-il de répondre même si certains nœuds tombent en panne ?
+- **[Consistency](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/) (Cohérence)** : Tous les nœuds voient-ils les mêmes données au même moment ?
+- **[Availability](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/) (Disponibilité)** : Le système continue-t-il de répondre même si certains nœuds tombent en panne ?
 - **[Partition Tolerance](https://kenji.blog/fr/p/cap-theorem-distributed-systems/) (Tolérance au partitionnement)** : Le système continue-t-il de fonctionner même s'il y a une rupture du réseau ?
 
-$$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
+$$ P(\text{[Availability](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/)} \cup \text{[Consistency](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/)}) | \text{PartitionTolerance} $$
 
 Dans les réseaux réels, le partitionnement (Partition) est inévitable, de sorte que les ingénieurs doivent prendre des décisions de compromis strictes directement liées aux exigences métier, telles que "Ce système de paiement donne la priorité à la cohérence et arrêtera le service en cas de panne (CP)" ou "La timeline de ce réseau social donne la priorité à la disponibilité et tolère des incohérences de données temporaires (AP)".
 
 L'IA peut écrire "du code qui privilégie C" ou "du code qui privilégie A", mais elle ne peut pas prendre de manière autonome la décision de "lequel privilégier", décision qui implique des risques métier.
 
-### 4.2 Communication asynchrone et cohérence à terme (Eventual Consistency)
+### 4.2 Communication asynchrone et cohérence à terme ([Eventual Consistency](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/))
 
-À mesure que les systèmes se développent, la communication entre les services passe d'une communication synchrone via des API REST à une communication asynchrone à l'aide de files d'attente de messages (Kafka, RabbitMQ, etc.). Ici, la cohérence des données passe d'une cohérence immédiate à une "cohérence à terme (Eventual Consistency)".
+À mesure que les systèmes se développent, la communication entre les services passe d'une communication synchrone via des API REST à une communication asynchrone à l'aide de files d'attente de messages ([Kafka](https://kenji.blog/fr/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/fr/p/event-driven-architecture-message-queue-kafka-rabbitmq/), etc.). Ici, la cohérence des données passe d'une cohérence immédiate à une "cohérence à terme (Eventual Consistency)".
 À quel moment faut-il introduire des modèles d'architecture avancés tels que le modèle Saga ou [CQRS](https://kenji.blog/fr/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) ? Prendre ces décisions complexes et dessiner le plan directeur de l'ensemble du système est précisément la véritable valeur d'un ingénieur senior.
 
 ```mermaid

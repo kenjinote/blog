@@ -43,7 +43,7 @@ Windows 11を想定していますが、多くのものがWindows 10でも使え
 - `Win + +`でWindowsの拡大鏡が起動します。さらに`Win + + or -`で画面の拡大/縮小ができます。
 - メモ帳やブラウザなど`Ctrl + + or -`で拡大/縮小できる（対応しているアプリのみ）
 
-## Windowsのロック
+## Windowsの[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)
 - `Win + L`
 - `Ctrl + Alt + Del`→`Space` or `Enter`
 

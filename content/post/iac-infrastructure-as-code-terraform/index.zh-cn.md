@@ -328,7 +328,7 @@ sequenceDiagram
 # 9. 可靠性与成本建模的数学方法
 
 在使用IaC设计基础设施时，评估可靠性（Reliability）与成本的平衡非常重要。
-例如，多可用区（Availability Zone，AZ）架构中系统的可用率，可以用数学模型来表示。
+例如，多可用区（[Availability](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/) Zone，AZ）架构中系统的可用率，可以用数学模型来表示。
 
 假设单个组件（AZ）的可靠性为 $R_1$。
 如果在两个AZ（冗余化）中部署了资源，并且只要其中一个在运行就可以认为整个系统在运行，那么整个系统的可靠性 $R_{total}$ 可以用以下公式表示：

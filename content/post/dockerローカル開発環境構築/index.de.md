@@ -129,9 +129,9 @@ Wie gezeigt, kann durch die Einführung von Multi-Stage-Builds die Image-Größe
 
 ## 4. Orchestrierung mehrerer [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) mit [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) Compose
 
-In der modernen Entwicklung von Webanwendungen ist eine Microservices-Architektur üblich, in der mehrere Komponenten wie Webserver, Datenbanken und Cache-Server zusammenarbeiten. Um diese in einer lokalen Umgebung zentral zu verwalten, wird `docker-compose.yml` verwendet.
+In der modernen Entwicklung von Webanwendungen ist eine [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur üblich, in der mehrere Komponenten wie Webserver, Datenbanken und Cache-Server zusammenarbeiten. Um diese in einer lokalen Umgebung zentral zu verwalten, wird `docker-compose.yml` verwendet.
 
-In diesem Fall werden wir ein 3-Schicht-System bestehend aus "Web (FastAPI)", "Database (PostgreSQL)" und "Cache (Redis)" lokal aufbauen.
+In diesem Fall werden wir ein 3-Schicht-System bestehend aus "Web (FastAPI)", "Database (PostgreSQL)" und "Cache ([Redis](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/))" lokal aufbauen.
 
 ### Architekturdiagramm (Mermaid)
 
@@ -348,7 +348,7 @@ Wir modellieren mathematisch die durchschnittliche Anforderungsverarbeitungszeit
 Wir definieren die Latenz jeder Verarbeitung wie folgt:
 - $T_{\text{net}}$: Netzwerklatenz zwischen Client und Web-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)
 - $T_{\text{app}}$: Reine Verarbeitungszeit auf Anwendungsseite (Serialisierung usw.)
-- $T_{\text{cache}}$: Lese-/Schreibzeit von/nach Redis
+- $T_{\text{cache}}$: Lese-/Schreibzeit von/nach [Redis](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/)
 - $T_{\text{db}}$: Ausführungszeit für Abfragen an PostgreSQL
 - $p_{\text{miss}}$: Cache-Miss-Rate ($0 \le p_{\text{miss}} \le 1$)
 

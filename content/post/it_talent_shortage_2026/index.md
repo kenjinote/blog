@@ -26,7 +26,7 @@ description: 'IT業界における「2026年問題」の真実。生成AIの台�
 
 しかし、2026年現在、このモデルは限界を迎えています。DX（デジタルトランスフォーメーション）の本質が「単なるIT化」から「ビジネスモデルの変革」へとシフトしたことで、アジリティ（俊敏性）の低いウォーターフォール開発では市場の変化に追いつけなくなりました。
 
-現代の開発プロセスは、 **クラウドネイティブ** であり、 **AI駆動** であることが前提となっています。[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)化（[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)）、マイクロサービスアーキテクチャ、[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の自動化はもはや「特別な技術」ではなく「標準的なインフラ」です。
+現代の開発プロセスは、 **クラウドネイティブ** であり、 **AI駆動** であることが前提となっています。[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)化（[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)）、[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)アーキテクチャ、[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の自動化はもはや「特別な技術」ではなく「標準的なインフラ」です。
 
 ```mermaid
 graph TD
@@ -135,7 +135,7 @@ xychart-beta
 AIはコードを書くことはできますが、「ビジネスの複雑な仕様を紐解き、ソフトウェアの境界づけられたコンテキスト（Bounded Context）を見出し、適切なデータモデルを設計する」ことはできません。顧客のドメイン（業務領域）を深く理解し、それを技術的な言葉に翻訳する「ドメイン駆動設計（DDD）」のスキルは、AI時代において最も価値が高いスキルの1つです。
 
 ### B. アーキテクチャと非機能要件の設計
-システムの可用性、スケーラビリティ、セキュリティ、パフォーマンスといった「非機能要件」は、AIが自動的に最適化してくれるものではありません。「どのクラウドサービスを組み合わせるべきか」「マイクロサービス間の通信プロトコルはどうするか」「DBのトランザクション境界をどこに引くか」といったアーキテクチャの意思決定は、依然として高度な人間の経験と直感に依存しています。
+システムの可用性、スケーラビリティ、セキュリティ、パフォーマンスといった「非機能要件」は、AIが自動的に最適化してくれるものではありません。「どのクラウドサービスを組み合わせるべきか」「[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)間の通信プロトコルはどうするか」「DBの[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)境界をどこに引くか」といったアーキテクチャの意思決定は、依然として高度な人間の経験と直感に依存しています。
 
 ### C. MLOpsとデータ[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)構築
 生成AIや機械学習モデルを本番環境で運用し続けるための「MLOps」の概念はますます重要になっています。モデルのドリフト（精度低下）の監視、継続的トレーニングのパイプライン化、GPUリソースの最適化など、ソフトウェアエンジニアリングとデータサイエンスの交差点に位置するこれらのスキルを持つ人材は、引く手あまたの状態です。

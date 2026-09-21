@@ -46,7 +46,7 @@ Das bedeutet, dass allein das Laden der Gewichte des Modells in die GPU 16 GB VR
 
 ## 1.2 Speicherverbrauch bei der Inferenz: Wachstum des KV-Caches
 
-Bei der LLM-Inferenz (insbesondere bei der autoregressiven Textgenerierung) ist es der **KV-Cache (Key-Value Cache)**, der den VRAM genauso stark oder stärker als die Gewichte beansprucht.
+Bei der LLM-Inferenz (insbesondere bei der autoregressiven Textgenerierung) ist es der **KV-Cache ([Key-Value](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)**, der den VRAM genauso stark oder stärker als die Gewichte beansprucht.
 In der Transformer-Architektur werden die Key- und Value-Tensoren in jeder Attention-Schicht kontinuierlich im VRAM gecacht, um eine Neuberechnung der Informationen von Tokens, die in der Vergangenheit generiert und verarbeitet wurden, zu verhindern. Dies verbessert zwar die Berechnungsgeschwindigkeit (Compute), aber die Speichernutzung steigt linear und explosiv an, je länger die Kontextlänge (Eingabeprompt-Länge + generierte Länge) wird.
 
 Die Menge an KV-Cache-Speicher $M_{kv\_token}$, die bei der Verarbeitung von 1 Token verbraucht wird, wird basierend auf der Modellarchitektur mit der folgenden Formel genau berechnet:

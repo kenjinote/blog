@@ -85,7 +85,7 @@ sequenceDiagram
 
 1. **Magic Bytes**: `0x46554747` (GGUF)。
 2. **Version**: 格式的版本號碼。
-3. **Tensor Count & Metadata Count**: 張量數量與 Metadata 的鍵值對（Key-Value Pairs）數量。
+3. **Tensor Count & Metadata Count**: 張量數量與 Metadata 的鍵值對（[Key-Value](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs）數量。
 4. **Metadata (Key-Value Pairs)**: 帶有字串長度前綴的鍵（Key）以及具有型別的值（Value）。
 5. **Tensor Info**: 每個張量的名稱、維度數、資料型別（如 FP16, Q4_K 等），以及在檔案內的偏移位置（Offset）。
 6. **Padding**: 為了讓張量資料對齊特定邊界（通常是 32 或 64 位元組）而插入的填充資料。這對於使用 SIMD 指令（特別是 AVX）進行高速記憶體存取來說不可或缺。

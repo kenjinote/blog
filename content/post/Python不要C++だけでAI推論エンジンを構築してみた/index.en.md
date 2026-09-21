@@ -16,7 +16,7 @@ In modern AI development, Python is the de facto standard. Thanks to powerful fr
 
 So why bother eliminating Python and creating an AI inference engine exclusively in C++? There are several compelling reasons.
 
-1. **Extreme Performance and Low Latency**: You can completely eliminate the overhead of Python's GIL (Global Interpreter Lock) and dynamic typing. Especially in systems requiring real-time performance, delays on the millisecond scale can be fatal.
+1. **Extreme Performance and Low Latency**: You can completely eliminate the overhead of Python's GIL (Global Interpreter [Lock](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)) and dynamic typing. Especially in systems requiring real-time performance, delays on the millisecond scale can be fatal.
 2. **Ease of Deployment**: Building a Python environment (massive library ecosystems, dependency hell) on the end user's system is extremely difficult. With C++, you only need to distribute a single statically linked executable binary (`.exe` or ELF binary).
 3. **Edge Device Support**: In highly resource-constrained environments like smartphones, embedded devices, and Raspberry Pi, there is no luxury to run a Python runtime that consumes gigabytes of memory.
 4. **Direct Hardware Control**: Low-level control such as memory allocation timing, explicit use of SIMD instructions, and optimization of memory transfers with the GPU is possible with C++.
@@ -352,7 +352,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-Also, in autoregressive token generation, the calculation results of past tokens (Key and Value) must be retained. This is called the "**KV Cache (Key-Value Cache)**".
+Also, in autoregressive token generation, the calculation results of past tokens (Key and Value) must be retained. This is called the "**KV Cache ([Key-Value](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)**".
 
 ```mermaid
 graph TD

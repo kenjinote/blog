@@ -113,7 +113,7 @@ $$ V = \frac{\sum_{i=1}^{n} SP_i}{T} $$
 
 $$ E = \frac{W}{V} $$
 
-この計算をNotion内で完全に行うのは少し複雑ですが、週次レビューのタスクなどで計算用のブロック（Math block）を置き、自己評価の指標として記録していくのが非常に効果的です。
+この計算をNotion内で完全に行うのは少し複雑ですが、週次レビューのタスクなどで計算用のブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)（Math block）を置き、自己評価の指標として記録していくのが非常に効果的です。
 
 ---
 

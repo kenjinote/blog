@@ -22,7 +22,7 @@ This article provides an extremely detailed development guide for building an in
 
 In the AI training phase, Python has an overwhelming advantage due to its flexibility and rich ecosystem. However, in the deployment or "Inference" phase, C++ becomes a powerful choice for the following reasons:
 
-1. **Overhead Reduction**: The Python Global Interpreter Lock (GIL) and runtime overhead can be completely eliminated.
+1. **Overhead Reduction**: The Python Global Interpreter [Lock](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) (GIL) and runtime overhead can be completely eliminated.
 2. **Memory Efficiency and Arena Allocation**: By manually controlling memory allocation and deallocation, you can prevent unpredictable spikes caused by garbage collection.
 3. **Direct Hardware Access**: By directly calling SIMD intrinsics such as AVX-512, AVX2, and ARM NEON, the CPU's computational power can be maximized.
 4. **Zero Dependencies**: ggml is a zero-dependency C/C++ library. As long as you have a compiler, it can be easily built even in an MSVC environment on Windows.
@@ -86,7 +86,7 @@ Converted from formats like Hugging Face's `.safetensors`, the **GGUF (GPT-Gener
 1. **Magic Bytes**: `0x46554747` (GGUF).
 2. **Version**: Format version number.
 3. **Tensor Count & Metadata Count**: The number of tensors and key-value metadata pairs.
-4. **Metadata (Key-Value Pairs)**: Typed values and keys with string length prefixes.
+4. **Metadata ([Key-Value](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs)**: Typed values and keys with string length prefixes.
 5. **Tensor Info**: The name, number of dimensions, data type (FP16, Q4_K, etc.), and offset position in the file for each tensor.
 6. **Padding**: Padding inserted so that tensor data is aligned to specific boundaries (usually 32 bytes or 64 bytes). This is essential for fast memory access with SIMD instructions (especially AVX).
 7. **Tensor Data**: The actual aligned weight data array.

@@ -169,7 +169,7 @@ Da die Netzwerkverzögerung $L_{network\_rtt}$ und die Cloud-Warteschlangenverz�
 *   **Ansatz**: Man blockiert vorübergehend den Netzwerkzugriff der IDE oder nutzt eine spezielle Erweiterung für lokale KI (z. B. Continue.dev), um Prompts an das lokal laufende Modell (z. B. via Ollama) zu senden. So kann man KI-Unterstützung in Anspruch nehmen, während das Risiko eines Datenlecks bei Null bleibt.
 
 ### Anwendungsfall 3: Architekturdesign und komplexe Fehlerbehebung durch Cloud-LLMs (GPT-4 / Claude 3.5 Sonnet)
-*   **Szenario**: Die Analyse eines Speicherlecks unbekannter Ursache oder hochrangige Designberatung wie "Was ist der beste Ansatz, um diese monolithische App in Microservices aufzuteilen?".
+*   **Szenario**: Die Analyse eines Speicherlecks unbekannter Ursache oder hochrangige Designberatung wie "Was ist der beste Ansatz, um diese monolithische App in [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/) aufzuteilen?".
 *   **Ansatz**: Solche Aufgaben erfordern ein immenses Vorwissen und hochgradig logische Schlussfolgerungsfähigkeiten. Auch wenn es Kosten verursacht, sollte man die intelligentesten Cloud-Modelle nutzen. Man übergibt Dutzende von Dateien als Kontext und lässt das Modell tiefgehend analysieren, "wo das Problem liegt".
 
 ---

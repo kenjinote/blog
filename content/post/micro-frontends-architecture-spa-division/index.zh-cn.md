@@ -299,8 +299,8 @@ export default App;
   * `/checkout/*` -> 委托给支付团队的应用。
   在每个微前端内部，还可以拥有内部路由。
 
-* **BFF (Backend For Frontend) 层的路由** :
-  这是一种在服务器基础设施（例如：Nginx 或 API Gateway）层级判断路径，从一开始就返回合适的微前端HTML的方法。虽然在页面跳转时会发生硬刷新，但架构的隔离度是最高的。
+* **[BFF](https://kenji.blog/zh-cn/p/microservices-architecture-bff-api-gateway/) (Backend For Frontend) 层的路由** :
+  这是一种在服务器基础设施（例如：Nginx 或 [API Gateway](https://kenji.blog/zh-cn/p/microservices-architecture-bff-api-gateway/)）层级判断路径，从一开始就返回合适的微前端HTML的方法。虽然在页面跳转时会发生硬刷新，但架构的隔离度是最高的。
 
 ## 7. 对组织的影响与团队的自治性
 

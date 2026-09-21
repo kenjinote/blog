@@ -131,7 +131,7 @@ GitHubからソースコードやモデルを取得するためにGitが必要�
 6.  完了すると `Running on local URL: http://127.0.0.1:7860` と表示されるので、ブラウザでアクセスします。
 
 ### 5.2 ComfyUI の構築とノードベースの利点
-ComfyUIは、生成プロセスを「ノード」と呼ばれるブロックで視覚的に繋ぎ合わせる（Node-based）UIです。VRAMの管理が極めて優秀で、AUTOMATIC1111ではメモリ不足になるような環境でも動作することが多いです。
+ComfyUIは、生成プロセスを「ノード」と呼ばれるブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)で視覚的に繋ぎ合わせる（Node-based）UIです。VRAMの管理が極めて優秀で、AUTOMATIC1111ではメモリ不足になるような環境でも動作することが多いです。
 
 ```mermaid
 graph TD

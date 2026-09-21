@@ -16,7 +16,7 @@ tags:
   - "rust"
 ---
 
-No desenvolvimento de software moderno, entender o **processamento assíncrono** e a **arquitetura orientada a eventos** (EDA: Event-Driven Architecture) é essencial para aumentar a escalabilidade e a disponibilidade do sistema. Neste artigo, vamos nos aprofundar nos conceitos centrais que sustentam essas abordagens: o Event Loop, o modelo de Atores e o CQRS (Command Query Responsibility Segregation), da teoria à implementação e ao design em nível de arquitetura.
+No desenvolvimento de software moderno, entender o **processamento assíncrono** e a **arquitetura orientada a eventos** (EDA: [Event-Driven](https://kenji.blog/pt/p/event-driven-architecture-message-queue-kafka-rabbitmq/) Architecture) é essencial para aumentar a escalabilidade e a disponibilidade do sistema. Neste artigo, vamos nos aprofundar nos conceitos centrais que sustentam essas abordagens: o Event Loop, o modelo de Atores e o CQRS (Command Query Responsibility Segregation), da teoria à implementação e ao design em nível de arquitetura.
 
 ## 1. Fundamentos e Desafios do Processamento Assíncrono
 
@@ -124,7 +124,7 @@ No modelo de Atores, a unidade básica de processamento é chamada de "Actor" (A
 
 - **Encapsulamento de estado**: O estado interno do Ator não pode ser acessado diretamente do exterior.
 - **Fila de mensagens (Mailbox)**: As mensagens recebidas são colocadas em fila no Mailbox e processadas sequencialmente.
-- **Livre de locks (Lock-free)**: Como o estado não é compartilhado, mecanismos de lock, como mutexes, não são necessários.
+- **Livre de locks ([Lock](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/)-free)**: Como o estado não é compartilhado, mecanismos de lock, como mutexes, não são necessários.
 
 ```mermaid
 flowchart LR
@@ -215,7 +215,7 @@ No [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), a posse (Ow
 
 Processamento assíncrono e modelo de Atores são técnicas para otimizar o processamento concorrente dentro de uma única aplicação. O conceito que expande isso para todo o sistema (como entre microsserviços) é a **Arquitetura Orientada a Eventos (EDA)**.
 
-Na EDA, as mudanças de estado no sistema são expressas como "eventos" e distribuídas de forma assíncrona por meio de um barramento de eventos ou broker de mensagens (Apache Kafka, RabbitMQ, AWS EventBridge, etc.).
+Na EDA, as mudanças de estado no sistema são expressas como "eventos" e distribuídas de forma assíncrona por meio de um barramento de eventos ou broker de mensagens (Apache [Kafka](https://kenji.blog/pt/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/pt/p/event-driven-architecture-message-queue-kafka-rabbitmq/), AWS EventBridge, etc.).
 
 ### 4.1 Principais Componentes da EDA
 
@@ -279,7 +279,7 @@ As vantagens do Event Sourcing são as seguintes:
 As tecnologias que vimos até agora têm casos de uso adequados para cada uma.
 
 1. **Event Loop (Node.js)**: 
-   - API Gateways e sistemas de chat em tempo real com muito processamento I/O-bound.
+   - [API Gateway](https://kenji.blog/pt/p/microservices-architecture-bff-api-gateway/)s e sistemas de chat em tempo real com muito processamento I/O-bound.
    - Servidores WebSocket que lidam com um grande número de conexões simultâneas.
 2. **Modelo de Atores ([Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) / Akka)**: 
    - Processamento concorrente com estados complexos (servidores de jogos, rastreamento em tempo real).
@@ -290,7 +290,7 @@ As tecnologias que vimos até agora têm casos de uso adequados para cada uma.
 
 ### 6.1 Desafios e Melhores Práticas
 
-Embora as arquiteturas assíncronas e orientadas a eventos sejam poderosas, a aceitação da **consistência eventual (Eventual Consistency)** é necessária. Como os dados não se refletem instantaneamente em todo o sistema (consistência forte), são necessários ajustes no lado da UI/UX (ex: atualizações otimistas da UI).
+Embora as arquiteturas assíncronas e orientadas a eventos sejam poderosas, a aceitação da **consistência eventual (Eventual [Consistency](https://kenji.blog/pt/p/cap-theorem-distributed-systems-tradeoff/))** é necessária. Como os dados não se refletem instantaneamente em todo o sistema (consistência forte), são necessários ajustes no lado da UI/UX (ex: atualizações otimistas da UI).
 
 Além disso, garantir a **Idempotência (Idempotency)** em sistemas distribuídos é importante. Mesmo que o mesmo evento seja processado várias vezes devido a retransmissões de rede, o design deve garantir que o resultado não mude.
 

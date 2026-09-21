@@ -316,7 +316,7 @@ Para obter o melhor desempenho da programação multithreading, é necessário p
 
 * **Falso Compartilhamento (False Sharing):** 
   Mesmo que várias threads estejam atualizando variáveis diferentes, se essas variáveis estiverem localizadas na mesma linha de cache da CPU (geralmente 64 bytes), ocorrerá uma sincronização desnecessária de memória para manter a coerência de cache, resultando numa redução drástica no desempenho. Para prevenir isso, é necessário usar o especificador `alignas` para organizar as variáveis nos limites das linhas de cache.
-* **Programação sem Bloqueios (Lock-Free) e `std::atomic`:**
+* **Programação sem Bloqueios ([Lock](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/)-Free) e `std::atomic`:**
   Para evitar o overhead do lock/unlock de mutexes, pode-se considerar a introdução de estruturas de dados lock-free ou operações indivisíveis (como Compare-And-Swap) utilizando `<atomic>`. No entanto, como isto requer um entendimento correto da ordem de memória (`std::memory_order`) e a dificuldade de implementação é muito alta, isto geralmente é adotado apenas quando considerado indispensável após avaliações de desempenho rigorosas.
 
 ---

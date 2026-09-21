@@ -64,7 +64,7 @@ flowchart TD
 
 ### Estructura de un Bloque
 
-Un bloque se compone principalmente de una "Cabecera de bloque" (Block Header) y "Datos de transacción" (Transaction Data).
+Un bloque se compone principalmente de una "Cabecera de bloque" (Block Header) y "Datos de transacción" ([Transaction](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/) Data).
 
 La cabecera de bloque contiene la siguiente información:
 1. **Versión (Version)**: Versión del software.
@@ -187,7 +187,7 @@ Si la tasa de hash aumenta, el objetivo se vuelve más pequeño (aumento de difi
 
 ## 6. Transacciones y el Modelo UTXO
 
-Las transacciones de Bitcoin no utilizan un mecanismo similar a los saldos de cuentas bancarias (modelo basado en cuentas), sino que adoptan el modelo **UTXO (Unspent Transaction Output: Salida de Transacción No Gastada)**.
+Las transacciones de Bitcoin no utilizan un mecanismo similar a los saldos de cuentas bancarias (modelo basado en cuentas), sino que adoptan el modelo **UTXO (Unspent [Transaction](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/) Output: Salida de Transacción No Gastada)**.
 
 ### Entradas y Salidas
 
@@ -285,7 +285,7 @@ El mayor logro de Satoshi Nakamoto no fue solo resolver el rompecabezas criptogr
 
 ### Recompensa de Bloque y Halving (Reducción a la Mitad)
 
-La razón por la cual los mineros extraen bloques incluso invirtiendo enormes cantidades de electricidad y hardware es que existe una recompensa económica. Cuando un minero genera con éxito un nuevo bloque, recibe Bitcoins recién emitidos a través de una transacción especial llamada **transacción coinbase (Coinbase Transaction)**.
+La razón por la cual los mineros extraen bloques incluso invirtiendo enormes cantidades de electricidad y hardware es que existe una recompensa económica. Cuando un minero genera con éxito un nuevo bloque, recibe Bitcoins recién emitidos a través de una transacción especial llamada **transacción coinbase (Coinbase [Transaction](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/))**.
 
 La emisión total de Bitcoin está limitada programáticamente a **21 millones de monedas**. Además, se incorpora un mecanismo de **reducción a la mitad (Halving)** en el que la recompensa minera por bloque se reduce a la mitad cada 210,000 bloques (aproximadamente cada 4 años).
 

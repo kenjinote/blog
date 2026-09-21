@@ -67,7 +67,7 @@ llama.cpp versi awal menggunakan format `ggml` (dan variannya seperti `ggjt`). N
 
 ### 3.2. Lahirnya Format GGUF
 
-**GGUF**, yang diperkenalkan pada Agustus 2023, adalah format sangat serbaguna yang dirancang untuk memecahkan masalah ini. Fitur terbesarnya adalah adopsi **struktur metadata berbasis Key-Value**.
+**GGUF**, yang diperkenalkan pada Agustus 2023, adalah format sangat serbaguna yang dirancang untuk memecahkan masalah ini. Fitur terbesarnya adalah adopsi **struktur metadata berbasis [Key-Value](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/)**.
 
 Diagram Mermaid di bawah ini mengabstraksikan struktur file GGUF.
 
@@ -88,7 +88,7 @@ graph TD
 ```
 
 **Keuntungan Utama GGUF:**
-1. **Fleksibilitas:** Hyperparameter model, pengaturan RoPE (Rotary Positional Embedding), data kosakata tokenizer, dll. semuanya disimpan sebagai pasangan Key-Value bernama. Karena kunci yang tidak dikenal diabaikan, fitur baru mudah ditambahkan.
+1. **Fleksibilitas:** Hyperparameter model, pengaturan RoPE (Rotary Positional Embedding), data kosakata tokenizer, dll. semuanya disimpan sebagai pasangan [Key-Value](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/) bernama. Karena kunci yang tidak dikenal diabaikan, fitur baru mudah ditambahkan.
 2. **Independen Endianness:** GGUF menggunakan little-endian secara default, namun portabel secara aman antar arsitektur yang berbeda karena memiliki flag secara eksplisit.
 3. **Optimalisasi untuk mmap (Memory Mapping):** Data tensor diselaraskan (padding) pada batas tertentu, dan dapat dipetakan langsung dari disk ke ruang memori menggunakan sistem panggilan `mmap()` dari OS. Hal ini membuat waktu inisialisasi pemuatan model pada dasarnya menjadi nol.
 
@@ -237,7 +237,7 @@ Dalam llama.cpp versi terbaru, fitur untuk **mengkuantisasi KV cache itu sendiri
 
 Pada artikel ini, kita telah menggali lebih dalam dan menjelaskan tentang struktur internal dari format GGUF dan teknologi kuantisasi k-quants, yang merupakan jantung dari llama.cpp.
 
-1. **Fleksibilitas GGUF:** Melalui struktur metadata berbasis Key-Value, ekosistem yang tangguh telah dibangun sehingga dapat mengikuti perkembangan pesat LLM (seperti kemunculan arsitektur model baru) tanpa menyebabkan perubahan yang merusak kompatibilitas.
+1. **Fleksibilitas GGUF:** Melalui struktur metadata berbasis [Key-Value](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/), ekosistem yang tangguh telah dibangun sehingga dapat mengikuti perkembangan pesat LLM (seperti kemunculan arsitektur model baru) tanpa menyebabkan perubahan yang merusak kompatibilitas.
 2. **Kompresi Ekstrem oleh k-quants:** Dengan manajemen faktor skala hierarkis dari super-blok dan sub-blok, llama.cpp berhasil mempertahankan informasi nilai pencilan, sambil mencapai rasio kompresi menakjubkan dengan rata-rata 4,8 bit per bobot (Q4_K_M).
 3. **Mengatasi Bottleneck Bandwidth Memori:** Penerapan kernel canggih untuk SIMD dan CUDA yang melakukan komputasi serentak dengan dekuantisasi on-the-fly, dapat mengurangi jumlah transfer dari VRAM dan secara dramatis meningkatkan kecepatan inferensi.
 

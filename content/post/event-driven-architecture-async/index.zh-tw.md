@@ -16,7 +16,7 @@ tags:
   - "Rust"
 ---
 
-在現代的軟體開發中，為了提升系統的擴展性與可用性，理解 **非同步處理** 與 **事件驅動架構** （EDA: Event-Driven Architecture）是不可或缺的。本文將從支撐這些核心概念的 Event Loop、Actor模型，以及 CQRS（Command Query Responsibility Segregation）開始，從理論、實作到架構層級的設計進行深入探討。
+在現代的軟體開發中，為了提升系統的擴展性與可用性，理解 **非同步處理** 與 **事件驅動架構** （EDA: [Event-Driven](https://kenji.blog/zh-tw/p/event-driven-architecture-message-queue-kafka-rabbitmq/) Architecture）是不可或缺的。本文將從支撐這些核心概念的 Event Loop、Actor模型，以及 CQRS（Command Query Responsibility Segregation）開始，從理論、實作到架構層級的設計進行深入探討。
 
 ## 1. 非同步處理的基礎與挑戰
 
@@ -124,7 +124,7 @@ Event Loop 的優點在於不需要對共用狀態進行鎖定管理。但是，
 
 - **狀態的封裝**: Actor 內部的狀態無法從外部直接存取。
 - **訊息佇列（Mailbox）**: 接收到的訊息會被放入 Mailbox 佇列中，並依序進行處理。
-- **無鎖（Lock-free）**: 因為不共用狀態，所以不需要 Mutex 等鎖定機制。
+- **無鎖（[Lock](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)-free）**: 因為不共用狀態，所以不需要 Mutex 等鎖定機制。
 
 ```mermaid
 flowchart LR
@@ -215,7 +215,7 @@ async fn main() {
 
 非同步處理與 Actor 模型，是最佳化單一應用程式內部並行處理的方法。將這個概念擴展到整個系統（例如微服務之間）的就是 **事件驅動架構（EDA）** 。
 
-在 EDA 中，系統內的狀態變化會被表示為「事件」，並透過事件匯流排或訊息代理程式（如 Apache Kafka、RabbitMQ、AWS EventBridge 等）進行非同步派發。
+在 EDA 中，系統內的狀態變化會被表示為「事件」，並透過事件匯流排或訊息代理程式（如 Apache [Kafka](https://kenji.blog/zh-tw/p/event-driven-architecture-message-queue-kafka-rabbitmq/)、[RabbitMQ](https://kenji.blog/zh-tw/p/event-driven-architecture-message-queue-kafka-rabbitmq/)、AWS EventBridge 等）進行非同步派發。
 
 ### 4.1 EDA 的主要構成要素
 
@@ -290,7 +290,7 @@ $ Balance = \sum_{i=1}^{n} (Deposit_i) - \sum_{j=1}^{m} (Withdrawal_j) $
 
 ### 6.1 挑戰與最佳實務
 
-事件驅動與非同步架構雖然強大，但也必須接受 **最終一致性（Eventual Consistency）** 。因為資料並不會立即反映在整個系統中（強一致性），所以需要在 UI/UX 方面下功夫（例如：樂觀的 UI 更新）。
+事件驅動與非同步架構雖然強大，但也必須接受 **最終一致性（Eventual [Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)）** 。因為資料並不會立即反映在整個系統中（強一致性），所以需要在 UI/UX 方面下功夫（例如：樂觀的 UI 更新）。
 
 此外，在分散式系統中確保 **冪等性（Idempotency）** 也是非常重要的。必須確保即使因為網路重傳而導致相同的事件被處理多次，結果也不會改變。
 

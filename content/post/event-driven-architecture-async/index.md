@@ -16,11 +16,11 @@ tags:
   - "rust"
 ---
 
-現代のソフトウェア開発において、システムのスケーラビリティと可用性を高めるためには、 **非同期処理** と **イベント駆動アーキテクチャ** （EDA: Event-Driven Architecture）の理解が不可欠です。本記事では、これらを支える中核的な概念である Event Loop、Actorモデル、そして CQRS（Command Query Responsibility Segregation）について、理論から実装、そしてアーキテクチャレベルの設計に至るまで深く掘り下げて解説します。
+現代のソフトウェア開発において、システムのスケーラビリティと可用性を高めるためには、 **非同期処理** と **[イベント駆動](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/)アーキテクチャ** （EDA: [Event-Driven](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/) Architecture）の理解が不可欠です。本記事では、これらを支える中核的な概念である Event Loop、Actorモデル、そして CQRS（Command Query Responsibility Segregation）について、理論から実装、そしてアーキテクチャレベルの設計に至るまで深く掘り下げて解説します。
 
 ## 1. 非同期処理の基礎と課題
 
-従来の同期処理モデルでは、あるタスクが完了するまで次のタスクはブロックされます。これはプログラミングモデルとしてはシンプルですが、I/O待ち（データベースアクセスやネットワークリクエストなど）の間にCPUリソースが無駄になるという欠点があります。
+従来の同期処理モデルでは、あるタスクが完了するまで次のタスクはブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)されます。これはプログラミングモデルとしてはシンプルですが、I/O待ち（データベースアクセスやネットワークリクエストなど）の間にCPUリソースが無駄になるという欠点があります。
 
 非同期処理は、このブロッキングを回避し、システムの **スループット** を劇的に向上させるための手法です。しかし、非同期処理を導入することで、状態の管理やエラーハンドリング、スレッド間の競合状態（Race Condition）といった新たな課題が生じます。
 
@@ -110,7 +110,7 @@ const main = async () => {
 main();
 ```
 
-Event Loopの利点は、共有状態に対するロック管理が不要であることです。しかし、CPUバウンドな重い処理をCall Stackで実行してしまうと、Event Loop全体がブロックされ、システムが停止状態に陥るリスクがあります（Event Loopのブロッキング）。計算量は $ O(1) $ から $ O(N) $ の軽量な処理に留めるべきです。
+Event Loopの利点は、共有状態に対する[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)管理が不要であることです。しかし、CPUバウンドな重い処理をCall Stackで実行してしまうと、Event Loop全体がブロックされ、システムが停止状態に陥るリスクがあります（Event Loopのブロッキング）。計算量は $ O(1) $ から $ O(N) $ の軽量な処理に留めるべきです。
 
 ---
 
@@ -123,8 +123,8 @@ Event Loopがシングルスレッドの限界に挑むアプローチだとす�
 Actorモデルでは、処理の基本単位を「Actor（アクター）」と呼びます。各Actorは独立した状態（[State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)）と振る舞い（Behavior）を持ち、他のActorとは直接状態を共有しません。Actor間のコミュニケーションは、すべて **非同期なメッセージパッシング** によって行われます。
 
 - **状態のカプセル化**: Actor内部の状態は外部から直接アクセス不可。
-- **メッセージキュー（Mailbox）**: 受信したメッセージはMailboxにキューイングされ、順次処理される。
-- **ロックフリー**: 状態を共有しないため、ミューテックスなどのロック機構が不要。
+- **[メッセージキュー](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/)（Mailbox）**: 受信したメッセージはMailboxにキューイングされ、順次処理される。
+- **[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)フリー**: 状態を共有しないため、ミューテックスなどのロック機構が不要。
 
 ```mermaid
 flowchart LR
@@ -211,11 +211,11 @@ async fn main() {
 
 ---
 
-## 4. イベント駆動アーキテクチャ（EDA）の世界へ
+## 4. [イベント駆動](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/)アーキテクチャ（EDA）の世界へ
 
-非同期処理やActorモデルは、単一のアプリケーション内部での並行処理を最適化する手法です。これをシステム全体（マイクロサービス間など）に拡張した概念が **イベント駆動アーキテクチャ（EDA）** です。
+非同期処理やActorモデルは、単一のアプリケーション内部での並行処理を最適化する手法です。これをシステム全体（[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)間など）に拡張した概念が **イベント駆動アーキテクチャ（EDA）** です。
 
-EDAでは、システム内の状態変化を「イベント」として表現し、イベントバスやメッセージブローカー（Apache Kafka、RabbitMQ、AWS EventBridgeなど）を通じて非同期に配信します。
+EDAでは、システム内の状態変化を「イベント」として表現し、イベントバスやメッセージブローカー（Apache [Kafka](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/)、[RabbitMQ](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/)、AWS EventBridgeなど）を通じて非同期に配信します。
 
 ### 4.1 EDA の主要な構成要素
 
@@ -237,7 +237,7 @@ flowchart LR
 
 ## 5. CQRS とイベントソーシング
 
-イベント駆動アーキテクチャを突き詰めると、データの書き込み（Command）と読み取り（Query）で求められる要件が大きく異なることに気づきます。これを解決するパターンが **CQRS（Command Query Responsibility Segregation: コマンドクエリ責務分離）** です。
+[イベント駆動](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/)アーキテクチャを突き詰めると、データの書き込み（Command）と読み取り（Query）で求められる要件が大きく異なることに気づきます。これを解決するパターンが **CQRS（Command Query Responsibility Segregation: コマンドクエリ責務分離）** です。
 
 ### 5.1 CQRS のアーキテクチャ
 
@@ -290,9 +290,9 @@ $$ Balance = \sum_{i=1}^{n} (Deposit_i) - \sum_{j=1}^{m} (Withdrawal_j) $$
 
 ### 6.1 課題とベストプラクティス
 
-イベント駆動・非同期アーキテクチャは強力ですが、 **結果整合性（Eventual Consistency）** の受け入れが必要です。データが即座に全システムに反映される（強い整合性）わけではないため、UI/UX側での工夫（例：楽観的UI更新）が求められます。
+[イベント駆動](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/)・非同期アーキテクチャは強力ですが、 **結果整合性（Eventual [Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）** の受け入れが必要です。データが即座に全システムに反映される（強い整合性）わけではないため、UI/UX側での工夫（例：楽観的UI更新）が求められます。
 
-また、分散システムにおける **Idempotency（冪等性）** の担保も重要です。ネットワークの再送により同じイベントが複数回処理されても、結果が変わらないように設計しなければなりません。
+また、[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)における **Idempotency（冪等性）** の担保も重要です。ネットワークの再送により同じイベントが複数回処理されても、結果が変わらないように設計しなければなりません。
 
 ---
 

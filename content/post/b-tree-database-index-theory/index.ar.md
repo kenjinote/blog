@@ -73,7 +73,7 @@ $$
 
 ## 4. معيار قواعد البيانات: التطور إلى شجرة B+
 
-ما يتم استخدامه فعليًا في أنظمة RDBMS (مثل InnoDB في MySQL أو PostgreSQL) هو إصدار محسّن من شجرة B يسمى **شجرة B+** (B+Tree).
+ما يتم استخدامه فعليًا في أنظمة [RDBMS](https://kenji.blog/ar/p/rdbms-transaction-acid-isolation-level-lock/) (مثل InnoDB في MySQL أو PostgreSQL) هو إصدار محسّن من شجرة B يسمى **شجرة B+** (B+Tree).
 
 ### 4.1 الاختلافات بين شجرة B وشجرة B+
 

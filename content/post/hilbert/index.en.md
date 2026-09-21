@@ -72,7 +72,7 @@ In 1900, at the second International Congress of Mathematicians (ICM) held in Pa
 These problems encompassed all fields of mathematics at the time and served as a massive driving force for subsequent mathematical development. Here are a few of the most famous ones:
 
 1. **The [Continuum Hypothesis](https://kenji.blog/en/p/continuum-hypothesis/)** (1st Problem): Is there a set whose cardinality is strictly between that of the integers and the real numbers? Later, Gödel and Cohen proved that this is independent of the standard ZFC axioms.
-2. **The Consistency of the Axioms of Arithmetic** (2nd Problem): Prove that the axioms of arithmetic are consistent using only finitistic methods.
+2. **The [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/) of the Axioms of Arithmetic** (2nd Problem): Prove that the axioms of arithmetic are consistent using only finitistic methods.
 3. **The Equality of Volumes of Two Tetrahedra of Equal Bases and Equal Altitudes** (3rd Problem): Can two such polyhedra always be partitioned into finitely many pieces and reassembled into each other? This was resolved negatively by his student Max Dehn.
 6. **Axiomatization of Physics** (6th Problem): Axiomatize branches of physics where mathematics plays a crucial role, such as probability theory and mechanics.
 8. **Problems Concerning Prime Number Distribution** (8th Problem): The infamous [Riemann](https://kenji.blog/en/p/riemann/) Hypothesis and [Goldbach's Conjecture](https://kenji.blog/en/p/goldbachs-conjecture/). These remain unsolved today.
@@ -111,7 +111,7 @@ Meaning of the formula: Here, $R$ is the scalar curvature representing the curva
 
 While a priority dispute between Einstein and [Hilbert](https://kenji.blog/en/p/hilbert/) could have arisen, [Hilbert](https://kenji.blog/en/p/hilbert/) deeply respected Einstein's magnificent physical intuition and publicly stated that "it was Einstein who discovered this equation," never asserting priority himself.
 
-## 10. [Hilbert](https://kenji.blog/en/p/hilbert/)'s Program: The Quest for Absolute Consistency in Mathematics
+## 10. [Hilbert](https://kenji.blog/en/p/hilbert/)'s Program: The Quest for Absolute [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/) in Mathematics
 
 Following World War I, in response to the "crisis in the foundations of mathematics" sparked by paradoxes in set theory (such as Russell's paradox), [Hilbert](https://kenji.blog/en/p/hilbert/) proposed the most ambitious project of his life: **[Hilbert](https://kenji.blog/en/p/hilbert/)'s Program**.
 

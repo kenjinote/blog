@@ -299,8 +299,8 @@ export default App;
   * `/checkout/*` -> 委派給結帳團隊的應用程式。
   在各個微前端內部，可以進一步擁有內部路由。
 
-*  **BFF (Backend For Frontend) 層的路由** :
-  在伺服器的基礎設施（例如：Nginx 或 API Gateway）層級判斷路徑，從一開始就提供適當微前端之 HTML 的手法。雖然在切換頁面時會發生強制重新整理，但架構的獨立程度是最高的。
+*  **[BFF](https://kenji.blog/zh-tw/p/microservices-architecture-bff-api-gateway/) (Backend For Frontend) 層的路由** :
+  在伺服器的基礎設施（例如：Nginx 或 [API Gateway](https://kenji.blog/zh-tw/p/microservices-architecture-bff-api-gateway/)）層級判斷路徑，從一開始就提供適當微前端之 HTML 的手法。雖然在切換頁面時會發生強制重新整理，但架構的獨立程度是最高的。
 
 ## 7. 對組織的影響與團隊的自主性
 

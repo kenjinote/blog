@@ -69,7 +69,7 @@ int main() {
 ```
 
 **Detailed Explanation**:
-The advantage of this approach lies in encapsulating the rotation matrix calculation (4 multiplications and 2 additions) into a complex number operation. Furthermore, in 3D space, an extension of this concept called "quaternions" is used. By using quaternions, we can avoid the fatal problem of "Gimbal Lock" that occurs with Euler angles and achieve smooth spherical linear interpolation (Slerp).
+The advantage of this approach lies in encapsulating the rotation matrix calculation (4 multiplications and 2 additions) into a complex number operation. Furthermore, in 3D space, an extension of this concept called "quaternions" is used. By using quaternions, we can avoid the fatal problem of "Gimbal [Lock](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)" that occurs with Euler angles and achieve smooth spherical linear interpolation (Slerp).
 
 ---
 

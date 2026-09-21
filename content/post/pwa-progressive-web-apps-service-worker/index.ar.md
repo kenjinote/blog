@@ -365,7 +365,7 @@ self.addEventListener("fetch", (event) => {
 
 هنا يأتي دور **IndexedDB**.
 
-IndexedDB هي قاعدة بيانات NoSQL تدعم العمليات المتزامنة (Transactional) ومدمجة في المتصفح. يمكنها تخزين كميات كبيرة جداً من البيانات وتدعم البحث المعقد عبر الفهارس.
+IndexedDB هي قاعدة بيانات [NoSQL](https://kenji.blog/ar/p/nosql-database-selection-kvs-document-graph-wide-column/) تدعم العمليات المتزامنة ([Transaction](https://kenji.blog/ar/p/rdbms-transaction-acid-isolation-level-lock/)al) ومدمجة في المتصفح. يمكنها تخزين كميات كبيرة جداً من البيانات وتدعم البحث المعقد عبر الفهارس.
 
 ### 8.1. لماذا لا يكفي التخزين المؤقت (Cache Storage) وحده؟
 

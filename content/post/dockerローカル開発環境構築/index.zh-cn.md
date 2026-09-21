@@ -131,7 +131,7 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 在现代 Web 应用程序开发中，由 Web 服务器、数据库和缓存服务器等多个组件协同工作的微服务架构非常普遍。为了在本地环境中集中管理这些组件，我们使用 `docker-compose.yml`。
 
-这次，我们将在本地构建一个“Web (FastAPI)”、“数据库 (PostgreSQL)”和“缓存 (Redis)”的三层架构系统。
+这次，我们将在本地构建一个“Web (FastAPI)”、“数据库 (PostgreSQL)”和“缓存 ([Redis](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/))”的三层架构系统。
 
 ### 架构图 (Mermaid)
 
@@ -348,7 +348,7 @@ sequenceDiagram
 将各处理步骤的延迟定义如下：
 - $T_{\text{net}}$: 客户端与 Web 容器之间的网络延迟
 - $T_{\text{app}}$: 应用程序端纯粹的处理时间（如序列化等）
-- $T_{\text{cache}}$: 在 Redis 中读取和写入所花费的时间
+- $T_{\text{cache}}$: 在 [Redis](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/) 中读取和写入所花费的时间
 - $T_{\text{db}}$: 执行 PostgreSQL 查询所花费的时间
 - $p_{\text{miss}}$: 缓存未命中率（$0 \le p_{\text{miss}} \le 1$）
 

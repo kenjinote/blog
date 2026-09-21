@@ -16,7 +16,7 @@ Com a ascensão dos Grandes Modelos de Linguagem (LLMs), nossas vidas e métodos
 1. **Problemas de Privacidade e Segurança**: Enviar dados contendo informações confidenciais ou pessoais para servidores externos costuma ser inaceitável do ponto de vista de segurança e conformidade corporativa.
 2. **Incerteza de Custos**: Como as taxas de uso de API dependem do número de tokens, sistemas que processam grandes volumes de dados ou fazem solicitações frequentes correm o risco de ter custos operacionais ilimitados.
 3. **Latência e Dependência de Rede**: O uso em ambientes [offline](https://kenji.blog/pt/p/pwa-progressive-web-apps-service-worker/) ou a execução em dispositivos de borda (*edge devices*), que exigem latência extremamente baixa, encontram na comunicação de rede um gargalo.
-4. **Dependência de Fornecedor (Vendor Lock-in)**: A dependência de um modelo de um provedor específico pode torná-lo suscetível a encerramentos futuros do serviço, mudanças nos termos de uso e alterações não intencionais de comportamento devido a atualizações do modelo.
+4. **Dependência de Fornecedor (Vendor [Lock](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/)-in)**: A dependência de um modelo de um provedor específico pode torná-lo suscetível a encerramentos futuros do serviço, mudanças nos termos de uso e alterações não intencionais de comportamento devido a atualizações do modelo.
 
 Os "LLMs locais" estão ganhando atenção como um meio para resolver esses desafios. Ao executar o modelo em seu próprio hardware, você pode utilizar a IA livremente sem enviar nenhum dado para o exterior e sem se preocupar com custos mensais.
 

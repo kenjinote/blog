@@ -25,7 +25,7 @@ description: '技術ブログのアクセスをデータと自動化で最大化
 ### 1.1 Core [Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)の最適化
 
 Googleはページエクスペリエンスをランキング要因として採用しており、特に **[Core Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** は技術ブログにおいても無視できません。
-技術ブログでは、大量のソースコードブロックや数式（MathJax / KaTeX）、図解画像が多用されます。これらはページのレンダリングを遅延させる要因となります。
+技術ブログでは、大量のソースコードブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)や数式（MathJax / KaTeX）、図解画像が多用されます。これらはページのレンダリングを遅延させる要因となります。
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/))**: ファーストビューの主要コンテンツの読み込み速度。アイキャッチ画像にはWebPやAVIFを使用し、`fetchpriority="high"`属性を付与してプリロードします。また、シンタックスハイライト用の巨大なCSSやJSは非同期読み込みにするか、必要なページにのみロードする設計にします。
 - **[CLS](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Cumulative [Layout](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/) Shift)**: 記事読み込み中のレイアウトのズレ。数式や画像の表示領域をあらかじめCSSの`aspect-ratio`等で確保しておくことで、後からDOMが挿入された際のガタつきを防ぎます。
@@ -76,7 +76,7 @@ Googleはページエクスペリエンスをランキング要因として採�
 
 1. **エラー解決型（Troubleshooting Intent）**
    - 検索キーワード例: `Docker "no space left on device" 解決策`, `Python IndexError list index out of range 原因`
-   - 心理: 開発中のエラーでブロックされており、今すぐ特効薬となるコマンドやコードスニペットを求めている。
+   - 心理: 開発中のエラーでブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)されており、今すぐ特効薬となるコマンドやコードスニペットを求めている。
    - 戦略: 記事の冒頭（ファーストビュー）で「結論（解決するためのコードやコマンド）」を提示します。背景や詳細なメカニズムの解説はその後ろに配置し、まずはユーザーの「すぐに直したい」という欲求を満たします。これにより、離脱率（バウンスレート）を下げることができます。
 
 2. **体系的学習・レビュー型（Learning & Review Intent）**

@@ -271,7 +271,7 @@ Fakta bahwa algoritma PQC (seperti Dilithium dan SPHINCS+) ada tidak berarti bah
 Hambatan terbesar dalam mengadopsi PQC adalah peningkatan ukuran data yang signifikan.
 Sementara ukuran tanda tangan ECDSA saat ini sekitar 70 byte, ukuran tanda tangan untuk ML-DSA (Dilithium) kriptografi kisi adalah sekitar 2.420 byte hingga 4.595 byte (tergantung pada tingkat keamanan), dan ukuran kunci publik melebihi 1.300 byte. Untuk SPHINCS+ berbasis hash, ukuran tanda tangan mencapai puluhan ribu byte.
 
-Jika [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) mengadopsi PQC sambil mempertahankan batas ukuran blok saat ini (berat sekitar 4MB termasuk SegWit), jumlah transaksi yang dapat ditampung dalam satu blok akan menurun drastis. Throughput jaringan (TPS: Transactions Per Second) akan turun secara tak terhindarkan, dan kemacetan transfer akan menjadi normal.
+Jika [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) mengadopsi PQC sambil mempertahankan batas ukuran blok saat ini (berat sekitar 4MB termasuk SegWit), jumlah transaksi yang dapat ditampung dalam satu blok akan menurun drastis. Throughput jaringan (TPS: [Transaction](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/)s Per Second) akan turun secara tak terhindarkan, dan kemacetan transfer akan menjadi normal.
 Untuk mengatasi ini, batas ukuran blok perlu ditingkatkan secara signifikan, namun ini akan meningkatkan persyaratan penyimpanan dan bandwidth jaringan node penuh, membuat operasi node oleh individu menjadi sulit, yang pada akhirnya mengarah pada dilema **sentralisasi jaringan**.
 
 ```mermaid

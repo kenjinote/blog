@@ -122,19 +122,19 @@ O software moderno evoluiu de sistemas monolíticos rodando em um único servido
 
 Ao projetar sistemas distribuídos, engenheiros enfrentam constantemente o "Teorema CAP". Este teorema afirma que um sistema distribuído só pode garantir simultaneamente duas das três propriedades a seguir:
 
-- **Consistency (Consistência)**: Todos os nós visualizam os mesmos dados simultaneamente?
-- **Availability (Disponibilidade)**: O sistema continua respondendo mesmo se alguns nós falharem?
+- **[Consistency](https://kenji.blog/pt/p/cap-theorem-distributed-systems-tradeoff/) (Consistência)**: Todos os nós visualizam os mesmos dados simultaneamente?
+- **[Availability](https://kenji.blog/pt/p/cap-theorem-distributed-systems-tradeoff/) (Disponibilidade)**: O sistema continua respondendo mesmo se alguns nós falharem?
 - **[Partition Tolerance](https://kenji.blog/pt/p/cap-theorem-distributed-systems/) (Tolerância a Partições)**: O sistema continua operando mesmo se ocorrerem falhas de rede (partições)?
 
-$$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
+$$ P(\text{[Availability](https://kenji.blog/pt/p/cap-theorem-distributed-systems-tradeoff/)} \cup \text{[Consistency](https://kenji.blog/pt/p/cap-theorem-distributed-systems-tradeoff/)}) | \text{PartitionTolerance} $$
 
 Como as divisões de rede (Partition) são inevitáveis no mundo real, os engenheiros devem fazer avaliações severas de trade-off ligadas aos requisitos de negócios. Por exemplo: "Este sistema de pagamentos prioriza Consistência e suspenderá o serviço durante falhas (CP)", ou "A timeline desta rede social prioriza Disponibilidade e tolera inconsistência temporária de dados (AP)".
 
 A IA pode até escrever "código que prioriza C" ou "código que prioriza A", mas não consegue tomar decisões autônomas, que incluem riscos de negócios, sobre "qual deve ser priorizado".
 
-### 4.2 Comunicação Assíncrona e Consistência Eventual (Eventual Consistency)
+### 4.2 Comunicação Assíncrona e Consistência Eventual ([Eventual Consistency](https://kenji.blog/pt/p/cap-theorem-distributed-systems-tradeoff/))
 
-Conforme os sistemas escalam, a interação entre serviços passa de comunicações síncronas via APIs REST para comunicações assíncronas usando filas de mensagens (Kafka, RabbitMQ, etc.). Nesses cenários, a consistência dos dados muda de imediata para "Consistência Eventual".
+Conforme os sistemas escalam, a interação entre serviços passa de comunicações síncronas via APIs REST para comunicações assíncronas usando filas de mensagens ([Kafka](https://kenji.blog/pt/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/pt/p/event-driven-architecture-message-queue-kafka-rabbitmq/), etc.). Nesses cenários, a consistência dos dados muda de imediata para "Consistência Eventual".
 Em que momento introduzir padrões de arquitetura avançados como o padrão Saga ou [CQRS](https://kenji.blog/pt/p/event-driven-architecture-async/) (Command Query Responsibility Segregation)? Fazer essas escolhas difíceis e elaborar a planta de todo o sistema é a verdadeira demonstração de valor de um engenheiro sênior.
 
 ```mermaid

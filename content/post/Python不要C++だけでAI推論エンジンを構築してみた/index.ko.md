@@ -16,7 +16,7 @@ description: '최근의 AI 개발은 Python이 주류이지만, 엣지 디바이
 
 그렇다면 왜 굳이 Python을 배제하고 C++ 단독으로 AI 추론 엔진을 만들어야 할까요? 거기에는 몇 가지 강력한 이유가 있습니다.
 
-1. **극한의 성능과 짧은 지연 시간**: Python의 GIL(Global Interpreter Lock)이나 동적 타이핑에 의한 오버헤드를 완전히 제거할 수 있습니다. 특히 실시간성이 요구되는 시스템에서는 밀리초 단위의 지연이 치명적일 수 있습니다.
+1. **극한의 성능과 짧은 지연 시간**: Python의 GIL(Global Interpreter [Lock](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/))이나 동적 타이핑에 의한 오버헤드를 완전히 제거할 수 있습니다. 특히 실시간성이 요구되는 시스템에서는 밀리초 단위의 지연이 치명적일 수 있습니다.
 2. **배포의 용이성**: Python 환경(거대한 라이브러리군, 의존성 지옥)을 최종 사용자의 환경에 구축하는 것은 매우 어렵습니다. C++이라면 정적으로 링크된 단일 실행 바이너리(`.exe`나 ELF 바이너리)를 배포하기만 하면 됩니다.
 3. **엣지 디바이스 대응**: 스마트폰이나 임베디드 기기, 라즈베리 파이 같은 리소스 제약이 심한 환경에서 수 기가바이트의 메모리를 소비하는 Python 런타임을 구동할 여유는 없습니다.
 4. **하드웨어 직접 제어**: 메모리 할당 타이밍, SIMD 명령어의 명시적 사용, GPU와의 메모리 전송 최적화 등 로우 레벨 제어는 C++에서만 가능합니다.
@@ -352,7 +352,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-또한, 자기회귀형(Autoregressive) 토큰 생성에서는 과거 토큰의 계산 결과(Key와 Value)를 유지해 두어야 합니다. 이를 '**KV 캐시(Key-Value Cache)**'라고 부릅니다.
+또한, 자기회귀형(Autoregressive) 토큰 생성에서는 과거 토큰의 계산 결과(Key와 Value)를 유지해 두어야 합니다. 이를 '**KV 캐시([Key-Value](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)**'라고 부릅니다.
 
 ```mermaid
 graph TD

@@ -271,7 +271,7 @@ $$
 導入PQC最大的障礙在於資料大小的大幅膨脹。
 目前ECDSA的簽章大小約為70位元組，而晶格密碼學的Dilithium（ML-DSA）的簽章大小則高達約2,420到4,595位元組（視安全等級而定），公鑰大小也超過1,300位元組。至於基於雜湊的SPHINCS+，光是簽章就可能達到數萬位元組。
 
-如果[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)在保持現有區塊大小上限（含SegWit約4MB的權重）的情況下導入PQC，單個區塊能容納的交易數量將大幅減少。網路吞吐量（TPS：Transactions Per Second）將遭受毀滅性打擊，網路壅塞將成為常態。
+如果[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)在保持現有區塊大小上限（含SegWit約4MB的權重）的情況下導入PQC，單個區塊能容納的交易數量將大幅減少。網路吞吐量（TPS：[Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)s Per Second）將遭受毀滅性打擊，網路壅塞將成為常態。
 為了解決這個問題，必須大幅提高區塊大小。然而，這將增加全節點的儲存空間及網路頻寬需求，使個人運行節點變得困難，最終陷入導致 **網路中心化** 的困境。
 
 ```mermaid

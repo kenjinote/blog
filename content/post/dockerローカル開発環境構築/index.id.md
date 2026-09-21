@@ -131,7 +131,7 @@ Dengan menerapkan build multi-tahap seperti ini, kita dapat mengurangi ukuran ci
 
 Dalam pengembangan aplikasi web modern, arsitektur layanan mikro yang menggabungkan banyak komponen seperti server Web, basis data, dan server cache adalah hal yang umum. Untuk mengelola semua ini secara terpusat di lingkungan lokal, kita menggunakan `docker-compose.yml`.
 
-Kali ini, kita akan membangun sistem dengan struktur tiga lapisan di lingkungan lokal: "Web (FastAPI)", "Basis Data (PostgreSQL)", dan "Cache (Redis)".
+Kali ini, kita akan membangun sistem dengan struktur tiga lapisan di lingkungan lokal: "Web (FastAPI)", "Basis Data (PostgreSQL)", dan "Cache ([Redis](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/))".
 
 ### Diagram Arsitektur (Mermaid)
 
@@ -348,7 +348,7 @@ Mari rumuskan model matematis dari waktu pemrosesan permintaan rerata $T_{\text{
 Waktu latensi untuk setiap bagian didefinisikan sebagai berikut:
 - $T_{\text{net}}$: Latensi jaringan di antara klien dengan kontainer Web
 - $T_{\text{app}}$: Waktu proses esensial (pure) di bagian aplikasi (serialisasi dll.)
-- $T_{\text{cache}}$: Waktu baca-tulis dari dan ke Redis
+- $T_{\text{cache}}$: Waktu baca-tulis dari dan ke [Redis](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/)
 - $T_{\text{db}}$: Waktu pengeksekusian kueri menuju PostgreSQL
 - $p_{\text{miss}}$: Persentase kegagalan cache (Cache miss rate) ($0 \le p_{\text{miss}} \le 1$)
 

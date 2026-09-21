@@ -19,7 +19,7 @@ Webサイトやブログを運営するにあたり、表示速度（パフォ�
 ## 1. 静的サイトジェネレーター（SSG）とJamstackの基礎
 
 ### 1.1 なぜ静的サイトなのか？
-従来の動的CMS（例：WordPress）は、ユーザーからのリクエストのたびにデータベース（MySQLなど）へクエリを発行し、サーバーサイド（PHPなど）でHTMLを動的に生成して返却します。この方式は柔軟性が高い一方で、トラフィックの急増（いわゆるバズやDDoS攻撃）に対する耐性が低く、キャッシュサーバー（RedisやVarnish）を前段に置くなど、インフラ構成が複雑化しがちです。
+従来の動的CMS（例：WordPress）は、ユーザーからのリクエストのたびにデータベース（MySQLなど）へクエリを発行し、サーバーサイド（PHPなど）でHTMLを動的に生成して返却します。この方式は柔軟性が高い一方で、トラフィックの急増（いわゆるバズやDDoS攻撃）に対する耐性が低く、キャッシュサーバー（[Redis](https://kenji.blog/p/nosql-database-selection-kvs-document-graph-wide-column/)やVarnish）を前段に置くなど、インフラ構成が複雑化しがちです。
 
 一方、Jamstack（JavaScript, APIs, and Markup）アーキテクチャを採用した静的サイトジェネレーター（SSG）では、事前に（ビルド時に）すべてのHTMLファイル、CSS、JavaScriptを生成しておきます。ユーザーのリクエストに対しては、すでに生成済みの静的ファイルをWebサーバー（またはCDN）がそのまま返すだけであるため、圧倒的な高速性と堅牢なセキュリティを実現できます。
 
@@ -240,7 +240,7 @@ Hugoでの実装も非常に簡単です。`layouts/partials/head.html` や `lay
 {{ end }}
 ```
 
-`defer` 属性を付与することで、HTMLのパースをブロックせずにスクリプトを非同期に読み込み、DOM構築後に実行させることができます。これにより、初期表示速度（[LCP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/): Largest Contentful [Paint](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/) や FCP: First Contentful Paint）への影響を最小限に抑えられます。
+`defer` 属性を付与することで、HTMLのパースをブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)せずにスクリプトを非同期に読み込み、DOM構築後に実行させることができます。これにより、初期表示速度（[LCP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/): Largest Contentful [Paint](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/) や FCP: First Contentful Paint）への影響を最小限に抑えられます。
 
 ---
 

@@ -126,7 +126,7 @@ Os conceitos de ponteiros (referências diretas a endereços de memória), layou
 
 ## 5. A Barreira dos Bancos de Dados e Persistência: A Ausência da Álgebra Relacional
 
-Nos aplicativos modernos, salvar e recuperar dados (persistência) é um tema inescapável. No entanto, muito da educação escolar para em "processamento de dados na memória" que desaparecem assim que o programa termina sua execução. Raramente as teorias matemáticas subjacentes aos Bancos de Dados Relacionais (RDBMS) e SQL, nomeadamente a "Álgebra Relacional" proposta pelo Dr. Edgar F. Codd, são ensinadas.
+Nos aplicativos modernos, salvar e recuperar dados (persistência) é um tema inescapável. No entanto, muito da educação escolar para em "processamento de dados na memória" que desaparecem assim que o programa termina sua execução. Raramente as teorias matemáticas subjacentes aos Bancos de Dados Relacionais ([RDBMS](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/)) e SQL, nomeadamente a "Álgebra Relacional" proposta pelo Dr. Edgar F. Codd, são ensinadas.
 
 As operações de banco de dados são definidas através das seguintes operações básicas baseadas na teoria dos conjuntos:
 
@@ -134,7 +134,7 @@ As operações de banco de dados são definidas através das seguintes operaçõ
 - Projeção (Projection, $\pi$): Extrair atributos específicos (colunas)
 - Junção (Join, $\bowtie$): Interseção condicional de múltiplas relações
 
-Além disso, aprender a estrutura de índices "[B-Tree](https://kenji.blog/pt/p/b-tree-database-index-theory/)" (Árvore B) para buscar dados instantaneamente em enormes registros é a melhor aplicação prática das estruturas de dados. B-Trees minimizam as E/S (I/O) de disco enquanto garantem uma velocidade de busca de $O(\log N)$. Sem conhecer as propriedades ACID das transações (Atomicidade, Consistência, Isolamento, Durabilidade), é impossível construir sistemas robustos.
+Além disso, aprender a estrutura de índices "[B-Tree](https://kenji.blog/pt/p/b-tree-database-index-theory/)" (Árvore B) para buscar dados instantaneamente em enormes registros é a melhor aplicação prática das estruturas de dados. B-Trees minimizam as E/S (I/O) de disco enquanto garantem uma velocidade de busca de $O(\log N)$. Sem conhecer as propriedades [ACID](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/) das transações (Atomicidade, Consistência, Isolamento, Durabilidade), é impossível construir sistemas robustos.
 
 ## 6. Segurança e Teoria da Criptografia: A Infraestrutura Social Apoiada na Dificuldade da Fatoração de Primos
 

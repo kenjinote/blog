@@ -328,7 +328,7 @@ Des outils d'analyse statique doivent être intégrés au pipeline [CI/CD](https
 # 9. Approche mathématique de la fiabilité et de la modélisation des coûts
 
 Lors de la conception d'infrastructures à l'aide de l'IaC, il est important d'évaluer l'équilibre entre la fiabilité (Reliability) et les coûts.
-Par exemple, le taux de disponibilité d'un système dans une configuration multi-AZ (Availability Zone) peut être exprimé par un modèle mathématique.
+Par exemple, le taux de disponibilité d'un système dans une configuration multi-AZ ([Availability](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/) Zone) peut être exprimé par un modèle mathématique.
 
 Soit la fiabilité d'un seul composant (AZ) notée $R_1$.
 Si l'on place des ressources dans 2 AZ (redondance) et que l'on considère que le système global fonctionne si l'un ou l'autre est opérationnel, la fiabilité du système global $R_{total}$ est exprimée par la formule suivante.

@@ -22,7 +22,7 @@ In diesem Artikel werden wir die detaillierten Entwicklungsschritte erläutern, 
 
 In der Trainingsphase von KI ist Python mit seiner Flexibilität und seinem umfangreichen Ökosystem überwältigend im Vorteil. In der Bereitstellungs- oder „Inferenz“-Phase wird C++ jedoch aus den folgenden Gründen zu einer leistungsstarken Option.
 
-1. **Reduzierung von Overhead**: Das Global Interpreter Lock (GIL) von Python und der Runtime-Overhead können vollständig eliminiert werden.
+1. **Reduzierung von Overhead**: Das Global Interpreter [Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/) (GIL) von Python und der Runtime-Overhead können vollständig eliminiert werden.
 2. **Speichereffizienz und Arena-Allokation**: Da die Zuweisung und Freigabe von Speicher manuell gesteuert werden können, lassen sich unvorhersehbare Spitzen (Spikes) durch die [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) verhindern.
 3. **Direkter Zugriff auf die Hardware**: SIMD-Intrinsics wie AVX-512, AVX2 und ARM NEON können direkt aufgerufen werden, um die Rechenleistung der CPU zu maximieren.
 4. **Keine Abhängigkeiten**: ggml ist eine C/C++-Bibliothek ohne Abhängigkeiten (Zero dependencies) und kann problemlos auf Windows-Umgebungen mit MSVC kompiliert werden, solange ein Compiler vorhanden ist.
@@ -86,7 +86,7 @@ Das aus Formaten wie `.safetensors` von Hugging Face konvertierte **GGUF (GPT-Ge
 1. **Magic Bytes**: `0x46554747` (GGUF).
 2. **Version**: Die Versionsnummer des Formats.
 3. **Tensor Count & Metadata Count**: Anzahl der Tensoren und der Metadaten-Schlüssel-Wert-Paare.
-4. **Metadata (Key-Value Pairs)**: Schlüssel mit Präfix für die Zeichenfolgenlänge und typisierte Werte.
+4. **Metadata ([Key-Value](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs)**: Schlüssel mit Präfix für die Zeichenfolgenlänge und typisierte Werte.
 5. **Tensor Info**: Name, Dimensionen, Datentyp (FP16, Q4_K usw.) jedes Tensors und die Offset-Position in der Datei.
 6. **Padding**: Polsterung (Padding), die eingefügt wird, damit die Tensordaten an bestimmten Grenzen (normalerweise 32 oder 64 Byte) ausgerichtet (aligned) werden. Dies ist entscheidend für den schnellen Speicherzugriff mit SIMD-Befehlen (insbesondere AVX).
 7. **Tensor Data**: Das eigentliche Array der ausgerichteten Gewichtsdaten.

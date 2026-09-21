@@ -365,7 +365,7 @@ L'API `caches` (Cache Storage) du Service Worker est très adaptée pour sauvega
 
 C'est là qu'intervient **IndexedDB**.
 
-IndexedDB est une base de données NoSQL asynchrone et transactionnelle intégrée au navigateur. Elle permet de stocker de très grandes quantités de données et des recherches complexes par index sont possibles.
+IndexedDB est une base de données [NoSQL](https://kenji.blog/fr/p/nosql-database-selection-kvs-document-graph-wide-column/) asynchrone et transactionnelle intégrée au navigateur. Elle permet de stocker de très grandes quantités de données et des recherches complexes par index sont possibles.
 
 ### 8.1. Pourquoi le Cache Storage seul est-il insuffisant ?
 

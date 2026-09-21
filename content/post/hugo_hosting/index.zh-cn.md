@@ -19,7 +19,7 @@ description: '这是一份关于如何利用Cloudflare Pages和GitHub Pages免�
 ## 1. 静态网站生成器（SSG）与Jamstack基础
 
 ### 1.1 为什么选择静态网站？
-传统的动态CMS（例如：WordPress）在每次收到用户请求时，都会向数据库（如MySQL）发起查询，并在服务器端（如PHP）动态生成HTML后返回。这种方式虽然灵活性高，但应对流量激增（所谓的爆发性流量或DDoS攻击）的抵抗力较低，且往往需要在前端放置缓存服务器（如Redis或Varnish），导致基础设施架构变得复杂。
+传统的动态CMS（例如：WordPress）在每次收到用户请求时，都会向数据库（如MySQL）发起查询，并在服务器端（如PHP）动态生成HTML后返回。这种方式虽然灵活性高，但应对流量激增（所谓的爆发性流量或DDoS攻击）的抵抗力较低，且往往需要在前端放置缓存服务器（如[Redis](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/)或Varnish），导致基础设施架构变得复杂。
 
 相比之下，采用Jamstack（JavaScript, APIs, and Markup）架构的静态网站生成器（SSG）会在事前（构建时）生成所有的HTML文件、CSS和JavaScript。当用户发起请求时，Web服务器（或CDN）只需将已生成的静态文件直接返回，从而实现压倒性的高速和坚固的安全性。
 

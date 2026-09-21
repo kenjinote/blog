@@ -316,7 +316,7 @@ Pour tirer les meilleures performances de la programmation multithread, il est n
 
 * **Faux partage (False Sharing) :** 
   Même si plusieurs threads mettent à jour des variables différentes, si ces variables sont situées sur la même ligne de cache (cache line, généralement 64 octets) du processeur, une synchronisation de la mémoire inutile se produit pour maintenir la cohérence du cache (cache coherency), ce qui entraîne une baisse spectaculaire des performances. Pour éviter cela, il faut utiliser le spécificateur `alignas` afin d'aligner les variables sur les frontières des lignes de cache.
-* **Sans verrou (Lock-Free) et `std::atomic` :**
+* **Sans verrou ([Lock](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/)-Free) et `std::atomic` :**
   Afin d'éviter le surcoût lié au verrouillage/déverrouillage des mutex, l'introduction d'opérations atomiques indivisibles (comme Compare-And-Swap) utilisant `<atomic>` et de structures de données sans verrou (lock-free) peut être envisagée. Cependant, cela nécessite une compréhension correcte de l'ordre de la mémoire (`std::memory_order`) et la difficulté d'implémentation est très élevée, donc cela n'est généralement introduit qu'en cas de nécessité après une mesure prudente des performances.
 
 ---

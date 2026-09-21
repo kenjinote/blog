@@ -64,7 +64,7 @@ flowchart TD
 
 ### 区块的结构
 
-一个区块大致由“区块头（Block Header）”和“交易数据（Transaction Data）”组成。
+一个区块大致由“区块头（Block Header）”和“交易数据（[Transaction](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/) Data）”组成。
 
 区块头包含以下信息：
 1. **版本（Version）** ：软件的版本
@@ -187,7 +187,7 @@ $$
 
 ## 6. 交易与 UTXO 模型
 
-比特币的交易并未采用类似银行账户余额的机制（基于账户的模型），而是采用了 **UTXO（Unspent Transaction Output：未花费的交易输出）** 模型。
+比特币的交易并未采用类似银行账户余额的机制（基于账户的模型），而是采用了 **UTXO（Unspent [Transaction](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/) Output：未花费的交易输出）** 模型。
 
 ### 输入与输出
 
@@ -285,7 +285,7 @@ $$
 
 ### 区块奖励与减半（Halving）
 
-矿工们之所以愿意耗费巨大的电力和硬件投资来挖掘区块，是因为存在经济上的回报。当矿工成功生成一个新区块时，他们会通过一种被称为 **创币交易（Coinbase Transaction）** 的特殊交易，接收到新发行的比特币。
+矿工们之所以愿意耗费巨大的电力和硬件投资来挖掘区块，是因为存在经济上的回报。当矿工成功生成一个新区块时，他们会通过一种被称为 **创币交易（Coinbase [Transaction](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)）** 的特殊交易，接收到新发行的比特币。
 
 比特币的总发行量通过程序被设定了上限，即 **2,100 万枚** 。此外，还内置了 **减半（Halving）** 机制，即每生成 210,000 个区块（大约 4 年），每个区块的挖矿奖励就会减半。
 

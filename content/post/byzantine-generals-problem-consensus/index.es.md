@@ -287,7 +287,7 @@ De esta manera, incluso si los $ f $ nodos maliciosos pertenecen a ambos quórum
 Este artículo ha explorado la formación de consenso, que es el mayor desafío en los sistemas distribuidos, comenzando por el teórico "problema de los generales bizantinos", hasta **Paxos** y **Raft** tolerantes a caídas, y **PBFT**, que tolera nodos maliciosos.
 
 *   **Paxos** : Posee una base sólida probada matemáticamente, pero su complejidad es un desafío.
-*   **Raft** : Se enfoca en la comprensibilidad y la facilidad de implementación, convirtiéndose en el estándar de facto para los modernos KVS distribuidos.
+*   **Raft** : Se enfoca en la comprensibilidad y la facilidad de implementación, convirtiéndose en el estándar de facto para los modernos [KVS](https://kenji.blog/es/p/nosql-database-selection-kvs-document-graph-wide-column/) distribuidos.
 *   **PBFT** : Logra un consenso determinista en entornos mixtos con nodos maliciosos, formando la base de la tecnología blockchain.
 
 Hoy en día, nuevos algoritmos BFT continúan surgiendo, como **Nakamoto [Consensus](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/) ([PoW](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/))** adoptado por Bitcoin, así como Tendermint y HotStuff, que reducen la sobrecarga de comunicación de PBFT y mejoran la escalabilidad. Seleccionar el algoritmo de consenso adecuado según los requisitos de tu sistema (fiabilidad del nodo, rendimiento requerido, latencia) es la clave para construir sistemas distribuidos robustos.

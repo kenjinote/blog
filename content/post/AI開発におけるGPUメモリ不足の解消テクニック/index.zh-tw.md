@@ -46,7 +46,7 @@ $$ M_{weights} = 8,000,000,000 \times 2 \text{ bytes} \approx 16,000,000,000 \te
 
 ## 1.2 推論時的記憶體消耗：KV Cache的增長
 
-在LLM的推論（特別是自迴歸式的文字生成）中，與權重消耗相當，甚至更嚴重擠壓VRAM的元兇就是 **KV Cache（Key-Value Cache）** 。
+在LLM的推論（特別是自迴歸式的文字生成）中，與權重消耗相當，甚至更嚴重擠壓VRAM的元兇就是 **KV Cache（[Key-Value](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache）** 。
 在Transformer架構中，為了避免重新計算過去已經生成和處理過的Token資訊，會將各個注意力層（Attention Layer）中的Key和Value張量（Tensor）持續快取在VRAM中。這雖然能提升計算速度（Compute），但隨著上下文長度（輸入提示詞長度＋生成長度）的增加，記憶體消耗量將呈線性爆炸性增長。
 
 處理1個Token時所消耗的KV Cache記憶體量 $M_{kv\_token}$，可根據模型架構透過以下公式嚴格計算出來：

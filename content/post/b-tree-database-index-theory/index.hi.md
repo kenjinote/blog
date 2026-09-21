@@ -73,7 +73,7 @@ $$
 
 ## 4. डेटाबेस का मानक: B+Tree के रूप में विकास
 
-वास्तविक RDBMS (जैसे MySQL का InnoDB या PostgreSQL) में, B-Tree के उन्नत संस्करण, **B+Tree** का उपयोग किया जाता है।
+वास्तविक [RDBMS](https://kenji.blog/hi/p/rdbms-transaction-acid-isolation-level-lock/) (जैसे MySQL का InnoDB या PostgreSQL) में, B-Tree के उन्नत संस्करण, **B+Tree** का उपयोग किया जाता है।
 
 ### 4.1 B-Tree और B+Tree के बीच अंतर
 

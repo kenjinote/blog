@@ -78,7 +78,7 @@ void ProcessFileLegacy(const std::wstring& filename) {
 ### このコードの何が問題なのか？
 
 1.  **コードの重複と煩雑さ:** 早期リターン（`return`）のたびに `::CloseHandle(hFile);` を書く必要があり、DRY (Don't Repeat Yourself) 原則に反します。
-2.  **例外安全性の完全な欠落 (Exception Unsafe):** C++では、`std::vector` のメモリアロケーション失敗時 (`std::bad_alloc`) や、他の関数が例外をスローした場合に、関数から強制的に脱出します。このとき、末尾の `CloseHandle` は実行されないため、 **ファイルハンドルが永遠にリーク** します（プロセスが終了するまでファイルがロックされ続けるなどの深刻なバグを引き起こします）。
+2.  **例外安全性の完全な欠落 (Exception Unsafe):** C++では、`std::vector` のメモリアロケーション失敗時 (`std::bad_alloc`) や、他の関数が例外をスローした場合に、関数から強制的に脱出します。このとき、末尾の `CloseHandle` は実行されないため、 **ファイルハンドルが永遠にリーク** します（プロセスが終了するまでファイルが[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)され続けるなどの深刻なバグを引き起こします）。
 
 ---
 
@@ -337,7 +337,7 @@ void DrawMyGraphics(HDC hdc) {
 
 Win32には `CRITICAL_SECTION` や `SRWLOCK` などのスレッド同期プリミティブが存在します。これらも `EnterCriticalSection` / `LeaveCriticalSection` を手動で呼び出すのは例外安全の観点から御法度です。
 
-C++11の `std::mutex` や `std::lock_guard` は非常に便利ですが、OSネイティブの高速なロック機構を直接使いたい場面（特にSRWLockは非常に軽量です）もあります。
+C++11の `std::mutex` や `std::lock_guard` は非常に便利ですが、OSネイティブの高速な[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)機構を直接使いたい場面（特にSRWLockは非常に軽量です）もあります。
 標準の `std::lock_guard` は、`lock()` と `unlock()` というメンバ関数を持つ任意の型を受け入れる仕様（ダックタイピングのようなテンプレート仕様）になっています。これを利用します。
 
 ```cpp
@@ -362,7 +362,7 @@ public:
 };
 ```
 
-これにより、完全にC++標準ライブラリの作法でWin32のロックを扱えます。
+これにより、完全にC++標準ライブラリの作法でWin32の[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を扱えます。
 
 ```cpp
 win32_srwlock g_myLock;

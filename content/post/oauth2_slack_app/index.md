@@ -352,7 +352,7 @@ sequenceDiagram
 最後に、取得したアクセストークンの保存方法についてのベストプラクティスです。
 
 ## 1. データベースへの保存は[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)を必須とする
-アクセストークン（`xoxb-...`）は、Slackワークスペースへの「合鍵」そのものです。データベース（MySQL, PostgreSQL, MongoDBなど）に平文（プレーンテキスト）で保存してはいけません。万が一[SQLインジェクション](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)などでデータベースが流出した場合、全顧客のSlackが乗っ取られる大惨事となります。
+アクセストークン（`xoxb-...`）は、Slackワークスペースへの「合鍵」そのものです。データベース（MySQL, PostgreSQL, [MongoDB](https://kenji.blog/p/nosql-database-selection-kvs-document-graph-wide-column/)など）に平文（プレーンテキスト）で保存してはいけません。万が一[SQLインジェクション](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)などでデータベースが流出した場合、全顧客のSlackが乗っ取られる大惨事となります。
 
 必ずアプリケーションレイヤーで **AES-256-GCM** などの強力な対称鍵暗号を用いて[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)してからDBに保存してください。暗号化/復号のためのマスターキーは、AWS KMS（Key Management [Service](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)）や GCP Cloud KMS などのセキュアな鍵管理サービスを利用して厳格に管理します。
 

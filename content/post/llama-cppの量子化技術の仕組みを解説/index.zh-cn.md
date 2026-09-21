@@ -67,7 +67,7 @@ $$ \tilde{W} = S \times (W_q - Z) $$
 
 ### 3.2. GGUF格式的诞生
 
-2023年8月引入的 **GGUF** 是一种为了解决这些问题而设计的高通用性格式。其最大的特点是采用了 ** 基于键值对（Key-Value）的元数据结构**。
+2023年8月引入的 **GGUF** 是一种为了解决这些问题而设计的高通用性格式。其最大的特点是采用了 ** 基于键值对（[Key-Value](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/)）的元数据结构**。
 
 下面的 Mermaid 图抽象展示了 GGUF 的文件结构。
 

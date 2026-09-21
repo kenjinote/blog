@@ -316,7 +316,7 @@ Para obtener el máximo rendimiento en la programación multihilo, es necesario 
 
 * **Falso intercambio (False Sharing):** 
   Aunque varios hilos actualicen variables diferentes, si esas variables se encuentran en la misma línea de caché de la CPU (generalmente 64 bytes), se producirá una sincronización de memoria innecesaria para mantener la coherencia de la caché, y el rendimiento disminuirá drásticamente. Para evitar esto, es necesario ingeniárselas para alinear las variables en los límites de la línea de caché utilizando el especificador `alignas`.
-* **Libre de bloqueos (Lock-Free) y `std::atomic`:**
+* **Libre de bloqueos ([Lock](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/)-Free) y `std::atomic`:**
   Para evitar la sobrecarga de bloquear/desbloquear mutex, se considera la introducción de operaciones indivisibles (como Compare-And-Swap) utilizando `<atomic>` o estructuras de datos libres de bloqueos. Sin embargo, dado que requiere una comprensión correcta del orden de memoria (`std::memory_order`) y su dificultad de implementación es muy alta, normalmente solo se introduce cuando se considera necesario después de mediciones de rendimiento cuidadosas.
 
 ---

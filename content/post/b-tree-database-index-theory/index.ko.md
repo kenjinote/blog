@@ -73,7 +73,7 @@ $$
 
 ## 4. 데이터베이스의 표준: B+트리로의 진화
 
-실제 RDBMS(MySQL의 InnoDB나 PostgreSQL 등)에서 사용되는 것은 B-트리의 개량판인 **B+트리** (B+Tree)입니다.
+실제 [RDBMS](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/)(MySQL의 InnoDB나 PostgreSQL 등)에서 사용되는 것은 B-트리의 개량판인 **B+트리** (B+Tree)입니다.
 
 ### 4.1 B-트리와 B+트리의 차이
 

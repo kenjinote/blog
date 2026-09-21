@@ -16,7 +16,7 @@ tags:
   - "rust"
 ---
 
-在现代软件开发中，为了提高系统的可扩展性和可用性，理解 **异步处理** 和 **事件驱动架构** （EDA: Event-Driven Architecture）是不可或缺的。本文将从支撑这些核心概念的 Event Loop、Actor模型以及 CQRS（Command Query Responsibility Segregation）出发，深入探讨从理论到实现，再到架构级别的设计。
+在现代软件开发中，为了提高系统的可扩展性和可用性，理解 **异步处理** 和 **事件驱动架构** （EDA: [Event-Driven](https://kenji.blog/zh-cn/p/event-driven-architecture-message-queue-kafka-rabbitmq/) Architecture）是不可或缺的。本文将从支撑这些核心概念的 Event Loop、Actor模型以及 CQRS（Command Query Responsibility Segregation）出发，深入探讨从理论到实现，再到架构级别的设计。
 
 ## 1. 异步处理的基础与挑战
 
@@ -124,7 +124,7 @@ Event Loop 的优势在于无需对共享状态进行锁管理。然而，如果
 
 - **状态封装**: 外部无法直接访问 Actor 内部的状态。
 - **消息队列（Mailbox）**: 接收到的消息会在 Mailbox 中排队，并被依次处理。
-- **无锁化（Lock-free）**: 因为不共享状态，所以不需要互斥锁（Mutex）等锁机制。
+- **无锁化（[Lock](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)-free）**: 因为不共享状态，所以不需要互斥锁（Mutex）等锁机制。
 
 ```mermaid
 flowchart LR
@@ -215,7 +215,7 @@ async fn main() {
 
 异步处理和 Actor模型是优化单个应用程序内部并发处理的方法。将这些扩展到整个系统（如微服务之间）的概念就是 **事件驱动架构（EDA）** 。
 
-在 EDA 中，系统内的状态变化被表示为“事件”，并通过事件总线或消息代理（如 Apache Kafka、RabbitMQ、AWS EventBridge 等）异步分发。
+在 EDA 中，系统内的状态变化被表示为“事件”，并通过事件总线或消息代理（如 Apache [Kafka](https://kenji.blog/zh-cn/p/event-driven-architecture-message-queue-kafka-rabbitmq/)、[RabbitMQ](https://kenji.blog/zh-cn/p/event-driven-architecture-message-queue-kafka-rabbitmq/)、AWS EventBridge 等）异步分发。
 
 ### 4.1 EDA 的主要组件
 
@@ -290,7 +290,7 @@ $ Balance = \sum_{i=1}^{n} (Deposit_i) - \sum_{j=1}^{m} (Withdrawal_j) $
 
 ### 6.1 挑战与最佳实践
 
-事件驱动和异步架构虽然强大，但必须要接受 **最终一致性（Eventual Consistency）** 。由于数据不会立刻反映到所有系统中（非强一致性），因此需要在 UI/UX 层面上进行巧思（例如：乐观 UI 更新）。
+事件驱动和异步架构虽然强大，但必须要接受 **最终一致性（Eventual [Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)）** 。由于数据不会立刻反映到所有系统中（非强一致性），因此需要在 UI/UX 层面上进行巧思（例如：乐观 UI 更新）。
 
 此外，保证分布式系统中的 **幂等性（Idempotency）** 也很重要。必须设计成即使由于网络重传导致同一事件被处理多次，结果也不会发生改变。
 

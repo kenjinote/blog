@@ -73,7 +73,7 @@ $$
 
 ## 4. Стандарт баз данных: Эволюция к B+дереву
 
-В реальных RDBMS (например, InnoDB в MySQL или PostgreSQL) используется улучшенная версия B-дерева — **B+дерево** (B+Tree).
+В реальных [RDBMS](https://kenji.blog/ru/p/rdbms-transaction-acid-isolation-level-lock/) (например, InnoDB в MySQL или PostgreSQL) используется улучшенная версия B-дерева — **B+дерево** (B+Tree).
 
 ### 4.1 Различия между B-деревом и B+деревом
 

@@ -92,7 +92,7 @@ VS Codeは、現在最も普及しているエディタの一つであり、Mark
 
 ### GitHub Copilotを活用した執筆支援
 
-VS Code上で GitHub Copilot を有効にしていると、文脈に応じたAI補完がMarkdownでも機能します。特に技術ブログの場合、「次に説明すべき構成」や「関連するコードブロック」をAIが先読みして提案してくれるため、タイピング時間 $T_{type}$ を大幅に削減可能です。
+VS Code上で GitHub Copilot を有効にしていると、文脈に応じたAI補完がMarkdownでも機能します。特に技術ブログの場合、「次に説明すべき構成」や「関連するコードブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)」をAIが先読みして提案してくれるため、タイピング時間 $T_{type}$ を大幅に削減可能です。
 
 ## 3. Neovimでの極限カスタマイズ
 

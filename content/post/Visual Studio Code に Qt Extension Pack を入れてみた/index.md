@@ -56,7 +56,7 @@ Qt Extension Packは、VSCode用の拡張機能パックです。
 
 ### 2. 拡張機能ビューを開く
 
-左側のアクティビティバー（四角いブロックのアイコン）をクリックし、「拡張機能」を表示します。
+左側のアクティビティバー（四角いブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)のアイコン）をクリックし、「拡張機能」を表示します。
 
 またはショートカットで
 `Ctrl + Shift + X` を押してもOKです。

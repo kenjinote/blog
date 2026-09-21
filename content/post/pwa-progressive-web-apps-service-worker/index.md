@@ -364,7 +364,7 @@ Service Workerの `caches` API（Cache Storage）は、HTTPレスポンス全体
 
 そこで登場するのが **IndexedDB** です。
 
-IndexedDBは、ブラウザに内蔵された非同期トランザクショナルなNoSQLデータベースです。非常に大容量のデータを保存でき、複雑なインデックス検索も可能です。
+IndexedDBは、ブラウザに内蔵された非同期トランザクショナルな[NoSQL](https://kenji.blog/p/nosql-database-selection-kvs-document-graph-wide-column/)データベースです。非常に大容量のデータを保存でき、複雑なインデックス検索も可能です。
 
 ### 8.1. なぜCache Storageだけでは不十分なのか？
 

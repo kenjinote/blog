@@ -352,7 +352,7 @@ sequenceDiagram
 最後，是關於如何保存取得的存取權杖的最佳實踐。
 
 ## 1. 存入資料庫時必須進行加密
-存取權杖（`xoxb-...`）就等同於 Slack 工作區的「備用鑰匙」。絕對不能以明文（Plain Text）的形式保存在資料庫（MySQL、PostgreSQL、MongoDB 等）中。萬一因為 SQL 注入（[SQL Injection](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)）等攻擊導致資料庫外洩，將引發所有客戶的 Slack 帳號被盜用的慘劇。
+存取權杖（`xoxb-...`）就等同於 Slack 工作區的「備用鑰匙」。絕對不能以明文（Plain Text）的形式保存在資料庫（MySQL、PostgreSQL、[MongoDB](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/) 等）中。萬一因為 SQL 注入（[SQL Injection](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)）等攻擊導致資料庫外洩，將引發所有客戶的 Slack 帳號被盜用的慘劇。
 
 請務必在應用程式層使用 **AES-256-GCM** 等強大的對稱金鑰加密技術進行加密後，再存入資料庫。用於加密/解密的主要金鑰（Master Key），應利用 AWS KMS（Key Management [Service](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)）或 GCP Cloud KMS 等安全的金鑰管理服務進行嚴格控管。
 

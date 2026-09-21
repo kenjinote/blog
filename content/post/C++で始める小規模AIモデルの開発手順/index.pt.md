@@ -22,7 +22,7 @@ Neste artigo, explicaremos o procedimento de desenvolvimento muito detalhado par
 
 Na fase de treinamento da IA, o Python, com sua flexibilidade e ecossistema rico, é esmagadoramente vantajoso. No entanto, nas fases de implantação e "Inferência", o C++ torna-se uma escolha poderosa pelas seguintes razões:
 
-1. **Redução de Sobrecarga**: Pode eliminar completamente a sobrecarga do Global Interpreter Lock (GIL) e do tempo de execução do Python.
+1. **Redução de Sobrecarga**: Pode eliminar completamente a sobrecarga do Global Interpreter [Lock](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/) (GIL) e do tempo de execução do Python.
 2. **Eficiência de Memória e Alocação de Arena**: Como a alocação e liberação de memória podem ser controladas manualmente, é possível evitar picos imprevisíveis causados pela coleta de lixo.
 3. **Acesso Direto ao Hardware**: É possível chamar diretamente funções intrínsecas (Intrinsics) SIMD, como AVX-512, AVX2 e ARM NEON, para maximizar o poder de computação da CPU.
 4. **Eliminação de Dependências**: O ggml é uma biblioteca C/C++ sem dependências (Zero dependencies) que pode ser facilmente compilada em um ambiente MSVC no Windows, desde que haja um compilador.
@@ -86,7 +86,7 @@ O **GGUF (GPT-Generated Unified Format)**, convertido a partir de formatos como 
 1. **Magic Bytes**: `0x46554747` (GGUF).
 2. **Version**: Número da versão do formato.
 3. **Tensor Count & Metadata Count**: Número de tensores e número de pares chave-valor de metadados.
-4. **Metadata (Key-Value Pairs)**: Chaves com prefixo de comprimento de string e valores tipados.
+4. **Metadata ([Key-Value](https://kenji.blog/pt/p/nosql-database-selection-kvs-document-graph-wide-column/) Pairs)**: Chaves com prefixo de comprimento de string e valores tipados.
 5. **Tensor Info**: Nome de cada tensor, número de dimensões, tipo de dados (FP16, Q4_K, etc.) e a posição de deslocamento no arquivo.
 6. **Padding**: Preenchimento inserido para garantir que os dados do tensor sejam alinhados a um limite específico (geralmente 32 bytes ou 64 bytes). Isso é essencial para acessos rápidos à memória em instruções SIMD (especialmente AVX).
 7. **Tensor Data**: A matriz real de dados de peso alinhados.

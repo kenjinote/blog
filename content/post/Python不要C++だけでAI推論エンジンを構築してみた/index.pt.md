@@ -16,7 +16,7 @@ No desenvolvimento moderno de IA, o Python é o padrão de fato. Graças a frame
 
 Então, por que se dar ao trabalho de eliminar o Python e construir um motor de inferência de IA exclusivamente em C++? Existem várias razões fortes para isso.
 
-1. **Desempenho extremo e baixa latência**: Você pode eliminar completamente o overhead causado pelo GIL (Global Interpreter Lock) e pela tipagem dinâmica do Python. Especialmente em sistemas que exigem tempo real, atrasos de milissegundos podem ser fatal.
+1. **Desempenho extremo e baixa latência**: Você pode eliminar completamente o overhead causado pelo GIL (Global Interpreter [Lock](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/)) e pela tipagem dinâmica do Python. Especialmente em sistemas que exigem tempo real, atrasos de milissegundos podem ser fatal.
 2. **Facilidade de implantação**: Configurar um ambiente Python (enormes bibliotecas, inferno de dependências) no ambiente do usuário final é extremamente difícil. Com o C++, basta distribuir um único binário executável (`.exe` ou binário ELF) vinculado estaticamente.
 3. **Suporte a dispositivos de borda**: Em ambientes com severas restrições de recursos, como smartphones, dispositivos embarcados e Raspberry Pi, não há margem para executar um runtime Python que consome vários gigabytes de memória.
 4. **Controle direto de hardware**: O controle de baixo nível, como o tempo de alocação de memória, uso explícito de instruções SIMD e otimização de transferências de memória com a GPU, é possível em C++.
@@ -352,7 +352,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-Além disso, na geração de tokens autorregressiva (Autoregressive), é necessário manter os resultados de cálculo (Key e Value) de tokens passados. A isso damos o nome de "**Cache KV (Key-Value Cache)**".
+Além disso, na geração de tokens autorregressiva (Autoregressive), é necessário manter os resultados de cálculo (Key e Value) de tokens passados. A isso damos o nome de "**Cache KV ([Key-Value](https://kenji.blog/pt/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)**".
 
 ```mermaid
 graph TD

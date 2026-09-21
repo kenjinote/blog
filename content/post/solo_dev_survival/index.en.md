@@ -209,7 +209,7 @@ With these few lines of code, you can instantly process credit card payments fro
 
 ---
 
-# 6. Avoiding Infrastructure Lock-in and Ensuring Portability
+# 6. Avoiding Infrastructure [Lock](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)-in and Ensuring Portability
 
 In a strategy that heavily relies on BaaS and managed services, the risk of "vendor lock-in" is always a subject of debate. For example, if you rely too deeply on Firebase's Firestore, migrating to an RDB (Relational Database) later becomes extremely difficult.
 

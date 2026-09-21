@@ -73,7 +73,7 @@ This mathematically supports that the **B-Tree** is extremely efficient in searc
 
 ## 4. Database Standard: Evolution to B+Trees
 
-What is actually used in RDBMS (like MySQL's InnoDB and PostgreSQL) is the **B+Tree**, an improved version of the B-Tree.
+What is actually used in [RDBMS](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) (like MySQL's InnoDB and PostgreSQL) is the **B+Tree**, an improved version of the B-Tree.
 
 ### 4.1 Differences Between B-Trees and B+Trees
 

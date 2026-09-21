@@ -50,7 +50,7 @@ xychart-beta
 
 # 2. 圧倒的アジリティを生むアーキテクチャ設計
 
-大企業のシステムは「安定性」と「スケーラビリティ」を最優先に設計されるため、[Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)やマイクロサービスアーキテクチャが採用されます。しかし、個人開発者が同じことをすれば、インフラの維持管理（Ops）だけでリソースが枯渇します。
+大企業のシステムは「安定性」と「スケーラビリティ」を最優先に設計されるため、[Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)や[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)アーキテクチャが採用されます。しかし、個人開発者が同じことをすれば、インフラの維持管理（Ops）だけでリソースが枯渇します。
 
 個人開発者の技術スタックの合言葉は **"No-Ops"（運用ゼロ）** です。[サーバーレス](https://kenji.blog/p/serverless-architecture-aws-lambda-cold-start/)アーキテクチャを極限まで活用し、ビジネスロジックの記述のみに集中します。
 
@@ -209,7 +209,7 @@ export async function POST(req: Request) {
 
 ---
 
-# 6. インフラのロックイン回避とポータビリティ
+# 6. インフラの[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)イン回避とポータビリティ
 
 BaaSやマネージドサービスを多用する戦略において、常に議論となるのが「ベンダーロックイン」のリスクです。例えば、FirebaseのFirestoreに深く依存しすぎると、後からRDB（リレーショナルデータベース）に移行するのが極めて困難になります。
 

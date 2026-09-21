@@ -352,7 +352,7 @@ Actuellement, le support de PKCE progresse dans certains nouveaux flux de l'API 
 Enfin, voici les meilleures pratiques concernant la méthode de sauvegarde des jetons d'accès obtenus.
 
 ## 1. Le cryptage est obligatoire pour la sauvegarde dans la base de données
-Le jeton d'accès (`xoxb-...`) est la "clé de rechange" pour votre espace de travail Slack. Ne le stockez pas en texte clair (plain text) dans une base de données (MySQL, PostgreSQL, MongoDB, etc.). Dans le cas improbable où la base de données fuirait en raison d'une injection SQL, ce serait une catastrophe majeure où les Slack de tous les clients seraient piratés.
+Le jeton d'accès (`xoxb-...`) est la "clé de rechange" pour votre espace de travail Slack. Ne le stockez pas en texte clair (plain text) dans une base de données (MySQL, PostgreSQL, [MongoDB](https://kenji.blog/fr/p/nosql-database-selection-kvs-document-graph-wide-column/), etc.). Dans le cas improbable où la base de données fuirait en raison d'une injection SQL, ce serait une catastrophe majeure où les Slack de tous les clients seraient piratés.
 
 Assurez-vous toujours de le crypter au niveau de l'application en utilisant une cryptographie symétrique forte comme **AES-256-GCM** avant de le sauvegarder dans la base de données. La clé principale (master key) pour le cryptage/décryptage doit être strictement gérée à l'aide d'un service de gestion des clés sécurisé tel qu'AWS KMS (Key Management [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/)) ou GCP Cloud KMS.
 

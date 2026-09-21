@@ -44,7 +44,7 @@ ProcMon의 드라이버는 미니 필터 드라이버로 등록되어 I/O 매니
 
 Process Explorer는 "초강력 작업 관리자"입니다. 단순한 CPU/메모리 사용률뿐만 아니라 프로세스 트리, 핸들, 로드된 DLL, 스레드의 콜 스택까지 시각화합니다.
 
-### 2.1 핸들 누수(Handle Leak)와 잠금(Lock) 확인
+### 2.1 핸들 누수(Handle Leak)와 잠금([Lock](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/)) 확인
 애플리케이션이 파일을 열어둔 채 크래시되고, 이후 해당 파일을 삭제하거나 이동할 수 없게 되는 문제가 빈번하게 발생합니다. "파일이 다른 프로그램에서 열려 있습니다"라는 오류가 발생한 경우, ProcExp의 **Find** 기능(`Ctrl+F`)을 사용하여 파일명이나 디렉터리명을 검색합니다.
 해당 핸들(File, Section, Mutex, Event 등)을 보유한 프로세스가 특정되면, 대상 프로세스를 마우스 오른쪽 버튼으로 클릭하고 `Close Handle`을 강제 실행하여 프로세스를 종료하지 않고 파일 잠금을 해제할 수 있습니다(단, 앱 동작이 불안정해질 위험에 주의해야 합니다).
 

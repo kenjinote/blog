@@ -16,7 +16,7 @@ Dengan kebangkitan Large Language Models (LLM), kehidupan dan metode pengembanga
 1. **Masalah Privasi dan Keamanan**: Mengirimkan data yang berisi informasi rahasia atau informasi pribadi ke server eksternal sering kali tidak dapat diterima dari perspektif kepatuhan perusahaan (compliance) dan keamanan.
 2. **Ketidakpastian Biaya**: Karena biaya penggunaan API bergantung pada jumlah token, ada risiko bahwa biaya operasional (running cost) akan melonjak tanpa batas pada sistem yang memproses data dalam skala besar atau melakukan permintaan (request) secara berulang.
 3. **Ketergantungan pada Latensi dan Jaringan**: Untuk penggunaan di lingkungan [offline](https://kenji.blog/id/p/pwa-progressive-web-apps-service-worker/) atau eksekusi pada perangkat edge yang memerlukan latensi sangat rendah, komunikasi jaringan menjadi faktor penghambat (bottleneck).
-4. **Vendor Lock-in**: Dengan bergantung pada model penyedia tertentu, Anda mungkin terdampak oleh penghentian layanan di masa mendatang, perubahan persyaratan, atau perubahan perilaku tak terduga akibat pembaruan model.
+4. **Vendor [Lock](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/)-in**: Dengan bergantung pada model penyedia tertentu, Anda mungkin terdampak oleh penghentian layanan di masa mendatang, perubahan persyaratan, atau perubahan perilaku tak terduga akibat pembaruan model.
 
 "LLM Lokal" menarik perhatian sebagai cara untuk menyelesaikan tantangan-tantangan ini. Dengan menjalankan model pada perangkat keras (hardware) Anda sendiri, Anda dapat memanfaatkan AI dengan bebas tanpa mengirimkan data apa pun ke pihak luar, dan tanpa perlu mengkhawatirkan biaya bulanan.
 

@@ -22,7 +22,7 @@ Cet article explique en détail la procédure de développement pour construire 
 
 Dans la phase d'apprentissage de l'IA, Python, avec sa flexibilité et son écosystème riche, a un avantage écrasant. Cependant, dans les phases de déploiement ou d'« inférence (Inference) », C++ devient un choix puissant pour les raisons suivantes.
 
-1. **Réduction des surcoûts** : Le Global Interpreter Lock (GIL) de Python et les surcoûts d'exécution peuvent être complètement éliminés.
+1. **Réduction des surcoûts** : Le Global Interpreter [Lock](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/) (GIL) de Python et les surcoûts d'exécution peuvent être complètement éliminés.
 2. **Efficacité de la mémoire et allocation d'arène** : L'allocation et la libération de la mémoire pouvant être contrôlées manuellement, les pics imprévisibles causés par le ramasse-miettes (garbage collection) sont évités.
 3. **Accès direct au matériel** : Il est possible d'appeler directement des fonctions intrinsèques SIMD (Intrinsics) telles que AVX-512, AVX2 et ARM NEON, exploitant ainsi la puissance de calcul du processeur à son maximum.
 4. **Élimination des dépendances** : ggml est une bibliothèque C/C++ sans aucune dépendance (Zero dependencies), et peut être facilement compilée même dans un environnement MSVC sous Windows tant qu'il y a un compilateur.

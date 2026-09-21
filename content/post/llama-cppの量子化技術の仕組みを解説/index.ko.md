@@ -67,7 +67,7 @@ llama.cpp를 논할 때 빼놓을 수 없는 것이, C++로 작성된 텐서 연
 
 ### 3.2. GGUF 포맷의 탄생
 
-2023년 8월에 도입된 **GGUF** 는 이러한 문제들을 해결하기 위해 설계된 범용성 높은 포맷입니다. 가장 큰 특징은 **키-값(Key-Value) 기반의 메타데이터 구조** 를 채택했다는 것입니다.
+2023년 8월에 도입된 **GGUF** 는 이러한 문제들을 해결하기 위해 설계된 범용성 높은 포맷입니다. 가장 큰 특징은 **키-값([Key-Value](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/)) 기반의 메타데이터 구조** 를 채택했다는 것입니다.
 
 아래의 Mermaid 다이어그램은 GGUF의 파일 구조를 추상화한 것입니다.
 
@@ -88,7 +88,7 @@ graph TD
 ```
 
 **GGUF의 주요 이점:**
-1. **유연성:** 모델의 하이퍼파라미터나 RoPE(Rotary Positional Embedding) 설정, 토크나이저의 어휘 데이터 등을 모두 이름이 지정된 Key-Value 쌍으로 저장합니다. 알 수 없는 키는 무시되므로 새로운 기능의 추가가 쉽습니다.
+1. **유연성:** 모델의 하이퍼파라미터나 RoPE(Rotary Positional Embedding) 설정, 토크나이저의 어휘 데이터 등을 모두 이름이 지정된 [Key-Value](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/) 쌍으로 저장합니다. 알 수 없는 키는 무시되므로 새로운 기능의 추가가 쉽습니다.
 2. **엔디안 독립성:** GGUF는 기본적으로 리틀 엔디안을 채택하고 있지만, 명시적으로 플래그를 가지기 때문에 다른 아키텍처 간에도 안전하게 이식 가능합니다.
 3. **mmap(메모리 매핑) 최적화:** 텐서 데이터는 특정 경계로 정렬(패딩)되어 있으며, OS의 `mmap()` 시스템 콜을 사용하여 디스크에서 직접 메모리 공간으로 매핑 가능합니다. 이를 통해 모델 읽기의 초기화 시간이 사실상 제로가 됩니다.
 

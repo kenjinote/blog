@@ -76,7 +76,7 @@ $$ P_{auto}(T) = 1 - \exp\left(-\lambda \cdot \frac{\text{Predictability}(T)}{\t
 *   $\text{Context Dependency}(T)$: タスクが依存する「暗黙のコンテキスト（ドメイン固有の知識や人間関係）」の強さ
 *   $\lambda$: AIの技術進歩率
 
-APIのルーティング処理を書く、単純なCRUD画面を作る、といった予測可能性が高くコンテキスト依存性が低いタスクは、$P_{auto} \approx 1$ となり、ほぼ完全に自動化される。一方で、「既存のレガシーシステムと新しいマイクロサービスをどう安全に統合するか」「法務部門の要求を満たしつつ、ユーザー体験を損なわない[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)フローをどう設計するか」といった、コンテキスト依存性が極めて高いタスクは自動化が難しい。
+APIのルーティング処理を書く、単純なCRUD画面を作る、といった予測可能性が高くコンテキスト依存性が低いタスクは、$P_{auto} \approx 1$ となり、ほぼ完全に自動化される。一方で、「既存のレガシーシステムと新しい[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)をどう安全に統合するか」「法務部門の要求を満たしつつ、ユーザー体験を損なわない[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)フローをどう設計するか」といった、コンテキスト依存性が極めて高いタスクは自動化が難しい。
 
 ---
 
@@ -102,7 +102,7 @@ graph LR
 
 AIは「局所的な最適化」において人間を凌駕している。1つの関数、1つのクラス、あるいは単一のモジュールを記述する速度と正確性において、人間に勝ち目はない。しかし、AIは「大域的な最適化」や「コンテキストの欠落（Missing Context）」に対しては非常に脆弱である。
 
-これからのプログラマーは「コードを書く労働者」から、「AIが生成した無数のコンポーネントをオーケストレーションするアーキテクト」へと役割を変えなければならない。システム全体を俯瞰し、マイクロサービス境界をどこに引くか、[CAP定理](https://kenji.blog/p/cap-theorem-distributed-systems/)における可用性と一貫性のトレードオフをどうビジネスの文脈に合わせて解決するか、技術的負債をどうコントロールするか。これらは、全体像とビジネスゴールを理解している人間にしかできない高度な知的作業である。
+これからのプログラマーは「コードを書く労働者」から、「AIが生成した無数のコンポーネントをオーケストレーションするアーキテクト」へと役割を変えなければならない。システム全体を俯瞰し、[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)境界をどこに引くか、[CAP定理](https://kenji.blog/p/cap-theorem-distributed-systems/)における可用性と一貫性のトレードオフをどうビジネスの文脈に合わせて解決するか、技術的負債をどうコントロールするか。これらは、全体像とビジネスゴールを理解している人間にしかできない高度な知的作業である。
 
 ---
 
@@ -174,7 +174,7 @@ sequenceDiagram
 
 ここまでの分析を踏まえ、プログラマーがAI時代を生き残るための具体的なアクションプランを提示する。
 
-1.  **技術の「基礎」を徹底的に学び直す**: フレームワークの使い方はAIに任せればよい。しかし、OSの仕組み、ネットワークプロトコル（[TCP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)/IP, [HTTP/3](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)）、データベースの内部構造（[B-Tree](https://kenji.blog/p/b-tree-database-index-theory/), トランザクション分離レベル）、データ構造とアルゴリズムに関する深い理解は絶対に必要である。AIの出力が正しいかを判断するためには、コンピュータサイエンスの確固たる基礎が不可欠である。
+1.  **技術の「基礎」を徹底的に学び直す**: フレームワークの使い方はAIに任せればよい。しかし、OSの仕組み、ネットワークプロトコル（[TCP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)/IP, [HTTP/3](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)）、データベースの内部構造（[B-Tree](https://kenji.blog/p/b-tree-database-index-theory/), [トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)[分離レベル](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)）、データ構造とアルゴリズムに関する深い理解は絶対に必要である。AIの出力が正しいかを判断するためには、コンピュータサイエンスの確固たる基礎が不可欠である。
 2.  **クラウド・アーキテクチャと[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)をマスターする**: 個別のコードではなく、AWS, GCP, Azureといったクラウドリソースをどのように組み合わせてスケーラブルなシステムを構築するかに注力する。[Terraform](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)などの[IaC](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)（[Infrastructure as Code](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)）の概念を理解し、システム全体をコードとして設計する能力を養う。
 3.  **ビジネスドメインの専門家になる**: 自分が所属する業界のビジネスモデル、法規制、ユーザーの行動心理を深く学ぶ。エンジニアの枠を超え、プロダクトマネージャー（PM）に近い視点を持つこと。
 4.  **コミュニケーションとファシリテーションのスキルを磨く**: 人間と人間の間にある「曖昧さ」を解決し、合意形成を行うプロセスはAIには代替できない。ステークホルダーと対話し、真の課題を発見するソフトスキルは、最も価値の高いスキルとなる。

@@ -195,9 +195,9 @@ paradox(paradox)
 ```
 
 1.  もし `halts(paradox, paradox)` が `True`（停止する）と判定した場合：
-    `paradox` 関数は `if` ブロックに入り、 **無限ループ** します。つまり停止しません。これは判定結果と矛盾します。
+    `paradox` 関数は `if` ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)に入り、 **無限ループ** します。つまり停止しません。これは判定結果と矛盾します。
 2.  もし `halts(paradox, paradox)` が `False`（無限ループする）と判定した場合：
-    `paradox` 関数は `else` ブロックに入り、 **すぐに停止** します。これも判定結果と矛盾します。
+    `paradox` 関数は `else` ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)に入り、 **すぐに停止** します。これも判定結果と矛盾します。
 
 どちらに転んでも矛盾が生じるため、最初の仮定であった **「完全な `halts` 関数が存在する」という前提が間違っていた** ことになります。したがって、停止性問題を解くアルゴリズムは存在しません。
 

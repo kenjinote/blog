@@ -328,7 +328,7 @@ sequenceDiagram
 # 9. 신뢰성과 비용 모델링의 수리적 접근
 
 IaC를 사용하여 인프라를 설계할 때 신뢰성(Reliability)과 비용의 균형을 평가하는 것은 중요합니다.
-예를 들어 멀티 AZ(Availability Zone) 구성에서의 시스템 가동률은 수리 모델로 표현할 수 있습니다.
+예를 들어 멀티 AZ([Availability](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/) Zone) 구성에서의 시스템 가동률은 수리 모델로 표현할 수 있습니다.
 
 단일 컴포넌트(AZ)의 신뢰성을 $R_1$ 이라고 합시다.
 만약 2개의 AZ(이중화)에 리소스를 배치하고, 둘 중 어느 한쪽이라도 가동 중이면 시스템 전체가 가동 중인 것으로 간주할 수 있는 경우, 시스템 전체의 신뢰성 $R_{total}$ 은 다음과 같은 식으로 표현됩니다.

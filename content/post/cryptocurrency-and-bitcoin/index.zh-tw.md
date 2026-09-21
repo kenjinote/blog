@@ -64,7 +64,7 @@ flowchart TD
 
 ### 區塊的結構
 
-一個區塊主要由「區塊標頭（Block Header）」與「交易數據（Transaction Data）」兩部分組成。
+一個區塊主要由「區塊標頭（Block Header）」與「交易數據（[Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) Data）」兩部分組成。
 
 區塊標頭包含以下資訊：
 1. **版本（Version）**： 軟體版本
@@ -187,7 +187,7 @@ $$
 
 ## 6. 交易與 UTXO 模型
 
-比特幣的交易並不是像銀行帳戶餘額（基於帳戶的模型）那樣的機制，而是採用了 **UTXO（Unspent Transaction Output：未花費交易輸出）** 模型。
+比特幣的交易並不是像銀行帳戶餘額（基於帳戶的模型）那樣的機制，而是採用了 **UTXO（Unspent [Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) Output：未花費交易輸出）** 模型。
 
 ### 輸入與輸出
 
@@ -285,7 +285,7 @@ Peter Shor 於 1994 年發表的「Shor 演算法（[Shor's Algorithm](https://k
 
 ### 區塊獎勵與減半（Halving）
 
-礦工之所以願意投入龐大電力與硬體投資來進行挖礦，是因為有經濟報酬。當礦工成功生成新區塊時，會透過一種稱為 **創幣交易（Coinbase Transaction）** 的特殊交易，接收到新發行的比特幣。
+礦工之所以願意投入龐大電力與硬體投資來進行挖礦，是因為有經濟報酬。當礦工成功生成新區塊時，會透過一種稱為 **創幣交易（Coinbase [Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)）** 的特殊交易，接收到新發行的比特幣。
 
 比特幣的總發行量透過程式設定了 **2,100 萬枚** 的上限。此外，還內建了 **減半（Halving）** 機制，每 210,000 個區塊（約 4 年），每個區塊的挖礦獎勵就會減半一次。
 

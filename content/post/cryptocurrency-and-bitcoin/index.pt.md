@@ -64,7 +64,7 @@ flowchart TD
 
 ### Estrutura do Bloco
 
-Um bloco é composto principalmente por um "Cabeçalho do Bloco" (Block Header) e "Dados da Transação" (Transaction Data).
+Um bloco é composto principalmente por um "Cabeçalho do Bloco" (Block Header) e "Dados da Transação" ([Transaction](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/) Data).
 
 O cabeçalho do bloco contém as seguintes informações:
 1. **Versão (Version)**: A versão do software
@@ -187,7 +187,7 @@ Se a hashrate aumentar, o alvo fica menor (aumento na dificuldade), e se a hashr
 
 ## 6. Transações e o Modelo UTXO
 
-As transações do Bitcoin não adotam um mecanismo semelhante ao saldo de uma conta bancária (modelo baseado em contas), mas sim um modelo chamado **UTXO (Unspent Transaction Output: Saída de Transação Não Gasta)**.
+As transações do Bitcoin não adotam um mecanismo semelhante ao saldo de uma conta bancária (modelo baseado em contas), mas sim um modelo chamado **UTXO (Unspent [Transaction](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/) Output: Saída de Transação Não Gasta)**.
 
 ### Entradas e Saídas (Inputs e Outputs)
 
@@ -285,7 +285,7 @@ A maior conquista de Satoshi Nakamoto não foi apenas resolver os quebra-cabeça
 
 ### Recompensa de Bloco e Halving (Redução pela Metade)
 
-A razão pela qual os mineradores mineram blocos fazendo grandes investimentos em eletricidade e hardware é que existe uma recompensa econômica. Quando um minerador consegue gerar um novo bloco, ele recebe bitcoins recém-emitidos através de uma transação especial chamada **Transação Coinbase (Coinbase Transaction)**.
+A razão pela qual os mineradores mineram blocos fazendo grandes investimentos em eletricidade e hardware é que existe uma recompensa econômica. Quando um minerador consegue gerar um novo bloco, ele recebe bitcoins recém-emitidos através de uma transação especial chamada **Transação Coinbase (Coinbase [Transaction](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/))**.
 
 O limite de fornecimento total de Bitcoin é programado para **21 milhões de moedas**. Além disso, há um mecanismo chamado **Halving (Redução pela metade)** no qual a recompensa de mineração por bloco é reduzida pela metade a cada 210.000 blocos (aproximadamente 4 anos).
 

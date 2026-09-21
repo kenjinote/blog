@@ -15,13 +15,13 @@ tags:
 
 在现代软件架构中，系统的分布式化已成为不可避免的要求。随着云计算的普及、微服务架构的采用以及大数据处理需求的增加，依赖单一强大服务器（向上扩展）的方法已不再是主流，取而代之的是协调大量廉价服务器（向外扩展）的方法。
 
-然而，在构建和运营分布式系统时，工程师们总是面临着艰难的选择。那就是“数据一致性”与“系统可用性”之间的权衡。在数学上证明并公式化这种本质困境的，正是 **CAP定理** （CAP theorem）。
+然而，在构建和运营分布式系统时，工程师们总是面临着艰难的选择。那就是“数据一致性”与“系统可用性”之间的权衡。在数学上证明并公式化这种本质困境的，正是 **[CAP定理](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)** （CAP theorem）。
 
 本文将从CAP定理的基础及其证明讲起，进一步探讨现代分布式数据库如何应对这一困境，并延伸至CAP定理的扩展版本—— **PACELC定理** ，通过公式、图解以及实现示例，进行极其详细的深入剖析。
 
 ## 1. 什么是分布式系统？
 
-在讨论CAP定理之前，让我们先明确什么是 **分布式系统** （Distributed System）。
+在讨论CAP定理之前，让我们先明确什么是 **分布式系统** （[Distributed System](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)）。
 
 分布式系统是指通过网络互连的多个独立计算机（节点），在用户看来就像是一个单一且一致的系统。
 
@@ -49,15 +49,15 @@ graph LR
 
 然而，由于分布式系统建立在不稳定的网络基础之上，因此不可避免地会伴随“网络分区”和“消息延迟或丢失”等问题。
 
-## 2. CAP定理的3个要素
+## 2. [CAP定理](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)的3个要素
 
 CAP定理于2000年由埃里克·布鲁尔（Eric Brewer）提出，并于2002年由塞斯·吉尔伯特（Seth Gilbert）和南希·林奇（Nancy Lynch）进行了严格的证明。
 
 该定理主张，在分布式系统中的以下3个特性中，最多只能同时满足 **2个** 。
 
-1.  **C: Consistency** （一致性）
-2.  **A: Availability** （可用性）
-3.  **P: Partition Tolerance** （分区容错性）
+1.  **C: [Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)** （一致性）
+2.  **A: [Availability](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)** （可用性）
+3.  **P: [Partition Tolerance](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)** （分区容错性）
 
 让我们来看看各自的严格定义。
 
@@ -120,7 +120,7 @@ sequenceDiagram
 
 ## 4. Quorum（法定人数）与一致性的微调
 
-在许多分布式数据库（例如：Cassandra、DynamoDB 等）中，并没有将整个系统固定为 CP 或 AP，而是通过对每个请求使用 **Quorum** （法定人数）的参数调整，来平衡 C 和 A。
+在许多分布式数据库（例如：[Cassandra](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/)、DynamoDB 等）中，并没有将整个系统固定为 CP 或 AP，而是通过对每个请求使用 **Quorum** （法定人数）的参数调整，来平衡 C 和 A。
 
 假设副本数为 $ N $ 。
 将写入被视为成功所需响应的节点数设为 $ W $ 。
@@ -171,10 +171,10 @@ PACELC 可以这样解读：
 
 ### 5.1. 典型数据库的 PACELC 分类
 
-*   **PC/EC** (HBase, MongoDB, Zookeeper)
+*   **PC/EC** (HBase, [MongoDB](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/), Zookeeper)
     *   分区时优先考虑一致性（PC）。正常时也优先考虑一致性，允许一定的延迟（EC）。
-*   **PA/EL** (Cassandra, Riak, DynamoDB)
-    *   分区时优先考虑可用性（PA）。正常时优先考虑低延迟，接受最终一致性（Eventual Consistency）（EL）。
+*   **PA/EL** ([Cassandra](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/), Riak, DynamoDB)
+    *   分区时优先考虑可用性（PA）。正常时优先考虑低延迟，接受最终一致性（Eventual [Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)）（EL）。
 *   **PA/EC** (MySQL Cluster 等)
     *   分区时优先考虑可用性，正常时尝试保持一致性。
 
@@ -278,13 +278,13 @@ stateDiagram-v2
 
 CAP 定理不仅仅局限于单一的数据库，它对现代的 **微服务架构** 也产生了深远的影响。
 
-在单体应用中，使用单一关系型数据库的 ACID 事务很容易保持数据一致性。然而，在按业务领域划分服务和数据库的微服务中，需要跨服务的分布式事务。
+在单体应用中，使用单一关系型数据库的 [ACID](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/) 事务很容易保持数据一致性。然而，在按业务领域划分服务和数据库的微服务中，需要跨服务的分布式事务。
 
 这时，CAP 定理的威力便显现出来。如果使用分布式事务（如两阶段提交 - 2PC）来追求强一致性（C），那么当任何一个服务宕机或出现通信延迟时，整个系统都会被阻塞，导致可用性（A）和延迟（L）显著下降。
 
 为了解决这个问题，微服务中广泛采用了 **Saga 模式** 。
 
-Saga 模式将一个大事务分解为一系列本地事务，并使用异步消息传递（如 Kafka 或 RabbitMQ）进行协调。
+Saga 模式将一个大事务分解为一系列本地事务，并使用异步消息传递（如 [Kafka](https://kenji.blog/zh-cn/p/event-driven-architecture-message-queue-kafka-rabbitmq/) 或 [RabbitMQ](https://kenji.blog/zh-cn/p/event-driven-architecture-message-queue-kafka-rabbitmq/)）进行协调。
 
 ```mermaid
 flowchart TD
@@ -298,13 +298,13 @@ flowchart TD
     MessageBroker -->|"取消"| Order
 ```
 
-在 Saga 模式中，放弃了强一致性，接受了 **最终一致性（Eventual Consistency）** （一种 AP 方法）。如果中途处理失败，则不是进行回滚，而是发布 **补偿事务（Compensating Transaction）** 来执行逻辑上还原状态的操作。通过这种方式，在维持高可扩展性和可用性的同时，实现了业务上可接受的程度的一致性。
+在 Saga 模式中，放弃了强一致性，接受了 **最终一致性（Eventual [Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)）** （一种 AP 方法）。如果中途处理失败，则不是进行回滚，而是发布 **补偿事务（Compensating [Transaction](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)）** 来执行逻辑上还原状态的操作。通过这种方式，在维持高可扩展性和可用性的同时，实现了业务上可接受的程度的一致性。
 
 ## 总结
 
 本文深入探讨了分布式系统中最重要原则——CAP 定理。
 
-*   **CAP 定理** 表明，在分布式系统中，无法同时满足 Consistency（一致性）、Availability（可用性）和 Partition Tolerance（分区容错性）。在不可避免分区的现实世界中，实际上就是要在 **CP** 或 **AP** 之间做出选择。
+*   **CAP 定理** 表明，在分布式系统中，无法同时满足 Consistency（一致性）、[Availability](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)（可用性）和 [Partition Tolerance](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)（分区容错性）。在不可避免分区的现实世界中，实际上就是要在 **CP** 或 **AP** 之间做出选择。
 *   **PACELC 定理** 对此进行了扩展，表明即使在未发生分区正常运行时，在延迟（L）和一致性（C）之间也存在权衡。
 *   通过使用 **Quorum（法定人数）** ，可以根据需求灵活调整一致性和可用性的平衡（ $ W+R>N $ ）。
 *   在 AP 系统中，利用 **向量时钟** 来解决冲突；而在 CP 系统中，则利用如 **[Raft](https://kenji.blog/zh-cn/p/byzantine-generals-problem-consensus/)** 这样的共识算法来进行严格的排序。

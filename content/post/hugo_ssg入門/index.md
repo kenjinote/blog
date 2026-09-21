@@ -111,7 +111,7 @@ WordPressにおいては、コンテンツはMySQLの `wp_posts` テーブルに
 
 ### 3.2 コンテンツ管理：MarkdownとFront Matter
 
-Hugoの各記事ファイルは、最上部に「Front Matter（フロントマター）」と呼ばれるメタデータのブロックを持ち、その下に本文（Markdown）が続く構成となります。Front MatterはTOML, YAML, JSONのいずれかで記述できますが、YAMLが広く使われています。
+Hugoの各記事ファイルは、最上部に「Front Matter（フロントマター）」と呼ばれるメタデータのブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を持ち、その下に本文（Markdown）が続く構成となります。Front MatterはTOML, YAML, JSONのいずれかで記述できますが、YAMLが広く使われています。
 
 ```yaml
 ---

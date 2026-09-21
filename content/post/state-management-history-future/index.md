@@ -436,7 +436,7 @@ React Compilerは、ビルド時にReactコンポーネントのコードを静�
 
 最後に、[状態管理](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)の未来において見逃せないのが、サーバーサイドレンダリング（SSR）とクライアントサイドの連携における「ハイドレーション（Hydration）」の課題です。
 
-従来のSSR（Next.jsなど）では、サーバーで生成したHTMLをブラウザに送信した後、ブラウザ側でJavaScriptをロード・実行し、イベントリスナーをアタッチして状態を再構築する「Hydration」という重い処理が必要でした。この間、ユーザーの操作はブロックされます。
+従来のSSR（Next.jsなど）では、サーバーで生成したHTMLをブラウザに送信した後、ブラウザ側でJavaScriptをロード・実行し、イベントリスナーをアタッチして状態を再構築する「Hydration」という重い処理が必要でした。この間、ユーザーの操作はブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)されます。
 
 **Qwik** などの次世代フレームワークは、状態管理とJavaScriptのロードを根本から見直しました。彼らは **Resumability（再開可能性）** という概念を提唱しています。
 

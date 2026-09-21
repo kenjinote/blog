@@ -352,7 +352,7 @@ sequenceDiagram
 마지막으로 획득한 액세스 토큰의 보관 방법에 대한 모범 사례입니다.
 
 ## 1. 데이터베이스 저장 시 암호화 필수
-액세스 토큰(`xoxb-...`)은 Slack 워크스페이스로 가는 "마스터 키" 그 자체입니다. 데이터베이스(MySQL, PostgreSQL, MongoDB 등)에 평문(플레인 텍스트)으로 저장해서는 안 됩니다. 만에 하나 SQL 인젝션 등으로 데이터베이스가 유출될 경우, 모든 고객의 Slack이 탈취되는 대참사가 발생합니다.
+액세스 토큰(`xoxb-...`)은 Slack 워크스페이스로 가는 "마스터 키" 그 자체입니다. 데이터베이스(MySQL, PostgreSQL, [MongoDB](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/) 등)에 평문(플레인 텍스트)으로 저장해서는 안 됩니다. 만에 하나 SQL 인젝션 등으로 데이터베이스가 유출될 경우, 모든 고객의 Slack이 탈취되는 대참사가 발생합니다.
 
 반드시 애플리케이션 레이어에서 **AES-256-GCM** 등의 강력한 대칭키 암호를 사용하여 암호화한 뒤 DB에 저장해야 합니다. 암호화/복호화를 위한 마스터 키는 AWS KMS(Key Management 경[Service](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/))나 GCP Cloud KMS 같은 안전한 키 관리 서비스를 이용하여 엄격하게 관리합니다.
 

@@ -271,7 +271,7 @@ El mero hecho de que existan los algoritmos PQC (como Dilithium o SPHINCS+) no s
 La mayor barrera para la introducción de PQC es el crecimiento drástico del tamaño de datos.
 Mientras que el tamaño de las firmas ECDSA actuales es de unos 70 bytes, en Dilithium (ML-DSA), de criptografía basada en retículos, el tamaño de la firma oscila entre unos 2,420 y 4,595 bytes (dependiendo del nivel de seguridad), y la clave pública supera los 1,300 bytes. Las firmas basadas en hash SPHINCS+ llegan a decenas de miles de bytes tan solo para la firma.
 
-Si [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) introdujera PQC manteniendo el límite actual de tamaño de bloque (aproximadamente 4 MB de peso incluyendo SegWit), el número de transacciones que podrían incluirse en un bloque disminuiría drásticamente. El rendimiento de la red (TPS: Transactions Per Second) caería de manera devastadora y la congestión en los pagos se volvería la norma.
+Si [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) introdujera PQC manteniendo el límite actual de tamaño de bloque (aproximadamente 4 MB de peso incluyendo SegWit), el número de transacciones que podrían incluirse en un bloque disminuiría drásticamente. El rendimiento de la red (TPS: [Transaction](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/)s Per Second) caería de manera devastadora y la congestión en los pagos se volvería la norma.
 Resolver esto requiere aumentar masivamente el tamaño del bloque, pero esto a su vez elevaría los requerimientos de almacenamiento y ancho de banda de los nodos completos, dificultaría que las personas ejecuten nodos por sí mismas y, en consecuencia, resultaría en el dilema de propiciar **la centralización de la red**.
 
 ```mermaid

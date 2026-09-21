@@ -16,7 +16,7 @@ Mit dem Aufstieg von Large Language Models (LLMs) haben sich unser Leben und uns
 1. **Datenschutz- und Sicherheitsprobleme**: Das Senden von Daten mit vertraulichen oder persönlichen Informationen an externe Server ist aus Compliance- und Sicherheitssicht für Unternehmen oft inakzeptabel.
 2. **Kostenunsicherheit**: Da die API-Nutzungsgebühren von der Anzahl der Token abhängen, besteht bei Systemen, die große Datenmengen verarbeiten oder häufige Anfragen stellen, das Risiko unbegrenzt steigender laufender Kosten.
 3. **Latenz und Netzwerkabhängigkeit**: Die Netzwerkkommunikation wird bei der Nutzung in Offline-Umgebungen oder bei der Ausführung auf Edge-Geräten, die eine extrem niedrige Latenz erfordern, zum Flaschenhals.
-4. **Vendor Lock-in**: Die Abhängigkeit vom Modell eines bestimmten Anbieters kann dazu führen, dass man durch zukünftige Diensteinstellungen, Änderungen der Nutzungsbedingungen oder unbeabsichtigte Verhaltensänderungen aufgrund von Modell-Updates beeinträchtigt wird.
+4. **Vendor [Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)-in**: Die Abhängigkeit vom Modell eines bestimmten Anbieters kann dazu führen, dass man durch zukünftige Diensteinstellungen, Änderungen der Nutzungsbedingungen oder unbeabsichtigte Verhaltensänderungen aufgrund von Modell-Updates beeinträchtigt wird.
 
 Als Lösung für diese Herausforderungen gewinnen "lokale LLMs" zunehmend an Aufmerksamkeit. Indem man Modelle auf der eigenen Hardware ausführt, sendet man keinerlei Daten nach außen, muss sich keine Sorgen um monatliche Kosten machen und kann KI frei nutzen.
 

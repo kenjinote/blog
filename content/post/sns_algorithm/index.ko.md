@@ -68,7 +68,7 @@ $$
 $$
 
 **기술 선정에 미치는 영향:**
-DLRM과 같은 거대 모델은 극히 미세한 신호(예를 들어 '동영상이 포함된 게시물'이나 '특정 버즈워드가 포함된 게시물'에 대한 약간의 체류 시간 증가)까지 포착하여 예측 점수에 반영합니다. 결과적으로 '과격한 제목(예: "React는 이제 구식이다", "Microservices의 종언")'이나 '시각적으로 화려한 데모'를 포함한 기술 정보가 알고리즘적으로 우대받기 쉬워집니다.
+DLRM과 같은 거대 모델은 극히 미세한 신호(예를 들어 '동영상이 포함된 게시물'이나 '특정 버즈워드가 포함된 게시물'에 대한 약간의 체류 시간 증가)까지 포착하여 예측 점수에 반영합니다. 결과적으로 '과격한 제목(예: "React는 이제 구식이다", "[[Microservice](https://kenji.blog/ko/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/ko/p/microservices-architecture-bff-api-gateway/)의 종언")'이나 '시각적으로 화려한 데모'를 포함한 기술 정보가 알고리즘적으로 우대받기 쉬워집니다.
 
 ### 2.3 강화학습과 다중 선택 밴딧 문제 (Multi-Armed Bandits)
 
@@ -165,7 +165,7 @@ SNS 게시물은 '독자의 어텐션(주의력)을 빼앗기' 위해 최적화�
 
 기술 업계에는 **"Choose Boring Technology"(지루한 기술을 선택하라)** 라는 유명한 만트라가 있습니다. 이는 혁신 토큰(Innovation Token: 조직이 새롭고 미지의 기술에 사용할 수 있는 제한된 자원)을 비즈니스의 핵심 가치와 직결되지 않는 인프라나 프레임워크 선정에 낭비해서는 안 된다는 가르침입니다.
 
-SNS 알고리즘은 '참신함'을 좋아합니다. 하지만 실제 운영에 견딜 수 있는 견고한 시스템을 구축하는 데 필요한 것은, 10년 이상의 운영 실적이 있고 장애 발생 시 복구 절차가 구글 검색에서 수백만 건 히트하는 '지루한' 기술(PostgreSQL, Redis, 표준적인 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 등)인 것입니다.
+SNS 알고리즘은 '참신함'을 좋아합니다. 하지만 실제 운영에 견딜 수 있는 견고한 시스템을 구축하는 데 필요한 것은, 10년 이상의 운영 실적이 있고 장애 발생 시 복구 절차가 구글 검색에서 수백만 건 히트하는 '지루한' 기술(PostgreSQL, [Redis](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/), 표준적인 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 등)인 것입니다.
 
 ---
 

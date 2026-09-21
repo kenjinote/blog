@@ -151,7 +151,7 @@ For those who are still not convinced (or feel intuitively foggy) even with math
 
 The basic principle of double-entry bookkeeping is that "Debit" and "Credit" always match. Let's use this to make a journal entry of the movement of money.
 
-### Transaction 1: Guests pay $30
+### [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) 1: Guests pay $30
 This is the initial state from the hotel's perspective.
 
 | Debit (Increase in Assets) | Credit (Increase in Liabilities/Equity) |

@@ -63,7 +63,7 @@ flowchart TD
 
 ### Block Structure
 
-A single block is broadly composed of a "Block Header" and "Transaction Data".
+A single block is broadly composed of a "Block Header" and "[Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) Data".
 
 The Block Header includes the following information:
 1. **Version**: Software version
@@ -184,7 +184,7 @@ $$
 
 If the hash rate increases, the target becomes smaller (difficulty increases), and if the hash rate decreases, the target becomes larger (difficulty decreases).
 
-## 6. Transactions and the UTXO Model
+## 6. [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)s and the UTXO Model
 
 Bitcoin transactions do not use a mechanism like bank account balances (account-based model), but rather adopt a model called **UTXO (Unspent Transaction Output)**.
 
@@ -204,7 +204,7 @@ flowchart LR
 Suppose Alice wants to send 1.8 BTC to Bob. Alice specifies two UTXOs she owns, 1.5 BTC and 0.5 BTC (total 2.0 BTC), as inputs, and creates an output of 1.8 BTC addressed to Bob. Of the remaining 0.2 BTC, 0.19 BTC becomes an output addressed to Alice's new address as change, and the difference of 0.01 BTC becomes the fee for the miner who processed the transaction.
 
 $$
-\sum \text{Inputs} = \sum \text{Outputs} + \text{Transaction\_Fee}
+\sum \text{Inputs} = \sum \text{Outputs} + \text{[Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)\_Fee}
 $$
 
 This UTXO model is easy to process in parallel because transactions are highly independent, and it is also superior from a privacy perspective (a new change address can be used every time).
@@ -267,7 +267,7 @@ Computers participating in the network are called "Nodes". There are several typ
 - **SPV Node (Simplified Payment Verification Node)**: A lightweight node that downloads only block headers rather than the entire blockchain. It is mainly used in smartphone wallets. It can verify whether its own transactions are included in a block (verifying the Merkle Path), but it does not have the verification capability of a full node.
 - **Mining Node**: A node that performs [PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) calculations and generates new blocks. Today, huge "mining pools," which bundle specialized mining hardware called ASICs (Application Specific Integrated Circuits), take on this role.
 
-### Transaction Propagation Process (Gossip Protocol)
+### [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) Propagation Process (Gossip Protocol)
 
 When a user (Alice) creates a transaction to send Bitcoin, how does that data spread around the world?
 
@@ -284,7 +284,7 @@ Satoshi Nakamoto's greatest achievement was not just solving a cryptographic puz
 
 ### Block Rewards and Halving
 
-The reason miners make massive investments in electricity and hardware to mine blocks is because of the economic rewards. When a miner successfully generates a new block, they receive newly issued Bitcoins through a special transaction called a **Coinbase Transaction**.
+The reason miners make massive investments in electricity and hardware to mine blocks is because of the economic rewards. When a miner successfully generates a new block, they receive newly issued Bitcoins through a special transaction called a **Coinbase [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)**.
 
 The total supply of Bitcoin is capped at **21 million coins** by programming. Additionally, there is a built-in mechanism called **Halving**, where the mining reward per block is cut in half every 210,000 blocks (about 4 years).
 

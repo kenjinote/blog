@@ -46,7 +46,7 @@ Dengan kata lain, sekadar memuat bobot model ke GPU akan mengonsumsi 16GB VRAM. 
 
 ## 1.2 Konsumsi Memori Saat Inferensi: Peningkatan Cache KV
 
-Dalam inferensi LLM (terutama pembuatan teks autoregresif), hal yang menekan VRAM sama atau bahkan lebih besar daripada bobotnya adalah **Cache KV (Key-Value Cache)**.
+Dalam inferensi LLM (terutama pembuatan teks autoregresif), hal yang menekan VRAM sama atau bahkan lebih besar daripada bobotnya adalah **Cache KV ([Key-Value](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)**.
 Pada arsitektur Transformer, tensor Key dan Value pada setiap lapisan attention terus di-cache dalam VRAM untuk mencegah perhitungan ulang informasi token yang telah diproses di masa lalu. Hal ini meningkatkan kecepatan komputasi (Compute), tetapi seiring dengan bertambahnya panjang konteks (panjang prompt masukan + panjang teks yang dihasilkan), konsumsi memori meningkat secara linear dan eksponensial.
 
 Jumlah memori cache KV yang dikonsumsi saat memproses 1 token, $M_{kv\_token}$, dihitung secara akurat berdasarkan arsitektur model dengan rumus berikut:

@@ -35,7 +35,7 @@ Transformerは、RNNの構造を完全に捨て去り、「Attention」のみを
 
 # 2. Transformerの全体アーキテクチャ
 
-まずは、Transformer全体のアーキテクチャを俯瞰してみましょう。Transformerは大きく分けて「Encoder（エンコーダ）」と「Decoder（デコーダ）」の2つのブロックから構成されています。翻訳タスクを例にとると、Encoderが入力言語（例：英語）を数学的なベクトル表現に変換し、Decoderがそのベクトル表現をもとに出力言語（例：日本語）を生成します。
+まずは、Transformer全体のアーキテクチャを俯瞰してみましょう。Transformerは大きく分けて「Encoder（エンコーダ）」と「Decoder（デコーダ）」の2つのブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)から構成されています。翻訳タスクを例にとると、Encoderが入力言語（例：英語）を数学的なベクトル表現に変換し、Decoderがそのベクトル表現をもとに出力言語（例：日本語）を生成します。
 
 以下の図は、Encoderブロックの内部構造を簡略化したものです。
 
@@ -243,7 +243,7 @@ $$ \text{LN}(x) = \frac{x - \mu}{\sqrt{\sigma^2 + \epsilon}} \odot \gamma + \bet
 
 # 8. デコーダ特有の構造：Masked AttentionとCross-Attention
 
-ここまで解説した構造はエンコーダのものです。文章を生成するデコーダブロックでは、構造が少し異なります。
+ここまで解説した構造はエンコーダのものです。文章を生成するデコーダブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)では、構造が少し異なります。
 
 ## 8.1 Masked Multi-Head Attention
 デコーダの役割は「過去の単語から次の単語を予測すること」です。したがって、訓練時に「未来の単語」を見てしまってはカンニングになってしまいます。これを防ぐための数学的操作が **Masking（マスキング）** です。

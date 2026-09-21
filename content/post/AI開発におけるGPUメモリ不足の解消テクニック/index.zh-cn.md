@@ -46,7 +46,7 @@ $$ M_{weights} = 8,000,000,000 \times 2 \text{ bytes} \approx 16,000,000,000 \te
 
 ## 1.2 推理时的内存消耗：KV缓存的激增
 
-在LLM的推理（尤其是自回归式的文本生成）过程中， **KV缓存（Key-Value Cache）** 对VRAM的压力与权重相当，甚至更为剧烈。
+在LLM的推理（尤其是自回归式的文本生成）过程中， **KV缓存（[Key-Value](https://kenji.blog/zh-cn/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache）** 对VRAM的压力与权重相当，甚至更为剧烈。
 在Transformer架构中，为了防止重复计算过去已生成或处理过的Token信息，各注意力层的Key和Value张量会持续缓存在VRAM中。这虽然提高了计算速度（Compute），但随着上下文长度（输入提示长度＋生成长度）的增加，内存消耗量会呈爆炸性的线性增长。
 
 处理1个Token时消耗的KV缓存内存量 $M_{kv\_token}$，可根据模型架构通过以下公式进行精确计算：

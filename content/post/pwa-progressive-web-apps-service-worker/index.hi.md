@@ -365,7 +365,7 @@ Service Worker का `caches` API (Cache Storage) पूर्ण HTTP प्�
 
 यहीं पर **IndexedDB** आता है।
 
-IndexedDB ब्राउज़र में निर्मित एक एसिंक्रोनस ट्रांजैक्शनल NoSQL डेटाबेस है। यह बड़ी मात्रा में डेटा संग्रहीत कर सकता है और जटिल इंडेक्स खोजों की अनुमति देता है।
+IndexedDB ब्राउज़र में निर्मित एक एसिंक्रोनस ट्रांजैक्शनल [NoSQL](https://kenji.blog/hi/p/nosql-database-selection-kvs-document-graph-wide-column/) डेटाबेस है। यह बड़ी मात्रा में डेटा संग्रहीत कर सकता है और जटिल इंडेक्स खोजों की अनुमति देता है।
 
 ### 8.1. केवल Cache Storage अपर्याप्त क्यों है?
 

@@ -13,7 +13,7 @@ tags:
   - "system-design"
 ---
 
-In der modernen Softwarearchitektur ist die Verteilung von Systemen zu einer unvermeidbaren Anforderung geworden. Mit der Verbreitung von Cloud Computing, der Einführung von Microservices-Architekturen und dem steigenden Bedarf an Big-Data-Verarbeitung ist der Ansatz, auf viele kostengünstige Server (Scale-out) statt auf einen einzigen leistungsstarken Server (Scale-up) zu setzen, zum Mainstream geworden.
+In der modernen Softwarearchitektur ist die Verteilung von Systemen zu einer unvermeidbaren Anforderung geworden. Mit der Verbreitung von Cloud Computing, der Einführung von [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen und dem steigenden Bedarf an Big-Data-Verarbeitung ist der Ansatz, auf viele kostengünstige Server (Scale-out) statt auf einen einzigen leistungsstarken Server (Scale-up) zu setzen, zum Mainstream geworden.
 
 Beim Aufbau und Betrieb verteilter Systeme stehen Ingenieure jedoch stets vor einer schwierigen Entscheidung. Es ist der Kompromiss zwischen "Datenkonsistenz" und "Systemverfügbarkeit". Das **CAP-Theorem** (CAP theorem) hat dieses fundamentale Dilemma mathematisch bewiesen und formalisiert.
 
@@ -21,7 +21,7 @@ In diesem Artikel werden wir von den Grundlagen des CAP-Theorems über seinen Be
 
 ## 1. Was ist ein verteiltes System?
 
-Bevor wir über das CAP-Theorem sprechen, sollten wir zunächst klären, was genau ein **verteiltes System** (Distributed System) ist.
+Bevor wir über das CAP-Theorem sprechen, sollten wir zunächst klären, was genau ein **verteiltes System** ([Distributed System](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)) ist.
 
 Ein verteiltes System ist ein System, in dem mehrere unabhängige, über ein Netzwerk miteinander verbundene Computer (Knoten) für den Benutzer so agieren, als handele es sich um ein einzelnes, konsistentes System.
 
@@ -55,9 +55,9 @@ Das CAP-Theorem wurde im Jahr 2000 von Eric Brewer vorgeschlagen und im Jahr 200
 
 Das Theorem besagt, dass ein verteiltes System von den folgenden drei Eigenschaften gleichzeitig **maximal zwei** erfüllen kann.
 
-1.  **C: Consistency** (Konsistenz)
-2.  **A: Availability** (Verfügbarkeit)
-3.  **P: Partition Tolerance** (Ausfalltoleranz / Partitionstoleranz)
+1.  **C: [Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)** (Konsistenz)
+2.  **A: [Availability](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)** (Verfügbarkeit)
+3.  **P: [Partition Tolerance](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)** (Ausfalltoleranz / Partitionstoleranz)
 
 Lassen Sie uns die genauen Definitionen für jede von ihnen betrachten.
 
@@ -69,13 +69,13 @@ Die Definition lautet: "Ein [Zustand](https://kenji.blog/de/p/state-management-h
 
 Mathematisch ausgedrückt: Wenn eine Schreiboperation $ W(x=v) $ zum Zeitpunkt $ t_1 $ abgeschlossen wird, muss jede Leseoperation $ R(x) $, die zum Zeitpunkt $ t_2 $ ($ t_2 > t_1 $) durchgeführt wird, immer den Wert $ v $ oder einen neueren Wert, der danach geschrieben wurde, zurückgeben.
 
-### 2.2. Availability (Verfügbarkeit)
+### 2.2. [Availability](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/) (Verfügbarkeit)
 
 Verfügbarkeit ist die Eigenschaft, dass "alle nicht fehlerhaften Knoten immer eine gültige Antwort auf alle Anfragen (Lesen, Schreiben) zurückgeben".
 
 Selbst wenn ein Teil des Systems ausgefallen ist, kann ein Client, der einen aktiven Knoten erreicht, sicher sein, ein Ergebnis (Daten oder Erfolgsmeldung) statt eines Fehlers zu erhalten. Es ist wichtig anzumerken, dass Verfügbarkeit keine "aktuellen Daten" garantiert.
 
-### 2.3. Partition Tolerance (Ausfalltoleranz / Partitionstoleranz)
+### 2.3. [Partition Tolerance](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/) (Ausfalltoleranz / Partitionstoleranz)
 
 Partitionstoleranz ist die Eigenschaft, dass "das System weiterhin funktioniert, auch wenn die Kommunikation zwischen Knoten durch das Netzwerk willkürlich unterbrochen oder verzögert wird".
 
@@ -120,7 +120,7 @@ In einem realen verteilten System, in dem Netzwerkpartitionen ( **P** ) auftrete
 
 ## 4. Quorum und die Anpassung der Konsistenz
 
-Viele verteilte Datenbanken (z. B. Cassandra, DynamoDB usw.) binden das gesamte System nicht an ein festes CP oder AP, sondern ermöglichen es, das Gleichgewicht zwischen C und A durch Parameteranpassung mittels **Quorum** für jede Anfrage zu steuern.
+Viele verteilte Datenbanken (z. B. [Cassandra](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/), DynamoDB usw.) binden das gesamte System nicht an ein festes CP oder AP, sondern ermöglichen es, das Gleichgewicht zwischen C und A durch Parameteranpassung mittels **Quorum** für jede Anfrage zu steuern.
 
 Sei $ N $ die Anzahl der Replikate.
 Sei $ W $ die Anzahl der Knoten, die antworten müssen, damit ein Schreibvorgang als erfolgreich gilt.
@@ -154,7 +154,7 @@ print(system.check_consistency(W=1, R=1))  # 1 + 1 <= 3 -> Eventual Consistency 
 
 Zum Beispiel, wenn $ N = 3 $:
 *   Wenn $ W=2, R=2 $ eingestellt ist, ist die Konsistenz immer garantiert. Wenn jedoch zwei Knoten ausfallen, schlagen sowohl Lesen als auch Schreiben fehl (CP-artig).
-*   Wenn $ W=1, R=1 $ eingestellt ist, ist es schnell und hochverfügbar, aber es besteht die Möglichkeit, alte Daten zu lesen (AP-artig, Eventual Consistency).
+*   Wenn $ W=1, R=1 $ eingestellt ist, ist es schnell und hochverfügbar, aber es besteht die Möglichkeit, alte Daten zu lesen (AP-artig, Eventual [Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)).
 
 ## 5. Vom CAP- zum PACELC-Theorem
 
@@ -171,10 +171,10 @@ Wenn in einem verteilten System Daten synchron auf alle Knoten geschrieben werde
 
 ### 5.1. PACELC-Klassifizierung typischer Datenbanken
 
-*   **PC/EC** (HBase, MongoDB, Zookeeper)
+*   **PC/EC** (HBase, [MongoDB](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/), Zookeeper)
     *   Priorisiert Konsistenz bei Partitionen (PC). Priorisiert auch im Normalfall Konsistenz und toleriert Latenz (EC).
-*   **PA/EL** (Cassandra, Riak, DynamoDB)
-    *   Priorisiert Verfügbarkeit bei Partitionen (PA). Priorisiert im Normalfall niedrige Latenz und akzeptiert Eventual Consistency (EL).
+*   **PA/EL** ([Cassandra](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/), Riak, DynamoDB)
+    *   Priorisiert Verfügbarkeit bei Partitionen (PA). Priorisiert im Normalfall niedrige Latenz und akzeptiert [Eventual Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/) (EL).
 *   **PA/EC** (MySQL Cluster usw.)
     *   Priorisiert Verfügbarkeit bei Partitionen und versucht gleichzeitig, im Normalfall Konsistenz zu wahren.
 
@@ -271,17 +271,17 @@ Die Sicherheit von [Raft](https://kenji.blog/de/p/byzantine-generals-problem-con
 
 Dies eliminiert mathematisch und algorithmisch Dateninkonsistenzen in einer verteilten Umgebung vollständig. Der Backend-Datenspeicher von [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/), `etcd`, verwendet ebenfalls [Raft](https://kenji.blog/de/p/byzantine-generals-problem-consensus/), um eine strikte [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sverwaltung des Clusters zu realisieren.
 
-## 8. Microservices und Transaktionen
+## 8. [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/) und Transaktionen
 
 Das CAP-Theorem beschränkt sich nicht nur auf einzelne Datenbanken, sondern hat auch tiefgreifende Auswirkungen auf die moderne **Microservices-Architektur**.
 
-In einer monolithischen Anwendung konnte die Datenkonsistenz leicht durch ACID-Transaktionen mit einer einzigen relationalen Datenbank gewahrt werden. Bei Microservices, wo Dienste und Datenbanken nach Geschäftsdomänen getrennt sind, sind jedoch serviceübergreifende verteilte Transaktionen erforderlich.
+In einer monolithischen Anwendung konnte die Datenkonsistenz leicht durch [ACID](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)-Transaktionen mit einer einzigen relationalen Datenbank gewahrt werden. Bei Microservices, wo Dienste und Datenbanken nach Geschäftsdomänen getrennt sind, sind jedoch serviceübergreifende verteilte Transaktionen erforderlich.
 
 Hier zeigt das CAP-Theorem seine Zähne. Wenn eine starke Konsistenz (C) unter Verwendung einer verteilten Transaktion (z. B. Zwei-Phasen-Commit - 2PC) gefordert wird und ein Dienst ausfällt oder eine Kommunikationsverzögerung auftritt, wird das gesamte System blockiert, was zu einer drastischen Verringerung von Verfügbarkeit (A) und Erhöhung der Latenz (L).
 
 Um dieses Problem zu lösen, wird das **Saga-Muster** häufig in Microservices eingesetzt.
 
-Das Saga-Muster ist eine Technik, die eine große Transaktion in eine Folge lokaler Transaktionen aufteilt und diese mittels asynchronem Messaging (wie Kafka oder RabbitMQ) koordiniert.
+Das Saga-Muster ist eine Technik, die eine große Transaktion in eine Folge lokaler Transaktionen aufteilt und diese mittels asynchronem Messaging (wie [Kafka](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/) oder [RabbitMQ](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/)) koordiniert.
 
 ```mermaid
 flowchart TD
@@ -295,16 +295,16 @@ flowchart TD
     MessageBroker -->|"Stornieren"| Order
 ```
 
-Beim Saga-Muster wird die starke Konsistenz aufgegeben und die **Eventual Consistency** akzeptiert (AP-Ansatz). Wenn die Verarbeitung mittendrin fehlschlägt, wird anstelle eines Rollbacks eine **Kompensationstransaktion (Compensating Transaction)** ausgegeben, um eine Logik zur logischen Wiederherstellung des vorherigen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s zu implementieren. Dadurch wird eine geschäftlich akzeptable Konsistenz erreicht, während eine hohe Skalierbarkeit und Verfügbarkeit beibehalten werden.
+Beim Saga-Muster wird die starke Konsistenz aufgegeben und die **Eventual [Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)** akzeptiert (AP-Ansatz). Wenn die Verarbeitung mittendrin fehlschlägt, wird anstelle eines Rollbacks eine **Kompensationstransaktion (Compensating [Transaction](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/))** ausgegeben, um eine Logik zur logischen Wiederherstellung des vorherigen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s zu implementieren. Dadurch wird eine geschäftlich akzeptable Konsistenz erreicht, während eine hohe Skalierbarkeit und Verfügbarkeit beibehalten werden.
 
 ## Zusammenfassung
 
 In diesem Artikel haben wir uns intensiv mit dem CAP-Theorem befasst, dem wichtigsten Prinzip in verteilten Systemen.
 
-*   Das **CAP-Theorem** besagt, dass es unmöglich ist, Consistency (Konsistenz), Availability (Verfügbarkeit) und Partition Tolerance (Ausfalltoleranz / Partitionstoleranz) gleichzeitig in einem verteilten System zu erfüllen, und dass dies in der realen Welt, in der Partitionen (P) unvermeidbar sind, im Grunde auf eine Wahl zwischen **CP** und **AP** hinausläuft.
+*   Das **CAP-Theorem** besagt, dass es unmöglich ist, [Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/) (Konsistenz), [Availability](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/) (Verfügbarkeit) und [Partition Tolerance](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/) (Ausfalltoleranz / Partitionstoleranz) gleichzeitig in einem verteilten System zu erfüllen, und dass dies in der realen Welt, in der Partitionen (P) unvermeidbar sind, im Grunde auf eine Wahl zwischen **CP** und **AP** hinausläuft.
 *   Das **PACELC-Theorem** erweitert dies und zeigt, dass auch im Normalbetrieb ohne Partitionen ein Kompromiss zwischen Latenz (L) und Konsistenz (C) besteht.
 *   Durch die Verwendung von **Quorum** kann das Gleichgewicht zwischen Konsistenz und Verfügbarkeit ($ W+R>N $) je nach Bedarf flexibel angepasst werden.
 *   In AP-Systemen werden **Vektoruhren** (Vector Clocks) zur Konfliktlösung verwendet, während in CP-Systemen Konsensalgorithmen wie **[Raft](https://kenji.blog/de/p/byzantine-generals-problem-consensus/)** für die strikte Ordnung eingesetzt werden.
-*   Diese Konzepte sind nicht nur grundlegendes Wissen für Datenbanken, sondern auch unerlässlich für das Design verteilter Transaktionen (wie das Saga-Muster) in modernen **Microservices-Architekturen**.
+*   Diese Konzepte sind nicht nur grundlegendes Wissen für Datenbanken, sondern auch unerlässlich für das Design verteilter Transaktionen (wie das Saga-Muster) in modernen **[[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen**.
 
 Beim Systemdesign gibt es keine "Silver Bullet". Das CAP-Theorem und das PACELC-Theorem richtig zu verstehen, angemessen zu beurteilen, ob die Geschäftsanforderungen vorschreiben, dass "die Konsistenz um jeden Preis gewahrt bleiben muss (wie bei Zahlungen)" oder "das System niemals gestoppt werden darf, auch wenn vorübergehende Inkonsistenzen toleriert werden (wie bei einer SNS-Timeline)", und den optimalen Kompromiss zu wählen - das ist wohl die größte Fähigkeit, die von einem hervorragenden Architekten verlangt wird.

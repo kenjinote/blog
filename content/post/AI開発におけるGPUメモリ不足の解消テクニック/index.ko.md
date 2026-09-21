@@ -46,7 +46,7 @@ $$ M_{weights} = 8,000,000,000 \times 2 \text{ bytes} \approx 16,000,000,000 \te
 
 ## 1.2 추론 시의 메모리 소비: KV 캐시의 증대
 
-LLM의 추론(특히 자기회귀적인 텍스트 생성)에서 가중치와 같거나 그 이상으로 VRAM을 강하게 압박하는 것이 **KV 캐시(Key-Value Cache)** 입니다.
+LLM의 추론(특히 자기회귀적인 텍스트 생성)에서 가중치와 같거나 그 이상으로 VRAM을 강하게 압박하는 것이 **KV 캐시([Key-Value](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)** 입니다.
 Transformer 아키텍처에서는 과거에 생성·처리한 토큰의 정보를 재계산하는 것을 방지하기 위해, 각 어텐션 층에서의 Key와 Value 텐서를 VRAM에 계속 캐시합니다. 이로 인해 계산 속도(Compute)는 향상되지만, 컨텍스트 길이(입력 프롬프트 길이 + 생성 길이)가 길어짐에 따라 메모리 소비량이 선형적으로 폭발적으로 증가합니다.
 
 1 토큰을 처리할 때 소비되는 KV 캐시의 메모리 양 $M_{kv\_token}$은 모델의 아키텍처를 기반으로 다음 수식으로 엄밀하게 계산됩니다.

@@ -220,7 +220,7 @@ graph TD
 
 ## 5. 静的条件分岐を極める：if constexpr (C++17)
 
-C++17では、SFINAEを用いた冗長なオーバーロード解決を過去のものにする `if constexpr` が導入されました。これはコンパイル時に評価される `if` 文であり、条件が `false` となったブロックはインスタンス化すらされず、コンパイル対象から完全に破棄されます。
+C++17では、SFINAEを用いた冗長なオーバーロード解決を過去のものにする `if constexpr` が導入されました。これはコンパイル時に評価される `if` 文であり、条件が `false` となったブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)はインスタンス化すらされず、コンパイル対象から完全に破棄されます。
 
 先ほどの SFINAE の例を `if constexpr` で書き直すと、驚くほどシンプルになります。
 

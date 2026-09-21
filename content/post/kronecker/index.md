@@ -93,7 +93,7 @@ $$
 
 ## 4.2. [クロネッカー](https://kenji.blog/p/kronecker/)積 ([Kronecker](https://kenji.blog/p/kronecker/) Product)
 
-行列のテンソル積の一種である「[クロネッカー](https://kenji.blog/p/kronecker/)積」も、彼の名にちなんでいます。行列 $A$ （サイズ $m \times n$）と行列 $B$ （サイズ $p \times q$）の[クロネッカー](https://kenji.blog/p/kronecker/)積 $A \otimes B$ は、サイズ $(mp) \times (nq)$ のブロック行列として次のように定義されます。
+行列のテンソル積の一種である「[クロネッカー](https://kenji.blog/p/kronecker/)積」も、彼の名にちなんでいます。行列 $A$ （サイズ $m \times n$）と行列 $B$ （サイズ $p \times q$）の[クロネッカー](https://kenji.blog/p/kronecker/)積 $A \otimes B$ は、サイズ $(mp) \times (nq)$ のブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)行列として次のように定義されます。
 
 $$
 A \otimes B = \begin{pmatrix}

@@ -131,7 +131,7 @@ Dessa forma, introduzir o multi-stage build pode reduzir o tamanho da imagem pel
 
 No desenvolvimento moderno de aplicações web, arquiteturas de microsserviços em que vários componentes colaboram, como servidores web, bancos de dados e servidores de cache, são comuns. Para gerenciá-los centralmente no ambiente local, usamos o `docker-compose.yml`.
 
-Desta vez, construiremos localmente um sistema de 3 camadas com "Web (FastAPI)", "Database (PostgreSQL)" e "Cache (Redis)".
+Desta vez, construiremos localmente um sistema de 3 camadas com "Web (FastAPI)", "Database (PostgreSQL)" e "Cache ([Redis](https://kenji.blog/pt/p/nosql-database-selection-kvs-document-graph-wide-column/))".
 
 ### Diagrama de Arquitetura (Mermaid)
 
@@ -348,7 +348,7 @@ Modelaremos matematicamente o tempo médio de processamento de requisições $T_
 A latência de cada processamento é definida a seguir:
 - $T_{\text{net}}$: Latência de rede entre o cliente e o contêiner Web
 - $T_{\text{app}}$: Tempo de processamento puro no lado da aplicação (como serialização)
-- $T_{\text{cache}}$: Tempo gasto lendo e escrevendo no Redis
+- $T_{\text{cache}}$: Tempo gasto lendo e escrevendo no [Redis](https://kenji.blog/pt/p/nosql-database-selection-kvs-document-graph-wide-column/)
 - $T_{\text{db}}$: Tempo gasto na execução de consultas ao PostgreSQL
 - $p_{\text{miss}}$: Taxa de cache miss ($0 \le p_{\text{miss}} \le 1$)
 

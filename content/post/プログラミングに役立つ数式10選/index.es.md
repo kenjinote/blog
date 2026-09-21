@@ -69,7 +69,7 @@ int main() {
 ```
 
 **Explicación detallada**:
-La ventaja de este enfoque es que encapsula el cálculo de la matriz de rotación (4 multiplicaciones y 2 sumas) como una operación de números complejos. Además, en el espacio tridimensional, se utiliza una extensión de este concepto llamada "cuaterniones" (quaternions). Usando cuaterniones, se puede evitar el problema fatal del "bloqueo del cardán" (Gimbal Lock) que ocurre con los ángulos de Euler, permitiendo una interpolación esférica lineal suave (Slerp).
+La ventaja de este enfoque es que encapsula el cálculo de la matriz de rotación (4 multiplicaciones y 2 sumas) como una operación de números complejos. Además, en el espacio tridimensional, se utiliza una extensión de este concepto llamada "cuaterniones" (quaternions). Usando cuaterniones, se puede evitar el problema fatal del "bloqueo del cardán" (Gimbal [Lock](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/)) que ocurre con los ángulos de Euler, permitiendo una interpolación esférica lineal suave (Slerp).
 
 ---
 

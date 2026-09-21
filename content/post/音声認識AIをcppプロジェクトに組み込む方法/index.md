@@ -210,7 +210,7 @@ int main() {
 }
 ```
 
-このコードブロックが、C++でWhisperを使用するための最も基本的なテンプレートとなります。
+このコードブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が、C++でWhisperを使用するための最も基本的なテンプレートとなります。
 
 ---
 

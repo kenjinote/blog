@@ -365,7 +365,7 @@ Die `caches`-API des Service Workers (Cache Storage) ist bestens geeignet, um ga
 
 An dieser Stelle kommt **IndexedDB** ins Spiel.
 
-IndexedDB ist eine asynchrone transaktionale NoSQL-Datenbank, die in den Browser integriert ist. Sie kann extrem große Datenmengen speichern und komplexe Indexsuchen durchführen.
+IndexedDB ist eine asynchrone transaktionale [NoSQL](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/)-Datenbank, die in den Browser integriert ist. Sie kann extrem große Datenmengen speichern und komplexe Indexsuchen durchführen.
 
 ### 8.1. Warum reicht Cache Storage allein nicht aus?
 

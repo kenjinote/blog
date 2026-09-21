@@ -16,7 +16,7 @@ tags:
   - "rust"
 ---
 
-Dans le développement logiciel moderne, la compréhension du **traitement asynchrone** et de l'**architecture orientée événements** (EDA : Event-Driven Architecture) est essentielle pour améliorer la scalabilité et la disponibilité des systèmes. Cet article explore en profondeur les concepts fondamentaux qui les sous-tendent : la boucle d'événements (Event Loop), le modèle Acteur, et le CQRS (Command Query Responsibility Segregation), en allant de la théorie à l'implémentation, jusqu'à la conception au niveau de l'architecture.
+Dans le développement logiciel moderne, la compréhension du **traitement asynchrone** et de l'**architecture orientée événements** (EDA : [Event-Driven](https://kenji.blog/fr/p/event-driven-architecture-message-queue-kafka-rabbitmq/) Architecture) est essentielle pour améliorer la scalabilité et la disponibilité des systèmes. Cet article explore en profondeur les concepts fondamentaux qui les sous-tendent : la boucle d'événements (Event Loop), le modèle Acteur, et le CQRS (Command Query Responsibility Segregation), en allant de la théorie à l'implémentation, jusqu'à la conception au niveau de l'architecture.
 
 ## 1. Fondements et défis du traitement asynchrone
 
@@ -124,7 +124,7 @@ Dans le modèle Acteur, l'unité de base du traitement est appelée « Acteur »
 
 - **Encapsulation de l'état** : L'état interne de l'Acteur n'est pas directement accessible de l'extérieur.
 - **File d'attente de messages (Mailbox)** : Les messages reçus sont mis en file d'attente dans la Mailbox et traités séquentiellement.
-- **Sans verrou (Lock-free)** : Comme aucun état n'est partagé, les mécanismes de verrouillage tels que les mutex ne sont pas nécessaires.
+- **Sans verrou ([Lock](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/)-free)** : Comme aucun état n'est partagé, les mécanismes de verrouillage tels que les mutex ne sont pas nécessaires.
 
 ```mermaid
 flowchart LR
@@ -215,7 +215,7 @@ Le système de propriété (Ownership) et le système de types en [Rust](https:/
 
 Le traitement asynchrone et le modèle Acteur sont des méthodes permettant d'optimiser le traitement concurrent au sein d'une application unique. Le concept qui étend cela à l'ensemble du système (comme entre des microservices) est l'**architecture orientée événements (EDA)**.
 
-Dans l'EDA, les changements d'état au sein du système sont représentés comme des « événements » et sont distribués de manière asynchrone via un bus d'événements ou un courtier de messages (Message Broker) (Apache Kafka, RabbitMQ, AWS EventBridge, etc.).
+Dans l'EDA, les changements d'état au sein du système sont représentés comme des « événements » et sont distribués de manière asynchrone via un bus d'événements ou un courtier de messages (Message Broker) (Apache [Kafka](https://kenji.blog/fr/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/fr/p/event-driven-architecture-message-queue-kafka-rabbitmq/), AWS EventBridge, etc.).
 
 ### 4.1 Principaux composants de l'EDA
 
@@ -279,7 +279,7 @@ Les avantages de l'Event Sourcing sont les suivants :
 Les groupes de technologies que nous avons examinés jusqu'à présent ont chacun des cas d'utilisation adaptés.
 
 1. **Event Loop (Node.js)** : 
-   - Passerelles d'API (API Gateways) et systèmes de chat en temps réel avec beaucoup de traitements liés aux E/S (I/O bound).
+   - Passerelles d'API ([API Gateway](https://kenji.blog/fr/p/microservices-architecture-bff-api-gateway/)s) et systèmes de chat en temps réel avec beaucoup de traitements liés aux E/S (I/O bound).
    - Serveurs WebSocket gérant un grand nombre de connexions simultanées.
 2. **Modèle Acteur ([Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) / Akka)** : 
    - Traitements concurrents avec des états complexes (serveurs de jeux, suivi en temps réel).
@@ -290,7 +290,7 @@ Les groupes de technologies que nous avons examinés jusqu'à présent ont chacu
 
 ### 6.1 Défis et bonnes pratiques
 
-L'architecture asynchrone et orientée événements est puissante, mais elle nécessite d'accepter la **cohérence à terme (Eventual Consistency)**. Comme les données ne sont pas immédiatement reflétées dans tout le système (cohérence forte), des ajustements au niveau de l'interface utilisateur / expérience utilisateur (UI/UX) sont nécessaires (par exemple : mises à jour optimistes de l'UI).
+L'architecture asynchrone et orientée événements est puissante, mais elle nécessite d'accepter la **cohérence à terme (Eventual [Consistency](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/))**. Comme les données ne sont pas immédiatement reflétées dans tout le système (cohérence forte), des ajustements au niveau de l'interface utilisateur / expérience utilisateur (UI/UX) sont nécessaires (par exemple : mises à jour optimistes de l'UI).
 
 De plus, garantir l'**idempotence (Idempotency)** dans les systèmes distribués est également important. Le système doit être conçu pour que le résultat ne change pas, même si le même événement est traité plusieurs fois en raison de retransmissions réseau.
 

@@ -369,7 +369,7 @@ Markdownのコンテンツファイルや、Hugoのテンプレート（`layouts
 NODE_ENV=production hugo --minify --environment production
 ```
 
-`--environment production` フラグを付けることで、`head.html` 内の `{{ if hugo.IsProduction }}` ブロックが実行され、CSSのMinify化とFingerprint付与が行われます。
+`--environment production` フラグを付けることで、`head.html` 内の `{{ if hugo.IsProduction }}` ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が実行され、CSSのMinify化とFingerprint付与が行われます。
 
 ### Typographyプラグインを用いたMarkdownのスタイリング
 

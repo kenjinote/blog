@@ -126,7 +126,7 @@ Das Konzept der Zeiger (direkte Verweise auf Speicheradressen), die Datenplatzie
 
 ## 5. Die Hürde von Datenbanken und Persistenz: Das Fehlen der relationalen Algebra
 
-In modernen Anwendungen ist das Speichern und Abrufen von Daten (Persistenz) ein unvermeidliches Thema. Viele schulische Ausbildungen beschränken sich jedoch auf „Datenverarbeitung im Speicher“, die verschwindet, wenn die Ausführung des Programms endet. Die mathematische Theorie hinter relationalen Datenbanken (RDBMS) und SQL, nämlich die von Dr. Edgar F. Codd vorgeschlagene „relationale Algebra (Relational Algebra)“, wird selten unterrichtet.
+In modernen Anwendungen ist das Speichern und Abrufen von Daten (Persistenz) ein unvermeidliches Thema. Viele schulische Ausbildungen beschränken sich jedoch auf „Datenverarbeitung im Speicher“, die verschwindet, wenn die Ausführung des Programms endet. Die mathematische Theorie hinter relationalen Datenbanken ([RDBMS](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)) und SQL, nämlich die von Dr. Edgar F. Codd vorgeschlagene „relationale Algebra (Relational Algebra)“, wird selten unterrichtet.
 
 Datenbankoperationen sind durch die folgenden Grundoperationen definiert, die auf der Mengenlehre basieren:
 
@@ -134,7 +134,7 @@ Datenbankoperationen sind durch die folgenden Grundoperationen definiert, die au
 - Projektion (Projection, $\pi$): Extrahieren bestimmter Attribute (Spalten)
 - Join ($\bowtie$): Bedingte Schnittmenge mehrerer Relationen
 
-Darüber hinaus ist das Erlernen der Struktur von „[B-Tree](https://kenji.blog/de/p/b-tree-database-index-theory/) (B-Baum)-Indizes“, mit denen man gewünschte Daten in großen Mengen an Datensätzen sofort durchsuchen kann, die beste praktische Anwendung von Datenstrukturen. B-Bäume garantieren eine Suchgeschwindigkeit von $O(\log N)$ bei gleichzeitiger Minimierung der Anzahl an Festplatten-I/Os. Ohne Kenntnis der ACID-Eigenschaften von Transaktionen (Atomicity, Consistency, Isolation, Durability) kann man kein robustes System aufbauen.
+Darüber hinaus ist das Erlernen der Struktur von „[B-Tree](https://kenji.blog/de/p/b-tree-database-index-theory/) (B-Baum)-Indizes“, mit denen man gewünschte Daten in großen Mengen an Datensätzen sofort durchsuchen kann, die beste praktische Anwendung von Datenstrukturen. B-Bäume garantieren eine Suchgeschwindigkeit von $O(\log N)$ bei gleichzeitiger Minimierung der Anzahl an Festplatten-I/Os. Ohne Kenntnis der [ACID](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)-Eigenschaften von Transaktionen (Atomicity, [Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability) kann man kein robustes System aufbauen.
 
 ## 6. Sicherheit und Kryptographie: Eine soziale Infrastruktur, die auf der Schwierigkeit der Primfaktorzerlegung basiert
 
@@ -204,7 +204,7 @@ In den USA gibt es strenge Standardlehrpläne für K-12 (vom Kindergarten bis zu
 
 ### Die verzweifelte Diskrepanz zwischen geforderten und gelehrten Fähigkeiten
 
-Die Anforderungen, die die moderne Industrie – insbesondere global agierende Mega-Ventures und Tech-Giganten (GAFAM usw.) – an neue Software-Ingenieure stellt, steigen von Jahr zu Jahr in erschreckendem Tempo. Gefordert wird eine breite und tiefe Expertise, wie z.B. der Aufbau Cloud-nativer Infrastrukturen (AWS, GCP, [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)), das Design verteilter Systeme mit Microservice-Architekturen, die Implementierung von Machine-Learning-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s und fortgeschrittenes Sicherheitswissen.
+Die Anforderungen, die die moderne Industrie – insbesondere global agierende Mega-Ventures und Tech-Giganten (GAFAM usw.) – an neue Software-Ingenieure stellt, steigen von Jahr zu Jahr in erschreckendem Tempo. Gefordert wird eine breite und tiefe Expertise, wie z.B. der Aufbau Cloud-nativer Infrastrukturen (AWS, GCP, [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)), das Design verteilter Systeme mit [Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen, die Implementierung von Machine-Learning-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s und fortgeschrittenes Sicherheitswissen.
 
 Die folgende Grafik veranschaulicht konzeptionell die verzweifelte Diskrepanz zwischen dem Niveau der Fähigkeiten, die derzeit im japanischen Schulsystem vermittelt werden, und den Anforderungen der vordersten Industrie.
 

@@ -147,7 +147,7 @@ $$
 As mentioned earlier, since hash functions are resistant to quantum attacks (Grover's algorithm), reversing the original "public key" from the "address" (which is a hash value) is impossible even for a quantum computer.
 In other words, for **"unused addresses (those that have never sent funds),"** the public key is not exposed on the blockchain at all, and only the hash value is recorded. Therefore, as long as the public key is unknown, there is no target to execute Shor's algorithm, and the private key cannot be identified. Wallets in this state can be said to be Quantum-safe.
 
-### 3.2. Fatal [Vulnerability](https://kenji.blog/en/p/web-application-vulnerability-owasp-top-10/) During Transaction Transmission (Front-running Attack)
+### 3.2. Fatal [Vulnerability](https://kenji.blog/en/p/web-application-vulnerability-owasp-top-10/) During [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) Transmission (Front-running Attack)
 
 The problem arises when users send funds.
 When broadcasting (sending) a transaction to the network, the user must **include their public key in the transaction data along with the digital signature and expose it to the entire network** for verification.
@@ -271,7 +271,7 @@ Just because PQC algorithms (like Dilithium and SPHINCS+) exist doesn't mean the
 The biggest barrier to introducing PQC is the significant bloat in data size.
 While the current ECDSA signature size is about 70 bytes, the lattice-based Dilithium (ML-DSA) has a signature size of about 2,420 to 4,595 bytes (depending on the security level), and a public key size exceeding 1,300 bytes. For the hash-based SPHINCS+, the signature alone reaches tens of thousands of bytes.
 
-If [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) introduces PQC with the current block size limit (about 4MB weight including SegWit), the number of transactions that can be stored in one block will drastically decrease. Network throughput (TPS: Transactions Per Second) would fall devastatingly, and transaction congestion would become normal.
+If [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) introduces PQC with the current block size limit (about 4MB weight including SegWit), the number of transactions that can be stored in one block will drastically decrease. Network throughput (TPS: [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)s Per Second) would fall devastatingly, and transaction congestion would become normal.
 To solve this, a massive increase in block size is necessary, but this would increase the storage and network bandwidth requirements for full nodes, making it difficult for individuals to operate nodes, resulting in the dilemma of causing **centralization of the network**.
 
 ```mermaid
@@ -280,7 +280,7 @@ pie title Comparison of Signature Data Sizes in Blockchain (Conceptual Diagram)
     "Dilithium ML-DSA (approx. 2,500 Bytes)" : 58
     "SPHINCS+ (approx. 17,000 Bytes)" : 40
 ```
-*(Note: Transaction data bloat due to PQC introduction is a fatal bottleneck for scalability)*
+*(Note: [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) data bloat due to PQC introduction is a fatal bottleneck for scalability)*
 
 ### 5.2. Impact on the Ethereum Virtual Machine (EVM) and Precompiled Contracts
 

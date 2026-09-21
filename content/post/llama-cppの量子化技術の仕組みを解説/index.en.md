@@ -67,7 +67,7 @@ Early llama.cpp used the `ggml` format (and variants like `ggjt`). However, thes
 
 ### 3.2. The Birth of the GGUF Format
 
-**GGUF**, introduced in August 2023, is a highly versatile format designed to solve these problems. Its most significant feature is the adoption of a **Key-Value-based metadata structure**.
+**GGUF**, introduced in August 2023, is a highly versatile format designed to solve these problems. Its most significant feature is the adoption of a **[Key-Value](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/)-based metadata structure**.
 
 The Mermaid diagram below abstracts the file structure of GGUF.
 
@@ -88,7 +88,7 @@ graph TD
 ```
 
 **Main Advantages of GGUF:**
-1. **Flexibility:** All model hyperparameters, RoPE (Rotary Positional Embedding) settings, tokenizer vocabulary data, etc., are stored as named Key-Value pairs. Unknown keys are ignored, making it easy to add new features.
+1. **Flexibility:** All model hyperparameters, RoPE (Rotary Positional Embedding) settings, tokenizer vocabulary data, etc., are stored as named [Key-Value](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/) pairs. Unknown keys are ignored, making it easy to add new features.
 2. **Endian-independent:** GGUF adopts little-endian by default, but it explicitly holds a flag, making it safely portable across different architectures.
 3. **Optimized for mmap (Memory Mapping):** Tensor data is aligned (padded) to specific boundaries and can be mapped directly from the disk into the memory space using the OS's `mmap()` system call. As a result, the initialization time for loading the model becomes virtually zero.
 
@@ -237,7 +237,7 @@ In recent versions of llama.cpp, a **feature to quantize the KV cache itself to 
 
 In this article, we delved deep into and explained the internal structure of the GGUF format and k-quants quantization technology, which are the heart of llama.cpp.
 
-1. **Flexibility of GGUF:** With a Key-Value-based metadata structure, it has built a robust ecosystem capable of following the rapid evolution of LLMs (the emergence of new model architectures) without breaking changes.
+1. **Flexibility of GGUF:** With a [Key-Value](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/)-based metadata structure, it has built a robust ecosystem capable of following the rapid evolution of LLMs (the emergence of new model architectures) without breaking changes.
 2. **Extreme Compression with k-quants:** By managing hierarchical scale factors with super-blocks and sub-blocks, it achieved incredible compression of an average of 4.8 bits per weight (Q4_K_M) while preserving outlier information.
 3. **Elimination of Memory Bandwidth Bottleneck:** Through advanced kernel implementations in SIMD and CUDA, performing computations while dequantizing on-the-fly reduces VRAM transfer volumes and dramatically improves inference speed.
 

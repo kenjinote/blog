@@ -23,7 +23,7 @@ From the end of the 19th century to the beginning of the 20th century, the world
 
 [Hilbert](https://kenji.blog/en/p/hilbert/) attempted to completely symbolize all mathematical reasoning and reconstruct mathematics solely with mechanical rules. The "[Hilbert](https://kenji.blog/en/p/hilbert/)'s Program" he advocated aimed to prove the following three properties in the Formal System of mathematics:
 
-1. **Consistency**: That there are no contradictions within the system (that a certain proposition $P$ and its negation $\neg P$ are not both proven).
+1. **[Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)**: That there are no contradictions within the system (that a certain proposition $P$ and its negation $\neg P$ are not both proven).
 2. **Completeness**: That any mathematical proposition can always be proven either true or false within that system.
 3. **Decidability**: That when an arbitrary proposition is given, there exists a mechanical procedure to determine whether it can be proven.
 

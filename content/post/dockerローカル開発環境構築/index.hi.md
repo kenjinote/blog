@@ -131,7 +131,7 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 आधुनिक वेब एप्लिकेशन विकास में, एक माइक्रोसर्विस आर्किटेक्चर आम है जहां कई घटक (components) जैसे वेब सर्वर, डेटाबेस, और कैश सर्वर एक साथ काम करते हैं। स्थानीय वातावरण में इन सभी को एक ही स्थान से प्रबंधित करने के लिए `docker-compose.yml` का उपयोग किया जाता है।
 
-इस बार, हम स्थानीय स्तर पर एक 3-स्तरीय सिस्टम बनाएंगे: "Web (FastAPI)", "Database (PostgreSQL)", और "Cache (Redis)"।
+इस बार, हम स्थानीय स्तर पर एक 3-स्तरीय सिस्टम बनाएंगे: "Web (FastAPI)", "Database (PostgreSQL)", और "Cache ([Redis](https://kenji.blog/hi/p/nosql-database-selection-kvs-document-graph-wide-column/))"।
 
 ### आर्किटेक्चर आरेख (Mermaid)
 
@@ -348,7 +348,7 @@ sequenceDiagram
 प्रत्येक प्रक्रिया की विलंबता (latency) को निम्नानुसार परिभाषित किया गया है:
 - $T_{\text{net}}$: क्लाइंट और वेब कंटेनर के बीच नेटवर्क विलंबता
 - $T_{\text{app}}$: एप्लिकेशन-पक्ष पर शुद्ध प्रसंस्करण समय (क्रमबद्धता आदि)
-- $T_{\text{cache}}$: Redis से पढ़ने/लिखने में लगने वाला समय
+- $T_{\text{cache}}$: [Redis](https://kenji.blog/hi/p/nosql-database-selection-kvs-document-graph-wide-column/) से पढ़ने/लिखने में लगने वाला समय
 - $T_{\text{db}}$: PostgreSQL पर क्वेरी निष्पादित करने में लगने वाला समय
 - $p_{\text{miss}}$: कैश मिस रेट ($0 \le p_{\text{miss}} \le 1$)
 

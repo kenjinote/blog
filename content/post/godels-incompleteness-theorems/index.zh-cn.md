@@ -23,7 +23,7 @@ slug: "godels-incompleteness-theorems"
 
 希尔伯特试图将数学的所有推导完全符号化，仅用机械的规则来重建数学。他所提倡的“希尔伯特计划”的目标，是希望在数学的形式体系（Formal System）中证明以下3个性质：
 
-1.  **一致性** （Consistency）：体系内不存在矛盾（即不能同时证明某命题 $P$ 及其否定 $\neg P$ ）。
+1.  **一致性** （[Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)）：体系内不存在矛盾（即不能同时证明某命题 $P$ 及其否定 $\neg P$ ）。
 2.  **完备性** （Completeness）：任何数学命题都能在该体系内被必然证明为真或伪。
 3.  **可判定性** （Decidability）：当给定任意命题时，存在能够判定其是否可证的机械程序。
 

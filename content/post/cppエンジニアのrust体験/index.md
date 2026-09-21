@@ -110,7 +110,7 @@ C++の`std::shared_ptr`は参照カウントによってリソースを管理し
 
 $$ Overhead_{C++} = sizeof(T) + sizeof(ControlBlock) $$
 
-ここで、$ControlBlock$ には「強参照カウンタ（Strong Ref Count）」、「弱参照カウンタ（Weak Ref Count）」、および「カスタムデリータ（Custom Deleter）」が含まれます。問題は、シングルスレッドでしか使わない場面でも、アトミック命令のオーバーヘッド（キャッシュラインのロック等）が無条件で発生してしまう点です。
+ここで、$ControlBlock$ には「強参照カウンタ（Strong Ref Count）」、「弱参照カウンタ（Weak Ref Count）」、および「カスタムデリータ（Custom Deleter）」が含まれます。問題は、シングルスレッドでしか使わない場面でも、アトミック命令のオーバーヘッド（キャッシュラインの[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)等）が無条件で発生してしまう点です。
 
 対照的に、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)は用途に応じてスマートポインタを厳密に分離しています。
 
@@ -126,11 +126,11 @@ $$ Overhead_{Arc} = sizeof(T) + 2 \times sizeof(AtomicUsize) $$
 
 # 3. スレッドセーフティ："Fearless Concurrency" の衝撃
 
-C++におけるマルチスレッドプログラミングは、常にデータレースとデッドロックの恐怖と隣り合わせでした。
+C++におけるマルチスレッドプログラミングは、常にデータレースとデッド[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の恐怖と隣り合わせでした。
 
 ## C++のミューテックスとデータの分離の危険性
 
-C++の`std::mutex`は、あくまで「特定のコードブロック（クリティカルセクション）」を排他制御するものであり、「保護すべきデータ」と「ミューテックス」の間に言語的な結びつきがありません。
+C++の`std::mutex`は、あくまで「特定のコードブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)（クリティカルセクション）」を排他制御するものであり、「保護すべきデータ」と「ミューテックス」の間に言語的な結びつきがありません。
 
 ```cpp
 #include <iostream>
@@ -158,7 +158,7 @@ int main() {
 
 ## [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)のMutexはデータを「所有」する
 
-Rustでは、`Mutex<T>`はジェネリクスを用いて保護対象のデータ型 `T` を **内包（所有）** します。データにアクセスするためには、必ず`lock()`を呼び出してガードオブジェクトを取得する必要があります。ロックを取得せずにデータに触ることは、文法的に不可能です。
+Rustでは、`Mutex<T>`はジェネリクスを用いて保護対象のデータ型 `T` を **内包（所有）** します。データにアクセスするためには、必ず`lock()`を呼び出してガードオブジェクトを取得する必要があります。[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を取得せずにデータに触ることは、文法的に不可能です。
 
 ```rust
 use std::sync::{Arc, Mutex};

@@ -299,8 +299,8 @@ Perutean adalah elemen kunci yang menentukan pada tingkat mana navigasi pengguna
   * `/checkout/*` -> Mendelegasikan ke aplikasi tim pembayaran.
   Setiap micro frontend dapat memiliki perutean internal tambahan.
 
-* **Perutean di Lapisan BFF (Backend For Frontend)** :
-  Ini adalah metode yang menilai jalur di tingkat infrastruktur server (mis. Nginx atau API Gateway) dan melayani HTML dari micro frontend yang sesuai sejak awal. Hard refresh akan terjadi saat transisi halaman, namun arsitektur ini memiliki tingkat pemisahan tertinggi.
+* **Perutean di Lapisan [BFF](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/) (Backend For Frontend)** :
+  Ini adalah metode yang menilai jalur di tingkat infrastruktur server (mis. Nginx atau [API Gateway](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)) dan melayani HTML dari micro frontend yang sesuai sejak awal. Hard refresh akan terjadi saat transisi halaman, namun arsitektur ini memiliki tingkat pemisahan tertinggi.
 
 ## 7. Dampak pada Organisasi dan Otonomi Tim
 

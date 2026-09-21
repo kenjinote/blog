@@ -64,7 +64,7 @@ flowchart TD
 
 ### 블록의 구조
 
-하나의 블록은 크게 '블록 헤더(Block Header)'와 '트랜잭션 데이터(Transaction Data)'로 구성되어 있습니다.
+하나의 블록은 크게 '블록 헤더(Block Header)'와 '트랜잭션 데이터([Transaction](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/) Data)'로 구성되어 있습니다.
 
 블록 헤더에는 다음 정보가 포함됩니다.
 1. **버전(Version)**: 소프트웨어의 버전
@@ -187,7 +187,7 @@ $$
 
 ## 6. 트랜잭션과 UTXO 모델
 
-비트코인의 트랜잭션은 은행 계좌 잔고(계정 기반 모델)와 같은 구조가 아니라 **UTXO(Unspent Transaction Output: 미사용 트랜잭션 출력값)** 라는 모델을 채택하고 있습니다.
+비트코인의 트랜잭션은 은행 계좌 잔고(계정 기반 모델)와 같은 구조가 아니라 **UTXO(Unspent [Transaction](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/) Output: 미사용 트랜잭션 출력값)** 라는 모델을 채택하고 있습니다.
 
 ### 인풋과 아웃풋
 
@@ -285,7 +285,7 @@ PoS에서는 계산 능력(해시레이트)이 아니라 보유하고 있는 암
 
 ### 블록 보상과 반감기(Halving)
 
-채굴자가 막대한 전력과 하드웨어 투자를 하면서까지 블록을 채굴하는 이유는 경제적인 보상이 있기 때문입니다. 채굴자가 새로운 블록 생성에 성공하면, **코인베이스 트랜잭션(Coinbase Transaction)** 이라고 불리는 특수한 트랜잭션을 통해 새롭게 발행된 비트코인을 받게 됩니다.
+채굴자가 막대한 전력과 하드웨어 투자를 하면서까지 블록을 채굴하는 이유는 경제적인 보상이 있기 때문입니다. 채굴자가 새로운 블록 생성에 성공하면, **코인베이스 트랜잭션(Coinbase [Transaction](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/))** 이라고 불리는 특수한 트랜잭션을 통해 새롭게 발행된 비트코인을 받게 됩니다.
 
 비트코인의 총 발행량은 프로그램에 의해 **2,100만 개** 로 상한이 설정되어 있습니다. 또한 1블록당 채굴 보상은 210,000블록(약 4년)마다 절반이 되는 **반감기(Halving)** 메커니즘이 내장되어 있습니다.
 

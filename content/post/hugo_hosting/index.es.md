@@ -19,7 +19,7 @@ En este artículo, profundizaremos desde un punto de vista técnico en los pasos
 ## 1. Fundamentos de los Generadores de Sitios Estáticos (SSG) y Jamstack
 
 ### 1.1 ¿Por qué un sitio estático?
-Los CMS dinámicos tradicionales (ej. WordPress) consultan la base de datos (como MySQL) por cada solicitud del usuario y generan HTML dinámicamente en el lado del servidor (como PHP) para devolverlo. Si bien este método es altamente flexible, tiene poca resistencia a los aumentos repentinos de tráfico (los llamados picos de popularidad o ataques DDoS) y a menudo complica la configuración de la infraestructura, requiriendo colocar servidores de caché (Redis o Varnish) en primer plano.
+Los CMS dinámicos tradicionales (ej. WordPress) consultan la base de datos (como MySQL) por cada solicitud del usuario y generan HTML dinámicamente en el lado del servidor (como PHP) para devolverlo. Si bien este método es altamente flexible, tiene poca resistencia a los aumentos repentinos de tráfico (los llamados picos de popularidad o ataques DDoS) y a menudo complica la configuración de la infraestructura, requiriendo colocar servidores de caché ([Redis](https://kenji.blog/es/p/nosql-database-selection-kvs-document-graph-wide-column/) o Varnish) en primer plano.
 
 Por otro lado, en los generadores de sitios estáticos (SSG) que adoptan la arquitectura Jamstack (JavaScript, APIs y Markup), todos los archivos HTML, CSS y JavaScript se generan por adelantado (durante el tiempo de compilación). Dado que el servidor web (o CDN) simplemente devuelve los archivos estáticos ya generados en respuesta a las solicitudes de los usuarios, se puede lograr una velocidad abrumadora y una seguridad robusta.
 

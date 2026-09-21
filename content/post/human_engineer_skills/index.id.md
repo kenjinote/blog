@@ -122,19 +122,19 @@ Perangkat lunak modern telah berevolusi dari monolit yang berjalan pada satu ser
 
 Saat merancang sistem terdistribusi, insinyur selalu dihadapkan pada "Teorema CAP". Teorema CAP adalah prinsip yang menyatakan bahwa sebuah sistem terdistribusi hanya dapat memenuhi dua dari tiga karakteristik berikut secara bersamaan:
 
-- **Consistency (Konsistensi)**: Apakah semua node melihat data yang sama pada waktu yang sama?
-- **Availability (Ketersediaan)**: Apakah sistem terus merespons meskipun beberapa node mengalami kegagalan?
+- **[Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/) (Konsistensi)**: Apakah semua node melihat data yang sama pada waktu yang sama?
+- **[Availability](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/) (Ketersediaan)**: Apakah sistem terus merespons meskipun beberapa node mengalami kegagalan?
 - **[Partition Tolerance](https://kenji.blog/id/p/cap-theorem-distributed-systems/) (Toleransi Partisi)**: Apakah sistem terus beroperasi meskipun terjadi pemisahan (partisi) jaringan?
 
-$$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
+$$ P(\text{[Availability](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/)} \cup \text{[Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/)}) | \text{PartitionTolerance} $$
 
 Karena pemisahan (Partition) jaringan tidak dapat dihindari di jaringan nyata, insinyur harus membuat penilaian trade-off yang ketat dan berkaitan langsung dengan kebutuhan bisnis, seperti "Sistem pembayaran ini memprioritaskan Consistency (Konsistensi) dan akan menghentikan layanan jika terjadi kegagalan (CP)" atau "Timeline SNS ini memprioritaskan Availability (Ketersediaan) dan mentolerir inkonsistensi data sementara (AP)."
 
 Meskipun AI dapat menulis "kode yang memprioritaskan C" atau "kode yang memprioritaskan A", ia tidak dapat secara otonom membuat keputusan yang melibatkan risiko bisnis tentang "mana yang harus diprioritaskan."
 
-### 4.2 Komunikasi Asinkron dan Konsistensi Akhir (Eventual Consistency)
+### 4.2 Komunikasi Asinkron dan Konsistensi Akhir ([Eventual Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/))
 
-Ketika sistem menjadi berskala besar, koordinasi antar layanan beralih dari komunikasi sinkron melalui [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) ke komunikasi asinkron menggunakan message queue (seperti Kafka, RabbitMQ). Konsistensi data di sini berubah dari konsistensi instan menjadi "konsistensi akhir" (Eventual Consistency).
+Ketika sistem menjadi berskala besar, koordinasi antar layanan beralih dari komunikasi sinkron melalui [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) ke komunikasi asinkron menggunakan message queue (seperti [Kafka](https://kenji.blog/id/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/id/p/event-driven-architecture-message-queue-kafka-rabbitmq/)). Konsistensi data di sini berubah dari konsistensi instan menjadi "konsistensi akhir" (Eventual [Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/)).
 Kapan pola arsitektur tingkat lanjut seperti Saga Pattern atau [CQRS](https://kenji.blog/id/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) harus diperkenalkan? Membuat keputusan kompleks ini dan menggambar cetak biru keseluruhan sistem adalah kompetensi utama dari insinyur senior (senior engineer).
 
 ```mermaid

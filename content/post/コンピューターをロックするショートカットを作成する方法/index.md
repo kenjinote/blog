@@ -9,7 +9,7 @@ categories: ["pc-gadgets"]
 description: 'Windowsパソコンをワンクリックでロックできるショートカットの作成方法を画像付きで分かりやすく解説します。離席時のセキュリティ対策として便利な、Win+Lキーを使った一瞬でロックする方法も紹介。'
 ---
 
-コンピューターをロックさせるショートカットを作成する方法を紹介します。
+コンピューターを[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)させるショートカットを作成する方法を紹介します。
 
 作成したショートカットをデスクトップなどにおいてダブルクリックするとコンピューターをロックできるので便利です。
 
@@ -44,8 +44,8 @@ description: 'Windowsパソコンをワンクリックでロックできるシ�
 
 ![img_7.png](img_7.webp)
 
-作成されたショートカットをダブルクリックするとコンピューターをロックされます。
+作成されたショートカットをダブルクリックするとコンピューターを[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)されます。
 
-`Winキー` + `Lキー`を押しても、同じくコンピューターをロックできます。
+`Winキー` + `Lキー`を押しても、同じくコンピューターを[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)できます。
 
 ※注意：コンピューターをロックの確認ダイアログは表示されません。

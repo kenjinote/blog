@@ -340,7 +340,7 @@ Wir haben bisher einen vielseitigen Vergleich angestellt, aber die endgültige A
    Es erledigt alle Aufgaben einwandfrei und bietet die umfangreichste Unterstützung für Tools von Drittanbietern. Das OpenAI-Ökosystem ist unverzichtbar, wenn man ein zuverlässiges JSON-Parsing mithilfe von Structured Outputs benötigt oder extrem fortgeschrittenes logisches Denken mit dem o1-Modell erfordert.
 
 ### Empfehlung für Multimodell-Routing
-Anstatt sich auf eine einzige API zu verlassen (Vendor-Lock-in), ist die zukünftige Richtung eine Architektur des **„LLM-Routings“**, bei der Modelle je nach Schwierigkeitsgrad und Wichtigkeit der Aufgabe dynamisch umgeschaltet werden.
+Anstatt sich auf eine einzige API zu verlassen (Vendor-[Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)-in), ist die zukünftige Richtung eine Architektur des **„LLM-Routings“**, bei der Modelle je nach Schwierigkeitsgrad und Wichtigkeit der Aufgabe dynamisch umgeschaltet werden.
 Beispielsweise kann man auf einfache Fragen von Benutzern mit dem kostengünstigen und schnellen `GPT-4o-mini` oder `Gemini 1.5 Flash` antworten. Nur wenn festgestellt wird, dass eine komplexe Verarbeitung erforderlich ist, greift man als Fallback für die Aufgabe auf `Claude 3.5 Sonnet` zurück. So lässt sich das optimale Gleichgewicht zwischen Kosten und Leistung erreichen.
 
 Die Entwicklung der KI ist unaufhaltsam. Verstehen Sie die Stärken und Schwächen der einzelnen APIs sowie die Besonderheiten ihrer Architektur genau, um flexible und flexibel skalierbare KI-Anwendungen zu entwickeln.

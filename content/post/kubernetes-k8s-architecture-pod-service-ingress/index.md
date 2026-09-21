@@ -202,7 +202,7 @@ Podは動的に作成・破棄されるため、IPアドレスも動的に変わ
 
 ### 7.1. Serviceの役割
 
-Serviceは、論理的なPodのセットと、それらにアクセスするためのポリシー（マイクロサービスと呼ばれることもあります）を定義する抽象概念です。Serviceには固定のIPアドレス（ClusterIP）が割り当てられ、背後のPodへのロードバランシングを行います。
+Serviceは、論理的なPodのセットと、それらにアクセスするためのポリシー（[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)と呼ばれることもあります）を定義する抽象概念です。Serviceには固定のIPアドレス（ClusterIP）が割り当てられ、背後のPodへのロードバランシングを行います。
 
 ### 7.2. Serviceのタイプ
 

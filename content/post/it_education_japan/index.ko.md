@@ -126,7 +126,7 @@ int main() {
 
 ## 5. 데이터베이스와 영속화의 장벽: 관계 대수의 부재
 
-현대의 애플리케이션에 있어 데이터의 저장과 검색(영속화)은 불가피한 테마입니다. 그러나 학교 교육의 대부분은 프로그램의 실행이 종료되면 사라져버리는 '메모리 상에서의 데이터 처리'에 머물러 있습니다. 관계형 데이터베이스(RDBMS)와 SQL의 배후에 있는 수학적 이론, 즉 에드거 F. 코드 박사가 제창한 '관계 대수(Relational Algebra)'를 가르치는 일은 드뭅니다.
+현대의 애플리케이션에 있어 데이터의 저장과 검색(영속화)은 불가피한 테마입니다. 그러나 학교 교육의 대부분은 프로그램의 실행이 종료되면 사라져버리는 '메모리 상에서의 데이터 처리'에 머물러 있습니다. 관계형 데이터베이스([RDBMS](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/))와 SQL의 배후에 있는 수학적 이론, 즉 에드거 F. 코드 박사가 제창한 '관계 대수(Relational Algebra)'를 가르치는 일은 드뭅니다.
 
 데이터베이스의 연산은 집합론에 기초한 이하의 기본 연산으로 정의됩니다.
 
@@ -134,7 +134,7 @@ int main() {
 - 추출 (Projection, $\pi$): 특정 속성(열)의 추출
 - 조인 (Join, $\bowtie$): 복수 릴레이션의 조건부 교차
 
-더욱이 방대한 레코드에서 순식간에 목적하는 데이터를 검색하기 위한 '[B-Tree](https://kenji.blog/ko/p/b-tree-database-index-theory/)(B트리) 인덱스'의 구조를 배우는 것은 자료 구조 응용의 최고의 실천입니다. B-Tree는 디스크 I/O 횟수를 최소화하면서 $O(\log N)$의 검색 속도를 보장합니다. 트랜잭션의 ACID 특성(Atomicity, Consistency, Isolation, Durability)을 알지 못하고서는 견고한 시스템을 만들 수 없습니다.
+더욱이 방대한 레코드에서 순식간에 목적하는 데이터를 검색하기 위한 '[B-Tree](https://kenji.blog/ko/p/b-tree-database-index-theory/)(B트리) 인덱스'의 구조를 배우는 것은 자료 구조 응용의 최고의 실천입니다. B-Tree는 디스크 I/O 횟수를 최소화하면서 $O(\log N)$의 검색 속도를 보장합니다. 트랜잭션의 [ACID](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/) 특성(Atomicity, [Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability)을 알지 못하고서는 견고한 시스템을 만들 수 없습니다.
 
 ## 6. 보안과 암호 이론: 소인수분해의 곤란성이 지탱하는 사회 인프라
 
@@ -226,7 +226,7 @@ xychart-beta
 AI 시대에 인간 엔지니어에게 요구되는 것은 프로그래밍 언어의 구문 기억력이 아닙니다. 그것은 다음과 같은 능력입니다.
 
 1. **요구사항 정의와 도메인 모델링**: 해결해야 할 복잡한 현실의 과제를 추출하고 시스템으로 모델화하는 능력.
-2. **아키텍처 설계**: 확장성(Scalability), 가용성(Availability), 유지보수성(Maintainability)을 담보하는 시스템 전체의 설계도를 그리는 능력.
+2. **아키텍처 설계**: 확장성(Scalability), 가용성([Availability](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/)), 유지보수성(Maintainability)을 담보하는 시스템 전체의 설계도를 그리는 능력.
 3. **수리적·논리적 검증**: AI가 생성한 코드에 보안 홀이나 계산량의 병목 현상이 없는지 이론적으로 검증하고 증명하는 능력.
 
 아이러니하게도 이들은 모두 '표면적인 프로그래밍'이 아니라, 깊고 추상적인 '컴퓨터 사이언스와 수학'의 영역입니다. 일본의 교육이 'AI로 대체되기 쉬운 하류 공정의 스킬'만을 가르치고 있다고 한다면, 그것은 국가적인 손실이라고 하지 않을 수 없습니다.

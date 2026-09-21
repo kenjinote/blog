@@ -328,7 +328,7 @@ int main() {
 
 ## 6.2 Hazard Pointers と RCU (Read-Copy Update)
 
-ロックフリー・データ構造の実装を支える標準機能として、 **Hazard Pointers** (`std::hazard_pointer`) と **RCU** (`std::rcu`) が標準化されました。これにより、C++で高パフォーマンスな並行データ構造を実装する際の敷居が大幅に下がりました。
+[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)フリー・データ構造の実装を支える標準機能として、 **Hazard Pointers** (`std::hazard_pointer`) と **RCU** (`std::rcu`) が標準化されました。これにより、C++で高パフォーマンスな並行データ構造を実装する際の敷居が大幅に下がりました。
 
 RCUは特にリード（読み取り）が圧倒的に多いワークロードにおいて、キャッシュラインの競合を排除し、線形なスケーラビリティを実現します。数学的に表現すれば、スレッド数 $T$ に対して読取スループットは理想的な $O(T)$ の増加を示します。
 

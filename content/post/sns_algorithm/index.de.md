@@ -68,7 +68,7 @@ $$
 $$
 
 **Auswirkungen auf die Technologieauswahl:**
-Riesige Modelle wie DLRM erfassen extrem feine Signale (z. B. einen leichten Anstieg der Verweildauer bei "Beiträgen mit Videos" oder "Beiträgen mit bestimmten Buzzwords") und spiegeln sie im Vorhersagescore wider. Infolgedessen werden technische Informationen mit "radikalen Titeln (z.B. 'React ist veraltet', 'Das Ende von Microservices')" oder "visuell auffälligen Demos" vom Algorithmus systematisch bevorzugt.
+Riesige Modelle wie DLRM erfassen extrem feine Signale (z. B. einen leichten Anstieg der Verweildauer bei "Beiträgen mit Videos" oder "Beiträgen mit bestimmten Buzzwords") und spiegeln sie im Vorhersagescore wider. Infolgedessen werden technische Informationen mit "radikalen Titeln (z.B. 'React ist veraltet', 'Das Ende von [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)')" oder "visuell auffälligen Demos" vom Algorithmus systematisch bevorzugt.
 
 ### 2.3 Reinforcement Learning und das Multi-Armed-Bandit-Problem (Multi-Armed Bandits)
 
@@ -165,7 +165,7 @@ Durch die Durchsetzung dieses Prozesses kann "Hype" (Begeisterung) in "Engineeri
 
 In der Technikwelt gibt es das berühmte Mantra **"Choose Boring Technology" (Wähle langweilige Technologie)**. Es lehrt, dass Innovations-Token (begrenzte Ressourcen, die ein Unternehmen für neue und unbekannte Technologien aufwenden kann) nicht für die Auswahl von Infrastrukturen oder Frameworks verschwendet werden sollten, die nicht direkt mit dem Kernwert des Geschäfts zusammenhängen.
 
-Social-Media-Algorithmen bevorzugen "Neuheit". Um jedoch ein robustes System aufzubauen, das dem produktiven Einsatz standhält, benötigen wir "langweilige" Technologien mit mehr als 10 Jahren Betriebserfahrung, deren Fehlerbehebungsverfahren Millionen von Treffern auf Google liefern (wie PostgreSQL, Redis, Standard-REST-APIs usw.).
+Social-Media-Algorithmen bevorzugen "Neuheit". Um jedoch ein robustes System aufzubauen, das dem produktiven Einsatz standhält, benötigen wir "langweilige" Technologien mit mehr als 10 Jahren Betriebserfahrung, deren Fehlerbehebungsverfahren Millionen von Treffern auf Google liefern (wie PostgreSQL, [Redis](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/), Standard-REST-APIs usw.).
 
 ---
 

@@ -165,7 +165,7 @@ Forzar este proceso permite transformar el "Hype (entusiasmo)" en "Engineering (
 
 Existe un famoso mantra en la comunidad técnica: **"Choose Boring Technology" (Elige la tecnología aburrida)**. Esta es una enseñanza de que no se deben desperdiciar las fichas de innovación (innovation tokens, los recursos limitados que una organización puede gastar en tecnología nueva y desconocida) en la elección de infraestructuras o frameworks que no están directamente vinculados con el valor fundamental del negocio.
 
-El algoritmo de las redes sociales prefiere la "novedad". Sin embargo, lo que se necesita para construir sistemas robustos que puedan soportar la operación real son tecnologías "aburridas" (como PostgreSQL, Redis, APIs REST estándar, etc.) que tienen más de 10 años de experiencia operativa y cuyos procedimientos de recuperación en caso de fallos arrojan millones de resultados en búsquedas en Google.
+El algoritmo de las redes sociales prefiere la "novedad". Sin embargo, lo que se necesita para construir sistemas robustos que puedan soportar la operación real son tecnologías "aburridas" (como PostgreSQL, [Redis](https://kenji.blog/es/p/nosql-database-selection-kvs-document-graph-wide-column/), APIs REST estándar, etc.) que tienen más de 10 años de experiencia operativa y cuyos procedimientos de recuperación en caso de fallos arrojan millones de resultados en búsquedas en Google.
 
 ---
 

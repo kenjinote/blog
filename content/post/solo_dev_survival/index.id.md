@@ -209,7 +209,7 @@ Dengan beberapa baris kode ini, Anda dapat langsung memproses pembayaran kartu k
 
 ---
 
-# 6. Menghindari Penguncian Infrastruktur (Vendor Lock-in) dan Portabilitas
+# 6. Menghindari Penguncian Infrastruktur (Vendor [Lock](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/)-in) dan Portabilitas
 
 Dalam strategi yang sangat bergantung pada BaaS atau layanan terkelola (managed services), yang selalu menjadi perdebatan adalah risiko "vendor lock-in". Misalnya, jika Anda terlalu bergantung pada Firestore milik Firebase, akan sangat sulit untuk bermigrasi ke RDB (Relational Database) di kemudian hari.
 

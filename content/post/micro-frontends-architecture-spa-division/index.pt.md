@@ -299,8 +299,8 @@ O roteamento é um fator chave que determina em qual nível a navegação do usu
   * `/checkout/*` -> Delega para a aplicação da equipe de pagamentos.
   Dentro de cada micro frontend, eles podem ter seu próprio roteamento interno.
 
-* **Roteamento na camada BFF (Backend For Frontend)** :
-  Um método onde o caminho é avaliado no nível de infraestrutura do servidor (por exemplo, Nginx ou API Gateway), servindo o HTML do micro frontend apropriado desde o início. Embora ocorra um hard refresh ao transitar de página, o grau de separação da arquitetura é o mais alto.
+* **Roteamento na camada [BFF](https://kenji.blog/pt/p/microservices-architecture-bff-api-gateway/) (Backend For Frontend)** :
+  Um método onde o caminho é avaliado no nível de infraestrutura do servidor (por exemplo, Nginx ou [API Gateway](https://kenji.blog/pt/p/microservices-architecture-bff-api-gateway/)), servindo o HTML do micro frontend apropriado desde o início. Embora ocorra um hard refresh ao transitar de página, o grau de separação da arquitetura é o mais alto.
 
 ## 7. Impacto organizacional e autonomia da equipe
 

@@ -290,7 +290,7 @@ In this way, even if $ f $ malicious nodes belong to both quorums, there is alwa
 In this article, we explained consensus formation, the greatest challenge in distributed systems, starting from the theoretical "Byzantine Generals Problem," moving to crash-tolerant **Paxos** and **Raft**, and covering **PBFT**, which is resistant to malicious nodes.
 
 *   **Paxos** : A mathematically proven, robust foundation, though complexity is an issue.
-*   **Raft** : Pursues understandability and ease of implementation, becoming the de facto standard for modern distributed KVS.
+*   **Raft** : Pursues understandability and ease of implementation, becoming the de facto standard for modern distributed [KVS](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/).
 *   **PBFT** : Achieves deterministic consensus in environments mixed with malicious nodes, forming the foundation of blockchain technology.
 
 Today, new BFT algorithms like the **Nakamoto Consensus ([PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/))** adopted by Bitcoin, Tendermint, and HotStuff continue to emerge, reducing the communication overhead of PBFT while improving scalability. Selecting the appropriate consensus algorithm based on system requirements (node reliability, required throughput, latency) is the key to building a robust distributed system.

@@ -328,7 +328,7 @@ Os pipelines de [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-bes
 # 9. Abordagem Matemática para Modelagem de Custo e Confiabilidade
 
 Ao desenhar a infraestrutura utilizando IaC, é importante avaliar o equilíbrio entre a fiabilidade (Reliabilidade) e o custo.
-Por exemplo, a disponibilidade de um sistema numa arquitetura Multi-AZ (Availability Zone) pode ser expressa através de modelos matemáticos.
+Por exemplo, a disponibilidade de um sistema numa arquitetura Multi-AZ ([Availability](https://kenji.blog/pt/p/cap-theorem-distributed-systems-tradeoff/) Zone) pode ser expressa através de modelos matemáticos.
 
 Considere a fiabilidade de um único componente (AZ) como $\text{R}_1$.
 Se posicionarmos os recursos em 2 AZs (redundância) e assumirmos que o sistema no seu todo estará a funcionar enquanto uma das partes estiver ativa, a fiabilidade total do sistema $\text{R}_{\text{total}}$ é dada pela seguinte fórmula:

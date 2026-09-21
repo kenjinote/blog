@@ -19,7 +19,7 @@ In this article, we will delve very deeply from a technical perspective into the
 ## 1. Basics of Static Site Generators (SSG) and Jamstack
 
 ### 1.1 Why static sites?
-Traditional dynamic CMS (e.g., WordPress) issue queries to a database (such as MySQL) and dynamically generate HTML on the server-side (like PHP) to return for every user request. While this method offers high flexibility, it has low resilience against sudden traffic spikes (such as going viral or DDoS attacks) and often leads to complicated infrastructure configurations, like placing cache servers (Redis or Varnish) in the front end.
+Traditional dynamic CMS (e.g., WordPress) issue queries to a database (such as MySQL) and dynamically generate HTML on the server-side (like PHP) to return for every user request. While this method offers high flexibility, it has low resilience against sudden traffic spikes (such as going viral or DDoS attacks) and often leads to complicated infrastructure configurations, like placing cache servers ([Redis](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/) or Varnish) in the front end.
 
 On the other hand, with Static Site Generators (SSG) adopting the Jamstack (JavaScript, APIs, and Markup) architecture, all HTML files, CSS, and JavaScript are generated in advance (at build time). In response to user requests, the web server (or CDN) simply returns the already generated static files as they are, thereby achieving overwhelming speed and robust security.
 

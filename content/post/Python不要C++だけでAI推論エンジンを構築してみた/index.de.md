@@ -16,7 +16,7 @@ In der modernen KI-Entwicklung ist Python der De-facto-Standard. Dank leistungss
 
 Warum sollte man also Python explizit ausschließen und eine KI-Inferenz-Engine ausschließlich mit C++ erstellen? Dafür gibt es einige triftige Gründe:
 
-1. **Extreme Leistung und niedrige Latenz**: Der Overhead durch Pythons GIL (Global Interpreter Lock) und die dynamische Typisierung kann vollständig eliminiert werden. Besonders bei Systemen, die Echtzeitfähigkeit erfordern, können Verzögerungen im Millisekundenbereich fatal sein.
+1. **Extreme Leistung und niedrige Latenz**: Der Overhead durch Pythons GIL (Global Interpreter [Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)) und die dynamische Typisierung kann vollständig eliminiert werden. Besonders bei Systemen, die Echtzeitfähigkeit erfordern, können Verzögerungen im Millisekundenbereich fatal sein.
 2. **Einfaches Deployment**: Der Aufbau einer Python-Umgebung (riesige Bibliotheken, Abhängigkeitshölle) auf dem System des Endbenutzers ist äußerst schwierig. Mit C++ reicht es aus, eine einzige statisch verlinkte ausführbare Binärdatei (`.exe` oder ELF-Binärdatei) zu verteilen.
 3. **Unterstützung für Edge-Geräte**: In ressourcenbeschränkten Umgebungen wie Smartphones, eingebetteten Geräten oder dem Raspberry Pi gibt es keinen Spielraum, um eine Python-Laufzeitumgebung auszuführen, die mehrere Gigabyte an Speicher verbraucht.
 4. **Direkte Hardwaresteuerung**: Low-Level-Steuerungen wie das Timing der Speicherzuweisung, die explizite Nutzung von SIMD-Befehlen und die Optimierung des Speichertransfers mit der GPU sind mit C++ möglich.
@@ -352,7 +352,7 @@ $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
 
-Zudem müssen bei der autoregressiven Token-Generierung die Berechnungsergebnisse (Key und Value) vergangener Tokens aufbewahrt werden. Dies nennt man "**KV-Cache (Key-Value Cache)**".
+Zudem müssen bei der autoregressiven Token-Generierung die Berechnungsergebnisse (Key und Value) vergangener Tokens aufbewahrt werden. Dies nennt man "**KV-Cache ([Key-Value](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)**".
 
 ```mermaid
 graph TD

@@ -183,12 +183,12 @@ Terraformは、コード（理想の状態）と現実のインフラをマッ�
 2. **パフォーマンス** ：大規模なインフラでは、全リソースの状態をAPI経由で都度取得するとタイムアウトやAPIレートリミットに引っかかるため。
 3. **リソースの追跡** ：コード上からリソースの定義を削除した場合、Terraformは「Stateファイルには存在するがコードにはないリソース」を特定し、削除アクションを実行します。Stateがなければ、コードから消えたリソースは単に「放置」されてしまいます。
 
-## 5.2. リモートステートとロック管理
+## 5.2. リモートステートと[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)管理
 
 チーム開発において、ローカルマシンに `terraform.tfstate` を置くことは **絶対的なアンチパターン** です。複数人が同時に `terraform apply` を実行すると、Stateが競合しインフラが破損します。
 
 これを解決するのが **Remote State** と **State Locking** です。
-AWS環境であれば、S3バケットをStateの保存先にし、DynamoDBをロックの管理に用いるのが標準的です。
+AWS環境であれば、S3バケットをStateの保存先にし、DynamoDBを[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の管理に用いるのが標準的です。
 
 ```hcl
 terraform {
@@ -210,7 +210,7 @@ flowchart TD
     Lock -.->|Locked, Dev B waits| DevB
 ```
 
-このように設定することで、Developer Aが `apply` を実行している間はDynamoDBにロックが書き込まれ、Developer Bの実行はブロックされます。
+このように設定することで、Developer Aが `apply` を実行している間はDynamoDBに[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が書き込まれ、Developer Bの実行はブロックされます。
 
 ## 5.3. ドリフト（Drift）の検出と修正
 
@@ -262,7 +262,7 @@ module "vpc" {
 
 TerraformのHCLは単なる設定ファイルではなく、ある程度のロジックを組むための機能も備えています。
 
-## 7.1. 動的ブロック (dynamic block)
+## 7.1. 動的ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/) (dynamic block)
 
 リストやマップに基づいて、ネストされたブロックを動的に生成します。例えば、セキュリティグループのルールの設定などに重宝します。
 
@@ -327,7 +327,7 @@ sequenceDiagram
 # 9. 信頼性とコストモデリングの数理的アプローチ
 
 IaCを用いてインフラを設計する際、信頼性（Reliability）とコストのバランスを評価することは重要です。
-例えば、マルチAZ（Availability Zone）構成におけるシステムの稼働率は、数理モデルで表現できます。
+例えば、マルチAZ（[Availability](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/) Zone）構成におけるシステムの稼働率は、数理モデルで表現できます。
 
 単一のコンポーネント（AZ）の信頼性を $R_1$ とします。
 もし2つのAZ（冗長化）にリソースを配置し、どちらか一方が稼働していればシステム全体が稼働するとみなせる場合、システム全体の信頼性 $R_{total}$ は以下の式で表されます。
@@ -345,7 +345,7 @@ Terraformでモジュールを設計する際、入力変数として `az_count`
 ## ベストプラクティス
 1. **Stateファイルの分割** ：すべてのインフラを1つのStateファイルにまとめると、影響範囲が広がりすぎ、`plan` の実行も遅くなります。「ネットワーク（VPC等）」「データベース」「アプリケーション」のように、ライフサイクルが異なる単位でState（およびディレクトリ）を分割しましょう。
 2. **バージョン固定** ：Terraform本体のバージョンと、Providerのバージョンは必ず固定（pinning）しましょう。バージョンアップによる破壊的変更からインフラを守ります。
-3. **データソース（Data Sources）の活用** ：他のStateや既存のリソースを参照する場合は、ハードコードするのではなく `data` ブロックを使用して動的に値を取得しましょう。
+3. **データソース（Data Sources）の活用** ：他のStateや既存のリソースを参照する場合は、ハードコードするのではなく `data` ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を使用して動的に値を取得しましょう。
 
 ## アンチパターン
 1. **手動変更との混在** ：Terraformで管理しているリソースをGUIから直接変更すること。Stateの不整合を招きます。
@@ -358,6 +358,6 @@ Terraformでモジュールを設計する際、入力変数として `az_count`
 
 **Infrastructure as Code** は、現代のソフトウェア開発において不可欠なプラクティスです。その中でも **Terraform** は、「宣言的構成管理」という強力な哲学、Stateによる高度な状態追跡、そしてプラットフォームを跨いだ豊富なプロバイダーエコシステムにより、IaCのデファクトスタンダードとしての地位を確立しています。
 
-しかし、単にツールを導入しただけではその恩恵を最大限に受けることはできません。モジュールによるコードの構造化、リモートステートとロックによるチーム開発体制の構築、[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)との統合によるGitOpsの実現、そしてセキュリティのシフトレフトといった「ベストプラクティス」を組み合わせることで、初めて安全でスケーラブルなインフラ運用が可能になります。
+しかし、単にツールを導入しただけではその恩恵を最大限に受けることはできません。モジュールによるコードの構造化、リモートステートと[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)によるチーム開発体制の構築、[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)との統合によるGitOpsの実現、そしてセキュリティのシフトレフトといった「ベストプラクティス」を組み合わせることで、初めて安全でスケーラブルなインフラ運用が可能になります。
 
 インフラはもはや「クリックして作る」ものではありません。ソフトウェアと同様に「コーディングし、テストし、継続的にデプロイする」時代なのです。Terraformを使いこなし、堅牢で美しいインフラアーキテクチャを築き上げてください。
