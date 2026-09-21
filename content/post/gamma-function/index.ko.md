@@ -12,7 +12,7 @@ tags: ["감마 함수", "오일러", "복소 해석학", "미적분학"]
 
 수학을 공부하다 보면 때로는 '이산적인 개념을 연속적인 것으로 확장할 수 없을까?'라는 의문에 직면하게 됩니다. 그 가장 아름답고도 중요한 예 중 하나가 바로 **[감마 함수](https://kenji.blog/ko/p/gamma-function/)(Gamma Function)** 입니다.
 
-[감마 함수](https://kenji.blog/ko/p/gamma-function/)는 자연수에 대해 정의되는 '팩토리얼($n!$)'을 양의 실수, 나아가 복소수 전체로 확장한 함수입니다. 18세기의 위대한 수학자 [레온하르트 오일러](https://kenji.blog/ko/p/euler/)([Leonhard Euler](https://kenji.blog/ko/p/euler/))에 의해 발견된 이 함수는 해석학, 확률론, 통계학, 그리고 물리학에 이르기까지 모든 분야에서 등장합니다.
+[감마 함수](https://kenji.blog/ko/p/gamma-function/)는 자연수에 대해 정의되는 '팩토리얼($n!$)'을 양의 실수, 나아가 복소수 전체로 확장한 함수입니다. 18세기의 위대한 수학자 레온하르트 오일러([Leonhard Euler](https://kenji.blog/ko/p/euler/))에 의해 발견된 이 함수는 해석학, 확률론, 통계학, 그리고 물리학에 이르기까지 모든 분야에서 등장합니다.
 
 본 기사에서는 [감마 함수](https://kenji.blog/ko/p/gamma-function/)의 기초부터 그 심오한 성질까지 자세히 살펴보겠습니다.
 

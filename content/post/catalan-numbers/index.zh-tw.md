@@ -22,7 +22,7 @@ tags:
 
 $$ C_0 = 1, \quad C_1 = 1, \quad C_2 = 2, \quad C_3 = 5, \quad C_4 = 14, \quad C_5 = 42, \quad C_6 = 132, \quad C_7 = 429, \quad \dots $$
 
-這個數列作為各種組合問題的解頻繁出現。在本文中，我們將介紹四個涉及[卡塔蘭數](https://kenji.blog/zh-tw/p/catalan-numbers/)的著名例子（合法括號序列、二元樹、多邊形三角剖分和迪克路徑）。我們將剖析它們背後的遞迴結構，以了解為什麼它們對應著完全相同的數列。此外，我們還將詳細介紹使用動態規劃 ([DP](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) 的計算演算法以及使用[母函數](https://kenji.blog/zh-tw/p/generating-functions/)的數學推導。
+這個數列作為各種組合問題的解頻繁出現。在本文中，我們將介紹四個涉及[卡塔蘭數](https://kenji.blog/zh-tw/p/catalan-numbers/)的著名例子（合法括號序列、二元樹、多邊形三角剖分和迪克路徑）。我們將剖析它們背後的遞迴結構，以了解為什麼它們對應著完全相同的數列。此外，我們還將詳細介紹使用動態規劃 (DP) 的計算演算法以及使用[母函數](https://kenji.blog/zh-tw/p/generating-functions/)的數學推導。
 
 ## 2. [卡塔蘭數](https://kenji.blog/zh-tw/p/catalan-numbers/)出現的四個具體例子
 

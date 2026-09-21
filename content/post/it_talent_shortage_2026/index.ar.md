@@ -26,7 +26,7 @@ description: 'حقيقة "مشكلة 2026" في صناعة تكنولوجيا ا
 
 ومع ذلك، اعتبارًا من عام 2026، وصل هذا النموذج إلى حدوده. مع تحول جوهر التحول الرقمي (DX) من "مجرد رقمنة" إلى "تحويل نماذج الأعمال"، لم يعد تطوير نموذج الشلال (Waterfall) منخفض الرشاقة قادرًا على مواكبة التغيرات في السوق.
 
-من المفترض أن تكون عمليات التطوير الحديثة **سحابية أصلية (Cloud-Native)** و ** موجهة بالذكاء الاصطناعي (AI-Driven)**. لم تعد الحاويات ([Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/))، وبنية الخدمات المصغرة ([[Microservice](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/))، وأتمتة مسارات [CI/CD](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/) "تقنيات خاصة" بل أصبحت "بنية تحتية قياسية".
+من المفترض أن تكون عمليات التطوير الحديثة **سحابية أصلية (Cloud-Native)** و ** موجهة بالذكاء الاصطناعي (AI-Driven)**. لم تعد الحاويات ([Docker](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)/Kubernetes)، وبنية الخدمات المصغرة (Microservices)، وأتمتة مسارات [CI/CD](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/) "تقنيات خاصة" بل أصبحت "بنية تحتية قياسية".
 
 ```mermaid
 graph TD

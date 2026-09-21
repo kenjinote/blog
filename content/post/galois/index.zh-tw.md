@@ -8,7 +8,7 @@ categories: ["數學", "傳記"]
 tags: ["伽羅瓦理論", "代數學", "群論", "歷史"]
 ---
 
-在數學的歷史上，很少有人能像[埃瓦里斯特·伽羅瓦](https://kenji.blog/zh-tw/p/galois/)（[Évariste Galois](https://kenji.blog/zh-tw/p/galois/)，1811年 - 1832年）那樣，度過如此充滿戲劇性和悲劇色彩的一生。這位年僅20歲便在決鬥中喪生的法國年輕人，在死前一夜寫下的信中，為日後徹底改變數學面貌的宏大理論奠定了基礎。在本文中，我們將深入探討伽羅瓦波瀾壯闊的一生，以及他留下的最偉大遺產—— **伽羅瓦理論** （[Galois Theory](https://kenji.blog/zh-tw/p/galois-theory/)）。
+在數學的歷史上，很少有人能像[埃瓦里斯特·伽羅瓦](https://kenji.blog/zh-tw/p/galois/)（Évariste Galois，1811年 - 1832年）那樣，度過如此充滿戲劇性和悲劇色彩的一生。這位年僅20歲便在決鬥中喪生的法國年輕人，在死前一夜寫下的信中，為日後徹底改變數學面貌的宏大理論奠定了基礎。在本文中，我們將深入探討伽羅瓦波瀾壯闊的一生，以及他留下的最偉大遺產—— **伽羅瓦理論** （[Galois Theory](https://kenji.blog/zh-tw/p/galois-theory/)）。
 
 ## 1. 波瀾壯闊的一生：激情與挫折
 

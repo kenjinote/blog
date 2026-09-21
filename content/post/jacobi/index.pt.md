@@ -16,7 +16,7 @@ tags:
 
 # 1. Introdução: Um Buscador do Pensamento Puro
 
-[Carl Gustav Jacob Jacobi](https://kenji.blog/pt/p/jacobi/) (1804–1851) foi um **matemático alemão** do século XIX que fez contribuições decisivas para diversos campos como álgebra, análise, teoria dos números e mecânica. Junto com [Niels Henrik Abel](https://kenji.blog/pt/p/abel/), ele é celebrado como o "descobridor das funções elípticas", e é o homônimo do "[Jacobi](https://kenji.blog/pt/p/jacobi/)ano" (determinante jacobiano) que frequentemente encontramos no cálculo multivariável hoje.
+[Carl Gustav Jacob Jacobi](https://kenji.blog/pt/p/jacobi/) (1804–1851) foi um **matemático alemão** do século XIX que fez contribuições decisivas para diversos campos como álgebra, análise, teoria dos números e mecânica. Junto com Niels Henrik Abel, ele é celebrado como o "descobridor das funções elípticas", e é o homônimo do "[Jacobi](https://kenji.blog/pt/p/jacobi/)ano" (determinante jacobiano) que frequentemente encontramos no cálculo multivariável hoje.
 
 Ele valorizava a beleza da matemática em si e a honra do espírito humano acima da utilidade prática. Neste artigo, nos aprofundaremos na vida de [Jacobi](https://kenji.blog/pt/p/jacobi/), suas principais conquistas matemáticas e os famosos episódios que ele deixou para trás.
 
@@ -47,7 +47,7 @@ Em 1826, [Jacobi](https://kenji.blog/pt/p/jacobi/) tornou-se professor na Univer
 
 Uma das maiores conquistas de [Jacobi](https://kenji.blog/pt/p/jacobi/) é a construção da teoria das funções elípticas. As integrais elípticas aparecem ao calcular o movimento de um pêndulo ou o comprimento do arco de uma elipse, e [Legendre](https://kenji.blog/pt/p/legendre/) e outros as estudavam há décadas.
 
-[Jacobi](https://kenji.blog/pt/p/jacobi/) introduziu a perspectiva inovadora de considerar a função inversa da integral. Notavelmente, o jovem gênio norueguês **[Abel](https://kenji.blog/pt/p/abel/)** descobriu a mesma abordagem de forma totalmente independente quase ao mesmo tempo. Tanto [Jacobi](https://kenji.blog/pt/p/jacobi/) quanto [Abel](https://kenji.blog/pt/p/abel/) descobriram a dupla periodicidade das funções elípticas, revolucionando o campo.
+[Jacobi](https://kenji.blog/pt/p/jacobi/) introduziu a perspectiva inovadora de considerar a função inversa da integral. Notavelmente, o jovem gênio norueguês **Abel** descobriu a mesma abordagem de forma totalmente independente quase ao mesmo tempo. Tanto Jacobi quanto [Abel](https://kenji.blog/pt/p/abel/) descobriram a dupla periodicidade das funções elípticas, revolucionando o campo.
 
 $$ \text{sn}(u, k), \quad \text{cn}(u, k), \quad \text{dn}(u, k) $$
 
@@ -55,7 +55,7 @@ $$ \text{sn}(u, k), \quad \text{cn}(u, k), \quad \text{dn}(u, k) $$
 
 $$ \vartheta(z, \tau) = \sum_{n=-\infty}^{\infty} e^{\pi i n^2 \tau + 2 \pi i n z} $$
 
-Em 1829, publicou sua obra-prima, *Fundamenta nova theoriae functionum ellipticarum* (Novos Fundamentos da Teoria das Funções Elípticas), completando a sistematização desta área. O matemático francês [Legendre](https://kenji.blog/pt/p/legendre/) ficou maravilhado ao saber das conquistas de [Jacobi](https://kenji.blog/pt/p/jacobi/) e [Abel](https://kenji.blog/pt/p/abel/), que eram muito mais jovens do que ele, e os elogiou muito.
+Em 1829, publicou sua obra-prima, *Fundamenta nova theoriae functionum ellipticarum* (Novos Fundamentos da Teoria das Funções Elípticas), completando a sistematização desta área. O matemático francês [Legendre](https://kenji.blog/pt/p/legendre/) ficou maravilhado ao saber das conquistas de Jacobi e [Abel](https://kenji.blog/pt/p/abel/), que eram muito mais jovens do que ele, e os elogiou muito.
 
 # 5. O [Jacobi](https://kenji.blog/pt/p/jacobi/)ano (Determinante [Jacobi](https://kenji.blog/pt/p/jacobi/)ano) e a Análise Multivariável
 

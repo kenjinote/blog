@@ -83,7 +83,7 @@ $$ \text{Spec}(R) = \{ \mathfrak{p} \mid \mathfrak{p} \text{ は } R \text{ の�
 
 ### エタール・コホモロジーと[ヴェイユ](https://kenji.blog/p/weil/)予想
 
-[グロタンディーク](https://kenji.blog/p/grothendieck/)の主要な目標の一つは、有限体上の代数多様体に関する「[ヴェイユ](https://kenji.blog/p/weil/)予想」を証明することでした。彼は、古典的な位相空間の概念を拡張し、 **エタール・コホモロジー（Étale Cohomology）** という全く新しい理論を創設しました。彼はこの武器を用いて[ヴェイユ](https://kenji.blog/p/weil/)予想の一部を証明し、最後の部分は彼の弟子であるピエール・ドリーニュ（Pierre Deligne）によって証明されました。
+[グロタンディーク](https://kenji.blog/p/grothendieck/)の主要な目標の一つは、有限体上の代数多様体に関する「ヴェイユ予想」を証明することでした。彼は、古典的な位相空間の概念を拡張し、 **エタール・コホモロジー（Étale Cohomology）** という全く新しい理論を創設しました。彼はこの武器を用いて[ヴェイユ](https://kenji.blog/p/weil/)予想の一部を証明し、最後の部分は彼の弟子であるピエール・ドリーニュ（Pierre Deligne）によって証明されました。
 
 ### トポス論とモチーフ
 

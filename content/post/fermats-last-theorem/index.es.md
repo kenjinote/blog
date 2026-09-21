@@ -13,7 +13,7 @@ tags:
 
 ## 1. Introducción: El misterio matemático más famoso del mundo
 
-En la historia de las matemáticas, hay un problema que ha cautivado y atormentado a más personas que cualquier otro. Ese es el **Último teorema de [Fermat](https://kenji.blog/es/p/fermat/)** ([Fermat's Last Theorem](https://kenji.blog/es/p/fermats-last-theorem/)). Un grandioso drama matemático de 360 años de duración comenzó con una breve nota dejada en el margen del amado libro "Aritmética" de [Diofanto](https://kenji.blog/es/p/diophantus/) por [Pierre de Fermat](https://kenji.blog/es/p/fermat/), un juez francés y matemático aficionado del siglo XVII.
+En la historia de las matemáticas, hay un problema que ha cautivado y atormentado a más personas que cualquier otro. Ese es el **Último teorema de [Fermat](https://kenji.blog/es/p/fermat/)** (Fermat's Last Theorem). Un grandioso drama matemático de 360 años de duración comenzó con una breve nota dejada en el margen del amado libro "Aritmética" de Diofanto por [Pierre de Fermat](https://kenji.blog/es/p/fermat/), un juez francés y matemático aficionado del siglo XVII.
 
 El contenido del teorema en sí es tan simple que incluso un estudiante de secundaria puede entenderlo.
 

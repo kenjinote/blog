@@ -271,7 +271,7 @@ La sécurité de [Raft](https://kenji.blog/fr/p/byzantine-generals-problem-conse
 
 Cela élimine complètement de manière mathématique et algorithmique les incohérences de données dans un environnement distribué. `etcd`, le magasin de données backend de [Kubernetes](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/), adopte également [Raft](https://kenji.blog/fr/p/byzantine-generals-problem-consensus/) pour réaliser une gestion d'état stricte du cluster.
 
-## 8. [[Microservice](https://kenji.blog/fr/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/fr/p/microservices-architecture-bff-api-gateway/) et transactions
+## 8. [Microservices](https://kenji.blog/fr/p/microservices-architecture-bff-api-gateway/) et transactions
 
 Le théorème CAP ne se limite pas aux bases de données individuelles, il a également une influence profonde sur l' **architecture en microservices** moderne.
 

@@ -21,7 +21,7 @@ description: '利用Python和Pandas，对从Oura Ring等智能戒指和Apple Wat
 用于获取生理数据的传感器（可穿戴设备）各有其擅长的领域。在数据驱动的健康管理中，根据目标选择最合适的设备是第一步。
 
 ### 2.1 Oura Ring (Generation 3 / 4)
-因为直接从手指动脉获取数据，与在手腕处进行测量的智能手表相比，其睡眠时的心率、心率变异性（HRV）以及体表温度变化的测量精度非常高，这是它的特点。手指上密布毛细血管，通过光学心率传感器（PPG: Photoplethysmography）可以获取低噪声的数据。此外，其[REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)非常完善，能够通过[OAuth](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/)2.0轻松导出JSON格式的原始数据，可以说是对工程师而言最具“黑客友好度（Hackable）”的设备。
+因为直接从手指动脉获取数据，与在手腕处进行测量的智能手表相比，其睡眠时的心率、心率变异性（HRV）以及体表温度变化的测量精度非常高，这是它的特点。手指上密布毛细血管，通过光学心率传感器（PPG: Photoplethysmography）可以获取低噪声的数据。此外，其[REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)非常完善，能够通过[OAuth](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/)2.0轻松导出JSON格式的原始数据，可以说是对工程师而言最具“黑客友好度（Hackable）”的设备。
 
 ### 2.2 Apple Watch Series / Ultra
 它在活动追踪、血氧饱和度（SpO2）以及心电图（ECG）的测量方面表现出色。在白天的活动量记录以及通过正念App（呼吸App）进行按需HRV测量方面，它是最强的设备。然而，在导出数据时必须经过HealthKit，若想用Python等进行直接访问，则需要通过iOS App（如AutoSleep或HealthFit）导出CSV，中间多了一个步骤。

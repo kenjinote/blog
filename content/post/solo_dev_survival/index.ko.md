@@ -25,7 +25,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 반면 개인 개발자의 강점은 **"손익분기점이 극단적으로 낮다"** 는 것에 있습니다. 월 수십만 엔의 이익이 발생하면 개인으로서는 충분히 사업으로서 성립합니다. 여기에 '롱테일 이론'의 스위트 스팟이 존재합니다.
 
-## [지프의 법칙([Zipf's Law](https://kenji.blog/ko/p/zipfs-law/))](https://kenji.blog/p/zipfs-law/)과 시장 분포
+## [지프의 법칙(Zipf's Law)](https://kenji.blog/p/zipfs-law/)과 시장 분포
 
 시장 규모와 수의 관계는 종종 지프의 법칙이나 파레토의 법칙을 따릅니다. 시장의 순위를 $k$, 그 시장 규모(매출 잠재력)를 $P(k)$ 라고 하면 다음과 같은 멱법칙 모델로 표현할 수 있습니다.
 

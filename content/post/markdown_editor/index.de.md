@@ -252,7 +252,7 @@ Beim modernen Schreiben von Technik-Blogs ist die Nutzung von LLMs ([Large Langu
 
 Mit GitHub Copilot Chat in VS Code oder `ChatGPT.nvim` und `Copilot.vim` in Neovim können Sie beispielsweise den folgenden Prompt absenden, ohne den Editor zu verlassen:
 
-> "Erstelle für die folgenden technologischen Elemente einen Gliederungsentwurf in einer hierarchischen Markdown-Struktur für Anfänger: [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)"
+> "Erstelle für die folgenden technologischen Elemente einen Gliederungsentwurf in einer hierarchischen Markdown-Struktur für Anfänger: [Docker](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/), Kubernetes, [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)"
 
 Sofort wird ein Markdown mit Überschriften und Aufzählungspunkten generiert. Wir müssen dieses Grundgerüst nur noch mit Inhalten füllen.
 

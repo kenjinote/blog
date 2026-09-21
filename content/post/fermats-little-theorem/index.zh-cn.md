@@ -14,7 +14,7 @@ tags:
 
 在现代互联网社会中，我们能够安全地进行通信，全靠 **密码学** 的功劳。而在这密码学的基础之中，存在着由17世纪数学家[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)（[Pierre de Fermat](https://kenji.blog/zh-cn/p/fermat/)）发现的一条优美的定理。
 
-本文将以通俗易懂的方式，为您讲解数论的重要基础—— **[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)** （[Fermat's Little Theorem](https://kenji.blog/zh-cn/p/fermats-little-theorem/)），探讨它的含义、证明方法，以及它是如何被应用到现代[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码学中的。
+本文将以通俗易懂的方式，为您讲解数论的重要基础—— **[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)** （Fermat's Little Theorem），探讨它的含义、证明方法，以及它是如何被应用到现代[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码学中的。
 
 ## 什么是[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)？
 

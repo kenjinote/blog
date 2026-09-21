@@ -42,7 +42,7 @@ graph TD;
 
 ## 历史背景：从高斯的猜想到证明
 
-素数定理的历史可以追溯到18世纪末。年仅15岁的天才数学家[卡尔·弗里德里希·高斯](https://kenji.blog/zh-cn/p/gauss/)（[Carl Friedrich Gauss](https://kenji.blog/zh-cn/p/gauss/)）在观察素数表时，发现素数出现的频率与对数函数有关。大约在同一时间，[阿德里安-马里·勒让德](https://kenji.blog/zh-cn/p/legendre/)（[Adrien-Marie Legendre](https://kenji.blog/zh-cn/p/legendre/)）也独立提出了类似的猜想。
+素数定理的历史可以追溯到18世纪末。年仅15岁的天才数学家[卡尔·弗里德里希·高斯](https://kenji.blog/zh-cn/p/gauss/)（Carl Friedrich Gauss）在观察素数表时，发现素数出现的频率与对数函数有关。大约在同一时间，阿德里安-马里·勒让德（[Adrien-Marie Legendre](https://kenji.blog/zh-cn/p/legendre/)）也独立提出了类似的猜想。
 
 然而，他们都没能给出严格的证明。
 

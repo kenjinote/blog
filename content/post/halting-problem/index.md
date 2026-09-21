@@ -150,19 +150,19 @@ graph TD
 
 ## コンピュータの歴史と[チューリング](https://kenji.blog/p/turing/)マシン
 
-[アラン・チューリング](https://kenji.blog/p/turing/)がこの問題を提起し、証明したのは1936年、まだ現代のような電子計算機（コンピュータ）が存在しない時代でした。彼は「計算とは何か？」を数学的に厳密に定義するため、 **「[チューリング](https://kenji.blog/p/turing/)マシン（[Turing Machine](https://kenji.blog/p/turing-machine-computability/)）」** という仮想的な機械を考案しました。
+[アラン・チューリング](https://kenji.blog/p/turing/)がこの問題を提起し、証明したのは1936年、まだ現代のような電子計算機（コンピュータ）が存在しない時代でした。彼は「計算とは何か？」を数学的に厳密に定義するため、 **「チューリングマシン（[Turing Machine](https://kenji.blog/p/turing-machine-computability/)）」** という仮想的な機械を考案しました。
 
-[チューリング](https://kenji.blog/p/turing/)マシンは、無限に続くテープ、テープの情報を読み書きするヘッド、そして機械の状態を管理する状態遷移表から構成されます。どんなに複雑な現代のプログラムであっても、理論上はこの[チューリング](https://kenji.blog/p/turing/)マシンに還元できることが知られています。これを **「チャーチ＝[チューリング](https://kenji.blog/p/turing/)のテーゼ（Church-Turing Thesis）」** と呼びます。
+[チューリング](https://kenji.blog/p/turing/)マシンは、無限に続くテープ、テープの情報を読み書きするヘッド、そして機械の状態を管理する状態遷移表から構成されます。どんなに複雑な現代のプログラムであっても、理論上はこのチューリングマシンに還元できることが知られています。これを **「チャーチ＝[チューリング](https://kenji.blog/p/turing/)のテーゼ（Church-Turing Thesis）」** と呼びます。
 
 [チューリング](https://kenji.blog/p/turing/)は、この単純なモデルを使って「計算可能な問題」と「計算不可能な問題」の境界線を引こうと試みました。その結果として発見されたのが、決定不能な問題の代表格である[停止性問題](https://kenji.blog/p/turing-machine-computability/)です。
 
 ## [ゲーデルの不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)との深い関係
 
-[停止性問題](https://kenji.blog/p/turing-machine-computability/)の証明の根底にある「自己言及のパラドックス」は、[チューリング](https://kenji.blog/p/turing/)の少し前、1931年に[クルト・ゲーデル](https://kenji.blog/p/godel/)（[Kurt Gödel](https://kenji.blog/p/godel/)）が発表した **「[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)（Incompleteness Theorems）」** と深い繋がりを持っています。
+[停止性問題](https://kenji.blog/p/turing-machine-computability/)の証明の根底にある「自己言及のパラドックス」は、チューリングの少し前、1931年にクルト・ゲーデル（Kurt Gödel）が発表した **「[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)（Incompleteness Theorems）」** と深い繋がりを持っています。
 
-[ゲーデル](https://kenji.blog/p/godel/)の第一[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)は、「自然数論を含む十分に強力な公理系の中には、証明も反証もできない真の命題が必ず存在する」というものです。[ゲーデル](https://kenji.blog/p/godel/)はこの定理を証明する際に、「この命題は証明できない」という自己言及的な命題を数学的に構成しました。
+[ゲーデル](https://kenji.blog/p/godel/)の第一不完全性定理は、「自然数論を含む十分に強力な公理系の中には、証明も反証もできない真の命題が必ず存在する」というものです。[ゲーデル](https://kenji.blog/p/godel/)はこの定理を証明する際に、「この命題は証明できない」という自己言及的な命題を数学的に構成しました。
 
-[チューリング](https://kenji.blog/p/turing/)の[停止性問題](https://kenji.blog/p/turing-machine-computability/)における意地悪なプログラム $D$ は、「判定機 $H$ が停止すると判定するなら無限ループし、無限ループすると判定するなら停止する」という形で自己言及を行っています。つまり、停止性問題は、計算機科学という舞台における **[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)のプログラミング版** と解釈することもできます。論理の限界を示すこの二つの偉大な証明は、同じパラドックスの構造を共有しているのです。
+[チューリング](https://kenji.blog/p/turing/)の停止性問題における意地悪なプログラム $D$ は、「判定機 $H$ が停止すると判定するなら無限ループし、無限ループすると判定するなら停止する」という形で自己言及を行っています。つまり、停止性問題は、計算機科学という舞台における **[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)のプログラミング版** と解釈することもできます。論理の限界を示すこの二つの偉大な証明は、同じパラドックスの構造を共有しているのです。
 
 ## この定理が現代にもたらす意味
 

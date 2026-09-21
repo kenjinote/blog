@@ -24,7 +24,7 @@ The foundational system of a blog (such as a static site generator) and the stru
 
 ### 1.1 Core [Web Vitals](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) Optimization
 
-Google has adopted page experience as a ranking factor, and **[Core Web Vitals](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** cannot be ignored, even for tech blogs.
+Google has adopted page experience as a ranking factor, and **[Core Web Vitals](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (LCP, FID/INP, [CLS](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** cannot be ignored, even for tech blogs.
 Tech blogs heavily use large amounts of source code blocks, mathematical formulas (MathJax / KaTeX), and explanatory diagrams. These are factors that delay page rendering.
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/))**: The loading speed of the main content above the fold. Use WebP or AVIF for the eye-catch image and add the `fetchpriority="high"` attribute to preload it. Also, huge CSS and JS files for syntax highlighting should be loaded asynchronously or designed to load only on pages where they are needed.

@@ -82,7 +82,7 @@ Auf diese Weise ist es durch die Einführung eines CDNs möglich, die durchschni
 
 ---
 
-## 4. Aufbau einer [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) mit [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)
+## 4. Aufbau einer [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-Pipeline mit [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)
 
 Um den Aktualisierungsprozess eines Hugo-Blogs zu automatisieren, richten wir eine CI/CD-Pipeline mit GitHub Actions ein. Auf diese Weise genügt es, lokal einen Markdown-Artikel zu schreiben und `git push` auszuführen; der Build wird automatisch gestartet und auf Cloudflare Pages oder GitHub Pages bereitgestellt.
 
@@ -254,7 +254,7 @@ Durch das Hinzufügen des Attributs `defer` kann das Skript asynchron geladen we
 
 Beim Betrieb von statischen Websites mit Hugo bietet der Einsatz moderner Hosting-Plattformen wie Cloudflare Pages oder GitHub Pages überwältigende Vorteile in allen Bereichen: Kosteneffizienz, Ladegeschwindigkeit und Sicherheit.
 
-1. **Blitzschnelle Builds**: Nutzen Sie die Geschwindigkeit von Hugo, um die Ausführungszeit der [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) ([GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)) zu minimieren.
+1. **Blitzschnelle Builds**: Nutzen Sie die Geschwindigkeit von Hugo, um die Ausführungszeit der [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-Pipeline ([GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)) zu minimieren.
 2. **Bereitstellung am Edge**: Nutzen Sie das Edge-Netzwerk von Cloudflare, um Inhalte mit Latenzen im Millisekundenbereich an Benutzer auf der ganzen Welt auszuliefern.
 3. **Geeignete DNS-Konfiguration**: Nutzen Sie CNAME Flattening, um die Zone Apex (benutzerdefinierte Domain) sicher und schnell zu betreiben.
 4. **Optimierung der Caching-Strategie**: Verwenden Sie `_headers`, um Browser-Cache und Edge-Cache je nach Ressourcentyp angemessen zu trennen.

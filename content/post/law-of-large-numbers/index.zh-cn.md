@@ -15,7 +15,7 @@ tags:
 
 ## 1. 引言：赌场为什么不进行 **赌博** ？
 
-世界上有许多豪华的赌场。有些玩家一夜暴富，而另一些则失去一切。然而，赌场经营者绝对不会进行 **赌博** 。他们基于坚实的数学基础，即 **[大数定律（[Law of Large Numbers](https://kenji.blog/zh-cn/p/law-of-large-numbers/)）](https://kenji.blog/p/law-of-large-numbers/)** 开展业务。
+世界上有许多豪华的赌场。有些玩家一夜暴富，而另一些则失去一切。然而，赌场经营者绝对不会进行 **赌博** 。他们基于坚实的数学基础，即 **[大数定律（Law of Large Numbers）](https://kenji.blog/p/law-of-large-numbers/)** 开展业务。
 
 本文将全面解析概率论中最基本且最重要的定理“大数定律”，从直观理解到严格的数学定义。此外，我们还将深入探讨日常中的误解以及它在社会中的应用。
 

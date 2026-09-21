@@ -91,7 +91,7 @@ $$
 
 1801년 1월 1일, 이탈리아의 천문학자 주세페 피아치가 새로운 천체 (훗날 왜행성 세레스로 불림) 를 발견했습니다. 그러나 며칠간의 관측 후, 그 천체는 태양 뒤로 숨어버려 시야에서 사라졌습니다. 당시 천문학자들은 불과 며칠 치의 관측 데이터로부터 그 후의 궤도를 예측하려 시도했지만 모두 실패로 끝났습니다.
 
-여기서 등장한 사람이 가우스입니다. 그는 자신이 이전부터 은밀히 구축해 온 새로운 수학적 기법, 즉 **"[최소제곱법](https://kenji.blog/ko/p/method-of-least-squares/)"** ([Method of Least Squares](https://kenji.blog/ko/p/method-of-least-squares/)) 을 사용하여 세레스의 궤도를 계산했습니다. [최소제곱법](https://kenji.blog/ko/p/method-of-least-squares/)이란 관측 데이터에 포함된 오차를 최소화하도록 가장 확실한 매개변수를 추정하는 기법입니다.
+여기서 등장한 사람이 가우스입니다. 그는 자신이 이전부터 은밀히 구축해 온 새로운 수학적 기법, 즉 **"[최소제곱법](https://kenji.blog/ko/p/method-of-least-squares/)"** (Method of Least Squares) 을 사용하여 세레스의 궤도를 계산했습니다. [최소제곱법](https://kenji.blog/ko/p/method-of-least-squares/)이란 관측 데이터에 포함된 오차를 최소화하도록 가장 확실한 매개변수를 추정하는 기법입니다.
 
 관측값을 $y_i$, 이론값을 $f(x_i, \boldsymbol{\theta})$ 라고 할 때, 오차의 제곱합 $S$ 를 최소로 하는 매개변수 $\boldsymbol{\theta}$ 를 구합니다.
 

@@ -10,7 +10,7 @@ tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 
 # 什么是[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)
 
-**[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)** （[Euclide](https://kenji.blog/zh-cn/p/euclid/)an algorithm），又称辗转相除法，是一种用于高效计算两个自然数（或整数）最大公约数（Greatest Common Divisor, GCD）的算法。大约在公元前300年，古希腊数学家[欧几里得](https://kenji.blog/zh-cn/p/euclid/)在其数学著作《几何原本》（Elements）第7卷中记载了该算法，它也被广泛认为是“人类最古老的算法”之一。
+**[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)** （Euclidean algorithm），又称辗转相除法，是一种用于高效计算两个自然数（或整数）最大公约数（Greatest Common Divisor, GCD）的算法。大约在公元前300年，古希腊数学家[欧几里得](https://kenji.blog/zh-cn/p/euclid/)在其数学著作《几何原本》（Elements）第7卷中记载了该算法，它也被广泛认为是“人类最古老的算法”之一。
 
 求最大公约数最朴素的方法是将两个数分别进行质因数分解，然后将相同的质因数相乘。但是，当数字变得非常庞大时，质因数分解本身的计算量会变得极其巨大，难以在现实时间内得出结果。相反，如果使用 **[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)** ，即使是长达数千位的巨大数字，也能以极快的速度计算出它们的最大公约数。
 
@@ -109,7 +109,7 @@ int main() {
 
 ## 时间复杂度与拉梅定理
 
-[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)到底有多快呢？关于其计算复杂度，法国数学家[加布里埃尔·拉梅](https://kenji.blog/zh-cn/p/lame/)在1844年证明的 **拉梅定理** （[Lamé](https://kenji.blog/zh-cn/p/lame/)'s theorem）非常著名。
+[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)到底有多快呢？关于其计算复杂度，法国数学家加布里埃尔·拉梅在1844年证明的 **拉梅定理** （[Lamé](https://kenji.blog/zh-cn/p/lame/)'s theorem）非常著名。
 
 > **拉梅定理**
 > 对两个自然数 $a, b$ （$a > b$）应用[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)时，除法的次数不超过 $b$ 在十进制下位数的 $5$ 倍。

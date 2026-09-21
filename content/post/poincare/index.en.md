@@ -14,7 +14,7 @@ In this article, we will explore with overwhelming volume and depth the dramatic
 
 ## 1. Early Life and Unique Educational Environment: The Sprouting of a Genius
 
-[Henri Poincaré](https://kenji.blog/en/p/poincare/) was born on April 29, 1854, in the northeastern French city of Nancy, into a highly intellectual elite family. His father, Léon [Poincaré](https://kenji.blog/en/p/poincare/), was a professor in the faculty of medicine at the University of Nancy, and his cousin, Raymond [Poincaré](https://kenji.blog/en/p/poincare/), would later become a prominent politician serving as Prime Minister and President of France. Such a blessed family environment greatly stimulated his intellectual curiosity.
+[Henri Poincaré](https://kenji.blog/en/p/poincare/) was born on April 29, 1854, in the northeastern French city of Nancy, into a highly intellectual elite family. His father, Léon Poincaré, was a professor in the faculty of medicine at the University of Nancy, and his cousin, Raymond [Poincaré](https://kenji.blog/en/p/poincare/), would later become a prominent politician serving as Prime Minister and President of France. Such a blessed family environment greatly stimulated his intellectual curiosity.
 
 During his childhood, [Poincaré](https://kenji.blog/en/p/poincare/) suffered from diphtheria, which left him unable to speak for a long period and confined to his sickbed. However, this period of isolation abnormally developed his internal thinking abilities. He possessed an **intuitive memory** that allowed him to perfectly memorize the contents of a book after reading it just once, and he learned to freely manipulate the visual arrangement of letters and spatial relationships in his mind.
 
@@ -67,7 +67,7 @@ $$
 x' = \gamma (x - vt), \quad t' = \gamma \left(t - \frac{vx}{c^2}\right) \quad (\text{where } c \text{ is the speed of light in a vacuum})
 $$
 
-Moreover, [Poincaré](https://kenji.blog/en/p/poincare/) quickly introduced the concept of four-dimensional spacetime and defined the "[Poincaré](https://kenji.blog/en/p/poincare/) group," which shows that the laws of physics are invariant under Lorentz transformations. While Einstein built the theory of relativity from a physical and intuitive approach, [Poincaré](https://kenji.blog/en/p/poincare/) had arrived at the same truth from the perspective of mathematical and geometric structural beauty.
+Moreover, [Poincaré](https://kenji.blog/en/p/poincare/) quickly introduced the concept of four-dimensional spacetime and defined the "Poincaré group," which shows that the laws of physics are invariant under Lorentz transformations. While Einstein built the theory of relativity from a physical and intuitive approach, [Poincaré](https://kenji.blog/en/p/poincare/) had arrived at the same truth from the perspective of mathematical and geometric structural beauty.
 
 ## 5. The Unconscious and Creativity: The Psychology of Inspiration
 
@@ -75,15 +75,15 @@ Moreover, [Poincaré](https://kenji.blog/en/p/poincare/) quickly introduced the 
 
 He had been agonizing over a difficult mathematical problem for several months, unable to find a clue to the solution despite repeated conscious calculations and logical reasoning. Exhausted, he decided to step away from his research and joined a geological excursion. Then, during the trip, at the exact moment he was about to board a horse-drawn omnibus in the town of Coutances, a perfect solution suddenly flashed in his mind.
 
-> "At the moment when I put my foot on the step the idea came to me, without anything in my former thoughts seeming to have paved the way for it, that the transformations I had used to define the Fuchsian functions were identical with those of non-[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry. I did not verify the idea; I should not have had time, as, upon taking my seat in the omnibus, I went on with a conversation already commenced, but I felt a perfect certainty."
+> "At the moment when I put my foot on the step the idea came to me, without anything in my former thoughts seeming to have paved the way for it, that the transformations I had used to define the Fuchsian functions were identical with those of non-[Euclide](https://kenji.blog/p/euclid/)an geometry. I did not verify the idea; I should not have had time, as, upon taking my seat in the omnibus, I went on with a conversation already commenced, but I felt a perfect certainty."
 
 From this experience, [Poincaré](https://kenji.blog/en/p/poincare/) categorized the process of creative discovery into four stages: "Preparation" (conscious effort), "Incubation" (combining information in the unconscious), "Illumination" (sudden intuitive understanding), and "Verification" (logical proof). His insights prove how powerful the unconscious is as a computational resource in the depths of human thought.
 
 ## 6. Philosophy of Science: The Advocacy of Conventionalism
 
-[Poincaré](https://kenji.blog/en/p/poincare/) also left a huge mark in the field of philosophy of science. He advocated a position known as **Conventionalism** . This is the idea that "fundamental axioms and laws in science (such as the axioms of [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry) are neither a priori truths nor empirical facts, but merely 'convenient conventions' adopted by humans to describe nature."
+[Poincaré](https://kenji.blog/en/p/poincare/) also left a huge mark in the field of philosophy of science. He advocated a position known as **Conventionalism** . This is the idea that "fundamental axioms and laws in science (such as the axioms of [Euclide](https://kenji.blog/p/euclid/)an geometry) are neither a priori truths nor empirical facts, but merely 'convenient conventions' adopted by humans to describe nature."
 
-He stated, "It is not that [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry is true and non-[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry is false. It is the same as saying that the metric system is not more true than the yard system." This flexible philosophical attitude later became an important ideological foundation when Einstein constructed the General Theory of Relativity using non-[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry.
+He stated, "It is not that [Euclide](https://kenji.blog/p/euclid/)an geometry is true and non-Euclidean geometry is false. It is the same as saying that the metric system is not more true than the yard system." This flexible philosophical attitude later became an important ideological foundation when Einstein constructed the General Theory of Relativity using non-[Euclide](https://kenji.blog/p/euclid/)an geometry.
 
 ## 7. Conclusion: [Poincaré](https://kenji.blog/en/p/poincare/)'s Eternal Legacy
 

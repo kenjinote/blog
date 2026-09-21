@@ -31,7 +31,7 @@ flowchart TD
 
 One of [Bachet](https://kenji.blog/en/p/bachet/)'s most well-known achievements is his translation of the "Arithmetica" by the ancient Greek mathematician [Diophantus](https://kenji.blog/en/p/diophantus/) into Latin, adding commentary, and publishing it in 1621.
 
-This translated book became the standard text for European mathematicians of the time to study ancient algebra and number theory. One of the most famous anecdotes is that [Pierre de Fermat](https://kenji.blog/en/p/fermat/) wrote his famous "[Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)" in the margin of his copy of this [Bachet](https://kenji.blog/en/p/bachet/) edition.
+This translated book became the standard text for European mathematicians of the time to study ancient algebra and number theory. One of the most famous anecdotes is that [Pierre de Fermat](https://kenji.blog/en/p/fermat/) wrote his famous "Fermat's Last Theorem" in the margin of his copy of this [Bachet](https://kenji.blog/en/p/bachet/) edition.
 
 [Bachet](https://kenji.blog/en/p/bachet/) did not stop at mere translation; he added his own excellent commentary and generalizations to [Diophantus](https://kenji.blog/en/p/diophantus/)' problems. Without his mathematical insights, the development of number theory in the 17th century might have been much slower.
 
@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-$x$ and $y$ can be concretely calculated by expanding the [Euclide](https://kenji.blog/en/p/euclid/)an algorithm (the extended [Euclide](https://kenji.blog/en/p/euclid/)an algorithm), which has become an indispensable fundamental theorem in modern cryptography (such as [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)). In contexts that value historical accuracy, this is sometimes called **[Bachet](https://kenji.blog/en/p/bachet/)'s theorem**.
+$x$ and $y$ can be concretely calculated by expanding the [Euclide](https://kenji.blog/en/p/euclid/)an algorithm (the extended Euclidean algorithm), which has become an indispensable fundamental theorem in modern cryptography (such as RSA). In contexts that value historical accuracy, this is sometimes called **[Bachet](https://kenji.blog/en/p/bachet/)'s theorem**.
 
 ## Conclusion
 

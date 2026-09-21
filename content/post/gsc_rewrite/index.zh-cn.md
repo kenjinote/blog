@@ -238,7 +238,7 @@ def extract_missing_keywords(documents):
 # print(missing_keywords)
 ```
 
-通过这一分析，我们可以定量地发现 **话题遗漏（内容差距）** ，例如：“实际上排名靠前的文章都提到了‘如何部署到[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)容器’或‘构建[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线’，但我的文章却没有涉及”。
+通过这一分析，我们可以定量地发现 **话题遗漏（内容差距）** ，例如：“实际上排名靠前的文章都提到了‘如何部署到[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)容器’或‘构建[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线’，但我的文章却没有涉及”。
 
 发现的这些重要关键词组，不应仅仅是随意散布在正文中，而是应该作为 **H2或H3标题（Heading标签）** 添加为有意义的独立部分，并针对标题编写详细的技术解说和代码片段，这样可以显著提高Google的评价。
 

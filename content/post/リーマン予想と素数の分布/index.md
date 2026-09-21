@@ -13,11 +13,11 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 「素数（Prime Numbers）」は、1と自分自身でしか割り切れない自然数であり、数学の世界における「原子」とも呼ばれます。2, 3, 5, 7, 11, 13... と続くこの数列は、一見すると無秩序でランダムに現れるように見えます。古代ギリシャの数学者[ユークリッド](https://kenji.blog/p/euclid/)が「素数が無限に存在すること」を証明して以来、数え切れないほどの数学者たちがこの素数の並びに潜む規則性を解き明かそうと挑んできました。
 
-その素数の謎に最も肉薄したのが、1859年にドイツの数学者[ベルンハルト・リーマン](https://kenji.blog/p/riemann/)（[Bernhard Riemann](https://kenji.blog/p/riemann/)）が提唱した **「[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)（[Riemann](https://kenji.blog/p/riemann/) Hypothesis）」** です。[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)は、現代数学において最も重要かつ未解決の難問の一つであり、クレイ数学研究所が定めるミレニアム懸賞問題の一つとして100万ドルの賞金が懸けられています。
+その素数の謎に最も肉薄したのが、1859年にドイツの数学者[ベルンハルト・リーマン](https://kenji.blog/p/riemann/)（Bernhard Riemann）が提唱した **「リーマン予想（Riemann Hypothesis）」** です。[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)は、現代数学において最も重要かつ未解決の難問の一つであり、クレイ数学研究所が定めるミレニアム懸賞問題の一つとして100万ドルの賞金が懸けられています。
 
 一見すると、素数の分布に関する純粋数学の難問は、私たちの日常生活とは無縁に思えるかもしれません。しかし、現代社会のインフラを支えるインターネットのセキュリティ、特に **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や楕円曲線暗号（ECC）といった現代暗号技術** は、巨大な素数の性質に深く依存しています。
 
-本記事では、素数の分布から素数定理、[リーマン](https://kenji.blog/p/riemann/)ゼータ関数、そして[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の核心へと至る数学的な旅をし、それがどのようにして現代暗号技術と結びついているのか、そしてもし[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)が証明されたら世界はどうなるのかについて、極めて詳細かつ深く掘り下げて解説します。
+本記事では、素数の分布から素数定理、[リーマン](https://kenji.blog/p/riemann/)ゼータ関数、そしてリーマン予想の核心へと至る数学的な旅をし、それがどのようにして現代暗号技術と結びついているのか、そしてもし[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)が証明されたら世界はどうなるのかについて、極めて詳細かつ深く掘り下げて解説します。
 
 ---
 
@@ -50,7 +50,7 @@ $$ \pi(x) \sim \frac{x}{\ln x} $$
 
 # 3. [リーマン](https://kenji.blog/p/riemann/)ゼータ関数と[オイラー](https://kenji.blog/p/euler/)積
 
-素数の分布を解析する上で最強の武器となるのが **[リーマン](https://kenji.blog/p/riemann/)ゼータ関数（[Riemann](https://kenji.blog/p/riemann/) Zeta Function）** です。もともとはレオンハルト・[オイラー](https://kenji.blog/p/euler/)（[Leonhard Euler](https://kenji.blog/p/euler/)）によって実数 $s > 1$ に対して定義された無限級数でした。
+素数の分布を解析する上で最強の武器となるのが **[リーマン](https://kenji.blog/p/riemann/)ゼータ関数（Riemann Zeta Function）** です。もともとはレオンハルト・オイラー（[Leonhard Euler](https://kenji.blog/p/euler/)）によって実数 $s > 1$ に対して定義された無限級数でした。
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -165,7 +165,7 @@ graph LR
 
 現在、実用的に使われているのは **ミラー・ラビン素数判定法（Miller-Rabin primality test）** という確率的アルゴリズムです。このアルゴリズムは高速ですが、極めて低い確率で合成数を素数と誤判定する「擬素数」のリスクがあります。
 
-しかし、[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)をディリクレのL関数に拡張した **「拡張[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)（Generalized [Riemann](https://kenji.blog/p/riemann/) Hypothesis, GRH）」** が真であると仮定すると、話は劇的に変わります。
+しかし、[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)をディリクレのL関数に拡張した **「拡張リーマン予想（Generalized [Riemann](https://kenji.blog/p/riemann/) Hypothesis, GRH）」** が真であると仮定すると、話は劇的に変わります。
 GRHが真であれば、ミラー・ラビン判定法におけるテスト回数の上限が数学的に保証され、確率的アルゴリズムから **「決定性多項式時間アルゴリズム」へと昇華** するのです（これは、AKS素数判定法が発見される以前から知られていた重大な事実でした）。
 
 つまり、[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)（およびその拡張）は、「巨大な素数を絶対の自信を持って高速に生成できるか」という暗号の基盤生成に直接的なお墨付きを与える役割を持っています。
@@ -184,12 +184,12 @@ GRHが真であれば、ミラー・ラビン判定法におけるテスト回�
 [リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の証明自体が、直ちに素因数分解を劇的に高速化する魔法のアルゴリズムを生み出すわけではありません。[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)はあくまで素数の「巨視的な分布の規則性」についての定理であり、個別の数 $N$ がどの素数で割り切れるか（局所的な性質）を直接教えてくれるものではないからです。
 
 しかし、影響はゼロではありません。
-[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)が証明される過程で、 **「新たな数学的ツール」や「未知の解析手法」が発見される可能性** が極めて高いからです。歴史を見ても、[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)や[ポアンカレ予想](https://kenji.blog/p/poincare-conjecture/)が証明された際、その過程で開発された新しい理論が数学全体を大きく飛躍させました。
+[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)が証明される過程で、 **「新たな数学的ツール」や「未知の解析手法」が発見される可能性** が極めて高いからです。歴史を見ても、フェルマーの最終定理や[ポアンカレ予想](https://kenji.blog/p/poincare-conjecture/)が証明された際、その過程で開発された新しい理論が数学全体を大きく飛躍させました。
 
 もし[リーマン](https://kenji.blog/p/riemann/)ゼータ関数の零点の性質を完全に操作できる未知の代数幾何学的手法や、非可換幾何の手法が確立されれば、それが結果として素因数分解の画期的なアルゴリズム（例えば、計算量を多項式時間に落とし込むような古典アルゴリズム）の発見に繋がる可能性は否定できません。その意味で、暗号学者は[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の動向から決して目を離すことができないのです。
 
 ### [量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)と[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)
-暗号技術にとってより直接的で現実的な脅威は、[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の証明ではなく **[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)** です。1994年にピーター・ショア（Peter Shor）が発表した「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)」は、十分な性能を持つ量子コンピュータがあれば、素因数分解を多項式時間で解けることを証明しました。これにより、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や楕円曲線暗号は根本的に破られることになります。
+暗号技術にとってより直接的で現実的な脅威は、[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の証明ではなく **量子コンピュータ** です。1994年にピーター・ショア（Peter Shor）が発表した「ショアのアルゴリズム」は、十分な性能を持つ量子コンピュータがあれば、素因数分解を多項式時間で解けることを証明しました。これにより、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や楕円曲線暗号は根本的に破られることになります。
 
 現在、世界中で量子コンピュータでも解読できない「耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy, PQC）」への移行（格子暗号など）が進められています。素数に依存した暗号技術は、ある意味で黄金期を終えようとしているのかもしれませんが、素数そのものの数学的価値が失われることは永遠にありません。
 

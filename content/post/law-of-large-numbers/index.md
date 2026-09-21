@@ -64,7 +64,7 @@ sequenceDiagram
 
 ## 4. [大数の法則](https://kenji.blog/p/law-of-large-numbers/)の数学的定義
 
-[大数の法則](https://kenji.blog/p/law-of-large-numbers/)には、収束の強さに応じて **大数の弱法則** （Weak [Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/), WLLN）と **大数の強法則** （Strong [Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/), SLLN）の2種類が存在します。数学的に厳密に表現すると以下のようになります。
+[大数の法則](https://kenji.blog/p/law-of-large-numbers/)には、収束の強さに応じて **大数の弱法則** （Weak Law of Large Numbers, WLLN）と **大数の強法則** （Strong [Law of Large Numbers](https://kenji.blog/p/law-of-large-numbers/), SLLN）の2種類が存在します。数学的に厳密に表現すると以下のようになります。
 
 ### 4.1. 大数の弱法則 (WLLN)
 

@@ -24,7 +24,7 @@ description: '技術ブログのアクセスをデータと自動化で最大化
 
 ### 1.1 Core [Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)の最適化
 
-Googleはページエクスペリエンスをランキング要因として採用しており、特に **[Core Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** は技術ブログにおいても無視できません。
+Googleはページエクスペリエンスをランキング要因として採用しており、特に **[Core Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (LCP, FID/INP, [CLS](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** は技術ブログにおいても無視できません。
 技術ブログでは、大量のソースコードブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)や数式（MathJax / KaTeX）、図解画像が多用されます。これらはページのレンダリングを遅延させる要因となります。
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/))**: ファーストビューの主要コンテンツの読み込み速度。アイキャッチ画像にはWebPやAVIFを使用し、`fetchpriority="high"`属性を付与してプリロードします。また、シンタックスハイライト用の巨大なCSSやJSは非同期読み込みにするか、必要なページにのみロードする設計にします。

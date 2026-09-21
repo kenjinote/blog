@@ -16,7 +16,7 @@ tags:
 
 ## 1. 서론: 함수형 프로그래밍의 근저에 흐르는 철학
 
-현대의 소프트웨어 개발에서,  **함수형 프로그래밍** ([Functional Programming](https://kenji.blog/ko/p/oop-vs-fp-vs-dop/))은 더 이상 일부 마니아를 위한 접근법이 아니라 널리 보급된 패러다임이 되었습니다. React 등의 프런트엔드 기술부터 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)와 Scala, 나아가 [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)나 C#과 같은 객체 지향 언어에 이르기까지, 함수를 일급 객체로 취급하거나 부작용을 배제하는 등의 개념이 도입되고 있습니다.
+현대의 소프트웨어 개발에서,  **함수형 프로그래밍** ([Functional Programming](https://kenji.blog/ko/p/oop-vs-fp-vs-dop/))은 더 이상 일부 마니아를 위한 접근법이 아니라 널리 보급된 패러다임이 되었습니다. React 등의 프런트엔드 기술부터 Rust와 Scala, 나아가 [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)나 C#과 같은 객체 지향 언어에 이르기까지, 함수를 일급 객체로 취급하거나 부작용을 배제하는 등의 개념이 도입되고 있습니다.
 
 그러나 이 패러다임의 이면에는 컴퓨터가 물리적으로 탄생하기 이전인 1930년대에 구축된 심오한 수학적 이론이 존재합니다. 그것이 바로 알론조 처치(Alonzo Church)가 제안한  **람다 대수** ( $\lambda$-calculus )입니다.
 

@@ -252,7 +252,7 @@ flowchart TD
 
 VS Code के GitHub Copilot Chat, या Neovim के `ChatGPT.nvim` और `Copilot.vim` का उपयोग करके, आप संपादक को छोड़े बिना निम्नलिखित जैसे प्रॉम्प्ट दे सकते हैं:
 
-> "कृपया शुरुआती लोगों के लिए मार्कडाउन पदानुक्रम (hierarchy) संरचना में निम्नलिखित तकनीकी तत्वों की रूपरेखा तैयार करें: [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/hi/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/hi/p/cicd-pipeline-github-actions-best-practices/)"
+> "कृपया शुरुआती लोगों के लिए मार्कडाउन पदानुक्रम (hierarchy) संरचना में निम्नलिखित तकनीकी तत्वों की रूपरेखा तैयार करें: [Docker](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/), Kubernetes, [CI/CD](https://kenji.blog/hi/p/cicd-pipeline-github-actions-best-practices/)"
 
 ऐसा करने से, तुरंत हेडिंग और बुलेट पॉइंट मार्कडाउन उत्पन्न हो जाता है। हमें बस उस ढांचे को विस्तृत करने की आवश्यकता है।
 

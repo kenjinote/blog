@@ -493,7 +493,7 @@ Durch die Einbindung von Ollama-API-Anfragen in Python- oder Shell-Skripte läss
 
 ## Fazit
 
-Mit dem Erscheinen von Ollama ist die Einstiegshürde für lokale LLMs dramatisch gesunken. Die Kombination aus einem einfachen Befehlssystem, das an die Bedienung von [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n erinnert, und einer REST-API, die sich leicht aus externen Anwendungen heraus nutzen lässt, ist heute de facto der Standard für die Entwicklung lokaler KI-Lösungen.
+Mit dem Erscheinen von Ollama ist die Einstiegshürde für lokale LLMs dramatisch gesunken. Die Kombination aus einem einfachen Befehlssystem, das an die Bedienung von [Docker](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n erinnert, und einer REST-API, die sich leicht aus externen Anwendungen heraus nutzen lässt, ist heute de facto der Standard für die Entwicklung lokaler KI-Lösungen.
 
 Entwickler, die mit den Kosten und Sicherheitsbeschränkungen von Cloud-LLMs kämpfen, sollten unbedingt die in diesem Artikel vorgestellten Schritte nutzen, um eine lokale [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Umgebung mit Ollama aufzubauen und in ihre Anwendungen zu integrieren. Auf diese Weise können Sie die Potenziale der KI noch freier und greifbarer erleben.
 

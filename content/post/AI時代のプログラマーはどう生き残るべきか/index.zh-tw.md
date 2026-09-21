@@ -174,8 +174,8 @@ sequenceDiagram
 
 基於以上的分析，在此提出程式設計師在 AI 時代生存的具體行動計畫：
 
-1.  **徹底重新學習技術的「基礎」**: 框架的用法交給 AI 就好。但是，對作業系統的運作原理、網路協定（[TCP](https://kenji.blog/zh-tw/p/http3-quic-protocol-tcp-udp/)/IP, [HTTP/3](https://kenji.blog/zh-tw/p/http3-quic-protocol-tcp-udp/)）、資料庫的內部結構（[B-Tree](https://kenji.blog/zh-tw/p/b-tree-database-index-theory/), 交易隔離等級）、資料結構與演算法的深入理解是絕對必要的。為了判斷 AI 的輸出是否正確，堅實的計算機科學基礎不可或缺。
-2.  **精通雲端架構與分散式系統**: 不要只關注個別程式碼，而是專注於如何組合 AWS, GCP, Azure 等雲端資源來建構可擴展的系統。理解 [Terraform](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) 等 [IaC](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)（[Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)）的概念，培養將整個系統設計為程式碼的能力。
+1.  **徹底重新學習技術的「基礎」**: 框架的用法交給 AI 就好。但是，對作業系統的運作原理、網路協定（[TCP](https://kenji.blog/zh-tw/p/http3-quic-protocol-tcp-udp/)/IP, HTTP/3）、資料庫的內部結構（[B-Tree](https://kenji.blog/zh-tw/p/b-tree-database-index-theory/), 交易隔離等級）、資料結構與演算法的深入理解是絕對必要的。為了判斷 AI 的輸出是否正確，堅實的計算機科學基礎不可或缺。
+2.  **精通雲端架構與分散式系統**: 不要只關注個別程式碼，而是專注於如何組合 AWS, GCP, Azure 等雲端資源來建構可擴展的系統。理解 [Terraform](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) 等 IaC（[Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)）的概念，培養將整個系統設計為程式碼的能力。
 3.  **成為商業領域的專家**: 深入學習自己所屬產業的商業模式、法律法規、使用者的行為心理。跨越工程師的框架，具備接近產品經理（PM）的視角。
 4.  **磨練溝通與引導（Facilitation）的技巧**: 解決人與人之間的「模糊性」並達成共識的過程，是 AI 無法取代的。與利害關係人對話、發現真正課題的軟實力，將成為最有價值的技能。
 5.  **把 AI 當作「同事」徹底利用**: 不要害怕 AI 工具的進化，而是將其作為最強大的武器來運用。在日常中頻繁使用最新的 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 或 AI 寫碼代理，累積「AI 在哪裡會失敗、如何調整提示才能發揮最高效能」的「隱性知識」。

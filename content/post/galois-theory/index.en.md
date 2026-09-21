@@ -31,7 +31,7 @@ $$
 This formula shows that for the coefficients $a, b, c$, you can always derive a solution for any quadratic equation just by applying the four arithmetic operations (addition, subtraction, multiplication, division) and roots (square roots, cube roots, etc.) a finite number of times.
 For cubic and quartic equations, although more complex, similar solution formulas using the four arithmetic operations and roots exist, which were discovered by 16th-century Italian mathematicians (Cardano, Tartaglia, Ferrari, etc.). These were major breakthroughs in the history of mathematics.
 
-However, for the **quintic equation** $ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0$, many genius mathematicians over the centuries, such as Euler and [Lagrange](https://kenji.blog/en/p/lagrange/), attempted to find a solution formula, but no one succeeded. [Lagrange](https://kenji.blog/en/p/lagrange/) focused on the permutations of solutions and caught a clue to the solution, but did not reach a complete proof. Later, Ruffini and [Abel](https://kenji.blog/en/p/abel/) proved that "there is no general solution formula for equations of degree 5 or higher" (the [Abel](https://kenji.blog/en/p/abel/)-Ruffini theorem), but they could not provide a fundamental criterion for which equations can be solved and which cannot.
+However, for the **quintic equation** $ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0$, many genius mathematicians over the centuries, such as Euler and [Lagrange](https://kenji.blog/en/p/lagrange/), attempted to find a solution formula, but no one succeeded. Lagrange focused on the permutations of solutions and caught a clue to the solution, but did not reach a complete proof. Later, Ruffini and Abel proved that "there is no general solution formula for equations of degree 5 or higher" (the [Abel](https://kenji.blog/en/p/abel/)-Ruffini theorem), but they could not provide a fundamental criterion for which equations can be solved and which cannot.
 
 # 2. Symmetry and the Birth of Group Theory
 
@@ -71,7 +71,7 @@ By using [Galois theory](https://kenji.blog/en/p/galois-theory/), the reason why
 The process of solving an equation can be seen as a process of gradually expanding a set of numbers (a **Field**). A field is a set where the four arithmetic operations can be freely performed (e.g., the set of all rational numbers, the set of all real numbers, etc.).
 For example, starting from the set of rational numbers $\mathbb{Q}$, we create a new field by adding roots which are components of the equation's solutions. This is called a **field extension**.
 
-The fundamental theorem, which is the heart of [Galois theory](https://kenji.blog/en/p/galois-theory/), shows that there is a beautiful one-to-one correspondence (**[Galois](https://kenji.blog/en/p/galois/) correspondence**) between "intermediate fields of a field extension" and "subgroups of a [Galois](https://kenji.blog/en/p/galois/) group". A magnificent inverse relationship exists, where a larger field corresponds to a smaller group, and a smaller field corresponds to a larger group.
+The fundamental theorem, which is the heart of [Galois theory](https://kenji.blog/en/p/galois-theory/), shows that there is a beautiful one-to-one correspondence (**Galois correspondence**) between "intermediate fields of a field extension" and "subgroups of a [Galois](https://kenji.blog/en/p/galois/) group". A magnificent inverse relationship exists, where a larger field corresponds to a smaller group, and a smaller field corresponds to a larger group.
 
 ```mermaid
 graph LR

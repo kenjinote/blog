@@ -15,7 +15,7 @@ tags:
 
 ## 1. Pendahuluan: Apa itu Masalah Hadiah Milenium?
 
-Pada tahun 2000, Clay Mathematics Institute menawarkan hadiah masing-masing sebesar 1 juta dolar untuk 7 masalah matematika terpenting yang belum terpecahkan. Masalah-masalah ini disebut **Masalah Hadiah Milenium** (Millennium Prize Problems). Di antaranya terdapat masalah terkenal seperti "Hipotesis [Riemann](https://kenji.blog/id/p/riemann/)" dan "Masalah [P vs NP](https://kenji.blog/id/p/p-vs-np-problem/)", namun ada satu masalah yang sangat berkaitan erat dengan fisika. Masalah tersebut adalah **"[Persamaan Yang-Mills dan Masalah Kesenjangan Massa](https://kenji.blog/id/p/yang-mills-mass-gap/)"** (Yang-Mills and Mass Gap).
+Pada tahun 2000, Clay Mathematics Institute menawarkan hadiah masing-masing sebesar 1 juta dolar untuk 7 masalah matematika terpenting yang belum terpecahkan. Masalah-masalah ini disebut **Masalah Hadiah Milenium** (Millennium Prize Problems). Di antaranya terdapat masalah terkenal seperti "Hipotesis [Riemann](https://kenji.blog/id/p/riemann/)" dan "Masalah P vs NP", namun ada satu masalah yang sangat berkaitan erat dengan fisika. Masalah tersebut adalah **"[Persamaan Yang-Mills dan Masalah Kesenjangan Massa](https://kenji.blog/id/p/yang-mills-mass-gap/)"** (Yang-Mills and Mass Gap).
 
 Masalah ini bertujuan untuk menetapkan dasar matematika dari "Model Standar" fisika partikel yang mendeskripsikan gaya-gaya dasar di alam semesta. Perilaku materi dan gaya yang membentuk dunia kita telah dikonfirmasi dengan akurasi yang sangat tinggi melalui eksperimen, namun pembuktian secara matematis dan ketat (rigor) merupakan salah satu tantangan terbesar dalam matematika modern.
 

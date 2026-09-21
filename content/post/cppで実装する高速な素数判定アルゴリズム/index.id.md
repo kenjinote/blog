@@ -52,7 +52,7 @@ Kompleksitas waktu dari algoritma ini adalah $O(\sqrt{N})$. Jika $N \le 10^{12}$
 
 # 2. Uji [Fermat](https://kenji.blog/id/p/fermat/): Awal dari Pengujian Keprimaan Probabilistik
 
-Untuk mengatasi batasan metode pembagian coba-coba, "Algoritma Probabilistik (Probabilistic Algorithm)" menggunakan teorema teori bilangan dirancang. Perwakilan dari ini adalah "Uji Keprimaan [Fermat](https://kenji.blog/id/p/fermat/) ([Fermat](https://kenji.blog/id/p/fermat/) Primality Test)", yang menggunakan [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/).
+Untuk mengatasi batasan metode pembagian coba-coba, "Algoritma Probabilistik (Probabilistic Algorithm)" menggunakan teorema teori bilangan dirancang. Perwakilan dari ini adalah "Uji Keprimaan [Fermat](https://kenji.blog/id/p/fermat/) (Fermat Primality Test)", yang menggunakan [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/).
 
 ## [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/id/p/fermats-little-theorem/))
 

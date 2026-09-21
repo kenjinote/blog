@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 Ces bibliothèques ont abstrait le processus complexe de « mise en cache de l'état du serveur localement et synchronisation au besoin ».
 En conséquence, les données à gérer dans des stores globaux comme [Redux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) se sont limitées au « pur état client », réduisant ainsi considérablement le fardeau de la gestion d'état.
 
-## 8. Atomic [State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) Management : [Recoil](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) et [Jotai](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/)
+## 8. Atomic [State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) Management : Recoil et [Jotai](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/)
 
 Après la séparation du Server State, une nouvelle course a commencé pour gérer efficacement le Client State restant.
 L'approche **Atomic [State Management](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/)** a été créée pour résoudre les problèmes du modèle de rendu de React (top-down) et des performances de l'API Context.
@@ -444,7 +444,7 @@ L'état rendu sur le serveur est sérialisé et intégré dans le HTML, et au li
 
 ## 13. Conclusion : vers où se dirige la gestion d'état ?
 
-Partant de la confusion du MVC, puis gagnant en prévisibilité grâce à [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/), en simplicité avec les Hooks, en séparant le Server [State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/), en optimisant avec l'approche Atomic et les Proxy, jusqu'à la réactivité à grain fin via les Signals.
+Partant de la confusion du MVC, puis gagnant en prévisibilité grâce à [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/)/Redux, en simplicité avec les Hooks, en séparant le Server [State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/), en optimisant avec l'approche Atomic et les Proxy, jusqu'à la réactivité à grain fin via les Signals.
 
 En regardant l'histoire de près de 15 ans de gestion d'état frontend, une tendance claire se dégage : **« Évoluer vers une réduction du boilerplate, une baisse de la charge cognitive pour les développeurs, tout en laissant le système sous-jacent (frameworks et compilateurs) optimiser automatiquement les performances. »**
 

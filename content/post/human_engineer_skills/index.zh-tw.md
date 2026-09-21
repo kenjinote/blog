@@ -116,7 +116,7 @@ flowchart TD
 
 ## 4. 人類專屬技能③：分散式系統的架構設計與擴展
 
-現代軟體已經從運行於單一伺服器上的單體架構 (Monolith)，進化到雲端原生的微服務架構 ([[Microservice](https://kenji.blog/zh-tw/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/zh-tw/p/microservices-architecture-bff-api-gateway/) Architecture) 及事件驅動架構 ([Event-Driven](https://kenji.blog/zh-tw/p/event-driven-architecture-async/) Architecture)。設計這種分散式系統，對於只能做到局部邏輯最佳化的 AI 來說，是一個非常困難的領域。
+現代軟體已經從運行於單一伺服器上的單體架構 (Monolith)，進化到雲端原生的微服務架構 ([Microservices](https://kenji.blog/zh-tw/p/microservices-architecture-bff-api-gateway/) Architecture) 及事件驅動架構 ([Event-Driven](https://kenji.blog/zh-tw/p/event-driven-architecture-async/) Architecture)。設計這種分散式系統，對於只能做到局部邏輯最佳化的 AI 來說，是一個非常困難的領域。
 
 ### 4.1 CAP 定理與取捨 (Trade-off) 判斷
 
@@ -134,7 +134,7 @@ AI 雖然能寫出「優先考慮 C 的程式碼」或「優先考慮 A 的程�
 
 ### 4.2 非同步通訊與最終一致性 ([Eventual Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/))
 
-當系統規模擴大時，服務間的整合會從基於 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 的同步通訊，轉移到使用訊息佇列 ([Message Queue](https://kenji.blog/zh-tw/p/event-driven-architecture-message-queue-kafka-rabbitmq/)，如 [Kafka](https://kenji.blog/zh-tw/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/zh-tw/p/event-driven-architecture-message-queue-kafka-rabbitmq/)) 的非同步通訊。此時，資料一致性就會從即時一致性變為「最終一致性 (Eventual [Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/))」。
+當系統規模擴大時，服務間的整合會從基於 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/) 的同步通訊，轉移到使用訊息佇列 (Message Queue，如 Kafka, RabbitMQ) 的非同步通訊。此時，資料一致性就會從即時一致性變為「最終一致性 (Eventual [Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/))」。
 應該在什麼時機導入 Saga 模式或 [CQRS](https://kenji.blog/zh-tw/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) 等進階架構模式？制定這些複雜的決策與描繪系統整體的藍圖，正是資深工程師的真本領。
 
 ```mermaid

@@ -64,7 +64,7 @@ $$
 
 Sebagai contoh, meskipun mungkin terdapat tak terhingga banyak solusi real atau rasional untuk kurva eliptik (genus $g=1$) seperti $x^3 + y^3 = c$ (di mana $c$ adalah bilangan bulat bukan nol), teorema ini menjamin bahwa jika dibatasi pada **solusi integral**, maka akan selalu ada jumlah yang berhingga.
 
-Hasil ini merupakan terobosan mengenai keterhinggaan solusi persamaan Diophantine dan menjadi langkah sejarah yang krusial yang membuka jalan bagi pembuktian selanjutnya dari teorema Mordell-Weil (keterhinggaan titik-titik rasional pada kurva dengan genus 2 atau lebih tinggi) oleh [Gerd Faltings](https://kenji.blog/id/p/faltings/). Siegel menurunkan hasil yang mencengangkan ini dengan memperluas secara signifikan teorema Axel Thue tentang aproksimasi Diophantine dan menggabungkannya dengan teori [Jacobi](https://kenji.blog/id/p/jacobi/)an pada varietas [Abel](https://kenji.blog/id/p/abel/)ian.
+Hasil ini merupakan terobosan mengenai keterhinggaan solusi persamaan Diophantine dan menjadi langkah sejarah yang krusial yang membuka jalan bagi pembuktian selanjutnya dari teorema Mordell-Weil (keterhinggaan titik-titik rasional pada kurva dengan genus 2 atau lebih tinggi) oleh [Gerd Faltings](https://kenji.blog/id/p/faltings/). Siegel menurunkan hasil yang mencengangkan ini dengan memperluas secara signifikan teorema Axel Thue tentang aproksimasi Diophantine dan menggabungkannya dengan teori Jacobian pada varietas [Abel](https://kenji.blog/id/p/abel/)ian.
 
 ### 3.2 Nol Siegel (Siegel Zero)
 

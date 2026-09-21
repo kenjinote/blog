@@ -20,7 +20,7 @@ Neste artigo, aprofundaremos na vida de [Abel](https://kenji.blog/pt/p/abel/), i
 
 [Niels Henrik Abel](https://kenji.blog/pt/p/abel/) nasceu a 5 de agosto de 1802, na pequena vila norueguesa de Finnøy, filho de um pastor. A Noruega, na época, estava economicamente empobrecida, e a família de [Abel](https://kenji.blog/pt/p/abel/) não era exceção.
 
-O seu destino mudou significativamente quando ingressou na Escola da Catedral de Oslo em 1817 e conheceu o seu professor de matemática, **Bernt Michael Holmboe**. Holmboe reconheceu imediatamente o extraordinário talento de [Abel](https://kenji.blog/pt/p/abel/) e ensinou-lhe matemática avançada de nível universitário. Devorando as obras de mestres como Euler, [Lagrange](https://kenji.blog/pt/p/lagrange/) e Laplace, [Abel](https://kenji.blog/pt/p/abel/) absorveu rapidamente a matemática de ponta.
+O seu destino mudou significativamente quando ingressou na Escola da Catedral de Oslo em 1817 e conheceu o seu professor de matemática, **Bernt Michael Holmboe**. Holmboe reconheceu imediatamente o extraordinário talento de [Abel](https://kenji.blog/pt/p/abel/) e ensinou-lhe matemática avançada de nível universitário. Devorando as obras de mestres como Euler, Lagrange e Laplace, [Abel](https://kenji.blog/pt/p/abel/) absorveu rapidamente a matemática de ponta.
 
 ```mermaid
 flowchart TD

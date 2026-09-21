@@ -227,7 +227,7 @@ To consolidate unnecessary consecutive line breaks into one:
 
 By executing these via VS Code's search and replace feature (regular expression mode) or Neovim's `%s` command (`:%s/<b>\(.*?\)<\/b>/**\1**/g`), you can instantly unify formats.
 
-### [Automate](https://kenji.blog/en/p/automata-formal-language-theory/)d Checking via [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)s
+### [Automate](https://kenji.blog/en/p/automata-formal-language-theory/)d Checking via CI/CD [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)s
 
 Furthermore, using [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/), you can build a CI pipeline that automatically runs textlint when you push a blog post. This prevents deploying articles that contain rule violations.
 
@@ -252,7 +252,7 @@ In modern tech blog writing, leveraging LLMs ([Large Language Models](https://ke
 
 Using GitHub Copilot Chat in VS Code, or `ChatGPT.nvim` and `Copilot.vim` in Neovim, you can send prompts like the following without ever leaving the editor.
 
-> "Create an outline in Markdown's hierarchical structure for beginners regarding the following technical elements: [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)"
+> "Create an outline in Markdown's hierarchical structure for beginners regarding the following technical elements: [Docker](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/), Kubernetes, [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)"
 
 Instantly, Markdown headings and bullet points are generated. We then simply flesh out that skeleton.
 

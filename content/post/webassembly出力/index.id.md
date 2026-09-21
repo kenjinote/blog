@@ -139,7 +139,7 @@ Module.onRuntimeInitialized = () => {
 
 ## 5. Pendekatan dengan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) dan `wasm-pack`
 
-[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) menyediakan dukungan kelas satu untuk [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/), dan menggunakan alat `wasm-bindgen` serta `wasm-pack` memungkinkan interaksi tingkat tinggi antara JavaScript dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/). Sementara pendekatan Emscripten "membawa runtime besar C/C++ ke browser," pendekatan `wasm-pack` dari [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) "hanya menghasilkan binding (JS glue code) minimal yang diperlukan."
+[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) menyediakan dukungan kelas satu untuk WebAssembly, dan menggunakan alat `wasm-bindgen` serta `wasm-pack` memungkinkan interaksi tingkat tinggi antara JavaScript dan Rust. Sementara pendekatan Emscripten "membawa runtime besar C/C++ ke browser," pendekatan `wasm-pack` dari [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) "hanya menghasilkan binding (JS glue code) minimal yang diperlukan."
 
 ### Kode Implementasi [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)
 

@@ -10,7 +10,7 @@ tags: ["Gabriel Lamé", "História da Matemática", "Teoria dos Números", "Elas
 
 ## 1. Introdução: Quem foi [Gabriel Lamé](https://kenji.blog/pt/p/lame/)?
 
-[Gabriel Lamé](https://kenji.blog/pt/p/lame/) (22 de julho de 1795 – 1º de maio de 1870) foi um proeminente matemático, físico e engenheiro francês do século XIX. Suas contribuições abrangeram uma vasta gama, desde a matemática pura até a matemática aplicada, chegando à engenharia civil prática. Ainda hoje, seu nome permanece profundamente gravado nos livros de matemática e física através da **curva de [Lamé](https://kenji.blog/pt/p/lame/)** (superelipse), do **Teorema de [Lamé](https://kenji.blog/pt/p/lame/)** no algoritmo de [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) e dos **parâmetros de [Lamé](https://kenji.blog/pt/p/lame/)** na teoria da elasticidade.
+[Gabriel Lamé](https://kenji.blog/pt/p/lame/) (22 de julho de 1795 – 1º de maio de 1870) foi um proeminente matemático, físico e engenheiro francês do século XIX. Suas contribuições abrangeram uma vasta gama, desde a matemática pura até a matemática aplicada, chegando à engenharia civil prática. Ainda hoje, seu nome permanece profundamente gravado nos livros de matemática e física através da **curva de Lamé** (superelipse), do **Teorema de Lamé** no algoritmo de Euclides e dos **parâmetros de [Lamé](https://kenji.blog/pt/p/lame/)** na teoria da elasticidade.
 
 Neste artigo, traçaremos a trajetória movimentada da vida de [Lamé](https://kenji.blog/pt/p/lame/) e explicaremos de forma abrangente e sistemática as inovadoras conquistas matemáticas e físicas que ele deixou para trás. Compreender sua vida e seus processos de pensamento fornece uma perspectiva muito valiosa sobre como a ciência do século XIX estabeleceu as bases para a era moderna.
 
@@ -95,15 +95,15 @@ def calculate_lame_curve(a, b, n, num_points=100):
     return points
 ```
 
-## 4. Contribuições à Teoria dos Números: O Teorema de [Lamé](https://kenji.blog/pt/p/lame/) e o Algoritmo de [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/)
+## 4. Contribuições à Teoria dos Números: O Teorema de [Lamé](https://kenji.blog/pt/p/lame/) e o Algoritmo de [Euclides](https://kenji.blog/p/euclid/)
 
 Na ciência da computação e na teoria dos números, o que torna o nome de [Lamé](https://kenji.blog/pt/p/lame/) mais famoso é o **Teorema de [Lamé](https://kenji.blog/pt/p/lame/)**. Ele é conhecido como um dos primeiros exemplos na história de uma avaliação rigorosa e matemática da complexidade computacional (tempo de execução) de um algoritmo.
 
 ### 4.1 Visão Geral e Significado do Teorema
 
-O **algoritmo de [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/)**, transmitido desde a Grécia Antiga, é um algoritmo eficiente para encontrar o máximo divisor comum de dois números naturais. No entanto, até [Lamé](https://kenji.blog/pt/p/lame/) em 1844, ninguém havia provado com precisão exatamente "quão rápido" este algoritmo termina. O Teorema de [Lamé](https://kenji.blog/pt/p/lame/) afirma o seguinte:
+O **algoritmo de [Euclides](https://kenji.blog/p/euclid/)**, transmitido desde a Grécia Antiga, é um algoritmo eficiente para encontrar o máximo divisor comum de dois números naturais. No entanto, até Lamé em 1844, ninguém havia provado com precisão exatamente "quão rápido" este algoritmo termina. O Teorema de [Lamé](https://kenji.blog/pt/p/lame/) afirma o seguinte:
 
-> "Ao encontrar o máximo divisor comum de dois números inteiros usando o algoritmo de [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/), o número de divisões necessárias (passos) nunca excede 5 vezes o número de dígitos decimais do número menor."
+> "Ao encontrar o máximo divisor comum de dois números inteiros usando o algoritmo de [Euclides](https://kenji.blog/p/euclid/), o número de divisões necessárias (passos) nunca excede 5 vezes o número de dígitos decimais do número menor."
 
 Expresso como uma fórmula, é:
 
@@ -111,7 +111,7 @@ $$ \text{Número de passos} \le 5 \times \text{Número de dígitos do número me
 
 ### 4.2 Profunda Conexão com a Sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)
 
-No processo de prova desse teorema, [Lamé](https://kenji.blog/pt/p/lame/) descobriu que o pior cenário (ou seja, aquele que leva mais passos) para o algoritmo de [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) ocorre quando as entradas são dois **números de [Fibonacci](https://kenji.blog/pt/p/fibonacci/)** consecutivos. Utilizando a taxa de crescimento da sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) e as propriedades da proporção áurea, ele derivou esse belo limite superior. Devido a essa conquista, [Lamé](https://kenji.blog/pt/p/lame/) é considerado um dos "pais da teoria da complexidade" na ciência da computação moderna.
+No processo de prova desse teorema, [Lamé](https://kenji.blog/pt/p/lame/) descobriu que o pior cenário (ou seja, aquele que leva mais passos) para o algoritmo de Euclides ocorre quando as entradas são dois **números de Fibonacci** consecutivos. Utilizando a taxa de crescimento da sequência de Fibonacci e as propriedades da proporção áurea, ele derivou esse belo limite superior. Devido a essa conquista, [Lamé](https://kenji.blog/pt/p/lame/) é considerado um dos "pais da teoria da complexidade" na ciência da computação moderna.
 
 ## 5. Contribuições à Física: Teoria da Elasticidade e Parâmetros de [Lamé](https://kenji.blog/pt/p/lame/)
 
@@ -139,11 +139,11 @@ Em particular, para resolver a **equação de Laplace**, que descreve fenômenos
 
 ## 7. O Desafio e o Revés com o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)
 
-Um episódio dramático na vida de [Lamé](https://kenji.blog/pt/p/lame/) foi sua tentativa de provar o **Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)** em 1847. Em março daquele ano, [Lamé](https://kenji.blog/pt/p/lame/) anunciou orgulhosamente na Academia de Ciências da França que havia "provado completamente o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)". Sua prova envolvia uma abordagem altamente inovadora e poderosa para a época: fatorar a equação usando números complexos ciclotômicos.
+Um episódio dramático na vida de [Lamé](https://kenji.blog/pt/p/lame/) foi sua tentativa de provar o **Último Teorema de Fermat** em 1847. Em março daquele ano, Lamé anunciou orgulhosamente na Academia de Ciências da França que havia "provado completamente o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)". Sua prova envolvia uma abordagem altamente inovadora e poderosa para a época: fatorar a equação usando números complexos ciclotômicos.
 
-No entanto, imediatamente após sua apresentação, seu colega, o matemático Joseph [Liouville](https://kenji.blog/pt/p/liouville/), apontou astutamente que "a prova baseia-se na suposição tácita e não comprovada de que a 'fatoração única em primos' também se aplica no reino dos números complexos". Pouco tempo depois, uma carta chegou do matemático alemão [Ernst Kummer](https://kenji.blog/pt/p/kummer/) indicando que "a fatoração única em primos geralmente não se aplica", tornando a prova de [Lamé](https://kenji.blog/pt/p/lame/) efetivamente inválida.
+No entanto, imediatamente após sua apresentação, seu colega, o matemático Joseph [Liouville](https://kenji.blog/pt/p/liouville/), apontou astutamente que "a prova baseia-se na suposição tácita e não comprovada de que a 'fatoração única em primos' também se aplica no reino dos números complexos". Pouco tempo depois, uma carta chegou do matemático alemão Ernst Kummer indicando que "a fatoração única em primos geralmente não se aplica", tornando a prova de [Lamé](https://kenji.blog/pt/p/lame/) efetivamente inválida.
 
-Esse foi um grande revés para [Lamé](https://kenji.blog/pt/p/lame/), mas essa série de discussões desencadeou o nascimento da teoria de [Kummer](https://kenji.blog/pt/p/kummer/) dos "números ideais" (ideais), que mais tarde abriu o enorme campo matemático da teoria algébrica dos números. O desafio ousado de [Lamé](https://kenji.blog/pt/p/lame/) acabou por impulsionar a história da matemática de forma significativa.
+Esse foi um grande revés para [Lamé](https://kenji.blog/pt/p/lame/), mas essa série de discussões desencadeou o nascimento da teoria de Kummer dos "números ideais" (ideais), que mais tarde abriu o enorme campo matemático da teoria algébrica dos números. O desafio ousado de [Lamé](https://kenji.blog/pt/p/lame/) acabou por impulsionar a história da matemática de forma significativa.
 
 ## 8. Escritos e Papel como Educador
 

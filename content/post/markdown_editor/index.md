@@ -9,7 +9,7 @@ categories: ["blogging", "productivity", "editors"]
 tags: ["Markdown", "VS Code", "Neovim", "textlint"]
 ---
 
-技術ブログを継続して執筆するためには、執筆環境の最適化が必要不可欠です。本記事では、Markdownを用いた技術ブログの執筆スピードを劇的に向上させるための、高度なエディタ設定について深く掘り下げます。Visual Studio Code (VS Code) や Neovim の極限までのカスタマイズ、スニペットの活用、日本語の文法チェックツールである textlint の導入から [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/) [パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)での自動化、そして GitHub Copilot などの [LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/) を活用した最先端の執筆術まで、網羅的に解説します。
+技術ブログを継続して執筆するためには、執筆環境の最適化が必要不可欠です。本記事では、Markdownを用いた技術ブログの執筆スピードを劇的に向上させるための、高度なエディタ設定について深く掘り下げます。Visual Studio Code (VS Code) や Neovim の極限までのカスタマイズ、スニペットの活用、日本語の文法チェックツールである textlint の導入から [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/) パイプラインでの自動化、そして GitHub Copilot などの [LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/) を活用した最先端の執筆術まで、網羅的に解説します。
 
 ## 1. 執筆スピード向上の数理モデル
 
@@ -252,7 +252,7 @@ flowchart TD
 
 VS Code の GitHub Copilot Chat や、Neovim の `ChatGPT.nvim` や `Copilot.vim` などを使い、エディタを離れることなく以下のようなプロンプトを投げます。
 
-> 「以下の技術要素について、初学者向けにMarkdownの階層構造でアウトラインを作成して：[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)」
+> 「以下の技術要素について、初学者向けにMarkdownの階層構造でアウトラインを作成して：[Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/), Kubernetes, [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)」
 
 すると、即座に見出しや箇条書きのマークダウンが生成されます。私たちはその骨組みに肉付けをしていくだけで済みます。
 

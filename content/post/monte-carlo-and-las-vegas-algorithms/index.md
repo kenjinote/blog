@@ -89,15 +89,15 @@ print(f"円周率の近似値: {pi_approx}")
 その代わり、アルゴリズムが終了するまでの時間が乱数に依存します。「期待される実行時間（平均計算量）」は非常に小さくても、極めて運が悪い場合には最悪計算量に達したり、無限ループに陥る理論的可能性を排除できません。
 しかし、現実的には「極端に運が悪いケース」を引く確率は天文学的に低いため、実用上は決定論的アルゴリズムよりも高速に動作することが多く、広く採用されています。
 
-### 具体例1：乱択[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/) (Randomized QuickSort)
+### 具体例1：乱択[クイックソート](https://kenji.blog/p/sorting-algorithms/) (Randomized QuickSort)
 
-[[ソート](https://kenji.blog/p/sorting-algorithms/)アルゴリズム](https://kenji.blog/p/sorting-algorithms/)の代表格である[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)において、ピボット（基準値）の選び方をランダムにする方法がラスベガス法の典型例です。
+[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms/)の代表格である[クイックソート](https://kenji.blog/p/sorting-algorithms/)において、ピボット（基準値）の選び方をランダムにする方法がラスベガス法の典型例です。
 
-通常の[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)では、常に配列の末尾の要素をピボットに選ぶなどの固定の戦略をとります。しかし、この場合、元から[ソート](https://kenji.blog/p/sorting-algorithms/)済みの配列を与えられると最悪計算量 $O(n^2)$ となってしまいます。
+通常の[クイックソート](https://kenji.blog/p/sorting-algorithms/)では、常に配列の末尾の要素をピボットに選ぶなどの固定の戦略をとります。しかし、この場合、元から[ソート](https://kenji.blog/p/sorting-algorithms/)済みの配列を与えられると最悪計算量 $O(n^2)$ となってしまいます。
 
-**乱択[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)** では、ピボットを配列の中からランダムに選びます。これにより、どのような入力データに対しても、平均計算量が $O(n \log n)$ になることが数学的に保証されます。出力される[ソート](https://kenji.blog/p/sorting-algorithms/)結果自体は常に完全に正しいです。
+**乱択[クイックソート](https://kenji.blog/p/sorting-algorithms/)** では、ピボットを配列の中からランダムに選びます。これにより、どのような入力データに対しても、平均計算量が $O(n \log n)$ になることが数学的に保証されます。出力される[ソート](https://kenji.blog/p/sorting-algorithms/)結果自体は常に完全に正しいです。
 
-もし[ソート](https://kenji.blog/p/sorting-algorithms/)対象の配列が数億要素あり、かつ最初からほとんど[ソート](https://kenji.blog/p/sorting-algorithms/)されている場合、通常の[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)では[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)オーバーフローや計算時間の大幅な増加を招く危険があります。しかし、乱択[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)を用いることで、意図的に最悪ケースを引き起こすような悪意のある入力データ（DoS攻撃の一種）に対しても、安定して高速なパフォーマンスを発揮できるという強みがあります。このように、ラスベガス法はセキュリティやシステムの堅牢性向上にも役立つのです。
+もし[ソート](https://kenji.blog/p/sorting-algorithms/)対象の配列が数億要素あり、かつ最初からほとんどソートされている場合、通常のクイックソートではスタックオーバーフローや計算時間の大幅な増加を招く危険があります。しかし、乱択クイック[ソート](https://kenji.blog/p/sorting-algorithms/)を用いることで、意図的に最悪ケースを引き起こすような悪意のある入力データ（DoS攻撃の一種）に対しても、安定して高速なパフォーマンスを発揮できるという強みがあります。このように、ラスベガス法はセキュリティやシステムの堅牢性向上にも役立つのです。
 
 #### Pythonによる実装例
 
@@ -142,7 +142,7 @@ print(f"ソート結果: {sorted_data}")
 | アルゴリズム | 実行時間 | 結果の正確性 | 主な用途の例 |
 | --- | --- | --- | --- |
 | **モンテカルロ法** | 常に一定（上限あり） | 確率的に間違える可能性がある | 円周率の計算、素数判定、物理シミュレーション |
-| **ラスベガス法** | 確率的に変動（最悪無限） | 常に100%正しい | 乱択[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)、ハッシュ表の構築 |
+| **ラスベガス法** | 確率的に変動（最悪無限） | 常に100%正しい | 乱択[クイックソート](https://kenji.blog/p/sorting-algorithms/)、ハッシュ表の構築 |
 
 また、両者はそれぞれ「時間」と「精度」のどちらを固定するかという点で対極に位置しています。モンテカルロ法は時間を固定して精度を犠牲にし、ラスベガス法は精度を固定して時間を犠牲にしていると考えることができます。
 
@@ -182,7 +182,7 @@ graph TD
 本記事では、乱数を活用した2つの強力なアルゴリズムパラダイムについて解説しました。
 
 - **モンテカルロ法** : 時間は守るが、たまにミスをする。（例：近似計算、素数判定など）
-- **ラスベガス法** : ミスは絶対にしないが、たまに時間を守らない。（例：[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)、ハッシュ表の構築など）
+- **ラスベガス法** : ミスは絶対にしないが、たまに時間を守らない。（例：[クイックソート](https://kenji.blog/p/sorting-algorithms/)、ハッシュ表の構築など）
 
 実際のシステム開発やデータサイエンスの現場でも、厳密な正確性が求められるのか、それともリアルタイム性（計算時間の上限）が求められるのかによって、どちらのアプローチを採用すべきかが変わってきます。時には両者をハイブリッドさせたアプローチが採用されることもあります。
 

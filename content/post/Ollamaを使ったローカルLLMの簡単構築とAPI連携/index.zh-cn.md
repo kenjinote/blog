@@ -28,7 +28,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 Ollama是一个可以让你在本地环境中轻松运行和管理开源大型语言模型（如Llama 3, Phi-3, Mistral, Gemma等）的平台。以前，为了搭建本地LLM环境，需要极其繁琐的步骤，比如配置Python环境、安装CUDA工具包、解决PyTorch的依赖关系，以及从Hugging Face下载巨大的模型文件并进行格式转换（例如从Safetensors转换为GGUF）等。
 
-Ollama隐藏了这些复杂性，让你可以像使用[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)一样方便地处理[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)。只需一条命令，即可下载（`pull`）、运行（`run`）模型，并将其作为HTTP服务器启动。
+Ollama隐藏了这些复杂性，让你可以像使用[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)一样方便地处理[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)。只需一条命令，即可下载（`pull`）、运行（`run`）模型，并将其作为HTTP服务器启动。
 
 ## 核心技术：llama.cpp的包装器
 
@@ -497,7 +497,7 @@ $$
 
 ## 结论
 
-Ollama 的出现，极大地降低了引入本地 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 的门槛。类似操作 [Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/) 容器的简单命令体系，加上能从外部应用程序轻松调用的 [REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)，这种组合可以说是当今本地 AI 开发事实上的标准。
+Ollama 的出现，极大地降低了引入本地 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 的门槛。类似操作 Docker-layers/) 容器的简单命令体系，加上能从外部应用程序轻松调用的 [REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)，这种组合可以说是当今本地 AI 开发事实上的标准。
 
 如果您是一位正苦恼于云端 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 的成本或安全限制的开发者，请务必参考本文介绍的步骤，使用 Ollama 搭建本地 LLM 环境，并将其集成到您的应用程序中。您一定会感受到 AI 带来的无限可能，而且这种体验会变得更加自由和触手可及。
 

@@ -316,7 +316,7 @@ $$ R = e^{-\frac{t}{S}} $$
 
 1. **[旧技术] × [新范式]**: 例如“从 COBOL 架构中学习现代微服务设计的反模式”
 2. **[前端] × [后端概念]**: 例如“从数据库事务隔离级别的视角解读 React 的虚拟 DOM 更新算法”
-3. **[抽象数学与理论] × [具体实现]**: 例如“用图论解读 [Kubernetes](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/) [Pod](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/) 调度的优化”
+3. **[抽象数学与理论] × 具体实现]**: 例如“用图论解读 [Kubernetes [Pod](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/) 调度的优化”
 
 为了有意识地诱发这种组合，我们可以利用之前构建的 Pinecone 语义搜索系统，随机提取概念 A 和概念 B，然后向 AI（如 ChatGPT 等）发出提示词：“请将这两个概念结合，提出 5 个技术博客的标题和目录大纲草案”，通过这种方式，你可以无限生成自己无法想到的新颖视角的文章灵感。
 

@@ -66,7 +66,7 @@ $$
 
 ## 4. Impact sur la philosophie et la science
 
-La géométrie analytique de [Descartes](https://kenji.blog/fr/p/descartes/) est devenue une fondation indispensable pour le développement ultérieur des mathématiques et de la physique. On peut dire que la création du calcul infinitésimal par [Isaac Newton](https://kenji.blog/fr/p/newton/) et [Gottfried Leibniz](https://kenji.blog/fr/p/leibniz/) n'a été possible qu'en raison du décor fourni par le système de coordonnées cartésiennes.
+La géométrie analytique de [Descartes](https://kenji.blog/fr/p/descartes/) est devenue une fondation indispensable pour le développement ultérieur des mathématiques et de la physique. On peut dire que la création du calcul infinitésimal par Isaac Newton et [Gottfried Leibniz](https://kenji.blog/fr/p/leibniz/) n'a été possible qu'en raison du décor fourni par le système de coordonnées cartésiennes.
 
 De plus, son "doute méthodique" en philosophie, une approche pour trouver des vérités certaines après avoir douté de tout, a établi l'esprit de rationalisme qui sert de fondement à la recherche scientifique.
 

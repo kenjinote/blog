@@ -134,7 +134,7 @@ La IA puede escribir "código que prioriza C" o "código que prioriza A", pero n
 
 ### 4.2 Comunicación asíncrona y Consistencia Eventual ([Eventual Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/))
 
-A medida que los sistemas crecen, la coordinación entre servicios pasa de la comunicación síncrona a través de [REST API](https://kenji.blog/es/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/es/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) a la comunicación asíncrona utilizando colas de mensajes ([Kafka](https://kenji.blog/es/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/es/p/event-driven-architecture-message-queue-kafka-rabbitmq/), etc.). La consistencia de datos aquí cambia de consistencia inmediata a "consistencia eventual (Eventual [Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/))".
+A medida que los sistemas crecen, la coordinación entre servicios pasa de la comunicación síncrona a través de [REST API](https://kenji.blog/es/p/graphql-vs-rest-api-overfetching-type-safety/) a la comunicación asíncrona utilizando colas de mensajes (Kafka, RabbitMQ, etc.). La consistencia de datos aquí cambia de consistencia inmediata a "consistencia eventual (Eventual [Consistency](https://kenji.blog/es/p/cap-theorem-distributed-systems-tradeoff/))".
 ¿En qué momento se deben introducir patrones arquitectónicos avanzados como el patrón Saga o [CQRS](https://kenji.blog/es/p/event-driven-architecture-async/) (Command Query Responsibility Segregation)? Tomar estas decisiones complejas y dibujar el plano arquitectónico general del sistema es la verdadera esencia de un ingeniero senior.
 
 ```mermaid

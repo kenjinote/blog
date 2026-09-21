@@ -91,7 +91,7 @@ Ein tiefer Vererbungsbaum verkompliziert die Code-Abhängigkeiten und macht es e
 
 ## 2. Der mathematische Ansatz der funktionalen Programmierung (FP)
 
-Als Antithese zu der durch die "[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smutation" der [OOP](https://kenji.blog/de/p/object-oriented-programming-oop-solid-principles/) verursachten Komplexität rückte die **funktionale Programmierung** ([Functional Programming](https://kenji.blog/de/p/functional-programming-concepts-pure-functions-monads/)) ins Rampenlicht. Sie hat nicht nur Sprachen wie Haskell, Scala und Clojure tiefgreifend beeinflusst, sondern heutzutage auch JavaScript und TypeScript stark geprägt.
+Als Antithese zu der durch die "[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smutation" der OOP verursachten Komplexität rückte die **funktionale Programmierung** ([Functional Programming](https://kenji.blog/de/p/functional-programming-concepts-pure-functions-monads/)) ins Rampenlicht. Sie hat nicht nur Sprachen wie Haskell, Scala und Clojure tiefgreifend beeinflusst, sondern heutzutage auch JavaScript und TypeScript stark geprägt.
 
 ### 2.1 Kernkonzepte der FP
 
@@ -242,7 +242,7 @@ In diesem Code wird der [Zustand](https://kenji.blog/de/p/state-management-histo
 Auch in der Frontend-Entwicklung (wie React) mit TypeScript ist die Verschmelzung der Paradigmen zum Standard geworden.
 
 - Das UI-Rendering von Komponenten ist **funktional** (gibt die UI als reine Funktion zurück).
-- Datenabruf und Cache-Verwaltung sind **datenorientiert** (normalisierter [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sbaum mit [Redux](https://kenji.blog/de/p/state-management-history-future/) oder [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)).
+- Datenabruf und Cache-Verwaltung sind **datenorientiert** (normalisierter [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sbaum mit Redux oder [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)).
 - Ein Teil der komplexen Domänenlogik ist **objektorientiert** (klassenbasierte [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)schicht).
 
 ---

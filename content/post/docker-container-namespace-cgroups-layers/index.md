@@ -307,7 +307,7 @@ graph TD
 
 ### 8.1 マルチステージビルド（Multi-stage build）の活用
 
-ビルド環境と実行環境を分離することで、最終的なイメージサイズを劇的に縮小できます。特に[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)や[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)、[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)などのコンパイル言語で有効です。
+ビルド環境と実行環境を分離することで、最終的なイメージサイズを劇的に縮小できます。特に[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)やRust、[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)などのコンパイル言語で有効です。
 
 ```dockerfile
 # --- Stage 1: Build環境 ---

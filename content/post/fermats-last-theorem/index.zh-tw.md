@@ -13,7 +13,7 @@ tags:
 
 ## 1. 前言：世界上最著名的數學之謎
 
-在數學的歷史上，有一個問題讓無數人為之著迷，同時也讓他們備受折磨。那就是 **[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)** （[Fermat's Last Theorem](https://kenji.blog/zh-tw/p/fermats-last-theorem/)）。17世紀的法國法官、業餘數學家[皮埃爾·德·費馬](https://kenji.blog/zh-tw/p/fermat/)（[Pierre de Fermat](https://kenji.blog/zh-tw/p/fermat/)），在他愛不釋手的[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)《算術》一書的空白處留下了短短的筆記，從此展開了長達360年波瀾壯闊的數學史詩。
+在數學的歷史上，有一個問題讓無數人為之著迷，同時也讓他們備受折磨。那就是 **[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)** （Fermat's Last Theorem）。17世紀的法國法官、業餘數學家皮埃爾·德·費馬（Pierre de Fermat），在他愛不釋手的[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)《算術》一書的空白處留下了短短的筆記，從此展開了長達360年波瀾壯闊的數學史詩。
 
 定理的內容本身非常簡單，連國中生都能理解。
 
@@ -83,7 +83,7 @@ graph LR
 
 ## 5. [安德魯·懷爾斯](https://kenji.blog/zh-tw/p/wiles/)的榮耀
 
-受到這戲劇性發展強烈刺激的，是英國出身的數學家 **[安德魯·懷爾斯](https://kenji.blog/zh-tw/p/wiles/)** （[Andrew Wiles](https://kenji.blog/zh-tw/p/wiles/)）。他大約在10歲時，於圖書館接觸到了關於[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)的書籍，從此立志成為一名數學家。
+受到這戲劇性發展強烈刺激的，是英國出身的數學家 **[安德魯·懷爾斯](https://kenji.blog/zh-tw/p/wiles/)** （Andrew Wiles）。他大約在10歲時，於圖書館接觸到了關於[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)的書籍，從此立志成為一名數學家。
 
 懷爾斯中斷了其他所有的研究，把自己關在閣樓裡，秘密地挑戰證明 **谷山-志村猜想** 。經過7年孤獨的研究，1993年6月，在劍橋大學的演講尾聲，他在黑板上寫下了證明的結論，並平靜地宣佈：「我想在這裡結束。」會場頓時響起了如雷的掌聲。
 

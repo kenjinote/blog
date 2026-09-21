@@ -319,7 +319,7 @@ sequenceDiagram
 
 ## 8.1. セキュリティのシフトレフト
 
-[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)には、インフラの[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)を早期に発見するための静的解析ツールを組み込むべきです。
+[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)パイプラインには、インフラの[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)を早期に発見するための静的解析ツールを組み込むべきです。
 - **tfsec** や **checkov** : 「S3バケットがパブリック公開されている」「DBが[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)されていない」といったセキュリティリスクをコードレベルでスキャンし、問題があればCIをエラーで止めます。
 
 ---

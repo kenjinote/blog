@@ -100,7 +100,7 @@ $$
 T_{\text{search}}(d, L) = \sum_{i=1}^{d} O(\log(C_i) \cdot L_i)
 $$
 
-ここで、$C_i$ は深さ $i$ における子ノード（サブキーまたは値）の数、$L_i$ は比較対象となる文字列の長さ（文字数）です。レジストリの実体であるハイブファイル内では、サブキーのリストは名前のハッシュ値またはアルファベット順で[ソート](https://kenji.blog/p/sorting-algorithms/)されたインデックスとして保持されています。そのため、単純な[線形探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/) $O(C_i)$ ではなく、[二分探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/) $O(\log(C_i))$ が可能であり、1つのキーの下に数万のサブキーが存在しても極めて高速なアクセスを実現しています。
+ここで、$C_i$ は深さ $i$ における子ノード（サブキーまたは値）の数、$L_i$ は比較対象となる文字列の長さ（文字数）です。レジストリの実体であるハイブファイル内では、サブキーのリストは名前のハッシュ値またはアルファベット順で[ソート](https://kenji.blog/p/sorting-algorithms/)されたインデックスとして保持されています。そのため、単純な線形探索 $O(C_i)$ ではなく、[二分探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/) $O(\log(C_i))$ が可能であり、1つのキーの下に数万のサブキーが存在しても極めて高速なアクセスを実現しています。
 
 ### ストレージフットプリント (Space Complexity)
 レジストリの全体のサイズ（物理ディスク上の占有量）は、各ハイブの合計として計算されます。

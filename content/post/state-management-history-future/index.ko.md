@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 이 라이브러리들은 "서버의 상태를 로컬에 캐시하고 필요에 따라 동기화한다"라는 복잡한 처리를 추상화했습니다.
 그 결과 [Redux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/) 등의 글로벌 스토어에서 관리해야 할 데이터는 '순수한 클라이언트 상태'로 급감했고, 상태 관리에 대한 부담은 크게 줄어들었습니다.
 
-## 8. Atomic [State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) Management: [Recoil](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)과 [Jotai](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)
+## 8. Atomic [State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) Management: Recoil과 [Jotai](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)
 
 Server State가 분리된 후, 남겨진 Client State를 어떻게 효율적으로 관리할 것인가 하는 새로운 경쟁이 시작되었습니다.
 React의 렌더링 모델(탑다운)과 [Context API](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)의 성능 문제를 해결하기 위해 탄생한 것이 **Atomic [State Management](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)** 라는 접근법입니다.
@@ -444,7 +444,7 @@ React Compiler는 빌드 시에 React 컴포넌트의 코드를 정적 분석하
 
 ## 13. 결론: 상태 관리는 어디로 향하고 있는가?
 
-MVC의 혼란에서 시작해 [Flux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)로 인한 예측 가능성 획득, Hooks에 의한 단순화, Server [State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)의 분리, Atomic이나 Proxy에 의한 효율화, 그리고 Signals에 의한 세립도 리액티비티에 이르기까지.
+MVC의 혼란에서 시작해 [Flux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)/Redux로 인한 예측 가능성 획득, Hooks에 의한 단순화, Server [State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)의 분리, Atomic이나 Proxy에 의한 효율화, 그리고 Signals에 의한 세립도 리액티비티에 이르기까지.
 
 약 15년에 걸친 프론트엔드 상태 관리의 역사를 돌아보면 하나의 명확한 트렌드가 보입니다. 그것은 **"보일러플레이트를 줄이고 개발자의 인지 부하를 낮추면서, 이면의 시스템(프레임워크나 컴파일러)이 성능을 자동으로 최적화하는 방향으로 진화하고 있다"** 는 것입니다.
 

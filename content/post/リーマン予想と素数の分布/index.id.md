@@ -13,11 +13,11 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 "Bilangan prima (Prime Numbers)" adalah bilangan asli yang hanya bisa dibagi oleh 1 dan bilangan itu sendiri, yang juga sering disebut sebagai "atom" dalam dunia matematika. Deret bilangan 2, 3, 5, 7, 11, 13... ini pada pandangan pertama terlihat tidak beraturan dan muncul secara acak. Sejak matematikawan Yunani kuno, [Euclid](https://kenji.blog/id/p/euclid/), membuktikan bahwa "bilangan prima jumlahnya tak terhingga", tak terhitung banyaknya matematikawan yang menantang diri mereka untuk mengungkap keteraturan yang tersembunyi di balik susunan bilangan prima ini.
 
-Yang paling mendekati misteri bilangan prima ini adalah **"Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) ([Riemann](https://kenji.blog/id/p/riemann/) Hypothesis)"**, yang diusulkan oleh matematikawan Jerman, [Bernhard Riemann](https://kenji.blog/id/p/riemann/), pada tahun 1859. Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) adalah salah satu dari masalah terpenting dan belum terpecahkan dalam matematika modern, serta merupakan salah satu dari Masalah Hadiah Milenium (Millennium Prize Problems) yang ditetapkan oleh Clay Mathematics Institute dengan hadiah sebesar 1 juta dolar.
+Yang paling mendekati misteri bilangan prima ini adalah **"Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) (Riemann Hypothesis)"**, yang diusulkan oleh matematikawan Jerman, Bernhard Riemann, pada tahun 1859. Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) adalah salah satu dari masalah terpenting dan belum terpecahkan dalam matematika modern, serta merupakan salah satu dari Masalah Hadiah Milenium (Millennium Prize Problems) yang ditetapkan oleh Clay Mathematics Institute dengan hadiah sebesar 1 juta dolar.
 
 Sekilas, masalah sulit matematika murni terkait distribusi bilangan prima mungkin terasa tidak ada hubungannya dengan kehidupan kita sehari-hari. Namun, keamanan internet yang menopang infrastruktur masyarakat modern, terutama **teknologi kriptografi modern seperti kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan kriptografi kurva eliptik (ECC)**, sangat bergantung pada sifat-sifat bilangan prima yang sangat besar.
 
-Dalam artikel ini, kita akan melakukan perjalanan matematis dari distribusi bilangan prima menuju Teorema Bilangan Prima, fungsi Zeta [Riemann](https://kenji.blog/id/p/riemann/), hingga ke inti dari Hipotesis [Riemann](https://kenji.blog/id/p/riemann/), lalu menggali lebih dalam dan detail tentang bagaimana hal tersebut terhubung dengan teknologi kriptografi modern, serta apa yang akan terjadi pada dunia jika Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) berhasil dibuktikan.
+Dalam artikel ini, kita akan melakukan perjalanan matematis dari distribusi bilangan prima menuju Teorema Bilangan Prima, fungsi Zeta [Riemann](https://kenji.blog/id/p/riemann/), hingga ke inti dari Hipotesis Riemann, lalu menggali lebih dalam dan detail tentang bagaimana hal tersebut terhubung dengan teknologi kriptografi modern, serta apa yang akan terjadi pada dunia jika Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) berhasil dibuktikan.
 
 ---
 
@@ -50,7 +50,7 @@ Melalui teorema ini, kita mengetahui bahwa jika dilihat secara makroskopis, bila
 
 # 3. Fungsi Zeta [Riemann](https://kenji.blog/id/p/riemann/) dan Produk Euler
 
-Senjata paling kuat dalam menganalisis distribusi bilangan prima adalah **Fungsi Zeta [Riemann](https://kenji.blog/id/p/riemann/) ([Riemann](https://kenji.blog/id/p/riemann/) Zeta Function)**. Awalnya, fungsi ini adalah deret tak terhingga yang didefinisikan untuk bilangan real $s > 1$ oleh [Leonhard Euler](https://kenji.blog/id/p/euler/).
+Senjata paling kuat dalam menganalisis distribusi bilangan prima adalah **Fungsi Zeta [Riemann](https://kenji.blog/id/p/riemann/) (Riemann Zeta Function)**. Awalnya, fungsi ini adalah deret tak terhingga yang didefinisikan untuk bilangan real $s > 1$ oleh [Leonhard Euler](https://kenji.blog/id/p/euler/).
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -165,7 +165,7 @@ Untuk mengoperasikan kriptografi [RSA](https://kenji.blog/id/p/modern-cryptograp
 
 Saat ini, metode yang digunakan secara praktis adalah algoritma probabilistik yang disebut **Uji Keprimaan Miller-Rabin (Miller-Rabin primality test)**. Algoritma ini sangat cepat, namun memiliki risiko bahwa bilangan komposit disalahartikan sebagai bilangan prima atau disebut "bilangan prima semu (pseudoprime)" dengan probabilitas yang sangat kecil.
 
-Namun, jika kita berasumsi bahwa **"Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) yang Diperluas (Generalized [Riemann](https://kenji.blog/id/p/riemann/) Hypothesis, GRH)"**, yang memperluas Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) pada fungsi L-Dirichlet bernilai benar, maka ceritanya akan berubah secara dramatis.
+Namun, jika kita berasumsi bahwa **"Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) yang Diperluas (Generalized Riemann Hypothesis, GRH)"**, yang memperluas Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) pada fungsi L-Dirichlet bernilai benar, maka ceritanya akan berubah secara dramatis.
 Jika GRH benar, batas atas dari jumlah pengujian dalam uji Miller-Rabin akan dijamin secara matematis, sehingga meningkatkannya dari sekadar algoritma probabilistik menjadi **"Algoritma Waktu Polinomial Deterministik"** (Ini adalah fakta penting yang telah diketahui bahkan sebelum Uji Keprimaan AKS ditemukan).
 
 Dengan kata lain, Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) (dan perluasannya) memainkan peranan langsung dalam memberikan kepastian mutlak pada pondasi dasar kriptografi: "apakah kita dapat membangkitkan bilangan prima raksasa secara cepat dan dengan keyakinan yang pasti".
@@ -184,7 +184,7 @@ Terkadang muncul legenda urban yang mengatakan, "Jika Hipotesis [Riemann](https:
 Pembuktian Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) itu sendiri tidak serta merta akan langsung menghasilkan algoritma ajaib yang mempercepat faktorisasi prima secara drastis. Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) pada dasarnya adalah teorema tentang "keteraturan distribusi bilangan prima secara makroskopis", dan hal ini tidak serta merta memberikan petunjuk langsung tentang bilangan prima manakah yang dapat membagi bilangan $N$ tertentu (sifat secara lokal).
 
 Namun, dampaknya tidaklah nol.
-Sebab, dalam proses pembuktian Hipotesis [Riemann](https://kenji.blog/id/p/riemann/), probabilitas ditemukannya **"peralatan matematis baru" atau "metode analisis yang belum pernah diketahui"** sangatlah tinggi. Melihat sejarah ke belakang, ketika [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) atau [Konjektur Poincaré](https://kenji.blog/id/p/poincare-conjecture/) dibuktikan, teori-teori baru yang dikembangkan selama proses tersebut telah mendorong lompatan besar bagi matematika secara keseluruhan.
+Sebab, dalam proses pembuktian Hipotesis [Riemann](https://kenji.blog/id/p/riemann/), probabilitas ditemukannya **"peralatan matematis baru" atau "metode analisis yang belum pernah diketahui"** sangatlah tinggi. Melihat sejarah ke belakang, ketika Teorema Terakhir Fermat atau [Konjektur Poincaré](https://kenji.blog/id/p/poincare-conjecture/) dibuktikan, teori-teori baru yang dikembangkan selama proses tersebut telah mendorong lompatan besar bagi matematika secara keseluruhan.
 
 Jika suatu metode geometri aljabar atau geometri non-komutatif yang belum diketahui dapat dimantapkan, di mana metode ini bisa mengontrol secara penuh sifat dari pembuat nol fungsi zeta [Riemann](https://kenji.blog/id/p/riemann/), bukan tidak mungkin hal itu pada akhirnya berujung pada penemuan algoritma faktorisasi prima yang revolusioner (contohnya, algoritma klasik yang dapat mereduksi kompleksitas komputasi menjadi waktu polinomial). Dalam artian tersebut, para ahli kriptografi tidak pernah bisa memalingkan pandangannya dari perkembangan Hipotesis [Riemann](https://kenji.blog/id/p/riemann/).
 

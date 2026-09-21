@@ -252,7 +252,7 @@ Dalam penulisan blog teknologi modern, pemanfaatan LLM (Large Language Model) ti
 
 Menggunakan GitHub Copilot Chat di VS Code atau `ChatGPT.nvim` dan `Copilot.vim` di Neovim, Anda dapat memberikan prompt seperti berikut tanpa meninggalkan editor.
 
-> "Buatkan kerangka struktur hierarki Markdown untuk pemula tentang elemen teknologi berikut: [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)"
+> "Buatkan kerangka struktur hierarki Markdown untuk pemula tentang elemen teknologi berikut: [Docker](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/), Kubernetes, [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)"
 
 Kemudian, Markdown untuk judul dan poin-poin akan dihasilkan seketika. Kita hanya perlu menambahkan detail ke dalam kerangka kerja tersebut.
 

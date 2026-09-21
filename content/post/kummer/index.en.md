@@ -10,7 +10,7 @@ tags: ["Ernst Kummer", "Fermat's Last Theorem", "Ideal Numbers", "Algebraic Numb
 
 # [Ernst Kummer](https://kenji.blog/en/p/kummer/): Father of Ideal Numbers and the Dawn of Algebraic Number Theory
 
-In the history of mathematics, it is not uncommon for a challenge to a specific open problem to carve out entirely new fields of study. Ernst Eduard [Kummer](https://kenji.blog/en/p/kummer/) ( **Ernst Eduard [Kummer](https://kenji.blog/en/p/kummer/)** ) is a 19th-century German mathematical giant who created exactly such a historic turning point. During his profound struggle with **[Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)** ( **[Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)** ), he introduced the groundbreaking concept of **Ideal Numbers** ( **Ideal Numbers** ), laying the foundation for modern algebraic number theory.
+In the history of mathematics, it is not uncommon for a challenge to a specific open problem to carve out entirely new fields of study. Ernst Eduard [Kummer](https://kenji.blog/en/p/kummer/) ( **Ernst Eduard Kummer** ) is a 19th-century German mathematical giant who created exactly such a historic turning point. During his profound struggle with **Fermat's Last Theorem** ( **[Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)** ), he introduced the groundbreaking concept of **Ideal Numbers** ( **Ideal Numbers** ), laying the foundation for modern algebraic number theory.
 
 In this article, we will delve deeply into [Kummer](https://kenji.blog/en/p/kummer/)'s turbulent life, the humanizing episodes surrounding him, and his brilliant achievements that continue to shine in mathematical history.
 
@@ -20,7 +20,7 @@ In this article, we will delve deeply into [Kummer](https://kenji.blog/en/p/kumm
 
 ### Early Life and Shift from Theology
 
-[Ernst Kummer](https://kenji.blog/en/p/kummer/) was born on January 29, 1810, in Sorau ( **Sorau** ), Kingdom of Prussia (now in Poland). His father, a physician, passed away when [Kummer](https://kenji.blog/en/p/kummer/) was very young, and he was raised by his mother. Despite being poor, [Kummer](https://kenji.blog/en/p/kummer/) received a dedicated education and entered the University of Halle in 1828.
+[Ernst Kummer](https://kenji.blog/en/p/kummer/) was born on January 29, 1810, in Sorau ( **Sorau** ), Kingdom of Prussia (now in Poland). His father, a physician, passed away when Kummer was very young, and he was raised by his mother. Despite being poor, [Kummer](https://kenji.blog/en/p/kummer/) received a dedicated education and entered the University of Halle in 1828.
 
 Initially, he majored in Protestant theology, but under the influence of Professor Heinrich Ferdinand Scherk ( **Heinrich Ferdinand Scherk** ), he became captivated by the beauty and depth of mathematics. Guided by Professor Scherk, [Kummer](https://kenji.blog/en/p/kummer/) dedicated himself to mathematics and earned his doctorate just three years later, in 1831.
 
@@ -28,13 +28,13 @@ Initially, he majored in Protestant theology, but under the influence of Profess
 
 After graduation, [Kummer](https://kenji.blog/en/p/kummer/) could not immediately secure a university position, so he worked for about ten years as a mathematics and physics teacher at a gymnasium in Liegnitz ( **Liegnitz** ), close to his hometown. This period as a teacher was by no means a waste of time. He had a deep passion as an educator and raised exceptional students.
 
-One of these students was Leopold [Kronecker](https://kenji.blog/en/p/kronecker/) ( **Leopold [Kronecker](https://kenji.blog/en/p/kronecker/)** ), who would later become [Kummer](https://kenji.blog/en/p/kummer/)'s colleague and lifelong friend. [Kummer](https://kenji.blog/en/p/kummer/) recognized [Kronecker](https://kenji.blog/en/p/kronecker/)'s extraordinary talent, taught him advanced mathematics, and set him on the path of research. While working as a gymnasium teacher, [Kummer](https://kenji.blog/en/p/kummer/) continued his own research, publishing a series of outstanding papers in academic journals in Berlin.
+One of these students was Leopold [Kronecker](https://kenji.blog/en/p/kronecker/) ( **Leopold Kronecker** ), who would later become Kummer's colleague and lifelong friend. Kummer recognized Kronecker's extraordinary talent, taught him advanced mathematics, and set him on the path of research. While working as a gymnasium teacher, [Kummer](https://kenji.blog/en/p/kummer/) continued his own research, publishing a series of outstanding papers in academic journals in Berlin.
 
 ### Glory as a University Professor
 
-His remarkable research achievements attracted the attention of the leading mathematicians of the time. In 1842, upon the recommendation of [Carl Gustav Jacob Jacobi](https://kenji.blog/en/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/en/p/jacobi/)** ) and Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ), [Kummer](https://kenji.blog/en/p/kummer/) became a full professor at the University of Breslau. Furthermore, in 1855, he was appointed professor at the University of Berlin to succeed Dirichlet, who had moved to Göttingen.
+His remarkable research achievements attracted the attention of the leading mathematicians of the time. In 1842, upon the recommendation of [Carl Gustav Jacob Jacobi](https://kenji.blog/en/p/jacobi/) ( **Carl Gustav Jacob Jacobi** ) and Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ), [Kummer](https://kenji.blog/en/p/kummer/) became a full professor at the University of Breslau. Furthermore, in 1855, he was appointed professor at the University of Berlin to succeed Dirichlet, who had moved to Göttingen.
 
-At the University of Berlin, [Kummer](https://kenji.blog/en/p/kummer/), along with [Karl Weierstrass](https://kenji.blog/en/p/weierstrass/) ( **[Karl Weierstrass](https://kenji.blog/en/p/weierstrass/)** ) and his former student [Kronecker](https://kenji.blog/en/p/kronecker/), elevated Berlin into a global center of mathematics. His lectures were extremely clear and passionate, attracting many brilliant students from all over Europe.
+At the University of Berlin, [Kummer](https://kenji.blog/en/p/kummer/), along with Karl Weierstrass ( **Karl Weierstrass** ) and his former student [Kronecker](https://kenji.blog/en/p/kronecker/), elevated Berlin into a global center of mathematics. His lectures were extremely clear and passionate, attracting many brilliant students from all over Europe.
 
 ---
 
@@ -64,7 +64,7 @@ $$
 
 There are no positive integer solutions $(x, y, z)$ that satisfy this equation.
 
-In 1847, French mathematicians [Gabriel Lamé](https://kenji.blog/en/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/en/p/lame/)** ) and [Augustin-Louis Cauchy](https://kenji.blog/en/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/en/p/cauchy/)** ) announced that they had succeeded in proving this theorem. Their approach was to extend factorization into the realm of complex numbers (cyclotomic fields).
+In 1847, French mathematicians [Gabriel Lamé](https://kenji.blog/en/p/lame/) ( **Gabriel Lamé** ) and Augustin-Louis Cauchy ( **[Augustin-Louis Cauchy](https://kenji.blog/en/p/cauchy/)** ) announced that they had succeeded in proving this theorem. Their approach was to extend factorization into the realm of complex numbers (cyclotomic fields).
 
 Using the primitive $p$-th root of unity $\zeta$ (where $\zeta^p = 1, \zeta \neq 1$), the equation $x^p + y^p = z^p$ can be factored as follows:
 
@@ -74,7 +74,7 @@ $$
 
 [Lamé](https://kenji.blog/en/p/lame/) and others implicitly assumed that the "uniqueness of prime factorization" in ordinary integers (where any integer can be expressed uniquely as a product of prime numbers) would also hold in this extended world of complex integers (cyclotomic integers).
 
-However, [Kummer](https://kenji.blog/en/p/kummer/) had already discovered a few years prior that this assumption was false. For example, when $p=23$, the uniqueness of prime factorization fails. Without unique factorization, the proof by [Lamé](https://kenji.blog/en/p/lame/) and [Cauchy](https://kenji.blog/en/p/cauchy/) completely collapsed.
+However, [Kummer](https://kenji.blog/en/p/kummer/) had already discovered a few years prior that this assumption was false. For example, when $p=23$, the uniqueness of prime factorization fails. Without unique factorization, the proof by Lamé and [Cauchy](https://kenji.blog/en/p/cauchy/) completely collapsed.
 
 ```mermaid
 flowchart TD
@@ -108,7 +108,7 @@ Later, Richard Dedekind ( **Richard Dedekind** ) generalized [Kummer](https://ke
 
 ## Regular Primes and the Partial Proof of [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)
 
-Using the theory of ideal numbers, [Kummer](https://kenji.blog/en/p/kummer/) struck a massive blow against [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/). He defined the concept of **Regular Primes** ( **Regular Primes** ) and proved the astonishing result that "if $p$ is a regular prime, then [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) holds for $p$."
+Using the theory of ideal numbers, [Kummer](https://kenji.blog/en/p/kummer/) struck a massive blow against Fermat's Last Theorem. He defined the concept of **Regular Primes** ( **Regular Primes** ) and proved the astonishing result that "if $p$ is a regular prime, then [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) holds for $p$."
 
 A regular prime is a prime number $p$ that does not divide the class number $h_p$ of the cyclotomic field $\mathbb{Q}(\zeta_p)$. The class number is an index that measures how badly unique factorization fails; if the class number is $1$, unique factorization holds.
 
@@ -124,7 +124,7 @@ Using this criterion, [Kummer](https://kenji.blog/en/p/kummer/) proved that [Fer
 
 ## Contribution to Geometry: The [Kummer](https://kenji.blog/en/p/kummer/) Surface
 
-In addition to his groundbreaking work in number theory, [Kummer](https://kenji.blog/en/p/kummer/) made crucial discoveries in the field of geometry. The most representative of these is the **[Kummer](https://kenji.blog/en/p/kummer/) Surface** ( **[Kummer](https://kenji.blog/en/p/kummer/) Surface** ).
+In addition to his groundbreaking work in number theory, [Kummer](https://kenji.blog/en/p/kummer/) made crucial discoveries in the field of geometry. The most representative of these is the **Kummer Surface** ( **[Kummer](https://kenji.blog/en/p/kummer/) Surface** ).
 
 In 1864, [Kummer](https://kenji.blog/en/p/kummer/) studied a specific class of quartic surfaces in three-dimensional space. This surface has the deeply fascinating property of possessing the maximum possible number of singular points (points where the surface is not smooth, e.g., sharp peaks)—exactly $16$.
 

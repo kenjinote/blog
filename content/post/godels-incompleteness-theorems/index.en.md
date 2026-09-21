@@ -132,7 +132,7 @@ Because of its dramatic name, Gödel's Incompleteness Theorem is often misused i
 - **Misunderstanding 2: "Human reason has limits."**
   - **Fact**: The limit the theorem points to is about "systems (formal systems) that follow predetermined mechanical rules." In the First Incompleteness Theorem, we could see from an outside perspective that proposition $G$ is "true." Some scholars (like Roger Penrose) take this as evidence that human reason has the ability to understand "meaning (semantics)" that transcends mechanical formal systems.
 - **Misunderstanding 3: "There are things that cannot be proven about anything."**
-  - **Fact**: The Incompleteness Theorem applies only to sufficiently complex systems that include "addition and multiplication of natural numbers (Peano Arithmetic)." For example, "[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry" or the "first-order theory of real numbers" are complete, and all true propositions are provable. Incompleteness only arises when the subject has a sufficiently complex structure (a structure that enables self-reference).
+  - **Fact**: The Incompleteness Theorem applies only to sufficiently complex systems that include "addition and multiplication of natural numbers (Peano Arithmetic)." For example, "[Euclide](https://kenji.blog/p/euclid/)an geometry" or the "first-order theory of real numbers" are complete, and all true propositions are provable. Incompleteness only arises when the subject has a sufficiently complex structure (a structure that enables self-reference).
 
 ## 7. Baton to the [Turing Machine](https://kenji.blog/en/p/turing-machine-computability/): The Dawn of Computer Science
 

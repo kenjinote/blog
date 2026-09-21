@@ -19,7 +19,7 @@ tags: ["Math", "Algorithms", "Python", "C++"]
 
 ---
 
-## 1. [متطابقة أويلر ([Euler's Identity](https://kenji.blog/ar/p/eulers-identity/))](https://kenji.blog/p/eulers-identity/)
+## 1. [متطابقة أويلر (Euler's Identity)](https://kenji.blog/p/eulers-identity/)
 
 ### جمال المعادلة ونظرة عامة
 هذه هي متطابقة أويلر، والتي تُوصف بـ "كنز البشرية" و"أجمل معادلة في العالم". تم دمج الثوابت الخمسة الأكثر أهمية في الرياضيات (العدد النيبيري $e$، الوحدة التخيلية $i$، ثابت الدائرة $\pi$، العنصر المحايد الضربي $1$، والعنصر المحايد الجمعي $0$) في معادلة واحدة بسيطة.
@@ -559,7 +559,7 @@ for val, prob in zip(logits, probabilities):
 
 ---
 
-## 10. المسافة الإقليدية ومبرهنة فيثاغورس ([[Euclid](https://kenji.blog/ar/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. المسافة الإقليدية ومبرهنة فيثاغورس ([Euclide](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### جمال المعادلة ونظرة عامة
 إنه أساس الهندسة المنقول عن اليونان القديمة، وهو عبارة عن معادلة تُعرف مسافة الخط المستقيم بين نقطتين في فضاء $n$ الأبعاد. في الفضاء ثنائي الأبعاد، هي مبرهنة فيثاغورس نفسها ($a^2 + b^2 = c^2$).

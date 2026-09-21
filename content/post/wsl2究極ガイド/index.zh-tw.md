@@ -287,7 +287,7 @@ git config --global core.autocrlf input
 - 勾選 `General` -> `Use the WSL 2 based engine`。
 - 勾選 `Resources` -> `WSL Integration` -> `Enable integration with my default WSL distro`，並將要使用的發行版（Ubuntu）的開關切換為開啟。
 
-如此一來，就能從 WSL2 的終端機直接執行 `docker` 指令，並透過由 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop 管理的專屬輕量級 VM（`docker-desktop` 與 `docker-desktop-data`）來與 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 守護行程進行通訊。
+如此一來，就能從 WSL2 的終端機直接執行 `docker` 指令，並透過由 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/) Desktop 管理的專屬輕量級 VM（`docker-desktop` 與 `docker-desktop-data`）來與 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 守護行程進行通訊。
 
 ### 方法 2：直接匯入原生 Docker Engine
 如果是受到企業網路的限制（為了避免 Docker Desktop 的收費等），或是想要將效能負擔降到極限，可以在 `/etc/wsl.conf` 中啟用 `systemd` 後，將其當作純粹的 Ubuntu 伺服器來安裝 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/)。

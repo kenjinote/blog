@@ -180,7 +180,7 @@ Zettelkasten 主要有三種筆記：
 2. **Literature Notes（文獻筆記）** ：閱讀文章或書籍後，用自己的話語總結的內容。
 3. **Permanent Notes（永久筆記）** ：針對一個主題寫下完整考察的筆記。這些將直接成為部落格文章的種子。
 
-透過使用 Obsidian 的反向連結功能（`[[筆記名稱]]`），例如可以將「[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的所有權」與「垃圾回收 ([Garbage Collection](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)) 的歷史」這兩篇筆記連結起來，進而發現出乎意料的點子關聯。
+透過使用 Obsidian 的反向連結功能（`[筆記名稱]]`），例如可以將「[Rust 的所有權」與「垃圾回收 ([Garbage Collection](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)) 的歷史」這兩篇筆記連結起來，進而發現出乎意料的點子關聯。
 
 ## 5. 利用向量資料庫（Pinecone）與 OpenAI Embeddings 進行語意搜尋
 
@@ -316,7 +316,7 @@ $$ R = e^{-\frac{t}{S}} $$
 
 1. **[舊技術] × [新典範]** ：例「從 COBOL 架構中學習現代微服務設計的反模式」
 2. **[前端] × [後端概念]** ：例「從資料庫交易隔離級別的視角，解說 React 虛擬 DOM 更新演算法」
-3. **[抽象的數學與理論] × [具體實作]** ：例「用圖論解讀 [Kubernetes](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/) [Pod](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/) 排程最佳化」
+3. **[抽象的數學與理論] × 具體實作]** ：例「用圖論解讀 [Kubernetes [Pod](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/) 排程最佳化」
 
 為了刻意產生這種組合，可以利用剛才建構的 Pinecone 語意搜尋系統，隨機擷取概念 A 與概念 B，並對 AI（如 ChatGPT）丟出提示詞 (Prompt)：「請提出 5 個結合這兩者的技術部落格標題與大綱草案」，藉此能無限產生出自己想不到的嶄新切入點文章點子。
 

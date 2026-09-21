@@ -18,7 +18,7 @@ tags:
 
 Salah satu kerangka teoretis yang paling indah dan kuat dalam teori bilangan modern, khususnya dalam teori bilangan aljabar, adalah **Teori Medan Kelas** (Class Field Theory). Orang yang membangun sistem teoretis yang luar biasa ini sendirian dan tiba-tiba mengangkat matematika Jepang ke standar tertinggi dunia adalah **Teiji [Takagi](https://kenji.blog/id/p/takagi-teiji/)** (1875–1960).
 
-Pencapaian monumental yang diraihnya tidak hanya memecahkan satu masalah yang belum terpecahkan. Ia dengan cemerlang menggambarkan lanskap matematika yang diimpikan oleh raksasa Barat seperti [Kronecker](https://kenji.blog/id/p/kronecker/) dan [Hilbert](https://kenji.blog/id/p/hilbert/), saat terisolasi di Timur Jauh, dan dengan demikian menunjukkan jalan yang harus diikuti oleh komunitas matematika setelah itu. Dalam artikel ini, kita akan mempelajari lintasan kehidupan Teiji [Takagi](https://kenji.blog/id/p/takagi-teiji/) dan inti dari Teori Medan Kelas yang didirikannya.
+Pencapaian monumental yang diraihnya tidak hanya memecahkan satu masalah yang belum terpecahkan. Ia dengan cemerlang menggambarkan lanskap matematika yang diimpikan oleh raksasa Barat seperti [Kronecker](https://kenji.blog/id/p/kronecker/) dan Hilbert, saat terisolasi di Timur Jauh, dan dengan demikian menunjukkan jalan yang harus diikuti oleh komunitas matematika setelah itu. Dalam artikel ini, kita akan mempelajari lintasan kehidupan Teiji [Takagi](https://kenji.blog/id/p/takagi-teiji/) dan inti dari Teori Medan Kelas yang didirikannya.
 
 ## 1. Kehidupan Awal dan Kebangkitan pada Matematika
 
@@ -32,7 +32,7 @@ Ia kemudian melanjutkan ke Departemen Matematika di Sekolah Tinggi Sains di Univ
 
 Pada tahun 1898, [Takagi](https://kenji.blog/id/p/takagi-teiji/) pergi ke Jerman sebagai mahasiswa luar negeri dari Kementerian Pendidikan. Ia awalnya belajar di Universitas Berlin, tetapi kemudian pindah ke Universitas Göttingen, yang merupakan pusat matematika di dunia pada saat itu.
 
-Menunggunya di sana adalah matematikawan hebat yang meninggalkan nama mereka dalam sejarah matematika, seperti [David Hilbert](https://kenji.blog/id/p/hilbert/) dan Felix Klein. Secara khusus, [Hilbert](https://kenji.blog/id/p/hilbert/) baru saja menerbitkan "Zahlbericht" (Laporan tentang Bilangan) miliknya, yang merupakan puncak dari teori bilangan aljabar, dan isinya berdampak mendalam pada [Takagi](https://kenji.blog/id/p/takagi-teiji/). Di bawah bimbingan [Hilbert](https://kenji.blog/id/p/hilbert/), ia memecahkan bagian dari "Mimpi Masa Muda [Kronecker](https://kenji.blog/id/p/kronecker/)" (sebuah masalah mengenai teori perkalian kompleks), memperoleh gelar doktornya pada tahun 1903, dan kembali ke Jepang.
+Menunggunya di sana adalah matematikawan hebat yang meninggalkan nama mereka dalam sejarah matematika, seperti [David Hilbert](https://kenji.blog/id/p/hilbert/) dan Felix Klein. Secara khusus, Hilbert baru saja menerbitkan "Zahlbericht" (Laporan tentang Bilangan) miliknya, yang merupakan puncak dari teori bilangan aljabar, dan isinya berdampak mendalam pada Takagi. Di bawah bimbingan Hilbert, ia memecahkan bagian dari "Mimpi Masa Muda [Kronecker](https://kenji.blog/id/p/kronecker/)" (sebuah masalah mengenai teori perkalian kompleks), memperoleh gelar doktornya pada tahun 1903, dan kembali ke Jepang.
 
 ## 2. Terobosan dalam Isolasi: Lahirnya Teori Medan Kelas
 
@@ -40,13 +40,13 @@ Menunggunya di sana adalah matematikawan hebat yang meninggalkan nama mereka dal
 
 Setelah kembali ke Jepang, [Takagi](https://kenji.blog/id/p/takagi-teiji/) melanjutkan penelitiannya sendiri sambil mengajar sarjana yang lebih muda sebagai profesor di Universitas Kekaisaran Tokyo. Namun, ketika Perang Dunia I meletus pada tahun 1914, pertukaran akademik antara Jepang dan Eropa terputus sama sekali. Tanpa menerima makalah atau jurnal terbaru, [Takagi](https://kenji.blog/id/p/takagi-teiji/) tidak punya pilihan selain memperdalam pemikirannya sendiri sendirian di laboratoriumnya.
 
-"Isolasi" ini ironisnya menjadi tanah yang menghasilkan ciptaan yang hebat. [Takagi](https://kenji.blog/id/p/takagi-teiji/) mulai memeriksa kembali masalah mengenai ekstensi [Abel](https://kenji.blog/id/p/abel/)ian relatif yang diusulkan oleh [Hilbert](https://kenji.blog/id/p/hilbert/) dari sudut pandangnya yang unik.
+"Isolasi" ini ironisnya menjadi tanah yang menghasilkan ciptaan yang hebat. [Takagi](https://kenji.blog/id/p/takagi-teiji/) mulai memeriksa kembali masalah mengenai ekstensi Abelian relatif yang diusulkan oleh [Hilbert](https://kenji.blog/id/p/hilbert/) dari sudut pandangnya yang unik.
 
 ### Konsepsi Teori Medan Kelas
 
-[Hilbert](https://kenji.blog/id/p/hilbert/) telah memperkirakan dan membuktikan sebagian keberadaan "medan kelas mutlak" (absolute class field) untuk suatu medan bilangan aljabar $K$ yang diberikan, yang merupakan ekstensi [Abel](https://kenji.blog/id/p/abel/)ian tidak bercabang maksimal yang grup [Galois](https://kenji.blog/id/p/galois/)-nya isomorfik terhadap grup kelas ideal dari $K$.
+[Hilbert](https://kenji.blog/id/p/hilbert/) telah memperkirakan dan membuktikan sebagian keberadaan "medan kelas mutlak" (absolute class field) untuk suatu medan bilangan aljabar $K$ yang diberikan, yang merupakan ekstensi Abelian tidak bercabang maksimal yang grup [Galois](https://kenji.blog/id/p/galois/)-nya isomorfik terhadap grup kelas ideal dari $K$.
 
-[Takagi](https://kenji.blog/id/p/takagi-teiji/) berpikir bahwa dengan menghilangkan batasan "tidak bercabang" ini, korespondensi yang sama indahnya mungkin berlaku untuk ekstensi [Abel](https://kenji.blog/id/p/abel/)ian apa pun. Ini adalah ide inti dari **Teori Medan Kelas** [Takagi](https://kenji.blog/id/p/takagi-teiji/).
+[Takagi](https://kenji.blog/id/p/takagi-teiji/) berpikir bahwa dengan menghilangkan batasan "tidak bercabang" ini, korespondensi yang sama indahnya mungkin berlaku untuk ekstensi Abelian apa pun. Ini adalah ide inti dari **Teori Medan Kelas** [Takagi](https://kenji.blog/id/p/takagi-teiji/).
 
 ## 3. Puncak Matematika: Inti dari Teori Medan Kelas
 
@@ -66,11 +66,11 @@ Teorema utama yang dibuktikan oleh Teiji [Takagi](https://kenji.blog/id/p/takagi
 
 3. **Teorema Pemisahan Lengkap**: Syarat perlu dan cukup agar suatu ideal prima $\mathfrak{p}$ dari $K$ terpisah sepenuhnya dalam $L$ adalah bahwa $\mathfrak{p}$ termasuk dalam grup $H$.
 
-Konjektur [Hilbert](https://kenji.blog/id/p/hilbert/) dimasukkan sebagai kasus khusus di mana modulusnya trivial (ketika tidak ada percabangan). [Takagi](https://kenji.blog/id/p/takagi-teiji/) menggeneralisasi ini ke bentuk yang memungkinkan percabangan sewenang-wenang, menetapkan teori lengkap mengenai ekstensi [Abel](https://kenji.blog/id/p/abel/)ian dari medan bilangan aljabar.
+Konjektur [Hilbert](https://kenji.blog/id/p/hilbert/) dimasukkan sebagai kasus khusus di mana modulusnya trivial (ketika tidak ada percabangan). Takagi menggeneralisasi ini ke bentuk yang memungkinkan percabangan sewenang-wenang, menetapkan teori lengkap mengenai ekstensi [Abel](https://kenji.blog/id/p/abel/)ian dari medan bilangan aljabar.
 
 ### Keindahan Matematika: Generalisasi Teorema [Kronecker](https://kenji.blog/id/p/kronecker/)-Weber
 
-Keindahan Teori Medan Kelas terletak pada perluasan **Teorema [Kronecker](https://kenji.blog/id/p/kronecker/)-Weber** untuk medan bilangan rasional $\mathbb{Q}$ ke medan bilangan aljabar umum. Teorema [Kronecker](https://kenji.blog/id/p/kronecker/)-Weber menyatakan bahwa "setiap ekstensi [Abel](https://kenji.blog/id/p/abel/)ian berhingga dari medan bilangan rasional terkandung dalam submedan dari suatu medan siklotomik $\mathbb{Q}(\zeta_n)$."
+Keindahan Teori Medan Kelas terletak pada perluasan **Teorema [Kronecker](https://kenji.blog/id/p/kronecker/)-Weber** untuk medan bilangan rasional $\mathbb{Q}$ ke medan bilangan aljabar umum. Teorema Kronecker-Weber menyatakan bahwa "setiap ekstensi [Abel](https://kenji.blog/id/p/abel/)ian berhingga dari medan bilangan rasional terkandung dalam submedan dari suatu medan siklotomik $\mathbb{Q}(\zeta_n)$."
 
 $$ L \subset \mathbb{Q}(\zeta_n) \quad (\text{di mana } \zeta_n \text{ adalah akar primitif ke-} n \text{ dari kesatuan}) $$
 
@@ -109,7 +109,7 @@ Di luar pencapaian matematikanya, Teiji [Takagi](https://kenji.blog/id/p/takagi-
 - **"Pelajaran tentang Teori Bilangan Dasar"**: Buku teks yang menjelaskan semuanya mulai dari dasar-dasar teori bilangan hingga hukum timbal balik Gauss.
 - **"Kisah Sejarah Matematika Modern"**: Buku sejarah yang dengan jelas menggambarkan kelompok matematikawan di abad ke-19. Buku ini menyampaikan drama perkembangan matematika.
 
-Benih yang ditaburnya diwariskan kepada matematikawan Jepang yang nantinya akan aktif di seluruh dunia, seperti [Kunihiko Kodaira](https://kenji.blog/id/p/kodaira-kunihiko/), Kiyoshi Ito, dan selanjutnya, [Goro Shimura](https://kenji.blog/id/p/shimura-goro/) dan [Yutaka Taniyama](https://kenji.blog/id/p/taniyama-yutaka/).
+Benih yang ditaburnya diwariskan kepada matematikawan Jepang yang nantinya akan aktif di seluruh dunia, seperti [Kunihiko Kodaira](https://kenji.blog/id/p/kodaira-kunihiko/), Kiyoshi Ito, dan selanjutnya, Goro Shimura dan [Yutaka Taniyama](https://kenji.blog/id/p/taniyama-yutaka/).
 
 ## Kesimpulan
 

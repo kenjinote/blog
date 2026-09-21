@@ -55,7 +55,7 @@ $$ \Theta \text{-link} : \mathcal{F}^{\circledast} \xrightarrow{\sim} \mathcal{F
 
 # [ABC予想](https://kenji.blog/p/abc-conjecture/)から得られる驚異的な帰結
 
-もし[ABC予想](https://kenji.blog/p/abc-conjecture/)が（IUT理論によって、あるいは他の方法で）完全に証明された場合、数論における数多くの重要な定理が一挙に導かれることになります。これを **モルデル予想** （現在は[ファルティングス](https://kenji.blog/p/faltings/)の定理として知られる）や **[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)** などと比較してみましょう。
+もし[ABC予想](https://kenji.blog/p/abc-conjecture/)が（IUT理論によって、あるいは他の方法で）完全に証明された場合、数論における数多くの重要な定理が一挙に導かれることになります。これを **モルデル予想** （現在はファルティングスの定理として知られる）や **[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)** などと比較してみましょう。
 
 ## [フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)への応用
 

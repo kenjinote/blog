@@ -25,7 +25,7 @@ $$
 
 Aunque estamos sumando números enteros positivos infinitamente, por alguna razón se convierte en una **fracción negativa**. Este resultado contraintuitivo se hizo famoso cuando el genio matemático indio [Srinivasa Ramanujan](https://kenji.blog/es/p/ramanujan/) lo mencionó en una carta dirigida al matemático británico G.H. Hardy.
 
-En este artículo, explicaremos este método llamado «[Suma de Ramanujan ([Ramanujan Summation](https://kenji.blog/es/p/ramanujan-summation/))](https://kenji.blog/p/ramanujan-summation/)», cómo se deriva este extraño valor y cómo se conecta con los fenómenos físicos del mundo real.
+En este artículo, explicaremos este método llamado «[Suma de Ramanujan (Ramanujan Summation)](https://kenji.blog/p/ramanujan-summation/)», cómo se deriva este extraño valor y cómo se conecta con los fenómenos físicos del mundo real.
 
 ---
 

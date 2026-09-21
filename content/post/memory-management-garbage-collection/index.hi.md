@@ -303,7 +303,7 @@ stateDiagram-v2
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 यहाँ, $ h $ कैश हिट दर है ( $ 0 \le h \le 1 $ ), $ T_{cache} $ कैश एक्सेस समय है (लगभग 1 से 4 ns), और $ T_{memory} $ मुख्य मेमोरी एक्सेस समय है (लगभग 100 ns)।
-$ h $ को 0.99 (C/[Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) दृष्टिकोण) बनाने या इसे 0.5 ([Java](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/)-जैसे पॉइंटर चेज़िंग) तक कम करने के बीच, एप्लिकेशन की लूप निष्पादन गति में दर्जनों गुना का अंतर है। यही वास्तविक कारण है कि गेम इंजन और उच्च-आवृत्ति ट्रेडिंग सिस्टम में C++ और [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) को चुना जाता है।
+$ h $ को 0.99 (C/[Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) दृष्टिकोण) बनाने या इसे 0.5 (Java-जैसे पॉइंटर चेज़िंग) तक कम करने के बीच, एप्लिकेशन की लूप निष्पादन गति में दर्जनों गुना का अंतर है। यही वास्तविक कारण है कि गेम इंजन और उच्च-आवृत्ति ट्रेडिंग सिस्टम में C++ और [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) को चुना जाता है।
 
 ---
 

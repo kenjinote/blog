@@ -24,9 +24,9 @@ Cuando era joven, su familia se mudó a Berlín, donde recibió una educación p
 
 ## 3. Época universitaria y la influencia de [Kronecker](https://kenji.blog/es/p/kronecker/)
 
-[Hensel](https://kenji.blog/es/p/hensel/) estudió matemáticas en las Universidades de Bonn y Berlín. En ese momento, la Universidad de Berlín era uno de los centros mundiales para la investigación matemática, con gigantes como **[Karl Weierstrass](https://kenji.blog/es/p/weierstrass/)** y **Leopold [Kronecker](https://kenji.blog/es/p/kronecker/)** enseñando allí.
+[Hensel](https://kenji.blog/es/p/hensel/) estudió matemáticas en las Universidades de Bonn y Berlín. En ese momento, la Universidad de Berlín era uno de los centros mundiales para la investigación matemática, con gigantes como **Karl Weierstrass** y **Leopold [Kronecker](https://kenji.blog/es/p/kronecker/)** enseñando allí.
 
-Entre ellos, [Kronecker](https://kenji.blog/es/p/kronecker/) tuvo la influencia más profunda en [Hensel](https://kenji.blog/es/p/hensel/). Como se sabe por su famosa cita: "Dios hizo los números enteros, todo lo demás es obra del hombre", [Kronecker](https://kenji.blog/es/p/kronecker/) sostenía una firme creencia de que todas las matemáticas debían reconstruirse rigurosamente sobre la base de los números enteros. Bajo la guía de [Kronecker](https://kenji.blog/es/p/kronecker/), [Hensel](https://kenji.blog/es/p/hensel/) se dedicó profundamente al álgebra y a la teoría de números.
+Entre ellos, [Kronecker](https://kenji.blog/es/p/kronecker/) tuvo la influencia más profunda en Hensel. Como se sabe por su famosa cita: "Dios hizo los números enteros, todo lo demás es obra del hombre", Kronecker sostenía una firme creencia de que todas las matemáticas debían reconstruirse rigurosamente sobre la base de los números enteros. Bajo la guía de Kronecker, [Hensel](https://kenji.blog/es/p/hensel/) se dedicó profundamente al álgebra y a la teoría de números.
 
 En 1884, [Hensel](https://kenji.blog/es/p/hensel/) obtuvo su doctorado de la Universidad de Berlín. El tema de su tesis doctoral trataba sobre las propiedades aritméticas de las funciones algebraicas, lo que serviría como un presagio importante para su posterior descubrimiento de los **números p-ádicos**.
 

@@ -59,7 +59,7 @@ $$
 
 將費曼直觀的構想納入理論電腦科學框架並進行嚴格數學表述的，是牛津大學的物理學家大衛·德意志（David Deutsch）。在 1985 年發表的開創性論文中，德意志指出，「任何物理過程皆可藉由有限手段完全模擬」這項「強邱奇-圖靈論點（Strong Church-Turing Thesis）」，在受量子力學支配的真實物理世界中可能並不成立。
 
-德意志擴展了[艾倫·圖靈](https://kenji.blog/zh-tw/p/turing/)（[Alan Turing](https://kenji.blog/zh-tw/p/turing/)）提出的決定型圖靈機，定義了「量子圖靈機（Quantum [Turing Machine](https://kenji.blog/zh-tw/p/turing-machine-computability/)）」的概念。這是一種內部狀態、紙帶符號以及讀寫頭位置皆能處於量子「疊加態」，且狀態轉移由么正算符（Unitary Operator） $U$ 所描述的抽象運算機器。
+德意志擴展了[艾倫·圖靈](https://kenji.blog/zh-tw/p/turing/)（Alan Turing）提出的決定型圖靈機，定義了「量子圖靈機（Quantum [Turing Machine](https://kenji.blog/zh-tw/p/turing-machine-computability/)）」的概念。這是一種內部狀態、紙帶符號以及讀寫頭位置皆能處於量子「疊加態」，且狀態轉移由么正算符（Unitary Operator） $U$ 所描述的抽象運算機器。
 
 量子計算的基本單位是「量子位元（Qubit）」。傳統的古典位元只能處於確定為 $0$ 或 $1$ 的狀態，而量子位元則可以處於 $|0\rangle$ 與 $|1\rangle$ 的任意線性疊加態：
 

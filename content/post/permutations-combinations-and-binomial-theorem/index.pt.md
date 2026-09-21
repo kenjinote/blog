@@ -16,7 +16,7 @@ tags:
 
 No mundo da matemática, as "permutações" e "combinações" — métodos para contar logicamente o número de resultados possíveis — são conceitos fundamentais cruciais em uma ampla gama de campos, desde a probabilidade e estatística até os algoritmos da ciência da computação. Estender esses conceitos fundamentais para o reino da álgebra nos leva ao "Teorema Binomial", e representar visual e geometricamente a sequência de seus coeficientes produz o "[Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/)". À primeira vista, esses podem parecer tópicos matemáticos independentes, mas ao estudá-los profundamente, você percebe que eles estão surpreendentemente entrelaçados, formando uma única, maciça e bela estrutura matemática.
 
-Neste artigo, começaremos com uma compreensão intuitiva e os métodos básicos de cálculo para permutações e combinações, e então explicaremos em detalhes conceitos mais complexos como permutações com repetição, permutações circulares e combinações com repetição. A partir daí, derivaremos a fórmula do Teorema Binomial e sua bela simetria, e finalmente mergulharemos a fundo em temas profundos como as propriedades misteriosas escondidas no [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/), sua conexão com a sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) que descreve as leis da natureza e estruturas fractais. Vamos embarcar em uma jornada para apreciar plenamente a "beleza" e a "regularidade" da matemática.
+Neste artigo, começaremos com uma compreensão intuitiva e os métodos básicos de cálculo para permutações e combinações, e então explicaremos em detalhes conceitos mais complexos como permutações com repetição, permutações circulares e combinações com repetição. A partir daí, derivaremos a fórmula do Teorema Binomial e sua bela simetria, e finalmente mergulharemos a fundo em temas profundos como as propriedades misteriosas escondidas no [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de Pascal, sua conexão com a sequência de [Fibonacci](https://kenji.blog/pt/p/fibonacci/) que descreve as leis da natureza e estruturas fractais. Vamos embarcar em uma jornada para apreciar plenamente a "beleza" e a "regularidade" da matemática.
 
 # O que são Permutações?
 
@@ -269,7 +269,7 @@ Isso não é nada menos que a **Sequência de [Fibonacci](https://kenji.blog/pt/
 
 ### 4. Geometria Fractal: [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de Sierpinski
 
-Tente expandir o [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de [Pascal](https://kenji.blog/pt/p/pascal/) enormemente para dezenas ou centenas de linhas, pintando os "números ímpares" de preto por dentro e deixando os "números pares" em branco. Então, uma figura fractal autossimilar chamada "[Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de Sierpinski" surge claramente.
+Tente expandir o [Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de Pascal enormemente para dezenas ou centenas de linhas, pintando os "números ímpares" de preto por dentro e deixando os "números pares" em branco. Então, uma figura fractal autossimilar chamada "[Tri](https://kenji.blog/pt/p/sorting-algorithms/)ângulo de Sierpinski" surge claramente.
 Essa estrutura, onde o mesmo padrão triangular se repete infinitamente, não importa se você aproxima ou afasta o zoom no todo, serve como uma ponte conectando a teoria dos números, a geometria e a teoria do caos.
 
 # Extensão ao Teorema Multinomial

@@ -12,7 +12,7 @@ tags: ["伽玛函数", "欧拉", "复分析", "微积分"]
 
 在学习数学时，我们有时会面临这样一个问题：“能否将离散的概念扩展为连续的概念？”其中最美丽且最重要的例子之一就是 **[伽玛函数](https://kenji.blog/zh-cn/p/gamma-function/)（Gamma Function）** 。
 
-[伽玛函数](https://kenji.blog/zh-cn/p/gamma-function/)将定义在自然数上的“阶乘（$n!$）”扩展到了正实数，甚至扩展到了整个复数域。这个由18世纪伟大的数学家[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）发现的函数，在分析学、概率论、统计学以及物理学等各个领域中都有所体现。
+[伽玛函数](https://kenji.blog/zh-cn/p/gamma-function/)将定义在自然数上的“阶乘（$n!$）”扩展到了正实数，甚至扩展到了整个复数域。这个由18世纪伟大的数学家莱昂哈德·欧拉（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）发现的函数，在分析学、概率论、统计学以及物理学等各个领域中都有所体现。
 
 在本文中，我们将详细了解[伽玛函数](https://kenji.blog/zh-cn/p/gamma-function/)的基础知识及其深奥的性质。
 

@@ -10,7 +10,7 @@ tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 
 # [ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)とは
 
- **[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)** （[Euclide](https://kenji.blog/p/euclid/)an algorithm）は、2つの自然数（または整数）の最大公約数（Greatest Common Divisor, GCD）を効率的に求めるためのアルゴリズムです。紀元前300年頃に古代ギリシャの数学者[ユークリッド](https://kenji.blog/p/euclid/)が著した数学書『原論』（Elements）の第7巻に記載されており、「人類最古のアルゴリズム」の一つとしても広く知られています。
+ **[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)** （Euclidean algorithm）は、2つの自然数（または整数）の最大公約数（Greatest Common Divisor, GCD）を効率的に求めるためのアルゴリズムです。紀元前300年頃に古代ギリシャの数学者[ユークリッド](https://kenji.blog/p/euclid/)が著した数学書『原論』（Elements）の第7巻に記載されており、「人類最古のアルゴリズム」の一つとしても広く知られています。
 
 最大公約数を求める最も素朴な方法は、2つの数をそれぞれ素因数分解し、共通する素因数を掛け合わせることですが、数が大きくなると素因数分解そのものの計算量が膨大になり、現実的な時間で解くことが困難になります。一方、 **[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)** を用いれば、数千桁に及ぶ巨大な数同士であっても、極めて高速に最大公約数を計算することが可能です。
 
@@ -109,7 +109,7 @@ int main() {
 
 ## 計算量とラメの定理
 
-[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)はどれくらい速いのでしょうか。この計算量については、1844年にフランスの数学者[ガブリエル・ラメ](https://kenji.blog/p/lame/)によって証明された **ラメの定理** （[Lamé](https://kenji.blog/p/lame/)'s theorem）が有名です。
+[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)はどれくらい速いのでしょうか。この計算量については、1844年にフランスの数学者ガブリエル・ラメによって証明された **ラメの定理** （[Lamé](https://kenji.blog/p/lame/)'s theorem）が有名です。
 
 > **ラメの定理**
 > 2つの自然数 $a, b$ （$a > b$）に対して[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)を適用したときの割り算の回数は、 $b$ の十進法での桁数の $5$ 倍以下である。

@@ -26,7 +26,7 @@ Lo que ha sustentado la industria de TI japonesa durante muchos años fue el mod
 
 Sin embargo, a partir de 2026, este modelo ha llegado a su límite. Debido a que la esencia de la DX (Transformación Digital) pasó de "mera informatización" a "transformación del modelo de negocio", el desarrollo en cascada (waterfall), con su baja agilidad, ya no puede seguir el ritmo de los cambios del mercado.
 
-Los procesos de desarrollo modernos parten de la premisa de ser **nativos de la nube** y **basados en IA**. La contenerización ([Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/)), la arquitectura de microservicios y la automatización de los procesos de [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) ya no son "tecnologías especiales", sino "infraestructura estándar".
+Los procesos de desarrollo modernos parten de la premisa de ser **nativos de la nube** y **basados en IA**. La contenerización ([Docker](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)/Kubernetes), la arquitectura de microservicios y la automatización de los procesos de [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) ya no son "tecnologías especiales", sino "infraestructura estándar".
 
 ```mermaid
 graph TD

@@ -15,7 +15,7 @@ tags:
 
 ## مقدمة: واحدة من أجمل النظريات في الرياضيات
 
-في عالم الرياضيات، توجد بعض الصيغ السحرية التي تكشف عن روابط مذهلة بين ظواهر تبدو غير مترابطة. من بينها، تبرز **[صيغة أويلر للمجسمات](https://kenji.blog/ar/p/eulers-polyhedron-formula/)** (Euler's polyhedron formula)، التي اكتشفها [ليونهارد أويلر](https://kenji.blog/ar/p/euler/) ([Leonhard Euler](https://kenji.blog/ar/p/euler/))، لبساطتها المطلقة وعالميتها.
+في عالم الرياضيات، توجد بعض الصيغ السحرية التي تكشف عن روابط مذهلة بين ظواهر تبدو غير مترابطة. من بينها، تبرز **[صيغة أويلر للمجسمات](https://kenji.blog/ar/p/eulers-polyhedron-formula/)** (Euler's polyhedron formula)، التي اكتشفها ليونهارد أويلر ([Leonhard Euler](https://kenji.blog/ar/p/euler/))، لبساطتها المطلقة وعالميتها.
 
 الصيغة ببساطة هي كالتالي:
 

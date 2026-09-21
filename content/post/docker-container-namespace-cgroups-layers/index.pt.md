@@ -308,7 +308,7 @@ Com base no conhecimento até aqui, explicaremos como escrever um `Dockerfile` p
 
 ### 8.1 Aproveitamento de Multi-stage build (Compilação em vários estágios)
 
-Separar os ambientes de construção e execução pode reduzir drasticamente o tamanho final da imagem. Isto é especialmente eficaz em linguagens compiladas como [Go](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) e [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/).
+Separar os ambientes de construção e execução pode reduzir drasticamente o tamanho final da imagem. Isto é especialmente eficaz em linguagens compiladas como [Go](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), Rust e [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/).
 
 ```dockerfile
 # --- Etapa 1: Ambiente de construção ---

@@ -14,7 +14,7 @@ tags:
 
 현대 인터넷 사회에서 우리가 안전하게 통신할 수 있는 것은 **암호 이론** 덕분입니다. 그리고 그 암호 이론의 근저에는 17세기 수학자 [피에르 드 페르마](https://kenji.blog/ko/p/fermat/)([Pierre de Fermat](https://kenji.blog/ko/p/fermat/))가 발견한 아름다운 정리가 존재하고 있습니다.
 
-본 기사에서는 정수론의 중요한 기초인 **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)** ([Fermat's Little Theorem](https://kenji.blog/ko/p/fermats-little-theorem/))에 대해, 그 의미와 증명, 그리고 현대의 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호에 어떻게 응용되고 있는지를 알기 쉽게 해설합니다.
+본 기사에서는 정수론의 중요한 기초인 **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)** (Fermat's Little Theorem)에 대해, 그 의미와 증명, 그리고 현대의 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호에 어떻게 응용되고 있는지를 알기 쉽게 해설합니다.
 
 ## [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)란?
 

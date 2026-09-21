@@ -290,4 +290,4 @@ $$ |Q_1 \cap Q_2| = 2Q - n = 2(2f + 1) - (3f + 1) = f + 1 $$
 *   **Raft** : 理解しやすさと実装のしやすさを追求し、現代の分散[KVS](https://kenji.blog/p/nosql-database-selection-kvs-document-graph-wide-column/)のデファクトスタンダードに。
 *   **PBFT** : 悪意あるノードが混在する環境下での確定的合意を実現し、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術の基盤へ。
 
-今日では、ビットコインが採用した **Nakamoto [Consensus](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/) ([PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/))** や、Tendermint, HotStuffなど、PBFTの通信オーバーヘッドを削減しつつスケーラビリティを向上させた新しいBFTアルゴリズムが次々と誕生しています。システムの要件（ノードの信頼性、必要なスループット、レイテンシ）に応じて、適切なコンセンサスアルゴリズムを選択することが、堅牢な[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)を構築する上での鍵となります。
+今日では、ビットコインが採用した **Nakamoto [Consensus](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/) (PoW)** や、Tendermint, HotStuffなど、PBFTの通信オーバーヘッドを削減しつつスケーラビリティを向上させた新しいBFTアルゴリズムが次々と誕生しています。システムの要件（ノードの信頼性、必要なスループット、レイテンシ）に応じて、適切なコンセンサスアルゴリズムを選択することが、堅牢な[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)を構築する上での鍵となります。

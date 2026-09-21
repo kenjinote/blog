@@ -274,7 +274,7 @@ stateDiagram-v2
 
 By doing so, data inconsistencies in a distributed environment are completely mathematically and algorithmically eliminated. `etcd`, the backend datastore for [Kubernetes](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/), also achieves strict state management of the cluster by adopting this [Raft](https://kenji.blog/en/p/byzantine-generals-problem-consensus/).
 
-## 8. [[Microservice](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/) and [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)s
+## 8. [Microservices](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/) and [Transaction](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)s
 
 The CAP theorem does not only apply to standalone databases; it also has a profound impact on modern **Microservice Architectures**.
 

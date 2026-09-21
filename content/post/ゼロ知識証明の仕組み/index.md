@@ -14,7 +14,7 @@ description: 'ゼロ知識証明（ZKP）の数学的基礎から、zk-SNARKs、
 
 現代のデジタル社会において、データプライバシーとスケーラビリティは最も重要な課題の2つとなっています。個人情報の漏洩や不正利用のリスクが高まる中、「自分に関する情報を相手に明かすことなく、自分がその情報を持っていることを証明する」技術が強く求められています。これを実現するのが **ゼロ知識証明（Zero-Knowledge Proof: ZKP）** です。
 
-ゼロ知識証明は、1980年代にShafi Goldwasser、Silvio Micali、Charles Rackoffによって初めて提唱された暗号理論の概念ですが、長らく理論的な研究にとどまっていました。しかし、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術とWeb3の台頭により、状況は一変しました。Ethereumなどのパブリックブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンが直面するスケーラビリティ問題（処理能力の限界）とプライバシー問題（すべての[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が公開されること）を同時に解決する「魔法の杖」として、ZKPは一躍脚光を浴びることとなったのです。
+ゼロ知識証明は、1980年代にShafi Goldwasser、Silvio Micali、Charles Rackoffによって初めて提唱された暗号理論の概念ですが、長らく理論的な研究にとどまっていました。しかし、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術とWeb3の台頭により、状況は一変しました。Ethereumなどのパブリックブロックチェーンが直面するスケーラビリティ問題（処理能力の限界）とプライバシー問題（すべての[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が公開されること）を同時に解決する「魔法の杖」として、ZKPは一躍脚光を浴びることとなったのです。
 
 本記事では、ゼロ知識証明の基本的な概念から、現在主流となっている **zk-SNARKs** および **zk-STARKs** の深淵なる数学的・暗号学的メカニズム、そしてZK-Rollupsや分散型アイデンティティ（DID）といった最新のWeb3・セキュリティへの応用例に至るまで、極めて詳細かつ技術的に深く掘り下げて解説します。
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Note over Prover, Verifier: "※確度を高めるため、これを数十回繰り返す"
 ```
 
-この方法は強力ですが、検証者がオンラインでなければならず、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)のような非同期的な[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)に適用するには不便です。[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、誰もがいつでも過去の証明を検証できなければなりません。
+この方法は強力ですが、検証者がオンラインでなければならず、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)のような非同期的な分散システムに適用するには不便です。[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、誰もがいつでも過去の証明を検証できなければなりません。
 
 #### フィアット・シャミア変換（Fiat-Shamir Heuristic）と非対話化
 

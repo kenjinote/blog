@@ -304,7 +304,7 @@ jobs:
 
 ### 6.1 网站速度与Core [Web Vitals](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)的急剧提升
 
-由于排除了数据库查询和服务器端的渲染，页面的加载时间被缩短到毫秒级。这直接关系到作为Google排名因素的“核心网页指标（[Core Web Vitals](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）”（[LCP](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)、[FID](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)、[CLS](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）得分的大幅提升。可以期待用户跳出率的下降以及SEO排名的提升。
+由于排除了数据库查询和服务器端的渲染，页面的加载时间被缩短到毫秒级。这直接关系到作为Google排名因素的“核心网页指标（[Core Web Vitals](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）”（LCP、FID/INP、[CLS](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）得分的大幅提升。可以期待用户跳出率的下降以及SEO排名的提升。
 
 ### 6.2 摆脱安全威胁
 

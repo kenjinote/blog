@@ -18,13 +18,13 @@ description: '데이터와 자동화로 기술 블로그의 트래픽을 극대�
 
 ---
 
-## 1. [엔지니어를 위한](https://kenji.blog/ko/p/[エンジニア向け](https://kenji.blog/ko/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)[プロンプトエンジニアリング](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)の基本と開発への応用/) 기술 블로그의 SEO 아키텍처
+## 1. [엔지니어를 위한](https://kenji.blog/ko/p/エンジニア向け[プロンプトエンジニアリング](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)の基本と開発への応用/) 기술 블로그의 SEO 아키텍처
 
 블로그의 기반이 되는 시스템(정적 사이트 생성기 등)과 HTML 구조는 검색 엔진이 콘텐츠를 올바르게 해석하기 위한 가장 중요한 항목입니다.
 
 ### 1.1 Core [Web Vitals](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)의 최적화
 
-Google은 페이지 경험을 랭킹 요소로 채택하고 있으며, 특히 **[Core Web Vitals](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** 는 기술 블로그에서도 무시할 수 없습니다.
+Google은 페이지 경험을 랭킹 요소로 채택하고 있으며, 특히 **[Core Web Vitals](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (LCP, FID/INP, [CLS](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** 는 기술 블로그에서도 무시할 수 없습니다.
 기술 블로그에서는 대량의 소스 코드 블록이나 수식(MathJax / KaTeX), 도해 이미지가 많이 사용됩니다. 이것들은 페이지 렌더링을 지연시키는 요인이 됩니다.
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/ko/p/browser-rendering-mechanism-dom-paint/))**: 첫 화면의 주요 콘텐츠 로딩 속도입니다. 썸네일 이미지에는 WebP나 AVIF를 사용하고, `fetchpriority="high"` 속성을 부여하여 프리로드합니다. 또한 신택스 하이라이팅을 위한 거대한 CSS나 JS는 비동기 로드하거나 필요한 페이지에만 로드되도록 설계합니다.

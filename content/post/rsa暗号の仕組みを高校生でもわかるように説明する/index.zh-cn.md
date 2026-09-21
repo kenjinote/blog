@@ -267,11 +267,11 @@ $9^7 = 4,782,969$。除以 143 后商是 $33447$，余数为 $48$。
 
 ---
 
-## 8. 求私钥 $d$ 的方法：扩展[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)
+## 8. 求私钥 $d$ 的方法：扩展[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)
 
-在手工计算的例子中，我们是靠直觉寻找 $k$ 来得出 $d=103$ 的，但当数字达到几百位时，这种方法就行不通了。实际的程序中会使用名为 **“扩展[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)”** 的算法。
+在手工计算的例子中，我们是靠直觉寻找 $k$ 来得出 $d=103$ 的，但当数字达到几百位时，这种方法就行不通了。实际的程序中会使用名为 **“扩展[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)”** 的算法。
 
-求解 $7d \equiv 1 \pmod{120}$，就等同于寻找满足 $7d + 120y = 1$ 的整数 $d$ 和 $y$。通过逆向推导[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)，就可以机械地求出这个解。
+求解 $7d \equiv 1 \pmod{120}$，就等同于寻找满足 $7d + 120y = 1$ 的整数 $d$ 和 $y$。通过逆向推导[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)，就可以机械地求出这个解。
 
 1. $120 \div 7 = 17$ 余 $1$
 2. 变形后得到，$1 = 120 - 17 \times 7$

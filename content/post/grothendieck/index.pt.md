@@ -8,7 +8,7 @@ categories: ["Matemática", "Biografia"]
 tags: ["Grothendieck", "Geometria Algébrica", "Teoria dos Esquemas", "Teoria das Categorias"]
 ---
 
-# [[Alexander Grothendieck](https://kenji.blog/pt/p/grothendieck/): A Vida e as Conquistas do Maior Matemático do Século XX](https://kenji.blog/p/grothendieck/)
+# [Alexander Grothendieck: A Vida e as Conquistas do Maior Matemático do Século XX](https://kenji.blog/p/grothendieck/)
 
 [Alexander Grothendieck](https://kenji.blog/pt/p/grothendieck/) é um dos maiores matemáticos da história que provocou uma mudança de paradigma fundamental na comunidade matemática do final do século XX, particularmente no campo da geometria algébrica. As suas conquistas foram muito além de resolver problemas em aberto individuais; elas reconstruíram fundamentalmente a própria linguagem e o arcabouço conceitual da matemática em si. Neste artigo, forneceremos uma explicação detalhada da sua vida extraordinária e dramática, bem como do seu impacto imensurável na matemática moderna.
 

@@ -15,7 +15,7 @@ tags:
 
 # はじめに
 
-整数論の分野において、 **[ペル方程式](https://kenji.blog/p/pell-equation/)** （Pell's equation）は最も美しく、かつ深い理論的背景を持つ[ディオファントス](https://kenji.blog/p/diophantus/)方程式の一つとして知られています。本記事では、この方程式の基本的な定義と性質から始まり、連分数（Continued fractions）を用いたエレガントで効率的な解法、さらには無限に存在する解の生成メカニズムまでを非常に詳細に解説します。数学を愛するすべての方に向けて、数式の導出からアルゴリズムの可視化、そして[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)を用いた実装までを網羅しました。
+整数論の分野において、 **[ペル方程式](https://kenji.blog/p/pell-equation/)** （Pell's equation）は最も美しく、かつ深い理論的背景を持つディオファントス方程式の一つとして知られています。本記事では、この方程式の基本的な定義と性質から始まり、連分数（Continued fractions）を用いたエレガントで効率的な解法、さらには無限に存在する解の生成メカニズムまでを非常に詳細に解説します。数学を愛するすべての方に向けて、数式の導出からアルゴリズムの可視化、そして[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)を用いた実装までを網羅しました。
 
 ## 1. [ペル方程式](https://kenji.blog/p/pell-equation/)とは何か？
 
@@ -34,7 +34,7 @@ $x$ と $y$ 、そして $k$ はすべて整数であるため、 $(x - ky)$ と
 
 この方程式には「ペル」という名前が冠されていますが、歴史的な事実を紐解くと少し奇妙な経緯があります。実は、この方程式の一般的な解法を近代ヨーロッパで最初に研究し、解が常に存在することを強く主張したのはフランスの偉大な数学者 **[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/)** （[Pierre de Fermat](https://kenji.blog/p/fermat/)）です。
 
-のちに **レオンハルト・[オイラー](https://kenji.blog/p/euler/)** （[Leonhard Euler](https://kenji.blog/p/euler/)）が、イギリスの数学者 **ジョン・ペル** （John Pell）の名前をこの方程式に誤って結びつけてしまったため、今日でも「[ペル方程式](https://kenji.blog/p/pell-equation/)」として広く定着してしまいました。ペル自身は、この方程式の解法において中心的な役割を果たしたわけではありません。
+のちに **レオンハルト・[オイラー](https://kenji.blog/p/euler/)** （Leonhard Euler）が、イギリスの数学者 **ジョン・ペル** （John Pell）の名前をこの方程式に誤って結びつけてしまったため、今日でも「[ペル方程式](https://kenji.blog/p/pell-equation/)」として広く定着してしまいました。ペル自身は、この方程式の解法において中心的な役割を果たしたわけではありません。
 
 さらに時代を遡ると、インドの数学者 **ブラーマグプタ** （Brahmagupta）や **バースカラ2世** （Bhāskara II）は、[フェルマー](https://kenji.blog/p/fermat/)よりも数百年も前に、チャクラヴァーラ法（Chakravala method）と呼ばれる洗練されたアルゴリズムを用いて、この種の方程式の解を計算していました。古代から中世、そして近代へと続く数学者たちの探求の歴史が、この方程式には刻まれています。
 
@@ -205,6 +205,6 @@ if solution:
 
 ## 11. まとめ
 
-本記事では、[ディオファントス](https://kenji.blog/p/diophantus/)方程式の中でも特に魅力的な **[ペル方程式](https://kenji.blog/p/pell-equation/)** について、その基礎から応用までを詳しく探求しました。完全平方数でない $n$ に対しては常に無限の非自明な解が存在するという驚くべき事実、連分数展開を利用した効率的な解の[探索アルゴリズム](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)、そして生成された基本解から行列を用いて次々と新しい解を合成していくダイナミズムを解説しました。
+本記事では、[ディオファントス](https://kenji.blog/p/diophantus/)方程式の中でも特に魅力的な **ペル方程式** について、その基礎から応用までを詳しく探求しました。完全平方数でない $n$ に対しては常に無限の非自明な解が存在するという驚くべき事実、連分数展開を利用した効率的な解の[探索アルゴリズム](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)、そして生成された基本解から行列を用いて次々と新しい解を合成していくダイナミズムを解説しました。
 
 数百年前に[フェルマー](https://kenji.blog/p/fermat/)やブラーマグプタが考察した古典的な問題が、現代のコンピュータ・アルゴリズムとして美しく実装でき、さらに高度な代数的整数論へと繋がっているという事実には、時代を超えた数学の深いロマンを感じざるを得ません。この記事をきっかけに、ぜひPythonコードを活用して様々な $n$ の値で[ペル方程式](https://kenji.blog/p/pell-equation/)の世界を探索し、数の奥深い性質に触れてみてください。

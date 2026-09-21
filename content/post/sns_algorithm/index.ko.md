@@ -68,7 +68,7 @@ $$
 $$
 
 **기술 선정에 미치는 영향:**
-DLRM과 같은 거대 모델은 극히 미세한 신호(예를 들어 '동영상이 포함된 게시물'이나 '특정 버즈워드가 포함된 게시물'에 대한 약간의 체류 시간 증가)까지 포착하여 예측 점수에 반영합니다. 결과적으로 '과격한 제목(예: "React는 이제 구식이다", "[[Microservice](https://kenji.blog/ko/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/ko/p/microservices-architecture-bff-api-gateway/)의 종언")'이나 '시각적으로 화려한 데모'를 포함한 기술 정보가 알고리즘적으로 우대받기 쉬워집니다.
+DLRM과 같은 거대 모델은 극히 미세한 신호(예를 들어 '동영상이 포함된 게시물'이나 '특정 버즈워드가 포함된 게시물'에 대한 약간의 체류 시간 증가)까지 포착하여 예측 점수에 반영합니다. 결과적으로 '과격한 제목(예: "React는 이제 구식이다", "[Microservices](https://kenji.blog/ko/p/microservices-architecture-bff-api-gateway/)의 종언")'이나 '시각적으로 화려한 데모'를 포함한 기술 정보가 알고리즘적으로 우대받기 쉬워집니다.
 
 ### 2.3 강화학습과 다중 선택 밴딧 문제 (Multi-Armed Bandits)
 

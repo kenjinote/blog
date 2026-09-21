@@ -10,7 +10,7 @@ tags: ["加布里埃爾·拉梅", "數學史", "數論", "彈性力學", "幾何
 
 ## 1. 引言：[加布里埃爾·拉梅](https://kenji.blog/zh-tw/p/lame/)是誰？
 
-[加布里埃爾·拉梅](https://kenji.blog/zh-tw/p/lame/)（[Gabriel Lamé](https://kenji.blog/zh-tw/p/lame/)，1795年7月22日 – 1870年5月1日）是19世紀法國傑出的數學家、物理學家和工程師。他的貢獻極其廣泛，從純粹數學到應用數學，甚至涵蓋了實際的土木工程。時至今日，他的名字依然透過 **拉梅曲線** （超級橢圓）、[[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)中的 **拉梅定理** ，以及彈性力學中的 **拉梅常數** ，深深印刻在數學和物理的教科書中。
+[加布里埃爾·拉梅](https://kenji.blog/zh-tw/p/lame/)（Gabriel Lamé，1795年7月22日 – 1870年5月1日）是19世紀法國傑出的數學家、物理學家和工程師。他的貢獻極其廣泛，從純粹數學到應用數學，甚至涵蓋了實際的土木工程。時至今日，他的名字依然透過 **拉梅曲線** （超級橢圓）、[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)中的 **拉梅定理** ，以及彈性力學中的 **拉梅常數** ，深深印刻在數學和物理的教科書中。
 
 本文將追溯拉梅波瀾壯闊的一生，同時全面而系統地解讀他所留下的各項突破性的數學與物理學成就。了解拉梅的人生與思想歷程，能為我們理解19世紀科學如何奠定現代基礎提供極具價值的視角。
 
@@ -95,15 +95,15 @@ def calculate_lame_curve(a, b, n, num_points=100):
     return points
 ```
 
-## 4. 對數論的貢獻：拉梅定理與[[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)
+## 4. 對數論的貢獻：拉梅定理與[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)
 
 在計算機科學和數論中，讓拉梅的名字最為人所知的是 **拉梅定理** （[Lamé](https://kenji.blog/zh-tw/p/lame/)'s Theorem）。這被公認為是歷史上最早在數學上嚴密評估演算法計算複雜度（執行時間）的例子之一。
 
 ### 4.1 定理的概述與意義
 
-自古希臘流傳下來的 **[[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)** ，是求兩個自然數最大公因數的高效算法。然而，直到1844年的拉梅之前，還沒有人能夠準確證明這個算法究竟「有多快」能結束。拉梅定理的表述如下：
+自古希臘流傳下來的 **[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)** ，是求兩個自然數最大公因數的高效算法。然而，直到1844年的拉梅之前，還沒有人能夠準確證明這個算法究竟「有多快」能結束。拉梅定理的表述如下：
 
-> 「使用[[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)求兩個整數的最大公因數時，所需的除法次數（步驟數）絕對不會超過較小數在十進制下位數的5倍。」
+> 「使用[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)求兩個整數的最大公因數時，所需的除法次數（步驟數）絕對不會超過較小數在十進制下位數的5倍。」
 
 用數學公式表示如下：
 
@@ -111,7 +111,7 @@ $$ \text{步驟數} \le 5 \times \text{較小數的位數} $$
 
 ### 4.2 與費氏數列的深刻聯繫
 
-拉梅在證明這一定理的過程中發現，[[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)最棘手（即所需步驟數最多）的最壞情況，是當輸入的兩個數是連續的 **費氏數** 時。透過利用費氏數列的增長率和黃金分割的性質，他推導出了這個優美的上限。憑藉這一成就，拉梅被視為現代計算機科學中「計算複雜度理論之父」之一。
+拉梅在證明這一定理的過程中發現，[歐幾里得算法](https://kenji.blog/p/euclidean-algorithm/)最棘手（即所需步驟數最多）的最壞情況，是當輸入的兩個數是連續的 **費氏數** 時。透過利用費氏數列的增長率和黃金分割的性質，他推導出了這個優美的上限。憑藉這一成就，拉梅被視為現代計算機科學中「計算複雜度理論之父」之一。
 
 ## 5. 對物理學的貢獻：彈性理論與拉梅常數
 

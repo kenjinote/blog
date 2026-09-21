@@ -252,7 +252,7 @@ flowchart TD
 
 使用 VS Code 的 GitHub Copilot Chat，或者 Neovim 的 `ChatGPT.nvim` 和 `Copilot.vim` 等工具，无需离开编辑器即可发出如下提示词：
 
-> “请针对以下技术要素，为初学者以 Markdown 的层级结构编写大纲：[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)”
+> “请针对以下技术要素，为初学者以 Markdown 的层级结构编写大纲：[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/), Kubernetes, [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)”
 
 这样，AI 会立即生成带有标题和项目符号的 Markdown。我们只需要在这些骨架上填充血肉即可。
 

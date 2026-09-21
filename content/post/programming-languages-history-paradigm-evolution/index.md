@@ -249,7 +249,7 @@ $$
 
 ## 7. 結論
 
-アセンブリ言語によるハードウェアとの直接の対話から始まり、[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)による構造化と移植性の獲得、Javaによる[オブジェクト指向](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)と[メモリ管理](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の抽象化、そしてRustやGoによる並行処理と安全性の追求に至るまで、プログラミング言語は絶えず進化を続けてきました。
+アセンブリ言語によるハードウェアとの直接の対話から始まり、[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)による構造化と移植性の獲得、Javaによるオブジェクト指向と[メモリ管理](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の抽象化、そしてRustやGoによる並行処理と安全性の追求に至るまで、プログラミング言語は絶えず進化を続けてきました。
 
 **新しい言語を学ぶことは、新しい思考の枠組み（パラダイム）を学ぶことです。** Rustの所有権システムやGoのCSPモデルを理解することで、C言語やJavaを書く際にも、より安全で並行性の高い設計ができるようになるでしょう。
 

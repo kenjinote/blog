@@ -493,7 +493,7 @@ By embedding Ollama API requests into Python or shell scripts, you can inject th
 
 ## Conclusion
 
-With the advent of Ollama, the hurdle for introducing local LLMs has dropped dramatically. The combination of a simple command structure resembling [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/) container operations and a [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) that can be easily utilized from external applications is no exaggeration to say is the current de facto standard in local AI development.
+With the advent of Ollama, the hurdle for introducing local LLMs has dropped dramatically. The combination of a simple command structure resembling [Docker](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/) container operations and a [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) that can be easily utilized from external applications is no exaggeration to say is the current de facto standard in local AI development.
 
 For developers troubled by the costs and security constraints of cloud LLMs, please build a local [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) environment using Ollama by referring to the steps introduced in this article, and try integrating it into your own applications. You should be able to feel the potential of AI more freely and closer to home.
 

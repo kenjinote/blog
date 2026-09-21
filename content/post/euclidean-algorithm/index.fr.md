@@ -10,7 +10,7 @@ tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 
 # Qu'est-ce que l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) ?
 
-L' **algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/)** ([Euclide](https://kenji.blog/fr/p/euclid/)an algorithm) est une méthode efficace pour calculer le plus grand commun diviseur (PGCD) de deux entiers naturels (ou entiers relatifs). Décrit vers 300 av. J.-C. par le mathématicien grec de l'Antiquité [Euclide](https://kenji.blog/fr/p/euclid/) dans le livre VII de son traité de mathématiques « Éléments » (Elements), il est largement reconnu comme l'un des « plus anciens algorithmes de l'humanité ».
+L' **algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/)** (Euclidean algorithm) est une méthode efficace pour calculer le plus grand commun diviseur (PGCD) de deux entiers naturels (ou entiers relatifs). Décrit vers 300 av. J.-C. par le mathématicien grec de l'Antiquité [Euclide](https://kenji.blog/fr/p/euclid/) dans le livre VII de son traité de mathématiques « Éléments » (Elements), il est largement reconnu comme l'un des « plus anciens algorithmes de l'humanité ».
 
 La manière la plus naïve de trouver le PGCD est de trouver la décomposition en produit de facteurs premiers des deux nombres et de multiplier les facteurs premiers communs. Cependant, à mesure que les nombres s'agrandissent, la complexité de calcul de la décomposition en produit de facteurs premiers devient elle-même énorme, ce qui rend difficile la résolution dans un laps de temps réaliste. D'autre part, en utilisant l' **algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/)** , il est possible de calculer le PGCD extrêmement rapidement, même pour des nombres gigantesques de plusieurs milliers de chiffres.
 
@@ -109,7 +109,7 @@ int main() {
 
 ## Complexité temporelle et théorème de [Lamé](https://kenji.blog/fr/p/lame/)
 
-À quelle vitesse s'exécute l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) ? En ce qui concerne sa complexité de calcul, le **théorème de [Lamé](https://kenji.blog/fr/p/lame/)** ([Lamé](https://kenji.blog/fr/p/lame/)'s theorem), prouvé par le mathématicien français [Gabriel Lamé](https://kenji.blog/fr/p/lame/) en 1844, est bien connu.
+À quelle vitesse s'exécute l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) ? En ce qui concerne sa complexité de calcul, le **théorème de Lamé** (Lamé's theorem), prouvé par le mathématicien français [Gabriel Lamé](https://kenji.blog/fr/p/lame/) en 1844, est bien connu.
 
 > **Théorème de [Lamé](https://kenji.blog/fr/p/lame/)**
 > Le nombre d'étapes de division nécessaires pour appliquer l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) à deux entiers naturels $a, b$ ($a > b$) est d'au plus $5$ fois le nombre de chiffres dans la représentation décimale de $b$ .

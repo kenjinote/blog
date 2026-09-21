@@ -24,7 +24,7 @@ tags:
 
 [게오르크 칸토어](https://kenji.blog/ko/p/cantor/)는 1845년 러시아 상트페테르부르크에서 태어났습니다. 아버지는 덴마크 출신의 부유한 상인이었고, 어머니는 러시아 출신의 음악가였습니다. 어릴 때부터 수학에 비범한 재능을 보인 그는 이내 독일로 이주하여 베를린 대학에서 수학을 공부합니다.
 
-베를린 대학에서는 당시 수학계의 거두였던 **[카를 바이어슈트라스](https://kenji.blog/ko/p/weierstrass/)** ([Karl Weierstrass](https://kenji.blog/ko/p/weierstrass/))와 **레오폴트 크로네커** (Leopold [Kronecker](https://kenji.blog/ko/p/kronecker/))의 지도를 받았습니다. 특히 크로네커는 나중에 칸토어의 가장 큰 논적이 됩니다.
+베를린 대학에서는 당시 수학계의 거두였던 **[카를 바이어슈트라스](https://kenji.blog/ko/p/weierstrass/)** (Karl Weierstrass)와 **레오폴트 크로네커** (Leopold [Kronecker](https://kenji.blog/ko/p/kronecker/))의 지도를 받았습니다. 특히 크로네커는 나중에 칸토어의 가장 큰 논적이 됩니다.
 
 ### 무한에 대한 탐구와 크로네커와의 대립
 

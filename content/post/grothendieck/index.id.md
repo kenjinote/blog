@@ -8,7 +8,7 @@ categories: ["Matematika", "Biografi"]
 tags: ["Grothendieck", "Geometri Aljabar", "Teori Skema", "Teori Kategori"]
 ---
 
-# [[Alexander Grothendieck](https://kenji.blog/id/p/grothendieck/): Kehidupan dan Pencapaian Matematikawan Terbesar Abad ke-20](https://kenji.blog/p/grothendieck/)
+# [Alexander Grothendieck: Kehidupan dan Pencapaian Matematikawan Terbesar Abad ke-20](https://kenji.blog/p/grothendieck/)
 
 [Alexander Grothendieck](https://kenji.blog/id/p/grothendieck/) adalah salah satu matematikawan terbesar dalam sejarah yang membawa pergeseran paradigma mendasar dalam komunitas matematika di akhir abad ke-20, khususnya di bidang geometri aljabar. Pencapaiannya jauh melampaui penyelesaian masalah terbuka secara individu; pencapaian tersebut pada dasarnya merekonstruksi bahasa dan kerangka konseptual matematika itu sendiri. Dalam artikel ini, kami akan memberikan penjelasan terperinci tentang kehidupannya yang luar biasa dan dramatis, serta dampaknya yang tak terukur pada matematika modern.
 

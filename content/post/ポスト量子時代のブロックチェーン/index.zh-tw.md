@@ -12,7 +12,7 @@ description: '量子電腦驚人的運算能力即將動搖區塊鏈的根基，
 
 ## 1. 簡介：後量子時代的腳步聲與區塊鏈的危機
 
-自2009年中本聰（Satoshi Nakamoto）創造[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)（[Bitcoin](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)）以來，區塊鏈技術作為「去中心化且不可篡改的帳本」，已發展成為全球金融系統與應用程式的基礎。支撐這種強大安全性的，正是 **公開金鑰密碼學（[Public Key](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）** 與 **密碼雜湊函數（[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)s）** 等現代密碼技術。
+自2009年中本聰（Satoshi Nakamoto）創造[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)（Bitcoin）以來，區塊鏈技術作為「去中心化且不可篡改的帳本」，已發展成為全球金融系統與應用程式的基礎。支撐這種強大安全性的，正是 **公開金鑰密碼學（Public Key Cryptography）** 與 **密碼雜湊函數（Cryptographic [Hash Function](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)s）** 等現代密碼技術。
 
 這些密碼技術的安全性，建立在數學上的「計算困難度」之上，即使是傳統電腦（我們目前使用的個人電腦或超級電腦）花費等同宇宙壽命的時間，也無法破解。
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. 橢圓曲線密碼學（ECDSA）的基礎與計算困難度
 
-包括[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)和以太坊（Ethereum）在內的許多區塊鏈，都採用 **橢圓曲線數位簽章演算法（ECDSA：Elliptic Curve [Digital Signature](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) Algorithm）** 作為數位簽章演算法。具體來說，[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)使用的是名為 `secp256k1` 參數的橢圓曲線。
+包括[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)和以太坊（Ethereum）在內的許多區塊鏈，都採用 **橢圓曲線數位簽章演算法（ECDSA：Elliptic Curve Digital Signature Algorithm）** 作為數位簽章演算法。具體來說，[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)使用的是名為 `secp256k1` 參數的橢圓曲線。
 
 橢圓曲線密碼學的安全性依賴於 **橢圓曲線離散對數問題（ECDLP：Elliptic Curve Discrete Logarithm Problem）** 的計算困難度。
 橢圓曲線由以下Weierstrass標準式的方程式定義：

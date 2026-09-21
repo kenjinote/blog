@@ -12,7 +12,7 @@ description: "The arrival of 'Q-Day', where the astonishing computational power 
 
 ## 1. Introduction: The Footsteps of the Post-Quantum Era and the Crisis of [Blockchain](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/)
 
-Since the birth of [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) by Satoshi Nakamoto in 2009, blockchain technology has grown to become the foundation of financial systems and applications worldwide as a "decentralized and tamper-proof ledger." This robust security is supported by modern cryptographic technologies: **[Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy** and **[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s**.
+Since the birth of [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) by Satoshi Nakamoto in 2009, blockchain technology has grown to become the foundation of financial systems and applications worldwide as a "decentralized and tamper-proof ledger." This robust security is supported by modern cryptographic technologies: **Public Key Cryptography** and **Cryptographic [Hash Function](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s**.
 
 These cryptographic technologies guarantee security based on the mathematical "computational difficulty" that classical computers (the PCs and supercomputers we currently use) cannot decipher even if they took time equivalent to the lifespan of the universe.
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. Basics of Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECDSA) and Computational Difficulty
 
-Many blockchains, including [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) and Ethereum, employ the **Elliptic Curve [Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Algorithm (ECDSA)** as their digital signature algorithm. Specifically, [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) uses an elliptic curve with the parameter `secp256k1`.
+Many blockchains, including [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) and Ethereum, employ the **Elliptic Curve Digital Signature Algorithm (ECDSA)** as their digital signature algorithm. Specifically, [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) uses an elliptic curve with the parameter `secp256k1`.
 
 The security of elliptic curve cryptography relies on the computational difficulty of the **Elliptic Curve Discrete Logarithm Problem (ECDLP)**.
 An elliptic curve is defined by the following equation in the Weierstrass normal form:

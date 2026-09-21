@@ -24,9 +24,9 @@ Quando era jovem, sua família mudou-se para Berlim, onde recebeu uma educação
 
 ## 3. Dias de universidade e a influência de [Kronecker](https://kenji.blog/pt/p/kronecker/)
 
-[Hensel](https://kenji.blog/pt/p/hensel/) estudou matemática nas Universidades de Bonn e Berlim. Na época, a Universidade de Berlim era um dos centros mundiais de pesquisa matemática, com gigantes como **[Karl Weierstrass](https://kenji.blog/pt/p/weierstrass/)** e **Leopold [Kronecker](https://kenji.blog/pt/p/kronecker/)** lecionando lá.
+[Hensel](https://kenji.blog/pt/p/hensel/) estudou matemática nas Universidades de Bonn e Berlim. Na época, a Universidade de Berlim era um dos centros mundiais de pesquisa matemática, com gigantes como **Karl Weierstrass** e **Leopold [Kronecker](https://kenji.blog/pt/p/kronecker/)** lecionando lá.
 
-Entre eles, [Kronecker](https://kenji.blog/pt/p/kronecker/) teve a influência mais profunda sobre [Hensel](https://kenji.blog/pt/p/hensel/). Como se sabe por sua famosa citação: "Deus fez os números inteiros, tudo o mais é obra do homem", [Kronecker](https://kenji.blog/pt/p/kronecker/) mantinha uma forte crença de que toda a matemática deveria ser rigorosamente reconstruída com base nos números inteiros. Sob a orientação de [Kronecker](https://kenji.blog/pt/p/kronecker/), [Hensel](https://kenji.blog/pt/p/hensel/) dedicou-se profundamente à álgebra e à teoria dos números.
+Entre eles, [Kronecker](https://kenji.blog/pt/p/kronecker/) teve a influência mais profunda sobre Hensel. Como se sabe por sua famosa citação: "Deus fez os números inteiros, tudo o mais é obra do homem", Kronecker mantinha uma forte crença de que toda a matemática deveria ser rigorosamente reconstruída com base nos números inteiros. Sob a orientação de Kronecker, [Hensel](https://kenji.blog/pt/p/hensel/) dedicou-se profundamente à álgebra e à teoria dos números.
 
 Em 1884, [Hensel](https://kenji.blog/pt/p/hensel/) obteve seu doutorado na Universidade de Berlim. O tema de sua tese de doutorado foi sobre as propriedades aritméticas das funções algébricas, o que serviria como um importante prenúncio de sua posterior descoberta dos **números p-ádicos**.
 

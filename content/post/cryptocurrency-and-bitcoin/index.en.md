@@ -104,7 +104,7 @@ A hash function $H$ must satisfy the following properties:
 
 In Bitcoin, SHA-256 is applied twice (this is called `SHA256(SHA256(x))`, or Hash256) in processes such as calculating block hashes and generating addresses from public keys.
 
-### [Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) [Cryptography](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) and [Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s
+### [Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Cryptography and [Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s
 
 Ownership of cryptocurrency is proven by a pair of keys: a Private Key and a Public Key.
 - **Private Key** $k$: A randomly generated 256-bit integer. It must never be known to anyone else.

@@ -10,9 +10,9 @@ tags: ["number theory", "Mordell", "elliptic curves", "Diophantine equations"]
 
 ## 1. はじめに
 
-20世紀の数学界において、とりわけ **数論** (Number Theory) の分野で輝かしい足跡を残した数学者の一人が、ルイス・[モーデル](https://kenji.blog/p/mordell/) (Louis Joel Mordell, 1888–1972) です。彼は[ディオファントス](https://kenji.blog/p/diophantus/)方程式の研究において画期的な成果を挙げ、現代の代数幾何学と数論の交差点にある多くの重要な理論の基礎を築きました。本記事では、[モーデル](https://kenji.blog/p/mordell/)の生涯、彼の名が冠された重要な定理や予想、そして彼が数学界に与えた深い影響について、詳細に解説します。
+20世紀の数学界において、とりわけ **数論** (Number Theory) の分野で輝かしい足跡を残した数学者の一人が、ルイス・[モーデル](https://kenji.blog/p/mordell/) (Louis Joel Mordell, 1888–1972) です。彼はディオファントス方程式の研究において画期的な成果を挙げ、現代の代数幾何学と数論の交差点にある多くの重要な理論の基礎を築きました。本記事では、[モーデル](https://kenji.blog/p/mordell/)の生涯、彼の名が冠された重要な定理や予想、そして彼が数学界に与えた深い影響について、詳細に解説します。
 
-[モーデル](https://kenji.blog/p/mordell/)の名前を耳にしたことがある人の多くは、おそらく **[モーデル](https://kenji.blog/p/mordell/)の定理** (Mordell's Theorem) や **[モーデル](https://kenji.blog/p/mordell/)予想** (Mordell Conjecture) を通じて彼を知ったことでしょう。これらの業績は、単なる一つの定理の証明にとどまらず、その後の数学、特に **[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)** ([Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)) の証明に至る壮大な数学的ドラマの重要な伏線となりました。
+[モーデル](https://kenji.blog/p/mordell/)の名前を耳にしたことがある人の多くは、おそらく **モーデルの定理** (Mordell's Theorem) や **モーデル予想** (Mordell Conjecture) を通じて彼を知ったことでしょう。これらの業績は、単なる一つの定理の証明にとどまらず、その後の数学、特に **フェルマーの最終定理** ([Fermat's Last Theorem](https://kenji.blog/p/fermats-last-theorem/)) の証明に至る壮大な数学的ドラマの重要な伏線となりました。
 
 ## 2. 若き日の[モーデル](https://kenji.blog/p/mordell/)：独学からケンブリッジへ
 
@@ -24,7 +24,7 @@ tags: ["number theory", "Mordell", "elliptic curves", "Diophantine equations"]
 
 ## 3. [ディオファントス](https://kenji.blog/p/diophantus/)方程式への情熱
 
-[モーデル](https://kenji.blog/p/mordell/)の研究の中心にあったのは、常に **[ディオファントス](https://kenji.blog/p/diophantus/)方程式** (Diophantine equations) でした。[ディオファントス](https://kenji.blog/p/diophantus/)方程式とは、整数係数を持つ多項式の方程式において、整数解や有理数解を求める問題のことです。古代ギリシャの数学者[ディオファントス](https://kenji.blog/p/diophantus/)にちなんで名付けられました。
+[モーデル](https://kenji.blog/p/mordell/)の研究の中心にあったのは、常に **ディオファントス方程式** (Diophantine equations) でした。ディオファントス方程式とは、整数係数を持つ多項式の方程式において、整数解や有理数解を求める問題のことです。古代ギリシャの数学者[ディオファントス](https://kenji.blog/p/diophantus/)にちなんで名付けられました。
 
 最も有名な[ディオファントス](https://kenji.blog/p/diophantus/)方程式の例は、[ピタゴラス](https://kenji.blog/p/pythagoras/)の定理に関連する方程式です。
 
@@ -58,7 +58,7 @@ $$ E(\mathbb{Q}) \cong E(\mathbb{Q})_{\text{tors}} \oplus \mathbb{Z}^r $$
 
 この定理は、楕円曲線の有理点を無限に見つけるためには、有限個の「基底」となる点を見つければ十分であることを意味しており、数論幾何学における金字塔とも言える結果です。[モーデル](https://kenji.blog/p/mordell/)の証明は、[フェルマー](https://kenji.blog/p/fermat/)の「無限降下法」 (Method of infinite descent) を現代的に洗練させたものでした。
 
-その後、1928年にフランスの数学者アンドレ・[ヴェイユ](https://kenji.blog/p/weil/) ([André Weil](https://kenji.blog/p/weil/)) がこの定理を一般の代数体および[アーベル](https://kenji.blog/p/abel/)多様体に拡張したため、現在では **[モーデル](https://kenji.blog/p/mordell/)・[ヴェイユ](https://kenji.blog/p/weil/)の定理** (Mordell-Weil Theorem) と呼ばれることも多いです。
+その後、1928年にフランスの数学者アンドレ・[ヴェイユ](https://kenji.blog/p/weil/) (André Weil) がこの定理を一般の代数体およびアーベル多様体に拡張したため、現在では **モーデル・[ヴェイユ](https://kenji.blog/p/weil/)の定理** (Mordell-Weil Theorem) と呼ばれることも多いです。
 
 ```mermaid
 graph TD
@@ -83,19 +83,19 @@ graph TD
 
 $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
-この予想は60年以上もの間、未解決のままでした。しかし1983年、ドイツの数学者[ゲルト・ファルティングス](https://kenji.blog/p/faltings/) ([Gerd Faltings](https://kenji.blog/p/faltings/)) によってついに証明され、**[ファルティングス](https://kenji.blog/p/faltings/)の定理** (Faltings's Theorem) となりました。この業績により、[ファルティングス](https://kenji.blog/p/faltings/)は1986年にフィールズ賞を受賞しました。
+この予想は60年以上もの間、未解決のままでした。しかし1983年、ドイツの数学者[ゲルト・ファルティングス](https://kenji.blog/p/faltings/) (Gerd Faltings) によってついに証明され、**ファルティングスの定理** (Faltings's Theorem) となりました。この業績により、[ファルティングス](https://kenji.blog/p/faltings/)は1986年にフィールズ賞を受賞しました。
 
-また、[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)の方程式 $x^n + y^n = z^n$ は、$n \ge 4$ のとき種数が 3 以上になるため、[モーデル](https://kenji.blog/p/mordell/)予想（[ファルティングス](https://kenji.blog/p/faltings/)の定理）から、[フェルマー](https://kenji.blog/p/fermat/)方程式の有理数解は各 $n$ に対して高々有限個しか存在しないことが直ちに導かれます。
+また、[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)の方程式 $x^n + y^n = z^n$ は、$n \ge 4$ のとき種数が 3 以上になるため、モーデル予想（ファルティングスの定理）から、[フェルマー](https://kenji.blog/p/fermat/)方程式の有理数解は各 $n$ に対して高々有限個しか存在しないことが直ちに導かれます。
 
 ## 7. [ラマヌジャン](https://kenji.blog/p/ramanujan/)との関わりとモジュラー形式
 
-[モーデル](https://kenji.blog/p/mordell/)の業績は[ディオファントス](https://kenji.blog/p/diophantus/)方程式にとどまりません。彼は天才数学者[シュリニヴァーサ・ラマヌジャン](https://kenji.blog/p/ramanujan/) ([Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/)) の残した未解決問題にも大きな貢献をしました。
+[モーデル](https://kenji.blog/p/mordell/)の業績はディオファントス方程式にとどまりません。彼は天才数学者シュリニヴァーサ・ラマヌジャン ([Srinivasa Ramanujan](https://kenji.blog/p/ramanujan/)) の残した未解決問題にも大きな貢献をしました。
 
 [ラマヌジャン](https://kenji.blog/p/ramanujan/)は、次のように定義される[ラマヌジャン](https://kenji.blog/p/ramanujan/)のタウ関数 $\tau(n)$ について、いくつかの驚くべき性質を予想していました。
 
 $$ \sum_{n=1}^{\infty} \tau(n) q^n = q \prod_{n=1}^{\infty} (1 - q^n)^{24} $$
 
-[ラマヌジャン](https://kenji.blog/p/ramanujan/)は、$\gcd(m, n) = 1$ のとき、 $\tau(mn) = \tau(m)\tau(n)$ となること（乗法性）を予想しました。1917年、[モーデル](https://kenji.blog/p/mordell/)はこの予想を見事に証明しました。彼の証明の手法は、今日では **ヘッケ作用素** (Hecke operators) と呼ばれるモジュラー形式の理論における基本的な道具の先駆けとなるものでした。[モーデル](https://kenji.blog/p/mordell/)のこの発見は、後の数論における保型形式論の発展に極めて重要な役割を果たしました。
+[ラマヌジャン](https://kenji.blog/p/ramanujan/)は、$\gcd(m, n) = 1$ のとき、 $\tau(mn) = \tau(m)\tau(n)$ となること（乗法性）を予想しました。1917年、モーデルはこの予想を見事に証明しました。彼の証明の手法は、今日では **ヘッケ作用素** (Hecke operators) と呼ばれるモジュラー形式の理論における基本的な道具の先駆けとなるものでした。[モーデル](https://kenji.blog/p/mordell/)のこの発見は、後の数論における保型形式論の発展に極めて重要な役割を果たしました。
 
 ## 8. マンチェスター学派の形成と難民支援
 
@@ -135,10 +135,10 @@ graph LR
 2. **モジュラー形式論** : [ラマヌジャン](https://kenji.blog/p/ramanujan/)の予想の証明で用いた手法は、現代のラングランズ・プログラム (Langlands Program) にまで連なる巨大な理論の出発点となりました。
 3. **[ディオファントス](https://kenji.blog/p/diophantus/)方程式の解法** : 彼の具体的なアプローチと多数の論文は、現在でもコンピュータを用いた方程式の解法アルゴリズムの基礎となっています。
 
-[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)が[アンドリュー・ワイルズ](https://kenji.blog/p/wiles/) ([Andrew Wiles](https://kenji.blog/p/wiles/)) によって証明された際にも、その理論的背景には楕円曲線やモジュラー形式という、[モーデル](https://kenji.blog/p/mordell/)が深く関わった概念が不可欠でした。
+[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)がアンドリュー・ワイルズ (Andrew Wiles) によって証明された際にも、その理論的背景には楕円曲線やモジュラー形式という、[モーデル](https://kenji.blog/p/mordell/)が深く関わった概念が不可欠でした。
 
 ## 12. 結論
 
-ルイス・[モーデル](https://kenji.blog/p/mordell/)は、独学の情熱的な青年から、20世紀を代表する数論の巨星へと登り詰めました。彼の名前は **[モーデル](https://kenji.blog/p/mordell/)の定理** や **[モーデル](https://kenji.blog/p/mordell/)予想** という形で永遠に数学の歴史に刻まれています。
+ルイス・[モーデル](https://kenji.blog/p/mordell/)は、独学の情熱的な青年から、20世紀を代表する数論の巨星へと登り詰めました。彼の名前は **モーデルの定理** や **[モーデル](https://kenji.blog/p/mordell/)予想** という形で永遠に数学の歴史に刻まれています。
 
 具体的な問題解決への強いこだわりと、難民数学者を救った温かい人間性。[モーデル](https://kenji.blog/p/mordell/)の生涯と業績は、数学という学問がいかにして発展し、そして人がいかにしてその発展に貢献できるかを示す、素晴らしい模範と言えるでしょう。彼の探求した[ディオファントス](https://kenji.blog/p/diophantus/)方程式の世界は、今もなお多くの数学者たちを魅了し続けています。

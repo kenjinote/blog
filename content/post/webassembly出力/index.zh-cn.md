@@ -139,7 +139,7 @@ Module.onRuntimeInitialized = () => {
 
 ## 5. 基于[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)和`wasm-pack`的方法
 
-[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)为[WebAssembly](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)提供了第一方支持，通过使用`wasm-bindgen`和`wasm-pack`工具，可以实现JavaScript和[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)之间的高度协同。Emscripten采用了“将庞大的C/C++运行时带入浏览器”的方法，而[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)的`wasm-pack`则采用了“只生成最低限度绑定的（JS胶水代码）”的方法。
+[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)为WebAssembly提供了第一方支持，通过使用`wasm-bindgen`和`wasm-pack`工具，可以实现JavaScript和Rust之间的高度协同。Emscripten采用了“将庞大的C/C++运行时带入浏览器”的方法，而[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)的`wasm-pack`则采用了“只生成最低限度绑定的（JS胶水代码）”的方法。
 
 ### [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 实现代码
 

@@ -12,7 +12,7 @@ description: 'وصول "يوم Q" (Q-Day)، حيث تهدد القوة الحس�
 
 ## 1. مقدمة: خطوات عصر ما بعد الكم وأزمة البلوكتشين
 
-منذ ولادة البيتكوين ([Bitcoin](https://kenji.blog/ar/p/cryptocurrency-and-bitcoin/)) على يد ساتوشي ناكاموتو في عام 2009، نمت تقنية البلوكتشين كـ "سجل لامركزي مقاوم للعبث" لتصبح الأساس للأنظمة المالية والتطبيقات حول العالم. يعتمد هذا الأمان القوي على تقنيات التشفير الحديثة: **تشفير المفتاح العام ([Public Key](https://kenji.blog/ar/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/ar/p/cryptocurrency-and-bitcoin/)graphy)** و ** دوال التجزئة المشفرة ([Crypto](https://kenji.blog/ar/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/ar/p/modern-cryptography-public-key-hash-signature/)s)**.
+منذ ولادة البيتكوين ([Bitcoin](https://kenji.blog/ar/p/cryptocurrency-and-bitcoin/)) على يد ساتوشي ناكاموتو في عام 2009، نمت تقنية البلوكتشين كـ "سجل لامركزي مقاوم للعبث" لتصبح الأساس للأنظمة المالية والتطبيقات حول العالم. يعتمد هذا الأمان القوي على تقنيات التشفير الحديثة: **تشفير المفتاح العام (Public Key Cryptography)** و ** دوال التجزئة المشفرة (Cryptographic [Hash Function](https://kenji.blog/ar/p/modern-cryptography-public-key-hash-signature/)s)**.
 
 تضمن هذه التقنيات الأمان بناءً على "الصعوبة الحسابية" الرياضية التي تجعل الحواسيب الكلاسيكية (أجهزة الكمبيوتر الشخصية والحواسيب العملاقة التي نستخدمها حاليًا) تستغرق وقتًا يقارب عمر الكون لفك تشفيرها.
 

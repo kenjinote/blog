@@ -13,7 +13,7 @@ tags:
 
 ## 1. 引言：世界上最著名的数学之谜
 
-在数学的历史中，存在着一个最令人们着迷，同时也最让人们痛苦的问题。那就是 **[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)** （[Fermat's Last Theorem](https://kenji.blog/zh-cn/p/fermats-last-theorem/)）。17世纪法国的法官兼业余数学家[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)，在阅读他喜爱的[丢番图](https://kenji.blog/zh-cn/p/diophantus/)《算术》一书的空白处写下了一段简短的笔记，由此拉开了一场长达360年的宏大数学戏剧的序幕。
+在数学的历史中，存在着一个最令人们着迷，同时也最让人们痛苦的问题。那就是 **[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)** （Fermat's Last Theorem）。17世纪法国的法官兼业余数学家皮埃尔·德·费马，在阅读他喜爱的[丢番图](https://kenji.blog/zh-cn/p/diophantus/)《算术》一书的空白处写下了一段简短的笔记，由此拉开了一场长达360年的宏大数学戏剧的序幕。
 
 定理的内容本身非常简单，甚至连初中生都能理解。
 

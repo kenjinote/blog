@@ -50,7 +50,7 @@ xychart-beta
 
 # 2. अत्यधिक चपलता (Agility) पैदा करने वाला आर्किटेक्चर डिज़ाइन
 
-चूंकि बड़ी कंपनियों के सिस्टम "स्थिरता" और "स्केलेबिलिटी" को सर्वोच्च प्राथमिकता मानकर डिज़ाइन किए जाते हैं, इसलिए वे कुबरनेट्स ([Kubernetes](https://kenji.blog/hi/p/kubernetes-k8s-architecture-pod-service-ingress/)) या माइक्रोसर्विस आर्किटेक्चर ([[Microservice](https://kenji.blog/hi/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/hi/p/microservices-architecture-bff-api-gateway/) Architecture) अपनाते हैं। लेकिन, अगर एक सोलो डेवलपर भी ऐसा ही करे, तो उसके सारे संसाधन केवल इंफ्रास्ट्रक्चर के रखरखाव (Ops) में ही खत्म हो जाएंगे।
+चूंकि बड़ी कंपनियों के सिस्टम "स्थिरता" और "स्केलेबिलिटी" को सर्वोच्च प्राथमिकता मानकर डिज़ाइन किए जाते हैं, इसलिए वे कुबरनेट्स ([Kubernetes](https://kenji.blog/hi/p/kubernetes-k8s-architecture-pod-service-ingress/)) या माइक्रोसर्विस आर्किटेक्चर ([Microservices](https://kenji.blog/hi/p/microservices-architecture-bff-api-gateway/) Architecture) अपनाते हैं। लेकिन, अगर एक सोलो डेवलपर भी ऐसा ही करे, तो उसके सारे संसाधन केवल इंफ्रास्ट्रक्चर के रखरखाव (Ops) में ही खत्म हो जाएंगे।
 
 व्यक्तिगत डेवलपर्स के टेक स्टैक (tech stack) का मूल मंत्र है **"No-Ops" (जीरो ऑपरेशन्स)** । सर्वरलेस आर्किटेक्चर ([Serverless](https://kenji.blog/hi/p/serverless-architecture-aws-lambda-cold-start/) Architecture) का अधिकतम उपयोग करें और केवल बिज़नेस लॉजिक लिखने पर ध्यान केंद्रित करें।
 

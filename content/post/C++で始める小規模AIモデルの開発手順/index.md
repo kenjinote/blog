@@ -12,7 +12,7 @@ description: 'C++とggmlを用いて、TinyLLaMAのような小規模AIモデル
 
 # [C++で始める小規模AIモデル（TinyLLaMAなど）の開発手順](https://kenji.blog/p/cpp-small-ai-model-tinyllama-dev-guide/)
 
-近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）のローカル環境での実行に対する関心が急速に高まっています。特に、TinyLLaMA（1.1Bパラメータ）のような小規模モデルは、限られたリソースのエッジデバイスや一般的なノートPC（Windows環境を含む）上でも実用的な速度で推論が可能です。PythonとPyTorchを用いた開発が主流である一方で、究極のパフォーマンスと省メモリ性を追求する場合、C++と[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ベースのテンソルライブラリである「ggml」の組み合わせがデファクトスタンダードとなっています。
+近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（LLM）のローカル環境での実行に対する関心が急速に高まっています。特に、TinyLLaMA（1.1Bパラメータ）のような小規模モデルは、限られたリソースのエッジデバイスや一般的なノートPC（Windows環境を含む）上でも実用的な速度で推論が可能です。PythonとPyTorchを用いた開発が主流である一方で、究極のパフォーマンスと省メモリ性を追求する場合、C++と[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ベースのテンソルライブラリである「ggml」の組み合わせがデファクトスタンダードとなっています。
 
 本記事では、C++を用いてTinyLLaMAをロードし、テキスト生成を行うための推論エンジンをゼロから構築（あるいは既存のllama.cppの内部構造を深く理解）するための非常に詳細な開発手順を解説します。
 

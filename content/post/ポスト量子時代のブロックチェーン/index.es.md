@@ -12,7 +12,7 @@ description: 'La llegada del "Q-Day", donde el increíble poder computacional de
 
 ## 1. Introducción: Los pasos de la era post-cuántica y la crisis del blockchain
 
-Desde el nacimiento de [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) en 2009 por Satoshi Nakamoto, la tecnología blockchain ha crecido hasta convertirse en la base de sistemas financieros y aplicaciones en todo el mundo como un "libro mayor descentralizado e inalterable". Esta robusta seguridad está respaldada por tecnologías criptográficas modernas: **Criptografía de Clave Pública ([Public Key](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy)** y **Funciones Hash Criptográficas ([Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)s)**.
+Desde el nacimiento de [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) en 2009 por Satoshi Nakamoto, la tecnología blockchain ha crecido hasta convertirse en la base de sistemas financieros y aplicaciones en todo el mundo como un "libro mayor descentralizado e inalterable". Esta robusta seguridad está respaldada por tecnologías criptográficas modernas: **Criptografía de Clave Pública (Public Key Cryptography)** y **Funciones Hash Criptográficas (Cryptographic [Hash Function](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)s)**.
 
 Estas tecnologías criptográficas garantizan la seguridad basándose en la "dificultad computacional" matemática, lo que significa que una computadora clásica (como las PC o supercomputadoras que usamos hoy en día) tardaría la edad del universo en descifrarlas.
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. Fundamentos y dificultad computacional de la Criptografía de Curva Elíptica (ECDSA)
 
-Muchas blockchains, incluidas [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) y Ethereum, adoptan el **Algoritmo de Firma Digital de Curva Elíptica (ECDSA: Elliptic Curve [Digital Signature](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) Algorithm)** como su algoritmo de firma digital. Específicamente, [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) utiliza la curva elíptica con el parámetro `secp256k1`.
+Muchas blockchains, incluidas [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) y Ethereum, adoptan el **Algoritmo de Firma Digital de Curva Elíptica (ECDSA: Elliptic Curve Digital Signature Algorithm)** como su algoritmo de firma digital. Específicamente, [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) utiliza la curva elíptica con el parámetro `secp256k1`.
 
 La seguridad de la criptografía de curva elíptica se basa en la dificultad computacional del **Problema del Logaritmo Discreto de Curva Elíptica (ECDLP: Elliptic Curve Discrete Logarithm Problem)**.
 Una curva elíptica se define por una ecuación en la forma normal de Weierstrass de la siguiente manera:

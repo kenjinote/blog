@@ -210,7 +210,7 @@ let result = divide(10.0, 2.0).and_then(|res| divide(res, 2.0));
 
 Tidak semua pola GoF telah punah. Pola-pola yang bekerja di batas-batas arsitektur masih sangat penting hingga saat ini.
 
-1. **Facade**: Konsep menyediakan antarmuka sederhana untuk subsistem yang kompleks telah berkembang menjadi [API Gateway](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/) ([BFF](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/): [Backend for Frontend](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)) dalam arsitektur layanan mikro.
+1. **Facade**: Konsep menyediakan antarmuka sederhana untuk subsistem yang kompleks telah berkembang menjadi [API Gateway](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/) (BFF: [Backend for Frontend](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)) dalam arsitektur layanan mikro.
 2. **Adapter**: Berperan penting dalam menjaga *loose coupling* sistem sebagai "port dan adapter" dalam Clean Architecture / Hexagonal Architecture, serta untuk integrasi dengan sistem eksternal.
 3. **Decorator**: Dalam Python dan TypeScript, ia telah disublimasikan menjadi fitur bahasa sebagai fasilitas pemrograman meta berbasis anotasi seperti `@Decorator`.
 

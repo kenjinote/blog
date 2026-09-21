@@ -11,7 +11,7 @@ tags:
 slug: "godels-incompleteness-theorems"
 ---
 
-"الرياضيات صحيحة بشكل مطلق" ── لعل الجميع فكر في ذلك ولو لمرة واحدة. ولكن في عام 1931، نشر عالم الرياضيات الشاب [كورت غودل](https://kenji.blog/ar/p/godel/) ([Kurt Gödel](https://kenji.blog/ar/p/godel/)) ورقة بحثية قلبت هذا المفهوم الشائع رأسًا على عقب. إنها **[مبرهنات عدم الاكتمال لغودل](https://kenji.blog/ar/p/godels-incompleteness-theorems/)** ([Gödel's Incompleteness Theorems](https://kenji.blog/ar/p/godels-incompleteness-theorems/)).
+"الرياضيات صحيحة بشكل مطلق" ── لعل الجميع فكر في ذلك ولو لمرة واحدة. ولكن في عام 1931، نشر عالم الرياضيات الشاب [كورت غودل](https://kenji.blog/ar/p/godel/) (Kurt Gödel) ورقة بحثية قلبت هذا المفهوم الشائع رأسًا على عقب. إنها **مبرهنات عدم الاكتمال لغودل** ([Gödel's Incompleteness Theorems](https://kenji.blog/ar/p/godels-incompleteness-theorems/)).
 
 في هذه المقالة، سنشرح بالتفصيل هذه المبرهنة الصادمة التي تنص على وجود "حقيقة لا يمكن إثباتها أبدًا"، مع توضيح معناها وآلية إثباتها باستخدام الأمثلة العملية والرسوم التوضيحية.
 
@@ -136,7 +136,7 @@ graph TD
 
 ## 7. تمرير العصا إلى آلة تورينج: فجر علوم الكمبيوتر
 
-تجاوز تأثير مبرهنات غودل حدود الرياضيات. ففي عام 1936، قام عالم الرياضيات البريطاني [آلان تورينج](https://kenji.blog/ar/p/turing/) ([Alan Turing](https://kenji.blog/ar/p/turing/)) بتحويل مفهوم غودل عن "النظام الشكلي" إلى عملية حسابية فيزيائية، وابتكر نموذجًا افتراضيًا للكمبيوتر سُمي بـ "آلة تورينج" ([Turing Machine](https://kenji.blog/ar/p/turing-machine-computability/)).
+تجاوز تأثير مبرهنات غودل حدود الرياضيات. ففي عام 1936، قام عالم الرياضيات البريطاني [آلان تورينج](https://kenji.blog/ar/p/turing/) (Alan Turing) بتحويل مفهوم غودل عن "النظام الشكلي" إلى عملية حسابية فيزيائية، وابتكر نموذجًا افتراضيًا للكمبيوتر سُمي بـ "آلة تورينج" ([Turing Machine](https://kenji.blog/ar/p/turing-machine-computability/)).
 
 طبّق تورينج [مبرهنات عدم الاكتمال لغودل](https://kenji.blog/ar/p/godels-incompleteness-theorems/) على عالم الحواسيب، وأثبت أنه "لا توجد خوارزمية شاملة يمكنها التحديد مسبقًا لجميع برامج الكمبيوتر ما إذا كانت حساباتها ستنتهي أم ستستمر إلى الأبد". هذه هي **مشكلة التوقف** ([Halting Problem](https://kenji.blog/ar/p/turing-machine-computability/)) الشهيرة.
 

@@ -25,7 +25,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 في المقابل، تكمن نقطة قوة المطور المستقل في **"نقطة التعادل المنخفضة للغاية"**. فإذا حقق ربحًا ببضعة آلاف من الدولارات شهريًا، فإن ذلك يكفي تمامًا لتأسيس عمل تجاري ناجح كفرد. وهنا تكمن النقطة المثالية لـ "نظرية الذيل الطويل".
 
-## [قانون زيف ([Zipf's Law](https://kenji.blog/ar/p/zipfs-law/))](https://kenji.blog/p/zipfs-law/) وتوزيع السوق
+## [قانون زيف (Zipf's Law)](https://kenji.blog/p/zipfs-law/) وتوزيع السوق
 
 غالبًا ما تتبع العلاقة بين حجم الأسواق وعددها قانون زيف أو قانون باريتو. إذا كان ترتيب السوق هو $k$، وحجم ذلك السوق (إمكانات المبيعات) هو $P(k)$، فيمكن التعبير عنه باستخدام نموذج قانون القوة (Power Law) التالي:
 
@@ -50,7 +50,7 @@ xychart-beta
 
 # 2. تصميم البنية التحتية الذي يولد مرونة هائلة (Agility)
 
-تُصمم أنظمة الشركات الكبرى مع إعطاء الأولوية القصوى لـ "الاستقرار" و "قابلية التوسع"، ولذلك يتم اعتماد تقنيات مثل [Kubernetes](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/) وهياكل الخدمات المصغرة ([[Microservice](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)). ولكن، إذا قام المطور المستقل بنفس الشيء، فستستنفد موارده بمجرد الحفاظ على البنية التحتية وإدارتها (Ops).
+تُصمم أنظمة الشركات الكبرى مع إعطاء الأولوية القصوى لـ "الاستقرار" و "قابلية التوسع"، ولذلك يتم اعتماد تقنيات مثل [Kubernetes](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/) وهياكل الخدمات المصغرة ([Microservices](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)). ولكن، إذا قام المطور المستقل بنفس الشيء، فستستنفد موارده بمجرد الحفاظ على البنية التحتية وإدارتها (Ops).
 
 الكلمة السرية في مجموعة التقنيات (Tech [Stack](https://kenji.blog/ar/p/c-language-pointers-memory-management-stack-heap/)) للمطور المستقل هي **"No-Ops" (صفر عمليات التشغيل)**. حيث يتم الاستفادة من البنية التحتية الخالية من الخوادم ([Serverless](https://kenji.blog/ar/p/serverless-architecture-aws-lambda-cold-start/)) إلى أقصى حد، والتركيز فقط على كتابة منطق العمل (Business Logic).
 

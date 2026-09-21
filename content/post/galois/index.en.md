@@ -8,7 +8,7 @@ categories: ["mathematics", "biography"]
 tags: ["Galois Theory", "Algebra", "Group Theory", "History"]
 ---
 
-In the history of mathematics, few have led a life as dramatic and tragic as [Évariste Galois](https://kenji.blog/en/p/galois/) (1811–1832). This young Frenchman, who lost his life in a duel at the tender age of 20, laid the foundations for a magnificent theory that would fundamentally change subsequent mathematics in a letter written on the eve of his death. In this article, we delve deeply into [Galois](https://kenji.blog/en/p/galois/)'s turbulent life and his greatest legacy, **[Galois Theory](https://kenji.blog/en/p/galois-theory/)**.
+In the history of mathematics, few have led a life as dramatic and tragic as [Évariste Galois](https://kenji.blog/en/p/galois/) (1811–1832). This young Frenchman, who lost his life in a duel at the tender age of 20, laid the foundations for a magnificent theory that would fundamentally change subsequent mathematics in a letter written on the eve of his death. In this article, we delve deeply into Galois's turbulent life and his greatest legacy, **[Galois Theory](https://kenji.blog/en/p/galois-theory/)**.
 
 ## 1. A Turbulent Life: Passion and Frustration
 
@@ -16,7 +16,7 @@ In the history of mathematics, few have led a life as dramatic and tragic as [É
 
 [Évariste Galois](https://kenji.blog/en/p/galois/) was born in 1811 in Bourg-la-Reine, a suburb of Paris. His father was an educated Republican who later served as the town's mayor. Initially educated by his mother, [Galois](https://kenji.blog/en/p/galois/) entered the Lycée Louis-le-Grand in Paris at the age of 12.
 
-School life at the lycée was boring for him, but his life changed completely at the age of 15 when he encountered [Legendre](https://kenji.blog/en/p/legendre/)'s *Éléments de Géométrie*. It is said that [Galois](https://kenji.blog/en/p/galois/) read this difficult book in a matter of days, as if reading a novel. From then on, he ignored normal textbooks and began devouring the papers of the greatest mathematicians of the time, such as [Lagrange](https://kenji.blog/en/p/lagrange/) and [Cauchy](https://kenji.blog/en/p/cauchy/).
+School life at the lycée was boring for him, but his life changed completely at the age of 15 when he encountered [Legendre](https://kenji.blog/en/p/legendre/)'s *Éléments de Géométrie*. It is said that Galois read this difficult book in a matter of days, as if reading a novel. From then on, he ignored normal textbooks and began devouring the papers of the greatest mathematicians of the time, such as Lagrange and [Cauchy](https://kenji.blog/en/p/cauchy/).
 
 ### Challenges and Failures at the École Polytechnique
 
@@ -67,7 +67,7 @@ The core of [Galois Theory](https://kenji.blog/en/p/galois-theory/) lies in show
 - **Field**: A set of numbers where the four basic arithmetic operations (addition, subtraction, multiplication, division) can be performed freely. It represents the expanse of the space containing the coefficients and roots of an equation.
 - **Group**: A collection of symmetries or transformations. It represents the structure of the operations (automorphisms) that permute the roots of an equation.
 
-[Galois](https://kenji.blog/en/p/galois/) proved that there is a one-to-one correspondence ( **[Galois](https://kenji.blog/en/p/galois/) correspondence** ) between the intermediate fields of a field extension containing all roots of an equation (a [Galois](https://kenji.blog/en/p/galois/) extension) and the subgroups of the [Galois](https://kenji.blog/en/p/galois/) group representing the symmetries of that extension.
+[Galois](https://kenji.blog/en/p/galois/) proved that there is a one-to-one correspondence ( **Galois correspondence** ) between the intermediate fields of a field extension containing all roots of an equation (a Galois extension) and the subgroups of the [Galois](https://kenji.blog/en/p/galois/) group representing the symmetries of that extension.
 
 Below is a diagram (Mermaid) illustrating this beautiful correspondence.
 
@@ -100,7 +100,7 @@ As this diagram shows, the field becoming larger (from bottom to top) correspond
 
 ### Conditions for Solvability by Radicals
 
-[Galois](https://kenji.blog/en/p/galois/) characterized the necessary and sufficient condition for an equation to be solved by basic arithmetic operations and radicals (algebraically solvable) as a property of its corresponding [Galois](https://kenji.blog/en/p/galois/) group. Specifically, he showed that an equation being solvable is equivalent to its [Galois](https://kenji.blog/en/p/galois/) group being a **solvable group**.
+[Galois](https://kenji.blog/en/p/galois/) characterized the necessary and sufficient condition for an equation to be solved by basic arithmetic operations and radicals (algebraically solvable) as a property of its corresponding Galois group. Specifically, he showed that an equation being solvable is equivalent to its [Galois](https://kenji.blog/en/p/galois/) group being a **solvable group**.
 
 $$
 \text{Equation is solvable algebraically} \iff \text{[Galois](https://kenji.blog/en/p/galois/) group is a solvable group}
@@ -112,7 +112,7 @@ Thus, the fact that "general equations of degree 5 or higher cannot be solved al
 
 ## 3. [Galois](https://kenji.blog/en/p/galois/)'s Legacy and Impact on Modern Mathematics
 
-After [Galois](https://kenji.blog/en/p/galois/)'s death, his letters were kept by his close friend Chevalier and gradually became known among mathematicians. Then in 1846, French mathematician Joseph [Liouville](https://kenji.blog/en/p/liouville/) organized [Galois](https://kenji.blog/en/p/galois/)'s papers and published them in a mathematical journal with his own commentary, finally bringing [Galois](https://kenji.blog/en/p/galois/)'s theory to light.
+After [Galois](https://kenji.blog/en/p/galois/)'s death, his letters were kept by his close friend Chevalier and gradually became known among mathematicians. Then in 1846, French mathematician Joseph Liouville organized Galois's papers and published them in a mathematical journal with his own commentary, finally bringing [Galois](https://kenji.blog/en/p/galois/)'s theory to light.
 
 The concept of "group" introduced by [Galois](https://kenji.blog/en/p/galois/) subsequently became the foundational language not only for algebra but for all scientific fields, including geometry, topology, and physics (such as particle physics and crystallography). Today, abstract algebra, which studies algebraic systems like "groups, rings, and fields," has become one of the most important pillars of modern mathematics.
 

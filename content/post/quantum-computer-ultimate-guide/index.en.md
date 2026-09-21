@@ -313,7 +313,7 @@ graph TD
     style State fill:#bbf,stroke:#333,stroke-width:4px,stroke-dasharray: 5 5
 ```
 
-The most remarkable property of the Bloch sphere is that "orthogonal states in [Hilbert](https://kenji.blog/en/p/hilbert/) space (states whose inner product is 0) are located at antipodal points (points 180 degrees opposite to each other) in the three-dimensional real space of the Bloch sphere." For example, the state orthogonal to $|0\rangle$ (North Pole, $\theta=0$) is $|1\rangle$ (South Pole, $\theta=\pi$). The inner product calculation $\langle 0 | 1 \rangle = 0$ between mutually orthogonal states in [Hilbert](https://kenji.blog/en/p/hilbert/) space corresponds to an angular separation of $\pi$ (180 degrees) on the Bloch sphere. Because geometric angles are twice the angles in [Hilbert](https://kenji.blog/en/p/hilbert/) space, there is a mathematical necessity for using the half-angle $\theta/2$ in the parameterization.
+The most remarkable property of the Bloch sphere is that "orthogonal states in [Hilbert](https://kenji.blog/en/p/hilbert/) space (states whose inner product is 0) are located at antipodal points (points 180 degrees opposite to each other) in the three-dimensional real space of the Bloch sphere." For example, the state orthogonal to $|0\rangle$ (North Pole, $\theta=0$) is $|1\rangle$ (South Pole, $\theta=\pi$). The inner product calculation $\langle 0 | 1 \rangle = 0$ between mutually orthogonal states in Hilbert space corresponds to an angular separation of $\pi$ (180 degrees) on the Bloch sphere. Because geometric angles are twice the angles in [Hilbert](https://kenji.blog/en/p/hilbert/) space, there is a mathematical necessity for using the half-angle $\theta/2$ in the parameterization.
 
 The coordinates $\mathbf{r} = (x, y, z)$ of this Bloch sphere are rigorously derived as the expectation values of the **Pauli matrices** , which are observables in quantum mechanics. The Pauli matrices, which form the basis for Hermitian operators on two-dimensional systems, are defined as follows:
 
@@ -413,7 +413,7 @@ This axiomatic system is constructed on the stage of complex linear algebra, ext
 
 In this chapter, we will strictly formulate the processes ranging from the description of quantum states and time evolution to "observation," which has sparked the most philosophical debates, without any compromise. Readers will realize how seemingly counter-intuitive quantum phenomena are built upon a consistent and beautiful mathematical structure. This very mathematical structure serves as the direct "language" that describes quantum computer algorithms.
 
-## 3.2 The First Axiom: [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Space ([Hilbert](https://kenji.blog/en/p/hilbert/) Space and [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Vectors)
+## 3.2 The First Axiom: [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Space (Hilbert Space and [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Vectors)
 
 The first axiom in quantum mechanics determines how the "state" of a physical system is represented mathematically.
 
@@ -1822,11 +1822,11 @@ The fact demonstrated in this chapter stands as an exceptionally significant mil
 
 ## 8.1 Introduction: The Mathematics of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and the Difficulty of Prime Factorization
 
-In modern digital society, public-key cryptography is the foundation that ensures secure communication on the Internet. Among them, the most widely used [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography proves its security by relying on a mathematical asymmetry (a property of a one-way function) that "it is computationally extremely difficult to prime factorize a massive composite number." In this chapter, we will rigorously uncover the theoretical structure of "[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)," the definitive method by which quantum computers destroy the very foundation of this [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography, without any compromise.
+In modern digital society, public-key cryptography is the foundation that ensures secure communication on the Internet. Among them, the most widely used [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography proves its security by relying on a mathematical asymmetry (a property of a one-way function) that "it is computationally extremely difficult to prime factorize a massive composite number." In this chapter, we will rigorously uncover the theoretical structure of "Shor's Algorithm," the definitive method by which quantum computers destroy the very foundation of this [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography, without any compromise.
 
 Let's first mathematically formulate the mechanism of RSA cryptography. Key generation in RSA cryptography begins by randomly selecting two massive prime numbers $p$ and $q$ (currently, sizes of 2048 bits or more each are recommended). We calculate the composite number $N = pq$, which is the product of these, and publish this to the public as part of the public key. Next, we calculate Euler's totient function $\phi(N)$. From the properties of prime numbers, this becomes $\phi(N) = (p-1)(q-1)$.
 
-The exponent $e$, which becomes the key for encryption, is chosen such that $1 < e < \phi(N)$ and $\text{gcd}(e, \phi(N)) = 1$ (i.e., coprime to $\phi(N)$). Then, the decryption exponent $d$, which becomes the private key, is calculated to satisfy the congruence $ed \equiv 1 \pmod{\phi(N)}$. This can be easily found in polynomial time using the extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm.
+The exponent $e$, which becomes the key for encryption, is chosen such that $1 < e < \phi(N)$ and $\text{gcd}(e, \phi(N)) = 1$ (i.e., coprime to $\phi(N)$). Then, the decryption exponent $d$, which becomes the private key, is calculated to satisfy the congruence $ed \equiv 1 \pmod{\phi(N)}$. This can be easily found in polynomial time using the extended [Euclide](https://kenji.blog/p/euclid/)an algorithm.
 
 If the plaintext is an integer $M$ (where $0 \le M < N$), encryption is performed by modular exponentiation modulo $N$ as follows:
 
@@ -1854,7 +1854,7 @@ However, the quantum algorithm published by Peter Shor in 1994 overturned this p
 
 The genius insight of Shor's algorithm lies in the fact that "it reduced the prime factorization problem to a period-finding problem, rather than solving it directly." By pure number theory theorems, it is proven that prime factorization is equivalent to a problem called the "Order-Finding Problem". This reduction process itself is entirely a classical algorithm and does not require quantum computation.
 
-Let's follow the procedure for prime factorizing a given composite number $N$. First, choose a random integer $a$ satisfying $1 < a < N$. Using the [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm, calculate the greatest common divisor $\text{gcd}(a, N)$. If this is greater than $1$, fortunately, we have already found a non-trivial factor of $N$, and the computation is complete (however, the probability of this happening by chance for massive numbers like those used in cryptography is astronomically low).
+Let's follow the procedure for prime factorizing a given composite number $N$. First, choose a random integer $a$ satisfying $1 < a < N$. Using the [Euclide](https://kenji.blog/p/euclid/)an algorithm, calculate the greatest common divisor $\text{gcd}(a, N)$. If this is greater than $1$, fortunately, we have already found a non-trivial factor of $N$, and the computation is complete (however, the probability of this happening by chance for massive numbers like those used in cryptography is astronomically low).
 
 If $\text{gcd}(a, N) = 1$, $a$ and $N$ are coprime. Here, we define a modular exponential function as follows:
 
@@ -2192,7 +2192,7 @@ $$
 G = U_s U_w = (2|s\rangle\langle s| - I) (I - 2|w\rangle\langle w|)
 $$
 
-Here, an exquisitely beautiful theorem woven from [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry and linear algebra takes center stage: "The composition of two reflections across two intersecting lines is a pure rotation by twice the angle between the two lines."
+Here, an exquisitely beautiful theorem woven from [Euclide](https://kenji.blog/p/euclid/)an geometry and linear algebra takes center stage: "The composition of two reflections across two intersecting lines is a pure rotation by twice the angle between the two lines."
 
 From the analysis so far, it is guaranteed that no matter which of these operations is applied, the state vector always remains strictly within the two-dimensional real vector space (plane) spanned by $|s^\perp\rangle$ and $|w\rangle$. Let us re-examine the action of each operator within this plane:
 

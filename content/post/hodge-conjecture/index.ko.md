@@ -68,7 +68,7 @@ graph TD
 
 준비가 끝났습니다. 호지 추측의 주장은 매우 단순하면서도 놀랍도록 강력합니다.
 
-> **[호지 추측 ([Hodge Conjecture](https://kenji.blog/ko/p/hodge-conjecture/))](https://kenji.blog/p/hodge-conjecture/)**
+> **[호지 추측 (Hodge Conjecture)](https://kenji.blog/p/hodge-conjecture/)**
 > 복소수체 상의 비특이 사영 대수다양체 X 상의 임의의 호지 류는 대수적 사이클의 유리수 계수 선형 결합에 의해 표현된다.
 
 바꿔 말하면, "위상수학과 복소해석의 관점에서 대수기하학적으로 보일 것 같은 코호몰로지 류 (호지 류) 는, 실제로 대수적인 방정식으로부터 만들어진 도형 (대수적 사이클) 에서 생겨나고 있다"는 것을 주장하고 있습니다.
@@ -106,7 +106,7 @@ sequenceDiagram
 
 호지 추측에는 여러 일반화 및 관련된 추측이 존재합니다.
 
-- **일반화된 호지 추측 (Generalized [Hodge Conjecture](https://kenji.blog/ko/p/hodge-conjecture/))**: 호지 추측을 더욱 일반적인 틀 (예를 들어, 특이점을 가지는 다양체나 열린 다양체 등) 로 확장하려는 시도입니다. [알렉산더 그로텐디크](https://kenji.blog/ko/p/grothendieck/) ([Alexander Grothendieck](https://kenji.blog/ko/p/grothendieck/)) 등에 의해 공식화되었으나, 반례가 발견되는 등 적절한 공식화 자체가 어려운 과제가 되고 있습니다.
+- **일반화된 호지 추측 (Generalized [Hodge Conjecture](https://kenji.blog/ko/p/hodge-conjecture/))**: 호지 추측을 더욱 일반적인 틀 (예를 들어, 특이점을 가지는 다양체나 열린 다양체 등) 로 확장하려는 시도입니다. 알렉산더 그로텐디크 ([Alexander Grothendieck](https://kenji.blog/ko/p/grothendieck/)) 등에 의해 공식화되었으나, 반례가 발견되는 등 적절한 공식화 자체가 어려운 과제가 되고 있습니다.
 - **테이트 추측 (Tate Conjecture)**: 호지 추측의 정수론적 유사물로 알려진 것이 테이트 추측입니다. 복소수체 상의 다양체가 아니라 유한체 상의 다양체에 대해, 에탈 코호몰로지 (Étale Cohomology) 라는 개념을 사용하여 공식화됩니다. 이것 또한 극히 난해한 미해결 문제입니다.
 
 ## 6. 요약 및 향후 전망

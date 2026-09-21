@@ -12,7 +12,7 @@ tags: ["Takakazu Seki", "Wasan", "Zaman Edo", "Sejarah Matematika", "Kalkulus", 
 
 Pada zaman Edo di Jepang, ada seorang pria yang mengangkat matematika yang dikembangkan secara independen yang dikenal sebagai "Wasan" ke tingkat yang belum pernah terjadi sebelumnya. Pria itu adalah **[Takakazu Seki](https://kenji.blog/id/p/seki-takakazu/)** (juga dikenal sebagai Seki Kōwa, sekitar tahun 1640-an - 1708). Dia kemudian dihormati sebagai "Orang Bijak Matematika" (Sansei) dan diposisikan sebagai salah satu tokoh paling penting dalam sejarah matematika Jepang.
 
-Pada periode yang sama di Eropa, [Isaac Newton](https://kenji.blog/id/p/newton/) dan [Gottfried Leibniz](https://kenji.blog/id/p/leibniz/) sedang membangun kalkulus, tetapi [Takakazu Seki](https://kenji.blog/id/p/seki-takakazu/) juga membuat penemuan matematika yang sangat maju secara independen. Dalam artikel ini, kita akan mempelajari episode kehidupannya dan pencapaian matematikanya yang berkelas dunia, beserta latar belakang sejarahnya.
+Pada periode yang sama di Eropa, [Isaac Newton](https://kenji.blog/id/p/newton/) dan Gottfried Leibniz sedang membangun kalkulus, tetapi [Takakazu Seki](https://kenji.blog/id/p/seki-takakazu/) juga membuat penemuan matematika yang sangat maju secara independen. Dalam artikel ini, kita akan mempelajari episode kehidupannya dan pencapaian matematikanya yang berkelas dunia, beserta latar belakang sejarahnya.
 
 # 2. Fajar Wasan dan Matematika Jepang Sebelum Seki
 

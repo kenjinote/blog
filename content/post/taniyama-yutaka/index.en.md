@@ -8,7 +8,7 @@ categories: ["mathematics", "biography"]
 tags: ["Yutaka Taniyama", "Mathematics", "Fermat's Last Theorem", "Taniyama-Shimura Conjecture", "Elliptic Curves", "Modular Forms"]
 ---
 
-# [[Yutaka Taniyama](https://kenji.blog/en/p/taniyama-yutaka/): The Life and Achievements of the Genius Mathematician Who Challenged Unsolved Problems](https://kenji.blog/p/taniyama-yutaka/)
+# [Yutaka Taniyama: The Life and Achievements of the Genius Mathematician Who Challenged Unsolved Problems](https://kenji.blog/p/taniyama-yutaka/)
 
 The proof of **[Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/)** is one of the most dramatic and important developments in modern mathematics. Behind this monumental achievement lies an astonishing conjecture proposed by two Japanese mathematicians. One of them was **[Yutaka Taniyama](https://kenji.blog/en/p/taniyama-yutaka/)** (1927 - 1958), who passed away at a young age. In this article, we delve deeply into the grand vision behind the "Taniyama-Shimura Conjecture" he proposed, and his own turbulent life.
 
@@ -101,7 +101,7 @@ flowchart TD
 
 ## 7. Proof of the Conjecture and the Langlands Program
 
-The person most inspired by this fact was the British mathematician **[Andrew Wiles](https://kenji.blog/en/p/wiles/)**. He had been fascinated by [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) since childhood and resolved to dedicate his life to proving it. After seven years of secret research, he announced in 1993 that he had "proved the Taniyama-Shimura Conjecture for semistable elliptic curves." Although a gap was found in part of the proof, with the help of his former student Richard Taylor, he successfully filled the gap in 1995 and published the complete proof. As a result, the crucial part of the conjecture left behind by Taniyama was proved, and simultaneously, [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) became an eternal truth.
+The person most inspired by this fact was the British mathematician **[Andrew Wiles](https://kenji.blog/en/p/wiles/)**. He had been fascinated by Fermat's Last Theorem since childhood and resolved to dedicate his life to proving it. After seven years of secret research, he announced in 1993 that he had "proved the Taniyama-Shimura Conjecture for semistable elliptic curves." Although a gap was found in part of the proof, with the help of his former student Richard Taylor, he successfully filled the gap in 1995 and published the complete proof. As a result, the crucial part of the conjecture left behind by Taniyama was proved, and simultaneously, [Fermat's Last Theorem](https://kenji.blog/en/p/fermats-last-theorem/) became an eternal truth.
 
 Subsequently, through further efforts by Christophe Breuil, Brian Conrad, Fred Diamond, and Richard Taylor, the Taniyama-Shimura Conjecture was completely proved for all elliptic curves in 2001. Today, this theorem is known as the "Modularity Theorem."
 

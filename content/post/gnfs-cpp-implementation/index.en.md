@@ -270,7 +270,7 @@ $X^2 - Y^2 \equiv 0 \pmod N$
 In other words, $(X-Y)(X+Y)$ becomes a multiple of $N$.
 
 If $X \not\equiv \pm Y \pmod N$ (a non-trivial solution), then between $(X-Y)$ and $N$, there exists a "common divisor greater than 1 and less than $N$".
-Here, if we compute **$\gcd(X-Y, N)$** using the [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm, the prime factors of $N$ can be easily found.
+Here, if we compute **$\gcd(X-Y, N)$** using the [Euclide](https://kenji.blog/p/euclid/)an algorithm, the prime factors of $N$ can be easily found.
 
 However, finding these $X$ and $Y$ is like looking for a needle in a desert. Thus, GNFS takes the genius approach of creating **two worlds**, the "real integer world" and the "algebraic field of polynomials world", and distributing the computation.
 

@@ -24,7 +24,7 @@ Penciptaannya tentang "Teori Himpunan" telah menjadi fondasi dari setiap bidang 
 
 [Georg Cantor](https://kenji.blog/id/p/cantor/) lahir pada tahun 1845 di St. Petersburg, Rusia. Ayahnya adalah seorang saudagar kaya dari Denmark, dan ibunya adalah seorang musisi Rusia. Menunjukkan bakat luar biasa dalam matematika sejak usia dini, ia akhirnya pindah ke Jerman dan belajar matematika di Universitas Berlin.
 
-Di Universitas Berlin, ia dibimbing oleh tokoh-tokoh terkemuka dunia matematika pada masa itu, **[Karl Weierstrass](https://kenji.blog/id/p/weierstrass/)** dan **Leopold [Kronecker](https://kenji.blog/id/p/kronecker/)**. [Kronecker](https://kenji.blog/id/p/kronecker/) secara khusus kelak akan menjadi penentang terbesar Cantor.
+Di Universitas Berlin, ia dibimbing oleh tokoh-tokoh terkemuka dunia matematika pada masa itu, **[Karl Weierstrass](https://kenji.blog/id/p/weierstrass/)** dan **Leopold Kronecker**. [Kronecker](https://kenji.blog/id/p/kronecker/) secara khusus kelak akan menjadi penentang terbesar Cantor.
 
 ### Pencarian Ketakterhinggaan dan Konflik dengan [Kronecker](https://kenji.blog/id/p/kronecker/)
 

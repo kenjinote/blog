@@ -212,7 +212,7 @@ reqwest = "0.11" # <- アップデートが必要な場合はワンクリック�
 
 ### ⑥ Error Lens
 
-`Error Lens` は、C++の長いテンプレートエラーや、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の厳密な[借用チェッカー](https://kenji.blog/p/memory-management-garbage-collection/)（[Borrow Checker](https://kenji.blog/p/memory-management-garbage-collection/)）のエラーを、エディタの該当行の右側に直接インラインでハイライト表示する画期的な拡張機能です。
+`Error Lens` は、C++の長いテンプレートエラーや、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の厳密な借用チェッカー（[Borrow Checker](https://kenji.blog/p/memory-management-garbage-collection/)）のエラーを、エディタの該当行の右側に直接インラインでハイライト表示する画期的な拡張機能です。
 
 通常、VSCodeでエラーの詳細を確認するには、画面下部の「問題（Problems）」パネルを開くか、テキスト上の赤い波線に正確にマウスカーソルを合わせてホバーポップアップを待つ必要があります。しかし、この操作は認知負荷を高め、コーディングのフロー状態を阻害します。
 

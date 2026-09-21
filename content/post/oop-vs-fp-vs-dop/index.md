@@ -10,7 +10,7 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 [プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の進化の歴史は、複雑性との戦いの歴史でもあります。ソフトウェアが大規模化するにつれて、[状態管理](https://kenji.blog/p/state-management-history-future/)やパフォーマンス、保守性の壁に直面し、それらを乗り越えるための様々な **プログラミングパラダイム** が提唱されてきました。
 
-本記事では、現代のソフトウェア開発において主流となっている **[オブジェクト指向](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)プログラミング** （[OOP](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)）、数学的な堅牢性を持つ **[関数型プログラミング](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)** （FP）、そしてパフォーマンスとデータの分離に焦点を当てた **データ指向プログラミング** （DOP / DOD）について、それぞれの思想、強み、そして **限界** を深掘りします。さらに、現代の強力な言語（[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)やTypeScriptなど）がこれらをどう **融合** させているのかを解説します。
+本記事では、現代のソフトウェア開発において主流となっている **[オブジェクト指向](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)プログラミング** （OOP）、数学的な堅牢性を持つ **関数型プログラミング** （FP）、そしてパフォーマンスとデータの分離に焦点を当てた **データ指向プログラミング** （DOP / DOD）について、それぞれの思想、強み、そして **限界** を深掘りします。さらに、現代の強力な言語（[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)やTypeScriptなど）がこれらをどう **融合** させているのかを解説します。
 
 ---
 
@@ -130,7 +130,7 @@ $$ S' = f(S, A) $$
 
 関数型パラダイムにも限界はあります。コンピュータは本質的に状態を持つ機械（フォン・ノイマン型アーキテクチャ）であり、純粋なFPはCPUの動作原理から乖離しています。
 
-[不変性](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)を保つためのメモリ割り当て（[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)への負荷）や、I/O（画面出力、データベース書き込み）のような「どうしても避けられない副作用」を扱うための[モナド](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)など、概念的な学習コストが高く、時にパフォーマンスのボトルネックとなります。
+[不変性](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)を保つためのメモリ割り当て（ガベージコレクションへの負荷）や、I/O（画面出力、データベース書き込み）のような「どうしても避けられない副作用」を扱うための[モナド](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)など、概念的な学習コストが高く、時にパフォーマンスのボトルネックとなります。
 
 ---
 
@@ -200,7 +200,7 @@ graph TD
 
 ## 5. 現代における最適解：パラダイムの「融合」
 
-今日、これらの中の「唯一の正解」を選ぶことはナンセンスとされています。モダンな[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)（[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)、TypeScript、Scala、[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)など）は、これらのパラダイムの **良いとこ取り** を行っています。
+今日、これらの中の「唯一の正解」を選ぶことはナンセンスとされています。モダンな[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)（Rust、TypeScript、Scala、[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)など）は、これらのパラダイムの **良いとこ取り** を行っています。
 
 ### 5.1 [Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)が示す究極の融合
 

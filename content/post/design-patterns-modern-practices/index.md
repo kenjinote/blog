@@ -16,9 +16,9 @@ tags:
 
 ## 1. はじめに：GoFの呪縛と解放
 
-1994年、ソフトウェア工学の歴史において記念碑的な書籍『[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)における再利用のための[デザインパターン](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)』（通称： **GoF** 本）が出版されました。この本は、当時のC++やSmalltalkといった言語を用いた[オブジェクト指向](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)設計のベストプラクティスを23のパターンとしてカタログ化し、世界中の開発者に共通の語彙を提供しました。
+1994年、ソフトウェア工学の歴史において記念碑的な書籍『[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)における再利用のためのデザインパターン』（通称： **GoF** 本）が出版されました。この本は、当時のC++やSmalltalkといった言語を用いた[オブジェクト指向](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)設計のベストプラクティスを23のパターンとしてカタログ化し、世界中の開発者に共通の語彙を提供しました。
 
-しかし、現在では **「GoFパターンは時代遅れである」** という主張を耳にすることが増えています。その背景には、[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の進化、[関数型プログラミング](https://kenji.blog/p/oop-vs-fp-vs-dop/)（FP）のパラダイムの普及、そしてクラウドネイティブな[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)の台頭があります。
+しかし、現在では **「GoFパターンは時代遅れである」** という主張を耳にすることが増えています。その背景には、[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の進化、関数型プログラミング（FP）のパラダイムの普及、そしてクラウドネイティブな[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)の台頭があります。
 
 本記事では、現代のソフトウェア開発において GoF パターンがどのような立ち位置にあるのか、そして現代のベストプラクティスとは何なのかを、コード例と図解を交えながら深く掘り下げます。
 
@@ -210,7 +210,7 @@ let result = divide(10.0, 2.0).and_then(|res| divide(res, 2.0));
 
 すべてのGoFパターンが死滅したわけではありません。アーキテクチャの境界で活躍するパターンは、今でも極めて重要です。
 
-1. **Facade（ファサード）**: 複雑なサブシステムに対するシンプルなインターフェースを提供する概念は、[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)アーキテクチャにおける[API Gateway](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)（[BFF](https://kenji.blog/p/microservices-architecture-bff-api-gateway/): [Backend for Frontend](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)）としてスケールアップしています。
+1. **Facade（ファサード）**: 複雑なサブシステムに対するシンプルなインターフェースを提供する概念は、[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)アーキテクチャにおけるAPI Gateway（BFF: [Backend for Frontend](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)）としてスケールアップしています。
 2. **Adapter（アダプター）**: 外部システムとの統合や、クリーンアーキテクチャ・ヘキサゴナルアーキテクチャにおける「ポートとアダプター」として、システムを疎結合に保つための要となっています。
 3. **Decorator（デコレータ）**: PythonやTypeScriptにおいて、アノテーションベースのメタプログラミング機能 `@Decorator` として言語機能に昇華されました。
 

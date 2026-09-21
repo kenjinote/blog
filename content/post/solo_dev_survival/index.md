@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # 序論：巨人たちに挑む「持たざる者」の戦い方
 
-ソフトウェア開発の歴史において、かつてないほど個人開発者（インディーデベロッパー）にとって有利な時代が到来しています。AWSやGCPといったクラウドインフラの民主化、VercelやSupabaseをはじめとするBaaS（Backend as a [Service](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)）の台頭、そして何より[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化によるコーディングの自動化。これら全てが、個人が「巨人」たる大手テック企業と真っ向から勝負できる土壌を作り上げました。
+ソフトウェア開発の歴史において、かつてないほど個人開発者（インディーデベロッパー）にとって有利な時代が到来しています。AWSやGCPといったクラウドインフラの民主化、VercelやSupabaseをはじめとするBaaS（Backend as a [Service](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)）の台頭、そして何よりLLM（[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化によるコーディングの自動化。これら全てが、個人が「巨人」たる大手テック企業と真っ向から勝負できる土壌を作り上げました。
 
 しかし、技術的リソースがフラットになったからといって、大手企業と同じ戦略をとって勝てるわけではありません。資本力、マーケティング力、そしてブランド力において、個人は圧倒的に不利です。個人開発者が生き残り、そして勝つためには、独自の「サバイバル戦略」が不可欠です。
 
@@ -77,7 +77,7 @@ flowchart TD
     end
 ```
 
-大企業の[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)では、新しい機能を追加するために複数チーム間の調整とDevOpsのデプロイ[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)整備が必要です。一方、個人の[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（例：Next.js + Supabase + Vercel）では、`git push` ひとつでグローバルエッジネットワークにデプロイされ、DBのプロビジョニングも不要です。
+大企業の[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)では、新しい機能を追加するために複数チーム間の調整とDevOpsのデプロイパイプライン整備が必要です。一方、個人の[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（例：Next.js + Supabase + Vercel）では、`git push` ひとつでグローバルエッジネットワークにデプロイされ、DBのプロビジョニングも不要です。
 
 ## [サーバーレス](https://kenji.blog/p/serverless-architecture-aws-lambda-cold-start/)とエッジコンピューティングの活用
 

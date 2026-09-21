@@ -66,7 +66,7 @@ $$
 
 ## 4. Auswirkungen auf Philosophie und Wissenschaft
 
-[Descartes](https://kenji.blog/de/p/descartes/)' analytische Geometrie wurde zu einer unverzichtbaren Grundlage für die spätere Entwicklung von Mathematik und Physik. Man kann sagen, dass die Erschaffung der Infinitesimalrechnung durch [Isaac Newton](https://kenji.blog/de/p/newton/) und [Gottfried Leibniz](https://kenji.blog/de/p/leibniz/) nur wegen der Bühne möglich war, die das kartesische Koordinatensystem bot.
+[Descartes](https://kenji.blog/de/p/descartes/)' analytische Geometrie wurde zu einer unverzichtbaren Grundlage für die spätere Entwicklung von Mathematik und Physik. Man kann sagen, dass die Erschaffung der Infinitesimalrechnung durch Isaac Newton und [Gottfried Leibniz](https://kenji.blog/de/p/leibniz/) nur wegen der Bühne möglich war, die das kartesische Koordinatensystem bot.
 
 Darüber hinaus begründete sein "methodischer Zweifel" in der Philosophie, ein Ansatz, um nach dem Anzweifeln von allem sichere Wahrheiten zu finden, den Geist des Rationalismus, der als Grundlage der wissenschaftlichen Forschung dient.
 

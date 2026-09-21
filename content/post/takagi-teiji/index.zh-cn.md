@@ -109,7 +109,7 @@ graph TD
 - **《初等数论讲义》** ：一本从数论基础一直讲解到高斯互反律的教科书。
 - **《近世数学史谈》** ：一部生动描绘了19世纪数学家群像的历史书。它传递了数学发展的戏剧性。
 
-他播下的种子，传承给了[小平邦彦](https://kenji.blog/zh-cn/p/kodaira-kunihiko/)、[伊藤清](https://kenji.blog/zh-cn/p/ito-kiyosi/)，乃至[志村五郎](https://kenji.blog/zh-cn/p/shimura-goro/)和[谷山丰](https://kenji.blog/zh-cn/p/taniyama-yutaka/)等后来在世界上大放异彩的日本数学家们。
+他播下的种子，传承给了[小平邦彦](https://kenji.blog/zh-cn/p/kodaira-kunihiko/)、伊藤清，乃至志村五郎和[谷山丰](https://kenji.blog/zh-cn/p/taniyama-yutaka/)等后来在世界上大放异彩的日本数学家们。
 
 ## 结语
 

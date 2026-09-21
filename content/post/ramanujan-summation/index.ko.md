@@ -25,7 +25,7 @@ $$
 
 양의 정수를 무한히 더하고 있는데 어째서인지 **음의 분수** 가 되어버리는 것입니다. 이 직관에 반하는 결과는 인도의 천재 수학자 [스리니바사 라마누잔](https://kenji.blog/ko/p/ramanujan/)([Srinivasa Ramanujan](https://kenji.blog/ko/p/ramanujan/))이 영국의 수학자 G.H. 하디에게 보낸 편지에서 언급한 것으로 유명해졌습니다.
 
-이 기사에서는 이 「[라마누잔합 ([Ramanujan Summation](https://kenji.blog/ko/p/ramanujan-summation/))](https://kenji.blog/p/ramanujan-summation/)」이라고 불리는 기법에 대해, 어떻게 해서 이 기묘한 값이 도출되는지, 그리고 그것이 현실 세계의 물리 현상과 어떻게 연결되어 있는지 해설합니다.
+이 기사에서는 이 「[라마누잔합 (Ramanujan Summation)](https://kenji.blog/p/ramanujan-summation/)」이라고 불리는 기법에 대해, 어떻게 해서 이 기묘한 값이 도출되는지, 그리고 그것이 현실 세계의 물리 현상과 어떻게 연결되어 있는지 해설합니다.
 
 ---
 

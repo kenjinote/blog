@@ -14,7 +14,7 @@ description: '量子コンピュータの台頭によって現代の通信イン
 
 しかし、「量子コンピュータ」の登場によって、この安全性が根底から覆される可能性が指摘されています。メディアでは「量子コンピュータが完成すれば、世界中のパスワードや暗号が数秒で解読されてしまう」といったセンセーショナルな見出しが躍ることもあります。果たして、それは本当なのでしょうか？
 
-本記事では、古典的な暗号解読手法であるGNFS（一般数体ふるい法）と、量子コンピュータを用いた暗号解読アルゴリズムの決定版である「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)（[Shor's Algorithm](https://kenji.blog/p/quantum-computing-shors-algorithm/)）」の仕組みを深く掘り下げます。量子フーリエ変換や周期発見といった高度な概念を分かりやすく解説し、現在のNISQ（Noisy Intermediate-Scale Quantum）時代における量子ハードウェアの現状と、実際に[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)-2048を破るために必要なハードルについて詳細に検証していきます。
+本記事では、古典的な暗号解読手法であるGNFS（一般数体ふるい法）と、量子コンピュータを用いた暗号解読アルゴリズムの決定版である「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)（Shor's Algorithm）」の仕組みを深く掘り下げます。量子フーリエ変換や周期発見といった高度な概念を分かりやすく解説し、現在のNISQ（Noisy Intermediate-Scale Quantum）時代における量子ハードウェアの現状と、実際に[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)-2048を破るために必要なハードルについて詳細に検証していきます。
 
 ---
 
@@ -79,7 +79,7 @@ $ a^r \equiv 1 \pmod N $
 
 もしこの周期 $ r $ が見つかり、かつ $ r $ が偶数であれば、$ a^r - 1 \equiv 0 \pmod N $ となり、因数分解の公式を用いて
 $ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $
-と変形できます。ここから、[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)を使って $ N $ と $ a^{r/2} \pm 1 $ の最大公約数を計算することで、$ N $ の素因数が極めて高い確率で得られます。
+と変形できます。ここから、[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)を使って $ N $ と $ a^{r/2} \pm 1 $ の最大公約数を計算することで、$ N $ の素因数が極めて高い確率で得られます。
 
 古典コンピュータで周期 $ r $ を見つけるためには、結局のところ指数関数的なステップが必要となり高速化できません。しかし、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)ならばこの周期 $ r $ を一瞬で（多項式時間で）見つけることができるのです。
 

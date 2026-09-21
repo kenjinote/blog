@@ -18,7 +18,7 @@ tags:
 
 ## 1. 導入：現代数論の巨人
 
-[ゲルト・ファルティングス](https://kenji.blog/p/faltings/) ([Gerd Faltings](https://kenji.blog/p/faltings/)) は、20世紀後半から21世紀にかけての数学界において、最も深く、そして最も影響力のある数論幾何学者の一人として広く認知されています。特に、1983年に彼が達成した **[モーデル](https://kenji.blog/p/mordell/)予想** (Mordell Conjecture) の証明は、数論と代数幾何学の歴史において輝かしい金字塔となっています。本記事では、彼の生涯、独特の数学的アプローチ、そして彼が数学界にもたらした革新的な業績について、詳しく解説していきます。
+[ゲルト・ファルティングス](https://kenji.blog/p/faltings/) (Gerd Faltings) は、20世紀後半から21世紀にかけての数学界において、最も深く、そして最も影響力のある数論幾何学者の一人として広く認知されています。特に、1983年に彼が達成した **[モーデル](https://kenji.blog/p/mordell/)予想** (Mordell Conjecture) の証明は、数論と代数幾何学の歴史において輝かしい金字塔となっています。本記事では、彼の生涯、独特の数学的アプローチ、そして彼が数学界にもたらした革新的な業績について、詳しく解説していきます。
 
 ## 2. 生い立ちと初期の経歴
 
@@ -28,7 +28,7 @@ tags:
 
 ## 3. 歴史的偉業：[モーデル](https://kenji.blog/p/mordell/)予想の解決
 
-[ファルティングス](https://kenji.blog/p/faltings/)の名前を数学の歴史に永遠に刻み込むことになったのは、なんといっても **[モーデル](https://kenji.blog/p/mordell/)予想** の解決です。ルイス・[モーデル](https://kenji.blog/p/mordell/) ([Louis Mordell](https://kenji.blog/p/mordell/)) によって1922年に提唱されたこの予想は、[ディオファントス](https://kenji.blog/p/diophantus/)方程式の有理数解の数に関する非常に深遠な問題でした。
+[ファルティングス](https://kenji.blog/p/faltings/)の名前を数学の歴史に永遠に刻み込むことになったのは、なんといっても **モーデル予想** の解決です。ルイス・モーデル (Louis Mordell) によって1922年に提唱されたこの予想は、[ディオファントス](https://kenji.blog/p/diophantus/)方程式の有理数解の数に関する非常に深遠な問題でした。
 
 予想の内容は以下の通りです：
 
@@ -36,7 +36,7 @@ tags:
 
 この予想は、[ピタゴラス](https://kenji.blog/p/pythagoras/)の定理や[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)などとも深く関連しており、長年にわたって多くの天才数学者たちが挑んでは敗れ去ってきた難問でした。
 
-[ファルティングス](https://kenji.blog/p/faltings/)は、[アレクサンドル・グロタンディーク](https://kenji.blog/p/grothendieck/) ([Alexander Grothendieck](https://kenji.blog/p/grothendieck/)) が築き上げたスキーム理論やエタール・コホモロジーといった巨大な代数幾何学の機械を巧みに操り、さらにアラケロフ幾何学 (Arakelov geometry) と呼ばれる新たな枠組みを導入することで、この問題にアタックしました。
+[ファルティングス](https://kenji.blog/p/faltings/)は、アレクサンドル・グロタンディーク ([Alexander Grothendieck](https://kenji.blog/p/grothendieck/)) が築き上げたスキーム理論やエタール・コホモロジーといった巨大な代数幾何学の機械を巧みに操り、さらにアラケロフ幾何学 (Arakelov geometry) と呼ばれる新たな枠組みを導入することで、この問題にアタックしました。
 
 彼の証明の論理構造は非常に複雑ですが、核となるアイデアは以下の3つの段階（予想の証明）に分けられます。
 
@@ -59,7 +59,7 @@ $$ |C(K)| < \infty \quad \text{ただし } g(C) \ge 2 $$
 
 [モーデル](https://kenji.blog/p/mordell/)予想の証明において決定的な役割を果たしたのが、アラケロフ幾何学の発展です。スレン・アラケロフ (Suren Arakelov) によって創始されたこの理論は、代数体の整数環上のスキームに対して、無限素点（[アルキメデス](https://kenji.blog/p/archimedes/)付値）での解析的な情報を組み込むという画期的なものでした。
 
-[ファルティングス](https://kenji.blog/p/faltings/)は、このアラケロフ幾何学を[アーベル](https://kenji.blog/p/abel/)多様体上の交差理論に応用し、現在 **[ファルティングス](https://kenji.blog/p/faltings/)の高さ** (Faltings height) と呼ばれる概念を導入しました。これは、[アーベル](https://kenji.blog/p/abel/)多様体の数論的な「複雑さ」を測る尺度であり、有限性定理を証明するための鍵となりました。
+[ファルティングス](https://kenji.blog/p/faltings/)は、このアラケロフ幾何学をアーベル多様体上の交差理論に応用し、現在 **ファルティングスの高さ** (Faltings height) と呼ばれる概念を導入しました。これは、[アーベル](https://kenji.blog/p/abel/)多様体の数論的な「複雑さ」を測る尺度であり、有限性定理を証明するための鍵となりました。
 
 ## 5. p進ホッジ理論への絶大な貢献
 

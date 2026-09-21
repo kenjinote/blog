@@ -63,7 +63,7 @@ graph TD
 
 ## 3. مبرهنة مورديل والرتبة
 
-في عام 1922، أثبت [لويس مورديل](https://kenji.blog/ar/p/mordell/) ([Louis Mordell](https://kenji.blog/ar/p/mordell/)) مبرهنة حاسمة حول بنية زمرة النقاط الجذرية $E(\mathbb{Q})$. لاحقًا، قام [أندريه فايل](https://kenji.blog/ar/p/weil/) ([André Weil](https://kenji.blog/ar/p/weil/)) بتوسيعها لتشمل حقول الأعداد العادية والتنويعات الأبيلية، وتُعرف الآن باسم مبرهنة مورديل-فايل.
+في عام 1922، أثبت [لويس مورديل](https://kenji.blog/ar/p/mordell/) (Louis Mordell) مبرهنة حاسمة حول بنية زمرة النقاط الجذرية $E(\mathbb{Q})$. لاحقًا، قام أندريه فايل ([André Weil](https://kenji.blog/ar/p/weil/)) بتوسيعها لتشمل حقول الأعداد العادية والتنويعات الأبيلية، وتُعرف الآن باسم مبرهنة مورديل-فايل.
 
 ### 3.1. مبرهنة مورديل (Mordell's Theorem)
 

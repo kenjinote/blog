@@ -42,17 +42,17 @@ graph TD;
 
 ## Historical Background: From Gauss's Conjecture to Proof
 
-The history of the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) dates back to the late 18th century. The 15-year-old genius mathematician [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/), while looking at a table of prime numbers, noticed that the frequency of prime numbers is related to a logarithmic function. Around the same time, [Adrien-Marie Legendre](https://kenji.blog/en/p/legendre/) independently formulated a similar conjecture.
+The history of the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) dates back to the late 18th century. The 15-year-old genius mathematician Carl Friedrich Gauss, while looking at a table of prime numbers, noticed that the frequency of prime numbers is related to a logarithmic function. Around the same time, [Adrien-Marie Legendre](https://kenji.blog/en/p/legendre/) independently formulated a similar conjecture.
 
 However, they could not strictly prove this.
 
-A major breakthrough in the proof was brought about by [Bernhard Riemann](https://kenji.blog/en/p/riemann/)'s groundbreaking 1859 paper, "On the Number of Primes Less Than a Given Magnitude." [Riemann](https://kenji.blog/en/p/riemann/) presented a completely new approach of transforming the distribution of prime numbers into a problem on the complex plane using the **[Riemann](https://kenji.blog/en/p/riemann/) zeta function** $\zeta(s)$, which is a complex function.
+A major breakthrough in the proof was brought about by [Bernhard Riemann](https://kenji.blog/en/p/riemann/)'s groundbreaking 1859 paper, "On the Number of Primes Less Than a Given Magnitude." Riemann presented a completely new approach of transforming the distribution of prime numbers into a problem on the complex plane using the **[Riemann](https://kenji.blog/en/p/riemann/) zeta function** $\zeta(s)$, which is a complex function.
 
 $$ \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ prime}} \left(1 - \frac{1}{p^s}\right)^{-1} $$
 
 This Euler product formula is a very important relation that connects a function of the sum of all natural numbers (left side) with an infinite product over only prime numbers (right side).
 
-Later, in 1896, Jacques Hadamard and Charles de la Vallée Poussin independently completed the proof of the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) based on [Riemann](https://kenji.blog/en/p/riemann/)'s ideas. The key to their proof was to show that "the [Riemann](https://kenji.blog/en/p/riemann/) zeta function $\zeta(s)$ has no zeros on the line $\operatorname{Re}(s) = 1$ in the complex plane."
+Later, in 1896, Jacques Hadamard and Charles de la Vallée Poussin independently completed the proof of the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) based on Riemann's ideas. The key to their proof was to show that "the [Riemann](https://kenji.blog/en/p/riemann/) zeta function $\zeta(s)$ has no zeros on the line $\operatorname{Re}(s) = 1$ in the complex plane."
 
 ## A More Precise Approximation: The Logarithmic Integral $\operatorname{Li}(x)$
 

@@ -10,7 +10,7 @@ tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'Una guía completa y detallada con diagramas sobre el flujo de concesión de código de autorización de OAuth 2.0 a través de la implementación de una integración de Slack App. Incluye ejemplos de código específicos en Node.js y mejores prácticas de seguridad.'
 ---
 
-# Introducción: ¿Por qué aprender [[OAuth](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/)?
+# Introducción: ¿Por qué aprender [OAuth 2.0](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/)?
 
 En las aplicaciones web modernas, es algo muy común que múltiples servicios trabajen juntos. Por ejemplo, funciones como "iniciar sesión con una cuenta de Google", "enviar una notificación a Slack cuando se actualice una tarea en Trello" o "agregar automáticamente un enlace de reunión de Zoom a Google Calendar". Detrás de todas estas funciones trabaja el marco de autorización llamado **OAuth 2.0 (Open [Authorization](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/) 2.0)**.
 
@@ -22,7 +22,7 @@ En este artículo, explicaremos de manera muy detallada y práctica el funcionam
 
 ---
 
-# 1. Conceptos básicos de [[OAuth](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/): 4 roles
+# 1. Conceptos básicos de [OAuth 2.0](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/): 4 roles
 
 El primer paso para entender OAuth 2.0 es comprender con precisión a los personajes (Roles). En RFC 6749, se definen los siguientes 4 roles.
 
@@ -291,7 +291,7 @@ Esta cadena que comienza con `xoxb-` es el **Token de acceso de Bot** en Slack. 
 
 # 6. Alcance del token y el Principio de Menor Privilegio (Principle of Least Privilege)
 
-Uno de los conceptos más importantes en [[OAuth](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/) es el "Alcance (Scope)". El alcance se refiere al rango de permisos asociados con un token de acceso.
+Uno de los conceptos más importantes en [OAuth 2.0](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/) es el "Alcance (Scope)". El alcance se refiere al rango de permisos asociados con un token de acceso.
 
 En Slack, los permisos están clasificados muy detalladamente, y se dividen a grandes rasgos en **Bot Token Scopes** y **User Token Scopes**.
 - `chat:write` (Bot): Permiso para que la aplicación (bot) misma publique mensajes en canales.
@@ -305,7 +305,7 @@ Siguiendo la regla de oro de la seguridad, el "Principio de Menor Privilegio (Pr
 
 # 7. Seguridad más avanzada: PKCE (Proof Key for Code Exchange)
 
-Últimamente, como mecanismo para fortalecer aún más la seguridad de [[OAuth](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/), **PKCE (Proof Key for Code Exchange, RFC 7636, pronunciado "pixy")** se ha estandarizado y es ampliamente utilizado.
+Últimamente, como mecanismo para fortalecer aún más la seguridad de [OAuth 2.0](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/), **PKCE (Proof Key for Code Exchange, RFC 7636, pronunciado "pixy")** se ha estandarizado y es ampliamente utilizado.
 
 Originalmente, PKCE fue diseñado para "clientes públicos", como aplicaciones nativas (iOS/Android) o SPA (Single Page Application), que no pueden guardar el `client_secret` de manera segura. Sin embargo, en la actualidad, en las mejores prácticas de seguridad (Borrador de [OAuth](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/) 2.1), se recomienda fuertemente el uso de PKCE incluso en "clientes confidenciales" del lado del servidor.
 
@@ -370,6 +370,6 @@ En este artículo, explicamos detalladamente el flujo de concesión de código d
 3. Comprender los mecanismos criptográficos subyacentes, como la defensa [CSRF](https://kenji.blog/es/p/web-security-basics-cors-csp/) mediante el **parámetro `state`** y la prevención de ataques de intercepción de código de autorización mediante **PKCE**, es el atajo hacia una implementación segura.
 4. El diseño de alcances basado en el **Principio de Menor Privilegio** y la encriptación al guardar en la base de datos son elementos absolutamente indispensables a nivel operativo.
 
-[[OAuth](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/) es muy profundo, e incluso hay especificaciones enormes solo en las RFC, pero al aprender de manera práctica enfocándose en una plataforma real (Slack) de esta manera, deberías poder sentir su sofisticada filosofía de diseño y mecanismos de seguridad robustos. Espero que el conocimiento de este artículo sea útil para el futuro desarrollo de aplicaciones y la implementación de integraciones de API.
+[OAuth 2.0](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/) es muy profundo, e incluso hay especificaciones enormes solo en las RFC, pero al aprender de manera práctica enfocándose en una plataforma real (Slack) de esta manera, deberías poder sentir su sofisticada filosofía de diseño y mecanismos de seguridad robustos. Espero que el conocimiento de este artículo sea útil para el futuro desarrollo de aplicaciones y la implementación de integraciones de API.
 
 

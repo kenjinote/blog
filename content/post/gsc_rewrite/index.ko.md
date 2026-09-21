@@ -238,7 +238,7 @@ def extract_missing_keywords(documents):
 # print(missing_keywords)
 ```
 
-이 분석을 통해, '사실 상위 게시글은 "[Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 컨테이너로의 배포 방법"이나 "[CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인 구축"에 대해서도 언급하고 있지만, 내 게시글에서는 다루지 않고 있다'와 같은 **주제의 누락(콘텐츠 격차)** 을 정량적으로 발견할 수 있습니다.
+이 분석을 통해, '사실 상위 게시글은 "[Docker](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/) 컨테이너로의 배포 방법"이나 "[CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인 구축"에 대해서도 언급하고 있지만, 내 게시글에서는 다루지 않고 있다'와 같은 **주제의 누락(콘텐츠 격차)** 을 정량적으로 발견할 수 있습니다.
 
 발견한 중요 키워드 그룹은 단순히 본문에 흩뿌리는 것이 아니라, **H2나 H3 제목(Heading 태그)** 으로서 의미 있는 섹션으로 추가하고, 제목에 대한 상세한 기술 설명과 코드 스니펫을 작성함으로써 Google의 평가를 극적으로 높일 수 있습니다.
 

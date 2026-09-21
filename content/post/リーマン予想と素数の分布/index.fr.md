@@ -11,13 +11,13 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 # 1. Introduction : Le mystère cosmique des nombres premiers et l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/)
 
-Les « nombres premiers » (Prime Numbers) sont des entiers naturels qui ne sont divisibles que par 1 et par eux-mêmes, et sont souvent appelés les « atomes » du monde mathématique. La suite 2, 3, 5, 7, 11, 13... semble à première vue désordonnée et aléatoire. Depuis que le mathématicien grec antique [[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) a prouvé qu'« il existe une infinité de nombres premiers », d'innombrables mathématiciens ont tenté de percer les régularités cachées dans cette suite de nombres premiers.
+Les « nombres premiers » (Prime Numbers) sont des entiers naturels qui ne sont divisibles que par 1 et par eux-mêmes, et sont souvent appelés les « atomes » du monde mathématique. La suite 2, 3, 5, 7, 11, 13... semble à première vue désordonnée et aléatoire. Depuis que le mathématicien grec antique [Euclide](https://kenji.blog/p/euclid/) a prouvé qu'« il existe une infinité de nombres premiers », d'innombrables mathématiciens ont tenté de percer les régularités cachées dans cette suite de nombres premiers.
 
-Celle qui s'est le plus rapprochée du mystère des nombres premiers est l'**« Hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) » ([Riemann](https://kenji.blog/fr/p/riemann/) Hypothesis)**, proposée en 1859 par le mathématicien allemand [Bernhard Riemann](https://kenji.blog/fr/p/riemann/). L'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est l'un des problèmes les plus importants et non résolus des mathématiques modernes, et elle fait partie des Problèmes du prix du millénaire définis par l'Institut de mathématiques Clay, avec une récompense d'un million de dollars.
+Celle qui s'est le plus rapprochée du mystère des nombres premiers est l'**« Hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) » (Riemann Hypothesis)**, proposée en 1859 par le mathématicien allemand Bernhard Riemann. L'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est l'un des problèmes les plus importants et non résolus des mathématiques modernes, et elle fait partie des Problèmes du prix du millénaire définis par l'Institut de mathématiques Clay, avec une récompense d'un million de dollars.
 
 À première vue, un problème difficile de mathématiques pures concernant la distribution des nombres premiers peut sembler sans rapport avec notre vie quotidienne. Cependant, la sécurité de l'infrastructure d'Internet qui soutient la société moderne, en particulier **les technologies de cryptographie moderne telles que le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et la cryptographie sur les courbes elliptiques (ECC)**, dépend profondément des propriétés des nombres premiers géants.
 
-Dans cet article, nous entreprendrons un voyage mathématique allant de la distribution des nombres premiers au théorème des nombres premiers, à la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/), pour atteindre le cœur de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/). Nous explorerons en profondeur comment elle est liée à la cryptographie moderne et ce qu'il adviendrait du monde si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) venait à être prouvée.
+Dans cet article, nous entreprendrons un voyage mathématique allant de la distribution des nombres premiers au théorème des nombres premiers, à la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/), pour atteindre le cœur de l'hypothèse de Riemann. Nous explorerons en profondeur comment elle est liée à la cryptographie moderne et ce qu'il adviendrait du monde si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) venait à être prouvée.
 
 ---
 
@@ -50,7 +50,7 @@ Grâce à ce théorème, nous savons que les nombres premiers ont une distributi
 
 # 3. La fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) et le produit eulerien
 
-L'arme la plus puissante pour analyser la distribution des nombres premiers est la **fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) ([Riemann](https://kenji.blog/fr/p/riemann/) Zeta Function)**. À l'origine, il s'agissait d'une série infinie définie par [Leonhard Euler](https://kenji.blog/fr/p/euler/) pour les nombres réels $s > 1$.
+L'arme la plus puissante pour analyser la distribution des nombres premiers est la **fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) (Riemann Zeta Function)**. À l'origine, il s'agissait d'une série infinie définie par [Leonhard Euler](https://kenji.blog/fr/p/euler/) pour les nombres réels $s > 1$.
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -165,7 +165,7 @@ Pour utiliser le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-p
 
 Actuellement, l'algorithme pratique utilisé est le **test de primalité de Miller-Rabin (Miller-Rabin primality test)**, qui est un algorithme probabiliste. Cet algorithme est rapide, mais il existe un risque de « pseudo-premiers » où un nombre composé est identifié à tort comme premier avec une probabilité extrêmement faible.
 
-Cependant, si l'**« Hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) généralisée (Generalized [Riemann](https://kenji.blog/fr/p/riemann/) Hypothesis, GRH) »**, qui étend l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) aux fonctions L de Dirichlet, est supposée vraie, la situation change radicalement.
+Cependant, si l'**« Hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) généralisée (Generalized Riemann Hypothesis, GRH) »**, qui étend l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) aux fonctions L de Dirichlet, est supposée vraie, la situation change radicalement.
 Si la GRH est vraie, la limite supérieure du nombre de tests dans le test de Miller-Rabin est mathématiquement garantie, et elle passe d'un algorithme probabiliste à un **« algorithme déterministe en temps polynomial »** (C'était un fait majeur connu avant même la découverte du test de primalité AKS).
 
 En d'autres termes, l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) (et son extension) joue un rôle dans l'approbation directe de la génération de base de la cryptographie : « Pouvons-nous générer des nombres premiers géants rapidement et avec une confiance absolue ? ».
@@ -184,7 +184,7 @@ On dit parfois comme une légende urbaine que « si l'hypothèse de [Riemann](ht
 La preuve de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) elle-même ne créera pas immédiatement un algorithme magique qui accélère considérablement la factorisation. L'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) n'est qu'un théorème sur la « régularité de la distribution macroscopique » des nombres premiers, et elle ne nous dit pas directement par quels nombres premiers un nombre individuel $N$ est divisible (propriété locale).
 
 Cependant, l'impact n'est pas nul.
-Il est extrêmement probable que de **« nouveaux outils mathématiques » et des « méthodes analytiques inconnues » soient découverts** au cours du processus de démonstration de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/). L'histoire montre que lorsque le dernier théorème de [Fermat](https://kenji.blog/fr/p/fermat/) et la conjecture de [Poincaré](https://kenji.blog/fr/p/poincare/) ont été prouvés, les nouvelles théories développées au cours du processus ont fait progresser les mathématiques dans leur ensemble.
+Il est extrêmement probable que de **« nouveaux outils mathématiques » et des « méthodes analytiques inconnues » soient découverts** au cours du processus de démonstration de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/). L'histoire montre que lorsque le dernier théorème de Fermat et la conjecture de [Poincaré](https://kenji.blog/fr/p/poincare/) ont été prouvés, les nouvelles théories développées au cours du processus ont fait progresser les mathématiques dans leur ensemble.
 
 Si des méthodes géométriques algébriques inconnues ou des méthodes géométriques non commutatives permettant de manipuler complètement les propriétés des zéros de la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) sont établies, il n'est pas exclu que cela conduise à la découverte d'un algorithme révolutionnaire de factorisation (par exemple, un algorithme classique qui réduit la complexité au temps polynomial). En ce sens, les cryptographes ne peuvent jamais quitter des yeux les développements de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/).
 

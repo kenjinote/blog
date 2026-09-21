@@ -189,7 +189,7 @@ A "shape-preserving mapping" between these structures is called a **Homomorphism
 
 Further beyond field theory is **[Galois Theory](https://kenji.blog/en/p/galois-theory/)**, which can be considered the monumental achievement of algebra. The brilliant French mathematician [Évariste Galois](https://kenji.blog/en/p/galois/) fused group theory and field theory to clarify the "conditions under which equations can be solved algebraically."
 
-When considering the field extension (splitting field) that contains all the roots of an equation, the structure of the automorphism group ([Galois](https://kenji.blog/en/p/galois/) group) of that field completely determines the properties of the equation's roots. The long-standing conundrum that "there is no general solution formula for equations of degree 5 or higher ([Abel](https://kenji.blog/en/p/abel/)-Ruffini theorem)" was elegantly proven by showing that the [Galois](https://kenji.blog/en/p/galois/) group lacks a specific property (solvability).
+When considering the field extension (splitting field) that contains all the roots of an equation, the structure of the automorphism group ([Galois](https://kenji.blog/en/p/galois/) group) of that field completely determines the properties of the equation's roots. The long-standing conundrum that "there is no general solution formula for equations of degree 5 or higher (Abel-Ruffini theorem)" was elegantly proven by showing that the [Galois](https://kenji.blog/en/p/galois/) group lacks a specific property (solvability).
 
 ---
 

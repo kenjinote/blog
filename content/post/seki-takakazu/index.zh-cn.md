@@ -12,7 +12,7 @@ tags: ["关孝和", "和算", "江户时代", "数学史", "微积分", "行列�
 
 在日本江户时代，有一位将独立发展的数学“和算”推向了前所未有高度的人物。他就是 **[关孝和](https://kenji.blog/zh-cn/p/seki-takakazu/)** （生于1640年代? - 卒于1708年）。他后来被尊称为“算圣”，在日本数学史上被定位为最重要的人物之一。
 
-在同一时期的欧洲，[艾萨克·牛顿](https://kenji.blog/zh-cn/p/newton/)和[戈特弗里德·莱布尼茨](https://kenji.blog/zh-cn/p/leibniz/)正在建立微积分学，而[关孝和](https://kenji.blog/zh-cn/p/seki-takakazu/)也在独立进行着极高水平的数学发现。本文将结合历史背景，深入探讨他的一生轶事以及世界顶尖水平的数学成就。
+在同一时期的欧洲，[艾萨克·牛顿](https://kenji.blog/zh-cn/p/newton/)和戈特弗里德·莱布尼茨正在建立微积分学，而[关孝和](https://kenji.blog/zh-cn/p/seki-takakazu/)也在独立进行着极高水平的数学发现。本文将结合历史背景，深入探讨他的一生轶事以及世界顶尖水平的数学成就。
 
 # 2. 和算的黎明期与[关孝和](https://kenji.blog/zh-cn/p/seki-takakazu/)登场前的日本数学
 

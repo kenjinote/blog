@@ -296,14 +296,14 @@ Wenn die CPU Daten aus dem Speicher liest, lädt sie nicht nur diese Daten, sond
 ### 5.1 Unterschiede in der Cache-Effizienz nach Sprache
 
 - **C / C++ / [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)**: Wenn Sie ein Array von Strukturen (`struct Array[100]` oder `Vec<MyStruct>`) erstellen, werden die Daten lückenlos aufeinanderfolgend im Speicher platziert. Bei der Schleifenverarbeitung des Arrays funktioniert der Hardware-Prefetcher der CPU perfekt, und die Cache-Trefferrate (Cache Hit Rate) steigt drastisch an.
-- **[Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)**: Ein Java-Objekt-Array (`MyObject[]`) ist kein Array der eigentlichen Objekte, sondern ein Array von "Referenzen ([Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)n) auf Objekte". Da jedes eigentliche Objekt an verstreuten Stellen auf dem [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) zugewiesen wird, muss bei jeder Schleifenverarbeitung der Pointer verfolgt und auf eine zufällige Speicheradresse zugegriffen werden, was zu einer Reihe schwerwiegender Cache-Fehler (Cache Misses) führt.
+- **[Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)**: Ein Java-Objekt-Array (`MyObject]`) ist kein Array der eigentlichen Objekte, sondern ein Array von "Referenzen ([Pointern) auf Objekte". Da jedes eigentliche Objekt an verstreuten Stellen auf dem [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) zugewiesen wird, muss bei jeder Schleifenverarbeitung der Pointer verfolgt und auf eine zufällige Speicheradresse zugegriffen werden, was zu einer Reihe schwerwiegender Cache-Fehler (Cache Misses) führt.
 
 Die durchschnittliche effektive Zeit für Speicherzugriffe $ T_{avg} $ wird wie folgt ausgedrückt:
 
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 Hierbei ist $ h $ die Cache-Trefferrate ( $ 0 \le h \le 1 $ ), $ T_{cache} $ ist die Cache-Zugriffszeit (etwa 1 bis 4 ns) und $ T_{memory} $ ist die Hauptspeicher-Zugriffszeit (etwa 100 ns).
-Je nachdem, ob Sie $ h $ auf 0,99 bringen (C/[Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Ansatz) oder auf 0,5 abfallen lassen (Javas [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) Chasing), ergibt sich ein Unterschied vom Dutzendfachen in der Ausführungsgeschwindigkeit von Schleifen in der Anwendung. Dies ist der wahre Grund, warum C++ und [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) für Spiel-Engines und Hochfrequenzhandelssysteme ausgewählt werden.
+Je nachdem, ob Sie $ h $ auf 0,99 bringen (C/[Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Ansatz) oder auf 0,5 abfallen lassen (Javas Pointer Chasing), ergibt sich ein Unterschied vom Dutzendfachen in der Ausführungsgeschwindigkeit von Schleifen in der Anwendung. Dies ist der wahre Grund, warum C++ und [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) für Spiel-Engines und Hochfrequenzhandelssysteme ausgewählt werden.
 
 ---
 

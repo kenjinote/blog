@@ -66,7 +66,7 @@ $$
 
 ## 4. Impact on Philosophy and Science
 
-[Descartes](https://kenji.blog/en/p/descartes/)' analytic geometry became an indispensable foundation for the subsequent development of mathematics and physics. It can be said that the creation of calculus by [Isaac Newton](https://kenji.blog/en/p/newton/) and [Gottfried Leibniz](https://kenji.blog/en/p/leibniz/) was only possible because of the stage provided by the Cartesian coordinate system.
+[Descartes](https://kenji.blog/en/p/descartes/)' analytic geometry became an indispensable foundation for the subsequent development of mathematics and physics. It can be said that the creation of calculus by Isaac Newton and [Gottfried Leibniz](https://kenji.blog/en/p/leibniz/) was only possible because of the stage provided by the Cartesian coordinate system.
 
 In addition, his "methodological doubt" in philosophy, an approach to finding certain truths after doubting everything, established the spirit of rationalism that serves as the foundation of scientific inquiry.
 

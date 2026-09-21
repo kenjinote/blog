@@ -559,7 +559,7 @@ for val, prob in zip(logits, probabilities):
 
 ---
 
-## 10. [유클리드](https://kenji.blog/ko/p/euclid/) 거리와 피타고라스 정리 ([[Euclid](https://kenji.blog/ko/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. [유클리드](https://kenji.blog/ko/p/euclid/) 거리와 피타고라스 정리 ([Euclide](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### 수식의 아름다움과 개요
 고대 그리스에서 전해져 내려오는 기하학의 기초이며, $n$차원 공간에서 두 점 사이의 직선 거리를 정의하는 수식입니다. 2차원 공간에서는 피타고라스 정리($a^2 + b^2 = c^2$) 그 자체입니다.

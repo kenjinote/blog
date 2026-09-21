@@ -8,7 +8,7 @@ categories: ["数学"]
 tags: ["代数", "群论", "环论", "域论"]
 ---
 
-# [[群、环、域](https://kenji.blog/zh-cn/p/groups-rings-and-fields/)：不仅仅是数字，更是抽象“结构”本身的现代代数入门](https://kenji.blog/p/groups-rings-and-fields/)
+# [群、环、域：不仅仅是数字，更是抽象“结构”本身的现代代数入门](https://kenji.blog/p/groups-rings-and-fields/)
 
 我们大多数人在学校最先学到的“数学”是数字的加减乘除，也就是“四则运算”的世界。像 $1 + 1 = 2$ 或 $3 \times 4 = 12$ 这样的计算，对于描述我们日常接触的现实世界的数量和大小非常有用。
 

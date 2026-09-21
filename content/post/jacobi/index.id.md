@@ -16,7 +16,7 @@ tags:
 
 # 1. Pendahuluan: Seorang Pencari Pemikiran Murni
 
-[Carl Gustav Jacob Jacobi](https://kenji.blog/id/p/jacobi/) (1804–1851) adalah seorang **matematikawan Jerman** abad ke-19 yang memberikan kontribusi menentukan pada berbagai bidang seperti aljabar, analisis, teori bilangan, dan mekanika. Bersama dengan [Niels Henrik Abel](https://kenji.blog/id/p/abel/), ia dirayakan sebagai "penemu fungsi eliptik", dan namanya diabadikan dalam "[Jacobi](https://kenji.blog/id/p/jacobi/)an" (determinan [Jacobi](https://kenji.blog/id/p/jacobi/)an) yang sering kita temui dalam kalkulus multivariabel saat ini.
+[Carl Gustav Jacob Jacobi](https://kenji.blog/id/p/jacobi/) (1804–1851) adalah seorang **matematikawan Jerman** abad ke-19 yang memberikan kontribusi menentukan pada berbagai bidang seperti aljabar, analisis, teori bilangan, dan mekanika. Bersama dengan Niels Henrik Abel, ia dirayakan sebagai "penemu fungsi eliptik", dan namanya diabadikan dalam "Jacobian" (determinan [Jacobi](https://kenji.blog/id/p/jacobi/)an) yang sering kita temui dalam kalkulus multivariabel saat ini.
 
 Ia menghargai keindahan matematika itu sendiri dan kehormatan jiwa manusia di atas utilitas praktis. Dalam artikel ini, kita akan mendalami kehidupan [Jacobi](https://kenji.blog/id/p/jacobi/), pencapaian matematika utamanya, dan episode-episode terkenal yang ia tinggalkan.
 
@@ -47,15 +47,15 @@ Pada tahun 1826, [Jacobi](https://kenji.blog/id/p/jacobi/) menjadi dosen di Univ
 
 Salah satu pencapaian terbesar [Jacobi](https://kenji.blog/id/p/jacobi/) adalah konstruksi teori fungsi eliptik. Integral eliptik muncul ketika menghitung gerakan pendulum atau panjang busur elips, dan [Legendre](https://kenji.blog/id/p/legendre/) serta yang lainnya telah mempelajarinya selama beberapa dekade.
 
-[Jacobi](https://kenji.blog/id/p/jacobi/) memperkenalkan perspektif terobosan dengan mempertimbangkan fungsi invers dari integral tersebut. Hebatnya, jenius muda Norwegia **[Abel](https://kenji.blog/id/p/abel/)** telah menemukan pendekatan yang sama secara independen pada waktu yang hampir bersamaan. Baik [Jacobi](https://kenji.blog/id/p/jacobi/) maupun [Abel](https://kenji.blog/id/p/abel/) menemukan periodisitas ganda dari fungsi eliptik, merevolusi bidang ini.
+[Jacobi](https://kenji.blog/id/p/jacobi/) memperkenalkan perspektif terobosan dengan mempertimbangkan fungsi invers dari integral tersebut. Hebatnya, jenius muda Norwegia **Abel** telah menemukan pendekatan yang sama secara independen pada waktu yang hampir bersamaan. Baik Jacobi maupun [Abel](https://kenji.blog/id/p/abel/) menemukan periodisitas ganda dari fungsi eliptik, merevolusi bidang ini.
 
 $$ \text{sn}(u, k), \quad \text{cn}(u, k), \quad \text{dn}(u, k) $$
 
-[Jacobi](https://kenji.blog/id/p/jacobi/) mendefinisikan fungsi-fungsi eliptik [Jacobi](https://kenji.blog/id/p/jacobi/)an ini dan lebih lanjut memperkenalkan alat analitik baru yang kuat yang disebut "fungsi Theta". Fungsi theta [Jacobi](https://kenji.blog/id/p/jacobi/) $\vartheta(z, \tau)$ didefinisikan sebagai berikut:
+[Jacobi](https://kenji.blog/id/p/jacobi/) mendefinisikan fungsi-fungsi eliptik Jacobian ini dan lebih lanjut memperkenalkan alat analitik baru yang kuat yang disebut "fungsi Theta". Fungsi theta [Jacobi](https://kenji.blog/id/p/jacobi/) $\vartheta(z, \tau)$ didefinisikan sebagai berikut:
 
 $$ \vartheta(z, \tau) = \sum_{n=-\infty}^{\infty} e^{\pi i n^2 \tau + 2 \pi i n z} $$
 
-Pada tahun 1829, ia menerbitkan mahakaryanya, *Fundamenta nova theoriae functionum ellipticarum* (Fondasi Baru Teori Fungsi Eliptik), menyelesaikan sistematisasi bidang ini. Matematikawan Prancis [Legendre](https://kenji.blog/id/p/legendre/) kagum saat mengetahui pencapaian [Jacobi](https://kenji.blog/id/p/jacobi/) dan [Abel](https://kenji.blog/id/p/abel/), yang jauh lebih muda darinya, dan sangat memuji mereka.
+Pada tahun 1829, ia menerbitkan mahakaryanya, *Fundamenta nova theoriae functionum ellipticarum* (Fondasi Baru Teori Fungsi Eliptik), menyelesaikan sistematisasi bidang ini. Matematikawan Prancis [Legendre](https://kenji.blog/id/p/legendre/) kagum saat mengetahui pencapaian Jacobi dan [Abel](https://kenji.blog/id/p/abel/), yang jauh lebih muda darinya, dan sangat memuji mereka.
 
 # 5. [Jacobi](https://kenji.blog/id/p/jacobi/)an (Determinan [Jacobi](https://kenji.blog/id/p/jacobi/)an) dan Analisis Multivariabel
 

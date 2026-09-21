@@ -31,7 +31,7 @@ flowchart TD
 
 바셰의 가장 잘 알려진 업적 중 하나는 고대 그리스의 수학자 [디오판토스](https://kenji.blog/ko/p/diophantus/) ([Diophantus](https://kenji.blog/ko/p/diophantus/)) 의 저서 '산술 (Arithmetica)' 을 라틴어로 번역하고 주석을 달아 1621년에 출판한 것입니다.
 
-이 번역본은 당시 유럽의 수학자들이 고대의 대수학과 정수론을 배우기 위한 표준적인 텍스트가 되었습니다. 그중 가장 유명한 일화는 [피에르 드 페르마](https://kenji.blog/ko/p/fermat/) ([Pierre de Fermat](https://kenji.blog/ko/p/fermat/)) 가 이 바셰판 '산술'의 여백에 그 유명한 "[페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)"를 적어 넣었다는 것입니다.
+이 번역본은 당시 유럽의 수학자들이 고대의 대수학과 정수론을 배우기 위한 표준적인 텍스트가 되었습니다. 그중 가장 유명한 일화는 [피에르 드 페르마](https://kenji.blog/ko/p/fermat/) (Pierre de Fermat) 가 이 바셰판 '산술'의 여백에 그 유명한 "[페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)"를 적어 넣었다는 것입니다.
 
 바셰 자신도 단순한 번역에 그치지 않고, [디오판토스](https://kenji.blog/ko/p/diophantus/)의 문제에 대해 독자적이고 뛰어난 주석과 일반화를 덧붙였습니다. 그의 수학적 통찰력이 없었다면 17세기 정수론의 발전은 훨씬 더뎌졌을지도 모릅니다.
 
@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-이것은 [유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)을 확장함으로써 구체적으로 $x, y$ 를 계산할 수 있으며 (확장 [유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)), 현대의 암호 이론 (예를 들어 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호 등) 에서도 필수불가결한 기초 정리가 되어 있습니다. 역사적 정확성을 중시하는 문맥에서는 이것을 **바셰의 정리** 라고 부르기도 합니다.
+이것은 [유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)을 확장함으로써 구체적으로 $x, y$ 를 계산할 수 있으며 (확장 유클리드 호제법), 현대의 암호 이론 (예를 들어 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호 등) 에서도 필수불가결한 기초 정리가 되어 있습니다. 역사적 정확성을 중시하는 문맥에서는 이것을 **바셰의 정리** 라고 부르기도 합니다.
 
 ## 요약
 

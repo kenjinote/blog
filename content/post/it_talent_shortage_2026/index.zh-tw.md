@@ -26,7 +26,7 @@ description: "IT業界中'2026年問題'的真相。徹底解說生成式AI崛�
 
 然而到了2026年的現在，這種模式已經面臨極限。DX（數位轉型）的本質已經從「單純的IT化」轉移到「商業模式的變革」，缺乏敏捷性的瀑布式開發已經無法跟上市場的變化。
 
-現代的開發流程是以 **雲端原生** 以及 **AI驅動** 為前提。容器化（[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)）、微服務架構、[CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)流水線的自動化，已經不再是「特別的技術」，而是「標準的基礎設施」。
+現代的開發流程是以 **雲端原生** 以及 **AI驅動** 為前提。容器化（[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)/Kubernetes）、微服務架構、[CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)流水線的自動化，已經不再是「特別的技術」，而是「標準的基礎設施」。
 
 ```mermaid
 graph TD

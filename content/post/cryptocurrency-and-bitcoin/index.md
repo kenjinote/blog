@@ -52,7 +52,7 @@ tags: ["bitcoin", "cryptography", "blockchain"]
 
 ## 3. [ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)のアーキテクチャ
 
-ビットコインを支える中核技術が「ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーン（[Blockchain](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)）」です。ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンは、分散型台帳技術（[Distributed Ledger](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT）のひとつの形態であり、データが「ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)」と呼ばれる単位でまとめられ、それらが暗号学的にチェーン（鎖）のようにつながった構造をしています。
+ビットコインを支える中核技術が「ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーン（Blockchain）」です。ブロックチェーンは、分散型台帳技術（Distributed Ledger Technology: DLT）のひとつの形態であり、データが「ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)」と呼ばれる単位でまとめられ、それらが暗号学的にチェーン（鎖）のようにつながった構造をしています。
 
 ```mermaid
 flowchart TD
@@ -76,7 +76,7 @@ flowchart TD
 
 ### マークルツリー（Merkle Trees）
 
-[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)サイズを抑えつつ、データの改ざんを効率的に検出するために **マークルツリー（Merkle [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）** というデータ構造を利用します。マークルツリーは二分木の一種で、葉ノードに各[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)のハッシュ値が入り、親ノードは子ノードのハッシュ値を連結して再度ハッシュ化したものになります。
+[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、ブロックサイズを抑えつつ、データの改ざんを効率的に検出するために **マークルツリー（Merkle Tree）** というデータ構造を利用します。マークルツリーは二分木の一種で、葉ノードに各[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)のハッシュ値が入り、親ノードは子ノードのハッシュ値を連結して再度ハッシュ化したものになります。
 
 ```mermaid
 flowchart TD
@@ -105,7 +105,7 @@ flowchart TD
 
 ビットコインでは、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ハッシュの計算や、公開鍵から[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を生成するプロセスなどでSHA-256が二重に適用されます（これを `SHA256(SHA256(x))`、またはHash256と呼びます）。
 
-### [公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号（[Public Key](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) [Cryptography](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)）とデジタル署名
+### [公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号（Public Key [Cryptography](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)）とデジタル署名
 
 暗号資産の所有権は、秘密鍵（Private Key）と公開鍵（Public Key）のペアによって証明されます。
 - **秘密鍵** $k$: ランダムに生成された256ビットの整数。絶対に他人に知られてはなりません。
@@ -230,7 +230,7 @@ $$
 
 [PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)のもう一つの大きな課題は、マイニングによる莫大な電力消費です。この環境問題への対策として、Ethereumなどは **プルーフ・オブ・ステーク（Proof of Stake: PoS）** という別の[コンセンサスアルゴリズム](https://kenji.blog/p/byzantine-generals-problem-consensus/)に移行しました。
 
-[PoS](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、計算能力（ハッシュレート）ではなく、保有している暗号資産の量（ステーク）と保有期間に応じて、次のブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を生成する権利（バリデータ）が確率的に割り当てられます。これにより電力消費は99%以上削減されますが、「お金持ちがよりお金持ちになるシステムではないか」「完全な分散化が損なわれるのではないか」という批判も存在します。ビットコインは、どれほど批判されようとも、「エネルギーを消費することによる物理的なセキュリティ担保」という[PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の哲学を堅持し続けています。
+[PoS](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、計算能力（ハッシュレート）ではなく、保有している暗号資産の量（ステーク）と保有期間に応じて、次のブロックを生成する権利（バリデータ）が確率的に割り当てられます。これにより電力消費は99%以上削減されますが、「お金持ちがよりお金持ちになるシステムではないか」「完全な分散化が損なわれるのではないか」という批判も存在します。ビットコインは、どれほど批判されようとも、「エネルギーを消費することによる物理的なセキュリティ担保」という[PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の哲学を堅持し続けています。
 
 ## 8. 暗号理論の深淵：数学的証明とプロトコルの堅牢性
 
@@ -248,12 +248,12 @@ $$
 ### [量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)の脅威と耐量子暗号
 
 しかし、計算量的安全性には一つの大きな懸念があります。それが **量子コンピュータ（Quantum Computer）** の台頭です。
-1994年にピーター・ショア（Peter Shor）が発表した「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)（[Shor's Algorithm](https://kenji.blog/p/quantum-computing-shors-algorithm/)）」は、量子コンピュータを用いれば、素因数分解問題（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の基礎）や離散対数問題（ECCの基礎）を多項式時間 $\mathcal{O}(n^3)$ で解くことができることを数学的に証明しました。
+1994年にピーター・ショア（Peter Shor）が発表した「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)（Shor's Algorithm）」は、量子コンピュータを用いれば、素因数分解問題（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の基礎）や離散対数問題（ECCの基礎）を多項式時間 $\mathcal{O}(n^3)$ で解くことができることを数学的に証明しました。
 
 もし、十分な量子ビット（Qubits）と低いエラー率を持つ実用的な大規模量子コンピュータが完成すれば、ビットコインの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)から秘密鍵が逆算されるリスクが生じます。
 これに対するビットコインネットワークの防衛策は以下の通りです。
 
-1. **ハッシュ関数の保護**: ビットコイン[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)は公開鍵そのものではなく、公開鍵にSHA-256とRIPEMD-160というハッシュ関数を適用したものです。量子コンピュータを使っても、ハッシュ関数の逆算（グローバーのアルゴリズムを用いたとしても計算量は $\mathcal{O}(\sqrt{N})$）は依然として困難です。そのため、[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を行って公開鍵をネットワークにさらすまでは、[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の中身は量子コンピュータに対しても安全と言えます。
+1. **ハッシュ関数の保護**: ビットコイン[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)は公開鍵そのものではなく、公開鍵にSHA-256とRIPEMD-160というハッシュ関数を適用したものです。量子コンピュータを使っても、ハッシュ関数の逆算（グローバーのアルゴリズムを用いたとしても計算量は $\mathcal{O}(\sqrt{N})$）は依然として困難です。そのため、トランザクションを行って公開鍵をネットワークにさらすまでは、[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の中身は量子コンピュータに対しても安全と言えます。
 2. **耐量子暗号（Post-Quantum [Cryptography](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/): PQC）への移行**: 量子コンピュータが実用化される前に、ビットコインのプロトコルをハードフォークさせ、NIST（米国国立標準技術研究所）が選定する格子ベース暗号（Lattice-based cryptography）や多変数多項式暗号（Multivariate polynomial cryptography）といった、量子コンピュータでも解読が困難な新しい署名アルゴリズムに移行することが議論されています。
 
 ## 9. ネットワーク・トポロジーと[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)プロトコルの詳細
@@ -264,7 +264,7 @@ $$
 
 ネットワークに参加するコンピュータは「ノード（Node）」と呼ばれます。ノードにはいくつか種類があり、それぞれ役割が異なります。
 
-- **フルノード（Full Node）**: ジェネシスブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)から最新のブロックに至るまで、すべての[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)データ（数百GB以上）をダウンロードし、検証するノードです。[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の正当性や二重支払いの有無を独立してチェックするため、ネットワークのセキュリティの根幹を担います。
+- **フルノード（Full Node）**: ジェネシスブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)から最新のブロックに至るまで、すべてのブロックチェーンデータ（数百GB以上）をダウンロードし、検証するノードです。[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の正当性や二重支払いの有無を独立してチェックするため、ネットワークのセキュリティの根幹を担います。
 - **SPVノード（Simplified Payment Verification Node）**: ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーン全体ではなく、ブロックヘッダのみをダウンロードする軽量ノードです。主にスマートフォン用のウォレットなどで使われます。自身のトランザクションがブロックに含まれているか（マークルパスの検証）は確認できますが、フルノードほどの検証能力はありません。
 - **マイニングノード（Mining Node）**: [PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の計算を行い、新しいブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を生成するノードです。現在では、ASIC（Application Specific Integrated Circuit）と呼ばれるマイニング専用のハードウェアを束ねた巨大な「マイニングプール」がこの役割を担っています。
 

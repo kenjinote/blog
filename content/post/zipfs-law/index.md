@@ -60,7 +60,7 @@ $$
 \log f(r) = \log C - \alpha \log r
 $$
 
-これは、両対数[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)（Log-Log Plot）上でプロットすると、傾きが $-\alpha$ の直線になることを意味しています。データセットが **[ジップの法則](https://kenji.blog/p/zipfs-law/)** に従っているかどうかを確認する最も簡単な方法は、両対数[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)を描いて直線になるかどうかを見ることです。直線であれば、その現象の背後には **べき乗則** （Power Law）が存在していると言えます。
+これは、両対数[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)（Log-Log Plot）上でプロットすると、傾きが $-\alpha$ の直線になることを意味しています。データセットが **ジップの法則** に従っているかどうかを確認する最も簡単な方法は、両対数[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)を描いて直線になるかどうかを見ることです。直線であれば、その現象の背後には **べき乗則** （Power Law）が存在していると言えます。
 
 # 4. 現実世界における驚くべき実例
 

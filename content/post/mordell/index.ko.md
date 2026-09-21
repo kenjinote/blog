@@ -24,7 +24,7 @@ tags: ["수론", "모델", "타원 곡선", "디오판토스 방정식"]
 
 ## 3. [디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식에 대한 열정
 
-모델의 연구 중심에는 항상 **[디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식** (Diophantine equations) 이 있었습니다. [디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식이란 정수 계수를 갖는 다항식 방정식에서 정수해나 유리수해를 구하는 문제를 말합니다. 고대 그리스의 수학자 [디오판토스](https://kenji.blog/ko/p/diophantus/)의 이름을 따서 명명되었습니다.
+모델의 연구 중심에는 항상 **[디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식** (Diophantine equations) 이 있었습니다. 디오판토스 방정식이란 정수 계수를 갖는 다항식 방정식에서 정수해나 유리수해를 구하는 문제를 말합니다. 고대 그리스의 수학자 [디오판토스](https://kenji.blog/ko/p/diophantus/)의 이름을 따서 명명되었습니다.
 
 가장 유명한 [디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식의 예는 피타고라스의 정리와 관련된 방정식입니다.
 
@@ -89,7 +89,7 @@ $$ \text{If } g \ge 2 \text{, then } |C(\mathbb{Q})| < \infty $$
 
 ## 7. 라마누잔과의 관계 및 모듈러 형식
 
-모델의 업적은 [디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식에 머무르지 않습니다. 그는 천재 수학자 [스리니바사 라마누잔](https://kenji.blog/ko/p/ramanujan/) ([Srinivasa Ramanujan](https://kenji.blog/ko/p/ramanujan/)) 이 남긴 미해결 문제에도 큰 공헌을 했습니다.
+모델의 업적은 [디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식에 머무르지 않습니다. 그는 천재 수학자 스리니바사 라마누잔 ([Srinivasa Ramanujan](https://kenji.blog/ko/p/ramanujan/)) 이 남긴 미해결 문제에도 큰 공헌을 했습니다.
 
 라마누잔은 다음과 같이 정의되는 라마누잔의 타우 함수 $\tau(n)$ 에 대해 몇 가지 놀라운 성질을 추측했습니다.
 

@@ -16,7 +16,7 @@ This article provides a detailed explanation of the life and remarkable mathemat
 
 ## 2. Early Life and Career
 
-[William Brouncker](https://kenji.blog/en/p/brouncker/) (1620 - April 5, 1684) was born as the eldest son of [William Brouncker](https://kenji.blog/en/p/brouncker/), 1st Viscount [Brouncker](https://kenji.blog/en/p/brouncker/), and Winifred Leigh. While there are many unknown details about his exact birthplace and early education, it is believed he studied at Oxford University, cultivating excellent language skills and a mathematical sense. In 1645, following his father's death, he became the 2nd Viscount [Brouncker](https://kenji.blog/en/p/brouncker/).
+[William Brouncker](https://kenji.blog/en/p/brouncker/) (1620 - April 5, 1684) was born as the eldest son of William Brouncker, 1st Viscount Brouncker, and Winifred Leigh. While there are many unknown details about his exact birthplace and early education, it is believed he studied at Oxford University, cultivating excellent language skills and a mathematical sense. In 1645, following his father's death, he became the 2nd Viscount [Brouncker](https://kenji.blog/en/p/brouncker/).
 
 At the time, England was in the chaotic period of the Puritan Revolution (English Civil War), but [Brouncker](https://kenji.blog/en/p/brouncker/) devoted himself more to the world of academia than to the political front stage. He had a particularly strong interest in mathematics and music, beginning to construct his own theories. In 1647, he was awarded a Doctor of Medicine degree from Oxford University, but his primary interest always remained in the exact sciences. His younger brother, Henry [Brouncker](https://kenji.blog/en/p/brouncker/), was also known to be active in the political and courtly world while maintaining an interest in chess and mathematics.
 
@@ -50,7 +50,7 @@ $$
 \frac{\pi}{2} = \frac{2}{1} \cdot \frac{2}{3} \cdot \frac{4}{3} \cdot \frac{4}{5} \cdot \frac{6}{5} \cdot \frac{6}{7} \cdot \frac{8}{7} \cdots
 $$
 
-[Wallis](https://kenji.blog/en/p/wallis/) showed this result to [Brouncker](https://kenji.blog/en/p/brouncker/) and asked if it could be expressed in a different form. In response, [Brouncker](https://kenji.blog/en/p/brouncker/), using algebraic manipulation and a clever concept of limits, masterfully transformed this equation into a continued fraction. This is the following **[Brouncker](https://kenji.blog/en/p/brouncker/)'s formula**:
+[Wallis](https://kenji.blog/en/p/wallis/) showed this result to Brouncker and asked if it could be expressed in a different form. In response, Brouncker, using algebraic manipulation and a clever concept of limits, masterfully transformed this equation into a continued fraction. This is the following **[Brouncker](https://kenji.blog/en/p/brouncker/)'s formula**:
 
 $$
 \frac{4}{\pi} = 1 + \frac{1^2}{2 + \frac{3^2}{2 + \frac{5^2}{2 + \frac{7^2}{2 + \ddots}}}}
@@ -76,7 +76,7 @@ In 1657, the great French mathematician [Pierre de Fermat](https://kenji.blog/en
 
 ### [Brouncker](https://kenji.blog/en/p/brouncker/)'s Algorithm
 
-It was [Wallis](https://kenji.blog/en/p/wallis/) and [Brouncker](https://kenji.blog/en/p/brouncker/) who stood up to this challenge. [Brouncker](https://kenji.blog/en/p/brouncker/) in particular developed a method virtually equivalent to the algorithm known today as the "continued fraction method," establishing a procedure to find the minimum positive integer solution to the equation for any non-square number $n$.
+It was [Wallis](https://kenji.blog/en/p/wallis/) and Brouncker who stood up to this challenge. [Brouncker](https://kenji.blog/en/p/brouncker/) in particular developed a method virtually equivalent to the algorithm known today as the "continued fraction method," establishing a procedure to find the minimum positive integer solution to the equation for any non-square number $n$.
 
 ```mermaid
 sequenceDiagram
@@ -98,7 +98,7 @@ $$
 x = 1766319049, \quad y = 226153980
 $$
 
-[Brouncker](https://kenji.blog/en/p/brouncker/) demonstrated that even such gigantic solutions could be systematically derived using his method. Ironically, due to a misunderstanding by [Leonhard Euler](https://kenji.blog/en/p/euler/), this equation was later named after English mathematician John Pell, but the greatest contribution to establishing the solution method undeniably belongs to [Brouncker](https://kenji.blog/en/p/brouncker/).
+[Brouncker](https://kenji.blog/en/p/brouncker/) demonstrated that even such gigantic solutions could be systematically derived using his method. Ironically, due to a misunderstanding by Leonhard Euler, this equation was later named after English mathematician John Pell, but the greatest contribution to establishing the solution method undeniably belongs to [Brouncker](https://kenji.blog/en/p/brouncker/).
 
 ## 6. Other Achievements and Later Years
 

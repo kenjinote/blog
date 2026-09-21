@@ -287,7 +287,7 @@ Ini sering kali direkomendasikan karena mudah dikelola dengan GUI dan akses tran
 - Centang `General` -> `Use the WSL 2 based engine`.
 - Centang `Resources` -> `WSL Integration` -> `Enable integration with my default WSL distro` dan nyalakan tombol geser untuk distribusi (Ubuntu) yang Anda gunakan.
 
-Ini memungkinkan Anda menjalankan perintah `docker` langsung dari terminal WSL2, dan komunikasi dengan daemon [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) akan dialihkan melalui VM ringan khusus (`docker-desktop` dan `docker-desktop-data`) yang dikelola oleh [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop.
+Ini memungkinkan Anda menjalankan perintah `docker` langsung dari terminal WSL2, dan komunikasi dengan daemon [Docker](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/) akan dialihkan melalui VM ringan khusus (`docker-desktop` dan `docker-desktop-data`) yang dikelola oleh [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop.
 
 ### Pendekatan 2: Pengenalan Langsung Docker Engine Native
 Jika Anda memiliki batasan jaringan perusahaan (seperti menghindari versi berbayar Docker Desktop) atau ingin mengurangi overhead kinerja hingga batas ekstrem, aktifkan `systemd` di `/etc/wsl.conf` lalu instal [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) sebagai server Ubuntu murni.

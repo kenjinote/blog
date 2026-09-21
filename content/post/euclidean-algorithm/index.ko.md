@@ -10,7 +10,7 @@ tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 
 # [유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)이란
 
- **[유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)** ([Euclide](https://kenji.blog/ko/p/euclid/)an algorithm)은 두 자연수(또는 정수)의 최대공약수(Greatest Common Divisor, GCD)를 효율적으로 구하기 위한 알고리즘입니다. 기원전 300년경 고대 그리스의 수학자 [유클리드](https://kenji.blog/ko/p/euclid/)가 저술한 수학서 『원론』(Elements) 제7권에 기록되어 있으며, "인류 최고(最古)의 알고리즘" 중 하나로도 널리 알려져 있습니다.
+ **[유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)** (Euclidean algorithm)은 두 자연수(또는 정수)의 최대공약수(Greatest Common Divisor, GCD)를 효율적으로 구하기 위한 알고리즘입니다. 기원전 300년경 고대 그리스의 수학자 [유클리드](https://kenji.blog/ko/p/euclid/)가 저술한 수학서 『원론』(Elements) 제7권에 기록되어 있으며, "인류 최고(最古)의 알고리즘" 중 하나로도 널리 알려져 있습니다.
 
 최대공약수를 구하는 가장 단순한 방법은 두 수를 각각 소인수분해하여 공통된 소인수를 곱하는 것이지만, 수가 커지면 소인수분해 자체의 계산량이 방대해져 현실적인 시간 내에 풀기 어려워집니다. 반면, **[유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)** 을 사용하면 수천 자리에 달하는 거대한 수끼리라도 매우 빠르게 최대공약수를 계산할 수 있습니다.
 
@@ -109,7 +109,7 @@ int main() {
 
 ## 계산 복잡도와 라메의 정리
 
-[유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)은 얼마나 빠를까요? 이 계산 복잡도에 대해서는 1844년 프랑스 수학자 [가브리엘 라메](https://kenji.blog/ko/p/lame/)가 증명한 **라메의 정리** ([Lamé](https://kenji.blog/ko/p/lame/)'s theorem)가 유명합니다.
+[유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)은 얼마나 빠를까요? 이 계산 복잡도에 대해서는 1844년 프랑스 수학자 가브리엘 라메가 증명한 **라메의 정리** ([Lamé](https://kenji.blog/ko/p/lame/)'s theorem)가 유명합니다.
 
 > **라메의 정리**
 > 두 자연수 $a, b$ ($a > b$)에 대해 [유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)을 적용했을 때의 나눗셈 횟수는 $b$ 의 십진법 자릿수의 $5$ 배 이하이다.

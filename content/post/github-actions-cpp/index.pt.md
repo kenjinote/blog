@@ -9,7 +9,7 @@ categories: ["programming", "devops"]
 tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 ---
 
-# Construindo um [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) para Projetos C++ usando [GitHub Actions](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/): O Guia Completo
+# Construindo um [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) CI/CD para Projetos C++ usando [GitHub Actions](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/): O Guia Completo
 
 No paradigma moderno de desenvolvimento de software, a Integração Contínua (Continuous Integration: CI) e a Entrega/Implantação Contínua (Continuous Delivery/Deployment: CD) são elementos indispensáveis para processos de desenvolvimento ágeis e para a manutenção de software de alta qualidade. Com inúmeras linguagens de programação disponíveis, a construção de um pipeline CI/CD em C++ envolve dificuldades e complexidades únicas em comparação com outras linguagens (como Python, JavaScript, [Go](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), etc.).
 

@@ -134,7 +134,7 @@ Las operaciones de bases de datos se definen por las siguientes operaciones bás
 - Proyección (Projection, $\pi$): Extracción de atributos específicos (columnas)
 - Reunión (Join, $\bowtie$): Intersección condicional de múltiples relaciones
 
-Además, aprender la estructura de los índices "[B-Tree](https://kenji.blog/es/p/b-tree-database-index-theory/) (Árbol B)" para buscar instantáneamente los datos deseados en grandes volúmenes de registros es la mejor práctica de aplicación de estructuras de datos. B-[Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) garantiza una velocidad de búsqueda de $O(\log N)$ minimizando el número de E/S de disco. Uno no puede construir sistemas robustos sin conocer las propiedades [ACID](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/) de las transacciones (Atomicidad, Consistencia, Aislamiento, Durabilidad).
+Además, aprender la estructura de los índices "[B-Tree](https://kenji.blog/es/p/b-tree-database-index-theory/) (Árbol B)" para buscar instantáneamente los datos deseados en grandes volúmenes de registros es la mejor práctica de aplicación de estructuras de datos. B-Tree garantiza una velocidad de búsqueda de $O(\log N)$ minimizando el número de E/S de disco. Uno no puede construir sistemas robustos sin conocer las propiedades [ACID](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/) de las transacciones (Atomicidad, Consistencia, Aislamiento, Durabilidad).
 
 ## 6. Seguridad y teoría criptográfica: La infraestructura social sustentada por la dificultad de la factorización prima
 

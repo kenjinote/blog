@@ -67,7 +67,7 @@ El campo finito más básico es el **campo primo $\mathbb{F}_p$** utilizando un 
 
 El cálculo del **inverso multiplicativo modular (Modular Multiplicative Inverse)** es extremadamente importante en las implementaciones criptográficas. Para encontrar $b^{-1}$ que satisfaga $b \times b^{-1} \equiv 1 \pmod p$, se utilizan principalmente los dos siguientes algoritmos:
 
-1. **Algoritmo de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) extendido (Extended [[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm)**: Es rápido, pero dependiendo de la implementación, el tiempo de procesamiento puede depender de los valores de entrada, por lo que existe el riesgo de ataques de tiempo.
+1. **Algoritmo de [Euclides](https://kenji.blog/p/euclid/) extendido (Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm)**: Es rápido, pero dependiendo de la implementación, el tiempo de procesamiento puede depender de los valores de entrada, por lo que existe el riesgo de ataques de tiempo.
 2. **Pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/) ([Fermat's Little Theorem](https://kenji.blog/es/p/fermats-little-theorem/))**: Cuando $p$ es primo y $b \neq 0$, se cumple que $b^{p-1} \equiv 1 \pmod p$. Dividiendo ambos lados por $b$, obtenemos $b^{p-2} \equiv b^{-1} \pmod p$. En otras palabras, calculando la potencia $p-2$ de $b$, se obtiene el inverso. Dado que las operaciones de exponenciación son fáciles de implementar en tiempo constante, esta es la preferida en implementaciones criptográficas.
 
 ---

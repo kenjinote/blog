@@ -49,7 +49,7 @@ graph TD
     Mersenne <-->|"Acoustics"| Huygens
 ```
 
-At the center of this network, when someone discovered a new theorem, [Mersenne](https://kenji.blog/en/p/mersenne/) would relay it to other scholars, encouraging critique and verification. For example, it was [Mersenne](https://kenji.blog/en/p/mersenne/) who communicated [Pierre de Fermat](https://kenji.blog/en/p/fermat/)'s mathematical discoveries to [Descartes](https://kenji.blog/en/p/descartes/), sparking a fierce debate between the two. He is also known for translating Galileo Galilei's works (such as *Dialogue Concerning the Two Chief World Systems*) into French, introducing them widely despite strict censorship by the Catholic Church. Some historians assess that without him, the Scientific Revolution of the 17th century might have been delayed by decades.
+At the center of this network, when someone discovered a new theorem, [Mersenne](https://kenji.blog/en/p/mersenne/) would relay it to other scholars, encouraging critique and verification. For example, it was Mersenne who communicated Pierre de Fermat's mathematical discoveries to [Descartes](https://kenji.blog/en/p/descartes/), sparking a fierce debate between the two. He is also known for translating Galileo Galilei's works (such as *Dialogue Concerning the Two Chief World Systems*) into French, introducing them widely despite strict censorship by the Catholic Church. Some historians assess that without him, the Scientific Revolution of the 17th century might have been delayed by decades.
 
 ## Mathematical Achievements: [Mersenne](https://kenji.blog/en/p/mersenne/) Primes
 
@@ -93,7 +93,7 @@ Verification by later mathematicians revealed that there were several errors in 
 
 ### Applications to Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and GIMPS
 
-Today, [Mersenne](https://kenji.blog/en/p/mersenne/) primes continue to be explored by "GIMPS" (Great Internet [Mersenne](https://kenji.blog/en/p/mersenne/) Prime Search), a project dedicated to finding the world's largest prime numbers. Because there is a special, fast primality test called the Lucas-Lehmer test, [Mersenne](https://kenji.blog/en/p/mersenne/) numbers are extremely well-suited for discovering gigantic primes.
+Today, [Mersenne](https://kenji.blog/en/p/mersenne/) primes continue to be explored by "GIMPS" (Great Internet Mersenne Prime Search), a project dedicated to finding the world's largest prime numbers. Because there is a special, fast primality test called the Lucas-Lehmer test, [Mersenne](https://kenji.blog/en/p/mersenne/) numbers are extremely well-suited for discovering gigantic primes.
 
 ```python
 # Lucas-Lehmer test for Mersenne primes
@@ -131,7 +131,7 @@ This law is a crucial physical principle that forms the basis for designing and 
 
 [Mersenne](https://kenji.blog/en/p/mersenne/) also left significant footprints philosophically. He opposed extreme skepticism and magical or mystical ideas (such as Renaissance Hermeticism), championing rational and empirical science.
 
-When his close friend [Descartes](https://kenji.blog/en/p/descartes/) published *Meditations on First Philosophy*, [Mersenne](https://kenji.blog/en/p/mersenne/) sent the manuscript to prominent thinkers across Europe (such as Thomas Hobbes and Pierre Gassendi) to collect their objections. He then compiled them into a book along with [Descartes](https://kenji.blog/en/p/descartes/)' own replies, playing a role that could be considered a precursor to the modern peer-review system.
+When his close friend [Descartes](https://kenji.blog/en/p/descartes/) published *Meditations on First Philosophy*, Mersenne sent the manuscript to prominent thinkers across Europe (such as Thomas Hobbes and Pierre Gassendi) to collect their objections. He then compiled them into a book along with [Descartes](https://kenji.blog/en/p/descartes/)' own replies, playing a role that could be considered a precursor to the modern peer-review system.
 
 [Mersenne](https://kenji.blog/en/p/mersenne/) firmly believed that scientific progress proved the greatness of the world created by God, considering that there was no contradiction between religion and science.
 

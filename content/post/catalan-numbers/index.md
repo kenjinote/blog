@@ -22,7 +22,7 @@ tags:
 
 $$ C_0 = 1, \quad C_1 = 1, \quad C_2 = 2, \quad C_3 = 5, \quad C_4 = 14, \quad C_5 = 42, \quad C_6 = 132, \quad C_7 = 429, \quad \dots $$
 
-この数列は、驚くほど多種多様な組み合わせ問題の解として登場します。本記事では、[カタラン数](https://kenji.blog/p/catalan-numbers/)が登場する有名な4つの例（正しい括弧列、二分木、多角形の三角形分割、ディック路）を紹介し、なぜこれらが全く同じ数列になるのか、その背後にある再帰的な構造を紐解いていきます。さらに、[動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) を使った計算アルゴリズムや、[母関数](https://kenji.blog/p/generating-functions/)を用いた数学的な導出についても詳しく解説します。
+この数列は、驚くほど多種多様な組み合わせ問題の解として登場します。本記事では、[カタラン数](https://kenji.blog/p/catalan-numbers/)が登場する有名な4つの例（正しい括弧列、二分木、多角形の三角形分割、ディック路）を紹介し、なぜこれらが全く同じ数列になるのか、その背後にある再帰的な構造を紐解いていきます。さらに、動的計画法 (DP) を使った計算アルゴリズムや、[母関数](https://kenji.blog/p/generating-functions/)を用いた数学的な導出についても詳しく解説します。
 
 ## 2. [カタラン数](https://kenji.blog/p/catalan-numbers/)が現れる4つの具体例
 

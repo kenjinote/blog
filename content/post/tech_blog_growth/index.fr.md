@@ -24,7 +24,7 @@ Le système de base du blog (comme les générateurs de sites statiques) et la s
 
 ### 1.1 Optimisation des Signaux Web Essentiels (Core [Web Vitals](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))
 
-Google utilise l'expérience sur la page comme facteur de classement, et les **Signaux Web Essentiels ([LCP](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** ne peuvent être ignorés, même pour un blog technique.
+Google utilise l'expérience sur la page comme facteur de classement, et les **Signaux Web Essentiels ([LCP](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), FID/INP, [CLS](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** ne peuvent être ignorés, même pour un blog technique.
 Les blogs techniques utilisent souvent de nombreux blocs de code source, des formules mathématiques (MathJax / KaTeX) et des illustrations. Ces éléments ont tendance à retarder le rendu de la page.
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/))** : Vitesse de chargement du contenu principal dans la ligne de flottaison. Utilisez le WebP ou l'AVIF pour les images à la une, et préchargez-les en ajoutant l'attribut `fetchpriority="high"`. De plus, les gros fichiers CSS ou JS pour la coloration syntaxique doivent être chargés de manière asynchrone ou conçus pour n'être chargés que sur les pages nécessaires.

@@ -46,7 +46,7 @@ $$
 $$
 
 **Auswirkungen auf die Technologieauswahl:**
-Dieser Algorithmus rückt "Person A, die sich für [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) interessiert" und "Person B, die sich für [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) interessiert" im latenten Raum näher zusammen. Wenn Person A einen Beitrag über ein aufstrebendes Web-Framework "likt", wird der Beitrag über dieses Framework mit hoher Wahrscheinlichkeit auch in der Timeline von Person B angezeigt. Dies führt zu dem Phänomen, dass eine bestimmte Technologie innerhalb einer Gruppe von Entwicklern, die einen bestimmten Technologie-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) bevorzugen, lokal extrem populär wird.
+Dieser Algorithmus rückt "Person A, die sich für [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) interessiert" und "Person B, die sich für Rust interessiert" im latenten Raum näher zusammen. Wenn Person A einen Beitrag über ein aufstrebendes Web-Framework "likt", wird der Beitrag über dieses Framework mit hoher Wahrscheinlichkeit auch in der Timeline von Person B angezeigt. Dies führt zu dem Phänomen, dass eine bestimmte Technologie innerhalb einer Gruppe von Entwicklern, die einen bestimmten Technologie-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) bevorzugen, lokal extrem populär wird.
 
 ### 2.2 Deep Learning basierte Empfehlungsmodelle (DLRM)
 
@@ -68,7 +68,7 @@ $$
 $$
 
 **Auswirkungen auf die Technologieauswahl:**
-Riesige Modelle wie DLRM erfassen extrem feine Signale (z. B. einen leichten Anstieg der Verweildauer bei "Beiträgen mit Videos" oder "Beiträgen mit bestimmten Buzzwords") und spiegeln sie im Vorhersagescore wider. Infolgedessen werden technische Informationen mit "radikalen Titeln (z.B. 'React ist veraltet', 'Das Ende von [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)')" oder "visuell auffälligen Demos" vom Algorithmus systematisch bevorzugt.
+Riesige Modelle wie DLRM erfassen extrem feine Signale (z. B. einen leichten Anstieg der Verweildauer bei "Beiträgen mit Videos" oder "Beiträgen mit bestimmten Buzzwords") und spiegeln sie im Vorhersagescore wider. Infolgedessen werden technische Informationen mit "radikalen Titeln (z.B. 'React ist veraltet', 'Das Ende von [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)')" oder "visuell auffälligen Demos" vom Algorithmus systematisch bevorzugt.
 
 ### 2.3 Reinforcement Learning und das Multi-Armed-Bandit-Problem (Multi-Armed Bandits)
 

@@ -64,7 +64,7 @@ sequenceDiagram
 
 ## 4. Mathematical Definition of the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/)
 
-Depending on the strength of convergence, the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) has two types: the **Weak [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/)** (WLLN) and the **Strong [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/)** (SLLN). Expressed rigorously in mathematics, it is as follows.
+Depending on the strength of convergence, the [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) has two types: the **Weak Law of Large Numbers** (WLLN) and the **Strong [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/)** (SLLN). Expressed rigorously in mathematics, it is as follows.
 
 ### 4.1. Weak [Law of Large Numbers](https://kenji.blog/en/p/law-of-large-numbers/) (WLLN)
 

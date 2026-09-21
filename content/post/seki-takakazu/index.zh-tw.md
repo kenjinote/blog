@@ -12,7 +12,7 @@ tags: ["關孝和", "和算", "江戶時代", "數學史", "微積分", "行列�
 
 在日本江戶時代，有一位將獨立發展的數學「和算」推向了前所未有高度的人物。他就是 **[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)** （生於1640年代? - 卒於1708年）。他後來被尊稱為「算聖」，在日本數學史上被定位為最重要的人物之一。
 
-在同一時期的歐洲，[艾薩克·牛頓](https://kenji.blog/zh-tw/p/newton/)和[戈特弗里德·萊布尼茨](https://kenji.blog/zh-tw/p/leibniz/)正在建立微積分學，而[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)也在獨立進行著極高水準的數學發現。本文將結合歷史背景，深入探討他的一生軼事以及世界頂尖水準的數學成就。
+在同一時期的歐洲，[艾薩克·牛頓](https://kenji.blog/zh-tw/p/newton/)和戈特弗里德·萊布尼茨正在建立微積分學，而[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)也在獨立進行著極高水準的數學發現。本文將結合歷史背景，深入探討他的一生軼事以及世界頂尖水準的數學成就。
 
 # 2. 和算的黎明期與[關孝和](https://kenji.blog/zh-tw/p/seki-takakazu/)登場前的日本數學
 

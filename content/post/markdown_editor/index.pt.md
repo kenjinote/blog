@@ -252,7 +252,7 @@ Na escrita de blogs técnicos de hoje, o uso de LLMs ([Large Language Models](ht
 
 Você pode enviar os seguintes tipos de prompts sem sair do editor, utilizando o GitHub Copilot Chat no VS Code, ou o `ChatGPT.nvim` e `Copilot.vim` no Neovim.
 
-> "Crie um esboço em estrutura hierárquica Markdown, voltado para iniciantes, sobre os seguintes elementos técnicos: [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)"
+> "Crie um esboço em estrutura hierárquica Markdown, voltado para iniciantes, sobre os seguintes elementos técnicos: [Docker](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/), Kubernetes, [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)"
 
 Em seguida, os cabeçalhos e marcadores em Markdown são gerados instantaneamente. Precisamos apenas adicionar conteúdo a essa estrutura.
 

@@ -109,7 +109,7 @@ graph TD
 - **『초등 정수론 강의』**: 정수론의 기초부터 가우스의 상호 법칙까지 해설한 교과서.
 - **『근세 수학 사담』**: 19세기 수학자들의 군상을 생생하게 그린 역사서. 수학 발전의 드라마를 전해줍니다.
 
-그가 뿌린 씨앗은 [고다이라 구니히코](https://kenji.blog/ko/p/kodaira-kunihiko/)나 [이토 기요시](https://kenji.blog/ko/p/ito-kiyosi/), 나아가 [시무라 고로](https://kenji.blog/ko/p/shimura-goro/)나 다니야마 유타카 등 훗날 세계에서 활약하는 일본의 수학자들에게로 이어졌습니다.
+그가 뿌린 씨앗은 [고다이라 구니히코](https://kenji.blog/ko/p/kodaira-kunihiko/)나 이토 기요시, 나아가 [시무라 고로](https://kenji.blog/ko/p/shimura-goro/)나 다니야마 유타카 등 훗날 세계에서 활약하는 일본의 수학자들에게로 이어졌습니다.
 
 ## 결론
 

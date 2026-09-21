@@ -8,7 +8,7 @@ categories: ["matematika"]
 tags: ["aljabar", "teori grup", "teori gelanggang", "teori lapangan"]
 ---
 
-# [[Grup, Gelanggang, dan Lapangan](https://kenji.blog/id/p/groups-rings-and-fields/): Pengantar Aljabar Modern](https://kenji.blog/p/groups-rings-and-fields/)
+# [Grup, Gelanggang, dan Lapangan: Pengantar Aljabar Modern](https://kenji.blog/p/groups-rings-and-fields/)
 
 Dalam matematika, 'aljabar' berevolusi menjadi studi tentang 'struktur'.
 

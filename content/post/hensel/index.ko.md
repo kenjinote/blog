@@ -24,7 +24,7 @@ tags: ["쿠르트 헨젤", "p진수", "대수적 정수론", "수학사"]
 
 ## 3. 대학 시절과 크로네커의 영향
 
-헨젤은 본 대학과 베를린 대학에서 수학을 공부했습니다. 당시 베를린 대학은 수학 연구의 세계적인 중심지 중 하나였으며, **[카를 바이어슈트라스](https://kenji.blog/ko/p/weierstrass/)** ([Karl Weierstrass](https://kenji.blog/ko/p/weierstrass/))와 **레오폴트 크로네커** (Leopold [Kronecker](https://kenji.blog/ko/p/kronecker/))와 같은 거장들이 가르치고 있었습니다.
+헨젤은 본 대학과 베를린 대학에서 수학을 공부했습니다. 당시 베를린 대학은 수학 연구의 세계적인 중심지 중 하나였으며, **[카를 바이어슈트라스](https://kenji.blog/ko/p/weierstrass/)** (Karl Weierstrass)와 **레오폴트 크로네커** (Leopold [Kronecker](https://kenji.blog/ko/p/kronecker/))와 같은 거장들이 가르치고 있었습니다.
 
 그 중에서도 헨젤에게 가장 깊은 영향을 미친 것은 크로네커였습니다. "신은 정수를 만들었고, 다른 모든 것은 인간이 만든 것이다"라는 그의 유명한 명언에서 알 수 있듯이, 크로네커는 모든 수학이 정수를 바탕으로 엄밀하게 재구성되어야 한다는 강한 신념을 가지고 있었습니다. 크로네커의 지도 아래 헨젤은 대수학과 정수론에 깊이 몰두했습니다.
 
@@ -149,7 +149,7 @@ $$
 
 그의 강의는 명쾌하고 열정적이었으며, [헬무트 하세](https://kenji.blog/ko/p/hasse/)를 비롯한 다음 세대의 뛰어난 수학자들을 길러냈습니다.
 
-오늘날 p진수는 대수적 정수론을 넘어 **p진 해석학** , **p진 호지 이론** , 심지어 이론 물리학의 **p진 양자역학** 에 이르기까지 광범위한 분야에서 응용되고 있습니다. [앤드루 와일즈](https://kenji.blog/ko/p/wiles/)([Andrew Wiles](https://kenji.blog/ko/p/wiles/))의 "[페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)"에 대한 역사적 증명 역시 p진수 이론 없이는 불가능했을 것입니다.
+오늘날 p진수는 대수적 정수론을 넘어 **p진 해석학** , **p진 호지 이론** , 심지어 이론 물리학의 **p진 양자역학** 에 이르기까지 광범위한 분야에서 응용되고 있습니다. [앤드루 와일즈](https://kenji.blog/ko/p/wiles/)(Andrew Wiles)의 "[페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)"에 대한 역사적 증명 역시 p진수 이론 없이는 불가능했을 것입니다.
 
 ## 9. 결론
 

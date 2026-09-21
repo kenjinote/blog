@@ -30,7 +30,7 @@ En la sociedad de Internet moderna, la base para proteger el secreto de las comu
 
 Sin embargo, con la llegada de las "computadoras cuánticas", se ha señalado la posibilidad de que esta seguridad se vea socavada desde sus cimientos. A veces, en los medios de comunicación aparecen titulares sensacionalistas como: "Si se perfecciona la computadora cuántica, las contraseñas y códigos de todo el mundo serán descifrados en segundos". Pero, ¿es esto realmente cierto?
 
-En este artículo, profundizaremos en los mecanismos del GNFS (Criba General del Cuerpo de Números), que es un método clásico de criptoanálisis, y el "[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)" ([Shor's Algorithm](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)), que es la versión definitiva del algoritmo de descifrado utilizando computadoras cuánticas. Explicaremos de manera sencilla conceptos avanzados como la transformada cuántica de Fourier y el hallazgo de períodos, y examinaremos en detalle el estado actual del hardware cuántico en la era actual NISQ (Noisy Intermediate-Scale Quantum) y los obstáculos necesarios para romper realmente [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)-2048.
+En este artículo, profundizaremos en los mecanismos del GNFS (Criba General del Cuerpo de Números), que es un método clásico de criptoanálisis, y el "[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)" (Shor's Algorithm), que es la versión definitiva del algoritmo de descifrado utilizando computadoras cuánticas. Explicaremos de manera sencilla conceptos avanzados como la transformada cuántica de Fourier y el hallazgo de períodos, y examinaremos en detalle el estado actual del hardware cuántico en la era actual NISQ (Noisy Intermediate-Scale Quantum) y los obstáculos necesarios para romper realmente [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)-2048.
 
 ---
 
@@ -96,7 +96,7 @@ El problema de encontrar el entero positivo más pequeño $ r $ que cumpla con e
 
 Si se encuentra este período $ r $, y si $ r $ es par, entonces $ a^r - 1 \equiv 0 \pmod N $, y usando la fórmula de factorización se puede transformar en:
 $ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $
-A partir de aquí, al calcular el máximo común divisor de $ N $ y $ a^{r/2} \pm 1 $ usando el algoritmo de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/), se puede obtener un factor primo de $ N $ con una probabilidad extremadamente alta.
+A partir de aquí, al calcular el máximo común divisor de $ N $ y $ a^{r/2} \pm 1 $ usando el algoritmo de [Euclides](https://kenji.blog/p/euclid/), se puede obtener un factor primo de $ N $ con una probabilidad extremadamente alta.
 
 Para encontrar el período $ r $ en una computadora clásica, en última instancia, se requieren pasos exponenciales y no se puede acelerar. Sin embargo, una computadora cuántica puede encontrar este período $ r $ en un instante (en tiempo polinómico).
 

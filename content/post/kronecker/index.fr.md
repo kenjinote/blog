@@ -30,7 +30,7 @@ Cette déclaration n'était pas purement poétique ; elle était soutenue par sa
 
 [Kronecker](https://kenji.blog/fr/p/kronecker/) est né en 1823 dans une riche famille juive de Liegnitz, en Prusse (aujourd'hui Legnica, en Pologne). Faisant preuve d'une intelligence extraordinaire dès son plus jeune âge, il s'inscrivit au Gymnasium local (école secondaire de niveau avancé).
 
-C'est là qu'eut lieu une rencontre fatidique. Un nouveau professeur arriva au Gymnasium — **[Ernst Kummer](https://kenji.blog/fr/p/kummer/)** , qui allait plus tard devenir un pionnier de la théorie des idéaux. [Kummer](https://kenji.blog/fr/p/kummer/) reconnut immédiatement le talent de [Kronecker](https://kenji.blog/fr/p/kronecker/) et lui dispensa un enseignement mathématique avancé et personnalisé.
+C'est là qu'eut lieu une rencontre fatidique. Un nouveau professeur arriva au Gymnasium — **[Ernst Kummer](https://kenji.blog/fr/p/kummer/)** , qui allait plus tard devenir un pionnier de la théorie des idéaux. Kummer reconnut immédiatement le talent de [Kronecker](https://kenji.blog/fr/p/kronecker/) et lui dispensa un enseignement mathématique avancé et personnalisé.
 
 ```mermaid
 graph TD
@@ -120,7 +120,7 @@ Ce théorème démontre que le concept abstrait d'une "extension abélienne des 
 
 ## 4.4. Le rêve de jeunesse de [Kronecker](https://kenji.blog/fr/p/kronecker/) (Jugendtraum)
 
-Le théorème de [Kronecker](https://kenji.blog/fr/p/kronecker/)-Weber concernait les extensions abéliennes sur les nombres rationnels $\mathbb{Q}$. [Kronecker](https://kenji.blog/fr/p/kronecker/) rêvait d'étendre cela à des corps algébriques plus généraux, tels que les corps quadratiques imaginaires. Sa grande question, "Toutes les extensions abéliennes d'un corps quadratique imaginaire sont-elles générées par les valeurs spéciales de certaines fonctions ?", a ensuite été formulée comme le **12ème problème de [Hilbert](https://kenji.blog/fr/p/hilbert/)** .
+Le théorème de [Kronecker](https://kenji.blog/fr/p/kronecker/)-Weber concernait les extensions abéliennes sur les nombres rationnels $\mathbb{Q}$. Kronecker rêvait d'étendre cela à des corps algébriques plus généraux, tels que les corps quadratiques imaginaires. Sa grande question, "Toutes les extensions abéliennes d'un corps quadratique imaginaire sont-elles générées par les valeurs spéciales de certaines fonctions ?", a ensuite été formulée comme le **12ème problème de [Hilbert](https://kenji.blog/fr/p/hilbert/)** .
 
 Il s'y référait comme son "plus cher rêve de jeunesse". Bien que ce problème ait connu des progrès massifs grâce à la théorie des corps de classes de Teiji [Takagi](https://kenji.blog/fr/p/takagi-teiji/) et à la théorie ultérieure de la multiplication complexe, il reste un problème majeur non résolu pour les corps algébriques complètement généraux.
 

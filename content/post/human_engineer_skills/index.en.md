@@ -133,7 +133,7 @@ While AI can write "code that prioritizes C" or "code that prioritizes A", it ca
 
 ### 4.2 [Asynchronous](https://kenji.blog/en/p/event-driven-architecture-async/) Communication and Eventual [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)
 
-As systems scale up, inter-service coordination transitions from synchronous communication via [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)s to asynchronous communication using message queues (such as [Kafka](https://kenji.blog/en/p/event-driven-architecture-message-queue-kafka-rabbitmq/) or [RabbitMQ](https://kenji.blog/en/p/event-driven-architecture-message-queue-kafka-rabbitmq/)). Here, data consistency shifts from immediate consistency to "Eventual [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)."
+As systems scale up, inter-service coordination transitions from synchronous communication via [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)s to asynchronous communication using message queues (such as Kafka or RabbitMQ). Here, data consistency shifts from immediate consistency to "Eventual [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/)."
 At what point should advanced architectural patterns like the Saga pattern or [CQRS](https://kenji.blog/en/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) be introduced? Making these complex decisions and drawing the blueprint for the entire system is exactly where the true worth of a senior engineer shines.
 
 ```mermaid

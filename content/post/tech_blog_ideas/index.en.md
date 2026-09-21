@@ -180,7 +180,7 @@ There are primarily 3 types of notes in Zettelkasten:
 2. **Literature Notes**: Summaries in your own words of articles or books you've read.
 3. **Permanent Notes**: Completed thoughts written on a single topic. These become the direct seeds for blog articles.
 
-By using Obsidian's backlink feature (`[[Note Name]]`), you can link a note like "[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)'s Ownership" with a note like "History of [Garbage Collection](https://kenji.blog/en/p/memory-management-garbage-collection/)", for example, allowing you to discover unexpected connections between ideas.
+By using Obsidian's backlink feature (`[Note Name]]`), you can link a note like "[Rust's Ownership" with a note like "History of [Garbage Collection](https://kenji.blog/en/p/memory-management-garbage-collection/)", for example, allowing you to discover unexpected connections between ideas.
 
 ## 5. Semantic Search Using Vector Database (Pinecone) and OpenAI Embeddings
 
@@ -316,7 +316,7 @@ As a matrix of combinations for tech blogs, patterns like the following can be c
 
 1. **[Old Technology] × [New Paradigm]**: e.g., "Anti-patterns of modern microservices design learned from COBOL architecture"
 2. **[Frontend] × [Backend Concepts]**: e.g., "Explaining React's virtual DOM update algorithm from the perspective of database transaction isolation levels"
-3. **[Abstract Mathematics / Theory] × [Concrete Implementation]**: e.g., "Deciphering [Kubernetes](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/) [Pod](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/) scheduling optimization with graph theory"
+3. **[Abstract Mathematics / Theory] × Concrete Implementation]**: e.g., "Deciphering [Kubernetes [Pod](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/) scheduling optimization with graph theory"
 
 To intentionally cause these combinations, you can use the Pinecone semantic search system built earlier to extract a random concept A and concept B, and throw a prompt to an AI (like ChatGPT) saying "Propose 5 tech blog titles and outline ideas combining these two", allowing you to infinitely generate article ideas from novel angles you wouldn't come up with yourself.
 

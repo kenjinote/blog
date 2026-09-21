@@ -13,7 +13,7 @@ tags:
 
 ## 1. Einführung: Das berühmteste Mathematikrätsel der Welt
 
-In der Geschichte der Mathematik gibt es ein Problem, das die meisten Menschen fasziniert und gequält hat. Das ist **[Fermats Letzter Satz](https://kenji.blog/de/p/fermats-last-theorem/)** ([Fermat's Last Theorem](https://kenji.blog/de/p/fermats-last-theorem/)). Ein kurzes Memo, das von [Pierre de Fermat](https://kenji.blog/de/p/fermat/), einem französischen Richter und Amateurmathematiker des 17. Jahrhunderts, am Rand seines Lieblingsbuchs „Arithmetica“ von [Diophantus](https://kenji.blog/de/p/diophantus/) hinterlassen wurde, war der Beginn eines grandiosen mathematischen Dramas, das 360 Jahre dauerte.
+In der Geschichte der Mathematik gibt es ein Problem, das die meisten Menschen fasziniert und gequält hat. Das ist **[Fermats Letzter Satz](https://kenji.blog/de/p/fermats-last-theorem/)** (Fermat's Last Theorem). Ein kurzes Memo, das von Pierre de Fermat, einem französischen Richter und Amateurmathematiker des 17. Jahrhunderts, am Rand seines Lieblingsbuchs „Arithmetica“ von [Diophantus](https://kenji.blog/de/p/diophantus/) hinterlassen wurde, war der Beginn eines grandiosen mathematischen Dramas, das 360 Jahre dauerte.
 
 Der Inhalt des Theorems selbst ist so einfach, dass selbst ein Mittelschüler ihn verstehen kann.
 

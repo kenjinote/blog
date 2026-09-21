@@ -21,7 +21,7 @@ tags:
 
 ## [メルセンヌ](https://kenji.blog/p/mersenne/)の生涯と修道院生活
 
-[マラン・メルセンヌ](https://kenji.blog/p/mersenne/)は1588年9月8日、フランスのメーヌ州ウワーズで農家の家庭に生まれました。彼はル・マンのコレージュで基礎教育を受けた後、1604年にイエズス会が設立したラ・フレーシュのコレージュに入学します。ここで彼は、後に近代哲学の祖となる[ルネ・デカルト](https://kenji.blog/p/descartes/)（[René Descartes](https://kenji.blog/p/descartes/)）と出会い、生涯にわたる深い友情を築きました。
+[マラン・メルセンヌ](https://kenji.blog/p/mersenne/)は1588年9月8日、フランスのメーヌ州ウワーズで農家の家庭に生まれました。彼はル・マンのコレージュで基礎教育を受けた後、1604年にイエズス会が設立したラ・フレーシュのコレージュに入学します。ここで彼は、後に近代哲学の祖となるルネ・デカルト（[René Descartes](https://kenji.blog/p/descartes/)）と出会い、生涯にわたる深い友情を築きました。
 
 1611年、[メルセンヌ](https://kenji.blog/p/mersenne/)はミニム修道会（Order of Minims）に入会します。ミニム会は厳格な規律（断食や菜食主義など）を持つ修道会でしたが、学問の追求を奨励する風土がありました。1619年、彼はパリのランノンシアード修道院に定住し、そこを拠点として神学や哲学、そして自然科学の研究に没頭することになります。
 
@@ -49,11 +49,11 @@ graph TD
     Mersenne <-->|"音響学"| Huygens
 ```
 
-このネットワークの中心にいた[メルセンヌ](https://kenji.blog/p/mersenne/)は、誰かが新しい定理を発見するとそれを別の学者に伝え、批判や検証を促しました。たとえば、[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/)の数学的発見を[デカルト](https://kenji.blog/p/descartes/)に伝え、二人の間で激しい論争を引き起こしたのも[メルセンヌ](https://kenji.blog/p/mersenne/)です。また、ガリレオ・ガリレイの著作（『天文対話』など）をフランス語に翻訳し、カトリック教会の検閲の厳しい中でも広く紹介したことでも知られています。彼がいなければ、17世紀の科学革命は数十年遅れていたかもしれないと評価する歴史家もいます。
+このネットワークの中心にいた[メルセンヌ](https://kenji.blog/p/mersenne/)は、誰かが新しい定理を発見するとそれを別の学者に伝え、批判や検証を促しました。たとえば、ピエール・ド・フェルマーの数学的発見をデカルトに伝え、二人の間で激しい論争を引き起こしたのも[メルセンヌ](https://kenji.blog/p/mersenne/)です。また、ガリレオ・ガリレイの著作（『天文対話』など）をフランス語に翻訳し、カトリック教会の検閲の厳しい中でも広く紹介したことでも知られています。彼がいなければ、17世紀の科学革命は数十年遅れていたかもしれないと評価する歴史家もいます。
 
 ## 数学的業績：[メルセンヌ](https://kenji.blog/p/mersenne/)素数
 
-[メルセンヌ](https://kenji.blog/p/mersenne/)の名を現代に最も強く残しているのは、間違いなく **[メルセンヌ](https://kenji.blog/p/mersenne/)素数** （[Mersenne](https://kenji.blog/p/mersenne/) prime）でしょう。
+[メルセンヌ](https://kenji.blog/p/mersenne/)の名を現代に最も強く残しているのは、間違いなく **メルセンヌ素数** （[Mersenne](https://kenji.blog/p/mersenne/) prime）でしょう。
 
 [メルセンヌ](https://kenji.blog/p/mersenne/)数は以下のように定義されます。
 
@@ -93,7 +93,7 @@ $$
 
 ### 現代の暗号理論とGIMPSへの応用
 
-現在、世界最大の素数を見つけるプロジェクトである「GIMPS（Great Internet [Mersenne](https://kenji.blog/p/mersenne/) Prime Search）」では、[メルセンヌ](https://kenji.blog/p/mersenne/)素数が探求され続けています。リュカ・レーマー・テスト（Lucas-Lehmer test）と呼ばれる特殊で高速な素数判定法が存在するため、巨大な素数の発見には[メルセンヌ](https://kenji.blog/p/mersenne/)数が極めて適しているのです。
+現在、世界最大の素数を見つけるプロジェクトである「GIMPS（Great Internet [Mersenne](https://kenji.blog/p/mersenne/) Prime Search）」では、メルセンヌ素数が探求され続けています。リュカ・レーマー・テスト（Lucas-Lehmer test）と呼ばれる特殊で高速な素数判定法が存在するため、巨大な素数の発見には[メルセンヌ](https://kenji.blog/p/mersenne/)数が極めて適しているのです。
 
 ```python
 # メルセンヌ素数のためのリュカ・レーマー・テスト
@@ -113,7 +113,7 @@ def is_mersenne_prime(p):
     return s == 0
 ```
 
-発見された巨大な素数は、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号などの現代の[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号システムの安全性評価や、乱数生成アルゴリズム（[メルセンヌ](https://kenji.blog/p/mersenne/)・ツイスタなど）の基盤として、情報化社会を支える重要な役割を果たしています。
+発見された巨大な素数は、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号などの現代の公開鍵暗号システムの安全性評価や、乱数生成アルゴリズム（[メルセンヌ](https://kenji.blog/p/mersenne/)・ツイスタなど）の基盤として、情報化社会を支える重要な役割を果たしています。
 
 ## 音響学と音楽理論への貢献：[メルセンヌ](https://kenji.blog/p/mersenne/)の法則
 
@@ -131,7 +131,7 @@ $$
 
 [メルセンヌ](https://kenji.blog/p/mersenne/)は哲学的にも重要な足跡を残しました。彼は極端な懐疑主義や魔術的・神秘主義的な思想（ルネサンス・ヘルメス主義など）に反対し、理性的かつ経験的な科学を擁護しました。
 
-親友である[デカルト](https://kenji.blog/p/descartes/)が『省察』（Meditationes de prima philosophia）を出版する際、[メルセンヌ](https://kenji.blog/p/mersenne/)は原稿をヨーロッパ中の著名な思想家（トマス・ホッブズやピエール・ガッサンディなど）に送り、彼らからの反論を集めました。そして、[デカルト](https://kenji.blog/p/descartes/)自身の再反論とともに書籍としてまとめるという、現代の査読（ピアレビュー）システムの先駆けとも言える役割を果たしました。
+親友である[デカルト](https://kenji.blog/p/descartes/)が『省察』（Meditationes de prima philosophia）を出版する際、メルセンヌは原稿をヨーロッパ中の著名な思想家（トマス・ホッブズやピエール・ガッサンディなど）に送り、彼らからの反論を集めました。そして、[デカルト](https://kenji.blog/p/descartes/)自身の再反論とともに書籍としてまとめるという、現代の査読（ピアレビュー）システムの先駆けとも言える役割を果たしました。
 
 [メルセンヌ](https://kenji.blog/p/mersenne/)は、科学の進歩が神の創造した世界の偉大さを証明するものであると固く信じており、宗教と科学の間に矛盾はないと考えていました。
 

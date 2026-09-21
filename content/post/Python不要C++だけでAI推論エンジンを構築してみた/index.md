@@ -183,7 +183,7 @@ graph LR
     D --> E["Execute Nodes In Order"]
 ```
 
-[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)を評価する際（フォワードパス）は、トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)を用いて依存関係のないノードから順に処理を実行します。推論のみであればバックプロパゲーション用の勾配を保持する必要がないため、[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)は非常にシンプルになります。
+[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)を評価する際（フォワードパス）は、トポロジカルソートを用いて依存関係のないノードから順に処理を実行します。推論のみであればバックプロパゲーション用の勾配を保持する必要がないため、[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)は非常にシンプルになります。
 
 ---
 

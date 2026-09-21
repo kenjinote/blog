@@ -82,7 +82,7 @@ Dessa forma, com a introdução da CDN, torna-se possível reduzir drasticamente
 
 ---
 
-## 4. Construção de um [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) com [GitHub Actions](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)
+## 4. Construção de um [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) CI/CD com [GitHub Actions](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)
 
 Para automatizar o processo de atualização de um blog Hugo, construiremos um pipeline CI/CD utilizando o GitHub Actions. Com isso, basta escrever artigos em Markdown localmente e dar um `git push` para que o processo de compilação execute automaticamente e o site seja implantado no Cloudflare Pages ou GitHub Pages.
 

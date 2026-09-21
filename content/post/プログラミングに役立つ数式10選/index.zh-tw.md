@@ -559,7 +559,7 @@ for val, prob in zip(logits, probabilities):
 
 ---
 
-## 10. [歐幾里得](https://kenji.blog/zh-tw/p/euclid/)距離與畢氏定理 ([[Euclid](https://kenji.blog/zh-tw/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. [歐幾里得](https://kenji.blog/zh-tw/p/euclid/)距離與畢氏定理 ([Euclide](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### 公式的優美與概要
 這是自古希臘傳承下來的幾何學基礎，也是定義 $n$ 維空間中兩點間直線距離的公式。在二維空間中，它本身就是畢氏定理（$a^2 + b^2 = c^2$）。

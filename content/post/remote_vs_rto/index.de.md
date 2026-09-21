@@ -82,7 +82,7 @@ graph LR
     DB === Data
 ```
 
-Diese Silobildung ist nicht unbedingt etwas Schlechtes. Wenn eine [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur mit klaren API-Schnittstellen und unabhängigen Bereitstellungsmöglichkeiten angewendet wird, kann es sogar als "Inverse Conway Maneuver" (umgekehrtes Conway-Manöver) empfohlen werden, die Kommunikation zwischen den Teams bewusst einzuschränken und deren Unabhängigkeit zu erhöhen. Man kann sagen, dass vollständige Remote-Arbeit für die Entwicklung lose gekoppelter Systeme mit klaren Grenzen geeignet ist.
+Diese Silobildung ist nicht unbedingt etwas Schlechtes. Wenn eine [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur mit klaren API-Schnittstellen und unabhängigen Bereitstellungsmöglichkeiten angewendet wird, kann es sogar als "Inverse Conway Maneuver" (umgekehrtes Conway-Manöver) empfohlen werden, die Kommunikation zwischen den Teams bewusst einzuschränken und deren Unabhängigkeit zu erhöhen. Man kann sagen, dass vollständige Remote-Arbeit für die Entwicklung lose gekoppelter Systeme mit klaren Grenzen geeignet ist.
 
 Bei der anfänglichen Aufbauphase eines Systems (Entwicklung von Null auf Eins), bei umfangreichem Refactoring über mehrere Komponenten hinweg oder bei der Fehlerbehebung bei unbekannten Ausfällen ist jedoch eine enge Kommunikation mit hoher Bandbreite über Teamgrenzen hinweg unerlässlich. Eine übermäßige Silobildung in einer Remote-Umgebung macht das Lösen solch monolithischer Probleme extrem schwierig.
 

@@ -34,7 +34,7 @@ $x$ 와 $y$ , 그리고 $k$ 는 모두 정수이므로 $(x - ky)$ 와 $(x + ky)$
 
 이 방정식에는 '펠'이라는 이름이 붙어 있지만, 역사적인 사실을 살펴보면 조금 기묘한 배경이 있습니다. 사실 이 방정식의 일반적인 해법을 근대 유럽에서 처음으로 연구하고, 해가 항상 존재한다고 강력히 주장한 사람은 프랑스의 위대한 수학자 **[피에르 드 페르마](https://kenji.blog/ko/p/fermat/)** ([Pierre de Fermat](https://kenji.blog/ko/p/fermat/))입니다.
 
-나중에 **[레온하르트 오일러](https://kenji.blog/ko/p/euler/)** ([Leonhard Euler](https://kenji.blog/ko/p/euler/))가 영국의 수학자 **존 펠** (John Pell)의 이름을 이 방정식에 잘못 연결하는 바람에, 오늘날까지도 '[펠 방정식](https://kenji.blog/ko/p/pell-equation/)'으로 널리 정착되고 말았습니다. 펠 자신은 이 방정식의 해법에서 중심적인 역할을 수행한 것은 아닙니다.
+나중에 **[레온하르트 오일러](https://kenji.blog/ko/p/euler/)** (Leonhard Euler)가 영국의 수학자 **존 펠** (John Pell)의 이름을 이 방정식에 잘못 연결하는 바람에, 오늘날까지도 '[펠 방정식](https://kenji.blog/ko/p/pell-equation/)'으로 널리 정착되고 말았습니다. 펠 자신은 이 방정식의 해법에서 중심적인 역할을 수행한 것은 아닙니다.
 
 시대를 더 거슬러 올라가면, 페르마보다 수백 년 전에 인도의 수학자 **브라마굽타** (Brahmagupta)와 **바스카라 2세** (Bhāskara II)는 차크라발라법(Chakravala method)이라는 세련된 알고리즘을 사용하여 이러한 종류의 방정식의 해를 계산하고 있었습니다. 고대에서 중세, 그리고 근대로 이어지는 수학자들의 탐구의 역사가 이 방정식에 새겨져 있습니다.
 

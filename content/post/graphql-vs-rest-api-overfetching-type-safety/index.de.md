@@ -352,7 +352,7 @@ Wir haben bisher die starken Vorteile von GraphQL dargelegt, aber es ist keine �
 
 ### Fazit
 
-Die REST-API ist nach wie vor eine hervorragende Architektur und bleibt eine starke Option für öffentliche APIs und die Kommunikation zwischen Diensten ([[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)).
+Die REST-API ist nach wie vor eine hervorragende Architektur und bleibt eine starke Option für öffentliche APIs und die Kommunikation zwischen Diensten ([Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)).
 
 Andererseits bietet **GraphQL** für hochgradig interaktive, moderne Web- und mobile Anwendungen mit komplexen Datenanforderungen eine überwältigende DX und UX durch „Eliminierung von Overfetching/Underfetching“, „sichere Frontend-Entwicklung durch starke Typinferenz“ und „Automatisierung der Statusverwaltung durch normalisiertes Caching“.
 

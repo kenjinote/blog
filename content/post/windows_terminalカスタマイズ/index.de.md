@@ -226,7 +226,7 @@ Durch die Anpassung des `actions`-Abschnitts können Sie den Bildschirm völlig 
 ]
 ```
 
-Durch das Konfigurieren der obigen Tastenkombinationen können Sie die Größe der Panes mit `Alt + Shift + Pfeiltasten` anpassen und den Fokus sofort zwischen den Panes mit `Alt + Pfeiltasten` verschieben. Dies ermöglicht nahtlose, hochgradig parallele Arbeit, z. B. das Starten eines lokalen Node.js-Servers in einem Pane zur Überwachung von Protokollen, das Ausführen von Git-Befehlen in einem anderen und das Überprüfen des Status von [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n in noch einem weiteren.
+Durch das Konfigurieren der obigen Tastenkombinationen können Sie die Größe der Panes mit `Alt + Shift + Pfeiltasten` anpassen und den Fokus sofort zwischen den Panes mit `Alt + Pfeiltasten` verschieben. Dies ermöglicht nahtlose, hochgradig parallele Arbeit, z. B. das Starten eines lokalen Node.js-Servers in einem Pane zur Überwachung von Protokollen, das Ausführen von Git-Befehlen in einem anderen und das Überprüfen des Status von [Docker](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n in noch einem weiteren.
 
 ## 4.1 Quake Mode (Globales Dropdown-Terminal)
 

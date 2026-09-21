@@ -10,7 +10,7 @@ tags: ["Ernst Kummer", "Teorema Terakhir Fermat", "Bilangan Ideal", "Teori Bilan
 
 # [Ernst Kummer](https://kenji.blog/id/p/kummer/): Bapak Bilangan Ideal dan Fajar Teori Bilangan Aljabar
 
-Dalam sejarah matematika, bukan hal yang aneh bagi sebuah tantangan terhadap masalah terbuka tertentu untuk membuka bidang studi yang sama sekali baru. Ernst Eduard [Kummer](https://kenji.blog/id/p/kummer/) ( **Ernst Eduard [Kummer](https://kenji.blog/id/p/kummer/)** ) adalah seorang raksasa matematika Jerman abad ke-19 yang menciptakan titik balik bersejarah seperti itu. Selama perjuangannya yang mendalam dengan **[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)** ( **[Fermat's Last Theorem](https://kenji.blog/id/p/fermats-last-theorem/)** ), ia memperkenalkan konsep revolusioner **Bilangan Ideal** ( **Ideal Numbers** ), yang meletakkan dasar bagi teori bilangan aljabar modern.
+Dalam sejarah matematika, bukan hal yang aneh bagi sebuah tantangan terhadap masalah terbuka tertentu untuk membuka bidang studi yang sama sekali baru. Ernst Eduard [Kummer](https://kenji.blog/id/p/kummer/) ( **Ernst Eduard Kummer** ) adalah seorang raksasa matematika Jerman abad ke-19 yang menciptakan titik balik bersejarah seperti itu. Selama perjuangannya yang mendalam dengan **Teorema Terakhir Fermat** ( **[Fermat's Last Theorem](https://kenji.blog/id/p/fermats-last-theorem/)** ), ia memperkenalkan konsep revolusioner **Bilangan Ideal** ( **Ideal Numbers** ), yang meletakkan dasar bagi teori bilangan aljabar modern.
 
 Dalam artikel ini, kita akan mempelajari lebih dalam kehidupan [Kummer](https://kenji.blog/id/p/kummer/) yang bergejolak, kisah-kisah manusiawi di sekitarnya, dan pencapaiannya yang cemerlang yang terus bersinar dalam sejarah matematika.
 
@@ -20,7 +20,7 @@ Dalam artikel ini, kita akan mempelajari lebih dalam kehidupan [Kummer](https://
 
 ### Kehidupan Awal dan Peralihan dari Teologi
 
-[Ernst Kummer](https://kenji.blog/id/p/kummer/) lahir pada 29 Januari 1810, di Sorau ( **Sorau** ), Kerajaan Prusia (sekarang di Polandia). Ayahnya, seorang dokter, meninggal ketika [Kummer](https://kenji.blog/id/p/kummer/) masih sangat muda, dan ia dibesarkan oleh ibunya. Meskipun miskin, [Kummer](https://kenji.blog/id/p/kummer/) menerima pendidikan yang berdedikasi dan masuk ke Universitas Halle pada tahun 1828.
+[Ernst Kummer](https://kenji.blog/id/p/kummer/) lahir pada 29 Januari 1810, di Sorau ( **Sorau** ), Kerajaan Prusia (sekarang di Polandia). Ayahnya, seorang dokter, meninggal ketika Kummer masih sangat muda, dan ia dibesarkan oleh ibunya. Meskipun miskin, [Kummer](https://kenji.blog/id/p/kummer/) menerima pendidikan yang berdedikasi dan masuk ke Universitas Halle pada tahun 1828.
 
 Awalnya, ia mengambil jurusan teologi Protestan, tetapi di bawah pengaruh Profesor Heinrich Ferdinand Scherk ( **Heinrich Ferdinand Scherk** ), ia terpikat oleh keindahan dan kedalaman matematika. Dibimbing oleh Profesor Scherk, [Kummer](https://kenji.blog/id/p/kummer/) mengabdikan dirinya pada matematika dan memperoleh gelar doktor hanya tiga tahun kemudian, pada tahun 1831.
 
@@ -28,13 +28,13 @@ Awalnya, ia mengambil jurusan teologi Protestan, tetapi di bawah pengaruh Profes
 
 Setelah lulus, [Kummer](https://kenji.blog/id/p/kummer/) tidak bisa langsung mengamankan posisi universitas, sehingga ia bekerja selama sekitar sepuluh tahun sebagai guru matematika dan fisika di sebuah gymnasium di Liegnitz ( **Liegnitz** ), dekat dengan kampung halamannya. Periode sebagai guru ini sama sekali tidak membuang-buang waktu. Ia memiliki semangat yang mendalam sebagai seorang pendidik dan membesarkan siswa-siswa yang luar biasa.
 
-Salah satu siswa tersebut adalah Leopold [Kronecker](https://kenji.blog/id/p/kronecker/) ( **Leopold [Kronecker](https://kenji.blog/id/p/kronecker/)** ), yang kemudian akan menjadi rekan dan teman seumur hidup [Kummer](https://kenji.blog/id/p/kummer/). [Kummer](https://kenji.blog/id/p/kummer/) mengenali bakat [Kronecker](https://kenji.blog/id/p/kronecker/) yang luar biasa, mengajarinya matematika tingkat lanjut, dan menempatkannya di jalur penelitian. Saat bekerja sebagai guru gymnasium, [Kummer](https://kenji.blog/id/p/kummer/) melanjutkan penelitiannya sendiri, menerbitkan serangkaian makalah luar biasa di jurnal akademik di Berlin.
+Salah satu siswa tersebut adalah Leopold [Kronecker](https://kenji.blog/id/p/kronecker/) ( **Leopold Kronecker** ), yang kemudian akan menjadi rekan dan teman seumur hidup Kummer. Kummer mengenali bakat Kronecker yang luar biasa, mengajarinya matematika tingkat lanjut, dan menempatkannya di jalur penelitian. Saat bekerja sebagai guru gymnasium, [Kummer](https://kenji.blog/id/p/kummer/) melanjutkan penelitiannya sendiri, menerbitkan serangkaian makalah luar biasa di jurnal akademik di Berlin.
 
 ### Kejayaan sebagai Profesor Universitas
 
-Pencapaian penelitiannya yang luar biasa menarik perhatian para ahli matematika terkemuka pada masa itu. Pada tahun 1842, atas rekomendasi [Carl Gustav Jacob Jacobi](https://kenji.blog/id/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/id/p/jacobi/)** ) dan Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ), [Kummer](https://kenji.blog/id/p/kummer/) menjadi profesor penuh di Universitas Breslau. Selanjutnya, pada tahun 1855, ia diangkat sebagai profesor di Universitas Berlin untuk menggantikan Dirichlet, yang telah pindah ke Göttingen.
+Pencapaian penelitiannya yang luar biasa menarik perhatian para ahli matematika terkemuka pada masa itu. Pada tahun 1842, atas rekomendasi [Carl Gustav Jacob Jacobi](https://kenji.blog/id/p/jacobi/) ( **Carl Gustav Jacob Jacobi** ) dan Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ), [Kummer](https://kenji.blog/id/p/kummer/) menjadi profesor penuh di Universitas Breslau. Selanjutnya, pada tahun 1855, ia diangkat sebagai profesor di Universitas Berlin untuk menggantikan Dirichlet, yang telah pindah ke Göttingen.
 
-Di Universitas Berlin, [Kummer](https://kenji.blog/id/p/kummer/), bersama dengan [Karl Weierstrass](https://kenji.blog/id/p/weierstrass/) ( **[Karl Weierstrass](https://kenji.blog/id/p/weierstrass/)** ) dan mantan muridnya [Kronecker](https://kenji.blog/id/p/kronecker/), mengangkat Berlin menjadi pusat matematika global. Kuliah-kuliahnya sangat jelas dan penuh semangat, menarik banyak mahasiswa brilian dari seluruh Eropa.
+Di Universitas Berlin, [Kummer](https://kenji.blog/id/p/kummer/), bersama dengan Karl Weierstrass ( **Karl Weierstrass** ) dan mantan muridnya [Kronecker](https://kenji.blog/id/p/kronecker/), mengangkat Berlin menjadi pusat matematika global. Kuliah-kuliahnya sangat jelas dan penuh semangat, menarik banyak mahasiswa brilian dari seluruh Eropa.
 
 ---
 
@@ -64,7 +64,7 @@ $$
 
 Tidak ada solusi bilangan bulat positif $(x, y, z)$ yang memenuhi persamaan ini.
 
-Pada tahun 1847, matematikawan Prancis [Gabriel Lamé](https://kenji.blog/id/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/id/p/lame/)** ) dan [Augustin-Louis Cauchy](https://kenji.blog/id/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/id/p/cauchy/)** ) mengumumkan bahwa mereka telah berhasil membuktikan teorema ini. Pendekatan mereka adalah untuk memperluas faktorisasi ke ranah bilangan kompleks (lapangan siklotomik).
+Pada tahun 1847, matematikawan Prancis [Gabriel Lamé](https://kenji.blog/id/p/lame/) ( **Gabriel Lamé** ) dan Augustin-Louis Cauchy ( **[Augustin-Louis Cauchy](https://kenji.blog/id/p/cauchy/)** ) mengumumkan bahwa mereka telah berhasil membuktikan teorema ini. Pendekatan mereka adalah untuk memperluas faktorisasi ke ranah bilangan kompleks (lapangan siklotomik).
 
 Menggunakan akar persatuan primitif ke-$p$, $\zeta$ (di mana $\zeta^p = 1, \zeta \neq 1$), persamaan $x^p + y^p = z^p$ dapat difaktorkan sebagai berikut:
 
@@ -74,7 +74,7 @@ $$
 
 [Lamé](https://kenji.blog/id/p/lame/) dan yang lainnya secara implisit berasumsi bahwa "keunikan faktorisasi prima" dalam bilangan bulat biasa (di mana bilangan bulat apa pun dapat diekspresikan secara unik sebagai produk bilangan prima) juga akan berlaku di dunia bilangan bulat kompleks yang diperluas ini (bilangan bulat siklotomik).
 
-Namun, [Kummer](https://kenji.blog/id/p/kummer/) telah menemukan beberapa tahun sebelumnya bahwa asumsi ini salah. Misalnya, ketika $p=23$, keunikan faktorisasi prima gagal. Tanpa faktorisasi yang unik, bukti oleh [Lamé](https://kenji.blog/id/p/lame/) dan [Cauchy](https://kenji.blog/id/p/cauchy/) runtuh sepenuhnya.
+Namun, [Kummer](https://kenji.blog/id/p/kummer/) telah menemukan beberapa tahun sebelumnya bahwa asumsi ini salah. Misalnya, ketika $p=23$, keunikan faktorisasi prima gagal. Tanpa faktorisasi yang unik, bukti oleh Lamé dan [Cauchy](https://kenji.blog/id/p/cauchy/) runtuh sepenuhnya.
 
 ```mermaid
 flowchart TD
@@ -108,7 +108,7 @@ Kemudian, Richard Dedekind ( **Richard Dedekind** ) menggeneralisasi bilangan id
 
 ## Bilangan Prima Reguler dan Bukti Parsial dari [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)
 
-Menggunakan teori bilangan ideal, [Kummer](https://kenji.blog/id/p/kummer/) memberikan pukulan besar terhadap [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/). Ia mendefinisikan konsep **Bilangan Prima Reguler** ( **Regular Primes** ) dan membuktikan hasil yang menakjubkan bahwa "jika $p$ adalah bilangan prima reguler, maka [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) berlaku untuk $p$."
+Menggunakan teori bilangan ideal, [Kummer](https://kenji.blog/id/p/kummer/) memberikan pukulan besar terhadap Teorema Terakhir Fermat. Ia mendefinisikan konsep **Bilangan Prima Reguler** ( **Regular Primes** ) dan membuktikan hasil yang menakjubkan bahwa "jika $p$ adalah bilangan prima reguler, maka [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) berlaku untuk $p$."
 
 Bilangan prima reguler adalah bilangan prima $p$ yang tidak membagi bilangan kelas $h_p$ dari lapangan siklotomik $\mathbb{Q}(\zeta_p)$. Bilangan kelas adalah indeks yang mengukur seberapa buruk faktorisasi unik gagal; jika bilangan kelas adalah $1$, faktorisasi unik berlaku.
 
@@ -124,7 +124,7 @@ Menggunakan kriteria ini, [Kummer](https://kenji.blog/id/p/kummer/) membuktikan 
 
 ## Kontribusi pada Geometri: Permukaan [Kummer](https://kenji.blog/id/p/kummer/)
 
-Selain karyanya yang inovatif dalam teori bilangan, [Kummer](https://kenji.blog/id/p/kummer/) membuat penemuan penting di bidang geometri. Yang paling representatif dari hal ini adalah **Permukaan [Kummer](https://kenji.blog/id/p/kummer/)** ( **[Kummer](https://kenji.blog/id/p/kummer/) Surface** ).
+Selain karyanya yang inovatif dalam teori bilangan, [Kummer](https://kenji.blog/id/p/kummer/) membuat penemuan penting di bidang geometri. Yang paling representatif dari hal ini adalah **Permukaan Kummer** ( **[Kummer](https://kenji.blog/id/p/kummer/) Surface** ).
 
 Pada tahun 1864, [Kummer](https://kenji.blog/id/p/kummer/) mempelajari kelas spesifik dari permukaan kuartik dalam ruang tiga dimensi. Permukaan ini memiliki sifat yang sangat menarik karena memiliki jumlah maksimum titik singular yang mungkin (titik di mana permukaannya tidak mulus, mis., puncak tajam) — tepatnya $16$.
 

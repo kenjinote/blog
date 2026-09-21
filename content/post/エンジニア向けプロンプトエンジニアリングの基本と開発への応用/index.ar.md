@@ -71,7 +71,7 @@ $$ p_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)} $$
 
 ### 2.1 التلقين النظامي: تعريف القيود العالمية والشخصية
 
-التلقين النظامي هو ما يحدد **القيود العالمية، والشخصية (الدور)، والقواعد الأساسية للسلوك** لنموذج [LLM](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/). إذا شبهناه بتصميم البرمجيات، فهو يلعب دوراً مشابهاً لـ "متغيرات البيئة (Environment Variables)" أو "الفئة الأساسية (Base Class)" للتطبيق، أو "[Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/)file" للحاوية ([Container](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)).
+التلقين النظامي هو ما يحدد **القيود العالمية، والشخصية (الدور)، والقواعد الأساسية للسلوك** لنموذج [LLM](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/). إذا شبهناه بتصميم البرمجيات، فهو يلعب دوراً مشابهاً لـ "متغيرات البيئة (Environment Variables)" أو "الفئة الأساسية (Base Class)" للتطبيق، أو "Docker-layers/)file" للحاوية ([Container](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)).
 
 يعمل التلقين النظامي الممتاز على استقرار جودة وتنسيق المخرجات بشكل كبير.
 

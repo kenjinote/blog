@@ -16,7 +16,7 @@ tags:
 
 ## 1. 서론
 
-수학의 역사에서 "대수학의 아버지"라고 불리는 인물이 있습니다. 그가 바로 고대 알렉산드리아에서 활약했던 **[디오판토스](https://kenji.blog/ko/p/diophantus/)** ([Diophantus](https://kenji.blog/ko/p/diophantus/) of Alexandria)입니다. 그의 저서 『산학』(Arithmetica)은 훗날 이슬람 세계의 수학자들과 르네상스 시대 유럽의 수학자들에게 지대한 영향을 미쳤습니다. 특히, [피에르 드 페르마](https://kenji.blog/ko/p/fermat/)([Pierre de Fermat](https://kenji.blog/ko/p/fermat/))가 『산학』의 여백에 남긴 "[페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)"는 너무나도 유명합니다.
+수학의 역사에서 "대수학의 아버지"라고 불리는 인물이 있습니다. 그가 바로 고대 알렉산드리아에서 활약했던 **[디오판토스](https://kenji.blog/ko/p/diophantus/)** (Diophantus of Alexandria)입니다. 그의 저서 『산학』(Arithmetica)은 훗날 이슬람 세계의 수학자들과 르네상스 시대 유럽의 수학자들에게 지대한 영향을 미쳤습니다. 특히, 피에르 드 페르마(Pierre de Fermat)가 『산학』의 여백에 남긴 "[페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)"는 너무나도 유명합니다.
 
 본 기사에서는 [디오판토스](https://kenji.blog/ko/p/diophantus/)의 생애, 그의 수학적 업적, 주요 저서 『산학』의 세부 내용, 그리고 그의 이름이 붙은 "[디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식"에 대해 깊이 파헤쳐 보겠습니다. 나아가, 그의 나이를 도출할 수 있는 "묘비명(에피타프)"의 수수께끼도 풀어볼 것입니다.
 
@@ -28,7 +28,7 @@ tags:
 
 ### 2.2 헬레니즘 문화와 알렉산드리아
 
-당시 알렉산드리아는 헬레니즘 문화와 학문의 중심지였으며, 거대한 도서관(알렉산드리아 도서관)을 보유하고 많은 학자가 모여드는 지식의 교차로였습니다. 그리스, 이집트, 바빌로니아, 심지어 인도로부터의 지식이 교차하는 이 도시에서 [디오판토스](https://kenji.blog/ko/p/diophantus/)는 과거의 방대한 수학적 유산에 접근할 수 있었을 것으로 생각됩니다. [유클리드](https://kenji.blog/ko/p/euclid/), 아르키메데스, 아폴로니우스 등 위대한 그리스 수학자들이 이룩한 기하학적 전통과는 달리, [디오판토스](https://kenji.blog/ko/p/diophantus/)는 바빌로니아의 대수적인 접근 방식에 강한 영향을 받았다는 설도 있습니다.
+당시 알렉산드리아는 헬레니즘 문화와 학문의 중심지였으며, 거대한 도서관(알렉산드리아 도서관)을 보유하고 많은 학자가 모여드는 지식의 교차로였습니다. 그리스, 이집트, 바빌로니아, 심지어 인도로부터의 지식이 교차하는 이 도시에서 [디오판토스](https://kenji.blog/ko/p/diophantus/)는 과거의 방대한 수학적 유산에 접근할 수 있었을 것으로 생각됩니다. 유클리드, 아르키메데스, 아폴로니우스 등 위대한 그리스 수학자들이 이룩한 기하학적 전통과는 달리, [디오판토스](https://kenji.blog/ko/p/diophantus/)는 바빌로니아의 대수적인 접근 방식에 강한 영향을 받았다는 설도 있습니다.
 
 ```mermaid
 timeline
@@ -97,7 +97,7 @@ $$
 
 > "세제곱수를 두 개의 세제곱수로, 네제곱수를 두 개의 네제곱수로, 혹은 일반적으로 제곱보다 큰 거듭제곱수를 같은 거듭제곱수 두 개의 합으로 나누는 것은 불가능하다. 나는 이 명제에 대한 경이로운 증명을 발견했지만, 이 여백은 그것을 적기에는 너무 좁다."
 
-이것이 유명한 **[페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)** ( $x^n + y^n = z^n \ (n \ge 3)$ 은 양의 정수 해를 갖지 않는다) 입니다. 이 정리는 제기된 이후 약 350년 동안 전 세계 천재 수학자들의 도전을 물리치다가, 1995년에 [앤드루 와일즈](https://kenji.blog/ko/p/wiles/)에 의해 마침내 증명되었습니다. [디오판토스](https://kenji.blog/ko/p/diophantus/)의 저서가 없었다면 이 위대한 드라마는 탄생하지 않았을지도 모릅니다.
+이것이 유명한 **[페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)** ( $x^n + y^n = z^n \ (n \ge 3)$ 은 양의 정수 해를 갖지 않는다) 입니다. 이 정리는 제기된 이후 약 350년 동안 전 세계 천재 수학자들의 도전을 물리치다가, 1995년에 앤드루 와일즈에 의해 마침내 증명되었습니다. [디오판토스](https://kenji.blog/ko/p/diophantus/)의 저서가 없었다면 이 위대한 드라마는 탄생하지 않았을지도 모릅니다.
 
 ```mermaid
 graph TD
@@ -178,7 +178,7 @@ $$
 
 16세기에 들어서 르네상스 시대 유럽에서 그리스어 고전이 재발견되면서, 『산학』도 라틴어로 번역되었습니다. 1621년에 클로드 가스파르 바셰([Claude Gaspard Bachet](https://kenji.blog/ko/p/bachet/) de Méziriac)가 출판한 그리스어와 라틴어 대조본이 널리 읽히게 됩니다. 이 바셰 판 『산학』이야말로, 페르마가 숙독하고 새로운 수학의 문을 여는 계기가 된 것입니다.
 
-[디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식의 이론은 그 후 [레온하르트 오일러](https://kenji.blog/ko/p/euler/)([Leonhard Euler](https://kenji.blog/ko/p/euler/)), 조제프 루이 라그랑주([Joseph-Louis Lagrange](https://kenji.blog/ko/p/lagrange/)), [카를 프리드리히 가우스](https://kenji.blog/ko/p/gauss/)([Carl Friedrich Gauss](https://kenji.blog/ko/p/gauss/)) 등의 거장들에 의해 깊이 연구되었습니다. 그들의 연구는 현대의 "대수적 정수론"이나 "대수기하학"이라는 거대한 수학 분야로 성장했습니다. 힐베르트의 23가지 문제 중 제10문제는 "임의의 [디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식이 풀이 가능한지 여부를 판정하는 일반적인 알고리즘을 찾는 것"이었으며, 1970년에 유리 마티야세비치에 의해 "그러한 알고리즘은 존재하지 않는다"고 증명되었습니다. [디오판토스](https://kenji.blog/ko/p/diophantus/)의 이름은 현대 수학의 최첨단에도 깊이 새겨져 있습니다.
+[디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식의 이론은 그 후 레온하르트 오일러(Leonhard Euler), 조제프 루이 라그랑주(Joseph-Louis Lagrange), 카를 프리드리히 가우스(Carl Friedrich Gauss) 등의 거장들에 의해 깊이 연구되었습니다. 그들의 연구는 현대의 "대수적 정수론"이나 "대수기하학"이라는 거대한 수학 분야로 성장했습니다. 힐베르트의 23가지 문제 중 제10문제는 "임의의 디오판토스 방정식이 풀이 가능한지 여부를 판정하는 일반적인 알고리즘을 찾는 것"이었으며, 1970년에 유리 마티야세비치에 의해 "그러한 알고리즘은 존재하지 않는다"고 증명되었습니다. [디오판토스](https://kenji.blog/ko/p/diophantus/)의 이름은 현대 수학의 최첨단에도 깊이 새겨져 있습니다.
 
 ## 7. 결론
 

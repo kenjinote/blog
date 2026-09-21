@@ -106,7 +106,7 @@ A general method for reconstructing specific algebraic equations from analytic d
 
 There are various generalizations and related conjectures to the [Hodge Conjecture](https://kenji.blog/en/p/hodge-conjecture/).
 
-- **Generalized [Hodge Conjecture](https://kenji.blog/en/p/hodge-conjecture/)**: An attempt to extend the [Hodge Conjecture](https://kenji.blog/en/p/hodge-conjecture/) to a more general framework (for example, varieties with singularities, open varieties, etc.). It was formulated by [Alexander Grothendieck](https://kenji.blog/en/p/grothendieck/) and others, but counterexamples were found, making the formulation itself a difficult challenge.
+- **Generalized [Hodge Conjecture](https://kenji.blog/en/p/hodge-conjecture/)**: An attempt to extend the Hodge Conjecture to a more general framework (for example, varieties with singularities, open varieties, etc.). It was formulated by [Alexander Grothendieck](https://kenji.blog/en/p/grothendieck/) and others, but counterexamples were found, making the formulation itself a difficult challenge.
 - **Tate Conjecture**: Known as the arithmetic analogue of the [Hodge Conjecture](https://kenji.blog/en/p/hodge-conjecture/) is the Tate Conjecture. It is formulated using the concept of Étale Cohomology for varieties over finite fields, rather than varieties over the field of complex numbers. This is also an extremely difficult unsolved problem.
 
 ## 6. Conclusion and Future Prospects

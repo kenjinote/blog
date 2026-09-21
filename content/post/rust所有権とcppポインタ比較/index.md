@@ -10,13 +10,13 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'C++のポインタとRustの所有権・借用モデルを徹底比較。生ポインタ、スマートポインタからボローチェッカーまで、メモリ安全性の本質を解説します。'
 ---
 
-現代のシステムプログラミングにおいて、パフォーマンスとメモリ安全性の両立は永遠の課題です。C++は長年この分野の王者として君臨してきましたが、近年その地位を脅かしつつあるのが[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)です。[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の最大の特徴は、[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)（GC）を持たずにメモリ安全性をコンパイル時に保証する「所有権（Ownership）」と「借用（Borrowing）」という概念にあります。
+現代のシステムプログラミングにおいて、パフォーマンスとメモリ安全性の両立は永遠の課題です。C++は長年この分野の王者として君臨してきましたが、近年その地位を脅かしつつあるのが[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)です。Rustの最大の特徴は、[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)（GC）を持たずにメモリ安全性をコンパイル時に保証する「所有権（Ownership）」と「借用（Borrowing）」という概念にあります。
 
-本記事では、C++の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（生ポインタ、`std::unique_ptr`、`std::shared_ptr`）と[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の所有権モデルを詳細に比較し、[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)のコンパイラ（ボローチェッカー）がどのようにしてUse-After-Free（解放後使用）やデータ競合（Data Race）を防いでいるのかを、コード例や図式を交えて徹底的に解説します。
+本記事では、C++の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（生ポインタ、`std::unique_ptr`、`std::shared_ptr`）とRustの所有権モデルを詳細に比較し、[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)のコンパイラ（ボローチェッカー）がどのようにしてUse-After-Free（解放後使用）やデータ競合（Data Race）を防いでいるのかを、コード例や図式を交えて徹底的に解説します。
 
-## 1. [メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)の基礎：[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)と[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)
+## 1. [メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)の基礎：スタックと[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)
 
-[メモリ管理](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の基本を理解するために、まずはプログラムがメモリをどのように利用するかを振り返りましょう。メモリ領域は大きく分けて「スタック（[Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）」と「ヒープ（[Heap](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）」に分類されます。
+[メモリ管理](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の基本を理解するために、まずはプログラムがメモリをどのように利用するかを振り返りましょう。メモリ領域は大きく分けて「スタック（Stack）」と「ヒープ（[Heap](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）」に分類されます。
 
 ### スタック（Stack）
 関数呼び出し時のローカル変数などが積まれる領域です。LIFO（後入れ先出し）の構造を持ち、メモリの確保・解放が非常に高速です。コンパイル時にサイズが決定できるデータのみが配置されます。
@@ -24,7 +24,7 @@ description: 'C++のポインタとRustの所有権・借用モデルを徹底�
 ### ヒープ（Heap）
 実行時に動的にサイズが決まるデータや、関数のスコープを超えて生存する必要があるデータが配置されます。[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（または参照）を通じてアクセスされます。
 
-[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)を持たないC++や[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)では、[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)メモリの管理コストを数式として以下のようにモデル化できます。オブジェクトの総数を $N$、アロケーションにかかる平均時間を $T_{alloc}$、デアロケーションにかかる平均時間を $T_{dealloc}$ とすると、[メモリ管理](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の総コスト $C_{memory}$ は：
+[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)を持たないC++やRustでは、ヒープメモリの管理コストを数式として以下のようにモデル化できます。オブジェクトの総数を $N$、アロケーションにかかる平均時間を $T_{alloc}$、デアロケーションにかかる平均時間を $T_{dealloc}$ とすると、[メモリ管理](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の総コスト $C_{memory}$ は：
 
 $$ C_{memory} = \sum_{i=1}^{N} (T_{alloc, i} + T_{dealloc, i}) + O_{sync} $$
 
@@ -49,7 +49,7 @@ C++における[メモリ管理](https://kenji.blog/p/memory-management-garbage-
 [C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)から引き継がれた生ポインタ（`*`）は、究極の自由を提供しますが、同時に以下のような深刻なバグの温床となります。
 
 - **メモリリーク（Memory Leak）**: `new`したメモリを`delete`し忘れる。
-- **Dangling [Pointer](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（ダングリング[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）**: メモリ解放後（`delete`後）の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)にアクセスする。
+- **Dangling [Pointer](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（ダングリングポインタ）**: メモリ解放後（`delete`後）の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)にアクセスする。
 - **Double Free（二重解放）**: 同じメモリ領域を2回`delete`してしまう。
 
 ```cpp

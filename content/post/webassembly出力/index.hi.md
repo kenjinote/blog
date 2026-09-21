@@ -139,7 +139,7 @@ Module.onRuntimeInitialized = () => {
 
 ## 5. [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) और `wasm-pack` के साथ दृष्टिकोण
 
-[Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) [WebAssembly](https://kenji.blog/hi/p/webassembly-wasm-current-future/) के लिए प्रथम श्रेणी का समर्थन प्रदान करता है, और `wasm-bindgen` और `wasm-pack` टूल का उपयोग करके, JavaScript और [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) के बीच उन्नत एकीकरण संभव है। जबकि Emscripten "ब्राउज़र में C/C++ का विशाल रनटाइम लाने" का दृष्टिकोण अपनाता है, [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) का `wasm-pack` "केवल न्यूनतम आवश्यक बाइंडिंग (JS ग्लू कोड) उत्पन्न करने" का दृष्टिकोण अपनाता है।
+[Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) WebAssembly के लिए प्रथम श्रेणी का समर्थन प्रदान करता है, और `wasm-bindgen` और `wasm-pack` टूल का उपयोग करके, JavaScript और Rust के बीच उन्नत एकीकरण संभव है। जबकि Emscripten "ब्राउज़र में C/C++ का विशाल रनटाइम लाने" का दृष्टिकोण अपनाता है, [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) का `wasm-pack` "केवल न्यूनतम आवश्यक बाइंडिंग (JS ग्लू कोड) उत्पन्न करने" का दृष्टिकोण अपनाता है।
 
 ### [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) कार्यान्वयन कोड
 

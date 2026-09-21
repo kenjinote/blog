@@ -10,7 +10,7 @@ tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 
 # 什麼是[歐幾里得算法](https://kenji.blog/zh-tw/p/euclidean-algorithm/)
 
-**[歐幾里得算法](https://kenji.blog/zh-tw/p/euclidean-algorithm/)** （[Euclide](https://kenji.blog/zh-tw/p/euclid/)an algorithm），又稱輾轉相除法，是一種用於高效計算兩個自然數（或整數）最大公因數（Greatest Common Divisor, GCD）的算法。大約在公元前300年，古希臘數學家[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)在其數學著作《幾何原本》（Elements）第7卷中記載了該算法，它也被廣泛認為是「人類最古老的算法」之一。
+**[歐幾里得算法](https://kenji.blog/zh-tw/p/euclidean-algorithm/)** （Euclidean algorithm），又稱輾轉相除法，是一種用於高效計算兩個自然數（或整數）最大公因數（Greatest Common Divisor, GCD）的算法。大約在公元前300年，古希臘數學家[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)在其數學著作《幾何原本》（Elements）第7卷中記載了該算法，它也被廣泛認為是「人類最古老的算法」之一。
 
 求最大公因數最樸素的方法是將兩個數分別進行質因數分解，然後將相同的質因數相乘。但是，當數字變得非常龐大時，質因數分解本身的計算量會變得極其巨大，難以在現實時間內得出結果。相反，如果使用 **[歐幾里得算法](https://kenji.blog/zh-tw/p/euclidean-algorithm/)** ，即使是長達數千位的巨大數字，也能以極快的速度計算出它們的最大公因數。
 
@@ -109,7 +109,7 @@ int main() {
 
 ## 時間複雜度與拉梅定理
 
-[歐幾里得算法](https://kenji.blog/zh-tw/p/euclidean-algorithm/)到底有多快呢？關於其計算複雜度，法國數學家[加布里埃爾·拉梅](https://kenji.blog/zh-tw/p/lame/)在1844年證明的 **拉梅定理** （[Lamé](https://kenji.blog/zh-tw/p/lame/)'s theorem）非常著名。
+[歐幾里得算法](https://kenji.blog/zh-tw/p/euclidean-algorithm/)到底有多快呢？關於其計算複雜度，法國數學家加布里埃爾·拉梅在1844年證明的 **拉梅定理** （[Lamé](https://kenji.blog/zh-tw/p/lame/)'s theorem）非常著名。
 
 > **拉梅定理**
 > 對兩個自然數 $a, b$ （$a > b$）應用[歐幾里得算法](https://kenji.blog/zh-tw/p/euclidean-algorithm/)時，除法的次數不超過 $b$ 在十進位下位數的 $5$ 倍。

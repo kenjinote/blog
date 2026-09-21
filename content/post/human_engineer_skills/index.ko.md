@@ -134,7 +134,7 @@ AI는 "C를 우선하는 코드"나 "A를 우선하는 코드"를 작성할 수�
 
 ### 4.2 비동기 통신과 결과적 일관성([Eventual Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/))
 
-시스템의 규모가 커지면 서비스 간의 연동은 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)에 의한 동기 통신에서 메시지 큐([Kafka](https://kenji.blog/ko/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/ko/p/event-driven-architecture-message-queue-kafka-rabbitmq/) 등)를 활용한 비동기 통신으로 이행합니다. 여기서의 데이터 일관성은 즉각적 일관성에서 '결과적 일관성(Eventual [Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/))'으로 변화합니다.
+시스템의 규모가 커지면 서비스 간의 연동은 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)에 의한 동기 통신에서 메시지 큐(Kafka, RabbitMQ 등)를 활용한 비동기 통신으로 이행합니다. 여기서의 데이터 일관성은 즉각적 일관성에서 '결과적 일관성(Eventual [Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/))'으로 변화합니다.
 Saga 패턴이나 [CQRS](https://kenji.blog/ko/p/event-driven-architecture-async/)(Command Query Responsibility Segregation)와 같은 고도화된 아키텍처 패턴을 어느 타이밍에 도입해야 할까. 이러한 복잡한 의사결정과 시스템 전체의 청사진을 그리는 것은 그야말로 시니어 엔지니어의 진면목입니다.
 
 ```mermaid

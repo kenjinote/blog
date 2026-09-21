@@ -157,7 +157,7 @@ $$X = V \pmod N$$
 あとは、この $X$ と $Y$ が自明な解（$X \equiv \pm Y$）でないことを祈りながら、
 **$\gcd(X - Y, N)$** を計算します。
 
-非自明な解であれば、[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)が0.001秒で走り抜け、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の心臓部である秘密の素数 $p$ と $q$ が出力画面に印字されます。
+非自明な解であれば、[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)が0.001秒で走り抜け、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の心臓部である秘密の素数 $p$ と $q$ が出力画面に印字されます。
 
 ---
 

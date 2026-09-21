@@ -50,7 +50,7 @@ Dengan asumsi hanya bilangan prima $p$ yang masuk ke ruangan $(X - Y)$, mari kit
 * Isi $N$ = $p \times q$
   Satu-satunya komponen yang sama adalah **"$p$"** !
 
-Artinya, saat kita menghitung faktor persekutuan terbesar, bilangan prima rahasia $p$ akan langsung terungkap, dan sandi akan berhasil dipecahkan sepenuhnya. (*Faktor persekutuan terbesar bisa dihitung dalam sekejap bahkan menggunakan ponsel dengan "[Algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/)"*)
+Artinya, saat kita menghitung faktor persekutuan terbesar, bilangan prima rahasia $p$ akan langsung terungkap, dan sandi akan berhasil dipecahkan sepenuhnya. (*Faktor persekutuan terbesar bisa dihitung dalam sekejap bahkan menggunakan ponsel dengan "[Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/)"*)
 
 **[Kolom Singkat: Mengapa Pangkat Dua? Pangkat Tiga atau Dikali Dua Tidak Bisa?]** 
 > Jika "$2X - 2Y$", hasilnya adalah $2(X - Y)$, sehingga hanya ada satu ruangan dan bilangan prima tidak dapat dipisahkan. Jika "$X^3 - Y^3$", ukuran ruangan akan tidak seimbang, sehingga perhitungan menjadi sia-sia dan berat. Untuk memisahkan dua bilangan prima, membaginya dengan indah menjadi dua ruangan "pangkat dua" adalah yang paling efisien.

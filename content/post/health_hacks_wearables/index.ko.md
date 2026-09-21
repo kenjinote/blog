@@ -14,14 +14,14 @@ description: 'Oura Ring 등 스마트 링이나 Apple Watch에서 수집한 HRV,
 
 현대의 소프트웨어 엔지니어링은 극도의 인지적 부하와 장시간의 좌식 생활(Sedentary Lifestyle)을 동반하는 가혹한 지식 노동입니다. 끊임없이 변화하는 기술 스택을 따라잡고, 복잡한 분산 시스템의 버그를 추적하며, 마감 기한의 압박에 시달립니다. 이를 극복하기 위해서는 단순히 '기합'이나 '근성'으로 버티는 것이 아니라, 시스템을 디버깅하듯 자신의 신체라는 하드웨어를 튜닝하는 접근법, 즉 '바이오해킹(Biohacking)'이 필수적입니다.
 
-과거에는 '오늘은 왠지 컨디션이 좋다/나쁘다'와 같은 주관적인 감각(휴리스틱)에 의존했지만, 현대에는 Oura Ring, Apple Watch, Garmin 등 고성능 웨어러블 기기가 보급되면서 생체 데이터를 24시간 365일 비침습적으로 수집할 수 있게 되었습니다. 본 기사에서는 생체 데이터(HRV, RHR, 수면 아키텍처)와 생산성 데이터(WakaTime 등을 통한 코딩 메트릭스)를 API를 통해 가져와 Python과 Pandas를 사용하여 데이터 과학적 접근으로 상관 분석을 수행하는 방법을 설명합니다. 또한, 일주기 리듬(Circadian Rhythm)의 수리 모델이나 카페인 대사의 반감기에 기반한 최적의 커피 섭취 타이밍 등 과학적 근거에 바탕을 둔 [엔지니어를 위한](https://kenji.blog/ko/p/[エンジニア向け](https://kenji.blog/ko/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)[プロンプトエンジニアリング](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)の基本と開発への応用/) 건강 핵을 매우 상세히 파헤쳐 봅니다.
+과거에는 '오늘은 왠지 컨디션이 좋다/나쁘다'와 같은 주관적인 감각(휴리스틱)에 의존했지만, 현대에는 Oura Ring, Apple Watch, Garmin 등 고성능 웨어러블 기기가 보급되면서 생체 데이터를 24시간 365일 비침습적으로 수집할 수 있게 되었습니다. 본 기사에서는 생체 데이터(HRV, RHR, 수면 아키텍처)와 생산성 데이터(WakaTime 등을 통한 코딩 메트릭스)를 API를 통해 가져와 Python과 Pandas를 사용하여 데이터 과학적 접근으로 상관 분석을 수행하는 방법을 설명합니다. 또한, 일주기 리듬(Circadian Rhythm)의 수리 모델이나 카페인 대사의 반감기에 기반한 최적의 커피 섭취 타이밍 등 과학적 근거에 바탕을 둔 [엔지니어를 위한](https://kenji.blog/ko/p/エンジニア向け[プロンプトエンジニアリング](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)の基本と開発への応用/) 건강 핵을 매우 상세히 파헤쳐 봅니다.
 
 ## 2. 측정할 수 없는 것은 관리할 수 없다: 생체 데이터 수집 하드웨어
 
 생체 데이터를 수집하기 위한 센서(웨어러블 기기)는 각각 특화된 영역이 있습니다. 데이터 주도적인 건강 관리에서는 목적에 따라 최적의 기기를 선택하는 것이 첫걸음입니다.
 
 ### 2.1 Oura Ring (Generation 3 / 4)
-손가락 동맥에서 직접 데이터를 수집하기 때문에, 손목에서 측정하는 스마트워치에 비해 수면 중 심박수나 심박 변이도(HRV), 체표온 변화의 측정 정확도가 매우 높은 것이 특징입니다. 손가락에는 모세혈관이 밀집해 있어 광학식 심박 센서(PPG: Photoplethysmography)를 통해 노이즈가 적은 데이터를 얻을 수 있습니다. 또한 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)가 잘 갖춰져 있어 [[OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)을 통해 JSON 형식의 원시 데이터를 쉽게 내보낼 수 있으므로, 엔지니어에게 있어 가장 해킹하기 좋은(Hackable) 기기라고 할 수 있습니다.
+손가락 동맥에서 직접 데이터를 수집하기 때문에, 손목에서 측정하는 스마트워치에 비해 수면 중 심박수나 심박 변이도(HRV), 체표온 변화의 측정 정확도가 매우 높은 것이 특징입니다. 손가락에는 모세혈관이 밀집해 있어 광학식 심박 센서(PPG: Photoplethysmography)를 통해 노이즈가 적은 데이터를 얻을 수 있습니다. 또한 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)가 잘 갖춰져 있어 [OAuth 2.0](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)을 통해 JSON 형식의 원시 데이터를 쉽게 내보낼 수 있으므로, 엔지니어에게 있어 가장 해킹하기 좋은(Hackable) 기기라고 할 수 있습니다.
 
 ### 2.2 Apple Watch Series / Ultra
 활동 중 트래킹이나 혈중 산소 포화도(SpO2), 심전도(ECG) 측정에 뛰어납니다. 낮 동안의 활동량이나 마음챙김 앱(심호흡 앱)을 통한 온디맨드 HRV 측정에 있어서는 최강의 기기입니다. 단, 데이터 내보내기는 HealthKit을 거쳐야 하며, Python 등에서 직접 접근하려면 iOS 앱(AutoSleep이나 HealthFit 등)을 통해 CSV로 내보내는 등 한 단계의 쿠션이 필요합니다.

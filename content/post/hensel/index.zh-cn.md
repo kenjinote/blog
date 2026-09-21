@@ -24,7 +24,7 @@ tags: ["库尔特·亨泽尔", "p进数", "代数数论", "数学史"]
 
 ## 3. 大学时代与克罗内克的影响
 
-亨泽尔曾在波恩大学和柏林大学学习数学。当时的柏林大学是世界数学研究的中心之一，汇聚了 **[卡尔·魏尔斯特拉斯](https://kenji.blog/zh-cn/p/weierstrass/)** ([Karl Weierstrass](https://kenji.blog/zh-cn/p/weierstrass/))和 **利奥波德·克罗内克** (Leopold [Kronecker](https://kenji.blog/zh-cn/p/kronecker/))等巨匠在此任教。
+亨泽尔曾在波恩大学和柏林大学学习数学。当时的柏林大学是世界数学研究的中心之一，汇聚了 **[卡尔·魏尔斯特拉斯](https://kenji.blog/zh-cn/p/weierstrass/)** (Karl Weierstrass)和 **利奥波德·克罗内克** (Leopold [Kronecker](https://kenji.blog/zh-cn/p/kronecker/))等巨匠在此任教。
 
 在这些人中，克罗内克对亨泽尔的影响最深。正如他的一句名言所说：“上帝创造了整数，其余的都是人类的工作”，克罗内克坚信所有的数学都应该严格地建立在整数的基础上。在克罗内克的指导下，亨泽尔全身心地投入到代数和数论的研究中。
 

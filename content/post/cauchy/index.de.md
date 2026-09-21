@@ -26,7 +26,7 @@ Dieser Artikel beleuchtet das turbulente Leben von [Cauchy](https://kenji.blog/d
 
 ### Kindheit und Ausbildung
 
-[Cauchy](https://kenji.blog/de/p/cauchy/)s Vater bekleidete ein hohes Amt bei der Polizei, aber um dem Chaos der Revolution zu entkommen, floh die Familie nach Arcueil, einem Vorort von Paris. Dort wurde er von großen Wissenschaftlern der damaligen Zeit unterrichtet, wie Laplace und [Lagrange](https://kenji.blog/de/p/lagrange/), die Freunde seines Vaters waren. Insbesondere [Lagrange](https://kenji.blog/de/p/lagrange/) erkannte das mathematische Talent des jungen [Cauchy](https://kenji.blog/de/p/cauchy/) und prophezeite berühmt: "Dieser Junge wird uns eines Tages alle übertreffen."
+[Cauchy](https://kenji.blog/de/p/cauchy/)s Vater bekleidete ein hohes Amt bei der Polizei, aber um dem Chaos der Revolution zu entkommen, floh die Familie nach Arcueil, einem Vorort von Paris. Dort wurde er von großen Wissenschaftlern der damaligen Zeit unterrichtet, wie Laplace und Lagrange, die Freunde seines Vaters waren. Insbesondere Lagrange erkannte das mathematische Talent des jungen [Cauchy](https://kenji.blog/de/p/cauchy/) und prophezeite berühmt: "Dieser Junge wird uns eines Tages alle übertreffen."
 
 ```mermaid
 flowchart TD

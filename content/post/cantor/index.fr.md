@@ -24,7 +24,7 @@ Sa création de la « Théorie des ensembles » est devenue le fondement de tous
 
 [Georg Cantor](https://kenji.blog/fr/p/cantor/) est né en 1845 à Saint-Pétersbourg, en Russie. Son père était un riche marchand originaire du Danemark et sa mère une musicienne russe. Faisant preuve d'un talent extraordinaire pour les mathématiques dès son plus jeune âge, il s'installe finalement en Allemagne et étudie les mathématiques à l'Université de Berlin.
 
-À l'Université de Berlin, il fut guidé par les figures de proue du monde mathématique de l'époque, **[Karl Weierstrass](https://kenji.blog/fr/p/weierstrass/)** et **Leopold [Kronecker](https://kenji.blog/fr/p/kronecker/)**. [Kronecker](https://kenji.blog/fr/p/kronecker/), en particulier, deviendra plus tard le plus grand adversaire de Cantor.
+À l'Université de Berlin, il fut guidé par les figures de proue du monde mathématique de l'époque, **[Karl Weierstrass](https://kenji.blog/fr/p/weierstrass/)** et **Leopold Kronecker**. [Kronecker](https://kenji.blog/fr/p/kronecker/), en particulier, deviendra plus tard le plus grand adversaire de Cantor.
 
 ### La quête de l'infini et le conflit avec [Kronecker](https://kenji.blog/fr/p/kronecker/)
 

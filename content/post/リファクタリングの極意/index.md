@@ -9,7 +9,7 @@ categories: ["programming", "cpp"]
 tags: ["C++", "Refactoring", "Modern C++", "Legacy Code"]
 ---
 
-# [[リファクタリングの極意](https://kenji.blog/p/リファクタリングの極意/)：レガシーなC++コードを安全に改善する](https://kenji.blog/p/[リファクタリングの極意](https://kenji.blog/p/リファクタリングの極意/)/)
+# [リファクタリングの極意：レガシーなC++コードを安全に改善する](https://kenji.blog/p/[リファクタリングの極意](https://kenji.blog/p/リファクタリングの極意/)/)
 
 現代のソフトウェア開発において、「レガシーコード」との戦いは避けて通れない道です。特にC++という言語において、レガシーコードは他言語のそれとは比較にならないほどの脅威を持ちます。手動での[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)（生[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)と `new` / `delete` の嵐）、グローバル変数の乱用、例外安全性の欠如、そして何より「テストがない」という事実。マイケル・フェザーズは名著『レガシーコード改善ガイド』の中で、「テストのないコードはレガシーコードである」と断言しました。
 
@@ -318,7 +318,7 @@ constexpr double area = calculateCircleArea(10.0);
 
 - **Clang-Tidy**: 強力なC++用リンター・静的解析ツール。`modernize-*` 系のチェックを有効にすることで、`auto` の適用、`nullptr` への置換、`override` の付与などを自動的に適用 (Fix-it) してくれます。
 - **AddressSanitizer (ASan)**: コンパイルオプション (`-fsanitize=address`) として組み込むことで、実行時のメモリリークやバッファオーバーランを正確に特定します。テスト実行時には必ず有効にすべきです。
-- **[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の構築**: [GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)やGitLab CIを用いて、すべてのプルリクエストに対してビルドと自動テスト、静的解析を実行し、新たな技術的負債の侵入を防ぎます。
+- **[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)パイプラインの構築**: [GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)やGitLab CIを用いて、すべてのプルリクエストに対してビルドと自動テスト、静的解析を実行し、新たな技術的負債の侵入を防ぎます。
 
 ---
 

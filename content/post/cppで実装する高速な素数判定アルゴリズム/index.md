@@ -52,7 +52,7 @@ bool is_prime_trial_division(long long n) {
 
 # 2. [フェルマー](https://kenji.blog/p/fermat/)テスト：確率的素数判定の幕開け
 
-試し割り法の限界を突破するために考え出されたのが、数論の定理を用いた「確率的アルゴリズム（Probabilistic Algorithm）」です。その代表例が、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)を利用した「[フェルマー](https://kenji.blog/p/fermat/)テスト（[Fermat](https://kenji.blog/p/fermat/) Primality Test）」です。
+試し割り法の限界を突破するために考え出されたのが、数論の定理を用いた「確率的アルゴリズム（Probabilistic Algorithm）」です。その代表例が、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)を利用した「フェルマーテスト（[Fermat](https://kenji.blog/p/fermat/) Primality Test）」です。
 
 ## [フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/))
 

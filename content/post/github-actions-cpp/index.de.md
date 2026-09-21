@@ -9,7 +9,7 @@ categories: ["programming", "devops"]
 tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 ---
 
-# Aufbau einer [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) für C++-Projekte mit [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/): Ein vollständiger Leitfaden
+# Aufbau einer [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-Pipeline für C++-Projekte mit [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/): Ein vollständiger Leitfaden
 
 Im modernen Softwareentwicklungs-Paradigma sind Continuous Integration (CI) und Continuous Delivery/Deployment (CD) unverzichtbare Elemente für agile Entwicklungsprozesse und die Aufrechterhaltung hochwertiger Software. Unter den zahlreichen Programmiersprachen bringt der Aufbau einer CI/CD-Pipeline für C++ im Vergleich zu anderen Sprachen (wie Python, JavaScript oder [Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)) einzigartige Schwierigkeiten und Komplexitäten mit sich.
 
@@ -17,7 +17,7 @@ In diesem Artikel wird äußerst detailliert erklärt, wie Sie mit GitHub Action
 
 ## 1. Die Bedeutung von CI/CD in C++-Projekten und spezifische Herausforderungen
 
-Bei der Entwicklung von Webanwendungen oder mit Skriptsprachen reicht es oft aus, Tests und Builds in einem einzelnen [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) durchzuführen. C++ ist jedoch eine nativ kompilierte Sprache und hängt stark von der Hardwarearchitektur und dem Betriebssystem der Ausführungsumgebung ab.
+Bei der Entwicklung von Webanwendungen oder mit Skriptsprachen reicht es oft aus, Tests und Builds in einem einzelnen [Docker](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) durchzuführen. C++ ist jedoch eine nativ kompilierte Sprache und hängt stark von der Hardwarearchitektur und dem Betriebssystem der Ausführungsumgebung ab.
 
 Bei der Einführung von CI/CD in einem C++-Projekt treten hauptsächlich folgende Herausforderungen auf:
 
@@ -450,7 +450,7 @@ Obwohl wir hier auf eine detaillierte Erklärung verzichten, wird in der Praxis 
 
 ## Fazit
 
-Der Aufbau einer [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) in C++-Projekten mag aufgrund der Plattformabhängigkeiten und der Komplexität der Build-Tools auf den ersten Blick als hohe Hürde erscheinen. Durch die richtige Kombination des Ökosystems von GitHub Actions, modernem CMake und CTest/CPack können Sie jedoch einen äußerst leistungsstarken und automatisierten Entwicklungs-[Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) erhalten.
+Der Aufbau einer [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-Pipeline in C++-Projekten mag aufgrund der Plattformabhängigkeiten und der Komplexität der Build-Tools auf den ersten Blick als hohe Hürde erscheinen. Durch die richtige Kombination des Ökosystems von GitHub Actions, modernem CMake und CTest/CPack können Sie jedoch einen äußerst leistungsstarken und automatisierten Entwicklungs-[Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) erhalten.
 
 Die in diesem Artikel erläuterte plattformübergreifende Validierung mithilfe der Matrix-Strategie, die Erkennung von Laufzeitfehlern mithilfe von Sanitizers, die Coverage-Messung und das automatische Deployment in GitHub Releases sind Best Practices, die auch in kommerziellen Open-Source-Projekten weit verbreitet sind.
 

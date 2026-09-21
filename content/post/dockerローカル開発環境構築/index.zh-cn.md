@@ -13,7 +13,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 在软件开发现场，由于开发者之间的环境差异而导致的“在我的机器上能运行（It works on my machine）”问题，长期以来一直是许多项目浪费时间的因素。操作系统的差异、安装的语言版本、库的依赖关系、全局安装的工具冲突等，本地环境始终面临着“状态的不确定性”。
 
-从根本上解决这些挑战的是以 **[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)** 为首的容器技术，以及 ** 基础设施即代码 ([IaC](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/))** 的范式。通过将本地开发环境容器化，实现了操作系统级别的隔离，并可以将环境本身与代码库一起进行版本控制。
+从根本上解决这些挑战的是以 **[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)** 为首的容器技术，以及 ** 基础设施即代码 ([IaC](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/))** 的范式。通过将本地开发环境容器化，实现了操作系统级别的隔离，并可以将环境本身与代码库一起进行版本控制。
 
 本文将深入讲解如何充分利用 Docker、Docker Compose 和 VSCode Dev[Container](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)s，构建一个 **“无论谁在何时、哪台机器上启动，状态都分毫不差的可重现的本地开发环境”** 的步骤，并从数学角度深入探讨其背后的深层技术机制。
 
@@ -356,7 +356,7 @@ sequenceDiagram
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-在本地开发环境（[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/) 内部）中，$T_{\text{net}}$ 几乎接近于 0。但是，值得注意的是 **绑定挂载时的 I/O 性能** 。特别是在 Windows/macOS 上使用 Docker Desktop 时，由于宿主机操作系统和 VM（容器）之间的文件共享开销，$T_{\text{app}}$（代码加载时间等）容易变得过高。为了消除这个性能瓶颈，强烈建议利用前面提到的 Dev[Container](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)s 将整个源代码放在命名卷内，或者采用在 WSL2（Windows Subsystem for Linux 2）原生环境中运行 Docker 引擎的架构。
+在本地开发环境（[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/) 内部）中，$T_{\text{net}}$ 几乎接近于 0。但是，值得注意的是 **绑定挂载时的 I/O 性能** 。特别是在 Windows/macOS 上使用 Docker Desktop 时，由于宿主机操作系统和 VM（容器）之间的文件共享开销，$T_{\text{app}}$（代码加载时间等）容易变得过高。为了消除这个性能瓶颈，强烈建议利用前面提到的 Dev[Container](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)s 将整个源代码放在命名卷内，或者采用在 WSL2（Windows Subsystem for Linux 2）原生环境中运行 Docker 引擎的架构。
 
 ---
 

@@ -313,7 +313,7 @@ expiryDate: "2026-12-31T23:59:59Z"
 
 ## 7. साइट प्रदर्शन और कोर वेब वाइटल्स (Core [Web Vitals](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))
 
-एसईओ में, **पेज लोड गति (Page load speed)** टैग अनुकूलन जितनी ही महत्वपूर्ण है। Google ने कोर वेब वाइटल्स ([LCP](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) को रैंकिंग कारक के रूप में शामिल किया है।
+एसईओ में, **पेज लोड गति (Page load speed)** टैग अनुकूलन जितनी ही महत्वपूर्ण है। Google ने कोर वेब वाइटल्स ([LCP](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), FID/INP, [CLS](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) को रैंकिंग कारक के रूप में शामिल किया है।
 
 एक स्थिर साइट होने के नाते, ह्यूगो में स्वाभाविक रूप से उत्कृष्ट TTFB (Time to First Byte) है, लेकिन छवियों का भारी उपयोग करने वाले ब्लॉग के लिए छवि अनुकूलन आवश्यक है। फ्रंटमैटर के साथ ह्यूगो के शक्तिशाली इमेज प्रोसेसिंग कार्यों (Image Processing) को मिलाकर, आप स्वचालित रूप से नेक्स्ट-जेन प्रारूपों (जैसे WebP) में परिवर्तित कर सकते हैं और बिल्ड समय पर आकार बदल सकते हैं।
 

@@ -13,7 +13,7 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 In der modernen digitalen Gesellschaft, insbesondere bei der Kommunikation über das Internet, ist "Verschlüsselung" zu einer unverzichtbaren Basistechnologie geworden. Dass wir Websites über HTTPS sicher in einem Webbrowser durchsuchen, Finanztransaktionen im Online-Banking durchführen und privat in Messaging-Apps kommunizieren können, liegt daran, dass kryptographische Protokolle, die durch fortgeschrittene mathematische Theorien gestützt werden, im Hintergrund arbeiten. Eine besonders wichtige Rolle spielt dabei die "Public-Key-Kryptographie", deren prominentester Vertreter die **[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung** ist.
 
-Die Sicherheit und Gültigkeit vieler kryptographischer Algorithmen, einschließlich RSA, hängt stark von einem sehr schönen und mächtigen Satz ab, der im 17. Jahrhundert vom französischen Mathematiker [Pierre de Fermat](https://kenji.blog/de/p/fermat/) entdeckt wurde. Das ist der **kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/)**. Darüber hinaus spielt der Satz von [Leonhard Euler](https://kenji.blog/de/p/euler/), der diesen verallgemeinert, eine entscheidende Rolle in der Kryptographietheorie.
+Die Sicherheit und Gültigkeit vieler kryptographischer Algorithmen, einschließlich RSA, hängt stark von einem sehr schönen und mächtigen Satz ab, der im 17. Jahrhundert vom französischen Mathematiker [Pierre de Fermat](https://kenji.blog/de/p/fermat/) entdeckt wurde. Das ist der **kleine Satz von Fermat**. Darüber hinaus spielt der Satz von [Leonhard Euler](https://kenji.blog/de/p/euler/), der diesen verallgemeinert, eine entscheidende Rolle in der Kryptographietheorie.
 
 In diesem Artikel werden wir von Grund auf ausführlich erklären, wie die Entdeckung der reinen Mathematik, der kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/), in der modernen, praktischen Kryptographie, insbesondere beim "Primzahltest" und bei der "[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung", Anwendung findet. Dies ist ein sehr detaillierter technischer Leitfaden, der mathematische Beweise, Ver- und Entschlüsselungsmechanismen sowie spezifische Algorithmus-Implementierungen in C++ und Python abdeckt.
 
@@ -112,7 +112,7 @@ Dies ist der Beweis für den kleinen Satz von [Fermat](https://kenji.blog/de/p/f
 
 ## 4. Eulersche Phi-Funktion und der Satz von Euler
 
-[Der kleine Satz von Fermat](https://kenji.blog/de/p/fermats-little-theorem/) ist ein Satz über "Primzahlen $p$", aber [Leonhard Euler](https://kenji.blog/de/p/euler/) verallgemeinerte ihn für "beliebige positive ganze Zahlen $n$". Diese Erweiterung ist entscheidend, um die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung zu verstehen.
+[Der kleine Satz von Fermat](https://kenji.blog/de/p/fermats-little-theorem/) ist ein Satz über "Primzahlen $p$", aber Leonhard Euler verallgemeinerte ihn für "beliebige positive ganze Zahlen $n$". Diese Erweiterung ist entscheidend, um die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung zu verstehen.
 
 ### 4.1 Die Eulersche Phi-Funktion $\phi(n)$
 
@@ -140,7 +140,7 @@ Wenn $n$ eine Primzahl $p$ ist, dann ist $\phi(p) = p - 1$, also ist dies genau 
 
 In der Kryptographie (wie bei der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung und dem Diffie-Hellman-Schlüsselaustausch) ist es notwendig, schnell "riesige Primzahlen" mit hunderten von Ziffern zu finden. Um jedoch zu testen, ob eine riesige Zahl $N$ prim ist, würde die Methode der "Probedivision", bei der man versucht, durch alle Zahlen von $2$ bis $\sqrt{N}$ zu teilen, etwa so lange dauern wie das Alter des Universums.
 
-Hier kommt der **[Fermat](https://kenji.blog/de/p/fermat/)-Primzahltest ([Fermat](https://kenji.blog/de/p/fermat/) Primality Test)** ins Spiel, ein "probabilistischer Primzahltest", der den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) umkehrt.
+Hier kommt der **[Fermat](https://kenji.blog/de/p/fermat/)-Primzahltest (Fermat Primality Test)** ins Spiel, ein "probabilistischer Primzahltest", der den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) umkehrt.
 
 ### 5.1 Was ist ein probabilistischer Primzahltest?
 
@@ -468,7 +468,7 @@ Wenn Sie diesen Code ausführen, können Sie sehen, wie ein Array von Zeichen in
 
 Als [Pierre de Fermat](https://kenji.blog/de/p/fermat/) im 17. Jahrhundert diesen "kleinen Satz" entdeckte, dachte niemand, dass er für irgendetwas nützlich sein würde. [Fermat](https://kenji.blog/de/p/fermat/) selbst betrieb zahlentheoretische Forschung aus reiner mathematischer Neugier.
 
-Etwa 300 Jahre später, in den 1970er Jahren, an den Anfängen von Computernetzwerken, feierte der Satz von [Fermat](https://kenji.blog/de/p/fermat/) jedoch ein dramatisches Comeback als unverzichtbare Verschlüsselungstechnologie zur Etablierung sicherer Kommunikationsprotokolle. Die Primzahltesttechnologie, die auf dem kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) basiert, und die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung, die auf dem Satz von Euler basiert, stützen buchstäblich die moderne Internet-Infrastruktur.
+Etwa 300 Jahre später, in den 1970er Jahren, an den Anfängen von Computernetzwerken, feierte der Satz von [Fermat](https://kenji.blog/de/p/fermat/) jedoch ein dramatisches Comeback als unverzichtbare Verschlüsselungstechnologie zur Etablierung sicherer Kommunikationsprotokolle. Die Primzahltesttechnologie, die auf dem kleinen Satz von Fermat basiert, und die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung, die auf dem Satz von Euler basiert, stützen buchstäblich die moderne Internet-Infrastruktur.
 
 Die LINE-Nachrichten, die wir jeden Tag beiläufig senden, und unsere Einkäufe bei Amazon tanzen alle auf dieser einfachen und schönen Formel $a^{p-1} \equiv 1 \pmod p$. Egal wie abstrakt Mathematik ist, der kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/) lehrt uns, dass immer die Zeit kommen wird, in der sie für die Menschheit nützlich sein wird.
 

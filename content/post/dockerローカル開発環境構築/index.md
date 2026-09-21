@@ -13,7 +13,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 ソフトウェア開発の現場において、開発者間で環境が異なることに起因する「私の環境では動くのに（It works on my machine）」という問題は、長きにわたり多くのプロジェクトで時間を浪費させる要因となってきました。OSの違い、インストールされている言語のバージョン、ライブラリの依存関係、グローバルにインストールされたツールの競合など、ローカル環境は常に「状態の不確実性」に晒されています。
 
-こうした課題を根本から解決するのが **[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)** をはじめとする[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)技術と、 **[Infrastructure as Code](https://kenji.blog/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/p/iac-infrastructure-as-code-terraform/))** のパラダイムです。ローカル開発環境をコンテナ化することで、OSレベルでの分離を実現し、コードベースと共に環境そのものをバージョン管理することが可能になります。
+こうした課題を根本から解決するのが **[Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)** をはじめとするコンテナ技術と、 **Infrastructure as Code ([IaC](https://kenji.blog/p/iac-infrastructure-as-code-terraform/))** のパラダイムです。ローカル開発環境をコンテナ化することで、OSレベルでの分離を実現し、コードベースと共に環境そのものをバージョン管理することが可能になります。
 
 本記事では、Docker、Docker Compose、そしてVSCode Dev[Container](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)sを駆使し、 **「誰が、いつ、どのマシンで立ち上げても、寸分違わず同じ状態になる再現可能なローカル開発環境」** を構築するための手順と、その背後にある深い技術的メカニズムについて、数理的な視点も交えながら徹底的に解説します。
 
@@ -127,7 +127,7 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 ---
 
-## 4. [Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/) Composeによる複数[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)のオーケストレーション
+## 4. [Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/) Composeによる複数[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)のオーケストレーション
 
 最新のWebアプリケーション開発では、Webサーバー、データベース、キャッシュサーバーなど、複数のコンポーネントが連携する[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)アーキテクチャが一般的です。ローカル環境でこれらを一元管理するために `docker-compose.yml` を使用します。
 
@@ -261,7 +261,7 @@ API_SECRET_KEY=dev_secret_key_12345
 
 ## 6. VSCode Dev[Container](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)s による究極の開発体験
 
-ここまでで、[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)を使った堅牢なバックエンド環境が構築できました。しかし、もう一歩踏み込むことができます。 **VSCode DevContainers (Remote - Containers)** 機能を使用すると、エディタ（VSCode）自体のバックエンドを[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)内部で実行することが可能になります。
+ここまでで、[Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)を使った堅牢なバックエンド環境が構築できました。しかし、もう一歩踏み込むことができます。 **VSCode DevContainers (Remote - Containers)** 機能を使用すると、エディタ（VSCode）自体のバックエンドを[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)内部で実行することが可能になります。
 
 これにより、ローカルマシンにはPythonやNode.jsすらインストールする必要がなくなり、Linter（flake8/eslint）やフォーマッター（black/prettier）、IDEの拡張機能に至るまで、すべてをコードベース内に定義してチーム全員で共有できます。
 
@@ -356,7 +356,7 @@ sequenceDiagram
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-ローカル開発環境（[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)内）では、$T_{\text{net}}$ はほぼ 0 に近くなりますが、注目すべきは **バインドマウント時のI/Oパフォーマンス** です。特にWindows/macOS上でDocker Desktopを使用している場合、ホストOSとVM（[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)）間のファイル共有オーバーヘッドにより、$T_{\text{app}}$（コードの読み込み時間等）が肥大化する傾向があります。このボトルネックを解消するために、前述の Dev[Container](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)s を利用してソースコード全体を名前付きボリューム内に配置するか、WSL2（Windows Subsystem for Linux 2）環境ネイティブでDockerエンジンを動作させるアーキテクチャが強く推奨されます。
+ローカル開発環境（[Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)内）では、$T_{\text{net}}$ はほぼ 0 に近くなりますが、注目すべきは **バインドマウント時のI/Oパフォーマンス** です。特にWindows/macOS上でDocker Desktopを使用している場合、ホストOSとVM（コンテナ）間のファイル共有オーバーヘッドにより、$T_{\text{app}}$（コードの読み込み時間等）が肥大化する傾向があります。このボトルネックを解消するために、前述の Dev[Container](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)s を利用してソースコード全体を名前付きボリューム内に配置するか、WSL2（Windows Subsystem for Linux 2）環境ネイティブでDockerエンジンを動作させるアーキテクチャが強く推奨されます。
 
 ---
 
@@ -413,7 +413,7 @@ COPY ./src /app/src
 
 Docker、Docker Compose、そしてVSCode Dev[Container](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)sを組み合わせることで、「誰が環境を立ち上げても完全に同じ状態になる」堅牢なローカル開発環境が実現します。
 
-[IaC](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)のパラダイムをローカル環境に持ち込むことは、単に最初のセットアップ時間を短縮するだけではありません。インフラストラクチャの設定変更に対する不安を取り除き、新しい技術[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の実験を容易にし、[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)へのスムーズな移行を可能にするなど、開発サイクル全体の速度と品質を飛躍的に向上させます。
+[IaC](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)のパラダイムをローカル環境に持ち込むことは、単に最初のセットアップ時間を短縮するだけではありません。インフラストラクチャの設定変更に対する不安を取り除き、新しい技術スタックの実験を容易にし、CI/CD[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)へのスムーズな移行を可能にするなど、開発サイクル全体の速度と品質を飛躍的に向上させます。
 
 本記事で解説したマルチステージビルドによるイメージサイズの最適化や、ヘルスチェックを用いた依存関係の制御、レイヤーキャッシュを意識したDockerfileの記述などのベストプラクティスを活用し、ぜひご自身のプロジェクトにも最高の開発体験（DX: Developer Experience）を導入してみてください。
 

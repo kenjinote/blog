@@ -134,7 +134,7 @@ int main() {
 - प्रक्षेपण (Projection, $\pi$): विशिष्ट विशेषताओं (कॉलम) का निष्कर्षण
 - जुड़ाव (Join, $\bowtie$): कई संबंधों का सशर्त प्रतिच्छेदन
 
-इसके अलावा, "[B-Tree](https://kenji.blog/hi/p/b-tree-database-index-theory/) (B-ट्री) इंडेक्स" की संरचना सीखना, जो एक पल में बड़ी मात्रा में रिकॉर्ड से लक्षित डेटा की खोज करता है, डेटा संरचनाओं के अनुप्रयोग के रूप में सबसे अच्छा अभ्यास है। B-[Tree](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) डिस्क I/O की संख्या को कम करते हुए $O(\log N)$ की खोज गति की गारंटी देता है। आप लेनदेन (transaction) की [ACID](https://kenji.blog/hi/p/rdbms-transaction-acid-isolation-level-lock/) विशेषताओं (Atomicity, [Consistency](https://kenji.blog/hi/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability) को जाने बिना एक मजबूत प्रणाली नहीं बना सकते।
+इसके अलावा, "[B-Tree](https://kenji.blog/hi/p/b-tree-database-index-theory/) (B-ट्री) इंडेक्स" की संरचना सीखना, जो एक पल में बड़ी मात्रा में रिकॉर्ड से लक्षित डेटा की खोज करता है, डेटा संरचनाओं के अनुप्रयोग के रूप में सबसे अच्छा अभ्यास है। B-Tree डिस्क I/O की संख्या को कम करते हुए $O(\log N)$ की खोज गति की गारंटी देता है। आप लेनदेन (transaction) की ACID विशेषताओं (Atomicity, [Consistency](https://kenji.blog/hi/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability) को जाने बिना एक मजबूत प्रणाली नहीं बना सकते।
 
 ## 6. सुरक्षा और क्रिप्टोग्राफी: बुनियादी ढांचा जिसे प्रधान गुणनखंडन (Prime Factorization) की कठिनाई का समर्थन प्राप्त है
 

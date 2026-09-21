@@ -316,7 +316,7 @@ $$ R = e^{-\frac{t}{S}} $$
 
 1. **[오래된 기술] × [새로운 패러다임]**: 예) 'COBOL의 아키텍처에서 배우는 현대 마이크로서비스 설계의 안티 패턴'
 2. **[프론트엔드] × [백엔드 개념]**: 예) 'React의 가상 DOM 업데이트 알고리즘을 데이터베이스 트랜잭션 격리 수준의 관점에서 해설하기'
-3. **[추상적인 수학/이론] × [구체적 구현]**: 예) '그래프 이론으로 풀어보는 [Kubernetes](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/) [Pod](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/) 스케줄링의 최적화'
+3. **[추상적인 수학/이론] × 구체적 구현]**: 예) '그래프 이론으로 풀어보는 [Kubernetes [Pod](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/) 스케줄링의 최적화'
 
 이러한 조합을 의도적으로 발생시키기 위해, 앞서 구축한 Pinecone의 시맨틱 검색 시스템을 이용하여 무작위로 개념 A와 개념 B를 추출하고, AI(ChatGPT 등)에게 '이 두 가지를 조합한 기술 블로그 제목과 목차 초안을 5개 제안해 줘'라고 프롬프트를 던짐으로써, 혼자서는 떠올리기 힘든 참신한 시각의 기사 아이디어를 무한히 생성할 수 있습니다.
 

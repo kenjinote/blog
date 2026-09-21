@@ -67,7 +67,7 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 **乘法逆元（Modular Multiplicative Inverse）** 的计算在密码学实现中极为重要。为了求出满足 $b \times b^{-1} \equiv 1 \pmod p$ 的 $b^{-1}$，主要使用以下两种算法：
 
-1. **扩展[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)（Extended [[Euclid](https://kenji.blog/zh-cn/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm）**: 速度快，但根据实现的不同，处理时间可能依赖于输入值，从而存在计时攻击的风险。
+1. **扩展[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)（Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm）**: 速度快，但根据实现的不同，处理时间可能依赖于输入值，从而存在计时攻击的风险。
 2. **[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/zh-cn/p/fermats-little-theorem/)）**: 当 $p$ 为素数且 $b \neq 0$ 时，$b^{p-1} \equiv 1 \pmod p$ 成立。两边同除以 $b$，可得 $b^{p-2} \equiv b^{-1} \pmod p$。也就是说，通过计算 $b$ 的 $p-2$ 次方即可求得逆元。因为幂运算容易实现为常数时间操作，所以密码学实现中通常更倾向于使用这种方法。
 
 ---

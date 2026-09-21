@@ -14,7 +14,7 @@ tags: ["Generative AI", "Digital Divide", "LLM", "Productivity"]
 
 インターネットの普及以降、私たちは「デジタルディバイド（情報格差）」という言葉を何度も耳にしてきました。初期のデジタルディバイドは、主に「物理的なアクセス権」に関するものでした。つまり、コンピューターや高速インターネット回線を持っているか否かが、情報へのアクセスと経済的機会を左右するという単純な構図です。その後、スマートフォンやブロードバンド回線がコモディティ化するにつれて、ディバイドの焦点は「ITリテラシー（情報活用能力）」へと移行しました。検索エンジンを使って適切に情報を探し出せるか、ソフトウェアを使いこなせるか、といったソフトウェア的・認知的な側面です。
 
-しかし、2020年代に突如として勃興した生成AI（Generative AI）と[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/): [Large Language Models](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化は、このデジタルディバイドの概念を根本から覆しつつあります。いま私たちが直面しているのは、単なる「情報へのアクセス格差」や「ソフトウェアの操作スキルの格差」ではありません。それは、「AIをオーケストレーション（指揮・統合）する能力の格差」であり、個人の生産性を指数関数的に増幅させるか、それともAIの進化に取り残されて相対的価値を失うかという、極めて深刻で不可逆的な「第3次デジタルディバイド」なのです。
+しかし、2020年代に突如として勃興した生成AI（Generative AI）と[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（LLM: [Large Language Models](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化は、このデジタルディバイドの概念を根本から覆しつつあります。いま私たちが直面しているのは、単なる「情報へのアクセス格差」や「ソフトウェアの操作スキルの格差」ではありません。それは、「AIをオーケストレーション（指揮・統合）する能力の格差」であり、個人の生産性を指数関数的に増幅させるか、それともAIの進化に取り残されて相対的価値を失うかという、極めて深刻で不可逆的な「第3次デジタルディバイド」なのです。
 
 本稿では、生成AIがもたらすこの新たなデジタルディバイドの正体を、生産性の数理モデル、ハードウェアのアーキテクチャとコスト、そして人間の認知的側面の3つのレイヤーから極めて詳細に解き明かしていきます。
 

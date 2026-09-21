@@ -11,7 +11,7 @@ description: 'Googleが開発したプログラミング言語「Go（Golang）�
 # はじめに
 [Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)は、Googleが2009年に公開した比較的新しい[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)です。
 Goのコンパイラ、ツール、ライブラリは、オープンソースで公開されています。
-また、Goは、[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)や[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)のような静的型付け言語ですが、C言語のような[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を使わない言語です。
+また、Goは、[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)やJavaのような静的型付け言語ですが、C言語のような[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を使わない言語です。
 
 # インストール方法
 

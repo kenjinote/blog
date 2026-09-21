@@ -13,7 +13,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 在軟體開發的現場，因為開發者之間環境不同而導致的「在我的環境裡明明就能跑（It works on my machine）」這個問題，長久以來一直是讓許多專案浪費時間的要因。作業系統的差異、已安裝語言的版本、函式庫的相依性、全域安裝工具的衝突等，本地環境總是暴露在「狀態不確定性」之中。
 
-能從根本解決這些課題的，就是以 **[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/)** 為首的容器技術，以及 **[Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/))** 的典範。透過將本地開發環境容器化，可實現在作業系統層級的隔離，並使環境本身能與程式碼庫一起進行版本控制。
+能從根本解決這些課題的，就是以 **[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)** 為首的容器技術，以及 **Infrastructure as Code ([IaC](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/))** 的典範。透過將本地開發環境容器化，可實現在作業系統層級的隔離，並使環境本身能與程式碼庫一起進行版本控制。
 
 本文將運用 Docker、Docker Compose 以及 VSCode Dev[Container](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)s，為您徹底解說建構 **「無論是誰、在何時、用哪台機器啟動，都能獲得分毫不差的相同狀態之可重現本地開發環境」** 的步驟，以及其背後深層的技術機制，並會適時穿插數理角度的探討。
 
@@ -356,7 +356,7 @@ sequenceDiagram
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-在本地開發環境（[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 內），$T_{\text{net}}$ 幾乎接近 0，但值得注意的是 **綁定掛載時的 I/O 效能** 。尤其是在 Windows/macOS 上使用 Docker Desktop 的情況下，因為主機作業系統與 VM（容器）之間的檔案共享額外開銷 (Overhead)，$T_{\text{app}}$（程式碼讀取時間等）往往會有變得龐大的趨勢。為了解決這個效能瓶頸，強烈建議利用前述的 Dev[Container](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)s 將整個原始碼配置到具名 Volume 中，或是採用在 WSL2（Windows Subsystem for Linux 2）環境中原生執行 Docker 引擎的架構。
+在本地開發環境（[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/) 內），$T_{\text{net}}$ 幾乎接近 0，但值得注意的是 **綁定掛載時的 I/O 效能** 。尤其是在 Windows/macOS 上使用 Docker Desktop 的情況下，因為主機作業系統與 VM（容器）之間的檔案共享額外開銷 (Overhead)，$T_{\text{app}}$（程式碼讀取時間等）往往會有變得龐大的趨勢。為了解決這個效能瓶頸，強烈建議利用前述的 Dev[Container](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)s 將整個原始碼配置到具名 Volume 中，或是採用在 WSL2（Windows Subsystem for Linux 2）環境中原生執行 Docker 引擎的架構。
 
 ---
 

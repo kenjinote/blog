@@ -52,7 +52,7 @@ Die Zeitkomplexität dieses Algorithmus beträgt $O(\sqrt{N})$. Für $N \le 10^{
 
 # 2. [Fermat](https://kenji.blog/de/p/fermat/)-Test: Der Beginn der probabilistischen Primzahltests
 
-Um die Grenzen der Probedivision zu überwinden, wurden "probabilistische Algorithmen (Probabilistic Algorithm)" entwickelt, die zahlentheoretische Theoreme nutzen. Ein typisches Beispiel ist der "[Fermat](https://kenji.blog/de/p/fermat/)-Primzahltest ([Fermat](https://kenji.blog/de/p/fermat/) Primality Test)", der den kleinen [Fermat](https://kenji.blog/de/p/fermat/)schen Satz anwendet.
+Um die Grenzen der Probedivision zu überwinden, wurden "probabilistische Algorithmen (Probabilistic Algorithm)" entwickelt, die zahlentheoretische Theoreme nutzen. Ein typisches Beispiel ist der "[Fermat](https://kenji.blog/de/p/fermat/)-Primzahltest (Fermat Primality Test)", der den kleinen [Fermat](https://kenji.blog/de/p/fermat/)schen Satz anwendet.
 
 ## Kleiner [Fermat](https://kenji.blog/de/p/fermat/)scher Satz ([Fermat's Little Theorem](https://kenji.blog/de/p/fermats-little-theorem/))
 

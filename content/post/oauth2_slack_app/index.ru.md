@@ -10,7 +10,7 @@ tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'Подробно иллюстрируем и объясняем механизм Authorization Code Grant в OAuth 2.0 на примере интеграции Slack App. Это полное руководство включает конкретные примеры кода на Node.js и лучшие практики безопасности.'
 ---
 
-# Введение: Зачем изучать [[OAuth](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/)?
+# Введение: Зачем изучать [OAuth 2.0](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/)?
 
 В современных веб-приложениях совместная работа нескольких сервисов стала уже привычным делом. Например, такие функции, как «Вход через Google», «Отправка уведомления в Slack при обновлении задачи в Trello» или «Автоматическое добавление ссылки на встречу Zoom в Google Календарь». За всем этим стоит фреймворк авторизации **OAuth 2.0 (Open [Authorization](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) 2.0)**.
 
@@ -22,7 +22,7 @@ OAuth 2.0 был создан как стандартный протокол (RF
 
 ---
 
-# 1. Базовые концепции [[OAuth](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/): 4 роли (Roles)
+# 1. Базовые концепции [OAuth 2.0](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/): 4 роли (Roles)
 
 Первый шаг к пониманию OAuth 2.0 — это точное понимание его действующих лиц (Roles). Согласно RFC 6749, определены следующие 4 роли:
 
@@ -291,7 +291,7 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 # 6. Области действия токенов (Scopes) и принцип наименьших привилегий
 
-Одним из важнейших понятий в [[OAuth](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) является «Область действия (Scope)». Scope обозначает набор прав, привязанных к токену доступа.
+Одним из важнейших понятий в [OAuth 2.0](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) является «Область действия (Scope)». Scope обозначает набор прав, привязанных к токену доступа.
 
 В Slack права доступа классифицированы очень детально и в основном делятся на **Bot Token Scopes** и **User Token Scopes**.
 - `chat:write` (Bot): Право отправлять сообщения в каналы от лица самого приложения (бота).
@@ -305,7 +305,7 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 # 7. Более продвинутая безопасность: PKCE (Proof Key for Code Exchange)
 
-В последнее время все шире используется стандарт **PKCE (Proof Key for Code Exchange, RFC 7636, произносится как "пикси")** как механизм дополнительного усиления безопасности [[OAuth](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/).
+В последнее время все шире используется стандарт **PKCE (Proof Key for Code Exchange, RFC 7636, произносится как "пикси")** как механизм дополнительного усиления безопасности [OAuth 2.0](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/).
 
 Изначально PKCE был разработан для «публичных клиентов», таких как нативные приложения (iOS/Android) или SPA (Single Page Application), которые не могут безопасно хранить `client_secret`. Однако сегодня в рекомендациях по безопасности (черновик [OAuth](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) 2.1) строго рекомендуется использовать PKCE даже для серверных «конфиденциальных клиентов».
 
@@ -370,7 +370,7 @@ sequenceDiagram
 3. Понимание криптографических механизмов, стоящих за защитой от [CSRF](https://kenji.blog/ru/p/web-security-basics-cors-csp/) с помощью параметра **`state`** и предотвращением перехвата кода авторизации с помощью **PKCE**, является кратчайшим путем к безопасной реализации.
 4. Проектирование областей доступа (scopes) на основе **принципа наименьших привилегий** и шифрование при сохранении в БД — абсолютно необходимые элементы для эксплуатации.
 
-[[OAuth](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) — очень глубокая тема, и одни только спецификации RFC имеют огромный объем. Однако, изучая его на практике на примере реальной платформы (Slack), вы сможете почувствовать его продуманную архитектуру и надежные механизмы безопасности. Надеемся, что знания, полученные из этой статьи, окажутся полезными в вашей будущей разработке приложений и интеграции API.
+[OAuth 2.0](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) — очень глубокая тема, и одни только спецификации RFC имеют огромный объем. Однако, изучая его на практике на примере реальной платформы (Slack), вы сможете почувствовать его продуманную архитектуру и надежные механизмы безопасности. Надеемся, что знания, полученные из этой статьи, окажутся полезными в вашей будущей разработке приложений и интеграции API.
 
 
 

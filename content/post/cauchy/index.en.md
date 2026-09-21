@@ -26,7 +26,7 @@ This article explores the turbulent life of [Cauchy](https://kenji.blog/en/p/cau
 
 ### Childhood and Education
 
-[Cauchy](https://kenji.blog/en/p/cauchy/)'s father held a high position in the police force, but to escape the chaos of the revolution, the family fled to Arcueil, a suburb of Paris. There, he received instruction from great scientists of the time, such as Laplace and [Lagrange](https://kenji.blog/en/p/lagrange/), who were friends of his father. [Lagrange](https://kenji.blog/en/p/lagrange/), in particular, recognized young [Cauchy](https://kenji.blog/en/p/cauchy/)'s mathematical talent and famously predicted, "This boy will one day surpass us all."
+[Cauchy](https://kenji.blog/en/p/cauchy/)'s father held a high position in the police force, but to escape the chaos of the revolution, the family fled to Arcueil, a suburb of Paris. There, he received instruction from great scientists of the time, such as Laplace and Lagrange, who were friends of his father. Lagrange, in particular, recognized young [Cauchy](https://kenji.blog/en/p/cauchy/)'s mathematical talent and famously predicted, "This boy will one day surpass us all."
 
 ```mermaid
 flowchart TD

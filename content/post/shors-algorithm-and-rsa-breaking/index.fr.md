@@ -14,7 +14,7 @@ Dans la société Internet moderne, la cryptographie à clé publique est la bas
 
 Cependant, avec l'avènement de l'"ordinateur quantique", il a été souligné que cette sécurité pourrait être fondamentalement bouleversée. Dans les médias, on voit parfois des gros titres sensationnels comme : "Une fois l'ordinateur quantique achevé, les mots de passe et les cryptages du monde entier seront décryptés en quelques secondes". Est-ce vraiment le cas ?
 
-Cet article se penche sur les mécanismes de la méthode classique de décryptage GNFS (Crible du corps de nombres généralisé) et sur l'algorithme définitif de décryptage utilisant des ordinateurs quantiques, l'"[Algorithme de Shor](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/)" ([Shor's Algorithm](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/)). Nous expliquerons de manière simple des concepts avancés tels que la transformée de Fourier quantique et la recherche de période, et examinerons en détail l'état actuel du matériel quantique à l'ère NISQ (Noisy Intermediate-Scale Quantum) ainsi que les obstacles nécessaires pour briser réellement le [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)-2048.
+Cet article se penche sur les mécanismes de la méthode classique de décryptage GNFS (Crible du corps de nombres généralisé) et sur l'algorithme définitif de décryptage utilisant des ordinateurs quantiques, l'"[Algorithme de Shor](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/)" (Shor's Algorithm). Nous expliquerons de manière simple des concepts avancés tels que la transformée de Fourier quantique et la recherche de période, et examinerons en détail l'état actuel du matériel quantique à l'ère NISQ (Noisy Intermediate-Scale Quantum) ainsi que les obstacles nécessaires pour briser réellement le [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)-2048.
 
 ---
 
@@ -80,7 +80,7 @@ Le problème de trouver le plus petit entier positif $ r $ qui satisfait cette c
 
 Si cette période $ r $ est trouvée et que $ r $ est pair, alors $ a^r - 1 \equiv 0 \pmod N $, et en utilisant la formule de factorisation, on peut la transformer en
 $ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $
-À partir de là, en utilisant l'algorithme d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) pour calculer le plus grand commun diviseur de $ N $ et de $ a^{r/2} \pm 1 $, les facteurs premiers de $ N $ peuvent être obtenus avec une probabilité extrêmement élevée.
+À partir de là, en utilisant l'algorithme d'[Euclide](https://kenji.blog/p/euclid/) pour calculer le plus grand commun diviseur de $ N $ et de $ a^{r/2} \pm 1 $, les facteurs premiers de $ N $ peuvent être obtenus avec une probabilité extrêmement élevée.
 
 En fin de compte, pour trouver la période $ r $ avec un ordinateur classique, des étapes exponentielles sont nécessaires et ne peuvent pas être accélérées. Cependant, avec un ordinateur quantique, cette période $ r $ peut être trouvée instantanément (en temps polynomial).
 

@@ -28,7 +28,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 Ollama एक ऐसा प्लेटफॉर्म है जो स्थानीय वातावरण में ओपन-सोर्स बड़े भाषा मॉडल (जैसे Llama 3, Phi-3, Mistral, Gemma आदि) को आसानी से चलाने और प्रबंधित करने के लिए उपयोग किया जाता है। पहले, एक स्थानीय LLM वातावरण स्थापित करने के लिए बहुत जटिल प्रक्रियाओं की आवश्यकता होती थी, जैसे Python वातावरण सेट करना, CUDA टूलकिट स्थापित करना, PyTorch की निर्भरता (dependencies) को हल करना, Hugging Face से विशाल मॉडल फाइलें डाउनलोड करना और प्रारूप रूपांतरण (जैसे Safetensors से GGUF) करना।
 
-Ollama इन जटिलताओं को छुपाता है और आपको [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) जैसे उपयोग में आसानी के साथ [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) को संभालने की अनुमति देता है। आप केवल एक कमांड से मॉडल डाउनलोड (`pull`), निष्पादित (`run`), और एक HTTP सर्वर के रूप में शुरू कर सकते हैं।
+Ollama इन जटिलताओं को छुपाता है और आपको [Docker](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/) जैसे उपयोग में आसानी के साथ [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) को संभालने की अनुमति देता है। आप केवल एक कमांड से मॉडल डाउनलोड (`pull`), निष्पादित (`run`), और एक HTTP सर्वर के रूप में शुरू कर सकते हैं।
 
 ## कोर तकनीक: llama.cpp का रैपर
 
@@ -493,7 +493,7 @@ Python या शेल स्क्रिप्ट्स में Ollama क�
 
 ## निष्कर्ष
 
-Ollama के आगमन से, स्थानीय [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) स्थापित करने की बाधा बहुत कम हो गई है। [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) कंटेनरों को प्रबंधित करने जैसी सरल कमांड प्रणाली और एक [REST API](https://kenji.blog/hi/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/hi/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) जो बाहरी अनुप्रयोगों से आसानी से उपयोग की जा सकती है, इसका संयोजन स्थानीय AI विकास में वर्तमान वास्तविक मानक (de facto standard) माना जा सकता है।
+Ollama के आगमन से, स्थानीय [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) स्थापित करने की बाधा बहुत कम हो गई है। Docker-layers/) कंटेनरों को प्रबंधित करने जैसी सरल कमांड प्रणाली और एक [REST API](https://kenji.blog/hi/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/hi/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) जो बाहरी अनुप्रयोगों से आसानी से उपयोग की जा सकती है, इसका संयोजन स्थानीय AI विकास में वर्तमान वास्तविक मानक (de facto standard) माना जा सकता है।
 
 क्लाउड [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) की लागत और सुरक्षा बाधाओं से जूझ रहे डेवलपर्स के लिए, मैं आपको इस लेख में दिए गए चरणों का उपयोग करके Ollama के साथ एक स्थानीय LLM वातावरण बनाने और इसे अपने एप्लिकेशन में एकीकृत करने के लिए प्रोत्साहित करता हूँ। आप निश्चित रूप से AI की संभावनाओं को अधिक स्वतंत्र रूप से और अपने करीब महसूस कर पाएंगे।
 

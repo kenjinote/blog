@@ -313,7 +313,7 @@ expiryDate: "2026-12-31T23:59:59Z"
 
 ## 7. 网站性能与核心网页指标 (Core [Web Vitals](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))
 
-在SEO中， **页面加载速度** 与标签优化同样重要。Google已将核心网页指标（[LCP](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）作为排名因素纳入算法。
+在SEO中， **页面加载速度** 与标签优化同样重要。Google已将核心网页指标（[LCP](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), FID/INP, [CLS](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）作为排名因素纳入算法。
 
 作为一个静态网站生成器，Hugo在TTFB (Time to First Byte) 方面本就非常出色，但对于大量使用图片的博客来说，图片优化是必不可少的。通过将Hugo强大的图片处理功能（Image Processing）与前置数据结合使用，可以在构建时自动实现图片缩放或转换为下一代格式（如WebP等）。
 

@@ -116,7 +116,7 @@ flowchart TD
 
 ## 4. مهارة بشرية بحتة ③: تصميم البنية وقابلية التوسع للأنظمة الموزعة
 
-تطورت البرامج الحديثة من النظم المتجانسة (Monolith) التي تعمل على خادم واحد، إلى بنية الخدمات المصغرة ([[Microservice](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)) السحابية الأصلية، إلى البنية الموجهة بالأحداث ([Event-Driven](https://kenji.blog/ar/p/event-driven-architecture-async/) Architecture). تصميم مثل هذه الأنظمة الموزعة هو مجال صعب للغاية بالنسبة للذكاء الاصطناعي، الذي يمكنه فقط تحسين المنطق المحلي.
+تطورت البرامج الحديثة من النظم المتجانسة (Monolith) التي تعمل على خادم واحد، إلى بنية الخدمات المصغرة ([Microservices](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)) السحابية الأصلية، إلى البنية الموجهة بالأحداث ([Event-Driven](https://kenji.blog/ar/p/event-driven-architecture-async/) Architecture). تصميم مثل هذه الأنظمة الموزعة هو مجال صعب للغاية بالنسبة للذكاء الاصطناعي، الذي يمكنه فقط تحسين المنطق المحلي.
 
 ### 4.1 نظرية CAP والحكم على المفاضلات (Trade-offs)
 
@@ -134,7 +134,7 @@ $$ P(\text{[Availability](https://kenji.blog/ar/p/cap-theorem-distributed-system
 
 ### 4.2 الاتصالات غير المتزامنة والاتساق النهائي ([Eventual Consistency](https://kenji.blog/ar/p/cap-theorem-distributed-systems-tradeoff/))
 
-كلما زاد حجم النظام، ينتقل الاتصال بين الخدمات من الاتصال المتزامن عبر [REST API](https://kenji.blog/ar/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ar/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) إلى الاتصال غير المتزامن باستخدام طوابير الرسائل (مثل [Kafka](https://kenji.blog/ar/p/event-driven-architecture-message-queue-kafka-rabbitmq/)، [RabbitMQ](https://kenji.blog/ar/p/event-driven-architecture-message-queue-kafka-rabbitmq/)). يتغير تناسق البيانات هنا من الاتساق الفوري إلى "الاتساق النهائي" (Eventual [Consistency](https://kenji.blog/ar/p/cap-theorem-distributed-systems-tradeoff/)).
+كلما زاد حجم النظام، ينتقل الاتصال بين الخدمات من الاتصال المتزامن عبر [REST API](https://kenji.blog/ar/p/graphql-vs-rest-api-overfetching-type-safety/) إلى الاتصال غير المتزامن باستخدام طوابير الرسائل (مثل Kafka، RabbitMQ). يتغير تناسق البيانات هنا من الاتساق الفوري إلى "الاتساق النهائي" (Eventual [Consistency](https://kenji.blog/ar/p/cap-theorem-distributed-systems-tradeoff/)).
 متى يجب إدخال أنماط معمارية متقدمة مثل نمط Saga أو فصل مسؤولية أمر الاستعلام ([CQRS](https://kenji.blog/ar/p/event-driven-architecture-async/))؟ إن اتخاذ هذه القرارات المعقدة ورسم مخطط النظام بأكمله هو بالفعل القيمة الحقيقية للمهندس الأول (Senior Engineer).
 
 ```mermaid

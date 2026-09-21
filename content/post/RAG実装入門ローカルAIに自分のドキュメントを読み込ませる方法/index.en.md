@@ -78,7 +78,7 @@ In this multi-dimensional space (latent space), the model is trained so that sen
 
 ## Mathematical Background of Similarity Calculation: Cosine Similarity
 
-When a vector database searches for relevant documents, the most commonly used distance metric is **Cosine Similarity**. Unlike [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an distance (absolute spatial distance), cosine similarity focuses on the "angle between two vectors". Since it is less affected by the length of the sentence (the norm of the vector), it is highly suitable for calculating text similarity.
+When a vector database searches for relevant documents, the most commonly used distance metric is **Cosine Similarity**. Unlike [Euclide](https://kenji.blog/p/euclid/)an distance (absolute spatial distance), cosine similarity focuses on the "angle between two vectors". Since it is less affected by the length of the sentence (the norm of the vector), it is highly suitable for calculating text similarity.
 
 Expressed mathematically, the cosine similarity between vectors $\mathbf{A}$ and $\mathbf{B}$ is as follows:
 

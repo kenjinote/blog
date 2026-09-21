@@ -10,7 +10,7 @@ tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'شرح تفصيلي ومصور لآلية عمل تدفق منح رمز التفويض (Authorization Code Grant) في OAuth 2.0 من خلال تنفيذ تكامل Slack App. هذا دليل شامل يتضمن أمثلة برمجية عملية باستخدام Node.js وأفضل الممارسات الأمنية.'
 ---
 
-# مقدمة: لماذا نتعلم [[OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/)؟
+# مقدمة: لماذا نتعلم [OAuth 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/)؟
 
 في تطبيقات الويب الحديثة، أصبح من المعتاد جداً أن تعمل خدمات متعددة معاً. على سبيل المثال، ميزات مثل "تسجيل الدخول باستخدام حساب Google" أو "إرسال إشعار إلى Slack عند تحديث مهمة في Trello" أو "إضافة رابط اجتماع Zoom تلقائياً إلى تقويم Google". الإطار الذي يعمل خلف الكواليس لتنفيذ كل هذا هو إطار التفويض **OAuth 2.0 (Open [Authorization](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) 2.0)**.
 
@@ -22,7 +22,7 @@ description: 'شرح تفصيلي ومصور لآلية عمل تدفق منح �
 
 ---
 
-# 1. المفاهيم الأساسية لـ [[OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/): الأدوار الأربعة (Roles)
+# 1. المفاهيم الأساسية لـ [OAuth 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/): الأدوار الأربعة (Roles)
 
 الخطوة الأولى لفهم OAuth 2.0 هي الفهم الدقيق للأشخاص (الأدوار) المعنيين. في RFC 6749، يتم تعريف الأدوار الأربعة التالية:
 
@@ -291,7 +291,7 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 # 6. نطاقات الرموز ومبدأ الامتياز الأقل (Principle of Least Privilege)
 
-أحد أهم المفاهيم في [[OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) هو "النطاق (Scope)". يشير النطاق إلى مدى الصلاحيات المرتبطة برمز الوصول.
+أحد أهم المفاهيم في [OAuth 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) هو "النطاق (Scope)". يشير النطاق إلى مدى الصلاحيات المرتبطة برمز الوصول.
 
 في Slack، يتم تصنيف الصلاحيات بدقة بالغة، وتنقسم بشكل عام إلى **نطاقات رموز البوت (Bot Token Scopes)** و ** نطاقات رموز المستخدمين (User Token Scopes)**.
 - `chat:write` (Bot): صلاحية إرسال رسالة إلى القناة كالتطبيق (البوت) نفسه.
@@ -305,7 +305,7 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 # 7. أمان متقدم أكثر: PKCE (مفتاح الإثبات لتبادل الرمز Proof Key for Code Exchange)
 
-مؤخراً، تم توحيد **PKCE (مفتاح الإثبات لتبادل الرمز، RFC 7636، يُنطق "بيكسي")** واستخدامه على نطاق واسع كآلية لتعزيز أمان [[OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/).
+مؤخراً، تم توحيد **PKCE (مفتاح الإثبات لتبادل الرمز، RFC 7636، يُنطق "بيكسي")** واستخدامه على نطاق واسع كآلية لتعزيز أمان [OAuth 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/).
 
 في الأصل، تم تصميم PKCE لـ "العملاء العامين (Public Clients)" مثل التطبيقات الأصلية (iOS/Android) أو تطبيقات الصفحة الواحدة (SPA) التي لا يمكنها الاحتفاظ بـ `client_secret` بأمان. ومع ذلك، يوصى الآن بشدة باستخدام PKCE حتى مع "العملاء السريين (Confidential Clients)" على جانب الخادم وفقاً لأفضل الممارسات الأمنية (مسودة [OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) 2.1).
 
@@ -370,7 +370,7 @@ sequenceDiagram
 3. إن فهم الآليات التشفيرية الأساسية، مثل الدفاع ضد [CSRF](https://kenji.blog/ar/p/web-security-basics-cors-csp/) بواسطة **المعلمة `state`** ومنع هجمات اعتراض رمز التفويض بواسطة **PKCE** ، هو أقصر طريق للتنفيذ الآمن.
 4. يعتبر تصميم النطاق بناءً على **مبدأ الامتياز الأقل** والتشفير عند الحفظ في قاعدة البيانات عناصر لا غنى عنها مطلقاً في العمليات التشغيلية.
 
-عالم [[OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) عميق جداً، وهناك مواصفات ضخمة في RFC وحده، ولكن من خلال التعلم العملي باستهداف منصة فعلية (Slack) كما فعلنا، ستتمكن من إدراك فلسفة التصميم المتطورة وآليات الأمان القوية الخاصة به. نأمل أن تكون المعرفة الواردة في هذه المقالة مفيدة في تطوير تطبيقاتك المستقبلية وتنفيذ تكامل واجهات برمجة التطبيقات (API).
+عالم [OAuth 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) عميق جداً، وهناك مواصفات ضخمة في RFC وحده، ولكن من خلال التعلم العملي باستهداف منصة فعلية (Slack) كما فعلنا، ستتمكن من إدراك فلسفة التصميم المتطورة وآليات الأمان القوية الخاصة به. نأمل أن تكون المعرفة الواردة في هذه المقالة مفيدة في تطوير تطبيقاتك المستقبلية وتنفيذ تكامل واجهات برمجة التطبيقات (API).
 
 
 

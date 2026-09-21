@@ -8,9 +8,9 @@ categories: ["mathematics", "physics"]
 tags: ["Geometria", "Relatividade", "História da Ciência", "Matemática"]
 ---
 
-## 1. Introdução: O Feitiço de [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/)
+## 1. Introdução: O Feitiço de [Euclides](https://kenji.blog/p/euclid/)
 
-No século III a.C., o matemático grego antigo [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) sistematizou axiomaticamente o conhecimento da geometria de seu tempo em seu livro "Os Elementos". Ele apresentou 5 postulados (demandas), mas o 5º postulado, o chamado **postulado das paralelas**, era mais complexo em comparação com os outros 4 e incomodaria muitos matemáticos.
+No século III a.C., o matemático grego antigo [Euclides](https://kenji.blog/p/euclid/) sistematizou axiomaticamente o conhecimento da geometria de seu tempo em seu livro "Os Elementos". Ele apresentou 5 postulados (demandas), mas o 5º postulado, o chamado **postulado das paralelas**, era mais complexo em comparação com os outros 4 e incomodaria muitos matemáticos.
 
 $$
 \text{5º Postulado: Se uma linha reta intersecta duas linhas retas e a soma dos ângulos internos do mesmo lado for menor que dois ângulos retos, as duas linhas retas, se estendidas indefinidamente, se encontrarão no lado onde a soma dos ângulos é menor que dois ângulos retos.}
@@ -80,6 +80,6 @@ Na equação de Einstein acima, o lado esquerdo representa a estrutura geométri
 
 ## 6. Conclusão
 
-A busca da geometria não-euclidiana, que começou com uma modesta dúvida sobre o 5º postulado de [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/), quebrou a crença intuitiva humana sobre o espaço e provou a liberdade da matemática. E, por fim, culminou na teoria da relatividade geral, que revela a estrutura fundamental do universo.
+A busca da geometria não-euclidiana, que começou com uma modesta dúvida sobre o 5º postulado de [Euclides](https://kenji.blog/p/euclid/), quebrou a crença intuitiva humana sobre o espaço e provou a liberdade da matemática. E, por fim, culminou na teoria da relatividade geral, que revela a estrutura fundamental do universo.
 
 A busca da lógica pura na matemática tornou-se mais tarde a linguagem indispensável para descrever a verdade mais profunda do mundo físico. A história da geometria não-euclidiana nos ensina a grandeza do intelecto humano e o incrível mistério do mundo natural.

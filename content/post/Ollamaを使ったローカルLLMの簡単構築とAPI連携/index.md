@@ -28,7 +28,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 Ollamaは、ローカル環境でオープンソースの[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（Llama 3, Phi-3, Mistral, Gemmaなど）を簡単に実行・管理するためのプラットフォームです。これまでローカルLLM環境を構築するためには、Python環境のセットアップ、CUDAツールキットのインストール、PyTorchの依存関係の解決、Hugging Faceからの巨大なモデルファイルのダウンロードとフォーマット変換（SafetensorsからGGUFへなど）といった、非常に煩雑な手順が必要でした。
 
-Ollamaは、これらの複雑さを隠蔽し、[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)のような使い勝手で[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)を扱えるようにします。コマンド一つでモデルをダウンロード（`pull`）し、実行（`run`）し、HTTPサーバーとして立ち上げることができます。
+Ollamaは、これらの複雑さを隠蔽し、[Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)のような使い勝手で[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)を扱えるようにします。コマンド一つでモデルをダウンロード（`pull`）し、実行（`run`）し、HTTPサーバーとして立ち上げることができます。
 
 ## コア・テクノロジー：llama.cppのラッパー
 
@@ -493,7 +493,7 @@ PythonやシェルスクリプトにOllamaのAPIリクエストを組み込む�
 
 ## 結論
 
-Ollamaの登場により、ローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)の導入ハードルは劇的に下がりました。[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)を操作するようなシンプルなコマンド体系と、外部アプリケーションから容易に利用できる[REST API](https://kenji.blog/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)の組み合わせは、ローカルAI開発における現在のデファクトスタンダードと言っても過言ではありません。
+Ollamaの登場により、ローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)の導入ハードルは劇的に下がりました。Docker-layers/)コンテナを操作するようなシンプルなコマンド体系と、外部アプリケーションから容易に利用できる[REST API](https://kenji.blog/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)の組み合わせは、ローカルAI開発における現在のデファクトスタンダードと言っても過言ではありません。
 
 クラウド[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)のコストやセキュリティの制約に悩まされている開発者の方は、ぜひ本記事で紹介した手順を参考に、Ollamaを用いたローカルLLM環境を構築し、自身のアプリケーションに統合してみてください。AIの持つ可能性を、より自由に、より身近に感じることができるはずです。
 

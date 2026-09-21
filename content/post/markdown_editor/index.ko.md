@@ -252,7 +252,7 @@ flowchart TD
 
 VS Code의 GitHub Copilot Chat이나 Neovim의 `ChatGPT.nvim`, `Copilot.vim` 등을 사용하여 에디터를 벗어나지 않고 다음과 같은 프롬프트를 던집니다.
 
-> "다음 기술 요소에 대해 초보자를 위한 마크다운 계층 구조로 개요를 작성해 줘: [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)"
+> "다음 기술 요소에 대해 초보자를 위한 마크다운 계층 구조로 개요를 작성해 줘: [Docker](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/), Kubernetes, [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)"
 
 그러면 즉시 제목이나 글머리 기호 형태의 마크다운이 생성됩니다. 우리는 그 뼈대에 살을 붙여 나가기만 하면 됩니다.
 

@@ -16,7 +16,7 @@ Artikel ini memberikan penjelasan terperinci tentang kehidupan dan pencapaian ma
 
 ## 2. Kehidupan Awal dan Karier
 
-[William Brouncker](https://kenji.blog/id/p/brouncker/) (1620 - 5 April 1684) lahir sebagai putra sulung [William Brouncker](https://kenji.blog/id/p/brouncker/), Viscount [Brouncker](https://kenji.blog/id/p/brouncker/) ke-1, dan Winifred Leigh. Meskipun ada banyak detail yang tidak diketahui tentang tempat kelahiran dan pendidikan awalnya, diyakini bahwa ia belajar di Universitas Oxford, menumbuhkan keterampilan bahasa yang sangat baik dan bakat matematika. Pada tahun 1645, setelah kematian ayahnya, ia menjadi Viscount [Brouncker](https://kenji.blog/id/p/brouncker/) ke-2.
+[William Brouncker](https://kenji.blog/id/p/brouncker/) (1620 - 5 April 1684) lahir sebagai putra sulung William Brouncker, Viscount Brouncker ke-1, dan Winifred Leigh. Meskipun ada banyak detail yang tidak diketahui tentang tempat kelahiran dan pendidikan awalnya, diyakini bahwa ia belajar di Universitas Oxford, menumbuhkan keterampilan bahasa yang sangat baik dan bakat matematika. Pada tahun 1645, setelah kematian ayahnya, ia menjadi Viscount [Brouncker](https://kenji.blog/id/p/brouncker/) ke-2.
 
 Pada saat itu, Inggris berada dalam periode kacau Revolusi Puritan (Perang Saudara Inggris), tetapi [Brouncker](https://kenji.blog/id/p/brouncker/) lebih mengabdikan dirinya pada dunia akademis daripada panggung politik. Dia memiliki minat yang sangat kuat pada matematika dan musik, mulai membangun teorinya sendiri. Pada tahun 1647, ia dianugerahi gelar Doctor of Medicine dari Universitas Oxford, tetapi minat utamanya selalu berada pada ilmu eksakta. Adik laki-lakinya, Henry [Brouncker](https://kenji.blog/id/p/brouncker/), juga dikenal aktif di dunia politik dan istana sambil mempertahankan minat pada catur dan matematika.
 
@@ -50,7 +50,7 @@ $$
 \frac{\pi}{2} = \frac{2}{1} \cdot \frac{2}{3} \cdot \frac{4}{3} \cdot \frac{4}{5} \cdot \frac{6}{5} \cdot \frac{6}{7} \cdot \frac{8}{7} \cdots
 $$
 
-[Wallis](https://kenji.blog/id/p/wallis/) menunjukkan hasil ini kepada [Brouncker](https://kenji.blog/id/p/brouncker/) dan bertanya apakah hal itu dapat diekspresikan dalam bentuk yang berbeda. Sebagai tanggapan, [Brouncker](https://kenji.blog/id/p/brouncker/), dengan menggunakan manipulasi aljabar dan konsep limit yang cerdas, dengan ahli mengubah persamaan ini menjadi pecahan berlanjut. Ini adalah **rumus [Brouncker](https://kenji.blog/id/p/brouncker/)** berikut:
+[Wallis](https://kenji.blog/id/p/wallis/) menunjukkan hasil ini kepada Brouncker dan bertanya apakah hal itu dapat diekspresikan dalam bentuk yang berbeda. Sebagai tanggapan, Brouncker, dengan menggunakan manipulasi aljabar dan konsep limit yang cerdas, dengan ahli mengubah persamaan ini menjadi pecahan berlanjut. Ini adalah **rumus [Brouncker](https://kenji.blog/id/p/brouncker/)** berikut:
 
 $$
 \frac{4}{\pi} = 1 + \frac{1^2}{2 + \frac{3^2}{2 + \frac{5^2}{2 + \frac{7^2}{2 + \ddots}}}}
@@ -76,7 +76,7 @@ Pada tahun 1657, matematikawan besar Prancis [Pierre de Fermat](https://kenji.bl
 
 ### Algoritma [Brouncker](https://kenji.blog/id/p/brouncker/)
 
-[Wallis](https://kenji.blog/id/p/wallis/) dan [Brouncker](https://kenji.blog/id/p/brouncker/)-lah yang menghadapi tantangan ini. [Brouncker](https://kenji.blog/id/p/brouncker/) khususnya mengembangkan sebuah metode yang hampir setara dengan algoritma yang sekarang dikenal sebagai "metode pecahan berlanjut," yang menetapkan prosedur untuk menemukan solusi bilangan bulat positif minimum untuk persamaan tersebut untuk sembarang bilangan non-kuadrat $n$.
+[Wallis](https://kenji.blog/id/p/wallis/) dan Brouncker-lah yang menghadapi tantangan ini. [Brouncker](https://kenji.blog/id/p/brouncker/) khususnya mengembangkan sebuah metode yang hampir setara dengan algoritma yang sekarang dikenal sebagai "metode pecahan berlanjut," yang menetapkan prosedur untuk menemukan solusi bilangan bulat positif minimum untuk persamaan tersebut untuk sembarang bilangan non-kuadrat $n$.
 
 ```mermaid
 sequenceDiagram
@@ -98,7 +98,7 @@ $$
 x = 1766319049, \quad y = 226153980
 $$
 
-[Brouncker](https://kenji.blog/id/p/brouncker/) menunjukkan bahwa bahkan solusi raksasa seperti itu dapat diturunkan secara sistematis menggunakan metodenya. Ironisnya, karena kesalahpahaman oleh [Leonhard Euler](https://kenji.blog/id/p/euler/), persamaan ini kemudian dinamai dengan nama matematikawan Inggris John Pell, tetapi kontribusi terbesar dalam menetapkan metode penyelesaiannya tidak dapat disangkal adalah milik [Brouncker](https://kenji.blog/id/p/brouncker/).
+[Brouncker](https://kenji.blog/id/p/brouncker/) menunjukkan bahwa bahkan solusi raksasa seperti itu dapat diturunkan secara sistematis menggunakan metodenya. Ironisnya, karena kesalahpahaman oleh Leonhard Euler, persamaan ini kemudian dinamai dengan nama matematikawan Inggris John Pell, tetapi kontribusi terbesar dalam menetapkan metode penyelesaiannya tidak dapat disangkal adalah milik [Brouncker](https://kenji.blog/id/p/brouncker/).
 
 ## 6. Pencapaian Lainnya dan Tahun-Tahun Terakhir
 

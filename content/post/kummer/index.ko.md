@@ -10,7 +10,7 @@ tags: ["에른스트 쿰머", "페르마의 마지막 정리", "이상수", "대
 
 # [에른스트 쿰머](https://kenji.blog/ko/p/kummer/): 이상수의 아버지와 대수적 정수론의 여명
 
-수학의 역사에서 특정 난제에 대한 도전이 완전히 새로운 수학 분야를 개척하는 것은 드문 일이 아닙니다. 에른스트 에두아르트 쿰머 ( **Ernst Eduard [Kummer](https://kenji.blog/ko/p/kummer/)** )는 바로 그러한 역사적 전환점을 만들어낸 19세기 독일의 위대한 수학자입니다. 그는 **[페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)** ( **[Fermat's Last Theorem](https://kenji.blog/ko/p/fermats-last-theorem/)** )라는 초난제와 씨름하는 과정에서 **이상수** ( **Ideal Numbers** )라는 획기적인 개념을 도입하여 현대 대수적 정수론의 기초를 다졌습니다.
+수학의 역사에서 특정 난제에 대한 도전이 완전히 새로운 수학 분야를 개척하는 것은 드문 일이 아닙니다. 에른스트 에두아르트 쿰머 ( **Ernst Eduard [Kummer](https://kenji.blog/ko/p/kummer/)** )는 바로 그러한 역사적 전환점을 만들어낸 19세기 독일의 위대한 수학자입니다. 그는 **페르마의 마지막 정리** ( **[Fermat's Last Theorem](https://kenji.blog/ko/p/fermats-last-theorem/)** )라는 초난제와 씨름하는 과정에서 **이상수** ( **Ideal Numbers** )라는 획기적인 개념을 도입하여 현대 대수적 정수론의 기초를 다졌습니다.
 
 본 기사에서는 쿰머의 파란만장한 생애, 그를 둘러싼 인간미 넘치는 에피소드, 그리고 수학사에 찬란하게 빛나는 그의 업적에 대해 깊이 파헤쳐 보겠습니다.
 
@@ -64,7 +64,7 @@ $$
 
 이 방정식을 만족하는 양의 정수해 $(x, y, z)$는 존재하지 않는다.
 
-1847년 프랑스의 수학자 [가브리엘 라메](https://kenji.blog/ko/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/ko/p/lame/)** )와 [오귀스탱 루이 코시](https://kenji.blog/ko/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/ko/p/cauchy/)** )는 이 정리를 증명하는 데 성공했다고 발표했습니다. 그들의 접근 방식은 복소수 영역(원분체)으로 인수분해를 확장하는 것이었습니다.
+1847년 프랑스의 수학자 [가브리엘 라메](https://kenji.blog/ko/p/lame/) ( **Gabriel Lamé** )와 오귀스탱 루이 코시 ( **[Augustin-Louis Cauchy](https://kenji.blog/ko/p/cauchy/)** )는 이 정리를 증명하는 데 성공했다고 발표했습니다. 그들의 접근 방식은 복소수 영역(원분체)으로 인수분해를 확장하는 것이었습니다.
 
 1의 원시 $p$제곱근 $\zeta$ (단, $\zeta^p = 1, \zeta \neq 1$)를 사용하여 방정식 $x^p + y^p = z^p$는 다음과 같이 인수분해 될 수 있습니다.
 

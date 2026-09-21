@@ -12,7 +12,7 @@ description: "क्वांटम कंप्यूटर की आश्च
 
 ## 1. परिचय: पोस्ट-क्वांटम युग की आहट और ब्लॉकचेन का संकट
 
-2009 में सतोशी नाकामोतो द्वारा बिटकॉइन ([Bitcoin](https://kenji.blog/hi/p/cryptocurrency-and-bitcoin/)) के निर्माण के बाद से, ब्लॉकचेन तकनीक "विकेंद्रीकृत और अपरिवर्तनीय खाता बही" के रूप में दुनिया भर में वित्तीय प्रणालियों और अनुप्रयोगों की नींव बन गई है। इस मजबूत सुरक्षा का आधार आधुनिक क्रिप्टोग्राफिक तकनीकें हैं: **पब्लिक की क्रिप्टोग्राफी ([Public Key](https://kenji.blog/hi/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/hi/p/cryptocurrency-and-bitcoin/)graphy)** और ** क्रिप्टोग्राफिक हैश फ़ंक्शंस ([Crypto](https://kenji.blog/hi/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/hi/p/modern-cryptography-public-key-hash-signature/)s)**।
+2009 में सतोशी नाकामोतो द्वारा बिटकॉइन ([Bitcoin](https://kenji.blog/hi/p/cryptocurrency-and-bitcoin/)) के निर्माण के बाद से, ब्लॉकचेन तकनीक "विकेंद्रीकृत और अपरिवर्तनीय खाता बही" के रूप में दुनिया भर में वित्तीय प्रणालियों और अनुप्रयोगों की नींव बन गई है। इस मजबूत सुरक्षा का आधार आधुनिक क्रिप्टोग्राफिक तकनीकें हैं: **पब्लिक की क्रिप्टोग्राफी (Public Key Cryptography)** और ** क्रिप्टोग्राफिक हैश फ़ंक्शंस (Cryptographic [Hash Function](https://kenji.blog/hi/p/modern-cryptography-public-key-hash-signature/)s)**।
 
 ये क्रिप्टोग्राफिक तकनीकें गणितीय "कम्प्यूटेशनल कठिनाई (Computational Hardness)" के आधार पर सुरक्षा की गारंटी देती हैं, जिसका अर्थ है कि एक क्लासिकल कंप्यूटर (जैसे कि आज हम जो पीसी या सुपरकंप्यूटर इस्तेमाल करते हैं) को इसे क्रैक करने में ब्रह्मांड के जीवनकाल जितना समय लग जाएगा।
 

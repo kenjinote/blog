@@ -68,7 +68,7 @@ $$
 
 球面と同相（トポロジー的に同じ）な立体の場合、[オイラー](https://kenji.blog/p/euler/)標数は常に $\chi = 2$ となります。
 
-[ポアンカレ](https://kenji.blog/p/poincare/)・ホップの定理（[Poincaré](https://kenji.blog/p/poincare/)-Hopf Theorem）によれば、多様体上のベクトル場の特異点（ベクトルがゼロになる点）の指数の総和は、その多様体の[オイラー](https://kenji.blog/p/euler/)標数に等しくなります。
+[ポアンカレ](https://kenji.blog/p/poincare/)・ホップの定理（Poincaré-Hopf Theorem）によれば、多様体上のベクトル場の特異点（ベクトルがゼロになる点）の指数の総和は、その多様体の[オイラー](https://kenji.blog/p/euler/)標数に等しくなります。
 
 数式で表すと、
 $$

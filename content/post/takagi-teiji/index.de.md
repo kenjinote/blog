@@ -18,7 +18,7 @@ tags:
 
 Eine der schönsten und leistungsfähigsten theoretischen Strukturen der modernen Zahlentheorie, insbesondere der algebraischen Zahlentheorie, ist die **Klassenkörpertheorie**. Die Person, die dieses großartige theoretische System im Alleingang aufbaute und die japanische Mathematik schlagartig auf das höchste Weltniveau hob, war **Teiji [Takagi](https://kenji.blog/de/p/takagi-teiji/)** (1875–1960).
 
-Die monumentale Leistung, die er vollbrachte, bestand nicht nur in der Lösung eines einzigen offenen Problems. Es gelang ihm vielmehr, die mathematische Landschaft, von der westliche Giganten wie [Kronecker](https://kenji.blog/de/p/kronecker/) und [Hilbert](https://kenji.blog/de/p/hilbert/) geträumt hatten, brillant zu entwerfen, während er im Fernen Osten isoliert war. Damit zeigte er der mathematischen Gemeinschaft den Weg, den sie in Zukunft beschreiten sollte. In diesem Artikel werden wir den Lebensweg von Teiji [Takagi](https://kenji.blog/de/p/takagi-teiji/) und den Kern der von ihm begründeten Klassenkörpertheorie eingehend beleuchten.
+Die monumentale Leistung, die er vollbrachte, bestand nicht nur in der Lösung eines einzigen offenen Problems. Es gelang ihm vielmehr, die mathematische Landschaft, von der westliche Giganten wie [Kronecker](https://kenji.blog/de/p/kronecker/) und Hilbert geträumt hatten, brillant zu entwerfen, während er im Fernen Osten isoliert war. Damit zeigte er der mathematischen Gemeinschaft den Weg, den sie in Zukunft beschreiten sollte. In diesem Artikel werden wir den Lebensweg von Teiji [Takagi](https://kenji.blog/de/p/takagi-teiji/) und den Kern der von ihm begründeten Klassenkörpertheorie eingehend beleuchten.
 
 ## 1. Frühes Leben und das Erwachen zur Mathematik
 
@@ -32,7 +32,7 @@ Anschließend studierte er an der Abteilung für Mathematik der naturwissenschaf
 
 Im Jahr 1898 reiste [Takagi](https://kenji.blog/de/p/takagi-teiji/) als Auslandsstudent des Bildungsministeriums nach Deutschland. Zunächst studierte er an der Universität Berlin, wechselte dann aber an die Universität Göttingen, die zu dieser Zeit das Weltzentrum der Mathematik war.
 
-Dort erwarteten ihn große Mathematiker, die in der Geschichte der Mathematik ihre Spuren hinterlassen haben, wie [David Hilbert](https://kenji.blog/de/p/hilbert/) und Felix Klein. Insbesondere [Hilbert](https://kenji.blog/de/p/hilbert/) hatte gerade seinen "Zahlbericht" veröffentlicht, der den Höhepunkt der algebraischen Zahlentheorie darstellte, und dessen Inhalt einen tiefgreifenden Einfluss auf [Takagi](https://kenji.blog/de/p/takagi-teiji/) hatte. Unter [Hilbert](https://kenji.blog/de/p/hilbert/) löste er einen Teil von "[Kronecker](https://kenji.blog/de/p/kronecker/)s Jugendtraum" (ein Problem der Theorie der komplexen Multiplikation), erlangte 1903 seinen Doktortitel und kehrte nach Japan zurück.
+Dort erwarteten ihn große Mathematiker, die in der Geschichte der Mathematik ihre Spuren hinterlassen haben, wie [David Hilbert](https://kenji.blog/de/p/hilbert/) und Felix Klein. Insbesondere Hilbert hatte gerade seinen "Zahlbericht" veröffentlicht, der den Höhepunkt der algebraischen Zahlentheorie darstellte, und dessen Inhalt einen tiefgreifenden Einfluss auf Takagi hatte. Unter Hilbert löste er einen Teil von "[Kronecker](https://kenji.blog/de/p/kronecker/)s Jugendtraum" (ein Problem der Theorie der komplexen Multiplikation), erlangte 1903 seinen Doktortitel und kehrte nach Japan zurück.
 
 ## 2. Durchbruch in der Isolation: Die Geburt der Klassenkörpertheorie
 
@@ -109,7 +109,7 @@ graph TD
 - **"Vorlesungen über elementare Zahlentheorie"**: Ein Lehrbuch, das alles von den Grundlagen der Zahlentheorie bis zum quadratischen Reziprozitätsgesetz von Gauß erklärt.
 - **"Historische Erzählungen der modernen Mathematik"**: Ein historisches Buch, das die Gruppe der Mathematiker im 19. Jahrhundert lebendig beschreibt. Es vermittelt die Dramatik der mathematischen Entwicklung.
 
-Die Samen, die er säte, wurden an japanische Mathematiker weitergegeben, die später weltweit aktiv sein sollten, wie [Kunihiko Kodaira](https://kenji.blog/de/p/kodaira-kunihiko/), Kiyoshi Ito und darüber hinaus [Goro Shimura](https://kenji.blog/de/p/shimura-goro/) und [Yutaka Taniyama](https://kenji.blog/de/p/taniyama-yutaka/).
+Die Samen, die er säte, wurden an japanische Mathematiker weitergegeben, die später weltweit aktiv sein sollten, wie [Kunihiko Kodaira](https://kenji.blog/de/p/kodaira-kunihiko/), Kiyoshi Ito und darüber hinaus Goro Shimura und [Yutaka Taniyama](https://kenji.blog/de/p/taniyama-yutaka/).
 
 ## Fazit
 

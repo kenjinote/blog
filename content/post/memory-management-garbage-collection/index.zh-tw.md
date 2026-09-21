@@ -303,7 +303,7 @@ stateDiagram-v2
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 這裡的 $ h $ 代表快取命中率（ $ 0 \le h \le 1 $ ），$ T_{cache} $ 是快取存取時間（約 1〜4 ns ），$ T_{memory} $ 是主記憶體存取時間（約 100 ns ）。
-究竟是將 $ h $ 提升至 0.99（如 C/[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的做法），還是降至 0.5（如 [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 的指標追蹤），會讓應用程式的迴圈執行速度產生數十倍的差距。這正是遊戲引擎或高頻交易系統選擇 C++ 或 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 的真正原因。
+究竟是將 $ h $ 提升至 0.99（如 C/[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的做法），還是降至 0.5（如 Java 的指標追蹤），會讓應用程式的迴圈執行速度產生數十倍的差距。這正是遊戲引擎或高頻交易系統選擇 C++ 或 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 的真正原因。
 
 ---
 

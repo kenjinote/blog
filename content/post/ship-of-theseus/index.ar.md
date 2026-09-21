@@ -28,7 +28,7 @@ slug: "ship-of-theseus"
 
 ### نمط التين الخانق (Strangler Fig Pattern)
 
-من أشهر الأنماط المعمارية (Architecture Patterns) لاستبدال الأنظمة نمط يسمى **نمط التين الخانق** (Strangler Fig Pattern). وهو نهج لا يتم فيه استبدال النظام القديم الضخم والمعقد (Monolith) بالكامل دفعة واحدة، بل يتم نقل الوظائف تدريجياً إلى نظام جديد (مثل الخدمات المصغرة - [[Microservice](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)).
+من أشهر الأنماط المعمارية (Architecture Patterns) لاستبدال الأنظمة نمط يسمى **نمط التين الخانق** (Strangler Fig Pattern). وهو نهج لا يتم فيه استبدال النظام القديم الضخم والمعقد (Monolith) بالكامل دفعة واحدة، بل يتم نقل الوظائف تدريجياً إلى نظام جديد (مثل الخدمات المصغرة - [Microservices](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)).
 
 ```mermaid
 graph LR

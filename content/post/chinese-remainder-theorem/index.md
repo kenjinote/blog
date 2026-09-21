@@ -14,7 +14,7 @@ tags:
 
 ## はじめに
 
-中国剰余定理（[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)、略してCRT）は、整数論における最も重要で美しい定理の一つです。その起源は、3世紀から5世紀頃に編纂されたとされる古代中国の数学書『孫子算経』にまで遡ります。古代の素朴な算術の問題から始まったこの定理は、数千年を経た現代において、私たちが日常的に利用しているインターネットの安全な通信を支える **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号** などの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号技術において、必要不可欠な役割を果たしています。
+中国剰余定理（[Chinese Remainder Theorem](https://kenji.blog/p/chinese-remainder-theorem/)、略してCRT）は、整数論における最も重要で美しい定理の一つです。その起源は、3世紀から5世紀頃に編纂されたとされる古代中国の数学書『孫子算経』にまで遡ります。古代の素朴な算術の問題から始まったこの定理は、数千年を経た現代において、私たちが日常的に利用しているインターネットの安全な通信を支える **RSA暗号** などの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号技術において、必要不可欠な役割を果たしています。
 
 本記事では、この **中国剰余定理** について、その歴史的背景から数学的な厳密な定義、具体的な計算手順、そして現代の暗号理論における応用までを、図解や具体例を交えながら詳しく解説します。
 

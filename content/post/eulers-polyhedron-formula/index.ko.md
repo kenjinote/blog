@@ -15,7 +15,7 @@ tags:
 
 ## 서론: 가장 아름다운 수학 정리 중 하나
 
-수학의 세계에는 얼핏 보기에 전혀 무관해 보이는 현상들 사이에서 놀라운 연관성을 발견하는 마법 같은 공식들이 몇 가지 존재합니다. 그중에서도 [레온하르트 오일러](https://kenji.blog/ko/p/euler/)([Leonhard Euler](https://kenji.blog/ko/p/euler/))에 의해 발견된 **[오일러의 다면체 정리](https://kenji.blog/ko/p/eulers-polyhedron-formula/)** (Euler's polyhedron formula)는 그 단순함과 보편성에서 단연 돋보입니다.
+수학의 세계에는 얼핏 보기에 전혀 무관해 보이는 현상들 사이에서 놀라운 연관성을 발견하는 마법 같은 공식들이 몇 가지 존재합니다. 그중에서도 [레온하르트 오일러](https://kenji.blog/ko/p/euler/)(Leonhard Euler)에 의해 발견된 **[오일러의 다면체 정리](https://kenji.blog/ko/p/eulers-polyhedron-formula/)** (Euler's polyhedron formula)는 그 단순함과 보편성에서 단연 돋보입니다.
 
 공식은 단지 이것뿐입니다.
 

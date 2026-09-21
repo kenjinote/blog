@@ -98,7 +98,7 @@ graph LR
 
 ### 4.1 実例1：[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の数学とPython実装
 
-[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号方式の代表であるRSA暗号は、初等整数論（合同式、[オイラー](https://kenji.blog/p/euler/)の定理、拡張[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)）の美しい応用です。
+[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号方式の代表であるRSA暗号は、初等整数論（合同式、オイラーの定理、拡張[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)）の美しい応用です。
 
 #### 数学的背景
 [RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の鍵生成と[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)・復号のプロセスは以下の数式で表されます。
@@ -171,7 +171,7 @@ def rsa_demo():
 rsa_demo()
 ```
 
-数式 $e \cdot d \equiv 1 \pmod{\phi(n)}$ を満たす $d$ を見つけるために、拡張[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)というアルゴリズムを実装する必要があります。このように、 **数式をコード化しようとすると、「この変数は具体的にどう計算するのか？」という実装上の課題に直面し、それを解決する過程で数学的理解が飛躍的に深まる** のです。
+数式 $e \cdot d \equiv 1 \pmod{\phi(n)}$ を満たす $d$ を見つけるために、拡張[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)というアルゴリズムを実装する必要があります。このように、 **数式をコード化しようとすると、「この変数は具体的にどう計算するのか？」という実装上の課題に直面し、それを解決する過程で数学的理解が飛躍的に深まる** のです。
 
 ### 4.2 実例2：[ダイクストラ法](https://kenji.blog/p/graph-theory-dijkstra-a-star/)と緩和（Relaxation）
 

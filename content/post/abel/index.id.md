@@ -12,7 +12,7 @@ tags: ["Abel", "Aljabar", "Sejarah", "Matematika"]
 
 Dalam sejarah matematika, ada beberapa jenius yang meninggal di usia muda namun meninggalkan dampak yang menentukan bagi generasi mendatang. Di antara mereka, **[Niels Henrik Abel](https://kenji.blog/id/p/abel/)** kelahiran Norwegia menonjol, bersama [Évariste Galois](https://kenji.blog/id/p/galois/), sebagai salah satu jenius tragis yang paling terkenal. Dalam hidupnya yang singkat, hanya 26 tahun, ia membuktikan bahwa "tidak ada solusi aljabar umum untuk persamaan derajat lima atau lebih tinggi", sebuah masalah yang telah mengganggu para matematikawan selama berabad-abad.
 
-Dalam artikel ini, kita akan mempelajari kehidupan [Abel](https://kenji.blog/id/p/abel/), yang didorong oleh hasratnya terhadap matematika terlepas dari kemiskinan dan penyakit, serta pencapaian monumentalnya seperti "Grup [Abel](https://kenji.blog/id/p/abel/)ian" dan "Integral [Abel](https://kenji.blog/id/p/abel/)ian".
+Dalam artikel ini, kita akan mempelajari kehidupan [Abel](https://kenji.blog/id/p/abel/), yang didorong oleh hasratnya terhadap matematika terlepas dari kemiskinan dan penyakit, serta pencapaian monumentalnya seperti "Grup Abelian" dan "Integral [Abel](https://kenji.blog/id/p/abel/)ian".
 
 # 2. Kehidupan [Abel](https://kenji.blog/id/p/abel/): Kemiskinan dan Mekarnya Bakat
 
@@ -20,7 +20,7 @@ Dalam artikel ini, kita akan mempelajari kehidupan [Abel](https://kenji.blog/id/
 
 [Niels Henrik Abel](https://kenji.blog/id/p/abel/) lahir pada 5 Agustus 1802, di desa kecil Finnøy, Norwegia, sebagai putra seorang pendeta. Norwegia pada saat itu miskin secara ekonomi, dan keluarga [Abel](https://kenji.blog/id/p/abel/) tidak terkecuali.
 
-Takdirnya berubah secara signifikan ketika ia memasuki Sekolah Katedral di Oslo pada tahun 1817 dan bertemu dengan guru matematikanya, **Bernt Michael Holmboe**. Holmboe segera mengenali bakat luar biasa [Abel](https://kenji.blog/id/p/abel/) dan mengajarinya matematika tingkat lanjut setingkat universitas. Dengan melahap karya-karya master seperti Euler, [Lagrange](https://kenji.blog/id/p/lagrange/), dan Laplace, [Abel](https://kenji.blog/id/p/abel/) dengan cepat menyerap matematika mutakhir.
+Takdirnya berubah secara signifikan ketika ia memasuki Sekolah Katedral di Oslo pada tahun 1817 dan bertemu dengan guru matematikanya, **Bernt Michael Holmboe**. Holmboe segera mengenali bakat luar biasa [Abel](https://kenji.blog/id/p/abel/) dan mengajarinya matematika tingkat lanjut setingkat universitas. Dengan melahap karya-karya master seperti Euler, Lagrange, dan Laplace, [Abel](https://kenji.blog/id/p/abel/) dengan cepat menyerap matematika mutakhir.
 
 ```mermaid
 flowchart TD
@@ -95,7 +95,7 @@ flowchart LR
 
 ## 7.2 Integral [Abel](https://kenji.blog/id/p/abel/)ian dan Fungsi [Abel](https://kenji.blog/id/p/abel/)ian
 
-Subjek memoar Paris [Abel](https://kenji.blog/id/p/abel/), **Integral [Abel](https://kenji.blog/id/p/abel/)ian**, adalah perumuman integral yang melibatkan fungsi aljabar. Setelah kematiannya, teori ini dikembangkan oleh [Jacobi](https://kenji.blog/id/p/jacobi/) dan lainnya, berkembang menjadi teori-teori luar biasa seperti **Varietas [Abel](https://kenji.blog/id/p/abel/)ian** dalam geometri aljabar.
+Subjek memoar Paris [Abel](https://kenji.blog/id/p/abel/), **Integral Abelian**, adalah perumuman integral yang melibatkan fungsi aljabar. Setelah kematiannya, teori ini dikembangkan oleh Jacobi dan lainnya, berkembang menjadi teori-teori luar biasa seperti **Varietas [Abel](https://kenji.blog/id/p/abel/)ian** dalam geometri aljabar.
 
 ## 7.3 Teorema Limit [Abel](https://kenji.blog/id/p/abel/)
 

@@ -174,7 +174,7 @@ graph LR
 
 1. **実践的な改良は続くが、漸近的な飛躍は無い**: MNFSや多項式選択の最適化、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)・ヴィーデマン法の並列化など、GNFSの定数項 $c$ を改善する試みは続いています。しかし、$\alpha = 1/3$ を下回る古典的アルゴリズムが発見される可能性は極めて低いと考えられています。
 2. **古典計算機上での[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)の安全性は依然として強固**: GNFSの計算量は依然として莫大であり、RSA-2048やRSA-4096は古典コンピュータに対する攻撃に対しては今後数十年にわたり安全性を保ち続けます。
-3. **真の脅威は量子アルゴリズムである**: 計算複雑性の壁を越えたのは量子力学の原理に基づく[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)です。これにより、世界は耐量子計算機暗号（PQC: Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）への移行を余儀なくされています。格子暗号やハッシュベース暗号など、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)でも解読が困難（多項式時間で解けない）とされる新しい数学的問題への移行が、現在の暗号学の最前線となっています。
+3. **真の脅威は量子アルゴリズムである**: 計算複雑性の壁を越えたのは量子力学の原理に基づく[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)です。これにより、世界は耐量子計算機暗号（PQC: Post-Quantum Cryptography）への移行を余儀なくされています。格子暗号やハッシュベース暗号など、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)でも解読が困難（多項式時間で解けない）とされる新しい数学的問題への移行が、現在の暗号学の最前線となっています。
 
 一般数体篩法（GNFS）は、人類が古典数学とアルゴリズム設計の極限まで挑み、到達した「最高到達点」の一つです。GNFSの奥深い数学的構造を理解することは、単に暗号解読の歴史を学ぶだけでなく、計算複雑性理論や代数的整数論の美しさに触れる知的探求の旅でもあります。量子コンピュータが実用化されるその日まで、GNFSは最強の素因数分解アルゴリズムとしての王座を守り続けることでしょう。
 

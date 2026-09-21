@@ -157,7 +157,7 @@ $$
 \oint_C f(z) dz = 0 + i0 = 0
 $$
 
-Ceci est le squelette de la preuve du théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/). Nous pouvons voir qu'en combinant magnifiquement les équations de [Cauchy](https://kenji.blog/fr/p/cauchy/)-[Riemann](https://kenji.blog/fr/p/riemann/) et le théorème de Green, la preuve peut être accomplie de manière étonnamment simple.
+Ceci est le squelette de la preuve du théorème intégral de [Cauchy](https://kenji.blog/fr/p/cauchy/). Nous pouvons voir qu'en combinant magnifiquement les équations de Cauchy-[Riemann](https://kenji.blog/fr/p/riemann/) et le théorème de Green, la preuve peut être accomplie de manière étonnamment simple.
 
 ## 7. Le Théorème de Goursat : Suppression de l'Hypothèse de Dérivabilité Continue
 

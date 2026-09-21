@@ -16,7 +16,7 @@ tags:
 
 ## 1. Einführung: Die Philosophie hinter der funktionalen Programmierung
 
-In der modernen Softwareentwicklung ist die **funktionale Programmierung** ([Functional Programming](https://kenji.blog/de/p/oop-vs-fp-vs-dop/)) nicht mehr nur ein Ansatz für einige wenige Enthusiasten, sondern ein weit verbreitetes Paradigma geworden. Von Frontend-Technologien wie React bis hin zu [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), Scala und sogar objektorientierten Sprachen wie [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) und C# wurden Konzepte wie die Behandlung von Funktionen als First-Class-Citizens und die Eliminierung von Seiteneffekten übernommen.
+In der modernen Softwareentwicklung ist die **funktionale Programmierung** ([Functional Programming](https://kenji.blog/de/p/oop-vs-fp-vs-dop/)) nicht mehr nur ein Ansatz für einige wenige Enthusiasten, sondern ein weit verbreitetes Paradigma geworden. Von Frontend-Technologien wie React bis hin zu Rust, Scala und sogar objektorientierten Sprachen wie [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) und C# wurden Konzepte wie die Behandlung von Funktionen als First-Class-Citizens und die Eliminierung von Seiteneffekten übernommen.
 
 Hinter diesem Paradigma verbirgt sich jedoch eine tiefgreifende mathematische Theorie, die in den 1930er Jahren aufgebaut wurde, noch bevor Computer physisch existierten. Dies ist das von Alonzo Church (Alonzo Church) vorgeschlagene **[Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)-Kalkül** ( $\lambda$-calculus ).
 

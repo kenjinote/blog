@@ -64,7 +64,7 @@ sequenceDiagram
 
 ## 4. التعريف الرياضي ل[قانون الأعداد الكبيرة](https://kenji.blog/ar/p/law-of-large-numbers/)
 
-بناءً على قوة التقارب، هناك نوعان من [قانون الأعداد الكبيرة](https://kenji.blog/ar/p/law-of-large-numbers/): **[قانون الأعداد الكبيرة](https://kenji.blog/ar/p/law-of-large-numbers/) الضعيف** (WLLN) و **[قانون الأعداد الكبيرة](https://kenji.blog/ar/p/law-of-large-numbers/) القوي** (SLLN). معبرًا عنه بصرامة في الرياضيات، يكون كما يلي.
+بناءً على قوة التقارب، هناك نوعان من [قانون الأعداد الكبيرة](https://kenji.blog/ar/p/law-of-large-numbers/): **قانون الأعداد الكبيرة الضعيف** (WLLN) و **[قانون الأعداد الكبيرة](https://kenji.blog/ar/p/law-of-large-numbers/) القوي** (SLLN). معبرًا عنه بصرامة في الرياضيات، يكون كما يلي.
 
 ### 4.1. [قانون الأعداد الكبيرة](https://kenji.blog/ar/p/law-of-large-numbers/) الضعيف (WLLN)
 

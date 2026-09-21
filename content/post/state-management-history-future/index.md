@@ -172,7 +172,7 @@ function counterReducer(state = initialState, action) {
 }
 ```
 
-この「イミュータビリティ（[不変性](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)）」と「[純粋関数](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)」の組み合わせにより、[Redux](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)は強力なタイムトラベルデバッグ（過去の状態への巻き戻し）や、ホットリローディングを実現しました。開発体験（DX）の面で大きなブレイクスルーでした。
+この「イミュータビリティ（[不変性](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)）」と「純粋関数」の組み合わせにより、[Redux](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)は強力なタイムトラベルデバッグ（過去の状態への巻き戻し）や、ホットリローディングを実現しました。開発体験（DX）の面で大きなブレイクスルーでした。
 
 ### 5.3 Reduxの課題：ボイラープレートの壁
 
@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 これらのライブラリは、「サーバーの状態をローカルにキャッシュし、必要に応じて同期する」という複雑な処理を抽象化しました。
 これにより、[Redux](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)などのグローバルストアで管理すべきデータは「純粋なクライアント状態のみ」に激減し、[状態管理](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)の負担は大幅に軽減されました。
 
-## 8. Atomic [State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/) Management：[Recoil](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)と[Jotai](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)
+## 8. Atomic [State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/) Management：Recoilと[Jotai](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)
 
 Server Stateが切り離された後、残されたClient Stateをいかに効率的に管理するかという新たな競争が始まりました。
 Reactのレンダリングモデル（トップダウン）と、[Context API](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)のパフォーマンス問題を解決するために生まれたのが、 **Atomic [State Management](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)** というアプローチです。
@@ -444,7 +444,7 @@ React Compilerは、ビルド時にReactコンポーネントのコードを静�
 
 ## 13. 結論：状態管理はどこへ向かうのか？
 
-MVCの混乱から始まり、[Flux](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)による予測可能性の獲得、Hooksによるシンプル化、Server [State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)の分離、AtomicやProxyによる効率化、そしてSignalsによる細粒度リアクティビティへ。
+MVCの混乱から始まり、[Flux](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)/Reduxによる予測可能性の獲得、Hooksによるシンプル化、Server [State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)の分離、AtomicやProxyによる効率化、そしてSignalsによる細粒度リアクティビティへ。
 
 約15年にわたるフロントエンドの[状態管理](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)の歴史を振り返ると、一つの明確なトレンドが見えてきます。それは **「ボイラープレートを減らし、開発者の認知負荷を下げながら、裏側のシステム（フレームワークやコンパイラ）がパフォーマンスを自動的に最適化する方向へ進化している」** ということです。
 

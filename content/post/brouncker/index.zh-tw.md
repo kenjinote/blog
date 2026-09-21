@@ -12,7 +12,7 @@ tags: ["威廉·布朗克", "圓周率", "連分數", "佩爾方程", "皇家學
 
 17世紀的歐洲正處於科學革命的中心。這是一個數學和物理學發生戲劇性飛躍的時代，以[艾薩克·牛頓](https://kenji.blog/zh-tw/p/newton/)和戈特弗里德·威廉·萊布尼茨發現微積分學為代表。在這一背景下，在英國學術界發展中發揮核心作用的機構是 **皇家學會 (Royal Society)**。
 
-本文詳細介紹了 **[威廉·布朗克](https://kenji.blog/zh-tw/p/brouncker/) ([William Brouncker](https://kenji.blog/zh-tw/p/brouncker/))** 的生平和卓越的數學成就。他曾擔任皇家學會的首任會長，並以其「圓周率的連分數表示」和「[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)的解法」作為數學家在歷史上留下了印記。布朗克與當時歐洲最頂尖的思想家們交流，解決了一系列極具挑戰性的問題。他的成就為嚴格透過數學處理無窮大概念奠定了重要基礎。
+本文詳細介紹了 **[威廉·布朗克](https://kenji.blog/zh-tw/p/brouncker/) (William Brouncker)** 的生平和卓越的數學成就。他曾擔任皇家學會的首任會長，並以其「圓周率的連分數表示」和「[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)的解法」作為數學家在歷史上留下了印記。布朗克與當時歐洲最頂尖的思想家們交流，解決了一系列極具挑戰性的問題。他的成就為嚴格透過數學處理無窮大概念奠定了重要基礎。
 
 ## 2. 早年生活與職業生涯
 
@@ -64,7 +64,7 @@ $$
 
 ## 5. 數學成就：求解[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)
 
-另一項重要成就是對所謂 **[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)** 的求解。[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)是針對非完全平方數的正整數 $n$ 的以下形式的[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程（具有整數係數的多項式方程）：
+另一項重要成就是對所謂 **[佩爾方程](https://kenji.blog/zh-tw/p/pell-equation/)** 的求解。佩爾方程是針對非完全平方數的正整數 $n$ 的以下形式的[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程（具有整數係數的多項式方程）：
 
 $$
 x^2 - n y^2 = 1 \quad (\text{其中 } x, y \text{ 為整數})

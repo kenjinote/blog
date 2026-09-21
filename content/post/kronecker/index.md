@@ -30,7 +30,7 @@ tags:
 
 [クロネッカー](https://kenji.blog/p/kronecker/)は1823年、プロイセン王国のリーグニッツ（現在のポーランド領レグニツァ）で裕福なユダヤ人の家庭に生まれました。幼少期から卓越した知性を示した彼は、地元のギムナジウム（高等中学校）に入学します。
 
-ここで彼の運命を決定づける出会いがありました。当時のギムナジウムの教師として赴任してきたのが、後にイデアル論の先駆者となる偉大な数学者 **[エルンスト・クンマー](https://kenji.blog/p/kummer/)** （[Ernst Kummer](https://kenji.blog/p/kummer/)）だったのです。[クンマー](https://kenji.blog/p/kummer/)は[クロネッカー](https://kenji.blog/p/kronecker/)の才能を即座に見抜き、彼に高度な数学の個別指導を行いました。
+ここで彼の運命を決定づける出会いがありました。当時のギムナジウムの教師として赴任してきたのが、後にイデアル論の先駆者となる偉大な数学者 **[エルンスト・クンマー](https://kenji.blog/p/kummer/)** （Ernst Kummer）だったのです。クンマーは[クロネッカー](https://kenji.blog/p/kronecker/)の才能を即座に見抜き、彼に高度な数学の個別指導を行いました。
 
 ```mermaid
 graph TD
@@ -66,9 +66,9 @@ graph TD
 
 この極端な思想は、彼を同時代の数学者たちとの衝突へと導きます。
 
-最も有名なのは、 **[ゲオルク・カントール](https://kenji.blog/p/cantor/)** （[Georg Cantor](https://kenji.blog/p/cantor/)）の「集合論」に対する猛烈な批判です。カントールが提唱した無限集合の濃度や超限数の概念に対し、[クロネッカー](https://kenji.blog/p/kronecker/)はこれを「数学ではなく神秘主義である」と断じ、カントールの論文の出版を妨害するなどの行動に出ました。
+最も有名なのは、 **[ゲオルク・カントール](https://kenji.blog/p/cantor/)** （Georg Cantor）の「集合論」に対する猛烈な批判です。カントールが提唱した無限集合の濃度や超限数の概念に対し、[クロネッカー](https://kenji.blog/p/kronecker/)はこれを「数学ではなく神秘主義である」と断じ、カントールの論文の出版を妨害するなどの行動に出ました。
 
-また、かつては親友であった **[カール・ワイエルシュトラス](https://kenji.blog/p/weierstrass/)** （[Karl Weierstrass](https://kenji.blog/p/weierstrass/)）とも対立しました。ワイエルシュトラスの解析学（至る所微分不可能な連続関数の構成など）に対し、[クロネッカー](https://kenji.blog/p/kronecker/)は「そのような病的な関数は存在しない」と批判しました。
+また、かつては親友であった **[カール・ワイエルシュトラス](https://kenji.blog/p/weierstrass/)** （Karl Weierstrass）とも対立しました。ワイエルシュトラスの解析学（至る所微分不可能な連続関数の構成など）に対し、[クロネッカー](https://kenji.blog/p/kronecker/)は「そのような病的な関数は存在しない」と批判しました。
 
 # 4. 数学への偉大な貢献
 
@@ -93,7 +93,7 @@ $$
 
 ## 4.2. [クロネッカー](https://kenji.blog/p/kronecker/)積 ([Kronecker](https://kenji.blog/p/kronecker/) Product)
 
-行列のテンソル積の一種である「[クロネッカー](https://kenji.blog/p/kronecker/)積」も、彼の名にちなんでいます。行列 $A$ （サイズ $m \times n$）と行列 $B$ （サイズ $p \times q$）の[クロネッカー](https://kenji.blog/p/kronecker/)積 $A \otimes B$ は、サイズ $(mp) \times (nq)$ のブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)行列として次のように定義されます。
+行列のテンソル積の一種である「[クロネッカー](https://kenji.blog/p/kronecker/)積」も、彼の名にちなんでいます。行列 $A$ （サイズ $m \times n$）と行列 $B$ （サイズ $p \times q$）のクロネッカー積 $A \otimes B$ は、サイズ $(mp) \times (nq)$ のブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)行列として次のように定義されます。
 
 $$
 A \otimes B = \begin{pmatrix}
@@ -120,7 +120,7 @@ $$
 
 ## 4.4. [クロネッカー](https://kenji.blog/p/kronecker/)の青春の夢 ([Kronecker](https://kenji.blog/p/kronecker/)'s Jugendtraum)
 
-[クロネッカー](https://kenji.blog/p/kronecker/)・ヴェーバーの定理は有理数体 $\mathbb{Q}$ 上の[アーベル](https://kenji.blog/p/abel/)拡大に関するものでした。[クロネッカー](https://kenji.blog/p/kronecker/)はこれを、虚二次体などのより一般の代数体へ拡張することを夢見ました。「虚二次体の任意の[アーベル](https://kenji.blog/p/abel/)拡大は、ある特定の関数の特殊値によって生成されるか？」というこの壮大な問題は、後に **[ヒルベルト](https://kenji.blog/p/hilbert/)の第12問題** として定式化されました。
+[クロネッカー](https://kenji.blog/p/kronecker/)・ヴェーバーの定理は有理数体 $\mathbb{Q}$ 上のアーベル拡大に関するものでした。クロネッカーはこれを、虚二次体などのより一般の代数体へ拡張することを夢見ました。「虚二次体の任意のアーベル拡大は、ある特定の関数の特殊値によって生成されるか？」というこの壮大な問題は、後に **[ヒルベルト](https://kenji.blog/p/hilbert/)の第12問題** として定式化されました。
 
 彼はこれを「私の最も愛すべき青春の夢」と呼びました。この問題は、[高木貞治](https://kenji.blog/p/takagi-teiji/)による類体論や、後の虚数乗法論によって大きく進展しましたが、完全に一般の代数体に対しては現在でも未解決の大きなテーマとなっています。
 

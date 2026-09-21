@@ -180,7 +180,7 @@ Im Zettelkasten-System gibt es hauptsächlich drei Arten von Notizen:
 2. **Literatur-Notizen (Literature Notes)**: Zusammenfassungen in eigenen Worten von gelesenen Artikeln oder Büchern.
 3. **Dauerhafte Notizen (Permanent Notes)**: Abgeschlossene Überlegungen, die zu einem bestimmten Thema aufgeschrieben wurden. Diese bilden oft den direkten Keim für zukünftige Blogartikel.
 
-Durch die Nutzung der Backlink-Funktion (`[[Notizname]]`) von Obsidian kann man beispielsweise eine Notiz über "Ownership in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)" mit einer Notiz über die "Geschichte der [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/)" verknüpfen und so völlig unerwartete ideelle Zusammenhänge entdecken.
+Durch die Nutzung der Backlink-Funktion (`[Notizname]]`) von Obsidian kann man beispielsweise eine Notiz über "Ownership in [Rust" mit einer Notiz über die "Geschichte der [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/)" verknüpfen und so völlig unerwartete ideelle Zusammenhänge entdecken.
 
 ## 5. Semantische Suche mit einer Vektordatenbank (Pinecone) und OpenAI Embeddings
 
@@ -314,7 +314,7 @@ Für technische Blogs ist beispielsweise folgende Matrix als Kombinationsmuster 
 
 1. **[Alte Technologien] × [Neue Paradigmen]**: Beispiel: "Anti-Patterns im modernen [Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Design – gelernt aus der Architektur von COBOL"
 2. **[Frontend] × [Backend-Konzepte]**: Beispiel: "Erklärung des virtuellen DOM-Aktualisierungsalgorithmus von React aus der Perspektive von Transaktionsisolationsstufen in Datenbanken"
-3. **[Abstrakte Mathematik/Theorie] × [Konkrete Implementierung]**: Beispiel: "Optimierung des [Pod](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)-Schedulings in [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/) durch Graphentheorie"
+3. **[Abstrakte Mathematik/Theorie] × Konkrete Implementierung]**: Beispiel: "Optimierung des [Pod-Schedulings in [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/) durch Graphentheorie"
 
 Um solche Kombinationen gezielt herbeizuführen, können Sie das zuvor aufgebaute semantische Suchsystem mit Pinecone nutzen, um ein zufälliges Konzept A und ein zufälliges Konzept B zu extrahieren. Geben Sie einer KI (wie ChatGPT) dann folgenden Prompt: "Schlage mir 5 Titel- und Gliederungsideen für einen Technik-Blog vor, die diese beiden Konzepte kombinieren." Dadurch können Sie unendlich viele frische Artikel-Ideen generieren, auf die Sie alleine vielleicht nicht gekommen wären.
 

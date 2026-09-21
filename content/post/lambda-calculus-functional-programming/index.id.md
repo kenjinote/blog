@@ -16,7 +16,7 @@ tags:
 
 ## 1. Pendahuluan: Filosofi di Balik Pemrograman Fungsional
 
-Dalam pengembangan perangkat lunak modern, **pemrograman fungsional** ([Functional Programming](https://kenji.blog/id/p/oop-vs-fp-vs-dop/)) bukan lagi pendekatan untuk sebagian penggemar saja, melainkan telah menjadi paradigma yang digunakan secara luas. Mulai dari teknologi front-end seperti React, hingga [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) dan Scala, bahkan bahasa berorientasi objek seperti [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) dan C#, konsep seperti memperlakukan fungsi sebagai warga kelas satu (first-class object) dan penghapusan efek samping (side effects) telah banyak diadopsi.
+Dalam pengembangan perangkat lunak modern, **pemrograman fungsional** ([Functional Programming](https://kenji.blog/id/p/oop-vs-fp-vs-dop/)) bukan lagi pendekatan untuk sebagian penggemar saja, melainkan telah menjadi paradigma yang digunakan secara luas. Mulai dari teknologi front-end seperti React, hingga Rust dan Scala, bahkan bahasa berorientasi objek seperti [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) dan C#, konsep seperti memperlakukan fungsi sebagai warga kelas satu (first-class object) dan penghapusan efek samping (side effects) telah banyak diadopsi.
 
 Namun, di balik paradigma ini, terdapat teori matematika mendalam yang dibangun pada tahun 1930-an, sebelum komputer secara fisik lahir. Itulah **kalkulus lambda** ( $\lambda$-calculus ) yang diusulkan oleh Alonzo Church.
 

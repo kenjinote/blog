@@ -318,7 +318,7 @@ Modificar uma grande base de código legado manualmente não é realista. Aprove
 
 - **Clang-Tidy**: Um poderoso linter e ferramenta de análise estática para C++. Ao habilitar as verificações do tipo `modernize-*`, ele pode aplicar automaticamente (Fix-it) a utilização de `auto`, substituições por `nullptr`, adições de `override`, entre outras coisas.
 - **AddressSanitizer (ASan)**: Ao incluí-lo como uma opção de compilação (`-fsanitize=address`), ele identifica com precisão os vazamentos de memória e os buffer overruns (estouros de buffer) durante a execução. Ele deve estar sempre habilitado ao executar testes.
-- **Construção de [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)s [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)**: Usando [GitHub Actions](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) ou GitLab CI, executamos builds, testes automáticos e análise estática para todos os Pull Requests (solicitações de pull), evitando assim a introdução de novas dívidas técnicas.
+- **Construção de [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)s CI/CD**: Usando [GitHub Actions](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) ou GitLab CI, executamos builds, testes automáticos e análise estática para todos os Pull Requests (solicitações de pull), evitando assim a introdução de novas dívidas técnicas.
 
 ---
 

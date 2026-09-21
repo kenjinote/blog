@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 Diese Bibliotheken abstrahierten den komplexen Prozess, "den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) des Servers lokal im Cache zu speichern und ihn bei Bedarf zu synchronisieren".
 Infolgedessen reduzierten sich die Daten, die in einem globalen Store wie [Redux](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) verwaltet werden mussten, drastisch auf "nur noch reine Client-Zustände", was den Aufwand für das [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Management erheblich verringerte.
 
-## 8. Atomic [State Management](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/): [Recoil](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) und [Jotai](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)
+## 8. Atomic [State Management](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/): Recoil und [Jotai](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)
 
 Nach der Abspaltung des Server States begann ein neuer Wettbewerb darum, wie der verbleibende Client State am effizientesten verwaltet werden kann.
 Das **Atomic State Management** entstand als Lösung für das (Top-Down-)Rendering-Modell von React und die Leistungsprobleme der [Context API](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/).

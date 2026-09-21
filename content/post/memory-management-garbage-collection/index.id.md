@@ -303,7 +303,7 @@ Waktu rata-rata akses memori efektif $ T_{avg} $ dinyatakan sebagai berikut.
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 Di mana, $ h $ adalah rasio hit cache ( $ 0 \le h \le 1 $ ), $ T_{cache} $ adalah waktu akses cache (sekitar 1~4 ns), dan $ T_{memory} $ adalah waktu akses memori utama (sekitar 100 ns).
-Dengan menjadikan $ h $ mendekati 0.99 (pendekatan C/[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)) dibandingkan menurunkannya ke 0.5 (pengejaran pointer ala [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)), akan tercipta perbedaan kecepatan eksekusi perulangan (looping) aplikasi puluhan kali lipat. Inilah alasan sebenarnya mengapa C++ atau [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) dipilih dalam mesin game atau sistem perdagangan berfrekuensi tinggi (high-frequency trading system).
+Dengan menjadikan $ h $ mendekati 0.99 (pendekatan C/[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)) dibandingkan menurunkannya ke 0.5 (pengejaran pointer ala Java), akan tercipta perbedaan kecepatan eksekusi perulangan (looping) aplikasi puluhan kali lipat. Inilah alasan sebenarnya mengapa C++ atau [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) dipilih dalam mesin game atau sistem perdagangan berfrekuensi tinggi (high-frequency trading system).
 
 ---
 

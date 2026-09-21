@@ -98,7 +98,7 @@ Di sini, mari kita lihat proses menerjemahkan rumus ke dalam kode melalui dua co
 
 ### 4.1 Contoh 1: Matematika Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan Implementasi Python
 
-Kriptografi RSA, yang merupakan representasi dari kriptografi kunci publik, adalah aplikasi yang indah dari teori bilangan dasar (Aritmatika modular, Teorema Euler, [Algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) Lanjutan).
+Kriptografi RSA, yang merupakan representasi dari kriptografi kunci publik, adalah aplikasi yang indah dari teori bilangan dasar (Aritmatika modular, Teorema Euler, [Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/) Lanjutan).
 
 #### Latar Belakang Matematika
 Proses pembuatan kunci, enkripsi, dan dekripsi kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) direpresentasikan oleh rumus berikut.
@@ -171,7 +171,7 @@ def rsa_demo():
 rsa_demo()
 ```
 
-Untuk menemukan $d$ yang memenuhi rumus $e \cdot d \equiv 1 \pmod{\phi(n)}$, kita perlu mengimplementasikan algoritma yang disebut [Algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) Lanjutan. Dengan cara ini, **ketika Anda mencoba menerjemahkan rumus matematika ke dalam kode, Anda akan dihadapkan pada tantangan implementasi "bagaimana secara spesifik menghitung variabel ini?", dan dalam proses memecahkannya, pemahaman matematis Anda akan menjadi jauh lebih dalam**.
+Untuk menemukan $d$ yang memenuhi rumus $e \cdot d \equiv 1 \pmod{\phi(n)}$, kita perlu mengimplementasikan algoritma yang disebut [Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/) Lanjutan. Dengan cara ini, **ketika Anda mencoba menerjemahkan rumus matematika ke dalam kode, Anda akan dihadapkan pada tantangan implementasi "bagaimana secara spesifik menghitung variabel ini?", dan dalam proses memecahkannya, pemahaman matematis Anda akan menjadi jauh lebih dalam**.
 
 ### 4.2 Contoh 2: Algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) dan Relaksasi (Relaxation)
 

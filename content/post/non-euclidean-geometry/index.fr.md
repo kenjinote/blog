@@ -8,9 +8,9 @@ categories: ["mathematics", "physics"]
 tags: ["Géométrie", "Relativité", "Histoire des Sciences", "Mathématiques"]
 ---
 
-## 1. Introduction : L'Emprise d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/)
+## 1. Introduction : L'Emprise d'[Euclide](https://kenji.blog/p/euclid/)
 
-Au IIIe siècle av. J.-C., le mathématicien grec antique [[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) a systématisé axiomatiquement les connaissances géométriques de son époque dans son ouvrage *Éléments*. Il a présenté cinq postulats, mais le cinquième, appelé le **postulat des parallèles**, était plus complexe que les quatre autres et a causé bien des tourments aux mathématiciens par la suite.
+Au IIIe siècle av. J.-C., le mathématicien grec antique [Euclide](https://kenji.blog/p/euclid/) a systématisé axiomatiquement les connaissances géométriques de son époque dans son ouvrage *Éléments*. Il a présenté cinq postulats, mais le cinquième, appelé le **postulat des parallèles**, était plus complexe que les quatre autres et a causé bien des tourments aux mathématiciens par la suite.
 
 $$
 \text{5e postulat : Si une ligne droite tombant sur deux lignes droites fait les angles intérieurs du même côté plus petits que deux angles droits, les deux lignes droites, si elles sont prolongées indéfiniment, se rencontrent du côté où les angles sont plus petits que deux angles droits.}
@@ -80,6 +80,6 @@ Dans l'équation d'Einstein ci-dessus, le côté gauche représente la structure
 
 ## 6. Conclusion
 
-L'exploration de la géométrie non euclidienne, qui a commencé par un simple doute sur le 5e postulat d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/), a brisé les idées reçues intuitives de l'humanité sur l'espace et a prouvé la liberté des mathématiques. Et cela a finalement abouti à la théorie de la relativité générale, qui élucide la structure fondamentale de l'univers.
+L'exploration de la géométrie non euclidienne, qui a commencé par un simple doute sur le 5e postulat d'[Euclide](https://kenji.blog/p/euclid/), a brisé les idées reçues intuitives de l'humanité sur l'espace et a prouvé la liberté des mathématiques. Et cela a finalement abouti à la théorie de la relativité générale, qui élucide la structure fondamentale de l'univers.
 
 La poursuite de la logique pure en mathématiques deviendra plus tard le langage indispensable pour décrire les vérités les plus profondes du monde physique. L'histoire de la géométrie non euclidienne nous enseigne la grandeur de l'intellect humain et le mystère étonnant du monde naturel.

@@ -116,7 +116,7 @@ Anstatt die KI anzuweisen, „das gesamte System zu erstellen“, delegiert der 
 
 ## 4. Menschliche Fähigkeit ③: Architekturdesign und Skalierung verteilter Systeme
 
-Moderne Software hat sich von Monolithen, die auf einem einzigen Server laufen, zu Cloud-nativen [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen und ereignisgesteuerten Architekturen ([Event-Driven](https://kenji.blog/de/p/event-driven-architecture-async/) Architecture) entwickelt. Der Entwurf solcher verteilten Systeme ist für eine KI, die nur lokale Logik optimieren kann, ein äußerst schwieriges Terrain.
+Moderne Software hat sich von Monolithen, die auf einem einzigen Server laufen, zu Cloud-nativen [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen und ereignisgesteuerten Architekturen ([Event-Driven](https://kenji.blog/de/p/event-driven-architecture-async/) Architecture) entwickelt. Der Entwurf solcher verteilten Systeme ist für eine KI, die nur lokale Logik optimieren kann, ein äußerst schwieriges Terrain.
 
 ### 4.1 CAP-Theorem und Kompromissentscheidungen
 
@@ -134,7 +134,7 @@ Eine KI kann zwar „Code schreiben, der C priorisiert“ oder „Code, der A pr
 
 ### 4.2 Asynchrone Kommunikation und [Eventual Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)
 
-Wenn Systeme größer werden, verlagert sich die Kommunikation zwischen Diensten von der synchronen Kommunikation über REST-APIs zur asynchronen Kommunikation über [Message Queue](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/)s ([Kafka](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/) usw.). Die Datenkonsistenz ändert sich hier von sofortiger Konsistenz zu „Eventual Consistency“ (letztendlicher Konsistenz).
+Wenn Systeme größer werden, verlagert sich die Kommunikation zwischen Diensten von der synchronen Kommunikation über REST-APIs zur asynchronen Kommunikation über [Message Queue](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/)s (Kafka, [RabbitMQ](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/) usw.). Die Datenkonsistenz ändert sich hier von sofortiger Konsistenz zu „Eventual Consistency“ (letztendlicher Konsistenz).
 Wann sollten fortschrittliche Architekturmuster wie das Saga-Muster oder [CQRS](https://kenji.blog/de/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) eingeführt werden? Solche komplexen Entscheidungen zu treffen und die Blaupause für das gesamte System zu entwerfen, ist die wahre Meisterleistung eines Senior-Engineers.
 
 ```mermaid
@@ -157,7 +157,7 @@ Je mehr von KI generierter Code vorhanden ist, desto höher ist das Risiko, dass
 
 ### 5.1 Design der Observability (Beobachtbarkeit)
 
-Um Systemausfälle schnell beheben zu können, reicht es nicht aus, Fehlermeldungen in eine KI einzufügen. In einer [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Umgebung durchläuft eine einzige Anfrage Dutzende von Diensten.
+Um Systemausfälle schnell beheben zu können, reicht es nicht aus, Fehlermeldungen in eine KI einzufügen. In einer [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Umgebung durchläuft eine einzige Anfrage Dutzende von Diensten.
 Ingenieure müssen die „drei Säulen der Observability“ – Logs, Metriken und Traces – angemessen in das System integrieren. Es ist die Aufgabe des Menschen, eine Infrastruktur aufzubauen, die Tools wie OpenTelemetry nutzt, um durch Distributed Tracing zu identifizieren, „in welcher Datenbankabfrage welchen Dienstes die Verzögerung auftritt“.
 
 ### 5.2 Umgebungsabhängige Bugs und Chaos Engineering

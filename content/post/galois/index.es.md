@@ -8,7 +8,7 @@ categories: ["matemáticas", "biografía"]
 tags: ["Teoría de Galois", "Álgebra", "Teoría de grupos", "Historia"]
 ---
 
-En la historia de las matemáticas, pocos han llevado una vida tan dramática y trágica como [Évariste Galois](https://kenji.blog/es/p/galois/) (1811-1832). Este joven francés, que perdió la vida en un duelo a la temprana edad de 20 años, sentó las bases de una magnífica teoría que cambiaría fundamentalmente las matemáticas posteriores en una carta escrita en la víspera de su muerte. En este artículo, profundizamos en la turbulenta vida de [Galois](https://kenji.blog/es/p/galois/) y su mayor legado, la **Teoría de [Galois](https://kenji.blog/es/p/galois/)**.
+En la historia de las matemáticas, pocos han llevado una vida tan dramática y trágica como [Évariste Galois](https://kenji.blog/es/p/galois/) (1811-1832). Este joven francés, que perdió la vida en un duelo a la temprana edad de 20 años, sentó las bases de una magnífica teoría que cambiaría fundamentalmente las matemáticas posteriores en una carta escrita en la víspera de su muerte. En este artículo, profundizamos en la turbulenta vida de Galois y su mayor legado, la **Teoría de [Galois](https://kenji.blog/es/p/galois/)**.
 
 ## 1. Una vida turbulenta: Pasión y frustración
 
@@ -16,7 +16,7 @@ En la historia de las matemáticas, pocos han llevado una vida tan dramática y 
 
 [Évariste Galois](https://kenji.blog/es/p/galois/) nació en 1811 en Bourg-la-Reine, un suburbio de París. Su padre era un republicano educado que más tarde se desempeñó como alcalde de la ciudad. Inicialmente educado por su madre, [Galois](https://kenji.blog/es/p/galois/) ingresó al Lycée Louis-le-Grand en París a la edad de 12 años.
 
-La vida escolar en el liceo era aburrida para él, pero su vida cambió por completo a la edad de 15 años cuando descubrió los *Éléments de Géométrie* de [Legendre](https://kenji.blog/es/p/legendre/). Se dice que [Galois](https://kenji.blog/es/p/galois/) leyó este difícil libro en cuestión de días, como si estuviera leyendo una novela. A partir de entonces, ignoró los libros de texto normales y comenzó a devorar los escritos de los matemáticos más grandes de la época, como [Lagrange](https://kenji.blog/es/p/lagrange/) y [Cauchy](https://kenji.blog/es/p/cauchy/).
+La vida escolar en el liceo era aburrida para él, pero su vida cambió por completo a la edad de 15 años cuando descubrió los *Éléments de Géométrie* de [Legendre](https://kenji.blog/es/p/legendre/). Se dice que Galois leyó este difícil libro en cuestión de días, como si estuviera leyendo una novela. A partir de entonces, ignoró los libros de texto normales y comenzó a devorar los escritos de los matemáticos más grandes de la época, como Lagrange y [Cauchy](https://kenji.blog/es/p/cauchy/).
 
 ### Desafíos y fracasos en la École Polytechnique
 
@@ -67,7 +67,7 @@ El núcleo de la Teoría de [Galois](https://kenji.blog/es/p/galois/) radica en 
 - **Cuerpo (Field)**: Un conjunto de números donde las cuatro operaciones aritméticas básicas (suma, resta, multiplicación, división) se pueden realizar libremente. Representa la extensión del espacio que contiene los coeficientes y las raíces de una ecuación.
 - **Grupo (Group)**: Una colección de simetrías o transformaciones. Representa la estructura de las operaciones (automorfismos) que permutan las raíces de una ecuación.
 
-[Galois](https://kenji.blog/es/p/galois/) demostró que existe una correspondencia uno a uno (la **correspondencia de [Galois](https://kenji.blog/es/p/galois/)**) entre los cuerpos intermedios de una extensión de cuerpo que contiene todas las raíces de una ecuación (una extensión de [Galois](https://kenji.blog/es/p/galois/)) y los subgrupos del grupo de [Galois](https://kenji.blog/es/p/galois/) que representan las simetrías de esa extensión.
+[Galois](https://kenji.blog/es/p/galois/) demostró que existe una correspondencia uno a uno (la **correspondencia de Galois**) entre los cuerpos intermedios de una extensión de cuerpo que contiene todas las raíces de una ecuación (una extensión de Galois) y los subgrupos del grupo de [Galois](https://kenji.blog/es/p/galois/) que representan las simetrías de esa extensión.
 
 A continuación se muestra un diagrama (Mermaid) que ilustra esta hermosa correspondencia.
 
@@ -100,7 +100,7 @@ Como muestra este diagrama, el hecho de que el cuerpo se vuelva más grande (de 
 
 ### Condiciones para la resolubilidad por radicales
 
-[Galois](https://kenji.blog/es/p/galois/) caracterizó la condición necesaria y suficiente para que una ecuación sea resuelta por operaciones aritméticas básicas y radicales (algebráicamente soluble) como una propiedad de su grupo de [Galois](https://kenji.blog/es/p/galois/) correspondiente. Específicamente, demostró que el hecho de que una ecuación sea resoluble es equivalente a que su grupo de [Galois](https://kenji.blog/es/p/galois/) sea un **grupo soluble**.
+[Galois](https://kenji.blog/es/p/galois/) caracterizó la condición necesaria y suficiente para que una ecuación sea resuelta por operaciones aritméticas básicas y radicales (algebráicamente soluble) como una propiedad de su grupo de Galois correspondiente. Específicamente, demostró que el hecho de que una ecuación sea resoluble es equivalente a que su grupo de [Galois](https://kenji.blog/es/p/galois/) sea un **grupo soluble**.
 
 $$
 \text{La ecuación es resoluble algebraicamente} \iff \text{El grupo de [Galois](https://kenji.blog/es/p/galois/) es un grupo soluble}
@@ -112,7 +112,7 @@ Así, el hecho de que "las ecuaciones generales de grado 5 o superior no pueden 
 
 ## 3. El legado de [Galois](https://kenji.blog/es/p/galois/) y su impacto en las matemáticas modernas
 
-Después de la muerte de [Galois](https://kenji.blog/es/p/galois/), sus cartas fueron guardadas por su amigo cercano Chevalier y gradualmente se hicieron conocidas entre los matemáticos. Luego, en 1846, el matemático francés Joseph [Liouville](https://kenji.blog/es/p/liouville/) organizó los escritos de [Galois](https://kenji.blog/es/p/galois/) y los publicó en una revista matemática con sus propios comentarios, sacando finalmente a la luz la teoría de [Galois](https://kenji.blog/es/p/galois/).
+Después de la muerte de [Galois](https://kenji.blog/es/p/galois/), sus cartas fueron guardadas por su amigo cercano Chevalier y gradualmente se hicieron conocidas entre los matemáticos. Luego, en 1846, el matemático francés Joseph Liouville organizó los escritos de Galois y los publicó en una revista matemática con sus propios comentarios, sacando finalmente a la luz la teoría de [Galois](https://kenji.blog/es/p/galois/).
 
 El concepto de "grupo" introducido por [Galois](https://kenji.blog/es/p/galois/) se convirtió posteriormente en el lenguaje fundamental no solo para el álgebra, sino para todos los campos científicos, incluyendo la geometría, la topología y la física (como la física de partículas y la cristalografía). Hoy en día, el álgebra abstracta, que estudia sistemas algebraicos como "grupos, anillos y cuerpos", se ha convertido en uno de los pilares más importantes de las matemáticas modernas.
 

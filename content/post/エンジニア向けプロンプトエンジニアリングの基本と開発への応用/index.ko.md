@@ -60,7 +60,7 @@ $$ p_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)} $$
 - $T \to 0$에 가까워질수록 확률 분포가 뾰족해져서, 가장 확률이 높은 토큰만이 선택되게 됩니다(결정론적, Greedy Decoding).
 - $T > 1.0$일 경우, 확률 분포가 평탄해져서 평소에 선택되지 않던 마이너한 토큰들도 선택되기 쉬워집니다(창의성이 증가).
 
-**[엔지니어를 위한](https://kenji.blog/ko/p/[エンジニア向け](https://kenji.blog/ko/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)[プロンプトエンジニアリング](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)の基本と開発への応用/) 실전적 접근:**
+**[엔지니어를 위한](https://kenji.blog/ko/p/エンジニア向け[プロンプトエンジニアリング](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)の基本と開発への応用/) 실전적 접근:**
 API를 거쳐 코드 생성이나 JSON 데이터 추출(Structured Output)을 수행하게 할 경우, 환각(Hallucination)을 방지하고 재현성을 높이기 위해 $T=0.0 \sim 0.2$의 매우 낮은 값을 설정하는 것이 정석입니다. 반면, 아키텍처의 브레인스토밍이나 명명 규칙 아이디어 도출 등 탐색적인 태스크에서는 $T=0.7 \sim 1.0$으로 설정합니다.
 
 ---

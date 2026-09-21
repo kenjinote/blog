@@ -160,7 +160,7 @@ Die Entdeckungen von [Fibonacci](https://kenji.blog/de/p/fibonacci/), der vor et
 
 ### Anwendungen in der Informatik
 
-In Computeralgorithmen ist die [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge äußerst nützlich. Der Algorithmus namens "[Fibonacci](https://kenji.blog/de/p/fibonacci/)-Suche" kann Daten unter bestimmten Bedingungen effizienter suchen als die binäre Suche. Darüber hinaus ist eine als "[Fibonacci](https://kenji.blog/de/p/fibonacci/)-[Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)" bekannte Datenstruktur unverzichtbar für die Beschleunigung graphentheoretischer Algorithmen wie dem [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus.
+In Computeralgorithmen ist die [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge äußerst nützlich. Der Algorithmus namens "Fibonacci-Suche" kann Daten unter bestimmten Bedingungen effizienter suchen als die binäre Suche. Darüber hinaus ist eine als "Fibonacci-Heap" bekannte Datenstruktur unverzichtbar für die Beschleunigung graphentheoretischer Algorithmen wie dem [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus.
 
 ### [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Retracement auf den Finanzmärkten
 

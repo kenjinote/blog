@@ -10,7 +10,7 @@ tags: ["Ernst Kummer", "Großer Fermatscher Satz", "Ideale Zahlen", "Algebraisch
 
 # [Ernst Kummer](https://kenji.blog/de/p/kummer/): Vater der idealen Zahlen und die Morgendämmerung der algebraischen Zahlentheorie
 
-In der Geschichte der Mathematik ist es nicht ungewöhnlich, dass die Herausforderung eines bestimmten offenen Problems völlig neue Forschungsfelder eröffnet. Ernst Eduard [Kummer](https://kenji.blog/de/p/kummer/) ( **Ernst Eduard [Kummer](https://kenji.blog/de/p/kummer/)** ) ist ein deutscher mathematischer Gigant des 19. Jahrhunderts, der genau solch einen historischen Wendepunkt schuf. Während seines tiefgründigen Kampfes mit dem **Großen [Fermat](https://kenji.blog/de/p/fermat/)schen Satz** ( **[Fermat's Last Theorem](https://kenji.blog/de/p/fermats-last-theorem/)** ) führte er das bahnbrechende Konzept der **idealen Zahlen** ( **Ideal Numbers** ) ein und legte damit den Grundstein für die moderne algebraische Zahlentheorie.
+In der Geschichte der Mathematik ist es nicht ungewöhnlich, dass die Herausforderung eines bestimmten offenen Problems völlig neue Forschungsfelder eröffnet. Ernst Eduard [Kummer](https://kenji.blog/de/p/kummer/) ( **Ernst Eduard Kummer** ) ist ein deutscher mathematischer Gigant des 19. Jahrhunderts, der genau solch einen historischen Wendepunkt schuf. Während seines tiefgründigen Kampfes mit dem **Großen Fermatschen Satz** ( **[Fermat's Last Theorem](https://kenji.blog/de/p/fermats-last-theorem/)** ) führte er das bahnbrechende Konzept der **idealen Zahlen** ( **Ideal Numbers** ) ein und legte damit den Grundstein für die moderne algebraische Zahlentheorie.
 
 In diesem Artikel werden wir tief in [Kummer](https://kenji.blog/de/p/kummer/)s turbulentes Leben, die menschlichen Episoden um ihn herum und seine brillanten Errungenschaften, die in der Mathematikgeschichte weiterhin strahlen, eintauchen.
 
@@ -20,7 +20,7 @@ In diesem Artikel werden wir tief in [Kummer](https://kenji.blog/de/p/kummer/)s 
 
 ### Frühes Leben und Wechsel von der Theologie
 
-[Ernst Kummer](https://kenji.blog/de/p/kummer/) wurde am 29. Januar 1810 in Sorau ( **Sorau** ), im Königreich Preußen (heute in Polen), geboren. Sein Vater, ein Arzt, verstarb, als [Kummer](https://kenji.blog/de/p/kummer/) noch sehr jung war, und er wurde von seiner Mutter aufgezogen. Obwohl sie arm waren, erhielt [Kummer](https://kenji.blog/de/p/kummer/) eine engagierte Ausbildung und trat 1828 in die Universität Halle ein.
+[Ernst Kummer](https://kenji.blog/de/p/kummer/) wurde am 29. Januar 1810 in Sorau ( **Sorau** ), im Königreich Preußen (heute in Polen), geboren. Sein Vater, ein Arzt, verstarb, als Kummer noch sehr jung war, und er wurde von seiner Mutter aufgezogen. Obwohl sie arm waren, erhielt [Kummer](https://kenji.blog/de/p/kummer/) eine engagierte Ausbildung und trat 1828 in die Universität Halle ein.
 
 Zunächst studierte er protestantische Theologie, aber unter dem Einfluss von Professor Heinrich Ferdinand Scherk ( **Heinrich Ferdinand Scherk** ) wurde er von der Schönheit und Tiefe der Mathematik fasziniert. Unter der Anleitung von Professor Scherk widmete sich [Kummer](https://kenji.blog/de/p/kummer/) der Mathematik und promovierte bereits drei Jahre später, im Jahr 1831.
 
@@ -28,13 +28,13 @@ Zunächst studierte er protestantische Theologie, aber unter dem Einfluss von Pr
 
 Nach seinem Abschluss konnte [Kummer](https://kenji.blog/de/p/kummer/) nicht sofort eine Universitätsstelle sichern, weshalb er etwa zehn Jahre lang als Mathematik- und Physiklehrer an einem Gymnasium in Liegnitz ( **Liegnitz** ), nahe seiner Heimatstadt, arbeitete. Diese Zeit als Lehrer war keineswegs verschwendet. Er hatte eine tiefe Leidenschaft als Pädagoge und bildete außergewöhnliche Schüler aus.
 
-Einer dieser Schüler war Leopold [Kronecker](https://kenji.blog/de/p/kronecker/) ( **Leopold [Kronecker](https://kenji.blog/de/p/kronecker/)** ), der später [Kummer](https://kenji.blog/de/p/kummer/)s Kollege und lebenslanger Freund werden sollte. [Kummer](https://kenji.blog/de/p/kummer/) erkannte [Kronecker](https://kenji.blog/de/p/kronecker/)s außergewöhnliches Talent, brachte ihm höhere Mathematik bei und brachte ihn auf den Weg der Forschung. Während seiner Zeit als Gymnasiallehrer setzte [Kummer](https://kenji.blog/de/p/kummer/) seine eigenen Forschungen fort und veröffentlichte eine Reihe herausragender Arbeiten in akademischen Zeitschriften in Berlin.
+Einer dieser Schüler war Leopold [Kronecker](https://kenji.blog/de/p/kronecker/) ( **Leopold Kronecker** ), der später Kummers Kollege und lebenslanger Freund werden sollte. Kummer erkannte Kroneckers außergewöhnliches Talent, brachte ihm höhere Mathematik bei und brachte ihn auf den Weg der Forschung. Während seiner Zeit als Gymnasiallehrer setzte [Kummer](https://kenji.blog/de/p/kummer/) seine eigenen Forschungen fort und veröffentlichte eine Reihe herausragender Arbeiten in akademischen Zeitschriften in Berlin.
 
 ### Ruhm als Universitätsprofessor
 
-Seine bemerkenswerten Forschungsleistungen zogen die Aufmerksamkeit der führenden Mathematiker der damaligen Zeit auf sich. 1842 wurde [Kummer](https://kenji.blog/de/p/kummer/) auf Empfehlung von [Carl Gustav Jacob Jacobi](https://kenji.blog/de/p/jacobi/) ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/de/p/jacobi/)** ) und Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ) ordentlicher Professor an der Universität Breslau. Darüber hinaus wurde er 1855 zum Professor an der Universität Berlin ernannt, um Dirichlet nachzufolgen, der nach Göttingen gewechselt war.
+Seine bemerkenswerten Forschungsleistungen zogen die Aufmerksamkeit der führenden Mathematiker der damaligen Zeit auf sich. 1842 wurde [Kummer](https://kenji.blog/de/p/kummer/) auf Empfehlung von Carl Gustav Jacob Jacobi ( **[Carl Gustav Jacob Jacobi](https://kenji.blog/de/p/jacobi/)** ) und Peter Gustav Lejeune Dirichlet ( **Peter Gustav Lejeune Dirichlet** ) ordentlicher Professor an der Universität Breslau. Darüber hinaus wurde er 1855 zum Professor an der Universität Berlin ernannt, um Dirichlet nachzufolgen, der nach Göttingen gewechselt war.
 
-An der Universität Berlin machte [Kummer](https://kenji.blog/de/p/kummer/) zusammen mit [Karl Weierstrass](https://kenji.blog/de/p/weierstrass/) ( **[Karl Weierstrass](https://kenji.blog/de/p/weierstrass/)** ) und seinem ehemaligen Schüler [Kronecker](https://kenji.blog/de/p/kronecker/) Berlin zu einem globalen Zentrum der Mathematik. Seine Vorlesungen waren extrem klar und leidenschaftlich und zogen viele brillante Studenten aus ganz Europa an.
+An der Universität Berlin machte [Kummer](https://kenji.blog/de/p/kummer/) zusammen mit Karl Weierstrass ( **Karl Weierstrass** ) und seinem ehemaligen Schüler [Kronecker](https://kenji.blog/de/p/kronecker/) Berlin zu einem globalen Zentrum der Mathematik. Seine Vorlesungen waren extrem klar und leidenschaftlich und zogen viele brillante Studenten aus ganz Europa an.
 
 ---
 
@@ -64,7 +64,7 @@ $$
 
 Es gibt keine positiven ganzzahligen Lösungen $(x, y, z)$, die diese Gleichung erfüllen.
 
-1847 gaben die französischen Mathematiker [Gabriel Lamé](https://kenji.blog/de/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/de/p/lame/)** ) und [Augustin-Louis Cauchy](https://kenji.blog/de/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/de/p/cauchy/)** ) bekannt, dass es ihnen gelungen sei, diesen Satz zu beweisen. Ihr Ansatz bestand darin, die Faktorisierung auf das Reich der komplexen Zahlen (Kreisteilungskörper) auszudehnen.
+1847 gaben die französischen Mathematiker [Gabriel Lamé](https://kenji.blog/de/p/lame/) ( **Gabriel Lamé** ) und Augustin-Louis Cauchy ( **[Augustin-Louis Cauchy](https://kenji.blog/de/p/cauchy/)** ) bekannt, dass es ihnen gelungen sei, diesen Satz zu beweisen. Ihr Ansatz bestand darin, die Faktorisierung auf das Reich der komplexen Zahlen (Kreisteilungskörper) auszudehnen.
 
 Unter Verwendung der primitiven $p$-ten Einheitswurzel $\zeta$ (wobei $\zeta^p = 1, \zeta \neq 1$) kann die Gleichung $x^p + y^p = z^p$ wie folgt faktorisiert werden:
 
@@ -74,7 +74,7 @@ $$
 
 [Lamé](https://kenji.blog/de/p/lame/) und andere nahmen stillschweigend an, dass die "Eindeutigkeit der Primfaktorzerlegung" bei gewöhnlichen ganzen Zahlen (bei der jede ganze Zahl eindeutig als Produkt von Primzahlen ausgedrückt werden kann) auch in dieser erweiterten Welt der komplexen ganzen Zahlen (Kreisteilungszahlen) gelten würde.
 
-[Kummer](https://kenji.blog/de/p/kummer/) hatte jedoch bereits einige Jahre zuvor entdeckt, dass diese Annahme falsch war. Zum Beispiel schlägt die Eindeutigkeit der Primfaktorzerlegung fehl, wenn $p=23$. Ohne eindeutige Faktorisierung brach der Beweis von [Lamé](https://kenji.blog/de/p/lame/) und [Cauchy](https://kenji.blog/de/p/cauchy/) vollständig zusammen.
+[Kummer](https://kenji.blog/de/p/kummer/) hatte jedoch bereits einige Jahre zuvor entdeckt, dass diese Annahme falsch war. Zum Beispiel schlägt die Eindeutigkeit der Primfaktorzerlegung fehl, wenn $p=23$. Ohne eindeutige Faktorisierung brach der Beweis von Lamé und [Cauchy](https://kenji.blog/de/p/cauchy/) vollständig zusammen.
 
 ```mermaid
 flowchart TD
@@ -108,7 +108,7 @@ Später verallgemeinerte Richard Dedekind ( **Richard Dedekind** ) [Kummer](http
 
 ## Reguläre Primzahlen und der teilweise Beweis des Großen [Fermat](https://kenji.blog/de/p/fermat/)schen Satzes
 
-Unter Verwendung der Theorie der idealen Zahlen versetzte [Kummer](https://kenji.blog/de/p/kummer/) dem Großen [Fermat](https://kenji.blog/de/p/fermat/)schen Satz einen gewaltigen Schlag. Er definierte das Konzept der **regulären Primzahlen** ( **Regular Primes** ) und bewies das erstaunliche Ergebnis, dass "wenn $p$ eine reguläre Primzahl ist, dann gilt der Große [Fermat](https://kenji.blog/de/p/fermat/)sche Satz für $p$."
+Unter Verwendung der Theorie der idealen Zahlen versetzte [Kummer](https://kenji.blog/de/p/kummer/) dem Großen Fermatschen Satz einen gewaltigen Schlag. Er definierte das Konzept der **regulären Primzahlen** ( **Regular Primes** ) und bewies das erstaunliche Ergebnis, dass "wenn $p$ eine reguläre Primzahl ist, dann gilt der Große [Fermat](https://kenji.blog/de/p/fermat/)sche Satz für $p$."
 
 Eine reguläre Primzahl ist eine Primzahl $p$, die die Klassenzahl $h_p$ des Kreisteilungskörpers $\mathbb{Q}(\zeta_p)$ nicht teilt. Die Klassenzahl ist ein Index, der misst, wie stark die eindeutige Faktorisierung fehlschlägt; wenn die Klassenzahl $1$ ist, gilt die eindeutige Faktorisierung.
 
@@ -124,7 +124,7 @@ Unter Verwendung dieses Kriteriums bewies [Kummer](https://kenji.blog/de/p/kumme
 
 ## Beitrag zur Geometrie: Die [Kummer](https://kenji.blog/de/p/kummer/)-Fläche
 
-Zusätzlich zu seiner bahnbrechenden Arbeit in der Zahlentheorie machte [Kummer](https://kenji.blog/de/p/kummer/) entscheidende Entdeckungen auf dem Gebiet der Geometrie. Die repräsentativste davon ist die **[Kummer](https://kenji.blog/de/p/kummer/)-Fläche** ( **[Kummer](https://kenji.blog/de/p/kummer/) Surface** ).
+Zusätzlich zu seiner bahnbrechenden Arbeit in der Zahlentheorie machte [Kummer](https://kenji.blog/de/p/kummer/) entscheidende Entdeckungen auf dem Gebiet der Geometrie. Die repräsentativste davon ist die **Kummer-Fläche** ( **[Kummer](https://kenji.blog/de/p/kummer/) Surface** ).
 
 Im Jahr 1864 studierte [Kummer](https://kenji.blog/de/p/kummer/) eine spezifische Klasse von Flächen vierten Grades im dreidimensionalen Raum. Diese Fläche hat die zutiefst faszinierende Eigenschaft, die maximal mögliche Anzahl an Singularitäten (Punkte, an denen die Fläche nicht glatt ist, z.B. scharfe Spitzen) zu besitzen – genau $16$.
 

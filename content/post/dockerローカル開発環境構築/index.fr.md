@@ -13,7 +13,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 Dans le développement logiciel, le problème du « Ça marche sur ma machine » (It works on my machine), dû aux différences d'environnements entre les développeurs, est depuis longtemps un facteur de perte de temps dans de nombreux projets. En raison des différences de systèmes d'exploitation, de versions de langages installées, des dépendances de bibliothèques, ou des conflits d'outils installés globalement, l'environnement local est toujours exposé à une « incertitude d'état ».
 
-Ce qui résout fondamentalement ces défis, c'est la technologie des conteneurs, notamment **[Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/)**, et le paradigme d'**[Infrastructure as Code](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/))**. Conteneuriser l'environnement de développement local permet une isolation au niveau du système d'exploitation et de versionner l'environnement lui-même avec la base de code.
+Ce qui résout fondamentalement ces défis, c'est la technologie des conteneurs, notamment **[Docker](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)**, et le paradigme d'**Infrastructure as Code ([IaC](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/))**. Conteneuriser l'environnement de développement local permet une isolation au niveau du système d'exploitation et de versionner l'environnement lui-même avec la base de code.
 
 Cet article explique en détail, avec des perspectives mathématiques, la méthode pour construire **« un environnement de développement local reproductible qui reste exactement le même peu importe qui, quand, et sur quelle machine il est lancé »**, en tirant parti de Docker, Docker Compose, et VSCode Dev[Container](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)s.
 
@@ -356,7 +356,7 @@ Le temps de réponse moyen est exprimé par l'équation d'espérance mathématiq
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-Dans l'environnement de développement local (dans [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/)), $T_{\text{net}}$ est proche de 0, mais ce qui requiert notre attention, ce sont **les performances d'E/S du bind mount**. En particulier, lors de l'utilisation de Docker Desktop sous Windows/macOS, la surcharge de partage de fichiers entre l'OS hôte et la VM (conteneur) a tendance à gonfler $T_{\text{app}}$ (comme les temps de lecture du code). Pour résoudre ce goulot d'étranglement, il est fortement recommandé d'utiliser Dev[Container](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)s pour placer l'intégralité du code source dans un volume nommé, ou d'adopter une architecture exécutant le moteur Docker de manière native dans l'environnement WSL2 (Windows Subsystem for Linux 2).
+Dans l'environnement de développement local (dans [Docker](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)), $T_{\text{net}}$ est proche de 0, mais ce qui requiert notre attention, ce sont **les performances d'E/S du bind mount**. En particulier, lors de l'utilisation de Docker Desktop sous Windows/macOS, la surcharge de partage de fichiers entre l'OS hôte et la VM (conteneur) a tendance à gonfler $T_{\text{app}}$ (comme les temps de lecture du code). Pour résoudre ce goulot d'étranglement, il est fortement recommandé d'utiliser Dev[Container](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)s pour placer l'intégralité du code source dans un volume nommé, ou d'adopter une architecture exécutant le moteur Docker de manière native dans l'environnement WSL2 (Windows Subsystem for Linux 2).
 
 ---
 
@@ -399,7 +399,7 @@ Voici des problèmes fréquents rencontrés lors de l'utilisation d'un environne
    Si vous obtenez une erreur telle que `Bind for 0.0.0.0:8000 failed: port is already allocated`, c'est qu'un autre processus sur la machine locale utilise ce port. Vous pouvez éviter cela en changeant le numéro de port côté hôte, comme `ports: - "8080:8000"`.
 
 2. **Épuisement de l'espace disque**
-   L'utilisation de [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/) sur une longue période peut accumuler des images et volumes inutilisés (Dangling Images / Volumes), occupant parfois des dizaines de [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) d'espace disque. Il est recommandé de nettoyer périodiquement le système avec la commande suivante :
+   L'utilisation de [Docker](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/) sur une longue période peut accumuler des images et volumes inutilisés (Dangling Images / Volumes), occupant parfois des dizaines de [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) d'espace disque. Il est recommandé de nettoyer périodiquement le système avec la commande suivante :
    ```bash
    docker system prune -a --volumes
    ```

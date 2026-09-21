@@ -173,7 +173,7 @@ Además, dado que el par original $(a, b)$ fue creado correspondientemente en la
 El resto es rezar para que $X$ e $Y$ no sean una solución trivial ($X \equiv \pm Y$), y calcular:
 **$\gcd(X - Y, N)$**
 
-Si es una solución no trivial, el algoritmo de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) correrá en 0.001 segundos e imprimirá en la pantalla de salida el corazón del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/): los primos secretos $p$ y $q$.
+Si es una solución no trivial, el algoritmo de [Euclides](https://kenji.blog/p/euclid/) correrá en 0.001 segundos e imprimirá en la pantalla de salida el corazón del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/): los primos secretos $p$ y $q$.
 
 ---
 

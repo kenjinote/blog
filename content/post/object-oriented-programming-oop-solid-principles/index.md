@@ -421,7 +421,7 @@ $$ P_2 <: P_1 \quad \text{かつ} \quad R_1 <: R_2 $$
 
 本記事では、OOPの歴史的背景から始まり、カプセル化・継承・ポリモーフィズムといった基本要素、そしてエンタープライズ開発に不可欠なSOLID原則について詳細に解説しました。
 
-近年では、[関数型プログラミング](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)（FP）のパラダイムが台頭し、[不変性](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)（Immutability）や[純粋関数](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)（Pure Functions）の利点が見直されています。しかし、OOPとFPは対立するものではありません。現代の言語（Scala, Kotlin, [Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/), 昨今のC#や[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)）は両者のパラダイムを融合させ、「状態管理はOOPのクラスでカプセル化し、データ変換パイプラインはFPのアプローチで行う」といったハイブリッドな設計が主流になりつつあります。
+近年では、[関数型プログラミング](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)（FP）のパラダイムが台頭し、不変性（Immutability）や純粋関数（Pure Functions）の利点が見直されています。しかし、OOPとFPは対立するものではありません。現代の言語（Scala, Kotlin, Rust, 昨今のC#や[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)）は両者のパラダイムを融合させ、「状態管理はOOPのクラスでカプセル化し、データ変換パイプラインはFPのアプローチで行う」といったハイブリッドな設計が主流になりつつあります。
 
 ソフトウェア設計に「銀の弾丸」はありませんが、OOPの深い理解とSOLID原則の適用は、長期的にメンテナンス可能で変化に強いシステムを構築するための強力な武器となるでしょう。
 

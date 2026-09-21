@@ -68,7 +68,7 @@ $$
 $$
 
 **Dampak pada Pemilihan Teknologi:**
-Model raksasa seperti DLRM menangkap bahkan sinyal yang sangat halus (misalnya, sedikit peningkatan pada waktu tinggal untuk "postingan dengan video" atau "postingan yang berisi buzzword tertentu") dan merefleksikannya dalam skor prediksi. Akibatnya, informasi teknis yang mengandung "judul ekstrem (misalnya, 'React sudah usang', 'Akhir dari [[Microservice](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)')" atau "demo visual yang mencolok" lebih cenderung diunggulkan secara algoritmik.
+Model raksasa seperti DLRM menangkap bahkan sinyal yang sangat halus (misalnya, sedikit peningkatan pada waktu tinggal untuk "postingan dengan video" atau "postingan yang berisi buzzword tertentu") dan merefleksikannya dalam skor prediksi. Akibatnya, informasi teknis yang mengandung "judul ekstrem (misalnya, 'React sudah usang', 'Akhir dari [Microservices](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)')" atau "demo visual yang mencolok" lebih cenderung diunggulkan secara algoritmik.
 
 ### 2.3 Pembelajaran Penguatan dan Masalah Bandit Berlengan Banyak (Multi-Armed Bandits)
 

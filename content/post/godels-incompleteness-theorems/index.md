@@ -51,7 +51,7 @@ graph TD
 
 ## 3. 第一[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)の衝撃：「真だが証明できない」命題
 
-しかし1931年、当時わずか25歳だった[クルト・ゲーデル](https://kenji.blog/p/godel/)は、[ヒルベルト](https://kenji.blog/p/hilbert/)の夢を粉々に打ち砕く論文を発表しました。それが **第一[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)** です。
+しかし1931年、当時わずか25歳だった[クルト・ゲーデル](https://kenji.blog/p/godel/)は、ヒルベルトの夢を粉々に打ち砕く論文を発表しました。それが **第一[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)** です。
 
 >  **第一[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)** 
 > ペアノ算術を含むような、無矛盾な形式的体系には、真であるにもかかわらず、その体系内では証明できない命題が必ず存在する。
@@ -109,12 +109,12 @@ graph TD
 
 ## 5. 第二[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)：自らの正しさを証明できない絶望
 
-第一[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)だけでも数学界を震撼させましたが、[ゲーデル](https://kenji.blog/p/godel/)の論文にはさらに恐ろしい結論が含まれていました。それが **第二[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)** です。
+第一[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)だけでも数学界を震撼させましたが、ゲーデルの論文にはさらに恐ろしい結論が含まれていました。それが **第二[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)** です。
 
 >  **第二[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)** 
 > ペアノ算術を含むような無矛盾な形式的体系は、自分自身の無矛盾性をその体系内で証明することができない。
 
-[ヒルベルト](https://kenji.blog/p/hilbert/)は、数学が無矛盾であることを、数学自身の力を使って証明しようとしていました（[ヒルベルト](https://kenji.blog/p/hilbert/)・プログラムの最重要課題）。しかし、第二[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)は「どんなシステムも、自らが狂っていない（矛盾していない）ことを、自らの力で証明することはできない」と宣告したのです。
+[ヒルベルト](https://kenji.blog/p/hilbert/)は、数学が無矛盾であることを、数学自身の力を使って証明しようとしていました（ヒルベルト・プログラムの最重要課題）。しかし、第二[不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)は「どんなシステムも、自らが狂っていない（矛盾していない）ことを、自らの力で証明することはできない」と宣告したのです。
 
 これを直感的に理解するために、次のように考えてみましょう。
 もし、ある人が「私は絶対に嘘をつかない！」と主張したとします。しかし、私たちはその人の言葉だけを根拠にして「この人は嘘つきではない」と証明することはできません。なぜなら、もしその人が嘘つきであれば、「私は絶対に嘘をつかない」という発言自体が嘘かもしれないからです。
@@ -136,9 +136,9 @@ graph TD
 
 ## 7. [チューリング](https://kenji.blog/p/turing/)マシンへのバトン：計算機科学の幕開け
 
-[ゲーデル](https://kenji.blog/p/godel/)の定理がもたらした影響は、数学の枠にとどまりませんでした。1936年、イギリスの数学者[アラン・チューリング](https://kenji.blog/p/turing/)は、[ゲーデル](https://kenji.blog/p/godel/)の「形式的体系」の概念を物理的な計算プロセスに置き換え、「[チューリング](https://kenji.blog/p/turing/)マシン」という仮想の計算機モデルを考案しました。
+[ゲーデル](https://kenji.blog/p/godel/)の定理がもたらした影響は、数学の枠にとどまりませんでした。1936年、イギリスの数学者アラン・チューリングは、ゲーデルの「形式的体系」の概念を物理的な計算プロセスに置き換え、「[チューリング](https://kenji.blog/p/turing/)マシン」という仮想の計算機モデルを考案しました。
 
-[チューリング](https://kenji.blog/p/turing/)は、[ゲーデルの不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)を計算機の世界に応用し、「どんなコンピュータのプログラムにも、永遠に計算が終わらないかどうかをあらかじめ判定する万能なアルゴリズムは存在しない」ことを証明しました。これが有名な **[停止性問題](https://kenji.blog/p/turing-machine-computability/)** （[Halting Problem](https://kenji.blog/p/turing-machine-computability/)）です。
+[チューリング](https://kenji.blog/p/turing/)は、ゲーデルの不完全性定理を計算機の世界に応用し、「どんなコンピュータのプログラムにも、永遠に計算が終わらないかどうかをあらかじめ判定する万能なアルゴリズムは存在しない」ことを証明しました。これが有名な **停止性問題** （[Halting Problem](https://kenji.blog/p/turing-machine-computability/)）です。
 
 ```mermaid
 graph TD

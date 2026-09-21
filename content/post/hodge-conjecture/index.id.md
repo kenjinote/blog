@@ -68,7 +68,7 @@ elemen yang termasuk ke dalamnya disebut **Kelas Hodge** (Hodge Class).
 
 Persiapan sudah selesai. Pernyataan dari Konjektur Hodge sangat sederhana, namun luar biasa kuat.
 
-> **[Konjektur Hodge ([Hodge Conjecture](https://kenji.blog/id/p/hodge-conjecture/))](https://kenji.blog/p/hodge-conjecture/)**
+> **[Konjektur Hodge (Hodge Conjecture)](https://kenji.blog/p/hodge-conjecture/)**
 > Sembarang kelas Hodge pada varietas aljabar proyektif non-singular X di atas lapangan bilangan kompleks dapat diekspresikan oleh kombinasi linear dengan koefisien bilangan rasional dari siklus-siklus aljabar.
 
 Dengan kata lain, ini menyatakan bahwa "kelas kohomologi (kelas Hodge) yang terlihat bersifat geometri aljabar dari sudut pandang topologi dan analisis kompleks, sebenarnya berasal dari bangun yang dibuat dari persamaan aljabar (siklus aljabar)".

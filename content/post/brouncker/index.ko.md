@@ -12,7 +12,7 @@ tags: ["윌리엄 브롱커", "원주율", "연분수", "펠 방정식", "왕립
 
 17세기 유럽은 과학 혁명의 한가운데에 있었습니다. [아이작 뉴턴](https://kenji.blog/ko/p/newton/)과 고트프리트 빌헬름 라이프니츠의 미적분학 발견으로 대표되듯, 수학과 물리학이 극적인 도약을 이룬 시대였습니다. 그 중심에서 영국 학계의 발전에 핵심적인 역할을 한 기관이 바로 **왕립학회 (Royal Society)** 입니다.
 
-이 글에서는 왕립학회의 초대 회장을 역임했으며 "원주율의 연분수 표현"과 "[펠 방정식](https://kenji.blog/ko/p/pell-equation/)의 해법"으로 수학자로서 역사에 이름을 남긴 **[윌리엄 브롱커](https://kenji.blog/ko/p/brouncker/) ([William Brouncker](https://kenji.blog/ko/p/brouncker/))** 의 생애와 그의 놀라운 수학적 업적에 대해 자세히 설명합니다. 브롱커는 당시 유럽의 최고 지성들과 교류하며 수많은 난제에 도전했습니다. 그의 업적은 무한이라는 개념을 수학적으로 엄밀하게 다루기 위한 토대를 마련하는 데 크게 기여했습니다.
+이 글에서는 왕립학회의 초대 회장을 역임했으며 "원주율의 연분수 표현"과 "[펠 방정식](https://kenji.blog/ko/p/pell-equation/)의 해법"으로 수학자로서 역사에 이름을 남긴 **윌리엄 브롱커 ([William Brouncker](https://kenji.blog/ko/p/brouncker/))** 의 생애와 그의 놀라운 수학적 업적에 대해 자세히 설명합니다. 브롱커는 당시 유럽의 최고 지성들과 교류하며 수많은 난제에 도전했습니다. 그의 업적은 무한이라는 개념을 수학적으로 엄밀하게 다루기 위한 토대를 마련하는 데 크게 기여했습니다.
 
 ## 2. 어린 시절과 초기 경력
 
@@ -64,7 +64,7 @@ $$
 
 ## 5. 수학적 업적: [펠 방정식](https://kenji.blog/ko/p/pell-equation/) 해결
 
-또 다른 중요한 업적은 소위 **[펠 방정식](https://kenji.blog/ko/p/pell-equation/)** 에 대한 해법입니다. [펠 방정식](https://kenji.blog/ko/p/pell-equation/)은 완전 제곱수가 아닌 양의 정수 $n$ 에 대하여 다음과 같은 형태의 [디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식(정수 계수를 갖는 다항 방정식)입니다:
+또 다른 중요한 업적은 소위 **[펠 방정식](https://kenji.blog/ko/p/pell-equation/)** 에 대한 해법입니다. 펠 방정식은 완전 제곱수가 아닌 양의 정수 $n$ 에 대하여 다음과 같은 형태의 [디오판토스](https://kenji.blog/ko/p/diophantus/) 방정식(정수 계수를 갖는 다항 방정식)입니다:
 
 $$
 x^2 - n y^2 = 1 \quad (\text{단, } x, y \text{ 는 정수})

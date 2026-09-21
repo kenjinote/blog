@@ -10,7 +10,7 @@ tags: ["安德魯·懷爾斯", "費馬", "數論"]
 
 ## 引言
 
-在數學史上，幾乎沒有其他故事能像這樣充滿戲劇性和鼓舞人心。英國數學家 **[安德魯·懷爾斯](https://kenji.blog/zh-tw/p/wiles/)** （[Andrew Wiles](https://kenji.blog/zh-tw/p/wiles/)）完成了證明「[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)」的偉大創舉，這是一個350多年來無人能解的難題。
+在數學史上，幾乎沒有其他故事能像這樣充滿戲劇性和鼓舞人心。英國數學家 **[安德魯·懷爾斯](https://kenji.blog/zh-tw/p/wiles/)** （Andrew Wiles）完成了證明「[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)」的偉大創舉，這是一個350多年來無人能解的難題。
 
 他的人生軌跡宛如一部電影，從童年時代浪漫的夢想開始，經歷了7年孤獨而秘密的研究，接著是發現致命缺陷時的絕望，最終迎來了奇蹟般的復甦。本文將深入探討懷爾斯生平的故事，以及他所取得的深遠數學成就。
 

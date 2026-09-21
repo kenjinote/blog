@@ -82,7 +82,7 @@ Dengan demikian, pengenalan CDN dapat secara dramatis mengurangi (sekitar 90%) r
 
 ---
 
-## 4. Membangun [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dengan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)
+## 4. Membangun [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) CI/CD dengan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)
 
 Untuk mengotomatiskan proses pembaruan blog Hugo, kita akan membangun pipeline CI/CD menggunakan GitHub Actions. Melalui pengaturan ini, cukup dengan menulis artikel Markdown di lokal dan menjalankan `git push`, proses build akan berjalan otomatis dan langsung di-deploy ke Cloudflare Pages atau GitHub Pages.
 

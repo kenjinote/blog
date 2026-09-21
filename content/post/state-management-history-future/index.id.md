@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 Pustaka-pustaka ini mengabstraksi proses rumit dari "mencache state server secara lokal dan menyinkronkannya sesuai kebutuhan".
 Sebagai hasilnya, data yang perlu dikelola dalam store global seperti [Redux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) berkurang drastis menjadi hanya "client state murni", yang secara signifikan meringankan beban manajemen state.
 
-## 8. Atomic [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Management: [Recoil](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) dan [Jotai](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/)
+## 8. Atomic [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Management: Recoil dan [Jotai](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/)
 
 Setelah Server State dipisahkan, perlombaan baru dimulai untuk melihat bagaimana mengelola sisa Client State secara efisien.
 Pendekatan yang disebut **Atomic [State Management](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/)** lahir untuk memecahkan masalah performa [Context API](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) dan model rendering (top-down) React.

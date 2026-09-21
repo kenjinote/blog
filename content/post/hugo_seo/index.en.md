@@ -313,7 +313,7 @@ expiryDate: "2026-12-31T23:59:59Z"
 
 ## 7. Site Performance and Core [Web Vitals](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-In SEO, **page loading speed** is just as important as tag optimization. Google incorporates [Core Web Vitals](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) as ranking factors.
+In SEO, **page loading speed** is just as important as tag optimization. Google incorporates [Core Web Vitals](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (LCP, FID/INP, [CLS](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) as ranking factors.
 
 Hugo, which is a static site, originally has excellent TTFB (Time to First Byte), but image optimization is mandatory for blogs that use a lot of images. By combining Hugo's powerful Image Processing feature with frontmatter, conversion to Next-gen formats (such as WebP) and resizing can be automated at build time.
 

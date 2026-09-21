@@ -157,7 +157,7 @@ De plus, puisque les paires originales $(a, b)$ ont été créées en correspond
 Il ne reste plus qu'à prier pour que ces $X$ et $Y$ ne soient pas des solutions triviales ($X \equiv \pm Y$), et à calculer
 **$\gcd(X - Y, N)$** .
 
-S'il s'agit d'une solution non triviale, l'algorithme d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) s'exécutera en 0,001 seconde, et les nombres premiers secrets $p$ et $q$, qui sont le cœur de la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), seront imprimés sur l'écran de sortie.
+S'il s'agit d'une solution non triviale, l'algorithme d'[Euclide](https://kenji.blog/p/euclid/) s'exécutera en 0,001 seconde, et les nombres premiers secrets $p$ et $q$, qui sont le cœur de la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), seront imprimés sur l'écran de sortie.
 
 ---
 

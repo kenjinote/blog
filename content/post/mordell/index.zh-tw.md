@@ -24,7 +24,7 @@ tags: ["數論", "莫德爾", "橢圓曲線", "丟番圖方程"]
 
 ## 3. 對[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程的熱情
 
-莫德爾研究的中心始終是 **[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程** （Diophantine equations）。[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程是指在具有整數係數的多項式方程中，求解整數解或有理數解的問題。它以古希臘數學家[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)的名字命名。
+莫德爾研究的中心始終是 **[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程** （Diophantine equations）。丟番圖方程是指在具有整數係數的多項式方程中，求解整數解或有理數解的問題。它以古希臘數學家[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)的名字命名。
 
 最著名的[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程例子是與畢氏定理相關的方程：
 
@@ -135,7 +135,7 @@ graph LR
 2. **模形式論** ：在證明拉馬努金猜想時使用的方法，成為了延續至現代朗蘭茲綱領（Langlands Program）的宏大理論的出發點。
 3. **[丟番圖](https://kenji.blog/zh-tw/p/diophantus/)方程的解法** ：他具體的解題路徑與大量論文，至今仍是使用計算機求解方程的算法基礎。
 
-當[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)被[安德魯·懷爾斯](https://kenji.blog/zh-tw/p/wiles/)（[Andrew Wiles](https://kenji.blog/zh-tw/p/wiles/)）證明時，其理論背景中同樣離不開橢圓曲線和模形式這些與莫德爾有著深厚淵源的概念。
+當[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)被安德魯·懷爾斯（[Andrew Wiles](https://kenji.blog/zh-tw/p/wiles/)）證明時，其理論背景中同樣離不開橢圓曲線和模形式這些與莫德爾有著深厚淵源的概念。
 
 ## 12. 結論
 

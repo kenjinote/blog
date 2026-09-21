@@ -269,7 +269,7 @@ stateDiagram-v2
 2.  **Leader Append-Only** : リーダーは自身のログのエントリを上書き・削除せず、追加のみを行う。
 3.  **Log Matching** : 2つのログが同じインデックスとTermを持つエントリを含んでいる場合、それ以前のエントリはすべて同一である。
 
-これにより、分散環境におけるデータの不整合を数学的・アルゴリズム的に完全に排除しています。[Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)のバックエンドデータストアである `etcd` も、この[Raft](https://kenji.blog/p/byzantine-generals-problem-consensus/)を採用することで、クラスタの厳密な[状態管理](https://kenji.blog/p/state-management-history-future/)を実現しています。
+これにより、分散環境におけるデータの不整合を数学的・アルゴリズム的に完全に排除しています。[Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)のバックエンドデータストアである `etcd` も、このRaftを採用することで、クラスタの厳密な[状態管理](https://kenji.blog/p/state-management-history-future/)を実現しています。
 
 ## 8. [マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)と[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)
 
@@ -295,7 +295,7 @@ flowchart TD
     MessageBroker -->|キャンセル| Order
 ```
 
-Sagaパターンでは、強い一貫性を放棄し、 **結果整合性（Eventual [Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）** を受け入れます（AP的アプローチ）。途中で処理が失敗した場合は、ロールバックの代わりに **補償[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)（Compensating [Transaction](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)）** を発行して、論理的に状態を元に戻す処理を実装します。これにより、高いスケーラビリティと可用性を維持しながら、ビジネス上許容できるレベルの一貫性を実現しているのです。
+Sagaパターンでは、強い一貫性を放棄し、 **結果整合性（Eventual [Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）** を受け入れます（AP的アプローチ）。途中で処理が失敗した場合は、ロールバックの代わりに **補償トランザクション（Compensating [Transaction](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)）** を発行して、論理的に状態を元に戻す処理を実装します。これにより、高いスケーラビリティと可用性を維持しながら、ビジネス上許容できるレベルの一貫性を実現しているのです。
 
 ## まとめ
 
@@ -304,7 +304,7 @@ Sagaパターンでは、強い一貫性を放棄し、 **結果整合性（Even
 *   **CAP定理** は、分散システムにおいて Consistency（一貫性）、[Availability](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)（可用性）、[Partition Tolerance](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)（分断耐性）の3つを同時に満たすことは不可能であり、分断（P）が不可避な現実世界では、事実上 **CP** か **AP** の選択になることを示しています。
 *   **PACELC定理** はこれを拡張し、分断が発生していない正常稼働時においても、レイテンシ（L）と一貫性（C）の間にトレードオフが存在することを示しました。
 *   **Quorum（定足数）** を用いることで、要件に応じて柔軟に一貫性と可用性のバランス（ $ W+R>N $ ）を調整できます。
-*   APシステムでは競合解決のために **ベクターク[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)** が、CPシステムでは厳密な順序付けのために **[Raft](https://kenji.blog/p/byzantine-generals-problem-consensus/)** のような[コンセンサスアルゴリズム](https://kenji.blog/p/byzantine-generals-problem-consensus/)が活用されています。
+*   APシステムでは競合解決のために **ベクターク[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)** が、CPシステムでは厳密な順序付けのために **Raft** のような[コンセンサスアルゴリズム](https://kenji.blog/p/byzantine-generals-problem-consensus/)が活用されています。
 *   これらの概念は、データベースのみならず、現代の **[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)アーキテクチャ** における分散[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)設計（Sagaパターンなど）にも不可欠な基礎知識です。
 
 システム設計に「銀の弾丸」は存在しません。[CAP定理](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)とPACELC定理を正しく理解し、自社のビジネス要件が「何が何でも一貫性を守るべき（決済など）」なのか、「一時的な不整合を許容してでも絶対にシステムを止めない（SNSのタイムラインなど）」のかを適切に見極め、最適なトレードオフを選択することこそが、優れたアーキテクトに求められる最大のスキルと言えるでしょう。

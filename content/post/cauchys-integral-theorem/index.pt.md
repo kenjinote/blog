@@ -157,7 +157,7 @@ $$
 \oint_C f(z) dz = 0 + i0 = 0
 $$
 
-Este é o esqueleto da prova do teorema integral de [Cauchy](https://kenji.blog/pt/p/cauchy/). Podemos ver que ao unir perfeitamente as equações de [Cauchy](https://kenji.blog/pt/p/cauchy/)-[Riemann](https://kenji.blog/pt/p/riemann/) e o teorema de Green, a prova pode ser realizada de uma forma surpreendentemente simples.
+Este é o esqueleto da prova do teorema integral de [Cauchy](https://kenji.blog/pt/p/cauchy/). Podemos ver que ao unir perfeitamente as equações de Cauchy-[Riemann](https://kenji.blog/pt/p/riemann/) e o teorema de Green, a prova pode ser realizada de uma forma surpreendentemente simples.
 
 ## 7. O Teorema de Goursat: Removendo a Suposição de Diferenciabilidade Contínua
 

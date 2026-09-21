@@ -303,7 +303,7 @@ stateDiagram-v2
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 هنا، $ h $ هو معدل إصابة التخزين المؤقت ($ 0 \le h \le 1 $)، $ T_{cache} $ هو وقت الوصول إلى ذاكرة التخزين المؤقت (حوالي 1 إلى 4 نانوثانية)، و $ T_{memory} $ هو وقت الوصول إلى الذاكرة الرئيسية (حوالي 100 نانوثانية).
-يؤدي جعل $ h $ 0.99 (نهج C/[Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)) أو إسقاطه إلى 0.5 (تتبع المؤشرات في [Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)) إلى خلق فرق يصل إلى عشرات الأضعاف في سرعة تنفيذ الحلقة للتطبيق. هذا هو السبب الحقيقي وراء اختيار C++ و [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) لمحركات الألعاب وأنظمة التداول عالي التردد.
+يؤدي جعل $ h $ 0.99 (نهج C/[Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)) أو إسقاطه إلى 0.5 (تتبع المؤشرات في Java) إلى خلق فرق يصل إلى عشرات الأضعاف في سرعة تنفيذ الحلقة للتطبيق. هذا هو السبب الحقيقي وراء اختيار C++ و [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) لمحركات الألعاب وأنظمة التداول عالي التردد.
 
 ---
 

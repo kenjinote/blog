@@ -64,7 +64,7 @@ $$
 
 For example, while there may be infinitely many real or rational solutions for an elliptic curve (genus $g=1$) like $x^3 + y^3 = c$ (where $c$ is a non-zero integer), this theorem guarantees that if restricted to **integral solutions**, there will always be only finitely many.
 
-This result was groundbreaking regarding the finiteness of solutions to Diophantine equations and became a crucial historical step paving the way for the later proof of the Mordell-Weil theorem (the finiteness of rational points on curves of genus 2 or higher) by [Gerd Faltings](https://kenji.blog/en/p/faltings/). Siegel derived this astonishing result by significantly extending Axel Thue's theorem on Diophantine approximations and combining it with the theory of [Jacobi](https://kenji.blog/en/p/jacobi/)ans on [Abel](https://kenji.blog/en/p/abel/)ian varieties.
+This result was groundbreaking regarding the finiteness of solutions to Diophantine equations and became a crucial historical step paving the way for the later proof of the Mordell-Weil theorem (the finiteness of rational points on curves of genus 2 or higher) by [Gerd Faltings](https://kenji.blog/en/p/faltings/). Siegel derived this astonishing result by significantly extending Axel Thue's theorem on Diophantine approximations and combining it with the theory of Jacobians on [Abel](https://kenji.blog/en/p/abel/)ian varieties.
 
 ### 3.2 Siegel Zero
 

@@ -31,7 +31,7 @@ flowchart TD
 
 Uno de los logros más conocidos de [Bachet](https://kenji.blog/es/p/bachet/) es su traducción de la "Arithmetica" del antiguo matemático griego [Diofanto](https://kenji.blog/es/p/diophantus/) al latín, agregando comentarios y publicándola en 1621.
 
-Este libro traducido se convirtió en el texto estándar para que los matemáticos europeos de la época estudiaran el álgebra antigua y la teoría de números. Una de las anécdotas más famosas es que [Pierre de Fermat](https://kenji.blog/es/p/fermat/) escribió su famoso "Último Teorema de [Fermat](https://kenji.blog/es/p/fermat/)" en el margen de su copia de esta edición de [Bachet](https://kenji.blog/es/p/bachet/).
+Este libro traducido se convirtió en el texto estándar para que los matemáticos europeos de la época estudiaran el álgebra antigua y la teoría de números. Una de las anécdotas más famosas es que [Pierre de Fermat](https://kenji.blog/es/p/fermat/) escribió su famoso "Último Teorema de Fermat" en el margen de su copia de esta edición de [Bachet](https://kenji.blog/es/p/bachet/).
 
 [Bachet](https://kenji.blog/es/p/bachet/) no se limitó a una mera traducción; añadió sus propios y excelentes comentarios y generalizaciones a los problemas de [Diofanto](https://kenji.blog/es/p/diophantus/). Sin sus conocimientos matemáticos, el desarrollo de la teoría de números en el siglo XVII podría haber sido mucho más lento.
 
@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-$x$ y $y$ se pueden calcular de manera concreta expandiendo el algoritmo de [Euclides](https://kenji.blog/es/p/euclid/) (el algoritmo de [Euclides](https://kenji.blog/es/p/euclid/) extendido), que se ha convertido en un teorema fundamental indispensable en la criptografía moderna (como [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)). En contextos que valoran la precisión histórica, esto a veces se llama el **teorema de [Bachet](https://kenji.blog/es/p/bachet/)**.
+$x$ y $y$ se pueden calcular de manera concreta expandiendo el algoritmo de [Euclides](https://kenji.blog/es/p/euclid/) (el algoritmo de Euclides extendido), que se ha convertido en un teorema fundamental indispensable en la criptografía moderna (como RSA). En contextos que valoran la precisión histórica, esto a veces se llama el **teorema de [Bachet](https://kenji.blog/es/p/bachet/)**.
 
 ## Conclusión
 

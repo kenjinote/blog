@@ -160,7 +160,7 @@ Penemuan [Fibonacci](https://kenji.blog/id/p/fibonacci/), yang hidup sekitar 800
 
 ### Aplikasi dalam Ilmu Komputer
 
-Dalam algoritma komputer, deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) sangat berguna. Algoritma yang disebut "Pencarian [Fibonacci](https://kenji.blog/id/p/fibonacci/)" dapat mencari data lebih efisien daripada pencarian biner di bawah kondisi tertentu. Selain itu, struktur data yang dikenal sebagai "tumpukan [Fibonacci](https://kenji.blog/id/p/fibonacci/) ([Fibonacci](https://kenji.blog/id/p/fibonacci/) heap)" sangat diperlukan untuk mempercepat algoritma teori graf seperti algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/).
+Dalam algoritma komputer, deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) sangat berguna. Algoritma yang disebut "Pencarian Fibonacci" dapat mencari data lebih efisien daripada pencarian biner di bawah kondisi tertentu. Selain itu, struktur data yang dikenal sebagai "tumpukan Fibonacci (Fibonacci heap)" sangat diperlukan untuk mempercepat algoritma teori graf seperti algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/).
 
 ### Retracement [Fibonacci](https://kenji.blog/id/p/fibonacci/) di Pasar Keuangan
 

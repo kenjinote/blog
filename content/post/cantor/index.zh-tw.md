@@ -24,7 +24,7 @@ tags:
 
 [格奧爾格·康托爾](https://kenji.blog/zh-tw/p/cantor/)1845年出生於俄羅斯聖彼得堡。他的父親是來自丹麥的富裕商人，母親是俄羅斯音樂家。他從小就對數學展現出非凡的天賦，後來移居德國並在柏林大學學習數學。
 
-在柏林大學，他受到了當時數學界泰斗 **[卡爾·魏爾斯特拉斯](https://kenji.blog/zh-tw/p/weierstrass/)** （[Karl Weierstrass](https://kenji.blog/zh-tw/p/weierstrass/)）和 **利奧波德·克羅內克** （Leopold [Kronecker](https://kenji.blog/zh-tw/p/kronecker/)）的指導。特別是克羅內克，後來成為了康托爾最大的反對者。
+在柏林大學，他受到了當時數學界泰斗 **[卡爾·魏爾斯特拉斯](https://kenji.blog/zh-tw/p/weierstrass/)** （Karl Weierstrass）和 **利奧波德·克羅內克** （Leopold [Kronecker](https://kenji.blog/zh-tw/p/kronecker/)）的指導。特別是克羅內克，後來成為了康托爾最大的反對者。
 
 ### 對無窮的探索與克羅內克的衝突
 

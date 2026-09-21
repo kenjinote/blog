@@ -252,7 +252,7 @@ flowchart TD
 
 Используя GitHub Copilot Chat в VS Code или `ChatGPT.nvim` и `Copilot.vim` в Neovim, не покидая редактор, можно отправлять следующие промпты:
 
-> «Создай структуру в виде иерархии Markdown для начинающих по следующим технологиям: [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/ru/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/ru/p/cicd-pipeline-github-actions-best-practices/)»
+> «Создай структуру в виде иерархии Markdown для начинающих по следующим технологиям: [Docker](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/), Kubernetes, [CI/CD](https://kenji.blog/ru/p/cicd-pipeline-github-actions-best-practices/)»
 
 После этого мгновенно генерируется разметка Markdown с заголовками и маркированными списками. Нам остается лишь добавить содержание на этот каркас.
 

@@ -14,7 +14,7 @@ In diesem Artikel werden wir mit überwältigendem Umfang und Tiefe das dramatis
 
 ## 1. Frühes Leben und einzigartiges Bildungsumfeld: Das Aufkeimen eines Genies
 
-[Henri Poincaré](https://kenji.blog/de/p/poincare/) wurde am 29. April 1854 in der nordostfranzösischen Stadt Nancy in eine hochintellektuelle Elitefamilie geboren. Sein Vater, Léon [Poincaré](https://kenji.blog/de/p/poincare/), war Professor an der medizinischen Fakultät der Universität Nancy, und sein Cousin, Raymond [Poincaré](https://kenji.blog/de/p/poincare/), sollte später ein prominenter Politiker werden, der als Premierminister und Präsident von Frankreich diente. Ein solch gesegnetes familiäres Umfeld stimulierte seine intellektuelle Neugier enorm.
+[Henri Poincaré](https://kenji.blog/de/p/poincare/) wurde am 29. April 1854 in der nordostfranzösischen Stadt Nancy in eine hochintellektuelle Elitefamilie geboren. Sein Vater, Léon Poincaré, war Professor an der medizinischen Fakultät der Universität Nancy, und sein Cousin, Raymond [Poincaré](https://kenji.blog/de/p/poincare/), sollte später ein prominenter Politiker werden, der als Premierminister und Präsident von Frankreich diente. Ein solch gesegnetes familiäres Umfeld stimulierte seine intellektuelle Neugier enorm.
 
 Während seiner Kindheit litt [Poincaré](https://kenji.blog/de/p/poincare/) an Diphtherie, die ihn für lange Zeit unfähig machte zu sprechen und an sein Krankenbett fesselte. Diese Phase der Isolation entwickelte jedoch seine inneren Denkfähigkeiten auf unnatürliche Weise. Er besaß ein **intuitives Gedächtnis** , das es ihm ermöglichte, den Inhalt eines Buches nach nur einmaligem Lesen perfekt auswendig zu lernen, und er lernte, die visuelle Anordnung von Buchstaben und räumliche Beziehungen in seinem Geist frei zu manipulieren.
 
@@ -67,7 +67,7 @@ $$
 x' = \gamma (x - vt), \quad t' = \gamma \left(t - \frac{vx}{c^2}\right) \quad (\text{wobei } c \text{ die Lichtgeschwindigkeit im Vakuum ist})
 $$
 
-Darüber hinaus führte [Poincaré](https://kenji.blog/de/p/poincare/) rasch das Konzept der vierdimensionalen Raumzeit ein und definierte die "[Poincaré](https://kenji.blog/de/p/poincare/)-Gruppe", die zeigt, dass die physikalischen Gesetze unter Lorentz-Transformationen invariant sind. Während Einstein die Relativitätstheorie aus einem physikalischen und intuitiven Ansatz heraus aufbaute, war [Poincaré](https://kenji.blog/de/p/poincare/) aus der Perspektive mathematischer und geometrischer struktureller Schönheit zur gleichen Wahrheit gelangt.
+Darüber hinaus führte [Poincaré](https://kenji.blog/de/p/poincare/) rasch das Konzept der vierdimensionalen Raumzeit ein und definierte die "Poincaré-Gruppe", die zeigt, dass die physikalischen Gesetze unter Lorentz-Transformationen invariant sind. Während Einstein die Relativitätstheorie aus einem physikalischen und intuitiven Ansatz heraus aufbaute, war [Poincaré](https://kenji.blog/de/p/poincare/) aus der Perspektive mathematischer und geometrischer struktureller Schönheit zur gleichen Wahrheit gelangt.
 
 ## 5. Das Unbewusste und die Kreativität: Die Psychologie der Inspiration
 

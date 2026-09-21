@@ -27,7 +27,7 @@ tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "pytho
 - $O(1)$: 定数時間。入力サイズに依存しない。
 - $O(\log n)$: 対数時間。[二分探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)など。
 - $O(n)$: 線形時間。単純な探索など。
-- $O(n \log n)$: 効率的な[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)など）。
+- $O(n \log n)$: 効率的な[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（クイックソート、[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)など）。
 - $O(n^2), O(n^3)$: 多項式時間。二重ループ、三重ループなど。
 - $O(2^n)$: 指数時間。総当たりによる探索など。
 - $O(n!)$: 階乗時間。巡回セールスマン問題の単純な総当たりなど。
@@ -338,7 +338,7 @@ graph TD
 2. **緩和と近似に逃げる**:
     - **近似アルゴリズム**: 最適解からの誤差が一定範囲内に収まることを保証しつつ、多項式時間で解く。
     - **ヒューリスティクス**: 遺伝的アルゴリズムや焼きなまし法など、数学的な保証はないが経験的に「そこそこ良い解」を高速に出す手法を採用する。
-    - **[動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))**: [ナップサック問題](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)のように、入力の数値の大きさに依存する（擬似多項式時間）解法が存在する場合は、入力の制約を利用する。
+    - **[動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) (DP)**: [ナップサック問題](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)のように、入力の数値の大きさに依存する（擬似多項式時間）解法が存在する場合は、入力の制約を利用する。
     - **SATソルバー・MILPソルバー**: 近年発達が著しい汎用の数理最適化ソルバーに定式化して投げる。ソルバーは内部で高度な枝刈りを行ってくれるため、実用的なサイズなら厳密解が出せることも多い。
 
 ```python

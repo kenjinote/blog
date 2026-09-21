@@ -12,7 +12,7 @@ tags: ["Abel", "Algebra", "History", "Math"]
 
 In the history of mathematics, there are a few geniuses who passed away at a young age but left a decisive impact on future generations. Among them, the Norwegian-born **[Niels Henrik Abel](https://kenji.blog/en/p/abel/)** stands alongside [Évariste Galois](https://kenji.blog/en/p/galois/) as one of the most famous tragic geniuses. In his short life of only 26 years, he proved that "there is no general algebraic solution for equations of degree five or higher," a problem that had plagued mathematicians for centuries.
 
-In this article, we will delve into [Abel](https://kenji.blog/en/p/abel/)'s life, driven by his passion for mathematics despite poverty and illness, and his monumental achievements such as "[Abel](https://kenji.blog/en/p/abel/)ian groups" and "[Abel](https://kenji.blog/en/p/abel/)ian integrals."
+In this article, we will delve into [Abel](https://kenji.blog/en/p/abel/)'s life, driven by his passion for mathematics despite poverty and illness, and his monumental achievements such as "Abelian groups" and "[Abel](https://kenji.blog/en/p/abel/)ian integrals."
 
 # 2. [Abel](https://kenji.blog/en/p/abel/)'s Life: Poverty and the Blooming of Talent
 
@@ -20,7 +20,7 @@ In this article, we will delve into [Abel](https://kenji.blog/en/p/abel/)'s life
 
 [Niels Henrik Abel](https://kenji.blog/en/p/abel/) was born on August 5, 1802, in the small Norwegian village of Finnøy, as the son of a pastor. Norway at the time was economically impoverished, and [Abel](https://kenji.blog/en/p/abel/)'s family was no exception.
 
-His destiny changed significantly when he entered the Cathedral School in Oslo in 1817 and met his mathematics teacher, **Bernt Michael Holmboe**. Holmboe immediately recognized [Abel](https://kenji.blog/en/p/abel/)'s extraordinary talent and taught him university-level advanced mathematics. By devouring the works of masters like Euler, [Lagrange](https://kenji.blog/en/p/lagrange/), and Laplace, [Abel](https://kenji.blog/en/p/abel/) quickly absorbed cutting-edge mathematics.
+His destiny changed significantly when he entered the Cathedral School in Oslo in 1817 and met his mathematics teacher, **Bernt Michael Holmboe**. Holmboe immediately recognized [Abel](https://kenji.blog/en/p/abel/)'s extraordinary talent and taught him university-level advanced mathematics. By devouring the works of masters like Euler, Lagrange, and Laplace, [Abel](https://kenji.blog/en/p/abel/) quickly absorbed cutting-edge mathematics.
 
 ```mermaid
 flowchart TD
@@ -95,7 +95,7 @@ flowchart LR
 
 ## 7.2 [Abel](https://kenji.blog/en/p/abel/)ian Integrals and [Abel](https://kenji.blog/en/p/abel/)ian Functions
 
-The subject of [Abel](https://kenji.blog/en/p/abel/)'s Paris memoir, the **[Abel](https://kenji.blog/en/p/abel/)ian integral**, is a generalization of integrals involving algebraic functions. After his death, this theory was developed by [Jacobi](https://kenji.blog/en/p/jacobi/) and others, growing into magnificent theories such as **[Abel](https://kenji.blog/en/p/abel/)ian varieties** in algebraic geometry.
+The subject of [Abel](https://kenji.blog/en/p/abel/)'s Paris memoir, the **Abelian integral**, is a generalization of integrals involving algebraic functions. After his death, this theory was developed by Jacobi and others, growing into magnificent theories such as **[Abel](https://kenji.blog/en/p/abel/)ian varieties** in algebraic geometry.
 
 ## 7.3 [Abel](https://kenji.blog/en/p/abel/)'s Limit Theorem
 

@@ -109,7 +109,7 @@ int main() {
 
 ## Time Complexity and [Lamé](https://kenji.blog/en/p/lame/)'s Theorem
 
-How fast is the [Euclide](https://kenji.blog/en/p/euclid/)an algorithm? Regarding its computational complexity, **[Lamé](https://kenji.blog/en/p/lame/)'s theorem**, proven by the French mathematician [Gabriel Lamé](https://kenji.blog/en/p/lame/) in 1844, is well known.
+How fast is the [Euclide](https://kenji.blog/en/p/euclid/)an algorithm? Regarding its computational complexity, **Lamé's theorem**, proven by the French mathematician [Gabriel Lamé](https://kenji.blog/en/p/lame/) in 1844, is well known.
 
 > **[Lamé](https://kenji.blog/en/p/lame/)'s Theorem**
 > The number of division steps required to apply the [Euclide](https://kenji.blog/en/p/euclid/)an algorithm to two natural numbers $a, b$ ($a > b$) is at most $5$ times the number of digits in the decimal representation of $b$.

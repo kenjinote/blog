@@ -16,7 +16,7 @@ tags:
 
 ## 1. مقدمة: الفلسفة الكامنة وراء البرمجة الوظيفية
 
-في تطوير البرمجيات الحديث، لم تعد **البرمجة الوظيفية** ([Functional Programming](https://kenji.blog/ar/p/oop-vs-fp-vs-dop/)) مجرد نهج لبعض الهواة، بل أصبحت نموذجًا واسع الانتشار. من تقنيات الواجهة الأمامية مثل React، إلى لغات مثل [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) وScala، وحتى اللغات كائنية التوجه مثل [Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) وC#، تم تبني مفاهيم مثل التعامل مع الدوال ككائنات من الدرجة الأولى والقضاء على الآثار الجانبية.
+في تطوير البرمجيات الحديث، لم تعد **البرمجة الوظيفية** ([Functional Programming](https://kenji.blog/ar/p/oop-vs-fp-vs-dop/)) مجرد نهج لبعض الهواة، بل أصبحت نموذجًا واسع الانتشار. من تقنيات الواجهة الأمامية مثل React، إلى لغات مثل Rust وScala، وحتى اللغات كائنية التوجه مثل [Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) وC#، تم تبني مفاهيم مثل التعامل مع الدوال ككائنات من الدرجة الأولى والقضاء على الآثار الجانبية.
 
 ومع ذلك، وراء هذا النموذج تكمن نظرية رياضية عميقة تم بناؤها في الثلاثينيات من القرن الماضي قبل الولادة المادية لأجهزة الكمبيوتر. وهو **حساب لامدا** ($\lambda$-calculus) الذي اقترحه ألونزو تشيرش (Alonzo Church).
 

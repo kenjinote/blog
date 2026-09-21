@@ -268,11 +268,11 @@ $9^7 = 4,782,969$. 이것을 143으로 나누면 몫이 $33447$이고 나머지�
 
 ---
 
-## 8. 비밀키 $d$를 구하는 방법: 확장 [[유클리드](https://kenji.blog/ko/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/)
+## 8. 비밀키 $d$를 구하는 방법: 확장 [유클리드 호제법](https://kenji.blog/p/euclidean-algorithm/)
 
-수작업 계산 예제에서는 감으로 $k$를 찾아 $d=103$ 을 발견했지만, 수가 수백 자리가 되면 이 방법은 불가능합니다. 실제 프로그램에서는 **'확장 [[유클리드](https://kenji.blog/ko/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/)'** 이라는 알고리즘을 사용합니다.
+수작업 계산 예제에서는 감으로 $k$를 찾아 $d=103$ 을 발견했지만, 수가 수백 자리가 되면 이 방법은 불가능합니다. 실제 프로그램에서는 **'확장 [유클리드 호제법](https://kenji.blog/p/euclidean-algorithm/)'** 이라는 알고리즘을 사용합니다.
 
-$7d \equiv 1 \pmod{120}$ 을 푼다는 것은 $7d + 120y = 1$ 을 만족하는 정수 $d, y$ 를 찾는 것과 같습니다. [[유클리드](https://kenji.blog/ko/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/)을 역산해 나감으로써 이를 기계적으로 구할 수 있습니다.
+$7d \equiv 1 \pmod{120}$ 을 푼다는 것은 $7d + 120y = 1$ 을 만족하는 정수 $d, y$ 를 찾는 것과 같습니다. [유클리드 호제법](https://kenji.blog/p/euclidean-algorithm/)을 역산해 나감으로써 이를 기계적으로 구할 수 있습니다.
 
 1. $120 \div 7 = 17$ 나머지 $1$ 
 2. 이것을 변형하면 $1 = 120 - 17 \times 7$

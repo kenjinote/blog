@@ -180,7 +180,7 @@ Zettelkastenには主に3種類のノートが存在します：
 2. **Literature Notes（文献メモ）**: 記事や本を読んで、自分の言葉で要約したもの。
 3. **Permanent Notes（永久ノート）**: 一つのトピックについて完結した考察を書いたもの。これらがブログ記事の直接の種となります。
 
-Obsidianのバックリンク機能（`[[ノート名]]`）を使うことで、例えば「[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の所有権」というノートと「[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)の歴史」というノートをリンクさせ、予期せぬアイデアの繋がりを発見することができます。
+Obsidianのバックリンク機能（`[ノート名]]`）を使うことで、例えば「[Rustの所有権」というノートと「[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)の歴史」というノートをリンクさせ、予期せぬアイデアの繋がりを発見することができます。
 
 ## 5. ベクトルデータベース（Pinecone）とOpenAI Embeddingsを利用したセマンティック検索
 
@@ -304,7 +304,7 @@ $$ R = e^{-\frac{t}{S}} $$
 この最適な復習タイミングをアルゴリズム（SuperMemo 2など）で自動計算し、フラッシュカードとして提示してくれるソフトウェアが「Anki」です。
 
 技術ブログのネタ作りのための強力なアプローチとして、 **ObsidianのPermanent Notesの内容をAnkiのフラッシュカードに変換する** ことが挙げられます。
-例えば、「[CAP定理](https://kenji.blog/p/cap-theorem-distributed-systems/)の3要素とは何か？」「[B-Tree](https://kenji.blog/p/b-tree-database-index-theory/)インデックスがO(log N)の検索性能を持つ理由は？」といった技術的根幹に関わる問いをAnkiに登録し、毎日のルーティンとして復習します。知識が長期記憶として脳内にインデックスされると、シャワーを浴びている時や散歩している時に、無意識下で情報が結びつき、「あ、[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)の合意アルゴリズムについての記事が書けそうだ」というひらめき（エウレカモーメント）を生み出します。
+例えば、「[CAP定理](https://kenji.blog/p/cap-theorem-distributed-systems/)の3要素とは何か？」「B-TreeインデックスがO(log N)の検索性能を持つ理由は？」といった技術的根幹に関わる問いをAnkiに登録し、毎日のルーティンとして復習します。知識が長期記憶として脳内にインデックスされると、シャワーを浴びている時や散歩している時に、無意識下で情報が結びつき、「あ、[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)の合意アルゴリズムについての記事が書けそうだ」というひらめき（エウレカモーメント）を生み出します。
 
 ## 7. 組み合わせの創造性 (Combinatorial Creativity)
 
@@ -315,8 +315,8 @@ $$ R = e^{-\frac{t}{S}} $$
 技術ブログにおける組み合わせのパターンとしては、以下のようなマトリックスが考えられます。
 
 1. **[古い技術] × [新しいパラダイム]**: 例「COBOLのアーキテクチャから学ぶ、現代の[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)設計のアンチパターン」
-2. **[フロントエンド] × [バックエンドの概念]**: 例「Reactの仮想DOM更新アルゴリズムを、データベースの[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)[分離レベル](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の視点で解説する」
-3. **[抽象的な数学・理論] × [具体的な実装]**: 例「[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)で読み解く、[Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)の[Pod](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)スケジューリングの最適化」
+2. **[フロントエンド] × バックエンドの概念]**: 例「Reactの仮想DOM更新アルゴリズムを、データベースの[トランザクション[分離レベル](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の視点で解説する」
+3. **[抽象的な数学・理論] × 具体的な実装]**: 例「グラフ理論で読み解く、[Kubernetesの[Pod](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)スケジューリングの最適化」
 
 この組み合わせを意図的に発生させるため、先ほど構築したPineconeのセマンティック検索システムを利用し、ランダムな概念Aと概念Bを抽出し、AI（ChatGPTなど）に「これら2つを組み合わせた技術ブログのタイトルと目次案を5つ提案して」とプロンプトを投げることで、自分では思いつかないような斬新な切り口の記事アイデアを無限に生成することができます。
 

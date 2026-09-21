@@ -12,7 +12,7 @@ description: '量子计算机惊人的计算能力将动摇区块链的根基，
 
 ## 1. 引言：后量子时代的脚步声与区块链的危机
 
-自2009年中本聪（Satoshi Nakamoto）创造[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)（[Bitcoin](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)）以来，区块链技术作为“去中心化且不可篡改的账本”，已成长为全球金融系统和应用程序的基础设施。支撑这种坚如磐石的安全性的是 **公钥密码学（[Public Key](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）** 和 **密码学哈希函数（[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)s）** 等现代密码技术。
+自2009年中本聪（Satoshi Nakamoto）创造[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)（Bitcoin）以来，区块链技术作为“去中心化且不可篡改的账本”，已成长为全球金融系统和应用程序的基础设施。支撑这种坚如磐石的安全性的是 **公钥密码学（Public Key Cryptography）** 和 **密码学哈希函数（Cryptographic [Hash Function](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)s）** 等现代密码技术。
 
 这些密码技术保证安全性的依据是数学上的“计算困难性”，即使用经典计算机（我们现在使用的个人电脑和超级计算机），即使花费宇宙寿命般漫长的时间也无法破解。
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. 椭圆曲线密码学（ECDSA）的基础与计算困难性
 
-包括[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)和以太坊（Ethereum）在内的许多区块链，都采用了 **椭圆曲线数字签名算法（ECDSA：Elliptic Curve [Digital Signature](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) Algorithm）** 作为其数字签名算法。具体而言，[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)使用的是参数名为 `secp256k1` 的椭圆曲线。
+包括[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)和以太坊（Ethereum）在内的许多区块链，都采用了 **椭圆曲线数字签名算法（ECDSA：Elliptic Curve Digital Signature Algorithm）** 作为其数字签名算法。具体而言，[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)使用的是参数名为 `secp256k1` 的椭圆曲线。
 
 椭圆曲线密码学的安全性依赖于 **椭圆曲线离散对数问题（ECDLP：Elliptic Curve Discrete Logarithm Problem）** 的计算困难性。
 椭圆曲线由以下Weierstrass标准形式的方程定义：

@@ -71,7 +71,7 @@ OpenAIのAPI（GPT-4など）やAnthropicのAPI（Claudeなど）を利用して
 
 ### 2.1 システムプロンプト：グローバルな制約とペルソナの定義
 
-システムプロンプトは、[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)に対する **グローバルな制約、ペルソナ（役割）、および基本となる振る舞いのルール** を定義するものです。ソフトウェア設計に例えるなら、アプリケーションの「環境変数」や「ベースクラス」、あるいは[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)の「[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)file」のような役割を果たします。
+システムプロンプトは、[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)に対する **グローバルな制約、ペルソナ（役割）、および基本となる振る舞いのルール** を定義するものです。ソフトウェア設計に例えるなら、アプリケーションの「環境変数」や「ベースクラス」、あるいはコンテナの「[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)file」のような役割を果たします。
 
 優れたシステムプロンプトは、出力の品質とフォーマットを劇的に安定させます。
 
@@ -108,7 +108,7 @@ OpenAIのAPI（GPT-4など）やAnthropicのAPI（Claudeなど）を利用して
 
 ### 3.1 Zero-Shot Prompting と Few-Shot Prompting
 
-**Zero-Shot Prompting** は、タスクの指示のみを与え、例示を一切与えずにモデルに解答を求める手法です。「Pythonで[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)を書いて」といった一般的な要求であれば、現在の高度な[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)はZero-Shotでも十分に機能します。
+**Zero-Shot Prompting** は、タスクの指示のみを与え、例示を一切与えずにモデルに解答を求める手法です。「Pythonで[クイックソート](https://kenji.blog/p/sorting-algorithms/)を書いて」といった一般的な要求であれば、現在の高度な[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)はZero-Shotでも十分に機能します。
 
 しかし、プロジェクト独自のコーディング規約に従わせたい場合や、特定のJSONスキーマを出力させたい場合、Zero-Shotではフォーマットが崩れる確率が高くなります。これを解決するのが **Few-Shot Prompting** です。
 
@@ -220,7 +220,7 @@ ReActをシステムに組み込むための標準的なインターフェース
 エンジニアは[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)に対し、システムプロンプトと共に「利用可能なツール群の定義（JSONスキーマ）」を渡します。LLMはプロンプトのコンテキストを解析し、ツールを使うべきだと判断した場合、通常のテキストではなく「呼び出すべき関数名」と「その引数のJSON」を出力します。アプリケーション側でその関数を実行し、結果を再びLLMに返すことでループが形成されます。
 
 **開発への応用例（自律型デバッグエージェント）：**
-[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)でテストが落ちた際、原因を調査してパッチを生成するエージェントを構築する場合、以下のようなツールを[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)に提供します。
+[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)パイプラインでテストが落ちた際、原因を調査してパッチを生成するエージェントを構築する場合、以下のようなツールを[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)に提供します。
 
 1. `search_codebase(regex_pattern)`: リポジトリ内のコードを正規表現で検索する。
 2. `view_file_content(file_path, start_line, end_line)`: 指定したファイルの内容を読み込む。
@@ -368,7 +368,7 @@ def is_valid_ipv4(ip_str):
 2. **実行**: 評価対象のプロンプトとモデルで、テストセットに対して出力を生成させます。
 3. **評価**: 評価用のプロンプト（メタプロンプト）を用意し、Judge LLMに「生成された出力が要件を満たしているか、1〜5点でスコアリングせよ」と指示します。
 
-これにより、プロンプトを修正した際のリグレッション（性能退行）を[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)上で自動検知することが可能になります。[プロンプトエンジニアリング](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)は、職人芸的な「プロンプトいじり」から、データ駆動で再現性のある「エンジニアリング（工学）」へと進化を遂げています。
+これにより、プロンプトを修正した際のリグレッション（性能退行）を[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)パイプライン上で自動検知することが可能になります。[プロンプトエンジニアリング](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)は、職人芸的な「プロンプトいじり」から、データ駆動で再現性のある「エンジニアリング（工学）」へと進化を遂げています。
 
 ---
 
@@ -376,7 +376,7 @@ def is_valid_ipv4(ip_str):
 
 AIがコードを書く時代において、「プログラミングの終焉」が叫ばれることもありますが、現実は異なります。エンジニアに求められる抽象化のレイヤーが一つ上がったに過ぎません。
 
-かつて我々は[アセンブリ](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語から[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)へ、そして[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)を備えた高級言語へと移行することで、[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)の煩わしさから解放され、より複雑なビジネスロジックの構築に集中できるようになりました。[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)と[プロンプトエンジニアリング](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)は、これに続く次なる抽象化の波です。
+かつて我々は[アセンブリ](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語からC言語へ、そしてガベージコレクションを備えた高級言語へと移行することで、メモリ管理の煩わしさから解放され、より複雑なビジネスロジックの構築に集中できるようになりました。LLMと[プロンプトエンジニアリング](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)は、これに続く次なる抽象化の波です。
 
 1. **アーキテクチャの理解**: LLMの確率的な性質（自己回帰、Attention、Temperature）を理解し、システムの非決定性を制御する。
 2. **コンテキストの設計**: System Promptによる制約と、Few-Shot/CoTを活用した意図の明確な伝達。

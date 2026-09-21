@@ -67,7 +67,7 @@ Lapangan berhingga yang paling dasar adalah **lapangan prima $\mathbb{F}_p$** me
 
 Penghitungan **Invers Perkalian Modulo (Modular Multiplicative Inverse)** sangat penting dalam implementasi kriptografi. Untuk menemukan $b^{-1}$ yang memenuhi $b \times b^{-1} \equiv 1 \pmod p$, dua algoritma berikut ini terutama digunakan:
 
-1. **[Algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) Diperluas (Extended [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm)**: Cepat, tetapi tergantung pada implementasinya, waktu pemrosesan dapat bergantung pada nilai input sehingga memiliki risiko serangan waktu.
+1. **[Algoritma Euclidean](https://kenji.blog/p/euclidean-algorithm/) Diperluas (Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm)**: Cepat, tetapi tergantung pada implementasinya, waktu pemrosesan dapat bergantung pada nilai input sehingga memiliki risiko serangan waktu.
 2. **[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/id/p/fermats-little-theorem/))**: Ketika $p$ adalah bilangan prima dan $b \neq 0$, berlaku $b^{p-1} \equiv 1 \pmod p$. Jika kedua sisi dibagi dengan $b$, maka diperoleh $b^{p-2} \equiv b^{-1} \pmod p$. Artinya, invers dapat dicari dengan menghitung pangkat $p-2$ dari $b$. Karena operasi pemangkatan mudah diimplementasikan dalam waktu konstan (constant time), metode ini lebih disukai dalam implementasi kriptografi.
 
 ---

@@ -261,7 +261,7 @@ timeline
 
 [暗号技術の歴史](https://kenji.blog/p/暗号技術の歴史/)は、新しい暗号方式（盾）の発明と、それを破る新しい解読手法（矛）の終わりのない戦いの歴史です。
 
-シーザー暗号は頻度分析に敗れ、無敵を誇ったエニグマは[チューリング](https://kenji.blog/p/turing/)の天才的頭脳と機械の力に敗れました。そして今、現代インターネット社会の根幹を支える[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)やECCといった強力な暗号も、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)という新たな「矛」の前に脅威に晒されています。
+シーザー暗号は頻度分析に敗れ、無敵を誇ったエニグマは[チューリング](https://kenji.blog/p/turing/)の天才的頭脳と機械の力に敗れました。そして今、現代インターネット社会の根幹を支えるRSAやECCといった強力な暗号も、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)という新たな「矛」の前に脅威に晒されています。
 
 しかし、人類は既にその先の未来を見据え、耐量子暗号（PQC）という新たな「盾」を準備しつつあります。現在、世界中のITインフラにおいて、既存の[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号からPQCへの移行準備（[Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/) Agilityの確保）が急務となっています。
 

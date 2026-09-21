@@ -23,7 +23,7 @@ Bilangan Prima Kembar (Twin Primes) adalah pasangan bilangan prima yang selisihn
 - $(29, 31)$
 - $(41, 43)$
 
-Seiring bertambah besarnya bilangan, frekuensi kemunculan bilangan prima itu sendiri akan menurun, seperti yang diketahui dari [Teorema Bilangan Prima ([Prime Number Theorem](https://kenji.blog/id/p/prime-number-theorem/))](https://kenji.blog/p/prime-number-theorem/). Seiring dengan itu, frekuensi kemunculan bilangan prima kembar juga menurun. Namun, tidak peduli seberapa besar bilangannya, para matematikawan telah lama menduga bahwa "pasangan bilangan prima dengan selisih 2" ini akan terus muncul tanpa henti.
+Seiring bertambah besarnya bilangan, frekuensi kemunculan bilangan prima itu sendiri akan menurun, seperti yang diketahui dari [Teorema Bilangan Prima (Prime Number Theorem)](https://kenji.blog/p/prime-number-theorem/). Seiring dengan itu, frekuensi kemunculan bilangan prima kembar juga menurun. Namun, tidak peduli seberapa besar bilangannya, para matematikawan telah lama menduga bahwa "pasangan bilangan prima dengan selisih 2" ini akan terus muncul tanpa henti.
 
 Inilah **Konjektur Bilangan Prima Kembar**.
 

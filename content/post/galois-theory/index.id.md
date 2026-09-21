@@ -31,7 +31,7 @@ $$
 Rumus ini menunjukkan bahwa untuk koefisien $a, b, c$, dengan hanya menerapkan empat operasi aritmetika dasar (penjumlahan, pengurangan, perkalian, pembagian) dan akar pangkat (akar kuadrat, akar pangkat tiga, dll.) dalam jumlah terbatas, kita pasti dapat memperoleh solusi untuk persamaan kuadrat apa pun.
 Untuk persamaan pangkat tiga (kubik) dan pangkat empat (kuartik), meskipun lebih rumit, rumus solusi menggunakan empat operasi aritmetika dan akar pangkat yang serupa ditemukan oleh para matematikawan Italia pada abad ke-16 (seperti Cardano, Tartaglia, dan Ferrari). Ini merupakan terobosan besar dalam sejarah matematika.
 
-Namun, untuk **persamaan pangkat lima** (kuintik) $ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0$, selama berabad-abad, banyak matematikawan jenius seperti Euler dan [Lagrange](https://kenji.blog/id/p/lagrange/) mencoba menemukan rumus solusinya, tetapi tidak satu pun berhasil. [Lagrange](https://kenji.blog/id/p/lagrange/) berfokus pada permutasi solusi dan menangkap petunjuk untuk pemecahan, tetapi tidak mencapai pembuktian yang lengkap. Setelah itu, Ruffini dan [Abel](https://kenji.blog/id/p/abel/) membuktikan bahwa "tidak ada rumus solusi umum untuk persamaan derajat 5 atau lebih" (Teorema [Abel](https://kenji.blog/id/p/abel/)-Ruffini), tetapi mereka tidak dapat memberikan kriteria mendasar mengenai persamaan seperti apa yang dapat dipecahkan dan persamaan seperti apa yang tidak dapat dipecahkan.
+Namun, untuk **persamaan pangkat lima** (kuintik) $ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0$, selama berabad-abad, banyak matematikawan jenius seperti Euler dan [Lagrange](https://kenji.blog/id/p/lagrange/) mencoba menemukan rumus solusinya, tetapi tidak satu pun berhasil. Lagrange berfokus pada permutasi solusi dan menangkap petunjuk untuk pemecahan, tetapi tidak mencapai pembuktian yang lengkap. Setelah itu, Ruffini dan Abel membuktikan bahwa "tidak ada rumus solusi umum untuk persamaan derajat 5 atau lebih" (Teorema [Abel](https://kenji.blog/id/p/abel/)-Ruffini), tetapi mereka tidak dapat memberikan kriteria mendasar mengenai persamaan seperti apa yang dapat dipecahkan dan persamaan seperti apa yang tidak dapat dipecahkan.
 
 # 2. Simetri dan Lahirnya Teori Grup
 
@@ -41,7 +41,7 @@ Pencapaian terbesar [Galois](https://kenji.blog/id/p/galois/) adalah ia tidak se
 
 Mari kita pertimbangkan operasi menukar posisi (permutasi) dari solusi-solusi suatu persamaan.
 Jika hubungan yang berlaku di antara solusi (hubungan sebagai polinomial dengan koefisien bilangan rasional) tetap dipertahankan meskipun solusi tersebut ditukar posisinya, maka permutasi tersebut dapat dikatakan "mempertahankan simetri persamaan".
-[Galois](https://kenji.blog/id/p/galois/) menemukan bahwa kumpulan permutasi yang mempertahankan simetri tersebut memiliki struktur matematis yang disebut **Grup**. Grup ini disebut **Grup [Galois](https://kenji.blog/id/p/galois/)** ([Galois](https://kenji.blog/id/p/galois/) Group) dari persamaan tersebut.
+[Galois](https://kenji.blog/id/p/galois/) menemukan bahwa kumpulan permutasi yang mempertahankan simetri tersebut memiliki struktur matematis yang disebut **Grup**. Grup ini disebut **Grup Galois** ([Galois](https://kenji.blog/id/p/galois/) Group) dari persamaan tersebut.
 
 ```mermaid
 graph TD
@@ -71,7 +71,7 @@ Dengan menggunakan Teori [Galois](https://kenji.blog/id/p/galois/), menjadi sang
 Proses menyelesaikan persamaan dapat dipahami sebagai proses memperluas himpunan bilangan (**Lapangan**, Field) secara bertahap. Lapangan adalah himpunan di mana empat operasi aritmetika dasar dapat dilakukan secara bebas (contoh: himpunan seluruh bilangan rasional, himpunan seluruh bilangan real, dll.).
 Misalnya, kita mulai dari himpunan bilangan rasional $\mathbb{Q}$, lalu menambahkan akar pangkat yang merupakan komponen solusi dari persamaan untuk membuat lapangan baru. Ini disebut **Perluasan Lapangan** (Field Extension).
 
-Teorema fundamental, yang merupakan jantung dari Teori [Galois](https://kenji.blog/id/p/galois/), menunjukkan bahwa terdapat korespondensi satu-satu yang indah (**Korespondensi [Galois](https://kenji.blog/id/p/galois/)**) antara "lapangan menengah dari perluasan lapangan" dan "subgrup dari grup [Galois](https://kenji.blog/id/p/galois/)". Terdapat hubungan inversi yang luar biasa, di mana lapangan yang besar berkorespondensi dengan grup yang kecil, dan lapangan yang kecil berkorespondensi dengan grup yang besar.
+Teorema fundamental, yang merupakan jantung dari Teori [Galois](https://kenji.blog/id/p/galois/), menunjukkan bahwa terdapat korespondensi satu-satu yang indah (**Korespondensi Galois**) antara "lapangan menengah dari perluasan lapangan" dan "subgrup dari grup [Galois](https://kenji.blog/id/p/galois/)". Terdapat hubungan inversi yang luar biasa, di mana lapangan yang besar berkorespondensi dengan grup yang kecil, dan lapangan yang kecil berkorespondensi dengan grup yang besar.
 
 ```mermaid
 graph LR

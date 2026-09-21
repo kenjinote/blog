@@ -559,12 +559,12 @@ Branching at `x >= 0` in the code above is to prevent "overflow," a problem spec
 
 ---
 
-## 10. [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem
+## 10. [Euclide](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem
 
 ### Beauty and Overview of the Formula
 Passed down from ancient Greek geometry, this is the foundational mathematical formula defining the linear distance between two points in an $n$-dimensional space. In 2D space, it is exactly the Pythagorean theorem ($a^2 + b^2 = c^2$).
 
-The [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an distance $d$ between point $P(x_1, y_1, z_1)$ and $Q(x_2, y_2, z_2)$ in a 3D space is expressed as follows:
+The [Euclide](https://kenji.blog/p/euclid/)an distance $d$ between point $P(x_1, y_1, z_1)$ and $Q(x_2, y_2, z_2)$ in a 3D space is expressed as follows:
 
 $$ d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2} $$
 

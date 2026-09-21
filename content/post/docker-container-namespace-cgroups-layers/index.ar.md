@@ -308,7 +308,7 @@ graph TD
 
 ### 8.1 الاستفادة من البناء متعدد المراحل (Multi-stage build)
 
-من خلال فصل بيئة البناء عن بيئة التشغيل، يمكن تقليل الحجم النهائي للصورة بشكل كبير. هذا فعال بشكل خاص مع لغات الترجمة (Compiled languages) مثل [Go](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) و [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) و [Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/).
+من خلال فصل بيئة البناء عن بيئة التشغيل، يمكن تقليل الحجم النهائي للصورة بشكل كبير. هذا فعال بشكل خاص مع لغات الترجمة (Compiled languages) مثل [Go](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) و Rust و [Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/).
 
 ```dockerfile
 # --- المرحلة 1: بيئة البناء (Build) ---

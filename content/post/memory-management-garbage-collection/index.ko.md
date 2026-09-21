@@ -303,7 +303,7 @@ CPU가 메모리에서 데이터를 읽어 들일 때, 그 데이터뿐만 아�
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 여기서 $ h $ 는 캐시 적중률( $ 0 \le h \le 1 $ ), $ T_{cache} $ 는 캐시 접근 시간(약 1〜4 ns), $ T_{memory} $ 는 메인 메모리 접근 시간(약 100 ns)입니다.
-$ h $ 를 0.99로 만들 것인지(C/[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)적 접근) 아니면 0.5로 떨어뜨려 버릴 것인지([Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)적 포인터 체이스)에 따라, 애플리케이션의 루프 실행 속도에서 수십 배의 차이가 발생합니다. 이것이 게임 엔진이나 고빈도 거래 시스템에서 C++나 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)가 선택되는 진정한 이유입니다.
+$ h $ 를 0.99로 만들 것인지(C/[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)적 접근) 아니면 0.5로 떨어뜨려 버릴 것인지(Java적 포인터 체이스)에 따라, 애플리케이션의 루프 실행 속도에서 수십 배의 차이가 발생합니다. 이것이 게임 엔진이나 고빈도 거래 시스템에서 C++나 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)가 선택되는 진정한 이유입니다.
 
 ---
 

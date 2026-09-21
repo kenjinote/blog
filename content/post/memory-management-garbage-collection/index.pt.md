@@ -303,7 +303,7 @@ O tempo médio efetivo de acesso à memória $ T_{avg} $ é expresso da seguinte
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 Onde $ h $ é a taxa de acertos de cache ($ 0 \le h \le 1 $), $ T_{cache} $ é o tempo de acesso ao cache (cerca de 1 a 4 ns), e $ T_{memory} $ é o tempo de acesso à memória principal (cerca de 100 ns).
-A diferença em fazer $ h $ se tornar 0,99 (abordagem de C/[Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)) ou cair para 0,5 (perseguição de ponteiros - pointer chasing - do [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/)) resultará em uma diferença de dezenas de vezes na velocidade de execução de loops de um aplicativo. Esta é a verdadeira razão pela qual C++ e [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) são escolhidos para engines de jogos e sistemas de negociação de alta frequência.
+A diferença em fazer $ h $ se tornar 0,99 (abordagem de C/[Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)) ou cair para 0,5 (perseguição de ponteiros - pointer chasing - do Java) resultará em uma diferença de dezenas de vezes na velocidade de execução de loops de um aplicativo. Esta é a verdadeira razão pela qual C++ e [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) são escolhidos para engines de jogos e sistemas de negociação de alta frequência.
 
 ---
 

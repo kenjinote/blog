@@ -46,11 +46,11 @@ Because of the overwhelming innovation of this discovery, Gauss refrained from p
 
 ## 4. [Riemann](https://kenji.blog/en/p/riemann/)ian Geometry: The Generalization of the Concept of Space
 
-The next leap in non-[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry was brought about by [Bernhard Riemann](https://kenji.blog/en/p/riemann/), a student of Gauss. In his 1854 inaugural lecture, [Riemann](https://kenji.blog/en/p/riemann/) presented groundbreaking ideas about the foundations of geometry.
+The next leap in non-[Euclide](https://kenji.blog/p/euclid/)an geometry was brought about by Bernhard Riemann, a student of Gauss. In his 1854 inaugural lecture, [Riemann](https://kenji.blog/en/p/riemann/) presented groundbreaking ideas about the foundations of geometry.
 
 He introduced the **metric tensor**, which locally defines the bending (curvature) of space, and constructed a more general geometry (**[Riemann](https://kenji.blog/en/p/riemann/)ian geometry**) where the dimension and curvature of space can vary from place to place.
 
-Within [Riemann](https://kenji.blog/en/p/riemann/)'s framework, in addition to [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry (zero curvature) and hyperbolic geometry (negative constant curvature), the geometry of a sphere (positive constant curvature, **elliptic geometry**) could also be treated uniformly. In elliptic geometry, parallel lines "do not exist", and the sum of the interior angles of a triangle is greater than 180 degrees.
+Within [Riemann](https://kenji.blog/en/p/riemann/)'s framework, in addition to [Euclide](https://kenji.blog/p/euclid/)an geometry (zero curvature) and hyperbolic geometry (negative constant curvature), the geometry of a sphere (positive constant curvature, **elliptic geometry**) could also be treated uniformly. In elliptic geometry, parallel lines "do not exist", and the sum of the interior angles of a triangle is greater than 180 degrees.
 
 $$
 \text{The sum of the interior angles of a triangle in elliptic geometry} > 180^\circ
@@ -80,6 +80,6 @@ In the above Einstein equation, the left side represents the geometric structure
 
 ## 6. Conclusion
 
-The exploration of non-[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry, which began with a modest doubt about [Euclid](https://kenji.blog/en/p/euclid/)'s 5th postulate, shattered human's intuitive preconceptions about space and proved the freedom of mathematics. And it ultimately bore fruit as the general theory of relativity, which unravels the fundamental structure of the universe.
+The exploration of non-[Euclide](https://kenji.blog/p/euclid/)an geometry, which began with a modest doubt about [Euclid](https://kenji.blog/en/p/euclid/)'s 5th postulate, shattered human's intuitive preconceptions about space and proved the freedom of mathematics. And it ultimately bore fruit as the general theory of relativity, which unravels the fundamental structure of the universe.
 
-The pursuit of pure logic in mathematics would later become the indispensable language for describing the deepest truths of the physical world. The history of non-[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry teaches us the greatness of human intellect and the astonishing mysteries of the natural world.
+The pursuit of pure logic in mathematics would later become the indispensable language for describing the deepest truths of the physical world. The history of non-[Euclide](https://kenji.blog/p/euclid/)an geometry teaches us the greatness of human intellect and the astonishing mysteries of the natural world.

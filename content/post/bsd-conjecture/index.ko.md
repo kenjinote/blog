@@ -63,7 +63,7 @@ graph TD
 
 ## 3. 모델의 정리와 랭크(계수)
 
-1922년, [루이스 모델](https://kenji.blog/ko/p/mordell/)([Louis Mordell](https://kenji.blog/ko/p/mordell/))은 유리점 군 $E(\mathbb{Q})$의 구조에 관한 결정적인 정리를 증명했습니다. 나중에 [앙드레 베유](https://kenji.blog/ko/p/weil/)([André Weil](https://kenji.blog/ko/p/weil/))가 더 일반적인 대수체와 아벨 다양체로 확장하여, 모델-베유의 정리로 알려져 있습니다.
+1922년, [루이스 모델](https://kenji.blog/ko/p/mordell/)(Louis Mordell)은 유리점 군 $E(\mathbb{Q})$의 구조에 관한 결정적인 정리를 증명했습니다. 나중에 앙드레 베유([André Weil](https://kenji.blog/ko/p/weil/))가 더 일반적인 대수체와 아벨 다양체로 확장하여, 모델-베유의 정리로 알려져 있습니다.
 
 ### 3.1. 모델의 정리 (Mordell's Theorem)
 

@@ -10,9 +10,9 @@ tags: ["アーベル", "代数学", "歴史", "数学"]
 
 # 1. はじめに：早世の天才[アーベル](https://kenji.blog/p/abel/)
 
-数学の歴史において、若くして命を散らしながらも、後の数学界に決定的な影響を与えた天才が何人か存在します。その中でも、ノルウェー出身の **[ニールス・ヘンリック・アーベル](https://kenji.blog/p/abel/) ([Niels Henrik Abel](https://kenji.blog/p/abel/))** は、[エヴァリスト・ガロア](https://kenji.blog/p/galois/)と並んで最も有名な悲劇の天才と言えるでしょう。彼はわずか26歳という短い生涯の中で、数世紀にわたって数学者たちを悩ませてきた「5次以上の代数方程式には一般的な解の公式が存在しない」という事実を証明しました。
+数学の歴史において、若くして命を散らしながらも、後の数学界に決定的な影響を与えた天才が何人か存在します。その中でも、ノルウェー出身の **[ニールス・ヘンリック・アーベル](https://kenji.blog/p/abel/) (Niels Henrik Abel)** は、[エヴァリスト・ガロア](https://kenji.blog/p/galois/)と並んで最も有名な悲劇の天才と言えるでしょう。彼はわずか26歳という短い生涯の中で、数世紀にわたって数学者たちを悩ませてきた「5次以上の代数方程式には一般的な解の公式が存在しない」という事実を証明しました。
 
-本記事では、貧困と病に苦しみながらも数学への情熱を燃やし続けた[アーベル](https://kenji.blog/p/abel/)の生涯と、彼が遺した「[アーベル](https://kenji.blog/p/abel/)群」や「[アーベル](https://kenji.blog/p/abel/)積分」などの重要な数学的業績について、詳しく解説していきます。
+本記事では、貧困と病に苦しみながらも数学への情熱を燃やし続けた[アーベル](https://kenji.blog/p/abel/)の生涯と、彼が遺した「アーベル群」や「[アーベル](https://kenji.blog/p/abel/)積分」などの重要な数学的業績について、詳しく解説していきます。
 
 # 2. [アーベル](https://kenji.blog/p/abel/)の生涯：貧困と才能の開花
 
@@ -20,7 +20,7 @@ tags: ["アーベル", "代数学", "歴史", "数学"]
 
 [ニールス・ヘンリック・アーベル](https://kenji.blog/p/abel/)は、1802年8月5日、ノルウェーの小さな村フィンドーで、牧師の息子として生まれました。当時のノルウェーは経済的に困窮しており、[アーベル](https://kenji.blog/p/abel/)の家庭も例外ではありませんでした。
 
-彼の運命が大きく変わったのは、1817年にオスロのカテドラル・スクールに入学し、数学教師 **ベルント・ミカエル・ホルムボー (Bernt Michael Holmboe)** と出会ったことでした。ホルムボーは[アーベル](https://kenji.blog/p/abel/)の並外れた数学的才能をすぐに見抜き、彼に大学レベルの高度な数学を教え込みました。[オイラー](https://kenji.blog/p/euler/)や[ラグランジュ](https://kenji.blog/p/lagrange/)、ラプラスといった巨匠たちの著作を読み漁った[アーベル](https://kenji.blog/p/abel/)は、瞬く間に最先端の数学を吸収していきました。
+彼の運命が大きく変わったのは、1817年にオスロのカテドラル・スクールに入学し、数学教師 **ベルント・ミカエル・ホルムボー (Bernt Michael Holmboe)** と出会ったことでした。ホルムボーは[アーベル](https://kenji.blog/p/abel/)の並外れた数学的才能をすぐに見抜き、彼に大学レベルの高度な数学を教え込みました。オイラーやラグランジュ、ラプラスといった巨匠たちの著作を読み漁った[アーベル](https://kenji.blog/p/abel/)は、瞬く間に最先端の数学を吸収していきました。
 
 ```mermaid
 flowchart TD
@@ -51,15 +51,15 @@ $$ a x^5 + b x^4 + c x^3 + d x^2 + e x + f = 0 \quad (\text{5次方程式の一�
 
 1825年、[アーベル](https://kenji.blog/p/abel/)はノルウェー政府から奨学金を得て、ヨーロッパ大陸へ留学する機会を得ました。彼の目的は、当時の数学の中心地であったパリと、偉大な数学者カール・フリードリヒ・[ガウス](https://kenji.blog/p/gauss/)がいるゲッティンゲンを訪れることでした。
 
-[ガウス](https://kenji.blog/p/gauss/)に自身の論文を送った[アーベル](https://kenji.blog/p/abel/)でしたが、[ガウス](https://kenji.blog/p/gauss/)はその論文を読むことなく放置してしまいました。面会を諦めた[アーベル](https://kenji.blog/p/abel/)はベルリンへ向かいます。
+[ガウス](https://kenji.blog/p/gauss/)に自身の論文を送ったアーベルでしたが、ガウスはその論文を読むことなく放置してしまいました。面会を諦めた[アーベル](https://kenji.blog/p/abel/)はベルリンへ向かいます。
 
 ベルリンで彼は、土木技師であり数学の熱心な愛好家であった **アウグスト・レオポルド・クレレ (August Leopold Crelle)** と出会います。クレレは[アーベル](https://kenji.blog/p/abel/)の才能に感銘を受け、世界初の数学専門学術誌である『純粋・応用数学誌（通称：クレレ誌）』を創刊しました。[アーベル](https://kenji.blog/p/abel/)はこの雑誌の創刊号に複数の論文を寄稿し、ヨーロッパの数学界にその名を知らしめることになります。
 
 # 5. パリでの挫折と[コーシー](https://kenji.blog/p/cauchy/)の怠慢
 
-1826年、[アーベル](https://kenji.blog/p/abel/)はパリに到着します。ここで彼は、自身の最高傑作とも言える「超越関数に関する広範な定理」についての論文をフランス科学アカデミーに提出しました。この論文は、後に **[アーベル](https://kenji.blog/p/abel/)の定理 ([Abel](https://kenji.blog/p/abel/)'s theorem)** として知られることになる画期的な内容を含んでいました。
+1826年、[アーベル](https://kenji.blog/p/abel/)はパリに到着します。ここで彼は、自身の最高傑作とも言える「超越関数に関する広範な定理」についての論文をフランス科学アカデミーに提出しました。この論文は、後に **アーベルの定理 ([Abel](https://kenji.blog/p/abel/)'s theorem)** として知られることになる画期的な内容を含んでいました。
 
-しかし、ここでも不運が彼を襲います。審査を任された大数学者 **[オーギュスタン＝ルイ・コーシー](https://kenji.blog/p/cauchy/) ([Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/))** は、[アーベル](https://kenji.blog/p/abel/)の論文を自室の書類の山に紛れ込ませてしまい、審査を行いませんでした。
+しかし、ここでも不運が彼を襲います。審査を任された大数学者 **[オーギュスタン＝ルイ・コーシー](https://kenji.blog/p/cauchy/) (Augustin-Louis Cauchy)** は、[アーベル](https://kenji.blog/p/abel/)の論文を自室の書類の山に紛れ込ませてしまい、審査を行いませんでした。
 
 失意と資金難、そして徐々に忍び寄る結核の病魔により、[アーベル](https://kenji.blog/p/abel/)はパリを離れることを余儀なくされました。
 
@@ -95,7 +95,7 @@ flowchart LR
 
 ## 7.2 [アーベル](https://kenji.blog/p/abel/)積分と[アーベル](https://kenji.blog/p/abel/)関数
 
-[アーベル](https://kenji.blog/p/abel/)のパリ論文の主題であった **[アーベル](https://kenji.blog/p/abel/)積分 ([Abel](https://kenji.blog/p/abel/)ian integral)** は、代数関数を含む積分の一般化です。彼の死後、[ヤコビ](https://kenji.blog/p/jacobi/)らによってこの理論は発展し、代数幾何学における **[アーベル](https://kenji.blog/p/abel/)多様体 ([Abel](https://kenji.blog/p/abel/)ian variety)** などの壮大な理論へと成長しました。
+[アーベル](https://kenji.blog/p/abel/)のパリ論文の主題であった **アーベル積分 (Abelian integral)** は、代数関数を含む積分の一般化です。彼の死後、ヤコビらによってこの理論は発展し、代数幾何学における **アーベル多様体 ([Abel](https://kenji.blog/p/abel/)ian variety)** などの壮大な理論へと成長しました。
 
 ## 7.3 [アーベル](https://kenji.blog/p/abel/)の連続性定理 ([Abel](https://kenji.blog/p/abel/)'s limit theorem)
 

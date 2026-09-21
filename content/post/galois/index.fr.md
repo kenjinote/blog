@@ -8,7 +8,7 @@ categories: ["mathématiques", "biographie"]
 tags: ["Théorie de Galois", "Algèbre", "Théorie des groupes", "Histoire"]
 ---
 
-Dans l'histoire des mathématiques, rares sont ceux qui ont mené une vie aussi dramatique et tragique qu'[Évariste Galois](https://kenji.blog/fr/p/galois/) (1811–1832). Ce jeune Français, qui a perdu la vie dans un duel à l'âge de 20 ans, a posé les bases d'une théorie magnifique qui allait changer fondamentalement les mathématiques ultérieures dans une lettre écrite à la veille de sa mort. Dans cet article, nous nous pencherons sur la vie tumultueuse de [Galois](https://kenji.blog/fr/p/galois/) et sur son plus grand héritage, la **théorie de [Galois](https://kenji.blog/fr/p/galois/)**.
+Dans l'histoire des mathématiques, rares sont ceux qui ont mené une vie aussi dramatique et tragique qu'[Évariste Galois](https://kenji.blog/fr/p/galois/) (1811–1832). Ce jeune Français, qui a perdu la vie dans un duel à l'âge de 20 ans, a posé les bases d'une théorie magnifique qui allait changer fondamentalement les mathématiques ultérieures dans une lettre écrite à la veille de sa mort. Dans cet article, nous nous pencherons sur la vie tumultueuse de Galois et sur son plus grand héritage, la **théorie de [Galois](https://kenji.blog/fr/p/galois/)**.
 
 ## 1. Une vie tumultueuse : Passion et frustration
 
@@ -16,7 +16,7 @@ Dans l'histoire des mathématiques, rares sont ceux qui ont mené une vie aussi 
 
 [Évariste Galois](https://kenji.blog/fr/p/galois/) est né en 1811 à Bourg-la-Reine, en banlieue parisienne. Son père était un républicain cultivé qui fut plus tard maire de la ville. Initialement éduqué par sa mère, [Galois](https://kenji.blog/fr/p/galois/) est entré au Lycée Louis-le-Grand à Paris à l'âge de 12 ans.
 
-La vie scolaire au lycée l'ennuyait, mais sa vie a complètement changé à l'âge de 15 ans lorsqu'il a découvert les *Éléments de Géométrie* de [Legendre](https://kenji.blog/fr/p/legendre/). On dit que [Galois](https://kenji.blog/fr/p/galois/) a lu ce livre difficile en quelques jours, comme s'il lisait un roman. Dès lors, il a ignoré les manuels scolaires normaux et a commencé à dévorer les articles des plus grands mathématiciens de l'époque, tels que [Lagrange](https://kenji.blog/fr/p/lagrange/) et [Cauchy](https://kenji.blog/fr/p/cauchy/).
+La vie scolaire au lycée l'ennuyait, mais sa vie a complètement changé à l'âge de 15 ans lorsqu'il a découvert les *Éléments de Géométrie* de [Legendre](https://kenji.blog/fr/p/legendre/). On dit que Galois a lu ce livre difficile en quelques jours, comme s'il lisait un roman. Dès lors, il a ignoré les manuels scolaires normaux et a commencé à dévorer les articles des plus grands mathématiciens de l'époque, tels que Lagrange et [Cauchy](https://kenji.blog/fr/p/cauchy/).
 
 ### Défis et échecs à l'École polytechnique
 
@@ -67,7 +67,7 @@ Le cœur de la théorie de [Galois](https://kenji.blog/fr/p/galois/) consiste à
 - **Corps (Field)** : Un ensemble de nombres où les quatre opérations arithmétiques de base (addition, soustraction, multiplication, division) peuvent être effectuées librement. Il représente l'étendue de l'espace contenant les coefficients et les racines d'une équation.
 - **Groupe (Group)** : Un ensemble de symétries ou de transformations. Il représente la structure des opérations (automorphismes) qui permutent les racines d'une équation.
 
-[Galois](https://kenji.blog/fr/p/galois/) a prouvé qu'il existe une correspondance biunivoque (la **correspondance de [Galois](https://kenji.blog/fr/p/galois/)**) entre les corps intermédiaires d'une extension de corps contenant toutes les racines d'une équation (une extension de [Galois](https://kenji.blog/fr/p/galois/)) et les sous-groupes du groupe de [Galois](https://kenji.blog/fr/p/galois/) représentant les symétries de cette extension.
+[Galois](https://kenji.blog/fr/p/galois/) a prouvé qu'il existe une correspondance biunivoque (la **correspondance de Galois**) entre les corps intermédiaires d'une extension de corps contenant toutes les racines d'une équation (une extension de Galois) et les sous-groupes du groupe de [Galois](https://kenji.blog/fr/p/galois/) représentant les symétries de cette extension.
 
 Voici un diagramme (Mermaid) illustrant cette belle correspondance.
 
@@ -100,7 +100,7 @@ Comme le montre ce diagramme, l'agrandissement du corps (de bas en haut) corresp
 
 ### Conditions de résolubilité par radicaux
 
-[Galois](https://kenji.blog/fr/p/galois/) a caractérisé la condition nécessaire et suffisante pour qu'une équation soit résolue par des opérations arithmétiques de base et des radicaux (résoluble algébriquement) comme une propriété de son groupe de [Galois](https://kenji.blog/fr/p/galois/) correspondant. Plus précisément, il a montré qu'une équation est résoluble si et seulement si son groupe de [Galois](https://kenji.blog/fr/p/galois/) est un **groupe résoluble**.
+[Galois](https://kenji.blog/fr/p/galois/) a caractérisé la condition nécessaire et suffisante pour qu'une équation soit résolue par des opérations arithmétiques de base et des radicaux (résoluble algébriquement) comme une propriété de son groupe de Galois correspondant. Plus précisément, il a montré qu'une équation est résoluble si et seulement si son groupe de [Galois](https://kenji.blog/fr/p/galois/) est un **groupe résoluble**.
 
 $$
 \text{L'équation est résoluble algébriquement} \iff \text{Le groupe de [Galois](https://kenji.blog/fr/p/galois/) est un groupe résoluble}
@@ -112,7 +112,7 @@ Ainsi, le fait que "les équations générales de degré 5 ou supérieur ne peuv
 
 ## 3. L'héritage de [Galois](https://kenji.blog/fr/p/galois/) et son impact sur les mathématiques modernes
 
-Après la mort de [Galois](https://kenji.blog/fr/p/galois/), ses lettres ont été conservées par son ami proche Chevalier et sont progressivement devenues connues des mathématiciens. Puis en 1846, le mathématicien français Joseph [Liouville](https://kenji.blog/fr/p/liouville/) a organisé les articles de [Galois](https://kenji.blog/fr/p/galois/) et les a publiés dans une revue de mathématiques avec ses propres commentaires, mettant enfin la théorie de [Galois](https://kenji.blog/fr/p/galois/) en lumière.
+Après la mort de [Galois](https://kenji.blog/fr/p/galois/), ses lettres ont été conservées par son ami proche Chevalier et sont progressivement devenues connues des mathématiciens. Puis en 1846, le mathématicien français Joseph Liouville a organisé les articles de Galois et les a publiés dans une revue de mathématiques avec ses propres commentaires, mettant enfin la théorie de [Galois](https://kenji.blog/fr/p/galois/) en lumière.
 
 Le concept de "groupe" introduit par [Galois](https://kenji.blog/fr/p/galois/) est devenu par la suite le langage fondamental non seulement de l'algèbre, mais de tous les domaines scientifiques, y compris la géométrie, la topologie et la physique (comme la physique des particules et la cristallographie). Aujourd'hui, l'algèbre abstraite, qui étudie les systèmes algébriques tels que les "groupes, anneaux et corps", est devenue l'un des piliers les plus importants des mathématiques modernes.
 

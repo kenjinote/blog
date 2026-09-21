@@ -8,7 +8,7 @@ categories: ["mathematics", "biography"]
 tags: ["Bachet", "Number Theory", "History of Mathematics", "Recreational Mathematics", "Diophantus"]
 ---
 
-数学の歴史において、時には後世の偉大な発見の影に隠れながらも、極めて重要な役割を果たした人物が存在します。17世紀フランスの数学者、 **クロード＝ガスパール・[バシェ](https://kenji.blog/p/bachet/)・ド・メジリアック ([Claude Gaspard Bachet](https://kenji.blog/p/bachet/) de Méziriac, 1581–1638)** もその一人です。彼は[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/)に影響を与えたことで有名ですが、彼自身の業績もまた非常に多岐にわたります。
+数学の歴史において、時には後世の偉大な発見の影に隠れながらも、極めて重要な役割を果たした人物が存在します。17世紀フランスの数学者、 **クロード＝ガスパール・[バシェ](https://kenji.blog/p/bachet/)・ド・メジリアック (Claude Gaspard Bachet de Méziriac, 1581–1638)** もその一人です。彼は[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/)に影響を与えたことで有名ですが、彼自身の業績もまた非常に多岐にわたります。
 
 本記事では、[バシェ](https://kenji.blog/p/bachet/)の生涯とその主要な数学的業績について、詳しく掘り下げていきます。
 
@@ -29,15 +29,15 @@ flowchart TD
 
 ## [ディオファントス](https://kenji.blog/p/diophantus/)『算術』のラテン語訳
 
-[バシェ](https://kenji.blog/p/bachet/)の最もよく知られた業績の一つは、古代ギリシャの数学者[ディオファントス](https://kenji.blog/p/diophantus/) ([Diophantus](https://kenji.blog/p/diophantus/)) の著書『算術 (Arithmetica)』をラテン語に翻訳し、注釈を加えて1621年に出版したことです。
+[バシェ](https://kenji.blog/p/bachet/)の最もよく知られた業績の一つは、古代ギリシャの数学者ディオファントス ([Diophantus](https://kenji.blog/p/diophantus/)) の著書『算術 (Arithmetica)』をラテン語に翻訳し、注釈を加えて1621年に出版したことです。
 
-この翻訳本は、当時のヨーロッパの数学者たちにとって、古代の代数学や整数論を学ぶための標準的なテキストとなりました。中でも最も有名なエピソードは、[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/) ([Pierre de Fermat](https://kenji.blog/p/fermat/)) がこの[バシェ](https://kenji.blog/p/bachet/)版『算術』の余白に、あの有名な「[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)」を書き込んだことです。
+この翻訳本は、当時のヨーロッパの数学者たちにとって、古代の代数学や整数論を学ぶための標準的なテキストとなりました。中でも最も有名なエピソードは、[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/) (Pierre de Fermat) がこのバシェ版『算術』の余白に、あの有名な「[フェルマーの最終定理](https://kenji.blog/p/fermats-last-theorem/)」を書き込んだことです。
 
 [バシェ](https://kenji.blog/p/bachet/)自身も単なる翻訳にとどまらず、[ディオファントス](https://kenji.blog/p/diophantus/)の問題に対して独自の優れた注釈や一般化を付け加えました。彼の数学的洞察力がなければ、17世紀の数論の発展はもっと遅れていたかもしれません。
 
 ## [バシェ](https://kenji.blog/p/bachet/)方程式 ([Bachet](https://kenji.blog/p/bachet/)'s Equation)
 
-[バシェ](https://kenji.blog/p/bachet/)は数論において、現在 **[バシェ](https://kenji.blog/p/bachet/)方程式** と呼ばれる特定の形の[ディオファントス](https://kenji.blog/p/diophantus/)方程式を研究しました。これは以下の形の三次曲線（楕円曲線の一種）を表す方程式です。
+[バシェ](https://kenji.blog/p/bachet/)は数論において、現在 **バシェ方程式** と呼ばれる特定の形の[ディオファントス](https://kenji.blog/p/diophantus/)方程式を研究しました。これは以下の形の三次曲線（楕円曲線の一種）を表す方程式です。
 
 $$
 y^2 = x^3 - c
@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-これは[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)を拡張することで具体的に $x, y$ を計算することができ（拡張[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)）、現代の暗号理論（例えば[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号など）においても不可欠な基礎定理となっています。歴史的な正確さを重んじる文脈では、これを **[バシェ](https://kenji.blog/p/bachet/)の定理** と呼ぶこともあります。
+これは[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)を拡張することで具体的に $x, y$ を計算することができ（拡張ユークリッドの互除法）、現代の暗号理論（例えばRSA暗号など）においても不可欠な基礎定理となっています。歴史的な正確さを重んじる文脈では、これを **[バシェ](https://kenji.blog/p/bachet/)の定理** と呼ぶこともあります。
 
 ## まとめ
 

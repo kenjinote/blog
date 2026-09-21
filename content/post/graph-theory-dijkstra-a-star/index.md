@@ -19,7 +19,7 @@ tags:
 
 現代のコンピュータサイエンスにおいて、 **[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)理論** ([Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory) はネットワーク構造をモデル化するための強力な数学的枠組みを提供します。私たちの日常生活において、カーナビゲーションや鉄道の乗り換え案内、インターネットのルーティング、さらにはゲームAIの経路探索など、さまざまな場面で「最短経路」を計算する技術が使われています。
 
-本記事では、この経路探索の基礎となるグラフ理論の数学的定義から始まり、代表的な[探索アルゴリズム](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)である **[ダイクストラ法](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** ([Dijkstra](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm) と、それをさらに発展させた **A*アルゴリズム** (A-Star Algorithm) の仕組み、数学的証明、そしてPythonを用いた実践的な実装方法までを網羅的に解説します。
+本記事では、この経路探索の基礎となるグラフ理論の数学的定義から始まり、代表的な[探索アルゴリズム](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)である **ダイクストラ法** ([Dijkstra](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm) と、それをさらに発展させた **A*アルゴリズム** (A-Star Algorithm) の仕組み、数学的証明、そしてPythonを用いた実践的な実装方法までを網羅的に解説します。
 
 ## 2. グラフ理論の基礎
 

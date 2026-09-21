@@ -11,7 +11,7 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 # 타원곡선 암호(ECC)의 수학적 기초와 C++에서의 구현
 
-현대 암호 기술에서 **타원곡선 암호(Elliptic Curve [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy: ECC)** 는 매우 중요한 역할을 담당하고 있습니다. 우리의 일상적인 인터넷 통신(HTTPS/TLS)부터 스마트폰의 보안 엔클레이브(Secure Enclave), SSH를 통한 서버 인증, FIDO와 같은 패스워드리스 인증, 심지어 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)이나 이더리움과 같은 [암호화폐](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)에 이르기까지 현대 디지털 사회의 신뢰 기반은 ECC에 의해 지탱되고 있다고 해도 과언이 아닙니다.
+현대 암호 기술에서 **타원곡선 암호(Elliptic Curve [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy: ECC)** 는 매우 중요한 역할을 담당하고 있습니다. 우리의 일상적인 인터넷 통신(HTTPS/TLS)부터 스마트폰의 보안 엔클레이브(Secure Enclave), SSH를 통한 서버 인증, FIDO와 같은 패스워드리스 인증, 심지어 비트코인이나 이더리움과 같은 [암호화폐](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)에 이르기까지 현대 디지털 사회의 신뢰 기반은 ECC에 의해 지탱되고 있다고 해도 과언이 아닙니다.
 
 본 기사에서는 이 타원곡선 암호가 어떻게 기능하는지, 그 이면에 있는 아름답고도 난해한 수학적 이론(유한체 상의 대수기하학)에서 출발하여 실제 C++를 이용한 구현 방법, 나아가 부채널 공격(타이밍 공격)을 방지하기 위한 안전한 코딩 기법까지 압도적인 분량으로 철저하게 해설합니다.
 
@@ -67,7 +67,7 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 **곱셈 역원(Modular Multiplicative Inverse)** 의 계산은 암호 구현에서 매우 중요합니다. $b \times b^{-1} \equiv 1 \pmod p$를 만족하는 $b^{-1}$을 구하기 위해서는 주로 다음 두 가지 알고리즘이 사용됩니다.
 
-1. **확장 [[유클리드](https://kenji.blog/ko/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/)(Extended [[Euclid](https://kenji.blog/ko/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm)**: 빠르지만, 구현에 따라 처리 시간이 입력값에 의존하기 때문에 타이밍 공격의 위험이 있습니다.
+1. **확장 [유클리드 호제법](https://kenji.blog/p/euclidean-algorithm/)(Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm)**: 빠르지만, 구현에 따라 처리 시간이 입력값에 의존하기 때문에 타이밍 공격의 위험이 있습니다.
 2. **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)([Fermat's Little Theorem](https://kenji.blog/ko/p/fermats-little-theorem/))**: $p$가 소수이고 $b \neq 0$일 때, $b^{p-1} \equiv 1 \pmod p$가 성립합니다. 양변을 $b$로 나누면 $b^{p-2} \equiv b^{-1} \pmod p$가 됩니다. 즉, $b$의 $p-2$ 제곱을 계산함으로써 역원을 구할 수 있습니다. 거듭제곱 연산은 상수 시간(Constant-Time)으로 구현하기 쉽기 때문에, 암호 구현에서는 이 방법을 선호합니다.
 
 ---

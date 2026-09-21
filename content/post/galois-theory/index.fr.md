@@ -31,7 +31,7 @@ $$
 Cette formule montre qu'en appliquant un nombre fini d'opérations arithmétiques (addition, soustraction, multiplication, division) et de racines (racine carrée, racine cubique, etc.) aux coefficients $a, b, c$, il est toujours possible de trouver les solutions de n'importe quelle équation du second degré.
 Pour les équations du troisième et quatrième degré, bien que plus complexes, des formules de résolution similaires utilisant les opérations arithmétiques et les racines existent, comme l'ont découvert les mathématiciens italiens du 16ème siècle (Cardan, Tartaglia, Ferrari, etc.). Celles-ci représentaient des avancées majeures dans l'histoire des mathématiques.
 
-Cependant, en ce qui concerne les **équations du cinquième degré** $ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0$, pendant des siècles, de nombreux mathématiciens de génie comme Euler et [Lagrange](https://kenji.blog/fr/p/lagrange/) ont tenté de trouver une formule de résolution, mais personne n'a réussi. [Lagrange](https://kenji.blog/fr/p/lagrange/) s'est concentré sur les permutations des racines et a trouvé un début de solution, mais n'est pas parvenu à une preuve complète. Plus tard, Ruffini et [Abel](https://kenji.blog/fr/p/abel/) ont prouvé qu'« il n'y a pas de formule de résolution générale pour les équations de degré 5 ou plus » (théorème d'[Abel](https://kenji.blog/fr/p/abel/)-Ruffini), mais ils n'ont pas pu donner de critère fondamental pour déterminer quelles équations pouvaient être résolues et lesquelles ne le pouvaient pas.
+Cependant, en ce qui concerne les **équations du cinquième degré** $ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0$, pendant des siècles, de nombreux mathématiciens de génie comme Euler et [Lagrange](https://kenji.blog/fr/p/lagrange/) ont tenté de trouver une formule de résolution, mais personne n'a réussi. Lagrange s'est concentré sur les permutations des racines et a trouvé un début de solution, mais n'est pas parvenu à une preuve complète. Plus tard, Ruffini et Abel ont prouvé qu'« il n'y a pas de formule de résolution générale pour les équations de degré 5 ou plus » (théorème d'[Abel](https://kenji.blog/fr/p/abel/)-Ruffini), mais ils n'ont pas pu donner de critère fondamental pour déterminer quelles équations pouvaient être résolues et lesquelles ne le pouvaient pas.
 
 # 2. La symétrie et la naissance de la théorie des groupes
 
@@ -41,7 +41,7 @@ La plus grande réussite de [Galois](https://kenji.blog/fr/p/galois/) est de ne 
 
 Considérons l'opération d'échange (permutation) des solutions d'une équation.
 Si, même en échangeant les solutions, les relations mathématiques entre elles (relations en tant que polynômes à coefficients rationnels) sont préservées, on dit que cette permutation « préserve la symétrie de l'équation ».
-[Galois](https://kenji.blog/fr/p/galois/) a découvert que l'ensemble de ces permutations préservant la symétrie possède une structure mathématique appelée **groupe**. Ce groupe est appelé le **groupe de [Galois](https://kenji.blog/fr/p/galois/)** ([Galois](https://kenji.blog/fr/p/galois/) Group) de l'équation.
+[Galois](https://kenji.blog/fr/p/galois/) a découvert que l'ensemble de ces permutations préservant la symétrie possède une structure mathématique appelée **groupe**. Ce groupe est appelé le **groupe de Galois** ([Galois](https://kenji.blog/fr/p/galois/) Group) de l'équation.
 
 ```mermaid
 graph TD
@@ -71,7 +71,7 @@ En utilisant la théorie de [Galois](https://kenji.blog/fr/p/galois/), la raison
 Le processus de résolution d'une équation peut être vu comme le processus d'élargissement progressif d'un ensemble de nombres (**corps**, Field). Un corps est un ensemble où les opérations arithmétiques peuvent être effectuées librement (ex : l'ensemble des nombres rationnels, l'ensemble des nombres réels, etc.).
 Par exemple, en partant de l'ensemble des nombres rationnels $\mathbb{Q}$, on crée un nouveau corps en ajoutant les racines qui composent les solutions de l'équation. C'est ce qu'on appelle une **extension de corps**.
 
-Le théorème fondamental, qui est le cœur de la théorie de [Galois](https://kenji.blog/fr/p/galois/), montre qu'il existe une belle correspondance biunivoque (**correspondance de [Galois](https://kenji.blog/fr/p/galois/)**) entre les « corps intermédiaires de l'extension de corps » et les « sous-groupes du groupe de [Galois](https://kenji.blog/fr/p/galois/) ». Il existe une magnifique relation d'inversion : un grand corps correspond à un petit groupe, et un petit corps correspond à un grand groupe.
+Le théorème fondamental, qui est le cœur de la théorie de [Galois](https://kenji.blog/fr/p/galois/), montre qu'il existe une belle correspondance biunivoque (**correspondance de Galois**) entre les « corps intermédiaires de l'extension de corps » et les « sous-groupes du groupe de [Galois](https://kenji.blog/fr/p/galois/) ». Il existe une magnifique relation d'inversion : un grand corps correspond à un petit groupe, et un petit corps correspond à un grand groupe.
 
 ```mermaid
 graph LR

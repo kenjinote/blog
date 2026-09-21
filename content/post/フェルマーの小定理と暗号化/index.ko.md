@@ -13,7 +13,7 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 현대 디지털 사회, 특히 인터넷을 통한 통신에서 '암호화'는 필수 불가결한 기반 기술이 되었습니다. 우리가 웹 브라우저에서 HTTPS를 통해 안전하게 웹사이트를 탐색하고, 온라인 뱅킹으로 금융 거래를 하며, 메시징 앱으로 사적인 대화를 나눌 수 있는 것은 고도의 수학적 이론이 뒷받침된 암호 프로토콜이 배후에서 작동하고 있기 때문입니다. 그중에서도 특히 중요한 역할을 담당하고 있는 것이 '공개키 암호 방식'이며, 그 대표적인 예가 **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호** 입니다.
 
-RSA 암호를 비롯한 많은 암호 알고리즘의 안전성과 정당성은 17세기 프랑스의 수학자 [피에르 드 페르마](https://kenji.blog/ko/p/fermat/)([Pierre de Fermat](https://kenji.blog/ko/p/fermat/))가 발견한 매우 아름답고 강력한 정리에 크게 의존하고 있습니다. 그것이 바로 **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)([Fermat's Little Theorem](https://kenji.blog/ko/p/fermats-little-theorem/))** 입니다. 더 나아가 이를 일반화한 [레온하르트 오일러](https://kenji.blog/ko/p/euler/)([Leonhard Euler](https://kenji.blog/ko/p/euler/))의 정리 역시 암호 이론에서 결정적인 역할을 하고 있습니다.
+RSA 암호를 비롯한 많은 암호 알고리즘의 안전성과 정당성은 17세기 프랑스의 수학자 [피에르 드 페르마](https://kenji.blog/ko/p/fermat/)(Pierre de Fermat)가 발견한 매우 아름답고 강력한 정리에 크게 의존하고 있습니다. 그것이 바로 **페르마의 소정리(Fermat's Little Theorem)** 입니다. 더 나아가 이를 일반화한 레온하르트 오일러([Leonhard Euler](https://kenji.blog/ko/p/euler/))의 정리 역시 암호 이론에서 결정적인 역할을 하고 있습니다.
 
 본 기사에서는 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)라는 순수 수학의 발견이 어떻게 현대의 실용적인 암호 기술, 특히 '소수 판별'과 '[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호'에 응용되고 있는지를 기초부터 철저하게 해설합니다. 수학적인 증명, 암호화 및 복호화의 메커니즘, 그리고 C++와 Python을 활용한 구체적인 알고리즘 구현까지 모두 다루는 매우 상세한 기술 가이드가 될 것입니다.
 
@@ -112,7 +112,7 @@ $$
 
 ## 4. 오일러의 피 함수와 오일러의 정리
 
-[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)는 '소수 $p$'에 관한 정리지만, 이를 '임의의 양의 정수 $n$'으로 일반화한 사람이 [레온하르트 오일러](https://kenji.blog/ko/p/euler/)입니다. [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호를 이해하려면 이 확장이 필수적입니다.
+[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)는 '소수 $p$'에 관한 정리지만, 이를 '임의의 양의 정수 $n$'으로 일반화한 사람이 레온하르트 오일러입니다. [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호를 이해하려면 이 확장이 필수적입니다.
 
 ### 4.1 오일러의 피(토션트) 함수 $\phi(n)$
 
@@ -317,7 +317,7 @@ sequenceDiagram
 4. $\phi(N)$과 서로소인 정수 $e$(공개 지수)를 선택합니다(종종 $e = 65537$이 사용됩니다).
 5. $e$의 모듈러 역원 $d$(비밀 지수)를 계산합니다. 즉, 다음을 만족하는 $d$를 찾습니다.
    $$ e \cdot d \equiv 1 \pmod{\phi(N)} $$
-   이 계산에는 **확장 [[유클리드](https://kenji.blog/ko/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/)** 이 사용됩니다.
+   이 계산에는 **확장 [유클리드 호제법](https://kenji.blog/p/euclidean-algorithm/)** 이 사용됩니다.
 
 이것으로 **공개키는 $(N, e)$**, ** 비밀키는 $(N, d)$**가 됩니다. ($p, q, \phi(N)$은 즉시 파기하거나 엄중히 숨깁니다).
 
@@ -369,7 +369,7 @@ $$ M \cdot (1)^k \equiv M \pmod N $$
 
 이론만으로는 실감이 나지 않기 때문에 Python을 사용하여 실제로 RSA 암호의 키 생성, 암호화, 복호화의 과정을 구현해 보겠습니다. 이것은 교육용 '토이(장난감) 구현'이지만 사용된 수학은 진짜와 완전히 같습니다.
 
-모듈러 역원 $d$를 구하기 위한 '확장 [[유클리드](https://kenji.blog/ko/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/)'도 구현에 포함시킵니다.
+모듈러 역원 $d$를 구하기 위한 '확장 [유클리드 호제법](https://kenji.blog/p/euclidean-algorithm/)'도 구현에 포함시킵니다.
 
 ```python
 import random

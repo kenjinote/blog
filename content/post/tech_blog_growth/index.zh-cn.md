@@ -24,7 +24,7 @@ description: '利用数据和自动化最大化技术博客访问量的策略。
 
 ### 1.1 优化 Core [Web Vitals](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-Google将页面体验作为排名因素之一，特别是 **[Core Web Vitals](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** 在技术博客中也不容忽视。
+Google将页面体验作为排名因素之一，特别是 **[Core Web Vitals](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (LCP, FID/INP, [CLS](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** 在技术博客中也不容忽视。
 技术博客中大量使用源代码块、数学公式（MathJax / KaTeX）和图解图片。这些都会成为延迟页面渲染的因素。
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/zh-cn/p/browser-rendering-mechanism-dom-paint/))**: 首屏主要内容的加载速度。对于头图建议使用WebP或AVIF格式，并添加`fetchpriority="high"`属性进行预加载。另外，用于语法高亮的巨大CSS或JS应设计为异步加载，或仅在需要的页面上加载。

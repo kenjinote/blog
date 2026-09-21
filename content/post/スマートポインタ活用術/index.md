@@ -9,7 +9,7 @@ categories: ["programming", "cpp"]
 tags: ["C++", "Smart Pointers", "Memory Management", "Modern C++"]
 ---
 
-C++における[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)は、長年にわたり開発者にとって最大の課題の一つでした。手動での `new` と `delete` に依存する従来の[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)スタイルは、メモリリークやダングリング[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)、二重解放といった深刻なバグを引き起こす温床となっていました。しかし、Modern C++（C++11以降）の登場により、状況は劇的に変化しました。その中核をなすのが「スマートポインタ（Smart [Pointer](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)s）」です。
+C++における[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)は、長年にわたり開発者にとって最大の課題の一つでした。手動での `new` と `delete` に依存する従来のメモリ管理スタイルは、メモリリークやダングリングポインタ、二重解放といった深刻なバグを引き起こす温床となっていました。しかし、Modern C++（C++11以降）の登場により、状況は劇的に変化しました。その中核をなすのが「スマートポインタ（Smart [Pointer](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)s）」です。
 
 本記事では、メモリリークを根絶し、安全かつ効率的なリソース管理を実現するための強力なツールである `std::unique_ptr`、`std::shared_ptr`、そして `std::weak_ptr` の仕組みと高度な活用術について、内部実装（コントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)やアトミック操作）、パフォーマンスへの影響、数学的モデルによる参照カウントの定式化を交えて極めて詳細に解説します。
 
@@ -28,7 +28,7 @@ void legacy_function() {
 }
 ```
 
-上記のようなコードでは、例外が発生した場合や早期リターンが行われた場合に `delete` がスキップされ、メモリリークが発生します。これを防ぐためのパラダイムが「RAII（Resource Acquisition Is Initialization）」です。RAIIは、リソースの確保をオブジェクトの初期化（コンストラクタ）に、リソースの解放をオブジェクトの破棄（デストラクタ）に結びつける手法です。スマート[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)は、このRAIIイディオムを[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)に応用した標準ライブラリのクラス[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)です。
+上記のようなコードでは、例外が発生した場合や早期リターンが行われた場合に `delete` がスキップされ、メモリリークが発生します。これを防ぐためのパラダイムが「RAII（Resource Acquisition Is Initialization）」です。RAIIは、リソースの確保をオブジェクトの初期化（コンストラクタ）に、リソースの解放をオブジェクトの破棄（デストラクタ）に結びつける手法です。スマート[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)は、このRAIIイディオムをメモリ管理に応用した標準ライブラリのクラス[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)です。
 
 ## 2. `std::unique_ptr`：ゼロオーバーヘッドの排他的所有権
 
@@ -36,7 +36,7 @@ void legacy_function() {
 
 ### 2.1 ゼロオーバーヘッドの原則
 
-`std::unique_ptr` の最大の魅力は、そのパフォーマンスです。カスタムデリータを持たないデフォルトの状態では、`std::unique_ptr` のサイズは生の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（Raw [Pointer](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）と完全に同一です。不要なメンバ変数は一切持たず、仮想関数も使用されていません。コンパイラの最適化により、`std::unique_ptr` を介したアクセスは生の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)と同等の[アセンブリ](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)コードに展開されます。
+`std::unique_ptr` の最大の魅力は、そのパフォーマンスです。カスタムデリータを持たないデフォルトの状態では、`std::unique_ptr` のサイズは生の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（Raw Pointer）と完全に同一です。不要なメンバ変数は一切持たず、仮想関数も使用されていません。コンパイラの最適化により、`std::unique_ptr` を介したアクセスは生のポインタと同等の[アセンブリ](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)コードに展開されます。
 
 ### 2.2 所有権の移動と `std::move`
 
@@ -122,7 +122,7 @@ int main() {
 
 ### 3.1 内部アーキテクチャ：コントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)
 
-`std::shared_ptr` は、管理対象のオブジェクトへの[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)とは別に、 **コントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)（Control Block）** と呼ばれるメタデータを[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)上に割り当てて共有します。コントロールブロックには以下の情報が含まれます：
+`std::shared_ptr` は、管理対象のオブジェクトへの[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)とは別に、 **コントロールブロック（Control Block）** と呼ばれるメタデータを[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)上に割り当てて共有します。コントロールブロックには以下の情報が含まれます：
 
 1.  **Strong Count (強参照カウント)** ：オブジェクトを所有している `shared_ptr` の数。これが0になるとオブジェクトが破棄されます。
 2.  **Weak Count (弱参照カウント)** ：オブジェクトを監視している `weak_ptr` の数。Strong CountとWeak Countの両方が0になると、コントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)自体が解放されます。
@@ -142,7 +142,7 @@ graph TD
     C -.->|"Custom Deleter"| G["Deleter"]
 ```
 
-このため、`std::shared_ptr` オブジェクト自体のサイズは通常、生の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の2倍（オブジェクトへのポインタと、コントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)への[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）になります。
+このため、`std::shared_ptr` オブジェクト自体のサイズは通常、生の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の2倍（オブジェクトへのポインタと、コントロールブロックへの[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）になります。
 
 ### 3.2 パフォーマンスとアトミック操作
 
@@ -157,7 +157,7 @@ x86/x64アーキテクチャでは、参照カウントの増減には `lock xad
 `shared_ptr` を生成する際は、可能な限り `std::make_shared` を使用すべきです。これには2つの重大な理由があります。
 
 1.  **メモリ割り当ての最適化** ：
-    `new` を使用すると、オブジェクト本体の割り当てとコントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の割り当ての2回の[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)アロケーションが発生します。`std::make_shared` を使用すると、両方を包含する1つの大きなメモリブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を1回の[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)アロケーションで確保でき、キャッシュ効率も向上します。
+    `new` を使用すると、オブジェクト本体の割り当てとコントロールブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の割り当ての2回のヒープアロケーションが発生します。`std::make_shared` を使用すると、両方を包含する1つの大きなメモリブロックを1回の[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)アロケーションで確保でき、キャッシュ効率も向上します。
 2.  **例外安全性** ：
     C++17より前の規格では、関数の引数評価順序が未規定であったため、`new` で確保した[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を `shared_ptr` のコンストラクタに渡す前に他の引数の評価で例外が発生すると、メモリリークのリスクがありました。`make_shared` はこの問題を完全に回避します。
 

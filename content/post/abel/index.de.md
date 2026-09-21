@@ -12,7 +12,7 @@ tags: ["Abel", "Algebra", "Geschichte", "Mathematik"]
 
 In der Geschichte der Mathematik gibt es einige Genies, die in jungen Jahren verstorben sind, aber einen entscheidenden Einfluss auf zukünftige Generationen hinterlassen haben. Unter ihnen ragt der norwegische Mathematiker **[Niels Henrik Abel](https://kenji.blog/de/p/abel/)** neben [Évariste Galois](https://kenji.blog/de/p/galois/) als eines der berühmtesten tragischen Genies heraus. In seinem kurzen Leben von nur 26 Jahren bewies er, dass „es keine allgemeine algebraische Lösung für Gleichungen fünften oder höheren Grades gibt“, ein Problem, das Mathematiker seit Jahrhunderten geplagt hatte.
 
-In diesem Artikel werden wir uns mit [Abel](https://kenji.blog/de/p/abel/)s Leben befassen, das trotz Armut und Krankheit von seiner Leidenschaft für die Mathematik angetrieben wurde, und mit seinen monumentalen Errungenschaften wie „[Abel](https://kenji.blog/de/p/abel/)schen Gruppen“ und „[Abel](https://kenji.blog/de/p/abel/)schen Integralen“.
+In diesem Artikel werden wir uns mit [Abel](https://kenji.blog/de/p/abel/)s Leben befassen, das trotz Armut und Krankheit von seiner Leidenschaft für die Mathematik angetrieben wurde, und mit seinen monumentalen Errungenschaften wie „Abelschen Gruppen“ und „[Abel](https://kenji.blog/de/p/abel/)schen Integralen“.
 
 # 2. [Abel](https://kenji.blog/de/p/abel/)s Leben: Armut und das Erblühen des Talents
 
@@ -20,7 +20,7 @@ In diesem Artikel werden wir uns mit [Abel](https://kenji.blog/de/p/abel/)s Lebe
 
 [Niels Henrik Abel](https://kenji.blog/de/p/abel/) wurde am 5. August 1802 in dem kleinen norwegischen Dorf Finnøy als Sohn eines Pastors geboren. Norwegen war zu dieser Zeit wirtschaftlich verarmt, und [Abel](https://kenji.blog/de/p/abel/)s Familie bildete da keine Ausnahme.
 
-Sein Schicksal änderte sich maßgeblich, als er 1817 in die Kathedralschule in Oslo eintrat und seinen Mathematiklehrer **Bernt Michael Holmboe** traf. Holmboe erkannte sofort [Abel](https://kenji.blog/de/p/abel/)s außergewöhnliches Talent und lehrte ihn fortgeschrittene Mathematik auf Universitätsniveau. Durch das Verschlingen der Werke von Meistern wie Euler, [Lagrange](https://kenji.blog/de/p/lagrange/) und Laplace nahm [Abel](https://kenji.blog/de/p/abel/) schnell modernste Mathematik auf.
+Sein Schicksal änderte sich maßgeblich, als er 1817 in die Kathedralschule in Oslo eintrat und seinen Mathematiklehrer **Bernt Michael Holmboe** traf. Holmboe erkannte sofort [Abel](https://kenji.blog/de/p/abel/)s außergewöhnliches Talent und lehrte ihn fortgeschrittene Mathematik auf Universitätsniveau. Durch das Verschlingen der Werke von Meistern wie Euler, Lagrange und Laplace nahm [Abel](https://kenji.blog/de/p/abel/) schnell modernste Mathematik auf.
 
 ```mermaid
 flowchart TD
@@ -95,7 +95,7 @@ flowchart LR
 
 ## 7.2 [Abel](https://kenji.blog/de/p/abel/)sche Integrale und [Abel](https://kenji.blog/de/p/abel/)sche Funktionen
 
-Das Thema von [Abel](https://kenji.blog/de/p/abel/)s Pariser Abhandlung, das **[Abel](https://kenji.blog/de/p/abel/)sche Integral**, ist eine Verallgemeinerung von Integralen, die algebraische Funktionen beinhalten. Nach seinem Tod wurde diese Theorie von [Jacobi](https://kenji.blog/de/p/jacobi/) und anderen weiterentwickelt und wuchs zu großartigen Theorien wie den **[Abel](https://kenji.blog/de/p/abel/)schen Varietäten** in der algebraischen Geometrie heran.
+Das Thema von [Abel](https://kenji.blog/de/p/abel/)s Pariser Abhandlung, das **Abelsche Integral**, ist eine Verallgemeinerung von Integralen, die algebraische Funktionen beinhalten. Nach seinem Tod wurde diese Theorie von Jacobi und anderen weiterentwickelt und wuchs zu großartigen Theorien wie den **[Abel](https://kenji.blog/de/p/abel/)schen Varietäten** in der algebraischen Geometrie heran.
 
 ## 7.3 [Abel](https://kenji.blog/de/p/abel/)scher Grenzwertsatz
 

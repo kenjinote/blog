@@ -13,7 +13,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 في مجال تطوير البرمجيات، لطالما كانت مشكلة "إنها تعمل على جهازي (It works on my machine)" الناتجة عن اختلاف البيئات بين المطورين سبباً في إهدار الكثير من الوقت في العديد من المشاريع. فالاختلافات في أنظمة التشغيل، وإصدارات اللغات المثبتة، واعتماديات المكتبات، وتعارض الأدوات المثبتة عالمياً، تجعل البيئة المحلية دائماً عرضة لـ "عدم يقين الحالة".
 
-الحل الجذري لهذه التحديات يكمن في تقنية الحاويات مثل **[Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/)** ، ونموذج **البنية التحتية ككود ([IaC](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/))**. من خلال تحويل بيئة التطوير المحلية إلى حاويات، يمكن تحقيق العزل على مستوى نظام التشغيل، مما يسمح بإدارة إصدارات البيئة نفسها جنباً إلى جنب مع قاعدة الكود.
+الحل الجذري لهذه التحديات يكمن في تقنية الحاويات مثل **[Docker](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)** ، ونموذج **البنية التحتية ككود ([IaC](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/))**. من خلال تحويل بيئة التطوير المحلية إلى حاويات، يمكن تحقيق العزل على مستوى نظام التشغيل، مما يسمح بإدارة إصدارات البيئة نفسها جنباً إلى جنب مع قاعدة الكود.
 
 في هذا المقال، سنشرح بالتفصيل وبشكل شامل الخطوات اللازمة لبناء **"بيئة تطوير محلية قابلة لإعادة الإنتاج بحيث تكون متطابقة تماماً بغض النظر عمن يقوم بتشغيلها، أو متى، أو على أي جهاز"** باستخدام Docker، و Docker Compose، و VSCode Dev[Container](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)s. كما سنتناول الآليات التقنية العميقة الكامنة وراءها، مع دمج وجهات نظر رياضية.
 
@@ -129,7 +129,7 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 ## 4. تنسيق حاويات متعددة باستخدام [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/) Compose
 
-في تطوير تطبيقات الويب الحديثة، من الشائع استخدام بنية الخدمات المصغرة ([[Microservice](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/) Architecture) حيث تتعاون مكونات متعددة مثل خوادم الويب، وقواعد البيانات، وخوادم التخزين المؤقت (Cache). نستخدم `docker-compose.yml` لإدارة هذه المكونات بشكل مركزي في البيئة المحلية.
+في تطوير تطبيقات الويب الحديثة، من الشائع استخدام بنية الخدمات المصغرة ([Microservices](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/) Architecture) حيث تتعاون مكونات متعددة مثل خوادم الويب، وقواعد البيانات، وخوادم التخزين المؤقت (Cache). نستخدم `docker-compose.yml` لإدارة هذه المكونات بشكل مركزي في البيئة المحلية.
 
 في هذا المثال، سنقوم ببناء نظام محلي يتكون من 3 طبقات: "الويب (FastAPI)"، و "قاعدة البيانات (PostgreSQL)"، و "التخزين المؤقت ([Redis](https://kenji.blog/ar/p/nosql-database-selection-kvs-document-graph-wide-column/))".
 
@@ -356,7 +356,7 @@ sequenceDiagram
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-في بيئة التطوير المحلية (داخل [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/))، يكون $T_{\text{net}}$ قريباً جداً من 0، ولكن ما يستحق الانتباه هو **أداء الإدخال/الإخراج (I/O) أثناء تركيب الربط (Bind Mount)**. خاصة عند استخدام Docker Desktop على أنظمة Windows أو macOS، يميل $T_{\text{app}}$ (وقت قراءة الكود وما إلى ذلك) إلى التضخم بسبب العبء الإضافي لمشاركة الملفات بين نظام التشغيل المضيف والجهاز الافتراضي (الحاوية). للتغلب على عنق الزجاجة هذا، يوصى بشدة باستخدام Dev[Container](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)s المذكورة أعلاه لوضع كود المصدر بالكامل داخل وحدة تخزين مسماة (Named Volume)، أو استخدام بنية يعمل فيها محرك Docker أصلياً على بيئة WSL2 (Windows Subsystem for Linux 2).
+في بيئة التطوير المحلية (داخل [Docker](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/))، يكون $T_{\text{net}}$ قريباً جداً من 0، ولكن ما يستحق الانتباه هو **أداء الإدخال/الإخراج (I/O) أثناء تركيب الربط (Bind Mount)**. خاصة عند استخدام Docker Desktop على أنظمة Windows أو macOS، يميل $T_{\text{app}}$ (وقت قراءة الكود وما إلى ذلك) إلى التضخم بسبب العبء الإضافي لمشاركة الملفات بين نظام التشغيل المضيف والجهاز الافتراضي (الحاوية). للتغلب على عنق الزجاجة هذا، يوصى بشدة باستخدام Dev[Container](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)s المذكورة أعلاه لوضع كود المصدر بالكامل داخل وحدة تخزين مسماة (Named Volume)، أو استخدام بنية يعمل فيها محرك Docker أصلياً على بيئة WSL2 (Windows Subsystem for Linux 2).
 
 ---
 

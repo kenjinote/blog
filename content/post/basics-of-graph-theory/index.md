@@ -17,13 +17,13 @@ tags:
 
 現代社会において、私たちは常に何かと繋がっています。インターネットを通じたコンピュータ同士の通信、ソーシャル・ネットワーキング・サービス (SNS) における複雑な人間関係、都市と都市を結ぶ広大な道路網や鉄道網、世界中を駆け巡る物流のサプライチェーン、あるいは私たち自身の脳内にある無数のニューロンの繋がりなど、世界は無数のネットワークによって構成されていると言っても過言ではありません。
 
-一見すると非常に複雑で、無秩序にさえ見えるこれらのネットワークを、シンプルかつ数学的に厳密に表現し、分析するための強力な枠組みを提供するのが **[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)** ([Graph Theory](https://kenji.blog/p/graph-theory-dijkstra-a-star/)) です。[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)理論を用いることで、複雑なシステムの中に隠された構造や性質を解き明かし、最適な通信経路を見つけ出したり、ネットワーク全体の[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)を評価したりすることが可能になります。
+一見すると非常に複雑で、無秩序にさえ見えるこれらのネットワークを、シンプルかつ数学的に厳密に表現し、分析するための強力な枠組みを提供するのが **[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)** (Graph Theory) です。グラフ理論を用いることで、複雑なシステムの中に隠された構造や性質を解き明かし、最適な通信経路を見つけ出したり、ネットワーク全体の[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)を評価したりすることが可能になります。
 
 本記事では、[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)理論の歴史的な起源から始まり、基本的な数学的定義、コンピュータプログラムとして扱うためのデータ構造、そして現代のテクノロジー基盤を支える代表的なアルゴリズムまで、幅広くかつ詳細に解説していきます。
 
 ## 2. グラフ理論の誕生：[ケーニヒスベルクの七つの橋](https://kenji.blog/p/seven-bridges-of-konigsberg/)
 
-[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)の歴史は、18世紀にまで遡ります。1736年、スイス出身の天才数学者であるレオンハルト・[オイラー](https://kenji.blog/p/euler/) ([Leonhard Euler](https://kenji.blog/p/euler/)) が、ある有名な数学のパズルを鮮やかに解決したことが、この分野の始まりとされています。そのパズルとは、「[ケーニヒスベルクの七つの橋](https://kenji.blog/p/seven-bridges-of-konigsberg/)」と呼ばれるものです。
+[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)の歴史は、18世紀にまで遡ります。1736年、スイス出身の天才数学者であるレオンハルト・オイラー (Leonhard Euler) が、ある有名な数学のパズルを鮮やかに解決したことが、この分野の始まりとされています。そのパズルとは、「[ケーニヒスベルクの七つの橋](https://kenji.blog/p/seven-bridges-of-konigsberg/)」と呼ばれるものです。
 
 当時のプロイセン王国にあったケーニヒスベルク（現在のロシア・カリーニングラード）という美しい都市には、プレーゲル川が流れており、川の中にある2つの島と両岸を結ぶように、全部で7つの橋が架けられていました。市民たちの間では、「すべての橋をちょうど1回ずつ渡って、元の出発点に戻ってくることができるだろうか？」という遊びが流行していました。多くの人が挑戦しましたが、誰も成功しませんでした。
 
@@ -143,7 +143,7 @@ $$
 ネットワーク内のすべての頂点を、規則正しく漏れなく訪問するための最も基本的なアルゴリズムが、 **幅優先探索 (Breadth-First Search, BFS)** と **深さ優先探索 (Depth-First Search, DFS)** です。
 
 *   **幅優先探索 (BFS)** : 始点から近い頂点を優先して同心円状に探索します。水面に石を投げたときに波紋が広がるようなイメージです。重みのないグラフにおいて、始点からの最短経路（経由する辺の数が最小の経路）を見つけるのに最適です。データ構造のキュー (Queue) を用いて実装されます。
-*   **深さ優先探索 (DFS)** : 可能な限り深く探索を進め、行き止まりになったら直前の分岐点に戻って別の経路を探索します。迷路を壁伝いに解くようなイメージです。グラフ内の閉路（サイクル）の検出や、トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)などに利用されます。[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/) ([Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)) または関数の再帰呼び出しを用いて実装されます。
+*   **深さ優先探索 (DFS)** : 可能な限り深く探索を進め、行き止まりになったら直前の分岐点に戻って別の経路を探索します。迷路を壁伝いに解くようなイメージです。グラフ内の閉路（サイクル）の検出や、トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)などに利用されます。スタック ([Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)) または関数の再帰呼び出しを用いて実装されます。
 
 以下は、Pythonを用いた幅優先探索 ([BFS](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) のシンプルな実装例です。
 
@@ -242,7 +242,7 @@ print(dijkstra(weighted_graph, 'A'))
 
 ある広大なネットワーク内のすべての拠点を、最も安い総コストで物理的に繋ぎ合わせたいという要求を考えてみましょう。例えば、新しい住宅地に電力を供給するための電線網を構築したり、複数の都市間に光ファイバーケーブルを敷設したりする際、インフラ構築コストを最小化したいという状況です。
 
-このように、[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)のすべての頂点を包含する部分グラフの中で、閉路を一切持たず（つまり[木構造](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)であり）、かつ使用する辺の重みの合計が最小になるような部分グラフを **最小全域木 (Minimum Spanning [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), MST)** と呼びます。
+このように、[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)のすべての頂点を包含する部分グラフの中で、閉路を一切持たず（つまり木構造であり）、かつ使用する辺の重みの合計が最小になるような部分グラフを **最小全域木 (Minimum Spanning [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), MST)** と呼びます。
 
 この最小全域木を求める代表的なアルゴリズムの一つが **クラスカル法** です。クラスカル法は、局所的な最適解を積み重ねていく「貪欲法 (Greedy Algorithm)」の典型例であり、非常にシンプルで直感的な手順を踏みます。
 
@@ -260,7 +260,7 @@ print(dijkstra(weighted_graph, 'A'))
 
 ## 6. 二部グラフとマッチング問題
 
-[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)の中でも特異な位置を占めるのが **二部[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Bipartite [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** です。二部グラフとは、すべての頂点を2つのグループ（例えば、グループ $U$ とグループ $V$ ）に分割したとき、すべての辺が必ず $U$ の頂点と $V$ の頂点を結んでおり、同じグループ内の頂点同士を結ぶ辺が一切存在しないようなグラフのことです。
+[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)の中でも特異な位置を占めるのが **二部グラフ (Bipartite [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** です。二部グラフとは、すべての頂点を2つのグループ（例えば、グループ $U$ とグループ $V$ ）に分割したとき、すべての辺が必ず $U$ の頂点と $V$ の頂点を結んでおり、同じグループ内の頂点同士を結ぶ辺が一切存在しないようなグラフのことです。
 
 二部グラフは、「求職者」と「求人企業」、「学生」と「研究室」、「タクシー」と「乗客」のような、2つの異なる性質を持つ集合間の関係性をモデル化するのに最適です。
 

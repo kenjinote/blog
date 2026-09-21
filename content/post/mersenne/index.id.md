@@ -49,7 +49,7 @@ graph TD
     Mersenne <-->|"Akustik"| Huygens
 ```
 
-Di pusat jaringan ini, ketika seseorang menemukan teorema baru, [Mersenne](https://kenji.blog/id/p/mersenne/) akan menyampaikannya kepada sarjana lain, mendorong kritik dan verifikasi. Misalnya, Mersennyalah yang mengkomunikasikan penemuan matematika [Pierre de Fermat](https://kenji.blog/id/p/fermat/) kepada [Descartes](https://kenji.blog/id/p/descartes/), yang memicu perdebatan sengit di antara keduanya. Ia juga dikenal karena menerjemahkan karya-karya Galileo Galilei (seperti *Dialog Mengenai Dua Sistem Dunia Utama*) ke dalam bahasa Prancis, memperkenalkannya secara luas meskipun ada penyensoran ketat dari Gereja Katolik. Beberapa sejarawan menilai bahwa tanpa dirinya, Revolusi Ilmiah abad ke-17 mungkin akan tertunda puluhan tahun.
+Di pusat jaringan ini, ketika seseorang menemukan teorema baru, [Mersenne](https://kenji.blog/id/p/mersenne/) akan menyampaikannya kepada sarjana lain, mendorong kritik dan verifikasi. Misalnya, Mersennyalah yang mengkomunikasikan penemuan matematika Pierre de Fermat kepada [Descartes](https://kenji.blog/id/p/descartes/), yang memicu perdebatan sengit di antara keduanya. Ia juga dikenal karena menerjemahkan karya-karya Galileo Galilei (seperti *Dialog Mengenai Dua Sistem Dunia Utama*) ke dalam bahasa Prancis, memperkenalkannya secara luas meskipun ada penyensoran ketat dari Gereja Katolik. Beberapa sejarawan menilai bahwa tanpa dirinya, Revolusi Ilmiah abad ke-17 mungkin akan tertunda puluhan tahun.
 
 ## Pencapaian Matematika: Bilangan Prima [Mersenne](https://kenji.blog/id/p/mersenne/)
 
@@ -93,7 +93,7 @@ Verifikasi oleh matematikawan kemudian mengungkapkan bahwa ada beberapa kesalaha
 
 ### Aplikasi pada Kriptografi Modern dan GIMPS
 
-Saat ini, bilangan prima [Mersenne](https://kenji.blog/id/p/mersenne/) terus dieksplorasi oleh "GIMPS" (Great Internet [Mersenne](https://kenji.blog/id/p/mersenne/) Prime Search), sebuah proyek yang didedikasikan untuk menemukan bilangan prima terbesar di dunia. Karena ada tes keprimaan khusus dan cepat yang disebut uji Lucas-Lehmer, bilangan [Mersenne](https://kenji.blog/id/p/mersenne/) sangat cocok untuk penemuan bilangan prima raksasa.
+Saat ini, bilangan prima [Mersenne](https://kenji.blog/id/p/mersenne/) terus dieksplorasi oleh "GIMPS" (Great Internet Mersenne Prime Search), sebuah proyek yang didedikasikan untuk menemukan bilangan prima terbesar di dunia. Karena ada tes keprimaan khusus dan cepat yang disebut uji Lucas-Lehmer, bilangan [Mersenne](https://kenji.blog/id/p/mersenne/) sangat cocok untuk penemuan bilangan prima raksasa.
 
 ```python
 # Uji Lucas-Lehmer untuk bilangan prima Mersenne
@@ -131,7 +131,7 @@ Hukum ini adalah prinsip fisik penting yang membentuk dasar untuk merancang dan 
 
 [Mersenne](https://kenji.blog/id/p/mersenne/) juga meninggalkan jejak filosofis yang signifikan. Ia menentang skeptisisme ekstrem dan ide-ide magis atau mistis (seperti Hermetisisme Renaisans), memperjuangkan sains rasional dan empiris.
 
-Ketika teman dekatnya [Descartes](https://kenji.blog/id/p/descartes/) menerbitkan *Meditasi tentang Filsafat Pertama*, [Mersenne](https://kenji.blog/id/p/mersenne/) mengirim manuskrip itu kepada para pemikir terkemuka di seluruh Eropa (seperti Thomas Hobbes dan Pierre Gassendi) untuk mengumpulkan keberatan mereka. Ia kemudian menyusunnya menjadi sebuah buku beserta balasan dari [Descartes](https://kenji.blog/id/p/descartes/) sendiri, memainkan peran yang bisa dibilang sebagai cikal bakal sistem penilaian sejawat (peer-review) modern.
+Ketika teman dekatnya [Descartes](https://kenji.blog/id/p/descartes/) menerbitkan *Meditasi tentang Filsafat Pertama*, Mersenne mengirim manuskrip itu kepada para pemikir terkemuka di seluruh Eropa (seperti Thomas Hobbes dan Pierre Gassendi) untuk mengumpulkan keberatan mereka. Ia kemudian menyusunnya menjadi sebuah buku beserta balasan dari [Descartes](https://kenji.blog/id/p/descartes/) sendiri, memainkan peran yang bisa dibilang sebagai cikal bakal sistem penilaian sejawat (peer-review) modern.
 
 [Mersenne](https://kenji.blog/id/p/mersenne/) sangat percaya bahwa kemajuan ilmiah membuktikan kebesaran dunia yang diciptakan oleh Tuhan, mengingat tidak ada kontradiksi antara agama dan sains.
 

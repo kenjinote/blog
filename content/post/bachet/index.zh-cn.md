@@ -31,7 +31,7 @@ flowchart TD
 
 巴谢最著名的成就之一是将古希腊数学家[丢番图](https://kenji.blog/zh-cn/p/diophantus/) ([Diophantus](https://kenji.blog/zh-cn/p/diophantus/)) 的《算术 (Arithmetica)》翻译成拉丁文，并加上了注释，于 1621 年出版。
 
-这本译著成为了当时欧洲数学家学习古代代数和数论的标准教科书。其中最著名的轶事之一是，[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/) ([Pierre de Fermat](https://kenji.blog/zh-cn/p/fermat/)) 就是在他所拥有的这本巴谢版《算术》的空白边缘处写下了著名的“[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)”。
+这本译著成为了当时欧洲数学家学习古代代数和数论的标准教科书。其中最著名的轶事之一是，[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/) (Pierre de Fermat) 就是在他所拥有的这本巴谢版《算术》的空白边缘处写下了著名的“[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)”。
 
 巴谢并没有止步于纯粹的翻译；他在[丢番图](https://kenji.blog/zh-cn/p/diophantus/)的问题中加入了自己精彩的注释和推广。如果没有他的数学洞察力，17 世纪数论的发展可能会缓慢得多。
 
@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-通过扩展[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)（扩展[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)）可以具体计算出 $x$ 和 $y$，这已成为现代密码学（如 [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)）中不可或缺的基础定理。在重视历史准确性的语境中，这有时被称为 **巴谢定理** 。
+通过扩展[欧几里得算法](https://kenji.blog/zh-cn/p/euclidean-algorithm/)（扩展欧几里得算法）可以具体计算出 $x$ 和 $y$，这已成为现代密码学（如 [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)）中不可或缺的基础定理。在重视历史准确性的语境中，这有时被称为 **巴谢定理** 。
 
 ## 结论
 

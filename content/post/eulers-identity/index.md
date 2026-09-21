@@ -37,7 +37,7 @@ graph TD
 
 ## [オイラー](https://kenji.blog/p/euler/)の公式からの導出
 
-[オイラー](https://kenji.blog/p/euler/)の等式は、より一般的な **[オイラー](https://kenji.blog/p/euler/)の公式** の特別な場合として導かれます。[オイラー](https://kenji.blog/p/euler/)の公式は以下の通りです：
+[オイラー](https://kenji.blog/p/euler/)の等式は、より一般的な **オイラーの公式** の特別な場合として導かれます。[オイラー](https://kenji.blog/p/euler/)の公式は以下の通りです：
 
 $$
 e^{ix} = \cos x + i\sin x

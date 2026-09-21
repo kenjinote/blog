@@ -183,4 +183,4 @@ $$
 2. 有理数までは自然数と同じ大きさ（可算無限）である。
 3. 対角線をずらして新しい数を作る論法により、実数が自然数より多い（非可算無限）ことが証明される。
 
-この直感に反する、しかし絶対的な論理の美しさこそが、数学という学問の最大の魅力と言えるでしょう。対角線論法は、のちに[アラン・チューリング](https://kenji.blog/p/turing/)（[Alan Turing](https://kenji.blog/p/turing/)）の[停止性問題](https://kenji.blog/p/turing-machine-computability/)や[ゲーデルの不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)の証明など、計算機科学や数理論理学の根幹をなす理論にも応用されることになります。
+この直感に反する、しかし絶対的な論理の美しさこそが、数学という学問の最大の魅力と言えるでしょう。対角線論法は、のちに[アラン・チューリング](https://kenji.blog/p/turing/)（Alan Turing）の停止性問題や[ゲーデルの不完全性定理](https://kenji.blog/p/godels-incompleteness-theorems/)の証明など、計算機科学や数理論理学の根幹をなす理論にも応用されることになります。

@@ -67,7 +67,7 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 **乘法反元素（Modular Multiplicative Inverse）** 的計算在密碼學實作中非常重要。要找到滿足 $b \times b^{-1} \equiv 1 \pmod p$ 的 $b^{-1}$，主要使用以下兩種演算法：
 
-1. **擴展[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法（Extended [[Euclid](https://kenji.blog/zh-tw/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm）**: 速度快，但根據實作方式，處理時間可能會依賴於輸入值，從而存在計時攻擊的風險。
+1. **擴展[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法（Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm）**: 速度快，但根據實作方式，處理時間可能會依賴於輸入值，從而存在計時攻擊的風險。
 2. **[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/zh-tw/p/fermats-little-theorem/)）**: 當 $p$ 為質數且 $b \neq 0$ 時，$b^{p-1} \equiv 1 \pmod p$ 成立。兩邊同除以 $b$，可得 $b^{p-2} \equiv b^{-1} \pmod p$。也就是說，透過計算 $b$ 的 $p-2$ 次方即可求得反元素。因為指數運算較容易以常數時間（Constant-time）實作，密碼學實作中通常偏好此方法。
 
 ---

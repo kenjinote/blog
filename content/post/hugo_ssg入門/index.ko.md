@@ -301,7 +301,7 @@ jobs:
 WordPress에서 Hugo로의 마이그레이션을 완료한 사이트 운영자는 대부분 다음과 같은 3가지 현저한 이점을 체감합니다.
 
 ### 6.1 사이트 속도와 Core [Web Vitals](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)의 극적인 향상
-데이터베이스 쿼리나 서버 사이드 렌더링이 배제된 결과, 페이지 로드 시간은 밀리초 단위까지 단축됩니다. 이는 Google의 랭킹 요소인 '[Core Web Vitals](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)'([LCP](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) 점수의 대폭적인 향상으로 직결됩니다. 사용자의 이탈률 감소와 SEO 평가의 향상을 기대할 수 있습니다.
+데이터베이스 쿼리나 서버 사이드 렌더링이 배제된 결과, 페이지 로드 시간은 밀리초 단위까지 단축됩니다. 이는 Google의 랭킹 요소인 '[Core Web Vitals](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)'(LCP, FID/INP, [CLS](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) 점수의 대폭적인 향상으로 직결됩니다. 사용자의 이탈률 감소와 SEO 평가의 향상을 기대할 수 있습니다.
 
 ### 6.2 보안 위협으로부터의 해방
 WordPress는 전 세계에서 널리 사용되기 때문에 항상 공격 대상이 됩니다. 플러그인의 취약점을 악용한 변조나 무차별 대입 공격(Brute-force attack)에 의한 로그인 돌파 등의 위험이 따라다닙니다.

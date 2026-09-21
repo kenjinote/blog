@@ -63,7 +63,7 @@ graph TD
 
 ## 3. [モーデル](https://kenji.blog/p/mordell/)の定理とランク（階数）
 
-1922年、ルイス・[モーデル](https://kenji.blog/p/mordell/)（[Louis Mordell](https://kenji.blog/p/mordell/)）は有理点群 $E(\mathbb{Q})$ の構造に関する決定的な定理を証明しました。のちにアンドレ・[ヴェイユ](https://kenji.blog/p/weil/)（[André Weil](https://kenji.blog/p/weil/)）がより一般の代数体と[アーベル](https://kenji.blog/p/abel/)多様体へと拡張し、[モーデル](https://kenji.blog/p/mordell/)・[ヴェイユ](https://kenji.blog/p/weil/)の定理として知られています。
+1922年、ルイス・[モーデル](https://kenji.blog/p/mordell/)（Louis Mordell）は有理点群 $E(\mathbb{Q})$ の構造に関する決定的な定理を証明しました。のちにアンドレ・ヴェイユ（André Weil）がより一般の代数体とアーベル多様体へと拡張し、モーデル・[ヴェイユ](https://kenji.blog/p/weil/)の定理として知られています。
 
 ### 3.1. [モーデル](https://kenji.blog/p/mordell/)の定理 (Mordell's Theorem)
 

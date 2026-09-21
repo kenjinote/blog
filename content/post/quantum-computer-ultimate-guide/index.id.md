@@ -188,7 +188,7 @@ Kerangka teori informasi klasik sangatlah kuat dan membentuk fondasi masyarakat 
 
 ## 2.2 Postulat Mekanika Kuantum dan Notasi Bra-ket (Bra-ket notation)
 
-Postulat (Postulate) pertama dalam mekanika kuantum menyatakan bahwa "keadaan dari suatu sistem fisik tertutup dideskripsikan secara lengkap sebagai vektor satuan (vektor keadaan) pada ruang vektor lengkap yang dilengkapi perkalian dalam kompleks, yaitu ruang [Hilbert](https://kenji.blog/id/p/hilbert/) ([Hilbert](https://kenji.blog/id/p/hilbert/) Space) $\mathcal{H}$." Dalam konteks komputasi kuantum, karena derajat kebebasan ruang kontinu dapat diabaikan, ruang [Hilbert](https://kenji.blog/id/p/hilbert/) ini umumnya berupa ruang vektor kompleks berdimensi berhingga $\mathbb{C}^d$.
+Postulat (Postulate) pertama dalam mekanika kuantum menyatakan bahwa "keadaan dari suatu sistem fisik tertutup dideskripsikan secara lengkap sebagai vektor satuan (vektor keadaan) pada ruang vektor lengkap yang dilengkapi perkalian dalam kompleks, yaitu ruang [Hilbert](https://kenji.blog/id/p/hilbert/) (Hilbert Space) $\mathcal{H}$." Dalam konteks komputasi kuantum, karena derajat kebebasan ruang kontinu dapat diabaikan, ruang [Hilbert](https://kenji.blog/id/p/hilbert/) ini umumnya berupa ruang vektor kompleks berdimensi berhingga $\mathbb{C}^d$.
 
 Unit terkecil dari informasi kuantum, yaitu "qubit (Qubit)", didefinisikan secara ketat sebagai keadaan dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) kompleks 2 dimensi $\mathcal{H} \cong \mathbb{C}^2$. Untuk mendeskripsikan keadaan dalam ruang vektor ini, merupakan standar untuk menggunakan **notasi bra-ket (Bra-ket notation)** yang diperkenalkan oleh fisikawan Paul Dirac.
 
@@ -313,7 +313,7 @@ graph TD
     style State fill:#bbf,stroke:#333,stroke-width:4px,stroke-dasharray: 5 5
 ```
 
-Sifat yang paling penting dari bola Bloch adalah bahwa "keadaan ortogonal (keadaan dengan perkalian dalam sama dengan 0) dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) terletak pada titik antipodal (Antipodal points: titik yang berlawanan 180 derajat) satu sama lain pada ruang riil 3 dimensi bola Bloch." Sebagai contoh, keadaan yang ortogonal terhadap $|0\rangle$ (kutub utara, $\theta=0$) adalah $|1\rangle$ (kutub selatan, $\theta=\pi$). Perhitungan perkalian dalam antara keadaan yang saling ortogonal dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) $\langle 0 | 1 \rangle = 0$ bersesuaian dengan pemisahan sudut sebesar $\pi$ (180 derajat) pada bola Bloch. Di sinilah letak keniscayaan matematis digunakannya sudut setengah $\theta/2$ dalam parameterisasi, karena sudut geometris bernilai dua kali lipat dari sudut dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/).
+Sifat yang paling penting dari bola Bloch adalah bahwa "keadaan ortogonal (keadaan dengan perkalian dalam sama dengan 0) dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/) terletak pada titik antipodal (Antipodal points: titik yang berlawanan 180 derajat) satu sama lain pada ruang riil 3 dimensi bola Bloch." Sebagai contoh, keadaan yang ortogonal terhadap $|0\rangle$ (kutub utara, $\theta=0$) adalah $|1\rangle$ (kutub selatan, $\theta=\pi$). Perhitungan perkalian dalam antara keadaan yang saling ortogonal dalam ruang Hilbert $\langle 0 | 1 \rangle = 0$ bersesuaian dengan pemisahan sudut sebesar $\pi$ (180 derajat) pada bola Bloch. Di sinilah letak keniscayaan matematis digunakannya sudut setengah $\theta/2$ dalam parameterisasi, karena sudut geometris bernilai dua kali lipat dari sudut dalam ruang [Hilbert](https://kenji.blog/id/p/hilbert/).
 
 Koordinat $\mathbf{r} = (x, y, z)$ pada bola Bloch ini diturunkan secara ketat sebagai nilai ekspektasi dari **matriks Pauli (Pauli matrices)** , yang merupakan besaran teramati (Observable) dalam mekanika kuantum. Matriks Pauli yang menjadi basis operator Hermite untuk sistem 2 dimensi didefinisikan sebagai berikut:
 
@@ -1825,7 +1825,7 @@ Dalam masyarakat digital modern, fondasi yang menjamin komunikasi yang aman di i
 
 Pertama, mari kita formulasikan mekanisme kriptografi RSA secara matematis. Pembuatan kunci kriptografi RSA dimulai dengan memilih dua bilangan prima raksasa $p$ dan $q$ secara acak (saat ini, masing-masing direkomendasikan berukuran 2048 bit atau lebih). Bilangan komposit yang merupakan perkalian dari keduanya, $N = pq$, dihitung, dan nilai ini dipublikasikan secara umum sebagai bagian dari kunci publik. Selanjutnya, fungsi totient Euler $\phi(N)$ dihitung. Berdasarkan sifat bilangan prima, nilai ini adalah $\phi(N) = (p-1)(q-1)$.
 
-Eksponen enkripsi $e$, yang menjadi kunci enkripsi, dipilih sedemikian rupa sehingga memenuhi $1 < e < \phi(N)$ dan $\text{gcd}(e, \phi(N)) = 1$ (yaitu koprima dengan $\phi(N)$). Kemudian, eksponen dekripsi $d$, yang menjadi kunci privat, dihitung agar memenuhi persamaan kongruensi $ed \equiv 1 \pmod{\phi(N)}$. Nilai ini dapat dengan mudah dicari dalam waktu polinomial menggunakan algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an yang diperluas.
+Eksponen enkripsi $e$, yang menjadi kunci enkripsi, dipilih sedemikian rupa sehingga memenuhi $1 < e < \phi(N)$ dan $\text{gcd}(e, \phi(N)) = 1$ (yaitu koprima dengan $\phi(N)$). Kemudian, eksponen dekripsi $d$, yang menjadi kunci privat, dihitung agar memenuhi persamaan kongruensi $ed \equiv 1 \pmod{\phi(N)}$. Nilai ini dapat dengan mudah dicari dalam waktu polinomial menggunakan algoritma [Euclide](https://kenji.blog/p/euclid/)an yang diperluas.
 
 Jika teks asal (plaintext) dinyatakan sebagai bilangan bulat $M$ (dengan $0 \le M < N$), enkripsi dilakukan melalui perpangkatan modulo $N$ sebagai berikut:
 
@@ -1853,7 +1853,7 @@ Namun, algoritma kuantum yang diterbitkan oleh Peter Shor pada tahun 1994 membal
 
 Wawasan jenius dari Algoritma Shor terletak pada kenyataan bahwa "alih-alih menyelesaikan masalah faktorisasi prima secara langsung, ia mereduksinya menjadi masalah pencarian periode". Berdasarkan teorema teori bilangan murni, telah dibuktikan bahwa faktorisasi prima ekuivalen dengan masalah yang disebut "Masalah Pencarian Ordo" (Order-Finding Problem). Proses reduksi ini sendiri merupakan algoritma klasik sepenuhnya dan tidak memerlukan komputasi kuantum.
 
-Mari kita telusuri langkah-langkah untuk memfaktorkan bilangan komposit $N$ yang diberikan. Pertama, kita memilih bilangan bulat acak $a$ yang memenuhi $1 < a < N$. Menggunakan algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an, kita menghitung faktor persekutuan terbesar $\text{gcd}(a, N)$. Jika nilai ini lebih besar dari $1$, kita beruntung karena kita telah menemukan faktor non-trivial dari $N$, dan komputasi selesai (namun, probabilitas hal ini terjadi secara kebetulan untuk bilangan sangat besar seperti yang digunakan dalam kriptografi sangatlah kecil secara astronomis).
+Mari kita telusuri langkah-langkah untuk memfaktorkan bilangan komposit $N$ yang diberikan. Pertama, kita memilih bilangan bulat acak $a$ yang memenuhi $1 < a < N$. Menggunakan algoritma [Euclide](https://kenji.blog/p/euclid/)an, kita menghitung faktor persekutuan terbesar $\text{gcd}(a, N)$. Jika nilai ini lebih besar dari $1$, kita beruntung karena kita telah menemukan faktor non-trivial dari $N$, dan komputasi selesai (namun, probabilitas hal ini terjadi secara kebetulan untuk bilangan sangat besar seperti yang digunakan dalam kriptografi sangatlah kecil secara astronomis).
 
 Jika $\text{gcd}(a, N) = 1$, maka $a$ dan $N$ saling koprima. Di sini, kita mendefinisikan fungsi eksponensial modulo sebagai berikut:
 
@@ -2191,7 +2191,7 @@ $$
 G = U_s U_w = (2|s\rangle\langle s| - I) (I - 2|w\rangle\langle w|)
 $$
 
-Di sini, teorema yang sangat indah yang ditenun oleh geometri [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an dan aljabar linear mengambil peran utama. Teorema ini menyatakan bahwa "komposisi dari dua refleksi (Reflection) dengan sumbu simetris berupa dua garis yang saling berpotongan akan menjadi rotasi murni (Rotation) dengan sudut dua kali lipat dari sudut antara kedua garis tersebut."
+Di sini, teorema yang sangat indah yang ditenun oleh geometri [Euclide](https://kenji.blog/p/euclid/)an dan aljabar linear mengambil peran utama. Teorema ini menyatakan bahwa "komposisi dari dua refleksi (Reflection) dengan sumbu simetris berupa dua garis yang saling berpotongan akan menjadi rotasi murni (Rotation) dengan sudut dua kali lipat dari sudut antara kedua garis tersebut."
 
 Dari analisis sejauh ini, dijamin bahwa vektor keadaan, tidak peduli operasi apa pun yang dikenakan, akan selalu tetap berada di dalam ruang vektor riil 2 dimensi (bidang) yang direntangkan oleh $|s^\perp\rangle$ dan $|w\rangle$. Mari kita pastikan kembali aksi dari setiap operator di dalam bidang ini.
 

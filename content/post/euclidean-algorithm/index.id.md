@@ -10,7 +10,7 @@ tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 
 # Apa itu [Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/)?
 
-**[Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/)** ([Euclide](https://kenji.blog/id/p/euclid/)an algorithm) adalah metode yang efisien untuk menghitung Faktor Persekutuan Terbesar (FPB) dari dua bilangan asli (atau bilangan bulat). Dijelaskan sekitar tahun 300 SM oleh matematikawan Yunani kuno [Euclid](https://kenji.blog/id/p/euclid/) dalam Buku VII dari risalah matematikanya "Elements", ini secara luas dikenal sebagai salah satu "algoritma tertua umat manusia."
+**[Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/)** (Euclidean algorithm) adalah metode yang efisien untuk menghitung Faktor Persekutuan Terbesar (FPB) dari dua bilangan asli (atau bilangan bulat). Dijelaskan sekitar tahun 300 SM oleh matematikawan Yunani kuno [Euclid](https://kenji.blog/id/p/euclid/) dalam Buku VII dari risalah matematikanya "Elements", ini secara luas dikenal sebagai salah satu "algoritma tertua umat manusia."
 
 Cara paling naif untuk menemukan FPB adalah dengan menemukan faktorisasi prima dari kedua bilangan dan mengalikan faktor prima persekutuannya. Namun, seiring bertambahnya bilangan, kompleksitas komputasi dari faktorisasi prima itu sendiri menjadi sangat besar, sehingga sulit untuk dipecahkan dalam kerangka waktu yang realistis. Di sisi lain, dengan menggunakan **[Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/)** , dimungkinkan untuk menghitung FPB dengan sangat cepat, bahkan untuk bilangan masif yang mencakup ribuan digit.
 
@@ -109,7 +109,7 @@ int main() {
 
 ## Kompleksitas Waktu dan Teorema [Lamé](https://kenji.blog/id/p/lame/)
 
-Seberapa cepat algoritma [Euclide](https://kenji.blog/id/p/euclid/)an? Mengenai kompleksitas komputasinya, **teorema [Lamé](https://kenji.blog/id/p/lame/)** ([Lamé](https://kenji.blog/id/p/lame/)'s theorem), yang dibuktikan oleh matematikawan Prancis [Gabriel Lamé](https://kenji.blog/id/p/lame/) pada tahun 1844, sangat terkenal.
+Seberapa cepat algoritma [Euclide](https://kenji.blog/id/p/euclid/)an? Mengenai kompleksitas komputasinya, **teorema Lamé** (Lamé's theorem), yang dibuktikan oleh matematikawan Prancis [Gabriel Lamé](https://kenji.blog/id/p/lame/) pada tahun 1844, sangat terkenal.
 
 > **Teorema [Lamé](https://kenji.blog/id/p/lame/)**
 > Jumlah langkah pembagian yang diperlukan untuk menerapkan algoritma [Euclide](https://kenji.blog/id/p/euclid/)an ke dua bilangan asli $a, b$ ($a > b$) paling banyak $5$ kali jumlah digit representasi desimal dari $b$ .

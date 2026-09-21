@@ -8,7 +8,7 @@ categories: ["mathematics", "biography"]
 tags: ["Yutaka Taniyama", "Mathématiques", "Dernier Théorème de Fermat", "Conjecture de Taniyama-Shimura", "Courbes Elliptiques", "Formes Modulaires"]
 ---
 
-# [[Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/) : La vie et les réalisations du génie mathématique qui a défié les problèmes non résolus](https://kenji.blog/p/taniyama-yutaka/)
+# [Yutaka Taniyama : La vie et les réalisations du génie mathématique qui a défié les problèmes non résolus](https://kenji.blog/p/taniyama-yutaka/)
 
 La démonstration du **Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/)** est l'un des développements les plus spectaculaires et importants des mathématiques modernes. Derrière cette réalisation monumentale se cache une étonnante conjecture proposée par deux mathématiciens japonais. L'un d'eux était **[Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/)** (1927 - 1958), décédé prématurément. Dans cet article, nous plongeons profondément dans la vision grandiose qui sous-tend la "Conjecture de Taniyama-Shimura" qu'il a proposée, et dans sa propre vie tumultueuse.
 
@@ -101,7 +101,7 @@ flowchart TD
 
 ## 7. Preuve de la conjecture et Programme de Langlands
 
-La personne la plus inspirée par ce fait a été le mathématicien britannique **[Andrew Wiles](https://kenji.blog/fr/p/wiles/)**. Il était fasciné par le Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/) depuis son enfance et a résolu de consacrer sa vie à le prouver. Après sept ans de recherche secrète, il a annoncé en 1993 qu'il avait "prouvé la Conjecture de Taniyama-Shimura pour les courbes elliptiques semi-stables". Bien qu'une faille ait été trouvée dans une partie de la démonstration, avec l'aide de son ancien élève Richard Taylor, il a réussi à combler cette faille en 1995 et a publié la preuve complète. Par conséquent, la partie cruciale de la conjecture laissée par Taniyama a été prouvée et, simultanément, le Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/) est devenu une vérité éternelle.
+La personne la plus inspirée par ce fait a été le mathématicien britannique **[Andrew Wiles](https://kenji.blog/fr/p/wiles/)**. Il était fasciné par le Dernier Théorème de Fermat depuis son enfance et a résolu de consacrer sa vie à le prouver. Après sept ans de recherche secrète, il a annoncé en 1993 qu'il avait "prouvé la Conjecture de Taniyama-Shimura pour les courbes elliptiques semi-stables". Bien qu'une faille ait été trouvée dans une partie de la démonstration, avec l'aide de son ancien élève Richard Taylor, il a réussi à combler cette faille en 1995 et a publié la preuve complète. Par conséquent, la partie cruciale de la conjecture laissée par Taniyama a été prouvée et, simultanément, le Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/) est devenu une vérité éternelle.
 
 Par la suite, grâce aux efforts supplémentaires de Christophe Breuil, Brian Conrad, Fred Diamond et Richard Taylor, la Conjecture de Taniyama-Shimura a été complètement prouvée pour toutes les courbes elliptiques en 2001. Aujourd'hui, ce théorème est connu sous le nom de "Théorème de Modularité (Modularity Theorem)".
 

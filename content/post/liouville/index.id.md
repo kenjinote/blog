@@ -17,7 +17,7 @@ tags:
 
 ## Pengantar
 
-Dalam sejarah matematika, abad ke-19 adalah periode krusial ketika analisis dan aljabar berkembang menjadi bentuk modernnya. Di pusat pergerakan ini terdapat matematikawan Prancis **Joseph [Liouville](https://kenji.blog/id/p/liouville/)** (1809–1882). Ia meletakkan dasar-dasar teorema dalam analisis kompleks dan menjadi orang pertama dalam sejarah manusia yang secara konkret membuktikan keberadaan "bilangan transenden". Ia juga dikenal luas sebagai dermawan yang menguraikan dan menerbitkan manuskrip-manuskrip [Évariste Galois](https://kenji.blog/id/p/galois/) yang menantang. Dalam artikel ini, kita akan menggali lebih dalam kehidupan [Liouville](https://kenji.blog/id/p/liouville/) yang penuh gejolak dan berbagai **pencapaian matematis**-nya.
+Dalam sejarah matematika, abad ke-19 adalah periode krusial ketika analisis dan aljabar berkembang menjadi bentuk modernnya. Di pusat pergerakan ini terdapat matematikawan Prancis **Joseph [Liouville](https://kenji.blog/id/p/liouville/)** (1809–1882). Ia meletakkan dasar-dasar teorema dalam analisis kompleks dan menjadi orang pertama dalam sejarah manusia yang secara konkret membuktikan keberadaan "bilangan transenden". Ia juga dikenal luas sebagai dermawan yang menguraikan dan menerbitkan manuskrip-manuskrip Évariste Galois yang menantang. Dalam artikel ini, kita akan menggali lebih dalam kehidupan [Liouville](https://kenji.blog/id/p/liouville/) yang penuh gejolak dan berbagai **pencapaian matematis**-nya.
 
 ## Kehidupan Awal dan Pendidikan
 
@@ -27,9 +27,9 @@ Pada tahun 1825, ia masuk ke **École Polytechnique** yang bergengsi, di mana ia
 
 ## Menyelamatkan Manuskrip [Galois](https://kenji.blog/id/p/galois/)
 
-Saat membahas [Liouville](https://kenji.blog/id/p/liouville/), orang tidak dapat mengabaikan kisah tentang bagaimana ia menyelamatkan manuskrip jenius muda **[Évariste Galois](https://kenji.blog/id/p/galois/)**. [Galois](https://kenji.blog/id/p/galois/) kehilangan nyawanya dalam duel di usia muda 20 tahun, tetapi tepat sebelum kematiannya, ia mempercayakan penemuan matematisnya kepada temannya, Auguste Chevalier.
+Saat membahas [Liouville](https://kenji.blog/id/p/liouville/), orang tidak dapat mengabaikan kisah tentang bagaimana ia menyelamatkan manuskrip jenius muda **Évariste Galois**. [Galois](https://kenji.blog/id/p/galois/) kehilangan nyawanya dalam duel di usia muda 20 tahun, tetapi tepat sebelum kematiannya, ia mempercayakan penemuan matematisnya kepada temannya, Auguste Chevalier.
 
-[Liouville](https://kenji.blog/id/p/liouville/)-lah yang menjelaskan teori [Galois](https://kenji.blog/id/p/galois/), yang telah lama diabaikan dan disalahpahami. Pada tahun 1843, ia mempelajari secara menyeluruh makalah [Galois](https://kenji.blog/id/p/galois/) dan menyadari bahwa makalah-makalah itu berisi penemuan yang sangat penting mengenai kelarutan persamaan aljabar. Pada tahun 1846, [Liouville](https://kenji.blog/id/p/liouville/) menerbitkan makalah [Galois](https://kenji.blog/id/p/galois/) di jurnal akademik yang didirikannya, *Journal de Mathématiques Pures et Appliquées*, dengan demikian memperkenalkannya kepada dunia.
+[Liouville](https://kenji.blog/id/p/liouville/)-lah yang menjelaskan teori Galois, yang telah lama diabaikan dan disalahpahami. Pada tahun 1843, ia mempelajari secara menyeluruh makalah Galois dan menyadari bahwa makalah-makalah itu berisi penemuan yang sangat penting mengenai kelarutan persamaan aljabar. Pada tahun 1846, Liouville menerbitkan makalah [Galois](https://kenji.blog/id/p/galois/) di jurnal akademik yang didirikannya, *Journal de Mathématiques Pures et Appliquées*, dengan demikian memperkenalkannya kepada dunia.
 
 ```mermaid
 flowchart TD
@@ -79,7 +79,7 @@ Di sini, $\lambda$ adalah nilai eigen dan $w(x)$ adalah fungsi bobot. Teori mere
 
 ### 4. Kontribusi Lainnya
 
-[Liouville](https://kenji.blog/id/p/liouville/) memiliki teorema yang menyandang namanya di berbagai bidang. Ini termasuk **teorema [Liouville](https://kenji.blog/id/p/liouville/) dalam teori diferensial [Galois](https://kenji.blog/id/p/galois/)**, yang menentukan apakah antiturunan dari fungsi dasar dapat dinyatakan lagi sebagai fungsi dasar, dan teoremanya dalam sistem dinamis yang menunjukkan kekekalan volume ruang fase.
+[Liouville](https://kenji.blog/id/p/liouville/) memiliki teorema yang menyandang namanya di berbagai bidang. Ini termasuk **teorema Liouville dalam teori diferensial [Galois](https://kenji.blog/id/p/galois/)**, yang menentukan apakah antiturunan dari fungsi dasar dapat dinyatakan lagi sebagai fungsi dasar, dan teoremanya dalam sistem dinamis yang menunjukkan kekekalan volume ruang fase.
 
 ## Kontribusi sebagai Pendidik dan Editor
 

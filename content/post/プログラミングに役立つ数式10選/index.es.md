@@ -559,7 +559,7 @@ En el código anterior, la bifurcación basada en `x >= 0` es para prevenir el "
 
 ---
 
-## 10. Distancia [Euclid](https://kenji.blog/es/p/euclid/)iana y Teorema de Pitágoras ([[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. Distancia [Euclid](https://kenji.blog/es/p/euclid/)iana y Teorema de Pitágoras ([Euclide](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### Belleza matemática y resumen
 Es la base de la geometría desde la antigua Grecia y una fórmula que define la distancia en línea recta entre dos puntos en un espacio de $n$ dimensiones. En un espacio de 2 dimensiones, es el propio Teorema de Pitágoras ($a^2 + b^2 = c^2$).

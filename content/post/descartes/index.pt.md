@@ -66,7 +66,7 @@ $$
 
 ## 4. Impacto na Filosofia e na Ciência
 
-A geometria analítica de [Descartes](https://kenji.blog/pt/p/descartes/) tornou-se uma base indispensável para o desenvolvimento subsequente da matemática e da física. Pode-se dizer que a criação do cálculo por [Isaac Newton](https://kenji.blog/pt/p/newton/) e [Gottfried Leibniz](https://kenji.blog/pt/p/leibniz/) só foi possível por causa do cenário fornecido pelo sistema de coordenadas cartesianas.
+A geometria analítica de [Descartes](https://kenji.blog/pt/p/descartes/) tornou-se uma base indispensável para o desenvolvimento subsequente da matemática e da física. Pode-se dizer que a criação do cálculo por Isaac Newton e [Gottfried Leibniz](https://kenji.blog/pt/p/leibniz/) só foi possível por causa do cenário fornecido pelo sistema de coordenadas cartesianas.
 
 Além disso, sua "dúvida metódica" na filosofia, uma abordagem para encontrar verdades certas depois de duvidar de tudo, estabeleceu o espírito do racionalismo que serve de base para a investigação científica.
 

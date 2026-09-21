@@ -139,7 +139,7 @@ Module.onRuntimeInitialized = () => {
 
 ## 5. Approach with [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) and `wasm-pack`
 
-[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) provides first-class support for [WebAssembly](https://kenji.blog/en/p/webassembly-wasm-current-future/), and by using the `wasm-bindgen` and `wasm-pack` tools, advanced integration between JavaScript and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) is possible. While Emscripten takes the approach of "bringing a massive C/C++ runtime into the browser", [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)'s `wasm-pack` takes the approach of "generating only the minimal necessary bindings (JS glue code)".
+[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) provides first-class support for WebAssembly, and by using the `wasm-bindgen` and `wasm-pack` tools, advanced integration between JavaScript and Rust is possible. While Emscripten takes the approach of "bringing a massive C/C++ runtime into the browser", [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)'s `wasm-pack` takes the approach of "generating only the minimal necessary bindings (JS glue code)".
 
 ### [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) Implementation Code
 

@@ -271,7 +271,7 @@ Keamanan [Raft](https://kenji.blog/id/p/byzantine-generals-problem-consensus/) b
 
 Hal ini secara matematis dan algoritmik sepenuhnya menghilangkan inkonsistensi data di lingkungan terdistribusi. `etcd`, datastore backend dari [Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/), juga menggunakan [Raft](https://kenji.blog/id/p/byzantine-generals-problem-consensus/) untuk mencapai manajemen status (state management) klaster yang ketat.
 
-## 8. Layanan Mikro ([[Microservice](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)) dan Transaksi
+## 8. Layanan Mikro ([Microservices](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)) dan Transaksi
 
 Teorema CAP tidak hanya terbatas pada database tunggal, tetapi juga memiliki dampak yang mendalam pada **Arsitektur Microservices (Layanan Mikro)** modern.
 
@@ -305,6 +305,6 @@ Dalam artikel ini, kita telah menggali jauh ke dalam Teorema CAP, prinsip paling
 *   **Teorema PACELC** memperluas hal ini, menunjukkan bahwa bahkan selama operasi normal tanpa partisi, terdapat pertukaran (trade-off) antara latensi (L) dan konsistensi (C).
 *   Dengan menggunakan **Quorum**, Anda dapat secara fleksibel menyesuaikan keseimbangan ( $ W+R>N $ ) antara konsistensi dan ketersediaan sesuai dengan kebutuhan Anda.
 *   Dalam sistem AP, **Jam Vektor (Vector Clocks)** digunakan untuk resolusi konflik, sedangkan dalam sistem CP, algoritma konsensus seperti **[Raft](https://kenji.blog/id/p/byzantine-generals-problem-consensus/)** dimanfaatkan untuk pengurutan log yang ketat.
-*   Konsep-konsep ini merupakan pengetahuan dasar yang sangat penting tidak hanya untuk database, tetapi juga untuk desain transaksi terdistribusi (seperti Pola Saga) dalam **Arsitektur [[Microservice](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)** modern.
+*   Konsep-konsep ini merupakan pengetahuan dasar yang sangat penting tidak hanya untuk database, tetapi juga untuk desain transaksi terdistribusi (seperti Pola Saga) dalam **Arsitektur [Microservices](https://kenji.blog/id/p/microservices-architecture-bff-api-gateway/)** modern.
 
 Tidak ada "peluru perak" dalam desain sistem. Memahami Teorema CAP dan Teorema PACELC secara benar, menilai dengan tepat apakah kebutuhan bisnis mengharuskan Anda "melindungi konsistensi bagaimanapun caranya (seperti pada sistem pembayaran)" atau "sistem pantang mati meskipun menoleransi inkonsistensi sementara (seperti timeline media sosial)", dan membuat keputusan trade-off yang optimal—inilah keterampilan terbesar yang dituntut dari seorang arsitek yang hebat.

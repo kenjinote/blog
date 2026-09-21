@@ -313,7 +313,7 @@ expiryDate: "2026-12-31T23:59:59Z"
 
 ## 7. 網站效能與 Core [Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-在 SEO 領域，與標籤最佳化同等重要的，就是 **頁面的載入速度** 。Google 已將 [Core Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) 納入排名因素之中。
+在 SEO 領域，與標籤最佳化同等重要的，就是 **頁面的載入速度** 。Google 已將 [Core Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (LCP, FID/INP, [CLS](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) 納入排名因素之中。
 
 作為靜態網站的 Hugo 本身在 TTFB (Time to First Byte) 上就表現優異，但在大量使用圖片的部落格中，圖片最佳化是不可或缺的。透過將 Hugo 強大的圖片處理功能 (Image Processing) 結合 Frontmatter 一同使用，可以在建置時自動進行調整大小或轉換為次世代格式 (如 WebP 等)。
 

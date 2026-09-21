@@ -17,7 +17,7 @@ tags:
 
 ## 1. はじめに：局所と大域を結ぶ視点
 
-数学、特に数論の世界において「局所・大域原理」という言葉を耳にしたことがある読者は多いでしょう。この深遠なる概念を確立し、20世紀の代数的整数論を強力に牽引した中心人物こそ、ドイツの数学者 **ヘルムート・[ハッセ](https://kenji.blog/p/hasse/)** ([Helmut Hasse](https://kenji.blog/p/hasse/), 1898–1979) です。彼は、恩師である[クルト・ヘンゼル](https://kenji.blog/p/hensel/)が創始した $p$ 進数の理論を強力な道具として昇華させ、現代数学における極めて重要な枠組みを築き上げました。
+数学、特に数論の世界において「局所・大域原理」という言葉を耳にしたことがある読者は多いでしょう。この深遠なる概念を確立し、20世紀の代数的整数論を強力に牽引した中心人物こそ、ドイツの数学者 **ヘルムート・[ハッセ](https://kenji.blog/p/hasse/)** (Helmut Hasse, 1898–1979) です。彼は、恩師である[クルト・ヘンゼル](https://kenji.blog/p/hensel/)が創始した $p$ 進数の理論を強力な道具として昇華させ、現代数学における極めて重要な枠組みを築き上げました。
 
 本記事では、[ハッセ](https://kenji.blog/p/hasse/)の波乱に満ちた生涯のエピソードから、彼が残した輝かしい数学的業績の数々までを詳細に解説します。彼が提唱した **[ハッセ](https://kenji.blog/p/hasse/)の原理** (Hasse Principle) は、現代数学において不可欠な概念となっており、今日でも多くの数学者にインスピレーションを与え続けています。
 
@@ -29,9 +29,9 @@ tags:
 
 ## 3. ゲッティンゲンとマールブルク：[クルト・ヘンゼル](https://kenji.blog/p/hensel/)との出会い
 
-終戦後の1918年、[ハッセ](https://kenji.blog/p/hasse/)は晴れてゲッティンゲン大学に入学します。当時のゲッティンゲンは、[ダフィット・ヒルベルト](https://kenji.blog/p/hilbert/)やエドムント・ランダウ、そして[エミー・ネーター](https://kenji.blog/p/noether/)といった巨星たちが集う、世界最高峰の数学の中心地でした。[ハッセ](https://kenji.blog/p/hasse/)はそこで最先端の数学の息吹に触れ、自身の才能をさらに開花させていきます。
+終戦後の1918年、[ハッセ](https://kenji.blog/p/hasse/)は晴れてゲッティンゲン大学に入学します。当時のゲッティンゲンは、ダフィット・ヒルベルトやエドムント・ランダウ、そしてエミー・ネーターといった巨星たちが集う、世界最高峰の数学の中心地でした。[ハッセ](https://kenji.blog/p/hasse/)はそこで最先端の数学の息吹に触れ、自身の才能をさらに開花させていきます。
 
-その後、[ハッセ](https://kenji.blog/p/hasse/)はマールブルク大学へと移り、そこで彼の生涯の師となる **[クルト・ヘンゼル](https://kenji.blog/p/hensel/)** ([Kurt Hensel](https://kenji.blog/p/hensel/)) と運命的な出会いを果たします。[ヘンゼル](https://kenji.blog/p/hensel/)は全く新しい数の体系である $p$ 進数 ( $p$-adic numbers) の発見者でした。当時の多くの数学者が $p$ 進数を単なる奇妙な概念として捉えていたのに対し、[ハッセ](https://kenji.blog/p/hasse/)はこの新しい概念の持つ底知れぬ可能性に即座に気づき、それを自身の研究の強力な武器として磨き上げていくことになります。
+その後、[ハッセ](https://kenji.blog/p/hasse/)はマールブルク大学へと移り、そこで彼の生涯の師となる **クルト・ヘンゼル** (Kurt Hensel) と運命的な出会いを果たします。ヘンゼルは全く新しい数の体系である $p$ 進数 ( $p$-adic numbers) の発見者でした。当時の多くの数学者が $p$ 進数を単なる奇妙な概念として捉えていたのに対し、[ハッセ](https://kenji.blog/p/hasse/)はこの新しい概念の持つ底知れぬ可能性に即座に気づき、それを自身の研究の強力な武器として磨き上げていくことになります。
 
 ## 4. $p$ 進数とは何か：新しい数の体系
 
@@ -59,7 +59,7 @@ $$
 
 ## 7. [ハッセ](https://kenji.blog/p/hasse/)図：順序構造の視覚化と代数学
 
-[ハッセ](https://kenji.blog/p/hasse/)の名前は、抽象代数学や離散数学で頻繁に用いられる **[ハッセ](https://kenji.blog/p/hasse/)図** (Hasse Diagram) にも残されています。これは、半順序集合を視覚的に表現するための[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)です。[ハッセ](https://kenji.blog/p/hasse/)自身がこの図の最初の考案者というわけではありませんが、彼が代数的な構造を理解するために効果的に用いたことから、その名が冠されるようになりました。
+[ハッセ](https://kenji.blog/p/hasse/)の名前は、抽象代数学や離散数学で頻繁に用いられる **ハッセ図** (Hasse Diagram) にも残されています。これは、半順序集合を視覚的に表現するためのグラフです。[ハッセ](https://kenji.blog/p/hasse/)自身がこの図の最初の考案者というわけではありませんが、彼が代数的な構造を理解するために効果的に用いたことから、その名が冠されるようになりました。
 
 以下は、30の約数の集合に「整除関係 (Divisibility)」の順序を入れた[ハッセ](https://kenji.blog/p/hasse/)図の例です。
 
@@ -83,7 +83,7 @@ graph TD
 
 ## 8. [ハッセ](https://kenji.blog/p/hasse/)・[ヴェイユ](https://kenji.blog/p/weil/)の定理：楕円曲線の有理点
 
-[ハッセ](https://kenji.blog/p/hasse/)のもう一つの極めて重要な貢献は、有限体上の楕円曲線における **[ハッセ](https://kenji.blog/p/hasse/)の定理** (Hasse's Theorem on Elliptic Curves) です。これは、有限体上の代数多様体に対する「[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の類似」の最初の一歩とも言える画期的な結果でした。
+[ハッセ](https://kenji.blog/p/hasse/)のもう一つの極めて重要な貢献は、有限体上の楕円曲線における **ハッセの定理** (Hasse's Theorem on Elliptic Curves) です。これは、有限体上の代数多様体に対する「[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の類似」の最初の一歩とも言える画期的な結果でした。
 
 有限体 $\mathbb{F}_q$ （要素数が $q$ の体）上で定義された楕円曲線 $E$ の有理点の数を $N$ とします。このとき、有理点の数 $N$ は $q + 1$ （射影直線上の点の数）に近く、その誤差は次のように抑えられると[ハッセ](https://kenji.blog/p/hasse/)は証明しました。
 
@@ -91,17 +91,17 @@ $$
 |N - (q + 1)| \le 2\sqrt{q}
 $$
 
-この美しい不等式は、後に彼自身の教え子であるアンドレ・[ヴェイユ](https://kenji.blog/p/weil/) ([André Weil](https://kenji.blog/p/weil/)) によって一般の代数曲線へと拡張され（[ヴェイユ](https://kenji.blog/p/weil/)予想）、さらにピエール・ドリーニュ (Pierre Deligne) によって最終的な解決へと至る、壮大な数学の歴史の重要な出発点となりました。
+この美しい不等式は、後に彼自身の教え子であるアンドレ・[ヴェイユ](https://kenji.blog/p/weil/) (André Weil) によって一般の代数曲線へと拡張され（[ヴェイユ](https://kenji.blog/p/weil/)予想）、さらにピエール・ドリーニュ (Pierre Deligne) によって最終的な解決へと至る、壮大な数学の歴史の重要な出発点となりました。
 
 ## 9. 類体論への貢献：局所類体論とアルティン相互法則
 
-[ハッセ](https://kenji.blog/p/hasse/)の業績を語る上で欠かせないのが、 **類体論** (Class Field Theory) への多大なる貢献です。類体論とは、代数体（有理数の有限次拡大体）の[アーベル](https://kenji.blog/p/abel/)拡大（[ガロア](https://kenji.blog/p/galois/)群が可換となるような拡大）を、基礎体自身の内部的な情報から完全に記述しようとする理論です。
+[ハッセ](https://kenji.blog/p/hasse/)の業績を語る上で欠かせないのが、 **類体論** (Class Field Theory) への多大なる貢献です。類体論とは、代数体（有理数の有限次拡大体）のアーベル拡大（[ガロア](https://kenji.blog/p/galois/)群が可換となるような拡大）を、基礎体自身の内部的な情報から完全に記述しようとする理論です。
 
-エミール・アルティン (Emil Artin) が提唱した「相互法則 (Reciprocity Law)」の証明において、[ハッセ](https://kenji.blog/p/hasse/)は極めて重要な役割を果たしました。[ハッセ](https://kenji.blog/p/hasse/)は解析的な手法や $p$ 進数の理論を駆使することで、アルティンに重要な助言を与え、証明の完成に大きく貢献しました。また、[ハッセ](https://kenji.blog/p/hasse/)自身も局所類体論 (Local Class Field Theory) の構築において中心的な役割を担い、大域的な類体論を局所体の視点から再構築しました。
+エミール・アルティン (Emil Artin) が提唱した「相互法則 (Reciprocity Law)」の証明において、[ハッセ](https://kenji.blog/p/hasse/)は極めて重要な役割を果たしました。ハッセは解析的な手法や $p$ 進数の理論を駆使することで、アルティンに重要な助言を与え、証明の完成に大きく貢献しました。また、[ハッセ](https://kenji.blog/p/hasse/)自身も局所類体論 (Local Class Field Theory) の構築において中心的な役割を担い、大域的な類体論を局所体の視点から再構築しました。
 
 ## 10. [エミー・ネーター](https://kenji.blog/p/noether/)や同時代人との交流
 
-[ハッセ](https://kenji.blog/p/hasse/)の学問的交流の中で特筆すべき人物が、抽象代数学の母とも称される **[エミー・ネーター](https://kenji.blog/p/noether/)** ([Emmy Noether](https://kenji.blog/p/noether/)) です。[ハッセ](https://kenji.blog/p/hasse/)はネーターの抽象的・構造的なアプローチに深く共鳴し、彼女の構築した非可換代数の枠組みを自身の数論的研究に積極的に取り入れました。
+[ハッセ](https://kenji.blog/p/hasse/)の学問的交流の中で特筆すべき人物が、抽象代数学の母とも称される **エミー・ネーター** (Emmy Noether) です。[ハッセ](https://kenji.blog/p/hasse/)はネーターの抽象的・構造的なアプローチに深く共鳴し、彼女の構築した非可換代数の枠組みを自身の数論的研究に積極的に取り入れました。
 
 この共同作業の結果として、[ハッセ](https://kenji.blog/p/hasse/)、ネーター、リヒャルト・ブラウアー (Richard Brauer)、アルベール (A. A. Albert) らによって証明された **[ハッセ](https://kenji.blog/p/hasse/)・ブラウアー・ネーター・アルベールの定理** (Albert-Brauer-Hasse-Noether Theorem) は、多元環の理論における金字塔となっています。これもまた局所・大域原理の美しい一例です。
 

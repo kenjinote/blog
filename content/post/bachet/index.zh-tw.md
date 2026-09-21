@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-透過擴展[歐幾里得算法](https://kenji.blog/zh-tw/p/euclidean-algorithm/)（擴展[歐幾里得算法](https://kenji.blog/zh-tw/p/euclidean-algorithm/)）可以具體計算出 $x$ 和 $y$，這已成為現代密碼學（如 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)）中不可或缺的基礎定理。在重視歷史準確性的語境中，這有時被稱為 **巴謝定理** 。
+透過擴展[歐幾里得算法](https://kenji.blog/zh-tw/p/euclidean-algorithm/)（擴展歐幾里得算法）可以具體計算出 $x$ 和 $y$，這已成為現代密碼學（如 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)）中不可或缺的基礎定理。在重視歷史準確性的語境中，這有時被稱為 **巴謝定理** 。
 
 ## 結論
 

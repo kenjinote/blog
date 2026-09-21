@@ -12,7 +12,7 @@ description: "L'arrivée du 'Q-Day', où la puissance de calcul phénoménale de
 
 ## 1. Introduction : L'approche de l'ère post-quantique et la crise de la blockchain
 
-Depuis la création du [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) par Satoshi Nakamoto en 2009, la technologie de la blockchain s'est développée pour devenir l'infrastructure des systèmes financiers et des applications à travers le monde, en tant que « registre décentralisé et infalsifiable ». Cette sécurité robuste repose sur des technologies cryptographiques modernes : la **cryptographie à clé publique ([Public Key](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)** et les **fonctions de hachage cryptographique ([Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)s)**.
+Depuis la création du [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) par Satoshi Nakamoto en 2009, la technologie de la blockchain s'est développée pour devenir l'infrastructure des systèmes financiers et des applications à travers le monde, en tant que « registre décentralisé et infalsifiable ». Cette sécurité robuste repose sur des technologies cryptographiques modernes : la **cryptographie à clé publique (Public Key Cryptography)** et les **fonctions de hachage cryptographique (Cryptographic [Hash Function](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)s)**.
 
 Ces technologies cryptographiques garantissent la sécurité en s'appuyant sur la « difficulté de calcul » mathématique, c'est-à-dire qu'un ordinateur classique (les PC ou supercalculateurs que nous utilisons aujourd'hui) mettrait un temps comparable à l'âge de l'univers pour les déchiffrer.
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. Les fondements de la cryptographie sur les courbes elliptiques (ECDSA) et la difficulté de calcul
 
-De nombreuses blockchains, dont le [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) et l'Ethereum, utilisent l'**algorithme de signature numérique sur courbe elliptique (ECDSA : Elliptic Curve [Digital Signature](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) Algorithm)** comme algorithme de signature numérique. Plus précisément, le [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) utilise une courbe elliptique avec le paramètre `secp256k1`.
+De nombreuses blockchains, dont le [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) et l'Ethereum, utilisent l'**algorithme de signature numérique sur courbe elliptique (ECDSA : Elliptic Curve Digital Signature Algorithm)** comme algorithme de signature numérique. Plus précisément, le [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) utilise une courbe elliptique avec le paramètre `secp256k1`.
 
 La sécurité de la cryptographie sur les courbes elliptiques dépend de la difficulté de calcul du **problème du logarithme discret sur courbe elliptique (ECDLP : Elliptic Curve Discrete Logarithm Problem)**.
 La courbe elliptique est définie par l'équation sous forme de Weierstrass suivante :

@@ -28,7 +28,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 Ollama 是一個可以讓你在本機環境中，輕鬆執行與管理開源大型語言模型（如 Llama 3、Phi-3、Mistral、Gemma 等）的平台。過去要建置本機 LLM 環境，需要經過非常繁雜的步驟，例如設定 Python 環境、安裝 CUDA Toolkit、解決 PyTorch 的相依性、從 Hugging Face 下載龐大的模型檔案，以及進行格式轉換（例如將 Safetensors 轉換為 GGUF）等。
 
-Ollama 隱藏了這些複雜性，讓你能以類似 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 的使用體驗來操作 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)。只要透過一個指令就能下載（`pull`）模型、執行（`run`），並將其啟動為 HTTP 伺服器。
+Ollama 隱藏了這些複雜性，讓你能以類似 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/) 的使用體驗來操作 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)。只要透過一個指令就能下載（`pull`）模型、執行（`run`），並將其啟動為 HTTP 伺服器。
 
 ## 核心技術：llama.cpp 的包裝器
 
@@ -493,7 +493,7 @@ $$
 
 ## 結論
 
-隨著 Ollama 的出現，導入本機 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的門檻大幅降低了。如同操作 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 容器般簡單的指令系統，加上外部應用程式能輕易使用的 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 的組合，可以毫不誇張地說是目前本機 AI 開發的業界標準（de facto standard）。
+隨著 Ollama 的出現，導入本機 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的門檻大幅降低了。如同操作 Docker-layers/) 容器般簡單的指令系統，加上外部應用程式能輕易使用的 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 的組合，可以毫不誇張地說是目前本機 AI 開發的業界標準（de facto standard）。
 
 如果你正在為了雲端 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的成本或安全性限制而苦惱，請務必參考本文介紹的步驟，使用 Ollama 建置本機 LLM 環境，並將其整合到你自己的應用程式中。你一定能夠更自由、更切身地感受到 AI 所擁有的潛力。
 

@@ -49,7 +49,7 @@ graph TD
     Mersenne <-->|"Acoustique"| Huygens
 ```
 
-Au centre de ce réseau, lorsque quelqu'un découvrait un nouveau théorème, [Mersenne](https://kenji.blog/fr/p/mersenne/) le transmettait à d'autres savants, encourageant la critique et la vérification. Par exemple, c'est [Mersenne](https://kenji.blog/fr/p/mersenne/) qui a communiqué les découvertes mathématiques de [Pierre de Fermat](https://kenji.blog/fr/p/fermat/) à [Descartes](https://kenji.blog/fr/p/descartes/), déclenchant un débat féroce entre les deux. Il est également connu pour avoir traduit en français les œuvres de Galileo Galilei (comme le *Dialogue sur les deux grands systèmes du monde*), les faisant largement connaître malgré la stricte censure de l'Église catholique. Certains historiens estiment que sans lui, la révolution scientifique du XVIIe siècle aurait pu être retardée de plusieurs décennies.
+Au centre de ce réseau, lorsque quelqu'un découvrait un nouveau théorème, [Mersenne](https://kenji.blog/fr/p/mersenne/) le transmettait à d'autres savants, encourageant la critique et la vérification. Par exemple, c'est Mersenne qui a communiqué les découvertes mathématiques de Pierre de Fermat à [Descartes](https://kenji.blog/fr/p/descartes/), déclenchant un débat féroce entre les deux. Il est également connu pour avoir traduit en français les œuvres de Galileo Galilei (comme le *Dialogue sur les deux grands systèmes du monde*), les faisant largement connaître malgré la stricte censure de l'Église catholique. Certains historiens estiment que sans lui, la révolution scientifique du XVIIe siècle aurait pu être retardée de plusieurs décennies.
 
 ## Réalisations mathématiques : les nombres premiers de [Mersenne](https://kenji.blog/fr/p/mersenne/)
 
@@ -93,7 +93,7 @@ Les vérifications par des mathématiciens ultérieurs ont révélé qu'il y ava
 
 ### Applications à la cryptographie moderne et GIMPS
 
-Aujourd'hui, les nombres premiers de [Mersenne](https://kenji.blog/fr/p/mersenne/) continuent d'être explorés par « GIMPS » (Great Internet [Mersenne](https://kenji.blog/fr/p/mersenne/) Prime Search), un projet dédié à la recherche des plus grands nombres premiers du monde. Parce qu'il existe un test de primalité spécial et rapide appelé le test de Lucas-Lehmer, les nombres de [Mersenne](https://kenji.blog/fr/p/mersenne/) sont extrêmement bien adaptés à la découverte de nombres premiers gigantesques.
+Aujourd'hui, les nombres premiers de [Mersenne](https://kenji.blog/fr/p/mersenne/) continuent d'être explorés par « GIMPS » (Great Internet Mersenne Prime Search), un projet dédié à la recherche des plus grands nombres premiers du monde. Parce qu'il existe un test de primalité spécial et rapide appelé le test de Lucas-Lehmer, les nombres de [Mersenne](https://kenji.blog/fr/p/mersenne/) sont extrêmement bien adaptés à la découverte de nombres premiers gigantesques.
 
 ```python
 # Test de Lucas-Lehmer pour les nombres premiers de Mersenne
@@ -131,7 +131,7 @@ Cette loi est un principe physique crucial qui constitue la base de la conceptio
 
 [Mersenne](https://kenji.blog/fr/p/mersenne/) a également laissé des empreintes importantes sur le plan philosophique. Il s'opposait au scepticisme extrême et aux idées magiques ou mystiques (telles que l'hermétisme de la Renaissance), défendant la science rationnelle et empirique.
 
-Lorsque son ami intime [Descartes](https://kenji.blog/fr/p/descartes/) a publié ses *Méditations métaphysiques*, [Mersenne](https://kenji.blog/fr/p/mersenne/) a envoyé le manuscrit à des penseurs éminents de toute l'Europe (tels que Thomas Hobbes et Pierre Gassendi) pour recueillir leurs objections. Il les a ensuite compilées dans un livre avec les propres réponses de [Descartes](https://kenji.blog/fr/p/descartes/), jouant un rôle qui pourrait être considéré comme un précurseur du système moderne d'évaluation par les pairs (peer-review).
+Lorsque son ami intime [Descartes](https://kenji.blog/fr/p/descartes/) a publié ses *Méditations métaphysiques*, Mersenne a envoyé le manuscrit à des penseurs éminents de toute l'Europe (tels que Thomas Hobbes et Pierre Gassendi) pour recueillir leurs objections. Il les a ensuite compilées dans un livre avec les propres réponses de [Descartes](https://kenji.blog/fr/p/descartes/), jouant un rôle qui pourrait être considéré comme un précurseur du système moderne d'évaluation par les pairs (peer-review).
 
 [Mersenne](https://kenji.blog/fr/p/mersenne/) croyait fermement que les progrès scientifiques prouvaient la grandeur du monde créé par Dieu, considérant qu'il n'y avait aucune contradiction entre la religion et la science.
 

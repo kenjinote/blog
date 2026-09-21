@@ -81,7 +81,7 @@ In this way, introducing a CDN can dramatically reduce (by about 90%) the averag
 
 ---
 
-## 4. Building a [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) using [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)
+## 4. Building a [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) Pipeline using [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)
 
 To automate the update process for a Hugo blog, we will build a CI/CD pipeline using GitHub Actions. With this setup, simply writing a Markdown article locally and running `git push` will automatically trigger the build and deploy to Cloudflare Pages or GitHub Pages.
 

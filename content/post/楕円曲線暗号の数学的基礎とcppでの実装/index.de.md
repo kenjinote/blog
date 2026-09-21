@@ -67,7 +67,7 @@ Der grundlegendste endliche Körper ist der **Primkörper $\mathbb{F}_p$** unter
 
 Die Berechnung des **multiplikativen Inversen (Modular Multiplicative Inverse)** ist in der kryptographischen Implementierung extrem wichtig. Um ein $b^{-1}$ zu finden, das $b \times b^{-1} \equiv 1 \pmod p$ erfüllt, werden hauptsächlich die folgenden zwei Algorithmen verwendet:
 
-1. **Erweiterter euklidischer Algorithmus (Extended [[Euclid](https://kenji.blog/de/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm)**: Er ist schnell, aber je nach Implementierung ist die Ausführungszeit vom Eingabewert abhängig, was das Risiko von Timing-Angriffen birgt.
+1. **Erweiterter euklidischer Algorithmus (Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm)**: Er ist schnell, aber je nach Implementierung ist die Ausführungszeit vom Eingabewert abhängig, was das Risiko von Timing-Angriffen birgt.
 2. **Kleiner fermatscher Satz ([Fermat's Little Theorem](https://kenji.blog/de/p/fermats-little-theorem/))**: Wenn $p$ eine Primzahl ist und $b \neq 0$, gilt $b^{p-1} \equiv 1 \pmod p$. Teilt man beide Seiten durch $b$, erhält man $b^{p-2} \equiv b^{-1} \pmod p$. Das heißt, durch Berechnung von $b$ hoch $p-2$ erhält man das Inverse. Da modulare Potenzierung leicht in konstanter Zeit (Constant-Time) implementiert werden kann, wird dies bei kryptographischen Implementierungen bevorzugt.
 
 ---

@@ -26,7 +26,7 @@ description: 'Правда о «Проблеме 2026 года» в ИТ-инд�
 
 Однако к 2026 году эта модель достигла своих пределов. Суть DX (цифровой трансформации) сместилась от «простой информатизации» к «трансформации бизнес-моделей», и каскадная (waterfall) разработка с ее низкой гибкостью (agility) больше не может поспевать за изменениями рынка.
 
-Современный процесс разработки предполагает, что он является **облачным (cloud-native)** и ** управляемым ИИ**. Контейнеризация ([Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/ru/p/kubernetes-k8s-architecture-pod-service-ingress/)), микросервисная архитектура и автоматизация [CI/CD](https://kenji.blog/ru/p/cicd-pipeline-github-actions-best-practices/) конвейеров больше не являются «особенными технологиями», а стали «стандартной инфраструктурой».
+Современный процесс разработки предполагает, что он является **облачным (cloud-native)** и ** управляемым ИИ**. Контейнеризация ([Docker](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)/Kubernetes), микросервисная архитектура и автоматизация [CI/CD](https://kenji.blog/ru/p/cicd-pipeline-github-actions-best-practices/) конвейеров больше не являются «особенными технологиями», а стали «стандартной инфраструктурой».
 
 ```mermaid
 graph TD

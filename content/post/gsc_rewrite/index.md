@@ -238,7 +238,7 @@ def extract_missing_keywords(documents):
 # print(missing_keywords)
 ```
 
-この分析により、「実は上位記事は『[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)へのデプロイ方法』や『[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の構築』についても言及しているが、自分の記事では触れていない」といった **トピックの抜け漏れ（コンテンツギャップ）** を定量的に発見できます。
+この分析により、「実は上位記事は『[Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)コンテナへのデプロイ方法』や『CI/CD[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の構築』についても言及しているが、自分の記事では触れていない」といった **トピックの抜け漏れ（コンテンツギャップ）** を定量的に発見できます。
 
 発見した重要キーワード群は、ただ本文に散りばめるのではなく、 **H2やH3の見出し（Headingタグ）** として意味のあるセクションとして追加し、見出しに対する詳細な技術解説とコードスニペットを書き下ろすことで、Googleの評価を劇的に高めることができます。
 

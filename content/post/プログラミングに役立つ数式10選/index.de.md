@@ -19,7 +19,7 @@ Willkommen in einer Welt, in der sich die Schönheit der Mathematik und die Prak
 
 ---
 
-## 1. [Eulersche Identität ([Euler's Identity](https://kenji.blog/de/p/eulers-identity/))](https://kenji.blog/p/eulers-identity/)
+## 1. [Eulersche Identität (Euler's Identity)](https://kenji.blog/p/eulers-identity/)
 
 ### Schönheit der Formel und Übersicht
 Die Eulersche Identität wird oft als "der Schatz der Menschheit" oder "die schönste mathematische Formel der Welt" bezeichnet. Fünf der wichtigsten Konstanten der Mathematik (die Eulersche Zahl $e$, die imaginäre Einheit $i$, die Kreiszahl $\pi$, das neutrale Element der Multiplikation $1$ und das neutrale Element der Addition $0$) sind in einer einzigen, einfachen Gleichung vereint.
@@ -559,7 +559,7 @@ Die Verzweigung des obigen Codes mit `x >= 0` und anderen Werten dient dazu, "Ü
 
 ---
 
-## 10. [Euklid](https://kenji.blog/de/p/euclid/)ischer Abstand und Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/) ([[Euclid](https://kenji.blog/de/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. [Euklid](https://kenji.blog/de/p/euclid/)ischer Abstand und Satz des Pythagoras ([Euclide](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### Schönheit der Formel und Übersicht
 Es ist die Grundlage der aus dem antiken Griechenland überlieferten Geometrie und die Formel, die den geradlinigen Abstand zwischen zwei Punkten in einem $n$-dimensionalen Raum definiert. Im zweidimensionalen Raum ist es der Satz des [Pythagoras](https://kenji.blog/de/p/pythagoras/) ($a^2 + b^2 = c^2$) selbst.

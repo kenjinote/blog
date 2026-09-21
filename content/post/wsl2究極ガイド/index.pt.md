@@ -287,7 +287,7 @@ Esta abordagem é recomendada na maioria dos casos porque facilita o gerenciamen
 - Em `General`, marque a opção `Use the WSL 2 based engine`.
 - Em `Resources` -> `WSL Integration`, marque a opção `Enable integration with my default WSL distro` e ligue a chave seletora para a distribuição (Ubuntu) a ser usada.
 
-Isso permite que o comando `docker` seja executado diretamente do terminal do WSL2, e a comunicação com o daemon do [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/) ocorra por meio de uma VM leve dedicada (`docker-desktop` e `docker-desktop-data`) gerenciada pelo [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop.
+Isso permite que o comando `docker` seja executado diretamente do terminal do WSL2, e a comunicação com o daemon do [Docker](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/) ocorra por meio de uma VM leve dedicada (`docker-desktop` e `docker-desktop-data`) gerenciada pelo [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop.
 
 ### Abordagem 2: Instalação Direta do Docker Engine Nativo
 Se houver restrições de rede corporativa (como evitar taxas de licenciamento do Docker Desktop) ou se você quiser reduzir ao máximo a sobrecarga de desempenho, ative o `systemd` em `/etc/wsl.conf` e instale o [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/) como um servidor Ubuntu puro.

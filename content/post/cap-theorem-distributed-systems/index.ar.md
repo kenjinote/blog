@@ -13,7 +13,7 @@ tags:
   - "تصميم-النظام"
 ---
 
-في بنية البرمجيات الحديثة، أصبح جعل الأنظمة موزعة متطلبًا لا يمكن تجنبه. مع انتشار الحوسبة السحابية، واعتماد بنية الخدمات المصغرة ([[Microservice](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/))، وزيادة الطلب على معالجة البيانات الضخمة، أصبح النهج السائد هو ربط العديد من الخوادم غير المكلفة (Scale-out) بدلاً من الاعتماد على خادم واحد قوي (Scale-up).
+في بنية البرمجيات الحديثة، أصبح جعل الأنظمة موزعة متطلبًا لا يمكن تجنبه. مع انتشار الحوسبة السحابية، واعتماد بنية الخدمات المصغرة ([Microservices](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/))، وزيادة الطلب على معالجة البيانات الضخمة، أصبح النهج السائد هو ربط العديد من الخوادم غير المكلفة (Scale-out) بدلاً من الاعتماد على خادم واحد قوي (Scale-up).
 
 ومع ذلك، عند بناء وتشغيل الأنظمة الموزعة، يواجه المهندسون دائمًا خيارات صعبة. إنها المقايضة بين "اتساق البيانات" و "توافر النظام". **نظرية CAP** (CAP theorem) هي التي أثبتت هذه المعضلة الجوهرية رياضيًا وصاغتها.
 
@@ -273,7 +273,7 @@ stateDiagram-v2
 
 ## 8. الخدمات المصغرة والمعاملات ([Transaction](https://kenji.blog/ar/p/rdbms-transaction-acid-isolation-level-lock/)s)
 
-لا تقتصر نظرية CAP على قواعد البيانات الفردية، بل لها تأثير عميق على **بنية الخدمات المصغرة ([[Microservice](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/) Architecture)** الحديثة.
+لا تقتصر نظرية CAP على قواعد البيانات الفردية، بل لها تأثير عميق على **بنية الخدمات المصغرة ([Microservices](https://kenji.blog/ar/p/microservices-architecture-bff-api-gateway/) Architecture)** الحديثة.
 
 في التطبيقات الأحادية (Monolithic)، كان من السهل الحفاظ على اتساق البيانات من خلال معاملات [ACID](https://kenji.blog/ar/p/rdbms-transaction-acid-isolation-level-lock/) باستخدام قاعدة بيانات علائقية واحدة. ولكن في الخدمات المصغرة، حيث يتم تقسيم الخدمات وقواعد البيانات حسب مجال العمل، تصبح هناك حاجة إلى معاملات موزعة (Distributed Transactions) تمتد عبر الخدمات.
 

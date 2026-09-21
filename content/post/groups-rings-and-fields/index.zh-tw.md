@@ -8,7 +8,7 @@ categories: ["數學"]
 tags: ["代數", "群論", "環論", "體論"]
 ---
 
-# [[群、環、體](https://kenji.blog/zh-tw/p/groups-rings-and-fields/)：不僅僅是數字，更是抽象「結構」本身的現代代數入門](https://kenji.blog/p/groups-rings-and-fields/)
+# [群、環、體：不僅僅是數字，更是抽象「結構」本身的現代代數入門](https://kenji.blog/p/groups-rings-and-fields/)
 
 我們大多數人在學校最先學到的「數學」是數字的加減乘除，也就是「四則運算」的世界。像 $1 + 1 = 2$ 或 $3 \times 4 = 12$ 這樣的計算，對於描述我們日常接觸的現實世界的數量和大小非常有用。
 

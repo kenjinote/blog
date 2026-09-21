@@ -12,7 +12,7 @@ description: 'Наступление «Q-Day», когда невероятна�
 
 ## 1. Введение: Приближение постквантовой эры и кризис блокчейна
 
-С момента создания [Биткоин](https://kenji.blog/ru/p/cryptocurrency-and-bitcoin/)а ([Bitcoin](https://kenji.blog/ru/p/cryptocurrency-and-bitcoin/)) Сатоши Накамото в 2009 году, технология блокчейн выросла в основу финансовых систем и приложений по всему миру как «децентрализованный реестр, устойчивый к фальсификациям». Эта надежная безопасность опирается на современную криптографию: **криптографию с открытым ключом ([Public Key](https://kenji.blog/ru/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/ru/p/cryptocurrency-and-bitcoin/)graphy)** и ** криптографические хеш-функции ([Crypto](https://kenji.blog/ru/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/ru/p/modern-cryptography-public-key-hash-signature/)s)**.
+С момента создания [Биткоин](https://kenji.blog/ru/p/cryptocurrency-and-bitcoin/)а (Bitcoin) Сатоши Накамото в 2009 году, технология блокчейн выросла в основу финансовых систем и приложений по всему миру как «децентрализованный реестр, устойчивый к фальсификациям». Эта надежная безопасность опирается на современную криптографию: **криптографию с открытым ключом (Public Key Cryptography)** и ** криптографические хеш-функции (Cryptographic [Hash Function](https://kenji.blog/ru/p/modern-cryptography-public-key-hash-signature/)s)**.
 
 Эти криптографические технологии гарантируют безопасность на основе математической «вычислительной сложности», подразумевающей, что классическим компьютерам (ПК и суперкомпьютерам, которые мы используем сегодня) потребовалось бы время, сравнимое с возрастом Вселенной, для их взлома.
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. Основы криптографии на эллиптических кривых (ECDSA) и вычислительная сложность
 
-Многие блокчейны, включая [Bitcoin](https://kenji.blog/ru/p/cryptocurrency-and-bitcoin/) и Ethereum, используют **алгоритм цифровой подписи на эллиптических кривых (ECDSA: Elliptic Curve [Digital Signature](https://kenji.blog/ru/p/modern-cryptography-public-key-hash-signature/) Algorithm)** в качестве алгоритма цифровой подписи. В частности, [Биткоин](https://kenji.blog/ru/p/cryptocurrency-and-bitcoin/) использует эллиптическую кривую с параметрами `secp256k1`.
+Многие блокчейны, включая [Bitcoin](https://kenji.blog/ru/p/cryptocurrency-and-bitcoin/) и Ethereum, используют **алгоритм цифровой подписи на эллиптических кривых (ECDSA: Elliptic Curve Digital Signature Algorithm)** в качестве алгоритма цифровой подписи. В частности, [Биткоин](https://kenji.blog/ru/p/cryptocurrency-and-bitcoin/) использует эллиптическую кривую с параметрами `secp256k1`.
 
 Безопасность криптографии на эллиптических кривых зависит от вычислительной сложности **задачи дискретного логарифмирования на эллиптической кривой (ECDLP: Elliptic Curve Discrete Logarithm Problem)**.
 Эллиптическая кривая определяется уравнением в нормальной форме Вейерштрасса:

@@ -8,7 +8,7 @@ categories: ["mathematics", "biography"]
 tags: ["Yutaka Taniyama", "Matematika", "Teorema Terakhir Fermat", "Konjektur Taniyama-Shimura", "Kurva Eliptik", "Bentuk Modular"]
 ---
 
-# [[Yutaka Taniyama](https://kenji.blog/id/p/taniyama-yutaka/): Kehidupan dan Pencapaian Matematikawan Jenius yang Menantang Masalah Tak Terpecahkan](https://kenji.blog/p/taniyama-yutaka/)
+# [Yutaka Taniyama: Kehidupan dan Pencapaian Matematikawan Jenius yang Menantang Masalah Tak Terpecahkan](https://kenji.blog/p/taniyama-yutaka/)
 
 Bukti dari **[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)** adalah salah satu perkembangan paling dramatis dan penting dalam matematika modern. Di balik pencapaian monumental ini terdapat konjektur menakjubkan yang diajukan oleh dua matematikawan Jepang. Salah satunya adalah **[Yutaka Taniyama](https://kenji.blog/id/p/taniyama-yutaka/)** (1927 - 1958), yang meninggal pada usia muda. Dalam artikel ini, kita akan menyelami visi besar di balik "Konjektur Taniyama-Shimura" yang ia ajukan, dan kehidupan turbulennya sendiri.
 
@@ -101,7 +101,7 @@ flowchart TD
 
 ## 7. Bukti Konjektur dan Program Langlands
 
-Orang yang paling terinspirasi oleh fakta ini adalah matematikawan Inggris **[Andrew Wiles](https://kenji.blog/id/p/wiles/)**. Ia telah terpesona oleh [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) sejak kecil dan bertekad mendedikasikan hidupnya untuk membuktikannya. Setelah tujuh tahun penelitian rahasia, ia mengumumkan pada tahun 1993 bahwa ia telah "membuktikan Konjektur Taniyama-Shimura untuk kurva eliptik semi-stabil." Meskipun celah ditemukan pada sebagian bukti, dengan bantuan mantan muridnya Richard Taylor, ia berhasil mengisi celah tersebut pada tahun 1995 dan menerbitkan bukti yang lengkap. Hasilnya, bagian krusial dari konjektur yang ditinggalkan oleh Taniyama telah terbukti, dan pada saat yang sama, [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) menjadi kebenaran abadi.
+Orang yang paling terinspirasi oleh fakta ini adalah matematikawan Inggris **[Andrew Wiles](https://kenji.blog/id/p/wiles/)**. Ia telah terpesona oleh Teorema Terakhir Fermat sejak kecil dan bertekad mendedikasikan hidupnya untuk membuktikannya. Setelah tujuh tahun penelitian rahasia, ia mengumumkan pada tahun 1993 bahwa ia telah "membuktikan Konjektur Taniyama-Shimura untuk kurva eliptik semi-stabil." Meskipun celah ditemukan pada sebagian bukti, dengan bantuan mantan muridnya Richard Taylor, ia berhasil mengisi celah tersebut pada tahun 1995 dan menerbitkan bukti yang lengkap. Hasilnya, bagian krusial dari konjektur yang ditinggalkan oleh Taniyama telah terbukti, dan pada saat yang sama, [Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/) menjadi kebenaran abadi.
 
 Selanjutnya, melalui upaya lebih lanjut oleh Christophe Breuil, Brian Conrad, Fred Diamond, dan Richard Taylor, Konjektur Taniyama-Shimura sepenuhnya terbukti untuk semua kurva eliptik pada tahun 2001. Saat ini, teorema ini dikenal sebagai "Teorema Modularitas (Modularity Theorem)."
 

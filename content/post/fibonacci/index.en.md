@@ -160,7 +160,7 @@ The discoveries of [Fibonacci](https://kenji.blog/en/p/fibonacci/), who lived ab
 
 ### Applications in Computer Science
 
-In computer algorithms, the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence is highly useful. The algorithm called "[Fibonacci](https://kenji.blog/en/p/fibonacci/) search" can search data more efficiently than binary search under specific conditions. Additionally, a data structure known as a "[Fibonacci](https://kenji.blog/en/p/fibonacci/) heap" is indispensable for accelerating graph theory algorithms like [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm.
+In computer algorithms, the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence is highly useful. The algorithm called "Fibonacci search" can search data more efficiently than binary search under specific conditions. Additionally, a data structure known as a "Fibonacci heap" is indispensable for accelerating graph theory algorithms like [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm.
 
 ### [Fibonacci](https://kenji.blog/en/p/fibonacci/) Retracement in Financial Markets
 

@@ -256,7 +256,7 @@ Windows側のVS Codeは単なる「薄いクライアント（UI）」として�
 VS Codeの「拡張機能」から **"WSL" (ms-vscode-remote.remote-wsl)** をインストールします。その後、WSLのターミナルでプロジェクトディレクトリに移動し、`code .` を実行するだけで、そのディレクトリを開いた状態でWindows側のVS Codeが起動します。
 
 **重要な注意点（改行コード問題）：**
-WindowsとLinuxでは改行コードが異なります（Windowsは `CRLF`、Linuxは `LF`）。WSL上で開発を行う場合、Gitの `core.autocrlf` 設定や、VS Codeのファイルのデフォルト設定を必ず `LF` に統一してください。これを怠ると、シェルスクリプトや[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)の[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)実行時に謎のエラーに悩まされることになります。
+WindowsとLinuxでは改行コードが異なります（Windowsは `CRLF`、Linuxは `LF`）。WSL上で開発を行う場合、Gitの `core.autocrlf` 設定や、VS Codeのファイルのデフォルト設定を必ず `LF` に統一してください。これを怠ると、シェルスクリプトや[Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)の[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)実行時に謎のエラーに悩まされることになります。
 
 ```bash
 # WSL側でのGitの改行コード設定

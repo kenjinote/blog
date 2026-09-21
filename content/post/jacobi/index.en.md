@@ -16,7 +16,7 @@ tags:
 
 # 1. Introduction: A Seeker of Pure Thought
 
-[Carl Gustav Jacob Jacobi](https://kenji.blog/en/p/jacobi/) (1804–1851) was a 19th-century **German mathematician** who made decisive contributions to diverse fields such as algebra, analysis, number theory, and mechanics. Along with [Niels Henrik Abel](https://kenji.blog/en/p/abel/), he is celebrated as the "discoverer of elliptic functions", and he is the namesake of the "[Jacobi](https://kenji.blog/en/p/jacobi/)an" ([Jacobi](https://kenji.blog/en/p/jacobi/)an determinant) that we frequently encounter in multivariable calculus today.
+[Carl Gustav Jacob Jacobi](https://kenji.blog/en/p/jacobi/) (1804–1851) was a 19th-century **German mathematician** who made decisive contributions to diverse fields such as algebra, analysis, number theory, and mechanics. Along with Niels Henrik Abel, he is celebrated as the "discoverer of elliptic functions", and he is the namesake of the "Jacobian" ([Jacobi](https://kenji.blog/en/p/jacobi/)an determinant) that we frequently encounter in multivariable calculus today.
 
 He valued the beauty of mathematics itself and the honor of the human spirit over practical utility. In this article, we will delve deeply into [Jacobi](https://kenji.blog/en/p/jacobi/)'s life, his major mathematical achievements, and the famous episodes he left behind.
 
@@ -47,15 +47,15 @@ In 1826, [Jacobi](https://kenji.blog/en/p/jacobi/) became a lecturer at Königsb
 
 One of [Jacobi](https://kenji.blog/en/p/jacobi/)'s greatest achievements is the construction of the theory of elliptic functions. Elliptic integrals appear when calculating the motion of a pendulum or the arc length of an ellipse, and [Legendre](https://kenji.blog/en/p/legendre/) and others had studied them for decades.
 
-[Jacobi](https://kenji.blog/en/p/jacobi/) introduced the groundbreaking perspective of considering the inverse function of the integral. Remarkably, the young Norwegian genius **[Abel](https://kenji.blog/en/p/abel/)** had discovered the same approach entirely independently around the exact same time. Both [Jacobi](https://kenji.blog/en/p/jacobi/) and [Abel](https://kenji.blog/en/p/abel/) discovered the double periodicity of elliptic functions, revolutionizing the field.
+[Jacobi](https://kenji.blog/en/p/jacobi/) introduced the groundbreaking perspective of considering the inverse function of the integral. Remarkably, the young Norwegian genius **Abel** had discovered the same approach entirely independently around the exact same time. Both Jacobi and [Abel](https://kenji.blog/en/p/abel/) discovered the double periodicity of elliptic functions, revolutionizing the field.
 
 $$ \text{sn}(u, k), \quad \text{cn}(u, k), \quad \text{dn}(u, k) $$
 
-[Jacobi](https://kenji.blog/en/p/jacobi/) defined these [Jacobi](https://kenji.blog/en/p/jacobi/)an elliptic functions and further introduced a powerful new analytical tool called "Theta functions." [Jacobi](https://kenji.blog/en/p/jacobi/)'s theta function $\vartheta(z, \tau)$ is defined as follows:
+[Jacobi](https://kenji.blog/en/p/jacobi/) defined these Jacobian elliptic functions and further introduced a powerful new analytical tool called "Theta functions." [Jacobi](https://kenji.blog/en/p/jacobi/)'s theta function $\vartheta(z, \tau)$ is defined as follows:
 
 $$ \vartheta(z, \tau) = \sum_{n=-\infty}^{\infty} e^{\pi i n^2 \tau + 2 \pi i n z} $$
 
-In 1829, he published his masterpiece, *Fundamenta nova theoriae functionum ellipticarum* (New Foundations of the Theory of Elliptic Functions), completing the systematization of this field. The French mathematician [Legendre](https://kenji.blog/en/p/legendre/) was amazed to learn of the achievements of [Jacobi](https://kenji.blog/en/p/jacobi/) and [Abel](https://kenji.blog/en/p/abel/), who were much younger than him, and praised them highly.
+In 1829, he published his masterpiece, *Fundamenta nova theoriae functionum ellipticarum* (New Foundations of the Theory of Elliptic Functions), completing the systematization of this field. The French mathematician [Legendre](https://kenji.blog/en/p/legendre/) was amazed to learn of the achievements of Jacobi and [Abel](https://kenji.blog/en/p/abel/), who were much younger than him, and praised them highly.
 
 # 5. The [Jacobi](https://kenji.blog/en/p/jacobi/)an ([Jacobi](https://kenji.blog/en/p/jacobi/)an Determinant) and Multivariable Analysis
 

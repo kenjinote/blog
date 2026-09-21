@@ -10,7 +10,7 @@ tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: '通过 Slack App 的集成实现，详细图解并解说 OAuth 2.0 授权码授权流程的机制。本指南全面涵盖了 Node.js 的具体代码示例和安全最佳实践。'
 ---
 
-# 前言：为什么要学习 [[OAuth](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/)？
+# 前言：为什么要学习 [OAuth 2.0](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/)？
 
 在现代 Web 应用程序中，多个服务协同工作已经成为司空见惯的场景。例如，“使用 Google 账号登录”、“Trello 任务更新时向 Slack 发送通知”、“将 Zoom 会议链接自动添加到 Google 日历”等功能。在所有这些功能的背后发挥作用的，就是名为 **OAuth 2.0 (Open [Authorization](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 2.0)** 的授权框架。
 
@@ -22,7 +22,7 @@ OAuth 2.0 作为一种标准协议（RFC 6749）应运而生，它旨在避免�
 
 ---
 
-# 1. [[OAuth](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 的基本概念：4 个角色（Roles）
+# 1. [OAuth 2.0](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 的基本概念：4 个角色（Roles）
 
 理解 OAuth 2.0 的第一步是准确掌握其中的登场人物（Role）。在 RFC 6749 中，定义了以下 4 个角色。
 
@@ -291,7 +291,7 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 # 6. 令牌作用域与最小权限原则 (Principle of Least Privilege)
 
-[[OAuth](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 中最重要的概念之一是“作用域（Scope）”。作用域是指与访问令牌绑定的权限范围。
+[OAuth 2.0](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 中最重要的概念之一是“作用域（Scope）”。作用域是指与访问令牌绑定的权限范围。
 
 在 Slack 中，权限被划分得非常细致，主要分为 **Bot Token Scopes** 和 **User Token Scopes** 。
 - `chat:write` (Bot): 作为应用（Bot）自身在频道中发布消息的权限。
@@ -305,7 +305,7 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 # 7. 更高级的安全性：PKCE (Proof Key for Code Exchange)
 
-近年来，作为进一步强化 [[OAuth](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 安全性的机制， **PKCE (Proof Key for Code Exchange, RFC 7636，发音为 "pixy")** 已成为标准并被广泛使用。
+近年来，作为进一步强化 [OAuth 2.0](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 安全性的机制， **PKCE (Proof Key for Code Exchange, RFC 7636，发音为 "pixy")** 已成为标准并被广泛使用。
 
 原本 PKCE 是为原生应用（iOS/Android）或 SPA（Single Page Application）等无法安全保存 `client_secret` 的“公共客户端（Public Client）”设计的。然而现在，在安全的最佳实践（[OAuth](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 2.1 草案）中，即使是服务器端的“机密客户端（Confidential Client）”，也强烈推荐使用 PKCE。
 
@@ -370,7 +370,7 @@ sequenceDiagram
 3. 深入了解利用 **`state` 参数 ** 防御 [CSRF](https://kenji.blog/zh-cn/p/web-security-basics-cors-csp/) 攻击、利用 **PKCE** 防止授权码拦截攻击等背后的密码学机制，是实现安全代码的捷径。
 4. 基于 **最小权限原则** 的作用域设计以及存入 DB 时的加密，是运维上绝对不可或缺的要素。
 
-[[OAuth](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 非常深奥，单是 RFC 就有庞大的规范，但像这样以实际的平台（Slack）为目标，边动手边学习，应该就能切实感受到其洗练的设计理念与坚固的安全机制。如果在今后的应用开发和 API 集成实现中，本文的知识能派上用场，那将是我的荣幸。
+[OAuth 2.0](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 非常深奥，单是 RFC 就有庞大的规范，但像这样以实际的平台（Slack）为目标，边动手边学习，应该就能切实感受到其洗练的设计理念与坚固的安全机制。如果在今后的应用开发和 API 集成实现中，本文的知识能派上用场，那将是我的荣幸。
 
 
 

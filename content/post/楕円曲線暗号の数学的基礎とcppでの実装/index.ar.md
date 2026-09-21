@@ -67,7 +67,7 @@ tags: ["ECC", "التشفير", "C++", "الرياضيات"]
 
 يعتبر حساب **المعكوس الضربي (Modular Multiplicative Inverse)** بالغ الأهمية في تنفيذ التشفير. لإيجاد $b^{-1}$ الذي يحقق $b \times b^{-1} \equiv 1 \pmod p$، تُستخدم أساسًا الخوارزميتان التاليتان:
 
-1. **[خوارزمية [إقليدس](https://kenji.blog/ar/p/euclid/)](https://kenji.blog/p/euclidean-algorithm/) الممتدة (Extended [[Euclid](https://kenji.blog/ar/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm)**: سريعة، لكن في بعض التنفيذات يعتمد وقت المعالجة على قيم الإدخال، مما يشكل خطر التعرض لهجمات التوقيت.
+1. **[خوارزمية إقليدس](https://kenji.blog/p/euclidean-algorithm/) الممتدة (Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm)**: سريعة، لكن في بعض التنفيذات يعتمد وقت المعالجة على قيم الإدخال، مما يشكل خطر التعرض لهجمات التوقيت.
 2. **[مبرهنة فيرما الصغرى](https://kenji.blog/ar/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/ar/p/fermats-little-theorem/))**: عندما يكون $p$ عددًا أوليًا و $b \neq 0$، يتحقق $b^{p-1} \equiv 1 \pmod p$. بقسمة الطرفين على $b$، نحصل على $b^{p-2} \equiv b^{-1} \pmod p$. أي أن حساب القوة $p-2$ لـ $b$ يعطينا المعكوس. نظرًا لسهولة تنفيذ عمليات الرفع للأس في وقت ثابت (Constant-Time)، يُفضل استخدام هذه الطريقة في تنفيذ التشفير.
 
 ---

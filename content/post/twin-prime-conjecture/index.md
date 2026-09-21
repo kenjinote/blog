@@ -23,7 +23,7 @@ tags = ["Prime Numbers", "Number Theory", "Unsolved Problems"]
 - $(29, 31)$
 - $(41, 43)$
 
-数が大きくなるにつれて、素数自体の出現頻度は減少していくことが[素数定理（[Prime Number Theorem](https://kenji.blog/p/prime-number-theorem/)）](https://kenji.blog/p/prime-number-theorem/)によって知られています。それに伴い、双子素数の出現頻度もまた減少していきます。しかし、どれほど数が大きくなっても、この「差が2の素数のペア」は尽きることなく現れるのではないか、と数学者たちは古くから推測してきました。
+数が大きくなるにつれて、素数自体の出現頻度は減少していくことが[素数定理（Prime Number Theorem）](https://kenji.blog/p/prime-number-theorem/)によって知られています。それに伴い、双子素数の出現頻度もまた減少していきます。しかし、どれほど数が大きくなっても、この「差が2の素数のペア」は尽きることなく現れるのではないか、と数学者たちは古くから推測してきました。
 
 これが **双子素数予想** です。
 

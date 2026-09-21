@@ -18,7 +18,7 @@ tags:
 
 One of the most beautiful and powerful theoretical frameworks in modern number theory, particularly in algebraic number theory, is **Class Field Theory**. The person who single-handedly constructed this magnificent theoretical system and suddenly elevated Japanese mathematics to the world's highest standard was **Teiji [Takagi](https://kenji.blog/en/p/takagi-teiji/)** (1875–1960).
 
-The monumental achievement he accomplished was not merely solving a single open problem. He brilliantly depicted the mathematical landscape that Western giants like [Kronecker](https://kenji.blog/en/p/kronecker/) and [Hilbert](https://kenji.blog/en/p/hilbert/) had dreamed of, while being isolated in the Far East, and thereby showed the path that the mathematical community should follow thereafter. In this article, we will delve deeply into the trajectory of Teiji [Takagi](https://kenji.blog/en/p/takagi-teiji/)'s life and the core of the Class Field Theory he established.
+The monumental achievement he accomplished was not merely solving a single open problem. He brilliantly depicted the mathematical landscape that Western giants like [Kronecker](https://kenji.blog/en/p/kronecker/) and Hilbert had dreamed of, while being isolated in the Far East, and thereby showed the path that the mathematical community should follow thereafter. In this article, we will delve deeply into the trajectory of Teiji [Takagi](https://kenji.blog/en/p/takagi-teiji/)'s life and the core of the Class Field Theory he established.
 
 ## 1. Early Life and Awakening to Mathematics
 
@@ -32,7 +32,7 @@ He then proceeded to the Department of Mathematics in the College of Science at 
 
 In 1898, [Takagi](https://kenji.blog/en/p/takagi-teiji/) traveled to Germany as an overseas student of the Ministry of Education. He initially studied at the University of Berlin, but later transferred to the University of Göttingen, which was the center of mathematics in the world at that time.
 
-Waiting for him there were great mathematicians who left their names in the history of mathematics, such as [David Hilbert](https://kenji.blog/en/p/hilbert/) and Felix Klein. In particular, [Hilbert](https://kenji.blog/en/p/hilbert/) had just published his "Zahlbericht" (Report on Numbers), which was the culmination of algebraic number theory, and its contents had a profound impact on [Takagi](https://kenji.blog/en/p/takagi-teiji/). Under [Hilbert](https://kenji.blog/en/p/hilbert/), he solved a part of "[Kronecker](https://kenji.blog/en/p/kronecker/)'s Youthful Dream" (a problem concerning the theory of complex multiplication), obtained his doctorate in 1903, and returned to Japan.
+Waiting for him there were great mathematicians who left their names in the history of mathematics, such as [David Hilbert](https://kenji.blog/en/p/hilbert/) and Felix Klein. In particular, Hilbert had just published his "Zahlbericht" (Report on Numbers), which was the culmination of algebraic number theory, and its contents had a profound impact on Takagi. Under Hilbert, he solved a part of "[Kronecker](https://kenji.blog/en/p/kronecker/)'s Youthful Dream" (a problem concerning the theory of complex multiplication), obtained his doctorate in 1903, and returned to Japan.
 
 ## 2. Breakthrough in Isolation: The Birth of Class Field Theory
 
@@ -40,13 +40,13 @@ Waiting for him there were great mathematicians who left their names in the hist
 
 After returning to Japan, [Takagi](https://kenji.blog/en/p/takagi-teiji/) continued his own research while teaching younger scholars as a professor at Tokyo Imperial University. However, when World War I broke out in 1914, academic exchange between Japan and Europe was completely severed. Without receiving the latest papers or journals, [Takagi](https://kenji.blog/en/p/takagi-teiji/) had no choice but to deepen his own thoughts alone in his laboratory.
 
-This "isolation" ironically became the soil that produced great creation. [Takagi](https://kenji.blog/en/p/takagi-teiji/) began to reexamine the problems regarding relative [Abel](https://kenji.blog/en/p/abel/)ian extensions proposed by [Hilbert](https://kenji.blog/en/p/hilbert/) from his unique perspective.
+This "isolation" ironically became the soil that produced great creation. [Takagi](https://kenji.blog/en/p/takagi-teiji/) began to reexamine the problems regarding relative Abelian extensions proposed by [Hilbert](https://kenji.blog/en/p/hilbert/) from his unique perspective.
 
 ### The Conception of Class Field Theory
 
-[Hilbert](https://kenji.blog/en/p/hilbert/) had conjectured and partially proved the existence of an "absolute class field" for a given algebraic number field $K$, which is a maximal unramified [Abel](https://kenji.blog/en/p/abel/)ian extension whose [Galois](https://kenji.blog/en/p/galois/) group is isomorphic to the ideal class group of $K$.
+[Hilbert](https://kenji.blog/en/p/hilbert/) had conjectured and partially proved the existence of an "absolute class field" for a given algebraic number field $K$, which is a maximal unramified Abelian extension whose [Galois](https://kenji.blog/en/p/galois/) group is isomorphic to the ideal class group of $K$.
 
-[Takagi](https://kenji.blog/en/p/takagi-teiji/) thought that by removing this restriction of being "unramified," a similarly beautiful correspondence might hold for any [Abel](https://kenji.blog/en/p/abel/)ian extension. This was the core idea of [Takagi](https://kenji.blog/en/p/takagi-teiji/)'s **Class Field Theory**.
+[Takagi](https://kenji.blog/en/p/takagi-teiji/) thought that by removing this restriction of being "unramified," a similarly beautiful correspondence might hold for any Abelian extension. This was the core idea of [Takagi](https://kenji.blog/en/p/takagi-teiji/)'s **Class Field Theory**.
 
 ## 3. The Pinnacle of Mathematics: The Core of Class Field Theory
 
@@ -66,11 +66,11 @@ The main theorems proved by Teiji [Takagi](https://kenji.blog/en/p/takagi-teiji/
 
 3. **Complete Splitting Theorem**: A necessary and sufficient condition for a prime ideal $\mathfrak{p}$ of $K$ to split completely in $L$ is that $\mathfrak{p}$ belongs to the group $H$.
 
-[Hilbert](https://kenji.blog/en/p/hilbert/)'s conjecture is included as a special case where the modulus is trivial (when there is no ramification). [Takagi](https://kenji.blog/en/p/takagi-teiji/) generalized this to a form that allows arbitrary ramification, establishing a complete theory regarding [Abel](https://kenji.blog/en/p/abel/)ian extensions of algebraic number fields.
+[Hilbert](https://kenji.blog/en/p/hilbert/)'s conjecture is included as a special case where the modulus is trivial (when there is no ramification). Takagi generalized this to a form that allows arbitrary ramification, establishing a complete theory regarding [Abel](https://kenji.blog/en/p/abel/)ian extensions of algebraic number fields.
 
 ### Mathematical Beauty: Generalization of the [Kronecker](https://kenji.blog/en/p/kronecker/)-Weber Theorem
 
-The beauty of Class Field Theory lies in extending the **[Kronecker](https://kenji.blog/en/p/kronecker/)-Weber Theorem** for the field of rational numbers $\mathbb{Q}$ to general algebraic number fields. The [Kronecker](https://kenji.blog/en/p/kronecker/)-Weber Theorem states that "any finite [Abel](https://kenji.blog/en/p/abel/)ian extension of the rational number field is contained in a subfield of some cyclotomic field $\mathbb{Q}(\zeta_n)$."
+The beauty of Class Field Theory lies in extending the **[Kronecker](https://kenji.blog/en/p/kronecker/)-Weber Theorem** for the field of rational numbers $\mathbb{Q}$ to general algebraic number fields. The Kronecker-Weber Theorem states that "any finite [Abel](https://kenji.blog/en/p/abel/)ian extension of the rational number field is contained in a subfield of some cyclotomic field $\mathbb{Q}(\zeta_n)$."
 
 $$ L \subset \mathbb{Q}(\zeta_n) \quad (\text{where } \zeta_n \text{ is a primitive } n\text{-th root of unity}) $$
 
@@ -109,7 +109,7 @@ Beyond his mathematical achievements, Teiji [Takagi](https://kenji.blog/en/p/tak
 - **"Lectures on Elementary Number Theory"**: A textbook explaining everything from the basics of number theory to Gauss's law of reciprocity.
 - **"Historical Tales of Modern Mathematics"**: A historical book that vividly depicts the ensemble of mathematicians in the 19th century. It conveys the drama of mathematical development.
 
-The seeds he sowed were passed on to Japanese mathematicians who would later be active worldwide, such as [Kunihiko Kodaira](https://kenji.blog/en/p/kodaira-kunihiko/), [Kiyosi Ito](https://kenji.blog/en/p/ito-kiyosi/), and furthermore, [Goro Shimura](https://kenji.blog/en/p/shimura-goro/) and [Yutaka Taniyama](https://kenji.blog/en/p/taniyama-yutaka/).
+The seeds he sowed were passed on to Japanese mathematicians who would later be active worldwide, such as [Kunihiko Kodaira](https://kenji.blog/en/p/kodaira-kunihiko/), Kiyosi Ito, and furthermore, Goro Shimura and [Yutaka Taniyama](https://kenji.blog/en/p/taniyama-yutaka/).
 
 ## Conclusion
 

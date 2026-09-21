@@ -252,7 +252,7 @@ flowchart TD
 
 باستخدام GitHub Copilot Chat في VS Code، أو `ChatGPT.nvim` أو `Copilot.vim` في Neovim، يمكنك إرسال مطالبات (prompts) مثل التالية دون مغادرة المحرر.
 
-> "قم بإنشاء مخطط تفصيلي للمبتدئين باستخدام البنية الهرمية لـ Markdown حول العناصر التقنية التالية: [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)"
+> "قم بإنشاء مخطط تفصيلي للمبتدئين باستخدام البنية الهرمية لـ Markdown حول العناصر التقنية التالية: [Docker](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/), Kubernetes, [CI/CD](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)"
 
 عندئذٍ، سيتم إنشاء عناوين Markdown وقوائم نقطية على الفور. كل ما علينا فعله هو إضافة التفاصيل إلى هذا الهيكل.
 

@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 Estas bibliotecas abstrajeron procesos complejos como "almacenar en caché el estado del servidor localmente y sincronizarlo cuando sea necesario".
 Como resultado, los datos que se deben gestionar en un almacén (store) global como [Redux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) se redujeron drásticamente solo al "estado del cliente puro", aligerando significativamente la carga de la gestión de estado.
 
-## 8. Gestión del estado atómico (Atomic [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) Management): [Recoil](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) y [Jotai](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/)
+## 8. Gestión del estado atómico (Atomic [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) Management): Recoil y [Jotai](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/)
 
 Después de aislar el Server State, comenzó una nueva competencia sobre cómo gestionar el Client State restante de manera eficiente.
 Para resolver el modelo de renderizado de React (top-down) y los problemas de rendimiento de la [Context API](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/), surgió un enfoque llamado **Gestión del estado atómico (Atomic [State Management](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/))**.
@@ -444,7 +444,7 @@ El estado renderizado en el servidor es serializado e integrado en el HTML, y el
 
 ## 13. Conclusión: ¿Hacia dónde se dirige la gestión de estado?
 
-Empezando con la confusión del modelo MVC, logrando un estado predecible gracias a [Flux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/), su simplificación a través de los Hooks, la separación del Server [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/), la eficiencia de los Atomic y Proxy, y terminando con Signals, y su reactividad de grano fino.
+Empezando con la confusión del modelo MVC, logrando un estado predecible gracias a [Flux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/)/Redux, su simplificación a través de los Hooks, la separación del Server [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/), la eficiencia de los Atomic y Proxy, y terminando con Signals, y su reactividad de grano fino.
 
 Al observar estos quince años de historia en la gestión de estado en frontend, se hace evidente una tendencia: **"se evoluciona en la dirección de reducir el código repetitivo y la carga cognitiva de los desarrolladores, a la vez que el sistema subyacente (frameworks o compiladores) optimiza automáticamente el rendimiento"**.
 

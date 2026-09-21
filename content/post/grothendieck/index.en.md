@@ -8,7 +8,7 @@ categories: ["Mathematics", "Biography"]
 tags: ["Grothendieck", "Algebraic Geometry", "Scheme Theory", "Category Theory"]
 ---
 
-# [[Alexander Grothendieck](https://kenji.blog/en/p/grothendieck/): The Life and Achievements of the 20th Century's Greatest Mathematician](https://kenji.blog/p/grothendieck/)
+# [Alexander Grothendieck: The Life and Achievements of the 20th Century's Greatest Mathematician](https://kenji.blog/p/grothendieck/)
 
 [Alexander Grothendieck](https://kenji.blog/en/p/grothendieck/) is one of the greatest mathematicians in history who brought about a fundamental paradigm shift in the mathematics community of the late 20th century, particularly in the field of algebraic geometry. His achievements went far beyond solving individual open problems; they fundamentally reconstructed the very language and conceptual framework of mathematics itself. In this article, we will provide a detailed explanation of his extraordinary and dramatic life, as well as his immeasurable impact on modern mathematics.
 

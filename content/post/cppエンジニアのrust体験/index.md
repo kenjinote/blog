@@ -13,7 +13,7 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 現代のソフトウェアエンジニアリングにおいて、C++と[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)はシステムプログラミングの最前線に立つ二大巨頭です。長年にわたり、C++はオペレーティングシステム、組み込みデバイス、ゲームエンジン、高頻度取引（HFT）システムなど、ハードウェアの極限のパフォーマンスを引き出す領域において絶対的な王として君臨してきました。私自身もシニアC++エンジニアとして、C++98時代の生[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)のジャングルから始まり、C++11によるモダン化の波（スマートポインタ、ラムダ式、`auto`の導入）、そしてC++14/17/20と続く仕様の巨大化に並走しながらコードを書き続けてきました。
 
-しかし近年、C++が抱える構造的な課題—特に「メモリ安全性の欠如」によるセキュリティ[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)（CVEの約7割がメモリ起因と言われています）と、「果てしなく複雑化する仕様と未定義動作（UB）」—に対する解決策として、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)が劇的な台頭を見せています。Linuxカーネルへの公式採用や、Microsoft、Google、AWSといった巨大テック企業による大規模な[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)への移行プロジェクトは、単なる一時的な流行ではなく、システムプログラミングのパラダイムシフトを意味しています。
+しかし近年、C++が抱える構造的な課題—特に「メモリ安全性の欠如」によるセキュリティ[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)（CVEの約7割がメモリ起因と言われています）と、「果てしなく複雑化する仕様と未定義動作（UB）」—に対する解決策として、Rustが劇的な台頭を見せています。Linuxカーネルへの公式採用や、Microsoft、Google、AWSといった巨大テック企業による大規模な[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)への移行プロジェクトは、単なる一時的な流行ではなく、システムプログラミングのパラダイムシフトを意味しています。
 
 本記事では、生粋のC++エンジニアが実際にRustを深く学び、実戦で利用して感じた「メリット」と「デメリット」を、言語仕様の根幹に関わる技術的な観点から徹底的に比較・解説します。
 
@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)では、変数の所有権が移動した時点で、元の変数はコンパイラによって「未初期化」状態と同等に扱われ、以降のアクセスを完全に遮断します。これにより、「Use-After-Free（解放後メモリ使用）」や「Dangling [Pointer](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（ダングリング[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）」といったバグは、理論上コンパイルを通過することができません。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)では、変数の所有権が移動した時点で、元の変数はコンパイラによって「未初期化」状態と同等に扱われ、以降のアクセスを完全に遮断します。これにより、「Use-After-Free（解放後メモリ使用）」や「Dangling Pointer（ダングリング[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）」といったバグは、理論上コンパイルを通過することができません。
 
 ```mermaid
 graph TD
@@ -266,7 +266,7 @@ fn draw_dynamic(item: &dyn Drawable) {
 }
 ```
 
-[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の動的ディスパッチ（`dyn Trait`）の最大の特徴は、データ構造内にvptrを持たず、 **ファット[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（Fat [Pointer](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）** を使用する点です。ファットポインタは「データへのポインタ」と「vtableへのポインタ」をペアで保持します。これにより、外部のライブラリで定義された型に対して、後からトレイトを実装（拡張）して動的ディスパッチにかけることが非常に容易になっています。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の動的ディスパッチ（`dyn Trait`）の最大の特徴は、データ構造内にvptrを持たず、 **ファットポインタ（Fat [Pointer](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）** を使用する点です。ファットポインタは「データへのポインタ」と「vtableへのポインタ」をペアで保持します。これにより、外部のライブラリで定義された型に対して、後からトレイトを実装（拡張）して動的ディスパッチにかけることが非常に容易になっています。
 
 ---
 
@@ -298,7 +298,7 @@ graph TD
 ここまで[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の長所を語りましたが、C++エンジニアがRustを実戦投入するにあたって直面する「壁」やデメリットも確実に存在します。
 
 ## 1. 苛烈なボローチェッカーとの格闘
-C++で「何となく生の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)で繋いでいた」データ構造（例えば双方向リンクリストや、[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)構造、自己参照構造体など）を[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)でそのまま実装しようとすると、所有権とライフタイムの制約によりコンパイルが通りません。ボローチェッカーを満足させるためには、`Rc<RefCell<T>>` のような複雑なラップを行うか、アリーナアロケータやインデックスベースの管理に設計を根本から見直す必要があります。
+C++で「何となく生の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)で繋いでいた」データ構造（例えば双方向リンクリストや、グラフ構造、自己参照構造体など）を[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)でそのまま実装しようとすると、所有権とライフタイムの制約によりコンパイルが通りません。ボローチェッカーを満足させるためには、`Rc<RefCell<T>>` のような複雑なラップを行うか、アリーナアロケータやインデックスベースの管理に設計を根本から見直す必要があります。
 
 ## 2. コンパイル時間の長さ
 C++もテンプレートのネストによってコンパイルが遅くなりますが、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)のコンパイル時間（特にゼロからのクリーンビルド）も決して短くありません。LLVMの強力な最適化パス、マクロの展開、ジェネリクスの単相化（モノモルフィゼーション）が重なるため、大規模プロジェクトではビルド時間がボトルネックになります。開発中は `cargo check` を多用するなどの工夫が必須です。

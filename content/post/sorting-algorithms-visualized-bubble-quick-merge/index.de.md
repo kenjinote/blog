@@ -884,6 +884,6 @@ def merge_sort(arr):
 - 安定性が必要な場合や、最悪計算量を保証したい場合は ** マージソート ** が選ばれます。
 - メモリ制約が厳しく、インプレースで安定した性能を出したい場合は ** [ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソート ** が適しています。
 
-近代的な[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)（Python, [Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)など）の標準ライブラリでは、これらのアルゴリズムの長所を組み合わせたハイブリッド手法（TimSortやIntroSortなど）が採用されており、開発者が自分でソートアルゴリズムをゼロから実装する機会は減っています。しかし、その内部でどのようなトレードオフが考慮されているかを理解することは、よりパフォーマンスの高い堅牢なソフトウェアを設計するための重要な基盤となります。
+近代的な[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)（Python, Java, [Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)など）の標準ライブラリでは、これらのアルゴリズムの長所を組み合わせたハイブリッド手法（TimSortやIntroSortなど）が採用されており、開発者が自分でソートアルゴリズムをゼロから実装する機会は減っています。しかし、その内部でどのようなトレードオフが考慮されているかを理解することは、よりパフォーマンスの高い堅牢なソフトウェアを設計するための重要な基盤となります。
 
 この記事が、あなたのアルゴリズム学習と実務開発の助けになることを願っています。

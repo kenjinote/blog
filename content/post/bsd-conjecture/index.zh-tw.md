@@ -63,7 +63,7 @@ graph TD
 
 ## 3. 莫德爾定理與秩（Rank）
 
-1922年，[路易斯·莫德爾](https://kenji.blog/zh-tw/p/mordell/)（[Louis Mordell](https://kenji.blog/zh-tw/p/mordell/)）證明了關於有理點群 $E(\mathbb{Q})$ 結構的決定性定理。後來[安德烈·韋伊](https://kenji.blog/zh-tw/p/weil/)（[André Weil](https://kenji.blog/zh-tw/p/weil/)）將其推廣到更一般的代數體和阿貝爾簇，被稱為莫德爾-韋伊定理。
+1922年，[路易斯·莫德爾](https://kenji.blog/zh-tw/p/mordell/)（Louis Mordell）證明了關於有理點群 $E(\mathbb{Q})$ 結構的決定性定理。後來安德烈·韋伊（[André Weil](https://kenji.blog/zh-tw/p/weil/)）將其推廣到更一般的代數體和阿貝爾簇，被稱為莫德爾-韋伊定理。
 
 ### 3.1. 莫德爾定理 (Mordell's Theorem)
 

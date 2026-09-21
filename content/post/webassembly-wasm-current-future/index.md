@@ -246,7 +246,7 @@ flowchart TD
     B -->|安全性の検証・権限チェック| C[ホスト OS e.g. Linux, Windows]
 ```
 
-## 7.2 [Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)との代替・共存
+## 7.2 [Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)との代替・共存
 Dockerの発明者であるSolomon Hykes氏は、「もし2008年にWasmとWASIが存在していたら、Dockerを作る必要はなかった」と発言し話題になりました。
 Wasmはコンテナよりもはるかに軽量で起動が速く（数ミリ秒）、OSやCPUアーキテクチャに依存しないという強力なメリットを持っています。
 現在では、[Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)上でDockerコンテナの代わりにWasmモジュールを直接オーケストレーションするプロジェクト（KwasmやSpinなど）が活発に開発されています。

@@ -301,7 +301,7 @@ jobs:
 WordPressからHugoへの移行を完了したサイト運営者は、多くの場合、以下の3つの顕著なメリットを実感します。
 
 ### 6.1 サイトスピードとCore [Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)の劇的な向上
-データベースクエリやサーバーサイドのレンダリングが排除された結果、ページのロード時間はミリ秒単位まで短縮されます。これはGoogleのランキング要因である「[Core Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)」（[LCP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）スコアの大幅な向上に直結します。ユーザーの直帰率の低下と、SEO評価の向上が期待できます。
+データベースクエリやサーバーサイドのレンダリングが排除された結果、ページのロード時間はミリ秒単位まで短縮されます。これはGoogleのランキング要因である「[Core Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)」（LCP, FID/INP, [CLS](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）スコアの大幅な向上に直結します。ユーザーの直帰率の低下と、SEO評価の向上が期待できます。
 
 ### 6.2 セキュリティ脅威からの解放
 WordPressは世界中で広く使われているため、常に攻撃対象となっています。プラグインの[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)を突かれた改ざんや、ブルートフォース攻撃によるログイン突破などのリスクがつきまといます。

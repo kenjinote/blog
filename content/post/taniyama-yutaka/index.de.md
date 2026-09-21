@@ -8,7 +8,7 @@ categories: ["mathematics", "biography"]
 tags: ["Yutaka Taniyama", "Mathematik", "Großer Fermatscher Satz", "Taniyama-Shimura-Vermutung", "Elliptische Kurven", "Modulformen"]
 ---
 
-# [[Yutaka Taniyama](https://kenji.blog/de/p/taniyama-yutaka/): Das Leben und die Errungenschaften des genialen Mathematikers, der ungelöste Probleme herausforderte](https://kenji.blog/p/taniyama-yutaka/)
+# [Yutaka Taniyama: Das Leben und die Errungenschaften des genialen Mathematikers, der ungelöste Probleme herausforderte](https://kenji.blog/p/taniyama-yutaka/)
 
 Der Beweis des **Großen [Fermat](https://kenji.blog/de/p/fermat/)schen Satzes** ist eine der dramatischsten und wichtigsten Entwicklungen in der modernen Mathematik. Hinter dieser monumentalen Errungenschaft verbirgt sich eine erstaunliche Vermutung, die von zwei japanischen Mathematikern aufgestellt wurde. Einer von ihnen war **[Yutaka Taniyama](https://kenji.blog/de/p/taniyama-yutaka/)** (1927 - 1958), der in jungen Jahren verstarb. In diesem Artikel tauchen wir tief in die große Vision ein, die hinter der von ihm vorgeschlagenen "Taniyama-Shimura-Vermutung" steht, sowie in sein eigenes turbulentes Leben.
 
@@ -101,7 +101,7 @@ flowchart TD
 
 ## 7. Beweis der Vermutung und das Langlands-Programm
 
-Die Person, die von dieser Tatsache am meisten inspiriert war, war der britische Mathematiker **[Andrew Wiles](https://kenji.blog/de/p/wiles/)**. Er war seit seiner Kindheit vom Großen [Fermat](https://kenji.blog/de/p/fermat/)schen Satz fasziniert und beschloss, sein Leben dem Beweis dieses Satzes zu widmen. Nach sieben Jahren geheimer Forschung verkündete er 1993, er habe "die Taniyama-Shimura-Vermutung für semistabile elliptische Kurven bewiesen". Obwohl in einem Teil des Beweises eine Lücke gefunden wurde, gelang es ihm mit Hilfe seines ehemaligen Studenten Richard Taylor, die Lücke 1995 erfolgreich zu schließen und den vollständigen Beweis zu veröffentlichen. Infolgedessen wurde der von Taniyama hinterlassene entscheidende Teil der Vermutung bewiesen, und gleichzeitig wurde der Große [Fermat](https://kenji.blog/de/p/fermat/)sche Satz zu einer ewigen Wahrheit.
+Die Person, die von dieser Tatsache am meisten inspiriert war, war der britische Mathematiker **[Andrew Wiles](https://kenji.blog/de/p/wiles/)**. Er war seit seiner Kindheit vom Großen Fermatschen Satz fasziniert und beschloss, sein Leben dem Beweis dieses Satzes zu widmen. Nach sieben Jahren geheimer Forschung verkündete er 1993, er habe "die Taniyama-Shimura-Vermutung für semistabile elliptische Kurven bewiesen". Obwohl in einem Teil des Beweises eine Lücke gefunden wurde, gelang es ihm mit Hilfe seines ehemaligen Studenten Richard Taylor, die Lücke 1995 erfolgreich zu schließen und den vollständigen Beweis zu veröffentlichen. Infolgedessen wurde der von Taniyama hinterlassene entscheidende Teil der Vermutung bewiesen, und gleichzeitig wurde der Große [Fermat](https://kenji.blog/de/p/fermat/)sche Satz zu einer ewigen Wahrheit.
 
 Anschließend wurde die Taniyama-Shimura-Vermutung durch weitere Bemühungen von Christophe Breuil, Brian Conrad, Fred Diamond und Richard Taylor im Jahr 2001 für alle elliptischen Kurven vollständig bewiesen. Heute ist dieser Satz als "Modularitätssatz (Modularity Theorem)" bekannt.
 

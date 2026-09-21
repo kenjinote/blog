@@ -13,7 +13,7 @@ tags:
 
 ## 1. Pendahuluan: Misteri Matematika Paling Terkenal di Dunia
 
-Dalam sejarah matematika, ada sebuah masalah yang telah memikat dan menyiksa paling banyak orang. Itulah **[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)** ([Fermat's Last Theorem](https://kenji.blog/id/p/fermats-last-theorem/)). Dari sebuah catatan singkat yang ditinggalkan di margin buku favoritnya, "Arithmetica" karya [Diophantus](https://kenji.blog/id/p/diophantus/), oleh hakim Prancis abad ke-17 dan matematikawan amatir [Pierre de Fermat](https://kenji.blog/id/p/fermat/), dimulailah drama matematika epik selama 360 tahun.
+Dalam sejarah matematika, ada sebuah masalah yang telah memikat dan menyiksa paling banyak orang. Itulah **[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)** (Fermat's Last Theorem). Dari sebuah catatan singkat yang ditinggalkan di margin buku favoritnya, "Arithmetica" karya Diophantus, oleh hakim Prancis abad ke-17 dan matematikawan amatir [Pierre de Fermat](https://kenji.blog/id/p/fermat/), dimulailah drama matematika epik selama 360 tahun.
 
 Isi teoremanya sendiri sangat sederhana sehingga bahkan siswa sekolah menengah pertama pun dapat memahaminya.
 

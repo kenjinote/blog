@@ -303,7 +303,7 @@ stateDiagram-v2
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 Где $ h $ — коэффициент попадания в кэш ( $ 0 \le h \le 1 $ ), $ T_{cache} $ — время доступа к кэшу (около 1–4 нс), а $ T_{memory} $ — время доступа к основной памяти (около 100 нс).
-В зависимости от того, сделаем ли мы $ h $ равным 0.99 (подход C/[Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/)) или опустим его до 0.5 (переход по указателям в [Java](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/)), скорость выполнения цикла в приложении может различаться в десятки раз. Это истинная причина, по которой C++ и [Rust](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/) выбирают для игровых движков и систем высокочастотного трейдинга.
+В зависимости от того, сделаем ли мы $ h $ равным 0.99 (подход C/[Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/)) или опустим его до 0.5 (переход по указателям в Java), скорость выполнения цикла в приложении может различаться в десятки раз. Это истинная причина, по которой C++ и [Rust](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/) выбирают для игровых движков и систем высокочастотного трейдинга.
 
 ---
 

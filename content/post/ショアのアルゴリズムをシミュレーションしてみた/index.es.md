@@ -84,7 +84,7 @@ $$ a^r - 1 \equiv 0 \pmod N $$
 Si $r$ es par, se puede factorizar usando la fórmula de diferencia de cuadrados.
 $$ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $$
 
-Esto significa que $N$ tiene un factor común con $(a^{r/2} - 1)$ o con $(a^{r/2} + 1)$ (siempre que se cumpla la condición $a^{r/2} \not\equiv -1 \pmod N$). Por lo tanto, utilizando el algoritmo de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/), calculando
+Esto significa que $N$ tiene un factor común con $(a^{r/2} - 1)$ o con $(a^{r/2} + 1)$ (siempre que se cumpla la condición $a^{r/2} \not\equiv -1 \pmod N$). Por lo tanto, utilizando el algoritmo de [Euclides](https://kenji.blog/p/euclid/), calculando
 
 $$ p = \gcd(a^{r/2} - 1, N) $$
 $$ q = \gcd(a^{r/2} + 1, N) $$

@@ -24,9 +24,9 @@ In seiner Jugend zog die Familie nach Berlin, wo er eine hochwertige Grund- und 
 
 ## 3. Universitätszeit und [Kronecker](https://kenji.blog/de/p/kronecker/)s Einfluss
 
-[Hensel](https://kenji.blog/de/p/hensel/) studierte Mathematik an den Universitäten Bonn und Berlin. Damals war die Universität Berlin eines der weltweiten Zentren für mathematische Forschung, an dem Größen wie **[Karl Weierstraß](https://kenji.blog/de/p/weierstrass/)** und **Leopold [Kronecker](https://kenji.blog/de/p/kronecker/)** lehrten.
+[Hensel](https://kenji.blog/de/p/hensel/) studierte Mathematik an den Universitäten Bonn und Berlin. Damals war die Universität Berlin eines der weltweiten Zentren für mathematische Forschung, an dem Größen wie **Karl Weierstraß** und **Leopold [Kronecker](https://kenji.blog/de/p/kronecker/)** lehrten.
 
-Unter ihnen hatte [Kronecker](https://kenji.blog/de/p/kronecker/) den stärksten Einfluss auf [Hensel](https://kenji.blog/de/p/hensel/). Wie sein berühmtes Zitat „Die ganzen Zahlen hat der liebe Gott gemacht, alles andere ist Menschenwerk“ zeigt, war [Kronecker](https://kenji.blog/de/p/kronecker/) fest davon überzeugt, dass die gesamte Mathematik streng auf der Grundlage ganzer Zahlen rekonstruiert werden sollte. Unter [Kronecker](https://kenji.blog/de/p/kronecker/)s Anleitung widmete sich [Hensel](https://kenji.blog/de/p/hensel/) tief der Algebra und Zahlentheorie.
+Unter ihnen hatte [Kronecker](https://kenji.blog/de/p/kronecker/) den stärksten Einfluss auf Hensel. Wie sein berühmtes Zitat „Die ganzen Zahlen hat der liebe Gott gemacht, alles andere ist Menschenwerk“ zeigt, war Kronecker fest davon überzeugt, dass die gesamte Mathematik streng auf der Grundlage ganzer Zahlen rekonstruiert werden sollte. Unter Kroneckers Anleitung widmete sich [Hensel](https://kenji.blog/de/p/hensel/) tief der Algebra und Zahlentheorie.
 
 1884 promovierte [Hensel](https://kenji.blog/de/p/hensel/) an der Universität Berlin. Das Thema seiner Dissertation befasste sich mit den arithmetischen Eigenschaften algebraischer Funktionen, was als wichtiger Vorbote für seine spätere Entdeckung der **p-adischen Zahlen** dienen sollte.
 

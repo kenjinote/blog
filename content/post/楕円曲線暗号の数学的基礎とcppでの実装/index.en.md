@@ -67,7 +67,7 @@ The most basic finite field is the **prime field $\mathbb{F}_p$** using a prime 
 
 Calculating the **Modular Multiplicative Inverse** is extremely important in cryptographic implementations. To find $b^{-1}$ satisfying $b \times b^{-1} \equiv 1 \pmod p$, the following two main algorithms are used:
 
-1. **Extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm**: Fast, but depending on the implementation, the processing time can depend on the input values, leading to a risk of timing attacks.
+1. **Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm**: Fast, but depending on the implementation, the processing time can depend on the input values, leading to a risk of timing attacks.
 2. **[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)**: When $p$ is prime and $b \neq 0$, $b^{p-1} \equiv 1 \pmod p$ holds. Dividing both sides by $b$ yields $b^{p-2} \equiv b^{-1} \pmod p$. That is, the inverse is found by raising $b$ to the power of $p-2$. Exponentiation is easier to implement in constant time, so this method is preferred in cryptographic implementations.
 
 ---

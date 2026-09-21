@@ -8,7 +8,7 @@ categories: ["Mathematik", "Biografie"]
 tags: ["Grothendieck", "Algebraische Geometrie", "Schema-Theorie", "Kategorientheorie"]
 ---
 
-# [[Alexander Grothendieck](https://kenji.blog/de/p/grothendieck/): Leben und Werk des größten Mathematikers des 20. Jahrhunderts](https://kenji.blog/p/grothendieck/)
+# [Alexander Grothendieck: Leben und Werk des größten Mathematikers des 20. Jahrhunderts](https://kenji.blog/p/grothendieck/)
 
 [Alexander Grothendieck](https://kenji.blog/de/p/grothendieck/) ist einer der größten Mathematiker der Geschichte, der in der Mathematikergemeinschaft des späten 20. Jahrhunderts, insbesondere im Bereich der algebraischen Geometrie, einen grundlegenden Paradigmenwechsel herbeiführte. Seine Errungenschaften gingen weit über die Lösung einzelner offener Probleme hinaus; sie rekonstruierten die Sprache und den konzeptionellen Rahmen der Mathematik selbst von Grund auf. In diesem Artikel geben wir eine detaillierte Erklärung seines außergewöhnlichen und dramatischen Lebens sowie seines unermesslichen Einflusses auf die moderne Mathematik.
 

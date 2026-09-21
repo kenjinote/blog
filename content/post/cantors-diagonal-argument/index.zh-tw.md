@@ -183,4 +183,4 @@ $$
 2. 直到有理數為止，都與自然數的大小相同（可數無限）。
 3. 透過錯開對角線來創造新數字的論證，證明了實數多於自然數（不可數無限）。
 
-這種違反直覺卻絕對正確的邏輯之美，可以說是數學這門學問最大的魅力所在。對角線論證後來也被應用於[艾倫·圖靈](https://kenji.blog/zh-tw/p/turing/)（[Alan Turing](https://kenji.blog/zh-tw/p/turing/)）的停機問題以及[哥德爾不完備定理](https://kenji.blog/zh-tw/p/godels-incompleteness-theorems/)的證明等，構成了計算機科學與數理邏輯學根基的理論。
+這種違反直覺卻絕對正確的邏輯之美，可以說是數學這門學問最大的魅力所在。對角線論證後來也被應用於[艾倫·圖靈](https://kenji.blog/zh-tw/p/turing/)（Alan Turing）的停機問題以及[哥德爾不完備定理](https://kenji.blog/zh-tw/p/godels-incompleteness-theorems/)的證明等，構成了計算機科學與數理邏輯學根基的理論。

@@ -31,7 +31,7 @@ flowchart TD
 
 L'une des réalisations les plus connues de [Bachet](https://kenji.blog/fr/p/bachet/) est sa traduction de l'"Arithmetica" du mathématicien grec antique [Diophante](https://kenji.blog/fr/p/diophantus/) en latin, en y ajoutant des commentaires, et sa publication en 1621.
 
-Ce livre traduit devint le texte de référence pour les mathématiciens européens de l'époque souhaitant étudier l'algèbre antique et la théorie des nombres. L'une des anecdotes les plus célèbres est que [Pierre de Fermat](https://kenji.blog/fr/p/fermat/) a écrit son fameux "Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/)" dans la marge de son exemplaire de cette édition de [Bachet](https://kenji.blog/fr/p/bachet/).
+Ce livre traduit devint le texte de référence pour les mathématiciens européens de l'époque souhaitant étudier l'algèbre antique et la théorie des nombres. L'une des anecdotes les plus célèbres est que [Pierre de Fermat](https://kenji.blog/fr/p/fermat/) a écrit son fameux "Dernier Théorème de Fermat" dans la marge de son exemplaire de cette édition de [Bachet](https://kenji.blog/fr/p/bachet/).
 
 [Bachet](https://kenji.blog/fr/p/bachet/) ne s'est pas arrêté à une simple traduction ; il a ajouté ses propres et excellents commentaires et généralisations aux problèmes de [Diophante](https://kenji.blog/fr/p/diophantus/). Sans ses intuitions mathématiques, le développement de la théorie des nombres au XVIIe siècle aurait peut-être été beaucoup plus lent.
 
@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-$x$ et $y$ peuvent être concrètement calculés en développant l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) (l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) étendu), qui est devenu un théorème fondamental indispensable dans la cryptographie moderne (comme [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)). Dans les contextes qui valorisent l'exactitude historique, cela est parfois appelé le **théorème de [Bachet](https://kenji.blog/fr/p/bachet/)**.
+$x$ et $y$ peuvent être concrètement calculés en développant l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) (l'algorithme d'Euclide étendu), qui est devenu un théorème fondamental indispensable dans la cryptographie moderne (comme RSA). Dans les contextes qui valorisent l'exactitude historique, cela est parfois appelé le **théorème de [Bachet](https://kenji.blog/fr/p/bachet/)**.
 
 ## Conclusion
 

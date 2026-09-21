@@ -10,7 +10,7 @@ tags: ["恩斯特·庫默爾", "費馬最後定理", "理想數", "代數數論"
 
 # [恩斯特·庫默爾](https://kenji.blog/zh-tw/p/kummer/)：理想數之父與代數數論的黎明
 
-在數學的歷史上，對某個特定未解之謎的挑戰開啟了全新研究領域的現象並不罕見。恩斯特·愛德華·庫默爾 ( **Ernst Eduard [Kummer](https://kenji.blog/zh-tw/p/kummer/)** ) 就是一位創造了如此歷史轉折點的 19 世紀德國數學巨人。在與 **[費馬最後定理](https://kenji.blog/zh-tw/p/fermats-last-theorem/)** ( **[Fermat's Last Theorem](https://kenji.blog/zh-tw/p/fermats-last-theorem/)** ) 深刻搏鬥的過程中，他引入了具有突破性的 **理想數** ( **Ideal Numbers** ) 概念，為現代代數數論奠定了基礎。
+在數學的歷史上，對某個特定未解之謎的挑戰開啟了全新研究領域的現象並不罕見。恩斯特·愛德華·庫默爾 ( **Ernst Eduard [Kummer](https://kenji.blog/zh-tw/p/kummer/)** ) 就是一位創造了如此歷史轉折點的 19 世紀德國數學巨人。在與 **費馬最後定理** ( **[Fermat's Last Theorem](https://kenji.blog/zh-tw/p/fermats-last-theorem/)** ) 深刻搏鬥的過程中，他引入了具有突破性的 **理想數** ( **Ideal Numbers** ) 概念，為現代代數數論奠定了基礎。
 
 在本文中，我們將深入探討庫默爾波瀾壯闊的一生、圍繞他的充滿人情味的軼事，以及他在數學史上持續閃耀的輝煌成就。
 
@@ -64,7 +64,7 @@ $$
 
 不存在滿足該方程式的正整數解 $(x, y, z)$。
 
-1847 年，法國數學家[加布里埃爾·拉梅](https://kenji.blog/zh-tw/p/lame/) ( **[Gabriel Lamé](https://kenji.blog/zh-tw/p/lame/)** ) 和[奧古斯丁-路易·柯西](https://kenji.blog/zh-tw/p/cauchy/) ( **[Augustin-Louis Cauchy](https://kenji.blog/zh-tw/p/cauchy/)** ) 宣布他們已成功證明了這一定理。他們的方法是將因式分解擴展到複數（分圓域）領域。
+1847 年，法國數學家[加布里埃爾·拉梅](https://kenji.blog/zh-tw/p/lame/) ( **Gabriel Lamé** ) 和奧古斯丁-路易·柯西 ( **[Augustin-Louis Cauchy](https://kenji.blog/zh-tw/p/cauchy/)** ) 宣布他們已成功證明了這一定理。他們的方法是將因式分解擴展到複數（分圓域）領域。
 
 使用 $1$ 的本原 $p$ 次方根 $\zeta$（其中 $\zeta^p = 1, \zeta \neq 1$），方程式 $x^p + y^p = z^p$ 可以分解如下：
 

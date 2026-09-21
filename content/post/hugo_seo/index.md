@@ -313,7 +313,7 @@ expiryDate: "2026-12-31T23:59:59Z"
 
 ## 7. サイトパフォーマンスとCore [Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-SEOにおいて、タグの最適化と同じくらい重要なのが **ページの読み込み速度** です。Googleは[Core Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)（[LCP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）をランキング要因として組み込んでいます。
+SEOにおいて、タグの最適化と同じくらい重要なのが **ページの読み込み速度** です。Googleは[Core Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)（LCP, FID/INP, [CLS](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）をランキング要因として組み込んでいます。
 
 静的サイトであるHugoはもともとTTFB (Time to First Byte) が優れていますが、画像を多用するブログでは画像の最適化が必須です。Hugoの強力な画像処理機能（Image Processing）をフロントマターと組み合わせて使用することで、Next-genフォーマット（WebPなど）への変換やリサイズをビルド時に自動化できます。
 

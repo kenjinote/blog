@@ -134,7 +134,7 @@ Operasi basis data didefinisikan oleh operasi dasar berikut berdasarkan teori hi
 - Proyeksi (Projection, $\pi$): Ekstraksi atribut (kolom) tertentu.
 - Gabungan (Join, $\bowtie$): Perpotongan bersyarat dari beberapa relasi.
 
-Selanjutnya, memahami struktur dari indeks "[B-Tree](https://kenji.blog/id/p/b-tree-database-index-theory/) (Pohon B)" untuk mencari data yang diinginkan dalam sekejap dari sekumpulan catatan yang sangat banyak adalah praktik penerapan struktur data yang sangat baik. B-[Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) meminimalkan jumlah I/O pada disk sambil menjamin kecepatan pencarian sebesar $O(\log N)$. Anda tidak dapat membuat sistem yang kuat tanpa mengetahui sifat [ACID](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/) (Atomicity, [Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability) dari sebuah transaksi.
+Selanjutnya, memahami struktur dari indeks "[B-Tree](https://kenji.blog/id/p/b-tree-database-index-theory/) (Pohon B)" untuk mencari data yang diinginkan dalam sekejap dari sekumpulan catatan yang sangat banyak adalah praktik penerapan struktur data yang sangat baik. B-Tree meminimalkan jumlah I/O pada disk sambil menjamin kecepatan pencarian sebesar $O(\log N)$. Anda tidak dapat membuat sistem yang kuat tanpa mengetahui sifat ACID (Atomicity, [Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability) dari sebuah transaksi.
 
 ## 6. Keamanan dan Teori Kriptografi: Infrastruktur Sosial yang Didukung oleh Sulitnya Faktorisasi Prima
 

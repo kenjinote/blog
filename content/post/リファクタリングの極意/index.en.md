@@ -9,7 +9,7 @@ categories: ["programming", "cpp"]
 tags: ["C++", "Refactoring", "Modern C++", "Legacy Code"]
 ---
 
-# [[The Secret of Refactoring](https://kenji.blog/en/p/[リファクタリングの極意](https://kenji.blog/en/p/リファクタリングの極意/)/): Safely Improving Legacy C++ Code](https://kenji.blog/p/[リファクタリングの極意](https://kenji.blog/en/p/リファクタリングの極意/)/)
+# [The Secret of Refactoring/): Safely Improving Legacy C++ Code](https://kenji.blog/p/[リファクタリングの極意](https://kenji.blog/en/p/リファクタリングの極意/)/)
 
 In modern software development, the battle against "legacy code" is inevitable. Especially in a language like C++, legacy code poses a threat beyond comparison to that of other languages. Manual memory management (a storm of raw pointers and `new` / `delete`), abuse of global variables, lack of exception safety, and above all, the fact that "there are no tests." Michael Feathers boldly asserted in his renowned book *Working Effectively with Legacy Code* that "Code without tests is legacy code."
 
@@ -318,7 +318,7 @@ It is unrealistic to manually modify a large-scale legacy codebase. Enlisting th
 
 - **Clang-Tidy**: A powerful linter and static analysis tool for C++. By enabling the `modernize-*` checks, it can automatically apply (Fix-it) things like applying `auto`, replacing with `nullptr`, adding `override`, etc.
 - **AddressSanitizer (ASan)**: By integrating it as a compilation option (`-fsanitize=address`), it accurately pinpoints runtime memory leaks and buffer overruns. You should definitely enable it when running tests.
-- **Building a [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)**: Use [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) or GitLab CI to run builds, automated testing, and static analysis for every pull request, preventing the intrusion of new technical debt.
+- **Building a [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) Pipeline**: Use [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) or GitLab CI to run builds, automated testing, and static analysis for every pull request, preventing the intrusion of new technical debt.
 
 ---
 

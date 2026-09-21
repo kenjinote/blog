@@ -10,7 +10,7 @@ tags: ["選択公理", "ツォルンの補題", "ZFC公理系", "数学基礎論
 
 # [選択公理](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/)と[ツォルンの補題](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/)：数学の基礎を揺るがした「選択」の概念
 
-数学の歴史において、 **[選択公理](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/)** （Axiom of Choice）ほど議論を呼び、そして現代数学に不可欠となった公理はありません。本記事では、[選択公理](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/)とそれと同値な命題である **[ツォルンの補題](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/)** （Zorn's Lemma）について、基礎から深く掘り下げていきます。直感的な理解から、厳密な数学的定式化、歴史的背景、そして現代数学の様々な分野における応用まで、包括的に解説します。
+数学の歴史において、 **[選択公理](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/)** （Axiom of Choice）ほど議論を呼び、そして現代数学に不可欠となった公理はありません。本記事では、選択公理とそれと同値な命題である **[ツォルンの補題](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/)** （Zorn's Lemma）について、基礎から深く掘り下げていきます。直感的な理解から、厳密な数学的定式化、歴史的背景、そして現代数学の様々な分野における応用まで、包括的に解説します。
 
 ## 1. [選択公理](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/)とは何か？直感と厳密な定義
 
@@ -100,7 +100,7 @@ graph LR
     ZL -->|"証明"| AC
 ```
 
-[ツォルンの補題](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/)から[選択公理](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/)を導く証明は比較的平易です。選択関数の部分的な構成全体の集合を包含関係で半順序集合とし、[ツォルンの補題](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/)を適用して極大元を見つけることで、全定義域を持つ選択関数の存在を示します。
+[ツォルンの補題](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/)から選択公理を導く証明は比較的平易です。選択関数の部分的な構成全体の集合を包含関係で半順序集合とし、[ツォルンの補題](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/)を適用して極大元を見つけることで、全定義域を持つ選択関数の存在を示します。
 
 ## 4. 現代数学における[ツォルンの補題](https://kenji.blog/p/axiom-of-choice-and-zorns-lemma/)の圧倒的な応用力
 

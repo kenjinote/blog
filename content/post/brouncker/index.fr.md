@@ -16,7 +16,7 @@ Cet article fournit une explication détaillée de la vie et des réalisations m
 
 ## 2. Jeunesse et début de carrière
 
-[William Brouncker](https://kenji.blog/fr/p/brouncker/) (1620 - 5 avril 1684) est né en tant que fils aîné de [William Brouncker](https://kenji.blog/fr/p/brouncker/), 1er vicomte [Brouncker](https://kenji.blog/fr/p/brouncker/), et de Winifred Leigh. Bien qu'il y ait beaucoup de détails inconnus concernant son lieu de naissance exact et son éducation précoce, on pense qu'il a étudié à l'Université d'Oxford, y cultivant d'excellentes compétences linguistiques et un sens mathématique. En 1645, suite au décès de son père, il devint le 2ème vicomte [Brouncker](https://kenji.blog/fr/p/brouncker/).
+[William Brouncker](https://kenji.blog/fr/p/brouncker/) (1620 - 5 avril 1684) est né en tant que fils aîné de William Brouncker, 1er vicomte Brouncker, et de Winifred Leigh. Bien qu'il y ait beaucoup de détails inconnus concernant son lieu de naissance exact et son éducation précoce, on pense qu'il a étudié à l'Université d'Oxford, y cultivant d'excellentes compétences linguistiques et un sens mathématique. En 1645, suite au décès de son père, il devint le 2ème vicomte [Brouncker](https://kenji.blog/fr/p/brouncker/).
 
 À l'époque, l'Angleterre traversait la période chaotique de la Révolution puritaine (Première révolution anglaise), mais [Brouncker](https://kenji.blog/fr/p/brouncker/) s'est davantage consacré au monde universitaire qu'à la scène politique. Il avait un intérêt particulièrement fort pour les mathématiques et la musique, commençant à construire ses propres théories. En 1647, il obtint un doctorat en médecine de l'Université d'Oxford, mais son intérêt principal a toujours résidé dans les sciences exactes. Son jeune frère, Henry [Brouncker](https://kenji.blog/fr/p/brouncker/), était également connu pour être actif dans le monde politique et à la cour, tout en maintenant un intérêt pour les échecs et les mathématiques.
 
@@ -50,7 +50,7 @@ $$
 \frac{\pi}{2} = \frac{2}{1} \cdot \frac{2}{3} \cdot \frac{4}{3} \cdot \frac{4}{5} \cdot \frac{6}{5} \cdot \frac{6}{7} \cdot \frac{8}{7} \cdots
 $$
 
-[Wallis](https://kenji.blog/fr/p/wallis/) a montré ce résultat à [Brouncker](https://kenji.blog/fr/p/brouncker/) et lui a demandé s'il pouvait être exprimé sous une forme différente. En réponse, [Brouncker](https://kenji.blog/fr/p/brouncker/), utilisant des manipulations algébriques et un concept ingénieux de limites, a magistralement transformé cette équation en une fraction continue. C'est la **formule de [Brouncker](https://kenji.blog/fr/p/brouncker/)** suivante :
+[Wallis](https://kenji.blog/fr/p/wallis/) a montré ce résultat à Brouncker et lui a demandé s'il pouvait être exprimé sous une forme différente. En réponse, Brouncker, utilisant des manipulations algébriques et un concept ingénieux de limites, a magistralement transformé cette équation en une fraction continue. C'est la **formule de [Brouncker](https://kenji.blog/fr/p/brouncker/)** suivante :
 
 $$
 \frac{4}{\pi} = 1 + \frac{1^2}{2 + \frac{3^2}{2 + \frac{5^2}{2 + \frac{7^2}{2 + \ddots}}}}
@@ -76,7 +76,7 @@ En 1657, le grand mathématicien français [Pierre de Fermat](https://kenji.blog
 
 ### L'algorithme de [Brouncker](https://kenji.blog/fr/p/brouncker/)
 
-Ce sont [Wallis](https://kenji.blog/fr/p/wallis/) et [Brouncker](https://kenji.blog/fr/p/brouncker/) qui ont relevé ce défi. [Brouncker](https://kenji.blog/fr/p/brouncker/) en particulier a développé une méthode virtuellement équivalente à l'algorithme connu aujourd'hui sous le nom de « méthode des fractions continues », établissant une procédure pour trouver la solution entière positive minimale à l'équation pour tout nombre non carré $n$.
+Ce sont [Wallis](https://kenji.blog/fr/p/wallis/) et Brouncker qui ont relevé ce défi. [Brouncker](https://kenji.blog/fr/p/brouncker/) en particulier a développé une méthode virtuellement équivalente à l'algorithme connu aujourd'hui sous le nom de « méthode des fractions continues », établissant une procédure pour trouver la solution entière positive minimale à l'équation pour tout nombre non carré $n$.
 
 ```mermaid
 sequenceDiagram
@@ -98,7 +98,7 @@ $$
 x = 1766319049, \quad y = 226153980
 $$
 
-[Brouncker](https://kenji.blog/fr/p/brouncker/) a démontré que même des solutions aussi gigantesques pouvaient être dérivées de manière systématique en utilisant sa méthode. Ironiquement, en raison d'un malentendu de [Leonhard Euler](https://kenji.blog/fr/p/euler/), cette équation a été nommée plus tard d'après le mathématicien anglais John Pell, mais la plus grande contribution à l'établissement de la méthode de résolution appartient indéniablement à [Brouncker](https://kenji.blog/fr/p/brouncker/).
+[Brouncker](https://kenji.blog/fr/p/brouncker/) a démontré que même des solutions aussi gigantesques pouvaient être dérivées de manière systématique en utilisant sa méthode. Ironiquement, en raison d'un malentendu de Leonhard Euler, cette équation a été nommée plus tard d'après le mathématicien anglais John Pell, mais la plus grande contribution à l'établissement de la méthode de résolution appartient indéniablement à [Brouncker](https://kenji.blog/fr/p/brouncker/).
 
 ## 6. Autres réalisations et dernières années
 

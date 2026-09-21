@@ -68,7 +68,7 @@ se llama **Clase de Hodge** (Hodge Class).
 
 Estamos listos. La afirmación de la Conjetura de Hodge es sorprendentemente poderosa aunque muy simple.
 
-> **[Conjetura de Hodge ([Hodge Conjecture](https://kenji.blog/es/p/hodge-conjecture/))](https://kenji.blog/p/hodge-conjecture/)**
+> **[Conjetura de Hodge (Hodge Conjecture)](https://kenji.blog/p/hodge-conjecture/)**
 > Cualquier clase de Hodge sobre una variedad algebraica proyectiva no singular X sobre el cuerpo de los números complejos se expresa mediante una combinación lineal de coeficientes racionales de ciclos algebraicos.
 
 En otras palabras, afirma que "las clases de cohomología (clases de Hodge) que parecen algebraico-geométricas desde la perspectiva de la topología y el análisis complejo surgen realmente de formas construidas a partir de ecuaciones algebraicas (ciclos algebraicos)".

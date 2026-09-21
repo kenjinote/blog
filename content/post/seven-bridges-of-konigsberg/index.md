@@ -14,7 +14,7 @@ tags: ["Graph Theory", "Topology", "Euler", "Mathematics"]
 
 18世紀、プロイセン王国の都市ケーニヒスベルク（現在のロシア連邦カリーニングラード）には、プレーゲル川という大きな川が流れており、その中州と両岸を結ぶように七つの橋が架けられていました。当時の市民たちは、夕暮れ時の散歩の際に次のような遊びを思いつきました。「街にある七つの橋を、すべて一度ずつ渡って、元の出発点に戻ってくることができるだろうか？」
 
-この一見すると単なるパズルに過ぎないような問題が、天才数学者 **レオンハルト・[オイラー](https://kenji.blog/p/euler/)** ([Leonhard Euler](https://kenji.blog/p/euler/)) の手に渡ったとき、数学の世界に革命が起きました。[オイラー](https://kenji.blog/p/euler/)はこの問題が不可能であることを証明しただけでなく、その過程で空間の性質を全く新しい視点から捉え直し、 **[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)** ([Graph Theory](https://kenji.blog/p/graph-theory-dijkstra-a-star/)) と **トポロジー** (Topology、位相幾何学) という、現代数学において極めて重要な二つの分野の基礎を築いたのです。
+この一見すると単なるパズルに過ぎないような問題が、天才数学者 **レオンハルト・[オイラー](https://kenji.blog/p/euler/)** (Leonhard Euler) の手に渡ったとき、数学の世界に革命が起きました。オイラーはこの問題が不可能であることを証明しただけでなく、その過程で空間の性質を全く新しい視点から捉え直し、 **グラフ理論** ([Graph Theory](https://kenji.blog/p/graph-theory-dijkstra-a-star/)) と **トポロジー** (Topology、位相幾何学) という、現代数学において極めて重要な二つの分野の基礎を築いたのです。
 
 本記事では、[ケーニヒスベルクの七つの橋](https://kenji.blog/p/seven-bridges-of-konigsberg/)の問題の歴史的背景、[オイラー](https://kenji.blog/p/euler/)による鮮やかな解決方法、そしてそれが現代の科学やテクノロジーにどのように結びついているのかを、数学的な詳細を交えながら深く掘り下げていきます。単なる歴史の紹介にとどまらず、その背後にある数理的構造の美しさを堪能してください。
 
@@ -38,9 +38,9 @@ tags: ["Graph Theory", "Topology", "Euler", "Mathematics"]
 
 市民たちのこの噂は、やがてロシアのサンクトペテルブルク科学アカデミーに滞在していたスイス出身の偉大な数学者、 **レオンハルト・[オイラー](https://kenji.blog/p/euler/)** の耳に届きました。1735年のことです。
 
-当初、[オイラー](https://kenji.blog/p/euler/)はこの問題に対して「これは数学ではなく、単なる論理遊びに過ぎないのではないか」と感じていたようです。当時の数学の主流は、[ユークリッド](https://kenji.blog/p/euclid/)幾何学（長さ、角度、面積、体積などを扱う）や代数学、あるいは[ニュートン](https://kenji.blog/p/newton/)や[ライプニッツ](https://kenji.blog/p/leibniz/)によって創始されたばかりの微分積分学でした。ケーニヒスベルクの橋の問題は、橋の長さが何メートルであるか、島々の面積がどれくらいか、橋が川に対してどのような角度で架かっているかといった、伝統的な幾何学的性質には全く依存していません。重要なのは、「どの陸地とどの陸地が、何本の橋で繋がっているか」という純粋な **繋がり（接続）** の関係だけでした。
+当初、[オイラー](https://kenji.blog/p/euler/)はこの問題に対して「これは数学ではなく、単なる論理遊びに過ぎないのではないか」と感じていたようです。当時の数学の主流は、ユークリッド幾何学（長さ、角度、面積、体積などを扱う）や代数学、あるいはニュートンや[ライプニッツ](https://kenji.blog/p/leibniz/)によって創始されたばかりの微分積分学でした。ケーニヒスベルクの橋の問題は、橋の長さが何メートルであるか、島々の面積がどれくらいか、橋が川に対してどのような角度で架かっているかといった、伝統的な幾何学的性質には全く依存していません。重要なのは、「どの陸地とどの陸地が、何本の橋で繋がっているか」という純粋な **繋がり（接続）** の関係だけでした。
 
-これは、当時の[ユークリッド](https://kenji.blog/p/euclid/)幾何学の計量的な枠組みでは扱うことができない、全く新しいタイプの幾何学的問題だったのです。しかし、[オイラー](https://kenji.blog/p/euler/)は次第にこの問題の奥深さに気づき始めました。彼は、かつてゴットフリート・ヴィルヘルム・[ライプニッツ](https://kenji.blog/p/leibniz/)（Gottfried Wilhelm Leibniz）が夢想した「位置の解析（Analysis Situs）」あるいは「位置の幾何学（Geometria Situs）」に関わる重要な問題であると認識し、本格的にこの問題の解明に取り組む決意をしたのです。
+これは、当時の[ユークリッド](https://kenji.blog/p/euclid/)幾何学の計量的な枠組みでは扱うことができない、全く新しいタイプの幾何学的問題だったのです。しかし、オイラーは次第にこの問題の奥深さに気づき始めました。彼は、かつてゴットフリート・ヴィルヘルム・[ライプニッツ](https://kenji.blog/p/leibniz/)（Gottfried Wilhelm Leibniz）が夢想した「位置の解析（Analysis Situs）」あるいは「位置の幾何学（Geometria Situs）」に関わる重要な問題であると認識し、本格的にこの問題の解明に取り組む決意をしたのです。
 
 ## [オイラー](https://kenji.blog/p/euler/)の抽象化：不要な情報を削ぎ落とす
 
@@ -51,7 +51,7 @@ tags: ["Graph Theory", "Topology", "Euler", "Mathematics"]
 1. **陸地（島や岸）** を、大きさを持たない単なる「点」として表す。これを現代の用語で **頂点** (Vertex) あるいは **ノード** (Node) と呼びます。
 2. **橋** を、頂点と頂点を結ぶ「線」として表す。これを **辺** (Edge) あるいは **リンク** (Link) と呼びます。線の曲がり具合や長さは問題にしません。
 
-このように、有限個の頂点と、それらを結ぶ辺の集合として表現された離散的な構造を、数学では **[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** ([Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) と呼びます。これが、現在私たちが「[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)」と呼んでいる分野のまさに誕生の瞬間でした。
+このように、有限個の頂点と、それらを結ぶ辺の集合として表現された離散的な構造を、数学では **[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** (Graph) と呼びます。これが、現在私たちが「[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)」と呼んでいる分野のまさに誕生の瞬間でした。
 
 以下の Mermaid 図は、ケーニヒスベルクの街の地理的地図が、どのようにして抽象的な[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)表現へと変換されたかを示しています。
 
@@ -97,7 +97,7 @@ graph TD
 2. **[オイラー](https://kenji.blog/p/euler/)路 (Eulerian Path)** ：出発点と終着点が異なる頂点である場合。
    この場合、出発点からは「最初に出て行く」ための辺が1つ余分に必要となり、終着点には「最後に入ってくる」ための辺が1つ余分に必要となります。したがって、出発点と終着点の2つの頂点だけは辺のペアが完結せず、 **奇数** (Odd) の次数を持つことになります。それ以外のすべての通過点の次数は偶数でなければなりません。
 
-これが、[オイラー](https://kenji.blog/p/euler/)が厳密に証明した、[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)における最も基本的で有名な定理（[オイラー](https://kenji.blog/p/euler/)の定理）です。
+これが、[オイラー](https://kenji.blog/p/euler/)が厳密に証明した、グラフ理論における最も基本的で有名な定理（[オイラー](https://kenji.blog/p/euler/)の定理）です。
 
 数式を用いてこの定理をより厳密に表現すると、連結な無向[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) $G = (V, E)$ において：
 
@@ -111,7 +111,7 @@ graph TD
 
 ## ケーニヒスベルクのグラフへの適用と結論
 
-さて、[オイラー](https://kenji.blog/p/euler/)が演繹的な推論によって導き出したこの美しく完璧な定理を、実際の[ケーニヒスベルクの七つの橋](https://kenji.blog/p/seven-bridges-of-konigsberg/)の[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)に当てはめてみましょう。
+さて、[オイラー](https://kenji.blog/p/euler/)が演繹的な推論によって導き出したこの美しく完璧な定理を、実際のケーニヒスベルクの七つの橋の[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)に当てはめてみましょう。
 
 抽象化された4つの陸地（頂点 $A, B, C, D$ ）それぞれの次数を数えてみます。
 

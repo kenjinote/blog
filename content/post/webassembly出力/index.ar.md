@@ -17,7 +17,7 @@ tags: ["C++", "Rust", "Wasm", "JavaScript"]
 
 ## 2. نظرة عامة على [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/)) وبنيته
 
-WebAssembly هو تنسيق أوامر ثنائي لآلة افتراضية تعتمد على المكدس ([Stack](https://kenji.blog/ar/p/c-language-pointers-memory-management-stack-heap/)-based virtual machine). تم تصميمه كـ "هدف تجميع محمول" يمكن التحويل البرمجي إليه من لغات مثل C/C++، [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، [Go](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)، و Zig، ويهدف إلى التنفيذ بسرعة تقترب من السرعة الأصلية على متصفحات الويب.
+WebAssembly هو تنسيق أوامر ثنائي لآلة افتراضية تعتمد على المكدس ([Stack](https://kenji.blog/ar/p/c-language-pointers-memory-management-stack-heap/)-based virtual machine). تم تصميمه كـ "هدف تجميع محمول" يمكن التحويل البرمجي إليه من لغات مثل C/C++، Rust، [Go](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)، و Zig، ويهدف إلى التنفيذ بسرعة تقترب من السرعة الأصلية على متصفحات الويب.
 
 يوضح الشكل التالي التدفق العام لسلسلة الأدوات (toolchain) بدءًا من توليد WebAssembly من C++ و [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) حتى تنفيذه في المتصفح.
 
@@ -139,7 +139,7 @@ Module.onRuntimeInitialized = () => {
 
 ## 5. النهج باستخدام [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) و `wasm-pack`
 
-توفر [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) دعمًا من الدرجة الأولى لـ [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، وباستخدام أدوات `wasm-bindgen` و `wasm-pack`، يمكن تحقيق تكامل متقدم بين JavaScript و [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/). في حين أن Emscripten يتبع نهج "إحضار وقت تشغيل C/C++ الضخم إلى المتصفح"، فإن `wasm-pack` في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) يتبع نهج "إنشاء الروابط الضرورية فقط (كود الغراء JS)".
+توفر [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) دعمًا من الدرجة الأولى لـ WebAssembly، وباستخدام أدوات `wasm-bindgen` و `wasm-pack`، يمكن تحقيق تكامل متقدم بين JavaScript و Rust. في حين أن Emscripten يتبع نهج "إحضار وقت تشغيل C/C++ الضخم إلى المتصفح"، فإن `wasm-pack` في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) يتبع نهج "إنشاء الروابط الضرورية فقط (كود الغراء JS)".
 
 ### كود تنفيذ [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)
 

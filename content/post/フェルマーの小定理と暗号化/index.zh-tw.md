@@ -13,7 +13,7 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 在現代數位社會，特別是透過網際網路進行通訊時，「加密」已成為不可或缺的基礎技術。我們能透過網頁瀏覽器經由 HTTPS 安全地瀏覽網站、在網路銀行進行金融交易，以及在通訊應用程式中進行私密對話，全是因為有高度數學理論支持的加密協定在背後運作。其中扮演特別重要角色的就是「公開金鑰加密」，而其代表正是 **[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密** 。
 
-包含 RSA 加密在內的許多加密演算法，其安全性與正確性在很大程度上依賴於 17 世紀法國數學家皮耶·德·費馬（[Pierre de Fermat](https://kenji.blog/zh-tw/p/fermat/)）所發現的一個非常優美且強大的定理。這就是 **[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/zh-tw/p/fermats-little-theorem/)）** 。此外，將其一般化的[李昂哈德·歐拉](https://kenji.blog/zh-tw/p/euler/)（[Leonhard Euler](https://kenji.blog/zh-tw/p/euler/)）定理，在密碼學理論中也發揮了決定性的作用。
+包含 RSA 加密在內的許多加密演算法，其安全性與正確性在很大程度上依賴於 17 世紀法國數學家皮耶·德·費馬（[Pierre de Fermat](https://kenji.blog/zh-tw/p/fermat/)）所發現的一個非常優美且強大的定理。這就是 **費馬小定理（Fermat's Little Theorem）** 。此外，將其一般化的李昂哈德·歐拉（[Leonhard Euler](https://kenji.blog/zh-tw/p/euler/)）定理，在密碼學理論中也發揮了決定性的作用。
 
 本篇文章將從基礎開始，徹底解說[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)這個純數學的發現，是如何應用於現代實用的加密技術，特別是「質數判定」與「[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密」。這是一份非常詳細的技術指南，內容涵蓋數學證明、加密與解密機制，以及使用 C++ 與 Python 進行具體演算法實作。
 
@@ -112,7 +112,7 @@ $$
 
 ## 4. 歐拉函數與歐拉定理
 
-[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)是關於「質數 $p$」的定理，而將其推廣至「任意正整數 $n$」的人，就是[李昂哈德·歐拉](https://kenji.blog/zh-tw/p/euler/)。為了理解 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密，這個推廣是不可或缺的。
+[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)是關於「質數 $p$」的定理，而將其推廣至「任意正整數 $n$」的人，就是李昂哈德·歐拉。為了理解 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密，這個推廣是不可或缺的。
 
 ### 4.1 歐拉函數 $\phi(n)$
 

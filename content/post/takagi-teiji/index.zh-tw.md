@@ -18,7 +18,7 @@ tags:
 
 在現代數論，特別是代數數論中，最美麗且最強大的理論框架之一就是 **類域論** （Class Field Theory）。憑藉一己之力構建了這一宏大理論體系，並使日本數學水準一躍躋身世界最高行列的人，正是 **[高木貞治](https://kenji.blog/zh-tw/p/takagi-teiji/)** （1875–1960）。
 
-他所取得的偉大成就，不僅僅是解決了一個未決問題。他在極東之地雖然孤立無援，卻完美地描繪出了克羅內克（[Kronecker](https://kenji.blog/zh-tw/p/kronecker/)）和希爾伯特（[Hilbert](https://kenji.blog/zh-tw/p/hilbert/)）等西方巨星所夢想的數學圖景，並為之後的數學界指明了前進的道路。本文將深入探討[高木貞治](https://kenji.blog/zh-tw/p/takagi-teiji/)一生的軌跡以及他所創立的類域論的核心內容。
+他所取得的偉大成就，不僅僅是解決了一個未決問題。他在極東之地雖然孤立無援，卻完美地描繪出了克羅內克（[Kronecker](https://kenji.blog/zh-tw/p/kronecker/)）和希爾伯特（Hilbert）等西方巨星所夢想的數學圖景，並為之後的數學界指明了前進的道路。本文將深入探討[高木貞治](https://kenji.blog/zh-tw/p/takagi-teiji/)一生的軌跡以及他所創立的類域論的核心內容。
 
 ## 1. 早年生活與數學的覺醒
 
@@ -109,7 +109,7 @@ graph TD
 - **《初等數論講義》** ：一本從數論基礎一直講解到高斯互反律的教科書。
 - **《近世數學史談》** ：一部生動描繪了19世紀數學家群像的歷史書。它傳遞了數學發展的戲劇性。
 
-他播下的種子，傳承給了[小平邦彥](https://kenji.blog/zh-tw/p/kodaira-kunihiko/)、[伊藤清](https://kenji.blog/zh-tw/p/ito-kiyosi/)，乃至[志村五郎](https://kenji.blog/zh-tw/p/shimura-goro/)和[谷山豐](https://kenji.blog/zh-tw/p/taniyama-yutaka/)等後來在世界上大放異彩的日本數學家們。
+他播下的種子，傳承給了[小平邦彥](https://kenji.blog/zh-tw/p/kodaira-kunihiko/)、伊藤清，乃至志村五郎和[谷山豐](https://kenji.blog/zh-tw/p/taniyama-yutaka/)等後來在世界上大放異彩的日本數學家們。
 
 ## 結語
 

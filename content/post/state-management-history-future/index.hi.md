@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 इन लाइब्रेरीज ने "सर्वर की स्टेट को स्थानीय रूप से कैश करने और आवश्यकतानुसार सिंक्रोनाइज़ करने" की जटिल प्रक्रिया को एब्सट्रैक्ट कर दिया।
 परिणामस्वरूप, [Redux](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/) जैसे ग्लोबल स्टोर में प्रबंधित किया जाने वाला डेटा "केवल शुद्ध क्लाइंट स्टेट" तक सीमित रह गया, जिससे स्टेट मैनेजमेंट का बोझ काफी कम हो गया।
 
-## 8. Atomic [State](https://kenji.blog/hi/p/iac-infrastructure-as-code-terraform/) Management: [Recoil](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/) और [Jotai](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/)
+## 8. Atomic [State](https://kenji.blog/hi/p/iac-infrastructure-as-code-terraform/) Management: Recoil और [Jotai](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/)
 
 Server State के अलग होने के बाद, शेष Client State को कुशलतापूर्वक प्रबंधित करने के लिए एक नई प्रतिस्पर्धा शुरू हुई।
 React के रेंडरिंग मॉडल (टॉप-डाउन) और [Context API](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/) की प्रदर्शन समस्याओं को हल करने के लिए **Atomic [State Management](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/)** दृष्टिकोण का जन्म हुआ।
@@ -444,7 +444,7 @@ React Compiler बिल्ड के समय React कंपोनेंट �
 
 ## 13. निष्कर्ष: स्टेट मैनेजमेंट किस ओर जा रहा है?
 
-MVC के भ्रम से शुरू होकर, [Flux](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/) के साथ पूर्वानुमान की प्राप्ति, Hooks के साथ सरलीकरण, Server [State](https://kenji.blog/hi/p/iac-infrastructure-as-code-terraform/) का पृथक्करण, Atomic और Proxy द्वारा दक्षता, और Signals द्वारा फाइन-ग्रेन्ड रिएक्टिविटी तक।
+MVC के भ्रम से शुरू होकर, [Flux](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/)/Redux के साथ पूर्वानुमान की प्राप्ति, Hooks के साथ सरलीकरण, Server [State](https://kenji.blog/hi/p/iac-infrastructure-as-code-terraform/) का पृथक्करण, Atomic और Proxy द्वारा दक्षता, और Signals द्वारा फाइन-ग्रेन्ड रिएक्टिविटी तक।
 
 फ्रंटएंड स्टेट मैनेजमेंट के लगभग 15 वर्षों के इतिहास को देखते हुए, एक स्पष्ट प्रवृत्ति उभरती है। वह है **"बॉयलरप्लेट को कम करना, डेवलपर्स पर संज्ञानात्मक भार को कम करना, जबकि पृष्ठभूमि में सिस्टम (फ्रेमवर्क और कंपाइलर) स्वचालित रूप से प्रदर्शन को अनुकूलित करने की दिशा में विकसित हो रहे हैं।"**
 

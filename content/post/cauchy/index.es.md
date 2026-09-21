@@ -26,7 +26,7 @@ Este artículo explora la vida turbulenta de [Cauchy](https://kenji.blog/es/p/ca
 
 ### Infancia y educación
 
-El padre de [Cauchy](https://kenji.blog/es/p/cauchy/) ocupaba un alto cargo en las fuerzas policiales, pero para escapar del caos de la revolución, la familia huyó a Arcueil, un suburbio de París. Allí, recibió instrucción de grandes científicos de la época, como Laplace y [Lagrange](https://kenji.blog/es/p/lagrange/), que eran amigos de su padre. [Lagrange](https://kenji.blog/es/p/lagrange/), en particular, reconoció el talento matemático del joven [Cauchy](https://kenji.blog/es/p/cauchy/) y predijo de forma célebre: "Este chico nos superará a todos algún día".
+El padre de [Cauchy](https://kenji.blog/es/p/cauchy/) ocupaba un alto cargo en las fuerzas policiales, pero para escapar del caos de la revolución, la familia huyó a Arcueil, un suburbio de París. Allí, recibió instrucción de grandes científicos de la época, como Laplace y Lagrange, que eran amigos de su padre. Lagrange, en particular, reconoció el talento matemático del joven [Cauchy](https://kenji.blog/es/p/cauchy/) y predijo de forma célebre: "Este chico nos superará a todos algún día".
 
 ```mermaid
 flowchart TD

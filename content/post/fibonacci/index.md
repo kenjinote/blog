@@ -10,7 +10,7 @@ tags: ["Fibonacci", "Mathematics", "History", "Golden Ratio", "Liber Abaci"]
 
 ## はじめに：暗黒時代を照らした数学の光
 
-中世ヨーロッパ、いわゆる「暗黒時代」と呼ばれた時代において、学問の進歩は停滞していました。しかし、13世紀初頭に一人の天才が現れ、ヨーロッパの数学史を永遠に変えることになります。彼の名はレオナルド・オブ・ピサ。後に **[フィボナッチ](https://kenji.blog/p/fibonacci/)** （[Fibonacci](https://kenji.blog/p/fibonacci/)）として知られるようになるこの人物は、現代の私たちが日常的に使用している「アラビア数字（インド・アラビア数字）」をヨーロッパに普及させた立役者であり、自然界の神秘を解き明かす「[フィボナッチ](https://kenji.blog/p/fibonacci/)数列」の発見者でもあります。
+中世ヨーロッパ、いわゆる「暗黒時代」と呼ばれた時代において、学問の進歩は停滞していました。しかし、13世紀初頭に一人の天才が現れ、ヨーロッパの数学史を永遠に変えることになります。彼の名はレオナルド・オブ・ピサ。後に **[フィボナッチ](https://kenji.blog/p/fibonacci/)** （Fibonacci）として知られるようになるこの人物は、現代の私たちが日常的に使用している「アラビア数字（インド・アラビア数字）」をヨーロッパに普及させた立役者であり、自然界の神秘を解き明かす「[フィボナッチ](https://kenji.blog/p/fibonacci/)数列」の発見者でもあります。
 
 本記事では、[フィボナッチ](https://kenji.blog/p/fibonacci/)の波乱に満ちた生涯、彼の主著である『算盤の書』が社会に与えた衝撃、そして現代科学や自然界にまで及ぶ彼の数学的遺産について、詳細に解説していきます。
 
@@ -160,7 +160,7 @@ stateDiagram-v2
 
 ### コンピュータ科学における応用
 
-コンピュータアルゴリズムにおいて、[フィボナッチ](https://kenji.blog/p/fibonacci/)数列は非常に有用です。「[フィボナッチ](https://kenji.blog/p/fibonacci/)探索」というアルゴリズムは、特定の条件下で[二分探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)よりも効率的にデータを検索できます。また、データ構造の一つである「[フィボナッチ](https://kenji.blog/p/fibonacci/)[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)」は、[ダイクストラ法](https://kenji.blog/p/graph-theory-dijkstra-a-star/)などの[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)のアルゴリズムを高速化するために不可欠です。
+コンピュータアルゴリズムにおいて、[フィボナッチ](https://kenji.blog/p/fibonacci/)数列は非常に有用です。「フィボナッチ探索」というアルゴリズムは、特定の条件下で二分探索よりも効率的にデータを検索できます。また、データ構造の一つである「フィボナッチヒープ」は、ダイクストラ法などの[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)のアルゴリズムを高速化するために不可欠です。
 
 ### 金融市場における[フィボナッチ](https://kenji.blog/p/fibonacci/)・リトレースメント
 

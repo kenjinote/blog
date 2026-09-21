@@ -308,7 +308,7 @@ Based on the knowledge so far, we will explain how to write a `Dockerfile` to im
 
 ### 8.1 Utilizing Multi-stage Builds
 
-By separating the build environment from the execution environment, you can drastically reduce the final image size. This is especially effective in compiled languages such as [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), and [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/).
+By separating the build environment from the execution environment, you can drastically reduce the final image size. This is especially effective in compiled languages such as [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), Rust, and [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/).
 
 ```dockerfile
 # --- Stage 1: Build environment ---

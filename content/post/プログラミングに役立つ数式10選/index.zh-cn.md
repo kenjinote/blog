@@ -559,7 +559,7 @@ for val, prob in zip(logits, probabilities):
 
 ---
 
-## 10. [欧几里得](https://kenji.blog/zh-cn/p/euclid/)距离与勾股定理 ([[Euclid](https://kenji.blog/zh-cn/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. [欧几里得](https://kenji.blog/zh-cn/p/euclid/)距离与勾股定理 ([Euclide](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### 公式的优美性与概述
 这是流传自古希腊的几何学基础，也是定义 $n$ 维空间中两点间直线距离的公式。在二维空间中，它就是勾股定理（$a^2 + b^2 = c^2$）本身。

@@ -14,7 +14,7 @@ tags:
 
 現代のインターネット社会において、私たちが安全に通信できるのは **暗号理論** のおかげです。そして、その暗号理論の根底には、17世紀の数学者[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/)（[Pierre de Fermat](https://kenji.blog/p/fermat/)）が発見した美しい定理が存在しています。
 
-本記事では、整数論の重要な基礎である **[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)** （[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)）について、その意味や証明、そして現代の[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号にどのように応用されているのかを分かりやすく解説します。
+本記事では、整数論の重要な基礎である **[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)** （Fermat's Little Theorem）について、その意味や証明、そして現代の[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号にどのように応用されているのかを分かりやすく解説します。
 
 ## [フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)とは？
 
@@ -94,7 +94,7 @@ flowchart TD
 
 ## 現代の暗号理論への応用：[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号
 
-[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)（およびその一般化である **[オイラー](https://kenji.blog/p/euler/)の定理** ）の最も重要な応用先が、インターネットのセキュリティを支える **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号** です。
+[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)（およびその一般化である **オイラーの定理** ）の最も重要な応用先が、インターネットのセキュリティを支える **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号** です。
 
 RSA暗号は、巨大な数の素因数分解が困難であることを安全性の根拠としています。その仕組みにおいて、「[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)」の原理が鍵の生成と復号プロセスで決定的な役割を果たしています。
 
@@ -112,7 +112,7 @@ sequenceDiagram
 ```
 
 [RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号では、$p$ と $q$ という2つの巨大な素数を用意し、$n = p \times q$ とします。
-[オイラー](https://kenji.blog/p/euler/)の定理により、[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)と復号のプロセスにおいて $M^{ed} \equiv M \pmod n$ が成り立つように鍵（$e$ と $d$）が設計されます。ここで、平文 $M$ が元の姿に戻るという魔法のような現象は、本質的に[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)が保証している数学的性質に依存しているのです。
+[オイラー](https://kenji.blog/p/euler/)の定理により、暗号化と復号のプロセスにおいて $M^{ed} \equiv M \pmod n$ が成り立つように鍵（$e$ と $d$）が設計されます。ここで、平文 $M$ が元の姿に戻るという魔法のような現象は、本質的に[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)が保証している数学的性質に依存しているのです。
 
 ## まとめ
 

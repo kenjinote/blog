@@ -8,7 +8,7 @@ categories: ["mathematics", "biography"]
 tags: ["타니야마 유타카", "수학", "페르마의 마지막 정리", "타니야마-시무라 추측", "타원 곡선", "모듈러 형식"]
 ---
 
-# [[타니야마 유타카](https://kenji.blog/ko/p/taniyama-yutaka/): 미해결 문제에 도전한 천재 수학자의 생애와 업적](https://kenji.blog/p/taniyama-yutaka/)
+# [타니야마 유타카: 미해결 문제에 도전한 천재 수학자의 생애와 업적](https://kenji.blog/p/taniyama-yutaka/)
 
 현대 수학에서 가장 극적이고 또 가장 중요한 진전 중 하나인 '[페르마의 마지막 정리](https://kenji.blog/ko/p/fermats-last-theorem/)'의 증명. 그 배경에는 두 명의 일본인 수학자가 제안한 놀라운 추측이 존재하고 있었습니다. 그 중 한 명이 젊은 나이에 세상을 떠난 **[타니야마 유타카](https://kenji.blog/ko/p/taniyama-yutaka/)** (1927년 - 1958년)입니다. 이 글에서는 그가 제창한 '타니야마-시무라 추측'이 얼마나 장대한 비전을 가지고 있었는지, 그리고 파란만장했던 그의 생애에 대해 자세히 해설합니다.
 

@@ -30,7 +30,7 @@ Esta declaração não foi meramente poética; ela era apoiada por sua forte cre
 
 [Kronecker](https://kenji.blog/pt/p/kronecker/) nasceu em 1823 em uma família judia rica em Liegnitz, Prússia (agora Legnica, Polônia). Exibindo um intelecto extraordinário desde tenra idade, matriculou-se no Gymnasium local (escola secundária avançada).
 
-Foi aqui que ocorreu um encontro fatídico. Um novo professor chegou ao Gymnasium — **[Ernst Kummer](https://kenji.blog/pt/p/kummer/)** , que mais tarde se tornaria um pioneiro da teoria dos ideais. [Kummer](https://kenji.blog/pt/p/kummer/) reconheceu imediatamente o talento de [Kronecker](https://kenji.blog/pt/p/kronecker/) e forneceu-lhe instrução matemática avançada e personalizada.
+Foi aqui que ocorreu um encontro fatídico. Um novo professor chegou ao Gymnasium — **[Ernst Kummer](https://kenji.blog/pt/p/kummer/)** , que mais tarde se tornaria um pioneiro da teoria dos ideais. Kummer reconheceu imediatamente o talento de [Kronecker](https://kenji.blog/pt/p/kronecker/) e forneceu-lhe instrução matemática avançada e personalizada.
 
 ```mermaid
 graph TD
@@ -120,7 +120,7 @@ Este teorema demonstra que o conceito abstrato de uma "extensão abeliana dos n�
 
 ## 4.4. O Sonho de Juventude de [Kronecker](https://kenji.blog/pt/p/kronecker/) (Jugendtraum)
 
-O teorema de [Kronecker](https://kenji.blog/pt/p/kronecker/)-Weber dizia respeito às extensões abelianas sobre os números racionais $\mathbb{Q}$. [Kronecker](https://kenji.blog/pt/p/kronecker/) sonhava em estender isso para corpos algébricos mais gerais, como corpos quadráticos imaginários. A sua grande questão, "Será que todas as extensões abelianas de um corpo quadrático imaginário são geradas pelos valores especiais de certas funções?", foi mais tarde formulada como o **12º Problema de [Hilbert](https://kenji.blog/pt/p/hilbert/)** .
+O teorema de [Kronecker](https://kenji.blog/pt/p/kronecker/)-Weber dizia respeito às extensões abelianas sobre os números racionais $\mathbb{Q}$. Kronecker sonhava em estender isso para corpos algébricos mais gerais, como corpos quadráticos imaginários. A sua grande questão, "Será que todas as extensões abelianas de um corpo quadrático imaginário são geradas pelos valores especiais de certas funções?", foi mais tarde formulada como o **12º Problema de [Hilbert](https://kenji.blog/pt/p/hilbert/)** .
 
 Ele se referia a isso como seu "mais querido sonho de juventude". Embora esse problema tenha visto um progresso maciço por meio da teoria de corpos de classes de Teiji [Takagi](https://kenji.blog/pt/p/takagi-teiji/) e a posterior teoria da multiplicação complexa, ele continua a ser um grande problema não resolvido para corpos algébricos completamente gerais.
 

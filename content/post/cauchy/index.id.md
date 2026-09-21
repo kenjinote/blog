@@ -26,7 +26,7 @@ Artikel ini mengeksplorasi kehidupan [Cauchy](https://kenji.blog/id/p/cauchy/) y
 
 ### Masa Kecil dan Pendidikan
 
-Ayah [Cauchy](https://kenji.blog/id/p/cauchy/) memegang posisi tinggi di kepolisian, tetapi untuk menghindari kekacauan revolusi, keluarganya melarikan diri ke Arcueil, pinggiran kota Paris. Di sana, ia menerima instruksi dari ilmuwan-ilmuwan hebat pada masa itu, seperti Laplace dan [Lagrange](https://kenji.blog/id/p/lagrange/), yang merupakan teman ayahnya. [Lagrange](https://kenji.blog/id/p/lagrange/), khususnya, mengenali bakat matematika [Cauchy](https://kenji.blog/id/p/cauchy/) muda dan dengan terkenal meramalkan, "Anak laki-laki ini suatu hari nanti akan melampaui kita semua."
+Ayah [Cauchy](https://kenji.blog/id/p/cauchy/) memegang posisi tinggi di kepolisian, tetapi untuk menghindari kekacauan revolusi, keluarganya melarikan diri ke Arcueil, pinggiran kota Paris. Di sana, ia menerima instruksi dari ilmuwan-ilmuwan hebat pada masa itu, seperti Laplace dan Lagrange, yang merupakan teman ayahnya. Lagrange, khususnya, mengenali bakat matematika [Cauchy](https://kenji.blog/id/p/cauchy/) muda dan dengan terkenal meramalkan, "Anak laki-laki ini suatu hari nanti akan melampaui kita semua."
 
 ```mermaid
 flowchart TD

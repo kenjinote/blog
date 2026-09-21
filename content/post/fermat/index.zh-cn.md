@@ -20,7 +20,7 @@ tags: ["费马", "数学史", "费马大定理", "数论", "概率论"]
 
 在当时的法国，法官被鼓励避免过度扩大社交圈，以防止政治和社会冲突。讽刺的是，这种孤立的环境恰恰为费马提供了他所需要的安静时间，驱使他走向数学的深渊。对他来说，数学是一种纯粹的乐趣，将他从沉重的职务压力中解放出来，而不是任何人强加给他的东西。
 
-费马不喜欢将他的研究作为正式论文发表；他满足于在笔记本或书的空白处记下他的想法和证明，或者通过当时充当学术中心的巴黎修道士[马兰·梅森](https://kenji.blog/zh-cn/p/mersenne/)（[Marin Mersenne](https://kenji.blog/zh-cn/p/mersenne/)）与其他学者交流信件。他喜欢把自己的发现作为 **“问题”** 提交给其他数学家，挑衅地要求他们给出解答。众所周知，他还与[勒内·笛卡尔](https://kenji.blog/zh-cn/p/descartes/)（[René Descartes](https://kenji.blog/zh-cn/p/descartes/)）和[约翰·沃利斯](https://kenji.blog/zh-cn/p/wallis/)（[John Wallis](https://kenji.blog/zh-cn/p/wallis/)）等伟大的数学家进行过激烈的辩论。
+费马不喜欢将他的研究作为正式论文发表；他满足于在笔记本或书的空白处记下他的想法和证明，或者通过当时充当学术中心的巴黎修道士[马兰·梅森](https://kenji.blog/zh-cn/p/mersenne/)（Marin Mersenne）与其他学者交流信件。他喜欢把自己的发现作为 **“问题”** 提交给其他数学家，挑衅地要求他们给出解答。众所周知，他还与勒内·笛卡尔（René Descartes）和约翰·沃利斯（[John Wallis](https://kenji.blog/zh-cn/p/wallis/)）等伟大的数学家进行过激烈的辩论。
 
 ```mermaid
 flowchart TD
@@ -64,7 +64,7 @@ $$
 
 费马还思考了生成素数的数学公式。他猜想所有形式为 $F_n = 2^{2^n} + 1$ 的数字都是素数。事实上，当 $n=0, 1, 2, 3, 4$ 时，结果分别为 $3, 5, 17, 257, 65537$，这些全部都是素数。这些被称为 **费马素数**。
 
-然而，[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）后来证明，当 $n=5$ 时，$2^{32} + 1 = 4294967297 = 641 \times 6700417$，从而反驳了费马的猜想本身。尽管如此，[卡尔·弗里德里希·高斯](https://kenji.blog/zh-cn/p/gauss/)（[Carl Friedrich Gauss](https://kenji.blog/zh-cn/p/gauss/)）后来证明，这些费马素数与“用圆规和直尺可作正 $n$ 边形的条件”密切相关，在后世几何学和代数学的融合中发挥了极其重要的作用。
+然而，[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)（Leonhard Euler）后来证明，当 $n=5$ 时，$2^{32} + 1 = 4294967297 = 641 \times 6700417$，从而反驳了费马的猜想本身。尽管如此，卡尔·弗里德里希·高斯（[Carl Friedrich Gauss](https://kenji.blog/zh-cn/p/gauss/)）后来证明，这些费马素数与“用圆规和直尺可作正 $n$ 边形的条件”密切相关，在后世几何学和代数学的融合中发挥了极其重要的作用。
 
 ## 3. 无限递降法：费马的利剑
 
@@ -91,7 +91,7 @@ $$
 
 ## 5. 对微积分和物理学的先驱性贡献
 
-在[艾萨克·牛顿](https://kenji.blog/zh-cn/p/newton/)（[Isaac Newton](https://kenji.blog/zh-cn/p/newton/)）和[戈特弗里德·莱布尼茨](https://kenji.blog/zh-cn/p/leibniz/)（[Gottfried Leibniz](https://kenji.blog/zh-cn/p/leibniz/)）建立微积分的几十年前，费马就已经设计出了他自己求曲线切线和求函数最大值与最小值的方法。
+在[艾萨克·牛顿](https://kenji.blog/zh-cn/p/newton/)（Isaac Newton）和戈特弗里德·莱布尼茨（[Gottfried Leibniz](https://kenji.blog/zh-cn/p/leibniz/)）建立微积分的几十年前，费马就已经设计出了他自己求曲线切线和求函数最大值与最小值的方法。
 
 他引入了一个叫做 **“准等式”**（Adequality）的概念。这是一种在极小量 $E$ 变化时，将数值视为“几乎相等”的技术，并在计算的最后阶段将 $E$ 视为 $0$ 来求极值。这本质上就是现代微分的思想，牛顿本人后来也说：“我从费马画切线的方法中得到了这种方法的启发。”如果没有费马，微积分的完成可能会进一步推迟。
 
@@ -123,7 +123,7 @@ $$
 
 在它被提出后的 350 多年里，这个问题作为“数学界最大的未解之谜”一直未被任何人解开。在 20 世纪下半叶，当许多人开始怀疑“费马实际上并没有证明它（或者犯了一个错误）”时，一位数学家终于终结了这个可怕的难题。
 
-那就是英国数学家[安德鲁·怀尔斯](https://kenji.blog/zh-cn/p/wiles/)（[Andrew Wiles](https://kenji.blog/zh-cn/p/wiles/)）。他在 10 岁时在当地图书馆偶然发现了这个问题，便发誓要倾尽毕生精力去解决它。他采取了费马时代无法想象的宏大方法，将由日本数学家[谷山丰](https://kenji.blog/zh-cn/p/taniyama-yutaka/)和[志村五郎](https://kenji.blog/zh-cn/p/shimura-goro/)提出的“所有椭圆曲线都是模形式的” **谷山-志村猜想**，与肯·里贝特（Ken Ribet）关于弗雷曲线的研究（epsilon 猜想）结合起来。
+那就是英国数学家[安德鲁·怀尔斯](https://kenji.blog/zh-cn/p/wiles/)（Andrew Wiles）。他在 10 岁时在当地图书馆偶然发现了这个问题，便发誓要倾尽毕生精力去解决它。他采取了费马时代无法想象的宏大方法，将由日本数学家谷山丰和[志村五郎](https://kenji.blog/zh-cn/p/shimura-goro/)提出的“所有椭圆曲线都是模形式的” **谷山-志村猜想**，与肯·里贝特（Ken Ribet）关于弗雷曲线的研究（epsilon 猜想）结合起来。
 
 怀尔斯将自己关在阁楼里，经过七年孤独的研究，于 1995 年发表了完整的证明。他的证明是长达数百页的现代数学集大成之作，与费马可能设想的 17 世纪数学方法（“真正绝妙的证明”）截然不同。
 

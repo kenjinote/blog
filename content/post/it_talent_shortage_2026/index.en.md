@@ -26,7 +26,7 @@ For many years, the Japanese IT industry was supported by the SIer (System Integ
 
 However, as of 2026, this model has reached its limit. Because the essence of DX (Digital Transformation) has shifted from "mere IT implementation" to "business model transformation," low-agility waterfall development can no longer keep up with market changes.
 
-Modern development processes are built on the premise of being **cloud-native** and **AI-driven**. [Container](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)ization ([Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/)), microservices architecture, and [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) pipeline automation are no longer "special technologies" but "standard infrastructure."
+Modern development processes are built on the premise of being **cloud-native** and **AI-driven**. [Container](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)ization (Docker-layers/)/Kubernetes), microservices architecture, and [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) pipeline automation are no longer "special technologies" but "standard infrastructure."
 
 ```mermaid
 graph TD

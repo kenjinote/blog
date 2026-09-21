@@ -31,7 +31,7 @@ Mit dem Wachstum von Webdiensten und der rasanten Zunahme unstrukturierter Daten
 ### Schemalosigkeit und Flexibilität der Datenstruktur
 
 Bei RDBMS muss im Voraus ein striktes Schema (Spaltennamen und Datentypen von Tabellen) definiert werden. Die Änderung eines einmal definierten Schemas kann kostspielig sein und die Agilität der Entwicklung beeinträchtigen.
-Im Gegensatz dazu verwenden viele NoSQL-Datenbanken einen **schemalosen** oder schemaflexiblen Ansatz. Die Datenstruktur muss nicht im Voraus vollständig definiert werden, und die Form der Daten kann dynamisch an sich ändernde Anwendungsanforderungen angepasst werden. Diese Eigenschaft passt sehr gut zu agiler Entwicklung und [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen.
+Im Gegensatz dazu verwenden viele NoSQL-Datenbanken einen **schemalosen** oder schemaflexiblen Ansatz. Die Datenstruktur muss nicht im Voraus vollständig definiert werden, und die Form der Daten kann dynamisch an sich ändernde Anwendungsanforderungen angepasst werden. Diese Eigenschaft passt sehr gut zu agiler Entwicklung und [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen.
 
 ### Horizontale Skalierbarkeit (Scale-out)
 

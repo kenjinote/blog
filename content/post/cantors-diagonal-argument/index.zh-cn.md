@@ -183,4 +183,4 @@ $$
 2. 直到有理数为止，其大小与自然数相同（可数无限）。
 3. 通过错开对角线构造新数字的论证，证明了实数多于自然数（不可数无限）。
 
-这种违反直觉，却又具有绝对逻辑美的特征，可以说是数学这门学科最大的魅力所在。对角线论证后来也被应用于[艾伦·图灵](https://kenji.blog/zh-cn/p/turing/)（[Alan Turing](https://kenji.blog/zh-cn/p/turing/)）的停机问题和[哥德尔不完备定理](https://kenji.blog/zh-cn/p/godels-incompleteness-theorems/)的证明等，成为了计算机科学和数理逻辑根基理论的重要组成部分。
+这种违反直觉，却又具有绝对逻辑美的特征，可以说是数学这门学科最大的魅力所在。对角线论证后来也被应用于[艾伦·图灵](https://kenji.blog/zh-cn/p/turing/)（Alan Turing）的停机问题和[哥德尔不完备定理](https://kenji.blog/zh-cn/p/godels-incompleteness-theorems/)的证明等，成为了计算机科学和数理逻辑根基理论的重要组成部分。

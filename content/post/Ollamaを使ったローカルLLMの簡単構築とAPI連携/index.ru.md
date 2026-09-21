@@ -493,7 +493,7 @@ $$
 
 ## Заключение
 
-С появлением Ollama порог для внедрения локальных [LLM](https://kenji.blog/ru/p/large-language-models-llm-transformer-prompt-engineering/) резко снизился. Сочетание простой системы команд, напоминающей работу с контейнерами [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/), и [REST API](https://kenji.blog/ru/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ru/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/), который легко использовать из внешних приложений, можно смело назвать текущим стандартом де-факто для локальной разработки ИИ.
+С появлением Ollama порог для внедрения локальных [LLM](https://kenji.blog/ru/p/large-language-models-llm-transformer-prompt-engineering/) резко снизился. Сочетание простой системы команд, напоминающей работу с контейнерами Docker-layers/), и [REST API](https://kenji.blog/ru/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ru/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/), который легко использовать из внешних приложений, можно смело назвать текущим стандартом де-факто для локальной разработки ИИ.
 
 Разработчикам, которые сталкиваются с ограничениями по стоимости или безопасности облачных [LLM](https://kenji.blog/ru/p/large-language-models-llm-transformer-prompt-engineering/), настоятельно рекомендуется использовать шаги, описанные в этой статье, для создания локальной среды LLM с помощью Ollama и интеграции ее в свои приложения. Вы должны почувствовать потенциал ИИ гораздо свободнее и ближе.
 

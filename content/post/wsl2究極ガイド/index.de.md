@@ -256,7 +256,7 @@ Der VS Code auf der Windows-Seite fungiert als reiner „Thin Client (UI)“, un
 Installieren Sie **"WSL" (ms-vscode-remote.remote-wsl)** aus den "Erweiterungen" von VS Code. Navigieren Sie dann im WSL-Terminal zum Projektverzeichnis und führen Sie einfach `code .` aus, um den VS Code auf der Windows-Seite mit dem geöffneten Verzeichnis zu starten.
 
 **Wichtiger Hinweis (Problem mit dem Zeilenumbruchcode):**
-Windows und Linux haben unterschiedliche Zeilenumbruchcodes (Windows verwendet `CRLF`, Linux verwendet `LF`). Bei der Entwicklung in WSL stellen Sie bitte sicher, dass die Git-Einstellung `core.autocrlf` und die Standarddateieinstellungen von VS Code auf `LF` vereinheitlicht werden. Wenn Sie dies versäumen, werden Sie von mysteriösen Fehlern bei der Ausführung von Shell-Skripten oder [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n geplagt.
+Windows und Linux haben unterschiedliche Zeilenumbruchcodes (Windows verwendet `CRLF`, Linux verwendet `LF`). Bei der Entwicklung in WSL stellen Sie bitte sicher, dass die Git-Einstellung `core.autocrlf` und die Standarddateieinstellungen von VS Code auf `LF` vereinheitlicht werden. Wenn Sie dies versäumen, werden Sie von mysteriösen Fehlern bei der Ausführung von Shell-Skripten oder [Docker](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n geplagt.
 
 ```bash
 # Git-Zeilenumbruchcode-Einstellung auf der WSL-Seite
@@ -287,7 +287,7 @@ Dies wird in den meisten Fällen empfohlen, da es ein einfaches Management mit e
 - Aktivieren Sie `General` -> `Use the WSL 2 based engine`.
 - Aktivieren Sie `Resources` -> `WSL Integration` -> `Enable integration with my default WSL distro` und aktivieren Sie die zu verwendende Distribution (Ubuntu) mit der Umschaltfläche.
 
-Dies ermöglicht es Ihnen, den `docker`-Befehl direkt aus dem WSL2-Terminal auszuführen, und die Kommunikation mit dem [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-Daemon erfolgt über dedizierte Lightweight-VMs (`docker-desktop` und `docker-desktop-data`), die von [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop verwaltet werden.
+Dies ermöglicht es Ihnen, den `docker`-Befehl direkt aus dem WSL2-Terminal auszuführen, und die Kommunikation mit dem [Docker](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-Daemon erfolgt über dedizierte Lightweight-VMs (`docker-desktop` und `docker-desktop-data`), die von [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop verwaltet werden.
 
 ### Ansatz 2: Direkte Installation der nativen Docker Engine
 Wenn Sie Unternehmensnetzwerkeinschränkungen haben (z. B. um die Kosten für Docker Desktop zu vermeiden) oder den Leistungs-Overhead so weit wie möglich reduzieren möchten, aktivieren Sie `systemd` in `/etc/wsl.conf` und installieren Sie [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) als reinen Ubuntu-Server.

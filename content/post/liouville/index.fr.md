@@ -17,7 +17,7 @@ tags:
 
 ## Introduction
 
-Dans l'histoire des mathématiques, le 19e siècle fut une période cruciale où l'analyse et l'algèbre se sont développées pour prendre leur forme moderne. Au centre de ce mouvement se trouvait le mathématicien français **Joseph [Liouville](https://kenji.blog/fr/p/liouville/)** (1809–1882). Il a établi des théorèmes fondamentaux en analyse complexe et fut la première personne dans l'histoire de l'humanité à prouver concrètement l'existence des « nombres transcendants ». Il est également bien connu comme le bienfaiteur qui a déchiffré et publié les manuscrits complexes d'[Évariste Galois](https://kenji.blog/fr/p/galois/). Dans cet article, nous explorerons en profondeur la vie mouvementée de [Liouville](https://kenji.blog/fr/p/liouville/) et ses nombreuses **réalisations mathématiques**.
+Dans l'histoire des mathématiques, le 19e siècle fut une période cruciale où l'analyse et l'algèbre se sont développées pour prendre leur forme moderne. Au centre de ce mouvement se trouvait le mathématicien français **Joseph [Liouville](https://kenji.blog/fr/p/liouville/)** (1809–1882). Il a établi des théorèmes fondamentaux en analyse complexe et fut la première personne dans l'histoire de l'humanité à prouver concrètement l'existence des « nombres transcendants ». Il est également bien connu comme le bienfaiteur qui a déchiffré et publié les manuscrits complexes d'Évariste Galois. Dans cet article, nous explorerons en profondeur la vie mouvementée de [Liouville](https://kenji.blog/fr/p/liouville/) et ses nombreuses **réalisations mathématiques**.
 
 ## Jeunesse et Éducation
 
@@ -27,9 +27,9 @@ En 1825, il entre à la prestigieuse **École Polytechnique**, où il apprend de
 
 ## Le Sauvetage des Manuscrits de [Galois](https://kenji.blog/fr/p/galois/)
 
-Lorsque l'on parle de [Liouville](https://kenji.blog/fr/p/liouville/), on ne peut omettre l'histoire de la façon dont il a sauvé les manuscrits du jeune génie **[Évariste Galois](https://kenji.blog/fr/p/galois/)**. [Galois](https://kenji.blog/fr/p/galois/) a perdu la vie dans un duel à l'âge de 20 ans, mais juste avant sa mort, il avait confié ses découvertes mathématiques à son ami Auguste Chevalier.
+Lorsque l'on parle de [Liouville](https://kenji.blog/fr/p/liouville/), on ne peut omettre l'histoire de la façon dont il a sauvé les manuscrits du jeune génie **Évariste Galois**. [Galois](https://kenji.blog/fr/p/galois/) a perdu la vie dans un duel à l'âge de 20 ans, mais juste avant sa mort, il avait confié ses découvertes mathématiques à son ami Auguste Chevalier.
 
-C'est [Liouville](https://kenji.blog/fr/p/liouville/) qui a mis en lumière la théorie de [Galois](https://kenji.blog/fr/p/galois/), qui avait été longtemps ignorée et incomprise. En 1843, il étudie minutieusement les articles de [Galois](https://kenji.blog/fr/p/galois/) et réalise qu'ils contiennent des découvertes extrêmement importantes concernant la résolubilité des équations algébriques. En 1846, [Liouville](https://kenji.blog/fr/p/liouville/) publie les articles de [Galois](https://kenji.blog/fr/p/galois/) dans la revue académique qu'il a lui-même fondée, le *Journal de Mathématiques Pures et Appliquées*, les présentant ainsi au monde.
+C'est [Liouville](https://kenji.blog/fr/p/liouville/) qui a mis en lumière la théorie de Galois, qui avait été longtemps ignorée et incomprise. En 1843, il étudie minutieusement les articles de Galois et réalise qu'ils contiennent des découvertes extrêmement importantes concernant la résolubilité des équations algébriques. En 1846, Liouville publie les articles de [Galois](https://kenji.blog/fr/p/galois/) dans la revue académique qu'il a lui-même fondée, le *Journal de Mathématiques Pures et Appliquées*, les présentant ainsi au monde.
 
 ```mermaid
 flowchart TD
@@ -79,7 +79,7 @@ Ici, $\lambda$ est la valeur propre et $w(x)$ est la fonction de poids. Leur th�
 
 ### 4. Autres Contributions
 
-[Liouville](https://kenji.blog/fr/p/liouville/) a des théorèmes portant son nom dans une grande variété de domaines. Ceux-ci incluent le **théorème de [Liouville](https://kenji.blog/fr/p/liouville/) en théorie de [Galois](https://kenji.blog/fr/p/galois/) différentielle**, qui détermine si la primitive d'une fonction élémentaire peut à nouveau être exprimée comme une fonction élémentaire, et son théorème sur les systèmes dynamiques démontrant la conservation du volume dans l'espace des phases.
+[Liouville](https://kenji.blog/fr/p/liouville/) a des théorèmes portant son nom dans une grande variété de domaines. Ceux-ci incluent le **théorème de Liouville en théorie de [Galois](https://kenji.blog/fr/p/galois/) différentielle**, qui détermine si la primitive d'une fonction élémentaire peut à nouveau être exprimée comme une fonction élémentaire, et son théorème sur les systèmes dynamiques démontrant la conservation du volume dans l'espace des phases.
 
 ## Contributions en tant qu'Éducateur et Éditeur
 

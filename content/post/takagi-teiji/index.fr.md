@@ -18,7 +18,7 @@ tags:
 
 L'un des cadres théoriques les plus beaux et les plus puissants de la théorie des nombres moderne, en particulier dans la théorie algébrique des nombres, est la **théorie du corps de classes**. La personne qui a construit à elle seule ce magnifique système théorique et qui a soudainement élevé les mathématiques japonaises au plus haut niveau mondial fut **Teiji [Takagi](https://kenji.blog/fr/p/takagi-teiji/)** (1875-1960).
 
-L'accomplissement monumental qu'il a réalisé ne consistait pas simplement à résoudre un problème ouvert. Il a brillamment dépeint le paysage mathématique dont rêvaient les géants occidentaux comme [Kronecker](https://kenji.blog/fr/p/kronecker/) et [Hilbert](https://kenji.blog/fr/p/hilbert/), tout en étant isolé en Extrême-Orient, et a ainsi montré la voie que la communauté mathématique devait suivre par la suite. Dans cet article, nous plongerons profondément dans la trajectoire de la vie de Teiji [Takagi](https://kenji.blog/fr/p/takagi-teiji/) et au cœur de la théorie du corps de classes qu'il a établie.
+L'accomplissement monumental qu'il a réalisé ne consistait pas simplement à résoudre un problème ouvert. Il a brillamment dépeint le paysage mathématique dont rêvaient les géants occidentaux comme [Kronecker](https://kenji.blog/fr/p/kronecker/) et Hilbert, tout en étant isolé en Extrême-Orient, et a ainsi montré la voie que la communauté mathématique devait suivre par la suite. Dans cet article, nous plongerons profondément dans la trajectoire de la vie de Teiji [Takagi](https://kenji.blog/fr/p/takagi-teiji/) et au cœur de la théorie du corps de classes qu'il a établie.
 
 ## 1. Jeunesse et éveil aux mathématiques
 
@@ -32,7 +32,7 @@ Il a ensuite poursuivi ses études au département de mathématiques du Collège
 
 En 1898, [Takagi](https://kenji.blog/fr/p/takagi-teiji/) a voyagé en Allemagne en tant qu'étudiant boursier du ministère de l'Éducation. Il a d'abord étudié à l'Université de Berlin, mais a ensuite été transféré à l'Université de Göttingen, qui était à l'époque le centre mondial des mathématiques.
 
-L'y attendaient de grands mathématiciens qui ont laissé leur nom dans l'histoire, tels que [David Hilbert](https://kenji.blog/fr/p/hilbert/) et Felix Klein. En particulier, [Hilbert](https://kenji.blog/fr/p/hilbert/) venait de publier son « Zahlbericht » (Rapport sur les nombres), qui était l'aboutissement de la théorie algébrique des nombres, et son contenu a eu un impact profond sur [Takagi](https://kenji.blog/fr/p/takagi-teiji/). Sous la direction de [Hilbert](https://kenji.blog/fr/p/hilbert/), il a résolu une partie du « Rêve de jeunesse de [Kronecker](https://kenji.blog/fr/p/kronecker/) » (un problème concernant la théorie de la multiplication complexe), a obtenu son doctorat en 1903 et est retourné au Japon.
+L'y attendaient de grands mathématiciens qui ont laissé leur nom dans l'histoire, tels que [David Hilbert](https://kenji.blog/fr/p/hilbert/) et Felix Klein. En particulier, Hilbert venait de publier son « Zahlbericht » (Rapport sur les nombres), qui était l'aboutissement de la théorie algébrique des nombres, et son contenu a eu un impact profond sur Takagi. Sous la direction de Hilbert, il a résolu une partie du « Rêve de jeunesse de [Kronecker](https://kenji.blog/fr/p/kronecker/) » (un problème concernant la théorie de la multiplication complexe), a obtenu son doctorat en 1903 et est retourné au Japon.
 
 ## 2. Percée dans l'isolement : La naissance de la théorie du corps de classes
 
@@ -109,7 +109,7 @@ Au-delà de ses réalisations mathématiques, Teiji [Takagi](https://kenji.blog/
 - **« Leçons sur la théorie élémentaire des nombres »** : Un manuel expliquant tout, des bases de la théorie des nombres à la loi de réciprocité de Gauss.
 - **« Récits historiques des mathématiques modernes »** : Un livre historique qui dépeint avec vivacité l'ensemble des mathématiciens du 19e siècle. Il transmet le drame du développement mathématique.
 
-Les graines qu'il a semées ont été transmises à des mathématiciens japonais qui allaient plus tard être actifs dans le monde entier, tels que [Kunihiko Kodaira](https://kenji.blog/fr/p/kodaira-kunihiko/), Kiyoshi Ito, et par la suite [Goro Shimura](https://kenji.blog/fr/p/shimura-goro/) et [Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/).
+Les graines qu'il a semées ont été transmises à des mathématiciens japonais qui allaient plus tard être actifs dans le monde entier, tels que [Kunihiko Kodaira](https://kenji.blog/fr/p/kodaira-kunihiko/), Kiyoshi Ito, et par la suite Goro Shimura et [Yutaka Taniyama](https://kenji.blog/fr/p/taniyama-yutaka/).
 
 ## Conclusion
 

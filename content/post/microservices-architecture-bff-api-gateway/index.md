@@ -74,7 +74,7 @@ graph TD
 モノリスであればメモリ内の関数呼び出しで済んでいた処理が、ネットワーク越しの通信（HTTP/REST、gRPCなど）に変わります。これにより、 **ネットワークレイテンシ** が発生し、システム全体の応答速度が低下するリスクがあります。また、ネットワークは常に不安定であるため、タイムアウトやリトライ制御、サーキットブレーカーといった複雑な通信制御を実装する必要があります。
 
 ### 3.2. 分散[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)とデータ整合性
-各サービスが独自のデータベースを持つため、複数のサービスにまたがるデータの更新（トランザクション）が非常に困難になります。従来の[RDBMS](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)で利用できた[ACID](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)トランザクションが使えず、 **Sagaパターン** や **イベントソーシング** といった結果整合性（Eventual [Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）を許容する複雑な設計パターンを導入せざるを得ません。
+各サービスが独自のデータベースを持つため、複数のサービスにまたがるデータの更新（トランザクション）が非常に困難になります。従来の[RDBMS](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)で利用できたACIDトランザクションが使えず、 **Sagaパターン** や **イベントソーシング** といった結果整合性（Eventual [Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）を許容する複雑な設計パターンを導入せざるを得ません。
 
 ### 3.3. クライアントからのアクセスの複雑化
 数十、数百のサービスが存在する場合、クライアント（Webブラウザやモバイルアプリ）がどのAPIエンドポイントを呼び出せばよいかを把握し、個別に通信を行うのは非現実的です。また、1つの画面を表示するために複数のサービスに対して大量のリクエスト（Chatty API）を送る必要があり、パフォーマンスの悪化を招きます。

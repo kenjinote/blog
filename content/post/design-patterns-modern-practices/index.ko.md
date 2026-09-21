@@ -210,7 +210,7 @@ let result = divide(10.0, 2.0).and_then(|res| divide(res, 2.0));
 
 모든 GoF 패턴이 사멸한 것은 아닙니다. 아키텍처의 경계에서 활약하는 패턴은 지금도 지극히 중요합니다.
 
-1. **Facade(파사드)**: 복잡한 서브시스템에 대한 심플한 인터페이스를 제공하는 개념은 마이크로서비스 아키텍처에서 [API Gateway](https://kenji.blog/ko/p/microservices-architecture-bff-api-gateway/)([BFF](https://kenji.blog/ko/p/microservices-architecture-bff-api-gateway/): [Backend for Frontend](https://kenji.blog/ko/p/microservices-architecture-bff-api-gateway/))로서 스케일 업하고 있습니다.
+1. **Facade(파사드)**: 복잡한 서브시스템에 대한 심플한 인터페이스를 제공하는 개념은 마이크로서비스 아키텍처에서 [API Gateway](https://kenji.blog/ko/p/microservices-architecture-bff-api-gateway/)(BFF: [Backend for Frontend](https://kenji.blog/ko/p/microservices-architecture-bff-api-gateway/))로서 스케일 업하고 있습니다.
 2. **Adapter(어댑터)**: 외부 시스템과의 통합이나, 클린 아키텍처/헥사고날 아키텍처에서의 '포트와 어댑터'로서 시스템을 느슨하게 결합 상태로 유지하기 위한 핵심이 되고 있습니다.
 3. **Decorator(데코레이터)**: Python이나 TypeScript에서 어노테이션 기반의 메타 프로그래밍 기능 `@Decorator` 로서 언어 기능으로 승화되었습니다.
 

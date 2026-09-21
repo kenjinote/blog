@@ -15,7 +15,7 @@ tags:
 
 ## はじめに：最も美しい数学の定理の一つ
 
-数学の世界には、一見すると無関係に見える事象の間に、驚くべきつながりを見出す魔法のような公式がいくつか存在します。その中でも、レオンハルト・[オイラー](https://kenji.blog/p/euler/)（[Leonhard Euler](https://kenji.blog/p/euler/)）によって発見された **[オイラー](https://kenji.blog/p/euler/)の多面体定理** （Euler's polyhedron formula）は、そのシンプルさと普遍性において際立っています。
+数学の世界には、一見すると無関係に見える事象の間に、驚くべきつながりを見出す魔法のような公式がいくつか存在します。その中でも、レオンハルト・[オイラー](https://kenji.blog/p/euler/)（Leonhard Euler）によって発見された **[オイラー](https://kenji.blog/p/euler/)の多面体定理** （Euler's polyhedron formula）は、そのシンプルさと普遍性において際立っています。
 
 公式はたったこれだけです。
 
@@ -46,7 +46,7 @@ $$V - E + F = 2$$
 
 ## [オイラー](https://kenji.blog/p/euler/)の多面体定理の直感的な証明
 
-なぜ常に **$2$** になるのでしょうか？フランスの数学者[オーギュスタン＝ルイ・コーシー](https://kenji.blog/p/cauchy/)（[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)）による直感的な証明（1811年）を見てみましょう。この証明は、立体を「平面上の[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)」に変換するという画期的なアプローチをとります。
+なぜ常に **$2$** になるのでしょうか？フランスの数学者[オーギュスタン＝ルイ・コーシー](https://kenji.blog/p/cauchy/)（Augustin-Louis Cauchy）による直感的な証明（1811年）を見てみましょう。この証明は、立体を「平面上の[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)」に変換するという画期的なアプローチをとります。
 
 ### ステップ1：立体を平面に押しつぶす
 
@@ -90,7 +90,7 @@ flowchart TD
 
 ## [デカルト](https://kenji.blog/p/descartes/)の秘密の手稿：もう一つの発見の物語
 
-実は、[オイラー](https://kenji.blog/p/euler/)がこの定理を発表する約1世紀前、フランスの哲学者であり数学者でもあった[ルネ・デカルト](https://kenji.blog/p/descartes/)（[René Descartes](https://kenji.blog/p/descartes/)）が、本質的に同じ定理に到達していました。
+実は、[オイラー](https://kenji.blog/p/euler/)がこの定理を発表する約1世紀前、フランスの哲学者であり数学者でもあったルネ・デカルト（[René Descartes](https://kenji.blog/p/descartes/)）が、本質的に同じ定理に到達していました。
 [デカルト](https://kenji.blog/p/descartes/)は、多面体の頂点における「不足角」という概念に注目しました。
 一つの頂点に集まる面の角度の合計は、平面であれば $360^\circ$ になりますが、立体の頂点では必ず $360^\circ$ よりも小さくなります。この $360^\circ$ からの不足分を「不足角」と呼びます。
 
@@ -99,7 +99,7 @@ flowchart TD
 
 $$ \sum (\text{不足角}) = 720^\circ $$
 
-この定理は、[オイラー](https://kenji.blog/p/euler/)の公式 $V - E + F = 2$ と数学的に全く等価です。しかし[デカルト](https://kenji.blog/p/descartes/)はこの発見を出版せず、[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)された手稿の中に隠していました。彼の死後、その手稿は[ライプニッツ](https://kenji.blog/p/leibniz/)によって解読されましたが、世間に広く知られることはありませんでした。そのため、この偉大な性質は[オイラー](https://kenji.blog/p/euler/)によって再発見され、「[オイラー](https://kenji.blog/p/euler/)の公式」として歴史に名を刻むことになったのです。
+この定理は、[オイラー](https://kenji.blog/p/euler/)の公式 $V - E + F = 2$ と数学的に全く等価です。しかしデカルトはこの発見を出版せず、暗号化された手稿の中に隠していました。彼の死後、その手稿はライプニッツによって解読されましたが、世間に広く知られることはありませんでした。そのため、この偉大な性質はオイラーによって再発見され、「[オイラー](https://kenji.blog/p/euler/)の公式」として歴史に名を刻むことになったのです。
 
 ## トポロジー（位相幾何学）の誕生：「やわらかい幾何学」
 
@@ -135,7 +135,7 @@ flowchart LR
 
 ## [オイラー](https://kenji.blog/p/euler/)＝[ポアンカレ](https://kenji.blog/p/poincare/)の公式：多次元への飛躍
 
-19世紀後半から20世紀にかけて、[アンリ・ポアンカレ](https://kenji.blog/p/poincare/)（[Henri Poincaré](https://kenji.blog/p/poincare/)）をはじめとする数学者たちは、[オイラー](https://kenji.blog/p/euler/)の定理をさらに高次元の空間へと拡張しました。それが **[オイラー](https://kenji.blog/p/euler/)＝[ポアンカレ](https://kenji.blog/p/poincare/)の公式** です。
+19世紀後半から20世紀にかけて、[アンリ・ポアンカレ](https://kenji.blog/p/poincare/)（Henri Poincaré）をはじめとする数学者たちは、オイラーの定理をさらに高次元の空間へと拡張しました。それが **オイラー＝[ポアンカレ](https://kenji.blog/p/poincare/)の公式** です。
 多面体の要素を一般化し、$n$ 次元の図形の要素の数を用いた交代和を考えました。
 
 $$ \chi = k_0 - k_1 + k_2 - k_3 + \dots + (-1)^n k_n $$

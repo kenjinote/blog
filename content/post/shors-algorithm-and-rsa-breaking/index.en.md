@@ -79,7 +79,7 @@ this is the "Period Finding Problem".
 
 If this period $ r $ is found, and $ r $ is an even number, then $ a^r - 1 \equiv 0 \pmod N $, and using the factorization formula, it can be transformed into:
 $ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $
-From here, by using the [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm to calculate the greatest common divisor of $ N $ and $ a^{r/2} \pm 1 $, a prime factor of $ N $ can be obtained with extremely high probability.
+From here, by using the [Euclide](https://kenji.blog/p/euclid/)an algorithm to calculate the greatest common divisor of $ N $ and $ a^{r/2} \pm 1 $, a prime factor of $ N $ can be obtained with extremely high probability.
 
 Finding the period $ r $ on a classical computer ultimately requires an exponential number of steps and cannot be sped up. However, a quantum computer can find this period $ r $ in an instant (in polynomial time).
 

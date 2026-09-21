@@ -308,7 +308,7 @@ Basándonos en los conocimientos adquiridos, explicaremos cómo escribir un `Doc
 
 ### 8.1 Uso de construcciones de múltiples etapas (Multi-stage build)
 
-Al separar el entorno de construcción (build) del entorno de ejecución, puede reducir drásticamente el tamaño final de la imagen. Esto es especialmente efectivo en lenguajes compilados como [Go](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) y [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/).
+Al separar el entorno de construcción (build) del entorno de ejecución, puede reducir drásticamente el tamaño final de la imagen. Esto es especialmente efectivo en lenguajes compilados como [Go](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), Rust y [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/).
 
 ```dockerfile
 # --- Stage 1: Entorno de construcción ---

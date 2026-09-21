@@ -34,7 +34,7 @@ Windowsでは、デフォルトの状態で悪意のあるスクリプトが誤�
 - **AllSigned**: 信頼された発行元によって署名されたスクリプトのみ実行を許可します。
 - **RemoteSigned**: ローカルで作成されたスクリプトはそのまま実行可能ですが、インターネットからダウンロードしたスクリプトには署名が必要です。
 - **Unrestricted**: すべてのスクリプトを実行できますが、インターネットからダウンロードしたスクリプトを実行する際には警告が表示されます。
-- **Bypass**: 何もブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)されず、警告も表示されません。一時的なスクリプト実行（[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)など）でよく使われます。
+- **Bypass**: 何もブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)されず、警告も表示されません。一時的なスクリプト実行（CI/CD[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)など）でよく使われます。
 
 企業のローカル環境で自作スクリプトをタスクスケジューラ等で実行する場合、最も現実的かつ安全な設定は `RemoteSigned` です。管理者権限でPowerShellを起動し、以下のコマンドを実行します。
 

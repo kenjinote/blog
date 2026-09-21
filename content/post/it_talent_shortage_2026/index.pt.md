@@ -26,7 +26,7 @@ O que sustentou a indústria de TI japonesa por muitos anos foi o modelo SIer (S
 
 No entanto, em 2026, esse modelo atingiu seu limite. Como a essência da DX (Transformação Digital) mudou de "simples informatização" para "transformação do modelo de negócios", o desenvolvimento em cascata (waterfall), com sua baixa agilidade, não consegue mais acompanhar as mudanças do mercado.
 
-O processo de desenvolvimento moderno pressupõe ser **nativo em nuvem** e **orientado por IA**. A conteinerização ([Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/)), a arquitetura de microsserviços e a automação de pipelines de [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) não são mais "tecnologias especiais", mas sim "infraestrutura padrão".
+O processo de desenvolvimento moderno pressupõe ser **nativo em nuvem** e **orientado por IA**. A conteinerização ([Docker](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)/Kubernetes), a arquitetura de microsserviços e a automação de pipelines de [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) não são mais "tecnologias especiais", mas sim "infraestrutura padrão".
 
 ```mermaid
 graph TD

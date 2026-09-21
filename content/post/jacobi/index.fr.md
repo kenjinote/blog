@@ -16,7 +16,7 @@ tags:
 
 # 1. Introduction : Un chercheur de la pensée pure
 
-[Carl Gustav Jacob Jacobi](https://kenji.blog/fr/p/jacobi/) (1804–1851) était un **mathématicien allemand** du 19e siècle qui a apporté des contributions décisives à divers domaines tels que l'algèbre, l'analyse, la théorie des nombres et la mécanique. Avec [Niels Henrik Abel](https://kenji.blog/fr/p/abel/), il est célèbre en tant que "découvreur des fonctions elliptiques" et a donné son nom au "[Jacobi](https://kenji.blog/fr/p/jacobi/)en" (déterminant jacobien) que nous rencontrons fréquemment dans le calcul multivariable aujourd'hui.
+[Carl Gustav Jacob Jacobi](https://kenji.blog/fr/p/jacobi/) (1804–1851) était un **mathématicien allemand** du 19e siècle qui a apporté des contributions décisives à divers domaines tels que l'algèbre, l'analyse, la théorie des nombres et la mécanique. Avec Niels Henrik Abel, il est célèbre en tant que "découvreur des fonctions elliptiques" et a donné son nom au "[Jacobi](https://kenji.blog/fr/p/jacobi/)en" (déterminant jacobien) que nous rencontrons fréquemment dans le calcul multivariable aujourd'hui.
 
 Il valorisait la beauté des mathématiques elles-mêmes et l'honneur de l'esprit humain au-dessus de l'utilité pratique. Dans cet article, nous plongerons profondément dans la vie de [Jacobi](https://kenji.blog/fr/p/jacobi/), ses principales réalisations mathématiques et les célèbres épisodes qu'il a laissés derrière lui.
 
@@ -47,7 +47,7 @@ En 1826, [Jacobi](https://kenji.blog/fr/p/jacobi/) devint maître de conférence
 
 L'une des plus grandes réalisations de [Jacobi](https://kenji.blog/fr/p/jacobi/) est la construction de la théorie des fonctions elliptiques. Les intégrales elliptiques apparaissent lors du calcul du mouvement d'un pendule ou de la longueur de l'arc d'une ellipse, et [Legendre](https://kenji.blog/fr/p/legendre/) et d'autres les avaient étudiées pendant des décennies.
 
-[Jacobi](https://kenji.blog/fr/p/jacobi/) introduisit la perspective révolutionnaire de considérer la fonction inverse de l'intégrale. Fait remarquable, le jeune génie norvégien **[Abel](https://kenji.blog/fr/p/abel/)** avait découvert la même approche de manière totalement indépendante à peu près au même moment. [Jacobi](https://kenji.blog/fr/p/jacobi/) et [Abel](https://kenji.blog/fr/p/abel/) ont tous deux découvert la double périodicité des fonctions elliptiques, révolutionnant le domaine.
+[Jacobi](https://kenji.blog/fr/p/jacobi/) introduisit la perspective révolutionnaire de considérer la fonction inverse de l'intégrale. Fait remarquable, le jeune génie norvégien **Abel** avait découvert la même approche de manière totalement indépendante à peu près au même moment. Jacobi et [Abel](https://kenji.blog/fr/p/abel/) ont tous deux découvert la double périodicité des fonctions elliptiques, révolutionnant le domaine.
 
 $$ \text{sn}(u, k), \quad \text{cn}(u, k), \quad \text{dn}(u, k) $$
 
@@ -55,7 +55,7 @@ $$ \text{sn}(u, k), \quad \text{cn}(u, k), \quad \text{dn}(u, k) $$
 
 $$ \vartheta(z, \tau) = \sum_{n=-\infty}^{\infty} e^{\pi i n^2 \tau + 2 \pi i n z} $$
 
-En 1829, il publia son chef-d'œuvre, *Fundamenta nova theoriae functionum ellipticarum* (Nouveaux fondements de la théorie des fonctions elliptiques), achevant la systématisation de ce domaine. Le mathématicien français [Legendre](https://kenji.blog/fr/p/legendre/) fut stupéfait d'apprendre les réalisations de [Jacobi](https://kenji.blog/fr/p/jacobi/) et d'[Abel](https://kenji.blog/fr/p/abel/), bien plus jeunes que lui, et les loua chaleureusement.
+En 1829, il publia son chef-d'œuvre, *Fundamenta nova theoriae functionum ellipticarum* (Nouveaux fondements de la théorie des fonctions elliptiques), achevant la systématisation de ce domaine. Le mathématicien français [Legendre](https://kenji.blog/fr/p/legendre/) fut stupéfait d'apprendre les réalisations de Jacobi et d'[Abel](https://kenji.blog/fr/p/abel/), bien plus jeunes que lui, et les loua chaleureusement.
 
 # 5. Le [Jacobi](https://kenji.blog/fr/p/jacobi/)en (Déterminant jacobien) et l'analyse multivariable
 

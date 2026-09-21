@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 قامت هذه المكتبات بتجريد (Abstract) العملية المعقدة المتمثلة في "تخزين حالة الخادم محلياً ومزامنتها عند الضرورة".
 ونتيجة لذلك، انخفضت كمية البيانات التي يجب إدارتها في مخازن عالمية مثل [Redux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) إلى "حالات العميل النقية فقط" بشكل كبير، مما خفف من عبء إدارة الحالة بشكل هائل.
 
-## 8. إدارة الحالة الذرية (Atomic [State](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/) Management): [Recoil](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) و [Jotai](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)
+## 8. إدارة الحالة الذرية (Atomic [State](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/) Management): Recoil و [Jotai](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)
 
 بعد فصل Server State، بدأت منافسة جديدة حول كيفية إدارة ما تبقى من Client State بكفاءة.
 لحل نموذج التصيير (من أعلى إلى أسفل) في React ومشاكل أداء [Context API](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)، ظهر نهج **إدارة الحالة الذرية (Atomic [State Management](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/))** .
@@ -444,7 +444,7 @@ graph TD
 
 ## 13. الخلاصة: إلى أين تتجه إدارة الحالة؟
 
-بدءاً من فوضى MVC، إلى اكتساب القابلية للتنبؤ بواسطة [Flux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)، والتبسيط من خلال Hooks، وفصل Server [State](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/)، وتحسين الكفاءة عبر Atomic و Proxy، وصولاً إلى التفاعلية الدقيقة باستخدام Signals.
+بدءاً من فوضى MVC، إلى اكتساب القابلية للتنبؤ بواسطة [Flux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)/Redux، والتبسيط من خلال Hooks، وفصل Server [State](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/)، وتحسين الكفاءة عبر Atomic و Proxy، وصولاً إلى التفاعلية الدقيقة باستخدام Signals.
 
 بالنظر إلى تاريخ إدارة الحالة في الواجهات الأمامية على مدار حوالي 15 عاماً، يظهر اتجاه واحد واضح. وهو **"التطور نحو تقليل الشفرات المتكررة (Boilerplate)، وتقليل العبء المعرفي على المطورين، بينما يقوم النظام في الخلفية (إطار العمل أو المترجم) بتحسين الأداء تلقائياً"** .
 

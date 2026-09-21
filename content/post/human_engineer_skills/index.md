@@ -116,7 +116,7 @@ AIに「システム全体を作って」と指示するのではなく、人間
 
 ## 4. 人間ならではのスキル③：[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)のアーキテクチャ設計とスケール
 
-現代のソフトウェアは、単一のサーバーで動くモノリスから、クラウドネイティブな[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)アーキテクチャ、[イベント駆動](https://kenji.blog/p/event-driven-architecture-async/)アーキテクチャへと進化しています。このような[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)の設計は、局所的なロジックの最適化しかできないAIにとっては非常に困難な領域です。
+現代のソフトウェアは、単一のサーバーで動くモノリスから、クラウドネイティブな[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)アーキテクチャ、イベント駆動アーキテクチャへと進化しています。このような[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)の設計は、局所的なロジックの最適化しかできないAIにとっては非常に困難な領域です。
 
 ### 4.1 [CAP定理](https://kenji.blog/p/cap-theorem-distributed-systems/)とトレードオフの判断
 
@@ -134,7 +134,7 @@ AIは「Cを優先するコード」や「Aを優先するコード」を書く�
 
 ### 4.2 非同期通信と結果整合性（[Eventual Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）
 
-システムが大規模になると、サービス間の連携は[REST API](https://kenji.blog/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)による同期通信から、[メッセージキュー](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/)（[Kafka](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/p/event-driven-architecture-message-queue-kafka-rabbitmq/)など）を用いた非同期通信へと移行します。ここでのデータ整合性は、即時整合性から「結果整合性（Eventual [Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）」へと変化します。
+システムが大規模になると、サービス間の連携は[REST API](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)による同期通信から、メッセージキュー（Kafka, RabbitMQなど）を用いた非同期通信へと移行します。ここでのデータ整合性は、即時整合性から「結果整合性（Eventual [Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)）」へと変化します。
 Sagaパターンや[CQRS](https://kenji.blog/p/event-driven-architecture-async/)（Command Query Responsibility Segregation）といった高度なアーキテクチャパターンをどのタイミングで導入するべきか。これらの複雑な意思決定とシステム全体の青写真を描くことは、まさにシニアエンジニアの真骨頂です。
 
 ```mermaid
@@ -201,7 +201,7 @@ AI時代において、エンジニアは「コードのタイピスト」から
 
 ## 7. おわりに：進化を拒むのではなく、波を乗りこなす
 
-「AIがコードを書く時代」は、エンジニアにとって脅威ではなく、歴史上最大のチャンスです。かつて[アセンブリ](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語から[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)への移行が起こり、メモリの[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)管理から[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)への進化が起こったように、AIによるコード生成は「抽象化のレベルが一つ上がった」に過ぎません。
+「AIがコードを書く時代」は、エンジニアにとって脅威ではなく、歴史上最大のチャンスです。かつて[アセンブリ](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語からC言語への移行が起こり、メモリのポインタ管理からJavaの[ガベージコレクション](https://kenji.blog/p/memory-management-garbage-collection/)への進化が起こったように、AIによるコード生成は「抽象化のレベルが一つ上がった」に過ぎません。
 
 これからのエンジニアは、特定の[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の細かな仕様やフレームワークのバージョンアップに一喜一憂するのではなく、 **「ビジネスの課題は何か」「データをどう分割し、どう連携させるか」「システムが停止した際にどう素早く復旧させるか」** といった、より本質的で、人間らしい高次な問題解決にリソースを集中させることができます。
 

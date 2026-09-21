@@ -238,7 +238,7 @@ def extract_missing_keywords(documents):
 # print(missing_keywords)
 ```
 
-Melalui analisis ini, Anda bisa secara kuantitatif menemukan **topik yang hilang (kesenjangan konten)**. Misalnya, "Ternyata artikel peringkat atas membahas tentang 'Cara deploy ke container [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)' dan 'Membangun pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)', padahal artikel saya tidak menyinggung hal itu sama sekali".
+Melalui analisis ini, Anda bisa secara kuantitatif menemukan **topik yang hilang (kesenjangan konten)**. Misalnya, "Ternyata artikel peringkat atas membahas tentang 'Cara deploy ke container [Docker](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)' dan 'Membangun pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)', padahal artikel saya tidak menyinggung hal itu sama sekali".
 
 Kata-kata kunci penting yang ditemukan sebaiknya tidak sekadar disisipkan sembarangan di dalam teks. Anda harus menambahkannya sebagai bagian bermakna melalui **heading (tag Heading H2 atau H3)**, lalu menulis penjelasan teknis yang mendetail dan menyertakan snippet kode pada heading tersebut. Hal ini dapat secara drastis meningkatkan penilaian dari Google.
 

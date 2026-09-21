@@ -302,7 +302,7 @@ Operadores de sites que concluem a migração do WordPress para o Hugo frequente
 
 ### 6.1 Melhoria drástica na velocidade do site e no Core [Web Vitals](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-Como resultado da eliminação de consultas ao banco de dados e da renderização no lado do servidor, o tempo de carregamento da página é reduzido para milissegundos. Isso está diretamente ligado a uma melhora significativa nas pontuações do "[Core Web Vitals](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)" ([LCP](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)), que é um fator de ranqueamento do Google. É esperado que a taxa de rejeição dos usuários diminua e a avaliação de SEO melhore.
+Como resultado da eliminação de consultas ao banco de dados e da renderização no lado do servidor, o tempo de carregamento da página é reduzido para milissegundos. Isso está diretamente ligado a uma melhora significativa nas pontuações do "[Core Web Vitals](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)" (LCP, FID/INP, [CLS](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)), que é um fator de ranqueamento do Google. É esperado que a taxa de rejeição dos usuários diminua e a avaliação de SEO melhore.
 
 ### 6.2 Libertação das ameaças de segurança
 

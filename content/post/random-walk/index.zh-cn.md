@@ -12,7 +12,7 @@ tags: ["随机漫步", "概率论", "扩散方程", "布朗运动", "Python"]
 
 [随机漫步](https://kenji.blog/zh-cn/p/random-walk/)（[Random Walk](https://kenji.blog/zh-cn/p/random-walk/)）是一个数学概念，指的是下一步的位置由概率随机决定的运动。由于它类似于醉汉摇摇晃晃地左右行走的模样，因此常被称为“醉汉漫步”。乍看之下，这是一种无序且不可预测的运动，但是当步骤数量累积到一定程度后，就会浮现出令人惊叹的、美丽且有规律的数学法则。
 
-在本文中，我们将从最简单的一维[随机漫步](https://kenji.blog/zh-cn/p/random-walk/)的基础出发，结合数学公式，深入探讨它如何与物理学中的扩散现象和布朗运动联系起来，以及高维空间中[随机漫步](https://kenji.blog/zh-cn/p/random-walk/)的有趣性质。对[随机漫步](https://kenji.blog/zh-cn/p/random-walk/)的理解，不仅仅局限于物理学和数学，更已成为金融工程、信息科学等现代众多领域必不可少的素养。
+在本文中，我们将从最简单的一维[随机漫步](https://kenji.blog/zh-cn/p/random-walk/)的基础出发，结合数学公式，深入探讨它如何与物理学中的扩散现象和布朗运动联系起来，以及高维空间中随机漫步的有趣性质。对[随机漫步](https://kenji.blog/zh-cn/p/random-walk/)的理解，不仅仅局限于物理学和数学，更已成为金融工程、信息科学等现代众多领域必不可少的素养。
 
 ## 历史背景：卡尔·皮尔逊的提问
 
@@ -26,7 +26,7 @@ tags: ["随机漫步", "概率论", "扩散方程", "布朗运动", "Python"]
 
 ### 概率性移动的定义
 
-让我们考虑最简单的一维[随机漫步](https://kenji.blog/zh-cn/p/random-walk/)。假设位于数轴上原点 $x = 0$ 的粒子，每单位时间以概率 $p$ 向右移动 $+1$，以概率 $q = 1 - p$ 向左移动 $-1$。在这里，我们仅处理最简单的 $p = q = 1/2$ 的对称[随机漫步](https://kenji.blog/zh-cn/p/random-walk/)（Symmetric [Random Walk](https://kenji.blog/zh-cn/p/random-walk/)）。
+让我们考虑最简单的一维[随机漫步](https://kenji.blog/zh-cn/p/random-walk/)。假设位于数轴上原点 $x = 0$ 的粒子，每单位时间以概率 $p$ 向右移动 $+1$，以概率 $q = 1 - p$ 向左移动 $-1$。在这里，我们仅处理最简单的 $p = q = 1/2$ 的对称随机漫步（Symmetric [Random Walk](https://kenji.blog/zh-cn/p/random-walk/)）。
 
 假设第 $i$ 步的移动量为随机变量 $X_i$，则 $X_i$ 取以下值：
 

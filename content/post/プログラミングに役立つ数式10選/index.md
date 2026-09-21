@@ -69,7 +69,7 @@ int main() {
 ```
 
 **詳細解説**:
-このアプローチの利点は、回転行列の計算（4回の乗算と2回の加算）を複素数の演算としてカプセル化できる点にあります。さらに、3次元空間においては、これの拡張概念である「四元数（クォータニオン）」が用いられます。クォータニオンを使用することで、[オイラー](https://kenji.blog/p/euler/)角で発生する「ジンバル[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)（Gimbal [Lock](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)）」という致命的な問題を回避し、滑らかな球面線形補間（Slerp）を実現することができます。
+このアプローチの利点は、回転行列の計算（4回の乗算と2回の加算）を複素数の演算としてカプセル化できる点にあります。さらに、3次元空間においては、これの拡張概念である「四元数（クォータニオン）」が用いられます。クォータニオンを使用することで、[オイラー](https://kenji.blog/p/euler/)角で発生する「ジンバルロック（Gimbal [Lock](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)）」という致命的な問題を回避し、滑らかな球面線形補間（Slerp）を実現することができます。
 
 ---
 
@@ -440,7 +440,7 @@ int main() {
 ```
 
 **詳細解説**:
-[ニュートン](https://kenji.blog/p/newton/)法の最大の魅力は、条件が整えば「二次収束（Quadratic convergence）」することです。これは、反復のたびに正解の桁数が約2倍になるという驚異的な収束速度を意味します。バイナリサーチ（[二分探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)）が線形収束であることを考えると、微分（微小な傾き）の情報を利用することの強力さが分かります。『Quake III』のハックでは、この[ニュートン](https://kenji.blog/p/newton/)法の最初の初期値を、ビット演算のマジックナンバー `0x5f3759df` を用いてIEEE 754浮動小数点の構造をハックすることで驚異的な精度で導き出していました。
+[ニュートン](https://kenji.blog/p/newton/)法の最大の魅力は、条件が整えば「二次収束（Quadratic convergence）」することです。これは、反復のたびに正解の桁数が約2倍になるという驚異的な収束速度を意味します。バイナリサーチ（二分探索）が線形収束であることを考えると、微分（微小な傾き）の情報を利用することの強力さが分かります。『Quake III』のハックでは、この[ニュートン](https://kenji.blog/p/newton/)法の最初の初期値を、ビット演算のマジックナンバー `0x5f3759df` を用いてIEEE 754浮動小数点の構造をハックすることで驚異的な精度で導き出していました。
 
 ---
 
@@ -559,7 +559,7 @@ for val, prob in zip(logits, probabilities):
 
 ---
 
-## 10. [ユークリッド](https://kenji.blog/p/euclid/)距離と[ピタゴラス](https://kenji.blog/p/pythagoras/)の定理 ([[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. [ユークリッド](https://kenji.blog/p/euclid/)距離とピタゴラスの定理 ([Euclide](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### 数式の美しさと概要
 古代ギリシャから伝わる幾何学の基礎であり、$n$次元空間における2点間の直線距離を定義する数式です。2次元空間では[ピタゴラス](https://kenji.blog/p/pythagoras/)の定理（$a^2 + b^2 = c^2$）そのものです。

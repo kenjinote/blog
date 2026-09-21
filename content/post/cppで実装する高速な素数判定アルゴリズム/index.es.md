@@ -52,7 +52,7 @@ La complejidad computacional de este algoritmo es $O(\sqrt{N})$. Si $N \le 10^{1
 
 # 2. Prueba de [Fermat](https://kenji.blog/es/p/fermat/): El comienzo de la prueba probabilística de primalidad
 
-Para superar los límites del método de división por tentativa, se idearon "Algoritmos probabilísticos (Probabilistic Algorithm)" utilizando teoremas de la teoría de números. Un ejemplo representativo es la "Prueba de [Fermat](https://kenji.blog/es/p/fermat/) ([Fermat](https://kenji.blog/es/p/fermat/) Primality Test)", que utiliza el pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/).
+Para superar los límites del método de división por tentativa, se idearon "Algoritmos probabilísticos (Probabilistic Algorithm)" utilizando teoremas de la teoría de números. Un ejemplo representativo es la "Prueba de [Fermat](https://kenji.blog/es/p/fermat/) (Fermat Primality Test)", que utiliza el pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/).
 
 ## Pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/) ([Fermat's Little Theorem](https://kenji.blog/es/p/fermats-little-theorem/))
 

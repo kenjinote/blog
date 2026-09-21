@@ -68,7 +68,7 @@ $$
 $$
 
 **Impact on Tech Selection:**
-Giant models like DLRM capture even extremely subtle signals (for example, a slight increase in retention time for "posts with videos" or "posts containing specific buzzwords") and reflect them in the prediction score. As a result, technical information that includes "radical titles (e.g., 'React is dead', 'The End of [[Microservice](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/)')" or "visually flashy demos" tends to be algorithmically favored.
+Giant models like DLRM capture even extremely subtle signals (for example, a slight increase in retention time for "posts with videos" or "posts containing specific buzzwords") and reflect them in the prediction score. As a result, technical information that includes "radical titles (e.g., 'React is dead', 'The End of [Microservices](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/)')" or "visually flashy demos" tends to be algorithmically favored.
 
 ### 2.3 Reinforcement Learning and Multi-Armed Bandits
 

@@ -287,7 +287,7 @@ Se suele recomendar esto en muchos casos porque facilita la gestión mediante in
 - Marca la casilla de `General` -> `Use the WSL 2 based engine`.
 - Marca la casilla de `Resources` -> `WSL Integration` -> `Enable integration with my default WSL distro` y activa el interruptor (toggle button) de la distribución que vas a usar (Ubuntu).
 
-Esto te permitirá ejecutar el comando `docker` directamente desde el terminal de WSL2 y la comunicación con el demonio de [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/) (Docker daemon) se realizará a través de máquinas virtuales ligeras y exclusivas (`docker-desktop` y `docker-desktop-data`) gestionadas por [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop.
+Esto te permitirá ejecutar el comando `docker` directamente desde el terminal de WSL2 y la comunicación con el demonio de [Docker](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/) (Docker daemon) se realizará a través de máquinas virtuales ligeras y exclusivas (`docker-desktop` y `docker-desktop-data`) gestionadas por [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop.
 
 ### Enfoque 2: Instalación directa de Docker Engine nativo
 Si tienes restricciones por parte de la red corporativa (como evadir los costos de licencia de Docker Desktop) o deseas reducir la sobrecarga de rendimiento al extremo, instala Docker puramente como un servidor Ubuntu con `systemd` habilitado en `/etc/wsl.conf`.

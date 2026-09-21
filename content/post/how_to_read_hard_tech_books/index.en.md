@@ -98,7 +98,7 @@ Let's look at the process of dropping formulas into code through two concrete ex
 
 ### 4.1 Example 1: The Mathematics and Python Implementation of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Encryption
 
-RSA encryption, the representative of public-key cryptography, is a beautiful application of elementary number theory (congruences, Euler's theorem, and the extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm).
+RSA encryption, the representative of public-key cryptography, is a beautiful application of elementary number theory (congruences, Euler's theorem, and the extended [Euclide](https://kenji.blog/p/euclid/)an algorithm).
 
 #### Mathematical Background
 The key generation and encryption/decryption processes of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption are represented by the following formulas.
@@ -171,7 +171,7 @@ def rsa_demo():
 rsa_demo()
 ```
 
-To find $d$ satisfying the formula $e \cdot d \equiv 1 \pmod{\phi(n)}$, it is necessary to implement an algorithm called the extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm. In this way, **when you try to code a formula, you face implementation challenges like "how exactly is this variable calculated?", and in the process of solving them, your mathematical understanding deepens dramatically**.
+To find $d$ satisfying the formula $e \cdot d \equiv 1 \pmod{\phi(n)}$, it is necessary to implement an algorithm called the extended [Euclide](https://kenji.blog/p/euclid/)an algorithm. In this way, **when you try to code a formula, you face implementation challenges like "how exactly is this variable calculated?", and in the process of solving them, your mathematical understanding deepens dramatically**.
 
 ### 4.2 Example 2: [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s Algorithm and Relaxation
 

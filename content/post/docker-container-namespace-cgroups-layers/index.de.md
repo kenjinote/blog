@@ -308,7 +308,7 @@ Aufbauend auf dem bisherigen Wissen erklären wir, wie man `Dockerfile`s schreib
 
 ### 8.1 Nutzung von Multi-Stage Builds
 
-Durch die Trennung von Build-Umgebung und Laufzeitumgebung kann die endgültige Image-Größe drastisch reduziert werden. Dies ist besonders effektiv bei kompilierten Sprachen wie [Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/), [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) usw.
+Durch die Trennung von Build-Umgebung und Laufzeitumgebung kann die endgültige Image-Größe drastisch reduziert werden. Dies ist besonders effektiv bei kompilierten Sprachen wie [Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/), Rust, [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) usw.
 
 ```dockerfile
 # --- Stage 1: Build-Umgebung ---

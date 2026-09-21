@@ -26,7 +26,7 @@ Yang menopang industri IT Jepang selama bertahun-tahun adalah model SIer (*Syste
 
 Namun, pada tahun 2026 saat ini, model tersebut telah mencapai batasnya. Esensi dari DX (*Digital Transformation*) telah bergeser dari sekadar "penerapan IT" menjadi "transformasi model bisnis", sehingga pengembangan *waterfall* yang memiliki ketangkasan (*agility*) rendah tidak lagi dapat mengikuti perubahan pasar.
 
-Proses pengembangan modern berasumsi bahwa sistem harus bersifat **cloud-native** dan **AI-driven**. Kontainerisasi ([Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)), arsitektur layanan mikro (*microservices*), dan otomatisasi *pipeline* [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) bukan lagi "teknologi khusus", melainkan "infrastruktur standar".
+Proses pengembangan modern berasumsi bahwa sistem harus bersifat **cloud-native** dan **AI-driven**. Kontainerisasi ([Docker](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)/Kubernetes), arsitektur layanan mikro (*microservices*), dan otomatisasi *pipeline* [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) bukan lagi "teknologi khusus", melainkan "infrastruktur standar".
 
 ```mermaid
 graph TD

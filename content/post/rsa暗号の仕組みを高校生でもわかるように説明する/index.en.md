@@ -19,7 +19,7 @@ In this article, taking high school math knowledge as a starting point, I will t
 
 ## 1. Symmetric-key and Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-Before getting into the mathematical mechanisms of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption, let's first organize the basic ideas of cryptography. [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic methods can be broadly divided into two types: "Symmetric-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" and "Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy".
+Before getting into the mathematical mechanisms of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption, let's first organize the basic ideas of cryptography. Cryptographic methods can be broadly divided into two types: "Symmetric-key Cryptography" and "Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy".
 
 ### 1.1 Limitations of Symmetric-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
@@ -267,11 +267,11 @@ If you run `(48 ** 103) % 143` on a calculator, the result wonderfully turns out
 
 ---
 
-## 8. How to Find the Private Key $d$: Extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm
+## 8. How to Find the Private Key $d$: Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm
 
-In the hand calculation example, we found $d=103$ by guessing to find $k$, but this method is impossible when the numbers are hundreds of digits long. In actual programs, an algorithm called the **"Extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm"** is used.
+In the hand calculation example, we found $d=103$ by guessing to find $k$, but this method is impossible when the numbers are hundreds of digits long. In actual programs, an algorithm called the **"Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm"** is used.
 
-Solving $7d \equiv 1 \pmod{120}$ is the same as finding integers $d, y$ that satisfy $7d + 120y = 1$. By working backwards through the [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm, this can be calculated mechanically.
+Solving $7d \equiv 1 \pmod{120}$ is the same as finding integers $d, y$ that satisfy $7d + 120y = 1$. By working backwards through the [Euclide](https://kenji.blog/p/euclid/)an Algorithm, this can be calculated mechanically.
 
 1. $120 \div 7 = 17$ remainder $1$ 
 2. Transforming this, $1 = 120 - 17 \times 7$

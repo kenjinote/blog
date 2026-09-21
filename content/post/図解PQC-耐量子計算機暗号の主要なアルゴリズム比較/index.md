@@ -124,7 +124,7 @@ Module-LWEの最大の利点は、多項式の次数 $n$（NIST標準では $n=2
 
 ### 5.1. KEM (Key Encapsulation Mechanism) のアーキテクチャ
 
-PQCの時代では、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)のように「クライアントが共通鍵を作ってサーバーの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)で[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)して送る」という直接的なアプローチではなく、KEMというカプセル化の枠組みが標準となります。
+PQCの時代では、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)のように「クライアントが共通鍵を作ってサーバーの公開鍵で[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)して送る」という直接的なアプローチではなく、KEMというカプセル化の枠組みが標準となります。
 
 ```mermaid
 sequenceDiagram
@@ -255,7 +255,7 @@ SPHINCS+の唯一にして最大の弱点は、 **署名サイズが極めて大
 
 NISTの標準化プロセスにおいて、Round 4の最終候補として現在も評価が継続されている重要なアプローチが、 **符号ベース暗号** の **Classic McEliece** です。
 
-1978年にRobert McElieceによって提案されたこのアルゴリズムは、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の歴史の中でも[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)と並んで最も古いものの一つです。「Goppa符号（ゴッパ符号）」と呼ばれる代数幾何符号を利用しており、メッセージに意図的にエラー（ノイズベクトル）を加えて[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)し、秘密鍵としてGoppa符号のパリティ検査行列を持つ者だけが、強力な誤り訂正能力を使ってエラーを取り除き、元のメッセージを復号できる、という「 **シンドローム復号問題 (Syndrome Decoding Problem)** 」に基づいています。
+1978年にRobert McElieceによって提案されたこのアルゴリズムは、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の歴史の中でもRSAと並んで最も古いものの一つです。「Goppa符号（ゴッパ符号）」と呼ばれる代数幾何符号を利用しており、メッセージに意図的にエラー（ノイズベクトル）を加えて[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)し、秘密鍵としてGoppa符号のパリティ検査行列を持つ者だけが、強力な誤り訂正能力を使ってエラーを取り除き、元のメッセージを復号できる、という「 **シンドローム復号問題 (Syndrome Decoding Problem)** 」に基づいています。
 
 $$ \vec{c} = \vec{m} G + \vec{e} $$
 （$G$ は公開鍵であるスクランブルされた生成行列、$\vec{e}$ は重み $t$ のエラーベクトル）

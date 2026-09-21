@@ -16,7 +16,7 @@ tags:
 
 ## 1. Introduction
 
-Dans l'histoire des mathématiques, il y a une figure connue sous le nom de « Père de l'Algèbre ». Il s'agit de **[Diophante](https://kenji.blog/fr/p/diophantus/)** ([Diophante](https://kenji.blog/fr/p/diophantus/) d'Alexandrie), qui était actif dans l'antique Alexandrie. Son œuvre majeure, *Arithmetica*, a eu une influence profonde sur les mathématiciens ultérieurs du monde islamique et de l'Europe de la Renaissance. En particulier, le « Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/) », que [Pierre de Fermat](https://kenji.blog/fr/p/fermat/) a écrit dans les marges d'*Arithmetica*, est extrêmement célèbre.
+Dans l'histoire des mathématiques, il y a une figure connue sous le nom de « Père de l'Algèbre ». Il s'agit de **[Diophante](https://kenji.blog/fr/p/diophantus/)** (Diophante d'Alexandrie), qui était actif dans l'antique Alexandrie. Son œuvre majeure, *Arithmetica*, a eu une influence profonde sur les mathématiciens ultérieurs du monde islamique et de l'Europe de la Renaissance. En particulier, le « Dernier Théorème de Fermat », que [Pierre de Fermat](https://kenji.blog/fr/p/fermat/) a écrit dans les marges d'*Arithmetica*, est extrêmement célèbre.
 
 Dans cet article, nous plongerons dans la vie de [Diophante](https://kenji.blog/fr/p/diophantus/), ses réalisations mathématiques, les détails de son chef-d'œuvre *Arithmetica*, et les « équations diophantiennes » qui portent son nom. De plus, nous percerons le mystère de son « épitaphe », à partir de laquelle sa durée de vie peut être déduite.
 
@@ -28,7 +28,7 @@ Il ne reste presque aucune trace précise de la naissance ou de la mort de [Diop
 
 ### 2.2 La Culture Hellénistique et Alexandrie
 
-À l'époque, Alexandrie était le centre de la culture et du savoir hellénistiques, abritant une immense bibliothèque (la Bibliothèque d'Alexandrie) et servant de nœud de connaissances où de nombreux érudits se réunissaient. Dans cette ville où se croisaient les connaissances de la Grèce, de l'Égypte, de la Babylonie et même de l'Inde, on pense que [Diophante](https://kenji.blog/fr/p/diophantus/) a eu accès à un vaste héritage mathématique du passé. Contrairement à la tradition géométrique établie par les grands mathématiciens grecs comme [Euclide](https://kenji.blog/fr/p/euclid/), Archimède et Apollonius, certaines théories suggèrent que [Diophante](https://kenji.blog/fr/p/diophantus/) a été fortement influencé par l'approche algébrique babylonienne.
+À l'époque, Alexandrie était le centre de la culture et du savoir hellénistiques, abritant une immense bibliothèque (la Bibliothèque d'Alexandrie) et servant de nœud de connaissances où de nombreux érudits se réunissaient. Dans cette ville où se croisaient les connaissances de la Grèce, de l'Égypte, de la Babylonie et même de l'Inde, on pense que [Diophante](https://kenji.blog/fr/p/diophantus/) a eu accès à un vaste héritage mathématique du passé. Contrairement à la tradition géométrique établie par les grands mathématiciens grecs comme Euclide, Archimède et Apollonius, certaines théories suggèrent que [Diophante](https://kenji.blog/fr/p/diophantus/) a été fortement influencé par l'approche algébrique babylonienne.
 
 ```mermaid
 timeline
@@ -97,7 +97,7 @@ Dans la marge à côté de ce problème, [Pierre de Fermat](https://kenji.blog/f
 
 > « Il est impossible de séparer un cube en deux cubes, ou une puissance quatrième en deux puissances quatrièmes, ou en général, toute puissance supérieure à la seconde, en deux puissances semblables. J'en ai découvert une démonstration véritablement merveilleuse, que cette marge est trop étroite pour contenir. »
 
-C'est le célèbre **Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/)** (que $x^n + y^n = z^n \ (n \ge 3)$ n'a pas de solutions entières positives). Ce théorème a continué de repousser les défis des mathématiciens de génie du monde entier pendant environ 350 ans après avoir été proposé, jusqu'à ce qu'il soit finalement prouvé par [Andrew Wiles](https://kenji.blog/fr/p/wiles/) en 1995. Sans le livre de [Diophante](https://kenji.blog/fr/p/diophantus/), ce grand drame n'aurait peut-être jamais eu lieu.
+C'est le célèbre **Dernier Théorème de [Fermat](https://kenji.blog/fr/p/fermat/)** (que $x^n + y^n = z^n \ (n \ge 3)$ n'a pas de solutions entières positives). Ce théorème a continué de repousser les défis des mathématiciens de génie du monde entier pendant environ 350 ans après avoir été proposé, jusqu'à ce qu'il soit finalement prouvé par Andrew Wiles en 1995. Sans le livre de [Diophante](https://kenji.blog/fr/p/diophantus/), ce grand drame n'aurait peut-être jamais eu lieu.
 
 ```mermaid
 graph TD
@@ -176,9 +176,9 @@ Les œuvres de [Diophante](https://kenji.blog/fr/p/diophantus/) ont été tempor
 
 En particulier, les mathématiciens de Bagdad du 9ème siècle ont traduit *Arithmetica* en arabe, contribuant grandement au développement de l'algèbre islamique. Les mathématiciens islamiques comme Al-Karaji ont adopté et développé davantage les méthodes de [Diophante](https://kenji.blog/fr/p/diophantus/).
 
-Au 16ème siècle, avec la redécouverte des classiques grecs dans l'Europe de la Renaissance, *Arithmetica* a été traduite en latin. Une édition bilingue grecque et latine publiée par [Claude Gaspard Bachet](https://kenji.blog/fr/p/bachet/) de Méziriac en 1621 a été largement lue. C'est cette édition de [Bachet](https://kenji.blog/fr/p/bachet/) d'*Arithmetica* que [Fermat](https://kenji.blog/fr/p/fermat/) a étudiée avec soin, ce qui a déclenché l'ouverture d'une nouvelle porte en mathématiques.
+Au 16ème siècle, avec la redécouverte des classiques grecs dans l'Europe de la Renaissance, *Arithmetica* a été traduite en latin. Une édition bilingue grecque et latine publiée par [Claude Gaspard Bachet](https://kenji.blog/fr/p/bachet/) de Méziriac en 1621 a été largement lue. C'est cette édition de Bachet d'*Arithmetica* que [Fermat](https://kenji.blog/fr/p/fermat/) a étudiée avec soin, ce qui a déclenché l'ouverture d'une nouvelle porte en mathématiques.
 
-La théorie des équations diophantiennes a ensuite été profondément étudiée par des géants tels que [Leonhard Euler](https://kenji.blog/fr/p/euler/), [Joseph-Louis Lagrange](https://kenji.blog/fr/p/lagrange/), et [Carl Friedrich Gauss](https://kenji.blog/fr/p/gauss/). Leurs recherches se sont développées dans les vastes domaines mathématiques modernes de la « théorie algébrique des nombres » et de la « géométrie algébrique ». Le 10ème des 23 problèmes de [Hilbert](https://kenji.blog/fr/p/hilbert/) était « de trouver un algorithme général pour déterminer si une équation diophantienne donnée est résoluble », et en 1970 Yuri Matiyasevich a prouvé qu'« aucun algorithme de ce type n'existe ». Le nom de [Diophante](https://kenji.blog/fr/p/diophantus/) est profondément gravé à la pointe des mathématiques modernes.
+La théorie des équations diophantiennes a ensuite été profondément étudiée par des géants tels que [Leonhard Euler](https://kenji.blog/fr/p/euler/), Joseph-Louis Lagrange, et Carl Friedrich Gauss. Leurs recherches se sont développées dans les vastes domaines mathématiques modernes de la « théorie algébrique des nombres » et de la « géométrie algébrique ». Le 10ème des 23 problèmes de Hilbert était « de trouver un algorithme général pour déterminer si une équation diophantienne donnée est résoluble », et en 1970 Yuri Matiyasevich a prouvé qu'« aucun algorithme de ce type n'existe ». Le nom de [Diophante](https://kenji.blog/fr/p/diophantus/) est profondément gravé à la pointe des mathématiques modernes.
 
 ## 7. Conclusion
 

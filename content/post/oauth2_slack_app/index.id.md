@@ -10,7 +10,7 @@ tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'Mekanisme Authorization Code Grant Flow pada OAuth 2.0 divisualisasikan dan dijelaskan secara rinci melalui implementasi integrasi Slack App. Ini adalah panduan lengkap yang juga mencakup contoh kode konkret dalam Node.js dan praktik terbaik keamanan.'
 ---
 
-# Pendahuluan: Mengapa Belajar [[OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/)?
+# Pendahuluan: Mengapa Belajar [OAuth 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/)?
 
 Dalam aplikasi Web modern, adalah pemandangan yang biasa melihat beberapa layanan bekerja sama. Misalnya, fitur-fitur seperti "Login dengan akun Google", "Mengirim notifikasi ke Slack ketika tugas Trello diperbarui", atau "Menambahkan tautan rapat Zoom ke Google Calendar secara otomatis". Di balik semua ini adalah framework otorisasi yang disebut **OAuth 2.0 (Open [Authorization](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) 2.0)**.
 
@@ -22,7 +22,7 @@ Dalam artikel ini, kita akan menjelaskan mekanisme OAuth 2.0 dengan sangat rinci
 
 ---
 
-# 1. Konsep Dasar [[OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/): 4 Peran (Roles)
+# 1. Konsep Dasar [OAuth 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/): 4 Peran (Roles)
 
 Langkah pertama dalam memahami OAuth 2.0 adalah memahami dengan tepat tokoh-tokoh (Roles) yang terlibat. RFC 6749 mendefinisikan 4 peran berikut:
 
@@ -291,7 +291,7 @@ String yang diawali dengan `xoxb-` adalah **Bot Access Token** di Slack. Selanju
 
 # 6. Cakupan Token (Token Scope) dan Prinsip Hak Istimewa Minimal (Principle of Least Privilege)
 
-Salah satu konsep terpenting dalam [[OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) adalah "Cakupan (Scope)". Scope mengacu pada rentang wewenang yang terikat pada akses token.
+Salah satu konsep terpenting dalam [OAuth 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) adalah "Cakupan (Scope)". Scope mengacu pada rentang wewenang yang terikat pada akses token.
 
 Di Slack, wewenang diklasifikasikan dengan sangat detail, yang secara garis besar dibagi menjadi **Bot Token Scopes** dan **User Token Scopes**.
 - `chat:write` (Bot): Izin untuk memposting pesan ke saluran atas nama aplikasi (bot) itu sendiri.
@@ -305,7 +305,7 @@ Mengikuti "Prinsip Hak Istimewa Minimal (Principle of Least Privilege)", yang me
 
 # 7. Keamanan Lebih Lanjut: PKCE (Proof Key for Code Exchange)
 
-Akhir-akhir ini, sebagai mekanisme untuk lebih memperkuat keamanan [[OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/), **PKCE (Proof Key for Code Exchange, RFC 7636, diucapkan "pixy")** telah distandarisasi dan digunakan secara luas.
+Akhir-akhir ini, sebagai mekanisme untuk lebih memperkuat keamanan [OAuth 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/), **PKCE (Proof Key for Code Exchange, RFC 7636, diucapkan "pixy")** telah distandarisasi dan digunakan secara luas.
 
 Awalnya, PKCE dirancang untuk "klien publik" seperti aplikasi asli (iOS/Android) atau SPA (Single Page Application) yang tidak dapat menyimpan `client_secret` dengan aman. Namun saat ini, dalam praktik keamanan terbaik (Draf [OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) 2.1), penggunaan PKCE sangat direkomendasikan bahkan untuk "klien rahasia (confidential client)" di sisi server.
 
@@ -370,6 +370,6 @@ Artikel ini menjelaskan [Authorization](https://kenji.blog/id/p/oauth2-oidc-auth
 3. Memahami mekanisme kriptografis di baliknya, seperti pertahanan [CSRF](https://kenji.blog/id/p/web-security-basics-cors-csp/) menggunakan parameter **`state`** dan pencegahan serangan intersep kode otorisasi menggunakan **PKCE**, adalah jalan pintas menuju implementasi yang aman.
 4. Desain cakupan (scope) berdasarkan **Prinsip Hak Istimewa Minimal (Principle of Least Privilege)** dan enkripsi saat menyimpan di DB adalah elemen yang sangat penting dalam pengoperasiannya.
 
-[[OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) sangat dalam, dengan sejumlah besar spesifikasi bahkan hanya di dalam RFC, tetapi dengan mempelajari dan mempraktikkannya langsung pada platform aktual (Slack) seperti ini, Anda pasti akan merasakan filosofi desainnya yang elegan dan mekanisme keamanannya yang kokoh. Semoga pengetahuan dalam artikel ini bermanfaat untuk pengembangan aplikasi Anda di masa depan dan implementasi integrasi API.
+[OAuth 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) sangat dalam, dengan sejumlah besar spesifikasi bahkan hanya di dalam RFC, tetapi dengan mempelajari dan mempraktikkannya langsung pada platform aktual (Slack) seperti ini, Anda pasti akan merasakan filosofi desainnya yang elegan dan mekanisme keamanannya yang kokoh. Semoga pengetahuan dalam artikel ini bermanfaat untuk pengembangan aplikasi Anda di masa depan dan implementasi integrasi API.
 
 

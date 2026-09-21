@@ -13,7 +13,7 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 在现代数字社会，尤其是基于互联网的通信中，“加密”已经成为不可或缺的基础设施技术。我们在网络浏览器上通过HTTPS安全地浏览网站、在网上银行进行金融交易、在即时通讯应用上进行私密交流，这一切的背后，都是由基于高级数学理论的加密协议在发挥作用。其中发挥关键作用的是“公钥加密算法”，其代表就是 **[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密** 。
 
-包括RSA加密在内的许多加密算法的安全性与合理性，都极大地依赖于17世纪法国数学家[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)（[Pierre de Fermat](https://kenji.blog/zh-cn/p/fermat/)）发现的一个非常优美且强大的定理。那就是 **[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/zh-cn/p/fermats-little-theorem/)）** 。此外，将其一般化的[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）定理也在密码学理论中发挥了决定性作用。
+包括RSA加密在内的许多加密算法的安全性与合理性，都极大地依赖于17世纪法国数学家[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)（Pierre de Fermat）发现的一个非常优美且强大的定理。那就是 **费马小定理（Fermat's Little Theorem）** 。此外，将其一般化的莱昂哈德·欧拉（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）定理也在密码学理论中发挥了决定性作用。
 
 本文将从基础开始全面解析，纯数学的发现——[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)，是如何被应用到现代实用的加密技术中，特别是在“素数测试”和“[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密”中的。本篇将是一份非常详细的技术指南，涵盖数学证明、加密与解密的机制，以及使用 C++ 和 Python 进行的具体算法实现。
 
@@ -112,7 +112,7 @@ $$
 
 ## 4. 欧拉函数与欧拉定理
 
-[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)是关于“素数 $p$”的定理，而将其推广到“任意正整数 $n$”的人，正是[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)。要理解[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密，这种推广是必不可少的。
+[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)是关于“素数 $p$”的定理，而将其推广到“任意正整数 $n$”的人，正是莱昂哈德·欧拉。要理解[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密，这种推广是必不可少的。
 
 ### 4.1 欧拉函数 $\phi(n)$
 
@@ -317,7 +317,7 @@ sequenceDiagram
 4. 选择一个与 $\phi(N)$ 互质的整数 $e$ （公开指数）（通常使用 $e = 65537$）。
 5. 计算 $e$ 的模逆元 $d$ （私有指数）。即，找到满足以下条件的 $d$：
    $$ e \cdot d \equiv 1 \pmod{\phi(N)} $$
-   这个计算需要用到 **扩展[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)** 。
+   这个计算需要用到 **扩展[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)** 。
 
 至此， **公钥为 $(N, e)$** ， **私钥为 $(N, d)$** 。（$p, q, \phi(N)$ 应立即销毁或严格保密）。
 
@@ -369,7 +369,7 @@ $$ M \cdot (1)^k \equiv M \pmod N $$
 
 仅凭理论可能难以有直观感受，所以我们用Python来实际实现一下RSA加密的密钥生成、加密、解密的过程。这是一个用于教学的“玩具实现（Toy Implementation）”，但所使用的数学原理与实际完全相同。
 
-求模逆元 $d$ 的“扩展[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)”也会包含在实现中。
+求模逆元 $d$ 的“扩展[欧几里得算法](https://kenji.blog/p/euclidean-algorithm/)”也会包含在实现中。
 
 ```python
 import random

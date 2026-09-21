@@ -75,7 +75,7 @@ graph TD
 在单体架构中只需在内存中进行函数调用的处理，变成了跨网络的通信（HTTP/REST、gRPC等）。由此会产生 **网络延迟** ，存在系统整体响应速度下降的风险。此外，由于网络始终是不稳定的，因此必须实现超时、重试控制、断路器等复杂的通信控制。
 
 ### 3.2. 分布式事务与数据一致性
-由于每个服务都拥有自己的数据库，跨多个服务的数据更新（事务）变得非常困难。传统的[RDBMS](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)中可用的[ACID](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)事务不再适用，不得不引入容忍最终一致性（Eventual [Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)）的复杂设计模式，如 **Saga模式** 或 **事件溯源（Event Sourcing）** 。
+由于每个服务都拥有自己的数据库，跨多个服务的数据更新（事务）变得非常困难。传统的[RDBMS](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)中可用的ACID事务不再适用，不得不引入容忍最终一致性（Eventual [Consistency](https://kenji.blog/zh-cn/p/cap-theorem-distributed-systems-tradeoff/)）的复杂设计模式，如 **Saga模式** 或 **事件溯源（Event Sourcing）** 。
 
 ### 3.3. 客户端访问的复杂化
 当存在数十、数百个服务时，让客户端（Web浏览器或移动应用）掌握应该调用哪个API端点并分别进行通信是不现实的。此外，为了显示一个页面，可能需要向多个服务发送大量请求（Chatty API），从而导致性能恶化。

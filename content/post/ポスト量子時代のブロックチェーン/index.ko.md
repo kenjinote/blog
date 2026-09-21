@@ -12,7 +12,7 @@ description: "양자 컴퓨터의 경이적인 계산 능력이 블록체인의 
 
 ## 1. 인트로덕션: 포스트 양자 시대의 발소리와 블록체인의 위기
 
-2009년 사토시 나카모트에 의해 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)([Bitcoin](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/))이 탄생한 이래, 블록체인 기술은 '탈중앙화되고 위변조가 불가능한 원장'으로서 전 세계 금융 시스템과 애플리케이션의 기반으로 성장했습니다. 이러한 견고한 보안을 지탱하고 있는 것이 **공개키 암호([Public Key](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)** 와 **암호학적 해시 함수([Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)s)** 라는 현대 암호 기술입니다.
+2009년 사토시 나카모트에 의해 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)(Bitcoin)이 탄생한 이래, 블록체인 기술은 '탈중앙화되고 위변조가 불가능한 원장'으로서 전 세계 금융 시스템과 애플리케이션의 기반으로 성장했습니다. 이러한 견고한 보안을 지탱하고 있는 것이 **공개키 암호(Public Key Cryptography)** 와 **암호학적 해시 함수(Cryptographic [Hash Function](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)s)** 라는 현대 암호 기술입니다.
 
 이러한 암호 기술은 고전적인 컴퓨터(현재 우리가 사용하고 있는 PC나 슈퍼컴퓨터)로는 우주의 수명만큼의 시간을 들여도 해독할 수 없다는 수학적인 '계산 곤란성(Computational Hardness)'을 근거로 안전성을 보장하고 있습니다.
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. 타원곡선 암호(ECDSA)의 기초와 계산 곤란성
 
-[비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)이나 이더리움(Ethereum)을 비롯한 많은 블록체인은 디지털 서명 알고리즘으로 **타원곡선 디지털 서명 알고리즘(ECDSA: Elliptic Curve [Digital Signature](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) Algorithm)** 을 채택하고 있습니다. 구체적으로 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)은 `secp256k1`이라는 매개변수의 타원곡선을 사용합니다.
+[비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)이나 이더리움(Ethereum)을 비롯한 많은 블록체인은 디지털 서명 알고리즘으로 **타원곡선 디지털 서명 알고리즘(ECDSA: Elliptic Curve Digital Signature Algorithm)** 을 채택하고 있습니다. 구체적으로 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)은 `secp256k1`이라는 매개변수의 타원곡선을 사용합니다.
 
 타원곡선 암호의 안전성은 **타원곡선 이산대수 문제(ECDLP: Elliptic Curve Discrete Logarithm Problem)** 의 계산 곤란성에 의존하고 있습니다.
 타원곡선은 아래의 바이어슈트라스(Weierstrass) 표준형으로 표현되는 방정식으로 정의됩니다.

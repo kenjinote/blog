@@ -444,7 +444,7 @@ React Compiler 会在构建时对 React 组件代码进行静态分析，并 **�
 
 ## 13. 结论：状态管理将走向何方？
 
-从 MVC 的混乱开始，经历 [Flux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 带来的可预测性、Hooks 带来的简化、Server [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) 的分离、通过 Atomic 和 Proxy 带来的效率提升，再到基于 Signals 的细粒度响应式。
+从 MVC 的混乱开始，经历 [Flux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/)/Redux 带来的可预测性、Hooks 带来的简化、Server [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) 的分离、通过 Atomic 和 Proxy 带来的效率提升，再到基于 Signals 的细粒度响应式。
 
 回顾过去约 15 年前端状态管理的历史，我们可以清晰地看到一个趋势： **“在减少样板代码并降低开发者认知负担的同时，系统底层（框架和编译器）正在朝着自动优化性能的方向演进。”** 
 

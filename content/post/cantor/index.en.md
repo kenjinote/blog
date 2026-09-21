@@ -24,7 +24,7 @@ His creation of "Set Theory" has become the foundation of every field in modern 
 
 [Georg Cantor](https://kenji.blog/en/p/cantor/) was born in 1845 in St. Petersburg, Russia. His father was a wealthy merchant from Denmark, and his mother was a Russian musician. Showing an extraordinary talent for mathematics from an early age, he eventually moved to Germany and studied mathematics at the University of Berlin.
 
-At the University of Berlin, he was guided by the leading figures of the mathematical world at the time, **[Karl Weierstrass](https://kenji.blog/en/p/weierstrass/)** and **Leopold [Kronecker](https://kenji.blog/en/p/kronecker/)**. [Kronecker](https://kenji.blog/en/p/kronecker/) in particular would later become Cantor's greatest opponent.
+At the University of Berlin, he was guided by the leading figures of the mathematical world at the time, **[Karl Weierstrass](https://kenji.blog/en/p/weierstrass/)** and **Leopold Kronecker**. [Kronecker](https://kenji.blog/en/p/kronecker/) in particular would later become Cantor's greatest opponent.
 
 ### The Quest for Infinity and the Conflict with [Kronecker](https://kenji.blog/en/p/kronecker/)
 

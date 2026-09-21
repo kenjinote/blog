@@ -160,7 +160,7 @@ Les découvertes de [Fibonacci](https://kenji.blog/fr/p/fibonacci/), qui a vécu
 
 ### Applications en informatique
 
-Dans les algorithmes informatiques, la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) est très utile. L'algorithme appelé "recherche de [Fibonacci](https://kenji.blog/fr/p/fibonacci/)" peut rechercher des données plus efficacement que la recherche binaire dans des conditions spécifiques. De plus, une structure de données connue sous le nom de "tas de [Fibonacci](https://kenji.blog/fr/p/fibonacci/)" est indispensable pour accélérer les algorithmes de la théorie des graphes comme l'algorithme de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/).
+Dans les algorithmes informatiques, la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) est très utile. L'algorithme appelé "recherche de Fibonacci" peut rechercher des données plus efficacement que la recherche binaire dans des conditions spécifiques. De plus, une structure de données connue sous le nom de "tas de Fibonacci" est indispensable pour accélérer les algorithmes de la théorie des graphes comme l'algorithme de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/).
 
 ### Retracement de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) sur les marchés financiers
 

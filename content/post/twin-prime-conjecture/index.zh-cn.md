@@ -23,7 +23,7 @@ tags = ["素数", "数论", "未解之谜"]
 - $(29, 31)$
 - $(41, 43)$
 
-根据[素数定理（[Prime Number Theorem](https://kenji.blog/zh-cn/p/prime-number-theorem/)）](https://kenji.blog/p/prime-number-theorem/)我们知道，随着数字变大，素数本身出现的频率会逐渐降低。随之而来，孪生素数的出现频率也会降低。然而，数学家们自古以来就推测，无论数字变得多大，这种“差为2的素数对”会不会无穷无尽地出现呢？
+根据[素数定理（Prime Number Theorem）](https://kenji.blog/p/prime-number-theorem/)我们知道，随着数字变大，素数本身出现的频率会逐渐降低。随之而来，孪生素数的出现频率也会降低。然而，数学家们自古以来就推测，无论数字变得多大，这种“差为2的素数对”会不会无穷无尽地出现呢？
 
 这就是 **孪生素数猜想** 。
 

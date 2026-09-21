@@ -49,7 +49,7 @@ graph TD
     Mersenne <-->|"Acústica"| Huygens
 ```
 
-No centro dessa rede, quando alguém descobria um novo teorema, [Mersenne](https://kenji.blog/pt/p/mersenne/) o repassava a outros estudiosos, encorajando a crítica e a verificação. Por exemplo, foi [Mersenne](https://kenji.blog/pt/p/mersenne/) quem comunicou as descobertas matemáticas de [Pierre de Fermat](https://kenji.blog/pt/p/fermat/) a [Descartes](https://kenji.blog/pt/p/descartes/), provocando um intenso debate entre os dois. Ele também é conhecido por traduzir as obras de Galileu Galilei (como o *Diálogo sobre os Dois Principais Sistemas do Mundo*) para o francês, tornando-as amplamente conhecidas, apesar da rigorosa censura da Igreja Católica. Alguns historiadores avaliam que, sem ele, a Revolução Científica do século XVII poderia ter sido atrasada em décadas.
+No centro dessa rede, quando alguém descobria um novo teorema, [Mersenne](https://kenji.blog/pt/p/mersenne/) o repassava a outros estudiosos, encorajando a crítica e a verificação. Por exemplo, foi Mersenne quem comunicou as descobertas matemáticas de Pierre de Fermat a [Descartes](https://kenji.blog/pt/p/descartes/), provocando um intenso debate entre os dois. Ele também é conhecido por traduzir as obras de Galileu Galilei (como o *Diálogo sobre os Dois Principais Sistemas do Mundo*) para o francês, tornando-as amplamente conhecidas, apesar da rigorosa censura da Igreja Católica. Alguns historiadores avaliam que, sem ele, a Revolução Científica do século XVII poderia ter sido atrasada em décadas.
 
 ## Realizações matemáticas: Números primos de [Mersenne](https://kenji.blog/pt/p/mersenne/)
 
@@ -93,7 +93,7 @@ A verificação por matemáticos posteriores revelou que havia vários erros na 
 
 ### Aplicações à criptografia moderna e GIMPS
 
-Hoje, os números primos de [Mersenne](https://kenji.blog/pt/p/mersenne/) continuam a ser explorados pelo "GIMPS" (Great Internet [Mersenne](https://kenji.blog/pt/p/mersenne/) Prime Search), um projeto dedicado a encontrar os maiores números primos do mundo. Como existe um teste de primalidade especial e rápido chamado teste de Lucas-Lehmer, os números de [Mersenne](https://kenji.blog/pt/p/mersenne/) são extremamente adequados para a descoberta de primos gigantescos.
+Hoje, os números primos de [Mersenne](https://kenji.blog/pt/p/mersenne/) continuam a ser explorados pelo "GIMPS" (Great Internet Mersenne Prime Search), um projeto dedicado a encontrar os maiores números primos do mundo. Como existe um teste de primalidade especial e rápido chamado teste de Lucas-Lehmer, os números de [Mersenne](https://kenji.blog/pt/p/mersenne/) são extremamente adequados para a descoberta de primos gigantescos.
 
 ```python
 # Teste de Lucas-Lehmer para números primos de Mersenne
@@ -131,7 +131,7 @@ Esta lei é um princípio físico crucial que forma a base para o design e a afi
 
 [Mersenne](https://kenji.blog/pt/p/mersenne/) também deixou pegadas significativas filosoficamente. Ele se opôs ao ceticismo extremo e às ideias mágicas ou místicas (como o hermetismo renascentista), defendendo a ciência racional e empírica.
 
-Quando seu amigo íntimo [Descartes](https://kenji.blog/pt/p/descartes/) publicou as *Meditações sobre a Filosofia Primeira*, [Mersenne](https://kenji.blog/pt/p/mersenne/) enviou o manuscrito a pensadores proeminentes de toda a Europa (como Thomas Hobbes e Pierre Gassendi) para reunir suas objeções. Ele então as compilou em um livro, juntamente com as próprias respostas de [Descartes](https://kenji.blog/pt/p/descartes/), desempenhando um papel que poderia ser considerado um precursor do moderno sistema de revisão por pares.
+Quando seu amigo íntimo [Descartes](https://kenji.blog/pt/p/descartes/) publicou as *Meditações sobre a Filosofia Primeira*, Mersenne enviou o manuscrito a pensadores proeminentes de toda a Europa (como Thomas Hobbes e Pierre Gassendi) para reunir suas objeções. Ele então as compilou em um livro, juntamente com as próprias respostas de [Descartes](https://kenji.blog/pt/p/descartes/), desempenhando um papel que poderia ser considerado um precursor do moderno sistema de revisão por pares.
 
 [Mersenne](https://kenji.blog/pt/p/mersenne/) acreditava firmemente que o progresso científico provava a grandeza do mundo criado por Deus, considerando que não havia contradição entre religião e ciência.
 

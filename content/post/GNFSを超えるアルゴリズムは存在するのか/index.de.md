@@ -135,7 +135,7 @@ Sollte es $L_n[1/4]$ oder gar einen klassischen Polynomzeitalgorithmus geben, m�
 
 ## 5. Durchbruch durch Quantencomputer: Shors Algorithmus
 
-Während klassische Computer an der $L_n[1/3]$-Wand stehen, zerschmetterte der 1994 von Peter Shor vorgestellte **[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))** diese Wand, indem er das Berechnungsmodell grundlegend veränderte.
+Während klassische Computer an der $L_n[1/3]$-Wand stehen, zerschmetterte der 1994 von Peter Shor vorgestellte **Shor-Algorithmus ([Shor's Algorithm](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))** diese Wand, indem er das Berechnungsmodell grundlegend veränderte.
 
 ### 5.1 Der Schock der quantenmechanischen Polynomzeit
 

@@ -32,9 +32,9 @@ tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 
 ### トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/) (Topological Sort)
 
-トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)は、有向非巡回[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (DAG: Directed Acyclic [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) の頂点を、すべての有向辺が前方の頂点から後方の頂点へと向かうように一列に並べるアルゴリズムです。タスクの依存関係（例: タスクAが終わらないとタスクBを開始できない）を解消する際や、DAG上での[動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) の計算順序を決定するために用いられます。
+トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)は、有向非巡回グラフ (DAG: Directed Acyclic Graph) の頂点を、すべての有向辺が前方の頂点から後方の頂点へと向かうように一列に並べるアルゴリズムです。タスクの依存関係（例: タスクAが終わらないとタスクBを開始できない）を解消する際や、DAG上での動的計画法 ([DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) の計算順序を決定するために用いられます。
 
-計算量は $O(V + E)$ です。Kahnのアルゴリズム（入次数を用いた[BFS](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ベース）と、帰りがけ順を用いた[DFS](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ベースの2種類の実装がありますが、ここでは辞書順最小のトポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)も簡単に求められるKahnのアルゴリズムを紹介します。
+計算量は $O(V + E)$ です。Kahnのアルゴリズム（入次数を用いた[BFS](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ベース）と、帰りがけ順を用いたDFSベースの2種類の実装がありますが、ここでは辞書順最小のトポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)も簡単に求められるKahnのアルゴリズムを紹介します。
 
 ```mermaid
 graph LR
@@ -230,7 +230,7 @@ pair<vector<long long>, bool> bellman_ford(int V, const vector<Edge>& edges, int
 
 ### ワーシャルフロイド法 (Floyd-Warshall Algorithm)
 
-[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)内のすべての頂点のペア間の最短距離を求めるアルゴリズムです。[動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) をベースにしています。アルゴリズムが非常に簡潔であり、実装が極めて容易である点が魅力的です。
+[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)内のすべての頂点のペア間の最短距離を求めるアルゴリズムです。動的計画法 ([DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) をベースにしています。アルゴリズムが非常に簡潔であり、実装が極めて容易である点が魅力的です。
 
 状態遷移の方程式は以下のようになります。頂点 $k$ を経由する経路としない経路で短い方を採用します。
 $$ d[i][j] = \min(d[i][j], d[i][k] + d[k][j]) $$

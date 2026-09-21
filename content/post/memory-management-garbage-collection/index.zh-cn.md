@@ -303,7 +303,7 @@ stateDiagram-v2
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 这里，$ h $ 是缓存命中率（ $ 0 \le h \le 1 $ ），$ T_{cache} $ 是缓存访问时间（约 1〜4 ns ），$ T_{memory} $ 是主内存访问时间（约 100 ns ）。
-是像 C/[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 那样将 $ h $ 提升到 0.99，还是像 [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 的指针追踪那样降到 0.5，这会让应用程序的循环执行速度产生数十倍的差距。这就是在游戏引擎或高频交易系统中选择 C++ 或 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 的真正原因。
+是像 C/[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 那样将 $ h $ 提升到 0.99，还是像 Java 的指针追踪那样降到 0.5，这会让应用程序的循环执行速度产生数十倍的差距。这就是在游戏引擎或高频交易系统中选择 C++ 或 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 的真正原因。
 
 ---
 

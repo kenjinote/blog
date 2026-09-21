@@ -31,7 +31,7 @@ $$
 Diese Formel zeigt, dass man für die Koeffizienten $a, b, c$ durch eine endliche Anzahl von Grundrechenarten (Addition, Subtraktion, Multiplikation, Division) und Wurzelziehen (Quadratwurzel, Kubikwurzel usw.) immer die Lösung finden kann, egal um welche quadratische Gleichung es sich handelt.
 Für Gleichungen dritten und vierten Grades fanden italienische Mathematiker im 16. Jahrhundert (Cardano, Tartaglia, Ferrari usw.) heraus, dass es, wenn auch komplexer, ebenfalls Lösungsformeln unter Verwendung von Grundrechenarten und Wurzeln gibt. Dies waren große Durchbrüche in der Geschichte der Mathematik.
 
-Für die **Gleichung 5. Grades** $ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0$ jedoch versuchten viele geniale Mathematiker wie Euler und [Lagrange](https://kenji.blog/de/p/lagrange/) jahrhundertelang, eine Lösungsformel zu finden, aber niemand war erfolgreich. [Lagrange](https://kenji.blog/de/p/lagrange/) konzentrierte sich auf die Permutation von Lösungen und fand einen Ansatzpunkt zur Lösung, kam aber nicht zu einem vollständigen Beweis. Später bewiesen Ruffini und [Abel](https://kenji.blog/de/p/abel/), dass "es keine allgemeine Lösungsformel für Gleichungen 5. und höheren Grades gibt" (Satz von [Abel](https://kenji.blog/de/p/abel/)-Ruffini), aber sie konnten kein grundlegendes Kriterium dafür liefern, welche Gleichungen lösbar sind und welche nicht.
+Für die **Gleichung 5. Grades** $ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0$ jedoch versuchten viele geniale Mathematiker wie Euler und [Lagrange](https://kenji.blog/de/p/lagrange/) jahrhundertelang, eine Lösungsformel zu finden, aber niemand war erfolgreich. Lagrange konzentrierte sich auf die Permutation von Lösungen und fand einen Ansatzpunkt zur Lösung, kam aber nicht zu einem vollständigen Beweis. Später bewiesen Ruffini und Abel, dass "es keine allgemeine Lösungsformel für Gleichungen 5. und höheren Grades gibt" (Satz von [Abel](https://kenji.blog/de/p/abel/)-Ruffini), aber sie konnten kein grundlegendes Kriterium dafür liefern, welche Gleichungen lösbar sind und welche nicht.
 
 # 2. Symmetrie und die Geburt der Gruppentheorie
 
@@ -41,7 +41,7 @@ Das größte Verdienst von [Galois](https://kenji.blog/de/p/galois/) war es, die
 
 Betrachten wir die Operation des Vertauschens (Permutation) der Lösungen einer Gleichung.
 Wenn die Beziehungen (als Polynome mit rationalen Koeffizienten), die zwischen den Lösungen bestehen, auch nach dem Vertauschen der Lösungen erhalten bleiben, sagt man, dass diese Permutation "die Symmetrie der Gleichung erhält".
-[Galois](https://kenji.blog/de/p/galois/) entdeckte, dass die Menge der Permutationen, die diese Symmetrie erhalten, eine mathematische Struktur namens **Gruppe** bildet. Diese Gruppe wird als die **[Galois](https://kenji.blog/de/p/galois/)gruppe** ([Galois](https://kenji.blog/de/p/galois/) Group) der Gleichung bezeichnet.
+[Galois](https://kenji.blog/de/p/galois/) entdeckte, dass die Menge der Permutationen, die diese Symmetrie erhalten, eine mathematische Struktur namens **Gruppe** bildet. Diese Gruppe wird als die **Galoisgruppe** ([Galois](https://kenji.blog/de/p/galois/) Group) der Gleichung bezeichnet.
 
 ```mermaid
 graph TD
@@ -71,7 +71,7 @@ Mithilfe der [Galois](https://kenji.blog/de/p/galois/)-Theorie wird erstaunlich 
 Der Prozess des Lösens einer Gleichung kann als ein Prozess der allmählichen Erweiterung einer Menge von Zahlen (eines **Körpers**, Field) verstanden werden. Ein Körper ist eine Menge, in der die vier Grundrechenarten frei ausgeführt werden können (z.B. die Menge aller rationalen Zahlen, aller reellen Zahlen usw.).
 Wir beginnen beispielsweise mit der Menge der rationalen Zahlen $\mathbb{Q}$ und bilden einen neuen Körper, indem wir Wurzeln hinzufügen, die Bestandteile der Lösungen der Gleichung sind. Dies wird als **Körpererweiterung** bezeichnet.
 
-Der Hauptsatz, das Herzstück der [Galois](https://kenji.blog/de/p/galois/)-Theorie, zeigt, dass es eine wunderschöne 1-zu-1-Korrespondenz (**[Galois](https://kenji.blog/de/p/galois/)korrespondenz**) zwischen den "Zwischenkörpern der Körpererweiterung" und den "Untergruppen der [Galois](https://kenji.blog/de/p/galois/)gruppe" gibt. Es existiert eine brillante umgekehrte Beziehung: Ein größerer Körper entspricht einer kleineren Gruppe, und ein kleinerer Körper entspricht einer größeren Gruppe.
+Der Hauptsatz, das Herzstück der [Galois](https://kenji.blog/de/p/galois/)-Theorie, zeigt, dass es eine wunderschöne 1-zu-1-Korrespondenz (**Galoiskorrespondenz**) zwischen den "Zwischenkörpern der Körpererweiterung" und den "Untergruppen der [Galois](https://kenji.blog/de/p/galois/)gruppe" gibt. Es existiert eine brillante umgekehrte Beziehung: Ein größerer Körper entspricht einer kleineren Gruppe, und ein kleinerer Körper entspricht einer größeren Gruppe.
 
 ```mermaid
 graph LR

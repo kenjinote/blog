@@ -24,7 +24,7 @@ Seine Schaffung der "Mengenlehre" ist zur Grundlage jedes Bereichs der modernen 
 
 [Georg Cantor](https://kenji.blog/de/p/cantor/) wurde 1845 in St. Petersburg, Russland, geboren. Sein Vater war ein wohlhabender Kaufmann aus Dänemark und seine Mutter eine russische Musikerin. Da er von klein auf ein außergewöhnliches Talent für Mathematik zeigte, zog er schließlich nach Deutschland und studierte Mathematik an der Universität Berlin.
 
-An der Universität Berlin wurde er von den damals führenden Persönlichkeiten der mathematischen Welt, **[Karl Weierstraß](https://kenji.blog/de/p/weierstrass/)** und **Leopold [Kronecker](https://kenji.blog/de/p/kronecker/)**, betreut. Insbesondere [Kronecker](https://kenji.blog/de/p/kronecker/) sollte später zu Cantors größtem Gegner werden.
+An der Universität Berlin wurde er von den damals führenden Persönlichkeiten der mathematischen Welt, **[Karl Weierstraß](https://kenji.blog/de/p/weierstrass/)** und **Leopold Kronecker**, betreut. Insbesondere [Kronecker](https://kenji.blog/de/p/kronecker/) sollte später zu Cantors größtem Gegner werden.
 
 ### Die Suche nach Unendlichkeit und der Konflikt mit [Kronecker](https://kenji.blog/de/p/kronecker/)
 

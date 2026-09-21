@@ -308,7 +308,7 @@ graph TD
 
 ### 8.1 活用多階段建置（Multi-stage build）
 
-透過分離建置（Build）環境與執行環境，可以大幅縮減最終的映像檔大小。這對於 [Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)、[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)、[Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 等編譯式語言特別有效。
+透過分離建置（Build）環境與執行環境，可以大幅縮減最終的映像檔大小。這對於 [Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)、Rust、[Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 等編譯式語言特別有效。
 
 ```dockerfile
 # --- Stage 1: Build 環境 ---

@@ -180,7 +180,7 @@ Pada umumnya terdapat 3 jenis catatan dalam Zettelkasten:
 2. **Literature Notes (Catatan Literatur)**: Ringkasan dengan kata-kata sendiri setelah membaca artikel atau buku.
 3. **Permanent Notes (Catatan Permanen)**: Berisi pemikiran utuh mengenai satu topik. Inilah yang menjadi benih langsung dari artikel blog.
 
-Dengan menggunakan fitur backlink Obsidian (`[[Nama Catatan]]`), misalnya dengan menautkan catatan "Kepemilikan di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)" dan "Sejarah [Garbage Collection](https://kenji.blog/id/p/memory-management-garbage-collection/)", Anda dapat menemukan koneksi ide yang tidak terduga.
+Dengan menggunakan fitur backlink Obsidian (`[Nama Catatan]]`), misalnya dengan menautkan catatan "Kepemilikan di [Rust" dan "Sejarah [Garbage Collection](https://kenji.blog/id/p/memory-management-garbage-collection/)", Anda dapat menemukan koneksi ide yang tidak terduga.
 
 ## 5. Pencarian Semantik Menggunakan Database Vektor (Pinecone) dan OpenAI Embeddings
 
@@ -316,7 +316,7 @@ Untuk pola kombinasi dalam blog teknologi, matriks berikut bisa dipertimbangkan:
 
 1. **[Teknologi Lama] × [Paradigma Baru]**: Contoh "Belajar dari arsitektur COBOL tentang anti-pattern dalam desain arsitektur microservices modern"
 2. **[Frontend] × [Konsep Backend]**: Contoh "Menjelaskan algoritme pembaruan Virtual DOM React dari perspektif tingkat isolasi transaksi database"
-3. **[Matematika/Teori Abstrak] × [Implementasi Konkret]**: Contoh "Memahami optimasi penjadwalan [Pod](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/) di [Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/) melalui teori graf"
+3. **[Matematika/Teori Abstrak] × Implementasi Konkret]**: Contoh "Memahami optimasi penjadwalan [Pod di [Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/) melalui teori graf"
 
 Untuk menciptakan kombinasi ini secara sengaja, kita dapat memanfaatkan sistem pencarian semantik Pinecone yang telah dibangun, mengekstrak konsep A dan konsep B secara acak, dan memberikan prompt ke AI (seperti ChatGPT), "Berikan 5 ide judul dan draf daftar isi untuk blog teknologi yang menggabungkan 2 konsep ini", sehingga mampu menghasilkan ide-ide artikel dari sudut pandang orisinal tanpa batas yang tidak pernah terpikirkan oleh kita sendiri.
 

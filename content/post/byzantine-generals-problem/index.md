@@ -8,7 +8,7 @@ tags: ["ビザンチン将軍問題", "ブロックチェーン", "合意形成"
 slug: "byzantine-generals-problem"
 ---
 
-[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)や[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術を学ぶ上で、必ずと言っていいほど直面するのが **[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/p/byzantine-generals-problem-consensus/) Problem) です。これは、ネットワーク内に「裏切り者」や「故障したノード」が存在する状況下で、システム全体としてどのように正しい合意を形成するのか、という非常に重要なテーマを扱っています。
+[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)やブロックチェーン技術を学ぶ上で、必ずと言っていいほど直面するのが **ビザンチン将軍問題** ([Byzantine Generals](https://kenji.blog/p/byzantine-generals-problem-consensus/) Problem) です。これは、ネットワーク内に「裏切り者」や「故障したノード」が存在する状況下で、システム全体としてどのように正しい合意を形成するのか、という非常に重要なテーマを扱っています。
 
 本記事では、この **[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)** について、具体的なストーリー、数学的な条件式、図解を交えながら、基礎から応用までを詳しく解説していきます。
 
@@ -120,7 +120,7 @@ end
 
 [ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)に対する耐性のことを **ビザンチン・フォールト・トレランス** (Byzantine Fault Tolerance, BFT) と呼びます。[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)が故障や悪意のある攻撃に耐えて正常に稼働し続けるための重要な指標です。
 
-近年、この問題が再び大きく脚光を浴びたのは **[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術** の登場によるものです。ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンは中央管理者のいない [P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/) ネットワークであるため、悪意のある参加者（ノード）が嘘の取引履歴を流す可能性があります。まさに[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)そのものです。
+近年、この問題が再び大きく脚光を浴びたのは **[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術** の登場によるものです。ブロックチェーンは中央管理者のいない P2P ネットワークであるため、悪意のある参加者（ノード）が嘘の取引履歴を流す可能性があります。まさに[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)そのものです。
 
 ### PBFT (Practical Byzantine Fault Tolerance) の仕組み
 
@@ -155,7 +155,7 @@ end
 
 ### [PoS](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Stake) における BFT の応用
 
-ナカモト・コンセンサスは画期的でしたが、マイニングに莫大な電力を消費するという課題がありました。これを解決するために登場したのが、ノードが保有する[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)の量（ステーク）に応じてブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)提案権を与える **Proof of Stake** ([PoS](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)) です。
+ナカモト・コンセンサスは画期的でしたが、マイニングに莫大な電力を消費するという課題がありました。これを解決するために登場したのが、ノードが保有する[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)の量（ステーク）に応じてブロック提案権を与える **Proof of Stake** ([PoS](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)) です。
 
 イーサリアム (Ethereum) の Casper や、コスモス (Cosmos) の Tendermint など、最新の PoS アルゴリズムの多くは、この BFT をベースに設計されています。例えば Tendermint は、前述の PBFT の考え方をさらに洗練させ、ステーク量による重み付けを取り入れた「バリデーター（承認者）」のネットワークで合意を形成します。バリデーターの 2/3 以上の署名が集まらなければ次のブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が生成されない仕組みになっており、まさに $n \ge 3m + 1$ の条件（裏切り者が 1/3 未満）を現代のパブリックチェーンで実現した好例と言えます。
 
@@ -179,7 +179,7 @@ $$
 
 ## 6. おわりに
 
-この **[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)** は、[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)の信頼性を担保するための根幹となる理論です。「誰を信じてよいかわからない環境で、いかにして全体として正しい決定を下すか」というこの問いは、[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)の基盤技術から、航空機の制御システム、クラウドコンピューティングに至るまで、現代のあらゆるITインフラに応用されています。
+この **[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)** は、分散システムの信頼性を担保するための根幹となる理論です。「誰を信じてよいかわからない環境で、いかにして全体として正しい決定を下すか」というこの問いは、[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)の基盤技術から、航空機の制御システム、クラウドコンピューティングに至るまで、現代のあらゆるITインフラに応用されています。
 
 裏切り者の存在を前提とし、それでもシステムを止めないためのアルゴリズムの進化は、今後も止まることはありません。[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)の設計に関わるエンジニアにとって、この問題の背景にある数学的証明とアルゴリズムの理解は、非常に強力な武器となるでしょう。
 

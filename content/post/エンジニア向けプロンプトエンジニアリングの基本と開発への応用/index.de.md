@@ -71,7 +71,7 @@ Beim Aufbau von KI-Anwendungen unter Verwendung von APIs von OpenAI (wie GPT-4) 
 
 ### 2.1 System Prompt: Definition globaler Einschränkungen und Personas
 
-Der System Prompt definiert die **globalen Einschränkungen, die Persona (Rolle) und die grundlegenden Verhaltensregeln** für das [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/). Um es mit Softwaredesign zu vergleichen, spielt er eine Rolle wie „Umgebungsvariablen“ oder „Basisklasse“ einer Anwendung oder wie ein „[Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)file“ eines [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)s.
+Der System Prompt definiert die **globalen Einschränkungen, die Persona (Rolle) und die grundlegenden Verhaltensregeln** für das [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/). Um es mit Softwaredesign zu vergleichen, spielt er eine Rolle wie „Umgebungsvariablen“ oder „Basisklasse“ einer Anwendung oder wie ein „Docker-layers/)file“ eines [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)s.
 
 Ein hervorragender System Prompt stabilisiert die Ausgabqualität und das Format drastisch.
 
@@ -220,7 +220,7 @@ Die Standard-Schnittstelle zur Einbindung von ReAct in Systeme ist das **Functio
 Ingenieure stellen dem [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) zusammen mit dem System Prompt „Definitionen der verfügbaren Werkzeuge (JSON-Schema)“ zur Verfügung. Das LLM analysiert den Kontext des Prompts und wenn es entscheidet, dass ein Werkzeug verwendet werden soll, gibt es nicht normalen Text aus, sondern den „aufzurufenden Funktionsnamen“ und die „zugehörigen Argumente als JSON“. Die Anwendung führt diese Funktion aus, gibt das Ergebnis an das LLM zurück und so wird eine Schleife gebildet.
 
 **Anwendungsbeispiel für die Entwicklung (Autonomer Debugging-Agent):**
-Wenn ein Agent erstellt wird, der bei einem fehlgeschlagenen Test in einer [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) die Ursache untersucht und einen Patch generiert, stellt man dem [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) folgende Tools zur Verfügung:
+Wenn ein Agent erstellt wird, der bei einem fehlgeschlagenen Test in einer [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-Pipeline die Ursache untersucht und einen Patch generiert, stellt man dem [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) folgende Tools zur Verfügung:
 
 1. `search_codebase(regex_pattern)`: Durchsucht den Code im Repository mit regulären Ausdrücken.
 2. `view_file_content(file_path, start_line, end_line)`: Liest den Inhalt einer angegebenen Datei.
@@ -368,7 +368,7 @@ Der aktuelle Industriestandard ist eine Methode namens **LLM-as-a-Judge**, bei d
 2. **Ausführung**: Lassen Sie das zu bewertende Modell und den Prompt Ausgaben für das Testset generieren.
 3. **Bewertung**: Verwenden Sie einen Bewertungsprompt (Meta-Prompt), um das Judge-LLM anzuweisen: „Bewerte die generierte Ausgabe mit 1 bis 5 Punkten, basierend darauf, ob sie die Anforderungen erfüllt.“
 
-Dies ermöglicht es, Leistungsrückgänge (Regressionen) beim Anpassen von Prompts in [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s automatisch zu erkennen. Das [Prompt Engineering](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) entwickelt sich von der handwerklichen „Prompt-Bastelei“ hin zum datengesteuerten, reproduzierbaren „Engineering“.
+Dies ermöglicht es, Leistungsrückgänge (Regressionen) beim Anpassen von Prompts in [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-Pipelines automatisch zu erkennen. Das [Prompt Engineering](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) entwickelt sich von der handwerklichen „Prompt-Bastelei“ hin zum datengesteuerten, reproduzierbaren „Engineering“.
 
 ---
 

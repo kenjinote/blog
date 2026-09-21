@@ -10,7 +10,7 @@ tags: ["安德鲁·怀尔斯", "费马", "数论"]
 
 ## 引言
 
-在数学史上，几乎没有其他故事能像这样充满戏剧性和鼓舞人心。英国数学家 **[安德鲁·怀尔斯](https://kenji.blog/zh-cn/p/wiles/)** （[Andrew Wiles](https://kenji.blog/zh-cn/p/wiles/)）完成了证明“[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)”的伟大创举，这是一个350多年来无人能解的难题。
+在数学史上，几乎没有其他故事能像这样充满戏剧性和鼓舞人心。英国数学家 **[安德鲁·怀尔斯](https://kenji.blog/zh-cn/p/wiles/)** （Andrew Wiles）完成了证明“[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)”的伟大创举，这是一个350多年来无人能解的难题。
 
 他的人生轨迹宛如一部电影，从童年时代浪漫的梦想开始，经历了7年孤独而秘密的研究，接着是发现致命缺陷时的绝望，最终迎来了奇迹般的复苏。本文将深入探讨怀尔斯生平的故事，以及他所取得的深远数学成就。
 

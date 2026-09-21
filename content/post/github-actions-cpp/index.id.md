@@ -9,7 +9,7 @@ categories: ["programming", "devops"]
 tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 ---
 
-# Panduan Lengkap: Membangun [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) untuk Proyek C++ menggunakan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)
+# Panduan Lengkap: Membangun [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) CI/CD untuk Proyek C++ menggunakan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)
 
 Dalam paradigma pengembangan perangkat lunak modern, Integrasi Berkelanjutan (Continuous Integration: CI) dan Pengiriman/Penerapan Berkelanjutan (Continuous Delivery/Deployment: CD) adalah elemen penting untuk mempertahankan proses pengembangan yang gesit (agile) dan perangkat lunak yang berkualitas tinggi. Di antara sekian banyak bahasa pemrograman yang ada, membangun pipeline CI/CD di C++ melibatkan kesulitan dan kompleksitas tersendiri dibandingkan dengan bahasa lain (seperti Python, JavaScript, [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), dll.).
 

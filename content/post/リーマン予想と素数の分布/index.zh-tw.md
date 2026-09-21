@@ -13,7 +13,7 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 「質數（Prime Numbers）」是只能被1和自己整除的自然數，在數學世界中也被稱為「原子」。2, 3, 5, 7, 11, 13... 這般延續的數列，乍看之下似乎毫無秩序、隨機出現。自從古希臘數學家[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)證明了「質數有無窮多個」以來，無數的數學家們便不斷挑戰，試圖解開隱藏在這個質數排列中的規律。
 
-最逼近這個質數之謎的，是1859年由德國數學家[波恩哈德·黎曼](https://kenji.blog/zh-tw/p/riemann/)（[Bernhard Riemann](https://kenji.blog/zh-tw/p/riemann/)）所提出的 **「黎曼猜想（[Riemann](https://kenji.blog/zh-tw/p/riemann/) Hypothesis）」** 。黎曼猜想是現代數學中最重要且未解決的難題之一，被克雷數學研究所列為千禧年大獎難題之一，並懸賞了100萬美元的獎金。
+最逼近這個質數之謎的，是1859年由德國數學家[波恩哈德·黎曼](https://kenji.blog/zh-tw/p/riemann/)（Bernhard Riemann）所提出的 **「黎曼猜想（[Riemann](https://kenji.blog/zh-tw/p/riemann/) Hypothesis）」** 。黎曼猜想是現代數學中最重要且未解決的難題之一，被克雷數學研究所列為千禧年大獎難題之一，並懸賞了100萬美元的獎金。
 
 乍看之下，關於質數分佈的純數學難題，似乎與我們的日常生活毫無關聯。然而，支撐現代社會基礎設施的網際網路安全，特別是 **[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密和橢圓曲線密碼學（ECC）等現代密碼技術** ，都深深依賴於巨大質數的性質。
 

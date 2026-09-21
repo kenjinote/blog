@@ -19,7 +19,7 @@ Bienvenue dans un monde où la beauté des mathématiques croise l'aspect pratiq
 
 ---
 
-## 1. [Identité d'Euler ([Euler's Identity](https://kenji.blog/fr/p/eulers-identity/))](https://kenji.blog/p/eulers-identity/)
+## 1. [Identité d'Euler (Euler's Identity)](https://kenji.blog/p/eulers-identity/)
 
 ### Beauté de la formule et aperçu
 Voici l'identité d'Euler, souvent qualifiée de "trésor de l'humanité" ou de "la plus belle équation du monde". Les cinq constantes les plus importantes en mathématiques (le nombre de Néper $e$, l'unité imaginaire $i$, le nombre pi $\pi$, l'élément neutre de la multiplication $1$ et l'élément neutre de l'addition $0$) sont intégrées dans une seule formule simple.
@@ -559,7 +559,7 @@ La ramification conditionnelle avec `x >= 0` et le reste dans le code ci-dessus 
 
 ---
 
-## 10. Distance euclidienne et théorème de Pythagore ([[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. Distance euclidienne et théorème de Pythagore ([Euclide](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### Beauté de la formule et aperçu
 C'est le fondement de la géométrie hérité de la Grèce antique, et une équation qui définit la distance en ligne droite entre deux points dans un espace à $n$ dimensions. Dans l'espace bidimensionnel, il s'agit du théorème de Pythagore ($a^2 + b^2 = c^2$) lui-même.

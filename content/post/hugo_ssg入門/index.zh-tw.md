@@ -301,7 +301,7 @@ jobs:
 完成從 WordPress 移轉至 Hugo 的網站營運者，大多能感受到以下三個顯著的優勢。
 
 ### 6.1 網站速度與 Core [Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) 的劇烈提升
-排除了資料庫查詢與伺服器端渲染後，頁面載入時間縮短至毫秒等級。這將直接帶動 Google 排名因素「[Core Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)」（[LCP](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)、[FID](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)、[CLS](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）分數的大幅提升。可以期待使用者跳出率的降低以及 SEO 評價的提升。
+排除了資料庫查詢與伺服器端渲染後，頁面載入時間縮短至毫秒等級。這將直接帶動 Google 排名因素「[Core Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)」（LCP、FID/INP、[CLS](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）分數的大幅提升。可以期待使用者跳出率的降低以及 SEO 評價的提升。
 
 ### 6.2 擺脫安全威脅
 因為 WordPress 在全世界被廣泛使用，所以總是成為攻擊目標。伴隨著被利用外掛漏洞進行竄改，或是遭到暴力破解突破登入等風險。

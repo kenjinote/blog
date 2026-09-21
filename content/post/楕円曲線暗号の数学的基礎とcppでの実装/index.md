@@ -11,7 +11,7 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 # [楕円曲線暗号（ECC）の数学的基礎とC++での実装](https://kenji.blog/p/楕円曲線暗号の数学的基礎とcppでの実装/)
 
-現代の暗号技術において、 **楕円曲線暗号（Elliptic Curve [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy: ECC）** は極めて重要な役割を果たしています。私たちの日常的なインターネット通信（HTTPS/TLS）から、スマートフォンのセキュアエンクレーブ、SSHによるサーバー[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)、FIDOなどのパスワードレス認証、さらには[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)やイーサリアムなどの[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)に至るまで、現代のデジタル社会の信頼基盤はECCによって支えられていると言っても過言ではありません。
+現代の暗号技術において、 **楕円曲線暗号（Elliptic Curve [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy: ECC）** は極めて重要な役割を果たしています。私たちの日常的なインターネット通信（HTTPS/TLS）から、スマートフォンのセキュアエンクレーブ、SSHによるサーバー認証、FIDOなどのパスワードレス認証、さらにはビットコインやイーサリアムなどの[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)に至るまで、現代のデジタル社会の信頼基盤はECCによって支えられていると言っても過言ではありません。
 
 本記事では、この楕円曲線暗号がいかにして機能しているのか、その背後にある美しくも難解な数学的理論（有限体上の代数幾何学）から出発し、実際のC++を用いた実装方法、さらにはサイドチャネル攻撃（タイミング攻撃）を防ぐためのセキュアなコーディング手法まで、圧倒的なボリュームで徹底的に解説します。
 
@@ -67,7 +67,7 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 **乗法逆元（Modular Multiplicative Inverse）** の計算は暗号実装において非常に重要です。$b \times b^{-1} \equiv 1 \pmod p$ を満たす $b^{-1}$ を求めるには、主に以下の2つのアルゴリズムが用いられます。
 
-1. **拡張[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)（Extended [[Euclid](https://kenji.blog/p/euclid/)e](https://kenji.blog/p/euclid/)an Algorithm）**: 高速ですが、実装によっては処理時間が入力値に依存するためタイミング攻撃のリスクがあります。
+1. **拡張[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)（Extended [Euclide](https://kenji.blog/p/euclid/)an Algorithm）**: 高速ですが、実装によっては処理時間が入力値に依存するためタイミング攻撃のリスクがあります。
 2. **[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)）**: $p$ が素数で $b \neq 0$ のとき、$b^{p-1} \equiv 1 \pmod p$ が成り立ちます。両辺を $b$ で割ると、$b^{p-2} \equiv b^{-1} \pmod p$ となります。つまり、$b$ の $p-2$ 乗を計算することで逆元が求まります。べき乗演算は定数時間で実装しやすいため、暗号実装ではこちらが好まれます。
 
 ---

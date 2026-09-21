@@ -15,7 +15,7 @@ tags:
 
 ## 引言：数学中最美的定理之一
 
-在数学世界里，有一些犹如魔法般的公式，能在看似毫不相干的事物之间建立起令人惊叹的联系。其中，由[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）发现的 **[欧拉多面体定理](https://kenji.blog/zh-cn/p/eulers-polyhedron-formula/)** （Euler's polyhedron formula），以其无与伦比的简洁性和普适性脱颖而出。
+在数学世界里，有一些犹如魔法般的公式，能在看似毫不相干的事物之间建立起令人惊叹的联系。其中，由[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)（Leonhard Euler）发现的 **[欧拉多面体定理](https://kenji.blog/zh-cn/p/eulers-polyhedron-formula/)** （Euler's polyhedron formula），以其无与伦比的简洁性和普适性脱颖而出。
 
 这个公式非常简单：
 

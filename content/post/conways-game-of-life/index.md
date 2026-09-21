@@ -17,7 +17,7 @@ tags:
 
 ## 1. [コンウェイのライフゲーム](https://kenji.blog/p/conways-game-of-life/)とは？
 
-**[コンウェイのライフゲーム](https://kenji.blog/p/conways-game-of-life/)** ([Conway's Game of Life](https://kenji.blog/p/conways-game-of-life/)) は、1970年にイギリスの数学者ジョン・ホートン・コンウェイ (John Horton Conway) によって考案された **セル・[オートマトン](https://kenji.blog/p/automata-formal-language-theory/)** (Cellular Automaton) の一種です。ゲームという名前がついていますが、プレイヤーが操作するものではなく、初期状態を設定した後はルールに従って自動的に世代が進行する「ゼロプレイヤーゲーム」です。
+**[コンウェイのライフゲーム](https://kenji.blog/p/conways-game-of-life/)** (Conway's Game of Life) は、1970年にイギリスの数学者ジョン・ホートン・コンウェイ (John Horton Conway) によって考案された **セル・[オートマトン](https://kenji.blog/p/automata-formal-language-theory/)** (Cellular Automaton) の一種です。ゲームという名前がついていますが、プレイヤーが操作するものではなく、初期状態を設定した後はルールに従って自動的に世代が進行する「ゼロプレイヤーゲーム」です。
 
 このシステムの最大の魅力は、**極めて単純な決定論的ルールから、予測不可能で複雑な生命のような振る舞い（創発）が生み出される** 点にあります。
 
@@ -84,7 +84,7 @@ flowchart TD
 
 ## 4. 計算科学における意義：[チューリング](https://kenji.blog/p/turing/)完全
 
-[ライフゲーム](https://kenji.blog/p/conways-game-of-life/)の驚くべき特性の一つは、それが **[チューリング](https://kenji.blog/p/turing/)完全** (Turing complete) であるということです。つまり、十分な広さのグリッドと適切な初期状態を与えれば、現代のコンピューターで計算可能なあらゆるアルゴリズムを、この[ライフゲーム](https://kenji.blog/p/conways-game-of-life/)上でシミュレートすることができます。
+[ライフゲーム](https://kenji.blog/p/conways-game-of-life/)の驚くべき特性の一つは、それが **チューリング完全** (Turing complete) であるということです。つまり、十分な広さのグリッドと適切な初期状態を与えれば、現代のコンピューターで計算可能なあらゆるアルゴリズムを、この[ライフゲーム](https://kenji.blog/p/conways-game-of-life/)上でシミュレートすることができます。
 
 グライダーを信号として使い、固定物体を論理回路（ANDゲート、ORゲート、NOTゲートなど）として配置することで、論理演算を行うことが数学的に証明されています。
 

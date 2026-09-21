@@ -12,7 +12,7 @@ tags: ["隨機漫步", "機率論", "擴散方程式", "布朗運動", "Python"]
 
 [隨機漫步](https://kenji.blog/zh-tw/p/random-walk/)（[Random Walk](https://kenji.blog/zh-tw/p/random-walk/)）是一個數學概念，指的是下一步的位置由機率隨機決定的運動。由於它類似於醉漢搖搖晃晃地左右行走的模樣，因此常被稱為「醉漢漫步」。乍看之下，這是一種無序且不可預測的運動，但是當步驟數量累積到一定程度後，就會浮現出令人驚嘆的、美麗且有規律的數學法則。
 
-在本文中，我們將從最簡單的一維[隨機漫步](https://kenji.blog/zh-tw/p/random-walk/)的基礎出發，結合數學公式，深入探討它如何與物理學中的擴散現象和布朗運動聯繫起來，以及高維空間中[隨機漫步](https://kenji.blog/zh-tw/p/random-walk/)的有趣性質。對[隨機漫步](https://kenji.blog/zh-tw/p/random-walk/)的理解，不僅僅侷限於物理學和數學，更已成為金融工程、資訊科學等現代眾多領域必不可少的素養。
+在本文中，我們將從最簡單的一維[隨機漫步](https://kenji.blog/zh-tw/p/random-walk/)的基礎出發，結合數學公式，深入探討它如何與物理學中的擴散現象和布朗運動聯繫起來，以及高維空間中隨機漫步的有趣性質。對[隨機漫步](https://kenji.blog/zh-tw/p/random-walk/)的理解，不僅僅侷限於物理學和數學，更已成為金融工程、資訊科學等現代眾多領域必不可少的素養。
 
 ## 歷史背景：卡爾·皮爾森的提問
 
@@ -26,7 +26,7 @@ tags: ["隨機漫步", "機率論", "擴散方程式", "布朗運動", "Python"]
 
 ### 機率性移動的定義
 
-讓我們考慮最簡單的一維[隨機漫步](https://kenji.blog/zh-tw/p/random-walk/)。假設位於數線上原點 $x = 0$ 的粒子，每單位時間以機率 $p$ 向右移動 $+1$，以機率 $q = 1 - p$ 向左移動 $-1$。在這裡，我們僅處理最簡單的 $p = q = 1/2$ 的對稱[隨機漫步](https://kenji.blog/zh-tw/p/random-walk/)（Symmetric [Random Walk](https://kenji.blog/zh-tw/p/random-walk/)）。
+讓我們考慮最簡單的一維[隨機漫步](https://kenji.blog/zh-tw/p/random-walk/)。假設位於數線上原點 $x = 0$ 的粒子，每單位時間以機率 $p$ 向右移動 $+1$，以機率 $q = 1 - p$ 向左移動 $-1$。在這裡，我們僅處理最簡單的 $p = q = 1/2$ 的對稱隨機漫步（Symmetric [Random Walk](https://kenji.blog/zh-tw/p/random-walk/)）。
 
 假設第 $i$ 步的移動量為隨機變數 $X_i$，則 $X_i$ 取以下值：
 

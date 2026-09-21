@@ -30,7 +30,7 @@ The result of this is the **frontend monolith**. By centralizing all UI componen
 * **Inter-team Dependencies and Coordination Costs**: Because multiple teams touch the same codebase, merge conflicts occur frequently, and adjusting release cycles requires significant effort.
 * **Accumulation of Technical Debt and [Lock](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)-in**: Since the entire application relies on a single version of a framework or library, gradual refactoring or the introduction of new technologies becomes difficult.
 
-### Contrast with Backend [[Microservice](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/)
+### Contrast with Backend [Microservices](https://kenji.blog/en/p/microservices-architecture-bff-api-gateway/)
 
 In the backend world, the **Microservices Architecture**—which splits giant monoliths to build independently deployable services—has become widely adopted. This allows each team to have its own database, technology stack, and deployment cycle, drastically improving scalability and development velocity.
 

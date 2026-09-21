@@ -75,7 +75,7 @@ graph TD
 모놀리스라면 메모리 내 함수 호출로 끝났을 처리가 네트워크를 통한 통신(HTTP/REST, gRPC 등)으로 바뀝니다. 이로 인해 **네트워크 지연** 이 발생하여 시스템 전체의 응답 속도가 저하될 위험이 있습니다. 또한 네트워크는 항상 불안정하기 때문에 타임아웃이나 재시도 제어, 서킷 브레이커와 같은 복잡한 통신 제어를 구현해야 합니다.
 
 ### 3.2. 분산 트랜잭션 및 데이터 정합성
-각 서비스가 자체 데이터베이스를 가지므로 여러 서비스에 걸친 데이터 업데이트(트랜잭션)가 매우 어려워집니다. 기존 [RDBMS](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/)에서 이용할 수 있었던 [ACID](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/) 트랜잭션을 사용할 수 없어, **Saga 패턴** 이나 **이벤트 소싱** 과 같은 최종 일관성(Eventual [Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/))을 허용하는 복잡한 설계 패턴을 도입해야만 합니다.
+각 서비스가 자체 데이터베이스를 가지므로 여러 서비스에 걸친 데이터 업데이트(트랜잭션)가 매우 어려워집니다. 기존 [RDBMS](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/)에서 이용할 수 있었던 ACID 트랜잭션을 사용할 수 없어, **Saga 패턴** 이나 **이벤트 소싱** 과 같은 최종 일관성(Eventual [Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/))을 허용하는 복잡한 설계 패턴을 도입해야만 합니다.
 
 ### 3.3. 클라이언트 접근의 복잡화
 수십, 수백 개의 서비스가 존재할 경우 클라이언트(웹 브라우저나 모바일 앱)가 어느 API 엔드포인트를 호출해야 할지 파악하고 개별적으로 통신하는 것은 비현실적입니다. 또한 하나의 화면을 표시하기 위해 여러 서비스에 대해 대량의 요청(Chatty API)을 보내야 하므로 성능 악화를 초래합니다.

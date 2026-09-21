@@ -17,7 +17,7 @@ tags:
 
 ## Introducción
 
-En la historia de las matemáticas, el siglo XIX fue un período crucial en el que el análisis y el álgebra se desarrollaron hasta alcanzar su forma moderna. En el centro de este movimiento se encontraba el matemático francés **Joseph [Liouville](https://kenji.blog/es/p/liouville/)** (1809–1882). Estableció teoremas fundamentales en el análisis complejo y fue la primera persona en la historia humana en demostrar concretamente la existencia de los "números trascendentes". También es bien conocido como el benefactor que descifró y publicó los desafiantes manuscritos de [Évariste Galois](https://kenji.blog/es/p/galois/). En este artículo, profundizaremos en la turbulenta vida de [Liouville](https://kenji.blog/es/p/liouville/) y en sus numerosos **logros matemáticos**.
+En la historia de las matemáticas, el siglo XIX fue un período crucial en el que el análisis y el álgebra se desarrollaron hasta alcanzar su forma moderna. En el centro de este movimiento se encontraba el matemático francés **Joseph [Liouville](https://kenji.blog/es/p/liouville/)** (1809–1882). Estableció teoremas fundamentales en el análisis complejo y fue la primera persona en la historia humana en demostrar concretamente la existencia de los "números trascendentes". También es bien conocido como el benefactor que descifró y publicó los desafiantes manuscritos de Évariste Galois. En este artículo, profundizaremos en la turbulenta vida de [Liouville](https://kenji.blog/es/p/liouville/) y en sus numerosos **logros matemáticos**.
 
 ## Primeros Años y Educación
 
@@ -27,9 +27,9 @@ En 1825, ingresó en la prestigiosa **École Polytechnique**, donde aprendió de
 
 ## El Rescate de los Manuscritos de [Galois](https://kenji.blog/es/p/galois/)
 
-Al hablar de [Liouville](https://kenji.blog/es/p/liouville/), no se puede omitir la historia de cómo salvó los manuscritos del joven genio **[Évariste Galois](https://kenji.blog/es/p/galois/)**. [Galois](https://kenji.blog/es/p/galois/) perdió la vida en un duelo a la temprana edad de 20 años, pero justo antes de su muerte, confió sus descubrimientos matemáticos a su amigo Auguste Chevalier.
+Al hablar de [Liouville](https://kenji.blog/es/p/liouville/), no se puede omitir la historia de cómo salvó los manuscritos del joven genio **Évariste Galois**. [Galois](https://kenji.blog/es/p/galois/) perdió la vida en un duelo a la temprana edad de 20 años, pero justo antes de su muerte, confió sus descubrimientos matemáticos a su amigo Auguste Chevalier.
 
-Fue [Liouville](https://kenji.blog/es/p/liouville/) quien arrojó luz sobre la teoría de [Galois](https://kenji.blog/es/p/galois/), que había sido ignorada e incomprendida durante mucho tiempo. En 1843, estudió exhaustivamente los artículos de [Galois](https://kenji.blog/es/p/galois/) y se dio cuenta de que contenían descubrimientos profundamente importantes con respecto a la solubilidad de las ecuaciones algebraicas. En 1846, [Liouville](https://kenji.blog/es/p/liouville/) publicó los artículos de [Galois](https://kenji.blog/es/p/galois/) en la revista académica que él mismo había fundado, el *Journal de Mathématiques Pures et Appliquées*, presentándolos así al mundo.
+Fue [Liouville](https://kenji.blog/es/p/liouville/) quien arrojó luz sobre la teoría de Galois, que había sido ignorada e incomprendida durante mucho tiempo. En 1843, estudió exhaustivamente los artículos de Galois y se dio cuenta de que contenían descubrimientos profundamente importantes con respecto a la solubilidad de las ecuaciones algebraicas. En 1846, Liouville publicó los artículos de [Galois](https://kenji.blog/es/p/galois/) en la revista académica que él mismo había fundado, el *Journal de Mathématiques Pures et Appliquées*, presentándolos así al mundo.
 
 ```mermaid
 flowchart TD
@@ -79,7 +79,7 @@ Aquí, $\lambda$ es el autovalor y $w(x)$ es la función de peso. Su teoría dem
 
 ### 4. Otras Contribuciones
 
-[Liouville](https://kenji.blog/es/p/liouville/) tiene teoremas que llevan su nombre en una amplia variedad de campos. Estos incluyen el **teorema de [Liouville](https://kenji.blog/es/p/liouville/) en la teoría de [Galois](https://kenji.blog/es/p/galois/) diferencial**, que determina si la antiderivada de una función elemental puede volver a expresarse como una función elemental, y su teorema en sistemas dinámicos que muestra la conservación del volumen en el espacio de fase.
+[Liouville](https://kenji.blog/es/p/liouville/) tiene teoremas que llevan su nombre en una amplia variedad de campos. Estos incluyen el **teorema de Liouville en la teoría de [Galois](https://kenji.blog/es/p/galois/) diferencial**, que determina si la antiderivada de una función elemental puede volver a expresarse como una función elemental, y su teorema en sistemas dinámicos que muestra la conservación del volumen en el espacio de fase.
 
 ## Contribuciones como Educador y Editor
 

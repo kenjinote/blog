@@ -14,7 +14,7 @@ Na sociedade da internet moderna, a base para proteger o segredo das comunicaç�
 
 No entanto, com o surgimento dos "computadores quânticos", foi apontado que essa segurança pode ser subvertida desde a base. Na mídia, às vezes vemos manchetes sensacionalistas como "Se um computador quântico for concluído, senhas e criptografias em todo o mundo serão decifradas em segundos". Mas será que isso é verdade?
 
-Neste artigo, aprofundaremos como funcionam o GNFS (General Number Field Sieve), um método clássico de descriptografia, e a versão definitiva dos algoritmos de descriptografia usando computadores quânticos, o "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/))". Explicaremos de forma fácil conceitos avançados, como a transformação quântica de Fourier e a descoberta de períodos, e examinaremos em detalhes o estado atual do hardware quântico na era NISQ (Noisy Intermediate-Scale Quantum) e os obstáculos reais necessários para quebrar a [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)-2048.
+Neste artigo, aprofundaremos como funcionam o GNFS (General Number Field Sieve), um método clássico de descriptografia, e a versão definitiva dos algoritmos de descriptografia usando computadores quânticos, o "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/) (Shor's Algorithm)". Explicaremos de forma fácil conceitos avançados, como a transformação quântica de Fourier e a descoberta de períodos, e examinaremos em detalhes o estado atual do hardware quântico na era NISQ (Noisy Intermediate-Scale Quantum) e os obstáculos reais necessários para quebrar a [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)-2048.
 
 ---
 
@@ -78,7 +78,7 @@ Substituindo $ x = 1, 2, 3, \dots $ nesta função $ f(x) $, os valores parecem 
 O problema de encontrar o menor número inteiro positivo $ r $ tal que $ a^r \equiv 1 \pmod N $, este é o "Problema de Descoberta de Período".
 
 Se este período $ r $ for encontrado, e $ r $ for um número par, então $ a^r - 1 \equiv 0 \pmod N $, e usando a fórmula de fatoração,
-pode ser transformado em $ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $. A partir daqui, ao calcular o máximo divisor comum entre $ N $ e $ a^{r/2} \pm 1 $ usando o algoritmo de [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/), um fator de $ N $ pode ser obtido com uma probabilidade extremamente alta.
+pode ser transformado em $ (a^{r/2} - 1)(a^{r/2} + 1) \equiv 0 \pmod N $. A partir daqui, ao calcular o máximo divisor comum entre $ N $ e $ a^{r/2} \pm 1 $ usando o algoritmo de [Euclides](https://kenji.blog/p/euclid/), um fator de $ N $ pode ser obtido com uma probabilidade extremamente alta.
 
 Para encontrar o período $ r $ em um computador clássico, no final, etapas exponenciais são necessárias e isso não pode ser acelerado. No entanto, com um computador quântico, este período $ r $ pode ser encontrado em um instante (tempo polinomial).
 

@@ -153,7 +153,7 @@ AutorunsでもProcExpと同様に、`Options` から `Verify Code Signatures` �
 ## 5. TCPView による隠れたネットワーク接続の追跡
 
 タスクマネージャーのネットワークタブや `netstat -ano` コマンドでも通信状況は確認できますが、更新が遅かったり、プロセス名とPIDのマッピングを手動で行うのは手間です。
-TCPViewは、すべての[TCP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)および[UDP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)エンドポイントをリアルタイムで監視し、どのプロセスがどのリモート[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)・ポートと通信しているかを一覧表示します。
+TCPViewは、すべての[TCP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)およびUDPエンドポイントをリアルタイムで監視し、どのプロセスがどのリモート[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)・ポートと通信しているかを一覧表示します。
 
 ### 5.1 不正なC2通信の特定
 マルウェアがバックドアを設置し、外部のC2（Command and Control）サーバーにBeacon（ビーコン）を送信している場合、TCPViewで以下のような特徴を探します。

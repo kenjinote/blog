@@ -118,7 +118,7 @@ $a \equiv b \pmod N$ かつ $c \equiv d \pmod N$ のとき、以下が成り立�
 
 ## 4. RSA暗号を支える数学的基礎3：[オイラー](https://kenji.blog/p/euler/)関数と[オイラー](https://kenji.blog/p/euler/)の定理
 
-ここからが[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の核心となる魔法の数学です。「[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)」の一般化である「[オイラー](https://kenji.blog/p/euler/)の定理」が登場します。
+ここからが[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の核心となる魔法の数学です。「フェルマーの小定理」の一般化である「[オイラー](https://kenji.blog/p/euler/)の定理」が登場します。
 
 ### 4.1 [オイラー](https://kenji.blog/p/euler/)のトーティエント関数 $\phi(N)$
 
@@ -268,11 +268,11 @@ $9^7 = 4,782,969$。これを 143 で割ると $33447$ 余り $48$。
 
 ---
 
-## 8. 秘密鍵 $d$ の求め方：拡張[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)
+## 8. 秘密鍵 $d$ の求め方：拡張[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)
 
-手計算の例では勘で $k$ を探して $d=103$ を見つけましたが、数が何百桁にもなるとこの方法は不可能です。実際のプログラムでは **「拡張[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)」** というアルゴリズムを使います。
+手計算の例では勘で $k$ を探して $d=103$ を見つけましたが、数が何百桁にもなるとこの方法は不可能です。実際のプログラムでは **「拡張[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)」** というアルゴリズムを使います。
 
-$7d \equiv 1 \pmod{120}$ を解くということは、$7d + 120y = 1$ を満たす整数 $d, y$ を見つけることと同じです。[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)を逆算していくことで、これを機械的に求めることができます。
+$7d \equiv 1 \pmod{120}$ を解くということは、$7d + 120y = 1$ を満たす整数 $d, y$ を見つけることと同じです。[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)を逆算していくことで、これを機械的に求めることができます。
 
 1. $120 \div 7 = 17$ 余り $1$ 
 2. これを変形すると、$1 = 120 - 17 \times 7$
@@ -349,7 +349,7 @@ Pythonの `pow(base, exp, mod)` 関数は内部で「繰り返し二乗法」と
 2. **合同式と[オイラー](https://kenji.blog/p/euler/)の定理:** $a^{\phi(N)} \equiv 1 \pmod N$ という法則により、「ある数で累乗すると元に戻る」魔法のトラップドアが完成する。
 3. **[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)と秘密鍵:** 誰でも[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)できるが、復号できるのは正当な受信者だけ。
 
-現在使われている[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の $N$ は600桁以上あり、世界中のスーパーコンピュータを総動員しても素因数分解には宇宙の年齢以上の時間がかかります。しかし、近年研究が進んでいる「[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)」が将来実用化されると、「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)」によってこの素因数分解が一瞬で解かれてしまう可能性があります。そのため、現在は量子コンピュータでも解読できない「耐量子計算機暗号」の開発が世界中で急ピッチで進められています。
+現在使われている[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の $N$ は600桁以上あり、世界中のスーパーコンピュータを総動員しても素因数分解には宇宙の年齢以上の時間がかかります。しかし、近年研究が進んでいる「量子コンピュータ」が将来実用化されると、「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)」によってこの素因数分解が一瞬で解かれてしまう可能性があります。そのため、現在は量子コンピュータでも解読できない「耐量子計算機暗号」の開発が世界中で急ピッチで進められています。
 
 「役に立たない」と思われがちな高度な数学が、実は私たちの日常生活を根底から守っている。[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号は、そんな数学の奥深さと美しさを教えてくれる最高の教材です。この記事を通して、暗号と数学の面白さを少しでも感じていただけたなら幸いです。
 

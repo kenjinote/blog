@@ -98,7 +98,7 @@ graph LR
 
 ### 4.1 실제 사례 1: [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호의 수학과 Python 구현
 
-공개키 암호 방식의 대표격인 RSA 암호는, 초등 정수론(합동식, 오일러의 정리, 확장 [[유클리드](https://kenji.blog/ko/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/))의 아름다운 응용입니다.
+공개키 암호 방식의 대표격인 RSA 암호는, 초등 정수론(합동식, 오일러의 정리, 확장 [유클리드 호제법](https://kenji.blog/p/euclidean-algorithm/))의 아름다운 응용입니다.
 
 #### 수학적 배경
 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호의 키 생성과 암호화·복호화 프로세스는 다음 수식으로 표현됩니다.
@@ -171,7 +171,7 @@ def rsa_demo():
 rsa_demo()
 ```
 
-수식 $e \cdot d \equiv 1 \pmod{\phi(n)}$ 을 만족하는 $d$ 를 찾기 위해, 확장 [[유클리드](https://kenji.blog/ko/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/)이라는 알고리즘을 구현할 필요가 있습니다. 이처럼, **수식을 코드화하려고 하면 "이 변수는 구체적으로 어떻게 계산하는가?"라는 구현상의 과제에 직면하게 되고, 이를 해결하는 과정에서 수학적 이해가 비약적으로 깊어지는 것** 입니다.
+수식 $e \cdot d \equiv 1 \pmod{\phi(n)}$ 을 만족하는 $d$ 를 찾기 위해, 확장 [유클리드 호제법](https://kenji.blog/p/euclidean-algorithm/)이라는 알고리즘을 구현할 필요가 있습니다. 이처럼, **수식을 코드화하려고 하면 "이 변수는 구체적으로 어떻게 계산하는가?"라는 구현상의 과제에 직면하게 되고, 이를 해결하는 과정에서 수학적 이해가 비약적으로 깊어지는 것** 입니다.
 
 ### 4.2 실제 사례 2: 다익스트라 알고리즘과 완화(Relaxation)
 

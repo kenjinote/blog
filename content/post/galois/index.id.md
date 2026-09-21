@@ -8,7 +8,7 @@ categories: ["matematika", "biografi"]
 tags: ["Teori Galois", "Aljabar", "Teori Grup", "Sejarah"]
 ---
 
-Dalam sejarah matematika, hanya sedikit yang menjalani kehidupan yang begitu dramatis dan tragis seperti [Évariste Galois](https://kenji.blog/id/p/galois/) (1811–1832). Pemuda Prancis ini, yang kehilangan nyawanya dalam duel pada usia muda 20 tahun, meletakkan dasar bagi teori luar biasa yang pada dasarnya akan mengubah matematika selanjutnya dalam sebuah surat yang ditulis pada malam kematiannya. Dalam artikel ini, kita menyelami lebih dalam kehidupan [Galois](https://kenji.blog/id/p/galois/) yang bergejolak dan warisan terbesarnya, **Teori [Galois](https://kenji.blog/id/p/galois/)**.
+Dalam sejarah matematika, hanya sedikit yang menjalani kehidupan yang begitu dramatis dan tragis seperti [Évariste Galois](https://kenji.blog/id/p/galois/) (1811–1832). Pemuda Prancis ini, yang kehilangan nyawanya dalam duel pada usia muda 20 tahun, meletakkan dasar bagi teori luar biasa yang pada dasarnya akan mengubah matematika selanjutnya dalam sebuah surat yang ditulis pada malam kematiannya. Dalam artikel ini, kita menyelami lebih dalam kehidupan Galois yang bergejolak dan warisan terbesarnya, **Teori [Galois](https://kenji.blog/id/p/galois/)**.
 
 ## 1. Kehidupan yang Bergejolak: Semangat dan Frustrasi
 
@@ -16,7 +16,7 @@ Dalam sejarah matematika, hanya sedikit yang menjalani kehidupan yang begitu dra
 
 [Évariste Galois](https://kenji.blog/id/p/galois/) lahir pada tahun 1811 di Bourg-la-Reine, pinggiran kota Paris. Ayahnya adalah seorang Republikan terpelajar yang kemudian menjabat sebagai walikota. Awalnya dididik oleh ibunya, [Galois](https://kenji.blog/id/p/galois/) memasuki Lycée Louis-le-Grand di Paris pada usia 12 tahun.
 
-Kehidupan sekolah di lycée membosankan baginya, tetapi hidupnya berubah total pada usia 15 tahun ketika ia menemukan *Éléments de Géométrie* karya [Legendre](https://kenji.blog/id/p/legendre/). Dikatakan bahwa [Galois](https://kenji.blog/id/p/galois/) membaca buku sulit ini dalam hitungan hari, seolah-olah sedang membaca novel. Sejak saat itu, ia mengabaikan buku teks biasa dan mulai melahap tulisan-tulisan matematikawan terhebat pada masanya, seperti [Lagrange](https://kenji.blog/id/p/lagrange/) dan [Cauchy](https://kenji.blog/id/p/cauchy/).
+Kehidupan sekolah di lycée membosankan baginya, tetapi hidupnya berubah total pada usia 15 tahun ketika ia menemukan *Éléments de Géométrie* karya [Legendre](https://kenji.blog/id/p/legendre/). Dikatakan bahwa Galois membaca buku sulit ini dalam hitungan hari, seolah-olah sedang membaca novel. Sejak saat itu, ia mengabaikan buku teks biasa dan mulai melahap tulisan-tulisan matematikawan terhebat pada masanya, seperti Lagrange dan [Cauchy](https://kenji.blog/id/p/cauchy/).
 
 ### Tantangan dan Kegagalan di École Polytechnique
 
@@ -67,7 +67,7 @@ Inti dari Teori [Galois](https://kenji.blog/id/p/galois/) terletak pada pembukti
 - **Lapangan (Field)**: Himpunan angka di mana empat operasi aritmatika dasar (penjumlahan, pengurangan, perkalian, pembagian) dapat dilakukan secara bebas. Ini mewakili perluasan ruang yang berisi koefisien dan akar suatu persamaan.
 - **Grup (Group)**: Kumpulan simetri atau transformasi. Ini mewakili struktur operasi (automorfisme) yang mengubah akar-akar persamaan.
 
-[Galois](https://kenji.blog/id/p/galois/) membuktikan bahwa terdapat korespondensi satu-ke-satu ( **korespondensi [Galois](https://kenji.blog/id/p/galois/)** ) antara lapangan perantara dari perluasan lapangan yang berisi semua akar persamaan (perluasan [Galois](https://kenji.blog/id/p/galois/)) dan subgrup dari grup [Galois](https://kenji.blog/id/p/galois/) yang mewakili simetri perluasan tersebut.
+[Galois](https://kenji.blog/id/p/galois/) membuktikan bahwa terdapat korespondensi satu-ke-satu ( **korespondensi Galois** ) antara lapangan perantara dari perluasan lapangan yang berisi semua akar persamaan (perluasan Galois) dan subgrup dari grup [Galois](https://kenji.blog/id/p/galois/) yang mewakili simetri perluasan tersebut.
 
 Di bawah ini adalah diagram (Mermaid) yang menggambarkan korespondensi yang indah ini.
 
@@ -100,7 +100,7 @@ Seperti yang ditunjukkan diagram ini, lapangan yang membesar (dari bawah ke atas
 
 ### Kondisi Keterpecahan oleh Radikal
 
-[Galois](https://kenji.blog/id/p/galois/) mencirikan kondisi perlu dan cukup agar sebuah persamaan dapat diselesaikan dengan operasi aritmatika dasar dan radikal (dapat diselesaikan secara aljabar) sebagai sifat grup [Galois](https://kenji.blog/id/p/galois/)-nya. Secara khusus, dia menunjukkan bahwa sebuah persamaan yang dapat diselesaikan ekuivalen dengan grup [Galois](https://kenji.blog/id/p/galois/)-nya sebagai **grup yang dapat diselesaikan** (Solvable group).
+[Galois](https://kenji.blog/id/p/galois/) mencirikan kondisi perlu dan cukup agar sebuah persamaan dapat diselesaikan dengan operasi aritmatika dasar dan radikal (dapat diselesaikan secara aljabar) sebagai sifat grup Galois-nya. Secara khusus, dia menunjukkan bahwa sebuah persamaan yang dapat diselesaikan ekuivalen dengan grup [Galois](https://kenji.blog/id/p/galois/)-nya sebagai **grup yang dapat diselesaikan** (Solvable group).
 
 $$
 \text{Persamaan dapat diselesaikan secara aljabar} \iff \text{Grup [Galois](https://kenji.blog/id/p/galois/) adalah grup yang dapat diselesaikan}
@@ -112,7 +112,7 @@ Jadi, fakta bahwa "persamaan umum derajat 5 atau lebih tinggi tidak dapat disele
 
 ## 3. Warisan [Galois](https://kenji.blog/id/p/galois/) dan Dampaknya pada Matematika Modern
 
-Setelah kematian [Galois](https://kenji.blog/id/p/galois/), surat-suratnya disimpan oleh sahabat karibnya Chevalier dan secara bertahap dikenal di kalangan matematikawan. Kemudian pada tahun 1846, matematikawan Prancis Joseph [Liouville](https://kenji.blog/id/p/liouville/) mengorganisir makalah-makalah [Galois](https://kenji.blog/id/p/galois/) dan menerbitkannya dalam jurnal matematika dengan komentarnya sendiri, yang pada akhirnya membawa teori [Galois](https://kenji.blog/id/p/galois/) menjadi terang benderang.
+Setelah kematian [Galois](https://kenji.blog/id/p/galois/), surat-suratnya disimpan oleh sahabat karibnya Chevalier dan secara bertahap dikenal di kalangan matematikawan. Kemudian pada tahun 1846, matematikawan Prancis Joseph Liouville mengorganisir makalah-makalah Galois dan menerbitkannya dalam jurnal matematika dengan komentarnya sendiri, yang pada akhirnya membawa teori [Galois](https://kenji.blog/id/p/galois/) menjadi terang benderang.
 
 Konsep "grup" yang diperkenalkan oleh [Galois](https://kenji.blog/id/p/galois/) kemudian menjadi bahasa dasar bukan hanya untuk aljabar tetapi untuk semua bidang ilmiah, termasuk geometri, topologi, dan fisika (seperti fisika partikel dan kristalografi). Saat ini, aljabar abstrak, yang mempelajari sistem aljabar seperti "grup, gelanggang, dan lapangan", telah menjadi salah satu pilar terpenting matematika modern.
 

@@ -9,7 +9,7 @@ categories: ["programming", "devops"]
 tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 ---
 
-# [GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を使ったC++プロジェクトの[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)構築：完全ガイド
+# [GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を使ったC++プロジェクトのCI/CD[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)構築：完全ガイド
 
 現代のソフトウェア開発パラダイムにおいて、継続的インテグレーション（Continuous Integration: CI）と継続的デリバリー/デプロイメント（Continuous Delivery/Deployment: CD）は、アジャイルな開発プロセスと高品質なソフトウェアの維持に不可欠な要素です。数多くの[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)が存在する中で、C++におけるCI/CDパイプラインの構築は、他の言語（例えばPython、JavaScript、[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)など）と比較して独特の難しさと複雑さを伴います。
 
@@ -17,7 +17,7 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 ## 1. C++プロジェクトにおけるCI/CDの意義と特有の課題
 
-Webアプリケーションやスクリプト言語を用いた開発では、単一の[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)上でのテストやビルドで十分なケースが大半です。しかし、C++はネイティブにコンパイルされる言語であり、実行環境のハードウェアアーキテクチャやオペレーティングシステムに強く依存します。
+Webアプリケーションやスクリプト言語を用いた開発では、単一の[Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)上でのテストやビルドで十分なケースが大半です。しかし、C++はネイティブにコンパイルされる言語であり、実行環境のハードウェアアーキテクチャやオペレーティングシステムに強く依存します。
 
 C++プロジェクトにCI/CDを導入する際、直面する主な課題は以下の通りです。
 
@@ -25,7 +25,7 @@ C++プロジェクトにCI/CDを導入する際、直面する主な課題は以
 2. **コンパイラの差異**: Microsoft Visual C++ (MSVC)、GNU Compiler Collection (GCC)、Clangといった主要なコンパイラは、C++標準（C++17、C++20、C++23）の実装度合いや解釈、警告の厳しさが異なります。
 3. **ビルド時間**: 大規模なC++プロジェクトでは、ビルドに数十分から数時間かかることも珍しくありません。CI環境では限られたコンピューティングリソースで効率よくビルドを行うためのキャッシュ戦略や並列化が求められます。
 4. **依存関係管理**: C++には npm や pip のような絶対的な標準パッケージマネージャーが存在しません。vcpkg、Conan、あるいはCMakeの `FetchContent` などを用いて、CI環境上で毎回正しくライブラリを解決する必要があります。
-5. **[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)と未定義動作**: [ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)操作や手動の[メモリ管理](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)が伴うため、単なるロジックのテストだけでなく、メモリリークや未定義動作（Undefined Behavior）の検知も自動化する必要があります。
+5. **[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)と未定義動作**: ポインタ操作や手動の[メモリ管理](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)が伴うため、単なるロジックのテストだけでなく、メモリリークや未定義動作（Undefined Behavior）の検知も自動化する必要があります。
 
 これらの課題を解決するためには、様々なOS仮想マシンをオンデマンドでプロビジョニングでき、複雑なワークフローをコードで定義（Configuration as Code）できる[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)が最適なソリューションとなります。
 
@@ -450,7 +450,7 @@ jobs:
 
 ## 結論
 
-C++プロジェクトにおける[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の構築は、プラットフォーム依存性やビルドツールの複雑さから一見するとハードルが高く感じられます。しかし、[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)、モダンCMake、そしてCTest/CPackのエコシステムを正しく組み合わせることで、極めて強力で自動化された開発フローを手に入れることができます。
+C++プロジェクトにおける[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)パイプラインの構築は、プラットフォーム依存性やビルドツールの複雑さから一見するとハードルが高く感じられます。しかし、[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)、モダンCMake、そしてCTest/CPackのエコシステムを正しく組み合わせることで、極めて強力で自動化された開発フローを手に入れることができます。
 
 本記事で解説したマトリックス戦略を用いたクロスプラットフォーム検証、サニタイザーを用いた実行時バグの検出、カバレッジ計測、そしてGitHub Releasesへの自動デプロイメントは、商用レベルのオープンソースプロジェクトでも広く採用されているベストプラクティスです。
 

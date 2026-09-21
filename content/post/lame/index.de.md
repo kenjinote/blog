@@ -10,7 +10,7 @@ tags: ["Gabriel Lamé", "Geschichte der Mathematik", "Zahlentheorie", "Elastizit
 
 ## 1. Einführung: Wer war [Gabriel Lamé](https://kenji.blog/de/p/lame/)?
 
-[Gabriel Lamé](https://kenji.blog/de/p/lame/) (22. Juli 1795 – 1. Mai 1870) war ein herausragender französischer Mathematiker, Physiker und Ingenieur des 19. Jahrhunderts. Seine Beiträge erstreckten sich über ein breites Spektrum, von der reinen über die angewandte Mathematik bis hin zum praktischen Bauingenieurwesen. Noch heute ist sein Name durch die **[Lamé](https://kenji.blog/de/p/lame/)-Kurve** (Superellipse), den **Satz von [Lamé](https://kenji.blog/de/p/lame/)** im euklidischen Algorithmus und die **[Lamé](https://kenji.blog/de/p/lame/)-Konstanten** in der Elastizitätstheorie tief in Mathematik- und Physikbüchern verankert.
+[Gabriel Lamé](https://kenji.blog/de/p/lame/) (22. Juli 1795 – 1. Mai 1870) war ein herausragender französischer Mathematiker, Physiker und Ingenieur des 19. Jahrhunderts. Seine Beiträge erstreckten sich über ein breites Spektrum, von der reinen über die angewandte Mathematik bis hin zum praktischen Bauingenieurwesen. Noch heute ist sein Name durch die **Lamé-Kurve** (Superellipse), den **Satz von Lamé** im euklidischen Algorithmus und die **[Lamé](https://kenji.blog/de/p/lame/)-Konstanten** in der Elastizitätstheorie tief in Mathematik- und Physikbüchern verankert.
 
 In diesem Artikel werden wir die Spuren von [Lamé](https://kenji.blog/de/p/lame/)s turbulentem Leben verfolgen und seine zahlreichen bahnbrechenden mathematischen und physikalischen Errungenschaften detailliert und systematisch erläutern. Das Verständnis von [Lamé](https://kenji.blog/de/p/lame/)s Leben und seinen Denkprozessen bietet eine äußerst wertvolle Perspektive, um zu verstehen, wie die Wissenschaft des 19. Jahrhunderts den Grundstein für die Moderne legte.
 
@@ -111,7 +111,7 @@ $$ \text{Anzahl der Schritte} \le 5 \times \text{Anzahl der Stellen der kleinere
 
 ### 4.2 Tiefe Verbindung zur [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge
 
-Beim Beweis dieses Satzes entdeckte [Lamé](https://kenji.blog/de/p/lame/), dass der schlimmste Fall (also der mit den meisten Schritten) auftritt, wenn die Eingabe aus zwei aufeinanderfolgenden **[Fibonacci](https://kenji.blog/de/p/fibonacci/)-Zahlen** besteht. Durch die Nutzung der Wachstumsrate der [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge und der Eigenschaften des Goldenen Schnitts leitete er diese elegante Obergrenze ab. Aufgrund dieser Leistung gilt [Lamé](https://kenji.blog/de/p/lame/) als einer der "Väter der Komplexitätstheorie" in der modernen Informatik.
+Beim Beweis dieses Satzes entdeckte [Lamé](https://kenji.blog/de/p/lame/), dass der schlimmste Fall (also der mit den meisten Schritten) auftritt, wenn die Eingabe aus zwei aufeinanderfolgenden **Fibonacci-Zahlen** besteht. Durch die Nutzung der Wachstumsrate der Fibonacci-Folge und der Eigenschaften des Goldenen Schnitts leitete er diese elegante Obergrenze ab. Aufgrund dieser Leistung gilt [Lamé](https://kenji.blog/de/p/lame/) als einer der "Väter der Komplexitätstheorie" in der modernen Informatik.
 
 ## 5. Beiträge zur Physik: Elastizitätstheorie und [Lamé](https://kenji.blog/de/p/lame/)-Konstanten
 
@@ -119,7 +119,7 @@ Mit seinem Hintergrund als Bauingenieur leistete [Lamé](https://kenji.blog/de/p
 
 ### 5.1 Grundlagen der Kontinuumsmechanik
 
-1852 veröffentlichte [Lamé](https://kenji.blog/de/p/lame/) eine umfassende Theorie zur Beschreibung des Verhaltens isotroper elastischer Körper (Materialien mit denselben physikalischen Eigenschaften in alle Richtungen). Er formulierte die Beziehung zwischen Spannung (Stress) und Dehnung (Strain) in einem dreidimensionalen Raum unter Verwendung von nur zwei unabhängigen Parametern. Diese sind heute als **[Lamé](https://kenji.blog/de/p/lame/)-Konstanten** ([Lamé](https://kenji.blog/de/p/lame/) parameters) $\lambda$ und $\mu$ bekannt.
+1852 veröffentlichte [Lamé](https://kenji.blog/de/p/lame/) eine umfassende Theorie zur Beschreibung des Verhaltens isotroper elastischer Körper (Materialien mit denselben physikalischen Eigenschaften in alle Richtungen). Er formulierte die Beziehung zwischen Spannung (Stress) und Dehnung (Strain) in einem dreidimensionalen Raum unter Verwendung von nur zwei unabhängigen Parametern. Diese sind heute als **Lamé-Konstanten** ([Lamé](https://kenji.blog/de/p/lame/) parameters) $\lambda$ und $\mu$ bekannt.
 
 Das verallgemeinerte Hookesche Gesetz wird mithilfe der [Lamé](https://kenji.blog/de/p/lame/)-Konstanten auf elegante Weise wie folgt beschrieben:
 
@@ -139,11 +139,11 @@ Insbesondere bei der Lösung der **Laplace-Gleichung**, die das Phänomen der W�
 
 ## 7. Die Herausforderung und der Rückschlag bei [Fermat](https://kenji.blog/de/p/fermat/)s Letztem Satz
 
-Eine dramatische Episode im Leben [Lamé](https://kenji.blog/de/p/lame/)s war sein Versuch von 1847, **[Fermat](https://kenji.blog/de/p/fermat/)s Letzten Satz** zu beweisen. Im März desselben Jahres verkündete [Lamé](https://kenji.blog/de/p/lame/) vor der Französischen Akademie der Wissenschaften mit großem Pomp, er habe "[Fermat](https://kenji.blog/de/p/fermat/)s Letzten Satz vollständig bewiesen". Sein Beweis war ein zu dieser Zeit äußerst innovativer und leistungsstarker Ansatz, der die Faktorisierung von Gleichungen mithilfe komplexer Zahlen zyklotomischer Körper umfasste.
+Eine dramatische Episode im Leben [Lamé](https://kenji.blog/de/p/lame/)s war sein Versuch von 1847, **Fermats Letzten Satz** zu beweisen. Im März desselben Jahres verkündete Lamé vor der Französischen Akademie der Wissenschaften mit großem Pomp, er habe "[Fermat](https://kenji.blog/de/p/fermat/)s Letzten Satz vollständig bewiesen". Sein Beweis war ein zu dieser Zeit äußerst innovativer und leistungsstarker Ansatz, der die Faktorisierung von Gleichungen mithilfe komplexer Zahlen zyklotomischer Körper umfasste.
 
-Unmittelbar nach seiner Präsentation wies sein Kollege und Mathematiker Joseph [Liouville](https://kenji.blog/de/p/liouville/) jedoch scharfsinnig darauf hin, dass "dieser Beweis auf der stillschweigenden Annahme beruht, dass die 'Eindeutigkeit der Primfaktorzerlegung' auch im Bereich der komplexen Zahlen gilt, was jedoch nicht bewiesen ist." Kurze Zeit später traf ein Brief des deutschen Mathematikers [Ernst Kummer](https://kenji.blog/de/p/kummer/) ein, in dem er aufzeigte, dass "die Eindeutigkeit der Primfaktorzerlegung im Allgemeinen nicht gilt", womit [Lamé](https://kenji.blog/de/p/lame/)s Beweis endgültig widerlegt war.
+Unmittelbar nach seiner Präsentation wies sein Kollege und Mathematiker Joseph [Liouville](https://kenji.blog/de/p/liouville/) jedoch scharfsinnig darauf hin, dass "dieser Beweis auf der stillschweigenden Annahme beruht, dass die 'Eindeutigkeit der Primfaktorzerlegung' auch im Bereich der komplexen Zahlen gilt, was jedoch nicht bewiesen ist." Kurze Zeit später traf ein Brief des deutschen Mathematikers Ernst Kummer ein, in dem er aufzeigte, dass "die Eindeutigkeit der Primfaktorzerlegung im Allgemeinen nicht gilt", womit [Lamé](https://kenji.blog/de/p/lame/)s Beweis endgültig widerlegt war.
 
-Dies war ein großer Rückschlag für [Lamé](https://kenji.blog/de/p/lame/), aber diese Reihe von Diskussionen führte zur Entstehung von [Kummer](https://kenji.blog/de/p/kummer/)s Theorie der "idealen Zahlen" (Ideale), die später ein riesiges neues Feld der Mathematik eröffnete: die algebraische Zahlentheorie. [Lamé](https://kenji.blog/de/p/lame/)s kühne Herausforderung trieb somit die Geschichte der Mathematik erheblich voran.
+Dies war ein großer Rückschlag für [Lamé](https://kenji.blog/de/p/lame/), aber diese Reihe von Diskussionen führte zur Entstehung von Kummers Theorie der "idealen Zahlen" (Ideale), die später ein riesiges neues Feld der Mathematik eröffnete: die algebraische Zahlentheorie. [Lamé](https://kenji.blog/de/p/lame/)s kühne Herausforderung trieb somit die Geschichte der Mathematik erheblich voran.
 
 ## 8. Schriften und die Rolle als Pädagoge
 

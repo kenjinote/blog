@@ -134,7 +134,7 @@ Meskipun AI dapat menulis "kode yang memprioritaskan C" atau "kode yang memprior
 
 ### 4.2 Komunikasi Asinkron dan Konsistensi Akhir ([Eventual Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/))
 
-Ketika sistem menjadi berskala besar, koordinasi antar layanan beralih dari komunikasi sinkron melalui [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) ke komunikasi asinkron menggunakan message queue (seperti [Kafka](https://kenji.blog/id/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/id/p/event-driven-architecture-message-queue-kafka-rabbitmq/)). Konsistensi data di sini berubah dari konsistensi instan menjadi "konsistensi akhir" (Eventual [Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/)).
+Ketika sistem menjadi berskala besar, koordinasi antar layanan beralih dari komunikasi sinkron melalui [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/) ke komunikasi asinkron menggunakan message queue (seperti Kafka, RabbitMQ). Konsistensi data di sini berubah dari konsistensi instan menjadi "konsistensi akhir" (Eventual [Consistency](https://kenji.blog/id/p/cap-theorem-distributed-systems-tradeoff/)).
 Kapan pola arsitektur tingkat lanjut seperti Saga Pattern atau [CQRS](https://kenji.blog/id/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) harus diperkenalkan? Membuat keputusan kompleks ini dan menggambar cetak biru keseluruhan sistem adalah kompetensi utama dari insinyur senior (senior engineer).
 
 ```mermaid

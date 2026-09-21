@@ -8,7 +8,7 @@ tags: ["Byzantine Generals Problem", "Blockchain", "Consensus", "Algorithm"]
 slug: "byzantine-generals-problem"
 ---
 
-عند دراسة الأنظمة الموزعة ([Distributed System](https://kenji.blog/ar/p/cap-theorem-distributed-systems/)s) أو تقنية البلوكشين ([Blockchain](https://kenji.blog/ar/p/blockchain-technology-smart-contract-distributed-ledger/))، فمن المؤكد أنك ستواجه ما يُعرف بـ **[مشكلة الجنرالات البيزنطيين](https://kenji.blog/ar/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/ar/p/byzantine-generals-problem-consensus/) Problem). تتناول هذه المشكلة موضوعاً في غاية الأهمية: كيف يمكن للنظام بأكمله أن يتوصل إلى إجماع ([Consensus](https://kenji.blog/ar/p/blockchain-technology-smart-contract-distributed-ledger/)) صحيح في بيئة يوجد بها "خونة" أو "عقد (Nodes) معطلة" داخل الشبكة.
+عند دراسة الأنظمة الموزعة ([Distributed System](https://kenji.blog/ar/p/cap-theorem-distributed-systems/)s) أو تقنية البلوكشين (Blockchain)، فمن المؤكد أنك ستواجه ما يُعرف بـ **مشكلة الجنرالات البيزنطيين** (Byzantine Generals Problem). تتناول هذه المشكلة موضوعاً في غاية الأهمية: كيف يمكن للنظام بأكمله أن يتوصل إلى إجماع ([Consensus](https://kenji.blog/ar/p/blockchain-technology-smart-contract-distributed-ledger/)) صحيح في بيئة يوجد بها "خونة" أو "عقد (Nodes) معطلة" داخل الشبكة.
 
 في هذه المقالة، سنشرح **[مشكلة الجنرالات البيزنطيين](https://kenji.blog/ar/p/byzantine-generals-problem/)** بالتفصيل من الأساسيات إلى التطبيقات، وذلك باستخدام قصة ملموسة، وشروط رياضية، ورسوم توضيحية.
 
@@ -120,7 +120,7 @@ end
 
 تسمى القدرة على مقاومة [مشكلة الجنرالات البيزنطيين](https://kenji.blog/ar/p/byzantine-generals-problem/) **تحمل الأخطاء البيزنطية** (Byzantine Fault Tolerance, BFT). وهو مؤشر مهم لضمان استمرار النظام الموزع في العمل بشكل طبيعي حتى مع وجود أعطال أو هجمات خبيثة.
 
-في السنوات الأخيرة، عادت هذه المشكلة لتسلط عليها الأضواء بشكل كبير بفضل ظهور **تقنية البلوكشين** ([Blockchain](https://kenji.blog/ar/p/blockchain-technology-smart-contract-distributed-ledger/)). نظراً لأن البلوكشين عبارة عن شبكة نظير إلى نظير ([P2P](https://kenji.blog/ar/p/webrtc-realtime-communication-p2p/)) بدون مدير مركزي، فهناك احتمال أن يقوم المشاركون (العقد) الخبيثون بنشر سجلات معاملات مزيفة. إنها [مشكلة الجنرالات البيزنطيين](https://kenji.blog/ar/p/byzantine-generals-problem/) بحد ذاتها.
+في السنوات الأخيرة، عادت هذه المشكلة لتسلط عليها الأضواء بشكل كبير بفضل ظهور **تقنية البلوكشين** ([Blockchain](https://kenji.blog/ar/p/blockchain-technology-smart-contract-distributed-ledger/)). نظراً لأن البلوكشين عبارة عن شبكة نظير إلى نظير (P2P) بدون مدير مركزي، فهناك احتمال أن يقوم المشاركون (العقد) الخبيثون بنشر سجلات معاملات مزيفة. إنها [مشكلة الجنرالات البيزنطيين](https://kenji.blog/ar/p/byzantine-generals-problem/) بحد ذاتها.
 
 ### كيف يعمل PBFT (Practical Byzantine Fault Tolerance)
 

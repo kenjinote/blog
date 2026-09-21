@@ -308,7 +308,7 @@ graph TD
 
 ### 8.1 Использование многоэтапной сборки (Multi-stage build)
 
-Разделяя среду сборки и среду выполнения, можно значительно уменьшить размер окончательного образа. Это особенно полезно для компилируемых языков, таких как [Go](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/) и [Java](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/).
+Разделяя среду сборки и среду выполнения, можно значительно уменьшить размер окончательного образа. Это особенно полезно для компилируемых языков, таких как [Go](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/), Rust и [Java](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/).
 
 ```dockerfile
 # --- Этап 1: Среда сборки ---

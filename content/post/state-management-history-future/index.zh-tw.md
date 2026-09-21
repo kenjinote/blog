@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 這些函式庫抽象化了「將伺服器狀態快取到本地，並在需要時同步」的複雜處理。
 這樣一來，應該由 [Redux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 等全域 Store 管理的資料銳減至「純粹的客戶端狀態」，大幅減輕了狀態管理的負擔。
 
-## 8. 原子狀態管理（Atomic [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Management）：[Recoil](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 與 [Jotai](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/)
+## 8. 原子狀態管理（Atomic [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Management）：Recoil 與 [Jotai](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/)
 
 在 Server State 被分離出來之後，一場關於如何有效管理剩餘的 Client State 的新競爭開始了。
 為了解決 React 的渲染模型（由上而下）和 [Context API](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 的效能問題而誕生的，就是 **原子狀態管理（Atomic [State Management](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/)）** 方法。
@@ -444,7 +444,7 @@ React Compiler 會在編譯時靜態分析 React 元件的程式碼，並 **自�
 
 ## 13. 結論：狀態管理將走向何方？
 
-從 MVC 的混亂開始，透過 [Flux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 獲得可預測性，透過 Hooks 實現簡化，分離 Server [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)，透過 Atomic 和 Proxy 提高效率，再到 Signals 的細粒度反應性。
+從 MVC 的混亂開始，透過 [Flux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/)/Redux 獲得可預測性，透過 Hooks 實現簡化，分離 Server [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)，透過 Atomic 和 Proxy 提高效率，再到 Signals 的細粒度反應性。
 
 回顧約 15 年來前端狀態管理的歷史，可以看出一個明確的趨勢。那就是 **「在減少樣板程式碼、降低開發者認知負擔的同時，背後的系統（框架或編譯器）正朝著自動最佳化效能的方向進化」** 。
 

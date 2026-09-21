@@ -16,7 +16,7 @@ tags:
 
 ## 1. はじめに：[関数型プログラミング](https://kenji.blog/p/oop-vs-fp-vs-dop/)の根底に流れる哲学
 
-現代のソフトウェア開発において、 **[関数型プログラミング](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)** （[Functional Programming](https://kenji.blog/p/oop-vs-fp-vs-dop/)）はもはや一部のマニア向けのアプローチではなく、広く普及したパラダイムとなりました。Reactなどのフロントエンド技術から、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)やScala、さらには[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)やC#といった[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)言語にまで、関数の第一級オブジェクトとしての扱いや副作用の排除といった概念が取り入れられています。
+現代のソフトウェア開発において、 **[関数型プログラミング](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)** （Functional Programming）はもはや一部のマニア向けのアプローチではなく、広く普及したパラダイムとなりました。Reactなどのフロントエンド技術から、RustやScala、さらにはJavaやC#といった[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)言語にまで、関数の第一級オブジェクトとしての扱いや副作用の排除といった概念が取り入れられています。
 
 しかし、このパラダイムの背後には、コンピュータが物理的に誕生する以前の1930年代に構築された深遠な数学的理論が存在します。それが、アロンゾ・チャーチ（Alonzo Church）によって提唱された **ラムダ計算** （ $\lambda$-calculus ）です。
 

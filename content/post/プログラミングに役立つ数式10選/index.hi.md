@@ -559,7 +559,7 @@ for val, prob in zip(logits, probabilities):
 
 ---
 
-## 10. [यूक्लिड](https://kenji.blog/hi/p/euclid/)ियन दूरी और पाइथागोरस प्रमेय ([[Euclid](https://kenji.blog/hi/p/euclid/)e](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
+## 10. [यूक्लिड](https://kenji.blog/hi/p/euclid/)ियन दूरी और पाइथागोरस प्रमेय ([Euclide](https://kenji.blog/p/euclid/)an Distance & Pythagorean Theorem)
 
 ### सूत्र की सुंदरता और अवलोकन
 यह प्राचीन ग्रीस (Ancient Greece) की ज्यामिति (geometry) की नींव है, और यह गणितीय सूत्र $n$-आयामी (n-dimensional) स्थान में दो बिंदुओं के बीच की सीधी रेखा की दूरी को परिभाषित करता है। 2D स्पेस में यह पाइथागोरस प्रमेय ($a^2 + b^2 = c^2$) है।

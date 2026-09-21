@@ -23,7 +23,7 @@ Los números primos gemelos (Twin Primes) son pares de números primos cuya dife
 - $(29, 31)$
 - $(41, 43)$
 
-A medida que los números aumentan, el [Teorema de los números primos ([Prime Number Theorem](https://kenji.blog/es/p/prime-number-theorem/))](https://kenji.blog/p/prime-number-theorem/) establece que la frecuencia de aparición de los números primos en sí disminuye. En consecuencia, la frecuencia de los números primos gemelos también disminuye. Sin embargo, los matemáticos han especulado durante mucho tiempo que, sin importar cuán grandes sean los números, estos "pares de números primos con una diferencia de 2" seguirán apareciendo sin fin.
+A medida que los números aumentan, el [Teorema de los números primos (Prime Number Theorem)](https://kenji.blog/p/prime-number-theorem/) establece que la frecuencia de aparición de los números primos en sí disminuye. En consecuencia, la frecuencia de los números primos gemelos también disminuye. Sin embargo, los matemáticos han especulado durante mucho tiempo que, sin importar cuán grandes sean los números, estos "pares de números primos con una diferencia de 2" seguirán apareciendo sin fin.
 
 Esta es la **conjetura de los números primos gemelos** .
 

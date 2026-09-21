@@ -10,7 +10,7 @@ description: '公開鍵暗号は、量子コンピュータの実用化により
 
 ## はじめに：[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)がもたらす暗号技術への「脅威」
 
-現在、私たちがインターネット上で日常的に行っている通信——オンラインバンキングでの決済、ウェブサイトの閲覧（HTTPS）、メッセージアプリでのやり取り、そして[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)や[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)の取引に至るまで——それらの多くは「[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号」と呼ばれる技術によって守られています。具体的には、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や楕円曲線暗号（ECC）といったアルゴリズムが、現代のデジタル社会の信頼性を支える根幹となっています。
+現在、私たちがインターネット上で日常的に行っている通信——オンラインバンキングでの決済、ウェブサイトの閲覧（HTTPS）、メッセージアプリでのやり取り、そして[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)や暗号資産の取引に至るまで——それらの多くは「公開鍵暗号」と呼ばれる技術によって守られています。具体的には、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や楕円曲線暗号（ECC）といったアルゴリズムが、現代のデジタル社会の信頼性を支える根幹となっています。
 
 これらの暗号方式は、「巨大な数の素因数分解」や「離散対数問題」といった、現在の古典的コンピュータ（スーパーコンピュータを含む）では解くのに天文学的な時間がかかる数学的難問を安全性の根拠としています。しかし、近年目覚ましい進歩を遂げている **「[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)」** が実用化されると、この前提が根本から覆されることになります。
 
@@ -24,7 +24,7 @@ description: '公開鍵暗号は、量子コンピュータの実用化により
 
 ## 耐量子計算機暗号（PQC）とは何か？
 
-耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy, PQC）とは、既存の古典的コンピュータ上でも動作し、かつ将来登場するであろう大規模な[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)による攻撃（[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)など）に対しても耐性を持つように設計された暗号アルゴリズムの総称です。
+耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy, PQC）とは、既存の古典的コンピュータ上でも動作し、かつ将来登場するであろう大規模な量子コンピュータによる攻撃（[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)など）に対しても耐性を持つように設計された暗号アルゴリズムの総称です。
 
 よく混同されがちな技術に「量子暗号（Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）」や「量子鍵配送（QKD）」がありますが、これらは全く別のアプローチです。量子暗号（QKD）は、量子力学の物理法則（観測すると状態が変化する性質など）を利用して、通信経路上での盗聴を物理的に不可能にするハードウェアベースの技術です。専用の光ファイバーや特殊な機器が必要であり、導入コストや距離の制限という課題があります。
 

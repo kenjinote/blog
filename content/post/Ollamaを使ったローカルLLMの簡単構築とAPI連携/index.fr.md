@@ -341,7 +341,7 @@ Il est possible d'exécuter localement les puissantes fonctionnalités de chaîn
 
 # Intégration avec des applications Node.js
 
-[Pour les ingénieurs](https://kenji.blog/fr/p/[エンジニア向け](https://kenji.blog/fr/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)[プロンプトエンジニアリング](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)の基本と開発への応用/) front-end ou les développeurs full-stack, pouvoir appeler un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) local à partir d'un environnement TypeScript/Node.js est un énorme avantage. Nous utiliserons le package NPM officiel `ollama`.
+[Pour les ingénieurs](https://kenji.blog/fr/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/) front-end ou les développeurs full-stack, pouvoir appeler un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) local à partir d'un environnement TypeScript/Node.js est un énorme avantage. Nous utiliserons le package NPM officiel `ollama`.
 
 ## Installation
 

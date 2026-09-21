@@ -29,7 +29,7 @@ Diese Aussage war nicht nur poetisch; sie wurde durch seinen vehementen Glauben 
 
 [Kronecker](https://kenji.blog/de/p/kronecker/) wurde 1823 in eine wohlhabende jüdische Familie in Liegnitz, Preußen (heute Legnica, Polen), geboren. Schon früh zeigte er einen außergewöhnlichen Intellekt und besuchte das örtliche Gymnasium.
 
-Hier fand eine schicksalhafte Begegnung statt. Ein neuer Lehrer kam an das Gymnasium – **[Ernst Kummer](https://kenji.blog/de/p/kummer/)** , der später ein Pionier der Idealtheorie werden sollte. [Kummer](https://kenji.blog/de/p/kummer/) erkannte [Kronecker](https://kenji.blog/de/p/kronecker/)s Talent sofort und bot ihm fortgeschrittenen, persönlichen Mathematikunterricht.
+Hier fand eine schicksalhafte Begegnung statt. Ein neuer Lehrer kam an das Gymnasium – **[Ernst Kummer](https://kenji.blog/de/p/kummer/)** , der später ein Pionier der Idealtheorie werden sollte. Kummer erkannte [Kronecker](https://kenji.blog/de/p/kronecker/)s Talent sofort und bot ihm fortgeschrittenen, persönlichen Mathematikunterricht.
 
 ```mermaid
 graph TD
@@ -119,7 +119,7 @@ Dieser Satz zeigt, dass das abstrakte Konzept einer "abelschen Erweiterung der r
 
 ## 4.4. [Kronecker](https://kenji.blog/de/p/kronecker/)s Jugendtraum
 
-Der Satz von [Kronecker](https://kenji.blog/de/p/kronecker/)-Weber bezog sich auf abelsche Erweiterungen über den rationalen Zahlen $\mathbb{Q}$. [Kronecker](https://kenji.blog/de/p/kronecker/) träumte davon, dies auf allgemeinere algebraische Körper, wie imaginärquadratische Körper, auszudehnen. Seine große Frage, "Werden alle abelschen Erweiterungen eines imaginärquadratischen Körpers durch die speziellen Werte bestimmter Funktionen erzeugt?", wurde später als **[Hilbert](https://kenji.blog/de/p/hilbert/)s 12. Problem** formuliert.
+Der Satz von [Kronecker](https://kenji.blog/de/p/kronecker/)-Weber bezog sich auf abelsche Erweiterungen über den rationalen Zahlen $\mathbb{Q}$. Kronecker träumte davon, dies auf allgemeinere algebraische Körper, wie imaginärquadratische Körper, auszudehnen. Seine große Frage, "Werden alle abelschen Erweiterungen eines imaginärquadratischen Körpers durch die speziellen Werte bestimmter Funktionen erzeugt?", wurde später als **[Hilbert](https://kenji.blog/de/p/hilbert/)s 12. Problem** formuliert.
 
 Er bezeichnete dies als seinen "liebsten Jugendtraum". Obwohl dieses Problem durch Teiji [Takagi](https://kenji.blog/de/p/takagi-teiji/)s Klassenkörpertheorie und die spätere Theorie der komplexen Multiplikation massive Fortschritte machte, bleibt es für vollständig allgemeine algebraische Körper ein ungelöstes Hauptproblem.
 

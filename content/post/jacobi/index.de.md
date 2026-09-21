@@ -16,7 +16,7 @@ tags:
 
 # 1. Einführung: Ein Sucher des reinen Denkens
 
-[Carl Gustav Jacob Jacobi](https://kenji.blog/de/p/jacobi/) (1804–1851) war ein **deutscher Mathematiker** des 19. Jahrhunderts, der entscheidende Beiträge zu verschiedenen Gebieten wie Algebra, Analysis, Zahlentheorie und Mechanik leistete. Neben [Niels Henrik Abel](https://kenji.blog/de/p/abel/) wird er als "Entdecker der elliptischen Funktionen" gefeiert, und er ist der Namensgeber der "[Jacobi](https://kenji.blog/de/p/jacobi/)-Matrix" (Funktionaldeterminante), der wir heute in der multivariablen Analysis häufig begegnen.
+[Carl Gustav Jacob Jacobi](https://kenji.blog/de/p/jacobi/) (1804–1851) war ein **deutscher Mathematiker** des 19. Jahrhunderts, der entscheidende Beiträge zu verschiedenen Gebieten wie Algebra, Analysis, Zahlentheorie und Mechanik leistete. Neben Niels Henrik Abel wird er als "Entdecker der elliptischen Funktionen" gefeiert, und er ist der Namensgeber der "[Jacobi](https://kenji.blog/de/p/jacobi/)-Matrix" (Funktionaldeterminante), der wir heute in der multivariablen Analysis häufig begegnen.
 
 Er schätzte die Schönheit der Mathematik selbst und die Ehre des menschlichen Geistes mehr als den praktischen Nutzen. In diesem Artikel werden wir tief in [Jacobi](https://kenji.blog/de/p/jacobi/)s Leben, seine wichtigsten mathematischen Errungenschaften und die berühmten Episoden, die er hinterließ, eintauchen.
 
@@ -47,15 +47,15 @@ Als er 1821 in die Universität Berlin eintrat, studierte er auch Philosophie un
 
 Eine von [Jacobi](https://kenji.blog/de/p/jacobi/)s größten Errungenschaften ist der Aufbau der Theorie der elliptischen Funktionen. Elliptische Integrale treten bei der Berechnung der Bewegung eines Pendels oder der Bogenlänge einer Ellipse auf, und [Legendre](https://kenji.blog/de/p/legendre/) und andere hatten sie jahrzehntelang untersucht.
 
-[Jacobi](https://kenji.blog/de/p/jacobi/) führte die bahnbrechende Perspektive ein, die Umkehrfunktion des Integrals zu betrachten. Bemerkenswerterweise hatte das junge norwegische Genie **[Abel](https://kenji.blog/de/p/abel/)** fast zur gleichen Zeit völlig unabhängig denselben Ansatz entdeckt. Sowohl [Jacobi](https://kenji.blog/de/p/jacobi/) als auch [Abel](https://kenji.blog/de/p/abel/) entdeckten die doppelte Periodizität elliptischer Funktionen und revolutionierten das Feld.
+[Jacobi](https://kenji.blog/de/p/jacobi/) führte die bahnbrechende Perspektive ein, die Umkehrfunktion des Integrals zu betrachten. Bemerkenswerterweise hatte das junge norwegische Genie **Abel** fast zur gleichen Zeit völlig unabhängig denselben Ansatz entdeckt. Sowohl Jacobi als auch [Abel](https://kenji.blog/de/p/abel/) entdeckten die doppelte Periodizität elliptischer Funktionen und revolutionierten das Feld.
 
 $$ \text{sn}(u, k), \quad \text{cn}(u, k), \quad \text{dn}(u, k) $$
 
-[Jacobi](https://kenji.blog/de/p/jacobi/) definierte diese [Jacobi](https://kenji.blog/de/p/jacobi/)schen elliptischen Funktionen und führte ferner ein neues leistungsfähiges analytisches Werkzeug ein, das "Theta-Funktionen" genannt wird. [Jacobi](https://kenji.blog/de/p/jacobi/)s Theta-Funktion $\vartheta(z, \tau)$ ist wie folgt definiert:
+[Jacobi](https://kenji.blog/de/p/jacobi/) definierte diese Jacobischen elliptischen Funktionen und führte ferner ein neues leistungsfähiges analytisches Werkzeug ein, das "Theta-Funktionen" genannt wird. [Jacobi](https://kenji.blog/de/p/jacobi/)s Theta-Funktion $\vartheta(z, \tau)$ ist wie folgt definiert:
 
 $$ \vartheta(z, \tau) = \sum_{n=-\infty}^{\infty} e^{\pi i n^2 \tau + 2 \pi i n z} $$
 
-1829 veröffentlichte er sein Meisterwerk, *Fundamenta nova theoriae functionum ellipticarum* (Neue Grundlagen der Theorie der elliptischen Funktionen), das die Systematisierung dieses Gebiets abschloss. Der französische Mathematiker [Legendre](https://kenji.blog/de/p/legendre/) war erstaunt über die Leistungen von [Jacobi](https://kenji.blog/de/p/jacobi/) und [Abel](https://kenji.blog/de/p/abel/), die viel jünger waren als er, und lobte sie sehr.
+1829 veröffentlichte er sein Meisterwerk, *Fundamenta nova theoriae functionum ellipticarum* (Neue Grundlagen der Theorie der elliptischen Funktionen), das die Systematisierung dieses Gebiets abschloss. Der französische Mathematiker [Legendre](https://kenji.blog/de/p/legendre/) war erstaunt über die Leistungen von Jacobi und [Abel](https://kenji.blog/de/p/abel/), die viel jünger waren als er, und lobte sie sehr.
 
 # 5. Die [Jacobi](https://kenji.blog/de/p/jacobi/)-Matrix (Funktionaldeterminante) und die multivariable Analysis
 

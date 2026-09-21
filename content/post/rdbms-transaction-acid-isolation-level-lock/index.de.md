@@ -292,4 +292,4 @@ Wenn diese UPDATE-Anweisung ausgeführt wird, überprüft die Anwendung die von 
 - Die Eigenschaften von **Pessimistischen Sperren** und **Optimistischen Sperren** verstehen und die optimale exklusive Steuerung in der Anwendung entsprechend der Geschäftslogik und den Verkehrseigenschaften (Häufigkeit von Konflikten) implementieren.
 
 Durch die Kombination dieses Wissens und dieser Techniken ist es erstmals möglich, ein robustes System zu erstellen, das "keine Dateninkonsistenzen verursacht und mit hoher Leistung skaliert".
-Im nächsten Artikel planen wir zu erklären, wie sich diese Transaktionssteuerung in verteilten Systemen und [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen entwickelt hat (Saga-Pattern, 2PC usw.). Bleiben Sie dran.
+Im nächsten Artikel planen wir zu erklären, wie sich diese Transaktionssteuerung in verteilten Systemen und [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen entwickelt hat (Saga-Pattern, 2PC usw.). Bleiben Sie dran.

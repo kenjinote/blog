@@ -308,7 +308,7 @@ graph TD
 
 ### 8.1 मल्टी-स्टेज बिल्ड (Multi-stage build) का लाभ उठाना
 
-बिल्ड वातावरण को निष्पादन वातावरण से अलग करके, अंतिम इमेज के आकार को काफी कम किया जा सकता है। यह [Go](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) और [Java](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) जैसी संकलित (compiled) भाषाओं के लिए विशेष रूप से प्रभावी है।
+बिल्ड वातावरण को निष्पादन वातावरण से अलग करके, अंतिम इमेज के आकार को काफी कम किया जा सकता है। यह [Go](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/), Rust और [Java](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) जैसी संकलित (compiled) भाषाओं के लिए विशेष रूप से प्रभावी है।
 
 ```dockerfile
 # --- Stage 1: Build पर्यावरण ---

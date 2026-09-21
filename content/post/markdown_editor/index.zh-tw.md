@@ -252,7 +252,7 @@ flowchart TD
 
 使用 VS Code 的 GitHub Copilot Chat，或是 Neovim 的 `ChatGPT.nvim` 與 `Copilot.vim` 等工具，就能在不離開編輯器的情況下送出如下的提示詞 (Prompt)：
 
-> 「請針對以下技術元素，為初學者建立一個採用 Markdown 階層結構的大綱：[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/)、[Kubernetes](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)、[CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)」
+> 「請針對以下技術元素，為初學者建立一個採用 Markdown 階層結構的大綱：[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)、Kubernetes、[CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)」
 
 接著，就會立即產生包含標題與條列項目的 Markdown 內容。我們只需要在這些骨架上添加血肉即可。
 

@@ -444,7 +444,7 @@ React Compiler статически анализирует код компоне
 
 ## 13. Заключение: Куда движется управление состоянием?
 
-Начиная с хаоса MVC, переходя к достижению предсказуемости с [Flux](https://kenji.blog/ru/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/ru/p/state-management-history-redux-context-recoil-zustand/), упрощению с Hooks, отделению Server [State](https://kenji.blog/ru/p/iac-infrastructure-as-code-terraform/), повышению эффективности за счет Atomic и Proxy, и придя к тонкогранулярной реактивности через Signals.
+Начиная с хаоса MVC, переходя к достижению предсказуемости с [Flux](https://kenji.blog/ru/p/state-management-history-redux-context-recoil-zustand/)/Redux, упрощению с Hooks, отделению Server [State](https://kenji.blog/ru/p/iac-infrastructure-as-code-terraform/), повышению эффективности за счет Atomic и Proxy, и придя к тонкогранулярной реактивности через Signals.
 
 Оглядываясь на примерно 15-летнюю историю управления состоянием во фронтенде, можно увидеть один четкий тренд. Это **«развитие в направлении сокращения шаблонного кода, снижения когнитивной нагрузки на разработчиков, в то время как базовая система (фреймворк или компилятор) автоматически оптимизирует производительность»**.
 

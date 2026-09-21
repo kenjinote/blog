@@ -9,7 +9,7 @@ categories: ["programming", "algorithms"]
 tags: ["Algorithm", "DP", "C++", "Python"]
 ---
 
-競技プログラミングから実務のアルゴリズム設計まで、多くの場面で登場し、そして多くのプログラマの壁となるのが **[動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)（[Dynamic Programming](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/), 通称 [DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)）** です。「漸化式が立てられない」「添字がバグる」「そもそもDPで解ける問題なのか判断できない」……そんな悩みを抱えている方は多いのではないでしょうか。
+競技プログラミングから実務のアルゴリズム設計まで、多くの場面で登場し、そして多くのプログラマの壁となるのが **[動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)（Dynamic Programming, 通称 [DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)）** です。「漸化式が立てられない」「添字がバグる」「そもそもDPで解ける問題なのか判断できない」……そんな悩みを抱えている方は多いのではないでしょうか。
 
 本記事では、動的計画法の本質から、具体的なアプローチ（トップダウンとボトムアップ）、さらに3つの代表的な問題（[フィボナッチ](https://kenji.blog/p/fibonacci/)数列、0/1[ナップサック問題](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)、最長共通部分列）を通じた実践的な解説まで、徹底的に網羅します。C++とPythonの両方で実装例を示し、数式と図解を交えながら「完全にマスター」するための道筋を提供します。非常に長大な記事になりますが、最後まで読み終えたとき、あなたのアルゴリズム力は確実に飛躍しているはずです。
 
@@ -27,7 +27,7 @@ tags: ["Algorithm", "DP", "C++", "Python"]
 
 大きな問題を解く過程で、 **同じ部分問題が何度も繰り返し現れる** という性質です。
 
-たとえば、後述する[フィボナッチ](https://kenji.blog/p/fibonacci/)数列の計算では、「第3項を求める」という計算が、第5項を求める際にも第4項を求める際にも必要になります。部分問題が重複しない場合（例：[マージ[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)などの分割統治法）は、解を記録しておくメリットがないため、[DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)の適用対象とはなりません。重複するからこそ、一度計算した結果をメモリに保存（メモ化または表作成）し、再利用することで劇的な高速化が可能になるのです。
+たとえば、後述する[フィボナッチ](https://kenji.blog/p/fibonacci/)数列の計算では、「第3項を求める」という計算が、第5項を求める際にも第4項を求める際にも必要になります。部分問題が重複しない場合（例：マージソートなどの分割統治法）は、解を記録しておくメリットがないため、[DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)の適用対象とはなりません。重複するからこそ、一度計算した結果をメモリに保存（メモ化または表作成）し、再利用することで劇的な高速化が可能になるのです。
 
 ### 1-2. 部分構造最適性 (Optimal Substructure)
 

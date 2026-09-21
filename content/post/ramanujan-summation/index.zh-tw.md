@@ -25,7 +25,7 @@ $$
 
 明明是將正整數無限相加，不知為何卻變成了 **負分數** 。這個違反直覺的結果，因為印度天才數學家[斯里尼瓦瑟·拉馬努金](https://kenji.blog/zh-tw/p/ramanujan/)（[Srinivasa Ramanujan](https://kenji.blog/zh-tw/p/ramanujan/)）在寫給英國數學家 G.H. 哈代（G.H. Hardy）的信中提及而聲名大噪。
 
-在本文中，我們將解說這種被稱為「[拉馬努金求和（[Ramanujan Summation](https://kenji.blog/zh-tw/p/ramanujan-summation/)）](https://kenji.blog/p/ramanujan-summation/)」的方法，探討這個奇妙的值是如何被推導出來的，以及它與現實世界的物理現象有何關聯。
+在本文中，我們將解說這種被稱為「[拉馬努金求和（Ramanujan Summation）](https://kenji.blog/p/ramanujan-summation/)」的方法，探討這個奇妙的值是如何被推導出來的，以及它與現實世界的物理現象有何關聯。
 
 ---
 

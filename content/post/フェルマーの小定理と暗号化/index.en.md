@@ -13,7 +13,7 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 In modern digital society, especially in communication over the Internet, "encryption" has become an indispensable foundational technology. The reason we can securely browse websites via HTTPS, perform financial transactions through online banking, and exchange private messages on messaging apps is because cryptographic protocols backed by highly advanced mathematical theories are working behind the scenes. Among them, "Public-Key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" plays a particularly important role, and its prime representative is **[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography**.
 
-The security and correctness of many cryptographic algorithms, including RSA cryptography, depend heavily on a very beautiful and powerful theorem discovered by the 17th-century French mathematician [Pierre de Fermat](https://kenji.blog/en/p/fermat/). That is **[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)**. Furthermore, [Leonhard Euler](https://kenji.blog/en/p/euler/)'s theorem, which generalizes this, also plays a decisive role in cryptographic theory.
+The security and correctness of many cryptographic algorithms, including RSA cryptography, depend heavily on a very beautiful and powerful theorem discovered by the 17th-century French mathematician [Pierre de Fermat](https://kenji.blog/en/p/fermat/). That is **Fermat's Little Theorem**. Furthermore, [Leonhard Euler](https://kenji.blog/en/p/euler/)'s theorem, which generalizes this, also plays a decisive role in cryptographic theory.
 
 In this article, we will thoroughly explain from the basics how the pure mathematical discovery of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) is applied to modern practical cryptographic technologies, especially "primality testing" and "[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography". This will be a highly detailed technical guide covering mathematical proofs, encryption and decryption mechanisms, and specific algorithm implementations using C++ and Python.
 
@@ -112,7 +112,7 @@ This is the proof of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-l
 
 ## 4. Euler's Totient Function and Euler's Theorem
 
-[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) is a theorem concerning "prime numbers $p$", but it was [Leonhard Euler](https://kenji.blog/en/p/euler/) who generalized this to "any positive integer $n$". This extension is essential for understanding [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography.
+[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) is a theorem concerning "prime numbers $p$", but it was Leonhard Euler who generalized this to "any positive integer $n$". This extension is essential for understanding [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography.
 
 ### 4.1 Euler's Totient Function $\phi(n)$
 
@@ -281,7 +281,7 @@ else:
 
 ---
 
-## 7. Application to [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: Where [Fermat](https://kenji.blog/en/p/fermat/) and Euler Bear Fruit
+## 7. Application to [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Cryptography: Where [Fermat](https://kenji.blog/en/p/fermat/) and Euler Bear Fruit
 
 The greatest application of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) (and Euler's Theorem) is **[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography**, developed in 1977 by Rivest, Shamir, and Adleman.
 RSA cryptography is an epoch-making system called "public-key cryptography", realizing a mechanism where the key for encryption (public key) is published to the whole world, while the key for decryption (private key) is known only to the receiver themselves.
@@ -317,7 +317,7 @@ The mathematical detail steps are explained below.
 4. Choose an integer $e$ (public exponent) that is coprime to $\phi(N)$ (often $e = 65537$ is used).
 5. Calculate the modular inverse $d$ (private exponent) of $e$. In other words, find $d$ that satisfies:
    $$ e \cdot d \equiv 1 \pmod{\phi(N)} $$
-   The **extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm** is used for this calculation.
+   The **extended [Euclide](https://kenji.blog/p/euclid/)an algorithm** is used for this calculation.
 
 Now, the **public key is $(N, e)$**, and the **private key is $(N, d)$**. ($p, q, \phi(N)$ are immediately discarded or strictly hidden).
 
@@ -369,7 +369,7 @@ $M$ is beautifully restored! The properties of numbers discovered hundreds of ye
 
 It's hard to get a real feel from theory alone, so let's actually implement the key generation, encryption, and decryption process of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography using Python. This is a "toy implementation" for educational purposes, but the math used is exactly the same as the real thing.
 
-The "extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm" for finding the modular inverse $d$ is also included in the implementation.
+The "extended [Euclide](https://kenji.blog/p/euclid/)an algorithm" for finding the modular inverse $d$ is also included in the implementation.
 
 ```python
 import random
@@ -468,7 +468,7 @@ When you run this code, you can see how an array of characters is converted into
 
 In the 17th century when [Pierre de Fermat](https://kenji.blog/en/p/fermat/) discovered this "Little Theorem", no one thought it would be of any use. [Fermat](https://kenji.blog/en/p/fermat/) himself studied number theory out of pure mathematical curiosity.
 
-However, about 300 years later in the 1970s, at the dawn of computer networks, [Fermat](https://kenji.blog/en/p/fermat/)'s theorem made a dramatic comeback as an indispensable cryptographic technology for establishing secure communication protocols. Primality testing technology based on [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) and [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography based on Euler's theorem literally support modern Internet infrastructure.
+However, about 300 years later in the 1970s, at the dawn of computer networks, [Fermat](https://kenji.blog/en/p/fermat/)'s theorem made a dramatic comeback as an indispensable cryptographic technology for establishing secure communication protocols. Primality testing technology based on Fermat's Little Theorem and [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography based on Euler's theorem literally support modern Internet infrastructure.
 
 The LINE messages we casually send every day, the shopping on Amazon, all dance on this simple and beautiful formula $a^{p-1} \equiv 1 \pmod p$. No matter how abstract mathematics may be, [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) teaches us that the time will definitely come when it will be useful to humanity.
 

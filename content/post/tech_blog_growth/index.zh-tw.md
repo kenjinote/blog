@@ -24,7 +24,7 @@ description: '利用數據與自動化將技術部落格流量最大化的策略
 
 ### 1.1 Core [Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) 的最佳化
 
-Google 採用頁面體驗作為排名因素，特別是 **[Core Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** 在技術部落格中也無法忽視。
+Google 採用頁面體驗作為排名因素，特別是 **[Core Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (LCP, FID/INP, [CLS](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** 在技術部落格中也無法忽視。
 技術部落格經常大量使用原始碼區塊、數學公式（MathJax / KaTeX）和圖解圖片。這些都會成為延遲頁面渲染的因素。
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/zh-tw/p/browser-rendering-mechanism-dom-paint/))**: 首屏主要內容的載入速度。主視覺圖片應使用 WebP 或 AVIF，並加上 `fetchpriority="high"` 屬性進行預載入。此外，用於語法標明的巨大 CSS 或 JS 應設計為非同步載入，或僅在需要的頁面載入。

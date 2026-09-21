@@ -16,7 +16,7 @@ tags:
 
 ## 1. Pendahuluan
 
-Dalam sejarah matematika, ada sosok yang dikenal sebagai "Bapak Aljabar". Sosok tersebut adalah **[Diophantus](https://kenji.blog/id/p/diophantus/)** ([Diophantus](https://kenji.blog/id/p/diophantus/) dari Alexandria), yang aktif di Alexandria kuno. Karya utamanya, *Arithmetica*, memiliki pengaruh besar pada matematikawan selanjutnya di dunia Islam dan matematikawan di Eropa zaman Renaisans. Khususnya, "[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)", yang ditulis [Pierre de Fermat](https://kenji.blog/id/p/fermat/) di pinggir halaman *Arithmetica*, sangatlah terkenal.
+Dalam sejarah matematika, ada sosok yang dikenal sebagai "Bapak Aljabar". Sosok tersebut adalah **[Diophantus](https://kenji.blog/id/p/diophantus/)** (Diophantus dari Alexandria), yang aktif di Alexandria kuno. Karya utamanya, *Arithmetica*, memiliki pengaruh besar pada matematikawan selanjutnya di dunia Islam dan matematikawan di Eropa zaman Renaisans. Khususnya, "Teorema Terakhir Fermat", yang ditulis [Pierre de Fermat](https://kenji.blog/id/p/fermat/) di pinggir halaman *Arithmetica*, sangatlah terkenal.
 
 Dalam artikel ini, kita akan menggali lebih dalam kehidupan [Diophantus](https://kenji.blog/id/p/diophantus/), pencapaian matematikanya, rincian mahakaryanya *Arithmetica*, dan "persamaan Diophantine" yang menyandang namanya. Selain itu, kita juga akan mengungkap misteri "batu nisan" (epitaph) miliknya, yang dari situ umur hidupnya dapat disimpulkan.
 
@@ -28,7 +28,7 @@ Hampir tidak ada catatan akurat yang tersisa mengenai kapan [Diophantus](https:/
 
 ### 2.2 Budaya Helenistik dan Alexandria
 
-Pada saat itu, Alexandria adalah pusat budaya dan pembelajaran Helenistik, membanggakan perpustakaan raksasa (Perpustakaan Alexandria) dan berfungsi sebagai pusat pengetahuan tempat banyak sarjana berkumpul. Di kota ini di mana pengetahuan dari Yunani, Mesir, Babilonia, dan bahkan India bersilangan, [Diophantus](https://kenji.blog/id/p/diophantus/) diperkirakan memiliki akses ke warisan matematika masa lalu yang luas. Berbeda dengan tradisi geometris yang dibangun oleh matematikawan besar Yunani seperti [Euclid](https://kenji.blog/id/p/euclid/), [Archimedes](https://kenji.blog/id/p/archimedes/), dan Apollonius, beberapa teori menunjukkan bahwa [Diophantus](https://kenji.blog/id/p/diophantus/) sangat dipengaruhi oleh pendekatan aljabar dari Babilonia.
+Pada saat itu, Alexandria adalah pusat budaya dan pembelajaran Helenistik, membanggakan perpustakaan raksasa (Perpustakaan Alexandria) dan berfungsi sebagai pusat pengetahuan tempat banyak sarjana berkumpul. Di kota ini di mana pengetahuan dari Yunani, Mesir, Babilonia, dan bahkan India bersilangan, [Diophantus](https://kenji.blog/id/p/diophantus/) diperkirakan memiliki akses ke warisan matematika masa lalu yang luas. Berbeda dengan tradisi geometris yang dibangun oleh matematikawan besar Yunani seperti Euclid, Archimedes, dan Apollonius, beberapa teori menunjukkan bahwa [Diophantus](https://kenji.blog/id/p/diophantus/) sangat dipengaruhi oleh pendekatan aljabar dari Babilonia.
 
 ```mermaid
 timeline
@@ -97,7 +97,7 @@ Di bagian pinggir di sebelah masalah ini, [Pierre de Fermat](https://kenji.blog/
 
 > "Tidak mungkin untuk memisahkan bilangan pangkat tiga menjadi dua bilangan pangkat tiga, atau pangkat empat menjadi dua bilangan pangkat empat, atau secara umum, setiap pangkat yang lebih tinggi dari pangkat dua, menjadi dua pangkat yang sama. Saya telah menemukan bukti yang benar-benar menakjubkan dari hal ini, yang mana pinggir halaman ini terlalu sempit untuk memuatnya."
 
-Ini adalah **[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)** yang terkenal (bahwa $x^n + y^n = z^n \ (n \ge 3)$ tidak memiliki solusi bilangan bulat positif). Teorema ini terus menolak tantangan matematikawan jenius di seluruh dunia selama sekitar 350 tahun setelah diajukan, sampai akhirnya dibuktikan oleh [Andrew Wiles](https://kenji.blog/id/p/wiles/) pada tahun 1995. Tanpa buku [Diophantus](https://kenji.blog/id/p/diophantus/), drama besar ini mungkin tidak akan pernah terjadi.
+Ini adalah **[Teorema Terakhir Fermat](https://kenji.blog/id/p/fermats-last-theorem/)** yang terkenal (bahwa $x^n + y^n = z^n \ (n \ge 3)$ tidak memiliki solusi bilangan bulat positif). Teorema ini terus menolak tantangan matematikawan jenius di seluruh dunia selama sekitar 350 tahun setelah diajukan, sampai akhirnya dibuktikan oleh Andrew Wiles pada tahun 1995. Tanpa buku [Diophantus](https://kenji.blog/id/p/diophantus/), drama besar ini mungkin tidak akan pernah terjadi.
 
 ```mermaid
 graph TD
@@ -176,9 +176,9 @@ Karya-karya [Diophantus](https://kenji.blog/id/p/diophantus/) sempat hilang di d
 
 Secara khusus, matematikawan di Bagdad pada abad ke-9 menerjemahkan *Arithmetica* ke dalam bahasa Arab, yang sangat berkontribusi pada perkembangan aljabar Islam. Matematikawan Islam seperti Al-Karaji mengadopsi dan mengembangkan metode [Diophantus](https://kenji.blog/id/p/diophantus/) lebih lanjut.
 
-Pada abad ke-16, ketika karya klasik Yunani ditemukan kembali di Eropa zaman Renaisans, *Arithmetica* diterjemahkan ke dalam bahasa Latin. Edisi dwibahasa Yunani dan Latin yang diterbitkan oleh [Claude Gaspard Bachet](https://kenji.blog/id/p/bachet/) de Méziriac pada tahun 1621 dibaca secara luas. Edisi [Bachet](https://kenji.blog/id/p/bachet/) dari *Arithmetica* inilah yang dipelajari [Fermat](https://kenji.blog/id/p/fermat/) dengan saksama, yang memicu terbukanya pintu baru dalam matematika.
+Pada abad ke-16, ketika karya klasik Yunani ditemukan kembali di Eropa zaman Renaisans, *Arithmetica* diterjemahkan ke dalam bahasa Latin. Edisi dwibahasa Yunani dan Latin yang diterbitkan oleh [Claude Gaspard Bachet](https://kenji.blog/id/p/bachet/) de Méziriac pada tahun 1621 dibaca secara luas. Edisi Bachet dari *Arithmetica* inilah yang dipelajari [Fermat](https://kenji.blog/id/p/fermat/) dengan saksama, yang memicu terbukanya pintu baru dalam matematika.
 
-Teori persamaan Diophantine kemudian dipelajari secara mendalam oleh para raksasa seperti [Leonhard Euler](https://kenji.blog/id/p/euler/), [Joseph-Louis Lagrange](https://kenji.blog/id/p/lagrange/), dan [Carl Friedrich Gauss](https://kenji.blog/id/p/gauss/). Penelitian mereka berkembang menjadi bidang matematika modern yang luas, yaitu "teori bilangan aljabar" dan "geometri aljabar". Masalah ke-10 dari 23 masalah [Hilbert](https://kenji.blog/id/p/hilbert/) adalah "menemukan algoritma umum untuk menentukan apakah persamaan Diophantine tertentu dapat diselesaikan", dan pada tahun 1970 Yuri Matiyasevich membuktikan bahwa "algoritma semacam itu tidak ada". Nama [Diophantus](https://kenji.blog/id/p/diophantus/) terukir dalam-dalam di garda terdepan matematika modern.
+Teori persamaan Diophantine kemudian dipelajari secara mendalam oleh para raksasa seperti [Leonhard Euler](https://kenji.blog/id/p/euler/), Joseph-Louis Lagrange, dan Carl Friedrich Gauss. Penelitian mereka berkembang menjadi bidang matematika modern yang luas, yaitu "teori bilangan aljabar" dan "geometri aljabar". Masalah ke-10 dari 23 masalah Hilbert adalah "menemukan algoritma umum untuk menentukan apakah persamaan Diophantine tertentu dapat diselesaikan", dan pada tahun 1970 Yuri Matiyasevich membuktikan bahwa "algoritma semacam itu tidak ada". Nama [Diophantus](https://kenji.blog/id/p/diophantus/) terukir dalam-dalam di garda terdepan matematika modern.
 
 ## 7. Kesimpulan
 

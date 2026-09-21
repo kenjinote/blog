@@ -23,7 +23,7 @@ tags = ["質數", "數論", "未解決問題"]
 - $(29, 31)$
 - $(41, 43)$
 
-根據[質數定理（[Prime Number Theorem](https://kenji.blog/zh-tw/p/prime-number-theorem/)）](https://kenji.blog/p/prime-number-theorem/)，我們知道隨著數字變大，質數本身的出現頻率會逐漸降低。隨之而來的是，孿生質數的出現頻率也會減少。然而，無論數字變得多大，這些「差為2的質數對」是否會無窮無盡地出現呢？數學家們自古以來便如此推測。
+根據[質數定理（Prime Number Theorem）](https://kenji.blog/p/prime-number-theorem/)，我們知道隨著數字變大，質數本身的出現頻率會逐漸降低。隨之而來的是，孿生質數的出現頻率也會減少。然而，無論數字變得多大，這些「差為2的質數對」是否會無窮無盡地出現呢？數學家們自古以來便如此推測。
 
 這就是 **孿生質數猜想** 。
 

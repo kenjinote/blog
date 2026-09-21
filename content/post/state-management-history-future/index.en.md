@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 These libraries abstracted away the complex process of "caching server state locally and synchronizing it as needed."
 As a result, the data that needed to be managed in a global store like [Redux](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/) dropped drastically to "purely client state only," significantly reducing the burden of state management.
 
-## 8. Atomic [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Management: [Recoil](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/) and [Jotai](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/)
+## 8. Atomic [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Management: Recoil and [Jotai](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/)
 
 After Server State was separated out, a new race began over how to efficiently manage the remaining Client State.
 Born to solve React's rendering model (top-down) and the [Context API](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/)'s performance issues was an approach called **Atomic [State Management](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/)**.

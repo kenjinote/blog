@@ -17,7 +17,7 @@ tags:
 
 ## はじめに
 
-数学の歴史において、19世紀は解析学や代数学が近代的な形へと発展した重要な時期でした。その中心にいた人物の一人が、フランスの数学者 **ジョゼフ・[リューヴィル](https://kenji.blog/p/liouville/)** （Joseph [Liouville](https://kenji.blog/p/liouville/), 1809–1882）です。彼は複素解析における基本的な定理を確立し、人類で初めて「超越数」の存在を具体的に証明しました。また、[エヴァリスト・ガロア](https://kenji.blog/p/galois/)の難解な遺稿を解読し、世に送り出した恩人としても知られています。本記事では、[リューヴィル](https://kenji.blog/p/liouville/)の波乱に満ちた生涯と、彼が残した数々の **数学的業績** について深く掘り下げます。
+数学の歴史において、19世紀は解析学や代数学が近代的な形へと発展した重要な時期でした。その中心にいた人物の一人が、フランスの数学者 **ジョゼフ・[リューヴィル](https://kenji.blog/p/liouville/)** （Joseph Liouville, 1809–1882）です。彼は複素解析における基本的な定理を確立し、人類で初めて「超越数」の存在を具体的に証明しました。また、エヴァリスト・ガロアの難解な遺稿を解読し、世に送り出した恩人としても知られています。本記事では、[リューヴィル](https://kenji.blog/p/liouville/)の波乱に満ちた生涯と、彼が残した数々の **数学的業績** について深く掘り下げます。
 
 ## 生い立ちと教育
 
@@ -27,9 +27,9 @@ tags:
 
 ## [ガロア](https://kenji.blog/p/galois/)の遺稿の救済
 
-[リューヴィル](https://kenji.blog/p/liouville/)の名前を語る上で欠かせないのが、若き天才 **[エヴァリスト・ガロア](https://kenji.blog/p/galois/)** （[Évariste Galois](https://kenji.blog/p/galois/)）の遺稿を救ったエピソードです。[ガロア](https://kenji.blog/p/galois/)は20歳という若さで決闘により命を落としましたが、死の直前に友人のオーギュスト・シュヴァリエに自身の数学的発見を託していました。
+[リューヴィル](https://kenji.blog/p/liouville/)の名前を語る上で欠かせないのが、若き天才 **エヴァリスト・ガロア** （Évariste Galois）の遺稿を救ったエピソードです。[ガロア](https://kenji.blog/p/galois/)は20歳という若さで決闘により命を落としましたが、死の直前に友人のオーギュスト・シュヴァリエに自身の数学的発見を託していました。
 
-長らく理解されずに放置されていた[ガロア](https://kenji.blog/p/galois/)の理論に光を当てたのが、[リューヴィル](https://kenji.blog/p/liouville/)でした。彼は1843年に[ガロア](https://kenji.blog/p/galois/)の論文を深く研究し、それが代数方程式の可解性に関する極めて重要な発見であることを理解しました。1846年、[リューヴィル](https://kenji.blog/p/liouville/)は自身が創刊した学術誌『純粋・応用数学雑誌』（Journal de Mathématiques Pures et Appliquées）に[ガロア](https://kenji.blog/p/galois/)の論文を掲載し、世界に発表しました。
+長らく理解されずに放置されていた[ガロア](https://kenji.blog/p/galois/)の理論に光を当てたのが、リューヴィルでした。彼は1843年にガロアの論文を深く研究し、それが代数方程式の可解性に関する極めて重要な発見であることを理解しました。1846年、リューヴィルは自身が創刊した学術誌『純粋・応用数学雑誌』（Journal de Mathématiques Pures et Appliquées）に[ガロア](https://kenji.blog/p/galois/)の論文を掲載し、世界に発表しました。
 
 ```mermaid
 flowchart TD

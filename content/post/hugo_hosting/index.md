@@ -82,7 +82,7 @@ $$ L_{new} = 10 + (1 - 0.95) \times 200 = 10 + 0.05 \times 200 = 10 + 10 = 20 \t
 
 ---
 
-## 4. [GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を用いた[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の構築
+## 4. [GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を用いたCI/CD[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の構築
 
 Hugoブログの更新プロセスを自動化するために、GitHub Actionsを利用したCI/CDパイプラインを構築します。これにより、ローカルでMarkdown記事を書いて `git push` するだけで、自動的にビルドが走り、Cloudflare PagesやGitHub Pagesにデプロイされるようになります。
 
@@ -240,7 +240,7 @@ Hugoでの実装も非常に簡単です。`layouts/partials/head.html` や `lay
 {{ end }}
 ```
 
-`defer` 属性を付与することで、HTMLのパースをブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)せずにスクリプトを非同期に読み込み、DOM構築後に実行させることができます。これにより、初期表示速度（[LCP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/): Largest Contentful [Paint](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/) や FCP: First Contentful Paint）への影響を最小限に抑えられます。
+`defer` 属性を付与することで、HTMLのパースをブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)せずにスクリプトを非同期に読み込み、DOM構築後に実行させることができます。これにより、初期表示速度（LCP: Largest Contentful [Paint](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/) や FCP: First Contentful Paint）への影響を最小限に抑えられます。
 
 ---
 
@@ -248,7 +248,7 @@ Hugoでの実装も非常に簡単です。`layouts/partials/head.html` や `lay
 
 Hugoを用いた静的サイトの運用において、Cloudflare PagesやGitHub Pagesといったモダンなホスティングプラットフォームを採用することは、コストパフォーマンス、表示速度、セキュリティのすべての面で圧倒的なメリットがあります。
 
-1. **爆速のビルド**: Hugoの高速性を活かし、[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)（[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)）の実行時間を最小化する。
+1. **爆速のビルド**: Hugoの高速性を活かし、[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)パイプライン（[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)）の実行時間を最小化する。
 2. **エッジでの配信**: Cloudflareのエッジネットワークを利用し、世界中のユーザーへミリ秒単位の遅延でコンテンツを届ける。
 3. **適切なDNS構成**: CNAME Flatteningを活用してZone Apex（独自ドメイン）を安全かつ高速に運用する。
 4. **キャッシュ戦略の最適化**: `_headers` を用いて、ブラウザキャッシュとエッジキャッシュをリソースの種類ごとに適切に分離する。

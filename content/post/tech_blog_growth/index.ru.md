@@ -24,7 +24,7 @@ description: 'Стратегии максимизации трафика тех�
 
 ### 1.1 Оптимизация Core [Web Vitals](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-Google использует Page Experience как фактор ранжирования, и в частности **[Core Web Vitals](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** не стоит игнорировать даже в технических блогах.
+Google использует Page Experience как фактор ранжирования, и в частности **[Core Web Vitals](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (LCP, FID/INP, [CLS](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** не стоит игнорировать даже в технических блогах.
 В технических блогах часто используется множество блоков исходного кода, математических формул (MathJax / KaTeX) и иллюстраций. Они могут стать причиной задержки рендеринга страницы.
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/))**: Скорость загрузки основного контента на первом экране. Для главного изображения используйте форматы WebP или AVIF и предзагружайте его с атрибутом `fetchpriority="high"`. Огромные CSS и JS для подсветки синтаксиса должны загружаться асинхронно или только на тех страницах, где они действительно нужны.

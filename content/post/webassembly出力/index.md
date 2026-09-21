@@ -11,13 +11,13 @@ tags: ["C++", "Rust", "Wasm", "JavaScript"]
 
 ## 1. はじめに
 
-モダンなWeb開発において、JavaScript（およびTypeScript）は長らくブラウザ上で動作する唯一の[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)としての地位を確立してきました。しかし、近年ではブラウザ上でより高度な計算、例えば画像処理や動画のエンコード、3Dゲーム、物理シミュレーションなどをブラウザ単体で実行する需要が高まっています。そこで登場したのが **[WebAssembly](https://kenji.blog/p/webassembly-wasm-current-future/) (通称 [Wasm](https://kenji.blog/p/webassembly-wasm-current-future/))** です。
+モダンなWeb開発において、JavaScript（およびTypeScript）は長らくブラウザ上で動作する唯一の[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)としての地位を確立してきました。しかし、近年ではブラウザ上でより高度な計算、例えば画像処理や動画のエンコード、3Dゲーム、物理シミュレーションなどをブラウザ単体で実行する需要が高まっています。そこで登場したのが **WebAssembly (通称 [Wasm](https://kenji.blog/p/webassembly-wasm-current-future/))** です。
 
-本記事では、WebAssemblyの基礎から始まり、C++（Emscriptenを使用）および[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)（`wasm-pack`を使用）という二つの強力なシステム[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)から[Wasm](https://kenji.blog/p/webassembly-wasm-current-future/)を出力し、JavaScript環境と連携させるための詳細な手順と内部構造を解説します。さらに、メモリ境界の管理、文字列や配列などの複雑なデータの受け渡し方、パフォーマンスにおけるオーバーヘッド、そしてWasmのバイナリフォーマット（`.wasm`）に至るまで、徹底的に深掘りしていきます。
+本記事では、WebAssemblyの基礎から始まり、C++（Emscriptenを使用）および[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)（`wasm-pack`を使用）という二つの強力なシステムプログラミング言語から[Wasm](https://kenji.blog/p/webassembly-wasm-current-future/)を出力し、JavaScript環境と連携させるための詳細な手順と内部構造を解説します。さらに、メモリ境界の管理、文字列や配列などの複雑なデータの受け渡し方、パフォーマンスにおけるオーバーヘッド、そしてWasmのバイナリフォーマット（`.wasm`）に至るまで、徹底的に深掘りしていきます。
 
 ## 2. [WebAssembly](https://kenji.blog/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/p/webassembly-wasm-current-future/)) の概要とアーキテクチャ
 
-WebAssemblyは、[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ベースの仮想マシン用のバイナリ命令フォーマットです。C/C++、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)、[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)、Zigなどの言語からコンパイル可能な「ポータブルなコンパイルターゲット」として設計されており、Webブラウザ上でネイティブに近い速度で実行することを目的としています。
+WebAssemblyは、[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ベースの仮想マシン用のバイナリ命令フォーマットです。C/C++、Rust、[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)、Zigなどの言語からコンパイル可能な「ポータブルなコンパイルターゲット」として設計されており、Webブラウザ上でネイティブに近い速度で実行することを目的としています。
 
 以下の図は、C++と[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)からWebAssemblyが生成され、ブラウザ内で実行されるまでの大まかなツールチェインの流れを示しています。
 
@@ -139,7 +139,7 @@ Module.onRuntimeInitialized = () => {
 
 ## 5. [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)と`wasm-pack`によるアプローチ
 
-[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)は[WebAssembly](https://kenji.blog/p/webassembly-wasm-current-future/)のファーストクラスサポートを提供しており、`wasm-bindgen` および `wasm-pack` ツールを使用することで、JavaScriptと[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の間での高度な連携が可能です。Emscriptenが「C/C++の巨大なランタイムをブラウザに持ち込む」アプローチであるのに対し、[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の `wasm-pack` は「必要最小限のバインディング（JSグルーコード）のみを生成する」アプローチをとります。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)はWebAssemblyのファーストクラスサポートを提供しており、`wasm-bindgen` および `wasm-pack` ツールを使用することで、JavaScriptとRustの間での高度な連携が可能です。Emscriptenが「C/C++の巨大なランタイムをブラウザに持ち込む」アプローチであるのに対し、[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の `wasm-pack` は「必要最小限のバインディング（JSグルーコード）のみを生成する」アプローチをとります。
 
 ### [Rust](https://kenji.blog/p/webassembly-wasm-current-future/) 実装コード
 
@@ -247,7 +247,7 @@ sequenceDiagram
 4. 計算後、ポインタから結果をJS側で読み取り、最後に `Module._free` を呼ぶ。
 
 **wasm-bindgen ([Rust](https://kenji.blog/p/webassembly-wasm-current-future/)) の場合**:
-上記の煩雑な[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)のフローを、自動生成されるグルーコード（JSラッパー）内に完全に隠蔽します。JS側から単なる `String` や `Array` を[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の関数に渡すと、裏側でバッファの確保（`malloc`相当）、コピー、[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)渡し、メモリ解放といった一連の処理が自動的に行われます。
+上記の煩雑な[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)のフローを、自動生成されるグルーコード（JSラッパー）内に完全に隠蔽します。JS側から単なる `String` や `Array` をRustの関数に渡すと、裏側でバッファの確保（`malloc`相当）、コピー、[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)渡し、メモリ解放といった一連の処理が自動的に行われます。
 
 ## 7. パフォーマンスのオーバーヘッドと最適化
 
@@ -304,7 +304,7 @@ graph TD
 
 ## 10. まとめ
 
-[WebAssembly](https://kenji.blog/p/webassembly-wasm-current-future/)は、ブラウザの中で計算量の多い処理を実行するための革新的な技術です。C++とEmscriptenを用いたフル[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)なポーティングアプローチと、[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)とwasm-bindgenを用いたJavaScriptと密結合するモジュラーなアプローチの双方には、それぞれの強みがあります。
+[WebAssembly](https://kenji.blog/p/webassembly-wasm-current-future/)は、ブラウザの中で計算量の多い処理を実行するための革新的な技術です。C++とEmscriptenを用いたフルスタックなポーティングアプローチと、[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)とwasm-bindgenを用いたJavaScriptと密結合するモジュラーなアプローチの双方には、それぞれの強みがあります。
 
 マンデルブロ集合のような計算において、[Wasm](https://kenji.blog/p/webassembly-wasm-current-future/)はJavaScript単体と比較して数倍から数十倍の速度向上が期待できます。ただし、WasmとJS間のメモリ境界の仕組みを正しく理解し、不要なメモリコピーを避ける設計を行わなければ、真のパフォーマンスを引き出すことはできません。
 

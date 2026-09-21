@@ -28,7 +28,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 Ollama는 로컬 환경에서 오픈소스 대규모 언어 모델(Llama 3, Phi-3, Mistral, Gemma 등)을 쉽게 실행하고 관리하기 위한 플랫폼입니다. 그동안 로컬 LLM 환경을 구축하기 위해서는 Python 환경 설정, CUDA 툴킷 설치, PyTorch 의존성 해결, Hugging Face로부터의 거대한 모델 파일 다운로드 및 포맷 변환(Safetensors에서 GGUF로 등)과 같은 매우 번거로운 절차가 필요했습니다.
 
-Ollama는 이러한 복잡성을 숨기고, [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)와 같은 사용 편의성으로 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 다룰 수 있게 해줍니다. 명령어 하나로 모델을 다운로드(`pull`)하고, 실행(`run`)하며, HTTP 서버로 구동할 수 있습니다.
+Ollama는 이러한 복잡성을 숨기고, [Docker](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)와 같은 사용 편의성으로 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 다룰 수 있게 해줍니다. 명령어 하나로 모델을 다운로드(`pull`)하고, 실행(`run`)하며, HTTP 서버로 구동할 수 있습니다.
 
 ## 핵심 기술: llama.cpp의 래퍼(Wrapper)
 
@@ -493,7 +493,7 @@ Python이나 셸 스크립트에 Ollama의 API 요청을 통합하여, 로그의
 
 ## 결론
 
-Ollama의 등장으로 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 도입 장벽은 극적으로 낮아졌습니다. [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 컨테이너를 조작하는 듯한 단순한 명령어 체계와 외부 애플리케이션에서 쉽게 이용할 수 있는 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)의 조합은 로컬 AI 개발에 있어 현재의 데팩토 스탠더드(사실상의 표준)라고 해도 과언이 아닙니다.
+Ollama의 등장으로 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 도입 장벽은 극적으로 낮아졌습니다. Docker-layers/) 컨테이너를 조작하는 듯한 단순한 명령어 체계와 외부 애플리케이션에서 쉽게 이용할 수 있는 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)의 조합은 로컬 AI 개발에 있어 현재의 데팩토 스탠더드(사실상의 표준)라고 해도 과언이 아닙니다.
 
 클라우드 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 비용이나 보안 제약으로 고민하고 있는 개발자라면, 꼭 본 기사에서 소개한 절차를 참고하여 Ollama를 이용한 로컬 LLM 환경을 구축하고 자신의 애플리케이션에 통합해 보시기 바랍니다. AI가 가진 가능성을 더욱 자유롭고 가깝게 느낄 수 있을 것입니다.
 

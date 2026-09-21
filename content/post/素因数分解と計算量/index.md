@@ -43,16 +43,16 @@ $$ \exists c > 0, \exists n_0 > 0 \text{ s.t. } \forall n \ge n_0, 0 \le f(n) \l
    入力サイズ $N$ がどれだけ大きくなっても、実行時間が変わらないアルゴリズムです。例えば、配列のインデックスを指定して値を取得する操作や、[ハッシュテーブル](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)での検索（理想的な場合）などが該当します。
 
 2. **$\mathcal{O}(\log N)$ : 対数時間（Logarithmic time）**
-   入力サイズが倍になっても、実行時間は定数しか増えない非常に効率の良いアルゴリズムです。[ソート](https://kenji.blog/p/sorting-algorithms/)済みの配列から目的の値を探す「[二分探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)（[Binary Search](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)）」が代表例です。データ量が10億であっても、わずか30回程度の比較で目的のデータを見つけることができます。
+   入力サイズが倍になっても、実行時間は定数しか増えない非常に効率の良いアルゴリズムです。[ソート](https://kenji.blog/p/sorting-algorithms/)済みの配列から目的の値を探す「二分探索（[Binary Search](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)）」が代表例です。データ量が10億であっても、わずか30回程度の比較で目的のデータを見つけることができます。
 
 3. **$\mathcal{O}(N)$ : 線形時間（Linear time）**
    入力サイズに比例して実行時間が増加します。データが10倍になれば時間も10倍になります。配列のすべての要素を順番に確認する「[線形探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)」などが該当します。
 
 4. **$\mathcal{O}(N \log N)$ : 準線形時間（Linearithmic time）**
-   $\mathcal{O}(N)$ よりも少しだけ遅いですが、効率的な部類に入ります。[マージ[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)（Merge Sort）や[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)（Quick Sortの平均計算量）など、実用的な高速[[ソート](https://kenji.blog/p/sorting-algorithms/)アルゴリズム](https://kenji.blog/p/sorting-algorithms/)の多くがこの計算量を持ちます。
+   $\mathcal{O}(N)$ よりも少しだけ遅いですが、効率的な部類に入ります。[マージソート](https://kenji.blog/p/sorting-algorithms/)（Merge Sort）やクイックソート（Quick Sortの平均計算量）など、実用的な高速[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms/)の多くがこの計算量を持ちます。
 
 5. **$\mathcal{O}(N^2)$ : 多項式時間 / 2乗時間（Quadratic time）**
-   入力サイズが2倍になると、実行時間は4倍に、10倍になれば100倍になります。二重ループを使った単純な処理や、[バブル[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)、[挿入[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)などが該当します。データ量が数万を超えると、処理に時間がかかるようになります。これら $\mathcal{O}(N^k)$ の形で表される計算量を総称して **多項式時間（Polynomial time）** と呼びます。
+   入力サイズが2倍になると、実行時間は4倍に、10倍になれば100倍になります。二重ループを使った単純な処理や、[バブルソート](https://kenji.blog/p/sorting-algorithms/)、[挿入ソート](https://kenji.blog/p/sorting-algorithms/)などが該当します。データ量が数万を超えると、処理に時間がかかるようになります。これら $\mathcal{O}(N^k)$ の形で表される計算量を総称して **多項式時間（Polynomial time）** と呼びます。
 
 6. **$\mathcal{O}(2^N)$ : 指数時間（Exponential time）**
    入力サイズが1増えるだけで実行時間が2倍になります。非常に効率が悪く、$N$ が40や50になるだけで、最先端のコンピュータでも現実的な時間で計算が終わらなくなります。[ナップサック問題](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)の全探索や、巡回セールスマン問題の単純な解法などが該当します。

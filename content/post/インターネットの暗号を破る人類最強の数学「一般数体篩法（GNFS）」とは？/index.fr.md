@@ -50,7 +50,7 @@ Avec seulement le nombre premier $p$ étant entré dans la pièce de $(X - Y)$, 
 * Contenu de $N$ = $p \times q$
   La seule partie commune est ** « $p$ » ** !
 
-En d'autres termes, au moment où le plus grand commun diviseur est calculé, le nombre premier caché $p$ est révélé et le chiffrement est complètement décodé. (*Le plus grand commun diviseur peut être calculé instantanément sur un smartphone en utilisant « l'Algorithme d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) »).
+En d'autres termes, au moment où le plus grand commun diviseur est calculé, le nombre premier caché $p$ est révélé et le chiffrement est complètement décodé. (*Le plus grand commun diviseur peut être calculé instantanément sur un smartphone en utilisant « l'Algorithme d'[Euclide](https://kenji.blog/p/euclid/) »).
 
 ** 【Petite Chronique : Pourquoi le carré ? Le cube ou le double ne fonctionnent-ils pas ?】 ** 
 > Avec « $2X - 2Y$ », cela devient $2(X - Y)$ et il n'y a qu'une seule pièce, vous ne pouvez donc pas séparer les nombres premiers. Avec « $X^3 - Y^3$ », la taille des pièces devient déséquilibrée et le calcul devient inutilement lourd. Pour séparer les nombres premiers en deux, le « carré » qui se divise parfaitement en deux pièces est le plus rentable.

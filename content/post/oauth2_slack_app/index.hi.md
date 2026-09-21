@@ -10,7 +10,7 @@ tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'Slack App एकीकरण के माध्यम से OAuth 2.0 के ऑथराइजेशन कोड ग्रांट फ्लो के काम करने के तरीके की विस्तृत व्याख्या और चित्र। यह एक संपूर्ण गाइड है जिसमें Node.js के विशिष्ट कोड उदाहरण और सुरक्षा की सर्वोत्तम प्रथाएं शामिल हैं।'
 ---
 
-# परिचय: [[OAuth](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) क्यों सीखें?
+# परिचय: [OAuth 2.0](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) क्यों सीखें?
 
 आधुनिक वेब अनुप्रयोगों में, कई सेवाओं का एक साथ काम करना आम बात हो गई है। उदाहरण के लिए, "Google खाते से लॉग इन करना", "Trello कार्य अपडेट होने पर Slack पर अधिसूचना भेजना", या "Google कैलेंडर में ज़ूम मीटिंग लिंक स्वचालित रूप से जोड़ना" जैसी सुविधाएँ। इन सभी के पीछे **OAuth 2.0 (Open [Authorization](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) 2.0)** नामक एक ऑथराइजेशन फ्रेमवर्क काम कर रहा है।
 
@@ -22,7 +22,7 @@ OAuth 2.0 को इस तरह के "पासवर्ड शेयरि�
 
 ---
 
-# 1. [[OAuth](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) की मूल अवधारणा: 4 भूमिकाएँ (Roles)
+# 1. [OAuth 2.0](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) की मूल अवधारणा: 4 भूमिकाएँ (Roles)
 
 OAuth 2.0 को समझने के लिए पहला कदम शामिल पात्रों (Roles) को सटीक रूप से समझना है। RFC 6749 में, निम्नलिखित 4 भूमिकाएँ परिभाषित की गई हैं।
 
@@ -291,7 +291,7 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 # 6. टोकन स्कोप और न्यूनतम विशेषाधिकार का सिद्धांत (Principle of Least Privilege)
 
-[[OAuth](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) में सबसे महत्वपूर्ण अवधारणाओं में से एक "स्कोप (Scope)" है। स्कोप एक्सेस टोकन से जुड़ी अनुमतियों की सीमा को संदर्भित करता है।
+[OAuth 2.0](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) में सबसे महत्वपूर्ण अवधारणाओं में से एक "स्कोप (Scope)" है। स्कोप एक्सेस टोकन से जुड़ी अनुमतियों की सीमा को संदर्भित करता है।
 
 Slack में अनुमतियों को बहुत ही बारीकी से वर्गीकृत किया गया है, और मोटे तौर पर दो प्रकार के होते हैं: **Bot Token Scopes** और **User Token Scopes** ।
 - `chat:write` (Bot): ऐप (बॉट) के रूप में स्वयं चैनल में संदेश पोस्ट करने की अनुमति।
@@ -305,7 +305,7 @@ Slack में अनुमतियों को बहुत ही बार
 
 # 7. अधिक उन्नत सुरक्षा: PKCE (Proof Key for Code Exchange)
 
-हाल ही में, **PKCE (Proof Key for Code Exchange, RFC 7636, जिसका उच्चारण "पिक्सी" है)** को [[OAuth](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) की सुरक्षा को और बढ़ाने के लिए एक तंत्र के रूप में मानकीकृत किया गया है और इसका व्यापक रूप से उपयोग किया जा रहा है।
+हाल ही में, **PKCE (Proof Key for Code Exchange, RFC 7636, जिसका उच्चारण "पिक्सी" है)** को [OAuth 2.0](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) की सुरक्षा को और बढ़ाने के लिए एक तंत्र के रूप में मानकीकृत किया गया है और इसका व्यापक रूप से उपयोग किया जा रहा है।
 
 मूल रूप से PKCE को नेटिव ऐप्स (iOS/Android) और SPA (Single Page Application) जैसे "सार्वजनिक क्लाइंट" के लिए डिज़ाइन किया गया था, जो `client_secret` को सुरक्षित रूप से सहेज नहीं सकते हैं। हालांकि, वर्तमान सुरक्षा सर्वोत्तम प्रथाओं ([OAuth](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) 2.1 ड्राफ्ट) में, PKCE के उपयोग की सर्वर-साइड "गोपनीय क्लाइंट" के लिए भी दृढ़ता से अनुशंसा की जाती है।
 
@@ -370,7 +370,7 @@ sequenceDiagram
 3. **`state` पैरामीटर ** के साथ [CSRF](https://kenji.blog/hi/p/web-security-basics-cors-csp/) रोकथाम और **PKCE** के साथ ऑथराइजेशन कोड इंटरसेप्ट हमलों की रोकथाम जैसे अंतर्निहित क्रिप्टोग्राफ़िक तंत्र को समझना सुरक्षित कार्यान्वयन के लिए एक शॉर्टकट है।
 4. **न्यूनतम विशेषाधिकार के सिद्धांत** के आधार पर स्कोप डिज़ाइन, और डेटाबेस में सहेजते समय एन्क्रिप्शन संचालन के लिए बिल्कुल आवश्यक तत्व हैं।
 
-[[OAuth](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) बहुत गहरा है, और केवल RFC में भारी मात्रा में विनिर्देश हैं, लेकिन वास्तविक प्लेटफॉर्म (Slack) को लक्षित करके और इसे हाथों-हाथ सीखकर, आपको इसकी परिष्कृत डिज़ाइन अवधारणाओं और मजबूत सुरक्षा तंत्र का अनुभव होना चाहिए। मुझे उम्मीद है कि इस लेख का ज्ञान भविष्य के एप्लिकेशन डेवलपमेंट और API एकीकरण के कार्यान्वयन में आपके लिए उपयोगी होगा।
+[OAuth 2.0](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) बहुत गहरा है, और केवल RFC में भारी मात्रा में विनिर्देश हैं, लेकिन वास्तविक प्लेटफॉर्म (Slack) को लक्षित करके और इसे हाथों-हाथ सीखकर, आपको इसकी परिष्कृत डिज़ाइन अवधारणाओं और मजबूत सुरक्षा तंत्र का अनुभव होना चाहिए। मुझे उम्मीद है कि इस लेख का ज्ञान भविष्य के एप्लिकेशन डेवलपमेंट और API एकीकरण के कार्यान्वयन में आपके लिए उपयोगी होगा।
 
 
 

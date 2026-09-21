@@ -247,7 +247,7 @@ flowchart TD
     B -->|"Sicherheitsüberprüfung / Berechtigungsprüfung"| C["Host-OS z.B. Linux, Windows"]
 ```
 
-## 7.2 Alternative zu und Koexistenz mit [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n
+## 7.2 Alternative zu und Koexistenz mit [Docker](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n
 Solomon Hykes, der Erfinder von Docker, sorgte für Aufsehen, als er sagte: "Wenn es 2008 bereits Wasm und WASI gegeben hätte, hätten wir Docker nicht entwickeln müssen."
 Wasm ist wesentlich leichtgewichtiger als Container, startet schneller (in Millisekunden) und hat den enormen Vorteil, unabhängig von Betriebssystem und CPU-Architektur zu sein.
 Derzeit werden Projekte wie Kwasm und Spin aktiv entwickelt, um Wasm-Module anstelle von Docker-Containern direkt auf [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/) zu orchestrieren.
@@ -260,7 +260,7 @@ Derzeit werden Projekte wie Kwasm und Spin aktiv entwickelt, um Wasm-Module anst
 Die größte Herausforderung für WebAssembly besteht derzeit darin, dass es schwierig ist, in verschiedenen Sprachen geschriebene Wasm-Module miteinander zu verknüpfen (da die Speicherdarstellung von Zeichenketten und komplexen Datentypen je nach Sprache variiert).
 
 Dieses Problem wird durch das **WebAssembly Component Model** gelöst.
-Wenn das Komponentenmodell realisiert wird, wird es beispielsweise möglich sein, Funktionsaufrufe nahtlos von einem "in Python geschriebenen Wasm-Modul" zu einem "in [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) geschriebenen Wasm-Modul" durchzuführen. Dies hat das Potenzial, die Grundlage für eine plattform- und sprachunabhängige [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur der nächsten Generation zu bilden.
+Wenn das Komponentenmodell realisiert wird, wird es beispielsweise möglich sein, Funktionsaufrufe nahtlos von einem "in Python geschriebenen Wasm-Modul" zu einem "in [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) geschriebenen Wasm-Modul" durchzuführen. Dies hat das Potenzial, die Grundlage für eine plattform- und sprachunabhängige [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur der nächsten Generation zu bilden.
 
 ## 8.2 Wasm als Plugin-System
 Bereits jetzt nutzen viele Softwareanwendungen wie Figma, EnvoyProxy und Microsoft Flight Simulator WebAssembly als ihr eigenes Plugin-System. Dies liegt daran, dass von Benutzern erstellter Code von Drittanbietern sicher und schnell innerhalb der Hauptanwendung ausgeführt werden kann.

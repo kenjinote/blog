@@ -174,7 +174,7 @@ sequenceDiagram
 
 基于以上的分析，我们提出程序员在AI时代生存的具体行动计划。
 
-1.  **彻底重新学习技术的“基础”**: 框架的使用方法交给AI即可。但是，对操作系统的机制、网络协议（[TCP](https://kenji.blog/zh-cn/p/http3-quic-protocol-tcp-udp/)/IP, [HTTP/3](https://kenji.blog/zh-cn/p/http3-quic-protocol-tcp-udp/)）、数据库的内部结构（[B-Tree](https://kenji.blog/zh-cn/p/b-tree-database-index-theory/), 事务隔离级别）、数据结构与算法的深刻理解是绝对必要的。为了判断AI的输出是否正确，坚实的计算机科学基础不可或缺。
+1.  **彻底重新学习技术的“基础”**: 框架的使用方法交给AI即可。但是，对操作系统的机制、网络协议（[TCP](https://kenji.blog/zh-cn/p/http3-quic-protocol-tcp-udp/)/IP, HTTP/3）、数据库的内部结构（[B-Tree](https://kenji.blog/zh-cn/p/b-tree-database-index-theory/), 事务隔离级别）、数据结构与算法的深刻理解是绝对必要的。为了判断AI的输出是否正确，坚实的计算机科学基础不可或缺。
 2.  **掌握云架构与分布式系统**: 不要将精力放在个别代码上，而应专注于如何组合AWS、GCP、Azure等云资源来构建可扩展的系统。理解[Terraform](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)等[IaC](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)（基础设施即代码）的概念，培养将整个系统作为代码进行设计的能力。
 3.  **成为业务领域的专家**: 深入学习自己所在行业的商业模式、法律法规以及用户的行为心理。要超越工程师的局限，具备接近产品经理（PM）的视角。
 4.  **磨炼沟通与引导的技能**: 解决人与人之间的“模糊性”并达成共识的过程，是AI无法替代的。与利益相关者对话，发现真正课题的软技能，将成为最有价值的技能。

@@ -132,7 +132,7 @@ Karena namanya yang dramatis, [Teorema Ketidaklengkapan Gödel](https://kenji.bl
 - **Kesalahpahaman 2: "Akal budi manusia memiliki batasan"**
   - **Fakta**: Batasan yang ditunjukkan oleh teorema ini adalah tentang "sistem (sistem formal) yang mengikuti aturan mekanis yang telah ditentukan sebelumnya". Dalam Teorema Ketidaklengkapan Pertama, kita bisa melihat bahwa proposisi $G$ adalah "benar" dari sudut pandang luar. Beberapa ahli (seperti Roger Penrose) menganggap ini sebagai bukti bahwa akal budi manusia memiliki kemampuan untuk memahami "makna (semantik)" yang melampaui sistem formal mekanis.
 - **Kesalahpahaman 3: "Ada hal yang tidak bisa dibuktikan apa pun itu"**
-  - **Fakta**: Teorema Ketidaklengkapan hanya berlaku pada sistem yang cukup kompleks, yang mencakup "penjumlahan dan perkalian bilangan asli (Aritmatika Peano)". Misalnya, "Geometri [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an" atau "Teori Orde Pertama dari Bilangan Real" sepenuhnya lengkap, dan semua proposisi yang benar di sana dapat dibuktikan. Ketidaklengkapan hanya terjadi ketika subjeknya memiliki struktur yang cukup kompleks (struktur yang memungkinkan referensi ke diri sendiri).
+  - **Fakta**: Teorema Ketidaklengkapan hanya berlaku pada sistem yang cukup kompleks, yang mencakup "penjumlahan dan perkalian bilangan asli (Aritmatika Peano)". Misalnya, "Geometri [Euclide](https://kenji.blog/p/euclid/)an" atau "Teori Orde Pertama dari Bilangan Real" sepenuhnya lengkap, dan semua proposisi yang benar di sana dapat dibuktikan. Ketidaklengkapan hanya terjadi ketika subjeknya memiliki struktur yang cukup kompleks (struktur yang memungkinkan referensi ke diri sendiri).
 
 ## 7. Tongkat Estafet ke Mesin Turing: Fajar Ilmu Komputer
 

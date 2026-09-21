@@ -301,7 +301,7 @@ jobs:
 जिन साइट संचालकों ने वर्डप्रेस से ह्यूगो में माइग्रेशन पूरा कर लिया है, वे अक्सर निम्नलिखित तीन उल्लेखनीय लाभों का अनुभव करते हैं।
 
 ### 6.1 साइट की गति और कोर वेब वाइटल्स (Core [Web Vitals](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) में नाटकीय सुधार
-डेटाबेस क्वेरीज़ और सर्वर-साइड रेंडरिंग को खत्म करने के परिणामस्वरूप, पेज लोड का समय मिलीसेकंड तक कम हो जाता है। यह सीधे Google के रैंकिंग कारकों, "[Core Web Vitals](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)" ([LCP](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) स्कोर में महत्वपूर्ण सुधार की ओर ले जाता है। आप उपयोगकर्ता बाउंस दर में कमी और SEO मूल्यांकन में सुधार की उम्मीद कर सकते हैं।
+डेटाबेस क्वेरीज़ और सर्वर-साइड रेंडरिंग को खत्म करने के परिणामस्वरूप, पेज लोड का समय मिलीसेकंड तक कम हो जाता है। यह सीधे Google के रैंकिंग कारकों, "[Core Web Vitals](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)" (LCP, FID/INP, [CLS](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) स्कोर में महत्वपूर्ण सुधार की ओर ले जाता है। आप उपयोगकर्ता बाउंस दर में कमी और SEO मूल्यांकन में सुधार की उम्मीद कर सकते हैं।
 
 ### 6.2 सुरक्षा खतरों से मुक्ति
 चूंकि वर्डप्रेस दुनिया भर में व्यापक रूप से उपयोग किया जाता है, इसलिए यह हमेशा हमलों का लक्ष्य बना रहता है। प्लगइन कमजोरियों और ब्रूट-फोर्स हमलों के माध्यम से अनधिकृत लॉगिन के माध्यम से छेड़छाड़ का हमेशा जोखिम रहता है।

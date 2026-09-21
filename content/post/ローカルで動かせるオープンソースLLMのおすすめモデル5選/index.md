@@ -12,7 +12,7 @@ description: 'プライバシーを保護しつつ、無料で利用できるロ
 
 # はじめに
 
-近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の技術進化は目覚ましく、ChatGPTやClaudeのようなクラウドベースのAIサービスが広く普及しています。しかし、その一方で、「自社の機密データを外部のサーバーに送信したくない」「APIの利用料金を抑えたい」「完全に[オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)で動作するAIシステムを構築したい」というニーズが急速に高まっています。
+近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（LLM）の技術進化は目覚ましく、ChatGPTやClaudeのようなクラウドベースのAIサービスが広く普及しています。しかし、その一方で、「自社の機密データを外部のサーバーに送信したくない」「APIの利用料金を抑えたい」「完全に[オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)で動作するAIシステムを構築したい」というニーズが急速に高まっています。
 
 この要求に応えるのが、自分のPCや社内サーバーに直接ダウンロードして実行できる「ローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（オープンソースLLM）」です。2023年頃まではローカルで実用的な精度を出すのは困難でしたが、モデルのアーキテクチャの進化や量子化（Quantization）技術の発展により、現在ではコンシューマー向けのGPU（NVIDIA RTX 3090 / 4090やMacのApple Siliconなど）でも、非常に高性能なLLMをサクサクと動かすことが可能になりました。
 

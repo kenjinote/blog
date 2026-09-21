@@ -10,7 +10,7 @@ tags: ["algorithm", "math", "python", "cpp", "gcd", "cryptography"]
 
 # O que é o Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/)?
 
-O **Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/)** ([Euclide](https://kenji.blog/pt/p/euclid/)an algorithm) é um método eficiente para calcular o máximo divisor comum (MDC) de dois números naturais (ou inteiros). Descrito por volta de 300 a.C. pelo antigo matemático grego [Euclides](https://kenji.blog/pt/p/euclid/) no Livro VII de seu tratado matemático "Elementos" (Elements), é amplamente conhecido como um dos "algoritmos mais antigos da humanidade".
+O **Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/)** (Euclidean algorithm) é um método eficiente para calcular o máximo divisor comum (MDC) de dois números naturais (ou inteiros). Descrito por volta de 300 a.C. pelo antigo matemático grego [Euclides](https://kenji.blog/pt/p/euclid/) no Livro VII de seu tratado matemático "Elementos" (Elements), é amplamente conhecido como um dos "algoritmos mais antigos da humanidade".
 
 A maneira mais ingênua de encontrar o MDC é encontrar a fatoração em primos de ambos os números e multiplicar os fatores primos comuns. No entanto, à medida que os números crescem, a complexidade computacional da própria fatoração em primos torna-se enorme, dificultando sua resolução em um período de tempo realista. Por outro lado, usando o **Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/)** , é possível calcular o MDC de forma extremamente rápida, mesmo para números enormes com milhares de dígitos.
 
@@ -109,7 +109,7 @@ int main() {
 
 ## Complexidade de Tempo e Teorema de [Lamé](https://kenji.blog/pt/p/lame/)
 
-Quão rápido é o algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/)? Em relação à sua complexidade computacional, o **Teorema de [Lamé](https://kenji.blog/pt/p/lame/)** ([Lamé](https://kenji.blog/pt/p/lame/)'s theorem), provado pelo matemático francês [Gabriel Lamé](https://kenji.blog/pt/p/lame/) em 1844, é bem conhecido.
+Quão rápido é o algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/)? Em relação à sua complexidade computacional, o **Teorema de Lamé** (Lamé's theorem), provado pelo matemático francês [Gabriel Lamé](https://kenji.blog/pt/p/lame/) em 1844, é bem conhecido.
 
 > **Teorema de [Lamé](https://kenji.blog/pt/p/lame/)**
 > O número de passos de divisão necessários para aplicar o algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) a dois números naturais $a, b$ ($a > b$) é no máximo $5$ vezes o número de dígitos na representação decimal de $b$ .

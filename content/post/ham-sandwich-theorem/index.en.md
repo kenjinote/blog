@@ -88,7 +88,7 @@ The general claim of the Borsuk-Ulam theorem is as follows:
 
 > For any continuous mapping $f: S^n \to \mathbb{R}^n$, there always exists a point $x \in S^n$ such that $f(x) = f(-x)$.
 
-Here, $S^n$ is the $n$-dimensional sphere in $(n+1)$-dimensional space (for example, $S^2$ is an ordinary sphere like the surface of the Earth we live on), and $\mathbb{R}^n$ is the $n$-dimensional [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an space. Also, $x$ and $-x$ refer to **antipodal points** on the sphere (points on opposite sides of a straight line passing through the center, like the North and South Poles on Earth, or Tokyo and off the coast of Brazil).
+Here, $S^n$ is the $n$-dimensional sphere in $(n+1)$-dimensional space (for example, $S^2$ is an ordinary sphere like the surface of the Earth we live on), and $\mathbb{R}^n$ is the $n$-dimensional [Euclide](https://kenji.blog/p/euclid/)an space. Also, $x$ and $-x$ refer to **antipodal points** on the sphere (points on opposite sides of a straight line passing through the center, like the North and South Poles on Earth, or Tokyo and off the coast of Brazil).
 
 If we interpret this theorem in the familiar case of $n=2$ ( $S^2 \to \mathbb{R}^2$ ), we can state the following interesting fact:
 

@@ -12,7 +12,7 @@ tags: ["Takakazu Seki", "Wasan", "Edo-Zeit", "Geschichte der Mathematik", "Analy
 
 In der Edo-Zeit in Japan gab es einen Mann, der die eigenständig entwickelte Mathematik namens „Wasan“ in beispiellose Höhen hob. Dieser Mann war **[Takakazu Seki](https://kenji.blog/de/p/seki-takakazu/)** (auch bekannt als Seki Kōwa, ca. 1640er - 1708). Er wurde später als „Mathematik-Weiser“ (Sansei) verehrt und gilt als eine der wichtigsten Persönlichkeiten in der Geschichte der japanischen Mathematik.
 
-Während in Europa [Isaac Newton](https://kenji.blog/de/p/newton/) und [Gottfried Leibniz](https://kenji.blog/de/p/leibniz/) zur selben Zeit die Infinitesimalrechnung etablierten, machte [Takakazu Seki](https://kenji.blog/de/p/seki-takakazu/) ebenfalls unabhängig davon äußerst fortschrittliche mathematische Entdeckungen. In diesem Artikel werden wir tiefer in die Episoden seines Lebens und seine mathematischen Errungenschaften von Weltklasse eintauchen, zusammen mit ihrem historischen Hintergrund.
+Während in Europa [Isaac Newton](https://kenji.blog/de/p/newton/) und Gottfried Leibniz zur selben Zeit die Infinitesimalrechnung etablierten, machte [Takakazu Seki](https://kenji.blog/de/p/seki-takakazu/) ebenfalls unabhängig davon äußerst fortschrittliche mathematische Entdeckungen. In diesem Artikel werden wir tiefer in die Episoden seines Lebens und seine mathematischen Errungenschaften von Weltklasse eintauchen, zusammen mit ihrem historischen Hintergrund.
 
 # 2. Die Anfänge von Wasan und der japanischen Mathematik vor Seki
 

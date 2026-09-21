@@ -13,7 +13,7 @@ tags:
   - "system-design"
 ---
 
-In der modernen Softwarearchitektur ist die Verteilung von Systemen zu einer unvermeidbaren Anforderung geworden. Mit der Verbreitung von Cloud Computing, der Einführung von [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen und dem steigenden Bedarf an Big-Data-Verarbeitung ist der Ansatz, auf viele kostengünstige Server (Scale-out) statt auf einen einzigen leistungsstarken Server (Scale-up) zu setzen, zum Mainstream geworden.
+In der modernen Softwarearchitektur ist die Verteilung von Systemen zu einer unvermeidbaren Anforderung geworden. Mit der Verbreitung von Cloud Computing, der Einführung von [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen und dem steigenden Bedarf an Big-Data-Verarbeitung ist der Ansatz, auf viele kostengünstige Server (Scale-out) statt auf einen einzigen leistungsstarken Server (Scale-up) zu setzen, zum Mainstream geworden.
 
 Beim Aufbau und Betrieb verteilter Systeme stehen Ingenieure jedoch stets vor einer schwierigen Entscheidung. Es ist der Kompromiss zwischen "Datenkonsistenz" und "Systemverfügbarkeit". Das **CAP-Theorem** (CAP theorem) hat dieses fundamentale Dilemma mathematisch bewiesen und formalisiert.
 
@@ -269,9 +269,9 @@ Die Sicherheit von [Raft](https://kenji.blog/de/p/byzantine-generals-problem-con
 2.  **Leader Append-Only**: Der Leader überschreibt oder löscht die Einträge in seinem eigenen Protokoll nicht, sondern fügt nur neue hinzu.
 3.  **Log Matching**: Wenn zwei Protokolle Einträge mit demselben Index und demselben Term enthalten, sind alle vorherigen Einträge identisch.
 
-Dies eliminiert mathematisch und algorithmisch Dateninkonsistenzen in einer verteilten Umgebung vollständig. Der Backend-Datenspeicher von [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/), `etcd`, verwendet ebenfalls [Raft](https://kenji.blog/de/p/byzantine-generals-problem-consensus/), um eine strikte [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sverwaltung des Clusters zu realisieren.
+Dies eliminiert mathematisch und algorithmisch Dateninkonsistenzen in einer verteilten Umgebung vollständig. Der Backend-Datenspeicher von [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/), `etcd`, verwendet ebenfalls Raft, um eine strikte [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sverwaltung des Clusters zu realisieren.
 
-## 8. [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/) und Transaktionen
+## 8. [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/) und Transaktionen
 
 Das CAP-Theorem beschränkt sich nicht nur auf einzelne Datenbanken, sondern hat auch tiefgreifende Auswirkungen auf die moderne **Microservices-Architektur**.
 
@@ -295,16 +295,16 @@ flowchart TD
     MessageBroker -->|"Stornieren"| Order
 ```
 
-Beim Saga-Muster wird die starke Konsistenz aufgegeben und die **Eventual [Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)** akzeptiert (AP-Ansatz). Wenn die Verarbeitung mittendrin fehlschlägt, wird anstelle eines Rollbacks eine **Kompensationstransaktion (Compensating [Transaction](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/))** ausgegeben, um eine Logik zur logischen Wiederherstellung des vorherigen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s zu implementieren. Dadurch wird eine geschäftlich akzeptable Konsistenz erreicht, während eine hohe Skalierbarkeit und Verfügbarkeit beibehalten werden.
+Beim Saga-Muster wird die starke Konsistenz aufgegeben und die **Eventual [Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/)** akzeptiert (AP-Ansatz). Wenn die Verarbeitung mittendrin fehlschlägt, wird anstelle eines Rollbacks eine **Kompensationstransaktion (Compensating Transaction)** ausgegeben, um eine Logik zur logischen Wiederherstellung des vorherigen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s zu implementieren. Dadurch wird eine geschäftlich akzeptable Konsistenz erreicht, während eine hohe Skalierbarkeit und Verfügbarkeit beibehalten werden.
 
 ## Zusammenfassung
 
 In diesem Artikel haben wir uns intensiv mit dem CAP-Theorem befasst, dem wichtigsten Prinzip in verteilten Systemen.
 
-*   Das **CAP-Theorem** besagt, dass es unmöglich ist, [Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/) (Konsistenz), [Availability](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/) (Verfügbarkeit) und [Partition Tolerance](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/) (Ausfalltoleranz / Partitionstoleranz) gleichzeitig in einem verteilten System zu erfüllen, und dass dies in der realen Welt, in der Partitionen (P) unvermeidbar sind, im Grunde auf eine Wahl zwischen **CP** und **AP** hinausläuft.
+*   Das **CAP-Theorem** besagt, dass es unmöglich ist, [Consistency](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/) (Konsistenz), Availability (Verfügbarkeit) und [Partition Tolerance](https://kenji.blog/de/p/cap-theorem-distributed-systems-tradeoff/) (Ausfalltoleranz / Partitionstoleranz) gleichzeitig in einem verteilten System zu erfüllen, und dass dies in der realen Welt, in der Partitionen (P) unvermeidbar sind, im Grunde auf eine Wahl zwischen **CP** und **AP** hinausläuft.
 *   Das **PACELC-Theorem** erweitert dies und zeigt, dass auch im Normalbetrieb ohne Partitionen ein Kompromiss zwischen Latenz (L) und Konsistenz (C) besteht.
 *   Durch die Verwendung von **Quorum** kann das Gleichgewicht zwischen Konsistenz und Verfügbarkeit ($ W+R>N $) je nach Bedarf flexibel angepasst werden.
 *   In AP-Systemen werden **Vektoruhren** (Vector Clocks) zur Konfliktlösung verwendet, während in CP-Systemen Konsensalgorithmen wie **[Raft](https://kenji.blog/de/p/byzantine-generals-problem-consensus/)** für die strikte Ordnung eingesetzt werden.
-*   Diese Konzepte sind nicht nur grundlegendes Wissen für Datenbanken, sondern auch unerlässlich für das Design verteilter Transaktionen (wie das Saga-Muster) in modernen **[[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen**.
+*   Diese Konzepte sind nicht nur grundlegendes Wissen für Datenbanken, sondern auch unerlässlich für das Design verteilter Transaktionen (wie das Saga-Muster) in modernen **[Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen**.
 
 Beim Systemdesign gibt es keine "Silver Bullet". Das CAP-Theorem und das PACELC-Theorem richtig zu verstehen, angemessen zu beurteilen, ob die Geschäftsanforderungen vorschreiben, dass "die Konsistenz um jeden Preis gewahrt bleiben muss (wie bei Zahlungen)" oder "das System niemals gestoppt werden darf, auch wenn vorübergehende Inkonsistenzen toleriert werden (wie bei einer SNS-Timeline)", und den optimalen Kompromiss zu wählen - das ist wohl die größte Fähigkeit, die von einem hervorragenden Architekten verlangt wird.

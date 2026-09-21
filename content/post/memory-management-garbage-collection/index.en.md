@@ -8,7 +8,7 @@ categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]
 ---
 
-# Welcome to the Truth of [Memory Management](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/): Unraveling the Abyss from C, [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)
+# Welcome to the Truth of [Memory Management](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/): Unraveling the Abyss from C, Java, and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)
 
 In software development, memory management is an eternal theme that cannot be avoided, and is one of the most important factors determining the performance and stability of a system. In this article, through an overwhelming deep dive comparable to a 20,000-character scale, we comprehensively cover everything from the basic theory of memory management to optimization techniques in modern architectures.
 
@@ -303,7 +303,7 @@ The effective average time $ T_{avg} $ of memory access is expressed as follows:
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 Here, $ h $ is the cache hit rate ($ 0 \le h \le 1 $), $ T_{cache} $ is the cache access time (about 1-4 ns), and $ T_{memory} $ is the main memory access time (about 100 ns).
-Whether you make $ h $ 0.99 (the C/[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) approach) or drop it to 0.5 ([Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)'s pointer chasing), creates a difference of tens of times in the loop execution speed of the application. This is the true reason why C++ and [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) are chosen for game engines and high-frequency trading systems.
+Whether you make $ h $ 0.99 (the C/[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) approach) or drop it to 0.5 (Java's pointer chasing), creates a difference of tens of times in the loop execution speed of the application. This is the true reason why C++ and [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) are chosen for game engines and high-frequency trading systems.
 
 ---
 

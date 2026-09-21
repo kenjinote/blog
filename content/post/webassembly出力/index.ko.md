@@ -139,7 +139,7 @@ Module.onRuntimeInitialized = () => {
 
 ## 5. [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)와 `wasm-pack`을 통한 접근법
 
-[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 [WebAssembly](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에 대한 일급 지원(first-class support)을 제공하며, `wasm-bindgen` 및 `wasm-pack` 도구를 사용함으로써 JavaScript와 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 간의 고도화된 연동이 가능합니다. Emscripten이 'C/C++의 거대한 런타임을 브라우저로 가져오는' 방식인 반면, [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)의 `wasm-pack`은 '필요 최소한의 바인딩(JS 글루 코드)만을 생성하는' 방식을 취합니다.
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 WebAssembly에 대한 일급 지원(first-class support)을 제공하며, `wasm-bindgen` 및 `wasm-pack` 도구를 사용함으로써 JavaScript와 Rust 간의 고도화된 연동이 가능합니다. Emscripten이 'C/C++의 거대한 런타임을 브라우저로 가져오는' 방식인 반면, [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)의 `wasm-pack`은 '필요 최소한의 바인딩(JS 글루 코드)만을 생성하는' 방식을 취합니다.
 
 ### [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 구현 코드
 

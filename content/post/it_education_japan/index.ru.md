@@ -134,7 +134,7 @@ int main() {
 - Проекция (Projection, $\pi$): Извлечение определенных атрибутов (столбцов).
 - Соединение (Join, $\bowtie$): Условное пересечение нескольких отношений.
 
-Кроме того, изучение структуры индекса «[B-Tree](https://kenji.blog/ru/p/b-tree-database-index-theory/) (B-дерево)» для мгновенного поиска нужных данных среди огромного количества записей является лучшей практикой применения структур данных. B-[Tree](https://kenji.blog/ru/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) минимизирует количество операций ввода-вывода (I/O) на диске и гарантирует скорость поиска $O(\log N)$. Невозможно создать надежную систему, не зная свойств [ACID](https://kenji.blog/ru/p/rdbms-transaction-acid-isolation-level-lock/) (Atomicity, [Consistency](https://kenji.blog/ru/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability) транзакций.
+Кроме того, изучение структуры индекса «[B-Tree](https://kenji.blog/ru/p/b-tree-database-index-theory/) (B-дерево)» для мгновенного поиска нужных данных среди огромного количества записей является лучшей практикой применения структур данных. B-Tree минимизирует количество операций ввода-вывода (I/O) на диске и гарантирует скорость поиска $O(\log N)$. Невозможно создать надежную систему, не зная свойств ACID (Atomicity, [Consistency](https://kenji.blog/ru/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability) транзакций.
 
 ## 6. Безопасность и теория криптографии: Сложность разложения на множители как опора социальной инфраструктуры
 

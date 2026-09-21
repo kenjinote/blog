@@ -287,7 +287,7 @@ git config --global core.autocrlf input
 - Установите галочку `General` -> `Use the WSL 2 based engine`.
 - Перейдите в `Resources` -> `WSL Integration` -> установите галочку на `Enable integration with my default WSL distro` и включите переключатель для используемого дистрибутива (Ubuntu).
 
-Теперь команду `docker` можно будет вызывать прямо из терминала WSL2, а связь с демоном [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) будет осуществляться через специальную легковесную ВМ (`docker-desktop` и `docker-desktop-data`), управляемую [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop.
+Теперь команду `docker` можно будет вызывать прямо из терминала WSL2, а связь с демоном [Docker](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/) будет осуществляться через специальную легковесную ВМ (`docker-desktop` и `docker-desktop-data`), управляемую [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop.
 
 ### Подход 2: Прямая установка нативного Docker Engine
 Если у вас есть корпоративные сетевые ограничения (например, чтобы избежать платы за Docker Desktop) или вы хотите минимизировать накладные расходы до предела, включите `systemd` в `/etc/wsl.conf` и установите [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) напрямую, как на обычном сервере Ubuntu.

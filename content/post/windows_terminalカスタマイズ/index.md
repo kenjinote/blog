@@ -24,7 +24,7 @@ description: 'Windows Terminalのカスタマイズ手法を極限まで深掘�
 
 # 1. Windows Terminalのレンダリングアーキテクチャと数理モデル
 
-Windows Terminalがこれほどまでに高速かつ滑らかに動作する背景には、Windowsのモダンな[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィックス[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を最大限に活用した洗練されたレンダリング[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)が存在します。従来のGDI（Graphics Device Interface）に代わり、Windows TerminalはDirectWriteとDirectX（Direct2D/Direct3D）を活用したGPUベースのハードウェアアクセラレーションを採用しています。
+Windows Terminalがこれほどまでに高速かつ滑らかに動作する背景には、Windowsのモダンな[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィックススタックを最大限に活用した洗練されたレンダリング[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)が存在します。従来のGDI（Graphics Device Interface）に代わり、Windows TerminalはDirectWriteとDirectX（Direct2D/Direct3D）を活用したGPUベースのハードウェアアクセラレーションを採用しています。
 
 以下に、キー入力から画面に文字が描画されるまでのターミナルレンダリングパイプラインの概念図を示します。
 
@@ -226,7 +226,7 @@ Windows Terminalは、tmuxやscreenのようなターミナルマルチプレク
 ]
 ```
 
-上記のキーバインドを設定することで、`Alt + Shift + 矢印` でペインサイズを調整し、`Alt + 矢印` でペイン間のフォーカスを瞬時に移動できます。これにより、1つのペインでNode.jsのローカルサーバーを起動してログを監視しつつ、別のペインでGitコマンドを実行し、さらに別のペインで[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)のステータスを確認するといった、高度な並行作業がシームレスに行えます。
+上記のキーバインドを設定することで、`Alt + Shift + 矢印` でペインサイズを調整し、`Alt + 矢印` でペイン間のフォーカスを瞬時に移動できます。これにより、1つのペインでNode.jsのローカルサーバーを起動してログを監視しつつ、別のペインでGitコマンドを実行し、さらに別のペインで[Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)のステータスを確認するといった、高度な並行作業がシームレスに行えます。
 
 ## 4.1 Quake Mode（グローバル・ドロップダウン・ターミナル）
 

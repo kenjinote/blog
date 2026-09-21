@@ -120,7 +120,7 @@ Wenn die Event Loop ein Ansatz ist, der die Grenzen von Single-Threading herausf
 
 ### 3.1 Grundkonzepte des Actor-Modells
 
-Im Actor-Modell wird die grundlegende Verarbeitungseinheit als "Actor" bezeichnet. Jeder Actor hat seinen eigenen unabhängigen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) und sein eigenes Verhalten (Behavior) und teilt seinen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) nicht direkt mit anderen Actors. Die Kommunikation zwischen Actors erfolgt vollständig durch **asynchrones Message Passing**.
+Im Actor-Modell wird die grundlegende Verarbeitungseinheit als "Actor" bezeichnet. Jeder Actor hat seinen eigenen unabhängigen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) (State) und sein eigenes Verhalten (Behavior) und teilt seinen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) nicht direkt mit anderen Actors. Die Kommunikation zwischen Actors erfolgt vollständig durch **asynchrones Message Passing**.
 
 - **Kapselung des Zustands**: Auf den internen Zustand eines Actors kann von außen nicht direkt zugegriffen werden.
 - **Nachrichtenwarteschlange (Mailbox)**: Eingehende Nachrichten werden in einer Mailbox in die Warteschlange gestellt und sequenziell verarbeitet.
@@ -213,9 +213,9 @@ Das Ownership- und Typsystem von [Rust](https://kenji.blog/de/p/webassembly-wasm
 
 ## 4. Auf in die Welt der [Event-Driven](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/) Architecture (EDA)
 
-Asynchrone Verarbeitung und das Actor-Modell sind Methoden zur Optimierung der parallelen Verarbeitung innerhalb einer einzelnen Anwendung. Das Konzept der Erweiterung auf das gesamte System (z. B. zwischen [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)) ist die **Event-Driven Architecture (EDA)**.
+Asynchrone Verarbeitung und das Actor-Modell sind Methoden zur Optimierung der parallelen Verarbeitung innerhalb einer einzelnen Anwendung. Das Konzept der Erweiterung auf das gesamte System (z. B. zwischen [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)) ist die **Event-Driven Architecture (EDA)**.
 
-In EDA werden [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sänderungen innerhalb des Systems als "Ereignisse" dargestellt und asynchron über einen Event-Bus oder Message-Broker (Apache [Kafka](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/), [RabbitMQ](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/), AWS EventBridge usw.) verteilt.
+In EDA werden [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sänderungen innerhalb des Systems als "Ereignisse" dargestellt und asynchron über einen Event-Bus oder Message-Broker (Apache Kafka, [RabbitMQ](https://kenji.blog/de/p/event-driven-architecture-message-queue-kafka-rabbitmq/), AWS EventBridge usw.) verteilt.
 
 ### 4.1 Hauptkomponenten von EDA
 

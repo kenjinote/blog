@@ -75,7 +75,7 @@ graph TD
 如果在單體架構中，只需透過記憶體內的函式呼叫即可完成的處理，將轉變為跨網路的通訊（HTTP/REST、gRPC 等）。這會產生 **網路延遲** ，並帶來系統整體回應速度下降的風險。此外，由於網路總是不穩定的，因此需要實作如超時控制、重試機制或斷路器（Circuit Breaker）等複雜的通訊控制。
 
 ### 3.2. 分散式交易與資料一致性
-由於每個服務擁有自己的資料庫，橫跨多個服務的資料更新（交易）會變得非常困難。無法使用傳統 [RDBMS](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) 提供的 [ACID](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) 交易，而必須被迫導入如 **Saga 模式** 或 **事件溯源（Event Sourcing）** 等允許最終一致性（Eventual [Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)）的複雜設計模式。
+由於每個服務擁有自己的資料庫，橫跨多個服務的資料更新（交易）會變得非常困難。無法使用傳統 [RDBMS](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) 提供的 ACID 交易，而必須被迫導入如 **Saga 模式** 或 **事件溯源（Event Sourcing）** 等允許最終一致性（Eventual [Consistency](https://kenji.blog/zh-tw/p/cap-theorem-distributed-systems-tradeoff/)）的複雜設計模式。
 
 ### 3.3. 來自客戶端存取的複雜化
 當存在數十、數百個服務時，要求客戶端（網頁瀏覽器或行動應用程式）掌握應呼叫哪個 API 端點並分別進行通訊，是不切實際的。此外，為了顯示一個畫面，可能需要對多個服務發送大量請求（Chatty API），這將導致效能惡化。

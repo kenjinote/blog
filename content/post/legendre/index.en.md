@@ -38,11 +38,11 @@ His life was greatly tossed about by the French Revolution, which broke out in 1
 
 ## 2. Immortal Contributions to the Mathematical World
 
-[Legendre](https://kenji.blog/en/p/legendre/)'s achievements span almost all fields of mathematics of his time, including number theory, algebra, analysis, and geometry. His research was often completed by other geniuses (such as Gauss, [Abel](https://kenji.blog/en/p/abel/), and [Jacobi](https://kenji.blog/en/p/jacobi/)), but without the foundations he built, their dramatic developments would not have been possible.
+[Legendre](https://kenji.blog/en/p/legendre/)'s achievements span almost all fields of mathematics of his time, including number theory, algebra, analysis, and geometry. His research was often completed by other geniuses (such as Gauss, Abel, and [Jacobi](https://kenji.blog/en/p/jacobi/)), but without the foundations he built, their dramatic developments would not have been possible.
 
 ### 2.1 Passion for Number Theory and the [Legendre](https://kenji.blog/en/p/legendre/) Symbol
 
-[Legendre](https://kenji.blog/en/p/legendre/) was deeply fascinated by number theory, pioneered by predecessors like [Pierre de Fermat](https://kenji.blog/en/p/fermat/) and [Leonhard Euler](https://kenji.blog/en/p/euler/). One of his greatest achievements is his work on the "Law of quadratic reciprocity." This law is one of the most beautiful and important theorems in number theory for determining whether a prime number is congruent to a square modulo another prime number.
+[Legendre](https://kenji.blog/en/p/legendre/) was deeply fascinated by number theory, pioneered by predecessors like Pierre de Fermat and [Leonhard Euler](https://kenji.blog/en/p/euler/). One of his greatest achievements is his work on the "Law of quadratic reciprocity." This law is one of the most beautiful and important theorems in number theory for determining whether a prime number is congruent to a square modulo another prime number.
 
 He formulated this law and gave a partial proof (a complete proof was later provided by the young Gauss). Furthermore, to express this research concisely and elegantly, he introduced a notation known today as the **[Legendre](https://kenji.blog/en/p/legendre/) symbol**.
 
@@ -65,7 +65,7 @@ $$
 F(\phi, k) = \int_0^\phi \frac{d\theta}{\sqrt{1 - k^2 \sin^2 \theta}}
 $$
 
-His classification, including the incomplete elliptic integral of the first kind as shown above, became the standard in subsequent mathematics. Shortly after he completed a monumental work culminating this field, the young geniuses [Abel](https://kenji.blog/en/p/abel/) and [Jacobi](https://kenji.blog/en/p/jacobi/) introduced an entirely new perspective called "elliptic functions" (the inverse functions of elliptic integrals), completely rewriting the field. Although [Legendre](https://kenji.blog/en/p/legendre/) was shocked that his decades of research had become outdated, he honestly recognized their young talent and passionately praised them—an episode that demonstrates his sincere attitude as a scholar.
+His classification, including the incomplete elliptic integral of the first kind as shown above, became the standard in subsequent mathematics. Shortly after he completed a monumental work culminating this field, the young geniuses [Abel](https://kenji.blog/en/p/abel/) and Jacobi introduced an entirely new perspective called "elliptic functions" (the inverse functions of elliptic integrals), completely rewriting the field. Although [Legendre](https://kenji.blog/en/p/legendre/) was shocked that his decades of research had become outdated, he honestly recognized their young talent and passionately praised them—an episode that demonstrates his sincere attitude as a scholar.
 
 Additionally, in physics and engineering, especially electromagnetism and quantum mechanics, the **[Legendre](https://kenji.blog/en/p/legendre/) polynomials** invariably appear when solving Laplace's equation in spherical coordinates. These are a system of orthogonal polynomials obtained as solutions to the following differential equation ([Legendre](https://kenji.blog/en/p/legendre/)'s differential equation).
 
@@ -79,7 +79,7 @@ These polynomials have become an indispensable tool in all kinds of calculations
 
 Alongside his research activities, [Legendre](https://kenji.blog/en/p/legendre/) was also an outstanding educator. His book "Éléments de géométrie" (Elements of Geometry), published in 1794, reorganized [Euclid](https://kenji.blog/en/p/euclid/)'s "Elements" to be more accessible and rigorous for students of his time.
 
-This textbook achieved phenomenal success, being translated into English and other languages and read worldwide, not just in France. It was widely adopted in the United States and remained the absolute standard for geometry education throughout the 19th century. In this book, he continuously attempted to prove the parallel postulate ([Euclid](https://kenji.blog/en/p/euclid/)'s fifth postulate), adding new proofs with each edition, though ultimately they all proved to be flawed. However, his persistence became one of the important driving forces prompting the birth of non-[[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an geometry.
+This textbook achieved phenomenal success, being translated into English and other languages and read worldwide, not just in France. It was widely adopted in the United States and remained the absolute standard for geometry education throughout the 19th century. In this book, he continuously attempted to prove the parallel postulate ([Euclid](https://kenji.blog/en/p/euclid/)'s fifth postulate), adding new proofs with each edition, though ultimately they all proved to be flawed. However, his persistence became one of the important driving forces prompting the birth of non-[Euclide](https://kenji.blog/p/euclid/)an geometry.
 
 ### 2.4 Challenge to the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/)
 
@@ -95,7 +95,7 @@ It was later revealed that Gauss had also made a similar conjecture using the lo
 
 ## 3. Feud with Gauss: The Tragedy Over the Discovery of Least Squares
 
-In discussing [Legendre](https://kenji.blog/en/p/legendre/)'s life, one cannot avoid the fierce priority dispute, especially concerning the **[Method of Least Squares](https://kenji.blog/en/p/method-of-least-squares/)**, with [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/), the "Prince of Mathematics" from Germany.
+In discussing [Legendre](https://kenji.blog/en/p/legendre/)'s life, one cannot avoid the fierce priority dispute, especially concerning the **Method of Least Squares**, with [Carl Friedrich Gauss](https://kenji.blog/en/p/gauss/), the "Prince of Mathematics" from Germany.
 
 In 1805, in his book on calculating the orbits of comets, [Legendre](https://kenji.blog/en/p/legendre/) publicly announced the "[Method of Least Squares](https://kenji.blog/en/p/method-of-least-squares/)" for the first time in the world—a method to find the most probable value by minimizing the errors of observation data. This was a revolutionary technique that forms the foundation of every field dealing with data, from astronomy and geodesy to modern statistics and machine learning.
 
@@ -108,9 +108,9 @@ flowchart LR
 
 However, four years later in 1809, Gauss extensively used the method of least squares in his own book on celestial mechanics, claiming, "I have been using this method routinely since 1795." From historical evidence, Gauss's claim is considered to have been true, but the academic priority of publication undoubtedly belonged to [Legendre](https://kenji.blog/en/p/legendre/).
 
-Gauss's behavior deeply wounded [Legendre](https://kenji.blog/en/p/legendre/)'s pride. [Legendre](https://kenji.blog/en/p/legendre/) sent a letter to Gauss demanding he acknowledge his prior publication, but Gauss maintained a cold attitude. In the appendix of his own work, [Legendre](https://kenji.blog/en/p/legendre/) explicitly expressed his intense anger towards Gauss, stating that "a certain person is claiming another's discovery as his own."
+Gauss's behavior deeply wounded [Legendre](https://kenji.blog/en/p/legendre/)'s pride. Legendre sent a letter to Gauss demanding he acknowledge his prior publication, but Gauss maintained a cold attitude. In the appendix of his own work, [Legendre](https://kenji.blog/en/p/legendre/) explicitly expressed his intense anger towards Gauss, stating that "a certain person is claiming another's discovery as his own."
 
-Furthermore, regarding the prime number theorem ([Legendre](https://kenji.blog/en/p/legendre/)'s conjecture of $ \pi(x) \approx \frac{x}{\ln x - 1.08366} $) and the law of quadratic reciprocity, even though [Legendre](https://kenji.blog/en/p/legendre/) had discovered and formulated them first, Gauss completely proved and generalized them deeper, causing all public praise to focus on Gauss. For [Legendre](https://kenji.blog/en/p/legendre/), Gauss was too high a wall who snatched away all his achievements, becoming his lifelong nemesis.
+Furthermore, regarding the prime number theorem ([Legendre](https://kenji.blog/en/p/legendre/)'s conjecture of $ \pi(x) \approx \frac{x}{\ln x - 1.08366} $) and the law of quadratic reciprocity, even though Legendre had discovered and formulated them first, Gauss completely proved and generalized them deeper, causing all public praise to focus on Gauss. For [Legendre](https://kenji.blog/en/p/legendre/), Gauss was too high a wall who snatched away all his achievements, becoming his lifelong nemesis.
 
 ## 4. The Portrait Mystery: A Great Misunderstanding of 200 Years
 
@@ -125,7 +125,7 @@ A grand historical misunderstanding was created because they shared the same sur
 So, what did the real mathematician [Legendre](https://kenji.blog/en/p/legendre/) look like?
 After this truth was discovered, historians desperately sought genuine portraits. Finally, in 2008, a contemporary caricature (satirical drawing) depicting him was discovered in the French National Archives.
 
-There, instead of the stern profile of the politician Louis [Legendre](https://kenji.blog/en/p/legendre/), was the figure of a plump, warm, slightly disgruntled-looking elderly man. His human side—exhausted from arguments with Gauss yet praising the talents of the young [Abel](https://kenji.blog/en/p/abel/) and [Jacobi](https://kenji.blog/en/p/jacobi/)—is vividly conveyed from that watercolor painting. Today, this caricature is recognized as his only authentic portrait.
+There, instead of the stern profile of the politician Louis [Legendre](https://kenji.blog/en/p/legendre/), was the figure of a plump, warm, slightly disgruntled-looking elderly man. His human side—exhausted from arguments with Gauss yet praising the talents of the young Abel and [Jacobi](https://kenji.blog/en/p/jacobi/)—is vividly conveyed from that watercolor painting. Today, this caricature is recognized as his only authentic portrait.
 
 ## 5. Conclusion
 

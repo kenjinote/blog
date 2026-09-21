@@ -20,7 +20,7 @@ tags: ["費馬", "數學史", "費馬最後定理", "數論", "機率論"]
 
 在當時的法國，法官被鼓勵避免過度擴大社交圈，以防止政治和社會衝突。諷刺的是，這種孤立的環境恰恰為費馬提供了他所需要的安靜時間，驅使他走向數學的深淵。對他來說，數學是一種純粹的樂趣，將他從沉重的職務壓力中解放出來，而不是任何人強加給他的東西。
 
-費馬不喜歡將他的研究作為正式論文發表；他滿足於在筆記本或書的空白處記下他的想法和證明，或者透過當時充當學術中心的巴黎修道士[馬蘭·梅森](https://kenji.blog/zh-tw/p/mersenne/)（[Marin Mersenne](https://kenji.blog/zh-tw/p/mersenne/)）與其他學者交流信件。他喜歡把自己的發現作為 **「問題」** 提交給其他數學家，挑釁地要求他們給出解答。眾所周知，他還與[勒內·笛卡兒](https://kenji.blog/zh-tw/p/descartes/)（[René Descartes](https://kenji.blog/zh-tw/p/descartes/)）和[約翰·沃利斯](https://kenji.blog/zh-tw/p/wallis/)（[John Wallis](https://kenji.blog/zh-tw/p/wallis/)）等偉大的數學家進行過激烈的辯論。
+費馬不喜歡將他的研究作為正式論文發表；他滿足於在筆記本或書的空白處記下他的想法和證明，或者透過當時充當學術中心的巴黎修道士[馬蘭·梅森](https://kenji.blog/zh-tw/p/mersenne/)（Marin Mersenne）與其他學者交流信件。他喜歡把自己的發現作為 **「問題」** 提交給其他數學家，挑釁地要求他們給出解答。眾所周知，他還與勒內·笛卡兒（René Descartes）和約翰·沃利斯（[John Wallis](https://kenji.blog/zh-tw/p/wallis/)）等偉大的數學家進行過激烈的辯論。
 
 ```mermaid
 flowchart TD
@@ -64,7 +64,7 @@ $$
 
 費馬還思考了生成質數的數學公式。他猜想所有形式為 $F_n = 2^{2^n} + 1$ 的數字都是質數。事實上，當 $n=0, 1, 2, 3, 4$ 時，結果分別為 $3, 5, 17, 257, 65537$，這些全部都是質數。這些被稱為 **費馬質數**。
 
-然而，萊昂哈德·歐拉（[Leonhard Euler](https://kenji.blog/zh-tw/p/euler/)）後來證明，當 $n=5$ 時，$2^{32} + 1 = 4294967297 = 641 \times 6700417$，從而反駁了費馬的猜想本身。儘管如此，[卡爾·弗里德里希·高斯](https://kenji.blog/zh-tw/p/gauss/)（[Carl Friedrich Gauss](https://kenji.blog/zh-tw/p/gauss/)）後來證明，這些費馬質數與「用圓規和直尺可作正 $n$ 邊形的條件」密切相關，在後世幾何學和代數學的融合中發揮了極其重要的作用。
+然而，萊昂哈德·歐拉（[Leonhard Euler](https://kenji.blog/zh-tw/p/euler/)）後來證明，當 $n=5$ 時，$2^{32} + 1 = 4294967297 = 641 \times 6700417$，從而反駁了費馬的猜想本身。儘管如此，卡爾·弗里德里希·高斯（[Carl Friedrich Gauss](https://kenji.blog/zh-tw/p/gauss/)）後來證明，這些費馬質數與「用圓規和直尺可作正 $n$ 邊形的條件」密切相關，在後世幾何學和代數學的融合中發揮了極其重要的作用。
 
 ## 3. 無限遞降法：費馬的利劍
 
@@ -91,7 +91,7 @@ $$
 
 ## 5. 對微積分和物理學的先驅性貢獻
 
-在[艾薩克·牛頓](https://kenji.blog/zh-tw/p/newton/)（[Isaac Newton](https://kenji.blog/zh-tw/p/newton/)）和戈特弗里德·萊布尼茲（[Gottfried Leibniz](https://kenji.blog/zh-tw/p/leibniz/)）建立微積分的幾十年前，費馬就已經設計出了他自己求曲線切線和求函數最大值與最小值的方法。
+在[艾薩克·牛頓](https://kenji.blog/zh-tw/p/newton/)（Isaac Newton）和戈特弗里德·萊布尼茲（[Gottfried Leibniz](https://kenji.blog/zh-tw/p/leibniz/)）建立微積分的幾十年前，費馬就已經設計出了他自己求曲線切線和求函數最大值與最小值的方法。
 
 他引入了一個叫做 **「準等式」**（Adequality）的概念。這是一種在極小量 $E$ 變化時，將數值視為「幾乎相等」的技術，並在計算的最後階段將 $E$ 視為 $0$ 來求極值。這本質上就是現代微分的思想，牛頓本人後來也說：「我從費馬畫切線的方法中得到了這種方法的啟發。」如果沒有費馬，微積分的完成可能會進一步推遲。
 
@@ -123,7 +123,7 @@ $$
 
 在它被提出後的 350 多年裡，這個問題作為「數學界最大的未解之謎」一直未被任何人解開。在 20 世紀下半葉，當許多人開始懷疑「費馬實際上並沒有證明它（或者犯了一個錯誤）」時，一位數學家終於終結了這個可怕的難題。
 
-那就是英國數學家[安德魯·懷爾斯](https://kenji.blog/zh-tw/p/wiles/)（[Andrew Wiles](https://kenji.blog/zh-tw/p/wiles/)）。他在 10 歲時在當地圖書館偶然發現了這個問題，便發誓要傾盡畢生精力去解決它。他採取了費馬時代無法想像的宏大方法，將由日本數學家[谷山豐](https://kenji.blog/zh-tw/p/taniyama-yutaka/)和[志村五郎](https://kenji.blog/zh-tw/p/shimura-goro/)提出的「所有橢圓曲線都是模形式的」 **谷山-志村猜想**，與肯·里貝特（Ken Ribet）關於弗雷曲線的研究（epsilon 猜想）結合起來。
+那就是英國數學家[安德魯·懷爾斯](https://kenji.blog/zh-tw/p/wiles/)（Andrew Wiles）。他在 10 歲時在當地圖書館偶然發現了這個問題，便發誓要傾盡畢生精力去解決它。他採取了費馬時代無法想像的宏大方法，將由日本數學家谷山豐和[志村五郎](https://kenji.blog/zh-tw/p/shimura-goro/)提出的「所有橢圓曲線都是模形式的」 **谷山-志村猜想**，與肯·里貝特（Ken Ribet）關於弗雷曲線的研究（epsilon 猜想）結合起來。
 
 懷爾斯將自己關在閣樓裡，經過七年孤獨的研究，於 1995 年發表了完整的證明。他的證明是長達數百頁的現代數學集大成之作，與費馬可能設想的 17 世紀數學方法（「真正絕妙的證明」）截然不同。
 

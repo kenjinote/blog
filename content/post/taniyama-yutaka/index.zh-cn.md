@@ -8,7 +8,7 @@ categories: ["mathematics", "biography"]
 tags: ["谷山丰", "数学", "费马大定理", "谷山-志村猜想", "椭圆曲线", "模形式"]
 ---
 
-# [[谷山丰](https://kenji.blog/zh-cn/p/taniyama-yutaka/)：挑战未解决问题的天才数学家之一生与成就](https://kenji.blog/p/taniyama-yutaka/)
+# [谷山丰：挑战未解决问题的天才数学家之一生与成就](https://kenji.blog/p/taniyama-yutaka/)
 
 现代数学中最具戏剧性且最重要的进展之一，便是“[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)”的证明。在这一伟大成就的背后，存在着由两位日本数学家提出的惊人猜想。其中之一便是英年早逝的 **[谷山丰](https://kenji.blog/zh-cn/p/taniyama-yutaka/)** （1927年 - 1958年）。在本文中，我们将深入探讨他所提出的“谷山-志村猜想”蕴含着多么宏大的愿景，以及他本人波折跌宕的一生。
 
@@ -101,7 +101,7 @@ flowchart TD
 
 ## 7. 猜想的证明与朗兰兹纲领
 
-对这一事实感到最振奋的，莫过于英国数学家 **[安德鲁·怀尔斯](https://kenji.blog/zh-cn/p/wiles/)** 。他从小就对[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)着迷，并决心将其作为一生的追求。经过七年秘密的潜心研究，他于1993年宣布“证明了半稳定椭圆曲线的谷山-志村猜想”。尽管证明中后来发现了一个漏洞，但在他昔日学生理查德·泰勒（Richard Taylor）的帮助下，怀尔斯在1995年成功填补了漏洞，并发表了完整的证明论文。至此，谷山留下的猜想中至关重要的部分得到了证明，[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)也随之成为了永恒的真理。
+对这一事实感到最振奋的，莫过于英国数学家 **[安德鲁·怀尔斯](https://kenji.blog/zh-cn/p/wiles/)** 。他从小就对费马大定理着迷，并决心将其作为一生的追求。经过七年秘密的潜心研究，他于1993年宣布“证明了半稳定椭圆曲线的谷山-志村猜想”。尽管证明中后来发现了一个漏洞，但在他昔日学生理查德·泰勒（Richard Taylor）的帮助下，怀尔斯在1995年成功填补了漏洞，并发表了完整的证明论文。至此，谷山留下的猜想中至关重要的部分得到了证明，[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)也随之成为了永恒的真理。
 
 随后，通过克里斯托夫·布勒伊（Christophe Breuil）、布莱恩·康拉德（Brian Conrad）、弗雷德·戴蒙德（Fred Diamond）和理查德·泰勒等人的进一步努力，在2001年，对于所有椭圆曲线的谷山-志村猜想被完全证明。今天，这个定理被称为“模块性定理（Modularity Theorem）”。
 

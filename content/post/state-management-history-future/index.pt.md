@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 Essas bibliotecas abstraíram o complexo processo de "armazenar em cache os estados do servidor localmente e sincronizá-los sob demanda".
 Como resultado, os dados que deveriam ser gerenciados em uma loja global como o [Redux](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/) caíram drasticamente para "apenas estados puramente do cliente", o que reduziu muito o fardo do gerenciamento de estado.
 
-## 8. Atomic [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) Management: [Recoil](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/) e [Jotai](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/)
+## 8. Atomic [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) Management: Recoil e [Jotai](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/)
 
 Após a separação do Server State, começou uma nova corrida sobre como gerenciar eficientemente o Client State remanescente.
 Foi a abordagem de **Gerenciamento de Estado Atômico (Atomic [State Management](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/))** que nasceu para resolver o modelo de renderização do React (top-down) e os problemas de desempenho da [Context API](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/).
@@ -444,7 +444,7 @@ O estado renderizado pelo servidor é serializado e incorporado no HTML, e o cli
 
 ## 13. Conclusão: Para onde está indo o gerenciamento de estado?
 
-Começando com a confusão do MVC, conquistamos previsibilidade através de [Flux](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/), a simplificação pelos Hooks, a separação do Server [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/), eficiência via Atômica e Proxies, e finalmente, a Reatividade de Grão Fino por Signals.
+Começando com a confusão do MVC, conquistamos previsibilidade através de [Flux](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/)/Redux, a simplificação pelos Hooks, a separação do Server [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/), eficiência via Atômica e Proxies, e finalmente, a Reatividade de Grão Fino por Signals.
 
 Refletindo sobre cerca de 15 anos de história no gerenciamento de estado de frontends, uma tendência clara surge. Que é: **"Evoluir para reduzir o código boilerplate e reduzir a carga cognitiva dos desenvolvedores, enquanto os sistemas nos bastidores (frameworks e compiladores) otimizam o desempenho automaticamente"**.
 

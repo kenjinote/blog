@@ -10,7 +10,7 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 The history of programming language evolution is also a history of battles against complexity. As software grows in scale, developers hit walls related to state management, performance, and maintainability, leading to the proposal of various **programming paradigms** to overcome them.
 
-In this article, we will take a deep dive into the philosophy, strengths, and **limitations** of **[Object-Oriented](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/) Programming** ([OOP](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/)), which is mainstream in modern software development, **[Functional Programming](https://kenji.blog/en/p/functional-programming-concepts-pure-functions-monads/)** (FP) with its mathematical robustness, and **Data-Oriented Programming** (DOP / DOD), which focuses on performance and the separation of data. Furthermore, we will explain how powerful modern languages (like [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) and TypeScript) are **fusing** these paradigms.
+In this article, we will take a deep dive into the philosophy, strengths, and **limitations** of **[Object-Oriented](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/) Programming** (OOP), which is mainstream in modern software development, **Functional Programming** (FP) with its mathematical robustness, and **Data-Oriented Programming** (DOP / DOD), which focuses on performance and the separation of data. Furthermore, we will explain how powerful modern languages (like [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) and TypeScript) are **fusing** these paradigms.
 
 ---
 

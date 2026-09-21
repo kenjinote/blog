@@ -313,7 +313,7 @@ expiryDate: "2026-12-31T23:59:59Z"
 
 ## 7. 사이트 성능과 Core [Web Vitals](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-SEO에 있어 태그의 최적화만큼이나 중요한 것이 **페이지의 로딩 속도** 입니다. Google은 [Core Web Vitals](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)([LCP](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))를 랭킹 요인으로 포함시키고 있습니다.
+SEO에 있어 태그의 최적화만큼이나 중요한 것이 **페이지의 로딩 속도** 입니다. Google은 [Core Web Vitals](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)(LCP, FID/INP, [CLS](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))를 랭킹 요인으로 포함시키고 있습니다.
 
 정적 사이트인 Hugo는 원래 TTFB(Time to First Byte)가 뛰어나지만, 이미지를 많이 사용하는 블로그에서는 이미지의 최적화가 필수적입니다. Hugo의 강력한 이미지 처리 기능(Image Processing)을 프론트매터와 조합하여 사용함으로써, Next-gen 포맷(WebP 등)으로의 변환이나 리사이징을 빌드 시에 자동화할 수 있습니다.
 

@@ -16,7 +16,7 @@ Este artigo fornece uma explicação detalhada da vida e das notáveis conquista
 
 ## 2. Início de Vida e Carreira
 
-[William Brouncker](https://kenji.blog/pt/p/brouncker/) (1620 - 5 de abril de 1684) nasceu como o filho mais velho de [William Brouncker](https://kenji.blog/pt/p/brouncker/), 1º Visconde [Brouncker](https://kenji.blog/pt/p/brouncker/), e Winifred Leigh. Embora haja muitos detalhes desconhecidos sobre seu local de nascimento exato e educação infantil, acredita-se que ele tenha estudado na Universidade de Oxford, cultivando excelentes habilidades no idioma e um senso matemático. Em 1645, após a morte de seu pai, ele se tornou o 2º Visconde [Brouncker](https://kenji.blog/pt/p/brouncker/).
+[William Brouncker](https://kenji.blog/pt/p/brouncker/) (1620 - 5 de abril de 1684) nasceu como o filho mais velho de William Brouncker, 1º Visconde Brouncker, e Winifred Leigh. Embora haja muitos detalhes desconhecidos sobre seu local de nascimento exato e educação infantil, acredita-se que ele tenha estudado na Universidade de Oxford, cultivando excelentes habilidades no idioma e um senso matemático. Em 1645, após a morte de seu pai, ele se tornou o 2º Visconde [Brouncker](https://kenji.blog/pt/p/brouncker/).
 
 Na época, a Inglaterra estava no período caótico da Revolução Puritana (Guerra Civil Inglesa), mas [Brouncker](https://kenji.blog/pt/p/brouncker/) se dedicou mais ao mundo acadêmico do que ao palco político. Ele tinha um interesse particularmente forte em matemática e música, começando a construir suas próprias teorias. Em 1647, ele recebeu o título de Doutor em Medicina pela Universidade de Oxford, mas seu principal interesse sempre permaneceu nas ciências exatas. Seu irmão mais novo, Henry [Brouncker](https://kenji.blog/pt/p/brouncker/), também era conhecido por atuar no mundo político e cortês, mantendo o interesse por xadrez e matemática.
 
@@ -50,7 +50,7 @@ $$
 \frac{\pi}{2} = \frac{2}{1} \cdot \frac{2}{3} \cdot \frac{4}{3} \cdot \frac{4}{5} \cdot \frac{6}{5} \cdot \frac{6}{7} \cdot \frac{8}{7} \cdots
 $$
 
-[Wallis](https://kenji.blog/pt/p/wallis/) mostrou esse resultado a [Brouncker](https://kenji.blog/pt/p/brouncker/) e perguntou se ele poderia ser expresso de forma diferente. Em resposta, [Brouncker](https://kenji.blog/pt/p/brouncker/), usando manipulação algébrica e um conceito inteligente de limites, transformou magistralmente esta equação em uma fração contínua. Esta é a seguinte **Fórmula de [Brouncker](https://kenji.blog/pt/p/brouncker/)**:
+[Wallis](https://kenji.blog/pt/p/wallis/) mostrou esse resultado a Brouncker e perguntou se ele poderia ser expresso de forma diferente. Em resposta, Brouncker, usando manipulação algébrica e um conceito inteligente de limites, transformou magistralmente esta equação em uma fração contínua. Esta é a seguinte **Fórmula de [Brouncker](https://kenji.blog/pt/p/brouncker/)**:
 
 $$
 \frac{4}{\pi} = 1 + \frac{1^2}{2 + \frac{3^2}{2 + \frac{5^2}{2 + \frac{7^2}{2 + \ddots}}}}
@@ -76,7 +76,7 @@ Em 1657, o grande matemático francês [Pierre de Fermat](https://kenji.blog/pt/
 
 ### O Algoritmo de [Brouncker](https://kenji.blog/pt/p/brouncker/)
 
-Foram [Wallis](https://kenji.blog/pt/p/wallis/) e [Brouncker](https://kenji.blog/pt/p/brouncker/) que enfrentaram este desafio. [Brouncker](https://kenji.blog/pt/p/brouncker/), em particular, desenvolveu um método virtualmente equivalente ao algoritmo conhecido hoje como o "método das frações contínuas", estabelecendo um procedimento para encontrar a solução inteira positiva mínima para a equação para qualquer número não-quadrado $n$.
+Foram [Wallis](https://kenji.blog/pt/p/wallis/) e Brouncker que enfrentaram este desafio. [Brouncker](https://kenji.blog/pt/p/brouncker/), em particular, desenvolveu um método virtualmente equivalente ao algoritmo conhecido hoje como o "método das frações contínuas", estabelecendo um procedimento para encontrar a solução inteira positiva mínima para a equação para qualquer número não-quadrado $n$.
 
 ```mermaid
 sequenceDiagram
@@ -98,7 +98,7 @@ $$
 x = 1766319049, \quad y = 226153980
 $$
 
-[Brouncker](https://kenji.blog/pt/p/brouncker/) demonstrou que mesmo soluções tão gigantescas poderiam ser derivadas sistematicamente usando seu método. Ironicamente, devido a um mal-entendido de [Leonhard Euler](https://kenji.blog/pt/p/euler/), esta equação foi mais tarde batizada com o nome do matemático inglês John Pell, mas a maior contribuição para estabelecer o método de solução pertence inegavelmente a [Brouncker](https://kenji.blog/pt/p/brouncker/).
+[Brouncker](https://kenji.blog/pt/p/brouncker/) demonstrou que mesmo soluções tão gigantescas poderiam ser derivadas sistematicamente usando seu método. Ironicamente, devido a um mal-entendido de Leonhard Euler, esta equação foi mais tarde batizada com o nome do matemático inglês John Pell, mas a maior contribuição para estabelecer o método de solução pertence inegavelmente a [Brouncker](https://kenji.blog/pt/p/brouncker/).
 
 ## 6. Outras Conquistas e Anos Posteriores
 

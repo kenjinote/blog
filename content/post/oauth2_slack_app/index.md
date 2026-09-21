@@ -10,7 +10,7 @@ tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'OAuth 2.0の認可コードグラントフローの仕組みを、Slack Appの連携実装を通じて詳細に図解・解説します。Node.jsでの具体的なコード例やセキュリティのベストプラクティスも網羅した完全ガイドです。'
 ---
 
-# はじめに：なぜ[[OAuth](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)を学ぶのか？
+# はじめに：なぜ[OAuth 2.0](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)を学ぶのか？
 
 現代のWebアプリケーションにおいて、複数のサービスが連携して動作することはもはや当たり前の光景となりました。例えば、「Googleアカウントでログインする」「Trelloのタスクが更新されたらSlackに通知を送る」「ZoomのミーティングリンクをGoogleカレンダーに自動追加する」といった機能です。これらすべての裏側で活躍しているのが **OAuth 2.0 (Open [Authorization](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/) 2.0)** という[認可](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)フレームワークです。
 
@@ -22,7 +22,7 @@ OAuth 2.0は、このような「パスワードの共有」を回避しつつ�
 
 ---
 
-# 1. [[OAuth](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)の基本概念：4つの役割（Roles）
+# 1. [OAuth 2.0](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)の基本概念：4つの役割（Roles）
 
 OAuth 2.0を理解するための第一歩は、登場人物（Role）を正確に把握することです。RFC 6749 では、以下の4つの役割が定義されています。
 
@@ -291,7 +291,7 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 # 6. トークンスコープと最小権限の原則 (Principle of Least Privilege)
 
-[[OAuth](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)において最も重要な概念の一つが「スコープ（Scope）」です。スコープとは、アクセストークンに紐付けられた権限の範囲を指します。
+[OAuth 2.0](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)において最も重要な概念の一つが「スコープ（Scope）」です。スコープとは、アクセストークンに紐付けられた権限の範囲を指します。
 
 Slackでは権限が非常に細かく分類されており、大きく分けて **Bot Token Scopes** と **User Token Scopes** が存在します。
 - `chat:write` (Bot): アプリ（ボット）自身としてチャンネルにメッセージを投稿する権限。
@@ -305,7 +305,7 @@ Slackでは権限が非常に細かく分類されており、大きく分けて
 
 # 7. より高度なセキュリティ：PKCE (Proof Key for Code Exchange)
 
-昨今、[[OAuth](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)のセキュリティをさらに強化する仕組みとして **PKCE (Proof Key for Code Exchange, RFC 7636, "ピクシー"と発音)** が標準化され、広く利用されるようになっています。
+昨今、[OAuth 2.0](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)のセキュリティをさらに強化する仕組みとして **PKCE (Proof Key for Code Exchange, RFC 7636, "ピクシー"と発音)** が標準化され、広く利用されるようになっています。
 
 元々PKCEは、ネイティブアプリ（iOS/Android）やSPA（Single Page Application）など、`client_secret` を安全に保存できない「パブリッククライアント」のために設計されたものでした。しかし現在では、セキュリティのベストプラクティス（[OAuth](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/) 2.1ドラフト）において、サーバーサイドの「コンフィデンシャルクライアント」であってもPKCEの使用が強く推奨されています。
 
@@ -370,7 +370,7 @@ sequenceDiagram
 3. **`state` パラメータ ** による[CSRF](https://kenji.blog/p/web-security-basics-cors-csp/)防御や、**PKCE** による[認可](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)コードインターセプト攻撃の防止など、背景にある暗号学的なメカニズムを理解することがセキュアな実装への近道です。
 4. **最小権限の原則** に基づくスコープ設計と、DB保存時の[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)は運用上絶対に欠かせない要素です。
 
-[[OAuth](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)は非常に奥が深く、RFCだけでも膨大な仕様が存在しますが、このように実際のプラットフォーム（Slack）をターゲットにして手を動かしながら学ぶことで、その洗練された設計思想と堅牢なセキュリティの仕組みを実感できるはずです。今後のアプリケーション開発やAPI連携の実装において、本記事の知識が役立てば幸いです。
+[OAuth 2.0](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)は非常に奥が深く、RFCだけでも膨大な仕様が存在しますが、このように実際のプラットフォーム（Slack）をターゲットにして手を動かしながら学ぶことで、その洗練された設計思想と堅牢なセキュリティの仕組みを実感できるはずです。今後のアプリケーション開発やAPI連携の実装において、本記事の知識が役立てば幸いです。
 
 
 

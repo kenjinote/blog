@@ -11,13 +11,13 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 # 1. Introdução: O Mistério Cósmico dos Números Primos e a Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/)
 
-Os "Números Primos" (Prime Numbers) são números naturais divisíveis apenas por 1 e por si mesmos, sendo frequentemente chamados de "átomos" do mundo da matemática. Essa sequência que segue como 2, 3, 5, 7, 11, 13... parece, à primeira vista, desordenada e aleatória. Desde que o matemático grego antigo [[[Euclid](https://kenji.blog/pt/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) provou que "os números primos são infinitos", incontáveis matemáticos têm tentado desvendar os padrões ocultos nessa disposição de primos.
+Os "Números Primos" (Prime Numbers) são números naturais divisíveis apenas por 1 e por si mesmos, sendo frequentemente chamados de "átomos" do mundo da matemática. Essa sequência que segue como 2, 3, 5, 7, 11, 13... parece, à primeira vista, desordenada e aleatória. Desde que o matemático grego antigo [Euclides](https://kenji.blog/p/euclid/) provou que "os números primos são infinitos", incontáveis matemáticos têm tentado desvendar os padrões ocultos nessa disposição de primos.
 
-Aquele que chegou mais perto de desvendar esse mistério dos números primos foi o matemático alemão [Bernhard Riemann](https://kenji.blog/pt/p/riemann/), que propôs a **"Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/)" ([Riemann](https://kenji.blog/pt/p/riemann/) Hypothesis)** em 1859. A Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/) é um dos problemas mais importantes e não resolvidos da matemática moderna, com um prêmio de 1 milhão de dólares oferecido pelo Instituto de Matemática Clay como um dos Problemas do Prêmio Millennium.
+Aquele que chegou mais perto de desvendar esse mistério dos números primos foi o matemático alemão [Bernhard Riemann](https://kenji.blog/pt/p/riemann/), que propôs a **"Hipótese de Riemann" (Riemann Hypothesis)** em 1859. A Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/) é um dos problemas mais importantes e não resolvidos da matemática moderna, com um prêmio de 1 milhão de dólares oferecido pelo Instituto de Matemática Clay como um dos Problemas do Prêmio Millennium.
 
 À primeira vista, pode parecer que esse problema formidável da matemática pura sobre a distribuição de números primos não tenha relação com o nosso dia a dia. No entanto, a segurança da internet, que sustenta a infraestrutura da sociedade moderna, especialmente as **tecnologias de criptografia modernas como a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e a criptografia de curva elíptica (ECC)**, depende profundamente das propriedades de números primos gigantescos.
 
-Neste artigo, faremos uma jornada matemática partindo da distribuição dos números primos até o Teorema dos Números Primos, a função zeta de [Riemann](https://kenji.blog/pt/p/riemann/) e o núcleo da Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/), explorando de forma extremamente detalhada e profunda como isso se conecta com a criptografia moderna e o que aconteceria com o mundo se a Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/) fosse provada.
+Neste artigo, faremos uma jornada matemática partindo da distribuição dos números primos até o Teorema dos Números Primos, a função zeta de [Riemann](https://kenji.blog/pt/p/riemann/) e o núcleo da Hipótese de Riemann, explorando de forma extremamente detalhada e profunda como isso se conecta com a criptografia moderna e o que aconteceria com o mundo se a Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/) fosse provada.
 
 ---
 
@@ -50,7 +50,7 @@ Este teorema mostrou que, de uma perspectiva macroscópica, os números primos t
 
 # 3. A Função Zeta de [Riemann](https://kenji.blog/pt/p/riemann/) e o Produto de Euler
 
-A arma mais poderosa para analisar a distribuição dos números primos é a **Função Zeta de [Riemann](https://kenji.blog/pt/p/riemann/) ([Riemann](https://kenji.blog/pt/p/riemann/) Zeta Function)**. Originalmente, era uma série infinita definida por [Leonhard Euler](https://kenji.blog/pt/p/euler/) para números reais $s > 1$.
+A arma mais poderosa para analisar a distribuição dos números primos é a **Função Zeta de [Riemann](https://kenji.blog/pt/p/riemann/) (Riemann Zeta Function)**. Originalmente, era uma série infinita definida por [Leonhard Euler](https://kenji.blog/pt/p/euler/) para números reais $s > 1$.
 
 $$ \zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s} = 1 + \frac{1}{2^s} + \frac{1}{3^s} + \frac{1}{4^s} + \dots $$
 
@@ -165,7 +165,7 @@ Para operar a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-pub
 
 Atualmente, o que é utilizado de forma prática é um algoritmo probabilístico chamado **teste de primalidade de Miller-Rabin (Miller-Rabin primality test)**. Esse algoritmo é rápido, mas carrega o risco de classificar incorretamente, com uma probabilidade extremamente baixa, um número composto como primo, um chamado "pseudoprimo".
 
-No entanto, assumindo que a **"Hipótese Generalizada de [Riemann](https://kenji.blog/pt/p/riemann/) (Generalized [Riemann](https://kenji.blog/pt/p/riemann/) Hypothesis, GRH)"**, que estende a Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/) às funções L de Dirichlet, é verdadeira, a história muda drasticamente.
+No entanto, assumindo que a **"Hipótese Generalizada de [Riemann](https://kenji.blog/pt/p/riemann/) (Generalized Riemann Hypothesis, GRH)"**, que estende a Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/) às funções L de Dirichlet, é verdadeira, a história muda drasticamente.
 
 Se a GRH for verdadeira, o limite superior do número de testes no teste de Miller-Rabin será matematicamente garantido, elevando-o de um algoritmo probabilístico para um **"algoritmo de tempo polinomial determinístico"** (este era um fato crucial já conhecido antes da descoberta do teste de primalidade AKS).
 
@@ -185,12 +185,12 @@ Assim como uma lenda urbana, às vezes se diz que "se a Hipótese de [Riemann](h
 A prova da Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/), por si só, não produzirá imediatamente um algoritmo mágico que acelera drasticamente a fatoração. Isso porque a Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/) é, em última análise, um teorema sobre os "padrões de distribuição macroscópicos" dos números primos, e não nos diz diretamente por quais números primos um número específico $N$ é divisível (uma propriedade local).
 
 No entanto, o impacto não é zero.
-Isso porque é extremamente provável que, no processo de provar a Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/), **"novas ferramentas matemáticas" e "métodos analíticos desconhecidos" sejam descobertos**. Olhando para a história, quando o Último Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) ou a Conjectura de [Poincaré](https://kenji.blog/pt/p/poincare/) foram provados, as novas teorias desenvolvidas no processo impulsionaram significativamente a matemática como um todo.
+Isso porque é extremamente provável que, no processo de provar a Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/), **"novas ferramentas matemáticas" e "métodos analíticos desconhecidos" sejam descobertos**. Olhando para a história, quando o Último Teorema de Fermat ou a Conjectura de [Poincaré](https://kenji.blog/pt/p/poincare/) foram provados, as novas teorias desenvolvidas no processo impulsionaram significativamente a matemática como um todo.
 
 Se for estabelecido um método desconhecido de geometria algébrica ou de geometria não-comutativa capaz de manipular completamente as propriedades dos zeros da função zeta de [Riemann](https://kenji.blog/pt/p/riemann/), não se pode negar a possibilidade de que isso leve à descoberta de um algoritmo de fatoração revolucionário (por exemplo, um algoritmo clássico que reduz a complexidade para o tempo polinomial). Nesse sentido, os criptógrafos nunca podem tirar os olhos dos desenvolvimentos da Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/).
 
 ### Computadores Quânticos e o [Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)
-Uma ameaça mais direta e realista à criptografia não é a prova da Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/), mas os **computadores quânticos**. O "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)", anunciado por Peter Shor em 1994, provou que, com um computador quântico de capacidade suficiente, a fatoração pode ser resolvida em tempo polinomial. Isso fundamentalmente quebraria a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e a criptografia de curva elíptica.
+Uma ameaça mais direta e realista à criptografia não é a prova da Hipótese de [Riemann](https://kenji.blog/pt/p/riemann/), mas os **computadores quânticos**. O "Algoritmo de Shor", anunciado por Peter Shor em 1994, provou que, com um computador quântico de capacidade suficiente, a fatoração pode ser resolvida em tempo polinomial. Isso fundamentalmente quebraria a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e a criptografia de curva elíptica.
 
 Atualmente, ao redor do mundo, há uma transição em andamento para a "Criptografia Pós-Quântica (Post-Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy, PQC)" (como a criptografia baseada em reticulados), que não pode ser decifrada nem por computadores quânticos. As tecnologias de criptografia baseadas em números primos podem, de certa forma, estar encerrando sua era de ouro, mas o valor matemático dos números primos em si nunca se perderá.
 

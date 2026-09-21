@@ -14,7 +14,7 @@ Neste artigo, exploraremos com volume e profundidade esmagadores a vida dramáti
 
 ## 1. Juventude e Ambiente Educacional Único: O Desabrochar de um Gênio
 
-[Henri Poincaré](https://kenji.blog/pt/p/poincare/) nasceu em 29 de abril de 1854, na cidade de Nancy, no nordeste da França, em uma família de elite altamente intelectual. Seu pai, Léon [Poincaré](https://kenji.blog/pt/p/poincare/), era professor da faculdade de medicina da Universidade de Nancy, e seu primo, Raymond [Poincaré](https://kenji.blog/pt/p/poincare/), mais tarde se tornaria um político proeminente, servindo como Primeiro-Ministro e Presidente da França. Um ambiente familiar tão abençoado estimulou imensamente sua curiosidade intelectual.
+[Henri Poincaré](https://kenji.blog/pt/p/poincare/) nasceu em 29 de abril de 1854, na cidade de Nancy, no nordeste da França, em uma família de elite altamente intelectual. Seu pai, Léon Poincaré, era professor da faculdade de medicina da Universidade de Nancy, e seu primo, Raymond [Poincaré](https://kenji.blog/pt/p/poincare/), mais tarde se tornaria um político proeminente, servindo como Primeiro-Ministro e Presidente da França. Um ambiente familiar tão abençoado estimulou imensamente sua curiosidade intelectual.
 
 Durante sua infância, [Poincaré](https://kenji.blog/pt/p/poincare/) sofreu de difteria, o que o deixou incapaz de falar por um longo período e confinado ao leito. No entanto, esse período de isolamento desenvolveu de forma anormal suas habilidades de pensamento interno. Ele possuía uma **memória intuitiva** que lhe permitia memorizar perfeitamente o conteúdo de um livro após lê-lo apenas uma vez, e aprendeu a manipular livremente a disposição visual das letras e as relações espaciais em sua mente.
 
@@ -67,7 +67,7 @@ $$
 x' = \gamma (x - vt), \quad t' = \gamma \left(t - \frac{vx}{c^2}\right) \quad (\text{onde } c \text{ é a velocidade da luz no vácuo})
 $$
 
-Além disso, [Poincaré](https://kenji.blog/pt/p/poincare/) rapidamente introduziu o conceito de espaço-tempo quadridimensional e definiu o "Grupo de [Poincaré](https://kenji.blog/pt/p/poincare/)", que mostra que as leis da física são invariantes sob as transformações de Lorentz. Enquanto Einstein construiu a teoria da relatividade a partir de uma abordagem física e intuitiva, [Poincaré](https://kenji.blog/pt/p/poincare/) chegou à mesma verdade a partir da perspectiva da beleza estrutural matemática e geométrica.
+Além disso, [Poincaré](https://kenji.blog/pt/p/poincare/) rapidamente introduziu o conceito de espaço-tempo quadridimensional e definiu o "Grupo de Poincaré", que mostra que as leis da física são invariantes sob as transformações de Lorentz. Enquanto Einstein construiu a teoria da relatividade a partir de uma abordagem física e intuitiva, [Poincaré](https://kenji.blog/pt/p/poincare/) chegou à mesma verdade a partir da perspectiva da beleza estrutural matemática e geométrica.
 
 ## 5. O Inconsciente e a Criatividade: A Psicologia da Inspiração
 

@@ -24,7 +24,7 @@ Su creación de la "Teoría de conjuntos" se ha convertido en la base de todos l
 
 [Georg Cantor](https://kenji.blog/es/p/cantor/) nació en 1845 en San Petersburgo, Rusia. Su padre era un rico comerciante de Dinamarca y su madre una música rusa. Mostrando un talento extraordinario para las matemáticas desde temprana edad, finalmente se mudó a Alemania y estudió matemáticas en la Universidad de Berlín.
 
-En la Universidad de Berlín, fue guiado por las figuras destacadas del mundo matemático de la época, **[Karl Weierstrass](https://kenji.blog/es/p/weierstrass/)** y **Leopold [Kronecker](https://kenji.blog/es/p/kronecker/)**. [Kronecker](https://kenji.blog/es/p/kronecker/) en particular se convertiría más tarde en el mayor oponente de Cantor.
+En la Universidad de Berlín, fue guiado por las figuras destacadas del mundo matemático de la época, **[Karl Weierstrass](https://kenji.blog/es/p/weierstrass/)** y **Leopold Kronecker**. [Kronecker](https://kenji.blog/es/p/kronecker/) en particular se convertiría más tarde en el mayor oponente de Cantor.
 
 ### La búsqueda del infinito y el conflicto con [Kronecker](https://kenji.blog/es/p/kronecker/)
 

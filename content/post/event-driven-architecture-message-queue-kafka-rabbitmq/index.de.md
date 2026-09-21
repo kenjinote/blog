@@ -18,7 +18,7 @@ tags:
 
 # 1. Einführung in die ereignisgesteuerte Architektur
 
-Moderne Softwaresysteme weisen eine beispiellose Größenordnung und Komplexität auf. Da die [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur zum Mainstream wird, ist die Frage, wie die Kommunikation zwischen Diensten gestaltet wird, ein äußerst wichtiger Faktor, der die Leistung, Verfügbarkeit und Wartbarkeit des gesamten Systems bestimmt. In diesem Zusammenhang hat sich die **ereignisgesteuerte Architektur** (Event-Driven Architecture: EDA) als starkes Paradigma zur Verringerung der Kopplung zwischen Systemen und zur Erzielung einer hohen Skalierbarkeit fest etabliert.
+Moderne Softwaresysteme weisen eine beispiellose Größenordnung und Komplexität auf. Da die [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur zum Mainstream wird, ist die Frage, wie die Kommunikation zwischen Diensten gestaltet wird, ein äußerst wichtiger Faktor, der die Leistung, Verfügbarkeit und Wartbarkeit des gesamten Systems bestimmt. In diesem Zusammenhang hat sich die **ereignisgesteuerte Architektur** (Event-Driven Architecture: EDA) als starkes Paradigma zur Verringerung der Kopplung zwischen Systemen und zur Erzielung einer hohen Skalierbarkeit fest etabliert.
 
 # 2. Herausforderungen der synchronen Kommunikation (REST / gRPC)
 
@@ -226,7 +226,7 @@ Wenn eine ereignisgesteuerte Architektur in tatsächlichen Enterprise-Systemen e
 
 ## 7.1 Verteilte Transaktionen mit dem Saga-Muster
 
-In einer [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur führt die Verwaltung von Transaktionen, die sich über mehrere Dienste erstrecken, mit einem synchronen Two-Phase-Commit (2PC) zu Einbußen bei der Verfügbarkeit und Leistung. Als Alternative dazu wird das **Saga-Muster** verwendet.
+In einer [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur führt die Verwaltung von Transaktionen, die sich über mehrere Dienste erstrecken, mit einem synchronen Two-Phase-Commit (2PC) zu Einbußen bei der Verfügbarkeit und Leistung. Als Alternative dazu wird das **Saga-Muster** verwendet.
 
 Beim Saga-Muster werden verteilte Transaktionen als eine Abfolge lokaler Transaktionen dargestellt. Jeder Dienst führt eine lokale Transaktion aus und veröffentlicht nach Abschluss ein Ereignis, um den nächsten Schritt auszulösen. Wenn ein Schritt fehlschlägt, wird ein Ereignis veröffentlicht, das eine „Kompensationstransaktion“ (Compensating [Transaction](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)) ausführt, um die bereits abgeschlossenen Transaktionen rückgängig zu machen.
 
@@ -260,7 +260,7 @@ Wenn eine ereignisgesteuerte Architektur in tatsächlichen Enterprise-Systemen e
 
 ## 7.1 Verteilte Transaktionen mit dem Saga-Muster
 
-In einer [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur führt die Verwaltung von Transaktionen, die sich über mehrere Dienste erstrecken, mit einem synchronen Two-Phase-Commit (2PC) zu Einbußen bei der Verfügbarkeit und Leistung. Als Alternative dazu wird das **Saga-Muster** verwendet.
+In einer [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur führt die Verwaltung von Transaktionen, die sich über mehrere Dienste erstrecken, mit einem synchronen Two-Phase-Commit (2PC) zu Einbußen bei der Verfügbarkeit und Leistung. Als Alternative dazu wird das **Saga-Muster** verwendet.
 
 Beim Saga-Muster werden verteilte Transaktionen als eine Abfolge lokaler Transaktionen dargestellt. Jeder Dienst führt eine lokale Transaktion aus und veröffentlicht nach Abschluss ein Ereignis, um den nächsten Schritt auszulösen. Wenn ein Schritt fehlschlägt, wird ein Ereignis veröffentlicht, das eine „Kompensationstransaktion“ (Compensating [Transaction](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)) ausführt, um die bereits abgeschlossenen Transaktionen rückgängig zu machen.
 
@@ -294,7 +294,7 @@ Wenn eine ereignisgesteuerte Architektur in tatsächlichen Enterprise-Systemen e
 
 ## 7.1 Verteilte Transaktionen mit dem Saga-Muster
 
-In einer [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur führt die Verwaltung von Transaktionen, die sich über mehrere Dienste erstrecken, mit einem synchronen Two-Phase-Commit (2PC) zu Einbußen bei der Verfügbarkeit und Leistung. Als Alternative dazu wird das **Saga-Muster** verwendet.
+In einer [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur führt die Verwaltung von Transaktionen, die sich über mehrere Dienste erstrecken, mit einem synchronen Two-Phase-Commit (2PC) zu Einbußen bei der Verfügbarkeit und Leistung. Als Alternative dazu wird das **Saga-Muster** verwendet.
 
 Beim Saga-Muster werden verteilte Transaktionen als eine Abfolge lokaler Transaktionen dargestellt. Jeder Dienst führt eine lokale Transaktion aus und veröffentlicht nach Abschluss ein Ereignis, um den nächsten Schritt auszulösen. Wenn ein Schritt fehlschlägt, wird ein Ereignis veröffentlicht, das eine „Kompensationstransaktion“ (Compensating [Transaction](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)) ausführt, um die bereits abgeschlossenen Transaktionen rückgängig zu machen.
 
@@ -328,7 +328,7 @@ Wenn eine ereignisgesteuerte Architektur in tatsächlichen Enterprise-Systemen e
 
 ## 7.1 Verteilte Transaktionen mit dem Saga-Muster
 
-In einer [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur führt die Verwaltung von Transaktionen, die sich über mehrere Dienste erstrecken, mit einem synchronen Two-Phase-Commit (2PC) zu Einbußen bei der Verfügbarkeit und Leistung. Als Alternative dazu wird das **Saga-Muster** verwendet.
+In einer [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur führt die Verwaltung von Transaktionen, die sich über mehrere Dienste erstrecken, mit einem synchronen Two-Phase-Commit (2PC) zu Einbußen bei der Verfügbarkeit und Leistung. Als Alternative dazu wird das **Saga-Muster** verwendet.
 
 Beim Saga-Muster werden verteilte Transaktionen als eine Abfolge lokaler Transaktionen dargestellt. Jeder Dienst führt eine lokale Transaktion aus und veröffentlicht nach Abschluss ein Ereignis, um den nächsten Schritt auszulösen. Wenn ein Schritt fehlschlägt, wird ein Ereignis veröffentlicht, das eine „Kompensationstransaktion“ (Compensating [Transaction](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)) ausführt, um die bereits abgeschlossenen Transaktionen rückgängig zu machen.
 
@@ -362,7 +362,7 @@ Wenn eine ereignisgesteuerte Architektur in tatsächlichen Enterprise-Systemen e
 
 ## 7.1 Verteilte Transaktionen mit dem Saga-Muster
 
-In einer [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur führt die Verwaltung von Transaktionen, die sich über mehrere Dienste erstrecken, mit einem synchronen Two-Phase-Commit (2PC) zu Einbußen bei der Verfügbarkeit und Leistung. Als Alternative dazu wird das **Saga-Muster** verwendet.
+In einer [Microservices](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architektur führt die Verwaltung von Transaktionen, die sich über mehrere Dienste erstrecken, mit einem synchronen Two-Phase-Commit (2PC) zu Einbußen bei der Verfügbarkeit und Leistung. Als Alternative dazu wird das **Saga-Muster** verwendet.
 
 Beim Saga-Muster werden verteilte Transaktionen als eine Abfolge lokaler Transaktionen dargestellt. Jeder Dienst führt eine lokale Transaktion aus und veröffentlicht nach Abschluss ein Ereignis, um den nächsten Schritt auszulösen. Wenn ein Schritt fehlschlägt, wird ein Ereignis veröffentlicht, das eine „Kompensationstransaktion“ (Compensating [Transaction](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)) ausführt, um die bereits abgeschlossenen Transaktionen rückgängig zu machen.
 

@@ -24,7 +24,7 @@ description: 'استراتيجية لزيادة زيارات المدونة ال
 
 ### 1.1 تحسين Core [Web Vitals](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-تستخدم Google تجربة الصفحة كعامل ترتيب، ولا يمكن تجاهل **[Core Web Vitals](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** في المدونات التقنية بشكل خاص.
+تستخدم Google تجربة الصفحة كعامل ترتيب، ولا يمكن تجاهل **[Core Web Vitals](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (LCP, FID/INP, [CLS](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** في المدونات التقنية بشكل خاص.
 في المدونات التقنية، يتم استخدام الكثير من كتل التعليمات البرمجية المصدرية والمعادلات الرياضية (MathJax / KaTeX) والرسوم التوضيحية. هذه العوامل تؤخر عرض الصفحة.
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/ar/p/browser-rendering-mechanism-dom-paint/))**: سرعة تحميل المحتوى الرئيسي في شاشة العرض الأولى. استخدم WebP أو AVIF للصورة البارزة (eyecatch)، وقم بالتحميل المسبق لها عن طريق إضافة خاصية `fetchpriority="high"`. بالإضافة إلى ذلك، اجعل ملفات CSS أو JS الضخمة المستخدمة في تمييز بناء الجملة (syntax highlighting) تُحمل بشكل غير متزامن، أو صممها بحيث تُحمل فقط في الصفحات التي تحتاج إليها.

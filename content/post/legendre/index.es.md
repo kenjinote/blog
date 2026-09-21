@@ -38,11 +38,11 @@ Su vida fue fuertemente sacudida por la Revolución Francesa, que estalló en 17
 
 ## 2. Contribuciones inmortales al mundo matemático
 
-Los logros de [Legendre](https://kenji.blog/es/p/legendre/) abarcan casi todos los campos de las matemáticas de su tiempo, incluyendo la teoría de números, el álgebra, el análisis y la geometría. Su investigación a menudo fue completada por otros genios (como Gauss, [Abel](https://kenji.blog/es/p/abel/) y [Jacobi](https://kenji.blog/es/p/jacobi/)), pero sin los cimientos que él construyó, los desarrollos dramáticos de estos últimos no habrían sido posibles.
+Los logros de [Legendre](https://kenji.blog/es/p/legendre/) abarcan casi todos los campos de las matemáticas de su tiempo, incluyendo la teoría de números, el álgebra, el análisis y la geometría. Su investigación a menudo fue completada por otros genios (como Gauss, Abel y [Jacobi](https://kenji.blog/es/p/jacobi/)), pero sin los cimientos que él construyó, los desarrollos dramáticos de estos últimos no habrían sido posibles.
 
 ### 2.1 Pasión por la teoría de números y el símbolo de [Legendre](https://kenji.blog/es/p/legendre/)
 
-[Legendre](https://kenji.blog/es/p/legendre/) estaba profundamente fascinado por la teoría de números, liderada por predecesores como [Pierre de Fermat](https://kenji.blog/es/p/fermat/) y [Leonhard Euler](https://kenji.blog/es/p/euler/). Uno de sus mayores logros es su trabajo sobre la "Ley de reciprocidad cuadrática". Esta ley es uno de los teoremas más hermosos e importantes en la teoría de números para determinar si un número primo es congruente con un cuadrado módulo otro número primo.
+[Legendre](https://kenji.blog/es/p/legendre/) estaba profundamente fascinado por la teoría de números, liderada por predecesores como Pierre de Fermat y [Leonhard Euler](https://kenji.blog/es/p/euler/). Uno de sus mayores logros es su trabajo sobre la "Ley de reciprocidad cuadrática". Esta ley es uno de los teoremas más hermosos e importantes en la teoría de números para determinar si un número primo es congruente con un cuadrado módulo otro número primo.
 
 Él formuló esta ley y dio una prueba parcial (una prueba completa fue proporcionada más tarde por el joven Gauss). Además, para expresar esta investigación de manera concisa y elegante, introdujo una notación conocida hoy como el **símbolo de [Legendre](https://kenji.blog/es/p/legendre/)**.
 
@@ -65,7 +65,7 @@ $$
 F(\phi, k) = \int_0^\phi \frac{d\theta}{\sqrt{1 - k^2 \sin^2 \theta}}
 $$
 
-Su clasificación, que incluye la integral elíptica incompleta de primera especie como se muestra arriba, se convirtió en el estándar en las matemáticas posteriores. Poco después de haber completado una obra monumental que culminaba este campo, los jóvenes genios [Abel](https://kenji.blog/es/p/abel/) y [Jacobi](https://kenji.blog/es/p/jacobi/) introdujeron una perspectiva completamente nueva llamada "funciones elípticas" (las funciones inversas de las integrales elípticas), reescribiendo el campo por completo. Aunque [Legendre](https://kenji.blog/es/p/legendre/) quedó consternado al ver que sus décadas de investigación habían quedado obsoletas, reconoció honestamente su joven talento y los elogió apasionadamente, un episodio que demuestra su actitud sincera como académico.
+Su clasificación, que incluye la integral elíptica incompleta de primera especie como se muestra arriba, se convirtió en el estándar en las matemáticas posteriores. Poco después de haber completado una obra monumental que culminaba este campo, los jóvenes genios [Abel](https://kenji.blog/es/p/abel/) y Jacobi introdujeron una perspectiva completamente nueva llamada "funciones elípticas" (las funciones inversas de las integrales elípticas), reescribiendo el campo por completo. Aunque [Legendre](https://kenji.blog/es/p/legendre/) quedó consternado al ver que sus décadas de investigación habían quedado obsoletas, reconoció honestamente su joven talento y los elogió apasionadamente, un episodio que demuestra su actitud sincera como académico.
 
 Además, en física e ingeniería, especialmente en electromagnetismo y mecánica cuántica, los **polinomios de [Legendre](https://kenji.blog/es/p/legendre/)** aparecen invariablemente al resolver la ecuación de Laplace en coordenadas esféricas. Son un sistema de polinomios ortogonales obtenidos como soluciones a la siguiente ecuación diferencial (ecuación diferencial de [Legendre](https://kenji.blog/es/p/legendre/)).
 
@@ -77,9 +77,9 @@ Estos polinomios se han convertido en una herramienta indispensable en todo tipo
 
 ### 2.3 'Éléments de géométrie' y su gran impacto en la educación matemática
 
-Junto a sus actividades de investigación, [Legendre](https://kenji.blog/es/p/legendre/) también fue un educador excepcional. Su libro "Éléments de géométrie" (Elementos de Geometría), publicado en 1794, reorganizó los "Elementos" de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) para hacerlos más accesibles y rigurosos a los estudiantes de su tiempo.
+Junto a sus actividades de investigación, [Legendre](https://kenji.blog/es/p/legendre/) también fue un educador excepcional. Su libro "Éléments de géométrie" (Elementos de Geometría), publicado en 1794, reorganizó los "Elementos" de [Euclides](https://kenji.blog/p/euclid/) para hacerlos más accesibles y rigurosos a los estudiantes de su tiempo.
 
-Este libro de texto logró un éxito fenomenal, siendo traducido al inglés y otros idiomas y leído en todo el mundo, no solo en Francia. Fue ampliamente adoptado en los Estados Unidos y siguió siendo el estándar absoluto para la educación en geometría a lo largo del siglo XIX. En este libro, intentó continuamente probar el postulado de las paralelas (el quinto postulado de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/)), agregando nuevas pruebas en cada edición, aunque en última instancia todas resultaron defectuosas. Sin embargo, su persistencia se convirtió en una de las fuerzas motrices importantes que impulsaron el nacimiento de la geometría no euclidiana.
+Este libro de texto logró un éxito fenomenal, siendo traducido al inglés y otros idiomas y leído en todo el mundo, no solo en Francia. Fue ampliamente adoptado en los Estados Unidos y siguió siendo el estándar absoluto para la educación en geometría a lo largo del siglo XIX. En este libro, intentó continuamente probar el postulado de las paralelas (el quinto postulado de [Euclides](https://kenji.blog/p/euclid/)), agregando nuevas pruebas en cada edición, aunque en última instancia todas resultaron defectuosas. Sin embargo, su persistencia se convirtió en una de las fuerzas motrices importantes que impulsaron el nacimiento de la geometría no euclidiana.
 
 ### 2.4 Reto al teorema de los números primos
 
@@ -108,9 +108,9 @@ flowchart LR
 
 Sin embargo, cuatro años más tarde en 1809, Gauss usó extensamente el método de mínimos cuadrados en su propio libro sobre mecánica celeste, afirmando: "He estado usando este método de manera rutinaria desde 1795". Por la evidencia histórica, se considera que la afirmación de Gauss era cierta, pero la prioridad académica de la publicación indudablemente le correspondía a [Legendre](https://kenji.blog/es/p/legendre/).
 
-El comportamiento de Gauss hirió profundamente el orgullo de [Legendre](https://kenji.blog/es/p/legendre/). [Legendre](https://kenji.blog/es/p/legendre/) le envió una carta a Gauss exigiendo que reconociera su publicación previa, pero Gauss mantuvo una actitud fría. En el apéndice de su propia obra, [Legendre](https://kenji.blog/es/p/legendre/) expresó explícitamente su intensa ira hacia Gauss, afirmando que "cierta persona está reclamando el descubrimiento de otro como suyo".
+El comportamiento de Gauss hirió profundamente el orgullo de [Legendre](https://kenji.blog/es/p/legendre/). Legendre le envió una carta a Gauss exigiendo que reconociera su publicación previa, pero Gauss mantuvo una actitud fría. En el apéndice de su propia obra, [Legendre](https://kenji.blog/es/p/legendre/) expresó explícitamente su intensa ira hacia Gauss, afirmando que "cierta persona está reclamando el descubrimiento de otro como suyo".
 
-Además, con respecto al teorema de los números primos (la conjetura de [Legendre](https://kenji.blog/es/p/legendre/) de $ \pi(x) \approx \frac{x}{\ln x - 1.08366} $) y la ley de reciprocidad cuadrática, aunque [Legendre](https://kenji.blog/es/p/legendre/) los había descubierto y formulado primero, Gauss los probó por completo y los generalizó más profundamente, lo que provocó que todos los elogios públicos se centraran en Gauss. Para [Legendre](https://kenji.blog/es/p/legendre/), Gauss era un muro demasiado alto que le arrebataba todos sus logros, convirtiéndose en su némesis de por vida.
+Además, con respecto al teorema de los números primos (la conjetura de [Legendre](https://kenji.blog/es/p/legendre/) de $ \pi(x) \approx \frac{x}{\ln x - 1.08366} $) y la ley de reciprocidad cuadrática, aunque Legendre los había descubierto y formulado primero, Gauss los probó por completo y los generalizó más profundamente, lo que provocó que todos los elogios públicos se centraran en Gauss. Para [Legendre](https://kenji.blog/es/p/legendre/), Gauss era un muro demasiado alto que le arrebataba todos sus logros, convirtiéndose en su némesis de por vida.
 
 ## 4. El misterio del retrato: Un gran malentendido de 200 años
 
@@ -125,7 +125,7 @@ Se creó un gran malentendido histórico porque compartían el mismo apellido "[
 Entonces, ¿cómo era el verdadero matemático [Legendre](https://kenji.blog/es/p/legendre/)?
 Después de que se descubriera esta verdad, los historiadores buscaron desesperadamente retratos auténticos. Finalmente, en 2008, se descubrió en los Archivos Nacionales Franceses una caricatura contemporánea (dibujo satírico) que lo representaba.
 
-Allí, en lugar del severo perfil del político Louis [Legendre](https://kenji.blog/es/p/legendre/), aparecía la figura de un hombre mayor regordete, cálido y con un aspecto ligeramente disgustado. Su lado humano, exhausto por las discusiones con Gauss pero elogiando los talentos de los jóvenes [Abel](https://kenji.blog/es/p/abel/) y [Jacobi](https://kenji.blog/es/p/jacobi/), se transmite vívidamente a través de esa acuarela. Hoy en día, esta caricatura es reconocida como su único retrato auténtico.
+Allí, en lugar del severo perfil del político Louis [Legendre](https://kenji.blog/es/p/legendre/), aparecía la figura de un hombre mayor regordete, cálido y con un aspecto ligeramente disgustado. Su lado humano, exhausto por las discusiones con Gauss pero elogiando los talentos de los jóvenes Abel y [Jacobi](https://kenji.blog/es/p/jacobi/), se transmite vívidamente a través de esa acuarela. Hoy en día, esta caricatura es reconocida como su único retrato auténtico.
 
 ## 5. Conclusión
 

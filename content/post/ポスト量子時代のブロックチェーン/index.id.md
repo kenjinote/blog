@@ -12,7 +12,7 @@ description: 'Kedatangan "Q-Day" ketika daya komputasi luar biasa dari komputer 
 
 ## 1. Pendahuluan: Langkah Era Pasca-Kuantum dan Krisis [Blockchain](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/)
 
-Sejak [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) diciptakan oleh Satoshi Nakamoto pada tahun 2009, teknologi blockchain telah berkembang menjadi fondasi sistem keuangan dan aplikasi di seluruh dunia sebagai "buku besar yang terdesentralisasi dan tidak dapat diubah". Keamanan yang kuat ini didukung oleh teknologi kriptografi modern yaitu **Kriptografi Kunci Publik ([Public Key](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)** dan **Fungsi Hash Kriptografi ([Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)s)**.
+Sejak [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) diciptakan oleh Satoshi Nakamoto pada tahun 2009, teknologi blockchain telah berkembang menjadi fondasi sistem keuangan dan aplikasi di seluruh dunia sebagai "buku besar yang terdesentralisasi dan tidak dapat diubah". Keamanan yang kuat ini didukung oleh teknologi kriptografi modern yaitu **Kriptografi Kunci Publik (Public Key Cryptography)** dan **Fungsi Hash Kriptografi (Cryptographic [Hash Function](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)s)**.
 
 Teknologi kriptografi ini menjamin keamanan berdasarkan "kesulitan komputasi" matematis, di mana komputer klasik (PC dan superkomputer yang kita gunakan saat ini) tidak akan dapat memecahkannya bahkan jika menghabiskan waktu selama umur alam semesta.
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. Dasar dan Kesulitan Komputasi Kriptografi Kurva Eliptik (ECDSA)
 
-Banyak blockchain, termasuk [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) dan Ethereum, menggunakan **Algoritma Tanda Tangan Digital Kurva Eliptik (ECDSA: Elliptic Curve [Digital Signature](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) Algorithm)** sebagai algoritma tanda tangan digital. Secara khusus, [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) menggunakan kurva eliptik dengan parameter `secp256k1`.
+Banyak blockchain, termasuk [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) dan Ethereum, menggunakan **Algoritma Tanda Tangan Digital Kurva Eliptik (ECDSA: Elliptic Curve Digital Signature Algorithm)** sebagai algoritma tanda tangan digital. Secara khusus, [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) menggunakan kurva eliptik dengan parameter `secp256k1`.
 
 Keamanan kriptografi kurva eliptik bergantung pada kesulitan komputasi dari **Masalah Logaritma Diskrit Kurva Eliptik (ECDLP: Elliptic Curve Discrete Logarithm Problem)**.
 Kurva eliptik didefinisikan oleh persamaan dalam bentuk standar Weierstrass berikut.

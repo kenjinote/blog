@@ -34,7 +34,7 @@ $$ (x - ky)(x + ky) = 1 $$
 
 虽然这个方程冠有“佩尔”之名，但追溯历史事实，其背景有些离奇。实际上，在近代欧洲，首先研究该方程的一般解法并强烈断言解必然存在的是伟大的法国数学家**[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)**（[Pierre de Fermat](https://kenji.blog/zh-cn/p/fermat/)）。
 
-后来，**[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)**（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）错误地将英国数学家**约翰·佩尔**（John Pell）的名字与这个方程联系在一起，因此至今它仍被广泛称为“[佩尔方程](https://kenji.blog/zh-cn/p/pell-equation/)”。佩尔本人在这个方程的求解方法中并没有发挥核心作用。
+后来，**[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)**（Leonhard Euler）错误地将英国数学家**约翰·佩尔**（John Pell）的名字与这个方程联系在一起，因此至今它仍被广泛称为“[佩尔方程](https://kenji.blog/zh-cn/p/pell-equation/)”。佩尔本人在这个方程的求解方法中并没有发挥核心作用。
 
 如果将时间进一步往前推移，在费马之前几百年，印度数学家**婆罗摩笈多**（Brahmagupta）和**婆什迦罗第二**（Bhāskara II）就使用了一种名为查克拉瓦拉法（Chakravala method）的精妙算法，计算出了这类方程的解。从古代到中世纪，再到近代的数学家们的探索历史，都铭刻在这个方程中。
 

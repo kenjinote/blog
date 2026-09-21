@@ -17,7 +17,7 @@ tags:
 # はじめに
 Webアプリケーションは進化を続け、単なるドキュメントビューアから、高度な業務システムやエンターテイメントプラットフォームへと変貌を遂げました。それに伴い、Webアプリケーションが扱うデータはますます機密性の高いものとなり、サイバー攻撃の標的となりやすくなっています。
 
-本記事では、Webセキュリティの基礎である[XSS](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)や[CSRF](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)といった古典的かつ現在でも猛威を振るう[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)から、現代のWeb開発において必須となるCORS、CSP、そしてSameSite Cookieといった最新の防御機構まで、網羅的かつ詳細に解説します。さらに、これらの技術がどのように連携して堅牢なWebアプリケーションを構築するのか、具体的なコード例やMermaid図表を用いてわかりやすく説明します。
+本記事では、Webセキュリティの基礎である[XSS](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)やCSRFといった古典的かつ現在でも猛威を振るう[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)から、現代のWeb開発において必須となるCORS、CSP、そしてSameSite Cookieといった最新の防御機構まで、網羅的かつ詳細に解説します。さらに、これらの技術がどのように連携して堅牢なWebアプリケーションを構築するのか、具体的なコード例やMermaid図表を用いてわかりやすく説明します。
 
 ---
 
@@ -348,7 +348,7 @@ CSPの導入はセキュリティを劇的に向上させますが、厳密な�
 
 本記事では、Webアプリケーションを脅威から守るための基礎知識から最新技術までを解説しました。
 
-*   **[XSS](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)と[CSRF](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)**: 古典的でありながら、現在も致命的な被害をもたらす[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)。適切なエスケープとトークンによる防御が基本。
+*   **[XSS](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)とCSRF**: 古典的でありながら、現在も致命的な被害をもたらす[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)。適切なエスケープとトークンによる防御が基本。
 *   **CORS**: 複雑化する現代のWebアーキテクチャにおいて、安全なオリジン間通信を実現するための仕組み。
 *   **CSP**: インラインスクリプトの排除などを通じて、XSSなどのインジェクション攻撃をブラウザレベルで封じ込める強力なポリシー。
 *   **SameSite Cookie**: CSRFに対するブラウザ標準の防壁。サードパーティCookieの廃止に向けた動きの中で、ますます重要性が高まっている。

@@ -31,7 +31,7 @@ $$
 Esta fórmula muestra que para los coeficientes $a, b, c$, aplicando las cuatro operaciones aritméticas (suma, resta, multiplicación, división) y extracción de raíces (raíz cuadrada, raíz cúbica, etc.) un número finito de veces, siempre se puede encontrar una solución para cualquier ecuación cuadrática.
 Matemáticos italianos del siglo XVI (Cardano, Tartaglia, Ferrari, etc.) descubrieron que las ecuaciones de tercer y cuarto grado también tienen fórmulas de resolución utilizando las cuatro operaciones aritméticas y extracción de raíces, aunque de forma más compleja. Estos fueron grandes avances en la historia de las matemáticas.
 
-Sin embargo, para la **ecuación de quinto grado** $ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0$, muchos genios matemáticos como Euler y [Lagrange](https://kenji.blog/es/p/lagrange/) intentaron encontrar una fórmula durante siglos, pero nadie lo logró. [Lagrange](https://kenji.blog/es/p/lagrange/) se centró en las permutaciones de las soluciones y encontró una pista para la resolución, pero no logró una prueba completa. Posteriormente, Ruffini y [Abel](https://kenji.blog/es/p/abel/) demostraron que "no existe una fórmula general para ecuaciones de grado 5 o superior" (Teorema de [Abel](https://kenji.blog/es/p/abel/)-Ruffini), pero no pudieron dar un criterio fundamental sobre qué tipo de ecuaciones se pueden resolver y cuáles no.
+Sin embargo, para la **ecuación de quinto grado** $ax^5 + bx^4 + cx^3 + dx^2 + ex + f = 0$, muchos genios matemáticos como Euler y [Lagrange](https://kenji.blog/es/p/lagrange/) intentaron encontrar una fórmula durante siglos, pero nadie lo logró. Lagrange se centró en las permutaciones de las soluciones y encontró una pista para la resolución, pero no logró una prueba completa. Posteriormente, Ruffini y Abel demostraron que "no existe una fórmula general para ecuaciones de grado 5 o superior" (Teorema de [Abel](https://kenji.blog/es/p/abel/)-Ruffini), pero no pudieron dar un criterio fundamental sobre qué tipo de ecuaciones se pueden resolver y cuáles no.
 
 # 2. La simetría y el nacimiento de la teoría de grupos
 
@@ -41,7 +41,7 @@ El mayor logro de [Galois](https://kenji.blog/es/p/galois/) fue no tratar las so
 
 Consideremos la operación de intercambiar las soluciones de una ecuación (permutación).
 Si, incluso después de intercambiar las soluciones, las ecuaciones relacionales (como polinomios con coeficientes racionales) que se cumplen entre las soluciones se mantienen, se puede decir que la permutación "conserva la simetría de la ecuación".
-[Galois](https://kenji.blog/es/p/galois/) descubrió que la colección de estas permutaciones que conservan la simetría tiene una estructura matemática llamada **grupo**. A este grupo se le llama el **grupo de [Galois](https://kenji.blog/es/p/galois/)** ([Galois](https://kenji.blog/es/p/galois/) Group) de esa ecuación.
+[Galois](https://kenji.blog/es/p/galois/) descubrió que la colección de estas permutaciones que conservan la simetría tiene una estructura matemática llamada **grupo**. A este grupo se le llama el **grupo de Galois** ([Galois](https://kenji.blog/es/p/galois/) Group) de esa ecuación.
 
 ```mermaid
 graph TD
@@ -71,7 +71,7 @@ Usando la Teoría de [Galois](https://kenji.blog/es/p/galois/), resulta sorprend
 El proceso de resolver una ecuación se puede ver como el proceso de expandir gradualmente un conjunto de números (**campo**, Field). Un campo es un conjunto donde se pueden realizar las cuatro operaciones aritméticas libremente (ej. el conjunto de todos los números racionales, todos los números reales, etc.).
 Por ejemplo, comenzando con el conjunto de números racionales $\mathbb{Q}$, creamos un nuevo campo agregando las raíces que son componentes de la solución de la ecuación. Esto se llama **extensión de campos**.
 
-El teorema fundamental, el corazón de la Teoría de [Galois](https://kenji.blog/es/p/galois/), muestra que hay una hermosa correspondencia biunívoca (**correspondencia de [Galois](https://kenji.blog/es/p/galois/)**) entre los "campos intermedios de una extensión de campos" y los "subgrupos del grupo de [Galois](https://kenji.blog/es/p/galois/)". Existe una brillante relación inversa donde los campos más grandes corresponden a los grupos más pequeños, y los campos más pequeños corresponden a los grupos más grandes.
+El teorema fundamental, el corazón de la Teoría de [Galois](https://kenji.blog/es/p/galois/), muestra que hay una hermosa correspondencia biunívoca (**correspondencia de Galois**) entre los "campos intermedios de una extensión de campos" y los "subgrupos del grupo de [Galois](https://kenji.blog/es/p/galois/)". Existe una brillante relación inversa donde los campos más grandes corresponden a los grupos más pequeños, y los campos más pequeños corresponden a los grupos más grandes.
 
 ```mermaid
 graph LR

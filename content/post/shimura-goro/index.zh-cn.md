@@ -10,7 +10,7 @@ tags: ["志村五郎", "数论", "谷山-志村猜想", "费马大定理"]
 
 ## 1. 前言：数论的巨星，[志村五郎](https://kenji.blog/zh-cn/p/shimura-goro/)
 
-在现代数学的历史中，有一位对算术几何学领域产生决定性影响的日本数学家。他的名字是 **[志村五郎](https://kenji.blog/zh-cn/p/shimura-goro/)** （[Goro Shimura](https://kenji.blog/zh-cn/p/shimura-goro/)，1930年 - 2019年）。他的成就是不可估量的，他提出了后来成为证明“[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)”最大关键的“谷山-志村猜想”（现称为模块性定理），并构造了现代数论中极为重要的对象“志村簇”。
+在现代数学的历史中，有一位对算术几何学领域产生决定性影响的日本数学家。他的名字是 **[志村五郎](https://kenji.blog/zh-cn/p/shimura-goro/)** （Goro Shimura，1930年 - 2019年）。他的成就是不可估量的，他提出了后来成为证明“[费马大定理](https://kenji.blog/zh-cn/p/fermats-last-theorem/)”最大关键的“谷山-志村猜想”（现称为模块性定理），并构造了现代数论中极为重要的对象“志村簇”。
 
 在这篇文章中，我们将一边回顾[志村五郎](https://kenji.blog/zh-cn/p/shimura-goro/)这位孤高数学家的一生，一边深入探讨他在数学界树立的不朽丰碑，以及其背后严酷的哲学与美学。毫不夸张地说，理解他的成就，就等于理解20世纪后期数学是如何发展的。
 

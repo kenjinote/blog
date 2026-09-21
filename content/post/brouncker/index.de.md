@@ -16,7 +16,7 @@ Dieser Artikel bietet eine detaillierte Erklärung des Lebens und der bemerkensw
 
 ## 2. Frühes Leben und Karriere
 
-[William Brouncker](https://kenji.blog/de/p/brouncker/) (1620 - 5. April 1684) wurde als ältester Sohn von [William Brouncker](https://kenji.blog/de/p/brouncker/), 1. Viscount [Brouncker](https://kenji.blog/de/p/brouncker/), und Winifred Leigh geboren. Obwohl viele Details über seinen genauen Geburtsort und seine frühe Bildung unbekannt sind, wird angenommen, dass er an der Universität Oxford studierte und dort exzellente sprachliche Fähigkeiten und ein mathematisches Gespür entwickelte. Im Jahr 1645 wurde er nach dem Tod seines Vaters der 2. Viscount [Brouncker](https://kenji.blog/de/p/brouncker/).
+[William Brouncker](https://kenji.blog/de/p/brouncker/) (1620 - 5. April 1684) wurde als ältester Sohn von William Brouncker, 1. Viscount Brouncker, und Winifred Leigh geboren. Obwohl viele Details über seinen genauen Geburtsort und seine frühe Bildung unbekannt sind, wird angenommen, dass er an der Universität Oxford studierte und dort exzellente sprachliche Fähigkeiten und ein mathematisches Gespür entwickelte. Im Jahr 1645 wurde er nach dem Tod seines Vaters der 2. Viscount [Brouncker](https://kenji.blog/de/p/brouncker/).
 
 Zu dieser Zeit befand sich England in der chaotischen Phase der Puritanischen Revolution (Englischer Bürgerkrieg), aber [Brouncker](https://kenji.blog/de/p/brouncker/) widmete sich mehr der akademischen Welt als der politischen Bühne. Er hatte ein besonders starkes Interesse an Mathematik und Musik und begann, seine eigenen Theorien aufzustellen. Im Jahr 1647 wurde ihm ein Doktortitel in Medizin von der Universität Oxford verliehen, aber sein Hauptinteresse galt stets den exakten Wissenschaften. Sein jüngerer Bruder, Henry [Brouncker](https://kenji.blog/de/p/brouncker/), war ebenfalls dafür bekannt, in der politischen und höfischen Welt aktiv zu sein, während er ein Interesse an Schach und Mathematik beibehielt.
 
@@ -50,7 +50,7 @@ $$
 \frac{\pi}{2} = \frac{2}{1} \cdot \frac{2}{3} \cdot \frac{4}{3} \cdot \frac{4}{5} \cdot \frac{6}{5} \cdot \frac{6}{7} \cdot \frac{8}{7} \cdots
 $$
 
-[Wallis](https://kenji.blog/de/p/wallis/) zeigte [Brouncker](https://kenji.blog/de/p/brouncker/) dieses Ergebnis und fragte, ob es in einer anderen Form ausgedrückt werden könnte. Als Antwort darauf wandelte [Brouncker](https://kenji.blog/de/p/brouncker/) diese Gleichung durch algebraische Manipulationen und ein cleveres Konzept von Grenzwerten meisterhaft in einen Kettenbruch um. Dies ist die folgende **[Brouncker](https://kenji.blog/de/p/brouncker/)-Formel**:
+[Wallis](https://kenji.blog/de/p/wallis/) zeigte Brouncker dieses Ergebnis und fragte, ob es in einer anderen Form ausgedrückt werden könnte. Als Antwort darauf wandelte Brouncker diese Gleichung durch algebraische Manipulationen und ein cleveres Konzept von Grenzwerten meisterhaft in einen Kettenbruch um. Dies ist die folgende **[Brouncker](https://kenji.blog/de/p/brouncker/)-Formel**:
 
 $$
 \frac{4}{\pi} = 1 + \frac{1^2}{2 + \frac{3^2}{2 + \frac{5^2}{2 + \frac{7^2}{2 + \ddots}}}}
@@ -76,7 +76,7 @@ Im Jahr 1657 schickte der große französische Mathematiker [Pierre de Fermat](h
 
 ### [Brouncker](https://kenji.blog/de/p/brouncker/)s Algorithmus
 
-Es waren [Wallis](https://kenji.blog/de/p/wallis/) und [Brouncker](https://kenji.blog/de/p/brouncker/), die sich dieser Herausforderung stellten. Insbesondere [Brouncker](https://kenji.blog/de/p/brouncker/) entwickelte eine Methode, die praktisch dem heute als "Kettenbruchmethode" bekannten Algorithmus entsprach, und etablierte ein Verfahren, um die minimale positive ganzzahlige Lösung der Gleichung für jede Nicht-Quadratzahl $n$ zu finden.
+Es waren [Wallis](https://kenji.blog/de/p/wallis/) und Brouncker, die sich dieser Herausforderung stellten. Insbesondere [Brouncker](https://kenji.blog/de/p/brouncker/) entwickelte eine Methode, die praktisch dem heute als "Kettenbruchmethode" bekannten Algorithmus entsprach, und etablierte ein Verfahren, um die minimale positive ganzzahlige Lösung der Gleichung für jede Nicht-Quadratzahl $n$ zu finden.
 
 ```mermaid
 sequenceDiagram
@@ -98,7 +98,7 @@ $$
 x = 1766319049, \quad y = 226153980
 $$
 
-[Brouncker](https://kenji.blog/de/p/brouncker/) demonstrierte, dass mit seiner Methode selbst solch gigantische Lösungen systematisch abgeleitet werden können. Ironischerweise wurde diese Gleichung später aufgrund eines Missverständnisses von [Leonhard Euler](https://kenji.blog/de/p/euler/) nach dem englischen Mathematiker John Pell benannt, aber der größte Beitrag zur Etablierung der Lösungsmethode gehört unbestreitbar [Brouncker](https://kenji.blog/de/p/brouncker/).
+[Brouncker](https://kenji.blog/de/p/brouncker/) demonstrierte, dass mit seiner Methode selbst solch gigantische Lösungen systematisch abgeleitet werden können. Ironischerweise wurde diese Gleichung später aufgrund eines Missverständnisses von Leonhard Euler nach dem englischen Mathematiker John Pell benannt, aber der größte Beitrag zur Etablierung der Lösungsmethode gehört unbestreitbar [Brouncker](https://kenji.blog/de/p/brouncker/).
 
 ## 6. Weitere Errungenschaften und späte Jahre
 

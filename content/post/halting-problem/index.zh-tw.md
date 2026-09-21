@@ -158,7 +158,7 @@ graph TD
 
 ## 與[哥德爾不完備定理](https://kenji.blog/zh-tw/p/godels-incompleteness-theorems/)的深層關聯
 
-[停止性問題](https://kenji.blog/zh-tw/p/turing-machine-computability/)證明根底的「自我指涉悖論」，與圖靈之前，在 1931 年由[庫爾特·哥德爾](https://kenji.blog/zh-tw/p/godel/)（[Kurt Gödel](https://kenji.blog/zh-tw/p/godel/)）發表的 **「不完備定理（Incompleteness Theorems）」** 有著深層的關聯。
+[停止性問題](https://kenji.blog/zh-tw/p/turing-machine-computability/)證明根底的「自我指涉悖論」，與圖靈之前，在 1931 年由庫爾特·哥德爾（[Kurt Gödel](https://kenji.blog/zh-tw/p/godel/)）發表的 **「不完備定理（Incompleteness Theorems）」** 有著深層的關聯。
 
 哥德爾的第一不完備定理指出：「在包含自然數論且足夠強大的公理系統中，必定存在無法證明也無法反證的真命題。」哥德爾在這個定理的證明中，在數學上建構了「這個命題無法被證明」這樣的自我指涉命題。
 

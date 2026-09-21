@@ -23,7 +23,7 @@ Les nombres premiers jumeaux (Twin Primes) sont des paires de nombres premiers d
 - $(29, 31)$
 - $(41, 43)$
 
-Le [Théorème des Nombres Premiers ([Prime Number Theorem](https://kenji.blog/fr/p/prime-number-theorem/))](https://kenji.blog/p/prime-number-theorem/) indique qu'à mesure que les nombres deviennent plus grands, la fréquence d'apparition des nombres premiers eux-mêmes diminue. Par conséquent, la fréquence d'apparition des nombres premiers jumeaux diminue également. Cependant, les mathématiciens supposent depuis longtemps que, peu importe la grandeur des nombres, ces "paires de nombres premiers avec une différence de 2" continueront d'apparaître indéfiniment.
+Le [Théorème des Nombres Premiers (Prime Number Theorem)](https://kenji.blog/p/prime-number-theorem/) indique qu'à mesure que les nombres deviennent plus grands, la fréquence d'apparition des nombres premiers eux-mêmes diminue. Par conséquent, la fréquence d'apparition des nombres premiers jumeaux diminue également. Cependant, les mathématiciens supposent depuis longtemps que, peu importe la grandeur des nombres, ces "paires de nombres premiers avec une différence de 2" continueront d'apparaître indéfiniment.
 
 C'est la **Conjecture des Nombres Premiers Jumeaux** .
 

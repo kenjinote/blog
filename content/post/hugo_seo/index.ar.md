@@ -313,7 +313,7 @@ expiryDate: "2026-12-31T23:59:59Z"
 
 ## 7. أداء الموقع ومؤشرات الويب الأساسية (Core [Web Vitals](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))
 
-في تحسين محركات البحث، **سرعة تحميل الصفحة** لا تقل أهمية عن تحسين العلامات. تدمج Google مؤشرات الويب الأساسية ([LCP](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)، [FID](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)، [CLS](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) كعوامل تصنيف.
+في تحسين محركات البحث، **سرعة تحميل الصفحة** لا تقل أهمية عن تحسين العلامات. تدمج Google مؤشرات الويب الأساسية ([LCP](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)، FID/INP، [CLS](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) كعوامل تصنيف.
 
 يتميز Hugo كموقع ثابت بـ TTFB (وقت الوصول لأول بايت) ممتاز، ولكن بالنسبة للمدونات التي تستخدم الكثير من الصور، فإن تحسين الصور أمر ضروري. من خلال دمج ميزة معالجة الصور القوية في Hugo مع Frontmatter، يمكنك أتمتة التحويل إلى تنسيقات الجيل التالي (مثل WebP) وتغيير الحجم أثناء البناء.
 

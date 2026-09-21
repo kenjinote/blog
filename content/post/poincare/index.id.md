@@ -14,7 +14,7 @@ Dalam artikel ini, kita akan mengeksplorasi dengan volume dan kedalaman yang lua
 
 ## 1. Kehidupan Awal dan Lingkungan Pendidikan yang Unik: Tumbuhnya Seorang Jenius
 
-[Henri Poincaré](https://kenji.blog/id/p/poincare/) lahir pada tanggal 29 April 1854, di kota Nancy, Prancis timur laut, dari keluarga elit yang sangat intelektual. Ayahnya, Léon [Poincaré](https://kenji.blog/id/p/poincare/), adalah seorang profesor di fakultas kedokteran di Universitas Nancy, dan sepupunya, Raymond [Poincaré](https://kenji.blog/id/p/poincare/), kelak menjadi politisi terkemuka yang menjabat sebagai Perdana Menteri dan Presiden Prancis. Lingkungan keluarga yang sangat mendukung ini sangat merangsang keingintahuan intelektualnya.
+[Henri Poincaré](https://kenji.blog/id/p/poincare/) lahir pada tanggal 29 April 1854, di kota Nancy, Prancis timur laut, dari keluarga elit yang sangat intelektual. Ayahnya, Léon Poincaré, adalah seorang profesor di fakultas kedokteran di Universitas Nancy, dan sepupunya, Raymond [Poincaré](https://kenji.blog/id/p/poincare/), kelak menjadi politisi terkemuka yang menjabat sebagai Perdana Menteri dan Presiden Prancis. Lingkungan keluarga yang sangat mendukung ini sangat merangsang keingintahuan intelektualnya.
 
 Selama masa kecilnya, [Poincaré](https://kenji.blog/id/p/poincare/) menderita difteri, yang membuatnya tidak dapat berbicara untuk waktu yang lama dan harus terbaring di tempat tidur. Namun, periode isolasi ini secara tidak normal mengembangkan kemampuan berpikir internalnya. Ia memiliki **ingatan intuitif** yang memungkinkannya untuk menghafal isi sebuah buku dengan sempurna setelah membacanya hanya sekali, dan ia belajar untuk memanipulasi secara bebas susunan visual huruf dan hubungan spasial di dalam pikirannya.
 
@@ -67,7 +67,7 @@ $$
 x' = \gamma (x - vt), \quad t' = \gamma \left(t - \frac{vx}{c^2}\right) \quad (\text{di mana } c \text{ adalah kecepatan cahaya dalam ruang hampa})
 $$
 
-Selain itu, [Poincaré](https://kenji.blog/id/p/poincare/) dengan cepat memperkenalkan konsep ruang-waktu empat dimensi dan mendefinisikan "Grup [Poincaré](https://kenji.blog/id/p/poincare/)," yang menunjukkan bahwa hukum fisika adalah invarian di bawah transformasi Lorentz. Sementara Einstein membangun teori relativitas dari pendekatan fisik dan intuitif, [Poincaré](https://kenji.blog/id/p/poincare/) telah sampai pada kebenaran yang sama dari perspektif keindahan struktural matematika dan geometris.
+Selain itu, [Poincaré](https://kenji.blog/id/p/poincare/) dengan cepat memperkenalkan konsep ruang-waktu empat dimensi dan mendefinisikan "Grup Poincaré," yang menunjukkan bahwa hukum fisika adalah invarian di bawah transformasi Lorentz. Sementara Einstein membangun teori relativitas dari pendekatan fisik dan intuitif, [Poincaré](https://kenji.blog/id/p/poincare/) telah sampai pada kebenaran yang sama dari perspektif keindahan struktural matematika dan geometris.
 
 ## 5. Ketidaksadaran dan Kreativitas: Psikologi Inspirasi
 
@@ -75,15 +75,15 @@ Selain itu, [Poincaré](https://kenji.blog/id/p/poincare/) dengan cepat memperke
 
 Ia telah menderita karena masalah matematika yang sulit selama beberapa bulan, tidak dapat menemukan petunjuk untuk solusinya meskipun perhitungan sadar dan penalaran logis berulang kali dilakukan. Karena kelelahan, ia memutuskan untuk menjauh dari penelitiannya dan mengikuti tamasya geologi. Kemudian, selama perjalanan, tepat pada saat ia hendak naik omnibus yang ditarik kuda di kota Coutances, sebuah solusi sempurna tiba-tiba terlintas di benaknya.
 
-> "Pada saat saya menginjakkan kaki di tangga, ide itu datang kepada saya, tanpa ada satu pun dari pikiran saya sebelumnya yang tampaknya telah membuka jalan untuk itu, bahwa transformasi yang telah saya gunakan untuk mendefinisikan fungsi Fuchsian identik dengan geometri non-[[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an. Saya tidak memverifikasi ide tersebut; saya tidak akan punya waktu, karena, setelah duduk di omnibus, saya melanjutkan percakapan yang sudah dimulai, tetapi saya merasakan kepastian yang sempurna."
+> "Pada saat saya menginjakkan kaki di tangga, ide itu datang kepada saya, tanpa ada satu pun dari pikiran saya sebelumnya yang tampaknya telah membuka jalan untuk itu, bahwa transformasi yang telah saya gunakan untuk mendefinisikan fungsi Fuchsian identik dengan geometri non-[Euclide](https://kenji.blog/p/euclid/)an. Saya tidak memverifikasi ide tersebut; saya tidak akan punya waktu, karena, setelah duduk di omnibus, saya melanjutkan percakapan yang sudah dimulai, tetapi saya merasakan kepastian yang sempurna."
 
 Dari pengalaman ini, [Poincaré](https://kenji.blog/id/p/poincare/) mengkategorikan proses penemuan kreatif ke dalam empat tahap: "Persiapan" (upaya sadar), "Inkubasi" (menggabungkan informasi di alam bawah sadar), "Iluminasi" (pemahaman intuitif yang tiba-tiba), dan "Verifikasi" (bukti logis). Wawasannya membuktikan betapa kuatnya alam bawah sadar sebagai sumber daya komputasi di kedalaman pemikiran manusia.
 
 ## 6. Filsafat Sains: Pembelaan Konvensionalisme
 
-[Poincaré](https://kenji.blog/id/p/poincare/) juga meninggalkan jejak besar dalam bidang filsafat sains. Ia menganjurkan sebuah posisi yang dikenal sebagai **Konvensionalisme** . Ini adalah gagasan bahwa "aksioma dan hukum fundamental dalam sains (seperti aksioma geometri [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an) bukanlah kebenaran apriori maupun fakta empiris, melainkan sekadar 'konvensi yang nyaman' yang diadopsi manusia untuk menggambarkan alam."
+[Poincaré](https://kenji.blog/id/p/poincare/) juga meninggalkan jejak besar dalam bidang filsafat sains. Ia menganjurkan sebuah posisi yang dikenal sebagai **Konvensionalisme** . Ini adalah gagasan bahwa "aksioma dan hukum fundamental dalam sains (seperti aksioma geometri [Euclide](https://kenji.blog/p/euclid/)an) bukanlah kebenaran apriori maupun fakta empiris, melainkan sekadar 'konvensi yang nyaman' yang diadopsi manusia untuk menggambarkan alam."
 
-Ia menyatakan, "Bukannya geometri [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an benar dan geometri non-[[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an salah. Sama halnya dengan mengatakan bahwa sistem metrik tidak lebih benar daripada sistem yard." Sikap filosofis yang fleksibel ini kemudian menjadi dasar ideologis yang penting ketika Einstein membangun Teori Relativitas Umum menggunakan geometri non-[[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an.
+Ia menyatakan, "Bukannya geometri [Euclide](https://kenji.blog/p/euclid/)an benar dan geometri non-Euclidean salah. Sama halnya dengan mengatakan bahwa sistem metrik tidak lebih benar daripada sistem yard." Sikap filosofis yang fleksibel ini kemudian menjadi dasar ideologis yang penting ketika Einstein membangun Teori Relativitas Umum menggunakan geometri non-[Euclide](https://kenji.blog/p/euclid/)an.
 
 ## 7. Kesimpulan: Warisan Abadi [Poincaré](https://kenji.blog/id/p/poincare/)
 

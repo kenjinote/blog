@@ -30,7 +30,7 @@ Pernyataan ini bukan sekadar puitis; ia didukung oleh keyakinannya yang kuat pad
 
 [Kronecker](https://kenji.blog/id/p/kronecker/) lahir pada tahun 1823 di sebuah keluarga Yahudi yang kaya raya di Liegnitz, Prusia (sekarang Legnica, Polandia). Menunjukkan kecerdasan yang luar biasa sejak usia muda, ia mendaftar di Gymnasium (sekolah menengah lanjutan) setempat.
 
-Di sinilah pertemuan yang menentukan terjadi. Seorang guru baru tiba di Gymnasium— **[Ernst Kummer](https://kenji.blog/id/p/kummer/)** , yang nantinya akan menjadi pelopor teori ideal. [Kummer](https://kenji.blog/id/p/kummer/) segera mengenali bakat [Kronecker](https://kenji.blog/id/p/kronecker/) dan memberinya instruksi matematika tingkat lanjut yang disesuaikan secara khusus.
+Di sinilah pertemuan yang menentukan terjadi. Seorang guru baru tiba di Gymnasium— **[Ernst Kummer](https://kenji.blog/id/p/kummer/)** , yang nantinya akan menjadi pelopor teori ideal. Kummer segera mengenali bakat [Kronecker](https://kenji.blog/id/p/kronecker/) dan memberinya instruksi matematika tingkat lanjut yang disesuaikan secara khusus.
 
 ```mermaid
 graph TD
@@ -120,7 +120,7 @@ Teorema ini menunjukkan bahwa konsep abstrak dari "perluasan [Abel](https://kenj
 
 ## 4.4. Mimpi Masa Muda [Kronecker](https://kenji.blog/id/p/kronecker/) (Jugendtraum)
 
-Teorema [Kronecker](https://kenji.blog/id/p/kronecker/)-Weber berkaitan dengan perluasan [Abel](https://kenji.blog/id/p/abel/)ian di atas bilangan rasional $\mathbb{Q}$. [Kronecker](https://kenji.blog/id/p/kronecker/) bermimpi untuk memperluas hal ini ke lapangan aljabar yang lebih umum, seperti lapangan kuadratik imajiner. Pertanyaan besarnya, "Apakah semua perluasan [Abel](https://kenji.blog/id/p/abel/)ian dari lapangan kuadratik imajiner dihasilkan oleh nilai-nilai khusus dari fungsi-fungsi tertentu?", kemudian dirumuskan sebagai **Masalah [Hilbert](https://kenji.blog/id/p/hilbert/) ke-12** .
+Teorema [Kronecker](https://kenji.blog/id/p/kronecker/)-Weber berkaitan dengan perluasan Abelian di atas bilangan rasional $\mathbb{Q}$. Kronecker bermimpi untuk memperluas hal ini ke lapangan aljabar yang lebih umum, seperti lapangan kuadratik imajiner. Pertanyaan besarnya, "Apakah semua perluasan Abelian dari lapangan kuadratik imajiner dihasilkan oleh nilai-nilai khusus dari fungsi-fungsi tertentu?", kemudian dirumuskan sebagai **Masalah [Hilbert](https://kenji.blog/id/p/hilbert/) ke-12** .
 
 Ia menyebut ini sebagai "mimpi masa mudanya yang paling disayangi." Meskipun masalah ini mengalami kemajuan besar melalui teori lapangan kelas Teiji [Takagi](https://kenji.blog/id/p/takagi-teiji/) dan teori perkalian kompleks yang menyusul, ia tetap menjadi masalah besar yang belum terpecahkan untuk lapangan aljabar yang sepenuhnya umum.
 
