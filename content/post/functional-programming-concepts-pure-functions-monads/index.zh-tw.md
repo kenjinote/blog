@@ -39,7 +39,9 @@ flowchart TD
 在數學上，λ 運算式定義如下：
 
 
+$$
 E ::= x \mid \lambda x. E \mid E_1 E_2
+$$
 
 
 這裡，$x$ 代表變數，$\lambda x. E$ 代表抽象化（函數定義），$E_1 E_2$ 代表函數應用。

@@ -39,7 +39,9 @@ Dieses Berechnungsmodell, das auf Funktionsanwendung und Variablenbindung basier
 Mathematisch wird ein Lambda-Ausdruck wie folgt definiert:
 
 
+$$
 E ::= x \mid \lambda x. E \mid E_1 E_2
+$$
 
 
 Hierbei steht $x$ für eine Variable, $\lambda x. E$ für eine Abstraktion (Funktionsdefinition) und $E_1 E_2$ für eine Funktionsanwendung.

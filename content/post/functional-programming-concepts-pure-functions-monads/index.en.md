@@ -39,7 +39,9 @@ This computational model, based on function application and variable binding, ha
 Mathematically, a lambda expression is defined as follows:
 
 
+$$
 E ::= x \mid \lambda x. E \mid E_1 E_2
+$$
 
 
 Here, $x$ represents a variable, $\lambda x. E$ represents abstraction (function definition), and $E_1 E_2$ represents function application.

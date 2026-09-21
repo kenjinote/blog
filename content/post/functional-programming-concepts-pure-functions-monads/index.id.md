@@ -39,7 +39,9 @@ Model komputasi yang didasarkan pada penerapan fungsi dan pengikatan variabel in
 Secara matematis, ekspresi lambda didefinisikan sebagai berikut:
 
 
+$$
 E ::= x \mid \lambda x. E \mid E_1 E_2
+$$
 
 
 Di sini, $x$ adalah variabel, $\lambda x. E$ adalah abstraksi (definisi fungsi), dan $E_1 E_2$ mewakili penerapan fungsi.

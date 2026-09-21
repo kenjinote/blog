@@ -39,7 +39,9 @@ Este modelo computacional, basado en la aplicación de funciones y la vinculaci�
 Matemáticamente, las expresiones lambda se definen de la siguiente manera:
 
 
+$$
 E ::= x \mid \lambda x. E \mid E_1 E_2
+$$
 
 
 Aquí, $x$ representa una variable, $\lambda x. E$ representa una abstracción (definición de función) y $E_1 E_2$ representa la aplicación de una función.
