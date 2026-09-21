@@ -40,7 +40,7 @@ description: '公開鍵暗号は、量子コンピュータの実用化により
 
 ### 耐量子計算機暗号（PQC）の主要なアプローチ
 
-`mermaid
+```mermaid
 graph LR
     PQC[耐量子計算機暗号 PQC] --> L[格子暗号 Lattice-based]
     PQC --> H[ハッシュベース暗号 Hash-based]
@@ -53,8 +53,7 @@ graph LR
     H --> H1(FIPS 205: SLH-DSA)
     
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
-`
-
+```
 ### 1. 格子ベース暗号（Lattice-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）
 
 現在、PQCの分野で最も有望視され、主流となっているのがこの「格子暗号」です。格子暗号は、多次元空間上の規則正しく並んだ点（格子点）に関する問題を安全性の根拠としています。有名な問題としては、「最短ベクトル問題（SVP：Shortest Vector Problem）」や「LWE問題（Learning With Errors）」などがあります。

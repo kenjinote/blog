@@ -39,13 +39,12 @@ $$
 1. **Ignore constant terms**: $O(2n) becomes $O(n).
 2. **Keep only the most dominant term**: $O(n^2 + n) becomes $O(n^2).
 
-`mermaid
+```mermaid
 graph TD
     A["Input size n"] -->|"Evaluation"| B["Big O notation"]
     B --> C["Time complexity"]
     B --> D["Space complexity"]
-`
-
+```
 # Common Time Complexities and Real Examples in Python
 
 From here, let's look at detailed explanations and Python code examples for common classes of Big O notation.
@@ -213,13 +212,12 @@ $$
 1. **Ignore constant terms**: $O(2n) becomes $O(n).
 2. **Keep only the most dominant term**: $O(n^2 + n) becomes $O(n^2).
 
-`mermaid
+```mermaid
 graph TD
     A["Input size n"] -->|"Evaluation"| B["Big O notation"]
     B --> C["Time complexity"]
     B --> D["Space complexity"]
-`
-
+```
 # Common Time Complexities and Real Examples in Python
 
 From here, let's look at detailed explanations and Python code examples for common classes of Big O notation.
@@ -387,13 +385,12 @@ $$
 1. **Ignore constant terms**: $O(2n) becomes $O(n).
 2. **Keep only the most dominant term**: $O(n^2 + n) becomes $O(n^2).
 
-`mermaid
+```mermaid
 graph TD
     A["Input size n"] -->|"Evaluation"| B["Big O notation"]
     B --> C["Time complexity"]
     B --> D["Space complexity"]
-`
-
+```
 # Common Time Complexities and Real Examples in Python
 
 From here, let's look at detailed explanations and Python code examples for common classes of Big O notation.
@@ -561,13 +558,12 @@ $$
 1. **Ignore constant terms**: $O(2n) becomes $O(n).
 2. **Keep only the most dominant term**: $O(n^2 + n) becomes $O(n^2).
 
-`mermaid
+```mermaid
 graph TD
     A["Input size n"] -->|"Evaluation"| B["Big O notation"]
     B --> C["Time complexity"]
     B --> D["Space complexity"]
-`
-
+```
 # Common Time Complexities and Real Examples in Python
 
 From here, let's look at detailed explanations and Python code examples for common classes of Big O notation.
@@ -735,13 +731,12 @@ $$
 1. **Ignore constant terms**: $O(2n) becomes $O(n).
 2. **Keep only the most dominant term**: $O(n^2 + n) becomes $O(n^2).
 
-`mermaid
+```mermaid
 graph TD
     A["Input size n"] -->|"Evaluation"| B["Big O notation"]
     B --> C["Time complexity"]
     B --> D["Space complexity"]
-`
-
+```
 # Common Time Complexities and Real Examples in Python
 
 From here, let's look at detailed explanations and Python code examples for common classes of Big O notation.
@@ -909,13 +904,12 @@ $$
 1. **Ignore constant terms**: $O(2n) becomes $O(n).
 2. **Keep only the most dominant term**: $O(n^2 + n) becomes $O(n^2).
 
-`mermaid
+```mermaid
 graph TD
     A["Input size n"] -->|"Evaluation"| B["Big O notation"]
     B --> C["Time complexity"]
     B --> D["Space complexity"]
-`
-
+```
 # Common Time Complexities and Real Examples in Python
 
 From here, let's look at detailed explanations and Python code examples for common classes of Big O notation.
@@ -1083,13 +1077,12 @@ $$
 1. **Ignore constant terms**: $O(2n) becomes $O(n).
 2. **Keep only the most dominant term**: $O(n^2 + n) becomes $O(n^2).
 
-`mermaid
+```mermaid
 graph TD
     A["Input size n"] -->|"Evaluation"| B["Big O notation"]
     B --> C["Time complexity"]
     B --> D["Space complexity"]
-`
-
+```
 # Common Time Complexities and Real Examples in Python
 
 From here, let's look at detailed explanations and Python code examples for common classes of Big O notation.
@@ -1257,13 +1250,12 @@ $$
 1. **Ignore constant terms**: $O(2n) becomes $O(n).
 2. **Keep only the most dominant term**: $O(n^2 + n) becomes $O(n^2).
 
-`mermaid
+```mermaid
 graph TD
     A["Input size n"] -->|"Evaluation"| B["Big O notation"]
     B --> C["Time complexity"]
     B --> D["Space complexity"]
-`
-
+```
 # Common Time Complexities and Real Examples in Python
 
 From here, let's look at detailed explanations and Python code examples for common classes of Big O notation.

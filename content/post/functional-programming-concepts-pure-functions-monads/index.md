@@ -21,7 +21,7 @@ tags:
 
 ## 1.1 プログラミングパラダイムの分類
 
-`mermaid
+```mermaid
 flowchart TD
     A["プログラミングパラダイム"] --> B["命令型 (Imperative)"]
     A --> C["宣言型 (Declarative)"]
@@ -29,8 +29,7 @@ flowchart TD
     B --> E["オブジェクト指向 (OOP)"]
     C --> F["論理型 (Logic)"]
     C --> G["関数型 (Functional)"]
-`
-
+```
 ## 1.2 ラムダ計算：数学的基礎
 
 関数型プログラミングの理論的基礎は、アロンゾ・チャーチらによって1930年代に考案された **ラムダ計算 (Lambda Calculus)** にあります。
@@ -105,14 +104,13 @@ numbers2 = numbers1 + [4]
 
 不変性を保ちながら新しいデータを毎回コピーするのは非効率に見えるかもしれません。しかし、関数型言語の多くは **永続データ構造 (Persistent Data Structures)** を用いて、変更の前後でデータ構造の一部を共有することで、メモリ効率と実行速度を最適化しています。
 
-`mermaid
+```mermaid
 flowchart TD
     NodeA["Node 1"] --> NodeB["Node 2"]
     NodeB --> NodeC["Node 3"]
     
     NodeD["New Node 1'"] --> NodeB
-`
-
+```
 このように、新しいリストは既存のノードを再利用します。
 
 # 4. モナド (Monads) の概念

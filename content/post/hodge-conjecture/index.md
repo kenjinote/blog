@@ -24,13 +24,12 @@ tags: ["Millennium Prize Problems", "Topology", "Algebraic Geometry", "Hodge Con
 
 ホッジ予想は、この2つの異なる分野が交差する地点に存在します。
 
-`mermaid
+```mermaid
 graph TD
     A["代数幾何学 (Algebraic Geometry)"] -->|"方程式による図形の定義"| C["ホッジ予想 (Hodge Conjecture)"]
     B["トポロジー (Topology)"] -->|"図形の大局的・連続的な性質"| C
     C -->|"微分幾何学 (Differential Geometry)"| D["複素多様体 (Complex Manifolds)"]
-`
-
+```
 ## 2. ホッジ予想の定式化
 
 ホッジ予想を正確に述べるためには、いくつかの専門的な概念を導入する必要があります。
@@ -75,7 +74,7 @@ graph TD
 
 トポロジーの世界の対象であるコホモロジー類が、代数幾何学の世界の対象である多項式の方程式から構成できるか、という問いなのです。
 
-`mermaid
+```mermaid
 sequenceDiagram
     participant T as "Topology (コホモロジー)"
     participant H as "Hodge Theory (ホッジ分解)"
@@ -84,8 +83,7 @@ sequenceDiagram
     T->>H: "位相的な情報を提供"
     H->>A: "ホッジ類を抽出 (有理数係数かつ (p,p) 型)"
     A-->>H: "代数的サイクルからホッジ類を構成可能か？ (ホッジ予想)"
-`
-
+```
 ## 4. ホッジ予想の進展と難しさ
 
 ホッジ予想は1950年の国際数学者会議でホッジ自身によって提唱されました。それ以来、多くの数学者がこの問題に取り組んできましたが、現在に至るまで完全な解決には至っていません。

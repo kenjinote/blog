@@ -29,7 +29,7 @@ Pour comprendre les conteneurs, clarifions d'abord la différence avec les machi
 
 Une machine virtuelle déploie un hyperviseur (VMware ESXi, KVM, Hyper-V, etc.) sur un serveur physique, sur lequel plusieurs systèmes d'exploitation invités (Virtual Machine) sont exécutés.
 
-``mermaid
+```mermaid
 graph TD
     Hardware["Hardware"] --> HostOS["Host OS / Hypervisor"]
     HostOS --> VM1["VM 1"]
@@ -42,15 +42,14 @@ graph TD
     subgraph "VM 2"
     GuestOS2["Guest OS"] --> Bins2["Bins/Libs"] --> App2["App B"]
     end
-``
-
+```
 L'approche VM offre un environnement d'isolement complet car elle émule à partir du niveau matériel. Cependant, parce qu'il faut démarrer un noyau indépendant (Guest OS) pour chaque VM, cela présente l'inconvénient d'un démarrage lent et d'une surcharge (overhead) importante du processeur et de la mémoire.
 
 ### Architecture d'un conteneur
 
 D'un autre côté, les conteneurs **partagent le noyau du système d'exploitation hôte**.
 
-``mermaid
+```mermaid
 graph TD
     Hardware["Hardware"] --> HostOS["Host OS"]
     HostOS --> ContainerEngine["Container Engine / Docker"]
@@ -65,8 +64,7 @@ graph TD
     subgraph "Container 2"
     Bins2["Bins/Libs"] --> App2["App B"]
     end
-``
-
+```
 Un conteneur n'est en réalité qu'un « processus Linux isolé ». Puisqu'il n'est pas nécessaire d'avoir un processus pour démarrer le noyau, il démarre en quelques millisecondes et la surcharge est minimisée.
 
 La magie qui réalise cette « isolation d'un processus comme s'il s'agissait d'un système d'exploitation indépendant » est accomplie par les **espaces de noms (Namespace)** et les **cgroups**, que nous expliquerons dans la section suivante.
@@ -177,7 +175,7 @@ L'une des caractéristiques des conteneurs est leur « structure en couches d'im
 
 OverlayFS est une technologie qui fusionne différents répertoires (couche inférieure et couche supérieure) pour les présenter comme un seul système de fichiers unifié.
 
-``mermaid
+```mermaid
 graph TD
     subgraph "Container Mount"
         Merge["Merged View <br> /var/lib/docker/overlay2/.../merged"]
@@ -199,8 +197,7 @@ graph TD
     Lower3 --> Merge
     
     Upper -.->|"Copy-on-Write (CoW)"| Lower1
-``
-
+```
 1. **Lowerdir (Répertoire inférieur)** : Correspond à chaque couche d'une image Docker. Celles-ci sont traitées en tant que **Read-Only (Lecture seule)**. Lorsque plusieurs conteneurs utilisent la même image, ils partagent ce répertoire inférieur, ce qui permet d'économiser considérablement de l'espace disque.
 2. **Upperdir (Répertoire supérieur)** : C'est la couche **Read/Write (Lecture/Écriture)** exclusive à ce conteneur, qui est ajoutée au moment de son démarrage. Lorsque vous créez ou modifiez des fichiers à l'intérieur du conteneur, tout est écrit dans cette couche supérieure.
 3. **Merged View (Vue fusionnée)** : Elle intègre le Lowerdir et le Upperdir, et les présente comme un seul système de fichiers visible par le conteneur.
@@ -237,7 +234,7 @@ Pour réduire le nombre de couches, on utilise souvent la technique consistant �
 
 Les premières versions de Docker avaient une conception monolithique (un seul gros bloc) pour tout, mais de nos jours, les fonctionnalités ont été divisées et la standardisation (OCI : Open Container Initiative) a progressé. Le cycle de vie actuel des conteneurs est constitué de la collaboration des composants suivants.
 
-``mermaid
+```mermaid
 sequenceDiagram
     participant User as "User (Docker CLI)"
     participant Dockerd as "dockerd (Docker Engine)"
@@ -253,8 +250,7 @@ sequenceDiagram
     Runc-->>Shim: "Exit (runc terminates after creation)"
     Shim->>Containerd: "Container is running"
     Containerd-->>Dockerd: "OK"
-``
-
+```
 1. **Docker CLI** : L'outil en ligne de commande manipulé par l'utilisateur.
 2. **dockerd (Docker Daemon)** : Fournit des fonctionnalités de haut niveau telles que la construction d'images, la gestion des réseaux et la gestion des volumes.
 3. **containerd** : Un démon spécialisé dans la gestion du cycle de vie des conteneurs (récupération (pull) d'images, démarrage et arrêt de conteneurs). C'est un composant standard également utilisé par Kubernetes.
@@ -269,7 +265,7 @@ Enfin, abordons le Network Namespace et les mécanismes de communication entre c
 
 Le modèle réseau par défaut de Docker est le **réseau Bridge (pont)**.
 
-``mermaid
+```mermaid
 graph TD
     subgraph "Host Network Namespace"
         Eth0["eth0 (Physical Interface)"]
@@ -292,8 +288,7 @@ graph TD
     
     VethHost1 <--> Eth0C1
     VethHost2 <--> Eth0C2
-``
-
+```
 - **veth pair (Virtual Ethernet Pair)** : Une paire de deux interfaces virtuelles. Si un paquet entre d'un côté, il ressort de l'autre.
 - Lors de la création d'un conteneur, Docker crée un nouveau Network Namespace, place un côté du veth pair à l'intérieur du conteneur (généralement nommé `eth0`), et l'autre côté sur l'hôte (tel que `vethXXXX`).
 - Le veth côté hôte est connecté au **`docker0` (périphérique pont)**, qui est un commutateur (switch) virtuel.
