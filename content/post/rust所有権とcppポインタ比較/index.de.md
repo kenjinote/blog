@@ -148,7 +148,7 @@ Der [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Compiler en
 > - **Genau eine veränderliche Referenz (`&mut T`)**
 > - **Mehrere unveränderliche Referenzen (`&T`)**
 
-Dies wird als das Prinzip **"Multiple Readers XOR Single Writer (MRSW)"** bezeichnet. Es kann durch ein mathematisches exklusives ODER (XOR) ausgedrückt werden. Für einen Zustand $S$ müssen die Anzahl der unveränderlichen Referenzen $N_r$ und die Anzahl der veränderlichen Referenzen $N_w$ die folgende Einschränkung erfüllen:
+Dies wird als das Prinzip **"Multiple Readers XOR Single Writer (MRSW)"** bezeichnet. Es kann durch ein mathematisches exklusives ODER (XOR) ausgedrückt werden. Für einen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $S$ müssen die Anzahl der unveränderlichen Referenzen $N_r$ und die Anzahl der veränderlichen Referenzen $N_w$ die folgende Einschränkung erfüllen:
 
 $$ (N_r \ge 0 \land N_w = 0) \oplus (N_r = 0 \land N_w = 1) $$
 

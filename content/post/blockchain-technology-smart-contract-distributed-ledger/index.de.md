@@ -93,7 +93,7 @@ Die gestaketen Vermögenswerte dienen als Sicherheit (Gegenstand von Strafen, so
 ### 2.3 Practical Byzantine Fault Tolerance (PBFT)
 
 ** PBFT ** wird häufig in Konsortium- oder privaten Blockchains (wie Hyperledger Fabric) eingesetzt.
-PBFT ist ein Algorithmus, der eine korrekte Konsensbildung garantiert, selbst wenn weniger als $1/3$ der Knoten im Netzwerk bösartig oder fehlerhaft (byzantinische Fehler) sind. Die Knoten bestätigen den Zustand durch einen Kommunikationsprozess, der in drei Phasen unterteilt ist: Pre-prepare, Prepare und Commit, ausgehend von der Auswahl eines Leader-Knotens. Im Gegensatz zur probabilistischen Finalität bei PoW (bei der die Wahrscheinlichkeit einer Umkehrung im Laufe der Zeit gegen Null geht) zeichnet sich PBFT durch sofortige Finalität (absolute Finalität) aus. Wegen des großen Kommunikations-Overheads ist es jedoch nicht für öffentliche Blockchains mit einer großen Anzahl von Knoten geeignet.
+PBFT ist ein Algorithmus, der eine korrekte Konsensbildung garantiert, selbst wenn weniger als $1/3$ der Knoten im Netzwerk bösartig oder fehlerhaft (byzantinische Fehler) sind. Die Knoten bestätigen den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) durch einen Kommunikationsprozess, der in drei Phasen unterteilt ist: Pre-prepare, Prepare und Commit, ausgehend von der Auswahl eines Leader-Knotens. Im Gegensatz zur probabilistischen Finalität bei PoW (bei der die Wahrscheinlichkeit einer Umkehrung im Laufe der Zeit gegen Null geht) zeichnet sich PBFT durch sofortige Finalität (absolute Finalität) aus. Wegen des großen Kommunikations-Overheads ist es jedoch nicht für öffentliche Blockchains mit einer großen Anzahl von Knoten geeignet.
 
 ## 3. Smart Contracts und die EVM (Ethereum Virtual Machine)
 
@@ -225,7 +225,7 @@ contract VulnerableBank {
 
 #### Beispiel für behobenen Code (Checks-Effects-Interactions Pattern)
 
-Der Best Practice zur Vermeidung von Reentrancy ist die Anwendung des ** Checks-Effects-Interactions **-Musters, bei dem der Zustand (wie z. B. der Kontostand) aktualisiert wird, bevor externe Aufrufe getätigt werden, oder die Verwendung des Modifikators `ReentrancyGuard` von OpenZeppelin.
+Der Best Practice zur Vermeidung von Reentrancy ist die Anwendung des ** Checks-Effects-Interactions **-Musters, bei dem der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) (wie z. B. der Kontostand) aktualisiert wird, bevor externe Aufrufe getätigt werden, oder die Verwendung des Modifikators `ReentrancyGuard` von OpenZeppelin.
 
 ```solidity
 contract SecureBank {

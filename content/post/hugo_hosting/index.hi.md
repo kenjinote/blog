@@ -240,7 +240,7 @@ Hugo में इसे लागू करना भी बहुत आसा
 {{ end }}
 ```
 
-`defer` एट्रिब्यूट (attribute) जोड़ने से, स्क्रिप्ट को HTML पार्सिंग को रोके बिना अतुल्यकालिक (asynchronously) रूप से लोड किया जा सकता है, और DOM निर्माण के बाद निष्पादित किया जा सकता है। यह प्रारंभिक प्रदर्शन गति (LCP: Largest Contentful [Paint](https://kenji.blog/hi/p/browser-rendering-mechanism-dom-paint/) और FCP: First Contentful Paint) पर प्रभाव को कम करता है।
+`defer` एट्रिब्यूट (attribute) जोड़ने से, स्क्रिप्ट को HTML पार्सिंग को रोके बिना अतुल्यकालिक (asynchronously) रूप से लोड किया जा सकता है, और DOM निर्माण के बाद निष्पादित किया जा सकता है। यह प्रारंभिक प्रदर्शन गति ([LCP](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/): Largest Contentful [Paint](https://kenji.blog/hi/p/browser-rendering-mechanism-dom-paint/) और FCP: First Contentful Paint) पर प्रभाव को कम करता है।
 
 ---
 

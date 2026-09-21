@@ -295,7 +295,7 @@ C++のネイティブコードへ処理を移管した場合、メモリマッ�
 
 WMI（Windows Management Instrumentation）やCIM（Common Information Model）では取得できない、独自のハードウェアデバイス（例: 特殊なPCIeカードやセンサー）の情報を監視する。
 - **C++の役割**: デバイスドライバに対する `DeviceIoControl` 呼び出しを行い、バイナリデータを取得・解析するDLL。
-- **PowerShellの役割**: 定期的にDLLを呼び出し、解析結果をJSONにフォーマットして監視サーバーのREST APIに送信する。
+- **PowerShellの役割**: 定期的にDLLを呼び出し、解析結果をJSONにフォーマットして監視サーバーの[REST API](https://kenji.blog/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)に送信する。
 
 ## [メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)とトラブルシューティングのベストプラクティス
 

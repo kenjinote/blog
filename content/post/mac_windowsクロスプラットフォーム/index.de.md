@@ -296,7 +296,7 @@ classDiagram
     SystemInterface <|-- PosixSystem
 ```
 
-Durch das Isolieren von plattformspezifischem Code an einem einzigen Ort (normalerweise in Verzeichnissen wie `src/platform/windows/` oder `src/platform/posix/`) können die verbleibenden 95 % des Codes (GUI-Logik, Datenverarbeitung, Parsing von Kommunikationsprotokollen usw.) vollständig plattformübergreifend und in einem testbaren Zustand gehalten werden.
+Durch das Isolieren von plattformspezifischem Code an einem einzigen Ort (normalerweise in Verzeichnissen wie `src/platform/windows/` oder `src/platform/posix/`) können die verbleibenden 95 % des Codes (GUI-Logik, Datenverarbeitung, Parsing von Kommunikationsprotokollen usw.) vollständig plattformübergreifend und in einem testbaren [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) gehalten werden.
 
 ---
 

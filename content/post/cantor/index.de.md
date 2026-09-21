@@ -16,7 +16,7 @@ tags:
 
 # Wer war [Georg Cantor](https://kenji.blog/de/p/cantor/)?
 
-In der Geschichte der Mathematik galt das Konzept der "Unendlichkeit" lange Zeit als Tabu. Die Unendlichkeit wurde strikt als ein "endloser Zustand (potenzielle Unendlichkeit)" behandelt, und es wurde als gefährlich angesehen, sie als "abgeschlossenes Ganzes (aktuale Unendlichkeit)" zu behandeln. Im späten 19. Jahrhundert gab es jedoch einen Mann, der dieses Tabu frontal herausforderte und die Unendlichkeit selbst als Gegenstand der Mathematik erschloss. Dieser Mann war **[Georg Cantor](https://kenji.blog/de/p/cantor/)**.
+In der Geschichte der Mathematik galt das Konzept der "Unendlichkeit" lange Zeit als Tabu. Die Unendlichkeit wurde strikt als ein "endloser [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) (potenzielle Unendlichkeit)" behandelt, und es wurde als gefährlich angesehen, sie als "abgeschlossenes Ganzes (aktuale Unendlichkeit)" zu behandeln. Im späten 19. Jahrhundert gab es jedoch einen Mann, der dieses Tabu frontal herausforderte und die Unendlichkeit selbst als Gegenstand der Mathematik erschloss. Dieser Mann war **[Georg Cantor](https://kenji.blog/de/p/cantor/)**.
 
 Seine Schaffung der "Mengenlehre" ist zur Grundlage jedes Bereichs der modernen Mathematik geworden. In diesem Artikel werden wir uns detailliert mit Cantors Leben und seinen erstaunlichen mathematischen Errungenschaften befassen.
 

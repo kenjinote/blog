@@ -23,7 +23,7 @@ Eines der Schlüsselworte, das dabei die meiste Aufmerksamkeit erregt hat, ist "
 Um die Quantenüberlegenheit zu verstehen, muss man zunächst die mathematischen Grundlagen der Quantenberechnung und ihre Stellung in der rechnerischen Komplexitätstheorie verstehen.
 
 ### Qubits und Superposition
-Während die kleinste Informationseinheit in einem klassischen Computer das Bit (0 oder 1) ist, verwenden Quantencomputer Quantenbits (Qubits). Der Zustand $|\psi\rangle$ eines Qubits wird als komplexe Linearkombination der Basiszustände $|0\rangle$ und $|1\rangle$ dargestellt.
+Während die kleinste Informationseinheit in einem klassischen Computer das Bit (0 oder 1) ist, verwenden Quantencomputer Quantenbits (Qubits). Der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $|\psi\rangle$ eines Qubits wird als komplexe Linearkombination der Basiszustände $|0\rangle$ und $|1\rangle$ dargestellt.
 
 $$
 |\psi\rangle = \alpha|0\rangle + \beta|1\rangle
@@ -38,7 +38,7 @@ $$
 |\Psi\rangle = \sum_{x \in \{0, 1\}^n} c_x |x\rangle
 $$
 
-Hierbei ist $\sum |c_x|^2 = 1$. Der Zustand, in dem Qubits nicht unabhängig sind, sondern der Zustand des einen von dem des anderen abhängt, wird als "Quantenverschränkung" (Quantum Entanglement) bezeichnet. Dadurch hat ein Quantencomputer das Potenzial, einen exponentiell großen Zustandsraum gleichzeitig zu verarbeiten.
+Hierbei ist $\sum |c_x|^2 = 1$. Der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), in dem Qubits nicht unabhängig sind, sondern der Zustand des einen von dem des anderen abhängt, wird als "Quantenverschränkung" (Quantum Entanglement) bezeichnet. Dadurch hat ein Quantencomputer das Potenzial, einen exponentiell großen Zustandsraum gleichzeitig zu verarbeiten.
 
 ### Komplexitätstheoretische Definition der Quantenüberlegenheit
 In der rechnerischen Komplexitätstheorie wird die Klasse der Probleme, die von einem klassischen Computer effizient (in polynomieller Zeit) gelöst werden können, als **BPP** (Bounded-error Probabilistic Polynomial time) bezeichnet. Andererseits ist die Klasse der Probleme, die von einem Quantencomputer effizient gelöst werden können, **BQP** (Bounded-error Quantum Polynomial time).
@@ -66,7 +66,7 @@ graph TD
 ### Zufälliges Quantenschaltkreis-Sampling (Random Circuit Sampling: RCS)
 Die von Google gewählte Aufgabe war das "zufällige Quantenschaltkreis-Sampling". Dabei werden zufällig ausgewählte 1-Qubit-Gatter und 2-Qubit-Gatter über mehrere Zyklen (Tiefe $m$) angewendet, der Endzustand wird gemessen, und aus der resultierenden Wahrscheinlichkeitsverteilung der Bitstrings wird ein Sampling durchgeführt.
 
-Die Wahrscheinlichkeit eines Bitstrings $x$, der von einem idealen (rauschfreien) zufälligen Quantenschaltkreis ausgegeben wird, ist keine Gleichverteilung, sondern zeigt ein Interferenzmuster-ähnliches Muster, das als Porter-Thomas-Verteilung bezeichnet wird. Um aus dieser Verteilung mit einem klassischen Computer abzutasten, ist eine Simulation des gesamten Zustandsvektors erforderlich, und der Rechenaufwand steigt exponentiell mit der Anzahl der Qubits $n$ und der Schaltkreistiefe $m$.
+Die Wahrscheinlichkeit eines Bitstrings $x$, der von einem idealen (rauschfreien) zufälligen Quantenschaltkreis ausgegeben wird, ist keine Gleichverteilung, sondern zeigt ein Interferenzmuster-ähnliches Muster, das als Porter-Thomas-Verteilung bezeichnet wird. Um aus dieser Verteilung mit einem klassischen Computer abzutasten, ist eine Simulation des gesamten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)svektors erforderlich, und der Rechenaufwand steigt exponentiell mit der Anzahl der Qubits $n$ und der Schaltkreistiefe $m$.
 
 ### Bewertung der Genauigkeit (Fidelity): Lineares Kreuzentropie-Benchmarking (XEB)
 Um zu beweisen, dass die experimentellen Ergebnisse nicht nur Rauschen waren, sondern tatsächlich das Ergebnis einer Quantenberechnung, verwendete Google das lineare Kreuzentropie-Benchmarking (Linear Cross-Entropy Benchmarking: XEB). Die ideale Wahrscheinlichkeit $P(x_i)$ des Schaltkreises für die im Experiment erhaltenen Bitstrings $x_i$ wird auf einem klassischen Computer berechnet, und die Genauigkeit (Fidelity) $\mathcal{F}_{\text{XEB}}$ wird mit der folgenden Formel ermittelt:

@@ -187,7 +187,7 @@ Um WordPress-Daten für Hugo auszugeben, ist die Verwendung eines dedizierten Pl
 1. **Verwendung des Jekyll Exporter-Plugins**
    Da Hugo eine sehr ähnliche Datenstruktur wie Jekyll, ein anderer SSG, aufweist, ist die Verwendung des "Jekyll Exporter"-Plugins für WordPress eine gängige Methode. Wenn Sie dieses Plugin installieren und ausführen, werden alle Beiträge und statischen Seiten in Markdown-Dateien mit Front Matter konvertiert und können zusammen mit den Bilddateien als ZIP-Datei heruntergeladen werden.
 2. **Eigenes Skript mit der WordPress API**
-   Dies ist eine Methode, bei der Sie mit Python, Node.js usw. auf die WordPress REST API (`/wp-json/wp/v2/posts`) zugreifen, die JSON-Daten parsen und Ihr eigenes Skript erstellen, um die Markdown-Dateien selbst zu generieren. Dies ist effektiv für Websites, die intensiv komplexe benutzerdefinierte Felder (wie ACF) verwenden, die nicht vollständig von Plugins verarbeitet werden können.
+   Dies ist eine Methode, bei der Sie mit Python, Node.js usw. auf die WordPress [REST API](https://kenji.blog/de/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/de/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) (`/wp-json/wp/v2/posts`) zugreifen, die JSON-Daten parsen und Ihr eigenes Skript erstellen, um die Markdown-Dateien selbst zu generieren. Dies ist effektiv für Websites, die intensiv komplexe benutzerdefinierte Felder (wie ACF) verwenden, die nicht vollständig von Plugins verarbeitet werden können.
 3. **Nutzung des wp2hugo-Tools**
    Es gibt auch einen Ansatz, ein in Go geschriebenes CLI-Tool zu verwenden, um direkt von einer WordPress-Export-XML-Datei (WXR) in das Hugo-Format zu konvertieren.
 
@@ -300,8 +300,8 @@ Durch diese Einrichtung wird eine automatisierte [Pipeline](https://kenji.blog/d
 
 Website-Betreiber, die die Migration von WordPress zu Hugo abgeschlossen haben, erleben in den meisten Fällen die folgenden drei signifikanten Vorteile.
 
-### 6.1 Drastische Verbesserung der Website-Geschwindigkeit und Core Web Vitals
-Durch den Wegfall von Datenbankabfragen und serverseitigem Rendering wird die Ladezeit von Seiten auf Millisekunden reduziert. Dies führt direkt zu einer deutlichen Verbesserung der "Core Web Vitals"-Werte (LCP, FID/INP, CLS), die Google als Ranking-Faktoren verwendet. Ein Rückgang der Absprungrate der Nutzer und eine Verbesserung der SEO-Bewertung sind zu erwarten.
+### 6.1 Drastische Verbesserung der Website-Geschwindigkeit und Core [Web Vitals](https://kenji.blog/de/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
+Durch den Wegfall von Datenbankabfragen und serverseitigem Rendering wird die Ladezeit von Seiten auf Millisekunden reduziert. Dies führt direkt zu einer deutlichen Verbesserung der "[Core Web Vitals](https://kenji.blog/de/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)"-Werte ([LCP](https://kenji.blog/de/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/de/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/de/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/de/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)), die Google als Ranking-Faktoren verwendet. Ein Rückgang der Absprungrate der Nutzer und eine Verbesserung der SEO-Bewertung sind zu erwarten.
 
 ### 6.2 Befreiung von Sicherheitsbedrohungen
 Da WordPress weltweit weit verbreitet ist, ist es ein ständiges Ziel von Angriffen. Es bestehen immer Risiken wie Verfälschungen durch das Ausnutzen von Plugin-Schwachstellen oder das Knacken von Logins durch Brute-Force-Angriffe.

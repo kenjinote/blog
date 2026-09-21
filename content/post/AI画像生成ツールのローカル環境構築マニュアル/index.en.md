@@ -264,7 +264,7 @@ Frequently occurring errors in local environment setup and operation, along with
 
 ## 10. Conclusion: The Future of AI Image Generation and the Superiority of Local Environments
 
-The open-source AI image generation movement that began with Stable Diffusion continues to evolve into next-generation architectures like SDXL, and Stable Diffusion 3 or Flux.1. The number of parameters in models has grown immensely from billions to tens of billions, and moving forward, GPU environments with 24GB of VRAM or more will become increasingly necessary.
+The open-source AI image generation movement that began with Stable Diffusion continues to evolve into next-generation architectures like SDXL, and Stable Diffusion 3 or [Flux](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/).1. The number of parameters in models has grown immensely from billions to tens of billions, and moving forward, GPU environments with 24GB of VRAM or more will become increasingly necessary.
 
 However, local optimization technologies such as TensorRT, Quantization, and GGUF are also accelerating their speed of evolution, and an ecosystem is forming where sufficient inference becomes possible even on hardware for general consumers.
 

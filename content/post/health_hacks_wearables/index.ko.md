@@ -21,7 +21,7 @@ description: 'Oura Ring 등 스마트 링이나 Apple Watch에서 수집한 HRV,
 생체 데이터를 수집하기 위한 센서(웨어러블 기기)는 각각 특화된 영역이 있습니다. 데이터 주도적인 건강 관리에서는 목적에 따라 최적의 기기를 선택하는 것이 첫걸음입니다.
 
 ### 2.1 Oura Ring (Generation 3 / 4)
-손가락 동맥에서 직접 데이터를 수집하기 때문에, 손목에서 측정하는 스마트워치에 비해 수면 중 심박수나 심박 변이도(HRV), 체표온 변화의 측정 정확도가 매우 높은 것이 특징입니다. 손가락에는 모세혈관이 밀집해 있어 광학식 심박 센서(PPG: Photoplethysmography)를 통해 노이즈가 적은 데이터를 얻을 수 있습니다. 또한 REST API가 잘 갖춰져 있어 [[OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)을 통해 JSON 형식의 원시 데이터를 쉽게 내보낼 수 있으므로, 엔지니어에게 있어 가장 해킹하기 좋은(Hackable) 기기라고 할 수 있습니다.
+손가락 동맥에서 직접 데이터를 수집하기 때문에, 손목에서 측정하는 스마트워치에 비해 수면 중 심박수나 심박 변이도(HRV), 체표온 변화의 측정 정확도가 매우 높은 것이 특징입니다. 손가락에는 모세혈관이 밀집해 있어 광학식 심박 센서(PPG: Photoplethysmography)를 통해 노이즈가 적은 데이터를 얻을 수 있습니다. 또한 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)가 잘 갖춰져 있어 [[OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)을 통해 JSON 형식의 원시 데이터를 쉽게 내보낼 수 있으므로, 엔지니어에게 있어 가장 해킹하기 좋은(Hackable) 기기라고 할 수 있습니다.
 
 ### 2.2 Apple Watch Series / Ultra
 활동 중 트래킹이나 혈중 산소 포화도(SpO2), 심전도(ECG) 측정에 뛰어납니다. 낮 동안의 활동량이나 마음챙김 앱(심호흡 앱)을 통한 온디맨드 HRV 측정에 있어서는 최강의 기기입니다. 단, 데이터 내보내기는 HealthKit을 거쳐야 하며, Python 등에서 직접 접근하려면 iOS 앱(AutoSleep이나 HealthFit 등)을 통해 CSV로 내보내는 등 한 단계의 쿠션이 필요합니다.

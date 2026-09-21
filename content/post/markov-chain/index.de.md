@@ -16,7 +16,7 @@ tags:
 
 Die Welt, in der wir leben, ist voller Ungewissheit. Es gibt viele schwer vorhersehbare Phänomene, wie das Wetter von morgen, Aktienkursschwankungen und Seitenübergänge im Internet. Ein leistungsfähiges Werkzeug zur mathematischen Modellierung solcher unsicheren Phänomene ist die **Markow-Kette** .
 
-Das Hauptmerkmal einer Markow-Kette ist die **Markow-Eigenschaft** , was bedeutet, dass "der zukünftige Zustand nur vom aktuellen Zustand abhängt, nicht von der Vorgeschichte". In diesem Artikel werden wir die Grundlagen dieses faszinierenden mathematischen Modells, spezifische Berechnungsmethoden und seine Anwendungen in der realen Welt im Detail erläutern.
+Das Hauptmerkmal einer Markow-Kette ist die **Markow-Eigenschaft** , was bedeutet, dass "der zukünftige [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) nur vom aktuellen Zustand abhängt, nicht von der Vorgeschichte". In diesem Artikel werden wir die Grundlagen dieses faszinierenden mathematischen Modells, spezifische Berechnungsmethoden und seine Anwendungen in der realen Welt im Detail erläutern.
 
 ## Was ist die Markow-Eigenschaft?
 
@@ -103,7 +103,7 @@ Das Auflösen ergibt $\pi_{\text{Sonnig}} = \frac{4}{7} \approx 0.57$ und $\pi_{
 [Markow-Ketten](https://kenji.blog/de/p/markov-chain/) sind nicht auf die Welt der Mathematik beschränkt; sie werden in verschiedenen realen Systemen angewendet.
 
 ### 1. PageRank-Algorithmus von Google
-Durch die Behandlung von Webseiten im Internet als Zustände und den Vorgang des Verfolgens von Links als Wahrscheinlichkeitsübergänge wird die Wichtigkeit von Seiten berechnet. Man kann sagen, dass PageRank eine stationäre Verteilung im riesigen Zustandsraum des Internets sucht.
+Durch die Behandlung von Webseiten im Internet als Zustände und den Vorgang des Verfolgens von Links als Wahrscheinlichkeitsübergänge wird die Wichtigkeit von Seiten berechnet. Man kann sagen, dass PageRank eine stationäre Verteilung im riesigen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sraum des Internets sucht.
 
 ### 2. Verarbeitung natürlicher Sprache und Texterstellung
 Durch die Modellierung der Wortfolge in einem Satz mit einer Markow-Kette ist es möglich, das Wort vorherzusagen, das wahrscheinlich als nächstes kommt, und natürliche Sätze zu erzeugen (N-Gramm-Modelle). Dies ist die Grundidee moderner KI-Sprachmodelle.

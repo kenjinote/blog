@@ -134,7 +134,7 @@ AI也许能写出“优先考虑C的代码”或“优先考虑A的代码”，�
 
 ### 4.2 异步通信与最终一致性（Eventual Consistency）
 
-当系统规模变大时，服务间的协同将从通过REST API进行的同步通信，转变为使用消息队列（Kafka, RabbitMQ等）的异步通信。此时数据的一致性也从强一致性转变为“最终一致性（Eventual Consistency）”。
+当系统规模变大时，服务间的协同将从通过[REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)进行的同步通信，转变为使用消息队列（Kafka, RabbitMQ等）的异步通信。此时数据的一致性也从强一致性转变为“最终一致性（Eventual Consistency）”。
 应该在什么时候引入Saga模式或[CQRS](https://kenji.blog/zh-cn/p/event-driven-architecture-async/)（Command Query Responsibility Segregation，命令查询职责分离）等高级架构模式？做出这些复杂的决策并描绘系统整体的蓝图，正是高级工程师的真正价值所在。
 
 ```mermaid

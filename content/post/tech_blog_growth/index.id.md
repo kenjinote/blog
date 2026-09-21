@@ -22,14 +22,14 @@ Namun, engineer memiliki keunggulan yang tidak dimiliki profesi lain. Keunggulan
 
 Sistem yang menjadi dasar blog (seperti static site generator) dan struktur HTML adalah elemen paling penting agar mesin pencari dapat menginterpretasikan konten dengan benar.
 
-### 1.1 Optimasi Core Web Vitals
+### 1.1 Optimasi Core [Web Vitals](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-Google menggunakan pengalaman halaman (page experience) sebagai faktor peringkat, dan secara khusus **Core Web Vitals (LCP, FID/INP, CLS)** tidak dapat diabaikan bahkan dalam blog teknologi.
+Google menggunakan pengalaman halaman (page experience) sebagai faktor peringkat, dan secara khusus **[Core Web Vitals](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** tidak dapat diabaikan bahkan dalam blog teknologi.
 Blog teknologi sering kali menggunakan banyak blok kode sumber, rumus matematika (MathJax / KaTeX), dan gambar diagram. Hal-hal tersebut dapat menyebabkan keterlambatan dalam rendering halaman.
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/))**: Kecepatan pemuatan konten utama pada tampilan pertama. Gunakan WebP atau AVIF untuk gambar eyecatch, dan muat lebih awal (preload) dengan menambahkan atribut `fetchpriority="high"`. Selain itu, buat CSS atau JS besar yang digunakan untuk syntax highlight dimuat secara asinkron (asynchronous), atau desain agar hanya dimuat di halaman yang membutuhkannya.
-- **CLS (Cumulative [Layout](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/) Shift)**: Pergeseran tata letak saat halaman sedang dimuat. Dengan memesan area tampilan untuk rumus matematika atau gambar menggunakan properti CSS seperti `aspect-ratio` sejak awal, Anda dapat mencegah pergeseran mendadak saat DOM disisipkan kemudian.
-- **INP (Interaction to Next [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/))**: Responsivitas terhadap interaksi pengguna. Sangat penting untuk tidak menjalankan JavaScript berat (misalnya, pencarian dinamis teks penuh di sisi klien, atau eksekusi parser Markdown raksasa) di thread utama (main thread), melainkan memindahkannya ke Web Worker atau menghasilkannya sebagai HTML statis (SSG) pada saat proses build.
+- **[CLS](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Cumulative [Layout](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/) Shift)**: Pergeseran tata letak saat halaman sedang dimuat. Dengan memesan area tampilan untuk rumus matematika atau gambar menggunakan properti CSS seperti `aspect-ratio` sejak awal, Anda dapat mencegah pergeseran mendadak saat DOM disisipkan kemudian.
+- **[INP](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Interaction to Next [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/))**: Responsivitas terhadap interaksi pengguna. Sangat penting untuk tidak menjalankan JavaScript berat (misalnya, pencarian dinamis teks penuh di sisi klien, atau eksekusi parser Markdown raksasa) di thread utama (main thread), melainkan memindahkannya ke Web Worker atau menghasilkannya sebagai HTML statis (SSG) pada saat proses build.
 
 ### 1.2 Implementasi Data Terstruktur (JSON-LD)
 
@@ -256,7 +256,7 @@ flowchart TD
 ### 5.2 Poin-poin dalam Membangun [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) Otomatisasi
 
 1. **Build dan Deployment dengan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)**
-   Jika menggunakan static site generator, gunakan GitHub Actions untuk mengotomatiskan pembuatan HTML dan deployment ke layanan hosting (seperti Vercel, Netlify, Cloudflare Pages, dll.). Di sini, sangat efektif untuk memasukkan proses optimasi gambar (misalnya konversi otomatis ke WebP) ke dalam pipeline build sebagai bagian dari optimasi Core Web Vitals yang telah disebutkan sebelumnya.
+   Jika menggunakan static site generator, gunakan GitHub Actions untuk mengotomatiskan pembuatan HTML dan deployment ke layanan hosting (seperti Vercel, Netlify, Cloudflare Pages, dll.). Di sini, sangat efektif untuk memasukkan proses optimasi gambar (misalnya konversi otomatis ke WebP) ke dalam pipeline build sebagai bagian dari optimasi Core [Web Vitals](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) yang telah disebutkan sebelumnya.
 
 2. **Integrasi Media Sosial menggunakan Trigger RSS di Zapier/IFTTT**
    Saat build dilakukan, generator situs akan membuat RSS feed terbaru (XML). Baca file ini di iPaaS (Integration Platform as a [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)) seperti Zapier atau Make (sebelumnya Integromat) dan atur alur kerja seperti "Jika item baru ditambahkan di RSS, publikasikan judul dan URL-nya ke X (Twitter) dan LinkedIn". Dengan ini, notifikasi ke pengikut (followers) akan otomatis terkirim begitu artikel diterbitkan.

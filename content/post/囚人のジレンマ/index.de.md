@@ -40,7 +40,7 @@ Die Zahlen in den Feldern repräsentieren (Ihre Gefängnisstrafe, Gefängnisstra
 | **Gestehen (Verrat)** | (0, -10) | (-5, -5) |
 
 Objektiv betrachtet ist die optimale Vorgehensweise für beide offensichtlich.
-**Wenn beide "schweigen", beträgt die gesamte Gefängnisstrafe nur 2 Jahre (-1 und -1).** Dies ist der "pareto-optimale" Zustand, der den Gesamtnutzen maximiert.
+**Wenn beide "schweigen", beträgt die gesamte Gefängnisstrafe nur 2 Jahre (-1 und -1).** Dies ist der "pareto-optimale" [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), der den Gesamtnutzen maximiert.
 
 Wenn Sie jedoch ein "rationaler Mensch sind, der nur seinen eigenen Nutzen maximieren will", kommen Sie zu einer völlig anderen Schlussfolgerung.
 
@@ -85,7 +85,7 @@ graph TD
     style Ideal fill:#99ff99,stroke:#333,stroke-width:2px
 ```
 
-Diesen Zustand, in dem "keiner der Spieler ein Motiv hat, seine Strategie zu ändern, nachdem er das Verhalten des anderen vorhergesagt hat (es kann nicht mehr geändert werden)", nennt man **"Nash-Gleichgewicht"**, benannt nach dem großen Spieltheoretiker John Nash.
+Diesen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), in dem "keiner der Spieler ein Motiv hat, seine Strategie zu ändern, nachdem er das Verhalten des anderen vorhergesagt hat (es kann nicht mehr geändert werden)", nennt man **"Nash-Gleichgewicht"**, benannt nach dem großen Spieltheoretiker John Nash.
 
 Der beängstigendste Punkt beim Gefangenendilemma ist, dass **"Pareto-Optimum (das beste Ergebnis für die Gesamtheit)" und "Nash-Gleichgewicht (das Ende der individuellen Rationalität)" nicht übereinstimmen**.
 

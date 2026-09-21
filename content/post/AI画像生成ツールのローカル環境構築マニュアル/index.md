@@ -264,7 +264,7 @@ ControlNetは、学習済みのStable Diffusionモデルの重みを固定した
 
 ## 10. 結びとして：AI画像生成の未来とローカル環境の優位性
 
-Stable Diffusionから始まったオープンソースAI画像生成のムーブメントは、SDXL、そしてStable Diffusion 3やFlux.1といった次世代アーキテクチャへと進化を続けています。モデルのパラメータ数は数十億から百億クラスへと巨大化しており、今後はVRAM 24GB以上のGPU環境がさらに求められるようになるでしょう。
+Stable Diffusionから始まったオープンソースAI画像生成のムーブメントは、SDXL、そしてStable Diffusion 3や[Flux](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/).1といった次世代アーキテクチャへと進化を続けています。モデルのパラメータ数は数十億から百億クラスへと巨大化しており、今後はVRAM 24GB以上のGPU環境がさらに求められるようになるでしょう。
 
 しかし、TensorRTや量子化技術（Quantization）、GGUFなどのローカル最適化技術も同様に進化のスピードを速めており、一般コンシューマー向けのハードウェアでも十分な推論が可能になるエコシステムが形成されつつあります。
 

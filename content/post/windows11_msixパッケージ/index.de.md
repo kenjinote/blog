@@ -30,7 +30,7 @@ MSIX löst diese Probleme, indem Anwendungen in leichtgewichtigen „Containern�
 - **Saubere Deinstallation**: Mit MSIX installierte Apps schreiben in das Dateisystem und die Registrierung auf virtualisierte Weise (VFS: Virtual File System, VReg: Virtual Registry). Daher wird bei der Deinstallation dieser gesamte virtualisierte Container gelöscht, sodass keine Überreste (Müll) im System verbleiben. Es verhindert Win Rot vollständig.
 - **Isolierung und Sicherheit (Isolation)**: Jede App läuft in ihrer eigenen Umgebung und kann die DLLs oder Ressourcen anderer Apps nicht direkt zerstören. Das befreit uns von der DLL-Hölle.
 - **Optimierung der Netzwerkbandbreite**: Der Update-Mechanismus von MSIX ist hervorragend und unterstützt differenzielle Updates auf Blockebene (Differential Update). Da nur die wenigen geänderten Blöcke der Binärdaten heruntergeladen werden, wird die Netzwerklast auch bei der Aktualisierung großer Anwendungen auf ein Minimum reduziert.
-- **Zuverlässiger Installationsstatus**: Das Paket enthält eine Manifestdatei (`AppxManifest.xml`), und die Installationstransaktionen werden auf Betriebssystemebene streng verwaltet. Im Falle eines Fehlers wird der ursprüngliche Zustand vollständig wiederhergestellt (Rollback).
+- **Zuverlässiger Installationsstatus**: Das Paket enthält eine Manifestdatei (`AppxManifest.xml`), und die Installationstransaktionen werden auf Betriebssystemebene streng verwaltet. Im Falle eines Fehlers wird der ursprüngliche [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) vollständig wiederhergestellt (Rollback).
 
 ## 2. Überblick über die MSIX-Paketerstellung und Toolchain
 
@@ -125,7 +125,7 @@ Führen Sie den folgenden Befehl in der Eingabeaufforderung aus, um das Verzeich
 ```cmd
 MakeAppx.exe pack /d "C:\Path\To\AppFolder" /p "C:\Path\To\Output\AwesomeApp_1.0.0.0_x64.msix"
 ```
-Damit ist die unsignierte MSIX-Datei fertig, aber in diesem Zustand kann sie nicht unter Windows installiert werden.
+Damit ist die unsignierte MSIX-Datei fertig, aber in diesem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) kann sie nicht unter Windows installiert werden.
 
 ## 5. Mathematischer Hintergrund der digitalen Signatur und Kryptographie
 

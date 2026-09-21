@@ -132,7 +132,7 @@ Sein Forschungsleben in England brachte Ramanujan enormen Ruhm. 1918 wurde er zu
 
 Hinter diesem Ruhm jedoch hatte sein Körper seine Grenzen erreicht. Das kalte englische Klima, seine Unfähigkeit als strenger brahmanischer Vegetarier, angemessene Nahrung zu erhalten, und die durch den Ersten Weltkrieg verursachten Nahrungsmittelengpässe untergruben seine Gesundheit schwer. Er litt an Tuberkulose und schwerem Vitaminmangel (oder möglicherweise hepatischer Amöbiasis) und war gezwungen, für lange Zeit in Sanatorien zu leben.
 
-1919, nach dem Ende des Ersten Weltkriegs, erholte sich seine Gesundheit leicht, und er kehrte nach Indien zurück, wo seine Frau und seine Familie auf ihn warteten. Ganz Indien begrüßte seine Rückkehr, doch sein Zustand verschlechterte sich auch nach der Rückkehr in sein Heimatland weiter. Selbst auf dem Krankenbett hörte er nie mit seinen mathematischen Überlegungen auf und schrieb bis zum Schluss Formeln in sein Notizbuch. Am 26. April 1920 verstarb er im jungen Alter von 32 Jahren.
+1919, nach dem Ende des Ersten Weltkriegs, erholte sich seine Gesundheit leicht, und er kehrte nach Indien zurück, wo seine Frau und seine Familie auf ihn warteten. Ganz Indien begrüßte seine Rückkehr, doch sein [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) verschlechterte sich auch nach der Rückkehr in sein Heimatland weiter. Selbst auf dem Krankenbett hörte er nie mit seinen mathematischen Überlegungen auf und schrieb bis zum Schluss Formeln in sein Notizbuch. Am 26. April 1920 verstarb er im jungen Alter von 32 Jahren.
 
 ## Vermächtnis: Das verlorene Notizbuch und die Auswirkungen auf die moderne Welt
 

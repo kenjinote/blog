@@ -22,14 +22,14 @@ Cependant, les ingénieurs possèdent des atouts que d'autres professions n'ont 
 
 Le système de base du blog (comme les générateurs de sites statiques) et la structure HTML sont les éléments les plus cruciaux pour que les moteurs de recherche puissent interpréter correctement le contenu.
 
-### 1.1 Optimisation des Signaux Web Essentiels (Core Web Vitals)
+### 1.1 Optimisation des Signaux Web Essentiels (Core [Web Vitals](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))
 
-Google utilise l'expérience sur la page comme facteur de classement, et les **Signaux Web Essentiels (LCP, FID/INP, CLS)** ne peuvent être ignorés, même pour un blog technique.
+Google utilise l'expérience sur la page comme facteur de classement, et les **Signaux Web Essentiels ([LCP](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** ne peuvent être ignorés, même pour un blog technique.
 Les blogs techniques utilisent souvent de nombreux blocs de code source, des formules mathématiques (MathJax / KaTeX) et des illustrations. Ces éléments ont tendance à retarder le rendu de la page.
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/))** : Vitesse de chargement du contenu principal dans la ligne de flottaison. Utilisez le WebP ou l'AVIF pour les images à la une, et préchargez-les en ajoutant l'attribut `fetchpriority="high"`. De plus, les gros fichiers CSS ou JS pour la coloration syntaxique doivent être chargés de manière asynchrone ou conçus pour n'être chargés que sur les pages nécessaires.
-- **CLS (Cumulative [Layout](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/) Shift)** : Décalage inattendu de la mise en page pendant le chargement de l'article. En réservant à l'avance l'espace d'affichage pour les formules et les images à l'aide de la propriété CSS `aspect-ratio`, etc., vous évitez les sauts visuels lors de l'insertion ultérieure de nœuds DOM.
-- **INP (Interaction to Next [Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/))** : Réactivité aux interactions de l'utilisateur. Il est impératif de ne pas exécuter de JavaScript lourd (par exemple, une recherche plein texte dynamique côté client ou l'exécution d'un énorme parseur Markdown) sur le thread principal. Il faut le déléguer à un Web Worker ou générer du HTML statique lors du build (SSG).
+- **[CLS](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Cumulative [Layout](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/) Shift)** : Décalage inattendu de la mise en page pendant le chargement de l'article. En réservant à l'avance l'espace d'affichage pour les formules et les images à l'aide de la propriété CSS `aspect-ratio`, etc., vous évitez les sauts visuels lors de l'insertion ultérieure de nœuds DOM.
+- **[INP](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Interaction to Next [Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/))** : Réactivité aux interactions de l'utilisateur. Il est impératif de ne pas exécuter de JavaScript lourd (par exemple, une recherche plein texte dynamique côté client ou l'exécution d'un énorme parseur Markdown) sur le thread principal. Il faut le déléguer à un Web Worker ou générer du HTML statique lors du build (SSG).
 
 ### 1.2 Implémentation des données structurées (JSON-LD)
 

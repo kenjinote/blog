@@ -259,7 +259,7 @@ $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 ```bash
 ollama run llama3
 ```
-كما أن Ollama يعمل كخادم REST API في الخلفية، مما يجعل دمجه مع نصوص Python البرمجية والتطبيقات الخارجية أمراً سهلاً للغاية.
+كما أن Ollama يعمل كخادم [REST API](https://kenji.blog/ar/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ar/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) في الخلفية، مما يجعل دمجه مع نصوص Python البرمجية والتطبيقات الخارجية أمراً سهلاً للغاية.
 
 ### 2. LM Studio
 تطبيق مُوصى به لأولئك الذين يفضلون واجهة مستخدم رسومية (GUI) وبديهية. يتيح لك البحث عن مجموعة ضخمة من نماذج GGUF من Hugging Face وتنزيلها من داخل التطبيق، والاستمتاع بالمحادثات عبر واجهة تشبه ChatGPT. يتميز بخاصية مفيدة جداً تخبرك بصرياً بالنموذج الذي يتناسب مع ذاكرة RAM/VRAM الخاصة بحاسوبك.

@@ -153,7 +153,7 @@ Ici, chaque variable est la suivante :
 
 Surtout lors de la sauvegarde d'un grand nombre de petits fichiers (tels que le code source), le terme de délai dû au nombre de fichiers $C$ ($C \times L$) devient prédominant. C'est pourquoi, dans les processus de sauvegarde, il est optimal d'utiliser `Robocopy`, qui permet des transferts multi-threads, plutôt qu'un simple outil de copie de fichiers.
 
-### Flux de traitement du script de sauvegarde
+### [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de traitement du script de sauvegarde
 
 ```mermaid
 flowchart TD

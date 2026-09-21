@@ -112,7 +112,7 @@ export default function BlogPost({ params }) {
 
 ## 2. ट्यूटोरियल से रूपांतरण (Conversion) तक फ़नल डिज़ाइन
 
-तकनीकी ब्लॉग के पाठक विशिष्ट त्रुटि संदेशों (error messages) या तकनीकी चुनौतियों (उदा: "React Context API प्रदर्शन अनुकूलन") को खोज कर आते हैं। उनके "खोज इरादे" (Search Intent) को पूरा करने के तुरंत बाद, ऐप के लिए CTA (Call to Action) को स्वाभाविक रूप से रखना महत्वपूर्ण है।
+तकनीकी ब्लॉग के पाठक विशिष्ट त्रुटि संदेशों (error messages) या तकनीकी चुनौतियों (उदा: "React [Context API](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/) प्रदर्शन अनुकूलन") को खोज कर आते हैं। उनके "खोज इरादे" (Search Intent) को पूरा करने के तुरंत बाद, ऐप के लिए CTA (Call to Action) को स्वाभाविक रूप से रखना महत्वपूर्ण है।
 
 ### 2.1 यूज़र जर्नी (User Journey) का विज़ुअलाइज़ेशन
 

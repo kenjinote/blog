@@ -114,7 +114,7 @@ Determinanten haben einige bekannte algebraische Eigenschaften, aber wenn Sie ih
 *   **Determinante eines Produkts** : $\det(AB) = \det(A)\det(B)$
     Das Matrixprodukt $AB$ bedeutet eine zusammengesetzte Transformation von "Ausführen von Transformation $B$ und anschließendes Ausführen von Transformation $A$". Der Raum wird zuerst um das $\det(B)$-fache und dann weiter um das $\det(A)$-fache gedehnt, sodass es natürlich völlig logisch ist, dass der Gesamtskalierungsfaktor ihr Produkt ist.
 *   **Determinante einer inversen Matrix** : $\det(A^{-1}) = \frac{1}{\det(A)}$
-    Wenn eine bestimmte Transformation den Raum um das $2$-fache dehnt, muss ihre inverse Transformation den Raum auf $\frac{1}{2}$ schrumpfen lassen, um ihn in seinen ursprünglichen Zustand zurückzuversetzen.
+    Wenn eine bestimmte Transformation den Raum um das $2$-fache dehnt, muss ihre inverse Transformation den Raum auf $\frac{1}{2}$ schrumpfen lassen, um ihn in seinen ursprünglichen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) zurückzuversetzen.
 
 ## 7. Fazit: Verbindung zur [Jacobi](https://kenji.blog/de/p/jacobi/)-Matrix
 

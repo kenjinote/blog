@@ -44,7 +44,7 @@ Wenn Sie versuchen, einen Teil eines Befehls im Terminal mit den Pfeiltasten ode
 
 Angenommen, Sie geben täglich 500 Befehle ein und bearbeiten diese, und durch die Nutzung von Shortcuts können Sie pro Befehl 2 Sekunden einsparen.
 $$ 500 \text{ mal/Tag} \times 2 \text{ Sekunden} = 1000 \text{ Sekunden/Tag} \approx 16.6 \text{ Minuten/Tag} $$
-Wenn wir dies auf ein Jahr (240 Arbeitstage) hochrechnen, bedeutet das eine Zeitersparnis von **etwa 66 Stunden (ca. 8 Arbeitstage)**. Noch wichtiger ist, dass durch die Reduzierung der mentalen Vorbereitung ($M$) der unschätzbare Vorteil entsteht, **"dass das Denken nicht unterbrochen wird (der Flow-Zustand aufrechterhalten werden kann)"**.
+Wenn wir dies auf ein Jahr (240 Arbeitstage) hochrechnen, bedeutet das eine Zeitersparnis von **etwa 66 Stunden (ca. 8 Arbeitstage)**. Noch wichtiger ist, dass durch die Reduzierung der mentalen Vorbereitung ($M$) der unschätzbare Vorteil entsteht, **"dass das Denken nicht unterbrochen wird (der Flow-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) aufrechterhalten werden kann)"**.
 
 ---
 
@@ -264,11 +264,11 @@ Wenn Sie einen Prozess (z. B. einen lokalen Server) in einem Terminalfenster sta
 
 Um dies zu lösen, verwenden Sie einen **Terminal-Multiplexer**, der den Bildschirm in mehrere Bereiche (Panes) aufteilt und mehrere Sitzungen im Hintergrund aufrechterhalten kann.
 
-## 6.1. tmux-Architektur und Zustandsübergänge (Linux / macOS)
+## 6.1. tmux-Architektur und [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergänge (Linux / macOS)
 
 `tmux` ist ein leistungsstarker Multiplexer mit einer Server-Client-Architektur. Um Konflikte mit anderen Programmen zu vermeiden, müssen Sie bei der Bedienung von tmux immer zuerst eine **Präfixtaste (Standard: Ctrl+B)** drücken.
 
-Das folgende Mermaid-Zustandsübergangsdiagramm zeigt den grundlegenden Arbeitsablauf bei der Bedienung von tmux.
+Das folgende Mermaid-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergangsdiagramm zeigt den grundlegenden Arbeitsablauf bei der Bedienung von tmux.
 
 ```mermaid
 stateDiagram-v2

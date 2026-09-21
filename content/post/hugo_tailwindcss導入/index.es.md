@@ -409,7 +409,7 @@ Con esto, se elimina por completo la necesidad de escribir manualmente selectore
 
 La ventaja sobresaliente de esta arquitectura es que **"la configuración requiere hacerse solo una vez al principio"**. Una vez que hayas construido la canalización, los desarrolladores pueden construir interfaces de usuario complejas a una velocidad asombrosa con solo describir clases de utilidad intuitivas en plantillas HTML o Markdown, sin tener que abrir ningún archivo CSS.
 
-Además, dado que el tamaño del CSS de salida siempre se minimiza, esto conduce directamente a una mejora en la puntuación de los Core Web Vitals, y también funciona de manera muy favorable desde la perspectiva del SEO.
+Además, dado que el tamaño del CSS de salida siempre se minimiza, esto conduce directamente a una mejora en la puntuación de los Core [Web Vitals](https://kenji.blog/es/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), y también funciona de manera muy favorable desde la perspectiva del SEO.
 
 La combinación de Hugo y Tailwind CSS seguirá siendo una de las "mejores opciones" en cada proyecto, desde blogs tecnológicos personales hasta sitios corporativos a gran escala. ¡Por favor, asegúrate de utilizar esta poderosa cadena de herramientas para disfrutar de una cómoda vida de desarrollo web!
 

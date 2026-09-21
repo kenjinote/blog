@@ -132,7 +132,7 @@ graph LR
     D -->|"Influência Ideológica"| E["Método dos Fluxões de Newton"]
 ```
 
-Esse "método da tangente cinemática" demonstrou enorme poder em encontrar tangentes para curvas transcendentais (curvas que não podem ser expressas por equações algébricas) como a cicloide. A abordagem de [Roberval](https://kenji.blog/pt/p/roberval/) de trazer esse conceito físico de movimento para a matemática foi um passo extremamente importante que levou diretamente à ideologia fundamental do "Método dos Fluxões" (cálculo cinemático) fundado mais tarde por [Isaac Newton](https://kenji.blog/pt/p/newton/).
+Esse "método da tangente cinemática" demonstrou enorme poder em encontrar tangentes para curvas transcendentais (curvas que não podem ser expressas por equações algébricas) como a cicloide. A abordagem de [Roberval](https://kenji.blog/pt/p/roberval/) de trazer esse conceito físico de movimento para a matemática foi um passo extremamente importante que levou diretamente à ideologia fundamental do "Método dos [Flux](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/)ões" (cálculo cinemático) fundado mais tarde por [Isaac Newton](https://kenji.blog/pt/p/newton/).
 
 ## 6. Contribuições para a Mecânica: A Balança de [Roberval](https://kenji.blog/pt/p/roberval/)
 

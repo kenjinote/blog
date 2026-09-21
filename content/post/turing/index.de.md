@@ -120,7 +120,7 @@ $$
 
 Hierbei sind $u$ und $v$ die Konzentrationen von Aktivator und Inhibitor, $D_u$ und $D_v$ ihre jeweiligen Diffusionskoeffizienten und $f(u, v)$ und $g(u, v)$ sind Funktionen, die chemische Reaktionen (Reaktionsterme) darstellen.
 
-Turing bewies mathematisch die "Turing-Instabilität", bei der ein räumlich einheitlicher und stabiler Zustand durch winzige Schwankungen (Rauschen) und Unterschiede in den Diffusionsgeschwindigkeiten (typischerweise $D_v > D_u$) destabilisiert wird, was dazu führt, dass sich räumliche Muster selbst organisieren.
+Turing bewies mathematisch die "Turing-Instabilität", bei der ein räumlich einheitlicher und stabiler [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) durch winzige Schwankungen (Rauschen) und Unterschiede in den Diffusionsgeschwindigkeiten (typischerweise $D_v > D_u$) destabilisiert wird, was dazu führt, dass sich räumliche Muster selbst organisieren.
 
 ```mermaid
 flowchart LR

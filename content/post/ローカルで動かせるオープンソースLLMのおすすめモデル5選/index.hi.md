@@ -256,7 +256,7 @@ $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 ```bash
 ollama run llama3
 ```
-इसके अलावा, Ollama बैकग्राउंड में REST API सर्वर के रूप में काम करता है, जिससे इसे Python स्क्रिप्ट्स या बाहरी एप्लिकेशन के साथ एकीकृत करना बहुत आसान हो जाता है।
+इसके अलावा, Ollama बैकग्राउंड में [REST API](https://kenji.blog/hi/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/hi/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) सर्वर के रूप में काम करता है, जिससे इसे Python स्क्रिप्ट्स या बाहरी एप्लिकेशन के साथ एकीकृत करना बहुत आसान हो जाता है।
 
 ### 2. LM Studio
 यह उन लोगों के लिए अनुशंसित है जो GUI-आधारित सहज संचालन चाहते हैं। आप ऐप के भीतर से Hugging Face की विशाल GGUF मॉडल्स की सूची खोज और डाउनलोड कर सकते हैं, और ChatGPT जैसी चैट स्क्रीन पर बातचीत का आनंद ले सकते हैं। इसकी वह सुविधा बहुत उपयोगी है जो आपको दृष्टिगत रूप से बताती है कि कौन सा मॉडल आपके पीसी की RAM/VRAM में फिट होगा।

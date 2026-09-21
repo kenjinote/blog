@@ -64,7 +64,7 @@ Das Grundprinzip von Zero Trust lautet „**Never Trust, Always Verify** (Niemal
 4. **Der Zugriff auf Ressourcen wird durch dynamische Richtlinien bestimmt, die die Identität des Clients, die Anwendung, den Status der angeforderten Assets sowie andere Verhaltens- und Umgebungsattribute umfassen.**
 5. **Die Integrität und der Sicherheitsstatus aller eigenen und zugehörigen Assets werden überwacht und gemessen.**
 6. **Die Authentifizierung und Autorisierung aller Ressourcen erfolgt dynamisch und wird strikt durchgesetzt, bevor der Zugriff gewährt wird.**
-7. **Es werden so viele Informationen wie möglich über den aktuellen Zustand von Assets, Netzwerkinfrastruktur und Kommunikation gesammelt und zur Verbesserung der Sicherheitsmaßnahmen genutzt.**
+7. **Es werden so viele Informationen wie möglich über den aktuellen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) von Assets, Netzwerkinfrastruktur und Kommunikation gesammelt und zur Verbesserung der Sicherheitsmaßnahmen genutzt.**
 
 ## 3. Google BeyondCorp: Die Realisierung von Zero Trust
 

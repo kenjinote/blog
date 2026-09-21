@@ -146,7 +146,7 @@ Wie aus diesen Worten ersichtlich ist, war Mathematik für [Kiyosi Oka](https://
 
 ## 10. Fazit und Ausblick
 
-Das Erbe, das uns [Kiyosi Oka](https://kenji.blog/de/p/oka-kiyoshi/) hinterlassen hat, besteht nicht nur aus mathematischen Theoremen. Er hat uns durch seine Art zu leben den höchsten Zustand gezeigt, den der menschliche Intellekt erreichen kann.
+Das Erbe, das uns [Kiyosi Oka](https://kenji.blog/de/p/oka-kiyoshi/) hinterlassen hat, besteht nicht nur aus mathematischen Theoremen. Er hat uns durch seine Art zu leben den höchsten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) gezeigt, den der menschliche Intellekt erreichen kann.
 
 Die moderne Mathematik wird zunehmend unterteilt und hochspezialisiert. Darüber hinaus kommt mit der rasanten Entwicklung der Künstlichen Intelligenz (KI) eine Ära, in der selbst der Beweis mathematischer Theoreme automatisch von Maschinen durchgeführt wird. Egal wie sehr die Technologie fortschreitet, solange die "Emotion", von der Oka sprach – Neugier gegenüber unbekannten Welten, Bewegtsein von schönen Dingen und ein selbstloses Herz, das die Wahrheit sucht – nicht verloren geht, wird die Mathematik weiterhin das faszinierendste und wertvollste intellektuelle Unterfangen für die Menschheit sein.
 

@@ -140,7 +140,7 @@ Dieser Algorithmus konvergiert extrem schnell und wird noch heute häufig in Com
 Während Newton in der Mathematik innovative Ergebnisse erzielte, wandte er diese gleichzeitig zur Aufklärung physikalischer Phänomene an. Sein 1687 auf starkes Drängen des Astronomen Edmond Halley veröffentlichtes Buch **Philosophiæ Naturalis Principia Mathematica** (Mathematische Prinzipien der Naturphilosophie) gilt als eines der wichtigsten Bücher in der Wissenschaftsgeschichte.
 
 In diesem Buch formulierte er die folgenden **Drei Newtonschen Gesetze** :
-1. **Trägheitsgesetz** (Erstes Gesetz): Ein Körper verharrt im Zustand der Ruhe oder der gleichförmigen Translation, sofern er nicht durch einwirkende Kräfte zur Änderung seines Zustands gezwungen wird.
+1. **Trägheitsgesetz** (Erstes Gesetz): Ein Körper verharrt im [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) der Ruhe oder der gleichförmigen Translation, sofern er nicht durch einwirkende Kräfte zur Änderung seines Zustands gezwungen wird.
 2. **Aktionsprinzip** (Zweites Gesetz): Die Änderung der Bewegung ist der Einwirkung der bewegenden Kraft proportional und geschieht nach der Richtung derjenigen geraden Linie, nach welcher jene Kraft wirkt ( $F = ma$ ).
 3. **Reaktionsprinzip** (Drittes Gesetz): Kräfte treten immer paarweise auf. Übt ein Körper A auf einen anderen Körper B eine Kraft aus (actio), so wirkt eine gleich große, aber entgegen gerichtete Kraft von Körper B auf Körper A (reactio).
 

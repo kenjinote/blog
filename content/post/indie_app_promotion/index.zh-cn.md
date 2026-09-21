@@ -112,7 +112,7 @@ export default function BlogPost({ params }) {
 
 ## 2. 从教程到转化（Conversion）的漏斗设计
 
-技术博客的读者通常是通过搜索特定的错误信息或技术难题（例如：“React Context API 性能优化”）引流而来的。在满足他们的“搜索意图（Search Intent）”之后，自然地放置指向应用程序的CTA（Call to Action，行动号召）非常重要。
+技术博客的读者通常是通过搜索特定的错误信息或技术难题（例如：“React [Context API](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 性能优化”）引流而来的。在满足他们的“搜索意图（Search Intent）”之后，自然地放置指向应用程序的CTA（Call to Action，行动号召）非常重要。
 
 ### 2.1 用户旅程（User Journey）可视化
 

@@ -88,7 +88,7 @@ L'arbre DOM représente entièrement la structure et le contenu du document. Cep
 
 Lorsque l'analyseur HTML trouve des informations relatives au CSS, telles qu'une balise `<link>` ou `<style>` , le processus d'analyse du CSS commence. L'analyse du CSS suit des étapes très similaires à celles du HTML et génère finalement une structure arborescente appelée **CSSOM (CSS Object Model)**.
 
-Flux d'octets -> Chaîne de caractères -> Jeton -> Nœud -> CSSOM
+[Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) d'octets -> Chaîne de caractères -> Jeton -> Nœud -> CSSOM
 
 Le CSSOM est une structure qui conserve la façon dont chaque nœud de l'arbre DOM doit être stylisé. Le CSS se caractérise par la **Cascade**. En d'autres termes, les définitions de style pour un élément sont héritées de l'élément parent, ou écrasées par des règles d'une spécificité plus élevée (Specificity). Par conséquent, le CSSOM devient naturellement une structure arborescente.
 
@@ -207,7 +207,7 @@ Une fois l'arbre de rendu (un ensemble de nœuds ayant des informations de style
 
 Dans cette phase, le navigateur calcule précisément **où (Position)** et avec **quelle taille (Size)** chaque nœud de l'arbre de rendu doit être placé à l'écran par rapport à la taille du Viewport (la zone d'affichage de la fenêtre) du navigateur.
 
-### 4.1 Modèle de boîte et Flux de disposition
+### 4.1 Modèle de boîte et [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de disposition
 
 La base de la disposition du navigateur est le **modèle de boîte (Box Model)**. Tous les éléments sont calculés comme des boîtes rectangulaires ayant un contenu (Content), un remplissage (Padding), une bordure (Border) et une marge (Margin).
 
@@ -216,7 +216,7 @@ Le calcul de la disposition commence généralement par la racine de l'arbre de 
 1.  **De parent à enfant** : La boîte parente détermine sa propre largeur et communique la largeur disponible aux boîtes enfants.
 2.  **D'enfant à parent** : La boîte enfant détermine sa propre hauteur (en fonction du contenu) et la communique à la boîte parente. La boîte parente détermine sa hauteur finale à partir du total des hauteurs de ses boîtes enfants.
 
-Le mécanisme selon lequel la plupart des dispositions sont déterminées par un seul passage de haut en bas est appelé **Flux de disposition (Flow Layout)** (※ Les tableaux, Flexbox / Grid, etc., peuvent nécessiter des passages multiples plus complexes).
+Le mécanisme selon lequel la plupart des dispositions sont déterminées par un seul passage de haut en bas est appelé **[Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de disposition (Flow Layout)** (※ Les tableaux, Flexbox / Grid, etc., peuvent nécessiter des passages multiples plus complexes).
 
 ### 4.2 Disposition globale et disposition incrémentielle
 

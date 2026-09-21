@@ -22,14 +22,14 @@ Sin embargo, los ingenieros tienen fortalezas que otras profesiones no tienen. E
 
 El sistema fundamental del blog (como los generadores de sitios estáticos) y la estructura HTML son los elementos más importantes para que los motores de búsqueda interpreten correctamente el contenido.
 
-### 1.1 Optimización de los Core Web Vitals
+### 1.1 Optimización de los Core [Web Vitals](https://kenji.blog/es/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-Google ha adoptado la experiencia de la página como factor de clasificación, y en especial los **Core Web Vitals (LCP, FID/INP, CLS)** no pueden ignorarse, incluso en un blog técnico.
+Google ha adoptado la experiencia de la página como factor de clasificación, y en especial los **[Core Web Vitals](https://kenji.blog/es/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/es/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/es/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/es/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/es/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** no pueden ignorarse, incluso en un blog técnico.
 En los blogs técnicos, se utilizan en gran medida bloques masivos de código fuente, fórmulas matemáticas (MathJax / KaTeX) y diagramas. Estos factores retrasan la renderización de la página.
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/))**: Velocidad de carga del contenido principal de la primera vista. Use WebP o AVIF para la imagen destacada y precárguela asignando el atributo `fetchpriority="high"`. Además, cargue de forma asíncrona CSS o JS masivos para resaltar la sintaxis, o diséñelos para que se carguen solo en las páginas necesarias.
-- **CLS (Cumulative [Layout](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/) Shift)**: Desplazamiento del diseño durante la carga del artículo. Al asegurar con anticipación el área de visualización de fórmulas matemáticas o imágenes con atributos CSS como `aspect-ratio`, evitará saltos bruscos cuando el DOM se inserte más tarde.
-- **INP (Interaction to Next [Paint](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/))**: Capacidad de respuesta a la interacción del usuario. Es esencial no ejecutar JavaScript pesado (por ejemplo, búsquedas dinámicas de texto completo en el lado del cliente o la ejecución de analizadores masivos de Markdown) en el hilo principal; trasládelo a un Web Worker o genérelo como HTML estático (SSG) durante la compilación.
+- **[CLS](https://kenji.blog/es/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Cumulative [Layout](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/) Shift)**: Desplazamiento del diseño durante la carga del artículo. Al asegurar con anticipación el área de visualización de fórmulas matemáticas o imágenes con atributos CSS como `aspect-ratio`, evitará saltos bruscos cuando el DOM se inserte más tarde.
+- **[INP](https://kenji.blog/es/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Interaction to Next [Paint](https://kenji.blog/es/p/browser-rendering-mechanism-dom-paint/))**: Capacidad de respuesta a la interacción del usuario. Es esencial no ejecutar JavaScript pesado (por ejemplo, búsquedas dinámicas de texto completo en el lado del cliente o la ejecución de analizadores masivos de Markdown) en el hilo principal; trasládelo a un Web Worker o genérelo como HTML estático (SSG) durante la compilación.
 
 ### 1.2 Implementación de datos estructurados (JSON-LD)
 
@@ -256,7 +256,7 @@ flowchart TD
 ### 5.2 Puntos clave en la construcción de pipelines de automatización
 
 1. **Compilación y despliegue usando [GitHub Actions](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/)**
-   Si utiliza un generador de sitios estáticos, automatice la generación de HTML y el despliegue al destino de alojamiento (Vercel, Netlify, Cloudflare Pages, etc.) utilizando GitHub Actions. En este punto, también es eficaz integrar procesos de optimización de imágenes (como la conversión automática a WebP) en su pipeline de compilación como medida para los Core Web Vitals mencionados anteriormente.
+   Si utiliza un generador de sitios estáticos, automatice la generación de HTML y el despliegue al destino de alojamiento (Vercel, Netlify, Cloudflare Pages, etc.) utilizando GitHub Actions. En este punto, también es eficaz integrar procesos de optimización de imágenes (como la conversión automática a WebP) en su pipeline de compilación como medida para los Core [Web Vitals](https://kenji.blog/es/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) mencionados anteriormente.
 
 2. **Integración en redes sociales disparada por RSS utilizando Zapier/IFTTT**
    El generador de sitios genera el último feed RSS (XML) durante la compilación. Haga que una plataforma iPaaS como Zapier o Make (antes Integromat) lea esto para crear un flujo de trabajo: "Cuando se agregue un nuevo elemento al RSS, publicar el título y la URL en X (Twitter) y LinkedIn". Esto permite notificaciones automáticas a sus seguidores en el momento en que publica un artículo.

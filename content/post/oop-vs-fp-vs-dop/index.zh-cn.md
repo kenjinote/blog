@@ -242,7 +242,7 @@ fn process_event(state: &mut AppState, event: Event) {
 在使用 TypeScript 进行前端开发（如 React 等）时，范式的融合也已成为标准。
 
 - 组件的 UI 渲染是 **函数式** 的（作为纯函数返回 UI）。
-- 数据的获取和缓存管理是 **数据导向** 的（通过 [Redux](https://kenji.blog/zh-cn/p/state-management-history-future/) 或 Zustand 规范化的状态树）。
+- 数据的获取和缓存管理是 **数据导向** 的（通过 [Redux](https://kenji.blog/zh-cn/p/state-management-history-future/) 或 [Zustand](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 规范化的状态树）。
 - 复杂领域逻辑的一部分是 **面向对象** 的（基于类的服务层）。
 
 ---

@@ -264,7 +264,7 @@ Berikut adalah kesalahan umum dan solusinya selama pembangunan dan pengoperasian
 
 ## 10. Kesimpulan: Masa Depan Pembuatan Gambar AI dan Keunggulan Lingkungan Lokal
 
-Gerakan pembuatan gambar AI sumber terbuka, yang dimulai dengan Stable Diffusion, terus berkembang menjadi SDXL dan arsitektur generasi mendatang seperti Stable Diffusion 3 dan Flux.1. Jumlah parameter model telah berkembang pesat dari miliaran menjadi puluhan miliar, dan di masa depan, lingkungan GPU dengan VRAM 24GB atau lebih akan semakin dibutuhkan.
+Gerakan pembuatan gambar AI sumber terbuka, yang dimulai dengan Stable Diffusion, terus berkembang menjadi SDXL dan arsitektur generasi mendatang seperti Stable Diffusion 3 dan [Flux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/).1. Jumlah parameter model telah berkembang pesat dari miliaran menjadi puluhan miliar, dan di masa depan, lingkungan GPU dengan VRAM 24GB atau lebih akan semakin dibutuhkan.
 
 Namun, teknologi optimalisasi lokal seperti TensorRT, kuantisasi (Quantization), dan GGUF juga mempercepat evolusi mereka, membentuk ekosistem yang memungkinkan inferensi yang memadai bahkan pada perangkat keras untuk konsumen umum.
 

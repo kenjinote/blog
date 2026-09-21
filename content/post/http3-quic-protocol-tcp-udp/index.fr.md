@@ -211,7 +211,7 @@ Comme QUIC ne garantit pas l'ordre entre les flux, si l'on utilise HPACK tel que
 
 Pour résoudre cela, un nouveau mécanisme a été conçu : **QPACK**. QPACK sépare la mise à jour de la table dynamique de chaque flux de données, et utilise un flux de contrôle dédié pour gérer la table de manière asynchrone. Ainsi, une communication d'en-tête sécurisée et hautement compressée est possible même sous la livraison désordonnée des flux par QUIC.
 
-## 5.2 Flux de contrôle et flux unidirectionnels
+## 5.2 [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de contrôle et flux unidirectionnels
 
 Dans HTTP/3, en plus des flux bidirectionnels pour les requêtes/réponses, plusieurs **flux unidirectionnels** spéciaux sont définis.
 

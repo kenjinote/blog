@@ -59,6 +59,6 @@ Ein Open-Source-Debugger für Windows. Er ist auf die "dynamische Analyse" spezi
 
 ![img_8.png](img_8.webp)
 
-Wenn die Ziel-EXE-Datei in einer .NET-Sprache wie C# geschrieben ist, können Sie diese Tools verwenden, um sie fast auf den Zustand des ursprünglichen Quellcodes zu dekompilieren (Rückübersetzung) und ihren Inhalt vollständig offenzulegen.
+Wenn die Ziel-EXE-Datei in einer .NET-Sprache wie C# geschrieben ist, können Sie diese Tools verwenden, um sie fast auf den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) des ursprünglichen Quellcodes zu dekompilieren (Rückübersetzung) und ihren Inhalt vollständig offenzulegen.
 
 Diese Tools sind nützlich, um den Inhalt von EXE-Dateien zu untersuchen, aber Vorsicht ist geboten. Das Bearbeiten von Dateien oder deren Nutzung für illegale Zwecke kann urheberrechtliche oder sicherheitsrelevante Probleme verursachen. Verwenden Sie sie daher nur mit ausreichendem Verständnis.

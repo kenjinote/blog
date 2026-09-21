@@ -160,7 +160,7 @@ TCPView überwacht alle [TCP](https://kenji.blog/de/p/http3-quic-protocol-tcp-ud
 ### 5.1 Identifizierung von bösartiger C2-Kommunikation
 Wenn Malware eine Hintertür (Backdoor) installiert hat und ein Beacon an einen externen C2-Server (Command and Control) sendet, achten Sie in TCPView auf die folgenden Merkmale:
 
-*   **Unnatürlicher Prozessname**: Obwohl es sich um eine `svchost.exe` handelt, läuft sie mit Benutzerrechten anstelle von Systemrechten und unterhält eine Verbindung im Zustand `ESTABLISHED` zu einer unbekannten ausländischen IP-Adresse.
+*   **Unnatürlicher Prozessname**: Obwohl es sich um eine `svchost.exe` handelt, läuft sie mit Benutzerrechten anstelle von Systemrechten und unterhält eine Verbindung im [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) `ESTABLISHED` zu einer unbekannten ausländischen IP-Adresse.
 *   **Kommunikation durch Prozesse, die normalerweise nicht kommunizieren**: Beispielsweise der Taschenrechner (`calc.exe`) oder der Editor (`notepad.exe`), die eine große Anzahl von Paketen über Port 443 oder 80 senden/empfangen (typisches Zeichen für Process Hollowing).
 
 Wenn Sie verdächtige Kommunikation finden, können Sie direkt in TCPView `Close Connection` senden, um die [TCP](https://kenji.blog/de/p/http3-quic-protocol-tcp-udp/)-Sitzung zwangsweise zu trennen (durch Senden eines RST-Pakets), oder den entsprechenden Prozess mit `End Process` gewaltsam beenden.

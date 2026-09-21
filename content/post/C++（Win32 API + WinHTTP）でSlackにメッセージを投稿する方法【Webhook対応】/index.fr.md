@@ -18,7 +18,7 @@ Dans cet article, je vais expliquer étape par étape, de manière claire, **com
 
 ---
 
-## ✅ Flux global
+## ✅ [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) global
 
 Pour publier sur Slack, suivez ces étapes :
 

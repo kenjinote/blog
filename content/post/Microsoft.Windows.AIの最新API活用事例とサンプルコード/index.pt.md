@@ -16,7 +16,7 @@ description: 'Um guia detalhado e abrangente sobre como implementar recursos de 
 
 Nos últimos anos, a evolução da tecnologia de IA tem sido notável, com uma rápida mudança de paradigma do uso de Grandes Modelos de Linguagem (LLM) na nuvem para a inferência de IA em dispositivos edge (PCs locais). O núcleo disso é o "Windows Copilot Runtime" fornecido pela Microsoft para o Windows 11 e a API "Microsoft.Windows.AI" para controlá-lo.
 
-O desenvolvimento de aplicativos usando APIs em nuvem (como OpenAI ou Azure OpenAI) é fácil, mas traz desafios como latência, privacidade e custos contínuos. Por outro lado, a execução de modelos de IA localmente permite obter aplicativos de latência ultrabaixa que funcionam offline sem enviar dados confidenciais para fora do dispositivo.
+O desenvolvimento de aplicativos usando APIs em nuvem (como OpenAI ou Azure OpenAI) é fácil, mas traz desafios como latência, privacidade e custos contínuos. Por outro lado, a execução de modelos de IA localmente permite obter aplicativos de latência ultrabaixa que funcionam [offline](https://kenji.blog/pt/p/pwa-progressive-web-apps-service-worker/) sem enviar dados confidenciais para fora do dispositivo.
 
 Neste artigo, explicaremos detalhadamente e de forma abrangente, da arquitetura ao ajuste de desempenho, os métodos de implementação de recursos de IA local, que serão essenciais no desenvolvimento de aplicativos para Windows, juntamente com exemplos de código prático em C# e C++. Além de simplesmente chamar a API, nos aprofundaremos em detalhes técnicos avançados, como a utilização de hardware subjacente (NPU e GPU) e a integração com o DirectML.
 
@@ -91,7 +91,7 @@ Para usar a API de IA mais recente do Windows, é necessário configurar o segui
 
 ## 5. [Deep Dive 1] Utilizando o Modelo de Linguagem Local (Phi-Silica) com C#
 
-O Windows Copilot Runtime inclui o "Phi-Silica", um modelo de linguagem de pequena escala e alta eficiência desenvolvido pela Microsoft, como um componente padrão do sistema operacional. Isso permite o processamento avançado de linguagem natural (resumo de textos, geração de código, chatbots) em um ambiente offline, sem precisar baixar modelos do tamanho de GB pela rede.
+O Windows Copilot Runtime inclui o "Phi-Silica", um modelo de linguagem de pequena escala e alta eficiência desenvolvido pela Microsoft, como um componente padrão do sistema operacional. Isso permite o processamento avançado de linguagem natural (resumo de textos, geração de código, chatbots) em um ambiente [offline](https://kenji.blog/pt/p/pwa-progressive-web-apps-service-worker/), sem precisar baixar modelos do tamanho de GB pela rede.
 
 Abaixo está um exemplo de código avançado para construir uma IA de bate-papo em C# usando o namespace `Microsoft.Windows.AI.Generative`. Ele suporta respostas em streaming e gera texto em tempo real sem bloquear a thread da UI.
 
@@ -350,7 +350,7 @@ As APIs `Microsoft.Windows.AI` e o Copilot Runtime estão passando por uma rápi
 
 ## 9. Conclusão: O Futuro dos Aplicativos Transformados pela IA Local
 
-O Copilot Runtime do Windows 11 e a API `Microsoft.Windows.AI` trouxeram uma arma extremamente poderosa chamada "IA Local" para todos os desenvolvedores do Windows. Não há mais a necessidade de depender completamente de APIs em nuvem. É possível eliminar a latência e oferecer uma experiência de IA de última geração que funciona totalmente offline aos usuários, protegendo rigorosamente a sua privacidade.
+O Copilot Runtime do Windows 11 e a API `Microsoft.Windows.AI` trouxeram uma arma extremamente poderosa chamada "IA Local" para todos os desenvolvedores do Windows. Não há mais a necessidade de depender completamente de APIs em nuvem. É possível eliminar a latência e oferecer uma experiência de IA de última geração que funciona totalmente [offline](https://kenji.blog/pt/p/pwa-progressive-web-apps-service-worker/) aos usuários, protegendo rigorosamente a sua privacidade.
 
 Pedimos que você utilize os conhecimentos abordados neste artigo sobre a integração do modelo de linguagem padrão do sistema via C#, a avaliação matemática de desempenho e a otimização extrema de hardware usando C++ e DirectML, para criar, com as suas próprias mãos, os próximos aplicativos de Windows "Nativos de IA". As possibilidades infinitas que a IA traz estão à sua espera, através do código que você escrever.
 

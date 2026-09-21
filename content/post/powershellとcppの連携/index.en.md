@@ -295,7 +295,7 @@ In a large-scale file server, a task to extract files that have a specific exten
 
 Monitoring information from proprietary hardware devices (e.g., specialized PCIe cards or sensors) that cannot be retrieved via WMI (Windows Management Instrumentation) or CIM (Common Information Model).
 - **Role of C++**: A DLL that makes `DeviceIoControl` calls to the device driver to retrieve and parse binary data.
-- **Role of PowerShell**: Periodically call the DLL, format the parsing results into JSON, and send it to the monitoring server's REST API.
+- **Role of PowerShell**: Periodically call the DLL, format the parsing results into JSON, and send it to the monitoring server's [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/).
 
 ## Best Practices for [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/) and Troubleshooting
 

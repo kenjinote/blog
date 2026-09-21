@@ -22,14 +22,14 @@ description: '技術ブログのアクセスをデータと自動化で最大化
 
 ブログの土台となるシステム（静的サイトジェネレーターなど）とHTMLの構造は、検索エンジンがコンテンツを正しく解釈するための最重要項目です。
 
-### 1.1 Core Web Vitalsの最適化
+### 1.1 Core [Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)の最適化
 
-Googleはページエクスペリエンスをランキング要因として採用しており、特に **Core Web Vitals (LCP, FID/INP, CLS)** は技術ブログにおいても無視できません。
+Googleはページエクスペリエンスをランキング要因として採用しており、特に **[Core Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** は技術ブログにおいても無視できません。
 技術ブログでは、大量のソースコードブロックや数式（MathJax / KaTeX）、図解画像が多用されます。これらはページのレンダリングを遅延させる要因となります。
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/))**: ファーストビューの主要コンテンツの読み込み速度。アイキャッチ画像にはWebPやAVIFを使用し、`fetchpriority="high"`属性を付与してプリロードします。また、シンタックスハイライト用の巨大なCSSやJSは非同期読み込みにするか、必要なページにのみロードする設計にします。
-- **CLS (Cumulative [Layout](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/) Shift)**: 記事読み込み中のレイアウトのズレ。数式や画像の表示領域をあらかじめCSSの`aspect-ratio`等で確保しておくことで、後からDOMが挿入された際のガタつきを防ぎます。
-- **INP (Interaction to Next [Paint](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/))**: ユーザーの操作に対する応答性。重いJavaScript（例えばクライアントサイドでの動的な全文検索や、巨大なMarkdownパーサーの実行など）をメインスレッドで実行せず、Web Workerに逃がすかビルド時に静的HTMLとして生成（SSG）しておくことが必須です。
+- **[CLS](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Cumulative [Layout](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/) Shift)**: 記事読み込み中のレイアウトのズレ。数式や画像の表示領域をあらかじめCSSの`aspect-ratio`等で確保しておくことで、後からDOMが挿入された際のガタつきを防ぎます。
+- **[INP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Interaction to Next [Paint](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/))**: ユーザーの操作に対する応答性。重いJavaScript（例えばクライアントサイドでの動的な全文検索や、巨大なMarkdownパーサーの実行など）をメインスレッドで実行せず、Web Workerに逃がすかビルド時に静的HTMLとして生成（SSG）しておくことが必須です。
 
 ### 1.2 構造化データ（JSON-LD）の実装
 
@@ -256,7 +256,7 @@ flowchart TD
 ### 5.2 自動化[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の構築ポイント
 
 1. **[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)によるビルドとデプロイ**
-   静的サイトジェネレーターを利用している場合、GitHub Actionsを用いてHTMLの生成とホスティング先（Vercel, Netlify, Cloudflare Pagesなど）へのデプロイを自動化します。この際、前述のCore Web Vitals対策として、画像の最適化プロセス（WebPへの自動変換など）をビルドパイプラインに組み込むことも有効です。
+   静的サイトジェネレーターを利用している場合、GitHub Actionsを用いてHTMLの生成とホスティング先（Vercel, Netlify, Cloudflare Pagesなど）へのデプロイを自動化します。この際、前述のCore [Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)対策として、画像の最適化プロセス（WebPへの自動変換など）をビルドパイプラインに組み込むことも有効です。
 
 2. **Zapier/IFTTTを利用したRSSトリガーのSNS連携**
    サイトジェネレーターはビルド時に最新のRSSフィード（XML）を生成します。これをZapierやMake (旧Integromat) などのiPaaSに読み込ませ、「RSSに新しいアイテムが追加されたら、X（Twitter）とLinkedInにタイトルとURLを投稿する」というワークフローを構築します。これにより、記事を公開した瞬間にフォロワーへの通知が自動で行われます。

@@ -242,7 +242,7 @@ Dans ce code, tout en utilisant des types sommes (une caractéristique fonctionn
 Même dans le développement front-end avec TypeScript (comme React), la fusion des paradigmes est devenue la norme.
 
 - Le rendu de l'UI des composants est **fonctionnel** (renvoie l'UI en tant que fonction pure).
-- La récupération des données et la gestion du cache sont **orientées données** (arbres d'état normalisés avec [Redux](https://kenji.blog/fr/p/state-management-history-future/) ou Zustand).
+- La récupération des données et la gestion du cache sont **orientées données** (arbres d'état normalisés avec [Redux](https://kenji.blog/fr/p/state-management-history-future/) ou [Zustand](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/)).
 - Certaines parties de la logique de domaine complexe sont **orientées objet** (couche de service basée sur des classes).
 
 ---

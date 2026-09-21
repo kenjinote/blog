@@ -409,7 +409,7 @@ NODE_ENV=production hugo --minify --environment production
 
 這個架構的優點在於， **「設定只需在最初進行一次即可」** 。只要建立好管道，開發者就不需要打開CSS檔案，只需在HTML或Markdown樣板中寫入直觀的實用類別，就能以驚人的速度構建出複雜的UI。
 
-此外，由於輸出的CSS大小始終會被最小化，這將直接提升Core Web Vitals的分數，從SEO的角度來看也非常有利。
+此外，由於輸出的CSS大小始終會被最小化，這將直接提升Core [Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)的分數，從SEO的角度來看也非常有利。
 
 Hugo與Tailwind CSS的組合，從個人技術部落格到大型企業網站，在所有專案中都將會是「最佳選擇」之一。請務必活用這個強大的工具鏈，享受舒適的Web開發生活！
 

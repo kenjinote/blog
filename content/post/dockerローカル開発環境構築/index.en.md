@@ -360,7 +360,7 @@ In a local development environment (inside [Docker](https://kenji.blog/en/p/dock
 
 ---
 
-## 8. Performance Optimization of Docker Builds: Layer Caching Strategy
+## 8. [Performance Optimization](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) of Docker Builds: Layer Caching Strategy
 
 When writing a Dockerfile, your understanding of the "layer cache" mechanism will drastically change build times.
 Docker creates file system differences (layers) for each instruction in a Dockerfile (like `FROM`, `RUN`, `COPY`) and holds them as caches. On rebuild, cached layers that haven't changed are reused.

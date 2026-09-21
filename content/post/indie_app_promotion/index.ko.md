@@ -112,7 +112,7 @@ export default function BlogPost({ params }) {
 
 ## 2. 튜토리얼에서 컨버전으로 이어지는 퍼널 설계
 
-기술 블로그의 독자는 특정 에러 메시지나 기술적인 과제(예: 'React Context API 성능 최적화')를 검색하여 유입됩니다. 그들의 '검색 의도(Search Intent)'를 충족시킨 직후에, 자연스러운 형태로 앱에 대한 CTA(Call to Action)를 배치하는 것이 중요합니다.
+기술 블로그의 독자는 특정 에러 메시지나 기술적인 과제(예: 'React [Context API](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/) 성능 최적화')를 검색하여 유입됩니다. 그들의 '검색 의도(Search Intent)'를 충족시킨 직후에, 자연스러운 형태로 앱에 대한 CTA(Call to Action)를 배치하는 것이 중요합니다.
 
 ### 2.1 유저 저니(User Journey)의 시각화
 

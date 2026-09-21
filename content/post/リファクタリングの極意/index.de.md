@@ -203,7 +203,7 @@ Durch diese Überarbeitung des Designs können Mock-Objekte von `IDatabase` prob
 
 Was bei Legacy-C++ die meisten Kopfschmerzen bereitet, ist der Missbrauch von globalen Variablen und dem "Singleton-Muster". Das Singleton mag auf den ersten Blick wie ein praktisches Entwurfsmuster erscheinen, aber in Wirklichkeit ist es nichts anderes als eine "globale Variable im Gewand der Objektorientierung".
 
-Ein globaler Zustand teilt den Zustand zwischen Testfällen, was die parallele Ausführung von Tests unmöglich macht und unvorhersehbare unzuverlässige Tests (Flaky Tests) verursacht.
+Ein globaler [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) teilt den Zustand zwischen Testfällen, was die parallele Ausführung von Tests unmöglich macht und unvorhersehbare unzuverlässige Tests (Flaky Tests) verursacht.
 
 Die Lösung besteht darin, Abhängigkeiten von impliziten globalen Zuständen zu beseitigen und den erforderlichen Zustand explizit als Funktionsargumente zu übergeben (Parametrisierung). Dies wird als "Übergabe des Kontexts" bezeichnet.
 

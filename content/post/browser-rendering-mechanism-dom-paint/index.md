@@ -350,7 +350,7 @@ Paint Record は、「この座標に、この色で四角形を描く」「こ�
 
 これを最大限に活かせるのが `transform` と `opacity` によるアニメーションです。
 
-### 6.3 CSS Trigger：アニメーションのパフォーマンス最適化
+### 6.3 CSS Trigger：アニメーションの[パフォーマンス最適化](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
 Webパフォーマンス最適化において最も重要な概念の一つが **CSS Triggers** です。
 JavaScriptやCSSで要素のスタイルを変更したとき、ブラウザのレンダリング[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)のどのステップからやり直す必要があるか（Layoutからか、Paintからか、Compositeからか）は、変更するプロパティによって決まります。

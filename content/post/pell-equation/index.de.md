@@ -70,7 +70,7 @@ Die Anfangsbedingungen werden wie folgt festgelegt, damit der Algorithmus reibun
 
 Jedes Glied $a_i$ des Kettenbruchs kann auch sequentiell nur unter Verwendung ganzzahliger arithmetischer Operationen gefunden werden. Dies ermöglicht genaue ganzzahlige Berechnungen, die Gleitkommafehler vollständig ausschließen.
 
-Um die Reihe von Prozessen bei der Suche nach einer Lösung zu visualisieren, haben wir das folgende Zustandsübergangsdiagramm vorbereitet.
+Um die Reihe von Prozessen bei der Suche nach einer Lösung zu visualisieren, haben wir das folgende [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergangsdiagramm vorbereitet.
 
 ```mermaid
 flowchart TD

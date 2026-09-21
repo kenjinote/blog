@@ -134,7 +134,7 @@ $$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
 
 ### 4.2 الاتصالات غير المتزامنة والاتساق النهائي (Eventual Consistency)
 
-كلما زاد حجم النظام، ينتقل الاتصال بين الخدمات من الاتصال المتزامن عبر REST API إلى الاتصال غير المتزامن باستخدام طوابير الرسائل (مثل Kafka، RabbitMQ). يتغير تناسق البيانات هنا من الاتساق الفوري إلى "الاتساق النهائي" (Eventual Consistency).
+كلما زاد حجم النظام، ينتقل الاتصال بين الخدمات من الاتصال المتزامن عبر [REST API](https://kenji.blog/ar/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ar/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) إلى الاتصال غير المتزامن باستخدام طوابير الرسائل (مثل Kafka، RabbitMQ). يتغير تناسق البيانات هنا من الاتساق الفوري إلى "الاتساق النهائي" (Eventual Consistency).
 متى يجب إدخال أنماط معمارية متقدمة مثل نمط Saga أو فصل مسؤولية أمر الاستعلام ([CQRS](https://kenji.blog/ar/p/event-driven-architecture-async/))؟ إن اتخاذ هذه القرارات المعقدة ورسم مخطط النظام بأكمله هو بالفعل القيمة الحقيقية للمهندس الأول (Senior Engineer).
 
 ```mermaid

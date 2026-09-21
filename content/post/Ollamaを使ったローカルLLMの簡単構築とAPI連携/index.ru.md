@@ -34,7 +34,7 @@ Ollama скрывает эти сложности, позволяя обраща
 
 В качестве бэкенда механизма вывода Ollama выступает **llama.cpp**, быстрая библиотека вывода LLM, написанная на C/C++. llama.cpp обладает способностью выполнять модели, максимально используя аппаратные возможности, будь то Apple Silicon (Metal), NVIDIA GPU (CUDA), AMD GPU (ROCm) или даже среды только с CPU.
 
-Ollama включает в себя llama.cpp и использует архитектуру, в которой серверный процесс, написанный на языке Go, предоставляет REST API, вызывая механизм вывода llama.cpp в фоновом режиме.
+Ollama включает в себя llama.cpp и использует архитектуру, в которой серверный процесс, написанный на языке Go, предоставляет [REST API](https://kenji.blog/ru/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ru/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/), вызывая механизм вывода llama.cpp в фоновом режиме.
 
 Следующая диаграмма Mermaid показывает общую архитектуру Ollama.
 
@@ -197,7 +197,7 @@ ollama run kansai-coder
 
 ---
 
-# Подробное руководство по Ollama REST API
+# Подробное руководство по Ollama [REST API](https://kenji.blog/ru/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ru/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)
 
 Хотя взаимодействие через CLI удобно, истинная мощь Ollama в реальной разработке приложений раскрывается через ее мощный REST API. Отправляя HTTP-запросы серверному процессу (по умолчанию `http://localhost:11434`), вы можете получать результаты вывода.
 
@@ -493,7 +493,7 @@ $$
 
 ## Заключение
 
-С появлением Ollama порог для внедрения локальных LLM резко снизился. Сочетание простой системы команд, напоминающей работу с контейнерами [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/), и REST API, который легко использовать из внешних приложений, можно смело назвать текущим стандартом де-факто для локальной разработки ИИ.
+С появлением Ollama порог для внедрения локальных LLM резко снизился. Сочетание простой системы команд, напоминающей работу с контейнерами [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/), и [REST API](https://kenji.blog/ru/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ru/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/), который легко использовать из внешних приложений, можно смело назвать текущим стандартом де-факто для локальной разработки ИИ.
 
 Разработчикам, которые сталкиваются с ограничениями по стоимости или безопасности облачных LLM, настоятельно рекомендуется использовать шаги, описанные в этой статье, для создания локальной среды LLM с помощью Ollama и интеграции ее в свои приложения. Вы должны почувствовать потенциал ИИ гораздо свободнее и ближе.
 

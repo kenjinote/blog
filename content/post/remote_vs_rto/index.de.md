@@ -133,7 +133,7 @@ mindmap
       E2["Wegfall von Unterbrechungen (Vorteil Remote)"]
 ```
 
-Bei Anwendung des SPACE-Frameworks werden Licht und Schatten der Remote-Arbeit deutlich. Während eine Remote-Umgebung die "Efficiency & Flow (Effizienz und Flow-Zustand)" von Ingenieuren auf das Äußerste steigert, birgt sie das Risiko, "Communication & Collaboration (Kommunikation und Zusammenarbeit)" zu behindern. Hinsichtlich "Satisfaction (Zufriedenheit)" gibt es einerseits den positiven Aspekt des Wegfalls des Pendelns, aber andererseits den negativen Aspekt der Verschlechterung der mentalen Gesundheit aufgrund sozialer Isolation.
+Bei Anwendung des SPACE-Frameworks werden Licht und Schatten der Remote-Arbeit deutlich. Während eine Remote-Umgebung die "Efficiency & Flow (Effizienz und Flow-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/))" von Ingenieuren auf das Äußerste steigert, birgt sie das Risiko, "Communication & Collaboration (Kommunikation und Zusammenarbeit)" zu behindern. Hinsichtlich "Satisfaction (Zufriedenheit)" gibt es einerseits den positiven Aspekt des Wegfalls des Pendelns, aber andererseits den negativen Aspekt der Verschlechterung der mentalen Gesundheit aufgrund sozialer Isolation.
 
 ---
 
@@ -171,7 +171,7 @@ Die gesamte Netzwerklatenz $T_{total}$ ist die Summe aus der entfernungsabhängi
 
 $$ T_{total} = \frac{D}{c} + \frac{L}{B} + T_{proc} $$
 
-Bei der Verwendung herkömmlicher VPNs entsteht beim Zugriff von Remote-Ingenieuren auf SaaS-Anwendungen in der Cloud (wie GitHub oder die AWS-Konsole) ein ineffizientes Routing, das als "Hairpin-NAT (Hairpinning)" bezeichnet wird, bei dem der gesamte Datenverkehr zunächst zum VPN-Gateway des Unternehmensnetzwerks gezogen und von dort ins Internet weitergeleitet wird. Dies erhöht unnötig die Distanz $D$ und treibt die Verarbeitungsverzögerung $T_{proc}$ durch Ver- und Entschlüsselung in der VPN-Appliance in die Höhe. Dies verschlechtert die Reaktionsfähigkeit beim Tippen der Ingenieure erheblich und zerstört den Flow-Zustand.
+Bei der Verwendung herkömmlicher VPNs entsteht beim Zugriff von Remote-Ingenieuren auf SaaS-Anwendungen in der Cloud (wie GitHub oder die AWS-Konsole) ein ineffizientes Routing, das als "Hairpin-NAT (Hairpinning)" bezeichnet wird, bei dem der gesamte Datenverkehr zunächst zum VPN-Gateway des Unternehmensnetzwerks gezogen und von dort ins Internet weitergeleitet wird. Dies erhöht unnötig die Distanz $D$ und treibt die Verarbeitungsverzögerung $T_{proc}$ durch Ver- und Entschlüsselung in der VPN-Appliance in die Höhe. Dies verschlechtert die Reaktionsfähigkeit beim Tippen der Ingenieure erheblich und zerstört den Flow-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/).
 
 ## Paradigmenwechsel durch Zero Trust ([BeyondCorp](https://kenji.blog/de/p/zero-trust-network-architecture-beyond-corp/))
 
@@ -197,7 +197,7 @@ graph TD
 
 Bei einer Zero-Trust-Architektur gibt es keinen zentralen Engpass wie bei einem VPN. Ob vom heimischen WLAN oder vom öffentlichen WLAN eines Cafés aus – Ingenieure greifen auf jede Ressource direkt auf dem kürzesten Weg über einen Identity-Aware Proxy (IAP) zu, basierend auf einem starken Kontext, bestehend aus Geräteauthentifizierung (wie Client-Zertifikaten) und Benutzerauthentifizierung (MFA).
 
-Dadurch werden die im obigen Latenzmodell genannte unnötige Distanz $D$ und die übermäßige Verarbeitungsverzögerung $T_{proc}$ eliminiert, was Terminalbedienungen und den Austausch großer Datenmengen mit extrem niedriger Latenz ermöglicht – völlig vergleichbar mit der Anwesenheit im Büro. Der Zustand "Kein Produktivitätsverlust trotz Remote-Arbeit" ist keine reine Frage der Einstellung, sondern kann erst durch den Aufbau einer solch fortschrittlichen Zero-Trust-Infrastruktur realisiert werden.
+Dadurch werden die im obigen Latenzmodell genannte unnötige Distanz $D$ und die übermäßige Verarbeitungsverzögerung $T_{proc}$ eliminiert, was Terminalbedienungen und den Austausch großer Datenmengen mit extrem niedriger Latenz ermöglicht – völlig vergleichbar mit der Anwesenheit im Büro. Der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) "Kein Produktivitätsverlust trotz Remote-Arbeit" ist keine reine Frage der Einstellung, sondern kann erst durch den Aufbau einer solch fortschrittlichen Zero-Trust-Infrastruktur realisiert werden.
 
 ---
 

@@ -169,7 +169,7 @@ Actually applies the change plan presented in `plan` to the cloud provider.
 
 ---
 
-# 5. State Management: The Depths of the State File
+# 5. [State Management](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/): The Depths of the State File
 
 An unavoidable concept in understanding Terraform is **State**.
 

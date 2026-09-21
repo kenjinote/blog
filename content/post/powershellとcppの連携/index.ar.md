@@ -295,7 +295,7 @@ $$ G \propto \sum_{i=1}^{N} A_i $$
 
 مراقبة معلومات الأجهزة المخصصة (مثل بطاقات PCIe الخاصة أو المستشعرات) التي لا يمكن استردادها بواسطة WMI (Windows Management Instrumentation) أو CIM (Common Information Model).
 - **دور C++**: ملف DLL يستدعي `DeviceIoControl` لبرامج تشغيل الأجهزة لاسترداد وتحليل البيانات الثنائية.
-- **دور PowerShell**: استدعاء ملف DLL بانتظام، وتنسيق نتائج التحليل بتنسيق JSON، وإرسالها إلى REST API الخاص بخادم المراقبة.
+- **دور PowerShell**: استدعاء ملف DLL بانتظام، وتنسيق نتائج التحليل بتنسيق JSON، وإرسالها إلى [REST API](https://kenji.blog/ar/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ar/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) الخاص بخادم المراقبة.
 
 ## أفضل الممارسات لإدارة الذاكرة واستكشاف الأخطاء وإصلاحها
 

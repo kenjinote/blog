@@ -242,7 +242,7 @@ En este código, se emplean tipos de suma (`enum`) característicos de la progra
 Incluso en el desarrollo frontend con TypeScript (como en React), la fusión de paradigmas se ha convertido en el estándar.
 
 - El renderizado de la UI en los componentes es **funcional** (se devuelve la UI como una función pura).
-- La gestión del caché y la obtención de datos son **orientadas a datos** (árboles de estado normalizados con [Redux](https://kenji.blog/es/p/state-management-history-future/) o Zustand).
+- La gestión del caché y la obtención de datos son **orientadas a datos** (árboles de estado normalizados con [Redux](https://kenji.blog/es/p/state-management-history-future/) o [Zustand](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/)).
 - Algunas lógicas de dominio complejas son **orientadas a objetos** (capas de servicio basadas en clases).
 
 ---

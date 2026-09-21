@@ -242,7 +242,7 @@ fn process_event(state: &mut AppState, event: Event) {
 حتى في تطوير الواجهات الأمامية باستخدام TypeScript (مثل React)، أصبح اندماج النماذج هو المعيار.
 
 - تصيير واجهة المستخدم (UI Rendering) للمكونات يتم بشكل **وظيفي** (إرجاع واجهة المستخدم كدوال نقية).
-- جلب البيانات وإدارة التخزين المؤقت يتم بطريقة **موجهة للبيانات** (شجرة حالة مسطحة باستخدام [Redux](https://kenji.blog/ar/p/state-management-history-future/) أو Zustand).
+- جلب البيانات وإدارة التخزين المؤقت يتم بطريقة **موجهة للبيانات** (شجرة حالة مسطحة باستخدام [Redux](https://kenji.blog/ar/p/state-management-history-future/) أو [Zustand](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)).
 - يتم تطبيق **البرمجة كائنية التوجه** في بعض الأجزاء المعقدة من منطق النطاق (طبقة خدمات تعتمد على الفئات).
 
 ---

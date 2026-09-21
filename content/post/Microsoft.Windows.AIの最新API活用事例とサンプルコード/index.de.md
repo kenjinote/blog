@@ -16,7 +16,7 @@ description: 'Ein detaillierter Leitfaden, der die Implementierung lokaler KI-Fu
 
 In den letzten Jahren hat sich die KI-Technologie bemerkenswert weiterentwickelt, was zu einem schnellen Paradigmenwechsel von der Nutzung großer Sprachmodelle (LLMs) in der Cloud hin zu KI-Inferenzen auf Edge-Geräten (lokalen PCs) geführt hat. Das Herzstück dieser Entwicklung sind die von Microsoft für Windows 11 bereitgestellte "Windows Copilot Runtime" und die "Microsoft.Windows.AI"-API zu deren Steuerung.
 
-Die Entwicklung von Anwendungen mithilfe von Cloud-APIs (wie OpenAI oder Azure OpenAI) ist zwar einfach, bringt jedoch Herausforderungen in Bezug auf Latenz, Datenschutz und laufende Kosten mit sich. Durch die lokale Ausführung von KI-Modellen können hingegen extrem latenzarme Anwendungen realisiert werden, die auch offline funktionieren, ohne dass sensible Daten das Gerät verlassen.
+Die Entwicklung von Anwendungen mithilfe von Cloud-APIs (wie OpenAI oder Azure OpenAI) ist zwar einfach, bringt jedoch Herausforderungen in Bezug auf Latenz, Datenschutz und laufende Kosten mit sich. Durch die lokale Ausführung von KI-Modellen können hingegen extrem latenzarme Anwendungen realisiert werden, die auch [offline](https://kenji.blog/de/p/pwa-progressive-web-apps-service-worker/) funktionieren, ohne dass sensible Daten das Gerät verlassen.
 
 Dieser Artikel bietet eine äußerst detaillierte Erklärung zur Implementierung lokaler KI-Funktionen, die für die zukünftige Entwicklung von Windows-Anwendungen unerlässlich sind. Anhand praktischer Beispielcodes in C# und C++ werden Aspekte von der Architektur bis hin zum Performance-Tuning umfassend behandelt. Wir gehen dabei tief auf technische Details ein, wie die Nutzung der zugrunde liegenden Hardware (NPU und GPU) und die Integration mit DirectML, anstatt nur API-Aufrufe zu demonstrieren.
 
@@ -349,7 +349,7 @@ Die `Microsoft.Windows.AI`-API und die Copilot Runtime entwickeln sich rasant we
 
 ## 9. Fazit: Die Zukunft von Anwendungen durch lokale KI
 
-Die Copilot Runtime in Windows 11 und die `Microsoft.Windows.AI`-API haben allen Windows-Entwicklern die extrem mächtige Waffe der "lokalen KI" an die Hand gegeben. Es besteht keine absolute Abhängigkeit mehr von Cloud-APIs. Sie können den Benutzern KI-Erlebnisse der nächsten Generation bieten, die Latenzen eliminieren, den Datenschutz strikt wahren und auch offline vollständig funktionieren.
+Die Copilot Runtime in Windows 11 und die `Microsoft.Windows.AI`-API haben allen Windows-Entwicklern die extrem mächtige Waffe der "lokalen KI" an die Hand gegeben. Es besteht keine absolute Abhängigkeit mehr von Cloud-APIs. Sie können den Benutzern KI-Erlebnisse der nächsten Generation bieten, die Latenzen eliminieren, den Datenschutz strikt wahren und auch [offline](https://kenji.blog/de/p/pwa-progressive-web-apps-service-worker/) vollständig funktionieren.
 
 Nutzen Sie das Wissen aus diesem Artikel – von der Integration standardmäßiger Sprachmodelle des Betriebssystems mit C# über mathematische Leistungsbewertungen bis hin zu extremer Hardwareoptimierung mithilfe von C++ und DirectML –, um eigenhändig "KI-native" Windows-Anwendungen der nächsten Generation zu erschaffen. Die unbegrenzten Möglichkeiten, die KI bietet, liegen direkt vor dem Code, den Sie schreiben.
 

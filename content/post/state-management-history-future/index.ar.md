@@ -105,7 +105,7 @@ graph TD
 
 عندما يتم تحديث Model A، يتم تحديث View B، وتعديل View B يؤدي إلى تحديث Model C، والذي بدوره يحدّث View D... وهكذا تشابكت تدفقات البيانات بشكل معقد، وكثرت الأخطاء حيث تدخل التطبيقات في حلقات لا نهائية (Infinite loops) أو يتم تحديث واجهة المستخدم في أوقات غير متوقعة. أصبح من المستحيل التنبؤ "متى، ومن، وأي بيانات تم تغييرها".
 
-## 4. ولادة React و Flux: ثورة تدفق البيانات أحادي الاتجاه
+## 4. ولادة React و [Flux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/): ثورة تدفق البيانات أحادي الاتجاه
 
 في عام 2013، أطلقت Facebook (الآن Meta) مكتبة React. كانت React بحد ذاتها مكتبة لبناء واجهة المستخدم (حرف V في MVC)، ولكن في الوقت نفسه، اقترحوا نمطاً معمارياً جديداً وهو **Flux** .
 
@@ -119,7 +119,7 @@ graph LR
     View -->|"Trigger"| Action
 ```
 
-يحتوي معمار Flux على قواعد صارمة:
+يحتوي معمار [Flux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) على قواعد صارمة:
 
 1.  **Action**: الطريقة الوحيدة لإجراء تغيير في النظام. كائن يوضح ما حدث.
 2.  **Dispatcher**: المحور المركزي الذي يستقبل جميع Actions ويوزعها إلى Store.
@@ -128,7 +128,7 @@ graph LR
 
 الشيء المهم هو أن **View لا يمكنه أبداً تعديل حالة Store مباشرة** . لتغيير الحالة، يجب دائماً إصدار Action والمرور عبر Dispatcher في دورة ذات اتجاه واحد. أدى ذلك إلى جعل تدفق البيانات قابلاً للتنبؤ (Predictable) بشكل كبير، وتحسين استقرار إدارة الحالة في التطبيقات واسعة النطاق بشكل جذري.
 
-## 5. هيمنة Redux وحدودها
+## 5. هيمنة [Redux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) وحدودها
 
 الذي قام بتحسين مفاهيم Flux ليصبح المعيار الفعلي (De facto standard) لإدارة الحالة في الواجهات الأمامية هو **Redux** ، الذي طوره Dan Abramov وآخرون في عام 2015.
 
@@ -172,7 +172,7 @@ function counterReducer(state = initialState, action) {
 }
 ```
 
-بفضل هذا المزيج من "عدم القابلية للتغيير (Immutability)" و "الدوال النقية"، حقق Redux ميزات قوية مثل تصحيح الأخطاء عبر السفر عبر الزمن (Time-travel debugging) والتحميل الساخن (Hot reloading). كان ذلك اختراقاً كبيراً من حيث تجربة المطور (DX).
+بفضل هذا المزيج من "عدم القابلية للتغيير (Immutability)" و "الدوال النقية"، حقق [Redux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) ميزات قوية مثل تصحيح الأخطاء عبر السفر عبر الزمن (Time-travel debugging) والتحميل الساخن (Hot reloading). كان ذلك اختراقاً كبيراً من حيث تجربة المطور (DX).
 
 ### 5.3 تحديات Redux: جدار الشفرة المتكررة (Boilerplate)
 
@@ -186,16 +186,16 @@ function counterReducer(state = initialState, action) {
 
 علاوة على ذلك، للتعامل مع العمليات غير المتزامنة (مثل اتصالات API)، كان من الضروري إدخال برمجيات وسيطة (Middleware) مثل `redux-thunk` أو `redux-saga`، مما رفع منحنى التعلم بشكل حاد.
 
-تعالت الأصوات القائلة "أليس Redux مبالغاً فيه؟"، وبدأ البحث عن مناهج جديدة لإدارة الحالة.
+تعالت الأصوات القائلة "أليس [Redux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) مبالغاً فيه؟"، وبدأ البحث عن مناهج جديدة لإدارة الحالة.
 
-## 6. Context API و Hooks وحركة «ما بعد Redux»
+## 6. [Context API](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) و Hooks وحركة «ما بعد Redux»
 
 في عام 2018، تم تحديث Context API في React 16.3، ومن ثم تم تقديم **React Hooks** في React 16.8 عام 2019، مما شكل نقطة تحول كبرى في تاريخ إدارة الحالة.
 
 ### 6.1 مشاركة الحالة باستخدام الميزات المدمجة
 
 باستخدام Context API، يمكنك تمرير البيانات مباشرة إلى المكونات الموجودة في طبقات عميقة من شجرة المكونات، دون الحاجة إلى تمرير الخصائص عبر كل مستوى (Prop Drilling).
-علاوة على ذلك، من خلال دمجه مع الـ Hook المسمى `useReducer`، أصبح من الممكن تحقيق إدارة حالة مشابهة لـ Redux باستخدام الميزات المدمجة في React فقط.
+علاوة على ذلك، من خلال دمجه مع الـ Hook المسمى `useReducer`، أصبح من الممكن تحقيق إدارة حالة مشابهة لـ [Redux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) باستخدام الميزات المدمجة في React فقط.
 
 ```javascript
 // إدارة الحالة باستخدام Context و useReducer
@@ -226,9 +226,9 @@ function CounterDisplay() {
 }
 ```
 
-أدى هذا إلى انتشار واسع لفكرة "لا حاجة لـ Redux للحالات العالمية البسيطة". ولكن، كان لهذا النهج فخ قاتل في الأداء.
+أدى هذا إلى انتشار واسع لفكرة "لا حاجة لـ [Redux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) للحالات العالمية البسيطة". ولكن، كان لهذا النهج فخ قاتل في الأداء.
 
-### 6.2 مشكلة أداء Context API (إعادة التصيير الزائدة)
+### 6.2 مشكلة أداء [Context API](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) (إعادة التصيير الزائدة)
 
 يحتوي Context API الخاص بـ React على خاصية: "عندما يتم تحديث قيمة Context، سيتم إعادة تصيير جميع المكونات التي تشترك في ذلك الـ Context (التي تستدعي `useContext`) بلا قيد أو شرط".
 
@@ -245,9 +245,9 @@ function CounterDisplay() {
 - **Server State (حالة الخادم)**: يملكها الخادم. يتم جلبها بشكل غير متزامن. نظراً لأنها قد تتم مشاركتها وتعديلها من قبل عدة أشخاص، فهناك دائماً احتمال أن تصبح قديمة (Stale). تتطلب إدارة التخزين المؤقت (Cache)، والتحديث في الخلفية، وعمليات إعادة المحاولة.
 - **Client State (حالة العميل)**: يملكها العميل (المتصفح). يتم تحديثها بشكل متزامن. مثل الوضع الداكن أو فتح/إغلاق نافذة منبثقة.
 
-### 7.1 صعود React Query و SWR و Apollo Client
+### 7.1 صعود React Query و SWR و [Apollo Client](https://kenji.blog/ar/p/graphql-vs-rest-api-overfetching-type-safety/)
 
-أصبح من السائد فصل إدارة Server State عن Redux أو Context، وتركها لمكتبات مخصصة. هكذا ظهرت مكتبات مثل **React Query (الآن TanStack Query)** و **SWR**.
+أصبح من السائد فصل إدارة Server State عن [Redux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) أو Context، وتركها لمكتبات مخصصة. هكذا ظهرت مكتبات مثل **React Query (الآن TanStack Query)** و **SWR**.
 
 ```javascript
 // إدارة Server State باستخدام React Query
@@ -265,18 +265,18 @@ function UserProfile({ userId }) {
 ```
 
 قامت هذه المكتبات بتجريد (Abstract) العملية المعقدة المتمثلة في "تخزين حالة الخادم محلياً ومزامنتها عند الضرورة".
-ونتيجة لذلك، انخفضت كمية البيانات التي يجب إدارتها في مخازن عالمية مثل Redux إلى "حالات العميل النقية فقط" بشكل كبير، مما خفف من عبء إدارة الحالة بشكل هائل.
+ونتيجة لذلك، انخفضت كمية البيانات التي يجب إدارتها في مخازن عالمية مثل [Redux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) إلى "حالات العميل النقية فقط" بشكل كبير، مما خفف من عبء إدارة الحالة بشكل هائل.
 
-## 8. إدارة الحالة الذرية (Atomic [State](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/) Management): Recoil و Jotai
+## 8. إدارة الحالة الذرية (Atomic [State](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/) Management): [Recoil](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) و [Jotai](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)
 
 بعد فصل Server State، بدأت منافسة جديدة حول كيفية إدارة ما تبقى من Client State بكفاءة.
-لحل نموذج التصيير (من أعلى إلى أسفل) في React ومشاكل أداء Context API، ظهر نهج **إدارة الحالة الذرية (Atomic State Management)** .
+لحل نموذج التصيير (من أعلى إلى أسفل) في React ومشاكل أداء [Context API](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)، ظهر نهج **إدارة الحالة الذرية (Atomic [State Management](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/))** .
 
 في عام 2020، تم الإعلان عن **Recoil** من قبل فريق Facebook، وبتأثير منه ظهرت مكتبات مثل **Jotai**.
 
 ### 8.1 إدارة الحالة من أسفل إلى أعلى (Bottom-up)
 
-بينما يتبع Redux نهج "اقتطاع الأجزاء الضرورية من شجرة حالة واحدة ضخمة (من أعلى إلى أسفل)"، تتبع Recoil و Jotai نهج "إنشاء أصغر وحدات للحالة (Atoms)، وتجميعها لحقنها في شجرة المكونات (من أسفل إلى أعلى)".
+بينما يتبع [Redux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) نهج "اقتطاع الأجزاء الضرورية من شجرة حالة واحدة ضخمة (من أعلى إلى أسفل)"، تتبع Recoil و Jotai نهج "إنشاء أصغر وحدات للحالة (Atoms)، وتجميعها لحقنها في شجرة المكونات (من أسفل إلى أعلى)".
 
 ```mermaid
 graph BT
@@ -287,7 +287,7 @@ graph BT
     Component1 -.->|"Updates"| AtomA
 ```
 
-الـ Atom هو وحدة حالة مستقلة. تشترك (Subscribe) المكونات فقط في الـ Atoms التي تحتاجها. عندما يتم تحديث Atom، يتم إعادة تصيير المكونات التي تشترك في هذا الـ Atom فقط بشكل دقيق. هذا يحل تماماً مشكلة إعادة التصيير غير الضرورية التي كان يعاني منها Context API.
+الـ Atom هو وحدة حالة مستقلة. تشترك (Subscribe) المكونات فقط في الـ Atoms التي تحتاجها. عندما يتم تحديث Atom، يتم إعادة تصيير المكونات التي تشترك في هذا الـ Atom فقط بشكل دقيق. هذا يحل تماماً مشكلة إعادة التصيير غير الضرورية التي كان يعاني منها [Context API](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/).
 
 ```javascript
 // مثال على Atomic State باستخدام Jotai
@@ -309,15 +309,15 @@ function ProductDisplay() {
 }
 ```
 
-نظراً لأن Jotai وغيرها يمكن استخدامها تقريباً بنفس شعور `useState` في React، فإن منحنى التعلم الخاص بها منخفض، وتتمتع بأداء عالٍ، مما يجعلها خياراً شائعاً جداً في تطبيقات React الحديثة.
+نظراً لأن [Jotai](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) وغيرها يمكن استخدامها تقريباً بنفس شعور `useState` في React، فإن منحنى التعلم الخاص بها منخفض، وتتمتع بأداء عالٍ، مما يجعلها خياراً شائعاً جداً في تطبيقات React الحديثة.
 
-## 9. الوكلاء (Proxies) وقابلية التغيير (Mutability): Zustand و Valtio
+## 9. الوكلاء (Proxies) وقابلية التغيير (Mutability): [Zustand](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) و Valtio
 
 كتوجه قوي آخر، ظهرت مجموعة من المكتبات التي قللت من الشفرات المتكررة (Boilerplate) إلى الحد الأقصى ووفرت واجهات برمجة تطبيقات (APIs) أكثر بديهية. وهي **Zustand** و **Valtio**، اللتان طورتهما مجموعة Poimandres مفتوحة المصدر.
 
-### 9.1 Zustand: بساطة Flux المطلقة
+### 9.1 Zustand: بساطة [Flux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) المطلقة
 
-يتبنى Zustand، مثل Redux، متجراً واحداً (Flux Architecture)، ولكنه يلغي المفاهيم المعقدة مثل Reducer و Provider، ويوفر واجهة برمجة تطبيقات بسيطة جداً تعتمد على Hooks.
+يتبنى Zustand، مثل [Redux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)، متجراً واحداً (Flux Architecture)، ولكنه يلغي المفاهيم المعقدة مثل Reducer و Provider، ويوفر واجهة برمجة تطبيقات بسيطة جداً تعتمد على Hooks.
 
 ```javascript
 // مثال على Zustand
@@ -339,7 +339,7 @@ function Counter() {
 }
 ```
 
-أسس Zustand مكانته كـ "النسخة الحديثة من Redux"، التي تجمع بين متانة Redux وبساطة Hooks.
+أسس [Zustand](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) مكانته كـ "النسخة الحديثة من [Redux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)"، التي تجمع بين متانة Redux وبساطة Hooks.
 
 ### 9.2 Valtio: إدارة الحالة القابلة للتغيير عبر Proxy
 
@@ -444,11 +444,11 @@ graph TD
 
 ## 13. الخلاصة: إلى أين تتجه إدارة الحالة؟
 
-بدءاً من فوضى MVC، إلى اكتساب القابلية للتنبؤ بواسطة Flux/Redux، والتبسيط من خلال Hooks، وفصل Server [State](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/)، وتحسين الكفاءة عبر Atomic و Proxy، وصولاً إلى التفاعلية الدقيقة باستخدام Signals.
+بدءاً من فوضى MVC، إلى اكتساب القابلية للتنبؤ بواسطة [Flux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/)، والتبسيط من خلال Hooks، وفصل Server [State](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/)، وتحسين الكفاءة عبر Atomic و Proxy، وصولاً إلى التفاعلية الدقيقة باستخدام Signals.
 
 بالنظر إلى تاريخ إدارة الحالة في الواجهات الأمامية على مدار حوالي 15 عاماً، يظهر اتجاه واحد واضح. وهو **"التطور نحو تقليل الشفرات المتكررة (Boilerplate)، وتقليل العبء المعرفي على المطورين، بينما يقوم النظام في الخلفية (إطار العمل أو المترجم) بتحسين الأداء تلقائياً"** .
 
-- **تطوير React على نطاق صغير إلى متوسط**: Jotai و Zustand غالباً ما تكون الحلول المثلى.
+- **تطوير React على نطاق صغير إلى متوسط**: [Jotai](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) و [Zustand](https://kenji.blog/ar/p/state-management-history-redux-context-recoil-zustand/) غالباً ما تكون الحلول المثلى.
 - **التطوير الذي يتضمن جلب البيانات**: أدوات إدارة Server State مثل TanStack Query ضرورية.
 - **المشاريع الجديدة التي تتطلب أداءً فائقاً و DX عالياً**: أطر العمل التي تعتمد على Signals مثل SolidJS و Vue جذابة للغاية.
 - **مستقبل React**: مع نضج React Compiler، سيتم حل العديد من مشاكل أداء إدارة الحالة عن طريق الأتمتة.

@@ -13,7 +13,7 @@ tags: ["GitHub Copilot", "Local AI", "Workflow", "Developer Productivity"]
 
 Dalam pengembangan perangkat lunak modern, penggunaan asisten AI telah berevolusi dari sekadar alat "yang berguna jika ada" menjadi infrastruktur "yang sangat diperlukan". Terutama sejak munculnya GitHub Copilot, pengalaman pengkodean bagi para pengembang telah berubah secara dramatis. Namun, bergantung sepenuhnya pada AI berbasis cloud untuk semua tugas tidak selalu menjadi solusi yang optimal.
 
-Ada beberapa tantangan yang terkait dengan AI berbasis cloud, seperti risiko keamanan saat menangani informasi rahasia perusahaan (kunci rahasia, algoritma eksklusif, arsitektur yang belum dipublikasikan), latensi API, dan bekerja di lingkungan offline tanpa koneksi jaringan. Oleh karena itu, belakangan ini terjadi peningkatan perhatian yang pesat terhadap pemanfaatan **model terbuka yang berjalan secara lokal (AI Lokal)** seperti Llama 3, CodeLlama, dan Mistral.
+Ada beberapa tantangan yang terkait dengan AI berbasis cloud, seperti risiko keamanan saat menangani informasi rahasia perusahaan (kunci rahasia, algoritma eksklusif, arsitektur yang belum dipublikasikan), latensi API, dan bekerja di lingkungan [offline](https://kenji.blog/id/p/pwa-progressive-web-apps-service-worker/) tanpa koneksi jaringan. Oleh karena itu, belakangan ini terjadi peningkatan perhatian yang pesat terhadap pemanfaatan **model terbuka yang berjalan secara lokal (AI Lokal)** seperti Llama 3, CodeLlama, dan Mistral.
 
 Artikel ini akan menjelaskan secara sangat detail tentang bagaimana menggabungkan dan menggunakan AI berbasis cloud (seperti GitHub Copilot, GPT-4) dengan AI lokal untuk memaksimalkan (meningkatkan drastis) efisiensi pengembangan, mulai dari desain arsitektur, pohon keputusan (decision tree) konkret, hingga analisis matematis mengenai biaya dan latensi.
 
@@ -239,7 +239,7 @@ Pada saat itu, PC lokal milik pengembang tidak hanya berfungsi sebagai layar unt
 Daripada melihat ini sebagai dikotomi antara "GitHub Copilot (Cloud)" dan "AI Lokal", **alur kerja hibrida yang memahami keunggulan keduanya dan menggunakannya dengan tepat sesuai dengan sifat tugas** adalah lingkungan pengembangan yang paling kuat saat ini.
 
 *   **GitHub Copilot / API Cloud**: Digunakan untuk peningkatan kecepatan pengembangan secara umum, perancangan logika yang kompleks, dan analisis komprehensif pada proyek secara keseluruhan.
-*   **AI Lokal (Ollama, LM Studio)**: Digunakan untuk memproses kode rahasia, pengkodean dalam lingkungan offline, pelengkapan sebaris (inline) super cepat dengan latensi jaringan nol, dan untuk mengurangi pengeluaran biaya API.
+*   **AI Lokal (Ollama, LM Studio)**: Digunakan untuk memproses kode rahasia, pengkodean dalam lingkungan [offline](https://kenji.blog/id/p/pwa-progressive-web-apps-service-worker/), pelengkapan sebaris (inline) super cepat dengan latensi jaringan nol, dan untuk mengurangi pengeluaran biaya API.
 
 Silakan jadikan pohon keputusan (decision tree) dan arsitektur yang diperkenalkan dalam artikel ini sebagai referensi, dan tingkatkan lingkungan IDE Anda ke level berikutnya. Dengan melangkah dari pihak yang sekadar "menggunakan" AI menjadi pihak yang "memadukan dan mempekerjakan" AI di tempat yang tepat, efisiensi pengembangan Anda pasti akan meningkat drastis.
 

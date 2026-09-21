@@ -49,7 +49,7 @@ Können wir wirklich behaupten, dass „FizzBuzz nicht schreiben können = nicht
 
 ---
 
-### Es geht nicht um das Können, sondern darum, ob man den „Zustand“ dafür hat
+### Es geht nicht um das Können, sondern darum, ob man den „[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)“ dafür hat
 
 Es stimmt, dass FizzBuzz das Verständnis von Syntax und grundlegendem logischem Denken erfordert. Daher ist es nachvollziehbar, dass es zur „Überprüfung der Grundlagen“ verwendet wird.
 

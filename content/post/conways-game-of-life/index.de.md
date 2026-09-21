@@ -24,7 +24,7 @@ Der größte Reiz dieses Systems liegt in der Tatsache, dass **aus extrem einfac
 ## 2. Regeln des Spiels des Lebens
 
 Das Spiel des Lebens entfaltet sich auf einem unendlichen zweidimensionalen Gitter. Jedes Gitter wird als „Zelle“ bezeichnet, die sich in einem von zwei Zuständen befinden kann: „Lebend“ (Alive) oder „Tot“ (Dead).
-Der Zustand jeder Zelle in der nächsten Generation (Schritt) wird basierend auf den Zuständen ihrer 8 umliegenden Zellen (Moore-Nachbarschaft) bestimmt.
+Der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) jeder Zelle in der nächsten Generation (Schritt) wird basierend auf den Zuständen ihrer 8 umliegenden Zellen (Moore-Nachbarschaft) bestimmt.
 
 Es gibt nur vier Regeln:
 
@@ -69,7 +69,7 @@ flowchart TD
 Trotz der einfachen Regeln gibt es im Spiel des Lebens eine Vielzahl von Mustern. Sie werden hauptsächlich in die folgenden Kategorien eingeteilt.
 
 ### 3.1 Statische Objekte (Still Lifes)
-Muster, deren Zustand sich im Laufe der Generationen überhaupt nicht ändert.
+Muster, deren [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) sich im Laufe der Generationen überhaupt nicht ändert.
 - **Block**: 2x2 lebende Zellen.
 - **Bienenstock** (Beehive): Ein Sechseck aus 6 Zellen.
 

@@ -305,7 +305,7 @@ En incluant ce fichier dans le dépôt, dès l'ouverture du projet dans VSCode, 
 
 Examinons le cycle de vie du traitement d'une requête d'application Web dans l'environnement de développement local à l'aide d'un diagramme de séquence, puis analysons le modèle mathématique de ses performances.
 
-### Diagramme de séquence (Flux de requête)
+### Diagramme de séquence ([Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de requête)
 
 ```mermaid
 sequenceDiagram

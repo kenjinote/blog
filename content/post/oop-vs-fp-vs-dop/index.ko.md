@@ -242,7 +242,7 @@ fn process_event(state: &mut AppState, event: Event) {
 TypeScript를 사용한 프런트엔드 개발(React 등)에서도 패러다임의 융합이 표준이 되었습니다.
 
 - 컴포넌트의 UI 렌더링은 **함수형** (순수 함수로서 UI를 반환한다).
-- 데이터의 페치나 캐시 관리는 **데이터 지향** ([Redux](https://kenji.blog/ko/p/state-management-history-future/)나 Zustand에 의한 정규화된 상태 트리).
+- 데이터의 페치나 캐시 관리는 **데이터 지향** ([Redux](https://kenji.blog/ko/p/state-management-history-future/)나 [Zustand](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)에 의한 정규화된 상태 트리).
 - 복잡한 도메인 로직의 일부에는 **객체 지향** (클래스 기반의 서비스 계층).
 
 ---

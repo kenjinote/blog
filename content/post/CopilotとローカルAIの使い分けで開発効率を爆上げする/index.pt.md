@@ -13,7 +13,7 @@ tags: ["GitHub Copilot", "Local AI", "Workflow", "Developer Productivity"]
 
 No desenvolvimento de software moderno, o uso de assistentes de IA evoluiu de uma ferramenta "conveniente de se ter" para uma infraestrutura "indispensável". Especialmente desde a chegada do GitHub Copilot, a experiência de codificação dos desenvolvedores mudou drasticamente. No entanto, depender de IA na nuvem para todas as tarefas nem sempre é a solução ideal.
 
-Existem vários desafios com a IA baseada na nuvem, como os riscos de segurança ao lidar com informações confidenciais da empresa (chaves secretas, algoritmos proprietários, arquiteturas não publicadas), atrasos da API (latência) e trabalhar em ambientes offline sem conexão de rede. Portanto, nos últimos anos, a utilização de **modelos abertos rodando localmente (IA local)**, como Llama 3, CodeLlama e Mistral, tem atraído rapidamente a atenção.
+Existem vários desafios com a IA baseada na nuvem, como os riscos de segurança ao lidar com informações confidenciais da empresa (chaves secretas, algoritmos proprietários, arquiteturas não publicadas), atrasos da API (latência) e trabalhar em ambientes [offline](https://kenji.blog/pt/p/pwa-progressive-web-apps-service-worker/) sem conexão de rede. Portanto, nos últimos anos, a utilização de **modelos abertos rodando localmente (IA local)**, como Llama 3, CodeLlama e Mistral, tem atraído rapidamente a atenção.
 
 Neste artigo, explicaremos de forma extremamente detalhada como maximizar (aumentar drasticamente) a eficiência do desenvolvimento combinando e alternando entre a IA baseada na nuvem (GitHub Copilot, GPT-4, etc.) e a IA local, desde o design da arquitetura e árvores de decisão específicas, até a análise matemática de custos e latência.
 
@@ -239,7 +239,7 @@ Nesse cenário, o PC local do desenvolvedor não será mais apenas uma tela exec
 Em vez de uma falsa dicotomia de "GitHub Copilot na nuvem" contra "IA local", um **fluxo de trabalho híbrido onde você entende os pontos fortes de ambos e os utiliza adequadamente, dependendo da natureza da tarefa**, é o melhor ambiente de desenvolvimento atualmente.
 
 *   **GitHub Copilot / API em Nuvem**: Use-os para aceleração do desenvolvimento em geral, design lógico complexo e análise abrangente de todo o projeto.
-*   **IA Local (Ollama, LM Studio)**: Use-a para lidar com códigos altamente confidenciais, em ambientes offline, preenchimento automático em linha ultrarrápido eliminando a latência da rede e para reduzir os custos de API.
+*   **IA Local (Ollama, LM Studio)**: Use-a para lidar com códigos altamente confidenciais, em ambientes [offline](https://kenji.blog/pt/p/pwa-progressive-web-apps-service-worker/), preenchimento automático em linha ultrarrápido eliminando a latência da rede e para reduzir os custos de API.
 
 Por favor, use as árvores de decisão e arquiteturas introduzidas neste artigo como referência para elevar o seu ambiente IDE ao próximo nível. Ao mudar do lado que "apenas usa" a IA para o lado que a "combina e controla com base na pessoa certa no lugar certo", a eficiência do seu desenvolvimento certamente aumentará de forma drástica.
 

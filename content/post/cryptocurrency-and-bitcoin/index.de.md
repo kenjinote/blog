@@ -325,7 +325,7 @@ Für diejenigen, die nach dem Lesen dieses Artikels tiefer in die Blockchain-Tec
 - **Bitcoin: A Peer-to-Peer Electronic Cash System** (Satoshi Nakamoto, 2008)
   - Das monumentale Whitepaper, mit dem alles begann. In nur 9 Seiten wird das grundlegende Design eines [Distributed Ledger](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s, das PoW, Anreize und Merkle-Bäume kombiniert, in perfekter Form beschrieben.
 - **Ethereum: A Secure Decentralised Generalised Transaction Ledger** (Gavin Wood, 2014)
-  - Das Yellow Paper von Ethereum. Es definierte die Blockchain neu als kontobasierte Zustandsmaschine, die Turing-vollständige [Smart Contract](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s ausführen kann, im Gegensatz zu Bitcoins UTXO-Modell.
+  - Das Yellow Paper von Ethereum. Es definierte die Blockchain neu als kontobasierte [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smaschine, die Turing-vollständige [Smart Contract](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s ausführen kann, im Gegensatz zu Bitcoins UTXO-Modell.
 
 ### Grundlagen der Kryptografie und Mathematik
 Um die Blockchain wirklich zu verstehen, sind Kenntnisse in Informationssicherheit und angewandter Mathematik unerlässlich. Wir empfehlen das Studium der folgenden Bereiche:

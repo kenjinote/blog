@@ -112,7 +112,7 @@ Com essa implementação, o Google interpreta a página não apenas como dados d
 
 ## 2. Design do Funil: Do Tutorial à Conversão
 
-Os leitores de um blog de tecnologia chegam pesquisando mensagens de erro específicas ou desafios técnicos (ex: "otimização de desempenho React Context API"). Logo após satisfazer sua "Intenção de Busca" (Search Intent), é importante colocar um CTA (Call to Action) para o seu aplicativo de forma natural.
+Os leitores de um blog de tecnologia chegam pesquisando mensagens de erro específicas ou desafios técnicos (ex: "otimização de desempenho React [Context API](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/)"). Logo após satisfazer sua "Intenção de Busca" (Search Intent), é importante colocar um CTA (Call to Action) para o seu aplicativo de forma natural.
 
 ### 2.1 Visualização da Jornada do Usuário
 

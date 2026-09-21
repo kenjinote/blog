@@ -256,7 +256,7 @@ $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 ```bash
 ollama run llama3
 ```
-此外，Ollama还可以在后台作为REST API服务器运行，因此与Python脚本或外部应用程序的集成也极其容易。
+此外，Ollama还可以在后台作为[REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)服务器运行，因此与Python脚本或外部应用程序的集成也极其容易。
 
 ### 2. LM Studio
 推荐给希望通过直观的图形用户界面（GUI）进行操作的用户。可以在应用内搜索并下载Hugging Face上海量的GGUF模型，并在类似ChatGPT的聊天界面中进行对话。它可以直观地告诉您哪个模型能放入您PC的RAM/VRAM中，这项功能非常方便。

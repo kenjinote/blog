@@ -242,7 +242,7 @@ Neste código, tipos de soma (uma característica funcional) através de `enum` 
 No desenvolvimento frontend utilizando TypeScript (como no React), a fusão de paradigmas também se tornou o padrão.
 
 - A renderização da UI do componente é **Funcional** (retorna a UI como uma função pura).
-- A busca e gestão da cache de dados é **Orientada a Dados** (uma árvore de estados normalizada através do [Redux](https://kenji.blog/pt/p/state-management-history-future/) ou Zustand).
+- A busca e gestão da cache de dados é **Orientada a Dados** (uma árvore de estados normalizada através do [Redux](https://kenji.blog/pt/p/state-management-history-future/) ou [Zustand](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/)).
 - Parte da lógica de domínio mais complexa é **Orientada a Objetos** (uma camada de serviço baseada em classes).
 
 ---

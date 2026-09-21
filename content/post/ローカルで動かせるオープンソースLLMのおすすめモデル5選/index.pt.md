@@ -12,7 +12,7 @@ description: 'LLMs locais que você pode usar gratuitamente enquanto protege sua
 
 # Introdução
 
-Nos últimos anos, a evolução tecnológica dos Large Language Models (LLM) tem sido notável, e serviços de IA baseados em nuvem como ChatGPT e Claude tornaram-se amplamente populares. No entanto, por outro lado, a necessidade de "não querer enviar dados confidenciais da empresa para servidores externos", "querer reduzir os custos de uso de API" e "querer construir um sistema de IA que funcione completamente offline" está aumentando rapidamente.
+Nos últimos anos, a evolução tecnológica dos Large Language Models (LLM) tem sido notável, e serviços de IA baseados em nuvem como ChatGPT e Claude tornaram-se amplamente populares. No entanto, por outro lado, a necessidade de "não querer enviar dados confidenciais da empresa para servidores externos", "querer reduzir os custos de uso de API" e "querer construir um sistema de IA que funcione completamente [offline](https://kenji.blog/pt/p/pwa-progressive-web-apps-service-worker/)" está aumentando rapidamente.
 
 O que atende a essa demanda são os "LLMs locais (LLMs de código aberto)" que podem ser baixados e executados diretamente em seu próprio PC ou servidor interno. Até por volta de 2023, era difícil alcançar uma precisão prática localmente, mas com a evolução das arquiteturas de modelo e o desenvolvimento da tecnologia de quantização (Quantization), agora é possível rodar LLMs de altíssimo desempenho de forma suave até mesmo em GPUs voltadas para o consumidor (como NVIDIA RTX 3090 / 4090 e Apple Silicon do Mac).
 

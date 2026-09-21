@@ -242,7 +242,7 @@ fn process_event(state: &mut AppState, event: Event) {
 在使用 TypeScript 進行前端開發（如 React 等）時，典範的融合也已成為標準。
 
 - 元件的 UI 渲染是 **函數式** 的（作為純函數回傳 UI）。
-- 資料的獲取與快取管理是 **資料導向** 的（透過 [Redux](https://kenji.blog/zh-tw/p/state-management-history-future/) 或 Zustand 進行正規化的狀態樹）。
+- 資料的獲取與快取管理是 **資料導向** 的（透過 [Redux](https://kenji.blog/zh-tw/p/state-management-history-future/) 或 [Zustand](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 進行正規化的狀態樹）。
 - 複雜的領域邏輯的一部分則是 **物件導向** 的（基於類別的服務層）。
 
 ---

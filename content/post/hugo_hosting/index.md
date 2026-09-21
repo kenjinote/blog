@@ -153,7 +153,7 @@ jobs:
           branch: "main"
 ```
 
-この[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)では、`--minify` オプションによってHTML/CSS/JSを最小化し、`--gc` によって不要なファイルを削除しています。これらはパフォーマンス最適化の基本です。
+この[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)では、`--minify` オプションによってHTML/CSS/JSを最小化し、`--gc` によって不要なファイルを削除しています。これらは[パフォーマンス最適化](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)の基本です。
 
 ---
 
@@ -240,7 +240,7 @@ Hugoでの実装も非常に簡単です。`layouts/partials/head.html` や `lay
 {{ end }}
 ```
 
-`defer` 属性を付与することで、HTMLのパースをブロックせずにスクリプトを非同期に読み込み、DOM構築後に実行させることができます。これにより、初期表示速度（LCP: Largest Contentful [Paint](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/) や FCP: First Contentful Paint）への影響を最小限に抑えられます。
+`defer` 属性を付与することで、HTMLのパースをブロックせずにスクリプトを非同期に読み込み、DOM構築後に実行させることができます。これにより、初期表示速度（[LCP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/): Largest Contentful [Paint](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/) や FCP: First Contentful Paint）への影響を最小限に抑えられます。
 
 ---
 

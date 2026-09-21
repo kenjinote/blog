@@ -15,7 +15,7 @@ tags:
   - algorithm
 ---
 
-Im Kern der modernen Cloud-Computing- und [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Technologien gibt es **Konsensalgorithmen** (consensus algorithms), die den Zustand über mehrere Computer (Knoten) hinweg teilen und synchronisieren. In diesem Artikel werden wir von den theoretischen Grundlagen des "Problems der byzantinischen Generäle" (Byzantine Generals Problem) ausgehen und uns eingehend mit **Paxos** und **Raft**, die in praktischen Systemen weit verbreitet sind, sowie mit **BFT (Byzantine Fault Tolerance)** in Umgebungen mit böswilligen Teilnehmern befassen, einschließlich mathematischer Beweise und Code-Implementierungen.
+Im Kern der modernen Cloud-Computing- und [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Technologien gibt es **Konsensalgorithmen** (consensus algorithms), die den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) über mehrere Computer (Knoten) hinweg teilen und synchronisieren. In diesem Artikel werden wir von den theoretischen Grundlagen des "Problems der byzantinischen Generäle" (Byzantine Generals Problem) ausgehen und uns eingehend mit **Paxos** und **Raft**, die in praktischen Systemen weit verbreitet sind, sowie mit **BFT (Byzantine Fault Tolerance)** in Umgebungen mit böswilligen Teilnehmern befassen, einschließlich mathematischer Beweise und Code-Implementierungen.
 
 ## 1. Konsensbildung und Herausforderungen in verteilten Systemen
 
@@ -169,7 +169,7 @@ Raft unterteilt den Gesamtsystemzustand in zwei Teilprobleme: **Wahl des Anführ
 Ein Knoten befindet sich immer in einem der folgenden drei Zustände:
 *   **Leader (Anführer)** : Empfängt Anfragen von Clients und repliziert Logs auf andere Knoten.
 *   **Follower (Anhänger)** : Befolgt Anfragen vom Leader.
-*   **Candidate (Kandidat)** : Zustand der Kandidatur als neuer Leader, wenn der aktuelle Leader ausfällt.
+*   **Candidate (Kandidat)** : [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) der Kandidatur als neuer Leader, wenn der aktuelle Leader ausfällt.
 
 ```mermaid
 stateDiagram-v2
@@ -187,7 +187,7 @@ Raft verwendet eine logische Uhr namens **Term (Amtszeit)**. Jeder Follower hat 
 
 ### 4.3 Typdefinition des Raft-Knotenzustands in Haskell
 
-Die Modellierung von Raft-Zustandsübergängen mit einer funktionalen Sprache macht deren Robustheit klarer. Nachfolgend finden Sie ein Beispiel für eine vereinfachte Typdefinition in Haskell.
+Die Modellierung von Raft-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergängen mit einer funktionalen Sprache macht deren Robustheit klarer. Nachfolgend finden Sie ein Beispiel für eine vereinfachte Typdefinition in Haskell.
 
 ```haskell
 module Raft where
@@ -223,7 +223,7 @@ handleTimeout node =
     }
 ```
 
-Durch die Beschreibung von Zustandsübergängen als reine Funktionen auf diese Weise wird es einfacher, die Korrektheit der Raft-Logik zu verifizieren.
+Durch die Beschreibung von [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergängen als reine Funktionen auf diese Weise wird es einfacher, die Korrektheit der Raft-Logik zu verifizieren.
 
 ---
 
@@ -236,7 +236,7 @@ Paxos und Raft sind CFT (absturztolerant), aber sie sind machtlos, wenn böswill
 In PBFT gibt es einen Leader (Primary) und Follower (Backup), und die folgende 3-Phasen-Multicast-Kommunikation wird für Client-Anfragen durchgeführt.
 
 1.  **Pre-prepare** : Der Primary weist der Anfrage eine Sequenznummer zu und sendet sie an alle Knoten.
-2.  **Prepare** : Jeder Knoten empfängt die Anfrage, verifiziert sie und sendet dann eine `Prepare`-Nachricht an alle anderen Knoten. Nach Erhalt von $ 2f $ `Prepare`-Nachrichten tritt der Knoten in den Prepared-Zustand ein.
+2.  **Prepare** : Jeder Knoten empfängt die Anfrage, verifiziert sie und sendet dann eine `Prepare`-Nachricht an alle anderen Knoten. Nach Erhalt von $ 2f $ `Prepare`-Nachrichten tritt der Knoten in den Prepared-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) ein.
 3.  **Commit** : Ein Knoten im Prepared-Zustand sendet eine `Commit`-Nachricht an alle Knoten. Nach Erhalt von $ 2f + 1 $ `Commit`-Nachrichten ist der Konsens abgeschlossen und die Anfrage wird ausgeführt.
 
 ```mermaid

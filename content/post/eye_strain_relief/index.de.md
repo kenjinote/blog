@@ -70,7 +70,7 @@ $$ \frac{1}{f} = \frac{1}{a} + \frac{1}{b} $$
 - $a$: Abstand vom Auge zum Monitor (Gegenstandsweite)
 - $b$: Abstand von der Linse zur Netzhaut (Bildweite: Bei einem erwachsenen Augapfel konstant ca. $24 \text{ mm}$)
 
-Wenn während des Programmierens der Abstand $a$ zum Monitor über einen längeren Zeitraum kurz ist (z. B. $40 \text{ cm} \sim 50 \text{ cm}$), muss die Brennweite $f$ extrem kurz gehalten werden, um ein scharfes Bild auf der Netzhaut zu erzeugen (und $b$ konstant zu halten). Wenn der Ziliarmuskel stundenlang extrem kontrahiert bleibt, gerät er in einen krampfhaften Zustand, was zu starker Augenbelastung führt, die mit Nackenverspannungen und Kopfschmerzen einhergeht.
+Wenn während des Programmierens der Abstand $a$ zum Monitor über einen längeren Zeitraum kurz ist (z. B. $40 \text{ cm} \sim 50 \text{ cm}$), muss die Brennweite $f$ extrem kurz gehalten werden, um ein scharfes Bild auf der Netzhaut zu erzeugen (und $b$ konstant zu halten). Wenn der Ziliarmuskel stundenlang extrem kontrahiert bleibt, gerät er in einen krampfhaften [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), was zu starker Augenbelastung führt, die mit Nackenverspannungen und Kopfschmerzen einhergeht.
 
 ---
 
@@ -234,7 +234,7 @@ Die **"20-20-20-Regel"** ist eine Methode zur Erholung von Augenbelastung bei de
 **"Alle 20 Minuten 20 Sekunden lang auf etwas in mindestens 20 Fuß (ca. 6 Meter) Entfernung blicken."**
 
 Durch diese einfache Handlung wird der extrem angespannte Ziliarmuskel gezwungen, sich zu entspannen. Die Linse wird dünner und die Fokussierungsfunktion wird zurückgesetzt.
-Da Programmierer beim Eintritt in den "Flow-Zustand" oft die Zeit vergessen, ist es eine typische Ingenieurslösung, ein System aufzubauen, das diese Regel automatisch erzwingt.
+Da Programmierer beim Eintritt in den "Flow-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)" oft die Zeit vergessen, ist es eine typische Ingenieurslösung, ein System aufzubauen, das diese Regel automatisch erzwingt.
 Hier ist ein extrem einfaches Skript, das Python `tkinter` verwendet, um alle 20 Minuten ein Pop-up-Fenster zu erzwingen.
 
 ```python

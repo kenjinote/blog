@@ -63,7 +63,7 @@ Wenn wir dies auf den vorliegenden Fall anwenden, entsteht ein seltsamer Widersp
    „In der Rakete bin ich in Ruhe. Wenn ich aus dem Fenster schaue, entfernte sich die Erde mit rasender Geschwindigkeit und kam dann zurück. Da es der jüngere Bruder auf der Erde war, der sich bewegte, muss seine Zeit langsamer vergangen sein, also müsste **der jüngere Bruder jünger sein**.“
 
 Beide Behauptungen sind dem Prinzip der Relativitätstheorie treu: „Wenn es so aussieht, als ob sich die andere Person bewegt, vergeht die Zeit der anderen Person langsamer.“
-Wenn sie sich jedoch wiedersehen und nebeneinander stehen, **kann es keinen Zustand geben, in dem „beide jünger als der andere sind“**. Einer muss unweigerlich älter und der andere jünger sein.
+Wenn sie sich jedoch wiedersehen und nebeneinander stehen, **kann es keinen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) geben, in dem „beide jünger als der andere sind“**. Einer muss unweigerlich älter und der andere jünger sein.
 
 Bedeutet das, dass Einsteins Theorie falsch ist?
 

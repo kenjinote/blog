@@ -22,14 +22,14 @@ description: 'Стратегии максимизации трафика тех�
 
 Базовая система блога (например, генератор статических сайтов) и структура HTML являются важнейшими факторами для правильной интерпретации контента поисковыми системами.
 
-### 1.1 Оптимизация Core Web Vitals
+### 1.1 Оптимизация Core [Web Vitals](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-Google использует Page Experience как фактор ранжирования, и в частности **Core Web Vitals (LCP, FID/INP, CLS)** не стоит игнорировать даже в технических блогах.
+Google использует Page Experience как фактор ранжирования, и в частности **[Core Web Vitals](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** не стоит игнорировать даже в технических блогах.
 В технических блогах часто используется множество блоков исходного кода, математических формул (MathJax / KaTeX) и иллюстраций. Они могут стать причиной задержки рендеринга страницы.
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/))**: Скорость загрузки основного контента на первом экране. Для главного изображения используйте форматы WebP или AVIF и предзагружайте его с атрибутом `fetchpriority="high"`. Огромные CSS и JS для подсветки синтаксиса должны загружаться асинхронно или только на тех страницах, где они действительно нужны.
-- **CLS (Cumulative [Layout](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/) Shift)**: Смещение макета во время загрузки страницы. Резервирование области отображения для формул и изображений заранее с помощью CSS (например, `aspect-ratio`) предотвратит скачки макета при последующей вставке DOM-элементов.
-- **INP (Interaction to Next [Paint](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/))**: Отзывчивость на действия пользователя. Тяжелый JavaScript (например, динамический полнотекстовый поиск на стороне клиента или выполнение громоздкого парсера Markdown) не должен выполняться в главном потоке — его необходимо выносить в Web Worker или генерировать как статический HTML на этапе сборки (SSG).
+- **[CLS](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Cumulative [Layout](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/) Shift)**: Смещение макета во время загрузки страницы. Резервирование области отображения для формул и изображений заранее с помощью CSS (например, `aspect-ratio`) предотвратит скачки макета при последующей вставке DOM-элементов.
+- **[INP](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Interaction to Next [Paint](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/))**: Отзывчивость на действия пользователя. Тяжелый JavaScript (например, динамический полнотекстовый поиск на стороне клиента или выполнение громоздкого парсера Markdown) не должен выполняться в главном потоке — его необходимо выносить в Web Worker или генерировать как статический HTML на этапе сборки (SSG).
 
 ### 1.2 Внедрение структурированных данных (JSON-LD)
 
@@ -256,7 +256,7 @@ flowchart TD
 ### 5.2 Ключевые моменты создания пайплайна автоматизации
 
 1. **Сборка и развертывание с помощью [GitHub Actions](https://kenji.blog/ru/p/cicd-pipeline-github-actions-best-practices/)**
-   Если вы используете генератор статических сайтов, используйте GitHub Actions для автоматизации генерации HTML и развертывания на хостинге (Vercel, Netlify, Cloudflare Pages и т.д.). При этом, в качестве меры для Core Web Vitals, упомянутой ранее, эффективно внедрить в пайплайн сборки процесс оптимизации изображений (например, автоматическую конвертацию в WebP).
+   Если вы используете генератор статических сайтов, используйте GitHub Actions для автоматизации генерации HTML и развертывания на хостинге (Vercel, Netlify, Cloudflare Pages и т.д.). При этом, в качестве меры для Core [Web Vitals](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), упомянутой ранее, эффективно внедрить в пайплайн сборки процесс оптимизации изображений (например, автоматическую конвертацию в WebP).
 
 2. **Интеграция с социальными сетями на основе RSS-триггеров с использованием Zapier/IFTTT**
    Генератор сайтов при сборке создает актуальный RSS-канал (XML). Загрузив его в iPaaS, такие как Zapier или Make (ранее Integromat), можно настроить рабочий процесс (workflow): «Когда в RSS добавляется новый элемент, публиковать заголовок и URL в X (Twitter) и LinkedIn». Таким образом, уведомление подписчиков происходит автоматически в момент публикации статьи.

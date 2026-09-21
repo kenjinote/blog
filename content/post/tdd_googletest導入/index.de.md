@@ -33,7 +33,7 @@ flowchart TD
 
 1. **Red (Rot)**: Ohne bestehende Implementierung wird ein Test geschrieben, der das erwartete Verhalten definiert. Da zu diesem Zeitpunkt keine Implementierung vorhanden ist, wird der Test immer fehlschlagen (Red).
 2. **Green (Grün)**: Schreibe minimalen Code, der nur dazu dient, den Test erfolgreich zu machen (Green). In dieser Phase haben die Eleganz des Codes und die Leistung keine oberste Priorität.
-3. **Refactor (Refactoring)**: Beseitige Duplikate und verbessere das Codedesign, während der Zustand beibehalten wird, in dem die Tests erfolgreich sind. Durch das Vorhandensein von Tests kann der Code sicher geändert werden.
+3. **Refactor (Refactoring)**: Beseitige Duplikate und verbessere das Codedesign, während der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) beibehalten wird, in dem die Tests erfolgreich sind. Durch das Vorhandensein von Tests kann der Code sicher geändert werden.
 
 ### 1.2 Kostensteigerung durch verzögerte Fehlererkennung
 

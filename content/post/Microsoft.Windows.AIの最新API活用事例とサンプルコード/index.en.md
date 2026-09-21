@@ -16,7 +16,7 @@ description: 'A detailed guide covering how to implement local AI features in Wi
 
 In recent years, AI technology has evolved remarkably, resulting in a rapid paradigm shift from the utilization of Large Language Models (LLMs) on the cloud to AI inference on edge devices (local PCs). At the core of this are the "Windows Copilot Runtime" provided by Microsoft for Windows 11, and the "Microsoft.Windows.AI" APIs designed to operate it.
 
-Application development using cloud APIs (such as OpenAI and Azure OpenAI) is easy, but it comes with challenges such as latency, privacy, and continuous costs. On the other hand, running AI models locally allows for the realization of ultra-low latency applications that work even offline without letting sensitive data leave the device.
+Application development using cloud APIs (such as OpenAI and Azure OpenAI) is easy, but it comes with challenges such as latency, privacy, and continuous costs. On the other hand, running AI models locally allows for the realization of ultra-low latency applications that work even [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/) without letting sensitive data leave the device.
 
 In this article, we will thoroughly explain in extreme detail the implementation methods for local AI features, which will be essential for future Windows application development, along with practical sample code in C# and C++. We will cover everything from architecture to performance tuning. We won't just hit the APIs, but will delve deep into the advanced technical details such as utilizing the underlying hardware (NPU and GPU) and integrating with DirectML.
 
@@ -90,7 +90,7 @@ To use the latest Windows AI APIs, you need to prepare the following environment
 
 ## 5. [Deep Dive 1] Utilizing Local Language Models (Phi-Silica) with C#
 
-Windows Copilot Runtime natively incorporates the highly efficient small language model "Phi-Silica" developed by Microsoft as a standard OS component. This enables advanced natural language processing (text summarization, code generation, chatbots) in offline environments without downloading gigabyte-sized models from the network.
+Windows Copilot Runtime natively incorporates the highly efficient small language model "Phi-Silica" developed by Microsoft as a standard OS component. This enables advanced natural language processing (text summarization, code generation, chatbots) in [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/) environments without downloading gigabyte-sized models from the network.
 
 Below is an advanced C# sample code to build an AI chatbot using the `Microsoft.Windows.AI.Generative` namespace. It supports streaming responses and generates text in real-time without blocking the UI thread.
 
@@ -299,7 +299,7 @@ The greatest advantage of using DirectML in C++ is that tight integration with D
 
 In this case, by utilizing the advanced binding features of `OrtDmlApi`, you can achieve "**Zero-Copy Inference**", which directly maps DX12 resources as ONNX Runtime tensors. By doing this, the data transfer overhead across the PCIe bus (consumption of the aforementioned bandwidth $BW$) completely vanishes, dramatically improving the frame rate in real-time video processing.
 
-## 7. Performance Optimization and Best Practices
+## 7. [Performance Optimization](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) and Best Practices
 
 Below, we summarize essential optimization strategies for developing top-tier AI applications leveraging Windows AI APIs and DirectML.
 
@@ -349,7 +349,7 @@ The `Microsoft.Windows.AI` APIs and Copilot Runtime are undergoing rapid evoluti
 
 ## 9. Conclusion: The Future of Applications Transformed by Local AI
 
-The Windows 11 Copilot Runtime and `Microsoft.Windows.AI` APIs have brought an extremely powerful weapon called "Local AI" to all Windows developers. You no longer need to rely entirely on cloud APIs. It is possible to eliminate latency, firmly protect privacy, and deliver next-generation AI experiences to users that fully operate even offline.
+The Windows 11 Copilot Runtime and `Microsoft.Windows.AI` APIs have brought an extremely powerful weapon called "Local AI" to all Windows developers. You no longer need to rely entirely on cloud APIs. It is possible to eliminate latency, firmly protect privacy, and deliver next-generation AI experiences to users that fully operate even [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/).
 
 By utilizing the knowledge of system standard language model integration using C#, mathematical performance evaluation, and extreme hardware optimization using C++ and DirectML explained in this article, please create next-generation "AI-native" Windows applications with your own hands. The boundless possibilities brought by AI stretch right out ahead of the code you write.
 

@@ -49,7 +49,7 @@ C'est ici qu'intervient l'"Algorithme de Shor", présenté par Peter Shor en 199
 
 
 
-### Flux global de l'algorithme de Shor
+### [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) global de l'algorithme de Shor
 
 ```mermaid
 graph TD

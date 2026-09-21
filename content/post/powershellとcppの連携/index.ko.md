@@ -295,7 +295,7 @@ C++ 네이티브 코드로 처리를 이관할 경우, 메모리 매핑(`CreateF
 
 WMI(Windows Management Instrumentation)나 CIM(Common Information Model)으로는 얻을 수 없는 독자적인 하드웨어 장치(예: 특수한 PCIe 카드나 센서)의 정보를 모니터링한다.
 - **C++의 역할**: 장치 드라이버에 대해 `DeviceIoControl`을 호출하여 바이너리 데이터를 획득·분석하는 DLL.
-- **PowerShell의 역할**: 정기적으로 DLL을 호출하고, 분석 결과를 JSON으로 포맷하여 모니터링 서버의 REST API로 전송한다.
+- **PowerShell의 역할**: 정기적으로 DLL을 호출하고, 분석 결과를 JSON으로 포맷하여 모니터링 서버의 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)로 전송한다.
 
 ## 메모리 관리와 트러블슈팅의 베스트 프랙티스
 

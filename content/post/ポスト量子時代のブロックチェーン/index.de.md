@@ -101,7 +101,7 @@ $$
 $$
 
 **Schritt 4: Anwendung der Quanten-Fourier-Transformation (QFT)**
-Dieser Zustand hat eine Periodizität, die mit der Periode $k$ zusammenhängt. Durch Anwendung der inversen Quanten-Fourier-Transformation (Inverse QFT) auf diesen Zustand wird eine Phaseninterferenz ausgelöst, die die Periodeninformationen in Amplituden umwandelt.
+Dieser [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) hat eine Periodizität, die mit der Periode $k$ zusammenhängt. Durch Anwendung der inversen Quanten-Fourier-Transformation (Inverse QFT) auf diesen Zustand wird eine Phaseninterferenz ausgelöst, die die Periodeninformationen in Amplituden umwandelt.
 
 **Schritt 5: Messung und klassische Nachbearbeitung**
 Wenn das erste und zweite Register gemessen werden, erhält man mit hoher Wahrscheinlichkeit einen Wert, der Informationen über $k$ enthält. Durch die Anwendung klassischer zahlentheoretischer Algorithmen wie der Kettenbruchentwicklung (Continued Fractions) auf den gemessenen Wert kann der unbekannte private Schlüssel $k$ vollständig identifiziert werden.
@@ -115,7 +115,7 @@ Eine weitere Bedrohung ist **Grovers Algorithmus**, der 1996 von Lov Grover vorg
 In der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) werden Hashfunktionen zur Gewährleistung der Datenintegrität, zur Generierung von Adressen und als Grundlage für das **[PoW](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Mining (Proof of Work)** in [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) verwendet. Die Rückrechnung (Urbildberechnung) einer Hashfunktion kann als "Problem der Suche in unstrukturierten Datenbanken" betrachtet werden, bei dem nach einem Eingabewert $x$ gesucht wird, für den $H(x) = y$ für einen bestimmten Ausgabewert $y$ gilt.
 
 Mit einem klassischen Computer sind im Durchschnitt $\frac{N}{2}$ und im schlimmsten Fall $N$ Versuche erforderlich, um die richtige Antwort unter $N$ Möglichkeiten zu finden. Die Berechnungskomplexität beträgt also $\mathcal{O}(N)$.
-Grovers Algorithmus verwendet jedoch eine Quantentechnologie namens "Amplitudenverstärkung (Amplitude Amplification)". Durch iteratives Verstärken der Wahrscheinlichkeitsamplitude des Zustands, der die richtige Antwort darstellt, aus allen Möglichkeiten im Superpositionszustand, wird die Suchzeit auf die Quadratwurzel reduziert.
+Grovers Algorithmus verwendet jedoch eine Quantentechnologie namens "Amplitudenverstärkung (Amplitude Amplification)". Durch iteratives Verstärken der Wahrscheinlichkeitsamplitude des [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s, der die richtige Antwort darstellt, aus allen Möglichkeiten im Superpositionszustand, wird die Suchzeit auf die Quadratwurzel reduziert.
 
 $$
 \text{Berechnungskomplexität von Grovers Algorithmus} = \mathcal{O}(\sqrt{N})
@@ -145,7 +145,7 @@ $$
 $$
 
 Wie bereits erwähnt, sind Hashfunktionen resistent gegen Quantenangriffe (Grovers Algorithmus), sodass es selbst für Quantencomputer unmöglich ist, den ursprünglichen "öffentlichen Schlüssel" aus der "Adresse", die ein Hashwert ist, rückzurechnen.
-Das bedeutet, dass für **"unbenutzte Adressen (solche, von denen noch nie Gelder gesendet wurden)"** der öffentliche Schlüssel überhaupt nicht auf der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) offengelegt ist und nur der Hashwert aufgezeichnet wird. Da der öffentliche Schlüssel unbekannt ist, gibt es daher kein Ziel für die Ausführung von Shors Algorithmus, und der private Schlüssel kann nicht identifiziert werden. Es kann gesagt werden, dass Wallets in diesem Zustand quantensicher (Quantum-safe) sind.
+Das bedeutet, dass für **"unbenutzte Adressen (solche, von denen noch nie Gelder gesendet wurden)"** der öffentliche Schlüssel überhaupt nicht auf der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) offengelegt ist und nur der Hashwert aufgezeichnet wird. Da der öffentliche Schlüssel unbekannt ist, gibt es daher kein Ziel für die Ausführung von Shors Algorithmus, und der private Schlüssel kann nicht identifiziert werden. Es kann gesagt werden, dass Wallets in diesem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) quantensicher (Quantum-safe) sind.
 
 ### 3.2. Fatale Schwachstelle beim Senden von Transaktionen (Front-Running-Angriff)
 

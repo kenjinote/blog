@@ -33,7 +33,7 @@ Zum Beispiel wird bei der später erläuterten Berechnung der [Fibonacci](https:
 
 **"Die optimale Lösung des Gesamtproblems setzt sich aus den optimalen Lösungen seiner Teilprobleme zusammen."** Dies ist die Eigenschaft.
 
-Das Problem des kürzesten Pfades ist ein anschauliches Beispiel. Wenn der kürzeste Weg von Stadt A nach Stadt C über Stadt B führt, muss der "Weg von Stadt A nach Stadt B" auch der kürzeste Weg von A nach B sein. Wäre der Weg von A nach B nämlich nicht optimal (kürzest), könnte man durch dessen Optimierung auch den Gesamtweg von A nach C weiter verkürzen. Diese Eigenschaft, dass man aus optimalen Teillösungen die optimale Gesamtlösung ableiten kann, bildet die Grundlage für die Zustandsübergänge in der dynamischen Programmierung.
+Das Problem des kürzesten Pfades ist ein anschauliches Beispiel. Wenn der kürzeste Weg von Stadt A nach Stadt C über Stadt B führt, muss der "Weg von Stadt A nach Stadt B" auch der kürzeste Weg von A nach B sein. Wäre der Weg von A nach B nämlich nicht optimal (kürzest), könnte man durch dessen Optimierung auch den Gesamtweg von A nach C weiter verkürzen. Diese Eigenschaft, dass man aus optimalen Teillösungen die optimale Gesamtlösung ableiten kann, bildet die Grundlage für die [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergänge in der dynamischen Programmierung.
 
 ---
 
@@ -210,10 +210,10 @@ Wir haben einen Rucksack mit der Kapazität $W$. Außerdem gibt es $n$ Gegenstä
 Wenn wir die Gegenstände so auswählen, dass die Kapazität des Rucksacks nicht überschritten wird, wie groß ist dann der maximale Gesamtwert, den wir erreichen können?
 (※ "0/1" bedeutet, dass es für jeden Gegenstand nur zwei Möglichkeiten gibt: ihn "nicht auswählen (0)" oder ihn "auswählen (1)". Gegenstände können nicht geteilt werden.)
 
-### 4-2. Zustandsdefinition und Zustandsübergangsgleichung
+### 4-2. [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sdefinition und Zustandsübergangsgleichung
 
 Der wichtigste Schritt zur Lösung von DP-Problemen ist die korrekte Definition des "Zustands" ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)).
-Bei diesem Problem ändern sich zwei Parameter: "Bis zu welchem Gegenstand wir betrachtet haben" und "Die verbleibende Kapazität des Rucksacks". Daher definieren wir den Zustand wie folgt:
+Bei diesem Problem ändern sich zwei Parameter: "Bis zu welchem Gegenstand wir betrachtet haben" und "Die verbleibende Kapazität des Rucksacks". Daher definieren wir den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) wie folgt:
 
 **Zustandsdefinition:**
 $dp[i][w]$ := Der maximale Gesamtwert, wenn wir nur Gegenstände vom ersten bis zum $i$-ten auswählen, sodass ihr Gesamtgewicht kleiner oder gleich $w$ ist.
@@ -293,7 +293,7 @@ int main() {
 ### 4-4. Optimierung der Speicherkomplexität (1D-Array)
 
 Wir stellen fest, dass bei der Aktualisierung des 2D-Arrays $dp[i][w]$ immer nur auf die vorherige Zeile $dp[i-1]$ zugegriffen wird. Das ist dasselbe Prinzip wie bei der Speicheroptimierung der [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge.
-Daher können wir das Array in ein eindimensionales Array $dp[w]$ komprimieren. Bei der Aktualisierung ist jedoch Vorsicht geboten: Wir müssen die Kapazität $w$ **von groß nach klein (von hinten nach vorne)** durchlaufen. Wenn wir von vorne aktualisieren, würden wir auf den soeben im selben Schritt aktualisierten "$i$-ten Zustand" anstelle des "$i-1$-ten Zustands" zugreifen, was dazu führen würde, dass wir denselben Gegenstand mehrmals auswählen (dies wäre die Lösung für das "Rucksackproblem ohne Mengenbegrenzung").
+Daher können wir das Array in ein eindimensionales Array $dp[w]$ komprimieren. Bei der Aktualisierung ist jedoch Vorsicht geboten: Wir müssen die Kapazität $w$ **von groß nach klein (von hinten nach vorne)** durchlaufen. Wenn wir von vorne aktualisieren, würden wir auf den soeben im selben Schritt aktualisierten "$i$-ten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)" anstelle des "$i-1$-ten Zustands" zugreifen, was dazu führen würde, dass wir denselben Gegenstand mehrmals auswählen (dies wäre die Lösung für das "Rucksackproblem ohne Mengenbegrenzung").
 
 **Python-Implementierung (Eindimensional):**
 ```python
@@ -327,7 +327,7 @@ Gegeben seien zwei Zeichenketten $S$ und $T$. Finden Sie die Länge der längste
 
 Beispiel: Wenn $S = \text{"ABCBDAB"}$ und $T = \text{"BDCABA"}$, dann ist die LCS $\text{"BCBA"}$ oder $\text{"BDAB"}$ usw., und ihre Länge beträgt 4.
 
-### 5-2. Zustandsdefinition und Zustandsübergangsgleichung
+### 5-2. [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sdefinition und Zustandsübergangsgleichung
 
 Angenommen, die Längen der Zeichenketten sind $m$ bzw. $n$. Auch in diesem Fall verwenden wir die Längen der Präfixe (Teilzeichenketten vom Anfang) der beiden Zeichenketten als Zustände.
 
@@ -433,10 +433,10 @@ Auch beim LCS-Problem werden für die Aktualisierung nur die vorherige Zeile (`d
 Bisher haben wir uns verschiedene Probleme angesehen, aber wie sollten Sie vorgehen, wenn Sie mit einem unbekannten DP-Problem konfrontiert werden? Behalten Sie immer die folgenden Schritte im Hinterkopf:
 
 1. **Kann dieses Problem mit DP gelöst werden? (Überprüfung der Bedingungen)**
-   Tritt derselbe Zustand mehrfach auf, wenn wir rekursiv denken (Überlappende Teilprobleme)? Können wir durch Kombination der besten Entscheidungen zum Gesamtoplimum gelangen (Optimale Teilstruktur)?
+   Tritt derselbe [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) mehrfach auf, wenn wir rekursiv denken (Überlappende Teilprobleme)? Können wir durch Kombination der besten Entscheidungen zum Gesamtoplimum gelangen (Optimale Teilstruktur)?
 2. **Den Zustand ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) definieren**
    Identifizieren Sie Variablen, die darstellen: "Wo bin ich jetzt?", "Was ist übrig?", "Was sind die bisherigen Einschränkungen?". Die klare Formulierung der Bedeutung von Indizes ist der beste Schutz gegen Bugs.
-3. **Die Zustandsübergangsgleichung (Transition) überlegen**
+3. **Die [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergangsgleichung (Transition) überlegen**
    Wie bewege ich mich von einem Zustand zum nächsten? Was sind die Optionen? Nehme ich das Maximum (oder Minimum) davon, oder summiere ich sie? Dies ist das Herzstück des Algorithmus.
 4. **Die Anfangsbedingungen (Base Case) festlegen**
    Legen Sie die Initialwerte des Arrays oder den Startpunkt der Berechnung fest. Behandeln Sie Edge Cases korrekt, bei denen eine triviale Antwort existiert, wie z.B. 0 Gegenstände oder ein String der Länge 0.

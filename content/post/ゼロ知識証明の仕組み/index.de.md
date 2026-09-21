@@ -109,7 +109,7 @@ Die Paarung $e$ ist eine spezielle Funktion, mit der man aus zwei verschlüsselt
 
 $$ e(g_1^a, g_2^b) = e(g_1, g_2)^{ab} $$
 
-Selbst wenn der Beweiser $s$ nicht kennt, verwendet er die verschlüsselten Werte der Potenzen von $s$ (dies wird CRS: Common Reference String genannt), um die verschlüsselten Werte der Polynome $P(s)$ und $H(s)$ zu berechnen. Der Verifizierer nutzt die Paarungsfunktion, um zu überprüfen, ob die Beziehung $P(s) = H(s) \cdot Z(s)$ im verschlüsselten Zustand gilt.
+Selbst wenn der Beweiser $s$ nicht kennt, verwendet er die verschlüsselten Werte der Potenzen von $s$ (dies wird CRS: Common Reference String genannt), um die verschlüsselten Werte der Polynome $P(s)$ und $H(s)$ zu berechnen. Der Verifizierer nutzt die Paarungsfunktion, um zu überprüfen, ob die Beziehung $P(s) = H(s) \cdot Z(s)$ im verschlüsselten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) gilt.
 
 ### 4. Trusted Setup (Vertrauenswürdige Einrichtung)
 
@@ -194,7 +194,7 @@ Auch Proof of Personhood-Projekte (Beweis der Menschlichkeit) wie Worldcoin spei
 
 Die Eigenschaft öffentlicher [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s, dass "alle Daten öffentlich sind", war ein großes Hindernis für Unternehmen, die vertrauliche Transaktionen oder Lieferketteninformationen auf der Blockchain verarbeiten wollen.
 
-Durch den Einsatz von ZKP-Technologie (wie bei datenschutzorientierten Netzwerken wie Aleo oder Aztec) können die Eingabewerte, die Ausgabewerte und sogar die Logik des ausgeführten Smart Contracts selbst verschlüsselt bleiben, während nur die Korrektheit der Zustandsaktualisierung auf der öffentlichen Blockchain festgehalten wird. Dies ermöglicht die Verhinderung von Front-Running (MEV) im DeFi-Bereich (Decentralized Finance) und den Aufbau vertraulicher Konsortium-Netzwerke zwischen Unternehmen, wobei gleichzeitig die hohe Sicherheit einer öffentlichen Blockchain genutzt wird.
+Durch den Einsatz von ZKP-Technologie (wie bei datenschutzorientierten Netzwerken wie Aleo oder Aztec) können die Eingabewerte, die Ausgabewerte und sogar die Logik des ausgeführten Smart Contracts selbst verschlüsselt bleiben, während nur die Korrektheit der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)saktualisierung auf der öffentlichen Blockchain festgehalten wird. Dies ermöglicht die Verhinderung von Front-Running (MEV) im DeFi-Bereich (Decentralized Finance) und den Aufbau vertraulicher Konsortium-Netzwerke zwischen Unternehmen, wobei gleichzeitig die hohe Sicherheit einer öffentlichen Blockchain genutzt wird.
 
 ---
 

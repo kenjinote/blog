@@ -295,7 +295,7 @@ $$ G \propto \sum_{i=1}^{N} A_i $$
 
 Мониторинг информации о специфических аппаратных устройствах (например, специализированных картах PCIe или датчиках), которую невозможно получить через WMI (Windows Management Instrumentation) или CIM (Common Information Model).
 - **Роль C++**: DLL, которая выполняет вызовы `DeviceIoControl` к драйверу устройства, собирая и анализируя бинарные данные.
-- **Роль PowerShell**: Периодический вызов DLL, форматирование результатов анализа в JSON и их отправка в REST API сервера мониторинга.
+- **Роль PowerShell**: Периодический вызов DLL, форматирование результатов анализа в JSON и их отправка в [REST API](https://kenji.blog/ru/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ru/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) сервера мониторинга.
 
 ## Лучшие практики управления памятью и устранения неполадок
 

@@ -32,8 +32,8 @@ Eine Turingmaschine besteht aus den folgenden Elementen:
 
 1. **Unendlich langes Band** : Es ist in Zellen unterteilt, in die jeweils Symbole (z.B. `0`, `1`, Leerzeichen usw.) geschrieben werden. Dies entspricht dem Speicher in modernen Computern.
 2. **Kopf** : Ein Gerät, das bestimmte Zellen auf dem Band lesen und schreiben und sich nach links und rechts bewegen kann.
-3. **Zustandsregister** : Speichert den **Zustand** ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)), in dem sich die Maschine derzeit befindet.
-4. **Zustandsübergangsfunktion** : Eine Regel (Programm), die auf der Grundlage des aktuellen „Zustands“ und des vom Kopf gelesenen „Symbols“ das nächste zu schreibende Symbol, die Bewegungsrichtung des Kopfes (rechts oder links) und den nächsten Zustand bestimmt.
+3. **[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sregister** : Speichert den **Zustand** ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)), in dem sich die Maschine derzeit befindet.
+4. **[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergangsfunktion** : Eine Regel (Programm), die auf der Grundlage des aktuellen „Zustands“ und des vom Kopf gelesenen „Symbols“ das nächste zu schreibende Symbol, die Bewegungsrichtung des Kopfes (rechts oder links) und den nächsten Zustand bestimmt.
 
 Das Folgende ist ein Mermaid-Diagramm, das das Betriebskonzept einer Turingmaschine zeigt.
 
@@ -46,7 +46,7 @@ graph TD
     D -.-> B
 ```
 
-### 2.2 Mathematische Definition von Zustandsübergängen
+### 2.2 Mathematische Definition von [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergängen
 
 Eine Turingmaschine $M$ wird mathematisch als das folgende 7-Tupel definiert.
 
@@ -63,7 +63,7 @@ Hier stellt jedes Symbol Folgendes dar:
 - $q_0 \in Q$ : Anfangszustand
 - $F \subseteq Q$ : Menge der Halte- (Akzeptanz-) Zustände
 
-Als Beispiel für die Übergangsfunktion $\delta$, wenn der aktuelle Zustand $q_1$ ist und das gelesene Symbol `0` ist, das Symbol `1` geschrieben wird, der Kopf sich nach rechts (Right) bewegt und der Zustand in $q_2$ geändert wird, wird dies wie folgt ausgedrückt.
+Als Beispiel für die Übergangsfunktion $\delta$, wenn der aktuelle Zustand $q_1$ ist und das gelesene Symbol `0` ist, das Symbol `1` geschrieben wird, der Kopf sich nach rechts (Right) bewegt und der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) in $q_2$ geändert wird, wird dies wie folgt ausgedrückt.
 
 $$
 \delta(q_1, 0) = (q_2, 1, R)
@@ -134,7 +134,7 @@ Auf diese Weise können Sie durch Kombination sehr einfacher Regeln Zeichenfolge
 
 Die größte Errungenschaft der Turingmaschine war die Schaffung des Konzepts der **Universellen Turingmaschine** (Universal Turing Machine).
 
-Bei normalen Turingmaschinen ist die Zustandsübergangsfunktion fest codiert und auf eine bestimmte Aufgabe spezialisiert (z.B. Addition, Sortieren von Zeichenfolgen usw.). Eine universelle Turingmaschine kann jedoch **„den Bauplan (Programm) einer anderen Turingmaschine und deren Eingabedaten auf ihr eigenes Band lesen und diese Maschine simulieren“** .
+Bei normalen Turingmaschinen ist die [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergangsfunktion fest codiert und auf eine bestimmte Aufgabe spezialisiert (z.B. Addition, Sortieren von Zeichenfolgen usw.). Eine universelle Turingmaschine kann jedoch **„den Bauplan (Programm) einer anderen Turingmaschine und deren Eingabedaten auf ihr eigenes Band lesen und diese Maschine simulieren“** .
 
 ```mermaid
 sequenceDiagram
@@ -240,7 +240,7 @@ Es besteht auch eine tiefe Verbindung zu **Gödels Unvollständigkeitssatz**. Di
 
 Obwohl die Turingmaschine eine sehr einfache Struktur hat, ist sie ein schönes mathematisches Modell, das das Wesen des Rechnens perfekt einfängt.
 
-- Die **Turingmaschine** besteht nur aus einem unendlichen Band und Zustandsübergangsregeln und verfügt über die gleiche Rechenleistung wie moderne Computer.
+- Die **Turingmaschine** besteht nur aus einem unendlichen Band und [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergangsregeln und verfügt über die gleiche Rechenleistung wie moderne Computer.
 - Die **Universelle Turingmaschine** schuf das Konzept der Software (Programme) und wurde zur Grundlage moderner Computer.
 - Das **Halteproblem** bewies, dass „es keinen universellen Algorithmus gibt, der jedes Programm zuverlässig analysieren kann“, was die Grenzen der Berechnung klar aufzeigte.
 

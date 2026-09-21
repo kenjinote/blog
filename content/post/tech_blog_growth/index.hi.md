@@ -22,14 +22,14 @@ description: 'डेटा और ऑटोमेशन के साथ टे�
 
 ब्लॉग का आधार बनने वाला सिस्टम (जैसे कि स्टैटिक साइट जेनरेटर) और HTML की संरचना सबसे महत्वपूर्ण तत्व हैं जो सर्च इंजन को कंटेंट की सही ढंग से व्याख्या करने में मदद करते हैं।
 
-### 1.1 Core Web Vitals का अनुकूलन (Optimization)
+### 1.1 Core [Web Vitals](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) का अनुकूलन (Optimization)
 
-Google पेज एक्सपीरियंस को रैंकिंग फैक्टर के रूप में उपयोग करता है, और विशेष रूप से **Core Web Vitals (LCP, FID/INP, CLS)** को तकनीकी ब्लॉग में भी नज़रअंदाज़ नहीं किया जा सकता है।
+Google पेज एक्सपीरियंस को रैंकिंग फैक्टर के रूप में उपयोग करता है, और विशेष रूप से **[Core Web Vitals](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** को तकनीकी ब्लॉग में भी नज़रअंदाज़ नहीं किया जा सकता है।
 तकनीकी ब्लॉग में, बड़ी संख्या में सोर्स कोड ब्लॉक, गणितीय सूत्र (MathJax / KaTeX) और इलस्ट्रेटिव इमेजेस का बहुत अधिक उपयोग किया जाता है। ये कारक पेज की रेंडरिंग में देरी कर सकते हैं।
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/hi/p/browser-rendering-mechanism-dom-paint/))**: पहले व्यू (First View) में मुख्य कंटेंट की लोडिंग स्पीड। आईकैच (eyecatch) इमेजेस के लिए WebP या AVIF का उपयोग करें और उन्हें प्रीलोड करने के लिए `fetchpriority="high"` एट्रिब्यूट (attribute) जोड़ें। साथ ही, सिंटैक्स हाइलाइटिंग के लिए भारी CSS और JS को एसिंक्रोनस रूप से लोड करें या उन्हें केवल उन पेजों पर लोड करने के लिए डिज़ाइन करें जहाँ उनकी आवश्यकता हो।
-- **CLS (Cumulative [Layout](https://kenji.blog/hi/p/browser-rendering-mechanism-dom-paint/) Shift)**: लेख लोड होते समय लेआउट का खिसकना। गणितीय सूत्रों या इमेजेस के लिए डिस्प्ले एरिया को पहले से CSS `aspect-ratio` आदि के साथ सुरक्षित करके, बाद में DOM सम्मिलित किए जाने पर होने वाले झटके ([Layout](https://kenji.blog/hi/p/browser-rendering-mechanism-dom-paint/) shift) को रोका जा सकता है।
-- **INP (Interaction to Next [Paint](https://kenji.blog/hi/p/browser-rendering-mechanism-dom-paint/))**: यूज़र के इंटरेक्शन पर प्रतिक्रिया। भारी JavaScript (जैसे क्लाइंट-साइड पर डायनामिक फुल-टेक्स्ट सर्च या भारी Markdown पार्सर का निष्पादन) को मेन थ्रेड पर चलाने के बजाय, इसे Web Worker पर ऑफलोड करना या बिल्ड के समय स्टैटिक HTML (SSG) के रूप में जेनरेट करना अनिवार्य है।
+- **[CLS](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Cumulative [Layout](https://kenji.blog/hi/p/browser-rendering-mechanism-dom-paint/) Shift)**: लेख लोड होते समय लेआउट का खिसकना। गणितीय सूत्रों या इमेजेस के लिए डिस्प्ले एरिया को पहले से CSS `aspect-ratio` आदि के साथ सुरक्षित करके, बाद में DOM सम्मिलित किए जाने पर होने वाले झटके ([Layout](https://kenji.blog/hi/p/browser-rendering-mechanism-dom-paint/) shift) को रोका जा सकता है।
+- **[INP](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Interaction to Next [Paint](https://kenji.blog/hi/p/browser-rendering-mechanism-dom-paint/))**: यूज़र के इंटरेक्शन पर प्रतिक्रिया। भारी JavaScript (जैसे क्लाइंट-साइड पर डायनामिक फुल-टेक्स्ट सर्च या भारी Markdown पार्सर का निष्पादन) को मेन थ्रेड पर चलाने के बजाय, इसे Web Worker पर ऑफलोड करना या बिल्ड के समय स्टैटिक HTML (SSG) के रूप में जेनरेट करना अनिवार्य है।
 
 ### 1.2 स्ट्रक्चर्ड डेटा (JSON-LD) का कार्यान्वयन (Implementation)
 
@@ -256,7 +256,7 @@ flowchart TD
 ### 5.2 ऑटोमेशन पाइपलाइन बनाने के मुख्य बिंदु
 
 1. **[GitHub Actions](https://kenji.blog/hi/p/cicd-pipeline-github-actions-best-practices/) के माध्यम से बिल्ड और डिप्लॉयमेंट**
-   यदि आप स्टैटिक साइट जेनरेटर का उपयोग कर रहे हैं, तो HTML जेनरेशन और होस्टिंग गंतव्य (Vercel, Netlify, Cloudflare Pages, आदि) पर डिप्लॉयमेंट को स्वचालित करने के लिए GitHub Actions का उपयोग करें। इस समय, जैसा कि ऊपर बताया गया है, Core Web Vitals के उपाय के रूप में इमेज ऑप्टिमाइज़ेशन प्रोसेस (जैसे स्वचालित रूप से WebP में बदलना) को बिल्ड पाइपलाइन में शामिल करना भी प्रभावी है।
+   यदि आप स्टैटिक साइट जेनरेटर का उपयोग कर रहे हैं, तो HTML जेनरेशन और होस्टिंग गंतव्य (Vercel, Netlify, Cloudflare Pages, आदि) पर डिप्लॉयमेंट को स्वचालित करने के लिए GitHub Actions का उपयोग करें। इस समय, जैसा कि ऊपर बताया गया है, Core [Web Vitals](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) के उपाय के रूप में इमेज ऑप्टिमाइज़ेशन प्रोसेस (जैसे स्वचालित रूप से WebP में बदलना) को बिल्ड पाइपलाइन में शामिल करना भी प्रभावी है।
 
 2. **Zapier/IFTTT का उपयोग करके RSS-ट्रिगर SNS एकीकरण**
    साइट जेनरेटर बिल्ड के समय नवीनतम RSS फ़ीड (XML) उत्पन्न करेगा। इसे Zapier या Make (पूर्व में Integromat) जैसे iPaaS में फीड करें और एक ऐसा वर्कफ़्लो बनाएं जो कहता हो: "जब RSS में कोई नया आइटम जोड़ा जाता है, तो शीर्षक और URL को X (Twitter) और LinkedIn पर पोस्ट करें।" इससे लेख पब्लिश होते ही आपके फॉलोअर्स को अपने आप नोटिफिकेशन मिल जाएगा।

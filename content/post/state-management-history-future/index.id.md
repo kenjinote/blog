@@ -15,7 +15,7 @@ tags:
   - redux
 ---
 
-Dalam pengembangan frontend web, area yang paling banyak diperdebatkan dan terus berevolusi adalah "Manajemen [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/)" (State Management). Aplikasi web modern telah bertransformasi dari sekadar menampilkan dokumen menjadi perangkat lunak dengan interaksi kompleks yang sebanding dengan aplikasi desktop. Seiring dengan hal itu, bagaimana mengelola state aplikasi dan menyinkronkannya dengan UI telah menjadi tantangan terbesar yang dihadapi oleh semua insinyur frontend.
+Dalam pengembangan frontend web, area yang paling banyak diperdebatkan dan terus berevolusi adalah "Manajemen [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/)" ([State Management](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/)). Aplikasi web modern telah bertransformasi dari sekadar menampilkan dokumen menjadi perangkat lunak dengan interaksi kompleks yang sebanding dengan aplikasi desktop. Seiring dengan hal itu, bagaimana mengelola state aplikasi dan menyinkronkannya dengan UI telah menjadi tantangan terbesar yang dihadapi oleh semua insinyur frontend.
 
 Pada artikel ini, kita akan melihat kembali sejarah manajemen state frontend, menelusuri tantangan dan solusi di setiap era, dan menggali secara mendalam serta terperinci tentang pergeseran paradigma menuju masa depan (terutama evolusi Signals dan Reactivity).
 
@@ -105,7 +105,7 @@ Dengan ini, pengembang dibebaskan dari manipulasi DOM secara langsung. Namun, ke
 
 Ketika Model A diperbarui, View B diperbarui, perubahan View B memperbarui Model C, yang selanjutnya memperbarui View D... dan seterusnya. Aliran data menjadi saling terkait dengan rumit, sering kali menyebabkan bug seperti terjebak dalam loop tak terbatas atau UI diperbarui pada waktu yang tidak terduga. Menjadi tidak mungkin untuk memprediksi "kapan, siapa, dan data mana yang diubah".
 
-## 4. Lahirnya React dan Flux: Revolusi Aliran Data Satu Arah
+## 4. Lahirnya React dan [Flux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/): Revolusi Aliran Data Satu Arah
 
 Pada tahun 2013, React dirilis oleh Facebook (sekarang Meta). Meskipun React itu sendiri adalah pustaka untuk membangun UI (bagian 'V' dalam MVC), mereka secara bersamaan mengusulkan pola arsitektur baru, yaitu **Flux**.
 
@@ -119,7 +119,7 @@ graph LR
     View -->|"Trigger"| Action
 ```
 
-Arsitektur Flux memiliki aturan yang ketat:
+Arsitektur [Flux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) memiliki aturan yang ketat:
 
 1.  **Action**: Satu-satunya cara untuk melakukan perubahan pada sistem. Sebuah objek yang menunjukkan apa yang terjadi.
 2.  **Dispatcher**: Hub pusat yang menerima semua Action dan mendistribusikannya ke Store.
@@ -128,7 +128,7 @@ Arsitektur Flux memiliki aturan yang ketat:
 
 Yang terpenting adalah **View tidak akan pernah bisa mengubah state dari Store secara langsung**. Untuk mengubah state, Anda harus menerbitkan Action dan melalui Dispatcher, yang memutar siklus satu arah. Hal ini membuat aliran data sangat dapat diprediksi (Predictable), secara dramatis meningkatkan stabilitas manajemen state dalam aplikasi berskala besar.
 
-## 5. Dominasi dan Keterbatasan Redux
+## 5. Dominasi dan Keterbatasan [Redux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/)
 
 Memperhalus konsep Flux lebih jauh, dan menjadi standar de facto untuk manajemen state frontend adalah **Redux**, yang dikembangkan oleh Dan Abramov dan kawan-kawan pada tahun 2015.
 
@@ -172,7 +172,7 @@ function counterReducer(state = initialState, action) {
 }
 ```
 
-Kombinasi antara "imuttabilitas (ketidakberubahan)" dan "fungsi murni" ini memungkinkan Redux untuk menyediakan time-travel debugging yang kuat (memutar kembali ke state sebelumnya) dan hot-reloading. Ini merupakan terobosan besar dalam hal pengalaman pengembang (DX).
+Kombinasi antara "imuttabilitas (ketidakberubahan)" dan "fungsi murni" ini memungkinkan [Redux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) untuk menyediakan time-travel debugging yang kuat (memutar kembali ke state sebelumnya) dan hot-reloading. Ini merupakan terobosan besar dalam hal pengalaman pengembang (DX).
 
 ### 5.3 Tantangan Redux: Tembok Boilerplate
 
@@ -186,16 +186,16 @@ Bahkan untuk operasi sederhana seperti hanya menambah angka penghitung, Anda per
 
 Selain itu, untuk menangani operasi asinkron (seperti komunikasi API), diperlukan pengenalan middleware seperti `redux-thunk` atau `redux-saga`, yang menyebabkan biaya pembelajaran melonjak tajam.
 
-Suara-suara yang mempertanyakan "Bukankah Redux itu berlebihan (overkill)?" semakin nyaring, dan pendekatan baru untuk manajemen state mulai dijajaki.
+Suara-suara yang mempertanyakan "Bukankah [Redux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) itu berlebihan (overkill)?" semakin nyaring, dan pendekatan baru untuk manajemen state mulai dijajaki.
 
-## 6. Gerakan "Lepas dari Redux" melalui Context API dan Hooks
+## 6. Gerakan "Lepas dari Redux" melalui [Context API](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) dan Hooks
 
 Pembaruan Context API pada React 16.3 di tahun 2018, dan pengenalan **React Hooks** pada React 16.8 di tahun 2019, menjadi titik balik utama dalam sejarah manajemen state.
 
 ### 6.1 Berbagi [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) dengan Fitur Bawaan
 
-Dengan menggunakan Context API, data dapat diteruskan secara langsung ke komponen yang berada jauh di dalam pohon komponen, tanpa perlu melakukan oper-operan properti (Prop Drilling).
-Selanjutnya, dengan menggabungkan Hook `useReducer`, menjadi mungkin untuk mengimplementasikan manajemen state seperti Redux hanya dengan fitur bawaan React.
+Dengan menggunakan [Context API](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/), data dapat diteruskan secara langsung ke komponen yang berada jauh di dalam pohon komponen, tanpa perlu melakukan oper-operan properti (Prop Drilling).
+Selanjutnya, dengan menggabungkan Hook `useReducer`, menjadi mungkin untuk mengimplementasikan manajemen state seperti [Redux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) hanya dengan fitur bawaan React.
 
 ```javascript
 // Manajemen state menggunakan Context dan useReducer
@@ -226,9 +226,9 @@ function CounterDisplay() {
 }
 ```
 
-Hal ini membuat pemahaman bahwa "Redux tidak diperlukan untuk state global yang sederhana" tersebar luas. Namun, pendekatan ini memiliki jebakan performa yang fatal.
+Hal ini membuat pemahaman bahwa "[Redux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) tidak diperlukan untuk state global yang sederhana" tersebar luas. Namun, pendekatan ini memiliki jebakan performa yang fatal.
 
-### 6.2 Masalah Performa Context API (Rerender Ekstra)
+### 6.2 Masalah Performa [Context API](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) (Rerender Ekstra)
 
 Context API di React memiliki spesifikasi: "Ketika nilai Context diperbarui, semua komponen yang berlangganan Context tersebut (yang memanggil `useContext`) akan dirender ulang tanpa syarat."
 
@@ -245,9 +245,9 @@ Khususnya, data yang diambil dari server (Server State) memiliki sifat yang pada
 - **Server State**: Dimiliki oleh server. Diambil secara asinkron. Karena dibagikan dan diubah oleh banyak orang, state ini berpotensi menjadi usang (Stale) setiap saat. Memerlukan manajemen cache, pembaruan di latar belakang, dan penanganan coba ulang (retry).
 - **Client State**: Dimiliki oleh klien (browser). Diperbarui secara sinkron. Misalnya mode gelap, atau membuka/menutup modal.
 
-### 7.1 Kebangkitan React Query, SWR, dan Apollo Client
+### 7.1 Kebangkitan React Query, SWR, dan [Apollo Client](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/)
 
-Pendekatan untuk memisahkan manajemen Server State dari Redux atau Context, dan menyerahkannya kepada pustaka khusus menjadi arus utama. Hal ini ditandai dengan munculnya **React Query (kini TanStack Query)** dan **SWR**.
+Pendekatan untuk memisahkan manajemen Server State dari [Redux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) atau Context, dan menyerahkannya kepada pustaka khusus menjadi arus utama. Hal ini ditandai dengan munculnya **React Query (kini TanStack Query)** dan **SWR**.
 
 ```javascript
 // Manajemen Server State menggunakan React Query
@@ -265,18 +265,18 @@ function UserProfile({ userId }) {
 ```
 
 Pustaka-pustaka ini mengabstraksi proses rumit dari "mencache state server secara lokal dan menyinkronkannya sesuai kebutuhan".
-Sebagai hasilnya, data yang perlu dikelola dalam store global seperti Redux berkurang drastis menjadi hanya "client state murni", yang secara signifikan meringankan beban manajemen state.
+Sebagai hasilnya, data yang perlu dikelola dalam store global seperti [Redux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) berkurang drastis menjadi hanya "client state murni", yang secara signifikan meringankan beban manajemen state.
 
-## 8. Atomic [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Management: Recoil dan Jotai
+## 8. Atomic [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Management: [Recoil](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) dan [Jotai](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/)
 
 Setelah Server State dipisahkan, perlombaan baru dimulai untuk melihat bagaimana mengelola sisa Client State secara efisien.
-Pendekatan yang disebut **Atomic State Management** lahir untuk memecahkan masalah performa Context API dan model rendering (top-down) React.
+Pendekatan yang disebut **Atomic [State Management](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/)** lahir untuk memecahkan masalah performa [Context API](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) dan model rendering (top-down) React.
 
 Pada tahun 2020, **Recoil** diumumkan oleh tim Facebook, dan di bawah pengaruhnya, pustaka seperti **Jotai** pun bermunculan.
 
 ### 8.1 Manajemen State Bottom-Up (Dari Bawah ke Atas)
 
-Di saat Redux menggunakan pendekatan "memotong bagian yang dibutuhkan dari satu pohon state yang besar (top-down)", Recoil dan Jotai mengambil pendekatan "membuat unit state terkecil (Atom), lalu menggabungkan dan menyuntikkannya ke dalam pohon komponen (bottom-up)".
+Di saat [Redux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) menggunakan pendekatan "memotong bagian yang dibutuhkan dari satu pohon state yang besar (top-down)", Recoil dan Jotai mengambil pendekatan "membuat unit state terkecil (Atom), lalu menggabungkan dan menyuntikkannya ke dalam pohon komponen (bottom-up)".
 
 ```mermaid
 graph BT
@@ -287,7 +287,7 @@ graph BT
     Component1 -.->|"Updates"| AtomA
 ```
 
-Atom adalah unit state independen. Komponen hanya berlangganan (Subscribe) ke Atom yang diperlukan. Ketika sebuah Atom diperbarui, hanya komponen yang berlangganan Atom tersebut yang akan dirender ulang secara spesifik. Ini sepenuhnya memecahkan masalah rerender yang tidak perlu yang dialami oleh Context API.
+Atom adalah unit state independen. Komponen hanya berlangganan (Subscribe) ke Atom yang diperlukan. Ketika sebuah Atom diperbarui, hanya komponen yang berlangganan Atom tersebut yang akan dirender ulang secara spesifik. Ini sepenuhnya memecahkan masalah rerender yang tidak perlu yang dialami oleh [Context API](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/).
 
 ```javascript
 // Contoh Atomic State menggunakan Jotai
@@ -309,15 +309,15 @@ function ProductDisplay() {
 }
 ```
 
-Karena pustaka seperti Jotai dapat digunakan dengan perasaan yang hampir sama dengan `useState` milik React, biaya pembelajarannya rendah, dan dengan performa tinggi, menjadikannya pilihan yang sangat populer dalam aplikasi React modern.
+Karena pustaka seperti [Jotai](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) dapat digunakan dengan perasaan yang hampir sama dengan `useState` milik React, biaya pembelajarannya rendah, dan dengan performa tinggi, menjadikannya pilihan yang sangat populer dalam aplikasi React modern.
 
-## 9. Proxy dan Mutabilitas: Zustand dan Valtio
+## 9. Proxy dan Mutabilitas: [Zustand](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) dan Valtio
 
 Sebagai tren kuat lainnya, bermunculan pustaka-pustaka yang memangkas boilerplate secara ekstrem dan menyediakan API yang lebih intuitif. Ini adalah **Zustand** dan **Valtio**, yang dikembangkan oleh kolektif OSS bernama Poimandres.
 
-### 9.1 Zustand: Flux yang Sangat Sederhana
+### 9.1 Zustand: [Flux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) yang Sangat Sederhana
 
-Zustand mengadopsi store tunggal (arsitektur Flux) seperti Redux, namun ia mengeliminasi konsep kompleks seperti Reducer dan Provider, serta menawarkan API berbasis Hooks yang sangat sederhana.
+Zustand mengadopsi store tunggal (arsitektur Flux) seperti [Redux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/), namun ia mengeliminasi konsep kompleks seperti Reducer dan Provider, serta menawarkan API berbasis Hooks yang sangat sederhana.
 
 ```javascript
 // Contoh Zustand
@@ -339,7 +339,7 @@ function Counter() {
 }
 ```
 
-Zustand telah mengukuhkan posisinya sebagai "Redux versi modern" yang memadukan kekokohan Redux dengan kesederhanaan Hooks.
+[Zustand](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) telah mengukuhkan posisinya sebagai "[Redux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) versi modern" yang memadukan kekokohan Redux dengan kesederhanaan Hooks.
 
 ### 9.2 Valtio: Manajemen [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) yang Mutable melalui Proxy
 
@@ -444,11 +444,11 @@ Kerangka kerja generasi berikutnya seperti **Qwik** meninjau ulang manajemen sta
 
 ## 13. Kesimpulan: Ke Arah Mana Manajemen State Menuju?
 
-Dimulai dari kekacauan MVC, mencapai prediktabilitas dengan Flux/Redux, penyederhanaan dengan Hooks, pemisahan Server State, efisiensi melalui Atomic dan Proxy, hingga fine-grained reactivity melalui Signals.
+Dimulai dari kekacauan MVC, mencapai prediktabilitas dengan [Flux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/), penyederhanaan dengan Hooks, pemisahan Server State, efisiensi melalui Atomic dan Proxy, hingga fine-grained reactivity melalui Signals.
 
 Melihat kembali sejarah manajemen state frontend selama kurang lebih 15 tahun terakhir, sebuah tren yang jelas mulai terlihat. Yaitu bahwa **"Evolusinya mengarah pada pengurangan boilerplate, penurunan beban kognitif pengembang, sembari sistem di baliknya (kerangka kerja atau kompilator) mengoptimalkan performa secara otomatis"**.
 
-- **Pengembangan React skala kecil hingga menengah**: Dalam banyak kasus, Jotai dan Zustand menjadi solusi yang optimal.
+- **Pengembangan React skala kecil hingga menengah**: Dalam banyak kasus, [Jotai](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) dan [Zustand](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/) menjadi solusi yang optimal.
 - **Pengembangan yang melibatkan pengambilan data**: Alat manajemen Server State seperti TanStack Query adalah suatu keharusan.
 - **Proyek baru yang menuntut performa dan DX ekstrem**: Kerangka kerja yang mengadopsi Signals seperti SolidJS atau Vue sangatlah menarik.
 - **Masa depan React**: Seiring dengan semakin matangnya React Compiler, sebagian besar masalah performa pada manajemen state akan diselesaikan melalui otomatisasi.

@@ -141,7 +141,7 @@ Les règles de base de Zettelkasten sont "d'écrire une seule idée par note (na
 - `Related Notes` (Relation : Lien avec la base de données Notes elle-même)
 - `Tasks` (Relation : Lien avec la tâche de rédaction de blog)
 
-### Flux de travail pour l'écriture de blog
+### [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de travail pour l'écriture de blog
 1. Accumulez continuellement les connaissances acquises lors du développement quotidien et les idées qui vous viennent à l'esprit sous forme de "Notes" fragmentées.
 2. S'il existe des thèmes communs entre ces notes, utilisez la propriété `Related Notes` pour les lier (liens bidirectionnels).
 3. Lorsque vous commencez la tâche d'écrire un blog (Tasks), appelez la base de données liée dans la page de cette tâche et alignez les Notes associées.

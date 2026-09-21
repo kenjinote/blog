@@ -19,7 +19,7 @@ Als Tool, das diese vielfältigen Bedürfnisse auf einer einzigen Plattform lös
 
 ## 1. Die Affinität zwischen der PARA-Methode und Notion
 
-Zunächst sprechen wir über die Grundlage: Wie man Informationen organisiert. In einem hochgradig flexiblen Tool wie Notion wuchern Seiten und Datenbanken leicht unkontrolliert, was zu einem Zustand führt, in dem man „nicht weiß, wo was ist“. Um dies zu verhindern, führen wir die **PARA-Methode** ein, die von Tiago Forte entwickelt wurde.
+Zunächst sprechen wir über die Grundlage: Wie man Informationen organisiert. In einem hochgradig flexiblen Tool wie Notion wuchern Seiten und Datenbanken leicht unkontrolliert, was zu einem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) führt, in dem man „nicht weiß, wo was ist“. Um dies zu verhindern, führen wir die **PARA-Methode** ein, die von Tiago Forte entwickelt wurde.
 
 Die PARA-Methode ist ein System, das Informationen in die folgenden vier Kategorien einteilt:
 

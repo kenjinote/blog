@@ -8,7 +8,7 @@ categories: ["programming", "architecture", "software-engineering"]
 tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 ---
 
-Die Geschichte der Entwicklung von Programmiersprachen ist auch eine Geschichte des Kampfes gegen die Komplexität. Mit dem zunehmenden Maßstab von Software stieß man auf Barrieren bei der Zustandsverwaltung, Leistung und Wartbarkeit, und um diese zu überwinden, wurden verschiedene **Programmierparadigmen** vorgeschlagen.
+Die Geschichte der Entwicklung von Programmiersprachen ist auch eine Geschichte des Kampfes gegen die Komplexität. Mit dem zunehmenden Maßstab von Software stieß man auf Barrieren bei der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sverwaltung, Leistung und Wartbarkeit, und um diese zu überwinden, wurden verschiedene **Programmierparadigmen** vorgeschlagen.
 
 In diesem Artikel werden wir die in der modernen Softwareentwicklung vorherrschende **objektorientierte Programmierung** (OOP), die **funktionale Programmierung** (FP) mit ihrer mathematischen Robustheit und die **datenorientierte Programmierung** (DOP / DOD), die sich auf Leistung und die Trennung von Daten konzentriert, hinsichtlich ihrer jeweiligen Philosophien, Stärken und **Grenzen** genauer untersuchen. Darüber hinaus werden wir erklären, wie moderne leistungsstarke Sprachen (wie [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) und TypeScript) diese **verschmelzen**.
 
@@ -22,7 +22,7 @@ Die **Objektorientierung** (Object-Oriented Programming) herrschte von den 1990e
 
 Das Ziel der OOP ist es, "Daten" und das "Verhalten", das diese Daten manipuliert, in einem einzigen **Objekt** zu kapseln.
 
-- **Kapselung**: Verbirgt den internen Zustand und erlaubt die Manipulation von außen nur über veröffentlichte Methoden.
+- **Kapselung**: Verbirgt den internen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) und erlaubt die Manipulation von außen nur über veröffentlichte Methoden.
 - **Vererbung**: Erweitert bestehende Klassen und erhöht die Wiederverwendbarkeit von Code.
 - **Polymorphismus**: Ermöglicht das Umschalten zwischen verschiedenen Implementierungen über dieselbe Schnittstelle.
 
@@ -56,7 +56,7 @@ animals.forEach(a => a.speak());
 
 ### 1.2 Die Grenzen der OOP und das "Gorilla und Banane-Problem"
 
-Auf den ersten Blick scheint OOP eine perfekte Modellierungsmethode zu sein, aber mit zunehmender Systemgröße verursachte sie fatale Probleme durch **übermäßigen Gebrauch von Vererbung** und **implizite Zustandsverwaltung**.
+Auf den ersten Blick scheint OOP eine perfekte Modellierungsmethode zu sein, aber mit zunehmender Systemgröße verursachte sie fatale Probleme durch **übermäßigen Gebrauch von Vererbung** und **implizite [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sverwaltung**.
 
 Ein berühmtes Zitat von Joe Armstrong (dem Erfinder von Erlang) lautet:
 
@@ -91,7 +91,7 @@ Ein tiefer Vererbungsbaum verkompliziert die Code-Abhängigkeiten und macht es e
 
 ## 2. Der mathematische Ansatz der funktionalen Programmierung (FP)
 
-Als Antithese zu der durch die "Zustandsmutation" der OOP verursachten Komplexität rückte die **funktionale Programmierung** (Functional Programming) ins Rampenlicht. Sie hat nicht nur Sprachen wie Haskell, Scala und Clojure tiefgreifend beeinflusst, sondern heutzutage auch JavaScript und TypeScript stark geprägt.
+Als Antithese zu der durch die "[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smutation" der OOP verursachten Komplexität rückte die **funktionale Programmierung** (Functional Programming) ins Rampenlicht. Sie hat nicht nur Sprachen wie Haskell, Scala und Clojure tiefgreifend beeinflusst, sondern heutzutage auch JavaScript und TypeScript stark geprägt.
 
 ### 2.1 Kernkonzepte der FP
 
@@ -120,7 +120,7 @@ const getActiveUserNames = (users: readonly User[]): string[] =>
 console.log(getActiveUserNames(users)); // ["Alice", "Charlie"]
 ```
 
-In der FP werden Zustandsübergänge ähnlich wie bei der mathematischen Funktion $f(x) = y$ dargestellt. Wenn es einen Systemzustand $S$ und eine Aktion $A$ gibt, kann der neue Zustand $S'$ wie folgt ausgedrückt werden:
+In der FP werden [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergänge ähnlich wie bei der mathematischen Funktion $f(x) = y$ dargestellt. Wenn es einen Systemzustand $S$ und eine Aktion $A$ gibt, kann der neue Zustand $S'$ wie folgt ausgedrückt werden:
 
 $ S' = f(S, A) $
 
@@ -192,7 +192,7 @@ Jedes Paradigma hat seine klaren Stärken und Schwächen.
 
 | Paradigma | Vorteile | Nachteile | Optimale Anwendungsfälle |
 | :--- | :--- | :--- | :--- |
-| **OOP** | Intuitive Modellierung, Verbergen durch Kapselung | Verkomplizierung der Vererbung, Fehler durch implizite Zustandsmutation | GUI-Frameworks, Modellierung von Geschäftsdomänen |
+| **OOP** | Intuitive Modellierung, Verbergen durch Kapselung | Verkomplizierung der Vererbung, Fehler durch implizite [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smutation | GUI-Frameworks, Modellierung von Geschäftsdomänen |
 | **FP** | Toleranz gegenüber Nebenläufigkeit, einfache Testbarkeit, Vorhersagbarkeit | Steile Lernkurve, Leistung (GC-Overhead) | Datenkonvertierungspipelines, nebenläufige Systeme |
 | **DOP** | Überwältigende Leistung, Transparenz des Zustands | Geringere Datenkohäsion, tendiert dazu prozedural zu sein | Spieleentwicklung, rechenintensive Verarbeitung, eingebettete Systeme |
 
@@ -235,14 +235,14 @@ fn process_event(state: &mut AppState, event: Event) {
 }
 ```
 
-In diesem Code wird der Zustand datenorientiert zentral verwaltet, während gleichzeitig Summentypen (ein Merkmal der funktionalen Programmierung) mittels `enum` verwendet werden.
+In diesem Code wird der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) datenorientiert zentral verwaltet, während gleichzeitig Summentypen (ein Merkmal der funktionalen Programmierung) mittels `enum` verwendet werden.
 
 ### 5.2 Praktische Architektur in TypeScript
 
 Auch in der Frontend-Entwicklung (wie React) mit TypeScript ist die Verschmelzung der Paradigmen zum Standard geworden.
 
 - Das UI-Rendering von Komponenten ist **funktional** (gibt die UI als reine Funktion zurück).
-- Datenabruf und Cache-Verwaltung sind **datenorientiert** (normalisierter Zustandsbaum mit [Redux](https://kenji.blog/de/p/state-management-history-future/) oder Zustand).
+- Datenabruf und Cache-Verwaltung sind **datenorientiert** (normalisierter [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sbaum mit [Redux](https://kenji.blog/de/p/state-management-history-future/) oder [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)).
 - Ein Teil der komplexen Domänenlogik ist **objektorientiert** (klassenbasierte [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)schicht).
 
 ---

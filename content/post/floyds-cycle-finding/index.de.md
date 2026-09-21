@@ -22,7 +22,7 @@ In diesem Artikel werden wir die Funktionsweise dieses Algorithmus, seinen mathe
 
 ## Was ist Zykluserkennung?
 
-Wenn man in einer einfach verketteten Liste (Singly Linked List) oder einem Zustandsübergangsgraphen von einem bestimmten Knoten aus navigiert und dabei wieder zu einem zuvor besuchten Knoten gelangt, nennt man diese Struktur einen **Zyklus**.
+Wenn man in einer einfach verketteten Liste (Singly Linked List) oder einem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergangsgraphen von einem bestimmten Knoten aus navigiert und dabei wieder zu einem zuvor besuchten Knoten gelangt, nennt man diese Struktur einen **Zyklus**.
 
 Betrachten wir zum Beispiel die folgende verkettete Liste:
 
@@ -315,7 +315,7 @@ Floyds Algorithmus zur Zykluserkennung wird nicht nur für das Erkennen von Zykl
    Dies ist ein Algorithmus, der effizient die Primfaktoren riesiger zusammengesetzter Zahlen findet, indem er ausnutzt, dass die Ausgabesequenz eines Zufallszahlengenerators in einen Zyklus eintritt. Es ist ein leistungsstarker Algorithmus zur Primfaktorzerlegung, der auch in der Kryptographie verwendet wird.
 2. **Erkennung doppelter Zahlen (Find the Duplicate Number)**:
    Angenommen, es gibt ein Array mit $N+1$ Elementen, deren Werte im Bereich von $1$ bis $N$ liegen. Nach dem Schubfachprinzip muss mindestens eine Zahl doppelt vorhanden sein. Indem man die Elemente im Array als "Zeiger auf den nächsten Index" behandelt, kann diese Methode angewendet werden, um das doppelte Element als Startpunkt des Zyklus zu finden, während der Arrayspeicher auf $O(1)$ gehalten wird. Dies ist ein häufiges Problem bei bekannten Programmierinterviews (z. B. LeetCode).
-   Konkret, gegeben sei das Array `nums`. Der Zustandsübergang wird definiert als `next_node = nums[current_node]`. Das Vorhandensein eines doppelten Wertes bedeutet, dass es Übergänge von mehreren verschiedenen Indizes zu demselben Wert (also demselben nächsten Knoten) gibt, was den Eingang zu einem Zyklus bildet. Indem man den Hase-und-Igel-Algorithmus direkt anwendet, kann man somit den doppelten Wert (den Startpunkt des Zyklus) mit einer Zeitkomplexität von $O(N)$ und einer Speicherkomplexität von $O(1)$ identifizieren.
+   Konkret, gegeben sei das Array `nums`. Der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergang wird definiert als `next_node = nums[current_node]`. Das Vorhandensein eines doppelten Wertes bedeutet, dass es Übergänge von mehreren verschiedenen Indizes zu demselben Wert (also demselben nächsten Knoten) gibt, was den Eingang zu einem Zyklus bildet. Indem man den Hase-und-Igel-Algorithmus direkt anwendet, kann man somit den doppelten Wert (den Startpunkt des Zyklus) mit einer Zeitkomplexität von $O(N)$ und einer Speicherkomplexität von $O(1)$ identifizieren.
 
 ```mermaid
 graph TD

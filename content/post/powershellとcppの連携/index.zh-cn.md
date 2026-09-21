@@ -295,7 +295,7 @@ $$ G \propto \sum_{i=1}^{N} A_i $$
 
 监控通过WMI（Windows Management Instrumentation）或CIM（Common Information Model）无法获取的独特硬件设备（例如：特殊的PCIe扩展卡或传感器）的信息。
 - **C++的作用** ：向设备驱动程序发起 `DeviceIoControl` 调用，以获取并解析二进制数据的DLL。
-- **PowerShell的作用** ：定期调用该DLL，将解析结果格式化为JSON，并发送给监控服务器的REST API。
+- **PowerShell的作用** ：定期调用该DLL，将解析结果格式化为JSON，并发送给监控服务器的[REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)。
 
 ## 内存管理与故障排查的最佳实践
 

@@ -234,7 +234,7 @@ if __name__ == "__main__":
 1. **RecursiveCharacterTextSplitter**:
    É o divisor mais recomendado para o processamento de linguagem natural. Ele tenta dividir o texto na ordem de parágrafos (`\n\n`), quebras de linha (`\n`) e pontos finais (`.`), visando manter a coerência do significado tanto quanto possível e garantir que caiba no `chunk_size` especificado. Ao definir um `chunk_overlap`, previne-se que os limites de contexto sejam cortados e que informações se percam.
 2. **HuggingFaceEmbeddings**:
-   `intfloat/multilingual-e5-large` é um modelo de incorporação de código aberto multilíngue muito poderoso. Ele permite vetorizar textos offline na memória local, sem o uso de APIs na nuvem (como o `text-embedding-ada-002` da OpenAI).
+   `intfloat/multilingual-e5-large` é um modelo de incorporação de código aberto multilíngue muito poderoso. Ele permite vetorizar textos [offline](https://kenji.blog/pt/p/pwa-progressive-web-apps-service-worker/) na memória local, sem o uso de APIs na nuvem (como o `text-embedding-ada-002` da OpenAI).
 3. **ChromaDB**:
    Como roda em memória ou no armazenamento local (baseado em SQLite), não é necessário iniciar servidores de banco de dados complexos. Ao especificar o `persist_directory`, você pode pular o processo de vetorização em execuções subsequentes e carregar o BD direto do disco.
 

@@ -105,7 +105,7 @@ Esto liberó a los desarrolladores de la manipulación directa del DOM. Sin emba
 
 Cuando se actualizaba el Model A, se actualizaba la View B, el cambio en la View B actualizaba el Model C, y esto a su vez actualizaba la View D... De esta manera, el flujo de datos se volvía complejamente entrelazado, ocurriendo con frecuencia errores (bugs) en los que se caía en bucles infinitos o la UI se actualizaba en momentos inesperados. Se volvió imposible predecir "cuándo, quién y qué datos cambió".
 
-## 4. El nacimiento de React y Flux: La revolución del flujo de datos unidireccional
+## 4. El nacimiento de React y [Flux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/): La revolución del flujo de datos unidireccional
 
 En 2013, React fue lanzado por Facebook (ahora Meta). React en sí era una biblioteca para construir UIs (la V en MVC), pero al mismo tiempo abogaron por un nuevo patrón arquitectónico: **Flux**.
 
@@ -119,7 +119,7 @@ graph LR
     View["View / React"] -->|"Trigger"| Action["Action"]
 ```
 
-La arquitectura Flux tiene reglas estrictas:
+La arquitectura [Flux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) tiene reglas estrictas:
 
 1.  **Action**: La única forma de introducir cambios en el sistema. Un objeto que indica lo que sucedió.
 2.  **Dispatcher**: Un concentrador central (hub) que recibe todas las Actions y las distribuye a los Stores.
@@ -128,7 +128,7 @@ La arquitectura Flux tiene reglas estrictas:
 
 Lo importante es que **la View nunca puede cambiar directamente el estado del Store**. Para cambiar el estado, es necesario ejecutar un ciclo unidireccional que emita una Action y pase por el Dispatcher. Esto hizo que el flujo de datos fuera extremadamente predecible (Predictable) y mejoró drásticamente la estabilidad de la gestión de estado en aplicaciones a gran escala.
 
-## 5. La hegemonía y los límites de Redux
+## 5. La hegemonía y los límites de [Redux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/)
 
 **Redux**, desarrollado por Dan Abramov y otros en 2015, refinó aún más los conceptos de Flux y se convirtió en el estándar de facto para la gestión de estado en el frontend.
 
@@ -172,7 +172,7 @@ function counterReducer(state = initialState, action) {
 }
 ```
 
-Gracias a esta combinación de "inmutabilidad (Immutability)" y "funciones puras", Redux logró implementar características poderosas como depuración de viaje en el tiempo (retroceder a estados pasados) y recarga en caliente (hot reloading). Fue un gran avance en términos de experiencia del desarrollador (DX).
+Gracias a esta combinación de "inmutabilidad (Immutability)" y "funciones puras", [Redux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) logró implementar características poderosas como depuración de viaje en el tiempo (retroceder a estados pasados) y recarga en caliente (hot reloading). Fue un gran avance en términos de experiencia del desarrollador (DX).
 
 ### 5.3 El desafío de Redux: El muro del código repetitivo (Boilerplate)
 
@@ -186,16 +186,16 @@ Para realizar algo tan simple como incrementar un número en un contador, era ne
 
 Además, para manejar procesos asíncronos (como comunicaciones de API), era necesario introducir middlewares como `redux-thunk` o `redux-saga`, lo que hacía que la curva de aprendizaje se disparara rápidamente.
 
-Surgieron voces que decían "¿Redux no es excesivo?", y comenzaron a explorarse nuevos enfoques para la gestión del estado.
+Surgieron voces que decían "¿[Redux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) no es excesivo?", y comenzaron a explorarse nuevos enfoques para la gestión del estado.
 
-## 6. El movimiento "Post-Redux" mediante Context API y Hooks
+## 6. El movimiento "Post-Redux" mediante [Context API](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) y Hooks
 
 La renovación de la Context API en React 16.3 en 2018, y posteriormente la introducción de los **React Hooks** en React 16.8 en 2019, marcaron un gran punto de inflexión en la historia de la gestión de estado.
 
 ### 6.1 Compartición del estado con características integradas
 
 Usando la Context API, es posible pasar datos directamente a los componentes en las capas profundas del árbol de componentes sin tener que pasar las propiedades manualmente en cada nivel (Prop Drilling).
-Además, combinándolo con el Hook `useReducer`, fue posible lograr una gestión del estado similar a Redux utilizando únicamente las características integradas de React.
+Además, combinándolo con el Hook `useReducer`, fue posible lograr una gestión del estado similar a [Redux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) utilizando únicamente las características integradas de React.
 
 ```javascript
 // Gestión de estado usando Context y useReducer
@@ -226,9 +226,9 @@ function CounterDisplay() {
 }
 ```
 
-Como resultado, la noción de que "Redux es innecesario para un estado global simple" se volvió ampliamente aceptada. Sin embargo, este enfoque tenía un problema de rendimiento fatal.
+Como resultado, la noción de que "[Redux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) es innecesario para un estado global simple" se volvió ampliamente aceptada. Sin embargo, este enfoque tenía un problema de rendimiento fatal.
 
-### 6.2 El problema de rendimiento de la Context API (Extra Re-renders)
+### 6.2 El problema de rendimiento de la [Context API](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) (Extra Re-renders)
 
 La Context API de React tiene una especificación que indica que "cuando se actualiza el valor del Context, todos los componentes suscritos a ese Context (que están llamando a `useContext`) se re-renderizarán incondicionalmente".
 
@@ -245,9 +245,9 @@ En particular, los datos obtenidos de un servidor (Server State) son fundamental
 - **Server State**: Propiedad del servidor. Se obtiene de forma asíncrona. Dado que múltiples personas lo comparten y modifican, siempre existe la posibilidad de que se vuelva obsoleto (Stale). Requiere gestión de caché, actualización en segundo plano (background) y procesamiento de reintentos.
 - **Client State**: Propiedad del cliente (navegador). Se actualiza sincrónicamente. Incluye cosas como el modo oscuro, abrir/cerrar un modal, etc.
 
-### 7.1 El ascenso de React Query, SWR y Apollo Client
+### 7.1 El ascenso de React Query, SWR y [Apollo Client](https://kenji.blog/es/p/graphql-vs-rest-api-overfetching-type-safety/)
 
-Se volvió común el enfoque de separar la gestión del Server State de Redux y Context, y delegarlo a bibliotecas especializadas. Fue el surgimiento de bibliotecas como **React Query (ahora TanStack Query)** y **SWR**.
+Se volvió común el enfoque de separar la gestión del Server State de [Redux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) y Context, y delegarlo a bibliotecas especializadas. Fue el surgimiento de bibliotecas como **React Query (ahora TanStack Query)** y **SWR**.
 
 ```javascript
 // Gestión del Server State usando React Query
@@ -265,18 +265,18 @@ function UserProfile({ userId }) {
 ```
 
 Estas bibliotecas abstrajeron procesos complejos como "almacenar en caché el estado del servidor localmente y sincronizarlo cuando sea necesario".
-Como resultado, los datos que se deben gestionar en un almacén (store) global como Redux se redujeron drásticamente solo al "estado del cliente puro", aligerando significativamente la carga de la gestión de estado.
+Como resultado, los datos que se deben gestionar en un almacén (store) global como [Redux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) se redujeron drásticamente solo al "estado del cliente puro", aligerando significativamente la carga de la gestión de estado.
 
-## 8. Gestión del estado atómico (Atomic [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) Management): Recoil y Jotai
+## 8. Gestión del estado atómico (Atomic [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) Management): [Recoil](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) y [Jotai](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/)
 
 Después de aislar el Server State, comenzó una nueva competencia sobre cómo gestionar el Client State restante de manera eficiente.
-Para resolver el modelo de renderizado de React (top-down) y los problemas de rendimiento de la Context API, surgió un enfoque llamado **Gestión del estado atómico (Atomic State Management)**.
+Para resolver el modelo de renderizado de React (top-down) y los problemas de rendimiento de la [Context API](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/), surgió un enfoque llamado **Gestión del estado atómico (Atomic [State Management](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/))**.
 
 En 2020, el equipo de Facebook anunció **Recoil**, y fuertemente influenciados por él, surgieron bibliotecas como **Jotai**.
 
 ### 8.1 Gestión del estado Bottom-Up
 
-Mientras que Redux adopta un enfoque de "extraer las partes necesarias de un solo árbol de estado gigante (top-down)", Recoil y Jotai adoptan un enfoque de "crear la unidad mínima de estado (Atom) e inyectarlos combinados en el árbol de componentes (bottom-up)".
+Mientras que [Redux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) adopta un enfoque de "extraer las partes necesarias de un solo árbol de estado gigante (top-down)", Recoil y Jotai adoptan un enfoque de "crear la unidad mínima de estado (Atom) e inyectarlos combinados en el árbol de componentes (bottom-up)".
 
 ```mermaid
 graph BT
@@ -287,7 +287,7 @@ graph BT
     Component1["Component 1"] -.->|"Updates"| AtomA(("Atom A"))
 ```
 
-Un Atom es una unidad de estado independiente. Los componentes solo se suscriben (Subscribe) a los Atoms que necesitan. Cuando se actualiza un Atom, solo los componentes que están suscritos a ese Atom específico se re-renderizan. Esto resuelve por completo los problemas de renderizados innecesarios que plagaban a la Context API.
+Un Atom es una unidad de estado independiente. Los componentes solo se suscriben (Subscribe) a los Atoms que necesitan. Cuando se actualiza un Atom, solo los componentes que están suscritos a ese Atom específico se re-renderizan. Esto resuelve por completo los problemas de renderizados innecesarios que plagaban a la [Context API](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/).
 
 ```javascript
 // Ejemplo de estado atómico (Atomic State) usando Jotai
@@ -309,15 +309,15 @@ function ProductDisplay() {
 }
 ```
 
-Jotai y similares se pueden utilizar con la misma facilidad que `useState` de React, lo que reduce la curva de aprendizaje, y debido a que ofrece un alto rendimiento, se ha convertido en una opción muy popular en las aplicaciones React modernas.
+[Jotai](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) y similares se pueden utilizar con la misma facilidad que `useState` de React, lo que reduce la curva de aprendizaje, y debido a que ofrece un alto rendimiento, se ha convertido en una opción muy popular en las aplicaciones React modernas.
 
-## 9. Proxies y Mutabilidad: Zustand y Valtio
+## 9. Proxies y Mutabilidad: [Zustand](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) y Valtio
 
 Como otra poderosa tendencia, surgieron bibliotecas que redujeron al mínimo el código repetitivo y ofrecieron una API más intuitiva. Estas son **Zustand** y **Valtio**, desarrolladas por el colectivo OSS Poimandres.
 
-### 9.1 Zustand: Flux llevado a la máxima simplicidad
+### 9.1 Zustand: [Flux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) llevado a la máxima simplicidad
 
-Zustand adopta un único almacén (arquitectura Flux) al igual que Redux, pero elimina conceptos complejos como Reducers y Providers, ofreciendo una API extremadamente simple basada en Hooks.
+Zustand adopta un único almacén (arquitectura Flux) al igual que [Redux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/), pero elimina conceptos complejos como Reducers y Providers, ofreciendo una API extremadamente simple basada en Hooks.
 
 ```javascript
 // Ejemplo de Zustand
@@ -339,7 +339,7 @@ function Counter() {
 }
 ```
 
-Zustand ha consolidado una posición que podría considerarse el "Redux moderno", ya que combina la robustez de Redux con la simplicidad de los Hooks.
+[Zustand](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) ha consolidado una posición que podría considerarse el "[Redux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) moderno", ya que combina la robustez de Redux con la simplicidad de los Hooks.
 
 ### 9.2 Valtio: Gestión de estado mutable mediante Proxy
 
@@ -444,11 +444,11 @@ El estado renderizado en el servidor es serializado e integrado en el HTML, y el
 
 ## 13. Conclusión: ¿Hacia dónde se dirige la gestión de estado?
 
-Empezando con la confusión del modelo MVC, logrando un estado predecible gracias a Flux/Redux, su simplificación a través de los Hooks, la separación del Server [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/), la eficiencia de los Atomic y Proxy, y terminando con Signals, y su reactividad de grano fino.
+Empezando con la confusión del modelo MVC, logrando un estado predecible gracias a [Flux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/), su simplificación a través de los Hooks, la separación del Server [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/), la eficiencia de los Atomic y Proxy, y terminando con Signals, y su reactividad de grano fino.
 
 Al observar estos quince años de historia en la gestión de estado en frontend, se hace evidente una tendencia: **"se evoluciona en la dirección de reducir el código repetitivo y la carga cognitiva de los desarrolladores, a la vez que el sistema subyacente (frameworks o compiladores) optimiza automáticamente el rendimiento"**.
 
-- **Para desarrollos React a pequeña y mediana escala**: Jotai o Zustand son muchas veces la solución ideal.
+- **Para desarrollos React a pequeña y mediana escala**: [Jotai](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) o [Zustand](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/) son muchas veces la solución ideal.
 - **Para desarrollos con petición de datos**: Herramientas como TanStack Query son obligatorias para gestionar el Server State.
 - **Para nuevos proyectos buscando el mejor rendimiento y DX**: Frameworks que adoptan Signals, como SolidJS o Vue, resultan muy atractivos.
 - **El futuro de React**: Con la madurez de React Compiler, gran parte de los problemas de rendimiento en la gestión de estados serán resueltos mediante la automatización.

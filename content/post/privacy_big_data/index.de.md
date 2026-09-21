@@ -132,7 +132,7 @@ Dies ermöglicht den Aufbau intelligenter KI-Modelle, ohne dass die persönliche
 
 ### 2.4 Homomorphe Verschlüsselung (Homomorphic Encryption: HE)
 
-Eine „magische“ Verschlüsselungstechnologie, die es ermöglicht, Berechnungen (wie Addition und Multiplikation) an Daten durchzuführen, während diese in ihrem verschlüsselten Zustand verbleiben, ist die homomorphe Verschlüsselung. Bei herkömmlichen Verschlüsselungsmethoden müssen Daten zur Verarbeitung zunächst entschlüsselt (in Klartext zurückverwandelt) werden. Eine Entschlüsselung auf Cloud-Servern stellt jedoch eine Sicherheitslücke dar.
+Eine „magische“ Verschlüsselungstechnologie, die es ermöglicht, Berechnungen (wie Addition und Multiplikation) an Daten durchzuführen, während diese in ihrem verschlüsselten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) verbleiben, ist die homomorphe Verschlüsselung. Bei herkömmlichen Verschlüsselungsmethoden müssen Daten zur Verarbeitung zunächst entschlüsselt (in Klartext zurückverwandelt) werden. Eine Entschlüsselung auf Cloud-Servern stellt jedoch eine Sicherheitslücke dar.
 
 Durch die Verwendung der homomorphen Verschlüsselung werden die folgenden Eigenschaften realisiert. Wenn die Verschlüsselungsfunktion $E(\cdot)$ ist, können Addition oder Multiplikation der Klartexte $m_1$ und $m_2$ als Operationen ($\oplus$ oder $\otimes$) an den Chiffretexten ausgeführt werden.
 

@@ -96,7 +96,7 @@ Eine von [Pascal](https://kenji.blog/de/p/pascal/)s entscheidendsten Rollen in d
 Um dieses schwierige Problem anzugehen, schrieb [Pascal](https://kenji.blog/de/p/pascal/) Briefe an [Pierre de Fermat](https://kenji.blog/de/p/fermat/), ein weiteres in Toulouse lebendes Mathematikgenie. Die beiden gelangten durch völlig unterschiedliche Ansätze zur Lösung.
 
 - **[Fermat](https://kenji.blog/de/p/fermat/)s Ansatz**: Eine kombinatorische Methode, die alle möglichen zukünftigen Szenarien (Baumdiagramm) auflistet und die Wahrscheinlichkeit des Eintretens jedes einzelnen berechnet, um das Verteilungsverhältnis zu bestimmen.
-- **[Pascal](https://kenji.blog/de/p/pascal/)s Ansatz**: Eine rekursive Methode, die den „Erwartungswert“ (Expected value) des Spielens des nächsten einzelnen Spiels ausgehend vom aktuellen Zustand berechnet und ihn rekursiv löst.
+- **[Pascal](https://kenji.blog/de/p/pascal/)s Ansatz**: Eine rekursive Methode, die den „Erwartungswert“ (Expected value) des Spielens des nächsten einzelnen Spiels ausgehend vom aktuellen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) berechnet und ihn rekursiv löst.
 
 In [Pascal](https://kenji.blog/de/p/pascal/)s Berechnung, wenn der erwartete Gewinn aus dem Gewinnen oder Verlieren des nächsten Spiels $E_{\text{gewinnen}}$ bzw. $E_{\text{verlieren}}$ ist, wird der aktuelle Erwartungswert $E$ wie folgt ausgedrückt:
 

@@ -409,7 +409,7 @@ Parabéns! Com isso, o pipeline de assets de desenvolvimento web perfeito — qu
 
 A grande vantagem desta arquitetura é que **"a configuração só precisa ser feita uma vez"**. Uma vez construído o pipeline, os desenvolvedores não precisarão abrir nenhum arquivo CSS, bastando escrever as classes utilitárias de forma intuitiva nos templates HTML ou Markdown para construir interfaces de usuário complexas em uma velocidade fantástica.
 
-Além disso, como o tamanho do arquivo CSS gerado é sempre minimizado, isso também afeta de forma direta e favorável as métricas de Core Web Vitals, trazendo enormes vantagens do ponto de vista de SEO.
+Além disso, como o tamanho do arquivo CSS gerado é sempre minimizado, isso também afeta de forma direta e favorável as métricas de Core [Web Vitals](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), trazendo enormes vantagens do ponto de vista de SEO.
 
 A combinação de Hugo e Tailwind CSS continuará sendo uma das "melhores escolhas" em todos os projetos, desde blogs técnicos pessoais até grandes sites corporativos. Aproveite ao máximo esta poderosa cadeia de ferramentas e tenha uma ótima experiência no desenvolvimento web!
 

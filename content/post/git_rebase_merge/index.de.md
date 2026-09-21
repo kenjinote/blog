@@ -82,7 +82,7 @@ Wenn Git die Historie mit Befehlen wie `git log` anzeigt, wird der DAG durch den
 
 # 4. Der Mechanismus und die Arten von git merge
 
-Der grundlegendste Befehl zur Integration von Branch-Änderungen ist `git merge`. Je nach aktuellem Zustand wählt Git jedoch automatisch unterschiedliche Merge-Strategien aus.
+Der grundlegendste Befehl zur Integration von Branch-Änderungen ist `git merge`. Je nach aktuellem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) wählt Git jedoch automatisch unterschiedliche Merge-Strategien aus.
 
 ## 4.1 Fast-Forward-Merge (--ff)
 
@@ -131,7 +131,7 @@ $$
 T_{\text{LCA}} = \mathcal{O}(|V| + |E|)
 $$
 
-Git vergleicht den „Zustand des LCA“, den „Zustand des aktuellen Branches“ und den „Zustand des anderen Branches“. Wenn die Änderungen nicht im Konflikt stehen, wird automatisch ein Merge-Commit generiert.
+Git vergleicht den „[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) des LCA“, den „Zustand des aktuellen Branches“ und den „Zustand des anderen Branches“. Wenn die Änderungen nicht im Konflikt stehen, wird automatisch ein Merge-Commit generiert.
 
 ---
 
@@ -177,7 +177,7 @@ $$
 P = N!
 $$
 
-Git gibt Entwicklern $N!$ Möglichkeiten und erlaubt es so, die Historie in einem logischen und aufgeräumten Zustand zu halten.
+Git gibt Entwicklern $N!$ Möglichkeiten und erlaubt es so, die Historie in einem logischen und aufgeräumten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) zu halten.
 
 ---
 
@@ -192,7 +192,7 @@ Git gibt Entwicklern $N!$ Möglichkeiten und erlaubt es so, die Historie in eine
 
 Git ist dezentralisiert. Die Commits, die Sie nach `origin/main` pushen, werden auch in die lokalen Repositories anderer Entwickler geklont (kopiert). Was passiert, wenn Sie einen bereits gepushten Commit rebasen, die Historie neu schreiben und diese mit `git push --force` erzwingen?
 
-Der DAG in den lokalen Repositories der anderen Entwickler weicht grundlegend vom DAG auf dem Remote-Server ab. Wenn ein anderer Entwickler `git pull` ausführt, wird Git versuchen, Commits mit unterschiedlicher Historie gewaltsam zusammenzuführen. Dies führt zu massiven Konflikten und doppelten Commits (Commits mit gleichem Inhalt, aber unterschiedlichen Hashes), was das Repository in einen chaotischen Zustand versetzt.
+Der DAG in den lokalen Repositories der anderen Entwickler weicht grundlegend vom DAG auf dem Remote-Server ab. Wenn ein anderer Entwickler `git pull` ausführt, wird Git versuchen, Commits mit unterschiedlicher Historie gewaltsam zusammenzuführen. Dies führt zu massiven Konflikten und doppelten Commits (Commits mit gleichem Inhalt, aber unterschiedlichen Hashes), was das Repository in einen chaotischen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) versetzt.
 
 Die eiserne Regel lautet: Führen Sie Rebase **nur auf „lokalen Branches, die noch mit niemandem geteilt wurden“** aus.
 
@@ -222,7 +222,7 @@ Wenn während eines Rebase ein Konflikt auftritt, pausiert Git den Vorgang. Der 
    git rebase --continue
    ```
 
-Wenn Sie den Rebase komplett abbrechen und in den ursprünglichen Zustand zurückkehren möchten, führen Sie folgenden Befehl aus:
+Wenn Sie den Rebase komplett abbrechen und in den ursprünglichen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) zurückkehren möchten, führen Sie folgenden Befehl aus:
 ```bash
 git rebase --abort
 ```

@@ -23,7 +23,7 @@ Sie haben zwei Optionen vor sich: Krankenhaus A und Krankenhaus B. Sie haben die
 - **Krankenhaus B**: 800 von 1000 Personen erfolgreich (Erfolgsquote **80%**)
 
 Wenn man dies sieht, würde jeder denken: „Krankenhaus A ist besser!“.
-Da Sie jedoch ein vorsichtiger Mensch sind, haben Sie beschlossen, genauer zu untersuchen, wie sich die Daten je nach Zustand der Krankheit (leicht oder schwer) ändern.
+Da Sie jedoch ein vorsichtiger Mensch sind, haben Sie beschlossen, genauer zu untersuchen, wie sich die Daten je nach [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) der Krankheit (leicht oder schwer) ändern.
 
 **【Erfolgsquote bei leichten Fällen】**
 - **Krankenhaus A**: 99 von 100 Personen erfolgreich (Erfolgsquote **99%**)

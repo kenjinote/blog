@@ -187,7 +187,7 @@ Para exportar dados do WordPress para uso no Hugo, a forma mais fácil e confiá
 1. **Uso do plugin Jekyll Exporter**
    Como o Hugo tem uma estrutura de dados muito semelhante ao Jekyll, que também é um SSG, usar o plugin "Jekyll Exporter" para WordPress é uma abordagem comum. Ao instalar e executar este plugin, todos os posts e páginas estáticas são convertidos em arquivos Markdown com Front Matter, e podem ser baixados como um arquivo ZIP junto com os arquivos de imagem.
 2. **Criação de scripts próprios usando a API do WordPress**
-   Consiste em bater na REST API do WordPress (`/wp-json/wp/v2/posts`) com Python, Node.js, etc., analisar os dados JSON e criar um script que gere arquivos Markdown por conta própria. É eficaz para sites que utilizam intensivamente campos personalizados complexos (como ACF) que não podem ser completamente suportados por plugins.
+   Consiste em bater na [REST API](https://kenji.blog/pt/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/pt/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) do WordPress (`/wp-json/wp/v2/posts`) com Python, Node.js, etc., analisar os dados JSON e criar um script que gere arquivos Markdown por conta própria. É eficaz para sites que utilizam intensivamente campos personalizados complexos (como ACF) que não podem ser completamente suportados por plugins.
 3. **Utilização da ferramenta wp2hugo**
    Também existe a abordagem de usar ferramentas CLI escritas em Go, entre outras linguagens, para converter diretamente o arquivo XML de exportação do WordPress (WXR) para o formato do Hugo.
 
@@ -300,9 +300,9 @@ Com essa configuração, a simples ação de "escrever um artigo em Markdown e f
 
 Operadores de sites que concluem a migração do WordPress para o Hugo frequentemente sentem os seguintes três benefícios notáveis:
 
-### 6.1 Melhoria drástica na velocidade do site e no Core Web Vitals
+### 6.1 Melhoria drástica na velocidade do site e no Core [Web Vitals](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-Como resultado da eliminação de consultas ao banco de dados e da renderização no lado do servidor, o tempo de carregamento da página é reduzido para milissegundos. Isso está diretamente ligado a uma melhora significativa nas pontuações do "Core Web Vitals" (LCP, FID/INP, CLS), que é um fator de ranqueamento do Google. É esperado que a taxa de rejeição dos usuários diminua e a avaliação de SEO melhore.
+Como resultado da eliminação de consultas ao banco de dados e da renderização no lado do servidor, o tempo de carregamento da página é reduzido para milissegundos. Isso está diretamente ligado a uma melhora significativa nas pontuações do "[Core Web Vitals](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)" ([LCP](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/pt/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)), que é um fator de ranqueamento do Google. É esperado que a taxa de rejeição dos usuários diminua e a avaliação de SEO melhore.
 
 ### 6.2 Libertação das ameaças de segurança
 

@@ -34,7 +34,7 @@ Ollama는 이러한 복잡성을 숨기고, [Docker](https://kenji.blog/ko/p/doc
 
 Ollama의 추론 엔진 백엔드로 기능하는 것은 C/C++로 구현된 고속 LLM 추론 라이브러리인 '**llama.cpp**'입니다. llama.cpp는 Apple Silicon(Metal), NVIDIA GPU(CUDA), AMD GPU(ROCm), 심지어 CPU 전용 환경에서도 하드웨어의 성능을 최대한 끌어내어 모델을 실행하는 능력을 갖추고 있습니다.
 
-Ollama는 llama.cpp를 내포하고 있으며, Go 언어로 작성된 서버 프로세스가 REST API를 제공하고 백그라운드에서 llama.cpp의 추론 엔진을 호출하는 아키텍처를 채택하고 있습니다.
+Ollama는 llama.cpp를 내포하고 있으며, Go 언어로 작성된 서버 프로세스가 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)를 제공하고 백그라운드에서 llama.cpp의 추론 엔진을 호출하는 아키텍처를 채택하고 있습니다.
 
 아래의 Mermaid 다이어그램은 Ollama의 전체적인 아키텍처를 보여줍니다.
 
@@ -197,7 +197,7 @@ ollama run kansai-coder
 
 ---
 
-# Ollama REST API 철저 해설
+# Ollama [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 철저 해설
 
 CLI에서의 대화도 편리하지만, 실제 애플리케이션 개발에서 Ollama의 진가가 발휘되는 곳은 강력한 REST API입니다. 서버 프로세스(기본값은 `http://localhost:11434`)에 HTTP 요청을 보냄으로써 추론 결과를 얻을 수 있습니다.
 
@@ -493,7 +493,7 @@ Python이나 셸 스크립트에 Ollama의 API 요청을 통합하여, 로그의
 
 ## 결론
 
-Ollama의 등장으로 로컬 LLM의 도입 장벽은 극적으로 낮아졌습니다. [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 컨테이너를 조작하는 듯한 단순한 명령어 체계와 외부 애플리케이션에서 쉽게 이용할 수 있는 REST API의 조합은 로컬 AI 개발에 있어 현재의 데팩토 스탠더드(사실상의 표준)라고 해도 과언이 아닙니다.
+Ollama의 등장으로 로컬 LLM의 도입 장벽은 극적으로 낮아졌습니다. [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 컨테이너를 조작하는 듯한 단순한 명령어 체계와 외부 애플리케이션에서 쉽게 이용할 수 있는 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)의 조합은 로컬 AI 개발에 있어 현재의 데팩토 스탠더드(사실상의 표준)라고 해도 과언이 아닙니다.
 
 클라우드 LLM의 비용이나 보안 제약으로 고민하고 있는 개발자라면, 꼭 본 기사에서 소개한 절차를 참고하여 Ollama를 이용한 로컬 LLM 환경을 구축하고 자신의 애플리케이션에 통합해 보시기 바랍니다. AI가 가진 가능성을 더욱 자유롭고 가깝게 느낄 수 있을 것입니다.
 

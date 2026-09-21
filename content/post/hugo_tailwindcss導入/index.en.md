@@ -409,7 +409,7 @@ Great job. You have now completed a perfect web development asset pipeline, comb
 
 The brilliance of this architecture is that **"you only have to configure it once."** Once the pipeline is built, developers never have to open a CSS file; by simply writing intuitive utility classes into HTML or Markdown templates, they can build complex UIs at astonishing speeds.
 
-Moreover, because the output CSS size is always minimized, it directly contributes to improving Core Web Vitals scores and works very advantageously from an SEO perspective.
+Moreover, because the output CSS size is always minimized, it directly contributes to improving Core [Web Vitals](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) scores and works very advantageously from an SEO perspective.
 
 The combination of Hugo and Tailwind CSS will remain one of the "best choices" for every project, from personal tech blogs to large corporate websites. Please take advantage of this powerful toolchain and enjoy a comfortable web development life!
 

@@ -212,7 +212,7 @@ Erstaunlicherweise ist der "Wichtigkeitswert" jeder Webseite genau der **Eigenve
 
 ### 3. Quantenmechanik und physikalische Systeme
 
-In der Welt der Physik, insbesondere in der Quantenmechanik, werden beobachtbare physikalische Größen (wie Energie und Impuls) als "hermitesche Operatoren (Matrizen)" dargestellt. Und die durch Beobachtung ermittelten möglichen Messwerte sind die **Eigenwerte** dieses Operators, und der Zustand des Systems nach der Messung wird zum entsprechenden **Eigenvektor** (Eigenzustand).
+In der Welt der Physik, insbesondere in der Quantenmechanik, werden beobachtbare physikalische Größen (wie Energie und Impuls) als "hermitesche Operatoren (Matrizen)" dargestellt. Und die durch Beobachtung ermittelten möglichen Messwerte sind die **Eigenwerte** dieses Operators, und der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) des Systems nach der Messung wird zum entsprechenden **Eigenvektor** (Eigenzustand).
 
 Die berühmte Schrödinger-Gleichung:
 

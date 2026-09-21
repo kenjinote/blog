@@ -219,7 +219,7 @@ firstTenEvens = take 10 (map (*2) naturals)
 
 ### 8.2 Monaden (Monads) und der Umgang mit Seiteneffekten
 
-In rein funktionalen Sprachen war es eine langjährige Herausforderung, wie man „Seiteneffekte (Side Effects)“ wie Ein-/Ausgabe oder Zustandsänderungen handhabt, ohne die mathematische Reinheit (referenzielle Transparenz) zu verlieren. Haskell hat dieses Problem elegant gelöst, indem es die **Monade** (Monad) einführte, ein Konzept aus der Kategorientheorie (Category Theory).
+In rein funktionalen Sprachen war es eine langjährige Herausforderung, wie man „Seiteneffekte (Side Effects)“ wie Ein-/Ausgabe oder [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sänderungen handhabt, ohne die mathematische Reinheit (referenzielle Transparenz) zu verlieren. Haskell hat dieses Problem elegant gelöst, indem es die **Monade** (Monad) einführte, ein Konzept aus der Kategorientheorie (Category Theory).
 
 Mit der IO-Monade ist es gelungen, „Berechnung“ und „Ausführung mit Seiteneffekten“ auf Ebene des Typsystems vollständig zu trennen.
 

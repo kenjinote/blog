@@ -173,7 +173,7 @@ llama.cpp は目的に応じて多数のバリエーションを提供してい�
 
 ---
 
-## 5. 推論時のパフォーマンス最適化：SIMDとCUDAアーキテクチャ
+## 5. 推論時の[パフォーマンス最適化](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)：SIMDとCUDAアーキテクチャ
 
 GGUFモデルをメモリにロードしただけでは、推論は高速になりません。LLMの推論の大半は「行列積（Matrix-Vector Multiplication, 略して GEMV、あるいは Matrix-Matrix, GEMM）」です。量子化された重みと、FP16（またはFP32）で保持されているアクティベーション（入力データ）の積和演算をいかに高速化するかが鍵です。
 

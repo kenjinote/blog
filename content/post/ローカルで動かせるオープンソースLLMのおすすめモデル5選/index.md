@@ -12,7 +12,7 @@ description: 'プライバシーを保護しつつ、無料で利用できるロ
 
 # はじめに
 
-近年、大規模言語モデル（LLM）の技術進化は目覚ましく、ChatGPTやClaudeのようなクラウドベースのAIサービスが広く普及しています。しかし、その一方で、「自社の機密データを外部のサーバーに送信したくない」「APIの利用料金を抑えたい」「完全にオフラインで動作するAIシステムを構築したい」というニーズが急速に高まっています。
+近年、大規模言語モデル（LLM）の技術進化は目覚ましく、ChatGPTやClaudeのようなクラウドベースのAIサービスが広く普及しています。しかし、その一方で、「自社の機密データを外部のサーバーに送信したくない」「APIの利用料金を抑えたい」「完全に[オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)で動作するAIシステムを構築したい」というニーズが急速に高まっています。
 
 この要求に応えるのが、自分のPCや社内サーバーに直接ダウンロードして実行できる「ローカルLLM（オープンソースLLM）」です。2023年頃まではローカルで実用的な精度を出すのは困難でしたが、モデルのアーキテクチャの進化や量子化（Quantization）技術の発展により、現在ではコンシューマー向けのGPU（NVIDIA RTX 3090 / 4090やMacのApple Siliconなど）でも、非常に高性能なLLMをサクサクと動かすことが可能になりました。
 
@@ -256,7 +256,7 @@ $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 ```bash
 ollama run llama3
 ```
-また、OllamaはバックグラウンドでREST APIサーバーとして機能するため、Pythonスクリプトや外部アプリケーションとの連携も極めて容易です。
+また、Ollamaはバックグラウンドで[REST API](https://kenji.blog/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)サーバーとして機能するため、Pythonスクリプトや外部アプリケーションとの連携も極めて容易です。
 
 ### 2. LM Studio
 GUIベースで直感的に操作したい方におすすめのアプリケーションです。Hugging Faceの膨大なGGUFモデルのリストをアプリ内から検索・ダウンロードでき、ChatGPTライクなチャット画面で会話を楽しめます。どのモデルが自分のPCのRAM/VRAMに収まるかを視覚的に教えてくれる機能が非常に便利です。

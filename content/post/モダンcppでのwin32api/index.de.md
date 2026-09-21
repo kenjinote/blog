@@ -210,7 +210,7 @@ Eine der irritierendsten Eigenheiten für C++-Programmierer beim Umgang mit der 
 *   `CreateEvent`, `CreateThread` usw.: Bei Fehlschlag wird `NULL` (`nullptr`) zurückgegeben.
 *   `CreateFile` usw.: Bei Fehlschlag wird `INVALID_HANDLE_VALUE` (als Wert `(HANDLE)-1`) zurückgegeben.
 
-Der standardmäßige `std::unique_ptr` behandelt den Fall, dass der interne Zeiger `nullptr` ist, als "leeren Zustand" (ein Zustand, in dem keine Ressource gehalten wird). Das heißt, ein boolescher Test wie `if (ptr)` liefert nur für `nullptr` den Wert `false`.
+Der standardmäßige `std::unique_ptr` behandelt den Fall, dass der interne Zeiger `nullptr` ist, als "leeren [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)" (ein Zustand, in dem keine Ressource gehalten wird). Das heißt, ein boolescher Test wie `if (ptr)` liefert nur für `nullptr` den Wert `false`.
 
 Wenn `CreateFile` jedoch fehlschlägt und `INVALID_HANDLE_VALUE` zurückgibt, missversteht `std::unique_ptr` dies als einen "gültigen Nicht-NULL-Zeiger".
 

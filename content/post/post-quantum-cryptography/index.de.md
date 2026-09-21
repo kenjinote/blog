@@ -26,7 +26,7 @@ Um auf diese beispiellose Krise zu reagieren, bündeln Kryptographen und Forschu
 
 Post-Quanten-Kryptographie (Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy, PQC) ist ein Sammelbegriff für kryptographische Algorithmen, die so konzipiert sind, dass sie auf bestehenden klassischen Computern laufen und gleichzeitig resistent gegen Angriffe durch zukünftige große Quantencomputer (wie den [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)) sind.
 
-Technologien, die oft damit verwechselt werden, sind die "Quantenkryptographie (Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)" und die "Quantenschlüsselverteilung (QKD)", aber diese verfolgen völlig andere Ansätze. Die Quantenkryptographie (QKD) ist eine hardwarebasierte Technologie, die physikalische Gesetze der Quantenmechanik (wie die Eigenschaft, dass sich der Zustand bei Beobachtung ändert) nutzt, um Abhören auf dem Kommunikationsweg physikalisch unmöglich zu machen. Sie erfordert dedizierte Glasfasern und spezielle Geräte, was zu Herausforderungen hinsichtlich Einführungskosten und Entfernungsbeschränkungen führt.
+Technologien, die oft damit verwechselt werden, sind die "Quantenkryptographie (Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)" und die "Quantenschlüsselverteilung (QKD)", aber diese verfolgen völlig andere Ansätze. Die Quantenkryptographie (QKD) ist eine hardwarebasierte Technologie, die physikalische Gesetze der Quantenmechanik (wie die Eigenschaft, dass sich der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) bei Beobachtung ändert) nutzt, um Abhören auf dem Kommunikationsweg physikalisch unmöglich zu machen. Sie erfordert dedizierte Glasfasern und spezielle Geräte, was zu Herausforderungen hinsichtlich Einführungskosten und Entfernungsbeschränkungen führt.
 
 Andererseits ist die **PQC eine rein "mathematisch" basierte, softwarebasierte kryptographische Technologie** . Daher kann sie als Software-Update in bestehende Internet-Infrastrukturen, Server, Smartphones, Browser usw. integriert werden und zeichnet sich durch eine sehr hohe Anwendbarkeit in der realen Welt aus. Für IT-Unternehmen und Regierungsbehörden weltweit ist es eine dringende Aufgabe, die derzeit verwendeten [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) und ECC durch diese PQC zu ersetzen (zu migrieren).
 
@@ -83,7 +83,7 @@ Der Ausgangspunkt ist ein Einweg-Signaturschema (One-Time-Signatur), das nur ein
 **Nachteile:** 
 - Kann nicht für den Schlüsselaustausch (KEM) verwendet werden, nur für digitale Signaturen.
 - Die Signaturgrößen neigen dazu, groß zu sein.
-- Es gibt "Zustandsbehaftete (Stateful)" und "Zustandslose (Stateless)" Versionen, wobei stateful (wie XMSS) bei der Implementierung schwierig sind, da die Anzahl der Schlüsselverwendungen streng verwaltet werden muss.
+- Es gibt "[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sbehaftete (Stateful)" und "Zustandslose (Stateless)" Versionen, wobei stateful (wie XMSS) bei der Implementierung schwierig sind, da die Anzahl der Schlüsselverwendungen streng verwaltet werden muss.
 
 NIST standardisiert "SLH-DSA (ehemals SPHINCS+)" als zustandslose hashbasierte Signatur.
 

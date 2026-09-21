@@ -34,7 +34,7 @@ Ollama इन जटिलताओं को छुपाता है और �
 
 Ollama के अनुमान इंजन (inference engine) के बैकएंड के रूप में काम करने वाली कोर तकनीक "**llama.cpp**" है, जो C/C++ में लागू एक उच्च गति वाली LLM अनुमान लाइब्रेरी है। llama.cpp में Apple Silicon (Metal), NVIDIA GPU (CUDA), AMD GPU (ROCm), या यहां तक कि केवल CPU वातावरण में हार्डवेयर के प्रदर्शन को अधिकतम करते हुए मॉडल को निष्पादित करने की क्षमता है।
 
-Ollama में llama.cpp शामिल है और यह एक ऐसी वास्तुकला को अपनाता है जहां Go भाषा में लिखा गया एक सर्वर प्रक्रिया REST API प्रदान करता है और बैकग्राउंड में llama.cpp अनुमान इंजन को कॉल करता है।
+Ollama में llama.cpp शामिल है और यह एक ऐसी वास्तुकला को अपनाता है जहां Go भाषा में लिखा गया एक सर्वर प्रक्रिया [REST API](https://kenji.blog/hi/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/hi/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) प्रदान करता है और बैकग्राउंड में llama.cpp अनुमान इंजन को कॉल करता है।
 
 नीचे दिया गया Mermaid आरेख Ollama की समग्र वास्तुकला को दर्शाता है।
 
@@ -197,7 +197,7 @@ ollama run kansai-coder
 
 ---
 
-# Ollama REST API की विस्तृत व्याख्या
+# Ollama [REST API](https://kenji.blog/hi/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/hi/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) की विस्तृत व्याख्या
 
 हालाँकि CLI के साथ बातचीत करना सुविधाजनक है, लेकिन वास्तविक एप्लिकेशन विकास में Ollama का असली मूल्य इसका शक्तिशाली REST API है। आप सर्वर प्रक्रिया (डिफ़ॉल्ट रूप से `http://localhost:11434`) पर HTTP अनुरोध भेजकर अनुमान परिणाम (inference results) प्राप्त कर सकते हैं।
 
@@ -493,7 +493,7 @@ Python या शेल स्क्रिप्ट्स में Ollama क�
 
 ## निष्कर्ष
 
-Ollama के आगमन से, स्थानीय LLM स्थापित करने की बाधा बहुत कम हो गई है। [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) कंटेनरों को प्रबंधित करने जैसी सरल कमांड प्रणाली और एक REST API जो बाहरी अनुप्रयोगों से आसानी से उपयोग की जा सकती है, इसका संयोजन स्थानीय AI विकास में वर्तमान वास्तविक मानक (de facto standard) माना जा सकता है।
+Ollama के आगमन से, स्थानीय LLM स्थापित करने की बाधा बहुत कम हो गई है। [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) कंटेनरों को प्रबंधित करने जैसी सरल कमांड प्रणाली और एक [REST API](https://kenji.blog/hi/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/hi/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) जो बाहरी अनुप्रयोगों से आसानी से उपयोग की जा सकती है, इसका संयोजन स्थानीय AI विकास में वर्तमान वास्तविक मानक (de facto standard) माना जा सकता है।
 
 क्लाउड LLM की लागत और सुरक्षा बाधाओं से जूझ रहे डेवलपर्स के लिए, मैं आपको इस लेख में दिए गए चरणों का उपयोग करके Ollama के साथ एक स्थानीय LLM वातावरण बनाने और इसे अपने एप्लिकेशन में एकीकृत करने के लिए प्रोत्साहित करता हूँ। आप निश्चित रूप से AI की संभावनाओं को अधिक स्वतंत्र रूप से और अपने करीब महसूस कर पाएंगे।
 

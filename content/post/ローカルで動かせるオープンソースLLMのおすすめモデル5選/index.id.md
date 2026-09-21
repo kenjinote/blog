@@ -12,7 +12,7 @@ description: 'LLM lokal yang dapat digunakan secara gratis dengan privasi yang t
 
 # Pendahuluan
 
-Dalam beberapa tahun terakhir, evolusi teknologi Large Language Models (LLM) sangat luar biasa, dan layanan AI berbasis cloud seperti ChatGPT serta Claude telah tersebar luas. Namun di sisi lain, kebutuhan untuk "tidak mengirimkan data rahasia perusahaan ke server eksternal", "menekan biaya penggunaan API", dan "membangun sistem AI yang beroperasi sepenuhnya offline" meningkat dengan pesat.
+Dalam beberapa tahun terakhir, evolusi teknologi Large Language Models (LLM) sangat luar biasa, dan layanan AI berbasis cloud seperti ChatGPT serta Claude telah tersebar luas. Namun di sisi lain, kebutuhan untuk "tidak mengirimkan data rahasia perusahaan ke server eksternal", "menekan biaya penggunaan API", dan "membangun sistem AI yang beroperasi sepenuhnya [offline](https://kenji.blog/id/p/pwa-progressive-web-apps-service-worker/)" meningkat dengan pesat.
 
 Untuk memenuhi permintaan ini, hadirlah "LLM Lokal (LLM Open Source)" yang dapat diunduh dan dijalankan secara langsung di PC sendiri maupun server perusahaan. Hingga sekitar tahun 2023, sulit untuk mendapatkan akurasi yang praktis secara lokal, tetapi berkat evolusi arsitektur model dan pengembangan teknologi kuantisasi (Quantization), kini LLM dengan kinerja sangat tinggi pun dapat dijalankan dengan lancar bahkan pada GPU konsumen (seperti NVIDIA RTX 3090 / 4090 atau Apple Silicon pada Mac).
 
@@ -256,7 +256,7 @@ Buka program terminal kalian dan hantamkan isyarat perintah bawah ini buat memba
 ```bash
 ollama run llama3
 ```
-Karena Ollama ini bisa berjalan dalam mode pelayan eksekusi belakang layar (background REST API server), menjadikan upaya penyatuan skrip koding berbasis Python ke beragam aplikasi pihak ke tiga tak sulit bagi kalian wujudkan.
+Karena Ollama ini bisa berjalan dalam mode pelayan eksekusi belakang layar (background [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) server), menjadikan upaya penyatuan skrip koding berbasis Python ke beragam aplikasi pihak ke tiga tak sulit bagi kalian wujudkan.
 
 ### 2. LM Studio
 Sebuah usulan aplikasi bersaranakan GUI terkhusus pada audien yang berminat untuk memakainya via interaksi interaktif ramah dan kentara mata. Dari rupa aplikasinya kelak para audien diberi keleluasaan dalam menelisik barisan katalog model-model GGUF yang bertengger di Hugging Face yang langsung tertuju ke dalam tombol pengunduhan dan langsung menikmati kegenitan sapa obrolan ala sistem antarmuka pada ChatGPT. Di sinilah terletaknya suatu fungsi sangat krusial yaitu representasi penunjuk bagi pemakai awam yang memandu seberapa optimal rasio VRAM ataupun RAM dari komputernya sanggup memuat beban ukuran seberapa besar pada LLM-nya.

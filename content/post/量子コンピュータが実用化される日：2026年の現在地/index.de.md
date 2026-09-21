@@ -19,7 +19,7 @@ In diesem Artikel werden wir den aktuellen Stand von Quantencomputern eingehend 
 
 ## 2. Grundlagen von Quantenzuständen und Fidelität (Fidelity)
 
-Das Qubit, die grundlegende Einheit eines Quantencomputers, kann sich im Gegensatz zu einem klassischen Bit (0 oder 1) in einem Überlagerungszustand (Superposition) von 0 und 1 befinden. Der Zustand eines einzelnen Qubits wird als Vektor in einem [Hilbert](https://kenji.blog/de/p/hilbert/)raum wie folgt dargestellt:
+Das Qubit, die grundlegende Einheit eines Quantencomputers, kann sich im Gegensatz zu einem klassischen Bit (0 oder 1) in einem Überlagerungszustand (Superposition) von 0 und 1 befinden. Der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) eines einzelnen Qubits wird als Vektor in einem [Hilbert](https://kenji.blog/de/p/hilbert/)raum wie folgt dargestellt:
 
 $$
 |\psi\rangle = \alpha|0\rangle + \beta|1\rangle
@@ -31,7 +31,7 @@ $$
 |\alpha|^2 + |\beta|^2 = 1
 $$
 
-Eine extrem wichtige Kennzahl zur Messung der Leistung von Quantenberechnungen ist die **Fidelität (Fidelity)**. Die Fidelität $F$ zwischen einem idealen Quantenzustand $|\psi\rangle$ und einer durch Rauschen degradierten, zu einem gemischten Zustand gewordenen tatsächlichen Dichtematrix $\rho$ ist wie folgt definiert:
+Eine extrem wichtige Kennzahl zur Messung der Leistung von Quantenberechnungen ist die **Fidelität (Fidelity)**. Die Fidelität $F$ zwischen einem idealen Quantenzustand $|\psi\rangle$ und einer durch Rauschen degradierten, zu einem gemischten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) gewordenen tatsächlichen Dichtematrix $\rho$ ist wie folgt definiert:
 
 $$
 F(\rho, |\psi\rangle) = \langle \psi | \rho | \psi \rangle
@@ -138,7 +138,7 @@ $$
 |\psi_{final}\rangle = B_{ij} |\psi_{initial}\rangle
 $$
 
-Hierbei ist $B_{ij}$ der Braiding-Operator. Da beim topologischen Ansatz die Speicherung von Informationen nicht vom lokalen Zustand der Teilchen abhängt, sondern von der Topologie der gesamten „Knoten“, ist er von Natur aus widerstandsfähig gegen Umgebungsrauschen (Fehlertoleranz auf Hardware-Ebene). Im Jahr 2026 wurde weltweit zum ersten Mal die Erzeugung topologischer logischer Qubits mit hoher Fidelität bestätigt, was große Aufmerksamkeit als starke Abkürzung zu FTQC erregte.
+Hierbei ist $B_{ij}$ der Braiding-Operator. Da beim topologischen Ansatz die Speicherung von Informationen nicht vom lokalen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) der Teilchen abhängt, sondern von der Topologie der gesamten „Knoten“, ist er von Natur aus widerstandsfähig gegen Umgebungsrauschen (Fehlertoleranz auf Hardware-Ebene). Im Jahr 2026 wurde weltweit zum ersten Mal die Erzeugung topologischer logischer Qubits mit hoher Fidelität bestätigt, was große Aufmerksamkeit als starke Abkürzung zu FTQC erregte.
 
 ---
 

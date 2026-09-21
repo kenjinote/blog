@@ -96,7 +96,7 @@ For example, actions such as:
 
 * Having regular conversations with people
 * Joining communities where you can share hobbies and interests
-* Having connections offline, not just online
+* Having connections [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/), not just online
 
 can lead to mental stability.
 

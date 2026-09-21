@@ -242,7 +242,7 @@ fn process_event(state: &mut AppState, event: Event) {
 TypeScript का उपयोग करके फ्रंट-एंड विकास (जैसे React) में भी, प्रतिमानों का एकीकरण मानक बन गया है।
 
 - घटकों (components) का UI प्रतिपादन **फंक्शनल** है (शुद्ध कार्य के रूप में UI लौटाता है)।
-- डेटा फ़ेचिंग और कैश प्रबंधन **डेटा-ओरिएंटेड** है ([Redux](https://kenji.blog/hi/p/state-management-history-future/) या Zustand के माध्यम से सामान्यीकृत स्थिति ट्री)।
+- डेटा फ़ेचिंग और कैश प्रबंधन **डेटा-ओरिएंटेड** है ([Redux](https://kenji.blog/hi/p/state-management-history-future/) या [Zustand](https://kenji.blog/hi/p/state-management-history-redux-context-recoil-zustand/) के माध्यम से सामान्यीकृत स्थिति ट्री)।
 - जटिल डोमेन लॉजिक के कुछ हिस्सों में **ऑब्जेक्ट-ओरिएंटेड** दृष्टिकोण (क्लास-आधारित सर्विस लेयर) है।
 
 ---

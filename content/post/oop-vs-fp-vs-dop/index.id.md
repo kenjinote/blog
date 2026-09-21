@@ -242,7 +242,7 @@ Dalam kode ini, meskipun menggunakan tipe varian (sum types) melalui `enum` (fit
 Dalam pengembangan front-end (seperti React) menggunakan TypeScript, fusi paradigma juga menjadi standar.
 
 - Rendering UI dari komponen bersifat **Fungsional** (mengembalikan UI sebagai fungsi murni).
-- Pengambilan data dan manajemen cache bersifat **Berorientasi Data** (pohon status yang dinormalisasi dengan [Redux](https://kenji.blog/id/p/state-management-history-future/) atau Zustand).
+- Pengambilan data dan manajemen cache bersifat **Berorientasi Data** (pohon status yang dinormalisasi dengan [Redux](https://kenji.blog/id/p/state-management-history-future/) atau [Zustand](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/)).
 - Bagian dari logika domain yang kompleks menggunakan **Berorientasi Objek** (lapisan layanan (service layer) berbasis kelas).
 
 ---

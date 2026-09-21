@@ -112,7 +112,7 @@ Through this implementation, Google interprets the page not just as text data, b
 
 ## 2. Funnel Design from Tutorial to Conversion
 
-Readers of a tech blog arrive by searching for specific error messages or technical challenges (e.g., "React Context API performance optimization"). It is important to place a CTA (Call to Action) for your app naturally right after satisfying their "Search Intent."
+Readers of a tech blog arrive by searching for specific error messages or technical challenges (e.g., "React [Context API](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/) performance optimization"). It is important to place a CTA (Call to Action) for your app naturally right after satisfying their "Search Intent."
 
 ### 2.1 Visualization of the User Journey
 

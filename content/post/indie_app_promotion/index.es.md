@@ -112,7 +112,7 @@ Con esta implementación, Google interpreta la página no simplemente como datos
 
 ## 2. Diseño del embudo desde el tutorial hasta la conversión
 
-Los lectores de un blog técnico llegan tras buscar un mensaje de error específico o un problema técnico (ej. "Optimización del rendimiento de React Context API"). Es crucial colocar una llamada a la acción (CTA, Call to Action) hacia tu aplicación de forma natural justo después de satisfacer su "Intención de búsqueda" (Search Intent).
+Los lectores de un blog técnico llegan tras buscar un mensaje de error específico o un problema técnico (ej. "Optimización del rendimiento de React [Context API](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/)"). Es crucial colocar una llamada a la acción (CTA, Call to Action) hacia tu aplicación de forma natural justo después de satisfacer su "Intención de búsqueda" (Search Intent).
 
 ### 2.1 Visualización del viaje del usuario (User Journey)
 

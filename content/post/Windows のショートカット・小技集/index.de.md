@@ -82,7 +82,7 @@ Es ist für Windows 11 gedacht, aber ich denke, viele davon können auch unter W
 - `Win + ↓` : Nach unten verschieben/minimieren
 - `Win + Shift + ← oder →` : Zwischen mehreren Monitoren verschieben
 - `Win + Alt + ← oder → oder ↑ oder ↓` : Fenster ohne Maximieren/Minimieren verschieben
-- Im nicht minimierten Zustand `Alt + Space`, dann `M` und anschließend mit den Pfeiltasten verschieben.  
+- Im nicht minimierten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) `Alt + Space`, dann `M` und anschließend mit den Pfeiltasten verschieben.  
 ※ Da das Fenster dem Mauszeiger folgt, kann es auch gerettet werden, wenn es außerhalb des Bildschirms angezeigt wird.
 
 ## Prozesse im Task-Manager beenden

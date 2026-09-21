@@ -15,7 +15,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 1. **プライバシーとセキュリティの問題**: 機密情報や個人情報を含むデータを外部のサーバーに送信することは、企業コンプライアンスやセキュリティの観点から許容されないケースが多々あります。
 2. **コストの不確実性**: APIの利用料金はトークン数に依存するため、大規模なデータ処理や頻繁なリクエストを行うシステムでは、ランニングコストが青天井になるリスクがあります。
-3. **レイテンシとネットワーク依存**: オフライン環境での利用や、極めて低いレイテンシが求められるエッジデバイスでの実行には、ネットワーク通信がボトルネックとなります。
+3. **レイテンシとネットワーク依存**: [オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)環境での利用や、極めて低いレイテンシが求められるエッジデバイスでの実行には、ネットワーク通信がボトルネックとなります。
 4. **ベンダーロックイン**: 特定のプロバイダのモデルに依存することで、将来的なサービス終了や規約変更、モデルのアップデートによる意図しない挙動の変更に影響を受ける可能性があります。
 
 これらの課題を解決する手段として注目を集めているのが「ローカルLLM」です。自身のハードウェア上でモデルを動かすことで、データを一切外部に送信せず、月額費用も気にすることなく、自由にAIを活用することができます。
@@ -34,7 +34,7 @@ Ollamaは、これらの複雑さを隠蔽し、[Docker](https://kenji.blog/p/do
 
 Ollamaの推論エンジンのバックエンドとして機能しているのは、C/C++で実装された高速なLLM推論ライブラリである「 **llama.cpp** 」です。llama.cppは、Apple Silicon（Metal）やNVIDIA GPU（CUDA）、AMD GPU（ROCm）、さらにはCPUのみの環境であっても、ハードウェアの性能を最大限に引き出してモデルを実行する能力を持っています。
 
-Ollamaはllama.cppを内包しており、Go言語で書かれたサーバープロセスがREST APIを提供し、バックグラウンドでllama.cppの推論エンジンを呼び出すというアーキテクチャを採用しています。
+Ollamaはllama.cppを内包しており、Go言語で書かれたサーバープロセスが[REST API](https://kenji.blog/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)を提供し、バックグラウンドでllama.cppの推論エンジンを呼び出すというアーキテクチャを採用しています。
 
 以下のMermaid図は、Ollamaの全体的なアーキテクチャを示しています。
 
@@ -197,7 +197,7 @@ ollama run kansai-coder
 
 ---
 
-# Ollama REST APIの徹底解説
+# Ollama [REST API](https://kenji.blog/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)の徹底解説
 
 CLIでの対話も便利ですが、実際のアプリケーション開発においてOllamaの真価を発揮するのは、強力なREST APIです。サーバープロセス（デフォルトでは `http://localhost:11434`）に対してHTTPリクエストを送ることで、推論結果を取得できます。
 
@@ -483,7 +483,7 @@ $$
 OllamaをAPIとしてローカルネットワーク内に公開することで、単なるチャットボット以上の様々な応用が可能になります。
 
 ### 1. ローカルRAG（Retrieval-Augmented Generation）の構築
-ChromaDBやQdrantなどのローカルベクトルデータベースと、Ollamaの `/api/embeddings` エンドポイント（`nomic-embed-text` などの埋め込みモデルを利用）を組み合わせることで、社内の機密ドキュメントを読み込ませて質問応答を行うセキュアなRAGシステムを完全にオフラインで構築できます。
+ChromaDBやQdrantなどのローカルベクトルデータベースと、Ollamaの `/api/embeddings` エンドポイント（`nomic-embed-text` などの埋め込みモデルを利用）を組み合わせることで、社内の機密ドキュメントを読み込ませて質問応答を行うセキュアなRAGシステムを完全に[オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)で構築できます。
 
 ### 2. IDEやエディタのAIアシスタント
 VS Codeの拡張機能（Continue.devなど）やNeovimプラグインのバックエンドとしてOllamaを指定することで、GitHub Copilotのようなコード補完やコード解説を、ローカルモデル（例：`codellama` や `deepseek-coder`）を用いて無料で行うことができます。
@@ -493,7 +493,7 @@ PythonやシェルスクリプトにOllamaのAPIリクエストを組み込む�
 
 ## 結論
 
-Ollamaの登場により、ローカルLLMの導入ハードルは劇的に下がりました。[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)を操作するようなシンプルなコマンド体系と、外部アプリケーションから容易に利用できるREST APIの組み合わせは、ローカルAI開発における現在のデファクトスタンダードと言っても過言ではありません。
+Ollamaの登場により、ローカルLLMの導入ハードルは劇的に下がりました。[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)を操作するようなシンプルなコマンド体系と、外部アプリケーションから容易に利用できる[REST API](https://kenji.blog/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)の組み合わせは、ローカルAI開発における現在のデファクトスタンダードと言っても過言ではありません。
 
 クラウドLLMのコストやセキュリティの制約に悩まされている開発者の方は、ぜひ本記事で紹介した手順を参考に、Ollamaを用いたローカルLLM環境を構築し、自身のアプリケーションに統合してみてください。AIの持つ可能性を、より自由に、より身近に感じることができるはずです。
 

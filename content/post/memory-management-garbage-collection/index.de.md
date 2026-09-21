@@ -117,7 +117,7 @@ Lassen Sie uns dies mathematisch modellieren. Angenommen, die gesamte Heap-Zuwei
 
 $ M(t) = \int_0^t (A(\tau) - F(\tau)) d\tau $
 
-Zu dem Zeitpunkt $ T $, an dem das Programm normal endet, ist es ideal, dass logischerweise $ M(T) = 0 $ ist. Wenn jedoch der Zustand $ A(t) > F(t) $ kontinuierlich andauert, wird $ M(t) $ monoton weiter ansteigen und die physische Speichergrenze des Systems $ M_{max} $ überschreiten. Dies ist die mathematische Definition eines **Speicherlecks**.
+Zu dem Zeitpunkt $ T $, an dem das Programm normal endet, ist es ideal, dass logischerweise $ M(T) = 0 $ ist. Wenn jedoch der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $ A(t) > F(t) $ kontinuierlich andauert, wird $ M(t) $ monoton weiter ansteigen und die physische Speichergrenze des Systems $ M_{max} $ überschreiten. Dies ist die mathematische Definition eines **Speicherlecks**.
 
 ---
 

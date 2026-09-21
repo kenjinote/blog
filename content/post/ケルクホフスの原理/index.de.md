@@ -43,7 +43,7 @@ Ganz einfach ausgedrückt ist es die Idee, dass
 
 Genauer gesagt: "Die Sicherheit sollte sich nur auf den 'geheimen Schlüssel' stützen, und die Verschlüsselungsmethode selbst darf öffentlich sein!".
 
-Umgekehrt gilt: "Ein Zustand, in dem der Verschlüsselungsalgorithmus (Mechanismus) geheim gehalten wird, gilt als wenig zuverlässig".
+Umgekehrt gilt: "Ein [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), in dem der Verschlüsselungsalgorithmus (Mechanismus) geheim gehalten wird, gilt als wenig zuverlässig".
 
 ---
 

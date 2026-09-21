@@ -97,7 +97,7 @@ plt.grid(True)
 plt.show()
 ```
 
-Wenn wir diesen Graphen zeichnen, sehen wir, dass die Entropie ihren Maximalwert von $ 1 $ erreicht, wenn $ p = 0.5 $, was anzeigt, dass der Zustand völlig unvorhersehbar ist.
+Wenn wir diesen Graphen zeichnen, sehen wir, dass die Entropie ihren Maximalwert von $ 1 $ erreicht, wenn $ p = 0.5 $, was anzeigt, dass der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) völlig unvorhersehbar ist.
 
 ## 5. Das Quellencodierungstheorem: Die Grenze der Datenkompression
 

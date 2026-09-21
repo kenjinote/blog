@@ -134,7 +134,7 @@ $$ P(\text{Availability} \cup \text{Consistency}) | \text{PartitionTolerance} $$
 
 ### 4.2 Асинхронная коммуникация и итоговая согласованность (Eventual Consistency)
 
-По мере роста масштабов системы взаимодействие между сервисами переходит от синхронной связи через REST API к асинхронной связи с использованием очередей сообщений (Kafka, RabbitMQ и т. д.). Согласованность данных в этом случае смещается от немедленной согласованности к «итоговой согласованности» (Eventual Consistency).
+По мере роста масштабов системы взаимодействие между сервисами переходит от синхронной связи через [REST API](https://kenji.blog/ru/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ru/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) к асинхронной связи с использованием очередей сообщений (Kafka, RabbitMQ и т. д.). Согласованность данных в этом случае смещается от немедленной согласованности к «итоговой согласованности» (Eventual Consistency).
 В какой момент следует внедрять сложные архитектурные шаблоны, такие как Saga или [CQRS](https://kenji.blog/ru/p/event-driven-architecture-async/) (Command Query Responsibility Segregation)? Принятие этих комплексных решений и создание чертежа всей системы — это истинное предназначение Senior-инженера.
 
 ```mermaid

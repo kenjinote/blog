@@ -94,7 +94,7 @@ Mathematisch wird ein DFA als ein 5-Tupel $ M = (Q, \Sigma, \delta, q_0, F) $ de
 
 *   $ Q $ : Endliche Menge von Zuständen
 *   $ \Sigma $ : Alphabet
-*   $ \delta $ : Zustandsübergangsfunktion ( $ \delta: Q \times \Sigma \rightarrow Q $ )
+*   $ \delta $ : [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergangsfunktion ( $ \delta: Q \times \Sigma \rightarrow Q $ )
 *   $ q_0 $ : Startzustand ( $ q_0 \in Q $ )
 *   $ F $ : Menge der akzeptierenden Zustände (Endzustände) ( $ F \subseteq Q $ )
 
@@ -115,7 +115,7 @@ stateDiagram-v2
     q3 --> [*]
 ```
 
-Dieses Zustandsübergangsdiagramm wollen wir als Python-Programm implementieren.
+Dieses [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergangsdiagramm wollen wir als Python-Programm implementieren.
 
 ```python
 class DFA:

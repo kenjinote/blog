@@ -34,7 +34,7 @@ Ollama 隱藏了這些複雜性，讓你能以類似 [Docker](https://kenji.blog
 
 作為 Ollama 推論引擎後端運作的，是以 C/C++ 實作的高速 LLM 推論函式庫「 **llama.cpp** 」。llama.cpp 具備在 Apple Silicon (Metal)、NVIDIA GPU (CUDA)、AMD GPU (ROCm)，甚至是純 CPU 環境中，也能發揮硬體最大效能來執行模型的能力。
 
-Ollama 內含了 llama.cpp，並採用了一種架構：由 Go 語言編寫的伺服器行程提供 REST API，並在背景呼叫 llama.cpp 的推論引擎。
+Ollama 內含了 llama.cpp，並採用了一種架構：由 Go 語言編寫的伺服器行程提供 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)，並在背景呼叫 llama.cpp 的推論引擎。
 
 以下的 Mermaid 圖表展示了 Ollama 的整體架構。
 
@@ -197,7 +197,7 @@ ollama run kansai-coder
 
 ---
 
-# Ollama REST API 徹底解說
+# Ollama [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 徹底解說
 
 雖然使用 CLI 進行互動很方便，但在實際的應用程式開發中，Ollama 真正發揮價值的是其強大的 REST API。只要對伺服器行程（預設為 `http://localhost:11434`）發送 HTTP 請求，就能取得推論結果。
 
@@ -493,7 +493,7 @@ $$
 
 ## 結論
 
-隨著 Ollama 的出現，導入本機 LLM 的門檻大幅降低了。如同操作 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 容器般簡單的指令系統，加上外部應用程式能輕易使用的 REST API 的組合，可以毫不誇張地說是目前本機 AI 開發的業界標準（de facto standard）。
+隨著 Ollama 的出現，導入本機 LLM 的門檻大幅降低了。如同操作 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 容器般簡單的指令系統，加上外部應用程式能輕易使用的 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 的組合，可以毫不誇張地說是目前本機 AI 開發的業界標準（de facto standard）。
 
 如果你正在為了雲端 LLM 的成本或安全性限制而苦惱，請務必參考本文介紹的步驟，使用 Ollama 建置本機 LLM 環境，並將其整合到你自己的應用程式中。你一定能夠更自由、更切身地感受到 AI 所擁有的潛力。
 

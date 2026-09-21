@@ -198,7 +198,7 @@ Hyper-V ist auf "Infrastrukturvirtualisierung und vollständige Isolation" ausge
 *   **Ausführung von Windows VMs**: Zum Ausführen verschiedener Windows-Versionen (z.B. Windows Server oder ein älteres Windows 10) als Testumgebungen.
 *   **Nested Virtualization (verschachtelte Virtualisierung)**: Wenn Sie eine virtuelle Maschine (Hyper-V oder KVM) innerhalb einer anderen virtuellen Maschine ausführen möchten. Unerlässlich für die Testumgebungen von Infrastruktur-Ingenieuren.
 *   **Fortgeschrittene Netzwerkanforderungen**: Wenn Sie die Netzwerkkonfiguration strikt kontrollieren müssen, wie z.B. bei externen Bridged-Verbindungen (Teilnahme am selben LAN), VLAN-Tagging, Zuweisung mehrerer NICs, usw.
-*   **Snapshots (Checkpoints)**: Eine Funktion, mit der Sie den Zustand einer VM zu einem bestimmten Zeitpunkt speichern und jederzeit sofort zurücksetzen können. Äußerst nützlich für destruktive Softwaretests oder Malware-Analysen.
+*   **Snapshots (Checkpoints)**: Eine Funktion, mit der Sie den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) einer VM zu einem bestimmten Zeitpunkt speichern und jederzeit sofort zurücksetzen können. Äußerst nützlich für destruktive Softwaretests oder Malware-Analysen.
 *   **Feste Ressourcenzuweisung**: Wenn Sie die Anzahl der CPU-Kerne und die Speichermenge strikt fixieren möchten, um die Auswirkungen auf das Host OS zu minimieren.
 
 ---

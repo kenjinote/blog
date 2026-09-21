@@ -56,7 +56,7 @@ $$
 $$
 
 Somit ist $1 - S_1 = S_1$, und aufgelöst ergibt sich **$S_1 = \frac{1}{2}$**.
-Da der Zustand zwischen $0$ und $1$ hin und her springt, ist der Durchschnitt $\frac{1}{2}$ auf gewisse Weise intuitiv nachvollziehbar.
+Da der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) zwischen $0$ und $1$ hin und her springt, ist der Durchschnitt $\frac{1}{2}$ auf gewisse Weise intuitiv nachvollziehbar.
 
 ### Eine weitere Reihe: Die alternierende Reihe
 

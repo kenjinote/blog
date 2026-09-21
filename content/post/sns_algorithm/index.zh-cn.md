@@ -165,7 +165,7 @@ SNS 的帖子是针对“夺取读者的注意力”而优化的，但经过同�
 
 技术圈有一句著名的口头禅： **"Choose Boring Technology"（选择无聊的技术）** 。这告诫我们，不要将创新代币（Innovation Tokens，即组织在采用未知的技术上能花费的有限资源）浪费在与业务核心价值不直接相关的基础设施或框架的选择上。
 
-SNS 的算法偏好“新奇”。但是，在构建能经受实际运行考验的稳健系统时，我们需要的正是那些有 10 年以上运行记录、在发生故障时的恢复步骤能在 Google 上搜出数百万条结果的“无聊”技术（如 PostgreSQL、Redis、标准的 REST API 等）。
+SNS 的算法偏好“新奇”。但是，在构建能经受实际运行考验的稳健系统时，我们需要的正是那些有 10 年以上运行记录、在发生故障时的恢复步骤能在 Google 上搜出数百万条结果的“无聊”技术（如 PostgreSQL、Redis、标准的 [REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 等）。
 
 ---
 

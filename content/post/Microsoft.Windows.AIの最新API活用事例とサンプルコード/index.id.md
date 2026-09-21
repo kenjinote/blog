@@ -16,7 +16,7 @@ description: 'Panduan mendetail yang mencakup cara mengimplementasikan fitur AI 
 
 Dalam beberapa tahun terakhir, evolusi teknologi AI sangat luar biasa, dan telah terjadi pergeseran paradigma yang cepat dari pemanfaatan model bahasa besar (LLM) di cloud menuju inferensi AI pada perangkat *edge* (PC lokal). Inti dari hal ini adalah "Windows Copilot Runtime" yang disediakan oleh Microsoft untuk Windows 11, dan API "Microsoft.Windows.AI" untuk mengoperasikannya.
 
-Pengembangan aplikasi menggunakan API cloud (seperti OpenAI atau Azure OpenAI) memang mudah, namun selalu diiringi dengan tantangan terkait latensi, privasi, dan biaya yang berkelanjutan. Di sisi lain, dengan menjalankan model AI secara lokal, Anda dapat mewujudkan aplikasi dengan latensi yang sangat rendah yang berfungsi bahkan saat offline, tanpa perlu mengirimkan data sensitif keluar dari perangkat.
+Pengembangan aplikasi menggunakan API cloud (seperti OpenAI atau Azure OpenAI) memang mudah, namun selalu diiringi dengan tantangan terkait latensi, privasi, dan biaya yang berkelanjutan. Di sisi lain, dengan menjalankan model AI secara lokal, Anda dapat mewujudkan aplikasi dengan latensi yang sangat rendah yang berfungsi bahkan saat [offline](https://kenji.blog/id/p/pwa-progressive-web-apps-service-worker/), tanpa perlu mengirimkan data sensitif keluar dari perangkat.
 
 Artikel ini memberikan panduan yang sangat mendetail mengenai metode implementasi fitur AI lokal, yang akan menjadi keharusan dalam pengembangan aplikasi Windows di masa depan, lengkap dengan contoh kode praktis dalam C# dan C++, mulai dari arsitektur hingga penyesuaian performa. Kami tidak hanya sekadar memanggil API, tetapi juga akan mendalami detail teknis tingkat lanjut seperti pemanfaatan perangkat keras di baliknya (NPU dan GPU), serta integrasinya dengan DirectML.
 
@@ -91,7 +91,7 @@ Untuk menggunakan API Windows AI terbaru, Anda perlu menyiapkan lingkungan dan r
 
 ## 5. [Deep Dive 1] Memanfaatkan Model Bahasa Lokal (Phi-Silica) Menggunakan C#
 
-Windows Copilot Runtime mencakup "Phi-Silica", sebuah model bahasa skala kecil dengan efisiensi tinggi yang dikembangkan oleh Microsoft, sebagai komponen standar OS. Hal ini memungkinkan pemrosesan bahasa alami tingkat lanjut (peringkasan teks, pembuatan kode, chatbot) dalam lingkungan offline tanpa harus mengunduh model berukuran gigabyte dari jaringan.
+Windows Copilot Runtime mencakup "Phi-Silica", sebuah model bahasa skala kecil dengan efisiensi tinggi yang dikembangkan oleh Microsoft, sebagai komponen standar OS. Hal ini memungkinkan pemrosesan bahasa alami tingkat lanjut (peringkasan teks, pembuatan kode, chatbot) dalam lingkungan [offline](https://kenji.blog/id/p/pwa-progressive-web-apps-service-worker/) tanpa harus mengunduh model berukuran gigabyte dari jaringan.
 
 Berikut ini adalah contoh kode tingkat lanjut untuk membangun AI obrolan menggunakan C# dengan memanfaatkan *namespace* `Microsoft.Windows.AI.Generative`. Kode ini mendukung respons *streaming* dan menghasilkan teks secara *real-time* tanpa memblokir utas (*thread*) UI.
 
@@ -350,7 +350,7 @@ API `Microsoft.Windows.AI` dan Copilot Runtime terus berkembang pesat secara pro
 
 ## 9. Kesimpulan: Masa Depan Aplikasi yang Diubah oleh AI Lokal
 
-Copilot Runtime Windows 11 dan API `Microsoft.Windows.AI` telah membawa senjata "AI Lokal" yang sangat tangguh bagi semua pengembang Windows. Anda tidak lagi harus bergantung sepenuhnya pada API cloud. Sangat mungkin untuk menawarkan kepada pengguna sebuah pengalaman AI generasi mendatang yang menghilangkan latensi dan sangat melindungi privasi, sekaligus mampu beroperasi penuh bahkan tanpa koneksi internet (offline).
+Copilot Runtime Windows 11 dan API `Microsoft.Windows.AI` telah membawa senjata "AI Lokal" yang sangat tangguh bagi semua pengembang Windows. Anda tidak lagi harus bergantung sepenuhnya pada API cloud. Sangat mungkin untuk menawarkan kepada pengguna sebuah pengalaman AI generasi mendatang yang menghilangkan latensi dan sangat melindungi privasi, sekaligus mampu beroperasi penuh bahkan tanpa koneksi internet ([offline](https://kenji.blog/id/p/pwa-progressive-web-apps-service-worker/)).
 
 Dengan menerapkan pengintegrasian model bahasa standar sistem menggunakan C#, evaluasi performa matematis, serta pengetahuan tentang pengoptimalan perangkat keras ekstrem menggunakan C++ dan DirectML yang dijelaskan dalam artikel ini, Anda dapat menciptakan aplikasi Windows "Asli AI" (AI-native) generasi berikutnya dengan tangan Anda sendiri. Potensi tak terbatas yang ditawarkan oleh AI menanti tepat di balik kode yang Anda tulis.
 

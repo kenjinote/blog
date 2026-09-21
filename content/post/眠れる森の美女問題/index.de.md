@@ -49,7 +49,7 @@ Nun wachen Sie am Montag (oder Dienstag) auf.
 In dem Raum gibt es weder eine Uhr noch einen Kalender, und Sie wissen nicht, welcher Wochentag heute ist.
 
 Dann kommt der Versuchsleiter zu Ihnen und stellt Ihnen folgende Frage:
-**"Was glauben Sie, wie hoch ist die Wahrscheinlichkeit, dass die geworfene Münze 'Kopf' zeigte, in dem Zustand, in dem Sie jetzt wach sind?"**
+**"Was glauben Sie, wie hoch ist die Wahrscheinlichkeit, dass die geworfene Münze 'Kopf' zeigte, in dem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), in dem Sie jetzt wach sind?"**
 
 Sie sind ein Dornröschen, das sich gut mit Mathematik auskennt. Nun, was antworten Sie?
 
@@ -89,7 +89,7 @@ Dies ist eine starke Meinung, die auf dem "Frequentismus" oder dem "Anthropische
 Es gibt auch Versuche, dieses Problem mit dem "[Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/)", einem mathematischen Werkzeug zur Aktualisierung von Wahrscheinlichkeiten, zu lösen.
 Lassen Sie uns die Logik der "1/3-Fraktion" unter dem Gesichtspunkt der bedingten Wahrscheinlichkeit ordnen.
 
-Der Zustand beim Aufwachen ist einer der folgenden drei:
+Der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) beim Aufwachen ist einer der folgenden drei:
 1. $E_1$: Die Münze ist "Kopf" und es ist "Montag"
 2. $E_2$: Die Münze ist "Zahl" und es ist "Montag"
 3. $E_3$: Die Münze ist "Zahl" und es ist "Dienstag"

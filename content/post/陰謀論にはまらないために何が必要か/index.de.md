@@ -100,7 +100,7 @@ Zum Beispiel Handlungen wie:
 
 * Regelmäßig mit Menschen ins Gespräch kommen
 * An Gemeinschaften teilnehmen, die Hobbys oder Interessen teilen
-* Nicht nur online, sondern auch offline Verbindungen pflegen
+* Nicht nur online, sondern auch [offline](https://kenji.blog/de/p/pwa-progressive-web-apps-service-worker/) Verbindungen pflegen
 
 Dies führt zu geistiger Stabilität.
 
@@ -132,6 +132,6 @@ Durch diesen **dialogorientierten Ansatz** entsteht die Möglichkeit, dass sich 
 
 ---
 
-Es wird gesagt, dass die Anfälligkeit für Verschwörungstheorien mehr vom psychologischen Zustand und der Umgebung beeinflusst wird als von der Menge an Wissen.
+Es wird gesagt, dass die Anfälligkeit für Verschwörungstheorien mehr vom psychologischen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) und der Umgebung beeinflusst wird als von der Menge an Wissen.
 
 Deshalb sollten Sie nicht einfach davon ausgehen, dass „alles in Ordnung“ ist. Die Bemühung, **die mentale Sicherheit im Alltag schrittweise zu erhöhen** , wird eine große Stütze sein, um in der Informationsgesellschaft der Zukunft flexibel zu leben.

@@ -115,7 +115,7 @@ graph TD
     F --> A
 ```
 
-Das Erschreckende an dieser Schleife ist, dass die **"Frequenzillusion (Baader-Meinhof-Phänomen)"** von Algorithmen absichtlich hervorgerufen wird. Wenn Sie den Namen einer neuen Zustandsverwaltungs-Bibliothek einmal sehen, wertet der Algorithmus dies als Signal und füllt Ihren Feed am nächsten Tag mit Themen zu dieser Bibliothek. Das menschliche Gehirn interpretiert dies fälschlicherweise als "weltweite Epidemie".
+Das Erschreckende an dieser Schleife ist, dass die **"Frequenzillusion (Baader-Meinhof-Phänomen)"** von Algorithmen absichtlich hervorgerufen wird. Wenn Sie den Namen einer neuen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sverwaltungs-Bibliothek einmal sehen, wertet der Algorithmus dies als Signal und füllt Ihren Feed am nächsten Tag mit Themen zu dieser Bibliothek. Das menschliche Gehirn interpretiert dies fälschlicherweise als "weltweite Epidemie".
 
 Das folgende Diagramm zeigt den Unterschied im Lebenszyklus zwischen stark gehypten Technologien in den sozialen Medien und unscheinbaren, langweiligen, aber robusten Technologien (Boring Technology).
 

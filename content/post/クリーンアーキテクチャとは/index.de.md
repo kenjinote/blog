@@ -28,7 +28,7 @@ Als Lösung dafür wurden Architekturen wie die folgenden konzipiert:
 *   **DCI (Data, Context and Interaction)** - James Coplien, Trygve Reenskaug
 *   **BCE (Boundary-Control-Entity)** - Ivar Jacobson
 
-Alle diese Architekturen haben dasselbe Ziel: die "**Trennung von Anliegen (Separation of Concerns)**". Es geht darum, die Software in Schichten zu unterteilen, eine Umgebung zu schaffen, in der jede unabhängig testbar ist, und einen Zustand zu erreichen, in dem sie unabhängig von externen Agenten (UI, DB, Frameworks) ist.
+Alle diese Architekturen haben dasselbe Ziel: die "**Trennung von Anliegen (Separation of Concerns)**". Es geht darum, die Software in Schichten zu unterteilen, eine Umgebung zu schaffen, in der jede unabhängig testbar ist, und einen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) zu erreichen, in dem sie unabhängig von externen Agenten (UI, DB, Frameworks) ist.
 
 Robert C. Martin integrierte diese hervorragenden architektonischen Konzepte, fasste sie zu einer einzigen praktischen Regel zusammen und nannte sie "**Clean Architecture**".
 

@@ -239,7 +239,7 @@ Implementation in Hugo is also very simple. Just add the provided snippet to `la
 {{ end }}
 ```
 
-Adding the `defer` attribute allows the script to load asynchronously without blocking HTML parsing, letting it run after the DOM is built. This minimizes its impact on initial display speed (LCP: Largest Contentful [Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/) and FCP: First Contentful Paint).
+Adding the `defer` attribute allows the script to load asynchronously without blocking HTML parsing, letting it run after the DOM is built. This minimizes its impact on initial display speed ([LCP](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/): Largest Contentful [Paint](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/) and FCP: First Contentful Paint).
 
 ---
 

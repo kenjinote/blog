@@ -185,7 +185,7 @@ Durch diese kettenartige Struktur kann aus einer Nachricht beliebiger Länge ein
 
 Als Alternative und Standard der nächsten Generation zu SHA-2 wurde vom NIST **SHA-3** (Keccak-Algorithmus) ausgewählt. SHA-3 verwendet keine Merkle-Damgård-Konstruktion, sondern die völlig andere **Sponge-Konstruktion** (Schwammkonstruktion).
 
-Die Sponge-Konstruktion behält einen internen Zustand bei und arbeitet in den folgenden zwei Phasen:
+Die Sponge-Konstruktion behält einen internen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) bei und arbeitet in den folgenden zwei Phasen:
 
 - **Absorb-Phase (Absorbieren)**: Nachrichtenblöcke werden für jede feste Rate mit der Bitfolge des internen Zustands durch XOR (exklusives ODER) verknüpft, und eine interne Permutationsfunktion $f$ wird angewendet, um die Daten zu absorbieren.
 - **Squeeze-Phase (Auspressen)**: Nachdem die Datenabsorption abgeschlossen ist, werden Daten kontinuierlich aus dem internen Zustand entnommen (herausgepresst), und die Anwendung der Permutationsfunktion $f$ sowie die Extraktion werden wiederholt, bis die erforderliche Ausgabelänge erreicht ist.

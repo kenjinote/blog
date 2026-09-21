@@ -402,7 +402,7 @@ A recursive descent parser provides intuitive and readable code because its stru
 
 ---
 
-## 6. Performance Optimization Techniques
+## 6. [Performance Optimization](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) Techniques
 
 Just implementing a simple parser isn't enough to beat practical libraries. We introduce a few optimization techniques unique to C++.
 

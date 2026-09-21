@@ -264,7 +264,7 @@ Errores frecuentes y sus soluciones en la construcción y operación de entornos
 
 ## 10. Conclusión: El futuro de la generación de imágenes por IA y la superioridad del entorno local
 
-El movimiento de generación de imágenes por IA de código abierto, que comenzó con Stable Diffusion, continúa evolucionando hacia arquitecturas de próxima generación como SDXL, Stable Diffusion 3 y Flux.1. La cantidad de parámetros de los modelos se está volviendo enorme, pasando de miles de millones a decenas de miles de millones, por lo que en el futuro los entornos de GPU con más de 24 GB de VRAM serán aún más solicitados.
+El movimiento de generación de imágenes por IA de código abierto, que comenzó con Stable Diffusion, continúa evolucionando hacia arquitecturas de próxima generación como SDXL, Stable Diffusion 3 y [Flux](https://kenji.blog/es/p/state-management-history-redux-context-recoil-zustand/).1. La cantidad de parámetros de los modelos se está volviendo enorme, pasando de miles de millones a decenas de miles de millones, por lo que en el futuro los entornos de GPU con más de 24 GB de VRAM serán aún más solicitados.
 
 Sin embargo, tecnologías de optimización local como TensorRT, cuantización (Quantization) y GGUF también están acelerando su evolución a la misma velocidad, y se está formando un ecosistema donde la inferencia suficiente es posible incluso con hardware para consumidores en general.
 

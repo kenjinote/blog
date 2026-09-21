@@ -63,7 +63,7 @@ Isso desencadeou uma das disputas de prioridade mais intensas da história da ci
 
 A partir daqui, explicaremos em detalhes as realizações específicas que Newton fez no campo da matemática, acompanhadas de fórmulas.
 
-### 1. A Fundação do Cálculo (Método das Fluxões)
+### 1. A Fundação do Cálculo (Método das [Flux](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/)ões)
 
 Newton chamou seu método de cálculo de **Método das Fluxões** . Para capturar mudanças contínuas físicas, ele chamou quantidades que mudam continuamente ao longo do tempo de "Fluentes", denotando-as com $x, y$, etc., e chamou a taxa de sua mudança de "Fluxões", usando símbolos como $\dot{x}, \dot{y}$.
 

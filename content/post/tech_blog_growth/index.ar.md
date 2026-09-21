@@ -22,14 +22,14 @@ description: 'استراتيجية لزيادة زيارات المدونة ال
 
 يعد النظام الأساسي للمدونة (مثل مولدات المواقع الثابتة) وهيكل HTML من أهم العوامل لمحركات البحث لتفسير المحتوى بشكل صحيح.
 
-### 1.1 تحسين Core Web Vitals
+### 1.1 تحسين Core [Web Vitals](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-تستخدم Google تجربة الصفحة كعامل ترتيب، ولا يمكن تجاهل **Core Web Vitals (LCP, FID/INP, CLS)** في المدونات التقنية بشكل خاص.
+تستخدم Google تجربة الصفحة كعامل ترتيب، ولا يمكن تجاهل **[Core Web Vitals](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** في المدونات التقنية بشكل خاص.
 في المدونات التقنية، يتم استخدام الكثير من كتل التعليمات البرمجية المصدرية والمعادلات الرياضية (MathJax / KaTeX) والرسوم التوضيحية. هذه العوامل تؤخر عرض الصفحة.
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/ar/p/browser-rendering-mechanism-dom-paint/))**: سرعة تحميل المحتوى الرئيسي في شاشة العرض الأولى. استخدم WebP أو AVIF للصورة البارزة (eyecatch)، وقم بالتحميل المسبق لها عن طريق إضافة خاصية `fetchpriority="high"`. بالإضافة إلى ذلك، اجعل ملفات CSS أو JS الضخمة المستخدمة في تمييز بناء الجملة (syntax highlighting) تُحمل بشكل غير متزامن، أو صممها بحيث تُحمل فقط في الصفحات التي تحتاج إليها.
-- **CLS (Cumulative [Layout](https://kenji.blog/ar/p/browser-rendering-mechanism-dom-paint/) Shift)**: انزياح التخطيط أثناء تحميل المقال. من خلال تخصيص مساحة عرض المعادلات والصور مسبقاً باستخدام `aspect-ratio` في CSS وما إلى ذلك، يمكنك منع الاهتزاز الذي يحدث عند إدراج DOM لاحقاً.
-- **INP (Interaction to Next [Paint](https://kenji.blog/ar/p/browser-rendering-mechanism-dom-paint/))**: الاستجابة لتفاعلات المستخدم. من الضروري عدم تشغيل JavaScript الثقيلة (على سبيل المثال، البحث الديناميكي عن النص الكامل من جانب العميل، أو تنفيذ محلل Markdown ضخم) في السلسلة (thread) الرئيسية، بل نقلها إلى Web Worker أو إنشائها كـ HTML ثابت (SSG) أثناء عملية البناء.
+- **[CLS](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Cumulative [Layout](https://kenji.blog/ar/p/browser-rendering-mechanism-dom-paint/) Shift)**: انزياح التخطيط أثناء تحميل المقال. من خلال تخصيص مساحة عرض المعادلات والصور مسبقاً باستخدام `aspect-ratio` في CSS وما إلى ذلك، يمكنك منع الاهتزاز الذي يحدث عند إدراج DOM لاحقاً.
+- **[INP](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Interaction to Next [Paint](https://kenji.blog/ar/p/browser-rendering-mechanism-dom-paint/))**: الاستجابة لتفاعلات المستخدم. من الضروري عدم تشغيل JavaScript الثقيلة (على سبيل المثال، البحث الديناميكي عن النص الكامل من جانب العميل، أو تنفيذ محلل Markdown ضخم) في السلسلة (thread) الرئيسية، بل نقلها إلى Web Worker أو إنشائها كـ HTML ثابت (SSG) أثناء عملية البناء.
 
 ### 1.2 تنفيذ البيانات المنظمة (JSON-LD)
 
@@ -256,7 +256,7 @@ flowchart TD
 ### 5.2 النقاط الأساسية في بناء مسار الأتمتة
 
 1. **البناء والنشر باستخدام [GitHub Actions](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)**
-   إذا كنت تستخدم مولد مواقع ثابتة، فاستخدم GitHub Actions لأتمتة إنشاء HTML ونشره على وجهة الاستضافة (Vercel، Netlify، Cloudflare Pages، وما إلى ذلك). في هذه الحالة، كتدبير لـ Core Web Vitals المذكور سابقاً، من الفعال أيضاً دمج عملية تحسين الصور (مثل التحويل التلقائي إلى WebP) في مسار البناء.
+   إذا كنت تستخدم مولد مواقع ثابتة، فاستخدم GitHub Actions لأتمتة إنشاء HTML ونشره على وجهة الاستضافة (Vercel، Netlify، Cloudflare Pages، وما إلى ذلك). في هذه الحالة، كتدبير لـ Core [Web Vitals](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) المذكور سابقاً، من الفعال أيضاً دمج عملية تحسين الصور (مثل التحويل التلقائي إلى WebP) في مسار البناء.
 
 2. **ربط وسائل التواصل الاجتماعي عبر مشغلات RSS باستخدام Zapier/IFTTT**
    يقوم مولد الموقع بإنشاء أحدث موجز RSS (XML) أثناء البناء. يمكنك إدخال هذا في منصات iPaaS مثل Zapier أو Make (المعروفة سابقاً باسم Integromat) وإنشاء سير عمل يقول "عند إضافة عنصر جديد إلى RSS، قم بنشر العنوان والرابط على X (Twitter) و LinkedIn". بهذه الطريقة، يتم إشعار المتابعين تلقائياً في نفس اللحظة التي يتم فيها نشر المقال.

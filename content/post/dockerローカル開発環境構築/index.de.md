@@ -11,11 +11,11 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 ## 1. Einführung: Weg von "Auf meiner Maschine funktioniert es"
 
-In der Softwareentwicklung ist das Problem "Auf meiner Maschine funktioniert es" (It works on my machine), das auf unterschiedliche Umgebungen zwischen Entwicklern zurückzuführen ist, seit langem ein Faktor, der in vielen Projekten Zeit verschwendet. Aufgrund von Unterschieden im Betriebssystem, Versionen installierter Sprachen, Bibliotheksabhängigkeiten und Konflikten zwischen global installierten Tools ist die lokale Umgebung ständig einer "Zustandsunsicherheit" ausgesetzt.
+In der Softwareentwicklung ist das Problem "Auf meiner Maschine funktioniert es" (It works on my machine), das auf unterschiedliche Umgebungen zwischen Entwicklern zurückzuführen ist, seit langem ein Faktor, der in vielen Projekten Zeit verschwendet. Aufgrund von Unterschieden im Betriebssystem, Versionen installierter Sprachen, Bibliotheksabhängigkeiten und Konflikten zwischen global installierten Tools ist die lokale Umgebung ständig einer "[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sunsicherheit" ausgesetzt.
 
 Was diese Probleme von Grund auf löst, sind [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-Technologien wie **[Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)** und das Paradigma von **[Infrastructure as Code](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/))**. Durch die Containerisierung der lokalen Entwicklungsumgebung wird eine Isolierung auf Betriebssystemebene erreicht, was es ermöglicht, die Umgebung selbst zusammen mit der Codebasis zu versionieren.
 
-In diesem Artikel erklären wir ausführlich die Schritte zum Aufbau einer **"reproduzierbaren lokalen Entwicklungsumgebung, die immer in exakt demselben Zustand startet, unabhängig davon, wer sie wann und auf welcher Maschine startet"**, unter Verwendung von Docker, Docker Compose und VSCode DevContainers. Wir beleuchten auch die tiefgreifenden technischen Mechanismen dahinter, einschließlich einer mathematischen Perspektive.
+In diesem Artikel erklären wir ausführlich die Schritte zum Aufbau einer **"reproduzierbaren lokalen Entwicklungsumgebung, die immer in exakt demselben [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) startet, unabhängig davon, wer sie wann und auf welcher Maschine startet"**, unter Verwendung von Docker, Docker Compose und VSCode DevContainers. Wir beleuchten auch die tiefgreifenden technischen Mechanismen dahinter, einschließlich einer mathematischen Perspektive.
 
 ---
 
@@ -413,7 +413,7 @@ Hier sind einige häufige Probleme und Lösungen beim Betrieb einer lokalen Umge
 
 ## 10. Fazit: Steigerung der Entwicklungsgeschwindigkeit durch Reproduzierbarkeit
 
-Durch die Kombination von Docker, Docker Compose und VSCode Dev[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)s wird eine robuste lokale Entwicklungsumgebung realisiert, bei der "unabhängig davon, wer die Umgebung startet, immer exakt derselbe Zustand erreicht wird".
+Durch die Kombination von Docker, Docker Compose und VSCode Dev[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)s wird eine robuste lokale Entwicklungsumgebung realisiert, bei der "unabhängig davon, wer die Umgebung startet, immer exakt derselbe [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) erreicht wird".
 
 Das Einbringen des [IaC](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)-Paradigmas in die lokale Umgebung verkürzt nicht nur die anfängliche Einrichtungszeit. Es steigert die Geschwindigkeit und Qualität des gesamten Entwicklungszyklus dramatisch, indem es die Angst vor Änderungen an der Infrastrukturkonfiguration nimmt, das Experimentieren mit neuen Technologie-Stacks erleichtert und einen reibungslosen Übergang zu [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s ermöglicht.
 

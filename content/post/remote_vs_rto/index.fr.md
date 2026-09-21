@@ -133,7 +133,7 @@ mindmap
       E2["Élimination des interruptions (Avantage du télétravail)"]
 ```
 
-L'utilisation du framework SPACE met en évidence les forces et les faiblesses du télétravail. L'environnement distant pousse l'"Efficacité et Flux" des ingénieurs à l'extrême, tout en comportant le risque d'entraver la "Communication et Collaboration". En ce qui concerne la "Satisfaction", il y a l'aspect positif de l'élimination des trajets, mais aussi l'aspect négatif de la détérioration de la santé mentale due à l'isolement social.
+L'utilisation du framework SPACE met en évidence les forces et les faiblesses du télétravail. L'environnement distant pousse l'"Efficacité et [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/)" des ingénieurs à l'extrême, tout en comportant le risque d'entraver la "Communication et Collaboration". En ce qui concerne la "Satisfaction", il y a l'aspect positif de l'élimination des trajets, mais aussi l'aspect négatif de la détérioration de la santé mentale due à l'isolement social.
 
 ---
 

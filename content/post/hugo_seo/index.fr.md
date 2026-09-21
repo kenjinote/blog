@@ -311,9 +311,9 @@ expiryDate: "2026-12-31T23:59:59Z"
 
 ---
 
-## 7. Performances du site et Core Web Vitals
+## 7. Performances du site et Core [Web Vitals](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-En SEO, la **vitesse de chargement de la page** est tout aussi importante que l'optimisation des balises. Google a intégré les Core Web Vitals (LCP, FID/INP, CLS) en tant que facteurs de classement.
+En SEO, la **vitesse de chargement de la page** est tout aussi importante que l'optimisation des balises. Google a intégré les [Core Web Vitals](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) en tant que facteurs de classement.
 
 Hugo, en tant que site statique, a naturellement un excellent TTFB (Time to First Byte), mais pour les blogs utilisant beaucoup d'images, l'optimisation de ces dernières est indispensable. En combinant les puissantes fonctionnalités de traitement d'images de Hugo (Image Processing) avec le frontmatter, vous pouvez automatiser la conversion vers des formats de nouvelle génération (comme WebP) et le redimensionnement lors de la compilation.
 

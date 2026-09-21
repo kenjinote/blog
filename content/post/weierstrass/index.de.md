@@ -69,7 +69,7 @@ $$
 \forall \epsilon > 0, \exists \delta > 0 \text{ s.t. } \forall x, |x - a| < \delta \implies |f(x) - f(a)| < \epsilon
 $$
 
-Der revolutionäre Aspekt dieser Definition ist, dass sie das Konzept der Zeit, die "dynamische Veränderung", in einen "statischen logischen Zustand" verwandelte. Dies machte es möglich, die Analysis mit rein arithmetischen Methoden aufzubauen, ohne sich auf die geometrische Intuition zu verlassen. Er gab auch eine strenge Definition bezüglich der Kontinuität der reellen Zahlen und stellte die Analysis erfolgreich auf ein solides logisches Fundament (dies wird als Arithmetisierung der Analysis bezeichnet).
+Der revolutionäre Aspekt dieser Definition ist, dass sie das Konzept der Zeit, die "dynamische Veränderung", in einen "statischen logischen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)" verwandelte. Dies machte es möglich, die Analysis mit rein arithmetischen Methoden aufzubauen, ohne sich auf die geometrische Intuition zu verlassen. Er gab auch eine strenge Definition bezüglich der Kontinuität der reellen Zahlen und stellte die Analysis erfolgreich auf ein solides logisches Fundament (dies wird als Arithmetisierung der Analysis bezeichnet).
 
 ### 2. Ein die Intuition herausforderndes Gegenbeispiel: Der Schock der Weierstraß-Funktion
 

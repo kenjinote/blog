@@ -67,7 +67,7 @@ $$
 
 Die weltweit berühmteste Errungenschaft von [Takakazu Seki](https://kenji.blog/de/p/seki-takakazu/) ist die Entdeckung des Konzepts der **Determinante**. In seinem 1683 erschienenen Buch „Kai Fukudai no Ho“ (Methode zur Lösung verborgener Probleme) beschrieb er die Entwicklungsmethode von Determinanten als eine allgemeine Formel zur Eliminierung von Unbekannten aus linearen Gleichungssystemen.
 
-Erstaunlicherweise geschah dies etwa zur gleichen Zeit (um 1683) oder sogar etwas früher, als [Gottfried Leibniz](https://kenji.blog/de/p/leibniz/) in Europa zum Konzept der Determinanten gelangte. Japan befand sich zu jener Zeit in einem Zustand der nationalen Isolation (Sakoku), was so gut wie keinen Spielraum für das Eindringen westlicher mathematischer Informationen ließ. Daher kam Seki völlig unabhängig zu dieser großartigen Entdeckung.
+Erstaunlicherweise geschah dies etwa zur gleichen Zeit (um 1683) oder sogar etwas früher, als [Gottfried Leibniz](https://kenji.blog/de/p/leibniz/) in Europa zum Konzept der Determinanten gelangte. Japan befand sich zu jener Zeit in einem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) der nationalen Isolation (Sakoku), was so gut wie keinen Spielraum für das Eindringen westlicher mathematischer Informationen ließ. Daher kam Seki völlig unabhängig zu dieser großartigen Entdeckung.
 
 Seki zeigte die Entwicklung von Determinanten für die Fälle $n=2, 3, 4, 5$ korrekt auf (obwohl es im Fall von $n=5$ einige Vorzeichenfehler gab, wurde das grundlegende Konzept etabliert). Er hatte der restlichen Welt voraus eine Berechnungsmethode abgeleitet, die der Regel von Sarrus entspricht.
 
@@ -141,7 +141,7 @@ Der Astronom Harumi Shibukawa bemerkte dies. Shibukawa erstellte einen neuen Kal
 
 # 10. Fazit: [Takakazu Seki](https://kenji.blog/de/p/seki-takakazu/)s Platz in der globalen Geschichte der Mathematik
 
-In Japan, das sich in einem Zustand nationaler Isolation mit extrem begrenzten Informationen aus der Außenwelt befand, baute [Takakazu Seki](https://kenji.blog/de/p/seki-takakazu/) unter Verwendung seiner eigenen Sprache und Notation die weltweit fortschrittlichste Mathematik auf. Seine Existenz zeigt auf, wie enorm das Potenzial des menschlichen Intellekts ist.
+In Japan, das sich in einem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) nationaler Isolation mit extrem begrenzten Informationen aus der Außenwelt befand, baute [Takakazu Seki](https://kenji.blog/de/p/seki-takakazu/) unter Verwendung seiner eigenen Sprache und Notation die weltweit fortschrittlichste Mathematik auf. Seine Existenz zeigt auf, wie enorm das Potenzial des menschlichen Intellekts ist.
 
 Die Tatsache, dass er mathematische Werkzeuge, die für die moderne Wissenschaft und Technik unverzichtbar sind, wie Determinanten, Bernoulli-Zahlen, Aitken-Extrapolation und Enri (die Grundlage der Infinitesimalrechnung), unabhängig entdeckte, erfüllt uns heute mit großem Erstaunen und Stolz.
 

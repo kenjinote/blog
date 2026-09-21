@@ -65,7 +65,7 @@ Lassen Sie uns die genauen Definitionen für jede von ihnen betrachten.
 
 Konsistenz bezieht sich hier auf **Linearkonsistenz** (Linearizability) oder **starke Konsistenz** (Strong Consistency).
 
-Die Definition lautet: "Ein Zustand, in dem alle Clients immer die neuesten geschriebenen Daten lesen können oder das Lesen fehlschlägt." Unabhängig davon, auf welchen Knoten im verteilten System zugegriffen wird, müssen stets die neuesten Daten sichtbar sein, so als würde auf einen einzelnen Knoten zugegriffen.
+Die Definition lautet: "Ein [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), in dem alle Clients immer die neuesten geschriebenen Daten lesen können oder das Lesen fehlschlägt." Unabhängig davon, auf welchen Knoten im verteilten System zugegriffen wird, müssen stets die neuesten Daten sichtbar sein, so als würde auf einen einzelnen Knoten zugegriffen.
 
 Mathematisch ausgedrückt: Wenn eine Schreiboperation $ W(x=v) $ zum Zeitpunkt $ t_1 $ abgeschlossen wird, muss jede Leseoperation $ R(x) $, die zum Zeitpunkt $ t_2 $ ($ t_2 > t_1 $) durchgeführt wird, immer den Wert $ v $ oder einen neueren Wert, der danach geschrieben wurde, zurückgeben.
 
@@ -184,7 +184,7 @@ Wenn in einem AP-System Daten auf mehreren Knoten während einer Netzwerkpartiti
 
 Eine Vektoruhr ist ein Array logischer Uhren, bei dem jeder Knoten seine eigene Anzahl von Aktualisierungen hält.
 
-Der Zustand wird wie folgt ausgedrückt:
+Der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) wird wie folgt ausgedrückt:
 $ V = [c_1, c_2, \dots, c_n] $
 Wobei $ c_i $ der Aktualisierungszähler beim Knoten $ i $ ist.
 
@@ -269,7 +269,7 @@ Die Sicherheit von [Raft](https://kenji.blog/de/p/byzantine-generals-problem-con
 2.  **Leader Append-Only**: Der Leader überschreibt oder löscht die Einträge in seinem eigenen Protokoll nicht, sondern fügt nur neue hinzu.
 3.  **Log Matching**: Wenn zwei Protokolle Einträge mit demselben Index und demselben Term enthalten, sind alle vorherigen Einträge identisch.
 
-Dies eliminiert mathematisch und algorithmisch Dateninkonsistenzen in einer verteilten Umgebung vollständig. Der Backend-Datenspeicher von [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/), `etcd`, verwendet ebenfalls [Raft](https://kenji.blog/de/p/byzantine-generals-problem-consensus/), um eine strikte Zustandsverwaltung des Clusters zu realisieren.
+Dies eliminiert mathematisch und algorithmisch Dateninkonsistenzen in einer verteilten Umgebung vollständig. Der Backend-Datenspeicher von [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/), `etcd`, verwendet ebenfalls [Raft](https://kenji.blog/de/p/byzantine-generals-problem-consensus/), um eine strikte [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sverwaltung des Clusters zu realisieren.
 
 ## 8. Microservices und Transaktionen
 
@@ -295,7 +295,7 @@ flowchart TD
     MessageBroker -->|"Stornieren"| Order
 ```
 
-Beim Saga-Muster wird die starke Konsistenz aufgegeben und die **Eventual Consistency** akzeptiert (AP-Ansatz). Wenn die Verarbeitung mittendrin fehlschlägt, wird anstelle eines Rollbacks eine **Kompensationstransaktion (Compensating Transaction)** ausgegeben, um eine Logik zur logischen Wiederherstellung des vorherigen Zustands zu implementieren. Dadurch wird eine geschäftlich akzeptable Konsistenz erreicht, während eine hohe Skalierbarkeit und Verfügbarkeit beibehalten werden.
+Beim Saga-Muster wird die starke Konsistenz aufgegeben und die **Eventual Consistency** akzeptiert (AP-Ansatz). Wenn die Verarbeitung mittendrin fehlschlägt, wird anstelle eines Rollbacks eine **Kompensationstransaktion (Compensating Transaction)** ausgegeben, um eine Logik zur logischen Wiederherstellung des vorherigen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s zu implementieren. Dadurch wird eine geschäftlich akzeptable Konsistenz erreicht, während eine hohe Skalierbarkeit und Verfügbarkeit beibehalten werden.
 
 ## Zusammenfassung
 

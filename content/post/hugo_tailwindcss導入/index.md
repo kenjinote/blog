@@ -15,7 +15,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 HugoはGo言語で記述されており、数千ページのサイトであってもわずか数秒、あるいはミリ秒単位でビルドを完了させる驚異的なパフォーマンスを持っています。一方、Tailwind CSSは事前に定義された無数のユーティリティクラス（`flex`, `text-center`, `mt-4`など）をHTMLに直接記述していくことで、CSSファイルとHTMLファイルの間を往復するコンテキストスイッチを無くし、デザインのイテレーションを高速化します。
 
-本記事では、HugoのテーマにTailwind CSSを導入し、さらにPostCSSを用いた高度なアセット[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)（Hugo Pipes）を構築する手順を、アーキテクチャの根幹から数学的なパフォーマンス最適化の観点に至るまで、徹底的にかつ詳細に解説します。
+本記事では、HugoのテーマにTailwind CSSを導入し、さらにPostCSSを用いた高度なアセット[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)（Hugo Pipes）を構築する手順を、アーキテクチャの根幹から数学的な[パフォーマンス最適化](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)の観点に至るまで、徹底的にかつ詳細に解説します。
 
 ---
 
@@ -409,7 +409,7 @@ Hugoのようなブログやドキュメントサイトでは、Markdownから�
 
 このアーキテクチャの優れた点は、 **「設定は最初の一回だけで済む」** ということです。一度パイプラインを構築してしまえば、開発者はCSSファイルを開くことなく、直感的なユーティリティクラスをHTMLやMarkdownテンプレートに記述するだけで、複雑なUIを驚異的なスピードで組み上げていくことができます。
 
-また、出力されるCSSサイズが常に最小化されるため、Core Web Vitalsのスコア向上にも直結し、SEOの観点からも非常に有利に働きます。
+また、出力されるCSSサイズが常に最小化されるため、Core [Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)のスコア向上にも直結し、SEOの観点からも非常に有利に働きます。
 
 HugoとTailwind CSSの組み合わせは、個人の技術ブログから大規模な企業サイトまで、あらゆるプロジェクトにおいて「最良の選択肢」の一つであり続けるでしょう。ぜひ、この強力なツールチェーンを活用して、快適なWeb開発ライフを楽しんでください！
 

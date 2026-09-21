@@ -240,7 +240,7 @@ Wenn dieselbe Instanz von mehreren Threads gemeinsam genutzt werden muss, muss `
 
 ## 6. Mathematische Formulierung der Referenzzählung
 
-Die Zustandsübergänge des Lebenszyklus im Kontrollblock lassen sich mathematisch wie folgt ausdrücken.
+Die [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergänge des Lebenszyklus im Kontrollblock lassen sich mathematisch wie folgt ausdrücken.
 Sei $S(t)$ der Strong Count und $W(t)$ der Weak Count zum Zeitpunkt $t$.
 
 Anfangszustand (unmittelbar nach `make_shared`):

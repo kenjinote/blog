@@ -152,7 +152,7 @@ Der Erwartungswert wächst in der Größenordnung $n\ln n$. Für konkrete Zahlen
 
 $P(T\le m)$ ist die Wahrscheinlichkeit, innerhalb von $m$ Ziehungen fertig zu werden. Das beantwortet eine andere Frage als der Erwartungswert.
 
-Die folgende Kurve für zehn Typen wurde durch Fortschreiben von Zustandswahrscheinlichkeiten berechnet, nicht aus einer Zufallssimulation geschätzt.
+Die folgende Kurve für zehn Typen wurde durch Fortschreiben von [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)swahrscheinlichkeiten berechnet, nicht aus einer Zufallssimulation geschätzt.
 
 ![Wahrscheinlichkeit für eine vollständige Sammlung: etwa 62,9 % nach 30 Ziehungen, 95,4 % nach 51 und 99,0 % nach 66.](completion-probability.de.svg)
 
@@ -188,7 +188,7 @@ q_{m+1}(k)=\frac{k}{n}q_m(k)
 \qquad (1\le k\le n)
 $$
 
-Nach einer Ziehung gilt $q_{m+1}(0)=0$. Eine vollständige Sammlung bleibt vollständig, daher ist $q_m(n)=P(T\le m)$. Das ist dynamische Programmierung mit der Anzahl vorhandener Typen als Zustand.
+Nach einer Ziehung gilt $q_{m+1}(0)=0$. Eine vollständige Sammlung bleibt vollständig, daher ist $q_m(n)=P(T\le m)$. Das ist dynamische Programmierung mit der Anzahl vorhandener Typen als [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/).
 
 Die Identität der Karten kann wegen der Gleichverteilung ignoriert werden. Bei verschiedenen Wahrscheinlichkeiten würde die Anzahl allein nicht genügen, um die Chance auf eine neue Karte zu bestimmen.
 

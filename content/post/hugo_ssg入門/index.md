@@ -187,7 +187,7 @@ WordPressのデータをHugo用に出力するためには、専用のプラグ�
 1. **Jekyll Exporterプラグインの利用**
    Hugoは同じSSGであるJekyllとデータ構造が非常に似ているため、WordPress用の「Jekyll Exporter」プラグインを使用するのが一般的な手法です。このプラグインをインストールして実行すると、すべての投稿・固定ページがFront Matter付きのMarkdownファイルに変換され、画像ファイル群と共にZIPファイルとしてダウンロードできます。
 2. **WordPress APIを利用した自作スクリプト**
-   PythonやNode.js等でWordPressのREST API (`/wp-json/wp/v2/posts`) を叩き、JSONデータを解析して自前でMarkdownファイルを生成するスクリプトを作成する方法です。プラグインでは対応しきれない複雑なカスタムフィールド（ACF等）を多用しているサイトで有効です。
+   PythonやNode.js等でWordPressの[REST API](https://kenji.blog/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) (`/wp-json/wp/v2/posts`) を叩き、JSONデータを解析して自前でMarkdownファイルを生成するスクリプトを作成する方法です。プラグインでは対応しきれない複雑なカスタムフィールド（ACF等）を多用しているサイトで有効です。
 3. **wp2hugo ツールの活用**
    Go言語などで書かれたCLIツールを利用して、WordPressのエクスポートXMLファイル（WXR）から直接Hugo形式へ変換するアプローチもあります。
 
@@ -225,7 +225,7 @@ hugo server -D
 
 このコマンドを実行すると、`http://localhost:1313/` でサイトがプレビュー可能になります。Hugoには強力な「LiveReload」機能が内蔵されており、Markdownファイルやテンプレート、CSSを編集して保存した瞬間に、ブラウザの画面が自動的に高速更新されます。これにより、執筆・開発体験はWordPressの管理画面よりも遥かに快適なものになります。
 
-### 5.2 本番用ビルドとパフォーマンス最適化
+### 5.2 本番用ビルドと[パフォーマンス最適化](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
 本番環境にデプロイするための静的ファイルを生成するには、単に `hugo` と打ち込みます。
 
@@ -300,8 +300,8 @@ jobs:
 
 WordPressからHugoへの移行を完了したサイト運営者は、多くの場合、以下の3つの顕著なメリットを実感します。
 
-### 6.1 サイトスピードとCore Web Vitalsの劇的な向上
-データベースクエリやサーバーサイドのレンダリングが排除された結果、ページのロード時間はミリ秒単位まで短縮されます。これはGoogleのランキング要因である「Core Web Vitals」（LCP, FID/INP, CLS）スコアの大幅な向上に直結します。ユーザーの直帰率の低下と、SEO評価の向上が期待できます。
+### 6.1 サイトスピードとCore [Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)の劇的な向上
+データベースクエリやサーバーサイドのレンダリングが排除された結果、ページのロード時間はミリ秒単位まで短縮されます。これはGoogleのランキング要因である「[Core Web Vitals](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)」（[LCP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）スコアの大幅な向上に直結します。ユーザーの直帰率の低下と、SEO評価の向上が期待できます。
 
 ### 6.2 セキュリティ脅威からの解放
 WordPressは世界中で広く使われているため、常に攻撃対象となっています。プラグインの[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)を突かれた改ざんや、ブルートフォース攻撃によるログイン突破などのリスクがつきまといます。

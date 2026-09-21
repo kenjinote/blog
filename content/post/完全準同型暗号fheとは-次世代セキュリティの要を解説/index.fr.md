@@ -29,7 +29,7 @@ $$ D(E(m_1) \diamond E(m_2)) = m_1 \circ m_2 $$
 
 En d'autres termes, déchiffrer le résultat de l'application d'une certaine opération $\diamond$ sur les textes chiffrés $E(m_1)$ et $E(m_2)$ donnera exactement le même résultat que l'opération $\circ$ appliquée sur les textes clairs d'origine.
 
-### Flux de données dans le cloud computing
+### [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de données dans le cloud computing
 
 L'architecture de traitement dans le cloud utilisant le FHE est complètement différente des architectures traditionnelles. Le diagramme ci-dessous illustre le flux de traitement de données sécurisé tirant parti du FHE.
 

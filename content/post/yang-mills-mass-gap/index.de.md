@@ -68,7 +68,7 @@ Wenn Gluonen, die die starke Kraft vermitteln, masselos wären, sollte die stark
 
 ### Confinement und die Massenlücke
 
-In der Quantenchromodynamik (QCD) können Quarks und Gluonen nicht einzeln extrahiert werden; sie werden immer als Zustand beobachtet, in dem sich mehrere versammeln und die Farbe (Farbladung) neutralisiert ist (Hadronen). Dies wird **Confinement** (Color Confinement) genannt.
+In der Quantenchromodynamik (QCD) können Quarks und Gluonen nicht einzeln extrahiert werden; sie werden immer als [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) beobachtet, in dem sich mehrere versammeln und die Farbe (Farbladung) neutralisiert ist (Hadronen). Dies wird **Confinement** (Color Confinement) genannt.
 
 Selbst wenn die Masse der Quarks und Gluonen null ist, haben die durch ihre starke Bindung gebildeten Hadronen (wie Protonen und Mesonen) eine endliche Masse. Wenn wir die Energie des Vakuumzustands (den Zustand mit der niedrigsten Energie) der Theorie auf null setzen, dann ist die Energie des nächstniedrigeren Zustands (der erste angeregte Zustand, d.h. das leichteste Teilchen) $ \Delta > 0 $. Dieses $ \Delta $ wird als **Massenlücke** bezeichnet.
 

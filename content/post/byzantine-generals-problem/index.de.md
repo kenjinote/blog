@@ -165,7 +165,7 @@ Viele der neuesten PoS-Algorithmen, wie Casper von Ethereum oder Tendermint von 
 
 ## 5. Mathematische Modellierung von BFT und ihre Anwendung
 
-In einem fortgeschritteneren Design verteilter Systeme werden die Zustandsübergänge des Systems streng definiert, um die Korrektheit des BFT-Algorithmus zu beweisen.
+In einem fortgeschritteneren Design verteilter Systeme werden die [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergänge des Systems streng definiert, um die Korrektheit des BFT-Algorithmus zu beweisen.
 
 Sei beispielsweise die Menge der Knoten $\mathcal{N} = \{1, 2, \dots, n\}$ und die maximale Anzahl der Verräterknoten $f$. In einer bestimmten Runde $r$ hält jeder Knoten $i$ den Zustand $s_i^{(r)}$ und tauscht Nachrichten mit anderen Knoten aus.
 

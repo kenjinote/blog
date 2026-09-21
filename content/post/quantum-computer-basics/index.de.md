@@ -27,7 +27,7 @@ Um zu verstehen, wie ein Quantencomputer funktioniert, müssen wir zunächst rek
 | Merkmal | Klassischer Computer | Quantencomputer |
 | --- | --- | --- |
 | **Grundeinheit** | Bit (0 oder 1) | Qubit (Überlagerung von 0 und 1) |
-| **Zustandsdarstellung** | Deterministisch | Probabilistisch (bis zur Messung unbestimmt) |
+| **[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sdarstellung** | Deterministisch | Probabilistisch (bis zur Messung unbestimmt) |
 | **Berechnungsmethode** | Sequenzielle Verarbeitung (Parallelisierung erfordert physische Kerne) | Quantenparallelität (gleichzeitige Manipulation exponentieller Zustände) |
 | **Stärken bei Berechnungen** | Grundrechenarten, alltägliche Datenverarbeitung | Primfaktorzerlegung, quantenchemische Berechnungen |
 | **Fehlertoleranz** | Sehr stark | Sehr schwach (kryogene Umgebungen oder Fehlerkorrektur erforderlich) |
@@ -127,7 +127,7 @@ Quantenalgorithmen zeigen ihre Stärke auch bei Problemen, bei denen es darum ge
 
 Obwohl theoretisch so mächtig wie Magie, gibt es auf dem Weg zur praktischen Umsetzung extrem hohe und steile physikalische Barrieren. Der größte Feind ist **"Rauschen"** .
 
-Die "Überlagerung" und "Quantenverschränkung" von Qubits sind extrem empfindliche und zerbrechliche Zustände. Selbst der geringste Kontakt mit umgebender Wärme, elektromagnetischen Schwankungen oder kosmischen Strahlen kann dazu führen, dass dieser magische Zustand in einem Augenblick zusammenbricht und sie zu bloßen klassischen Bits werden. Dieses Phänomen wird als **"Dekohärenz (Quantenzerfall)"** bezeichnet.
+Die "Überlagerung" und "Quantenverschränkung" von Qubits sind extrem empfindliche und zerbrechliche Zustände. Selbst der geringste Kontakt mit umgebender Wärme, elektromagnetischen Schwankungen oder kosmischen Strahlen kann dazu führen, dass dieser magische [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) in einem Augenblick zusammenbricht und sie zu bloßen klassischen Bits werden. Dieses Phänomen wird als **"Dekohärenz (Quantenzerfall)"** bezeichnet.
 
 ### Der harte Wettbewerb um physikalische Realisierungsmethoden
 Derzeit wird weltweit ein harter Wettbewerb darüber ausgetragen, wie diese empfindlichen Qubits physikalisch realisiert werden können, wobei verschiedene Methoden erforscht werden.

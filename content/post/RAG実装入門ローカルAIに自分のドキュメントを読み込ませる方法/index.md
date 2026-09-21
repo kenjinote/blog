@@ -234,7 +234,7 @@ if __name__ == "__main__":
 1. **RecursiveCharacterTextSplitter**:
    自然言語の分割において最も推奨されるスプリッターです。段落(`\n\n`)、行(`\n`)、句点(`。`)の順で分割を試み、意味のまとまりを可能な限り維持したまま指定の `chunk_size` に収まるように分割します。`chunk_overlap` を設定することで、文脈の境目が切れて情報が失われるのを防ぎます。
 2. **HuggingFaceEmbeddings**:
-   `intfloat/multilingual-e5-large` は多言語に対応した非常に強力なオープンソースの埋め込みモデルです。クラウドAPI（OpenAIの `text-embedding-ada-002` など）を使わずに、オフラインでローカルメモリ上でテキストをベクトル化できます。
+   `intfloat/multilingual-e5-large` は多言語に対応した非常に強力なオープンソースの埋め込みモデルです。クラウドAPI（OpenAIの `text-embedding-ada-002` など）を使わずに、[オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)でローカルメモリ上でテキストをベクトル化できます。
 3. **ChromaDB**:
    インメモリまたはローカルストレージ（SQLiteベース）で動作するため、複雑なデータベースサーバーの立ち上げが不要です。`persist_directory` を指定することで、再実行時にベクトル化のプロセスをスキップし、ディスクからDBを読み込むことができます。
 

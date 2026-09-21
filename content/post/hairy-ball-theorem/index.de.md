@@ -76,7 +76,7 @@ $$
 $$
 Hierbei ist $M$ die Mannigfaltigkeit (in diesem Fall die Sphäre $S^2$).
 
-Im Fall der Sphäre gilt $\chi(S^2) = 2$. Damit die Summe der Indizes 2 ergibt, muss mindestens eine Singularität (ein Punkt, an dem der Index ungleich null ist) existieren. Da die Summe niemals 0 sein kann, ist ein Zustand ohne jegliche Singularität (ein überall nicht verschwindendes Vektorfeld) unmöglich.
+Im Fall der Sphäre gilt $\chi(S^2) = 2$. Damit die Summe der Indizes 2 ergibt, muss mindestens eine Singularität (ein Punkt, an dem der Index ungleich null ist) existieren. Da die Summe niemals 0 sein kann, ist ein [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) ohne jegliche Singularität (ein überall nicht verschwindendes Vektorfeld) unmöglich.
 
 ## Wie verhält es sich bei einem Torus (Donut-Form)?
 

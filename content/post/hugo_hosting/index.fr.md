@@ -240,7 +240,7 @@ Son implémentation dans Hugo est également très simple. Il vous suffit d'ajou
 {{ end }}
 ```
 
-L'ajout de l'attribut `defer` permet de charger le script de manière asynchrone sans bloquer l'analyse du document HTML, et de l'exécuter après la construction du DOM. Cela permet de minimiser l'impact sur la vitesse d'affichage initiale (LCP : Largest Contentful [Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/) et FCP : First Contentful Paint).
+L'ajout de l'attribut `defer` permet de charger le script de manière asynchrone sans bloquer l'analyse du document HTML, et de l'exécuter après la construction du DOM. Cela permet de minimiser l'impact sur la vitesse d'affichage initiale ([LCP](https://kenji.blog/fr/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) : Largest Contentful [Paint](https://kenji.blog/fr/p/browser-rendering-mechanism-dom-paint/) et FCP : First Contentful Paint).
 
 ---
 

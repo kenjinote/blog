@@ -105,7 +105,7 @@ graph TD
 
 Model A 更新導致 View B 更新，View B 的改變更新了 Model C，這又進一步更新了 View D... 如此一來，資料流變得錯綜複雜，頻繁出現陷入無限迴圈或 UI 在非預期時間點更新的 Bug。人們變得無法預測「何時、是誰、更改了哪個資料」。
 
-## 4. React 與 Flux 的誕生：單向資料流的革命
+## 4. React 與 [Flux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 的誕生：單向資料流的革命
 
 2013 年，Facebook（現為 Meta）發布了 React。雖然 React 本身是一個用於建構 UI 的函式庫（MVC 中的 V），但同時他們也提出了一種新的架構模式 **Flux** 。
 
@@ -119,7 +119,7 @@ graph LR
     View -->|"Trigger"| Action
 ```
 
-Flux 架構有嚴格的規則：
+[Flux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 架構有嚴格的規則：
 
 1.  **Action**: 對系統進行修改的唯一方法。一個表示發生了什麼事的物件。
 2.  **Dispatcher**: 接收所有 Action 並將其分發給 Store 的中央樞紐。
@@ -128,7 +128,7 @@ Flux 架構有嚴格的規則：
 
 重要的是， **View 絕對不能直接修改 Store 的狀態** 。要修改狀態，必須發出 Action 並經過 Dispatcher，這樣單向循環。這使得資料流變得極具可預測性（Predictable），大幅提升了大規模應用程式中狀態管理的穩定性。
 
-## 5. Redux 的霸權與極限
+## 5. [Redux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 的霸權與極限
 
 將 Flux 概念進一步洗鍊，並成為前端狀態管理事實上標準（De facto standard）的，是 Dan Abramov 等人在 2015 年開發的 **Redux** 。
 
@@ -172,7 +172,7 @@ function counterReducer(state = initialState, action) {
 }
 ```
 
-這項「不可變性（Immutability）」與「純函數」的結合，讓 Redux 實現了強大的時間旅行除錯（Time-travel debugging，倒轉到過去的狀態）以及熱模組替換（Hot reloading）。在開發體驗（DX）方面是一大突破。
+這項「不可變性（Immutability）」與「純函數」的結合，讓 [Redux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 實現了強大的時間旅行除錯（Time-travel debugging，倒轉到過去的狀態）以及熱模組替換（Hot reloading）。在開發體驗（DX）方面是一大突破。
 
 ### 5.3 Redux 的挑戰：樣板程式碼之壁
 
@@ -186,16 +186,16 @@ Redux 是一個很棒的架構，但隨著其普及，許多開發者開始感�
 
 此外，為了處理非同步操作（如 API 通訊等），必須導入 `redux-thunk` 或 `redux-saga` 等中介軟體，學習成本也急遽飆升。
 
-「Redux 是否大材小用了？」的聲音高漲，開始探索狀態管理的新方法。
+「[Redux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 是否大材小用了？」的聲音高漲，開始探索狀態管理的新方法。
 
-## 6. Context API 與 Hooks 帶來的「脫離 Redux」運動
+## 6. [Context API](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 與 Hooks 帶來的「脫離 Redux」運動
 
 2018 年 React 16.3 對 Context API 進行了翻新，接著在 2019 年的 React 16.8 引入了 **React Hooks** ，這成為了狀態管理歷史上的巨大轉捩點。
 
 ### 6.1 透過內建功能共享狀態
 
 使用 Context API，可以直接將資料傳遞給元件樹深層的元件，而不需要進行屬性層層傳遞（Prop Drilling）。
-此外，結合 `useReducer` Hook，可以僅用 React 的內建功能實現類似 Redux 的狀態管理。
+此外，結合 `useReducer` Hook，可以僅用 React 的內建功能實現類似 [Redux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 的狀態管理。
 
 ```javascript
 // 使用 Context 和 useReducer 的狀態管理
@@ -226,9 +226,9 @@ function CounterDisplay() {
 }
 ```
 
-由此，「如果是簡單的全域狀態，就不需要 Redux」的認知廣泛傳開。然而，這種方法存在一個致命的效能陷阱。
+由此，「如果是簡單的全域狀態，就不需要 [Redux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/)」的認知廣泛傳開。然而，這種方法存在一個致命的效能陷阱。
 
-### 6.2 Context API 的效能問題（Extra Re-renders）
+### 6.2 [Context API](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 的效能問題（Extra Re-renders）
 
 React 的 Context API 有一個規範：「當 Context 的值更新時，訂閱了該 Context（呼叫了 `useContext`）的所有元件都會無條件地重新渲染」。
 
@@ -245,9 +245,9 @@ React 的 Context API 有一個規範：「當 Context 的值更新時，訂閱�
 - **伺服器狀態（Server State）**: 由伺服器擁有。非同步取得。由於可能由多人共享或變更，因此總是有變為過期（Stale）狀態的可能。需要快取管理、背景更新和重試處理。
 - **客戶端狀態（Client State）**: 由客戶端（瀏覽器）擁有。同步更新。如深色模式或對話方塊的開關等。
 
-### 7.1 React Query、SWR、Apollo Client 的崛起
+### 7.1 React Query、SWR、[Apollo Client](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/) 的崛起
 
-將 Server State 的管理從 Redux 或 Context 中分離出來，交由專用的函式庫處理的方法成為了主流。這就是 **React Query (現為 TanStack Query)** 和 **SWR** 的登場。
+將 Server State 的管理從 [Redux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 或 Context 中分離出來，交由專用的函式庫處理的方法成為了主流。這就是 **React Query (現為 TanStack Query)** 和 **SWR** 的登場。
 
 ```javascript
 // 使用 React Query 管理 Server State
@@ -265,18 +265,18 @@ function UserProfile({ userId }) {
 ```
 
 這些函式庫抽象化了「將伺服器狀態快取到本地，並在需要時同步」的複雜處理。
-這樣一來，應該由 Redux 等全域 Store 管理的資料銳減至「純粹的客戶端狀態」，大幅減輕了狀態管理的負擔。
+這樣一來，應該由 [Redux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 等全域 Store 管理的資料銳減至「純粹的客戶端狀態」，大幅減輕了狀態管理的負擔。
 
-## 8. 原子狀態管理（Atomic [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Management）：Recoil 與 Jotai
+## 8. 原子狀態管理（Atomic [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Management）：[Recoil](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 與 [Jotai](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/)
 
 在 Server State 被分離出來之後，一場關於如何有效管理剩餘的 Client State 的新競爭開始了。
-為了解決 React 的渲染模型（由上而下）和 Context API 的效能問題而誕生的，就是 **原子狀態管理（Atomic State Management）** 方法。
+為了解決 React 的渲染模型（由上而下）和 [Context API](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 的效能問題而誕生的，就是 **原子狀態管理（Atomic [State Management](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/)）** 方法。
 
 2020 年 Facebook 團隊發布了 **Recoil** ，受其影響，如 **Jotai** 等函式庫也相繼登場。
 
 ### 8.1 由下而上的狀態管理
 
-Redux 採取的是「從單一的巨大狀態樹中切出所需部分（由上而下）」的方法，而 Recoil 或 Jotai 則採取「建立狀態的最小單位（Atom），並將它們組合注入元件樹中（由下而上）」的方法。
+[Redux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 採取的是「從單一的巨大狀態樹中切出所需部分（由上而下）」的方法，而 Recoil 或 Jotai 則採取「建立狀態的最小單位（Atom），並將它們組合注入元件樹中（由下而上）」的方法。
 
 ```mermaid
 graph BT
@@ -287,7 +287,7 @@ graph BT
     Component1 -.->|"Updates"| AtomA
 ```
 
-Atom 是獨立的狀態單位。元件只訂閱（Subscribe）需要的 Atom。當 Atom 更新時，只有訂閱了該 Atom 的元件會精準地重新渲染。這徹底解決了 Context API 存在的不必要重新渲染問題。
+Atom 是獨立的狀態單位。元件只訂閱（Subscribe）需要的 Atom。當 Atom 更新時，只有訂閱了該 Atom 的元件會精準地重新渲染。這徹底解決了 [Context API](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 存在的不必要重新渲染問題。
 
 ```javascript
 // 使用 Jotai 的 Atomic State 範例
@@ -309,15 +309,15 @@ function ProductDisplay() {
 }
 ```
 
-由於 Jotai 等函式庫的使用感覺與 React 的 `useState` 幾乎相同，學習成本低且具有高效能，因此成為了現代 React 應用程式中非常受歡迎的選擇。
+由於 [Jotai](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 等函式庫的使用感覺與 React 的 `useState` 幾乎相同，學習成本低且具有高效能，因此成為了現代 React 應用程式中非常受歡迎的選擇。
 
-## 9. 代理與可變性：Zustand 與 Valtio
+## 9. 代理與可變性：[Zustand](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 與 Valtio
 
 作為另一個強大的潮流，極致削減樣板程式碼、提供更直覺 API 的函式庫群出現了。這就是由 Poimandres 這個開源社群開發的 **Zustand** 和 **Valtio** 。
 
-### 9.1 Zustand：極致簡單的 Flux
+### 9.1 Zustand：極致簡單的 [Flux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/)
 
-Zustand 與 Redux 相同，採用了單一的 Store（Flux 架構），但排除了 Reducer 和 Provider 等複雜概念，提供了基於 Hooks 極其簡單的 API。
+Zustand 與 [Redux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 相同，採用了單一的 Store（Flux 架構），但排除了 Reducer 和 Provider 等複雜概念，提供了基於 Hooks 極其簡單的 API。
 
 ```javascript
 // Zustand 的範例
@@ -339,7 +339,7 @@ function Counter() {
 }
 ```
 
-Zustand 確立了兼具 Redux 的堅固性與 Hooks 簡單性的「現代版 Redux」地位。
+[Zustand](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 確立了兼具 [Redux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 的堅固性與 Hooks 簡單性的「現代版 Redux」地位。
 
 ### 9.2 Valtio：透過 Proxy 的可變狀態管理
 
@@ -444,11 +444,11 @@ React Compiler 會在編譯時靜態分析 React 元件的程式碼，並 **自�
 
 ## 13. 結論：狀態管理將走向何方？
 
-從 MVC 的混亂開始，透過 Flux/Redux 獲得可預測性，透過 Hooks 實現簡化，分離 Server [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)，透過 Atomic 和 Proxy 提高效率，再到 Signals 的細粒度反應性。
+從 MVC 的混亂開始，透過 [Flux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 獲得可預測性，透過 Hooks 實現簡化，分離 Server [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)，透過 Atomic 和 Proxy 提高效率，再到 Signals 的細粒度反應性。
 
 回顧約 15 年來前端狀態管理的歷史，可以看出一個明確的趨勢。那就是 **「在減少樣板程式碼、降低開發者認知負擔的同時，背後的系統（框架或編譯器）正朝著自動最佳化效能的方向進化」** 。
 
-- **中小型 React 開發**: Jotai 或 Zustand 通常是最佳解。
+- **中小型 React 開發**: [Jotai](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 或 [Zustand](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 通常是最佳解。
 - **伴隨資料獲取的開發**: TanStack Query 等 Server State 管理工具是必須的。
 - **追求極致效能與 DX 的新專案**: 採用 Signals 的框架如 SolidJS 或 Vue 非常具吸引力。
 - **React 的未來**: 隨著 React Compiler 的成熟，狀態管理的許多效能問題將透過自動化得到解決。

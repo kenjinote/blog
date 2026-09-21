@@ -64,7 +64,7 @@ GitHub Actions est une plateforme puissante qui vous permet d'automatiser vos fl
 
 Pour maîtriser GitHub Actions, vous devez comprendre les concepts de base suivants.
 
-1.  **Workflow (Flux de travail) :** Un processus automatisé qui exécute un ou plusieurs travaux (jobs). Il est défini dans un fichier YAML.
+1.  **Workflow ([Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de travail) :** Un processus automatisé qui exécute un ou plusieurs travaux (jobs). Il est défini dans un fichier YAML.
 2.  **Event (Événement) :** Une activité spécifique qui déclenche l'exécution d'un flux de travail (ex: `push`, `pull_request`, exécution périodique `schedule`, etc.).
 3.  **Job (Travail) :** Un ensemble d'étapes exécutées sur le même lanceur (runner). Par défaut, les travaux s'exécutent en parallèle, mais des dépendances peuvent également être définies.
 4.  **Step (Étape) :** Tâches individuelles qui exécutent des commandes ou appellent des actions (Actions) au sein d'un travail.
@@ -90,7 +90,7 @@ graph TD
 
 À partir d'ici, nous expliquerons étape par étape comment construire un pipeline CI en examinant un fichier YAML concret. En guise d'exemple, nous supposons un projet Node.js (TypeScript).
 
-## 1. Flux de travail CI de base
+## 1. [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de travail CI de base
 
 Tout d'abord, nous créons un flux de travail de base qui installe les dépendances et exécute les tests lorsque du code est poussé (push) ou qu'une Pull Request est créée.
 
@@ -272,7 +272,7 @@ Dans les projets complexes, il est recommandé comme **bonne pratique** de divis
 
 Voici des fonctionnalités avancées pour créer des pipelines plus pratiques et plus faciles à maintenir.
 
-## Reusable Workflows (Flux de travail réutilisables)
+## Reusable Workflows ([Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de travail réutilisables)
 
 Si vous avez des processus CI similaires sur plusieurs dépôts, vous pouvez standardiser les flux de travail eux-mêmes. Utilisez le déclencheur `workflow_call`.
 

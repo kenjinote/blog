@@ -105,7 +105,7 @@ graph TD
 
 Model A가 업데이트되면 View B가 업데이트되고, View B의 변경이 Model C를 업데이트하며, 그것이 다시 View D를 업데이트하는 식으로 데이터의 흐름이 복잡하게 얽히면서 무한 루프에 빠지거나 예기치 않은 타이밍에 UI가 업데이트되는 버그가 빈발했습니다. '언제, 누가, 어떤 데이터를 변경했는지' 예측할 수 없게 되어버린 것입니다.
 
-## 4. React와 Flux의 탄생: 단방향 데이터 흐름이라는 혁명
+## 4. React와 [Flux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)의 탄생: 단방향 데이터 흐름이라는 혁명
 
 2013년, Facebook(현 Meta)에서 React가 공개되었습니다. React 자체는 UI를 구축하기 위한 라이브러리(MVC의 V에 해당)였지만, 동시에 그들은 새로운 아키텍처 패턴인 **Flux** 를 제창했습니다.
 
@@ -119,7 +119,7 @@ graph LR
     View -->|"트리거"| Action
 ```
 
-Flux 아키텍처에는 엄격한 규칙이 있습니다:
+[Flux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/) 아키텍처에는 엄격한 규칙이 있습니다:
 
 1.  **Action**: 시스템에 변경을 가하기 위한 유일한 방법. 어떤 일이 일어났는지를 나타내는 객체.
 2.  **Dispatcher**: 모든 Action을 받아 Store로 전달하는 중앙 허브.
@@ -128,7 +128,7 @@ Flux 아키텍처에는 엄격한 규칙이 있습니다:
 
 중요한 점은 **View는 결코 직접 Store의 상태를 변경할 수 없다** 는 것입니다. 상태를 변경하려면 반드시 Action을 발행하고 Dispatcher를 거친다는 일방통행의 사이클을 돌아야 합니다. 이를 통해 데이터의 흐름이 지극히 예측 가능해져 대규모 애플리케이션의 상태 관리 안정성이 극적으로 향상되었습니다.
 
-## 5. Redux의 패권과 한계
+## 5. [Redux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)의 패권과 한계
 
 Flux의 개념을 더욱 세련되게 다듬어 프론트엔드 상태 관리의 사실상 표준(디팩토 스탠다드)이 된 것이 2015년 Dan Abramov 등이 개발한 **Redux** 입니다.
 
@@ -172,7 +172,7 @@ function counterReducer(state = initialState, action) {
 }
 ```
 
-이 '불변성(Immutability)'과 '순수 함수'의 결합을 통해 Redux는 강력한 타임 트래블 디버깅(과거 상태로 되감기)이나 핫 리로딩을 실현했습니다. 개발 경험(DX) 측면에서 큰 돌파구였습니다.
+이 '불변성(Immutability)'과 '순수 함수'의 결합을 통해 [Redux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)는 강력한 타임 트래블 디버깅(과거 상태로 되감기)이나 핫 리로딩을 실현했습니다. 개발 경험(DX) 측면에서 큰 돌파구였습니다.
 
 ### 5.3 Redux의 과제: 보일러플레이트의 장벽
 
@@ -186,16 +186,16 @@ Redux는 훌륭한 아키텍처였지만 널리 보급되면서 많은 개발자
 
 나아가 비동기 처리(API 통신 등)를 다루기 위해서는 `redux-thunk` 나 `redux-saga` 같은 미들웨어를 도입해야 했고, 학습 곡선도 급격히 가팔라졌습니다.
 
-"Redux는 오버킬(과유불급)이 아닌가?"라는 목소리가 커지며 상태 관리의 새로운 접근법이 모색되기 시작했습니다.
+"[Redux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)는 오버킬(과유불급)이 아닌가?"라는 목소리가 커지며 상태 관리의 새로운 접근법이 모색되기 시작했습니다.
 
-## 6. Context API와 Hooks를 통한 '탈 Redux'의 움직임
+## 6. [Context API](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)와 Hooks를 통한 '탈 Redux'의 움직임
 
 2018년 React 16.3에서 Context API가 개편되고, 이어서 2019년 React 16.8에서 **React Hooks** 가 도입된 것은 상태 관리 역사에서 큰 전환점이 되었습니다.
 
 ### 6.1 내장 기능을 통한 상태 공유
 
 Context API를 사용하면 컴포넌트 트리의 깊은 계층에 있는 컴포넌트에게 프로퍼티를 연쇄적으로 전달(Prop Drilling)하지 않고도 데이터를 직접 건넬 수 있습니다.
-또한 `useReducer` Hook을 조합하면 Redux와 같은 상태 관리를 React의 내장 기능만으로 구현할 수 있게 되었습니다.
+또한 `useReducer` Hook을 조합하면 [Redux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)와 같은 상태 관리를 React의 내장 기능만으로 구현할 수 있게 되었습니다.
 
 ```javascript
 // Context와 useReducer를 이용한 상태 관리
@@ -226,9 +226,9 @@ function CounterDisplay() {
 }
 ```
 
-이로써 "단순한 글로벌 상태라면 Redux는 필요 없다"라는 인식이 널리 퍼졌습니다. 하지만 이 접근법에는 치명적인 성능 상의 함정이 있었습니다.
+이로써 "단순한 글로벌 상태라면 [Redux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)는 필요 없다"라는 인식이 널리 퍼졌습니다. 하지만 이 접근법에는 치명적인 성능 상의 함정이 있었습니다.
 
-### 6.2 Context API의 성능 문제 (Extra Re-renders)
+### 6.2 [Context API](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)의 성능 문제 (Extra Re-renders)
 
 React의 Context API에는 "Context의 값이 업데이트되면 해당 Context를 구독하고 있는(`useContext`를 호출하고 있는) 모든 컴포넌트가 무조건 재렌더링된다"라는 사양이 있습니다.
 
@@ -245,9 +245,9 @@ React는 기본적으로 '탑다운(Top-down)' 렌더링 모델을 채택하고 
 - **Server State**: 서버가 소유. 비동기적으로 가져옴. 여러 사람이 공유하고 변경하므로 항상 오래된(Stale) 상태가 될 가능성이 있음. 캐시 관리, 백그라운드 업데이트, 재시도 처리가 필요함.
 - **Client State**: 클라이언트(브라우저)가 소유. 동기적으로 업데이트됨. 다크 모드나 모달 열림/닫힘 등.
 
-### 7.1 React Query, SWR, Apollo Client의 대두
+### 7.1 React Query, SWR, [Apollo Client](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)의 대두
 
-Server State 관리를 Redux나 Context에서 분리하여 전용 라이브러리에 맡기는 접근법이 주류가 되었습니다. **React Query (현 TanStack Query)** 나 **SWR** 의 등장입니다.
+Server State 관리를 [Redux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)나 Context에서 분리하여 전용 라이브러리에 맡기는 접근법이 주류가 되었습니다. **React Query (현 TanStack Query)** 나 **SWR** 의 등장입니다.
 
 ```javascript
 // React Query를 사용한 Server State 관리
@@ -265,18 +265,18 @@ function UserProfile({ userId }) {
 ```
 
 이 라이브러리들은 "서버의 상태를 로컬에 캐시하고 필요에 따라 동기화한다"라는 복잡한 처리를 추상화했습니다.
-그 결과 Redux 등의 글로벌 스토어에서 관리해야 할 데이터는 '순수한 클라이언트 상태'로 급감했고, 상태 관리에 대한 부담은 크게 줄어들었습니다.
+그 결과 [Redux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/) 등의 글로벌 스토어에서 관리해야 할 데이터는 '순수한 클라이언트 상태'로 급감했고, 상태 관리에 대한 부담은 크게 줄어들었습니다.
 
-## 8. Atomic [State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) Management: Recoil과 Jotai
+## 8. Atomic [State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) Management: [Recoil](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)과 [Jotai](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)
 
 Server State가 분리된 후, 남겨진 Client State를 어떻게 효율적으로 관리할 것인가 하는 새로운 경쟁이 시작되었습니다.
-React의 렌더링 모델(탑다운)과 Context API의 성능 문제를 해결하기 위해 탄생한 것이 **Atomic State Management** 라는 접근법입니다.
+React의 렌더링 모델(탑다운)과 [Context API](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)의 성능 문제를 해결하기 위해 탄생한 것이 **Atomic [State Management](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)** 라는 접근법입니다.
 
 2020년 Facebook 팀에서 **Recoil** 이 발표되었고, 이에 영향을 받은 **Jotai** 등의 라이브러리가 등장했습니다.
 
 ### 8.1 바텀업(Bottom-up) 상태 관리
 
-Redux가 "단일의 거대한 상태 트리에서 필요한 부분을 잘라내는(탑다운)" 접근법인 반면, Recoil이나 Jotai는 "상태의 최소 단위(Atom)를 생성하고 그것들을 조합하여 컴포넌트 트리에 주입하는(바텀업)" 접근법을 취합니다.
+[Redux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)가 "단일의 거대한 상태 트리에서 필요한 부분을 잘라내는(탑다운)" 접근법인 반면, Recoil이나 Jotai는 "상태의 최소 단위(Atom)를 생성하고 그것들을 조합하여 컴포넌트 트리에 주입하는(바텀업)" 접근법을 취합니다.
 
 ```mermaid
 graph BT
@@ -287,7 +287,7 @@ graph BT
     Component1 -.->|"업데이트"| AtomA
 ```
 
-Atom은 독립된 상태 단위입니다. 컴포넌트는 필요한 Atom만을 구독(Subscribe)합니다. Atom이 업데이트되면 해당 Atom을 구독하는 컴포넌트만 정밀하게 타겟팅되어 재렌더링됩니다. 이를 통해 Context API가 안고 있던 불필요한 재렌더링 문제가 완전히 해결됩니다.
+Atom은 독립된 상태 단위입니다. 컴포넌트는 필요한 Atom만을 구독(Subscribe)합니다. Atom이 업데이트되면 해당 Atom을 구독하는 컴포넌트만 정밀하게 타겟팅되어 재렌더링됩니다. 이를 통해 [Context API](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)가 안고 있던 불필요한 재렌더링 문제가 완전히 해결됩니다.
 
 ```javascript
 // Jotai를 사용한 Atomic State 예시
@@ -309,15 +309,15 @@ function ProductDisplay() {
 }
 ```
 
-Jotai 등은 React의 `useState` 와 거의 같은 감각으로 사용할 수 있어 학습 곡선이 낮고 뛰어난 성능을 자랑하기 때문에 현대 React 애플리케이션에서 매우 인기 있는 선택지가 되었습니다.
+[Jotai](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/) 등은 React의 `useState` 와 거의 같은 감각으로 사용할 수 있어 학습 곡선이 낮고 뛰어난 성능을 자랑하기 때문에 현대 React 애플리케이션에서 매우 인기 있는 선택지가 되었습니다.
 
-## 9. 프록시와 변경 가능성: Zustand와 Valtio
+## 9. 프록시와 변경 가능성: [Zustand](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)와 Valtio
 
 또 다른 강력한 흐름으로서, 보일러플레이트를 극한까지 덜어내고 더욱 직관적인 API를 제공하는 라이브러리군이 등장했습니다. Poimandres라는 OSS 콜렉티브가 개발한 **Zustand** 와 **Valtio** 입니다.
 
-### 9.1 Zustand: 단순함을 극대화한 Flux
+### 9.1 Zustand: 단순함을 극대화한 [Flux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)
 
-Zustand는 Redux와 마찬가지로 단일 스토어(Flux 아키텍처)를 채택하고 있지만, Reducer나 Provider와 같은 복잡한 개념을 배제하고 Hooks 기반의 매우 단순한 API를 제공합니다.
+Zustand는 [Redux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)와 마찬가지로 단일 스토어(Flux 아키텍처)를 채택하고 있지만, Reducer나 Provider와 같은 복잡한 개념을 배제하고 Hooks 기반의 매우 단순한 API를 제공합니다.
 
 ```javascript
 // Zustand 예시
@@ -339,7 +339,7 @@ function Counter() {
 }
 ```
 
-Zustand는 Redux의 견고함과 Hooks의 단순함을 겸비한 '현대판 Redux'라 할 수 있는 위치를 확립했습니다.
+[Zustand](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)는 [Redux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)의 견고함과 Hooks의 단순함을 겸비한 '현대판 Redux'라 할 수 있는 위치를 확립했습니다.
 
 ### 9.2 Valtio: Proxy를 이용한 뮤터블(Mutable)한 상태 관리
 
@@ -444,11 +444,11 @@ React Compiler는 빌드 시에 React 컴포넌트의 코드를 정적 분석하
 
 ## 13. 결론: 상태 관리는 어디로 향하고 있는가?
 
-MVC의 혼란에서 시작해 Flux/Redux로 인한 예측 가능성 획득, Hooks에 의한 단순화, Server [State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)의 분리, Atomic이나 Proxy에 의한 효율화, 그리고 Signals에 의한 세립도 리액티비티에 이르기까지.
+MVC의 혼란에서 시작해 [Flux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)로 인한 예측 가능성 획득, Hooks에 의한 단순화, Server [State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)의 분리, Atomic이나 Proxy에 의한 효율화, 그리고 Signals에 의한 세립도 리액티비티에 이르기까지.
 
 약 15년에 걸친 프론트엔드 상태 관리의 역사를 돌아보면 하나의 명확한 트렌드가 보입니다. 그것은 **"보일러플레이트를 줄이고 개발자의 인지 부하를 낮추면서, 이면의 시스템(프레임워크나 컴파일러)이 성능을 자동으로 최적화하는 방향으로 진화하고 있다"** 는 것입니다.
 
-- **소~중규모의 React 개발**: Jotai나 Zustand가 최적의 해답이 되는 경우가 많다.
+- **소~중규모의 React 개발**: [Jotai](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)나 [Zustand](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/)가 최적의 해답이 되는 경우가 많다.
 - **데이터 페칭(Fetching)을 수반하는 개발**: TanStack Query 등의 Server State 관리 도구는 필수다.
 - **극한의 성능과 DX를 요구하는 신규 프로젝트**: SolidJS나 Vue 등 Signals를 채택한 프레임워크가 매력적이다.
 - **React의 미래**: React Compiler가 성숙해지면 상태 관리의 성능 문제 중 상당수가 자동화를 통해 해결될 것이다.

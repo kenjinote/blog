@@ -105,7 +105,7 @@ graph TD
 
 当 Model A 更新时，View B 随之更新，View B 的更改又更新了 Model C，进而又更新了 View D……如此一来，数据流错综复杂，导致频繁陷入死循环或在预期之外的时机更新 UI，从而引发许多 Bug。“什么时候，是谁，更改了哪个数据”变得无法预测。
 
-## 4. React 与 Flux 的诞生：单向数据流的革命
+## 4. React 与 [Flux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 的诞生：单向数据流的革命
 
 2013 年，Facebook（现 Meta）发布了 React。React 本身是一个用于构建 UI 的库（MVC 中的 V），但与此同时，他们也提出了新的架构模式—— **Flux** 。
 
@@ -119,7 +119,7 @@ graph LR
     View -->|"触发 (Trigger)"| Action
 ```
 
-Flux 架构有严格的规则：
+[Flux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 架构有严格的规则：
 
 1.  **动作 (Action)**: 对系统进行更改的唯一方法。指示发生了什么的独立对象。
 2.  **派发器 (Dispatcher)**: 接收所有 Action 并将它们分发到 Store 的中央枢纽。
@@ -128,7 +128,7 @@ Flux 架构有严格的规则：
 
 重要的是， **View 绝对不能直接更改 Store 的状态** 。要更改状态，必须发出 Action 并经过 Dispatcher 这一单行道循环。这使得数据的流动变得极具可预测性（Predictable），极大地提高了大型应用程序中状态管理的稳定性。
 
-## 5. Redux 的霸权与局限
+## 5. [Redux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 的霸权与局限
 
 将 Flux 的概念进一步提炼，并成为前端状态管理事实标准的，是 2015 年由 Dan Abramov 等人开发的 **Redux** 。
 
@@ -172,7 +172,7 @@ function counterReducer(state = initialState, action) {
 }
 ```
 
-这种“不可变性（Immutability）”和“纯函数”的组合，使 Redux 实现了强大的时间旅行调试（Time-travel debugging，即回滚到过去的状态）和热重载。这在开发体验（DX）方面是一项重大突破。
+这种“不可变性（Immutability）”和“纯函数”的组合，使 [Redux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 实现了强大的时间旅行调试（Time-travel debugging，即回滚到过去的状态）和热重载。这在开发体验（DX）方面是一项重大突破。
 
 ### 5.3 Redux 的挑战：样板代码的障碍
 
@@ -186,16 +186,16 @@ function counterReducer(state = initialState, action) {
 
 此外，为了处理异步操作（如 API 通信），需要引入 `redux-thunk` 或 `redux-saga` 等中间件，学习成本急剧上升。
 
-“Redux 是不是杀鸡用牛刀了？”的呼声越来越高，开发者们开始探索状态管理的新方法。
+“[Redux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 是不是杀鸡用牛刀了？”的呼声越来越高，开发者们开始探索状态管理的新方法。
 
-## 6. Context API 与 Hooks 引发的“去 Redux”运动
+## 6. [Context API](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 与 Hooks 引发的“去 Redux”运动
 
 2018 年 React 16.3 刷新了 Context API，并在 2019 年 React 16.8 引入了 **React Hooks** ，这成为了状态管理历史上的一个重大转折点。
 
 ### 6.1 使用内置功能共享状态
 
 使用 Context API，可以直接将数据传递给组件树深层的组件，而无需进行属性的层层传递（Prop Drilling）。
-此外，通过组合 `useReducer` Hook，现在可以仅使用 React 的内置功能实现类似 Redux 的状态管理。
+此外，通过组合 `useReducer` Hook，现在可以仅使用 React 的内置功能实现类似 [Redux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 的状态管理。
 
 ```javascript
 // 使用 Context 和 useReducer 的状态管理
@@ -226,9 +226,9 @@ function CounterDisplay() {
 }
 ```
 
-因此，“对于简单的全局状态，不需要 Redux”的观点被广泛接受。然而，这种方法存在一个致命的性能陷阱。
+因此，“对于简单的全局状态，不需要 [Redux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/)”的观点被广泛接受。然而，这种方法存在一个致命的性能陷阱。
 
-### 6.2 Context API 的性能问题（多余的重新渲染）
+### 6.2 [Context API](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 的性能问题（多余的重新渲染）
 
 React 的 Context API 有一个规范：“当 Context 的值更新时，所有订阅该 Context（调用了 `useContext`）的组件都会无条件地重新渲染。”
 
@@ -245,9 +245,9 @@ React 的 Context API 有一个规范：“当 Context 的值更新时，所有�
 - **服务器状态 (Server State)**: 归服务器所有。异步获取。因为由多人共享和更改，可能会过时（Stale）。需要缓存管理、后台更新、重试机制等。
 - **客户端状态 (Client State)**: 归客户端（浏览器）所有。同步更新。例如黑暗模式或模态框的开闭等。
 
-### 7.1 React Query, SWR, Apollo Client 的崛起
+### 7.1 React Query, SWR, [Apollo Client](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/) 的崛起
 
-将 Server State 的管理从 Redux 或 Context 中分离出来，交由专用库来处理的方法成为主流。 **React Query (现 TanStack Query)** 和 **SWR** 应运而生。
+将 Server State 的管理从 [Redux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 或 Context 中分离出来，交由专用库来处理的方法成为主流。 **React Query (现 TanStack Query)** 和 **SWR** 应运而生。
 
 ```javascript
 // 使用 React Query 管理 Server State
@@ -265,18 +265,18 @@ function UserProfile({ userId }) {
 ```
 
 这些库抽象出了“在本地缓存服务器状态，并在需要时同步”这一复杂的过程。
-通过这种方式，需要由 Redux 等全局存储管理的数据大幅减少为“纯粹的客户端状态”，极大减轻了状态管理的负担。
+通过这种方式，需要由 [Redux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 等全局存储管理的数据大幅减少为“纯粹的客户端状态”，极大减轻了状态管理的负担。
 
-## 8. 原子化状态管理：Recoil 与 Jotai
+## 8. 原子化状态管理：[Recoil](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 与 [Jotai](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/)
 
 在 Server [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) 分离之后，如何高效管理剩下的 Client State 展开了新的竞争。
-为了解决 React 的渲染模型（自顶向下）和 Context API 的性能问题，诞生了 **原子化状态管理（Atomic State Management）** 的方法。
+为了解决 React 的渲染模型（自顶向下）和 [Context API](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 的性能问题，诞生了 **原子化状态管理（Atomic [State Management](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/)）** 的方法。
 
-2020 年 Facebook 团队发布了 **Recoil** ，受其影响，出现了 **Jotai** 等库。
+2020 年 Facebook 团队发布了 **[Recoil](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/)** ，受其影响，出现了 **[Jotai](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/)** 等库。
 
 ### 8.1 自底向上的状态管理
 
-Redux 采用的是“从单一的巨大状态树中截取所需部分（自顶向下）”的方法，而 Recoil 和 Jotai 则采用“创建状态的最小单位（Atom），并将它们组合后注入到组件树中（自底向上）”的方法。
+[Redux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 采用的是“从单一的巨大状态树中截取所需部分（自顶向下）”的方法，而 Recoil 和 Jotai 则采用“创建状态的最小单位（Atom），并将它们组合后注入到组件树中（自底向上）”的方法。
 
 ```mermaid
 graph BT
@@ -287,7 +287,7 @@ graph BT
     Component1 -.->|"更新 (Updates)"| AtomA
 ```
 
-Atom 是独立的状态单元。组件仅订阅（Subscribe）所需的 Atom。当 Atom 更新时，只有订阅了该 Atom 的组件会被精准地重新渲染。这完全解决了 Context API 存在的不必要重渲染问题。
+Atom 是独立的状态单元。组件仅订阅（Subscribe）所需的 Atom。当 Atom 更新时，只有订阅了该 Atom 的组件会被精准地重新渲染。这完全解决了 [Context API](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 存在的不必要重渲染问题。
 
 ```javascript
 // 使用 Jotai 的 Atomic State 示例
@@ -309,15 +309,15 @@ function ProductDisplay() {
 }
 ```
 
-Jotai 等库的用法几乎与 React 的 `useState` 相同，由于学习成本低且性能高，它们在现代 React 应用程序中已成为非常受欢迎的选择。
+[Jotai](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 等库的用法几乎与 React 的 `useState` 相同，由于学习成本低且性能高，它们在现代 React 应用程序中已成为非常受欢迎的选择。
 
-## 9. 代理与可变性：Zustand 与 Valtio
+## 9. 代理与可变性：[Zustand](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 与 Valtio
 
 作为另一股强劲的潮流，出现了一些将样板代码精简到极致，提供更直观 API 的库。这就是由 Poimandres 这个 OSS 组织开发的 **Zustand** 和 **Valtio** 。
 
-### 9.1 Zustand：追求极致简单的 Flux
+### 9.1 Zustand：追求极致简单的 [Flux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/)
 
-Zustand 与 Redux 一样采用了单一存储（Flux 架构），但排除了 Reducer 和 Provider 等复杂概念，提供了极其简单的基于 Hooks 的 API。
+Zustand 与 [Redux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 一样采用了单一存储（Flux 架构），但排除了 Reducer 和 Provider 等复杂概念，提供了极其简单的基于 Hooks 的 API。
 
 ```javascript
 // Zustand 示例
@@ -339,7 +339,7 @@ function Counter() {
 }
 ```
 
-Zustand 确立了兼顾 Redux 的健壮性和 Hooks 的简单性的“现代版 Redux”地位。
+[Zustand](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 确立了兼顾 [Redux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 的健壮性和 Hooks 的简单性的“现代版 Redux”地位。
 
 ### 9.2 Valtio：基于 Proxy 的可变状态管理
 
@@ -444,11 +444,11 @@ React Compiler 会在构建时对 React 组件代码进行静态分析，并 **�
 
 ## 13. 结论：状态管理将走向何方？
 
-从 MVC 的混乱开始，经历 Flux/Redux 带来的可预测性、Hooks 带来的简化、Server [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) 的分离、通过 Atomic 和 Proxy 带来的效率提升，再到基于 Signals 的细粒度响应式。
+从 MVC 的混乱开始，经历 [Flux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/)/[Redux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 带来的可预测性、Hooks 带来的简化、Server [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) 的分离、通过 Atomic 和 Proxy 带来的效率提升，再到基于 Signals 的细粒度响应式。
 
 回顾过去约 15 年前端状态管理的历史，我们可以清晰地看到一个趋势： **“在减少样板代码并降低开发者认知负担的同时，系统底层（框架和编译器）正在朝着自动优化性能的方向演进。”** 
 
-- **中小型 React 开发**: Jotai 或 Zustand 通常是最佳选择。
+- **中小型 React 开发**: [Jotai](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 或 [Zustand](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/) 通常是最佳选择。
 - **伴随数据获取的开发**: TanStack Query 等 Server State 管理工具是必不可少的。
 - **追求极致性能和 DX 的新项目**: 采用 Signals 的框架（如 SolidJS 和 Vue）极具吸引力。
 - **React 的未来**: 随着 React Compiler 的成熟，许多状态管理的性能问题将通过自动化得到解决。

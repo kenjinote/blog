@@ -112,7 +112,7 @@ Durch diese Implementierung interpretiert Google die Seite nicht nur als reine T
 
 ## 2. Funnel-Design: Vom Tutorial zur Conversion
 
-Leser eines Tech-Blogs kommen häufig über die Suche nach bestimmten Fehlermeldungen oder technischen Problemen (z.B. "React Context API Performance Optimierung") auf die Seite. Es ist wichtig, direkt nachdem ihre "Suchintention (Search Intent)" erfüllt wurde, auf natürliche Weise einen CTA (Call to Action) für die App zu platzieren.
+Leser eines Tech-Blogs kommen häufig über die Suche nach bestimmten Fehlermeldungen oder technischen Problemen (z.B. "React [Context API](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) Performance Optimierung") auf die Seite. Es ist wichtig, direkt nachdem ihre "Suchintention (Search Intent)" erfüllt wurde, auf natürliche Weise einen CTA (Call to Action) für die App zu platzieren.
 
 ### 2.1 Visualisierung der User Journey
 

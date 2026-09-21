@@ -37,7 +37,7 @@ Die CH behauptet, dass es zwischen diesen beiden keine weitere Mächtigkeit gibt
 
 ## 3. Cantors Leiden und [David Hilbert](https://kenji.blog/de/p/hilbert/)s These
 
-Cantor verbrachte sein Leben damit, diese Hypothese zu beweisen, doch ohne Erfolg. Manchmal glaubte er, sie „bewiesen“ zu haben, und ein anderes Mal, er hätte sie „widerlegt“. Sein mentaler Zustand wurde durch dieses schwierige Problem stark beeinträchtigt.
+Cantor verbrachte sein Leben damit, diese Hypothese zu beweisen, doch ohne Erfolg. Manchmal glaubte er, sie „bewiesen“ zu haben, und ein anderes Mal, er hätte sie „widerlegt“. Sein mentaler [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) wurde durch dieses schwierige Problem stark beeinträchtigt.
 
 Im Jahr 1900 stellte [David Hilbert](https://kenji.blog/de/p/hilbert/) auf dem 2. Internationalen Mathematikerkongress in Paris seine berühmten „23 mathematischen Probleme“ vor, die die Mathematik im 20. Jahrhundert lösen sollte. Das denkwürdige **erste Problem** war genau dieser „Beweis der Kontinuumshypothese“.
 

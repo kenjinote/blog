@@ -409,7 +409,7 @@ Gut gemacht! Damit ist die perfekte Webentwicklungs-Asset-[Pipeline](https://ken
 
 Das Tolle an dieser Architektur ist, **"dass Sie sie nur einmal einrichten müssen"**. Sobald die Pipeline eingerichtet ist, können Entwickler komplexe Benutzeroberflächen in rasanter Geschwindigkeit erstellen, ohne jemals eine CSS-Datei öffnen zu müssen, indem sie einfach intuitive Utility-Klassen in ihre HTML- oder Markdown-Templates schreiben.
 
-Da zudem die ausgegebene CSS-Größe stets minimiert wird, führt dies direkt zu besseren Core Web Vitals-Scores und ist aus SEO-Sicht sehr vorteilhaft.
+Da zudem die ausgegebene CSS-Größe stets minimiert wird, führt dies direkt zu besseren Core [Web Vitals](https://kenji.blog/de/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)-Scores und ist aus SEO-Sicht sehr vorteilhaft.
 
 Die Kombination aus Hugo und Tailwind CSS wird für jedes Projekt, vom persönlichen Tech-Blog bis zur großen Unternehmens-Website, weiterhin eine der "besten Entscheidungen" sein. Nutzen Sie diese mächtige Toolchain auf jeden Fall und genießen Sie ein komfortables Web-Entwicklungsleben!
 

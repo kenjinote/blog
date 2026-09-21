@@ -240,7 +240,7 @@ Hugo에서의 구현도 매우 간단합니다. `layouts/partials/head.html` 이
 {{ end }}
 ```
 
-`defer` 속성을 부여함으로써 HTML 파싱을 차단하지 않고 스크립트를 비동기적으로 불러와, DOM 구축 후에 실행시킬 수 있습니다. 이를 통해 초기 표시 속도(LCP: Largest Contentful [Paint](https://kenji.blog/ko/p/browser-rendering-mechanism-dom-paint/) 나 FCP: First Contentful Paint)에 미치는 영향을 최소화할 수 있습니다.
+`defer` 속성을 부여함으로써 HTML 파싱을 차단하지 않고 스크립트를 비동기적으로 불러와, DOM 구축 후에 실행시킬 수 있습니다. 이를 통해 초기 표시 속도([LCP](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/): Largest Contentful [Paint](https://kenji.blog/ko/p/browser-rendering-mechanism-dom-paint/) 나 FCP: First Contentful Paint)에 미치는 영향을 최소화할 수 있습니다.
 
 ---
 

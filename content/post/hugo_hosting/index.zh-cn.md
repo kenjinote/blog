@@ -240,7 +240,7 @@ Cloudflare Web Analytics只需嵌入一个非常轻量的JavaScript片段即可�
 {{ end }}
 ```
 
-通过添加 `defer` 属性，可以异步加载脚本而不阻塞HTML的解析，并在DOM构建完成后执行。这样可以把对初始显示速度（LCP: Largest Contentful [Paint](https://kenji.blog/zh-cn/p/browser-rendering-mechanism-dom-paint/) 和 FCP: First Contentful Paint）的影响降到最低。
+通过添加 `defer` 属性，可以异步加载脚本而不阻塞HTML的解析，并在DOM构建完成后执行。这样可以把对初始显示速度（[LCP](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/): Largest Contentful [Paint](https://kenji.blog/zh-cn/p/browser-rendering-mechanism-dom-paint/) 和 FCP: First Contentful Paint）的影响降到最低。
 
 ---
 

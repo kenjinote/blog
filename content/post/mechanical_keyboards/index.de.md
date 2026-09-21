@@ -87,7 +87,7 @@ flowchart LR
     C1 & C2 -->|"Spannung erkennen und auslesen"| M
 ```
 
-Die **Polling-Rate (Polling Rate)** gibt an, wie oft die Tastatur dem PC "den aktuellen Zustand der Tasten" meldet. Standardtastaturen haben eine Rate von 125 Hz (einmal alle 8 ms), aber bei High-End-Modellen gibt es auch solche mit 1000 Hz (einmal alle 1 ms) oder in jüngerer Zeit sogar mit ultraschnellen 8000 Hz (einmal alle 0,125 ms).
+Die **Polling-Rate (Polling Rate)** gibt an, wie oft die Tastatur dem PC "den aktuellen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) der Tasten" meldet. Standardtastaturen haben eine Rate von 125 Hz (einmal alle 8 ms), aber bei High-End-Modellen gibt es auch solche mit 1000 Hz (einmal alle 1 ms) oder in jüngerer Zeit sogar mit ultraschnellen 8000 Hz (einmal alle 0,125 ms).
 Für das Programmieren ist eine Leistung von 1000 Hz mehr als ausreichend, aber sie bietet die Sicherheit, bei extrem schnellem Tippen keine Anschläge zu verpassen.
 
 ### 2.2 N-Key Rollover (NKRO) und Anti-Ghosting

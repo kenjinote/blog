@@ -295,7 +295,7 @@ $$ G \propto \sum_{i=1}^{N} A_i $$
 
 監控無法透過WMI（Windows Management Instrumentation）或CIM（Common Information Model）取得資訊的自訂硬體裝置（例如：特殊的PCIe卡或感測器）。
 - **C++的角色** ：向裝置驅動程式發出 `DeviceIoControl` 呼叫，負責取得並解析二進位資料的DLL。
-- **PowerShell的角色** ：定期呼叫DLL，將解析結果格式化為JSON並傳送至監控伺服器的REST API。
+- **PowerShell的角色** ：定期呼叫DLL，將解析結果格式化為JSON並傳送至監控伺服器的[REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)。
 
 ## 記憶體管理與疑難排解的最佳實踐
 

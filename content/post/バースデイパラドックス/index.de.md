@@ -22,7 +22,7 @@ Die menschliche Intuition neigt dazu, wie folgt zu rechnen:
 "Ein Jahr hat 365 Tage. Wenn man Personen nacheinander in diese 365 Plätze einordnet, so dass es zu einer Überschneidung kommt, braucht man wohl mindestens etwa 180 Personen. Selbst vorsichtig geschätzt, wird die Wahrscheinlichkeit bei weniger als 50 bis 60 Personen doch nicht die Hälfte erreichen, oder?"
 
 Die von der Mathematik abgeleitete richtige Antwort ist jedoch nur **"23 Personen"**.
-In einer Schulklasse (ca. 30 bis 40 Personen) springt die Wahrscheinlichkeit, dass es ein Paar mit demselben Geburtstag gibt, sogar auf etwa 70% bis 89%. Bei 50 Personen erreicht die Wahrscheinlichkeit 97%, was den Zustand "Es ist seltener, dass es niemanden mit demselben Geburtstag gibt" bewirkt.
+In einer Schulklasse (ca. 30 bis 40 Personen) springt die Wahrscheinlichkeit, dass es ein Paar mit demselben Geburtstag gibt, sogar auf etwa 70% bis 89%. Bei 50 Personen erreicht die Wahrscheinlichkeit 97%, was den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) "Es ist seltener, dass es niemanden mit demselben Geburtstag gibt" bewirkt.
 
 Warum weicht unsere Intuition so stark von der tatsächlichen Wahrscheinlichkeit ab?
 

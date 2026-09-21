@@ -116,7 +116,7 @@ La condition pour que le test de Miller-Rabin détermine que $N$ est "premier (o
 Si $N$ est premier, cette condition sera toujours remplie pour n'importe quel $a$. Inversement, si $N$ est un nombre composé, lorsqu'un $a$ aléatoire est choisi, il est prouvé mathématiquement que la probabilité de remplir cette condition (la probabilité d'être trompé) est inférieure ou égale à $\frac{1}{4}$.
 En effectuant $k$ tests indépendants, la probabilité d'une fausse identification devient inférieure ou égale à $\left(\frac{1}{4}\right)^k$, ce qui peut être considéré comme pratiquement nul. Il n'existe pas de nombres qui puissent "tromper de manière absolue" comme les nombres de Carmichael.
 
-## Flux de l'algorithme de la méthode de Miller-Rabin (Organigramme Mermaid)
+## [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de l'algorithme de la méthode de Miller-Rabin (Organigramme Mermaid)
 
 Le diagramme ci-dessous illustre le flux logique d'un seul test (un test pour une base $a$) de la méthode de test de primalité de Miller-Rabin.
 

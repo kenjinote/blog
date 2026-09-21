@@ -483,7 +483,7 @@ Wenn man den Speicher für den Kontext addiert, erkennt man, dass das Modell bei
 Wenn man Ollama als API in einem lokalen Netzwerk bereitstellt, ergeben sich vielfältige Anwendungsmöglichkeiten, die weit über einen bloßen Chatbot hinausgehen.
 
 ### 1. Aufbau eines lokalen RAG (Retrieval-Augmented Generation)
-Durch die Kombination einer lokalen Vektordatenbank wie ChromaDB oder Qdrant mit dem Ollama-Endpunkt `/api/embeddings` (unter Nutzung von Embedding-Modellen wie `nomic-embed-text`) kann ein sicheres, komplett offline funktionierendes RAG-System aufgebaut werden, in dem interne, vertrauliche Dokumente eingelesen und Fragen dazu beantwortet werden können.
+Durch die Kombination einer lokalen Vektordatenbank wie ChromaDB oder Qdrant mit dem Ollama-Endpunkt `/api/embeddings` (unter Nutzung von Embedding-Modellen wie `nomic-embed-text`) kann ein sicheres, komplett [offline](https://kenji.blog/de/p/pwa-progressive-web-apps-service-worker/) funktionierendes RAG-System aufgebaut werden, in dem interne, vertrauliche Dokumente eingelesen und Fragen dazu beantwortet werden können.
 
 ### 2. KI-Assistent für IDEs und Editoren
 Indem man Ollama als Backend für VS Code-Erweiterungen (wie Continue.dev) oder Neovim-Plugins festlegt, können Code-Vervollständigung und Code-Erklärungen im Stil von GitHub Copilot lokal (z. B. mit Modellen wie `codellama` oder `deepseek-coder`) und vollkommen kostenlos durchgeführt werden.

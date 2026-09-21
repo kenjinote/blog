@@ -12,7 +12,7 @@ description: 'Local LLMs that protect privacy and can be used for free. In this 
 
 # Introduction
 
-In recent years, the technological evolution of Large Language Models (LLMs) has been remarkable, and cloud-based AI services like ChatGPT and Claude have become widespread. However, on the other hand, the need to "not send company confidential data to external servers," "keep API usage fees down," and "build AI systems that operate completely offline" is rapidly increasing.
+In recent years, the technological evolution of Large Language Models (LLMs) has been remarkable, and cloud-based AI services like ChatGPT and Claude have become widespread. However, on the other hand, the need to "not send company confidential data to external servers," "keep API usage fees down," and "build AI systems that operate completely [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/)" is rapidly increasing.
 
 Meeting this demand are "Local LLMs (Open Source LLMs)," which you can download and run directly on your own PC or in-house servers. Until around 2023, it was difficult to achieve practical accuracy locally, but with the evolution of model architectures and the development of quantization technologies, it is now possible to run very high-performance LLMs smoothly even on consumer-grade GPUs (such as NVIDIA RTX 3090 / 4090 or Mac's Apple Silicon).
 
@@ -259,7 +259,7 @@ By opening a terminal and typing the following command, Llama 3 will start up.
 ```bash
 ollama run llama3
 ```
-Also, since Ollama functions as a REST API server in the background, it is extremely easy to integrate with Python scripts and external applications.
+Also, since Ollama functions as a [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) server in the background, it is extremely easy to integrate with Python scripts and external applications.
 
 ### 2. LM Studio
 An application recommended for those who want intuitive GUI-based operations. You can search and download from Hugging Face's massive list of GGUF models from within the app, and enjoy conversations in a chat interface akin to ChatGPT. The feature that visually tells you which models will fit in your PC's RAM/VRAM is very convenient.

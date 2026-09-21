@@ -131,7 +131,7 @@ Cela vous libère du cauchemar opérationnel tel que : "Si une erreur se produit
 
 ---
 
-# 4. Flux d'exécution : Init, Plan, Apply
+# 4. [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) d'exécution : Init, Plan, Apply
 
 Les opérations de base de Terraform sont divisées en 3 grandes phases. C'est ce flux de travail qui permet des modifications d'infrastructure en toute sécurité.
 

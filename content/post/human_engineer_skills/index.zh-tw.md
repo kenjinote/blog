@@ -134,7 +134,7 @@ AI 雖然能寫出「優先考慮 C 的程式碼」或「優先考慮 A 的程�
 
 ### 4.2 非同步通訊與最終一致性 (Eventual Consistency)
 
-當系統規模擴大時，服務間的整合會從基於 REST API 的同步通訊，轉移到使用訊息佇列 (Message Queue，如 Kafka, RabbitMQ) 的非同步通訊。此時，資料一致性就會從即時一致性變為「最終一致性 (Eventual Consistency)」。
+當系統規模擴大時，服務間的整合會從基於 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 的同步通訊，轉移到使用訊息佇列 (Message Queue，如 Kafka, RabbitMQ) 的非同步通訊。此時，資料一致性就會從即時一致性變為「最終一致性 (Eventual Consistency)」。
 應該在什麼時機導入 Saga 模式或 [CQRS](https://kenji.blog/zh-tw/p/event-driven-architecture-async/) (Command Query Responsibility Segregation) 等進階架構模式？制定這些複雜的決策與描繪系統整體的藍圖，正是資深工程師的真本領。
 
 ```mermaid

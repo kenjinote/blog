@@ -54,7 +54,7 @@ Je heller das Licht, desto dunkler der Schatten. Serverless bedeutet nicht, dass
 
 Wenn Sie diesen „Hintergrundmechanismus“ nicht verstehen, werden Sie mit unerwarteten Leistungseinbußen und architektonischen Einschränkungen konfrontiert.
 
-### 2.1. Keine Zustandsspeicherung (Zustandslosigkeit)
+### 2.1. Keine [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sspeicherung (Zustandslosigkeit)
 
 Lambda-Funktionen müssen grundsätzlich **zustandslos** (stateless) sein. Da die Ausführungsumgebung für jede Anfrage weggeworfen (oder wiederverwendet) wird, gibt es keine Garantie dafür, dass das lokale Dateisystem oder In-Memory-Daten an die nächste Anfrage weitergegeben werden.
 
@@ -111,7 +111,7 @@ Wenn eine Lambda-Funktion aufgerufen wird und es keine bereits laufende, wartend
 
 ### 4.1. Lebenszyklus und Aufschlüsselung der Latenz
 
-Der Lebenszyklus einer Lambda-Funktion kann wie im folgenden Mermaid-Zustandsdiagramm dargestellt werden.
+Der Lebenszyklus einer Lambda-Funktion kann wie im folgenden Mermaid-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sdiagramm dargestellt werden.
 
 ```mermaid
 stateDiagram-v2
@@ -151,7 +151,7 @@ Die Zeit, die für einen Kaltstart benötigt wird, kann grob in den **AWS-seitig
 Mithilfe der Warteschlangentheorie (z. B. dem M/M/c-Modell) kann die Wahrscheinlichkeit eines Kaltstarts mathematisch modelliert werden.
 Angenommen, die Ankunftsrate der Anfragen ist $\lambda$, die Überlebenszeit eines warmen [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)s ist $T_w$ und die Verarbeitungszeit ist $\mu$. Wenn der Datenverkehr ansteigt, nimmt die erforderliche Parallelität (Anzahl der Container) schnell zu, und die Kaltstartwahrscheinlichkeit steigt.
 
-Im stationären Zustand kann die Wahrscheinlichkeit $P_{warm}$, dass ein warmer Container wiederverwendet wird, wie folgt approximiert werden:
+Im stationären [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) kann die Wahrscheinlichkeit $P_{warm}$, dass ein warmer Container wiederverwendet wird, wie folgt approximiert werden:
 
 $ P_{warm} \approx 1 - e^{-\lambda \cdot T_w} $
 
@@ -202,7 +202,7 @@ Zusätzlich ist es auch effektiv, eine verzögerte Auswertung (Lazy Initializati
 
 Für Unternehmensanforderungen, bei denen Kaltstarts unbedingt eliminiert werden müssen, bietet AWS eine Lösung namens **Provisioned Concurrency** (Bereitgestellte Nebenläufigkeit) an.
 
-Dabei handelt es sich um eine Funktion, die eine vorgegebene Anzahl von Lambda-Ausführungsumgebungen vorinitialisiert und im warmen Zustand bereithält. Dadurch werden Kaltstarts vollständig beseitigt und eine durchgehend niedrige Latenz (im Millisekundenbereich) gewährleistet.
+Dabei handelt es sich um eine Funktion, die eine vorgegebene Anzahl von Lambda-Ausführungsumgebungen vorinitialisiert und im warmen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) bereithält. Dadurch werden Kaltstarts vollständig beseitigt und eine durchgehend niedrige Latenz (im Millisekundenbereich) gewährleistet.
 
 Allerdings gibt es ein Dilemma (einen Kompromiss): Da auch im Leerlauf Kosten anfallen, geht der Vorteil der „Pay-as-you-go“-Abrechnung von Serverless teilweise verloren.
 
@@ -257,7 +257,7 @@ Wenn Sie SnapStart aktivieren, wird die Kaltstartzeit von Java-Funktionen **bis 
 
 Es gibt jedoch einige Dinge zu beachten:
 
-1. **Problem der Zufallszahlengenerierung**: Da die wiederhergestellte VM mit exakt demselben Speichersnapshot startet, ist auch der Seed-Zustand des Standard-Pseudozufallszahlengenerators (PRNG) identisch. Für kryptografische Sicherheit relevante Zufallszahlen müssen sicher neu initialisiert werden, z. B. mithilfe von `/dev/urandom` des Betriebssystems (AWS bietet hierfür entsprechende Bibliotheken an).
+1. **Problem der Zufallszahlengenerierung**: Da die wiederhergestellte VM mit exakt demselben Speichersnapshot startet, ist auch der Seed-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) des Standard-Pseudozufallszahlengenerators (PRNG) identisch. Für kryptografische Sicherheit relevante Zufallszahlen müssen sicher neu initialisiert werden, z. B. mithilfe von `/dev/urandom` des Betriebssystems (AWS bietet hierfür entsprechende Bibliotheken an).
 2. **Trennung der Netzwerkverbindungen**: TCP-Verbindungen zu Datenbanken, die in der Initialisierungsphase aufgebaut wurden, könnten aufgrund von serverseitigen Timeouts bereits getrennt sein, wenn sie aus dem Snapshot wiederhergestellt werden. Daher müssen Sie innerhalb des Handlers eine Logik (Wiederholungsmechanismus) implementieren, um Verbindungsfehler zu erkennen und die Verbindung neu aufzubauen.
 
 ---
@@ -268,7 +268,7 @@ Die Serverless-Architektur, insbesondere AWS Lambda, hat zweifellos einen Paradi
 
 Das „Licht“ der verringerten Infrastrukturverwaltung, der Kostenoptimierung und der sofortigen Skalierung verbessert die Agilität von Unternehmen, vom Startup bis zum Großkonzern, dramatisch.
 
-Wenn Sie jedoch Architekturen entwerfen und dabei die „Schatten“ ignorieren, wie Kaltstarts, die Einschränkung der Zustandslosigkeit und die Komplexität des VPC-Networkings, werden Sie in der Produktionsumgebung unerwartete Schmerzen erleiden.
+Wenn Sie jedoch Architekturen entwerfen und dabei die „Schatten“ ignorieren, wie Kaltstarts, die Einschränkung der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)slosigkeit und die Komplexität des VPC-Networkings, werden Sie in der Produktionsumgebung unerwartete Schmerzen erleiden.
 
 Das Wichtigste ist, das grundlegende technische Prinzip nicht zu vergessen: **Es gibt keine „Silver Bullet“ (Allheilmittel)**.
 

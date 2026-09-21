@@ -264,7 +264,7 @@ ControlNet 具有这样一种架构：在保持预训练的 Stable Diffusion 模
 
 ## 10. 结语：AI图像生成的未来与本地环境的优势
 
-以 Stable Diffusion 为开端的开源 AI 图像生成运动，正持续向 SDXL，以及 Stable Diffusion 3、Flux.1 等次世代架构进化。模型的参数量已经从数十亿扩大到了百亿级别，未来对 24GB 以上 VRAM 的 GPU 环境的需求将进一步增加。
+以 Stable Diffusion 为开端的开源 AI 图像生成运动，正持续向 SDXL，以及 Stable Diffusion 3、[Flux](https://kenji.blog/zh-cn/p/state-management-history-redux-context-recoil-zustand/).1 等次世代架构进化。模型的参数量已经从数十亿扩大到了百亿级别，未来对 24GB 以上 VRAM 的 GPU 环境的需求将进一步增加。
 
 然而，TensorRT 以及量化技术（Quantization）、GGUF 等本地优化技术也在同样加快其进化的步伐，一个即使在面向普通消费者的硬件上也能进行充分推理的生态系统正在形成。
 

@@ -311,9 +311,9 @@ expiryDate: "2026-12-31T23:59:59Z"
 
 ---
 
-## 7. Kinerja Situs dan Core Web Vitals
+## 7. Kinerja Situs dan Core [Web Vitals](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
-Dalam SEO, **kecepatan memuat halaman** sama pentingnya dengan optimasi tag. Google memasukkan Core Web Vitals (LCP, FID/INP, CLS) sebagai faktor peringkat.
+Dalam SEO, **kecepatan memuat halaman** sama pentingnya dengan optimasi tag. Google memasukkan [Core Web Vitals](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) sebagai faktor peringkat.
 
 Sebagai situs statis, Hugo pada dasarnya memiliki TTFB (Time to First Byte) yang sangat baik, tetapi untuk blog yang menggunakan banyak gambar, optimasi gambar adalah suatu keharusan. Dengan menggabungkan fitur pemrosesan gambar Hugo yang kuat (Image Processing) dengan frontmatter, Anda dapat mengotomatiskan konversi ke format generasi berikutnya (seperti WebP) dan mengubah ukuran saat proses build.
 

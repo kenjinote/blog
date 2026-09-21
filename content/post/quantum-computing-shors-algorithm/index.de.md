@@ -38,7 +38,7 @@ $$
 |\psi\rangle = \alpha|0\rangle + \beta|1\rangle
 $$
 
-Hierbei sind $\alpha$ und $\beta$ komplexe Zahlen, die als **Wahrscheinlichkeitsamplituden** bezeichnet werden. Wenn ein Qubit beobachtet (gemessen) wird, kollabiert der Zustand (Wellenpaketkollaps) auf $|0\rangle$ oder $|1\rangle$, und die Wahrscheinlichkeiten für die jeweiligen Ergebnisse sind $|\alpha|^2$ und $|\beta|^2$. Da die Summe der Wahrscheinlichkeiten 1 sein muss, gilt die folgende Normierungsbedingung:
+Hierbei sind $\alpha$ und $\beta$ komplexe Zahlen, die als **Wahrscheinlichkeitsamplituden** bezeichnet werden. Wenn ein Qubit beobachtet (gemessen) wird, kollabiert der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) (Wellenpaketkollaps) auf $|0\rangle$ oder $|1\rangle$, und die Wahrscheinlichkeiten für die jeweiligen Ergebnisse sind $|\alpha|^2$ und $|\beta|^2$. Da die Summe der Wahrscheinlichkeiten 1 sein muss, gilt die folgende Normierungsbedingung:
 
 $$
 |\alpha|^2 + |\beta|^2 = 1
@@ -222,7 +222,7 @@ $$
 \frac{1}{\sqrt{Q}} \sum_{x=0}^{Q-1} |x\rangle |a^x \bmod N\rangle
 $$
 
-In dieser Phase wurden die Ergebnisse von $f(x)$ für alle $x$ gleichzeitig als Quantenüberlagerung berechnet. Wenn wir jedoch in diesem Zustand messen würden, erhielten wir nur ein zufälliges $x$ und das entsprechende $f(x)$, und die Periode $r$ bliebe unbekannt.
+In dieser Phase wurden die Ergebnisse von $f(x)$ für alle $x$ gleichzeitig als Quantenüberlagerung berechnet. Wenn wir jedoch in diesem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) messen würden, erhielten wir nur ein zufälliges $x$ und das entsprechende $f(x)$, und die Periode $r$ bliebe unbekannt.
 
 ### 5.2 Extraktion des periodischen Zustands und Quanteninterferenz
 

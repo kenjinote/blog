@@ -30,7 +30,7 @@ Die Informationseinheit klassischer Computer ist das „Bit“. Ein Bit nimmt im
 
 Andererseits wird die kleinste Informationseinheit eines Quantencomputers als **Quantenbit (Qubit: Quantum bit)** bezeichnet. Ein Qubit kann nicht nur die Zustände `0` und `1` annehmen, sondern ist auch in der Lage, **beide Zustände gleichzeitig beizubehalten**.
 
-Mathematisch wird der Zustand eines Qubits $|\psi\rangle$ als Linearkombination (Superposition) der Basiszustände $|0\rangle$ und $|1\rangle$ ausgedrückt.
+Mathematisch wird der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) eines Qubits $|\psi\rangle$ als Linearkombination (Superposition) der Basiszustände $|0\rangle$ und $|1\rangle$ ausgedrückt.
 
 $$
 |\psi\rangle = \alpha|0\rangle + \beta|1\rangle
@@ -53,7 +53,7 @@ graph LR
 
 ### 2.2 Superposition (Überlagerung)
 
-Wie bereits erwähnt, wird der Zustand, in dem die Zustände $|0\rangle$ und $|1\rangle$ vermischt sind, als **Superposition** bezeichnet.
+Wie bereits erwähnt, wird der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), in dem die Zustände $|0\rangle$ und $|1\rangle$ vermischt sind, als **Superposition** bezeichnet.
 
 Wenn sich beispielsweise ein einzelnes Qubit in einem Zustand der vollkommen gleichmäßigen Superposition befindet, gilt $\alpha = \frac{1}{\sqrt{2}}$ und $\beta = \frac{1}{\sqrt{2}}$.
 
@@ -68,7 +68,7 @@ Wenn zwei Qubits vorhanden sind, können wir eine Superposition der vier Zustän
 
 Die stärkste und mysteriöseste Eigenschaft im Quantencomputing ist die **Quantenverschränkung (Entanglement)**. Dieses Phänomen, das Einstein als "spukhafte Fernwirkung" bezeichnete, beschreibt die Eigenschaft, dass zwei oder mehr Qubits so stark miteinander verbunden sind, dass die Bestimmung des Zustands des einen Qubits sofort auch den Zustand des anderen bestimmt, ganz gleich, wie weit sie physisch voneinander entfernt sind.
 
-Einer der bekanntesten verschränkten Quantenzustände, der „Bell-Zustand (Bell [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/))“, der $\Phi^+$-Zustand, wird wie folgt ausgedrückt:
+Einer der bekanntesten verschränkten Quantenzustände, der „Bell-Zustand (Bell [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/))“, der $\Phi^+$-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), wird wie folgt ausgedrückt:
 
 $$
 |\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}
@@ -186,7 +186,7 @@ graph TD
 
 ---
 
-## 5. Praxis: Aufbau einer Schaltung zur Erzeugung eines Bell-Zustands (Quantenverschränkung)
+## 5. Praxis: Aufbau einer Schaltung zur Erzeugung eines Bell-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s (Quantenverschränkung)
 
 Lassen Sie uns die "Quantenverschränkung (den Bell-Zustand)", die wir in der Theorie gelernt haben, nun tatsächlich mit Qiskit erzeugen. Unser Zielzustand ist $|\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}$.
 
@@ -276,7 +276,7 @@ Die Konsolenausgabe sollte in etwa wie folgt aussehen:
 (*Da die Wahrscheinlichkeiten zufällig sind, schwanken die genauen Werte bei jeder Ausführung leicht)
 
 In einer idealen Simulationsumgebung werden als Messergebnisse zu etwa 50% `00` und zu 50% `11` beobachtet, und `01` oder `10` werden gar nicht beobachtet.
-Dies stimmt exakt mit der theoretischen Vorhersage unseres generierten Bell-Zustands $|\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}$ überein. Wenn das erste Qubit 0 ist, ist das zweite notwendigerweise 0; wenn es 1 ist, ist das zweite notwendigerweise 1. Diese „Quantenverschränkung“ wurde somit exakt simuliert.
+Dies stimmt exakt mit der theoretischen Vorhersage unseres generierten Bell-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s $|\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}$ überein. Wenn das erste Qubit 0 ist, ist das zweite notwendigerweise 0; wenn es 1 ist, ist das zweite notwendigerweise 1. Diese „Quantenverschränkung“ wurde somit exakt simuliert.
 
 Wenn Sie dies jedoch auf einer echten Quantencomputer-Hardware (IBM Quantum Hardware) ausführen, können aufgrund der Auswirkungen von Rauschen (Quantendekohärenz und Gatterfehler) geringfügig Zustände wie `01` und `10` beobachtet werden. Wie dieses Rauschen minimiert werden kann (Quantenfehlerkorrektur), ist eine der größten Herausforderungen in der aktuellen Entwicklung von Quantencomputern.
 
@@ -284,7 +284,7 @@ Wenn Sie dies jedoch auf einer echten Quantencomputer-Hardware (IBM Quantum Hard
 
 ## 6. Hochskalierung zu fortgeschritteneren Algorithmen
 
-Die Erzeugung eines Bell-Zustands kann man als das „Hello World“ der Quantenprogrammierung bezeichnen. Indem wir darauf aufbauen, können wir leistungsstarke Algorithmen konstruieren, die klassische Computer übertreffen.
+Die Erzeugung eines Bell-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s kann man als das „Hello World“ der Quantenprogrammierung bezeichnen. Indem wir darauf aufbauen, können wir leistungsstarke Algorithmen konstruieren, die klassische Computer übertreffen.
 
 ### 6.1 Der Deutsch-Jozsa-Algorithmus (Deutsch-Jozsa Algorithm)
 
@@ -309,7 +309,7 @@ graph TD
 
 ## 7. Zusammenfassung und zukünftiges Lernen
 
-In diesem Artikel haben wir detailliert die Reise erläutert – angefangen bei den grundlegenden Konzepten des Quantencomputings wie Superposition und Quantenverschränkung, über die Manipulation von Quantenlogikgattern mittels Qiskit, bis hin zum tatsächlichen Aufbau, zur Simulation eines Bell-Zustands und der Interpretation der Ergebnisse.
+In diesem Artikel haben wir detailliert die Reise erläutert – angefangen bei den grundlegenden Konzepten des Quantencomputings wie Superposition und Quantenverschränkung, über die Manipulation von Quantenlogikgattern mittels Qiskit, bis hin zum tatsächlichen Aufbau, zur Simulation eines Bell-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s und der Interpretation der Ergebnisse.
 
 Da Qiskit in der zugänglichen Programmiersprache Python geschrieben werden kann, ist es ein leistungsstarkes Werkzeug, das es Ihnen ermöglicht, mathematische und physikalische Barrieren zu überwinden und sich auf die Konstruktion von Algorithmen zu konzentrieren. Quantencomputer befinden sich derzeit in der Ära rauschanfälliger Quantengeräte mittlerer Größe (NISQ: Noisy Intermediate-Scale Quantum), aber angewandte Forschungen in vielen Bereichen wie maschinelles Quantenlernen (Quantum Machine Learning), chemische Simulationen (Quantum Chemistry) und Kryptanalyse schreiten weltweit rasant voran.
 

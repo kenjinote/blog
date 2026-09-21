@@ -168,7 +168,7 @@ Pour utiliser Qiskit, vous avez besoin d'un environnement Python. Installez Qisk
 pip install qiskit qiskit-aer qiskit-ibm-runtime matplotlib pylatexenc
 ```
 
-### 4.3 Flux de base de la programmation
+### 4.3 [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de base de la programmation
 
 La programmation quantique avec Qiskit se déroule principalement selon les étapes suivantes.
 

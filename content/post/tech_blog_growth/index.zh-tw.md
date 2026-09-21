@@ -22,14 +22,14 @@ description: '利用數據與自動化將技術部落格流量最大化的策略
 
 作為部落格基礎的系統（如靜態網站生成器）和HTML結構，是搜尋引擎正確理解內容的最重要項目。
 
-### 1.1 Core Web Vitals 的最佳化
+### 1.1 Core [Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) 的最佳化
 
-Google 採用頁面體驗作為排名因素，特別是 **Core Web Vitals (LCP, FID/INP, CLS)** 在技術部落格中也無法忽視。
+Google 採用頁面體驗作為排名因素，特別是 **[Core Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) ([LCP](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))** 在技術部落格中也無法忽視。
 技術部落格經常大量使用原始碼區塊、數學公式（MathJax / KaTeX）和圖解圖片。這些都會成為延遲頁面渲染的因素。
 
 - **LCP (Largest Contentful [Paint](https://kenji.blog/zh-tw/p/browser-rendering-mechanism-dom-paint/))**: 首屏主要內容的載入速度。主視覺圖片應使用 WebP 或 AVIF，並加上 `fetchpriority="high"` 屬性進行預載入。此外，用於語法標明的巨大 CSS 或 JS 應設計為非同步載入，或僅在需要的頁面載入。
-- **CLS (Cumulative [Layout](https://kenji.blog/zh-tw/p/browser-rendering-mechanism-dom-paint/) Shift)**: 文章載入過程中的版面偏移。透過 CSS 的 `aspect-ratio` 等預先保留數學公式和圖片的顯示區域，可以防止後續 DOM 插入時造成的畫面跳動。
-- **INP (Interaction to Next [Paint](https://kenji.blog/zh-tw/p/browser-rendering-mechanism-dom-paint/))**: 對使用者操作的響應性。繁重的 JavaScript（例如客戶端的動態全文檢索或巨大的 Markdown 解析器執行等）不應在主執行緒上執行，必須轉移到 Web Worker，或者在建置時生成靜態 HTML (SSG)。
+- **[CLS](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Cumulative [Layout](https://kenji.blog/zh-tw/p/browser-rendering-mechanism-dom-paint/) Shift)**: 文章載入過程中的版面偏移。透過 CSS 的 `aspect-ratio` 等預先保留數學公式和圖片的顯示區域，可以防止後續 DOM 插入時造成的畫面跳動。
+- **[INP](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) (Interaction to Next [Paint](https://kenji.blog/zh-tw/p/browser-rendering-mechanism-dom-paint/))**: 對使用者操作的響應性。繁重的 JavaScript（例如客戶端的動態全文檢索或巨大的 Markdown 解析器執行等）不應在主執行緒上執行，必須轉移到 Web Worker，或者在建置時生成靜態 HTML (SSG)。
 
 ### 1.2 結構化資料（JSON-LD）的實作
 
@@ -256,7 +256,7 @@ flowchart TD
 ### 5.2 自動化管道的建置重點
 
 1. **透過 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 進行建置與部署**
-   如果使用靜態網站生成器，可利用 GitHub Actions 將 HTML 的生成與部署到主機服務（Vercel, Netlify, Cloudflare Pages 等）自動化。這時，作為前述 Core Web Vitals 的對策，將圖片最佳化流程（例如自動轉換為 WebP）納入建置管道也是非常有效的。
+   如果使用靜態網站生成器，可利用 GitHub Actions 將 HTML 的生成與部署到主機服務（Vercel, Netlify, Cloudflare Pages 等）自動化。這時，作為前述 Core [Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) 的對策，將圖片最佳化流程（例如自動轉換為 WebP）納入建置管道也是非常有效的。
 
 2. **利用 Zapier/IFTTT 搭配 RSS 觸發的 SNS 串接**
    網站生成器在建置時會產生最新的 RSS feed (XML)。讓 Zapier 或 Make (前 Integromat) 等 iPaaS 讀取這個 feed，並建立「當 RSS 有新增項目時，就將標題和 URL 發布到 X (Twitter) 和 LinkedIn」的工作流程。這樣一來，文章發布的瞬間就能自動通知追蹤者。

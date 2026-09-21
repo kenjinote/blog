@@ -234,7 +234,7 @@ if __name__ == "__main__":
 1. **RecursiveCharacterTextSplitter**:
    Ini adalah pemisah yang paling direkomendasikan dalam pemisahan bahasa alami. Ia mencoba untuk membagi dalam urutan paragraf (`\n\n`), baris (`\n`), dan tanda baca titik (`。`), berusaha untuk mempertahankannya dalam `chunk_size` yang ditentukan sambil sebisa mungkin menjaga kesatuan makna. Dengan mengatur `chunk_overlap`, ini mencegah terputusnya batas konteks yang menyebabkan hilangnya informasi.
 2. **HuggingFaceEmbeddings**:
-   `intfloat/multilingual-e5-large` adalah model embedding sumber terbuka yang sangat kuat dan mendukung banyak bahasa. Teks dapat divektorisasi secara offline dalam memori lokal tanpa menggunakan API cloud (seperti `text-embedding-ada-002` milik OpenAI).
+   `intfloat/multilingual-e5-large` adalah model embedding sumber terbuka yang sangat kuat dan mendukung banyak bahasa. Teks dapat divektorisasi secara [offline](https://kenji.blog/id/p/pwa-progressive-web-apps-service-worker/) dalam memori lokal tanpa menggunakan API cloud (seperti `text-embedding-ada-002` milik OpenAI).
 3. **ChromaDB**:
    Karena beroperasi dalam memori atau penyimpanan lokal (berbasis SQLite), tidak perlu menyiapkan server database yang rumit. Dengan menentukan `persist_directory`, Anda dapat melompati proses vektorisasi pada saat dijalankan ulang dan memuat DB dari disk.
 

@@ -155,7 +155,7 @@ Wie das Diagramm zeigt, entsteht in dem Moment, in dem $D$ sich selbst als Einga
 
 Als [Alan Turing](https://kenji.blog/de/p/turing/) dieses Problem 1936 aufwarf und bewies, gab es noch keine elektronischen Rechenmaschinen (Computer) wie heute. Um die Frage „Was ist Berechnung?“ mathematisch exakt zu definieren, erfand er eine fiktive Maschine, die **„Turingmaschine“** ([Turing Machine](https://kenji.blog/de/p/turing-machine-computability/)).
 
-Eine Turingmaschine besteht aus einem unendlich langen Band, einem Schreib-Lese-Kopf, der Informationen auf dem Band liest und schreibt, und einer Zustandsübergangstabelle, die den Zustand der Maschine verwaltet. Es ist bekannt, dass selbst die komplexesten modernen Programme theoretisch auf diese Turingmaschine reduziert werden können. Dies wird als **„Church-Turing-These“** (Church-Turing Thesis) bezeichnet.
+Eine Turingmaschine besteht aus einem unendlich langen Band, einem Schreib-Lese-Kopf, der Informationen auf dem Band liest und schreibt, und einer [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergangstabelle, die den Zustand der Maschine verwaltet. Es ist bekannt, dass selbst die komplexesten modernen Programme theoretisch auf diese Turingmaschine reduziert werden können. Dies wird als **„Church-Turing-These“** (Church-Turing Thesis) bezeichnet.
 
 Turing nutzte dieses einfache Modell, um zu versuchen, eine Grenze zwischen „berechenbaren Problemen“ und „unberechenbaren Problemen“ zu ziehen. Das [Halteproblem](https://kenji.blog/de/p/turing-machine-computability/), als Paradebeispiel für ein unentscheidbares Problem, war das Resultat dieser Entdeckung.
 

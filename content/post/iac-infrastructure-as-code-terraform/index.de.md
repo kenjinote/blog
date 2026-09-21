@@ -18,7 +18,7 @@ tags:
 
 In der Welt der Systementwicklung hat längst ein Paradigmenwechsel stattgefunden, bei dem nicht nur der Code der Anwendung, sondern auch die Infrastruktur selbst als Code verwaltet wird. Das ist **Infrastructure as Code (IaC)** . Der manuelle Aufbau von Servern (die sogenannte "handbuchbasierte Konstruktion" oder "Klick-Bedienung") war eine Brutstätte für menschliche Fehler und litt unter dem fatalen Problem mangelnder Skalierbarkeit und Reproduzierbarkeit.
 
-In diesem Artikel beginnen wir mit dem Konzept von IaC und konzentrieren uns dann auf **Terraform** , das als De-facto-Standard gelten kann. Wir werden sehr detailliert auf die von Terraform übernommene Philosophie des "deklarativen Konfigurationsmanagements", die interne Architektur, die Mechanismen des Zustandsmanagements (State) und praktische Best Practices eingehen.
+In diesem Artikel beginnen wir mit dem Konzept von IaC und konzentrieren uns dann auf **Terraform** , das als De-facto-Standard gelten kann. Wir werden sehr detailliert auf die von Terraform übernommene Philosophie des "deklarativen Konfigurationsmanagements", die interne Architektur, die Mechanismen des [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smanagements (State) und praktische Best Practices eingehen.
 
 ---
 
@@ -40,7 +40,7 @@ Durch die Codierung der Infrastruktur können die exzellenten Praktiken, die in 
 1. **Versionskontrolle** : Der Verlauf von Infrastrukturänderungen kann mithilfe eines VCS (Versionskontrollsystem) wie Git verwaltet werden.
 2. **Review-Prozess** : Code-Reviews durch Pull Requests (PR) werden möglich, was die Qualität vor der Umsetzung sicherstellt.
 3. **Automatisierung und kontinuierliche Integration** : Durch die Einbindung in eine [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) können Tests und Deployments automatisiert werden.
-4. **Konsistenz und Idempotenz (Idempotency)** : Egal wie oft es ausgeführt wird, es wird garantiert immer das gleiche Ergebnis (Zustand) erzielt.
+4. **Konsistenz und Idempotenz (Idempotency)** : Egal wie oft es ausgeführt wird, es wird garantiert immer das gleiche Ergebnis ([Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)) erzielt.
 
 ## 1.3. Der Unterschied zwischen imperativ (Imperative) und deklarativ (Declarative)
 
@@ -97,7 +97,7 @@ resource "aws_instance" "web" {
 }
 ```
 
-Dieser Code deklariert einen Zustand, in dem "eine EC2-Instanz mit der angegebenen AMI und dem Instanztyp in der Region Tokio existiert".
+Dieser Code deklariert einen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), in dem "eine EC2-Instanz mit der angegebenen AMI und dem Instanztyp in der Region Tokio existiert".
 
 ---
 
@@ -125,7 +125,7 @@ Durch diesen auf der Graphentheorie basierenden Ansatz erreicht Terraform Folgen
 
 ## 3.2. Idempotenz (Idempotency)
 
-Ein weiterer Vorteil des deklarativen Ansatzes ist die **Idempotenz** . Egal wie oft derselbe Code mit `terraform apply` ausgeführt wird, der Endzustand der Infrastruktur entspricht genau dem im Code beschriebenen. Für Ressourcen, die sich bereits im erwarteten Zustand befinden, entscheidet Terraform, "nichts zu ändern (No changes)".
+Ein weiterer Vorteil des deklarativen Ansatzes ist die **Idempotenz** . Egal wie oft derselbe Code mit `terraform apply` ausgeführt wird, der Endzustand der Infrastruktur entspricht genau dem im Code beschriebenen. Für Ressourcen, die sich bereits im erwarteten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) befinden, entscheidet Terraform, "nichts zu ändern (No changes)".
 
 Dies befreit Sie vom betrieblichen Albtraum, "manuell überprüfen zu müssen, wie weit ein Skript ausgeführt wurde, wenn in der Mitte ein Fehler auftritt, das Skript zu korrigieren und es erneut auszuführen".
 
@@ -169,7 +169,7 @@ Wendet den in `plan` vorgeschlagenen Änderungsplan tatsächlich auf den Cloud-P
 
 ---
 
-# 5. Zustandsmanagement: Die Tiefen der State-Datei
+# 5. [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smanagement: Die Tiefen der State-Datei
 
 Um Terraform zu verstehen, kommt man am Konzept des **Zustands (State)** nicht vorbei.
 
@@ -181,7 +181,7 @@ Warum ist überhaupt eine State-Datei notwendig? Es scheint, als ob man jedes Ma
 Die Gründe dafür sind wie folgt:
 
 1. **Speicherung von Metadaten und Abhängigkeiten** : Um Terraform-spezifische Metadaten, die die Cloud-API nicht zurückgibt, sowie den Abhängigkeitsgraphen bei der Ressourcenerstellung zwischenzuspeichern.
-2. **Leistung** : In groß angelegten Infrastrukturen führt das Abrufen des Zustands aller Ressourcen über die API jedes Mal zu Timeouts und dem Erreichen von API-Ratenlimits.
+2. **Leistung** : In groß angelegten Infrastrukturen führt das Abrufen des [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s aller Ressourcen über die API jedes Mal zu Timeouts und dem Erreichen von API-Ratenlimits.
 3. **Nachverfolgung von Ressourcen** : Wenn eine Ressourcendefinition aus dem Code gelöscht wird, identifiziert Terraform "Ressourcen, die in der State-Datei, aber nicht im Code existieren", und führt eine Löschaktion aus. Ohne den State würden Ressourcen, die aus dem Code verschwunden sind, einfach "aufgegeben" werden.
 
 ## 5.2. Remote State und Sperrenverwaltung (Lock Management)
@@ -217,7 +217,7 @@ Mit dieser Konfiguration wird, während Entwickler A `apply` ausführt, eine Spe
 
 Wenn die Infrastruktur außerhalb von Terraform (z. B. manuell über die GUI-Konsole) geändert wird, wird dies als **Konfigurations-Drift (Configuration Drift)** bezeichnet.
 
-Wenn `plan` oder `apply` ausgeführt wird, ruft Terraform zunächst den aktuellen, tatsächlichen Zustand in der Cloud ab (Refresh) und aktualisiert die State-Datei. Indem es sie dann mit dem Code vergleicht, kann es manuelle Änderungen erkennen und sie in den ursprünglich im Code definierten Zustand "zurückziehen (oder Korrekturen vorschlagen)".
+Wenn `plan` oder `apply` ausgeführt wird, ruft Terraform zunächst den aktuellen, tatsächlichen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) in der Cloud ab (Refresh) und aktualisiert die State-Datei. Indem es sie dann mit dem Code vergleicht, kann es manuelle Änderungen erkennen und sie in den ursprünglich im Code definierten Zustand "zurückziehen (oder Korrekturen vorschlagen)".
 
 ---
 
@@ -357,7 +357,7 @@ Beim Entwerfen von Modulen in Terraform ist es eine fortgeschrittene Designfähi
 
 # 11. Fazit
 
-**Infrastructure as Code** ist eine unverzichtbare Praxis in der modernen Softwareentwicklung. Unter diesen hat sich **Terraform** als De-facto-Standard für IaC etabliert, dank seiner mächtigen Philosophie des "deklarativen Konfigurationsmanagements", des erweiterten Zustands-Trackings durch State und eines plattformübergreifenden, reichhaltigen Provider-Ökosystems.
+**Infrastructure as Code** ist eine unverzichtbare Praxis in der modernen Softwareentwicklung. Unter diesen hat sich **Terraform** als De-facto-Standard für IaC etabliert, dank seiner mächtigen Philosophie des "deklarativen Konfigurationsmanagements", des erweiterten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s-Trackings durch State und eines plattformübergreifenden, reichhaltigen Provider-Ökosystems.
 
 Durch die bloße Einführung des Tools können Sie jedoch nicht die maximalen Vorteile daraus ziehen. Nur durch die Kombination von "Best Practices" wie der Strukturierung des Codes durch Module, dem Aufbau eines Team-Entwicklungssystems mit Remote State und Sperren, der Realisierung von GitOps durch die Integration mit [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) und dem Security Shift-Left kann ein sicherer und skalierbarer Infrastrukturbetrieb erreicht werden.
 

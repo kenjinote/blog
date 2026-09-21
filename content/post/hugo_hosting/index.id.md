@@ -240,7 +240,7 @@ Implementasinya di Hugo juga sangat mudah. Cukup tambahkan cuplikan kode yang di
 {{ end }}
 ```
 
-Dengan menambahkan atribut `defer`, skrip akan dimuat secara asinkron tanpa memblokir proses parsing HTML, dan akan dieksekusi setelah pembuatan DOM selesai. Hal ini membantu meminimalkan dampak terhadap kecepatan tampilan awal (LCP: Largest Contentful [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/) dan FCP: First Contentful Paint).
+Dengan menambahkan atribut `defer`, skrip akan dimuat secara asinkron tanpa memblokir proses parsing HTML, dan akan dieksekusi setelah pembuatan DOM selesai. Hal ini membantu meminimalkan dampak terhadap kecepatan tampilan awal ([LCP](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/): Largest Contentful [Paint](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/) dan FCP: First Contentful Paint).
 
 ---
 

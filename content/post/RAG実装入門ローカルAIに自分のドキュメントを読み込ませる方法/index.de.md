@@ -234,7 +234,7 @@ if __name__ == "__main__":
 1. **RecursiveCharacterTextSplitter**:
    Dies ist der am meisten empfohlene Splitter für das Teilen von natürlicher Sprache. Er versucht, den Text in der Reihenfolge Absatz (`\n\n`), Zeile (`\n`) und Punkt (`。`) aufzuteilen, wobei semantische Gruppierungen so weit wie möglich beibehalten werden, um in die angegebene `chunk_size` zu passen. Durch Einstellen von `chunk_overlap` verhindern wir, dass Informationen verloren gehen, wenn Kontextgrenzen abgeschnitten werden.
 2. **HuggingFaceEmbeddings**:
-   `intfloat/multilingual-e5-large` ist ein sehr leistungsstarkes Open-Source-Einbettungsmodell, das mehrere Sprachen unterstützt. Es ermöglicht Ihnen, Text offline im lokalen Speicher zu vektorisieren, ohne eine Cloud-API (wie `text-embedding-ada-002` von OpenAI) zu verwenden.
+   `intfloat/multilingual-e5-large` ist ein sehr leistungsstarkes Open-Source-Einbettungsmodell, das mehrere Sprachen unterstützt. Es ermöglicht Ihnen, Text [offline](https://kenji.blog/de/p/pwa-progressive-web-apps-service-worker/) im lokalen Speicher zu vektorisieren, ohne eine Cloud-API (wie `text-embedding-ada-002` von OpenAI) zu verwenden.
 3. **ChromaDB**:
    Da es im Arbeitsspeicher oder im lokalen Speicher (SQLite-basiert) läuft, ist es nicht notwendig, einen komplexen Datenbankserver einzurichten. Durch die Angabe von `persist_directory` können Sie den Vektorisierungsprozess bei erneuter Ausführung überspringen und die DB von der Festplatte laden.
 

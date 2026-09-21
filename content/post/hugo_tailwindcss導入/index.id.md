@@ -409,7 +409,7 @@ Selamat! Anda kini telah menyelesaikan proses membangun pipeline aset pengembang
 
 Kelebihan utama dari arsitektur ini adalah bahwa **"pengaturan cukup dilakukan satu kali saja"**. Setelah pipeline dibangun, developer dapat membangun UI kompleks dengan kecepatan fantastis hanya dengan menulis kelas-kelas utilitas intuitif dalam template HTML dan Markdown, tanpa harus membuka file CSS.
 
-Selain itu, karena ukuran CSS akhir yang dihasilkan selalu minimal, hal ini secara langsung berdampak pada peningkatan skor Core Web Vitals dan sangat menguntungkan dari perspektif SEO.
+Selain itu, karena ukuran CSS akhir yang dihasilkan selalu minimal, hal ini secara langsung berdampak pada peningkatan skor Core [Web Vitals](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) dan sangat menguntungkan dari perspektif SEO.
 
 Kombinasi Hugo dan Tailwind CSS akan selalu menjadi salah satu "pilihan terbaik" untuk proyek mana pun, dari blog teknologi perorangan hingga situs berskala korporat (enterprise). Gunakan kumpulan (toolchain) alat ini yang luar biasa untuk menikmati kehidupan pengembangan web (web development) yang nyaman!
 

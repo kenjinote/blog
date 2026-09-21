@@ -134,7 +134,7 @@ AIは「Cを優先するコード」や「Aを優先するコード」を書く�
 
 ### 4.2 非同期通信と結果整合性（Eventual Consistency）
 
-システムが大規模になると、サービス間の連携はREST APIによる同期通信から、メッセージキュー（Kafka, RabbitMQなど）を用いた非同期通信へと移行します。ここでのデータ整合性は、即時整合性から「結果整合性（Eventual Consistency）」へと変化します。
+システムが大規模になると、サービス間の連携は[REST API](https://kenji.blog/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)による同期通信から、メッセージキュー（Kafka, RabbitMQなど）を用いた非同期通信へと移行します。ここでのデータ整合性は、即時整合性から「結果整合性（Eventual Consistency）」へと変化します。
 Sagaパターンや[CQRS](https://kenji.blog/p/event-driven-architecture-async/)（Command Query Responsibility Segregation）といった高度なアーキテクチャパターンをどのタイミングで導入するべきか。これらの複雑な意思決定とシステム全体の青写真を描くことは、まさにシニアエンジニアの真骨頂です。
 
 ```mermaid

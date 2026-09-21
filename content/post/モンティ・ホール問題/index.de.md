@@ -74,7 +74,7 @@ Wenn wir annehmen, dass Sie "Tür A" gewählt haben, treten die folgenden drei S
 2. **Szenario 2 (Neues Auto in B):** Der Moderator kann nur C öffnen, wo sich eine Ziege befindet. Wenn Sie die Tür wechseln, ist es ein **Treffer**.
 3. **Szenario 3 (Neues Auto in C):** Der Moderator kann nur B öffnen, wo sich eine Ziege befindet. Wenn Sie die Tür wechseln, ist es ein **Treffer**.
 
-Das heißt, in 2 von 3 Fällen (Szenario 2 und 3) befindet man sich in dem Zustand: **"Wenn Sie die Tür wechseln, gewinnen Sie auf jeden Fall"**.
+Das heißt, in 2 von 3 Fällen (Szenario 2 und 3) befindet man sich in dem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/): **"Wenn Sie die Tür wechseln, gewinnen Sie auf jeden Fall"**.
 Daher beträgt die Gewinnquote beim Wechsel der Tür $\frac{2}{3}$, was genau **doppelt** so hoch ist wie die Gewinnquote von $\frac{1}{3}$, wenn man nicht wechselt.
 
 ---

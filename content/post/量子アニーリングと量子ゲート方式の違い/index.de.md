@@ -22,7 +22,7 @@ In diesem Artikel werden wir diese beiden Ansätze aus einer sehr detaillierten 
 
 ## 1. Grundlagen des Quantencomputings: Der fundamentale Unterschied zu klassischen Computern
 
-Klassische Computer verarbeiten Informationen als "Bits", die den Zustand "0" oder "1" annehmen. Quantencomputer hingegen verwenden "Quantenbits (Qubits)". Durch das quantenmechanische Prinzip der "Superposition" (Überlagerung) können Qubits mit bestimmten Wahrscheinlichkeiten gleichzeitig die Zustände 0 und 1 annehmen.
+Klassische Computer verarbeiten Informationen als "Bits", die den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) "0" oder "1" annehmen. Quantencomputer hingegen verwenden "Quantenbits (Qubits)". Durch das quantenmechanische Prinzip der "Superposition" (Überlagerung) können Qubits mit bestimmten Wahrscheinlichkeiten gleichzeitig die Zustände 0 und 1 annehmen.
 
 Darüber hinaus sind durch das Phänomen der "Quantenverschränkung" (Entanglement) die Zustände mehrerer Qubits stark miteinander korreliert, sodass eine Operation an einem Qubit das gesamte System augenblicklich beeinflusst. Dies ermöglicht eine Art parallele Verarbeitung (Quantenparallelität).
 
@@ -98,9 +98,9 @@ Daher ist ein **"Minor Embedding"** erforderlich, um Probleme mit komplexer Grap
 
 Das Quantengatter-Modell ist eine quantenmechanische Erweiterung klassischer Logikgatter (AND, OR, NOT usw.) und ermöglicht **"Universelles Quantencomputing" (Universal Quantum Computation)**. Viele Unternehmen wie IBM, Google, Rigetti und IonQ verfolgen diesen Ansatz.
 
-### 3.1. Unitäre Transformationen und Zustandsvektor
+### 3.1. Unitäre Transformationen und [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)svektor
 
-Beim Quantengatter-Modell wird der Gesamtzustand des Qubit-Systems als "Zustandsvektor" ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Vector) $|\psi\rangle$ dargestellt. Der Zustand eines einzelnen Qubits wird als Linearkombination der Basiszustände $|0\rangle$ und $|1\rangle$ wie folgt beschrieben:
+Beim Quantengatter-Modell wird der Gesamtzustand des Qubit-Systems als "Zustandsvektor" ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Vector) $|\psi\rangle$ dargestellt. Der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) eines einzelnen Qubits wird als Linearkombination der Basiszustände $|0\rangle$ und $|1\rangle$ wie folgt beschrieben:
 $$ |\psi\rangle = \alpha |0\rangle + \beta |1\rangle $$
 Hierbei sind $\alpha$ und $\beta$ komplexe Wahrscheinlichkeitsamplituden, für die $|\alpha|^2 + |\beta|^2 = 1$ gilt. Dieser Zustand wird geometrisch oft als Punkt auf der "Bloch-Kugel" (Bloch Sphere) veranschaulicht.
 
@@ -163,7 +163,7 @@ Das Quanten-Annealing eignet sich als "zweckspezifischer Coprozessor", um kombin
 ### Grenzen des Quanten-Annealings
 1. **Eingeschränkte Konnektivität (Connectivity)**: Durch das zuvor erwähnte Minor Embedding steigt die Anzahl der benötigten physikalischen Qubits mit der Problemgröße exponentiell an.
 2. **Präzision der Koeffizienten (Precision)**: Physikalische Fehler beim Einstellen analoger Parameter wie $J_{ij}$ und $h_i$ auf der Hardware wirken sich direkt auf die Qualität der Lösung aus.
-3. **Temperatur und nicht-adiabatische Übergänge**: Da die Systemtemperatur nicht am absoluten Nullpunkt liegt, besteht die Wahrscheinlichkeit, dass thermische Anregungen das System vom optimalen Zustand abbringen.
+3. **Temperatur und nicht-adiabatische Übergänge**: Da die Systemtemperatur nicht am absoluten Nullpunkt liegt, besteht die Wahrscheinlichkeit, dass thermische Anregungen das System vom optimalen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) abbringen.
 
 ### Grenzen des Quantengatter-Modells
 1. **Kohärenzzeit (Coherence Time)**: Die Zeit, in der ein Quantenzustand aufrechterhalten werden kann, liegt nur im Bereich von Mikrosekunden bis Millisekunden, was die Anzahl der in dieser Zeit ausführbaren Gatter (Tiefe des Schaltkreises) stark begrenzt.

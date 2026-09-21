@@ -319,8 +319,8 @@ Die folgende Tabelle zeigt das Verhalten des Cookies (bei der Einstellung SameSi
 
 | Benutzeraktion (auf Fallen-Website) | HTTP-Methode | Art der Anfrage | Cookie-Übertragung | Auswirkung auf [CSRF](https://kenji.blog/de/p/web-application-vulnerability-owasp-top-10/) |
 | :--- | :--- | :--- | :--- | :--- |
-| Klick auf Link (`<a>`) | GET | Top-Level-Navigation | **Wird gesendet** | Sicher, da GET den Zustand nicht ändert |
-| Absenden eines Formulars (`<form>`) | GET | Top-Level-Navigation | **Wird gesendet** | Sicher, da GET den Zustand nicht ändert |
+| Klick auf Link (`<a>`) | GET | Top-Level-Navigation | **Wird gesendet** | Sicher, da GET den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) nicht ändert |
+| Absenden eines Formulars (`<form>`) | GET | Top-Level-Navigation | **Wird gesendet** | Sicher, da GET den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) nicht ändert |
 | Absenden eines Formulars (`<form>`) | POST | Top-Level-Navigation | **Blockiert** | **Verhindert [CSRF](https://kenji.blog/de/p/web-application-vulnerability-owasp-top-10/)-Angriffe** |
 | Asynchrone Kommunikation (fetch, XHR) | GET/POST | Sub-Anfrage | **Blockiert** | **Verhindert CSRF-Angriffe** |
 | Laden eines Bildes (`<img>`) | GET | Sub-Anfrage | **Blockiert** | Sicher |

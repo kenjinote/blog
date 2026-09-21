@@ -240,7 +240,7 @@ Cloudflare Web Analytics работает просто путем встраив
 {{ end }}
 ```
 
-Добавив атрибут `defer`, скрипт загружается асинхронно, не блокируя парсинг HTML, и выполняется после построения DOM. Это сводит к минимуму влияние на начальную скорость отображения (LCP: Largest Contentful [Paint](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/) и FCP: First Contentful Paint).
+Добавив атрибут `defer`, скрипт загружается асинхронно, не блокируя парсинг HTML, и выполняется после построения DOM. Это сводит к минимуму влияние на начальную скорость отображения ([LCP](https://kenji.blog/ru/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/): Largest Contentful [Paint](https://kenji.blog/ru/p/browser-rendering-mechanism-dom-paint/) и FCP: First Contentful Paint).
 
 ---
 

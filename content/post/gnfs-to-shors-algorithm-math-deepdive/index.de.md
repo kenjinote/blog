@@ -128,7 +128,7 @@ Als Nächstes wird mithilfe eines Quantenorakels $U_f$ der Wert $f(x) = a^x \bmo
 
 $$ |\psi_2\rangle = U_f |\psi_1\rangle = \frac{1}{\sqrt{Q}} \sum_{x=0}^{Q-1} |x\rangle |a^x \bmod N\rangle $$
 
-Nehmen wir an, wir würden hier Register 2 messen (die mathematische Struktur bleibt gleich, auch wenn wir nicht tatsächlich messen). Wenn ein bestimmter Wert $y = a^{x_0} \bmod N$ beobachtet wird, kollabiert der Zustand von Register 1 in eine Überlagerung aller $x$, für die $f(x) = y$ gilt. Wenn die Periode $r$ ist, sind solche Werte für $x$ gegeben durch $x_0, x_0 + r, x_0 + 2r, \dots$.
+Nehmen wir an, wir würden hier Register 2 messen (die mathematische Struktur bleibt gleich, auch wenn wir nicht tatsächlich messen). Wenn ein bestimmter Wert $y = a^{x_0} \bmod N$ beobachtet wird, kollabiert der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) von Register 1 in eine Überlagerung aller $x$, für die $f(x) = y$ gilt. Wenn die Periode $r$ ist, sind solche Werte für $x$ gegeben durch $x_0, x_0 + r, x_0 + 2r, \dots$.
 
 $$ |\psi_3\rangle = \frac{1}{\sqrt{M}} \sum_{k=0}^{M-1} |x_0 + kr\rangle $$
 (Hierbei ist $M \approx Q/r$ die Anzahl der Terme)

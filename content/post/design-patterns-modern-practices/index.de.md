@@ -91,7 +91,7 @@ const cart = new ShoppingCart(halfPriceDiscount);
 
 ### 3.2. Observer-Muster: Aufstieg zum Reactive Programming
 
-Das `Observer`-Muster, das abhängige Objekte über Zustandsänderungen benachrichtigt, ist in der modernen GUI-Entwicklung und asynchronen Verarbeitung unerlässlich, aber seine Implementierungsmethode hat sich erheblich weiterentwickelt. Bibliotheken und Frameworks wie Rx (Reactive Extensions), Kotlin Flow und Swift Combine übernehmen nun diese Rolle.
+Das `Observer`-Muster, das abhängige Objekte über [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sänderungen benachrichtigt, ist in der modernen GUI-Entwicklung und asynchronen Verarbeitung unerlässlich, aber seine Implementierungsmethode hat sich erheblich weiterentwickelt. Bibliotheken und Frameworks wie Rx (Reactive Extensions), Kotlin Flow und Swift Combine übernehmen nun diese Rolle.
 
 ```mermaid
 sequenceDiagram
@@ -157,7 +157,7 @@ Auf diese Weise wird die Kette von `accept`- und `visit`-Methoden völlig unnöt
 
 ### 3.4. Singleton-Muster: Das schlimmste Anti-Pattern?
 
-Das `Singleton`-Muster wird heute oft als **Anti-Pattern** angesehen, da es globalen Zustand schafft, das Testen erschwert und eine Brutstätte für Fehler in Multithread-Umgebungen ist.
+Das `Singleton`-Muster wird heute oft als **Anti-Pattern** angesehen, da es globalen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) schafft, das Testen erschwert und eine Brutstätte für Fehler in Multithread-Umgebungen ist.
 
 In modernen Best Practices wird die **Dependency Injection (DI)** zur Verwaltung des Lebenszyklus verwendet.
 
@@ -177,7 +177,7 @@ In der Welt der funktionalen Programmierung gibt es "Muster" in einer anderen Di
 
 ### 4.1. Kontrolle von Nebenwirkungen durch Monaden
 
-Während GoF-Muster von einer "Zustandsmutation" ausgehen, schließt der funktionale Ansatz Nebenwirkungen (Ausnahmen, asynchrone Verarbeitung, Möglichkeit von Null) in das Typsystem ein.
+Während GoF-Muster von einer "[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smutation" ausgehen, schließt der funktionale Ansatz Nebenwirkungen (Ausnahmen, asynchrone Verarbeitung, Möglichkeit von Null) in das Typsystem ein.
 
 Beispielsweise werden das Null-Objekt-Muster oder die Ausnahmebehandlung durch Monaden wie `Maybe` (Optional) oder `Either` (Result) ersetzt.
 
@@ -226,6 +226,6 @@ Die heutigen Best Practices sind wie folgt:
 - **Funktionen statt Klassen (Nutzung von First-Class-Funktionen)**
 - **Pattern Matching und ADTs statt des Visitor-Musters**
 - **DI-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) statt Singletons**
-- **Unveränderlichkeit (Immutability) und reine Funktionen statt Zustandsmutationen**
+- **Unveränderlichkeit (Immutability) und reine Funktionen statt [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smutationen**
 
 Design-Muster sind nicht tot. Sie haben mit der Evolution der Programmiersprachen lediglich eine verfeinertere Form angenommen.

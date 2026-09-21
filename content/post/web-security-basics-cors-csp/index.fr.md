@@ -41,7 +41,7 @@ Le XSS est principalement classé en trois catégories :
 3.  **DOM-based XSS**
     C'est une vulnérabilité qui se produit sans passer par le traitement côté serveur, lorsque le JavaScript côté client traite de manière non sécurisée des URL ou des valeurs d'entrée et les écrit dans le DOM.
 
-### 1.1.2 Flux d'attaque XSS (Exemple de Stored XSS)
+### 1.1.2 [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) d'attaque XSS (Exemple de Stored XSS)
 
 Le diagramme suivant montre le flux d'attaque du Stored XSS.
 
@@ -106,7 +106,7 @@ De nos jours, les frameworks front-end modernes comme React et Vue.js effectuent
 
 Le Cross-Site Request Forgery (CSRF) est une attaque dans laquelle un utilisateur est forcé d'envoyer des requêtes non désirées (transferts d'argent, changements de mot de passe, désinscriptions, etc.) à un site Web authentifié via un site piège préparé par l'attaquant.
 
-### 1.2.1 Flux d'attaque CSRF
+### 1.2.1 [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) d'attaque CSRF
 
 ```mermaid
 sequenceDiagram

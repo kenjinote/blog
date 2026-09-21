@@ -46,7 +46,7 @@ Nach etwa sechs Jahren intensiver Evaluation, Analyse und kryptanalytischem Wett
 
 - **FIPS 203 (ML-KEM)**: KEM basierend auf CRYSTALS-Kyber
 - **FIPS 204 (ML-DSA)**: Digitale Signatur basierend auf CRYSTALS-Dilithium
-- **FIPS 205 (SLH-DSA)**: Zustandlose Hash-basierte Signatur basierend auf SPHINCS+
+- **FIPS 205 (SLH-DSA)**: [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)lose Hash-basierte Signatur basierend auf SPHINCS+
 - **(In zukünftiger Planung) FN-DSA**: Digitale Signatur basierend auf FALCON
 
 Die ausgewählten Algorithmen stützen sich auf jeweils unterschiedliche mathematische "Schwierigkeitsprobleme", sodass eine Vielfalt ([Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) Agility) gewährleistet ist. Sollte in Zukunft eine fatale Schwachstelle in einem Algorithmus entdeckt werden, wird so verhindert, dass das gesamte System zusammenbricht. Im Standardisierungsprozess nahm die gitterbasierte Kryptographie (Lattice-based cryptography) aufgrund ihrer Leistung die Hauptrolle ein, jedoch wurden hashbasierte und codebasierte Kryptographien als starke Backups übernommen.
@@ -233,7 +233,7 @@ Für den Worst-Case, dass die Sicherheit der Gitterkryptographie in Zukunft durc
 
 SPHINCS+ wird als **hash-basierte Signatur** klassifiziert. Die Basis seiner Sicherheit stützt sich nur auf einen einzigen Punkt: "Die verwendete kryptographische Hash-Funktion (wie SHA-2 oder SHAKE256) muss kollisionsresistent und eine Einwegfunktion sein". Da es nicht von mathematischen Problemen mit spezifischen algebraischen Strukturen wie LWE oder Primfaktorzerlegung abhängt, bietet es eine extrem robuste Sicherheit (die konservativste Sicherheit). Egal, wie mächtige Quantenalgorithmen in Zukunft erscheinen mögen, es kann abgewehrt werden, indem man einfach die Ausgabelänge der Hash-Funktion erhöht.
 
-### 8.1. Zustandslose Architektur mit WOTS+ und FORS
+### 8.1. [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)slose Architektur mit WOTS+ und FORS
 
 Die Geschichte der hash-basierten Signaturen reicht weit in die 1970er Jahre zu Lamport-Signaturen und Winternitz-Einmal-Signaturen (WOTS) zurück. Dabei handelte es sich um Wegwerfschlüssel, mit denen "nur einmal sicher signiert" werden konnte. Um diese mehrfach verwendbar zu machen, wurden Algorithmen wie XMSS (eXtended Merkle Signature Scheme) oder LMS entwickelt, die einen Merkle-Baum kombinieren, um unzählige Einmalschlüssel mit einem einzigen Root-Hash zu verwalten.
 

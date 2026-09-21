@@ -187,7 +187,7 @@ WordPress의 데이터를 Hugo용으로 출력하기 위해서는 전용 플러�
 1. **Jekyll Exporter 플러그인의 사용**
    Hugo는 같은 SSG인 Jekyll과 데이터 구조가 매우 비슷하기 때문에, WordPress용 'Jekyll Exporter' 플러그인을 사용하는 것이 일반적인 방법입니다. 이 플러그인을 설치하고 실행하면, 모든 포스트 및 고정 페이지가 Front Matter가 포함된 Markdown 파일로 변환되며, 이미지 파일들과 함께 ZIP 파일로 다운로드할 수 있습니다.
 2. **WordPress API를 이용한 자체 제작 스크립트**
-   Python이나 Node.js 등으로 WordPress의 REST API (`/wp-json/wp/v2/posts`) 를 호출하고 JSON 데이터를 분석하여 자체적으로 Markdown 파일을 생성하는 스크립트를 작성하는 방법입니다. 플러그인으로는 다 대응할 수 없는 복잡한 커스텀 필드(ACF 등)를 많이 사용하는 사이트에서 유효합니다.
+   Python이나 Node.js 등으로 WordPress의 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) (`/wp-json/wp/v2/posts`) 를 호출하고 JSON 데이터를 분석하여 자체적으로 Markdown 파일을 생성하는 스크립트를 작성하는 방법입니다. 플러그인으로는 다 대응할 수 없는 복잡한 커스텀 필드(ACF 등)를 많이 사용하는 사이트에서 유효합니다.
 3. **wp2hugo 도구의 활용**
    Go 언어 등으로 작성된 CLI 도구를 이용하여 WordPress의 내보내기 XML 파일(WXR)에서 직접 Hugo 형식으로 변환하는 접근법도 있습니다.
 
@@ -300,8 +300,8 @@ jobs:
 
 WordPress에서 Hugo로의 마이그레이션을 완료한 사이트 운영자는 대부분 다음과 같은 3가지 현저한 이점을 체감합니다.
 
-### 6.1 사이트 속도와 Core Web Vitals의 극적인 향상
-데이터베이스 쿼리나 서버 사이드 렌더링이 배제된 결과, 페이지 로드 시간은 밀리초 단위까지 단축됩니다. 이는 Google의 랭킹 요소인 'Core Web Vitals'(LCP, FID/INP, CLS) 점수의 대폭적인 향상으로 직결됩니다. 사용자의 이탈률 감소와 SEO 평가의 향상을 기대할 수 있습니다.
+### 6.1 사이트 속도와 Core [Web Vitals](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)의 극적인 향상
+데이터베이스 쿼리나 서버 사이드 렌더링이 배제된 결과, 페이지 로드 시간은 밀리초 단위까지 단축됩니다. 이는 Google의 랭킹 요소인 '[Core Web Vitals](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)'([LCP](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/ko/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) 점수의 대폭적인 향상으로 직결됩니다. 사용자의 이탈률 감소와 SEO 평가의 향상을 기대할 수 있습니다.
 
 ### 6.2 보안 위협으로부터의 해방
 WordPress는 전 세계에서 널리 사용되기 때문에 항상 공격 대상이 됩니다. 플러그인의 취약점을 악용한 변조나 무차별 대입 공격(Brute-force attack)에 의한 로그인 돌파 등의 위험이 따라다닙니다.

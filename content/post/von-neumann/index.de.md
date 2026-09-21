@@ -44,7 +44,7 @@ $$
 \rho = \sum_{i} p_i |\psi_i\rangle \langle\psi_i|
 $$
 
-Hier repräsentiert $p_i$ die Wahrscheinlichkeit ( $\text{Wahrscheinlichkeitsgewicht}$ ), den Zustand $|\psi_i\rangle$ anzunehmen. Er führte auch tiefe Überlegungen zum "Kollaps des Wellenpakets" und zum "Messproblem" in der Quantenmesstheorie durch.
+Hier repräsentiert $p_i$ die Wahrscheinlichkeit ( $\text{Wahrscheinlichkeitsgewicht}$ ), den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $|\psi_i\rangle$ anzunehmen. Er führte auch tiefe Überlegungen zum "Kollaps des Wellenpakets" und zum "Messproblem" in der Quantenmesstheorie durch.
 
 ## 5. Spieltheorie und wirtschaftliches Verhalten
 
@@ -88,7 +88,7 @@ Von Neumann nahm am EDVAC-Entwicklungsprojekt an der University of Pennsylvania 
 
 ## 7. Zelluläre [[Automate](https://kenji.blog/de/p/automata-formal-language-theory/)n](https://kenji.blog/de/p/automata-formal-language-theory/) und die Theorie selbstreplizierender Maschinen
 
-In seinen späteren Jahren interessierte sich von Neumann sehr für die mathematische Modellierung der Mechanismen der biologischen Selbstreplikation. Auf Anraten seines Kollegen Stanislaw Ulam entwarf er das Konzept der **zellulären Automaten**, bei dem der Raum in ein Raster unterteilt ist und jede Rasterzelle ihren Zustand nach einer bestimmten Regel ändert.
+In seinen späteren Jahren interessierte sich von Neumann sehr für die mathematische Modellierung der Mechanismen der biologischen Selbstreplikation. Auf Anraten seines Kollegen Stanislaw Ulam entwarf er das Konzept der **zellulären Automaten**, bei dem der Raum in ein Raster unterteilt ist und jede Rasterzelle ihren [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) nach einer bestimmten Regel ändert.
 
 Unter Verwendung von Zellen mit 29 Zuständen bewies er rigoros, dass eine selbstreplizierende Maschine (universeller Konstruktor) theoretisch möglich ist. Dies geschah vor der Entdeckung der Doppelhelix-Struktur der DNA, und man kann sagen, dass er die genetischen Mechanismen und Informationsübertragungssysteme des Lebens aus der Perspektive der Informationswissenschaft vorausgesagt hat. Nach seinem Tod führte diese Theorie zur Erforschung künstlicher Leben.
 

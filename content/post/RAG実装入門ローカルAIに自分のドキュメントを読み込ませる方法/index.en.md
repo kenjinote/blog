@@ -234,7 +234,7 @@ if __name__ == "__main__":
 1. **RecursiveCharacterTextSplitter**:
    This is the most recommended splitter for dividing natural language. It attempts to split in the order of paragraphs (`\n\n`), lines (`\n`), and periods (`。`), keeping semantic blocks together as much as possible while fitting within the specified `chunk_size`. By setting `chunk_overlap`, you prevent context boundaries from being cut off and information from being lost.
 2. **HuggingFaceEmbeddings**:
-   `intfloat/multilingual-e5-large` is a very powerful open-source embedding model that supports multiple languages. You can vectorize text locally on your memory offline without using a cloud API (like OpenAI's `text-embedding-ada-002`).
+   `intfloat/multilingual-e5-large` is a very powerful open-source embedding model that supports multiple languages. You can vectorize text locally on your memory [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/) without using a cloud API (like OpenAI's `text-embedding-ada-002`).
 3. **ChromaDB**:
    Since it runs in-memory or on local storage (SQLite-based), there is no need to spin up a complex database server. By specifying `persist_directory`, you can skip the vectorization process on subsequent runs and load the DB from disk.
 

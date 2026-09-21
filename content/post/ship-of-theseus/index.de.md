@@ -15,7 +15,7 @@ slug: "ship-of-theseus"
 
 Hallo zusammen. Kennen Sie das Paradoxon (Gedankenexperiment) vom **Schiff des Theseus**?
 
-Das Schiff, auf dem der Held Theseus aus der griechischen Mythologie fuhr, wurde von nachfolgenden Generationen als Denkmal aufbewahrt. Da es sich jedoch um ein Holzschiff handelte, begannen mit der Zeit einige Teile zu verrotten. Die Menschen ersetzten das verrottete Holz durch neues und reparierten das Schiff fortlaufend. Nach vielen Jahren war schließlich der Zustand erreicht, in dem **kein einziges Teil des ursprünglichen Schiffes mehr übrig war**.
+Das Schiff, auf dem der Held Theseus aus der griechischen Mythologie fuhr, wurde von nachfolgenden Generationen als Denkmal aufbewahrt. Da es sich jedoch um ein Holzschiff handelte, begannen mit der Zeit einige Teile zu verrotten. Die Menschen ersetzten das verrottete Holz durch neues und reparierten das Schiff fortlaufend. Nach vielen Jahren war schließlich der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) erreicht, in dem **kein einziges Teil des ursprünglichen Schiffes mehr übrig war**.
 
 Hier stellt sich eine Frage:
 
@@ -87,7 +87,7 @@ classDiagram
 
 Selbst wenn ein Schiffsteil (Wertobjekt) verrottet und durch ein neues ersetzt wird, ändert sich die `shipId` des Schiffs (Entität) nicht. Folglich wird es im System als **exakt dasselbe Schiff** behandelt.
 
-In der Welt der Software wird „Identität“ nicht durch die physische Substanz oder den Zustand bestimmt, sondern durch die Absicht des Designers: **„Sollte es in der Geschäftsdomäne als dasselbe Ding behandelt werden?“**
+In der Welt der Software wird „Identität“ nicht durch die physische Substanz oder den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) bestimmt, sondern durch die Absicht des Designers: **„Sollte es in der Geschäftsdomäne als dasselbe Ding behandelt werden?“**
 
 ## 3. Refactoring und die Erhaltung des Verhaltens
 

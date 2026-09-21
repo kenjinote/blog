@@ -48,7 +48,7 @@ Um das Problem zu vereinfachen, betrachten wir hier den Fall einer **kurzen Nade
 
 ## Mathematische Modellierung und Ableitung der Wahrscheinlichkeit
 
-Um dieses Problem mathematisch zu lösen, ist es notwendig, den Zustand der Nadel zu quantifizieren (zu parametrisieren). Wenn die Nadel auf den Boden fällt, gehen wir davon aus, dass ihre Position und Ausrichtung völlig zufällig sind.
+Um dieses Problem mathematisch zu lösen, ist es notwendig, den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) der Nadel zu quantifizieren (zu parametrisieren). Wenn die Nadel auf den Boden fällt, gehen wir davon aus, dass ihre Position und Ausrichtung völlig zufällig sind.
 
 Um die Position der Nadel zu bestimmen, definieren wir die folgenden zwei Variablen.
 

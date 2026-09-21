@@ -81,7 +81,7 @@ Die Berechnung des Vorwärtsdurchlaufs (Forward Pass) sieht wie folgt aus:
 
 $$ h = W_0 x + \Delta W x = W_0 x + B A x $$
 
-Im Initialzustand wird die Matrix $A$ zufällig mit einer Normalverteilung (Gauß-Verteilung) initialisiert, und die Matrix $B$ wird als Nullmatrix initialisiert. Dadurch ist $\Delta W$ zu Beginn des Trainings null, sodass das Training in einem Zustand gestartet werden kann, in dem die Ausgabe des Basismodells vollständig erhalten bleibt.
+Im Initialzustand wird die Matrix $A$ zufällig mit einer Normalverteilung (Gauß-Verteilung) initialisiert, und die Matrix $B$ wird als Nullmatrix initialisiert. Dadurch ist $\Delta W$ zu Beginn des Trainings null, sodass das Training in einem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) gestartet werden kann, in dem die Ausgabe des Basismodells vollständig erhalten bleibt.
 
 ```mermaid
 graph LR

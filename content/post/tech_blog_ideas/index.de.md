@@ -23,7 +23,7 @@ Die von Claude Shannon eingeführte Informationsentropie $H(X)$ beschreibt die U
 
 $$ H(X) = - \sum_{i=1}^{n} P(x_i) \log_2 P(x_i) $$
 
-Hierbei ist $X$ die Zufallsvariable für ein aus der Informationsquelle gewonnenes Thema und $P(x_i)$ die Wahrscheinlichkeit, diesem Thema $x_i$ zu begegnen. Wenn man regelmäßig ähnliche Websites besucht (z. B. bestimmte inländische Nachrichtenseiten oder immer nur die Dokumentation zum selben Technologie-Stack), wird ein spezifisches $P(x_i)$ extrem hoch, was zu einem Absinken der Entropie des gesamten Systems $H(X)$ führt. Ein Zustand niedriger Entropie bedeutet, dass es "keine neuen Entdeckungen (Überraschungen)" gibt, und genau das ist die Hauptursache für den Ideenmangel.
+Hierbei ist $X$ die Zufallsvariable für ein aus der Informationsquelle gewonnenes Thema und $P(x_i)$ die Wahrscheinlichkeit, diesem Thema $x_i$ zu begegnen. Wenn man regelmäßig ähnliche Websites besucht (z. B. bestimmte inländische Nachrichtenseiten oder immer nur die Dokumentation zum selben Technologie-Stack), wird ein spezifisches $P(x_i)$ extrem hoch, was zu einem Absinken der Entropie des gesamten Systems $H(X)$ führt. Ein [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) niedriger Entropie bedeutet, dass es "keine neuen Entdeckungen (Überraschungen)" gibt, und genau das ist die Hauptursache für den Ideenmangel.
 
 Um die Entropie hoch zu halten, muss man bewusst Informationsquellen, mit denen man normalerweise nicht in Kontakt kommt, als "Rauschen" einbeziehen und die Wahrscheinlichkeitsverteilung für das Aufeinandertreffen mit unbekannten Themen ausgleichen. Dies ist der wichtigste Grund, warum man den Input aus vielfältigen Informationsquellen automatisieren sollte.
 
@@ -167,7 +167,7 @@ jobs:
           git push
 ```
 
-Dadurch entsteht ein Zustand, bei dem jeden Morgen beim Öffnen von Obsidian automatisch die wichtigsten Themen des Tages als Markdown-Dateien in Ihrem Posteingang (`daily_inputs/`) landen.
+Dadurch entsteht ein [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), bei dem jeden Morgen beim Öffnen von Obsidian automatisch die wichtigsten Themen des Tages als Markdown-Dateien in Ihrem Posteingang (`daily_inputs/`) landen.
 
 ## 4. Wissensvernetzung mit Zettelkasten und Obsidian
 
@@ -340,7 +340,7 @@ flowchart TD
 
 Das Besondere an diesem System ist, **dass intellektuelle Aufgaben, die manuell durchgeführt werden sollten (Zusammenfassen, Nachdenken, Schreiben), und Aufgaben, die der Maschine überlassen werden sollten (Sammeln, Suchen, Terminierung von Spaced Repetitions), vollständig voneinander getrennt sind**. Dadurch können sich Autoren ganz auf die wertschöpfendsten Tätigkeiten konzentrieren: das "Denken" und das "Kombinieren".
 
-## 9. Zustandsübergangsmodell von der Idee bis zur Veröffentlichung
+## 9. [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergangsmodell von der Idee bis zur Veröffentlichung
 
 Der Lebenszyklus der im Zettelkasten angesammelten Ideen bis hin zur endgültigen Veröffentlichung als Blogartikel lässt sich im folgenden Zustandsübergangsdiagramm darstellen. In jedem Zustand werden jeweils die passenden Werkzeuge und Ansätze eingesetzt.
 
@@ -377,7 +377,7 @@ Wie in diesem Artikel vorgestellt:
 4. Stärkung des mentalen Index durch **Anki** und die Ebbinghaus'sche Vergessenskurve
 5. **Kombinatorische Kreativität**, die bestehende Konzepte miteinander verbindet
 
-Durch den Aufbau einer umfassenden Pipeline, die all diese Elemente kombiniert, versiegen die Blog-Ideen nicht mehr. Stattdessen entsteht ein Zustand, in dem sich neue Ideen quasi von selbst vervielfältigen, je mehr man schreibt.
+Durch den Aufbau einer umfassenden Pipeline, die all diese Elemente kombiniert, versiegen die Blog-Ideen nicht mehr. Stattdessen entsteht ein [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), in dem sich neue Ideen quasi von selbst vervielfältigen, je mehr man schreibt.
 
 Es ist nicht nötig, von Anfang an alles perfekt aufzubauen. Beginnen Sie doch einfach damit, ein einfaches Skript für die Hacker News-API zu erstellen, und machen Sie es sich zur Gewohnheit, interessante Artikel als Markdown-Notizen festzuhalten. Ich hoffe sehr, dass Ihr Technik-Blog zu einer Quelle großartiger Ideen für die nächste Generation heranwachsen wird.
 

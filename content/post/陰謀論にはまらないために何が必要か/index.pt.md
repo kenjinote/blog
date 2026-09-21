@@ -100,7 +100,7 @@ Por exemplo, ações como:
 
 * Conversar regularmente com as pessoas
 * Participar de comunidades onde se compartilham hobbies ou interesses
-* Ter conexões offline, não apenas online
+* Ter conexões [offline](https://kenji.blog/pt/p/pwa-progressive-web-apps-service-worker/), não apenas online
 
 Levam à estabilidade mental.
 

@@ -264,7 +264,7 @@ ControlNet은 학습된 Stable Diffusion 모델의 가중치를 고정한 채로
 
 ## 10. 맺음말: AI 이미지 생성의 미래와 로컬 환경의 우위성
 
-Stable Diffusion에서 시작된 오픈소스 AI 이미지 생성의 움직임은 SDXL, 그리고 Stable Diffusion 3나 Flux.1과 같은 차세대 아키텍처로 진화를 거듭하고 있습니다. 모델의 파라미터 수는 수십억에서 백억 개 수준으로 거대해지고 있으며, 앞으로는 VRAM 24GB 이상의 GPU 환경이 더욱 요구될 것입니다.
+Stable Diffusion에서 시작된 오픈소스 AI 이미지 생성의 움직임은 SDXL, 그리고 Stable Diffusion 3나 [Flux](https://kenji.blog/ko/p/state-management-history-redux-context-recoil-zustand/).1과 같은 차세대 아키텍처로 진화를 거듭하고 있습니다. 모델의 파라미터 수는 수십억에서 백억 개 수준으로 거대해지고 있으며, 앞으로는 VRAM 24GB 이상의 GPU 환경이 더욱 요구될 것입니다.
 
 하지만 TensorRT나 양자화 기술(Quantization), GGUF 등의 로컬 최적화 기술 역시 빠르게 발전하고 있어, 일반 소비자용 하드웨어에서도 충분한 추론이 가능해지는 생태계가 형성되고 있습니다.
 

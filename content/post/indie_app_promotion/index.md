@@ -112,7 +112,7 @@ export default function BlogPost({ params }) {
 
 ## 2. チュートリアルからコンバージョンへのファネル設計
 
-技術ブログの読者は、特定のエラーメッセージや技術的な課題（例：「React Context API パフォーマンス 最適化」）を検索して流入します。彼らの「検索意図（Search Intent）」を満たした直後に、自然な形でアプリへのCTA（Call to Action）を配置することが重要です。
+技術ブログの読者は、特定のエラーメッセージや技術的な課題（例：「React [Context API](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/) パフォーマンス 最適化」）を検索して流入します。彼らの「検索意図（Search Intent）」を満たした直後に、自然な形でアプリへのCTA（Call to Action）を配置することが重要です。
 
 ### 2.1 ユーザージャーニーの可視化
 
@@ -133,7 +133,7 @@ flowchart LR
     style F fill:#bfb,stroke:#333,stroke-width:2px
 ```
 
-例えば、「[Redux](https://kenji.blog/p/state-management-history-future/)のボイラープレートを減らす方法」という記事の最後に、「もしあなたが[状態管理](https://kenji.blog/p/state-management-history-future/)の複雑さに悩んでいるなら、私が開発した新しい状態管理可視化ツール『StateViewer』を試してみてください」というコンテキストに沿ったCTAを配置します。
+例えば、「[Redux](https://kenji.blog/p/state-management-history-future/)のボイラープレートを減らす方法」という記事の最後に、「もしあなたが[状態管理](https://kenji.blog/p/state-management-history-future/)の複雑さに悩んでいるなら、私が開発した新しい[状態管理](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)可視化ツール『StateViewer』を試してみてください」というコンテキストに沿ったCTAを配置します。
 
 ### 2.2 コンバージョン率の数理モデル
 

@@ -402,7 +402,7 @@ private:
 
 ---
 
-## 6. प्रदर्शन अनुकूलन (Performance Optimization) तकनीकें
+## 6. प्रदर्शन अनुकूलन ([Performance Optimization](https://kenji.blog/hi/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) तकनीकें
 
 केवल एक साधारण पार्सर लागू करना एक व्यावहारिक (practical) लाइब्रेरी को मात देने के लिए पर्याप्त नहीं है। यहां कुछ C++ विशिष्ट अनुकूलन (optimization) तकनीकें दी गई हैं।
 

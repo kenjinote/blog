@@ -55,7 +55,7 @@ int main() {
 }
 ```
 
-In C++ besteht immer das Risiko, versehentlich auf ein Objekt zuzugreifen, das durch `std::move` entleert wurde (ein gültiger, aber unspezifizierter Zustand). Dies führt unmittelbar zu Abstürzen zur Laufzeit oder im schlimmsten Fall zu Sicherheitslücken.
+In C++ besteht immer das Risiko, versehentlich auf ein Objekt zuzugreifen, das durch `std::move` entleert wurde (ein gültiger, aber unspezifizierter [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)). Dies führt unmittelbar zu Abstürzen zur Laufzeit oder im schlimmsten Fall zu Sicherheitslücken.
 
 ## Rusts Eigentümerschaft (Ownership) und die absolute Verteidigung des [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)s
 
@@ -98,7 +98,7 @@ Noch leistungsfähiger sind die Regeln für das "Ausleihen (Borrowing)", bei dem
 1. Zu einem beliebigen Zeitpunkt darf **entweder** "mehrere unveränderliche Referenzen (`&T`)" **oder** "genau eine veränderliche Referenz (`&mut T`)" existieren, aber nicht beides gleichzeitig.
 2. Eine Referenz darf nicht länger leben als die Daten, auf die sie verweist (Lebensdauer-Beschränkungen / Lifetimes).
 
-In C++ können problemlos mehrere veränderliche Referenzen oder Zeiger auf dasselbe Objekt erstellt werden, was zu unerwarteter Zerstörung des Zustands (wie Invalidation von Iteratoren) führen kann. [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) verhindert solche Fehler im Vorfeld, indem es die Kombination aus "Aliasing" und "Mutability" (Veränderbarkeit) auf Sprachebene verbietet.
+In C++ können problemlos mehrere veränderliche Referenzen oder Zeiger auf dasselbe Objekt erstellt werden, was zu unerwarteter Zerstörung des [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s (wie Invalidation von Iteratoren) führen kann. [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) verhindert solche Fehler im Vorfeld, indem es die Kombination aus "Aliasing" und "Mutability" (Veränderbarkeit) auf Sprachebene verbietet.
 
 ---
 

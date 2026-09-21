@@ -165,7 +165,7 @@ SNSの投稿は「読者のアテンション（注意力）を奪う」ため�
 
 技術界隈には **"Choose Boring Technology"（退屈な技術を選べ）** という有名なマントラがあります。これは、イノベーション・トークン（組織が新しい未知の技術に費やせる限られたリソース）を、ビジネスのコアバリューに直結しないインフラやフレームワークの選定で浪費してはならないという教えです。
 
-SNSのアルゴリズムは「新奇性」を好みます。しかし、実運用に耐えうる堅牢なシステムを構築する上で必要なのは、10年以上の運用実績があり、障害時の復旧手順がGoogle検索で数百万件ヒットするような「退屈な」技術（PostgreSQL、Redis、標準的なREST APIなど）なのです。
+SNSのアルゴリズムは「新奇性」を好みます。しかし、実運用に耐えうる堅牢なシステムを構築する上で必要なのは、10年以上の運用実績があり、障害時の復旧手順がGoogle検索で数百万件ヒットするような「退屈な」技術（PostgreSQL、Redis、標準的な[REST API](https://kenji.blog/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)など）なのです。
 
 ---
 

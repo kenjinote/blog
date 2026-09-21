@@ -112,7 +112,7 @@ export default function BlogPost({ params }) {
 
 ## 2. 從教學到轉換的漏斗設計
 
-技術部落格的讀者是透過搜尋特定的錯誤訊息或技術問題 (例如：「React Context API 效能 最佳化」) 而來的。在滿足了他們的「搜尋意圖 (Search Intent)」之後，以自然的方式放置應用程式的 CTA (行動呼籲, Call to Action) 是非常重要的。
+技術部落格的讀者是透過搜尋特定的錯誤訊息或技術問題 (例如：「React [Context API](https://kenji.blog/zh-tw/p/state-management-history-redux-context-recoil-zustand/) 效能 最佳化」) 而來的。在滿足了他們的「搜尋意圖 (Search Intent)」之後，以自然的方式放置應用程式的 CTA (行動呼籲, Call to Action) 是非常重要的。
 
 ### 2.1 使用者旅程視覺化
 

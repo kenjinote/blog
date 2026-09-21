@@ -23,7 +23,7 @@ $$
 T \approx \exp \left( - \frac{2}{\hbar} \int_{0}^{a} \sqrt{2m(V_0 - E)} \, dx \right)
 $$
 
-Hier ist $\hbar$ das reduzierte Plancksche Wirkungsquantum. Nimmt die Breite der Barriere $a$ durch Miniaturisierung ab, steigt die Transmissionswahrscheinlichkeit $T$ exponentiell an. Folglich nimmt der sogenannte „Leckstrom“ (Leakage Current), der selbst im ausgeschalteten Zustand (Off-[State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) fließt, ein Ausmaß an, das nicht mehr vernachlässigt werden kann. Dies führt zu einem erhöhten Stromverbrauch sowie zu einer Wärmeentwicklung und bedeutet das Scheitern der Funktion als klassisches, deterministisches Schaltelement.
+Hier ist $\hbar$ das reduzierte Plancksche Wirkungsquantum. Nimmt die Breite der Barriere $a$ durch Miniaturisierung ab, steigt die Transmissionswahrscheinlichkeit $T$ exponentiell an. Folglich nimmt der sogenannte „Leckstrom“ (Leakage Current), der selbst im ausgeschalteten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) (Off-[State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) fließt, ein Ausmaß an, das nicht mehr vernachlässigt werden kann. Dies führt zu einem erhöhten Stromverbrauch sowie zu einer Wärmeentwicklung und bedeutet das Scheitern der Funktion als klassisches, deterministisches Schaltelement.
 
 Darüber hinaus darf die thermodynamische Grenze der Informationsverarbeitung nicht ignoriert werden. 1961 zeigte Rolf Landauer, dass beim Löschen von Informationen (bei Durchführung irreversibler logischer Operationen) unweigerlich Wärme erzeugt wird (Landauer-Prinzip). Die minimale Wärmemenge $\Delta Q$, die beim Löschen von 1 Bit an Information an die Umgebung abgegeben wird, wird wie folgt ausgedrückt:
 
@@ -39,7 +39,7 @@ Da klassische Computer an ihre physikalischen Grenzen stießen, wurde ein völli
 
 „Da die Natur nicht klassisch ist, sollte man, wenn man eine Simulation der Natur erstellen möchte, einen Computer entwickeln, der auf quantenmechanischen Prinzipien basiert.“
 
-Hinter dieser Aussage steht die Tatsache, dass die Dimension des „[Hilbert](https://kenji.blog/de/p/hilbert/)-Raums“ ([Hilbert](https://kenji.blog/de/p/hilbert/) Space), der den Zustand eines Quantensystems beschreibt, mit der Anzahl der Teilchen exponentiell explodiert. Betrachten wir ein System, das aus $N$ Teilchen mit einem Spin von $1/2$ (d. h. einem System mit zwei Quantenzuständen) besteht. Der Zustand eines einzelnen Teilchens wird durch den zweidimensionalen komplexen Vektorraum $\mathbb{C}^2$ beschrieben. Daher wird der Zustandsraum $\mathcal{H}$ des aus $N$ Teilchen bestehenden zusammengesetzten Systems als Tensorprodukt der Zustandsräume jedes Teilsystems konstruiert:
+Hinter dieser Aussage steht die Tatsache, dass die Dimension des „[Hilbert](https://kenji.blog/de/p/hilbert/)-Raums“ ([Hilbert](https://kenji.blog/de/p/hilbert/) Space), der den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) eines Quantensystems beschreibt, mit der Anzahl der Teilchen exponentiell explodiert. Betrachten wir ein System, das aus $N$ Teilchen mit einem Spin von $1/2$ (d. h. einem System mit zwei Quantenzuständen) besteht. Der Zustand eines einzelnen Teilchens wird durch den zweidimensionalen komplexen Vektorraum $\mathbb{C}^2$ beschrieben. Daher wird der Zustandsraum $\mathcal{H}$ des aus $N$ Teilchen bestehenden zusammengesetzten Systems als Tensorprodukt der Zustandsräume jedes Teilsystems konstruiert:
 
 $$
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
@@ -51,7 +51,7 @@ $$
 |\Psi\rangle = \sum_{x=0}^{2^N-1} c_x |x\rangle
 $$
 
-Hier ist $|x\rangle$ die Rechenbasis (Computational Basis) und $c_x \in \mathbb{C}$ ist eine komplexe Zahl, die als Wahrscheinlichkeitsamplitude (Probability Amplitude) bezeichnet wird. Der Zustandsvektor muss die Normierungsbedingung $\sum_{x=0}^{2^N-1} |c_x|^2 = 1$ erfüllen.
+Hier ist $|x\rangle$ die Rechenbasis (Computational Basis) und $c_x \in \mathbb{C}$ ist eine komplexe Zahl, die als Wahrscheinlichkeitsamplitude (Probability Amplitude) bezeichnet wird. Der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)svektor muss die Normierungsbedingung $\sum_{x=0}^{2^N-1} |c_x|^2 = 1$ erfüllen.
 
 Selbst beim Versuch, nur $N = 300$ Qubits (Qubit) zu simulieren, beträgt die Anzahl der zu speichernden komplexen Zahlen $2^{300}$, also ungefähr $10^{90}$, was die Anzahl aller Atome im beobachtbaren Universum (etwa $10^{80}$) bei weitem übersteigt. All diese Variablen im Speicher eines klassischen Computers vorzuhalten und zudem die Zeitentwicklung (Multiplikation einer unitären $2^N \times 2^N$-Matrix) gemäß der Schrödinger-Gleichung zu berechnen, ist unmöglich, selbst wenn man die gesamte Lebensdauer des Universums dafür aufwenden würde. Dieser „Fluch der Dimensionalität“ ist genau die Grenze des klassischen Rechnens und gleichzeitig die Quelle der potenziellen Rechenleistung eines Quantencomputers.
 
@@ -59,7 +59,7 @@ Selbst beim Versuch, nur $N = 300$ Qubits (Qubit) zu simulieren, beträgt die An
 
 Die intuitive Idee von Feynman wurde von dem Oxforder Physiker David Deutsch im Rahmen der theoretischen Informatik rigoros formalisiert. In seiner bahnbrechenden Publikation von 1985 wies Deutsch auf die Möglichkeit hin, dass die „starke Church-Turing-These“ (Strong Church-Turing Thesis), welche besagt, dass „jeder physikalische Prozess durch endliche Mittel vollständig simuliert werden kann“, in einer von der Quantenmechanik dominierten physikalischen Welt möglicherweise nicht gilt.
 
-Deutsch erweiterte die von [Alan Turing](https://kenji.blog/de/p/turing/) vorgeschlagene deterministische Turingmaschine und definierte das Konzept der „Quanten-Turingmaschine“ (Quantum [Turing Machine](https://kenji.blog/de/p/turing-machine-computability/)). Dies ist eine Maschine, bei der der interne Zustand, das Symbol auf dem Band und die Position des Kopfes einen quantenmechanischen „Überlagerungszustand“ annehmen können und die Zustandsübergänge durch einen unitären Operator (Unitary Operator) $U$ beschrieben werden.
+Deutsch erweiterte die von [Alan Turing](https://kenji.blog/de/p/turing/) vorgeschlagene deterministische Turingmaschine und definierte das Konzept der „Quanten-Turingmaschine“ (Quantum [Turing Machine](https://kenji.blog/de/p/turing-machine-computability/)). Dies ist eine Maschine, bei der der interne [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), das Symbol auf dem Band und die Position des Kopfes einen quantenmechanischen „Überlagerungszustand“ annehmen können und die Zustandsübergänge durch einen unitären Operator (Unitary Operator) $U$ beschrieben werden.
 
 Die grundlegende Einheit der Quantenberechnung ist das „Qubit“ (Qubit). Während ein klassisches Bit nur die bestimmten Zustände $0$ oder $1$ annehmen kann, kann ein Qubit einen beliebigen linearen Überlagerungszustand von $|0\rangle$ und $|1\rangle$ annehmen:
 
@@ -111,7 +111,7 @@ $$
 
 Hierbei wird die Wahrscheinlichkeitsamplitude für den Zustand $|0\rangle$ zu $1/2 - 1/2 = 0$, sie wird also vollständig ausgelöscht (destruktive Interferenz). Andererseits wird die Amplitude für den Zustand $|1\rangle$ auf $1/2 + 1/2 = 1$ verstärkt (konstruktive Interferenz).
 
-Wirklich nützliche Quantenalgorithmen (wie zum Beispiel der [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) zur Primfaktorzerlegung oder der Grover-Algorithmus zur Suche in unstrukturierten Datenbanken) rufen dieses Welleninterferenzphänomen durch ein hochgradig orchestriertes Verfahren hervor, sodass sich bei der Messung im letzten Berechnungsschritt die Wahrscheinlichkeit, den Zustand der richtigen Antwort zu beobachten, unendlich nahe an $1$ annähert. Nicht das parallele Rechnen selbst ist die Magie, sondern die Fähigkeit, durch die Interferenz komplexer Wahrscheinlichkeitsamplituden „unnötige Rechenpfade probabilistisch zu löschen“. Genau dies ist der entscheidende Unterschied zu klassischen Computern und die wahre Essenz des Quantenrechnens.
+Wirklich nützliche Quantenalgorithmen (wie zum Beispiel der [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) zur Primfaktorzerlegung oder der Grover-Algorithmus zur Suche in unstrukturierten Datenbanken) rufen dieses Welleninterferenzphänomen durch ein hochgradig orchestriertes Verfahren hervor, sodass sich bei der Messung im letzten Berechnungsschritt die Wahrscheinlichkeit, den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) der richtigen Antwort zu beobachten, unendlich nahe an $1$ annähert. Nicht das parallele Rechnen selbst ist die Magie, sondern die Fähigkeit, durch die Interferenz komplexer Wahrscheinlichkeitsamplituden „unnötige Rechenpfade probabilistisch zu löschen“. Genau dies ist der entscheidende Unterschied zu klassischen Computern und die wahre Essenz des Quantenrechnens.
 
 ## 1.5 Visualisierung von Konzepten: Der Mechanismus der Quanteninterferenz
 
@@ -159,7 +159,7 @@ Beim Aufbau des theoretischen Systems der Quanteninformation ist das fundamental
 
 ## 2.1 Die kleinste Informationseinheit: Mathematische Formulierung und Grenzen des klassischen Bits
 
-In der Geschichte der Informatik ist die Grundlage der von Claude Shannon 1948 begründeten Informationstheorie das „Bit“. Ein klassisches Bit wird unabhängig von seiner physikalischen Realisierung (beispielsweise hohe oder niedrige Spannung eines Transistors, Ein/Aus-Zustand eines Schalters oder Richtung der Magnetisierung) als ein System definiert, das einen von zwei diskreten Werten im abstrakten Zustandsraum $\{0, 1\}$ annimmt.
+In der Geschichte der Informatik ist die Grundlage der von Claude Shannon 1948 begründeten Informationstheorie das „Bit“. Ein klassisches Bit wird unabhängig von seiner physikalischen Realisierung (beispielsweise hohe oder niedrige Spannung eines Transistors, Ein/Aus-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) eines Schalters oder Richtung der Magnetisierung) als ein System definiert, das einen von zwei diskreten Werten im abstrakten Zustandsraum $\{0, 1\}$ annimmt.
 
 Lassen Sie uns dies in der formaleren Sprache von Vektorräumen ausdrücken. Der Zustand eines klassischen Bits kann unter Verwendung der Standardbasis in einem zweidimensionalen reellen Vektorraum $\mathbb{R}^2$ dargestellt werden. Wir definieren den Zustand $0$ und den Zustand $1$ jeweils als die folgenden Spaltenvektoren:
 
@@ -188,9 +188,9 @@ Der Rahmen der klassischen Informationstheorie ist extrem mächtig und bildet da
 
 ## 2.2 Postulate der Quantenmechanik und Bra-Ket-Notation (Bra-ket notation)
 
-Das erste Postulat (Postulate) der Quantenmechanik besagt: „Der Zustand eines geschlossenen physikalischen Systems wird vollständig durch einen Einheitsvektor (Zustandsvektor) in einem vollständigen Vektorraum mit komplexem inneren Produkt, d. h. einem [Hilbert](https://kenji.blog/de/p/hilbert/)raum ([Hilbert](https://kenji.blog/de/p/hilbert/) Space) $\mathcal{H}$, beschrieben.“ Im Kontext des Quantencomputings können kontinuierliche räumliche Freiheitsgrade ignoriert werden, sodass dieser [Hilbert](https://kenji.blog/de/p/hilbert/)raum typischerweise ein endlichdimensionaler komplexer Vektorraum $\mathbb{C}^d$ ist.
+Das erste Postulat (Postulate) der Quantenmechanik besagt: „Der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) eines geschlossenen physikalischen Systems wird vollständig durch einen Einheitsvektor (Zustandsvektor) in einem vollständigen Vektorraum mit komplexem inneren Produkt, d. h. einem [Hilbert](https://kenji.blog/de/p/hilbert/)raum ([Hilbert](https://kenji.blog/de/p/hilbert/) Space) $\mathcal{H}$, beschrieben.“ Im Kontext des Quantencomputings können kontinuierliche räumliche Freiheitsgrade ignoriert werden, sodass dieser [Hilbert](https://kenji.blog/de/p/hilbert/)raum typischerweise ein endlichdimensionaler komplexer Vektorraum $\mathbb{C}^d$ ist.
 
-Die kleinste Einheit der Quanteninformation, das „Quantenbit (Qubit)“, wird streng als Zustand in einem zweidimensionalen komplexen [Hilbert](https://kenji.blog/de/p/hilbert/)raum $\mathcal{H} \cong \mathbb{C}^2$ definiert. Um Zustände in diesem Vektorraum zu beschreiben, ist es Standard, die von dem Physiker Paul Dirac eingeführte **Bra-Ket-Notation (Bra-ket notation)** zu verwenden.
+Die kleinste Einheit der Quanteninformation, das „Quantenbit (Qubit)“, wird streng als [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) in einem zweidimensionalen komplexen [Hilbert](https://kenji.blog/de/p/hilbert/)raum $\mathcal{H} \cong \mathbb{C}^2$ definiert. Um Zustände in diesem Vektorraum zu beschreiben, ist es Standard, die von dem Physiker Paul Dirac eingeführte **Bra-Ket-Notation (Bra-ket notation)** zu verwenden.
 
 Ein Spaltenvektor, der einen Quantenzustand darstellt, wird als **Ket-Vektor (Ket vector)** bezeichnet und als $|\psi\rangle$ notiert. Als Zustände, die den klassischen Bits $0$ und $1$ entsprechen, führen wir eine Orthonormalbasis ein, die sogenannte Rechenbasis (Computational basis). Diese wird auch als $Z$-Basis des Qubits bezeichnet und durch $|0\rangle$ sowie $|1\rangle$ definiert:
 
@@ -218,7 +218,7 @@ $$
 
 Konkret ist das innere Produkt mit sich selbst $1$ ($\langle 0|0\rangle = 1$, $\langle 1|1\rangle = 1$), und das innere Produkt zwischen verschiedenen Basisvektoren ist $0$ ($\langle 0|1\rangle = 0$, $\langle 1|0\rangle = 0$).
 
-Darüber hinaus wird das Tensorprodukt aus Bra und Ket (entsprechend dem äußeren Produkt) als $|\psi\rangle\langle\phi|$ notiert, was einen linearen Operator (eine Matrix) darstellt, der den Raum auf sich selbst abbildet. Beispielsweise wird der Projektionsoperator (Projection operator) auf einen bestimmten Zustandsraum wie folgt konstruiert:
+Darüber hinaus wird das Tensorprodukt aus Bra und Ket (entsprechend dem äußeren Produkt) als $|\psi\rangle\langle\phi|$ notiert, was einen linearen Operator (eine Matrix) darstellt, der den Raum auf sich selbst abbildet. Beispielsweise wird der Projektionsoperator (Projection operator) auf einen bestimmten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sraum wie folgt konstruiert:
 
 $$
 |0\rangle\langle 0| = \begin{pmatrix} 1 \\ 0 \end{pmatrix} \begin{pmatrix} 1 & 0 \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}
@@ -232,7 +232,7 @@ $$
 
 ## 2.3 Das Prinzip der Quantenüberlagerung und komplexe Wahrscheinlichkeitsamplituden
 
-Während ein klassisches Bit stets einen eindeutigen Zustand $0$ oder $1$ oder deren statistische Mischung einnimmt, erlaubt die Forderung nach Linearität (Linearity) in der Quantenmechanik, dass ein Qubit einen fundamental andersartigen Zustand annehmen kann: eine „Überlagerung (Superposition)“, die durch eine Linearkombination von $|0\rangle$ und $|1\rangle$ dargestellt wird. Jeder beliebige Einheitsvektor im [Hilbert](https://kenji.blog/de/p/hilbert/)raum $\mathcal{H}$ ist als physikalisch gültiger Zustand zulässig.
+Während ein klassisches Bit stets einen eindeutigen Zustand $0$ oder $1$ oder deren statistische Mischung einnimmt, erlaubt die Forderung nach Linearität (Linearity) in der Quantenmechanik, dass ein Qubit einen fundamental andersartigen Zustand annehmen kann: eine „Überlagerung (Superposition)“, die durch eine Linearkombination von $|0\rangle$ und $|1\rangle$ dargestellt wird. Jeder beliebige Einheitsvektor im [Hilbert](https://kenji.blog/de/p/hilbert/)raum $\mathcal{H}$ ist als physikalisch gültiger [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) zulässig.
 
 Folglich lässt sich der allgemeinste reine Zustand (Pure state) $|\psi\rangle$ eines einzelnen Qubits unter Verwendung der Rechenbasis wie folgt entwickeln:
 
@@ -282,7 +282,7 @@ $$
 \langle A \rangle = \left( e^{-i\phi_0} \langle\psi| \right) A \left( e^{i\phi_0} |\psi\rangle \right) = e^{-i\phi_0} e^{i\phi_0} \langle\psi| A |\psi\rangle = \langle\psi| A |\psi\rangle
 $$
 
-Da sich die globale Phase auf diese Weise stets herauskürzt, ist sie durch keinerlei physikalische Messung beobachtbar. Das bedeutet: Obwohl $|\psi\rangle$ und $e^{i\phi_0}|\psi\rangle$ im [Hilbert](https://kenji.blog/de/p/hilbert/)raum unterschiedliche Vektoren darstellen (sie bilden denselben Strahl), repräsentieren sie physikalisch exakt denselben Zustand.
+Da sich die globale Phase auf diese Weise stets herauskürzt, ist sie durch keinerlei physikalische Messung beobachtbar. Das bedeutet: Obwohl $|\psi\rangle$ und $e^{i\phi_0}|\psi\rangle$ im [Hilbert](https://kenji.blog/de/p/hilbert/)raum unterschiedliche Vektoren darstellen (sie bilden denselben Strahl), repräsentieren sie physikalisch exakt denselben [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/).
 
 Indem man die globale Phase vernachlässigt und lediglich die relative Phase (Relative phase) $\varphi = \phi_1 - \phi_0$ (wobei $\varphi \in [0, 2\pi)$) zwischen $|0\rangle$ und $|1\rangle$ als Parameter beibehält, lässt sich der reine Zustand eines beliebigen einzelnen Qubits eindeutig und rigoros in der folgenden **Standardform** darstellen:
 
@@ -313,7 +313,7 @@ graph TD
     style State fill:#bbf,stroke:#333,stroke-width:4px,stroke-dasharray: 5 5
 ```
 
-Die bemerkenswerteste Eigenschaft der Bloch-Kugel besteht darin, dass orthogonale Zustände im [Hilbert](https://kenji.blog/de/p/hilbert/)raum (Zustände, deren inneres Produkt null ist) im dreidimensionalen realen Raum der Bloch-Kugel an antipodalen Punkten (Antipodal points: um 180 Grad gegenüberliegende Punkte) liegen. Beispielsweise ist der zu $|0\rangle$ (Nordpol, $\theta=0$) orthogonale Zustand $|1\rangle$ (Südpol, $\theta=\pi$). Das Verschwinden des inneren Produkts orthogonaler Zustände im [Hilbert](https://kenji.blog/de/p/hilbert/)raum, $\langle 0 | 1 \rangle = 0$, entspricht auf der Bloch-Kugel einem Winkelabstand von $\pi$ (180 Grad). Da der geometrische Winkel im realen Raum doppelt so groß ist wie der Winkel im [Hilbert](https://kenji.blog/de/p/hilbert/)raum, liegt hierin die mathematische Notwendigkeit begründet, bei der Parametrisierung den Halbwinkel $\theta/2$ zu verwenden.
+Die bemerkenswerteste Eigenschaft der Bloch-Kugel besteht darin, dass orthogonale Zustände im [Hilbert](https://kenji.blog/de/p/hilbert/)raum (Zustände, deren inneres Produkt null ist) im dreidimensionalen realen Raum der Bloch-Kugel an antipodalen Punkten (Antipodal points: um 180 Grad gegenüberliegende Punkte) liegen. Beispielsweise ist der zu $|0\rangle$ (Nordpol, $\theta=0$) orthogonale [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $|1\rangle$ (Südpol, $\theta=\pi$). Das Verschwinden des inneren Produkts orthogonaler Zustände im [Hilbert](https://kenji.blog/de/p/hilbert/)raum, $\langle 0 | 1 \rangle = 0$, entspricht auf der Bloch-Kugel einem Winkelabstand von $\pi$ (180 Grad). Da der geometrische Winkel im realen Raum doppelt so groß ist wie der Winkel im [Hilbert](https://kenji.blog/de/p/hilbert/)raum, liegt hierin die mathematische Notwendigkeit begründet, bei der Parametrisierung den Halbwinkel $\theta/2$ zu verwenden.
 
 Die Koordinaten des Bloch-Vektors $\mathbf{r} = (x, y, z)$ lassen sich rigoros als Erwartungswerte der **Pauli-Matrizen (Pauli matrices)** herleiten, welche fundamentale Observablen (Observable) in der Quantenmechanik darstellen. Die Pauli-Matrizen, die eine Basis für die hermiteschen Operatoren in zweidimensionalen Systemen bilden, sind wie folgt definiert:
 
@@ -323,7 +323,7 @@ Y = \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \quad
 Z = \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
 $$
 
-Die Erwartungswerte dieser Pauli-Observablen für einen beliebigen Zustand $|\psi\rangle$ ergeben sich mittels Bra-Ket-Rechnung wie folgt:
+Die Erwartungswerte dieser Pauli-Observablen für einen beliebigen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $|\psi\rangle$ ergeben sich mittels Bra-Ket-Rechnung wie folgt:
 
 $$
 x = \langle\psi| X |\psi\rangle = \left( \cos\frac{\theta}{2} \langle 0| + e^{-i\varphi}\sin\frac{\theta}{2} \langle 1| \right) \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} \cos\frac{\theta}{2} \\ e^{i\varphi}\sin\frac{\theta}{2} \end{pmatrix} = \sin\theta \cos\varphi
@@ -397,7 +397,7 @@ $$
 |\Psi\rangle_{AB} = (\alpha_0|0\rangle + \alpha_1|1\rangle) \otimes (\beta_0|0\rangle + \beta_1|1\rangle) = \alpha_0\beta_0|00\rangle + \alpha_0\beta_1|01\rangle + \alpha_1\beta_0|10\rangle + \alpha_1\beta_1|11\rangle
 $$
 
-Die Existenz von Zuständen, die sich nicht als Tensorprodukt von Einzelzuständen faktorisieren lassen (wie beispielsweise der Bell-Zustand $|\Phi^+\rangle = (|00\rangle + |11\rangle)/\sqrt{2}$), stellt den Ursprung der Quantenverschränkung (Entanglement) dar. Diese exponentielle Explosion der Dimensionalität durch das Tensorprodukt ($2^N$ Dimensionen bei $N$ Qubits) bildet das Fundament für die überwältigende parallele Rechenleistung von Quantencomputern.
+Die Existenz von Zuständen, die sich nicht als Tensorprodukt von Einzelzuständen faktorisieren lassen (wie beispielsweise der Bell-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $|\Phi^+\rangle = (|00\rangle + |11\rangle)/\sqrt{2}$), stellt den Ursprung der Quantenverschränkung (Entanglement) dar. Diese exponentielle Explosion der Dimensionalität durch das Tensorprodukt ($2^N$ Dimensionen bei $N$ Qubits) bildet das Fundament für die überwältigende parallele Rechenleistung von Quantencomputern.
 
 In diesem Kapitel haben wir die grundlegenden Unterschiede zwischen klassischen Bits und Quantenbits auf dem mathematischen Fundament des [Hilbert](https://kenji.blog/de/p/hilbert/)raums herausgearbeitet. Ein Qubit kann kontinuierliche Überlagerungszustände mit komplexen Wahrscheinlichkeitsamplituden annehmen. Durch die Herleitung der Bloch-Kugel haben wir zudem ein mächtiges Werkzeug gewonnen, um abstrakte komplexe Vektoren intuitiv als geometrisches Modell im dreidimensionalen reellen Raum zu visualisieren und zu verstehen.
 
@@ -413,12 +413,12 @@ Dieses Axiomensystem baut auf der Bühne der komplexen linearen Algebra auf, die
 
 In diesem Kapitel formulieren wir die Prozesse von der Beschreibung von Quantenzuständen über die Zeitentwicklung bis hin zur „Messung“, die die meisten philosophischen Debatten ausgelöst hat, ohne jegliche Kompromisse rigoros. Die Leser werden erkennen, wie scheinbar kontraintuitive Quantenphänomene auf einer widerspruchsfreien und eleganten mathematischen Struktur beruhen. Genau diese mathematische Struktur bildet die direkte „Sprache“, in der die Algorithmen von Quantencomputern formuliert werden.
 
-## 3.2 Erstes Axiom: Zustandsraum ([Hilbert](https://kenji.blog/de/p/hilbert/)raum und Zustandsvektoren)
+## 3.2 Erstes Axiom: [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sraum ([Hilbert](https://kenji.blog/de/p/hilbert/)raum und [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)svektoren)
 
 Das erste Axiom der Quantenmechanik legt fest, wie der „Zustand“ eines physikalischen Systems mathematisch dargestellt wird.
 
  **Axiom 1 (Darstellung des Zustands)** :
-Der Zustand eines geschlossenen physikalischen Systems wird vollständig durch einen Einheitsvektor mit der Norm 1 in einem [Hilbert](https://kenji.blog/de/p/hilbert/)raum ([Hilbert](https://kenji.blog/de/p/hilbert/) space) $\mathcal{H}$ beschrieben, welcher ein komplexer innerer Produktraum ist und Vollständigkeit besitzt. Dieser wird als **Zustandsvektor** bezeichnet.
+Der Zustand eines geschlossenen physikalischen Systems wird vollständig durch einen Einheitsvektor mit der Norm 1 in einem [Hilbert](https://kenji.blog/de/p/hilbert/)raum ([Hilbert](https://kenji.blog/de/p/hilbert/) space) $\mathcal{H}$ beschrieben, welcher ein komplexer innerer Produktraum ist und Vollständigkeit besitzt. Dieser wird als **[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)svektor** bezeichnet.
 
 Gemäß der von Paul Dirac eingeführten Bra-Ket-Notation (Bra-ket notation) wird der Zustandsvektor als Spaltenvektor behandelt und als Ket **$| \psi \rangle$** geschrieben. Ein Zeilenvektor, der dem Dualraum $\mathcal{H}^*$ angehört, wird als Bra **$\langle \psi |$** bezeichnet, und diese stehen zueinander in der Beziehung der hermiteschen Konjugation (komplex-konjugierte Transposition). Das heißt:
 
@@ -432,7 +432,7 @@ Das innere Produkt zweier beliebiger Zustände **$| \phi \rangle$** und **$| \ps
 2. **Linearität** : $\langle \phi | ( c_1 | \psi_1 \rangle + c_2 | \psi_2 \rangle ) = c_1 \langle \phi | \psi_1 \rangle + c_2 \langle \phi | \psi_2 \rangle$
 3. **Konjugierte Symmetrie** : $\langle \phi | \psi \rangle = \langle \psi | \phi \rangle^*$ ($*$ bezeichnet die komplexe Konjugation)
 
-Physikalische Zustände müssen stets die Normierungsbedingung (Normalization condition) erfüllen, damit die Wahrscheinlichkeitsinterpretation gültig ist. Das bedeutet, dass die Norm des Zustandsvektors **$| \psi \rangle$** gleich 1 ist:
+Physikalische Zustände müssen stets die Normierungsbedingung (Normalization condition) erfüllen, damit die Wahrscheinlichkeitsinterpretation gültig ist. Das bedeutet, dass die Norm des [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)svektors **$| \psi \rangle$** gleich 1 ist:
 
 $$
 \| | \psi \rangle \| = \sqrt{\langle \psi | \psi \rangle} = 1
@@ -442,7 +442,7 @@ Darüber hinaus gilt die [Cauchy](https://kenji.blog/de/p/cauchy/)-Schwarz-Ungle
 
 ### Superpositionsprinzip und vollständige Orthonormalbasis
 
-Das hervorstechendste Merkmal der Quantenmechanik ist das „Superpositionsprinzip (Superposition principle)“. Wenn **$| \phi \rangle$** und **$| \psi \rangle$** physikalisch zulässige Zustände sind, ist auch jede beliebige komplexe Linearkombination $c_1 | \phi \rangle + c_2 | \psi \rangle$ (nach Normierung) wiederum ein physikalisch zulässiger Zustand. Diese Eigenschaft folgt direkt aus der Linearität des [Hilbert](https://kenji.blog/de/p/hilbert/)raums.
+Das hervorstechendste Merkmal der Quantenmechanik ist das „Superpositionsprinzip (Superposition principle)“. Wenn **$| \phi \rangle$** und **$| \psi \rangle$** physikalisch zulässige Zustände sind, ist auch jede beliebige komplexe Linearkombination $c_1 | \phi \rangle + c_2 | \psi \rangle$ (nach Normierung) wiederum ein physikalisch zulässiger [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/). Diese Eigenschaft folgt direkt aus der Linearität des [Hilbert](https://kenji.blog/de/p/hilbert/)raums.
 
 Im [Hilbert](https://kenji.blog/de/p/hilbert/)raum $\mathcal{H}$ existiert eine vollständige Orthonormalbasis (Orthonormal basis) $\{ | e_i \rangle \}$. Diese Basisvektoren sind zueinander orthogonal und normiert:
 
@@ -485,7 +485,7 @@ $$
 A = \sum_i a_i | a_i \rangle \langle a_i |
 $$
 
-Durch diese Formulierung lässt sich der Vorgang der „Messung einer physikalischen Größe“ als geometrische Operation verstehen: als Projektion auf eine bestimmte Basis (Eigenvektoren) des [Hilbert](https://kenji.blog/de/p/hilbert/)raums. Beispielsweise wird die Messung von $\sigma_z$ an einem Qubit vollständig als Projektionsoperation auf die orthogonale Basis beschrieben, die aus dem dem Eigenwert $+1$ entsprechenden Zustand **$| 0 \rangle$** und dem dem Eigenwert $-1$ entsprechenden Zustand **$| 1 \rangle$** besteht.
+Durch diese Formulierung lässt sich der Vorgang der „Messung einer physikalischen Größe“ als geometrische Operation verstehen: als Projektion auf eine bestimmte Basis (Eigenvektoren) des [Hilbert](https://kenji.blog/de/p/hilbert/)raums. Beispielsweise wird die Messung von $\sigma_z$ an einem Qubit vollständig als Projektionsoperation auf die orthogonale Basis beschrieben, die aus dem dem Eigenwert $+1$ entsprechenden [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) **$| 0 \rangle$** und dem dem Eigenwert $-1$ entsprechenden Zustand **$| 1 \rangle$** besteht.
 
 ## 3.4 Drittes Axiom: Unitäre Zeitentwicklung und Schrödinger-Gleichung
 
@@ -540,7 +540,7 @@ $$
 Das Axiom der Messung enthält einen entscheidenden und vieldiskutierten Schritt: die Frage, was mit dem Zustand des Systems „nach“ der Messung geschieht. Dies ist das als „Kollaps des Wellenpakets (Wavefunction collapse)“ oder „Zustandsreduktion ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) reduction)“ bekannte Phänomen. Dieser als von-Neumannsches Projektionspostulat (Projection postulate) bekannte Prozess wird wie folgt formuliert:
 
  **Projektionspostulat** :
-Unmittelbar nachdem durch die Messung der Eigenwert $a_k$ erhalten wurde, verändert sich (kollabiert) der Zustand des Systems **$| \psi' \rangle$** instantan zu jenem Zustand, der durch Anwenden des entsprechenden Projektionsoperators $P_k$ auf den ursprünglichen Zustandsvektor und anschließende Renormierung entsteht:
+Unmittelbar nachdem durch die Messung der Eigenwert $a_k$ erhalten wurde, verändert sich (kollabiert) der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) des Systems **$| \psi' \rangle$** instantan zu jenem Zustand, der durch Anwenden des entsprechenden Projektionsoperators $P_k$ auf den ursprünglichen Zustandsvektor und anschließende Renormierung entsteht:
 
 $$
 | \psi' \rangle = \frac{P_k | \psi \rangle}{\sqrt{p(a_k)}}
@@ -630,7 +630,7 @@ $$
 \langle \phi' | \psi' \rangle = ( \langle \phi | U^\dagger ) ( U |\psi\rangle ) = \langle \phi | U^\dagger U | \psi \rangle = \langle \phi | I | \psi \rangle = \langle \phi | \psi \rangle
 $$
 
-Die Erhaltung des inneren Produkts bedeutet, dass auch die Norm (das Quadrat der Länge) des Zustandsvektors selbst, also **$\langle \psi | \psi \rangle$** , erhalten bleibt. Nach der Bornschen Regel (Born rule) der Quantenmechanik muss die Summe der Quadrate der Absolutwerte der Amplituden des Zustandsvektors der Gesamtwahrscheinlichkeit "1" entsprechen. Damit diese Wahrscheinlichkeitsinterpretation durch Quantengatteroperationen nicht zusammenbricht, ist es eine absolute Grundvoraussetzung, dass die Operation unitär ist.
+Die Erhaltung des inneren Produkts bedeutet, dass auch die Norm (das Quadrat der Länge) des [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)svektors selbst, also **$\langle \psi | \psi \rangle$** , erhalten bleibt. Nach der Bornschen Regel (Born rule) der Quantenmechanik muss die Summe der Quadrate der Absolutwerte der Amplituden des Zustandsvektors der Gesamtwahrscheinlichkeit "1" entsprechen. Damit diese Wahrscheinlichkeitsinterpretation durch Quantengatteroperationen nicht zusammenbricht, ist es eine absolute Grundvoraussetzung, dass die Operation unitär ist.
 
 Darüber hinaus kann nach dem Spektralsatz jede beliebige unitäre Matrix **$U$** als **$U = e^{iK}$** dargestellt werden, wobei **$K$** eine hermitesche Matrix mit reellen Eigenwerten **$\lambda_k$** ist. Die Eigenwerte einer unitären Matrix haben immer die Form einer komplexen Zahl mit dem Betrag 1 ( **$e^{i\theta}$** ), und die Eigenvektoren bilden ein vollständiges System, das orthogonal zueinander ist.
 
@@ -721,7 +721,7 @@ $$
 
 ## 4.3 Hadamard-Gatter (H-Gatter): Die Erschaffung der Quantenüberlagerung
 
-In Quantenalgorithmen (wie dem Deutsch-Jozsa-Algorithmus oder dem [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)) wird fast immer unmittelbar nach der Initialisierung das Hadamard-Gatter (Hadamard gate) angewendet. Es spielt eine zentrale Rolle bei der Erschaffung eines "maximalen Überlagerungszustands", bei dem alle Zustände mit gleicher Wahrscheinlichkeit aus einem deterministischen Zustand hervorgehen.
+In Quantenalgorithmen (wie dem Deutsch-Jozsa-Algorithmus oder dem [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)) wird fast immer unmittelbar nach der Initialisierung das Hadamard-Gatter (Hadamard gate) angewendet. Es spielt eine zentrale Rolle bei der Erschaffung eines "maximalen Überlagerungszustands", bei dem alle Zustände mit gleicher Wahrscheinlichkeit aus einem deterministischen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) hervorgehen.
 
 $$
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} = \frac{1}{\sqrt{2}} \left( |0\rangle\langle 0| + |0\rangle\langle 1| + |1\rangle\langle 0| - |1\rangle\langle 1| \right)
@@ -834,7 +834,7 @@ $$
 
 Dieses Theorem garantiert physikalisch, dass jeder komplexe Algorithmus für ein einzelnes Qubit ausgeführt werden kann, solange nur Z-Achsen-Rotationen und Y-Achsen-Rotationen mit hoher Präzision auf der Hardwareebene implementiert werden können.
 
-## 4.6 [Diagramm] Einzel-Qubit-Gatterschaltungen und Zustandsübergänge
+## 4.6 [Diagramm] Einzel-Qubit-Gatterschaltungen und [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergänge
 
 Eine Quantenschaltung entsteht, wenn diese Gatter in chronologischer Reihenfolge angeordnet werden. Der Zustand entwickelt sich in der Zeit von links nach rechts.
 
@@ -861,7 +861,7 @@ Um abstrakte Konzepte zu physikalischer Intuition zu erheben, werden wir streng 
 
 Wir nehmen als Anfangszustand den Grundzustand **$|\psi_0\rangle = |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}$** an.
 Die auszuführende Operation ist eine Sequenz aus " **$H$** -Gatter" -> " **$S$** -Gatter" -> " **$H$** -Gatter", ähnlich dem obigen Schaltplan.
-Während Quantenschaltpläne von links nach rechts gelesen werden, wird in der linearen Algebra die Multiplikation von Operatoren auf einen Zustandsvektor "von links" angewendet. Daher werden die Terme für den gesamten unitären Operator **$U_{total}$** in umgekehrter chronologischer Reihenfolge von rechts nach links angeordnet.
+Während Quantenschaltpläne von links nach rechts gelesen werden, wird in der linearen Algebra die Multiplikation von Operatoren auf einen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)svektor "von links" angewendet. Daher werden die Terme für den gesamten unitären Operator **$U_{total}$** in umgekehrter chronologischer Reihenfolge von rechts nach links angeordnet.
 
 $$
 U_{total} = H S H
@@ -955,9 +955,9 @@ In den bisherigen Kapiteln haben wir uns ausführlich mit der Eigenschaft der Ü
 
 ## 5.1 Mathematische Beschreibung von Vielteilchenzuständen durch das Tensorprodukt ($\otimes$)
 
-Gemäß den Axiomen der Quantenmechanik ist der Zustandsraum eines zusammengesetzten Systems, wenn die Zustandsräume unabhängiger physikalischer Systeme jeweils durch die [Hilbert](https://kenji.blog/de/p/hilbert/)räume **$\mathcal{H}_A$** und **$\mathcal{H}_B$** beschrieben werden, durch das **Tensorprodukt** (Tensor Product) der jeweiligen Räume als **$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$** gegeben.
+Gemäß den Axiomen der Quantenmechanik ist der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sraum eines zusammengesetzten Systems, wenn die Zustandsräume unabhängiger physikalischer Systeme jeweils durch die [Hilbert](https://kenji.blog/de/p/hilbert/)räume **$\mathcal{H}_A$** und **$\mathcal{H}_B$** beschrieben werden, durch das **Tensorprodukt** (Tensor Product) der jeweiligen Räume als **$\mathcal{H} = \mathcal{H}_A \otimes \mathcal{H}_B$** gegeben.
 
-Der Zustandsraum eines einzelnen Qubits ist ein zweidimensionaler komplexer Vektorraum **$\mathbb{C}^2$** . Daher ist der Zustandsraum eines Systems aus $n$ Qubits ein $2^n$-dimensionaler [Hilbert](https://kenji.blog/de/p/hilbert/)raum **$(\mathbb{C}^2)^{\otimes n}$** . Dass die Dimension exponentiell mit der Anzahl der Qubits $n$ wächst, ist genau die mathematische Grundlage der Quantenparallelität.
+Der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sraum eines einzelnen Qubits ist ein zweidimensionaler komplexer Vektorraum **$\mathbb{C}^2$** . Daher ist der Zustandsraum eines Systems aus $n$ Qubits ein $2^n$-dimensionaler [Hilbert](https://kenji.blog/de/p/hilbert/)raum **$(\mathbb{C}^2)^{\otimes n}$** . Dass die Dimension exponentiell mit der Anzahl der Qubits $n$ wächst, ist genau die mathematische Grundlage der Quantenparallelität.
 
 Betrachten wir ein System, das aus zwei Qubits (Qubit A und Qubit B) besteht. Die Rechenbasis ist als das Tensorprodukt der Basiszustände der einzelnen Qubits definiert:
 
@@ -974,7 +974,7 @@ $$
 |0\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad |1\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
 $$
 
-Unter Verwendung dieser Vektoren sieht die Berechnung beispielsweise für den Zustand **$|10\rangle$** wie folgt aus:
+Unter Verwendung dieser Vektoren sieht die Berechnung beispielsweise für den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) **$|10\rangle$** wie folgt aus:
 
 $$
 |10\rangle = |1\rangle \otimes |0\rangle = \begin{pmatrix} 0 \\ 1 \end{pmatrix} \otimes \begin{pmatrix} 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0 \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} \\ 1 \cdot \begin{pmatrix} 1 \\ 0 \end{pmatrix} \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \end{pmatrix}
@@ -1027,7 +1027,7 @@ $$
 |\Psi^-\rangle = \frac{1}{\sqrt{2}} \Big( |01\rangle - |10\rangle \Big)
 $$
 
-Lassen Sie uns hier mithilfe eines Widerspruchsbeweises streng beweisen, dass der Zustand **$|\Phi^+\rangle$** nicht separierbar ist.
+Lassen Sie uns hier mithilfe eines Widerspruchsbeweises streng beweisen, dass der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) **$|\Phi^+\rangle$** nicht separierbar ist.
 Angenommen, **$|\Phi^+\rangle$** wäre ein separierbarer Zustand und könnte als Tensorprodukt unbekannter Einzel-Qubit-Zustände beschrieben werden:
 
 $$
@@ -1070,7 +1070,7 @@ $$
 \rho_A = \frac{1}{2} (|0\rangle\langle0| + |1\rangle\langle1|) = \frac{1}{2} I
 $$
 
-Dies bedeutet, dass, wenn nur Qubit A beobachtet wird, sich dessen Zustand in einem vollständig gemischten Zustand (Completely Mixed [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) befindet und die Von-Neumann-Entropie $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ ihren Maximalwert von $1$ annimmt. Das heißt, die Essenz der maximalen Quantenverschränkung liegt in dieser extremen Korrelation, die in der klassischen Mechanik völlig undenkbar ist: "Obwohl das System als Ganzes vollständige Information (einen reinen Zustand) besitzt, ist die Information, wenn man jedes Teilsystem betrachtet, vollkommen unbestimmt (maximale Entropie)."
+Dies bedeutet, dass, wenn nur Qubit A beobachtet wird, sich dessen Zustand in einem vollständig gemischten Zustand (Completely Mixed [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) befindet und die Von-Neumann-Entropie $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ ihren Maximalwert von $1$ annimmt. Das heißt, die Essenz der maximalen Quantenverschränkung liegt in dieser extremen Korrelation, die in der klassischen Mechanik völlig undenkbar ist: "Obwohl das System als Ganzes vollständige Information (einen reinen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)) besitzt, ist die Information, wenn man jedes Teilsystem betrachtet, vollkommen unbestimmt (maximale Entropie)."
 
 ---
 
@@ -1206,7 +1206,7 @@ graph LR
     style Dot fill:#333,stroke:#333,color:#fff
     style X fill:#fff,stroke:#333,stroke-width:2px
 ```
-*(Hinweis: Das obige Diagramm stellt die logische Verschaltung dar. Die durchgehenden horizontalen Linien zeigen den zeitlichen Verlauf jedes Qubits (Quantendraht), und es wird die Struktur gezeigt, in der das Kontroll-Qubit nach Passieren des `H-Gatters` das `⊕` des Ziel-Qubits an der Position `●` steuert. Als Gesamtausgangszustand erhält man den Bell-Zustand $|\Phi^+\rangle$.)*
+*(Hinweis: Das obige Diagramm stellt die logische Verschaltung dar. Die durchgehenden horizontalen Linien zeigen den zeitlichen Verlauf jedes Qubits (Quantendraht), und es wird die Struktur gezeigt, in der das Kontroll-Qubit nach Passieren des `H-Gatters` das `⊕` des Ziel-Qubits an der Position `●` steuert. Als Gesamtausgangszustand erhält man den Bell-[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $|\Phi^+\rangle$.)*
 
 ---
 
@@ -1227,7 +1227,7 @@ Einstein nannte dies "spukhafte Fernwirkung" (Spooky action at a distance). Das 
 ### No-[Signaling](https://kenji.blog/de/p/webrtc-realtime-communication-p2p/)-Theorem und Bellsche Ungleichung
 
 Steht die Quantenmechanik also im Widerspruch zur Relativitätstheorie? Die Schlussfolgerung lautet: Nein, tut sie nicht.
-Dieses scheinbare Paradoxon wird durch das **No-Signaling-Theorem** (No-Communication Theorem) gelöst. Obwohl Bobs Zustand durch Alices Messung augenblicklich bestimmt wird, ist es für Alice prinzipiell unmöglich zu kontrollieren, ob sie das Ergebnis $0$ oder $1$ erhält. Aus Bobs Sicht gibt es keine Möglichkeit zu wissen, dass Alice eine Messung durchgeführt hat, und das Ergebnis der Messung seines eigenen Qubits erscheint ihm immer noch völlig zufällig (mit 50%iger Wahrscheinlichkeit 0 oder 1). Wie im Abschnitt über die reduzierte Dichtematrix bewiesen wurde, ändert sich Bobs lokale Dichtematrix $\rho_B$ überhaupt nicht, unabhängig davon, welche Messbasis Alice wählt. Daher ist es nicht möglich, "sinnvolle Informationen" mithilfe von Verschränkung überlichtschnell zu übertragen.
+Dieses scheinbare Paradoxon wird durch das **No-Signaling-Theorem** (No-Communication Theorem) gelöst. Obwohl Bobs [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) durch Alices Messung augenblicklich bestimmt wird, ist es für Alice prinzipiell unmöglich zu kontrollieren, ob sie das Ergebnis $0$ oder $1$ erhält. Aus Bobs Sicht gibt es keine Möglichkeit zu wissen, dass Alice eine Messung durchgeführt hat, und das Ergebnis der Messung seines eigenen Qubits erscheint ihm immer noch völlig zufällig (mit 50%iger Wahrscheinlichkeit 0 oder 1). Wie im Abschnitt über die reduzierte Dichtematrix bewiesen wurde, ändert sich Bobs lokale Dichtematrix $\rho_B$ überhaupt nicht, unabhängig davon, welche Messbasis Alice wählt. Daher ist es nicht möglich, "sinnvolle Informationen" mithilfe von Verschränkung überlichtschnell zu übertragen.
 
 Diese starke Korrelation der Quantenverschränkung fiel jedoch nicht in den Bereich der klassischen Physik. Im Jahr 1964 leitete John Stewart Bell die **Bellsche Ungleichung** ab. Bell bewies mathematisch: "Wenn die Welt durch den lokalen Realismus (Einsteins Theorie der verborgenen Variablen) beschrieben wird, wird die Stärke der Korrelation, wenn Alice und Bob jeweils entlang unterschiedlicher Achsen messen, eine bestimmte Obergrenze ($|S| \leq 2$ in der CHSH-Ungleichung) nicht überschreiten."
 
@@ -1420,10 +1420,10 @@ Bemerkenswert ist, dass Bobs Qubit $B$ abhängig von Alices Messergebnis jeweils
  **Schritt 3: Messung und klassische Kommunikation** 
 Alice beobachtet (misst) ihre Qubits $C$ und $A$. Die möglichen Ergebnisse und deren Wahrscheinlichkeiten stellen sich wie folgt dar. Jedes Ergebnis tritt mit einer Wahrscheinlichkeit von 25 % auf:
 
-- Bei Messergebnis `00`: Bobs Qubit ist **$\alpha|0\rangle + \beta|1\rangle$** , was exakt dem ursprünglichen Zustand **$|\psi\rangle$** entspricht.
-- Bei Messergebnis `01`: Bobs Qubit ist **$\alpha|1\rangle + \beta|0\rangle$** . Dies ist der Zustand, auf den das Pauli-X-Gatter angewendet wurde: **$X|\psi\rangle$** .
-- Bei Messergebnis `10`: Bobs Qubit ist **$\alpha|0\rangle - \beta|1\rangle$** . Dies ist der Zustand, auf den das Pauli-Z-Gatter angewendet wurde: **$Z|\psi\rangle$** .
-- Bei Messergebnis `11`: Bobs Qubit ist **$\alpha|1\rangle - \beta|0\rangle$** . Dies ist der Zustand, auf den zuerst das Pauli-X-Gatter und dann das Pauli-Z-Gatter angewendet wurde: **$ZX|\psi\rangle$** (oder bis auf eine Phase $Y|\psi\rangle$).
+- Bei Messergebnis `00`: Bobs Qubit ist **$\alpha|0\rangle + \beta|1\rangle$** , was exakt dem ursprünglichen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) **$|\psi\rangle$** entspricht.
+- Bei Messergebnis `01`: Bobs Qubit ist **$\alpha|1\rangle + \beta|0\rangle$** . Dies ist der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), auf den das Pauli-X-Gatter angewendet wurde: **$X|\psi\rangle$** .
+- Bei Messergebnis `10`: Bobs Qubit ist **$\alpha|0\rangle - \beta|1\rangle$** . Dies ist der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), auf den das Pauli-Z-Gatter angewendet wurde: **$Z|\psi\rangle$** .
+- Bei Messergebnis `11`: Bobs Qubit ist **$\alpha|1\rangle - \beta|0\rangle$** . Dies ist der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), auf den zuerst das Pauli-X-Gatter und dann das Pauli-Z-Gatter angewendet wurde: **$ZX|\psi\rangle$** (oder bis auf eine Phase $Y|\psi\rangle$).
 
 Alice übermittelt dieses 2-Bit-Messergebnis (klassische Information) über einen klassischen Kommunikationskanal wie Telefon oder Internet an Bob. Da klassische Kommunikation verwendet wird, erfolgt die Zustandsübertragung niemals schneller als das Licht.
 
@@ -1436,7 +1436,7 @@ Entsprechend der von Alice empfangenen 2-Bit-klassischen Information wendet Bob 
 - Empfang von `10`: Pauli-Z-Gatter anwenden ($Z \cdot Z = I$)
 - Empfang von `11`: Pauli-X-Gatter gefolgt von Pauli-Z-Gatter anwenden ($Z \cdot X \cdot ZX = I$)
 
-Dadurch wird in Bobs Händen exakt derselbe Zustand **$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$** rekonstruiert, den Alice besaß. Da Alices ursprüngliches Qubit durch die Messung zerstört wurde, ist die Information vollständig übertragen (teleportiert) worden.
+Dadurch wird in Bobs Händen exakt derselbe [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) **$|\psi\rangle = \alpha|0\rangle + \beta|1\rangle$** rekonstruiert, den Alice besaß. Da Alices ursprüngliches Qubit durch die Messung zerstört wurde, ist die Information vollständig übertragen (teleportiert) worden.
 
 ### Darstellung als Quantenschaltkreis-Diagramm
 
@@ -1480,7 +1480,7 @@ graph LR
 
 ## 6.3 Dichte Kodierung (Superdense Coding)
 
-Während die Quantenteleportation ein Protokoll war, das „ein EPR-Paar und zwei klassische Bits verbraucht, um den Zustand eines einzelnen Qubits zu übertragen“, stellt die dichte Kodierung (Superdense Coding) in gewissem Sinne die umgekehrte Operation dar: Sie ermöglicht es, „durch das physische Übertragen von nur einem einzigen Qubit zwei klassische Bits an Information an den Empfänger zu übermitteln“.
+Während die Quantenteleportation ein Protokoll war, das „ein EPR-Paar und zwei klassische Bits verbraucht, um den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) eines einzelnen Qubits zu übertragen“, stellt die dichte Kodierung (Superdense Coding) in gewissem Sinne die umgekehrte Operation dar: Sie ermöglicht es, „durch das physische Übertragen von nur einem einzigen Qubit zwei klassische Bits an Information an den Empfänger zu übermitteln“.
 
 Nach den Gesetzen der klassischen Physik kann ein zweistufiges System (ein einzelnes Bit oder die Polarisation eines Photons) maximal 1 Bit an Information (0 oder 1) übertragen. Der erstaunliche Aspekt der dichten Kodierung besteht jedoch darin, dass durch die geschickte Ausnutzung von Quantenverschränkung diese Holevo-Grenze (Holevo's bound) scheinbar überwunden werden kann.
 
@@ -1525,7 +1525,7 @@ $$
 $$
 
 
-   (Das negative Gesamtvorzeichen ist eine globale Phase und beeinflusst die Beobachtungswahrscheinlichkeiten nicht; der Einfachheit halber ordnen wir dies dem Zustand **$|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$** zu.)
+   (Das negative Gesamtvorzeichen ist eine globale Phase und beeinflusst die Beobachtungswahrscheinlichkeiten nicht; der Einfachheit halber ordnen wir dies dem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) **$|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$** zu.)
 
 Alice sendet ihr manipuliertes Qubit A über einen Quantenkanal (z. B. Glasfaser) an Bob.
 
@@ -1543,15 +1543,15 @@ Betrachten wir die mathematische Herleitung für jeden der Fälle:
   Die Anwendung des Hadamard-Gatters auf A liefert $|0\rangle |0\rangle$.
   Misst Bob nun, erhält er mit Sicherheit `00`.
 
-- **Wenn der Zustand $|\Phi^-\rangle = \frac{1}{\sqrt{2}} (|00\rangle - |11\rangle)$ ist (Nachricht `01`):** Die Anwendung des CNOT-Gatters liefert $\frac{1}{\sqrt{2}} (|00\rangle - |10\rangle) = \frac{1}{\sqrt{2}} (|0\rangle - |1\rangle) |0\rangle$.
+- **Wenn der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $|\Phi^-\rangle = \frac{1}{\sqrt{2}} (|00\rangle - |11\rangle)$ ist (Nachricht `01`):** Die Anwendung des CNOT-Gatters liefert $\frac{1}{\sqrt{2}} (|00\rangle - |10\rangle) = \frac{1}{\sqrt{2}} (|0\rangle - |1\rangle) |0\rangle$.
   Die Anwendung des Hadamard-Gatters auf A liefert $|1\rangle |0\rangle$.
   Misst Bob nun, erhält er mit Sicherheit `10`. (Hinweis: Die Zuordnung der Bits zu Alices Operationen hängt von der Schaltkreisdefinition ab, ist jedoch stets eindeutig unterscheidbar.)
 
-- **Wenn der Zustand $|\Psi^+\rangle = \frac{1}{\sqrt{2}} (|01\rangle + |10\rangle)$ ist (Nachricht `10`):** Die Anwendung des CNOT-Gatters liefert $\frac{1}{\sqrt{2}} (|01\rangle + |11\rangle) = \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle) |1\rangle$.
+- **Wenn der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $|\Psi^+\rangle = \frac{1}{\sqrt{2}} (|01\rangle + |10\rangle)$ ist (Nachricht `10`):** Die Anwendung des CNOT-Gatters liefert $\frac{1}{\sqrt{2}} (|01\rangle + |11\rangle) = \frac{1}{\sqrt{2}} (|0\rangle + |1\rangle) |1\rangle$.
   Die Anwendung des Hadamard-Gatters auf A liefert $|0\rangle |1\rangle$.
   Misst Bob nun, erhält er mit Sicherheit `01`.
 
-- **Wenn der Zustand $|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$ ist (Nachricht `11`):** Die Anwendung des CNOT-Gatters liefert $\frac{1}{\sqrt{2}} (|01\rangle - |11\rangle) = \frac{1}{\sqrt{2}} (|0\rangle - |1\rangle) |1\rangle$.
+- **Wenn der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $|\Psi^-\rangle = \frac{1}{\sqrt{2}} (|01\rangle - |10\rangle)$ ist (Nachricht `11`):** Die Anwendung des CNOT-Gatters liefert $\frac{1}{\sqrt{2}} (|01\rangle - |11\rangle) = \frac{1}{\sqrt{2}} (|0\rangle - |1\rangle) |1\rangle$.
   Die Anwendung des Hadamard-Gatters auf A liefert $|1\rangle |1\rangle$.
   Misst Bob nun, erhält er mit Sicherheit `11`.
 
@@ -1561,7 +1561,7 @@ Auf diese Weise kann Bob durch die gemeinsame Messung des empfangenen einzelnen 
 
 Der wahre Wert der dichten Kodierung beschränkt sich nicht allein darauf, die „Dichte“ von Informationen zu verdoppeln. Dieses Protokoll ist der entscheidende Beweis dafür, wie nichtlokale Korrelationen in Form von Quantenverschränkung die Bandbreite der klassischen Informationsübertragung erweitern können.
 
-Darüber hinaus ist es auch unter Sicherheitsaspekten von größter Bedeutung: Sollte eine Abhörerin Eva (Eve) das Qubit A auf dem Weg von Alice zu Bob abfangen, kann Eva keinerlei Information gewinnen. Denn betrachtet man ausschließlich das einzelne Qubit A, verhält sich dessen Zustand wie ein völlig zufälliger gemischter Zustand (dessen Dichtematrix proportional zu $\frac{I}{2}$ ist). Die Information ist einzig und allein in der räumlich getrennten „Korrelation“ zwischen A und B kodiert, sodass es physikalisch unmöglich ist, sie durch den Besitz von nur einem der beiden Qubits zu entschlüsseln.
+Darüber hinaus ist es auch unter Sicherheitsaspekten von größter Bedeutung: Sollte eine Abhörerin Eva (Eve) das Qubit A auf dem Weg von Alice zu Bob abfangen, kann Eva keinerlei Information gewinnen. Denn betrachtet man ausschließlich das einzelne Qubit A, verhält sich dessen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) wie ein völlig zufälliger gemischter Zustand (dessen Dichtematrix proportional zu $\frac{I}{2}$ ist). Die Information ist einzig und allein in der räumlich getrennten „Korrelation“ zwischen A und B kodiert, sodass es physikalisch unmöglich ist, sie durch den Besitz von nur einem der beiden Qubits zu entschlüsseln.
 
 ---
 
@@ -1662,7 +1662,7 @@ graph LR
 
 ### Schritt 1: Vorbereitung des Anfangszustands
 
-Wir initialisieren das Eingaberegister mit $n$ Qubits im Zustand $|0\rangle^{\otimes n}$ und das Zielregister mit 1 Qubit im Zustand $|1\rangle$:
+Wir initialisieren das Eingaberegister mit $n$ Qubits im [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $|0\rangle^{\otimes n}$ und das Zielregister mit 1 Qubit im Zustand $|1\rangle$:
 
 $$
 |\psi_0\rangle = |0\rangle^{\otimes n} |1\rangle
@@ -1905,7 +1905,7 @@ Durch diese klassische Reduktion konzentriert sich das Problem nun auf eine einz
 
 ## 8.3 Strenge mathematische Formulierung der Quanten-Fouriertransformation (QFT) und ihre Rolle
 
-Das Herzstück des Quantenalgorithmus zur Extraktion der verborgenen Periode $r$ der Funktion $f(x)$ in polynomieller Zeit ist die „Quanten-Fouriertransformation“ (Quantum Fourier Transform, QFT). Die QFT ist das quantenmechanische Analogon zur klassischen diskreten Fouriertransformation (DFT) und eine unitäre Transformation, die auf die Wahrscheinlichkeitsamplituden des Zustandsraums wirkt.
+Das Herzstück des Quantenalgorithmus zur Extraktion der verborgenen Periode $r$ der Funktion $f(x)$ in polynomieller Zeit ist die „Quanten-Fouriertransformation“ (Quantum Fourier Transform, QFT). Die QFT ist das quantenmechanische Analogon zur klassischen diskreten Fouriertransformation (DFT) und eine unitäre Transformation, die auf die Wahrscheinlichkeitsamplituden des [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sraums wirkt.
 
 Die Wirkung der Quanten-Fouriertransformation auf die Rechenbasiszustände $|j\rangle$ ($j = 0, 1, \dots, M-1$) in einem [Hilbert](https://kenji.blog/de/p/hilbert/)raum $\mathcal{H}$ der Dimension $M = 2^n$ ist streng wie folgt definiert:
 
@@ -1923,7 +1923,7 @@ $$
 $$
 
 
-Die hierbei erhaltenen neuen Amplituden $y_k$ stimmen exakt mit den Koeffizienten überein, die man durch die klassische diskrete Fouriertransformation erhält. Während jedoch die klassische schnelle Fouriertransformation (FFT) zur Berechnung des gesamten Vektors eine Zeit von $O(M \log M) = O(n 2^n)$ benötigt, kann die QFT den „Zustand“ von $n$ Qubits mit lediglich $O(n^2)$ Quantengatter-Operationen transformieren – eine dramatische Reduzierung der Berechnungskomplexität.
+Die hierbei erhaltenen neuen Amplituden $y_k$ stimmen exakt mit den Koeffizienten überein, die man durch die klassische diskrete Fouriertransformation erhält. Während jedoch die klassische schnelle Fouriertransformation (FFT) zur Berechnung des gesamten Vektors eine Zeit von $O(M \log M) = O(n 2^n)$ benötigt, kann die QFT den „[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)“ von $n$ Qubits mit lediglich $O(n^2)$ Quantengatter-Operationen transformieren – eine dramatische Reduzierung der Berechnungskomplexität.
 
 Um zu verstehen, warum dies mit einer so geringen Anzahl von $O(n^2)$ Gattern realisiert werden kann, muss der durch die QFT erhaltene Zustand als Tensorprodukt faktorisiert dargestellt werden. Wenn man die ganze Zahl $j$ in Binärdarstellung als $j = j_1 2^{n-1} + j_2 2^{n-2} + \dots + j_n 2^0$ schreibt (wobei $j_1$ das höchstwertige Bit und $j_n$ das niederwertigste Bit ist), lässt sich der Ausgangszustand elegant in ein Tensorprodukt von $n$ unabhängigen Qubit-Zuständen zerlegen:
 
@@ -1940,7 +1940,7 @@ Diese Formel ist äußerst aufschlussreich. Sie zeigt, dass die Phase des Zustan
 ## 8.4 Der Quantenschaltkreis zur Periodenfindung mittels Superposition
 
 Nachdem die theoretischen Vorbereitungen abgeschlossen sind, wollen wir nun den gesamten Quantenschaltkreis für Shors Algorithmus und die Zeitentwicklung des Quantenzustands ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Evolution) in jedem Schritt im Detail verfolgen. Der Algorithmus verwendet zwei Quantenregister:
-Das erste Register besteht aus $t \approx 2 \log_2 N$ Qubits, und die Dimension des Zustandsraums ist $M = 2^t$ (wobei $t$ so gewählt wird, dass $M \ge N^2$ erfüllt ist). Das zweite Register umfasst $L \approx \log_2 N$ Qubits und dient zur Speicherung der Berechnungsergebnisse.
+Das erste Register besteht aus $t \approx 2 \log_2 N$ Qubits, und die Dimension des [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sraums ist $M = 2^t$ (wobei $t$ so gewählt wird, dass $M \ge N^2$ erfüllt ist). Das zweite Register umfasst $L \approx \log_2 N$ Qubits und dient zur Speicherung der Berechnungsergebnisse.
 
 ```mermaid
 flowchart LR
@@ -1992,7 +1992,7 @@ $$
 $$
 
 
-Dieser Zustand **$|\psi_2\rangle$** ist ein Zustand, in dem die Eingabe $x$ und die Ausgabe $f(x)$ stark miteinander verschränkt sind.
+Dieser [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) **$|\psi_2\rangle$** ist ein Zustand, in dem die Eingabe $x$ und die Ausgabe $f(x)$ stark miteinander verschränkt sind.
 
  **[Schritt 3: Beobachtung des zweiten Registers (konzeptionell)]** 
 Um die Theorie leichter verständlich zu machen, wollen wir hier annehmen, dass wir das zweite Register messen (im tatsächlichen Algorithmus bleiben die mathematischen Konsequenzen exakt dieselben, selbst wenn die Messung weggelassen wird). Durch die Beobachtung kollabiert das zweite Register auf einen bestimmten Wert $y = a^{x_0} \bmod N$. Hier ist $x_0$ ein minimaler Offset-Wert, der $0 \le x_0 < r$ erfüllt.
@@ -2046,7 +2046,7 @@ Der Grund, warum Shors Algorithmus ein historischer Durchbruch wurde, liegt dari
 
 Erstens: Quantenparallelität. Durch die Nutzung des Superpositionszustands wurde die Funktion $f(x)$ gleichzeitig in einer einzigen Operation für eine astronomische Anzahl von Eingaben $x$ ausgewertet, nämlich $2^t$, was sogar die Anzahl der Atome im Universum übersteigt. Eine Auswertung, für die ein klassischer Computer nacheinander hunderte Millionen Jahre bräuchte, wurde in einem Augenblick abgeschlossen.
 
-Nach den Axiomen der Quantenmechanik kollabiert der Zustand jedoch, sobald eine Messung durchgeführt wird, und die erhaltene Information ist nur ein einziges zufälliges Auswertungsergebnis $(x, f(x))$. In dieser Hinsicht unterscheidet es sich nicht von klassischer Berechnung.
+Nach den Axiomen der Quantenmechanik kollabiert der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) jedoch, sobald eine Messung durchgeführt wird, und die erhaltene Information ist nur ein einziges zufälliges Auswertungsergebnis $(x, f(x))$. In dieser Hinsicht unterscheidet es sich nicht von klassischer Berechnung.
 
 Hier beginnt die wahre Magie und der zweite Schlüssel: Quanteninterferenz und die Extraktion globaler Strukturen. Die Quanten-Fouriertransformation erzeugt Interferenz über den exponentiell riesigen Zustandsraum hinweg. Dies ist eine Operation, die nicht versucht, den spezifischen Wert eines einzelnen $f(x)$ zu kennen, sondern nur das strukturelle Muster der „globalen Periodizität“ der gesamten Funktion extrahiert.
 Die Wahrscheinlichkeitsamplituden, die falschen Perioden entsprechen, werden durch destruktive Interferenz vollständig ausgelöscht, so als würden sich Wellenberge und Wellentäler aufheben, während nur die Wahrscheinlichkeitsamplitude, die der richtigen Periode $r$ entspricht, durch konstruktive Interferenz maximiert wird. Mit anderen Worten, die physikalischen Gesetze der Natur selbst fungieren als Computer, der unzählige falsche Antworten auslöscht und nur die richtige Antwort hervortreten lässt.
@@ -2065,7 +2065,7 @@ In diesem Kapitel widmen wir uns dem tiefgreifenden Mechanismus der **„Amplitu
 
 ## 9.1 Problemformulierung und Präparation des initialen Superpositionszustands
 
-Zunächst wollen wir das zu lösende Suchproblem mathematisch präzise formulieren. Gegeben sei eine unstrukturierte Datenbank der Größe $N = 2^n$. Jedes Element wird durch einen Rechenbasiszustand $|x\rangle$ mit $n$ Qubits kodiert, wobei $x \in \{0, 1\}^n$, also $x = 0, 1, \dots, N-1$. Wir nehmen an, dass in diesem riesigen Datenbankraum genau ein gesuchter Zustand (der Zielzustand bzw. die korrekte Lösung) existiert, und bezeichnen diesen ausgezeichneten Zustand mit $|w\rangle$ (für engl. *winner*).
+Zunächst wollen wir das zu lösende Suchproblem mathematisch präzise formulieren. Gegeben sei eine unstrukturierte Datenbank der Größe $N = 2^n$. Jedes Element wird durch einen Rechenbasiszustand $|x\rangle$ mit $n$ Qubits kodiert, wobei $x \in \{0, 1\}^n$, also $x = 0, 1, \dots, N-1$. Wir nehmen an, dass in diesem riesigen Datenbankraum genau ein gesuchter [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) (der Zielzustand bzw. die korrekte Lösung) existiert, und bezeichnen diesen ausgezeichneten Zustand mit $|w\rangle$ (für engl. *winner*).
 
 Das Ziel des Problems lautet: „Unter Verwendung einer vorgegebenen Blackbox-Funktion (die als **Orakel** bezeichnet wird) den Zielzustand $|w\rangle$ mit möglichst wenigen Abfragen und mit hoher Wahrscheinlichkeit zu identifizieren.“
 
@@ -2081,13 +2081,13 @@ $$
 |s^\perp\rangle = \frac{1}{\sqrt{N-1}} \sum_{x \neq w} |x\rangle
 $$
 
-Gemäß dieser Definition stehen der Zustand $|s^\perp\rangle$ und der Zielzustand $|w\rangle$ orthogonal aufeinander ( $\langle s^\perp | w \rangle = 0$ ). Folglich lässt sich der anfängliche gleichmäßige Superpositionszustand **$|s\rangle$** in dem zweidimensionalen [Hilbert](https://kenji.blog/de/p/hilbert/)-Unterraum, der von diesen beiden zueinander orthogonalen Vektoren $|w\rangle$ und $|s^\perp\rangle$ aufgespannt wird, denkbar einfach zerlegen:
+Gemäß dieser Definition stehen der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $|s^\perp\rangle$ und der Zielzustand $|w\rangle$ orthogonal aufeinander ( $\langle s^\perp | w \rangle = 0$ ). Folglich lässt sich der anfängliche gleichmäßige Superpositionszustand **$|s\rangle$** in dem zweidimensionalen [Hilbert](https://kenji.blog/de/p/hilbert/)-Unterraum, der von diesen beiden zueinander orthogonalen Vektoren $|w\rangle$ und $|s^\perp\rangle$ aufgespannt wird, denkbar einfach zerlegen:
 
 $$
 |s\rangle = \sqrt{\frac{N-1}{N}} |s^\perp\rangle + \frac{1}{\sqrt{N}} |w\rangle
 $$
 
-Wir führen nun einen kleinen Winkel $\theta$ ein, der durch $\sin \theta = \frac{1}{\sqrt{N}}$ definiert ist (für hinreichend große $N$ gilt $\theta \approx 1/\sqrt{N}$). Damit lässt sich der Zustand unter Verwendung trigonometrischer Funktionen in einer besonders eleganten geometrischen Form ausdrücken:
+Wir führen nun einen kleinen Winkel $\theta$ ein, der durch $\sin \theta = \frac{1}{\sqrt{N}}$ definiert ist (für hinreichend große $N$ gilt $\theta \approx 1/\sqrt{N}$). Damit lässt sich der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) unter Verwendung trigonometrischer Funktionen in einer besonders eleganten geometrischen Form ausdrücken:
 
 $$
 |s\rangle = \cos \theta |s^\perp\rangle + \sin \theta |w\rangle
@@ -2105,7 +2105,7 @@ $$
 O_f \left( |x\rangle \otimes |y\rangle \right) = |x\rangle \otimes |y \oplus f(x)\rangle
 $$
 
-An dieser Stelle offenbart sich die Genialität von Grovers Ansatz: Das Hilfs-Qubit $|y\rangle$ wird nicht in einem Zustand der Rechenbasis, sondern vorab im Superpositionszustand $|-\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$ initialisiert und eingespeist. Dabei tritt ein bemerkenswertes, genuin quantenmechanisches Phänomen auf, das als **Phasen-Kickback (Phase Kickback)** bezeichnet wird. Führen wir diese Rechnung explizit durch:
+An dieser Stelle offenbart sich die Genialität von Grovers Ansatz: Das Hilfs-Qubit $|y\rangle$ wird nicht in einem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) der Rechenbasis, sondern vorab im Superpositionszustand $|-\rangle = \frac{1}{\sqrt{2}}(|0\rangle - |1\rangle)$ initialisiert und eingespeist. Dabei tritt ein bemerkenswertes, genuin quantenmechanisches Phänomen auf, das als **Phasen-Kickback (Phase Kickback)** bezeichnet wird. Führen wir diese Rechnung explizit durch:
 
 $$
 \begin{align*}
@@ -2270,7 +2270,7 @@ graph LR
     style E fill:#99ccff,stroke:#333,stroke-width:2px
 ```
 
-Dieser Schaltplan offenbart eine ungemein praktische Methode zur Realisierung des Diffusionsoperators $U_s = 2|s\rangle\langle s| - I$. Da der Zustand $|s\rangle$ durch $H^{\otimes n} |0\rangle^{\otimes n}$ präpariert wird, lässt sich der Operator wie folgt faktorisieren:
+Dieser Schaltplan offenbart eine ungemein praktische Methode zur Realisierung des Diffusionsoperators $U_s = 2|s\rangle\langle s| - I$. Da der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $|s\rangle$ durch $H^{\otimes n} |0\rangle^{\otimes n}$ präpariert wird, lässt sich der Operator wie folgt faktorisieren:
 
 $$
 U_s = 2(H^{\otimes n} |0\rangle^{\otimes n})(\langle 0|^{\otimes n} H^{\otimes n}) - I = H^{\otimes n} (2|0\rangle\langle 0| - I) H^{\otimes n}
@@ -2360,7 +2360,7 @@ Darüber hinaus dient das in diesem Kapitel analysierte Paradigma der „Amplitu
 
 # Kapitel 10: Quantenfehlerkorrektur und fehlertolerantes Rechnen
 
-Das größte und tiefgreifendste Hindernis, dem sich die Quanteninformationswissenschaft gegenübersieht, sind "Rauschen" (Noise) und "Dekohärenz". Solange man einen Quantencomputer als ideales geschlossenes System betrachtet, ist eine deterministische Zustandsmanipulation durch unitäre Entwicklung gemäß der Schrödinger-Gleichung garantiert. Reale physikalische Systeme wie Quantengeräte interagieren jedoch ständig mit ihrer äußeren Umgebung (Wärmebäder, elektromagnetische Fluktuationen, kosmische Strahlung usw.). In diesem Kapitel werden wir, nachdem wir das Rauschen in Quantensystemen mathematisch streng definiert haben, in die Tiefen der "Quantenfehlerkorrektur" (Quantum Error Correction: QEC) vordringen, bei der es darum geht, wie man quantenspezifische Fehler, die in klassischen Systemen nicht existieren, erkennen und korrigieren kann. Darüber hinaus werden wir die theoretischen Grundlagen des "fehlertoleranten Quantenrechnens" (Fault-Tolerant Quantum Computation: FTQC), das Berechnungen selbst in realistischen Situationen, in denen der Korrekturmechanismus selbst von Rauschen durchsetzt ist, unendlich fortsetzbar macht, sowie das Schwellenwerttheorem (Threshold Theorem) detailliert behandeln.
+Das größte und tiefgreifendste Hindernis, dem sich die Quanteninformationswissenschaft gegenübersieht, sind "Rauschen" (Noise) und "Dekohärenz". Solange man einen Quantencomputer als ideales geschlossenes System betrachtet, ist eine deterministische [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smanipulation durch unitäre Entwicklung gemäß der Schrödinger-Gleichung garantiert. Reale physikalische Systeme wie Quantengeräte interagieren jedoch ständig mit ihrer äußeren Umgebung (Wärmebäder, elektromagnetische Fluktuationen, kosmische Strahlung usw.). In diesem Kapitel werden wir, nachdem wir das Rauschen in Quantensystemen mathematisch streng definiert haben, in die Tiefen der "Quantenfehlerkorrektur" (Quantum Error Correction: QEC) vordringen, bei der es darum geht, wie man quantenspezifische Fehler, die in klassischen Systemen nicht existieren, erkennen und korrigieren kann. Darüber hinaus werden wir die theoretischen Grundlagen des "fehlertoleranten Quantenrechnens" (Fault-Tolerant Quantum Computation: FTQC), das Berechnungen selbst in realistischen Situationen, in denen der Korrekturmechanismus selbst von Rauschen durchsetzt ist, unendlich fortsetzbar macht, sowie das Schwellenwerttheorem (Threshold Theorem) detailliert behandeln.
 
 ## 10.1 Mathematische Beschreibung von Quantenrauschen und Dekohärenz
 
@@ -2405,7 +2405,7 @@ Die erste Barriere bei der Entwicklung der Quantenfehlerkorrektur ist das "No-Cl
 
 ## 10.2 Grundprinzipien der Quantenfehlerkorrektur: Redundanz und Syndrommessung
 
-Die Alternative zum "Kopieren" in der Quanteninformation besteht darin, die ursprünglichen Informationen auf einen Unterraum eines höherdimensionalen [Hilbert](https://kenji.blog/de/p/hilbert/)raums (den Code-Raum, Code Space) abzubilden, indem mehrere Qubits in einen verschränkten Zustand (Entanglement) versetzt werden.
+Die Alternative zum "Kopieren" in der Quanteninformation besteht darin, die ursprünglichen Informationen auf einen Unterraum eines höherdimensionalen [Hilbert](https://kenji.blog/de/p/hilbert/)raums (den Code-Raum, Code Space) abzubilden, indem mehrere Qubits in einen verschränkten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) (Entanglement) versetzt werden.
 
 Als einfachstes Beispiel konstruieren wir einen "3-Qubit-Bit-Flip-Code", der den Zustand eines einzelnen Qubits $|\psi\rangle = \alpha |0\rangle + \beta |1\rangle$ vor stochastischen Bit-Flips schützt.
 Wir definieren die logische Basis (Logical Basis) wie folgt:
@@ -2537,7 +2537,7 @@ $$
 
 
 Hierbei ist $A_v$ das Tensorprodukt des $X$-Operators für die vier Qubits um einen Eckpunkt (Vertex) (Vertexoperator: $A_v = \prod_{i \in \text{star}(v)} X_i$), und $B_p$ ist das Tensorprodukt des $Z$-Operators für die vier Qubits um ein Plaquette (Fläche, Plaquette) (Plaquetteoperator: $B_p = \prod_{i \in \text{boundary}(p)} Z_i$).
-Diese kommutieren miteinander ($[A_v, B_p] = 0$), und der logische Zustand wird im Grundzustandsraum codiert, wo die Eigenwerte aller $A_v$ und $B_p$ gleich $+1$ sind. Erstaunlicherweise beträgt der Entartungsgrad des Grundzustands des Toric-Codes, der auf einer zweidimensionalen Mannigfaltigkeit vom Geschlecht (Genus) $g$ konstruiert ist, $4^g$, und auf einem Torus ($g=1$) werden auf natürliche Weise zwei logische Qubits codiert.
+Diese kommutieren miteinander ($[A_v, B_p] = 0$), und der logische [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) wird im Grundzustandsraum codiert, wo die Eigenwerte aller $A_v$ und $B_p$ gleich $+1$ sind. Erstaunlicherweise beträgt der Entartungsgrad des Grundzustands des Toric-Codes, der auf einer zweidimensionalen Mannigfaltigkeit vom Geschlecht (Genus) $g$ konstruiert ist, $4^g$, und auf einem Torus ($g=1$) werden auf natürliche Weise zwei logische Qubits codiert.
 
 Eine äußerst schöne physikalische Interpretation von Oberflächencodes ist es, Fehler als "Quasiteilchen (Anyons)" zu betrachten. Wenn zum Beispiel ein $X$-Fehler an einem Qubit auftritt, kehrt sich das Syndrom der zwei benachbarten Plaquetteoperatoren $B_p$ auf $-1$ um. Dies bedeutet, dass ein Paar "magnetischer Monopol-artiger Anyons ($m$-Anyons)" aus dem Vakuum des Grundzustands paarerzeugt wurde. Wenn sich die Fehler auf die Nachbarn ausweiten, bewegen sich die Anyons durch den Gitterraum.
 Die Korrektur ist nichts anderes als das Auffinden von Syndrompaaren (Anyons) und die Verwendung des graphentheoretischen Algorithmus "Minimum Weight Perfect Matching" (MWPM), um die Anyons auf dem kürzesten Pfad zur Kollision zu bringen und sie einander vernichten zu lassen (Paarvernichtung).
@@ -2564,11 +2564,11 @@ Quantenfehlerkorrektur und FTQC sind nicht einfach nur ein technisches Patchwork
 
 # Kapitel 11: Physikalische Realisierung von Quantenhardware
 
-Bis Kapitel 10 haben wir die theoretischen Grundlagen der Quanteninformationswissenschaft und die mathematische Struktur von Quantenalgorithmen ausführlich behandelt. Wie hochentwickelt ein Quantenalgorithmus auch entworfen sein mag und wie sehr die theoretische Quantenüberlegenheit (Quantum Supremacy) im Rahmen der Komplexitätstheorie auch bewiesen sein mag – ohne die physische Entität der „Quantenhardware“, die ihn ausführt, bleibt dies ein rein mathematisches Gedankenspiel. In diesem Kapitel erläutern wir die modernsten Hardware-Implementierungsansätze zur Verkörperung des Zustandsvektors $ |\psi\rangle $ im abstrakten [Hilbert](https://kenji.blog/de/p/hilbert/)-Raum in der physikalischen Welt streng ausgehend von den tiefgreifenden Prinzipien der Quantenphysik.
+Bis Kapitel 10 haben wir die theoretischen Grundlagen der Quanteninformationswissenschaft und die mathematische Struktur von Quantenalgorithmen ausführlich behandelt. Wie hochentwickelt ein Quantenalgorithmus auch entworfen sein mag und wie sehr die theoretische Quantenüberlegenheit (Quantum Supremacy) im Rahmen der Komplexitätstheorie auch bewiesen sein mag – ohne die physische Entität der „Quantenhardware“, die ihn ausführt, bleibt dies ein rein mathematisches Gedankenspiel. In diesem Kapitel erläutern wir die modernsten Hardware-Implementierungsansätze zur Verkörperung des [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)svektors $ |\psi\rangle $ im abstrakten [Hilbert](https://kenji.blog/de/p/hilbert/)-Raum in der physikalischen Welt streng ausgehend von den tiefgreifenden Prinzipien der Quantenphysik.
 
 Um ein quantenphysikalisches System künstlich zu steuern und es als universellen (Universal) Rechner fungieren zu lassen, müssen fünf anspruchsvolle physikalische Anforderungen erfüllt werden, die als DiVincenzo-Kriterien (DiVincenzo's criteria) bekannt sind:
 1. **Ein skalierbares, wohldefiniertes Qubit-System** : Die Tensorproduktstruktur des [Hilbert](https://kenji.blog/de/p/hilbert/)-Raums $ \mathcal{H} = \bigotimes_{i=1}^n \mathcal{H}_i $ muss physikalisch gewährleistet werden können.
-2. **Initialisierung von Quantenzuständen** : Die Fähigkeit, das System mit hoher Fidelität (Fidelity) in einen reinen Zustand (typischerweise $ |00\dots0\rangle $ ) zurückzusetzen.
+2. **Initialisierung von Quantenzuständen** : Die Fähigkeit, das System mit hoher Fidelität (Fidelity) in einen reinen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) (typischerweise $ |00\dots0\rangle $ ) zurückzusetzen.
 3. **Ausreichend lange Kohärenzzeiten** : Die Dekohärenzzeiten (T1 und T2) des Quantenzustands müssen um viele Größenordnungen länger sein als die für eine einzelne Gatteroperation benötigte Zeit.
 4. **Implementierung eines universellen Quantengattersatzes** : Jede beliebige unitäre Transformation $ \hat{U} \in SU(2^n) $ muss durch eine Kombination einer endlichen Anzahl von Basisgattern (z. B. H-, T-, CNOT-Gatter) mit beliebiger Präzision approximiert werden können.
 5. **Projektive Messung an spezifischen Qubits** : Die Fähigkeit, die Wahrscheinlichkeitsverteilung bezüglich einer bestimmten Basis mit hoher Präzision auszulesen, einhergehend mit dem Kollaps des Quantenzustands.
@@ -2677,7 +2677,7 @@ Sowohl supraleitende Schaltkreise als auch gefangene Ionen sind anfällig für F
 
 ### 11.3.1 Kitaev-Kette und Majorana-Nullmoden
 
-In dem dreidimensionalen Raum, in dem wir leben, existieren nur zwei Arten von Elementarteilchen: Bosonen und Fermionen. In zweidimensionalen topologischen Materialsystemen können jedoch „Anyonen“ (Anyon) existieren, bei denen die Wellenfunktion durch eine Teilchenaustauschoperation eine beliebige Phase annehmen kann. Im noch außergewöhnlicheren Fall „nicht-abelscher Anyonen“ (Non-[Abel](https://kenji.blog/de/p/abel/)ian anyon) führt der Austausch zweier Teilchen dazu, dass das System innerhalb eines entarteten Zustandsraums gleicher Energie eine unitäre Rotation in einen anderen, orthogonalen Zustand erfährt:
+In dem dreidimensionalen Raum, in dem wir leben, existieren nur zwei Arten von Elementarteilchen: Bosonen und Fermionen. In zweidimensionalen topologischen Materialsystemen können jedoch „Anyonen“ (Anyon) existieren, bei denen die Wellenfunktion durch eine Teilchenaustauschoperation eine beliebige Phase annehmen kann. Im noch außergewöhnlicheren Fall „nicht-abelscher Anyonen“ (Non-[Abel](https://kenji.blog/de/p/abel/)ian anyon) führt der Austausch zweier Teilchen dazu, dass das System innerhalb eines entarteten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sraums gleicher Energie eine unitäre Rotation in einen anderen, orthogonalen Zustand erfährt:
 
 $$
 | \psi_{\text{final}} \rangle = \hat{U} | \psi_{\text{initial}} \rangle
@@ -2717,7 +2717,7 @@ Ein weiterer Ansatz, der von Natur aus eine herausragende Robustheit gegenüber 
 
 ### 11.4.1 Dual-Rail-Kodierung und KLM-Protokoll
 
-Photonische Qubits werden häufig über räumliche Pfadmoden kodiert. Bei der Dual-Rail-Kodierung (Dual-Rail Encoding) entspricht der Zustand, in dem sich das Photon im oberen Wellenleiter befindet, $ |0\rangle = |1, 0\rangle $ , und der Zustand im unteren Wellenleiter $ |1\rangle = |0, 1\rangle $ .
+Photonische Qubits werden häufig über räumliche Pfadmoden kodiert. Bei der Dual-Rail-Kodierung (Dual-Rail Encoding) entspricht der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), in dem sich das Photon im oberen Wellenleiter befindet, $ |0\rangle = |1, 0\rangle $ , und der Zustand im unteren Wellenleiter $ |1\rangle = |0, 1\rangle $ .
 
 Einzel-Qubit-Gatter lassen sich vollständig mit linearen optischen Elementen wie Strahlteilern (BS) und Phasenschiebern (PS) realisieren. Da Photonen jedoch nicht direkt miteinander wechselwirken, ist es unmöglich, deterministische Zwei-Qubit-Gatter allein mit linearen optischen Elementen aufzubauen.
 Im Jahr 2001 schlugen Knill, Laflamme und Milburn das „KLM-Protokoll“ vor und bewiesen, dass durch die Kombination von Einzelphotonenquellen, linearen optischen Elementen und **projektiver Messung mittels Photonendetektoren** eine – wenngleich probabilistische – skalierbare universelle Quantenberechnung möglich ist. Die erforderliche Nichtlinearität wird dem System postselektiv (Post-selection) über reine Quanteninterferenzeffekte wie den Hong-Ou-Mandel-Effekt (Hong-Ou-Mandel effect) und die Irreversibilität der Quantenmessung zugeführt.
@@ -2733,7 +2733,7 @@ Wie das von John Preskill geprägte Konzept von **NISQ (Noisy Intermediate-Scale
 
 ### 11.5.1 Kohärenzgrenzen und Fidelität
 
-Versucht man, tiefe Quantenschaltungen wie den [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) auszuführen, verstärken sich kleinste Fehler bei jeder Gatteroperation exponentiell. Angenommen, die Fidelität eines bestimmten Zwei-Qubit-Gatters beträgt 99,5 % (Fehlerrate $ \epsilon = 0.005 $ ). Wenn die Gesamtschaltung $ N $ Gatter umfasst, beträgt die endgültige Zustandsfidelität näherungsweise $ \mathcal{F} \approx (1-\epsilon)^N \approx e^{-N\epsilon} $ . Bei $ N=1000 $ liegt die Erfolgswahrscheinlichkeit bei lediglich $ e^{-5} \approx 0.0067 $ , sodass das korrekte Rechenergebnis im Rauschen untergeht.
+Versucht man, tiefe Quantenschaltungen wie den [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) auszuführen, verstärken sich kleinste Fehler bei jeder Gatteroperation exponentiell. Angenommen, die Fidelität eines bestimmten Zwei-Qubit-Gatters beträgt 99,5 % (Fehlerrate $ \epsilon = 0.005 $ ). Wenn die Gesamtschaltung $ N $ Gatter umfasst, beträgt die endgültige [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sfidelität näherungsweise $ \mathcal{F} \approx (1-\epsilon)^N \approx e^{-N\epsilon} $ . Bei $ N=1000 $ liegt die Erfolgswahrscheinlichkeit bei lediglich $ e^{-5} \approx 0.0067 $ , sodass das korrekte Rechenergebnis im Rauschen untergeht.
 In dem von Google durchgeführten Experiment zur Quantenüberlegenheit wurde anhand einer Metrik namens Cross-Entropy Benchmarking (XEB) eine Rechengeschwindigkeit nachgewiesen, die klassische Supercomputer bei weitem übertraf. Dies war jedoch auf das Sampling spezieller Zufallsschaltkreise beschränkt und stellte noch keine praktisch verwertbare Berechnung dar.
 
 ### 11.5.2 Übergang zur Quantenfehlerkorrektur (Der Anbruch des FTQC)
@@ -2768,7 +2768,7 @@ $$
 
 In ausreichend tiefen (hinreichend großes $d$) zufälligen Quantenschaltkreisen zeigen die einzelnen Amplituden $ \alpha_x $ ein Random-Walk-artiges Verhalten in der komplexen Ebene, und es ist mathematisch bewiesen, dass ihre Wahrscheinlichkeitsverteilung $ P_{\text{ideal}}(x) $ einer Porter-Thomas-Verteilung folgt. Das bedeutet, dass die Wahrscheinlichkeitsdichtefunktion für das Auftreten einer Wahrscheinlichkeit $p$ durch $ \text{Pr}(P_{\text{ideal}}(x) = p) \approx 2^n e^{-2^n p} $ gegeben ist. Dies führt dazu, dass manche Bitfolgen mit signifikant höherer Wahrscheinlichkeit gemessen werden als andere, wodurch ein charakteristisches Interferenz- bzw. „Speckle-Muster“ (Fleckenmuster) entsteht.
 
-Um aus dieser Verteilung auf einem klassischen Computer ein exaktes Sampling durchzuführen, müssen die Amplituden $ \alpha_x $ über die Kontraktion gigantischer Tensornetzwerke direkt berechnet werden. Die Dimension des Zustandsvektors beträgt $ 2^n $; im Fall von $ n = 53 $ entspricht dies etwa $ 9 \times 10^{15} $ komplexen Amplituden (ein Speicherbedarf im Petabyte-Bereich), die simultan verfolgt werden müssen. Dies stößt an eine Berechnungsmauer, die selbst mit den modernsten Supercomputern der Welt astronomische Rechenzeiten erfordert hätte. Ein Quantencomputer hingegen hält den Zustand **$|\psi_f\rangle$** über das physikalische System selbst ganz natürlich als Vektor im [Hilbert](https://kenji.blog/de/p/hilbert/)raum und vollzieht mit einer einzigen Messung augenblicklich (in wenigen Dutzend Mikrosekunden) ein Sampling gemäß diesem Speckle-Muster.
+Um aus dieser Verteilung auf einem klassischen Computer ein exaktes Sampling durchzuführen, müssen die Amplituden $ \alpha_x $ über die Kontraktion gigantischer Tensornetzwerke direkt berechnet werden. Die Dimension des [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)svektors beträgt $ 2^n $; im Fall von $ n = 53 $ entspricht dies etwa $ 9 \times 10^{15} $ komplexen Amplituden (ein Speicherbedarf im Petabyte-Bereich), die simultan verfolgt werden müssen. Dies stößt an eine Berechnungsmauer, die selbst mit den modernsten Supercomputern der Welt astronomische Rechenzeiten erfordert hätte. Ein Quantencomputer hingegen hält den Zustand **$|\psi_f\rangle$** über das physikalische System selbst ganz natürlich als Vektor im [Hilbert](https://kenji.blog/de/p/hilbert/)raum und vollzieht mit einer einzigen Messung augenblicklich (in wenigen Dutzend Mikrosekunden) ein Sampling gemäß diesem Speckle-Muster.
 
 Um den Erfolg des Experiments quantitativ zu bewerten, wurde das lineare Kreuzentropie-Benchmarking (Linear Cross-Entropy Benchmarking, XEB) eingeführt. Die Fidelität (Fidelity) $ \mathcal{F}_{\text{XEB}} $ ist wie folgt definiert:
 
@@ -2776,7 +2776,7 @@ $$
 \mathcal{F}_{\text{XEB}} = 2^n \sum_{x \in \{0, 1\}^n} P_{\text{ideal}}(x) P_{\text{exp}}(x) - 1
 $$
 
-Hierbei ist $ P_{\text{exp}}(x) $ die empirische Wahrscheinlichkeitsverteilung, die vom realen Quantenprozessor (unter Einfluss von Hardware-Rauschen) gewonnen wird. Erzeugt das System lediglich völlig unkorreliertes, weißes Rauschen (die Dichtematrix eines maximal gemischten Zustands $ \rho = \frac{I}{2^n} $), gilt $ P_{\text{exp}}(x) = \frac{1}{2^n} $ und folglich $ \mathcal{F}_{\text{XEB}} = 0 $. Ein idealer, vollkommen rauschfreier Quantencomputer, der einen reinen Zustand präpariert, würde hingegen $ \mathcal{F}_{\text{XEB}} \approx 1 $ erreichen. Im Experiment von Google wurde ein statistisch signifikanter Wert von $ \mathcal{F}_{\text{XEB}} \approx 0.002 $ gemessen, der signifikant größer als null ist. Obwohl dieser Fidelitätswert gering erscheint, reicht er aus: Da es komplexitätstheoretisch extrem hart ist, klassisch Samples aus derselben Verteilung mit dieser Güte zu generieren, wurde dies als Beleg für die Quantenüberlegenheit gewertet.
+Hierbei ist $ P_{\text{exp}}(x) $ die empirische Wahrscheinlichkeitsverteilung, die vom realen Quantenprozessor (unter Einfluss von Hardware-Rauschen) gewonnen wird. Erzeugt das System lediglich völlig unkorreliertes, weißes Rauschen (die Dichtematrix eines maximal gemischten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s $ \rho = \frac{I}{2^n} $), gilt $ P_{\text{exp}}(x) = \frac{1}{2^n} $ und folglich $ \mathcal{F}_{\text{XEB}} = 0 $. Ein idealer, vollkommen rauschfreier Quantencomputer, der einen reinen Zustand präpariert, würde hingegen $ \mathcal{F}_{\text{XEB}} \approx 1 $ erreichen. Im Experiment von Google wurde ein statistisch signifikanter Wert von $ \mathcal{F}_{\text{XEB}} \approx 0.002 $ gemessen, der signifikant größer als null ist. Obwohl dieser Fidelitätswert gering erscheint, reicht er aus: Da es komplexitätstheoretisch extrem hart ist, klassisch Samples aus derselben Verteilung mit dieser Güte zu generieren, wurde dies als Beleg für die Quantenüberlegenheit gewertet.
 
 ```mermaid
 graph TD
@@ -2800,7 +2800,7 @@ $$
 U_f \left( \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes |0\rangle \right) = \frac{1}{\sqrt{2^n}} \sum_{x=0}^{2^n-1} |x\rangle \otimes |f(x)\rangle
 $$
 
-Zweifellos enthält dieser Zustandsvektor die Funktionswerte $f(x)$ für alle Eingaben $x$ als Komponenten innerhalb der Wahrscheinlichkeitsamplituden. Doch hier greift das fundamentale **Messpostulat der Quantenmechanik** (der Kollaps der Wellenfunktion): Führt man eine Messung am Ausgaberegister durch, erhält man mit der gleichmäßigen Wahrscheinlichkeit $\frac{1}{2^n}$ lediglich ein einziges, rein zufällig ausgewähltes Wertepaar $ (x, f(x)) $. Die verbleibenden $ 2^n - 1 $ Informationen werden durch die irreversible projektive Messung unwiderruflich zerstört. Es klafft somit eine unüberbrückbare fundamentale Kluft zwischen der „parallelen Berechnung (unitäre Zustandsentwicklung)“ und dem „Auslesen der tatsächlich gesuchten Information aus den parallel berechneten Ergebnissen (Zustandsmessung)“.
+Zweifellos enthält dieser [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)svektor die Funktionswerte $f(x)$ für alle Eingaben $x$ als Komponenten innerhalb der Wahrscheinlichkeitsamplituden. Doch hier greift das fundamentale **Messpostulat der Quantenmechanik** (der Kollaps der Wellenfunktion): Führt man eine Messung am Ausgaberegister durch, erhält man mit der gleichmäßigen Wahrscheinlichkeit $\frac{1}{2^n}$ lediglich ein einziges, rein zufällig ausgewähltes Wertepaar $ (x, f(x)) $. Die verbleibenden $ 2^n - 1 $ Informationen werden durch die irreversible projektive Messung unwiderruflich zerstört. Es klafft somit eine unüberbrückbare fundamentale Kluft zwischen der „parallelen Berechnung (unitäre Zustandsentwicklung)“ und dem „Auslesen der tatsächlich gesuchten Information aus den parallel berechneten Ergebnissen (Zustandsmessung)“.
 
 Damit ein Quantenalgorithmus klassische Algorithmen echt überflügeln kann, reicht bloße Quantenparallelität nicht aus – es bedarf des gezielten und raffinierten Einsatzes von „Quanteninterferenz (Quantum Interference)“. Man muss eine hochspezialisierte globale unitäre Transformation so konstruieren, dass die Wahrscheinlichkeitsamplitude des gesuchten Zielzustands durch konstruktive Interferenz (Constructive interference) verstärkt wird, während sich die unzähligen Amplituden der falschen Lösungen durch Phasenumkehr und destruktive Interferenz (Destructive interference) gegenseitig auslöschen.
 

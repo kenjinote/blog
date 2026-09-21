@@ -173,7 +173,7 @@ llama.cpp provides a number of variations depending on the purpose. The suffixes
 
 ---
 
-## 5. Performance Optimization During Inference: SIMD and CUDA Architectures
+## 5. [Performance Optimization](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) During Inference: SIMD and CUDA Architectures
 
 Merely loading a GGUF model into memory does not speed up inference. The majority of LLM inference is "Matrix Multiplication" (Matrix-Vector Multiplication, abbreviated as GEMV, or Matrix-Matrix, GEMM). The key is how to speed up the multiply-accumulate operations between quantized weights and activations (input data) held in FP16 (or FP32).
 

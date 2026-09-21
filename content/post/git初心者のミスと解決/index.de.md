@@ -157,7 +157,7 @@ gitGraph
     commit id: "Commit B (Fehler)"
     commit id: "Commit B rückgängig machen" type: REVERSE
 ```
-Die Historie geht weiter, und nur der Zustand des Codes wird zurückgesetzt.
+Die Historie geht weiter, und nur der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) des Codes wird zurückgesetzt.
 
 ### Lösung 2: Die Historie verändern mit `git push --force-with-lease`
 
@@ -179,7 +179,7 @@ $ git push origin feature/login --force-with-lease
 ## 6. Fallstudie 3: Während der Arbeit zu einem anderen Branch wechseln (Die Magie von Stash)
 
 **[Situation]**
-Sie sind gerade dabei, eine neue Funktion im Branch `feature/A` zu implementieren, und der Quellcode befindet sich in einem unvollständigen Zustand, der nicht einmal kompiliert. Plötzlich kommt vom Chef die Anweisung: „Es gibt einen kritischen Bug in der Produktionsumgebung des `main`-Branches, bitte beheben Sie ihn sofort!“
+Sie sind gerade dabei, eine neue Funktion im Branch `feature/A` zu implementieren, und der Quellcode befindet sich in einem unvollständigen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), der nicht einmal kompiliert. Plötzlich kommt vom Chef die Anweisung: „Es gibt einen kritischen Bug in der Produktionsumgebung des `main`-Branches, bitte beheben Sie ihn sofort!“
 
 ### Lösung: Ausweichen mit `git stash`
 
@@ -204,7 +204,7 @@ Wenn Sie `git stash` ausführen, generiert Git intern zwei spezielle Commit-Obje
 
 ---
 
-## 7. Fallstudie 4: Der furchteinflößende Zustand des "Detached HEAD"
+## 7. Fallstudie 4: Der furchteinflößende [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) des "Detached HEAD"
 
 **[Situation]**
 Sie wollten den Code zu einem bestimmten vergangenen Zeitpunkt überprüfen und haben `git checkout 9f8a7b6` ausgeführt. Daraufhin wurde `You are in 'detached HEAD' state.` angezeigt. Sie haben wie gewohnt weiter committet, aber als Sie den Branch wechselten, waren die Commits plötzlich weg!
@@ -222,7 +222,7 @@ graph TD
     HEAD["HEAD"] --> B
     style HEAD fill:#f9f,stroke:#333,stroke-width:4px
 ```
-Selbst wenn Sie in diesem Zustand Commits stapeln, wird kein Branch diese neuen Commits verfolgen. In dem Moment, in dem Sie zu einem anderen Branch wechseln, gehen die neuen Commits verloren.
+Selbst wenn Sie in diesem [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) Commits stapeln, wird kein Branch diese neuen Commits verfolgen. In dem Moment, in dem Sie zu einem anderen Branch wechseln, gehen die neuen Commits verloren.
 
 ### Lösung: Als neuen Branch speichern
 
@@ -352,7 +352,7 @@ $ git bisect good
 # Wenn der Test fehlschlägt:
 $ git bisect bad
 ```
-Wenn Sie dies einfach wiederholen, wird Git Ihnen genau sagen: „Dieser Commit ist der erste fehlerhafte (bad) Commit“. Wenn Sie fertig sind, kehren Sie mit `$ git bisect reset` zum ursprünglichen Zustand zurück.
+Wenn Sie dies einfach wiederholen, wird Git Ihnen genau sagen: „Dieser Commit ist der erste fehlerhafte (bad) Commit“. Wenn Sie fertig sind, kehren Sie mit `$ git bisect reset` zum ursprünglichen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) zurück.
 
 ---
 

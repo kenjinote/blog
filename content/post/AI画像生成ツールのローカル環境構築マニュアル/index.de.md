@@ -33,7 +33,7 @@ Um eine lokale Umgebung aufzubauen und die Parameter entsprechend einzustellen, 
 
 Das Grundprinzip von Diffusionsmodellen besteht aus einem "Forward Process", bei dem den Originaldaten (Bildern) schrittweise Gaußsches Rauschen hinzugefügt wird, um sie schließlich in vollständiges Rauschen zu verwandeln, und einem "Reverse Process", bei dem das Originalbild aus diesem Rauschen wiederhergestellt wird.
 
-Der Forward Process wird als Markov-Kette definiert, und der Zustand $x_t$ im Schritt $t$ wird durch die folgende Gleichung ausgedrückt:
+Der Forward Process wird als Markov-Kette definiert, und der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) $x_t$ im Schritt $t$ wird durch die folgende Gleichung ausgedrückt:
 
 $$ q(x_t | x_{t-1}) = \mathcal{N}(x_t; \sqrt{1 - \beta_t} x_{t-1}, \beta_t I) $$
 
@@ -264,7 +264,7 @@ Dies sind häufig auftretende Fehler beim Aufbau und Betrieb einer lokalen Umgeb
 
 ## 10. Fazit: Die Zukunft der KI-Bildgenerierung und der Vorteil lokaler Umgebungen
 
-Die Open-Source-Bewegung für die KI-Bildgenerierung, die mit Stable Diffusion begann, entwickelt sich zu Architekturen der nächsten Generation wie SDXL, Stable Diffusion 3 und Flux.1 weiter. Die Anzahl der Parameter der Modelle wächst in den Milliarden- und Zehnmilliardenbereich, und in Zukunft wird der Bedarf an GPU-Umgebungen mit mehr als 24 GB VRAM wahrscheinlich steigen.
+Die Open-Source-Bewegung für die KI-Bildgenerierung, die mit Stable Diffusion begann, entwickelt sich zu Architekturen der nächsten Generation wie SDXL, Stable Diffusion 3 und [Flux](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/).1 weiter. Die Anzahl der Parameter der Modelle wächst in den Milliarden- und Zehnmilliardenbereich, und in Zukunft wird der Bedarf an GPU-Umgebungen mit mehr als 24 GB VRAM wahrscheinlich steigen.
 
 Lokale Optimierungstechnologien wie TensorRT, Quantisierungstechniken (Quantization) und GGUF beschleunigen sich jedoch gleichermaßen, und es bildet sich ein Ökosystem heraus, in dem eine ausreichende Inferenz sogar auf Hardware für den allgemeinen Verbraucher möglich wird.
 

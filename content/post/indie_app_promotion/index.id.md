@@ -112,7 +112,7 @@ Melalui implementasi ini, Google menafsirkan halaman tersebut tidak hanya sebaga
 
 ## 2. Desain Corong dari Tutorial ke Konversi
 
-Pembaca blog teknologi biasanya datang dari pencarian terkait pesan kesalahan (error message) atau masalah teknis tertentu (misalnya, "Optimisasi Performa React Context API"). Sangat penting untuk menempatkan CTA (Call to Action) ke aplikasi secara alami tepat setelah "niat pencarian (Search Intent)" mereka terpenuhi.
+Pembaca blog teknologi biasanya datang dari pencarian terkait pesan kesalahan (error message) atau masalah teknis tertentu (misalnya, "Optimisasi Performa React [Context API](https://kenji.blog/id/p/state-management-history-redux-context-recoil-zustand/)"). Sangat penting untuk menempatkan CTA (Call to Action) ke aplikasi secara alami tepat setelah "niat pencarian (Search Intent)" mereka terpenuhi.
 
 ### 2.1 Visualisasi Perjalanan Pengguna (User Journey)
 

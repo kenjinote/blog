@@ -110,7 +110,7 @@ const main = async () => {
 main();
 ```
 
-Der Vorteil der Event Loop besteht darin, dass keine Sperrverwaltung für den gemeinsamen Zustand erforderlich ist. Wenn jedoch CPU-intensive, schwere Aufgaben auf dem Call Stack ausgeführt werden, wird die gesamte Event Loop blockiert, und das System läuft Gefahr, in einen Stillstand zu geraten (Blockierung der Event Loop). Die Komplexität der Aufgaben sollte auf leichte Aufgaben von $ O(1) $ bis $ O(N) $ beschränkt bleiben.
+Der Vorteil der Event Loop besteht darin, dass keine Sperrverwaltung für den gemeinsamen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) erforderlich ist. Wenn jedoch CPU-intensive, schwere Aufgaben auf dem Call Stack ausgeführt werden, wird die gesamte Event Loop blockiert, und das System läuft Gefahr, in einen Stillstand zu geraten (Blockierung der Event Loop). Die Komplexität der Aufgaben sollte auf leichte Aufgaben von $ O(1) $ bis $ O(N) $ beschränkt bleiben.
 
 ---
 
@@ -120,7 +120,7 @@ Wenn die Event Loop ein Ansatz ist, der die Grenzen von Single-Threading herausf
 
 ### 3.1 Grundkonzepte des Actor-Modells
 
-Im Actor-Modell wird die grundlegende Verarbeitungseinheit als "Actor" bezeichnet. Jeder Actor hat seinen eigenen unabhängigen Zustand ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) und sein eigenes Verhalten (Behavior) und teilt seinen Zustand nicht direkt mit anderen Actors. Die Kommunikation zwischen Actors erfolgt vollständig durch **asynchrones Message Passing**.
+Im Actor-Modell wird die grundlegende Verarbeitungseinheit als "Actor" bezeichnet. Jeder Actor hat seinen eigenen unabhängigen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) und sein eigenes Verhalten (Behavior) und teilt seinen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) nicht direkt mit anderen Actors. Die Kommunikation zwischen Actors erfolgt vollständig durch **asynchrones Message Passing**.
 
 - **Kapselung des Zustands**: Auf den internen Zustand eines Actors kann von außen nicht direkt zugegriffen werden.
 - **Nachrichtenwarteschlange (Mailbox)**: Eingehende Nachrichten werden in einer Mailbox in die Warteschlange gestellt und sequenziell verarbeitet.
@@ -215,7 +215,7 @@ Das Ownership- und Typsystem von [Rust](https://kenji.blog/de/p/webassembly-wasm
 
 Asynchrone Verarbeitung und das Actor-Modell sind Methoden zur Optimierung der parallelen Verarbeitung innerhalb einer einzelnen Anwendung. Das Konzept der Erweiterung auf das gesamte System (z. B. zwischen Microservices) ist die **Event-Driven Architecture (EDA)**.
 
-In EDA werden Zustandsänderungen innerhalb des Systems als "Ereignisse" dargestellt und asynchron über einen Event-Bus oder Message-Broker (Apache Kafka, RabbitMQ, AWS EventBridge usw.) verteilt.
+In EDA werden [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sänderungen innerhalb des Systems als "Ereignisse" dargestellt und asynchron über einen Event-Bus oder Message-Broker (Apache Kafka, RabbitMQ, AWS EventBridge usw.) verteilt.
 
 ### 4.1 Hauptkomponenten von EDA
 
@@ -241,7 +241,7 @@ Wenn Sie sich eingehend mit der Event-Driven Architecture befassen, werden Sie f
 
 ### 5.1 Architektur von CQRS
 
-In CQRS ist das System physisch und logisch in ein "Befehlsmodell (Command Model), das den Zustand ändert", und ein "Abfragemodell (Query Model), das Daten abruft", getrennt.
+In CQRS ist das System physisch und logisch in ein "Befehlsmodell (Command Model), das den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) ändert", und ein "Abfragemodell (Query Model), das Daten abruft", getrennt.
 
 - **Command Model**: Ist für komplexe Geschäftslogik und Validierung verantwortlich und gewährleistet die Datenkonsistenz.
 - **Query Model**: Bietet denormalisierte Daten (Read Model), die für das Lesen optimiert sind, und realisiert schnelle Abfrage-Antworten.
@@ -261,7 +261,7 @@ flowchart TD
 ### 5.2 Kombination mit Event Sourcing
 
 CQRS zeigt seinen wahren Wert in Kombination mit **Event Sourcing**.
-Beim herkömmlichen Datenbankdesign wird nur der "aktuelle Zustand" einer Entität gespeichert. Beim Event Sourcing wird jedoch der gesamte "Verlauf der Ereignisse, die den Zustand verändert haben" gespeichert (Append-only), und der aktuelle Zustand wird durch sequenzielles Replay wiederhergestellt.
+Beim herkömmlichen Datenbankdesign wird nur der "aktuelle [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)" einer Entität gespeichert. Beim Event Sourcing wird jedoch der gesamte "Verlauf der Ereignisse, die den Zustand verändert haben" gespeichert (Append-only), und der aktuelle Zustand wird durch sequenzielles Replay wiederhergestellt.
 
 Beispielsweise kann der Kontostand eines Bankkontos (aktueller Zustand) als Akkumulation der folgenden Ereignisse ausgedrückt werden:
 

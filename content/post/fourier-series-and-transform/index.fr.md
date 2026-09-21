@@ -74,7 +74,7 @@ $$
 
 Ici, $t$ représente le temps et $\omega$ représente la fréquence angulaire. $F(\omega)$ est une fonction qui indique quelle quantité de la composante de fréquence $\omega$ (amplitude et phase) est incluse dans le signal d'origine $f(t)$.
 
-### 3.2 Flux de Traitement du Signal
+### 3.2 [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de Traitement du Signal
 
 Le diagramme suivant montre comment un signal d'entrée est traité à l'aide de la transformée de Fourier.
 

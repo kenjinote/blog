@@ -76,7 +76,7 @@ L'une des informations importantes échangées lors de la signalisation est le *
 - Les codecs pris en charge (VP8, H.264, Opus, etc.)
 - Les informations sur les numéros de port et les adresses IP à utiliser pour la communication
 
-### 2.2 Flux de signalisation (Offre et Réponse)
+### 2.2 [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de signalisation (Offre et Réponse)
 
 L'établissement d'une connexion WebRTC s'effectue par l'envoi d'une **Offre** (proposition) par une partie et le retour d'une **Réponse** (Answer) par l'autre.
 

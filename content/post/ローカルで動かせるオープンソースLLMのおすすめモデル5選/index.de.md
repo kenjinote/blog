@@ -12,7 +12,7 @@ description: 'Lokale LLMs, die Privatsphäre schützen und kostenlos nutzbar sin
 
 # Einführung
 
-In den letzten Jahren war die technologische Entwicklung von Large Language Models (LLMs) bemerkenswert, und Cloud-basierte KI-Dienste wie ChatGPT und Claude sind weit verbreitet. Gleichzeitig steigt jedoch rapide der Bedarf, "vertrauliche Unternehmensdaten nicht an externe Server senden zu wollen", "API-Nutzungskosten senken zu wollen" und "ein vollständig offline funktionierendes KI-System aufbauen zu wollen".
+In den letzten Jahren war die technologische Entwicklung von Large Language Models (LLMs) bemerkenswert, und Cloud-basierte KI-Dienste wie ChatGPT und Claude sind weit verbreitet. Gleichzeitig steigt jedoch rapide der Bedarf, "vertrauliche Unternehmensdaten nicht an externe Server senden zu wollen", "API-Nutzungskosten senken zu wollen" und "ein vollständig [offline](https://kenji.blog/de/p/pwa-progressive-web-apps-service-worker/) funktionierendes KI-System aufbauen zu wollen".
 
 Diese Anforderungen werden von "lokalen LLMs (Open-Source-LLMs)" erfüllt, die direkt auf den eigenen PC oder Unternehmensserver heruntergeladen und ausgeführt werden können. Bis etwa 2023 war es schwierig, lokal eine praktikable Genauigkeit zu erreichen, aber durch die Weiterentwicklung der Modellarchitekturen und Fortschritte in der Quantisierungstechnologie (Quantization) ist es heute möglich, selbst auf Consumer-GPUs (wie NVIDIA RTX 3090 / 4090 oder Apples Apple Silicon im Mac) sehr leistungsstarke LLMs flüssig auszuführen.
 

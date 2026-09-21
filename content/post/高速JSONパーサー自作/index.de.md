@@ -145,7 +145,7 @@ struct Token {
 };
 ```
 
-Wenn wir die internen Zustandsübergänge des Lexers mit Mermaid visualisieren, sieht das wie folgt aus.
+Wenn wir die internen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergänge des Lexers mit Mermaid visualisieren, sieht das wie folgt aus.
 
 ```mermaid
 stateDiagram-v2

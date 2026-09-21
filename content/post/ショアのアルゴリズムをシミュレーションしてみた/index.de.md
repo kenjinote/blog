@@ -109,7 +109,7 @@ graph LR
 
 ## Schritt 1: Initialisierung und Superposition der Quantenregister
 
-Zunächst bereiten wir zwei Quantenregister vor. Das erste Register dient zur Eingabe des Zustands und das zweite zur Speicherung der Ergebnisse der Funktionsberechnung.
+Zunächst bereiten wir zwei Quantenregister vor. Das erste Register dient zur Eingabe des [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)s und das zweite zur Speicherung der Ergebnisse der Funktionsberechnung.
 Der Anfangszustand ist überall $|0\rangle$.
 
 $$ |\psi_0\rangle = |0\rangle_1 |0\rangle_2 $$

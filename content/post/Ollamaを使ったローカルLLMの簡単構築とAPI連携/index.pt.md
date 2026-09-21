@@ -15,7 +15,7 @@ Com a ascensão dos Grandes Modelos de Linguagem (LLMs), nossas vidas e métodos
 
 1. **Problemas de Privacidade e Segurança**: Enviar dados contendo informações confidenciais ou pessoais para servidores externos costuma ser inaceitável do ponto de vista de segurança e conformidade corporativa.
 2. **Incerteza de Custos**: Como as taxas de uso de API dependem do número de tokens, sistemas que processam grandes volumes de dados ou fazem solicitações frequentes correm o risco de ter custos operacionais ilimitados.
-3. **Latência e Dependência de Rede**: O uso em ambientes offline ou a execução em dispositivos de borda (*edge devices*), que exigem latência extremamente baixa, encontram na comunicação de rede um gargalo.
+3. **Latência e Dependência de Rede**: O uso em ambientes [offline](https://kenji.blog/pt/p/pwa-progressive-web-apps-service-worker/) ou a execução em dispositivos de borda (*edge devices*), que exigem latência extremamente baixa, encontram na comunicação de rede um gargalo.
 4. **Dependência de Fornecedor (Vendor Lock-in)**: A dependência de um modelo de um provedor específico pode torná-lo suscetível a encerramentos futuros do serviço, mudanças nos termos de uso e alterações não intencionais de comportamento devido a atualizações do modelo.
 
 Os "LLMs locais" estão ganhando atenção como um meio para resolver esses desafios. Ao executar o modelo em seu próprio hardware, você pode utilizar a IA livremente sem enviar nenhum dado para o exterior e sem se preocupar com custos mensais.
@@ -197,7 +197,7 @@ A resposta será algo como: "Olha, você pode usar a função `sorted()` ou o m�
 
 ---
 
-# Explicação Completa da REST API do Ollama
+# Explicação Completa da [REST API](https://kenji.blog/pt/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/pt/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) do Ollama
 
 A interação por meio do CLI é conveniente, mas na prática, o verdadeiro valor do Ollama no desenvolvimento de aplicativos está em sua poderosa API REST. Você pode obter resultados de inferência enviando solicitações HTTP para o processo do servidor (por padrão, `http://localhost:11434`).
 
@@ -483,7 +483,7 @@ Ao adicionar a memória para contexto a isso, notamos que se você tiver de 5 GB
 Ao expor o Ollama como uma API em uma rede local, uma série de aplicações além dos simples chatbots tornam-se possíveis.
 
 ### 1. Construção de um RAG Local (Retrieval-Augmented Generation)
-Ao combinar bancos de dados vetoriais locais como ChromaDB ou Qdrant com o endpoint `/api/embeddings` do Ollama (usando um modelo de embeddings como `nomic-embed-text`), você pode criar um sistema RAG completamente offline e seguro para responder a perguntas, inserindo os documentos confidenciais da sua empresa.
+Ao combinar bancos de dados vetoriais locais como ChromaDB ou Qdrant com o endpoint `/api/embeddings` do Ollama (usando um modelo de embeddings como `nomic-embed-text`), você pode criar um sistema RAG completamente [offline](https://kenji.blog/pt/p/pwa-progressive-web-apps-service-worker/) e seguro para responder a perguntas, inserindo os documentos confidenciais da sua empresa.
 
 ### 2. Assistente de IA para IDEs e Editores
 Ao definir o Ollama como backend para extensões de VS Code (como o Continue.dev) ou plug-ins do Neovim, você pode usar um modelo local (como `codellama` ou `deepseek-coder`) de forma gratuita, oferecendo preenchimento ou explicação de código nos moldes do GitHub Copilot.

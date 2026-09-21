@@ -241,7 +241,7 @@ Um eine effektive CI/CD-Pipeline aufzubauen, muss sie eng mit der **Branching-St
 
 ## Integration mit GitHub Flow
 
-GitHub Flow ist eine einfache Strategie, bei der der `main`-Branch immer in einem deploybaren Zustand gehalten wird und neue Funktionen in Feature-Branches entwickelt werden.
+GitHub Flow ist eine einfache Strategie, bei der der `main`-Branch immer in einem deploybaren [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) gehalten wird und neue Funktionen in Feature-Branches entwickelt werden.
 
 ```mermaid
 gitGraph

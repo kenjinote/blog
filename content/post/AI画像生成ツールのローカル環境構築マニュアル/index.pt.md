@@ -264,7 +264,7 @@ Estes são erros frequentes e suas soluções relacionadas com as configuraçõe
 
 ## 10. Conclusão: O Futuro da Geração de Imagens de IA e os Benefícios do Local
 
-O movimento de geração de imagens de IA baseada em open source, que teve largada a partir do Stable Diffusion, continua a florescer em arquiteturas de próximas gerações como o SDXL, e Stable Diffusion 3 ou Flux.1. Como os parâmetros contidos nesses modelos aumentaram a ordem de bilhões à ordem de dezenas de bilhões, os futuros hardwares tenderão a exigir, ainda mais, placas de vídeo a partir de 24GB de VRAM.
+O movimento de geração de imagens de IA baseada em open source, que teve largada a partir do Stable Diffusion, continua a florescer em arquiteturas de próximas gerações como o SDXL, e Stable Diffusion 3 ou [Flux](https://kenji.blog/pt/p/state-management-history-redux-context-recoil-zustand/).1. Como os parâmetros contidos nesses modelos aumentaram a ordem de bilhões à ordem de dezenas de bilhões, os futuros hardwares tenderão a exigir, ainda mais, placas de vídeo a partir de 24GB de VRAM.
 
 No entanto, o progresso tecnológico nas adaptações do funcionamento local, usando processamento em Quantização (Quantization), o uso do formato GGUF ou os recursos avançados baseados em TensorRT continuam sua aceleração exponencial e já formam ecossistemas para rodar inferências até mesmo nos computadores voltados à massa.
 

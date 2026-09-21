@@ -21,7 +21,7 @@ description: "將從 'Oura Ring' 等智慧戒指或 'Apple Watch' 取得的 HRV�
 用來獲取生理數據的感測器（穿戴式裝置）各有其擅長的領域。在數據驅動的健康管理中，根據目的選擇最適合的裝置是第一步。
 
 ### 2.1 Oura Ring (Generation 3 / 4)
-由於是直接從手指的動脈獲取數據，與在手腕上測量的智慧手錶相比，它在測量睡眠時的心率、心率變異度（HRV）以及體表溫度變化方面的精確度非常高。手指上微血管密集，透過光學心率感測器（PPG: Photoplethysmography）能夠取得雜訊較少的數據。此外，其 REST API 功能完善，能透過 [[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 輕鬆匯出 JSON 格式的原始數據，可以說是對工程師而言最具「駭客」潛力的裝置。
+由於是直接從手指的動脈獲取數據，與在手腕上測量的智慧手錶相比，它在測量睡眠時的心率、心率變異度（HRV）以及體表溫度變化方面的精確度非常高。手指上微血管密集，透過光學心率感測器（PPG: Photoplethysmography）能夠取得雜訊較少的數據。此外，其 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 功能完善，能透過 [[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 輕鬆匯出 JSON 格式的原始數據，可以說是對工程師而言最具「駭客」潛力的裝置。
 
 ### 2.2 Apple Watch Series / Ultra
 在活動期間的追蹤、血氧飽和度（SpO2）與心電圖（ECG）的測量上表現優異。在日間活動量以及透過正念 App（呼吸 App）進行隨選 HRV 測量方面，它是最強大的裝置。不過，匯出數據必須經過 HealthKit，若要從 Python 等直接存取，則需要透過 iOS App（如 AutoSleep 或 HealthFit 等）匯出 CSV 等方式做為緩衝。

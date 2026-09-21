@@ -271,7 +271,7 @@ Wenn Anki ein Werkzeug ist, um Wissens-„Punkte“ zu erhalten, dann ist das Bl
 
 Beim Schreiben eines Blogs treten folgende Prozesse auf:
 1. **Zielgruppe definieren**: Stellen Sie sich „Ihr früheres Ich, das es nicht verstanden hat“ als Leser vor und verbalisieren Sie, wo Sie gestolpert sind und wie Sie den Durchbruch geschafft haben.
-2. **Erstellen von Diagrammen**: Verwenden Sie Mermaid oder Zeichenwerkzeuge, um abstrakte Datenstrukturen und Zustandsübergänge zu visualisieren. Dies vertieft auch Ihr eigenes visuelles Verständnis.
+2. **Erstellen von Diagrammen**: Verwenden Sie Mermaid oder Zeichenwerkzeuge, um abstrakte Datenstrukturen und [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergänge zu visualisieren. Dies vertieft auch Ihr eigenes visuelles Verständnis.
 3. **Gewährleistung der Genauigkeit**: Da es weltweit veröffentlicht wird, werden Sie sich selbst fragen: „Ist diese mathematische Herleitung wirklich richtig?“ und „Könnte dieser Ausdruck missverstanden werden?“, was Sie dazu zwingt, Fakten zu überprüfen. Dieser Prozess deckt gnadenlos Bereiche mit oberflächlichem Verständnis (Mikro-Missverständnisse) auf und zwingt Sie, diese zu beheben.
 
 ### 6.1 Werkzeuge, die beim Blogschreiben verwendet werden sollten

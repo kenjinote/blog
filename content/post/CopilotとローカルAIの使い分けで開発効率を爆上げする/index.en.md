@@ -13,7 +13,7 @@ tags: ["GitHub Copilot", "Local AI", "Workflow", "Developer Productivity"]
 
 In modern software development, the utilization of AI assistants has evolved from a "nice-to-have" tool to an "indispensable" infrastructure. Particularly since the advent of GitHub Copilot, the coding experience for developers has changed dramatically. However, relying on cloud-based AI for all tasks is not always the optimal solution.
 
-Cloud-based AI faces several challenges, including security risks when handling corporate confidential information (secret keys, proprietary algorithms, unreleased architectures), API latency, and working in offline environments without network connectivity. Therefore, the utilization of **local open models (Local AI)** that run locally, such as Llama 3, CodeLlama, and Mistral, has rapidly gained attention in recent years.
+Cloud-based AI faces several challenges, including security risks when handling corporate confidential information (secret keys, proprietary algorithms, unreleased architectures), API latency, and working in [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/) environments without network connectivity. Therefore, the utilization of **local open models (Local AI)** that run locally, such as Llama 3, CodeLlama, and Mistral, has rapidly gained attention in recent years.
 
 This article will explain in extreme detail how to maximize (boost) development efficiency by combining and utilizing cloud-based AI (like GitHub Copilot and GPT-4) and local AI. We will cover everything from architectural design and specific decision trees to mathematical analysis of costs and latency.
 
@@ -239,7 +239,7 @@ At that time, the developer's local PC will take on a strong role not just as a 
 It is not a binary choice between "Cloud's GitHub Copilot" or "Local AI"; rather, a **hybrid workflow that understands the strengths of both and properly switches between them according to the nature of the task** is the strongest development environment at present.
 
 *   **GitHub Copilot / Cloud API**: Used for general development speed improvements, designing complex logic, and comprehensive analysis of the entire project.
-*   **Local AI (Ollama, LM Studio)**: Used for processing highly confidential code, offline environments, ultra-fast inline completions eliminating network latency, and reducing API costs.
+*   **Local AI (Ollama, LM Studio)**: Used for processing highly confidential code, [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/) environments, ultra-fast inline completions eliminating network latency, and reducing API costs.
 
 Please use the decision trees and architectures introduced in this article as a reference to take your IDE environment to the next level. By stepping up from just "using" AI to "combining and directing it in the right places," your development efficiency will undoubtedly be boosted.
 

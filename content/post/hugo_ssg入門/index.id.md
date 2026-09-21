@@ -187,7 +187,7 @@ Untuk mengeluarkan data WordPress untuk Hugo, cara termudah dan paling dapat dia
 1. **Menggunakan plugin Jekyll Exporter**
    Karena Hugo memiliki struktur data yang sangat mirip dengan Jekyll (yang juga merupakan SSG), merupakan metode umum untuk menggunakan plugin "Jekyll Exporter" untuk WordPress. Saat Anda menginstal dan menjalankan plugin ini, semua postingan dan halaman statis akan diubah menjadi file Markdown dengan Front Matter, dan dapat diunduh sebagai file ZIP bersama dengan kumpulan file gambar.
 2. **Skrip buatan sendiri menggunakan API WordPress**
-   Ini adalah metode untuk membuat skrip sendiri menggunakan Python atau Node.js dll. untuk memanggil REST API WordPress (`/wp-json/wp/v2/posts`), mengurai data JSON, dan membuat file Markdown sendiri. Ini efektif untuk situs yang banyak menggunakan bidang khusus kompleks (seperti ACF) yang tidak dapat ditangani oleh plugin.
+   Ini adalah metode untuk membuat skrip sendiri menggunakan Python atau Node.js dll. untuk memanggil [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) WordPress (`/wp-json/wp/v2/posts`), mengurai data JSON, dan membuat file Markdown sendiri. Ini efektif untuk situs yang banyak menggunakan bidang khusus kompleks (seperti ACF) yang tidak dapat ditangani oleh plugin.
 3. **Memanfaatkan alat wp2hugo**
    Ada juga pendekatan yang menggunakan alat CLI yang ditulis dalam bahasa Go dll. untuk mengubah secara langsung dari file XML ekspor WordPress (WXR) ke format Hugo.
 
@@ -300,8 +300,8 @@ Dengan mengatur seperti ini, pipeline otomatisasi telah selesai di mana situs te
 
 Operator situs yang telah menyelesaikan migrasi dari WordPress ke Hugo sering menyadari tiga keuntungan signifikan berikut:
 
-### 6.1 Peningkatan Drastis pada Kecepatan Situs dan Core Web Vitals
-Sebagai hasil dari penghapusan kueri database dan rendering sisi server, waktu pemuatan halaman berkurang hingga hitungan milidetik. Ini secara langsung mengarah pada peningkatan skor "Core Web Vitals" (LCP, FID/INP, CLS) yang substansial yang merupakan faktor peringkat Google. Anda dapat mengharapkan penurunan rasio pentalan (bounce rate) pengguna dan peningkatan penilaian SEO.
+### 6.1 Peningkatan Drastis pada Kecepatan Situs dan Core [Web Vitals](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
+Sebagai hasil dari penghapusan kueri database dan rendering sisi server, waktu pemuatan halaman berkurang hingga hitungan milidetik. Ini secara langsung mengarah pada peningkatan skor "[Core Web Vitals](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)" ([LCP](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/id/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) yang substansial yang merupakan faktor peringkat Google. Anda dapat mengharapkan penurunan rasio pentalan (bounce rate) pengguna dan peningkatan penilaian SEO.
 
 ### 6.2 Bebas dari Ancaman Keamanan
 Karena WordPress digunakan secara luas di seluruh dunia, ia sering menjadi target serangan. Selalu ada risiko kerusakan dengan memanfaatkan kerentanan plugin, maupun pembobolan login melalui serangan brute force.

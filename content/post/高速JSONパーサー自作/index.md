@@ -402,7 +402,7 @@ private:
 
 ---
 
-## 6. パフォーマンス最適化のテクニック
+## 6. [パフォーマンス最適化](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)のテクニック
 
 単純なパーサーを実装しただけでは、実用的なライブラリに勝つことはできません。C++ならではの最適化テクニックをいくつか紹介します。
 

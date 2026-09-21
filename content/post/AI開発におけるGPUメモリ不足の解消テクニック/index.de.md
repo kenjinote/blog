@@ -190,7 +190,7 @@ Dadurch wird die Anzahl der trainierbaren Parameter auf unter 1 % (manchmal unte
 
 Eine noch extremere Weiterentwicklung hiervon ist **QLoRA (Quantized LoRA)**.
 Bei QLoRA wird das Basisgewicht $W_0$ des Modells extrem auf 4-Bit (NF4: NormalFloat4 Format) quantisiert und in den VRAM geladen. Und die kleinen LoRA-Matrizen $A, B$ werden in BF16 (16-Bit) trainiert, um die Rechengenauigkeit aufrechtzuerhalten.
-Die 4-Bit-Quantisierung reduziert die VRAM-Größe des Basismodells auf ein Viertel, während eine Technologie namens **Paged Optimizers** verwendet wird, um den Zustand des Optimierers automatisch vorübergehend in den CPU-RAM zu sichern (offload), falls der VRAM knapp wird. Dadurch ist es nun möglich, selbst superriesige Modelle wie das Llama 3 70B auf einer einzelnen GPU mit 24 GB VRAM (wie einer RTX 4090) zu fine-tunen.
+Die 4-Bit-Quantisierung reduziert die VRAM-Größe des Basismodells auf ein Viertel, während eine Technologie namens **Paged Optimizers** verwendet wird, um den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) des Optimierers automatisch vorübergehend in den CPU-RAM zu sichern (offload), falls der VRAM knapp wird. Dadurch ist es nun möglich, selbst superriesige Modelle wie das Llama 3 70B auf einer einzelnen GPU mit 24 GB VRAM (wie einer RTX 4090) zu fine-tunen.
 
 ## 3.3 DeepSpeed ZeRO und Offloading
 
@@ -268,7 +268,7 @@ Hier ist ein Beispiel für eine Konfigurationsdatei (JSON), um CPU-Offloading mi
   "gradient_accumulation_steps": 4
 }
 ```
-Indem `offload_optimizer` auf `"cpu"` in dieser Konfiguration gesetzt wird, wird die CPU des Host-Systems angewiesen, die Zustandsspeicherung und die Aktualisierungsberechnungen des Optimierers (wie Adam), die viel VRAM verbrauchen, durchzuführen. So kann der VRAM der GPU exklusiv der wichtigsten Aufgabe gewidmet werden: der Forward/Backward-Berechnung des Modells. Indem `pin_memory: true` eingestellt wird, werden Page-Faults verhindert und der PCIe-Transfer zwischen CPU und GPU so weit wie möglich beschleunigt.
+Indem `offload_optimizer` auf `"cpu"` in dieser Konfiguration gesetzt wird, wird die CPU des Host-Systems angewiesen, die [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sspeicherung und die Aktualisierungsberechnungen des Optimierers (wie Adam), die viel VRAM verbrauchen, durchzuführen. So kann der VRAM der GPU exklusiv der wichtigsten Aufgabe gewidmet werden: der Forward/Backward-Berechnung des Modells. Indem `pin_memory: true` eingestellt wird, werden Page-Faults verhindert und der PCIe-Transfer zwischen CPU und GPU so weit wie möglich beschleunigt.
 
 ---
 

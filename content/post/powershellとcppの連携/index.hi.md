@@ -295,7 +295,7 @@ $$ G \propto \sum_{i=1}^{N} A_i $$
 
 विशिष्ट हार्डवेयर उपकरणों (जैसे: विशेष PCIe कार्ड या सेंसर) की जानकारी की निगरानी करना जिसे WMI (Windows Management Instrumentation) या CIM (Common Information Model) के माध्यम से प्राप्त नहीं किया जा सकता है।
 - **C++ की भूमिका**: एक DLL जो डिवाइस ड्राइवर को `DeviceIoControl` कॉल करता है और बाइनरी डेटा प्राप्त और विश्लेषण करता है।
-- **PowerShell की भूमिका**: नियमित रूप से DLL को कॉल करना, विश्लेषण परिणामों को JSON में फ़ॉर्मेट करना और इसे मॉनिटरिंग सर्वर के REST API पर भेजना।
+- **PowerShell की भूमिका**: नियमित रूप से DLL को कॉल करना, विश्लेषण परिणामों को JSON में फ़ॉर्मेट करना और इसे मॉनिटरिंग सर्वर के [REST API](https://kenji.blog/hi/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/hi/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) पर भेजना।
 
 ## मेमोरी प्रबंधन और समस्या निवारण (Troubleshooting) के सर्वोत्तम अभ्यास
 

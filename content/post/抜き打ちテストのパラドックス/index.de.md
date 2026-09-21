@@ -111,7 +111,7 @@ Die größte Falle in der Schlussfolgerung von Schüler A war, dass er **die Pr�
 Die Ankündigung des Lehrers besteht aus zwei Bedingungen: „Ich werde nächste Woche einen Test durchführen (P)“ und „Ich werde ihn nicht an einem vorhersehbaren Tag durchführen (Q)“.
 Wenn es bis Freitag keinen Test gäbe, würden die Schüler denken: „Wenn die Ankündigung wahr ist, kann es nur heute sein.“ Gleichzeitig entsteht aber der Zweifel: „Wenn wir vorhersagen können, dass es heute ist, widerspricht das der Bedingung Q. War dann die Ankündigung P (einen Test durchzuführen) nicht von vornherein eine Lüge?“
 
-Als Folge des Konflikts zwischen dem Glauben „Die Worte des Lehrers sind absolut wahr“ und dem „logischen Schlussfolgern“ kamen die Schüler zu der falschen Schlussfolgerung (dem Glauben): „Der Lehrer wird keinen Test durchführen“. Das führte dazu, dass sie, egal wann der Test stattfand, immer in einem „unerwarteten (überraschten)“ Zustand waren.
+Als Folge des Konflikts zwischen dem Glauben „Die Worte des Lehrers sind absolut wahr“ und dem „logischen Schlussfolgern“ kamen die Schüler zu der falschen Schlussfolgerung (dem Glauben): „Der Lehrer wird keinen Test durchführen“. Das führte dazu, dass sie, egal wann der Test stattfand, immer in einem „unerwarteten (überraschten)“ [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) waren.
 
 ### Ansatz 2: „Das Paradoxon der Selbstreferenz“
 Lassen Sie uns die Worte des Lehrers in eine logische Formel übersetzen.

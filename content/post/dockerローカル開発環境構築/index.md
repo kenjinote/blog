@@ -360,7 +360,7 @@ $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\t
 
 ---
 
-## 8. Dockerビルドのパフォーマンス最適化：レイヤーキャッシュ戦略
+## 8. Dockerビルドの[パフォーマンス最適化](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)：レイヤーキャッシュ戦略
 
 Dockerfileを記述する際、「レイヤーキャッシュ」の仕組みを理解しているかどうかで、ビルド時間は劇的に変化します。
 Dockerは、Dockerfileの各命令（`FROM`, `RUN`, `COPY` など）ごとにファイルシステムの差分（レイヤー）を作成し、キャッシュとして保持します。再ビルド時には、変更がないレイヤーのキャッシュが再利用されます。

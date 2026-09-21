@@ -295,7 +295,7 @@ Pada server file berskala besar, tugas ini mengekstrak file dengan ekstensi tert
 
 Memantau informasi perangkat keras khusus (misalnya, kartu PCIe khusus atau sensor) yang tidak dapat diperoleh dari WMI (Windows Management Instrumentation) atau CIM (Common Information Model).
 - **Peran C++**: DLL yang melakukan panggilan `DeviceIoControl` ke driver perangkat untuk mendapatkan dan menganalisis data biner.
-- **Peran PowerShell**: Memanggil DLL secara berkala, memformat hasil analisis ke dalam JSON, dan mengirimkannya ke REST API dari server pemantauan.
+- **Peran PowerShell**: Memanggil DLL secara berkala, memformat hasil analisis ke dalam JSON, dan mengirimkannya ke [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) dari server pemantauan.
 
 ## Praktik Terbaik untuk Manajemen Memori dan Pemecahan Masalah
 

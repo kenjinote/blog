@@ -242,7 +242,7 @@ This code uses sum types (a functional characteristic) via `enum` while centrall
 Even in frontend development using TypeScript (like React), the fusion of paradigms has become standard.
 
 - Component UI rendering is **Functional** (returning UI as pure functions).
-- Data fetching and cache management are **Data-Oriented** (normalized state trees using [Redux](https://kenji.blog/en/p/state-management-history-future/) or Zustand).
+- Data fetching and cache management are **Data-Oriented** (normalized state trees using [Redux](https://kenji.blog/en/p/state-management-history-future/) or [Zustand](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/)).
 - Parts of complex domain logic are **Object-Oriented** (class-based service layers).
 
 ---

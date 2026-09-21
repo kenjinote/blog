@@ -187,7 +187,7 @@ flowchart LR
 1. **使用 Jekyll Exporter 外掛**
    由於 Hugo 與同為 SSG 的 Jekyll 在資料結構上非常相似，因此使用 WordPress 專用的「Jekyll Exporter」外掛是常見的做法。安裝並執行此外掛後，所有的文章與固定頁面都會被轉換成帶有 Front Matter 的 Markdown 檔案，並與圖片檔案群一起打包成 ZIP 檔供下載。
 2. **利用 WordPress API 自製腳本**
-   這是一種透過 Python 或 Node.js 等呼叫 WordPress 的 REST API (`/wp-json/wp/v2/posts`)，解析 JSON 資料並自行產生 Markdown 檔案的腳本方法。這對大量使用外掛無法完全支援的複雜自訂欄位（如 ACF 等）的網站非常有效。
+   這是一種透過 Python 或 Node.js 等呼叫 WordPress 的 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) (`/wp-json/wp/v2/posts`)，解析 JSON 資料並自行產生 Markdown 檔案的腳本方法。這對大量使用外掛無法完全支援的複雜自訂欄位（如 ACF 等）的網站非常有效。
 3. **活用 wp2hugo 工具**
    也有利用 Go 語言等撰寫的 CLI 工具，直接從 WordPress 的匯出 XML 檔（WXR）轉換成 Hugo 格式的方法。
 
@@ -300,8 +300,8 @@ jobs:
 
 完成從 WordPress 移轉至 Hugo 的網站營運者，大多能感受到以下三個顯著的優勢。
 
-### 6.1 網站速度與 Core Web Vitals 的劇烈提升
-排除了資料庫查詢與伺服器端渲染後，頁面載入時間縮短至毫秒等級。這將直接帶動 Google 排名因素「Core Web Vitals」（LCP、FID/INP、CLS）分數的大幅提升。可以期待使用者跳出率的降低以及 SEO 評價的提升。
+### 6.1 網站速度與 Core [Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) 的劇烈提升
+排除了資料庫查詢與伺服器端渲染後，頁面載入時間縮短至毫秒等級。這將直接帶動 Google 排名因素「[Core Web Vitals](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)」（[LCP](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)、[FID](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)、[CLS](https://kenji.blog/zh-tw/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）分數的大幅提升。可以期待使用者跳出率的降低以及 SEO 評價的提升。
 
 ### 6.2 擺脫安全威脅
 因為 WordPress 在全世界被廣泛使用，所以總是成為攻擊目標。伴隨著被利用外掛漏洞進行竄改，或是遭到暴力破解突破登入等風險。

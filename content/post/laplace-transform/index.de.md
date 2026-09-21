@@ -140,7 +140,7 @@ $$
 q(t) = C E \left( 1 - e^{-\frac{t}{RC}} \right)
 $$
 
-Dies ist die gesuchte Lösung. Wir konnten den Zustand, in dem die Ladung anfangs $0$ ist und sich im Laufe der Zeit allmählich asymptotisch $CE$ nähert, erfolgreich ableiten, ohne direkt komplexe Differential- und Integralrechnungen zu lösen.
+Dies ist die gesuchte Lösung. Wir konnten den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), in dem die Ladung anfangs $0$ ist und sich im Laufe der Zeit allmählich asymptotisch $CE$ nähert, erfolgreich ableiten, ohne direkt komplexe Differential- und Integralrechnungen zu lösen.
 
 ## Fazit
 

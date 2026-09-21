@@ -300,9 +300,9 @@ jobs:
 
 غالباً ما يلاحظ مديرو المواقع الذين أكملوا عملية الانتقال من WordPress إلى Hugo المزايا الثلاث البارزة التالية.
 
-### 6.1 تحسن جذري في سرعة الموقع ومؤشرات حيوية الويب الأساسية (Core Web Vitals)
+### 6.1 تحسن جذري في سرعة الموقع ومؤشرات حيوية الويب الأساسية (Core [Web Vitals](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))
 
-نتيجة لإلغاء استعلامات قاعدة البيانات والعرض على جانب الخادم، يتم تقليل أوقات تحميل الصفحة إلى أجزاء من الألف من الثانية. يرتبط هذا بشكل مباشر بتحسن كبير في درجات "مؤشرات حيوية الويب الأساسية" (Core Web Vitals) (مثل LCP و FID/INP و CLS)، والتي تعد من عوامل التصنيف في Google. يمكن توقع انخفاض في معدل الارتداد للمستخدمين وتحسين في تقييمات تحسين محركات البحث (SEO).
+نتيجة لإلغاء استعلامات قاعدة البيانات والعرض على جانب الخادم، يتم تقليل أوقات تحميل الصفحة إلى أجزاء من الألف من الثانية. يرتبط هذا بشكل مباشر بتحسن كبير في درجات "مؤشرات حيوية الويب الأساسية" ([Core Web Vitals](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) (مثل [LCP](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) و [FID](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) و [CLS](https://kenji.blog/ar/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/))، والتي تعد من عوامل التصنيف في Google. يمكن توقع انخفاض في معدل الارتداد للمستخدمين وتحسين في تقييمات تحسين محركات البحث (SEO).
 
 ### 6.2 التحرر من التهديدات الأمنية
 

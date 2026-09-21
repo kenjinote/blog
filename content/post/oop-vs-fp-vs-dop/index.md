@@ -242,7 +242,7 @@ fn process_event(state: &mut AppState, event: Event) {
 TypeScriptを用いたフロントエンド開発（Reactなど）においても、パラダイムの融合が標準となっています。
 
 - コンポーネントのUIレンダリングは **関数型** （純粋関数としてUIを返す）。
-- データのフェッチやキャッシュ管理は **データ指向** （[Redux](https://kenji.blog/p/state-management-history-future/)やZustandによる正規化された状態ツリー）。
+- データのフェッチやキャッシュ管理は **データ指向** （[Redux](https://kenji.blog/p/state-management-history-future/)や[Zustand](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)による正規化された状態ツリー）。
 - 複雑なドメインロジックの一部には **オブジェクト指向** （クラスベースのサービス層）。
 
 ---

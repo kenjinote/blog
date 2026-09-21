@@ -187,7 +187,7 @@ To output WordPress data for Hugo, using a dedicated plugin is the easiest and m
 1. **Using the Jekyll Exporter Plugin**
    Since Hugo has a very similar data structure to Jekyll, another SSG, it is a common practice to use the "Jekyll Exporter" plugin for WordPress. When you install and run this plugin, all posts and static pages are converted into Markdown files with Front Matter, and can be downloaded as a ZIP file along with image files.
 2. **Custom Script utilizing the WordPress API**
-   This is a method of writing a script in Python, Node.js, etc., that calls the WordPress REST API (`/wp-json/wp/v2/posts`), parses the JSON data, and generates Markdown files yourself. It is effective for sites that heavily use complex custom fields (like ACF) that plugins cannot fully handle.
+   This is a method of writing a script in Python, Node.js, etc., that calls the WordPress [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) (`/wp-json/wp/v2/posts`), parses the JSON data, and generates Markdown files yourself. It is effective for sites that heavily use complex custom fields (like ACF) that plugins cannot fully handle.
 3. **Utilizing the wp2hugo Tool**
    There is also an approach using CLI tools written in Go, etc., to convert directly from WordPress export XML files (WXR) to Hugo format.
 
@@ -225,7 +225,7 @@ hugo server -D
 
 Running this command allows you to preview the site at `http://localhost:1313/`. Hugo has a powerful built-in "LiveReload" feature; the moment you edit and save a Markdown file, template, or CSS, the browser screen is automatically and rapidly updated. This makes the writing and development experience far more comfortable than the WordPress admin interface.
 
-### 5.2 Production Build and Performance Optimization
+### 5.2 Production Build and [Performance Optimization](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
 
 To generate static files for deploying to a production environment, simply type `hugo`.
 
@@ -300,8 +300,8 @@ By configuring this, just the action of "writing an article in Markdown and push
 
 Site operators who have completed the migration from WordPress to Hugo often experience the following three prominent benefits.
 
-### 6.1 Dramatic Improvement in Site Speed and Core Web Vitals
-As a result of eliminating database queries and server-side rendering, page load times are reduced to milliseconds. This directly leads to a significant improvement in "Core Web Vitals" (LCP, FID/INP, CLS) scores, which are Google ranking factors. A decrease in user bounce rate and an improvement in SEO evaluation can be expected.
+### 6.1 Dramatic Improvement in Site Speed and Core [Web Vitals](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)
+As a result of eliminating database queries and server-side rendering, page load times are reduced to milliseconds. This directly leads to a significant improvement in "[Core Web Vitals](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)" ([LCP](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [FID](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/), [CLS](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)) scores, which are Google ranking factors. A decrease in user bounce rate and an improvement in SEO evaluation can be expected.
 
 ### 6.2 Freedom from Security Threats
 Because WordPress is widely used worldwide, it is constantly a target for attacks. It is always accompanied by risks such as defacement exploiting plugin vulnerabilities and login breaches via brute-force attacks.

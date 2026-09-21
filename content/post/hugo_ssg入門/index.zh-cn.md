@@ -189,7 +189,7 @@ flowchart LR
 1. **使用Jekyll Exporter插件**
    由于Hugo与同样是SSG的Jekyll数据结构非常相似，所以常用的方法是使用WordPress的“Jekyll Exporter”插件。安装并运行此插件后，所有的文章和页面都将转换为带有Front Matter的Markdown文件，并连同图片文件一起打包为ZIP文件供下载。
 2. **利用WordPress API自制脚本**
-   这种方法是使用Python或Node.js等请求WordPress的REST API（`/wp-json/wp/v2/posts`），解析JSON数据并自己编写脚本来生成Markdown文件。对于大量使用了插件无法完全兼容的复杂自定义字段（如ACF等）的网站非常有效。
+   这种方法是使用Python或Node.js等请求WordPress的[REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)（`/wp-json/wp/v2/posts`），解析JSON数据并自己编写脚本来生成Markdown文件。对于大量使用了插件无法完全兼容的复杂自定义字段（如ACF等）的网站非常有效。
 3. **活用wp2hugo工具**
    还有一种方法是利用Go语言等编写的CLI工具，将WordPress的导出XML文件（WXR）直接转换为Hugo格式。
 
@@ -302,9 +302,9 @@ jobs:
 
 完成从WordPress迁移到Hugo的网站运营者，大多能切实感受到以下三个显著的优势：
 
-### 6.1 网站速度与Core Web Vitals的急剧提升
+### 6.1 网站速度与Core [Web Vitals](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)的急剧提升
 
-由于排除了数据库查询和服务器端的渲染，页面的加载时间被缩短到毫秒级。这直接关系到作为Google排名因素的“核心网页指标（Core Web Vitals）”（LCP、FID/INP、CLS）得分的大幅提升。可以期待用户跳出率的下降以及SEO排名的提升。
+由于排除了数据库查询和服务器端的渲染，页面的加载时间被缩短到毫秒级。这直接关系到作为Google排名因素的“核心网页指标（[Core Web Vitals](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）”（[LCP](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)、[FID](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)/[INP](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)、[CLS](https://kenji.blog/zh-cn/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)）得分的大幅提升。可以期待用户跳出率的下降以及SEO排名的提升。
 
 ### 6.2 摆脱安全威胁
 

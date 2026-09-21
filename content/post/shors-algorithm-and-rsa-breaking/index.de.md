@@ -110,7 +110,7 @@ Nach den Regeln der Quantenmechanik können wir nicht direkt in den Überlagerun
 
 Der geniale Durchbruch des [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) zur Überwindung dieser Barriere ist die Anwendung der ** Quanten-Fouriertransformation (QFT) ** auf das erste Register.
 
-Bevor wir eine Messung vornehmen, analysieren wir die Welleneigenschaften der Funktion $ f(x) $. Angenommen, wir beobachten das zweite Register. Angenommen, wir erhalten einen Wert $ y $. Dann kollabiert der Zustand des ersten Registers in "die Superposition aller $ x $, für die $ a^x \pmod N = y $ gilt".
+Bevor wir eine Messung vornehmen, analysieren wir die Welleneigenschaften der Funktion $ f(x) $. Angenommen, wir beobachten das zweite Register. Angenommen, wir erhalten einen Wert $ y $. Dann kollabiert der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) des ersten Registers in "die Superposition aller $ x $, für die $ a^x \pmod N = y $ gilt".
 Diese Werte von $ x $ werden ein diskret angeordneter Zustand (eine Art kammartige Wahrscheinlichkeitsamplitudenverteilung) in Intervallen der Periode $ r $ sein, wie $ x_0, x_0 + r, x_0 + 2r, x_0 + 3r, \dots $.
 
 Wir wenden die Quanten-Fouriertransformation (QFT) auf diesen Zustand an. So wie die klassische diskrete Fouriertransformation ein Signal im Zeitbereich in den Frequenzbereich umwandelt, bewirkt die QFT eine Interferenz der Wahrscheinlichkeitsamplituden von Quantenzuständen.

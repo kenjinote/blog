@@ -73,7 +73,7 @@ C'est un flux où le client reçoit directement l'ID et le mot de passe de l'uti
 #### 4. Octroi d'informations d'identification du client (Client Credentials Grant)
 C'est un flux utilisé pour la communication entre systèmes (M2M : Machine to Machine) sans l'implication de l'utilisateur. Le client lui-même agit en tant que propriétaire de la ressource.
 
-### 2.4 En profondeur : Flux de code d'autorisation + PKCE (Proof Key for Code Exchange)
+### 2.4 En profondeur : [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de code d'autorisation + PKCE (Proof Key for Code Exchange)
 
 Les SPA et les applications mobiles ne peuvent pas dissimuler un secret client de manière sécurisée. C'est pourquoi **PKCE** (RFC 7636) a été introduit pour prévenir les attaques d'interception de code d'autorisation (Authorization Code Interception Attack).
 

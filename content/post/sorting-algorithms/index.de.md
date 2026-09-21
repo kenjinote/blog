@@ -1,56 +1,3 @@
-+++
-title = "Der komplette Leitfaden für Sortieralgorithmen: Von Bubble Sort bis Timsort"
-description = "Eine vollständige Erklärung von Sortieralgorithmen in der Programmierung. Umfassend, von den Grundlagen bis zu fortgeschrittenen Themen."
-slug = "sorting-algorithms"
-date = "2026-09-21T01:50:00+09:00"
-image = "eyecatch.jpg"
-categories = ["programming", "algorithms", "computer-science"]
-tags = ["sort", "python", "algorithm", "big-o"]
-+++
-
-# Der komplette Leitfaden für Sortieralgorithmen: Von Bubble Sort bis Timsort
-
-Algorithmen und Datenstrukturen sind äußerst wichtige Themen, die das Rückgrat der Informatik bilden. Darunter ist das „Sortieren“ eine grundlegende Operation, die in allen möglichen Szenarien unerlässlich ist, etwa beim Suchen, Gruppieren von Daten oder Visualisieren. In diesem Artikel erklären wir die Mechanismen, die Implementierung, die Zeitkomplexität und die Einsatzgebiete sehr detailliert – von grundlegenden Sortieralgorithmen, die Anfänger lernen, bis hin zu fortgeschrittenen Sortieralgorithmen, wie sie in den Standardbibliotheken moderner Programmiersprachen eingesetzt werden.
-
-## 1. Grundwissen über Sortieralgorithmen
-
-Bevor man Sortieralgorithmen lernt, muss man einige wichtige Konzepte verstehen, die als Bewertungskriterien für Algorithmen dienen. Das Verständnis dieser Konzepte macht deutlich, warum es so viele Sortieralgorithmen gibt und welchen man je nach Situation wählen sollte.
-
-### 1.1 Stabilität (Stability)
-
-**Stabilität** (Stability) bei Sortieralgorithmen ist die Eigenschaft, die angibt, ob die relative Reihenfolge von Elementen mit demselben Sortierschlüsselwert vor und nach dem Sortieren erhalten bleibt.
-
-Nehmen wir zum Beispiel an, wir haben eine Liste von Daten mit den Testergebnissen und Namen von Schülern.
-`[ (80 Punkte, "Person A"), (70 Punkte, "Person B"), (80 Punkte, "Person C") ]`
-Wenn dies in aufsteigender Reihenfolge der Punkte sortiert wird, wird ein stabiler Sortieralgorithmus immer Folgendes ergeben:
-`[ (70 Punkte, "Person B"), (80 Punkte, "Person A"), (80 Punkte, "Person C") ]`
-Da "Person A" ursprünglich vor "Person C" lag, wird "Person A" trotz derselben 80 Punkte vorne platziert. Das nennt man einen **stabilen Sort** (Stable Sort).
-
-Bei einem instabilen Sortieralgorithmus hingegen könnte diese Reihenfolge umgekehrt werden zu `(80 Punkte, "Person C"), (80 Punkte, "Person A")`. Stabilität ist äußerst wichtig, wenn man nach mehreren Schlüsseln sortiert (z. B. zuerst nach Name sortieren und dann nach Punktzahl).
-
-### 1.2 In-place und Out-of-place
-
-Dies ist eine Klassifizierung, die angibt, wie viel zusätzlichen Speicherplatz ein Algorithmus zur Laufzeit benötigt.
-
-*   **In-place**: Ein Algorithmus, der beim Sortieren das Eingabearray selbst direkt umschreibt und nur eine konstante ($O(1)$) oder logarithmische ($O(\log n)$) Menge an zusätzlichem Speicher benötigt, die beispielsweise für den Austausch von Elementen verwendet wird. Er ist in Umgebungen mit strengen Speicherbeschränkungen nützlich.
-*   **Out-of-place**: Ein Algorithmus, der für die Sortierung zusätzlich zum Eingabearray einen Speicherbereich benötigt, der proportional zur Eingabegröße ist (z. B. $O(n)$).
-
-### 1.3 Zeitkomplexität und Big-O-Notation
-
-Um die Effizienz eines Algorithmus auszudrücken, verwenden wir die asymptotische Notation, die **Big O Notation** (O-Notation).
-Bei Sortieralgorithmen bewerten wir hauptsächlich die **Zeitkomplexität** (Ausführungszeit) und die **Speicherkomplexität** (Speicherbedarf).
-
-*   $O(1)$: Konstante Zeit. Immer gleich, unabhängig von der Datenmenge.
-*   $O(n)$: Lineare Zeit. Steigt proportional zur Datenmenge.
-*   $O(n \log n)$: Linear-logarithmische Zeit. Die theoretische Höchstgeschwindigkeit für vergleichsbasierte Sortieralgorithmen.
-*   $O(n^2)$: Quadratische Zeit. Wenn sich die Datenmenge verdoppelt, vervierfacht sich die Zeit, weshalb sie für große Datenmengen ungeeignet ist.
-
-Für vergleichsbasierte Sortieralgorithmen (Methoden, die Elemente durch Vergleich ihrer Größen sortieren) ist mathematisch bewiesen, dass die untere Grenze für die schlechteste Zeitkomplexität bei $O(n \log n)$ liegt.
-
-$$
-\text{Untere Grenze für vergleichsbasierte Sortierung} = \Omega(n \log n)
-$$
-
 ---
 
 ## 2. $O(n^2)$ Algorithmen: Grundlagen und intuitive Ansätze
@@ -268,7 +215,7 @@ graph TD
 #### Zeit-/Speicherkomplexität und Eigenschaften
 
 *   **Schlechteste, durchschnittliche und beste Zeitkomplexität**: Alle $O(n \log n)$
-    *   Da es immer halbiert wird, ist die Tiefe der Teilung $\log_2 n$. Da der Zusammenführungsprozess auf jeder Ebene insgesamt eine Zeit von $O(n)$ in Anspruch nimmt, ergibt die Multiplikation $O(n \log n)$. Da die Zeitkomplexität unabhängig vom Zustand der Daten konstant ist, ist er sehr vorhersehbar und robust.
+    *   Da es immer halbiert wird, ist die Tiefe der Teilung $\log_2 n$. Da der Zusammenführungsprozess auf jeder Ebene insgesamt eine Zeit von $O(n)$ in Anspruch nimmt, ergibt die Multiplikation $O(n \log n)$. Da die Zeitkomplexität unabhängig vom [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) der Daten konstant ist, ist er sehr vorhersehbar und robust.
 *   **Speicherkomplexität**: $O(n)$ (Out-of-place)
     *   Seine größte Schwäche ist, dass er beim Zusammenführen ein Arbeitsarray der gleichen Größe wie das ursprüngliche Array benötigt.
 *   **Stabilität**: Stabil (Stable)

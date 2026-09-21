@@ -226,7 +226,7 @@ Dans un chiffrement normal, on « chiffre avec la clé publique et on déchiffre
 
 Cependant, traiter directement l'ensemble des données avec un algorithme à clé publique (comme RSA) entraînerait des coûts de calcul énormes. C'est pourquoi, en pratique, on utilise toujours une **fonction de hachage** en combinaison.
 
-### 4.2. Flux de génération et de vérification de signature
+### 4.2. [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/) de génération et de vérification de signature
 
 ```mermaid
 graph TD

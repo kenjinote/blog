@@ -232,7 +232,7 @@ pair<vector<long long>, bool> bellman_ford(int V, const vector<Edge>& edges, int
 
 Dies ist ein Algorithmus zum Finden der kürzesten Entfernungen zwischen allen Knotenpaaren in einem Graphen. Er basiert auf dynamischer Programmierung (DP). Er ist attraktiv, weil der Algorithmus sehr einfach und extrem leicht zu implementieren ist.
 
-Die Zustandsübergangsgleichung lautet wie folgt. Er verwendet den kürzeren Pfad entweder durch den Knoten $k$ oder nicht:
+Die [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergangsgleichung lautet wie folgt. Er verwendet den kürzeren Pfad entweder durch den Knoten $k$ oder nicht:
 $$ d[i][j] = \min(d[i][j], d[i][k] + d[k][j]) $$
 
 Da er drei verschachtelte Schleifen verwendet, beträgt die Zeitkomplexität $O(V^3)$ und die Raumkomplexität $O(V^2)$. Bei einer Knotenanzahl von etwa $V \le 400$ bleibt er innerhalb des Zeitlimits (normalerweise 2 Sekunden).

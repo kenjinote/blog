@@ -69,7 +69,7 @@ PHE ist ein Verschlüsselungsschema, das es erlaubt, **entweder** Addition oder 
 Dieses Schema kann **sowohl** Addition als auch Multiplikation ausführen, aber es gibt **eine Grenze für die Anzahl der Operationen (die Tiefe der Schaltung)**, die durchgeführt werden können. Aufgrund der Ansammlung von "Rauschen", das später erläutert wird, wird die Entschlüsselung nach einer bestimmten Anzahl von Multiplikationen unmöglich. Die BGN (Boneh-Goh-Nissim)-Verschlüsselung von 2005 ist ein solches Beispiel, aber sie hatte Einschränkungen bei der Durchführung komplexer praktischer Berechnungen (wie Deep Learning).
 
 ### Fully Homomorphic Encryption (FHE: Vollständig homomorphe Verschlüsselung)
-Ein Verschlüsselungsschema, das sowohl Addition als auch Multiplikation **unbegrenzt oft** ausführen kann. Ähnlich der Turing-Vollständigkeit in der Informationstheorie bedeutet dies: Wenn Addition (entspricht XOR) und Multiplikation (entspricht AND) unendlich oft kombiniert werden können, kann theoretisch jede berechenbare Funktion oder jeder Algorithmus in einem verschlüsselten Zustand ausgeführt werden.
+Ein Verschlüsselungsschema, das sowohl Addition als auch Multiplikation **unbegrenzt oft** ausführen kann. Ähnlich der Turing-Vollständigkeit in der Informationstheorie bedeutet dies: Wenn Addition (entspricht XOR) und Multiplikation (entspricht AND) unendlich oft kombiniert werden können, kann theoretisch jede berechenbare Funktion oder jeder Algorithmus in einem verschlüsselten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) ausgeführt werden.
 
 FHE wurde lange Zeit als der "Heilige Gral der Kryptographie" bezeichnet und man hielt es sogar für unmöglich, dies zu erreichen. Im Jahr 2009 schlug **Craig Gentry**, der damals Doktorand an der Stanford University war, jedoch das erste FHE-Schema vor, das ideale Gitter (Ideal Lattices) nutzte und die Welt schockierte.
 
@@ -125,7 +125,7 @@ Aus diesem Grund war FHE lange Zeit nicht realisierbar und blieb auf SHE (mit ei
 ### Die Magie des Bootstrapping
 Craig Gentrys genialer Beitrag war die Erfindung einer Rauschreduzierungstechnik namens **"Bootstrapping"**. Dies war ein Paradigmenwechsel in der Kryptographie.
 
-Intuitiv ist es die Operation: "Bevor der Geheimtext mit Rauschen bedeckt und zerstört wird, 'entschlüsseln' wir ihn im verschlüsselten Zustand, bereinigen ihn und legen ihn in einen neuen Geheimtext."
+Intuitiv ist es die Operation: "Bevor der Geheimtext mit Rauschen bedeckt und zerstört wird, 'entschlüsseln' wir ihn im verschlüsselten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/), bereinigen ihn und legen ihn in einen neuen Geheimtext."
 
 1. Angenommen, wir haben einen Geheimtext $C_{noisy}$ mit hohem Rauschen.
 2. Der Client übergibt im Voraus an den Server seinen privaten Schlüssel $sk$, der "mit dem öffentlichen Schlüssel verschlüsselt" ist, nämlich $E_{pk}(sk)$ (dies wird als Bootstrapping-Schlüssel bezeichnet).
@@ -160,7 +160,7 @@ Das Besondere an TFHE ist, dass sein Bootstrapping extrem schnell (im Millisekun
 
 ### Vierte Generation: Spezialisierung auf Näherungsberechnungen und maschinelles Lernen (CKKS)
 Das 2017 von Cheon et al. vorgeschlagene **CKKS (Cheon-Kim-Kim-Song)** Schema ist die definitive Technologie für den Schutz der Privatsphäre in der heutigen KI und beim maschinellen Lernen.
-Während sich bisherige FHE auf "exakte Ganzzahlberechnungen" konzentrierten, unterstützt CKKS **"Näherungsberechnungen von Fließkommazahlen"** im verschlüsselten Zustand. Es zeigt eine überwältigende Leistung bei Berechnungen mit reellen Zahlen, bei denen kleine Fehler toleriert werden, wie z.B. das Training und die Inferenz von neuronalen Netzen.
+Während sich bisherige FHE auf "exakte Ganzzahlberechnungen" konzentrierten, unterstützt CKKS **"Näherungsberechnungen von Fließkommazahlen"** im verschlüsselten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/). Es zeigt eine überwältigende Leistung bei Berechnungen mit reellen Zahlen, bei denen kleine Fehler toleriert werden, wie z.B. das Training und die Inferenz von neuronalen Netzen.
 
 Die folgende Tabelle fasst zusammen, wie Sie ein Schema basierend auf Ihrem Zweck auswählen.
 
@@ -231,7 +231,7 @@ Wie aus dem obigen Code ersichtlich ist, können Sie Berechnungen zwischen Gehei
 Während FHE theoretisch perfekte Sicherheit bietet, ist die größte Herausforderung bei seiner praktischen Anwendung der **"Leistungs-Overhead"**.
 
 1.  **Rechenaufwand**: Im Vergleich zu Berechnungen mit Klartexten sind Berechnungen mit Geheimtexten auf CPUs Tausende bis Zehntausende Male langsamer. Polynommultiplikation und Bootstrapping erfordern massive Mengen an FFT- (Fast Fourier Transform) oder NTT- (Number Theoretic Transform) Berechnungen.
-2.  **Datenexpansion (Ciphertext Expansion)**: Ein paar Byte Klartext können im verschlüsselten Zustand zu mehreren Megabyte werden. Dies übt großen Druck auf die Speicherbandbreite und die Netzwerkbandbreite aus.
+2.  **Datenexpansion (Ciphertext Expansion)**: Ein paar Byte Klartext können im verschlüsselten [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) zu mehreren Megabyte werden. Dies übt großen Druck auf die Speicherbandbreite und die Netzwerkbandbreite aus.
 
 ### Ansätze für Hardware-Lösungen
 Um diesen Overhead zu überwinden, treibt man weltweit die Entwicklung von FHE-spezifischen Hardware-Beschleunigern (ASIC, FPGA, GPU-Unterstützung) voran.

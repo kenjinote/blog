@@ -15,7 +15,7 @@ The rise of Large Language Models (LLMs) has brought about dramatic changes to o
 
 1. **Privacy and Security Issues**: Sending data containing confidential or personal information to external servers is often unacceptable from a corporate compliance and security perspective.
 2. **Cost Uncertainty**: Since API usage fees depend on the number of tokens, there is a risk of running costs skyrocketing in systems that process large amounts of data or make frequent requests.
-3. **Latency and Network Dependency**: Network communication becomes a bottleneck for use in offline environments or for execution on edge devices requiring extremely low latency.
+3. **Latency and Network Dependency**: Network communication becomes a bottleneck for use in [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/) environments or for execution on edge devices requiring extremely low latency.
 4. **Vendor Lock-in**: Relying on models from a specific provider makes you susceptible to future service terminations, terms of service changes, and unintended behavioral changes due to model updates.
 
 "Local LLMs" are attracting attention as a means to solve these challenges. By running models on your own hardware, you can freely utilize AI without sending any data externally and without worrying about monthly costs.
@@ -34,7 +34,7 @@ Ollama hides these complexities and allows you to handle LLMs with a usability s
 
 Functioning as the backend of Ollama's inference engine is "**llama.cpp**", a high-speed LLM inference library implemented in C/C++. llama.cpp has the capability to maximize hardware performance to run models, whether it's an Apple Silicon (Metal), NVIDIA GPU (CUDA), AMD GPU (ROCm), or even a CPU-only environment.
 
-Ollama incorporates llama.cpp and adopts an architecture where a server process written in Go provides a REST API and calls the llama.cpp inference engine in the background.
+Ollama incorporates llama.cpp and adopts an architecture where a server process written in Go provides a [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) and calls the llama.cpp inference engine in the background.
 
 The following Mermaid diagram shows the overall architecture of Ollama.
 
@@ -197,7 +197,7 @@ It will then show customized behavior, answering something like "Well, you just 
 
 ---
 
-# Thorough Explanation of the Ollama REST API
+# Thorough Explanation of the Ollama [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)
 
 While interacting via the CLI is convenient, the true value of Ollama in actual application development lies in its powerful REST API. By sending HTTP requests to the server process (default is `http://localhost:11434`), you can retrieve inference results.
 
@@ -483,7 +483,7 @@ Adding the memory for context to this shows that if you have about 5GB to 6GB of
 By exposing Ollama as an API on your local network, various applications beyond a simple chatbot become possible.
 
 ### 1. Building Local RAG (Retrieval-Augmented Generation)
-By combining a local vector database like ChromaDB or Qdrant with Ollama's `/api/embeddings` endpoint (using embedding models like `nomic-embed-text`), you can build a secure RAG system entirely offline that loads internal confidential documents for question answering.
+By combining a local vector database like ChromaDB or Qdrant with Ollama's `/api/embeddings` endpoint (using embedding models like `nomic-embed-text`), you can build a secure RAG system entirely [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/) that loads internal confidential documents for question answering.
 
 ### 2. AI Assistant for IDEs and Editors
 By specifying Ollama as the backend for VS Code extensions (like Continue.dev) or Neovim plugins, you can get code completion and code explanations similar to GitHub Copilot for free, using local models (e.g., `codellama` or `deepseek-coder`).
@@ -493,7 +493,7 @@ By embedding Ollama API requests into Python or shell scripts, you can inject th
 
 ## Conclusion
 
-With the advent of Ollama, the hurdle for introducing local LLMs has dropped dramatically. The combination of a simple command structure resembling [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/) container operations and a REST API that can be easily utilized from external applications is no exaggeration to say is the current de facto standard in local AI development.
+With the advent of Ollama, the hurdle for introducing local LLMs has dropped dramatically. The combination of a simple command structure resembling [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/) container operations and a [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) that can be easily utilized from external applications is no exaggeration to say is the current de facto standard in local AI development.
 
 For developers troubled by the costs and security constraints of cloud LLMs, please build a local LLM environment using Ollama by referring to the steps introduced in this article, and try integrating it into your own applications. You should be able to feel the potential of AI more freely and closer to home.
 

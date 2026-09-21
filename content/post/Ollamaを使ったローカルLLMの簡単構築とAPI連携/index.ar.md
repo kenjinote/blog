@@ -197,7 +197,7 @@ ollama run kansai-coder
 
 ---
 
-# شرح تفصيلي لـ Ollama REST API
+# شرح تفصيلي لـ Ollama [REST API](https://kenji.blog/ar/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ar/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)
 
 في حين أن التفاعل عبر CLI مناسب، فإن القيمة الحقيقية لـ Ollama في تطوير التطبيقات الفعلية تكمن في واجهة برمجة تطبيقات REST القوية الخاصة بها. عن طريق إرسال طلبات HTTP إلى عملية الخادم (افتراضيًا `http://localhost:11434`)، يمكنك الحصول على نتائج الاستدلال.
 
