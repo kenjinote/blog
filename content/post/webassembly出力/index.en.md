@@ -223,13 +223,13 @@ sequenceDiagram
   participant Wasm as "WebAssembly Runtime"
   participant Mem as "Linear Memory (ArrayBuffer)"
 
-  JS->>Wasm: "Call calculate(10, 20)"
+  JS->>Wasm: "Call calculate("10, 20")"
   note over JS,Wasm: "Primitives (int, float) passed directly via Registers/Stack"
   Wasm-->>JS: "Return 30"
 
   note over JS, Mem: "For complex data (Strings, Arrays)"
   JS->>Mem: "Write String to Memory"
-  JS->>Wasm: "Call process_string(pointer, length)"
+  JS->>Wasm: "Call process_string("pointer, length")"
   Wasm->>Mem: "Read from pointer"
   Wasm->>Mem: "Write result to new pointer"
   Wasm-->>JS: "Return new pointer & length"

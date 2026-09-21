@@ -189,12 +189,12 @@ sequenceDiagram
 
     A->>V: "withdrawBalance()"
     activate V
-    V->>A: "Call.value(balance)()" "(Transferencia)"
+    V->>A: "Call.value("balance")()" "(Transferencia)"
     activate A
     Note over A: "La función Fallback se activa"
     A->>V: "withdrawBalance()" "(Llamada recursiva)"
     activate V
-    V->>A: "Call.value(balance)()" "(Segunda transferencia)"
+    V->>A: "Call.value("balance")()" "(Segunda transferencia)"
     deactivate V
     deactivate A
     Note over V: "Se envían fondos varias veces antes de que se actualice el saldo"

@@ -331,13 +331,13 @@ sequenceDiagram
     participant C as "Client"
     participant AS as "Authorization Server"
     
-    Note over C: "code_verifier = यादृच्छिक स्ट्रिंग"<br/>"code_challenge = SHA256(code_verifier)"
+    Note over C: "code_verifier = यादृच्छिक स्ट्रिंग"<br/>"code_challenge = SHA256("code_verifier")"
     C->>AS: "ऑथराइजेशन अनुरोध (code_challenge भेजता है)"
     Note over AS: "code_challenge को बनाए रखता है"
     AS-->>C: "ऑथराइजेशन कोड (code) जारी करना"
     
     C->>AS: "टोकन अनुरोध (code + code_verifier भेजता है)"
-    Note over AS: "SHA256(प्राप्त verifier) == बनाए रखा challenge?"
+    Note over AS: "SHA256("प्राप्त verifier") == बनाए रखा challenge?"
     AS-->>C: "सत्यापन सफल: एक्सेस टोकन जारी करना"
 ```
 

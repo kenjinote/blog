@@ -46,7 +46,7 @@ sequenceDiagram
     activate Action
     Action->>Action: "Lint & Analisis Statis (Clang-Tidy)"
     
-    rect rgb(200, 220, 240)
+    rect rgb("200, 220, 240")
     note right of Action: "Matrix Build Lintas Platform"
     Action->>Action: "Build di Ubuntu (GCC/Clang)"
     Action->>Action: "Build di Windows (MSVC)"

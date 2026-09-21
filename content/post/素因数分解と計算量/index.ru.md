@@ -68,9 +68,9 @@ graph TD
     classDef subexp fill:#ffd3b6,stroke:#333,stroke-width:2px;
     classDef exp fill:#ffaaa5,stroke:#333,stroke-width:2px;
 
-    Poly["Полиномиальное время O(n^k)"]:::poly
+    Poly["Полиномиальное время O("n^k")"]:::poly
     SubExp["Субэкспоненциальное время L_n"]:::subexp
-    Exp["Экспоненциальное время O(2^n)"]:::exp
+    Exp["Экспоненциальное время O("2^n")"]:::exp
 
     GNFS["GNFS (Общий метод решета числового поля)"]:::subexp
     Pollard["Ро-алгоритм Полларда"]:::exp
@@ -255,12 +255,12 @@ graph LR
     classDef quantum fill:#00c9a7,stroke:#333,stroke-width:2px;
 
     subgraph "Классические компьютеры"
-        C1["Метод пробного деления: O(2^(n/2))"]:::classical
-        C2["GNFS: Субэкспоненциальное L_n(1/3)"]:::classical
+        C1["Метод пробного деления: O("2^(n/2"))"]:::classical
+        C2["GNFS: Субэкспоненциальное L_n("1/3")"]:::classical
     end
 
     subgraph "Квантовые компьютеры"
-        Q1["Алгоритм Шора: O(n^3) Полиномиальное"]:::quantum
+        Q1["Алгоритм Шора: O("n^3") Полиномиальное"]:::quantum
     end
 
     C1 --> C2

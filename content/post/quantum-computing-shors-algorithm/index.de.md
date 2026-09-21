@@ -197,7 +197,7 @@ Der Quantenrechenteil von Shors Algorithmus läuft in folgenden Schritten ab:
 ```mermaid
 sequenceDiagram
     participant Q_Reg1 as "Erstes Register (x)"
-    participant Q_Reg2 as "Zweites Register (f(x))"
+    participant Q_Reg2 as "Zweites Register (f("x"))"
     
     Note over Q_Reg1,Q_Reg2: "1. Initialisierung: Alle Bits auf |0>"
     Q_Reg1->>Q_Reg1: "2. Hadamard-Transformation (H⊗n) <br/>Erzeugt eine Superposition aller Zustände"

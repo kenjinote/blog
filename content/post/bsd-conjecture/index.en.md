@@ -127,7 +127,7 @@ By using Hasse's bound, it is shown that this infinite product converges absolut
 flowchart LR
     Eq["Elliptic curve E / Q"] -->|"Reduction mod p"| Fp["E / F_p (for each prime p)"]
     Fp -->|"Calculate number of solutions N_p"| ap["Trace a_p = p + 1 - N_p"]
-    ap -->|"Integrate as Euler product"| Lfunc["L-function L(E, s)"]
+    ap -->|"Integrate as Euler product"| Lfunc["L-function L("E, s")"]
 ```
 
 ### 4.3. Analytic Continuation and Modularity Theorem

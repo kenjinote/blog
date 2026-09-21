@@ -279,19 +279,19 @@ endif()
 classDiagram
     class SystemInterface {
         <<interface>>
-        +createDirectory(path: string) bool
+        +createDirectory("path: string") bool
         +getSystemMemoryUsage() uint64
-        +spawnProcess(command: string) int
+        +spawnProcess("command: string") int
     }
     class WindowsSystem {
-        +createDirectory(path: string) bool
+        +createDirectory("path: string") bool
         +getSystemMemoryUsage() uint64
-        +spawnProcess(command: string) int
+        +spawnProcess("command: string") int
     }
     class PosixSystem {
-        +createDirectory(path: string) bool
+        +createDirectory("path: string") bool
         +getSystemMemoryUsage() uint64
-        +spawnProcess(command: string) int
+        +spawnProcess("command: string") int
     }
     
     SystemInterface <|-- WindowsSystem

@@ -320,7 +320,7 @@ sequenceDiagram
     CodeLLDB->>DebuggerCore: 将断点注册到内存管理表
     Developer->>VSCode: 按下 F5 键 (开始调试)
     VSCode->>CodeLLDB: launch 请求
-    CodeLLDB->>OS: 附加 ptrace(PTRACE_TRACEME) 启动进程
+    CodeLLDB->>OS: 附加 ptrace("PTRACE_TRACEME") 启动进程
     OS-->>DebuggerCore: 应用程序的内存空间映射完成
     DebuggerCore->>OS: 向指定地址写入 INT3 指令(0xCC)
     Note over OS: 程序执行中...

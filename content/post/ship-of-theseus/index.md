@@ -70,7 +70,7 @@ classDiagram
         +String shipId
         +String name
         +List~Plank~ planks
-        +replacePlank(old: Plank, new: Plank)
+        +replacePlank("old: Plank, new: Plank")
     }
     class Plank {
         +String material

@@ -54,8 +54,8 @@ graph TD
         A["Extraer una bola"] -->|"El número era '7'"| B{"¿Qué urna es?"}
         B -->|"Asumir probabilidades a priori iguales"| C["Hipótesis 1: Urna con 10 bolas"]
         B -->|"Asumir probabilidades a priori iguales"| D["Hipótesis 2: Urna con 1000 bolas"]
-        C -.->|"P(E|H1) = 1/10"| E["La Hipótesis 1 tiene mayor verosimilitud"]
-        D -.->|"P(E|H2) = 1/1000"| E
+        C -.->|"P("E|H1") = 1/10"| E["La Hipótesis 1 tiene mayor verosimilitud"]
+        D -.->|"P("E|H2") = 1/1000"| E
     end
 ```
 
@@ -188,9 +188,9 @@ Si decidimos exceptuar de la clase de referencia a las inteligencias artificiale
 ```mermaid
 graph TD
     subgraph "Diferencias según la configuración de la Clase de Referencia"
-        A["¿Como qué nos contamos a nosotros mismos?"] -->|"Solo Homo sapiens"| B["N = 100 mil millones\n(Alta probabilidad de extinción temprana)"]
-        A -->|"Toda entidad con consciencia"| C["N a escala cósmica\n(La conclusión cambia drásticamente)"]
-        A -->|"Humanos actuales + Posthumanos"| D["N = Enorme\n(Posibilidad de evolución)"]
+        A["¿Como qué nos contamos a nosotros mismos?"] -->|"Solo Homo sapiens"| B["N = 100 mil millones\n("Alta probabilidad de extinción temprana")"]
+        A -->|"Toda entidad con consciencia"| C["N a escala cósmica\n("La conclusión cambia drásticamente")"]
+        A -->|"Humanos actuales + Posthumanos"| D["N = Enorme\n("Posibilidad de evolución")"]
     end
 ```
 

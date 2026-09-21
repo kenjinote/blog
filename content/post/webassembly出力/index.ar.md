@@ -223,13 +223,13 @@ sequenceDiagram
   participant Wasm as "وقت تشغيل WebAssembly"
   participant Mem as "الذاكرة الخطية (ArrayBuffer)"
 
-  JS->>Wasm: "استدعاء calculate(10, 20)"
+  JS->>Wasm: "استدعاء calculate("10, 20")"
   note over JS,Wasm: "تُمرر الأوليات (int, float) مباشرة عبر السجلات/المكدس"
   Wasm-->>JS: "إرجاع 30"
 
   note over JS, Mem: "للبيانات المعقدة (السلاسل النصية، المصفوفات)"
   JS->>Mem: "كتابة سلسلة نصية إلى الذاكرة"
-  JS->>Wasm: "استدعاء process_string(pointer, length)"
+  JS->>Wasm: "استدعاء process_string("pointer, length")"
   Wasm->>Mem: "القراءة من المؤشر"
   Wasm->>Mem: "كتابة النتيجة إلى مؤشر جديد"
   Wasm-->>JS: "إرجاع مؤشر جديد وطول"

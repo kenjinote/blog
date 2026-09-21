@@ -126,7 +126,7 @@ On peut montrer que ce produit infini converge absolument dans la région $\math
 flowchart LR
     Eq["Courbe elliptique E / Q"] -->|"Réduction mod p"| Fp["E / F_p (chaque nombre premier p)"]
     Fp -->|"Calcul du nombre de solutions N_p"| ap["Trace a_p = p + 1 - N_p"]
-    ap -->|"Intégration comme produit eulérien"| Lfunc["Fonction L L(E, s)"]
+    ap -->|"Intégration comme produit eulérien"| Lfunc["Fonction L L("E, s")"]
 ```
 
 ### 4.3. Prolongement analytique et théorème de modularité

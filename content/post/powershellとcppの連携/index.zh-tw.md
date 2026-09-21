@@ -151,7 +151,7 @@ sequenceDiagram
     PS->>CLR: "呼叫 ProcessSystemString"
     note right of CLR: "將 System.String 封送處理為 LPCWSTR"
     note right of CLR: "傳遞 StringBuilder 參考"
-    CLR->>CPP: "ProcessSystemString(LPCWSTR, LPWSTR, int)"
+    CLR->>CPP: "ProcessSystemString("LPCWSTR, LPWSTR, int")"
     
     CPP->>CPP: "執行原生字串操作"
     CPP->>CPP: "將結果寫入 LPWSTR 緩衝區"

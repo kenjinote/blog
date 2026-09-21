@@ -320,7 +320,7 @@ sequenceDiagram
     CodeLLDB->>DebuggerCore: Регистрация точки останова в таблице управления памятью
     Developer->>VSCode: Нажатие клавиши F5 (Запуск отладки)
     VSCode->>CodeLLDB: Запрос launch
-    CodeLLDB->>OS: Запуск процесса с ptrace(PTRACE_TRACEME)
+    CodeLLDB->>OS: Запуск процесса с ptrace("PTRACE_TRACEME")
     OS-->>DebuggerCore: Завершение отображения адресного пространства приложения
     DebuggerCore->>OS: Запись инструкции INT3 (0xCC) по указанному адресу
     Note over OS: Выполнение программы...

@@ -135,8 +135,8 @@ sequenceDiagram
     participant Secondary as "Secondary Node (B)"
     
     Note over Primary, Secondary: "正常运行时 (No Partition)"
-    Client->>Primary: Write(V=1)
-    Primary->>Secondary: Replicate(V=1)
+    Client->>Primary: Write("V=1")
+    Primary->>Secondary: Replicate("V=1")
     Secondary-->>Primary: Ack
     Primary-->>Client: Success (Write Confirm)
     Client->>Primary: Read()
@@ -148,7 +148,7 @@ sequenceDiagram
     Note over Primary: "主节点(A)检测到无法与<br/>其他多数节点通信"
     Note over Primary: "主节点(A)主动<br/>降级为从节点 (Step Down)"
     
-    Client->>Primary: Write(V=2)
+    Client->>Primary: Write("V=2")
     Primary-->>Client: Error (Not Primary) - 可用性降低
     
     Client->>Secondary: Read()
@@ -184,7 +184,7 @@ sequenceDiagram
     
     Note over NodeA, NodeB: "发生网络分区！ (相互无法通信)"
     
-    Client->>NodeA: Write(V=1)
+    Client->>NodeA: Write("V=1")
     Note over NodeA: "写入自身(本地)的存储中"
     NodeA-xNodeB: Replicate (Fail)
     Note over NodeA: "作为提示(Hinted Handoff)将<br/>发往B的数据保留在本地"

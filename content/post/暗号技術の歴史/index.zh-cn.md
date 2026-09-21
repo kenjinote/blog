@@ -127,7 +127,7 @@ graph TD
     subgraph "AES的一轮处理 (SPN结构)"
         A["输入状态 (128-bit)"] --> B("SubBytes (字节代换 / S-Box)")
         B --> C("ShiftRows (行移位)")
-        C --> D("MixColumns (列混淆 / GF(2^8)上的乘法)")
+        C --> D("MixColumns (列混淆 / GF("2^8")上的乘法)")
         D --> E("AddRoundKey (与轮密钥进行XOR)")
         E --> F["进入下一轮"]
     end

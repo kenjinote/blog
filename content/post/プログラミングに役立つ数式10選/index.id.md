@@ -150,11 +150,11 @@ graph TD
   Extract --> W1["Kata: 'Gratis'"]
   Extract --> W2["Kata: 'Uang'"]
   Extract --> Wn["Kata: 'Rapat'"]
-  W1 --> Prob["Hitung P(Spam | Kata)"]
+  W1 --> Prob["Hitung P("Spam | Kata")"]
   W2 --> Prob
   Wn --> Prob
   Prob --> Bayes["Terapkan Teorema Bayes"]
-  Bayes --> Class{"P(Spam) > 0.9?"}
+  Bayes --> Class{"P("Spam") > 0.9?"}
   Class -- Ya --> Spam["Pindahkan ke Folder Spam"]
   Class -- Tidak --> Ham["Kirim ke Kotak Masuk"]
 ```
@@ -394,10 +394,10 @@ Metode ini menebak posisi yang lebih akurat $x_{n+1}$ yang harus dicari selanjut
 
 ```mermaid
 flowchart LR
-  Start["Mulai: Tebakan awal x0"] --> Eval["Evaluasi f(xn) dan f'(xn)"]
-  Eval --> Check{"Apakah f(xn) ≈ 0?"}
+  Start["Mulai: Tebakan awal x0"] --> Eval["Evaluasi f("xn") dan f'(xn)"]
+  Eval --> Check{"Apakah f("xn") ≈ 0?"}
   Check -- Ya --> Done["Kembalikan xn sebagai Akar"]
-  Check -- Tidak --> Update["xn+1 = xn - f(xn) / f'(xn)"]
+  Check -- Tidak --> Update["xn+1 = xn - f("xn") / f'(xn)"]
   Update --> Eval
 ```
 

@@ -40,7 +40,7 @@ Ketika matriks $A$ diterapkan, vektor basis standar masing-masing ditransformasi
 
 ```mermaid
 flowchart LR
-    A["Persegi satuan (Luas 1)"] -->|"Transformasi linear oleh matriks A"| B["Jajaran genjang (Luas |det(A)|)"]
+    A["Persegi satuan (Luas 1)"] -->|"Transformasi linear oleh matriks A"| B["Jajaran genjang (Luas |det("A")|)"]
 ```
 
 Dengan kata lain, nilai absolut determinan berarti "faktor skala luas" yang menunjukkan **berapa kali** setiap bangun dalam ruang telah diregangkan (atau disusutkan) oleh transformasi linear tersebut. Misalnya, jika determinan suatu matriks adalah $3$, luas setiap bangun yang digambar pada bidang aslinya akan menjadi tepat tiga kali lebih besar setelah transformasi.
@@ -80,7 +80,7 @@ Dalam 2D, ini sesuai dengan operasi seperti "membalikkan" bangun yang digambar d
 flowchart TD
     Original["Ruang asli (Sistem tangan kanan)"]
     Reflected["Ruang yang ditransformasi (Sistem tangan kiri)"]
-    Original -->|"Transformasi dengan det(A) < 0"| Reflected
+    Original -->|"Transformasi dengan det("A") < 0"| Reflected
     Original -->|"Melibatkan pembalikan ruang"| Reflected
 ```
 
@@ -102,7 +102,7 @@ Dalam 2D, ini berarti bahwa kedua vektor basis yang ditransformasikan tumpang ti
 
 ```mermaid
 flowchart LR
-    Space["Bidang 2D"] -->|"Transformasi dengan det(A) = 0"| Line["Dikompresi menjadi garis 1D"]
+    Space["Bidang 2D"] -->|"Transformasi dengan det("A") = 0"| Line["Dikompresi menjadi garis 1D"]
 ```
 
 Matriks yang determinannya $0$ memiliki sifat aljabar yang sangat penting: ia **tidak memiliki matriks invers** (ini adalah matriks singular). Secara geometris, alasannya jelas. Setelah ruang runtuh menjadi dimensi yang lebih rendah, tidak mungkin melengkapi informasi yang hilang dan mengembalikan ruang berdimensi lebih tinggi yang asli (yaitu, melakukan transformasi invers).

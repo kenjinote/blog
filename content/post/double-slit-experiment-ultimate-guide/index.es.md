@@ -36,10 +36,10 @@ Sin embargo, a medida que innumerables puntos de electrones se acumulaban en la 
 
 ```mermaid
 graph TD
-    A[Cañón de electrones / Fuente de luz] -->|"Dispara partículas una a una"| B(Pared con doble rendija)
+    A["Cañón de electrones / Fuente de luz"] -->|"Dispara partículas una a una"| B("Pared con doble rendija")
     B -->|"Rendija 1"| C{¿Interfiere como onda?}
     B -->|"Rendija 2"| C
-    C -->|"Llega a la pantalla"| D[Al acumularse, aparece el patrón de interferencia]
+    C -->|"Llega a la pantalla"| D["Al acumularse, aparece el patrón de interferencia"]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
     classDef highlight fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px;
@@ -70,12 +70,12 @@ Sin embargo, debido a la autoridad absoluta e influencia de Newton en la comunid
 
 ```mermaid
 graph TD
-    A[Búsqueda de la naturaleza de la luz] --> B[Siglo XVII: Período de la Revolución Científica]
+    A["Búsqueda de la naturaleza de la luz"] --> B["Siglo XVII: Período de la Revolución Científica"]
     B --> C("Teoría corpuscular de Newton (1704)")
     B --> D("Teoría ondulatoria de Huygens (1690)")
-    C -->|"Autoridad inmensa de Newton"| E[Siglo XVIII: Largo dominio de la teoría corpuscular]
+    C -->|"Autoridad inmensa de Newton"| E["Siglo XVIII: Largo dominio de la teoría corpuscular"]
     D -.->|"Se estanca sin obtener apoyo"| E
-    E --> F[Principios del siglo XIX: Cambio de paradigma]
+    E --> F["Principios del siglo XIX: Cambio de paradigma"]
 ```
 ## 2.2 El experimento de la doble rendija de la luz de Thomas Young (1801) y el triunfo de la teoría ondulatoria
 

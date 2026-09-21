@@ -271,7 +271,7 @@ int main() {
 sequenceDiagram
     participant Main as "Главный поток"
     participant Async as "Рабочий поток std::async"
-    Main->>Async: "std::async(std::launch::async, ...)"
+    Main->>Async: "std::async("std::launch::async, ...")"
     activate Async
     Note over Main: "Выполнение другой работы..."
     Main->>Async: "future.get() (Блокирует до готовности)"

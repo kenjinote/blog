@@ -151,7 +151,7 @@ sequenceDiagram
     PS->>CLR: "ProcessSystemString कॉल करें"
     note right of CLR: "System.String को LPCWSTR में मार्शल करें"
     note right of CLR: "StringBuilder संदर्भ पास करें"
-    CLR->>CPP: "ProcessSystemString(LPCWSTR, LPWSTR, int)"
+    CLR->>CPP: "ProcessSystemString("LPCWSTR, LPWSTR, int")"
     
     CPP->>CPP: "नेटिव स्ट्रिंग हेरफेर निष्पादित करें"
     CPP->>CPP: "परिणाम को LPWSTR बफर में लिखें"

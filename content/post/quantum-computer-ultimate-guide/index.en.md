@@ -306,7 +306,7 @@ graph TD
     Center --- X_neg["|-⟩ = (|0⟩-|1⟩)/√2 (-X axis: θ=π/2, φ=π)"]
     Center --- Y_pos["|i⟩ = (|0⟩+i|1⟩)/√2 (+Y axis: θ=π/2, φ=π/2)"]
     Center --- Y_neg["|-i⟩ = (|0⟩-i|1⟩)/√2 (-Y axis: θ=π/2, φ=3π/2)"]
-    State["|ψ⟩ = cos(θ/2)|0⟩ + e^(iφ)sin(θ/2)|1⟩"] -.->|"Bloch vector r = (sinθcosφ, sinθsinφ, cosθ)"| Center
+    State["|ψ⟩ = cos("θ/2")|0⟩ + e^(iφ)sin("θ/2")|1⟩"] -.->|"Bloch vector r = (sinθcosφ, sinθsinφ, cosθ)"| Center
     end
     style Z_pos fill:#f9f,stroke:#333,stroke-width:2px
     style Z_neg fill:#f9f,stroke:#333,stroke-width:2px
@@ -582,13 +582,13 @@ graph TD
     classDef operation fill:#e1f5fe,stroke:#0288d1,stroke-width:2px;
     classDef measure fill:#fce4ec,stroke:#c2185b,stroke-width:2px;
     
-    Init["Initial state $| \psi(t_0) \rangle$"]:::state --> Evo["Unitary time evolution $U(t, t_0) = \exp(-i H t / \hbar)$"]:::operation
-    Evo --> Evolved["Evolved state $| \psi(t) \rangle = U | \psi(t_0) \rangle$"]:::state
+    Init["Initial state $| \psi("t_0") \rangle$"]:::state --> Evo["Unitary time evolution $U("t, t_0") = \exp("-i H t / \hbar")$"]:::operation
+    Evo --> Evolved["Evolved state $| \psi("t") \rangle = U | \psi("t_0") \rangle$"]:::state
     
     Evolved --> Obs["Observation of observable $A$ (Projection operator $P_k$)"]:::measure
     
-    Obs -->|"Probability $p(a_1) = \langle \psi"| P_1 | \psi \rangle$ | State1["Collapsed state 1: $| a_1 \rangle$"]:::state
-    Obs -->|"Probability $p(a_2) = \langle \psi"| P_2 | \psi \rangle$ | State2["Collapsed state 2: $| a_2 \rangle$"]:::state
+    Obs -->|"Probability $p("a_1") = \langle \psi"| P_1 | \psi \rangle$ | State1["Collapsed state 1: $| a_1 \rangle$"]:::state
+    Obs -->|"Probability $p("a_2") = \langle \psi"| P_2 | \psi \rangle$ | State2["Collapsed state 2: $| a_2 \rangle$"]:::state
     Obs -->|"..."| StateN["Collapsed state n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["Decoherence (loss of phase coherence) and mixing of states"]:::measure
@@ -844,7 +844,7 @@ graph LR
     direction LR
     Q0["|0⟩"] --> G1["H Gate"]
     G1 --> G2["S Gate"]
-    G2 --> G3["Rx(π/2)"]
+    G2 --> G3["Rx("π/2")"]
     G3 --> M1["Measurement"]
     end
     

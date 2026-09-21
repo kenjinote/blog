@@ -220,8 +220,8 @@ fn main() {
 ```mermaid
 graph LR
     A["변수 v (소유자)"] --> B["힙 배열 [1, 2, 3]"]
-    C["참조 'first' (&v[0])"] -.->|"불변 차용"| B
-    A -->|"X "가변 차용 거부됨!""| D["v.push(4)"]
+    C["참조 'first' (&v["0"])"] -.->|"불변 차용"| B
+    A -->|"X "가변 차용 거부됨!""| D["v.push("4")"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px

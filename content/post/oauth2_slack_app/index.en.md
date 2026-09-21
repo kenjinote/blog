@@ -331,13 +331,13 @@ sequenceDiagram
     participant C as "Client"
     participant AS as "Authorization Server"
     
-    Note over C: "code_verifier = Random string"<br/>"code_challenge = SHA256(code_verifier)"
+    Note over C: "code_verifier = Random string"<br/>"code_challenge = SHA256("code_verifier")"
     C->>AS: "Authorization request (Sends code_challenge)"
     Note over AS: "Stores code_challenge"
     AS-->>C: "Issues authorization code (code)"
     
     C->>AS: "Token request (Sends code + code_verifier)"
-    Note over AS: "SHA256(received verifier) == stored challenge?"
+    Note over AS: "SHA256("received verifier") == stored challenge?"
     AS-->>C: "Verification successful: Issues access token"
 ```
 

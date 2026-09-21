@@ -36,8 +36,8 @@ Je größer die Zahlen werden, desto schwieriger wird es, Primzahlen zu finden, 
 ```mermaid
 graph TD;
     A["Natürliche Zahl x"] -->|"Zählt Primzahlen"| B["Primzahlzählfunktion π(x)"];
-    B -->|"Wird angenähert durch"| C["x / ln(x)"];
-    C -->|"Erhöht die Genauigkeit"| D["Logarithmischer Integralsinus Li(x)"];
+    B -->|"Wird angenähert durch"| C["x / ln("x")"];
+    C -->|"Erhöht die Genauigkeit"| D["Logarithmischer Integralsinus Li("x")"];
 ```
 
 ## Historischer Hintergrund: Von der Gaußschen Vermutung zum Beweis

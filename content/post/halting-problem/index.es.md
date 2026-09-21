@@ -126,7 +126,7 @@ Vamos a ilustrar la lógica de esta reducción al absurdo utilizando Mermaid.
 ```mermaid
 graph TD
     subgraph "Evaluador H"
-        H{"¿Resultado de H(X, X)?"}
+        H{"¿Resultado de H("X, X")?"}
     end
 
     subgraph "Programa malintencionado D"
@@ -139,8 +139,8 @@ graph TD
     INPUT_D[/"Entrada: D"/] --> START
     
     %% Destacar contradicción
-    LOOP -.->|"¡Contradicción con H(true)!"| FAIL_1(("Contradicción"))
-    HALT -.->|"¡Contradicción con H(false)!"| FAIL_2(("Contradicción"))
+    LOOP -.->|"¡Contradicción con H("true")!"| FAIL_1(("Contradicción"))
+    HALT -.->|"¡Contradicción con H("false")!"| FAIL_2(("Contradicción"))
     
     style FAIL_1 fill:#ff9999,stroke:#cc0000,stroke-width:2px
     style FAIL_2 fill:#ff9999,stroke:#cc0000,stroke-width:2px

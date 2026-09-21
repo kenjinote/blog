@@ -101,9 +101,9 @@ $H|0\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)$ となり、測定す�
 
 ```mermaid
 graph LR
-    q0["q0 (Control)"] --- C((●))
+    q0["q0 (Control)"] --- C(("●"))
     C --- q0_out["q0_out"]
-    q1["q1 (Target)"] --- T((⊕))
+    q1["q1 (Target)"] --- T(("⊕"))
     T --- q1_out["q1_out"]
     C -.- T
 ```
@@ -197,7 +197,7 @@ $49 - 1 = 48$、 $\gcd(48, 15) = 3$
 ```mermaid
 sequenceDiagram
     participant Q_Reg1 as 第1レジスタ (x)
-    participant Q_Reg2 as 第2レジスタ (f(x))
+    participant Q_Reg2 as 第2レジスタ (f("x"))
     
     Note over Q_Reg1,Q_Reg2: 1. 初期化: 全ビットを|0>に
     Q_Reg1->>Q_Reg1: 2. アダマール変換 (H⊗n) <br/>全状態の重ね合わせを作成

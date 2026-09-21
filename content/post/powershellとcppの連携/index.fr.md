@@ -151,7 +151,7 @@ sequenceDiagram
     PS->>CLR: "Appeler ProcessSystemString"
     note right of CLR: "Marshaliser System.String en LPCWSTR"
     note right of CLR: "Passer la référence de StringBuilder"
-    CLR->>CPP: "ProcessSystemString(LPCWSTR, LPWSTR, int)"
+    CLR->>CPP: "ProcessSystemString("LPCWSTR, LPWSTR, int")"
     
     CPP->>CPP: "Exécuter la manipulation de chaîne native"
     CPP->>CPP: "Écrire le résultat dans le tampon LPWSTR"

@@ -40,7 +40,7 @@ When matrix $A$ is applied, the standard basis vectors are transformed into $\ma
 
 ```mermaid
 flowchart LR
-    A["Unit square (Area 1)"] -->|"Linear transformation by matrix A"| B["Parallelogram (Area |det(A)|)"]
+    A["Unit square (Area 1)"] -->|"Linear transformation by matrix A"| B["Parallelogram (Area |det("A")|)"]
 ```
 
 In other words, the absolute value of the determinant means the "area scale factor" that indicates **how many times** every figure in space has been stretched (or shrunk) by that linear transformation. For example, if the determinant of a matrix is $3$, the area of every figure drawn on the original plane will become exactly three times larger after the transformation.
@@ -80,7 +80,7 @@ In 2D, it corresponds to an operation like "flipping over" a figure drawn on a t
 flowchart TD
     Original["Original space (Right-handed)"]
     Reflected["Transformed space (Left-handed)"]
-    Original -->|"Transformation with det(A) < 0"| Reflected
+    Original -->|"Transformation with det("A") < 0"| Reflected
     Original -->|"Involves flipping the space"| Reflected
 ```
 
@@ -102,7 +102,7 @@ In 2D, it means that the two transformed basis vectors overlap on the same strai
 
 ```mermaid
 flowchart LR
-    Space["2D Plane"] -->|"Transformation with det(A) = 0"| Line["Compressed into a 1D line"]
+    Space["2D Plane"] -->|"Transformation with det("A") = 0"| Line["Compressed into a 1D line"]
 ```
 
 A matrix whose determinant is $0$ has a very important algebraic property: it **does not have an inverse matrix** (it is a singular matrix). Geometrically, the reason is obvious. Once a space has collapsed into a lower dimension, it is impossible to supplement the lost information and restore the original higher-dimensional space (i.e., perform an inverse transformation).

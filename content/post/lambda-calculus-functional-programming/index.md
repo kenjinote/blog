@@ -80,10 +80,10 @@ $$
 
 ```mermaid
 graph TD
-    A[ラムダ式] --> B{評価可能か?}
-    B -- Yes --> C[ベータ簡約]
+    A["ラムダ式"] --> B{評価可能か?}
+    B -- Yes --> C["ベータ簡約"]
     C --> A
-    B -- No --> D[正規形 Normal Form]
+    B -- No --> D["正規形 Normal Form"]
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style D fill:#bbf,stroke:#333,stroke-width:2px
@@ -180,11 +180,11 @@ Lispは動的型付けであり、理論的なラムダ計算そのままでは�
 
 ```mermaid
 graph LR
-    A[論理学 Logic] <-->|カリー=ハワード同型対応| B[計算機科学 Computer Science]
-    A1[命題 Proposition] <--> B1[型 Type]
-    A2[証明 Proof] <--> B2[プログラム Program]
-    A3[含意 A -> B] <--> B3[関数型 A -> B]
-    A4[連言 A ∧ B] <--> B4[直積型 タプル A × B]
+    A["論理学 Logic"] <-->|カリー=ハワード同型対応| B["計算機科学 Computer Science"]
+    A1["命題 Proposition"] <--> B1["型 Type"]
+    A2["証明 Proof"] <--> B2["プログラム Program"]
+    A3["含意 A -> B"] <--> B3["関数型 A -> B"]
+    A4["連言 A ∧ B"] <--> B4["直積型 タプル A × B"]
     
     A --- A1
     A --- A2

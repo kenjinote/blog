@@ -87,15 +87,15 @@ sequenceDiagram
     participant PeerB as "客户端B"
 
     PeerA->>PeerA: "createOffer()"
-    PeerA->>PeerA: "setLocalDescription(offer)"
+    PeerA->>PeerA: "setLocalDescription("offer")"
     PeerA->>Sig: "发送Offer (SDP)"
     Sig->>PeerB: "转发Offer"
-    PeerB->>PeerB: "setRemoteDescription(offer)"
+    PeerB->>PeerB: "setRemoteDescription("offer")"
     PeerB->>PeerB: "createAnswer()"
-    PeerB->>PeerB: "setLocalDescription(answer)"
+    PeerB->>PeerB: "setLocalDescription("answer")"
     PeerB->>Sig: "发送Answer (SDP)"
     Sig->>PeerA: "转发Answer"
-    PeerA->>PeerA: "setRemoteDescription(answer)"
+    PeerA->>PeerA: "setRemoteDescription("answer")"
 ```
 
 ### 2.3 信令服务器的实现示例 (Node.js + WebSocket)

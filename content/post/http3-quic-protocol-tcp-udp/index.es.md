@@ -146,13 +146,13 @@ sequenceDiagram
     participant Server
     
     Note over Client, Server: "En caso de TCP/HTTP2 (Al ocurrir pérdida de paquetes)"
-    Client->>Server: "[Flujo1: Pkt1]", "[Flujo2: Pkt2]", "[Flujo1: Pkt3(Pérdida)]"
+    Client->>Server: "[Flujo1: Pkt1]", "[Flujo2: Pkt2]", "[Flujo1: Pkt3("Pérdida")]"
     Note right of Server: "Pkt1, Pkt2 llegan.<br/>Sin embargo, como Pkt3 no llega, todo se detiene."
     Client->>Server: "[Flujo2: Pkt4]"
     Note right of Server: "Pkt4 llega, pero espera la retransmisión de Pkt3<br/>por lo que no se pasa a la aplicación (HoL Blocking)"
     
     Note over Client, Server: "En caso de QUIC/HTTP3 (Al ocurrir pérdida de paquetes)"
-    Client->>Server: "[Flujo1: Pkt1]", "[Flujo2: Pkt2]", "[Flujo1: Pkt3(Pérdida)]"
+    Client->>Server: "[Flujo1: Pkt1]", "[Flujo2: Pkt2]", "[Flujo1: Pkt3("Pérdida")]"
     Note right of Server: "Pkt2 del Flujo2 va inmediatamente a la aplicación."
     Client->>Server: "[Flujo2: Pkt4]"
     Note right of Server: "Pkt4 del Flujo2 también va inmediatamente a la aplicación.<br/>Solo el Flujo1 espera la retransmisión de Pkt3. (HoL resuelto)"

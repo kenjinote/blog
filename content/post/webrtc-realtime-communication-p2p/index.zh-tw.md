@@ -87,15 +87,15 @@ sequenceDiagram
     participant PeerB as "客戶端 B"
 
     PeerA->>PeerA: "createOffer()"
-    PeerA->>PeerA: "setLocalDescription(offer)"
+    PeerA->>PeerA: "setLocalDescription("offer")"
     PeerA->>Sig: "傳送 Offer (SDP)"
     Sig->>PeerB: "轉發 Offer"
-    PeerB->>PeerB: "setRemoteDescription(offer)"
+    PeerB->>PeerB: "setRemoteDescription("offer")"
     PeerB->>PeerB: "createAnswer()"
-    PeerB->>PeerB: "setLocalDescription(answer)"
+    PeerB->>PeerB: "setLocalDescription("answer")"
     PeerB->>Sig: "傳送 Answer (SDP)"
     Sig->>PeerA: "轉發 Answer"
-    PeerA->>PeerA: "setRemoteDescription(answer)"
+    PeerA->>PeerA: "setRemoteDescription("answer")"
 ```
 
 ### 2.3 傳遞訊號伺服器實作範例 (Node.js + WebSocket)

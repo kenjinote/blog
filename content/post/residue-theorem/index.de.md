@@ -32,7 +32,7 @@ Aber was passiert, wenn der Bereich innerhalb der Kontur Punkte enthält, an den
 
 ```mermaid
 flowchart TD
-    A["Komplexes Integral auf der reellen Achse"] -->|"Erweiterung auf die komplexe Ebene"| B["Definieren der komplexen Funktion f(z)"]
+    A["Komplexes Integral auf der reellen Achse"] -->|"Erweiterung auf die komplexe Ebene"| B["Definieren der komplexen Funktion f("z")"]
     B --> C["Festlegen einer geeigneten Kontur C"]
     C --> D["Identifizieren von Singularitäten (Polen) innerhalb der Kontur"]
     D --> E["Berechnen des Residuums an jeder Singularität"]

@@ -68,9 +68,9 @@ graph TD
     classDef subexp fill:#ffd3b6,stroke:#333,stroke-width:2px;
     classDef exp fill:#ffaaa5,stroke:#333,stroke-width:2px;
 
-    Poly["बहुपदीय समय (Polynomial Time) O(n^k)"]:::poly
+    Poly["बहुपदीय समय (Polynomial Time) O("n^k")"]:::poly
     SubExp["उप-घातीय समय (Sub-exponential Time) L_n"]:::subexp
-    Exp["घातीय समय (Exponential Time) O(2^n)"]:::exp
+    Exp["घातीय समय (Exponential Time) O("2^n")"]:::exp
 
     GNFS["GNFS (सामान्य संख्या क्षेत्र चलनी)"]:::subexp
     Pollard["पोलार्ड की rho विधि (Pollards rho Algorithm)"]:::exp
@@ -255,12 +255,12 @@ graph LR
     classDef quantum fill:#00c9a7,stroke:#333,stroke-width:2px;
 
     subgraph "क्लासिकल कंप्यूटर (Classical Computers)"
-        C1["परीक्षण विभाजन (Trial Division): O(2^(n/2))"]:::classical
-        C2["GNFS: उप-घातीय (Sub-exponential) L_n(1/3)"]:::classical
+        C1["परीक्षण विभाजन (Trial Division): O("2^(n/2"))"]:::classical
+        C2["GNFS: उप-घातीय (Sub-exponential) L_n("1/3")"]:::classical
     end
 
     subgraph "क्वांटम कंप्यूटर (Quantum Computers)"
-        Q1["शोर का एल्गोरिदम (Shors Algorithm): O(n^3) बहुपदीय (Polynomial)"]:::quantum
+        Q1["शोर का एल्गोरिदम (Shors Algorithm): O("n^3") बहुपदीय (Polynomial)"]:::quantum
     end
 
     C1 --> C2

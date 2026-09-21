@@ -127,7 +127,7 @@ Dengan menggunakan batas Hasse, perkalian tak hingga ini ditunjukkan konvergen m
 flowchart LR
     Eq["Kurva eliptik E / Q"] -->|"Reduksi mod p"| Fp["E / F_p (tiap bilangan prima p)"]
     Fp -->|"Hitung jumlah solusi N_p"| ap["Trace a_p = p + 1 - N_p"]
-    ap -->|"Integrasi sebagai produk Euler"| Lfunc["Fungsi L L(E, s)"]
+    ap -->|"Integrasi sebagai produk Euler"| Lfunc["Fungsi L L("E, s")"]
 ```
 
 ### 4.3. Kelanjutan Analitik dan Teorema Modularitas

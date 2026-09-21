@@ -86,7 +86,7 @@ Cohen desenvolveu um método para estender um novo modelo adicionando um novo co
 graph TD
     M["Modelo Base (ZFC)"]
     G["Filtro Genérico"]
-    MG["Extensão Genérica M[G]"]
+    MG["Extensão Genérica M["G"]"]
     M -->|"forcing"| MG
     G -->|"adicionado a"| MG
     MG -->|"satisfaz"| NOT_CH["Não CH"]

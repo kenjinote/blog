@@ -135,8 +135,8 @@ sequenceDiagram
     participant Secondary as "Secondary Node (B)"
     
     Note over Primary, Secondary: "Saat beroperasi normal (No Partition)"
-    Client->>Primary: "Write(V=1)"
-    Primary->>Secondary: "Replicate(V=1)"
+    Client->>Primary: "Write("V=1")"
+    Primary->>Secondary: "Replicate("V=1")"
     Secondary-->>Primary: "Ack"
     Primary-->>Client: "Success (Write Confirm)"
     Client->>Primary: "Read()"
@@ -145,10 +145,10 @@ sequenceDiagram
     Note over Primary, Secondary: "Terjadi Pemisahan Jaringan! (Node A dan Node B tidak dapat berkomunikasi)"
     
     %% Asumsi Node A tertinggal di partisi minoritas
-    Note over Primary: "Primer(A) mendeteksi bahwa ia tidak dapat<br/>berkomunikasi dengan mayoritas node lainnya"
-    Note over Primary: "Primer(A) secara sukarela<br/>turun jabatan menjadi Sekunder (Step Down)"
+    Note over Primary: "Primer("A") mendeteksi bahwa ia tidak dapat<br/>berkomunikasi dengan mayoritas node lainnya"
+    Note over Primary: "Primer("A") secara sukarela<br/>turun jabatan menjadi Sekunder (Step Down)"
     
-    Client->>Primary: "Write(V=2)"
+    Client->>Primary: "Write("V=2")"
     Primary-->>Client: "Error (Not Primary) - Ketersediaan menurun"
     
     Client->>Secondary: "Read()"
@@ -184,7 +184,7 @@ sequenceDiagram
     
     Note over NodeA, NodeB: "Terjadi Pemisahan Jaringan! (Tidak dapat saling berkomunikasi)"
     
-    Client->>NodeA: "Write(V=1)"
+    Client->>NodeA: "Write("V=1")"
     Note over NodeA: "Menulis ke penyimpanan (lokal) miliknya sendiri"
     NodeA-xNodeB: "Replicate (Fail)"
     Note over NodeA: "Menyimpan secara lokal data yang ditujukan untuk B<br/>sebagai petunjuk (Hinted Handoff)"

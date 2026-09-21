@@ -189,12 +189,12 @@ sequenceDiagram
 
     A->>V: withdrawBalance()
     activate V
-    V->>A: Call.value(balance)() (Отправка средств)
+    V->>A: Call.value("balance")() (Отправка средств)
     activate A
     Note over A: Функция Fallback запускается
     A->>V: withdrawBalance() (Рекурсивный вызов)
     activate V
-    V->>A: Call.value(balance)() (Вторая отправка средств)
+    V->>A: Call.value("balance")() (Вторая отправка средств)
     deactivate V
     deactivate A
     Note over V: Средства отправляются несколько раз до обновления баланса

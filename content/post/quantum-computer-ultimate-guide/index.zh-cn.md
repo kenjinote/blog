@@ -306,7 +306,7 @@ graph TD
     Center --- X_neg["|-⟩ = (|0⟩-|1⟩)/√2 (X轴负向: θ=π/2, φ=π)"]
     Center --- Y_pos["|i⟩ = (|0⟩+i|1⟩)/√2 (Y轴正向: θ=π/2, φ=π/2)"]
     Center --- Y_neg["|-i⟩ = (|0⟩-i|1⟩)/√2 (Y轴负向: θ=π/2, φ=3π/2)"]
-    State["|ψ⟩ = cos(θ/2)|0⟩ + e^(iφ)sin(θ/2)|1⟩"] -.->|"布洛赫向量 r = (sinθcosφ, sinθsinφ, cosθ)"| Center
+    State["|ψ⟩ = cos("θ/2")|0⟩ + e^(iφ)sin("θ/2")|1⟩"] -.->|"布洛赫向量 r = (sinθcosφ, sinθsinφ, cosθ)"| Center
     end
     style Z_pos fill:#f9f,stroke:#333,stroke-width:2px
     style Z_neg fill:#f9f,stroke:#333,stroke-width:2px
@@ -582,13 +582,13 @@ graph TD
     classDef operation fill:#e1f5fe,stroke:#0288d1,stroke-width:2px;
     classDef measure fill:#fce4ec,stroke:#c2185b,stroke-width:2px;
     
-    Init["初始状态 $| \psi(t_0) \rangle$"]:::state --> Evo["酉时间演化 $U(t, t_0) = \exp(-i H t / \hbar)$"]:::operation
-    Evo --> Evolved["演化后状态 $| \psi(t) \rangle = U | \psi(t_0) \rangle$"]:::state
+    Init["初始状态 $| \psi("t_0") \rangle$"]:::state --> Evo["酉时间演化 $U("t, t_0") = \exp("-i H t / \hbar")$"]:::operation
+    Evo --> Evolved["演化后状态 $| \psi("t") \rangle = U | \psi("t_0") \rangle$"]:::state
     
     Evolved --> Obs["物理量 $A$ 的观测 (投影算子 $P_k$)"]:::measure
     
-    Obs -->|"概率 $p(a_1) = \langle \psi"| P_1 | \psi \rangle$ | State1["塌缩状态 1: $| a_1 \rangle$"]:::state
-    Obs -->|"概率 $p(a_2) = \langle \psi"| P_2 | \psi \rangle$ | State2["塌缩状态 2: $| a_2 \rangle$"]:::state
+    Obs -->|"概率 $p("a_1") = \langle \psi"| P_1 | \psi \rangle$ | State1["塌缩状态 1: $| a_1 \rangle$"]:::state
+    Obs -->|"概率 $p("a_2") = \langle \psi"| P_2 | \psi \rangle$ | State2["塌缩状态 2: $| a_2 \rangle$"]:::state
     Obs -->|"..."| StateN["塌缩状态 n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["退相干（相位干涉丧失）与转为混合态"]:::measure
@@ -844,7 +844,7 @@ graph LR
     direction LR
     Q0["|0⟩"] --> G1["H门"]
     G1 --> G2["S门"]
-    G2 --> G3["Rx(π/2)"]
+    G2 --> G3["Rx("π/2")"]
     G3 --> M1["测量"]
     end
     

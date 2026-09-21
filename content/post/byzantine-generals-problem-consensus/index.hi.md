@@ -256,13 +256,13 @@ sequenceDiagram
     P->>B2: "Pre-prepare"
     P->>B3: "Pre-prepare"
     
-    Note over P,B3: "Prepare चरण (O(N^2) का संचार)"
+    Note over P,B3: "Prepare चरण (O("N^2") का संचार)"
     B1->>P: "Prepare"
     B1->>B2: "Prepare"
     B2->>P: "Prepare"
     B2->>B1: "Prepare"
     
-    Note over P,B3: "Commit चरण (O(N^2) का संचार)"
+    Note over P,B3: "Commit चरण (O("N^2") का संचार)"
     P->>B1: "Commit"
     B1->>B2: "Commit"
     B2->>P: "Commit"

@@ -126,7 +126,7 @@ Recorramos perante Mermaid, traduzindo no suporte visual demonstrativo os passos
 ```mermaid
 graph TD
     subgraph "Máquina de Decisão H"
-        H{"Resultado de H(X, X)?"}
+        H{"Resultado de H("X, X")?"}
     end
 
     subgraph "Programa Enganoso D"
@@ -139,8 +139,8 @@ graph TD
     INPUT_D[/"Input: D"/] --> START
     
     %% Representações em colisão nas contradições em realces e contrastes 
-    LOOP -.->|"Colapso/Contradição com a avaliação operante via função de H(true)!"| FAIL_1(("Contradição"))
-    HALT -.->|"Colapso/Contradição com a avaliação operante via função de H(false)!"| FAIL_2(("Contradição"))
+    LOOP -.->|"Colapso/Contradição com a avaliação operante via função de H("true")!"| FAIL_1(("Contradição"))
+    HALT -.->|"Colapso/Contradição com a avaliação operante via função de H("false")!"| FAIL_2(("Contradição"))
     
     style FAIL_1 fill:#ff9999,stroke:#cc0000,stroke-width:2px
     style FAIL_2 fill:#ff9999,stroke:#cc0000,stroke-width:2px

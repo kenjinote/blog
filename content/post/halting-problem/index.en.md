@@ -126,7 +126,7 @@ Let's illustrate the logic of this proof by contradiction using Mermaid.
 ```mermaid
 graph TD
     subgraph "Decision Machine H"
-        H{"Result of H(X, X)?"}
+        H{"Result of H("X, X")?"}
     end
 
     subgraph "Malicious Program D"

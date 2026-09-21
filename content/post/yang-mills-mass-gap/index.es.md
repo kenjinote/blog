@@ -50,8 +50,8 @@ $ g $ es la constante de acoplamiento y $ f^{abc} $ son las constantes de estruc
 ```mermaid
 graph TD
     A["Teoría Gauge"] -->|"Extensión"| B["Teoría de Yang-Mills"]
-    B -->|"Simetría SU(3)"| C["Cromodinámica Cuántica (QCD)"]
-    B -->|"Simetría SU(2)xU(1)"| D["Teoría Electrodébil"]
+    B -->|"Simetría SU("3")"| C["Cromodinámica Cuántica (QCD)"]
+    B -->|"Simetría SU("2")xU("1")"| D["Teoría Electrodébil"]
     C -->|"Interacción Fuerte"| E["Modelo Estándar"]
     D -->|"Interacción Electromagnética y Débil"| E
 ```

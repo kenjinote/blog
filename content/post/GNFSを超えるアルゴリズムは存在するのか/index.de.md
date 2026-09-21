@@ -148,8 +148,8 @@ Unter Berücksichtigung kürzlich optimierter Schaltungsimplementierungen kann d
 
 ```mermaid
 graph LR
-  A["Klassischer Algorithmus (GNFS)"] -->|"Grenze"| B["Subexponentielle Zeit L_n[1/3]"]
-  C["Quantenalgorithmus (Shor)"] -->|"Durchbruch"| D["Polynomzeit O((log n)^3)"]
+  A["Klassischer Algorithmus (GNFS)"] -->|"Grenze"| B["Subexponentielle Zeit L_n["1/3"]"]
+  C["Quantenalgorithmus (Shor)"] -->|"Durchbruch"| D["Polynomzeit O("(log n")^3)"]
   B --> E["Fortgesetzte Nutzung von RSA (Längere Schlüssel)"]
   D --> F["Vollständiger Zusammenbruch von RSA"]
 ```

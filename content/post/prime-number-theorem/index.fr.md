@@ -36,8 +36,8 @@ La fonction de comptage des nombres premiers $\pi(x)$ est une fonction qui compt
 ```mermaid
 graph TD;
     A["Entier naturel x"] -->|"Compter les nombres premiers"| B["Fonction de comptage des nombres premiers π(x)"];
-    B -->|"Approximer"| C["x / ln(x)"];
-    C -->|"Augmenter la précision"| D["Logarithme intégral Li(x)"];
+    B -->|"Approximer"| C["x / ln("x")"];
+    C -->|"Augmenter la précision"| D["Logarithme intégral Li("x")"];
 ```
 
 ## Contexte historique : De la conjecture de Gauss à la preuve

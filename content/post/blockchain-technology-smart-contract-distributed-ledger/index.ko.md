@@ -189,12 +189,12 @@ sequenceDiagram
 
     A->>V: "withdrawBalance()"
     activate V
-    V->>A: "Call.value(balance)()" (송금)
+    V->>A: "Call.value("balance")()" (송금)
     activate A
     Note over A: "Fallback 함수가 트리거됨"
     A->>V: "withdrawBalance()" (재귀 호출)
     activate V
-    V->>A: "Call.value(balance)()" (2번째 송금)
+    V->>A: "Call.value("balance")()" (2번째 송금)
     deactivate V
     deactivate A
     Note over V: "잔고가 업데이트되기 전에 여러 번 송금됨"

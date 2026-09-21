@@ -220,8 +220,8 @@ fn main() {
 ```mermaid
 graph LR
     A["变量 v（所有者）"] --> B["堆数组 [1, 2, 3]"]
-    C["引用 'first' (&v[0])"] -.->|"不可变借用"| B
-    A -->|"X "可变借用被拒绝！""| D["v.push(4)"]
+    C["引用 'first' (&v["0"])"] -.->|"不可变借用"| B
+    A -->|"X "可变借用被拒绝！""| D["v.push("4")"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px

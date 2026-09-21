@@ -68,9 +68,9 @@ graph TD
     classDef subexp fill:#ffd3b6,stroke:#333,stroke-width:2px;
     classDef exp fill:#ffaaa5,stroke:#333,stroke-width:2px;
 
-    Poly["다항식 시간 O(n^k)"]:::poly
+    Poly["다항식 시간 O("n^k")"]:::poly
     SubExp["준지수 시간 L_n"]:::subexp
-    Exp["지수 시간 O(2^n)"]:::exp
+    Exp["지수 시간 O("2^n")"]:::exp
 
     GNFS["GNFS (일반 수체 체)"]:::subexp
     Pollard["폴라드의 rho 알고리즘"]:::exp
@@ -255,12 +255,12 @@ graph LR
     classDef quantum fill:#00c9a7,stroke:#333,stroke-width:2px;
 
     subgraph "Classical Computers"
-        C1["시험 나눗셈법: O(2^(n/2))"]:::classical
-        C2["GNFS: 준지수 시간 L_n(1/3)"]:::classical
+        C1["시험 나눗셈법: O("2^(n/2"))"]:::classical
+        C2["GNFS: 준지수 시간 L_n("1/3")"]:::classical
     end
 
     subgraph "Quantum Computers"
-        Q1["쇼어의 알고리즘: O(n^3) 다항식 시간"]:::quantum
+        Q1["쇼어의 알고리즘: O("n^3") 다항식 시간"]:::quantum
     end
 
     C1 --> C2

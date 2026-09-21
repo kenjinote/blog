@@ -223,13 +223,13 @@ sequenceDiagram
   participant Wasm as "WebAssembly 런타임"
   participant Mem as "선형 메모리 (ArrayBuffer)"
 
-  JS->>Wasm: "calculate(10, 20) 호출"
+  JS->>Wasm: "calculate("10, 20") 호출"
   note over JS,Wasm: "원시 타입 (int, float)은 레지스터/스택을 통해 직접 전달됨"
   Wasm-->>JS: "30 반환"
 
   note over JS, Mem: "복잡한 데이터의 경우 (문자열, 배열)"
   JS->>Mem: "메모리에 문자열 쓰기"
-  JS->>Wasm: "process_string(pointer, length) 호출"
+  JS->>Wasm: "process_string("pointer, length") 호출"
   Wasm->>Mem: "포인터에서 읽기"
   Wasm->>Mem: "새 포인터에 결과 쓰기"
   Wasm-->>JS: "새 포인터와 길이 반환"

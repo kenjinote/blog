@@ -40,15 +40,15 @@ description: 'Криптография с открытым ключом подв
 
 ```mermaid
 graph LR
-    PQC[Постквантовая криптография PQC] --> L[Криптография на решетках Lattice-based]
-    PQC --> H[Криптография на хеш-функциях Hash-based]
-    PQC --> M[Многомерная криптография Multivariate]
-    PQC --> C[Криптография на кодах Code-based]
+    PQC["Постквантовая криптография PQC"] --> L["Криптография на решетках Lattice-based"]
+    PQC --> H["Криптография на хеш-функциях Hash-based"]
+    PQC --> M["Многомерная криптография Multivariate"]
+    PQC --> C["Криптография на кодах Code-based"]
     
-    L --> L1(FIPS 203: ML-KEM)
-    L --> L2(FIPS 204: ML-DSA)
+    L --> L1("FIPS 203: ML-KEM")
+    L --> L2("FIPS 204: ML-DSA")
     
-    H --> H1(FIPS 205: SLH-DSA)
+    H --> H1("FIPS 205: SLH-DSA")
     
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```

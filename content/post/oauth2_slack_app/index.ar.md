@@ -331,13 +331,13 @@ sequenceDiagram
     participant C as "العميل (Client)"
     participant AS as "خادم التفويض (Authorization Server)"
     
-    Note over C: "code_verifier = سلسلة عشوائية"<br/>"code_challenge = SHA256(code_verifier)"
+    Note over C: "code_verifier = سلسلة عشوائية"<br/>"code_challenge = SHA256("code_verifier")"
     C->>AS: "طلب التفويض (إرسال code_challenge)"
     Note over AS: "الاحتفاظ بـ code_challenge"
     AS-->>C: "إصدار رمز التفويض (code)"
     
     C->>AS: "طلب الرمز (إرسال code + code_verifier)"
-    Note over AS: "SHA256(المُحقق المستلم) == التحدي المحفوظ؟"
+    Note over AS: "SHA256("المُحقق المستلم") == التحدي المحفوظ؟"
     AS-->>C: "نجاح التحقق: إصدار رمز الوصول"
 ```
 

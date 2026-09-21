@@ -57,8 +57,8 @@ graph TD
         A["Ziehe 1 Kugel"] -->|"Die Nummer war '7'"| B{"Was ist in der Urne?"}
         B -->|"Angenommen, Vorab-Wahrscheinlichkeiten sind gleich"| C["Hypothese 1: Urne mit 10 Kugeln"]
         B -->|"Angenommen, Vorab-Wahrscheinlichkeiten sind gleich"| D["Hypothese 2: Urne mit 1000 Kugeln"]
-        C -.->|"P(E|H1) = 1/10"| E["Hypothese 1 hat eine viel höhere Wahrscheinlichkeit"]
-        D -.->|"P(E|H2) = 1/1000"| E
+        C -.->|"P("E|H1") = 1/10"| E["Hypothese 1 hat eine viel höhere Wahrscheinlichkeit"]
+        D -.->|"P("E|H2") = 1/1000"| E
     end
 ```
 
@@ -191,9 +191,9 @@ Wenn man z.B. hyper-fortschrittliche KI oder posthumane Existenzen nicht in dies
 ```mermaid
 graph TD
     subgraph "Unterschiede je nach Wahl der Referenzklasse"
-        A["Was zählen wir als 'uns'?"] -->|"Nur Homo Sapiens"| B["N = 100 Mrd.\n(Hohe Wahrscheinlichkeit für frühes Aussterben)"]
-        A -->|"Jedes bewusste Wesen"| C["Kosmisches N\n(Ergebnisse ändern sich drastisch)"]
-        A -->|"Aktuelle Menschen + Posthumane"| D["N = Gigantisch\n(Möglichkeit der Evolution)"]
+        A["Was zählen wir als 'uns'?"] -->|"Nur Homo Sapiens"| B["N = 100 Mrd.\n("Hohe Wahrscheinlichkeit für frühes Aussterben")"]
+        A -->|"Jedes bewusste Wesen"| C["Kosmisches N\n("Ergebnisse ändern sich drastisch")"]
+        A -->|"Aktuelle Menschen + Posthumane"| D["N = Gigantisch\n("Möglichkeit der Evolution")"]
     end
 ```
 

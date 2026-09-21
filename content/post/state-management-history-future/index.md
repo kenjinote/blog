@@ -88,8 +88,8 @@ jQueryの限界に対する反省から、Backbone.jsやAngularJSといったMVC
 
 ```mermaid
 graph TD
-    Controller[Controller] -->|Updates| Model[Model / State]
-    Model -->|Notifies| View[View / DOM]
+    Controller["Controller"] -->|Updates| Model["Model / State"]
+    Model -->|Notifies| View["View / DOM"]
     View -->|User Events| Controller
 ```
 
@@ -113,9 +113,9 @@ Fluxの最大の目的は、MVCにおける双方向データバインディン�
 
 ```mermaid
 graph LR
-    Action[Action] -->|Dispatch| Dispatcher[Dispatcher]
-    Dispatcher -->|Callback| Store[Store]
-    Store -->|Event| View[View / React]
+    Action["Action"] -->|Dispatch| Dispatcher["Dispatcher"]
+    Dispatcher -->|Callback| Store["Store"]
+    Store -->|Event| View["View / React"]
     View -->|Trigger| Action
 ```
 
@@ -280,10 +280,10 @@ Reactのレンダリングモデル（トップダウン）と、[Context API](h
 
 ```mermaid
 graph BT
-    AtomA((Atom A)) --> Component1[Component 1]
-    AtomA --> Selector1[Selector / Derived State]
-    AtomB((Atom B)) --> Selector1
-    Selector1 --> Component2[Component 2]
+    AtomA(("Atom A")) --> Component1["Component 1"]
+    AtomA --> Selector1["Selector / Derived State"]
+    AtomB(("Atom B")) --> Selector1
+    Selector1 --> Component2["Component 2"]
     Component1 -.->|Updates| AtomA
 ```
 
@@ -406,10 +406,10 @@ Signalの値がテンプレート内で使われている場合、フレーム�
 
 ```mermaid
 graph TD
-    SignalA((Signal: count)) -.->|Direct Binding| DOMNode1[DOM Node: textContent]
-    SignalB((Signal: name)) -.->|Direct Binding| DOMNode2[DOM Node: input value]
+    SignalA(("Signal: count")) -.->|Direct Binding| DOMNode1["DOM Node: textContent"]
+    SignalB(("Signal: name")) -.->|Direct Binding| DOMNode2["DOM Node: input value"]
     
-    UpdateAction[Update count] --> SignalA
+    UpdateAction["Update count"] --> SignalA
     SignalA ==>|Updates ONLY| DOMNode1
 ```
 

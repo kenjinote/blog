@@ -324,7 +324,7 @@ graph TD
     CA -->|"Menerbitkan Sertifikat (Tanda Tangan)"| SubCA
     SubCA -->|"Menerbitkan Sertifikat (Tanda Tangan)"| Server
     Server -->|"Menyajikan Sertifikat Server"| Client
-    Client -.->|"Menyimpan Kunci Publik Root CA Sebelumnya\n(Bawaan Browser atau OS)"| CA
+    Client -.->|"Menyimpan Kunci Publik Root CA Sebelumnya\n("Bawaan Browser atau OS")"| CA
     Client -->|"Memverifikasi Rantai Sertifikat\nMenggunakan Kunci Publik Root CA"| Server
 ```
 

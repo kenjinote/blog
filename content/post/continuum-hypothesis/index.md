@@ -86,7 +86,7 @@ graph TD
 graph TD
     M["Ground Model (ZFC)"]
     G["Generic Filter"]
-    MG["Generic Extension M[G]"]
+    MG["Generic Extension M["G"]"]
     M -->|"forcing"| MG
     G -->|"added to"| MG
     MG -->|"satisfies"| NOT_CH["Not CH"]

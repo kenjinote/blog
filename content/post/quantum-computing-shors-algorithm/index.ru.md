@@ -101,9 +101,9 @@ $$
 
 ```mermaid
 graph LR
-    q0["q0 (Управляющий)"] --- C((●))
+    q0["q0 (Управляющий)"] --- C(("●"))
     C --- q0_out["q0_out"]
-    q1["q1 (Целевой)"] --- T((⊕))
+    q1["q1 (Целевой)"] --- T(("⊕"))
     T --- q1_out["q1_out"]
     C -.- T
 ```
@@ -197,7 +197,7 @@ $49 - 1 = 48$, $\gcd(48, 15) = 3$
 ```mermaid
 sequenceDiagram
     participant Q_Reg1 as "Регистр 1 (x)"
-    participant Q_Reg2 as "Регистр 2 (f(x))"
+    participant Q_Reg2 as "Регистр 2 (f("x"))"
     
     Note over Q_Reg1,Q_Reg2: "1. Инициализация: Все биты в |0>"
     Q_Reg1->>Q_Reg1: "2. Преобразование Адамара (H⊗n) <br/>Создание суперпозиции всех состояний"

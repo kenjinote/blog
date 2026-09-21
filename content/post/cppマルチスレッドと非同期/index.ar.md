@@ -271,7 +271,7 @@ int main() {
 sequenceDiagram
     participant Main as "الخيط الرئيسي"
     participant Async as "عامل std::async"
-    Main->>Async: "std::async(std::launch::async, ...)"
+    Main->>Async: "std::async("std::launch::async, ...")"
     activate Async
     Note over Main: "القيام بعمل آخر..."
     Main->>Async: "future.get() (يحظر حتى يجهز)"

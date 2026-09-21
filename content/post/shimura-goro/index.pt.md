@@ -67,11 +67,11 @@ flowchart LR
     A["Teoria dos Números"] -->|"Igualdade de funções L"| B["Análise"]
     subgraph SG1 ["Curvas Elípticas sobre Números Racionais"]
         N1["Equação E: y² = x³ + ax + b"]
-        N2["Função L de Hasse-Weil L(s, E)"]
+        N2["Função L de Hasse-Weil L("s, E")"]
     end
     subgraph SG2 ["Formas Modulares"]
-        N3["Forma cúspide de peso 2 f(z)"]
-        N4["Série de Dirichlet L(s, f)"]
+        N3["Forma cúspide de peso 2 f("z")"]
+        N4["Série de Dirichlet L("s, f")"]
     end
     SG1 -->|"Conjectura de Taniyama-Shimura"| SG2
     %% Este diagrama mostra como conceitos completamente diferentes estão profundamente conectados.

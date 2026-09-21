@@ -46,7 +46,7 @@ sequenceDiagram
     activate Action
     Action->>Action: "Lint 與靜態分析 (Clang-Tidy)"
     
-    rect rgb(200, 220, 240)
+    rect rgb("200, 220, 240")
     note right of Action: "跨平台矩陣建置"
     Action->>Action: "在 Ubuntu 上建置 (GCC/Clang)"
     Action->>Action: "在 Windows 上建置 (MSVC)"

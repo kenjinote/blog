@@ -95,8 +95,8 @@ La sociedad en su conjunto cae en un bucle **A > B > C > A ...**, y es imposible
 
 ```mermaid
 graph LR
-    A((A)) -->|"Gana por mayoría"| B((B))
-    B -->|"Gana por mayoría"| C((C))
+    A(("A")) -->|"Gana por mayoría"| B(("B"))
+    B -->|"Gana por mayoría"| C(("C"))
     C -->|"Gana por mayoría"| A
     
     style A fill:#ff9999
@@ -164,7 +164,7 @@ Es decir, no existe una $F$ que satisfaga simultáneamente (U), (P), (I) y (D).
 ```mermaid
 graph TD
     subgraph "Consecuencia lógica"
-        A_U["Condición U (Dominio no restringido)"] --> AND1((AND))
+        A_U["Condición U (Dominio no restringido)"] --> AND1(("AND"))
         A_P["Condición P (Unanimidad)"] --> AND1
         A_I["Condición I (IIA)"] --> AND1
         

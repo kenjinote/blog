@@ -131,8 +131,8 @@ $$
 
 ```mermaid
 graph TD
-    S["Fibonacci Recurrence Relation"] -->|"Define Generating Function F(x)"| EQ["Formulate Function Equation"]
-    EQ -->|"Solve Algebraically"| GF["F(x) = x / (1 - x - x^2)"]
+    S["Fibonacci Recurrence Relation"] -->|"Define Generating Function F("x")"| EQ["Formulate Function Equation"]
+    EQ -->|"Solve Algebraically"| GF["F("x") = x / (1 - x - x^2)"]
     GF -->|"Partial Fraction Decomposition"| PF["(A / (1 - αx)) + (B / (1 - βx))"]
     PF -->|"Power Series Expansion & Coefficient Comparison"| AN["General Term (Binet's Formula)"]
 ```

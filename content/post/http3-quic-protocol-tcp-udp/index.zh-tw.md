@@ -146,13 +146,13 @@ sequenceDiagram
     participant Server
     
     Note over Client, Server: "TCP/HTTP2 的情況 (發生封包遺失時)"
-    Client->>Server: "[串流1: 封包1], [串流2: 封包2], [串流1: 封包3(遺失)]"
+    Client->>Server: "[串流1: 封包1], [串流2: 封包2], [串流1: 封包3("遺失")]"
     Note right of Server: "封包1、封包2已抵達。<br/>但因為封包3沒來，整體暫停。"
     Client->>Server: "[串流2: 封包4]"
     Note right of Server: "封包4已抵達，但為了等待封包3重傳<br/>無法交給應用程式 (HoL Blocking)"
     
     Note over Client, Server: "QUIC/HTTP3 的情況 (發生封包遺失時)"
-    Client->>Server: "[串流1: 封包1], [串流2: 封包2], [串流1: 封包3(遺失)]"
+    Client->>Server: "[串流1: 封包1], [串流2: 封包2], [串流1: 封包3("遺失")]"
     Note right of Server: "串流2的封包2立即交給應用程式。"
     Client->>Server: "[串流2: 封包4]"
     Note right of Server: "串流2的封包4也立即交給應用程式。<br/>只有串流1等待封包3的重傳。(解除 HoL)"

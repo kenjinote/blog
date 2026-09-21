@@ -223,13 +223,13 @@ sequenceDiagram
   participant Wasm as "Tempo de Execução WebAssembly"
   participant Mem as "Memória Linear (ArrayBuffer)"
 
-  JS->>Wasm: "Chama calculate(10, 20)"
+  JS->>Wasm: "Chama calculate("10, 20")"
   note over JS,Wasm: "Primitivos (int, float) passados diretamente via Registradores/Pilha"
   Wasm-->>JS: "Retorna 30"
 
   note over JS, Mem: "Para dados complexos (Strings, Arrays)"
   JS->>Mem: "Escreve String na Memória"
-  JS->>Wasm: "Chama process_string(pointer, length)"
+  JS->>Wasm: "Chama process_string("pointer, length")"
   Wasm->>Mem: "Lê a partir do ponteiro"
   Wasm->>Mem: "Escreve o resultado no novo ponteiro"
   Wasm-->>JS: "Retorna novo ponteiro & length"

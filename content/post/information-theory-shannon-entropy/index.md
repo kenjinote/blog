@@ -27,11 +27,11 @@ tags:
 
 ```mermaid
 graph LR
-    A[情報源<br>Information Source] --> B[送信機<br>Transmitter]
-    B -->|送信信号| C((通信路<br>Channel))
-    C -->|受信信号| D[受信機<br>Receiver]
-    D --> E[宛先<br>Destination]
-    N[雑音源<br>Noise Source] -.-> C
+    A["情報源<br>Information Source"] --> B["送信機<br>Transmitter"]
+    B -->|送信信号| C(("通信路<br>Channel"))
+    C -->|受信信号| D["受信機<br>Receiver"]
+    D --> E["宛先<br>Destination"]
+    N["雑音源<br>Noise Source"] -.-> C
 ```
 
 このモデルにおいて、通信の最大の課題は **「雑音（ノイズ）が存在する通信路を通して、いかにして正確かつ効率的にメッセージを伝送するか」** という点に集約されます。

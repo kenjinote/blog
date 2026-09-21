@@ -151,7 +151,7 @@ sequenceDiagram
     PS->>CLR: "Panggil ProcessSystemString"
     note right of CLR: "Marshal System.String ke LPCWSTR"
     note right of CLR: "Berikan referensi StringBuilder"
-    CLR->>CPP: "ProcessSystemString(LPCWSTR, LPWSTR, int)"
+    CLR->>CPP: "ProcessSystemString("LPCWSTR, LPWSTR, int")"
     
     CPP->>CPP: "Jalankan manipulasi string asli"
     CPP->>CPP: "Tulis hasil ke buffer LPWSTR"

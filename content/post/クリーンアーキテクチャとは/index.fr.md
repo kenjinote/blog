@@ -148,13 +148,13 @@ classDiagram
     
     class UserRepository {
         <<Interface>>
-        + findById(id)
-        + save(user)
+        + findById("id")
+        + save("user")
     }
     
     class UserRepositoryImpl {
-        + findById(id)
-        + save(user)
+        + findById("id")
+        + save("user")
     }
     
     UseCaseInteractor --> UserRepository : "Dépend de"

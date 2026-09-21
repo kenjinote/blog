@@ -101,9 +101,9 @@ $H|0\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)$，測量時會成為以
 
 ```mermaid
 graph LR
-    q0["q0 (Control)"] --- C((●))
+    q0["q0 (Control)"] --- C(("●"))
     C --- q0_out["q0_out"]
-    q1["q1 (Target)"] --- T((⊕))
+    q1["q1 (Target)"] --- T(("⊕"))
     T --- q1_out["q1_out"]
     C -.- T
 ```
@@ -197,7 +197,7 @@ $49 - 1 = 48$， $\gcd(48, 15) = 3$
 ```mermaid
 sequenceDiagram
     participant Q_Reg1 as "第1暫存器 (x)"
-    participant Q_Reg2 as "第2暫存器 (f(x))"
+    participant Q_Reg2 as "第2暫存器 (f("x"))"
     
     Note over Q_Reg1,Q_Reg2: "1. 初始化: 所有位元設為|0>"
     Q_Reg1->>Q_Reg1: "2. 阿達馬變換 (H⊗n) <br/>建立所有狀態的疊加"

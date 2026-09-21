@@ -255,13 +255,13 @@ sequenceDiagram
     P->>B2: "Pre-prepare"
     P->>B3: "Pre-prepare"
     
-    Note over P,B3: "Prepare phase (O(N^2) communication)"
+    Note over P,B3: "Prepare phase (O("N^2") communication)"
     B1->>P: "Prepare"
     B1->>B2: "Prepare"
     B2->>P: "Prepare"
     B2->>B1: "Prepare"
     
-    Note over P,B3: "Commit phase (O(N^2) communication)"
+    Note over P,B3: "Commit phase (O("N^2") communication)"
     P->>B1: "Commit"
     B1->>B2: "Commit"
     B2->>P: "Commit"

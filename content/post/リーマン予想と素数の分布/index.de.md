@@ -97,9 +97,9 @@ Diese Gerade, deren Realteil 1/2 ist, wird als "kritische Gerade (Critical line)
 graph TD
     A["Riemannsche Zeta-Funktion ζ(s)"] --> B["Erweiterung auf die komplexe Ebene durch analytische Fortsetzung"]
     B --> C["Triviale Nullstellen (s = -2, -4, -6 ...)"]
-    B --> D["Nicht-triviale Nullstellen (0 <= Re(s) <= 1)"]
+    B --> D["Nicht-triviale Nullstellen (0 <= Re("s") <= 1)"]
     D --> E["Riemannsche Vermutung"]
-    E --> F["Alle nicht-trivialen Nullstellen liegen auf Re(s) = 1/2"]
+    E --> F["Alle nicht-trivialen Nullstellen liegen auf Re("s") = 1/2"]
     F --> G["Zum Beweis des Grenzwerts des Fehlerterms in der Primzahlverteilung"]
 ```
 

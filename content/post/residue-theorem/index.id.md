@@ -32,7 +32,7 @@ Tetapi apa yang terjadi jika wilayah di dalam kontur mencakup titik-titik di man
 
 ```mermaid
 flowchart TD
-    A["Integral kompleks pada garis riil"] -->|"Perluasan ke bidang kompleks"| B["Tentukan fungsi kompleks f(z)"]
+    A["Integral kompleks pada garis riil"] -->|"Perluasan ke bidang kompleks"| B["Tentukan fungsi kompleks f("z")"]
     B --> C["Tetapkan kontur C yang sesuai"]
     C --> D["Identifikasi singularitas (kutub) di dalam kontur"]
     D --> E["Hitung residu pada setiap singularitas"]

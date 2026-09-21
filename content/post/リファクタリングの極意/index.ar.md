@@ -95,15 +95,15 @@ classDiagram
         -DatabaseConnection* db
         -FileLogger* logger
         +LegacyOrderProcessor()
-        +processOrder(int orderId) void
+        +processOrder("int orderId") void
     }
     class DatabaseConnection {
         +DatabaseConnection()
-        +save(int orderId) void
+        +save("int orderId") void
     }
     class FileLogger {
         +FileLogger()
-        +log(string msg) void
+        +log("string msg") void
     }
     LegacyOrderProcessor --> DatabaseConnection : "إنشاء مباشر (باستخدام new)"
     LegacyOrderProcessor --> FileLogger : "إنشاء مباشر (باستخدام new)"
@@ -115,23 +115,23 @@ classDiagram
 classDiagram
     class IDatabase {
         <<interface>>
-        +save(int orderId) void
+        +save("int orderId") void
     }
     class ILogger {
         <<interface>>
-        +log(string msg) void
+        +log("string msg") void
     }
     class ModernOrderProcessor {
         -std::unique_ptr~IDatabase~ db
         -std::shared_ptr~ILogger~ logger
-        +ModernOrderProcessor(std::unique_ptr~IDatabase~ db, std::shared_ptr~ILogger~ logger)
-        +processOrder(int orderId) void
+        +ModernOrderProcessor("std::unique_ptr~IDatabase~ db, std::shared_ptr~ILogger~ logger")
+        +processOrder("int orderId") void
     }
     class DatabaseConnection {
-        +save(int orderId) void
+        +save("int orderId") void
     }
     class FileLogger {
-        +log(string msg) void
+        +log("string msg") void
     }
     IDatabase <|.. DatabaseConnection : "تنفيذ"
     ILogger <|.. FileLogger : "تنفيذ"

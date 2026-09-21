@@ -87,15 +87,15 @@ sequenceDiagram
     participant PeerB as "클라이언트 B"
 
     PeerA->>PeerA: "createOffer()"
-    PeerA->>PeerA: "setLocalDescription(offer)"
+    PeerA->>PeerA: "setLocalDescription("offer")"
     PeerA->>Sig: "Offer 전송 (SDP)"
     Sig->>PeerB: "Offer 전달"
-    PeerB->>PeerB: "setRemoteDescription(offer)"
+    PeerB->>PeerB: "setRemoteDescription("offer")"
     PeerB->>PeerB: "createAnswer()"
-    PeerB->>PeerB: "setLocalDescription(answer)"
+    PeerB->>PeerB: "setLocalDescription("answer")"
     PeerB->>Sig: "Answer 전송 (SDP)"
     Sig->>PeerA: "Answer 전달"
-    PeerA->>PeerA: "setRemoteDescription(answer)"
+    PeerA->>PeerA: "setRemoteDescription("answer")"
 ```
 
 ### 2.3 시그널링 서버 구현 예 (Node.js + WebSocket)

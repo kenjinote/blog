@@ -171,14 +171,14 @@ Untuk memahami secara intuitif perbedaan antara GNFS dan Algoritma Shor, diagram
 
 ```mermaid
 graph TD
-    A[Keadaan Awal: 0...0] --> B[Superposisi semua keadaan dengan Transformasi Hadamard]
-    B --> C[Operasi Pangkat Modular a^x mod N]
-    C -->|"Keterikatan Kuantum"| D[Runtuh ke keadaan dengan periodisitas]
-    D --> E[Transformasi Fourier Kuantum QFT]
-    E -->|"Amplifikasi probabilitas via interferensi"| F[Pengukuran: Mendapatkan y]
-    F --> G[Pemrosesan Klasik: Ekspansi Pecahan Berlanjut]
-    G --> H[Penemuan Periode r]
-    H --> I[Menghitung Faktor Prima dari N]
+    A["Keadaan Awal: 0...0"] --> B["Superposisi semua keadaan dengan Transformasi Hadamard"]
+    B --> C["Operasi Pangkat Modular a^x mod N"]
+    C -->|"Keterikatan Kuantum"| D["Runtuh ke keadaan dengan periodisitas"]
+    D --> E["Transformasi Fourier Kuantum QFT"]
+    E -->|"Amplifikasi probabilitas via interferensi"| F["Pengukuran: Mendapatkan y"]
+    F --> G["Pemrosesan Klasik: Ekspansi Pecahan Berlanjut"]
+    G --> H["Penemuan Periode r"]
+    H --> I["Menghitung Faktor Prima dari N"]
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#bbf,stroke:#333,stroke-width:2px

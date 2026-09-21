@@ -171,14 +171,14 @@ Um den Unterschied zwischen GNFS und dem Shor-Algorithmus intuitiv zu verstehen,
 
 ```mermaid
 graph TD
-    A[Anfangszustand: 0...0] --> B[Superposition aller Zustände durch Hadamard-Transformation]
-    B --> C[Modulare Exponentiation a^x mod N]
-    C -->|"Quantenverschränkung"| D[Kollaps in einen Zustand mit Periodizität]
-    D --> E[Quanten-Fourier-Transformation QFT]
-    E -->|"Wahrscheinlichkeitsverstärkung durch Interferenz"| F[Messung: y erhalten]
-    F --> G[Klassische Verarbeitung: Kettenbruchentwicklung]
-    G --> H[Entdeckung der Periode r]
-    H --> I[Berechnung der Primfaktoren von N]
+    A["Anfangszustand: 0...0"] --> B["Superposition aller Zustände durch Hadamard-Transformation"]
+    B --> C["Modulare Exponentiation a^x mod N"]
+    C -->|"Quantenverschränkung"| D["Kollaps in einen Zustand mit Periodizität"]
+    D --> E["Quanten-Fourier-Transformation QFT"]
+    E -->|"Wahrscheinlichkeitsverstärkung durch Interferenz"| F["Messung: y erhalten"]
+    F --> G["Klassische Verarbeitung: Kettenbruchentwicklung"]
+    G --> H["Entdeckung der Periode r"]
+    H --> I["Berechnung der Primfaktoren von N"]
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#bbf,stroke:#333,stroke-width:2px

@@ -82,17 +82,17 @@ Firecrackerは、KVM（Kernel-based Virtual Machine）を利用して、軽量�
 ```mermaid
 graph TD
     subgraph Host_OS [Host OS (EC2 Bare Metal)]
-        KVM[KVM - Kernel-based Virtual Machine]
+        KVM["KVM - Kernel-based Virtual Machine"]
         subgraph Firecracker_Process_1 [Firecracker Process (MicroVM 1)]
-            GuestOS_1[Guest OS / Minimal Linux]
-            Runtime_1[Lambda Runtime]
-            Function_1[User Function Code]
+            GuestOS_1["Guest OS / Minimal Linux"]
+            Runtime_1["Lambda Runtime"]
+            Function_1["User Function Code"]
             GuestOS_1 --> Runtime_1 --> Function_1
         end
         subgraph Firecracker_Process_2 [Firecracker Process (MicroVM 2)]
-            GuestOS_2[Guest OS / Minimal Linux]
-            Runtime_2[Lambda Runtime]
-            Function_2[User Function Code]
+            GuestOS_2["Guest OS / Minimal Linux"]
+            Runtime_2["Lambda Runtime"]
+            Function_2["User Function Code"]
             GuestOS_2 --> Runtime_2 --> Function_2
         end
         KVM --> Firecracker_Process_1
@@ -117,10 +117,10 @@ stateDiagram-v2
     [*] --> ColdStart : トリガー発生 (利用可能なコンテナなし)
     state ColdStart {
         direction TB
-        CodeDownload[コードのダウンロード (S3から)]
-        StartVM[MicroVMの起動 (Firecracker)]
-        RuntimeInit[ランタイムの初期化 (Node, Python, Java等)]
-        FunctionInit[関数の初期化 (グローバルスコープの実行)]
+        CodeDownload["コードのダウンロード (S3から)"]
+        StartVM["MicroVMの起動 (Firecracker)"]
+        RuntimeInit["ランタイムの初期化 (Node, Python, Java等)"]
+        FunctionInit["関数の初期化 (グローバルスコープの実行)"]
         
         CodeDownload --> StartVM
         StartVM --> RuntimeInit
@@ -130,7 +130,7 @@ stateDiagram-v2
     
     [*] --> WarmInvoke : トリガー発生 (ウォームコンテナあり)
     state WarmInvoke {
-        ExecuteHandler[ハンドラーの実行]
+        ExecuteHandler["ハンドラーの実行"]
     }
     
     WarmInvoke --> Idle : 実行完了

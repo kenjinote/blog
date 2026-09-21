@@ -69,14 +69,14 @@ Aquí es donde entra en juego el "Algoritmo de Shor", publicado por Peter Shor e
 
 ```mermaid
 graph TD
-    A[Ingresar el número N a factorizar] --> B[Seleccionar un número entero aleatorio a]
+    A["Ingresar el número N a factorizar"] --> B["Seleccionar un número entero aleatorio a"]
     B --> C{Máximo común divisor<br>de a y N}
-    C -->|"Mayor que 1"| D[¡Afortunadamente encontramos un factor primo!]
-    C -->|"1 Coprimos"| E[Turno de la computadora cuántica]
-    E --> F[Encontrar el período r de la función<br>f_x = a^x mod N mediante<br>la transformada cuántica de Fourier]
+    C -->|"Mayor que 1"| D["¡Afortunadamente encontramos un factor primo!"]
+    C -->|"1 Coprimos"| E["Turno de la computadora cuántica"]
+    E --> F["Encontrar el período r de la función<br>f_x = a^x mod N mediante<br>la transformada cuántica de Fourier"]
     F --> G{¿Es el período r par y<br>a^r/2 ≢ -1 mod N?}
-    G -->|"Sí"| H[Calcular el máximo común divisor gcd_a^r/2 ± 1, N]
-    H --> I((¡Factorización exitosa!))
+    G -->|"Sí"| H["Calcular el máximo común divisor gcd_a^r/2 ± 1, N"]
+    H --> I(("¡Factorización exitosa!"))
     G -->|"No"| B
 ```
 

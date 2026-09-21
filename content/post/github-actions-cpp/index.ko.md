@@ -46,7 +46,7 @@ sequenceDiagram
     activate Action
     Action->>Action: "린트 및 정적 분석 (Clang-Tidy)"
     
-    rect rgb(200, 220, 240)
+    rect rgb("200, 220, 240")
     note right of Action: "크로스 플랫폼 매트릭스 빌드"
     Action->>Action: "Ubuntu 빌드 (GCC/Clang)"
     Action->>Action: "Windows 빌드 (MSVC)"

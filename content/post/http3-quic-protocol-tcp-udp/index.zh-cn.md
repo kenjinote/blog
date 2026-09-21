@@ -146,13 +146,13 @@ sequenceDiagram
     participant Server as "Server"
     
     Note over Client, Server: "在TCP/HTTP2的情况下 (发生数据包丢失时)"
-    Client->>Server: "[Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3(Loss)]"
+    Client->>Server: "[Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3("Loss")]"
     Note right of Server: "Pkt1, Pkt2已到达。<br/>但是Pkt3未到达，因此整体停止。"
     Client->>Server: "[Stream2: Pkt4]"
     Note right of Server: "Pkt4已到达，但为了等待Pkt3的重传<br/>无法传递给应用层 (HoL Blocking)"
     
     Note over Client, Server: "在QUIC/HTTP3的情况下 (发生数据包丢失时)"
-    Client->>Server: "[Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3(Loss)]"
+    Client->>Server: "[Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3("Loss")]"
     Note right of Server: "Stream2的Pkt2立即传递给应用层。"
     Client->>Server: "[Stream2: Pkt4]"
     Note right of Server: "Stream2的Pkt4也立即传递给应用。<br/>仅Stream1等待Pkt3的重传。(消除了HoL)"

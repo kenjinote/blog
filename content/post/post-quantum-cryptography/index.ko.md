@@ -58,15 +58,15 @@ description: '공개키 암호는 양자 컴퓨터의 실용화로 인해 향후
 
 ```mermaid
 graph LR
-    PQC[양자 내성 암호 PQC] --> L[격자 기반 암호 Lattice-based]
-    PQC --> H[해시 기반 암호 Hash-based]
-    PQC --> M[다변수 다항식 암호 Multivariate]
-    PQC --> C[부호 기반 암호 Code-based]
+    PQC["양자 내성 암호 PQC"] --> L["격자 기반 암호 Lattice-based"]
+    PQC --> H["해시 기반 암호 Hash-based"]
+    PQC --> M["다변수 다항식 암호 Multivariate"]
+    PQC --> C["부호 기반 암호 Code-based"]
     
-    L --> L1(FIPS 203: ML-KEM)
-    L --> L2(FIPS 204: ML-DSA)
+    L --> L1("FIPS 203: ML-KEM")
+    L --> L2("FIPS 204: ML-DSA")
     
-    H --> H1(FIPS 205: SLH-DSA)
+    H --> H1("FIPS 205: SLH-DSA")
     
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```

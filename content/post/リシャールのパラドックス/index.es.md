@@ -60,9 +60,9 @@ La forma de crearlo es sencilla.
 graph TD
     subgraph "Números reales en la lista"
         R1["r1 = 0.[3]33..."]
-        R2["r2 = 0.5[0]0..."]
-        R3["r3 = 0.14[1]..."]
-        R4["r4 = 0.777[7]..."]
+        R2["r2 = 0.5["0"]0..."]
+        R3["r3 = 0.14["1"]..."]
+        R4["r4 = 0.777["7"]..."]
     end
     
     subgraph "El nuevo número creado X"

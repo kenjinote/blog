@@ -50,8 +50,8 @@ $ g $ ist die Kopplungskonstante und $ f^{abc} $ sind die Strukturkonstanten der
 ```mermaid
 graph TD
     A["Eichtheorie"] -->|"Erweiterung"| B["Yang-Mills-Theorie"]
-    B -->|"SU(3)-Symmetrie"| C["Quantenchromodynamik (QCD)"]
-    B -->|"SU(2)xU(1)-Symmetrie"| D["Elektroschwache Theorie"]
+    B -->|"SU("3")-Symmetrie"| C["Quantenchromodynamik (QCD)"]
+    B -->|"SU("2")xU("1")-Symmetrie"| D["Elektroschwache Theorie"]
     C -->|"Starke Wechselwirkung"| E["Standardmodell"]
     D -->|"Elektromagnetische & schwache Wechselwirkung"| E
 ```

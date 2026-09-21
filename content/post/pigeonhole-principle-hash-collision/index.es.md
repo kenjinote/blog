@@ -78,13 +78,13 @@ graph TD
     end
 
     subgraph "Función Hash"
-        H{"Hash(x)"}
+        H{"Hash("x")"}
     end
 
     subgraph "Espacio Hash finito (nidos)"
-        V1("Hash(A)")
-        V2("Hash(B) = Hash(C)")
-        V3("Hash(D)")
+        V1("Hash("A")")
+        V2("Hash("B") = Hash("C")")
+        V3("Hash("D")")
     end
 
     A -->|"Aplicar hash"| H
@@ -152,7 +152,7 @@ graph LR
         F1("Contrato PDF normal")
         F2("Contrato PDF malicioso")
         H{"Función Hash SHA-1"}
-        V("Mismo valor hash\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
+        V("Mismo valor hash\n("38762cf7f55934b34d179ae6a4c80cadccbb7f0a")")
     end
 
     F1 -->|"Entrada"| H

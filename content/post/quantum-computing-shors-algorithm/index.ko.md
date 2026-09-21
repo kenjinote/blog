@@ -197,7 +197,7 @@ $49 - 1 = 48$, $\gcd(48, 15) = 3$
 ```mermaid
 sequenceDiagram
     participant Q_Reg1 as "제1 레지스터 (x)"
-    participant Q_Reg2 as "제2 레지스터 (f(x))"
+    participant Q_Reg2 as "제2 레지스터 (f("x"))"
     
     Note over Q_Reg1,Q_Reg2: "1. 초기화: 모든 비트를 |0>으로"
     Q_Reg1->>Q_Reg1: "2. 아다마르 변환 (H⊗n) <br/>모든 상태의 중첩 생성"

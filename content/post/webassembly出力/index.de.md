@@ -223,13 +223,13 @@ sequenceDiagram
   participant Wasm as "WebAssembly-Laufzeitumgebung"
   participant Mem as "Linearer Speicher (ArrayBuffer)"
 
-  JS->>Wasm: "Aufruf calculate(10, 20)"
+  JS->>Wasm: "Aufruf calculate("10, 20")"
   note over JS,Wasm: "Primitive (int, float) werden direkt über Register/Stack übergeben"
   Wasm-->>JS: "Rückgabe 30"
 
   note over JS, Mem: "Für komplexe Daten (Strings, Arrays)"
   JS->>Mem: "String in den Speicher schreiben"
-  JS->>Wasm: "Aufruf process_string(Zeiger, Länge)"
+  JS->>Wasm: "Aufruf process_string("Zeiger, Länge")"
   Wasm->>Mem: "Vom Zeiger lesen"
   Wasm->>Mem: "Ergebnis an neuen Zeiger schreiben"
   Wasm-->>JS: "Neuen Zeiger & Länge zurückgeben"

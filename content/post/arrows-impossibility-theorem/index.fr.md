@@ -95,8 +95,8 @@ Pour la société dans son ensemble, nous tombons dans une boucle **A > B > C > 
 
 ```mermaid
 graph LR
-    A((A)) -->|"Gagne à la majorité"| B((B))
-    B -->|"Gagne à la majorité"| C((C))
+    A(("A")) -->|"Gagne à la majorité"| B(("B"))
+    B -->|"Gagne à la majorité"| C(("C"))
     C -->|"Gagne à la majorité"| A
     
     style A fill:#ff9999
@@ -164,7 +164,7 @@ Autrement dit, aucune fonction $F$ ne peut satisfaire simultanément (U), (P), (
 ```mermaid
 graph TD
     subgraph "Conséquence logique"
-        A_U["Condition U (Domaine non restreint)"] --> AND1((AND))
+        A_U["Condition U (Domaine non restreint)"] --> AND1(("AND"))
         A_P["Condition P (Principe de Pareto)"] --> AND1
         A_I["Condition I (IIA)"] --> AND1
         

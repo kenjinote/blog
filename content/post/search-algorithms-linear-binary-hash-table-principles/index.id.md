@@ -53,7 +53,7 @@ Algoritma pencarian linear berjalan dengan langkah-langkah berikut:
 flowchart TD
     A["Mulai pencarian"] --> B["Indeks i = 0"]
     B --> C{"i < panjang array?"}
-    C -- "Ya" --> D{"array[i] == target?"}
+    C -- "Ya" --> D{"array["i"] == target?"}
     C -- "Tidak" --> E["Pencarian gagal (tidak ditemukan)"]
     D -- "Ya" --> F["Kembalikan indeks i"]
     D -- "Tidak" --> G["Tambahkan i dengan 1"]
@@ -212,9 +212,9 @@ flowchart TD
     B --> C{"low <= high?"}
     C -- "Tidak" --> D["Pencarian gagal"]
     C -- "Ya" --> E["mid = (low + high) / 2"]
-    E --> F{"arr[mid] == target?"}
+    E --> F{"arr["mid"] == target?"}
     F -- "Ya" --> G["Kembalikan mid"]
-    F -- "Tidak" --> H{"arr[mid] < target?"}
+    F -- "Tidak" --> H{"arr["mid"] < target?"}
     H -- "Ya" --> I["low = mid + 1"]
     H -- "Tidak" --> J["high = mid - 1"]
     I --> C

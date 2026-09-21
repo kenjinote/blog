@@ -127,7 +127,7 @@ Usando la cota de Hasse, se demuestra que este producto infinito converge absolu
 flowchart LR
     Eq["Curva elíptica E / Q"] -->|"Reducción mod p"| Fp["E / F_p (cada primo p)"]
     Fp -->|"Cálculo del número de soluciones N_p"| ap["Traza a_p = p + 1 - N_p"]
-    ap -->|"Integrado como producto de Euler"| Lfunc["Función L L(E, s)"]
+    ap -->|"Integrado como producto de Euler"| Lfunc["Función L L("E, s")"]
 ```
 
 ### 4.3. Continuación analítica y el teorema de la modularidad

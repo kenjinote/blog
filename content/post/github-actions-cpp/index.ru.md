@@ -46,7 +46,7 @@ sequenceDiagram
     activate Action
     Action->>Action: "Линтинг и статический анализ (Clang-Tidy)"
     
-    rect rgb(200, 220, 240)
+    rect rgb("200, 220, 240")
     note right of Action: "Кроссплатформенная матричная сборка"
     Action->>Action: "Сборка на Ubuntu (GCC/Clang)"
     Action->>Action: "Сборка на Windows (MSVC)"

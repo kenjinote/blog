@@ -320,7 +320,7 @@ sequenceDiagram
     CodeLLDB->>DebuggerCore: ブレークポイントをメモリ管理テーブルに登録
     Developer->>VSCode: F5キー押下 (デバッグ開始)
     VSCode->>CodeLLDB: launch リクエスト
-    CodeLLDB->>OS: ptrace(PTRACE_TRACEME)を付与してプロセス起動
+    CodeLLDB->>OS: ptrace("PTRACE_TRACEME")を付与してプロセス起動
     OS-->>DebuggerCore: アプリケーションのメモリ空間マッピング完了
     DebuggerCore->>OS: 指定アドレスにINT3命令(0xCC)を書き込み
     Note over OS: プログラム実行中...

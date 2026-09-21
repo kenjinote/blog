@@ -128,7 +128,7 @@ This formula is one of the most beautiful results in statistics and machine lear
 ```mermaid
 flowchart LR
     b["Vector b"] -->|"Orthogonal Projection"| p["Projection Vector p = A x_hat"]
-    p --> C["Column Space C(A)"]
+    p --> C["Column Space C("A")"]
     b -->|"Error Vector e"| p
     e["e = b - A x_hat"] -.->|"Orthogonal"| C
 ```

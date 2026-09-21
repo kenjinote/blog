@@ -135,8 +135,8 @@ sequenceDiagram
     participant Secondary as "Secondary Node (B)"
     
     Note over Primary, Secondary: "सामान्य संचालन के दौरान (No Partition)"
-    Client->>Primary: "Write(V=1)"
-    Primary->>Secondary: "Replicate(V=1)"
+    Client->>Primary: "Write("V=1")"
+    Primary->>Secondary: "Replicate("V=1")"
     Secondary-->>Primary: "Ack"
     Primary-->>Client: "Success (Write Confirm)"
     Client->>Primary: "Read()"
@@ -148,7 +148,7 @@ sequenceDiagram
     Note over Primary: "प्राथमिक (A) को पता चलता है कि वह अन्य बहुमत नोड्स के साथ<br/>संवाद नहीं कर सकता"
     Note over Primary: "प्राथमिक (A) स्वेच्छा से<br/>द्वितीयक में पदावनत हो जाता है (Step Down)"
     
-    Client->>Primary: "Write(V=2)"
+    Client->>Primary: "Write("V=2")"
     Primary-->>Client: "Error (Not Primary) - उपलब्धता में कमी"
     
     Client->>Secondary: "Read()"
@@ -184,7 +184,7 @@ sequenceDiagram
     
     Note over NodeA, NodeB: "नेटवर्क विभाजन हुआ! (एक दूसरे के साथ संवाद नहीं कर सकते)"
     
-    Client->>NodeA: "Write(V=1)"
+    Client->>NodeA: "Write("V=1")"
     Note over NodeA: "अपने स्वयं के (स्थानीय) स्टोरेज में लिखें"
     NodeA-xNodeB: "Replicate (Fail)"
     Note over NodeA: "B के लिए लक्षित डेटा को संकेत (Hinted Handoff) के रूप में<br/>स्थानीय रूप से रखता है"

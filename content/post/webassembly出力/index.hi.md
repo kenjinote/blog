@@ -223,13 +223,13 @@ sequenceDiagram
   participant Wasm as "WebAssembly रनटाइम"
   participant Mem as "लीनियर मेमोरी (ArrayBuffer)"
 
-  JS->>Wasm: "calculate(10, 20) को कॉल करें"
+  JS->>Wasm: "calculate("10, 20") को कॉल करें"
   note over JS,Wasm: "प्रिमिटिव्स (int, float) रजिस्टर/स्टैक के माध्यम से सीधे पास किए जाते हैं"
   Wasm-->>JS: "रिटर्न 30"
 
   note over JS, Mem: "जटिल डेटा (स्ट्रिंग्स, एरेज़) के लिए"
   JS->>Mem: "मेमोरी में स्ट्रिंग लिखें"
-  JS->>Wasm: "process_string(पॉइंटर, लंबाई) को कॉल करें"
+  JS->>Wasm: "process_string("पॉइंटर, लंबाई") को कॉल करें"
   Wasm->>Mem: "पॉइंटर से पढ़ें"
   Wasm->>Mem: "नए पॉइंटर पर परिणाम लिखें"
   Wasm-->>JS: "नया पॉइंटर और लंबाई लौटाएं"

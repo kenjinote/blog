@@ -25,21 +25,21 @@ Webブラウザは、私たちが日常的に利用する最も身近で、か�
 
 ```mermaid
 graph TD
-    A[HTMLデータ受信] --> B(HTMLパーサー);
-    B --> C[DOMツリー];
+    A["HTMLデータ受信"] --> B("HTMLパーサー");
+    B --> C["DOMツリー"];
     
-    D[CSSデータ受信] --> E(CSSパーサー);
-    E --> F[CSSOMツリー];
+    D["CSSデータ受信"] --> E("CSSパーサー");
+    E --> F["CSSOMツリー"];
     
-    C --> G(スタイル計算);
+    C --> G("スタイル計算");
     F --> G;
     
-    G --> H[Renderツリー];
-    H --> I(Layout / Reflow);
-    I --> J[レイアウトツリー];
-    J --> K(Paint);
-    K --> L(Composite / 合成);
-    L --> M[画面表示];
+    G --> H["Renderツリー"];
+    H --> I("Layout / Reflow");
+    I --> J["レイアウトツリー"];
+    J --> K("Paint");
+    K --> L("Composite / 合成");
+    L --> M["画面表示"];
 ```
 
 処理のステップは大きく分けて以下のフェーズに分類されます。
@@ -370,9 +370,9 @@ JavaScriptやCSSで要素のスタイルを変更したとき、ブラウザの�
 graph LR
     subgraph 変更によるパイプラインの再実行範囲
     direction TB
-    A[Layout トリガー<br/>width, height etc] --> L(Layout)
-    B[Paint トリガー<br/>color, bg-color etc] --> P(Paint)
-    C[Composite トリガー<br/>transform, opacity] --> Co(Composite)
+    A["Layout トリガー<br/>width, height etc"] --> L("Layout")
+    B["Paint トリガー<br/>color, bg-color etc"] --> P("Paint")
+    C["Composite トリガー<br/>transform, opacity"] --> Co("Composite")
     
     L --> P
     P --> Co

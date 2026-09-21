@@ -46,7 +46,7 @@ sequenceDiagram
     activate Action
     Action->>Action: "فحص الكود والتحليل الثابت (Clang-Tidy)"
     
-    rect rgb(200, 220, 240)
+    rect rgb("200, 220, 240")
     note right of Action: "بناء مصفوفي متعدد المنصات"
     Action->>Action: "البناء على Ubuntu (GCC/Clang)"
     Action->>Action: "البناء على Windows (MSVC)"

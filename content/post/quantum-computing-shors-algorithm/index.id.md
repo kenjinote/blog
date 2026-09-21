@@ -197,7 +197,7 @@ Bagian komputasi kuantum dari Algoritma Shor berjalan dengan langkah-langkah ber
 ```mermaid
 sequenceDiagram
     participant Q_Reg1 as "Register Ke-1 (x)"
-    participant Q_Reg2 as "Register Ke-2 (f(x))"
+    participant Q_Reg2 as "Register Ke-2 (f("x"))"
     
     Note over Q_Reg1,Q_Reg2: "1. Inisialisasi: Semua bit ke |0>"
     Q_Reg1->>Q_Reg1: "2. Transformasi Hadamard (H⊗n) <br/>Membuat superposisi dari semua keadaan"

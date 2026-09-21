@@ -129,7 +129,7 @@ Lassen Sie uns die Logik dieses Beweises durch Widerspruch mithilfe von Mermaid 
 ```mermaid
 graph TD
     subgraph "Entscheidungsmaschine H"
-        H{"Was ist das Ergebnis\nvon H(X, X)?"}
+        H{"Was ist das Ergebnis\nvon H("X, X")?"}
     end
 
     subgraph "Böswilliges Programm D"

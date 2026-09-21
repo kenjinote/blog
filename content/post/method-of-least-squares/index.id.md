@@ -128,7 +128,7 @@ Rumus ini adalah salah satu hasil terindah dalam statistik dan pembelajaran mesi
 ```mermaid
 flowchart LR
     b["Vektor b"] -->|"Proyeksi Ortogonal"| p["Vektor Proyeksi p = A x_hat"]
-    p --> C["Ruang Kolom C(A)"]
+    p --> C["Ruang Kolom C("A")"]
     b -->|"Vektor Kesalahan e"| p
     e["e = b - A x_hat"] -.->|"Ortogonal"| C
 ```

@@ -37,7 +37,7 @@ flowchart TD
     B -->|"Falta de Compreensão dos Conceitos de Variáveis e Tipagem Estática"| D["Desistência (A Barreira dos Tipos)"]
     B -->|"Transição Bem-sucedida"| E["Ensino Médio: Informação I (Fundamentos de Python/JavaScript etc.)"]
     E --> F{"Barreira do Desenho de Algoritmos e Estruturas de Dados"}
-    F -->|"Falta de Entendimento de Complexidade de Tempo/Espaço"| G["Código Ineficiente (Degradação de Desempenho Devido à Criação Excessiva de O(N^2))"]
+    F -->|"Falta de Entendimento de Complexidade de Tempo/Espaço"| G["Código Ineficiente (Degradação de Desempenho Devido à Criação Excessiva de O("N^2"))"]
     F -->|"Caixa Preta do Gerenciamento de Memória e Referências"| H["Tornar-se um Codificador Limitado a Chamadas Superficiais de API"]
     F -->|"Inovação Conceitual"| I["Aprendizado Avançado em CS (C/C++, Java, Arquiteturas de Baixo Nível)"]
     I --> J["Profissional de TI Altamente Qualificado, Tão Desejado Pela Indústria"]

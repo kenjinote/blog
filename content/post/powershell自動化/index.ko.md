@@ -252,7 +252,7 @@ sequenceDiagram
     participant W as "Windows 이벤트 로그"
     participant Sl as "Slack API"
     S->>P: "스크립트 트리거(매시간)"
-    P->>W: "Get-WinEvent(지난 1시간의 위험/오류)"
+    P->>W: "Get-WinEvent("지난 1시간의 위험/오류")"
     W-->>P: "로그 객체 반환"
     alt "오류 발견"
         P->>P: "메시지 포맷팅(JSON)"

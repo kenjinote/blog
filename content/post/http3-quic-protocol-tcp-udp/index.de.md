@@ -146,13 +146,13 @@ sequenceDiagram
     participant Server
     
     Note over Client, Server: "Im Fall von TCP/HTTP2 (Bei Paketverlust)"
-    Client->>Server: "[Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3(Loss)]"
+    Client->>Server: "[Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3("Loss")]"
     Note right of Server: "Pkt1, Pkt2 sind angekommen.<br/>Aber da Pkt3 nicht kommt, stoppt das Ganze."
     Client->>Server: "[Stream2: Pkt4]"
     Note right of Server: "Pkt4 ist angekommen, aber um auf die Neuübertragung von Pkt3 zu warten,<br/>kann es nicht an die App übergeben werden (HoL Blocking)"
     
     Note over Client, Server: "Im Fall von QUIC/HTTP3 (Bei Paketverlust)"
-    Client->>Server: "[Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3(Loss)]"
+    Client->>Server: "[Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3("Loss")]"
     Note right of Server: "Pkt2 von Stream2 geht sofort an die App."
     Client->>Server: "[Stream2: Pkt4]"
     Note right of Server: "Pkt4 von Stream2 geht auch sofort an die App.<br/>Nur Stream1 wartet auf Neuübertragung von Pkt3. (HoL gelöst)"

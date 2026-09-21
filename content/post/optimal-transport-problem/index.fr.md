@@ -27,7 +27,7 @@ Le coût est généralement représenté par le produit de la « quantité de sa
 ```mermaid
 flowchart LR
     A["Tas de sable (Offre)"] -->|"Transport"| B["Trou (Demande)"]
-    C["Emplacement x"] -->|"Distance d(x, y)"| D["Emplacement y"]
+    C["Emplacement x"] -->|"Distance d("x, y")"| D["Emplacement y"]
 ```
 
 Exprimé mathématiquement, soit la distribution du tas de sable d'origine une mesure de probabilité $\mu$ sur $X$, et la distribution du trou une mesure de probabilité $\nu$ sur $Y$.

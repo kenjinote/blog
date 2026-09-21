@@ -78,13 +78,13 @@ graph TD
     end
 
     subgraph "Hash Function"
-        H{"Hash(x)"}
+        H{"Hash("x")"}
     end
 
     subgraph "Finite Hash Space (Holes)"
-        V1("Hash(A)")
-        V2("Hash(B) = Hash(C)")
-        V3("Hash(D)")
+        V1("Hash("A")")
+        V2("Hash("B") = Hash("C")")
+        V3("Hash("D")")
     end
 
     A -->|"Hashing"| H
@@ -152,7 +152,7 @@ graph LR
         F1("Normal PDF Contract")
         F2("Malicious PDF Contract")
         H{"SHA-1 Hash Function"}
-        V("Same Hash Value\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
+        V("Same Hash Value\n("38762cf7f55934b34d179ae6a4c80cadccbb7f0a")")
     end
 
     F1 -->|"Input"| H

@@ -58,15 +58,15 @@ Se han propuesto varios algoritmos de PQC basados en problemas matemáticos dif�
 
 ```mermaid
 graph LR
-    PQC[Criptografía Post-Cuántica PQC] --> L[Criptografía basada en retículos Lattice-based]
-    PQC --> H[Criptografía basada en hash Hash-based]
-    PQC --> M[Criptografía multivariante Multivariate]
-    PQC --> C[Criptografía basada en códigos Code-based]
+    PQC["Criptografía Post-Cuántica PQC"] --> L["Criptografía basada en retículos Lattice-based"]
+    PQC --> H["Criptografía basada en hash Hash-based"]
+    PQC --> M["Criptografía multivariante Multivariate"]
+    PQC --> C["Criptografía basada en códigos Code-based"]
     
-    L --> L1(FIPS 203: ML-KEM)
-    L --> L2(FIPS 204: ML-DSA)
+    L --> L1("FIPS 203: ML-KEM")
+    L --> L2("FIPS 204: ML-DSA")
     
-    H --> H1(FIPS 205: SLH-DSA)
+    H --> H1("FIPS 205: SLH-DSA")
     
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```

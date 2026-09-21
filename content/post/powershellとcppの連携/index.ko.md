@@ -151,7 +151,7 @@ sequenceDiagram
     PS->>CLR: "ProcessSystemString 호출"
     note right of CLR: "System.String을 LPCWSTR로 마샬링"
     note right of CLR: "StringBuilder 참조 전달"
-    CLR->>CPP: "ProcessSystemString(LPCWSTR, LPWSTR, int)"
+    CLR->>CPP: "ProcessSystemString("LPCWSTR, LPWSTR, int")"
     
     CPP->>CPP: "네이티브 문자열 조작 실행"
     CPP->>CPP: "LPWSTR 버퍼에 결과 기록"

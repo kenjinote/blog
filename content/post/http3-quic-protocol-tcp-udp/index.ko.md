@@ -146,13 +146,13 @@ sequenceDiagram
     participant Server
     
     Note over Client, Server: "TCP/HTTP2의 경우 (패킷 손실 발생 시)"
-    Client->>Server: "[스트림1: 패킷1], [스트림2: 패킷2], [스트림1: 패킷3(손실)]"
+    Client->>Server: "[스트림1: 패킷1], [스트림2: 패킷2], [스트림1: 패킷3("손실")]"
     Note right of Server: "패킷1, 패킷2는 도착.<br/>하지만 패킷3이 오지 않아 전체가 정지."
     Client->>Server: "[스트림2: 패킷4]"
     Note right of Server: "패킷4는 도착했지만, 패킷3의 재전송을 기다리기 때문에<br/>애플리케이션으로 전달 불가 (HoL Blocking)"
     
     Note over Client, Server: "QUIC/HTTP3의 경우 (패킷 손실 발생 시)"
-    Client->>Server: "[스트림1: 패킷1], [스트림2: 패킷2], [스트림1: 패킷3(손실)]"
+    Client->>Server: "[스트림1: 패킷1], [스트림2: 패킷2], [스트림1: 패킷3("손실")]"
     Note right of Server: "스트림2의 패킷2는 즉시 앱으로."
     Client->>Server: "[스트림2: 패킷4]"
     Note right of Server: "스트림2의 패킷4도 즉시 앱으로.<br/>스트림1만 패킷3의 재전송을 대기. (HoL 해소)"

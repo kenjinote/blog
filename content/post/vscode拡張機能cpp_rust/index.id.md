@@ -320,7 +320,7 @@ sequenceDiagram
     CodeLLDB->>DebuggerCore: Daftarkan breakpoint ke tabel manajemen memori
     Developer->>VSCode: Tekan F5 (Mulai Debug)
     VSCode->>CodeLLDB: Permintaan launch
-    CodeLLDB->>OS: Luncurkan proses dengan ptrace(PTRACE_TRACEME)
+    CodeLLDB->>OS: Luncurkan proses dengan ptrace("PTRACE_TRACEME")
     OS-->>DebuggerCore: Pemetaan ruang memori aplikasi selesai
     DebuggerCore->>OS: Tulis instruksi INT3 (0xCC) di alamat yang ditentukan
     Note over OS: Program sedang berjalan...

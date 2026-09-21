@@ -220,8 +220,8 @@ Ainsi, en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), « m
 ```mermaid
 graph LR
     A["Variable v (Propriétaire)"] --> B["Tableau sur le tas [1, 2, 3]"]
-    C["Référence 'first' (&v[0])"] -.->|"Emprunt immuable"| B
-    A -->|"X "Emprunt mutable refusé !""| D["v.push(4)"]
+    C["Référence 'first' (&v["0"])"] -.->|"Emprunt immuable"| B
+    A -->|"X "Emprunt mutable refusé !""| D["v.push("4")"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px

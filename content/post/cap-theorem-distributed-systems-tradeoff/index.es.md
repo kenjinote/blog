@@ -135,8 +135,8 @@ sequenceDiagram
     participant Secondary as "Secondary Node (B)"
     
     Note over Primary, Secondary: "Operación normal (No Partition)"
-    Client->>Primary: Write(V=1)
-    Primary->>Secondary: Replicate(V=1)
+    Client->>Primary: Write("V=1")
+    Primary->>Secondary: Replicate("V=1")
     Secondary-->>Primary: Ack
     Primary-->>Client: Success (Write Confirm)
     Client->>Primary: Read()
@@ -148,7 +148,7 @@ sequenceDiagram
     Note over Primary: "El primario (A) detecta que no puede comunicarse<br/>con la mayoría de los otros nodos"
     Note over Primary: "El primario (A) se degrada voluntariamente<br/>a secundario (Step Down)"
     
-    Client->>Primary: Write(V=2)
+    Client->>Primary: Write("V=2")
     Primary-->>Client: Error (Not Primary) - "Disminución de disponibilidad"
     
     Client->>Secondary: Read()
@@ -184,7 +184,7 @@ sequenceDiagram
     
     Note over NodeA, NodeB: "¡Partición de red! (Incomunicados entre sí)"
     
-    Client->>NodeA: Write(V=1)
+    Client->>NodeA: Write("V=1")
     Note over NodeA: "Escritura en almacenamiento propio (local)"
     NodeA-xNodeB: Replicate (Fail)
     Note over NodeA: "Retiene los datos destinados a B localmente<br/>como Hinted Handoff"

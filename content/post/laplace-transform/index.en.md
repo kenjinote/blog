@@ -87,8 +87,8 @@ The procedure for solving differential equations using the Laplace transform is 
 ```mermaid
 flowchart TD
   A["Differential equation in time domain"] -->|"Apply Laplace transform"| B["Algebraic equation in s-domain"]
-  B -->|"Algebraic calculation (Rearrangement)"| C["Solution F(s) in s-domain"]
-  C -->|"Apply inverse Laplace transform"| D["Solution f(t) in time domain"]
+  B -->|"Algebraic calculation (Rearrangement)"| C["Solution F("s") in s-domain"]
+  C -->|"Apply inverse Laplace transform"| D["Solution f("t") in time domain"]
 ```
 
 1. **Apply Laplace transform**: Take the Laplace transform of both sides of the given differential equation. Substitute the initial conditions here.

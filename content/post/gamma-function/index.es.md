@@ -63,8 +63,8 @@ Repitiendo esta operación, la función Gamma se convierte en una función merom
 
 ```mermaid
 graph LR
-    P1["Re(z) > 0"] -->|"Definido por integral"| P2["Γ(z) converge"]
-    P2 -->|"Usando la recurrencia"| P3["Extendido a Re(z) ≤ 0"]
+    P1["Re("z") > 0"] -->|"Definido por integral"| P2["Γ(z) converge"]
+    P2 -->|"Usando la recurrencia"| P3["Extendido a Re("z") ≤ 0"]
     P3 -->|"z = 0, -1, -2, ..."| P4["Singularidades (Polos)"]
 ```
 

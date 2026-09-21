@@ -320,7 +320,7 @@ sequenceDiagram
     CodeLLDB->>DebuggerCore: 將中斷點註冊至記憶體管理表
     Developer->>VSCode: 按下 F5 鍵 (開始除錯)
     VSCode->>CodeLLDB: launch 請求
-    CodeLLDB->>OS: 附加 ptrace(PTRACE_TRACEME) 並啟動處理程序
+    CodeLLDB->>OS: 附加 ptrace("PTRACE_TRACEME") 並啟動處理程序
     OS-->>DebuggerCore: 應用程式的記憶體空間映射完成
     DebuggerCore->>OS: 寫入 INT3 指令(0xCC)至指定位址
     Note over OS: 程式執行中...

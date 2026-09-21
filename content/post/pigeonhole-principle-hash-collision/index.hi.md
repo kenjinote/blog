@@ -78,13 +78,13 @@ graph TD
     end
 
     subgraph "हैश फंक्शन"
-        H{"Hash(x)"}
+        H{"Hash("x")"}
     end
 
     subgraph "परिमित हैश स्थान (घोंसला)"
-        V1("Hash(A)")
-        V2("Hash(B) = Hash(C)")
-        V3("Hash(D)")
+        V1("Hash("A")")
+        V2("Hash("B") = Hash("C")")
+        V3("Hash("D")")
     end
 
     A -->|"हैश करना"| H
@@ -152,7 +152,7 @@ graph LR
         F1("सामान्य पीडीएफ अनुबंध")
         F2("दुर्भावनापूर्ण पीडीएफ अनुबंध")
         H{"SHA-1 हैश फ़ंक्शन"}
-        V("समान हैश मान\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
+        V("समान हैश मान\n("38762cf7f55934b34d179ae6a4c80cadccbb7f0a")")
     end
 
     F1 -->|"इनपुट"| H

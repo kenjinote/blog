@@ -320,7 +320,7 @@ sequenceDiagram
     CodeLLDB->>DebuggerCore: تسجيل نقطة التوقف في جدول إدارة الذاكرة
     Developer->>VSCode: اضغط على مفتاح F5 (بدء التصحيح)
     VSCode->>CodeLLDB: طلب launch
-    CodeLLDB->>OS: تشغيل العملية بمنح ptrace(PTRACE_TRACEME)
+    CodeLLDB->>OS: تشغيل العملية بمنح ptrace("PTRACE_TRACEME")
     OS-->>DebuggerCore: اكتمل تعيين مساحة ذاكرة التطبيق
     DebuggerCore->>OS: كتابة أمر INT3 (0xCC) في العنوان المحدد
     Note over OS: البرنامج قيد التنفيذ...

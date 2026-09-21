@@ -324,7 +324,7 @@ graph TD
     CA -->|"颁发证书 (签名)"| SubCA
     SubCA -->|"颁发证书 (签名)"| Server
     Server -->|"出示服务器证书"| Client
-    Client -.->|"事先持有Root CA的公钥\n(内置于浏览器或OS中)"| CA
+    Client -.->|"事先持有Root CA的公钥\n("内置于浏览器或OS中")"| CA
     Client -->|"验证证书链\n利用Root CA的公钥"| Server
 ```
 

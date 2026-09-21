@@ -40,7 +40,7 @@ Lorsque la matrice $A$ est appliquée, les vecteurs de base standard sont transf
 
 ```mermaid
 flowchart LR
-    A["Carré unitaire (Surface 1)"] -->|"Transformation linéaire par la matrice A"| B["Parallélogramme (Surface |det(A)|)"]
+    A["Carré unitaire (Surface 1)"] -->|"Transformation linéaire par la matrice A"| B["Parallélogramme (Surface |det("A")|)"]
 ```
 
 En d'autres termes, la valeur absolue du déterminant signifie le "facteur d'échelle de surface" qui indique **combien de fois** chaque figure dans l'espace a été étirée (ou rétrécie) par cette transformation linéaire. Par exemple, si le déterminant d'une matrice est de $3$, la surface de chaque figure dessinée sur le plan d'origine deviendra exactement trois fois plus grande après la transformation.
@@ -80,7 +80,7 @@ En 2D, cela correspond à une opération comme "retourner" une figure dessinée 
 flowchart TD
     Original["Espace d'origine (Système droitier)"]
     Reflected["Espace transformé (Système gaucher)"]
-    Original -->|"Transformation avec det(A) < 0"| Reflected
+    Original -->|"Transformation avec det("A") < 0"| Reflected
     Original -->|"Implique de retourner l'espace"| Reflected
 ```
 
@@ -102,7 +102,7 @@ En 2D, cela signifie que les deux vecteurs de base transformés se chevauchent s
 
 ```mermaid
 flowchart LR
-    Space["Plan 2D"] -->|"Transformation avec det(A) = 0"| Line["Compressé en une ligne 1D"]
+    Space["Plan 2D"] -->|"Transformation avec det("A") = 0"| Line["Compressé en une ligne 1D"]
 ```
 
 Une matrice dont le déterminant est de $0$ a une propriété algébrique très importante : elle **n'a pas de matrice inverse** (c'est une matrice singulière). Géométriquement, la raison est évidente. Une fois qu'un espace s'est effondré dans une dimension inférieure, il est impossible de compléter les informations perdues et de restaurer l'espace d'origine de dimension supérieure (c'est-à-dire d'effectuer une transformation inverse).

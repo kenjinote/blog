@@ -128,7 +128,7 @@ $$ \hat{\mathbf{x}} = (A^T A)^{-1} A^T \mathbf{b} $$
 ```mermaid
 flowchart LR
     b["向量 b"] -->|"正交投影"| p["投影向量 p = A x_hat"]
-    p --> C["行空間 C(A)"]
+    p --> C["行空間 C("A")"]
     b -->|"誤差向量 e"| p
     e["e = b - A x_hat"] -.->|"正交"| C
 ```

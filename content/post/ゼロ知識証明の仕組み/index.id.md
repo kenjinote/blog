@@ -137,10 +137,10 @@ Protokol FRI adalah teknologi untuk memverifikasi "apakah suatu fungsi cukup dek
 graph TD
     Root["Akar Merkle (Komitmen)"] --> Node0["Node 0"]
     Root --> Node1["Node 1"]
-    Node0 --> Leaf0["P(x_0)"]
-    Node0 --> Leaf1["P(x_1)"]
-    Node1 --> Leaf2["P(x_2)"]
-    Node1 --> Leaf3["P(x_3)"]
+    Node0 --> Leaf0["P("x_0")"]
+    Node0 --> Leaf1["P("x_1")"]
+    Node1 --> Leaf2["P("x_2")"]
+    Node1 --> Leaf3["P("x_3")"]
 ```
 
 Pemverifikasi akan meminta pembukaan beberapa titik secara acak, lalu menggunakan bukti Merkle (Merkle Proof) untuk mengonfirmasi bahwa titik-titik tersebut termasuk dalam komitmen. Dengan mengulang proses ini secara rekursif, dapat dijamin dengan probabilitas yang sangat besar bahwa derajat polinomial aslinya memang rendah.

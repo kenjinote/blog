@@ -40,15 +40,15 @@ Berbagai algoritma PQC telah diusulkan berdasarkan masalah matematika yang sulit
 
 ```mermaid
 graph LR
-    PQC[Kriptografi Pasca-Kuantum PQC] --> L[Kriptografi Berbasis Kisi Lattice-based]
-    PQC --> H[Kriptografi Berbasis Hash Hash-based]
-    PQC --> M[Kriptografi Polinomial Multivariabel Multivariate]
-    PQC --> C[Kriptografi Berbasis Kode Code-based]
+    PQC["Kriptografi Pasca-Kuantum PQC"] --> L["Kriptografi Berbasis Kisi Lattice-based"]
+    PQC --> H["Kriptografi Berbasis Hash Hash-based"]
+    PQC --> M["Kriptografi Polinomial Multivariabel Multivariate"]
+    PQC --> C["Kriptografi Berbasis Kode Code-based"]
     
-    L --> L1(FIPS 203: ML-KEM)
-    L --> L2(FIPS 204: ML-DSA)
+    L --> L1("FIPS 203: ML-KEM")
+    L --> L2("FIPS 204: ML-DSA")
     
-    H --> H1(FIPS 205: SLH-DSA)
+    H --> H1("FIPS 205: SLH-DSA")
     
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```

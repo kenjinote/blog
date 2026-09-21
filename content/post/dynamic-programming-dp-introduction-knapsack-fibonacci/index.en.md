@@ -63,20 +63,20 @@ This implementation is intuitive, but there is a major problem. That is, **the c
 
 ```mermaid
 graph TD
-    A["F(5)"] --> B["F(4)"]
-    A --> C["F(3)"]
-    B --> D["F(3)"]
-    B --> E["F(2)"]
-    C --> F["F(2)"]
-    C --> G["F(1)"]
-    D --> H["F(2)"]
-    D --> I["F(1)"]
-    E --> J["F(1)"]
-    E --> K["F(0)"]
-    F --> L["F(1)"]
-    F --> M["F(0)"]
-    H --> N["F(1)"]
-    H --> O["F(0)"]
+    A["F("5")"] --> B["F("4")"]
+    A --> C["F("3")"]
+    B --> D["F("3")"]
+    B --> E["F("2")"]
+    C --> F["F("2")"]
+    C --> G["F("1")"]
+    D --> H["F("2")"]
+    D --> I["F("1")"]
+    E --> J["F("1")"]
+    E --> K["F("0")"]
+    F --> L["F("1")"]
+    F --> M["F("0")"]
+    H --> N["F("1")"]
+    H --> O["F("0")"]
 ```
 
 As you can see, $F(3)$ and $F(2)$ are calculated over and over again. The computational complexity is $O(2^n)$, and as $n$ becomes large, the computation will not finish in a practical amount of time.

@@ -96,10 +96,10 @@ sequenceDiagram
 
     Note over N1, N2: "Anfangszustand: x = 0"
     Note over N1, N2: "Netzwerkpartition tritt auf ⚡"
-    C1->>N1: "Write(x = 1)"
-    N1-->>C1: "Ack(Success)"
+    C1->>N1: "Write("x = 1")"
+    N1-->>C1: "Ack("Success")"
     Note over N1, N2: "N1 versucht, mit N2 zu synchronisieren, aber<br>aufgrund der Partition schlägt dies fehl"
-    C2->>N2: "Read(x)"
+    C2->>N2: "Read("x")"
     alt "Im Falle eines CP-Systems (Opferung der Verfügbarkeit)"
         N2-->>C2: "Error (oder Timeout)"
     else "Im Falle eines AP-Systems (Opferung der Konsistenz)"

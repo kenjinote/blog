@@ -91,18 +91,18 @@ Implementasi ini intuitif, tetapi menyebabkan ledakan kompleksitas eksponensial 
 
 ```mermaid
 graph TD
-    A["fib(5)"] --> B["fib(4)"]
-    A --> C["fib(3)"]
-    B --> D["fib(3)"]
-    B --> E["fib(2)"]
-    C --> F["fib(2)"]
-    C --> G["fib(1)"]
-    D --> H["fib(2)"]
-    D --> I["fib(1)"]
-    E --> J["fib(1)"]
-    E --> K["fib(0)"]
-    F --> L["fib(1)"]
-    F --> M["fib(0)"]
+    A["fib("5")"] --> B["fib("4")"]
+    A --> C["fib("3")"]
+    B --> D["fib("3")"]
+    B --> E["fib("2")"]
+    C --> F["fib("2")"]
+    C --> G["fib("1")"]
+    D --> H["fib("2")"]
+    D --> I["fib("1")"]
+    E --> J["fib("1")"]
+    E --> K["fib("0")"]
+    F --> L["fib("1")"]
+    F --> M["fib("0")"]
 ```
 
 Jika melihat diagram tersebut, terlihat bahwa `"fib(3)"` dan `"fib(2)"` dievaluasi beberapa kali. Inilah yang disebut "tumpang tindih sub-masalah".
@@ -244,8 +244,8 @@ Diagram Mermaid berikut memvisualisasikan konsep transisi state.
 
 ```mermaid
 graph TD
-    A["dp[i-1][w] (Lewati barang i)"] --> C["Max: dp[i][w]"]
-    B["dp[i-1][w - weight[i]] + value[i] (Ambil barang i)"] --> C
+    A["dp["i-1"][w] (Lewati barang i)"] --> C["Max: dp["i"][w]"]
+    B["dp["i-1"][w - weight["i"]] + value["i"] (Ambil barang i)"] --> C
 ```
 
 ### 4-3. Implementasi Bottom-up (Array 2 Dimensi)
@@ -357,12 +357,12 @@ Jika transisi ini direpresentasikan menggunakan Mermaid, maka akan terlihat sepe
 
 ```mermaid
 graph TD
-    subgraph "S[i-1] == T[j-1]"
-        A1["dp[i-1][j-1]"] --> B1["+1 --> dp[i][j]"]
+    subgraph "S["i-1"] == T["j-1"]"
+        A1["dp["i-1"][j-1]"] --> B1["+1 --> dp["i"][j]"]
     end
-    subgraph "S[i-1] != T[j-1]"
-        A2["dp[i-1][j]"] --> C2["Max --> dp[i][j]"]
-        B2["dp[i][j-1]"] --> C2
+    subgraph "S["i-1"] != T["j-1"]"
+        A2["dp["i-1"][j]"] --> C2["Max --> dp["i"][j]"]
+        B2["dp["i"][j-1]"] --> C2
     end
 ```
 

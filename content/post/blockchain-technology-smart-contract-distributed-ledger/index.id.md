@@ -189,12 +189,12 @@ sequenceDiagram
 
     A->>V: "withdrawBalance()"
     activate V
-    V->>A: "Call.value(balance)()" ("Pengiriman")
+    V->>A: "Call.value("balance")()" ("Pengiriman")
     activate A
     Note over A: "Fungsi Fallback dipicu"
     A->>V: "withdrawBalance()" ("Pemanggilan rekursif")
     activate V
-    V->>A: "Call.value(balance)()" ("Pengiriman kedua")
+    V->>A: "Call.value("balance")()" ("Pengiriman kedua")
     deactivate V
     deactivate A
     Note over V: "Dikirim beberapa kali sebelum saldo diperbarui"

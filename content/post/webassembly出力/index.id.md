@@ -223,13 +223,13 @@ sequenceDiagram
   participant Wasm as "Runtime WebAssembly"
   participant Mem as "Memori Linear (ArrayBuffer)"
 
-  JS->>Wasm: "Panggil calculate(10, 20)"
+  JS->>Wasm: "Panggil calculate("10, 20")"
   note over JS,Wasm: "Tipe Primitif (int, float) diteruskan langsung via Registers/Stack"
   Wasm-->>JS: "Kembalikan 30"
 
   note over JS, Mem: "Untuk data kompleks (Strings, Arrays)"
   JS->>Mem: "Tulis String ke Memori"
-  JS->>Wasm: "Panggil process_string(pointer, length)"
+  JS->>Wasm: "Panggil process_string("pointer, length")"
   Wasm->>Mem: "Baca dari pointer"
   Wasm->>Mem: "Tulis hasil ke pointer baru"
   Wasm-->>JS: "Kembalikan pointer & length baru"

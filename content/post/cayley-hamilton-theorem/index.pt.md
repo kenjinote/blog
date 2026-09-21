@@ -69,7 +69,7 @@ Um ponto importante a notar aqui é que o termo constante $c_0$ torna-se $c_0 I$
 
 ```mermaid
 graph TD
-    A["Matriz quadrada A"] --> B["Calcular polinômio característico p(λ)"]
+    A["Matriz quadrada A"] --> B["Calcular polinômio característico p("λ")"]
     B --> C["Substituir λ = A"]
     C -->|"Aplicar teorema"| D["Obtém-se matriz nula O"]
 ```

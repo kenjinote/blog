@@ -35,10 +35,10 @@ $$ D(E(m_1) \diamond E(m_2)) = m_1 \circ m_2 $$
 
 ```mermaid
 graph TD
-    A["客戶端（持有私鑰）"] -->|"1. 將明文 x 加密: E(x)"| B["雲端伺服器（僅有加密資料）"]
-    B -->|"2. 在密文狀態下套用函數 f: E(f(x))"| B
-    B -->|"3. 計算結果的密文 E(y)"| A
-    A -->|"4. 使用私鑰解密: y = f(x)"| A
+    A["客戶端（持有私鑰）"] -->|"1. 將明文 x 加密: E("x")"| B["雲端伺服器（僅有加密資料）"]
+    B -->|"2. 在密文狀態下套用函數 f: E("f(x"))"| B
+    B -->|"3. 計算結果的密文 E("y")"| A
+    A -->|"4. 使用私鑰解密: y = f("x")"| A
     
     style A fill:#d4edda,stroke:#28a745
     style B fill:#f8d7da,stroke:#dc3545
@@ -136,7 +136,7 @@ Craig Gentry 天才般的貢獻，就是發明了被稱為 **「自舉（Bootstr
 ```mermaid
 graph LR
     A["高雜訊密文 C_noisy"] --> B["同態解密電路 (Eval_Dec)"]
-    C["加密過的私鑰 E(sk)"] --> B
+    C["加密過的私鑰 E("sk")"] --> B
     B --> D["低雜訊密文 C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

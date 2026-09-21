@@ -97,9 +97,9 @@ This line with a real part of $1/2$ is called the "Critical line".
 graph TD
     A["Riemann Zeta function ζ(s)"] --> B["Extension to the complex plane by analytic continuation"]
     B --> C["Trivial zeros (s = -2, -4, -6 ...)"]
-    B --> D["Non-trivial zeros (0 <= Re(s) <= 1)"]
+    B --> D["Non-trivial zeros (0 <= Re("s") <= 1)"]
     D --> E["Riemann Hypothesis"]
-    E --> F["All non-trivial zeros lie on Re(s) = 1/2"]
+    E --> F["All non-trivial zeros lie on Re("s") = 1/2"]
     F --> G["To the proof of the limit of the error term in the prime distribution"]
 ```
 

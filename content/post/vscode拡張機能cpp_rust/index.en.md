@@ -320,7 +320,7 @@ sequenceDiagram
     CodeLLDB->>DebuggerCore: Register breakpoint in memory management table
     Developer->>VSCode: Press F5 key (Start debugging)
     VSCode->>CodeLLDB: launch request
-    CodeLLDB->>OS: Launch process with ptrace(PTRACE_TRACEME)
+    CodeLLDB->>OS: Launch process with ptrace("PTRACE_TRACEME")
     OS-->>DebuggerCore: Application memory space mapping complete
     DebuggerCore->>OS: Write INT3 instruction (0xCC) to specified address
     Note over OS: Program executing...

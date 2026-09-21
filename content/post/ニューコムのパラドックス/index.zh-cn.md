@@ -48,8 +48,8 @@ graph TD
     
     You["你的选择<br>（今天）"]
     
-    You -->|"选择1: 拿走两个"| Result1["箱子A(10万) + 箱子B里面的东西"]
-    You -->|"选择2: 只拿走箱子B"| Result2["箱子A(0万) + 箱子B里面的东西"]
+    You -->|"选择1: 拿走两个"| Result1["箱子A("10万") + 箱子B里面的东西"]
+    You -->|"选择2: 只拿走箱子B"| Result2["箱子A("0万") + 箱子B里面的东西"]
     
     BoxB_Empty -.-> Result1
     BoxB_100M -.-> Result2

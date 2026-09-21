@@ -46,7 +46,7 @@ sequenceDiagram
     activate Action
     Action->>Action: "लिंट और स्थिर विश्लेषण (Clang-Tidy)"
     
-    rect rgb(200, 220, 240)
+    rect rgb("200, 220, 240")
     note right of Action: "क्रॉस-प्लेटफॉर्म मैट्रिक्स बिल्ड"
     Action->>Action: "Ubuntu (GCC/Clang) पर बिल्ड करें"
     Action->>Action: "Windows (MSVC) पर बिल्ड करें"

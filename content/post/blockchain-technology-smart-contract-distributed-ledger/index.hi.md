@@ -189,12 +189,12 @@ sequenceDiagram
 
     A->>V: "withdrawBalance()"
     activate V
-    V->>A: "Call.value(balance)() (स्थानांतरण)"
+    V->>A: "Call.value("balance")() (स्थानांतरण)"
     activate A
     Note over A: "फ़ॉलबैक फ़ंक्शन ट्रिगर होता है"
     A->>V: "withdrawBalance() (पुनरावर्ती कॉल)"
     activate V
-    V->>A: "Call.value(balance)() (दूसरा स्थानांतरण)"
+    V->>A: "Call.value("balance")() (दूसरा स्थानांतरण)"
     deactivate V
     deactivate A
     Note over V: "शेष राशि अपडेट होने से पहले कई बार स्थानांतरण"

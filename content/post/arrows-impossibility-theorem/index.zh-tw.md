@@ -95,8 +95,8 @@ graph TD
 
 ```mermaid
 graph LR
-    A((A)) -->|"在多數決中勝出"| B((B))
-    B -->|"在多數決中勝出"| C((C))
+    A(("A")) -->|"在多數決中勝出"| B(("B"))
+    B -->|"在多數決中勝出"| C(("C"))
     C -->|"在多數決中勝出"| A
     
     style A fill:#ff9999
@@ -164,7 +164,7 @@ graph LR
 ```mermaid
 graph TD
     subgraph "邏輯結果"
-        A_U["條件U (非限制性)"] --> AND1((AND))
+        A_U["條件U (非限制性)"] --> AND1(("AND"))
         A_P["條件P (一致性)"] --> AND1
         A_I["條件I (IIA)"] --> AND1
         

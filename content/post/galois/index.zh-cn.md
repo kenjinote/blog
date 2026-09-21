@@ -85,7 +85,7 @@ flowchart TD
     subgraph "伽罗瓦群（Groups）"
         I["平凡群 {e}"]
         H["子群 H"]
-        G["伽罗瓦群 G=Gal(L/K)"]
+        G["伽罗瓦群 G=Gal("L/K")"]
         G -->|"包含"| H
         H -->|"包含"| I
     end

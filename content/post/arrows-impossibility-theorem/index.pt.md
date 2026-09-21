@@ -95,8 +95,8 @@ A sociedade como um todo fica presa num ciclo de **A > B > C > A ...**, tornando
 
 ```mermaid
 graph LR
-    A((A)) -->|"Vence por maioria"| B((B))
-    B -->|"Vence por maioria"| C((C))
+    A(("A")) -->|"Vence por maioria"| B(("B"))
+    B -->|"Vence por maioria"| C(("C"))
     C -->|"Vence por maioria"| A
     
     style A fill:#ff9999
@@ -164,7 +164,7 @@ Ou seja, não existe $F$ que satisfaça (U), (P), (I) e (D) simultaneamente.
 ```mermaid
 graph TD
     subgraph "Consequência Lógica"
-        A_U["Condição U (Domínio Irrestrito)"] --> AND1((AND))
+        A_U["Condição U (Domínio Irrestrito)"] --> AND1(("AND"))
         A_P["Condição P (Unanimidade)"] --> AND1
         A_I["Condição I (IIA)"] --> AND1
         

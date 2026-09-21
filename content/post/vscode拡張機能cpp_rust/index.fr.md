@@ -320,7 +320,7 @@ sequenceDiagram
     CodeLLDB->>DebuggerCore: Enregistre le point d'arrêt dans la table de gestion de la mémoire
     Developer->>VSCode: Appuie sur F5 (Début du débogage)
     VSCode->>CodeLLDB: Requête launch
-    CodeLLDB->>OS: Démarre le processus avec ptrace(PTRACE_TRACEME)
+    CodeLLDB->>OS: Démarre le processus avec ptrace("PTRACE_TRACEME")
     OS-->>DebuggerCore: Cartographie de l'espace mémoire de l'application terminée
     DebuggerCore->>OS: Écrit l'instruction INT3 (0xCC) à l'adresse spécifiée
     Note over OS: Programme en cours d'exécution...

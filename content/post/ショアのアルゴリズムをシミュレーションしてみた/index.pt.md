@@ -39,8 +39,8 @@ Isso significa que, se o número de bits for dobrado, enquanto o tempo de comput
 ```mermaid
 graph TD
     A["Aumento do tamanho da entrada (número de bits) N"] --> B{"Escolha do algoritmo"}
-    B -->|"Clássico: Peneira Geral dos Corpos de Números"| C["Aumento subexponencial O(exp(...))"]
-    B -->|"Quântico: Algoritmo de Shor"| D["Tempo polinomial O((log N)^3)"]
+    B -->|"Clássico: Peneira Geral dos Corpos de Números"| C["Aumento subexponencial O("exp(..."))"]
+    B -->|"Quântico: Algoritmo de Shor"| D["Tempo polinomial O("(log N")^3)"]
     C --> E["Milhares a bilhões de anos (Indecifrável)"]
     D --> F["Minutos a horas (Decifrável em tempo real)"]
 ```
@@ -56,12 +56,12 @@ O fluxo geral do algoritmo é o seguinte:
 ```mermaid
 graph TD
     A["Entrada: Número composto N a ser fatorado"] --> B["Escolher número aleatório a tal que a < N"]
-    B --> C{"gcd(a, N) > 1 ?"}
-    C -- Yes --> D["Imprimir fator trivial gcd(a, N) e encerrar"]
-    C -- No --> E["Encontrar o período r de f(x) = a^x mod N com algoritmo quântico"]
+    B --> C{"gcd("a, N") > 1 ?"}
+    C -- Yes --> D["Imprimir fator trivial gcd("a, N") e encerrar"]
+    C -- No --> E["Encontrar o período r de f("x") = a^x mod N com algoritmo quântico"]
     E --> F{"r é par E a^(r/2) ≢ -1 mod N ?"}
     F -- No --> B
-    F -- Yes --> G["Calcular os fatores p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
+    F -- Yes --> G["Calcular os fatores p = gcd("a^(r/2") - 1, N), q = gcd("a^(r/2") + 1, N)"]
     G --> H["Saída: p, q"]
 ```
 

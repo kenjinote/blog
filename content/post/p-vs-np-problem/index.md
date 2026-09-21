@@ -181,10 +181,10 @@ NP困難であり、かつ自身もクラスNPに属する問題のクラスで�
 ```mermaid
 graph TD
     subgraph "計算複雑性クラスの包含関係 (P!=NPの仮定)"
-        NPH[NP困難 (NP-Hard)]
-        NPC[NP完全 (NP-Complete)]
-        NP_Class[NP]
-        P_Class[P]
+        NPH["NP困難 (NP-Hard)"]
+        NPC["NP完全 (NP-Complete)"]
+        NP_Class["NP"]
+        P_Class["P"]
         
         NPH --- NPC
         NP_Class --- NPC
@@ -307,11 +307,11 @@ print(f"近似解: 距離 {dist_greedy:.2f}, ルート {path_greedy}")
 ```mermaid
 graph TD
     subgraph 量子コンピュータと計算量クラスの関係予想
-        NPH[NP困難]
-        NPC[NP完全]
-        BQP[BQP: 量子多項式時間]
-        NP_Class[NP]
-        P_Class[P]
+        NPH["NP困難"]
+        NPC["NP完全"]
+        BQP["BQP: 量子多項式時間"]
+        NP_Class["NP"]
+        P_Class["P"]
         
         NPH --- NPC
         NP_Class --- NPC

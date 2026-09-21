@@ -87,15 +87,15 @@ sequenceDiagram
     participant PeerB as "العميل ب"
 
     PeerA->>PeerA: "createOffer()"
-    PeerA->>PeerA: "setLocalDescription(offer)"
+    PeerA->>PeerA: "setLocalDescription("offer")"
     PeerA->>Sig: "إرسال العرض (SDP)"
     Sig->>PeerB: "توجيه العرض"
-    PeerB->>PeerB: "setRemoteDescription(offer)"
+    PeerB->>PeerB: "setRemoteDescription("offer")"
     PeerB->>PeerB: "createAnswer()"
-    PeerB->>PeerB: "setLocalDescription(answer)"
+    PeerB->>PeerB: "setLocalDescription("answer")"
     PeerB->>Sig: "إرسال الإجابة (SDP)"
     Sig->>PeerA: "توجيه الإجابة"
-    PeerA->>PeerA: "setRemoteDescription(answer)"
+    PeerA->>PeerA: "setRemoteDescription("answer")"
 ```
 
 ### 2.3 مثال تطبيقي لخادم الإشارات (Node.js + WebSocket)

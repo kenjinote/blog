@@ -58,10 +58,10 @@ Hierarki diklasifikasikan sebagai berikut (dari Tipe-0 hingga Tipe-3). Semakin b
 
 ```mermaid
 flowchart TD
-    Type0["Tipe-0: Bahasa Rekursif Dapat Dienumerasi\n(Mesin Turing)"]
-    Type1["Tipe-1: Bahasa Konteks-Sensitif\n(Automaton Terbatas Linier)"]
-    Type2["Tipe-2: Bahasa Bebas Konteks\n(Pushdown Automaton)"]
-    Type3["Tipe-3: Bahasa Reguler\n(Automaton Berhingga)"]
+    Type0["Tipe-0: Bahasa Rekursif Dapat Dienumerasi\n("Mesin Turing")"]
+    Type1["Tipe-1: Bahasa Konteks-Sensitif\n("Automaton Terbatas Linier")"]
+    Type2["Tipe-2: Bahasa Bebas Konteks\n("Pushdown Automaton")"]
+    Type3["Tipe-3: Bahasa Reguler\n("Automaton Berhingga")"]
 
     Type0 --- Type1
     Type1 --- Type2
@@ -263,7 +263,7 @@ flowchart LR
         T1["..."] --- T2["0"] --- T3["1"] --- T4["1"] --- T5["0"] --- T6["..."]
     end
     Head(("Head")) --> T3
-    State["Keadaan: q_read\n(Kontrol Berhingga)"] --- Head
+    State["Keadaan: q_read\n("Kontrol Berhingga")"] --- Head
 ```
 
 ### Masalah Penghentian ([Halting Problem](https://kenji.blog/id/p/turing-machine-computability/))

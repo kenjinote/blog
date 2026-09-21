@@ -271,7 +271,7 @@ int main() {
 sequenceDiagram
     participant Main as "主執行緒"
     participant Async as "std::async 工作執行緒"
-    Main->>Async: "std::async(std::launch::async, ...)"
+    Main->>Async: "std::async("std::launch::async, ...")"
     activate Async
     Note over Main: "執行其他工作..."
     Main->>Async: "future.get() (阻塞直到準備就緒)"

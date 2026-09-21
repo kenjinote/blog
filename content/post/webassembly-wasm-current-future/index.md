@@ -58,11 +58,11 @@ Cや[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution
 
 ```mermaid
 flowchart TD
-    A[C/C++/Rust Source Code] -->|フロントエンドコンパイラ| B(LLVM IR : 中間表現)
-    B -->|LLVMの最適化パス| C(最適化された LLVM IR)
-    C -->|LLVM WebAssembly バックエンド| D[Wasm バイナリ .wasm]
-    D -->|ネットワーク経由で配信| E(ブラウザの Wasm エンジン)
-    E -->|JIT/AOT コンパイル| F[ネイティブ機械語による実行]
+    A["C/C++/Rust Source Code"] -->|フロントエンドコンパイラ| B("LLVM IR : 中間表現")
+    B -->|LLVMの最適化パス| C("最適化された LLVM IR")
+    C -->|LLVM WebAssembly バックエンド| D["Wasm バイナリ .wasm"]
+    D -->|ネットワーク経由で配信| E("ブラウザの Wasm エンジン")
+    E -->|JIT/AOT コンパイル| F["ネイティブ機械語による実行"]
 ```
 
 このように、開発者が書いたコードは中間表現（IR）を経て最適化され、最終的に `.wasm` という拡張子を持つコンパクトなバイナリファイルになります。
@@ -242,8 +242,8 @@ WASIは、WebAssemblyプログラムがOSのリソース（ファイルシステ
 
 ```mermaid
 flowchart TD
-    A[C/Rust App] -->|WASI API 呼び出し| B[Wasm ランタイム e.g. Wasmtime, Wasmer]
-    B -->|安全性の検証・権限チェック| C[ホスト OS e.g. Linux, Windows]
+    A["C/Rust App"] -->|WASI API 呼び出し| B["Wasm ランタイム e.g. Wasmtime, Wasmer"]
+    B -->|安全性の検証・権限チェック| C["ホスト OS e.g. Linux, Windows"]
 ```
 
 ## 7.2 [Docker](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)との代替・共存

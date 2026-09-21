@@ -189,12 +189,12 @@ sequenceDiagram
 
     A->>V: "withdrawBalance()"
     activate V
-    V->>A: "Call.value(balance)() (匯款)"
+    V->>A: "Call.value("balance")() (匯款)"
     activate A
     Note over A: "Fallback函數被觸發"
     A->>V: "withdrawBalance() (遞迴呼叫)"
     activate V
-    V->>A: "Call.value(balance)() (第2次匯款)"
+    V->>A: "Call.value("balance")() (第2次匯款)"
     deactivate V
     deactivate A
     Note over V: "在餘額更新前被多次匯款"

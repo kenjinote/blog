@@ -220,8 +220,8 @@ In this way, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) pr
 ```mermaid
 graph LR
     A["Variable v (Owner)"] --> B["Heap Array [1, 2, 3]"]
-    C["Reference 'first' (&v[0])"] -.->|"Immutable Borrow"| B
-    A -->|"X "Mutable Borrow Denied!""| D["v.push(4)"]
+    C["Reference 'first' (&v["0"])"] -.->|"Immutable Borrow"| B
+    A -->|"X "Mutable Borrow Denied!""| D["v.push("4")"]
     
     style C stroke:#00FF00,stroke-width:2px
     style D stroke:#FF0000,stroke-width:2px

@@ -38,11 +38,11 @@ HTTP/2は、この問題を **ストリーム** による **多重化 (Multiplex
 
 ```mermaid
 architecture-beta
-    group http2(HTTP/2 Architecture)
-    service tcp(TCP Connection) in http2
-    service s1(Stream 1: HTML) in http2
-    service s2(Stream 2: CSS) in http2
-    service s3(Stream 3: JS) in http2
+    group http2("HTTP/2 Architecture")
+    service tcp("TCP Connection") in http2
+    service s1("Stream 1: HTML") in http2
+    service s2("Stream 2: CSS") in http2
+    service s3("Stream 3: JS") in http2
     
     s1 --> tcp
     s2 --> tcp
@@ -103,17 +103,17 @@ QUICを導入したHTTP/3のプロトコルスタックは以下のようにな�
 ```mermaid
 flowchart TD
     subgraph "HTTP/3 Stack"
-        H3[HTTP/3 (HTTP Semantics, QPACK)]
-        QUIC[QUIC (Multiplexing, Congestion Control, TLS 1.3)]
-        UDP[UDP]
-        IP[IP]
+        H3["HTTP/3 (HTTP Semantics, QPACK)"]
+        QUIC["QUIC (Multiplexing, Congestion Control, TLS 1.3)"]
+        UDP["UDP"]
+        IP["IP"]
     end
     
     subgraph "HTTP/2 Stack"
-        H2[HTTP/2 (HPACK)]
-        TLS[TLS 1.2 / 1.3]
-        TCP[TCP]
-        IP2[IP]
+        H2["HTTP/2 (HPACK)"]
+        TLS["TLS 1.2 / 1.3"]
+        TCP["TCP"]
+        IP2["IP"]
     end
     
     H3 --> QUIC
@@ -145,13 +145,13 @@ sequenceDiagram
     participant Server
     
     Note over Client, Server: TCP/HTTP2の場合 (パケットロス発生時)
-    Client->>Server: [Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3(Loss)]
+    Client->>Server: [Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3("Loss")]
     Note right of Server: Pkt1, Pkt2は到着。<br/>しかしPkt3が来ないため全体が停止。
     Client->>Server: [Stream2: Pkt4]
     Note right of Server: Pkt4は到着したが、Pkt3の再送を待つため<br/>アプリケーションへは渡せない (HoL Blocking)
     
     Note over Client, Server: QUIC/HTTP3の場合 (パケットロス発生時)
-    Client->>Server: [Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3(Loss)]
+    Client->>Server: [Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3("Loss")]
     Note right of Server: Stream2のPkt2は即座にアプリへ。
     Client->>Server: [Stream2: Pkt4]
     Note right of Server: Stream2のPkt4も即座にアプリへ。<br/>Stream1のみPkt3の再送を待つ。(HoL解消)

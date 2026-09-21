@@ -162,7 +162,7 @@ Por lo tanto, los matemáticos utilizan la técnica de la **continuación analí
 
 ```mermaid
 graph TD
-    A["Función zeta Re(s) > 1"] -->|"Continuación analítica"| B["Extensión a todo el plano complejo"]
+    A["Función zeta Re("s") > 1"] -->|"Continuación analítica"| B["Extensión a todo el plano complejo"]
     B --> C["Sustituir s = -1"]
     C --> D["ζ(-1) = -1/12"]
 ```

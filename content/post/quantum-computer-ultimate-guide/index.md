@@ -306,7 +306,7 @@ graph TD
     Center --- X_neg["|-⟩ = (|0⟩-|1⟩)/√2 (X軸負: θ=π/2, φ=π)"]
     Center --- Y_pos["|i⟩ = (|0⟩+i|1⟩)/√2 (Y軸正: θ=π/2, φ=π/2)"]
     Center --- Y_neg["|-i⟩ = (|0⟩-i|1⟩)/√2 (Y軸負: θ=π/2, φ=3π/2)"]
-    State["|ψ⟩ = cos(θ/2)|0⟩ + e^(iφ)sin(θ/2)|1⟩"] -.->|"ブロッホベクトル r = (sinθcosφ, sinθsinφ, cosθ)"| Center
+    State["|ψ⟩ = cos("θ/2")|0⟩ + e^(iφ)sin("θ/2")|1⟩"] -.->|"ブロッホベクトル r = (sinθcosφ, sinθsinφ, cosθ)"| Center
     end
     style Z_pos fill:#f9f,stroke:#333,stroke-width:2px
     style Z_neg fill:#f9f,stroke:#333,stroke-width:2px
@@ -582,13 +582,13 @@ graph TD
     classDef operation fill:#e1f5fe,stroke:#0288d1,stroke-width:2px;
     classDef measure fill:#fce4ec,stroke:#c2185b,stroke-width:2px;
     
-    Init["初期状態 $| \psi(t_0) \rangle$"]:::state --> Evo["ユニタリ時間発展 $U(t, t_0) = \exp(-i H t / \hbar)$"]:::operation
-    Evo --> Evolved["発展後の状態 $| \psi(t) \rangle = U | \psi(t_0) \rangle$"]:::state
+    Init["初期状態 $| \psi("t_0") \rangle$"]:::state --> Evo["ユニタリ時間発展 $U("t, t_0") = \exp("-i H t / \hbar")$"]:::operation
+    Evo --> Evolved["発展後の状態 $| \psi("t") \rangle = U | \psi("t_0") \rangle$"]:::state
     
     Evolved --> Obs["物理量 $A$ の観測 (射影演算子 $P_k$)"]:::measure
     
-    Obs -->|"確率 $p(a_1) = \langle \psi"| P_1 | \psi \rangle$ | State1["収縮状態 1: $| a_1 \rangle$"]:::state
-    Obs -->|"確率 $p(a_2) = \langle \psi"| P_2 | \psi \rangle$ | State2["収縮状態 2: $| a_2 \rangle$"]:::state
+    Obs -->|"確率 $p("a_1") = \langle \psi"| P_1 | \psi \rangle$ | State1["収縮状態 1: $| a_1 \rangle$"]:::state
+    Obs -->|"確率 $p("a_2") = \langle \psi"| P_2 | \psi \rangle$ | State2["収縮状態 2: $| a_2 \rangle$"]:::state
     Obs -->|"..."| StateN["収縮状態 n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["デコヒーレンス（位相干渉の喪失）と混合状態化"]:::measure
@@ -844,7 +844,7 @@ graph LR
     direction LR
     Q0["|0⟩"] --> G1["Hゲート"]
     G1 --> G2["Sゲート"]
-    G2 --> G3["Rx(π/2)"]
+    G2 --> G3["Rx("π/2")"]
     G3 --> M1["測定"]
     end
     

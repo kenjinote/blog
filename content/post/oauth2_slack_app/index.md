@@ -331,13 +331,13 @@ sequenceDiagram
     participant C as "Client"
     participant AS as "Authorization Server"
     
-    Note over C: "code_verifier = ランダム文字列"<br/>"code_challenge = SHA256(code_verifier)"
+    Note over C: "code_verifier = ランダム文字列"<br/>"code_challenge = SHA256("code_verifier")"
     C->>AS: "認可要求 (code_challenge を送信)"
     Note over AS: "code_challenge を保持"
     AS-->>C: "認可コード (code) の発行"
     
     C->>AS: "トークン要求 (code + code_verifier を送信)"
-    Note over AS: "SHA256(受け取った verifier) == 保持していた challenge?"
+    Note over AS: "SHA256("受け取った verifier") == 保持していた challenge?"
     AS-->>C: "検証成功: アクセストークン発行"
 ```
 

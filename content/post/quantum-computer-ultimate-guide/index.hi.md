@@ -306,7 +306,7 @@ graph TD
     Center --- X_neg["|-⟩ = (|0⟩-|1⟩)/√2 (-X अक्ष: θ=π/2, φ=π)"]
     Center --- Y_pos["|i⟩ = (|0⟩+i|1⟩)/√2 (+Y अक्ष: θ=π/2, φ=π/2)"]
     Center --- Y_neg["|-i⟩ = (|0⟩-i|1⟩)/√2 (-Y अक्ष: θ=π/2, φ=3π/2)"]
-    State["|ψ⟩ = cos(θ/2)|0⟩ + e^(iφ)sin(θ/2)|1⟩"] -.->|"ब्लोच सदिश r = (sinθcosφ, sinθsinφ, cosθ)"| Center
+    State["|ψ⟩ = cos("θ/2")|0⟩ + e^(iφ)sin("θ/2")|1⟩"] -.->|"ब्लोच सदिश r = (sinθcosφ, sinθsinφ, cosθ)"| Center
     end
     style Z_pos fill:#f9f,stroke:#333,stroke-width:2px
     style Z_neg fill:#f9f,stroke:#333,stroke-width:2px
@@ -582,13 +582,13 @@ graph TD
     classDef operation fill:#e1f5fe,stroke:#0288d1,stroke-width:2px;
     classDef measure fill:#fce4ec,stroke:#c2185b,stroke-width:2px;
     
-    Init["प्रारंभिक अवस्था $| \psi(t_0) \rangle$"]:::state --> Evo["यूनिटरी समय विकास $U(t, t_0) = \exp(-i H t / \hbar)$"]:::operation
-    Evo --> Evolved["विकसित अवस्था $| \psi(t) \rangle = U | \psi(t_0) \rangle$"]:::state
+    Init["प्रारंभिक अवस्था $| \psi("t_0") \rangle$"]:::state --> Evo["यूनिटरी समय विकास $U("t, t_0") = \exp("-i H t / \hbar")$"]:::operation
+    Evo --> Evolved["विकसित अवस्था $| \psi("t") \rangle = U | \psi("t_0") \rangle$"]:::state
     
     Evolved --> Obs["भौतिक राशि $A$ का प्रेक्षण (प्रक्षेप ऑपरेटर $P_k$)"]:::measure
     
-    Obs -->|"प्रायिकता $p(a_1) = \langle \psi"| P_1 | \psi \rangle$ | State1["संकुचित अवस्था 1: $| a_1 \rangle$"]:::state
-    Obs -->|"प्रायिकता $p(a_2) = \langle \psi"| P_2 | \psi \rangle$ | State2["संकुचित अवस्था 2: $| a_2 \rangle$"]:::state
+    Obs -->|"प्रायिकता $p("a_1") = \langle \psi"| P_1 | \psi \rangle$ | State1["संकुचित अवस्था 1: $| a_1 \rangle$"]:::state
+    Obs -->|"प्रायिकता $p("a_2") = \langle \psi"| P_2 | \psi \rangle$ | State2["संकुचित अवस्था 2: $| a_2 \rangle$"]:::state
     Obs -->|"..."| StateN["संकुचित अवस्था n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["डिकोहेरेंस (कला सुसंगतता की हानि) और मिश्रित अवस्था में संक्रमण"]:::measure
@@ -844,7 +844,7 @@ graph LR
     direction LR
     Q0["|0⟩"] --> G1["H गेट"]
     G1 --> G2["S गेट"]
-    G2 --> G3["Rx(π/2)"]
+    G2 --> G3["Rx("π/2")"]
     G3 --> M1["मापन"]
     end
     

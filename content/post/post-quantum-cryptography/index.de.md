@@ -42,15 +42,15 @@ Basierend auf mathematischen Problemen (wie NP-schweren Problemen), die selbst m
 
 ```mermaid
 graph LR
-    PQC[Post-Quanten-Kryptographie PQC] --> L[Gitterbasierte Kryptographie Lattice-based]
-    PQC --> H[Hash-basierte Kryptographie Hash-based]
-    PQC --> M[Multivariate Kryptographie Multivariate]
-    PQC --> C[Codebasierte Kryptographie Code-based]
+    PQC["Post-Quanten-Kryptographie PQC"] --> L["Gitterbasierte Kryptographie Lattice-based"]
+    PQC --> H["Hash-basierte Kryptographie Hash-based"]
+    PQC --> M["Multivariate Kryptographie Multivariate"]
+    PQC --> C["Codebasierte Kryptographie Code-based"]
     
-    L --> L1(FIPS 203: ML-KEM)
-    L --> L2(FIPS 204: ML-DSA)
+    L --> L1("FIPS 203: ML-KEM")
+    L --> L2("FIPS 204: ML-DSA")
     
-    H --> H1(FIPS 205: SLH-DSA)
+    H --> H1("FIPS 205: SLH-DSA")
     
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```

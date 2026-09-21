@@ -46,7 +46,7 @@ sequenceDiagram
     activate Action
     Action->>Action: "Lint et analyse statique (Clang-Tidy)"
     
-    rect rgb(200, 220, 240)
+    rect rgb("200, 220, 240")
     note right of Action: "Build matriciel multiplateforme"
     Action->>Action: "Build sur Ubuntu (GCC/Clang)"
     Action->>Action: "Build sur Windows (MSVC)"

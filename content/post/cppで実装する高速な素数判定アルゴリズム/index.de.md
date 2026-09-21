@@ -313,8 +313,8 @@ Schnelle Primzahltests sind eine unverzichtbare Technologie beim Rechnen mit rie
 
 ```mermaid
 graph LR
-    TrialDivision["Probedivision (O(√N))"] --> Fermat["Fermat-Test (O(log N), hat Schwächen)"]
-    Fermat --> MillerRabin["Miller-Rabin-Test (O(log N), deterministisch möglich)"]
+    TrialDivision["Probedivision (O("√N"))"] --> Fermat["Fermat-Test (O("log N"), hat Schwächen)"]
+    Fermat --> MillerRabin["Miller-Rabin-Test (O("log N"), deterministisch möglich)"]
     MillerRabin --> Montgomery["+ Montgomery-Multiplikation (Schneller um einen konstanten Faktor)"]
     
     style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px

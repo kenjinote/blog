@@ -63,7 +63,7 @@ Cette définition est très facile à comprendre si vous la considérez comme un
 flowchart TD
     A["Le démon présente un ε > 0 arbitraire"] --> B["Vous trouvez et présentez un δ > 0 approprié"]
     B --> C{"Pour tout x satisfaisant 0 < |x - a| < δ..."}
-    C -- "Vérifier" --> D{"Est-ce que |f(x) - L| < ε est vérifié ?"}
+    C -- "Vérifier" --> D{"Est-ce que |f("x") - L| < ε est vérifié ?"}
     D -- "Oui" --> E["Le jeu continue (Prouvé si possible pour tout ε)"]
     D -- "Non" --> F["Échec de la preuve (Ce n'est pas une limite)"]
 ```

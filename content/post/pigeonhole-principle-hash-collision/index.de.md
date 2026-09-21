@@ -32,11 +32,11 @@ Angenommen, es gibt 4 Taubenschläge und 5 Tauben. Egal, wie geschickt Sie versu
 ```mermaid
 graph TD
     subgraph "Schubfachprinzip (5 Tauben, 4 Fächer)"
-        P1((Taube 1)) --> B1["Fach 1"]
-        P2((Taube 2)) --> B2["Fach 2"]
-        P3((Taube 3)) --> B3["Fach 3"]
-        P4((Taube 4)) --> B4["Fach 4"]
-        P5((Taube 5)) --> B1
+        P1(("Taube 1")) --> B1["Fach 1"]
+        P2(("Taube 2")) --> B2["Fach 2"]
+        P3(("Taube 3")) --> B3["Fach 3"]
+        P4(("Taube 4")) --> B4["Fach 4"]
+        P5(("Taube 5")) --> B1
         style B1 stroke:#f66,stroke-width:2px,stroke-dasharray: 5 5
     end
 ```

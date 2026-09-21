@@ -223,13 +223,13 @@ sequenceDiagram
   participant Wasm as "WebAssembly 运行时"
   participant Mem as "线性内存 (ArrayBuffer)"
 
-  JS->>Wasm: "调用 calculate(10, 20)"
+  JS->>Wasm: "调用 calculate("10, 20")"
   note over JS,Wasm: "基本类型 (int, float) 通过寄存器/栈直接传递"
   Wasm-->>JS: "返回 30"
 
   note over JS, Mem: "对于复杂数据 (字符串, 数组)"
   JS->>Mem: "将字符串写入内存"
-  JS->>Wasm: "调用 process_string(pointer, length)"
+  JS->>Wasm: "调用 process_string("pointer, length")"
   Wasm->>Mem: "从指针读取数据"
   Wasm->>Mem: "将结果写入新指针"
   Wasm-->>JS: "返回新指针 & 长度"

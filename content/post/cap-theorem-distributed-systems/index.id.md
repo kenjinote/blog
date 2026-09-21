@@ -96,10 +96,10 @@ sequenceDiagram
 
     Note over N1, N2: "Keadaan Awal: x = 0"
     Note over N1, N2: "Partisi Jaringan Terjadi ⚡"
-    C1->>N1: "Write(x = 1)"
-    N1-->>C1: "Ack(Success)"
+    C1->>N1: "Write("x = 1")"
+    N1-->>C1: "Ack("Success")"
     Note over N1, N2: "N1 mencoba sinkronisasi ke N2, <br>tetapi gagal karena partisi"
-    C2->>N2: "Read(x)"
+    C2->>N2: "Read("x")"
     alt "Jika Sistem CP (Mengorbankan Ketersediaan)"
         N2-->>C2: "Error (atau Timeout)"
     else "Jika Sistem AP (Mengorbankan Konsistensi)"

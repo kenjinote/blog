@@ -68,9 +68,9 @@ graph TD
     classDef subexp fill:#ffd3b6,stroke:#333,stroke-width:2px;
     classDef exp fill:#ffaaa5,stroke:#333,stroke-width:2px;
 
-    Poly["多項式時間 O(n^k)"]:::poly
+    Poly["多項式時間 O("n^k")"]:::poly
     SubExp["次指數時間 L_n"]:::subexp
-    Exp["指數時間 O(2^n)"]:::exp
+    Exp["指數時間 O("2^n")"]:::exp
 
     GNFS["普通數域篩法 (GNFS)"]:::subexp
     Pollard["Pollard's rho 演算法"]:::exp
@@ -255,12 +255,12 @@ graph LR
     classDef quantum fill:#00c9a7,stroke:#333,stroke-width:2px;
 
     subgraph "古典電腦"
-        C1["試除法: O(2^(n/2))"]:::classical
-        C2["GNFS: 次指數時間 L_n(1/3)"]:::classical
+        C1["試除法: O("2^(n/2"))"]:::classical
+        C2["GNFS: 次指數時間 L_n("1/3")"]:::classical
     end
 
     subgraph "量子電腦"
-        Q1["秀爾演算法: O(n^3) 多項式時間"]:::quantum
+        Q1["秀爾演算法: O("n^3") 多項式時間"]:::quantum
     end
 
     C1 --> C2

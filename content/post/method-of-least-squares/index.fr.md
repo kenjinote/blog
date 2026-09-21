@@ -128,7 +128,7 @@ Cette formule est l'un des plus beaux résultats des statistiques et de l'appren
 ```mermaid
 flowchart LR
     b["Vecteur b"] -->|"Projection orthogonale"| p["Vecteur de projection p = A x_hat"]
-    p --> C["Espace des colonnes C(A)"]
+    p --> C["Espace des colonnes C("A")"]
     b -->|"Vecteur d'erreur e"| p
     e["e = b - A x_hat"] -.->|"Orthogonal"| C
 ```

@@ -71,11 +71,11 @@ Le moment où la courbe passe par l'origine, cela signifie exactement qu'il exis
 ```mermaid
 flowchart TD
     %% Aperçu de la cartographie des courbes
-    A["Grand cercle de rayon R centré à l'origine"] -->|"Cartographie par le polynôme P(z)"| B["Courbe fermée sur le plan complexe"]
+    A["Grand cercle de rayon R centré à l'origine"] -->|"Cartographie par le polynôme P("z")"| B["Courbe fermée sur le plan complexe"]
     B -->|"Lorsque R est suffisamment grand"| C["Courbe s'enroulant autour de l'origine n fois"]
     C -->|"Réduction continue de R à 0"| D["La courbe se réduit aussi continuellement vers l'origine"]
     D -->|"Continuité topologique"| E["Doit passer par l'origine en cours de route"]
-    E -->|"P(z) = 0"| F["L'existence d'une racine est prouvée"]
+    E -->|"P("z") = 0"| F["L'existence d'une racine est prouvée"]
 ```
 
 ## Préparation de l'Analyse Complexe : Théorème de [Liouville](https://kenji.blog/fr/p/liouville/)

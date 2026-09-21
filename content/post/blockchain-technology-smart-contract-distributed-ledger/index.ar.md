@@ -189,12 +189,12 @@ sequenceDiagram
 
     A->>V: "withdrawBalance()"
     activate V
-    V->>A: "Call.value(balance)() (إرسال)"
+    V->>A: "Call.value("balance")() (إرسال)"
     activate A
     Note over A: "يتم تشغيل دالة الاحتياط (Fallback)"
     A->>V: "withdrawBalance() (استدعاء متكرر)"
     activate V
-    V->>A: "Call.value(balance)() (الإرسال الثاني)"
+    V->>A: "Call.value("balance")() (الإرسال الثاني)"
     deactivate V
     deactivate A
     Note over V: "يتم إرسال الأموال عدة مرات قبل تحديث الرصيد"

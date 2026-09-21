@@ -68,9 +68,9 @@ graph TD
     classDef subexp fill:#ffd3b6,stroke:#333,stroke-width:2px;
     classDef exp fill:#ffaaa5,stroke:#333,stroke-width:2px;
 
-    Poly["Waktu Polinomial O(n^k)"]:::poly
+    Poly["Waktu Polinomial O("n^k")"]:::poly
     SubExp["Waktu Sub-eksponensial L_n"]:::subexp
-    Exp["Waktu Eksponensial O(2^n)"]:::exp
+    Exp["Waktu Eksponensial O("2^n")"]:::exp
 
     GNFS["GNFS (Saringan Medan Angka Umum)"]:::subexp
     Pollard["Algoritma rho Pollard"]:::exp
@@ -255,12 +255,12 @@ graph LR
     classDef quantum fill:#00c9a7,stroke:#333,stroke-width:2px;
 
     subgraph "Komputer Klasik"
-        C1["Pembagian Percobaan: O(2^(n/2))"]:::classical
-        C2["GNFS: Sub-eksponensial L_n(1/3)"]:::classical
+        C1["Pembagian Percobaan: O("2^(n/2"))"]:::classical
+        C2["GNFS: Sub-eksponensial L_n("1/3")"]:::classical
     end
 
     subgraph "Komputer Kuantum"
-        Q1["Algoritma Shor: O(n^3) Polinomial"]:::quantum
+        Q1["Algoritma Shor: O("n^3") Polinomial"]:::quantum
     end
 
     C1 --> C2

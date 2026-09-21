@@ -320,7 +320,7 @@ sequenceDiagram
     CodeLLDB->>DebuggerCore: Registriert den Breakpoint in der Speicherverwaltungstabelle
     Developer->>VSCode: F5-Taste drücken (Debugging starten)
     VSCode->>CodeLLDB: launch Anfrage
-    CodeLLDB->>OS: Startet den Prozess mit ptrace(PTRACE_TRACEME)
+    CodeLLDB->>OS: Startet den Prozess mit ptrace("PTRACE_TRACEME")
     OS-->>DebuggerCore: Zuordnung des Speicherbereichs der Anwendung abgeschlossen
     DebuggerCore->>OS: Schreibt INT3-Instruktion (0xCC) an angegebene Adresse
     Note over OS: Programm wird ausgeführt...

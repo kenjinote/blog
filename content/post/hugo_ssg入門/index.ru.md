@@ -176,9 +176,9 @@ aliases:
 flowchart LR
   WPDB["База данных WP"] -->|"Плагин"| Exporter["Инструмент экспорта"]
   Exporter -->|"Извлечение текста, \nметаданных, изображений"| ZipFile["Zip-архив / Папка"]
-  ZipFile -->|"Распаковка"| MarkdownFiles["Файлы Markdown \n(content/)"]
-  ZipFile -->|"Распаковка"| ImageFiles["Изображения \n(static/wp-content/)"]
-  MarkdownFiles --> Formatting["Проверка и форматирование \n(Исправление шорткодов)"]
+  ZipFile -->|"Распаковка"| MarkdownFiles["Файлы Markdown \n("content/")"]
+  ZipFile -->|"Распаковка"| ImageFiles["Изображения \n("static/wp-content/")"]
+  MarkdownFiles --> Formatting["Проверка и форматирование \n("Исправление шорткодов")"]
   Formatting --> Git["Коммит в Git"]
 ```
 

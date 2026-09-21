@@ -331,13 +331,13 @@ sequenceDiagram
     participant C as "Client"
     participant AS as "Authorization Server"
     
-    Note over C: "code_verifier = string acak"<br/>"code_challenge = SHA256(code_verifier)"
+    Note over C: "code_verifier = string acak"<br/>"code_challenge = SHA256("code_verifier")"
     C->>AS: "Permintaan otorisasi (mengirim code_challenge)"
     Note over AS: "Menyimpan code_challenge"
     AS-->>C: "Penerbitan kode otorisasi (code)"
     
     C->>AS: "Permintaan token (mengirim code + code_verifier)"
-    Note over AS: "SHA256(verifier yang diterima) == challenge yang disimpan?"
+    Note over AS: "SHA256("verifier yang diterima") == challenge yang disimpan?"
     AS-->>C: "Verifikasi berhasil: Menerbitkan akses token"
 ```
 

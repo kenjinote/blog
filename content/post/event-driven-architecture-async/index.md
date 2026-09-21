@@ -63,11 +63,11 @@ Event Loopは、メインスレッド上で無限ループとして動作し、�
 
 ```mermaid
 flowchart TD
-    A[Call Stack] -->|非同期処理| B(Web APIs / C++ APIs)
-    B -->|完了通知| C[Callback Queue / Task Queue]
+    A["Call Stack"] -->|非同期処理| B("Web APIs / C++ APIs")
+    B -->|完了通知| C["Callback Queue / Task Queue"]
     C -->|Event Loop| A
     
-    subgraph EventLoopMechanism[Event Loop メカニズム]
+    subgraph EventLoopMechanism["Event Loop メカニズム"]
         A
         B
         C
@@ -128,9 +128,9 @@ Actorモデルでは、処理の基本単位を「Actor（アクター）」と�
 
 ```mermaid
 flowchart LR
-    A[Actor 1] -->|Message| B(Mailbox)
-    B --> C[Actor 2]
-    C -->|Message| D(Mailbox)
+    A["Actor 1"] -->|Message| B("Mailbox")
+    B --> C["Actor 2"]
+    C -->|Message| D("Mailbox")
     D --> A
     
     subgraph "Actor System"
@@ -225,10 +225,10 @@ EDAでは、システム内の状態変化を「イベント」として表現�
 
 ```mermaid
 flowchart LR
-    P1[Order Service] -->|OrderCreated Event| MB((Message Broker))
-    P2[Payment Service] -->|PaymentProcessed Event| MB
-    MB -->|Subscribe| C1[Inventory Service]
-    MB -->|Subscribe| C2[Notification Service]
+    P1["Order Service"] -->|OrderCreated Event| MB(("Message Broker"))
+    P2["Payment Service"] -->|PaymentProcessed Event| MB
+    MB -->|Subscribe| C1["Inventory Service"]
+    MB -->|Subscribe| C2["Notification Service"]
 ```
 
 このアーキテクチャの最大のメリットは **疎結合（Loose Coupling）** です。プロデューサーはコンシューマーの存在を意識する必要がなく、システムの一部がダウンしてもブローカーがイベントを保持するため、耐障害性（Resilience）が向上します。
@@ -248,13 +248,13 @@ CQRSでは、システムを「状態を変更するコマンドモデル」と�
 
 ```mermaid
 flowchart TD
-    Client -->|Command (Write)| CommandAPI[Command Service]
-    Client -->|Query (Read)| QueryAPI[Query Service]
+    Client -->|Command (Write)| CommandAPI["Command Service"]
+    Client -->|Query (Read)| QueryAPI["Query Service"]
     
-    CommandAPI -->|Update| WriteDB[(Write DB)]
-    WriteDB -->|Domain Events| EventBus((Event Bus))
-    EventBus -->|Consume & Project| ProjectionWorker[Projection Worker]
-    ProjectionWorker -->|Update| ReadDB[(Read DB)]
+    CommandAPI -->|Update| WriteDB["(Write DB)"]
+    WriteDB -->|Domain Events| EventBus(("Event Bus"))
+    EventBus -->|Consume & Project| ProjectionWorker["Projection Worker"]
+    ProjectionWorker -->|Update| ReadDB["(Read DB)"]
     ReadDB -->|Fetch| QueryAPI
 ```
 

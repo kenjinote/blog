@@ -331,13 +331,13 @@ sequenceDiagram
     participant C as "Client"
     participant AS as "Authorization Server"
     
-    Note over C: "code_verifier = 무작위 문자열"<br/>"code_challenge = SHA256(code_verifier)"
+    Note over C: "code_verifier = 무작위 문자열"<br/>"code_challenge = SHA256("code_verifier")"
     C->>AS: "인가 요청 (code_challenge 전송)"
     Note over AS: "code_challenge 유지"
     AS-->>C: "인가 코드 (code) 발급"
     
     C->>AS: "토큰 요청 (code + code_verifier 전송)"
-    Note over AS: "SHA256(받은 verifier) == 유지하던 challenge?"
+    Note over AS: "SHA256("받은 verifier") == 유지하던 challenge?"
     AS-->>C: "검증 성공: 액세스 토큰 발급"
 ```
 

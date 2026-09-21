@@ -95,8 +95,8 @@ Masyarakat secara keseluruhan jatuh ke dalam siklus (loop) **A > B > C > A ...**
 
 ```mermaid
 graph LR
-    A((A)) -->|"Menang dengan suara terbanyak"| B((B))
-    B -->|"Menang dengan suara terbanyak"| C((C))
+    A(("A")) -->|"Menang dengan suara terbanyak"| B(("B"))
+    B -->|"Menang dengan suara terbanyak"| C(("C"))
     C -->|"Menang dengan suara terbanyak"| A
     
     style A fill:#ff9999
@@ -164,7 +164,7 @@ Dengan kata lain, $F$ yang memenuhi (U), (P), (I), dan (D) secara bersamaan tida
 ```mermaid
 graph TD
     subgraph "Konsekuensi Logis"
-        A_U["Kondisi U (Domain Tidak Terbatas)"] --> AND1((AND))
+        A_U["Kondisi U (Domain Tidak Terbatas)"] --> AND1(("AND"))
         A_P["条件P (Aklamasi)"] --> AND1
         A_I["Kondisi I (IIA)"] --> AND1
         

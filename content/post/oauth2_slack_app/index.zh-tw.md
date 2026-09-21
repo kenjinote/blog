@@ -331,13 +331,13 @@ sequenceDiagram
     participant C as "Client"
     participant AS as "Authorization Server"
     
-    Note over C: "code_verifier = 隨機字串"<br/>"code_challenge = SHA256(code_verifier)"
+    Note over C: "code_verifier = 隨機字串"<br/>"code_challenge = SHA256("code_verifier")"
     C->>AS: "授權請求 (發送 code_challenge)"
     Note over AS: "保留 code_challenge"
     AS-->>C: "發行授權碼 (code)"
     
     C->>AS: "請求權杖 (發送 code + code_verifier)"
-    Note over AS: "SHA256(接收到的 verifier) == 保留的 challenge?"
+    Note over AS: "SHA256("接收到的 verifier") == 保留的 challenge?"
     AS-->>C: "驗證成功: 發行存取權杖"
 ```
 

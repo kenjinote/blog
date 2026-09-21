@@ -188,12 +188,12 @@ sequenceDiagram
 
     A->>V: "withdrawBalance()"
     activate V
-    V->>A: "Call.value(balance)()" (送金)
+    V->>A: "Call.value("balance")()" (送金)
     activate A
     Note over A: Fallback関数がトリガーされる
     A->>V: "withdrawBalance()" (再帰呼び出し)
     activate V
-    V->>A: "Call.value(balance)()" (2回目の送金)
+    V->>A: "Call.value("balance")()" (2回目の送金)
     deactivate V
     deactivate A
     Note over V: 残高が更新される前に複数回送金される

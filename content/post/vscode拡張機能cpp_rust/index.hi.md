@@ -320,7 +320,7 @@ sequenceDiagram
     CodeLLDB->>DebuggerCore: ब्रेकप्वाइंट को मेमोरी मैनेजमेंट टेबल में रजिस्टर करें
     Developer->>VSCode: F5 कुंजी दबाएं (डीबग शुरू करें)
     VSCode->>CodeLLDB: launch अनुरोध
-    CodeLLDB->>OS: ptrace(PTRACE_TRACEME) के साथ प्रोसेस शुरू करें
+    CodeLLDB->>OS: ptrace("PTRACE_TRACEME") के साथ प्रोसेस शुरू करें
     OS-->>DebuggerCore: एप्लिकेशन की मेमोरी स्पेस मैपिंग पूरी हुई
     DebuggerCore->>OS: निर्दिष्ट पते पर INT3 निर्देश (0xCC) लिखें
     Note over OS: प्रोग्राम निष्पादित हो रहा है...

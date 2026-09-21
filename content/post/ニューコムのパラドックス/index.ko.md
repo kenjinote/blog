@@ -48,8 +48,8 @@ graph TD
     
     You["당신의 선택<br>（오늘）"]
     
-    You -->|"선택1: 모두 취한다"| Result1["상자 A(10만) + 상자 B의 내용물"]
-    You -->|"선택2: 상자 B만 취한다"| Result2["상자 A(0만) + 상자 B의 내용물"]
+    You -->|"선택1: 모두 취한다"| Result1["상자 A("10만") + 상자 B의 내용물"]
+    You -->|"선택2: 상자 B만 취한다"| Result2["상자 A("0만") + 상자 B의 내용물"]
     
     BoxB_Empty -.-> Result1
     BoxB_100M -.-> Result2

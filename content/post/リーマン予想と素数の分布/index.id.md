@@ -97,9 +97,9 @@ Garis dengan bagian real 1/2 ini disebut sebagai "Garis kritis (Critical line)".
 graph TD
     A["Fungsi Zeta Riemann ζ(s)"] --> B["Perluasan ke bidang kompleks dengan perluasan analitik"]
     B --> C["Pembuat nol trivial (s = -2, -4, -6 ...)"]
-    B --> D["Pembuat nol non-trivial (0 <= Re(s) <= 1)"]
+    B --> D["Pembuat nol non-trivial (0 <= Re("s") <= 1)"]
     D --> E["Hipotesis Riemann"]
-    E --> F["Semua pembuat nol non-trivial berada pada Re(s) = 1/2"]
+    E --> F["Semua pembuat nol non-trivial berada pada Re("s") = 1/2"]
     F --> G["Menuju pembuktian limit suku galat dari distribusi bilangan prima"]
 ```
 

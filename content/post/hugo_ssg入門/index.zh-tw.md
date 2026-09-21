@@ -174,9 +174,9 @@ Hugo 預設支援 `categories` 與 `tags` 兩種分類，但透過編輯 `hugo.t
 flowchart LR
   WPDB["WP 資料庫"] -->|"Plugin"| Exporter["匯出工具"]
   Exporter -->|"擷取文字、\n中介資料、圖片"| ZipFile["Zip / 資料夾"]
-  ZipFile -->|"Unpack"| MarkdownFiles["Markdown 檔案 \n(content/)"]
-  ZipFile -->|"Unpack"| ImageFiles["圖片 \n(static/wp-content/)"]
-  MarkdownFiles --> Formatting["審查與格式化 \n(修復短代碼)"]
+  ZipFile -->|"Unpack"| MarkdownFiles["Markdown 檔案 \n("content/")"]
+  ZipFile -->|"Unpack"| ImageFiles["圖片 \n("static/wp-content/")"]
+  MarkdownFiles --> Formatting["審查與格式化 \n("修復短代碼")"]
   Formatting --> Git["提交至 Git"]
 ```
 

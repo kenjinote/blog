@@ -96,10 +96,10 @@ sequenceDiagram
 
     Note over N1, N2: "初始狀態: x = 0"
     Note over N1, N2: "發生網路分割 ⚡"
-    C1->>N1: "Write(x = 1)"
-    N1-->>C1: "Ack(Success)"
+    C1->>N1: "Write("x = 1")"
+    N1-->>C1: "Ack("Success")"
     Note over N1, N2: "N1嘗試與N2同步，<br>但因分割而無法送達"
-    C2->>N2: "Read(x)"
+    C2->>N2: "Read("x")"
     alt "CP系統的情況 (犧牲可用性)"
         N2-->>C2: "Error (或逾時)"
     else "AP系統的情況 (犧牲一致性)"

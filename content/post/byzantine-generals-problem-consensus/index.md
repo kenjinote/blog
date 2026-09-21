@@ -58,8 +58,8 @@ Aは、Bには「攻撃」、Cには「撤退」と伝えます。BとCはお互
 
 ```mermaid
 graph TD
-    A((司令官 A<br/>裏切り者)) -- "攻撃" --> B((将軍 B<br/>忠実))
-    A -- "撤退" --> C((将軍 C<br/>忠実))
+    A(("司令官 A<br/>裏切り者")) -- "攻撃" --> B(("将軍 B<br/>忠実"))
+    A -- "撤退" --> C(("将軍 C<br/>忠実"))
     B -- "Aは攻撃と言った" --> C
     C -- "Aは撤退と言った" --> B
     style A fill:#ff9999,stroke:#ff0000,stroke-width:2px
@@ -252,13 +252,13 @@ sequenceDiagram
     P->>B2: Pre-prepare
     P->>B3: Pre-prepare
     
-    Note over P,B3: Prepare フェーズ (O(N^2)の通信)
+    Note over P,B3: Prepare フェーズ (O("N^2")の通信)
     B1->>P: Prepare
     B1->>B2: Prepare
     B2->>P: Prepare
     B2->>B1: Prepare
     
-    Note over P,B3: Commit フェーズ (O(N^2)の通信)
+    Note over P,B3: Commit フェーズ (O("N^2")の通信)
     P->>B1: Commit
     B1->>B2: Commit
     B2->>P: Commit

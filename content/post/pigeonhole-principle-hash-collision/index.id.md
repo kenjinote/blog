@@ -78,13 +78,13 @@ graph TD
     end
 
     subgraph "Fungsi Hash"
-        H{"Hash(x)"}
+        H{"Hash("x")"}
     end
 
     subgraph "Ruang Hash Terbatas (Sarang)"
-        V1("Hash(A)")
-        V2("Hash(B) = Hash(C)")
-        V3("Hash(D)")
+        V1("Hash("A")")
+        V2("Hash("B") = Hash("C")")
+        V3("Hash("D")")
     end
 
     A -->|"Hashing"| H
@@ -152,7 +152,7 @@ graph LR
         F1("Kontrak PDF Normal")
         F2("Kontrak PDF Berbahaya")
         H{"SHA-1 Fungsi Hash"}
-        V("Nilai Hash Sama\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
+        V("Nilai Hash Sama\n("38762cf7f55934b34d179ae6a4c80cadccbb7f0a")")
     end
 
     F1 -->|"Input"| H

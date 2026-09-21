@@ -78,13 +78,13 @@ graph TD
     end
 
     subgraph "哈希函数"
-        H{"Hash(x)"}
+        H{"Hash("x")"}
     end
 
     subgraph "有限的哈希空间（巢）"
-        V1("Hash(A)")
-        V2("Hash(B) = Hash(C)")
-        V3("Hash(D)")
+        V1("Hash("A")")
+        V2("Hash("B") = Hash("C")")
+        V3("Hash("D")")
     end
 
     A -->|"哈希化"| H
@@ -152,7 +152,7 @@ graph LR
         F1("正常的PDF合同")
         F2("恶意的PDF合同")
         H{"SHA-1 哈希函数"}
-        V("相同的哈希值\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
+        V("相同的哈希值\n("38762cf7f55934b34d179ae6a4c80cadccbb7f0a")")
     end
 
     F1 -->|"输入"| H

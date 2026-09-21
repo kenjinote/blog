@@ -63,7 +63,7 @@ Esta definición es muy fácil de entender si la piensas como un juego entre tú
 flowchart TD
     A["El demonio presenta cualquier ε > 0"] --> B["Tú encuentras y presentas un δ > 0 adecuado"]
     B --> C{"Para cualquier x que satisfaga 0 < |x - a| < δ..."}
-    C -- "Verificar" --> D{"¿Se cumple |f(x) - L| < ε?"}
+    C -- "Verificar" --> D{"¿Se cumple |f("x") - L| < ε?"}
     D -- "Sí" --> E["El juego continúa (Demostrado si es posible para todo ε)"]
     D -- "No" --> F["Demostración fallida (No es un límite)"]
 ```

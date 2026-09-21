@@ -63,7 +63,7 @@ Diese Definition ist sehr leicht zu verstehen, wenn man sie als ein Spiel zwisch
 flowchart TD
     A["Der Dämon gibt ein beliebiges ε > 0 vor"] --> B["Du findest und präsentierst ein passendes δ > 0"]
     B --> C{"Für jedes x, das 0 < |x - a| < δ erfüllt..."}
-    C -- "Überprüfen" --> D{"Gilt |f(x) - L| < ε?"}
+    C -- "Überprüfen" --> D{"Gilt |f("x") - L| < ε?"}
     D -- "Ja" --> E["Spiel geht weiter (Bewiesen, falls für alle ε möglich)"]
     D -- "Nein" --> F["Beweis fehlgeschlagen (Kein Grenzwert)"]
 ```

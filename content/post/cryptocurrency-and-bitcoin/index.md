@@ -80,12 +80,12 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    Root["Merkle Root: Hash(H12 + H34)"] --> H12["Hash(H1 + H2)"]
-    Root --> H34["Hash(H3 + H4)"]
-    H12 --> H1["Hash(Tx1)"]
-    H12 --> H2["Hash(Tx2)"]
-    H34 --> H3["Hash(Tx3)"]
-    H34 --> H4["Hash(Tx4)"]
+    Root["Merkle Root: Hash("H12 + H34")"] --> H12["Hash("H1 + H2")"]
+    Root --> H34["Hash("H3 + H4")"]
+    H12 --> H1["Hash("Tx1")"]
+    H12 --> H2["Hash("Tx2")"]
+    H34 --> H3["Hash("Tx3")"]
+    H34 --> H4["Hash("Tx4")"]
 ```
 
 [トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)のデータが少しでも変更されると、その葉ノードのハッシュが変わり、連鎖的にマークルルートの値も全く違うものになります。これにより、膨大なトランザクションデータの中から、一つでも改ざんがあれば即座に検知することが可能になります。

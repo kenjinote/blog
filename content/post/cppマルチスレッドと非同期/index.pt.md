@@ -271,7 +271,7 @@ O diagrama de sequência a seguir mostra o comportamento do `std::async`.
 sequenceDiagram
     participant Main as "Thread Principal"
     participant Async as "Trabalhador std::async"
-    Main->>Async: "std::async(std::launch::async, ...)"
+    Main->>Async: "std::async("std::launch::async, ...")"
     activate Async
     Note over Main: "Fazer outro trabalho..."
     Main->>Async: "future.get() (Bloqueia até estar pronto)"

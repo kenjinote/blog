@@ -67,11 +67,11 @@ flowchart LR
     A["Teori Bilangan"] -->|"Kesamaan fungsi L"| B["Analisis"]
     subgraph SG1 ["Kurva Eliptik atas Bilangan Rasional"]
         N1["Persamaan E: y² = x³ + ax + b"]
-        N2["Fungsi L Hasse-Weil L(s, E)"]
+        N2["Fungsi L Hasse-Weil L("s, E")"]
     end
     subgraph SG2 ["Bentuk Modular"]
-        N3["Bentuk cusp bobot 2 f(z)"]
-        N4["Deret Dirichlet L(s, f)"]
+        N3["Bentuk cusp bobot 2 f("z")"]
+        N4["Deret Dirichlet L("s, f")"]
     end
     SG1 -->|"Konjektur Taniyama-Shimura"| SG2
     %% Diagram ini menunjukkan bagaimana konsep yang sama sekali berbeda terhubung secara mendalam.

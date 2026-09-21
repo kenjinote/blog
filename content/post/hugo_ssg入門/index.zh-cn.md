@@ -176,9 +176,9 @@ Hugo默认支持 `categories` 和 `tags` 分类法，通过编辑 `hugo.toml`，
 flowchart LR
   WPDB["WP数据库"] -->|"插件"| Exporter["导出工具"]
   Exporter -->|"提取文本, \n元数据, 图片"| ZipFile["Zip / 文件夹"]
-  ZipFile -->|"解压"| MarkdownFiles["Markdown文件 \n(content/)"]
-  ZipFile -->|"解压"| ImageFiles["图片 \n(static/wp-content/)"]
-  MarkdownFiles --> Formatting["审查 & 格式化 \n(修复简码)"]
+  ZipFile -->|"解压"| MarkdownFiles["Markdown文件 \n("content/")"]
+  ZipFile -->|"解压"| ImageFiles["图片 \n("static/wp-content/")"]
+  MarkdownFiles --> Formatting["审查 & 格式化 \n("修复简码")"]
   Formatting --> Git["提交到Git"]
 ```
 

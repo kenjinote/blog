@@ -135,8 +135,8 @@ sequenceDiagram
     participant Secondary as "Secondary Node (B)"
     
     Note over Primary, Secondary: "Operação normal (No Partition)"
-    Client->>Primary: "Write(V=1)"
-    Primary->>Secondary: "Replicate(V=1)"
+    Client->>Primary: "Write("V=1")"
+    Primary->>Secondary: "Replicate("V=1")"
     Secondary-->>Primary: "Ack"
     Primary-->>Client: "Success (Write Confirm)"
     Client->>Primary: "Read()"
@@ -145,10 +145,10 @@ sequenceDiagram
     Note over Primary, Secondary: "Ocorre divisão de rede! (Node A e Node B não conseguem se comunicar)"
     
     %% "Supondo que Node A foi deixado numa partição minoritária (Minority)"
-    Note over Primary: "O Primário(A) detecta que não pode se comunicar<br/>com a maioria dos outros nós"
-    Note over Primary: "O Primário(A) se rebaixa voluntariamente<br/>para secundário (Step Down)"
+    Note over Primary: "O Primário("A") detecta que não pode se comunicar<br/>com a maioria dos outros nós"
+    Note over Primary: "O Primário("A") se rebaixa voluntariamente<br/>para secundário (Step Down)"
     
-    Client->>Primary: "Write(V=2)"
+    Client->>Primary: "Write("V=2")"
     Primary-->>Client: "Error (Not Primary) - Diminuição da disponibilidade"
     
     Client->>Secondary: "Read()"
@@ -184,7 +184,7 @@ sequenceDiagram
     
     Note over NodeA, NodeB: "Ocorre divisão de rede! (Não conseguem se comunicar)"
     
-    Client->>NodeA: "Write(V=1)"
+    Client->>NodeA: "Write("V=1")"
     Note over NodeA: "Escreve no seu próprio armazenamento (local)"
     NodeA-xNodeB: "Replicate (Fail)"
     Note over NodeA: "Mantém os dados destinados a B localmente<br/>como uma dica (Hinted Handoff)"

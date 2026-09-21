@@ -324,7 +324,7 @@ graph TD
     CA -->|"Issues Certificate (Signs)"| SubCA
     SubCA -->|"Issues Certificate (Signs)"| Server
     Server -->|"Presents Server Certificate"| Client
-    Client -.->|"Holds Root CA's Public Key in advance\n(built into browser or OS)"| CA
+    Client -.->|"Holds Root CA's Public Key in advance\n("built into browser or OS")"| CA
     Client -->|"Verifies Certificate Chain\nUses Root CA's Public Key"| Server
 ```
 

@@ -174,9 +174,9 @@ Below is the flow of a typical migration pipeline.
 flowchart LR
   WPDB["WP Database"] -->|"Plugin"| Exporter["Export Tool"]
   Exporter -->|"Extracts Text, \nMeta, Images"| ZipFile["Zip / Folder"]
-  ZipFile -->|"Unpack"| MarkdownFiles["Markdown Files \n(content/)"]
-  ZipFile -->|"Unpack"| ImageFiles["Images \n(static/wp-content/)"]
-  MarkdownFiles --> Formatting["Review & Format \n(Fix Shortcodes)"]
+  ZipFile -->|"Unpack"| MarkdownFiles["Markdown Files \n("content/")"]
+  ZipFile -->|"Unpack"| ImageFiles["Images \n("static/wp-content/")"]
+  MarkdownFiles --> Formatting["Review & Format \n("Fix Shortcodes")"]
   Formatting --> Git["Commit to Git"]
 ```
 

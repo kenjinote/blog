@@ -127,7 +127,7 @@ graph TD
     subgraph "Pemrosesan 1 Putaran AES (Struktur SPN)"
         A["Status Input (128-bit)"] --> B("SubBytes (Substitusi Byte / S-Box)")
         B --> C("ShiftRows (Pergeseran Baris)")
-        C --> D("MixColumns (Pencampuran Kolom / Perkalian di GF(2^8))")
+        C --> D("MixColumns (Pencampuran Kolom / Perkalian di GF("2^8"))")
         D --> E("AddRoundKey (XOR dengan Kunci Putaran)")
         E --> F["Ke putaran berikutnya"]
     end

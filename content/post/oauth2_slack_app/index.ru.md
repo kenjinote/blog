@@ -331,13 +331,13 @@ sequenceDiagram
     participant C as "Client"
     participant AS as "Authorization Server"
     
-    Note over C: "code_verifier = Случайная строка"<br/>"code_challenge = SHA256(code_verifier)"
+    Note over C: "code_verifier = Случайная строка"<br/>"code_challenge = SHA256("code_verifier")"
     C->>AS: "Запрос авторизации (отправка code_challenge)"
     Note over AS: "Сохранение code_challenge"
     AS-->>C: "Выдача кода авторизации (code)"
     
     C->>AS: "Запрос токена (отправка code + code_verifier)"
-    Note over AS: "SHA256(полученного verifier) == сохраненный challenge?"
+    Note over AS: "SHA256("полученного verifier") == сохраненный challenge?"
     AS-->>C: "Проверка успешна: выдача access token"
 ```
 

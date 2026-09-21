@@ -94,9 +94,9 @@ Node 2 が `0` を返せば、クライアントには正常なレスポンス�
 ```mermaid
 flowchart TD
     subgraph "CAP Theorem"
-    C(Consistency\n一貫性)
-    A(Availability\n可用性)
-    P(Partition Tolerance\n分断耐性)
+    C("Consistency\n一貫性")
+    A("Availability\n可用性")
+    P("Partition Tolerance\n分断耐性")
     
     C ---|CP: 分断時はエラー応答し\n一貫性を維持| P
     A ---|AP: 分断時も古いデータを応答し\n可用性を維持| P
@@ -134,8 +134,8 @@ sequenceDiagram
     participant Secondary as "Secondary Node (B)"
     
     Note over Primary, Secondary: 通常稼働時 (No Partition)
-    Client->>Primary: Write(V=1)
-    Primary->>Secondary: Replicate(V=1)
+    Client->>Primary: Write("V=1")
+    Primary->>Secondary: Replicate("V=1")
     Secondary-->>Primary: Ack
     Primary-->>Client: Success (Write Confirm)
     Client->>Primary: Read()
@@ -147,7 +147,7 @@ sequenceDiagram
     Note over Primary: プライマリ(A)は他の過半数のノードと<br/>通信できなくなったことを検知
     Note over Primary: プライマリ(A)は自発的に<br/>セカンダリに降格 (Step Down)
     
-    Client->>Primary: Write(V=2)
+    Client->>Primary: Write("V=2")
     Primary-->>Client: Error (Not Primary) - 可用性低下
     
     Client->>Secondary: Read()
@@ -183,7 +183,7 @@ sequenceDiagram
     
     Note over NodeA, NodeB: ネットワーク分断発生！ (互いに通信不可)
     
-    Client->>NodeA: Write(V=1)
+    Client->>NodeA: Write("V=1")
     Note over NodeA: 自身(ローカル)のストレージに書き込み
     NodeA-xNodeB: Replicate (Fail)
     Note over NodeA: ヒント(Hinted Handoff)として<br/>B宛のデータをローカルに保持

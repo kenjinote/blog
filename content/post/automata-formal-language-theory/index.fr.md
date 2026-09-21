@@ -58,10 +58,10 @@ La hiérarchie est classée comme suit (du type 0 au type 3). Plus le nombre est
 
 ```mermaid
 flowchart TD
-    Type0["Type-0 : Langages récursivement énumérables\n(Turing Machine)"]
-    Type1["Type-1 : Langages sensibles au contexte\n(Linear Bounded Automaton)"]
-    Type2["Type-2 : Langages hors-contexte\n(Pushdown Automaton)"]
-    Type3["Type-3 : Langages réguliers\n(Finite Automaton)"]
+    Type0["Type-0 : Langages récursivement énumérables\n("Turing Machine")"]
+    Type1["Type-1 : Langages sensibles au contexte\n("Linear Bounded Automaton")"]
+    Type2["Type-2 : Langages hors-contexte\n("Pushdown Automaton")"]
+    Type3["Type-3 : Langages réguliers\n("Finite Automaton")"]
 
     Type0 --- Type1
     Type1 --- Type2
@@ -263,7 +263,7 @@ flowchart LR
         T1["..."] --- T2["0"] --- T3["1"] --- T4["1"] --- T5["0"] --- T6["..."]
     end
     Head(("Tête")) --> T3
-    State["État : q_read\n(Contrôle fini)"] --- Head
+    State["État : q_read\n("Contrôle fini")"] --- Head
 ```
 
 ### Le problème de l'arrêt ( [Halting Problem](https://kenji.blog/fr/p/turing-machine-computability/) )

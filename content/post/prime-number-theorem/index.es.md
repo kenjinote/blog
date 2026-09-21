@@ -36,8 +36,8 @@ A medida que los valores se hacen más grandes, encontrar números primos se vue
 ```mermaid
 graph TD;
     A["Número natural x"] -->|"Contar números primos"| B["Función contadora de números primos π(x)"];
-    B -->|"Aproximar"| C["x / ln(x)"];
-    C -->|"Aumentar la precisión"| D["Integral logarítmica Li(x)"];
+    B -->|"Aproximar"| C["x / ln("x")"];
+    C -->|"Aumentar la precisión"| D["Integral logarítmica Li("x")"];
 ```
 
 ## Contexto histórico: De la conjetura de Gauss a la demostración

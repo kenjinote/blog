@@ -51,14 +51,14 @@ Enter "Shor's Algorithm," announced by Peter Shor in 1994. This algorithm was gr
 
 ```mermaid
 graph TD
-    A[Input number N to be factored] --> B[Select a random integer a]
+    A["Input number N to be factored"] --> B["Select a random integer a"]
     B --> C{Greatest Common Divisor<br>of a and N}
-    C -->|"Greater than 1"| D[Luckily discovered a prime factor!]
-    C -->|"1 Mutually prime"| E[Quantum computer takes the stage]
-    E --> F[Find the period r of the function<br>f_x = a^x mod N<br>using Quantum Fourier Transform]
+    C -->|"Greater than 1"| D["Luckily discovered a prime factor!"]
+    C -->|"1 Mutually prime"| E["Quantum computer takes the stage"]
+    E --> F["Find the period r of the function<br>f_x = a^x mod N<br>using Quantum Fourier Transform"]
     F --> G{Is period r even and<br>a^r/2 ≢ -1 mod N?}
-    G -->|"Yes"| H[Calculate greatest common divisor gcd_a^r/2 ± 1, N]
-    H --> I((Prime factorization successful!))
+    G -->|"Yes"| H["Calculate greatest common divisor gcd_a^r/2 ± 1, N"]
+    H --> I(("Prime factorization successful!"))
     G -->|"No"| B
 ```
 

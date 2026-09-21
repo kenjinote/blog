@@ -171,14 +171,14 @@ To intuitively understand the difference between GNFS and Shor's algorithm, we p
 
 ```mermaid
 graph TD
-    A[Initial State: 0...0] --> B[Superposition of all states via Hadamard Transform]
-    B --> C[Modular exponentiation a^x mod N]
-    C -->|"Quantum Entanglement"| D[Collapse to a state with periodicity]
-    D --> E[Quantum Fourier Transform QFT]
-    E -->|"Probability amplification via interference"| F[Measurement: Obtain y]
-    F --> G[Classical processing: Continued Fraction Expansion]
-    G --> H[Discovery of period r]
-    H --> I[Calculate prime factors of N]
+    A["Initial State: 0...0"] --> B["Superposition of all states via Hadamard Transform"]
+    B --> C["Modular exponentiation a^x mod N"]
+    C -->|"Quantum Entanglement"| D["Collapse to a state with periodicity"]
+    D --> E["Quantum Fourier Transform QFT"]
+    E -->|"Probability amplification via interference"| F["Measurement: Obtain y"]
+    F --> G["Classical processing: Continued Fraction Expansion"]
+    G --> H["Discovery of period r"]
+    H --> I["Calculate prime factors of N"]
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#bbf,stroke:#333,stroke-width:2px

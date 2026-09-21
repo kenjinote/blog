@@ -313,8 +313,8 @@ int main() {
 
 ```mermaid
 graph LR
-    TrialDivision["परीक्षण विभाजन विधि (O(√N))"] --> Fermat["फर्मेंट टेस्ट (O(log N), कमजोरियाँ हैं)"]
-    Fermat --> MillerRabin["मिलर-राबिन विधि (O(log N), नियतात्मक बनाया जा सकता है)"]
+    TrialDivision["परीक्षण विभाजन विधि (O("√N"))"] --> Fermat["फर्मेंट टेस्ट (O("log N"), कमजोरियाँ हैं)"]
+    Fermat --> MillerRabin["मिलर-राबिन विधि (O("log N"), नियतात्मक बनाया जा सकता है)"]
     MillerRabin --> Montgomery["+ मोंटगोमरी गुणन (स्थिरांक-गुणक गति वृद्धि)"]
     
     style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px

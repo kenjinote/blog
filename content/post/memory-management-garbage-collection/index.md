@@ -43,19 +43,19 @@ tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]
 
 ```mermaid
 graph TD
-    OS[オペレーティングシステム] --> MMU[メモリ管理ユニット / MMU]
-    MMU --> VM[プロセスの仮想メモリ空間]
+    OS["オペレーティングシステム"] --> MMU["メモリ管理ユニット / MMU"]
+    MMU --> VM["プロセスの仮想メモリ空間"]
     
     subgraph 仮想メモリマッピング
-        VM --> Text[テキスト領域 (Read-Only)]
-        VM --> Data[データ / BSS領域]
-        VM --> Heap[ヒープ領域 ↓ 動的に拡張]
-        VM --> Gap[未割り当て空間]
-        VM --> Stack[スタック領域 ↑ 動的に拡張]
+        VM --> Text["テキスト領域 (Read-Only)"]
+        VM --> Data["データ / BSS領域"]
+        VM --> Heap["ヒープ領域 ↓ 動的に拡張"]
+        VM --> Gap["未割り当て空間"]
+        VM --> Stack["スタック領域 ↑ 動的に拡張"]
     end
     
-    Heap -.-> |アロケータによる管理| Frag[内部 / 外部断片化の発生]
-    Stack -.-> |再帰呼び出し過多| Overflow[スタックオーバーフロー]
+    Heap -.-> |アロケータによる管理| Frag["内部 / 外部断片化の発生"]
+    Stack -.-> |再帰呼び出し過多| Overflow["スタックオーバーフロー"]
 ```
 
 ---
@@ -137,17 +137,17 @@ JavaのGCは「到達可能性（ Reachability ）」という概念に基づい
 ```mermaid
 graph TD
     subgraph "GC Roots"
-        ThreadStack[スレッドスタック]
-        StaticClass[静的クラス変数]
+        ThreadStack["スレッドスタック"]
+        StaticClass["静的クラス変数"]
     end
     
-    ThreadStack --> ObjA[オブジェクトA (Marked)]
-    StaticClass --> ObjB[オブジェクトB (Marked)]
+    ThreadStack --> ObjA["オブジェクトA (Marked)"]
+    StaticClass --> ObjB["オブジェクトB (Marked)"]
     
-    ObjA --> ObjC[オブジェクトC (Marked)]
-    ObjB --> ObjD[オブジェクトD (Marked)]
+    ObjA --> ObjC["オブジェクトC (Marked)"]
+    ObjB --> ObjD["オブジェクトD (Marked)"]
     
-    ObjE[オブジェクトE (Unreachable)] --> ObjF[オブジェクトF (Unreachable)]
+    ObjE["オブジェクトE (Unreachable)"] --> ObjF["オブジェクトF (Unreachable)"]
     
     style ObjA fill:#9f9,stroke:#333
     style ObjB fill:#9f9,stroke:#333

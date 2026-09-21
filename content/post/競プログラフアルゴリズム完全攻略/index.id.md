@@ -115,11 +115,11 @@ Dengan menggunakan antrean prioritas (`std::priority_queue`), kita dapat mengamb
 
 ```mermaid
 graph TD
-    S["Titik Awal S(0)"] -- 2 --> A["Simpul A(2)"]
-    S["Titik Awal S(0)"] -- 5 --> B["Simpul B(5)"]
-    A["Simpul A(2)"] -- 1 --> B["Simpul B(3)"]
-    A["Simpul A(2)"] -- 4 --> C["Simpul C(6)"]
-    B["Simpul B(3)"] -- 1 --> C["Simpul C(4)"]
+    S["Titik Awal S("0")"] -- 2 --> A["Simpul A("2")"]
+    S["Titik Awal S("0")"] -- 5 --> B["Simpul B("5")"]
+    A["Simpul A("2")"] -- 1 --> B["Simpul B("3")"]
+    A["Simpul A("2")"] -- 4 --> C["Simpul C("6")"]
+    B["Simpul B("3")"] -- 1 --> C["Simpul C("4")"]
 ```
 Seperti terlihat pada gambar di atas, biaya untuk langsung dari S ke B adalah 5, tetapi dapat dicapai dengan biaya 3 jika melalui A. Algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) melakukan optimisasi seperti ini.
 

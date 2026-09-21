@@ -39,8 +39,8 @@ Dies bedeutet, dass sich bei einer Verdoppelung der Bitzahl die Rechenzeit für 
 ```mermaid
 graph TD
     A["Erhöhung der Eingabegröße (Anzahl der Bits) N"] --> B{"Wahl des Algorithmus"}
-    B -->|"Klassisch: Zahlkörpersieb"| C["Subexponentielle Erhöhung O(exp(...))"]
-    B -->|"Quanten: Shors Algorithmus"| D["Polynomielle Zeit O((log N)^3)"]
+    B -->|"Klassisch: Zahlkörpersieb"| C["Subexponentielle Erhöhung O("exp(..."))"]
+    B -->|"Quanten: Shors Algorithmus"| D["Polynomielle Zeit O("(log N")^3)"]
     C --> E["Jahrtausende bis Milliarden von Jahren (unentschlüsselbar)"]
     D --> F["Wenige Minuten bis Stunden (Entschlüsselung in realistischer Zeit)"]
 ```
@@ -56,12 +56,12 @@ Der Gesamtablauf des Algorithmus ist wie folgt:
 ```mermaid
 graph TD
     A["Eingabe: Zusammengesetzte Zahl N, die faktorisiert werden soll"] --> B["Wähle Zufallszahl a, sodass a < N"]
-    B --> C{"gcd(a, N) > 1 ?"}
-    C -- Yes --> D["Gibt den trivialen Faktor gcd(a, N) aus und beendet"]
-    C -- No --> E["Finde Periode r von f(x) = a^x mod N mit Quantenalgorithmus"]
+    B --> C{"gcd("a, N") > 1 ?"}
+    C -- Yes --> D["Gibt den trivialen Faktor gcd("a, N") aus und beendet"]
+    C -- No --> E["Finde Periode r von f("x") = a^x mod N mit Quantenalgorithmus"]
     E --> F{"Ist r gerade und a^(r/2) ≢ -1 mod N ?"}
     F -- No --> B
-    F -- Yes --> G["Berechne Faktoren p = gcd(a^(r/2) - 1, N), q = gcd(a^(r/2) + 1, N)"]
+    F -- Yes --> G["Berechne Faktoren p = gcd("a^(r/2") - 1, N), q = gcd("a^(r/2") + 1, N)"]
     G --> H["Ausgabe: p, q"]
 ```
 

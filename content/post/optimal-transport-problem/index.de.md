@@ -27,7 +27,7 @@ Die Kosten werden normalerweise als Produkt aus der "bewegten Sandmenge" und der
 ```mermaid
 flowchart LR
     A["Sandhaufen (Angebot)"] -->|"Transport"| B["Loch (Nachfrage)"]
-    C["Ort x"] -->|"Entfernung d(x, y)"| D["Ort y"]
+    C["Ort x"] -->|"Entfernung d("x, y")"| D["Ort y"]
 ```
 
 Mathematisch ausgedrückt: Sei die Verteilung des ursprünglichen Sandhaufens ein Wahrscheinlichkeitsmaß $\mu$ auf $X$ und die Verteilung des Lochs ein Wahrscheinlichkeitsmaß $\nu$ auf $Y$.

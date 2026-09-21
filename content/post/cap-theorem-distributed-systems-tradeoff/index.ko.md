@@ -135,8 +135,8 @@ sequenceDiagram
     participant Secondary as "Secondary Node (B)"
     
     Note over Primary, Secondary: "통상 가동 시 (No Partition)"
-    Client->>Primary: "Write(V=1)"
-    Primary->>Secondary: "Replicate(V=1)"
+    Client->>Primary: "Write("V=1")"
+    Primary->>Secondary: "Replicate("V=1")"
     Secondary-->>Primary: "Ack"
     Primary-->>Client: "Success (Write Confirm)"
     Client->>Primary: "Read()"
@@ -148,7 +148,7 @@ sequenceDiagram
     Note over Primary: "프라이머리(A)는 다른 과반수의 노드와<br/>통신할 수 없게 된 것을 감지"
     Note over Primary: "프라이머리(A)는 자발적으로<br/>세컨더리로 강등 (Step Down)"
     
-    Client->>Primary: "Write(V=2)"
+    Client->>Primary: "Write("V=2")"
     Primary-->>Client: "Error (Not Primary) - 가용성 저하"
     
     Client->>Secondary: "Read()"
@@ -184,7 +184,7 @@ sequenceDiagram
     
     Note over NodeA, NodeB: "네트워크 분단 발생! (서로 통신 불가)"
     
-    Client->>NodeA: "Write(V=1)"
+    Client->>NodeA: "Write("V=1")"
     Note over NodeA: "자신(로컬)의 스토리지에 쓰기"
     NodeA-xNodeB: "Replicate (Fail)"
     Note over NodeA: "힌트(Hinted Handoff)로서<br/>B를 향한 데이터를 로컬에 유지"

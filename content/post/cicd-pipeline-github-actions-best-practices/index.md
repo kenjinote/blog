@@ -39,17 +39,17 @@ CIの延長線上にあり、リリース可能な状態のソフトウェアを
 
 ```mermaid
 flowchart LR
-    A[開発者] -->|Push/Merge| B(ソース管理)
+    A["開発者"] -->|Push/Merge| B("ソース管理")
     subgraph CI [継続的インテグレーション]
         B --> C{ビルド}
         C --> D{テスト}
     end
     subgraph CD_Delivery [継続的デリバリー]
         D --> E{リリース準備}
-        E -->|手動承認| F[本番環境へデプロイ]
+        E -->|手動承認| F["本番環境へデプロイ"]
     end
     subgraph CD_Deployment [継続的デプロイメント]
-        D --> G[本番環境へ自動デプロイ]
+        D --> G["本番環境へ自動デプロイ"]
     end
 ```
 

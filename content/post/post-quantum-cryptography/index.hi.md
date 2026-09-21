@@ -40,15 +40,15 @@ description: 'सार्वजनिक-कुंजी क्रिप्ट�
 
 ```mermaid
 graph LR
-    PQC[पोस्ट-क्वांटम क्रिप्टोग्राफी PQC] --> L[लैटिस-आधारित क्रिप्टोग्राफी Lattice-based]
-    PQC --> H[हैश-आधारित क्रिप्टोग्राफी Hash-based]
-    PQC --> M[मल्टीवेरिएट क्रिप्टोग्राफी Multivariate]
-    PQC --> C[कोड-आधारित क्रिप्टोग्राफी Code-based]
+    PQC["पोस्ट-क्वांटम क्रिप्टोग्राफी PQC"] --> L["लैटिस-आधारित क्रिप्टोग्राफी Lattice-based"]
+    PQC --> H["हैश-आधारित क्रिप्टोग्राफी Hash-based"]
+    PQC --> M["मल्टीवेरिएट क्रिप्टोग्राफी Multivariate"]
+    PQC --> C["कोड-आधारित क्रिप्टोग्राफी Code-based"]
     
-    L --> L1(FIPS 203: ML-KEM)
-    L --> L2(FIPS 204: ML-DSA)
+    L --> L1("FIPS 203: ML-KEM")
+    L --> L2("FIPS 204: ML-DSA")
     
-    H --> H1(FIPS 205: SLH-DSA)
+    H --> H1("FIPS 205: SLH-DSA")
     
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```

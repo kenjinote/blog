@@ -42,15 +42,15 @@ Various PQC algorithms have been proposed based on mathematical hard problems (s
 
 ```mermaid
 graph LR
-    PQC[Post-Quantum Cryptography PQC] --> L[Lattice-based Cryptography]
-    PQC --> H[Hash-based Cryptography]
-    PQC --> M[Multivariate Cryptography]
-    PQC --> C[Code-based Cryptography]
+    PQC["Post-Quantum Cryptography PQC"] --> L["Lattice-based Cryptography"]
+    PQC --> H["Hash-based Cryptography"]
+    PQC --> M["Multivariate Cryptography"]
+    PQC --> C["Code-based Cryptography"]
     
-    L --> L1(FIPS 203: ML-KEM)
-    L --> L2(FIPS 204: ML-DSA)
+    L --> L1("FIPS 203: ML-KEM")
+    L --> L2("FIPS 204: ML-DSA")
     
-    H --> H1(FIPS 205: SLH-DSA)
+    H --> H1("FIPS 205: SLH-DSA")
     
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```

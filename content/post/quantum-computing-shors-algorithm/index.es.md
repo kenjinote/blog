@@ -197,7 +197,7 @@ La parte de computación cuántica del algoritmo de Shor procede con los siguien
 ```mermaid
 sequenceDiagram
     participant Q_Reg1 as "1er Registro (x)"
-    participant Q_Reg2 as "2do Registro (f(x))"
+    participant Q_Reg2 as "2do Registro (f("x"))"
     
     Note over Q_Reg1,Q_Reg2: "1. Inicialización: Todos los bits en |0>"
     Q_Reg1->>Q_Reg1: "2. Transformada de Hadamard (H⊗n) <br/>Creación de superposición de todos los estados"

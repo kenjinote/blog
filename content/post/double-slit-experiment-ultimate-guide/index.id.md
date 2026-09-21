@@ -36,10 +36,10 @@ Namun, seiring dengan akumulasi titik-titik elektron yang tak terhitung jumlahny
 
 ```mermaid
 graph TD
-    A[Pistol Elektron / Sumber Cahaya] -->|"Menembakkan partikel satu per satu"| B(Dinding dengan Celah Ganda)
+    A["Pistol Elektron / Sumber Cahaya"] -->|"Menembakkan partikel satu per satu"| B("Dinding dengan Celah Ganda")
     B -->|"Celah 1"| C{Berinterferensi sebagai gelombang?}
     B -->|"Celah 2"| C
-    C -->|"Mencapai layar"| D[Pola interferensi muncul saat terakumulasi]
+    C -->|"Mencapai layar"| D["Pola interferensi muncul saat terakumulasi"]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
     classDef highlight fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px;
@@ -70,12 +70,12 @@ Namun, karena otoritas mutlak dan pengaruh Newton di komunitas sains pada saat i
 
 ```mermaid
 graph TD
-    A[Pencarian Hakikat Cahaya] --> B[Abad ke-17: Era Revolusi Sains]
+    A["Pencarian Hakikat Cahaya"] --> B["Abad ke-17: Era Revolusi Sains"]
     B --> C("Teori Partikel Newton (1704)")
     B --> D("Teori Gelombang Huygens (1690)")
-    C -->|"Otoritas Newton yang sangat besar"| E[Abad ke-18: Dominasi Jangka Panjang Teori Partikel]
+    C -->|"Otoritas Newton yang sangat besar"| E["Abad ke-18: Dominasi Jangka Panjang Teori Partikel"]
     D -.->|"Stagnan tanpa mendapatkan dukungan"| E
-    E --> F[Awal Abad ke-19: Pergeseran Paradigma]
+    E --> F["Awal Abad ke-19: Pergeseran Paradigma"]
 ```
 ## 2.2 Eksperimen Celah Ganda Cahaya Thomas Young (1801) dan Kemenangan Teori Gelombang
 

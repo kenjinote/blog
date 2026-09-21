@@ -87,15 +87,15 @@ sequenceDiagram
     participant PeerB as "क्लाइंट बी"
 
     PeerA->>PeerA: "createOffer()"
-    PeerA->>PeerA: "setLocalDescription(offer)"
+    PeerA->>PeerA: "setLocalDescription("offer")"
     PeerA->>Sig: "Offer भेजें (SDP)"
     Sig->>PeerB: "Offer फॉरवर्ड करें"
-    PeerB->>PeerB: "setRemoteDescription(offer)"
+    PeerB->>PeerB: "setRemoteDescription("offer")"
     PeerB->>PeerB: "createAnswer()"
-    PeerB->>PeerB: "setLocalDescription(answer)"
+    PeerB->>PeerB: "setLocalDescription("answer")"
     PeerB->>Sig: "Answer भेजें (SDP)"
     Sig->>PeerA: "Answer फॉरवर्ड करें"
-    PeerA->>PeerA: "setRemoteDescription(answer)"
+    PeerA->>PeerA: "setRemoteDescription("answer")"
 ```
 
 ### 2.3 सिग्नलिंग सर्वर का उदाहरण कार्यान्वयन (Node.js + WebSocket)

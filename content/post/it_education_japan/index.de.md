@@ -37,7 +37,7 @@ flowchart TD
     B -->|"Mangelndes Verständnis von Variablen/statischer Typisierung"| D["Abbruch (Hürde der Typen)"]
     B -->|"Erfolgreicher Übergang"| E["Oberschule: Information I (Grundlagen in Python/JavaScript etc.)"]
     E --> F{"Hürde bei Algorithmus-Design und Datenstrukturen"}
-    F -->|"Unverständnis von Zeit- und Speicherkomplexität"| G["Ineffizienter Code (Leistungsabfall durch Massenproduktion von O(N^2))"]
+    F -->|"Unverständnis von Zeit- und Speicherkomplexität"| G["Ineffizienter Code (Leistungsabfall durch Massenproduktion von O("N^2"))"]
     F -->|"Blackboxing von Speicherverwaltung und Referenzen"| H["Coder, der sich auf oberflächliche API-Aufrufe beschränkt"]
     F -->|"Konzeptioneller Durchbruch"| I["Echtes CS-Lernen (C/C++, Java, Low-Level-Architektur)"]
     I --> J["Hochqualifizierte IT-Profis, die die Industrie dringend benötigt"]

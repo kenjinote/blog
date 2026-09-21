@@ -69,7 +69,7 @@ Poin penting yang perlu diperhatikan di sini adalah bahwa suku konstanta $c_0$ b
 
 ```mermaid
 graph TD
-    A["Matriks persegi A"] --> B["Hitung polinomial karakteristik p(λ)"]
+    A["Matriks persegi A"] --> B["Hitung polinomial karakteristik p("λ")"]
     B --> C["Substitusi λ = A"]
     C -->|"Terapkan teorema"| D["Diperoleh matriks nol O"]
 ```

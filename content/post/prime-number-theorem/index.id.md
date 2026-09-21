@@ -36,8 +36,8 @@ Semakin besar angkanya, semakin sulit menemukan bilangan prima, dan jarak kemunc
 ```mermaid
 graph TD;
     A["Bilangan natural x"] -->|"Menghitung bilangan prima"| B["Fungsi penghitungan bilangan prima π(x)"];
-    B -->|"Mendekati"| C["x / ln(x)"];
-    C -->|"Meningkatkan akurasi"| D["Integral logaritmik Li(x)"];
+    B -->|"Mendekati"| C["x / ln("x")"];
+    C -->|"Meningkatkan akurasi"| D["Integral logaritmik Li("x")"];
 ```
 
 ## Latar Belakang Sejarah: Dari Dugaan Gauss hingga Pembuktian

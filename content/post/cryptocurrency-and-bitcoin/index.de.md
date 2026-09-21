@@ -80,12 +80,12 @@ In der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract
 
 ```mermaid
 flowchart TD
-    Root["Merkle-Wurzel: Hash(H12 + H34)"] --> H12["Hash(H1 + H2)"]
-    Root --> H34["Hash(H3 + H4)"]
-    H12 --> H1["Hash(Tx1)"]
-    H12 --> H2["Hash(Tx2)"]
-    H34 --> H3["Hash(Tx3)"]
-    H34 --> H4["Hash(Tx4)"]
+    Root["Merkle-Wurzel: Hash("H12 + H34")"] --> H12["Hash("H1 + H2")"]
+    Root --> H34["Hash("H3 + H4")"]
+    H12 --> H1["Hash("Tx1")"]
+    H12 --> H2["Hash("Tx2")"]
+    H34 --> H3["Hash("Tx3")"]
+    H34 --> H4["Hash("Tx4")"]
 ```
 
 Wenn Transaktionsdaten auch nur geringfügig geändert werden, ändert sich der Hash des Blattknotens, und folglich wird der Wert der Merkle-Wurzel ein völlig anderer. Dies macht es möglich, eine einzige Manipulation aus einer riesigen Menge von Transaktionsdaten sofort zu erkennen.

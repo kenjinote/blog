@@ -87,15 +87,15 @@ sequenceDiagram
     participant PeerB as "Client B"
 
     PeerA->>PeerA: "createOffer()"
-    PeerA->>PeerA: "setLocalDescription(offer)"
+    PeerA->>PeerA: "setLocalDescription("offer")"
     PeerA->>Sig: "Offer senden (SDP)"
     Sig->>PeerB: "Offer weiterleiten"
-    PeerB->>PeerB: "setRemoteDescription(offer)"
+    PeerB->>PeerB: "setRemoteDescription("offer")"
     PeerB->>PeerB: "createAnswer()"
-    PeerB->>PeerB: "setLocalDescription(answer)"
+    PeerB->>PeerB: "setLocalDescription("answer")"
     PeerB->>Sig: "Answer senden (SDP)"
     Sig->>PeerA: "Answer weiterleiten"
-    PeerA->>PeerA: "setRemoteDescription(answer)"
+    PeerA->>PeerA: "setRemoteDescription("answer")"
 ```
 
 ### 2.3 Implementierungsbeispiel eines Signalisierungsservers (Node.js + WebSocket)

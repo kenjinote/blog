@@ -34,12 +34,12 @@ WebRTCは単一のプロトコルではなく、複数のプロトコルとAPI�
 
 ```mermaid
 graph TD
-    A[Client A] <-->|Signaling WebSocket等| S((Signaling Server))
-    B[Client B] <-->|Signaling WebSocket等| S
-    A <-->|STUN Binding Request| STUN((STUN Server))
+    A["Client A"] <-->|Signaling WebSocket等| S(("Signaling Server"))
+    B["Client B"] <-->|Signaling WebSocket等| S
+    A <-->|STUN Binding Request| STUN(("STUN Server"))
     B <-->|STUN Binding Request| STUN
     A -.->|P2P Media/Data| B
-    A <-->|Relay Data| TURN((TURN Server))
+    A <-->|Relay Data| TURN(("TURN Server"))
     B <-->|Relay Data| TURN
     TURN -.->|Fallback| B
 ```
@@ -86,15 +86,15 @@ sequenceDiagram
     participant PeerB as クライアントB
 
     PeerA->>PeerA: createOffer()
-    PeerA->>PeerA: setLocalDescription(offer)
+    PeerA->>PeerA: setLocalDescription("offer")
     PeerA->>Sig: Offerを送信 (SDP)
     Sig->>PeerB: Offerを転送
-    PeerB->>PeerB: setRemoteDescription(offer)
+    PeerB->>PeerB: setRemoteDescription("offer")
     PeerB->>PeerB: createAnswer()
-    PeerB->>PeerB: setLocalDescription(answer)
+    PeerB->>PeerB: setLocalDescription("answer")
     PeerB->>Sig: Answerを送信 (SDP)
     Sig->>PeerA: Answerを転送
-    PeerA->>PeerA: setRemoteDescription(answer)
+    PeerA->>PeerA: setRemoteDescription("answer")
 ```
 
 ### 2.3 シグナリングサーバーの実装例 (Node.js + WebSocket)
@@ -271,9 +271,9 @@ SFUは、映像を合成せず、受け取ったメディアストリームを�
 
 ```mermaid
 graph TD
-    A[Client A] -->|1上りストリーム| SFU((SFU Server))
-    B[Client B] -->|1上りストリーム| SFU
-    C[Client C] -->|1上りストリーム| SFU
+    A["Client A"] -->|1上りストリーム| SFU(("SFU Server"))
+    B["Client B"] -->|1上りストリーム| SFU
+    C["Client C"] -->|1上りストリーム| SFU
     SFU -->|A,Cの映像| B
     SFU -->|B,Cの映像| A
     SFU -->|A,Bの映像| C

@@ -35,10 +35,10 @@ The architecture of cloud processing using FHE is completely different from trad
 
 ```mermaid
 graph TD
-    A["Client (Holds secret key)"] -->|"1. Encrypt plaintext x: E(x)"| B["Cloud Server (Encrypted data only)"]
-    B -->|"2. Apply function f to ciphertext: E(f(x))"| B
-    B -->|"3. Ciphertext of calculation result E(y)"| A
-    A -->|"4. Decrypt with secret key: y = f(x)"| A
+    A["Client (Holds secret key)"] -->|"1. Encrypt plaintext x: E("x")"| B["Cloud Server (Encrypted data only)"]
+    B -->|"2. Apply function f to ciphertext: E("f(x"))"| B
+    B -->|"3. Ciphertext of calculation result E("y")"| A
+    A -->|"4. Decrypt with secret key: y = f("x")"| A
     
     style A fill:#d4edda,stroke:#28a745
     style B fill:#f8d7da,stroke:#dc3545
@@ -136,7 +136,7 @@ Intuitively, it is the operation of "'decrypting' the ciphertext to clean it whi
 ```mermaid
 graph LR
     A["High noise ciphertext C_noisy"] --> B["Homomorphic decryption circuit (Eval_Dec)"]
-    C["Encrypted secret key E(sk)"] --> B
+    C["Encrypted secret key E("sk")"] --> B
     B --> D["Low noise ciphertext C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

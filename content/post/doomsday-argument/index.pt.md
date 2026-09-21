@@ -54,8 +54,8 @@ graph TD
         A["Extrai-se 1 bola"] -->|"O número era '7'"| B{"Qual é a urna?"}
         B -->|"Probabilidades a priori são iguais"| C["Hipótese 1: Urna c/ 10 bolas"]
         B -->|"Probabilidades a priori são iguais"| D["Hipótese 2: Urna c/ 1000 bolas"]
-        C -.->|"P(E|H1) = 1/10"| E["A verosimilhança da Hipótese 1 é maior"]
-        D -.->|"P(E|H2) = 1/1000"| E
+        C -.->|"P("E|H1") = 1/10"| E["A verosimilhança da Hipótese 1 é maior"]
+        D -.->|"P("E|H2") = 1/1000"| E
     end
 ```
 
@@ -188,9 +188,9 @@ Na perspetiva e matriz à formatações em deduções - Se no cômputo à (A exc
 ```mermaid
 graph TD
     subgraph "Diferenças consoante a Configuração da Classe de Referência"
-        A["O que contamos como nós próprios?"] -->|"Apenas Homo Sapiens"| B["N = 100 mil milhões\n(Prob. de extinção precoce alta)"]
-        A -->|"Qualquer ser consciente"| C["N à escala cósmica\n(A conclusão muda drasticamente)"]
-        A -->|"Humanos + Pós-humanos"| D["N = Gigantesco\n(Possibilidade de evolução)"]
+        A["O que contamos como nós próprios?"] -->|"Apenas Homo Sapiens"| B["N = 100 mil milhões\n("Prob. de extinção precoce alta")"]
+        A -->|"Qualquer ser consciente"| C["N à escala cósmica\n("A conclusão muda drasticamente")"]
+        A -->|"Humanos + Pós-humanos"| D["N = Gigantesco\n("Possibilidade de evolução")"]
     end
 ```
 

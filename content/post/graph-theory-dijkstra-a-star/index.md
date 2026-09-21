@@ -50,14 +50,14 @@ $$
 
 ```mermaid
 graph LR
-    A((A)) -- 4 --> B((B))
-    A -- 2 --> C((C))
-    B -- 5 --> D((D))
+    A(("A")) -- 4 --> B(("B"))
+    A -- 2 --> C(("C"))
+    B -- 5 --> D(("D"))
     C -- 1 --> B
     C -- 8 --> D
-    C -- 10 --> E((E))
+    C -- 10 --> E(("E"))
     D -- 2 --> E
-    D -- 6 --> Z((Z))
+    D -- 6 --> Z(("Z"))
     E -- 3 --> Z
 ```
 
@@ -261,19 +261,19 @@ def reconstruct_path(came_from, current):
 ```mermaid
 graph TD
     subgraph Dijkstra
-        S1((Start)) --> A1(( ))
-        S1 --> B1(( ))
-        S1 --> C1(( ))
-        A1 --> D1(( ))
-        B1 --> Goal1((Goal))
-        C1 --> E1(( ))
+        S1(("Start")) --> A1((" "))
+        S1 --> B1((" "))
+        S1 --> C1((" "))
+        A1 --> D1((" "))
+        B1 --> Goal1(("Goal"))
+        C1 --> E1((" "))
         style S1 fill:#4a9,stroke:#333
         style Goal1 fill:#f94,stroke:#333
     end
 
     subgraph A_Star
-        S2((Start)) --> B2(( ))
-        B2 --> Goal2((Goal))
+        S2(("Start")) --> B2((" "))
+        B2 --> Goal2(("Goal"))
         style S2 fill:#4a9,stroke:#333
         style Goal2 fill:#f94,stroke:#333
     end

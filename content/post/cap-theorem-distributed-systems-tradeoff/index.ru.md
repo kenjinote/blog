@@ -135,8 +135,8 @@ sequenceDiagram
     participant Secondary as "Secondary Node (B)"
     
     Note over Primary, Secondary: "Нормальная работа (No Partition)"
-    Client->>Primary: "Write(V=1)"
-    Primary->>Secondary: "Replicate(V=1)"
+    Client->>Primary: "Write("V=1")"
+    Primary->>Secondary: "Replicate("V=1")"
     Secondary-->>Primary: "Ack"
     Primary-->>Client: "Success (Write Confirm)"
     Client->>Primary: "Read()"
@@ -148,7 +148,7 @@ sequenceDiagram
     Note over Primary: "Primary (A) обнаруживает, что не может<br/>общаться с большинством других узлов"
     Note over Primary: "Primary (A) добровольно<br/>понижается до Secondary (Step Down)"
     
-    Client->>Primary: "Write(V=2)"
+    Client->>Primary: "Write("V=2")"
     Primary-->>Client: "Error (Not Primary) - Доступность снижена"
     
     Client->>Secondary: "Read()"
@@ -184,7 +184,7 @@ sequenceDiagram
     
     Note over NodeA, NodeB: "Возникло разделение сети! (Не могут общаться друг с другом)"
     
-    Client->>NodeA: "Write(V=1)"
+    Client->>NodeA: "Write("V=1")"
     Note over NodeA: "Запись в свое (локальное) хранилище"
     NodeA-xNodeB: "Replicate (Fail)"
     Note over NodeA: "Сохраняет локально данные для B<br/>в качестве подсказки (Hinted Handoff)"

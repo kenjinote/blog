@@ -135,8 +135,8 @@ sequenceDiagram
     participant Secondary as "Secondary Node (B)"
     
     Note over Primary, Secondary: Normal Operation (No Partition)
-    Client->>Primary: Write(V=1)
-    Primary->>Secondary: Replicate(V=1)
+    Client->>Primary: Write("V=1")
+    Primary->>Secondary: Replicate("V=1")
     Secondary-->>Primary: Ack
     Primary-->>Client: Success (Write Confirm)
     Client->>Primary: Read()
@@ -148,7 +148,7 @@ sequenceDiagram
     Note over Primary: Primary (A) detects it can no longer<br/>communicate with the majority of other nodes
     Note over Primary: Primary (A) voluntarily<br/>steps down to Secondary
     
-    Client->>Primary: Write(V=2)
+    Client->>Primary: Write("V=2")
     Primary-->>Client: Error (Not Primary) - Availability drop
     
     Client->>Secondary: Read()
@@ -184,7 +184,7 @@ sequenceDiagram
     
     Note over NodeA, NodeB: Network Partition Occurs! (Cannot communicate with each other)
     
-    Client->>NodeA: Write(V=1)
+    Client->>NodeA: Write("V=1")
     Note over NodeA: Writes to its own (local) storage
     NodeA-xNodeB: Replicate (Fail)
     Note over NodeA: Holds data intended for B locally<br/>as a Hint (Hinted Handoff)

@@ -53,14 +53,14 @@ Aqui é onde entra o "Algoritmo de Shor", publicado por Peter Shor em 1994. Esse
 
 ```mermaid
 graph TD
-    A[Inserir o número N que se deseja fatorar] --> B[Selecionar um número inteiro aleatório a]
+    A["Inserir o número N que se deseja fatorar"] --> B["Selecionar um número inteiro aleatório a"]
     B --> C{Máximo divisor comum<br>entre a e N}
-    C -->|"Maior que 1"| D[Por sorte, um fator primo foi encontrado!]
-    C -->|"1 Primos entre si"| E[Vez do computador quântico]
-    E --> F[Encontrar o período r da<br>função f_x = a^x mod N por Transformação Quântica de Fourier]
+    C -->|"Maior que 1"| D["Por sorte, um fator primo foi encontrado!"]
+    C -->|"1 Primos entre si"| E["Vez do computador quântico"]
+    E --> F["Encontrar o período r da<br>função f_x = a^x mod N por Transformação Quântica de Fourier"]
     F --> G{O período r é par e<br>a^r/2 ≢ -1 mod N}
-    G -->|"Sim"| H[Calcular o máximo divisor comum gcd_a^r/2 ± 1, N]
-    H --> I((Fatoração bem sucedida!))
+    G -->|"Sim"| H["Calcular o máximo divisor comum gcd_a^r/2 ± 1, N"]
+    H --> I(("Fatoração bem sucedida!"))
     G -->|"Não"| B
 ```
 

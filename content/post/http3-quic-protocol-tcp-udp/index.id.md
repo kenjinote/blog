@@ -146,13 +146,13 @@ sequenceDiagram
     participant Server
     
     Note over Client, Server: "Kasus TCP/HTTP2 (Saat terjadi kehilangan paket)"
-    Client->>Server: "[Aliran1: Pkt1]", "[Aliran2: Pkt2]", "[Aliran1: Pkt3(Hilang)]"
+    Client->>Server: "[Aliran1: Pkt1]", "[Aliran2: Pkt2]", "[Aliran1: Pkt3("Hilang")]"
     Note right of Server: "Pkt1, Pkt2 tiba.<br/>Namun Pkt3 tidak datang sehingga keseluruhan berhenti."
     Client->>Server: "[Aliran2: Pkt4]"
     Note right of Server: "Pkt4 tiba, tetapi untuk menunggu pengiriman ulang Pkt3<br/>tidak dapat diteruskan ke aplikasi (HoL Blocking)"
     
     Note over Client, Server: "Kasus QUIC/HTTP3 (Saat terjadi kehilangan paket)"
-    Client->>Server: "[Aliran1: Pkt1]", "[Aliran2: Pkt2]", "[Aliran1: Pkt3(Hilang)]"
+    Client->>Server: "[Aliran1: Pkt1]", "[Aliran2: Pkt2]", "[Aliran1: Pkt3("Hilang")]"
     Note right of Server: "Pkt2 dari Aliran2 segera ke aplikasi."
     Client->>Server: "[Aliran2: Pkt4]"
     Note right of Server: "Pkt4 dari Aliran2 juga segera ke aplikasi.<br/>Hanya Aliran1 yang menunggu pengiriman ulang Pkt3. (Penyelesaian HoL)"

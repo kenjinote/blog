@@ -135,8 +135,8 @@ sequenceDiagram
     participant Secondary as "العقدة الثانوية (B)"
     
     Note over Primary, Secondary: "التشغيل الطبيعي (بدون تقسيم)"
-    Client->>Primary: Write(V=1)
-    Primary->>Secondary: Replicate(V=1)
+    Client->>Primary: Write("V=1")
+    Primary->>Secondary: Replicate("V=1")
     Secondary-->>Primary: Ack
     Primary-->>Client: "Success (تأكيد الكتابة)"
     Client->>Primary: Read()
@@ -148,7 +148,7 @@ sequenceDiagram
     Note over Primary: "تكتشف العقدة الأساسية (A) أنها فقدت الاتصال<br/>مع أغلبية العقد الأخرى"
     Note over Primary: "تتراجع العقدة الأساسية (A) طواعية<br/>إلى عقدة ثانوية (Step Down)"
     
-    Client->>Primary: Write(V=2)
+    Client->>Primary: Write("V=2")
     Primary-->>Client: "Error (ليست العقدة الأساسية) - انخفاض التوافر"
     
     Client->>Secondary: Read()
@@ -184,7 +184,7 @@ sequenceDiagram
     
     Note over NodeA, NodeB: "حدوث تقسيم للشبكة! (لا يمكن الاتصال ببعضهما البعض)"
     
-    Client->>NodeA: Write(V=1)
+    Client->>NodeA: Write("V=1")
     Note over NodeA: "الكتابة في التخزين (المحلي) الخاص بها"
     NodeA-xNodeB: Replicate (Fail)
     Note over NodeA: "الاحتفاظ بالبيانات الموجهة إلى B محليًا<br/>كتلميح (Hinted Handoff)"

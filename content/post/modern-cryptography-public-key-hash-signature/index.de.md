@@ -324,7 +324,7 @@ graph TD
     CA -->|"Stellt Zertifikat aus (Signatur)"| SubCA
     SubCA -->|"Stellt Zertifikat aus (Signatur)"| Server
     Server -->|"Präsentiert Serverzertifikat"| Client
-    Client -.->|"Hält öffentlichen Schlüssel der Root CA im Voraus\n(In Browser oder Betriebssystem integriert)"| CA
+    Client -.->|"Hält öffentlichen Schlüssel der Root CA im Voraus\n("In Browser oder Betriebssystem integriert")"| CA
     Client -->|"Überprüft die Zertifikatskette\nNutzt den öffentlichen Schlüssel der Root CA"| Server
 ```
 

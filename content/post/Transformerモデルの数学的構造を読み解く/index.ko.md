@@ -177,20 +177,20 @@ $$ \text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}_1, \dots, \text{head}_h
 
 ```mermaid
 graph TD
-    X["입력 X(Input X)"] --> Q1["Q1"]
+    X["입력 X("Input X")"] --> Q1["Q1"]
     X --> K1["K1"]
     X --> V1["V1"]
-    Q1 & K1 & V1 --> H1["헤드 1(Head 1)"]
+    Q1 & K1 & V1 --> H1["헤드 1("Head 1")"]
 
     X --> Q2["Q2"]
     X --> K2["K2"]
     X --> V2["V2"]
-    Q2 & K2 & V2 --> H2["헤드 2(Head 2)"]
+    Q2 & K2 & V2 --> H2["헤드 2("Head 2")"]
     
     X --> QN["..."]
     X --> KN["..."]
     X --> VN["..."]
-    QN & KN & VN --> HN["헤드 h(Head h)"]
+    QN & KN & VN --> HN["헤드 h("Head h")"]
 
     H1 & H2 & HN --> C["결합(Concatenate)"]
     C --> WO["WO 곱하기(Multiply by WO)"]

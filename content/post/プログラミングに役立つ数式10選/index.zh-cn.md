@@ -150,11 +150,11 @@ graph TD
   Extract --> W1["单词: '免费'"]
   Extract --> W2["单词: '金钱'"]
   Extract --> Wn["单词: '会议'"]
-  W1 --> Prob["计算 P(垃圾邮件 | 单词)"]
+  W1 --> Prob["计算 P("垃圾邮件 | 单词")"]
   W2 --> Prob
   Wn --> Prob
   Prob --> Bayes["应用贝叶斯定理"]
-  Bayes --> Class{"P(垃圾邮件) > 0.9?"}
+  Bayes --> Class{"P("垃圾邮件") > 0.9?"}
   Class -- 是 --> Spam["移至垃圾邮件文件夹"]
   Class -- 否 --> Ham["发送至收件箱"]
 ```
@@ -394,10 +394,10 @@ $$ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)} $$
 
 ```mermaid
 flowchart LR
-  Start["开始: 猜测初始值 x0"] --> Eval["计算 f(xn) 和 f'(xn)"]
-  Eval --> Check{"f(xn) ≈ 0 吗?"}
+  Start["开始: 猜测初始值 x0"] --> Eval["计算 f("xn") 和 f'(xn)"]
+  Eval --> Check{"f("xn") ≈ 0 吗?"}
   Check -- 是 --> Done["返回 xn 作为根"]
-  Check -- 否 --> Update["xn+1 = xn - f(xn) / f'(xn)"]
+  Check -- 否 --> Update["xn+1 = xn - f("xn") / f'(xn)"]
   Update --> Eval
 ```
 

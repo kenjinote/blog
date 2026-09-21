@@ -97,9 +97,9 @@ Cette droite où la partie réelle est de 1/2 est appelée la « droite critique
 graph TD
     A["Fonction zêta de Riemann ζ(s)"] --> B["Extension au plan complexe par prolongement analytique"]
     B --> C["Zéros triviaux (s = -2, -4, -6 ...)"]
-    B --> D["Zéros non triviaux (0 <= Re(s) <= 1)"]
+    B --> D["Zéros non triviaux (0 <= Re("s") <= 1)"]
     D --> E["Hypothèse de Riemann"]
-    E --> F["Tous les zéros non triviaux sont sur Re(s) = 1/2"]
+    E --> F["Tous les zéros non triviaux sont sur Re("s") = 1/2"]
     F --> G["Vers la preuve de la limite du terme d'erreur de la distribution des nombres premiers"]
 ```
 

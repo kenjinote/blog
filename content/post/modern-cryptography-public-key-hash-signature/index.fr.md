@@ -325,7 +325,7 @@ graph TD
     CA -->|"Émet le certificat (Signature)"| SubCA
     SubCA -->|"Émet le certificat (Signature)"| Server
     Server -->|"Présente le certificat du serveur"| Client
-    Client -.->|"Conserve la clé publique de la Root CA à l'avance\n(intégrée au navigateur ou à l'OS)"| CA
+    Client -.->|"Conserve la clé publique de la Root CA à l'avance\n("intégrée au navigateur ou à l'OS")"| CA
     Client -->|"Vérifie la chaîne de certificats\nUtilise la clé publique de la Root CA"| Server
 ```
 

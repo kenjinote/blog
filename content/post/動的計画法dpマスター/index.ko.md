@@ -91,18 +91,18 @@ def fib_naive(n):
 
 ```mermaid
 graph TD
-    A["fib(5)"] --> B["fib(4)"]
-    A --> C["fib(3)"]
-    B --> D["fib(3)"]
-    B --> E["fib(2)"]
-    C --> F["fib(2)"]
-    C --> G["fib(1)"]
-    D --> H["fib(2)"]
-    D --> I["fib(1)"]
-    E --> J["fib(1)"]
-    E --> K["fib(0)"]
-    F --> L["fib(1)"]
-    F --> M["fib(0)"]
+    A["fib("5")"] --> B["fib("4")"]
+    A --> C["fib("3")"]
+    B --> D["fib("3")"]
+    B --> E["fib("2")"]
+    C --> F["fib("2")"]
+    C --> G["fib("1")"]
+    D --> H["fib("2")"]
+    D --> I["fib("1")"]
+    E --> J["fib("1")"]
+    E --> K["fib("0")"]
+    F --> L["fib("1")"]
+    F --> M["fib("0")"]
 ```
 
 그림을 보면 `"fib(3)"` 이나 `"fib(2)"` 가 여러 번 평가되고 있는 것을 알 수 있습니다. 이것이 '부분 문제의 중복'입니다.
@@ -244,8 +244,8 @@ $$ dp[0][w] = 0, \quad dp[i][0] = 0 $$
 
 ```mermaid
 graph TD
-    A["dp[i-1][w] (아이템 i 스킵)"] --> C["Max: dp[i][w]"]
-    B["dp[i-1][w - weight[i]] + value[i] (아이템 i 선택)"] --> C
+    A["dp["i-1"][w] (아이템 i 스킵)"] --> C["Max: dp["i"][w]"]
+    B["dp["i-1"][w - weight["i"]] + value["i"] (아이템 i 선택)"] --> C
 ```
 
 ### 4-3. 바텀업 구현 (2차원 배열)
@@ -357,12 +357,12 @@ $$
 
 ```mermaid
 graph TD
-    subgraph "S[i-1] == T[j-1]"
-        A1["dp[i-1][j-1]"] --> B1["+1 --> dp[i][j]"]
+    subgraph "S["i-1"] == T["j-1"]"
+        A1["dp["i-1"][j-1]"] --> B1["+1 --> dp["i"][j]"]
     end
-    subgraph "S[i-1] != T[j-1]"
-        A2["dp[i-1][j]"] --> C2["Max --> dp[i][j]"]
-        B2["dp[i][j-1]"] --> C2
+    subgraph "S["i-1"] != T["j-1"]"
+        A2["dp["i-1"][j]"] --> C2["Max --> dp["i"][j]"]
+        B2["dp["i"][j-1]"] --> C2
     end
 ```
 

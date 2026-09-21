@@ -146,13 +146,13 @@ sequenceDiagram
     participant Server
     
     Note over Client, Server: "Caso TCP/HTTP2 (Quando ocorre perda de pacote)"
-    Client->>Server: "[Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3(Perda)]"
+    Client->>Server: "[Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3("Perda")]"
     Note right of Server: "Pkt1, Pkt2 chegam.<br/>No entanto, Pkt3 não chega, o que faz tudo parar."
     Client->>Server: "[Stream2: Pkt4]"
     Note right of Server: "Pkt4 chegou, mas aguarda a retransmissão do Pkt3<br/>Portanto, não pode ser passado para o aplicativo (HoL Blocking)"
     
     Note over Client, Server: "Caso QUIC/HTTP3 (Quando ocorre perda de pacote)"
-    Client->>Server: "[Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3(Perda)]"
+    Client->>Server: "[Stream1: Pkt1], [Stream2: Pkt2], [Stream1: Pkt3("Perda")]"
     Note right of Server: "Pkt2 do Stream2 vai imediatamente para o aplicativo."
     Client->>Server: "[Stream2: Pkt4]"
     Note right of Server: "Pkt4 do Stream2 também vai imediatamente para o aplicativo.<br/>Apenas Stream1 aguarda a retransmissão do Pkt3. (HoL Resolvido)"

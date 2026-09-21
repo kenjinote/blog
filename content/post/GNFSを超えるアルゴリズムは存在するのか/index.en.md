@@ -149,8 +149,8 @@ Considering recent optimized circuit implementations, it is said that it can be 
 
 ```mermaid
 graph LR
-  A["Classical Algorithm (GNFS)"] -->|"Limit"| B["Sub-exponential Time L_n[1/3]"]
-  C["Quantum Algorithm (Shor)"] -->|"Breakthrough"| D["Polynomial Time O((log n)^3)"]
+  A["Classical Algorithm (GNFS)"] -->|"Limit"| B["Sub-exponential Time L_n["1/3"]"]
+  C["Quantum Algorithm (Shor)"] -->|"Breakthrough"| D["Polynomial Time O("(log n")^3)"]
   B --> E["Continued use of RSA (Increase key length)"]
   D --> F["Complete collapse of RSA cryptography"]
 ```

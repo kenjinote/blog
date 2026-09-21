@@ -42,15 +42,15 @@ description: '公開鍵暗号は、量子コンピュータの実用化により
 
 ```mermaid
 graph LR
-    PQC[耐量子計算機暗号 PQC] --> L[格子暗号 Lattice-based]
-    PQC --> H[ハッシュベース暗号 Hash-based]
-    PQC --> M[多変数多項式暗号 Multivariate]
-    PQC --> C[符号ベース暗号 Code-based]
+    PQC["耐量子計算機暗号 PQC"] --> L["格子暗号 Lattice-based"]
+    PQC --> H["ハッシュベース暗号 Hash-based"]
+    PQC --> M["多変数多項式暗号 Multivariate"]
+    PQC --> C["符号ベース暗号 Code-based"]
     
-    L --> L1(FIPS 203: ML-KEM)
-    L --> L2(FIPS 204: ML-DSA)
+    L --> L1("FIPS 203: ML-KEM")
+    L --> L2("FIPS 204: ML-DSA")
     
-    H --> H1(FIPS 205: SLH-DSA)
+    H --> H1("FIPS 205: SLH-DSA")
     
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```

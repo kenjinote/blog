@@ -197,7 +197,7 @@ $49 - 1 = 48$، $\gcd(48, 15) = 3$
 ```mermaid
 sequenceDiagram
     participant Q_Reg1 as "السجل الأول (x)"
-    participant Q_Reg2 as "السجل الثاني (f(x))"
+    participant Q_Reg2 as "السجل الثاني (f("x"))"
     
     Note over Q_Reg1,Q_Reg2: "1. التهيئة: جميع البتات إلى |0>"
     Q_Reg1->>Q_Reg1: "2. تحويل هادامارد (H⊗n) <br/>إنشاء تراكب لجميع الحالات"

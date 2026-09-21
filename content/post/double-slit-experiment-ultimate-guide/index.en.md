@@ -36,10 +36,10 @@ However, as countless dots of electrons accumulated on the screen, what emerged 
 
 ```mermaid
 graph TD
-    A[Electron Gun / Light Source] -->|"Fires particles one by one"| B(Wall with double slits)
+    A["Electron Gun / Light Source"] -->|"Fires particles one by one"| B("Wall with double slits")
     B -->|"Slit 1"| C{Interferes as a wave?}
     B -->|"Slit 2"| C
-    C -->|"Reaches the screen"| D[Interference pattern appears when accumulated]
+    C -->|"Reaches the screen"| D["Interference pattern appears when accumulated"]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
     classDef highlight fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px;
@@ -71,12 +71,12 @@ However, due to Newton's absolute authority and influence in the scientific comm
 
 ```mermaid
 graph TD
-    A[Quest for the True Nature of Light] --> B[17th Century: Scientific Revolution Period]
+    A["Quest for the True Nature of Light"] --> B["17th Century: Scientific Revolution Period"]
     B --> C("Newton's Particle Theory (1704)")
     B --> D("Huygens' Wave Theory (1690)")
-    C -->|"Newton's immense authority"| E[18th Century: Long-term dominance of Particle Theory]
+    C -->|"Newton's immense authority"| E["18th Century: Long-term dominance of Particle Theory"]
     D -.->|"Failed to gain support, stagnated"| E
-    E --> F[Early 19th Century: Paradigm Shift]
+    E --> F["Early 19th Century: Paradigm Shift"]
 ```
 ## 2.2 Thomas Young's Double-Slit Experiment with Light (1801) and the Triumph of the Wave Theory
 

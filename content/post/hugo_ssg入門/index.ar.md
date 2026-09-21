@@ -174,9 +174,9 @@ aliases:
 flowchart LR
   WPDB["قاعدة بيانات WP"] -->|"إضافة"| Exporter["أداة التصدير"]
   Exporter -->|"استخراج النصوص، \nالبيانات الوصفية، الصور"| ZipFile["ملف مضغوط / مجلد"]
-  ZipFile -->|"فك الضغط"| MarkdownFiles["ملفات Markdown \n(content/)"]
-  ZipFile -->|"فك الضغط"| ImageFiles["الصور \n(static/wp-content/)"]
-  MarkdownFiles --> Formatting["المراجعة والتنسيق \n(إصلاح الأكواد القصيرة)"]
+  ZipFile -->|"فك الضغط"| MarkdownFiles["ملفات Markdown \n("content/")"]
+  ZipFile -->|"فك الضغط"| ImageFiles["الصور \n("static/wp-content/")"]
+  MarkdownFiles --> Formatting["المراجعة والتنسيق \n("إصلاح الأكواد القصيرة")"]
   Formatting --> Git["تأكيد التغييرات إلى Git"]
 ```
 

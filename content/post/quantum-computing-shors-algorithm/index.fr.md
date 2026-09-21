@@ -197,7 +197,7 @@ La partie calcul quantique de l'algorithme de Shor se déroule selon les étapes
 ```mermaid
 sequenceDiagram
     participant Q_Reg1 as "1er Registre (x)"
-    participant Q_Reg2 as "2ème Registre (f(x))"
+    participant Q_Reg2 as "2ème Registre (f("x"))"
     
     Note over Q_Reg1,Q_Reg2: 1. Initialisation : tous les bits à |0>
     Q_Reg1->>Q_Reg1: 2. Transformée de Hadamard (H⊗n) <br/>Création de la superposition de tous les états

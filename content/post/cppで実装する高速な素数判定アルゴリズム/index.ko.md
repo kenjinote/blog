@@ -313,8 +313,8 @@ int main() {
 
 ```mermaid
 graph LR
-    TrialDivision["시험 나눗셈 (O(√N))"] --> Fermat["페르마 테스트 (O(log N), 약점 있음)"]
-    Fermat --> MillerRabin["밀러-라빈 법 (O(log N), 결정론적 판별 가능)"]
+    TrialDivision["시험 나눗셈 (O("√N"))"] --> Fermat["페르마 테스트 (O("log N"), 약점 있음)"]
+    Fermat --> MillerRabin["밀러-라빈 법 (O("log N"), 결정론적 판별 가능)"]
     MillerRabin --> Montgomery["+ 몽고메리 곱셈 (상수 배 고속화)"]
     
     style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px

@@ -271,7 +271,7 @@ Perilaku `std::async` ditunjukkan pada diagram urutan (sequence diagram) berikut
 sequenceDiagram
     participant Main as "Main Thread"
     participant Async as "Pekerja std::async"
-    Main->>Async: "std::async(std::launch::async, ...)"
+    Main->>Async: "std::async("std::launch::async, ...")"
     activate Async
     Note over Main: "Melakukan pekerjaan lain..."
     Main->>Async: "future.get() (Blokir hingga siap)"

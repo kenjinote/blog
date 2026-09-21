@@ -36,10 +36,10 @@ Doch während sich unzählige Elektronenpunkte auf dem Schirm ansammelten, tauch
 
 ```mermaid
 graph TD
-    A[Elektronenkanone / Lichtquelle] -->|"Feuert Teilchen einzeln ab"| B(Wand mit Doppelspalt)
+    A["Elektronenkanone / Lichtquelle"] -->|"Feuert Teilchen einzeln ab"| B("Wand mit Doppelspalt")
     B -->|"Schlitz 1"| C{Interferiert als Welle?}
     B -->|"Schlitz 2"| C
-    C -->|"Erreicht den Schirm"| D[Nach Akkumulation erscheint Interferenzmuster]
+    C -->|"Erreicht den Schirm"| D["Nach Akkumulation erscheint Interferenzmuster"]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
     classDef highlight fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px;
@@ -73,12 +73,12 @@ Aufgrund von Newtons absoluter Autorität und Einfluss in der damaligen wissensc
 
 ```mermaid
 graph TD
-    A[Die Erforschung der Natur des Lichts] --> B[17. Jahrhundert: Ära der wissenschaftlichen Revolution]
+    A["Die Erforschung der Natur des Lichts"] --> B["17. Jahrhundert: Ära der wissenschaftlichen Revolution"]
     B --> C("Newtons Korpuskulartheorie (1704)")
     B --> D("Huygens' Wellentheorie (1690)")
-    C -->|"Newtons immense Autorität"| E[18. Jahrhundert: Langzeitdominanz der Korpuskulartheorie]
+    C -->|"Newtons immense Autorität"| E["18. Jahrhundert: Langzeitdominanz der Korpuskulartheorie"]
     D -.->|"Fehlende Unterstützung führt zu Stagnation"| E
-    E --> F[Frühes 19. Jahrhundert: Paradigmenwechsel]
+    E --> F["Frühes 19. Jahrhundert: Paradigmenwechsel"]
 ```
 ## 2.2 Thomas Youngs Doppelspaltexperiment mit Licht (1801) und der Triumph der Wellentheorie
 

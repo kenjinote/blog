@@ -271,7 +271,7 @@ int main() {
 sequenceDiagram
     participant Main as "मुख्य थ्रेड (Main Thread)"
     participant Async as "std::async वर्कर (std::async Worker)"
-    Main->>Async: "std::async(std::launch::async, ...)"
+    Main->>Async: "std::async("std::launch::async, ...")"
     activate Async
     Note over Main: "अन्य कार्य करें (Do other work...)"
     Main->>Async: "future.get() (तैयार होने तक ब्लॉक करता है)"

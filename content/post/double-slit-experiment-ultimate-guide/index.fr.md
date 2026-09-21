@@ -36,10 +36,10 @@ Cependant, à mesure que d'innombrables points d'électrons s'accumulaient sur l
 
 ```mermaid
 graph TD
-    A[Canon à électrons / Source lumineuse] -->|"Tire des particules une par une"| B(Mur avec double fente)
+    A["Canon à électrons / Source lumineuse"] -->|"Tire des particules une par une"| B("Mur avec double fente")
     B -->|"Fente 1"| C{Interférence comme onde ?}
     B -->|"Fente 2"| C
-    C -->|"Atteint l'écran"| D[Les franges d'interférence apparaissent en s'accumulant]
+    C -->|"Atteint l'écran"| D["Les franges d'interférence apparaissent en s'accumulant"]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
     classDef highlight fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px;
@@ -71,12 +71,12 @@ Cependant, en raison de l'autorité absolue et de l'influence de Newton dans le 
 
 ```mermaid
 graph TD
-    A[Quête de la nature de la lumière] --> B[XVIIe siècle : Période de révolution scientifique]
+    A["Quête de la nature de la lumière"] --> B["XVIIe siècle : Période de révolution scientifique"]
     B --> C("Théorie corpusculaire de Newton (1704)")
     B --> D("Théorie ondulatoire de Huygens (1690)")
-    C -->|"Autorité immense de Newton"| E[XVIIIe siècle : Longue domination de la théorie corpusculaire]
+    C -->|"Autorité immense de Newton"| E["XVIIIe siècle : Longue domination de la théorie corpusculaire"]
     D -.->|"N'obtient pas de soutien et stagne"| E
-    E --> F[Début du XIXe siècle : Changement de paradigme]
+    E --> F["Début du XIXe siècle : Changement de paradigme"]
 ```
 ## 2.2 L'expérience des fentes de Young sur la lumière (1801) et le triomphe de la théorie ondulatoire
 

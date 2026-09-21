@@ -53,14 +53,14 @@ GNFSの計算量は、非漸近的に $ O(\exp((\sqrt[3]{\frac{64}{9}} + o(1)) (
 
 ```mermaid
 graph TD
-    A[素因数分解したい数 N を入力] --> B[ランダムな整数 a を選択]
+    A["素因数分解したい数 N を入力"] --> B["ランダムな整数 a を選択"]
     B --> C{a と N の<br>最大公約数}
-    C -->|1より大きい| D[幸運にも素因数を発見！]
-    C -->|1 互いに素| E[量子コンピュータの出番]
-    E --> F[関数 f_x = a^x mod N の<br>周期 r を量子フーリエ変換で求める]
+    C -->|1より大きい| D["幸運にも素因数を発見！"]
+    C -->|1 互いに素| E["量子コンピュータの出番"]
+    E --> F["関数 f_x = a^x mod N の<br>周期 r を量子フーリエ変換で求める"]
     F --> G{周期 r が偶数 かつ<br>a^r/2 ≢ -1 mod N}
-    G -->|Yes| H[最大公約数 gcd_a^r/2 ± 1, N を計算]
-    H --> I((素因数分解 成功！))
+    G -->|Yes| H["最大公約数 gcd_a^r/2 ± 1, N を計算"]
+    H --> I(("素因数分解 成功！"))
     G -->|No| B
 ```
 [ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)は、素因数分解という問題を直接解くのではなく、数論の定理を用いて「周期発見問題（Period Finding Problem）」という別の問題に変換し、それを[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)の特性を活かして高速に解くというアプローチをとります。

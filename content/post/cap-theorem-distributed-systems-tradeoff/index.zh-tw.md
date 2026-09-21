@@ -135,8 +135,8 @@ sequenceDiagram
     participant Secondary as "次節點 (B)"
     
     Note over Primary, Secondary: "正常運作時 (No Partition)"
-    Client->>Primary: "Write(V=1)"
-    Primary->>Secondary: "Replicate(V=1)"
+    Client->>Primary: "Write("V=1")"
+    Primary->>Secondary: "Replicate("V=1")"
     Secondary-->>Primary: "Ack"
     Primary-->>Client: "Success (Write Confirm)"
     Client->>Primary: "Read()"
@@ -148,7 +148,7 @@ sequenceDiagram
     Note over Primary: "主節點 (A) 偵測到<br/>已無法與其他過半數節點通訊"
     Note over Primary: "主節點 (A) 自動<br/>降級為次節點 (Step Down)"
     
-    Client->>Primary: "Write(V=2)"
+    Client->>Primary: "Write("V=2")"
     Primary-->>Client: "Error (Not Primary) - 可用性降低"
     
     Client->>Secondary: "Read()"
@@ -184,7 +184,7 @@ sequenceDiagram
     
     Note over NodeA, NodeB: "發生網路分斷！ (雙方無法通訊)"
     
-    Client->>NodeA: "Write(V=1)"
+    Client->>NodeA: "Write("V=1")"
     Note over NodeA: "寫入自身 (本機) 的儲存空間"
     NodeA-xNodeB: "Replicate (Fail)"
     Note over NodeA: "作為提示 (Hinted Handoff)<br/>將要傳給 B 的資料保留在本機"

@@ -95,8 +95,8 @@ For society as a whole, it falls into a loop state of **A > B > C > A ...**, mak
 
 ```mermaid
 graph LR
-    A((A)) -->|"Wins by Majority"| B((B))
-    B -->|"Wins by Majority"| C((C))
+    A(("A")) -->|"Wins by Majority"| B(("B"))
+    B -->|"Wins by Majority"| C(("C"))
     C -->|"Wins by Majority"| A
     
     style A fill:#ff9999
@@ -164,7 +164,7 @@ In other words, there is no $F$ that simultaneously satisfies (U), (P), (I), and
 ```mermaid
 graph TD
     subgraph "Logical Conclusion"
-        A_U["Condition U (Unrestricted Domain)"] --> AND1((AND))
+        A_U["Condition U (Unrestricted Domain)"] --> AND1(("AND"))
         A_P["Condition P (Pareto Principle)"] --> AND1
         A_I["Condition I (IIA)"] --> AND1
         

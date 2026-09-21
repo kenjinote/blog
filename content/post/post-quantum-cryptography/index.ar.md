@@ -40,15 +40,15 @@ description: 'يواجه تشفير المفتاح العام خطر اخترا�
 
 ```mermaid
 graph LR
-    PQC[تشفير ما بعد الكم PQC] --> L[التشفير القائم على الشبكة Lattice-based]
-    PQC --> H[التشفير القائم على التجزئة Hash-based]
-    PQC --> M[تشفير متعدد المتغيرات Multivariate]
-    PQC --> C[التشفير القائم على الكود Code-based]
+    PQC["تشفير ما بعد الكم PQC"] --> L["التشفير القائم على الشبكة Lattice-based"]
+    PQC --> H["التشفير القائم على التجزئة Hash-based"]
+    PQC --> M["تشفير متعدد المتغيرات Multivariate"]
+    PQC --> C["التشفير القائم على الكود Code-based"]
     
-    L --> L1(FIPS 203: ML-KEM)
-    L --> L2(FIPS 204: ML-DSA)
+    L --> L1("FIPS 203: ML-KEM")
+    L --> L2("FIPS 204: ML-DSA")
     
-    H --> H1(FIPS 205: SLH-DSA)
+    H --> H1("FIPS 205: SLH-DSA")
     
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```

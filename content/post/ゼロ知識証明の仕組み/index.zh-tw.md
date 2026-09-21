@@ -137,10 +137,10 @@ FRI協定是一種用於驗證「某個函數是否足夠接近特定次數的�
 graph TD
     Root["Merkle Root (承諾)"] --> Node0["Node 0"]
     Root --> Node1["Node 1"]
-    Node0 --> Leaf0["P(x_0)"]
-    Node0 --> Leaf1["P(x_1)"]
-    Node1 --> Leaf2["P(x_2)"]
-    Node1 --> Leaf3["P(x_3)"]
+    Node0 --> Leaf0["P("x_0")"]
+    Node0 --> Leaf1["P("x_1")"]
+    Node1 --> Leaf2["P("x_2")"]
+    Node1 --> Leaf3["P("x_3")"]
 ```
 
 驗證者要求揭露隨機的幾個點，並使用默克爾證明（Merkle Proof）來確認它們包含在承諾中。透過遞迴地重複此過程，可以以壓倒性的機率保證原始多項式的次數確實很低。

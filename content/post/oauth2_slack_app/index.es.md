@@ -331,13 +331,13 @@ sequenceDiagram
     participant C as "Client"
     participant AS as "Authorization Server"
     
-    Note over C: "code_verifier = cadena aleatoria"<br/>"code_challenge = SHA256(code_verifier)"
+    Note over C: "code_verifier = cadena aleatoria"<br/>"code_challenge = SHA256("code_verifier")"
     C->>AS: "Solicitud de autorización (enviar code_challenge)"
     Note over AS: "Conservar code_challenge"
     AS-->>C: "Emisión de código de autorización (code)"
     
     C->>AS: "Solicitud de token (enviar code + code_verifier)"
-    Note over AS: "¿SHA256(verifier recibido) == challenge conservado?"
+    Note over AS: "¿SHA256("verifier recibido") == challenge conservado?"
     AS-->>C: "Verificación exitosa: Emisión de token de acceso"
 ```
 

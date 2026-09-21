@@ -170,14 +170,14 @@ Para entender intuitivamente a diferença entre o GNFS e o Algoritmo de Shor, mo
 
 ```mermaid
 graph TD
-    A[Estado inicial: 0...0] --> B[Sobreposição de todos os estados por Transformada de Hadamard]
-    B --> C[Exponenciação modular a^x mod N]
-    C -->|"Emaranhamento quântico"| D[Colapso para um estado com periodicidade]
-    D --> E[Transformada de Fourier Quântica QFT]
-    E -->|"Amplificação de probabilidade por interferência"| F[Medição: obter y]
-    F --> G[Processamento clássico: expansão em frações contínuas]
-    G --> H[Descoberta do período r]
-    H --> I[Cálculo dos fatores primos de N]
+    A["Estado inicial: 0...0"] --> B["Sobreposição de todos os estados por Transformada de Hadamard"]
+    B --> C["Exponenciação modular a^x mod N"]
+    C -->|"Emaranhamento quântico"| D["Colapso para um estado com periodicidade"]
+    D --> E["Transformada de Fourier Quântica QFT"]
+    E -->|"Amplificação de probabilidade por interferência"| F["Medição: obter y"]
+    F --> G["Processamento clássico: expansão em frações contínuas"]
+    G --> H["Descoberta do período r"]
+    H --> I["Cálculo dos fatores primos de N"]
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#bbf,stroke:#333,stroke-width:2px

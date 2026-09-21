@@ -252,13 +252,13 @@ sequenceDiagram
     P->>B2: "Pre-prepare"
     P->>B3: "Pre-prepare"
     
-    Note over P,B3: "Prepare 階段 (O(N^2)的通訊)"
+    Note over P,B3: "Prepare 階段 (O("N^2")的通訊)"
     B1->>P: "Prepare"
     B1->>B2: "Prepare"
     B2->>P: "Prepare"
     B2->>B1: "Prepare"
     
-    Note over P,B3: "Commit 階段 (O(N^2)的通訊)"
+    Note over P,B3: "Commit 階段 (O("N^2")的通訊)"
     P->>B1: "Commit"
     B1->>B2: "Commit"
     B2->>P: "Commit"

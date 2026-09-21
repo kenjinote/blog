@@ -170,14 +170,14 @@ Pour comprendre intuitivement la différence entre le GNFS et l'algorithme de Sh
 
 ```mermaid
 graph TD
-    A[État initial: 0...0] --> B[Superposition de tous les états par transformée de Hadamard]
-    B --> C[Exponentiation modulaire a^x mod N]
-    C -->|"Intrication quantique"| D[Effondrement vers un état présentant une périodicité]
-    D --> E[Transformée de Fourier quantique QFT]
-    E -->|"Amplification des probabilités par interférence"| F[Mesure: obtenir y]
-    F --> G[Traitement classique: Développement en fractions continues]
-    G --> H[Découverte de la période r]
-    H --> I[Calcul des facteurs premiers de N]
+    A["État initial: 0...0"] --> B["Superposition de tous les états par transformée de Hadamard"]
+    B --> C["Exponentiation modulaire a^x mod N"]
+    C -->|"Intrication quantique"| D["Effondrement vers un état présentant une périodicité"]
+    D --> E["Transformée de Fourier quantique QFT"]
+    E -->|"Amplification des probabilités par interférence"| F["Mesure: obtenir y"]
+    F --> G["Traitement classique: Développement en fractions continues"]
+    G --> H["Découverte de la période r"]
+    H --> I["Calcul des facteurs premiers de N"]
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#bbf,stroke:#333,stroke-width:2px

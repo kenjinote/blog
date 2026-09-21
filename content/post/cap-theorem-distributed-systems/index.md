@@ -27,11 +27,11 @@ CAP定理について語る前に、そもそも **分散システム** （[Dist
 
 ```mermaid
 graph LR
-    Client((Client))
+    Client(("Client"))
     subgraph "Distributed System"
-        NodeA[Node A]
-        NodeB[Node B]
-        NodeC[Node C]
+        NodeA["Node A"]
+        NodeB["Node B"]
+        NodeC["Node C"]
         NodeA <-->|Network| NodeB
         NodeB <-->|Network| NodeC
         NodeC <-->|Network| NodeA
@@ -96,10 +96,10 @@ sequenceDiagram
 
     Note over N1, N2: 初期状態: x = 0
     Note over N1, N2: ネットワーク分断発生 ⚡
-    C1->>N1: Write(x = 1)
-    N1-->>C1: Ack(Success)
+    C1->>N1: Write("x = 1")
+    N1-->>C1: Ack("Success")
     Note over N1, N2: N1はN2に同期を試みるが、<br>分断のため届かない
-    C2->>N2: Read(x)
+    C2->>N2: Read("x")
     alt CPシステムの場合 (可用性を犠牲)
         N2-->>C2: Error (またはタイムアウト)
     else APシステムの場合 (一貫性を犠牲)
@@ -285,12 +285,12 @@ Sagaパターンは、大きな1つのトランザクションを、ローカル
 
 ```mermaid
 flowchart TD
-    Order[注文サービス] -->|1. 注文作成| MessageBroker((Message Broker))
-    MessageBroker -->|2. イベント通知| Payment[決済サービス]
+    Order["注文サービス"] -->|1. 注文作成| MessageBroker(("Message Broker"))
+    MessageBroker -->|2. イベント通知| Payment["決済サービス"]
     Payment -->|3. 決済完了イベント| MessageBroker
-    MessageBroker -->|4. イベント通知| Inventory[在庫サービス]
+    MessageBroker -->|4. イベント通知| Inventory["在庫サービス"]
     
-    Inventory -- 失敗時 -->|補償トランザクション| Compensate[在庫引き当て失敗イベント]
+    Inventory -- 失敗時 -->|補償トランザクション| Compensate["在庫引き当て失敗イベント"]
     Compensate --> MessageBroker
     MessageBroker -->|キャンセル| Order
 ```

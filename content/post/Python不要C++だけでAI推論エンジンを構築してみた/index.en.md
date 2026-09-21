@@ -363,7 +363,7 @@ graph TD
     V --> VCache["Append to KV Cache"]
     Q --> Dot1["Q * K_Cache^T"]
     KCache --> Dot1
-    Dot1 --> Scale["Scale (1/sqrt(d))"]
+    Dot1 --> Scale["Scale (1/sqrt("d"))"]
     Scale --> Softmax["Softmax"]
     Softmax --> Dot2["SoftmaxOut * V_Cache"]
     VCache --> Dot2

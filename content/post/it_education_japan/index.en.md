@@ -37,7 +37,7 @@ flowchart TD
     B -->|"Lack of conceptual understanding of variables and static typing"| D["Dropout (The Wall of Types)"]
     B -->|"Successful Transition"| E["High School: Information I (Basics of Python/JavaScript, etc.)"]
     E --> F{"The Wall of Algorithm Design and Data Structures"}
-    F -->|"Lack of understanding of time and space complexity"| G["Inefficient Code (Performance degradation from mass-producing O(N^2))"]
+    F -->|"Lack of understanding of time and space complexity"| G["Inefficient Code (Performance degradation from mass-producing O("N^2"))"]
     F -->|"Black-boxing of memory management and references"| H["Becoming a coder who only does superficial API calls"]
     F -->|"Conceptual Breakthrough"| I["Full-scale CS Learning (C/C++, Java, Low-level Architecture)"]
     I --> J["Highly skilled IT professionals coveted by the industry"]

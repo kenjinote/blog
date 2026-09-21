@@ -150,11 +150,11 @@ graph TD
   Extract --> W1["Wort: 'Kostenlos'"]
   Extract --> W2["Wort: 'Geld'"]
   Extract --> Wn["Wort: 'Meeting'"]
-  W1 --> Prob["Berechne P(Spam | Wörter)"]
+  W1 --> Prob["Berechne P("Spam | Wörter")"]
   W2 --> Prob
   Wn --> Prob
   Prob --> Bayes["Wende Satz von Bayes an"]
-  Bayes --> Class{"P(Spam) > 0.9?"}
+  Bayes --> Class{"P("Spam") > 0.9?"}
   Class -- Ja --> Spam["In Spam-Ordner verschieben"]
   Class -- Nein --> Ham["In Posteingang zustellen"]
 ```
@@ -394,10 +394,10 @@ Anhand des Funktionswertes $f(x_n)$ und seiner Steigung (Ableitung) $f'(x_n)$ an
 
 ```mermaid
 flowchart LR
-  Start["Start: Schätze initiales x0"] --> Eval["Evaluiere f(xn) und f'(xn)"]
-  Eval --> Check{"Ist f(xn) ≈ 0?"}
+  Start["Start: Schätze initiales x0"] --> Eval["Evaluiere f("xn") und f'(xn)"]
+  Eval --> Check{"Ist f("xn") ≈ 0?"}
   Check -- Ja --> Done["Gib xn als Wurzel zurück"]
-  Check -- Nein --> Update["xn+1 = xn - f(xn) / f'(xn)"]
+  Check -- Nein --> Update["xn+1 = xn - f("xn") / f'(xn)"]
   Update --> Eval
 ```
 

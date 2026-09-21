@@ -313,8 +313,8 @@ Testes rápidos de primalidade são uma técnica inevitável nos cálculos que l
 
 ```mermaid
 graph LR
-    TrialDivision["Divisão por Tentativa (O(√N))"] --> Fermat["Teste de Fermat (O(log N), tem fraqueza)"]
-    Fermat --> MillerRabin["Método Miller-Rabin (O(log N), pode ser determinístico)"]
+    TrialDivision["Divisão por Tentativa (O("√N"))"] --> Fermat["Teste de Fermat (O("log N"), tem fraqueza)"]
+    Fermat --> MillerRabin["Método Miller-Rabin (O("log N"), pode ser determinístico)"]
     MillerRabin --> Montgomery["+ Multiplicação Montgomery (Aceleração por fator constante)"]
     
     style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px

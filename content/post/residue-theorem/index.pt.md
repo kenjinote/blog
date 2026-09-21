@@ -32,7 +32,7 @@ Mas o que acontece se a região dentro do contorno incluir pontos onde $f(z)$ n�
 
 ```mermaid
 flowchart TD
-    A["Integral complexa na reta real"] -->|"Extensão para o plano complexo"| B["Definir a função complexa f(z)"]
+    A["Integral complexa na reta real"] -->|"Extensão para o plano complexo"| B["Definir a função complexa f("z")"]
     B --> C["Estabelecer um contorno apropriado C"]
     C --> D["Identificar singularidades (polos) dentro do contorno"]
     D --> E["Calcular o resíduo em cada singularidade"]

@@ -27,7 +27,7 @@ O custo é geralmente representado pelo produto da "quantidade de areia movida" 
 ```mermaid
 flowchart LR
     A["Monte de Areia (Oferta)"] -->|"Transporte"| B["Buraco (Demanda)"]
-    C["Local x"] -->|"Distância d(x, y)"| D["Local y"]
+    C["Local x"] -->|"Distância d("x, y")"| D["Local y"]
 ```
 
 Expresso matematicamente, seja a distribuição do monte de areia original uma medida de probabilidade $\mu$ em $X$, e a distribuição do buraco uma medida de probabilidade $\nu$ em $Y$.

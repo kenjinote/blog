@@ -36,7 +36,7 @@ graph TD
     VSCode -- 자동 완성 요청・정의로 이동 --> LSP
     LSP --> Clangd
     LSP --> RustAnalyzer
-    Clangd -. AST(추상 구문 트리) 분석 .-> CompilerC
+    Clangd -. AST("추상 구문 트리") 분석 .-> CompilerC
     RustAnalyzer -. 매크로 전개・타입 추론 .-> CompilerR
     
     VSCode -- Debug Adapter Protocol (DAP) --> Debugger
@@ -320,7 +320,7 @@ sequenceDiagram
     CodeLLDB->>DebuggerCore: 중단점을 메모리 관리 테이블에 등록
     Developer->>VSCode: F5 키 입력 (디버깅 시작)
     VSCode->>CodeLLDB: launch 요청
-    CodeLLDB->>OS: ptrace(PTRACE_TRACEME)를 부여하여 프로세스 시작
+    CodeLLDB->>OS: ptrace("PTRACE_TRACEME")를 부여하여 프로세스 시작
     OS-->>DebuggerCore: 애플리케이션 메모리 공간 매핑 완료
     DebuggerCore->>OS: 지정 주소에 INT3 명령(0xCC) 작성
     Note over OS: 프로그램 실행 중...

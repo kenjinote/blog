@@ -54,8 +54,8 @@ graph TD
         A["Draw 1 Ball"] -->|"Number was '7'"| B{"What is the Urn?"}
         B -->|"Assume Prior Probabilities are Equal"| C["Hypothesis 1: Urn with 10 Balls"]
         B -->|"Assume Prior Probabilities are Equal"| D["Hypothesis 2: Urn with 1000 Balls"]
-        C -.->|"P(E|H1) = 1/10"| E["Hypothesis 1 has Higher Likelihood"]
-        D -.->|"P(E|H2) = 1/1000"| E
+        C -.->|"P("E|H1") = 1/10"| E["Hypothesis 1 has Higher Likelihood"]
+        D -.->|"P("E|H2") = 1/1000"| E
     end
 ```
 
@@ -188,9 +188,9 @@ If super-advanced AI or posthumans are not included in the reference class (sepa
 ```mermaid
 graph TD
     subgraph "Difference Due to Reference Class Setting"
-        A["What do we count ourselves as?"] -->|"Only Homo Sapiens"| B["N = 100 Billion\n(High Probability of Early Extinction)"]
-        A -->|"All Conscious Beings"| C["Universe-scale N\n(Conclusion Changes Greatly)"]
-        A -->|"Modern Humans + Posthumans"| D["N = Enormous\n(Possibility of Evolution)"]
+        A["What do we count ourselves as?"] -->|"Only Homo Sapiens"| B["N = 100 Billion\n("High Probability of Early Extinction")"]
+        A -->|"All Conscious Beings"| C["Universe-scale N\n("Conclusion Changes Greatly")"]
+        A -->|"Modern Humans + Posthumans"| D["N = Enormous\n("Possibility of Evolution")"]
     end
 ```
 

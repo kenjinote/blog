@@ -162,7 +162,7 @@ Hier verwenden Mathematiker die **analytische Fortsetzung** – eine Technik, di
 
 ```mermaid
 graph TD
-    A["Zetafunktion Re(s) > 1"] -->|"Analytische Fortsetzung"| B["Erweiterung auf die gesamte komplexe Ebene"]
+    A["Zetafunktion Re("s") > 1"] -->|"Analytische Fortsetzung"| B["Erweiterung auf die gesamte komplexe Ebene"]
     B --> C["s = -1 einsetzen"]
     C --> D["ζ(-1) = -1/12"]
 ```

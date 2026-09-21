@@ -151,7 +151,7 @@ sequenceDiagram
     PS->>CLR: "Вызов ProcessSystemString"
     note right of CLR: "Маршалинг System.String в LPCWSTR"
     note right of CLR: "Передача ссылки на StringBuilder"
-    CLR->>CPP: "ProcessSystemString(LPCWSTR, LPWSTR, int)"
+    CLR->>CPP: "ProcessSystemString("LPCWSTR, LPWSTR, int")"
     
     CPP->>CPP: "Выполнение нативной обработки строк"
     CPP->>CPP: "Запись результата в буфер LPWSTR"

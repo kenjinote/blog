@@ -59,11 +59,11 @@ Consider a graph with a cycle like the following.
 ```mermaid
 graph LR
     subgraph "Cycle Detection"
-        1((1)) -->|"step"| 2((2))
-        2 -->|"step"| 3((3))
-        3 -->|"step"| 4((4))
-        4 -->|"step"| 5((5))
-        5 -->|"step"| 6((6))
+        1(("1")) -->|"step"| 2(("2"))
+        2 -->|"step"| 3(("3"))
+        3 -->|"step"| 4(("4"))
+        4 -->|"step"| 5(("5"))
+        5 -->|"step"| 6(("6"))
         6 -->|"loop"| 3
     end
 ```

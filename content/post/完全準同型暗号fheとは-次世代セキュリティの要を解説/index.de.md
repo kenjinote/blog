@@ -35,10 +35,10 @@ Die Architektur der Cloud-Verarbeitung mit FHE unterscheidet sich völlig von he
 
 ```mermaid
 graph TD
-    A["Client (hält privaten Schlüssel)"] -->|"1. Klartext x verschlüsseln: E(x)"| B["Cloud-Server (nur verschlüsselte Daten)"]
-    B -->|"2. Funktion f auf Geheimtext anwenden: E(f(x))"| B
-    B -->|"3. Berechnetes Geheimtextergebnis E(y)"| A
-    A -->|"4. Mit privatem Schlüssel entschlüsseln: y = f(x)"| A
+    A["Client (hält privaten Schlüssel)"] -->|"1. Klartext x verschlüsseln: E("x")"| B["Cloud-Server (nur verschlüsselte Daten)"]
+    B -->|"2. Funktion f auf Geheimtext anwenden: E("f(x"))"| B
+    B -->|"3. Berechnetes Geheimtextergebnis E("y")"| A
+    A -->|"4. Mit privatem Schlüssel entschlüsseln: y = f("x")"| A
     
     style A fill:#d4edda,stroke:#28a745
     style B fill:#f8d7da,stroke:#dc3545
@@ -136,7 +136,7 @@ Intuitiv ist es die Operation: "Bevor der Geheimtext mit Rauschen bedeckt und ze
 ```mermaid
 graph LR
     A["Geheimtext mit hohem Rauschen C_noisy"] --> B["Homomorphe Entschlüsselungsschaltung (Eval_Dec)"]
-    C["Verschlüsselter privater Schlüssel E(sk)"] --> B
+    C["Verschlüsselter privater Schlüssel E("sk")"] --> B
     B --> D["Geheimtext mit geringem Rauschen C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

@@ -101,9 +101,9 @@ $H|0\rangle = \frac{1}{\sqrt{2}}(|0\rangle + |1\rangle)$，测量时会有各50%
 
 ```mermaid
 graph LR
-    q0["q0 (控制)"] --- C((●))
+    q0["q0 (控制)"] --- C(("●"))
     C --- q0_out["q0_out"]
-    q1["q1 (目标)"] --- T((⊕))
+    q1["q1 (目标)"] --- T(("⊕"))
     T --- q1_out["q1_out"]
     C -.- T
 ```
@@ -197,7 +197,7 @@ Shor算法的量子计算部分按以下步骤进行。
 ```mermaid
 sequenceDiagram
     participant Q_Reg1 as "第1寄存器 (x)"
-    participant Q_Reg2 as "第2寄存器 (f(x))"
+    participant Q_Reg2 as "第2寄存器 (f("x"))"
     
     Note over Q_Reg1,Q_Reg2: "1. 初始化: 所有比特置为|0>"
     Q_Reg1->>Q_Reg1: "2. Hadamard变换 (H⊗n) <br/>创建所有状态的叠加"

@@ -162,7 +162,7 @@ Les mathématiciens utilisent alors une technique appelée **prolongement analyt
 
 ```mermaid
 graph TD
-    A["Fonction zêta Re(s) > 1"] -->|"Prolongement analytique"| B["Extension à tout le plan complexe"]
+    A["Fonction zêta Re("s") > 1"] -->|"Prolongement analytique"| B["Extension à tout le plan complexe"]
     B --> C["Substitution de s = -1"]
     C --> D["ζ(-1) = -1/12"]
 ```

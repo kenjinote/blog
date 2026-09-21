@@ -96,10 +96,10 @@ sequenceDiagram
 
     Note over N1, N2: "초기 상태: x = 0"
     Note over N1, N2: "네트워크 분단 발생 ⚡"
-    C1->>N1: "Write(x = 1)"
-    N1-->>C1: "Ack(Success)"
+    C1->>N1: "Write("x = 1")"
+    N1-->>C1: "Ack("Success")"
     Note over N1, N2: "N1은 N2에 동기화를 시도하지만,<br>분단으로 인해 도달하지 않음"
-    C2->>N2: "Read(x)"
+    C2->>N2: "Read("x")"
     alt "CP 시스템의 경우 (가용성을 희생)"
         N2-->>C2: "Error (또는 타임아웃)"
     else "AP 시스템의 경우 (일관성을 희생)"

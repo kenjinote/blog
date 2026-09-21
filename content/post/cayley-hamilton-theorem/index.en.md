@@ -69,7 +69,7 @@ An important point to note here is that the constant term $c_0$ becomes $c_0 I$ 
 
 ```mermaid
 graph TD
-    A["Square Matrix A"] --> B["Calculate characteristic polynomial p(λ)"]
+    A["Square Matrix A"] --> B["Calculate characteristic polynomial p("λ")"]
     B --> C["Substitute λ = A"]
     C -->|"Apply theorem"| D["Yields zero matrix O"]
 ```

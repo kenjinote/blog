@@ -86,7 +86,7 @@ graph TD
 graph TD
     M["基模型 (ZFC)"]
     G["泛型滤子"]
-    MG["泛型扩张 M[G]"]
+    MG["泛型扩张 M["G"]"]
     M -->|"力迫"| MG
     G -->|"添加到"| MG
     MG -->|"满足"| NOT_CH["非 CH"]

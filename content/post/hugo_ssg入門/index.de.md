@@ -174,9 +174,9 @@ Im Folgenden ist der Ablauf einer typischen Migrations-[Pipeline](https://kenji.
 flowchart LR
   WPDB["WP-Datenbank"] -->|"Plugin"| Exporter["Export-Tool"]
   Exporter -->|"Extrahiert Text, \nMetadaten, Bilder"| ZipFile["Zip / Ordner"]
-  ZipFile -->|"Entpacken"| MarkdownFiles["Markdown-Dateien \n(content/)"]
-  ZipFile -->|"Entpacken"| ImageFiles["Bilder \n(static/wp-content/)"]
-  MarkdownFiles --> Formatting["Überprüfen & Formatieren \n(Shortcodes reparieren)"]
+  ZipFile -->|"Entpacken"| MarkdownFiles["Markdown-Dateien \n("content/")"]
+  ZipFile -->|"Entpacken"| ImageFiles["Bilder \n("static/wp-content/")"]
+  MarkdownFiles --> Formatting["Überprüfen & Formatieren \n("Shortcodes reparieren")"]
   Formatting --> Git["An Git übergeben"]
 ```
 

@@ -42,15 +42,15 @@ description: '隨著量子電腦的實用化，公鑰密碼學在未來面臨被
 
 ```mermaid
 graph LR
-    PQC[抗量子計算機密碼學 PQC] --> L[晶格密碼學 Lattice-based]
-    PQC --> H[雜湊密碼學 Hash-based]
-    PQC --> M[多變數多項式密碼學 Multivariate]
-    PQC --> C[編碼密碼學 Code-based]
+    PQC["抗量子計算機密碼學 PQC"] --> L["晶格密碼學 Lattice-based"]
+    PQC --> H["雜湊密碼學 Hash-based"]
+    PQC --> M["多變數多項式密碼學 Multivariate"]
+    PQC --> C["編碼密碼學 Code-based"]
     
-    L --> L1(FIPS 203: ML-KEM)
-    L --> L2(FIPS 204: ML-DSA)
+    L --> L1("FIPS 203: ML-KEM")
+    L --> L2("FIPS 204: ML-DSA")
     
-    H --> H1(FIPS 205: SLH-DSA)
+    H --> H1("FIPS 205: SLH-DSA")
     
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```

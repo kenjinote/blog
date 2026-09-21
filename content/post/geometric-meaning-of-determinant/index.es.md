@@ -40,7 +40,7 @@ Cuando se aplica la matriz $A$, los vectores base estándar se transforman en $\
 
 ```mermaid
 flowchart LR
-    A["Cuadrado unitario (Área 1)"] -->|"Transformación lineal por la matriz A"| B["Paralelogramo (Área |det(A)|)"]
+    A["Cuadrado unitario (Área 1)"] -->|"Transformación lineal por la matriz A"| B["Paralelogramo (Área |det("A")|)"]
 ```
 
 En otras palabras, el valor absoluto del determinante significa el "factor de escala de área" que indica **cuántas veces** cada figura en el espacio ha sido estirada (o encogida) por esa transformación lineal. Por ejemplo, si el determinante de una matriz es $3$, el área de cada figura dibujada en el plano original será exactamente tres veces mayor después de la transformación.
@@ -80,7 +80,7 @@ En 2D, corresponde a una operación como "darle la vuelta" a una figura dibujada
 flowchart TD
     Original["Espacio original (Sistema diestro)"]
     Reflected["Espacio transformado (Sistema zurdo)"]
-    Original -->|"Transformación con det(A) < 0"| Reflected
+    Original -->|"Transformación con det("A") < 0"| Reflected
     Original -->|"Implica voltear el espacio"| Reflected
 ```
 
@@ -102,7 +102,7 @@ En 2D, significa que los dos vectores base transformados se superponen en la mis
 
 ```mermaid
 flowchart LR
-    Space["Plano 2D"] -->|"Transformación con det(A) = 0"| Line["Comprimido en una línea 1D"]
+    Space["Plano 2D"] -->|"Transformación con det("A") = 0"| Line["Comprimido en una línea 1D"]
 ```
 
 Una matriz cuyo determinante es $0$ tiene una propiedad algebraica muy importante: **no tiene una matriz inversa** (es una matriz singular). Geométricamente, la razón es obvia. Una vez que un espacio ha colapsado a una dimensión inferior, es imposible complementar la información perdida y restaurar el espacio original de mayor dimensión (es decir, realizar una transformación inversa).

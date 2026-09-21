@@ -71,11 +71,11 @@ Saat kurva melewati titik asal, itu berarti tepat bahwa terdapat $z$ sedemikian 
 ```mermaid
 flowchart TD
     %% Gambaran umum pemetaan kurva
-    A["Lingkaran besar berjari-jari R berpusat di titik asal"] -->|"Pemetaan oleh polinomial P(z)"| B["Kurva tertutup pada bidang kompleks"]
+    A["Lingkaran besar berjari-jari R berpusat di titik asal"] -->|"Pemetaan oleh polinomial P("z")"| B["Kurva tertutup pada bidang kompleks"]
     B -->|"Ketika R cukup besar"| C["Kurva melilit titik asal sebanyak n kali"]
     C -->|"Menyusutkan R ke 0 secara kontinu"| D["Kurva juga menyusut secara kontinu menuju titik asal"]
     D -->|"Kontinuitas topologis"| E["Harus melewati titik asal di sepanjang jalan"]
-    E -->|"P(z) = 0"| F["Eksistensi suatu akar terbukti"]
+    E -->|"P("z") = 0"| F["Eksistensi suatu akar terbukti"]
 ```
 
 ## Persiapan dari Analisis Kompleks: Teorema [Liouville](https://kenji.blog/id/p/liouville/)

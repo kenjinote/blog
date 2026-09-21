@@ -90,16 +90,16 @@ B木では、内部ノードと葉ノードの両方に実際のデータ（ま�
 
 ```mermaid
 graph TD
-    A[Root: 50] --> B[Node: 20, 35]
-    A --> C[Node: 65, 80]
+    A["Root: 50"] --> B["Node: 20, 35"]
+    A --> C["Node: 65, 80"]
     
-    B --> D[Leaf: 10, 15]
-    B --> E[Leaf: 25, 30]
-    B --> F[Leaf: 40, 45]
+    B --> D["Leaf: 10, 15"]
+    B --> E["Leaf: 25, 30"]
+    B --> F["Leaf: 40, 45"]
     
-    C --> G[Leaf: 55, 60]
-    C --> H[Leaf: 70, 75]
-    C --> I[Leaf: 85, 90]
+    C --> G["Leaf: 55, 60"]
+    C --> H["Leaf: 70, 75"]
+    C --> I["Leaf: 85, 90"]
 
     D -.-> E
     E -.-> F

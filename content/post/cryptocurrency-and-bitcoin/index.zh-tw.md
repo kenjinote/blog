@@ -80,12 +80,12 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    Root["默克爾根: Hash(H12 + H34)"] --> H12["Hash(H1 + H2)"]
-    Root --> H34["Hash(H3 + H4)"]
-    H12 --> H1["Hash(Tx1)"]
-    H12 --> H2["Hash(Tx2)"]
-    H34 --> H3["Hash(Tx3)"]
-    H34 --> H4["Hash(Tx4)"]
+    Root["默克爾根: Hash("H12 + H34")"] --> H12["Hash("H1 + H2")"]
+    Root --> H34["Hash("H3 + H4")"]
+    H12 --> H1["Hash("Tx1")"]
+    H12 --> H2["Hash("Tx2")"]
+    H34 --> H3["Hash("Tx3")"]
+    H34 --> H4["Hash("Tx4")"]
 ```
 
 如果交易數據有任何微小的改變，該葉節點的哈希值就會改變，進而產生連鎖反應，導致默克爾根的值也完全不同。這使得我們能夠從龐大的交易數據中，只要有任何一處篡改就能立即檢測出來。

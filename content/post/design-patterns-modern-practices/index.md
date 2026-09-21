@@ -163,10 +163,10 @@ fn calculate_area(shape: &Shape) -> f64 {
 
 ```mermaid
 graph TD
-    A[DI Container] -->|Injects as Singleton| B(Database Connection)
-    A -->|Injects as Singleton| C(Logger)
-    D[Service A] -->|Depends on| B
-    E[Service B] -->|Depends on| B
+    A["DI Container"] -->|Injects as Singleton| B("Database Connection")
+    A -->|Injects as Singleton| C("Logger")
+    D["Service A"] -->|Depends on| B
+    E["Service B"] -->|Depends on| B
 ```
 
 Spring Framework ([Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)) や NestJS (TypeScript)、Dagger/Hilt (Android) などのDIコンテナがインスタンスの生成と破棄を管理するため、クラス自体にSingletonのロジック（ `getInstance()` や `private constructor` ）を書くべきではありません。

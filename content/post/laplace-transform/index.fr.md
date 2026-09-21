@@ -87,8 +87,8 @@ La procédure de résolution des équations différentielles à l'aide de la tra
 ```mermaid
 flowchart TD
   A["Équation différentielle dans le domaine temporel"] -->|"Exécuter la transformée de Laplace"| B["Équation algébrique dans le domaine s"]
-  B -->|"Calcul algébrique (Simplification)"| C["Solution F(s) dans le domaine s"]
-  C -->|"Exécuter la transformée de Laplace inverse"| D["Solution f(t) dans le domaine temporel"]
+  B -->|"Calcul algébrique (Simplification)"| C["Solution F("s") dans le domaine s"]
+  C -->|"Exécuter la transformée de Laplace inverse"| D["Solution f("t") dans le domaine temporel"]
 ```
 
 1. **Exécuter la transformée de Laplace** : Appliquez la transformée de Laplace aux deux côtés de l'équation différentielle donnée. Substituez les conditions initiales ici.

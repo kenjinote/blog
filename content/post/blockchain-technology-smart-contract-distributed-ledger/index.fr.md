@@ -189,12 +189,12 @@ sequenceDiagram
 
     A->>V: "withdrawBalance()"
     activate V
-    V->>A: "Call.value(balance)() (Envoi)"
+    V->>A: "Call.value("balance")() (Envoi)"
     activate A
     Note over A: "La fonction de repli (Fallback) est déclenchée"
     A->>V: "withdrawBalance() (Appel récursif)"
     activate V
-    V->>A: "Call.value(balance)() (2ème envoi)"
+    V->>A: "Call.value("balance")() (2ème envoi)"
     deactivate V
     deactivate A
     Note over V: "Des envois multiples se produisent avant la mise à jour du solde"

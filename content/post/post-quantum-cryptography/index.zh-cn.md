@@ -42,15 +42,15 @@ description: '随着量子计算机的实用化，公钥密码学在未来将面
 
 ```mermaid
 graph LR
-    PQC[后量子密码学 PQC] --> L[基于格的密码 Lattice-based]
-    PQC --> H[基于哈希的密码 Hash-based]
-    PQC --> M[多变量多项式密码 Multivariate]
-    PQC --> C[基于编码的密码 Code-based]
+    PQC["后量子密码学 PQC"] --> L["基于格的密码 Lattice-based"]
+    PQC --> H["基于哈希的密码 Hash-based"]
+    PQC --> M["多变量多项式密码 Multivariate"]
+    PQC --> C["基于编码的密码 Code-based"]
     
-    L --> L1(FIPS 203: ML-KEM)
-    L --> L2(FIPS 204: ML-DSA)
+    L --> L1("FIPS 203: ML-KEM")
+    L --> L2("FIPS 204: ML-DSA")
     
-    H --> H1(FIPS 205: SLH-DSA)
+    H --> H1("FIPS 205: SLH-DSA")
     
     style PQC fill:#f9f,stroke:#333,stroke-width:2px
 ```

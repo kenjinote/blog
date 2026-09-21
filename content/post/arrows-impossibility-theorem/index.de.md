@@ -40,8 +40,8 @@ Fassen wir das Ergebnis zusammen:
 ```mermaid
 graph LR
     subgraph "Condorcet-Paradoxon (Zirkelschluss)"
-        A((Kandidat A)) -->|"Gewinnt gegen (2:1)"| B((Kandidat B))
-        B -->|"Gewinnt gegen (2:1)"| C((Kandidat C))
+        A(("Kandidat A")) -->|"Gewinnt gegen (2:1)"| B(("Kandidat B"))
+        B -->|"Gewinnt gegen (2:1)"| C(("Kandidat C"))
         C -->|"Gewinnt gegen (2:1)"| A
     end
 ```

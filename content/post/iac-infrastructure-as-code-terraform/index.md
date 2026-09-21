@@ -65,13 +65,13 @@ Terraformの最大の強みは、その **プラットフォーム非依存性**
 
 ```mermaid
 flowchart LR
-    TF[Terraform Core] -->|RPC| PA[AWS Provider]
-    TF -->|RPC| PB[GCP Provider]
-    TF -->|RPC| PC[GitHub Provider]
+    TF["Terraform Core"] -->|RPC| PA["AWS Provider"]
+    TF -->|RPC| PB["GCP Provider"]
+    TF -->|RPC| PC["GitHub Provider"]
     
-    PA -->|API Request| AWS[(AWS Cloud)]
-    PB -->|API Request| GCP[(Google Cloud)]
-    PC -->|API Request| GH[(GitHub)]
+    PA -->|API Request| AWS["(AWS Cloud)"]
+    PB -->|API Request| GCP["(Google Cloud)"]
+    PC -->|API Request| GH["(GitHub)"]
 ```
 
 これにより、AWSとDatadog、GitHubといった全く異なるサービスを、1つのコードベースで統合的に管理することが可能になります。
@@ -112,9 +112,9 @@ Terraformでは、コード内に現れる参照関係（例えば `aws_vpc.main
 
 ```mermaid
 graph TD
-    VPC[aws_vpc.main] --> Subnet[aws_subnet.web]
-    Subnet --> EC2[aws_instance.app]
-    SG[aws_security_group.web_sg] --> EC2
+    VPC["aws_vpc.main"] --> Subnet["aws_subnet.web"]
+    Subnet --> EC2["aws_instance.app"]
+    SG["aws_security_group.web_sg"] --> EC2
     VPC --> SG
 ```
 
@@ -204,9 +204,9 @@ terraform {
 
 ```mermaid
 flowchart TD
-    DevA[Developer A] -->|apply| Lock[(DynamoDB Lock Table)]
-    DevB[Developer B] -->|apply| Lock
-    Lock -->|Lock Acquired by Dev A| S3[(S3 State File)]
+    DevA["Developer A"] -->|apply| Lock["(DynamoDB Lock Table)"]
+    DevB["Developer B"] -->|apply| Lock
+    Lock -->|Lock Acquired by Dev A| S3["(S3 State File)"]
     Lock -.->|Locked, Dev B waits| DevB
 ```
 

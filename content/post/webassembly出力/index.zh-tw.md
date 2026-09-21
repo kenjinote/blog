@@ -223,13 +223,13 @@ sequenceDiagram
   participant Wasm as "WebAssembly 執行環境"
   participant Mem as "線性記憶體 (ArrayBuffer)"
 
-  JS->>Wasm: "呼叫 calculate(10, 20)"
+  JS->>Wasm: "呼叫 calculate("10, 20")"
   note over JS,Wasm: "基本型別 (int, float) 透過暫存器/堆疊直接傳遞"
   Wasm-->>JS: "回傳 30"
 
   note over JS, Mem: "對於複雜資料 (字串, 陣列)"
   JS->>Mem: "將字串寫入記憶體"
-  JS->>Wasm: "呼叫 process_string(指標, 長度)"
+  JS->>Wasm: "呼叫 process_string("指標, 長度")"
   Wasm->>Mem: "從指標讀取"
   Wasm->>Mem: "將結果寫入新指標"
   Wasm-->>JS: "回傳新指標與長度"

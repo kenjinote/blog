@@ -197,7 +197,7 @@ $49 - 1 = 48$, $\gcd(48, 15) = 3$
 ```mermaid
 sequenceDiagram
     participant Q_Reg1 as "पहला रजिस्टर (x)"
-    participant Q_Reg2 as "दूसरा रजिस्टर (f(x))"
+    participant Q_Reg2 as "दूसरा रजिस्टर (f("x"))"
     
     Note over Q_Reg1,Q_Reg2: "1. आरंभीकरण: सभी बिट्स |0> पर"
     Q_Reg1->>Q_Reg1: "2. हडामर्ड रूपांतरण (H⊗n) <br/>सभी अवस्थाओं का सुपरपोजिशन बनाएँ"

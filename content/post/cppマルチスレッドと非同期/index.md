@@ -271,7 +271,7 @@ int main() {
 sequenceDiagram
     participant Main as "Main Thread"
     participant Async as "std::async Worker"
-    Main->>Async: "std::async(std::launch::async, ...)"
+    Main->>Async: "std::async("std::launch::async, ...")"
     activate Async
     Note over Main: "Do other work..."
     Main->>Async: "future.get() (Blocks until ready)"

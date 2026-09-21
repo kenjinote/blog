@@ -112,8 +112,8 @@ $$ P + (-P) = \mathcal{O} $$
 
 ```mermaid
 graph TD
-    Step1["畫一條連接 P(x1, y1) 和 Q(x2, y2) 的直線"] --> Step2["找到與曲線的第三個交點 -R"]
-    Step2 --> Step3["將 -R 沿 x 軸翻轉，得到 R(x3, y3)"]
+    Step1["畫一條連接 P("x1, y1") 和 Q("x2, y2") 的直線"] --> Step2["找到與曲線的第三個交點 -R"]
+    Step2 --> Step3["將 -R 沿 x 軸翻轉，得到 R("x3, y3")"]
     Step3 -.-> Result["這就是 R = P + Q"]
 ```
 

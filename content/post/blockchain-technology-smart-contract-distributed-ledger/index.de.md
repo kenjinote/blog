@@ -189,12 +189,12 @@ sequenceDiagram
 
     A->>V: "withdrawBalance()"
     activate V
-    V->>A: "Call.value(balance)() (Überweisung)"
+    V->>A: "Call.value("balance")() (Überweisung)"
     activate A
     Note over A: "Fallback-Funktion wird ausgelöst"
     A->>V: "withdrawBalance() (Rekursiver Aufruf)"
     activate V
-    V->>A: "Call.value(balance)() (Zweite Überweisung)"
+    V->>A: "Call.value("balance")() (Zweite Überweisung)"
     deactivate V
     deactivate A
     Note over V: "Mittel werden mehrfach gesendet, bevor der Kontostand aktualisiert wird"

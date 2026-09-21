@@ -189,12 +189,12 @@ sequenceDiagram
 
     A->>V: "withdrawBalance()"
     activate V
-    V->>A: "Call.value(balance)()"
+    V->>A: "Call.value("balance")()"
     activate A
     Note over A: "Fallback 函数被触发"
     A->>V: "withdrawBalance()"
     activate V
-    V->>A: "Call.value(balance)()"
+    V->>A: "Call.value("balance")()"
     deactivate V
     deactivate A
     Note over V: "在余额更新之前被多次转账"

@@ -271,7 +271,7 @@ int main() {
 sequenceDiagram
     participant Main as "메인 스레드"
     participant Async as "std::async 워커"
-    Main->>Async: "std::async(std::launch::async, ...)"
+    Main->>Async: "std::async("std::launch::async, ...")"
     activate Async
     Note over Main: "다른 작업 수행..."
     Main->>Async: "future.get() (준비될 때까지 블록)"

@@ -313,8 +313,8 @@ int main() {
 
 ```mermaid
 graph LR
-    TrialDivision["試し割り法 (O(√N))"] --> Fermat["フェルマーテスト (O(log N), 弱点あり)"]
-    Fermat --> MillerRabin["ミラー・ラビン法 (O(log N), 決定論的化可能)"]
+    TrialDivision["試し割り法 (O("√N"))"] --> Fermat["フェルマーテスト (O("log N"), 弱点あり)"]
+    Fermat --> MillerRabin["ミラー・ラビン法 (O("log N"), 決定論的化可能)"]
     MillerRabin --> Montgomery["+ モンゴメリ乗算 (定数倍高速化)"]
     
     style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px

@@ -150,11 +150,11 @@ graph TD
   Extract --> W1["Word: 'Free'"]
   Extract --> W2["Word: 'Money'"]
   Extract --> Wn["Word: 'Meeting'"]
-  W1 --> Prob["Calculate P(Spam | Words)"]
+  W1 --> Prob["Calculate P("Spam | Words")"]
   W2 --> Prob
   Wn --> Prob
   Prob --> Bayes["Apply Bayes Theorem"]
-  Bayes --> Class{"P(Spam) > 0.9?"}
+  Bayes --> Class{"P("Spam") > 0.9?"}
   Class -- Yes --> Spam["Move to Spam Folder"]
   Class -- No --> Ham["Deliver to Inbox"]
 ```
@@ -394,10 +394,10 @@ It uses the value of the function $f(x_n)$ at the current position $x_n$ and its
 
 ```mermaid
 flowchart LR
-  Start["Start: Guess initial x0"] --> Eval["Evaluate f(xn) and f'(xn)"]
-  Eval --> Check{"Is f(xn) ≈ 0?"}
+  Start["Start: Guess initial x0"] --> Eval["Evaluate f("xn") and f'(xn)"]
+  Eval --> Check{"Is f("xn") ≈ 0?"}
   Check -- Yes --> Done["Return xn as Root"]
-  Check -- No --> Update["xn+1 = xn - f(xn) / f'(xn)"]
+  Check -- No --> Update["xn+1 = xn - f("xn") / f'(xn)"]
   Update --> Eval
 ```
 

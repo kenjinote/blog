@@ -78,13 +78,13 @@ graph TD
     end
 
     subgraph "Fonction de hachage"
-        H{"Hash(x)"}
+        H{"Hash("x")"}
     end
 
     subgraph "Espace de hachage fini (Tiroirs)"
-        V1("Hash(A)")
-        V2("Hash(B) = Hash(C)")
-        V3("Hash(D)")
+        V1("Hash("A")")
+        V2("Hash("B") = Hash("C")")
+        V3("Hash("D")")
     end
 
     A -->|"Hachage"| H

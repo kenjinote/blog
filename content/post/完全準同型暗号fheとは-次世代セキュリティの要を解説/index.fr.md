@@ -35,10 +35,10 @@ L'architecture de traitement dans le cloud utilisant le FHE est complètement di
 
 ```mermaid
 graph TD
-    A["Client (Détient la clé privée)"] -->|"1. Chiffre le texte clair x : E(x)"| B["Serveur Cloud (Uniquement données chiffrées)"]
-    B -->|"2. Applique la fonction f en gardant le chiffrement : E(f(x))"| B
-    B -->|"3. Texte chiffré du résultat du calcul E(y)"| A
-    A -->|"4. Déchiffre avec la clé privée : y = f(x)"| A
+    A["Client (Détient la clé privée)"] -->|"1. Chiffre le texte clair x : E("x")"| B["Serveur Cloud (Uniquement données chiffrées)"]
+    B -->|"2. Applique la fonction f en gardant le chiffrement : E("f(x"))"| B
+    B -->|"3. Texte chiffré du résultat du calcul E("y")"| A
+    A -->|"4. Déchiffre avec la clé privée : y = f("x")"| A
     
     style A fill:#d4edda,stroke:#28a745
     style B fill:#f8d7da,stroke:#dc3545
@@ -142,7 +142,7 @@ Intuitivement, il s'agit d'une opération où l'« on 'déchiffre' le texte chif
 ```mermaid
 graph LR
     A["Texte chiffré à haut bruit C_noisy"] --> B["Circuit de déchiffrement homomorphe (Eval_Dec)"]
-    C["Clé privée chiffrée E(sk)"] --> B
+    C["Clé privée chiffrée E("sk")"] --> B
     B --> D["Texte chiffré à faible bruit C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

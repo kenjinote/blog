@@ -51,14 +51,14 @@ Di sinilah "Algoritma Shor", yang diumumkan oleh Peter Shor pada tahun 1994, mun
 
 ```mermaid
 graph TD
-    A[Masukkan angka N yang ingin difaktorkan] --> B[Pilih bilangan bulat acak a]
+    A["Masukkan angka N yang ingin difaktorkan"] --> B["Pilih bilangan bulat acak a"]
     B --> C{Faktor persekutuan<br>terbesar a dan N}
-    C -->|"Lebih dari 1"| D[Beruntung menemukan faktor prima!]
-    C -->|"1 Saling prima"| E[Giliran komputer kuantum]
-    E --> F[Temukan periode r dari fungsi f_x = a^x mod N<br>dengan Transformasi Fourier Kuantum]
+    C -->|"Lebih dari 1"| D["Beruntung menemukan faktor prima!"]
+    C -->|"1 Saling prima"| E["Giliran komputer kuantum"]
+    E --> F["Temukan periode r dari fungsi f_x = a^x mod N<br>dengan Transformasi Fourier Kuantum"]
     F --> G{Periode r adalah genap dan<br>a^r/2 ≢ -1 mod N}
-    G -->|"Ya"| H[Hitung faktor persekutuan terbesar gcd_a^r/2 ± 1, N]
-    H --> I((Faktorisasi Prima Berhasil!))
+    G -->|"Ya"| H["Hitung faktor persekutuan terbesar gcd_a^r/2 ± 1, N"]
+    H --> I(("Faktorisasi Prima Berhasil!"))
     G -->|"Tidak"| B
 ```
 

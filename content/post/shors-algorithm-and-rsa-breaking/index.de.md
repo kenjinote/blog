@@ -53,14 +53,14 @@ Hier kommt der 1994 von Peter Shor vorgestellte "Shor-Algorithmus" ins Spiel. Di
 
 ```mermaid
 graph TD
-    A[Eingabe der zu faktorisierenden Zahl N] --> B[Zufällige ganze Zahl a wählen]
+    A["Eingabe der zu faktorisierenden Zahl N"] --> B["Zufällige ganze Zahl a wählen"]
     B --> C{Größter gemeinsamer Teiler<br>von a und N}
-    C -->|"Größer als 1"| D[Glücklicherweise Primfaktor gefunden!]
-    C -->|"1 teilerfremd"| E[Einsatz des Quantencomputers]
-    E --> F[Finde die Periode r der Funktion f_x = a^x mod N<br>mit der Quanten-Fouriertransformation]
+    C -->|"Größer als 1"| D["Glücklicherweise Primfaktor gefunden!"]
+    C -->|"1 teilerfremd"| E["Einsatz des Quantencomputers"]
+    E --> F["Finde die Periode r der Funktion f_x = a^x mod N<br>mit der Quanten-Fouriertransformation"]
     F --> G{Ist die Periode r gerade und<br>a^r/2 ≢ -1 mod N}
-    G -->|"Ja"| H[Berechne gcd_a^r/2 ± 1, N]
-    H --> I((Primfaktorzerlegung erfolgreich!))
+    G -->|"Ja"| H["Berechne gcd_a^r/2 ± 1, N"]
+    H --> I(("Primfaktorzerlegung erfolgreich!"))
     G -->|"Nein"| B
 ```
 

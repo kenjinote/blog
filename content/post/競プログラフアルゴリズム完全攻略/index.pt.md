@@ -115,11 +115,11 @@ Usando uma fila de prioridade (`std::priority_queue`), o vértice indeterminado 
 
 ```mermaid
 graph TD
-    S["Origem S(0)"] -- 2 --> A["Vértice A(2)"]
-    S["Origem S(0)"] -- 5 --> B["Vértice B(5)"]
-    A["Vértice A(2)"] -- 1 --> B["Vértice B(3)"]
-    A["Vértice A(2)"] -- 4 --> C["Vértice C(6)"]
-    B["Vértice B(3)"] -- 1 --> C["Vértice C(4)"]
+    S["Origem S("0")"] -- 2 --> A["Vértice A("2")"]
+    S["Origem S("0")"] -- 5 --> B["Vértice B("5")"]
+    A["Vértice A("2")"] -- 1 --> B["Vértice B("3")"]
+    A["Vértice A("2")"] -- 4 --> C["Vértice C("6")"]
+    B["Vértice B("3")"] -- 1 --> C["Vértice C("4")"]
 ```
 Como na figura acima, o custo direto de S para B é 5, mas pode-se alcançá-lo com custo 3 passando por A. O algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/) realiza otimizações dessa maneira.
 

@@ -87,15 +87,15 @@ sequenceDiagram
     participant PeerB as "Klien B"
 
     PeerA->>PeerA: "createOffer()"
-    PeerA->>PeerA: "setLocalDescription(offer)"
+    PeerA->>PeerA: "setLocalDescription("offer")"
     PeerA->>Sig: "Kirim Offer (SDP)"
     Sig->>PeerB: "Teruskan Offer"
-    PeerB->>PeerB: "setRemoteDescription(offer)"
+    PeerB->>PeerB: "setRemoteDescription("offer")"
     PeerB->>PeerB: "createAnswer()"
-    PeerB->>PeerB: "setLocalDescription(answer)"
+    PeerB->>PeerB: "setLocalDescription("answer")"
     PeerB->>Sig: "Kirim Answer (SDP)"
     Sig->>PeerA: "Teruskan Answer"
-    PeerA->>PeerA: "setRemoteDescription(answer)"
+    PeerA->>PeerA: "setRemoteDescription("answer")"
 ```
 
 ### 2.3 Contoh Implementasi Server Sinyal (Node.js + WebSocket)

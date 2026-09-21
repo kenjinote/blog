@@ -35,10 +35,10 @@ A arquitetura de processamento em nuvem usando a FHE é completamente diferente 
 
 ```mermaid
 graph TD
-    A["Cliente (Possui a chave secreta)"] -->|"1. Criptografar texto plano x: E(x)"| B["Servidor em Nuvem (Apenas dados criptografados)"]
-    B -->|"2. Aplicar função f no texto cifrado: E(f(x))"| B
-    B -->|"3. Texto cifrado do resultado calculado E(y)"| A
-    A -->|"4. Descriptografar com chave secreta: y = f(x)"| A
+    A["Cliente (Possui a chave secreta)"] -->|"1. Criptografar texto plano x: E("x")"| B["Servidor em Nuvem (Apenas dados criptografados)"]
+    B -->|"2. Aplicar função f no texto cifrado: E("f(x"))"| B
+    B -->|"3. Texto cifrado do resultado calculado E("y")"| A
+    A -->|"4. Descriptografar com chave secreta: y = f("x")"| A
     
     style A fill:#d4edda,stroke:#28a745
     style B fill:#f8d7da,stroke:#dc3545
@@ -136,7 +136,7 @@ Intuitivamente, é o processo de "'descriptografar' o texto cifrado dentro do se
 ```mermaid
 graph LR
     A["Texto cifrado com alto ruído C_noisy"] --> B["Circuito de descriptografia homomórfica (Eval_Dec)"]
-    C["Chave secreta criptografada E(sk)"] --> B
+    C["Chave secreta criptografada E("sk")"] --> B
     B --> D["Texto cifrado com baixo ruído C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

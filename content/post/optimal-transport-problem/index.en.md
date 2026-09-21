@@ -27,7 +27,7 @@ Cost is usually represented by the product of the "amount of sand moved" and the
 ```mermaid
 flowchart LR
     A["Sandpile (Supply)"] -->|"Transport"| B["Hole (Demand)"]
-    C["Location x"] -->|"Distance d(x, y)"| D["Location y"]
+    C["Location x"] -->|"Distance d("x, y")"| D["Location y"]
 ```
 
 Expressed mathematically, let the distribution of the original sandpile be a probability measure $\mu$ on $X$, and the distribution of the hole be a probability measure $\nu$ on $Y$.

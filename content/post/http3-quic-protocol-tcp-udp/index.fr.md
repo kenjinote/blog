@@ -146,13 +146,13 @@ sequenceDiagram
     participant Server
     
     Note over Client, Server: "Cas TCP/HTTP2 (Lors d'une perte de paquet)"
-    Client->>Server: "[Flux1: Pkt1]", "[Flux2: Pkt2]", "[Flux1: Pkt3(Perte)]"
+    Client->>Server: "[Flux1: Pkt1]", "[Flux2: Pkt2]", "[Flux1: Pkt3("Perte")]"
     Note right of Server: "Pkt1, Pkt2 sont arrivés.<br/>Mais Pkt3 n'arrive pas, donc tout s'arrête."
     Client->>Server: "[Flux2: Pkt4]"
     Note right of Server: "Pkt4 est arrivé, mais comme on attend la retransmission<br/>de Pkt3, il ne peut pas être transmis à l'appli (HoL Blocking)"
     
     Note over Client, Server: "Cas QUIC/HTTP3 (Lors d'une perte de paquet)"
-    Client->>Server: "[Flux1: Pkt1]", "[Flux2: Pkt2]", "[Flux1: Pkt3(Perte)]"
+    Client->>Server: "[Flux1: Pkt1]", "[Flux2: Pkt2]", "[Flux1: Pkt3("Perte")]"
     Note right of Server: "Pkt2 du Flux2 va immédiatement à l'appli."
     Client->>Server: "[Flux2: Pkt4]"
     Note right of Server: "Pkt4 du Flux2 va aussi immédiatement à l'appli.<br/>Seul le Flux1 attend la retransmission de Pkt3. (HoL résolu)"

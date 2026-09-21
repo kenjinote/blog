@@ -85,7 +85,7 @@ flowchart TD
     subgraph "Galois groups (Groups)"
         I["Trivial group {e}"]
         H["Subgroup H"]
-        G["Galois group G=Gal(L/K)"]
+        G["Galois group G=Gal("L/K")"]
         G -->|"contains"| H
         H -->|"contains"| I
     end

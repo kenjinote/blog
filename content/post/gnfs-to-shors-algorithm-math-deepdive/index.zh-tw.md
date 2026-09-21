@@ -170,14 +170,14 @@ $$ \frac{y}{Q} \approx \frac{c}{r} $$
 
 ```mermaid
 graph TD
-    A[初始狀態: 0...0] --> B[Hadamard轉換產生全狀態的疊加]
-    B --> C[模冪運算 a^x mod N]
-    C -->|"量子糾纏"| D[塌縮至具週期性的狀態]
-    D --> E[量子傅立葉轉換 QFT]
-    E -->|"透過干涉放大機率"| F[測量: 獲得y]
-    F --> G[古典處理: 連分數展開]
-    G --> H[發現週期 r]
-    H --> I[算出N的質因數]
+    A["初始狀態: 0...0"] --> B["Hadamard轉換產生全狀態的疊加"]
+    B --> C["模冪運算 a^x mod N"]
+    C -->|"量子糾纏"| D["塌縮至具週期性的狀態"]
+    D --> E["量子傅立葉轉換 QFT"]
+    E -->|"透過干涉放大機率"| F["測量: 獲得y"]
+    F --> G["古典處理: 連分數展開"]
+    G --> H["發現週期 r"]
+    H --> I["算出N的質因數"]
     
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#bbf,stroke:#333,stroke-width:2px

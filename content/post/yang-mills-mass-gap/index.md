@@ -50,8 +50,8 @@ $ g $ は結合定数、$ f^{abc} $ はリー代数の構造定数です。非�
 ```mermaid
 graph TD
     A["Gauge Theory"] -->|"Extension"| B["Yang-Mills Theory"]
-    B -->|"SU(3) Symmetry"| C["Quantum Chromodynamics (QCD)"]
-    B -->|"SU(2)xU(1) Symmetry"| D["Electroweak Theory"]
+    B -->|"SU("3") Symmetry"| C["Quantum Chromodynamics (QCD)"]
+    B -->|"SU("2")xU("1") Symmetry"| D["Electroweak Theory"]
     C -->|"Strong Interaction"| E["Standard Model"]
     D -->|"Electromagnetic & Weak Interaction"| E
 ```

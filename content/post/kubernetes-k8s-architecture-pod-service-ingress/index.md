@@ -32,11 +32,11 @@ Kubernetesクラスタは、大きく分けて2つの主要なコンポーネン
 ```mermaid
 flowchart TD
     subgraph ControlPlane [Control Plane]
-        API[kube-apiserver]
-        ETCD[(etcd)]
-        SCHED[kube-scheduler]
-        CM[kube-controller-manager]
-        CCM[cloud-controller-manager]
+        API["kube-apiserver"]
+        ETCD["(etcd)"]
+        SCHED["kube-scheduler"]
+        CM["kube-controller-manager"]
+        CCM["cloud-controller-manager"]
         API <--> ETCD
         API <--> SCHED
         API <--> CM
@@ -44,21 +44,21 @@ flowchart TD
     end
 
     subgraph WorkerNode1 [Worker Node 1]
-        KLET1[kubelet]
-        KPROX1[kube-proxy]
-        CR1[Container Runtime]
-        POD1_1((Pod))
-        POD1_2((Pod))
+        KLET1["kubelet"]
+        KPROX1["kube-proxy"]
+        CR1["Container Runtime"]
+        POD1_1(("Pod"))
+        POD1_2(("Pod"))
         KLET1 --> CR1
         CR1 --> POD1_1
         CR1 --> POD1_2
     end
 
     subgraph WorkerNode2 [Worker Node 2]
-        KLET2[kubelet]
-        KPROX2[kube-proxy]
-        CR2[Container Runtime]
-        POD2_1((Pod))
+        KLET2["kubelet"]
+        KPROX2["kube-proxy"]
+        CR2["Container Runtime"]
+        POD2_1(("Pod"))
         KLET2 --> CR2
         CR2 --> POD2_1
     end
@@ -250,19 +250,19 @@ Ingressを機能させるには、 **Ingress Controller** （NGINX Ingress Contr
 
 ```mermaid
 flowchart LR
-    Client([External Client])
+    Client("[External Client]")
     subgraph "K8s Cluster"
-        Ingress[Ingress Controller]
+        Ingress["Ingress Controller"]
         
         subgraph Services
-            SvcA[Service A (app1)]
-            SvcB[Service B (app2)]
+            SvcA["Service A (app1)"]
+            SvcB["Service B (app2)"]
         end
         
         subgraph Pods
-            PodA1((Pod A1))
-            PodA2((Pod A2))
-            PodB1((Pod B1))
+            PodA1(("Pod A1"))
+            PodA2(("Pod A2"))
+            PodB1(("Pod B1"))
         end
     end
     

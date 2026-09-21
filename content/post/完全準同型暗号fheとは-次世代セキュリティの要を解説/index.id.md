@@ -35,10 +35,10 @@ Arsitektur pemrosesan cloud menggunakan FHE sama sekali berbeda dari arsitektur 
 
 ```mermaid
 graph TD
-    A["Klien (Menyimpan kunci privat)"] -->|"1. Enkripsi plaintext x: E(x)"| B["Server Cloud (Hanya data terenkripsi)"]
-    B -->|"2. Terapkan fungsi f pada ciphertext: E(f(x))"| B
-    B -->|"3. Ciphertext dari hasil perhitungan E(y)"| A
-    A -->|"4. Dekripsi dengan kunci privat: y = f(x)"| A
+    A["Klien (Menyimpan kunci privat)"] -->|"1. Enkripsi plaintext x: E("x")"| B["Server Cloud (Hanya data terenkripsi)"]
+    B -->|"2. Terapkan fungsi f pada ciphertext: E("f(x"))"| B
+    B -->|"3. Ciphertext dari hasil perhitungan E("y")"| A
+    A -->|"4. Dekripsi dengan kunci privat: y = f("x")"| A
     
     style A fill:#d4edda,stroke:#28a745
     style B fill:#f8d7da,stroke:#dc3545
@@ -136,7 +136,7 @@ Secara intuitif, operasi ini berarti "sebelum ciphertext rusak karena dipenuhi n
 ```mermaid
 graph LR
     A["Ciphertext Noise Tinggi C_noisy"] --> B["Sirkuit Dekripsi Homomorfik (Eval_Dec)"]
-    C["Kunci privat terenkripsi E(sk)"] --> B
+    C["Kunci privat terenkripsi E("sk")"] --> B
     B --> D["Ciphertext Noise Rendah C_fresh"]
     
     style B fill:#ffeeba,stroke:#ffc107

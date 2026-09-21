@@ -80,12 +80,12 @@ Na blockchain, uma estrutura de dados chamada **Árvore de Merkle (Merkle [Tree]
 
 ```mermaid
 flowchart TD
-    Root["Raiz de Merkle: Hash(H12 + H34)"] --> H12["Hash(H1 + H2)"]
-    Root --> H34["Hash(H3 + H4)"]
-    H12 --> H1["Hash(Tx1)"]
-    H12 --> H2["Hash(Tx2)"]
-    H34 --> H3["Hash(Tx3)"]
-    H34 --> H4["Hash(Tx4)"]
+    Root["Raiz de Merkle: Hash("H12 + H34")"] --> H12["Hash("H1 + H2")"]
+    Root --> H34["Hash("H3 + H4")"]
+    H12 --> H1["Hash("Tx1")"]
+    H12 --> H2["Hash("Tx2")"]
+    H34 --> H3["Hash("Tx3")"]
+    H34 --> H4["Hash("Tx4")"]
 ```
 
 Se os dados de uma transação forem alterados por menor que seja, o hash daquele nó folha muda, e em cadeia, o valor da raiz de Merkle também será completamente diferente. Isso permite detectar instantaneamente qualquer adulteração a partir de uma enorme quantidade de dados de transações.

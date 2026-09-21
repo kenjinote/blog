@@ -112,10 +112,10 @@ Untuk fungsi $f(x) = \left( \text{Suhu}, \text{Tekanan} \right)$ yang memiliki d
 
 ```mermaid
 flowchart LR
-    P["Vektor normal p"] -->|"Menentukan bidang pembagi roti atas"| HP["Bidang H(p)"]
+    P["Vektor normal p"] -->|"Menentukan bidang pembagi roti atas"| HP["Bidang H("p")"]
     HP -->|"Menghitung volume ham di sisi positif"| V1["Volume V1"]
     HP -->|"Menghitung volume roti bawah di sisi positif"| V2["Volume V2"]
-    V1 -->|"Menerapkan teorema Borsuk-Ulam"| Eq["f(p) = f(-p)"]
+    V1 -->|"Menerapkan teorema Borsuk-Ulam"| Eq["f("p") = f("-p")"]
     V2 -->|"Menerapkan teorema Borsuk-Ulam"| Eq
     Eq -->|"Semua bahan dibagi dua!"| Success["Bukti selesai"]
 ```

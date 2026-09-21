@@ -78,13 +78,13 @@ graph TD
     end
 
     subgraph "Хеш-функция"
-        H{"Hash(x)"}
+        H{"Hash("x")"}
     end
 
     subgraph "Конечное хеш-пространство (ящики)"
-        V1("Hash(A)")
-        V2("Hash(B) = Hash(C)")
-        V3("Hash(D)")
+        V1("Hash("A")")
+        V2("Hash("B") = Hash("C")")
+        V3("Hash("D")")
     end
 
     A -->|"Хеширование"| H
@@ -152,7 +152,7 @@ graph LR
         F1("Нормальный договор PDF")
         F2("Вредоносный договор PDF")
         H{"Хеш-функция SHA-1"}
-        V("Идентичное хеш-значение\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
+        V("Идентичное хеш-значение\n("38762cf7f55934b34d179ae6a4c80cadccbb7f0a")")
     end
 
     F1 -->|"Ввод"| H

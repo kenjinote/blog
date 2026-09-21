@@ -306,7 +306,7 @@ graph TD
     Center --- X_neg["|-⟩ = (|0⟩-|1⟩)/√2 (محور X السالب: θ=π/2, φ=π)"]
     Center --- Y_pos["|i⟩ = (|0⟩+i|1⟩)/√2 (محور Y الموجب: θ=π/2, φ=π/2)"]
     Center --- Y_neg["|-i⟩ = (|0⟩-i|1⟩)/√2 (محور Y السالب: θ=π/2, φ=3π/2)"]
-    State["|ψ⟩ = cos(θ/2)|0⟩ + e^(iφ)sin(θ/2)|1⟩"] -.->|"متجه بلوخ r = (sinθcosφ, sinθsinφ, cosθ)"| Center
+    State["|ψ⟩ = cos("θ/2")|0⟩ + e^(iφ)sin("θ/2")|1⟩"] -.->|"متجه بلوخ r = (sinθcosφ, sinθsinφ, cosθ)"| Center
     end
     style Z_pos fill:#f9f,stroke:#333,stroke-width:2px
     style Z_neg fill:#f9f,stroke:#333,stroke-width:2px
@@ -582,13 +582,13 @@ graph TD
     classDef operation fill:#e1f5fe,stroke:#0288d1,stroke-width:2px;
     classDef measure fill:#fce4ec,stroke:#c2185b,stroke-width:2px;
     
-    Init["الحالة الابتدائية $| \psi(t_0) \rangle$"]:::state --> Evo["التطور الزمني الوحدوي $U(t, t_0) = \exp(-i H t / \hbar)$"]:::operation
-    Evo --> Evolved["الحالة المتطورة $| \psi(t) \rangle = U | \psi(t_0) \rangle$"]:::state
+    Init["الحالة الابتدائية $| \psi("t_0") \rangle$"]:::state --> Evo["التطور الزمني الوحدوي $U("t, t_0") = \exp("-i H t / \hbar")$"]:::operation
+    Evo --> Evolved["الحالة المتطورة $| \psi("t") \rangle = U | \psi("t_0") \rangle$"]:::state
     
     Evolved --> Obs["قياس الكمية الفيزيائية $A$ (مؤثر الإسقاط $P_k$)"]:::measure
     
-    Obs -->|"احتمال $p(a_1) = \langle \psi"| P_1 | \psi \rangle$ | State1["حالة الانهيار 1: $| a_1 \rangle$"]:::state
-    Obs -->|"احتمال $p(a_2) = \langle \psi"| P_2 | \psi \rangle$ | State2["حالة الانهيار 2: $| a_2 \rangle$"]:::state
+    Obs -->|"احتمال $p("a_1") = \langle \psi"| P_1 | \psi \rangle$ | State1["حالة الانهيار 1: $| a_1 \rangle$"]:::state
+    Obs -->|"احتمال $p("a_2") = \langle \psi"| P_2 | \psi \rangle$ | State2["حالة الانهيار 2: $| a_2 \rangle$"]:::state
     Obs -->|"..."| StateN["حالة الانهيار n: $| a_n \rangle$"]:::state
     
     State1 --> Decoherence["فقدان الترابط الكمومي (فقدان التداخل الطوري) والتحول إلى حالة مختلطة"]:::measure
@@ -844,7 +844,7 @@ graph LR
     direction LR
     Q0["|0⟩"] --> G1["بوابة H"]
     G1 --> G2["بوابة S"]
-    G2 --> G3["Rx(π/2)"]
+    G2 --> G3["Rx("π/2")"]
     G3 --> M1["قياس"]
     end
     

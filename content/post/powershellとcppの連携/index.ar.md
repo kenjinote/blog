@@ -151,7 +151,7 @@ sequenceDiagram
     PS->>CLR: "استدعاء ProcessSystemString"
     note right of CLR: "تنظيم (Marshal) System.String إلى LPCWSTR"
     note right of CLR: "تمرير مرجع StringBuilder"
-    CLR->>CPP: "ProcessSystemString(LPCWSTR, LPWSTR, int)"
+    CLR->>CPP: "ProcessSystemString("LPCWSTR, LPWSTR, int")"
     
     CPP->>CPP: "تنفيذ معالجة السلسلة النصية الأصلية"
     CPP->>CPP: "كتابة النتيجة في المخزن المؤقت LPWSTR"

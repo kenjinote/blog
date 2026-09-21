@@ -69,7 +69,7 @@ Ein wichtiger Punkt, den es hierbei zu beachten gilt, ist, dass der konstante Te
 
 ```mermaid
 graph TD
-    A["Quadratische Matrix A"] --> B["Berechne charakteristisches Polynom p(λ)"]
+    A["Quadratische Matrix A"] --> B["Berechne charakteristisches Polynom p("λ")"]
     B --> C["Setze λ = A ein"]
     C -->|"Wende Satz an"| D["Ergibt Nullmatrix O"]
 ```

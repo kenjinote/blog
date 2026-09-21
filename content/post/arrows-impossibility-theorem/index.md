@@ -95,8 +95,8 @@ graph TD
 
 ```mermaid
 graph LR
-    A((A)) -->|"多数決で勝つ"| B((B))
-    B -->|"多数決で勝つ"| C((C))
+    A(("A")) -->|"多数決で勝つ"| B(("B"))
+    B -->|"多数決で勝つ"| C(("C"))
     C -->|"多数決で勝つ"| A
     
     style A fill:#ff9999
@@ -164,7 +164,7 @@ $|X| \ge 3$ かつ $|V| \ge 2$ のとき、条件(U), (P), (I) を満たす社�
 ```mermaid
 graph TD
     subgraph "論理的な帰結"
-        A_U["条件U (非制限性)"] --> AND1((AND))
+        A_U["条件U (非制限性)"] --> AND1(("AND"))
         A_P["条件P (満場一致性)"] --> AND1
         A_I["条件I (IIA)"] --> AND1
         

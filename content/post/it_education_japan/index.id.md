@@ -37,7 +37,7 @@ flowchart TD
     B -->|"Kurangnya Pemahaman tentang Variabel & Pengetikan Statis"| D["Dropout (Dinding Tipe)"]
     B -->|"Transisi Sukses"| E["SMA: Informasi I (Dasar-dasar Python/JavaScript, dll.)"]
     E --> F{"Dinding Desain Algoritma dan Struktur Data"}
-    F -->|"Tidak Memahami Kompleksitas Waktu & Ruang"| G["Kode Tidak Efisien (Penurunan Performa akibat Produksi O(N^2) Berlebihan)"]
+    F -->|"Tidak Memahami Kompleksitas Waktu & Ruang"| G["Kode Tidak Efisien (Penurunan Performa akibat Produksi O("N^2") Berlebihan)"]
     F -->|"Kotak Hitam Manajemen Memori dan Referensi"| H["Menjadi Coder yang Terbatas pada Pemanggilan API Permukaan"]
     F -->|"Terobosan Konseptual"| I["Pembelajaran CS Serius (C/C++, Java, Arsitektur Tingkat Rendah)"]
     I --> J["Profesional TI Tingkat Lanjut yang Diinginkan Industri"]

@@ -78,13 +78,13 @@ graph TD
     end
 
     subgraph "해시 함수"
-        H{"Hash(x)"}
+        H{"Hash("x")"}
     end
 
     subgraph "유한한 해시 공간(집)"
-        V1("Hash(A)")
-        V2("Hash(B) = Hash(C)")
-        V3("Hash(D)")
+        V1("Hash("A")")
+        V2("Hash("B") = Hash("C")")
+        V3("Hash("D")")
     end
 
     A -->|"해시화"| H
@@ -152,7 +152,7 @@ graph LR
         F1("정상적인 PDF 계약서")
         F2("악의적인 PDF 계약서")
         H{"SHA-1 해시 함수"}
-        V("동일한 해시값\n(38762cf7f55934b34d179ae6a4c80cadccbb7f0a)")
+        V("동일한 해시값\n("38762cf7f55934b34d179ae6a4c80cadccbb7f0a")")
     end
 
     F1 -->|"입력"| H

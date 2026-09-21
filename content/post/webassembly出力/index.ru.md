@@ -223,13 +223,13 @@ sequenceDiagram
   participant Wasm as "Среда выполнения WebAssembly"
   participant Mem as "Линейная память (ArrayBuffer)"
 
-  JS->>Wasm: "Вызвать calculate(10, 20)"
+  JS->>Wasm: "Вызвать calculate("10, 20")"
   note over JS,Wasm: "Примитивы (int, float) передаются напрямую через регистры/стек"
   Wasm-->>JS: "Вернуть 30"
 
   note over JS, Mem: "Для сложных данных (строки, массивы)"
   JS->>Mem: "Записать строку в память"
-  JS->>Wasm: "Вызвать process_string(указатель, длина)"
+  JS->>Wasm: "Вызвать process_string("указатель, длина")"
   Wasm->>Mem: "Прочитать по указателю"
   Wasm->>Mem: "Записать результат по новому указателю"
   Wasm-->>JS: "Вернуть новый указатель и длину"

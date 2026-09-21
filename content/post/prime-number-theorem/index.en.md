@@ -36,8 +36,8 @@ As numbers become larger, finding prime numbers becomes difficult, and the inter
 ```mermaid
 graph TD;
     A["Natural number x"] -->|"Count prime numbers"| B["Prime-counting function π(x)"];
-    B -->|"Approximate"| C["x / ln(x)"];
-    C -->|"Improve precision"| D["Logarithmic integral Li(x)"];
+    B -->|"Approximate"| C["x / ln("x")"];
+    C -->|"Improve precision"| D["Logarithmic integral Li("x")"];
 ```
 
 ## Historical Background: From Gauss's Conjecture to Proof

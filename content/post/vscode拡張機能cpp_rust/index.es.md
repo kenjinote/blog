@@ -320,7 +320,7 @@ sequenceDiagram
     CodeLLDB->>DebuggerCore: Registrar puntos de interrupción en la tabla de gestión de memoria
     Developer->>VSCode: Presionar tecla F5 (Iniciar depuración)
     VSCode->>CodeLLDB: Petición launch
-    CodeLLDB->>OS: Iniciar proceso adjuntando ptrace(PTRACE_TRACEME)
+    CodeLLDB->>OS: Iniciar proceso adjuntando ptrace("PTRACE_TRACEME")
     OS-->>DebuggerCore: Mapeo del espacio de memoria de la aplicación completado
     DebuggerCore->>OS: Escribir instrucción INT3 (0xCC) en la dirección especificada
     Note over OS: Programa en ejecución...

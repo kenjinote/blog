@@ -36,10 +36,10 @@ No entanto, à medida que inúmeros pontos de elétrons se acumulavam no ecrã, 
 
 ```mermaid
 graph TD
-    A[Arma de Elétrons / Fonte de Luz] -->|"Dispara partículas uma a uma"| B(Parede com Dupla Fenda)
+    A["Arma de Elétrons / Fonte de Luz"] -->|"Dispara partículas uma a uma"| B("Parede com Dupla Fenda")
     B -->|"Fenda 1"| C{Interfere como onda?}
     B -->|"Fenda 2"| C
-    C -->|"Chega ao ecrã"| D[Ao se acumular, surge o padrão de interferência]
+    C -->|"Chega ao ecrã"| D["Ao se acumular, surge o padrão de interferência"]
     
     classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px;
     classDef highlight fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px;
@@ -73,12 +73,12 @@ No entanto, devido à autoridade e influência absolutas de Newton na comunidade
 
 ```mermaid
 graph TD
-    A[A Busca Pela Natureza da Luz] --> B[Século XVII: Período da Revolução Científica]
+    A["A Busca Pela Natureza da Luz"] --> B["Século XVII: Período da Revolução Científica"]
     B --> C("Teoria Corpuscular de Newton (1704)")
     B --> D("Teoria Ondulatória de Huygens (1690)")
-    C -->|"A Autoridade Absoluta de Newton"| E[Século XVIII: Longo Domínio da Teoria Corpuscular]
+    C -->|"A Autoridade Absoluta de Newton"| E["Século XVIII: Longo Domínio da Teoria Corpuscular"]
     D -.->|"Sem apoio, estagnou"| E
-    E --> F[Início do Século XIX: Mudança de Paradigma]
+    E --> F["Início do Século XIX: Mudança de Paradigma"]
 ```
 ## 2.2 O experimento da dupla fenda de Thomas Young (1801) e a vitória da teoria ondulatória da luz
 

@@ -189,12 +189,12 @@ sequenceDiagram
 
     A->>V: "withdrawBalance()"
     activate V
-    V->>A: "Call.value(balance)() (Transfer)"
+    V->>A: "Call.value("balance")() (Transfer)"
     activate A
     Note over A: "Fallback function is triggered"
     A->>V: "withdrawBalance() (Recursive call)"
     activate V
-    V->>A: "Call.value(balance)() (2nd transfer)"
+    V->>A: "Call.value("balance")() (2nd transfer)"
     deactivate V
     deactivate A
     Note over V: "Multiple transfers occur before the balance is updated"

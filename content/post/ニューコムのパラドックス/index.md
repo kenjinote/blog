@@ -48,8 +48,8 @@ graph TD
     
     You["あなたの選択<br>（今日）"]
     
-    You -->|"選択1: 両方取る"| Result1["箱A(10万) + 箱Bの中身"]
-    You -->|"選択2: 箱Bだけ取る"| Result2["箱A(0万) + 箱Bの中身"]
+    You -->|"選択1: 両方取る"| Result1["箱A("10万") + 箱Bの中身"]
+    You -->|"選択2: 箱Bだけ取る"| Result2["箱A("0万") + 箱Bの中身"]
     
     BoxB_Empty -.-> Result1
     BoxB_100M -.-> Result2

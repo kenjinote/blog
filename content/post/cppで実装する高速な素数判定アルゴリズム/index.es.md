@@ -313,8 +313,8 @@ La prueba de primalidad rápida es una tecnología ineludible en el cálculo con
 
 ```mermaid
 graph LR
-    TrialDivision["División por tentativa (O(√N))"] --> Fermat["Prueba de Fermat (O(log N), tiene debilidades)"]
-    Fermat --> MillerRabin["Método Miller-Rabin (O(log N), puede ser determinista)"]
+    TrialDivision["División por tentativa (O("√N"))"] --> Fermat["Prueba de Fermat (O("log N"), tiene debilidades)"]
+    Fermat --> MillerRabin["Método Miller-Rabin (O("log N"), puede ser determinista)"]
     MillerRabin --> Montgomery["+ Multiplicación de Montgomery (aceleración por factor constante)"]
     
     style MillerRabin fill:#f9f,stroke:#333,stroke-width:2px
