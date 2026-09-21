@@ -33,7 +33,7 @@ C++ 和 Win32API 在最靠近操作系统的层级上运行，因此几乎没有
 
 ### 无需运行时，便于分发
 
-无需像 .NET 或 Java 那样的外部运行时， **只需一个可执行文件即可分发** 。
+无需像 .NET 或 [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 那样的外部运行时， **只需一个可执行文件即可分发** 。
 在再分发时不易出现问题，无需安装程序也能轻松运行，这是其魅力所在。
 
 ### 能够制作轻量级应用

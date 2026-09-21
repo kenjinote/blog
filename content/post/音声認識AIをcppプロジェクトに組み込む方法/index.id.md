@@ -47,7 +47,7 @@ Karena ukurannya sangat ringan, buffering dapat dilakukan dengan mudah bahkan pa
 
 ### 2.2 Matematika Transformasi Mel-Spectrogram
 
-Secara internal, Whisper tidak memproses data bentuk gelombang audio 1D (Raw Waveform) secara langsung. Data tersebut dikonversi ke **Mel-Spectrogram**, sebuah representasi frekuensi yang mendekati karakteristik pendengaran manusia, sebelum dimasukkan ke model Transformer. Pustaka `whisper.cpp` menyertakan proses konversi ini di dalam implementasi C++-nya, namun memahami cara kerjanya akan berguna untuk mitigasi noise dan optimasi prapemrosesan.
+Secara internal, Whisper tidak memproses data bentuk gelombang audio 1D (Raw Waveform) secara langsung. Data tersebut dikonversi ke **Mel-Spectrogram**, sebuah representasi frekuensi yang mendekati karakteristik pendengaran manusia, sebelum dimasukkan ke model [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/). Pustaka `whisper.cpp` menyertakan proses konversi ini di dalam implementasi C++-nya, namun memahami cara kerjanya akan berguna untuk mitigasi noise dan optimasi prapemrosesan.
 
 Rumus aproksimasi untuk mengubah frekuensi normal $f$ (Hz) ke skala Mel $m$ adalah sebagai berikut:
 

@@ -9,7 +9,7 @@ categories: ["ai", "llm", "windows"]
 tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 ---
 
-# 1. 소개: 왜 지금 Windows에서 로컬 LLM인가?
+# 1. 소개: 왜 지금 Windows에서 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)인가?
 
 2026년 현재, 생성형 AI와 대규모 언어 모델(LLM)의 진화는 클라우드 상의 거대한 API 서비스에서 개인 PC나 온프레미스 환경에서 동작하는 '로컬 LLM'으로 큰 패러다임 전환을 보여주고 있습니다. OpenAI의 GPT-5나 Anthropic의 Claude 3.5와 같은 클라우드 AI는 매우 강력하지만, 기업이나 개인이 모든 데이터를 클라우드로 전송할 수 있는 것은 아닙니다. 개인정보 보호, 보안, 대기 시간(레이턴시), 그리고 장기적이고 지속 가능한 비용 관점에서 로컬 LLM에 대한 수요는 그 어느 때보다 폭발적으로 증가하고 있습니다.
 
@@ -63,7 +63,7 @@ wsl --update
 
 ---
 
-# 3. 로컬 LLM 아키텍처 및 추론 메커니즘
+# 3. 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 아키텍처 및 추론 메커니즘
 
 로컬 환경에서 모델이 어떻게 텍스트를 생성하는지, 그 내부 구조를 이해하는 것은 문제 해결(트러블슈팅)이나 최적화에 매우 유용합니다.
 
@@ -91,7 +91,7 @@ graph TD
 
 ## 3.1 2가지 단계: Prefill과 Decode
 
-LLM의 텍스트 생성은 계산 특성이 다른 두 가지 단계로 나뉩니다.
+[LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 텍스트 생성은 계산 특성이 다른 두 가지 단계로 나뉩니다.
 
 1. **Prefill (프롬프트 처리) 단계**: 입력된 프롬프트 전체를 한 번에 처리하고 이해하는 단계입니다. 병렬 계산이 가능하므로 GPU의 계산 능력(FLOPS)이 속도에 직결됩니다. 프롬프트가 길 경우 이 단계에 몇 초가 걸릴 수 있습니다.
 2. **Decode (토큰 생성) 단계**: 1 토큰씩 예측하고 다음 입력으로 넘기는(자기 회귀, Autoregressive) 단계입니다. 이 단계에서는 병렬 계산이 제한되므로 GPU의 VRAM 대역폭(Memory Bandwidth)이 결정적인 병목 지점이 됩니다.
@@ -273,7 +273,7 @@ graph LR
     LocalLLM --> Answer["최종 답변"]
 ```
 
-AnythingLLM 데스크톱 버전(Windows)을 사용하면 설정 화면에서 Ollama(LLM 및 Embedding)를 지정하고, 로컬 VectorDB(LanceDB)를 사용하도록 설정하는 것만으로 몇 분 만에 이 아키텍처가 완성됩니다. 데이터를 외부에 전혀 전송하지 않는 프라이빗 AI의 탄생입니다.
+AnythingLLM 데스크톱 버전(Windows)을 사용하면 설정 화면에서 Ollama([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 및 Embedding)를 지정하고, 로컬 VectorDB(LanceDB)를 사용하도록 설정하는 것만으로 몇 분 만에 이 아키텍처가 완성됩니다. 데이터를 외부에 전혀 전송하지 않는 프라이빗 AI의 탄생입니다.
 
 ---
 
@@ -314,7 +314,7 @@ Unsloth는 CUDA 커널을 극한까지 최적화하여, 표준 Hugging Face 라�
 
 # 10. 요약 및 향후 전망
 
-2026년, Windows 환경에서의 로컬 LLM 구축은 더 이상 일부 엔지니어들만의 특권이 아닙니다. GGUF 포맷의 사실상 표준화, Ollama나 LM Studio와 같이 세련된 생태계의 등장, 그리고 FlashAttention을 비롯한 하드웨어 최적화 덕분에 누구나 쉽게 엔터프라이즈급 AI 환경을 구축할 수 있게 되었습니다.
+2026년, Windows 환경에서의 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 구축은 더 이상 일부 엔지니어들만의 특권이 아닙니다. GGUF 포맷의 사실상 표준화, Ollama나 LM Studio와 같이 세련된 생태계의 등장, 그리고 FlashAttention을 비롯한 하드웨어 최적화 덕분에 누구나 쉽게 엔터프라이즈급 AI 환경을 구축할 수 있게 되었습니다.
 
 이 기사에서 설명한 다음 요점들을 꼭 활용해 보시기 바랍니다.
 

@@ -12,7 +12,7 @@ description: 'Explicación detallada del proceso de desarrollo y la arquitectura
 
 # Guía de desarrollo de modelos de IA a pequeña escala (como TinyLLaMA) con C++
 
-En los últimos años, el interés por ejecutar grandes modelos de lenguaje (LLM) en entornos locales ha crecido rápidamente. Especialmente, los modelos pequeños como TinyLLaMA (1.1B parámetros) pueden realizar inferencias a velocidades prácticas incluso en dispositivos periféricos (edge devices) con recursos limitados o computadoras portátiles comunes (incluyendo entornos Windows). Mientras que el desarrollo con Python y PyTorch es la corriente principal, cuando se busca el rendimiento máximo y la eficiencia de memoria, la combinación de C++ y "ggml", una biblioteca de tensores basada en C, se ha convertido en el estándar de facto.
+En los últimos años, el interés por ejecutar grandes modelos de lenguaje ([LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/)) en entornos locales ha crecido rápidamente. Especialmente, los modelos pequeños como TinyLLaMA (1.1B parámetros) pueden realizar inferencias a velocidades prácticas incluso en dispositivos periféricos (edge devices) con recursos limitados o computadoras portátiles comunes (incluyendo entornos Windows). Mientras que el desarrollo con Python y PyTorch es la corriente principal, cuando se busca el rendimiento máximo y la eficiencia de memoria, la combinación de C++ y "ggml", una biblioteca de tensores basada en C, se ha convertido en el estándar de facto.
 
 En este artículo, explicaremos en gran detalle el proceso de desarrollo para construir un motor de inferencia desde cero (o comprender profundamente la estructura interna del existente llama.cpp) para cargar TinyLLaMA y generar texto usando C++.
 

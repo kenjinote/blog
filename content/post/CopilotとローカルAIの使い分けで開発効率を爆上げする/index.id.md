@@ -108,7 +108,7 @@ graph TD
 ```
 
 ### 3.1 Kriteria Evaluasi 1: Kerahasiaan (Privacy and Security)
-Ini adalah kriteria pengambilan keputusan yang paling penting. Pada file kode pengujian yang memuat data pelanggan (yang dilarang untuk dikirim ke luar karena kebijakan perusahaan), atau file yang mengimplementasikan algoritma eksklusif inti, pilih AI lokal tanpa kompromi apa pun. Metode seperti membangun RAG (Retrieval-Augmented Generation) di lingkungan lokal dengan menyimpan dokumen internal di vector store agar bisa diakses oleh LLM lokal juga sangat efektif.
+Ini adalah kriteria pengambilan keputusan yang paling penting. Pada file kode pengujian yang memuat data pelanggan (yang dilarang untuk dikirim ke luar karena kebijakan perusahaan), atau file yang mengimplementasikan algoritma eksklusif inti, pilih AI lokal tanpa kompromi apa pun. Metode seperti membangun RAG (Retrieval-Augmented Generation) di lingkungan lokal dengan menyimpan dokumen internal di vector store agar bisa diakses oleh [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) lokal juga sangat efektif.
 
 ### 3.2 Kriteria Evaluasi 2: Latensi (Latency)
 Untuk menjaga agar kecepatan berpikir tidak terganggu, latensi dari penyelesaian otomatis (autocomplete) sangatlah penting. AI cloud selalu memiliki Network Round Trip Time (RTT). Sebaliknya, latensi jaringan pada AI lokal adalah nol. Jadi, jika Anda memuat model ringan di VRAM agar terus berjalan di latar belakang, Anda bisa merasakan kecepatan respons yang melampaui AI cloud.

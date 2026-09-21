@@ -11,7 +11,7 @@ description: 'نقدم طريقة تثبيت CLI لمنشئ المواقع ال�
 
 # ما هو Hugo
 
-Hugo هو أحد مولدات المواقع الثابتة. يتيح لك إنشاء مواقع ويب عن طريق تحويل ملفات Markdown إلى HTML. تمت كتابة Hugo بلغة Go ويعمل بسرعة فائقة.
+Hugo هو أحد مولدات المواقع الثابتة. يتيح لك إنشاء مواقع ويب عن طريق تحويل ملفات Markdown إلى HTML. تمت كتابة Hugo بلغة [Go](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) ويعمل بسرعة فائقة.
 
 هذه المدونة أيضاً تم إنشاؤها باستخدام Hugo.
 

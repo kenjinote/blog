@@ -263,7 +263,7 @@ Maintenant que le FHE atteint des vitesses pratiques, des innovations disruptive
 2.  **Détection des fraudes et lutte contre le blanchiment d'argent (AML) dans les institutions financières** :
     Des banques concurrentes pourraient effectuer des analyses interbancaires en croisant leurs données à l'état chiffré, sans révéler les informations des comptes de leurs clients ou l'historique de leurs transactions, ce qui permettrait de détecter d'énormes réseaux de transferts frauduleux.
 3.  **API d'inférence d'IA sécurisée (MaaS : Model as a [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/))** :
-    Les utilisateurs chiffrent leur propre voix, l'image de leur visage ou leurs requêtes avant de les envoyer à des services d'IA (tels que des LLM comme ChatGPT). Le fournisseur d'IA génère une réponse sans jamais connaître l'entrée de l'utilisateur, et la renvoie sous forme de texte chiffré. Cela dissipe complètement la crainte que « l'IA apprenne ou s'approprie des informations personnelles ».
+    Les utilisateurs chiffrent leur propre voix, l'image de leur visage ou leurs requêtes avant de les envoyer à des services d'IA (tels que des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) comme ChatGPT). Le fournisseur d'IA génère une réponse sans jamais connaître l'entrée de l'utilisateur, et la renvoie sous forme de texte chiffré. Cela dissipe complètement la crainte que « l'IA apprenne ou s'approprie des informations personnelles ».
 
 ---
 

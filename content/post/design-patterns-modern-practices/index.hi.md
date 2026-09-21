@@ -36,7 +36,7 @@ tags:
 
 `Strategy` पैटर्न एल्गोरिदम के एक परिवार को परिभाषित करता है, प्रत्येक को एनकैप्सुलेट करता है, और उन्हें विनिमेय (interchangeable) बनाता है।
 
-**पारंपरिक GoF दृष्टिकोण (Java शैली)**
+**पारंपरिक GoF दृष्टिकोण ([Java](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) शैली)**
 
 ```java
 // इंटरफ़ेस की परिभाषा
@@ -135,7 +135,7 @@ coroutineScope.launch {
 
 आजकल, **अलजेब्रिक डेटा प्रकार (ADT)** और **पैटर्न मैचिंग** वाली भाषाओं ([Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala, आदि) का उपयोग करके इस समस्या को बहुत अच्छे से हल किया जा सकता है।
 
-**आधुनिक दृष्टिकोण (Rust के Enums और पैटर्न मैचिंग)**
+**आधुनिक दृष्टिकोण ([Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) के Enums और पैटर्न मैचिंग)**
 
 ```rust
 // अलजेब्रिक डेटा प्रकार (Variants के साथ Enum)
@@ -169,13 +169,13 @@ graph TD
     E["सेवा B (Service B)"] -->|"पर निर्भर है"| B
 ```
 
-चूँकि Spring Framework (Java), NestJS (TypeScript), और Dagger/Hilt (Android) जैसे DI कंटेनर इंस्टेंस के निर्माण और विनाश का प्रबंधन करते हैं, इसलिए आपको क्लास में Singleton लॉजिक (`getInstance()` या `private constructor`) नहीं लिखना चाहिए।
+चूँकि Spring Framework ([Java](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/)), NestJS (TypeScript), और Dagger/Hilt (Android) जैसे DI कंटेनर इंस्टेंस के निर्माण और विनाश का प्रबंधन करते हैं, इसलिए आपको क्लास में Singleton लॉजिक (`getInstance()` या `private constructor`) नहीं लिखना चाहिए।
 
 ## 4. कार्यात्मक प्रोग्रामिंग ([Functional Programming](https://kenji.blog/hi/p/oop-vs-fp-vs-dop/)) में डिज़ाइन पैटर्न
 
 कार्यात्मक प्रोग्रामिंग की दुनिया में, ऐसे "पैटर्न" हैं जो GoF से एक अलग आयाम के हैं। ये गणितीय श्रेणी सिद्धांत (Category Theory) द्वारा समर्थित हैं।
 
-### 4.1. Monad (मोनाड) के साथ साइड इफेक्ट्स को नियंत्रित करना
+### 4.1. [Monad](https://kenji.blog/hi/p/functional-programming-concepts-pure-functions-monads/) (मोनाड) के साथ साइड इफेक्ट्स को नियंत्रित करना
 
 जहाँ GoF पैटर्न "स्थिति परिवर्तन (state mutation)" को मानकर चलते हैं, वहीं कार्यात्मक दृष्टिकोण साइड इफेक्ट्स (अपवाद, एसिंक्रोनस प्रोसेसिंग, Null की संभावना) को टाइप सिस्टम तक ही सीमित रखता है।
 

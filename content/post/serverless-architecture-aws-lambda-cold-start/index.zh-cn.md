@@ -78,7 +78,7 @@ AWS Lambda 对单次执行有最大 **15 分钟** （900 秒）的超时限制�
 
 ### 3.1. 什么是 Firecracker？
 
-Firecracker 是一个利用 KVM（Kernel-based Virtual Machine），能够在毫秒级启动轻量级“MicroVM”的虚拟机监控程序（VMM）。它是用 Rust 语言编写的，与传统的虚拟机（如 QEMU）相比，通过极力削减不必要的设备模型，实现了极快的启动速度和极低的内存开销。
+Firecracker 是一个利用 KVM（Kernel-based Virtual Machine），能够在毫秒级启动轻量级“MicroVM”的虚拟机监控程序（VMM）。它是用 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 语言编写的，与传统的虚拟机（如 QEMU）相比，通过极力削减不必要的设备模型，实现了极快的启动速度和极低的内存开销。
 
 ```mermaid
 graph TD
@@ -143,7 +143,7 @@ stateDiagram-v2
 
 1. **代码下载和解压**：部署包从 S3 下载并解压到环境中。这与包的大小（依赖库的数量）成正比消耗时间。
 2. **MicroVM 启动**：Firecracker 启动。这部分由于 AWS 的优化非常快（毫秒级）。
-3. **运行时初始化**：Node.js、Python、Java 等进程启动。特别像 Java 和 C# 这种执行 JIT（即时）编译的语言，会在这里消耗大量时间。
+3. **运行时初始化**：Node.js、Python、[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 等进程启动。特别像 Java 和 C# 这种执行 JIT（即时）编译的语言，会在这里消耗大量时间。
 4. **函数初始化 (Init 阶段)**：评估代码的全局作用域（处理函数外部）。如果在这里创建数据库连接池或初始化繁重的 SDK，初始化时间将被拉长。
 
 ### 4.2. 从概率论看冷启动
@@ -167,7 +167,7 @@ $ P_{warm} \approx 1 - e^{-\lambda \cdot T_w} $
 
 不同语言的冷启动速度差异极大。
 
-- **最快组**：Go、Rust、C++ 等 AOT（提前）编译语言，以及轻量级的脚本语言（Python、Node.js）。这些语言的冷启动时间通常在几百毫秒以内。
+- **最快组**：[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)、[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)、C++ 等 AOT（提前）编译语言，以及轻量级的脚本语言（Python、Node.js）。这些语言的冷启动时间通常在几百毫秒以内。
 - **较慢组**：Java、C# (.NET)。由于 JVM 或 CLR 的启动以及 JIT 编译的开销，有时会产生几秒甚至十几秒的冷启动。
 
 **LLRT (Low Latency Runtime)** 作为 AWS 提供的实验性轻量级 JavaScript 运行时，因其可以进一步缩短 Node.js 启动速度的方法也备受关注。
@@ -210,7 +210,7 @@ const dynamo = DynamoDBDocumentClient.from(client);
 
 ## 6. 游戏改变者：AWS Lambda SnapStart
 
-**AWS Lambda SnapStart** 作为像 Java 这种启动较慢语言的救世主而登场。这是一项将其虚拟机状态生成快照，并在冷启动时恢复的突破性技术。
+**AWS Lambda SnapStart** 作为像 [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 这种启动较慢语言的救世主而登场。这是一项将其虚拟机状态生成快照，并在冷启动时恢复的突破性技术。
 
 其底层利用了 **CRaU** (Checkpoint/Restore in Userspace) 以及 Firecracker 的 MicroVM 快照功能。
 
@@ -253,7 +253,7 @@ sequenceDiagram
 
 ### 6.2. SnapStart 的优点和注意事项
 
-启用 SnapStart 后，Java 函数的冷启动时间可提速 **高达 10 倍以上** 。因为运行时的启动、JIT 编译以及 Spring Boot 等繁重框架的初始化都被提前到了“部署时”。
+启用 SnapStart 后，[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 函数的冷启动时间可提速 **高达 10 倍以上** 。因为运行时的启动、JIT 编译以及 Spring Boot 等繁重框架的初始化都被提前到了“部署时”。
 
 不过，也有一些注意事项。
 

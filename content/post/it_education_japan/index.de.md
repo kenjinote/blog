@@ -26,7 +26,7 @@ Hier lauert jedoch eine große Falle, sozusagen die „Falle der Abstraktion“.
 
 ### Die Mauer der Abstraktion und das Blackboxing der Informatik
 
-Visuelle Programmierumgebungen wie Scratch abstrahieren stark und verbergen (kapseln) absichtlich Schlüsselelemente, die den Kern der Informatik bilden, wie die komplexe Syntax von Programmiersprachen, strikte Typsysteme (Type Systems) und die Verwaltung des Lebenszyklus von Speicher. Dies ist hervorragend geeignet, um die kognitive Belastung für Anfänger zu senken, wird jedoch zu einem massiven Hindernis beim Übergang zum echten Engineering im nächsten Schritt. Denn in der tatsächlichen Softwareentwicklung ist das Verständnis von Variablen-Gültigkeitsbereichen (lokale und globale Variablen), komplexen Datenstrukturen (Arrays, verkettete Listen, Hashtabellen, binäre Suchbäume, Graphen), Zeigeroperationen und den Heap- und Stack-Bereichen des Speichers absolut unerlässlich.
+Visuelle Programmierumgebungen wie Scratch abstrahieren stark und verbergen (kapseln) absichtlich Schlüsselelemente, die den Kern der Informatik bilden, wie die komplexe Syntax von Programmiersprachen, strikte Typsysteme (Type Systems) und die Verwaltung des Lebenszyklus von Speicher. Dies ist hervorragend geeignet, um die kognitive Belastung für Anfänger zu senken, wird jedoch zu einem massiven Hindernis beim Übergang zum echten Engineering im nächsten Schritt. Denn in der tatsächlichen Softwareentwicklung ist das Verständnis von Variablen-Gültigkeitsbereichen (lokale und globale Variablen), komplexen Datenstrukturen (Arrays, verkettete Listen, Hashtabellen, binäre Suchbäume, Graphen), Zeigeroperationen und den [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)- und [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Bereichen des Speichers absolut unerlässlich.
 
 Das folgende Mermaid-Diagramm visualisiert die Lernhürden und Drop-off-Punkte (Abbrüche), mit denen Anfänger beim Übergang von der visuellen Programmierung zur echten Informatik konfrontiert sind.
 
@@ -74,7 +74,7 @@ Im Folgenden sind die durchschnittlichen Zeitkomplexitäten typischer Sortieralg
 - Insertion Sort (Einfügesortieren): $O(N^2)$
 - Merge Sort: $O(N \log N)$
 - Quick Sort: $O(N \log N)$
-- Heap Sort: $O(N \log N)$
+- [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) Sort: $O(N \log N)$
 
 Beispielsweise lässt sich die Zeitkomplexität $T(N)$ von Merge Sort durch das Paradigma „Teile und Herrsche“ (Divide and Conquer) mit der folgenden Rekursionsgleichung ausdrücken:
 
@@ -92,7 +92,7 @@ Bei moderner Big-Data-Analyse und der Verarbeitung von Traffic im Web-Maßstab e
 
 ## 4. Speicherverwaltung und das Blackboxing der Systemarchitektur
 
-Ein Problem auf einer noch tieferen Ebene ist, dass das Verständnis für Speicherverwaltung ([Memory Management](https://kenji.blog/de/p/memory-management-garbage-collection/)) und CPU-Architektur komplett fehlt. Lernende, die nur High-Level-Sprachen mit [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) (GC) wie Python und JavaScript gelernt haben, die derzeit in Schulen unterrichtet werden, werden sich in ihrem ganzen Leben nie bewusst machen, wo Variablen und Objekte im physischen Speicher (RAM) abgelegt (Heap oder Stack), wie sie allokiert und wann und wie sie freigegeben werden.
+Ein Problem auf einer noch tieferen Ebene ist, dass das Verständnis für Speicherverwaltung ([Memory Management](https://kenji.blog/de/p/memory-management-garbage-collection/)) und CPU-Architektur komplett fehlt. Lernende, die nur High-Level-Sprachen mit [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) (GC) wie Python und JavaScript gelernt haben, die derzeit in Schulen unterrichtet werden, werden sich in ihrem ganzen Leben nie bewusst machen, wo Variablen und Objekte im physischen Speicher (RAM) abgelegt ([Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) oder [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)), wie sie allokiert und wann und wie sie freigegeben werden.
 
 ```c
 // Ein Beispiel für explizite und direkte Speicherallokation und Zeigeroperationen in C
@@ -190,7 +190,7 @@ Die vollständige Abhängigkeit von Cloud-IDEs verursacht aus pädagogischer Sic
 2. **Netzwerkverzögerungen und Schwachstellen in der Infrastruktur**: Da eine ständige Verbindung vorausgesetzt wird, kommt es landesweit häufig zu Zwischenfällen, bei denen die Netzwerkbandbreite der Schule überlastet wird, sobald alle Schüler gleichzeitig auf das Netz zugreifen, wodurch der Browser einfriert und das Lernen vollständig zum Stillstand kommt.
 3. **Entzug der Erfahrung mit Versionsverwaltung (Git)**: Die Chance, durch einen schwarzen Terminalbildschirm die Konzepte von Git und GitHub kennenzulernen – die zur Verwaltung des Änderungsverlaufs von Quellcode und zur kollaborativen Entwicklung mit Teams weltweit dienen –, wird ihnen genommen.
 
-Wenn professionelle Software-Ingenieure entwickeln, sind Operationen im Terminal (Shell) die absolute Basis. Ohne die schmutzige Erfahrung, Befehle wie `ls`, `cd`, `grep`, `chmod`, `git rebase` einzugeben und direkt mit dem lokalen OS-Kernel zu interagieren, ist die Heranbildung echter IT-Talente absolut unmöglich. Nur in der Sandbox (Sandkasten) eines Chromebooks zu spielen, bringt keine Full-Stack-Ingenieure hervor, die das gesamte System überblicken können.
+Wenn professionelle Software-Ingenieure entwickeln, sind Operationen im Terminal (Shell) die absolute Basis. Ohne die schmutzige Erfahrung, Befehle wie `ls`, `cd`, `grep`, `chmod`, `git rebase` einzugeben und direkt mit dem lokalen OS-Kernel zu interagieren, ist die Heranbildung echter IT-Talente absolut unmöglich. Nur in der Sandbox (Sandkasten) eines Chromebooks zu spielen, bringt keine Full-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Ingenieure hervor, die das gesamte System überblicken können.
 
 ## 8. Die verzweifelte Kluft zur Welt: Die Diskrepanz zwischen den Anforderungen der Industrie und der Schulbildung
 
@@ -200,7 +200,7 @@ Die letzte und vielleicht nationale Krise für die japanische IT-Bildung ist der
 
 Im Vereinigten Königreich (UK) wurde das Fach „Computing“ bereits 2014 für Kinder ab 5 Jahren (Key Stage 1) verpflichtend eingeführt. Ihr Lehrplan geht weit über reine „Programmiererfahrungen“ hinaus und behandelt äußerst akademische und systematische Computerwissenschaften, von der logischen Gestaltung von Algorithmen über das Verständnis logischer Schaltungen mithilfe der Booleschen Algebra (Boolean algebra) und Netzwerktopologien bis hin zur Hardwarearchitektur.
 
-In den USA gibt es strenge Standardlehrpläne für K-12 (vom Kindergarten bis zum Highschool-Abschluss), die von der CSTA (Computer Science Teachers Association) festgelegt wurden. Im Kurs AP (Advanced Placement) Computer Science A, den Highschool-Schüler belegen, werden auf dem Niveau des ersten Studienjahres Kenntnisse in echter objektorientierter Programmierung in Java, Polymorphismus, rekursiver Verarbeitung, der Implementierung von Datenstrukturen und der Bewertung algorithmischer Komplexität verlangt. Die Strenge der MINT-Bildung in Indien oder China und die Tiefe der daraus resultierenden Elite muss hier nicht weiter erwähnt werden.
+In den USA gibt es strenge Standardlehrpläne für K-12 (vom Kindergarten bis zum Highschool-Abschluss), die von der CSTA (Computer Science Teachers Association) festgelegt wurden. Im Kurs AP (Advanced Placement) Computer Science A, den Highschool-Schüler belegen, werden auf dem Niveau des ersten Studienjahres Kenntnisse in echter objektorientierter Programmierung in [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/), Polymorphismus, rekursiver Verarbeitung, der Implementierung von Datenstrukturen und der Bewertung algorithmischer Komplexität verlangt. Die Strenge der MINT-Bildung in Indien oder China und die Tiefe der daraus resultierenden Elite muss hier nicht weiter erwähnt werden.
 
 ### Die verzweifelte Diskrepanz zwischen geforderten und gelehrten Fähigkeiten
 
@@ -219,7 +219,7 @@ xychart-beta
 
 Um diese riesige Lücke (Death Valley) zu schließen, sind ein radikaler Paradigmenwechsel in der Schulbildung und massive Investitionen erforderlich. Angesichts eines extremen Mangels an spezialisierten Lehrkräften für das Fach „Information“ im ganzen Land und der Tatsache, dass Lehrer für Mathematik, Naturwissenschaften oder Technik/Hauswirtschaft das Programmieren neben ihrer eigentlichen Arbeit mit unzureichender Schulung unterrichten, ist es unmöglich, weltweit wettbewerbsfähige Top-Tier-Ingenieure hervorzubringen.
 
-## 9. Der Wertverfall des „Codings“ in der KI-Ära (LLM)
+## 9. Der Wertverfall des „Codings“ in der KI-Ära ([LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/))
 
 Was die Situation weiter verkompliziert, ist die explosionsartige Verbreitung von großen Sprachmodellen (LLMs) wie ChatGPT und KI-Coding-Assistenten wie GitHub Copilot. In einer Zeit, in der KI aus natürlichsprachlichen Anweisungen sofort perfekten Code generieren und sogar Testcode schreiben kann, sinkt der Marktwert sogenannter „Coder“, die lediglich „die Syntax von Python kennen“ oder „wissen, wie man eine API aufruft“, rapide ab.
 

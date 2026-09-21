@@ -36,13 +36,13 @@ description: 'C언어, Python, Java, JavaScript부터 Rust, Go, OCaml, Clojure �
 
 ## [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)
 
-## Go
+## [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)
 
 ## Python
 
 ## Ruby
 
-## Java
+## [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)
 
 ## JavaScript
 
@@ -143,4 +143,4 @@ Windows에 표준으로 설치되어 있다. 객체를 다룰 수 있다.
 
 ## Salesforce APEX
 
-Java와 매우 흡사한 언어
+[Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)와 매우 흡사한 언어

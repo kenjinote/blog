@@ -11,7 +11,7 @@ tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 
 # [The 'Human-Specific Engineering Skills' Required in the Era of AI Writing Code](https://kenji.blog/en/p/human_engineer_skills/)
 
-In recent years, the landscape of software engineering has changed dramatically with the rapid evolution of Generative AI and Large Language Models (LLMs). GitHub Copilot and various AI coding assistants are now used on a daily basis, and the phenomenon where "AI instantly generates code if you give instructions in natural language" is no longer science fiction from the future, but today's reality.
+In recent years, the landscape of software engineering has changed dramatically with the rapid evolution of Generative AI and [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs). GitHub Copilot and various AI coding assistants are now used on a daily basis, and the phenomenon where "AI instantly generates code if you give instructions in natural language" is no longer science fiction from the future, but today's reality.
 
 In such an era, it is natural for many engineers to harbor anxiety that "my job might be taken away by AI." Indeed, "mere coding work (Typing Code)" such as creating boilerplate for routine CRUD applications, implementing simple algorithms, or calling APIs of well-known libraries is rapidly becoming commoditized.
 
@@ -23,7 +23,7 @@ However, the essence of software engineering is not about "typing code." It is a
 
 To properly evaluate AI's capabilities and discern the areas where humans should demonstrate value, we must first understand the structural limitations of AI (especially LLMs) from mathematical and architectural standpoints.
 
-### 1.1 Limits of Computational Complexity and Context in the Transformer Architecture
+### 1.1 Limits of Computational Complexity and Context in the [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) Architecture
 
 The majority of current LLMs are based on the "Transformer" architecture introduced by Google in 2017. The core of the Transformer lies in its "Self-Attention Mechanism." The self-attention mechanism computes how closely each token in an input sequence is related to all other tokens.
 
@@ -38,7 +38,7 @@ $$ \text{Complexity} = O(N^2 \cdot d) $$
 
 In recent years, research on hardware-level optimizations like FlashAttention, Sparse Attention, and even alternative architectures capable of linear time $O(N)$ processing such as Mamba ([State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Space Models) has been advancing. Still, "perfectly comprehending an infinite context and generating globally optimized outputs" remains extremely difficult.
 
-Furthermore, even if the context window can be physically expanded, a phenomenon called "Lost in the Middle" occurs. LLMs are highly susceptible to information at the beginning and end of a prompt, and tend to ignore important requirements and constraints placed in the middle. This is why, if you load the entire source code of a tens-of-thousands-of-lines enterprise system into an LLM and instruct it to "perform optimal refactoring", it generates code that is locally correct but globally broken.
+Furthermore, even if the context window can be physically expanded, a phenomenon called "Lost in the Middle" occurs. LLMs are highly susceptible to information at the beginning and end of a prompt, and tend to ignore important requirements and constraints placed in the middle. This is why, if you load the entire source code of a tens-of-thousands-of-lines enterprise system into an [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) and instruct it to "perform optimal refactoring", it generates code that is locally correct but globally broken.
 
 ### 1.2 Characteristics of Probabilistic Generative Models and "Hallucinations"
 
@@ -200,7 +200,7 @@ In the AI era, engineers will be elevated from "code typists" to "conductors orc
 
 ## 7. Conclusion: Don't Resist Evolution, Ride the Wave
 
-The "era of AI writing code" is not a threat to engineers, but the greatest opportunity in history. Just as the transition from assembly language to C occurred in the past, and just as the evolution from manual memory pointer management to Java's garbage collection took place, code generation by AI is simply "moving up one level of abstraction."
+The "era of AI writing code" is not a threat to engineers, but the greatest opportunity in history. Just as the transition from assembly language to C occurred in the past, and just as the evolution from manual memory pointer management to [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)'s garbage collection took place, code generation by AI is simply "moving up one level of abstraction."
 
 Engineers of the future will not be swayed by the trivial specifications of a particular programming language or framework upgrades, but will be able to concentrate their resources on more essential, higher-order human problem solving, such as: **"What is the business challenge?", "How should data be partitioned and integrated?", and "How do we rapidly recover when the system goes down?"**
 

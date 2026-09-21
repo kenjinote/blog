@@ -112,7 +112,7 @@ $$
 
 もう一つの脅威は、ロブ・グローバーが1996年に提案した **グローバーのアルゴリズム** です。これはハッシュ関数（例：SHA-256）に対して大きな影響を与えます。
 
-[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)において、ハッシュ関数はデータの完全性の担保、アドレスの生成、そして[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)における **[PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)（Proof of Work）マイニング** の基盤として使用されています。ハッシュ関数の逆算（原像計算）は、特定の出力値 $y$ に対して $H(x) = y$ となる入力値 $x$ を探す「非構造化データベース探索問題」とみなすことができます。
+[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)において、ハッシュ関数はデータの完全性の担保、[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の生成、そして[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)における **[PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)（Proof of Work）マイニング** の基盤として使用されています。ハッシュ関数の逆算（原像計算）は、特定の出力値 $y$ に対して $H(x) = y$ となる入力値 $x$ を探す「非構造化データベース探索問題」とみなすことができます。
 
 古典コンピュータでは、$N$ 個の可能性から正解を見つけるために、平均して $\frac{N}{2}$ 回、最悪で $N$ 回の試行が必要です。つまり計算量は $\mathcal{O}(N)$ です。
 しかし、グローバーのアルゴリズムは「振幅増幅（Amplitude Amplification）」と呼ばれる量子技術を用います。重ね合わせ状態にある全ての可能性の中から、正解となる状態の確率振幅を反復的に増幅させることで、探索時間を平方根に短縮します。
@@ -136,16 +136,16 @@ SHA-256の場合、$N = 2^{256}$ であるため、古典的な総当たり探�
 
 [量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)によるECDSAの解読が可能になった世界において、[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)ネットワークは具体的にどのような[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)に直面するのでしょうか。ここでは、[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)の仕組みを例に、 **「[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)の露出タイミング」** という観点から詳細な分析を行います。
 
-### 3.1. アドレスの生成と公開鍵の「非公開性」
+### 3.1. [アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の生成と公開鍵の「非公開性」
 
-[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)のアドレス（[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash や P2WPKH: Pay-to-Witness-Public-Key-Hash）は、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)そのものではなく、公開鍵を複数回ハッシュ化したものを使用しています。
+[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)の[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash や P2WPKH: Pay-to-Witness-Public-Key-Hash）は、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)そのものではなく、公開鍵を複数回ハッシュ化したものを使用しています。
 
 $$
 \text{[Bitcoin](https://kenji.blog/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{[Public Key](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)})))
 $$
 
-前述の通り、ハッシュ関数は量子攻撃（グローバーのアルゴリズム）に対して耐性を持つため、ハッシュ値である「アドレス」から元の「[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)」を逆算することは[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)でも不可能です。
-つまり、 **「未使用（一度も資金の送信を行っていない）のアドレス」** については、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)上に[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)が一切露出しておらず、ハッシュ値のみが記録されている状態です。したがって、公開鍵が分からない以上、[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)を実行する標的が存在せず、秘密鍵を特定することはできません。この状態のウォレットは量子的に安全（Quantum-safe）であると言えます。
+前述の通り、ハッシュ関数は量子攻撃（グローバーのアルゴリズム）に対して耐性を持つため、ハッシュ値である「[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)」から元の「[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)」を逆算することは[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)でも不可能です。
+つまり、 **「未使用（一度も資金の送信を行っていない）の[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)」** については、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)上に[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)が一切露出しておらず、ハッシュ値のみが記録されている状態です。したがって、公開鍵が分からない以上、[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)を実行する標的が存在せず、秘密鍵を特定することはできません。この状態のウォレットは量子的に安全（Quantum-safe）であると言えます。
 
 ### 3.2. [トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)送信時の致命的な[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)（フロントランニング攻撃）
 
@@ -172,17 +172,17 @@ sequenceDiagram
 
 1. Mempoolから正当なユーザー（アリス）の[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を傍受し、 **[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)を抽出** する。
 2. [ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)を実行し、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)から **秘密鍵を数分以内（ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)が承認される前）に計算** する。
-3. 取得した秘密鍵を用いて、アリスの資金を攻撃者のアドレスに送金する **偽の[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を作成** する。
+3. 取得した秘密鍵を用いて、アリスの資金を攻撃者の[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)に送金する **偽の[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を作成** する。
 4. この偽トランザクションに、アリスの元のトランザクションよりも **はるかに高いマイナー手数料（Fee）を設定** してネットワークに送信する。
 
 マイナーは経済的インセンティブに従い、手数料の高いトランザクションを優先的にブロックに組み込みます。結果として、攻撃者の不正な送金が先に承認（Confirm）され、アリスの正当な送金は「残高不足（Double Spend）」として破棄されます。
 この一連の流れは **フロントランニング攻撃（Front-running Attack）** と呼ばれ、量子コンピュータが実用化された世界では、誰かが送金ボタンを押した瞬間に資金がハッカーに奪われるという恐ろしい事態を引き起こします。
 
-### 3.3. 再利用アドレスと古いアドレス（[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)K）の危機
+### 3.3. 再利用[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)と古いアドレス（[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)K）の危機
 
-さらに深刻な問題として、過去に一度でも送金を行ったことのあるアドレス（お釣りアドレスなどとして再利用している場合）は、すでに[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)上に[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)が永続的に記録されています。これらは[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の送信を待つまでもなく、いつでも秘密鍵を計算されて残高を奪われる危険に晒されています。
+さらに深刻な問題として、過去に一度でも送金を行ったことのある[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（お釣りアドレスなどとして再利用している場合）は、すでに[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)上に[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)が永続的に記録されています。これらは[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の送信を待つまでもなく、いつでも秘密鍵を計算されて残高を奪われる危険に晒されています。
 
-また、サトシ・ナカモトの初期マイニング報酬（約100万BTC以上）を含む、2009年〜2010年頃に主流だった **P2PK（Pay-to-Public-Key）** フォーマットでは、アドレスとしてハッシュではなく公開鍵そのものが直接ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンに記録されていました。これらの大量の休眠[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)は、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)にとって最も容易な標的となり、一斉に盗まれて市場でダンピングされることで、価格の大暴落を引き起こす可能性があります。
+また、サトシ・ナカモトの初期マイニング報酬（約100万BTC以上）を含む、2009年〜2010年頃に主流だった **P2PK（Pay-to-Public-Key）** フォーマットでは、[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)としてハッシュではなく公開鍵そのものが直接ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーンに記録されていました。これらの大量の休眠[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)は、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)にとって最も容易な標的となり、一斉に盗まれて市場でダンピングされることで、価格の大暴落を引き起こす可能性があります。
 
 ---
 
@@ -285,11 +285,11 @@ pie title ブロックチェーンにおける署名データサイズ比較 (�
 ### 5.2. Ethereum Virtual Machine (EVM) への影響と事前コンパイル済みコントラクト
 
 Ethereumのような[チューリング](https://kenji.blog/p/turing/)完全な[スマートコントラクト](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)プラットフォームにおいて、PQCの導入はEVM（Ethereum Virtual Machine）の根本的なアップグレードを要求します。
-現在のEVMでは、ECDSA署名の検証のために `ecrecover` (アドレス: `0x01`) という事前コンパイル済みコントラクト（Precompiled Contract）が用意されており、非常に低いガス代（3000 Gas）で署名検証が行えるよう最適化されています。
+現在のEVMでは、ECDSA署名の検証のために `ecrecover` ([アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/): `0x01`) という事前コンパイル済みコントラクト（Precompiled Contract）が用意されており、非常に低いガス代（3000 Gas）で署名検証が行えるよう最適化されています。
 
 しかし、DilithiumやFalconといった新しい格子暗号アルゴリズムの検証処理は、複雑な多項式演算や行列演算を伴うため、既存のEVMオペコード（Opcode）だけで実装すると、1回の署名検証だけで数百万から数千万ガスを消費する可能性があります。これは、現在のブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ガスリミット（約3000万Gas）を1[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)で枯渇させるレベルです。
 
-これを回避するためには、ネットワークのハードフォークを通じて、新たにPQC検証用のPrecompiled Contract（例：`0x10` に DilithiumVerify を割り当てるなど）をEVM自体に組み込む必要があります。これには、各イーサリアムクライアント（Geth, Nethermind, Erigonなど）のコア開発者が協調してC++、Go、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)などの言語レベルで格子暗号検証ロジックを最適化実装し、セキュリティ監査を実施するという長期間にわたるプロセスが必要です。
+これを回避するためには、ネットワークのハードフォークを通じて、新たにPQC検証用のPrecompiled Contract（例：`0x10` に DilithiumVerify を割り当てるなど）をEVM自体に組み込む必要があります。これには、各イーサリアムクライアント（Geth, Nethermind, Erigonなど）のコア開発者が協調してC++、[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)などの言語レベルで格子暗号検証ロジックを最適化実装し、セキュリティ監査を実施するという長期間にわたるプロセスが必要です。
 
 ### 5.3. ハードフォークによる合意形成の難しさ
 
@@ -334,7 +334,7 @@ NISTによるPQCの標準化が完全に定着し、業界標準のライブラ�
 
 私たち一般の[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)ユーザーや投資家が今すぐパニックになって資金をすべて売却する必要はありません。しかし、以下のような基本的なリテラシーと自己防衛の意識を持つことが重要です。
 
-* **アドレスの再利用を避ける** ：「使用済みのアドレス（一度でも資金を送信し、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)が[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)上に露出したアドレス）」には資金を長期間保管しないよう、プライバシーの観点だけでなくセキュリティの観点からも徹底する。
+* **[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の再利用を避ける** ：「使用済みのアドレス（一度でも資金を送信し、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)が[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)上に露出した[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）」には資金を長期間保管しないよう、プライバシーの観点だけでなくセキュリティの観点からも徹底する。
 * **技術動向に注目する** ：[Bitcoin](https://kenji.blog/p/cryptocurrency-and-bitcoin/)のBIPやEthereumのEIPなど、主要ネットワークのPQC移行に関する議論やハードフォークのニュースにアンテナを張っておき、必要になったタイミングで適切にウォレットの移行作業を行えるようにする。
 
 [ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の歴史は、常に新たな技術的脅威に対するアップグレードとレジリエンス（回復力）の歴史でもあります。スケーラビリティ問題や環境問題（[PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)から[PoS](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)への移行など）を乗り越えてきたように、この未曾有の量子脅威に対しても、エコシステム全体で解決策を模索し適応していくことでしょう。

@@ -38,7 +38,7 @@ En exécutant `rustc main.rs` depuis l'invite de commande ou le terminal, il ser
 [The Rust Programming Language Édition japonaise](https://doc.rust-jp.rs/book-ja/)
 
 Les explications nécessaires pour apprendre [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) sont compilées dans le lien ci-dessus (version traduite en japonais).
-Elle est si complète que vous n'avez pas besoin d'acheter un livre sur Rust.
+Elle est si complète que vous n'avez pas besoin d'acheter un livre sur [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/).
 
 # Si vous voulez l'essayer sur le Web
 

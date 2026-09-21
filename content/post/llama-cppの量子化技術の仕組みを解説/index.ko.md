@@ -10,9 +10,9 @@ tags: ["llama.cpp", "GGUF", "Quantization", "LLM"]
 description: 'llama.cpp에 채택된 GGUF 포맷과 k-quants 양자화 기술의 내부 구조에 대해 수식과 아키텍처 다이어그램을 곁들여 아주 상세하게 해설합니다.'
 ---
 
-## 1. 들어가며: 왜 LLM에는 양자화가 필요한가?
+## 1. 들어가며: 왜 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)에는 양자화가 필요한가?
 
-최근 대규모 언어 모델(LLM: Large Language Models)의 발전은 눈부실 정도이지만, 그 이면에는 '컴퓨팅 자원의 고갈'과 '메모리 대역폭의 병목 현상'이라는 심각한 문제가 떠오르고 있습니다. 예를 들어, Llama 3와 같은 70B(700억) 파라미터 모델을 표준적인 16비트 부동소수점(FP16)으로 메모리에 로드할 경우, 파라미터만으로 약 140GB의 VRAM/RAM을 소비합니다. 여기에 추론 시의 컨텍스트(KV 캐시)가 더해지면, 데이터센터용 하이엔드 GPU(NVIDIA A100 80GB나 H100 80GB)를 여러 대 클러스터링하지 않고서는 작동하지 않습니다.
+최근 대규모 언어 모델(LLM: [Large Language Models](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 발전은 눈부실 정도이지만, 그 이면에는 '컴퓨팅 자원의 고갈'과 '메모리 대역폭의 병목 현상'이라는 심각한 문제가 떠오르고 있습니다. 예를 들어, Llama 3와 같은 70B(700억) 파라미터 모델을 표준적인 16비트 부동소수점(FP16)으로 메모리에 로드할 경우, 파라미터만으로 약 140GB의 VRAM/RAM을 소비합니다. 여기에 추론 시의 컨텍스트(KV 캐시)가 더해지면, 데이터센터용 하이엔드 GPU(NVIDIA A100 80GB나 H100 80GB)를 여러 대 클러스터링하지 않고서는 작동하지 않습니다.
 
 개인 개발자나 엣지 디바이스(MacBook이나 일반적인 게이밍 PC)에서 LLM을 구동시키기 위한 구세주로 등장한 것이 **llama.cpp** 와 그 핵심을 이루는 **양자화(Quantization) 기술 ** 입니다. 특히 **GGUF (GPT-Generated Unified Format)** 라는 파일 포맷과 **k-quants** 라고 불리는 고도화된 블록 단위의 양자화 알고리즘은, 모델의 정확도(Perplexity) 저하를 극한까지 억제하면서 모델 크기를 몇 분의 일로 압축하는 획기적인 기법입니다.
 
@@ -175,7 +175,7 @@ llama.cpp는 목적에 따라 다양한 변형을 제공하고 있습니다. "K"
 
 ## 5. 추론 시의 성능 최적화: SIMD와 CUDA 아키텍처
 
-GGUF 모델을 메모리에 로드한 것만으로는 추론이 빨라지지 않습니다. LLM 추론의 대부분은 '행렬곱(Matrix-Vector Multiplication, 줄여서 GEMV, 혹은 Matrix-Matrix, GEMM)'입니다. 양자화된 가중치와, FP16(또는 FP32)으로 유지되고 있는 활성화(입력 데이터)의 적화(Multiply-Accumulate) 연산을 어떻게 고속화할지가 관건입니다.
+GGUF 모델을 메모리에 로드한 것만으로는 추론이 빨라지지 않습니다. [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 추론의 대부분은 '행렬곱(Matrix-Vector Multiplication, 줄여서 GEMV, 혹은 Matrix-Matrix, GEMM)'입니다. 양자화된 가중치와, FP16(또는 FP32)으로 유지되고 있는 활성화(입력 데이터)의 적화(Multiply-Accumulate) 연산을 어떻게 고속화할지가 관건입니다.
 
 ### 5.1. CPU 환경에서의 SIMD 명령 활용
 
@@ -226,7 +226,7 @@ GPU 상에서 계산할 경우, VRAM의 대역폭(Memory Bandwidth)이 최대의
 | **Llama-3-8B (Q2_K)** | 약 3.0 GB | 4.5 GB 이상 | 고속 | 명백한 열화 |
 
 **주의점 (KV 캐시의 영향):**
-LLM 추론에 있어서, 컨텍스트 길이(프롬프트의 토큰 수)가 길어지면, 모델의 가중치뿐만 아니라 과거의 Attention 상태를 보존하는 **KV 캐시** 의 메모리 소비가 폭발적으로 증가합니다.
+[LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 추론에 있어서, 컨텍스트 길이(프롬프트의 토큰 수)가 길어지면, 모델의 가중치뿐만 아니라 과거의 Attention 상태를 보존하는 **KV 캐시** 의 메모리 소비가 폭발적으로 증가합니다.
 예를 들어 컨텍스트가 8192 토큰인 경우, KV 캐시만으로 수 GB를 소비합니다. 따라서 실제 운용에서는 `모델 파일 크기 + 약 1.5GB～3GB`의 여유 공간(Headroom)을 확보해 둘 필요가 있습니다. Q4_K_M이 권장되는 이유는 이 KV 캐시를 확보하더라도 일반적인 8GB VRAM 탑재 GPU(RTX 3060 / 4060 등)에서 안전하게 동작하는 절묘한 라인이기 때문입니다.
 
 최근의 llama.cpp에서는 이 **KV 캐시 자체를 Q8_0이나 Q4_0으로 양자화하는 기능** 도 추가되어 있어, 컨텍스트 길이를 더욱 늘리기 위한 노력이 끊임없이 이루어지고 있습니다.
@@ -237,7 +237,7 @@ LLM 추론에 있어서, 컨텍스트 길이(프롬프트의 토큰 수)가 길�
 
 본 문서에서는 llama.cpp의 심장부인 GGUF 포맷과 k-quants 양자화 기술의 내부 구조에 대해 깊이 파고들어 해설했습니다.
 
-1. **GGUF의 유연성:** 키-값 형태의 메타데이터 구조를 통해, LLM의 급속한 진화(새로운 모델 아키텍처의 등장)에도 파괴적인 변경 없이 따라갈 수 있는 견고한 생태계를 구축했습니다.
+1. **GGUF의 유연성:** 키-값 형태의 메타데이터 구조를 통해, [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 급속한 진화(새로운 모델 아키텍처의 등장)에도 파괴적인 변경 없이 따라갈 수 있는 견고한 생태계를 구축했습니다.
 2. **k-quants를 통한 극한의 압축:** 슈퍼 블록과 서브 블록의 계층적인 스케일 팩터 관리를 통해, 이상치의 정보를 유지하면서 가중치 1개당 평균 4.8비트(Q4_K_M)라는 놀라운 압축을 실현했습니다.
 3. **메모리 대역폭 병목 해소:** SIMD나 CUDA에서의 고도화된 커널 구현을 통해, 실시간으로 역양자화하며 계산을 수행함으로써 VRAM 전송량을 줄이고 추론 속도를 극적으로 향상시켰습니다.
 

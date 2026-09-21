@@ -10,7 +10,7 @@ tags: ["Hugo", "Cloudflare Pages", "GitHub Actions", "CI/CD"]
 description: 'Hugoを用いた静的サイトをCloudflare PagesやGitHub Pagesを利用して、無料かつ高速にホスティングするための完全な技術ガイドです。エッジコンピューティング、CDNアーキテクチャ、CI/CDパイプラインの詳細を解説します。'
 ---
 
-Webサイトやブログを運営するにあたり、表示速度（パフォーマンス）、運用コスト、そしてセキュリティは極めて重要な要素です。かつてはWordPressなどの動的CMS（Content Management System）とレンタルサーバーの組み合わせが主流でしたが、現在では「Jamstack」と呼ばれるアーキテクチャが大きな注目を集めています。その中でも、Go言語で作られた超高速な静的サイトジェネレーター（SSG）である「Hugo」と、Cloudflare PagesやGitHub Pagesのようなモダンなホスティングサービスを組み合わせることで、 **完全無料かつ爆速** のブログ環境を構築することが可能です。
+Webサイトやブログを運営するにあたり、表示速度（パフォーマンス）、運用コスト、そしてセキュリティは極めて重要な要素です。かつてはWordPressなどの動的CMS（Content Management System）とレンタルサーバーの組み合わせが主流でしたが、現在では「Jamstack」と呼ばれるアーキテクチャが大きな注目を集めています。その中でも、[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語で作られた超高速な静的サイトジェネレーター（SSG）である「Hugo」と、Cloudflare PagesやGitHub Pagesのようなモダンなホスティングサービスを組み合わせることで、 **完全無料かつ爆速** のブログ環境を構築することが可能です。
 
 本記事では、Hugoを用いた静的サイトをCloudflare PagesやGitHub Pagesで公開するための具体的な手順、各プラットフォームのアーキテクチャの違い、[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を用いた[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)（継続的インテグレーション／継続的デプロイメント）の構築、DNSの最適化、キャッシュ戦略、そしてプライバシーに配慮したアクセス解析の導入に至るまで、技術的な観点から非常に深く掘り下げて解説します。
 
@@ -24,7 +24,7 @@ Webサイトやブログを運営するにあたり、表示速度（パフォ�
 一方、Jamstack（JavaScript, APIs, and Markup）アーキテクチャを採用した静的サイトジェネレーター（SSG）では、事前に（ビルド時に）すべてのHTMLファイル、CSS、JavaScriptを生成しておきます。ユーザーのリクエストに対しては、すでに生成済みの静的ファイルをWebサーバー（またはCDN）がそのまま返すだけであるため、圧倒的な高速性と堅牢なセキュリティを実現できます。
 
 ### 1.2 Hugoの優位性
-SSGにはNext.js、Gatsby、Jekyll、Astroなど様々な選択肢がありますが、Hugoの最大の特徴はその **ビルド速度** です。Go言語による並行処理の恩恵を受け、数千から数万ページのサイトであってもわずか数秒でビルドが完了します。これは、CI/CD[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)における待ち時間を大幅に削減し、開発者体験（DX: Developer Experience）の向上に直結します。
+SSGにはNext.js、Gatsby、Jekyll、Astroなど様々な選択肢がありますが、Hugoの最大の特徴はその **ビルド速度** です。[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語による並行処理の恩恵を受け、数千から数万ページのサイトであってもわずか数秒でビルドが完了します。これは、CI/CD[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)における待ち時間を大幅に削減し、開発者体験（DX: Developer Experience）の向上に直結します。
 
 ---
 

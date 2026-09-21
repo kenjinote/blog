@@ -168,7 +168,7 @@ Para representar la correspondencia de paréntesis, que no puede expresarse con 
 
 ### Autómata de pila (PDA)
 
-El modelo computacional que reconoce los lenguajes libres de contexto es el **autómata de pila** (Pushdown Automaton, PDA). Un PDA es simplemente un autómata finito al que se le ha añadido una **pila** (Stack, una memoria de tipo "último en entrar, primero en salir"). Al usar una pila, es posible hacer cosas como "recordar la cantidad de paréntesis abiertos y consumirlos cada vez que llega un paréntesis de cierre".
+El modelo computacional que reconoce los lenguajes libres de contexto es el **autómata de pila** (Pushdown Automaton, PDA). Un PDA es simplemente un autómata finito al que se le ha añadido una **pila** ([Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/), una memoria de tipo "último en entrar, primero en salir"). Al usar una pila, es posible hacer cosas como "recordar la cantidad de paréntesis abiertos y consumirlos cada vez que llega un paréntesis de cierre".
 
 #### Ejemplo concreto: PDA que acepta $ a^n b^n $
 
@@ -286,7 +286,7 @@ Las teorías que hemos visto hasta ahora no se quedan para nada en una torre de 
 
 ### El escollo de los motores Regex (Catastrophic Backtracking)
 
-Los motores de expresiones regulares integrados en muchos lenguajes de programación (Java, Python, Ruby, JavaScript, etc.) no están implementados como DFA puros en teoría, sino basándose en NFA que conllevan retroceso (backtracking engine).
+Los motores de expresiones regulares integrados en muchos lenguajes de programación ([Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), Python, Ruby, JavaScript, etc.) no están implementados como DFA puros en teoría, sino basándose en NFA que conllevan retroceso (backtracking engine).
 
 Por este motivo, si se proporciona una cadena ingeniosamente construida frente a un patrón de expresión regular específico (ej.: `(a+)+$`), la complejidad computacional estalla de forma exponencial, lo que puede provocar una vulnerabilidad conocida como **ReDoS** (Regular Expression Denial of [Service](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/)) que llega a congelar el sistema. Si se conoce la teoría, se puede pensar lógicamente por qué ocurre el retroceso y cómo se puede reescribir el patrón para reducirlo a un procesamiento equivalente al de un DFA seguro.
 

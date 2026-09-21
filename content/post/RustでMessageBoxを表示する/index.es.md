@@ -17,7 +17,7 @@ description: 'Explicamos paso a paso, desde la creación del proyecto hasta la i
 
 Puede mostrar un MessageBox en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) siguiendo los pasos a continuación.
 
-1. Instalar Rust. Consulte [Cómo empezar con Rust](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/).
+1. Instalar [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/). Consulte [Cómo empezar con Rust](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/).
 2. Ejecute `cargo new --bin MessageBox` en el símbolo del sistema.
 3. Vaya al directorio `MessageBox`.
 4. Abra `Cargo.toml` y modifíquelo de la siguiente manera.

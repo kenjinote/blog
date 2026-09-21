@@ -12,7 +12,7 @@ description: 'Local LLMs that protect privacy and can be used for free. In this 
 
 # Introduction
 
-In recent years, the technological evolution of Large Language Models (LLMs) has been remarkable, and cloud-based AI services like ChatGPT and Claude have become widespread. However, on the other hand, the need to "not send company confidential data to external servers," "keep API usage fees down," and "build AI systems that operate completely [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/)" is rapidly increasing.
+In recent years, the technological evolution of [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) has been remarkable, and cloud-based AI services like ChatGPT and Claude have become widespread. However, on the other hand, the need to "not send company confidential data to external servers," "keep API usage fees down," and "build AI systems that operate completely [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/)" is rapidly increasing.
 
 Meeting this demand are "Local LLMs (Open Source LLMs)," which you can download and run directly on your own PC or in-house servers. Until around 2023, it was difficult to achieve practical accuracy locally, but with the evolution of model architectures and the development of quantization technologies, it is now possible to run very high-performance LLMs smoothly even on consumer-grade GPUs (such as NVIDIA RTX 3090 / 4090 or Mac's Apple Silicon).
 
@@ -41,7 +41,7 @@ Before introducing the models, let's mathematically summarize the "VRAM requirem
 
 ## Mathematical Basics of VRAM (Video Memory) and Quantization
 
-To run LLM inference on a GPU, the model's parameters (weights) must be loaded into VRAM. The memory requirement $M$ of a model can be approximated by the following formula:
+To run [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) inference on a GPU, the model's parameters (weights) must be loaded into VRAM. The memory requirement $M$ of a model can be approximated by the following formula:
 
 $$ M = \frac{P \times B}{8} + C $$
 
@@ -83,7 +83,7 @@ Developed by Meta, the "Llama 3" series has become the de facto industry standar
 
 ### Architectural Evolution and Features
 
-While Llama 3 adopts a standard Transformer architecture, numerous technical improvements have been made since the previous generation (Llama 2). The following points are particularly noteworthy:
+While Llama 3 adopts a standard [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) architecture, numerous technical improvements have been made since the previous generation (Llama 2). The following points are particularly noteworthy:
 
 - **Standard Adoption of GQA (Grouped Query Attention)**: GQA, which was only adopted for large-scale models in Llama 2, was adopted for small-scale models like 8B in Llama 3. As a result, the memory usage of the KV cache has drastically decreased, enabling high-speed inference even with long contexts.
 - **Expanded Vocabulary Size**: The vocabulary size of the tokenizer (based on Tiktoken) was expanded to 128,000 tokens, dramatically improving the compression efficiency for multilingual text and program code. Processing efficiency for Japanese has also improved several times over compared to Llama 2.
@@ -117,7 +117,7 @@ The models provided by French AI startup "Mistral AI" shocked the industry with 
 
 ### How MoE (Mixture of Experts) Works
 
-"Mixtral 8x7B" was the first open source LLM to fully adopt the **MoE (Mixture of Experts)** architecture, achieving massive success.
+"Mixtral 8x7B" was the first open source [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) to fully adopt the **MoE (Mixture of Experts)** architecture, achieving massive success.
 MoE is a mechanism that incorporates 8 "Expert networks" within the entire model (about 47 billion parameters) and dynamically selects (routes) only the optimal 2 experts for each input token.
 
 ```mermaid
@@ -189,7 +189,7 @@ The Phi series was born from the paradigm "Textbook is all you need" advocated b
 
 ### Revolution of SLMs (Small Language Models)
 
-While recent LLM development has been dominated by the brute-force approach of "just increasing parameter counts and data volume", Microsoft proved that "by maximizing the quality of data fed to the model (high-quality textbook data and synthetic data), even a small number of parameters can possess GPT-3.5 class intelligence".
+While recent [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) development has been dominated by the brute-force approach of "just increasing parameter counts and data volume", Microsoft proved that "by maximizing the quality of data fed to the model (high-quality textbook data and synthetic data), even a small number of parameters can possess GPT-3.5 class intelligence".
 Phi-3 is referred to as an **SLM (Small Language Model)** rather than an LLM (Large Language Model).
 
 ```mermaid
@@ -265,7 +265,7 @@ Also, since Ollama functions as a [REST API](https://kenji.blog/en/p/graphql-vs-
 An application recommended for those who want intuitive GUI-based operations. You can search and download from Hugging Face's massive list of GGUF models from within the app, and enjoy conversations in a chat interface akin to ChatGPT. The feature that visually tells you which models will fit in your PC's RAM/VRAM is very convenient.
 
 ### 3. llama.cpp
-The library that sparked the local LLM boom, serving as the C/C++ implementation foundation for everything. It's geared toward engineers wanting to tune performance to the absolute limit and hackers wanting to embed it into their own scripts. It maximizes the potential of any hardware, from Apple's Metal, NVIDIA's CUDA, AMD's ROCm, down to Intel's AVX instruction sets.
+The library that sparked the local [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) boom, serving as the C/C++ implementation foundation for everything. It's geared toward engineers wanting to tune performance to the absolute limit and hackers wanting to embed it into their own scripts. It maximizes the potential of any hardware, from Apple's Metal, NVIDIA's CUDA, AMD's ROCm, down to Intel's AVX instruction sets.
 
 ---
 

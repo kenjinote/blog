@@ -11,7 +11,7 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 # إعداد مسار [CI/CD](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/) لمشاريع C++ باستخدام [GitHub Actions](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/): الدليل الشامل
 
-في نموذج تطوير البرمجيات الحديث، يعتبر التكامل المستمر (Continuous Integration: CI) والتسليم/النشر المستمر (Continuous Delivery/Deployment: CD) عنصرين أساسيين للحفاظ على عملية تطوير رشيقة وبرمجيات عالية الجودة. مع وجود العديد من لغات البرمجة، فإن إعداد مسار CI/CD في C++ يأتي مع صعوبات وتعقيدات فريدة مقارنة باللغات الأخرى (مثل Python، JavaScript، Go، إلخ).
+في نموذج تطوير البرمجيات الحديث، يعتبر التكامل المستمر (Continuous Integration: CI) والتسليم/النشر المستمر (Continuous Delivery/Deployment: CD) عنصرين أساسيين للحفاظ على عملية تطوير رشيقة وبرمجيات عالية الجودة. مع وجود العديد من لغات البرمجة، فإن إعداد مسار CI/CD في C++ يأتي مع صعوبات وتعقيدات فريدة مقارنة باللغات الأخرى (مثل Python، JavaScript، [Go](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)، إلخ).
 
 في هذه المقالة، سنشرح بتفصيل شديد كيفية بناء مسار CI/CD قوي وعملي لمشاريع C++ من الصفر باستخدام GitHub Actions. سنغطي جميع التقنيات العملية، بدءًا من البناء المصفوفي (Matrix Build) عبر المنصات المتعددة (Windows، Linux، macOS)، دمج نظام البناء باستخدام CMake، الاختبار الآلي باستخدام CTest، أتمتة التحليل الثابت والديناميكي، قياس تغطية الكود، وحتى التسليم التلقائي للثنائيات المجمّعة عبر إصدارات جيتهاب (GitHub Releases).
 

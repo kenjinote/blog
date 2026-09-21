@@ -111,19 +111,19 @@ graph TD
     style B fill:#f9f,stroke:#333,stroke-width:2px
 ```
 
-## 3. 哲学と思想：モナドと予定調和
+## 3. 哲学と思想：[モナド](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)と予定調和
 
 [ライプニッツ](https://kenji.blog/p/leibniz/)の数学的探求は、彼の壮大な哲学体系と深く結びついていました。彼の哲学は、合理主義の頂点の一つとされています。
 
-### 3.1 モナドロジー（単子論）
+### 3.1 [モナド](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)ロジー（単子論）
 
-彼の代表的な哲学的著作『モナドロジー（単子論）』では、世界は空間的な広がりを持たず、これ以上分割不可能な究極の精神的実体である「モナド（Monad）」から構成されていると主張しました。
+彼の代表的な哲学的著作『モナドロジー（単子論）』では、世界は空間的な広がりを持たず、これ以上分割不可能な究極の精神的実体である「モナド（[Monad](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)）」から構成されていると主張しました。
 
 物質的な原子とは異なり、モナドはそれぞれが独自の知覚を持つ精神的な単位です。有名な言葉「モナドには窓がない」が示すように、モナド同士は直接相互作用することはありません。
 
 ### 3.2 予定調和説
 
-では、なぜ窓のないモナドたちから構成される世界が、これほどまでに調和を保って動いているのでしょうか。[ライプニッツ](https://kenji.blog/p/leibniz/)は、神があらかじめ全てのモナドの内部状態の推移を完全にシンクロナイズさせてプログラムしているからだ、と説明しました。これを「予定調和（Pre-established harmony）」と呼びます。
+では、なぜ窓のないモナドたちから構成される世界が、これほどまでに調和を保って動いているのでしょうか。[ライプニッツ](https://kenji.blog/p/leibniz/)は、神があらかじめ全ての[モナド](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)の内部状態の推移を完全にシンクロナイズさせてプログラムしているからだ、と説明しました。これを「予定調和（Pre-established harmony）」と呼びます。
 
 ### 3.3 充足理由の原理
 

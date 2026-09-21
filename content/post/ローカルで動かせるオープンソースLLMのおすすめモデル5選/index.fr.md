@@ -12,7 +12,7 @@ description: 'Des LLM locaux gratuits à utiliser tout en protégeant votre vie 
 
 # Introduction
 
-Ces dernières années, l'évolution technologique des grands modèles de langage (LLM) a été remarquable, et les services d'IA basés sur le cloud comme ChatGPT et Claude se sont largement répandus. Cependant, dans le même temps, les besoins tels que "ne pas envoyer les données confidentielles de l'entreprise à des serveurs externes", "réduire les coûts d'utilisation des API" ou "construire un système d'IA fonctionnant de manière totalement hors ligne" augmentent rapidement.
+Ces dernières années, l'évolution technologique des grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) a été remarquable, et les services d'IA basés sur le cloud comme ChatGPT et Claude se sont largement répandus. Cependant, dans le même temps, les besoins tels que "ne pas envoyer les données confidentielles de l'entreprise à des serveurs externes", "réduire les coûts d'utilisation des API" ou "construire un système d'IA fonctionnant de manière totalement hors ligne" augmentent rapidement.
 
 Pour répondre à ces exigences, il existe les "LLM locaux (LLM open source)" que vous pouvez télécharger et exécuter directement sur votre PC ou serveur interne. Jusqu'en 2023 environ, il était difficile d'obtenir une précision pratique en local, mais grâce à l'évolution de l'architecture des modèles et au développement de la technologie de quantification (Quantization), il est désormais possible d'exécuter de manière très fluide des LLM extrêmement performants même sur des GPU grand public (NVIDIA RTX 3090 / 4090 ou Apple Silicon sur Mac, etc.).
 
@@ -46,7 +46,7 @@ Pour exécuter une inférence LLM sur un GPU, il est nécessaire de déployer le
 $$ M = \frac{P \times B}{8} + C $$
 
 Où :
-- $M$ : Capacité de mémoire requise (Go)
+- $M$ : Capacité de mémoire requise ([Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/))
 - $P$ : Nombre de paramètres (Billion = milliard)
 - $B$ : Nombre de bits par paramètre (16 bits pour FP16, 4 bits pour une quantification 4-bit)
 - $C$ : Fenêtre de contexte (KV cache) et surcoût lors de l'inférence (généralement estimé à environ 20 % à 30 % de la taille du modèle)
@@ -80,7 +80,7 @@ Développé par Meta, la série "Llama 3" est devenue le standard de facto de l'
 
 ### Évolution et caractéristiques de l'architecture
 
-Llama 3 adopte l'architecture standard des Transformers, tout en ajoutant de nombreuses améliorations techniques par rapport à la génération précédente (Llama 2). Les points particulièrement notables sont les suivants :
+Llama 3 adopte l'architecture standard des [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)s, tout en ajoutant de nombreuses améliorations techniques par rapport à la génération précédente (Llama 2). Les points particulièrement notables sont les suivants :
 
 - **Adoption standard du GQA (Grouped Query Attention)** : Le GQA, qui n'était adopté que pour les modèles à grande échelle dans Llama 2, a également été adopté pour les modèles à petite échelle comme le 8B dans Llama 3. En conséquence, l'utilisation de la mémoire pour le KV cache est considérablement réduite, ce qui permet une inférence rapide même avec des contextes longs.
 - **Expansion de la taille du vocabulaire** : La taille du vocabulaire du tokenizer (basé sur Tiktoken) a été étendue à 128 000 tokens, améliorant considérablement l'efficacité de la compression du multilinguisme et du code source. L'efficacité du traitement du japonais s'est également améliorée de plusieurs fois par rapport à Llama 2.
@@ -101,7 +101,7 @@ graph TD
 
 ### Taille des paramètres et cas d'utilisation
 
-- **Llama 3 8B** : 8 milliards de paramètres. Il fonctionne avec environ 5 Go de mémoire avec une quantification 4-bit. La réponse est très rapide, ce qui le rend idéal comme assistant personnel sur PC ou au cœur d'un système RAG (Retrieval-Augmented Generation) local.
+- **Llama 3 8B** : 8 milliards de paramètres. Il fonctionne avec environ 5 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de mémoire avec une quantification 4-bit. La réponse est très rapide, ce qui le rend idéal comme assistant personnel sur PC ou au cœur d'un système RAG (Retrieval-Augmented Generation) local.
 - **Llama 3 70B** : 70 milliards de paramètres. Il nécessite environ 40 Go de VRAM (ou d'Unified Memory sur Apple Silicon) avec une quantification 4-bit. Il possède des performances qui rivalisent avec le GPT-4 du cloud et démontre sa puissance dans le raisonnement avancé, le codage complexe, l'analyse de données, etc.
 
 Llama 3 bénéficie du soutien le plus solide de la part de la communauté, et son point fort est que tous les formats de quantification, y compris GGUF, AWQ, et EXL2, sont immédiatement disponibles.
@@ -114,7 +114,7 @@ Les modèles proposés par "Mistral AI", une startup d'IA française, ont secou�
 
 ### Le mécanisme MoE (Mixture of Experts)
 
-"Mixtral 8x7B" a été le premier LLM open source à adopter à grande échelle l'architecture **MoE (Mixture of Experts)** et a connu un énorme succès.
+"Mixtral 8x7B" a été le premier [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) open source à adopter à grande échelle l'architecture **MoE (Mixture of Experts)** et a connu un énorme succès.
 MoE est un mécanisme qui dote l'ensemble du modèle (environ 47 milliards de paramètres) de 8 "réseaux d'experts", et sélectionne dynamiquement (route) seulement les 2 experts les plus optimaux pour chaque token en entrée.
 
 ```mermaid
@@ -134,7 +134,7 @@ Le plus grand avantage de cette architecture est que "bien que le nombre de para
 ### Performances et cas d'utilisation
 
 - **Mistral 7B / Mistral Nemo (12B)** : Modèles denses (Dense) uniques. Bien qu'ils soient très légers, ils sont libres pour un usage commercial sous licence Apache 2.0. Pour les tâches de codage et de résumé, ils obtiennent des scores de référence qui surpassent écrasamment les autres modèles de même taille.
-- **Mixtral 8x7B / 8x22B** : Modèles MoE avancés. Bien que les exigences en matière de VRAM soient élevées (puisque l'ensemble du modèle doit être chargé en mémoire, soit environ 26 Go pour le 8x7B en 4-bit), la vitesse d'inférence est rapide, ce qui les rend très adaptés à la création de serveurs locaux sur des environnements Mac tels que M2/M3 Max.
+- **Mixtral 8x7B / 8x22B** : Modèles MoE avancés. Bien que les exigences en matière de VRAM soient élevées (puisque l'ensemble du modèle doit être chargé en mémoire, soit environ 26 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) pour le 8x7B en 4-bit), la vitesse d'inférence est rapide, ce qui les rend très adaptés à la création de serveurs locaux sur des environnements Mac tels que M2/M3 Max.
 
 ---
 
@@ -144,7 +144,7 @@ Les modèles ouverts développés par Google en utilisant la technologie de son 
 
 ### Conception d'architecture unique
 
-Gemma 2 adopte plusieurs conceptions uniques qui le distinguent des autres LLM.
+Gemma 2 adopte plusieurs conceptions uniques qui le distinguent des autres [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/).
 
 - **Logit Soft-capping** : Une technique qui empêche la génération de valeurs de logit anormalement élevées et améliore la stabilité de l'apprentissage et de l'inférence.
 - **Hybride de Sliding Window Attention (SWA) et Local Attention** : Plutôt que d'effectuer une Full Attention sur toutes les couches, il alterne les couches qui ne regardent que le contexte local et les couches qui regardent l'ensemble.
@@ -227,14 +227,14 @@ xychart-beta
 
 ## Calcul théorique de la vitesse d'inférence (Tokens/sec)
 
-La vitesse d'inférence d'un LLM local dépend fortement de la "bande passante de la mémoire (Memory Bandwidth)" du GPU. En effet, lors de la phase de génération (décodage), il est nécessaire de lire tous les poids du modèle depuis la mémoire pour chaque token généré. C'est un processus limité par la mémoire (Memory-bound) et non limité par le calcul (Compute-bound).
+La vitesse d'inférence d'un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) local dépend fortement de la "bande passante de la mémoire (Memory Bandwidth)" du GPU. En effet, lors de la phase de génération (décodage), il est nécessaire de lire tous les poids du modèle depuis la mémoire pour chaque token généré. C'est un processus limité par la mémoire (Memory-bound) et non limité par le calcul (Compute-bound).
 
 La vitesse maximale théorique d'inférence $T$ (Tokens/sec) est calculée par la formule suivante.
 
 $$ T = \frac{\text{BW}}{M_{\text{weights}}} $$
 
 Où :
-- $\text{BW}$ : Bande passante mémoire effective du GPU (Go/s)
+- $\text{BW}$ : Bande passante mémoire effective du GPU ([Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)/s)
 - $M_{\text{weights}}$ : Taille du modèle chargé (Go)
 
 Par exemple, si nous exécutons la version 4-bit de Llama 3 8B (environ 4,5 Go) sur une NVIDIA RTX 4090 (bande passante mémoire de 1 008 Go/s). En supposant que la bande passante effective soit d'environ 80 % de la valeur théorique (environ 800 Go/s) :
@@ -262,7 +262,7 @@ De plus, Ollama fonctionne comme un serveur API REST en arrière-plan, ce qui re
 C'est l'application recommandée pour ceux qui souhaitent une interface utilisateur graphique (GUI) intuitive. Vous pouvez rechercher et télécharger parmi l'immense liste de modèles GGUF de Hugging Face directement depuis l'application, et profiter de conversations dans une interface de chat similaire à ChatGPT. Sa fonctionnalité qui vous indique visuellement quel modèle s'intègrera dans la RAM/VRAM de votre PC est très pratique.
 
 ### 3. llama.cpp
-C'est l'étincelle qui a déclenché le boom des LLM locaux et la bibliothèque en C/C++ qui sert de base à tout le reste. Elle s'adresse aux ingénieurs souhaitant ajuster les performances à l'extrême ou aux hackers souhaitant l'intégrer dans leurs propres scripts. Elle exploite tout le potentiel de n'importe quel matériel, allant du Metal d'Apple, au CUDA de NVIDIA, au ROCm d'AMD, jusqu'au jeu d'instructions AVX d'Intel.
+C'est l'étincelle qui a déclenché le boom des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) locaux et la bibliothèque en C/C++ qui sert de base à tout le reste. Elle s'adresse aux ingénieurs souhaitant ajuster les performances à l'extrême ou aux hackers souhaitant l'intégrer dans leurs propres scripts. Elle exploite tout le potentiel de n'importe quel matériel, allant du Metal d'Apple, au CUDA de NVIDIA, au ROCm d'AMD, jusqu'au jeu d'instructions AVX d'Intel.
 
 ---
 
@@ -272,11 +272,11 @@ Dans cet article, nous avons présenté cinq des meilleurs LLM locaux open sourc
 
 1. **Si vous privilégiez l'équilibre global et l'écosystème** : `Llama 3 (8B / 70B)`
 2. **Si vous souhaitez une inférence à haute vitesse dans un environnement avec une grande capacité d'Unified Memory comme sur Mac** : `Mixtral 8x7B`
-3. **Si vous souhaitez tirer le maximum d'intelligence avec une VRAM de classe 24 Go** : `Gemma 2 27B` ou `Qwen 2.5 32B`
+3. **Si vous souhaitez tirer le maximum d'intelligence avec une VRAM de classe 24 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)** : `Gemma 2 27B` ou `Qwen 2.5 32B`
 4. **Si votre objectif est une sortie naturelle en japonais et une assistance avancée au codage** : `Qwen 2.5`
 5. **Pour les smartphones, les PC peu puissants ou les traitements ultralégers en arrière-plan** : `Phi-3 / Phi-3.5`
 
-La vitesse d'évolution des LLM open source est stupéfiante, et des avancées bouleversant les conventions actuelles sont annoncées tous les quelques mois. À l'avenir, avec les améliorations continues de la technologie de quantification et l'émergence de nouvelles architectures, le jour où un environnement local surpassera l'IA cloud n'est peut-être pas loin.
+La vitesse d'évolution des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) open source est stupéfiante, et des avancées bouleversant les conventions actuelles sont annoncées tous les quelques mois. À l'avenir, avec les améliorations continues de la technologie de quantification et l'émergence de nouvelles architectures, le jour où un environnement local surpassera l'IA cloud n'est peut-être pas loin.
 N'hésitez pas à télécharger le modèle optimal en fonction de votre environnement matériel et à expérimenter la liberté et le potentiel extraordinaires de l'IA locale.
 
 

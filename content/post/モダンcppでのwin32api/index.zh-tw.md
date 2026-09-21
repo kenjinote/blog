@@ -541,7 +541,7 @@ Win32 API 基於歷史原因，是個以 C 語言典範設計的古老美好遺�
 回顧本文解說的重點：
 
 1.  **絕不手動撰寫 `CloseHandle` 或 `DeleteObject`。** 將一切都封裝在 `std::unique_ptr` 等 RAII 容器中。
-2.  **理解 `INVALID_HANDLE_VALUE` 的陷阱。** 實作專屬的自訂刪除器・自訂指標特性 (Pointer Traits)，或使用 WIL 的 `wil::unique_handle`。
+2.  **理解 `INVALID_HANDLE_VALUE` 的陷阱。** 實作專屬的自訂刪除器・自訂指標特性 ([Pointer](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/) Traits)，或使用 WIL 的 `wil::unique_handle`。
 3.  **現代化錯誤處理。** 將 `GetLastError()` 或 `HRESULT` 作為 `std::system_error` 例外拋出，或使用 C++23 的 `std::expected` 進行型別安全的處理。
 4.  **站在巨人的肩膀上。** 積極採用 Microsoft 官方的 WIL 與 C++/WinRT，避免重新發明輪子。
 

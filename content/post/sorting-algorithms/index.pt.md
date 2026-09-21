@@ -278,7 +278,7 @@ O desempenho muda enormemente dependendo de como o pivô é escolhido e do méto
 *   **Pior complexidade de tempo**: $O(n^2)$
     *   Esta é uma fraqueza fatal. Se um array já estiver ordenado e o elemento da extremidade for sempre escolhido como pivô, ele continuará a ser particionado assimetricamente em "um elemento" e "o resto todo", resultando na pior complexidade possível. Para evitar isso, truques de escolha de pivô, como "Mediana de Três" (pegando a mediana do início, meio e fim), são essenciais.
 *   **Complexidade de tempo média**: $O(n \log n)$
-    *   Na prática, o fator constante é muito pequeno e a eficiência de cache é extremamente boa, tornando-o mais rápido do que o Merge Sort ou o Heap Sort.
+    *   Na prática, o fator constante é muito pequeno e a eficiência de cache é extremamente boa, tornando-o mais rápido do que o Merge Sort ou o [Heap](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/) Sort.
 *   **Complexidade de espaço**: Média $O(\log n)$, Pior $O(n)$
     *   É um algoritmo In-place que reescreve diretamente o array, mas consome a pilha de chamadas para chamadas recursivas.
 *   **Estabilidade**: Instável (Unstable)
@@ -338,7 +338,7 @@ def partition(arr, low, high):
     return i + 1
 ```
 
-### 3.3 Heap Sort (Ordenação por Heap)
+### 3.3 [Heap](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/) Sort (Ordenação por Heap)
 
 O Heap Sort é um algoritmo de ordenação que faz uso inteligente de uma estrutura de dados em árvore chamada **Binary Heap** (Heap Binário). Ele tem a pior complexidade em $O(n \log n)$, mas ainda é uma ordenação In-place que não usa memória adicional, combinando os melhores atributos do Merge Sort e do Quick Sort.
 
@@ -346,7 +346,7 @@ O Heap Sort é um algoritmo de ordenação que faz uso inteligente de uma estrut
 
 1. **Construção do Heap**: Primeiro, o array fornecido é convertido em um "Max Heap" (Heap Máximo). Um Max Heap é uma árvore binária completa que atende à regra de que o valor do nó pai deve ser sempre maior ou igual ao valor dos nós filhos. Usando o cálculo de índice no array (pai: $(i-1)/2$, filho da esquerda: $2i+1$, filho da direita: $2i+2$), a estrutura de árvore pode ser expressa apenas como um array.
 2. **Extração do Máximo e Reconstrução**: O valor máximo sempre existe na raiz do Max Heap (o início do array, `arr[0]`). Troca-se esse valor máximo pelo último elemento do array. Isso fixa o valor máximo na posição final do array.
-3. Como a condição do heap é quebrada devido à alteração da raiz, realiza-se a "Reconstrução do Heap (Heapify)" no escopo excluindo o final do heap (a parte já fixada), para satisfazer a condição do Max Heap novamente.
+3. Como a condição do heap é quebrada devido à alteração da raiz, realiza-se a "Reconstrução do [Heap](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/) (Heapify)" no escopo excluindo o final do heap (a parte já fixada), para satisfazer a condição do Max Heap novamente.
 4. Repetindo essa operação até que sofra apenas 1 elemento, os valores maiores são determinados em ordem de trás para frente no array e, por fim, ordenados de forma crescente.
 
 ```mermaid
@@ -467,7 +467,7 @@ Embora os livros acadêmicos costumem cobrir apenas até o Quick Sort e o Merge 
 
 ### 5.1 Timsort (Padrão no Python)
 
-Timsort é um algoritmo implementado em 2002 por Tim Peters para o Python, e hoje é o campeão do mundo prático; foi adotado pelo `list.sort()` e `sorted()` do Python, e também em diversas linguagens, como no array de objetos do Java e na ordenação padrão do [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/).
+Timsort é um algoritmo implementado em 2002 por Tim Peters para o Python, e hoje é o campeão do mundo prático; foi adotado pelo `list.sort()` e `sorted()` do Python, e também em diversas linguagens, como no array de objetos do [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) e na ordenação padrão do [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/).
 
 A principal filosofia de design por trás do Timsort baseia-se na heurística: **"Dados no mundo real raramente são completamente aleatórios e muitas vezes contêm blocos já ordenados de forma crescente ou decrescente"**.
 
@@ -486,7 +486,7 @@ Apesar do Quick Sort possuir a velocidade média mais veloz, dependendo de como 
 #### Características do Introsort
 1. Em sua base principal, usa o veloz **Quick Sort** para particionar o array.
 2. Contudo, a profundidade das chamadas recursivas é acompanhada de perto; se a profundidade da subdivisão ultrapassar um múltiplo constante de $\log_2 n$ (ex: $2 \times \log_2 n$), o algoritmo percebe a si mesmo que "a escolha do pivô falhou, caindo na pior complexidade" (introspecção).
-3. A partir desse ponto, muda repentinamente a estratégia de ordenação do sub-array para **Heap Sort**, garantindo sempre $O(n \log n)$ como limite no pior caso.
+3. A partir desse ponto, muda repentinamente a estratégia de ordenação do sub-array para **[Heap](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/) Sort**, garantindo sempre $O(n \log n)$ como limite no pior caso.
 4. Além disso, se o tamanho dos fragmentos do array for minúsculo (ex: 16 elementos ou menos), o overhead (custo) de chamadas de função é evitado invocando o **Insertion Sort**.
 
 Graças a isso, temos um algoritmo impecável e sem vulnerabilidades: retém a absurda velocidade média do Quick Sort, enquanto assegura o $O(n \log n)$ mesmo na pior das hipóteses.
@@ -522,7 +522,7 @@ A resposta foca exclusivamente nisso. O `.sort()` no Python e o `std::sort` no C
 Logo, restam os questionamentos, então por que estudar algoritmos de ordenação?
 
 1. **Fixação dos Conceitos**: Ideias como o Notação [Big O](https://kenji.blog/pt/p/time-space-complexity-big-o-notation-examples/), estabilidade (Stability), além de In-place/Out-place, formam o âmago e raciocínio de quase todas as arquiteturas de algoritmos e arranjos estruturais, sem se prender restritamente à ordenação.
-2. **Entornos Restritos de Hardware**: Para ecossistemas estritamente limitados sob a capacidade da memória (microcontroladores embarcados), existirá talvez o dever de codificar sua própria elaboração baseada no Heap Sort In-place $O(1)$ ou similares.
+2. **Entornos Restritos de Hardware**: Para ecossistemas estritamente limitados sob a capacidade da memória (microcontroladores embarcados), existirá talvez o dever de codificar sua própria elaboração baseada no [Heap](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/) Sort In-place $O(1)$ ou similares.
 3. **Explorando a Condição do Domínio**: Se a premissa consistir em arranjar "um milhão de elementos enjaulados no intervalo numérico entre 1 a 100", então fabricar um simples Counting Sort ($O(n)$) pode esmagar espetacularmente até o admirável Timsort (preso ao limite $O(n \log n)$).
 
 Conhecer a profundidade da sua estrutura oculta é ter a compreensão íntima da engrenagem oculta, entendendo perfeitamente não apenas suas competências vitais, mas inclusive aquilo em que fracassam — promovendo a possibilidade da tomada de decisões robustas ao desenhar sistemas inteligentes em alto nível.

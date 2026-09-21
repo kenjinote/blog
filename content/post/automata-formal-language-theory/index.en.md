@@ -168,7 +168,7 @@ To express things that cannot be expressed with regular languages, such as match
 
 ### Pushdown Automata ( PDA )
 
-The computational model that recognizes context-free languages is the **Pushdown Automaton** (PDA). A PDA is a finite automaton with an added **Stack** (LIFO memory). By using a stack, it becomes possible to do things like "remember the number of opening parentheses and consume one each time a closing parenthesis arrives."
+The computational model that recognizes context-free languages is the **Pushdown Automaton** (PDA). A PDA is a finite automaton with an added **[Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)** (LIFO memory). By using a stack, it becomes possible to do things like "remember the number of opening parentheses and consume one each time a closing parenthesis arrives."
 
 #### Example: PDA that accepts $ a^n b^n $
 
@@ -286,7 +286,7 @@ The theories we have seen so far do not just remain in academic ivory towers. Th
 
 ### The Pitfall of Regex Engines (Catastrophic Backtracking)
 
-The regular expression engines built into many programming languages (Java, Python, Ruby, JavaScript, etc.) are not implemented as theoretically pure DFAs, but rather as NFA-based (or backtracking engines) that involve backtracking.
+The regular expression engines built into many programming languages ([Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), Python, Ruby, JavaScript, etc.) are not implemented as theoretically pure DFAs, but rather as NFA-based (or backtracking engines) that involve backtracking.
 
 Because of this, if a clever string is given against a specific pattern of regular expression (e.g., `(a+)+$`), the computational complexity can explode exponentially, causing a vulnerability called **ReDoS** (Regular Expression Denial of [Service](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/)) that freezes the system. By knowing the theory, you can logically think about why backtracking occurs and how to rewrite patterns to reduce them to a safe DFA-equivalent process.
 

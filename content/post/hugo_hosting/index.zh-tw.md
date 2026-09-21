@@ -10,7 +10,7 @@ tags: ["Hugo", "Cloudflare Pages", "GitHub Actions", "CI/CD"]
 description: '使用 Cloudflare Pages 或 GitHub Pages 免費且高速地代管 Hugo 靜態網站的完整技術指南。詳細解說邊緣運算、CDN 架構及 CI/CD 流程。'
 ---
 
-在營運網站或部落格時，載入速度（效能）、營運成本以及安全性是極為重要的因素。過去，像 WordPress 這樣的動態 CMS（內容管理系統）與虛擬主機的組合是主流，但現在被稱為「Jamstack」的架構正受到極大關注。其中，將以 Go 語言編寫的超高速靜態網站產生器（SSG）「Hugo」與 Cloudflare Pages 或 GitHub Pages 等現代代管服務結合，即可建構出 **完全免費且極速** 的部落格環境。
+在營運網站或部落格時，載入速度（效能）、營運成本以及安全性是極為重要的因素。過去，像 WordPress 這樣的動態 CMS（內容管理系統）與虛擬主機的組合是主流，但現在被稱為「Jamstack」的架構正受到極大關注。其中，將以 [Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 語言編寫的超高速靜態網站產生器（SSG）「Hugo」與 Cloudflare Pages 或 GitHub Pages 等現代代管服務結合，即可建構出 **完全免費且極速** 的部落格環境。
 
 本文將從技術觀點進行非常深入的探討，說明如何將使用 Hugo 產生的靜態網站在 Cloudflare Pages 或 GitHub Pages 上發布的具體步驟、各平台架構的差異、使用 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 建構 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)（持續整合／持續部署）、DNS 的最佳化、快取策略，以及如何導入兼顧隱私的流量分析工具。
 
@@ -24,7 +24,7 @@ description: '使用 Cloudflare Pages 或 GitHub Pages 免費且高速地代管 
 另一方面，採用 Jamstack（JavaScript, APIs, and Markup）架構的靜態網站產生器（SSG），會事先（在建置時）產生所有的 HTML 檔案、CSS 和 JavaScript。對於使用者的請求，網頁伺服器（或 CDN）只需直接回傳已產生的靜態檔案，因此能實現壓倒性的高速與堅固的安全性。
 
 ### 1.2 Hugo 的優勢
-SSG 有 Next.js、Gatsby、Jekyll、Astro 等多種選擇，但 Hugo 最大的特色在於其 **建置速度** 。受惠於 Go 語言的並行處理，即使是擁有數千至數萬個頁面的網站，也只需短短幾秒鐘即可完成建置。這大幅減少了 CI/CD 流程中的等待時間，直接提升了開發者體驗（DX: Developer Experience）。
+SSG 有 Next.js、Gatsby、Jekyll、Astro 等多種選擇，但 Hugo 最大的特色在於其 **建置速度** 。受惠於 [Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 語言的並行處理，即使是擁有數千至數萬個頁面的網站，也只需短短幾秒鐘即可完成建置。這大幅減少了 CI/CD 流程中的等待時間，直接提升了開發者體驗（DX: Developer Experience）。
 
 ---
 

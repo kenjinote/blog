@@ -209,7 +209,7 @@ int main() {
 
 ### Implementasi dengan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
-Dalam kasus Rust, implementasi linked list cenderung rumit karena aturan kepemilikan (ownership) dan peminjaman (borrowing). Oleh karena itu, pada pemrograman kompetitif dsb, biasanya masalah dimodelkan sebagai referensi indeks pada array (atau `Vec`).
+Dalam kasus [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), implementasi linked list cenderung rumit karena aturan kepemilikan (ownership) dan peminjaman (borrowing). Oleh karena itu, pada pemrograman kompetitif dsb, biasanya masalah dimodelkan sebagai referensi indeks pada array (atau `Vec`).
 Di sini kami tunjukkan contoh implementasi menggunakan array di mana "pointer ke berikutnya" diganti dengan penyimpanan "indeks berikutnya".
 
 ```rust

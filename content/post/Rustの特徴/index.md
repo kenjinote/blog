@@ -10,7 +10,7 @@ description: 'Mozillaが開発するプログラミング言語「Rust」の主�
 ---
 # [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)（ラスト）の特徴
 
-- Mozilla が開発を行っている比較的新しいオープンソースなプログラミング言語
+- Mozilla が開発を行っている比較的新しいオープンソースな[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)
 - ガーベージコレクションがなく、高速でシステムプログラミングに特化した言語
 - 所有権と借用という独特な機構を言語仕様としてもち、メモリ安全性を保証する
 - クロスプラットフォームで動作する

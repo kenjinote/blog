@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # 서론: 거인들에게 도전하는 '가지지 못한 자'의 싸움 방식
 
-소프트웨어 개발 역사상 그 어느 때보다 개인 개발자(인디 디벨로퍼)에게 유리한 시대가 도래했습니다. AWS나 GCP 같은 클라우드 인프라의 민주화, Vercel이나 Supabase를 비롯한 BaaS(Backend as a [Service](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/))의 대두, 그리고 무엇보다 LLM(대규모 언어 모델)의 진화에 따른 코딩의 자동화. 이 모든 것이 개인이 '거인'인 대형 테크 기업과 정면으로 승부할 수 있는 토양을 만들어 냈습니다.
+소프트웨어 개발 역사상 그 어느 때보다 개인 개발자(인디 디벨로퍼)에게 유리한 시대가 도래했습니다. AWS나 GCP 같은 클라우드 인프라의 민주화, Vercel이나 Supabase를 비롯한 BaaS(Backend as a [Service](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/))의 대두, 그리고 무엇보다 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)(대규모 언어 모델)의 진화에 따른 코딩의 자동화. 이 모든 것이 개인이 '거인'인 대형 테크 기업과 정면으로 승부할 수 있는 토양을 만들어 냈습니다.
 
 하지만 기술적 리소스가 평등해졌다고 해서 대기업과 같은 전략을 취한다고 이길 수 있는 것은 아닙니다. 자본력, 마케팅력, 그리고 브랜드력에서 개인은 압도적으로 불리합니다. 개인 개발자가 살아남고, 그리고 승리하기 위해서는 독자적인 '생존 전략'이 필수적입니다.
 
@@ -248,7 +248,7 @@ export async function getUserByEmail(email: string) {
 
 # 7. 프로그래매틱 SEO와 AI 생성 콘텐츠
 
-마케팅 예산이 없는 개인 개발자가 싸우기 위한 최강의 무기가 'SEO(검색 엔진 최적화)'입니다. 최근에는 자사의 데이터베이스와 LLM을 결합하여 수천에서 수만 개의 랜딩 페이지를 동적으로 생성하는 '프로그래매틱 SEO'가 주목받고 있습니다.
+마케팅 예산이 없는 개인 개발자가 싸우기 위한 최강의 무기가 'SEO(검색 엔진 최적화)'입니다. 최근에는 자사의 데이터베이스와 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 결합하여 수천에서 수만 개의 랜딩 페이지를 동적으로 생성하는 '프로그래매틱 SEO'가 주목받고 있습니다.
 
 트래픽의 분포 또한 멱법칙을 따릅니다. 특정 빅 키워드를 노리는 것이 아니라 검색 볼륨은 작더라도 전환율이 높은 '롱테일 키워드'를 대량으로 커버함으로써 전체의 액세스 수를 끌어올립니다.
 

@@ -29,7 +29,7 @@ Webアプリケーションを開発する際、常に議論の的になるの�
 
 ### 2.1. ネイティブアプリの強みと弱み
 
-ネイティブアプリ（iOSのSwift/Objective-C、AndroidのKotlin/Javaなどで開発されたアプリ）の最大の強みは、OSのAPIへの完全なアクセス権を持つことです。
+ネイティブアプリ（iOSのSwift/Objective-C、AndroidのKotlin/[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)などで開発されたアプリ）の最大の強みは、OSのAPIへの完全なアクセス権を持つことです。
 これにより、カメラ、GPS、Bluetooth、NFC、各種センサーなどを最大限に活用した高度な機能を実現できます。また、OSに最適化されているため、描画パフォーマンスが非常に高く、複雑なアニメーションや3Dグラフィックスを多用するゲームなどにはネイティブアプリが圧倒的に有利です。
 
 一方で、ネイティブアプリには以下のような大きな弱み（課題）が存在します。

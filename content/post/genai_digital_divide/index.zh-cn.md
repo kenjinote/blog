@@ -14,13 +14,13 @@ tags: ["Generative AI", "Digital Divide", "LLM", "Productivity"]
 
 自从互联网普及以来，我们经常听到“数字鸿沟（信息鸿沟）”这个词。早期的数字鸿沟主要涉及“物理访问权”。也就是说，是否拥有计算机或高速互联网连接，决定了获取信息和经济机会的能力，这是一个简单的格局。随后，随着智能手机和宽带连接的商品化，鸿沟的焦点转移到了“IT素养（信息应用能力）”。这涉及能否使用搜索引擎恰当地找到信息，或者能否熟练使用软件等软件和认知层面的问题。
 
-然而，2020年代突然兴起的生成式AI（Generative AI）和大型语言模型（LLM: Large Language Models）的进化，正在从根本上颠覆这种数字鸿沟的概念。我们现在面临的不再仅仅是“信息访问鸿沟”或“软件操作技能鸿沟”。这是一种“AI编排（指挥与整合）能力的鸿沟”，是一个极其严重且不可逆转的“第三次数字鸿沟”：要么使个人的生产力呈指数级倍增，要么被AI的进化抛在后面，从而失去相对价值。
+然而，2020年代突然兴起的生成式AI（Generative AI）和大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/): [Large Language Models](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的进化，正在从根本上颠覆这种数字鸿沟的概念。我们现在面临的不再仅仅是“信息访问鸿沟”或“软件操作技能鸿沟”。这是一种“AI编排（指挥与整合）能力的鸿沟”，是一个极其严重且不可逆转的“第三次数字鸿沟”：要么使个人的生产力呈指数级倍增，要么被AI的进化抛在后面，从而失去相对价值。
 
 本文将从生产力的数学模型、硬件架构与成本、以及人类的认知层面这三个维度，极其详细地揭开生成式AI带来的这一新数字鸿沟的真面目。
 
 ## 2. 从“访问”到“编排”：第三次数字鸿沟的到来
 
-过去的软件工具本质上是“被动的工具”。传统软件的局限性在于，只能对用户的显式输入返回决定论的结果（例如：在电子表格软件中输入公式以获得计算结果）。然而，当前的生成式AI，尤其是基于Transformer架构的LLM（如GPT-4、Claude 3.5、Llama 3等），表现为“主动智能的片段”。
+过去的软件工具本质上是“被动的工具”。传统软件的局限性在于，只能对用户的显式输入返回决定论的结果（例如：在电子表格软件中输入公式以获得计算结果）。然而，当前的生成式AI，尤其是基于[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)架构的LLM（如GPT-4、Claude 3.5、Llama 3等），表现为“主动智能的片段”。
 
 由于这种范式转换，人类所需的技能集已经发生了巨大的变化，从“操作工具的能力”转变为“组合多个AI智能体和工具，设计并指挥自主工作流的能力（AI Orchestration）”。这可以被称为“AI编排素养”。
 
@@ -36,7 +36,7 @@ flowchart TD
     C --> F["高度的信息验证与幻觉检测"]
 ```
 
-超越了提示词工程（Prompt Engineering）的范畴，目前已经进入了使用诸如LangChain、AutoGen和CrewAI等多智能体框架，让系统进行自主解决问题的阶段。在“绘制蓝图并让AI执行的群体”和“依然亲自动手处理日常重复性工作的群体”之间，正在以人类前所未见的速度产生生产力上的巨大分化。
+超越了提示词工程（[Prompt Engineering](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的范畴，目前已经进入了使用诸如LangChain、AutoGen和CrewAI等多智能体框架，让系统进行自主解决问题的阶段。在“绘制蓝图并让AI执行的群体”和“依然亲自动手处理日常重复性工作的群体”之间，正在以人类前所未见的速度产生生产力上的巨大分化。
 
 ## 3. 生产力的马太效应（Matthew Effect）：通过数学模型可视化鸿沟
 
@@ -93,7 +93,7 @@ $$
 
 当持续进行大规模的数据处理或RAG（Retrieval-Augmented Generation，检索增强生成）向量化时，这种可变成本可能成为个人开发者和中小企业的致命负担。
 
-### 本地LLM与VRAM的壁垒
+### 本地[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)与VRAM的壁垒
 出于规避云端成本和数据隐私的考量，在本地运行Meta的Llama 3或Mistral等开源权重模型的需求日益增长。但在这里，存在一个名为“VRAM（显存）壁垒”的物理鸿沟。
 
 LLM的推理速度相比GPU的算力（FLOPS），更强烈地依赖于显存带宽（Memory Bandwidth）（即受内存限制的特性）。假设模型参数量为 $P$，精度为16bit（2字节），仅仅是将模型加载到内存中，最低就需要 $2P$ 字节的VRAM。例如，700亿（70B）参数的模型，需要140GB以上的VRAM。

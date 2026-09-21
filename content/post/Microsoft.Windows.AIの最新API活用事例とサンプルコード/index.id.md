@@ -14,7 +14,7 @@ description: 'Panduan mendetail yang mencakup cara mengimplementasikan fitur AI 
 
 ## 1. Pendahuluan: Era Baru Windows di Mana AI Terintegrasi Secara Asli
 
-Dalam beberapa tahun terakhir, evolusi teknologi AI sangat luar biasa, dan telah terjadi pergeseran paradigma yang cepat dari pemanfaatan model bahasa besar (LLM) di cloud menuju inferensi AI pada perangkat *edge* (PC lokal). Inti dari hal ini adalah "Windows Copilot Runtime" yang disediakan oleh Microsoft untuk Windows 11, dan API "Microsoft.Windows.AI" untuk mengoperasikannya.
+Dalam beberapa tahun terakhir, evolusi teknologi AI sangat luar biasa, dan telah terjadi pergeseran paradigma yang cepat dari pemanfaatan model bahasa besar ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)) di cloud menuju inferensi AI pada perangkat *edge* (PC lokal). Inti dari hal ini adalah "Windows Copilot Runtime" yang disediakan oleh Microsoft untuk Windows 11, dan API "Microsoft.Windows.AI" untuk mengoperasikannya.
 
 Pengembangan aplikasi menggunakan API cloud (seperti OpenAI atau Azure OpenAI) memang mudah, namun selalu diiringi dengan tantangan terkait latensi, privasi, dan biaya yang berkelanjutan. Di sisi lain, dengan menjalankan model AI secara lokal, Anda dapat mewujudkan aplikasi dengan latensi yang sangat rendah yang berfungsi bahkan saat [offline](https://kenji.blog/id/p/pwa-progressive-web-apps-service-worker/), tanpa perlu mengirimkan data sensitif keluar dari perangkat.
 
@@ -63,7 +63,7 @@ $$
 
 Secara matematis telah ditunjukkan bahwa performa ini memenuhi persyaratan PC Copilot+ Windows 11 yaitu 40 TOPS.
 
-Selain itu, inferensi model AI, terutama untuk LLM (fase dekode), cenderung mengalami **keterbatasan memori (Memory-Bound)**. *Bandwidth* teoritis memori sistem $BW$ dihitung sebagai berikut:
+Selain itu, inferensi model AI, terutama untuk [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) (fase dekode), cenderung mengalami **keterbatasan memori (Memory-Bound)**. *Bandwidth* teoritis memori sistem $BW$ dihitung sebagai berikut:
 
 $$
 BW = f_{\text{mem}} \times W_{\text{bus}} \times \frac{2}{8}
@@ -307,7 +307,7 @@ Berikut ini adalah ringkasan strategi pengoptimalan yang sangat penting ketika m
 ### 7.1 Kuantisasi Model (*Quantization*) dan *Olive Toolkit*
 Untuk mengeluarkan kekuatan sejati NPU, sebuah keharusan mutlak untuk **mengkuantisasi** bobot dan aktivasi model AI dari FP32 (presisi tunggal *floating-point*) ke INT8 atau INT4. Arsitektur NPU sangat dioptimalkan untuk operasi bilangan bulat, dan bila dibandingkan dengan FP32, INT8 secara teoritis dapat memberikan *throughput* 4 kali lebih besar dengan efisiensi daya yang jauh lebih tinggi.
 
-Dengan menggunakan *toolchain* `Olive (ONNX Live)` yang disediakan oleh Microsoft, Anda dapat mengoptimalkan model seperti PyTorch secara otomatis untuk lingkungan Windows. Olive sangat mendukung pengoptimalan atensi (*attention*) khusus untuk model Transformer serta kompilasi graf per perangkat keras.
+Dengan menggunakan *toolchain* `Olive (ONNX Live)` yang disediakan oleh Microsoft, Anda dapat mengoptimalkan model seperti PyTorch secara otomatis untuk lingkungan Windows. Olive sangat mendukung pengoptimalan atensi (*attention*) khusus untuk model [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) serta kompilasi graf per perangkat keras.
 
 ### 7.2 *Trade-off* antara Pemrosesan *Batch* vs *Streaming* Interaktif
 Dalam pemanggilan API, menggabungkan beberapa permintaan inferensi untuk pemrosesan *batch* dapat meningkatkan efisiensi komputasi NPU. Namun, dalam antarmuka pengguna interaktif seperti *chatbot*, waktu hingga token pertama ditampilkan (TTFT: Time To First Token) lebih menentukan pengalaman pengguna (UX) dibandingkan dengan *throughput*.

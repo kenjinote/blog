@@ -316,7 +316,7 @@ Ketika menerapkan TDD pada proyek C++, ada beberapa tantangan (kendala) yang spe
 
 ### 7.1 Peningkatan Waktu Build (Waktu Kompilasi)
 C++ cenderung memiliki waktu kompilasi yang lama karena sering menggunakan template (template metaprogramming) dan include header dalam jumlah besar. Karena siklus "Red-Green-Refactor" dalam TDD harus dilakukan dengan cepat, penundaan waktu build (kompilasi) sangatlah fatal.
-**Solusi**: Manfaatkan Forward Declaration dan idiom Pimpl (Pointer to implementation) untuk meminimalkan dependensi file header. Selain itu, memperkenalkan tool build cache seperti Ccache juga cukup efektif.
+**Solusi**: Manfaatkan Forward Declaration dan idiom Pimpl ([Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) to implementation) untuk meminimalkan dependensi file header. Selain itu, memperkenalkan tool build cache seperti Ccache juga cukup efektif.
 
 ### 7.2 Menerapkan TDD pada Legacy Code
 Menerapkan TDD di kemudian hari pada kode monolitik besar yang sudah ada, sangatlah sulit.

@@ -40,7 +40,7 @@ Sebagai contoh, bayangkan sebuah situs e-commerce memulai flash sale, dan akses 
 
 Dalam kasus AWS Lambda, setiap kali ada permintaan (request), lingkungan eksekusi (kontainer) independen akan langsung menyala dalam sekejap dan memproses permintaan tersebut. Saat tidak ada akses, sumber daya dikurangi sepenuhnya menjadi nol, dan saat akses melonjak, jumlah eksekusi paralel ditingkatkan secara otomatis untuk menanganinya.
 
-### 1.3. Optimalisasi Biaya melalui Pay-as-You-Go
+### 1.3. Optimalisasi Biaya melalui Pay-as-You-[Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)
 
 Serverless hanya menagih berdasarkan waktu eksekusi dalam satuan milidetik (dalam kasus Lambda, satuan 1ms) dan jumlah memori yang dialokasikan. Saat dalam keadaan diam (idle, tidak ada akses sama sekali), Anda tidak akan dikenakan biaya sedikit pun.
 
@@ -78,7 +78,7 @@ Awalnya, AWS Lambda menggunakan kontainer Linux (teknologi yang mirip dengan LXC
 
 ### 3.1. Apa itu Firecracker?
 
-Firecracker adalah Virtual Machine Monitor (VMM) yang menggunakan KVM (Kernel-based Virtual Machine) untuk meluncurkan "MicroVM" (mesin virtual mikro) yang ringan dalam hitungan milidetik. Ditulis dalam bahasa Rust, dibandingkan dengan mesin virtual tradisional (seperti QEMU), Firecracker menanggalkan model perangkat keras (device model) yang tidak perlu, sehingga mencapai peluncuran yang sangat cepat dan overhead memori yang rendah.
+Firecracker adalah Virtual Machine Monitor (VMM) yang menggunakan KVM (Kernel-based Virtual Machine) untuk meluncurkan "MicroVM" (mesin virtual mikro) yang ringan dalam hitungan milidetik. Ditulis dalam bahasa [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), dibandingkan dengan mesin virtual tradisional (seperti QEMU), Firecracker menanggalkan model perangkat keras (device model) yang tidak perlu, sehingga mencapai peluncuran yang sangat cepat dan overhead memori yang rendah.
 
 ```mermaid
 graph TD
@@ -143,7 +143,7 @@ Waktu yang dibutuhkan untuk cold start pada garis besarnya dibagi menjadi **inis
 
 1. **Unduhan dan ekstraksi kode**: Paket penerapan (deployment package) diunduh dari S3 dan diekstraksi ke lingkungan (environment). Waktu yang dibutuhkan sebanding dengan ukuran paket (jumlah library dependensi).
 2. **Peluncuran MicroVM**: Firecracker diluncurkan. Bagian ini sangat cepat (dalam hitungan milidetik) berkat optimisasi pihak AWS.
-3. **Inisialisasi Runtime**: Proses Node.js, Python, Java, dll. diluncurkan. Terutama bahasa yang melakukan kompilasi JIT (Just-In-Time) seperti Java atau C#, akan memakan banyak waktu di bagian ini.
+3. **Inisialisasi Runtime**: Proses Node.js, Python, [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), dll. diluncurkan. Terutama bahasa yang melakukan kompilasi JIT (Just-In-Time) seperti Java atau C#, akan memakan banyak waktu di bagian ini.
 4. **Inisialisasi Fungsi (Fase Init)**: Scope global dari kode (di luar fungsi handler) akan dievaluasi. Jika Anda membuat pool koneksi ke DB atau menginisialisasi SDK yang berat di sini, waktu inisialisasi akan bertambah panjang.
 
 ### 4.2. Cold Start dari Sudut Pandang Probabilitas
@@ -167,7 +167,7 @@ Cold start adalah takdir bagi serverless, tetapi melalui rancangan arsitektur da
 
 Kecepatan cold start bervariasi secara dramatis tergantung pada bahasanya.
 
-- **Grup tercepat**: Bahasa yang dikompilasi AOT (Ahead-Of-Time) seperti Go, Rust, C++, dan bahasa skrip ringan (Python, Node.js). Pada kelompok ini, cold start sering kali dapat ditekan di bawah beberapa ratus milidetik.
+- **Grup tercepat**: Bahasa yang dikompilasi AOT (Ahead-Of-Time) seperti [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), C++, dan bahasa skrip ringan (Python, Node.js). Pada kelompok ini, cold start sering kali dapat ditekan di bawah beberapa ratus milidetik.
 - **Grup lambat**: Java, C# (.NET). Karena adanya overhead dari peluncuran JVM atau CLR, serta kompilasi JIT, cold start bisa memakan waktu mulai dari beberapa detik hingga belasan detik.
 
 Pendekatan dengan menggunakan runtime JavaScript eksperimental yang ringan yang disediakan oleh AWS, seperti **LLRT (Low Latency Runtime)**, juga mendapat banyak perhatian karena mampu memangkas waktu peluncuran Node.js lebih lanjut.
@@ -210,7 +210,7 @@ Namun, ada dilema (trade-off) di mana sebagian dari manfaat serverless yaitu "pa
 
 ## 6. Game Changer: AWS Lambda SnapStart
 
-Penyelamat bagi bahasa yang lambat diluncurkan seperti Java adalah **AWS Lambda SnapStart**. Ini adalah teknologi terobosan (breakthrough) yang mengambil snapshot dari status mesin virtual, dan memulihkannya pada saat terjadi cold start.
+Penyelamat bagi bahasa yang lambat diluncurkan seperti [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) adalah **AWS Lambda SnapStart**. Ini adalah teknologi terobosan (breakthrough) yang mengambil snapshot dari status mesin virtual, dan memulihkannya pada saat terjadi cold start.
 
 Sebagai teknologi latar belakangnya, fitur snapshot MicroVM dari Firecracker dan **CRaU** (Checkpoint/Restore in Userspace) digunakan.
 
@@ -253,7 +253,7 @@ sequenceDiagram
 
 ### 6.2. Kelebihan dan Hal yang Perlu Diperhatikan dari SnapStart
 
-Jika SnapStart diaktifkan, waktu cold start untuk fungsi Java dapat dipercepat hingga **lebih dari 10 kali lipat**. Ini karena peluncuran runtime, kompilasi JIT, dan inisialisasi framework berat seperti Spring Boot dimajukan ke "saat deployment".
+Jika SnapStart diaktifkan, waktu cold start untuk fungsi [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) dapat dipercepat hingga **lebih dari 10 kali lipat**. Ini karena peluncuran runtime, kompilasi JIT, dan inisialisasi framework berat seperti Spring Boot dimajukan ke "saat deployment".
 
 Namun, ada beberapa hal yang perlu diperhatikan.
 

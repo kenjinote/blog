@@ -50,7 +50,7 @@ Dies ist ein Ansatz, der bei einem großen Problem ansetzt und rekursiv notwendi
   - Da nur die notwendigen Teilprobleme berechnet werden, ist es vorteilhaft, wenn nur auf einen Teil des gesamten Zustandsraums zugegriffen wird.
 - **Nachteile:** 
   - Es gibt Overhead durch Funktionsaufrufe aufgrund der Rekursion.
-  - Bei großer Rekursionstiefe besteht das Risiko eines Stack Overflows (besonders bei Sprachen wie Python ist Vorsicht geboten).
+  - Bei großer Rekursionstiefe besteht das Risiko eines [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) Overflows (besonders bei Sprachen wie Python ist Vorsicht geboten).
 
 ### Bottom-Up-Ansatz (Tabellierung / Tabulation)
 
@@ -151,7 +151,7 @@ int main() {
 
 ### 3-3. Bottom-Up-Ansatz (Tabellierung)
 
-Bei diesem Ansatz füllen wir ein Array von den kleinsten Werten aufwärts. Es besteht keine Gefahr eines Stack Overflows, und es läuft extrem schnell.
+Bei diesem Ansatz füllen wir ein Array von den kleinsten Werten aufwärts. Es besteht keine Gefahr eines [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) Overflows, und es läuft extrem schnell.
 
 **Python-Implementierung:**
 ```python

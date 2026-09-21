@@ -217,7 +217,7 @@ graph TD
 Als Grundlage für die Suche in Baumstrukturen gibt es die Tiefensuche (DFS) und die Breitensuche (BFS).
 
 ## 2. Tiefensuche (DFS: Depth-First Search)
-Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel (Stack) verwendet.
+Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel ([Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)) verwendet.
 
 ### Python-Implementierungsbeispiel für DFS in einer Baumstruktur
 
@@ -246,7 +246,7 @@ dfs_tree(root)
 ```
 
 ## 2. Tiefensuche (DFS: Depth-First Search)
-Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel (Stack) verwendet.
+Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel ([Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)) verwendet.
 
 ### Python-Implementierungsbeispiel für DFS in einer Baumstruktur
 
@@ -275,7 +275,7 @@ dfs_tree(root)
 ```
 
 ## 2. Tiefensuche (DFS: Depth-First Search)
-Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel (Stack) verwendet.
+Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel ([Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)) verwendet.
 
 ### Python-Implementierungsbeispiel für DFS in einer Baumstruktur
 
@@ -304,7 +304,7 @@ dfs_tree(root)
 ```
 
 ## 2. Tiefensuche (DFS: Depth-First Search)
-Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel (Stack) verwendet.
+Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel ([Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)) verwendet.
 
 ### Python-Implementierungsbeispiel für DFS in einer Baumstruktur
 
@@ -333,7 +333,7 @@ dfs_tree(root)
 ```
 
 ## 2. Tiefensuche (DFS: Depth-First Search)
-Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel (Stack) verwendet.
+Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel ([Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)) verwendet.
 
 ### Python-Implementierungsbeispiel für DFS in einer Baumstruktur
 
@@ -362,7 +362,7 @@ dfs_tree(root)
 ```
 
 ## 2. Tiefensuche (DFS: Depth-First Search)
-Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel (Stack) verwendet.
+Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel ([Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)) verwendet.
 
 ### Python-Implementierungsbeispiel für DFS in einer Baumstruktur
 
@@ -391,7 +391,7 @@ dfs_tree(root)
 ```
 
 ## 2. Tiefensuche (DFS: Depth-First Search)
-Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel (Stack) verwendet.
+Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel ([Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)) verwendet.
 
 ### Python-Implementierungsbeispiel für DFS in einer Baumstruktur
 
@@ -420,7 +420,7 @@ dfs_tree(root)
 ```
 
 ## 2. Tiefensuche (DFS: Depth-First Search)
-Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel (Stack) verwendet.
+Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel ([Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)) verwendet.
 
 ### Python-Implementierungsbeispiel für DFS in einer Baumstruktur
 
@@ -449,7 +449,7 @@ dfs_tree(root)
 ```
 
 ## 2. Tiefensuche (DFS: Depth-First Search)
-Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel (Stack) verwendet.
+Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel ([Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)) verwendet.
 
 ### Python-Implementierungsbeispiel für DFS in einer Baumstruktur
 
@@ -478,7 +478,7 @@ dfs_tree(root)
 ```
 
 ## 2. Tiefensuche (DFS: Depth-First Search)
-Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel (Stack) verwendet.
+Die Tiefensuche ist ein Algorithmus, der an einem bestimmten Knoten beginnt, so tief wie möglich vordringt und bei einer Sackgasse zum vorherigen Knoten zurückkehrt, um die Suche fortzusetzen. Durch die Verwendung rekursiver Funktionen kann er sehr einfach implementiert werden. Manchmal wird auch eine Datenstruktur namens Stapel ([Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)) verwendet.
 
 ### Python-Implementierungsbeispiel für DFS in einer Baumstruktur
 

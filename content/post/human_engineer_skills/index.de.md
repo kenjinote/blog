@@ -11,7 +11,7 @@ tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 
 # [Die 'menschlichen Ingenieurfähigkeiten', die im Zeitalter der KI-Codegenerierung gefragt sind](https://kenji.blog/de/p/human_engineer_skills/)
 
-In den letzten Jahren hat sich die Landschaft der Softwareentwicklung durch die rasante Entwicklung generativer KI (Generative AI) und großer Sprachmodelle (LLM) dramatisch verändert. Die tägliche Nutzung von GitHub Copilot und verschiedenen KI-Programmierassistenten ist zur Normalität geworden. Das Phänomen, dass „KI sofort Code generiert, wenn man Anweisungen in natürlicher Sprache gibt“, ist nicht länger Zukunftsmusik aus Science-Fiction, sondern heutige Realität.
+In den letzten Jahren hat sich die Landschaft der Softwareentwicklung durch die rasante Entwicklung generativer KI (Generative AI) und großer Sprachmodelle ([LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)) dramatisch verändert. Die tägliche Nutzung von GitHub Copilot und verschiedenen KI-Programmierassistenten ist zur Normalität geworden. Das Phänomen, dass „KI sofort Code generiert, wenn man Anweisungen in natürlicher Sprache gibt“, ist nicht länger Zukunftsmusik aus Science-Fiction, sondern heutige Realität.
 
 In einer solchen Zeit ist es nur natürlich, dass viele Ingenieure die Sorge hegen, „ihre Arbeit könnte von KI übernommen werden“. Tatsächlich werden „bloße Programmierarbeiten (Typing Code)“ wie die Erstellung von Boilerplates für routinemäßige CRUD-Anwendungen, die Implementierung einfacher Algorithmen oder das Aufrufen von APIs bekannter Bibliotheken schnell zur Standardware (Commodity).
 
@@ -19,11 +19,11 @@ Die Essenz der Softwareentwicklung besteht jedoch nicht darin, „Code einzutipp
 
 ---
 
-## 1. Die strukturellen Grenzen von Large Language Models (LLM) verstehen
+## 1. Die strukturellen Grenzen von [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (LLM) verstehen
 
 Um die Fähigkeiten von KI richtig bewerten zu können und herauszufinden, in welchen Bereichen Menschen einen Mehrwert bieten sollten, müssen wir zunächst die strukturellen Grenzen von KI (insbesondere LLMs) aus einer mathematischen und architektonischen Perspektive verstehen.
 
-### 1.1 Die Grenzen von Rechenaufwand und Kontext in der Transformer-Architektur
+### 1.1 Die Grenzen von Rechenaufwand und Kontext in der [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Architektur
 
 Die meisten heutigen LLMs basieren auf der „Transformer“-Architektur, die 2017 von Google vorgestellt wurde. Der Kern des Transformers liegt im „Self-Attention-Mechanismus“. Dieser Mechanismus berechnet, wie stark jedes Token in einer Eingabesequenz mit allen anderen Token in Beziehung steht.
 
@@ -42,7 +42,7 @@ Selbst wenn das Kontextfenster physisch vergrößert werden könnte, tritt das P
 
 ### 1.2 Eigenschaften von probabilistischen generativen Modellen und „Halluzinationen“
 
-Das Wesen eines LLM ist ein „probabilistisches generatives Modell“, das basierend auf dem eingegebenen Kontext (Prompt) und den bisherigen Generierungsergebnissen das Token vorhersagt, das mit der höchsten Wahrscheinlichkeit als Nächstes erscheint.
+Das Wesen eines [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) ist ein „probabilistisches generatives Modell“, das basierend auf dem eingegebenen Kontext (Prompt) und den bisherigen Generierungsergebnissen das Token vorhersagt, das mit der höchsten Wahrscheinlichkeit als Nächstes erscheint.
 
 $$ P(w_t | w_{1:t-1}) = \text{softmax}(W \cdot h_t) $$
 
@@ -164,7 +164,7 @@ Ingenieure müssen die „drei Säulen der Observability“ – Logs, Metriken u
 
 „Bugs, die in der lokalen oder Testumgebung nicht reproduzierbar sind, sondern nur zu Spitzenzeiten in der Produktionsumgebung auftreten“ – wie Speicherlecks, Datenbank-Deadlocks, Erschöpfung von Verbindungspools oder Netzwerk-Paketverluste – werden durch statische Analyse des Quellcodes niemals gefunden.
 
-Menschliche Ingenieure beobachten die Metriken der Produktionsumgebung, stellen Hypothesen auf, analysieren Thread-Dumps oder Heap-Dumps und identifizieren Engpässe. Eine KI kann kein Terminal öffnen, um die Prozesse eines Produktionsservers direkt zu profilieren (was aus Sicherheitsgründen auch nicht erlaubt sein sollte).
+Menschliche Ingenieure beobachten die Metriken der Produktionsumgebung, stellen Hypothesen auf, analysieren Thread-Dumps oder [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Dumps und identifizieren Engpässe. Eine KI kann kein Terminal öffnen, um die Prozesse eines Produktionsservers direkt zu profilieren (was aus Sicherheitsgründen auch nicht erlaubt sein sollte).
 Je komplexer Systeme werden, desto schneller steigt der Wert von Ingenieuren, die über „Low-Level-Wissen“ (physische Infrastruktur, Netzwerkprotokolle, OS-Kernel-Tuning) und die Fähigkeit zu „intuitiver Hypothesenbildung“ verfügen.
 
 ---
@@ -201,7 +201,7 @@ Im KI-Zeitalter entwickelt sich der Ingenieur vom „Code-Schreibkraft (Typist)�
 
 ## 7. Fazit: Die Welle reiten, anstatt die Evolution abzulehnen
 
-Das „Zeitalter der KI-Codegenerierung“ ist keine Bedrohung für Ingenieure, sondern die größte Chance der Geschichte. So wie der Übergang von Assemblersprache zu C und die Entwicklung von der Speicherverwaltung mit Zeigern zur [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) in Java stattfanden, ist die Codegenerierung durch KI lediglich ein weiterer Schritt, bei dem „das Abstraktionsniveau um eine Stufe gestiegen ist“.
+Das „Zeitalter der KI-Codegenerierung“ ist keine Bedrohung für Ingenieure, sondern die größte Chance der Geschichte. So wie der Übergang von Assemblersprache zu C und die Entwicklung von der Speicherverwaltung mit Zeigern zur [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) in [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) stattfanden, ist die Codegenerierung durch KI lediglich ein weiterer Schritt, bei dem „das Abstraktionsniveau um eine Stufe gestiegen ist“.
 
 Zukünftige Ingenieure sollten sich nicht über kleinere Spezifikationen einer bestimmten Programmiersprache oder Framework-Updates den Kopf zerbrechen, sondern ihre Ressourcen auf wichtigere, menschlichere Problemlösungen konzentrieren, wie: **„Was ist das Geschäftsproblem?“ **, ** „Wie sollten Daten aufgeteilt und verknüpft werden?“ ** und ** „Wie kann das System bei einem Ausfall schnell wiederhergestellt werden?“**
 

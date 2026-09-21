@@ -13,7 +13,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 In modern web frontend development, balancing performance and Developer Experience (DX) is one of the most critical challenges in every project. Combining **Hugo**, which boasts some of the world's fastest build speeds among static site generators (SSGs), with **Tailwind CSS**, which introduced the innovative paradigm of utility-first CSS, can be considered an ultimate answer to this challenge.
 
-Hugo is written in Go and has the astonishing performance to finish building thousands of pages in just a few seconds or even milliseconds. On the other hand, Tailwind CSS accelerates design iterations and eliminates the context switching of jumping back and forth between CSS and HTML files by allowing you to write countless predefined utility classes (such as `flex`, `text-center`, `mt-4`) directly into HTML.
+Hugo is written in [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) and has the astonishing performance to finish building thousands of pages in just a few seconds or even milliseconds. On the other hand, Tailwind CSS accelerates design iterations and eliminates the context switching of jumping back and forth between CSS and HTML files by allowing you to write countless predefined utility classes (such as `flex`, `text-center`, `mt-4`) directly into HTML.
 
 In this article, we will thoroughly and comprehensively explain the steps to introduce Tailwind CSS into a Hugo theme and further build an advanced asset pipeline (Hugo Pipes) using PostCSS, covering everything from the foundation of the architecture to mathematical performance optimization perspectives.
 
@@ -268,7 +268,7 @@ Next, we will load the above CSS file from a Hugo template and write the pipelin
 
 #### [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) Explanation and Mermaid Diagram Illustration
 
-We will diagrammatically explain the sequence of pipeline processing for how the above Go template code handles the CSS file.
+We will diagrammatically explain the sequence of pipeline processing for how the above [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) template code handles the CSS file.
 
 ```mermaid
 flowchart TD

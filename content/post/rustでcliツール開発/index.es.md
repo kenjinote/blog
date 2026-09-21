@@ -14,7 +14,7 @@ tags: ["Rust", "CLI", "clap", "tokio"]
 
 En el desarrollo de software moderno, las herramientas CLI (Interfaz de Línea de Comandos) son indispensables para mejorar drásticamente la productividad de los desarrolladores. En el pasado, los scripts de shell, Python o Ruby eran la norma, pero en los últimos años, **[Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)** ha establecido una posición sólida como el estándar de facto para el desarrollo de herramientas CLI.
 
-En este artículo, explicaremos exhaustivamente desde lo básico hasta las aplicaciones avanzadas cómo construir herramientas CLI prácticas que "funcionan extremadamente rápido y se pueden desarrollar a la velocidad de la luz" usando Rust. No solo crearemos algo que funcione, sino que cubriremos de manera integral el manejo de errores robusto a nivel comercial, peticiones a API rápidas usando procesamiento asíncrono, y la implementación de barras de progreso para mejorar la experiencia del usuario (UX).
+En este artículo, explicaremos exhaustivamente desde lo básico hasta las aplicaciones avanzadas cómo construir herramientas CLI prácticas que "funcionan extremadamente rápido y se pueden desarrollar a la velocidad de la luz" usando [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/). No solo crearemos algo que funcione, sino que cubriremos de manera integral el manejo de errores robusto a nivel comercial, peticiones a API rápidas usando procesamiento asíncrono, y la implementación de barras de progreso para mejorar la experiencia del usuario (UX).
 
 Al leer este artículo hasta el final, dominarás el siguiente stack tecnológico avanzado de Rust y serás capaz de publicar tus propias y potentes herramientas CLI al mundo.
 
@@ -430,9 +430,9 @@ Construiremos una canalización (pipeline) de [CI/CD](https://kenji.blog/es/p/ci
 
 En este artículo, hemos explicado en detalle una serie de flujos de trabajo para el desarrollo de herramientas CLI usando [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/).
 
-1. **Políticas de diseño**: Confirmamos la seguridad y velocidad de Rust, y las ventajas de un único binario.
+1. **Políticas de diseño**: Confirmamos la seguridad y velocidad de [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), y las ventajas de un único binario.
 2. **Selección de crates**: Obtuvimos potentes armas como `clap`, `tokio`, `serde`, `indicatif`, `thiserror` y `anyhow`.
 3. **Ventajas matemáticas del procesamiento concurrente**: Basándonos en la Ley de Amdahl y la Ley de Little, comprendimos teóricamente el poder del procesamiento asíncrono.
 4. **Implementación y optimización**: Empaquetamos conocimientos prácticos desde un manejo de errores robusto hasta la optimización extrema de binarios.
 
-El desarrollo de CLI con [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) es una experiencia maravillosa donde se puede garantizar la calidad del software desde la fase de diseño a través del diálogo con el compilador. Basándote en el código base creado en esta ocasión, ¡por favor, desarrolla tu propia herramienta CLI original y compártela con el mundo! ¡Feliz codificación en Rust!
+El desarrollo de CLI con [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) es una experiencia maravillosa donde se puede garantizar la calidad del software desde la fase de diseño a través del diálogo con el compilador. Basándote en el código base creado en esta ocasión, ¡por favor, desarrolla tu propia herramienta CLI original y compártela con el mundo! ¡Feliz codificación en [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/)!

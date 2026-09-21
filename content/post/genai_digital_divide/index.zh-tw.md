@@ -14,13 +14,13 @@ tags: ["Generative AI", "Digital Divide", "LLM", "Productivity"]
 
 自網際網路普及以來，我們經常聽到「數位落差（資訊格差）」這個詞。早期的數位落差主要與「實體的存取權」有關。也就是說，是否擁有電腦或高速網路連線，左右了人們獲取資訊和經濟機會，這是一個簡單的結構。隨後，隨著智慧型手機和寬頻網路的普及與大眾化，數位落差的焦點轉移到了「IT 資訊素養（資訊活用能力）」。例如是否能使用搜尋引擎準確找出資訊、是否能熟練操作軟體等，這屬於軟體及認知層面。
 
-然而，2020 年代突然崛起的生成式 AI（Generative AI）與大型語言模型（LLM: Large Language Models）的進化，正從根本上顛覆這個數位落差的概念。我們現在所面臨的，不僅僅是單純的「資訊存取落差」或「軟體操作技能落差」。而是「協調編排（指揮與整合）AI 能力的落差」，它將指數級地放大個人的生產力，又或者讓人被 AI 的進化拋在後頭而失去相對價值，這是一個極度嚴重且不可逆的「第三次數位落差」。
+然而，2020 年代突然崛起的生成式 AI（Generative AI）與大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/): [Large Language Models](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的進化，正從根本上顛覆這個數位落差的概念。我們現在所面臨的，不僅僅是單純的「資訊存取落差」或「軟體操作技能落差」。而是「協調編排（指揮與整合）AI 能力的落差」，它將指數級地放大個人的生產力，又或者讓人被 AI 的進化拋在後頭而失去相對價值，這是一個極度嚴重且不可逆的「第三次數位落差」。
 
 本文將從生產力的數學模型、硬體架構與成本，以及人類的認知層面等三個維度，極其詳細地剖析生成式 AI 所帶來的這場新數位落差的真面目。
 
 ## 2. 從「存取」到「協調編排」：第三次數位落差的到來
 
-過去的軟體工具本質上是「被動的工具」。對於使用者的明確輸入，回傳決定性的結果，這是傳統軟體的極限（例如：在試算表軟體中輸入公式以獲得計算結果）。但是，現在的生成式 AI，特別是基於 Transformer 架構的 LLM（如 GPT-4、Claude 3.5、Llama 3 等），表現得就像是「主動智慧的片段」。
+過去的軟體工具本質上是「被動的工具」。對於使用者的明確輸入，回傳決定性的結果，這是傳統軟體的極限（例如：在試算表軟體中輸入公式以獲得計算結果）。但是，現在的生成式 AI，特別是基於 [Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 架構的 LLM（如 GPT-4、Claude 3.5、Llama 3 等），表現得就像是「主動智慧的片段」。
 
 由於這種典範轉移，人類被要求的技能組合，已從「操作工具的能力」急劇轉變為「組合多個 AI 代理或工具，並設計與指揮自主工作流程的能力（AI Orchestration）」。這可以稱為「AI 協調編排素養」。
 
@@ -95,7 +95,7 @@ $$
 
 在持續進行大規模資料處理或 RAG（Retrieval-Augmented Generation）向量化時，這種變動成本對個人開發者或中小企業來說，可能成為致命的負擔。
 
-### 本機 LLM 與 VRAM 的障礙
+### 本機 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 與 VRAM 的障礙
 基於規避雲端成本與資料隱私的考量，在本機運行 Meta 的 Llama 3 或 Mistral 等開放權重模型的需求日益增加。但在此面臨了「VRAM（視訊記憶體）障礙」的實體落差。
 
 LLM 的推論速度比起 GPU 的運算效能（FLOPS），更強烈依賴於記憶體頻寬（Memory Bandwidth）（受限於記憶體的特性）。如果將模型的參數數量設為 $P$，精確度設為 16bit（2 個位元組），那麼光是將模型載入記憶體就至少需要 $2P$ 位元組的 VRAM。例如 700 億（70B）參數的模型，就需要 140GB 以上的 VRAM。

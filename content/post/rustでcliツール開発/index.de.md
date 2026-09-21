@@ -14,9 +14,9 @@ tags: ["Rust", "CLI", "clap", "tokio"]
 
 In der modernen Softwareentwicklung sind CLI-Tools (Command Line Interface) unverzichtbar geworden, da sie die Produktivität der Entwickler drastisch steigern. Früher waren Shell-Skripte, Python oder Ruby die Norm, aber in den letzten Jahren hat sich **[Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)** fest als De-facto-Standard für die Entwicklung von CLI-Tools etabliert.
 
-In diesem Artikel werden wir ausführlich erklären, wie man von den Grundlagen bis zu fortgeschrittenen Techniken ein praktisches CLI-Tool mit Rust erstellt, das "blitzschnell läuft und blitzschnell entwickelt wird". Wir werden nicht nur etwas bauen, das funktioniert, sondern alles umfassend abdecken: robuste Fehlerbehandlung auf kommerziellem Niveau, schnelle API-Anfragen mithilfe asynchroner Verarbeitung und die Implementierung eines Fortschrittsbalkens zur Verbesserung der Benutzererfahrung (UX).
+In diesem Artikel werden wir ausführlich erklären, wie man von den Grundlagen bis zu fortgeschrittenen Techniken ein praktisches CLI-Tool mit [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) erstellt, das "blitzschnell läuft und blitzschnell entwickelt wird". Wir werden nicht nur etwas bauen, das funktioniert, sondern alles umfassend abdecken: robuste Fehlerbehandlung auf kommerziellem Niveau, schnelle API-Anfragen mithilfe asynchroner Verarbeitung und die Implementierung eines Fortschrittsbalkens zur Verbesserung der Benutzererfahrung (UX).
 
-Wenn Sie diesen Artikel bis zum Ende lesen, werden Sie den folgenden fortgeschrittenen Rust-Technologie-Stack beherrschen und in der Lage sein, Ihre eigenen leistungsstarken CLI-Tools für die Welt zu veröffentlichen.
+Wenn Sie diesen Artikel bis zum Ende lesen, werden Sie den folgenden fortgeschrittenen Rust-Technologie-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) beherrschen und in der Lage sein, Ihre eigenen leistungsstarken CLI-Tools für die Welt zu veröffentlichen.
 
 ---
 
@@ -430,9 +430,9 @@ Wir richten eine [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-be
 
 In diesem Artikel haben wir den gesamten Ablauf der CLI-Tool-Entwicklung mit [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) im Detail erklärt.
 
-1. **Design-Richtlinien**: Wir haben die Sicherheit und Geschwindigkeit von Rust sowie die Vorteile einzelner Binaries bestätigt.
+1. **Design-Richtlinien**: Wir haben die Sicherheit und Geschwindigkeit von [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) sowie die Vorteile einzelner Binaries bestätigt.
 2. **Auswahl der Crates**: Wir haben uns mit leistungsstarken Werkzeugen wie `clap`, `tokio`, `serde`, `indicatif`, `thiserror` und `anyhow` ausgestattet.
 3. **Mathematischer Vorteil paralleler Verarbeitung**: Basierend auf dem Amdahlschen Gesetz und dem Gesetz von Little haben wir die theoretische Kraft asynchroner Verarbeitung verstanden.
 4. **Implementierung und Optimierung**: Wir haben praktisches Know-how gesammelt, von robuster Fehlerbehandlung bis hin zu extremer Binary-Optimierung.
 
-Die CLI-Entwicklung in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) ist eine großartige Erfahrung, bei der die Softwarequalität durch die Interaktion mit dem Compiler bereits in der Designphase sichergestellt werden kann. Basierend auf dem in diesem Tutorial erstellten Basiscode sollten Sie unbedingt Ihr eigenes originelles CLI-Tool entwickeln und es mit der Welt teilen! Happy Rust Coding!
+Die CLI-Entwicklung in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) ist eine großartige Erfahrung, bei der die Softwarequalität durch die Interaktion mit dem Compiler bereits in der Designphase sichergestellt werden kann. Basierend auf dem in diesem Tutorial erstellten Basiscode sollten Sie unbedingt Ihr eigenes originelles CLI-Tool entwickeln und es mit der Welt teilen! Happy [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) Coding!

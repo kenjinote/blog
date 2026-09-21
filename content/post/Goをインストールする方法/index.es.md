@@ -13,9 +13,9 @@ description: 'Explicamos para principiantes cómo instalar "Go (Golang)", un len
 
 
 # Introducción
-Go es un lenguaje de programación relativamente nuevo publicado por Google en 2009.
+[Go](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) es un lenguaje de programación relativamente nuevo publicado por Google en 2009.
 El compilador, las herramientas y las bibliotecas de Go se publican como código abierto.
-Además, Go es un lenguaje de tipado estático como C y Java, pero es un lenguaje que no utiliza punteros como el lenguaje C.
+Además, Go es un lenguaje de tipado estático como C y [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), pero es un lenguaje que no utiliza punteros como el lenguaje C.
 
 # Método de instalación
 
@@ -67,7 +67,7 @@ Al ejecutar `hello.exe`, se mostrará `Hello, world!`.
 
 [http://go.shibu.jp/](http://go.shibu.jp/)
 
-Las explicaciones necesarias para aprender Go están concentradas en el enlace anterior (versión traducida al japonés).
+Las explicaciones necesarias para aprender [Go](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) están concentradas en el enlace anterior (versión traducida al japonés).
 Dado que la tecnología relacionada con Go es abierta, es tan completa que no es necesario comprar textos en papel.
 
 ¡Entonces, que disfrutes de tu vida con Go!

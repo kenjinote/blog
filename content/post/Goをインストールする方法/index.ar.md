@@ -9,9 +9,9 @@ categories: ["programming"]
 description: 'نشرح للمبتدئين كيفية تثبيت لغة البرمجة ''Go (Golang)'' المطورة من قبل جوجل. مثالي كمقدمة أولى للغة Go، حيث يغطي العملية من الحصول على المثبت، إنشاء برنامج Hello World، تجميعه، وحتى خطوات التنفيذ.'
 ---
 # مقدمة
-Go هي لغة برمجة حديثة نسبيًا أصدرتها Google في عام 2009.
+[Go](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) هي لغة برمجة حديثة نسبيًا أصدرتها Google في عام 2009.
 إن المترجم والأدوات والمكتبات الخاصة بـ Go مفتوحة المصدر.
-بالإضافة إلى ذلك، Go هي لغة ذات كتابة ثابتة مثل C و Java، ولكنها لا تستخدم المؤشرات مثل لغة C.
+بالإضافة إلى ذلك، Go هي لغة ذات كتابة ثابتة مثل C و [Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)، ولكنها لا تستخدم المؤشرات مثل لغة C.
 
 # طريقة التثبيت
 
@@ -63,7 +63,7 @@ func main() {
 
 [http://go.shibu.jp/](http://go.shibu.jp/)
 
-التفسيرات اللازمة لتعلم Go مجمعة في الرابط أعلاه.
+التفسيرات اللازمة لتعلم [Go](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) مجمعة في الرابط أعلاه.
 التقنيات المتعلقة بـ Go مفتوحة ومكتملة لدرجة أنك لست بحاجة إلى شراء نصوص ورقية.
 
 إذن، استمتع بحياتك مع Go!

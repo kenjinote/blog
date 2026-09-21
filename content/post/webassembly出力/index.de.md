@@ -17,9 +17,9 @@ In diesem Artikel beginnen wir mit den Grundlagen von WebAssembly und erläutern
 
 ## 2. Überblick und Architektur von [WebAssembly](https://kenji.blog/de/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/de/p/webassembly-wasm-current-future/))
 
-WebAssembly ist ein binäres Befehlsformat für eine stackbasierte virtuelle Maschine. Es wurde als "portables Kompilierungsziel" entworfen, das aus Sprachen wie C/C++, [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), Go, Zig und anderen kompiliert werden kann, und zielt darauf ab, im Webbrowser mit nahezu nativer Geschwindigkeit ausgeführt zu werden.
+WebAssembly ist ein binäres Befehlsformat für eine stackbasierte virtuelle Maschine. Es wurde als "portables Kompilierungsziel" entworfen, das aus Sprachen wie C/C++, [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), [Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/), Zig und anderen kompiliert werden kann, und zielt darauf ab, im Webbrowser mit nahezu nativer Geschwindigkeit ausgeführt zu werden.
 
-Das folgende Diagramm veranschaulicht den groben Ablauf der Toolchain, vom Generieren von WebAssembly aus C++ und Rust bis hin zur Ausführung im Browser.
+Das folgende Diagramm veranschaulicht den groben Ablauf der Toolchain, vom Generieren von WebAssembly aus C++ und [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) bis hin zur Ausführung im Browser.
 
 ```mermaid
 graph TD
@@ -141,7 +141,7 @@ Module.onRuntimeInitialized = () => {
 
 [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) bietet erstklassige Unterstützung für [WebAssembly](https://kenji.blog/de/p/webassembly-wasm-current-future/). Mit den Tools `wasm-bindgen` und `wasm-pack` ist eine fortschrittliche Interaktion zwischen JavaScript und [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) möglich. Während der Ansatz von Emscripten darin besteht, "eine riesige C/C++-Laufzeitumgebung in den Browser zu bringen", verfolgt `wasm-pack` von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) den Ansatz, "nur das absolut notwendige Binding (JS Glue-Code) zu generieren".
 
-### Rust Implementierungscode
+### [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) Implementierungscode
 
 Erstellen Sie ein Cargo-Projekt und geben Sie `cdylib` und `wasm-bindgen` in der Datei `Cargo.toml` an.
 
@@ -282,12 +282,12 @@ Die magische Zahl der Datei beginnt immer mit `0x00 0x61 0x73 0x6D` (`\0asm`). J
 
 * **Type Section**: Definiert alle verwendeten Funktionssignaturen (Typen der Argumente und Rückgabewerte).
 * **Import Section**: Eine Liste von Funktionen und Speicherbereichen, die [Wasm](https://kenji.blog/de/p/webassembly-wasm-current-future/) von der JavaScript-Umgebung zur Verfügung gestellt werden. Wenn Sie beispielsweise `console.log` in C++ aufrufen möchten, wird dies hier deklariert.
-* **Code Section**: Hier sind die eigentlichen Bytecode-Befehle (wie `i32.add`, `call`, `loop` etc.) gespeichert. Da es sich um eine Stack-Maschine handelt, werden Operanden auf den Stack gelegt, bevor ein Rechenbefehl aufgerufen wird.
+* **Code Section**: Hier sind die eigentlichen Bytecode-Befehle (wie `i32.add`, `call`, `loop` etc.) gespeichert. Da es sich um eine [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Maschine handelt, werden Operanden auf den Stack gelegt, bevor ein Rechenbefehl aufgerufen wird.
 * **Data Section**: Statische String-Literale oder Initialisierungsdaten, die im C++- oder [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Code definiert sind, werden aus dieser Sektion in den linearen Speicher geladen.
 
 [Wasm](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Engines im Browser beschleunigen die Startzeit dramatisch, indem sie diese Sektionen per "Streaming-Kompilierung" verarbeiten (während des Downloads werden sie parallel in Maschinencode übersetzt).
 
-## 9. C++ vs. Rust: Welches sollte man wählen?
+## 9. C++ vs. [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/): Welches sollte man wählen?
 
 Die Entscheidung, ob Sie C++ oder Rust zur Generierung von [WebAssembly](https://kenji.blog/de/p/webassembly-wasm-current-future/) verwenden, hängt stark von den Projektanforderungen und den vorhandenen Ressourcen ab.
 
@@ -296,7 +296,7 @@ Die Entscheidung, ob Sie C++ oder Rust zur Generierung von [WebAssembly](https:/
 * Bei Spieleportierungsprojekten, die die Emulationsschicht von Emscripten (die Grafik-APIs wie OpenGL in WebGL übersetzt) direkt nutzen möchten.
 * Wenn virtualisierte OS-Funktionen erforderlich sind, wie z. B. die Dateisystememulation (MEMFS).
 
-**Wann man Rust / wasm-pack wählen sollte**:
+**Wann man [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) / wasm-pack wählen sollte**:
 * Wenn Sie ein völlig neues, hochperformantes Modul als Teil einer Webanwendung von Grund auf entwickeln.
 * Wenn Sie eine starke und typsichere Integration mit dem JavaScript-Ökosystem (NPM-Module und TypeScript) wünschen.
 * Wenn Sie eine vergleichsweise kleine Binärgröße und ein sicheres Speichermanagement (Rusts Ownership-Modell) benötigen.
@@ -304,7 +304,7 @@ Die Entscheidung, ob Sie C++ oder Rust zur Generierung von [WebAssembly](https:/
 
 ## 10. Zusammenfassung
 
-WebAssembly ist eine innovative Technologie, um rechenintensive Prozesse im Browser auszuführen. Sowohl der Full-Stack-Portierungsansatz mit C++ und Emscripten als auch der modulare, eng mit JavaScript gekoppelte Ansatz mit Rust und wasm-bindgen haben ihre jeweiligen Stärken.
+WebAssembly ist eine innovative Technologie, um rechenintensive Prozesse im Browser auszuführen. Sowohl der Full-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Portierungsansatz mit C++ und Emscripten als auch der modulare, eng mit JavaScript gekoppelte Ansatz mit Rust und wasm-bindgen haben ihre jeweiligen Stärken.
 
 Bei Berechnungen wie der der Mandelbrot-Menge kann Wasm im Vergleich zu reinem JavaScript Geschwindigkeitsverbesserungen um ein Vielfaches oder sogar ein Vielfaches von Zehn erwarten lassen. Um jedoch die volle Performance abzurufen, ist es unerlässlich, die Mechanismen der Speichergrenzen zwischen Wasm und JS richtig zu verstehen und ein Design zu entwerfen, das unnötige Speicherkopien vermeidet.
 

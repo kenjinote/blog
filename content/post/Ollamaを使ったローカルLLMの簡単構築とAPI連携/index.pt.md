@@ -9,7 +9,7 @@ categories: ["ai", "programming", "api"]
 tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 ---
 
-# Introdução: Por que precisamos de um LLM local?
+# Introdução: Por que precisamos de um [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) local?
 
 Com a ascensão dos Grandes Modelos de Linguagem (LLMs), nossas vidas e métodos de desenvolvimento passaram por mudanças drásticas. Poderosos serviços de IA baseados em nuvem, como ChatGPT, Claude e Gemini, continuam evoluindo diariamente, oferecendo capacidades de raciocínio altamente avançadas. No entanto, um LLM baseado em nuvem não é necessariamente a melhor opção para todos os casos de uso. Os LLMs em nuvem apresentam os seguintes desafios:
 
@@ -26,15 +26,15 @@ Neste artigo, explicaremos detalhadamente sobre o "**Ollama**", uma ferramenta q
 
 # O que é o Ollama? Sua Arquitetura Interna
 
-O Ollama é uma plataforma para executar e gerenciar facilmente grandes modelos de linguagem de código aberto (Llama 3, Phi-3, Mistral, Gemma, etc.) em um ambiente local. Anteriormente, a construção de um ambiente LLM local exigia procedimentos extremamente complexos, como configurar o ambiente Python, instalar o kit de ferramentas CUDA, resolver dependências do PyTorch, baixar arquivos de modelos gigantescos do Hugging Face e convertê-los de formato (de Safetensors para GGUF, por exemplo).
+O Ollama é uma plataforma para executar e gerenciar facilmente grandes modelos de linguagem de código aberto (Llama 3, Phi-3, Mistral, Gemma, etc.) em um ambiente local. Anteriormente, a construção de um ambiente [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) local exigia procedimentos extremamente complexos, como configurar o ambiente Python, instalar o kit de ferramentas CUDA, resolver dependências do PyTorch, baixar arquivos de modelos gigantescos do Hugging Face e convertê-los de formato (de Safetensors para GGUF, por exemplo).
 
 O Ollama oculta essas complexidades, permitindo que você lide com LLMs com a mesma facilidade de uso do [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/). Com um único comando, você pode baixar o modelo (`pull`), executá-lo (`run`) e iniciá-lo como um servidor HTTP.
 
 ## Tecnologia Principal: Wrapper do llama.cpp
 
-O backend do mecanismo de inferência do Ollama é o "**llama.cpp**", uma biblioteca de inferência de LLM de alta velocidade implementada em C/C++. O llama.cpp tem a capacidade de executar o modelo maximizando o desempenho do hardware, seja no Apple Silicon (Metal), GPU NVIDIA (CUDA), GPU AMD (ROCm) ou até mesmo em ambientes que usam apenas a CPU.
+O backend do mecanismo de inferência do Ollama é o "**llama.cpp**", uma biblioteca de inferência de [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) de alta velocidade implementada em C/C++. O llama.cpp tem a capacidade de executar o modelo maximizando o desempenho do hardware, seja no Apple Silicon (Metal), GPU NVIDIA (CUDA), GPU AMD (ROCm) ou até mesmo em ambientes que usam apenas a CPU.
 
-O Ollama inclui o llama.cpp internamente e adota uma arquitetura onde o processo do servidor, escrito em linguagem Go, fornece uma API REST, chamando o mecanismo de inferência do llama.cpp em segundo plano.
+O Ollama inclui o llama.cpp internamente e adota uma arquitetura onde o processo do servidor, escrito em linguagem [Go](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), fornece uma API REST, chamando o mecanismo de inferência do llama.cpp em segundo plano.
 
 O diagrama Mermaid abaixo ilustra a arquitetura geral do Ollama.
 
@@ -341,7 +341,7 @@ Você pode executar localmente as poderosas funcionalidades de cadeias (*chains*
 
 # Integração com Aplicações Node.js
 
-Para engenheiros front-end e desenvolvedores full-stack, a capacidade de chamar um LLM local a partir do ambiente TypeScript/Node.js é uma enorme vantagem. Utilizaremos o pacote NPM oficial `ollama`.
+Para engenheiros front-end e desenvolvedores full-stack, a capacidade de chamar um [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) local a partir do ambiente TypeScript/Node.js é uma enorme vantagem. Utilizaremos o pacote NPM oficial `ollama`.
 
 ## Instalação
 
@@ -421,7 +421,7 @@ app.listen(3000, () => {
 
 # Métricas de Desempenho e Análise Matemática
 
-Para prover um LLM local em um nível viável para produção, é indispensável analisar latência e taxa de transferência (*throughput*). As respostas da API do Ollama contêm métricas detalhadas sobre o desempenho.
+Para prover um [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) local em um nível viável para produção, é indispensável analisar latência e taxa de transferência (*throughput*). As respostas da API do Ollama contêm métricas detalhadas sobre o desempenho.
 
 ## Modelo de Cálculo para a Velocidade de Geração de Tokens
 
@@ -495,7 +495,7 @@ Ao integrar as solicitações de API do Ollama em scripts Python e Shell, você 
 
 Com a chegada do Ollama, a barreira de entrada para introduzir LLMs locais caiu drasticamente. A combinação de uma estrutura de comandos simples, como operar contêineres [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/), com uma API REST facilmente acessível a partir de aplicativos externos, é o atual padrão de mercado no desenvolvimento de IA local, sem exagero.
 
-Desenvolvedores que sofrem com as restrições de custos e segurança dos LLMs em nuvem devem aproveitar as etapas introduzidas neste artigo para tentar construir um ambiente LLM local usando o Ollama e integrá-lo em seus aplicativos. Vocês poderão sentir o potencial da IA de maneira muito mais livre e próxima.
+Desenvolvedores que sofrem com as restrições de custos e segurança dos LLMs em nuvem devem aproveitar as etapas introduzidas neste artigo para tentar construir um ambiente [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) local usando o Ollama e integrá-lo em seus aplicativos. Vocês poderão sentir o potencial da IA de maneira muito mais livre e próxima.
 
 
 

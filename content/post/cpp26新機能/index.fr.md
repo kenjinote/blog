@@ -320,7 +320,7 @@ int main() {
 }
 ```
 
-## 6.2 Hazard Pointers et RCU (Read-Copy Update)
+## 6.2 Hazard [Pointer](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)s et RCU (Read-Copy Update)
 
 En tant que fonctionnalités standard soutenant l'implémentation de structures de données non bloquantes (lock-free), les **Hazard Pointers** (`std::hazard_pointer`) et le **RCU** (`std::rcu`) ont été standardisés. Cela a considérablement abaissé la barrière pour l'implémentation de structures de données concurrentes à hautes performances en C++.
 
@@ -353,7 +353,7 @@ C++26 est véritablement une version historique où les "fonctionnalités de rê
 *   Grâce à la **réflexion**, la complexité de la métaprogrammation est dissipée et un accès à l'AST en $O(1)$ est réalisé.
 *   Grâce à la **programmation par contrat**, les préconditions et postconditions des fonctions peuvent être explicites, permettant de construire des programmes robustes.
 *   Grâce au **filtrage par motif**, les branchements complexes et les transitions d'état s'écrivent de manière intuitive et sécurisée.
-*   Grâce aux **Senders/Receivers** et aux **RCU / Hazard Pointers**, le traitement concurrent exploitant les performances extrêmes devient standard.
+*   Grâce aux **Senders/Receivers** et aux **RCU / Hazard [Pointer](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)s**, le traitement concurrent exploitant les performances extrêmes devient standard.
 
 En utilisant ces fonctionnalités de manière appropriée, il devient possible de réaliser la "Zero-overhead Abstraction", qui est la plus grande force de C++, à un niveau encore plus élevé et avec un code incroyablement propre.
 

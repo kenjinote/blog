@@ -12,7 +12,7 @@ description: 'A detailed guide on migrating from a dynamic CMS like WordPress to
 
 In modern web development and blog management, site loading speed, security, and maintainability have become extremely crucial factors. For a long time, "WordPress" has boasted an overwhelming market share as the foundation for blogs and corporate sites, and is loved by many users for its flexible plugin ecosystem and intuitive admin interface. However, because it involves communication with a database and dynamic page generation on the server side (processed by PHP), it also faces challenges such as vulnerability to sudden traffic spikes and display delays (latency).
 
-Therefore, "Static Site Generators (SSG)" have been rapidly gaining popularity in recent years. In this article, among the many SSGs, we will delve deeply into "**Hugo**", which is developed in Go and known for its overwhelming build speed. We will thoroughly explain everything from the technical architecture comparison with dynamic CMS (Content Management System) like WordPress, to specific migration procedures, performance evaluation using mathematical models, and Hugo's unique directory structure and template lookup order.
+Therefore, "Static Site Generators (SSG)" have been rapidly gaining popularity in recent years. In this article, among the many SSGs, we will delve deeply into "**Hugo**", which is developed in [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) and known for its overwhelming build speed. We will thoroughly explain everything from the technical architecture comparison with dynamic CMS (Content Management System) like WordPress, to specific migration procedures, performance evaluation using mathematical models, and Hugo's unique directory structure and template lookup order.
 
 ---
 
@@ -189,7 +189,7 @@ To output WordPress data for Hugo, using a dedicated plugin is the easiest and m
 2. **Custom Script utilizing the WordPress API**
    This is a method of writing a script in Python, Node.js, etc., that calls the WordPress [REST API](https://kenji.blog/en/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/en/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) (`/wp-json/wp/v2/posts`), parses the JSON data, and generates Markdown files yourself. It is effective for sites that heavily use complex custom fields (like ACF) that plugins cannot fully handle.
 3. **Utilizing the wp2hugo Tool**
-   There is also an approach using CLI tools written in Go, etc., to convert directly from WordPress export XML files (WXR) to Hugo format.
+   There is also an approach using CLI tools written in [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), etc., to convert directly from WordPress export XML files (WXR) to Hugo format.
 
 ### 4.2 Maintaining Permalink (URL) Structure
 
@@ -212,7 +212,7 @@ These can be bulk-deleted using a replacement script (sed or Python), or migrate
 
 ## 5. Hugo CLI Tools and Build/Deployment
 
-Once the migration work is complete, it's finally time to build the site using Hugo and publish it to the world. Hugo, provided as a Go binary, boasts astonishing speed, completing builds in just seconds even for sites with thousands or tens of thousands of pages.
+Once the migration work is complete, it's finally time to build the site using Hugo and publish it to the world. Hugo, provided as a [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) binary, boasts astonishing speed, completing builds in just seconds even for sites with thousands or tens of thousands of pages.
 
 ### 5.1 Starting the Local Development Server
 
@@ -315,7 +315,7 @@ With Hugo, you only need to update the tool itself as necessary, and since the s
 
 ## 7. Conclusion
 
-In this article, we thoroughly explained the migration from a dynamic CMS like WordPress to the powerful Go-based static site generator "Hugo", covering everything from technical architecture differences and performance proofs using mathematical models, to specific migration procedures.
+In this article, we thoroughly explained the migration from a dynamic CMS like WordPress to the powerful [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)-based static site generator "Hugo", covering everything from technical architecture differences and performance proofs using mathematical models, to specific migration procedures.
 
 While migrating to a static site generator requires an initial learning cost (Git operations, Markdown syntax, executing CLI commands from a terminal, understanding template engine specifications, etc.), it brings returns that more than compensate for it: "overwhelming display speed", "robust security", and "maintenance-free" operation.
 

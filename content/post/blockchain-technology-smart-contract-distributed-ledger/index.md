@@ -109,13 +109,13 @@ $$
 上記の式において、$S_t$ は現在のイーサリアムのグローバルな状態（各アカウントの残高やコントラクトのストレージ）、$T$ はトランザクション、$\Upsilon$ はEVMによる状態遷移関数、そして $S_{t+1}$ はトランザクション実行後の新しい状態を示します。
 
 EVMの内部構造は、主に以下の領域に分かれています。
-- ** スタック (Stack) ** : 最大1024要素のLIFO（後入れ先出し）データ構造。256ビット長のワードサイズ。各種演算のオペランドを保持します。
+- ** [スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/) ([Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)) ** : 最大1024要素のLIFO（後入れ先出し）データ構造。256ビット長のワードサイズ。各種演算のオペランドを保持します。
 - ** メモリ (Memory) ** : トランザクション実行中のみ一時的に保持される揮発性のバイト配列。
 - ** ストレージ (Storage) ** : コントラクトごとに割り当てられる永続的なデータ領域。キー・バリュー型（256-bit to 256-bit）のデータベースで構成されており、書き込み操作に高いガス（手数料）コストがかかります。
 
 ## 4. Solidityによるスマートコントラクトの実装
 
-スマートコントラクトは、通常 ** Solidity ** というオブジェクト指向型の高級言語で記述され、EVMのバイトコードにコンパイルされてデプロイされます。
+スマートコントラクトは、通常 ** Solidity ** という[オブジェクト指向](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)型の高級言語で記述され、EVMのバイトコードにコンパイルされてデプロイされます。
 
 ### 4.1 投票システムの実装例
 
@@ -173,7 +173,7 @@ contract Voting {
 
 ## 5. スマートコントラクトの[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)とセキュリティ
 
-ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーン上のコードは一度デプロイすると簡単に修正できない不変性を持つため、コードのバグや脆弱性は致命的な資金流出（ハッキング）に直結します。
+ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)チェーン上のコードは一度デプロイすると簡単に修正できない[不変性](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)を持つため、コードのバグや脆弱性は致命的な資金流出（ハッキング）に直結します。
 
 ### 5.1 再入攻撃 (Reentrancy Attack)
 

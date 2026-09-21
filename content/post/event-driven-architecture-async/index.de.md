@@ -110,7 +110,7 @@ const main = async () => {
 main();
 ```
 
-Der Vorteil der Event Loop besteht darin, dass keine Sperrverwaltung für den gemeinsamen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) erforderlich ist. Wenn jedoch CPU-intensive, schwere Aufgaben auf dem Call Stack ausgeführt werden, wird die gesamte Event Loop blockiert, und das System läuft Gefahr, in einen Stillstand zu geraten (Blockierung der Event Loop). Die Komplexität der Aufgaben sollte auf leichte Aufgaben von $ O(1) $ bis $ O(N) $ beschränkt bleiben.
+Der Vorteil der Event Loop besteht darin, dass keine Sperrverwaltung für den gemeinsamen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) erforderlich ist. Wenn jedoch CPU-intensive, schwere Aufgaben auf dem Call [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) ausgeführt werden, wird die gesamte Event Loop blockiert, und das System läuft Gefahr, in einen Stillstand zu geraten (Blockierung der Event Loop). Die Komplexität der Aufgaben sollte auf leichte Aufgaben von $ O(1) $ bis $ O(N) $ beschränkt bleiben.
 
 ---
 
@@ -141,7 +141,7 @@ flowchart LR
 
 ### 3.2 Implementierungsbeispiel eines Actors mit [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)
 
-In der Systemprogrammiersprache Rust können Sie leistungsstarke asynchrone Crates wie `tokio` und `actix` verwenden, um das Actor-Modell zu erstellen. Hier zeigen wir ein einfaches Actor-Pattern-Implementierungsbeispiel unter Verwendung eines `mpsc`-Kanals (Multi-Producer, Single-Consumer).
+In der Systemprogrammiersprache [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) können Sie leistungsstarke asynchrone Crates wie `tokio` und `actix` verwenden, um das Actor-Modell zu erstellen. Hier zeigen wir ein einfaches Actor-Pattern-Implementierungsbeispiel unter Verwendung eines `mpsc`-Kanals (Multi-Producer, Single-Consumer).
 
 ```rust
 use std::sync::Arc;

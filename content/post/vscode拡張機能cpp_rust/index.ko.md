@@ -11,7 +11,7 @@ tags: ["VSCode", "C++", "Rust", "Editor"]
 
 # 들어가며
 
-현대 시스템 프로그래밍에서 C++와 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 가장 중요한 언어로서 확고한 위치를 차지하고 있습니다. 오랜 실적과 방대한 생태계를 가지며, OS나 게임 엔진, 고빈도 매매(HFT) 시스템 등에서 필수적인 C++. 그리고 소유권(Ownership) 모델에 의한 메모리 안전성과 모던한 언어 사양으로 인해 급속히 보급되고 있으며, Linux 커널에도 채택이 진행되고 있는 Rust. 이 두 언어로 개발을 진행할 때, 에디터의 선택과 설정은 개발 생산성에 직결됩니다.
+현대 시스템 프로그래밍에서 C++와 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 가장 중요한 언어로서 확고한 위치를 차지하고 있습니다. 오랜 실적과 방대한 생태계를 가지며, OS나 게임 엔진, 고빈도 매매(HFT) 시스템 등에서 필수적인 C++. 그리고 소유권(Ownership) 모델에 의한 메모리 안전성과 모던한 언어 사양으로 인해 급속히 보급되고 있으며, Linux 커널에도 채택이 진행되고 있는 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/). 이 두 언어로 개발을 진행할 때, 에디터의 선택과 설정은 개발 생산성에 직결됩니다.
 
 Visual Studio Code(VSCode)는 높은 확장성과 가벼움 덕분에 전 세계의 시스템 프로그래머들에게 사랑받고 있습니다. 하지만 설치 직후의 VSCode는 어디까지나 단순한 텍스트 에디터에 불과합니다. C++나 Rust의 진정한 힘을 이끌어내기 위해서는 언어의 시맨틱스를 깊이 이해하는 언어 서버나, 바이너리 수준에서 상태를 추적하는 디버거 등 적절한 확장 프로그램 도입과 치밀한 설정이 필수적입니다.
 
@@ -59,7 +59,7 @@ C++ 개발자에게 가장 중요한 선택 중 하나가 C++ 언어 기능을 �
 
 #### ms-vscode.cpptools가 아닌 clangd를 선택하는 이유
 - **정밀도 높은 분석**: Clang의 AST(추상 구문 트리)를 직접 다루기 때문에 SFINAE(Substitution Failure Is Not An Error)를 다용한 복잡한 템플릿 인스턴스화나, 중첩된 매크로 전개를 정확하게 평가합니다.
-- **백그라운드 인덱스를 통한 고속화**: 프로젝트 전체의 심볼 정보를 백그라운드에서 사전 계산(인덱스화)하기 때문에 '정의로 이동(Go to Definition)'이나 '모든 참조 찾기(Find All References)'가 거대한 프로젝트라도 순식간에 완료됩니다.
+- **백그라운드 인덱스를 통한 고속화**: 프로젝트 전체의 심볼 정보를 백그라운드에서 사전 계산(인덱스화)하기 때문에 '정의로 이동([Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) to Definition)'이나 '모든 참조 찾기(Find All References)'가 거대한 프로젝트라도 순식간에 완료됩니다.
 
 #### compile_commands.json의 완전한 설정
 `clangd`를 올바르게 동작시키기 위해서는 프로젝트 내 각 소스 파일이 어떤 컴파일러 플래그(인클루드 경로 및 매크로 정의)로 컴파일되는지를 기술한 `compile_commands.json`이 필수입니다. CMake를 사용하고 있는 경우, 다음 명령어로 자동 생성할 수 있습니다.
@@ -99,7 +99,7 @@ $$ T_{response} = \alpha \cdot O(S \log(M_{ast})) + \beta \cdot T_{IPC} $$
 
 ### ② rust-analyzer ([Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 개발의 사실상 표준)
 
-Rust 개발에서 현재 공식 언어 서버로 채택된 것이 **`rust-analyzer`**입니다. 예전에 표준이었던 RLS([Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) Language Server)는 컴파일러(rustc)를 직접 호출하는 아키텍처였기 때문에 응답에 한계가 있었지만, `rust-analyzer`는 IDE를 위해 처음부터 재설계되어, 불완전한 코드라 하더라도 점진적으로 파싱할 수 있는 강력한 기능을 가지고 있습니다.
+[Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 개발에서 현재 공식 언어 서버로 채택된 것이 **`rust-analyzer`**입니다. 예전에 표준이었던 RLS([Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) Language Server)는 컴파일러(rustc)를 직접 호출하는 아키텍처였기 때문에 응답에 한계가 있었지만, `rust-analyzer`는 IDE를 위해 처음부터 재설계되어, 불완전한 코드라 하더라도 점진적으로 파싱할 수 있는 강력한 기능을 가지고 있습니다.
 
 #### 압도적인 생산성을 낳는 기능들
 1. **Inlay Hints (인레이 힌트)**: 타입 추론이 강력한 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에서는 변수의 타입을 명시적으로 작성하지 않는 것이 권장되지만, 가독성이 떨어질 수 있습니다. Inlay Hints는 추론된 타입이나 함수 호출의 인수명을 에디터 상에 옅은 글씨로 오버레이 표시합니다.
@@ -125,7 +125,7 @@ Rust 개발에서 현재 공식 언어 서버로 채택된 것이 **`rust-analyz
 
 ### ③ CodeLLDB (크로스 플랫폼의 강력한 디버거)
 
-C++와 Rust 중 어느 것을 개발하더라도 실행 시의 메모리 상태를 검사하기 위한 디버거는 필수입니다. 특히 Windows, Mac, Linux의 모든 플랫폼에서 안정적으로 동작하며 Rust와의 친화성이 매우 높은 것이 **`CodeLLDB`**입니다.
+C++와 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 중 어느 것을 개발하더라도 실행 시의 메모리 상태를 검사하기 위한 디버거는 필수입니다. 특히 Windows, Mac, Linux의 모든 플랫폼에서 안정적으로 동작하며 Rust와의 친화성이 매우 높은 것이 **`CodeLLDB`**입니다.
 
 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 컴파일러(rustc)는 LLVM을 백엔드로 사용하고 있으며, 생성되는 디버그 정보(DWARF / PDB) 형식은 마찬가지로 LLVM 프로젝트의 일부인 LLDB와 완전히 호환됩니다.
 
@@ -196,7 +196,7 @@ C++ 프로젝트의 업계 표준 빌드 시스템인 CMake를 VSCode 상에서 
 
 ### ⑤ crates ([Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 패키지 의존성의 실시간 관리)
 
-Rust 의존성 관리 파일인 `Cargo.toml`을 매우 편리하게 만들어 주는 확장 프로그램입니다.
+[Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 의존성 관리 파일인 `Cargo.toml`을 매우 편리하게 만들어 주는 확장 프로그램입니다.
 
 의존 크레이트(라이브러리)의 버전 번호 옆에 Crates.io(공식 저장소)에 등록된 최신 버전이 존재하는지 여부를 실시간으로 가져와 에디터 상에 인라인 표시해 줍니다.
 
@@ -375,7 +375,7 @@ C++와 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 모�
 본 문서에서 소개한 10가지 확장 프로그램과 설정을 적용함으로써, VSCode는 단순한 텍스트 에디터의 틀을 넘어 컴파일러의 깊은 지식과 디버거의 투시 능력을 겸비한 '개발자의 강력한 외골격'으로 진화합니다.
 
 1. **clangd** (C++ 언어 서버)
-2. **rust-analyzer** (Rust 언어 서버)
+2. **rust-analyzer** ([Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 언어 서버)
 3. **CodeLLDB** (통합 디버거)
 4. **CMake Tools** (C++ 빌드 자동화)
 5. **crates** (Rust 의존성 관리)

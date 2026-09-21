@@ -326,7 +326,7 @@ int main() {
 }
 ```
 
-## 6.2 Hazard Pointers dan RCU (Read-Copy Update)
+## 6.2 Hazard [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)s dan RCU (Read-Copy Update)
 
 Sebagai standar pendukung implementasi struktur data bebas-kunci, **Hazard Pointers** (`std::hazard_pointer`) dan **RCU** (`std::rcu`) telah distandardisasi. Hal ini sangat menurunkan rintangan untuk mengimplementasikan struktur data konkuren berperforma tinggi dalam C++.
 
@@ -359,7 +359,7 @@ C++26 adalah sebuah rilis bersejarah, dengan "fitur impian" yang telah lama dina
 *   Melalui **Reflection**, kompleksitas metaprogramming telah dihilangkan dan akses AST dengan kompleksitas $O(1)$ pun terwujud.
 *   Melalui **Contract Programming**, kita dapat menentukan secara eksplisit kondisi sebelum dan sesudah berjalannya fungsi, sehingga mampu menghasilkan program yang kokoh.
 *   Melalui **Pattern Matching**, percabangan kompleks serta transisi status dapat ditulis secara logis, aman, dan intuitif.
-*   Melalui **Senders/Receivers** dan **RCU / Hazard Pointers**, standarisasi pada pemrosesan paralel dirilis, guna menarik kinerja setinggi-tingginya.
+*   Melalui **Senders/Receivers** dan **RCU / Hazard [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)s**, standarisasi pada pemrosesan paralel dirilis, guna menarik kinerja setinggi-tingginya.
 
 Dengan memanfaatkan beragam fitur ini dengan baik, abstraksi tanpa tambahan kinerja ("Zero-overhead Abstraction"), yang merupakan kekuatan utama pada C++, dapat diraih ke level yang lebih tinggi dengan menghasilkan kode yang sangat bersih secara menakjubkan.
 

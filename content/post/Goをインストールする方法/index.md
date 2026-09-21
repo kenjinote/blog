@@ -9,9 +9,9 @@ categories: ["programming"]
 description: 'Googleが開発したプログラミング言語「Go（Golang）」のインストール方法を初心者向けに解説します。インストーラの取得から、Hello Worldプログラムの作成、コンパイル、実行手順まで、初めてのGo言語入門に最適です。'
 ---
 # はじめに
-Goは、Googleが2009年に公開した比較的新しいプログラミング言語です。
+[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)は、Googleが2009年に公開した比較的新しい[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)です。
 Goのコンパイラ、ツール、ライブラリは、オープンソースで公開されています。
-また、Goは、C言語やJavaのような静的型付け言語ですが、C言語のようなポインタを使わない言語です。
+また、Goは、[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)や[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)のような静的型付け言語ですが、C言語のような[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を使わない言語です。
 
 # インストール方法
 
@@ -63,7 +63,7 @@ func main() {
 
 [http://go.shibu.jp/](http://go.shibu.jp/)
 
-Goを学ぶうえで必要となる解説は上記のリンク（日本語訳版）に集約されています。
+[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)を学ぶうえで必要となる解説は上記のリンク（日本語訳版）に集約されています。
 Goに関連する技術はオープンなので紙のテキストを購入する必要がないくらい充実しています。
 
 それでは楽しいGoライフを！

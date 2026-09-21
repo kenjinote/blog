@@ -254,7 +254,7 @@ FHE가 실용적인 속도에 도달해가는 지금, 다음과 같은 분야에
 2.  **금융 기관의 부정 탐지·자금 세탁 방지 (AML)**:
     경쟁하는 은행끼리 고객의 계좌 정보나 거래 내역을 밝히지 않고 암호화된 상태로 서로의 데이터를 대조하여 거대한 부정 송금 네트워크를 탐지하는 교차 은행 분석이 가능해집니다.
 3.  **안전한 AI 추론 API (MaaS: Model as a [Service](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/))**:
-    사용자는 자신의 음성이나 얼굴 이미지, 프롬프트를 암호화하여 AI 서비스(ChatGPT와 같은 LLM 등)에 전송합니다. AI 제공자는 사용자의 입력을 일절 알지 못한 채로 답변을 생성하여 암호문으로 반환합니다. 이를 통해 'AI에게 개인 정보가 학습되거나 도난당한다'는 우려가 완전히 불식됩니다.
+    사용자는 자신의 음성이나 얼굴 이미지, 프롬프트를 암호화하여 AI 서비스(ChatGPT와 같은 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 등)에 전송합니다. AI 제공자는 사용자의 입력을 일절 알지 못한 채로 답변을 생성하여 암호문으로 반환합니다. 이를 통해 'AI에게 개인 정보가 학습되거나 도난당한다'는 우려가 완전히 불식됩니다.
 
 ---
 

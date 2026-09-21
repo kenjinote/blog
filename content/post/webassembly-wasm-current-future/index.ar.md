@@ -19,7 +19,7 @@ tags:
 
 سيطرت لغة واحدة، وهي JavaScript، على متصفحات الويب لفترة طويلة. ولكن، مع تزايد تعقيد تطبيقات الويب وتطلبها لأداء يضاهي التطبيقات الأصلية (native apps)، بدأت حدود JavaScript وحدها بالظهور. وهنا جاء دور **WebAssembly (Wasm)**.
 
-WebAssembly هي تنسيق ثنائي (binary format) جديد يمكن تنفيذه بسرعة تقارب سرعة الكود الأصلي في المتصفح. يتم تجميعها (compiled) من لغات برمجة مثل C و C++ و Rust، وتُحدث اليوم ثورة ليس فقط في تطوير الويب، ولكن في مجالات واسعة تمتد من جانب الخادم (server-side) وحوسبة الحافة (edge computing)، وصولاً إلى أجهزة إنترنت الأشياء (IoT).
+WebAssembly هي تنسيق ثنائي (binary format) جديد يمكن تنفيذه بسرعة تقارب سرعة الكود الأصلي في المتصفح. يتم تجميعها (compiled) من لغات برمجة مثل C و C++ و [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)، وتُحدث اليوم ثورة ليس فقط في تطوير الويب، ولكن في مجالات واسعة تمتد من جانب الخادم (server-side) وحوسبة الحافة (edge computing)، وصولاً إلى أجهزة إنترنت الأشياء (IoT).
 
 في هذا المقال، سنشرح بشكل شامل حاضر ومستقبل WebAssembly، من المفاهيم الأساسية، إلى الآلية التقنية لكيفية عمل C و Rust داخل المتصفح، التكامل مع JavaScript، مقارنة الأداء، وتطبيقاتها في العالم خارج المتصفح (WASI).
 
@@ -53,7 +53,7 @@ WebAssembly هي تنسيق ثنائي (binary format) جديد يمكن تنف�
 
 ## 2.1 خط أنابيب التجميع (Compilation [Pipeline](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/))
 
-عادةً ما تُترجم اللغات مثل C أو Rust إلى لغة الآلة المعتمدة على نظام التشغيل أو بنية وحدة المعالجة المركزية (CPU). ولكن في حالة WebAssembly، يتم تحديد بنية Wasm مثل "wasm32" كبنية مستهدفة (target architecture).
+عادةً ما تُترجم اللغات مثل C أو [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) إلى لغة الآلة المعتمدة على نظام التشغيل أو بنية وحدة المعالجة المركزية (CPU). ولكن في حالة WebAssembly، يتم تحديد بنية Wasm مثل "wasm32" كبنية مستهدفة (target architecture).
 
 في كثير من الحالات، يتم استخدام بنية المترجم LLVM.
 
@@ -68,7 +68,7 @@ flowchart TD
 
 بهذه الطريقة، يمر الكود الذي يكتبه المطور عبر تمثيل وسيط (IR)، ويتم تحسينه، ويصبح في النهاية ملفاً ثنائياً مضغوطاً بامتداد `.wasm`.
 
-## 2.2 الكود البايتي (Bytecode) وآلة المكدس (Stack Machine)
+## 2.2 الكود البايتي (Bytecode) وآلة المكدس ([Stack](https://kenji.blog/ar/p/c-language-pointers-memory-management-stack-heap/) Machine)
 
 تتبنى WebAssembly بنية **آلة المكدس (Stack Machine)**. لا تحتوي على سجلات (registers)، وتتم جميع الحسابات على المكدس (بنية بيانات من نوع LIFO).
 
@@ -92,7 +92,7 @@ flowchart TD
 
 ## 2.3 نموذج الذاكرة (الذاكرة الخطية)
 
-تُجرى عمليات الذاكرة باستخدام المؤشرات (pointers) بشكل متكرر في C و Rust. لتحقيق ذلك، تتبنى WebAssembly مفهوم **الذاكرة الخطية (Linear Memory)**.
+تُجرى عمليات الذاكرة باستخدام المؤشرات (pointers) بشكل متكرر في C و [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/). لتحقيق ذلك، تتبنى WebAssembly مفهوم **الذاكرة الخطية (Linear Memory)**.
 
 الذاكرة الخطية هي مصفوفة متصلة من البايتات يمكن الوصول إليها من مثيل (instance) WebAssembly. من وجهة نظر JavaScript، تبدو كـ `ArrayBuffer` أو `SharedArrayBuffer`. المؤشرات داخل Wasm هي مجرد فهارس (قيم صحيحة) لهذه المصفوفة.
 
@@ -134,7 +134,7 @@ fetch('module.wasm')
 ## 3.2 الوصول إلى واجهات برمجة تطبيقات الويب (Web APIs) والربط (Binding)
 
 لا تمتلك Wasm نفسها القدرة على الوصول المباشر إلى DOM أو Web API. للوصول إليها، يجب المرور عبر JavaScript.
-ولكن، كتابة هذه العمليات يدوياً يتطلب جهداً كبيراً. لذلك، تتوفر أدوات مثل **wasm-bindgen** في النظام البيئي لـ Rust.
+ولكن، كتابة هذه العمليات يدوياً يتطلب جهداً كبيراً. لذلك، تتوفر أدوات مثل **wasm-bindgen** في النظام البيئي لـ [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/).
 
 ```rust
 // كود Rust (باستخدام wasm-bindgen)
@@ -151,7 +151,7 @@ pub fn greet(name: &str) {
 }
 ```
 
-عند تجميع هذا الكود، سيقوم `wasm-bindgen` تلقائياً بإنشاء كود الغراء (glue code) الخاص بـ JavaScript، ويخفي تمرير ذاكرة السلاسل النصية وغيرها. وبفضل هذا، تحصل على تجربة تطوير تبدو وكأنك تستدعي واجهات برمجة تطبيقات المتصفح مباشرة من Rust.
+عند تجميع هذا الكود، سيقوم `wasm-bindgen` تلقائياً بإنشاء كود الغراء (glue code) الخاص بـ JavaScript، ويخفي تمرير ذاكرة السلاسل النصية وغيرها. وبفضل هذا، تحصل على تجربة تطوير تبدو وكأنك تستدعي واجهات برمجة تطبيقات المتصفح مباشرة من [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/).
 
 ---
 
@@ -185,7 +185,7 @@ function fibJs(n) {
 }
 ```
 
-### تنفيذ Rust
+### تنفيذ [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)
 ```rust
 #[no_mangle]
 pub fn fib_wasm(n: u32) -> u32 {
@@ -194,7 +194,7 @@ pub fn fib_wasm(n: u32) -> u32 {
 }
 ```
 
-عند الحساب بـ $n=40$، في حين يتم تنفيذ JavaScript (محرك V8) أيضاً بسرعة كبيرة بفضل تحسين JIT، غالباً ما تُنفذ Wasm الناتجة من Rust أسرع بـ **حوالي 1.5 إلى 2 مرة أو أكثر**. في مجالات مثل عمليات المصفوفات أو معالجة الصور، حيث يُستفاد من الوصول المتتالي للذاكرة وتعليمات SIMD، يصبح هذا الفارق أكثر وضوحاً.
+عند الحساب بـ $n=40$، في حين يتم تنفيذ JavaScript (محرك V8) أيضاً بسرعة كبيرة بفضل تحسين JIT، غالباً ما تُنفذ Wasm الناتجة من [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) أسرع بـ **حوالي 1.5 إلى 2 مرة أو أكثر**. في مجالات مثل عمليات المصفوفات أو معالجة الصور، حيث يُستفاد من الوصول المتتالي للذاكرة وتعليمات SIMD، يصبح هذا الفارق أكثر وضوحاً.
 
 ---
 
@@ -229,7 +229,7 @@ pub fn fib_wasm(n: u32) -> u32 {
 باستخدام Web Workers و `SharedArrayBuffer`، أصبح من الممكن لمثيلات Wasm المتعددة مشاركة نفس مساحة الذاكرة وتنفيذ المعالجة المتوازية (parallel processing) متعددة الخيوط. وهذا يسمح لمحاكاة الفيزياء المتقدمة ومحركات الألعاب بالعمل بسلاسة في المتصفح.
 
 ## 6.3 تجميع القمامة (Wasm GC)
-بينما كانت Wasm التقليدية مصممة للغات مثل C و Rust التي تدير الذاكرة الخطية يدوياً، تم توحيد مقترح **Wasm GC** لتجميع اللغات التي تتطلب تجميع القمامة، مثل Java و Kotlin و C# و Dart، بكفاءة إلى Wasm. ونتيجة لذلك، يتحسن أداء منصات مثل Flutter Web بشكل كبير.
+بينما كانت Wasm التقليدية مصممة للغات مثل C و [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) التي تدير الذاكرة الخطية يدوياً، تم توحيد مقترح **Wasm GC** لتجميع اللغات التي تتطلب تجميع القمامة، مثل [Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) و Kotlin و C# و Dart، بكفاءة إلى Wasm. ونتيجة لذلك، يتحسن أداء منصات مثل Flutter Web بشكل كبير.
 
 ---
 
@@ -260,7 +260,7 @@ flowchart TD
 أكبر تحدٍ يواجه WebAssembly حالياً هو صعوبة الربط بين وحدات Wasm المكتوبة بلغات مختلفة (نظراً لاختلاف تمثيل الذاكرة للسلاسل النصية أو أنواع البيانات المعقدة بين اللغات).
 
 حل هذه المشكلة هو **WebAssembly Component Model**.
-إذا تم تحقيق نموذج المكون، سيصبح من الممكن، على سبيل المثال، استدعاء الدوال بسلاسة من "وحدة Wasm مكتوبة بـ Python" إلى "وحدة Wasm مكتوبة بـ Rust". يحمل هذا إمكانية أن يصبح الأساس لبنية الخدمات المصغرة (microservices architecture) للجيل القادم، المستقلة عن المنصة واللغة.
+إذا تم تحقيق نموذج المكون، سيصبح من الممكن، على سبيل المثال، استدعاء الدوال بسلاسة من "وحدة Wasm مكتوبة بـ Python" إلى "وحدة Wasm مكتوبة بـ [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)". يحمل هذا إمكانية أن يصبح الأساس لبنية الخدمات المصغرة (microservices architecture) للجيل القادم، المستقلة عن المنصة واللغة.
 
 ## 8.2 Wasm كنظام إضافات (Plugin System)
 بالفعل، اعتمدت العديد من البرامج مثل Figma و EnvoyProxy و Microsoft Flight Simulator على WebAssembly كنظام إضافات خاص بها. وذلك لأنها تتيح تنفيذ كود الأطراف الثالثة (third-party code) الذي ينشئه المستخدمون بأمان وسرعة عالية داخل التطبيق الرئيسي.

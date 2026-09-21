@@ -278,7 +278,7 @@ El rendimiento cambia significativamente dependiendo de cómo se elige el pivote
 *   **Peor complejidad temporal**: $O(n^2)$
     *   Esta es una debilidad fatal. Si siempre se elige el elemento del extremo como pivote para una matriz que ya está ordenada, la matriz continuará dividiéndose de manera desigual en "1" y "todo lo demás", cayendo en la peor complejidad computacional. Para evitar esto, son esenciales técnicas ingeniosas para elegir el pivote, como la "mediana de tres" (tomando la mediana del principio, centro y final).
 *   **Complejidad temporal promedio**: $O(n \log n)$
-    *   En la práctica, la constante multiplicativa es muy pequeña y la eficiencia de caché es extremadamente buena, por lo que se ejecuta más rápido que el ordenamiento por mezcla y el ordenamiento por montículos (Heap Sort).
+    *   En la práctica, la constante multiplicativa es muy pequeña y la eficiencia de caché es extremadamente buena, por lo que se ejecuta más rápido que el ordenamiento por mezcla y el ordenamiento por montículos ([Heap](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/) Sort).
 *   **Complejidad espacial**: Promedio $O(\log n)$, Peor $O(n)$
     *   Aunque es un algoritmo in-place que reescribe directamente la matriz, consume pila de llamadas para las llamadas recursivas.
 *   **Estabilidad**: Inestable (Unstable)
@@ -338,7 +338,7 @@ def partition(arr, low, high):
     return i + 1
 ```
 
-### 3.3 Ordenamiento por montículos (Heap Sort)
+### 3.3 Ordenamiento por montículos ([Heap](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/) Sort)
 
 El ordenamiento por montículos es un algoritmo de ordenamiento que utiliza hábilmente una estructura de datos de árbol llamada **montículo binario (Binary Heap)**. Tiene las mejores características del ordenamiento por mezcla y del ordenamiento rápido, ya que el peor tiempo de cálculo es $O(n \log n)$ pero al mismo tiempo es un ordenamiento In-place que no utiliza memoria adicional.
 
@@ -467,7 +467,7 @@ En los libros de texto académicos, a menudo se tratan temas hasta el ordenamien
 
 ### 5.1 Timsort (Predeterminado en Python)
 
-Timsort es un algoritmo implementado por Tim Peters en 2002 para Python, y actualmente es el ganador en el mundo práctico, adoptado en muchos lenguajes, desde las funciones de Python `list.sort()` y `sorted()`, hasta matrices de objetos en Java y la ordenación estándar de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/).
+Timsort es un algoritmo implementado por Tim Peters en 2002 para Python, y actualmente es el ganador en el mundo práctico, adoptado en muchos lenguajes, desde las funciones de Python `list.sort()` y `sorted()`, hasta matrices de objetos en [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) y la ordenación estándar de [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/).
 
 La filosofía de diseño más grande de Timsort se basa en la regla empírica de que **"en los datos del mundo real, rara vez son completamente aleatorios, sino que a menudo están parcialmente ordenados hasta cierto punto (hay bloques consecutivos en orden ascendente o descendente)"**.
 
@@ -486,7 +486,7 @@ El ordenamiento rápido es en promedio el más rápido, pero dependiendo de cóm
 #### Características de Introsort
 1. Básicamente utiliza el rápido **ordenamiento rápido** para ir dividiendo la matriz.
 2. Sin embargo, monitorea la profundidad de recursión, y si la profundidad de la división excede un múltiplo constante de $\log_2 n$ (ejemplo: $2 \times \log_2 n$), juzga (Introspección: auto-reflexión) que "la selección del pivote no va bien y estamos a punto de caer en la peor complejidad temporal".
-3. En ese punto, el método de ordenamiento para esa submatriz se cambia al **ordenamiento por montículos** (Heap Sort), cuya peor complejidad computacional es $O(n \log n)$.
+3. En ese punto, el método de ordenamiento para esa submatriz se cambia al **ordenamiento por montículos** ([Heap](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/) Sort), cuya peor complejidad computacional es $O(n \log n)$.
 4. Además, cuando el número de elementos se vuelve muy pequeño (ejemplo: 16 elementos o menos), cambia al **ordenamiento por inserción** para evitar la sobrecarga (overhead) de las llamadas a funciones.
 
 Gracias a esto, mantiene la abrumadora velocidad promedio del ordenamiento rápido, al mismo tiempo que asegura $O(n \log n)$ incluso en el peor de los casos, logrando un algoritmo impecable.

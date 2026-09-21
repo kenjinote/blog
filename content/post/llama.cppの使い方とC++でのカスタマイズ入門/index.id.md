@@ -10,15 +10,15 @@ tags: ["llama.cpp", "C++", "LLM", "AI", "Customization"]
 description: 'Panduan lengkap yang mencakup dasar-dasar llama.cpp hingga kustomisasi lanjutan dengan C++, latar belakang matematis Transformer, dan penjelasan arsitektur ggml.'
 ---
 
-Dalam beberapa tahun terakhir, evolusi Large Language Models (LLM) sangat luar biasa, dan jangkauan aplikasinya meluas dari hari ke hari. Namun, menjalankan model dengan miliaran atau puluhan miliar parameter di lingkungan lokal biasanya membutuhkan GPU *high-end* dengan VRAM yang sangat besar. **llama.cpp** hadir untuk menerobos "dinding perangkat keras" ini, memungkinkan inferensi LLM secara praktis pada PC umum, Mac, dan bahkan perangkat seperti Raspberry Pi.
+Dalam beberapa tahun terakhir, evolusi [Large Language Models](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)) sangat luar biasa, dan jangkauan aplikasinya meluas dari hari ke hari. Namun, menjalankan model dengan miliaran atau puluhan miliar parameter di lingkungan lokal biasanya membutuhkan GPU *high-end* dengan VRAM yang sangat besar. **llama.cpp** hadir untuk menerobos "dinding perangkat keras" ini, memungkinkan inferensi LLM secara praktis pada PC umum, Mac, dan bahkan perangkat seperti Raspberry Pi.
 
-Pada artikel ini, kita tidak hanya membahas cara menggunakan alat baris perintah (CLI), tetapi juga menjelaskan secara sangat rinci bagi para *engineer* mengenai arsitektur `ggml` yang menjadi teknologi dasarnya, latar belakang matematis dari Transformer dan kuantisasi, serta cara menggunakan API C++ untuk mengintegrasikan dan menyesuaikan LLM ke dalam aplikasi Anda sendiri.
+Pada artikel ini, kita tidak hanya membahas cara menggunakan alat baris perintah (CLI), tetapi juga menjelaskan secara sangat rinci bagi para *engineer* mengenai arsitektur `ggml` yang menjadi teknologi dasarnya, latar belakang matematis dari [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) dan kuantisasi, serta cara menggunakan API C++ untuk mengintegrasikan dan menyesuaikan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) ke dalam aplikasi Anda sendiri.
 
 ---
 
 ## 1. Ikhtisar llama.cpp dan ggml
 
-`llama.cpp` adalah mesin inferensi LLM ringan yang ditulis dalam bahasa C/C++, dikembangkan oleh Georgi Gerganov. Awalnya dibuat dengan tujuan agar model LLaMA dari Meta dapat berjalan cepat di Apple Silicon (Mac M1/M2), tetapi kini telah mendukung berbagai arsitektur dan model.
+`llama.cpp` adalah mesin inferensi [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) ringan yang ditulis dalam bahasa C/C++, dikembangkan oleh Georgi Gerganov. Awalnya dibuat dengan tujuan agar model LLaMA dari Meta dapat berjalan cepat di Apple Silicon (Mac M1/M2), tetapi kini telah mendukung berbagai arsitektur dan model.
 
 Fitur terbesarnya adalah merupakan **implementasi murni C/C++ tanpa dependensi eksternal**. Ia tidak membutuhkan ekosistem besar seperti Python atau PyTorch, dan karena dapat dikompilasi menjadi satu file *executable*, proses *deployment* menjadi sangat mudah.
 
@@ -32,7 +32,7 @@ Jantung dari `llama.cpp` ini adalah *library* komputasi tensor bernama **ggml**.
 
 ---
 
-## 2. Latar Belakang Matematis: Transformer dan Kuantisasi (Quantization)
+## 2. Latar Belakang Matematis: [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) dan Kuantisasi (Quantization)
 
 Untuk memahami llama.cpp secara mendalam, kita perlu mengetahui rumus matematika yang dihitungnya dan bagaimana komputasi tersebut diaproksimasi.
 
@@ -153,7 +153,7 @@ Jika proses *build* berhasil, file eksekusi seperti `llama-cli` dan pustaka `lla
 ## 5. Pengenalan Kustomisasi dengan C++: Menggunakan API llama.cpp
 
 Mulai dari sini, kita akan membahas topik utama yaitu mengendalikan llama.cpp dari kode C++.
-Untuk tidak sekadar menggunakan alat baris perintah (CLI), melainkan mengintegrasikan LLM ke dalam aplikasi Anda sendiri (seperti *game engine*, aplikasi *desktop*, sistem *embedded*, dll.), Anda perlu memanggil langsung API C++.
+Untuk tidak sekadar menggunakan alat baris perintah (CLI), melainkan mengintegrasikan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) ke dalam aplikasi Anda sendiri (seperti *game engine*, aplikasi *desktop*, sistem *embedded*, dll.), Anda perlu memanggil langsung API C++.
 
 llama.cpp menyediakan antarmuka bahasa C terutama melalui *header file* bernama `llama.h`. Antarmuka ini juga digunakan ketika dipanggil dari C++.
 
@@ -223,7 +223,7 @@ int main(int argc, char ** argv) {
 
 ### 5.3 Tokenisasi Prompt (Tokenization)
 
-LLM tidak secara langsung memahami teks, melainkan memprosesnya sebagai urutan ID integer (token). String *input* perlu dikonversi ke token.
+[LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) tidak secara langsung memahami teks, melainkan memprosesnya sebagai urutan ID integer (token). String *input* perlu dikonversi ke token.
 
 ```cpp
     std::string prompt = "Q: Apa ibu kota Jepang?\nA:";
@@ -377,7 +377,7 @@ Pada artikel ini, kita telah membahas secara mendalam mulai dari latar belakang 
 
 Ekosistem Python sangat berguna untuk pembuatan *prototype*, namun untuk *deployment* di perangkat *edge*, integrasi ke dalam *game*, atau dalam lingkungan produksi yang menuntut pemrosesan secara *real-time*, pengontrolan langsung `llama.cpp` berbasis C/C++ menunjukkan kekuatan yang luar biasa.
 
-Kami sangat menyarankan Anda untuk mencoba menulis kode C++ dengan tangan Anda sendiri dan merasakan serunya mengendalikan LLM secara bebas di lingkungan lokal.
+Kami sangat menyarankan Anda untuk mencoba menulis kode C++ dengan tangan Anda sendiri dan merasakan serunya mengendalikan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) secara bebas di lingkungan lokal.
 
 > **Tautan Referensi**
 > - [Repositori Resmi llama.cpp](https://github.com/ggerganov/llama.cpp)

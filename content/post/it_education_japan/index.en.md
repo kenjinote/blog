@@ -74,7 +74,7 @@ Below are the average time complexities of representative sorting algorithms.
 - Insertion Sort: $O(N^2)$
 - Merge Sort: $O(N \log N)$
 - Quick Sort: $O(N \log N)$
-- Heap Sort: $O(N \log N)$
+- [Heap](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) Sort: $O(N \log N)$
 
 For instance, the time complexity $T(N)$ of Merge Sort is expressed by the following recurrence relation based on the Divide and Conquer paradigm.
 
@@ -92,7 +92,7 @@ In modern big data analytics and web-scale traffic processing, the order of $N$ 
 
 ## 4. The Black-Boxing of [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/) and System Architecture
 
-At an even deeper layer is the complete omission of the understanding of Memory Management and CPU architecture. Learners who have only been taught high-level languages with [Garbage Collection](https://kenji.blog/en/p/memory-management-garbage-collection/) (GC), like Python and JavaScript, in schools today will never in their lives be conscious of where variables and objects are physically allocated in RAM (heap vs. stack), how they are assigned, and when and how they are freed.
+At an even deeper layer is the complete omission of the understanding of [Memory Management](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) and CPU architecture. Learners who have only been taught high-level languages with [Garbage Collection](https://kenji.blog/en/p/memory-management-garbage-collection/) (GC), like Python and JavaScript, in schools today will never in their lives be conscious of where variables and objects are physically allocated in RAM (heap vs. stack), how they are assigned, and when and how they are freed.
 
 ```c
 // Example of explicit and direct memory allocation and pointer manipulation in C
@@ -200,7 +200,7 @@ The final and arguably national crisis-level challenge facing Japan's IT educati
 
 In the UK, the subject "Computing" has been mandatory from age 5 (Key Stage 1) since as early as 2014. Their curriculum goes far beyond mere "programming experiences," dealing with highly academic and systematic computer science, from logical algorithm design and understanding logic circuits via Boolean algebra, to network topologies and hardware architecture.
 
-In the US, there are rigorous standard K-12 curriculums established by the CSTA (Computer Science Teachers Association). In the AP (Advanced Placement) Computer Science A course taken by high school students, they are tested on authentic object-oriented programming using Java, polymorphism, recursion, implementation of data structures, and algorithmic complexity evaluation at a level comparable to a first-year university course. The fierce STEM education in countries like India and China, and the depth of the elite talent they produce, hardly need further mention.
+In the US, there are rigorous standard K-12 curriculums established by the CSTA (Computer Science Teachers Association). In the AP (Advanced Placement) Computer Science A course taken by high school students, they are tested on authentic object-oriented programming using [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), polymorphism, recursion, implementation of data structures, and algorithmic complexity evaluation at a level comparable to a first-year university course. The fierce STEM education in countries like India and China, and the depth of the elite talent they produce, hardly need further mention.
 
 ### The Despairing Disconnect Between Required Skills and Taught Skills
 
@@ -221,7 +221,7 @@ To bridge this massive gap (Death Valley), a radical paradigm shift in school ed
 
 ## 9. The Plummeting Value of "Coding" in the AI Era (LLMs)
 
-Further complicating the situation is the explosive spread of Large Language Models (LLMs) like ChatGPT and AI coding assistants like GitHub Copilot. In an era where AI can instantly generate perfect code from natural language instructions and even write test codes, the market value of so-called "Coders" who merely "know Python syntax" or "know how to call an API" is rapidly plummeting.
+Further complicating the situation is the explosive spread of [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) like ChatGPT and AI coding assistants like GitHub Copilot. In an era where AI can instantly generate perfect code from natural language instructions and even write test codes, the market value of so-called "Coders" who merely "know Python syntax" or "know how to call an API" is rapidly plummeting.
 
 What is required of human engineers in the AI era is not the memorization of programming language syntax. It is the following abilities:
 

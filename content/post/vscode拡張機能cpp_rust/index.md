@@ -11,7 +11,7 @@ tags: ["VSCode", "C++", "Rust", "Editor"]
 
 # はじめに
 
-現代のシステムプログラミングにおいて、C++と[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)は最も重要な言語として確固たる地位を築いています。長年の実績と膨大なエコシステムを持ち、OSやゲームエンジン、高頻度取引（HFT）システムなどで不可欠なC++。そして、所有権（Ownership）モデルによるメモリ安全性とモダンな言語仕様によって急速に普及し、Linuxカーネルへの採用も進んでいるRust。これら二つの言語で開発を行う際、エディタの選択と設定は開発の生産性に直結します。
+現代のシステムプログラミングにおいて、C++と[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)は最も重要な言語として確固たる地位を築いています。長年の実績と膨大なエコシステムを持ち、OSやゲームエンジン、高頻度取引（HFT）システムなどで不可欠なC++。そして、所有権（Ownership）モデルによるメモリ安全性とモダンな言語仕様によって急速に普及し、Linuxカーネルへの採用も進んでいる[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)。これら二つの言語で開発を行う際、エディタの選択と設定は開発の生産性に直結します。
 
 Visual Studio Code（VSCode）は、その高い拡張性と軽量さから、世界中のシステムプログラマに愛用されています。しかし、インストールした直後のVSCodeはあくまで単なるテキストエディタに過ぎません。C++やRustの真の力を引き出すためには、言語のセマンティクスを深く理解する言語サーバーや、バイナリレベルで状態を追跡するデバッガなど、適切な拡張機能の導入と緻密な設定が不可欠です。
 
@@ -59,7 +59,7 @@ C++開発者にとって最も重要な選択の一つが、C++の言語機能�
 
 #### ms-vscode.cpptools ではなく clangd を選ぶ理由
 - **精度の高い解析**: ClangのAST（抽象構文木）を直接扱うため、SFINAE（Substitution Failure Is Not An Error）を多用した複雑なテンプレートのインスタンス化や、入れ子になったマクロ展開を正確に評価します。
-- **バックグラウンドインデックスによる高速化**: プロジェクト全体のシンボル情報をバックグラウンドで事前計算（インデックス化）するため、「定義へ移動（Go to Definition）」や「すべての参照を検索（Find All References）」が巨大プロジェクトでも瞬時に完了します。
+- **バックグラウンドインデックスによる高速化**: プロジェクト全体のシンボル情報をバックグラウンドで事前計算（インデックス化）するため、「定義へ移動（[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/) to Definition）」や「すべての参照を検索（Find All References）」が巨大プロジェクトでも瞬時に完了します。
 
 #### compile_commands.json の完全な設定
 `clangd`を正しく動作させるためには、プロジェクト内の各ソースファイルがどのようなコンパイラフラグ（インクルードパスやマクロ定義）でコンパイルされるかを記述した `compile_commands.json` が必須です。CMakeを使用している場合、以下のコマンドで自動生成できます。
@@ -99,7 +99,7 @@ $$ T_{response} = \alpha \cdot O(S \log(M_{ast})) + \beta \cdot T_{IPC} $$
 
 ### ② rust-analyzer ([Rust](https://kenji.blog/p/webassembly-wasm-current-future/)開発のデファクトスタンダード)
 
-Rust開発において、現在公式の言語サーバーとして採用されているのが **`rust-analyzer`** です。かつて標準だったRLS ([Rust](https://kenji.blog/p/webassembly-wasm-current-future/) Language Server) はコンパイラ（rustc）を直接呼び出すアーキテクチャだったためレスポンスに限界がありましたが、`rust-analyzer`はIDE向けにゼロから設計し直され、不完全なコードであってもインクリメンタルにパースできる強力な機能を持っています。
+[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)開発において、現在公式の言語サーバーとして採用されているのが **`rust-analyzer`** です。かつて標準だったRLS ([Rust](https://kenji.blog/p/webassembly-wasm-current-future/) Language Server) はコンパイラ（rustc）を直接呼び出すアーキテクチャだったためレスポンスに限界がありましたが、`rust-analyzer`はIDE向けにゼロから設計し直され、不完全なコードであってもインクリメンタルにパースできる強力な機能を持っています。
 
 #### 圧倒的な生産性を生む機能群
 1. **Inlay Hints (インレイヒント)**: 型推論が強力な[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)では、変数の型を明示的に書かないことが推奨されますが、可読性が落ちる場合があります。Inlay Hintsは、推論された型や、関数呼び出しの引数名をエディタ上に薄い文字でオーバーレイ表示します。
@@ -125,7 +125,7 @@ Rust開発において、現在公式の言語サーバーとして採用され�
 
 ### ③ CodeLLDB (クロスプラットフォームの強力なデバッガ)
 
-C++とRustのどちらを開発するにしても、実行時のメモリ状態を検査するためのデバッガは必須です。特にWindows、Mac、Linuxのすべてのプラットフォームで安定して動作し、Rustとの親和性が極めて高いのが **`CodeLLDB`** です。
+C++と[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)のどちらを開発するにしても、実行時のメモリ状態を検査するためのデバッガは必須です。特にWindows、Mac、Linuxのすべてのプラットフォームで安定して動作し、Rustとの親和性が極めて高いのが **`CodeLLDB`** です。
 
 [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)のコンパイラ (rustc) はLLVMをバックエンドとして利用しており、生成されるデバッグ情報 (DWARF / PDB) のフォーマットは、同じくLLVMプロジェクトの一部であるLLDBと完全に適合します。
 
@@ -196,7 +196,7 @@ C++プロジェクトの業界標準ビルドシステムであるCMakeを、VSC
 
 ### ⑤ crates ([Rust](https://kenji.blog/p/webassembly-wasm-current-future/)パッケージ依存関係のリアルタイム管理)
 
-Rustの依存関係管理ファイルである `Cargo.toml` を極めて便利にする拡張機能です。
+[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の依存関係管理ファイルである `Cargo.toml` を極めて便利にする拡張機能です。
 
 依存クレート（ライブラリ）のバージョン番号の横に、Crates.io（公式レポジトリ）に登録されている最新バージョンが存在するかどうかをリアルタイムでフェッチし、エディタ上にインライン表示してくれます。
 
@@ -222,7 +222,7 @@ reqwest = "0.11" # <- アップデートが必要な場合はワンクリック�
 
 ### ⑦ GitLens
 
-システムプログラミングのプロジェクトは往々にして大規模であり、歴史の長いコードベースを扱うことが頻繁に発生します。「誰が、いつ、なぜこの難解なポインタ操作のコードを追加したのか？」を追跡することは、バグ修正において最も重要なステップの一つです。
+システムプログラミングのプロジェクトは往々にして大規模であり、歴史の長いコードベースを扱うことが頻繁に発生します。「誰が、いつ、なぜこの難解な[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)操作のコードを追加したのか？」を追跡することは、バグ修正において最も重要なステップの一つです。
 
 **`GitLens`** は、現在のカーソル位置にある行の `git blame` 情報をエディタ上にアノテーションとして薄く表示します。また、ファイル全体のコミット履歴を[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィカルに探索する機能や、行単位での履歴（Line History）を辿る機能を備えています。
 
@@ -334,7 +334,7 @@ sequenceDiagram
     VSCode->>Developer: GUI上の「変数」ペインにツリー表示
 ```
 
-このシーケンス図が示すように、デバッグセッション中はVSCodeとCodeLLDBの間で無数の通信（Debug Adapter Protocol - DAP）が行われています。C++の `std::map` や [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の `Vec<T>` といったポインタの集合体である複雑なデータ構造も、CodeLLDBに組み込まれたフォーマッタ機能によって、VSCodeのGUI上で非常に直感的に（配列の中身が展開されたツリー状で）表示されます。
+このシーケンス図が示すように、デバッグセッション中はVSCodeとCodeLLDBの間で無数の通信（Debug Adapter Protocol - DAP）が行われています。C++の `std::map` や [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の `Vec<T>` といった[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の集合体である複雑なデータ構造も、CodeLLDBに組み込まれたフォーマッタ機能によって、VSCodeのGUI上で非常に直感的に（配列の中身が展開されたツリー状で）表示されます。
 
 これを可能にするため、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)のコンパイラはDWARFフォーマット内に型のレイアウト情報（サイズやパディングなど）を詳細に埋め込み、CodeLLDBはそれに従ってターゲットメモリ上の生バイト列を人間が読める形式に見事に変換しているのです。
 
@@ -375,7 +375,7 @@ C++と[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)は、どち�
 本記事で紹介した10の拡張機能と設定を適用することで、VSCodeは単なるテキストエディタの枠を超え、コンパイラの深い知識とデバッガの透視能力を併せ持つ「開発者の強力な外骨格」へと進化します。
 
 1. **clangd** (C++言語サーバー)
-2. **rust-analyzer** (Rust言語サーバー)
+2. **rust-analyzer** ([Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語サーバー)
 3. **CodeLLDB** (統合デバッガ)
 4. **CMake Tools** (C++ビルド自動化)
 5. **crates** (Rust依存関係管理)

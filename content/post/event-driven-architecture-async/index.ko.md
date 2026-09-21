@@ -110,7 +110,7 @@ const main = async () => {
 main();
 ```
 
-Event Loop의 장점은 공유 상태에 대한 락([Lock](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/)) 관리가 필요 없다는 것입니다. 그러나 CPU 바운드인 무거운 처리를 Call Stack에서 실행해 버리면 Event Loop 전체가 블록되어 시스템이 정지 상태에 빠질 위험이 있습니다(Event Loop의 블로킹). 계산량은 $ O(1) $ 에서 $ O(N) $ 의 가벼운 처리로 유지해야 합니다.
+Event Loop의 장점은 공유 상태에 대한 락([Lock](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/)) 관리가 필요 없다는 것입니다. 그러나 CPU 바운드인 무거운 처리를 Call [Stack](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/)에서 실행해 버리면 Event Loop 전체가 블록되어 시스템이 정지 상태에 빠질 위험이 있습니다(Event Loop의 블로킹). 계산량은 $ O(1) $ 에서 $ O(N) $ 의 가벼운 처리로 유지해야 합니다.
 
 ---
 
@@ -141,7 +141,7 @@ flowchart LR
 
 ### 3.2 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)를 이용한 Actor 구현 예시
 
-시스템 프로그래밍 언어인 Rust에서는 `tokio` 나 `actix` 와 같은 강력한 비동기 크레이트를 사용하여 Actor 모델을 구축할 수 있습니다. 여기서는 `mpsc` (Multi-Producer, Single-Consumer) 채널을 사용한 간단한 Actor 패턴의 구현을 보여줍니다.
+시스템 프로그래밍 언어인 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)에서는 `tokio` 나 `actix` 와 같은 강력한 비동기 크레이트를 사용하여 Actor 모델을 구축할 수 있습니다. 여기서는 `mpsc` (Multi-Producer, Single-Consumer) 채널을 사용한 간단한 Actor 패턴의 구현을 보여줍니다.
 
 ```rust
 use std::sync::Arc;

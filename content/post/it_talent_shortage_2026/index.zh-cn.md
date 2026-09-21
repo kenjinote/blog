@@ -127,7 +127,7 @@ xychart-beta
 
 ## 4. 超越提示词工程：真正需要的技能是什么？
 
-那么，在接下来的时代里，所需的IT人才是怎样的存在呢？认为“只要精通提示词工程（Prompt Engineering）就可以了”未免为时过早。随着AI模型的进化，用自然语言发出指令的技术正在变得平易近人，日益商品化。
+那么，在接下来的时代里，所需的IT人才是怎样的存在呢？认为“只要精通提示词工程（[Prompt Engineering](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）就可以了”未免为时过早。随着AI模型的进化，用自然语言发出指令的技术正在变得平易近人，日益商品化。
 
 一线的真实情况是，现在真正需要的是能够覆盖以下三个领域的人才。
 

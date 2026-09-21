@@ -161,7 +161,7 @@ Esto te permite construir, buscar y ejecutar comandos de forma intuitiva, inclus
 
 Una de las acciones más frecuentes en las operaciones de terminal es **"encontrar un comando complejo ejecutado en el pasado en el historial y volver a ejecutarlo"**. El `Ctrl+R` estándar (búsqueda inversa) es una búsqueda de coincidencia exacta, por lo que es difícil extraer un comando de un recuerdo vago como "Recuerdo que monté un volumen con docker run...".
 
-Esta tarea se resuelve elegantemente con **`fzf`**, una herramienta de búsqueda difusa ultrarrápida y de propósito general escrita en el lenguaje Go.
+Esta tarea se resuelve elegantemente con **`fzf`**, una herramienta de búsqueda difusa ultrarrápida y de propósito general escrita en el lenguaje [Go](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/).
 
 ## 4.1. El flujo de búsqueda difusa con fzf
 

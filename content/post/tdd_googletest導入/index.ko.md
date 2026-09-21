@@ -316,7 +316,7 @@ C++ 프로젝트에서 TDD를 도입할 때는 특유의 과제가 존재합니�
 
 ### 7.1 빌드 시간(컴파일 시간)의 증가
 C++은 템플릿의 다용이나 대규모 헤더 인클루드로 인해 컴파일 시간이 길어지기 쉽습니다. TDD의 "Red-Green-Refactor" 사이클은 신속하게 진행되어야 하므로, 빌드 시간 지연은 치명적입니다.
-**대책**: 전방 선언(Forward Declaration)이나 Pimpl(Pointer to implementation) 이디엄을 활용하여 헤더 파일의 의존 관계를 최소한으로 억제합시다. 또한 Ccache와 같은 빌드 캐시 도구의 도입도 효과적입니다.
+**대책**: 전방 선언(Forward Declaration)이나 Pimpl([Pointer](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/) to implementation) 이디엄을 활용하여 헤더 파일의 의존 관계를 최소한으로 억제합시다. 또한 Ccache와 같은 빌드 캐시 도구의 도입도 효과적입니다.
 
 ### 7.2 레거시 코드에 TDD 도입
 기존의 거대한 모놀리식 코드에 뒤늦게 TDD를 적용하는 것은 극히 어렵습니다.

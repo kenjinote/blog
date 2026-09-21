@@ -13,7 +13,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 In der modernen Web-Frontend-Entwicklung ist die Vereinbarkeit von Leistung und Entwicklererfahrung (DX: Developer Experience) eines der wichtigsten Anliegen in jedem Projekt. Die Kombination von **Hugo**, das unter den Static Site Generatoren (SSG) zu den schnellsten der Welt gehört, mit **Tailwind CSS**, das das innovative Paradigma "Utility-First" eingeführt hat, kann als ultimative Lösung für dieses Problem angesehen werden.
 
-Hugo ist in Go geschrieben und bietet eine unglaubliche Leistung, mit der Builds selbst für Websites mit Tausenden von Seiten in nur wenigen Sekunden oder Millisekunden abgeschlossen werden. Andererseits ermöglicht Tailwind CSS das direkte Schreiben unzähliger vordefinierter Utility-Klassen (z. B. `flex`, `text-center`, `mt-4`) in HTML, wodurch der Kontextwechsel zwischen CSS- und HTML-Dateien entfällt und Design-Iterationen beschleunigt werden.
+Hugo ist in [Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) geschrieben und bietet eine unglaubliche Leistung, mit der Builds selbst für Websites mit Tausenden von Seiten in nur wenigen Sekunden oder Millisekunden abgeschlossen werden. Andererseits ermöglicht Tailwind CSS das direkte Schreiben unzähliger vordefinierter Utility-Klassen (z. B. `flex`, `text-center`, `mt-4`) in HTML, wodurch der Kontextwechsel zwischen CSS- und HTML-Dateien entfällt und Design-Iterationen beschleunigt werden.
 
 In diesem Artikel werden wir die Schritte zur Integration von Tailwind CSS in ein Hugo-Theme und zum Aufbau einer fortschrittlichen Asset-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) (Hugo Pipes) mit PostCSS im Detail erläutern – von den Grundlagen der Architektur bis hin zu mathematischen Leistungsoptimierungen.
 
@@ -268,7 +268,7 @@ Als Nächstes weisen wir Hugos Template an, die oben genannte CSS-Datei zu laden
 
 #### Erläuterung der [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) und Mermaid-Diagramm
 
-Im Folgenden wird erläutert, wie der obige Go-Template-Code die CSS-Datei verarbeitet, illustriert durch eine Reihe von Pipeline-Prozessen.
+Im Folgenden wird erläutert, wie der obige [Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)-Template-Code die CSS-Datei verarbeitet, illustriert durch eine Reihe von Pipeline-Prozessen.
 
 ```mermaid
 flowchart TD

@@ -10,9 +10,9 @@ tags: ["llama.cpp", "GGUF", "Quantization", "LLM"]
 description: 'Une explication très détaillée, accompagnée de formules mathématiques et de diagrammes structurels, de la structure interne du format GGUF et de la technologie de quantification k-quants adoptés dans llama.cpp.'
 ---
 
-## 1. Introduction : Pourquoi les LLM ont-ils besoin de quantification ?
+## 1. Introduction : Pourquoi les [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) ont-ils besoin de quantification ?
 
-Bien que l'évolution récente des grands modèles de langage (LLM : Large Language Models) soit remarquable, en coulisses, l'« épuisement des ressources de calcul » et les « goulots d'étranglement de la bande passante mémoire » sont devenus de graves problèmes. Par exemple, si l'on charge en mémoire un modèle de 70B (70 milliards) de paramètres comme Llama 3 avec une virgule flottante standard de 16 bits (FP16), les paramètres seuls consomment environ 140 Go de VRAM/RAM. Si l'on y ajoute le contexte lors de l'inférence (cache KV), cela ne peut fonctionner sans regrouper plusieurs GPU haut de gamme pour centres de données (NVIDIA A100 80 Go ou H100 80 Go).
+Bien que l'évolution récente des grands modèles de langage (LLM : [Large Language Models](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) soit remarquable, en coulisses, l'« épuisement des ressources de calcul » et les « goulots d'étranglement de la bande passante mémoire » sont devenus de graves problèmes. Par exemple, si l'on charge en mémoire un modèle de 70B (70 milliards) de paramètres comme Llama 3 avec une virgule flottante standard de 16 bits (FP16), les paramètres seuls consomment environ 140 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de VRAM/RAM. Si l'on y ajoute le contexte lors de l'inférence (cache KV), cela ne peut fonctionner sans regrouper plusieurs GPU haut de gamme pour centres de données (NVIDIA A100 80 Go ou H100 80 Go).
 
 C'est là qu'interviennent **llama.cpp** et sa **technologie de quantification (Quantization)**, devenus les sauveurs permettant aux développeurs individuels ou aux appareils périphériques (MacBook ou PC de jeu classique) de faire fonctionner des LLM. En particulier, le format de fichier **GGUF (GPT-Generated Unified Format)** et l'algorithme avancé de quantification par blocs appelé **k-quants** constituent une méthode révolutionnaire qui comprime la taille du modèle à une fraction de l'original tout en minimisant la dégradation de la précision du modèle (Perplexité).
 
@@ -175,7 +175,7 @@ llama.cpp offre de nombreuses variations selon vos besoins. Le suffixe après "K
 
 ## 5. Optimisation des performances lors de l'inférence : SIMD et architecture CUDA
 
-Charger un modèle GGUF en mémoire ne rend pas l'inférence plus rapide à lui seul. La majeure partie de l'inférence d'un LLM est un "produit matriciel (Matrix-Vector Multiplication, ou GEMV, ou Matrix-Matrix, GEMM)". La clé de l'accélération réside dans le calcul efficace du produit scalaire entre les poids quantifiés et les activations (données d'entrée) conservées en FP16 (ou FP32).
+Charger un modèle GGUF en mémoire ne rend pas l'inférence plus rapide à lui seul. La majeure partie de l'inférence d'un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) est un "produit matriciel (Matrix-Vector Multiplication, ou GEMV, ou Matrix-Matrix, GEMM)". La clé de l'accélération réside dans le calcul efficace du produit scalaire entre les poids quantifiés et les activations (données d'entrée) conservées en FP16 (ou FP32).
 
 ### 5.1. Utilisation des instructions SIMD dans un environnement CPU
 
@@ -218,7 +218,7 @@ Prenons le modèle Llama 3 8B comme exemple pour examiner les spécifications re
 
 | Modèle / Quantification | Taille du fichier | VRAM/RAM requise | Vitesse d'inférence | Dégradation (Perplexité) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Llama-3-8B (FP16)** | Env. 16 Go | 18 Go ou plus | Référence | Aucune (Base) |
+| **Llama-3-8B (FP16)** | Env. 16 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) | 18 Go ou plus | Référence | Aucune (Base) |
 | **Llama-3-8B (Q8_0)** | Env. 8,5 Go | 10 Go ou plus | Rapide | Presque zéro |
 | **Llama-3-8B (Q6_K)** | Env. 6,6 Go | 8 Go ou plus | Très rapide | Minime |
 | **Llama-3-8B (Q4_K_M)** | Env. 4,9 Go | 6,5 Go ou plus | La plus rapide / optimale | Acceptable / Légère |
@@ -226,8 +226,8 @@ Prenons le modèle Llama 3 8B comme exemple pour examiner les spécifications re
 | **Llama-3-8B (Q2_K)** | Env. 3,0 Go | 4,5 Go ou plus | Rapide | Dégradation évidente |
 
 **Attention (Impact du cache KV) :**
-Lors de l'inférence LLM, lorsque la longueur du contexte (nombre de tokens du prompt) augmente, la consommation de mémoire du **cache KV** (qui stocke les états d'Attention passés) explose, en plus de celle des poids du modèle.
-Par exemple, pour un contexte de 8192 tokens, le cache KV seul consomme plusieurs Go. Par conséquent, en utilisation réelle, il est nécessaire de conserver une marge (Headroom) de `taille du fichier modèle + environ 1,5 Go à 3 Go`. La raison pour laquelle Q4_K_M est recommandé est qu'il représente l'équilibre parfait permettant de fonctionner en toute sécurité sur un GPU équipé de 8 Go de VRAM (comme la RTX 3060 / 4060), tout en réservant l'espace pour ce cache KV.
+Lors de l'inférence [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/), lorsque la longueur du contexte (nombre de tokens du prompt) augmente, la consommation de mémoire du **cache KV** (qui stocke les états d'Attention passés) explose, en plus de celle des poids du modèle.
+Par exemple, pour un contexte de 8192 tokens, le cache KV seul consomme plusieurs Go. Par conséquent, en utilisation réelle, il est nécessaire de conserver une marge (Headroom) de `taille du fichier modèle + environ 1,5 Go à 3 Go`. La raison pour laquelle Q4_K_M est recommandé est qu'il représente l'équilibre parfait permettant de fonctionner en toute sécurité sur un GPU équipé de 8 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de VRAM (comme la RTX 3060 / 4060), tout en réservant l'espace pour ce cache KV.
 
 Récemment, llama.cpp a ajouté une fonctionnalité permettant de **quantifier le cache KV lui-même en Q8_0 ou Q4_0**, et les efforts visant à étendre davantage la longueur du contexte sont continus.
 
@@ -237,7 +237,7 @@ Récemment, llama.cpp a ajouté une fonctionnalité permettant de **quantifier l
 
 Dans cet article, nous avons exploré en profondeur le fonctionnement interne du format GGUF et de la technologie de quantification k-quants, qui constituent le cœur de llama.cpp.
 
-1. **La flexibilité de GGUF :** Grâce à une structure de métadonnées de type clé-valeur, GGUF a mis en place un écosystème robuste capable de suivre l'évolution rapide des LLM (apparition de nouvelles architectures) sans subir de modifications destructives.
+1. **La flexibilité de GGUF :** Grâce à une structure de métadonnées de type clé-valeur, GGUF a mis en place un écosystème robuste capable de suivre l'évolution rapide des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) (apparition de nouvelles architectures) sans subir de modifications destructives.
 2. **Compression extrême grâce à k-quants :** La gestion hiérarchique des facteurs d'échelle avec les super-blocs et sous-blocs permet de conserver les informations des valeurs aberrantes tout en atteignant une compression incroyable de 4,8 bits en moyenne par poids (Q4_K_M).
 3. **Résolution du goulot d'étranglement de la mémoire :** Grâce à des implémentations avancées de noyaux SIMD et CUDA, la déquantification à la volée réduit les transferts depuis la VRAM et améliore considérablement la vitesse d'inférence.
 

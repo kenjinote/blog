@@ -39,7 +39,7 @@ fn main() {
 [The Rust Programming Language النسخة اليابانية](https://doc.rust-jp.rs/book-ja/)
 
 جميع الشروحات اللازمة لتعلم [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) مجمعة في الرابط أعلاه (النسخة المترجمة لليابانية).
-إنها شاملة لدرجة أنك لن تحتاج إلى شراء كتاب عن Rust.
+إنها شاملة لدرجة أنك لن تحتاج إلى شراء كتاب عن [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/).
 
 # إذا كنت تريد تجربتها على الويب
 

@@ -9,9 +9,9 @@ categories: ["programming"]
 description: 'A beginner-friendly explanation on how to install the programming language ''Go (Golang)'' developed by Google. From obtaining the installer to creating, compiling, and executing a Hello World program, it is ideal for a first introduction to the Go language.'
 ---
 # Introduction
-Go is a relatively new programming language released by Google in 2009.
+[Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) is a relatively new programming language released by Google in 2009.
 The Go compiler, tools, and libraries are released as open source.
-Also, Go is a statically typed language like C and Java, but it does not use pointers in the same way C does.
+Also, Go is a statically typed language like C and [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), but it does not use pointers in the same way C does.
 
 # How to Install
 
@@ -63,7 +63,7 @@ Executing `hello.exe` will output `Hello, world!`.
 
 [http://go.shibu.jp/](http://go.shibu.jp/)
 
-The explanations necessary for learning Go are consolidated in the link above (Japanese translated version).
+The explanations necessary for learning [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) are consolidated in the link above (Japanese translated version).
 Since technologies related to Go are open, the resources are rich enough that you don't even need to buy a physical textbook.
 
 Enjoy your Go life!

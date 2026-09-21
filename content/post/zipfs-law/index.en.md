@@ -75,7 +75,7 @@ The most classic example is word frequency in text corpora. When analyzing an En
 3. **and**: about 2.8% probability of occurrence
 4. **to**: about 2.6% probability of occurrence
 
-Thus, while just a few dozen frequent words account for nearly half of the entire text, hundreds of thousands of other words rarely appear. This "Long Tail" phenomenon is extremely important in building search engine indexes and designing vocabularies for Large Language Models (LLMs). In the field of natural language processing, words that appear far too frequently (stop words) carry little information, so techniques like TF-IDF are used to lower their weight.
+Thus, while just a few dozen frequent words account for nearly half of the entire text, hundreds of thousands of other words rarely appear. This "Long Tail" phenomenon is extremely important in building search engine indexes and designing vocabularies for [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs). In the field of natural language processing, words that appear far too frequently (stop words) carry little information, so techniques like TF-IDF are used to lower their weight.
 
 ## 4.2. City Population Distribution
 

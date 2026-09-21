@@ -241,7 +241,7 @@ Edge AI को पहले से ही विभिन्न उद्यो�
 
 हालाँकि Edge AI तकनीक तेजी से विकसित हो रही है, लेकिन अभी भी कई चुनौतियां और दिलचस्प भविष्य की संभावनाएं मौजूद हैं।
 
-**1. एज पर LLM (Large Language Models) चलाना**:
+**1. एज पर [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) ([Large Language Models](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/)) चलाना**:
 हाल के वर्षों में सबसे बड़ा विषय जनरेटिव एआई (Generative AI) या LLM को एज पर चलाने, यानी "Edge LLM" का प्रयास है। दसियों अरबों मापदंडों (parameters) वाले मॉडल को सीधे एज पर डालना असंभव है, लेकिन llama.cpp जैसे ऑप्टिमाइज़ेशन फ्रेमवर्क, 4-बिट/2-बिट जैसे चरम क्वांटिज़ेशन (AWQ, GPTQ आदि), और माइक्रोसॉफ्ट के Phi-3 जैसे छोटे लेकिन उच्च प्रदर्शन वाले SLM (Small Language Models) के आने से, एक ऐसा युग आ रहा है जहाँ स्मार्टफोन और Raspberry Pi पर भी प्राकृतिक भाषा प्रसंस्करण (NLP) ऑफ़लाइन रूप से पूरा हो सकेगा।
 
 **2. न्यूरोमॉर्फिक कंप्यूटिंग और SNN (Spiking Neural Networks)**:

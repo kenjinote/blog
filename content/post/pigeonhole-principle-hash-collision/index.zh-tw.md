@@ -173,7 +173,7 @@ graph LR
 *  **鏈結法（Chaining）** ：將發生碰撞的元素透過鏈結串列（Linked List）串連，並儲存在同一個儲存桶（Bucket）中。
 *  **開放定址法（Open Addressing）** ：當發生碰撞時，按照特定規則尋找「另一個空的儲存桶」來存放。
 
-在程式語言（如 Python 的 `dict` 或 Java 的 `HashMap` 等）的背後，正蘊含著如何高速且高效率處理因鴿籠原理而引發之碰撞的高階巧思。
+在程式語言（如 Python 的 `dict` 或 [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 的 `HashMap` 等）的背後，正蘊含著如何高速且高效率處理因鴿籠原理而引發之碰撞的高階巧思。
 
 ## 6. 密碼學技術中安全性的確保與未來
 

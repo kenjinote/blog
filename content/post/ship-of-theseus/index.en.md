@@ -45,7 +45,7 @@ This is exactly **[The Ship of Theseus](https://kenji.blog/en/p/ship-of-theseus/
 
 ## 2. "Identity" in [Object-Oriented](https://kenji.blog/en/p/oop-vs-fp-vs-dop/) Programming
 
-When considering "identity" at the code level, the most deeply related concept is **Object-Oriented Programming (OOP)**. In OOP, there are broadly two criteria for determining identity.
+When considering "identity" at the code level, the most deeply related concept is **[Object-Oriented](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/) Programming ([OOP](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/))**. In OOP, there are broadly two criteria for determining identity.
 
 1. **Reference Equality**: Do they point to the same location in memory (are the pointers the same)?
 2. **Value Equality**: Are all the attributes (data) they hold the same?

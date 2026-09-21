@@ -21,7 +21,7 @@ Alors, pourquoi s'embêter à exclure Python et à créer un moteur d'inférence
 3. **Prise en charge des périphériques Edge** : Dans des environnements aux ressources très limitées comme les smartphones, les systèmes embarqués ou le Raspberry Pi, il n'y a pas la marge pour exécuter un runtime Python consommant plusieurs gigaoctets de mémoire.
 4. **Contrôle direct du matériel** : C++ permet un contrôle de bas niveau tel que le moment de l'allocation de la mémoire, l'utilisation explicite d'instructions SIMD et l'optimisation des transferts de mémoire avec le GPU.
 
-Dans cet article, fortement inspirés par l'architecture de la bibliothèque « GGML » développée par Georgi Gerganov, nous plongerons dans les profondeurs techniques pour expliquer le processus de construction à partir de zéro d'un moteur d'inférence permettant d'exécuter de grands modèles de langage (LLM) uniquement avec du C++.
+Dans cet article, fortement inspirés par l'architecture de la bibliothèque « GGML » développée par Georgi Gerganov, nous plongerons dans les profondeurs techniques pour expliquer le processus de construction à partir de zéro d'un moteur d'inférence permettant d'exécuter de grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) uniquement avec du C++.
 
 ---
 
@@ -52,7 +52,7 @@ Nous allons assembler tout cela en utilisant les puissantes fonctionnalités du 
 
 ## 3. Le secret de la gestion de la mémoire : Memory Arena et alignement SIMD
 
-La gestion de la mémoire dans un moteur d'inférence est l'un des éléments les plus critiques, directement lié aux performances. Lors de l'inférence, en particulier lors du passage à travers chaque couche d'un modèle Transformer, un nombre massif de tenseurs intermédiaires est généré. Si vous allouez et libérez cela avec un `malloc` standard à chaque fois, la fragmentation du tas et les changements de contexte de l'OS entraîneront des baisses de vitesse fatales.
+La gestion de la mémoire dans un moteur d'inférence est l'un des éléments les plus critiques, directement lié aux performances. Lors de l'inférence, en particulier lors du passage à travers chaque couche d'un modèle [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/), un nombre massif de tenseurs intermédiaires est généré. Si vous allouez et libérez cela avec un `malloc` standard à chaque fois, la fragmentation du tas et les changements de contexte de l'OS entraîneront des baisses de vitesse fatales.
 
 C'est pourquoi nous adoptons l'approche du « **Memory Arena** ». Il s'agit d'une méthode où la quantité maximale de mémoire requise est calculée (ou fixée) et allouée en une seule fois au début de l'inférence, puis la mémoire est découpée en incrémentant simplement un pointeur.
 
@@ -189,7 +189,7 @@ Lors de l'évaluation du graphe (passage avant ou Forward Pass), le tri topologi
 
 ## 6. Le cœur des mathématiques et de l'optimisation : Produit Matriciel (GEMM)
 
-Plus de 90 % de la charge de calcul de l'inférence d'IA est consacrée à la multiplication matricielle (GEMM : General Matrix Multiply). Qu'il s'agisse du mécanisme d'attention, qui est le cœur des modèles Transformer, ou des réseaux feed-forward (FFN), tout se résume à d'énormes produits matriciels.
+Plus de 90 % de la charge de calcul de l'inférence d'IA est consacrée à la multiplication matricielle (GEMM : General Matrix Multiply). Qu'il s'agisse du mécanisme d'attention, qui est le cœur des modèles [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/), ou des réseaux feed-forward (FFN), tout se résume à d'énormes produits matriciels.
 
 Le produit $C = A B$ (taille $M \times N$) de deux matrices $A$ (taille $M \times K$) et $B$ (taille $K \times N$) est exprimé mathématiquement comme suit :
 
@@ -244,7 +244,7 @@ Même avec cette petite amélioration, vous pouvez obtenir une vitesse plusieurs
 
 ## 7. Franchir le mur matériel : Intégration des backends CUDA et Metal
 
-Une implémentation purement C++ fonctionnera raisonnablement bien sur un CPU, mais pour exécuter des modèles gigantesques comme les LLM à des vitesses pratiques (par exemple, générer plus de 20 tokens par seconde), la puissance de calcul parallèle d'un GPU est indispensable. Par conséquent, nous introduisons une couche d'abstraction de backend dans notre moteur.
+Une implémentation purement C++ fonctionnera raisonnablement bien sur un CPU, mais pour exécuter des modèles gigantesques comme les [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) à des vitesses pratiques (par exemple, générer plus de 20 tokens par seconde), la puissance de calcul parallèle d'un GPU est indispensable. Par conséquent, nous introduisons une couche d'abstraction de backend dans notre moteur.
 
 ### 7.1 Abstraction du Backend
 
@@ -344,9 +344,9 @@ Dans l'environnement Apple Silicon, une bibliothèque d'optimisation appelée MP
 
 ---
 
-## 8. Traitement spécifique aux modèles Transformer : Attention et cache KV
+## 8. Traitement spécifique aux modèles [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) : Attention et cache KV
 
-Les LLM de pointe tels que LLaMA 2/3 et GPT sont basés sur l'architecture Transformer. Afin de l'implémenter en C++, il est indispensable de construire la « Scaled Dot-Product Attention » représentée par la formule suivante.
+Les [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) de pointe tels que LLaMA 2/3 et GPT sont basés sur l'architecture Transformer. Afin de l'implémenter en C++, il est indispensable de construire la « Scaled Dot-Product Attention » représentée par la formule suivante.
 
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
@@ -378,7 +378,7 @@ En outre, pour le codage de position (Positional Encoding), nous implémentons l
 
 ## 9. Optimisation extrême grâce à la quantification (Quantization) des modèles
 
-Si vous chargez un grand modèle (par exemple, un modèle LLaMA à 7 milliards de paramètres) tel quel en FP32 (virgule flottante 32 bits), les poids seuls consommeront environ 28 Go de mémoire (VRAM). Si vous incluez le cache KV et les buffers d'inférence, cela dépasse facilement les 30 Go, ce qui le rend impossible à exécuter sur un GPU grand public typique.
+Si vous chargez un grand modèle (par exemple, un modèle LLaMA à 7 milliards de paramètres) tel quel en FP32 (virgule flottante 32 bits), les poids seuls consommeront environ 28 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de mémoire (VRAM). Si vous incluez le cache KV et les buffers d'inférence, cela dépasse facilement les 30 Go, ce qui le rend impossible à exécuter sur un GPU grand public typique.
 
 C'est là que la « **Quantification (Quantization)** » devient indispensable. C'est également la véritable force du format GGML.
 
@@ -389,7 +389,7 @@ La quantification est une technique permettant de réduire intentionnellement la
 
 Du côté du moteur d'inférence, il lit les poids compressés en INT4 (ou INT8) depuis la mémoire et **les étend (Dequantize) en FP16 ou FP32 juste après les avoir chargés dans les registres du CPU ou du GPU pour effectuer les calculs**.
 
-Étonnamment, il est plus rapide de réduire la quantité de données lues depuis la mémoire, même si cela augmente la quantité de calcul. En effet, sur le matériel moderne, le goulot d'étranglement pour les tâches d'inférence n'est pas la « puissance de calcul (Compute Bound) » mais la « **Bande Passante Mémoire (Memory Bandwidth Bound)** ». Avec un moteur implémenté en C++ et doté d'une quantification INT4, il est possible de faire tourner fluidement un LLM local même sur un MacBook Air avec 8 Go de VRAM.
+Étonnamment, il est plus rapide de réduire la quantité de données lues depuis la mémoire, même si cela augmente la quantité de calcul. En effet, sur le matériel moderne, le goulot d'étranglement pour les tâches d'inférence n'est pas la « puissance de calcul (Compute Bound) » mais la « **Bande Passante Mémoire (Memory Bandwidth Bound)** ». Avec un moteur implémenté en C++ et doté d'une quantification INT4, il est possible de faire tourner fluidement un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) local même sur un MacBook Air avec 8 Go de VRAM.
 
 ---
 
@@ -414,7 +414,7 @@ Python est certes pratique. En matière de recherche et développement et de pro
 
 Manipuler directement les tableaux d'octets en mémoire, pousser les registres à la limite avec les instructions SIMD, lutter avec la bande passante de la VRAM du GPU, tout cela pour construire un moteur d'inférence qui génère tour à tour du texte naturel (tokens) sur la console... Le sentiment d'accomplissement que vous ressentez à ce moment-là procure une « pure joie d'ingénieur » que vous ne pourrez jamais obtenir en appelant simplement `model.generate()` dans un framework Python.
 
-La technologie de l'IA a tendance à être une « Boîte Noire », mais en écrivant tout vous-même en C++, des opérations sur les tenseurs à l'allocation de mémoire, vous pouvez comprendre en profondeur le véritable mécanisme par lequel les LLM « pensent ».
+La technologie de l'IA a tendance à être une « Boîte Noire », mais en écrivant tout vous-même en C++, des opérations sur les tenseurs à l'allocation de mémoire, vous pouvez comprendre en profondeur le véritable mécanisme par lequel les [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) « pensent ».
 
 Si vous avez des connaissances de base en C++ et un fort intérêt pour la technologie de l'IA actuelle, je vous encourage vivement à relever le défi de développer votre propre moteur d'inférence. Le code source de GGML et llama.cpp constitueront sans doute les meilleurs manuels vivants.
 

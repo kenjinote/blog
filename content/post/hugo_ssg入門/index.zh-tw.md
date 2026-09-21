@@ -12,7 +12,7 @@ description: '詳細解說從 WordPress 等動態 CMS 移轉到基於 Go 語言�
 
 在現代的網頁開發與部落格營運中，網站的載入速度、安全性以及可維護性已成為極其重要的要素。長期以來在部落格與企業網站基底中佔據壓倒性市佔率的「WordPress」，憑藉其靈活的外掛生態系統與直覺的管理介面，受到廣大使用者的青睞。然而，由於其伴隨著與資料庫的通訊以及在伺服器端動態產生頁面（透過 PHP 處理），因此也存在著對流量突增的[脆弱性](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)以及顯示延遲（Latency）等課題。
 
-因此，近年來「靜態網站產生器（SSG: Static Site Generator）」正迅速普及。本篇文章將深入探討在眾多 SSG 中，基於 Go 語言開發且以壓倒性建置速度聞名的「 **Hugo** 」。我們將從與 WordPress 等動態 CMS（Content Management System）的技術架構比較開始，徹底解說具體的移轉步驟、使用數理模型進行的效能評估，以及 Hugo 特有的目錄結構與模板的尋找順序（Lookup Order）。
+因此，近年來「靜態網站產生器（SSG: Static Site Generator）」正迅速普及。本篇文章將深入探討在眾多 SSG 中，基於 [Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 語言開發且以壓倒性建置速度聞名的「 **Hugo** 」。我們將從與 WordPress 等動態 CMS（Content Management System）的技術架構比較開始，徹底解說具體的移轉步驟、使用數理模型進行的效能評估，以及 Hugo 特有的目錄結構與模板的尋找順序（Lookup Order）。
 
 ---
 
@@ -189,7 +189,7 @@ flowchart LR
 2. **利用 WordPress API 自製腳本**
    這是一種透過 Python 或 Node.js 等呼叫 WordPress 的 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) (`/wp-json/wp/v2/posts`)，解析 JSON 資料並自行產生 Markdown 檔案的腳本方法。這對大量使用外掛無法完全支援的複雜自訂欄位（如 ACF 等）的網站非常有效。
 3. **活用 wp2hugo 工具**
-   也有利用 Go 語言等撰寫的 CLI 工具，直接從 WordPress 的匯出 XML 檔（WXR）轉換成 Hugo 格式的方法。
+   也有利用 [Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 語言等撰寫的 CLI 工具，直接從 WordPress 的匯出 XML 檔（WXR）轉換成 Hugo 格式的方法。
 
 ### 4.2 維持永久連結（URL）結構
 
@@ -212,7 +212,7 @@ WordPress 特有的短代碼（例如：`[gallery]`、`[caption]`、各種外掛
 
 ## 5. Hugo 的 CLI 工具與建置、部署
 
-移轉作業完成後，終於要使用 Hugo 建置網站並向全世界發布了。作為 Go 語言二進位檔案提供的 Hugo，即使是擁有數千到數萬個頁面的網站，也擁有能在短短幾秒內完成建置的驚人速度。
+移轉作業完成後，終於要使用 Hugo 建置網站並向全世界發布了。作為 [Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 語言二進位檔案提供的 Hugo，即使是擁有數千到數萬個頁面的網站，也擁有能在短短幾秒內完成建置的驚人速度。
 
 ### 5.1 啟動本機開發用伺服器
 
@@ -315,7 +315,7 @@ jobs:
 
 ## 7. 總結
 
-本篇文章從技術架構的差異、透過數理模型的效能證明，到具體的移轉步驟，詳細解說了從 WordPress 這種動態 CMS 移轉到基於 Go 語言強大的靜態網站產生器「Hugo」的過程。
+本篇文章從技術架構的差異、透過數理模型的效能證明，到具體的移轉步驟，詳細解說了從 WordPress 這種動態 CMS 移轉到基於 [Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 語言強大的靜態網站產生器「Hugo」的過程。
 
 移轉至靜態網站產生器雖然需要初期的學習成本（Git 的操作、Markdown 的語法、從終端機執行 CLI 指令、理解模板引擎的規範等），但它所帶來的是「壓倒性的顯示速度」、「堅固的安全性」以及「免維護」等足以彌補這些成本的豐厚回報。
 

@@ -882,8 +882,8 @@ Aunque hemos introducido varios algoritmos de ordenamiento, no existe una 'únic
 - **Insertion Sort** es efectivo para cantidades muy pequeñas de datos o datos casi ordenados.
 - **Quick Sort** es ideal si deseas la mayor velocidad para fines generales.
 - **Merge Sort** es la opción elegida si necesitas estabilidad o si deseas garantizar la complejidad del peor caso.
-- **Heap Sort** es adecuado si hay restricciones estrictas de memoria y deseas un rendimiento estable in situ.
+- **[Heap](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/) Sort** es adecuado si hay restricciones estrictas de memoria y deseas un rendimiento estable in situ.
 
-Las bibliotecas estándar de los lenguajes de programación modernos (Python, Java, Rust, etc.) adoptan métodos híbridos (como TimSort o IntroSort) que combinan las fortalezas de estos algoritmos, reduciendo la necesidad de que los desarrolladores implementen sus propios algoritmos de clasificación desde cero. Sin embargo, comprender las compensaciones involucradas internamente es una base importante para diseñar software robusto y de mayor rendimiento.
+Las bibliotecas estándar de los lenguajes de programación modernos (Python, [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), etc.) adoptan métodos híbridos (como TimSort o IntroSort) que combinan las fortalezas de estos algoritmos, reduciendo la necesidad de que los desarrolladores implementen sus propios algoritmos de clasificación desde cero. Sin embargo, comprender las compensaciones involucradas internamente es una base importante para diseñar software robusto y de mayor rendimiento.
 
 Espero que este artículo sea útil para tu aprendizaje de algoritmos y desarrollo práctico.

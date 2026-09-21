@@ -11,7 +11,7 @@ description: '介绍高速静态网站生成器Hugo CLI的安装方法，以及�
 
 # Hugo 是什么
 
-Hugo 是静态网站生成器之一。它可以将Markdown文件转换为HTML来创建网站。Hugo 使用Go语言编写，运行速度非常快。
+Hugo 是静态网站生成器之一。它可以将Markdown文件转换为HTML来创建网站。Hugo 使用[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)语言编写，运行速度非常快。
 
 这个博客也是使用 Hugo 创建的。
 

@@ -11,7 +11,7 @@ tags: ["C++", "Refactoring", "Modern C++", "Legacy Code"]
 
 # [[リファクタリングの極意](https://kenji.blog/p/リファクタリングの極意/)：レガシーなC++コードを安全に改善する](https://kenji.blog/p/[リファクタリングの極意](https://kenji.blog/p/リファクタリングの極意/)/)
 
-現代のソフトウェア開発において、「レガシーコード」との戦いは避けて通れない道です。特にC++という言語において、レガシーコードは他言語のそれとは比較にならないほどの脅威を持ちます。手動での[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)（生ポインタと `new` / `delete` の嵐）、グローバル変数の乱用、例外安全性の欠如、そして何より「テストがない」という事実。マイケル・フェザーズは名著『レガシーコード改善ガイド』の中で、「テストのないコードはレガシーコードである」と断言しました。
+現代のソフトウェア開発において、「レガシーコード」との戦いは避けて通れない道です。特にC++という言語において、レガシーコードは他言語のそれとは比較にならないほどの脅威を持ちます。手動での[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)（生[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)と `new` / `delete` の嵐）、グローバル変数の乱用、例外安全性の欠如、そして何より「テストがない」という事実。マイケル・フェザーズは名著『レガシーコード改善ガイド』の中で、「テストのないコードはレガシーコードである」と断言しました。
 
 本記事では、数十年にわたって蓄積されたレガシーなC++コードベースを、安全かつ確実にModern C++ (C++11/14/17/20) へと移行し、リファクタリングするための極意を、理論と実践の両面から徹底的に解説します。技術的負債の数学的モデルから始まり、安全な依存関係の分離、そしてモダンな言語機能を用いたコードの浄化まで、実践的なアプローチを網羅します。
 
@@ -211,12 +211,12 @@ public:
 
 ## 6. [メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)の近代化と RAII の真髄
 
-C++98/03 時代のコードは、`new` と `delete` がコードの至る所に散らばっており、メモリリークやダングリングポインタの温床となっています。Modern C++ (C++11以降) では、 **所有権 (Ownership)** の概念が言語レベルでサポートされ、スマートポインタを用いた安全なリソース管理が標準となりました。
+C++98/03 時代のコードは、`new` と `delete` がコードの至る所に散らばっており、メモリリークやダングリング[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の温床となっています。Modern C++ (C++11以降) では、 **所有権 (Ownership)** の概念が言語レベルでサポートされ、スマートポインタを用いた安全なリソース管理が標準となりました。
 
 ### RAII (Resource Acquisition Is Initialization)
 RAIIはC++における最も重要なイディオムです。リソースの確保をオブジェクトの初期化 (コンストラクタ) と結びつけ、リソースの解放をオブジェクトの破棄 (デストラクタ) と結びつけることで、スコープを抜ける際に確実にリソースが解放されることを保証します。
 
-例外 (Exceptions) が発生した場合でも、スタックアンワインド (Stack Unwinding) のプロセスにおいてローカル変数のデストラクタが自動的に呼ばれるため、リソースリークを防ぐことができます。
+例外 (Exceptions) が発生した場合でも、[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)アンワインド ([Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/) Unwinding) のプロセスにおいてローカル変数のデストラクタが自動的に呼ばれるため、リソースリークを防ぐことができます。
 
 **Before (危険なレガシーコード)**
 ```cpp
@@ -246,7 +246,7 @@ void processFile(const char* filename) {
 
 このコードは、制御フローのあらゆる分岐で手動でリソースを解放しなければならず、極めて脆い構造です。
 
-**After (RAIIとスマートポインタの活用)**
+**After (RAIIとスマート[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の活用)**
 ```cpp
 void processFile(const std::string& filename) {
     // std::ifstreamはファイルハンドルをRAIIで管理する
@@ -330,7 +330,7 @@ constexpr double area = calculateCircleArea(10.0);
 1. **複雑度を計測し、事実に基づいて戦略を立てる**
 2. **接合部を見つけ出し、仕様化テストでシステムを保護する**
 3. **DIによって密結合を打破し、グローバル状態を根絶する**
-4. **RAIIとスマートポインタによって[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)の不安を取り除く**
+4. **RAIIとスマート[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)によって[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)の不安を取り除く**
 5. **Modern C++の機能を活用し、コンパイラに仕事を行わせる**
 
 「ボーイスカウトの規則（キャンプ場を来たときよりも綺麗にして去る）」の精神を持ち、日々の開発タスクの中で少しずつ、しかし着実にコードを改善し続けることが、リファクタリングの真の極意なのです。

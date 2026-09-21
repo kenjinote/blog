@@ -443,7 +443,7 @@ $$
 Space(N) \le C \times N \implies O(N)
 $$
 
-Sin embargo, en el análisis sintáctico de descenso recursivo, se consume memoria de la pila de llamadas (call stack) proporcionalmente a la profundidad (Depth) de anidamiento de JSON. Se necesita memoria de pila $O(D)$ para la profundidad $D$. Si se proporciona un JSON anidado infinitamente de manera maliciosa, existe el peligro de causar un desbordamiento de pila (Stack Overflow), por lo que en los analizadores prácticos, se deben tomar medidas como establecer un límite superior en la profundidad de recursión (por ejemplo, 256 o 512) o desenrollar la recursión en un bucle.
+Sin embargo, en el análisis sintáctico de descenso recursivo, se consume memoria de la pila de llamadas (call stack) proporcionalmente a la profundidad (Depth) de anidamiento de JSON. Se necesita memoria de pila $O(D)$ para la profundidad $D$. Si se proporciona un JSON anidado infinitamente de manera maliciosa, existe el peligro de causar un desbordamiento de pila ([Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/) Overflow), por lo que en los analizadores prácticos, se deben tomar medidas como establecer un límite superior en la profundidad de recursión (por ejemplo, 256 o 512) o desenrollar la recursión en un bucle.
 
 ---
 

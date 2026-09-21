@@ -338,7 +338,7 @@ def partition(arr, low, high):
     return i + 1
 ```
 
-### 3.3 Tri par Tas (Heap Sort)
+### 3.3 Tri par Tas ([Heap](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/) Sort)
 
 Le tri par tas est un algorithme de tri qui utilise habilement une structure de données arborescente appelée **Tas Binaire (Binary Heap)**. Bien que sa complexité dans le pire des cas soit de $O(n \log n)$, il possède la caractéristique d'être un tri In-place n'utilisant pas de mémoire supplémentaire, ce qui le rend semblable à un regroupement des avantages du tri fusion et du tri rapide.
 
@@ -467,7 +467,7 @@ Alors que les manuels académiques couvrent souvent jusqu'au tri rapide et au tr
 
 ### 5.1 Timsort (Par défaut en Python)
 
-Le Timsort est un algorithme implémenté pour Python en 2002 par Tim Peters. Aujourd'hui, il est le champion du monde pratique, adopté dans de nombreux langages, tels que `list.sort()` et `sorted()` de Python bien sûr, mais aussi pour les tableaux d'objets de Java et le tri standard de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/).
+Le Timsort est un algorithme implémenté pour Python en 2002 par Tim Peters. Aujourd'hui, il est le champion du monde pratique, adopté dans de nombreux langages, tels que `list.sort()` et `sorted()` de Python bien sûr, mais aussi pour les tableaux d'objets de [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) et le tri standard de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/).
 
 La plus grande philosophie de conception du Timsort est basée sur l'expérience selon laquelle **« dans le monde réel, les données sont rarement complètement aléatoires, et sont souvent partiellement triées (il y a des blocs consécutifs ascendants ou descendants) »**.
 
@@ -504,7 +504,7 @@ Nous avons résumé sous forme de tableau les performances des principaux algori
 | **Tri par Insertion (Insertion Sort)** | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | Yes | Insertion. Extrêmement fort sur données presque triées. |
 | **Tri Fusion (Merge Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | Diviser pour régner. Complexité robuste mais gourmand en mémoire. |
 | **Tri Rapide (Quick Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | $O(\log n)$ | No | Diviser pour régner. Plus rapide en moyenne mais attention au pire cas. |
-| **Tri par Tas (Heap Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No | Tas Binaire. In-place et robuste. |
+| **Tri par Tas ([Heap](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/) Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No | Tas Binaire. In-place et robuste. |
 | **Tri par Dénombrement (Counting Sort)** | $O(n+k)$ | $O(n+k)$ | $O(n+k)$ | $O(k)$ | Yes | Non comparatif. Imbattable si plage de clés étroite. |
 | **Timsort** (Standard Python etc.) | $O(n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | Hybride. Adaptatif et le plus rapide pour données réelles. |
 | **Introsort** (Standard C++ etc.) | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(\log n)$ | No | Hybride. Allie la vitesse de Quick et la robustesse de Heap. |

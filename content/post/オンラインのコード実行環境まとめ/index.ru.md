@@ -28,7 +28,7 @@ Google Colaboratory — это среда выполнения Python, кото�
 
 - [Javascript Playground](https://playcode.io/)
 
-## Java
+## [Java](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/)
 
 - [paiza.IO Online Java compiler](https://paiza.io/ja/projects/new?language=java)
 
@@ -47,7 +47,7 @@ Google Colaboratory — это среда выполнения Python, кото�
 
 - [AWS Cloud9](https://aws.amazon.com/jp/cloud9/)
 
-Онлайн-интегрированная среда разработки, предоставляемая Amazon AWS. Поставляется с предварительно упакованными инструментами для более чем 40 языков программирования, таких как Node.js, JavaScript, Python, PHP, Ruby, Go, C++ и других.
+Онлайн-интегрированная среда разработки, предоставляемая Amazon AWS. Поставляется с предварительно упакованными инструментами для более чем 40 языков программирования, таких как Node.js, JavaScript, Python, PHP, Ruby, [Go](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/), C++ и других.
 
 - [Visual Studio Code for the Web](https://vscode.dev/)
 
@@ -55,7 +55,7 @@ Google Colaboratory — это среда выполнения Python, кото�
 
 - [paiza.IO](https://paiza.io/projects/CGAcQLfW-IOXYy8Dq2OHBw?locale=ja-jp)
 
-Онлайн-среда выполнения, поддерживающая 24 основных языка, включая C, C++, Java, Ruby, Python, PHP, Perl и др.
+Онлайн-среда выполнения, поддерживающая 24 основных языка, включая C, C++, [Java](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/), Ruby, Python, PHP, Perl и др.
 
 - [CodePen](https://codepen.io/)
 

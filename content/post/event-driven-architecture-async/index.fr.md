@@ -110,7 +110,7 @@ const main = async () => {
 main();
 ```
 
-L'avantage de l'Event Loop est qu'elle ne nécessite pas de gestion des verrous pour les états partagés. Cependant, l'exécution de tâches lourdes (CPU-bound) dans la Call Stack risque de bloquer l'Event Loop entière, entraînant un état d'arrêt du système (blocage de l'Event Loop). La complexité des calculs doit être limitée à des tâches légères allant de $ O(1) $ à $ O(N) $.
+L'avantage de l'Event Loop est qu'elle ne nécessite pas de gestion des verrous pour les états partagés. Cependant, l'exécution de tâches lourdes (CPU-bound) dans la Call [Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/) risque de bloquer l'Event Loop entière, entraînant un état d'arrêt du système (blocage de l'Event Loop). La complexité des calculs doit être limitée à des tâches légères allant de $ O(1) $ à $ O(N) $.
 
 ---
 
@@ -141,7 +141,7 @@ flowchart LR
 
 ### 3.2 Exemple d'implémentation d'Acteur en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)
 
-En Rust, un langage de programmation système, il est possible de construire le modèle Acteur en utilisant des crates asynchrones puissantes telles que `tokio` ou `actix`. Voici un exemple d'implémentation d'un modèle d'Acteur simple utilisant des canaux `mpsc` (Multi-Producer, Single-Consumer).
+En [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), un langage de programmation système, il est possible de construire le modèle Acteur en utilisant des crates asynchrones puissantes telles que `tokio` ou `actix`. Voici un exemple d'implémentation d'un modèle d'Acteur simple utilisant des canaux `mpsc` (Multi-Producer, Single-Consumer).
 
 ```rust
 use std::sync::Arc;

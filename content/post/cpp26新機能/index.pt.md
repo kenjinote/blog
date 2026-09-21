@@ -326,7 +326,7 @@ int main() {
 }
 ```
 
-## 6.2 Hazard Pointers e RCU (Read-Copy Update)
+## 6.2 Hazard [Pointer](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/)s e RCU (Read-Copy Update)
 
 Como recursos padrão de suporte à implementação de estruturas de dados lock-free (livres de bloqueio), os **Hazard Pointers** (`std::hazard_pointer`) e o **RCU** (`std::rcu`) foram padronizados. Isso reduziu drasticamente a barreira de entrada para a implementação de estruturas de dados concorrentes de alto desempenho em C++.
 
@@ -359,7 +359,7 @@ O C++26 é, sem dúvida, uma versão histórica na qual os "recursos dos sonhos"
 *   A **Reflexão** acaba com a complexidade da metaprogramação, alcançando acesso à AST em $O(1)$.
 *   A **Programação por Contratos** permite a construção de programas robustos, especificando claramente as pré e pós-condições das funções.
 *   A **Correspondência de Padrões** permite a escrita intuitiva e segura de ramificações complexas e transições de estado.
-*   **Senders/Receivers** e **RCU / Hazard Pointers** padronizam o processamento concorrente para extrair o máximo de desempenho.
+*   **Senders/Receivers** e **RCU / Hazard [Pointer](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/)s** padronizam o processamento concorrente para extrair o máximo de desempenho.
 
 Utilizando adequadamente esses recursos, o maior ponto forte do C++, a "Abstração com Sobrecarga Zero (Zero-overhead Abstraction)", pode ser alcançado em um nível superior e com um código surpreendentemente limpo.
 

@@ -173,7 +173,7 @@ To resolve this collision, algorithms like the following are incorporated:
 * **Chaining**: Connect colliding elements with a linked list and store them in the same bucket.
 * **Open Addressing**: When a collision occurs, find "another empty bucket" according to specific rules and store it.
 
-Behind the scenes of programming languages (like `dict` in Python or `HashMap` in Java), sophisticated contrivances are devised to handle the collisions caused by the Pigeonhole Principle as quickly and efficiently as possible.
+Behind the scenes of programming languages (like `dict` in Python or `HashMap` in [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)), sophisticated contrivances are devised to handle the collisions caused by the Pigeonhole Principle as quickly and efficiently as possible.
 
 ## 6. Ensuring Security in [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and the Future
 

@@ -86,7 +86,7 @@ Reduxは以下の3つの基本原則に基づいています。
 
 1. **Single source of truth** （単一の信頼できる情報源）: アプリケーション全体の状態は、一つのオブジェクトツリー（Store）に格納される。
 2. **State is read-only** （状態は読み取り専用）: 状態を変更する唯一の方法は、何が起きたかを表すActionを発行（dispatch）することである。
-3. **Changes are made with pure functions** （変更は純粋関数で行う）: Actionによって状態ツリーがどのように変換されるかを指定するために、純粋関数であるReducerを記述する。
+3. **Changes are made with pure functions** （変更は[純粋関数](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)で行う）: Actionによって状態ツリーがどのように変換されるかを指定するために、純粋関数であるReducerを記述する。
 
 Reduxにより、タイムトラベルデバッグ（状態の巻き戻しや再生）が可能になり、開発体験（DX）が飛躍的に向上しました。
 

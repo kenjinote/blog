@@ -49,7 +49,7 @@ También es posible crear herramientas especializadas para un propósito o su pr
 
 ### Fácil de distribuir sin necesidad de tiempo de ejecución
 
-Dado que no se requieren tiempos de ejecución externos como .NET o Java, **se puede distribuir solo con un archivo ejecutable**.
+Dado que no se requieren tiempos de ejecución externos como .NET o [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), **se puede distribuir solo con un archivo ejecutable**.
 Es menos propenso a problemas durante la redistribución y es atractivo porque es fácil de ejecutar incluso sin un instalador.
 
 ### Se pueden crear aplicaciones ligeras

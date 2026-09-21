@@ -12,7 +12,7 @@ description: 'Detaillierte Entwicklungsschritte und interne Architektur für die
 
 # Entwicklungsschritte für kleine KI-Modelle (wie TinyLLaMA) mit C++
 
-In den letzten Jahren ist das Interesse an der Ausführung von Large Language Models (LLMs) in lokalen Umgebungen rasant gestiegen. Insbesondere kleine Modelle wie TinyLLaMA (1,1B Parameter) können selbst auf Edge-Geräten mit begrenzten Ressourcen oder herkömmlichen Laptops (einschließlich Windows-Umgebungen) mit praktischer Geschwindigkeit für Inferenzen genutzt werden. Während die Entwicklung hauptsächlich mit Python und PyTorch erfolgt, ist die Kombination aus C++ und „ggml“, einer C-basierten Tensor-Bibliothek, zum De-facto-Standard geworden, wenn es darum geht, die ultimative Leistung und Speichereffizienz zu erreichen.
+In den letzten Jahren ist das Interesse an der Ausführung von [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) in lokalen Umgebungen rasant gestiegen. Insbesondere kleine Modelle wie TinyLLaMA (1,1B Parameter) können selbst auf Edge-Geräten mit begrenzten Ressourcen oder herkömmlichen Laptops (einschließlich Windows-Umgebungen) mit praktischer Geschwindigkeit für Inferenzen genutzt werden. Während die Entwicklung hauptsächlich mit Python und PyTorch erfolgt, ist die Kombination aus C++ und „ggml“, einer C-basierten Tensor-Bibliothek, zum De-facto-Standard geworden, wenn es darum geht, die ultimative Leistung und Speichereffizienz zu erreichen.
 
 In diesem Artikel werden wir die detaillierten Entwicklungsschritte erläutern, um eine Inferenz-Engine von Grund auf aufzubauen (oder die interne Struktur der bestehenden llama.cpp tiefgehend zu verstehen), mit der TinyLLaMA in C++ geladen und Text generiert wird.
 

@@ -161,7 +161,7 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 在终端操作中，最频繁执行的动作之一就是 **“从历史记录中找出过去执行过的复杂命令并重新执行”** 。由于标准的 `Ctrl+R`（反向搜索）是完全一致匹配，很难从“记得好像是用 docker run 挂载了卷……”这样模糊的记忆中调出命令。
 
-能优雅解决这个问题的，是使用 Go 语言编写的超高速通用模糊搜索工具 **`fzf`**。
+能优雅解决这个问题的，是使用 [Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 语言编写的超高速通用模糊搜索工具 **`fzf`**。
 
 ## 4.1. 使用 fzf 进行模糊搜索的流水线
 

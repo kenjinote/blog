@@ -10,11 +10,11 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'Ein umfassender Vergleich von C++ Zeigern und Rusts Ownership- und Borrowing-Modell. Von rohen Zeigern und Smart Pointern bis hin zum Borrow Checker wird das Wesen der Speichersicherheit erklärt.'
 ---
 
-In der modernen Systemprogrammierung ist die Vereinbarkeit von Leistung und Speichersicherheit eine ständige Herausforderung. C++ war lange Zeit der unangefochtene König in diesem Bereich, aber in den letzten Jahren hat [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) begonnen, diese Position zu bedrohen. Das größte Merkmal von Rust ist die Garantie der Speichersicherheit zur Kompilierzeit ohne [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) (GC), was durch die Konzepte von "Ownership" (Eigentum) und "Borrowing" (Ausleihen) erreicht wird.
+In der modernen Systemprogrammierung ist die Vereinbarkeit von Leistung und Speichersicherheit eine ständige Herausforderung. C++ war lange Zeit der unangefochtene König in diesem Bereich, aber in den letzten Jahren hat [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) begonnen, diese Position zu bedrohen. Das größte Merkmal von [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) ist die Garantie der Speichersicherheit zur Kompilierzeit ohne [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) (GC), was durch die Konzepte von "Ownership" (Eigentum) und "Borrowing" (Ausleihen) erreicht wird.
 
-In diesem Artikel werden wir C++ Zeiger (rohe Zeiger, `std::unique_ptr`, `std::shared_ptr`) und das [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Ownership-Modell detailliert vergleichen. Wir werden anhand von Codebeispielen und Diagrammen ausführlich erklären, wie der Rust-Compiler ([Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)) Use-After-Free (Verwendung nach Freigabe) und Datenrennen (Data Races) verhindert.
+In diesem Artikel werden wir C++ Zeiger (rohe Zeiger, `std::unique_ptr`, `std::shared_ptr`) und das [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)-Ownership-Modell detailliert vergleichen. Wir werden anhand von Codebeispielen und Diagrammen ausführlich erklären, wie der [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)-Compiler ([Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)) Use-After-Free (Verwendung nach Freigabe) und Datenrennen (Data Races) verhindert.
 
-## 1. Grundlagen der Speicherverwaltung: Stack und Heap
+## 1. Grundlagen der Speicherverwaltung: [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) und [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)
 
 Um die Grundlagen der Speicherverwaltung zu verstehen, lassen Sie uns zunächst einen Blick darauf werfen, wie Programme den Speicher nutzen. Der Speicherbereich wird grob in "Stack" und "Heap" unterteilt.
 
@@ -46,12 +46,12 @@ graph TD
 
 Werfen wir einen Blick auf die Entwicklung der Speicherverwaltung in C++.
 
-### Die Ära der rohen Zeiger (Raw Pointers) und ihre Probleme
+### Die Ära der rohen Zeiger (Raw [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)s) und ihre Probleme
 
 Rohe Zeiger (`*`), die von der Sprache C übernommen wurden, bieten ultimative Freiheit, sind aber gleichzeitig eine Brutstätte für die folgenden schwerwiegenden Bugs:
 
 - **Speicherleck (Memory Leak)**: Vergessen, mit `new` zugewiesenen Speicher mit `delete` freizugeben.
-- **Hängender Zeiger (Dangling Pointer)**: Zugriff auf einen Zeiger nach der Speicherfreigabe (nach `delete`).
+- **Hängender Zeiger (Dangling [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/))**: Zugriff auf einen Zeiger nach der Speicherfreigabe (nach `delete`).
 - **Doppelte Freigabe (Double Free)**: Zweimaliges Aufrufen von `delete` für denselben Speicherbereich.
 
 ```cpp
@@ -67,7 +67,7 @@ void rawPointerExample() {
 }
 ```
 
-### Die Einführung von RAII und Smart Pointern (ab C++11)
+### Die Einführung von RAII und Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)n (ab C++11)
 
 Seit C++11 wurden Smart Pointer, die auf dem RAII-Konzept (Resource Acquisition Is Initialization) basieren, standardisiert, und die direkte Verwendung von rohen Zeigern wird nicht mehr empfohlen.
 
@@ -101,7 +101,7 @@ Ein Zeiger, der es mehreren Zeigern ermöglicht, dasselbe Objekt zu teilen. Er v
 
 Das Ownership-System von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) basiert auf den folgenden drei sehr einfachen Regeln:
 
-1. **Jeder Wert in Rust hat eine Variable, die als sein Eigentümer (Owner) bezeichnet wird.**
+1. **Jeder Wert in [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) hat eine Variable, die als sein Eigentümer (Owner) bezeichnet wird.**
 2. **Es kann immer nur einen Eigentümer zur gleichen Zeit geben.**
 3. **Wenn der Eigentümer den Gültigkeitsbereich (Scope) verlässt, wird der Wert verworfen.**
 
@@ -173,7 +173,7 @@ Als konkretes Beispiel, bei dem die Leistungsfähigkeit des [Borrow Checker](htt
 
 ### Iterator-Ungültigmachung in C++ (Laufzeitabsturz)
 
-Wenn ein `std::vector` in C++ innerhalb einer Schleife geändert wird, besteht die Möglichkeit, dass der dahinterliegende Speicher neu zugewiesen (reallocated) wird, wodurch Referenzen zu hängenden Zeigern (Dangling Pointers) werden.
+Wenn ein `std::vector` in C++ innerhalb einer Schleife geändert wird, besteht die Möglichkeit, dass der dahinterliegende Speicher neu zugewiesen (reallocated) wird, wodurch Referenzen zu hängenden Zeigern (Dangling [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)s) werden.
 
 ```cpp
 // C++: Bug der Iterator-Ungültigmachung
@@ -199,7 +199,7 @@ int main() {
 
 ### Schutz zur Kompilierzeit durch [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)
 
-Lassen Sie uns genau dieselbe Logik in Rust schreiben.
+Lassen Sie uns genau dieselbe Logik in [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) schreiben.
 
 ```rust
 // Rust: Iterator-Ungültigmachung zur Kompilierzeit verhindern
@@ -234,7 +234,7 @@ graph LR
 Geteiltes Eigentum, das dem `std::shared_ptr` in C++ entspricht, ist auch in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) verfügbar, jedoch gibt es eine klare Typentrennung für Single-Threaded- und Multi-Threaded-Anwendungen.
 
 ### Für Single-Thread: `Rc<T>` (Reference Counted)
-`Rc<T>` ist ein nicht-thread-sicherer Smart Pointer mit Referenzzählung. Da er Inkrementierungs- und Dekrementierungsoperationen ohne atomare Befehle durchführt, ist er innerhalb eines einzelnen Threads sehr schnell. Wenn Sie jedoch versuchen, ihn an einen anderen Thread zu senden, führt dies zu einem Kompilierfehler (da er das `Send`-Trait nicht implementiert).
+`Rc<T>` ist ein nicht-thread-sicherer Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) mit Referenzzählung. Da er Inkrementierungs- und Dekrementierungsoperationen ohne atomare Befehle durchführt, ist er innerhalb eines einzelnen Threads sehr schnell. Wenn Sie jedoch versuchen, ihn an einen anderen Thread zu senden, führt dies zu einem Kompilierfehler (da er das `Send`-Trait nicht implementiert).
 
 ### Für Multi-Thread: `Arc<T>` (Atomic Reference Counted)
 Wenn Daten zwischen Threads geteilt werden sollen, wird `Arc<T>` verwendet, das atomare Inkrementierungen und Dekrementierungen durchführt. Es verursacht vergleichbare Kosten wie `std::shared_ptr` in C++.
@@ -275,13 +275,13 @@ Bemerkenswert ist, dass `Mutex<T>` in [Rust](https://kenji.blog/de/p/webassembly
 
 ## Fazit: "Vorabprüfung" durch den Compiler oder "Eigenverantwortung" durch den Entwickler
 
-Zeiger und Smart Pointer in C++ bieten Entwicklern ein hohes Maß an Kontrolle und Leistung, aber ihre korrekte Verwendung hängt von der Disziplin des Entwicklers ab. Obwohl C++ durch die Einführung von RAII und `std::unique_ptr` drastisch sicherer geworden ist, kann es "undefiniertes Verhalten" wie den Zugriff nach einem Move oder die Iterator-Ungültigmachung auf Sprachebene nicht vollständig verhindern.
+Zeiger und Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) in C++ bieten Entwicklern ein hohes Maß an Kontrolle und Leistung, aber ihre korrekte Verwendung hängt von der Disziplin des Entwicklers ab. Obwohl C++ durch die Einführung von RAII und `std::unique_ptr` drastisch sicherer geworden ist, kann es "undefiniertes Verhalten" wie den Zugriff nach einem Move oder die Iterator-Ungültigmachung auf Sprachebene nicht vollständig verhindern.
 
-Auf der anderen Seite erkennt [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) diese Fehler zur **Kompilierzeit** anstatt zur Laufzeit, indem es die Regeln von "Ownership" und "Borrowing" in den Compiler integriert. Die starke Garantie, dass "wenn es kompiliert, speichersicher ist", ist der Hauptgrund, warum Rust in der Systemprogrammierung schnell an Popularität gewinnt.
+Auf der anderen Seite erkennt [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) diese Fehler zur **Kompilierzeit** anstatt zur Laufzeit, indem es die Regeln von "Ownership" und "Borrowing" in den Compiler integriert. Die starke Garantie, dass "wenn es kompiliert, speichersicher ist", ist der Hauptgrund, warum [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) in der Systemprogrammierung schnell an Popularität gewinnt.
 
 Der Kampf mit dem [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/) von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) ("Fighting the borrow checker") ist für Anfänger eine große Hürde, aber letztendlich übernimmt der Compiler nur streng die komplexe Berechnung der "Verfolgung der Lebensdauer von Zeigern", die C++ Programmierer ursprünglich in ihren Köpfen durchführten.
 
-Wenn man Rust lernt, nachdem man die Freiheit und die Gefahren von C++ Zeigern verstanden hat, wird man die Philosophie hinter dem Ownership-Modell und das "Warum es so entworfen wurde" tiefgründiger verstehen können.
+Wenn man [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) lernt, nachdem man die Freiheit und die Gefahren von C++ Zeigern verstanden hat, wird man die Philosophie hinter dem Ownership-Modell und das "Warum es so entworfen wurde" tiefgründiger verstehen können.
 
 ---
 *Dieser Artikel ist eine vergleichende Betrachtung der Speicherverwaltungsmethoden in C++ und Rust. Wir hoffen, dass er als Referenz für die Auswahl der geeigneten Sprache entsprechend den Anforderungen des jeweiligen Projekts dient.*

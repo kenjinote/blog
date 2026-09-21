@@ -173,7 +173,7 @@ graph LR
 *  **链地址法（Chaining）** ：将发生冲突的元素用链表（Linked List）连接起来，存放在同一个桶（Bucket）中。
 *  **开放寻址法（Open Addressing）** ：当发生冲突时，按照特定规则寻找“空闲的其他桶”来存放。
 
-在编程语言（如 Python 的 `dict` 或 Java 的 `HashMap` 等）的底层，为了高速且高效地处理由鸽巢原理引起的冲突，凝聚了高度的巧思。
+在编程语言（如 Python 的 `dict` 或 [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 的 `HashMap` 等）的底层，为了高速且高效地处理由鸽巢原理引起的冲突，凝聚了高度的巧思。
 
 ## 6. 密码技术中安全性的保障与未来
 

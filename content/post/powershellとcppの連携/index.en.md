@@ -301,8 +301,8 @@ Monitoring information from proprietary hardware devices (e.g., specialized PCIe
 
 The most common bugs that occur during integration are **memory leaks** and **Access Violations (0xC0000005)**.
 
-1. **Pointer Lifetimes**: When passing `[ref]` or `StringBuilder` from the PowerShell side, P/Invoke pins the memory only during the call. Do not save that pointer to a global variable on the C++ side and access it later. When performing asynchronous callbacks, you must explicitly pin the memory using `GCHandle`.
-2. **Pointer Sizes in 64-bit Environments**: Modern Windows is fundamentally 64-bit (x64). Pointer sizes on the C++ side are 8 bytes, so you must use `IntPtr` on the PowerShell (.NET) side. Since a C++ `long` is 4 bytes on Windows, old code that casts a pointer to a `long` and passes it will cause crashes.
+1. **[Pointer](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) Lifetimes**: When passing `[ref]` or `StringBuilder` from the PowerShell side, P/Invoke pins the memory only during the call. Do not save that pointer to a global variable on the C++ side and access it later. When performing asynchronous callbacks, you must explicitly pin the memory using `GCHandle`.
+2. **[Pointer](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) Sizes in 64-bit Environments**: Modern Windows is fundamentally 64-bit (x64). Pointer sizes on the C++ side are 8 bytes, so you must use `IntPtr` on the PowerShell (.NET) side. Since a C++ `long` is 4 bytes on Windows, old code that casts a pointer to a `long` and passes it will cause crashes.
 3. **String Encoding Mismatches**: PowerShell uses UTF-16 internally. If you try to receive it as an ANSI string (`std::string`, `char*`) on the C++ side, garbled characters will occur. Always use wide strings (`std::wstring`, `wchar_t*`) and ensure you specify `CharSet = CharSet.Unicode` on the P/Invoke side as well.
 
 ## Conclusion

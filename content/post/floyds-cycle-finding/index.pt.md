@@ -209,7 +209,7 @@ int main() {
 
 ### Implementação em [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)
 
-No caso do Rust, devido às regras de "ownership" (propriedade) e "borrowing" (empréstimo), a implementação de listas ligadas tende a ser complexa. Contudo, em programação competitiva, é comum modelar isto como um problema de referência de índices num array (ou `Vec`).
+No caso do [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), devido às regras de "ownership" (propriedade) e "borrowing" (empréstimo), a implementação de listas ligadas tende a ser complexa. Contudo, em programação competitiva, é comum modelar isto como um problema de referência de índices num array (ou `Vec`).
 Aqui, apresentamos um exemplo de implementação utilizando um array onde cada elemento contém "o índice seguinte" em vez de um "ponteiro para o próximo".
 
 ```rust

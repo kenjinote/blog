@@ -11,7 +11,7 @@ tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 
 # AI编写代码时代所需的「人类特有的工程师技能」
 
-近年来，随着生成式AI（Generative AI）和大型语言模型（LLM）的飞跃性进展，软件工程的格局发生了剧烈的变化。GitHub Copilot和各种AI编程助手已经成为日常工具，“用自然语言下达指令，AI瞬间生成代码”这种现象，早已不再是未来的科幻，而是今天的现实。
+近年来，随着生成式AI（Generative AI）和大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的飞跃性进展，软件工程的格局发生了剧烈的变化。GitHub Copilot和各种AI编程助手已经成为日常工具，“用自然语言下达指令，AI瞬间生成代码”这种现象，早已不再是未来的科幻，而是今天的现实。
 
 在这样的时代，许多工程师会自然而然地产生“我的工作会不会被AI夺走？”的焦虑。的确，编写常规的CRUD应用程序的样板代码、实现简单的算法，或是调用熟知的库API，这类“单纯的编码工作（Typing Code）”正在迅速商品化。
 
@@ -23,7 +23,7 @@ tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 
 为了正确评估AI的能力，并看清人类应该在哪些领域发挥价值，我们首先必须从数学和架构的角度理解AI（特别是LLM）的结构性局限。
 
-### 1.1 Transformer架构中的计算量与上下文限制
+### 1.1 [Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)架构中的计算量与上下文限制
 
 目前大多数的LLM都基于Google在2017年发布的“Transformer”架构。Transformer的核心在于“自注意力机制（Self-Attention Mechanism）”。自注意力机制会计算输入序列中的每个Token与所有其他Token之间的相关程度。
 
@@ -38,7 +38,7 @@ $$ \text{Complexity} = O(N^2 \cdot d) $$
 
 近年来，尽管出现了像FlashAttention这样的硬件级优化，以及Sparse Attention，甚至是Mamba（状态空间模型，[State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) Space Models）等可以在线性时间 $O(N)$ 内处理的替代架构的研究，但要“完全理解无限的上下文并生成全局最优化的输出”仍然极其困难。
 
-此外，即使能够物理上扩大上下文窗口，也会发生所谓的“迷失在中间（Lost in the Middle）”现象。LLM很容易受到提示词开头和结尾信息的强烈影响，而倾向于忽略放置在中间的重要需求或约束。如果让LLM读取数万行的企业级系统源代码并指示它“进行最佳重构”，生成的代码往往局部正确但在全局上却是崩溃的，这就是原因所在。
+此外，即使能够物理上扩大上下文窗口，也会发生所谓的“迷失在中间（Lost in the Middle）”现象。[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)很容易受到提示词开头和结尾信息的强烈影响，而倾向于忽略放置在中间的重要需求或约束。如果让LLM读取数万行的企业级系统源代码并指示它“进行最佳重构”，生成的代码往往局部正确但在全局上却是崩溃的，这就是原因所在。
 
 ### 1.2 概率生成模型的特性与“幻觉”
 
@@ -201,7 +201,7 @@ pie title 工程师的时间分配（AI时代）
 
 ## 7. 结语：与其拒绝进化，不如驾驭浪潮
 
-“AI编写代码的时代”对工程师来说不是威胁，而是历史上最大的机遇。就像曾经发生过从汇编语言到C语言的过渡，以及从手动管理内存指针到Java的垃圾回收的进化一样，AI生成代码仅仅是“抽象的层级又提高了一层”而已。
+“AI编写代码的时代”对工程师来说不是威胁，而是历史上最大的机遇。就像曾经发生过从汇编语言到C语言的过渡，以及从手动管理内存指针到[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)的垃圾回收的进化一样，AI生成代码仅仅是“抽象的层级又提高了一层”而已。
 
 未来的工程师，不再需要为特定编程语言的细节规范或框架的版本更新而患得患失，而是可以将资源集中在 **“业务的问题是什么”、“数据该如何划分以及如何协同”、“系统宕机时如何快速恢复”** 等更具本质性、更具人类高级属性的问题解决上。
 

@@ -82,7 +82,7 @@ mindmap
 
 - **REG_SZ (文字列値)**: 最も一般的なデータ型。NULL終端のUnicode文字列（UTF-16LE）を格納します。ファイルパス、URL、UIの表示名などに使用されます。
 - **REG_DWORD (32ビット整数の値)**: 32ビット（4バイト）の符号なし整数値。ブール値（0=無効、1=有効）や、ミリ秒単位のタイムアウト値、エラーコードの設定などに頻繁に使用されます。Windowsはリトルエンディアンアーキテクチャであるため、ディスク上では下位バイトから順（例: 0x12345678 は `78 56 34 12`）に保存されます。
-- **REG_QWORD (64ビット整数の値)**: 64ビット（8バイト）の整数値。64ビットアーキテクチャの普及に伴い、巨大な数値（ディスククォータや大容量メモリのサイズ指定など）やポインタサイズの設定を保存するために使用されます。
+- **REG_QWORD (64ビット整数の値)**: 64ビット（8バイト）の整数値。64ビットアーキテクチャの普及に伴い、巨大な数値（ディスククォータや大容量メモリのサイズ指定など）や[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)サイズの設定を保存するために使用されます。
 - **REG_MULTI_SZ (複数行文字列値)**: 複数のNULL終端文字列を連続して格納し、最後にさらに空のNULL終端文字（ダブルNULL）を置いて終端とする形式です。IPアドレスのリスト、依存関係のあるサービスのリスト、バインディングの順序など、配列的なデータを保存するのに適しています。
 - **REG_EXPAND_SZ (展開可能な文字列値)**: `%USERPROFILE%` や `%SystemRoot%` のような未展開の環境変数文字列を含む特殊な文字列型。アプリケーションが `RegQueryValueEx` API を通じて読み取る際、または `ExpandEnvironmentStrings` API を呼び出すことで、OSによって動的に実際の絶対パスに展開されます。
 - **REG_BINARY (バイナリ値)**: 任意の生のバイナリデータストリーム。[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)されたパスワード（LSA Secretsなど）、デジタル証明書、アプリケーション固有の複雑な構造体やシリアライズデータが格納されます。
@@ -109,7 +109,7 @@ $$
 \text{Size}_{\text{Total}} = \sum_{h \in \text{Hives}} \left( N_{h} \times S_{\text{key\_metadata}} + \sum_{v \in h} S_{\text{value}}(v) \right) + S_{\text{overhead}}
 $$
 
-$N_h$ はハイブ $h$ 内のキー数、$S_{\text{key\_metadata}}$ はキー1つあたりのメタデータ（最終書き込みタイムスタンプ、セキュリティ記述子へのポインタ、親キーへのポインタなど）のサイズ、$S_{\text{value}}(v)$ は値 $v$ のペイロードサイズです。[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ログや不要になった空きセル（フラグメンテーション）によるオーバーヘッド $S_{\text{overhead}}$ も含まれます。レジストリに不要なデータ（アンインストールしきれなかったソフトの残骸など）を長期間放置すると、このフットプリントが増大し、OSのページプールメモリを圧迫してパフォーマンス低下を招く可能性があります。
+$N_h$ はハイブ $h$ 内のキー数、$S_{\text{key\_metadata}}$ はキー1つあたりのメタデータ（最終書き込みタイムスタンプ、セキュリティ記述子への[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)、親キーへのポインタなど）のサイズ、$S_{\text{value}}(v)$ は値 $v$ のペイロードサイズです。[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ログや不要になった空きセル（フラグメンテーション）によるオーバーヘッド $S_{\text{overhead}}$ も含まれます。レジストリに不要なデータ（アンインストールしきれなかったソフトの残骸など）を長期間放置すると、このフットプリントが増大し、OSのページプールメモリを圧迫してパフォーマンス低下を招く可能性があります。
 
 ## 6. システムの堅牢性を脅かす手動編集のリスクと破損確率
 

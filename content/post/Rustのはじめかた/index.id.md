@@ -13,7 +13,7 @@ description: 'Menjelaskan cara memulai bahasa pemrograman Rust yang cepat dan am
 Bahasa ini mendukung multi-platform dan juga digunakan di dunia [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/) dan sistem tertanam (embedded).
 Selain itu, bahasa ini digunakan oleh perusahaan terkenal seperti Firefox, DropBox, dan Cloudflare.
 
-Rust juga menarik perhatian sebagai alternatif dari C++.
+[Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) juga menarik perhatian sebagai alternatif dari C++.
 
 # Cara Menginstal
 
@@ -39,7 +39,7 @@ itu akan dikompilasi, dan menjalankan `./main` (untuk Windows `main.exe`) akan m
 [The Rust Programming Language Versi Jepang](https://doc.rust-jp.rs/book-ja/)
 
 Semua penjelasan yang diperlukan untuk mempelajari [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) telah dirangkum di tautan di atas (versi terjemahan bahasa Jepang).
-Itu sangat lengkap sehingga Anda tidak perlu membeli buku teks tentang Rust.
+Itu sangat lengkap sehingga Anda tidak perlu membeli buku teks tentang [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/).
 
 # Jika Anda Ingin Mencobanya di Web
 

@@ -30,7 +30,7 @@ Bei der Entwicklung von Webanwendungen ist immer wieder die Frage ein Thema: "So
 
 ### 2.1. Stärken und Schwächen von nativen Apps
 
-Die größte Stärke nativer Apps (entwickelt mit Swift/Objective-C für iOS, Kotlin/Java für Android usw.) ist der vollständige Zugriff auf die Betriebssystem-APIs.
+Die größte Stärke nativer Apps (entwickelt mit Swift/Objective-C für iOS, Kotlin/[Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) für Android usw.) ist der vollständige Zugriff auf die Betriebssystem-APIs.
 Dadurch lassen sich fortschrittliche Funktionen implementieren, die Kamera, GPS, Bluetooth, NFC und verschiedene Sensoren optimal nutzen. Da sie für das Betriebssystem optimiert sind, ist die Rendering-Leistung sehr hoch, wodurch native Apps für Spiele, die stark auf komplexe Animationen und 3D-Grafiken angewiesen sind, einen überwältigenden Vorteil haben.
 
 Andererseits weisen native Apps folgende große Schwächen (Herausforderungen) auf:

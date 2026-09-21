@@ -13,7 +13,7 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 在現代軟體工程中，C++與[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)是站在系統程式設計最前線的兩大巨頭。長年以來，C++在作業系統、嵌入式裝置、遊戲引擎、高頻交易（HFT）系統等需要發揮硬體極限效能的領域中，一直以絕對王者的姿態君臨天下。我本身也是一位資深C++工程師，從C++98時代的原始指標叢林開始，一路伴隨著C++11現代化浪潮（引進智慧指標、[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)表達式、`auto`），以及C++14/17/20不斷龐大化的規範編寫著程式碼。
 
-然而近年來，為了解決C++所面臨的結構性問題——特別是因「缺乏記憶體安全性」造成的安全漏洞（據說約7成的CVE起因於記憶體問題）以及「無止盡複雜化的規範與未定義行為（UB）」——[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的強勢崛起提供了解決方案。Linux核心正式採用Rust，以及Microsoft、Google、AWS等科技巨頭進行的大規模Rust轉移專案，這不僅僅是一時的流行，更意味著系統程式設計正經歷典範轉移。
+然而近年來，為了解決C++所面臨的結構性問題——特別是因「缺乏記憶體安全性」造成的安全漏洞（據說約7成的CVE起因於記憶體問題）以及「無止盡複雜化的規範與未定義行為（UB）」——[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的強勢崛起提供了解決方案。Linux核心正式採用[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)，以及Microsoft、Google、AWS等科技巨頭進行的大規模Rust轉移專案，這不僅僅是一時的流行，更意味著系統程式設計正經歷典範轉移。
 
 本篇文章將由一位道地的C++工程師，從語言規範核心的技術觀點出發，深入比較並解說實際深入學習Rust、並在實戰中使用後所感受到的「優點」與「缺點」。
 
@@ -59,7 +59,7 @@ int main() {
 
 ## [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的所有權（Ownership）與借用檢查器的絕對防禦
 
-Rust將這個「所有權」的概念融入語言的核心設計中，並透過稱為 **借用檢查器（[Borrow Checker](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)）** 的編譯器功能進行嚴格的靜態分析。
+[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)將這個「所有權」的概念融入語言的核心設計中，並透過稱為 **借用檢查器（[Borrow Checker](https://kenji.blog/zh-tw/p/memory-management-garbage-collection/)）** 的編譯器功能進行嚴格的靜態分析。
 
 ```rust
 fn consume(s: String) {
@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-在[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)中，當變數的所有權移動的那一刻，原來的變數在編譯器眼中就被視為等同「未初始化」狀態，並完全阻斷後續的存取。因此，「Use-After-Free（釋放後使用）」或「Dangling Pointer（迷途指標）」等Bug，在理論上根本無法通過編譯。
+在[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)中，當變數的所有權移動的那一刻，原來的變數在編譯器眼中就被視為等同「未初始化」狀態，並完全阻斷後續的存取。因此，「Use-After-Free（釋放後使用）」或「Dangling [Pointer](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)（迷途指標）」等Bug，在理論上根本無法通過編譯。
 
 ```mermaid
 graph TD
@@ -158,7 +158,7 @@ int main() {
 
 ## [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的Mutex「擁有」資料
 
-在Rust中，`Mutex<T>`使用泛型將受保護的資料型別 `T` **內含（擁有）** 在其中。為了存取資料，必須呼叫`lock()`來取得守衛物件（Guard Object）。如果不取得鎖就想觸碰資料，在語法上是不可能的。
+在[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)中，`Mutex<T>`使用泛型將受保護的資料型別 `T` **內含（擁有）** 在其中。為了存取資料，必須呼叫`lock()`來取得守衛物件（Guard Object）。如果不取得鎖就想觸碰資料，在語法上是不可能的。
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -266,7 +266,7 @@ fn draw_dynamic(item: &dyn Drawable) {
 }
 ```
 
-[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的動態分派（`dyn Trait`）最大的特點是，資料結構內部不包含vptr，而是使用 **胖指標（Fat Pointer）** 。胖指標將「指向資料的指標」與「指向vtable的指標」作為一對保存。這使得為外部函式庫定義的型別事後實作（擴充）特徵並進行動態分派變得非常容易。
+[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的動態分派（`dyn Trait`）最大的特點是，資料結構內部不包含vptr，而是使用 **胖指標（Fat [Pointer](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）** 。胖指標將「指向資料的指標」與「指向vtable的指標」作為一對保存。這使得為外部函式庫定義的型別事後實作（擴充）特徵並進行動態分派變得非常容易。
 
 ---
 
@@ -295,7 +295,7 @@ graph TD
 
 # 7. 學習[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的缺點與學習曲線
 
-到目前為止談了許多Rust的優點，但C++工程師要將Rust投入實戰時，也確實會面臨一些「高牆」與缺點。
+到目前為止談了許多[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)的優點，但C++工程師要將Rust投入實戰時，也確實會面臨一些「高牆」與缺點。
 
 ## 1. 與嚴酷借用檢查器的搏鬥
 如果在Rust中試圖直接實作C++裡「隨便用原始指標串接」的資料結構（例如雙向鏈結串列、圖結構、自我參考結構等），會因為所有權與生命週期的限制而無法通過編譯。為了解決借用檢查器的問題，必須進行像 `Rc<RefCell<T>>` 這樣複雜的包裝，或者從根本上重新設計，改用區域分配器（Arena Allocator）或基於索引的管理方式。
@@ -312,7 +312,7 @@ graph TD
 
 C++未來在遊戲引擎開發以及既存的龐大基礎設施中，仍將繼續扮演重要的角色。C++20/23帶來的現代化也非常顯著，使得撰寫程式碼變得更安全。
 
-然而，在「全新啟動的系統程式設計專案」中，我覺得現在 **已經很難找到不選擇Rust的理由** 了。只要能通過編譯，就能從未定義行為與記憶體破壞的恐懼中解放出來，並能以高效能安全地進行並行處理，Rust這種「確定性」大幅改善了工程師的心智模型。
+然而，在「全新啟動的系統程式設計專案」中，我覺得現在 **已經很難找到不選擇[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)的理由** 了。只要能通過編譯，就能從未定義行為與記憶體破壞的恐懼中解放出來，並能以高效能安全地進行並行處理，Rust這種「確定性」大幅改善了工程師的心智模型。
 
 對C++工程師而言，學習Rust不單只是記住新的語法，而是獲得對「安全管理記憶體與執行緒的方法」全新視角的最佳體驗。請大家務必親身體會看看Cargo的舒適與借用檢查器的嚴格。
 

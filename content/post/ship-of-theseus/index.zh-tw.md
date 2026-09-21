@@ -45,7 +45,7 @@ graph LR
 
 ## 2. 物件導向程式設計中的「同一性」
 
-若在程式碼層級思考「同一性」，關聯最深的就是 **物件導向程式設計（OOP）** 的概念。在 OOP 中，為了判斷同一性，大致上存在兩個基準。
+若在程式碼層級思考「同一性」，關聯最深的就是 **物件導向程式設計（[OOP](https://kenji.blog/zh-tw/p/object-oriented-programming-oop-solid-principles/)）** 的概念。在 OOP 中，為了判斷同一性，大致上存在兩個基準。
 
 1. **參考的等價性（Reference Equality）** ：是否指向記憶體上的同一個位置（指標是否相同）
 2. **值的等價性（Value Equality）** ：所保持的屬性（資料）是否全部相同

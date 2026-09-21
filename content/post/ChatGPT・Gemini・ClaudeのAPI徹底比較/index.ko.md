@@ -11,7 +11,7 @@ tags: ["ChatGPT", "Gemini", "Claude", "API", "Comparison"]
 
 # ChatGPT・Gemini・Claude의 API 철저 비교! 어떤 것을 선택해야 할까?
 
-AI 기술의 진화는 눈부시며, 특히 대규모 언어 모델(LLM: Large Language Model) 분야에서는 OpenAI의 ChatGPT(GPT 시리즈), Google의 Gemini, Anthropic의 Claude가 삼파전의 치열한 패권 다툼을 벌이고 있습니다. 2026년 현재, 각 회사는 수개월, 아니 수주일 단위로 새로운 모델과 API 기능을 출시하고 있으며, 개발자나 기업의 IT 아키텍트에게 "어떤 API를 프로덕트에 통합해야 하는가"라는 질문은 프로젝트의 성공을 좌우하는 매우 중요한 의사 결정이 되었습니다.
+AI 기술의 진화는 눈부시며, 특히 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/): Large Language Model) 분야에서는 OpenAI의 ChatGPT(GPT 시리즈), Google의 Gemini, Anthropic의 Claude가 삼파전의 치열한 패권 다툼을 벌이고 있습니다. 2026년 현재, 각 회사는 수개월, 아니 수주일 단위로 새로운 모델과 API 기능을 출시하고 있으며, 개발자나 기업의 IT 아키텍트에게 "어떤 API를 프로덕트에 통합해야 하는가"라는 질문은 프로젝트의 성공을 좌우하는 매우 중요한 의사 결정이 되었습니다.
 
 본 기사에서는 이 3대 AI 제공업체의 API에 대해 단순한 스펙의 나열에 그치지 않고, 아키텍처 설계, 상세한 요금 구조, 지연 시간(레이턴시)의 수학적 분석, Python 및 Node.js를 이용한 구체적인 구현 예시, 프롬프트 캐싱 등 최신 비용 최적화 기법에 이르기까지 개발자의 관점에서 철저하게 비교하고 해설합니다.
 
@@ -79,7 +79,7 @@ API에 입력된 텍스트는 내부적으로 '토큰'이라는 단위로 분할
 
 ## 4. 지연 시간(레이턴시)과 성능의 수학적 분석
 
-실시간 애플리케이션에서 지연 시간은 사용자 경험(UX)과 직결됩니다. LLM API의 지연 시간 $T_{total}$은 수학적으로 다음과 같이 모델링할 수 있습니다.
+실시간 애플리케이션에서 지연 시간은 사용자 경험(UX)과 직결됩니다. [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) API의 지연 시간 $T_{total}$은 수학적으로 다음과 같이 모델링할 수 있습니다.
 
 $$ T_{total} = T_{network} + T_{TTFT} + (N \times T_{TPOT}) $$
 
@@ -90,7 +90,7 @@ $$ T_{total} = T_{network} + T_{TTFT} + (N \times T_{TPOT}) $$
 - $T_{TPOT}$ (Time Per Output Token): 1토큰 당 생성 시간. 자기 회귀(autoregressive) 모델이므로 이전 출력에 의존하여 직렬로 계산됩니다.
 
 ### 4.1 자기 어텐션(Self-Attention) 메커니즘의 계산량
-Transformer 아키텍처에서 자기 어텐션(Self-Attention)의 계산량은 입력 시퀀스 길이 $L$에 대해 이차 함수적으로 증가합니다.
+[Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 아키텍처에서 자기 어텐션(Self-Attention)의 계산량은 입력 시퀀스 길이 $L$에 대해 이차 함수적으로 증가합니다.
 
 $$ \text{Complexity} = O(L^2 \cdot d) $$
 
@@ -210,7 +210,7 @@ if __name__ == "__main__":
 
 ## 8. Node.js에 의한 Tool Calling(Function Calling) 구현
 
-LLM을 단순한 챗봇이 아니라 외부 시스템과 연동하는 'AI 에이전트'로 기능하게 하려면 Tool Calling(또는 Function Calling)이 필수적입니다. 다음은 Node.js(TypeScript)를 사용하여 OpenAI API가 날씨 API를 호출하도록 하는 예시입니다.
+[LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 단순한 챗봇이 아니라 외부 시스템과 연동하는 'AI 에이전트'로 기능하게 하려면 Tool Calling(또는 Function Calling)이 필수적입니다. 다음은 Node.js(TypeScript)를 사용하여 OpenAI API가 날씨 API를 호출하도록 하는 예시입니다.
 
 ```typescript
 import OpenAI from "openai";
@@ -312,7 +312,7 @@ sequenceDiagram
 
 ## 11. 엔터프라이즈급 보안 및 컴플라이언스
 
-기업이 LLM API를 프로덕션 환경에서 사용할 때 가장 우려하는 점은 "자사의 데이터가 AI 학습에 사용되지는 않는가"와 "컴플라이언스 요건을 충족하는가"입니다.
+기업이 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) API를 프로덕션 환경에서 사용할 때 가장 우려하는 점은 "자사의 데이터가 AI 학습에 사용되지는 않는가"와 "컴플라이언스 요건을 충족하는가"입니다.
 
 3사 모두 API를 통해 전송된 데이터(프롬프트 및 응답)를 **모델 학습에 사용하지 않는다고(Zero Data Retention / No Training on Customer Data)** 명시하고 있습니다(※무료 소비자용 웹 채팅 UI는 예외입니다).
 
@@ -340,7 +340,7 @@ sequenceDiagram
    모든 작업을 무난하게 소화하며, 서드파티 도구 지원도 가장 풍부합니다. Structured Outputs를 활용한 확실한 JSON 파싱이나, o1 모델을 이용한 초고도 논리 추론이 필요한 경우 OpenAI 생태계가 필수적입니다.
 
 ### 멀티 모델 라우팅 권장
-단일 API에 의존(벤더 종속)하는 것이 아니라, 작업의 난이도나 중요도에 따라 모델을 동적으로 전환하는 **"LLM 라우팅"** 아키텍처가 향후의 트렌드입니다.
+단일 API에 의존(벤더 종속)하는 것이 아니라, 작업의 난이도나 중요도에 따라 모델을 동적으로 전환하는 **"[LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 라우팅"** 아키텍처가 향후의 트렌드입니다.
 예를 들어, 사용자의 단순한 질문에는 저렴하고 빠른 `GPT-4o-mini`나 `Gemini 1.5 Flash`로 응답하고, 복잡한 처리가 필요하다고 판단되는 경우에만 `Claude 3.5 Sonnet`으로 작업을 폴백(fallback)시킴으로써 비용과 성능의 최적 균형을 실현할 수 있습니다.
 
 AI의 진화는 멈추지 않습니다. 각 API의 장단점과 아키텍처의 특성을 깊이 이해하여 유연하고 확장 가능한 AI 애플리케이션을 구축하시기 바랍니다.

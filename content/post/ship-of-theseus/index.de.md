@@ -50,7 +50,7 @@ Das ist genau das **Schiff des Theseus**. Selbst wenn alle Komponenten (Teile), 
 
 ## 2. „Identität“ in der objektorientierten Programmierung
 
-Wenn wir über „Identität“ auf Code-Ebene nachdenken, ist das Konzept, das am engsten damit verbunden ist, die **objektorientierte Programmierung (OOP)**. In der OOP gibt es grob zwei Kriterien, um Identität zu bestimmen:
+Wenn wir über „Identität“ auf Code-Ebene nachdenken, ist das Konzept, das am engsten damit verbunden ist, die **objektorientierte Programmierung ([OOP](https://kenji.blog/de/p/object-oriented-programming-oop-solid-principles/))**. In der OOP gibt es grob zwei Kriterien, um Identität zu bestimmen:
 
 1. **Referenzgleichheit (Reference Equality)**: Verweisen sie auf denselben Ort im Speicher (ist der Zeiger derselbe)?
 2. **Wertegleichheit (Value Equality)**: Sind alle gehaltenen Attribute (Daten) gleich?

@@ -13,7 +13,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 現代のWebフロントエンド開発において、パフォーマンスと開発体験（DX：Developer Experience）の両立は、あらゆるプロジェクトにおいて最重要課題の一つです。静的サイトジェネレーター（SSG）の中で世界最速クラスのビルドスピードを誇る **Hugo** と、ユーティリティファーストという革新的なパラダイムを持ち込んだ **Tailwind CSS** を組み合わせることは、この課題に対する一つの究極の解答と言えます。
 
-HugoはGo言語で記述されており、数千ページのサイトであってもわずか数秒、あるいはミリ秒単位でビルドを完了させる驚異的なパフォーマンスを持っています。一方、Tailwind CSSは事前に定義された無数のユーティリティクラス（`flex`, `text-center`, `mt-4`など）をHTMLに直接記述していくことで、CSSファイルとHTMLファイルの間を往復するコンテキストスイッチを無くし、デザインのイテレーションを高速化します。
+Hugoは[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語で記述されており、数千ページのサイトであってもわずか数秒、あるいはミリ秒単位でビルドを完了させる驚異的なパフォーマンスを持っています。一方、Tailwind CSSは事前に定義された無数のユーティリティクラス（`flex`, `text-center`, `mt-4`など）をHTMLに直接記述していくことで、CSSファイルとHTMLファイルの間を往復するコンテキストスイッチを無くし、デザインのイテレーションを高速化します。
 
 本記事では、HugoのテーマにTailwind CSSを導入し、さらにPostCSSを用いた高度なアセット[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)（Hugo Pipes）を構築する手順を、アーキテクチャの根幹から数学的な[パフォーマンス最適化](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)の観点に至るまで、徹底的にかつ詳細に解説します。
 
@@ -268,7 +268,7 @@ module.exports = {
 
 #### [パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の解説とMermaid図解
 
-上記のGoテンプレートコードがどのようにCSSファイルを処理していくのか、一連のパイプライン処理を図解します。
+上記の[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)テンプレートコードがどのようにCSSファイルを処理していくのか、一連のパイプライン処理を図解します。
 
 ```mermaid
 flowchart TD

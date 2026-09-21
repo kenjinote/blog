@@ -21,7 +21,7 @@ for (let i = 0; i < boxes.length; i++) {
 
 または、
 
-新規でブックマークを作成して、登録時のアドレス(通常はhttps://...と入力する部分に)に以下のコードを貼り付けて登録します。
+新規でブックマークを作成して、登録時の[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)(通常はhttps://...と入力する部分に)に以下のコードを貼り付けて登録します。
 チェックをつけたいWebページを表示し、作成したブックマークをクリックするとすべてのチェックボックスがチェックされます。
 ```
 javascript:(function(){let boxes=document.querySelectorAll('input[type="checkbox"]');for(let i=0;i<boxes.length;i++){if(!boxes[i].disabled){boxes[i].checked=true;}}})();

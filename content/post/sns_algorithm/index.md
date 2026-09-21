@@ -46,7 +46,7 @@ $$
 $$
 
 **技術選定への影響：**
-このアルゴリズムは、「[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)に興味があるAさん」と「Rustに興味があるBさん」を潜在空間上で近付けます。もしAさんが新興のWebフレームワークの投稿に「いいね」をした場合、Bさんのタイムラインにもそのフレームワークの投稿が高い確率で表示されます。これにより、特定の技術スタックを好むエンジニア集団の中で、特定の技術が局所的に大流行する現象が起きます。
+このアルゴリズムは、「[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)に興味があるAさん」と「[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)に興味があるBさん」を潜在空間上で近付けます。もしAさんが新興のWebフレームワークの投稿に「いいね」をした場合、Bさんのタイムラインにもそのフレームワークの投稿が高い確率で表示されます。これにより、特定の技術[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を好むエンジニア集団の中で、特定の技術が局所的に大流行する現象が起きます。
 
 ### 2.2 深層学習を用いた推薦モデル (DLRM)
 

@@ -10,13 +10,13 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 程式語言的演進歷史，同時也是與複雜性抗爭的歷史。隨著軟體規模的擴大，開發者面臨了狀態管理、效能及維護性的障礙，為了解決這些問題，提出了各種 **程式設計典範** 。
 
-本文將針對現代軟體開發中成為主流的 **物件導向程式設計** （OOP）、具備數學強健性的 **函數式程式設計** （FP），以及專注於效能與資料分離的 **資料導向程式設計** （DOP / DOD），深入探討各自的思想、優勢與 **極限** 。此外，還將解說現代強大的語言（如 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 與 TypeScript 等）如何將這些典範進行 **融合** 。
+本文將針對現代軟體開發中成為主流的 **物件導向程式設計** （[OOP](https://kenji.blog/zh-tw/p/object-oriented-programming-oop-solid-principles/)）、具備數學強健性的 **函數式程式設計** （FP），以及專注於效能與資料分離的 **資料導向程式設計** （DOP / DOD），深入探討各自的思想、優勢與 **極限** 。此外，還將解說現代強大的語言（如 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 與 TypeScript 等）如何將這些典範進行 **融合** 。
 
 ---
 
-## 1. 物件導向程式設計 (OOP) 的興衰
+## 1. 物件導向程式設計 ([OOP](https://kenji.blog/zh-tw/p/object-oriented-programming-oop-solid-principles/)) 的興衰
 
-**物件導向** （Object-Oriented Programming）在 1990 年代至 2010 年代期間，作為軟體開發的絕對王者君臨天下。Java、C++、C# 等語言引領了這個典範，將現實世界進行建模的直觀方法廣受接受。
+**物件導向** （[Object-Oriented](https://kenji.blog/zh-tw/p/object-oriented-programming-oop-solid-principles/) Programming）在 1990 年代至 2010 年代期間，作為軟體開發的絕對王者君臨天下。[Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)、C++、C# 等語言引領了這個典範，將現實世界進行建模的直觀方法廣受接受。
 
 ### 1.1 OOP 的核心概念
 
@@ -54,7 +54,7 @@ const animals: Animal[] = [new Dog("Buddy"), new Cat("Kitty")];
 animals.forEach(a => a.speak());
 ```
 
-### 1.2 OOP 的極限與「香蕉與大猩猩問題」
+### 1.2 [OOP](https://kenji.blog/zh-tw/p/object-oriented-programming-oop-solid-principles/) 的極限與「香蕉與大猩猩問題」
 
 OOP 乍看之下是完美的建模手法，但隨著系統規模擴大，卻引發了 **濫用繼承** 與 **隱含的狀態管理** 等致命問題。
 
@@ -91,7 +91,7 @@ classDiagram
 
 ## 2. 函數式程式設計 (FP) 的數學方法
 
-為了對抗 OOP 的「狀態變異」所帶來的複雜性， **函數式程式設計** （Functional Programming）作為一種反命題而備受矚目。它不僅影響了 Haskell、Scala、Clojure 等語言，在現代也對 JavaScript 與 TypeScript 產生了深遠的影響。
+為了對抗 [OOP](https://kenji.blog/zh-tw/p/object-oriented-programming-oop-solid-principles/) 的「狀態變異」所帶來的複雜性， **函數式程式設計** （[Functional Programming](https://kenji.blog/zh-tw/p/functional-programming-concepts-pure-functions-monads/)）作為一種反命題而備受矚目。它不僅影響了 Haskell、Scala、Clojure 等語言，在現代也對 JavaScript 與 TypeScript 產生了深遠的影響。
 
 ### 2.1 FP 的核心概念
 
@@ -130,7 +130,7 @@ $ S' = f(S, A) $
 
 函數式典範也有其極限。電腦本質上是具有狀態的機器（馮·紐曼架構），而純粹的 FP 偏離了 CPU 的運作原理。
 
-為了保持不變性而進行的記憶體配置（對垃圾回收器的負擔），以及為了處理如 I/O（螢幕輸出、資料庫寫入）這類「絕對無法避免的副作用」所使用的單子（Monad）等，都具有較高的概念學習成本，有時甚至會成為效能瓶頸。
+為了保持不變性而進行的記憶體配置（對垃圾回收器的負擔），以及為了處理如 I/O（螢幕輸出、資料庫寫入）這類「絕對無法避免的副作用」所使用的單子（[Monad](https://kenji.blog/zh-tw/p/functional-programming-concepts-pure-functions-monads/)）等，都具有較高的概念學習成本，有時甚至會成為效能瓶頸。
 
 ---
 
@@ -140,7 +140,7 @@ $ S' = f(S, A) $
 
 ### 3.1 DOP 的核心概念
 
-DOP 將「分離資料與邏輯」視為最高使命。相較於 OOP 將資料與邏輯整合在類別中，DOP 則是將兩者剝離。
+DOP 將「分離資料與邏輯」視為最高使命。相較於 [OOP](https://kenji.blog/zh-tw/p/object-oriented-programming-oop-solid-principles/) 將資料與邏輯整合在類別中，DOP 則是將兩者剝離。
 
 - **資料的分離** : 將資料定義為純粹的資料結構（記錄、結構體），不賦予任何行為。
 - **ECS (實體元件系統)** : 以將資料分割為元件的方式取代繼承，並由系統（函數）進行批次處理。
@@ -192,7 +192,7 @@ graph TD
 
 | 典範 | 優點 | 缺點 | 最佳使用案例 |
 | :--- | :--- | :--- | :--- |
-| **OOP** | 直觀的建模，透過封裝進行隱藏 | 繼承的複雜化，隱含狀態變異導致的 Bug | GUI 框架，業務領域的建模 |
+| **[OOP](https://kenji.blog/zh-tw/p/object-oriented-programming-oop-solid-principles/)** | 直觀的建模，透過封裝進行隱藏 | 繼承的複雜化，隱含狀態變異導致的 Bug | GUI 框架，業務領域的建模 |
 | **FP** | 具備並行處理耐性，易於測試，可預測性 | 學習曲線陡峭，效能（GC 負擔） | 資料轉換管線，並行處理系統 |
 | **DOP** | 壓倒性的效能，狀態的透明度 | 資料內聚力降低，容易變得程序化 | 遊戲開發，高負載運算處理，嵌入式系統 |
 
@@ -200,9 +200,9 @@ graph TD
 
 ## 5. 現代的最佳解答：典範的「融合」
 
-在今日，從中選擇「唯一正解」被認為是毫無意義的。現代的程式語言（如 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)、TypeScript、Scala、Go 等）都在吸取這些典範的 **優點** 。
+在今日，從中選擇「唯一正解」被認為是毫無意義的。現代的程式語言（如 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)、TypeScript、Scala、[Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 等）都在吸取這些典範的 **優點** 。
 
-### 5.1 Rust 所展現的終極融合
+### 5.1 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 所展現的終極融合
 
 Rust 以令人驚嘆的程度，將這三個典範融合在一起。
 

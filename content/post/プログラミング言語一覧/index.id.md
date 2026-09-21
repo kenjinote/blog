@@ -25,13 +25,13 @@ description: 'Kami telah membuat daftar berbagai bahasa pemrograman dari C, Pyth
 
 ## [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
-## Go
+## [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)
 
 ## Python
 
 ## Ruby
 
-## Java
+## [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)
 
 ## JavaScript
 
@@ -132,4 +132,4 @@ Diinstal secara default di Windows. Dapat menangani objek.
 
 ## Salesforce APEX
 
-Bahasa yang sangat mirip dengan Java.
+Bahasa yang sangat mirip dengan [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/).

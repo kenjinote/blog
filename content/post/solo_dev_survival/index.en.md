@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # Introduction: The Battle of the "Have-nots" Challenging the Giants
 
-In the history of software development, there has never been a time more advantageous for solo developers (indie developers) than now. The democratization of cloud infrastructure like AWS and GCP, the rise of BaaS (Backend as a [Service](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/)) like Vercel and Supabase, and above all, the automation of coding through the evolution of LLMs (Large Language Models). All of these have created an environment where individuals can compete head-on with the "giants," the major tech companies.
+In the history of software development, there has never been a time more advantageous for solo developers (indie developers) than now. The democratization of cloud infrastructure like AWS and GCP, the rise of BaaS (Backend as a [Service](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/)) like Vercel and Supabase, and above all, the automation of coding through the evolution of LLMs ([Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/)). All of these have created an environment where individuals can compete head-on with the "giants," the major tech companies.
 
 However, just because technical resources have flattened does not mean you can win by adopting the same strategies as major companies. Individuals are overwhelmingly disadvantaged in terms of capital, marketing power, and brand power. For solo developers to survive and win, a unique "survival strategy" is essential.
 

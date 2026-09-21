@@ -47,7 +47,7 @@ $$ 16000 \times 1 \times \frac{32}{8} = 64,000 \text{ bytes/sec (64 KB/s)} $$
 
 ### 2.2 Mel 스펙트로그램 변환의 수학적 원리
 
-Whisper의 내부에서는 1차원 음성 파형 데이터(Raw Waveform)를 직접 처리하는 것이 아닙니다. 인간의 청각 특성에 가까운 주파수 표현인 **Mel 스펙트로그램 (Mel-Spectrogram)** 으로 변환한 후 Transformer 모델에 입력됩니다. `whisper.cpp`는 이 변환 처리를 C++ 구현 내에 포함하고 있지만, 원리를 이해해 두는 것은 노이즈 대책이나 전처리 최적화에 도움이 됩니다.
+Whisper의 내부에서는 1차원 음성 파형 데이터(Raw Waveform)를 직접 처리하는 것이 아닙니다. 인간의 청각 특성에 가까운 주파수 표현인 **Mel 스펙트로그램 (Mel-Spectrogram)** 으로 변환한 후 [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 모델에 입력됩니다. `whisper.cpp`는 이 변환 처리를 C++ 구현 내에 포함하고 있지만, 원리를 이해해 두는 것은 노이즈 대책이나 전처리 최적화에 도움이 됩니다.
 
 일반적인 주파수 $f$ (Hz)를 Mel 척도 $m$으로 변환하는 수식은 다음과 같이 근사됩니다.
 

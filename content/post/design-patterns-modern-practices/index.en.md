@@ -36,7 +36,7 @@ Here, we take a look at some of the most representative GoF patterns and see how
 
 The `Strategy` pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable.
 
-**Traditional GoF Approach (Java-style)**
+**Traditional GoF Approach ([Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)-style)**
 
 ```java
 // Definition of the interface
@@ -135,7 +135,7 @@ The `Visitor` pattern is for separating data structures from the operations perf
 
 Nowadays, languages equipped with **Algebraic Data Types (ADT)** and **Pattern Matching** ([Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala, etc.) elegantly solve this problem.
 
-**Modern Approach (Rust Enums and Pattern Matching)**
+**Modern Approach ([Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) Enums and Pattern Matching)**
 
 ```rust
 // Algebraic Data Type (Enum with variants)
@@ -169,7 +169,7 @@ graph TD
     E["Service B"] -->|"Depends on"| B
 ```
 
-Because DI containers like Spring Framework (Java), NestJS (TypeScript), and Dagger/Hilt (Android) manage the creation and destruction of instances, you shouldn't write Singleton logic (`getInstance()` and `private constructor`) in the class itself.
+Because DI containers like Spring Framework ([Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)), NestJS (TypeScript), and Dagger/Hilt (Android) manage the creation and destruction of instances, you shouldn't write Singleton logic (`getInstance()` and `private constructor`) in the class itself.
 
 ## 4. Design Patterns in [Functional Programming](https://kenji.blog/en/p/oop-vs-fp-vs-dop/)
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**Result Type in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) (Application of the Either Monad)**
+**Result Type in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) (Application of the Either [Monad](https://kenji.blog/en/p/functional-programming-concepts-pure-functions-monads/))**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

@@ -38,7 +38,7 @@ fn main() {
 [The Rust Programming Language 日文版](https://doc.rust-jp.rs/book-ja/)
 
 学习 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 所需的讲解都汇总在上述链接（日文翻译版）中。
-其内容非常详实，甚至不需要额外购买 Rust 的相关书籍。
+其内容非常详实，甚至不需要额外购买 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 的相关书籍。
 
 # 如果想在 Web 上运行
 

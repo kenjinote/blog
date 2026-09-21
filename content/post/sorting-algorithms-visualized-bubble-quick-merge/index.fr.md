@@ -882,8 +882,8 @@ Bien que nous ayons présenté divers algorithmes de tri, il n'existe pas d'algo
 - Pour de très petites quantités de données ou des données presque triées, le **tri par insertion** est efficace.
 - Pour une utilisation générale nécessitant la vitesse maximale, le **tri rapide** est optimal.
 - Lorsque la stabilité est requise ou pour garantir la complexité du pire des cas, le **tri fusion** est choisi.
-- Lorsque les contraintes de mémoire sont strictes et qu'une performance stable en place est souhaitée, le **tri par tas (Heap Sort)** est approprié.
+- Lorsque les contraintes de mémoire sont strictes et qu'une performance stable en place est souhaitée, le **tri par tas ([Heap](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/) Sort)** est approprié.
 
-Dans les bibliothèques standard des langages de programmation modernes (Python, Java, Rust, etc.), des méthodes hybrides combinant les avantages de ces algorithmes (TimSort, IntroSort, etc.) sont adoptées, et les opportunités pour les développeurs d'implémenter eux-mêmes des algorithmes de tri de zéro ont diminué. Cependant, comprendre quels compromis sont pris en compte en interne est une base importante pour concevoir des logiciels plus performants et plus robustes.
+Dans les bibliothèques standard des langages de programmation modernes (Python, [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), etc.), des méthodes hybrides combinant les avantages de ces algorithmes (TimSort, IntroSort, etc.) sont adoptées, et les opportunités pour les développeurs d'implémenter eux-mêmes des algorithmes de tri de zéro ont diminué. Cependant, comprendre quels compromis sont pris en compte en interne est une base importante pour concevoir des logiciels plus performants et plus robustes.
 
 Nous espérons que cet article vous aidera dans votre apprentissage des algorithmes et dans votre développement pratique.

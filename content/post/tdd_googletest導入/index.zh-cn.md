@@ -316,7 +316,7 @@ genhtml coverage.info --output-directory coverage_report
 
 ### 7.1 构建时间（编译时间）的增加
 由于C++大量使用模板并包含大规模头文件，编译时间往往较长。而TDD的“Red-Green-Refactor”循环需要快速进行，因此构建时间的延迟是致命的。
-**对策**: 活用前向声明（Forward Declaration）和 Pimpl（Pointer to implementation）惯用法，将头文件的依赖关系降至最低。此外，引入如 Ccache 等构建缓存工具也非常有效。
+**对策**: 活用前向声明（Forward Declaration）和 Pimpl（[Pointer](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/) to implementation）惯用法，将头文件的依赖关系降至最低。此外，引入如 Ccache 等构建缓存工具也非常有效。
 
 ### 7.2 在遗留代码中引入 TDD
 想要在庞大的现有单体代码中事后应用TDD是极其困难的。

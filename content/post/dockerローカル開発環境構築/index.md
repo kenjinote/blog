@@ -413,7 +413,7 @@ COPY ./src /app/src
 
 Docker、Docker Compose、そしてVSCode Dev[Container](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)sを組み合わせることで、「誰が環境を立ち上げても完全に同じ状態になる」堅牢なローカル開発環境が実現します。
 
-[IaC](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)のパラダイムをローカル環境に持ち込むことは、単に最初のセットアップ時間を短縮するだけではありません。インフラストラクチャの設定変更に対する不安を取り除き、新しい技術スタックの実験を容易にし、[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)へのスムーズな移行を可能にするなど、開発サイクル全体の速度と品質を飛躍的に向上させます。
+[IaC](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)のパラダイムをローカル環境に持ち込むことは、単に最初のセットアップ時間を短縮するだけではありません。インフラストラクチャの設定変更に対する不安を取り除き、新しい技術[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の実験を容易にし、[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)へのスムーズな移行を可能にするなど、開発サイクル全体の速度と品質を飛躍的に向上させます。
 
 本記事で解説したマルチステージビルドによるイメージサイズの最適化や、ヘルスチェックを用いた依存関係の制御、レイヤーキャッシュを意識したDockerfileの記述などのベストプラクティスを活用し、ぜひご自身のプロジェクトにも最高の開発体験（DX: Developer Experience）を導入してみてください。
 

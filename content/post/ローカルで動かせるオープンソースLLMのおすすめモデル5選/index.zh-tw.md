@@ -12,7 +12,7 @@ description: '兼顧隱私保護且可免費使用的本地LLM。本文將從技
 
 # 前言
 
-近年來，大型語言模型（LLM）的技術進化顯著，如 ChatGPT 和 Claude 等基於雲端的 AI 服務已廣泛普及。然而，與此同時，對於「不想將公司的機密數據發送到外部伺服器」、「希望降低 API 的使用費用」、「想要建構完全離線運行的 AI 系統」等需求也正快速增加。
+近年來，大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的技術進化顯著，如 ChatGPT 和 Claude 等基於雲端的 AI 服務已廣泛普及。然而，與此同時，對於「不想將公司的機密數據發送到外部伺服器」、「希望降低 API 的使用費用」、「想要建構完全離線運行的 AI 系統」等需求也正快速增加。
 
 為了滿足這些需求，「本地 LLM（開源 LLM）」應運而生，你可以直接下載並運行在自己的電腦或公司內部的伺服器上。直到 2023 年左右，要在本地實現實用的精確度依然很困難，但隨著模型架構的進化和量化（Quantization）技術的發展，現在即便是消費級的 GPU（如 NVIDIA RTX 3090 / 4090 或 Mac 的 Apple Silicon 等），也能流暢地運行非常高效的 LLM。
 
@@ -83,7 +83,7 @@ $$ M_{4bit} = \frac{8 \times 4.5}{8} = 4.5 \text{ GB} $$
 
 ### 架構的進化與特徵
 
-Llama 3 雖然採用了標準的 Transformer 架構，但比起上一代（Llama 2）加入了許多技術上的改良。特別值得注意的亮點如下：
+Llama 3 雖然採用了標準的 [Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 架構，但比起上一代（Llama 2）加入了許多技術上的改良。特別值得注意的亮點如下：
 
 - **全面採用 GQA (Grouped Query Attention)** ：在 Llama 2 中，GQA 僅被應用於大型模型中，但在 Llama 3 中，即使是像 8B 這樣的小型模型也採用了 GQA。這使得 KV Cache 的記憶體使用量大幅減少，即使在長上下文中也能進行高速推論。
 - **詞彙表大小擴充** ：分詞器（基於 Tiktoken）的詞彙表大小擴充至 128,000 個 Token，多語言與程式碼的壓縮效率獲得了顯著的提升。日語處理效率相較於 Llama 2 也有數倍的改善。
@@ -117,7 +117,7 @@ Llama 3 擁有最深厚的社群支援，而且能立即使用 GGUF、AWQ、EXL2
 
 ### MoE (Mixture of Experts) 的運作原理
 
-「Mixtral 8x7B」作為首款正式採用 **MoE (Mixture of Experts)** 架構的開源 LLM，並取得了巨大的成功。
+「Mixtral 8x7B」作為首款正式採用 **MoE (Mixture of Experts)** 架構的開源 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)，並取得了巨大的成功。
 MoE 是指在整個模型（約 470 億參數）中設置了 8 個「專家（Expert）網路」，並根據輸入的每個 Token 動態選擇（路由）最合適的 2 個專家來進行運作的機制。
 
 ```mermaid
@@ -147,7 +147,7 @@ graph LR
 
 ### 獨特的架構設計
 
-Gemma 2 採用了幾項與其他 LLM 截然不同的獨特設計。
+Gemma 2 採用了幾項與其他 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 截然不同的獨特設計。
 
 - **Logit Soft-capping**: 一種防止生成異常大的 Logit 值，以提高訓練與推論穩定性的技術。
 - **Sliding Window Attention (SWA) 與 Local Attention 的混合**: 並非在所有層中都執行全局注意力機制，而是將只關注局部上下文的層與關注全局的層交替排列。
@@ -230,7 +230,7 @@ xychart-beta
 
 ## 推論速度（Tokens/sec）的理論計算
 
-本地 LLM 的推論速度強烈依賴於 GPU 的「記憶體頻寬（Memory Bandwidth）」。這因為在生成階段（解碼）中，每生成一個 Token 都必須從記憶體中讀取出模型的所有權重。因此這是受記憶體限制（Memory-bound）的處理，而非受運算限制（Compute-bound）。
+本地 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的推論速度強烈依賴於 GPU 的「記憶體頻寬（Memory Bandwidth）」。這因為在生成階段（解碼）中，每生成一個 Token 都必須從記憶體中讀取出模型的所有權重。因此這是受記憶體限制（Memory-bound）的處理，而非受運算限制（Compute-bound）。
 
 理論上的最大推論速度 $T$（Tokens/sec），可透過以下公式計算：
 
@@ -265,7 +265,7 @@ ollama run llama3
 推薦給想要透過 GUI 介面直覺操作的使用者。您可以從應用程式內搜尋並下載 Hugging Face 上龐大的 GGUF 模型列表，並在類似 ChatGPT 的聊天畫面中享受對話。它還有一項非常方便的功能，能以視覺化的方式告訴您哪個模型適合您電腦的 RAM/VRAM 容量。
 
 ### 3. llama.cpp
-本地 LLM 熱潮的推手，也是一切基礎的 C/C++ 實作函式庫。適合想要將效能調校到極致的工程師，或是想要將其嵌入至自訂腳本的駭客。它能將所有硬體的潛能發揮到極限，支援 Apple 的 Metal、NVIDIA 的 CUDA、AMD 的 ROCm，甚至 Intel 的 AVX 指令集。
+本地 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 熱潮的推手，也是一切基礎的 C/C++ 實作函式庫。適合想要將效能調校到極致的工程師，或是想要將其嵌入至自訂腳本的駭客。它能將所有硬體的潛能發揮到極限，支援 Apple 的 Metal、NVIDIA 的 CUDA、AMD 的 ROCm，甚至 Intel 的 AVX 指令集。
 
 ---
 
@@ -279,7 +279,7 @@ ollama run llama3
 4. **目標是自然的日語輸出與進階的程式編寫輔助**: `Qwen 2.5`
 5. **在手機、效能較差的電腦，或於背景進行超輕量處理**: `Phi-3 / Phi-3.5`
 
-開源 LLM 的進化速度非常驚人，幾乎每隔幾個月就會發表顛覆以往常識的突破。未來，隨著量化技術的進一步提升與新架構的出現，或許光靠本地環境就能超越雲端 AI 的日子也不遠了。
+開源 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的進化速度非常驚人，幾乎每隔幾個月就會發表顛覆以往常識的突破。未來，隨著量化技術的進一步提升與新架構的出現，或許光靠本地環境就能超越雲端 AI 的日子也不遠了。
 請務必配合您自身的硬體環境下載最合適的模型，親身體驗本地 AI 所帶來的壓倒性自由與可能性。
 
 

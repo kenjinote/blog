@@ -443,7 +443,7 @@ $$
 Space(N) \le C \times N \implies O(N)
 $$
 
-No entanto, no parsing de descida recursiva, a pilha de chamadas (call stack) é consumida proporcionalmente à profundidade (Depth) de aninhamento do JSON. Uma memória de pilha de $O(D)$ é requerida para uma profundidade $D$. Dado que passar um JSON malicioso aninhado infinitamente tem o risco de causar um Stack Overflow, um parser prático precisa implementar um limite na profundidade de recursão (ex: 256 ou 512) ou desenrolar a recursão em loops.
+No entanto, no parsing de descida recursiva, a pilha de chamadas (call stack) é consumida proporcionalmente à profundidade (Depth) de aninhamento do JSON. Uma memória de pilha de $O(D)$ é requerida para uma profundidade $D$. Dado que passar um JSON malicioso aninhado infinitamente tem o risco de causar um [Stack](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/) Overflow, um parser prático precisa implementar um limite na profundidade de recursão (ex: 256 ou 512) ou desenrolar a recursão em loops.
 
 ---
 

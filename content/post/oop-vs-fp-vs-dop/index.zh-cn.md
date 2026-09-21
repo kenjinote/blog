@@ -10,13 +10,13 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 编程语言的进化历史，同时也是与复杂性作斗争的历史。随着软件规模的不断扩大，我们面临着状态管理、性能和可维护性等壁垒，为了克服这些问题，各种 **编程范式** 被相继提出。
 
-在本文中，我们将深入探讨现代软件开发中占据主流的 **面向对象编程** （OOP）、具有数学般严谨性的 **函数式编程** （FP）、以及侧重于性能和数据分离的 **数据导向编程** （DOP / DOD），分析它们各自的思想、优势以及 **局限性** 。此外，我们还将解析现代强大的语言（如 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 和 TypeScript 等）是如何将它们进行 **融合** 的。
+在本文中，我们将深入探讨现代软件开发中占据主流的 **面向对象编程** （[OOP](https://kenji.blog/zh-cn/p/object-oriented-programming-oop-solid-principles/)）、具有数学般严谨性的 **函数式编程** （FP）、以及侧重于性能和数据分离的 **数据导向编程** （DOP / DOD），分析它们各自的思想、优势以及 **局限性** 。此外，我们还将解析现代强大的语言（如 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 和 TypeScript 等）是如何将它们进行 **融合** 的。
 
 ---
 
-## 1. 面向对象编程 (OOP) 的兴衰
+## 1. 面向对象编程 ([OOP](https://kenji.blog/zh-cn/p/object-oriented-programming-oop-solid-principles/)) 的兴衰
 
-**面向对象** （Object-Oriented Programming）在 1990 年代至 2010 年代期间，作为软件开发的绝对王者君临天下。Java、C++、C# 等语言引领了这一范式，其对现实世界进行建模的直观方法受到了广泛认可。
+**面向对象** （[Object-Oriented](https://kenji.blog/zh-cn/p/object-oriented-programming-oop-solid-principles/) Programming）在 1990 年代至 2010 年代期间，作为软件开发的绝对王者君临天下。[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)、C++、C# 等语言引领了这一范式，其对现实世界进行建模的直观方法受到了广泛认可。
 
 ### 1.1 OOP 的核心概念
 
@@ -54,7 +54,7 @@ const animals: Animal[] = [new Dog("Buddy"), new Cat("Kitty")];
 animals.forEach(a => a.speak());
 ```
 
-### 1.2 OOP 的局限性与“香蕉与大猩猩问题”
+### 1.2 [OOP](https://kenji.blog/zh-cn/p/object-oriented-programming-oop-solid-principles/) 的局限性与“香蕉与大猩猩问题”
 
 乍看之下，OOP 似乎是一种完美的建模方法，但随着系统规模的扩大，它引发了 **继承的滥用** 和 **隐式状态管理** 等致命问题。
 
@@ -91,7 +91,7 @@ classDiagram
 
 ## 2. 函数式编程 (FP) 的数学方法
 
-针对 OOP 中“状态变更”带来的复杂性，作为其对立面而备受瞩目的是 **函数式编程** （Functional Programming）。它不仅影响了 Haskell、Scala、Clojure 等语言，在现代对 JavaScript 和 TypeScript 也产生了深远的影响。
+针对 [OOP](https://kenji.blog/zh-cn/p/object-oriented-programming-oop-solid-principles/) 中“状态变更”带来的复杂性，作为其对立面而备受瞩目的是 **函数式编程** （[Functional Programming](https://kenji.blog/zh-cn/p/functional-programming-concepts-pure-functions-monads/)）。它不仅影响了 Haskell、Scala、Clojure 等语言，在现代对 JavaScript 和 TypeScript 也产生了深远的影响。
 
 ### 2.1 FP 的核心概念
 
@@ -130,7 +130,7 @@ $ S' = f(S, A) $
 
 函数式范式也有其局限性。计算机本质上是带有状态的机器（冯·诺伊曼架构），纯粹的 FP 与 CPU 的工作原理存在偏差。
 
-为了保持不可变性而进行的内存分配（对垃圾回收造成的负担），以及处理像 I/O（屏幕输出、数据库写入）这种“不可避免的副作用”时使用的单子（Monad）等，概念学习成本较高，有时也会成为性能瓶颈。
+为了保持不可变性而进行的内存分配（对垃圾回收造成的负担），以及处理像 I/O（屏幕输出、数据库写入）这种“不可避免的副作用”时使用的单子（[Monad](https://kenji.blog/zh-cn/p/functional-programming-concepts-pure-functions-monads/)）等，概念学习成本较高，有时也会成为性能瓶颈。
 
 ---
 
@@ -140,7 +140,7 @@ $ S' = f(S, A) $
 
 ### 3.1 DOP 的核心概念
 
-DOP 的最高法则是“将数据与逻辑分离”。相较于 OOP 将数据与逻辑封装在类中，DOP 则将它们剥离开来。
+DOP 的最高法则是“将数据与逻辑分离”。相较于 [OOP](https://kenji.blog/zh-cn/p/object-oriented-programming-oop-solid-principles/) 将数据与逻辑封装在类中，DOP 则将它们剥离开来。
 
 - **数据分离** ：数据仅被定义为纯粹的数据结构（记录、结构体），不附带任何行为。
 - **ECS (实体组件系统)** ：替代继承机制，将数据分割为组件，并由系统（函数）对它们进行批量处理。
@@ -192,7 +192,7 @@ graph TD
 
 | 范式 | 优点 | 缺点 | 最佳用例 |
 | :--- | :--- | :--- | :--- |
-| **OOP** | 直观的建模，通过封装进行隐藏 | 继承复杂化，隐式状态变更导致的 Bug | GUI 框架，业务领域的建模 |
+| **[OOP](https://kenji.blog/zh-cn/p/object-oriented-programming-oop-solid-principles/)** | 直观的建模，通过封装进行隐藏 | 继承复杂化，隐式状态变更导致的 Bug | GUI 框架，业务领域的建模 |
 | **FP** | 对并发处理的容忍度，测试的容易性，可预测性 | 学习曲线陡峭，性能（GC 负担） | 数据转换流水线，并发处理系统 |
 | **DOP** | 压倒性的性能，状态的透明性 | 数据内聚度降低，容易变得面向过程 | 游戏开发，高负载运算处理，嵌入式 |
 
@@ -200,9 +200,9 @@ graph TD
 
 ## 5. 现代的最佳方案：范式的“融合”
 
-如今，从中选择“唯一正确答案”被认为是荒谬的。现代编程语言（如 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)、TypeScript、Scala、Go 等）都在吸取这些范式的 **长处** 。
+如今，从中选择“唯一正确答案”被认为是荒谬的。现代编程语言（如 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)、TypeScript、Scala、[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 等）都在吸取这些范式的 **长处** 。
 
-### 5.1 Rust 所展示的终极融合
+### 5.1 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 所展示的终极融合
 
 Rust 在惊人的层面上融合了这三种范式。
 

@@ -9,9 +9,9 @@ categories: ["programming", "ai", "prompt-engineering"]
 tags: ["Prompt Engineering", "LLM", "Development", "ChatGPT", "Claude"]
 ---
 
-# Pengantar: Mengapa Engineer Harus Mempelajari Prompt Engineering
+# Pengantar: Mengapa Engineer Harus Mempelajari [Prompt Engineering](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)
 
-Dunia pengembangan perangkat lunak sedang berada di tengah-tengah pergeseran paradigma yang belum pernah terjadi sebelumnya karena evolusi pesat Large Language Models (LLM). Tidak berlebihan jika dikatakan bahwa kita sedang bertransisi dari "Software 2.0 (pengembangan menggunakan neural networks)" yang digagas oleh Andrejs Karpathy, ke "Software 3.0 (pengembangan berbasis prompt menggunakan bahasa alami)".
+Dunia pengembangan perangkat lunak sedang berada di tengah-tengah pergeseran paradigma yang belum pernah terjadi sebelumnya karena evolusi pesat [Large Language Models](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)). Tidak berlebihan jika dikatakan bahwa kita sedang bertransisi dari "Software 2.0 (pengembangan menggunakan neural networks)" yang digagas oleh Andrejs Karpathy, ke "Software 3.0 (pengembangan berbasis prompt menggunakan bahasa alami)".
 
 Dengan penyebaran alat asisten AI seperti GitHub Copilot, Cursor, atau berbagai API LLM, tugas utama para engineer bergeser dari "menulis kode dari nol" menjadi "merancang instruksi untuk membuat AI menghasilkan kode yang diinginkan, serta meninjau dan mengintegrasikan kode yang dihasilkan".
 
@@ -23,7 +23,7 @@ Dalam artikel ini, yang ditujukan untuk software engineer dan arsitek, kami akan
 
 ## 1. Dasar-dasar dan Latar Belakang Matematis Large Language Models (LLM)
 
-Untuk mengoptimalkan prompt dan secara stabil mendapatkan output yang diinginkan, sangat penting untuk memahami secara matematis dan struktural "isi kotak hitam" tentang bagaimana LLM memproses dan menghasilkan teks atau kode secara internal. Sebagian besar LLM modern adalah model bahasa auto-regressive (Auto-regressive) yang menggunakan arsitektur Transformer.
+Untuk mengoptimalkan prompt dan secara stabil mendapatkan output yang diinginkan, sangat penting untuk memahami secara matematis dan struktural "isi kotak hitam" tentang bagaimana LLM memproses dan menghasilkan teks atau kode secara internal. Sebagian besar LLM modern adalah model bahasa auto-regressive (Auto-regressive) yang menggunakan arsitektur [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/).
 
 ### 1.1 Tokenisasi (Tokenization) dan BPE
 
@@ -41,7 +41,7 @@ Di sini, $w_i$ mewakili token, dan $t$ adalah langkah waktu (time step) saat ini
 
 ### 1.3 Mekanisme Atensi (Attention Mechanism) dan Context Window
 
-Inti dari arsitektur Transformer adalah mekanisme Self-Attention. Hal ini memungkinkan model untuk menghitung dependensi antara token-token yang berjauhan dalam suatu urutan.
+Inti dari arsitektur [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) adalah mekanisme Self-Attention. Hal ini memungkinkan model untuk menghitung dependensi antara token-token yang berjauhan dalam suatu urutan.
 
 $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V $$
 
@@ -71,7 +71,7 @@ Saat membangun aplikasi AI menggunakan API OpenAI (seperti GPT-4) atau API Anthr
 
 ### 2.1 System Prompt: Batasan Global dan Definisi Persona
 
-System Prompt digunakan untuk mendefinisikan **batasan global, persona (peran), dan aturan perilaku dasar** untuk LLM. Jika dianalogikan dengan desain perangkat lunak, ia bertindak sebagai "variabel lingkungan" atau "kelas dasar" dari sebuah aplikasi, atau "[Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)file" dari sebuah container.
+System Prompt digunakan untuk mendefinisikan **batasan global, persona (peran), dan aturan perilaku dasar** untuk [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/). Jika dianalogikan dengan desain perangkat lunak, ia bertindak sebagai "variabel lingkungan" atau "kelas dasar" dari sebuah aplikasi, atau "[Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)file" dari sebuah container.
 
 System prompt yang baik secara drastis akan menstabilkan kualitas dan format output.
 
@@ -102,13 +102,13 @@ Dengan mengatur System Prompt secara kuat, Anda dapat memastikan stabilitas outp
 
 ---
 
-## 3. Kumpulan Teknik Inti Prompt Engineering
+## 3. Kumpulan Teknik Inti [Prompt Engineering](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)
 
 Mulai dari sini, kami akan menjelaskan paradigma prompting spesifik untuk secara dramatis meningkatkan akurasi tugas-tugas pengembangan perangkat lunak.
 
 ### 3.1 Zero-Shot Prompting dan Few-Shot Prompting
 
-**Zero-Shot Prompting** adalah metode untuk meminta model menjawab hanya dengan memberikan instruksi tugas tanpa memberikan contoh apa pun. Untuk permintaan umum seperti "Tulis quick sort dalam Python", LLM canggih saat ini dapat berfungsi dengan baik bahkan dengan Zero-Shot.
+**Zero-Shot Prompting** adalah metode untuk meminta model menjawab hanya dengan memberikan instruksi tugas tanpa memberikan contoh apa pun. Untuk permintaan umum seperti "Tulis quick sort dalam Python", [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) canggih saat ini dapat berfungsi dengan baik bahkan dengan Zero-Shot.
 
 Namun, probabilitas bahwa formatnya akan rusak tinggi dengan Zero-Shot ketika Anda ingin model mengikuti konvensi pengkodean unik sebuah proyek atau menampilkan skema JSON tertentu. **Few-Shot Prompting** memecahkan masalah ini.
 
@@ -135,7 +135,7 @@ Dengan memberikan contoh seperti ini, model secara implisit mempelajari format `
 
 ### 3.2 Chain-of-Thought (CoT) dan Zero-Shot CoT
 
-Terobosan terkait kemampuan inferensi LLM adalah **Chain-of-Thought (CoT: Rantai Pemikiran)**. Dalam tugas-tugas yang membutuhkan logika kompleks (misalnya: penerapan algoritme kompleks, pelacakan bug yang sulit dipahami, pembuatan regular expression, dll.), meminta LLM untuk langsung mengeluarkan kode akhir membuat lompatan logis atau kesalahan (halusinasi) lebih mungkin terjadi.
+Terobosan terkait kemampuan inferensi [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) adalah **Chain-of-Thought (CoT: Rantai Pemikiran)**. Dalam tugas-tugas yang membutuhkan logika kompleks (misalnya: penerapan algoritme kompleks, pelacakan bug yang sulit dipahami, pembuatan regular expression, dll.), meminta LLM untuk langsung mengeluarkan kode akhir membuat lompatan logis atau kesalahan (halusinasi) lebih mungkin terjadi.
 
 CoT adalah metode yang meminta LLM memverbalisasi proses inferensi (proses pemikiran) menengahnya sebelum mengeluarkan jawaban akhir. Dengan meminta model untuk menganalisis situasi langkah demi langkah, konteks diperkaya dengan setiap pembuatan token, dan akurasi kesimpulan akhir meningkat secara dramatis.
 
@@ -195,7 +195,7 @@ Untuk mengimplementasikan ToT menggunakan prompt, Anda dapat menginstruksikan: "
 
 ## 4. Agentic [Workflow](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dan ReAct (Reasoning and Acting)
 
-Penerapan LLM berkembang pesat dari sekadar input dan output teks tunggal menjadi bidang **Agen AI (AI Agents)**, yang secara mandiri merencanakan dan menyelesaikan tugas sambil berinteraksi dengan lingkungan eksternal. Paradigma inti dari arsitektur agen ini adalah **ReAct (Reasoning and Acting)**.
+Penerapan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) berkembang pesat dari sekadar input dan output teks tunggal menjadi bidang **Agen AI (AI Agents)**, yang secara mandiri merencanakan dan menyelesaikan tugas sambil berinteraksi dengan lingkungan eksternal. Paradigma inti dari arsitektur agen ini adalah **ReAct (Reasoning and Acting)**.
 
 ### 4.1 Konsep Framework ReAct
 
@@ -217,20 +217,20 @@ graph LR
 
 Antarmuka standar untuk mengintegrasikan ReAct ke dalam sebuah sistem adalah **Function Calling (pemanggilan fungsi / penggunaan alat)** yang disediakan oleh OpenAI dan Anthropic.
 
-Engineer memberikan LLM "definisi set alat yang tersedia (Skema JSON)" bersama dengan System Prompt. LLM mem-parsing konteks prompt, dan jika memutuskan untuk menggunakan sebuah alat, ia akan menghasilkan "nama fungsi yang akan dipanggil" dan "JSON argumen-argumennya" daripada teks biasa. Sebuah loop terbentuk saat aplikasi mengeksekusi fungsi dan mengembalikan hasilnya kembali ke LLM.
+Engineer memberikan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) "definisi set alat yang tersedia (Skema JSON)" bersama dengan System Prompt. LLM mem-parsing konteks prompt, dan jika memutuskan untuk menggunakan sebuah alat, ia akan menghasilkan "nama fungsi yang akan dipanggil" dan "JSON argumen-argumennya" daripada teks biasa. Sebuah loop terbentuk saat aplikasi mengeksekusi fungsi dan mengembalikan hasilnya kembali ke LLM.
 
 **Contoh aplikasi dalam pengembangan (Agen debug mandiri):**
-Saat membangun agen yang menyelidiki penyebab gagalnya pengujian dalam pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dan membuat patch, kami menyediakan alat-alat berikut untuk LLM.
+Saat membangun agen yang menyelidiki penyebab gagalnya pengujian dalam pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dan membuat patch, kami menyediakan alat-alat berikut untuk [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/).
 
 1. `search_codebase(regex_pattern)`: Mencari kode dalam repositori menggunakan ekspresi reguler.
 2. `view_file_content(file_path, start_line, end_line)`: Membaca konten file yang ditentukan.
 3. `run_unit_test(test_file_path)`: Menjalankan unit test tertentu dan mendapatkan traceback-nya.
 4. `propose_patch(file_path, diff_content)`: Mengusulkan patch perbaikan.
 
-LLM secara mandiri menalar dan bertindak sebagai berikut.
+[LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) secara mandiri menalar dan bertindak sebagai berikut.
 - **Thought**: Melihat log pengujian, `KeyError: 'user_id'` terjadi di baris 45 dari `src/auth.py`. Saya perlu memeriksa kode di sekitarnya.
 - **Action**: `view_file_content(file_path="src/auth.py", start_line=30, end_line=60)`
-- **Observation**: (Aplikasi membaca konten file dan mengembalikannya ke LLM)
+- **Observation**: (Aplikasi membaca konten file dan mengembalikannya ke [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/))
 - **Thought**: Begitu, tidak ada validasi untuk kasus ketika `user_id` tidak disertakan dalam JSON respons dari API. Mari buat patch yang menulis ulangnya dengan metode `.get()` yang aman.
 - **Action**: `propose_patch(...)`
 
@@ -240,7 +240,7 @@ Dengan cara ini, prompt engineering telah ditingkatkan dimensinya dari "pengenda
 
 ## 5. Integrasi RAG (Retrieval-Augmented Generation) dan Codebase
 
-Salah satu kelemahan terbesar LLM adalah bahwa mereka tidak mengetahui "informasi pribadi" atau "informasi terbaru" yang tidak termasuk dalam data prapelatihan. Bahkan jika Anda bertanya tentang repositori internal pribadi atau spesifikasi API kepemilikan Anda, LLM akan secara terang-terangan berbohong (berhalusinasi) atau hanya memberikan jawaban umum.
+Salah satu kelemahan terbesar [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) adalah bahwa mereka tidak mengetahui "informasi pribadi" atau "informasi terbaru" yang tidak termasuk dalam data prapelatihan. Bahkan jika Anda bertanya tentang repositori internal pribadi atau spesifikasi API kepemilikan Anda, LLM akan secara terang-terangan berbohong (berhalusinasi) atau hanya memberikan jawaban umum.
 
 Arsitektur yang memecahkan masalah ini adalah **RAG (Retrieval-Augmented Generation)**. RAG adalah teknologi yang menggabungkan pencarian informasi (Retrieval) dengan kemampuan generatif (Generation) dari LLM.
 
@@ -283,7 +283,7 @@ Kami akan memperkenalkan kasus penggunaan praktis dan teknik prompt tentang cara
 
 ### 6.1 Otomasi Peninjauan Kode dan Pelengkap Analisis Statis
 
-LLM diintegrasikan ke dalam pipeline CI untuk meninjau kode secara otomatis saat Pull Request (PR) dibuat. Tujuannya adalah agar model dapat mendeteksi ketidakkonsistenan dalam logika bisnis dan pola anti-desain yang tidak dapat dideteksi oleh alat Linting dan alat analisis statis.
+[LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) diintegrasikan ke dalam pipeline CI untuk meninjau kode secara otomatis saat Pull Request (PR) dibuat. Tujuannya adalah agar model dapat mendeteksi ketidakkonsistenan dalam logika bisnis dan pola anti-desain yang tidak dapat dideteksi oleh alat Linting dan alat analisis statis.
 
 **Contoh prompt (Meminta output terstruktur):**
 ```text
@@ -358,7 +358,7 @@ Dalam dunia rekayasa perangkat lunak, kode yang belum diuji disebut kode warisan
 
 Perilaku prompt dapat dengan mudah rusak oleh peningkatan versi dari model dasar atau perubahan dalam data domain yang ditangani. Untuk mencegah hal ini, sangat penting untuk membangun mekanisme **Evaluasi (Eval)** (LLMOps) untuk secara kuantitatif mengevaluasi output prompt.
 
-### 7.1 LLM-as-a-Judge (Evaluasi LLM oleh LLM)
+### 7.1 [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)-as-a-Judge (Evaluasi LLM oleh LLM)
 
 Dalam tugas-tugas seperti pembuatan kode atau peringkasan teks, pengujian kecocokan yang tepat (Exact Match) tidak dimungkinkan. Metrik evaluasi Natural Language Processing klasik (BLEU dan ROUGE) juga tidak mampu mengukur keakuratan semantik dengan baik.
 
@@ -376,7 +376,7 @@ Ini memungkinkan deteksi otomatis dari regresi (penurunan kinerja) saat prompt d
 
 Di era di mana AI menulis kode, kadang-kadang disuarakan tentang "akhir dari pemrograman", tetapi kenyataannya berbeda. Lapisan abstraksi yang dibutuhkan dari para engineer hanya naik satu tingkat.
 
-Dulu, dengan beralih dari bahasa assembly ke bahasa C, dan kemudian ke bahasa tingkat tinggi dengan pengumpulan sampah (garbage collection), kita terbebas dari kerumitan manajemen memori dan dapat fokus membangun logika bisnis yang lebih kompleks. LLM dan prompt engineering adalah gelombang abstraksi berikutnya yang mengikuti ini.
+Dulu, dengan beralih dari bahasa assembly ke bahasa C, dan kemudian ke bahasa tingkat tinggi dengan pengumpulan sampah (garbage collection), kita terbebas dari kerumitan manajemen memori dan dapat fokus membangun logika bisnis yang lebih kompleks. [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) dan prompt engineering adalah gelombang abstraksi berikutnya yang mengikuti ini.
 
 1. **Memahami Arsitektur**: Memahami sifat probabilitas LLM (Auto-regressive, Attention, Temperature) dan mengendalikan sifat non-deterministik dari sistem.
 2. **Desain Konteks**: Pembatasan melalui System Prompt dan penyampaian maksud yang jelas menggunakan Few-Shot/CoT.
@@ -386,5 +386,5 @@ Dulu, dengan beralih dari bahasa assembly ke bahasa C, dan kemudian ke bahasa ti
 Dengan menguasai prinsip-prinsip ini, prompt tidak lagi sekadar deretan string, melainkan komponen perangkat lunak yang tangguh dan dapat diskalakan. Kami berharap Anda dapat mengintegrasikan teknik prompt engineering tingkat lanjut yang dijelaskan dalam artikel ini ke dalam alur kerja pengembangan dan produk Anda sendiri, dan aktif berperan sebagai engineer yang memimpin "Software 3.0" generasi berikutnya.
 
 ---
-*Generated using Prompt Engineering Techniques.*
+*Generated using [Prompt Engineering](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) Techniques.*
 

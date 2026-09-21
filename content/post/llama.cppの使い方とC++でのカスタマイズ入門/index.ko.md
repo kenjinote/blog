@@ -10,15 +10,15 @@ tags: ["llama.cpp", "C++", "LLM", "AI", "Customization"]
 description: 'llama.cpp의 기본부터 C++를 활용한 고급 커스터마이징, Transformer의 수학적 배경, ggml 아키텍처 해설까지 총망라한 완전 가이드.'
 ---
 
-최근 대규모 언어 모델(LLM)의 진화는 매우 빠르며, 그 응용 범위는 나날이 확대되고 있습니다. 하지만 수십억, 수백억 개의 매개변수를 가진 모델을 로컬 환경에서 구동하려면 보통 방대한 VRAM을 갖춘 하이엔드 GPU가 필요합니다. 이러한 '하드웨어의 벽'을 허물고, 일반적인 PC나 Mac, 심지어 Raspberry Pi와 같은 기기 위에서 LLM의 실용적인 추론을 가능하게 한 것이 바로 **llama.cpp** 입니다.
+최근 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 진화는 매우 빠르며, 그 응용 범위는 나날이 확대되고 있습니다. 하지만 수십억, 수백억 개의 매개변수를 가진 모델을 로컬 환경에서 구동하려면 보통 방대한 VRAM을 갖춘 하이엔드 GPU가 필요합니다. 이러한 '하드웨어의 벽'을 허물고, 일반적인 PC나 Mac, 심지어 Raspberry Pi와 같은 기기 위에서 LLM의 실용적인 추론을 가능하게 한 것이 바로 **llama.cpp** 입니다.
 
-본 기사에서는 단순한 명령줄 도구의 사용법에 그치지 않고, 그 기반 기술인 `ggml`의 아키텍처, Transformer 및 양자화(Quantization)의 수학적 배경, 그리고 C++ API를 이용하여 독자적인 애플리케이션에 LLM을 통합하고 커스터마이징하는 방법까지 엔지니어를 위해 매우 상세하게 해설합니다.
+본 기사에서는 단순한 명령줄 도구의 사용법에 그치지 않고, 그 기반 기술인 `ggml`의 아키텍처, [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 및 양자화(Quantization)의 수학적 배경, 그리고 C++ API를 이용하여 독자적인 애플리케이션에 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 통합하고 커스터마이징하는 방법까지 엔지니어를 위해 매우 상세하게 해설합니다.
 
 ---
 
 ## 1. llama.cpp 및 ggml 개요
 
-`llama.cpp`는 Georgi Gerganov 씨가 개발한, C/C++로 작성된 경량 LLM 추론 엔진입니다. 원래는 Meta의 LLaMA 모델을 Apple Silicon(M1/M2 Mac) 위에서 고속으로 동작시키는 것을 목적으로 탄생했지만, 현재는 다양한 아키텍처와 모델을 지원하고 있습니다.
+`llama.cpp`는 Georgi Gerganov 씨가 개발한, C/C++로 작성된 경량 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 추론 엔진입니다. 원래는 Meta의 LLaMA 모델을 Apple Silicon(M1/M2 Mac) 위에서 고속으로 동작시키는 것을 목적으로 탄생했지만, 현재는 다양한 아키텍처와 모델을 지원하고 있습니다.
 
 가장 큰 특징은 **외부 의존성을 가지지 않는 순수한 C/C++ 구현** 이라는 점입니다. Python이나 PyTorch 등의 거대한 에코시스템을 필요로 하지 않고, 단일 실행 파일로 컴파일할 수 있기 때문에 배포가 매우 쉽습니다.
 
@@ -32,7 +32,7 @@ description: 'llama.cpp의 기본부터 C++를 활용한 고급 커스터마이�
 
 ---
 
-## 2. 수학적 배경: Transformer와 양자화(Quantization)
+## 2. 수학적 배경: [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)와 양자화(Quantization)
 
 llama.cpp를 깊이 이해하기 위해서는 그것이 계산하고 있는 수식과, 어떻게 계산을 근사화하고 있는지 알아야 합니다.
 
@@ -153,7 +153,7 @@ cmake --build . --config Release -j 8
 ## 5. C++ 커스터마이징 입문: llama.cpp API 활용
 
 여기서부터는 본론인 C++ 코드를 통한 llama.cpp의 제어에 대해 해설합니다.
-명령줄 도구를 사용하는 것뿐만 아니라, 자신의 애플리케이션(예: 게임 엔진, 데스크톱 앱, 임베디드 시스템 등)에 LLM을 포함시키려면 C++ API를 직접 호출해야 합니다.
+명령줄 도구를 사용하는 것뿐만 아니라, 자신의 애플리케이션(예: 게임 엔진, 데스크톱 앱, 임베디드 시스템 등)에 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 포함시키려면 C++ API를 직접 호출해야 합니다.
 
 llama.cpp는 주로 `llama.h`라는 헤더 파일로 C언어 인터페이스를 제공하고 있습니다. C++에서 호출할 때도 이 인터페이스를 이용합니다.
 
@@ -223,7 +223,7 @@ int main(int argc, char ** argv) {
 
 ### 5.3 프롬프트 토큰화 (Tokenization)
 
-LLM은 텍스트를 직접 이해하는 것이 아니라, 정수 ID(토큰)의 나열로써 처리합니다. 입력 문자열을 토큰으로 변환할 필요가 있습니다.
+[LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)은 텍스트를 직접 이해하는 것이 아니라, 정수 ID(토큰)의 나열로써 처리합니다. 입력 문자열을 토큰으로 변환할 필요가 있습니다.
 
 ```cpp
     std::string prompt = "Q: 일본의 수도는 어디인가요?\nA:";
@@ -377,7 +377,7 @@ C++로 구현을 마친 후, 실제 운영을 위해 속도를 한계까지 높�
 
 Python 생태계는 프로토타이핑에는 매우 편리하지만, 엣지 디바이스로의 배포, 게임에 통합, 실시간 처리가 요구되는 프로덕션 환경에서는 C/C++ 기반의 `llama.cpp` 직접 제어가 압도적인 힘을 발휘합니다.
 
-여러분도 꼭 직접 C++ 코드를 작성하고, 로컬 환경에서 LLM을 자유자재로 다루는 즐거움을 경험해 보시길 바랍니다.
+여러분도 꼭 직접 C++ 코드를 작성하고, 로컬 환경에서 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 자유자재로 다루는 즐거움을 경험해 보시길 바랍니다.
 
 > **참고 링크 모음**
 > - [llama.cpp Official Repository](https://github.com/ggerganov/llama.cpp)

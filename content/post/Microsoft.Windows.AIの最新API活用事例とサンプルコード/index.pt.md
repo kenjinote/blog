@@ -14,7 +14,7 @@ description: 'Um guia detalhado e abrangente sobre como implementar recursos de 
 
 ## 1. Introdução: A Nova Era do Windows com IA Integrada Nativamente
 
-Nos últimos anos, a evolução da tecnologia de IA tem sido notável, com uma rápida mudança de paradigma do uso de Grandes Modelos de Linguagem (LLM) na nuvem para a inferência de IA em dispositivos edge (PCs locais). O núcleo disso é o "Windows Copilot Runtime" fornecido pela Microsoft para o Windows 11 e a API "Microsoft.Windows.AI" para controlá-lo.
+Nos últimos anos, a evolução da tecnologia de IA tem sido notável, com uma rápida mudança de paradigma do uso de Grandes Modelos de Linguagem ([LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/)) na nuvem para a inferência de IA em dispositivos edge (PCs locais). O núcleo disso é o "Windows Copilot Runtime" fornecido pela Microsoft para o Windows 11 e a API "Microsoft.Windows.AI" para controlá-lo.
 
 O desenvolvimento de aplicativos usando APIs em nuvem (como OpenAI ou Azure OpenAI) é fácil, mas traz desafios como latência, privacidade e custos contínuos. Por outro lado, a execução de modelos de IA localmente permite obter aplicativos de latência ultrabaixa que funcionam [offline](https://kenji.blog/pt/p/pwa-progressive-web-apps-service-worker/) sem enviar dados confidenciais para fora do dispositivo.
 
@@ -307,7 +307,7 @@ Abaixo estão as estratégias de otimização essenciais para o desenvolvimento 
 ### 7.1 Quantização de Modelos (Quantization) e Toolkit Olive
 Para extrair o verdadeiro poder da NPU, é uma condição absoluta **quantizar (Quantization)** os pesos e ativações do modelo de IA de FP32 (ponto flutuante de precisão simples) para INT8 ou INT4. A arquitetura da NPU é especializada em operações com inteiros, o que permite atingir taxas de transferência teoricamente quatro vezes maiores e reduzir drasticamente o consumo de energia em INT8 em comparação com o FP32.
 
-Ao usar a cadeia de ferramentas `Olive (ONNX Live)` oferecida pela Microsoft, os modelos de IA, como os do PyTorch, podem ser automaticamente otimizados para ambientes Windows. A ferramenta Olive fornece forte suporte para otimizações de atenção especializadas para modelos baseados em Transformers e compilação de gráficos por hardware.
+Ao usar a cadeia de ferramentas `Olive (ONNX Live)` oferecida pela Microsoft, os modelos de IA, como os do PyTorch, podem ser automaticamente otimizados para ambientes Windows. A ferramenta Olive fornece forte suporte para otimizações de atenção especializadas para modelos baseados em [Transformer](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/)s e compilação de gráficos por hardware.
 
 ### 7.2 Trade-off Entre Processamento em Lote e Streaming Interativo
 Nas chamadas de API, a utilização da NPU (Compute Utilization) pode ser aumentada combinando múltiplas solicitações de inferência num processamento em lote. No entanto, no caso de IUs interativas, como chatbots, não é a taxa de transferência, mas sim o tempo até que o primeiro token seja gerado (TTFT: Time To First Token) que determina a experiência do usuário (UX).

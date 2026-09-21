@@ -173,7 +173,7 @@ Untuk menyelesaikan kolisi ini, algoritma seperti berikut digunakan:
 * **Chaining**: Elemen yang bertabrakan disimpan dalam bucket yang sama dengan menghubungkannya menggunakan linked list (senarai berantai).
 * **Open Addressing**: Ketika terjadi kolisi, algoritma mencari "bucket kosong lain" sesuai dengan aturan tertentu dan menyimpan elemen di sana.
 
-Di balik layar bahasa pemrograman (seperti `dict` di Python atau `HashMap` di Java), digunakan teknik-teknik tingkat tinggi untuk menangani kolisi yang disebabkan oleh Prinsip Sarang Merpati ini dengan sangat cepat dan efisien.
+Di balik layar bahasa pemrograman (seperti `dict` di Python atau `HashMap` di [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)), digunakan teknik-teknik tingkat tinggi untuk menangani kolisi yang disebabkan oleh Prinsip Sarang Merpati ini dengan sangat cepat dan efisien.
 
 ## 6. Menjamin Keamanan Kriptografi dan Masa Depan
 

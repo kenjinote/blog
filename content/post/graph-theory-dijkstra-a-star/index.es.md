@@ -142,7 +142,7 @@ def dijkstra(graph, start):
 
 ### 3.4 Sobre la Complejidad Computacional
 
-Si utilizamos un montículo binario (Binary Heap) como cola de prioridad, cada vértice se extrae de la cola una vez, y cada arista se relaja una vez.
+Si utilizamos un montículo binario (Binary [Heap](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)) como cola de prioridad, cada vértice se extrae de la cola una vez, y cada arista se relaja una vez.
 Por lo tanto, la complejidad de tiempo es $ O((|V| + |E|) \log |V|) $. Si utilizamos un montículo de Fibonacci (Fibonacci Heap), en teoría se puede mejorar hasta $ O(|E| + |V| \log |V|) $, pero en la práctica se suele utilizar mucho el montículo binario.
 
 ---

@@ -11,7 +11,7 @@ tags: ["ChatGPT", "Gemini", "Claude", "API", "Comparison"]
 
 # Comparaison complète des API ChatGPT, Gemini et Claude ! Laquelle choisir ?
 
-L'évolution de la technologie de l'IA est remarquable, en particulier dans le domaine des grands modèles de langage (LLM : Large Language Model), où ChatGPT (série GPT) d'OpenAI, Gemini de Google et Claude d'Anthropic se livrent une lutte acharnée pour la suprématie à trois. En 2026, chaque entreprise publie de nouveaux modèles et fonctionnalités d'API en l'espace de quelques mois, voire de quelques semaines, et pour les développeurs ou les architectes informatiques des entreprises, la question de savoir "quelle API intégrer dans un produit" est devenue une décision cruciale qui peut déterminer le succès ou l'échec d'un projet.
+L'évolution de la technologie de l'IA est remarquable, en particulier dans le domaine des grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) : Large Language Model), où ChatGPT (série GPT) d'OpenAI, Gemini de Google et Claude d'Anthropic se livrent une lutte acharnée pour la suprématie à trois. En 2026, chaque entreprise publie de nouveaux modèles et fonctionnalités d'API en l'espace de quelques mois, voire de quelques semaines, et pour les développeurs ou les architectes informatiques des entreprises, la question de savoir "quelle API intégrer dans un produit" est devenue une décision cruciale qui peut déterminer le succès ou l'échec d'un projet.
 
 Dans cet article, nous comparerons et expliquerons en détail les API de ces 3 principaux fournisseurs d'IA du point de vue des développeurs, sans nous limiter à une simple liste de spécifications, mais en allant jusqu'à la conception de l'architecture, la structure tarifaire détaillée, l'analyse mathématique de la latence, des exemples d'implémentation concrets avec Python et Node.js, et les dernières méthodes d'optimisation des coûts telles que le cache de prompts.
 
@@ -79,7 +79,7 @@ Le texte saisi dans l'API est divisé en interne en unités appelées "jetons" (
 
 ## 4. Analyse mathématique de la latence et des performances
 
-Dans les applications en temps réel, la latence affecte directement l'expérience utilisateur (UX). La latence d'une API LLM, $T_{total}$, peut être modélisée mathématiquement de la manière suivante.
+Dans les applications en temps réel, la latence affecte directement l'expérience utilisateur (UX). La latence d'une API [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/), $T_{total}$, peut être modélisée mathématiquement de la manière suivante.
 
 $$ T_{total} = T_{network} + T_{TTFT} + (N \times T_{TPOT}) $$
 
@@ -90,7 +90,7 @@ Ici, chaque variable a la signification suivante :
 - $T_{TPOT}$ (Time Per Output Token) : Temps de génération par jeton. Étant un modèle autorégressif, il est calculé en série en fonction des sorties précédentes.
 
 ### 4.1 Complexité du mécanisme d'auto-attention
-La complexité de calcul de l'auto-attention (Self-Attention) dans l'architecture Transformer augmente de manière quadratique par rapport à la longueur de la séquence d'entrée $L$.
+La complexité de calcul de l'auto-attention (Self-Attention) dans l'architecture [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) augmente de manière quadratique par rapport à la longueur de la séquence d'entrée $L$.
 
 $$ \text{Complexity} = O(L^2 \cdot d) $$
 
@@ -210,7 +210,7 @@ En exécutant ce script, vous pouvez facilement mesurer quel modèle répond le 
 
 ## 8. Implémentation du Tool Calling (Function Calling) avec Node.js
 
-Pour qu'un LLM fonctionne non pas comme un simple chatbot, mais comme un "agent IA" qui interagit avec des systèmes externes, le Tool Calling (ou Function Calling) est indispensable. Voici un exemple en Node.js (TypeScript) où l'API OpenAI est invitée à appeler une API météo.
+Pour qu'un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) fonctionne non pas comme un simple chatbot, mais comme un "agent IA" qui interagit avec des systèmes externes, le Tool Calling (ou Function Calling) est indispensable. Voici un exemple en Node.js (TypeScript) où l'API OpenAI est invitée à appeler une API météo.
 
 ```typescript
 import OpenAI from "openai";
@@ -312,7 +312,7 @@ sequenceDiagram
 
 ## 11. Sécurité et conformité de niveau entreprise
 
-Lorsque les entreprises utilisent des API LLM dans un environnement de production, leurs principales préoccupations sont "nos données seront-elles utilisées pour former l'IA ?" et "répondent-elles aux exigences de conformité ?".
+Lorsque les entreprises utilisent des API [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) dans un environnement de production, leurs principales préoccupations sont "nos données seront-elles utilisées pour former l'IA ?" et "répondent-elles aux exigences de conformité ?".
 
 Les trois sociétés déclarent explicitement qu'elles **n'utilisent pas les données (prompts et réponses) envoyées via l'API pour former leurs modèles (Zero Data Retention / No Training on Customer Data)** (*cela diffère pour les interfaces de discussion Web gratuites destinées aux consommateurs).
 
@@ -340,7 +340,7 @@ Bien que nous ayons effectué une comparaison sous plusieurs angles jusqu'à pr�
    Il accomplit toutes sortes de tâches sans difficulté et bénéficie de la prise en charge d'outils tiers la plus abondante. L'écosystème OpenAI est indispensable lorsque vous avez besoin d'un parsing JSON infaillible utilisant les sorties structurées (Structured Outputs) ou d'un raisonnement logique très avancé avec le modèle o1.
 
 ### Recommandation pour le routage multi-modèles
-Plutôt que de s'appuyer sur une seule API (vendor lock-in), la tendance future est l'architecture de **"routage LLM"** qui bascule dynamiquement d'un modèle à l'autre en fonction de la difficulté et de l'importance de la tâche.
+Plutôt que de s'appuyer sur une seule API (vendor lock-in), la tendance future est l'architecture de **"routage [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)"** qui bascule dynamiquement d'un modèle à l'autre en fonction de la difficulté et de l'importance de la tâche.
 Par exemple, vous pouvez répondre aux questions simples des utilisateurs avec des modèles peu coûteux et rapides comme `GPT-4o-mini` ou `Gemini 1.5 Flash`, et ne basculer la tâche sur `Claude 3.5 Sonnet` que si un traitement complexe est jugé nécessaire, permettant d'atteindre un équilibre optimal entre coût et performances.
 
 L'évolution de l'IA ne s'arrête jamais. Comprenez profondément les forces et faiblesses de chaque API ainsi que les caractéristiques de leur architecture, et construisez des applications d'IA flexibles et évolutives.

@@ -12,9 +12,9 @@ description: 'プライバシーを保護しつつ、無料で利用できるロ
 
 # はじめに
 
-近年、大規模言語モデル（LLM）の技術進化は目覚ましく、ChatGPTやClaudeのようなクラウドベースのAIサービスが広く普及しています。しかし、その一方で、「自社の機密データを外部のサーバーに送信したくない」「APIの利用料金を抑えたい」「完全に[オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)で動作するAIシステムを構築したい」というニーズが急速に高まっています。
+近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の技術進化は目覚ましく、ChatGPTやClaudeのようなクラウドベースのAIサービスが広く普及しています。しかし、その一方で、「自社の機密データを外部のサーバーに送信したくない」「APIの利用料金を抑えたい」「完全に[オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)で動作するAIシステムを構築したい」というニーズが急速に高まっています。
 
-この要求に応えるのが、自分のPCや社内サーバーに直接ダウンロードして実行できる「ローカルLLM（オープンソースLLM）」です。2023年頃まではローカルで実用的な精度を出すのは困難でしたが、モデルのアーキテクチャの進化や量子化（Quantization）技術の発展により、現在ではコンシューマー向けのGPU（NVIDIA RTX 3090 / 4090やMacのApple Siliconなど）でも、非常に高性能なLLMをサクサクと動かすことが可能になりました。
+この要求に応えるのが、自分のPCや社内サーバーに直接ダウンロードして実行できる「ローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（オープンソースLLM）」です。2023年頃まではローカルで実用的な精度を出すのは困難でしたが、モデルのアーキテクチャの進化や量子化（Quantization）技術の発展により、現在ではコンシューマー向けのGPU（NVIDIA RTX 3090 / 4090やMacのApple Siliconなど）でも、非常に高性能なLLMをサクサクと動かすことが可能になりました。
 
 本記事では、数多くのオープンソースLLMの中から、2026年現在で特に優れていると評価されている「おすすめモデル5選」をピックアップし、それぞれのアーキテクチャの特徴、パラメータ数、GGUF量子化によるメモリ要件、そして具体的なユースケースに至るまで、極めて詳細かつ技術的な視点から徹底的に比較・解説します。
 
@@ -80,7 +80,7 @@ Meta社が開発し、オープンソースLLMの事実上の業界標準（デ�
 
 ### アーキテクチャの進化と特徴
 
-Llama 3は、標準的なTransformerアーキテクチャを採用しつつも、前世代（Llama 2）から数々の技術的改良が加えられています。特に注目すべきは以下の点です。
+Llama 3は、標準的な[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)アーキテクチャを採用しつつも、前世代（Llama 2）から数々の技術的改良が加えられています。特に注目すべきは以下の点です。
 
 - **GQA (Grouped Query Attention)の標準採用**: Llama 2では大規模モデルのみに採用されていたGQAが、Llama 3では8Bのような小規模モデルにも採用されました。これにより、KVキャッシュのメモリ使用量が激減し、長いコンテキストでも高速な推論が可能になっています。
 - **語彙サイズの拡大**: トークナイザー（Tiktokenベース）の語彙サイズが128,000トークンに拡張され、多言語やプログラムコードの圧縮効率が劇的に向上しました。日本語の処理効率もLlama 2と比較して数倍良くなっています。
@@ -114,7 +114,7 @@ Llama 3はコミュニティによるサポートが最も厚く、GGUF、AWQ、
 
 ### MoE (Mixture of Experts) の仕組み
 
-「Mixtral 8x7B」は、オープンソースLLMとして初めて **MoE (Mixture of Experts)** アーキテクチャを本格的に採用し、大成功を収めました。
+「Mixtral 8x7B」は、オープンソース[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)として初めて **MoE (Mixture of Experts)** アーキテクチャを本格的に採用し、大成功を収めました。
 MoEとは、モデル全体（約470億パラメータ）の中に8つの「専門家（Expert）ネットワーク」を持たせ、入力されたトークンごとに最適な2つの専門家だけを動的に選択（ルーティング）する仕組みです。
 
 ```mermaid
@@ -144,7 +144,7 @@ Googleが自社の最先端モデル「Gemini」の技術を活用して開発�
 
 ### 独自のアーキテクチャ設計
 
-Gemma 2は、他のLLMとは一線を画すいくつかの独自設計を採用しています。
+Gemma 2は、他の[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)とは一線を画すいくつかの独自設計を採用しています。
 
 - **Logit Soft-capping**: 異常に大きなロジット値が生成されるのを防ぎ、学習と推論の安定性を高める技術。
 - **Sliding Window Attention (SWA) と Local Attentionのハイブリッド**: すべての層でフルアテンションを行うのではなく、局所的なコンテキストだけを見る層と全体を見る層を交互に配置しています。
@@ -227,7 +227,7 @@ xychart-beta
 
 ## 推論速度（Tokens/sec）の理論的計算
 
-ローカルLLMの推論速度は、GPUの「メモリ帯域幅（Memory Bandwidth）」に強く依存します。生成フェーズ（デコード）においては、1トークン生成するごとにモデルの全重みをメモリから読み出す必要があるためです。計算律速（Compute-bound）ではなくメモリ律速（Memory-bound）の処理となります。
+ローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)の推論速度は、GPUの「メモリ帯域幅（Memory Bandwidth）」に強く依存します。生成フェーズ（デコード）においては、1トークン生成するごとにモデルの全重みをメモリから読み出す必要があるためです。計算律速（Compute-bound）ではなくメモリ律速（Memory-bound）の処理となります。
 
 理論的な最大推論速度 $T$（Tokens/sec）は、以下の式で計算されます。
 
@@ -262,7 +262,7 @@ ollama run llama3
 GUIベースで直感的に操作したい方におすすめのアプリケーションです。Hugging Faceの膨大なGGUFモデルのリストをアプリ内から検索・ダウンロードでき、ChatGPTライクなチャット画面で会話を楽しめます。どのモデルが自分のPCのRAM/VRAMに収まるかを視覚的に教えてくれる機能が非常に便利です。
 
 ### 3. llama.cpp
-ローカルLLMブームの火付け役であり、すべての基盤となっているC/C++実装のライブラリです。極限までパフォーマンスをチューニングしたいエンジニアや、独自のスクリプトに組み込みたいハッカー向けです。AppleのMetal、NVIDIAのCUDA、AMDのROCm、さらにはIntelのAVX命令セットまで、あらゆるハードウェアの潜在能力を限界まで引き出します。
+ローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)ブームの火付け役であり、すべての基盤となっているC/C++実装のライブラリです。極限までパフォーマンスをチューニングしたいエンジニアや、独自のスクリプトに組み込みたいハッカー向けです。AppleのMetal、NVIDIAのCUDA、AMDのROCm、さらにはIntelのAVX命令セットまで、あらゆるハードウェアの潜在能力を限界まで引き出します。
 
 ---
 
@@ -276,7 +276,7 @@ GUIベースで直感的に操作したい方におすすめのアプリケー�
 4. **自然な日本語出力と高度なコーディング支援が目的なら**: `Qwen 2.5`
 5. **スマホや非力なPC、バックグラウンドでの超軽量処理なら**: `Phi-3 / Phi-3.5`
 
-オープンソースLLMの進化速度は凄まじく、数ヶ月ごとにこれまでの常識を覆すようなブレイクスルーが発表されています。今後、量子化技術のさらなる向上や新しいアーキテクチャの登場により、ローカル環境だけでクラウドAIを凌駕する日も近いかもしれません。
+オープンソース[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)の進化速度は凄まじく、数ヶ月ごとにこれまでの常識を覆すようなブレイクスルーが発表されています。今後、量子化技術のさらなる向上や新しいアーキテクチャの登場により、ローカル環境だけでクラウドAIを凌駕する日も近いかもしれません。
 ぜひ、ご自身のハードウェア環境に合わせて最適なモデルをダウンロードし、ローカルAIの圧倒的な自由と可能性を体感してみてください。
 
 

@@ -11,7 +11,7 @@ tags: ["RAG", "Vector DB", "Embeddings", "Python", "Local AI"]
 
 # Introdução
 
-Nos últimos anos, a evolução dos Grandes Modelos de Linguagem (LLM) tem sido notável, com muitas IAs, lideradas pelo ChatGPT e Claude, permeando nossas vidas e trabalhos. No entanto, os LLMs em geral têm uma fraqueza clara. É o fato de que eles conhecem apenas "informações públicas no momento do treinamento". Eles naturalmente não podem responder a perguntas sobre "documentos privados", como regulamentos internos, notas pessoais ou materiais de projetos não publicados. Tentar forçá-los a responder aumenta o risco de gerar mentiras plausíveis que diferem dos fatos (alucinações).
+Nos últimos anos, a evolução dos Grandes Modelos de Linguagem ([LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/)) tem sido notável, com muitas IAs, lideradas pelo ChatGPT e Claude, permeando nossas vidas e trabalhos. No entanto, os LLMs em geral têm uma fraqueza clara. É o fato de que eles conhecem apenas "informações públicas no momento do treinamento". Eles naturalmente não podem responder a perguntas sobre "documentos privados", como regulamentos internos, notas pessoais ou materiais de projetos não publicados. Tentar forçá-los a responder aumenta o risco de gerar mentiras plausíveis que diferem dos fatos (alucinações).
 
 Portanto, a arquitetura de tecnologia que está se espalhando explosivamente pelo mundo agora é a **RAG (Retrieval-Augmented Generation: Geração Aumentada por Recuperação)**. Ao usar a RAG, é possível fornecer dinamicamente conhecimento próprio ao LLM a partir de um banco de dados externo e fazer com que ele gere respostas precisas e fundamentadas com base nisso.
 
@@ -54,7 +54,7 @@ graph TD
 
 ## Fase de Ingestão (Preparação prévia)
 1. **Leitura de documentos**: Carrega dados não estruturados, como arquivos PDF, Word e texto.
-2. **Chunking (Divisão de texto)**: Divide textos longos em blocos significativos (chunks) para caber no limite de entrada do LLM (janela de contexto) e para aumentar a precisão da pesquisa.
+2. **Chunking (Divisão de texto)**: Divide textos longos em blocos significativos (chunks) para caber no limite de entrada do [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) (janela de contexto) e para aumentar a precisão da pesquisa.
 3. **Embedding (Vetorização)**: Insere os chunks divididos em um Modelo de Incorporação (Embedding Model) e os converte em matrizes numéricas (vetores) de centenas a milhares de dimensões.
 4. **Armazenamento no banco de dados**: Salva os vetores convertidos associados aos dados de texto originais em um banco de dados vetorial (Vector DB).
 
@@ -101,11 +101,11 @@ Os bancos de dados vetoriais recentes (Chroma, FAISS, Qdrant, etc.) adotam um al
 
 Para construir uma RAG totalmente local, sem depender da nuvem, utilizamos o ecossistema de código aberto. A pilha de tecnologia recomendada é apresentada abaixo.
 
-1. **Modelo de Linguagem (LLM)**
+1. **Modelo de Linguagem ([LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/))**
    - Ferramenta: `Ollama` ou `Llama.cpp`
    - Modelo: Modelos abertos leves e de alto desempenho, como `Llama-3-8B-Instruct`, `Gemma-2-9B-It`, `Qwen2-7B-Instruct`. Para tarefas em japonês, modelos ajustados como o `Llama-3-ELYZA-JP-8B` são adequados.
 2. **Modelo de Incorporação (Embedding)**
-   - Modelo: `intfloat/multilingual-e5-large` ou `BAAI/bge-m3`. Ao executar localmente, geralmente é feito o download pelo Hugging Face e a execução usando o Sentence-Transformers.
+   - Modelo: `intfloat/multilingual-e5-large` ou `BAAI/bge-m3`. Ao executar localmente, geralmente é feito o download pelo Hugging Face e a execução usando o Sentence-[Transformer](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/)s.
 3. **Banco de Dados Vetorial (Vector DB)**
    - `ChromaDB`: Baseado em Python e extremamente fácil de configurar. Ideal para desenvolvimento local.
    - `FAISS`: Uma biblioteca rápida de pesquisa vetorial desenvolvida pela Meta.
@@ -131,7 +131,7 @@ pip install chromadb sentence-transformers pypdf
 
 ## Passo 2: Visão Geral do Código de Implementação
 
-Abaixo está o script Python completo para ler um arquivo PDF, vetorizá-lo e permitir perguntas e respostas usando o LLM local.
+Abaixo está o script Python completo para ler um arquivo PDF, vetorizá-lo e permitir perguntas e respostas usando o [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) local.
 
 ```python
 import os
@@ -252,7 +252,7 @@ Portanto, a realização da **pesquisa semântica** baseada em vetores em parale
 A pesquisa vetorial é rápida, mas nem sempre avalia a relevância exata de um contexto no seu sentido literal. O pipeline geral para melhorar a precisão da pesquisa é o seguinte:
 1. **Recuperação Inicial (First-stage Retrieval)**: Recupera entre 20 a 30 chunks relevantes do banco de dados vetorial, com alcance mais amplo e superficial.
 2. **Reavaliação (Re-ranking)**: Utiliza-se um modelo de machine learning diferente e mais pesado chamado Cross-Encoder (por exemplo: `bge-reranker`) para introduzir pares compostos da consulta do usuário e dos chunks recuperados, recalculando a pontuação de relevância semântica.
-3. **Seleção**: Somente os 3 a 5 principais resultados com as maiores pontuações são repassados ao prompt do LLM como o contexto final.
+3. **Seleção**: Somente os 3 a 5 principais resultados com as maiores pontuações são repassados ao prompt do [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) como o contexto final.
 
 Esse método impede que informações de ruído não relacionadas passem para o LLM, o que pode melhorar significativamente a precisão (Precision) da resposta.
 
@@ -267,7 +267,7 @@ graph LR
 
 ## 5.3 Chunking Semântico e Pesquisa do Documento Pai
 Em vez de dividir o texto mecanicamente por um número fixo de caracteres, existe uma técnica chamada "Semantic Chunking", onde a IA detecta as mudanças de significado do texto para dividi-lo.
-Além disso, com a técnica de "Pesquisa do Documento Pai (Parent Document Retriever)", a vetorização é feita em unidades muito pequenas (como frases isoladas) para a pesquisa, buscando alta precisão. Mas ao passar para o LLM, o parágrafo original inteiro ("documento pai") que contém essa frase é fornecido, dando ao LLM um contexto suficiente para compreensão.
+Além disso, com a técnica de "Pesquisa do Documento Pai (Parent Document Retriever)", a vetorização é feita em unidades muito pequenas (como frases isoladas) para a pesquisa, buscando alta precisão. Mas ao passar para o [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/), o parágrafo original inteiro ("documento pai") que contém essa frase é fornecido, dando ao LLM um contexto suficiente para compreensão.
 
 ---
 

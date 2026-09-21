@@ -11,9 +11,9 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 # はじめに：システムプログラミングの新たな夜明け
 
-現代のソフトウェアエンジニアリングにおいて、C++と[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)はシステムプログラミングの最前線に立つ二大巨頭です。長年にわたり、C++はオペレーティングシステム、組み込みデバイス、ゲームエンジン、高頻度取引（HFT）システムなど、ハードウェアの極限のパフォーマンスを引き出す領域において絶対的な王として君臨してきました。私自身もシニアC++エンジニアとして、C++98時代の生ポインタのジャングルから始まり、C++11によるモダン化の波（スマートポインタ、ラムダ式、`auto`の導入）、そしてC++14/17/20と続く仕様の巨大化に並走しながらコードを書き続けてきました。
+現代のソフトウェアエンジニアリングにおいて、C++と[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)はシステムプログラミングの最前線に立つ二大巨頭です。長年にわたり、C++はオペレーティングシステム、組み込みデバイス、ゲームエンジン、高頻度取引（HFT）システムなど、ハードウェアの極限のパフォーマンスを引き出す領域において絶対的な王として君臨してきました。私自身もシニアC++エンジニアとして、C++98時代の生[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)のジャングルから始まり、C++11によるモダン化の波（スマートポインタ、ラムダ式、`auto`の導入）、そしてC++14/17/20と続く仕様の巨大化に並走しながらコードを書き続けてきました。
 
-しかし近年、C++が抱える構造的な課題—特に「メモリ安全性の欠如」によるセキュリティ[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)（CVEの約7割がメモリ起因と言われています）と、「果てしなく複雑化する仕様と未定義動作（UB）」—に対する解決策として、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)が劇的な台頭を見せています。Linuxカーネルへの公式採用や、Microsoft、Google、AWSといった巨大テック企業による大規模なRustへの移行プロジェクトは、単なる一時的な流行ではなく、システムプログラミングのパラダイムシフトを意味しています。
+しかし近年、C++が抱える構造的な課題—特に「メモリ安全性の欠如」によるセキュリティ[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)（CVEの約7割がメモリ起因と言われています）と、「果てしなく複雑化する仕様と未定義動作（UB）」—に対する解決策として、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)が劇的な台頭を見せています。Linuxカーネルへの公式採用や、Microsoft、Google、AWSといった巨大テック企業による大規模な[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)への移行プロジェクトは、単なる一時的な流行ではなく、システムプログラミングのパラダイムシフトを意味しています。
 
 本記事では、生粋のC++エンジニアが実際にRustを深く学び、実戦で利用して感じた「メリット」と「デメリット」を、言語仕様の根幹に関わる技術的な観点から徹底的に比較・解説します。
 
@@ -21,11 +21,11 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 # 1. [メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)のパラダイムシフト：RAIIから所有権と借用へ
 
-## C++のRAIIとスマートポインタの限界
+## C++のRAIIとスマート[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の限界
 
 C++の最も偉大な発明の一つが **RAII (Resource Acquisition Is Initialization)** です。コンストラクタでリソースを確保し、スコープを抜ける際にデストラクタで自動的に解放するというこの概念は、手動の`new`と`delete`によるメモリリークの恐怖から開発者を解放しました。C++11からは`std::unique_ptr`と`std::shared_ptr`が標準ライブラリに導入され、所有権（Ownership）の概念がコード上で表現可能になりました。
 
-しかし、C++のスマートポインタとムーブセマンティクスには、コンパイラによる静的な検証が不完全であるという致命的な弱点があります。
+しかし、C++のスマート[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)とムーブセマンティクスには、コンパイラによる静的な検証が不完全であるという致命的な弱点があります。
 
 ```cpp
 #include <iostream>
@@ -59,7 +59,7 @@ C++では、`std::move`によって中身が空になった（有効だが未規
 
 ## [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の所有権（Ownership）とボローチェッカーの絶対的防御
 
-Rustは、この「所有権」という概念を言語のコア設計に組み込み、 **ボローチェッカー（[Borrow Checker](https://kenji.blog/p/memory-management-garbage-collection/)）** と呼ばれるコンパイラの機能によって厳密な静的解析を行います。
+[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)は、この「所有権」という概念を言語のコア設計に組み込み、 **ボローチェッカー（[Borrow Checker](https://kenji.blog/p/memory-management-garbage-collection/)）** と呼ばれるコンパイラの機能によって厳密な静的解析を行います。
 
 ```rust
 fn consume(s: String) {
@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)では、変数の所有権が移動した時点で、元の変数はコンパイラによって「未初期化」状態と同等に扱われ、以降のアクセスを完全に遮断します。これにより、「Use-After-Free（解放後メモリ使用）」や「Dangling Pointer（ダングリングポインタ）」といったバグは、理論上コンパイルを通過することができません。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)では、変数の所有権が移動した時点で、元の変数はコンパイラによって「未初期化」状態と同等に扱われ、以降のアクセスを完全に遮断します。これにより、「Use-After-Free（解放後メモリ使用）」や「Dangling [Pointer](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（ダングリング[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）」といったバグは、理論上コンパイルを通過することができません。
 
 ```mermaid
 graph TD
@@ -98,11 +98,11 @@ graph TD
 1. 任意のタイミングにおいて、「複数の不変参照（`&T`）」または「単一の可変参照（`&mut T`）」の **どちらか一方のみ** が存在できる。
 2. 参照は、元のデータのスコープよりも長生きしてはならない（ライフタイムの制約）。
 
-C++では、同じオブジェクトに対して複数のミュータブル（可変）な参照やポインタを簡単に作成でき、それが予期せぬ状態の破壊（イテレータの無効化など）を引き起こします。[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)はこの「エイリアシング（Aliasing）＋ミュータビリティ（Mutability）」の組み合わせを言語レベルで禁止することで、バグを未然に防ぎます。
+C++では、同じオブジェクトに対して複数のミュータブル（可変）な参照や[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を簡単に作成でき、それが予期せぬ状態の破壊（イテレータの無効化など）を引き起こします。[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)はこの「エイリアシング（Aliasing）＋ミュータビリティ（Mutability）」の組み合わせを言語レベルで禁止することで、バグを未然に防ぎます。
 
 ---
 
-# 2. メモリレイアウトとスマートポインタの数学的オーバーヘッド
+# 2. メモリレイアウトとスマート[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の数学的オーバーヘッド
 
 システムプログラミングにおいて、メモリレイアウトの正確な理解は不可欠です。C++の`std::shared_ptr`と[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の`std::rc::Rc` / `std::sync::Arc`を比較してみましょう。
 
@@ -112,7 +112,7 @@ $$ Overhead_{C++} = sizeof(T) + sizeof(ControlBlock) $$
 
 ここで、$ControlBlock$ には「強参照カウンタ（Strong Ref Count）」、「弱参照カウンタ（Weak Ref Count）」、および「カスタムデリータ（Custom Deleter）」が含まれます。問題は、シングルスレッドでしか使わない場面でも、アトミック命令のオーバーヘッド（キャッシュラインの[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)等）が無条件で発生してしまう点です。
 
-対照的に、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)は用途に応じてスマートポインタを厳密に分離しています。
+対照的に、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)は用途に応じてスマート[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を厳密に分離しています。
 
 - **シングルスレッド用**: `Rc<T>` (Reference Counted)
 - **マルチスレッド用**: `Arc<T>` (Atomic Reference Counted)
@@ -158,7 +158,7 @@ int main() {
 
 ## [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)のMutexはデータを「所有」する
 
-Rustでは、`Mutex<T>`はジェネリクスを用いて保護対象のデータ型 `T` を **内包（所有）** します。データにアクセスするためには、必ず`lock()`を呼び出してガードオブジェクトを取得する必要があります。[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を取得せずにデータに触ることは、文法的に不可能です。
+[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)では、`Mutex<T>`はジェネリクスを用いて保護対象のデータ型 `T` を **内包（所有）** します。データにアクセスするためには、必ず`lock()`を呼び出してガードオブジェクトを取得する必要があります。[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を取得せずにデータに触ることは、文法的に不可能です。
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -213,7 +213,7 @@ graph TD
 
 # 4. エラーハンドリング：例外 vs 代数的データ型
 
-C++のエラーハンドリングの標準は「例外（Exceptions）」です。しかし、例外は制御フローを不透明にし、パフォーマンス上のペナルティ（スタックアンワインディングやRTTIの肥大化）を引き起こします。組み込みシステムやゲームエンジンでは、例外を完全に無効化（`-fno-exceptions`）して、古典的なエラーコードを返す設計を採用することが多々あります。C++23では`std::expected`が導入されましたが、エコシステム全体への浸透には時間がかかるでしょう。
+C++のエラーハンドリングの標準は「例外（Exceptions）」です。しかし、例外は制御フローを不透明にし、パフォーマンス上のペナルティ（[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)アンワインディングやRTTIの肥大化）を引き起こします。組み込みシステムやゲームエンジンでは、例外を完全に無効化（`-fno-exceptions`）して、古典的なエラーコードを返す設計を採用することが多々あります。C++23では`std::expected`が導入されましたが、エコシステム全体への浸透には時間がかかるでしょう。
 
 [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)には例外という概念が存在しません。エラーは純粋な「値」として返され、`Result<T, E>` という列挙型（代数的データ型）で表現されます。
 
@@ -239,7 +239,7 @@ fn read_file_content(path: &str) -> Result<String, io::Error> {
 
 C++のポリモーフィズムは、主にクラスの継承と仮想関数（`virtual`）による動的ディスパッチ、またはテンプレートによる静的ディスパッチ（CRTPなど）で実現されます。
 
-動的ディスパッチでは、オブジェクトに仮想関数テーブル（vtable）へのポインタ（vptr）が埋め込まれ、関数呼び出し時にポインタの解決オーバーヘッドが発生します。
+動的ディスパッチでは、オブジェクトに仮想関数テーブル（vtable）への[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（vptr）が埋め込まれ、関数呼び出し時にポインタの解決オーバーヘッドが発生します。
 
 $$ T_{dispatch} = T_{lookup\_in\_vtable} + T_{dereference} $$
 
@@ -266,7 +266,7 @@ fn draw_dynamic(item: &dyn Drawable) {
 }
 ```
 
-[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の動的ディスパッチ（`dyn Trait`）の最大の特徴は、データ構造内にvptrを持たず、 **ファットポインタ（Fat Pointer）** を使用する点です。ファットポインタは「データへのポインタ」と「vtableへのポインタ」をペアで保持します。これにより、外部のライブラリで定義された型に対して、後からトレイトを実装（拡張）して動的ディスパッチにかけることが非常に容易になっています。
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の動的ディスパッチ（`dyn Trait`）の最大の特徴は、データ構造内にvptrを持たず、 **ファット[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（Fat [Pointer](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）** を使用する点です。ファットポインタは「データへのポインタ」と「vtableへのポインタ」をペアで保持します。これにより、外部のライブラリで定義された型に対して、後からトレイトを実装（拡張）して動的ディスパッチにかけることが非常に容易になっています。
 
 ---
 
@@ -295,16 +295,16 @@ graph TD
 
 # 7. [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)を学ぶ上でのデメリットと学習曲線
 
-ここまでRustの長所を語りましたが、C++エンジニアがRustを実戦投入するにあたって直面する「壁」やデメリットも確実に存在します。
+ここまで[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の長所を語りましたが、C++エンジニアがRustを実戦投入するにあたって直面する「壁」やデメリットも確実に存在します。
 
 ## 1. 苛烈なボローチェッカーとの格闘
-C++で「何となく生のポインタで繋いでいた」データ構造（例えば双方向リンクリストや、[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)構造、自己参照構造体など）をRustでそのまま実装しようとすると、所有権とライフタイムの制約によりコンパイルが通りません。ボローチェッカーを満足させるためには、`Rc<RefCell<T>>` のような複雑なラップを行うか、アリーナアロケータやインデックスベースの管理に設計を根本から見直す必要があります。
+C++で「何となく生の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)で繋いでいた」データ構造（例えば双方向リンクリストや、[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)構造、自己参照構造体など）を[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)でそのまま実装しようとすると、所有権とライフタイムの制約によりコンパイルが通りません。ボローチェッカーを満足させるためには、`Rc<RefCell<T>>` のような複雑なラップを行うか、アリーナアロケータやインデックスベースの管理に設計を根本から見直す必要があります。
 
 ## 2. コンパイル時間の長さ
 C++もテンプレートのネストによってコンパイルが遅くなりますが、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)のコンパイル時間（特にゼロからのクリーンビルド）も決して短くありません。LLVMの強力な最適化パス、マクロの展開、ジェネリクスの単相化（モノモルフィゼーション）が重なるため、大規模プロジェクトではビルド時間がボトルネックになります。開発中は `cargo check` を多用するなどの工夫が必須です。
 
 ## 3. C++コードベースとの相互運用性
-C言語（FFI）との連携は非常にスムーズですが、既存の巨大なC++コードベース（クラス、テンプレート、仮想関数を多用しているもの）と[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)を直接連携させるのは非常に困難です。近年は `cxx` や `autocxx` といったブリッジツールが進化していますが、完全なシームレスな移行にはまだ高いハードルがあります。
+[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（FFI）との連携は非常にスムーズですが、既存の巨大なC++コードベース（クラス、テンプレート、仮想関数を多用しているもの）と[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)を直接連携させるのは非常に困難です。近年は `cxx` や `autocxx` といったブリッジツールが進化していますが、完全なシームレスな移行にはまだ高いハードルがあります。
 
 ---
 
@@ -312,7 +312,7 @@ C言語（FFI）との連携は非常にスムーズですが、既存の巨大�
 
 C++は今後もゲームエンジン開発や、既存の巨大なインフラストラクチャにおいて重要な役割を担い続けるでしょう。C++20/23による近代化も目覚ましく、より安全に書けるようになってきています。
 
-しかし、「新規に立ち上げるシステムプログラミングのプロジェクト」において、私はもはや **Rustを選択しない理由を見つける方が難しい** と感じています。コンパイルさえ通れば、未定義動作やメモリ破壊の恐怖から解放され、高いパフォーマンスで安全に並行処理を行えるという Rust の「確実性」は、エンジニアのメンタルモデルを劇的に改善します。
+しかし、「新規に立ち上げるシステムプログラミングのプロジェクト」において、私はもはや **[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)を選択しない理由を見つける方が難しい** と感じています。コンパイルさえ通れば、未定義動作やメモリ破壊の恐怖から解放され、高いパフォーマンスで安全に並行処理を行えるという Rust の「確実性」は、エンジニアのメンタルモデルを劇的に改善します。
 
 C++エンジニアにとって、Rustの学習は単に新しいシンタックスを覚えることではなく、「メモリとスレッドの安全な管理方法」に対する新たな視座を得る最高の体験です。ぜひ皆さんも、Cargoの快適さとボローチェッカーの厳しさを体感してみてください。
 

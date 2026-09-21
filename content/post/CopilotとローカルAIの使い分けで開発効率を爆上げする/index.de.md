@@ -108,7 +108,7 @@ graph TD
 ```
 
 ### 3.1 Bewertungsachse 1: Vertraulichkeit (Privacy and Security)
-Dies ist das wichtigste Entscheidungskriterium. Bei Testcode, der Kundendaten enthält, deren externe Übertragung durch Unternehmensrichtlinien verboten ist, oder in Dateien, in denen proprietäre Kernalgorithmen implementiert sind, wird kompromisslos die lokale KI gewählt. Eine sehr effektive Methode besteht auch darin, lokal RAG (Retrieval-Augmented Generation) aufzubauen, interne Dokumente in einem Vektorspeicher zu speichern und sie von der lokalen LLM referenzieren zu lassen.
+Dies ist das wichtigste Entscheidungskriterium. Bei Testcode, der Kundendaten enthält, deren externe Übertragung durch Unternehmensrichtlinien verboten ist, oder in Dateien, in denen proprietäre Kernalgorithmen implementiert sind, wird kompromisslos die lokale KI gewählt. Eine sehr effektive Methode besteht auch darin, lokal RAG (Retrieval-Augmented Generation) aufzubauen, interne Dokumente in einem Vektorspeicher zu speichern und sie von der lokalen [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) referenzieren zu lassen.
 
 ### 3.2 Bewertungsachse 2: Latenz (Latency)
 Um den Denkfluss nicht zu unterbrechen, ist die Latenz bei der Vervollständigung von entscheidender Bedeutung. Bei der Cloud-KI tritt immer eine Netzwerk-Round-Trip-Zeit (RTT) auf. Da die lokale KI keine Netzwerkverzögerung hat, kann man durch das Bereithalten eines leichtgewichtigen Modells im VRAM eine gefühlte Geschwindigkeit erreichen, die die der Cloud übertrifft.

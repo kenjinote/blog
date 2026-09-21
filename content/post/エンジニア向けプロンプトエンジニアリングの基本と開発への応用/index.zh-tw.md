@@ -11,11 +11,11 @@ tags: ["Prompt Engineering", "LLM", "Development", "ChatGPT", "Claude"]
 
 # 前言：為什麼工程師應該學習提示工程
 
-軟體開發的世界，由於大型語言模型 (LLM) 的急遽進化，正處於前所未有的典範轉移之中。從 Andrejs Karpathy 提倡的「Software 2.0 (透過神經網路進行開發)」，到現在可以說正逐漸轉移至「Software 3.0 (透過自然語言的提示驅動開發)」。
+軟體開發的世界，由於大型語言模型 ([LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)) 的急遽進化，正處於前所未有的典範轉移之中。從 Andrejs Karpathy 提倡的「Software 2.0 (透過神經網路進行開發)」，到現在可以說正逐漸轉移至「Software 3.0 (透過自然語言的提示驅動開發)」。
 
 隨著 GitHub Copilot、Cursor，或是各種使用 LLM API 的 AI 助理工具的普及，工程師的主要工作正從「從零開始撰寫程式碼」轉變為「設計指示以讓 AI 生成符合意圖的程式碼，並對生成的程式碼進行程式碼審查與整合」。
 
-在這種新的開發手法中，最重要的技能就是 **提示工程 (Prompt Engineering)** 。提示工程常被當作「與 AI 良好對話」這類給非工程師的流行語來討論，但其本質是 **針對非決定論的 (Non-deterministic) 計算系統的一種新形式的程式語言** 。
+在這種新的開發手法中，最重要的技能就是 **提示工程 ([Prompt Engineering](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/))** 。提示工程常被當作「與 AI 良好對話」這類給非工程師的流行語來討論，但其本質是 **針對非決定論的 (Non-deterministic) 計算系統的一種新形式的程式語言** 。
 
 本文以軟體工程師與架構師為對象，從 LLM 背後的數學與架構基礎，到 Few-Shot、Chain-of-Thought、ReAct 等進階的提示工程手法，以及實際的開發工作流程與如何整合進 API，用約 10,000 字的篇幅進行極為詳細的解說。
 
@@ -23,7 +23,7 @@ tags: ["Prompt Engineering", "LLM", "Development", "ChatGPT", "Claude"]
 
 ## 1. 大型語言模型 (LLM) 的基礎與數學背景
 
-為了最佳化提示詞，並穩定獲得如預期的輸出，理解 LLM 在內部是如何處理與生成文字及程式碼的「黑盒子內部」，也就是從數學與結構上去理解是不可或缺的。現代的 LLM 大多數是使用 Transformer 架構的自迴歸型 (Auto-regressive) 語言模型。
+為了最佳化提示詞，並穩定獲得如預期的輸出，理解 LLM 在內部是如何處理與生成文字及程式碼的「黑盒子內部」，也就是從數學與結構上去理解是不可或缺的。現代的 LLM 大多數是使用 [Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 架構的自迴歸型 (Auto-regressive) 語言模型。
 
 ### 1.1 標記化 (Tokenization) 與 BPE
 
@@ -41,7 +41,7 @@ $$ P(w_t | w_{1}, w_{2}, \dots, w_{t-1}) $$
 
 ### 1.3 注意力機制 (Attention Mechanism) 與上下文視窗
 
-構成 Transformer 架構核心的是自注意力 (Self-Attention) 機制。藉由這個機制，模型能夠計算序列中距離遙遠的標記彼此之間的依賴關係。
+構成 [Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 架構核心的是自注意力 (Self-Attention) 機制。藉由這個機制，模型能夠計算序列中距離遙遠的標記彼此之間的依賴關係。
 
 $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V $$
 
@@ -71,7 +71,7 @@ $$ p_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)} $$
 
 ### 2.1 系統提示詞：定義全域限制與角色
 
-系統提示詞是用來定義給 LLM 的 **全域限制、角色 (Persona)、以及基本行為規則** 。如果用軟體設計來比喻的話，它扮演著應用程式的「環境變數」或「基礎類別」，或是容器的「[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/)file」般的角色。
+系統提示詞是用來定義給 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的 **全域限制、角色 (Persona)、以及基本行為規則** 。如果用軟體設計來比喻的話，它扮演著應用程式的「環境變數」或「基礎類別」，或是容器的「[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/)file」般的角色。
 
 優秀的系統提示詞能戲劇性地穩定輸出的品質與格式。
 
@@ -108,7 +108,7 @@ $$ p_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)} $$
 
 ### 3.1 Zero-Shot Prompting 與 Few-Shot Prompting
 
-**Zero-Shot Prompting** 是只給予任務指示，完全不提供範例，要求模型給出解答的手法。如果是像「請用 Python 寫一個快速排序」這類一般的需求，目前先進的 LLM 在 Zero-Shot 的情況下也能充分發揮作用。
+**Zero-Shot Prompting** 是只給予任務指示，完全不提供範例，要求模型給出解答的手法。如果是像「請用 Python 寫一個快速排序」這類一般的需求，目前先進的 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 在 Zero-Shot 的情況下也能充分發揮作用。
 
 但是，當希望模型遵循專案獨有的程式碼規範，或是要它輸出特定的 JSON 綱要時，Zero-Shot 格式跑掉的機率會很高。為了解決這個問題的便是 **Few-Shot Prompting** 。
 
@@ -135,7 +135,7 @@ Few-Shot Prompting 是在提示詞內提供幾個「輸入與預期輸出的配�
 
 ### 3.2 Chain-of-Thought (CoT) 與 Zero-Shot CoT
 
-關於 LLM 推論能力的重大突破就是 **Chain-of-Thought (CoT：思維鏈)** 。在需要複雜邏輯的任務 (例如：複雜演算法的實作、困難 Bug 的追蹤、正規表示式的建構等) 中，如果一開始就讓 LLM 輸出最終的程式碼，很容易產生邏輯跳躍或是錯誤 (幻覺)。
+關於 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 推論能力的重大突破就是 **Chain-of-Thought (CoT：思維鏈)** 。在需要複雜邏輯的任務 (例如：複雜演算法的實作、困難 Bug 的追蹤、正規表示式的建構等) 中，如果一開始就讓 LLM 輸出最終的程式碼，很容易產生邏輯跳躍或是錯誤 (幻覺)。
 
 CoT 是在輸出最終答案之前，先讓模型將中間的推論過程 (思考過程) 語言化的手法。藉由讓模型自己一步一步地分析狀況，每次生成標記時上下文就會變得更豐富，最終結論的正確性也能獲得戲劇性的提升。
 
@@ -195,7 +195,7 @@ graph TD
 
 ## 4. Agentic [Workflow](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 與 ReAct (Reasoning and Acting)
 
-LLM 的應用正從單一文字的輸入輸出，急速進化到能自主制定計畫、一邊與外部環境互動一邊完成任務的 **AI 代理 (AI Agents)** 領域。構成這個代理架構核心的範式便是 **ReAct (Reasoning and Acting)** 。
+[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的應用正從單一文字的輸入輸出，急速進化到能自主制定計畫、一邊與外部環境互動一邊完成任務的 **AI 代理 (AI Agents)** 領域。構成這個代理架構核心的範式便是 **ReAct (Reasoning and Acting)** 。
 
 ### 4.1 ReAct 框架的概念
 
@@ -217,20 +217,20 @@ graph LR
 
 將 ReAct 整合進系統的標準介面，就是 OpenAI 或 Anthropic 所提供的 **函式呼叫 (Function Calling / 網頁工具使用)** 。
 
-工程師會在提供系統提示詞的同時，交給 LLM「可用工具群的定義 (JSON 綱要)」。LLM 會解析提示詞的上下文，當它判斷應該使用工具時，便不會輸出一般文字，而是輸出「應呼叫的函式名稱」與「該引數的 JSON」。應用程式端在執行該函式後，將結果再次回傳給 LLM，這樣就形成了迴圈。
+工程師會在提供系統提示詞的同時，交給 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)「可用工具群的定義 (JSON 綱要)」。LLM 會解析提示詞的上下文，當它判斷應該使用工具時，便不會輸出一般文字，而是輸出「應呼叫的函式名稱」與「該引數的 JSON」。應用程式端在執行該函式後，將結果再次回傳給 LLM，這樣就形成了迴圈。
 
 **在開發上的應用實例 (自主型除錯代理)：**
-當 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 流程中測試失敗時，若要建立一個會調查原因並生成 Patch 的代理，我們會提供 LLM 以下的工具。
+當 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 流程中測試失敗時，若要建立一個會調查原因並生成 Patch 的代理，我們會提供 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 以下的工具。
 
 1. `search_codebase(regex_pattern)`: 在版本庫內的程式碼中使用正規表示式搜尋。
 2. `view_file_content(file_path, start_line, end_line)`: 讀取指定檔案的內容。
 3. `run_unit_test(test_file_path)`: 執行特定的單元測試並取得 Traceback。
 4. `propose_patch(file_path, diff_content)`: 提案修正的 Patch。
 
-LLM 會自主地進行以下的推論與行動：
+[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 會自主地進行以下的推論與行動：
 - **Thought**: 看測試日誌發現在 `src/auth.py` 的第 45 行發生了 `KeyError: 'user_id'`。必須確認周遭的程式碼。
 - **Action**: `view_file_content(file_path="src/auth.py", start_line=30, end_line=60)`
-- **Observation**: (應用程式讀取檔案內容並回傳給 LLM)
+- **Observation**: (應用程式讀取檔案內容並回傳給 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/))
 - **Thought**: 原來如此，從 API 獲得的 Response JSON 若不包含 `user_id` 的情況下漏掉了驗證處理。來建立一個改寫成安全的 `.get()` 方法的 Patch 吧。
 - **Action**: `propose_patch(...)`
 
@@ -240,7 +240,7 @@ LLM 會自主地進行以下的推論與行動：
 
 ## 5. RAG (Retrieval-Augmented Generation) 與程式碼庫的整合
 
-LLM 最大的弱點之一，就是它不知道預訓練資料中沒包含的「私有資訊」或「最新資訊」。就算是針對公司內部的非公開版本庫或獨家 API 規格提問，LLM 也會若無其事地說謊 (幻覺)，或是只能給出一般的回答。
+[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 最大的弱點之一，就是它不知道預訓練資料中沒包含的「私有資訊」或「最新資訊」。就算是針對公司內部的非公開版本庫或獨家 API 規格提問，LLM 也會若無其事地說謊 (幻覺)，或是只能給出一般的回答。
 
 解決這個問題的架構就是 **RAG (檢索增強生成)** 。RAG 是結合了資訊檢索 (Retrieval) 與 LLM 生成能力 (Generation) 的技術。
 
@@ -283,7 +283,7 @@ sequenceDiagram
 
 ### 6.1 程式碼審查的自動化與輔助靜態分析
 
-在 CI 流程中導入 LLM，在建立 Pull Request (PR) 時自動讓它進行程式碼審查。目的是為了挑出 Lint 工具或靜態分析工具無法偵測到的商業邏輯不一致或是設計上的反模式。
+在 CI 流程中導入 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)，在建立 Pull Request (PR) 時自動讓它進行程式碼審查。目的是為了挑出 Lint 工具或靜態分析工具無法偵測到的商業邏輯不一致或是設計上的反模式。
 
 **提示詞範例 (要求結構化輸出)：**
 ```text
@@ -358,7 +358,7 @@ def is_valid_ipv4(ip_str):
 
 隨著基礎模型版本的更新，或是處理的領域資料變化，提示詞的行為很容易就會被破壞。為了防止這點，我們必須建立能定量評估提示詞輸出的 **Evaluation (Eval)** 機制 (LLMOps)。
 
-### 7.1 LLM-as-a-Judge (用 LLM 評估 LLM)
+### 7.1 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)-as-a-Judge (用 LLM 評估 LLM)
 
 在程式碼生成或文字摘要等任務中，是無法以完全比對 (Exact Match) 的方式進行測試的。自然語言處理領域中傳統的評估指標 (BLEU 或 ROUGE) 在衡量語意正確性上也力有未逮。
 
@@ -376,7 +376,7 @@ def is_valid_ipv4(ip_str):
 
 在 AI 寫程式的時代，雖然不時會聽到「程式設計即將終結」的說法，但現實並非如此。只是工程師被要求的抽象化層次又向上提升了一級而已。
 
-過去我們從組合語言轉向 C 語言，然後又轉向具備垃圾回收的高階語言，藉由這樣從繁瑣的記憶體管理中解放出來，從而能專注於建構更複雜的商業邏輯。LLM 與提示工程便是接續於此的下一波抽象化浪潮。
+過去我們從組合語言轉向 C 語言，然後又轉向具備垃圾回收的高階語言，藉由這樣從繁瑣的記憶體管理中解放出來，從而能專注於建構更複雜的商業邏輯。[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 與提示工程便是接續於此的下一波抽象化浪潮。
 
 1. **理解架構**: 理解 LLM 具機率性的本質 (自迴歸、Attention、Temperature)，控制系統的非決定性。
 2. **設計上下文**: 透過 System Prompt 給予限制，並活用 Few-Shot/CoT 明確傳達意圖。
@@ -386,6 +386,6 @@ def is_valid_ipv4(ip_str):
 只要掌握了這些原則，提示詞便不再只是單純的字串，而會成為堅固且具備可擴展性的軟體元件。希望大家能將本文所解說的進階提示工程手法融入自身的開發工作流程與產品中，並活躍成為引領次世代「Software 3.0」的工程師。
 
 ---
-*Generated using Prompt Engineering Techniques.*
+*Generated using [Prompt Engineering](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) Techniques.*
 
 

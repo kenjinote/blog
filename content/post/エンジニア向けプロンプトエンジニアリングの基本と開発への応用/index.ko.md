@@ -11,11 +11,11 @@ tags: ["Prompt Engineering", "LLM", "Development", "ChatGPT", "Claude"]
 
 # 시작하며: 왜 엔지니어가 프롬프트 엔지니어링을 배워야 하는가
 
-소프트웨어 개발의 세계는 대규모 언어 모델(LLM)의 급격한 진화로 인해 전례 없는 패러다임 시프트의 한가운데에 있습니다. Andrejs Karpathy가 제창한 'Software 2.0(신경망에 의한 개발)'에서, 이제는 'Software 3.0(자연어를 통한 프롬프트 주도 개발)'으로 이행하고 있다고 해도 과언이 아닙니다.
+소프트웨어 개발의 세계는 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 급격한 진화로 인해 전례 없는 패러다임 시프트의 한가운데에 있습니다. Andrejs Karpathy가 제창한 'Software 2.0(신경망에 의한 개발)'에서, 이제는 'Software 3.0(자연어를 통한 프롬프트 주도 개발)'으로 이행하고 있다고 해도 과언이 아닙니다.
 
 GitHub Copilot, Cursor, 혹은 각종 LLM API를 활용한 AI 어시스턴트 툴의 보급으로 인해 엔지니어의 주요 업무는 '코드를 처음부터 작성하는 것'에서 'AI가 의도한 코드를 생성하도록 지시를 설계하고, 생성된 코드를 리뷰 및 통합하는 것'으로 변화하고 있습니다.
 
-이 새로운 개발 방식에서 가장 중요한 스킬이 **프롬프트 엔지니어링(Prompt Engineering)** 입니다. 프롬프트 엔지니어링은 'AI와의 능숙한 대화'와 같은 비엔지니어 대상의 버즈워드로 흔히 이야기되지만, 그 본질은 **비결정론적(Non-deterministic)인 계산 시스템에 대한 새로운 형태의 프로그래밍 언어** 입니다.
+이 새로운 개발 방식에서 가장 중요한 스킬이 **프롬프트 엔지니어링([Prompt Engineering](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))** 입니다. 프롬프트 엔지니어링은 'AI와의 능숙한 대화'와 같은 비엔지니어 대상의 버즈워드로 흔히 이야기되지만, 그 본질은 **비결정론적(Non-deterministic)인 계산 시스템에 대한 새로운 형태의 프로그래밍 언어** 입니다.
 
 본 문서에서는 소프트웨어 엔지니어나 아키텍트를 대상으로, LLM 이면의 수학적·아키텍처적 기초부터 Few-Shot, Chain-of-Thought, ReAct와 같은 고도화된 프롬프트 엔지니어링 기법, 그리고 실제 개발 워크플로우나 API에 어떻게 통합하는지까지 약 10,000자 분량으로 매우 상세히 해설합니다.
 
@@ -23,7 +23,7 @@ GitHub Copilot, Cursor, 혹은 각종 LLM API를 활용한 AI 어시스턴트 �
 
 ## 1. 대규모 언어 모델(LLM)의 기초와 수학적 배경
 
-프롬프트를 최적화하고 의도한 대로의 출력을 안정적으로 얻기 위해서는, LLM이 내부적으로 텍스트나 코드를 어떻게 처리하고 생성하는지에 대한 '블랙박스 내부'를 수학적·구조적으로 이해하는 것이 필수적입니다. 현대 LLM의 대부분은 Transformer 아키텍처를 사용한 자기회귀형(Auto-regressive) 언어 모델입니다.
+프롬프트를 최적화하고 의도한 대로의 출력을 안정적으로 얻기 위해서는, LLM이 내부적으로 텍스트나 코드를 어떻게 처리하고 생성하는지에 대한 '블랙박스 내부'를 수학적·구조적으로 이해하는 것이 필수적입니다. 현대 LLM의 대부분은 [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 아키텍처를 사용한 자기회귀형(Auto-regressive) 언어 모델입니다.
 
 ### 1.1 토큰화(Tokenization)와 BPE
 
@@ -41,7 +41,7 @@ $$ P(w_t | w_{1}, w_{2}, \dots, w_{t-1}) $$
 
 ### 1.3 어텐션 메커니즘(Attention Mechanism)과 컨텍스트 윈도우
 
-Transformer 아키텍처의 핵심을 이루는 것이 Self-Attention 메커니즘입니다. 이를 통해 모델은 시퀀스 내에서 멀리 떨어진 토큰들 간의 의존 관계를 계산할 수 있습니다.
+[Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 아키텍처의 핵심을 이루는 것이 Self-Attention 메커니즘입니다. 이를 통해 모델은 시퀀스 내에서 멀리 떨어진 토큰들 간의 의존 관계를 계산할 수 있습니다.
 
 $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V $$
 
@@ -60,7 +60,7 @@ $$ p_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)} $$
 - $T \to 0$에 가까워질수록 확률 분포가 뾰족해져서, 가장 확률이 높은 토큰만이 선택되게 됩니다(결정론적, Greedy Decoding).
 - $T > 1.0$일 경우, 확률 분포가 평탄해져서 평소에 선택되지 않던 마이너한 토큰들도 선택되기 쉬워집니다(창의성이 증가).
 
-**[엔지니어를 위한](https://kenji.blog/ko/p/[エンジニア向け](https://kenji.blog/ko/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)プロンプトエンジニアリングの基本と開発への応用/) 실전적 접근:**
+**[엔지니어를 위한](https://kenji.blog/ko/p/[エンジニア向け](https://kenji.blog/ko/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)[プロンプトエンジニアリング](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)の基本と開発への応用/) 실전적 접근:**
 API를 거쳐 코드 생성이나 JSON 데이터 추출(Structured Output)을 수행하게 할 경우, 환각(Hallucination)을 방지하고 재현성을 높이기 위해 $T=0.0 \sim 0.2$의 매우 낮은 값을 설정하는 것이 정석입니다. 반면, 아키텍처의 브레인스토밍이나 명명 규칙 아이디어 도출 등 탐색적인 태스크에서는 $T=0.7 \sim 1.0$으로 설정합니다.
 
 ---
@@ -71,7 +71,7 @@ OpenAI의 API(GPT-4 등)나 Anthropic의 API(Claude 등)를 이용하여 AI 애�
 
 ### 2.1 시스템 프롬프트: 글로벌 제약과 페르소나의 정의
 
-시스템 프롬프트는 LLM에 대한 **글로벌 제약, 페르소나(역할), 그리고 기본이 되는 행동 규칙** 을 정의하는 것입니다. 소프트웨어 설계에 비유하자면, 애플리케이션의 '환경 변수'나 '베이스 클래스', 혹은 컨테이너의 '[Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)file'과 같은 역할을 수행합니다.
+시스템 프롬프트는 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)에 대한 **글로벌 제약, 페르소나(역할), 그리고 기본이 되는 행동 규칙** 을 정의하는 것입니다. 소프트웨어 설계에 비유하자면, 애플리케이션의 '환경 변수'나 '베이스 클래스', 혹은 컨테이너의 '[Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)file'과 같은 역할을 수행합니다.
 
 뛰어난 시스템 프롬프트는 출력의 품질과 포맷을 극적으로 안정화시킵니다.
 
@@ -108,7 +108,7 @@ OpenAI의 API(GPT-4 등)나 Anthropic의 API(Claude 등)를 이용하여 AI 애�
 
 ### 3.1 Zero-Shot Prompting과 Few-Shot Prompting
 
-**Zero-Shot Prompting** 은 태스크의 지시만을 주며 예시를 전혀 제공하지 않고 모델에게 해답을 요구하는 기법입니다. "Python으로 퀵 정렬을 짜줘"와 같은 일반적인 요구라면, 현재의 고도화된 LLM은 Zero-Shot으로도 충분히 기능합니다.
+**Zero-Shot Prompting** 은 태스크의 지시만을 주며 예시를 전혀 제공하지 않고 모델에게 해답을 요구하는 기법입니다. "Python으로 퀵 정렬을 짜줘"와 같은 일반적인 요구라면, 현재의 고도화된 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)은 Zero-Shot으로도 충분히 기능합니다.
 
 하지만 프로젝트 고유의 코딩 규약을 따르게 하고 싶거나, 특정 JSON 스키마를 출력하게 하고 싶은 경우 Zero-Shot으로는 포맷이 깨질 확률이 높습니다. 이를 해결하는 것이 **Few-Shot Prompting** 입니다.
 
@@ -135,7 +135,7 @@ Few-Shot Prompting은 프롬프트 내에 '입력과 기대되는 출력의 쌍(
 
 ### 3.2 Chain-of-Thought (CoT)와 Zero-Shot CoT
 
-LLM의 추론 능력에 관한 획기적인 발전이 바로 **Chain-of-Thought (CoT: 사고의 사슬)** 입니다. 복잡한 로직을 필요로 하는 태스크(예: 복잡한 알고리즘 구현, 난해한 버그 추적, 정규 표현식 작성 등)에 있어서 LLM에게 다짜고짜 최종 코드를 출력하게 하면, 논리의 비약이나 오류(환각)가 발생하기 쉽습니다.
+[LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 추론 능력에 관한 획기적인 발전이 바로 **Chain-of-Thought (CoT: 사고의 사슬)** 입니다. 복잡한 로직을 필요로 하는 태스크(예: 복잡한 알고리즘 구현, 난해한 버그 추적, 정규 표현식 작성 등)에 있어서 LLM에게 다짜고짜 최종 코드를 출력하게 하면, 논리의 비약이나 오류(환각)가 발생하기 쉽습니다.
 
 CoT는 최종적인 답변을 출력하기 전에 중간적인 추론 프로세스(사고 과정)를 언어화하게 하는 기법입니다. 모델 스스로가 단계별(Step-by-step)로 상황을 분석하게 함으로써 토큰 생성 시마다 컨텍스트가 풍부해지고 최종적인 결론의 정확성이 비약적으로 향상됩니다.
 
@@ -195,7 +195,7 @@ ToT를 프롬프트로 구현하려면, "여러 접근 방식을 제안하고, �
 
 ## 4. Agentic [Workflow](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)와 ReAct (Reasoning and Acting)
 
-LLM의 응용은 단일 텍스트 입출력에서 자율적으로 계획을 세우고 외부 환경과 상호작용하면서 태스크를 완수하는 **AI 에이전트(AI Agents)** 의 영역으로 급속히 진화하고 있습니다. 이 에이전트 아키텍처의 핵심을 이루는 패러다임이 **ReAct (Reasoning and Acting)** 입니다.
+[LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 응용은 단일 텍스트 입출력에서 자율적으로 계획을 세우고 외부 환경과 상호작용하면서 태스크를 완수하는 **AI 에이전트(AI Agents)** 의 영역으로 급속히 진화하고 있습니다. 이 에이전트 아키텍처의 핵심을 이루는 패러다임이 **ReAct (Reasoning and Acting)** 입니다.
 
 ### 4.1 ReAct 프레임워크의 개념
 
@@ -217,20 +217,20 @@ graph LR
 
 ReAct를 시스템에 편입하기 위한 표준적인 인터페이스가 OpenAI나 Anthropic이 제공하는 **Function Calling(함수 호출 / 툴 사용)** 입니다.
 
-엔지니어는 LLM에게 시스템 프롬프트와 함께 '사용 가능한 툴 그룹의 정의(JSON 스키마)'를 전달합니다. LLM은 프롬프트의 컨텍스트를 분석하여 툴을 사용해야 한다고 판단할 경우, 일반적인 텍스트가 아닌 '호출할 함수명'과 '해당 인자의 JSON'을 출력합니다. 애플리케이션 측에서 그 함수를 실행하고 그 결과를 다시 LLM에 반환함으로써 루프가 형성됩니다.
+엔지니어는 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)에게 시스템 프롬프트와 함께 '사용 가능한 툴 그룹의 정의(JSON 스키마)'를 전달합니다. LLM은 프롬프트의 컨텍스트를 분석하여 툴을 사용해야 한다고 판단할 경우, 일반적인 텍스트가 아닌 '호출할 함수명'과 '해당 인자의 JSON'을 출력합니다. 애플리케이션 측에서 그 함수를 실행하고 그 결과를 다시 LLM에 반환함으로써 루프가 형성됩니다.
 
 **개발에의 응용 예 (자율형 디버깅 에이전트):**
-[CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인에서 테스트가 실패했을 때 원인을 조사하고 패치를 생성하는 에이전트를 구축할 경우, 다음과 같은 툴을 LLM에 제공합니다.
+[CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인에서 테스트가 실패했을 때 원인을 조사하고 패치를 생성하는 에이전트를 구축할 경우, 다음과 같은 툴을 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)에 제공합니다.
 
 1. `search_codebase(regex_pattern)`: 저장소 내의 코드를 정규 표현식으로 검색한다.
 2. `view_file_content(file_path, start_line, end_line)`: 지정한 파일의 내용을 읽어온다.
 3. `run_unit_test(test_file_path)`: 특정 단위 테스트를 실행하고 트레이스백을 가져온다.
 4. `propose_patch(file_path, diff_content)`: 수정 패치를 제안한다.
 
-LLM은 자율적으로 다음과 같이 추론과 행동을 진행합니다.
+[LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)은 자율적으로 다음과 같이 추론과 행동을 진행합니다.
 - **Thought**: 테스트 로그를 보니 `src/auth.py`의 45번째 줄에서 `KeyError: 'user_id'`가 발생하고 있다. 주변 코드를 확인할 필요가 있다.
 - **Action**: `view_file_content(file_path="src/auth.py", start_line=30, end_line=60)`
-- **Observation**: (애플리케이션이 파일 내용을 읽어 LLM에 반환)
+- **Observation**: (애플리케이션이 파일 내용을 읽어 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)에 반환)
 - **Thought**: 과연, API의 응답 JSON에 `user_id`가 포함되지 않은 케이스에 대한 유효성 검사가 누락되어 있다. 안전한 `.get()` 메서드로 다시 작성하는 패치를 만들어야겠다.
 - **Action**: `propose_patch(...)`
 
@@ -240,7 +240,7 @@ LLM은 자율적으로 다음과 같이 추론과 행동을 진행합니다.
 
 ## 5. RAG (Retrieval-Augmented Generation)와 코드베이스 통합
 
-LLM의 가장 큰 약점 중 하나가 사전 학습 데이터에 포함되지 않은 '프라이빗한 정보'나 '최신 정보'를 모른다는 것입니다. 사내의 비공개 리포지토리나 독자적인 API 사양에 대해 질문해도, LLM은 태연하게 거짓말(환각)을 하거나 일반적인 답변밖에 하지 못합니다.
+[LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 가장 큰 약점 중 하나가 사전 학습 데이터에 포함되지 않은 '프라이빗한 정보'나 '최신 정보'를 모른다는 것입니다. 사내의 비공개 리포지토리나 독자적인 API 사양에 대해 질문해도, LLM은 태연하게 거짓말(환각)을 하거나 일반적인 답변밖에 하지 못합니다.
 
 이를 해결하는 아키텍처가 **RAG (검색 증강 생성)** 입니다. RAG는 정보 검색(Retrieval)과 LLM의 생성 능력(Generation)을 결합한 기술입니다.
 
@@ -283,7 +283,7 @@ sequenceDiagram
 
 ### 6.1 코드 리뷰 자동화와 정적 분석의 보완
 
-CI 파이프라인에 LLM을 포함하여 풀 리퀘스트(PR) 생성 시 자동으로 코드 리뷰를 수행하게 합니다. 린트(Lint) 툴이나 정적 분석 툴로는 감지할 수 없는 비즈니스 로직의 불일치나 설계상의 안티 패턴을 지적하게 하는 것이 목적입니다.
+CI 파이프라인에 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 포함하여 풀 리퀘스트(PR) 생성 시 자동으로 코드 리뷰를 수행하게 합니다. 린트(Lint) 툴이나 정적 분석 툴로는 감지할 수 없는 비즈니스 로직의 불일치나 설계상의 안티 패턴을 지적하게 하는 것이 목적입니다.
 
 **프롬프트 예 (구조화된 출력 요구):**
 ```text
@@ -358,7 +358,7 @@ def is_valid_ipv4(ip_str):
 
 기반 모델의 버전 업그레이드나 다루는 도메인 데이터의 변화에 따라 프롬프트의 동작은 쉽게 망가집니다. 이를 방지하기 위해 프롬프트의 출력을 정량적으로 평가하는 **Evaluation (Eval)** 체계(LLMOps)를 구축하는 것이 필수적입니다.
 
-### 7.1 LLM-as-a-Judge (LLM에 의한 LLM 평가)
+### 7.1 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)-as-a-Judge (LLM에 의한 LLM 평가)
 
 코드 생성이나 텍스트 요약 같은 태스크에서는 완전 일치(Exact Match) 기반의 테스트가 불가능합니다. 자연어 처리의 고전적인 평가지표(BLEU나 ROUGE) 또한 의미의 정확성을 측정하기에는 역부족입니다.
 
@@ -376,7 +376,7 @@ def is_valid_ipv4(ip_str):
 
 AI가 코드를 작성하는 시대에 '프로그래밍의 종말'이 부르짖어지기도 하지만 현실은 다릅니다. 엔지니어에게 요구되는 추상화의 계층이 하나 올라갔을 뿐입니다.
 
-과거 우리가 어셈블리어에서 C 언어로, 그리고 가비지 컬렉션을 갖춘 고급 언어로 이행함으로써 메모리 관리의 번거로움에서 해방되고 더 복잡한 비즈니스 로직 구축에 집중할 수 있게 되었습니다. LLM과 프롬프트 엔지니어링은 이를 잇는 다음 추상화의 물결입니다.
+과거 우리가 어셈블리어에서 C 언어로, 그리고 가비지 컬렉션을 갖춘 고급 언어로 이행함으로써 메모리 관리의 번거로움에서 해방되고 더 복잡한 비즈니스 로직 구축에 집중할 수 있게 되었습니다. [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)과 프롬프트 엔지니어링은 이를 잇는 다음 추상화의 물결입니다.
 
 1. **아키텍처의 이해**: LLM의 확률적인 성질(자기회귀, Attention, Temperature)을 이해하고 시스템의 비결정성을 제어한다.
 2. **컨텍스트의 설계**: System Prompt를 통한 제약과 Few-Shot/CoT를 활용한 의도의 명확한 전달.
@@ -386,6 +386,6 @@ AI가 코드를 작성하는 시대에 '프로그래밍의 종말'이 부르짖�
 이러한 원칙을 마스터함으로써 프롬프트는 단순한 문자열이 아닌 견고하고 확장 가능한 소프트웨어 컴포넌트가 됩니다. 본 문서에서 해설한 고도화된 프롬프트 엔지니어링 기법을 자신의 개발 워크플로우나 프로덕트에 편입시켜 차세대 'Software 3.0'을 주도하는 엔지니어로서 활약하시기를 바랍니다.
 
 ---
-*Generated using Prompt Engineering Techniques.*
+*Generated using [Prompt Engineering](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) Techniques.*
 
 

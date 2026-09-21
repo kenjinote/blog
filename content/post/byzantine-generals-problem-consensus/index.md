@@ -223,7 +223,7 @@ handleTimeout node =
     }
 ```
 
-このように、状態遷移を純粋関数として記述することで、Raftのロジックの正当性を検証しやすくなります。
+このように、状態遷移を[純粋関数](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)として記述することで、Raftのロジックの正当性を検証しやすくなります。
 
 ---
 

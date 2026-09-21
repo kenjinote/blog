@@ -115,7 +115,7 @@ private:
 };
 ```
 
-透過上述的設計，就能簡潔且安全地表達出遞迴式的資料結構 `JsonArray` 與 `JsonObject`（雖然在某些 C++ 標準函式庫的實作中，會限制在 `std::variant` 內使用不完整型別，這時可能需要使用智慧指標進行 Heap 配置，但在最新版的編譯器中，上述寫法大多能正常運作）。
+透過上述的設計，就能簡潔且安全地表達出遞迴式的資料結構 `JsonArray` 與 `JsonObject`（雖然在某些 C++ 標準函式庫的實作中，會限制在 `std::variant` 內使用不完整型別，這時可能需要使用智慧指標進行 [Heap](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/) 配置，但在最新版的編譯器中，上述寫法大多能正常運作）。
 
 ---
 
@@ -256,7 +256,7 @@ private:
 };
 ```
 
-這裡的重點是，字串（String）或數值（Number）的值被擷取為 `std::string_view`。這表示在詞法分析器的階段， **完全不會發生任何動態記憶體配置（Heap Allocation）或複製** 。這是與效能直接相關的重要設計。
+這裡的重點是，字串（String）或數值（Number）的值被擷取為 `std::string_view`。這表示在詞法分析器的階段， **完全不會發生任何動態記憶體配置（[Heap](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/) Allocation）或複製** 。這是與效能直接相關的重要設計。
 
 ---
 
@@ -407,7 +407,7 @@ private:
 僅實作一個單純的解析器，是無法勝過實用等級的函式庫的。在此介紹幾個 C++ 特有的最佳化技巧。
 
 ### 6.1. 零複製 (Zero-Copy) 架構與 `std::string_view`
-解析器效能瓶頸的絕大部份，在於「字串複製」與「Heap 記憶體的動態配置」。
+解析器效能瓶頸的絕大部份，在於「字串複製」與「[Heap](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/) 記憶體的動態配置」。
 若大量使用 `std::string`，每次建立子字串時都會發生記憶體配置。為防止這種情況，我們在詞法分析器中徹底使用了 `std::string_view`。
 `std::string_view` 的建構時間不取決於字串的長度 $L$，能在 $O(1)$ 內完成。
 
@@ -443,7 +443,7 @@ $$
 Space(N) \le C \times N \implies O(N)
 $$
 
-不過，在遞迴下降語法分析中，會消耗與 JSON 巢狀深度（Depth）成正比的呼叫堆疊（Call Stack）。對應深度 $D$，需要 $O(D)$ 的堆疊記憶體。如果被餵給惡意的無限巢狀 JSON，會有引發堆疊溢位（Stack Overflow）的危險。因此，在實用的解析器中，必須對遞迴深度設定上限（例如：256 或 512 等），或是將遞迴展開成迴圈。
+不過，在遞迴下降語法分析中，會消耗與 JSON 巢狀深度（Depth）成正比的呼叫堆疊（Call [Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）。對應深度 $D$，需要 $O(D)$ 的堆疊記憶體。如果被餵給惡意的無限巢狀 JSON，會有引發堆疊溢位（Stack Overflow）的危險。因此，在實用的解析器中，必須對遞迴深度設定上限（例如：256 或 512 等），或是將遞迴展開成迴圈。
 
 ---
 

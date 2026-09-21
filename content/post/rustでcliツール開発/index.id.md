@@ -14,7 +14,7 @@ tags: ["Rust", "CLI", "clap", "tokio"]
 
 Dalam pengembangan perangkat lunak modern, tool CLI (Command Line Interface) adalah entitas yang tak tergantikan yang secara dramatis meningkatkan produktivitas pengembang. Dulu, shell script, Python, Ruby, dll. adalah arus utama, tetapi dalam beberapa tahun terakhir, **[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)** telah menetapkan posisi yang kuat sebagai standar de facto untuk pengembangan tool CLI.
 
-Artikel ini akan secara menyeluruh menjelaskan cara membangun tool CLI praktis yang "berjalan super cepat dan dapat dikembangkan secara super cepat" menggunakan Rust, dari dasar hingga aplikasi tingkat lanjut. Kita tidak hanya akan membuat sesuatu yang berfungsi, tetapi mencakup secara komprehensif mulai dari penanganan error yang kuat (robust) yang dapat digunakan di level komersial, permintaan API (API request) berkecepatan tinggi menggunakan pemrosesan asinkron (asynchronous), hingga implementasi progress bar yang meningkatkan pengalaman pengguna (UX).
+Artikel ini akan secara menyeluruh menjelaskan cara membangun tool CLI praktis yang "berjalan super cepat dan dapat dikembangkan secara super cepat" menggunakan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), dari dasar hingga aplikasi tingkat lanjut. Kita tidak hanya akan membuat sesuatu yang berfungsi, tetapi mencakup secara komprehensif mulai dari penanganan error yang kuat (robust) yang dapat digunakan di level komersial, permintaan API (API request) berkecepatan tinggi menggunakan pemrosesan asinkron (asynchronous), hingga implementasi progress bar yang meningkatkan pengalaman pengguna (UX).
 
 Dengan membaca artikel ini sampai akhir, Anda akan menguasai tumpukan teknologi Rust tingkat lanjut berikut dan dapat mempublikasikan tool CLI kuat Anda sendiri ke dunia.
 
@@ -38,7 +38,7 @@ Dengan model kepemilikan (Ownership) dan sistem tipe yang kuat yang merupakan se
 
 ## 3. Kumpulan Crate Terbaik yang Diadopsi dalam Tutorial Ini
 
-Ekosistem Rust memiliki banyak crate (library) unggulan yang sangat mendukung pengembangan CLI. Dalam tutorial ini, kita akan menggunakan crate berikut yang dapat disebut sebagai "Golden Stack" dalam pengembangan Rust CLI modern.
+Ekosistem Rust memiliki banyak crate (library) unggulan yang sangat mendukung pengembangan CLI. Dalam tutorial ini, kita akan menggunakan crate berikut yang dapat disebut sebagai "Golden [Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)" dalam pengembangan Rust CLI modern.
 
 1. **`clap`**: Crate paling kuat dan populer untuk mengurai (parsing) argumen baris perintah (command line). Sejak versi 4, definisi deklaratif menggunakan makro Derive menjadi lebih elegan, dan juga mendukung pembuatan otomatis pesan bantuan (help message) serta skrip penyelesaian input (input completion script).
 2. **`tokio`**: Standar de facto untuk runtime asinkron (asynchronous runtime) [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/). Menangani I/O asinkron secara multi-thread dengan sangat efisien.
@@ -430,9 +430,9 @@ Kita akan membangun pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-githu
 
 Dalam artikel ini, kita telah menjelaskan secara rinci alur pengembangan tool CLI menggunakan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/).
 
-1. **Kebijakan Desain**: Mengonfirmasi keunggulan kecepatan dan keamanan Rust, serta keuntungan dari single binary.
+1. **Kebijakan Desain**: Mengonfirmasi keunggulan kecepatan dan keamanan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), serta keuntungan dari single binary.
 2. **Pemilihan Crate**: Memperoleh senjata kuat bernama `clap`, `tokio`, `serde`, `indicatif`, `thiserror`, dan `anyhow`.
 3. **Keunggulan Matematis Pemrosesan Paralel**: Memahami kehebatan pemrosesan asinkron secara teoritis berdasarkan Hukum Amdahl dan Hukum Little.
 4. **Implementasi dan Optimasi**: Mengemas pengetahuan (know-how) praktis, dari penanganan error yang kuat hingga optimasi binary yang ekstrem.
 
-Pengembangan CLI dengan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) adalah pengalaman luar biasa yang memungkinkan Anda memastikan kualitas perangkat lunak sejak tahap desain melalui dialog dengan compiler (kompiler). Berdasarkan kode dasar yang dibuat kali ini, silakan coba kembangkan tool CLI orisinal Anda sendiri dan publikasikan ke dunia! Selamat Coding Rust!
+Pengembangan CLI dengan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) adalah pengalaman luar biasa yang memungkinkan Anda memastikan kualitas perangkat lunak sejak tahap desain melalui dialog dengan compiler (kompiler). Berdasarkan kode dasar yang dibuat kali ini, silakan coba kembangkan tool CLI orisinal Anda sendiri dan publikasikan ke dunia! Selamat Coding [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)!

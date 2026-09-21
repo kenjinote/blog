@@ -13,7 +13,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 Dalam pengembangan frontend web modern, menyeimbangkan kinerja dan pengalaman pengembangan (DX: Developer Experience) adalah salah satu masalah paling penting dalam setiap proyek. Menggabungkan **Hugo**, yang membanggakan kecepatan build tercepat di dunia di antara Static Site Generators (SSG), dengan **Tailwind CSS**, yang membawa paradigma inovatif berupa utility-first, bisa dikatakan sebagai salah satu solusi utama untuk tantangan ini.
 
-Hugo ditulis dalam bahasa Go dan memiliki performa luar biasa yang menyelesaikan proses build hanya dalam beberapa detik atau bahkan milidetik, bahkan untuk situs dengan ribuan halaman. Di sisi lain, Tailwind CSS memungkinkan Anda menulis kelas utilitas yang sudah ditentukan sebelumnya (seperti `flex`, `text-center`, `mt-4`) secara langsung di HTML, menghilangkan konteks switching antara file CSS dan HTML, serta mempercepat iterasi desain.
+Hugo ditulis dalam bahasa [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) dan memiliki performa luar biasa yang menyelesaikan proses build hanya dalam beberapa detik atau bahkan milidetik, bahkan untuk situs dengan ribuan halaman. Di sisi lain, Tailwind CSS memungkinkan Anda menulis kelas utilitas yang sudah ditentukan sebelumnya (seperti `flex`, `text-center`, `mt-4`) secara langsung di HTML, menghilangkan konteks switching antara file CSS dan HTML, serta mempercepat iterasi desain.
 
 Dalam artikel ini, kami akan menjelaskan langkah-langkah untuk mengimplementasikan Tailwind CSS pada tema Hugo, dan selanjutnya membangun asset pipeline tingkat lanjut (Hugo Pipes) menggunakan PostCSS. Kami akan membahas ini secara detail, mulai dari fondasi arsitektur hingga optimasi performa matematis.
 
@@ -268,7 +268,7 @@ Selanjutnya, ambil file CSS di atas dari template Hugo dan tulis pipeline untuk 
 
 #### Penjelasan [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dan Diagram Mermaid
 
-Kami akan menggambarkan bagaimana kode template Go di atas memproses file CSS secara terstruktur melalui pipeline.
+Kami akan menggambarkan bagaimana kode template [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) di atas memproses file CSS secara terstruktur melalui pipeline.
 
 ```mermaid
 flowchart TD

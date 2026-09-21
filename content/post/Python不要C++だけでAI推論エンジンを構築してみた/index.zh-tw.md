@@ -21,7 +21,7 @@ description: '現今的AI開發主要以Python為主流，但在邊緣設備或�
 3. **支援邊緣設備** ：在智慧型手機、嵌入式設備、Raspberry Pi等資源嚴重受限的環境中，沒有餘裕去執行會消耗數GB記憶體的Python執行階段（Runtime）。
 4. **硬體的直接控制** ：像是記憶體分配的時機、明確地使用SIMD指令、最佳化與GPU之間的記憶體傳輸等，只有C++這類底層語言才能做到。
 
-本文將在深受Georgi Gerganov所開發的「GGML」函式庫架構啟發之下，深入技術深淵，解說如何從零開始、純用C++建構出能運行大型語言模型（LLM）的推論引擎。
+本文將在深受Georgi Gerganov所開發的「GGML」函式庫架構啟發之下，深入技術深淵，解說如何從零開始、純用C++建構出能運行大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的推論引擎。
 
 ---
 
@@ -52,7 +52,7 @@ graph TD
 
 ## 3. 記憶體管理的奧秘：記憶體池與SIMD對齊
 
-推論引擎中的記憶體管理，是直接關係到效能的最重要因素之一。在推論過程中，特別是通過Transformer模型的各層時，會產生數量龐大的中間張量。如果每次都用標準的`malloc`來分配與釋放，堆積（Heap）的碎片化以及作業系統的上下文切換將會導致致命的速度下降。
+推論引擎中的記憶體管理，是直接關係到效能的最重要因素之一。在推論過程中，特別是通過[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)模型的各層時，會產生數量龐大的中間張量。如果每次都用標準的`malloc`來分配與釋放，堆積（[Heap](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）的碎片化以及作業系統的上下文切換將會導致致命的速度下降。
 
 因此，我們採用了「 **記憶體池（Memory Arena）** 」的方法。這是在推論開始時計算（或寫死）所需的最大記憶體量並一次性分配，之後只需遞增指標就能切割出記憶體的手法。
 
@@ -189,7 +189,7 @@ graph LR
 
 ## 6. 數學與最佳化的核心：矩陣乘法 (GEMM)
 
-AI推論計算量有90%以上花費在矩陣乘法（GEMM: General Matrix Multiply）上。Transformer模型核心的注意力機制和前饋神經網路（FFN），歸根究柢也是巨大的矩陣乘法。
+AI推論計算量有90%以上花費在矩陣乘法（GEMM: General Matrix Multiply）上。[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)模型核心的注意力機制和前饋神經網路（FFN），歸根究柢也是巨大的矩陣乘法。
 
 兩個矩陣 $A$ (大小 $M \times K$) 與 $B$ (大小 $K \times N$) 的乘積 $C = A B$ (大小 $M \times N$) ，用數學式表示如下：
 
@@ -244,7 +244,7 @@ float dot_product_avx2(const float* a, const float* b, int n) {
 
 ## 7. 跨越硬體高牆：整合CUDA與Metal後端
 
-雖然只有純C++實作也能在CPU上有一定的運行表現，但要以實用的速度（例如：每秒生成20個Token以上）來運行LLM等巨大模型，GPU的平行計算能力是不可或缺的。因此，我們在引擎中導入後端（Backend）的抽象層。
+雖然只有純C++實作也能在CPU上有一定的運行表現，但要以實用的速度（例如：每秒生成20個Token以上）來運行[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)等巨大模型，GPU的平行計算能力是不可或缺的。因此，我們在引擎中導入後端（Backend）的抽象層。
 
 ### 7.1 後端抽象化
 
@@ -344,9 +344,9 @@ kernel void mul_mat_kernel(
 
 ---
 
-## 8. Transformer模型特有的處理：Attention與KV Cache
+## 8. [Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)模型特有的處理：Attention與KV Cache
 
-像LLaMA 2/3或GPT等最先進的LLM，都是基於Transformer架構。為了用C++實作它，必須建構出由以下數學式所表示的「Scaled Dot-Product Attention」。
+像LLaMA 2/3或GPT等最先進的[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)，都是基於Transformer架構。為了用C++實作它，必須建構出由以下數學式所表示的「Scaled Dot-Product Attention」。
 
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
@@ -389,7 +389,7 @@ graph TD
 
 在推論引擎端，會從記憶體讀出被壓縮為INT4（或INT8）的權重， **在載入到CPU或GPU的暫存器後，立刻解壓縮（Dequantize）回FP16或FP32再進行計算** 。
 
-令人驚訝的是，即使增加了計算量，減少從記憶體讀取的資料量反而能讓速度更快。這是因為在現代硬體中，推論任務的瓶頸不在於「計算力（Compute Bound）」，而在於「 **記憶體頻寬（Memory Bandwidth Bound）** 」。如果是實作了INT4量化的C++引擎，即使是只有8GB VRAM的MacBook Air等設備，也能流暢地運行本機端的LLM。
+令人驚訝的是，即使增加了計算量，減少從記憶體讀取的資料量反而能讓速度更快。這是因為在現代硬體中，推論任務的瓶頸不在於「計算力（Compute Bound）」，而在於「 **記憶體頻寬（Memory Bandwidth Bound）** 」。如果是實作了INT4量化的C++引擎，即使是只有8GB VRAM的MacBook Air等設備，也能流暢地運行本機端的[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)。
 
 ---
 
@@ -414,7 +414,7 @@ Python確實很方便。在研發和製作原型時，沒有任何語言能比�
 
 直接操作記憶體的位元組陣列，用SIMD指令將暫存器操到極限，一邊與GPU的VRAM頻寬搏鬥一邊打造出的推論引擎，看著它在終端機上陸續生成自然的文字（Token）時，那種成就感，是呼叫Python框架中 `model.generate()` 時絕對無法體會到的「身為工程師純粹的喜悅」。
 
-AI技術往往容易變成「黑盒子（Black Box）」，但透過自己親手用C++寫下從張量運算到記憶體分配的所有過程，可以深刻理解LLM究竟是如何「思考」的，洞悉其真正的機制。
+AI技術往往容易變成「黑盒子（Black Box）」，但透過自己親手用C++寫下從張量運算到記憶體分配的所有過程，可以深刻理解[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)究竟是如何「思考」的，洞悉其真正的機制。
 
 如果你具備C++的基礎知識，且對現在的AI技術有著強烈的興趣，請務必挑戰開發自製的推論引擎。GGML和llama.cpp的原始碼，絕對會是你最棒的活教材。
 

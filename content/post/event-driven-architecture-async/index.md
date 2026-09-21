@@ -110,7 +110,7 @@ const main = async () => {
 main();
 ```
 
-Event Loopの利点は、共有状態に対する[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)管理が不要であることです。しかし、CPUバウンドな重い処理をCall Stackで実行してしまうと、Event Loop全体がブロックされ、システムが停止状態に陥るリスクがあります（Event Loopのブロッキング）。計算量は $ O(1) $ から $ O(N) $ の軽量な処理に留めるべきです。
+Event Loopの利点は、共有状態に対する[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)管理が不要であることです。しかし、CPUバウンドな重い処理をCall [Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)で実行してしまうと、Event Loop全体がブロックされ、システムが停止状態に陥るリスクがあります（Event Loopのブロッキング）。計算量は $ O(1) $ から $ O(N) $ の軽量な処理に留めるべきです。
 
 ---
 
@@ -141,7 +141,7 @@ flowchart LR
 
 ### 3.2 [Rust](https://kenji.blog/p/webassembly-wasm-current-future/) を用いた Actor の実装例
 
-システムプログラミング言語である Rust では、 `tokio` や `actix` といった強力な非同期クレートを用いてActorモデルを構築できます。ここでは、 `mpsc` （Multi-Producer, Single-Consumer）チャネルを用いたシンプルなActorパターンの実装を示します。
+システム[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)である [Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/) では、 `tokio` や `actix` といった強力な非同期クレートを用いてActorモデルを構築できます。ここでは、 `mpsc` （Multi-Producer, Single-Consumer）チャネルを用いたシンプルなActorパターンの実装を示します。
 
 ```rust
 use std::sync::Arc;

@@ -26,7 +26,7 @@ description: '自2020年度小学编程教育必修化以来已过去数年，�
 
 ### 抽象化之墙与计算机科学的黑盒化
 
-以Scratch为首的可视化编程环境，将编程中复杂的语法（Syntax）、严格的类型系统（Type System）、内存的生命周期管理等构成计算机科学根基的重要要素进行了高度抽象和刻意的隐藏（封装）。这对于降低初学者的认知负荷非常有效，但当迈向下一步的真正工程学时，却成为巨大的障碍。因为在实际的软件开发一线，对变量作用域（局部变量与全局变量）、复杂数据结构（数组、链表、哈希表、二叉搜索树、图）、指针操作，以及内存的堆（Heap）和栈（Stack）区域的理解是绝对不可或缺的。
+以Scratch为首的可视化编程环境，将编程中复杂的语法（Syntax）、严格的类型系统（Type System）、内存的生命周期管理等构成计算机科学根基的重要要素进行了高度抽象和刻意的隐藏（封装）。这对于降低初学者的认知负荷非常有效，但当迈向下一步的真正工程学时，却成为巨大的障碍。因为在实际的软件开发一线，对变量作用域（局部变量与全局变量）、复杂数据结构（数组、链表、哈希表、二叉搜索树、图）、指针操作，以及内存的堆（[Heap](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）和栈（[Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）区域的理解是绝对不可或缺的。
 
 下面的Mermaid图可视化了初学者在从可视化编程向真正计算机科学过渡的过程中，所面临的学习障碍和流失（退学）节点。
 
@@ -74,7 +74,7 @@ $$
 - 插入排序 (Insertion Sort): $O(N^2)$
 - 归并排序 (Merge Sort): $O(N \log N)$
 - 快速排序 (Quick Sort): $O(N \log N)$
-- 堆排序 (Heap Sort): $O(N \log N)$
+- 堆排序 ([Heap](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/) Sort): $O(N \log N)$
 
 例如，根据分治法（Divide and Conquer）范式，归并排序的时间复杂度 $T(N)$ 可以用以下递推公式表示：
 
@@ -200,7 +200,7 @@ flowchart LR
 
 在英国（UK），早在2014年起，一门名为“Computing”的科目就从5岁（Key Stage 1）开始成为必修。他们的课程不仅仅停留在简单的“编程体验”，而是涉及到算法的逻辑设计、基于布尔代数（Boolean algebra）的逻辑电路理解、网络拓扑结构，乃至硬件架构，是极其学术化、系统化、纯正的计算机科学。
 
-在美国，由CSTA（Computer Science Teachers Association）制定了严格的K-12（从幼儿园到高中毕业）标准课程体系。高中生选修的AP（Advanced Placement）Computer Science A中，以大学第一年的高水准要求学生掌握使用Java的真正的面向对象编程、多态、递归处理、数据结构实现以及算法复杂度评估。印度和中国在STEM教育上的激烈竞争，以及由此培养出的深厚精英阶层更是无需赘述。
+在美国，由CSTA（Computer Science Teachers Association）制定了严格的K-12（从幼儿园到高中毕业）标准课程体系。高中生选修的AP（Advanced Placement）Computer Science A中，以大学第一年的高水准要求学生掌握使用[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)的真正的面向对象编程、多态、递归处理、数据结构实现以及算法复杂度评估。印度和中国在STEM教育上的激烈竞争，以及由此培养出的深厚精英阶层更是无需赘述。
 
 ### 要求技能与教授技能的绝望脱节
 
@@ -219,7 +219,7 @@ xychart-beta
 
 为了填补这巨大的鸿沟（死亡之谷），必须对学校教育进行彻底的范式转移，并投入巨额资金。在全国“情报科”专业教师极度短缺的情况下，数学、理科或者技术家庭科的教师在兼顾本职工作的同时，在未接受充分培训的状态下教授编程。在这样的体制下，绝对无法培养出能在世界舞台上竞争的顶尖工程师。
 
-## 9. AI时代（LLM）下“编码”价值的暴跌
+## 9. AI时代（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）下“编码”价值的暴跌
 
 使局势变得更加复杂的是，以ChatGPT为代表的大型语言模型（LLM）以及GitHub Copilot等AI编程助手的爆炸性普及。在一个AI能够根据自然语言指令瞬间生成完美代码，甚至连测试代码都能写出的时代，仅仅“懂得Python语法”、“知道如何调用API”的所谓“编码员（Coder）”，其市场价值正在迅速暴跌。
 

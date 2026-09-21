@@ -21,7 +21,7 @@ So why bother eliminating Python and creating an AI inference engine exclusively
 3. **Edge Device Support**: In highly resource-constrained environments like smartphones, embedded devices, and Raspberry Pi, there is no luxury to run a Python runtime that consumes gigabytes of memory.
 4. **Direct Hardware Control**: Low-level control such as memory allocation timing, explicit use of SIMD instructions, and optimization of memory transfers with the GPU is possible with C++.
 
-In this article, while drawing massive inspiration from the architecture of the "GGML" library developed by Georgi Gerganov, we will dive deep into the technical abyss and explain the process of building an inference engine from scratch using only C++ to run Large Language Models (LLMs).
+In this article, while drawing massive inspiration from the architecture of the "GGML" library developed by Georgi Gerganov, we will dive deep into the technical abyss and explain the process of building an inference engine from scratch using only C++ to run [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs).
 
 ---
 
@@ -52,7 +52,7 @@ We will assemble these using the powerful features of C++ (templates, pointer ar
 
 ## 3. The Secret of [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/): Memory Arena and SIMD Alignment
 
-Memory management in an inference engine is one of the most critical factors directly linked to performance. During inference, especially as data passes through each layer of a Transformer model, a massive number of intermediate tensors are generated. If you allocate and free these with standard `malloc` every time, heap fragmentation and OS context switches will cause a fatal slowdown.
+Memory management in an inference engine is one of the most critical factors directly linked to performance. During inference, especially as data passes through each layer of a [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) model, a massive number of intermediate tensors are generated. If you allocate and free these with standard `malloc` every time, heap fragmentation and OS context switches will cause a fatal slowdown.
 
 Therefore, we adopt an approach called the "**Memory Arena**". This is a method where the maximum amount of memory required is calculated (or fixed) and allocated at once when inference begins, and memory is carved out simply by incrementing a pointer.
 
@@ -189,7 +189,7 @@ When evaluating the graph (forward pass), it uses topological sorting to execute
 
 ## 6. The Core of Math and Optimization: General Matrix Multiply (GEMM)
 
-Over 90% of the computational cost of AI inference is spent on General Matrix Multiply (GEMM). Both the attention mechanism and the feed-forward network (FFN), which are the core of the Transformer model, are ultimately massive matrix multiplications.
+Over 90% of the computational cost of AI inference is spent on General Matrix Multiply (GEMM). Both the attention mechanism and the feed-forward network (FFN), which are the core of the [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) model, are ultimately massive matrix multiplications.
 
 The product $C = A B$ (size $M \times N$) of two matrices $A$ (size $M \times K$) and $B$ (size $K \times N$) is expressed by the following formula.
 
@@ -344,9 +344,9 @@ In the Apple Silicon environment, an optimized library for matrix multiplication
 
 ---
 
-## 8. Transformer Model Specific Processing: Attention and KV Cache
+## 8. [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) Model Specific Processing: Attention and KV Cache
 
-[State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)-of-the-art LLMs such as LLaMA 2/3 and GPT are based on the Transformer architecture. To implement this in C++, it is essential to construct "Scaled Dot-Product Attention," represented by the following formula.
+[State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)-of-the-art LLMs such as LLaMA 2/3 and GPT are based on the [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) architecture. To implement this in C++, it is essential to construct "Scaled Dot-Product Attention," represented by the following formula.
 
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V

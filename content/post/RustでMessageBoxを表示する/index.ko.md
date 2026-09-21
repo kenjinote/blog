@@ -19,7 +19,7 @@ description: 'Rust에서 `winapi`와 `user32-sys` 크레이트를 이용해 Wind
 
 다음 절차에 따라 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에서 MessageBox를 표시할 수 있습니다.
 
-1. Rust를 설치합니다. [Rust 시작하기](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/) 참조
+1. [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)를 설치합니다. [Rust 시작하기](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/) 참조
 2. 명령 프롬프트에서 `cargo new --bin MessageBox`를 실행합니다.
 3. `MessageBox` 디렉터리로 이동합니다.
 4. `Cargo.toml`을 열고 다음과 같이 수정합니다.

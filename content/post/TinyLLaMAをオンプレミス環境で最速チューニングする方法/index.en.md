@@ -12,7 +12,7 @@ description: 'A complete guide to fine-tuning TinyLLaMA efficiently and quickly 
 
 ## 1. Introduction: Why TinyLLaMA and On-Premises Now?
 
-The evolution of Large Language Models (LLMs) is proceeding at an incredible speed, but along with it, the number of model parameters continues to inflate to the scale of hundreds of billions. While ultra-giant models like GPT-4 and Claude 3 boast unparalleled performance, the computational costs required for inference and training, as well as security and data privacy concerns when using external APIs, present significant hurdles for companies. In business operations that handle highly sensitive internal data or personal information in particular, sending data to public LLM APIs on the cloud is often unacceptable from a compliance perspective (such as GDPR or APPI).
+The evolution of [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) is proceeding at an incredible speed, but along with it, the number of model parameters continues to inflate to the scale of hundreds of billions. While ultra-giant models like GPT-4 and Claude 3 boast unparalleled performance, the computational costs required for inference and training, as well as security and data privacy concerns when using external APIs, present significant hurdles for companies. In business operations that handle highly sensitive internal data or personal information in particular, sending data to public [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) APIs on the cloud is often unacceptable from a compliance perspective (such as GDPR or APPI).
 
 This is where **Small Language Models (SLMs)** and **local operation in an on-premises environment** are stepping into the spotlight. Among them, "**TinyLLaMA**" is a compact model with only 1.1B (1.1 billion) parameters, yet it has been pre-trained on a massive dataset of approximately 3 trillion tokens, demonstrating astonishing performance compared to models in the same class.
 
@@ -37,7 +37,7 @@ TinyLLaMA follows the LLaMA (Large Language Model Meta AI) architecture develope
 4. **Grouped Query Attention (GQA):**
    An intermediate approach between Multi-Head Attention (MHA) and Multi-Query Attention (MQA), grouping key and value heads to save memory bandwidth and dramatically improve inference speed.
 
-The following Mermaid diagram illustrates the overall data flow and Transformer block structure of TinyLLaMA.
+The following Mermaid diagram illustrates the overall data flow and [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) block structure of TinyLLaMA.
 
 ```mermaid
 graph TD
@@ -151,7 +151,7 @@ To maximize the use of GPU Tensor Cores, calculations during training are perfor
 
 ## 6. Practice: QLoRA Fine-Tuning Code for TinyLLaMA
 
-Let's break down the PyTorch script for the fastest tuning incorporating all the optimizations mentioned above. Here, we will use the `SFTTrainer` from Hugging Face's `trl` (Transformer Reinforcement Learning) library.
+Let's break down the PyTorch script for the fastest tuning incorporating all the optimizations mentioned above. Here, we will use the `SFTTrainer` from Hugging Face's `trl` ([Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) Reinforcement Learning) library.
 
 ### 6.1 Dataset Preparation and Model Loading
 
@@ -353,7 +353,7 @@ Now, an OpenAI API-compatible endpoint is built in your on-premises environment,
 
 In this article, we explained the methods for performing the fastest and most memory-efficient fine-tuning in an on-premises environment for "TinyLLaMA", a model that is highly performant despite being lightweight with 1.1B parameters.
 
-- **LoRA / QLoRA** enables full-fledged LLM tuning even on consumer GPUs.
+- **LoRA / QLoRA** enables full-fledged [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) tuning even on consumer GPUs.
 - Leveraging **Flash Attention 2** and **Gradient Checkpointing** optimizes training time and VRAM consumption to the limit.
 - Deployment using **vLLM** achieves high throughput even in production environments.
 

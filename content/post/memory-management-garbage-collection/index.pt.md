@@ -8,15 +8,15 @@ categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]
 ---
 
-# Bem-vindo à Verdade do Gerenciamento de Memória: Desvendando o Abismo com C, Java e [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)
+# Bem-vindo à Verdade do Gerenciamento de Memória: Desvendando o Abismo com C, [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) e [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)
 
 No desenvolvimento de software, o gerenciamento de memória é um tema eterno e inevitável, e um dos fatores mais cruciais que determinam o desempenho e a estabilidade de um sistema. Neste artigo, através de uma análise profunda equivalente a cerca de 20.000 caracteres, cobriremos de forma abrangente desde a teoria básica do gerenciamento de memória até as técnicas de otimização em arquiteturas modernas.
 
-A liberdade e responsabilidade do **gerenciamento manual** trazidas pela linguagem C, a automação segura por meio do **Garbage Collection** (GC) popularizada pelo Java, e o paradigma de verificação em tempo de compilação da **propriedade** (Ownership) apresentado pelo Rust. Ao comparar e analisar essas três abordagens completamente diferentes, nos aproximamos da essência da **história e evolução** de como as linguagens de programação têm lidado com o recurso limitado que é a memória.
+A liberdade e responsabilidade do **gerenciamento manual** trazidas pela linguagem C, a automação segura por meio do **Garbage Collection** (GC) popularizada pelo [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), e o paradigma de verificação em tempo de compilação da **propriedade** (Ownership) apresentado pelo [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/). Ao comparar e analisar essas três abordagens completamente diferentes, nos aproximamos da essência da **história e evolução** de como as linguagens de programação têm lidado com o recurso limitado que é a memória.
 
 ---
 
-## 1. Estrutura Básica da Memória: Stack, Heap e Memória Virtual
+## 1. Estrutura Básica da Memória: [Stack](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/), [Heap](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/) e Memória Virtual
 
 Quando um programa é executado, o sistema operacional (OS) aloca uma área de memória abstraída chamada "espaço de memória virtual" para o processo. Este espaço parece um espaço de memória enorme e contínuo do ponto de vista do programa, mas nos bastidores é mapeado para a memória física (RAM) e para o espaço de swap pelo mecanismo de paginação do OS.
 
@@ -109,9 +109,9 @@ int main() {
 O gerenciamento de memória em C produz facilmente bugs típicos (vulnerabilidades de memória) como os seguintes:
 
 1. **Vazamento de Memória (Memory Leak)** : Um fenômeno no qual esquecer de chamar o `free` deixa a memória não utilizada alocada. Se isso ocorrer em servidores que operam por longos períodos, pode consumir toda a memória do sistema e ser forçosamente encerrado pelo OOM (Out Of Memory) killer.
-2. **Ponteiro Pendente (Dangling Pointer)** : Um ponteiro que continua apontando para uma área de memória que já foi liberada pelo `free`. Tentar acessar a memória através deste ponteiro causará um comportamento indefinido (como uma falha de segmentação, ou Segmentation Fault).
+2. **Ponteiro Pendente (Dangling [Pointer](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/))** : Um ponteiro que continua apontando para uma área de memória que já foi liberada pelo `free`. Tentar acessar a memória através deste ponteiro causará um comportamento indefinido (como uma falha de segmentação, ou Segmentation Fault).
 3. **Liberação Dupla (Double Free)** : Um erro no qual o `free` é chamado duas vezes no mesmo ponteiro de área de heap. Isso destrói as estruturas internas do alocador (como a lista de áreas livres do heap) e se torna uma vulnerabilidade de segurança.
-4. **Estouro de Buffer (Buffer Overflow)** : Um fenômeno em que os dados são gravados além da área de memória alocada. Ao reescrever dados importantes adjacentes ou endereços de retorno, pode ser o ponto de partida para ataques de execução de código malicioso (como Stack Smashing).
+4. **Estouro de Buffer (Buffer Overflow)** : Um fenômeno em que os dados são gravados além da área de memória alocada. Ao reescrever dados importantes adjacentes ou endereços de retorno, pode ser o ponto de partida para ataques de execução de código malicioso (como [Stack](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/) Smashing).
 
 Vamos modelar isso matematicamente. Seja a quantidade total alocada no heap num determinado ponto $ t $ igual a $ A(t) $, e a quantidade total liberada igual a $ F(t) $. O uso de memória ativa $ M(t) $ no sistema é representado pela seguinte integral:
 
@@ -121,7 +121,7 @@ Idealmente, no momento $ T $ em que o programa termina normalmente, $ M(T) = 0 $
 
 ---
 
-## 3. Java: A Revolução Trazida pelo Garbage Collection
+## 3. [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/): A Revolução Trazida pelo Garbage Collection
 
 O Java trouxe uma enorme mudança de paradigma para a indústria de software, que sofria de bugs de memória frequentes em C/C++. O Java retirou do programador a complexidade do gerenciamento de memória e a delegou ao **Garbage Collection** (GC) embutido na Máquina Virtual Java (JVM). Os desenvolvedores podiam focar apenas em escrever regras de negócios e criar objetos.
 
@@ -162,7 +162,7 @@ graph TD
 
 Na figura acima, os objetos verdes são marcados como alcançáveis e protegidos. Por outro lado, o conjunto de objetos indicados pela linha pontilhada vermelha não é referenciado de lugar nenhum, então a memória é recuperada automaticamente durante a fase de sweep.
 
-### 3.2 Comportamento da Memória no Código Java
+### 3.2 Comportamento da Memória no Código [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/)
 
 No Java, objetos são alocados no heap usando a palavra-chave `new`, mas não há comando de liberação equivalente ao `free` em C.
 
@@ -208,7 +208,7 @@ Quando o GC é executado, todas as threads do aplicativo pausam para manter a co
 
 ## 4. [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/): A Terceira Via Trazida pelo Ownership e Borrowing
 
-"Desempenho extremo através de gerenciamento manual" em C e "Segurança de memória através de gerenciamento automático" em Java. Estes dois foram considerados uma relação de compromisso (trade-off) por muito tempo. No entanto, ao introduzir o modelo inovador de **"Propriedade (Ownership)"**, a linguagem Rust alcançou o feito de garantir a segurança da memória 100% em tempo de compilação e, ao mesmo tempo, eliminar o garbage collection.
+"Desempenho extremo através de gerenciamento manual" em C e "Segurança de memória através de gerenciamento automático" em [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/). Estes dois foram considerados uma relação de compromisso (trade-off) por muito tempo. No entanto, ao introduzir o modelo inovador de **"Propriedade (Ownership)"**, a linguagem [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) alcançou o feito de garantir a segurança da memória 100% em tempo de compilação e, ao mesmo tempo, eliminar o garbage collection.
 
 ### 4.1 Os 3 Princípios de Ownership
 
@@ -243,7 +243,7 @@ fn main() {
 
 Se a propriedade fosse movida em cada operação, a programação se tornaria extremamente inconveniente. Para acessar dados sem assumir a propriedade, [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) possui os conceitos de **Referência (Reference)** e **Empréstimo (Borrowing)**.
 
-Além disso, o **Verificador de Empréstimos (Borrow Checker)** embutido no compilador Rust impõe rigorosamente as seguintes regras em tempo de compilação:
+Além disso, o **Verificador de Empréstimos (Borrow Checker)** embutido no compilador [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) impõe rigorosamente as seguintes regras em tempo de compilação:
 
 - A qualquer momento, você pode ter **ou uma referência mutável (`&mut T`)** **ou qualquer número de referências imutáveis (`&T`)** (elas não podem coexistir ao mesmo tempo. Prevenção de Data Race).
 - O tempo de vida (lifetime) da referência não deve exceder o tempo de vida dos dados originais (prevenção total de ponteiros pendentes).
@@ -296,14 +296,14 @@ Quando a CPU lê dados da memória, ela carrega não apenas esses dados, mas tam
 ### 5.1 Diferenças na Eficiência de Cache por Linguagem
 
 - **C / C++ / [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)** : Ao criar uma matriz (array) de estruturas (como `struct Array[100]` ou `Vec<MyStruct>`), os dados são colocados sequencialmente na memória sem lacunas. Ao iterar em loop sobre um array, o prefetcher de hardware da CPU funciona perfeitamente, aumentando drasticamente a taxa de acertos no cache (cache hit rate).
-- **Java** : Matrizes de objetos em Java (`MyObject[]`) não são os objetos reais, mas sim uma matriz de "referências para os objetos (ponteiros)". Como cada objeto real é alocado em um local separado no heap, cada iteração do loop exigirá seguir ponteiros para acessar endereços de memória aleatórios, resultando em uma série de graves perdas de cache (Cache Miss).
+- **[Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/)** : Matrizes de objetos em Java (`MyObject[]`) não são os objetos reais, mas sim uma matriz de "referências para os objetos (ponteiros)". Como cada objeto real é alocado em um local separado no heap, cada iteração do loop exigirá seguir ponteiros para acessar endereços de memória aleatórios, resultando em uma série de graves perdas de cache (Cache Miss).
 
 O tempo médio efetivo de acesso à memória $ T_{avg} $ é expresso da seguinte forma:
 
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 Onde $ h $ é a taxa de acertos de cache ($ 0 \le h \le 1 $), $ T_{cache} $ é o tempo de acesso ao cache (cerca de 1 a 4 ns), e $ T_{memory} $ é o tempo de acesso à memória principal (cerca de 100 ns).
-A diferença em fazer $ h $ se tornar 0,99 (abordagem de C/[Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)) ou cair para 0,5 (perseguição de ponteiros - pointer chasing - do Java) resultará em uma diferença de dezenas de vezes na velocidade de execução de loops de um aplicativo. Esta é a verdadeira razão pela qual C++ e Rust são escolhidos para engines de jogos e sistemas de negociação de alta frequência.
+A diferença em fazer $ h $ se tornar 0,99 (abordagem de C/[Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)) ou cair para 0,5 (perseguição de ponteiros - pointer chasing - do [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/)) resultará em uma diferença de dezenas de vezes na velocidade de execução de loops de um aplicativo. Esta é a verdadeira razão pela qual C++ e [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) são escolhidos para engines de jogos e sistemas de negociação de alta frequência.
 
 ---
 
@@ -314,9 +314,9 @@ Neste artigo, aprofundamo-nos em três paradigmas de gerenciamento de memória c
 | Linguagem | Abordagem | Vantagens | Desvantagens e Desafios |
 |:---:|:---|:---|:---|
 | **C** | Gerenciamento manual usando `malloc/free` | Velocidade máxima, maior eficiência de cache, leveza | Terreno fértil para vulnerabilidades (vazamentos, liberação dupla), alto custo de desenvolvimento |
-| **Java** | GC (Garbage Collection) | Aumento da velocidade de desenvolvimento, garantia de segurança de memória | Flutuações de latência devido ao STW, deterioração da eficiência de cache |
+| **[Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/)** | GC (Garbage Collection) | Aumento da velocidade de desenvolvimento, garantia de segurança de memória | Flutuações de latência devido ao STW, deterioração da eficiência de cache |
 | **[Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)** | Ownership / Verificador de Empréstimos | Segurança sem custo de runtime, alta velocidade | Curva de aprendizado acentuada, dificuldade no design de tempo de vida (lifetime) |
 
 A história do **gerenciamento de memória** tem sido uma gangorra oscilando entre desempenho e segurança. Para evitar tragédias causadas pelo gerenciamento manual, o GC nasceu, e para contornar as penalidades de desempenho do GC, o modelo de propriedade (Ownership) foi inventado.
 
-Quando nós arquitetamos um sistema, o caminho para se tornar um engenheiro de primeira classe não está em tomar decisões precipitadas como "usar Rust porque é o mais rápido" ou "usar Java porque é seguro". Pelo contrário, trata-se de escolher a melhor tecnologia após confrontar os requisitos do sistema (estrita latência, recursos de desenvolvimento, facilidade de manutenção) com a **verdade** do gerenciamento de memória que existe por trás deles.
+Quando nós arquitetamos um sistema, o caminho para se tornar um engenheiro de primeira classe não está em tomar decisões precipitadas como "usar [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) porque é o mais rápido" ou "usar [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) porque é seguro". Pelo contrário, trata-se de escolher a melhor tecnologia após confrontar os requisitos do sistema (estrita latência, recursos de desenvolvimento, facilidade de manutenção) com a **verdade** do gerenciamento de memória que existe por trás deles.

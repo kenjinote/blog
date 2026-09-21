@@ -443,7 +443,7 @@ $$
 Space(N) \le C \times N \implies O(N)
 $$
 
-但是，在递归下降解析中，会与JSON嵌套的深度（Depth）成正比地消耗调用栈。对于深度 $D$，需要 $O(D)$ 的栈内存。如果输入恶意构造的无限嵌套JSON，就有引发栈溢出（Stack Overflow）的危险，因此在实用的解析器中，需要设置递归深度的上限（例如256或512等），或者设法将递归展开为循环。
+但是，在递归下降解析中，会与JSON嵌套的深度（Depth）成正比地消耗调用栈。对于深度 $D$，需要 $O(D)$ 的栈内存。如果输入恶意构造的无限嵌套JSON，就有引发栈溢出（[Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/) Overflow）的危险，因此在实用的解析器中，需要设置递归深度的上限（例如256或512等），或者设法将递归展开为循环。
 
 ---
 

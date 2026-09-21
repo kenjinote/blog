@@ -9,7 +9,7 @@ categories: ["ai", "llm", "windows"]
 tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 ---
 
-# 1. Introducción: ¿Por qué LLM locales en Windows ahora?
+# 1. Introducción: ¿Por qué [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) locales en Windows ahora?
 
 En 2026, la evolución de la IA generativa y los Grandes Modelos de Lenguaje (LLM) muestra un cambio de paradigma importante: desde servicios API gigantes en la nube hasta "LLM locales" que se ejecutan en PCs personales y entornos on-premise. Aunque las IA en la nube como GPT-5 de OpenAI o Claude 3.5 de Anthropic son extremadamente potentes, no todas las empresas o individuos pueden enviar todos sus datos a la nube. Desde el punto de vista de la privacidad, seguridad, latencia y los costes sostenibles a largo plazo, la demanda de LLM locales ha crecido explosivamente como nunca antes.
 
@@ -63,7 +63,7 @@ Después de la instalación, ejecuta `nvidia-smi` dentro de la terminal de WSL2.
 
 ---
 
-# 3. Arquitectura del LLM local y mecanismo de inferencia
+# 3. Arquitectura del [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) local y mecanismo de inferencia
 
 Comprender cómo el modelo genera texto en un entorno local y su estructura interna es extremadamente útil para la resolución de problemas y la optimización.
 
@@ -91,7 +91,7 @@ graph TD
 
 ## 3.1 Dos fases: Prefill y Decode
 
-La generación de texto por parte de un LLM se divide en dos fases con diferentes características computacionales:
+La generación de texto por parte de un [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) se divide en dos fases con diferentes características computacionales:
 
 1. **Fase de Prefill (Procesamiento del prompt)**: Fase en la que todo el prompt introducido se procesa y comprende a la vez. Dado que es posible el cálculo paralelo, la capacidad de cálculo de la GPU (FLOPS) está directamente relacionada con la velocidad. Si el prompt es largo, esta fase puede tardar varios segundos.
 2. **Fase de Decode (Generación de tokens)**: Fase en la que se predice un token a la vez y se pasa a la siguiente entrada (autorregresiva). Dado que el cálculo paralelo está limitado en esta fase, el ancho de banda de la VRAM (Memory Bandwidth) de la GPU se convierte en un cuello de botella decisivo.
@@ -273,7 +273,7 @@ graph LR
     LocalLLM --> Answer["Respuesta final"]
 ```
 
-Si usas la versión de escritorio de AnythingLLM (Windows), simplemente configurando Ollama (LLM y Embedding) desde la pantalla de configuración y utilizando la VectorDB local (LanceDB), esta arquitectura se completará en minutos. Así nace una IA privada que no envía ningún dato al exterior.
+Si usas la versión de escritorio de AnythingLLM (Windows), simplemente configurando Ollama ([LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) y Embedding) desde la pantalla de configuración y utilizando la VectorDB local (LanceDB), esta arquitectura se completará en minutos. Así nace una IA privada que no envía ningún dato al exterior.
 
 ---
 
@@ -314,7 +314,7 @@ Estos son los problemas más frecuentes a los que te puedes enfrentar y sus solu
 
 # 10. Conclusión y perspectivas de futuro
 
-En 2026, la construcción de un LLM local en un entorno Windows ya no es un privilegio reservado para unos pocos ingenieros. Gracias a la estandarización del formato GGUF, la aparición de ecosistemas sofisticados como Ollama o LM Studio y las optimizaciones de hardware como FlashAttention, cualquier persona puede obtener fácilmente un entorno de IA de nivel empresarial.
+En 2026, la construcción de un [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) local en un entorno Windows ya no es un privilegio reservado para unos pocos ingenieros. Gracias a la estandarización del formato GGUF, la aparición de ecosistemas sofisticados como Ollama o LM Studio y las optimizaciones de hardware como FlashAttention, cualquier persona puede obtener fácilmente un entorno de IA de nivel empresarial.
 
 Aprovecha los siguientes puntos explicados en este artículo:
 

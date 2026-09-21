@@ -30,7 +30,7 @@ Al desarrollar una aplicación web, siempre surge el debate de "qué adoptar: ap
 
 ### 2.1. Fortalezas y debilidades de las aplicaciones nativas
 
-La mayor fortaleza de las aplicaciones nativas (desarrolladas con Swift/Objective-C para iOS, Kotlin/Java para Android, etc.) es que tienen acceso completo a las API del sistema operativo.
+La mayor fortaleza de las aplicaciones nativas (desarrolladas con Swift/Objective-C para iOS, Kotlin/[Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) para Android, etc.) es que tienen acceso completo a las API del sistema operativo.
 Esto permite lograr funciones avanzadas que aprovechan al máximo la cámara, GPS, Bluetooth, NFC y diversos sensores. Además, al estar optimizadas para el sistema operativo, el rendimiento de renderizado es muy alto, lo que las hace abrumadoramente superiores para juegos que usan muchas animaciones complejas y gráficos 3D.
 
 Por otro lado, las aplicaciones nativas presentan grandes debilidades (desafíos) como las siguientes:

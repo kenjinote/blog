@@ -14,7 +14,7 @@ description: 'Un guide détaillé couvrant l''implémentation des fonctionnalit�
 
 ## 1. Introduction : Une nouvelle ère où l'IA est intégrée nativement à Windows
 
-Ces dernières années, l'évolution de la technologie de l'IA a été remarquable, avec un changement de paradigme rapide de l'utilisation de grands modèles de langage (LLM) dans le cloud vers l'inférence de l'IA sur des appareils en périphérie (PC locaux). Au cœur de cette évolution se trouvent le « Windows Copilot Runtime » fourni par Microsoft pour Windows 11, ainsi que l'API « Microsoft.Windows.AI » pour le manipuler.
+Ces dernières années, l'évolution de la technologie de l'IA a été remarquable, avec un changement de paradigme rapide de l'utilisation de grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) dans le cloud vers l'inférence de l'IA sur des appareils en périphérie (PC locaux). Au cœur de cette évolution se trouvent le « Windows Copilot Runtime » fourni par Microsoft pour Windows 11, ainsi que l'API « Microsoft.Windows.AI » pour le manipuler.
 
 Bien que le développement d'applications utilisant des API cloud (telles qu'OpenAI ou Azure OpenAI) soit facile, il s'accompagne de défis liés à la latence, à la confidentialité et aux coûts continus. D'autre part, en exécutant des modèles d'IA localement, vous pouvez créer des applications à latence ultra-faible qui fonctionnent même hors ligne, sans avoir à extraire de données confidentielles de l'appareil.
 
@@ -62,7 +62,7 @@ P_{\text{peak}} = 1.5 \times 10^9 \times 4 \times 4096 \times 2 \approx 49.15 \t
 $$
 Il est mathématiquement démontré que ces performances dépassent les 40 TOPS requis pour un PC Copilot+ sous Windows 11.
 
-De plus, l'inférence des modèles d'IA, en particulier des LLM (phase de décodage), a tendance à être **limitée par la mémoire (Memory-Bound)**. La bande passante théorique de la mémoire système $BW$ est calculée comme suit.
+De plus, l'inférence des modèles d'IA, en particulier des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) (phase de décodage), a tendance à être **limitée par la mémoire (Memory-Bound)**. La bande passante théorique de la mémoire système $BW$ est calculée comme suit.
 
 $$
 BW = f_{\text{mem}} \times W_{\text{bus}} \times \frac{2}{8}
@@ -306,7 +306,7 @@ Les stratégies d'optimisation indispensables lors du développement d'applicati
 ### 7.1 Quantification de modèle (Quantization) et boîte à outils Olive
 Pour libérer la véritable puissance du NPU, il est absolument indispensable de **quantifier (Quantization)** les poids et les activations du modèle d'IA de FP32 (virgule flottante simple précision) à INT8 ou INT4. L'architecture du NPU est spécialisée pour l'arithmétique entière, et comparée au FP32, l'INT8 permet théoriquement un débit 4 fois supérieur et des économies d'énergie significatives.
 
-En utilisant la chaîne d'outils `Olive (ONNX Live)` fournie par Microsoft, les modèles tels que PyTorch peuvent être automatiquement optimisés pour les environnements Windows. Olive prend fortement en charge l'optimisation spéciale de l'attention pour les modèles Transformer et la compilation de graphes par matériel.
+En utilisant la chaîne d'outils `Olive (ONNX Live)` fournie par Microsoft, les modèles tels que PyTorch peuvent être automatiquement optimisés pour les environnements Windows. Olive prend fortement en charge l'optimisation spéciale de l'attention pour les modèles [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) et la compilation de graphes par matériel.
 
 ### 7.2 Traitement par lots vs Compromis du streaming interactif
 Dans les appels d'API, en traitant par lots plusieurs requêtes d'inférence, vous pouvez augmenter l'efficacité d'utilisation du NPU (Compute Utilization). Cependant, dans le cas d'une interface utilisateur interactive comme un chatbot, le temps d'affichage du premier jeton (TTFT : Time To First Token) détermine l'expérience utilisateur (UX) plutôt que le débit.

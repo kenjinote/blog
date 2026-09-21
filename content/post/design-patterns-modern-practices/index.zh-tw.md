@@ -36,7 +36,7 @@ tags:
 
 `Strategy` 模式定義了演算法家族，將它們分別封裝起來，並使它們可以互相替換。
 
-**傳統的 GoF 作法（Java 風格）**
+**傳統的 GoF 作法（[Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 風格）**
 
 ```java
 // 定義介面
@@ -135,7 +135,7 @@ coroutineScope.launch {
 
 在現代，透過使用具備 **代數資料型別 (ADT)** 與 **模式匹配** 的語言（如 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)、Kotlin、Swift、Scala 等），這個問題得以完美解決。
 
-**現代的作法（Rust 的列舉與模式匹配）**
+**現代的作法（[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 的列舉與模式匹配）**
 
 ```rust
 // 代數資料型別（帶有變體的 Enum）
@@ -169,17 +169,17 @@ graph TD
     E["服務 B"] -->|"依賴於"| B
 ```
 
-Spring Framework (Java)、NestJS (TypeScript)、Dagger/Hilt (Android) 等 DI 容器會管理實體的建立與銷毀，因此不應該在類別本身編寫 Singleton 的邏輯（如 `getInstance()` 或 `private constructor` ）。
+Spring Framework ([Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/))、NestJS (TypeScript)、Dagger/Hilt (Android) 等 DI 容器會管理實體的建立與銷毀，因此不應該在類別本身編寫 Singleton 的邏輯（如 `getInstance()` 或 `private constructor` ）。
 
 ## 4. 函數式編程中的設計模式
 
 在函數式編程的世界中，存在著與 GoF 不同維度的「模式」。這些模式都有數學範疇論（Category Theory）作為基礎。
 
-### 4.1. 透過 Monad（單子）控制副作用
+### 4.1. 透過 [Monad](https://kenji.blog/zh-tw/p/functional-programming-concepts-pure-functions-monads/)（單子）控制副作用
 
 相較於 GoF 模式以「狀態的變異（Mutation）」為前提，函數式的作法將副作用（例外、非同步處理、可能為 Null 的情況）封裝在型別系統中。
 
-例如，Null Object 模式或例外處理可以替換為 `Maybe` (Optional) 或 `Either` (Result) 等 Monad。
+例如，Null Object 模式或例外處理可以替換為 `Maybe` (Optional) 或 `Either` (Result) 等 [Monad](https://kenji.blog/zh-tw/p/functional-programming-concepts-pure-functions-monads/)。
 
 $$
 f: A \rightarrow M[B]
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 中的 Result 型別 (Either Monad 的應用)**
+**[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 中的 Result 型別 (Either [Monad](https://kenji.blog/zh-tw/p/functional-programming-concepts-pure-functions-monads/) 的應用)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

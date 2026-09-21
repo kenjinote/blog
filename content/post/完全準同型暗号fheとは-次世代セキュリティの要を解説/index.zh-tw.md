@@ -253,7 +253,7 @@ print(f"解密後的乘法結果: {res_mul}")
 2.  **金融機構的防詐欺與洗錢防制 (AML)**:
     互相競爭的銀行之間，可以在不公開客戶帳戶資訊或交易紀錄的情況下，以加密狀態比對彼此的資料，進行跨銀行的分析以偵測出龐大的非法匯款網路。
 3.  **安全的 AI 推論 API (MaaS: Model as a [Service](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/))**:
-    使用者可以將自己的聲音、臉部影像或提示詞加密後，再傳送給 AI 服務（如 ChatGPT 等 LLM）。AI 提供商能在完全不知道使用者輸入內容的情況下生成回答，並以密文形式傳回。這將徹底消除人們對於「個人資料會被 AI 學習或偷窺」的疑慮。
+    使用者可以將自己的聲音、臉部影像或提示詞加密後，再傳送給 AI 服務（如 ChatGPT 等 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）。AI 提供商能在完全不知道使用者輸入內容的情況下生成回答，並以密文形式傳回。這將徹底消除人們對於「個人資料會被 AI 學習或偷窺」的疑慮。
 
 ---
 

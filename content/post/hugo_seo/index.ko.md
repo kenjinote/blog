@@ -10,7 +10,7 @@ tags: ["SEO", "Frontmatter", "Open Graph", "JSON-LD"]
 description: 'Hugo의 SEO 대책을 마스터하기 위한 완전 가이드. 메타데이터, OGP, JSON-LD의 구조화 데이터까지 방문자 수를 비약적으로 향상시키는 프론트매터와 head.html의 커스터마이즈 기법을 철저히 해설합니다.'
 ---
 
-Hugo는 Go 언어로 작성된 세계에서 가장 빠른 클래스의 정적 사이트 생성기(SSG)입니다. 압도적인 빌드 속도와 유연한 템플릿 시스템으로 많은 엔지니어와 블로거로부터 높은 지지를 받고 있습니다. 하지만 사이트가 빠르게 생성되고 표시되는 것만으로는 검색 엔진(Google이나 Bing 등)에서 높게 평가받아 사용자에게 글을 전달할 수 없습니다.
+Hugo는 [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 언어로 작성된 세계에서 가장 빠른 클래스의 정적 사이트 생성기(SSG)입니다. 압도적인 빌드 속도와 유연한 템플릿 시스템으로 많은 엔지니어와 블로거로부터 높은 지지를 받고 있습니다. 하지만 사이트가 빠르게 생성되고 표시되는 것만으로는 검색 엔진(Google이나 Bing 등)에서 높게 평가받아 사용자에게 글을 전달할 수 없습니다.
 
 검색 순위를 향상시키고, 소셜 미디어에서의 확산력을 높이며, 결과적으로 블로그의 방문자 수를 극적으로 늘리기 위해서는 치밀한 SEO(검색 엔진 최적화) 대책이 필수적입니다. Hugo에서 SEO 대책의 심장부가 되는 것은 각 마크다운 기사의 서두에 작성하는 **프론트매터(Frontmatter)** 와 이를 해석하여 HTML의 `<head>` 태그 내에 메타데이터를 전개하는 **템플릿([Layout](https://kenji.blog/ko/p/browser-rendering-mechanism-dom-paint/)s)** 의 연계입니다.
 

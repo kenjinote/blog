@@ -50,7 +50,7 @@ tags: ["Algorithm", "DP", "C++", "Python"]
   - 只有必要的子問題會被計算，因此當整體狀態空間中只有一部分會被存取時較具優勢。
 - **缺點:** 
   - 由於遞迴呼叫，會產生函式呼叫的額外負擔（Overhead）。
-  - 遞迴深度過大時會有堆疊溢位（Stack Overflow）的風險（在 Python 等語言中特別需要注意）。
+  - 遞迴深度過大時會有堆疊溢位（[Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/) Overflow）的風險（在 Python 等語言中特別需要注意）。
 
 ### 由下而上法（建表 / Tabulation）
 

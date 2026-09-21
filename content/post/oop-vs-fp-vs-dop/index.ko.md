@@ -10,13 +10,13 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 프로그래밍 언어의 진화 역사는 복잡성과의 싸움의 역사이기도 합니다. 소프트웨어가 대규모화됨에 따라 상태 관리나 성능, 유지 보수성의 장벽에 직면하게 되고, 이를 극복하기 위한 다양한 **프로그래밍 패러다임** 이 제창되어 왔습니다.
 
-본 기사에서는 현대 소프트웨어 개발에서 주류가 되고 있는 **객체 지향 프로그래밍** (OOP), 수학적인 견고함을 가지는 **함수형 프로그래밍** (FP), 그리고 성능과 데이터 분리에 초점을 맞춘 **데이터 지향 프로그래밍** (DOP / DOD)에 대해 각각의 사상, 강점, 그리고 **한계** 를 깊이 파고듭니다. 나아가 현대의 강력한 언어([Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)나 TypeScript 등)가 이것들을 어떻게 **융합** 시키고 있는지 해설합니다.
+본 기사에서는 현대 소프트웨어 개발에서 주류가 되고 있는 **객체 지향 프로그래밍** ([OOP](https://kenji.blog/ko/p/object-oriented-programming-oop-solid-principles/)), 수학적인 견고함을 가지는 **함수형 프로그래밍** (FP), 그리고 성능과 데이터 분리에 초점을 맞춘 **데이터 지향 프로그래밍** (DOP / DOD)에 대해 각각의 사상, 강점, 그리고 **한계** 를 깊이 파고듭니다. 나아가 현대의 강력한 언어([Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)나 TypeScript 등)가 이것들을 어떻게 **융합** 시키고 있는지 해설합니다.
 
 ---
 
-## 1. 객체 지향 프로그래밍 (OOP)의 영고성쇠
+## 1. 객체 지향 프로그래밍 ([OOP](https://kenji.blog/ko/p/object-oriented-programming-oop-solid-principles/))의 영고성쇠
 
-**객체 지향** (Object-Oriented Programming)은 1990년대부터 2010년대에 걸쳐 소프트웨어 개발의 절대적인 제왕으로 군림했습니다. Java나 C++, C# 등의 언어가 이 패러다임을 견인했고, 현실 세계를 모델링한다는 직관적인 접근 방식이 수용되었습니다.
+**객체 지향** ([Object-Oriented](https://kenji.blog/ko/p/object-oriented-programming-oop-solid-principles/) Programming)은 1990년대부터 2010년대에 걸쳐 소프트웨어 개발의 절대적인 제왕으로 군림했습니다. [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)나 C++, C# 등의 언어가 이 패러다임을 견인했고, 현실 세계를 모델링한다는 직관적인 접근 방식이 수용되었습니다.
 
 ### 1.1 OOP의 핵심 개념
 
@@ -54,7 +54,7 @@ const animals: Animal[] = [new Dog("Buddy"), new Cat("Kitty")];
 animals.forEach(a => a.speak());
 ```
 
-### 1.2 OOP의 한계와 '바나나와 고릴라 문제'
+### 1.2 [OOP](https://kenji.blog/ko/p/object-oriented-programming-oop-solid-principles/)의 한계와 '바나나와 고릴라 문제'
 
 OOP는 얼핏 보면 완벽한 모델링 기법처럼 보이지만, 시스템이 대규모화됨에 따라 **상속의 남용** 과 **암묵적인 상태 관리** 라는 치명적인 문제를 일으켰습니다.
 
@@ -91,7 +91,7 @@ classDiagram
 
 ## 2. 함수형 프로그래밍 (FP)의 수학적 접근
 
-OOP의 '상태 변이'가 초래하는 복잡성에 대한 안티테제로서 각광받은 것이 **함수형 프로그래밍** (Functional Programming)입니다. Haskell, Scala, Clojure와 같은 언어뿐만 아니라, 현대에는 JavaScript나 TypeScript에도 짙은 영향을 미치고 있습니다.
+[OOP](https://kenji.blog/ko/p/object-oriented-programming-oop-solid-principles/)의 '상태 변이'가 초래하는 복잡성에 대한 안티테제로서 각광받은 것이 **함수형 프로그래밍** ([Functional Programming](https://kenji.blog/ko/p/functional-programming-concepts-pure-functions-monads/))입니다. Haskell, Scala, Clojure와 같은 언어뿐만 아니라, 현대에는 JavaScript나 TypeScript에도 짙은 영향을 미치고 있습니다.
 
 ### 2.1 FP의 핵심 개념
 
@@ -140,7 +140,7 @@ $ S' = f(S, A) $
 
 ### 3.1 DOP의 핵심 개념
 
-DOP는 '데이터와 로직을 분리한다'는 것을 지상 과제로 삼습니다. OOP가 데이터와 로직을 클래스로 묶은 반면, DOP는 그것들을 떼어놓습니다.
+DOP는 '데이터와 로직을 분리한다'는 것을 지상 과제로 삼습니다. [OOP](https://kenji.blog/ko/p/object-oriented-programming-oop-solid-principles/)가 데이터와 로직을 클래스로 묶은 반면, DOP는 그것들을 떼어놓습니다.
 
 - **데이터의 분리** : 데이터는 단순한 데이터 구조(레코드, 구조체)로서 정의하고, 행위를 갖지 않게 한다.
 - **ECS (Entity Component System)** : 상속 대신, 데이터를 컴포넌트로 분할하고 시스템(함수)이 그것을 일괄 처리한다.
@@ -192,7 +192,7 @@ graph TD
 
 | 패러다임 | 장점 | 단점 | 최적의 유스케이스 |
 | :--- | :--- | :--- | :--- |
-| **OOP** | 직관적인 모델링, 캡슐화에 의한 은닉 | 상속의 복잡화, 암묵적인 상태 변이에 의한 버그 | GUI 프레임워크, 비즈니스 도메인의 모델링 |
+| **[OOP](https://kenji.blog/ko/p/object-oriented-programming-oop-solid-principles/)** | 직관적인 모델링, 캡슐화에 의한 은닉 | 상속의 복잡화, 암묵적인 상태 변이에 의한 버그 | GUI 프레임워크, 비즈니스 도메인의 모델링 |
 | **FP** | 병행 처리에 대한 내성, 테스트의 용이성, 예측 가능성 | 학습 곡선이 가파름, 성능(GC 부하) | 데이터 변환 파이프라인, 병행 처리 시스템 |
 | **DOP** | 압도적인 성능, 상태의 투명성 | 데이터의 응집도 저하, 절차적이 되기 쉬움 | 게임 개발, 고부하 연산 처리, 임베디드 |
 
@@ -200,9 +200,9 @@ graph TD
 
 ## 5. 현대에서의 최적의 해답: 패러다임의 '융합'
 
-오늘날, 이들 중 '유일한 정답'을 선택하는 것은 난센스로 여겨집니다. 모던 프로그래밍 언어([Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/), TypeScript, Scala, Go 등)는 이들 패러다임의 **장점만을 취합** 하고 있습니다.
+오늘날, 이들 중 '유일한 정답'을 선택하는 것은 난센스로 여겨집니다. 모던 프로그래밍 언어([Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/), TypeScript, Scala, [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 등)는 이들 패러다임의 **장점만을 취합** 하고 있습니다.
 
-### 5.1 Rust가 보여주는 궁극의 융합
+### 5.1 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)가 보여주는 궁극의 융합
 
 Rust는 이 3가지 패러다임을 놀라운 수준으로 융합시키고 있습니다.
 

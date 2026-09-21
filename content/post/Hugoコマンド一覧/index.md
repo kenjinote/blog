@@ -11,7 +11,7 @@ description: '高速な静的サイトジェネレーターHugoのCLIインス�
 
 # Hugo とは
 
-Hugo は、静的サイトジェネレーターの一つです。MarkdownファイルをHTMLに変換して、Webサイトを作成することができます。Hugo は、Go言語で書かれており、高速で動作します。
+Hugo は、静的サイトジェネレーターの一つです。MarkdownファイルをHTMLに変換して、Webサイトを作成することができます。Hugo は、[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語で書かれており、高速で動作します。
 
 このブログもHugo で作成されています。
 

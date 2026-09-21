@@ -9,9 +9,9 @@ categories: ["programming"]
 description: '為初學者解說由Google開發的程式語言「Go（Golang）」的安裝方法。從取得安裝程式，到建立Hello World程式、編譯與執行步驟，是首次入門Go語言的最佳選擇。'
 ---
 # 簡介
-Go 是 Google 在 2009 年發布的一種相對較新的程式語言。
+[Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 是 Google 在 2009 年發布的一種相對較新的程式語言。
 Go 的編譯器、工具和函式庫都是開源的。
-此外，Go 是一種像 C 和 Java 一樣的靜態型別語言，但它不像 C 語言那樣使用指標。
+此外，Go 是一種像 C 和 [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 一樣的靜態型別語言，但它不像 C 語言那樣使用指標。
 
 # 安裝方法
 
@@ -63,7 +63,7 @@ func main() {
 
 [http://go.shibu.jp/](http://go.shibu.jp/)
 
-學習 Go 所需的說明都集中在上面的連結中（日文翻譯版）。
+學習 [Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 所需的說明都集中在上面的連結中（日文翻譯版）。
 與 Go 相關的技術是開放的，內容非常豐富，幾乎不需要購買紙本教材。
 
 那麼，祝您有美好的 Go 生活！

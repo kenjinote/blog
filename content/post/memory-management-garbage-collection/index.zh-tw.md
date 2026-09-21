@@ -8,11 +8,11 @@ categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]
 ---
 
-# 歡迎來到記憶體管理的真相：從 C、Java、[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 探索深淵
+# 歡迎來到記憶體管理的真相：從 C、[Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)、[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 探索深淵
 
 在軟體開發中，記憶體管理是無法迴避的永恆主題，更是決定系統效能與穩定性最重要的因素之一。本篇文章將透過直逼兩萬字規模的壓倒性深度探索，完整涵蓋從記憶體管理的基礎理論，到現代架構中的最佳化手法。
 
-C 語言帶來了 **手動管理** 的自由與責任，Java 普及了 **垃圾回收** （ GC ）所帶來的安全自動化，而 Rust 則提出了 **所有權** （ Ownership ）這種編譯期驗證的典範。藉由比較與分析這三種截然不同的方法，我們將逼近程式語言如何面對記憶體這項有限資源，以及其 **歷史與演進** 的本質。
+C 語言帶來了 **手動管理** 的自由與責任，[Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 普及了 **垃圾回收** （ GC ）所帶來的安全自動化，而 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 則提出了 **所有權** （ Ownership ）這種編譯期驗證的典範。藉由比較與分析這三種截然不同的方法，我們將逼近程式語言如何面對記憶體這項有限資源，以及其 **歷史與演進** 的本質。
 
 ---
 
@@ -25,8 +25,8 @@ C 語言帶來了 **手動管理** 的自由與責任，Java 普及了 **垃圾�
 1. **文字區段 (Text Segment)** : 存放編譯後的機器語言指令（可執行程式碼）的區域。為了防止篡改，通常會被設定為唯讀。
 2. **資料區段 (Data Segment)** : 存放已初始化的全域變數與靜態（ static ）變數的區域。
 3. **BSS區段 (BSS Segment)** : 存放未初始化的全域變數與靜態變數，在執行開始時會自動清零。
-4. **堆疊區段 (Stack Segment)** : 存放區域變數與函式呼叫時的上下文（返回位址、引數等）的區域。
-5. **堆積區段 (Heap Segment)** : 用於程式執行時動態配置記憶體的區域。
+4. **堆疊區段 ([Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/) Segment)** : 存放區域變數與函式呼叫時的上下文（返回位址、引數等）的區域。
+5. **堆積區段 ([Heap](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/) Segment)** : 用於程式執行時動態配置記憶體的區域。
 
 ### 1.1 堆疊記憶體的特性與極限
 
@@ -109,9 +109,9 @@ int main() {
 在 C 語言中進行記憶體管理，很容易產生以下典型的 Bug（記憶體漏洞）。
 
 1. **記憶體洩漏 (Memory Leak)** : 忘記呼叫 `free` ，導致不再使用的記憶體殘留且未被釋放的現象。若發生在長時間運行的伺服器上，最終會耗盡系統整體的記憶體，並被 OOM (Out Of Memory) Killer 強制結束。
-2. **懸垂指標 (Dangling Pointer)** : 持續指向已經透過 `free` 釋放的記憶體區域的指標。若試圖透過此指標存取記憶體，會引發未定義行為（例如記憶體區段錯誤 Segmentation Fault）。
+2. **懸垂指標 (Dangling [Pointer](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/))** : 持續指向已經透過 `free` 釋放的記憶體區域的指標。若試圖透過此指標存取記憶體，會引發未定義行為（例如記憶體區段錯誤 Segmentation Fault）。
 3. **雙重釋放 (Double Free)** : 對同一個堆積區域的指標呼叫了兩次 `free` 的錯誤。這會破壞分配器的內部結構（例如堆積的空閒列表），成為安全上的漏洞。
-4. **緩衝區溢位 (Buffer Overflow)** : 寫入資料超出了所配置的記憶體區域範圍的現象。透過覆寫相鄰的重要資料或返回位址，這將成為執行惡意程式碼攻擊（如堆疊粉碎 Stack Smashing 等）的突破口。
+4. **緩衝區溢位 (Buffer Overflow)** : 寫入資料超出了所配置的記憶體區域範圍的現象。透過覆寫相鄰的重要資料或返回位址，這將成為執行惡意程式碼攻擊（如堆疊粉碎 [Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/) Smashing 等）的突破口。
 
 我們試著用數學式來建立模型。假設在某個時間點 $ t $ ，堆積的總配置量為 $ A(t) $ ，總釋放量為 $ F(t) $ 。系統中活躍的記憶體使用量 $ M(t) $ 可用以下積分來表示。
 
@@ -121,7 +121,7 @@ $ M(t) = \int_0^t (A(\tau) - F(\tau)) d\tau $
 
 ---
 
-## 3. Java：垃圾回收帶來的革命
+## 3. [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)：垃圾回收帶來的革命
 
 Java 為苦於 C/C++ 頻發記憶體 Bug 的軟體業界帶來了巨大的典範轉移。Java 將記憶體管理的複雜性從程式設計師手中接管，交給了內建於 Java 虛擬機器（ JVM ）的 **垃圾回收** （ GC ）。開發者因此能夠專注於業務邏輯的撰寫與物件的生成。
 
@@ -162,7 +162,7 @@ graph TD
 
 在上圖中，綠色的物件被標記為可達並受到保護。另一方面，以紅色虛線標示的物件集合因為不被任何地方參考，因此在 Sweep 階段會自動被回收記憶體。
 
-### 3.2 Java 程式碼中的記憶體行為
+### 3.2 [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 程式碼中的記憶體行為
 
 在 Java 中，會使用 `new` 關鍵字在堆積上配置物件，但不存在相當於 C 語言中 `free` 的釋放指令。
 
@@ -208,7 +208,7 @@ public class GcExample {
 
 ## 4. [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)：所有權與借用帶來的第三條路
 
-C 語言「透過手動管理達到極限效能」與 Java「透過自動管理保障記憶體安全」。這兩者長期以來被認為是需要權衡取捨（Trade-off）的關係。然而，Rust 語言導入了 **「所有權（ Ownership ）」** 這個劃時代的模型，成功達成排除了垃圾回收，卻能在編譯期 100% 保證記憶體安全的創舉。
+C 語言「透過手動管理達到極限效能」與 [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)「透過自動管理保障記憶體安全」。這兩者長期以來被認為是需要權衡取捨（Trade-off）的關係。然而，[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 語言導入了 **「所有權（ Ownership ）」** 這個劃時代的模型，成功達成排除了垃圾回收，卻能在編譯期 100% 保證記憶體安全的創舉。
 
 ### 4.1 所有權（Ownership）的三大原則
 
@@ -243,7 +243,7 @@ fn main() {
 
 如果所有的操作都會轉移所有權，那程式設計將變得極度不便。為了在不奪走所有權的情況下存取資料，[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 引入了 **參考（ Reference ）** 與 **借用（ Borrowing ）** 的概念。
 
-此外，內建於 Rust 編譯器中的 **借用檢查器（ Borrow Checker ）** ，會在編譯時強制執行以下嚴格的規則。
+此外，內建於 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 編譯器中的 **借用檢查器（ Borrow Checker ）** ，會在編譯時強制執行以下嚴格的規則。
 
 - 在任意時間點，只能擁有 **一個可變參考（ `&mut T` ）** ，或者 **任意數量的不變參考（ `&T` ）** 的其中一種（兩者無法同時共存，以防止資料競爭 Data Race）。
 - 參考的生命週期（有效期間）不能超過原始資料的生命週期（完全防止懸垂指標）。
@@ -296,14 +296,14 @@ stateDiagram-v2
 ### 5.1 不同語言的快取效率差異
 
 - **C / C++ / [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)** : 當建立結構的陣列（如 `struct Array[100]` 或 `Vec<MyStruct>` ）時，資料會在記憶體上緊密連續地排列。當對陣列進行迴圈處理時，CPU 的硬體預取器（Hardware Prefetcher）能完美發揮作用，使快取命中率（Cache Hit Rate）飛躍性地提升。
-- **Java** : Java 的物件陣列（如 `MyObject[]` ）並非實體陣列，而是「物件參考（指標）」的陣列。作為實體的每個物件會被分配在堆積上零散的位置，因此每次執行迴圈時都必須追蹤指標存取隨機的記憶體位址，進而引發嚴重的快取未命中（ Cache Miss ）。
+- **[Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)** : Java 的物件陣列（如 `MyObject[]` ）並非實體陣列，而是「物件參考（指標）」的陣列。作為實體的每個物件會被分配在堆積上零散的位置，因此每次執行迴圈時都必須追蹤指標存取隨機的記憶體位址，進而引發嚴重的快取未命中（ Cache Miss ）。
 
 記憶體存取的實際平均時間 $ T_{avg} $ 可用下列公式表示。
 
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 這裡的 $ h $ 代表快取命中率（ $ 0 \le h \le 1 $ ），$ T_{cache} $ 是快取存取時間（約 1〜4 ns ），$ T_{memory} $ 是主記憶體存取時間（約 100 ns ）。
-究竟是將 $ h $ 提升至 0.99（如 C/[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的做法），還是降至 0.5（如 Java 的指標追蹤），會讓應用程式的迴圈執行速度產生數十倍的差距。這正是遊戲引擎或高頻交易系統選擇 C++ 或 Rust 的真正原因。
+究竟是將 $ h $ 提升至 0.99（如 C/[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的做法），還是降至 0.5（如 [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 的指標追蹤），會讓應用程式的迴圈執行速度產生數十倍的差距。這正是遊戲引擎或高頻交易系統選擇 C++ 或 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 的真正原因。
 
 ---
 
@@ -314,9 +314,9 @@ $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 | 語言 | 方法 | 優勢 | 劣勢與挑戰 |
 |:---:|:---|:---|:---|
 | **C** | 透過 `malloc/free` 進行手動管理 | 極致的速度、快取效率最大化、輕量 | 漏洞的溫床（洩漏、雙重釋放）、開發成本高 |
-| **Java** | GC (垃圾回收) | 提升開發速度、確保記憶體安全 | STW 導致延遲波動、快取效率惡化 |
+| **[Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)** | GC (垃圾回收) | 提升開發速度、確保記憶體安全 | STW 導致延遲波動、快取效率惡化 |
 | **[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)** | 所有權與借用檢查器 | 零執行時期成本的安全性、高速 | 學習曲線陡峭、生命週期設計困難 |
 
 **記憶體管理** 的歷史，是一場在效能與安全性之間搖擺的翹翹板遊戲。為了防止手動管理引發的慘劇而誕生了 GC，而為了迴避 GC 帶來的效能懲罰，又發明了所有權模型。
 
-當我們在設計系統時，不應該做出「因為最快所以用 Rust」、「因為安全所以用 Java」這種短視的決定，而是應該結合系統的需求（對延遲的嚴格程度、開發資源、可維護性），並對照背後記憶體管理的 **真相** ，進而選擇最合適的技術，這才是通往一流工程師的道路。
+當我們在設計系統時，不應該做出「因為最快所以用 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)」、「因為安全所以用 [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)」這種短視的決定，而是應該結合系統的需求（對延遲的嚴格程度、開發資源、可維護性），並對照背後記憶體管理的 **真相** ，進而選擇最合適的技術，這才是通往一流工程師的道路。

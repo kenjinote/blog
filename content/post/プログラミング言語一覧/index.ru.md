@@ -25,13 +25,13 @@ description: 'Мы составили список различных языко
 
 ## [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/)
 
-## Go
+## [Go](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/)
 
 ## Python
 
 ## Ruby
 
-## Java
+## [Java](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/)
 
 ## JavaScript
 
@@ -132,4 +132,4 @@ ML — один из функциональных языков программ�
 
 ## Salesforce APEX
 
-Язык, очень похожий на Java.
+Язык, очень похожий на [Java](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/).

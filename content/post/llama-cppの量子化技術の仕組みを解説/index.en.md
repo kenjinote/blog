@@ -12,7 +12,7 @@ description: 'A highly detailed explanation of the internal structure of the GGU
 
 ## 1. Introduction: Why Do LLMs Need Quantization?
 
-The recent evolution of Large Language Models (LLMs) has been remarkable, but behind the scenes, serious problems of "exhaustion of computational resources" and "memory bandwidth bottlenecks" have emerged. For example, if a 70B (70 billion) parameter model like Llama 3 is loaded into memory in standard 16-bit floating-point (FP16), the parameters alone consume about 140GB of VRAM/RAM. When the context during inference (KV cache) is added to this, it will not run unless multiple high-end GPUs for data centers (such as NVIDIA A100 80GB or H100 80GB) are clustered together.
+The recent evolution of [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) has been remarkable, but behind the scenes, serious problems of "exhaustion of computational resources" and "memory bandwidth bottlenecks" have emerged. For example, if a 70B (70 billion) parameter model like Llama 3 is loaded into memory in standard 16-bit floating-point (FP16), the parameters alone consume about 140GB of VRAM/RAM. When the context during inference (KV cache) is added to this, it will not run unless multiple high-end GPUs for data centers (such as NVIDIA A100 80GB or H100 80GB) are clustered together.
 
 To save individual developers and edge devices (like MacBooks and standard gaming PCs) wanting to run LLMs, **llama.cpp** and its core **Quantization** technology appeared as a savior. In particular, the **GGUF (GPT-Generated Unified Format)** file format and the advanced block-wise quantization algorithm called **k-quants** are revolutionary methods that compress the model size to a fraction while minimizing the degradation of model accuracy (Perplexity).
 
@@ -175,7 +175,7 @@ llama.cpp provides a number of variations depending on the purpose. The suffixes
 
 ## 5. [Performance Optimization](https://kenji.blog/en/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/) During Inference: SIMD and CUDA Architectures
 
-Merely loading a GGUF model into memory does not speed up inference. The majority of LLM inference is "Matrix Multiplication" (Matrix-Vector Multiplication, abbreviated as GEMV, or Matrix-Matrix, GEMM). The key is how to speed up the multiply-accumulate operations between quantized weights and activations (input data) held in FP16 (or FP32).
+Merely loading a GGUF model into memory does not speed up inference. The majority of [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) inference is "Matrix Multiplication" (Matrix-Vector Multiplication, abbreviated as GEMV, or Matrix-Matrix, GEMM). The key is how to speed up the multiply-accumulate operations between quantized weights and activations (input data) held in FP16 (or FP32).
 
 ### 5.1. Utilizing SIMD Instructions in CPU Environments
 
@@ -226,7 +226,7 @@ Here, let's look at the required specifications for each quantization level of G
 | **Llama-3-8B (Q2_K)** | Approx. 3.0 GB | 4.5 GB or more | Fast | Obvious degradation |
 
 **Important Note (Impact of KV Cache):**
-In LLM inference, as the context length (number of prompt tokens) becomes longer, not only the model weights but also the memory consumption of the **KV Cache**, which stores past Attention states, increases explosively.
+In [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) inference, as the context length (number of prompt tokens) becomes longer, not only the model weights but also the memory consumption of the **KV Cache**, which stores past Attention states, increases explosively.
 For example, if the context is 8192 tokens, the KV cache alone consumes several GBs. Therefore, in actual operation, it is necessary to secure a margin (Headroom) of `Model File Size + Approx. 1.5GB to 3GB`. The reason Q4_K_M is recommended is because it perfectly strikes a balance, safely running on standard GPUs with 8GB VRAM (like RTX 3060 / 4060) even with this KV cache reserved.
 
 In recent versions of llama.cpp, a **feature to quantize the KV cache itself to Q8_0 or Q4_0** has also been added, and continuous efforts are being made to further extend the context length.

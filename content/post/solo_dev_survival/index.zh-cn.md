@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # 导言：向巨人们挑战的“无产者”战斗方式
 
-在软件开发的历史上，个人开发者（独立开发者）从未迎来过如此有利的时代。AWS和GCP等云基础设施的民主化、以Vercel和Supabase为首的BaaS（后端即服务）的崛起，以及最重要的——大语言模型（LLM）进化带来的编码自动化。这一切，为个人与被称为“巨人”的大型科技企业正面对决创造了土壤。
+在软件开发的历史上，个人开发者（独立开发者）从未迎来过如此有利的时代。AWS和GCP等云基础设施的民主化、以Vercel和Supabase为首的BaaS（后端即服务）的崛起，以及最重要的——大语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）进化带来的编码自动化。这一切，为个人与被称为“巨人”的大型科技企业正面对决创造了土壤。
 
 然而，即使技术资源变得扁平化，也不意味着采用与大企业相同的战略就能获胜。在资本、营销和品牌力方面，个人处于绝对的劣势。个人开发者要想生存并获胜，独特的“生存战略”是不可或缺的。
 
@@ -248,7 +248,7 @@ export async function getUserByEmail(email: string) {
 
 # 7. 编程化SEO与AI生成内容
 
-对于没有营销预算的个人开发者而言，最强有力的武器就是“SEO（搜索引擎优化）”。近年来，结合自家数据库和LLM、动态生成数以千计乃至万计的着陆页（Landing Page）的“编程化SEO（Programmatic SEO）”正备受瞩目。
+对于没有营销预算的个人开发者而言，最强有力的武器就是“SEO（搜索引擎优化）”。近年来，结合自家数据库和[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)、动态生成数以千计乃至万计的着陆页（Landing Page）的“编程化SEO（Programmatic SEO）”正备受瞩目。
 
 流量的分布同样遵循幂律。不再一味死磕某些大词（Big Keywords），而是大量覆盖搜索量虽小但转化率极高的“长尾关键词”，从而拉高整体的访问量。
 

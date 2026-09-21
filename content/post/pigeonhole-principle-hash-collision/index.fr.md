@@ -173,7 +173,7 @@ Pour résoudre ces collisions, les algorithmes suivants sont intégrés :
 * **Méthode de chaînage (Chaining)** : Relier les éléments entrés en collision au moyen d'une liste chaînée (linked list) et les stocker dans le même compartiment (bucket).
 * **Adressage ouvert (Open Addressing)** : Lorsqu'une collision se produit, chercher selon des règles définies « un autre compartiment vide » pour y stocker la donnée.
 
-En coulisses des langages de programmation (`dict` en Python, `HashMap` en Java, etc.), des mécanismes d'une grande ingéniosité ont été conçus pour gérer de manière rapide et efficace les collisions causées par le principe des tiroirs.
+En coulisses des langages de programmation (`dict` en Python, `HashMap` en [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), etc.), des mécanismes d'une grande ingéniosité ont été conçus pour gérer de manière rapide et efficace les collisions causées par le principe des tiroirs.
 
 ## 6. La sécurité et l'avenir de la technologie de la cryptographie
 

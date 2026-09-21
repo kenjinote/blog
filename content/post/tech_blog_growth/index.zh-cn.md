@@ -64,7 +64,7 @@ Google将页面体验作为排名因素之一，特别是 **[Core Web Vitals](ht
 
 ### 1.3 语义化 HTML 和文档结构优化
 
-标题（`h1`〜`h6`）的适当嵌套是最基本的，但在技术博客中更要求准确使用 `article`, `section`, `aside`, `nav` 等HTML5语义化标签。此外，妥善区分使用表示源代码的 `<code>` 或 `<pre>`、表示键盘输入的 `<kbd>`、表示变量的 `<var>` 等，能够提供机器可读的HTML。这对于AI的内容索引（LLM训练数据收集和RAG系统）也是一种非常有效的手段。
+标题（`h1`〜`h6`）的适当嵌套是最基本的，但在技术博客中更要求准确使用 `article`, `section`, `aside`, `nav` 等HTML5语义化标签。此外，妥善区分使用表示源代码的 `<code>` 或 `<pre>`、表示键盘输入的 `<kbd>`、表示变量的 `<var>` 等，能够提供机器可读的HTML。这对于AI的内容索引（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)训练数据收集和RAG系统）也是一种非常有效的手段。
 
 ---
 

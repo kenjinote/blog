@@ -13,7 +13,7 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 Na engenharia de software moderna, C++ e [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) são os dois gigantes na vanguarda da programação de sistemas. Por muitos anos, C++ reinou como o rei absoluto em áreas que extraem o máximo de desempenho do hardware, como sistemas operacionais, dispositivos embarcados, motores de jogos e sistemas de negociação de alta frequência (HFT). Eu mesmo, como engenheiro C++ sênior, comecei na selva de ponteiros brutos da era C++98, acompanhei a onda de modernização do C++11 (introdução de ponteiros inteligentes, expressões lambda, `auto`) e continuei escrevendo código enquanto a especificação crescia massivamente com C++14/17/20.
 
-No entanto, nos últimos anos, [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) tem mostrado uma ascensão dramática como solução para os problemas estruturais que o C++ enfrenta — especialmente vulnerabilidades de segurança devido à "falta de segurança de memória" (diz-se que cerca de 70% das CVEs são relacionadas à memória) e "especificações infinitamente complexas e comportamentos indefinidos (UB)". Sua adoção oficial no kernel do Linux e projetos de migração em larga escala para Rust por gigantes da tecnologia como Microsoft, Google e AWS não são apenas uma tendência passageira, mas representam uma mudança de paradigma na programação de sistemas.
+No entanto, nos últimos anos, [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) tem mostrado uma ascensão dramática como solução para os problemas estruturais que o C++ enfrenta — especialmente vulnerabilidades de segurança devido à "falta de segurança de memória" (diz-se que cerca de 70% das CVEs são relacionadas à memória) e "especificações infinitamente complexas e comportamentos indefinidos (UB)". Sua adoção oficial no kernel do Linux e projetos de migração em larga escala para [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) por gigantes da tecnologia como Microsoft, Google e AWS não são apenas uma tendência passageira, mas representam uma mudança de paradigma na programação de sistemas.
 
 Neste artigo, compararei e explicarei detalhadamente as "vantagens" e "desvantagens" que eu, um engenheiro C++ puro-sangue, senti ao aprender profundamente o Rust e utilizá-lo na prática, a partir de uma perspectiva técnica que afeta o núcleo das especificações da linguagem.
 
@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-No [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), no momento em que a propriedade de uma variável é movida, a variável original é tratada pelo compilador de forma equivalente a um estado "não inicializado", bloqueando completamente qualquer acesso subsequente. Com isso, bugs como "Use-After-Free" (Uso após liberação) e "Dangling Pointer" (Ponteiro pendente) não conseguem passar pela compilação, teoricamente.
+No [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), no momento em que a propriedade de uma variável é movida, a variável original é tratada pelo compilador de forma equivalente a um estado "não inicializado", bloqueando completamente qualquer acesso subsequente. Com isso, bugs como "Use-After-Free" (Uso após liberação) e "Dangling [Pointer](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/)" (Ponteiro pendente) não conseguem passar pela compilação, teoricamente.
 
 ```mermaid
 graph TD
@@ -158,7 +158,7 @@ int main() {
 
 ## O Mutex do [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) "Possui" os Dados
 
-No Rust, `Mutex<T>` encapsula (possui) o tipo de dado `T` que ele protege usando genéricos. Para acessar os dados, é obrigatório chamar `lock()` e obter um objeto guard (guarda). É sintaticamente impossível tocar nos dados sem obter o lock.
+No [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), `Mutex<T>` encapsula (possui) o tipo de dado `T` que ele protege usando genéricos. Para acessar os dados, é obrigatório chamar `lock()` e obter um objeto guard (guarda). É sintaticamente impossível tocar nos dados sem obter o lock.
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -266,7 +266,7 @@ fn draw_dynamic(item: &dyn Drawable) {
 }
 ```
 
-A maior característica do despacho dinâmico do [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) (`dyn Trait`) é que ele não possui um vptr dentro da estrutura de dados, mas usa um **Fat Pointer** (Ponteiro Gordo). O Fat Pointer armazena um par: um "ponteiro para os dados" e um "ponteiro para a vtable". Isso torna extremamente fácil implementar (estender) Traits posteriormente para tipos definidos em bibliotecas externas e aplicar o despacho dinâmico a eles.
+A maior característica do despacho dinâmico do [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) (`dyn Trait`) é que ele não possui um vptr dentro da estrutura de dados, mas usa um **Fat [Pointer](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/)** (Ponteiro Gordo). O Fat Pointer armazena um par: um "ponteiro para os dados" e um "ponteiro para a vtable". Isso torna extremamente fácil implementar (estender) Traits posteriormente para tipos definidos em bibliotecas externas e aplicar o despacho dinâmico a eles.
 
 ---
 
@@ -295,7 +295,7 @@ Apenas adicionando uma linha com o nome e a versão da biblioteca de dependênci
 
 # 7. Desvantagens e Curva de Aprendizado ao Aprender [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)
 
-Até agora discuti as vantagens do Rust, mas certamente existem "muros" e desvantagens que um engenheiro C++ enfrentará ao tentar colocar o Rust em uso prático.
+Até agora discuti as vantagens do [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), mas certamente existem "muros" e desvantagens que um engenheiro C++ enfrentará ao tentar colocar o Rust em uso prático.
 
 ## 1. A Batalha Feroz com o [Borrow Checker](https://kenji.blog/pt/p/memory-management-garbage-collection/)
 Se você tentar implementar estruturas de dados diretamente em [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) (como listas duplamente encadeadas, estruturas de grafos ou structs auto-referenciadas) que em C++ você conectava casualmente usando ponteiros brutos, a compilação falhará devido às restrições de propriedade e tempo de vida. Para satisfazer o Borrow Checker, você precisará usar invólucros complexos como `Rc<RefCell<T>>`, ou repensar o design de forma fundamental para usar Arena Allocators ou gerenciamento baseado em índices.
@@ -312,6 +312,6 @@ Embora a integração com a linguagem C (FFI) seja muito tranquila, vincular o [
 
 O C++ continuará desempenhando um papel importante no desenvolvimento de motores de jogos e nas infraestruturas massivas existentes no futuro. Sua modernização por meio do C++20/23 tem sido notável, permitindo escrever de forma mais segura.
 
-No entanto, em um "novo projeto de programação de sistemas a ser iniciado", acho que agora é **mais difícil encontrar um motivo para não escolher o Rust**. A "certeza" do Rust — que, desde que compile, você estará livre do medo de comportamentos indefinidos e corrupção de memória, e poderá executar processamento paralelo de forma segura com alto desempenho — melhora drasticamente o modelo mental dos engenheiros.
+No entanto, em um "novo projeto de programação de sistemas a ser iniciado", acho que agora é **mais difícil encontrar um motivo para não escolher o [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/)**. A "certeza" do Rust — que, desde que compile, você estará livre do medo de comportamentos indefinidos e corrupção de memória, e poderá executar processamento paralelo de forma segura com alto desempenho — melhora drasticamente o modelo mental dos engenheiros.
 
 Para um engenheiro C++, aprender Rust não é apenas memorizar uma nova sintaxe, mas é a melhor experiência para obter uma nova perspectiva sobre "o método de gerenciamento seguro de memória e threads". Convido todos a experimentarem o conforto do Cargo e o rigor do [Borrow Checker](https://kenji.blog/pt/p/memory-management-garbage-collection/).

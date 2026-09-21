@@ -33,7 +33,7 @@ Il est également possible de créer des outils spécialisés et vos propres fra
 
 ### Facile à Distribuer Sans Besoin d'Exécution
 
-Comme aucun runtime externe tel que .NET ou Java n'est requis, il **peut être distribué sous forme de fichier exécutable unique** .
+Comme aucun runtime externe tel que .NET ou [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) n'est requis, il **peut être distribué sous forme de fichier exécutable unique** .
 Il est moins sujet aux problèmes lors de la redistribution et est facile à exécuter sans installateur.
 
 ### Peut Créer des Applications Légères

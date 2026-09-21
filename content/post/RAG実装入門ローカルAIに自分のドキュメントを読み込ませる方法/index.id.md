@@ -11,7 +11,7 @@ tags: ["RAG", "Vector DB", "Embeddings", "Python", "Local AI"]
 
 # Pendahuluan
 
-Dalam beberapa tahun terakhir, evolusi Large Language Models (LLM) sangat luar biasa, dengan banyak AI seperti ChatGPT dan Claude menyusup ke kehidupan dan pekerjaan kita. Namun, LLM umum memiliki kelemahan yang jelas. Yaitu mereka hanya mengetahui "informasi publik pada saat pelatihan". Secara alami, mereka tidak dapat menjawab pertanyaan mengenai "dokumen pribadi" seperti peraturan internal perusahaan, catatan pribadi, dan materi proyek yang belum dipublikasikan. Jika Anda memaksanya untuk menjawab, ada risiko tinggi bahwa ia akan menghasilkan kebohongan yang masuk akal tetapi bertentangan dengan fakta (halusinasi).
+Dalam beberapa tahun terakhir, evolusi [Large Language Models](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)) sangat luar biasa, dengan banyak AI seperti ChatGPT dan Claude menyusup ke kehidupan dan pekerjaan kita. Namun, LLM umum memiliki kelemahan yang jelas. Yaitu mereka hanya mengetahui "informasi publik pada saat pelatihan". Secara alami, mereka tidak dapat menjawab pertanyaan mengenai "dokumen pribadi" seperti peraturan internal perusahaan, catatan pribadi, dan materi proyek yang belum dipublikasikan. Jika Anda memaksanya untuk menjawab, ada risiko tinggi bahwa ia akan menghasilkan kebohongan yang masuk akal tetapi bertentangan dengan fakta (halusinasi).
 
 Oleh karena itu, arsitektur teknologi yang saat ini meledak dalam popularitas di seluruh dunia adalah **RAG (Retrieval-Augmented Generation)**. Dengan menggunakan RAG, dimungkinkan untuk secara dinamis memberikan pengetahuan unik dari basis data eksternal ke LLM, memungkinkannya untuk menghasilkan jawaban yang akurat dan berdasar berdasarkan pengetahuan tersebut.
 
@@ -54,7 +54,7 @@ graph TD
 
 ## Fase Ingestion (Persiapan Awal)
 1. **Pemuatan Dokumen**: Memuat data tidak terstruktur seperti PDF, Word, dan file teks.
-2. **Chunking (Pemisahan Teks)**: Untuk menyesuaikan batasan input LLM (jendela konteks) dan untuk meningkatkan akurasi pencarian, teks panjang dipisahkan menjadi bagian-bagian (chunk) yang bermakna.
+2. **Chunking (Pemisahan Teks)**: Untuk menyesuaikan batasan input [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) (jendela konteks) dan untuk meningkatkan akurasi pencarian, teks panjang dipisahkan menjadi bagian-bagian (chunk) yang bermakna.
 3. **Embedding (Vektorisasi)**: Chunk yang telah dipisahkan dimasukkan ke dalam model embedding (Embedding Model) dan diubah menjadi array numerik (vektor) dengan dimensi ratusan hingga ribuan.
 4. **Penyimpanan ke Database**: Menyimpan vektor yang telah diubah beserta data teks aslinya ke dalam database vektor (Vector DB) dengan saling menautkan satu sama lain.
 
@@ -101,11 +101,11 @@ Database vektor terbaru (seperti Chroma, FAISS, Qdrant) mengadopsi algoritma App
 
 Untuk membangun RAG lokal sepenuhnya yang tidak bergantung pada cloud, kita memanfaatkan ekosistem sumber terbuka (open source). Berikut ini adalah tumpukan teknologi yang direkomendasikan.
 
-1. **Model Bahasa (LLM)**
+1. **Model Bahasa ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/))**
    - Alat: `Ollama` atau `Llama.cpp`
    - Model: Model terbuka yang ringan dan berkinerja tinggi seperti `Llama-3-8B-Instruct`, `Gemma-2-9B-It`, `Qwen2-7B-Instruct`. Untuk tugas bahasa Jepang, model yang disetel untuk bahasa Jepang seperti `Llama-3-ELYZA-JP-8B` cukup sesuai.
 2. **Model Embedding (Embedding)**
-   - Model: `intfloat/multilingual-e5-large` atau `BAAI/bge-m3`. Saat berjalan secara lokal, umumnya model ini diunduh dari Hugging Face dan dijalankan dengan Sentence-Transformers.
+   - Model: `intfloat/multilingual-e5-large` atau `BAAI/bge-m3`. Saat berjalan secara lokal, umumnya model ini diunduh dari Hugging Face dan dijalankan dengan Sentence-[Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)s.
 3. **Database Vektor (Vector DB)**
    - `ChromaDB`: Berbasis Python dan sangat mudah diatur. Ideal untuk pengembangan lokal.
    - `FAISS`: Pustaka pencarian vektor berkecepatan tinggi yang dikembangkan oleh Meta.
@@ -131,7 +131,7 @@ pip install chromadb sentence-transformers pypdf
 
 ## Langkah 2: Gambaran Keseluruhan Kode Implementasi
 
-Berikut adalah skrip Python lengkap untuk memuat file PDF, mengubahnya menjadi vektor, dan meminta LLM lokal untuk menjawab pertanyaan.
+Berikut adalah skrip Python lengkap untuk memuat file PDF, mengubahnya menjadi vektor, dan meminta [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) lokal untuk menjawab pertanyaan.
 
 ```python
 import os
@@ -252,7 +252,7 @@ Oleh karena itu, dengan melakukan **pencarian semantik** melalui pencarian vekto
 Meskipun pencarian vektor cepat, hal tersebut tidak selalu mengevaluasi relevansi kontekstual yang tepat dari konteks tersebut. Alur pipa umum untuk meningkatkan akurasi pencarian adalah sebagai berikut.
 1. **Pencarian Awal (First-stage Retrieval)**: Mengambil sekitar 20 hingga 30 chunk terkait secara luas dan dangkal dari database vektor.
 2. **Evaluasi Ulang (Re-ranking)**: Menggunakan model pembelajaran mesin lain yang lebih berat yang disebut Cross-Encoder (contoh: `bge-reranker`), kita memasukkan pasangan kueri pengguna dan chunk yang diambil untuk menghitung ulang skor kesesuaian semantik.
-3. **Penyaringan**: Hanya 3 hingga 5 teratas dengan skor tinggi yang akan diteruskan ke prompt LLM sebagai konteks akhir.
+3. **Penyaringan**: Hanya 3 hingga 5 teratas dengan skor tinggi yang akan diteruskan ke prompt [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) sebagai konteks akhir.
 
 Metode ini mencegah informasi noise yang tidak relevan masuk ke LLM dan dapat sangat meningkatkan presisi (Precision) jawaban.
 
@@ -267,7 +267,7 @@ graph LR
 
 ## 5.3 Chunking Semantik dan Pencarian Dokumen Induk
 Alih-alih memisahkan teks secara mekanis dengan jumlah karakter tetap, ada teknik yang disebut "Semantic Chunking" yang mendeteksi perubahan makna kalimat dengan AI dan memisahkannya.
-Selain itu, dalam teknik yang disebut "Parent Document Retriever (Pencarian Dokumen Induk)", vektorisasi dilakukan dalam unit yang sangat kecil (seperti kalimat) untuk pencarian guna mencapai pencarian presisi tinggi, dan saat diteruskan ke LLM, "paragraf besar asli (dokumen induk)" yang berisi kalimat tersebut diserahkan kepada LLM, sehingga menyediakan konteks yang memadai untuk LLM.
+Selain itu, dalam teknik yang disebut "Parent Document Retriever (Pencarian Dokumen Induk)", vektorisasi dilakukan dalam unit yang sangat kecil (seperti kalimat) untuk pencarian guna mencapai pencarian presisi tinggi, dan saat diteruskan ke [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/), "paragraf besar asli (dokumen induk)" yang berisi kalimat tersebut diserahkan kepada LLM, sehingga menyediakan konteks yang memadai untuk LLM.
 
 ---
 

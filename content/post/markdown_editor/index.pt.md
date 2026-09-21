@@ -246,7 +246,7 @@ flowchart TD
 
 ## 5. Técnicas de escrita em Markdown na era dos LLMs
 
-Na escrita de blogs técnicos de hoje, o uso de LLMs (Large Language Models) é inevitável. Ao aproveitar ferramentas de IA integradas ao editor, a velocidade de escrita dobra ainda mais.
+Na escrita de blogs técnicos de hoje, o uso de LLMs ([Large Language Models](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/)) é inevitável. Ao aproveitar ferramentas de IA integradas ao editor, a velocidade de escrita dobra ainda mais.
 
 ### Engenharia de prompt dentro do editor
 
@@ -256,7 +256,7 @@ Você pode enviar os seguintes tipos de prompts sem sair do editor, utilizando o
 
 Em seguida, os cabeçalhos e marcadores em Markdown são gerados instantaneamente. Precisamos apenas adicionar conteúdo a essa estrutura.
 
-Além disso, descrições complexas de diagramas Mermaid ou fórmulas (LaTeX) também podem ter sua sintaxe precisa gerada dando instruções à IA. Por exemplo, a base dos layouts das fórmulas e diagramas deste artigo também foi acelerada pela escrita em par com um LLM.
+Além disso, descrições complexas de diagramas Mermaid ou fórmulas (LaTeX) também podem ter sua sintaxe precisa gerada dando instruções à IA. Por exemplo, a base dos layouts das fórmulas e diagramas deste artigo também foi acelerada pela escrita em par com um [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/).
 
 ## 6. Conclusão
 

@@ -74,7 +74,7 @@ Voici les complexités temporelles moyennes des algorithmes de tri représentati
 - [Tri](https://kenji.blog/fr/p/sorting-algorithms/) par insertion (Insertion Sort) : $O(N^2)$
 - [Tri](https://kenji.blog/fr/p/sorting-algorithms/) fusion (Merge Sort) : $O(N \log N)$
 - [Tri](https://kenji.blog/fr/p/sorting-algorithms/) rapide (Quick Sort) : $O(N \log N)$
-- [Tri](https://kenji.blog/fr/p/sorting-algorithms/) par tas (Heap Sort) : $O(N \log N)$
+- [Tri](https://kenji.blog/fr/p/sorting-algorithms/) par tas ([Heap](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/) Sort) : $O(N \log N)$
 
 Par exemple, la complexité temporelle $T(N)$ du tri fusion est exprimée par la relation de récurrence suivante, basée sur le paradigme « diviser pour régner » :
 
@@ -162,7 +162,7 @@ Pour évoquer l'enseignement de l'informatique au Japon, il est impossible d'ign
 La plupart des terminaux déployés comme normes du concept GIGA School sont des Chromebooks, des iPads ou des appareils Windows d'entrée de gamme extrêmement bon marché. Leurs spécifications typiques sont les suivantes :
 
 - CPU : Intel Celeron ou processeurs ARM d'entrée de gamme
-- Mémoire (RAM) : 4 Go (À peine suffisant pour faire tourner un OS moderne)
+- Mémoire (RAM) : 4 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) (À peine suffisant pour faire tourner un OS moderne)
 - Stockage (eMMC) : 32 Go à 64 Go (Vitesse d'E/S extrêmement lente)
 
 Avec ces contraintes matérielles dérisoires, il est pratiquement impossible de mettre en place un « environnement de développement local » comme le font quotidiennement les ingénieurs professionnels. Lancer des conteneurs Linux avec [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/), exécuter un IDE lourd comme Visual Studio Code avec toutes ses fonctionnalités, ou démarrer un serveur local Node.js ou Python et installer de lourdes bibliothèques provoque instantanément un épuisement de la mémoire et un gel du système.
@@ -200,7 +200,7 @@ Le dernier défi, et non des moindres, auquel l'enseignement de l'informatique a
 
 Au Royaume-Uni (UK), une matière appelée « Computing » est obligatoire dès l'âge de 5 ans (Key Stage 1) depuis 2014. Leur programme ne se limite pas à une simple « expérience de programmation », mais aborde une informatique académique et systématique très poussée, allant de la conception logique d'algorithmes à la compréhension des circuits logiques via l'algèbre de Boole, la topologie des réseaux et l'architecture matérielle.
 
-Aux États-Unis, il existe un programme standard strict allant de la maternelle à la fin du lycée (K-12), défini par la CSTA (Computer Science Teachers Association). Dans le cours AP (Advanced Placement) Computer Science A, suivi par les lycéens, la programmation orientée objet en Java, le polymorphisme, le traitement récursif, l'implémentation de structures de données et l'évaluation de la complexité algorithmique sont exigés à un niveau élevé, équivalent à la première année d'université. Il n'est plus nécessaire de mentionner la sévérité de l'enseignement STEM en Inde ou en Chine, ni la profondeur de l'élite qui en émerge.
+Aux États-Unis, il existe un programme standard strict allant de la maternelle à la fin du lycée (K-12), défini par la CSTA (Computer Science Teachers Association). Dans le cours AP (Advanced Placement) Computer Science A, suivi par les lycéens, la programmation orientée objet en [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), le polymorphisme, le traitement récursif, l'implémentation de structures de données et l'évaluation de la complexité algorithmique sont exigés à un niveau élevé, équivalent à la première année d'université. Il n'est plus nécessaire de mentionner la sévérité de l'enseignement STEM en Inde ou en Chine, ni la profondeur de l'élite qui en émerge.
 
 ### Le décalage désespérant entre les compétences requises et les compétences enseignées
 
@@ -219,7 +219,7 @@ xychart-beta
 
 Pour combler ce fossé énorme (Death Valley), un changement de paradigme radical de l'enseignement scolaire et des investissements massifs sont nécessaires. Alors qu'il y a une pénurie nationale flagrante de professeurs spécialisés en « Information », le système actuel, où des professeurs de mathématiques, de sciences ou de technologie enseignent la programmation à temps partiel et sans formation suffisante, ne pourra jamais former des ingénieurs de premier plan capables de rivaliser au niveau mondial.
 
-## 9. L'effondrement de la valeur du « codage » à l'ère de l'IA (LLM)
+## 9. L'effondrement de la valeur du « codage » à l'ère de l'IA ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/))
 
 Ce qui complique encore la situation, c'est la prolifération explosive des grands modèles de langage (LLM) comme ChatGPT et des assistants de codage IA comme GitHub Copilot. À une époque où l'IA peut instantanément générer un code parfait à partir d'instructions en langage naturel et rédiger même les codes de test, la valeur marchande d'un simple « codeur (Coder) » qui ne fait que « connaître la syntaxe Python » ou « savoir appeler une API » s'effondre rapidement.
 

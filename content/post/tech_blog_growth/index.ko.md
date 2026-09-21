@@ -18,7 +18,7 @@ description: '데이터와 자동화로 기술 블로그의 트래픽을 극대�
 
 ---
 
-## 1. [엔지니어를 위한](https://kenji.blog/ko/p/[エンジニア向け](https://kenji.blog/ko/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)プロンプトエンジニアリングの基本と開発への応用/) 기술 블로그의 SEO 아키텍처
+## 1. [엔지니어를 위한](https://kenji.blog/ko/p/[エンジニア向け](https://kenji.blog/ko/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)[プロンプトエンジニアリング](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)の基本と開発への応用/) 기술 블로그의 SEO 아키텍처
 
 블로그의 기반이 되는 시스템(정적 사이트 생성기 등)과 HTML 구조는 검색 엔진이 콘텐츠를 올바르게 해석하기 위한 가장 중요한 항목입니다.
 
@@ -64,7 +64,7 @@ Google은 페이지 경험을 랭킹 요소로 채택하고 있으며, 특히 **
 
 ### 1.3 시맨틱 HTML과 문서 구조의 최적화
 
-제목(`h1`~`h6`)의 적절한 중첩은 기본 중의 기본이지만, 기술 블로그에서는 `article`, `section`, `aside`, `nav`와 같은 HTML5의 시맨틱 태그를 정확히 사용하는 것이 요구됩니다. 또한 소스 코드를 나타내는 `<code>`나 `<pre>`, 키보드 입력을 나타내는 `<kbd>`, 변수를 나타내는 `<var>` 등을 적절히 구분해서 사용함으로써 기계가 읽기 쉬운(Machine-readable) HTML을 제공할 수 있습니다. 이는 AI의 콘텐츠 인덱싱(LLM의 학습 데이터 수집이나 RAG 시스템)에 대해서도 매우 효과적인 수단이 됩니다.
+제목(`h1`~`h6`)의 적절한 중첩은 기본 중의 기본이지만, 기술 블로그에서는 `article`, `section`, `aside`, `nav`와 같은 HTML5의 시맨틱 태그를 정확히 사용하는 것이 요구됩니다. 또한 소스 코드를 나타내는 `<code>`나 `<pre>`, 키보드 입력을 나타내는 `<kbd>`, 변수를 나타내는 `<var>` 등을 적절히 구분해서 사용함으로써 기계가 읽기 쉬운(Machine-readable) HTML을 제공할 수 있습니다. 이는 AI의 콘텐츠 인덱싱([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 학습 데이터 수집이나 RAG 시스템)에 대해서도 매우 효과적인 수단이 됩니다.
 
 ---
 

@@ -9,7 +9,7 @@ categories: ["ai", "programming", "api"]
 tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 ---
 
-# परिचय: हमें स्थानीय LLM की आवश्यकता क्यों है?
+# परिचय: हमें स्थानीय [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) की आवश्यकता क्यों है?
 
 बड़े भाषा मॉडल (LLM) के उदय ने हमारे जीवन और विकास के तरीकों में नाटकीय बदलाव लाए हैं। ChatGPT, Claude और Gemini जैसी शक्तिशाली क्लाउड-आधारित AI सेवाएँ हर दिन विकसित हो रही हैं और अत्यधिक उन्नत तर्क क्षमताएँ प्रदान कर रही हैं। हालाँकि, क्लाउड-आधारित LLM हर उपयोग के मामले में सर्वोत्तम नहीं हैं। क्लाउड LLM में निम्नलिखित चुनौतियाँ मौजूद हैं:
 
@@ -18,7 +18,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 3. **लेटेंसी और नेटवर्क पर निर्भरता**: ऑफलाइन वातावरण में उपयोग या एज डिवाइस (edge devices) पर निष्पादन के लिए जहां बहुत कम लेटेंसी की आवश्यकता होती है, नेटवर्क संचार एक बाधा बन जाता है।
 4. **वेंडर लॉक-इन (Vendor [Lock](https://kenji.blog/hi/p/rdbms-transaction-acid-isolation-level-lock/)-in)**: किसी विशिष्ट प्रदाता के मॉडल पर निर्भर रहने से, आपको भविष्य में सेवा की समाप्ति, नियमों में बदलाव, या मॉडल अपडेट के कारण अनपेक्षित व्यवहार परिवर्तनों से प्रभावित होने का जोखिम रहता है।
 
-इन चुनौतियों को हल करने के साधन के रूप में "स्थानीय LLM (Local LLM)" ध्यान आकर्षित कर रहा है। अपने स्वयं के हार्डवेयर पर मॉडल चलाकर, आप बिना किसी बाहरी सर्वर पर डेटा भेजे और बिना किसी मासिक लागत की चिंता किए, स्वतंत्र रूप से AI का उपयोग कर सकते हैं।
+इन चुनौतियों को हल करने के साधन के रूप में "स्थानीय [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) (Local LLM)" ध्यान आकर्षित कर रहा है। अपने स्वयं के हार्डवेयर पर मॉडल चलाकर, आप बिना किसी बाहरी सर्वर पर डेटा भेजे और बिना किसी मासिक लागत की चिंता किए, स्वतंत्र रूप से AI का उपयोग कर सकते हैं।
 
 इस लेख में, हम "**Ollama**" के बारे में विस्तार से बताएंगे, जो एक ऐसा उपकरण है जो आपको आश्चर्यजनक रूप से आसानी से स्थानीय LLM को स्थापित करने, प्रबंधित करने और API के साथ एकीकृत करने की अनुमति देता है। हम इसके मूल सिद्धांतों, आंतरिक वास्तुकला (internal architecture), Python और Node.js का उपयोग करके उन्नत API एकीकरण, और प्रदर्शन ट्यूनिंग (performance tuning) के लिए गणना सूत्रों (formulas) तक सब कुछ कवर करेंगे।
 
@@ -28,13 +28,13 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 Ollama एक ऐसा प्लेटफॉर्म है जो स्थानीय वातावरण में ओपन-सोर्स बड़े भाषा मॉडल (जैसे Llama 3, Phi-3, Mistral, Gemma आदि) को आसानी से चलाने और प्रबंधित करने के लिए उपयोग किया जाता है। पहले, एक स्थानीय LLM वातावरण स्थापित करने के लिए बहुत जटिल प्रक्रियाओं की आवश्यकता होती थी, जैसे Python वातावरण सेट करना, CUDA टूलकिट स्थापित करना, PyTorch की निर्भरता (dependencies) को हल करना, Hugging Face से विशाल मॉडल फाइलें डाउनलोड करना और प्रारूप रूपांतरण (जैसे Safetensors से GGUF) करना।
 
-Ollama इन जटिलताओं को छुपाता है और आपको [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) जैसे उपयोग में आसानी के साथ LLM को संभालने की अनुमति देता है। आप केवल एक कमांड से मॉडल डाउनलोड (`pull`), निष्पादित (`run`), और एक HTTP सर्वर के रूप में शुरू कर सकते हैं।
+Ollama इन जटिलताओं को छुपाता है और आपको [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) जैसे उपयोग में आसानी के साथ [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) को संभालने की अनुमति देता है। आप केवल एक कमांड से मॉडल डाउनलोड (`pull`), निष्पादित (`run`), और एक HTTP सर्वर के रूप में शुरू कर सकते हैं।
 
 ## कोर तकनीक: llama.cpp का रैपर
 
-Ollama के अनुमान इंजन (inference engine) के बैकएंड के रूप में काम करने वाली कोर तकनीक "**llama.cpp**" है, जो C/C++ में लागू एक उच्च गति वाली LLM अनुमान लाइब्रेरी है। llama.cpp में Apple Silicon (Metal), NVIDIA GPU (CUDA), AMD GPU (ROCm), या यहां तक कि केवल CPU वातावरण में हार्डवेयर के प्रदर्शन को अधिकतम करते हुए मॉडल को निष्पादित करने की क्षमता है।
+Ollama के अनुमान इंजन (inference engine) के बैकएंड के रूप में काम करने वाली कोर तकनीक "**llama.cpp**" है, जो C/C++ में लागू एक उच्च गति वाली [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) अनुमान लाइब्रेरी है। llama.cpp में Apple Silicon (Metal), NVIDIA GPU (CUDA), AMD GPU (ROCm), या यहां तक कि केवल CPU वातावरण में हार्डवेयर के प्रदर्शन को अधिकतम करते हुए मॉडल को निष्पादित करने की क्षमता है।
 
-Ollama में llama.cpp शामिल है और यह एक ऐसी वास्तुकला को अपनाता है जहां Go भाषा में लिखा गया एक सर्वर प्रक्रिया [REST API](https://kenji.blog/hi/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/hi/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) प्रदान करता है और बैकग्राउंड में llama.cpp अनुमान इंजन को कॉल करता है।
+Ollama में llama.cpp शामिल है और यह एक ऐसी वास्तुकला को अपनाता है जहां [Go](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) भाषा में लिखा गया एक सर्वर प्रक्रिया [REST API](https://kenji.blog/hi/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/hi/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) प्रदान करता है और बैकग्राउंड में llama.cpp अनुमान इंजन को कॉल करता है।
 
 नीचे दिया गया Mermaid आरेख Ollama की समग्र वास्तुकला को दर्शाता है।
 
@@ -118,7 +118,7 @@ Ollama की मॉडल लाइब्रेरी में, आप `मॉ
 
 ### परिमाणीकरण (Quantization) क्या है?
 
-आइए परिमाणीकरण के बारे में थोड़ा बात करते हैं। एक सामान्य LLM में एक वजन (weight) पैरामीटर 16-बिट फ्लोटिंग पॉइंट (FP16) आदि के रूप में रखा जाता है। 8 बिलियन (8B) पैरामीटर मॉडल के लिए, अकेले वजन लगभग 16GB VRAM की खपत करेगा। परिमाणीकरण वह तकनीक है जो इसे 4-बिट (Q4) या 8-बिट (Q8) पूर्णांक प्रकार (integer type) में संपीड़ित करती है।
+आइए परिमाणीकरण के बारे में थोड़ा बात करते हैं। एक सामान्य [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) में एक वजन (weight) पैरामीटर 16-बिट फ्लोटिंग पॉइंट (FP16) आदि के रूप में रखा जाता है। 8 बिलियन (8B) पैरामीटर मॉडल के लिए, अकेले वजन लगभग 16GB VRAM की खपत करेगा। परिमाणीकरण वह तकनीक है जो इसे 4-बिट (Q4) या 8-बिट (Q8) पूर्णांक प्रकार (integer type) में संपीड़ित करती है।
 
 परिमाणीकरण मॉडल सटीकता के क्षरण (degradation) को कम करते हुए आवश्यक मेमोरी की मात्रा और मेमोरी बैंडविड्थ को नाटकीय रूप से कम कर सकता है। Ollama द्वारा वितरित मॉडल डिफ़ॉल्ट रूप से GGUF प्रारूप में हैं जो इष्टतम रूप से परिमाणित (अक्सर 4-बिट) होते हैं।
 
@@ -239,7 +239,7 @@ curl -X POST http://localhost:11434/api/generate -d '{
 
 ## /api/chat का उपयोग करके वार्तालाप (chat) जनरेट करना
 
-चूंकि हाल ही के LLM को चैट प्रारूप में फाइन-ट्यून किया गया है, इसलिए एप्लिकेशन विकास के लिए `/api/chat` की अनुशंसा की जाती है।
+चूंकि हाल ही के [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) को चैट प्रारूप में फाइन-ट्यून किया गया है, इसलिए एप्लिकेशन विकास के लिए `/api/chat` की अनुशंसा की जाती है।
 
 ```bash
 curl -X POST http://localhost:11434/api/chat -d '{
@@ -341,7 +341,7 @@ print(response)
 
 # Node.js एप्लिकेशन के साथ एकीकरण
 
-फ्रंट-एंड इंजीनियरों और फुल-स्टैक डेवलपर्स के लिए, TypeScript/Node.js वातावरण से स्थानीय LLM को कॉल करने में सक्षम होना एक बड़ा फायदा है। हम आधिकारिक `ollama` NPM पैकेज का उपयोग करेंगे।
+फ्रंट-एंड इंजीनियरों और फुल-स्टैक डेवलपर्स के लिए, TypeScript/Node.js वातावरण से स्थानीय [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) को कॉल करने में सक्षम होना एक बड़ा फायदा है। हम आधिकारिक `ollama` NPM पैकेज का उपयोग करेंगे।
 
 ## स्थापना
 
@@ -421,7 +421,7 @@ app.listen(3000, () => {
 
 # प्रदर्शन मेट्रिक्स और गणितीय विश्लेषण
 
-व्यावहारिक स्तर पर स्थानीय LLM प्रदान करने के लिए लेटेंसी और थ्रूपुट का विश्लेषण आवश्यक है। Ollama की API प्रतिक्रियाओं में प्रदर्शन से संबंधित विस्तृत मेट्रिक्स शामिल होते हैं।
+व्यावहारिक स्तर पर स्थानीय [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) प्रदान करने के लिए लेटेंसी और थ्रूपुट का विश्लेषण आवश्यक है। Ollama की API प्रतिक्रियाओं में प्रदर्शन से संबंधित विस्तृत मेट्रिक्स शामिल होते हैं।
 
 ## टोकन जनरेशन गति गणना मॉडल
 
@@ -474,7 +474,7 @@ $$
 $$
 M_{model} = \frac{8,000 \times 4}{8 \times 1024} = \frac{32,000}{8192} \approx 3.9 \text{ GB}
 $$
-यदि आप इसमें कॉन्टेक्स्ट मेमोरी जोड़ते हैं, तो आप देख सकते हैं कि यदि आपके पास लगभग 5GB से 6GB VRAM है, तो आप GPU पर मॉडल को पूरी तरह से तैनात (Full Offload) कर सकते हैं। यहां तक कि हाल ही के मिड-रेंज GPU (जैसे RTX 4060) जिनमें 8GB VRAM है, वे एक शक्तिशाली LLM चलाने में सक्षम हैं।
+यदि आप इसमें कॉन्टेक्स्ट मेमोरी जोड़ते हैं, तो आप देख सकते हैं कि यदि आपके पास लगभग 5GB से 6GB VRAM है, तो आप GPU पर मॉडल को पूरी तरह से तैनात (Full Offload) कर सकते हैं। यहां तक कि हाल ही के मिड-रेंज GPU (जैसे RTX 4060) जिनमें 8GB VRAM है, वे एक शक्तिशाली [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) चलाने में सक्षम हैं।
 
 ---
 
@@ -493,9 +493,9 @@ Python या शेल स्क्रिप्ट्स में Ollama क�
 
 ## निष्कर्ष
 
-Ollama के आगमन से, स्थानीय LLM स्थापित करने की बाधा बहुत कम हो गई है। [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) कंटेनरों को प्रबंधित करने जैसी सरल कमांड प्रणाली और एक [REST API](https://kenji.blog/hi/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/hi/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) जो बाहरी अनुप्रयोगों से आसानी से उपयोग की जा सकती है, इसका संयोजन स्थानीय AI विकास में वर्तमान वास्तविक मानक (de facto standard) माना जा सकता है।
+Ollama के आगमन से, स्थानीय [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) स्थापित करने की बाधा बहुत कम हो गई है। [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) कंटेनरों को प्रबंधित करने जैसी सरल कमांड प्रणाली और एक [REST API](https://kenji.blog/hi/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/hi/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) जो बाहरी अनुप्रयोगों से आसानी से उपयोग की जा सकती है, इसका संयोजन स्थानीय AI विकास में वर्तमान वास्तविक मानक (de facto standard) माना जा सकता है।
 
-क्लाउड LLM की लागत और सुरक्षा बाधाओं से जूझ रहे डेवलपर्स के लिए, मैं आपको इस लेख में दिए गए चरणों का उपयोग करके Ollama के साथ एक स्थानीय LLM वातावरण बनाने और इसे अपने एप्लिकेशन में एकीकृत करने के लिए प्रोत्साहित करता हूँ। आप निश्चित रूप से AI की संभावनाओं को अधिक स्वतंत्र रूप से और अपने करीब महसूस कर पाएंगे।
+क्लाउड [LLM](https://kenji.blog/hi/p/large-language-models-llm-transformer-prompt-engineering/) की लागत और सुरक्षा बाधाओं से जूझ रहे डेवलपर्स के लिए, मैं आपको इस लेख में दिए गए चरणों का उपयोग करके Ollama के साथ एक स्थानीय LLM वातावरण बनाने और इसे अपने एप्लिकेशन में एकीकृत करने के लिए प्रोत्साहित करता हूँ। आप निश्चित रूप से AI की संभावनाओं को अधिक स्वतंत्र रूप से और अपने करीब महसूस कर पाएंगे।
 
 
 

@@ -110,7 +110,7 @@ const main = async () => {
 main();
 ```
 
-ميزة حلقة الحدث هي أن إدارة القفل ([Lock](https://kenji.blog/ar/p/rdbms-transaction-acid-isolation-level-lock/)) للحالة المشتركة غير مطلوبة. ومع ذلك، إذا تم تنفيذ معالجة ثقيلة مرتبطة بوحدة المعالجة المركزية (CPU-bound) في Call Stack، فسيتم حظر حلقة الحدث بالكامل، وهناك خطر توقف النظام (حظر حلقة الحدث). يجب قصرها على العمليات الخفيفة بتعقيد زمني من $ O(1) $ إلى $ O(N) $.
+ميزة حلقة الحدث هي أن إدارة القفل ([Lock](https://kenji.blog/ar/p/rdbms-transaction-acid-isolation-level-lock/)) للحالة المشتركة غير مطلوبة. ومع ذلك، إذا تم تنفيذ معالجة ثقيلة مرتبطة بوحدة المعالجة المركزية (CPU-bound) في Call [Stack](https://kenji.blog/ar/p/c-language-pointers-memory-management-stack-heap/)، فسيتم حظر حلقة الحدث بالكامل، وهناك خطر توقف النظام (حظر حلقة الحدث). يجب قصرها على العمليات الخفيفة بتعقيد زمني من $ O(1) $ إلى $ O(N) $.
 
 ---
 
@@ -141,7 +141,7 @@ flowchart LR
 
 ### 3.2 مثال لتنفيذ الفاعل باستخدام [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)
 
-في Rust، وهي لغة برمجة أنظمة، يمكن بناء نموذج الفاعل باستخدام حزم (Crates) قوية للمعالجة غير المتزامنة مثل `tokio` و `actix`. نعرض هنا تطبيقًا لنمط فاعل بسيط باستخدام قناة `mpsc` (منتجين متعددين، مستهلك واحد).
+في [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)، وهي لغة برمجة أنظمة، يمكن بناء نموذج الفاعل باستخدام حزم (Crates) قوية للمعالجة غير المتزامنة مثل `tokio` و `actix`. نعرض هنا تطبيقًا لنمط فاعل بسيط باستخدام قناة `mpsc` (منتجين متعددين، مستهلك واحد).
 
 ```rust
 use std::sync::Arc;

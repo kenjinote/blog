@@ -12,7 +12,7 @@ description: 'LLMs locales que puedes usar gratis mientras proteges tu privacida
 
 # Introducción
 
-En los últimos años, la evolución tecnológica de los grandes modelos de lenguaje (LLM) ha sido notable, y los servicios de IA basados en la nube, como ChatGPT y Claude, se han generalizado. Sin embargo, al mismo tiempo, ha aumentado rápidamente la necesidad de "no enviar datos confidenciales de la empresa a servidores externos", "reducir los costos de uso de la API" y "construir un sistema de IA que funcione de manera completamente fuera de línea".
+En los últimos años, la evolución tecnológica de los grandes modelos de lenguaje ([LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/)) ha sido notable, y los servicios de IA basados en la nube, como ChatGPT y Claude, se han generalizado. Sin embargo, al mismo tiempo, ha aumentado rápidamente la necesidad de "no enviar datos confidenciales de la empresa a servidores externos", "reducir los costos de uso de la API" y "construir un sistema de IA que funcione de manera completamente fuera de línea".
 
 La respuesta a estas demandas es el "LLM local (LLM de código abierto)", que se puede descargar y ejecutar directamente en tu propia PC o servidor interno. Hasta alrededor de 2023, era difícil lograr una precisión práctica de forma local, pero gracias a la evolución de la arquitectura de los modelos y al desarrollo de la tecnología de cuantización (Quantization), ahora es posible ejecutar LLM de muy alto rendimiento de manera fluida incluso en GPU de consumo (como NVIDIA RTX 3090 / 4090 o Mac con Apple Silicon).
 
@@ -83,7 +83,7 @@ Desarrollada por Meta, la serie "Llama 3" se ha convertido en el estándar de fa
 
 ### Evolución de la arquitectura y características
 
-Aunque Llama 3 adopta una arquitectura estándar de Transformer, incluye numerosas mejoras técnicas respecto a su generación anterior (Llama 2). Cabe destacar los siguientes puntos:
+Aunque Llama 3 adopta una arquitectura estándar de [Transformer](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/), incluye numerosas mejoras técnicas respecto a su generación anterior (Llama 2). Cabe destacar los siguientes puntos:
 
 - **Adopción estándar de GQA (Grouped Query Attention)**: GQA, que solo se utilizó en modelos a gran escala en Llama 2, ahora también se adopta en modelos pequeños como el de 8B en Llama 3. Esto reduce drásticamente el uso de memoria de la caché KV y permite una inferencia rápida incluso con contextos largos.
 - **Ampliación del tamaño del vocabulario**: El tamaño del vocabulario del tokenizador (basado en Tiktoken) se ha ampliado a 128.000 tokens, mejorando dramáticamente la eficiencia de compresión en múltiples idiomas y códigos de programación. La eficiencia del procesamiento del japonés y otros idiomas también ha mejorado varias veces en comparación con Llama 2.
@@ -117,7 +117,7 @@ Los modelos proporcionados por "Mistral AI", una startup de IA francesa, han imp
 
 ### Cómo funciona MoE (Mixture of Experts)
 
-"Mixtral 8x7B" adoptó a gran escala la arquitectura **MoE (Mixture of Experts)** por primera vez en un LLM de código abierto, logrando un éxito rotundo.
+"Mixtral 8x7B" adoptó a gran escala la arquitectura **MoE (Mixture of Experts)** por primera vez en un [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) de código abierto, logrando un éxito rotundo.
 MoE es un mecanismo en el que el modelo completo (aproximadamente 47 mil millones de parámetros) cuenta con 8 "redes de expertos (Expert)" y, para cada token introducido, selecciona dinámicamente (enruta) solo los 2 expertos óptimos para ejecutar.
 
 ```mermaid
@@ -147,7 +147,7 @@ La serie "Gemma" son modelos abiertos desarrollados por Google aprovechando la t
 
 ### Diseño de arquitectura único
 
-Gemma 2 adopta algunos diseños únicos que lo diferencian de otros LLM.
+Gemma 2 adopta algunos diseños únicos que lo diferencian de otros [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/).
 
 - **Logit Soft-capping**: Una técnica que evita la generación de valores logit inusualmente grandes, mejorando la estabilidad del entrenamiento y la inferencia.
 - **Híbrido de Sliding Window Attention (SWA) y Local Attention**: En lugar de utilizar Full Attention en todas las capas, alterna capas que observan solo el contexto local con capas que observan el contexto completo.
@@ -230,7 +230,7 @@ xychart-beta
 
 ## Cálculo teórico de la velocidad de inferencia (Tokens/sec)
 
-La velocidad de inferencia de un LLM local depende en gran medida del "Ancho de banda de la memoria (Memory Bandwidth)" de la GPU. En la fase de generación (decodificación), es necesario leer todos los pesos del modelo de la memoria para cada token generado. Esto es un proceso limitado por la memoria (Memory-bound) y no por el cálculo (Compute-bound).
+La velocidad de inferencia de un [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) local depende en gran medida del "Ancho de banda de la memoria (Memory Bandwidth)" de la GPU. En la fase de generación (decodificación), es necesario leer todos los pesos del modelo de la memoria para cada token generado. Esto es un proceso limitado por la memoria (Memory-bound) y no por el cálculo (Compute-bound).
 
 La velocidad máxima teórica de inferencia $T$ (Tokens/sec) se calcula con la siguiente fórmula:
 
@@ -265,7 +265,7 @@ Además, dado que Ollama funciona como un servidor de API REST en segundo plano,
 Una aplicación recomendada para aquellos que desean operar intuitivamente en una interfaz gráfica (GUI). Permite buscar y descargar a través de la aplicación desde la enorme lista de modelos GGUF en Hugging Face, y puedes disfrutar de conversaciones en una pantalla de chat similar a ChatGPT. Es muy conveniente la función que te indica visualmente qué modelo cabe en la RAM/VRAM de tu PC.
 
 ### 3. llama.cpp
-El iniciador del auge de los LLM locales, y la biblioteca base implementada en C/C++ en la que todos se apoyan. Está dirigida a ingenieros que quieran ajustar al máximo el rendimiento y a hackers que quieran integrarla en sus propios scripts. Aprovecha al límite el potencial de cualquier hardware, desde Metal de Apple, CUDA de NVIDIA y ROCm de AMD, hasta el conjunto de instrucciones AVX de Intel.
+El iniciador del auge de los [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) locales, y la biblioteca base implementada en C/C++ en la que todos se apoyan. Está dirigida a ingenieros que quieran ajustar al máximo el rendimiento y a hackers que quieran integrarla en sus propios scripts. Aprovecha al límite el potencial de cualquier hardware, desde Metal de Apple, CUDA de NVIDIA y ROCm de AMD, hasta el conjunto de instrucciones AVX de Intel.
 
 ---
 
@@ -279,7 +279,7 @@ En este artículo, presentamos 5 de los mejores LLM locales de código abierto d
 4. **Si tu objetivo es una salida natural en varios idiomas y un soporte avanzado de programación**: `Qwen 2.5`
 5. **Para smartphones, PC de baja potencia o procesamiento ultraligero en segundo plano**: `Phi-3 / Phi-3.5`
 
-La velocidad de evolución de los LLM de código abierto es tremenda, y cada pocos meses se anuncian grandes avances que cambian lo que antes era de sentido común. En el futuro, con más mejoras en la tecnología de cuantización y la aparición de nuevas arquitecturas, es posible que no esté lejos el día en que los entornos locales superen por sí solos a la IA en la nube.
+La velocidad de evolución de los [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) de código abierto es tremenda, y cada pocos meses se anuncian grandes avances que cambian lo que antes era de sentido común. En el futuro, con más mejoras en la tecnología de cuantización y la aparición de nuevas arquitecturas, es posible que no esté lejos el día en que los entornos locales superen por sí solos a la IA en la nube.
 Te invitamos a descargar el modelo que mejor se adapte a tu entorno de hardware y experimentar la abrumadora libertad y el potencial de la IA local.
 
 

@@ -147,7 +147,7 @@ Cependant, le moyen de réaliser ce souhait ne doit pas être « l'exclusion de 
 
 1. **Débat basé sur les faits :** Saisir la réalité sur la base des statistiques primaires des agences gouvernementales, sans se laisser influencer par des rumeurs ou des informations exagérées.
 2. **Établissement de règles justes :** Obliger les étrangers à respecter les règles du Japon, tandis que la société japonaise les traite comme des partenaires équitables.
-3. **Mise à jour intérieure :** Transformer notre perception pour ne plus considérer l'accueil des étrangers comme « la perte du Japon », mais comme « la reconstruction et le maintien du Japon » avec leur aide.
+3. **Mise à jour intérieure :** [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) notre perception pour ne plus considérer l'accueil des étrangers comme « la perte du Japon », mais comme « la reconstruction et le maintien du Japon » avec leur aide.
 
 En 2026, nous nous trouvons à un carrefour important. Allons-nous continuer à crier des mots de division et à nous étrangler nous-mêmes ? Ou allons-nous regarder la réalité en face et faire un pas vers un « Japon durable » où des personnes diverses se soutiennent mutuellement ?
 

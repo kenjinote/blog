@@ -78,7 +78,7 @@ Au départ, AWS Lambda utilisait des conteneurs Linux (technologie similaire à 
 
 ### 3.1. Qu'est-ce que Firecracker ?
 
-Firecracker est un moniteur de machine virtuelle (VMM) qui utilise KVM (Kernel-based Virtual Machine) pour lancer des « micro-VM » (MicroVM) légères en quelques millisecondes. Écrit en langage Rust, il permet un démarrage extrêmement rapide et une faible surcharge de mémoire par rapport aux machines virtuelles traditionnelles (comme QEMU), en supprimant radicalement les modèles de périphériques inutiles.
+Firecracker est un moniteur de machine virtuelle (VMM) qui utilise KVM (Kernel-based Virtual Machine) pour lancer des « micro-VM » (MicroVM) légères en quelques millisecondes. Écrit en langage [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), il permet un démarrage extrêmement rapide et une faible surcharge de mémoire par rapport aux machines virtuelles traditionnelles (comme QEMU), en supprimant radicalement les modèles de périphériques inutiles.
 
 ```mermaid
 graph TD
@@ -143,7 +143,7 @@ Le temps nécessaire au démarrage à froid se divise principalement en **initia
 
 1. **Téléchargement et décompression du code** : Le package de déploiement est téléchargé depuis S3 et déployé dans l'environnement. Le temps requis est proportionnel à la taille du package (quantité de bibliothèques dépendantes).
 2. **Démarrage de la MicroVM** : Firecracker démarre. Cette étape est extrêmement rapide (de l'ordre de la milliseconde) grâce à l'optimisation côté AWS.
-3. **Initialisation de l'environnement d'exécution** : Des processus tels que Node.js, Python, Java démarrent. Les langages qui effectuent une compilation JIT (Just-In-Time), comme Java et C#, consomment beaucoup de temps ici.
+3. **Initialisation de l'environnement d'exécution** : Des processus tels que Node.js, Python, [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) démarrent. Les langages qui effectuent une compilation JIT (Just-In-Time), comme Java et C#, consomment beaucoup de temps ici.
 4. **Initialisation de la fonction (phase Init)** : La portée globale du code (à l'extérieur de la fonction de gestion) est évaluée. Si l'on crée un pool de connexions à une base de données ou si l'on initialise un SDK lourd à ce stade, le temps d'initialisation se prolonge.
 
 ### 4.2. Le démarrage à froid du point de vue de la théorie des probabilités
@@ -167,7 +167,7 @@ Le démarrage à froid est le destin du sans serveur, mais il est possible de mi
 
 La vitesse du démarrage à froid varie considérablement selon le langage.
 
-- **Le groupe le plus rapide** : Langages compilés AOT (Ahead-Of-Time) tels que Go, Rust, C++, ainsi que les langages de script légers (Python, Node.js). Leurs démarrages à froid restent souvent inférieurs à quelques centaines de millisecondes.
+- **Le groupe le plus rapide** : Langages compilés AOT (Ahead-Of-Time) tels que [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), C++, ainsi que les langages de script légers (Python, Node.js). Leurs démarrages à froid restent souvent inférieurs à quelques centaines de millisecondes.
 - **Le groupe lent** : Java, C# (.NET). En raison du démarrage de la JVM ou du CLR, et de la surcharge de la compilation JIT, des démarrages à froid de plusieurs secondes à plus de dix secondes peuvent se produire.
 
 L'utilisation de **LLRT (Low Latency Runtime)**, un environnement d'exécution JavaScript léger expérimental fourni par AWS, suscite également l'intérêt en tant qu'approche pour réduire davantage la vitesse de démarrage de Node.js.
@@ -210,7 +210,7 @@ Cependant, il y a un dilemme (compromis) : des coûts sont encourus même pendan
 
 ## 6. L'innovateur : AWS Lambda SnapStart
 
-**AWS Lambda SnapStart** est apparu comme le sauveur des langages à démarrage lent comme Java. Il s'agit d'une technologie révolutionnaire qui crée un instantané (snapshot) de l'état de la machine virtuelle et le restaure lors d'un démarrage à froid.
+**AWS Lambda SnapStart** est apparu comme le sauveur des langages à démarrage lent comme [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/). Il s'agit d'une technologie révolutionnaire qui crée un instantané (snapshot) de l'état de la machine virtuelle et le restaure lors d'un démarrage à froid.
 
 En arrière-plan, cette technologie utilise **CRaU** (Checkpoint/Restore in Userspace) ainsi que la fonction d'instantané de la MicroVM Firecracker.
 
@@ -253,7 +253,7 @@ sequenceDiagram
 
 ### 6.2. Avantages et précautions concernant SnapStart
 
-En activant SnapStart, le temps de démarrage à froid des fonctions Java est accéléré jusqu'à **10 fois plus** (ou plus). Cela s'explique par le fait que le lancement de l'environnement d'exécution, la compilation JIT et l'initialisation de frameworks lourds comme Spring Boot sont avancés au moment du « déploiement ».
+En activant SnapStart, le temps de démarrage à froid des fonctions [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) est accéléré jusqu'à **10 fois plus** (ou plus). Cela s'explique par le fait que le lancement de l'environnement d'exécution, la compilation JIT et l'initialisation de frameworks lourds comme Spring Boot sont avancés au moment du « déploiement ».
 
 Cependant, il y a quelques précautions à prendre.
 

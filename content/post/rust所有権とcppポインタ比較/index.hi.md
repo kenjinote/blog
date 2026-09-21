@@ -10,13 +10,13 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'C++ पॉइंटर्स और Rust के स्वामित्व/उधार मॉडल की गहन तुलना। हम रॉ पॉइंटर्स और स्मार्ट पॉइंटर्स से लेकर बरो चेकर तक, मेमोरी सुरक्षा के सार की व्याख्या करते हैं।'
 ---
 
-आधुनिक सिस्टम प्रोग्रामिंग में, प्रदर्शन और मेमोरी सुरक्षा को संतुलित करना एक शाश्वत चुनौती है। C++ लंबे समय से इस क्षेत्र का राजा रहा है, लेकिन हाल के वर्षों में [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) इसकी स्थिति के लिए खतरा बन रहा है। Rust की सबसे बड़ी विशेषता "स्वामित्व" (Ownership) और "उधार" (Borrowing) की अवधारणा है, जो बिना कचरा संग्रहण ([Garbage Collection](https://kenji.blog/hi/p/memory-management-garbage-collection/) या GC) के संकलन के समय (compile time) मेमोरी सुरक्षा की गारंटी देती है।
+आधुनिक सिस्टम प्रोग्रामिंग में, प्रदर्शन और मेमोरी सुरक्षा को संतुलित करना एक शाश्वत चुनौती है। C++ लंबे समय से इस क्षेत्र का राजा रहा है, लेकिन हाल के वर्षों में [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) इसकी स्थिति के लिए खतरा बन रहा है। [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) की सबसे बड़ी विशेषता "स्वामित्व" (Ownership) और "उधार" (Borrowing) की अवधारणा है, जो बिना कचरा संग्रहण ([Garbage Collection](https://kenji.blog/hi/p/memory-management-garbage-collection/) या GC) के संकलन के समय (compile time) मेमोरी सुरक्षा की गारंटी देती है।
 
-इस लेख में, हम C++ के पॉइंटर्स (raw pointers, `std::unique_ptr`, `std::shared_ptr`) और [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) के स्वामित्व मॉडल की विस्तार से तुलना करेंगे। हम कोड उदाहरणों और आरेखों के साथ गहराई से बताएंगे कि Rust का कंपाइलर (बरो चेकर) यूज़-आफ्टर-फ्री (Use-After-Free) और डेटा रेस (Data Race) को कैसे रोकता है।
+इस लेख में, हम C++ के पॉइंटर्स (raw pointers, `std::unique_ptr`, `std::shared_ptr`) और [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) के स्वामित्व मॉडल की विस्तार से तुलना करेंगे। हम कोड उदाहरणों और आरेखों के साथ गहराई से बताएंगे कि [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) का कंपाइलर (बरो चेकर) यूज़-आफ्टर-फ्री (Use-After-Free) और डेटा रेस (Data Race) को कैसे रोकता है।
 
 ## 1. मेमोरी प्रबंधन के मूल तत्व: स्टैक और हीप
 
-मेमोरी प्रबंधन की मूल बातें समझने के लिए, आइए पहले देखें कि कोई प्रोग्राम मेमोरी का उपयोग कैसे करता है। मेमोरी क्षेत्र को मोटे तौर पर "स्टैक" (Stack) और "हीप" (Heap) में वर्गीकृत किया जाता है।
+मेमोरी प्रबंधन की मूल बातें समझने के लिए, आइए पहले देखें कि कोई प्रोग्राम मेमोरी का उपयोग कैसे करता है। मेमोरी क्षेत्र को मोटे तौर पर "स्टैक" ([Stack](https://kenji.blog/hi/p/c-language-pointers-memory-management-stack-heap/)) और "हीप" ([Heap](https://kenji.blog/hi/p/c-language-pointers-memory-management-stack-heap/)) में वर्गीकृत किया जाता है।
 
 ### स्टैक (Stack)
 यह वह क्षेत्र है जहाँ फ़ंक्शन कॉल के दौरान स्थानीय चर आदि जमा किए जाते हैं। इसकी LIFO (लास्ट-इन, फर्स्ट-आउट) संरचना है, और मेमोरी आवंटन/मुक्ति (allocation/deallocation) बहुत तेज़ है। इसमें केवल वह डेटा रखा जाता है जिसका आकार संकलन के समय (compile time) निर्धारित किया जा सकता है।
@@ -44,12 +44,12 @@ graph TD
 
 आइए C++ में मेमोरी प्रबंधन के विकास पर एक नज़र डालें।
 
-### रॉ पॉइंटर्स (Raw Pointers) का युग और समस्याएं
+### रॉ पॉइंटर्स (Raw [Pointer](https://kenji.blog/hi/p/c-language-pointers-memory-management-stack-heap/)s) का युग और समस्याएं
 
 C भाषा से विरासत में मिले रॉ पॉइंटर्स (`*`) परम स्वतंत्रता प्रदान करते हैं, लेकिन साथ ही वे निम्नलिखित गंभीर बग्स का कारण भी बनते हैं:
 
 - **मेमोरी लीक (Memory Leak)**: `new` के साथ आवंटित मेमोरी को `delete` करना भूल जाना।
-- **डैंगलिंग पॉइंटर (Dangling Pointer)**: मेमोरी मुक्त होने (`delete`) के बाद पॉइंटर को एक्सेस करना।
+- **डैंगलिंग पॉइंटर (Dangling [Pointer](https://kenji.blog/hi/p/c-language-pointers-memory-management-stack-heap/))**: मेमोरी मुक्त होने (`delete`) के बाद पॉइंटर को एक्सेस करना।
 - **डबल फ्री (Double Free)**: एक ही मेमोरी क्षेत्र को दो बार `delete` करना।
 
 ```cpp
@@ -93,13 +93,13 @@ void uniquePtrExample() {
 
 ## 3. [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) का स्वामित्व (Ownership): एक आदर्श बदलाव (Paradigm Shift)
 
-Rust ने C++ के `std::unique_ptr` की अवधारणा को अपनी भाषा विनिर्देशन के मूल में रखा है और इसका एक सख्त "स्वामित्व मॉडल" है।
+[Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) ने C++ के `std::unique_ptr` की अवधारणा को अपनी भाषा विनिर्देशन के मूल में रखा है और इसका एक सख्त "स्वामित्व मॉडल" है।
 
 ### स्वामित्व के 3 नियम
 
 [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) का स्वामित्व सिस्टम निम्नलिखित तीन अत्यंत सरल नियमों पर आधारित है:
 
-1. **Rust में प्रत्येक मूल्य (value) का एक चर (variable) होता है जिसे उसका स्वामी (owner) कहा जाता है।**
+1. **[Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) में प्रत्येक मूल्य (value) का एक चर (variable) होता है जिसे उसका स्वामी (owner) कहा जाता है।**
 2. **एक समय में केवल एक ही स्वामी हो सकता है।**
 3. **जब स्वामी दायरे (scope) से बाहर हो जाता है, मूल्य नष्ट हो जाता है।**
 
@@ -197,7 +197,7 @@ int main() {
 
 ### [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) का संकलन-समय बचाव
 
-आइए ठीक इसी तर्क को Rust में लिखें।
+आइए ठीक इसी तर्क को [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) में लिखें।
 
 ```rust
 // Rust: संकलन समय पर इटरेटर अमान्यकरण को रोकना
@@ -275,7 +275,7 @@ fn main() {
 
 C++ पॉइंटर्स और स्मार्ट पॉइंटर्स डेवलपर्स को उच्च स्तर का नियंत्रण और प्रदर्शन प्रदान करते हैं, लेकिन उनका सही उपयोग डेवलपर्स के अनुशासन पर निर्भर करता है। RAII और `std::unique_ptr` की शुरुआत ने C++ को नाटकीय रूप से सुरक्षित बना दिया है, लेकिन यह अभी भी "अपरिभाषित व्यवहार" (undefined behavior) जैसे कि मूव के बाद एक्सेस या इटरेटर अमान्यकरण को भाषा स्तर पर पूरी तरह से नहीं रोक सकता है।
 
-दूसरी ओर, [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) कंपाइलर में स्वामित्व (Ownership) और उधार (Borrowing) के नियमों को शामिल करके रनटाइम के बजाय **संकलन समय (compile time)** पर इन त्रुटियों का पता लगाता है। "यदि यह संकलित होता है, तो यह मेमोरी सुरक्षित है" की यह मजबूत गारंटी सबसे बड़ा कारण है कि Rust सिस्टम प्रोग्रामिंग में तेजी से समर्थन प्राप्त कर रहा है।
+दूसरी ओर, [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) कंपाइलर में स्वामित्व (Ownership) और उधार (Borrowing) के नियमों को शामिल करके रनटाइम के बजाय **संकलन समय (compile time)** पर इन त्रुटियों का पता लगाता है। "यदि यह संकलित होता है, तो यह मेमोरी सुरक्षित है" की यह मजबूत गारंटी सबसे बड़ा कारण है कि [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) सिस्टम प्रोग्रामिंग में तेजी से समर्थन प्राप्त कर रहा है।
 
 Rust के बरो चेकर से लड़ना (Fight the borrow checker) शुरुआती लोगों के लिए एक बड़ी बाधा हो सकती है, लेकिन यह केवल कंपाइलर द्वारा "पॉइंटर के जीवनकाल को ट्रैक करने" की जटिल गणना को सख्ती से करने के लिए है, जो मूल रूप से C++ प्रोग्रामर्स को अपने दिमाग में करना पड़ता था।
 

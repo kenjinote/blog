@@ -9,7 +9,7 @@ categories: ["ai", "llm", "windows"]
 tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 ---
 
-# 1. 引言：为什么现在要在Windows上运行本地LLM？
+# 1. 引言：为什么现在要在Windows上运行本地[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)？
 
 2026年现在，生成式AI和大型语言模型（LLM）的发展正经历着一场巨大的范式转变，从云端庞大的API服务，转向在个人PC和本地（On-premises）环境中运行的“本地LLM”。虽然OpenAI的GPT-5和Anthropic的Claude 3.5等云端AI非常强大，但企业和个人并不能将所有数据都发送到云端。出于隐私、安全、延迟以及长期和可持续成本的考虑，对本地LLM的需求正在呈现前所未有的爆发式增长。
 
@@ -63,7 +63,7 @@ wsl --update
 
 ---
 
-# 3. 本地LLM的架构与推理机制
+# 3. 本地[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的架构与推理机制
 
 了解模型在本地环境中是如何生成文本的内部结构，对于故障排除和优化非常有用。
 
@@ -91,7 +91,7 @@ graph TD
 
 ## 3.1 两个阶段：Prefill 与 Decode
 
-LLM的文本生成分为计算特性不同的两个阶段。
+[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的文本生成分为计算特性不同的两个阶段。
 
 1. **Prefill（提示词处理）阶段**: 这是一个一次性处理和理解输入的完整提示词（Prompt）的阶段。由于可以进行并行计算，GPU的计算能力（FLOPS）直接影响速度。如果提示词很长，此阶段可能需要几秒钟的时间。
 2. **Decode（Token生成）阶段**: 这是一个逐个预测Token，并将其作为下一次输入的（自回归）阶段。在这个阶段并行计算受到限制，因此GPU的VRAM带宽（Memory Bandwidth）成为了决定性的瓶颈。
@@ -273,7 +273,7 @@ graph LR
     LocalLLM --> Answer["最终回答"]
 ```
 
-使用AnythingLLM桌面版（Windows），只需在设置界面中指定Ollama（用于LLM和Embedding），并设置为使用本地VectorDB（LanceDB），几分钟内就能完成这个架构的搭建。一个完全不向外部发送任何数据的私有AI就此诞生。
+使用AnythingLLM桌面版（Windows），只需在设置界面中指定Ollama（用于[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)和Embedding），并设置为使用本地VectorDB（LanceDB），几分钟内就能完成这个架构的搭建。一个完全不向外部发送任何数据的私有AI就此诞生。
 
 ---
 
@@ -314,7 +314,7 @@ Unsloth将CUDA内核优化到了极致，与标准的Hugging Face库相比，训
 
 # 10. 总结与未来展望
 
-在2026年，在Windows环境中构建本地LLM已经不再是少数工程师的特权。随着GGUF格式成为事实上的标准、Ollama和LM Studio等完善生态系统的出现，以及以FlashAttention为首的硬件优化，任何人都可以轻松获得企业级的AI环境。
+在2026年，在Windows环境中构建本地[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)已经不再是少数工程师的特权。随着GGUF格式成为事实上的标准、Ollama和LM Studio等完善生态系统的出现，以及以FlashAttention为首的硬件优化，任何人都可以轻松获得企业级的AI环境。
 
 请务必活用本文中解说的以下几点：
 

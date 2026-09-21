@@ -14,7 +14,7 @@ tags: ["Rust", "CLI", "clap", "tokio"]
 
 在现代软件开发中，CLI（命令行界面）工具是大幅提升开发者生产力不可或缺的存在。过去，Shell 脚本、Python、Ruby 等是主流，但近年来， **[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)** 已经作为 CLI 工具开发的业界标准确立了稳固的地位。
 
-本文将彻底讲解如何从基础到高级，使用 Rust 构建“运行爆速、开发爆速”的实用 CLI 工具。我们不仅仅是做一个能动的东西，还将全面涵盖达到商业级别水准的健壮错误处理、使用异步处理实现的高速 API 请求，以及提升用户体验（UX）的进度条实现。
+本文将彻底讲解如何从基础到高级，使用 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 构建“运行爆速、开发爆速”的实用 CLI 工具。我们不仅仅是做一个能动的东西，还将全面涵盖达到商业级别水准的健壮错误处理、使用异步处理实现的高速 API 请求，以及提升用户体验（UX）的进度条实现。
 
 通过阅读本文直到最后，你将掌握以下高级 Rust 技术栈，并能够向世界发布你自己强大的 CLI 工具。
 
@@ -430,10 +430,10 @@ cargo publish
 
 本文详细讲解了使用 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 开发 CLI 工具的一系列流程。
 
-1. **设计方针**: 确认了 Rust 的安全性与高速度，以及单一二进制文件的优势。
+1. **设计方针**: 确认了 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 的安全性与高速度，以及单一二进制文件的优势。
 2. **Crate 选型**: 掌握了 `clap`, `tokio`, `serde`, `indicatif`, `thiserror`, `anyhow` 等强大武器。
 3. **并发处理的数学优势**: 基于阿姆达尔定律和利特尔法则，从理论上理解了异步处理的威力。
 4. **实现与优化**: 从健壮的错误处理到极限的二进制优化，注入了实用的技术诀窍。
 
-使用 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 进行 CLI 开发，能通过与编译器的对话，在设计阶段就确保软件质量，是一种绝佳的体验。请务必以本次创建的基础代码为起点，开发出只属于你的原创 CLI 工具，并向全世界发布吧！Happy Rust Coding!
+使用 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 进行 CLI 开发，能通过与编译器的对话，在设计阶段就确保软件质量，是一种绝佳的体验。请务必以本次创建的基础代码为起点，开发出只属于你的原创 CLI 工具，并向全世界发布吧！Happy [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) Coding!
 

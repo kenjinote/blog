@@ -12,7 +12,7 @@ description: '本文詳細解說如何使用C++與ggml，在本地環境中針�
 
 # 使用C++開發小規模AI模型（如TinyLLaMA）的步驟指南
 
-近年來，在本地環境中執行大型語言模型（LLM）的關注度急遽上升。特別是像 TinyLLaMA（1.1B參數）這樣的小規模模型，即使在資源受限的邊緣裝置或一般筆記型電腦（包含 Windows 環境）上，也能以實用的速度進行推論。雖然使用 Python 和 PyTorch 進行開發是目前的主流，但若要追求極致的效能與記憶體節省，結合 C++ 與基於 C 語言的張量函式庫「ggml」已成為業界的標準。
+近年來，在本地環境中執行大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的關注度急遽上升。特別是像 TinyLLaMA（1.1B參數）這樣的小規模模型，即使在資源受限的邊緣裝置或一般筆記型電腦（包含 Windows 環境）上，也能以實用的速度進行推論。雖然使用 Python 和 PyTorch 進行開發是目前的主流，但若要追求極致的效能與記憶體節省，結合 C++ 與基於 C 語言的張量函式庫「ggml」已成為業界的標準。
 
 本文將提供非常詳細的開發步驟，解說如何從零開始建構（或深入理解現有 llama.cpp 的內部結構）一個使用 C++ 載入 TinyLLaMA 並進行文字生成的推論引擎。
 

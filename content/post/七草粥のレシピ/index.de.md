@@ -9,7 +9,7 @@ categories: ["it-technology"]
 description: 'Wir stellen ein Rezept für Nanakusa-Gayu (Reisschleim mit sieben Kräutern) vor, das am 7. Januar zum Jinjitsu-Fest gegessen wird, sowie die sieben Frühlingskräuter (Wasserfenchel, Hirtentäschel, Ruhrkraut, Vogelmiere, Gemeines Kreuzkraut, Speiserübe, Daikon). Dies ist die Zubereitung des traditionellen Festmahls, das den nach Neujahr erschöpften Magen-Darm-Trakt schont und für ein Jahr bei guter Gesundheit betet.'
 ---
 # Die Sieben Kräuter
-- Java-Wasserfenchel (Seri)
+- [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)-Wasserfenchel (Seri)
 - Hirtentäschel (Nazuna)
 - Ruhrkraut (Gogyo)
 - Vogelmiere (Hakobera)

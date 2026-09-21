@@ -22,7 +22,7 @@ You need to include `chat:write` in the **[OAuth](https://kenji.blog/en/p/oauth2
 
 ### Setup Steps
 
-1. Go to [https://api.slack.com/apps](https://api.slack.com/apps)
+1. [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) to [https://api.slack.com/apps](https://api.slack.com/apps)
 2. Create an app or select an existing one
 3. Under "[OAuth](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/) & Permissions" > `Scopes`
    → Add `chat:write`

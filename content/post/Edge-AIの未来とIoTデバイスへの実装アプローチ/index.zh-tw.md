@@ -241,7 +241,7 @@ Edge AI已經在各種產業中實用化，並引起了劇烈的典範轉移。
 
 儘管Edge AI的技術正在快速發展，但仍然存在許多挑戰與令人期待的未來展望。
 
-**1. 在邊緣執行LLM（大型語言模型）**:
+**1. 在邊緣執行[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（大型語言模型）**:
 近年來最熱門的話題，就是嘗試在邊緣裝置上運行生成式AI或LLM的「Edge LLM」。要把數百億參數的模型直接放上邊緣裝置是不可能的，但隨著llama.cpp等最佳化框架、達到極限的4位元/2位元量化（AWQ、GPTQ等），甚至是微軟的Phi-3等小型且高效能的SLM（小型語言模型, Small Language Models）的出現，在智慧型手機或Raspberry Pi上也能離線完成自然語言處理的時代即將到來。
 
 **2. 神經形態運算與SNN**:

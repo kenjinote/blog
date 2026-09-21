@@ -161,7 +161,7 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 터미널 조작에서 가장 빈번하게 수행하는 작업 중 하나가 **'과거에 실행했던 복잡한 명령어를 기록에서 찾아내어 재실행하는'** 것입니다. 기본 제공되는 `Ctrl+R`(리버스 서치)은 완전 일치 검색이기 때문에 '확실히 docker run으로 볼륨 마운트해서…' 같은 모호한 기억에서 명령어를 끌어내는 것은 어렵습니다.
 
-이 과제를 우아하게 해결하는 것이, Go 언어로 작성된 초고속 범용 퍼지 검색 도구인 **`fzf`**입니다.
+이 과제를 우아하게 해결하는 것이, [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 언어로 작성된 초고속 범용 퍼지 검색 도구인 **`fzf`**입니다.
 
 ## 4.1. fzf를 통한 퍼지 검색 파이프라인
 

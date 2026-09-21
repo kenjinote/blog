@@ -11,11 +11,11 @@ tags: ["Prompt Engineering", "LLM", "Development", "ChatGPT", "Claude"]
 
 # 前言：为什么工程师应该学习提示词工程
 
-在大型语言模型（LLM）的快速进化下，软件开发世界正处于前所未有的范式转移之中。可以说，我们正从Andrejs Karpathy提出的“Software 2.0（通过神经网络进行开发）”向如今的“Software 3.0（自然语言驱动的提示词开发）”过渡。
+在大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的快速进化下，软件开发世界正处于前所未有的范式转移之中。可以说，我们正从Andrejs Karpathy提出的“Software 2.0（通过神经网络进行开发）”向如今的“Software 3.0（自然语言驱动的提示词开发）”过渡。
 
 随着GitHub Copilot、Cursor或各种基于LLM API的AI助手工具的普及，工程师的主要工作已经从“从零开始编写代码”转变为“设计指令让AI生成符合意图的代码，并审查、整合这些生成的代码”。
 
-在这种新的开发方法中，最重要的技能就是 **提示词工程（Prompt Engineering）** 。虽然提示词工程常被视为非工程师群体中所谓“与AI巧妙聊天”的流行语，但其本质是 **一种针对非确定性（Non-deterministic）计算系统的全新形式的编程语言** 。
+在这种新的开发方法中，最重要的技能就是 **提示词工程（[Prompt Engineering](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）** 。虽然提示词工程常被视为非工程师群体中所谓“与AI巧妙聊天”的流行语，但其本质是 **一种针对非确定性（Non-deterministic）计算系统的全新形式的编程语言** 。
 
 本文面向软件工程师和架构师，从LLM背后的数学和架构基础出发，到Few-Shot、Chain-of-Thought、ReAct等高级提示词工程方法，再到如何将其融入实际开发工作流及API中，以约一万字的篇幅进行了极其详尽的解说。
 
@@ -23,7 +23,7 @@ tags: ["Prompt Engineering", "LLM", "Development", "ChatGPT", "Claude"]
 
 ## 1. 大型语言模型（LLM）的基础与数学背景
 
-为了优化提示词并稳定地获得符合预期的输出，我们必须从数学和结构上理解“黑盒内部”，即LLM在内部是如何处理和生成文本及代码的。现代LLM几乎都是基于Transformer架构的自回归（Auto-regressive）语言模型。
+为了优化提示词并稳定地获得符合预期的输出，我们必须从数学和结构上理解“黑盒内部”，即LLM在内部是如何处理和生成文本及代码的。现代LLM几乎都是基于[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)架构的自回归（Auto-regressive）语言模型。
 
 ### 1.1 分词（Tokenization）与BPE
 
@@ -41,7 +41,7 @@ $$ P(w_t | w_{1}, w_{2}, \dots, w_{t-1}) $$
 
 ### 1.3 注意力机制（Attention Mechanism）与上下文窗口
 
-构成Transformer架构核心的是自注意力（Self-Attention）机制。借此，模型可以计算序列中相距较远的Token之间的依赖关系。
+构成[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)架构核心的是自注意力（Self-Attention）机制。借此，模型可以计算序列中相距较远的Token之间的依赖关系。
 
 $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V $$
 
@@ -71,7 +71,7 @@ $$ p_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)} $$
 
 ### 2.1 系统提示词：全局约束与人设定义
 
-系统提示词负责为LLM定义 **全局的约束、人设（角色）以及基本的行为规则** 。如果将其比作软件设计，它就相当于应用程序的“环境变量”、“基类”，或者是容器中的“[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)file”。
+系统提示词负责为[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)定义 **全局的约束、人设（角色）以及基本的行为规则** 。如果将其比作软件设计，它就相当于应用程序的“环境变量”、“基类”，或者是容器中的“[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)file”。
 
 优秀的系统提示词能够显著稳定输出的质量和格式。
 
@@ -108,7 +108,7 @@ $$ p_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)} $$
 
 ### 3.1 零样本提示（Zero-Shot Prompting）与少样本提示（Few-Shot Prompting）
 
-**零样本提示（Zero-Shot Prompting）** 是一种仅提供任务指令，而不提供任何示例就要求模型进行解答的方法。如果只是提出“用Python写一个快速排序”等常见请求，当前先进的LLM即使在零样本提示下也能发挥出色的作用。
+**零样本提示（Zero-Shot Prompting）** 是一种仅提供任务指令，而不提供任何示例就要求模型进行解答的方法。如果只是提出“用Python写一个快速排序”等常见请求，当前先进的[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)即使在零样本提示下也能发挥出色的作用。
 
 然而，当需要模型遵循项目特有的编码规范，或者输出特定的JSON结构时，零样本提示下格式崩溃的概率会很高。为了解决这个问题，我们需要使用 **少样本提示（Few-Shot Prompting）** 。
 
@@ -135,7 +135,7 @@ $$ p_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)} $$
 
 ### 3.2 思维链（Chain-of-Thought, CoT）与 Zero-Shot CoT
 
-关于LLM推理能力的一个重大突破就是 **思维链（Chain-of-Thought，CoT）** 。在需要复杂逻辑的任务（例如复杂算法实现、疑难Bug追踪、正则表达式构建等）中，如果直接让LLM输出最终代码，很容易产生逻辑跳跃或错误（幻觉）。
+关于[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)推理能力的一个重大突破就是 **思维链（Chain-of-Thought，CoT）** 。在需要复杂逻辑的任务（例如复杂算法实现、疑难Bug追踪、正则表达式构建等）中，如果直接让LLM输出最终代码，很容易产生逻辑跳跃或错误（幻觉）。
 
 CoT是一种在输出最终答案前，要求模型将中间推理过程（思考过程）用语言表达出来的方法。通过让模型自身逐步分析情况，每生成一个Token上下文就会变得更丰富，从而极大提高最终结论的准确性。
 
@@ -195,7 +195,7 @@ graph TD
 
 ## 4. 智能体工作流（Agentic [Workflow](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)）与 ReAct（Reasoning and Acting）
 
-LLM的应用已经从单一的文本输入输出，迅速演变为能够自主规划并与外部环境交互以完成任务的 **AI智能体（AI Agents） ** 领域。而构成这一智能体架构核心的范式便是 **ReAct (Reasoning and Acting，推理与行动)** 。
+[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的应用已经从单一的文本输入输出，迅速演变为能够自主规划并与外部环境交互以完成任务的 **AI智能体（AI Agents） ** 领域。而构成这一智能体架构核心的范式便是 **ReAct (Reasoning and Acting，推理与行动)** 。
 
 ### 4.1 ReAct框架的概念
 
@@ -217,20 +217,20 @@ graph LR
 
 将ReAct集成到系统中的标准接口，就是OpenAI或Anthropic等提供的 **函数调用（Function Calling / Tool Use）** 功能。
 
-工程师向LLM传递系统提示词的同时，也传递“可用工具群的定义（JSON结构）”。LLM解析提示词的上下文，若判断需要使用工具，就不会输出普通文本，而是输出“应该调用的函数名称”及“其对应的JSON参数”。应用程序侧执行该函数，将结果再次返回给LLM，从而形成一个循环。
+工程师向[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)传递系统提示词的同时，也传递“可用工具群的定义（JSON结构）”。LLM解析提示词的上下文，若判断需要使用工具，就不会输出普通文本，而是输出“应该调用的函数名称”及“其对应的JSON参数”。应用程序侧执行该函数，将结果再次返回给LLM，从而形成一个循环。
 
 **开发应用示例（自主调试智能体）：**
-例如构建一个在[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线中测试失败时，能够自动调查原因并生成补丁的智能体，我们可以为LLM提供如下工具：
+例如构建一个在[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线中测试失败时，能够自动调查原因并生成补丁的智能体，我们可以为[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)提供如下工具：
 
 1. `search_codebase(regex_pattern)`：使用正则表达式搜索仓库中的代码。
 2. `view_file_content(file_path, start_line, end_line)`：读取指定文件的内容。
 3. `run_unit_test(test_file_path)`：执行特定的单元测试并获取Traceback日志。
 4. `propose_patch(file_path, diff_content)`：提出修改补丁。
 
-LLM会自主地像这样进行推理与行动：
+[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)会自主地像这样进行推理与行动：
 - **Thought** ：观察测试日志发现在 `src/auth.py` 的第45行发生了 `KeyError: 'user_id'`。需要检查周边的代码。
 - **Action** ：`view_file_content(file_path="src/auth.py", start_line=30, end_line=60)`
-- **Observation** ：（应用程序读取文件内容，返回给LLM）
+- **Observation** ：（应用程序读取文件内容，返回给[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）
 - **Thought** ：原来如此，当API返回的JSON不包含 `user_id` 时的校验逻辑缺失了。让我们编写补丁改用更安全的 `.get()` 方法吧。
 - **Action** ：`propose_patch(...)`
 
@@ -240,7 +240,7 @@ LLM会自主地像这样进行推理与行动：
 
 ## 5. RAG（检索增强生成）与代码库集成
 
-LLM最大的弱点之一，就是它不了解未包含在预训练数据中的“私有信息”和“最新信息”。如果你询问公司内部的未公开仓库或专有的API规范，LLM很可能会若无其事地撒谎（产生幻觉）或仅能给出笼统的回答。
+[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)最大的弱点之一，就是它不了解未包含在预训练数据中的“私有信息”和“最新信息”。如果你询问公司内部的未公开仓库或专有的API规范，LLM很可能会若无其事地撒谎（产生幻觉）或仅能给出笼统的回答。
 
 解决这一问题的架构就是 **RAG（检索增强生成，Retrieval-Augmented Generation）** 。RAG是一项结合了信息检索（Retrieval）和LLM生成能力（Generation）的技术。
 
@@ -283,7 +283,7 @@ sequenceDiagram
 
 ### 6.1 代码审查自动化与静态分析的补充
 
-在CI流水线中集成LLM，并在创建Pull Request (PR) 时让其自动进行代码审查。其目的在于指出那些Lint工具或静态分析工具无法检测出的业务逻辑不一致或设计上的反模式。
+在CI流水线中集成[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)，并在创建Pull Request (PR) 时让其自动进行代码审查。其目的在于指出那些Lint工具或静态分析工具无法检测出的业务逻辑不一致或设计上的反模式。
 
 **提示词示例（请求结构化输出）：**
 ```text
@@ -358,7 +358,7 @@ def is_valid_ipv4(ip_str):
 
 随着基础模型的版本升级或所处理的领域数据发生变化，提示词的行为很容易崩溃。为了防止这种情况发生，构建一个定量评估提示词输出结果的 **评估（Evaluation / Eval）** 机制（即LLMOps）是不可或缺的。
 
-### 7.1 LLM-as-a-Judge（使用LLM评估LLM）
+### 7.1 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)-as-a-Judge（使用LLM评估LLM）
 
 对于代码生成或文本摘要等任务而言，完全匹配（Exact Match）测试是不可能的。而自然语言处理领域中传统的评估指标（如BLEU或ROUGE），在衡量语义准确性方面也显得力不从心。
 
@@ -376,7 +376,7 @@ def is_valid_ipv4(ip_str):
 
 在AI编写代码的时代，虽然有时会听到“编程已死”的呼声，但现实并非如此。这仅仅是工程师所需的抽象化层级又提升了一层而已。
 
-曾经我们从汇编语言转向C语言，再过渡到带有垃圾回收机制的高级语言，从而从繁琐的内存管理中解放出来，得以专注于构建更复杂的业务逻辑。LLM与提示词工程，正是紧随其后的下一波抽象化浪潮。
+曾经我们从汇编语言转向C语言，再过渡到带有垃圾回收机制的高级语言，从而从繁琐的内存管理中解放出来，得以专注于构建更复杂的业务逻辑。[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)与提示词工程，正是紧随其后的下一波抽象化浪潮。
 
 1. **理解架构** ：理解LLM的概率性质（自回归、注意力机制、温度参数），以控制系统的非确定性。
 2. **设计上下文** ：利用系统提示词进行约束，并运用Few-Shot/CoT明确传达意图。
@@ -386,7 +386,7 @@ def is_valid_ipv4(ip_str):
 掌握这些原则后，提示词将不再只是单纯的字符串，而是成为健壮且可扩展的软件组件。希望各位能将本文讲解的高级提示词工程方法融入自己的开发工作流及产品中，成为引领次世代“Software 3.0”的杰出工程师。
 
 ---
-*Generated using Prompt Engineering Techniques.*
+*Generated using [Prompt Engineering](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) Techniques.*
 *使用提示词工程技术生成。*
 
 

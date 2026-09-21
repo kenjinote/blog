@@ -11,7 +11,7 @@ tags: ["VSCode", "C++", "Rust", "Editor"]
 
 # 前言
 
-在現代的系統程式設計中，C++ 和 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 已經確立了作為最重要語言的穩固地位。C++ 擁有長年的實績與龐大的生態系統，在作業系統、遊戲引擎、高頻交易（HFT）系統等領域不可或缺。而 Rust 憑藉其所有權（Ownership）模型帶來的記憶體安全性與現代化的語言規範，正迅速普及，並已開始被採用於 Linux 核心中。在使用這兩種語言進行開發時，編輯器的選擇與設定將直接影響開發的生產力。
+在現代的系統程式設計中，C++ 和 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 已經確立了作為最重要語言的穩固地位。C++ 擁有長年的實績與龐大的生態系統，在作業系統、遊戲引擎、高頻交易（HFT）系統等領域不可或缺。而 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 憑藉其所有權（Ownership）模型帶來的記憶體安全性與現代化的語言規範，正迅速普及，並已開始被採用於 Linux 核心中。在使用這兩種語言進行開發時，編輯器的選擇與設定將直接影響開發的生產力。
 
 Visual Studio Code（VSCode）因其高擴充性與輕量化，受到全世界系統程式設計師的喜愛。然而，剛安裝好的 VSCode 說到底只是個單純的文字編輯器。為了引出 C++ 和 Rust 的真正實力，導入合適的擴充功能並進行精細的設定是不可或缺的，例如能深入理解語言語意的語言伺服器，以及能在二進位層級追蹤狀態的除錯器。
 
@@ -59,7 +59,7 @@ VSCode 本體並不理解 C++ 的模板元程式設計或是 [Rust](https://kenj
 
 #### 為什麼選擇 clangd 而不是 ms-vscode.cpptools
 - **高精準度的解析**: 因為直接處理 Clang 的 AST（抽象語法樹），能精確評估大量使用 SFINAE（Substitution Failure Is Not An Error）的複雜模板實例化，以及巢狀的巨集展開。
-- **透過背景索引加速**: 會在背景將整個專案的符號資訊預先計算（索引化），因此即使在巨大的專案中，執行「跳轉至定義（Go to Definition）」或「尋找所有參考（Find All References）」也能在瞬間完成。
+- **透過背景索引加速**: 會在背景將整個專案的符號資訊預先計算（索引化），因此即使在巨大的專案中，執行「跳轉至定義（[Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) to Definition）」或「尋找所有參考（Find All References）」也能在瞬間完成。
 
 #### compile_commands.json 的完整設定
 為了讓 `clangd` 正常運作，必須要有記載專案內各個原始檔是以何種編譯器旗標（包含路徑或巨集定義）進行編譯的 `compile_commands.json`。如果使用 CMake，可以透過以下指令自動產生。
@@ -99,7 +99,7 @@ $$ T_{response} = \alpha \cdot O(S \log(M_{ast})) + \beta \cdot T_{IPC} $$
 
 ### ② rust-analyzer ([Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 開發的事實標準)
 
-在 Rust 開發中，目前被採用為官方語言伺服器的是 **`rust-analyzer`**。過去作為標準的 RLS ([Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) Language Server) 因為採用直接呼叫編譯器（rustc）的架構，在回應速度上存在極限，而 `rust-analyzer` 則是專為 IDE 從零重新設計，擁有即使是不完整的程式碼也能進行漸進式解析的強大功能。
+在 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 開發中，目前被採用為官方語言伺服器的是 **`rust-analyzer`**。過去作為標準的 RLS ([Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) Language Server) 因為採用直接呼叫編譯器（rustc）的架構，在回應速度上存在極限，而 `rust-analyzer` 則是專為 IDE 從零重新設計，擁有即使是不完整的程式碼也能進行漸進式解析的強大功能。
 
 #### 帶來壓倒性生產力的功能群
 1. **Inlay Hints (行內提示)**: 在型別推導強大的 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 中，通常建議不需明確寫出變數的型別，但這有時會降低可讀性。Inlay Hints 會在編輯器上以淺色文字覆蓋顯示推導出的型別，或是函式呼叫的引數名稱。
@@ -125,7 +125,7 @@ $$ T_{response} = \alpha \cdot O(S \log(M_{ast})) + \beta \cdot T_{IPC} $$
 
 ### ③ CodeLLDB (跨平台的強大除錯器)
 
-無論是開發 C++ 還是 Rust，用來檢查執行時記憶體狀態的除錯器都是必備的。特別是在 Windows、Mac、Linux 所有平台上都能穩定運作，且與 Rust 契合度極高的正是 **`CodeLLDB`**。
+無論是開發 C++ 還是 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)，用來檢查執行時記憶體狀態的除錯器都是必備的。特別是在 Windows、Mac、Linux 所有平台上都能穩定運作，且與 Rust 契合度極高的正是 **`CodeLLDB`**。
 
 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的編譯器 (rustc) 將 LLVM 作為後端使用，其產生的除錯資訊 (DWARF / PDB) 格式與同樣是 LLVM 專案一部分的 LLDB 完全相容。
 
@@ -196,7 +196,7 @@ $$ T_{response} = \alpha \cdot O(S \log(M_{ast})) + \beta \cdot T_{IPC} $$
 
 ### ⑤ crates (即時管理 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 套件相依性)
 
-這是一款讓 Rust 的相依性管理檔 `Cargo.toml` 變得極度方便的擴充功能。
+這是一款讓 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 的相依性管理檔 `Cargo.toml` 變得極度方便的擴充功能。
 
 它會在相依 Crate（函式庫）的版本號旁邊，即時抓取 Crates.io（官方儲存庫）中是否存在最新的版本，並以行內方式顯示在編輯器上。
 
@@ -375,7 +375,7 @@ C++ 與 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 都�
 透過套用本文介紹的 10 款擴充功能與設定，VSCode 將超越單純文字編輯器的框架，進化為兼具編譯器深度知識與除錯器透視能力的「開發者的強大外骨骼」。
 
 1. **clangd** (C++ 語言伺服器)
-2. **rust-analyzer** (Rust 語言伺服器)
+2. **rust-analyzer** ([Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 語言伺服器)
 3. **CodeLLDB** (整合除錯器)
 4. **CMake Tools** (C++ 建置自動化)
 5. **crates** (Rust 相依性管理)

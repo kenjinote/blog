@@ -14,13 +14,13 @@ tags: ["Rust", "CLI", "clap", "tokio"]
 
 現代のソフトウェア開発において、CLI（コマンドラインインターフェース）ツールは開発者の生産性を飛躍的に高める不可欠な存在です。かつてはシェルスクリプトやPython、Rubyなどが主流でしたが、近年では **[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)** がCLIツール開発のデファクトスタンダードとして確固たる地位を築きつつあります。
 
-本記事では、Rustを用いて「爆速で動作し、爆速で開発できる」実践的なCLIツールの構築方法を、基礎から応用まで徹底的に解説します。単に動くものを作るだけでなく、商用レベルで通用する堅牢なエラーハンドリング、[非同期処理](https://kenji.blog/p/event-driven-architecture-async/)を用いた高速なAPIリクエスト、そしてユーザー体験（UX）を向上させるプログレスバーの実装まで、網羅的にカバーします。
+本記事では、[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)を用いて「爆速で動作し、爆速で開発できる」実践的なCLIツールの構築方法を、基礎から応用まで徹底的に解説します。単に動くものを作るだけでなく、商用レベルで通用する堅牢なエラーハンドリング、[非同期処理](https://kenji.blog/p/event-driven-architecture-async/)を用いた高速なAPIリクエスト、そしてユーザー体験（UX）を向上させるプログレスバーの実装まで、網羅的にカバーします。
 
-この記事を最後まで読むことで、あなたは以下のような高度な[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の技術スタックをマスターし、自分自身の強力なCLIツールを世界に向けて公開できるようになるでしょう。
+この記事を最後まで読むことで、あなたは以下のような高度な[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の技術[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)をマスターし、自分自身の強力なCLIツールを世界に向けて公開できるようになるでしょう。
 
 ---
 
-## 2. なぜCLIツール開発にRustを選ぶのか？
+## 2. なぜCLIツール開発に[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)を選ぶのか？
 
 RustがCLI開発において高く評価されている理由は、単に「流行っているから」ではありません。そこには明確な技術的、アーキテクチャ上の優位性が存在します。
 
@@ -430,10 +430,10 @@ cargo publish
 
 本記事では、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)を用いたCLIツール開発の一連のフローを詳細に解説しました。
 
-1. **設計方針**: Rustの安全性と高速性、シングルバイナリの利点を確認しました。
+1. **設計方針**: [Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の安全性と高速性、シングルバイナリの利点を確認しました。
 2. **クレートの選定**: `clap`, `tokio`, `serde`, `indicatif`, `thiserror`, `anyhow` という強力な武器を手に入れました。
 3. **並行処理の数理的優位性**: アムダールの法則とリトルの法則に基づき、[非同期処理](https://kenji.blog/p/event-driven-architecture-async/)の威力を理論的に理解しました。
 4. **実装と最適化**: 堅牢なエラーハンドリングから極限のバイナリ最適化まで、実用的なノウハウを詰め込みました。
 
-[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)によるCLI開発は、コンパイラとの対話を通じてソフトウェアの品質を設計段階から担保できる素晴らしい体験です。今回作成したベースコードを元に、ぜひあなただけのオリジナルCLIツールを開発し、世界に向けて発信してみてください！ Happy Rust Coding!
+[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)によるCLI開発は、コンパイラとの対話を通じてソフトウェアの品質を設計段階から担保できる素晴らしい体験です。今回作成したベースコードを元に、ぜひあなただけのオリジナルCLIツールを開発し、世界に向けて発信してみてください！ Happy [Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/) Coding!
 

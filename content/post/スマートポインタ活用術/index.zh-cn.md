@@ -9,7 +9,7 @@ categories: ["programming", "cpp"]
 tags: ["C++", "Smart Pointers", "Memory Management", "Modern C++"]
 ---
 
-在C++中，内存管理长久以来都是开发者面临的最大挑战之一。依赖于手动 `new` 和 `delete` 的传统内存管理风格，成为了引发内存泄漏、悬垂指针以及重复释放等严重Bug的温床。然而，随着Modern C++（C++11及以后版本）的出现，情况发生了翻天覆地的变化。其核心便是“智能指针（Smart Pointers）”。
+在C++中，内存管理长久以来都是开发者面临的最大挑战之一。依赖于手动 `new` 和 `delete` 的传统内存管理风格，成为了引发内存泄漏、悬垂指针以及重复释放等严重Bug的温床。然而，随着Modern C++（C++11及以后版本）的出现，情况发生了翻天覆地的变化。其核心便是“智能指针（Smart [Pointer](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)s）”。
 
 本文将极其详细地解说 `std::unique_ptr`、`std::shared_ptr` 以及 `std::weak_ptr` 的机制与高级运用技巧，它们是根除内存泄漏、实现安全且高效的资源管理的强大工具。我们将结合其内部实现（控制块和原子操作）、对性能的影响、以及基于数学模型的引用计数公式化来进行阐述。
 
@@ -36,7 +36,7 @@ void legacy_function() {
 
 ### 2.1 零开销原则
 
-`std::unique_ptr` 最大的魅力在于其性能。在没有自定义删除器的默认状态下，`std::unique_ptr` 的大小与裸指针（Raw Pointer）完全一致。它不包含任何不必要的成员变量，也没有使用虚函数。通过编译器的优化，通过 `unique_ptr` 进行的访问将被展开为与裸指针等效的汇编代码。
+`std::unique_ptr` 最大的魅力在于其性能。在没有自定义删除器的默认状态下，`std::unique_ptr` 的大小与裸指针（Raw [Pointer](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）完全一致。它不包含任何不必要的成员变量，也没有使用虚函数。通过编译器的优化，通过 `unique_ptr` 进行的访问将被展开为与裸指针等效的汇编代码。
 
 ### 2.2 所有权的转移与 `std::move`
 

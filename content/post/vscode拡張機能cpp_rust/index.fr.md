@@ -11,7 +11,7 @@ tags: ["VSCode", "C++", "Rust", "Editor"]
 
 # Introduction
 
-Dans la programmation système moderne, le C++ et le [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) ont solidement établi leur position comme les langages les plus importants. Le C++, avec sa longue histoire et son vaste écosystème, est indispensable pour les systèmes d'exploitation (OS), les moteurs de jeux et les systèmes de trading à haute fréquence (HFT). D'autre part, le Rust, qui se propage rapidement grâce à sa sécurité mémoire assurée par son modèle de possession (Ownership) et ses spécifications de langage modernes, est de plus en plus adopté dans le noyau Linux. Lors du développement dans ces deux langages, le choix de l'éditeur et sa configuration ont un impact direct sur la productivité du développement.
+Dans la programmation système moderne, le C++ et le [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) ont solidement établi leur position comme les langages les plus importants. Le C++, avec sa longue histoire et son vaste écosystème, est indispensable pour les systèmes d'exploitation (OS), les moteurs de jeux et les systèmes de trading à haute fréquence (HFT). D'autre part, le [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), qui se propage rapidement grâce à sa sécurité mémoire assurée par son modèle de possession (Ownership) et ses spécifications de langage modernes, est de plus en plus adopté dans le noyau Linux. Lors du développement dans ces deux langages, le choix de l'éditeur et sa configuration ont un impact direct sur la productivité du développement.
 
 Visual Studio Code (VSCode) est largement utilisé par les programmeurs système du monde entier pour sa grande extensibilité et sa légèreté. Cependant, juste après son installation, VSCode n'est rien de plus qu'un simple éditeur de texte. Pour libérer la véritable puissance du C++ et du Rust, il est essentiel d'introduire et de configurer minutieusement les extensions appropriées, comme des serveurs de langage comprenant profondément la sémantique du langage et des débogueurs qui tracent l'état au niveau binaire.
 
@@ -59,7 +59,7 @@ Comme `clangd` intègre directement la technologie front-end du compilateur Clan
 
 #### Pourquoi choisir clangd au lieu de ms-vscode.cpptools
 - **Analyse de haute précision** : En manipulant directement l'AST (Abstract Syntax [Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) de Clang, il évalue précisément l'instanciation de templates complexes utilisant de manière intensive le SFINAE (Substitution Failure Is Not An Error) et l'expansion de macros imbriquées.
-- **Accélération grâce à l'indexation en arrière-plan** : En précalculant (indexant) les informations de symboles de l'ensemble du projet en arrière-plan, les opérations "Aller à la définition (Go to Definition)" ou "Trouver toutes les références (Find All References)" s'exécutent instantanément, même dans des projets gigantesques.
+- **Accélération grâce à l'indexation en arrière-plan** : En précalculant (indexant) les informations de symboles de l'ensemble du projet en arrière-plan, les opérations "Aller à la définition ([Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) to Definition)" ou "Trouver toutes les références (Find All References)" s'exécutent instantanément, même dans des projets gigantesques.
 
 #### Configuration complète de compile_commands.json
 Pour que `clangd` fonctionne correctement, un fichier `compile_commands.json` décrivant avec quels indicateurs de compilation (chemins d'inclusion et définitions de macros) chaque fichier source du projet est compilé, est indispensable. Si vous utilisez CMake, il peut être généré automatiquement avec la commande suivante.
@@ -99,7 +99,7 @@ Où $\alpha$ est le coefficient d'efficacité de l'analyseur (parser), $\beta$ e
 
 ### ② rust-analyzer (Le standard de facto du développement [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/))
 
-Dans le développement Rust, **`rust-analyzer`** est actuellement adopté comme serveur de langage officiel. Le RLS ([Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) Language Server) anciennement standard avait des limites de réactivité en raison de son architecture qui appelait directement le compilateur (rustc), mais `rust-analyzer` a été conçu de zéro pour les IDE, avec la capacité puissante de parser incrémentalement même du code incomplet.
+Dans le développement [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), **`rust-analyzer`** est actuellement adopté comme serveur de langage officiel. Le RLS ([Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) Language Server) anciennement standard avait des limites de réactivité en raison de son architecture qui appelait directement le compilateur (rustc), mais `rust-analyzer` a été conçu de zéro pour les IDE, avec la capacité puissante de parser incrémentalement même du code incomplet.
 
 #### Des fonctionnalités générant une productivité écrasante
 1. **Inlay Hints (Indices incrustés)** : Dans [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), où l'inférence de type est puissante, il est recommandé de ne pas écrire explicitement le type des variables, mais cela peut réduire la lisibilité. Les Inlay Hints affichent les types inférés et les noms d'arguments d'appels de fonction en superposition avec un texte clair dans l'éditeur.
@@ -125,9 +125,9 @@ Exécuter automatiquement `cargo clippy` en arrière-plan lors de l'enregistreme
 
 ### ③ CodeLLDB (Le débogueur multiplateforme puissant)
 
-Que l'on développe en C++ ou en Rust, un débogueur pour inspecter l'état de la mémoire lors de l'exécution est indispensable. En particulier, **`CodeLLDB`** fonctionne de manière stable sur toutes les plateformes (Windows, Mac, Linux) et a une très forte affinité avec [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/).
+Que l'on développe en C++ ou en [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), un débogueur pour inspecter l'état de la mémoire lors de l'exécution est indispensable. En particulier, **`CodeLLDB`** fonctionne de manière stable sur toutes les plateformes (Windows, Mac, Linux) et a une très forte affinité avec [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/).
 
-Le compilateur Rust (rustc) utilise LLVM comme back-end, et le format des informations de débogage générées (DWARF / PDB) est parfaitement compatible avec LLDB, qui fait également partie du projet LLVM.
+Le compilateur [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) (rustc) utilise LLVM comme back-end, et le format des informations de débogage générées (DWARF / PDB) est parfaitement compatible avec LLDB, qui fait également partie du projet LLVM.
 
 #### Exemple de configuration avancée de launch.json
 
@@ -196,7 +196,7 @@ En spécifiant `Ninja` comme outil de construction, la compilation parallèle es
 
 ### ⑤ crates (Gestion en temps réel des dépendances des paquets [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/))
 
-C'est une extension qui rend le fichier de gestion des dépendances de Rust, `Cargo.toml`, extrêmement pratique.
+C'est une extension qui rend le fichier de gestion des dépendances de [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), `Cargo.toml`, extrêmement pratique.
 
 À côté du numéro de version d'une crate dépendante (bibliothèque), elle récupère en temps réel s'il existe une version plus récente enregistrée sur Crates.io (le référentiel officiel) et l'affiche en ligne dans l'éditeur.
 
@@ -336,7 +336,7 @@ sequenceDiagram
 
 Comme le montre ce diagramme de séquence, d'innombrables communications (Debug Adapter Protocol - DAP) ont lieu entre VSCode et CodeLLDB pendant une session de débogage. Les structures de données complexes, qui sont des collections de pointeurs telles que `std::map` en C++ ou `Vec<T>` en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), s'affichent également de manière très intuitive (sous forme d'arborescence avec le contenu du tableau étendu) dans l'interface graphique de VSCode grâce à la fonctionnalité de formatage intégrée dans CodeLLDB.
 
-Pour rendre cela possible, le compilateur Rust intègre en détail les informations de disposition des types (taille, remplissage (padding), etc.) dans le format DWARF, et CodeLLDB convertit brillamment le flux d'octets bruts de la mémoire cible en un format lisible par l'homme en conséquence.
+Pour rendre cela possible, le compilateur [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) intègre en détail les informations de disposition des types (taille, remplissage (padding), etc.) dans le format DWARF, et CodeLLDB convertit brillamment le flux d'octets bruts de la mémoire cible en un format lisible par l'homme en conséquence.
 
 ---
 
@@ -375,7 +375,7 @@ Le C++ et le [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) so
 En appliquant les 10 extensions et configurations présentées dans cet article, VSCode dépasse le cadre d'un simple éditeur de texte et évolue en « un puissant exosquelette de développeur » combinant une connaissance approfondie du compilateur et la vision à rayons X d'un débogueur.
 
 1. **clangd** (Serveur de langage C++)
-2. **rust-analyzer** (Serveur de langage Rust)
+2. **rust-analyzer** (Serveur de langage [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/))
 3. **CodeLLDB** (Débogueur intégré)
 4. **CMake Tools** (Automatisation de la construction C++)
 5. **crates** (Gestion des dépendances Rust)

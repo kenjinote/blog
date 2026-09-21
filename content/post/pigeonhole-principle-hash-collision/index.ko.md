@@ -173,7 +173,7 @@ graph LR
 *  ** 체이닝 기법(Chaining) ** : 충돌한 요소를 연결 리스트(Linked List)로 이어 같은 버킷에 저장한다.
 *  ** 개방 주소 지정법(Open Addressing) ** : 충돌이 발생한 경우 특정 규칙에 따라 '비어 있는 다른 버킷'을 찾아 저장한다.
 
-프로그래밍 언어(Python의 `dict` 나 Java의 `HashMap` 등)의 이면에서는 비둘기집 원리에 의해 야기되는 충돌을 어떻게 고속으로 효율적으로 처리할 것인가 하는 고도화된 고안이 응집되어 있습니다.
+프로그래밍 언어(Python의 `dict` 나 [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)의 `HashMap` 등)의 이면에서는 비둘기집 원리에 의해 야기되는 충돌을 어떻게 고속으로 효율적으로 처리할 것인가 하는 고도화된 고안이 응집되어 있습니다.
 
 ## 6. 암호 기술에서의 안전성 확보와 미래
 

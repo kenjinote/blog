@@ -9,7 +9,7 @@ categories: ["programming"]
 description: 'We have listed various programming languages, from C, Python, Java, and JavaScript to Rust, Go, OCaml, and Clojure. Check the overview and characteristics of each language as a reference for development and learning.'
 ---
 
-# List of Programming Languages
+# List of [Programming Language](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)s
 
 
 ## C Language
@@ -26,13 +26,13 @@ description: 'We have listed various programming languages, from C, Python, Java
 
 ## [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)
 
-## Go
+## [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)
 
 ## Python
 
 ## Ruby
 
-## Java
+## [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)
 
 ## JavaScript
 
@@ -133,4 +133,4 @@ Installed as a standard feature in Windows. Can handle objects.
 
 ## Salesforce APEX
 
-A language very similar to Java
+A language very similar to [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)

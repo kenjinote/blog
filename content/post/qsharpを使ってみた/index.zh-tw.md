@@ -14,7 +14,7 @@ description: '從基礎到進階，詳細解說量子程式設計語言「Q#」�
 
 近年來，量子運算領域在硬體與軟體上的技術創新十分顯著。古典電腦（我們現在日常使用的PC、智慧型手機、超級電腦等）是透過「0」或「1」這種確定的位元組合來處理資訊，而量子電腦則是直接將量子力學特有的「疊加（Superposition）」與「量子糾纏（Entanglement）」等物理現象，作為資訊處理的基礎來活用。這樣一來，針對特定類別的問題，它展現了實現「量子霸權（Quantum Supremacy）」或「量子優勢（Quantum Advantage）」的可能性，也就是能達到古典電腦即使花費等同於宇宙壽命的時間也無法觸及的運算速度。例如在巨大整數的質因數分解（Shor演算法）、資料庫高速搜尋（Grover演算法）、量子化學模擬（VQE演算法）、組合最佳化問題，甚至是機器學習的特定流程（Quantum Machine Learning）中，都可望帶來計算量的劇烈減少。
 
-然而，為了將量子電腦這種驚人的潛力引導至現實應用中，單靠物理硬體（如超導量子位元或離子阱等）的進步是不夠的。我們不可或缺的是能夠正確設計量子線路、無誤且有效率地撰寫量子演算法的「量子程式語言」，以及支撐它的強大開發、執行與除錯環境。古典程式語言（如 C++、Python、Java 等）雖然擅長抽象化古典 CPU 架構的運作，但在設計上卻無法自然地描述具備非決定論與複數振幅的量子狀態操作。
+然而，為了將量子電腦這種驚人的潛力引導至現實應用中，單靠物理硬體（如超導量子位元或離子阱等）的進步是不夠的。我們不可或缺的是能夠正確設計量子線路、無誤且有效率地撰寫量子演算法的「量子程式語言」，以及支撐它的強大開發、執行與除錯環境。古典程式語言（如 C++、Python、[Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 等）雖然擅長抽象化古典 CPU 架構的運作，但在設計上卻無法自然地描述具備非決定論與複數振幅的量子狀態操作。
 
 在眾多量子程式開發環境中，本文將聚焦於由微軟（Microsoft）大力推動並以開源形式進行開發的量子開發套件「Quantum Development Kit（QDK）」，以及構成其核心的專屬程式語言「Q#」。
 
@@ -236,7 +236,7 @@ namespace Quantum.BellState {
 ```
 
 ### 程式碼解說與動作確認
-- `namespace`：與 Java 或 C# 一樣，這是用來邏輯地整理程式並防止命名衝突的命名空間宣告。
+- `namespace`：與 [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 或 C# 一樣，這是用來邏輯地整理程式並防止命名衝突的命名空間宣告。
 - `open`：匯入必要的函式庫（模組）。`Microsoft.Quantum.Intrinsic` 包含 H、X、Y、Z、CNOT 等基本量子閘，而 `Microsoft.Quantum.Measurement` 則包含如 `MResetZ` 這類好用的測量相關功能。
 - `use (q1, q2) = (Qubit(), Qubit());`：動態配置兩個量子位元。
 - `H(q1); CNOT(q1, q2);`：這兩行正是產生量子糾纏的核心部分。撰寫起來非常簡單且直覺。

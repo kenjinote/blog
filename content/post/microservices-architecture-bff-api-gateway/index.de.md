@@ -142,7 +142,7 @@ Auf diese Weise kann das UI-Team sein eigenes, dediziertes BFF für seinen Clien
 
 ## 6. Implementierungsbeispiel für Datenaggregation im BFF (Node.js × GraphQL)
 
-Als Technologie-Stack für BFFs erfreut sich **GraphQL** in den letzten Jahren großer Beliebtheit. GraphQL passt perfekt zum Zweck des BFF, da der Client per Query genau „nur die erforderlichen Daten“ spezifizieren kann.
+Als Technologie-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) für BFFs erfreut sich **GraphQL** in den letzten Jahren großer Beliebtheit. GraphQL passt perfekt zum Zweck des BFF, da der Client per Query genau „nur die erforderlichen Daten“ spezifizieren kann.
 
 Hier zeigen wir ein einfaches BFF-Implementierungsbeispiel mit Node.js (Apollo Server), das APIs für Benutzerinformationen und den Bestellverlauf aggregiert.
 

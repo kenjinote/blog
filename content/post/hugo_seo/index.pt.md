@@ -10,7 +10,7 @@ tags: ["SEO", "Frontmatter", "Open Graph", "JSON-LD"]
 description: 'Um guia completo para dominar o SEO no Hugo. Explicamos detalhadamente técnicas de personalização de frontmatter e head.html para aumentar drasticamente o seu tráfego, cobrindo metadados, OGP e dados estruturados JSON-LD.'
 ---
 
-O Hugo é um dos geradores de sites estáticos (SSG) mais rápidos do mundo, escrito na linguagem Go. Devido à sua velocidade de construção avassaladora e sistema de templates flexível, recebe grande apoio de muitos engenheiros e blogueiros. No entanto, apenas gerar e exibir um site rapidamente não é suficiente para ser bem avaliado pelos motores de busca (como Google e Bing) e entregar seus artigos aos usuários.
+O Hugo é um dos geradores de sites estáticos (SSG) mais rápidos do mundo, escrito na linguagem [Go](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/). Devido à sua velocidade de construção avassaladora e sistema de templates flexível, recebe grande apoio de muitos engenheiros e blogueiros. No entanto, apenas gerar e exibir um site rapidamente não é suficiente para ser bem avaliado pelos motores de busca (como Google e Bing) e entregar seus artigos aos usuários.
 
 Para melhorar as classificações de pesquisa, aumentar o poder de difusão nas mídias sociais e, consequentemente, aumentar dramaticamente o número de acessos ao blog, medidas meticulosas de SEO (Otimização para Motores de Busca) são essenciais. O coração do SEO no Hugo é a integração do **Frontmatter**, escrito no início de cada artigo em markdown, e os **Templates ([Layout](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/)s)**, que o interpretam para expandir metadados dentro da tag HTML `<head>`.
 

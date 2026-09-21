@@ -93,7 +93,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : Tiempo cuasilineal (Linearithmic Time)
 
-Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, Heap Sort, etc.) tienen esta complejidad.
+Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, [Heap](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/) Sort, etc.) tienen esta complejidad.
 
 ```python
 def merge_sort(arr):
@@ -268,7 +268,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : Tiempo cuasilineal (Linearithmic Time)
 
-Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, Heap Sort, etc.) tienen esta complejidad.
+Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, [Heap](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/) Sort, etc.) tienen esta complejidad.
 
 ```python
 def merge_sort(arr):
@@ -443,7 +443,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : Tiempo cuasilineal (Linearithmic Time)
 
-Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, Heap Sort, etc.) tienen esta complejidad.
+Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, [Heap](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/) Sort, etc.) tienen esta complejidad.
 
 ```python
 def merge_sort(arr):
@@ -618,7 +618,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : Tiempo cuasilineal (Linearithmic Time)
 
-Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, Heap Sort, etc.) tienen esta complejidad.
+Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, [Heap](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/) Sort, etc.) tienen esta complejidad.
 
 ```python
 def merge_sort(arr):
@@ -793,7 +793,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : Tiempo cuasilineal (Linearithmic Time)
 
-Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, Heap Sort, etc.) tienen esta complejidad.
+Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, [Heap](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/) Sort, etc.) tienen esta complejidad.
 
 ```python
 def merge_sort(arr):
@@ -968,7 +968,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : Tiempo cuasilineal (Linearithmic Time)
 
-Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, Heap Sort, etc.) tienen esta complejidad.
+Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, [Heap](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/) Sort, etc.) tienen esta complejidad.
 
 ```python
 def merge_sort(arr):
@@ -1143,7 +1143,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : Tiempo cuasilineal (Linearithmic Time)
 
-Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, Heap Sort, etc.) tienen esta complejidad.
+Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, [Heap](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/) Sort, etc.) tienen esta complejidad.
 
 ```python
 def merge_sort(arr):
@@ -1318,7 +1318,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : Tiempo cuasilineal (Linearithmic Time)
 
-Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, Heap Sort, etc.) tienen esta complejidad.
+Es el producto de O(n) y O(log n). Muchos algoritmos de ordenamiento eficientes basados en comparaciones (Merge Sort, Quick Sort, [Heap](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/) Sort, etc.) tienen esta complejidad.
 
 ```python
 def merge_sort(arr):

@@ -21,7 +21,7 @@ Lalu, mengapa kita perlu repot-repot menyingkirkan Python dan membuat mesin infe
 3. **Dukungan untuk Perangkat Edge**: Di lingkungan dengan sumber daya yang sangat terbatas seperti smartphone, perangkat tertanam (embedded devices), atau Raspberry Pi, tidak ada ruang untuk menjalankan runtime Python yang memakan memori hingga beberapa gigabyte.
 4. **Kontrol Perangkat Keras Secara Langsung**: Kontrol tingkat rendah seperti penentuan waktu alokasi memori, penggunaan instruksi SIMD secara eksplisit, dan pengoptimalan transfer memori dengan GPU dimungkinkan dengan C++.
 
-Pada artikel ini, dengan mengambil banyak inspirasi dari arsitektur library "GGML" yang dikembangkan oleh Georgi Gerganov, kami akan menyelami jurang teknis dan menjelaskan proses pembuatan mesin inferensi dari nol untuk menjalankan Large Language Model (LLM) hanya menggunakan C++.
+Pada artikel ini, dengan mengambil banyak inspirasi dari arsitektur library "GGML" yang dikembangkan oleh Georgi Gerganov, kami akan menyelami jurang teknis dan menjelaskan proses pembuatan mesin inferensi dari nol untuk menjalankan Large Language Model ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)) hanya menggunakan C++.
 
 ---
 
@@ -52,7 +52,7 @@ Kita akan menyusun komponen-komponen ini menggunakan fitur-fitur tangguh dari C+
 
 ## 3. Rahasia Manajemen Memori: Arena Memori dan Penjajaran (Alignment) SIMD
 
-Manajemen memori pada mesin inferensi adalah salah satu faktor terpenting yang berhubungan langsung dengan performa. Selama inferensi, khususnya saat melewati setiap lapisan pada model Transformer, sejumlah besar tensor perantara dihasilkan. Jika tensor-tensor ini dialokasikan dan dibebaskan menggunakan `malloc` standar setiap saat, fragmentasi heap dan pertukaran konteks (context switch) dari OS akan menyebabkan penurunan kecepatan yang sangat fatal.
+Manajemen memori pada mesin inferensi adalah salah satu faktor terpenting yang berhubungan langsung dengan performa. Selama inferensi, khususnya saat melewati setiap lapisan pada model [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/), sejumlah besar tensor perantara dihasilkan. Jika tensor-tensor ini dialokasikan dan dibebaskan menggunakan `malloc` standar setiap saat, fragmentasi heap dan pertukaran konteks (context switch) dari OS akan menyebabkan penurunan kecepatan yang sangat fatal.
 
 Oleh karena itu, kita mengadopsi pendekatan "**Arena Memori (Memory Arena)**". Pendekatan ini merupakan metode di mana memori maksimal yang dibutuhkan dihitung (atau ditetapkan) lalu dialokasikan secara keseluruhan pada saat inferensi dimulai, dan memori dipotong-potong hanya dengan menggunakan penambahan (increment) pada pointer.
 
@@ -189,7 +189,7 @@ Ketika mengevaluasi grafik (forward pass), kita menggunakan pengurutan topologi 
 
 ## 6. Inti dari Matematika dan Optimasi: Perkalian Matriks (GEMM)
 
-Lebih dari 90% komputasi dalam inferensi AI dihabiskan untuk Perkalian Matriks (GEMM: General Matrix Multiply). Baik mekanisme Attention maupun Feed-Forward Network (FFN), yang merupakan inti dari model Transformer, pada akhirnya adalah perkalian matriks raksasa.
+Lebih dari 90% komputasi dalam inferensi AI dihabiskan untuk Perkalian Matriks (GEMM: General Matrix Multiply). Baik mekanisme Attention maupun Feed-Forward Network (FFN), yang merupakan inti dari model [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/), pada akhirnya adalah perkalian matriks raksasa.
 
 Hasil kali $C = A B$ (ukuran $M \times N$) dari dua matriks $A$ (ukuran $M \times K$) dan $B$ (ukuran $K \times N$), jika direpresentasikan dalam rumus matematika adalah sebagai berikut.
 
@@ -244,7 +244,7 @@ Dengan trik kecil ini saja, kita bisa memperoleh peningkatan kecepatan hingga be
 
 ## 7. Melampaui Batas Perangkat Keras: Integrasi Backend CUDA dan Metal
 
-Implementasi C++ murni saja sudah cukup untuk dijalankan dengan lumayan di CPU. Namun, agar model raksasa seperti LLM dapat berjalan dengan kecepatan yang praktis (misalnya menghasilkan 20 token lebih per detik), kemampuan komputasi paralel dari GPU sangatlah penting. Oleh karena itu, kita akan memperkenalkan layer abstraksi backend ke dalam mesin inferensi kita.
+Implementasi C++ murni saja sudah cukup untuk dijalankan dengan lumayan di CPU. Namun, agar model raksasa seperti [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) dapat berjalan dengan kecepatan yang praktis (misalnya menghasilkan 20 token lebih per detik), kemampuan komputasi paralel dari GPU sangatlah penting. Oleh karena itu, kita akan memperkenalkan layer abstraksi backend ke dalam mesin inferensi kita.
 
 ### 7.1 Abstraksi Backend
 
@@ -344,9 +344,9 @@ Di lingkungan Apple Silicon, juga disediakan library optimasi perkalian matriks 
 
 ---
 
-## 8. Proses Khusus pada Model Transformer: Attention dan Cache KV
+## 8. Proses Khusus pada Model [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/): Attention dan Cache KV
 
-LLM termutakhir seperti LLaMA 2/3 dan GPT didasarkan pada arsitektur Transformer. Untuk mengimplementasikannya dalam C++, kita wajib membangun "Scaled Dot-Product Attention" yang diekspresikan dengan rumus berikut:
+[LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) termutakhir seperti LLaMA 2/3 dan GPT didasarkan pada arsitektur Transformer. Untuk mengimplementasikannya dalam C++, kita wajib membangun "Scaled Dot-Product Attention" yang diekspresikan dengan rumus berikut:
 
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
@@ -389,7 +389,7 @@ Kuantisasi adalah teknik untuk menurunkan presisi dari bobot (weight) secara sen
 
 Pada sisi mesin inferensi, bobot yang dikompres dalam format INT4 (atau INT8) akan dibaca dari memori, kemudian **segera setelah dimuat ke dalam register CPU atau GPU, akan diekspansi (Dequantize) ke dalam FP16 atau FP32 untuk melakukan komputasi**.
 
-Hal yang menakjubkan adalah bahwa akan jauh lebih cepat jika kita mengurangi jumlah data yang dibaca dari memori meskipun itu berarti harus menambah beban komputasi. Hal ini dikarenakan pada perangkat keras modern, bottleneck pada tugas inferensi bukanlah "Kekuatan Komputasi (Compute Bound)" melainkan "**Bandwidth Memori (Memory Bandwidth Bound)**". Jika kita mengimplementasikan mesin inferensi di C++ dengan kuantisasi INT4, kita dapat menjalankan LLM lokal dengan lancar bahkan di MacBook Air dengan VRAM 8GB.
+Hal yang menakjubkan adalah bahwa akan jauh lebih cepat jika kita mengurangi jumlah data yang dibaca dari memori meskipun itu berarti harus menambah beban komputasi. Hal ini dikarenakan pada perangkat keras modern, bottleneck pada tugas inferensi bukanlah "Kekuatan Komputasi (Compute Bound)" melainkan "**Bandwidth Memori (Memory Bandwidth Bound)**". Jika kita mengimplementasikan mesin inferensi di C++ dengan kuantisasi INT4, kita dapat menjalankan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) lokal dengan lancar bahkan di MacBook Air dengan VRAM 8GB.
 
 ---
 
@@ -414,7 +414,7 @@ Python memang nyaman digunakan. Untuk tahap penelitian dan pengembangan (R&D) at
 
 Mesin inferensi yang dibangun dengan memanipulasi deretan byte memori secara langsung, memeras register hingga batas maksimalnya menggunakan instruksi SIMD, dan bergulat dengan bandwidth VRAM GPU—rasa pencapaian ketika melihat mesin tersebut menghasilkan teks (token) bahasa Jepang yang natural satu per satu di konsol merupakan "kegembiraan murni seorang insinyur" yang tidak akan pernah Anda dapatkan hanya dengan memanggil `model.generate()` di framework Python.
 
-Teknologi AI seringkali menjadi "Kotak Hitam (Black Box)", tetapi dengan menulis semuanya—mulai dari komputasi tensor hingga alokasi memori—sendiri menggunakan C++, Anda dapat memperoleh pemahaman yang mendalam tentang mekanisme nyata di balik bagaimana LLM "berpikir".
+Teknologi AI seringkali menjadi "Kotak Hitam (Black Box)", tetapi dengan menulis semuanya—mulai dari komputasi tensor hingga alokasi memori—sendiri menggunakan C++, Anda dapat memperoleh pemahaman yang mendalam tentang mekanisme nyata di balik bagaimana [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) "berpikir".
 
 Jika Anda memiliki pengetahuan dasar tentang C++ dan ketertarikan yang kuat pada teknologi AI saat ini, cobalah untuk menantang diri dalam membuat mesin inferensi sendiri. Kode sumber dari GGML dan llama.cpp pasti akan menjadi buku pelajaran hidup yang terbaik.
 

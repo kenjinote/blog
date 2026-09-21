@@ -97,7 +97,7 @@ Wenn man dem TCP-Header neue Flags hinzufügen oder eine neue Version von TCP er
 Auf der anderen Seite ist UDP ein sehr einfaches Protokoll, das nur Informationen wie Ziel-Port, Quell-Port und eine Prüfsumme enthält. Middleboxes greifen nicht tief in den Inhalt von UDP ein.
 Daher wurde der Ansatz gewählt, **„auf der weißen Leinwand namens UDP im User-Space (nah an der Anwendungsschicht) eine tcp-ähnliche Zuverlässigkeitskontrolle und TLS-Verschlüsselung komplett neu zu implementieren“**. Das ist QUIC.
 
-## 3.2 Der QUIC-Protokoll-Stack
+## 3.2 Der QUIC-Protokoll-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)
 
 Der Protokoll-Stack von HTTP/3, der QUIC einführt, sieht wie folgt aus.
 

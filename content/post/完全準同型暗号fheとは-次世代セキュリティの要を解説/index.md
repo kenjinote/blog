@@ -253,7 +253,7 @@ FHEが実用的な速度に到達しつつある今、以下のような分野�
 2.  **金融機関の不正検知・マネーロンダリング対策 (AML)**:
     競合する銀行同士が、顧客の口座情報や取引履歴を明かすことなく、暗号化された状態で互いのデータを照合し、巨大な不正送金ネットワークを検知するクロスバンク分析が可能になります。
 3.  **セキュアなAI推論API (MaaS: Model as a [Service](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/))**:
-    ユーザーは自身の音声や顔画像、プロンプトを[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)してAIサービス（ChatGPTのようなLLMなど）に送信します。AIプロバイダーはユーザーの入力を一切知ることなく回答を生成し、暗号文として返します。これにより、「AIに個人情報を学習される・盗み見られる」という懸念が完全に払拭されます。
+    ユーザーは自身の音声や顔画像、プロンプトを[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)してAIサービス（ChatGPTのような[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)など）に送信します。AIプロバイダーはユーザーの入力を一切知ることなく回答を生成し、暗号文として返します。これにより、「AIに個人情報を学習される・盗み見られる」という懸念が完全に払拭されます。
 
 ---
 

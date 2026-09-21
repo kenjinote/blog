@@ -47,7 +47,7 @@ Since this is extremely lightweight, even edge devices with limited memory bandw
 
 ### 2.2 The Mathematics of Mel-Spectrogram Conversion
 
-Internally, Whisper does not process 1D audio waveform data (Raw Waveform) directly. The audio is converted into a **Mel-Spectrogram**, a frequency representation close to human auditory characteristics, before being fed into the Transformer model. While `whisper.cpp` includes this conversion process within its C++ implementation, understanding how it works is useful for noise mitigation and optimizing preprocessing.
+Internally, Whisper does not process 1D audio waveform data (Raw Waveform) directly. The audio is converted into a **Mel-Spectrogram**, a frequency representation close to human auditory characteristics, before being fed into the [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) model. While `whisper.cpp` includes this conversion process within its C++ implementation, understanding how it works is useful for noise mitigation and optimizing preprocessing.
 
 The mathematical formula to convert a regular frequency $f$ (Hz) into the Mel scale $m$ is approximated as follows:
 

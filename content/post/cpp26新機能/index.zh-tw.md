@@ -326,9 +326,9 @@ int main() {
 }
 ```
 
-## 6.2 Hazard Pointers 與 RCU (Read-Copy Update)
+## 6.2 Hazard [Pointer](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)s 與 RCU (Read-Copy Update)
 
-作為支援無鎖（[Lock](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)-free）資料結構實作的標準功能， **Hazard Pointers** (`std::hazard_pointer`) 與 **RCU** (`std::rcu`) 已經標準化。這大幅降低了在 C++ 中實作高效能並行資料結構的門檻。
+作為支援無鎖（[Lock](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)-free）資料結構實作的標準功能， **Hazard [Pointer](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)s** (`std::hazard_pointer`) 與 **RCU** (`std::rcu`) 已經標準化。這大幅降低了在 C++ 中實作高效能並行資料結構的門檻。
 
 RCU 特別在讀取（Read）佔絕大多數的工作負載中，能排除快取行（Cache line）的競爭，實現線性的可擴展性（Scalability）。若用數學來表達，對於執行緒數量 $T$，讀取吞吐量呈現出理想的 $O(T)$ 增長。
 
@@ -359,7 +359,7 @@ C++26 是一次真正具歷史意義的版本更新，長年來 C++ 程式設計
 *   **反射** 消除了超編程的艱澀難懂，實現了 $O(1)$ 的 AST 存取。
 *   **契約編程** 能明確地標示函式的前置、後置條件，使得建構穩健的程式成為可能。
 *   **模式匹配** 讓複雜的分支與狀態轉移得以直觀且安全地撰寫。
-*   **Senders/Receivers** 與 **RCU / Hazard Pointers** 則將能發揮極限效能的並行處理給標準化了。
+*   **Senders/Receivers** 與 **RCU / Hazard [Pointer](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)s** 則將能發揮極限效能的並行處理給標準化了。
 
 透過適切地運用這些功能，我們將能在更高的層次上，並以令人驚豔的簡潔程式碼，實現 C++ 最大的強項：「零額外開銷抽象化（Zero-overhead Abstraction）」。
 

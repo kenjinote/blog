@@ -209,7 +209,7 @@ int main() {
 
 ### Implémentation en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)
 
-En Rust, les règles de possession (ownership) et d'emprunt (borrowing) rendent souvent l'implémentation de listes chaînées complexe. Cependant, il est fréquent en programmation compétitive de modéliser cela comme un problème de référence d'indices sur un tableau (ou `Vec`).
+En [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), les règles de possession (ownership) et d'emprunt (borrowing) rendent souvent l'implémentation de listes chaînées complexe. Cependant, il est fréquent en programmation compétitive de modéliser cela comme un problème de référence d'indices sur un tableau (ou `Vec`).
 Voici un exemple d'implémentation utilisant un tableau dont les valeurs représentent l'« indice suivant » plutôt qu'un pointeur vers le nœud suivant.
 
 ```rust

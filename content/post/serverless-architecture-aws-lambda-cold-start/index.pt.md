@@ -40,7 +40,7 @@ Por exemplo, suponha que uma liquidação relâmpago comece em um site de comér
 
 No caso do AWS Lambda, cada vez que chega uma solicitação, um ambiente de execução independente (contêiner) é iniciado instantaneamente para processar a solicitação. Quando os acessos caem a zero, os recursos são reduzidos completamente a zero, e quando os acessos disparam, ele aumenta automaticamente o número de execuções paralelas para responder.
 
-### 1.3. Otimização de Custos por Pay-As-You-Go
+### 1.3. Otimização de Custos por Pay-As-You-[Go](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/)
 
 O serverless cobra apenas pelo tempo de execução em milissegundos (incrementos de 1ms para o Lambda) e pela quantidade de memória alocada. Durante o estado ocioso (quando ninguém está acessando), não há custo algum.
 
@@ -78,7 +78,7 @@ Inicialmente, o AWS Lambda usava contêineres Linux (tecnologia semelhante a LXC
 
 ### 3.1. O que é o Firecracker?
 
-O Firecracker é um monitor de máquina virtual (Virtual Machine Monitor - VMM) que usa KVM (Kernel-based Virtual Machine) para iniciar "MicroVMs" leves em milissegundos. Escrito na linguagem Rust, ele corta os modelos de dispositivos desnecessários até o limite extremo em comparação com máquinas virtuais tradicionais (como QEMU), alcançando uma inicialização extremamente rápida e baixa sobrecarga de memória.
+O Firecracker é um monitor de máquina virtual (Virtual Machine Monitor - VMM) que usa KVM (Kernel-based Virtual Machine) para iniciar "MicroVMs" leves em milissegundos. Escrito na linguagem [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), ele corta os modelos de dispositivos desnecessários até o limite extremo em comparação com máquinas virtuais tradicionais (como QEMU), alcançando uma inicialização extremamente rápida e baixa sobrecarga de memória.
 
 ```mermaid
 graph TD
@@ -143,7 +143,7 @@ O tempo gasto no cold start pode ser dividido principalmente em **inicializaçã
 
 1. **Download e extração do código**: O pacote de implantação é baixado do S3 e extraído no ambiente. O tempo gasto é proporcional ao tamanho do pacote (quantidade de dependências).
 2. **Inicialização da MicroVM**: O Firecracker é iniciado. Esta etapa é muito rápida (na ordem dos milissegundos) devido às otimizações do lado da AWS.
-3. **Inicialização do Runtime**: Os processos do Node.js, Python, Java, etc., são iniciados. As linguagens que usam compilação JIT (Just-In-Time), em particular Java e C#, consomem bastante tempo aqui.
+3. **Inicialização do Runtime**: Os processos do Node.js, Python, [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), etc., são iniciados. As linguagens que usam compilação JIT (Just-In-Time), em particular Java e C#, consomem bastante tempo aqui.
 4. **Inicialização da função (Fase Init)**: O escopo global do código (fora da função do manipulador) é avaliado. Se você criar pools de conexões de banco de dados aqui ou inicializar SDKs pesados, o tempo de inicialização se estenderá.
 
 ### 4.2. O Cold Start Visto a partir da Teoria das Probabilidades
@@ -167,7 +167,7 @@ Embora o cold start seja o destino do serverless, é possível minimizar seu imp
 
 A velocidade do cold start varia dramaticamente dependendo da linguagem.
 
-- **Grupo mais rápido**: Linguagens compiladas AOT (Ahead-Of-Time) como Go, Rust e C++, bem como linguagens de script leves (Python, Node.js). Estas tendem a manter o cold start dentro de poucas centenas de milissegundos.
+- **Grupo mais rápido**: Linguagens compiladas AOT (Ahead-Of-Time) como [Go](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) e C++, bem como linguagens de script leves (Python, Node.js). Estas tendem a manter o cold start dentro de poucas centenas de milissegundos.
 - **Grupo lento**: Java, C# (.NET). Devido à inicialização da JVM ou CLR e à sobrecarga da compilação JIT, podem ocorrer cold starts de vários segundos a mais de dez segundos.
 
 A abordagem de usar tempos de execução JavaScript experimentais de baixo peso fornecidos pela AWS, como o **LLRT (Low Latency Runtime)** , para reduzir ainda mais o tempo de inicialização do Node.js, também está atraindo atenção.
@@ -210,7 +210,7 @@ No entanto, como os custos incorrem enquanto eles são mantidos em espera, exist
 
 ## 6. O Divisor de Águas: AWS Lambda SnapStart
 
-O salvador que emergiu para as linguagens de inicialização lenta, como Java, foi o **AWS Lambda SnapStart** . Esta é uma tecnologia revolucionária que captura um snapshot do estado de uma máquina virtual e o restaura durante o cold start.
+O salvador que emergiu para as linguagens de inicialização lenta, como [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), foi o **AWS Lambda SnapStart** . Esta é uma tecnologia revolucionária que captura um snapshot do estado de uma máquina virtual e o restaura durante o cold start.
 
 As tecnologias de base por trás disso utilizam o **CRaU** (Checkpoint/Restore in Userspace) e a capacidade de snapshot do MicroVM do Firecracker.
 
@@ -253,7 +253,7 @@ sequenceDiagram
 
 ### 6.2. Vantagens e Pontos de Atenção do SnapStart
 
-Quando o SnapStart é ativado, o tempo de cold start de funções Java pode ser acelerado em **até mais de 10 vezes** . Isso ocorre porque a inicialização do runtime, a compilação JIT e a inicialização de frameworks pesados, como o Spring Boot, são adiantadas no "momento do deploy".
+Quando o SnapStart é ativado, o tempo de cold start de funções [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) pode ser acelerado em **até mais de 10 vezes** . Isso ocorre porque a inicialização do runtime, a compilação JIT e a inicialização de frameworks pesados, como o Spring Boot, são adiantadas no "momento do deploy".
 
 Entretanto, há alguns pontos de atenção.
 

@@ -33,7 +33,7 @@ It's also possible to build purpose-built tools and your own custom frameworks.
 
 ### Easy to Distribute Without Runtimes
 
-Since external runtimes like .NET or Java are unnecessary, it **can be distributed as a single executable file**.
+Since external runtimes like .NET or [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) are unnecessary, it **can be distributed as a single executable file**.
 Troubles during redistribution are less likely to occur, and it's appealing that it can easily run without an installer.
 
 ### Capable of Creating Lightweight Apps

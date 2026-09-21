@@ -216,7 +216,7 @@ C++98/03 시절의 코드는 `new`와 `delete`가 코드 곳곳에 흩어져 있
 ### RAII (Resource Acquisition Is Initialization)
 RAII는 C++에서 가장 중요한 관용구(Idiom)입니다. 리소스의 확보를 객체의 초기화(생성자)와 결부시키고, 리소스의 해제를 객체의 파괴(소멸자)와 결부시킴으로써, 스코프를 벗어날 때 확실하게 리소스가 해제되는 것을 보장합니다.
 
-예외(Exceptions)가 발생한 경우라도 스택 언와인딩(Stack Unwinding) 과정에서 지역 변수의 소멸자가 자동으로 호출되므로 리소스 누수를 방지할 수 있습니다.
+예외(Exceptions)가 발생한 경우라도 스택 언와인딩([Stack](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/) Unwinding) 과정에서 지역 변수의 소멸자가 자동으로 호출되므로 리소스 누수를 방지할 수 있습니다.
 
 **Before (위험한 레거시 코드)**
 ```cpp

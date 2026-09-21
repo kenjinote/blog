@@ -11,7 +11,7 @@ tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 
 # Keterampilan Insinyur Khas Manusia yang Dibutuhkan di Era AI Menulis Kode
 
-Dalam beberapa tahun terakhir, dengan evolusi dramatis AI Generatif (Generative AI) dan Large Language Models (LLM), lanskap rekayasa perangkat lunak telah berubah secara drastis. GitHub Copilot dan berbagai asisten pengkodean AI kini digunakan setiap hari, dan fenomena "memberikan instruksi dalam bahasa alami, dan AI akan secara instan menghasilkan kode" tidak lagi menjadi fiksi ilmiah masa depan melainkan realitas hari ini.
+Dalam beberapa tahun terakhir, dengan evolusi dramatis AI Generatif (Generative AI) dan [Large Language Models](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)), lanskap rekayasa perangkat lunak telah berubah secara drastis. GitHub Copilot dan berbagai asisten pengkodean AI kini digunakan setiap hari, dan fenomena "memberikan instruksi dalam bahasa alami, dan AI akan secara instan menghasilkan kode" tidak lagi menjadi fiksi ilmiah masa depan melainkan realitas hari ini.
 
 Di era seperti ini, wajar bagi banyak insinyur untuk merasa cemas bahwa "pekerjaan saya mungkin akan direbut oleh AI." Memang benar bahwa "sekadar pekerjaan pengkodean (Typing Code)" seperti membuat boilerplate untuk aplikasi CRUD standar, mengimplementasikan algoritma sederhana, atau memanggil API dari pustaka terkenal, dengan cepat menjadi komoditas.
 
@@ -23,7 +23,7 @@ Namun, esensi dari rekayasa perangkat lunak bukanlah "mengetik kode." Ini tentan
 
 Untuk mengevaluasi kemampuan AI dengan benar dan menentukan di area mana manusia harus memberikan nilai, pertama-tama kita perlu memahami keterbatasan struktural AI (terutama LLM) dari perspektif matematis dan arsitektural.
 
-### 1.1 Kompleksitas Komputasi dan Batas Konteks dalam Arsitektur Transformer
+### 1.1 Kompleksitas Komputasi dan Batas Konteks dalam Arsitektur [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)
 
 Sebagian besar LLM saat ini didasarkan pada arsitektur "Transformer" yang diumumkan oleh Google pada tahun 2017. Inti dari Transformer terletak pada "Mekanisme Self-Attention" (Self-Attention Mechanism). Mekanisme ini menghitung seberapa besar setiap token dalam urutan input terkait dengan semua token lainnya.
 
@@ -38,7 +38,7 @@ $$ \text{Complexity} = O(N^2 \cdot d) $$
 
 Dalam beberapa tahun terakhir, penelitian tentang pengoptimalan di tingkat perangkat keras seperti FlashAttention, Sparse Attention, dan bahkan arsitektur alternatif yang dapat memproses dalam waktu linier $O(N)$ seperti Mamba ([State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Space Models) sedang berkembang, tetapi masih sangat sulit untuk "sepenuhnya memahami konteks yang tak terbatas dan menghasilkan output yang dioptimalkan secara keseluruhan."
 
-Selain itu, bahkan jika jendela konteks (context window) secara fisik dapat diperluas, fenomena yang disebut "Lost in the Middle" (Kehilangan Informasi di Tengah) akan terjadi. LLM cenderung sangat dipengaruhi oleh informasi di awal dan akhir prompt, dan cenderung mengabaikan persyaratan atau kendala penting yang ditempatkan di tengah. Inilah sebabnya mengapa jika Anda meminta LLM untuk membaca seluruh kode sumber sistem perusahaan yang berjumlah puluhan ribu baris dan menginstruksikannya untuk "melakukan refactoring yang optimal", ia akan menghasilkan kode yang secara lokal benar tetapi secara keseluruhan berantakan.
+Selain itu, bahkan jika jendela konteks (context window) secara fisik dapat diperluas, fenomena yang disebut "Lost in the Middle" (Kehilangan Informasi di Tengah) akan terjadi. [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) cenderung sangat dipengaruhi oleh informasi di awal dan akhir prompt, dan cenderung mengabaikan persyaratan atau kendala penting yang ditempatkan di tengah. Inilah sebabnya mengapa jika Anda meminta LLM untuk membaca seluruh kode sumber sistem perusahaan yang berjumlah puluhan ribu baris dan menginstruksikannya untuk "melakukan refactoring yang optimal", ia akan menghasilkan kode yang secara lokal benar tetapi secara keseluruhan berantakan.
 
 ### 1.2 Karakteristik Model Generatif Probabilistik dan "Halusinasi"
 
@@ -201,7 +201,7 @@ Di era AI, insinyur ditingkatkan dari "pengetik kode" menjadi "konduktor yang me
 
 ## 7. Kesimpulan: Jangan Menolak Evolusi, Kendarailah Gelombangnya
 
-"Era di mana AI menulis kode" bukanlah ancaman bagi insinyur, melainkan peluang terbesar dalam sejarah. Sama seperti transisi dari bahasa assembly ke bahasa C di masa lalu, atau evolusi dari manajemen pointer memori ke garbage collection di Java, pembuatan kode oleh AI hanyalah "satu tingkat abstraksi yang naik."
+"Era di mana AI menulis kode" bukanlah ancaman bagi insinyur, melainkan peluang terbesar dalam sejarah. Sama seperti transisi dari bahasa assembly ke bahasa C di masa lalu, atau evolusi dari manajemen pointer memori ke garbage collection di [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), pembuatan kode oleh AI hanyalah "satu tingkat abstraksi yang naik."
 
 Insinyur masa depan tidak perlu khawatir tentang detail spesifikasi bahasa pemrograman tertentu atau pembaruan versi dari kerangka kerja (framework), tetapi dapat memusatkan sumber daya mereka pada penyelesaian masalah yang lebih esensial dan tingkat tinggi yang khas manusia, seperti **"Apa masalah bisnisnya?", "Bagaimana data harus dibagi dan dihubungkan?", dan "Bagaimana cara memulihkan dengan cepat saat sistem mati?"**
 

@@ -33,7 +33,7 @@ Também é possível construir ferramentas especializadas e seus próprios frame
 
 ### Fácil de Distribuir sem Necessidade de Runtime
 
-Como não são necessários runtimes externos como .NET ou Java, ele **pode ser distribuído como um único arquivo executável** .
+Como não são necessários runtimes externos como .NET ou [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), ele **pode ser distribuído como um único arquivo executável** .
 É menos propenso a problemas durante a redistribuição e é fácil de executar sem um instalador.
 
 ### Pode Criar Aplicativos Leves

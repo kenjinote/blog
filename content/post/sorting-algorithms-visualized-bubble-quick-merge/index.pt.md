@@ -882,8 +882,8 @@ Introduzimos vários algoritmos de ordenação, mas na prática não existe o al
 - Para uma quantia de dados muito pequena ou para dados que estão quase ordenados, **Insertion Sort** é efetivo.
 - Para o uso geral buscando alta-velocidade **Quick Sort** é a escolha primária.
 - Quando estabilidade for requerida, ou você quer garantir o pior-caso de complexidade computacional, o **Merge Sort** é selecionado.
-- Quando as limitações de memória são severas, se quiser desempenho estável in-place o **Heap Sort** é adequado.
+- Quando as limitações de memória são severas, se quiser desempenho estável in-place o **[Heap](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/) Sort** é adequado.
 
-Bibliotecas padrões de linguagens de programação modernas (Python, Java, Rust, etc.) adotam abordagens hibridas (como TimSort e IntroSort) as quais combinam vantagens destes algoritmos e desenvolvedores não têm tido muitas oportunidades em implementar algoritmos de ordenação do zero. Mas, compreender quais os limites (trade-offs) são levados em consideração nestes é uma base importante no projetar um software mais rápido e mais robusto.
+Bibliotecas padrões de linguagens de programação modernas (Python, [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), etc.) adotam abordagens hibridas (como TimSort e IntroSort) as quais combinam vantagens destes algoritmos e desenvolvedores não têm tido muitas oportunidades em implementar algoritmos de ordenação do zero. Mas, compreender quais os limites (trade-offs) são levados em consideração nestes é uma base importante no projetar um software mais rápido e mais robusto.
 
 Espero que esse artigo seja útil no seu estudo sobre algoritmos e desenvolvimentos práticos.

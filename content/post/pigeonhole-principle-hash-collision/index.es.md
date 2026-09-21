@@ -173,7 +173,7 @@ Al arbitrio de estas situaciones, la comunidad desarrolló maniobras resolutoria
 * **Técnica del encadenamiento (Chaining)**: Ensartar los ítems colisionantes anudándolos (listas enlazadas) y enclavándolos unidos en la idéntica celda.
 * **Metodología de direccionamiento abierto (Open Addressing)**: Acontecida la injerencia, escudriñar por un casillero alternativo colindante valiéndose de reglas explícitas hasta colocar el registro.
 
-Por detrás de la pátina visible del software en uso común (sea el atributo `dict` de Python o el acrónimo `HashMap` de la sintaxis en Java) laboran de consuno estrategias avanzadísimas en orden a domesticar el efecto insoslayable e instantáneo del choque derivado, sí o sí, de acatar el principio del palomar.
+Por detrás de la pátina visible del software en uso común (sea el atributo `dict` de Python o el acrónimo `HashMap` de la sintaxis en [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/)) laboran de consuno estrategias avanzadísimas en orden a domesticar el efecto insoslayable e instantáneo del choque derivado, sí o sí, de acatar el principio del palomar.
 
 ## 6. Provisión de firmeza y porvenir en materia Criptográfica
 

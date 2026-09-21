@@ -326,7 +326,7 @@ int main() {
 }
 ```
 
-## 6.2 Hazard Pointers 与 RCU (Read-Copy Update)
+## 6.2 Hazard [Pointer](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)s 与 RCU (Read-Copy Update)
 
 作为支持无锁数据结构实现的基石， **Hazard Pointers** (`std::hazard_pointer`) 和 **RCU** (`std::rcu`) 被纳入标准。这大大降低了在C++中实现高性能并发数据结构的门槛。
 
@@ -359,7 +359,7 @@ C++26是一个历史性的版本，长期以来C++程序员梦寐以求的“梦
 *   **反射** 消除了元编程的难解性，实现了 $O(1)$ 的AST访问。
 *   **契约编程** 明确了函数的事前与事后条件，使得构建健壮的程序成为可能。
 *   **模式匹配** 直观且安全地描述了复杂的分支和状态转移。
-*   **Senders/Receivers** 与 **RCU / Hazard Pointers** 标准化了能够榨取极限性能的并发处理。
+*   **Senders/Receivers** 与 **RCU / Hazard [Pointer](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)s** 标准化了能够榨取极限性能的并发处理。
 
 通过合理运用这些特性，能够以更高的水平，并且令人惊讶地使用极其干净的代码，来实现C++最大的优势——“零开销抽象（Zero-overhead Abstraction）”。
 

@@ -264,7 +264,7 @@ Le réseau Bitcoin n'est pas simplement une collection de serveurs et de clients
 
 Les ordinateurs participant au réseau sont appelés « nœuds (Nodes) ». Il existe plusieurs types de nœuds, chacun ayant des rôles différents.
 
-- **Nœud complet (Full Node)** : Un nœud qui télécharge et vérifie toutes les données de la blockchain (plusieurs centaines de Go ou plus) du bloc de genèse au dernier bloc. Ils sont au cœur de la sécurité du réseau, car ils vérifient de manière indépendante la validité des transactions et la présence de doubles dépenses.
+- **Nœud complet (Full Node)** : Un nœud qui télécharge et vérifie toutes les données de la blockchain (plusieurs centaines de [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) ou plus) du bloc de genèse au dernier bloc. Ils sont au cœur de la sécurité du réseau, car ils vérifient de manière indépendante la validité des transactions et la présence de doubles dépenses.
 - **Nœud SPV (Simplified Payment Verification Node)** : Un nœud léger qui télécharge uniquement l'en-tête de bloc, et non la blockchain entière. Il est principalement utilisé dans les portefeuilles pour smartphones. Il peut vérifier si ses propres transactions sont incluses dans un bloc (vérification du chemin de Merkle), mais n'a pas la même capacité de vérification qu'un nœud complet.
 - **Nœud de minage (Mining Node)** : Un nœud qui effectue le calcul de [PoW](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/) et génère de nouveaux blocs. Actuellement, d'énormes « pools de minage », qui regroupent des matériels de minage spécialisés appelés ASIC (Application Specific Integrated Circuit), assument ce rôle.
 

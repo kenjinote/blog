@@ -142,7 +142,7 @@ def dijkstra(graph, start):
 
 ### 3.4 Sobre a Complexidade Computacional
 
-Ao usar um Heap Binário (Binary Heap) como fila de prioridade, cada vértice é retirado da fila uma vez, e cada aresta é relaxada uma vez.
+Ao usar um [Heap](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/) Binário (Binary Heap) como fila de prioridade, cada vértice é retirado da fila uma vez, e cada aresta é relaxada uma vez.
 Portanto, a complexidade de tempo é $ O((|V| + |E|) \log |V|) $. Usar um Heap de Fibonacci melhora a complexidade teórica para $ O(|E| + |V| \log |V|) $, mas na prática o Heap Binário é amplamente utilizado.
 
 ---

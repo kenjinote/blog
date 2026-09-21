@@ -42,7 +42,7 @@ ProcMon的驱动程序被注册为微过滤驱动程序（Minifilter Driver）�
 
 ## 2. 使用 Process Explorer (ProcExp) 深入分析进程与恶意软件
 
-Process Explorer是一款“超强版任务管理器”。它不仅能可视化CPU/内存的使用率，还能展示进程树、句柄、加载的DLL，甚至线程的调用栈（Call Stack）。
+Process Explorer是一款“超强版任务管理器”。它不仅能可视化CPU/内存的使用率，还能展示进程树、句柄、加载的DLL，甚至线程的调用栈（Call [Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）。
 
 ### 2.1 定位句柄泄漏与锁定
 应用程序在保持文件打开的状态下崩溃，导致之后无法删除或移动该文件的问题频频发生。当出现“文件正被另一个程序使用”的错误时，可以使用ProcExp的 **Find** 功能（`Ctrl+F`）搜索文件名或目录名。

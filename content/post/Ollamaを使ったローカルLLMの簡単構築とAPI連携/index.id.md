@@ -9,16 +9,16 @@ categories: ["ai", "programming", "api"]
 tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 ---
 
-# Pendahuluan: Mengapa Kita Membutuhkan LLM Lokal?
+# Pendahuluan: Mengapa Kita Membutuhkan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) Lokal?
 
-Dengan kebangkitan Large Language Models (LLM), kehidupan dan metode pengembangan kita telah mengalami perubahan drastis. Layanan AI berbasis cloud yang kuat seperti ChatGPT, Claude, dan Gemini terus berkembang setiap harinya, menawarkan kemampuan penalaran yang sangat canggih. Namun, LLM berbasis cloud tidak selalu menjadi pilihan terbaik untuk semua kasus penggunaan. LLM cloud memiliki beberapa tantangan sebagai berikut:
+Dengan kebangkitan [Large Language Models](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) (LLM), kehidupan dan metode pengembangan kita telah mengalami perubahan drastis. Layanan AI berbasis cloud yang kuat seperti ChatGPT, Claude, dan Gemini terus berkembang setiap harinya, menawarkan kemampuan penalaran yang sangat canggih. Namun, LLM berbasis cloud tidak selalu menjadi pilihan terbaik untuk semua kasus penggunaan. LLM cloud memiliki beberapa tantangan sebagai berikut:
 
 1. **Masalah Privasi dan Keamanan**: Mengirimkan data yang berisi informasi rahasia atau informasi pribadi ke server eksternal sering kali tidak dapat diterima dari perspektif kepatuhan perusahaan (compliance) dan keamanan.
 2. **Ketidakpastian Biaya**: Karena biaya penggunaan API bergantung pada jumlah token, ada risiko bahwa biaya operasional (running cost) akan melonjak tanpa batas pada sistem yang memproses data dalam skala besar atau melakukan permintaan (request) secara berulang.
 3. **Ketergantungan pada Latensi dan Jaringan**: Untuk penggunaan di lingkungan [offline](https://kenji.blog/id/p/pwa-progressive-web-apps-service-worker/) atau eksekusi pada perangkat edge yang memerlukan latensi sangat rendah, komunikasi jaringan menjadi faktor penghambat (bottleneck).
 4. **Vendor [Lock](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/)-in**: Dengan bergantung pada model penyedia tertentu, Anda mungkin terdampak oleh penghentian layanan di masa mendatang, perubahan persyaratan, atau perubahan perilaku tak terduga akibat pembaruan model.
 
-"LLM Lokal" menarik perhatian sebagai cara untuk menyelesaikan tantangan-tantangan ini. Dengan menjalankan model pada perangkat keras (hardware) Anda sendiri, Anda dapat memanfaatkan AI dengan bebas tanpa mengirimkan data apa pun ke pihak luar, dan tanpa perlu mengkhawatirkan biaya bulanan.
+"[LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) Lokal" menarik perhatian sebagai cara untuk menyelesaikan tantangan-tantangan ini. Dengan menjalankan model pada perangkat keras (hardware) Anda sendiri, Anda dapat memanfaatkan AI dengan bebas tanpa mengirimkan data apa pun ke pihak luar, dan tanpa perlu mengkhawatirkan biaya bulanan.
 
 Pada artikel ini, kita akan membahas secara menyeluruh tentang "**Ollama**", sebuah alat yang membuat pengenalan, pengelolaan, dan integrasi API untuk LLM lokal menjadi sangat mudah, mulai dari dasar-dasarnya hingga arsitektur internal, integrasi API tingkat lanjut menggunakan Python dan Node.js, hingga rumus perhitungan untuk penyetelan kinerja (performance tuning).
 
@@ -32,9 +32,9 @@ Ollama menyembunyikan kompleksitas ini dan memungkinkan Anda untuk menangani LLM
 
 ## Teknologi Inti: Wrapper untuk llama.cpp
 
-Yang berfungsi sebagai backend mesin inferensi Ollama adalah "**llama.cpp**", sebuah pustaka inferensi LLM cepat yang diimplementasikan dalam C/C++. llama.cpp memiliki kemampuan untuk memaksimalkan kinerja perangkat keras dalam menjalankan model, bahkan pada lingkungan Apple Silicon (Metal), NVIDIA GPU (CUDA), AMD GPU (ROCm), maupun lingkungan yang hanya menggunakan CPU.
+Yang berfungsi sebagai backend mesin inferensi Ollama adalah "**llama.cpp**", sebuah pustaka inferensi [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) cepat yang diimplementasikan dalam C/C++. llama.cpp memiliki kemampuan untuk memaksimalkan kinerja perangkat keras dalam menjalankan model, bahkan pada lingkungan Apple Silicon (Metal), NVIDIA GPU (CUDA), AMD GPU (ROCm), maupun lingkungan yang hanya menggunakan CPU.
 
-Ollama menyertakan llama.cpp, dan mengadopsi arsitektur di mana proses server yang ditulis dalam bahasa Go menyediakan [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/), dan memanggil mesin inferensi llama.cpp di latar belakang (background).
+Ollama menyertakan llama.cpp, dan mengadopsi arsitektur di mana proses server yang ditulis dalam bahasa [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) menyediakan [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/), dan memanggil mesin inferensi llama.cpp di latar belakang (background).
 
 Diagram Mermaid di bawah ini menunjukkan arsitektur keseluruhan Ollama.
 
@@ -118,7 +118,7 @@ Pada perpustakaan model Ollama, Anda dapat menentukan versi atau tingkat kuantis
 
 ### Apa itu Kuantisasi (Quantization)?
 
-Mari kita bahas sedikit tentang kuantisasi. LLM biasa menyimpan satu parameter bobot sebagai floating-point 16-bit (FP16). Untuk model dengan 8 miliar (8B) parameter, bobotnya saja akan menghabiskan sekitar 16GB VRAM. Teknologi untuk mengompresi ini ke dalam bilangan bulat (integer) 4-bit (Q4) atau 8-bit (Q8) disebut kuantisasi.
+Mari kita bahas sedikit tentang kuantisasi. [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) biasa menyimpan satu parameter bobot sebagai floating-point 16-bit (FP16). Untuk model dengan 8 miliar (8B) parameter, bobotnya saja akan menghabiskan sekitar 16GB VRAM. Teknologi untuk mengompresi ini ke dalam bilangan bulat (integer) 4-bit (Q4) atau 8-bit (Q8) disebut kuantisasi.
 
 Dengan kuantisasi, Anda dapat mengurangi jumlah memori dan bandwidth memori yang dibutuhkan secara drastis sambil meminimalisir penurunan akurasi model. Model yang didistribusikan melalui Ollama secara default berformat GGUF yang mana telah diterapkan kuantisasi optimal (biasanya 4-bit).
 
@@ -239,7 +239,7 @@ Array `context` berisi penyandian riwayat status percakapan, dan dengan menyerta
 
 ## Pembangkitan Obrolan Menggunakan /api/chat
 
-Karena LLM modern sudah di-fine-tune untuk format chat (obrolan), disarankan untuk menggunakan `/api/chat` dalam pengembangan aplikasi.
+Karena [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) modern sudah di-fine-tune untuk format chat (obrolan), disarankan untuk menggunakan `/api/chat` dalam pengembangan aplikasi.
 
 ```bash
 curl -X POST http://localhost:11434/api/chat -d '{
@@ -341,7 +341,7 @@ Anda dapat menjalankan fungsionalitas rantai (chains) atau agen yang tangguh dar
 
 # Integrasi dengan Aplikasi Node.js
 
-Bagi insinyur front-end (Front-end Engineer) maupun pengembang full-stack (Full-stack Developer), kemampuan untuk memanggil LLM lokal dari lingkungan TypeScript/Node.js merupakan keunggulan yang signifikan. Kita menggunakan paket NPM resmi dari `ollama`.
+Bagi insinyur front-end (Front-end Engineer) maupun pengembang full-stack (Full-stack Developer), kemampuan untuk memanggil [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) lokal dari lingkungan TypeScript/Node.js merupakan keunggulan yang signifikan. Kita menggunakan paket NPM resmi dari `ollama`.
 
 ## Instalasi
 
@@ -421,7 +421,7 @@ app.listen(3000, () => {
 
 # Analisis Metrik Kinerja dan Matematis
 
-Untuk memastikan LLM lokal dapat disediakan pada tingkat yang sesuai bagi penggunaan praktis (production-ready), sangat penting untuk menganalisis latensi serta hasil keluaran (throughput). Tanggapan API Ollama menyediakan metrik-metrik secara rinci terkait performa ini.
+Untuk memastikan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) lokal dapat disediakan pada tingkat yang sesuai bagi penggunaan praktis (production-ready), sangat penting untuk menganalisis latensi serta hasil keluaran (throughput). Tanggapan API Ollama menyediakan metrik-metrik secara rinci terkait performa ini.
 
 ## Model Penghitungan Kecepatan Pembangkitan Token
 
@@ -475,7 +475,7 @@ $$
 $$
 M_{model} = \frac{8,000 \times 4}{8 \times 1024} = \frac{32,000}{8192} \approx 3.9 \text{ GB}
 $$
-Ditambah memori tambahan untuk sebuah context cache, terlihat bahwa bila didapati ketersediaan kurang lebih 5GB sampai 6GB, dengan penuh model akan dimasukkan pada GPU (Full Offload). Penggunaan pada sistem GPU standar masa kini berkapasitas VRAM 8GB (mirip dengan RTX 4060) telah terbukti amat cukup, dengan sangat memadai menggerakkan LLM yang tangguh.
+Ditambah memori tambahan untuk sebuah context cache, terlihat bahwa bila didapati ketersediaan kurang lebih 5GB sampai 6GB, dengan penuh model akan dimasukkan pada GPU (Full Offload). Penggunaan pada sistem GPU standar masa kini berkapasitas VRAM 8GB (mirip dengan RTX 4060) telah terbukti amat cukup, dengan sangat memadai menggerakkan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) yang tangguh.
 
 ---
 
@@ -494,9 +494,9 @@ Dengan mencangkokkan fungsi request API Ollama terhadap pemrograman shell (shell
 
 ## Kesimpulan
 
-Melalui kehadiran dari instalasi Ollama, rintangan introduksi perangkat LLM bertaraf pribadi telah ditekan habis. Struktur komando dasar semudah memainkan wujud program pada kontainer sekelas [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) digabung API basis peladen mandiri seperti integrasi API eksternal REST yang mudah untuk dijembatani oleh modul luar apa pun, memang bukan perumpamaan main-main bahwa kini hal ini sedang diangkat layaknya wujud arsitektur standar saat ini (de facto standard) dalam perancangan pemrograman berbasis AI pada lingkup privat (lokal).
+Melalui kehadiran dari instalasi Ollama, rintangan introduksi perangkat [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) bertaraf pribadi telah ditekan habis. Struktur komando dasar semudah memainkan wujud program pada kontainer sekelas [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) digabung API basis peladen mandiri seperti integrasi API eksternal REST yang mudah untuk dijembatani oleh modul luar apa pun, memang bukan perumpamaan main-main bahwa kini hal ini sedang diangkat layaknya wujud arsitektur standar saat ini (de facto standard) dalam perancangan pemrograman berbasis AI pada lingkup privat (lokal).
 
-Apabila sebagian pihak saat sekarang dirundung perkara privasi atau hambatan operasional dari penerapan fasilitas peladen awan (cloud), mohon perkenan mempraktikkan proses perangkaian wujud infrastruktur pangkalan LLM secara personal (lokal) dengan fasilitas instrumen seperti penjabaran tahap demi tahap melalui Ollama dalam lembar rujukan bacaan tulisan ini. Tentu, nantinya Anda bisa langsung mencicipi lebih berlimpah kemungkinan yang diproyeksikan oleh Kecerdasan Buatan dalam posisi kian intim dengan kebebasan yang lebih mutlak.
+Apabila sebagian pihak saat sekarang dirundung perkara privasi atau hambatan operasional dari penerapan fasilitas peladen awan (cloud), mohon perkenan mempraktikkan proses perangkaian wujud infrastruktur pangkalan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) secara personal (lokal) dengan fasilitas instrumen seperti penjabaran tahap demi tahap melalui Ollama dalam lembar rujukan bacaan tulisan ini. Tentu, nantinya Anda bisa langsung mencicipi lebih berlimpah kemungkinan yang diproyeksikan oleh Kecerdasan Buatan dalam posisi kian intim dengan kebebasan yang lebih mutlak.
 
 
 

@@ -38,7 +38,7 @@ Jupyter Notebook을 기반으로 하고 있다.
 
 - [Javascript Playground](https://playcode.io/)
 
-## Java
+## [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)
 
 - [paiza.IO Online Java compiler](https://paiza.io/ja/projects/new?language=java)
 
@@ -57,7 +57,7 @@ Jupyter Notebook을 기반으로 하고 있다.
 
 - [AWS Cloud9](https://aws.amazon.com/jp/cloud9/)
 
-Amazon AWS에서 제공하는 온라인 통합 개발 환경. Node.js, JavaScript, Python, PHP, Ruby, Go, C++ 등 40개가 넘는 프로그래밍 언어용 도구가 미리 패키징되어 있습니다.
+Amazon AWS에서 제공하는 온라인 통합 개발 환경. Node.js, JavaScript, Python, PHP, Ruby, [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/), C++ 등 40개가 넘는 프로그래밍 언어용 도구가 미리 패키징되어 있습니다.
 
 - [Visual Studio Code for the Web](https://vscode.dev/)
 
@@ -65,7 +65,7 @@ Microsoft에서 제공하는 온라인 개발 환경. 단, 컴파일이 필요�
 
 - [paiza.IO](https://paiza.io/projects/CGAcQLfW-IOXYy8Dq2OHBw?locale=ja-jp)
 
-C, C++, Java, Ruby, Python, PHP, Perl 등 주요 24개 언어를 지원하는 온라인 실행 환경.
+C, C++, [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/), Ruby, Python, PHP, Perl 등 주요 24개 언어를 지원하는 온라인 실행 환경.
 
 - [CodePen](https://codepen.io/)
 

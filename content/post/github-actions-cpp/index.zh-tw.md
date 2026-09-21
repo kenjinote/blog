@@ -11,7 +11,7 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 # 使用 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 建構 C++ 專案的 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線：完整指南
 
-在現代軟體開發典範中，持續整合（Continuous Integration: CI）與持續交付/部署（Continuous Delivery/Deployment: CD）是維持敏捷開發流程與高品質軟體不可或缺的要素。在眾多的程式語言中，為 C++ 建構 CI/CD 管線與其他語言（例如 Python、JavaScript、Go 等）相比，伴隨著獨特的困難與複雜性。
+在現代軟體開發典範中，持續整合（Continuous Integration: CI）與持續交付/部署（Continuous Delivery/Deployment: CD）是維持敏捷開發流程與高品質軟體不可或缺的要素。在眾多的程式語言中，為 C++ 建構 CI/CD 管線與其他語言（例如 Python、JavaScript、[Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 等）相比，伴隨著獨特的困難與複雜性。
 
 本文將極其詳細地解說，如何活用 GitHub Actions，從零開始為 C++ 專案建構一個強健且實用的 CI/CD 管線。我們將涵蓋所有實踐技巧，包括跨平台（Windows、Linux、macOS）的矩陣建置（Matrix Build）、整合使用 CMake 的建置系統、利用 CTest 進行自動化測試、靜態與動態分析的自動化、涵蓋率（Coverage）測量，以及透過 GitHub Releases 自動交付已編譯好的二進位檔案。
 

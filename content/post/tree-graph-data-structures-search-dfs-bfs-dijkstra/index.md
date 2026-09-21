@@ -217,7 +217,7 @@ graph TD
 木構造における探索の基本として、深さ優先探索（DFS）と幅優先探索（BFS）があります。
 
 ## 2. 深さ優先探索（DFS: Depth-First Search）
-深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。スタック（Stack）と呼ばれるデータ構造を利用することもあります。
+深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（[Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）と呼ばれるデータ構造を利用することもあります。
 
 ### 木構造におけるDFSのPython実装例
 
@@ -246,7 +246,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深さ優先探索（DFS: Depth-First Search）
-深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。スタック（Stack）と呼ばれるデータ構造を利用することもあります。
+深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（[Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）と呼ばれるデータ構造を利用することもあります。
 
 ### 木構造におけるDFSのPython実装例
 
@@ -275,7 +275,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深さ優先探索（DFS: Depth-First Search）
-深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。スタック（Stack）と呼ばれるデータ構造を利用することもあります。
+深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（[Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）と呼ばれるデータ構造を利用することもあります。
 
 ### 木構造におけるDFSのPython実装例
 
@@ -304,7 +304,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深さ優先探索（DFS: Depth-First Search）
-深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。スタック（Stack）と呼ばれるデータ構造を利用することもあります。
+深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（[Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）と呼ばれるデータ構造を利用することもあります。
 
 ### 木構造におけるDFSのPython実装例
 
@@ -333,7 +333,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深さ優先探索（DFS: Depth-First Search）
-深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。スタック（Stack）と呼ばれるデータ構造を利用することもあります。
+深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（[Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）と呼ばれるデータ構造を利用することもあります。
 
 ### 木構造におけるDFSのPython実装例
 
@@ -362,7 +362,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深さ優先探索（DFS: Depth-First Search）
-深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。スタック（Stack）と呼ばれるデータ構造を利用することもあります。
+深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（[Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）と呼ばれるデータ構造を利用することもあります。
 
 ### 木構造におけるDFSのPython実装例
 
@@ -391,7 +391,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深さ優先探索（DFS: Depth-First Search）
-深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。スタック（Stack）と呼ばれるデータ構造を利用することもあります。
+深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（[Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）と呼ばれるデータ構造を利用することもあります。
 
 ### 木構造におけるDFSのPython実装例
 
@@ -420,7 +420,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深さ優先探索（DFS: Depth-First Search）
-深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。スタック（Stack）と呼ばれるデータ構造を利用することもあります。
+深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（[Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）と呼ばれるデータ構造を利用することもあります。
 
 ### 木構造におけるDFSのPython実装例
 
@@ -449,7 +449,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深さ優先探索（DFS: Depth-First Search）
-深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。スタック（Stack）と呼ばれるデータ構造を利用することもあります。
+深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（[Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）と呼ばれるデータ構造を利用することもあります。
 
 ### 木構造におけるDFSのPython実装例
 
@@ -478,7 +478,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深さ優先探索（DFS: Depth-First Search）
-深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。スタック（Stack）と呼ばれるデータ構造を利用することもあります。
+深さ優先探索は、あるノードから出発し、可能な限り深く進み、行き止まりに達したら一つ前のノードに戻って探索を続けるアルゴリズムです。再帰関数を用いることで、非常にシンプルに実装することができます。[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（[Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）と呼ばれるデータ構造を利用することもあります。
 
 ### 木構造におけるDFSのPython実装例
 

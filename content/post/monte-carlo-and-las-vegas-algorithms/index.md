@@ -97,7 +97,7 @@ print(f"円周率の近似値: {pi_approx}")
 
 **乱択[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)** では、ピボットを配列の中からランダムに選びます。これにより、どのような入力データに対しても、平均計算量が $O(n \log n)$ になることが数学的に保証されます。出力される[ソート](https://kenji.blog/p/sorting-algorithms/)結果自体は常に完全に正しいです。
 
-もし[ソート](https://kenji.blog/p/sorting-algorithms/)対象の配列が数億要素あり、かつ最初からほとんど[ソート](https://kenji.blog/p/sorting-algorithms/)されている場合、通常の[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)ではスタックオーバーフローや計算時間の大幅な増加を招く危険があります。しかし、乱択[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)を用いることで、意図的に最悪ケースを引き起こすような悪意のある入力データ（DoS攻撃の一種）に対しても、安定して高速なパフォーマンスを発揮できるという強みがあります。このように、ラスベガス法はセキュリティやシステムの堅牢性向上にも役立つのです。
+もし[ソート](https://kenji.blog/p/sorting-algorithms/)対象の配列が数億要素あり、かつ最初からほとんど[ソート](https://kenji.blog/p/sorting-algorithms/)されている場合、通常の[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)では[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)オーバーフローや計算時間の大幅な増加を招く危険があります。しかし、乱択[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)を用いることで、意図的に最悪ケースを引き起こすような悪意のある入力データ（DoS攻撃の一種）に対しても、安定して高速なパフォーマンスを発揮できるという強みがあります。このように、ラスベガス法はセキュリティやシステムの堅牢性向上にも役立つのです。
 
 #### Pythonによる実装例
 

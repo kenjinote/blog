@@ -12,7 +12,7 @@ description: 'Der ultimative Leitfaden zur effizienten und schnellsten Feinabsti
 
 ## 1. Einführung: Warum gerade jetzt TinyLLaMA und On-Premises?
 
-Die Entwicklung von Large Language Models (LLM) schreitet mit enormer Geschwindigkeit voran, und dementsprechend wächst auch die Anzahl der Modellparameter stetig in die Hunderte von Milliarden. Während gigantische Modelle wie GPT-4 und Claude 3 eine beispiellose Leistung aufweisen, stellen die Rechenkosten für Inferenz und Training sowie Sicherheits- und Datenschutzbedenken bei der Nutzung externer APIs große Hürden für Unternehmen dar. Insbesondere in Geschäftsbereichen, die mit hochsensiblen internen Daten oder persönlichen Informationen umgehen, ist das Senden von Daten an öffentliche LLM-APIs in der Cloud aus Compliance-Gründen (wie DSGVO oder APPI) oft nicht zulässig.
+Die Entwicklung von [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)) schreitet mit enormer Geschwindigkeit voran, und dementsprechend wächst auch die Anzahl der Modellparameter stetig in die Hunderte von Milliarden. Während gigantische Modelle wie GPT-4 und Claude 3 eine beispiellose Leistung aufweisen, stellen die Rechenkosten für Inferenz und Training sowie Sicherheits- und Datenschutzbedenken bei der Nutzung externer APIs große Hürden für Unternehmen dar. Insbesondere in Geschäftsbereichen, die mit hochsensiblen internen Daten oder persönlichen Informationen umgehen, ist das Senden von Daten an öffentliche LLM-APIs in der Cloud aus Compliance-Gründen (wie DSGVO oder APPI) oft nicht zulässig.
 
 Daher rücken **Small Language Models (SLM)** und der **lokale Betrieb in On-Premises-Umgebungen** ins Rampenlicht. Unter diesen zeichnet sich "**TinyLLaMA**" durch seine kompakte Größe von nur 1,1B (1,1 Milliarden) Parametern aus, während es mit einem riesigen Datensatz von etwa 3 Billionen Token vortrainiert wurde. Es zeigt im Vergleich zu Modellen derselben Klasse eine erstaunliche Leistung.
 
@@ -22,7 +22,7 @@ Dieser Artikel bietet einen vollständigen Leitfaden, wie Sie TinyLLaMA in einer
 
 ## 2. Architektur und Eigenschaften von TinyLLaMA
 
-TinyLLaMA folgt der von Meta entwickelten LLaMA (Large Language Model Meta AI)-Architektur. Obwohl die Anzahl der Parameter auf 1,1B begrenzt ist, verwendet es denselben Technologie-Stack wie LLaMA 2, was zu einer extrem hohen Ökosystem-Kompatibilität führt.
+TinyLLaMA folgt der von Meta entwickelten LLaMA (Large Language Model Meta AI)-Architektur. Obwohl die Anzahl der Parameter auf 1,1B begrenzt ist, verwendet es denselben Technologie-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) wie LLaMA 2, was zu einer extrem hohen Ökosystem-Kompatibilität führt.
 
 ### Hauptkomponenten der Architektur
 
@@ -37,7 +37,7 @@ TinyLLaMA folgt der von Meta entwickelten LLaMA (Large Language Model Meta AI)-A
 4. **Grouped Query Attention (GQA):**
    Ein Ansatz, der zwischen Multi-Head Attention (MHA) und Multi-Query Attention (MQA) liegt. Durch die Gruppierung von Key- und Value-Heads wird Speicherbandbreite gespart und die Inferenzgeschwindigkeit drastisch verbessert.
 
-Das folgende Mermaid-Diagramm zeigt den allgemeinen Datenfluss und die Struktur der Transformer-Blöcke von TinyLLaMA.
+Das folgende Mermaid-Diagramm zeigt den allgemeinen Datenfluss und die Struktur der [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Blöcke von TinyLLaMA.
 
 ```mermaid
 graph TD
@@ -151,7 +151,7 @@ Um die Tensor Cores der GPU optimal zu nutzen, werden die Trainingsberechnungen 
 
 ## 6. Praxis: QLoRA Fine-Tuning Code für TinyLLaMA
 
-Lassen Sie uns nun das PyTorch-Skript für das schnellste Tuning erläutern, das alle oben genannten Optimierungen enthält. Hier verwenden wir den `SFTTrainer` aus der Bibliothek `trl` (Transformer Reinforcement Learning) von Hugging Face.
+Lassen Sie uns nun das PyTorch-Skript für das schnellste Tuning erläutern, das alle oben genannten Optimierungen enthält. Hier verwenden wir den `SFTTrainer` aus der Bibliothek `trl` ([Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) Reinforcement Learning) von Hugging Face.
 
 ### 6.1 Vorbereiten des Datensatzes und Laden des Modells
 
@@ -353,7 +353,7 @@ Damit ist ein mit der OpenAI-API kompatibler Endpunkt in der On-Premises-Umgebun
 
 Dieser Artikel erläuterte Methoden zur schnellsten und speichereffizientesten Feinabstimmung von "TinyLLaMA", einem Modell, das trotz seiner kompakten Größe von 1,1B Parametern eine hohe Leistung bietet, in einer On-Premises-Umgebung.
 
-- Durch **LoRA / QLoRA** ist ein vollwertiges LLM-Tuning auch auf Consumer-GPUs möglich.
+- Durch **LoRA / QLoRA** ist ein vollwertiges [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Tuning auch auf Consumer-GPUs möglich.
 - Die Nutzung von **Flash Attention 2** und **Gradient Checkpointing** optimiert die Trainingszeit und den VRAM-Verbrauch auf das Äußerste.
 - Durch die Bereitstellung mit **vLLM** wird auch in Produktionsumgebungen ein hoher Durchsatz erzielt.
 

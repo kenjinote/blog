@@ -50,7 +50,7 @@ graph TD
 1. **レキサー（Lexer / Tokenizer）**: 入力された生の文字列（文字の配列）を先頭から読み込み、「意味のある最小単位（トークン）」に分割します。
 2. **パーサー（Parser）**: レキサーから受け取ったトークンの列を読み込み、文法規則に従って[木構造](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)（[DOMツリー](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/)：Document Object Model）を構築します。
 
-今回の実装では、メモリ効率を高めるために、レキサーは文字列のコピーを行わず、元の入力文字列に対するポインタと長さ（`std::string_view`）を保持するように設計します。
+今回の実装では、メモリ効率を高めるために、レキサーは文字列のコピーを行わず、元の入力文字列に対する[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)と長さ（`std::string_view`）を保持するように設計します。
 
 ---
 
@@ -115,7 +115,7 @@ private:
 };
 ```
 
-上記のように設計することで、再帰的なデータ構造である `JsonArray` や `JsonObject` を簡潔かつ安全に表現できます（一部のC++標準ライブラリの実装では `std::variant` 内での不完全型の使用が制限されるため、スマートポインタを用いたヒープアロケーションが必要な場合もありますが、最新のコンパイラでは上記で動作することが多いです）。
+上記のように設計することで、再帰的なデータ構造である `JsonArray` や `JsonObject` を簡潔かつ安全に表現できます（一部のC++標準ライブラリの実装では `std::variant` 内での不完全型の使用が制限されるため、スマート[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を用いた[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)アロケーションが必要な場合もありますが、最新のコンパイラでは上記で動作することが多いです）。
 
 ---
 
@@ -256,7 +256,7 @@ private:
 };
 ```
 
-ここでのポイントは、文字列（String）や数値（Number）の値を `std::string_view` として切り出している点です。これにより、レキサーの段階では **一切の動的メモリ確保（ヒープアロケーション）やコピーが発生しません** 。これはパフォーマンスに直結する重要な設計です。
+ここでのポイントは、文字列（String）や数値（Number）の値を `std::string_view` として切り出している点です。これにより、レキサーの段階では **一切の動的メモリ確保（[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)アロケーション）やコピーが発生しません** 。これはパフォーマンスに直結する重要な設計です。
 
 ---
 
@@ -407,7 +407,7 @@ private:
 単純なパーサーを実装しただけでは、実用的なライブラリに勝つことはできません。C++ならではの最適化テクニックをいくつか紹介します。
 
 ### 6.1. Zero-Copyアーキテクチャと `std::string_view`
-パーサーのパフォーマンスボトルネックの大部分は「文字列のコピー」と「ヒープメモリの動的確保」にあります。
+パーサーのパフォーマンスボトルネックの大部分は「文字列のコピー」と「[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)メモリの動的確保」にあります。
 `std::string` を多様すると、部分文字列を作るたびにメモリアロケーションが発生します。これを防ぐために、レキサーでは徹底して `std::string_view` を使用しました。
 `std::string_view` の構築時間は文字列の長さ $L$ に依存せず $O(1)$ で完了します。
 
@@ -417,7 +417,7 @@ C++17で導入された `std::from_chars` は、ロケール非依存かつメ�
 
 ### 6.3. メモリアロケーションと `std::pmr` (Polymorphic Memory Resources)
 ASTの構築時、`std::vector` や `std::map` のノード生成によって大量の小さなアロケーション（フラグメンテーション）が発生します。
-これを回避するために、C++17の `std::pmr::monotonic_buffer_resource` をカスタムアロケータとして採用することが有効です。事前に大きなメモリブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を一度だけ確保し、そこからポインタを進めるだけでメモリを切り出すため、アロケーションコストがほぼゼロになります。
+これを回避するために、C++17の `std::pmr::monotonic_buffer_resource` をカスタムアロケータとして採用することが有効です。事前に大きなメモリブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を一度だけ確保し、そこから[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を進めるだけでメモリを切り出すため、アロケーションコストがほぼゼロになります。
 
 ### 6.4. SIMDの活用 (Advanced)
 `simdjson` などの最先端のパーサーでは、AVX2やNEONなどのSIMD命令を用いて、一度に32バイトや64バイトの文字列をスキャンします。これにより、空白のスキップやクォーテーションの探索を劇的に高速化しています。本記事の実装は文字単位のスキャンですが、更なる極みを目指す場合はブランチレス（分岐のない）プログラミングとSIMDが必須となります。
@@ -443,7 +443,7 @@ $$
 Space(N) \le C \times N \implies O(N)
 $$
 
-ただし、再帰的降下構文解析では、JSONのネストの深さ（Depth）に比例してコールスタックを消費します。深さ $D$ に対してスタックメモリ $O(D)$ が必要です。悪意のある無限ネストJSONを与えられると Stack Overflow を引き起こす危険性があるため、実用的なパーサーでは、再帰の深さに上限（例: 256や512など）を設けるか、再帰をループに展開する工夫が必要です。
+ただし、再帰的降下構文解析では、JSONのネストの深さ（Depth）に比例してコール[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を消費します。深さ $D$ に対してスタックメモリ $O(D)$ が必要です。悪意のある無限ネストJSONを与えられると [Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/) Overflow を引き起こす危険性があるため、実用的なパーサーでは、再帰の深さに上限（例: 256や512など）を設けるか、再帰をループに展開する工夫が必要です。
 
 ---
 

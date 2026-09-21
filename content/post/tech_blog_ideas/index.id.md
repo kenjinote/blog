@@ -184,7 +184,7 @@ Dengan menggunakan fitur backlink Obsidian (`[[Nama Catatan]]`), misalnya dengan
 
 ## 5. Pencarian Semantik Menggunakan Database Vektor (Pinecone) dan OpenAI Embeddings
 
-Ketika jumlah catatan bertambah menjadi ratusan hingga ribuan, akan sulit menemukan catatan yang dituju hanya dengan pencarian kata kunci biasa (pencarian teks penuh). Pencarian semantik, yang memanfaatkan Embeddings dari Large Language Model (LLM), menunjukkan kehebatannya ketika Anda ingin "Mencari catatan yang secara konsep mirip meskipun kata kuncinya tidak teringat".
+Ketika jumlah catatan bertambah menjadi ratusan hingga ribuan, akan sulit menemukan catatan yang dituju hanya dengan pencarian kata kunci biasa (pencarian teks penuh). Pencarian semantik, yang memanfaatkan Embeddings dari Large Language Model ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)), menunjukkan kehebatannya ketika Anda ingin "Mencari catatan yang secara konsep mirip meskipun kata kuncinya tidak teringat".
 
 Menggunakan model `text-embedding-ada-002` (atau `text-embedding-3-small`) dari OpenAI, setiap catatan Markdown Obsidian dikonversi menjadi vektor multi-dimensi (array numerik yang terdiri dari ratusan hingga ribuan dimensi). Di dalam ruang vektor ini, kalimat dengan makna yang mirip akan memiliki jarak fisik yang lebih dekat antar vektornya.
 

@@ -9,7 +9,7 @@ categories: ["programming", "cpp"]
 tags: ["C++", "Smart Pointers", "Memory Management", "Modern C++"]
 ---
 
-Memory management in C++ has been one of the biggest challenges for developers for many years. The traditional memory management style relying on manual `new` and `delete` has been a hotbed for serious bugs such as memory leaks, dangling pointers, and double frees. However, with the advent of Modern C++ (C++11 and later), the situation has changed dramatically. At the core of this change are "Smart Pointers".
+Memory management in C++ has been one of the biggest challenges for developers for many years. The traditional memory management style relying on manual `new` and `delete` has been a hotbed for serious bugs such as memory leaks, dangling pointers, and double frees. However, with the advent of Modern C++ (C++11 and later), the situation has changed dramatically. At the core of this change are "Smart [Pointer](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)s".
 
 In this article, we will provide an extremely detailed explanation of the mechanisms and advanced usage of `std::unique_ptr`, `std::shared_ptr`, and `std::weak_ptr`—powerful tools for eradicating memory leaks and achieving safe and efficient resource management. We will cover their internal implementation (control blocks and atomic operations), performance impact, and the mathematical formulation of reference counting.
 

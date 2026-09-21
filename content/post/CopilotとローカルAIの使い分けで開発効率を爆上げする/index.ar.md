@@ -42,7 +42,7 @@ tags: ["GitHub Copilot", "Local AI", "Workflow", "Developer Productivity"]
     *   **خصوصية مطلقة**: لا تخرج البيانات أبداً إلى شبكات خارجية. إنه مثالي للتعامل مع المشاريع شديدة السرية أو قواعد الأكواد التي تخضع لاتفاقيات عدم إفشاء صارمة (NDA).
     *   **كمون الشبكة صفر**: لا يعتمد على سرعة الاتصال بالإنترنت، بل يستجيب دائماً بسرعة ثابتة.
     *   **العمل دون اتصال بالإنترنت**: يمكن استخدام جميع الميزات حتى في البيئات المعزولة عن الشبكات الخارجية لأسباب أمنية أو أثناء السفر بالطائرة.
-    *   **تخصيص غير محدود**: يمكن ضبط النماذج بدقة (Fine-tuning) لتناسب لغات أو أطر عمل معينة، أو دمج هندسة الأوامر (Prompt Engineering) الخاصة بحرية.
+    *   **تخصيص غير محدود**: يمكن ضبط النماذج بدقة (Fine-tuning) لتناسب لغات أو أطر عمل معينة، أو دمج هندسة الأوامر ([Prompt Engineering](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/)) الخاصة بحرية.
 *   **العيوب (Cons)**:
     *   **متطلبات الأجهزة**: يتطلب التشغيل السلس أجهزة مزودة بذاكرة VRAM كافية (مثل VRAM بحجم 16GB إلى 24GB أو أكثر، أو ذاكرة موحدة بسعة 32GB أو أكثر لمعالجات سلسلة M من Apple).
     *   **حدود أداء النموذج**: بسبب قيود الأجهزة، هناك حد لحجم النموذج الذي يمكن تشغيله، وغالباً ما لا يصل إلى مستوى الاستدلال المنطقي المعقد لنماذج فئة GPT-4.
@@ -179,7 +179,7 @@ $$ L_{local} = \frac{T_{in}}{S_{process\_local}} $$
 سنقدم باختصار الخطوات المحددة لإدخال الذكاء الاصطناعي المحلي. النهج الأسهل والأقوى حالياً هو استخدام **Ollama** أو **LM Studio**.
 
 ### 6.1 تثبيت Ollama
-Ollama هو إطار عمل خفيف الوزن لتشغيل نماذج اللغة الكبيرة (LLM) في بيئة محلية. يدعم أنظمة MacOS و Windows و Linux، ويسمح بإدارة النماذج بشكل بديهي مثل [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/).
+Ollama هو إطار عمل خفيف الوزن لتشغيل نماذج اللغة الكبيرة ([LLM](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/)) في بيئة محلية. يدعم أنظمة MacOS و Windows و Linux، ويسمح بإدارة النماذج بشكل بديهي مثل [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ```bash
 # لنظام MacOS

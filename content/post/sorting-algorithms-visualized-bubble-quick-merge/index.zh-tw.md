@@ -753,7 +753,7 @@ def quick_sort(arr):
 
 快速排序的效能很大程度上取決於樞紐的選擇方式。理想情況下，若總能選擇陣列的中位數（Median）作為樞紐，陣列每次就能精確地分成兩半，遞迴深度將為 $\text{O}(\log n)$，並保證完美的 $\text{O}(n \log n)$ 複雜度。然而，嚴密尋找真正的中位數需要額外的計算成本，因此實務上會採用能在常數時間內選擇的近似手法。
 
-如果陣列在已排序的狀態下，總是選擇開頭的元素作為樞紐，分割出來的陣列其中一邊元素數為 0，另一邊為 $n-1$，遞迴深度將達到 $n$。這會導致時間複雜度變成最差的 $\text{O}(n^2)$，有時甚至有引發堆疊溢位 (Stack Overflow) 的危險。
+如果陣列在已排序的狀態下，總是選擇開頭的元素作為樞紐，分割出來的陣列其中一邊元素數為 0，另一邊為 $n-1$，遞迴深度將達到 $n$。這會導致時間複雜度變成最差的 $\text{O}(n^2)$，有時甚至有引發堆疊溢位 ([Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/) Overflow) 的危險。
 
 如果陣列在已排序的狀態下，總是選擇開頭的元素作為樞紐，分割出來的陣列其中一邊元素數為 0，另一邊為 $n-1$，遞迴深度將達到 $n$。這會導致時間複雜度變成最差的 $\text{O}(n^2)$，有時甚至有引發堆疊溢位 (Stack Overflow) 的危險。
 
@@ -884,6 +884,6 @@ def merge_sort(arr):
 - 需要穩定性，或想保證最差複雜度的情況，會選擇 **合併排序**。
 - 在記憶體限制嚴格，且希望在原地發揮穩定效能的情況，適合使用 **堆積排序**。
 
-近代程式語言（Python, Java, Rust 等）的標準函式庫中，採用了結合這些演算法長處的混合手法（如 TimSort 或 IntroSort 等），開發者自己從零開始實作排序演算法的機會已經減少。然而，理解其內部考慮了哪些權衡，將是設計更高效能且穩固軟體的重要基礎。
+近代程式語言（Python, [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 等）的標準函式庫中，採用了結合這些演算法長處的混合手法（如 TimSort 或 IntroSort 等），開發者自己從零開始實作排序演算法的機會已經減少。然而，理解其內部考慮了哪些權衡，將是設計更高效能且穩固軟體的重要基礎。
 
 希望這篇文章能對您的演算法學習與實務開發有所幫助。

@@ -142,7 +142,7 @@ def dijkstra(graph, start):
 
 ### 3.4 关于时间复杂度
 
-当使用二叉堆 (Binary Heap) 作为优先队列时，每个顶点从队列中取出1次，每条边被松弛1次。
+当使用二叉堆 (Binary [Heap](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)) 作为优先队列时，每个顶点从队列中取出1次，每条边被松弛1次。
 因此，时间复杂度为 $ O((|V| + |E|) \log |V|) $。如果使用斐波那契堆，理论上可以改进到 $ O(|E| + |V| \log |V|) $，但在实际应用中多使用二叉堆。
 
 ---

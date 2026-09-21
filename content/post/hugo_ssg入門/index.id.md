@@ -12,7 +12,7 @@ description: 'Menjelaskan secara rinci prosedur migrasi dari CMS dinamis seperti
 
 Dalam pengembangan web modern dan manajemen blog, kecepatan memuat situs, keamanan, dan pemeliharaan merupakan faktor yang sangat penting. "WordPress", yang telah lama mendominasi sebagai fondasi untuk blog dan situs perusahaan, banyak digunakan oleh pengguna karena ekosistem plugin yang fleksibel dan dasbor manajemen yang intuitif. Namun, karena ini melibatkan komunikasi dengan database dan pembuatan halaman dinamis di sisi server (pemrosesan oleh PHP), ia juga memiliki masalah seperti kerentanan terhadap lonjakan lalu lintas yang tiba-tiba dan penundaan tampilan (latensi).
 
-Oleh karena itu, dalam beberapa tahun terakhir, "Generator Situs Statis (SSG: Static Site Generator)" dengan cepat menjadi populer. Dalam artikel ini, di antara sekian banyak SSG, kita akan menggali lebih dalam tentang "**Hugo**", yang dikembangkan dengan bahasa Go dan dikenal dengan kecepatan build-nya yang luar biasa. Kita akan membahas semuanya secara menyeluruh, mulai dari perbandingan arsitektur teknis dengan CMS dinamis (Content Management System) seperti WordPress, prosedur migrasi yang konkret, evaluasi kinerja menggunakan model matematis, hingga struktur direktori spesifik Hugo dan urutan pencarian template (lookup order).
+Oleh karena itu, dalam beberapa tahun terakhir, "Generator Situs Statis (SSG: Static Site Generator)" dengan cepat menjadi populer. Dalam artikel ini, di antara sekian banyak SSG, kita akan menggali lebih dalam tentang "**Hugo**", yang dikembangkan dengan bahasa [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) dan dikenal dengan kecepatan build-nya yang luar biasa. Kita akan membahas semuanya secara menyeluruh, mulai dari perbandingan arsitektur teknis dengan CMS dinamis (Content Management System) seperti WordPress, prosedur migrasi yang konkret, evaluasi kinerja menggunakan model matematis, hingga struktur direktori spesifik Hugo dan urutan pencarian template (lookup order).
 
 ---
 
@@ -189,7 +189,7 @@ Untuk mengeluarkan data WordPress untuk Hugo, cara termudah dan paling dapat dia
 2. **Skrip buatan sendiri menggunakan API WordPress**
    Ini adalah metode untuk membuat skrip sendiri menggunakan Python atau Node.js dll. untuk memanggil [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) WordPress (`/wp-json/wp/v2/posts`), mengurai data JSON, dan membuat file Markdown sendiri. Ini efektif untuk situs yang banyak menggunakan bidang khusus kompleks (seperti ACF) yang tidak dapat ditangani oleh plugin.
 3. **Memanfaatkan alat wp2hugo**
-   Ada juga pendekatan yang menggunakan alat CLI yang ditulis dalam bahasa Go dll. untuk mengubah secara langsung dari file XML ekspor WordPress (WXR) ke format Hugo.
+   Ada juga pendekatan yang menggunakan alat CLI yang ditulis dalam bahasa [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) dll. untuk mengubah secara langsung dari file XML ekspor WordPress (WXR) ke format Hugo.
 
 ### 4.2 Mempertahankan Struktur Permalink (URL)
 
@@ -212,7 +212,7 @@ Ini dapat dihapus sekaligus menggunakan skrip pengganti (sed atau Python), atau 
 
 ## 5. Alat CLI Hugo serta Proses Build dan Deploy
 
-Setelah proses migrasi selesai, saatnya menggunakan Hugo untuk mem-build situs dan mempublikasikannya ke dunia. Tersedia sebagai biner bahasa Go, Hugo menawarkan kecepatan yang luar biasa, mampu menyelesaikan build hanya dalam beberapa detik bahkan untuk situs dengan ribuan hingga puluhan ribu halaman.
+Setelah proses migrasi selesai, saatnya menggunakan Hugo untuk mem-build situs dan mempublikasikannya ke dunia. Tersedia sebagai biner bahasa [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), Hugo menawarkan kecepatan yang luar biasa, mampu menyelesaikan build hanya dalam beberapa detik bahkan untuk situs dengan ribuan hingga puluhan ribu halaman.
 
 ### 5.1 Memulai Server untuk Pengembangan Lokal
 
@@ -315,7 +315,7 @@ Dalam kasus Hugo, alat itu sendiri hanya perlu diperbarui jika perlu, dan kode s
 
 ## 7. Kesimpulan
 
-Dalam artikel ini, kami telah menjelaskan secara terperinci tentang migrasi dari CMS dinamis seperti WordPress ke "Hugo", generator situs statis yang kuat berbasis bahasa Go, mulai dari perbedaan arsitektur teknis, pembuktian kinerja dengan model matematika, hingga prosedur migrasi yang spesifik.
+Dalam artikel ini, kami telah menjelaskan secara terperinci tentang migrasi dari CMS dinamis seperti WordPress ke "Hugo", generator situs statis yang kuat berbasis bahasa [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), mulai dari perbedaan arsitektur teknis, pembuktian kinerja dengan model matematika, hingga prosedur migrasi yang spesifik.
 
 Migrasi ke generator situs statis memang memerlukan biaya pembelajaran awal (seperti operasi Git, sintaks Markdown, menjalankan perintah CLI dari terminal, memahami spesifikasi mesin template, dll.), tetapi akan memberikan imbal hasil (return) yang lebih dari sekadar menggantikannya, seperti "kecepatan tampilan yang luar biasa", "keamanan yang tangguh", dan "bebas dari pemeliharaan".
 

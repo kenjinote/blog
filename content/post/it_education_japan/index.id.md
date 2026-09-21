@@ -74,7 +74,7 @@ Berikut adalah rata-rata kompleksitas waktu dari algoritma pengurutan yang umum 
 - Insertion Sort: $O(N^2)$
 - Merge Sort: $O(N \log N)$
 - Quick Sort: $O(N \log N)$
-- Heap Sort: $O(N \log N)$
+- [Heap](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) Sort: $O(N \log N)$
 
 Sebagai contoh, kompleksitas waktu dari Merge Sort $T(N)$, berdasarkan paradigma bagi dan taklukkan (Divide and Conquer), direpresentasikan oleh relasi rekurensi berikut:
 
@@ -200,7 +200,7 @@ Tantangan terakhir sekaligus yang bisa disebut krisis nasional bagi pendidikan T
 
 Di Inggris (UK), mata pelajaran "Komputasi (Computing)" telah diwajibkan sejak usia 5 tahun (Key Stage 1) sejak tahun 2014. Kurikulum mereka bukan sekadar "pengalaman pemrograman", melainkan mencakup ilmu komputer akademis dan sistematis seutuhnya, termasuk desain algoritma yang logis, pemahaman tentang sirkuit logika dengan aljabar Boolean, topologi jaringan, hingga arsitektur perangkat keras.
 
-Di Amerika Serikat, terdapat standar kurikulum K-12 yang ketat (dari taman kanak-kanak hingga lulus SMA) yang ditetapkan oleh CSTA (Computer Science Teachers Association). Pada kelas Computer Science A AP (Advanced Placement) yang diambil oleh siswa sekolah menengah, mereka dituntut memahami secara mendalam pemrograman berorientasi objek yang otentik menggunakan Java, polimorfisme, pemrosesan rekursif, implementasi struktur data, dan evaluasi kompleksitas algoritma dengan standar tinggi yang setara dengan mahasiswa tingkat pertama di universitas. Kita tak perlu menyebutkan lagi intensitas pendidikan STEM di India maupun Cina, serta banyaknya jumlah elit yang dihasilkan oleh mereka.
+Di Amerika Serikat, terdapat standar kurikulum K-12 yang ketat (dari taman kanak-kanak hingga lulus SMA) yang ditetapkan oleh CSTA (Computer Science Teachers Association). Pada kelas Computer Science A AP (Advanced Placement) yang diambil oleh siswa sekolah menengah, mereka dituntut memahami secara mendalam pemrograman berorientasi objek yang otentik menggunakan [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), polimorfisme, pemrosesan rekursif, implementasi struktur data, dan evaluasi kompleksitas algoritma dengan standar tinggi yang setara dengan mahasiswa tingkat pertama di universitas. Kita tak perlu menyebutkan lagi intensitas pendidikan STEM di India maupun Cina, serta banyaknya jumlah elit yang dihasilkan oleh mereka.
 
 ### Jurang Kesempatan antara Keterampilan yang Dituntut dan yang Diajarkan
 
@@ -219,7 +219,7 @@ xychart-beta
 
 Untuk menjembatani kesenjangan besar ini (Death Valley), diperlukan sebuah perubahan paradigma fundamental dalam sistem pendidikan sekolah, ditambah dengan investasi yang sangat besar. Mengingat kurangnya jumlah tenaga pengajar khusus jurusan "Informasi" secara nasional, di mana banyak tenaga pengajar dari bidang matematika, sains, atau ekonomi rumah tangga yang hanya mengajar pemrograman sebagai kerja sampingan dan belum mendapatkan pelatihan yang cukup, maka sistem saat ini jelas tak akan mampu menghasilkan perekayasa papan atas kelas dunia.
 
-## 9. Penurunan Nilai "Coding" di Era AI (LLM)
+## 9. Penurunan Nilai "Coding" di Era AI ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/))
 
 Situasi ini menjadi semakin kompleks dengan menjamurnya asisten pemrograman AI seperti Large Language Model (LLM) semisal ChatGPT dan GitHub Copilot. Di masa kini, AI dapat langsung membuat kode secara sempurna berdasarkan instruksi menggunakan bahasa alami, dan bahkan sekaligus menuliskan kode tes. Nilai jual seorang "Coder", yaitu mereka yang hanya "paham tata bahasa Python" atau "paham cara menjalankan API", telah jatuh drastis.
 

@@ -10,9 +10,9 @@ tags: ["llama.cpp", "GGUF", "Quantization", "LLM"]
 description: '结合数学公式和架构图，非常详细地讲解llama.cpp中采用的GGUF格式以及k-quants量化技术的内部结构。'
 ---
 
-## 1. 引言：为什么LLM需要量化？
+## 1. 引言：为什么[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)需要量化？
 
-近年来，大规模语言模型（LLM: Large Language Models）的进化非常显著，但在其背后，“计算资源枯竭”和“内存带宽瓶颈”这两个严重的问题浮出水面。例如，如果将 Llama 3 这样具有 70B（700亿）参数的模型以标准的 16位浮点数（FP16）加载到内存中，仅参数就会消耗约 140GB 的 VRAM/RAM。如果再加上推理时的上下文（KV缓存），除非将多台面向数据中心的高端GPU（NVIDIA A100 80GB 或 H100 80GB）进行集群，否则无法运行。
+近年来，大规模语言模型（LLM: [Large Language Models](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的进化非常显著，但在其背后，“计算资源枯竭”和“内存带宽瓶颈”这两个严重的问题浮出水面。例如，如果将 Llama 3 这样具有 70B（700亿）参数的模型以标准的 16位浮点数（FP16）加载到内存中，仅参数就会消耗约 140GB 的 VRAM/RAM。如果再加上推理时的上下文（KV缓存），除非将多台面向数据中心的高端GPU（NVIDIA A100 80GB 或 H100 80GB）进行集群，否则无法运行。
 
 为了让个人开发者和边缘设备（MacBook或一般的游戏PC）也能运行LLM， **llama.cpp** 及其核心的 ** 量化（Quantization）技术 ** 作为救世主应运而生。特别是名为 **GGUF (GPT-Generated Unified Format)** 的文件格式以及被称为 **k-quants** 的高级块级量化算法，这是一种在极力抑制模型精度（Perplexity）下降的同时，将模型大小压缩到几分之一的突破性方法。
 
@@ -175,7 +175,7 @@ llama.cpp 根据不同目的提供了多种变体。“K” 后面的后缀（S,
 
 ## 5. 推理时的性能优化：SIMD 与 CUDA 架构
 
-仅仅将 GGUF 模型加载到内存中，推理并不会变快。LLM 推理的大部分是“矩阵乘法（Matrix-Vector Multiplication，简称 GEMV，或 Matrix-Matrix，GEMM）”。关键在于如何加速量化后的权重与保持为 FP16（或 FP32）的激活值（输入数据）之间的乘加运算。
+仅仅将 GGUF 模型加载到内存中，推理并不会变快。[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 推理的大部分是“矩阵乘法（Matrix-Vector Multiplication，简称 GEMV，或 Matrix-Matrix，GEMM）”。关键在于如何加速量化后的权重与保持为 FP16（或 FP32）的激活值（输入数据）之间的乘加运算。
 
 ### 5.1. CPU环境下的 SIMD 指令利用
 
@@ -226,7 +226,7 @@ sequenceDiagram
 | **Llama-3-8B (Q2_K)** | 约 3.0 GB | 4.5 GB以上 | 高速 | 明显劣化 |
 
 **注意点 (KV缓存的影响):**
-在 LLM 推理中，如果上下文长度（提示词的 Token 数）变长，不仅是模型的权重，保存过去 Attention 状态的 **KV缓存** 的内存消耗也会爆炸式增加。
+在 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 推理中，如果上下文长度（提示词的 Token 数）变长，不仅是模型的权重，保存过去 Attention 状态的 **KV缓存** 的内存消耗也会爆炸式增加。
 例如上下文为 8192 个 Token 时，仅 KV缓存 就会消耗数 GB。因此，在实际应用中，需要保留 `模型文件大小 + 约1.5GB～3GB` 的余量（Headroom）。推荐使用 Q4_K_M 的原因在于，即使保留了这个 KV缓存，它也是能在配备普通 8GB VRAM 的 GPU（如 RTX 3060 / 4060 等）上安全运行的绝佳折中方案。
 
 最近的 llama.cpp 还加入了 **将 KV缓存本身用 Q8_0 或 Q4_0 进行量化** 的功能，为了进一步延长上下文长度而不断进行着各种创新。
@@ -237,7 +237,7 @@ sequenceDiagram
 
 本文深入挖掘并讲解了作为 llama.cpp 心脏的 GGUF 格式以及 k-quants 量化技术的内部结构。
 
-1. **GGUF的灵活性：** 凭借键值对型的元数据结构，构建了一个强大的生态系统，即使面对 LLM 的快速进化（新模型架构的出现），也能在不产生破坏性更改的情况下跟上步伐。
+1. **GGUF的灵活性：** 凭借键值对型的元数据结构，构建了一个强大的生态系统，即使面对 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 的快速进化（新模型架构的出现），也能在不产生破坏性更改的情况下跟上步伐。
 2. **k-quants带来的极限压缩：** 通过超级块和子块的层次化缩放因子管理，在保留异常值信息的同时，实现了每个权重平均 4.8 位（Q4_K_M）的惊人压缩。
 3. **消除内存带宽瓶颈：** 通过在 SIMD 和 CUDA 中的高级内核实现，在实时反量化的同时进行计算，从而减少了 VRAM 传输量，显著提升了推理速度。
 

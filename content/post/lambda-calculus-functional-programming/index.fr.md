@@ -16,7 +16,7 @@ tags:
 
 ## 1. Introduction : La philosophie sous-jacente à la programmation fonctionnelle
 
-Dans le développement logiciel moderne, la **programmation fonctionnelle** ([Functional Programming](https://kenji.blog/fr/p/oop-vs-fp-vs-dop/)) n'est plus une approche réservée à quelques passionnés, mais un paradigme largement répandu. Des technologies front-end comme React aux langages orientés objet tels que Java et C#, en passant par [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) et Scala, des concepts tels que le traitement des fonctions comme des objets de première classe et l'élimination des effets de bord ont été adoptés.
+Dans le développement logiciel moderne, la **programmation fonctionnelle** ([Functional Programming](https://kenji.blog/fr/p/oop-vs-fp-vs-dop/)) n'est plus une approche réservée à quelques passionnés, mais un paradigme largement répandu. Des technologies front-end comme React aux langages orientés objet tels que [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) et C#, en passant par [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) et Scala, des concepts tels que le traitement des fonctions comme des objets de première classe et l'élimination des effets de bord ont été adoptés.
 
 Cependant, derrière ce paradigme se cache une théorie mathématique profonde élaborée dans les années 1930, bien avant la naissance physique des ordinateurs. Il s'agit du **lambda-calcul** ( $\lambda$-calculus ) proposé par Alonzo Church.
 
@@ -219,7 +219,7 @@ firstTenEvens = take 10 (map (*2) naturals)
 
 ### 8.2 Les monades (Monads) et la gestion des effets de bord
 
-Dans les langages fonctionnels purs, la gestion des « effets de bord » (Side Effects), tels que les entrées/sorties ou les changements d'état, tout en maintenant la pureté mathématique (transparence référentielle), a longtemps été un défi. Haskell a élégamment résolu ce problème en introduisant le concept de **Monade** (Monad) issu de la théorie des catégories (Category Theory).
+Dans les langages fonctionnels purs, la gestion des « effets de bord » (Side Effects), tels que les entrées/sorties ou les changements d'état, tout en maintenant la pureté mathématique (transparence référentielle), a longtemps été un défi. Haskell a élégamment résolu ce problème en introduisant le concept de **Monade** ([Monad](https://kenji.blog/fr/p/functional-programming-concepts-pure-functions-monads/)) issu de la théorie des catégories (Category Theory).
 
 Avec la monade IO, Haskell a réussi à séparer complètement le « calcul » de « l'exécution avec effets de bord » au niveau du système de types.
 

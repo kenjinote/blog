@@ -326,7 +326,7 @@ int main() {
 }
 ```
 
-## 6.2 Hazard Pointers और RCU (Read-Copy Update)
+## 6.2 Hazard [Pointer](https://kenji.blog/hi/p/c-language-pointers-memory-management-stack-heap/)s और RCU (Read-Copy Update)
 
 **Hazard Pointers** (`std::hazard_pointer`) और **RCU** (`std::rcu`) को लॉक-फ्री (lock-free) डेटा संरचनाओं के कार्यान्वयन का समर्थन करने के लिए मानक सुविधाओं के रूप में मानकीकृत किया गया है। इसने C++ में उच्च-प्रदर्शन समवर्ती डेटा संरचनाओं (concurrent data structures) को लागू करने की बाधा को काफी कम कर दिया है।
 
@@ -359,7 +359,7 @@ C++26 वास्तव में एक ऐतिहासिक संस्�
 *   **रिफ्लेक्शन** मेटाप्रोग्रामिंग की जटिलता को दूर करता है और $O(1)$ AST एक्सेस को सक्षम बनाता है।
 *   **कॉन्ट्रैक्ट प्रोग्रामिंग** आपको फ़ंक्शन की पूर्व-शर्तों और पश्च-शर्तों को स्पष्ट करके मज़बूत प्रोग्राम बनाने की अनुमति देती है।
 *   **पैटर्न मैचिंग** जटिल शाखाओं (branching) और राज्य संक्रमण (state transitions) को सहज और सुरक्षित रूप से वर्णित करने में मदद करती है।
-*   **Senders/Receivers** और **RCU / Hazard Pointers** समवर्ती प्रसंस्करण (concurrent processing) का मानकीकरण करते हैं जो चरम प्रदर्शन को प्राप्त करता है।
+*   **Senders/Receivers** और **RCU / Hazard [Pointer](https://kenji.blog/hi/p/c-language-pointers-memory-management-stack-heap/)s** समवर्ती प्रसंस्करण (concurrent processing) का मानकीकरण करते हैं जो चरम प्रदर्शन को प्राप्त करता है।
 
 इन सुविधाओं का उचित रूप से उपयोग करके, आप C++ की सबसे बड़ी ताकत, "शून्य-ओवरहेड अमूर्तता (Zero-overhead Abstraction)" को उच्च स्तर पर और आश्चर्यजनक रूप से साफ कोड के साथ प्राप्त कर सकते हैं।
 

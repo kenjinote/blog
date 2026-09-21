@@ -81,7 +81,7 @@ Um den Traffic von Suchmaschinen (organischer Traffic) zu maximieren, ist es not
 
 2. **Systematischer Lern-/Review-Typ (Learning & Review Intent)**
    - Beispiel für Suchbegriffe: `React vs Vue 2026 Vergleich`, `Rust asynchrone Programmierung Einführung`, `GCP Netzwerkarchitektur Design`
-   - Psychologie: Man möchte einen neuen Technologie-Stack auswählen oder das grundlegende Verständnis vertiefen und ist bereit, sich Zeit zum Lesen zu nehmen.
+   - Psychologie: Man möchte einen neuen Technologie-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) auswählen oder das grundlegende Verständnis vertiefen und ist bereit, sich Zeit zum Lesen zu nehmen.
    - Strategie: Erweitern Sie das Inhaltsverzeichnis (TOC) und verwenden Sie viele Illustrationen und Architekturdiagramme (Mermaid usw.). Vergleichen Sie Vor- und Nachteile objektiv und integrieren Sie Anwendungsfälle dafür, wie sie in der tatsächlichen Arbeit eingesetzt werden können, um die Verweildauer zu verlängern.
 
 ### 2.2 Exponentielles Zerfallsmodell des Traffics und Long-Tail-Strategie

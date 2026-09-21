@@ -11,7 +11,7 @@ description: 'Menjelaskan langkah demi langkah, dari pembuatan proyek hingga imp
 
 Anda dapat menampilkan MessageBox di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) dengan mengikuti langkah-langkah di bawah ini.
 
-1. Instal Rust. Lihat [Cara memulai Rust](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/)
+1. Instal [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/). Lihat [Cara memulai Rust](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/)
 2. Jalankan `cargo new --bin MessageBox` di command prompt.
 3. Pindah ke direktori `MessageBox`.
 4. Buka `Cargo.toml` dan modifikasi seperti di bawah ini.

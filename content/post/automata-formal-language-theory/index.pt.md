@@ -168,7 +168,7 @@ Para representar o balanceamento de parênteses, que não pode ser expresso por 
 
 ### Autômatos com Pilha (PDA)
 
-O modelo computacional que reconhece as linguagens livres de contexto é o **Autômato com Pilha** (Pushdown Automaton, PDA). Um PDA é um autômato finito ao qual se adiciona uma **Pilha** (Stack, uma memória do tipo último a entrar, primeiro a sair). O uso de uma pilha permite fazer coisas como "lembrar o número de parênteses abertos e consumi-los cada vez que um parêntese de fechamento aparece".
+O modelo computacional que reconhece as linguagens livres de contexto é o **Autômato com Pilha** (Pushdown Automaton, PDA). Um PDA é um autômato finito ao qual se adiciona uma **Pilha** ([Stack](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/), uma memória do tipo último a entrar, primeiro a sair). O uso de uma pilha permite fazer coisas como "lembrar o número de parênteses abertos e consumi-los cada vez que um parêntese de fechamento aparece".
 
 #### Exemplo prático: PDA que aceita $ a^n b^n $
 
@@ -286,7 +286,7 @@ As teorias que vimos até agora não estão, de forma alguma, restritas a uma to
 
 ### A Armadilha dos Motores Regex (Catastrophic Backtracking)
 
-Os motores de expressões regulares embutidos em muitas linguagens de programação (Java, Python, Ruby, JavaScript, etc.) não são DFAs puros e teóricos, mas sim implementados com base em um NFA com retrocesso (backtracking engine).
+Os motores de expressões regulares embutidos em muitas linguagens de programação ([Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), Python, Ruby, JavaScript, etc.) não são DFAs puros e teóricos, mas sim implementados com base em um NFA com retrocesso (backtracking engine).
 
 Por causa disso, se você fornecer uma cadeia de caracteres astuta a um padrão específico de expressão regular (ex.: `(a+)+$`), a complexidade de tempo explode exponencialmente, o que pode causar uma vulnerabilidade chamada **ReDoS** (Regular Expression Denial of [Service](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/)), onde o sistema congela. Se você conhecer a teoria, poderá pensar logicamente por que o retrocesso (backtracking) ocorre e como reescrever o padrão para reduzi-lo a um processamento seguro equivalente a um DFA.
 

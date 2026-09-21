@@ -110,7 +110,7 @@ $$
 En la fórmula anterior, $S_t$ es el estado global actual de Ethereum (el saldo de cada cuenta y el almacenamiento de los contratos), $T$ es la transacción, $\Upsilon$ es la función de transición de estado de la EVM y $S_{t+1}$ indica el nuevo estado después de ejecutar la transacción.
 
 La estructura interna de la EVM se divide principalmente en las siguientes áreas:
-- ** Pila (Stack) **: Estructura de datos LIFO (último en entrar, primero en salir) con un máximo de 1024 elementos. Tamaño de palabra de 256 bits. Almacena los operandos para varias operaciones.
+- ** Pila ([Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)) **: Estructura de datos LIFO (último en entrar, primero en salir) con un máximo de 1024 elementos. Tamaño de palabra de 256 bits. Almacena los operandos para varias operaciones.
 - ** Memoria (Memory) **: Arreglo de bytes volátil que se mantiene temporalmente solo durante la ejecución de la transacción.
 - ** Almacenamiento (Storage) **: Área de datos persistente asignada a cada contrato. Consiste en una base de datos clave-valor (256 bits a 256 bits) y las operaciones de escritura incurren en altos costos de gas (tarifas).
 

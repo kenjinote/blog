@@ -49,7 +49,7 @@ This learning method, named after physicist Richard Feynman, is based on the pri
 1. Write the concept you want to learn at the top of a piece of paper.
 2. Write out the concept in plain words, as if you were teaching an "eighth grader (or a rubber duck)".
 3. The parts where you get stuck or resort to jargon represent "gaps in your understanding".
-4. Go back to the textbook and review those parts.
+4. [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) back to the textbook and review those parts.
 
 It is very dangerous to think you understand something just from a string of formulas. It can only be called true understanding when you can explain the "physical intuition" or "behavior of the algorithm" meant by the formula in natural language.
 

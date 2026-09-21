@@ -12,7 +12,7 @@ description: 'A falta de VRAM (memória da GPU) é a maior barreira no treinamen
 
 # Introdução: Desenvolvimento de IA e a "Barreira da VRAM"
 
-Nos últimos anos, tecnologias de IA generativa, como Modelos de Linguagem de Grande Escala (LLM) e Modelos de Difusão (Diffusion Models), têm alcançado um rápido desenvolvimento. No entanto, ao treinar (fine-tuning) ou executar inferência (Inference) desses modelos de IA de ponta em ambientes locais, muitos desenvolvedores e pesquisadores enfrentam uma barreira extremamente física: a **"falta de memória da GPU (VRAM)"**.
+Nos últimos anos, tecnologias de IA generativa, como Modelos de Linguagem de Grande Escala ([LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/)) e Modelos de Difusão (Diffusion Models), têm alcançado um rápido desenvolvimento. No entanto, ao treinar (fine-tuning) ou executar inferência (Inference) desses modelos de IA de ponta em ambientes locais, muitos desenvolvedores e pesquisadores enfrentam uma barreira extremamente física: a **"falta de memória da GPU (VRAM)"**.
 
 Mesmo em GPUs de ponta para consumidores, como a NVIDIA GeForce RTX 4090, a VRAM é de no máximo 24 GB, o que torna completamente impossível carregar um modelo gigante como o Llama 3 70B em sua forma original. GPUs voltadas para data centers, como H100 (80GB) e B200 (192GB), são extremamente caras e não são algo que indivíduos ou pequenas equipes possam acessar facilmente. Se não conseguirmos superar essa "Barreira da VRAM (The Wall of VRAM)", não poderemos sequer tocar nos modelos mais avançados.
 
@@ -47,7 +47,7 @@ Em outras palavras, puramente carregar os pesos do modelo na GPU consumirá 16 G
 ## 1.2 Consumo de Memória Durante a Inferência: Aumento do Cache KV
 
 Durante a inferência de LLMs (especialmente na geração de texto autorregressiva), o **Cache KV ([Key-Value](https://kenji.blog/pt/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)** pressiona a VRAM tão ou mais intensamente do que os próprios pesos.
-Na arquitetura Transformer, para evitar o recálculo de informações de tokens gerados ou processados no passado, os tensores de Key e Value em cada camada de atenção são mantidos em cache na VRAM. Isso melhora a velocidade de cálculo (Compute), mas o consumo de memória aumenta linearmente e de forma explosiva à medida que o comprimento do contexto (comprimento do prompt de entrada + comprimento do texto gerado) aumenta.
+Na arquitetura [Transformer](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/), para evitar o recálculo de informações de tokens gerados ou processados no passado, os tensores de Key e Value em cada camada de atenção são mantidos em cache na VRAM. Isso melhora a velocidade de cálculo (Compute), mas o consumo de memória aumenta linearmente e de forma explosiva à medida que o comprimento do contexto (comprimento do prompt de entrada + comprimento do texto gerado) aumenta.
 
 A quantidade de memória de cache KV $M_{kv\_token}$ consumida ao processar 1 token é rigorosamente calculada pela seguinte fórmula com base na arquitetura do modelo:
 
@@ -112,7 +112,7 @@ graph TD
 ```
 
 **Mecanismos e Desafios:**
-Como o modelo Transformer tem uma estrutura na qual as camadas são empilhadas em série, o cálculo da próxima camada não começará até que o cálculo de uma certa camada termine. Aproveitando isso, mantemos residentes (fixadas) na VRAM apenas as camadas que cabem na GPU (por exemplo, camadas de 1 a 15) e colocamos as camadas restantes (camadas de 16 a 32) na CPU RAM, que tem uma grande capacidade, mas baixa velocidade. Durante a inferência, quando o cálculo até a 15ª camada terminar, os pesos da 16ª camada são transferidos (copiados) da CPU para a GPU pelo barramento PCIe, e o cálculo é executado na GPU.
+Como o modelo [Transformer](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) tem uma estrutura na qual as camadas são empilhadas em série, o cálculo da próxima camada não começará até que o cálculo de uma certa camada termine. Aproveitando isso, mantemos residentes (fixadas) na VRAM apenas as camadas que cabem na GPU (por exemplo, camadas de 1 a 15) e colocamos as camadas restantes (camadas de 16 a 32) na CPU RAM, que tem uma grande capacidade, mas baixa velocidade. Durante a inferência, quando o cálculo até a 15ª camada terminar, os pesos da 16ª camada são transferidos (copiados) da CPU para a GPU pelo barramento PCIe, e o cálculo é executado na GPU.
 
 No entanto, **a largura de banda (Bandwidth) do PCIe se torna um gargalo severo**. A largura de banda máxima teórica do PCIe 4.0 x16 é de 32 GB/s (unidirecional), o que é duas ordens de grandeza mais lento em comparação à largura de banda interna de VRAM das GPUs mais recentes (por exemplo, a GDDR6X da RTX 4090 atinge 1008 GB/s, e a HBM3 da H100, mais de 3 TB/s). Assim, se usarmos o CPU offloading excessivamente, a velocidade de inferência (Tokens per Second) cairá drasticamente.
 Para minimizar a degradação da velocidade, o ponto-chave prático é colocar o maior número possível de camadas na GPU (maximizar as GPU Layers) e minimizar as camadas descarregadas (offloaded).
@@ -139,7 +139,7 @@ graph LR
 
 ## 2.3 FlashAttention: Rompendo a Complexidade de Memória do Cálculo de Atenção
 
-A falta de VRAM não é causada apenas pela quantidade de memória que armazena os dados, mas também pela falta de "espaço de trabalho (workspace) temporário" durante o cálculo. O mecanismo Self-Attention padrão do Transformer precisa materializar (Materialize) uma gigantesca matriz de atenção de $N \times N$ na VRAM para um comprimento de sequência $N$. Isso resulta numa complexidade de memória de $O(N^2)$, tornando-se o principal motivo de erros OOM em longos contextos.
+A falta de VRAM não é causada apenas pela quantidade de memória que armazena os dados, mas também pela falta de "espaço de trabalho (workspace) temporário" durante o cálculo. O mecanismo Self-Attention padrão do [Transformer](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) precisa materializar (Materialize) uma gigantesca matriz de atenção de $N \times N$ na VRAM para um comprimento de sequência $N$. Isso resulta numa complexidade de memória de $O(N^2)$, tornando-se o principal motivo de erros OOM em longos contextos.
 
 Isso foi resolvido com o **FlashAttention** (e FlashAttention-2, 3).
 O FlashAttention é um algoritmo projetado com base na arquitetura de hardware das GPUs (uma estrutura hierárquica entre uma enorme, mas lenta HBM e uma minúscula, mas ultrarrápida SRAM). Ao usar uma técnica chamada particionamento em blocos (Tiling), ele carrega os dados em blocos para a SRAM e conclui ali os cálculos da atenção, evitando completamente o processo de gravar a matriz $N \times N$ para a HBM (VRAM).

@@ -9,7 +9,7 @@ categories: ["ai", "programming", "api"]
 tags: ["Ollama", "LLM Local", "Python", "Node.js"]
 ---
 
-# Introduction : Pourquoi avons-nous besoin d'un LLM local ?
+# Introduction : Pourquoi avons-nous besoin d'un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) local ?
 
 Avec l'essor des grands modèles de langage (LLM), nos modes de vie et nos méthodes de développement ont subi des changements radicaux. Les puissants services d'IA basés sur le cloud, tels que ChatGPT, Claude et Gemini, continuent d'évoluer chaque jour, offrant des capacités de raisonnement extrêmement avancées. Cependant, les LLM basés sur le cloud ne sont pas toujours optimaux pour tous les cas d'utilisation. Les LLM cloud présentent les défis suivants :
 
@@ -32,9 +32,9 @@ Ollama masque ces complexités et permet de manipuler les LLM avec une facilité
 
 ## Technologie de base : un wrapper pour llama.cpp
 
-L'arrière-plan du moteur d'inférence d'Ollama est propulsé par "**llama.cpp**", une bibliothèque d'inférence de LLM rapide implémentée en C/C++. llama.cpp a la capacité d'exécuter des modèles en tirant parti au maximum des performances matérielles, que ce soit sur Apple Silicon (Metal), NVIDIA GPU (CUDA), AMD GPU (ROCm) ou même dans des environnements limités au CPU.
+L'arrière-plan du moteur d'inférence d'Ollama est propulsé par "**llama.cpp**", une bibliothèque d'inférence de [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) rapide implémentée en C/C++. llama.cpp a la capacité d'exécuter des modèles en tirant parti au maximum des performances matérielles, que ce soit sur Apple Silicon (Metal), NVIDIA GPU (CUDA), AMD GPU (ROCm) ou même dans des environnements limités au CPU.
 
-Ollama intègre llama.cpp et adopte une architecture où un processus serveur écrit en langage Go fournit une API REST et appelle le moteur d'inférence de llama.cpp en arrière-plan.
+Ollama intègre llama.cpp et adopte une architecture où un processus serveur écrit en langage [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) fournit une API REST et appelle le moteur d'inférence de llama.cpp en arrière-plan.
 
 Le diagramme Mermaid ci-dessous montre l'architecture globale d'Ollama.
 
@@ -118,7 +118,7 @@ Dans la bibliothèque de modèles d'Ollama, vous pouvez spécifier les versions 
 
 ### Qu'est-ce que la quantification (Quantization) ?
 
-Abordons brièvement la quantification. Les LLM normaux conservent un paramètre de poids sous forme de nombre à virgule flottante de 16 bits (FP16), par exemple. Pour un modèle de 8 milliards (8B) de paramètres, les poids seuls consommeront environ 16 Go de VRAM. La quantification est une technologie qui compresse cela dans un format entier de 4 bits (Q4) ou de 8 bits (Q8).
+Abordons brièvement la quantification. Les [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) normaux conservent un paramètre de poids sous forme de nombre à virgule flottante de 16 bits (FP16), par exemple. Pour un modèle de 8 milliards (8B) de paramètres, les poids seuls consommeront environ 16 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de VRAM. La quantification est une technologie qui compresse cela dans un format entier de 4 bits (Q4) ou de 8 bits (Q8).
 
 La quantification peut réduire considérablement la quantité de mémoire et de bande passante mémoire requises tout en minimisant la dégradation de la précision du modèle. Les modèles distribués par Ollama sont par défaut au format GGUF avec une quantification optimale appliquée (souvent 4 bits).
 
@@ -239,7 +239,7 @@ Le tableau `context` contient l'état de la conversation passée encodé, ce qui
 
 ## Génération de dialogue avec /api/chat
 
-Puisque les LLM récents sont affinés (fine-tunés) dans un format de chat, il est recommandé d'utiliser `/api/chat` pour le développement d'applications.
+Puisque les [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) récents sont affinés (fine-tunés) dans un format de chat, il est recommandé d'utiliser `/api/chat` pour le développement d'applications.
 
 ```bash
 curl -X POST http://localhost:11434/api/chat -d '{
@@ -341,7 +341,7 @@ Il est possible d'exécuter localement les puissantes fonctionnalités de chaîn
 
 # Intégration avec des applications Node.js
 
-[Pour les ingénieurs](https://kenji.blog/fr/p/[エンジニア向け](https://kenji.blog/fr/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)プロンプトエンジニアリングの基本と開発への応用/) front-end ou les développeurs full-stack, pouvoir appeler un LLM local à partir d'un environnement TypeScript/Node.js est un énorme avantage. Nous utiliserons le package NPM officiel `ollama`.
+[Pour les ingénieurs](https://kenji.blog/fr/p/[エンジニア向け](https://kenji.blog/fr/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)[プロンプトエンジニアリング](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)の基本と開発への応用/) front-end ou les développeurs full-stack, pouvoir appeler un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) local à partir d'un environnement TypeScript/Node.js est un énorme avantage. Nous utiliserons le package NPM officiel `ollama`.
 
 ## Installation
 
@@ -421,7 +421,7 @@ app.listen(3000, () => {
 
 # Métriques de performance et analyse mathématique
 
-Pour offrir un LLM local à un niveau viable pour une utilisation en production, l'analyse de la latence et du débit est indispensable. Les réponses de l'API d'Ollama incluent des métriques détaillées concernant les performances.
+Pour offrir un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) local à un niveau viable pour une utilisation en production, l'analyse de la latence et du débit est indispensable. Les réponses de l'API d'Ollama incluent des métriques détaillées concernant les performances.
 
 ## Modèle de calcul de la vitesse de génération de jetons
 
@@ -468,13 +468,13 @@ $$
 
 - $P$ : Nombre de paramètres du modèle (Exemple : 8B = $8000 \times 10^6$)
 - $Q$ : Nombre de bits de la quantification (Exemple : 4-bit, 8-bit, 16-bit)
-- $C$ : Mémoire supplémentaire pour la fenêtre de contexte (cache KV, etc. Dépend du modèle et des paramètres, mais on estime généralement autour de 1 à 2 Go)
+- $C$ : Mémoire supplémentaire pour la fenêtre de contexte (cache KV, etc. Dépend du modèle et des paramètres, mais on estime généralement autour de 1 à 2 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/))
 
 **Exemple de calcul** : Lors de l'exécution de Llama 3 (8B paramètres) avec une quantification de 4-bit
 $$
 M_{model} = \frac{8,000 \times 4}{8 \times 1024} = \frac{32,000}{8192} \approx 3.9 \text{ GB}
 $$
-En y ajoutant la mémoire pour le contexte, nous pouvons constater qu'avec environ 5 Go à 6 Go de VRAM, le modèle peut être entièrement déployé (Full Offload) sur le GPU. Même avec un GPU de milieu de gamme récent équipé de 8 Go de VRAM (comme la RTX 4060), il est possible de faire fonctionner un LLM suffisamment puissant.
+En y ajoutant la mémoire pour le contexte, nous pouvons constater qu'avec environ 5 Go à 6 Go de VRAM, le modèle peut être entièrement déployé (Full Offload) sur le GPU. Même avec un GPU de milieu de gamme récent équipé de 8 Go de VRAM (comme la RTX 4060), il est possible de faire fonctionner un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) suffisamment puissant.
 
 ---
 
@@ -493,9 +493,9 @@ En intégrant des requêtes API Ollama dans vos scripts Python ou Shell, vous po
 
 ## Conclusion
 
-Avec l'apparition d'Ollama, la barrière à l'entrée pour l'adoption de LLM locaux a considérablement diminué. Il n'est pas exagéré de dire que la combinaison de son système de commandes simple, similaire à la manipulation de conteneurs [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/), et de son API REST facilement utilisable par des applications externes, constitue l'actuel standard de facto dans le développement d'IA locale.
+Avec l'apparition d'Ollama, la barrière à l'entrée pour l'adoption de [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) locaux a considérablement diminué. Il n'est pas exagéré de dire que la combinaison de son système de commandes simple, similaire à la manipulation de conteneurs [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/), et de son API REST facilement utilisable par des applications externes, constitue l'actuel standard de facto dans le développement d'IA locale.
 
-Pour les développeurs confrontés aux coûts et aux contraintes de sécurité des LLM cloud, nous vous invitons à vous référer aux procédures présentées dans cet article pour configurer votre environnement LLM local avec Ollama et l'intégrer à vos propres applications. Vous pourrez ainsi ressentir le potentiel de l'IA de manière plus libre et plus accessible.
+Pour les développeurs confrontés aux coûts et aux contraintes de sécurité des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) cloud, nous vous invitons à vous référer aux procédures présentées dans cet article pour configurer votre environnement LLM local avec Ollama et l'intégrer à vos propres applications. Vous pourrez ainsi ressentir le potentiel de l'IA de manière plus libre et plus accessible.
 
 
 

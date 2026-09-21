@@ -241,7 +241,7 @@ Edge AI는 이미 다양한 산업 분야에서 실용화되어 극적인 패러
 
 Edge AI 기술은 급속도로 발전하고 있지만 여전히 많은 과제와 흥미로운 미래 전망이 존재합니다.
 
-**1. 에지에서의 LLM(대규모 언어 모델) 구동**:
+**1. 에지에서의 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)(대규모 언어 모델) 구동**:
 최근 가장 큰 화두는 생성형 AI나 LLM을 에지에서 구동하는 'Edge LLM' 시도입니다. 수백억 개의 파라미터를 가진 모델을 그대로 에지에 올리는 것은 불가능하지만, llama.cpp와 같은 최적화 프레임워크나 4비트/2비트의 극한 양자화(AWQ, GPTQ 등), 나아가 Microsoft의 Phi-3 같은 작고 고성능인 SLM(Small Language Models)의 등장으로 스마트폰이나 Raspberry Pi 상에서도 자연어 처리가 오프라인으로 완결되는 시대가 오고 있습니다.
 
 **2. 뉴로모픽 컴퓨팅과 SNN**:

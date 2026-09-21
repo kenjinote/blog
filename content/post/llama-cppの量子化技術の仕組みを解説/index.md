@@ -10,9 +10,9 @@ tags: ["llama.cpp", "GGUF", "Quantization", "LLM"]
 description: 'llama.cppで採用されているGGUFフォーマットとk-quants量子化技術の内部構造について、数式とアーキテクチャ図を交えて非常に詳細に解説します。'
 ---
 
-## 1. はじめに：なぜLLMには量子化が必要なのか？
+## 1. はじめに：なぜ[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)には量子化が必要なのか？
 
-近年の大規模言語モデル（LLM: Large Language Models）の進化は目覚ましいものがありますが、その裏で「計算資源の枯渇」と「メモリ帯域のボトルネック」という深刻な問題が浮上しています。例えば、Llama 3 のような 70B（700億）パラメータのモデルを、標準的な 16ビット浮動小数点（FP16）でメモリにロードした場合、パラメータだけで約 140GB の VRAM/RAM を消費します。これに推論時のコンテキスト（KVキャッシュ）が加わると、データセンター向けのハイエンドGPU（NVIDIA A100 80GB や H100 80GB）を複数台クラスタリングしなければ動作しません。
+近年の[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（LLM: [Large Language Models](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化は目覚ましいものがありますが、その裏で「計算資源の枯渇」と「メモリ帯域のボトルネック」という深刻な問題が浮上しています。例えば、Llama 3 のような 70B（700億）パラメータのモデルを、標準的な 16ビット浮動小数点（FP16）でメモリにロードした場合、パラメータだけで約 140GB の VRAM/RAM を消費します。これに推論時のコンテキスト（KVキャッシュ）が加わると、データセンター向けのハイエンドGPU（NVIDIA A100 80GB や H100 80GB）を複数台クラスタリングしなければ動作しません。
 
 個人開発者やエッジデバイス（MacBookや一般的なゲーミングPC）でLLMを動作させるための救世主として登場したのが **llama.cpp** とその中核を成す ** 量子化（Quantization）技術 ** です。特に **GGUF (GPT-Generated Unified Format)** というファイルフォーマットと、 **k-quants** と呼ばれる高度なブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)単位の量子化アルゴリズムは、モデルの精度（Perplexity）の低下を極限まで抑えつつ、モデルサイズを数分の一に圧縮する画期的な手法です。
 
@@ -22,7 +22,7 @@ description: 'llama.cppで採用されているGGUFフォーマットとk-quants
 
 ## 2. 量子化（Quantization）の数学的基礎
 
-LLMの文脈における量子化とは、連続的な値（あるいは高精度の浮動小数点数）を、より少ないビット数（INT8, INT4, INT3 など）の離散的な値にマッピングする操作を指します。
+[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)の文脈における量子化とは、連続的な値（あるいは高精度の浮動小数点数）を、より少ないビット数（INT8, INT4, INT3 など）の離散的な値にマッピングする操作を指します。
 
 ### 2.1. 線形量子化の基本数式
 
@@ -175,11 +175,11 @@ llama.cpp は目的に応じて多数のバリエーションを提供してい�
 
 ## 5. 推論時の[パフォーマンス最適化](https://kenji.blog/p/web-vitals-frontend-performance-optimization-lcp-fid-cls/)：SIMDとCUDAアーキテクチャ
 
-GGUFモデルをメモリにロードしただけでは、推論は高速になりません。LLMの推論の大半は「行列積（Matrix-Vector Multiplication, 略して GEMV、あるいは Matrix-Matrix, GEMM）」です。量子化された重みと、FP16（またはFP32）で保持されているアクティベーション（入力データ）の積和演算をいかに高速化するかが鍵です。
+GGUFモデルをメモリにロードしただけでは、推論は高速になりません。[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)の推論の大半は「行列積（Matrix-Vector Multiplication, 略して GEMV、あるいは Matrix-Matrix, GEMM）」です。量子化された重みと、FP16（またはFP32）で保持されているアクティベーション（入力データ）の積和演算をいかに高速化するかが鍵です。
 
 ### 5.1. CPU環境におけるSIMD命令の活用
 
-llama.cpp がCPU推論において驚異的な速度を誇るのは、アセンブリ・レベルでの **SIMD (Single Instruction, Multiple Data)** 最適化にあります。
+llama.cpp がCPU推論において驚異的な速度を誇るのは、[アセンブリ](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)・レベルでの **SIMD (Single Instruction, Multiple Data)** 最適化にあります。
 例えば Intel/AMD の CPU では **AVX2** や **AVX-512** 、Apple Silicon では **ARM NEON** 命令セットをフル活用します。
 
 推論中、わざわざ $W_q$ を FP32 に戻して（Dequantizeして）から掛け算を行うわけではありません。
@@ -226,7 +226,7 @@ GPU上で計算する場合、VRAMの帯域幅（Memory Bandwidth）が最大の
 | **Llama-3-8B (Q2_K)** | 約 3.0 GB | 4.5 GB以上 | 高速 | 明らかな劣化 |
 
 **注意点 (KVキャッシュの影響):**
-LLMの推論において、コンテキスト長（プロンプトのトークン数）が長くなると、モデルの重みだけでなく、過去のAttention状態を保存する **KVキャッシュ** のメモリ消費が爆発的に増加します。
+[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)の推論において、コンテキスト長（プロンプトのトークン数）が長くなると、モデルの重みだけでなく、過去のAttention状態を保存する **KVキャッシュ** のメモリ消費が爆発的に増加します。
 例えばコンテキストが 8192 トークンの場合、KVキャッシュだけで数GBを消費します。したがって、実運用では `モデルファイルサイズ + 約1.5GB～3GB` のマージン（Headroom）を確保しておく必要があります。Q4_K_M が推奨される理由は、このKVキャッシュを確保しても、一般的な 8GB VRAM 搭載の GPU（RTX 3060 / 4060 など）で安全に動作する絶妙なラインだからです。
 
 最近の llama.cpp では、この **KVキャッシュ自体を Q8_0 や Q4_0 で量子化する機能** も追加されており、コンテキスト長をさらに伸ばすための工夫が絶え間なく行われています。
@@ -237,7 +237,7 @@ LLMの推論において、コンテキスト長（プロンプトのトーク�
 
 本記事では、llama.cpp の心臓部である GGUF フォーマットと k-quants 量子化技術の内部構造について、深く掘り下げて解説しました。
 
-1. **GGUFの柔軟性:** キー・バリュー型のメタデータ構造により、LLMの急速な進化（新しいモデルアーキテクチャの登場）にも破壊的変更なしに追従できる強固なエコシステムを構築しました。
+1. **GGUFの柔軟性:** キー・バリュー型のメタデータ構造により、[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)の急速な進化（新しいモデルアーキテクチャの登場）にも破壊的変更なしに追従できる強固なエコシステムを構築しました。
 2. **k-quantsによる極限圧縮:** スーパーブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)とサブブロックの階層的なスケールファクタ管理により、外れ値の情報を保持しつつ、重み1つあたり平均 4.8 ビット（Q4_K_M）という驚異的な圧縮を実現しました。
 3. **メモリ帯域ネックの解消:** SIMDやCUDAにおける高度なカーネル実装により、オンザフライでデキューしながら計算を行うことで、VRAM転送量を削減し、推論スピードを劇的に向上させました。
 

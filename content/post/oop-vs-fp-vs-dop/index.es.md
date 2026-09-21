@@ -10,13 +10,13 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 La historia de la evolución de los lenguajes de programación es también la historia de la batalla contra la complejidad. A medida que el software crece a gran escala, los desarrolladores se enfrentan a muros en la gestión del estado, el rendimiento y la mantenibilidad, y se han propuesto varios **paradigmas de programación** para superarlos.
 
-En este artículo, profundizaremos en la filosofía, fortalezas y **límites** de la **Programación Orientada a Objetos** (OOP, por sus siglas en inglés), predominante en el desarrollo de software moderno, la **Programación Funcional** (FP), con su robustez matemática, y la **Programación Orientada a Datos** (DOP / DOD), centrada en el rendimiento y la separación de datos. Además, explicaremos cómo lenguajes modernos y potentes (como [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) y TypeScript) logran la **fusión** de estos paradigmas.
+En este artículo, profundizaremos en la filosofía, fortalezas y **límites** de la **Programación Orientada a Objetos** ([OOP](https://kenji.blog/es/p/object-oriented-programming-oop-solid-principles/), por sus siglas en inglés), predominante en el desarrollo de software moderno, la **Programación Funcional** (FP), con su robustez matemática, y la **Programación Orientada a Datos** (DOP / DOD), centrada en el rendimiento y la separación de datos. Además, explicaremos cómo lenguajes modernos y potentes (como [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) y TypeScript) logran la **fusión** de estos paradigmas.
 
 ---
 
-## 1. El auge y la caída de la Programación Orientada a Objetos (OOP)
+## 1. El auge y la caída de la Programación Orientada a Objetos ([OOP](https://kenji.blog/es/p/object-oriented-programming-oop-solid-principles/))
 
-La **Orientación a Objetos** (Object-Oriented Programming) reinó como el paradigma absoluto en el desarrollo de software desde la década de 1990 hasta la de 2010. Lenguajes como Java, C++ y C# lideraron este paradigma, y el enfoque intuitivo de modelar el mundo real fue ampliamente aceptado.
+La **Orientación a Objetos** ([Object-Oriented](https://kenji.blog/es/p/object-oriented-programming-oop-solid-principles/) Programming) reinó como el paradigma absoluto en el desarrollo de software desde la década de 1990 hasta la de 2010. Lenguajes como [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), C++ y C# lideraron este paradigma, y el enfoque intuitivo de modelar el mundo real fue ampliamente aceptado.
 
 ### 1.1 Conceptos principales de OOP
 
@@ -54,7 +54,7 @@ const animals: Animal[] = [new Dog("Buddy"), new Cat("Kitty")];
 animals.forEach(a => a.speak());
 ```
 
-### 1.2 Límites de OOP y el "Problema del gorila y la banana"
+### 1.2 Límites de [OOP](https://kenji.blog/es/p/object-oriented-programming-oop-solid-principles/) y el "Problema del gorila y la banana"
 
 OOP parece a primera vista una técnica de modelado perfecta, pero a medida que los sistemas se escalan, provoca problemas fatales: el **abuso de la herencia** y la **gestión de estados implícitos**.
 
@@ -91,7 +91,7 @@ Los árboles de herencia profundos complican las dependencias del código, hacie
 
 ## 2. El enfoque matemático de la Programación Funcional (FP)
 
-Como antítesis a la complejidad causada por la "mutación del estado" en OOP, surgió la **Programación Funcional** (Functional Programming). Ha influenciado fuertemente no solo a lenguajes como Haskell, Scala y Clojure, sino también a JavaScript y TypeScript en la actualidad.
+Como antítesis a la complejidad causada por la "mutación del estado" en [OOP](https://kenji.blog/es/p/object-oriented-programming-oop-solid-principles/), surgió la **Programación Funcional** ([Functional Programming](https://kenji.blog/es/p/functional-programming-concepts-pure-functions-monads/)). Ha influenciado fuertemente no solo a lenguajes como Haskell, Scala y Clojure, sino también a JavaScript y TypeScript en la actualidad.
 
 ### 2.1 Conceptos principales de FP
 
@@ -140,7 +140,7 @@ El **Diseño Orientado a Datos** (Data-Oriented Design) o **Programación Orient
 
 ### 3.1 Conceptos principales de DOP
 
-El objetivo supremo de DOP es "separar los datos de la lógica". Mientras que OOP agrupa los datos y la lógica en clases, DOP los separa.
+El objetivo supremo de DOP es "separar los datos de la lógica". Mientras que [OOP](https://kenji.blog/es/p/object-oriented-programming-oop-solid-principles/) agrupa los datos y la lógica en clases, DOP los separa.
 
 - **Separación de datos**: Los datos se definen simplemente como estructuras de datos (registros, structs) y no tienen comportamiento.
 - **ECS (Sistema de Entidades y Componentes)**: En lugar de usar la herencia, los datos se dividen en componentes y los sistemas (funciones) los procesan en lotes.
@@ -192,7 +192,7 @@ Cada paradigma tiene áreas en las que sobresale y áreas donde flaquea.
 
 | Paradigma | Ventajas | Desventajas | Casos de uso óptimos |
 | :--- | :--- | :--- | :--- |
-| **OOP** | Modelado intuitivo, ocultación a través del encapsulamiento | Complejidad por la herencia, errores por mutación implícita de estados | Frameworks de GUI, modelado del dominio de negocio |
+| **[OOP](https://kenji.blog/es/p/object-oriented-programming-oop-solid-principles/)** | Modelado intuitivo, ocultación a través del encapsulamiento | Complejidad por la herencia, errores por mutación implícita de estados | Frameworks de GUI, modelado del dominio de negocio |
 | **FP** | Resistencia al procesamiento concurrente, facilidad de pruebas, previsibilidad | Curva de aprendizaje pronunciada, rendimiento (carga de GC) | [Pipeline](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/)s de transformación de datos, sistemas concurrentes |
 | **DOP** | Rendimiento abrumador, transparencia del estado | Menor cohesión de datos, tendencia a ser procedimental | Desarrollo de juegos, procesamiento de cálculos de alta carga, sistemas embebidos |
 
@@ -200,9 +200,9 @@ Cada paradigma tiene áreas en las que sobresale y áreas donde flaquea.
 
 ## 5. La solución óptima actual: "Fusión" de paradigmas
 
-Hoy en día, se considera un absurdo intentar elegir "la única respuesta correcta" entre estos paradigmas. Los lenguajes de programación modernos (como [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), TypeScript, Scala y Go) adoptan **lo mejor de cada mundo**.
+Hoy en día, se considera un absurdo intentar elegir "la única respuesta correcta" entre estos paradigmas. Los lenguajes de programación modernos (como [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), TypeScript, Scala y [Go](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/)) adoptan **lo mejor de cada mundo**.
 
-### 5.1 La fusión definitiva demostrada por Rust
+### 5.1 La fusión definitiva demostrada por [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/)
 
 Rust combina estos tres paradigmas a un nivel sorprendente.
 

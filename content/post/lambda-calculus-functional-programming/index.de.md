@@ -16,7 +16,7 @@ tags:
 
 ## 1. Einführung: Die Philosophie hinter der funktionalen Programmierung
 
-In der modernen Softwareentwicklung ist die **funktionale Programmierung** ([Functional Programming](https://kenji.blog/de/p/oop-vs-fp-vs-dop/)) nicht mehr nur ein Ansatz für einige wenige Enthusiasten, sondern ein weit verbreitetes Paradigma geworden. Von Frontend-Technologien wie React bis hin zu [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), Scala und sogar objektorientierten Sprachen wie Java und C# wurden Konzepte wie die Behandlung von Funktionen als First-Class-Citizens und die Eliminierung von Seiteneffekten übernommen.
+In der modernen Softwareentwicklung ist die **funktionale Programmierung** ([Functional Programming](https://kenji.blog/de/p/oop-vs-fp-vs-dop/)) nicht mehr nur ein Ansatz für einige wenige Enthusiasten, sondern ein weit verbreitetes Paradigma geworden. Von Frontend-Technologien wie React bis hin zu [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), Scala und sogar objektorientierten Sprachen wie [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) und C# wurden Konzepte wie die Behandlung von Funktionen als First-Class-Citizens und die Eliminierung von Seiteneffekten übernommen.
 
 Hinter diesem Paradigma verbirgt sich jedoch eine tiefgreifende mathematische Theorie, die in den 1930er Jahren aufgebaut wurde, noch bevor Computer physisch existierten. Dies ist das von Alonzo Church (Alonzo Church) vorgeschlagene **[Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)-Kalkül** ( $\lambda$-calculus ).
 
@@ -219,7 +219,7 @@ firstTenEvens = take 10 (map (*2) naturals)
 
 ### 8.2 Monaden (Monads) und der Umgang mit Seiteneffekten
 
-In rein funktionalen Sprachen war es eine langjährige Herausforderung, wie man „Seiteneffekte (Side Effects)“ wie Ein-/Ausgabe oder [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sänderungen handhabt, ohne die mathematische Reinheit (referenzielle Transparenz) zu verlieren. Haskell hat dieses Problem elegant gelöst, indem es die **Monade** (Monad) einführte, ein Konzept aus der Kategorientheorie (Category Theory).
+In rein funktionalen Sprachen war es eine langjährige Herausforderung, wie man „Seiteneffekte (Side Effects)“ wie Ein-/Ausgabe oder [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sänderungen handhabt, ohne die mathematische Reinheit (referenzielle Transparenz) zu verlieren. Haskell hat dieses Problem elegant gelöst, indem es die **Monade** ([Monad](https://kenji.blog/de/p/functional-programming-concepts-pure-functions-monads/)) einführte, ein Konzept aus der Kategorientheorie (Category Theory).
 
 Mit der IO-Monade ist es gelungen, „Berechnung“ und „Ausführung mit Seiteneffekten“ auf Ebene des Typsystems vollständig zu trennen.
 

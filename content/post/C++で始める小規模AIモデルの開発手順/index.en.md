@@ -12,7 +12,7 @@ description: 'A detailed development guide and internal architecture explanation
 
 # Development Guide for Small AI Models (TinyLLaMA, etc.) Using C++
 
-In recent years, interest in running Large Language Models (LLMs) in local environments has grown rapidly. In particular, small-scale models like TinyLLaMA (1.1B parameters) can perform inference at practical speeds even on limited-resource edge devices and typical laptops (including Windows environments). While development using Python and PyTorch is mainstream, when pursuing ultimate performance and memory efficiency, the combination of C++ and the C-based tensor library "ggml" has become the de facto standard.
+In recent years, interest in running [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) in local environments has grown rapidly. In particular, small-scale models like TinyLLaMA (1.1B parameters) can perform inference at practical speeds even on limited-resource edge devices and typical laptops (including Windows environments). While development using Python and PyTorch is mainstream, when pursuing ultimate performance and memory efficiency, the combination of C++ and the C-based tensor library "ggml" has become the de facto standard.
 
 This article provides an extremely detailed development guide for building an inference engine from scratch (or deeply understanding the internal structure of the existing llama.cpp) to load TinyLLaMA and generate text using C++.
 

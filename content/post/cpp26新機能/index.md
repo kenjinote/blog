@@ -326,9 +326,9 @@ int main() {
 }
 ```
 
-## 6.2 Hazard Pointers と RCU (Read-Copy Update)
+## 6.2 Hazard [Pointer](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)s と RCU (Read-Copy Update)
 
-[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)フリー・データ構造の実装を支える標準機能として、 **Hazard Pointers** (`std::hazard_pointer`) と **RCU** (`std::rcu`) が標準化されました。これにより、C++で高パフォーマンスな並行データ構造を実装する際の敷居が大幅に下がりました。
+[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)フリー・データ構造の実装を支える標準機能として、 **Hazard [Pointer](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)s** (`std::hazard_pointer`) と **RCU** (`std::rcu`) が標準化されました。これにより、C++で高パフォーマンスな並行データ構造を実装する際の敷居が大幅に下がりました。
 
 RCUは特にリード（読み取り）が圧倒的に多いワークロードにおいて、キャッシュラインの競合を排除し、線形なスケーラビリティを実現します。数学的に表現すれば、スレッド数 $T$ に対して読取スループットは理想的な $O(T)$ の増加を示します。
 
@@ -359,7 +359,7 @@ C++26は、長年C++プログラマが待ち望んできた「夢の機能」が
 *   **リフレクション** により、メタプログラミングの難解さが払拭され $O(1)$ のASTアクセスが実現。
 *   **契約プログラミング** により、関数の事前・事後条件を明示し堅牢なプログラムが構築可能に。
 *   **パターンマッチング** により、複雑な分岐や状態遷移を直感的かつ安全に記述。
-*   **Senders/Receivers** と **RCU / Hazard Pointers** により、極限のパフォーマンスを引き出す並行処理が標準化。
+*   **Senders/Receivers** と **RCU / Hazard [Pointer](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)s** により、極限のパフォーマンスを引き出す並行処理が標準化。
 
 これらの機能を適切に活用することで、C++の最大の強みである「ゼロオーバーヘッド抽象化（Zero-overhead Abstraction）」をより高いレベルで、しかも驚くほどクリーンなコードで実現できるようになります。
 

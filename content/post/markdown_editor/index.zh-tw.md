@@ -9,7 +9,7 @@ categories: ["blogging", "productivity", "editors"]
 tags: ["Markdown", "VS Code", "Neovim", "textlint"]
 ---
 
-為了能夠持續撰寫技術部落格，將寫作環境最佳化是不可缺少的。本篇文章將深入探討如何透過進階的編輯器設定，大幅提升使用 Markdown 撰寫技術部落格的速度。從 Visual Studio Code (VS Code) 與 Neovim 的極致客製化、程式碼片段（Snippet）的應用、導入日文文法檢查工具 textlint、到利用 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線進行自動化，以及運用 GitHub Copilot 等 LLM 的最先進寫作技巧，我們將進行全面性的解說。
+為了能夠持續撰寫技術部落格，將寫作環境最佳化是不可缺少的。本篇文章將深入探討如何透過進階的編輯器設定，大幅提升使用 Markdown 撰寫技術部落格的速度。從 Visual Studio Code (VS Code) 與 Neovim 的極致客製化、程式碼片段（Snippet）的應用、導入日文文法檢查工具 textlint、到利用 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線進行自動化，以及運用 GitHub Copilot 等 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的最先進寫作技巧，我們將進行全面性的解說。
 
 ## 1. 提升寫作速度的數學模型
 
@@ -244,11 +244,11 @@ flowchart TD
     H --> J["部署至主機 (Vercel/Netlify)"]
 ```
 
-## 5. LLM 時代的 Markdown 寫作技巧
+## 5. [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 時代的 Markdown 寫作技巧
 
 在現代的技術部落格寫作中，活用 LLM (大型語言模型) 已是不可避免的趨勢。藉由運用編輯器內建的 AI 工具，能讓寫作速度再翻倍。
 
-### 編輯器內的提示工程 (Prompt Engineering)
+### 編輯器內的提示工程 ([Prompt Engineering](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/))
 
 使用 VS Code 的 GitHub Copilot Chat，或是 Neovim 的 `ChatGPT.nvim` 與 `Copilot.vim` 等工具，就能在不離開編輯器的情況下送出如下的提示詞 (Prompt)：
 
@@ -256,7 +256,7 @@ flowchart TD
 
 接著，就會立即產生包含標題與條列項目的 Markdown 內容。我們只需要在這些骨架上添加血肉即可。
 
-此外，複雜的 Mermaid 圖表或數式 (LaTeX) 語法，也能透過給予 AI 指示來產生正確的語法。舉例來說，本篇文章所刊載的數式與圖表排版基礎，也是透過與 LLM 的結對寫作 (Pair Writing) 來加速完成的。
+此外，複雜的 Mermaid 圖表或數式 (LaTeX) 語法，也能透過給予 AI 指示來產生正確的語法。舉例來說，本篇文章所刊載的數式與圖表排版基礎，也是透過與 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的結對寫作 (Pair Writing) 來加速完成的。
 
 ## 6. 總結
 
@@ -266,7 +266,7 @@ flowchart TD
 2. **活用 VS Code**: 透過擴充功能與 `markdown.json` 的程式碼片段來省略輸入。
 3. **Neovim 的極致客製化**: 藉由 `LuaSnip` 實現動態程式碼片段與完全的鍵盤操作。
 4. **textlint 與靜態分析**: 為了讓校對時間趨近於零，將 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 與本機端的 Linter 進行整合。
-5. **整合 LLM**: 直接在編輯器內讓 AI 輸出 Markdown 的架構或圖表的程式碼。
+5. **整合 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)**: 直接在編輯器內讓 AI 輸出 Markdown 的架構或圖表的程式碼。
 
 只要將這些設定導入自己的環境中，就能消除寫作時的「麻煩感」，並且大幅提升技術輸出的質與量。不妨就先從註冊一個小小的程式碼片段開始嘗試吧！
 

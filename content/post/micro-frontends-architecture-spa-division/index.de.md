@@ -46,7 +46,7 @@ Micro Frontends ist ein Architekturstil, bei dem eine Webanwendung als Sammlung 
 
 1. **Unabhängiges Deployment**: Jedes Micro Frontend kann jederzeit freigegeben werden, ohne andere Funktionen zu beeinträchtigen.
 2. **Team-Autonomie**: Cross-funktionale Teams, die für eine bestimmte Geschäftsdomäne von der Datenbank bis zur UI verantwortlich sind, können unabhängige Entscheidungen treffen.
-3. **Sicherstellung technologischer Freiheit**: Jedes Team kann den für die Anforderungen optimalen Technologie-Stack wählen, was schrittweise Migrationen (z. B. vom alten Angular zum neuen React) erleichtert.
+3. **Sicherstellung technologischer Freiheit**: Jedes Team kann den für die Anforderungen optimalen Technologie-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) wählen, was schrittweise Migrationen (z. B. vom alten Angular zum neuen React) erleichtert.
 4. **Verbesserte Fehlertoleranz**: Selbst wenn in einigen Funktionen Fehler auftreten, stürzt nicht die gesamte Anwendung ab, sondern der Fehlerbereich kann isoliert werden.
 
 ### Nachteile und Herausforderungen

@@ -161,7 +161,7 @@ Dengan cara ini, bahkan di lingkungan Windows, Anda dapat merakit, mencari, dan 
 
 Dalam operasi terminal, salah satu tindakan yang paling sering dilakukan adalah **"mencari perintah kompleks yang dijalankan di masa lalu dari riwayat dan menjalankannya kembali"**. Menggunakan `Ctrl+R` (pencarian balik) standar adalah pencarian kecocokan persis, sehingga sulit untuk memanggil kembali perintah dari memori samar seperti "sepertinya saya memasang volume dengan docker run dan...".
 
-Alat yang dapat menyelesaikan masalah ini secara elegan adalah alat pencarian samar (fuzzy) serbaguna yang sangat cepat yang ditulis dalam Go, yaitu **`fzf`**.
+Alat yang dapat menyelesaikan masalah ini secara elegan adalah alat pencarian samar (fuzzy) serbaguna yang sangat cepat yang ditulis dalam [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), yaitu **`fzf`**.
 
 ## 4.1. [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) Pencarian Samar dengan fzf
 

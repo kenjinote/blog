@@ -11,7 +11,7 @@ tags: ["RAG", "Vector DB", "Embeddings", "Python", "Local AI"]
 
 # はじめに
 
-近年、大規模言語モデル（LLM）の進化は目覚ましく、ChatGPTやClaudeなどを筆頭に多くのAIが私たちの生活や業務に浸透しています。しかし、一般的なLLMには明確な弱点が存在します。それは「学習時点での公開情報」しか知らないという点です。社内規程、個人的なメモ、未公開のプロジェクト資料といった「プライベートなドキュメント」に関する質問には、当然ながら答えることができません。無理に答えさせようとすると、事実とは異なるもっともらしい嘘（ハルシネーション）を生成してしまうリスクが高まります。
+近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化は目覚ましく、ChatGPTやClaudeなどを筆頭に多くのAIが私たちの生活や業務に浸透しています。しかし、一般的なLLMには明確な弱点が存在します。それは「学習時点での公開情報」しか知らないという点です。社内規程、個人的なメモ、未公開のプロジェクト資料といった「プライベートなドキュメント」に関する質問には、当然ながら答えることができません。無理に答えさせようとすると、事実とは異なるもっともらしい嘘（ハルシネーション）を生成してしまうリスクが高まります。
 
 そこで現在、世界中で爆発的に普及しているのが **RAG (Retrieval-Augmented Generation: 検索拡張生成)** という技術アーキテクチャです。RAGを用いることで、LLMに独自の知識を外部データベースから動的に与え、それに基づいた正確で根拠のある回答を生成させることが可能になります。
 
@@ -54,7 +54,7 @@ graph TD
 
 ## インジェストフェーズ（事前準備）
 1. **ドキュメントの読み込み**: PDF、Word、テキストファイルなどの非構造化データを読み込みます。
-2. **チャンキング（テキスト分割）**: LLMの入力制限（コンテキストウィンドウ）に収めるため、そして検索精度を上げるために、長い文章を意味のある塊（チャンク）に分割します。
+2. **チャンキング（テキスト分割）**: [LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)の入力制限（コンテキストウィンドウ）に収めるため、そして検索精度を上げるために、長い文章を意味のある塊（チャンク）に分割します。
 3. **エンベディング（ベクトル化）**: 分割されたチャンクを、埋め込みモデル（Embedding Model）に入力し、数百〜数千次元の数値の配列（ベクトル）に変換します。
 4. **データベースへの保存**: 変換されたベクトルと、元のテキストデータを紐付けてベクトルデータベース（Vector DB）に保存します。
 
@@ -97,15 +97,15 @@ $$ \text{Cosine Similarity}(\mathbf{A}, \mathbf{B}) = \cos(\theta) = \frac{\math
 
 ---
 
-# 3. ローカルRAGを構築するための技術スタック
+# 3. ローカルRAGを構築するための技術[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)
 
 クラウドに依存しない完全なローカルRAGを構築するには、オープンソースのエコシステムを活用します。以下に推奨される技術スタックを紹介します。
 
-1. **言語モデル (LLM)**
+1. **言語モデル ([LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/))**
    - ツール: `Ollama` または `Llama.cpp`
    - モデル: `Llama-3-8B-Instruct`, `Gemma-2-9B-It`, `Qwen2-7B-Instruct` などの軽量・高性能なオープンモデル。日本語タスクには日本語チューンされた `Llama-3-ELYZA-JP-8B` などが適しています。
 2. **埋め込みモデル (Embedding)**
-   - モデル: `intfloat/multilingual-e5-large` または `BAAI/bge-m3`。ローカルで動かす場合、Hugging FaceからダウンロードしてSentence-Transformersで実行するのが一般的です。
+   - モデル: `intfloat/multilingual-e5-large` または `BAAI/bge-m3`。ローカルで動かす場合、Hugging FaceからダウンロードしてSentence-[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)sで実行するのが一般的です。
 3. **ベクトルデータベース (Vector DB)**
    - `ChromaDB`: Pythonベースでセットアップが極めて簡単。ローカル開発に最適。
    - `FAISS`: Metaが開発した高速なベクトル検索ライブラリ。
@@ -131,7 +131,7 @@ pip install chromadb sentence-transformers pypdf
 
 ## Step 2: 実装コード全体像
 
-以下は、PDFファイルを読み込み、ベクトル化してローカルのLLMに質問応答させるための完全なPythonスクリプトです。
+以下は、PDFファイルを読み込み、ベクトル化してローカルの[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)に質問応答させるための完全なPythonスクリプトです。
 
 ```python
 import os
@@ -252,7 +252,7 @@ if __name__ == "__main__":
 ベクトル検索は高速ですが、必ずしもコンテキストの正確な文脈適合性を評価しているわけではありません。検索精度を向上させるための一般的な[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)は以下のようになります。
 1. **初期検索 (First-stage Retrieval)**: ベクトルDBから、広く浅く関連チャンクを20件〜30件程度取得します。
 2. **再評価 (Re-ranking)**: Cross-Encoderと呼ばれる別のより重い機械学習モデル（例: `bge-reranker` など）を使用して、ユーザーのクエリと取得したチャンクのペアを入力し、意味的適合度のスコアを再計算します。
-3. **選別**: スコアの高い上位3〜5件のみを最終的なコンテキストとしてLLMのプロンプトに渡します。
+3. **選別**: スコアの高い上位3〜5件のみを最終的なコンテキストとして[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)のプロンプトに渡します。
 
 この手法により、無関係なノイズ情報がLLMに渡るのを防ぎ、回答の精度（Precision）を大幅に高めることができます。
 
@@ -267,7 +267,7 @@ graph LR
 
 ## 5.3 セマンティックチャンキングと親ドキュメント検索
 固定文字数で機械的にテキストを分割するのではなく、文章の意味の変わり目をAIで検知して分割する「Semantic Chunking」という手法があります。
-また、「Parent Document Retriever（親ドキュメント検索）」という手法では、検索用に非常に小さな単位（センテンス等）でベクトル化を行って精度の高い検索を実現しつつ、LLMに渡す際にはそのセンテンスが含まれる「元の大きな段落（親ドキュメント）」を渡すことで、LLMに十分な文脈（コンテキスト）を提供します。
+また、「Parent Document Retriever（親ドキュメント検索）」という手法では、検索用に非常に小さな単位（センテンス等）でベクトル化を行って精度の高い検索を実現しつつ、[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)に渡す際にはそのセンテンスが含まれる「元の大きな段落（親ドキュメント）」を渡すことで、LLMに十分な文脈（コンテキスト）を提供します。
 
 ---
 

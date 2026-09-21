@@ -58,7 +58,7 @@ IaC工具大致可以分为“命令式”和“声明式”两种方法。
 
 # 2. 什么是Terraform
 
-Terraform是由HashiCorp公司使用Go语言开发的开源IaC工具。从云基础设施到SaaS配置，可以将各种API作为代码进行配置和管理。
+Terraform是由HashiCorp公司使用[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)语言开发的开源IaC工具。从云基础设施到SaaS配置，可以将各种API作为代码进行配置和管理。
 
 ## 2.1. 提供者（Provider）架构
 

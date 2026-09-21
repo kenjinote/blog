@@ -12,7 +12,7 @@ description: 'Una guía completa para ajustar (fine-tune) TinyLLaMA de manera ef
 
 ## 1. Introducción: ¿Por qué TinyLLaMA y entornos locales ahora?
 
-La evolución de los modelos de lenguaje grande (LLM) avanza a un ritmo vertiginoso, y en consecuencia, el número de parámetros de los modelos sigue expandiéndose a escalas de cientos de miles de millones. Si bien los modelos gigantes como GPT-4 o Claude 3 ostentan un rendimiento inigualable, los costos computacionales de inferencia y entrenamiento, así como las preocupaciones sobre seguridad y privacidad de datos al usar APIs externas, se han convertido en grandes obstáculos para las empresas. Especialmente en tareas que manejan datos internos confidenciales o información personal, enviar datos a APIs de LLM públicas en la nube a menudo es inaceptable desde el punto de vista del cumplimiento normativo (como GDPR o APPI).
+La evolución de los modelos de lenguaje grande ([LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/)) avanza a un ritmo vertiginoso, y en consecuencia, el número de parámetros de los modelos sigue expandiéndose a escalas de cientos de miles de millones. Si bien los modelos gigantes como GPT-4 o Claude 3 ostentan un rendimiento inigualable, los costos computacionales de inferencia y entrenamiento, así como las preocupaciones sobre seguridad y privacidad de datos al usar APIs externas, se han convertido en grandes obstáculos para las empresas. Especialmente en tareas que manejan datos internos confidenciales o información personal, enviar datos a APIs de LLM públicas en la nube a menudo es inaceptable desde el punto de vista del cumplimiento normativo (como GDPR o APPI).
 
 Aquí es donde los **modelos de lenguaje pequeños (SLM: Small Language Models)** y el **funcionamiento local en entornos On-Premises** están ganando protagonismo. Entre ellos, "**TinyLLaMA**" destaca por su tamaño compacto de tan solo 1.1B (1.100 millones) de parámetros, pero habiendo sido pre-entrenado con un inmenso conjunto de datos de aproximadamente 3 billones de tokens, ofreciendo un rendimiento asombroso en comparación con modelos de su misma clase.
 
@@ -37,7 +37,7 @@ TinyLLaMA sigue la arquitectura LLaMA (Large Language Model Meta AI) desarrollad
 4. **Grouped Query Attention (GQA):**
    Un enfoque intermedio entre Multi-Head Attention (MHA) y Multi-Query Attention (MQA) que, al agrupar los cabezales (heads) de las claves (keys) y valores (values), ahorra ancho de banda de memoria y mejora drásticamente la velocidad de inferencia.
 
-El siguiente diagrama Mermaid muestra el flujo de datos general de TinyLLaMA y la estructura del bloque Transformer.
+El siguiente diagrama Mermaid muestra el flujo de datos general de TinyLLaMA y la estructura del bloque [Transformer](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/).
 
 ```mermaid
 graph TD
@@ -151,7 +151,7 @@ Para maximizar el uso de los Tensor Cores de la GPU, los cálculos durante el en
 
 ## 6. Práctica: Código de ajuste fino QLoRA para TinyLLaMA
 
-Ahora explicaremos un script de PyTorch para el ajuste más rápido que incorpora todas las optimizaciones anteriores. Aquí utilizaremos el `SFTTrainer` de la biblioteca `trl` (Transformer Reinforcement Learning) de Hugging Face.
+Ahora explicaremos un script de PyTorch para el ajuste más rápido que incorpora todas las optimizaciones anteriores. Aquí utilizaremos el `SFTTrainer` de la biblioteca `trl` ([Transformer](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) Reinforcement Learning) de Hugging Face.
 
 ### 6.1 Preparación del conjunto de datos y carga del modelo
 
@@ -353,7 +353,7 @@ Con esto, se establecerá un endpoint compatible con la API de OpenAI en su ento
 
 En este artículo, explicamos el método para realizar un ajuste fino de la manera más rápida y eficiente en memoria en un entorno local, centrándonos en "TinyLLaMA", que es liviano con 1.1B de parámetros pero de alto rendimiento.
 
-- Gracias a **LoRA / QLoRA**, es posible realizar un ajuste fino auténtico de LLM incluso en GPUs de consumidor.
+- Gracias a **LoRA / QLoRA**, es posible realizar un ajuste fino auténtico de [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) incluso en GPUs de consumidor.
 - Al aprovechar **Flash Attention 2** y **Gradient Checkpointing**, el tiempo de entrenamiento y el consumo de VRAM se optimizan al límite.
 - El despliegue utilizando **vLLM** logra un alto rendimiento (throughput) incluso en entornos de producción.
 

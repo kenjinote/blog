@@ -273,7 +273,7 @@ Montgomery Ladderの美しい点は、ビットが `0` であっても `1` で�
 
 ## 8. C++による楕円曲線暗号の実装
 
-ここからは、理論をC++のコードに落とし込んでいきます。実用的な暗号ライブラリ（OpenSSLやlibsodiumなど）は高度なアセンブリ最適化や[ヤコビ](https://kenji.blog/p/jacobi/)座標系を使用していますが、ここでは数学的理解を深めるために、 **アフィン座標系を用いたわかりやすいConstant-Time実装** の骨組みを示します。
+ここからは、理論をC++のコードに落とし込んでいきます。実用的な暗号ライブラリ（OpenSSLやlibsodiumなど）は高度な[アセンブリ](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)最適化や[ヤコビ](https://kenji.blog/p/jacobi/)座標系を使用していますが、ここでは数学的理解を深めるために、 **アフィン座標系を用いたわかりやすいConstant-Time実装** の骨組みを示します。
 
 巨大な整数の演算には `boost::multiprecision::cpp_int` を用いると仮定します。
 

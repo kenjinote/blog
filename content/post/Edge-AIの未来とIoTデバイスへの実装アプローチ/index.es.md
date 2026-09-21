@@ -241,7 +241,7 @@ En los relojes inteligentes y los electrocardiógrafos portátiles (ECG), el dis
 
 Aunque las tecnologías de Edge AI avanzan rápidamente, todavía existen muchos retos y perspectivas de futuro fascinantes.
 
-**1. Ejecución de LLM (Grandes Modelos de Lenguaje) en el perímetro**:
+**1. Ejecución de [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) (Grandes Modelos de Lenguaje) en el perímetro**:
 Uno de los temas más destacados en los últimos años es el intento de ejecutar IA generativa y LLMs en el perímetro, también conocidos como "Edge LLMs". Aunque es imposible cargar modelos de decenas de miles de millones de parámetros tal cual, gracias a frameworks de optimización como llama.cpp, técnicas de cuantización extremas a 4 bits / 2 bits (AWQ, GPTQ, etc.), y la aparición de Modelos de Lenguaje Pequeños (SLMs) compactos y de alto rendimiento como Phi-3 de Microsoft, se acerca la era donde el procesamiento del lenguaje natural se podrá ejecutar completamente [offline](https://kenji.blog/es/p/pwa-progressive-web-apps-service-worker/) incluso en smartphones o en la Raspberry Pi.
 
 **2. Computación neuromórfica y SNN**:

@@ -13,7 +13,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 在现代Web前端开发中，兼顾性能与开发体验（DX：Developer Experience）是所有项目中最重要的课题之一。在静态网站生成器（SSG）中拥有世界最快级别构建速度的 **Hugo** ，与引入了效用优先（Utility-First）这一创新范式的 **Tailwind CSS** 相结合，可以说是对这个课题的终极解答之一。
 
-Hugo使用Go语言编写，即使是数千页的网站，也能在短短几秒或毫秒级的时间内完成构建，拥有惊人的性能。另一方面，Tailwind CSS通过将预先定义好的无数效用类（如`flex`, `text-center`, `mt-4`等）直接写在HTML中，消除了在CSS文件和HTML文件之间来回切换的上下文切换，加速了设计的迭代。
+Hugo使用[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)语言编写，即使是数千页的网站，也能在短短几秒或毫秒级的时间内完成构建，拥有惊人的性能。另一方面，Tailwind CSS通过将预先定义好的无数效用类（如`flex`, `text-center`, `mt-4`等）直接写在HTML中，消除了在CSS文件和HTML文件之间来回切换的上下文切换，加速了设计的迭代。
 
 本文将从架构基础到数学层面性能优化的视角，彻底且详细地讲解如何在Hugo主题中导入Tailwind CSS，以及进一步构建使用PostCSS的高级资产管道（Hugo Pipes）的步骤。
 
@@ -268,7 +268,7 @@ module.exports = {
 
 #### 管道说明与Mermaid图解
 
-下面通过图解说明上述的Go模板代码是如何处理CSS文件的一系列管道流程。
+下面通过图解说明上述的[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)模板代码是如何处理CSS文件的一系列管道流程。
 
 ```mermaid
 flowchart TD

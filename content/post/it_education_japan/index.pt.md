@@ -74,7 +74,7 @@ Abaixo está a complexidade de tempo média dos algoritmos de classificação re
 - Insertion Sort (Ordenação por Inserção): $O(N^2)$
 - Merge Sort (Ordenação por Intercalação): $O(N \log N)$
 - Quick Sort (Ordenação Rápida): $O(N \log N)$
-- Heap Sort (Ordenação Heap): $O(N \log N)$
+- [Heap](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/) Sort (Ordenação Heap): $O(N \log N)$
 
 Por exemplo, a complexidade de tempo do mergesort, $T(N)$, é expressa pela seguinte relação de recorrência baseada no paradigma Dividir e Conquistar (Divide and Conquer):
 
@@ -200,7 +200,7 @@ O desafio final e indiscutível a se colocar em termos de crise nacional, enfren
 
 No Reino Unido (UK), já desde 2014 a disciplina chamada de "Computing" tornou-se obrigatória desde os 5 anos (Key Stage 1). O currículo deles vai além de uma simples "experiência de programação", abarcando ciência da computação pura sistemática e incrivelmente acadêmica; abrangendo raciocínio algorítmico e design, o estudo dos circuitos lógicos usando álgebra booleana (Boolean algebra), topologias de rede e arquiteturas de hardware.
 
-Nos Estados Unidos, há um padrão curricular rígido K-12 (Jardim de Infância até o final do ensino médio) definido pela CSTA (Associação de Professores de Ciência da Computação), onde o AP (Advanced Placement) Computer Science A, ministrado para alunos do ensino médio, lida extensivamente com programação orientada a objetos usando Java, polimorfismo, processamento recursivo, implementação de estrutura de dados e avaliação da complexidade de algoritmos em um nível comparável ao primeiro ano de universidades. Nem precisamos mencionar a ferocidade da educação STEM na Índia ou na China e as grandes massas de elites ali produzidas.
+Nos Estados Unidos, há um padrão curricular rígido K-12 (Jardim de Infância até o final do ensino médio) definido pela CSTA (Associação de Professores de Ciência da Computação), onde o AP (Advanced Placement) Computer Science A, ministrado para alunos do ensino médio, lida extensivamente com programação orientada a objetos usando [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), polimorfismo, processamento recursivo, implementação de estrutura de dados e avaliação da complexidade de algoritmos em um nível comparável ao primeiro ano de universidades. Nem precisamos mencionar a ferocidade da educação STEM na Índia ou na China e as grandes massas de elites ali produzidas.
 
 ### Desconexão Abismal Entre as Habilidades Requeridas e as Ensinadas
 
@@ -219,7 +219,7 @@ xychart-beta
 
 Preencher esse vazio massivo (Vale da Morte - Death Valley) demanda enormes volumes de investimento aliado a uma mudança paradigmática fundamental em toda a matriz educativa. Dada uma severa escassez nacional de professores especialistas em "Informação", e no presente cenário de educação, os ensinamentos baseados em programação são conduzidos sem nenhum treinamento adequado através de professores de Matemática, Ciências, além de docentes em áreas tecnológicas focados apenas nas horas complementares de suas próprias pautas oficiais, impossibilitando assim, formar engenheiros de topo (top-tier) dispostos a lutar nos palcos globais.
 
-## 9. A Queda Drástica no Valor da "Codificação" na Era da Inteligência Artificial (LLM)
+## 9. A Queda Drástica no Valor da "Codificação" na Era da Inteligência Artificial ([LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/))
 
 Complicando ainda mais este cenário está a massiva e rápida adesão de LLMs (Grandes Modelos de Linguagem), como o ChatGPT e o GitHub Copilot para programação de assistência virtual artificial. O valor no mercado para o chamado "Codificador (Coder)" – uma pessoa que apenas "sabe usar as sintaxes de programação do Python" ou que "sabe como acessar APIs" - está num drástico mergulho perante aos modelos de Inteligência Artificial atuais, que perfeitamente concebem instantaneamente as linguagens a partir de requisições de prompt sem problemas e completam até o código para testes.
 

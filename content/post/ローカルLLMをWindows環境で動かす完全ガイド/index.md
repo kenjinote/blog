@@ -9,9 +9,9 @@ categories: ["ai", "llm", "windows"]
 tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 ---
 
-# 1. はじめに：なぜ今、WindowsでローカルLLMなのか？
+# 1. はじめに：なぜ今、Windowsでローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)なのか？
 
-2026年現在、生成AIと大規模言語モデル（LLM）の進化は、クラウド上の巨大なAPIサービスから、個人のPCやオンプレミス環境で動作する「ローカルLLM」へと大きなパラダイムシフトを見せています。OpenAIのGPT-5やAnthropicのClaude 3.5といったクラウドAIは非常に強力ですが、企業や個人がすべてのデータをクラウドに送信できるわけではありません。プライバシー、セキュリティ、レイテンシ、そして長期的・持続的なコストの観点から、ローカルLLMの需要はかつてなく爆発的に高まっています。
+2026年現在、生成AIと[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（LLM）の進化は、クラウド上の巨大なAPIサービスから、個人のPCやオンプレミス環境で動作する「ローカルLLM」へと大きなパラダイムシフトを見せています。OpenAIのGPT-5やAnthropicのClaude 3.5といったクラウドAIは非常に強力ですが、企業や個人がすべてのデータをクラウドに送信できるわけではありません。プライバシー、セキュリティ、レイテンシ、そして長期的・持続的なコストの観点から、ローカルLLMの需要はかつてなく爆発的に高まっています。
 
 特にWindows環境におけるローカルLLMのエコシステムの進化は目覚ましいものがあります。数年前までは「AI開発・実行といえばLinux」が常識でしたが、2026年現在ではWindowsが非常に強力かつ手軽なAIプラットフォームへと変貌を遂げました。
 
@@ -39,7 +39,7 @@ AI PCの進化に伴い、要求スペックも変化しています。
 - **OS**: Windows 11 Pro (24H2以降)。WSL2の完全な機能と高度な[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)、さらにはDirectMLの最新APIを利用するために必須です。
 - **CPU**: Intel Core Ultra 200シリーズ以上、またはAMD Ryzen 9000シリーズ以上。CPU推論を併用する場合、広帯域メモリ通信が不可欠です。
 - **RAM**: 最低32GB、推奨64GB以上。メインメモリの帯域幅（MB/s）がCPU推論時やオフロード時の決定的なボトルネックになります。DDR5-6000以上の高速メモリが理想的です。
-- **GPU**: NVIDIA RTX 4000/5000シリーズ。ローカルLLMにおいて最も重要なのは演算性能ではなく「VRAM容量」です。
+- **GPU**: NVIDIA RTX 4000/5000シリーズ。ローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)において最も重要なのは演算性能ではなく「VRAM容量」です。
   - **エントリー**: RTX 4060 Ti (16GB版) - コスパ最強。8B〜14Bクラスのモデルに最適。
   - **ミドルレンジ**: RTX 4070 Ti SUPER (16GB) / RTX 4080 SUPER (16GB)
   - **ハイエンド**: RTX 4090 (24GB) / RTX 5090 (32GB) - 30B〜70Bクラスの量子化モデルを動かすために必要です。
@@ -63,7 +63,7 @@ wsl --update
 
 ---
 
-# 3. ローカルLLMのアーキテクチャと推論メカニズム
+# 3. ローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)のアーキテクチャと推論メカニズム
 
 ローカル環境でモデルがどのようにテキストを生成するのか、その内部構造を理解することは、トラブルシューティングや最適化において非常に有用です。
 
@@ -91,7 +91,7 @@ graph TD
 
 ## 3.1 2つのフェーズ：Prefill と Decode
 
-LLMのテキスト生成は、計算特性の異なる2つのフェーズに分かれます。
+[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)のテキスト生成は、計算特性の異なる2つのフェーズに分かれます。
 
 1. **Prefill（プロンプト処理）フェーズ**: 入力されたプロンプト全体を一度に処理し、理解するフェーズです。並列計算が可能であるため、GPUの計算能力（FLOPS）が速度に直結します。プロンプトが長い場合、このフェーズに数秒かかることがあります。
 2. **Decode（トークン生成）フェーズ**: 1トークンずつ予測し、次の入力に回す（オートレグレッシブ）フェーズです。このフェーズでは並列計算が制限されるため、GPUのVRAM帯域幅（Memory Bandwidth）が決定的なボトルネックになります。
@@ -273,7 +273,7 @@ graph LR
     LocalLLM --> Answer["最終的な回答"]
 ```
 
-AnythingLLMデスクトップ版（Windows）を使えば、設定画面からOllama（LLMとEmbedding）を指定し、ローカルのVectorDB（LanceDB）を利用するよう設定するだけで、数分でこのアーキテクチャが完成します。データを外部に一切送信しないプライベートAIの誕生です。
+AnythingLLMデスクトップ版（Windows）を使えば、設定画面からOllama（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)とEmbedding）を指定し、ローカルのVectorDB（LanceDB）を利用するよう設定するだけで、数分でこのアーキテクチャが完成します。データを外部に一切送信しないプライベートAIの誕生です。
 
 ---
 
@@ -314,7 +314,7 @@ UnslothはCUDAカーネルを極限まで最適化しており、標準のHuggin
 
 # 10. まとめと今後の展望
 
-2026年、Windows環境におけるローカルLLMの構築は、限られた一部のエンジニアだけの特権ではなくなりました。GGUFフォーマットのデファクト化、OllamaやLM Studioといった洗練されたエコシステムの登場、そしてFlashAttentionをはじめとするハードウェア最適化により、誰でも簡単にエンタープライズ級のAI環境を手に入れることができます。
+2026年、Windows環境におけるローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)の構築は、限られた一部のエンジニアだけの特権ではなくなりました。GGUFフォーマットのデファクト化、OllamaやLM Studioといった洗練されたエコシステムの登場、そしてFlashAttentionをはじめとするハードウェア最適化により、誰でも簡単にエンタープライズ級のAI環境を手に入れることができます。
 
 本記事で解説した以下のポイントを是非活用してください。
 

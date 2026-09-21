@@ -9,15 +9,15 @@ categories: ["ai", "machine-learning", "mathematics"]
 tags: ["Transformer", "Deep Learning", "Attention", "Math"]
 ---
 
-# 前言：為什麼要學習Transformer的數學？
+# 前言：為什麼要學習[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)的數學？
 
-可以毫不誇張地說，「Transformer」是改寫了現代自然語言處理（NLP）乃至整個人工智慧歷史的架構。這個模型首次由Google研究人員在2017年的論文《Attention Is All You Need》中提出，現在作為席捲全球的大型語言模型（LLM）——如OpenAI的GPT系列（ChatGPT的底層技術）、Google的BERT以及Anthropic的Claude——的核心運作著。
+可以毫不誇張地說，「Transformer」是改寫了現代自然語言處理（NLP）乃至整個人工智慧歷史的架構。這個模型首次由Google研究人員在2017年的論文《Attention Is All You Need》中提出，現在作為席捲全球的大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）——如OpenAI的GPT系列（ChatGPT的底層技術）、Google的BERT以及Anthropic的Claude——的核心運作著。
 
 然而，現狀是我們經常看到關於Transformer機制的定性解釋，例如「使用Attention（注意力機制）來理解上下文」，但針對初學者深入探討其背後 **數學結構** 的解說卻意外地少。為了真正理解AI是如何將「語言」作為「數學公式」進行處理，並生成出令人驚訝地自然的文本，解讀其數學機制是不可或缺的。
 
 本文針對具備數學和程式設計基礎知識（了解高中程度的矩陣和微分概念）的讀者，將徹底且淺顯易懂地解開Transformer核心的「Self-Attention機制」、「Query-[Key-Value](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/)（Q/K/V）模型」、「透過Softmax函數進行的正規化」，以及「Positional Encoding」等數學結構。
 
-你可能會被一連串的數學公式給震撼，但每一個計算都有其明確的「意義」。當你讀完這篇文章時，你應該能夠理解Transformer並不僅僅是一個神奇的黑盒子，而是經過精心設計的數學與統計學結晶。
+你可能會被一連串的數學公式給震撼，但每一個計算都有其明確的「意義」。當你讀完這篇文章時，你應該能夠理解[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)並不僅僅是一個神奇的黑盒子，而是經過精心設計的數學與統計學結晶。
 
 ---
 
@@ -69,7 +69,7 @@ $$ x_i = W_E \cdot \text{one\_hot}(w_i) $$
 藉此，整篇文章將被表示為矩陣 $X \in \mathbb{R}^{N \times d_{model}}$（其中 $N$ 是文章的長度）。
 
 ## 3.2 Positional Encoding（位置編碼）的必要性與數學公式
-Transformer並不像RNN那樣依序處理詞彙，而是同時對所有詞彙進行平行處理。這在計算速度上是個巨大的優勢，但同時也引發了 **「詞彙順序（語序）」這個重要資訊會遺失** 的問題。例如，「狗咬人」與「人咬狗」，雖然輸入的詞彙集合相同，但意義卻完全不同。
+[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)並不像RNN那樣依序處理詞彙，而是同時對所有詞彙進行平行處理。這在計算速度上是個巨大的優勢，但同時也引發了 **「詞彙順序（語序）」這個重要資訊會遺失** 的問題。例如，「狗咬人」與「人咬狗」，雖然輸入的詞彙集合相同，但意義卻完全不同。
 
 為了將這個語序資訊提供給模型，所發明的方法就是 **Positional Encoding** 。
 位於位置 $pos$ 的詞彙之第 $i$ 個維度的Positional Encoding $PE$，是使用以下的三角函數來計算的：
@@ -217,7 +217,7 @@ $$ \text{FFN}(x) = \max(0, x W_1 + b_1) W_2 + b_2 $$
 
 # 7. 殘差連接（Residual Connection）與 Layer Normalization
 
-在深度學習中，如果網路層數變得太深，在訓練時會發生梯度消失或爆炸，導致無法順利學習的問題。為了防止這種情況，在Transformer每個子層（Attention 與 FFN）的周圍，都配置了 **殘差連接（Residual Connection） ** 與 **Layer Normalization（層正規化）** 。
+在深度學習中，如果網路層數變得太深，在訓練時會發生梯度消失或爆炸，導致無法順利學習的問題。為了防止這種情況，在[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)每個子層（Attention 與 FFN）的周圍，都配置了 **殘差連接（Residual Connection） ** 與 **Layer Normalization（層正規化）** 。
 
 用數學公式寫的話，子層的輸出會進行如下處理：
 
@@ -274,7 +274,7 @@ Transformer雖然是個很棒的模型，但因為其數學結構也存在著「
 請注意 Self-Attention 的計算複雜度。在計算分數矩陣 $Q K^T$ 時，需要將 $(N \times d_k)$ 的矩陣與 $(d_k \times N)$ 的矩陣相乘，因此其計算複雜度為 **$O(N^2 \cdot d_{model})$** 。
 
 換句話說， **相對於序列長度 $N$，計算複雜度與記憶體使用量會呈平方增長** 。
-當文章很短時不會成為問題，但如果想將整本書這樣超長的上下文輸入到 LLM 時，$N$ 會達到數萬至數十萬，在傳統的 Attention 計算下，GPU的記憶體會瞬間耗盡。
+當文章很短時不會成為問題，但如果想將整本書這樣超長的上下文輸入到 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 時，$N$ 會達到數萬至數十萬，在傳統的 Attention 計算下，GPU的記憶體會瞬間耗盡。
 
 為了解開這個 $O(N^2)$ 的詛咒，近年來從數學與硬體角度提出了各種最佳化方法。
 其中具代表性的例子就是 **FlashAttention** 。FlashAttention 是一種將 Attention 計算以區塊（Tiling）方式分割進行的演算法，藉此將 GPU 記憶體階層（SRAM 與 HBM）之間的資料傳輸（記憶體存取）降到最低。儘管在數學公式上輸出的結果與標準的 Attention 完全相同（Exact Attention），但透過硬體層級的最佳化實現了戲劇性的加速與記憶體節省，使得像 GPT-4 這種長文本模型成為可能。
@@ -322,7 +322,7 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 # 結語：從數學公式看見「智慧」的樣貌
 
-在本文中，我們解開了Transformer模型深處的數學結構。
+在本文中，我們解開了[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)模型深處的數學結構。
 
 將詞彙映射到多維向量空間的 Embedding、透過三角波合成來表達位置資訊的 Positional Encoding，以及源自資訊檢索比喻、本質上是矩陣內積計算的 Self-Attention 機制。這些組件每一個都只不過是線性代數、微積分、機率統計等基礎數學的累積。
 
@@ -330,9 +330,9 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 正如《Attention Is All You Need》這個充滿挑釁意味的標題所示，捨棄了複雜的遞歸處理與卷積處理，專注於純粹「注意力（關聯度）」計算的這種架構之美，可以說正是存在於其數學的簡潔性之中。
 
-未來，或許會出現超越Transformer的全新架構（例如基於狀態空間模型 [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Space Model 的 Mamba 等），但Transformer所建立的「透過 Attention 進行上下文理解」的數學框架，想必會永遠銘刻在人工智慧的歷史中。
+未來，或許會出現超越Transformer的全新架構（例如基於狀態空間模型 [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Space Model 的 Mamba 等），但[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)所建立的「透過 Attention 進行上下文理解」的數學框架，想必會永遠銘刻在人工智慧的歷史中。
 
-如果你未來有機會使用 ChatGPT 或 Claude 等 LLM，請試著想像在它們的背景運作中，每秒正進行著數兆次的 $Q K^T$ 矩陣乘積計算，並由 Softmax 函數計算出機率的模樣。相信你對技術的解析度會隨之提升，也會覺得 AI 的世界更加有趣。
+如果你未來有機會使用 ChatGPT 或 Claude 等 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)，請試著想像在它們的背景運作中，每秒正進行著數兆次的 $Q K^T$ 矩陣乘積計算，並由 Softmax 函數計算出機率的模樣。相信你對技術的解析度會隨之提升，也會覺得 AI 的世界更加有趣。
 
 ### 參考文獻
 - Vaswani, A., et al. (2017). "Attention Is All You Need." *Advances in Neural Information Processing Systems*.

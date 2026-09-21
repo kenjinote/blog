@@ -110,7 +110,7 @@ $$
 Pada persamaan di atas, $S_t$ adalah status global Ethereum saat ini (saldo setiap akun dan penyimpanan kontrak), $T$ adalah transaksi, $\Upsilon$ adalah fungsi transisi status oleh EVM, dan $S_{t+1}$ mewakili status baru setelah eksekusi transaksi.
 
 Struktur internal EVM terutama dibagi ke dalam area berikut:
-- **Stack**: Struktur data LIFO (Last-In-First-Out) dengan maksimum 1024 elemen. Ukuran word 256-bit. Menyimpan operan untuk berbagai operasi.
+- **[Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)**: Struktur data LIFO (Last-In-First-Out) dengan maksimum 1024 elemen. Ukuran word 256-bit. Menyimpan operan untuk berbagai operasi.
 - **Memory**: Array byte volatil yang dipertahankan sementara hanya selama eksekusi transaksi.
 - **Storage**: Area data persisten yang dialokasikan per kontrak. Terdiri dari database tipe key-value (256-bit ke 256-bit), dan operasi penulisan memiliki biaya gas yang tinggi.
 

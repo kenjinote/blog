@@ -32,7 +32,7 @@ Namun, seiring pertumbuhan sistem dan bertambahnya skala fitur serta tim pengemb
 *   **Basis Kode yang Membengkak dan Semakin Kompleks**: Penambahan fitur yang terus-menerus membuat basis kode menjadi sangat besar, sehingga sulit untuk memahami keseluruhan sistem. Risiko sebuah perubahan berdampak pada fitur lain yang tidak terduga (bug regresi) menjadi tinggi.
 *   **Kurangnya Fleksibilitas Deployment**: Bahkan untuk perbaikan kecil, seluruh aplikasi harus di-build ulang dan di-deploy ulang. Hal ini memperpanjang lead time deployment dan menurunkan kelincahan (agility).
 *   **Keterbatasan Skalabilitas**: Meskipun hanya fitur tertentu (misalnya, fitur pemrosesan gambar) yang menghabiskan banyak sumber daya, kita terpaksa melakukan scale out pada seluruh aplikasi, yang memperburuk efisiensi penggunaan sumber daya.
-*   **Terpaku pada Tech Stack Tertentu**: Karena berupa satu basis kode tunggal, sulit untuk memperkenalkan bahasa atau framework baru secara parsial, sehingga mudah terikat pada teknologi lama.
+*   **Terpaku pada Tech [Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) Tertentu**: Karena berupa satu basis kode tunggal, sulit untuk memperkenalkan bahasa atau framework baru secara parsial, sehingga mudah terikat pada teknologi lama.
 
 Untuk mengatasi tantangan ini, banyak perusahaan mulai mempertimbangkan untuk beralih ke **Arsitektur Microservices**.
 

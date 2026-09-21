@@ -28,7 +28,7 @@ Google Colaboratory एक ऑनलाइन Python निष्पादन �
 
 - [Javascript Playground](https://playcode.io/)
 
-## Java
+## [Java](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/)
 
 - [paiza.IO Online Java compiler](https://paiza.io/ja/projects/new?language=java)
 
@@ -47,7 +47,7 @@ Google Colaboratory एक ऑनलाइन Python निष्पादन �
 
 - [AWS Cloud9](https://aws.amazon.com/jp/cloud9/)
 
-Amazon AWS द्वारा प्रदान किया गया एक ऑनलाइन एकीकृत विकास वातावरण। इसमें Node.js, JavaScript, Python, PHP, Ruby, Go, C++ जैसी 40 से अधिक प्रोग्रामिंग भाषाओं के लिए टूल पहले से पैक होते हैं।
+Amazon AWS द्वारा प्रदान किया गया एक ऑनलाइन एकीकृत विकास वातावरण। इसमें Node.js, JavaScript, Python, PHP, Ruby, [Go](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/), C++ जैसी 40 से अधिक प्रोग्रामिंग भाषाओं के लिए टूल पहले से पैक होते हैं।
 
 - [Visual Studio Code for the Web](https://vscode.dev/)
 
@@ -55,7 +55,7 @@ Microsoft द्वारा प्रदान किया गया एक �
 
 - [paiza.IO](https://paiza.io/projects/CGAcQLfW-IOXYy8Dq2OHBw?locale=ja-jp)
 
-एक ऑनलाइन निष्पादन वातावरण जो C, C++, Java, Ruby, Python, PHP, Perl आदि जैसी 24 प्रमुख भाषाओं का समर्थन करता है।
+एक ऑनलाइन निष्पादन वातावरण जो C, C++, [Java](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/), Ruby, Python, PHP, Perl आदि जैसी 24 प्रमुख भाषाओं का समर्थन करता है।
 
 - [CodePen](https://codepen.io/)
 

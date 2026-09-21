@@ -108,7 +108,7 @@ graph TD
 ```
 
 ### 3.1 Criterio de evaluación 1: Confidencialidad (Privacy and Security)
-Es el criterio de juicio más importante. Para código de prueba que contenga datos de clientes, cuya transmisión externa esté prohibida por la política de la empresa, o archivos que implementen algoritmos propietarios centrales, elija la IA local sin compromisos. Construir un RAG (Generación Aumentada por Recuperación) local, almacenar documentos internos de la empresa en un almacén de vectores y hacer que los LLM locales hagan referencia a ellos, también es un método muy efectivo.
+Es el criterio de juicio más importante. Para código de prueba que contenga datos de clientes, cuya transmisión externa esté prohibida por la política de la empresa, o archivos que implementen algoritmos propietarios centrales, elija la IA local sin compromisos. Construir un RAG (Generación Aumentada por Recuperación) local, almacenar documentos internos de la empresa en un almacén de vectores y hacer que los [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) locales hagan referencia a ellos, también es un método muy efectivo.
 
 ### 3.2 Criterio de evaluación 2: Latencia (Latency)
 Para no detener la velocidad del pensamiento, la latencia de completado es extremadamente importante. La IA en la nube siempre experimenta tiempos de viaje de ida y vuelta (RTT) de la red. Debido a que la IA local tiene una latencia de red cero, mantener un modelo ligero en la VRAM permite alcanzar velocidades percibidas superiores a las de la nube.

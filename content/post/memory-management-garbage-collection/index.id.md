@@ -8,15 +8,15 @@ categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]
 ---
 
-# Selamat Datang di Kebenaran Manajemen Memori: Mengungkap Misteri dari C, Java, dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
+# Selamat Datang di Kebenaran Manajemen Memori: Mengungkap Misteri dari C, [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
 Dalam pengembangan perangkat lunak, manajemen memori adalah tema abadi yang tidak dapat dihindari, dan salah satu faktor terpenting yang menentukan kinerja dan stabilitas sistem. Dalam artikel ini, melalui eksplorasi mendalam berskala sekitar 20.000 karakter, kami akan sepenuhnya mencakup segala hal mulai dari teori dasar manajemen memori hingga teknik pengoptimalan dalam arsitektur modern.
 
-Kebebasan dan tanggung jawab **manajemen manual** yang dibawa oleh bahasa C, otomatisasi yang aman melalui **pengumpulan sampah** ( GC ) yang dipopulerkan oleh Java, dan paradigma verifikasi waktu kompilasi yang disebut **kepemilikan** ( Ownership ) yang dihadirkan oleh Rust. Dengan membandingkan dan menganalisis ketiga pendekatan yang sama sekali berbeda ini, kita akan mendekati esensi dari **sejarah dan evolusi** tentang bagaimana bahasa pemrograman berhadapan dengan sumber daya terbatas yang disebut memori.
+Kebebasan dan tanggung jawab **manajemen manual** yang dibawa oleh bahasa C, otomatisasi yang aman melalui **pengumpulan sampah** ( GC ) yang dipopulerkan oleh [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), dan paradigma verifikasi waktu kompilasi yang disebut **kepemilikan** ( Ownership ) yang dihadirkan oleh [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/). Dengan membandingkan dan menganalisis ketiga pendekatan yang sama sekali berbeda ini, kita akan mendekati esensi dari **sejarah dan evolusi** tentang bagaimana bahasa pemrograman berhadapan dengan sumber daya terbatas yang disebut memori.
 
 ---
 
-## 1. Struktur Dasar Memori: Stack, Heap, dan Memori Virtual
+## 1. Struktur Dasar Memori: [Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/), [Heap](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/), dan Memori Virtual
 
 Saat sebuah program dieksekusi, sistem operasi ( OS ) mengalokasikan area memori abstrak yang disebut "ruang memori virtual" untuk proses tersebut. Dari sudut pandang program, ruang ini terlihat seperti ruang memori besar yang berkelanjutan, tetapi di balik layar, ruang ini dipetakan ke memori fisik ( RAM ) dan area swap oleh mekanisme paging OS.
 
@@ -109,7 +109,7 @@ int main() {
 Manajemen memori dalam bahasa C dengan mudah menghasilkan bug (kerentanan memori) tipikal seperti berikut ini.
 
 1. **Kebocoran Memori (Memory Leak)** : Fenomena di mana memori yang tidak digunakan tetap ada tanpa dibebaskan karena lupa memanggil `free`. Jika ini terjadi di server yang berjalan lama, pada akhirnya akan menghabiskan memori seluruh sistem dan dimatikan secara paksa oleh pembunuh OOM (Out Of Memory).
-2. **Dangling Pointer** : Sebuah pointer yang terus menunjuk ke area memori yang telah dibebaskan oleh `free`. Mencoba mengakses memori melalui pointer ini akan menyebabkan perilaku yang tidak terdefinisi (seperti kesalahan segmentasi / segmentation fault).
+2. **Dangling [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)** : Sebuah pointer yang terus menunjuk ke area memori yang telah dibebaskan oleh `free`. Mencoba mengakses memori melalui pointer ini akan menyebabkan perilaku yang tidak terdefinisi (seperti kesalahan segmentasi / segmentation fault).
 3. **Pembebasan Ganda (Double Free)** : Kesalahan memanggil `free` dua kali terhadap pointer area heap yang sama. Ini merusak struktur internal alokator (seperti free list heap) dan menjadi kerentanan keamanan.
 4. **Buffer Overflow** : Fenomena menulis data melebihi area memori yang telah dialokasikan. Dengan menimpa data penting atau alamat kembalian yang berdekatan, ini menjadi titik awal serangan yang mengeksekusi kode berbahaya (seperti stack smashing).
 
@@ -121,7 +121,7 @@ Pada titik waktu $ T $ saat program selesai secara normal, secara logis ideal ji
 
 ---
 
-## 3. Java: Revolusi yang Dibawa oleh Pengumpulan Sampah
+## 3. [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/): Revolusi yang Dibawa oleh Pengumpulan Sampah
 
 Java membawa pergeseran paradigma yang besar ke industri perangkat lunak, yang menderita bug memori yang sering terjadi dalam C/C++. Java mengambil kerumitan manajemen memori dari programmer dan mempercayakannya pada **pengumpulan sampah** ( GC ) yang ada di dalam Mesin Virtual Java (JVM). Pengembang kini hanya perlu berfokus pada penulisan logika bisnis dan pembuatan objek.
 
@@ -162,7 +162,7 @@ graph TD
 
 Pada gambar di atas, objek hijau ditandai sebagai dapat dijangkau dan dilindungi. Di sisi lain, kumpulan objek yang ditunjukkan oleh garis putus-putus merah secara otomatis memorinya dipulihkan pada fase sweep karena tidak direferensikan dari mana pun.
 
-### 3.2 Perilaku Memori dalam Kode Java
+### 3.2 Perilaku Memori dalam Kode [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)
 
 Di Java, objek dialokasikan di heap menggunakan kata kunci `new`, tetapi tidak ada instruksi pembebasan yang setara dengan `free` di C.
 
@@ -197,7 +197,7 @@ public class GcExample {
 
 JVM modern (seperti HotSpot VM) membagi heap berdasarkan generasi (Generation) untuk efisiensi. Ini didasarkan pada aturan praktis empiris bahwa **"banyak objek menjadi tidak diperlukan segera setelah dibuat (hipotesis generasi lemah)"**.
 
-Heap secara umum dibagi menjadi "Generasi Muda (Young Generation: Ruang Eden, Ruang Survivor)" dan "Generasi Tua (Old Generation: Ruang Tenured)".
+[Heap](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) secara umum dibagi menjadi "Generasi Muda (Young Generation: Ruang Eden, Ruang Survivor)" dan "Generasi Tua (Old Generation: Ruang Tenured)".
 
 - **Minor GC** : Terpicu saat Generasi Muda penuh. Ini memulihkan objek berumur pendek dengan cepat.
 - **Major GC / Full GC** : Objek yang bertahan dari beberapa Minor GC dipromosikan (Promote) ke Generasi Tua. Saat Generasi Tua penuh, Full GC yang lebih besar dan memakan waktu akan terpicu.
@@ -208,7 +208,7 @@ Saat GC dijalankan, semua utas aplikasi akan dijeda (pause) untuk menjaga konsis
 
 ## 4. [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/): Jalan Ketiga yang Dibawa oleh Kepemilikan dan Peminjaman
 
-"Performa ekstrem melalui manajemen manual" milik C dan "Keamanan memori melalui manajemen otomatis" milik Java. Keduanya telah lama dianggap memiliki hubungan timbal balik (trade-off). Namun, bahasa pemrograman Rust telah mencapai pencapaian luar biasa dengan menyingkirkan pengumpulan sampah (GC) sambil memberikan jaminan 100% atas keamanan memori pada saat kompilasi, dengan memperkenalkan model inovatif yang disebut **"Kepemilikan (Ownership)"**.
+"Performa ekstrem melalui manajemen manual" milik C dan "Keamanan memori melalui manajemen otomatis" milik [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/). Keduanya telah lama dianggap memiliki hubungan timbal balik (trade-off). Namun, bahasa pemrograman [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) telah mencapai pencapaian luar biasa dengan menyingkirkan pengumpulan sampah (GC) sambil memberikan jaminan 100% atas keamanan memori pada saat kompilasi, dengan memperkenalkan model inovatif yang disebut **"Kepemilikan (Ownership)"**.
 
 ### 4.1 Tiga Prinsip Kepemilikan (Ownership)
 
@@ -243,7 +243,7 @@ fn main() {
 
 Jika semua operasi memindahkan kepemilikan, pemrograman akan menjadi sangat tidak nyaman. Untuk mengakses data tanpa merampas kepemilikan, [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) memiliki konsep **Referensi (Reference)** dan **Peminjaman (Borrowing)**.
 
-Selain itu, **Pemeriksa Pinjaman (Borrow Checker)** bawaan kompilator Rust memaksakan aturan ketat berikut pada saat kompilasi.
+Selain itu, **Pemeriksa Pinjaman (Borrow Checker)** bawaan kompilator [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) memaksakan aturan ketat berikut pada saat kompilasi.
 
 - Pada titik waktu mana pun, Anda hanya dapat memiliki **satu referensi yang dapat diubah (`&mut T`)**, atau **sejumlah referensi yang tidak dapat diubah (`&T`)** (keduanya tidak dapat hidup berdampingan. Mencegah Perlombaan Data / Data Race).
 - Waktu hidup (masa berlaku) dari sebuah referensi tidak boleh melampaui waktu hidup dari data aslinya (pencegahan mutlak terhadap dangling pointer).
@@ -296,14 +296,14 @@ Saat CPU memuat data dari memori, CPU tidak hanya memuat data itu sendiri, tetap
 ### 5.1 Perbedaan Efisiensi Cache Berdasarkan Bahasa
 
 - **C / C++ / [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)** : Saat Anda membuat array dari struktur (`struct Array[100]` atau `Vec<MyStruct>`), data tersebut ditempatkan secara berurutan dan padat di memori tanpa celah. Saat melakukan pengulangan pada array, prefetcher perangkat keras CPU berfungsi dengan sempurna, sehingga tingkat rasio hit cache (cache hit rate) meningkat secara dramatis.
-- **Java** : Array objek Java (`MyObject[]`) bukanlah entitas (nilai aslinya), melainkan array "referensi (pointer) ke objek". Karena setiap objek aktual dialokasikan di tempat yang tersebar di heap, setiap kali terjadi pengulangan, sistem mengikuti pointer untuk mengakses alamat memori yang acak, menyebabkan kesalahan cache (Cache Miss) berturut-turut yang parah.
+- **[Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)** : Array objek Java (`MyObject[]`) bukanlah entitas (nilai aslinya), melainkan array "referensi (pointer) ke objek". Karena setiap objek aktual dialokasikan di tempat yang tersebar di heap, setiap kali terjadi pengulangan, sistem mengikuti pointer untuk mengakses alamat memori yang acak, menyebabkan kesalahan cache (Cache Miss) berturut-turut yang parah.
 
 Waktu rata-rata akses memori efektif $ T_{avg} $ dinyatakan sebagai berikut.
 
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 Di mana, $ h $ adalah rasio hit cache ( $ 0 \le h \le 1 $ ), $ T_{cache} $ adalah waktu akses cache (sekitar 1~4 ns), dan $ T_{memory} $ adalah waktu akses memori utama (sekitar 100 ns).
-Dengan menjadikan $ h $ mendekati 0.99 (pendekatan C/[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)) dibandingkan menurunkannya ke 0.5 (pengejaran pointer ala Java), akan tercipta perbedaan kecepatan eksekusi perulangan (looping) aplikasi puluhan kali lipat. Inilah alasan sebenarnya mengapa C++ atau Rust dipilih dalam mesin game atau sistem perdagangan berfrekuensi tinggi (high-frequency trading system).
+Dengan menjadikan $ h $ mendekati 0.99 (pendekatan C/[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)) dibandingkan menurunkannya ke 0.5 (pengejaran pointer ala [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)), akan tercipta perbedaan kecepatan eksekusi perulangan (looping) aplikasi puluhan kali lipat. Inilah alasan sebenarnya mengapa C++ atau [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) dipilih dalam mesin game atau sistem perdagangan berfrekuensi tinggi (high-frequency trading system).
 
 ---
 
@@ -314,9 +314,9 @@ Dalam artikel ini, kita telah menggali lebih dalam 3 paradigma manajemen memori 
 | Bahasa | Pendekatan | Keuntungan | Kerugian / Masalah |
 |:---:|:---|:---|:---|
 | **C** | Manajemen manual dengan `malloc/free` | Kecepatan tertinggi, efisiensi cache maksimum, ringan | Sarang kerentanan (kebocoran, pembebasan ganda), biaya pengembangan tinggi |
-| **Java** | GC (Pengumpulan Sampah) | Peningkatan kecepatan pengembangan, terjaminnya keamanan memori | Fluktuasi latensi akibat STW, memburuknya efisiensi cache |
+| **[Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)** | GC (Pengumpulan Sampah) | Peningkatan kecepatan pengembangan, terjaminnya keamanan memori | Fluktuasi latensi akibat STW, memburuknya efisiensi cache |
 | **[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)** | Kepemilikan & Pemeriksa Pinjaman | Keamanan dengan biaya runtime nol, kecepatan tinggi | Kurva pembelajaran yang curam, kesulitan dalam mendesain waktu hidup (lifetime) |
 
 Sejarah **manajemen memori** adalah permainan jungkat-jungkit yang berayun di antara performa dan keamanan. GC diciptakan untuk mencegah tragedi akibat manajemen manual, dan model kepemilikan ditemukan untuk menghindari penalti performa dari GC.
 
-Saat merancang sebuah sistem, alih-alih membuat keputusan picik seperti "Gunakan Rust karena tercepat" atau "Gunakan Java karena aman," membandingkan persyaratan sistem (keketatan terhadap latensi, sumber daya pengembangan, kemudahan pemeliharaan) dengan **kebenaran** di balik manajemen memori, dan memilih teknologi yang paling optimal adalah jalan untuk menjadi seorang insinyur kelas satu.
+Saat merancang sebuah sistem, alih-alih membuat keputusan picik seperti "Gunakan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) karena tercepat" atau "Gunakan [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) karena aman," membandingkan persyaratan sistem (keketatan terhadap latensi, sumber daya pengembangan, kemudahan pemeliharaan) dengan **kebenaran** di balik manajemen memori, dan memilih teknologi yang paling optimal adalah jalan untuk menjadi seorang insinyur kelas satu.

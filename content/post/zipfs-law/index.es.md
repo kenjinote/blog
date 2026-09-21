@@ -75,7 +75,7 @@ El ejemplo más clásico es la frecuencia de palabras en los corpus de texto. Al
 3. **and**: aproximadamente el 2.8% de probabilidad de aparición
 4. **to**: aproximadamente el 2.6% de probabilidad de aparición
 
-Por lo tanto, mientras que sólo unas pocas docenas de palabras frecuentes representan casi la mitad de todo el texto, cientos de miles de otras palabras rara vez aparecen. Este fenómeno de "Larga cola" es de extrema importancia en la construcción de índices de motores de búsqueda y el diseño de vocabularios para Grandes Modelos de Lenguaje (LLM). En el campo del procesamiento del lenguaje natural, las palabras que aparecen con demasiada frecuencia (palabras vacías) contienen muy poca información, por lo que se utilizan técnicas como TF-IDF para reducir su peso.
+Por lo tanto, mientras que sólo unas pocas docenas de palabras frecuentes representan casi la mitad de todo el texto, cientos de miles de otras palabras rara vez aparecen. Este fenómeno de "Larga cola" es de extrema importancia en la construcción de índices de motores de búsqueda y el diseño de vocabularios para Grandes Modelos de Lenguaje ([LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/)). En el campo del procesamiento del lenguaje natural, las palabras que aparecen con demasiada frecuencia (palabras vacías) contienen muy poca información, por lo que se utilizan técnicas como TF-IDF para reducir su peso.
 
 ## 4.2. Distribución de la población urbana
 

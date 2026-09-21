@@ -9,7 +9,7 @@ categories: ["ai", "llm", "windows"]
 tags: ["LLM", "Windows", "IA Locale", "Ollama", "llama.cpp"]
 ---
 
-# 1. Introduction : Pourquoi un LLM local sous Windows aujourd'hui ?
+# 1. Introduction : Pourquoi un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) local sous Windows aujourd'hui ?
 
 En 2026, l'évolution de l'IA générative et des grands modèles linguistiques (LLM) montre un changement de paradigme majeur, passant des services API massifs sur le cloud aux "LLM locaux" fonctionnant sur des PC personnels ou dans des environnements sur site. Les IA cloud comme GPT-5 d'OpenAI ou Claude 3.5 d'Anthropic sont extrêmement puissantes, mais les entreprises et les particuliers ne peuvent pas toujours envoyer toutes leurs données sur le cloud. Du point de vue de la confidentialité, de la sécurité, de la latence et des coûts à long terme et durables, la demande de LLM locaux a explosé comme jamais auparavant.
 
@@ -38,7 +38,7 @@ Avec l'évolution des PC IA, les spécifications requises évoluent également.
 
 - **Système d'exploitation (OS)** : Windows 11 Pro (24H2 ou ultérieur). Indispensable pour utiliser toutes les fonctionnalités de WSL2, la gestion avancée de la mémoire, ainsi que les dernières API de DirectML.
 - **CPU** : Intel Core Ultra série 200 ou supérieur, ou AMD Ryzen série 9000 ou supérieur. Lors de l'utilisation conjointe de l'inférence CPU, une communication mémoire à large bande passante est essentielle.
-- **RAM** : Minimum 32 Go, 64 Go ou plus recommandés. La bande passante de la mémoire principale (Mo/s) devient un goulot d'étranglement décisif lors de l'inférence CPU ou du déchargement. Une mémoire rapide DDR5-6000 ou supérieure est idéale.
+- **RAM** : Minimum 32 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), 64 Go ou plus recommandés. La bande passante de la mémoire principale (Mo/s) devient un goulot d'étranglement décisif lors de l'inférence CPU ou du déchargement. Une mémoire rapide DDR5-6000 ou supérieure est idéale.
 - **GPU** : Séries NVIDIA RTX 4000/5000. Pour les LLM locaux, le plus important n'est pas la puissance de calcul, mais la "capacité de la VRAM".
   - **Entrée de gamme** : RTX 4060 Ti (version 16 Go) - Le meilleur rapport qualité-prix. Idéal pour les modèles de la classe 8B à 14B.
   - **Milieu de gamme** : RTX 4070 Ti SUPER (16 Go) / RTX 4080 SUPER (16 Go)
@@ -63,7 +63,7 @@ Après l'installation, exécutez `nvidia-smi` dans le terminal WSL2. Si le GPU e
 
 ---
 
-# 3. Architecture et mécanisme d'inférence des LLM locaux
+# 3. Architecture et mécanisme d'inférence des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) locaux
 
 Comprendre la structure interne, c'est-à-dire la manière dont les modèles génèrent du texte dans un environnement local, est extrêmement utile pour le dépannage et l'optimisation.
 
@@ -91,7 +91,7 @@ graph TD
 
 ## 3.1 Deux phases : Prefill et Decode
 
-La génération de texte des LLM est divisée en deux phases aux caractéristiques de calcul différentes.
+La génération de texte des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) est divisée en deux phases aux caractéristiques de calcul différentes.
 
 1. **Phase de Prefill (traitement du prompt)** : C'est la phase où l'ensemble du prompt entré est traité et compris en une seule fois. Étant donné que le calcul parallèle est possible, la capacité de calcul (FLOPS) du GPU est directement liée à la vitesse. Si le prompt est long, cette phase peut prendre plusieurs secondes.
 2. **Phase de Decode (génération de tokens)** : C'est la phase de prédiction token par token, en transmettant à l'entrée suivante (autorégressif). Comme le calcul parallèle est limité dans cette phase, la bande passante de la VRAM du GPU (Memory Bandwidth) devient le goulot d'étranglement décisif.
@@ -117,7 +117,7 @@ $$
 V_{base} = 8 \times 2 = 16 \text{ GB}
 $$
 
-En d'autres termes, même avec un GPU doté de 16 Go de VRAM, on atteint presque la limite rien qu'en chargeant le modèle.
+En d'autres termes, même avec un GPU doté de 16 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de VRAM, on atteint presque la limite rien qu'en chargeant le modèle.
 
 ## 4.2 La magie de la quantification (Quantization)
 
@@ -273,13 +273,13 @@ graph LR
     LocalLLM --> Answer["Réponse finale"]
 ```
 
-Avec la version de bureau d'AnythingLLM (Windows), il suffit de spécifier Ollama (LLM et Embedding) dans l'écran des paramètres et de configurer l'utilisation d'une base de données vectorielle locale (LanceDB) pour compléter cette architecture en quelques minutes. C'est la naissance d'une IA privée qui n'envoie aucune donnée à l'extérieur.
+Avec la version de bureau d'AnythingLLM (Windows), il suffit de spécifier Ollama ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) et Embedding) dans l'écran des paramètres et de configurer l'utilisation d'une base de données vectorielle locale (LanceDB) pour compléter cette architecture en quelques minutes. C'est la naissance d'une IA privée qui n'envoie aucune donnée à l'extérieur.
 
 ---
 
 # 8. Fine-tuning sur Windows WSL2 (LoRA)
 
-Si vous ne voulez pas seulement l'exécuter localement, mais aussi rendre le modèle plus intelligent avec vos propres données, un fine-tuning à l'aide de LoRA (Low-Rank Adaptation) est possible. En 2026, grâce à une bibliothèque appelée "Unsloth", l'apprentissage d'un modèle 8B peut être achevé en quelques heures dans un environnement Windows WSL2, même avec 16 Go de VRAM.
+Si vous ne voulez pas seulement l'exécuter localement, mais aussi rendre le modèle plus intelligent avec vos propres données, un fine-tuning à l'aide de LoRA (Low-Rank Adaptation) est possible. En 2026, grâce à une bibliothèque appelée "Unsloth", l'apprentissage d'un modèle 8B peut être achevé en quelques heures dans un environnement Windows WSL2, même avec 16 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de VRAM.
 
 Exécutez ce qui suit dans Ubuntu sur WSL2 pour configurer l'environnement :
 
@@ -290,7 +290,7 @@ pip install "unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git"
 pip install --no-deps trl peft accelerate bitsandbytes
 ```
 
-Unsloth optimise les noyaux CUDA à l'extrême, rendant la vitesse d'apprentissage environ deux fois plus rapide et la consommation de VRAM réduite de moitié par rapport à la bibliothèque standard Hugging Face. En lançant simplement un Jupyter Notebook et en chargeant un jeu de données (format JSONL), l'apprentissage sur plusieurs époques est possible même avec une RTX 4060 Ti dotée de 12 à 16 Go de VRAM.
+Unsloth optimise les noyaux CUDA à l'extrême, rendant la vitesse d'apprentissage environ deux fois plus rapide et la consommation de VRAM réduite de moitié par rapport à la bibliothèque standard Hugging Face. En lançant simplement un Jupyter Notebook et en chargeant un jeu de données (format JSONL), l'apprentissage sur plusieurs époques est possible même avec une RTX 4060 Ti dotée de 12 à 16 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de VRAM.
 
 ---
 
@@ -314,7 +314,7 @@ Voici les problèmes fréquemment rencontrés et leurs solutions.
 
 # 10. Conclusion et perspectives d'avenir
 
-En 2026, la mise en place d'un LLM local dans un environnement Windows n'est plus un privilège réservé à une poignée d'ingénieurs. Avec l'adoption généralisée du format GGUF, l'émergence d'écosystèmes raffinés comme Ollama et LM Studio, ainsi que les optimisations matérielles telles que FlashAttention, n'importe qui peut facilement obtenir un environnement d'IA de niveau entreprise.
+En 2026, la mise en place d'un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) local dans un environnement Windows n'est plus un privilège réservé à une poignée d'ingénieurs. Avec l'adoption généralisée du format GGUF, l'émergence d'écosystèmes raffinés comme Ollama et LM Studio, ainsi que les optimisations matérielles telles que FlashAttention, n'importe qui peut facilement obtenir un environnement d'IA de niveau entreprise.
 
 N'hésitez pas à tirer parti des points expliqués dans cet article :
 

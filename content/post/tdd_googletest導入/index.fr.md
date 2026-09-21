@@ -316,7 +316,7 @@ L'introduction du TDD dans les projets C++ présente des défis spécifiques.
 
 ### 7.1 Augmentation du temps de build (temps de compilation)
 En C++, les temps de compilation ont tendance à s'allonger en raison de l'utilisation intensive des templates et de l'inclusion massive d'en-têtes. Comme le cycle « Red-Green-Refactor » du TDD doit être effectué rapidement, un retard dans le temps de compilation est fatal.
-**Solution** : Minimisez les dépendances des fichiers d'en-tête en utilisant des déclarations anticipées (Forward Declarations) et l'idiome Pimpl (Pointer to implementation). L'introduction d'outils de cache de compilation tels que Ccache est également efficace.
+**Solution** : Minimisez les dépendances des fichiers d'en-tête en utilisant des déclarations anticipées (Forward Declarations) et l'idiome Pimpl ([Pointer](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/) to implementation). L'introduction d'outils de cache de compilation tels que Ccache est également efficace.
 
 ### 7.2 Introduction du TDD sur du code legacy (hérité)
 Appliquer rétroactivement le TDD à un énorme code monolithique existant est extrêmement difficile.

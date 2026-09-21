@@ -12,9 +12,9 @@ description: 'LLM lokal yang dapat digunakan secara gratis dengan privasi yang t
 
 # Pendahuluan
 
-Dalam beberapa tahun terakhir, evolusi teknologi Large Language Models (LLM) sangat luar biasa, dan layanan AI berbasis cloud seperti ChatGPT serta Claude telah tersebar luas. Namun di sisi lain, kebutuhan untuk "tidak mengirimkan data rahasia perusahaan ke server eksternal", "menekan biaya penggunaan API", dan "membangun sistem AI yang beroperasi sepenuhnya [offline](https://kenji.blog/id/p/pwa-progressive-web-apps-service-worker/)" meningkat dengan pesat.
+Dalam beberapa tahun terakhir, evolusi teknologi [Large Language Models](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)) sangat luar biasa, dan layanan AI berbasis cloud seperti ChatGPT serta Claude telah tersebar luas. Namun di sisi lain, kebutuhan untuk "tidak mengirimkan data rahasia perusahaan ke server eksternal", "menekan biaya penggunaan API", dan "membangun sistem AI yang beroperasi sepenuhnya [offline](https://kenji.blog/id/p/pwa-progressive-web-apps-service-worker/)" meningkat dengan pesat.
 
-Untuk memenuhi permintaan ini, hadirlah "LLM Lokal (LLM Open Source)" yang dapat diunduh dan dijalankan secara langsung di PC sendiri maupun server perusahaan. Hingga sekitar tahun 2023, sulit untuk mendapatkan akurasi yang praktis secara lokal, tetapi berkat evolusi arsitektur model dan pengembangan teknologi kuantisasi (Quantization), kini LLM dengan kinerja sangat tinggi pun dapat dijalankan dengan lancar bahkan pada GPU konsumen (seperti NVIDIA RTX 3090 / 4090 atau Apple Silicon pada Mac).
+Untuk memenuhi permintaan ini, hadirlah "[LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) Lokal (LLM Open Source)" yang dapat diunduh dan dijalankan secara langsung di PC sendiri maupun server perusahaan. Hingga sekitar tahun 2023, sulit untuk mendapatkan akurasi yang praktis secara lokal, tetapi berkat evolusi arsitektur model dan pengembangan teknologi kuantisasi (Quantization), kini LLM dengan kinerja sangat tinggi pun dapat dijalankan dengan lancar bahkan pada GPU konsumen (seperti NVIDIA RTX 3090 / 4090 atau Apple Silicon pada Mac).
 
 Dalam artikel ini, dari sekian banyak LLM open source yang ada, kami memilih "5 Rekomendasi Model Terbaik" yang dinilai sangat unggul pada tahun 2026. Kami akan membandingkan dan menjelaskan secara menyeluruh dari sudut pandang teknis yang sangat mendetail: mulai dari karakteristik arsitektur masing-masing model, jumlah parameter, kebutuhan memori melalui kuantisasi GGUF, hingga kasus penggunaan yang spesifik.
 
@@ -80,7 +80,7 @@ Dikembangkan oleh Meta, seri "Llama 3" menjadi standar industri (de facto) dalam
 
 ### Evolusi dan Karakteristik Arsitektur
 
-Meskipun menggunakan arsitektur Transformer standar, Llama 3 telah menambahkan berbagai penyempurnaan teknis dari generasi sebelumnya (Llama 2). Poin-poin berikut ini patut diperhatikan:
+Meskipun menggunakan arsitektur [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) standar, Llama 3 telah menambahkan berbagai penyempurnaan teknis dari generasi sebelumnya (Llama 2). Poin-poin berikut ini patut diperhatikan:
 
 - **Pengadopsian Standar GQA (Grouped Query Attention)**: GQA, yang hanya digunakan untuk model skala besar di Llama 2, kini juga digunakan untuk model skala kecil seperti 8B pada Llama 3. Ini mengurangi penggunaan memori KV cache secara drastis, memungkinkan kecepatan inferensi tinggi bahkan pada konteks yang panjang.
 - **Perluasan Ukuran Kosakata (Vocabulary)**: Ukuran kosakata tokenizer (berbasis Tiktoken) diperluas hingga 128.000 token, yang secara dramatis meningkatkan efisiensi kompresi dalam berbagai bahasa serta kode pemrograman. Efisiensi pemrosesan bahasa Jepang juga meningkat beberapa kali lipat dibandingkan dengan Llama 2.
@@ -114,7 +114,7 @@ Model yang ditawarkan oleh startup AI asal Prancis, "Mistral AI", mengejutkan in
 
 ### Mekanisme MoE (Mixture of Experts)
 
-"Mixtral 8x7B" meraih kesuksesan besar sebagai model LLM open source pertama yang mengadopsi secara utuh arsitektur **MoE (Mixture of Experts)**.
+"Mixtral 8x7B" meraih kesuksesan besar sebagai model [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) open source pertama yang mengadopsi secara utuh arsitektur **MoE (Mixture of Experts)**.
 MoE merupakan mekanisme di mana terdapat 8 "jaringan spesialis (Expert)" di dalam keseluruhan model (sekitar 47 miliar parameter), dan secara dinamis hanya mengarahkan (routing) dan mengaktifkan 2 spesialis paling optimal untuk tiap token input.
 
 ```mermaid
@@ -144,7 +144,7 @@ Seri "Gemma" merupakan model open source yang dikembangkan oleh Google dengan me
 
 ### Desain Arsitektur Unik
 
-Gemma 2 mengadopsi beberapa desain unik yang berbeda dari LLM lain.
+Gemma 2 mengadopsi beberapa desain unik yang berbeda dari [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) lain.
 
 - **Logit Soft-capping**: Teknologi untuk mencegah dihasilkannya nilai logit yang besar secara tidak wajar, sehingga meningkatkan stabilitas pelatihan dan inferensi.
 - **Hibrida Sliding Window Attention (SWA) dan Local Attention**: Alih-alih melakukan full attention di setiap lapisan, model ini menyusun lapisan yang hanya melihat pada konteks lokal dan lapisan yang melihat konteks keseluruhan secara bergantian.
@@ -227,7 +227,7 @@ xychart-beta
 
 ## Kalkulasi Teoretis pada Kecepatan Inferensi (Tokens/sec)
 
-Kecepatan inferensi LLM lokal sangat dipengaruhi oleh lebar saluran laju bit dari "Bandwidth memori (Memory Bandwidth)" GPU-nya. Dikarenakan setiap dari 1 keluaran token hasil generasi di tahap dekode (decode phase), seutuhnya beban atau bobot per parameter mutlak harus terpanggil dari memori penyimpanannya. Jadi bisa diartikan proses yang berlaku adalah berbasis keterikatan memori (Memory-bound) dan bukanlah berbasis keterikatan komputasi (Compute-bound).
+Kecepatan inferensi [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) lokal sangat dipengaruhi oleh lebar saluran laju bit dari "Bandwidth memori (Memory Bandwidth)" GPU-nya. Dikarenakan setiap dari 1 keluaran token hasil generasi di tahap dekode (decode phase), seutuhnya beban atau bobot per parameter mutlak harus terpanggil dari memori penyimpanannya. Jadi bisa diartikan proses yang berlaku adalah berbasis keterikatan memori (Memory-bound) dan bukanlah berbasis keterikatan komputasi (Compute-bound).
 
 Rumus perumusan teoretis kecepatan inferensi maksimum $T$ (Tokens/sec) dikalkulasikan dengan:
 
@@ -259,7 +259,7 @@ ollama run llama3
 Karena Ollama ini bisa berjalan dalam mode pelayan eksekusi belakang layar (background [REST API](https://kenji.blog/id/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/id/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) server), menjadikan upaya penyatuan skrip koding berbasis Python ke beragam aplikasi pihak ke tiga tak sulit bagi kalian wujudkan.
 
 ### 2. LM Studio
-Sebuah usulan aplikasi bersaranakan GUI terkhusus pada audien yang berminat untuk memakainya via interaksi interaktif ramah dan kentara mata. Dari rupa aplikasinya kelak para audien diberi keleluasaan dalam menelisik barisan katalog model-model GGUF yang bertengger di Hugging Face yang langsung tertuju ke dalam tombol pengunduhan dan langsung menikmati kegenitan sapa obrolan ala sistem antarmuka pada ChatGPT. Di sinilah terletaknya suatu fungsi sangat krusial yaitu representasi penunjuk bagi pemakai awam yang memandu seberapa optimal rasio VRAM ataupun RAM dari komputernya sanggup memuat beban ukuran seberapa besar pada LLM-nya.
+Sebuah usulan aplikasi bersaranakan GUI terkhusus pada audien yang berminat untuk memakainya via interaksi interaktif ramah dan kentara mata. Dari rupa aplikasinya kelak para audien diberi keleluasaan dalam menelisik barisan katalog model-model GGUF yang bertengger di Hugging Face yang langsung tertuju ke dalam tombol pengunduhan dan langsung menikmati kegenitan sapa obrolan ala sistem antarmuka pada ChatGPT. Di sinilah terletaknya suatu fungsi sangat krusial yaitu representasi penunjuk bagi pemakai awam yang memandu seberapa optimal rasio VRAM ataupun RAM dari komputernya sanggup memuat beban ukuran seberapa besar pada [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)-nya.
 
 ### 3. llama.cpp
 Pemicu tren LLM lokal dan merupakan pustaka berbasis C/C++ yang menjadi fondasi dari semuanya. Piranti ini ditujukan bagi para insinyur yang ingin melakukan penyesuaian (tuning) performa hingga batas maksimal, atau peretas (hacker) yang ingin mengintegrasikannya ke dalam skrip mereka sendiri. Mulai dari Apple Metal, NVIDIA CUDA, AMD ROCm, hingga set instruksi Intel AVX, aplikasi ini akan memaksimalkan semua potensi terpendam perangkat keras Anda.
@@ -276,7 +276,7 @@ Pada artikel kali ini, kami telah memperkenalkan 5 model LLM open source terbaik
 4. **Jika tujuannya adalah hasil bahasa yang alami dan dukungan coding tingkat lanjut**: `Qwen 2.5`
 5. **Jika untuk pemrosesan super ringan di latar belakang, smartphone, atau PC berspesifikasi rendah**: `Phi-3 / Phi-3.5`
 
-Kecepatan evolusi LLM open source sangatlah luar biasa, di mana setiap beberapa bulan muncul terobosan baru yang mengubah konsep yang ada sebelumnya. Ke depannya, berkat perkembangan lebih lanjut pada teknologi kuantisasi dan hadirnya arsitektur terbaru, masa di mana AI lokal mampu mengalahkan AI cloud mungkin segera tiba.
+Kecepatan evolusi [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) open source sangatlah luar biasa, di mana setiap beberapa bulan muncul terobosan baru yang mengubah konsep yang ada sebelumnya. Ke depannya, berkat perkembangan lebih lanjut pada teknologi kuantisasi dan hadirnya arsitektur terbaru, masa di mana AI lokal mampu mengalahkan AI cloud mungkin segera tiba.
 Silakan unduh model yang paling ideal dengan konfigurasi perangkat keras yang Anda miliki saat ini, dan rasakan betapa bebas serta besar potensi AI lokal yang berada di genggaman Anda.
 
 

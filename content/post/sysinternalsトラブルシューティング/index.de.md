@@ -172,7 +172,7 @@ Wenn Sie verdächtige Kommunikation finden, können Sie direkt in TCPView `Close
 Die Sysinternals-Tools sind ein leistungsstarkes "Röntgenbild", um alle Aktivitäten, die im Hintergrund des Windows-Betriebssystems stattfinden, zu visualisieren. Um diese Tools effektiv nutzen zu können, beachten Sie bitte die folgenden Best Practices:
 
 1.  **Konfiguration von Symbolen (Symbols)**:
-    Um den Call-Stack in ProcExp oder ProcMon genau aufzulösen, ist es zwingend erforderlich, den öffentlichen Symbolserver von Microsoft zu konfigurieren. Setzen Sie die folgende Umgebungsvariable:
+    Um den Call-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) in ProcExp oder ProcMon genau aufzulösen, ist es zwingend erforderlich, den öffentlichen Symbolserver von Microsoft zu konfigurieren. Setzen Sie die folgende Umgebungsvariable:
     `_NT_SYMBOL_PATH = srv*c:\symbols*https://msdl.microsoft.com/download/symbols`
 2.  **Extrahieren von Signalen aus dem Rauschen (Verbesserung des Signal-to-Noise Ratio)**:
     Die Protokolle von ProcMon umfassen Millionen von Zeilen. Schließen Sie proaktiv "normales Verhalten (SUCCESS)" oder "bekannt sichere Prozesse (System, explorer.exe usw.)" mit dem `Exclude`-Filter aus und konzentrieren Sie sich auf den Kern des Problems (ACCESS DENIED, NAME NOT FOUND).

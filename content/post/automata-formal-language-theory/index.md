@@ -16,7 +16,7 @@ tags:
 
 計算機科学の根底を支える壮大な理論、それが **オートマトン** （ Automata ）と **形式言語理論** （ Formal Language Theory ）です。
 
-私たちが日常的に記述している正規表現（ Regular Expressions ）や、プログラミング言語のソースコードを読み解くコンパイラ、そして自然言語処理に至るまで、これらすべての基盤にはこの理論が存在します。本記事では、チョムスキー階層（ Chomsky Hierarchy ）という分類を軸に、計算という概念そのものを数学的・抽象的に定義する深淵なる世界へご案内します。
+私たちが日常的に記述している正規表現（ Regular Expressions ）や、[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)のソースコードを読み解くコンパイラ、そして自然言語処理に至るまで、これらすべての基盤にはこの理論が存在します。本記事では、チョムスキー階層（ Chomsky Hierarchy ）という分類を軸に、計算という概念そのものを数学的・抽象的に定義する深淵なる世界へご案内します。
 
 ---
 
@@ -74,7 +74,7 @@ flowchart TD
 ```
 
 1.  **タイプ3（正規言語）** : 正規表現で表現でき、有限オートマトンで認識可能。
-2.  **タイプ2（文脈自由言語）** : プログラミング言語の構文などに使われ、プッシュダウン・オートマトンで認識可能。
+2.  **タイプ2（文脈自由言語）** : [プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の構文などに使われ、プッシュダウン・オートマトンで認識可能。
 3.  **タイプ1（文脈依存言語）** : 線形拘束オートマトンで認識可能。
 4.  **タイプ0（帰納的的可算言語）** : [チューリングマシン](https://kenji.blog/p/turing-machine-computability/)で認識可能。計算可能なすべての言語。
 
@@ -154,21 +154,21 @@ for s in test_strings:
 
 プログラミングで用いられる **正規表現** （ Regular Expression ）は、この正規言語を記述するための記法です。スティーブン・クリーネ（ Stephen Kleene ）は、「ある言語が正規表現で表されることと、有限オートマトンで受理されることは同値である」という定理を証明しました。
 
-実際のプログラミング言語の正規表現エンジン（例えばPythonの `re` モジュール）は、与えられた正規表現パターンから内部的に NFA を構築し、文字列を評価しています。
+実際の[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の正規表現エンジン（例えばPythonの `re` モジュール）は、与えられた正規表現パターンから内部的に NFA を構築し、文字列を評価しています。
 
 ### 反復補題（ Pumping Lemma ）の限界
 
-正規言語は非常に便利ですが、限界があります。たとえば、 「 $ n $ 個の $ a $ の後に $ n $ 個の $ b $ が続く文字列の集合」 （ $ L = \{ a^n b^n \mid n \ge 0 \} $ ）は正規言語ではありません。有限オートマトンは「数える」ためのメモリ（スタック等）を持たないため、いくつの $ a $ が来たかを無限に記憶することができないからです。これを証明するための数学的手法が **正規言語の反復補題** です。
+正規言語は非常に便利ですが、限界があります。たとえば、 「 $ n $ 個の $ a $ の後に $ n $ 個の $ b $ が続く文字列の集合」 （ $ L = \{ a^n b^n \mid n \ge 0 \} $ ）は正規言語ではありません。有限オートマトンは「数える」ためのメモリ（[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)等）を持たないため、いくつの $ a $ が来たかを無限に記憶することができないからです。これを証明するための数学的手法が **正規言語の反復補題** です。
 
 ---
 
 ## 4. 文脈自由言語とプッシュダウン・オートマトン（ Type-2 ）
 
-正規言語では表現できない括弧の対応付けや、プログラミング言語の構文（ `if-else` のネストなど）を表現するために必要なのが **文脈自由言語** （ Context-Free Languages, CFL ）です。
+正規言語では表現できない括弧の対応付けや、[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の構文（ `if-else` のネストなど）を表現するために必要なのが **文脈自由言語** （ Context-Free Languages, CFL ）です。
 
 ### プッシュダウン・オートマトン（ PDA ）
 
-文脈自由言語を認識する計算モデルが **プッシュダウン・オートマトン** （ Pushdown Automaton, PDA ）です。PDA は、有限オートマトンに **スタック** （ Stack, 後入れ先出しのメモリ）を追加したものです。スタックを使うことで、「開いた括弧の数を記憶しておき、閉じる括弧が来るたびに消費する」といったことが可能になります。
+文脈自由言語を認識する計算モデルが **プッシュダウン・オートマトン** （ Pushdown Automaton, PDA ）です。PDA は、有限オートマトンに **[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)** （ [Stack](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/), 後入れ先出しのメモリ）を追加したものです。スタックを使うことで、「開いた括弧の数を記憶しておき、閉じる括弧が来るたびに消費する」といったことが可能になります。
 
 #### 具体例： $ a^n b^n $ を受理する PDA
 
@@ -219,7 +219,7 @@ print("a:", pda.accepts("a"))           # False
 文脈自由言語を生成する規則を **文脈自由文法** （ Context-Free Grammar, CFG ）と呼びます。CFG は $ (V, \Sigma, R, S) $ で定義されます。
 ここで $ R $ は $ A \rightarrow \gamma $ の形をした生成規則の集合です。（ $ A $ は非終端記号、 $ \gamma $ は終端記号と非終端記号の列）。
 
-プログラミング言語の仕様書でよく見かける **BNF** （ Backus-Naur Form ）は、この文脈自由文法を記述するためのメタ言語です。以下は数式を定義する BNF の例です。
+[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の仕様書でよく見かける **BNF** （ Backus-Naur Form ）は、この文脈自由文法を記述するためのメタ言語です。以下は数式を定義する BNF の例です。
 
 ```bnf
 <expr>   ::= <expr> "+" <term> | <term>
@@ -234,13 +234,13 @@ print("a:", pda.accepts("a"))           # False
 
 ## 5. 文脈依存言語と線形拘束オートマトン（ Type-1 ）
 
-文脈自由言語はプログラミング言語の構文の大半を表現できますが、 「宣言された変数しか使用できない」 といった、前後の文脈に依存する制約（意味論的制約）は表現できません。これらを扱うのが **文脈依存言語** （ Context-Sensitive Languages, CSL ）です。
+文脈自由言語は[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の構文の大半を表現できますが、 「宣言された変数しか使用できない」 といった、前後の文脈に依存する制約（意味論的制約）は表現できません。これらを扱うのが **文脈依存言語** （ Context-Sensitive Languages, CSL ）です。
 
 ### 線形拘束オートマトン（ LBA ）
 
 文脈依存言語を認識するのは **線形拘束オートマトン** （ Linear Bounded Automaton, LBA ）です。LBA は[チューリングマシン](https://kenji.blog/p/turing-machine-computability/)の一種ですが、テープの長さが入力文字列の長さに比例する（線形）サイズに制限されているという特徴があります。
 
-文脈依存言語の典型的な例は $ L = \{ a^n b^n c^n \mid n \ge 1 \} $ です。PDA はスタックを1つしか持たないため、 $ a $ と $ b $ の数を合わせることはできても、その後に続く $ c $ の数まで合わせることはできません（ $ a $ の数を数えてスタックからポップしきってしまうため）。LBA はテープ上を行き来できるため、この言語を認識できます。
+文脈依存言語の典型的な例は $ L = \{ a^n b^n c^n \mid n \ge 1 \} $ です。PDA は[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を1つしか持たないため、 $ a $ と $ b $ の数を合わせることはできても、その後に続く $ c $ の数まで合わせることはできません（ $ a $ の数を数えてスタックからポップしきってしまうため）。LBA はテープ上を行き来できるため、この言語を認識できます。
 
 自然言語（人間の言語）は、一般に文脈自由言語よりも複雑で、文脈依存言語に近い性質を持っていると考えられています。
 
@@ -279,14 +279,14 @@ flowchart LR
 
 これまで見てきた理論は、決して学術的な象牙の塔に留まるものではありません。現代のソフトウェア・エンジニアリングの至る所で活躍しています。
 
-1.  **字句解析器（ Lexer ）の自動生成**: `Lex` や `Flex` などのツールは、開発者が書いた正規表現を DFA に変換し、高速なC言語のコードを自動生成します。
+1.  **字句解析器（ Lexer ）の自動生成**: `Lex` や `Flex` などのツールは、開発者が書いた正規表現を DFA に変換し、高速な[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)のコードを自動生成します。
 2.  **構文解析器（ Parser ）の自動生成**: `Yacc` や `Bison` などのツールは、開発者が書いた BNF（文脈自由文法）から LR パーサ（PDAの応用）を自動生成します。
 3.  **JSONやXMLのパース**: これらデータフォーマットのバリデーションやパースも、形式言語理論のアルゴリズムに基づいています。
 4.  **エディタのシンタックスハイライト**: IDE がコードの色分けを高速に行えるのは、裏側で有限オートマトンが動いているからです。
 
 ### Regexエンジンの落とし穴（ Catastrophic Backtracking ）
 
-多くのプログラミング言語（ Java, Python, Ruby, JavaScript など）に組み込まれている正規表現エンジンは、理論上の純粋な DFA ではなく、バックトラックを伴う NFA ベース（またはバックトラッキングエンジン）で実装されています。
+多くの[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)（ [Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/), Python, Ruby, JavaScript など）に組み込まれている正規表現エンジンは、理論上の純粋な DFA ではなく、バックトラックを伴う NFA ベース（またはバックトラッキングエンジン）で実装されています。
 
 このため、特定のパターンの正規表現（例： `(a+)+$` など）に対して巧妙な文字列を与えると、計算量が指数関数的に爆発し、システムがフリーズしてしまう **ReDoS** （ Regular Expression Denial of [Service](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/) ）という[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)を引き起こすことがあります。理論を知っていれば、なぜバックトラックが起こるのか、どのようにパターンを書き直せば安全な DFA 相当の処理に落とし込めるのかを論理的に考えることができます。
 
@@ -297,7 +297,7 @@ flowchart LR
 **オートマトンと形式言語理論** は、計算機の物理的な構造（CPUやメモリ）を一切排除し、「計算とは何か」「言語とは何か」という純粋な数学的モデルへと抽象化した極致です。
 
 *   **Type-3 (DFA)**: メモリを持たない機械（正規表現）
-*   **Type-2 (PDA)**: スタックメモリを持つ機械（構文解析）
+*   **Type-2 (PDA)**: [スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)メモリを持つ機械（構文解析）
 *   **Type-1 (LBA)**: 有限のテープを持つ機械
 *   **Type-0 (TM)**: 無限のテープを持つ機械（万能コンピュータ）
 

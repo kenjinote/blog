@@ -158,7 +158,7 @@ Die Engines für reguläre Ausdrücke in tatsächlichen Programmiersprachen (zum
 
 ### Die Grenzen des Pumping-Lemmas (Pumping Lemma)
 
-Reguläre Sprachen sind sehr nützlich, haben jedoch ihre Grenzen. Zum Beispiel ist "die Menge der Zeichenketten, bei denen auf $ n $ mal $ a $ genau $ n $ mal $ b $ folgt" ( $ L = \{ a^n b^n \mid n \ge 0 \} $ ) keine reguläre Sprache. Da ein endlicher Automat keinen Speicher (wie einen Stack) zum "Zählen" besitzt, kann er sich nicht unendlich merken, wie viele $ a $ aufgetreten sind. Die mathematische Methode, um dies zu beweisen, ist das **Pumping-Lemma für reguläre Sprachen**.
+Reguläre Sprachen sind sehr nützlich, haben jedoch ihre Grenzen. Zum Beispiel ist "die Menge der Zeichenketten, bei denen auf $ n $ mal $ a $ genau $ n $ mal $ b $ folgt" ( $ L = \{ a^n b^n \mid n \ge 0 \} $ ) keine reguläre Sprache. Da ein endlicher Automat keinen Speicher (wie einen [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)) zum "Zählen" besitzt, kann er sich nicht unendlich merken, wie viele $ a $ aufgetreten sind. Die mathematische Methode, um dies zu beweisen, ist das **Pumping-Lemma für reguläre Sprachen**.
 
 ---
 
@@ -168,7 +168,7 @@ Um Zuordnungen von Klammern, die in regulären Sprachen nicht dargestellt werden
 
 ### Kellerautomat (PDA)
 
-Das Berechnungsmodell zur Erkennung kontextfreier Sprachen ist der **Kellerautomat** (Pushdown Automaton, PDA). Ein PDA ist ein endlicher Automat, der um einen **Stack** (Kellerspeicher, ein LIFO-Speicher) erweitert wurde. Durch die Verwendung des Stacks wird es möglich, sich Dinge zu merken wie "die Anzahl der geöffneten Klammern speichern und jedes Mal, wenn eine schließende Klammer kommt, eine verbrauchen".
+Das Berechnungsmodell zur Erkennung kontextfreier Sprachen ist der **Kellerautomat** (Pushdown Automaton, PDA). Ein PDA ist ein endlicher Automat, der um einen **[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)** (Kellerspeicher, ein LIFO-Speicher) erweitert wurde. Durch die Verwendung des Stacks wird es möglich, sich Dinge zu merken wie "die Anzahl der geöffneten Klammern speichern und jedes Mal, wenn eine schließende Klammer kommt, eine verbrauchen".
 
 #### Konkretes Beispiel: Ein PDA, der $ a^n b^n $ akzeptiert
 
@@ -240,7 +240,7 @@ Kontextfreie Sprachen können den größten Teil der Syntax einer Programmierspr
 
 Kontextsensitive Sprachen werden durch **linear beschränkte Automaten** (Linear Bounded Automaton, LBA) erkannt. Ein LBA ist eine Art Turingmaschine, zeichnet sich jedoch dadurch aus, dass die Länge seines Bandes auf eine Größe beschränkt ist, die proportional zur Länge der Eingabezeichenkette ist (linear).
 
-Ein typisches Beispiel für eine kontextsensitive Sprache ist $ L = \{ a^n b^n c^n \mid n \ge 1 \} $. Da ein PDA nur einen Stack hat, kann er zwar die Anzahl der $ a $ und $ b $ abgleichen, aber nicht die Anzahl der darauf folgenden $ c $ (da er die Anzahl der $ a $ zählt und vollständig vom Stack "popt"). Ein LBA kann sich auf dem Band hin- und herbewegen und daher diese Sprache erkennen.
+Ein typisches Beispiel für eine kontextsensitive Sprache ist $ L = \{ a^n b^n c^n \mid n \ge 1 \} $. Da ein PDA nur einen [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) hat, kann er zwar die Anzahl der $ a $ und $ b $ abgleichen, aber nicht die Anzahl der darauf folgenden $ c $ (da er die Anzahl der $ a $ zählt und vollständig vom Stack "popt"). Ein LBA kann sich auf dem Band hin- und herbewegen und daher diese Sprache erkennen.
 
 Man geht davon aus, dass natürliche Sprachen (menschliche Sprachen) im Allgemeinen komplexer als kontextfreie Sprachen sind und Eigenschaften aufweisen, die näher an kontextsensitiven Sprachen liegen.
 
@@ -286,7 +286,7 @@ Die Theorien, die wir bisher betrachtet haben, bleiben keineswegs in akademische
 
 ### Die Falle der Regex-Engines (Catastrophic Backtracking)
 
-Die in vielen Programmiersprachen (Java, Python, Ruby, JavaScript usw.) integrierten Engines für reguläre Ausdrücke sind keine reinen DFAs im theoretischen Sinne, sondern basieren auf NFAs mit Backtracking (oder Backtracking-Engines).
+Die in vielen Programmiersprachen ([Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/), Python, Ruby, JavaScript usw.) integrierten Engines für reguläre Ausdrücke sind keine reinen DFAs im theoretischen Sinne, sondern basieren auf NFAs mit Backtracking (oder Backtracking-Engines).
 
 Wenn man solchen regulären Ausdrücken mit bestimmten Mustern (z.B. `(a+)+$`) raffinierte Zeichenketten übergibt, kann die Berechnungszeit exponentiell ansteigen und das System zum Einfrieren bringen, was zu einer Schwachstelle führt, die als **ReDoS** (Regular Expression Denial of [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)) bezeichnet wird. Wenn man die Theorie kennt, kann man logisch nachvollziehen, warum Backtracking auftritt und wie man das Muster umschreiben muss, um es auf eine sichere DFA-äquivalente Verarbeitung zu reduzieren.
 
@@ -297,7 +297,7 @@ Wenn man solchen regulären Ausdrücken mit bestimmten Mustern (z.B. `(a+)+$`) r
 **Automaten und formale Sprachtheorie** sind der Inbegriff der Abstraktion, bei der die physische Struktur eines Computers (CPU und Speicher) vollständig eliminiert wird und die Fragen "Was ist Berechnung?" und "Was ist Sprache?" zu rein mathematischen Modellen abstrahiert werden.
 
 *   **Typ-3 (DFA)**: Maschine ohne Speicher (Reguläre Ausdrücke)
-*   **Typ-2 (PDA)**: Maschine mit Stack-Speicher (Syntaxanalyse)
+*   **Typ-2 (PDA)**: Maschine mit [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Speicher (Syntaxanalyse)
 *   **Typ-1 (LBA)**: Maschine mit endlichem Band
 *   **Typ-0 (TM)**: Maschine mit unendlichem Band (Universeller Computer)
 

@@ -11,7 +11,7 @@ tags: ["ChatGPT", "Gemini", "Claude", "API", "Comparison"]
 
 # Ein umfassender Vergleich der APIs von ChatGPT, Gemini und Claude: Welche sollten Sie wählen?
 
-Die Entwicklung der KI-Technologie ist bemerkenswert, insbesondere im Bereich der großen Sprachmodelle (LLM: Large Language Model). Hier liefern sich OpenAIs ChatGPT (GPT-Serie), Googles Gemini und Anthropics Claude einen erbitterten Dreikampf um die Vorherrschaft. Im Jahr 2026 veröffentlichen diese Unternehmen im Monats-, wenn nicht gar Wochentakt, neue Modelle und API-Funktionen. Für Entwickler und IT-Architekten von Unternehmen ist die Frage, „welche API in das Produkt integriert werden soll“, zu einer äußerst wichtigen Entscheidung geworden, die über den Erfolg eines Projekts bestimmen kann.
+Die Entwicklung der KI-Technologie ist bemerkenswert, insbesondere im Bereich der großen Sprachmodelle ([LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/): Large Language Model). Hier liefern sich OpenAIs ChatGPT (GPT-Serie), Googles Gemini und Anthropics Claude einen erbitterten Dreikampf um die Vorherrschaft. Im Jahr 2026 veröffentlichen diese Unternehmen im Monats-, wenn nicht gar Wochentakt, neue Modelle und API-Funktionen. Für Entwickler und IT-Architekten von Unternehmen ist die Frage, „welche API in das Produkt integriert werden soll“, zu einer äußerst wichtigen Entscheidung geworden, die über den Erfolg eines Projekts bestimmen kann.
 
 In diesem Artikel werden wir die APIs dieser drei großen KI-Anbieter nicht nur durch eine bloße Aufzählung von Spezifikationen vergleichen und erläutern, sondern auch aus der Perspektive von Entwicklern tiefgreifend auf Aspekte wie Architekturdesign, detaillierte Preisstrukturen, mathematische Analyse der Latenz (Verzögerung), konkrete Implementierungsbeispiele in Python und Node.js sowie die neuesten Methoden zur Kostenoptimierung wie Prompt Caching eingehen.
 
@@ -79,7 +79,7 @@ Der in die API eingegebene Text wird intern in Einheiten namens „Token“ unte
 
 ## 4. Mathematische Analyse von Latenz und Leistung
 
-In Echtzeitanwendungen wirkt sich die Latenz direkt auf das Benutzererlebnis (UX) aus. Die Latenz einer LLM-API, $T_{total}$, lässt sich mathematisch wie folgt modellieren:
+In Echtzeitanwendungen wirkt sich die Latenz direkt auf das Benutzererlebnis (UX) aus. Die Latenz einer [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-API, $T_{total}$, lässt sich mathematisch wie folgt modellieren:
 
 $$ T_{total} = T_{network} + T_{TTFT} + (N \times T_{TPOT}) $$
 
@@ -90,7 +90,7 @@ Hier haben die einzelnen Variablen die folgenden Bedeutungen:
 - $T_{TPOT}$ (Time Per Output Token): Die Generierungszeit pro Token. Da es sich um ein autoregressives Modell handelt, wird es seriell in Abhängigkeit von der vorherigen Ausgabe berechnet.
 
 ### 4.1 Berechnungskomplexität des Self-Attention-Mechanismus
-Die Berechnungskomplexität der Self-Attention in der Transformer-Architektur steigt quadratisch mit der Eingabesequenzlänge $L$.
+Die Berechnungskomplexität der Self-Attention in der [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Architektur steigt quadratisch mit der Eingabesequenzlänge $L$.
 
 $$ \text{Complexity} = O(L^2 \cdot d) $$
 
@@ -210,7 +210,7 @@ Durch Ausführen dieses Skripts können Sie in einer realen Netzwerkumgebung lei
 
 ## 8. Implementierung von Tool Calling (Function Calling) mit Node.js
 
-Um ein LLM nicht nur als simplen Chatbot, sondern als „KI-Agenten“ fungieren zu lassen, der mit externen Systemen interagiert, ist Tool Calling (oder Function Calling) unerlässlich. Das folgende Beispiel zeigt, wie man mit Node.js (TypeScript) die OpenAI-API dazu bringt, eine Wetter-API aufzurufen.
+Um ein [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) nicht nur als simplen Chatbot, sondern als „KI-Agenten“ fungieren zu lassen, der mit externen Systemen interagiert, ist Tool Calling (oder Function Calling) unerlässlich. Das folgende Beispiel zeigt, wie man mit Node.js (TypeScript) die OpenAI-API dazu bringt, eine Wetter-API aufzurufen.
 
 ```typescript
 import OpenAI from "openai";
@@ -312,7 +312,7 @@ sequenceDiagram
 
 ## 11. Sicherheit und Compliance auf Unternehmensniveau
 
-Wenn Unternehmen LLM-APIs in Produktionsumgebungen einsetzen, sind die größten Bedenken: „Werden unsere Daten zum Trainieren der KI verwendet?“ und „Werden Compliance-Anforderungen erfüllt?“.
+Wenn Unternehmen [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-APIs in Produktionsumgebungen einsetzen, sind die größten Bedenken: „Werden unsere Daten zum Trainieren der KI verwendet?“ und „Werden Compliance-Anforderungen erfüllt?“.
 
 Alle drei Unternehmen haben klar erklärt, dass die über die API gesendeten Daten (Prompts und Antworten) **nicht zum Trainieren der Modelle verwendet werden (Zero Data Retention / No Training on Customer Data)** (*Dies gilt nicht für die kostenlosen Web-Chat-UIs für Verbraucher).
 
@@ -340,7 +340,7 @@ Wir haben bisher einen vielseitigen Vergleich angestellt, aber die endgültige A
    Es erledigt alle Aufgaben einwandfrei und bietet die umfangreichste Unterstützung für Tools von Drittanbietern. Das OpenAI-Ökosystem ist unverzichtbar, wenn man ein zuverlässiges JSON-Parsing mithilfe von Structured Outputs benötigt oder extrem fortgeschrittenes logisches Denken mit dem o1-Modell erfordert.
 
 ### Empfehlung für Multimodell-Routing
-Anstatt sich auf eine einzige API zu verlassen (Vendor-[Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)-in), ist die zukünftige Richtung eine Architektur des **„LLM-Routings“**, bei der Modelle je nach Schwierigkeitsgrad und Wichtigkeit der Aufgabe dynamisch umgeschaltet werden.
+Anstatt sich auf eine einzige API zu verlassen (Vendor-[Lock](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)-in), ist die zukünftige Richtung eine Architektur des **„[LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Routings“**, bei der Modelle je nach Schwierigkeitsgrad und Wichtigkeit der Aufgabe dynamisch umgeschaltet werden.
 Beispielsweise kann man auf einfache Fragen von Benutzern mit dem kostengünstigen und schnellen `GPT-4o-mini` oder `Gemini 1.5 Flash` antworten. Nur wenn festgestellt wird, dass eine komplexe Verarbeitung erforderlich ist, greift man als Fallback für die Aufgabe auf `Claude 3.5 Sonnet` zurück. So lässt sich das optimale Gleichgewicht zwischen Kosten und Leistung erreichen.
 
 Die Entwicklung der KI ist unaufhaltsam. Verstehen Sie die Stärken und Schwächen der einzelnen APIs sowie die Besonderheiten ihrer Architektur genau, um flexible und flexibel skalierbare KI-Anwendungen zu entwickeln.

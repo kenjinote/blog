@@ -33,7 +33,7 @@ Es ist auch möglich, spezialisierte Tools und eigene originelle Frameworks zu e
 
 ### Einfach zu Verteilen Ohne Laufzeitbedarf
 
-Da keine externen Laufzeitumgebungen wie .NET oder Java erforderlich sind, **kann es als einzelne ausführbare Datei verteilt werden** .
+Da keine externen Laufzeitumgebungen wie .NET oder [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) erforderlich sind, **kann es als einzelne ausführbare Datei verteilt werden** .
 Es ist weniger anfällig für Probleme bei der Neuverteilung und lässt sich ohne Installationsprogramm leicht ausführen.
 
 ### Kann Leichtgewichtige Apps Erstellen

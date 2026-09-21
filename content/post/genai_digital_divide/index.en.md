@@ -14,13 +14,13 @@ tags: ["Generative AI", "Digital Divide", "LLM", "Productivity"]
 
 Since the popularization of the internet, we have often heard the term "digital divide" (information gap). The early digital divide was primarily about "physical access rights." In other words, it was a simple scenario where whether or not one had a computer or high-speed internet connection determined access to information and economic opportunities. Later, as smartphones and broadband connections became commoditized, the focus of the divide shifted to "IT literacy" (information utilization capability). This involved the software and cognitive aspects, such as whether one could appropriately search for information using search engines or master software.
 
-However, the sudden emergence of Generative AI and the evolution of Large Language Models (LLMs) in the 2020s are fundamentally overturning this concept of the digital divide. What we are facing now is not merely a "divide in access to information" or a "divide in software operation skills." It is a "divide in the ability to orchestrate (direct and integrate) AI," a profound and irreversible "3rd Digital Divide" that determines whether an individual's productivity is amplified exponentially or if they are left behind by the evolution of AI and lose relative value.
+However, the sudden emergence of Generative AI and the evolution of [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) in the 2020s are fundamentally overturning this concept of the digital divide. What we are facing now is not merely a "divide in access to information" or a "divide in software operation skills." It is a "divide in the ability to orchestrate (direct and integrate) AI," a profound and irreversible "3rd Digital Divide" that determines whether an individual's productivity is amplified exponentially or if they are left behind by the evolution of AI and lose relative value.
 
 In this article, we will unravel in great detail the true nature of this new digital divide brought about by Generative AI from three layers: the mathematical model of productivity, hardware architecture and cost, and the cognitive aspects of human beings.
 
 ## 2. From "Access" to "Orchestration": The Arrival of the 3rd Digital Divide
 
-Past software tools were essentially "passive instruments." The limitation of traditional software was that it returned deterministic results in response to the user's explicit input (e.g., entering a formula in spreadsheet software to get a calculated result). However, current Generative AI, especially LLMs based on the Transformer architecture (GPT-4, Claude 3.5, Llama 3, etc.), act as "fragments of active intelligence."
+Past software tools were essentially "passive instruments." The limitation of traditional software was that it returned deterministic results in response to the user's explicit input (e.g., entering a formula in spreadsheet software to get a calculated result). However, current Generative AI, especially LLMs based on the [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) architecture (GPT-4, Claude 3.5, Llama 3, etc.), act as "fragments of active intelligence."
 
 Due to this paradigm shift, the required skill set for humans has dramatically changed from the "ability to operate tools" to the "ability to combine multiple AI agents and tools, and to design and direct autonomous workflows (AI Orchestration)." This can be called "AI Orchestration Literacy."
 
@@ -81,7 +81,7 @@ In the first year, the difference seems negligible, but each time the AI model e
 
 The 3rd Digital Divide creates a new hardware gap not just in software skills, but in "access to compute (computational resources)" needed to run cutting-edge AI models.
 
-To utilize Large Language Models, there are mainly two approaches: "using Cloud APIs" or "running the model locally for inference." Both have their pros and cons, which are forming a new economic and physical wall.
+To utilize [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/), there are mainly two approaches: "using Cloud APIs" or "running the model locally for inference." Both have their pros and cons, which are forming a new economic and physical wall.
 
 ### Limitations and Running Costs of Cloud APIs
 [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)-of-the-art frontier models provided by OpenAI, Anthropic, and Google (GPT-4o, Claude 3.5 Sonnet, etc.) are generally accessed via API. However, if you build a highly autonomous agent (Agentic [Workflow](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)) that generates tens of thousands of API calls per day, the costs explode.
@@ -98,7 +98,7 @@ When continuously performing large-scale data processing or vectorization for RA
 ### The Wall of Local LLMs and VRAM
 From the perspective of avoiding cloud costs and maintaining data privacy, the demand for running open-weight models like Meta's Llama 3 and Mistral locally is increasing. However, the physical divide known as the "Wall of VRAM (Video RAM)" stands in the way here.
 
-The inference speed of an LLM depends more strongly on Memory Bandwidth rather than the calculation performance (FLOPS) of the GPU (it has a Memory-bound nature). Assuming the number of parameters of the model is $P$ and the precision is 16-bit (2 bytes), just loading the model into memory requires at least $2P$ bytes of VRAM. For example, a 70 billion (70B) parameter model demands over 140GB of VRAM.
+The inference speed of an [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) depends more strongly on Memory Bandwidth rather than the calculation performance (FLOPS) of the GPU (it has a Memory-bound nature). Assuming the number of parameters of the model is $P$ and the precision is 16-bit (2 bytes), just loading the model into memory requires at least $2P$ bytes of VRAM. For example, a 70 billion (70B) parameter model demands over 140GB of VRAM.
 
 $$
 VRAM_{required} \approx \left( \frac{P \times bits\_per\_weight}{8} \right) + Context\_Memory

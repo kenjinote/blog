@@ -12,7 +12,7 @@ description: "VRAM (GPU memory) shortage is the biggest barrier in LLM training 
 
 # Introduction: AI Development and "The Wall of VRAM"
 
-In recent years, generative AI technologies such as Large Language Models (LLMs) and Diffusion Models have achieved rapid development. However, when trying to train (fine-tune) or perform inference with these cutting-edge AI models in a local environment, a very physical barrier that many developers and researchers face is the **"shortage of GPU memory (VRAM)"**.
+In recent years, generative AI technologies such as [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) and Diffusion Models have achieved rapid development. However, when trying to train (fine-tune) or perform inference with these cutting-edge AI models in a local environment, a very physical barrier that many developers and researchers face is the **"shortage of GPU memory (VRAM)"**.
 
 Even a high-end consumer GPU like the NVIDIA GeForce RTX 4090 has a maximum VRAM of 24GB, making it completely impossible to load a massive model like Llama 3 70B as it is. Data center GPUs like the H100 (80GB) or B200 (192GB) are extremely expensive and not easily accessible to individuals or small teams. If we cannot break through this "Wall of VRAM," we cannot even touch the most advanced models.
 
@@ -46,8 +46,8 @@ In other words, purely loading the model's weights into the GPU consumes 16GB of
 
 ## 1.2 Memory Consumption During Inference: The Growth of KV Cache
 
-In LLM inference (especially autoregressive text generation), what heavily pressures VRAM as much as or more than the weights is the **KV Cache ([Key-Value](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)**.
-In the Transformer architecture, to avoid recalculating information for tokens that were already generated and processed, the Key and Value tensors in each attention layer are continuously cached in VRAM. This improves computational speed (Compute), but as the context length (input prompt length + generated length) grows, memory consumption increases linearly and explosively.
+In [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) inference (especially autoregressive text generation), what heavily pressures VRAM as much as or more than the weights is the **KV Cache ([Key-Value](https://kenji.blog/en/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)**.
+In the [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) architecture, to avoid recalculating information for tokens that were already generated and processed, the Key and Value tensors in each attention layer are continuously cached in VRAM. This improves computational speed (Compute), but as the context length (input prompt length + generated length) grows, memory consumption increases linearly and explosively.
 
 The amount of KV cache memory consumed when processing a single token, $M_{kv\_token}$, is strictly calculated based on the model's architecture by the following formula:
 
@@ -112,7 +112,7 @@ graph TD
 ```
 
 **Mechanism and Challenges:**
-Since Transformer models have a structure where layers are stacked in series, the computation of one layer must finish before the next layer's computation can begin. Leveraging this, only the layers that fit in the GPU (e.g., Layers 1-15) are pinned residently in the VRAM, while the remaining layers (Layers 16-32) are placed in the large-capacity but slower CPU RAM. During inference, when the computation for up to layer 15 is complete, the weights for layer 16 are transferred (copied) from the CPU to the GPU via the PCIe bus, and computation is executed on the GPU.
+Since [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) models have a structure where layers are stacked in series, the computation of one layer must finish before the next layer's computation can begin. Leveraging this, only the layers that fit in the GPU (e.g., Layers 1-15) are pinned residently in the VRAM, while the remaining layers (Layers 16-32) are placed in the large-capacity but slower CPU RAM. During inference, when the computation for up to layer 15 is complete, the weights for layer 16 are transferred (copied) from the CPU to the GPU via the PCIe bus, and computation is executed on the GPU.
 
 However, **PCIe bandwidth becomes a severe bottleneck**. The theoretical maximum bandwidth of PCIe 4.0 x16 is 32GB/s (unidirectional), but compared to the internal bandwidth of modern GPU VRAM (e.g., RTX 4090's GDDR6X is 1008GB/s, H100's HBM3 is over 3TB/s), it is two orders of magnitude slower. Therefore, heavily relying on CPU offloading dramatically decreases inference speed (Tokens per Second).
 To minimize speed degradation, the practical key is to place as many layers as possible on the GPU (maximizing GPU Layers) and minimize the number of offloaded layers.
@@ -139,7 +139,7 @@ graph LR
 
 ## 2.3 FlashAttention: Breaking the Memory Complexity of Attention Computation
 
-VRAM shortage is caused not only by the memory needed to store data, but also by the shortage of "temporary workspace" during computation. The standard Transformer Self-Attention mechanism needs to materialize a massive $N \times N$ attention matrix on VRAM for a sequence length $N$. This has a memory complexity of $O(N^2)$ and is a major cause of OOM with long contexts.
+VRAM shortage is caused not only by the memory needed to store data, but also by the shortage of "temporary workspace" during computation. The standard [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) Self-Attention mechanism needs to materialize a massive $N \times N$ attention matrix on VRAM for a sequence length $N$. This has a memory complexity of $O(N^2)$ and is a major cause of OOM with long contexts.
 
 What solved this is **FlashAttention** (and FlashAttention-2, 3).
 FlashAttention is an algorithm that is aware of the GPU hardware architecture (the hierarchical structure of large but slow HBM and extremely small but ultra-fast SRAM). Using a technique called Tiling, it loads data into SRAM block by block and completes the attention computation there, thereby completely avoiding the process of writing the $N \times N$ matrix to HBM (VRAM).

@@ -58,7 +58,7 @@ IaC 툴에는 크게 나누어 '절차형'과 '선언형'의 2가지 접근 방�
 
 # 2. Terraform이란
 
-Terraform은 HashiCorp사에서 Go 언어로 개발한 오픈소스 IaC 툴입니다. 클라우드 인프라부터 SaaS 설정까지 모든 API를 코드로 구성·관리할 수 있습니다.
+Terraform은 HashiCorp사에서 [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 언어로 개발한 오픈소스 IaC 툴입니다. 클라우드 인프라부터 SaaS 설정까지 모든 API를 코드로 구성·관리할 수 있습니다.
 
 ## 2.1. 프로바이더 (Provider) 아키텍처
 

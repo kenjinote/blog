@@ -9,7 +9,7 @@ categories: ["ai", "programming", "api"]
 tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 ---
 
-# 前言：為什麼需要本機 LLM？
+# 前言：為什麼需要本機 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)？
 
 隨著大型語言模型（LLM）的崛起，我們的生活與開發手法經歷了戲劇性的變化。像 ChatGPT、Claude 和 Gemini 這類基於雲端的強大 AI 服務，每天都在不斷進化，並提供非常高度的推論能力。然而，在所有的使用情境中，雲端型 LLM 並不一定是最合適的選擇。雲端 LLM 存在以下幾個挑戰：
 
@@ -28,13 +28,13 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 Ollama 是一個可以讓你在本機環境中，輕鬆執行與管理開源大型語言模型（如 Llama 3、Phi-3、Mistral、Gemma 等）的平台。過去要建置本機 LLM 環境，需要經過非常繁雜的步驟，例如設定 Python 環境、安裝 CUDA Toolkit、解決 PyTorch 的相依性、從 Hugging Face 下載龐大的模型檔案，以及進行格式轉換（例如將 Safetensors 轉換為 GGUF）等。
 
-Ollama 隱藏了這些複雜性，讓你能以類似 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 的使用體驗來操作 LLM。只要透過一個指令就能下載（`pull`）模型、執行（`run`），並將其啟動為 HTTP 伺服器。
+Ollama 隱藏了這些複雜性，讓你能以類似 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 的使用體驗來操作 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)。只要透過一個指令就能下載（`pull`）模型、執行（`run`），並將其啟動為 HTTP 伺服器。
 
 ## 核心技術：llama.cpp 的包裝器
 
-作為 Ollama 推論引擎後端運作的，是以 C/C++ 實作的高速 LLM 推論函式庫「 **llama.cpp** 」。llama.cpp 具備在 Apple Silicon (Metal)、NVIDIA GPU (CUDA)、AMD GPU (ROCm)，甚至是純 CPU 環境中，也能發揮硬體最大效能來執行模型的能力。
+作為 Ollama 推論引擎後端運作的，是以 C/C++ 實作的高速 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 推論函式庫「 **llama.cpp** 」。llama.cpp 具備在 Apple Silicon (Metal)、NVIDIA GPU (CUDA)、AMD GPU (ROCm)，甚至是純 CPU 環境中，也能發揮硬體最大效能來執行模型的能力。
 
-Ollama 內含了 llama.cpp，並採用了一種架構：由 Go 語言編寫的伺服器行程提供 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)，並在背景呼叫 llama.cpp 的推論引擎。
+Ollama 內含了 llama.cpp，並採用了一種架構：由 [Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 語言編寫的伺服器行程提供 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)，並在背景呼叫 llama.cpp 的推論引擎。
 
 以下的 Mermaid 圖表展示了 Ollama 的整體架構。
 
@@ -118,7 +118,7 @@ ollama pull mistral:v0.3
 
 ### 什麼是量化（Quantization）？
 
-這裡稍微提一下量化。一般的 LLM 會使用 16 位元浮點數（FP16）等來儲存一個權重參數。以 80 億（8B）參數的模型為例，光是權重就會消耗大約 16GB 的 VRAM。將其壓縮成 4 位元（Q4）或 8 位元（Q8）整數型別的技術就稱為量化。
+這裡稍微提一下量化。一般的 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 會使用 16 位元浮點數（FP16）等來儲存一個權重參數。以 80 億（8B）參數的模型為例，光是權重就會消耗大約 16GB 的 VRAM。將其壓縮成 4 位元（Q4）或 8 位元（Q8）整數型別的技術就稱為量化。
 
 透過量化，可以在將模型精度衰退降至最低的同時，大幅減少所需的記憶體容量和記憶體頻寬。Ollama 所發佈的模型，預設都已經轉換為套用了最佳量化（通常是 4 位元）的 GGUF 格式。
 
@@ -239,7 +239,7 @@ curl -X POST http://localhost:11434/api/generate -d '{
 
 ## 使用 /api/chat 進行對話生成
 
-最近的 LLM 大多以聊天格式進行微調，因此在應用程式開發中，推薦使用 `/api/chat`。
+最近的 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 大多以聊天格式進行微調，因此在應用程式開發中，推薦使用 `/api/chat`。
 
 ```bash
 curl -X POST http://localhost:11434/api/chat -d '{
@@ -341,7 +341,7 @@ print(response)
 
 # 與 Node.js 應用程式整合
 
-對於前端工程師或全端開發者來說，能夠從 TypeScript/Node.js 環境呼叫本機 LLM 是個巨大的優勢。我們將使用官方的 `ollama` NPM 套件。
+對於前端工程師或全端開發者來說，能夠從 TypeScript/Node.js 環境呼叫本機 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 是個巨大的優勢。我們將使用官方的 `ollama` NPM 套件。
 
 ## 安裝
 
@@ -421,7 +421,7 @@ app.listen(3000, () => {
 
 # 效能指標與數學分析
 
-為了讓本機 LLM 達到能承受實際運作的水準，對延遲和吞吐量進行分析是不可或缺的。Ollama 的 API 回應中，包含了有關效能的詳細指標。
+為了讓本機 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 達到能承受實際運作的水準，對延遲和吞吐量進行分析是不可或缺的。Ollama 的 API 回應中，包含了有關效能的詳細指標。
 
 ## Token 生成速度的計算模型
 
@@ -474,7 +474,7 @@ $$
 $$
 M_{model} = \frac{8,000 \times 4}{8 \times 1024} = \frac{32,000}{8192} \approx 3.9 \text{ GB}
 $$
-加上上下文用的記憶體，可以得知只要有大約 5GB〜6GB 的 VRAM，就能在 GPU 上完全載入模型（Full Offload）。即便是近年配備 8GB VRAM 的中階 GPU（例如 RTX 4060），也足以運作非常強大的 LLM。
+加上上下文用的記憶體，可以得知只要有大約 5GB〜6GB 的 VRAM，就能在 GPU 上完全載入模型（Full Offload）。即便是近年配備 8GB VRAM 的中階 GPU（例如 RTX 4060），也足以運作非常強大的 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)。
 
 ---
 
@@ -493,9 +493,9 @@ $$
 
 ## 結論
 
-隨著 Ollama 的出現，導入本機 LLM 的門檻大幅降低了。如同操作 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 容器般簡單的指令系統，加上外部應用程式能輕易使用的 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 的組合，可以毫不誇張地說是目前本機 AI 開發的業界標準（de facto standard）。
+隨著 Ollama 的出現，導入本機 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的門檻大幅降低了。如同操作 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 容器般簡單的指令系統，加上外部應用程式能輕易使用的 [REST API](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-tw/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) 的組合，可以毫不誇張地說是目前本機 AI 開發的業界標準（de facto standard）。
 
-如果你正在為了雲端 LLM 的成本或安全性限制而苦惱，請務必參考本文介紹的步驟，使用 Ollama 建置本機 LLM 環境，並將其整合到你自己的應用程式中。你一定能夠更自由、更切身地感受到 AI 所擁有的潛力。
+如果你正在為了雲端 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的成本或安全性限制而苦惱，請務必參考本文介紹的步驟，使用 Ollama 建置本機 LLM 環境，並將其整合到你自己的應用程式中。你一定能夠更自由、更切身地感受到 AI 所擁有的潛力。
 
 
 

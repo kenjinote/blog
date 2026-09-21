@@ -28,7 +28,7 @@ description: 'قمنا بتجميع بيئات مفيدة لتنفيذ الأك�
 
 - [Javascript Playground](https://playcode.io/)
 
-## Java
+## [Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)
 
 - [paiza.IO Online Java compiler](https://paiza.io/ja/projects/new?language=java)
 
@@ -47,7 +47,7 @@ description: 'قمنا بتجميع بيئات مفيدة لتنفيذ الأك�
 
 - [AWS Cloud9](https://aws.amazon.com/jp/cloud9/)
 
-بيئة تطوير متكاملة عبر الإنترنت تقدمها Amazon AWS. تأتي مع أدوات مجمعة مسبقاً لأكثر من 40 لغة برمجة مثل Node.js و JavaScript و Python و PHP و Ruby و Go و C++ وغيرها.
+بيئة تطوير متكاملة عبر الإنترنت تقدمها Amazon AWS. تأتي مع أدوات مجمعة مسبقاً لأكثر من 40 لغة برمجة مثل Node.js و JavaScript و Python و PHP و Ruby و [Go](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) و C++ وغيرها.
 
 - [Visual Studio Code for the Web](https://vscode.dev/)
 
@@ -55,7 +55,7 @@ description: 'قمنا بتجميع بيئات مفيدة لتنفيذ الأك�
 
 - [paiza.IO](https://paiza.io/projects/CGAcQLfW-IOXYy8Dq2OHBw?locale=ja-jp)
 
-بيئة تنفيذ عبر الإنترنت تدعم 24 لغة رئيسية مثل C و C++ و Java و Ruby و Python و PHP و Perl وغيرها.
+بيئة تنفيذ عبر الإنترنت تدعم 24 لغة رئيسية مثل C و C++ و [Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) و Ruby و Python و PHP و Perl وغيرها.
 
 - [CodePen](https://codepen.io/)
 

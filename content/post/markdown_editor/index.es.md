@@ -9,7 +9,7 @@ categories: ["blogging", "productivity", "editors"]
 tags: ["Markdown", "VS Code", "Neovim", "textlint"]
 ---
 
-Para escribir continuamente un blog técnico, es indispensable optimizar el entorno de escritura. En este artículo, profundizaremos en configuraciones avanzadas del editor para mejorar drásticamente la velocidad de escritura de un blog técnico utilizando Markdown. Explicaremos exhaustivamente desde la personalización extrema de Visual Studio Code (VS Code) y Neovim, el uso de fragmentos (snippets), la introducción de textlint como herramienta de revisión gramatical, la automatización en canalizaciones [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/), hasta las técnicas de escritura más vanguardistas utilizando LLM como GitHub Copilot.
+Para escribir continuamente un blog técnico, es indispensable optimizar el entorno de escritura. En este artículo, profundizaremos en configuraciones avanzadas del editor para mejorar drásticamente la velocidad de escritura de un blog técnico utilizando Markdown. Explicaremos exhaustivamente desde la personalización extrema de Visual Studio Code (VS Code) y Neovim, el uso de fragmentos (snippets), la introducción de textlint como herramienta de revisión gramatical, la automatización en canalizaciones [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/), hasta las técnicas de escritura más vanguardistas utilizando [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) como GitHub Copilot.
 
 ## 1. Modelo matemático para mejorar la velocidad de escritura
 
@@ -244,7 +244,7 @@ flowchart TD
     H --> J["Desplegar en Hosting (Vercel/Netlify)"]
 ```
 
-## 5. Técnicas de escritura en Markdown en la era de los LLM
+## 5. Técnicas de escritura en Markdown en la era de los [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/)
 
 En la redacción moderna de blogs técnicos, el uso de LLM (Grandes Modelos de Lenguaje) es inevitable. Al aprovechar las herramientas de IA integradas en el editor, la velocidad de escritura se duplica aún más.
 
@@ -256,7 +256,7 @@ Usando GitHub Copilot Chat en VS Code, o plugins como `ChatGPT.nvim` o `Copilot.
 
 De este modo, se generarán instantáneamente los encabezados y listas en Markdown. Solo tenemos que desarrollar y añadir contenido a esa estructura.
 
-Además, al darle instrucciones a la IA, también puede generar una sintaxis precisa para diagramas complejos de Mermaid y fórmulas matemáticas (LaTeX). Por ejemplo, la base de las fórmulas matemáticas y los diseños de diagramas de este artículo también se aceleró gracias a la escritura colaborativa (pair writing) con un LLM.
+Además, al darle instrucciones a la IA, también puede generar una sintaxis precisa para diagramas complejos de Mermaid y fórmulas matemáticas (LaTeX). Por ejemplo, la base de las fórmulas matemáticas y los diseños de diagramas de este artículo también se aceleró gracias a la escritura colaborativa (pair writing) con un [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/).
 
 ## 6. Conclusión
 
@@ -266,7 +266,7 @@ En este artículo explicamos configuraciones del editor que duplicarán tu veloc
 2. **Aprovechar VS Code**: Omitir la entrada manual utilizando extensiones y fragmentos en `markdown.json`.
 3. **Personalización extrema de Neovim**: Fragmentos dinámicos a través de `LuaSnip` y control total mediante el teclado.
 4. **textlint y análisis estático**: Integración de [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) y Linters locales para acercar el tiempo de revisión a cero.
-5. **Integración de LLM**: Hacer que la IA genere directamente la estructura del Markdown y el código de diagramas o tablas dentro del editor.
+5. **Integración de [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/)**: Hacer que la IA genere directamente la estructura del Markdown y el código de diagramas o tablas dentro del editor.
 
 Al incorporar estas configuraciones a tu propio entorno, desaparecerá lo "tedioso" de la escritura y, con seguridad, la cantidad y calidad de tus publicaciones técnicas mejorarán drásticamente. ¿Por qué no empezar hoy mismo registrando al menos un pequeño fragmento (snippet)?
 

@@ -74,7 +74,7 @@ A continuación se muestra la complejidad temporal promedio de los algoritmos de
 - Ordenamiento por inserción (Insertion Sort): $O(N^2)$
 - Ordenamiento por mezcla (Merge Sort): $O(N \log N)$
 - Ordenamiento rápido (Quick Sort): $O(N \log N)$
-- Ordenamiento por montículos (Heap Sort): $O(N \log N)$
+- Ordenamiento por montículos ([Heap](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/) Sort): $O(N \log N)$
 
 Por ejemplo, la complejidad temporal $T(N)$ del Merge Sort se expresa mediante la siguiente relación de recurrencia, de acuerdo con el paradigma de Divide y Vencerás.
 
@@ -200,7 +200,7 @@ El último y que podríamos considerar un problema de crisis nacional al que se 
 
 En el Reino Unido (UK), desde 2014, una asignatura llamada "Computing" se ha vuelto obligatoria desde los 5 años (Key Stage 1). Su plan de estudios va más allá de una simple "experiencia de programación" y aborda la ciencia de la computación académica, sistemática y rigurosa, desde el diseño lógico de algoritmos y la comprensión de circuitos lógicos con álgebra booleana hasta las topologías de red y la arquitectura de hardware.
 
-En Estados Unidos, existe un riguroso plan de estudios estándar K-12 (desde jardín de infantes hasta el último año de secundaria) establecido por la CSTA (Computer Science Teachers Association), y en AP (Advanced Placement) Computer Science A que toman los estudiantes de secundaria, se requiere programación orientada a objetos de nivel avanzado con Java, polimorfismo, procesamiento recursivo, implementación de estructuras de datos y evaluación de la complejidad de algoritmos, todo con altos estándares equivalentes al nivel del primer año de la universidad. La feroz educación STEM en India y China y el enorme estrato de élite producido a partir de allí apenas necesitan mencionarse.
+En Estados Unidos, existe un riguroso plan de estudios estándar K-12 (desde jardín de infantes hasta el último año de secundaria) establecido por la CSTA (Computer Science Teachers Association), y en AP (Advanced Placement) Computer Science A que toman los estudiantes de secundaria, se requiere programación orientada a objetos de nivel avanzado con [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), polimorfismo, procesamiento recursivo, implementación de estructuras de datos y evaluación de la complejidad de algoritmos, todo con altos estándares equivalentes al nivel del primer año de la universidad. La feroz educación STEM en India y China y el enorme estrato de élite producido a partir de allí apenas necesitan mencionarse.
 
 ### La brecha desesperada entre las habilidades demandadas y las habilidades enseñadas
 
@@ -219,7 +219,7 @@ xychart-beta
 
 Para cerrar esta enorme brecha (El Valle de la Muerte), se requiere un cambio de paradigma radical en la educación escolar y una inversión masiva. En una situación donde los profesores especializados en "Información" escasean abrumadoramente en todo el país, y donde los profesores de matemáticas, ciencias, o tecnología y economía doméstica enseñan programación a tiempo parcial sin un entrenamiento adecuado, es absolutamente imposible producir ingenieros de primer nivel que puedan competir globalmente.
 
-## 9. El colapso del valor de la "codificación" en la era de la IA (LLM)
+## 9. El colapso del valor de la "codificación" en la era de la IA ([LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/))
 
 Complicando aún más la situación está la proliferación explosiva de modelos de lenguaje grandes (LLM) como ChatGPT, y asistentes de codificación de inteligencia artificial como GitHub Copilot. En una época en la que la IA puede generar instantáneamente un código perfecto e incluso escribir código de prueba a partir de instrucciones en lenguaje natural, el valor de mercado de los llamados "codificadores", que simplemente "conocen la sintaxis de Python" y "saben cómo hacer llamadas de API", está cayendo rápidamente.
 

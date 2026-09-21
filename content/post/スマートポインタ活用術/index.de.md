@@ -9,13 +9,13 @@ categories: ["programming", "cpp"]
 tags: ["C++", "Smart Pointers", "Memory Management", "Modern C++"]
 ---
 
-Die Speicherverwaltung in C++ war lange Zeit eine der größten Herausforderungen für Entwickler. Der traditionelle Speicherverwaltungsstil, der auf manuellem `new` und `delete` beruhte, war eine Brutstätte für schwerwiegende Fehler wie Speicherlecks (Memory Leaks), baumelnde Zeiger (Dangling Pointers) und doppelte Freigaben (Double Frees). Mit dem Aufkommen von Modern C++ (seit C++11) hat sich die Situation jedoch dramatisch verändert. Den Kern dieser Veränderung bilden die "Smart Pointer" (Intelligente Zeiger).
+Die Speicherverwaltung in C++ war lange Zeit eine der größten Herausforderungen für Entwickler. Der traditionelle Speicherverwaltungsstil, der auf manuellem `new` und `delete` beruhte, war eine Brutstätte für schwerwiegende Fehler wie Speicherlecks (Memory Leaks), baumelnde Zeiger (Dangling [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)s) und doppelte Freigaben (Double Frees). Mit dem Aufkommen von Modern C++ (seit C++11) hat sich die Situation jedoch dramatisch verändert. Den Kern dieser Veränderung bilden die "Smart Pointer" (Intelligente Zeiger).
 
 In diesem Artikel werden die Funktionsweise und fortgeschrittene Nutzungstechniken von `std::unique_ptr`, `std::shared_ptr` und `std::weak_ptr` – leistungsstarken Werkzeugen zur Beseitigung von Speicherlecks und zur Realisierung einer sicheren und effizienten Ressourcenverwaltung – äußerst detailliert erläutert. Dabei gehen wir auch auf die interne Implementierung (Kontrollblöcke und atomare Operationen), die Auswirkungen auf die Leistung sowie die Formulierung der Referenzzählung durch mathematische Modelle ein.
 
 ## 1. Einführung: Das dunkle Zeitalter der C++-Speicherverwaltung und die Morgendämmerung von Modern C++
 
-In der früheren C++-Entwicklung mussten Entwickler selbst dafür sorgen, dass auf dem Heap reservierter Speicher wieder freigegeben wurde.
+In der früheren C++-Entwicklung mussten Entwickler selbst dafür sorgen, dass auf dem [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) reservierter Speicher wieder freigegeben wurde.
 
 ```cpp
 void legacy_function() {
@@ -28,15 +28,15 @@ void legacy_function() {
 }
 ```
 
-In Code wie dem obigen wird `delete` übersprungen, wenn eine Ausnahme auftritt oder eine frühzeitige Rückkehr (Early Return) stattfindet, was zu einem Speicherleck führt. Das Paradigma, um dies zu verhindern, ist "RAII (Resource Acquisition Is Initialization)". RAII ist eine Technik, die die Zuweisung von Ressourcen an die Initialisierung eines Objekts (Konstruktor) und die Freigabe von Ressourcen an die Zerstörung des Objekts (Destruktor) bindet. Smart Pointer sind ein Klassen-Stack der Standardbibliothek, der dieses RAII-Idiom auf die Speicherverwaltung anwendet.
+In Code wie dem obigen wird `delete` übersprungen, wenn eine Ausnahme auftritt oder eine frühzeitige Rückkehr (Early Return) stattfindet, was zu einem Speicherleck führt. Das Paradigma, um dies zu verhindern, ist "RAII (Resource Acquisition Is Initialization)". RAII ist eine Technik, die die Zuweisung von Ressourcen an die Initialisierung eines Objekts (Konstruktor) und die Freigabe von Ressourcen an die Zerstörung des Objekts (Destruktor) bindet. Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) sind ein Klassen-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) der Standardbibliothek, der dieses RAII-Idiom auf die Speicherverwaltung anwendet.
 
 ## 2. `std::unique_ptr`: Exklusives Eigentum ohne Overhead (Zero-Overhead)
 
-`std::unique_ptr` ist ein Smart Pointer, der "exklusives Eigentum" (Exclusive Ownership) an einem dynamisch zugewiesenen Objekt besitzt. Es kann immer nur ein einziger `unique_ptr` eine bestimmte Ressource besitzen.
+`std::unique_ptr` ist ein Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/), der "exklusives Eigentum" (Exclusive Ownership) an einem dynamisch zugewiesenen Objekt besitzt. Es kann immer nur ein einziger `unique_ptr` eine bestimmte Ressource besitzen.
 
 ### 2.1 Das Prinzip des Zero-Overhead
 
-Der größte Reiz von `std::unique_ptr` ist seine Leistung. Im Standardzustand, ohne benutzerdefinierten Deleter (Custom Deleter), ist die Größe von `std::unique_ptr` exakt identisch mit der eines rohen Zeigers (Raw Pointer). Er besitzt keine unnötigen Elementvariablen und es werden keine virtuellen Funktionen verwendet. Durch Compiler-Optimierungen wird der Zugriff über `std::unique_ptr` in denselben Assembler-Code übersetzt wie der eines rohen Zeigers.
+Der größte Reiz von `std::unique_ptr` ist seine Leistung. Im Standardzustand, ohne benutzerdefinierten Deleter (Custom Deleter), ist die Größe von `std::unique_ptr` exakt identisch mit der eines rohen Zeigers (Raw [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)). Er besitzt keine unnötigen Elementvariablen und es werden keine virtuellen Funktionen verwendet. Durch Compiler-Optimierungen wird der Zugriff über `std::unique_ptr` in denselben Assembler-Code übersetzt wie der eines rohen Zeigers.
 
 ### 2.2 Eigentumsübertragung und `std::move`
 
@@ -118,11 +118,11 @@ Die Verwendung von Funktionszeigern oder [Lambda](https://kenji.blog/de/p/server
 
 ## 3. `std::shared_ptr`: Gemeinsames Eigentum und Kontrollblock
 
-`std::shared_ptr` ist ein Smart Pointer, der es mehreren Zeigern ermöglicht, dasselbe Objekt gemeinsam zu besitzen. Wenn der letzte `shared_ptr` zerstört wird, wird das verwaltete Objekt freigegeben.
+`std::shared_ptr` ist ein Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/), der es mehreren Zeigern ermöglicht, dasselbe Objekt gemeinsam zu besitzen. Wenn der letzte `shared_ptr` zerstört wird, wird das verwaltete Objekt freigegeben.
 
 ### 3.1 Interne Architektur: Der Kontrollblock
 
-`std::shared_ptr` weist neben dem Zeiger auf das verwaltete Objekt Metadaten, den sogenannten **Kontrollblock (Control Block)**, auf dem Heap zu und teilt diese. Der Kontrollblock enthält die folgenden Informationen:
+`std::shared_ptr` weist neben dem Zeiger auf das verwaltete Objekt Metadaten, den sogenannten **Kontrollblock (Control Block)**, auf dem [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) zu und teilt diese. Der Kontrollblock enthält die folgenden Informationen:
 
 1.  **Strong Count (Starke Referenzzählung)**: Die Anzahl der `shared_ptr`, die das Objekt besitzen. Wenn diese 0 erreicht, wird das Objekt zerstört.
 2.  **Weak Count (Schwache Referenzzählung)**: Die Anzahl der `weak_ptr`, die das Objekt überwachen. Wenn sowohl der Strong Count als auch der Weak Count 0 erreichen, wird der Kontrollblock selbst freigegeben.
@@ -157,7 +157,7 @@ Auf x86/x64-Architekturen werden für das Inkrementieren und Dekrementieren der 
 Bei der Erstellung von `shared_ptr` sollte man nach Möglichkeit `std::make_shared` verwenden. Dafür gibt es zwei wesentliche Gründe:
 
 1.  **Optimierung der Speicherzuweisung**:
-    Wenn man `new` verwendet, treten zwei Heap-Allokationen auf: eine für das Objekt selbst und eine für den Kontrollblock. Bei Verwendung von `std::make_shared` kann ein einzelner großer Speicherblock, der beides umfasst, in einer einzigen Heap-Allokation reserviert werden, was auch die Cache-Effizienz verbessert.
+    Wenn man `new` verwendet, treten zwei [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Allokationen auf: eine für das Objekt selbst und eine für den Kontrollblock. Bei Verwendung von `std::make_shared` kann ein einzelner großer Speicherblock, der beides umfasst, in einer einzigen [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Allokation reserviert werden, was auch die Cache-Effizienz verbessert.
 2.  **Ausnahmesicherheit (Exception Safety)**:
     In Standards vor C++17 war die Auswertungsreihenfolge von Funktionsargumenten nicht festgelegt. Wenn eine Ausnahme bei der Auswertung eines anderen Arguments auftrat, bevor der mit `new` reservierte Zeiger an den Konstruktor von `shared_ptr` übergeben wurde, bestand die Gefahr eines Speicherlecks. `make_shared` vermeidet dieses Problem vollständig.
 
@@ -267,7 +267,7 @@ Bei der Speicherverwaltung in Modern C++ ist das manuelle Verwalten von `new`/`d
 2.  **`std::shared_ptr`** sollte nur dann verwendet werden, wenn der Lebenszyklus wirklich zwischen mehreren Eigentümern geteilt werden muss. Für die Erstellung sollte `std::make_shared` verwendet werden.
 3.  Bei der Implementierung von Datenstrukturen, in denen gemeinsame Kreise (Zirkelbezüge) auftreten können, oder bei Observer-Mustern sollte **`std::weak_ptr`** eingesetzt werden, um Speicherlecks proaktiv zu verhindern.
 
-Ein tiefes Verständnis von Smart Pointern und deren gezielter Einsatz an den richtigen Stellen ermöglicht den Aufbau einer sicheren und robusten Softwarearchitektur, ohne die Leistung von C++ auch nur im Geringsten zu opfern.
+Ein tiefes Verständnis von Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)n und deren gezielter Einsatz an den richtigen Stellen ermöglicht den Aufbau einer sicheren und robusten Softwarearchitektur, ohne die Leistung von C++ auch nur im Geringsten zu opfern.
 
 
 

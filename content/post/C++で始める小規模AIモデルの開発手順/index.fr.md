@@ -12,7 +12,7 @@ description: "Nous expliquons en détail la procédure de développement et l'ar
 
 # [Procédure de développement de petits modèles d'IA (TinyLLaMA, etc.) avec C++](https://kenji.blog/fr/p/cpp-small-ai-model-tinyllama-dev-guide/)
 
-Ces dernières années, l'intérêt pour l'exécution locale de grands modèles de langage (LLM) a augmenté rapidement. En particulier, les petits modèles tels que TinyLLaMA (1,1B paramètres) peuvent effectuer des inférences à une vitesse pratique même sur des appareils périphériques aux ressources limitées ou des PC portables standards (y compris les environnements Windows). Bien que le développement utilisant Python et PyTorch soit courant, lorsqu'il s'agit d'atteindre des performances et une efficacité mémoire ultimes, la combinaison du C++ et de « ggml », une bibliothèque de tenseurs basée sur le langage C, est devenue la norme de facto.
+Ces dernières années, l'intérêt pour l'exécution locale de grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) a augmenté rapidement. En particulier, les petits modèles tels que TinyLLaMA (1,1B paramètres) peuvent effectuer des inférences à une vitesse pratique même sur des appareils périphériques aux ressources limitées ou des PC portables standards (y compris les environnements Windows). Bien que le développement utilisant Python et PyTorch soit courant, lorsqu'il s'agit d'atteindre des performances et une efficacité mémoire ultimes, la combinaison du C++ et de « ggml », une bibliothèque de tenseurs basée sur le langage C, est devenue la norme de facto.
 
 Cet article explique en détail la procédure de développement pour construire un moteur d'inférence à partir de zéro (ou comprendre en profondeur l'architecture interne du llama.cpp existant) afin de charger TinyLLaMA et de générer du texte en utilisant C++.
 
@@ -165,7 +165,7 @@ graph TD
 
 ## 6. Quantification (Quantization) et optimisation Windows / SIMD
 
-Traiter TinyLLaMA (1.1B) en FP16 nécessite environ 2,2 Go de mémoire, mais cela peut être considérablement réduit à environ 600 Mo grâce à la quantification 4 bits (comme Q4_K).
+Traiter TinyLLaMA (1.1B) en FP16 nécessite environ 2,2 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de mémoire, mais cela peut être considérablement réduit à environ 600 Mo grâce à la quantification 4 bits (comme Q4_K).
 
 ### 6.1 Architecture de quantification par blocs
 

@@ -110,7 +110,7 @@ $$
 Dans l'équation ci-dessus, $S_t$ représente l'état global actuel d'Ethereum (soldes de chaque compte et stockage de contrats), $T$ est la transaction, $\Upsilon$ est la fonction de transition d'état par l'EVM, et $S_{t+1}$ indique le nouvel état après l'exécution de la transaction.
 
 La structure interne de l'EVM est principalement divisée en les zones suivantes :
-- **Pile (Stack)** : Structure de données LIFO (Last-In, First-Out) d'un maximum de 1024 éléments. Taille de mot de 256 bits. Elle conserve les opérandes pour diverses opérations.
+- **Pile ([Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/))** : Structure de données LIFO (Last-In, First-Out) d'un maximum de 1024 éléments. Taille de mot de 256 bits. Elle conserve les opérandes pour diverses opérations.
 - **Mémoire (Memory)** : Tableau d'octets volatil conservé temporairement uniquement pendant l'exécution d'une transaction.
 - **Stockage (Storage)** : Zone de données persistante allouée à chaque contrat. Composée d'une base de données clé-valeur (256 bits à 256 bits), où les opérations d'écriture entraînent des coûts en gaz (frais) élevés.
 

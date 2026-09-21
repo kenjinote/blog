@@ -26,13 +26,13 @@ description: 'सी लैंग्वेज, पायथन, जावा औ
 
 ## [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/)
 
-## Go
+## [Go](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/)
 
 ## Python
 
 ## Ruby
 
-## Java
+## [Java](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/)
 
 ## JavaScript
 
@@ -133,4 +133,4 @@ Adobe द्वारा विकसित मुद्रण के लिए 
 
 ## Salesforce APEX
 
-Java के समान एक भाषा।
+[Java](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) के समान एक भाषा।

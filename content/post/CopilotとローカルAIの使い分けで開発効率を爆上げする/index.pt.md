@@ -108,7 +108,7 @@ graph TD
 ```
 
 ### 3.1 Critério 1: Confidencialidade (Privacidade e Segurança)
-Este é o critério de decisão mais importante. Em códigos de teste que contêm dados de clientes ou arquivos implementando algoritmos essenciais proprietários onde a política da empresa proíbe o envio externo, escolha a IA local sem concessões. Também é altamente eficaz construir um RAG (Geração Aumentada por Recuperação) localmente, armazenar documentos internos em um banco de dados vetorial (vector store) e fazer com que o LLM local os consulte.
+Este é o critério de decisão mais importante. Em códigos de teste que contêm dados de clientes ou arquivos implementando algoritmos essenciais proprietários onde a política da empresa proíbe o envio externo, escolha a IA local sem concessões. Também é altamente eficaz construir um RAG (Geração Aumentada por Recuperação) localmente, armazenar documentos internos em um banco de dados vetorial (vector store) e fazer com que o [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) local os consulte.
 
 ### 3.2 Critério 2: Latência
 Para não interromper o fluxo de pensamento, a latência do autocompletar é crucial. A IA na nuvem invariavelmente sofre o tempo de ida e volta (RTT - Round Trip Time) da rede. Como a IA local tem atraso de rede zero, se você mantiver um modelo leve residente na VRAM, é possível obter uma velocidade percebida que supera a da nuvem.

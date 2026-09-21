@@ -36,7 +36,7 @@ tags:
 
 Паттерн `Strategy` определяет семейство алгоритмов, инкапсулирует каждый из них и делает их взаимозаменяемыми.
 
-**Традиционный подход GoF (в стиле Java)**
+**Традиционный подход GoF (в стиле [Java](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/))**
 
 ```java
 // Определение интерфейса
@@ -135,7 +135,7 @@ coroutineScope.launch {
 
 В наше время эта проблема элегантно решается с использованием языков ([Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala и т.д.), которые поддерживают **алгебраические типы данных (ADT)** и **сопоставление с образцом (pattern matching)**.
 
-**Современный подход (Перечисления и сопоставление с образцом в Rust)**
+**Современный подход (Перечисления и сопоставление с образцом в [Rust](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/))**
 
 ```rust
 // Алгебраический тип данных (Enum с вариантами)
@@ -169,13 +169,13 @@ graph TD
     E["Сервис B"] -->|"Зависит от"| B
 ```
 
-Поскольку DI-контейнеры, такие как Spring Framework (Java), NestJS (TypeScript) или Dagger/Hilt (Android), управляют созданием и уничтожением экземпляров, вам не следует писать логику Singleton (`getInstance()` или `private constructor`) в самом классе.
+Поскольку DI-контейнеры, такие как Spring Framework ([Java](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/)), NestJS (TypeScript) или Dagger/Hilt (Android), управляют созданием и уничтожением экземпляров, вам не следует писать логику Singleton (`getInstance()` или `private constructor`) в самом классе.
 
 ## 4. Паттерны проектирования в функциональном программировании
 
 В мире функционального программирования существуют «паттерны» другого измерения, отличные от GoF. Они опираются на математическую теорию категорий (Category Theory).
 
-### 4.1. Управление побочными эффектами с помощью Монад (Monad)
+### 4.1. Управление побочными эффектами с помощью Монад ([Monad](https://kenji.blog/ru/p/functional-programming-concepts-pure-functions-monads/))
 
 В то время как паттерны GoF предполагают «мутацию состояния», функциональный подход инкапсулирует побочные эффекты (исключения, асинхронную обработку, возможность Null) в систему типов.
 

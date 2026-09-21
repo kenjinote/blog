@@ -10,13 +10,13 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 Die Geschichte der Entwicklung von Programmiersprachen ist auch eine Geschichte des Kampfes gegen die Komplexität. Mit dem zunehmenden Maßstab von Software stieß man auf Barrieren bei der [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sverwaltung, Leistung und Wartbarkeit, und um diese zu überwinden, wurden verschiedene **Programmierparadigmen** vorgeschlagen.
 
-In diesem Artikel werden wir die in der modernen Softwareentwicklung vorherrschende **objektorientierte Programmierung** (OOP), die **funktionale Programmierung** (FP) mit ihrer mathematischen Robustheit und die **datenorientierte Programmierung** (DOP / DOD), die sich auf Leistung und die Trennung von Daten konzentriert, hinsichtlich ihrer jeweiligen Philosophien, Stärken und **Grenzen** genauer untersuchen. Darüber hinaus werden wir erklären, wie moderne leistungsstarke Sprachen (wie [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) und TypeScript) diese **verschmelzen**.
+In diesem Artikel werden wir die in der modernen Softwareentwicklung vorherrschende **objektorientierte Programmierung** ([OOP](https://kenji.blog/de/p/object-oriented-programming-oop-solid-principles/)), die **funktionale Programmierung** (FP) mit ihrer mathematischen Robustheit und die **datenorientierte Programmierung** (DOP / DOD), die sich auf Leistung und die Trennung von Daten konzentriert, hinsichtlich ihrer jeweiligen Philosophien, Stärken und **Grenzen** genauer untersuchen. Darüber hinaus werden wir erklären, wie moderne leistungsstarke Sprachen (wie [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) und TypeScript) diese **verschmelzen**.
 
 ---
 
-## 1. Aufstieg und Fall der objektorientierten Programmierung (OOP)
+## 1. Aufstieg und Fall der objektorientierten Programmierung ([OOP](https://kenji.blog/de/p/object-oriented-programming-oop-solid-principles/))
 
-Die **Objektorientierung** (Object-Oriented Programming) herrschte von den 1990er bis zu den 2010er Jahren als absoluter König der Softwareentwicklung. Sprachen wie Java, C++ und C# trieben dieses Paradigma voran, und der intuitive Ansatz, die reale Welt zu modellieren, fand große Akzeptanz.
+Die **Objektorientierung** ([Object-Oriented](https://kenji.blog/de/p/object-oriented-programming-oop-solid-principles/) Programming) herrschte von den 1990er bis zu den 2010er Jahren als absoluter König der Softwareentwicklung. Sprachen wie [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/), C++ und C# trieben dieses Paradigma voran, und der intuitive Ansatz, die reale Welt zu modellieren, fand große Akzeptanz.
 
 ### 1.1 Kernkonzepte der OOP
 
@@ -54,7 +54,7 @@ const animals: Animal[] = [new Dog("Buddy"), new Cat("Kitty")];
 animals.forEach(a => a.speak());
 ```
 
-### 1.2 Die Grenzen der OOP und das "Gorilla und Banane-Problem"
+### 1.2 Die Grenzen der [OOP](https://kenji.blog/de/p/object-oriented-programming-oop-solid-principles/) und das "Gorilla und Banane-Problem"
 
 Auf den ersten Blick scheint OOP eine perfekte Modellierungsmethode zu sein, aber mit zunehmender Systemgröße verursachte sie fatale Probleme durch **übermäßigen Gebrauch von Vererbung** und **implizite [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sverwaltung**.
 
@@ -91,7 +91,7 @@ Ein tiefer Vererbungsbaum verkompliziert die Code-Abhängigkeiten und macht es e
 
 ## 2. Der mathematische Ansatz der funktionalen Programmierung (FP)
 
-Als Antithese zu der durch die "[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smutation" der OOP verursachten Komplexität rückte die **funktionale Programmierung** (Functional Programming) ins Rampenlicht. Sie hat nicht nur Sprachen wie Haskell, Scala und Clojure tiefgreifend beeinflusst, sondern heutzutage auch JavaScript und TypeScript stark geprägt.
+Als Antithese zu der durch die "[Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smutation" der [OOP](https://kenji.blog/de/p/object-oriented-programming-oop-solid-principles/) verursachten Komplexität rückte die **funktionale Programmierung** ([Functional Programming](https://kenji.blog/de/p/functional-programming-concepts-pure-functions-monads/)) ins Rampenlicht. Sie hat nicht nur Sprachen wie Haskell, Scala und Clojure tiefgreifend beeinflusst, sondern heutzutage auch JavaScript und TypeScript stark geprägt.
 
 ### 2.1 Kernkonzepte der FP
 
@@ -140,7 +140,7 @@ Die Speicherzuweisung (Belastung der [Garbage Collection](https://kenji.blog/de/
 
 ### 3.1 Kernkonzepte der DOP
 
-Die oberste Prämisse der DOP ist es, "Daten und Logik zu trennen". Während OOP Daten und Logik in Klassen zusammenfasst, trennt DOP sie.
+Die oberste Prämisse der DOP ist es, "Daten und Logik zu trennen". Während [OOP](https://kenji.blog/de/p/object-oriented-programming-oop-solid-principles/) Daten und Logik in Klassen zusammenfasst, trennt DOP sie.
 
 - **Trennung von Daten**: Daten werden lediglich als Datenstrukturen (Records, Structs) definiert und besitzen kein Verhalten.
 - **ECS (Entity Component System)**: Anstelle von Vererbung werden Daten in Komponenten unterteilt, und Systeme (Funktionen) verarbeiten sie in großen Mengen.
@@ -192,7 +192,7 @@ Jedes Paradigma hat seine klaren Stärken und Schwächen.
 
 | Paradigma | Vorteile | Nachteile | Optimale Anwendungsfälle |
 | :--- | :--- | :--- | :--- |
-| **OOP** | Intuitive Modellierung, Verbergen durch Kapselung | Verkomplizierung der Vererbung, Fehler durch implizite [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smutation | GUI-Frameworks, Modellierung von Geschäftsdomänen |
+| **[OOP](https://kenji.blog/de/p/object-oriented-programming-oop-solid-principles/)** | Intuitive Modellierung, Verbergen durch Kapselung | Verkomplizierung der Vererbung, Fehler durch implizite [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)smutation | GUI-Frameworks, Modellierung von Geschäftsdomänen |
 | **FP** | Toleranz gegenüber Nebenläufigkeit, einfache Testbarkeit, Vorhersagbarkeit | Steile Lernkurve, Leistung (GC-Overhead) | Datenkonvertierungspipelines, nebenläufige Systeme |
 | **DOP** | Überwältigende Leistung, Transparenz des Zustands | Geringere Datenkohäsion, tendiert dazu prozedural zu sein | Spieleentwicklung, rechenintensive Verarbeitung, eingebettete Systeme |
 
@@ -200,9 +200,9 @@ Jedes Paradigma hat seine klaren Stärken und Schwächen.
 
 ## 5. Die optimale Lösung in der heutigen Zeit: "Verschmelzung" der Paradigmen
 
-Heute gilt es als Unsinn, die "einzige richtige Antwort" unter diesen zu wählen. Moderne Programmiersprachen ([Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), TypeScript, Scala, Go usw.) nehmen sich das **Beste** aus diesen Paradigmen.
+Heute gilt es als Unsinn, die "einzige richtige Antwort" unter diesen zu wählen. Moderne Programmiersprachen ([Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), TypeScript, Scala, [Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) usw.) nehmen sich das **Beste** aus diesen Paradigmen.
 
-### 5.1 Die ultimative Verschmelzung, die Rust zeigt
+### 5.1 Die ultimative Verschmelzung, die [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) zeigt
 
 Rust verschmilzt diese drei Paradigmen auf einem erstaunlichen Niveau.
 

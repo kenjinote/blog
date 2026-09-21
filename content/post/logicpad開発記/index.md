@@ -44,7 +44,7 @@ gantt
 
 ## 3. 技術選定：C++ / WinUI 3 / Windows App SDK の深淵
 
-LogicPadの開発にあたり、技術スタックの選定は最も重要な決定の一つでした。WindowsプラットフォームにおけるネイティブUIフレームワークには、歴史的にWin32 API（User32/GDI）、MFC、Windows Forms、WPF、UWPなど様々な選択肢が存在します。現在、MicrosoftがモダンなWindowsデスクトップアプリケーション開発の推奨としているのが、 **Windows App SDK** に同梱されている **WinUI 3** です。
+LogicPadの開発にあたり、技術[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の選定は最も重要な決定の一つでした。WindowsプラットフォームにおけるネイティブUIフレームワークには、歴史的にWin32 API（User32/GDI）、MFC、Windows Forms、WPF、UWPなど様々な選択肢が存在します。現在、MicrosoftがモダンなWindowsデスクトップアプリケーション開発の推奨としているのが、 **Windows App SDK** に同梱されている **WinUI 3** です。
 
 ### 3.1. Windows App SDKとWinUI 3のアーキテクチャ
 Windows App SDKは、OSのバージョンに依存せずに最新のWindows APIを提供するためのライブラリ群です。従来のUWP（Universal Windows Platform）がOSのアップデートと強く結びついていたのに対し、Windows App SDKはアプリケーションと共に配布されるため、Windows 10（バージョン1809以降）からWindows 11まで、一貫した動作を保証します。
@@ -58,7 +58,7 @@ WinUI 3の開発言語としてはC#とC++がサポートされています。C#
 2. **SIMDとキャッシュの最適化**: C++ではメモリの物理的なレイアウト（Struct of Arrays等）を厳密に定義でき、CPUキャッシュのヒット率を最大化できます。
 3. **ネイティブのABI境界**: C++/WinRTは、COM（Component Object Model）のモダンなC++プロジェクションです。C#のようなP/Invokeのオーバーヘッドなしに、OSのネイティブAPIを直接呼び出すことができます。
 
-C++/WinRTの根底にはCOMが存在します。すべてのWinRTオブジェクトは本質的に `IUnknown` インターフェースを実装したCOMオブジェクトであり、C++/WinRTの `winrt::com_ptr` などのスマートポインタが参照カウント（`AddRef` / `Release`）を自動的に管理します。
+C++/WinRTの根底にはCOMが存在します。すべてのWinRTオブジェクトは本質的に `IUnknown` インターフェースを実装したCOMオブジェクトであり、C++/WinRTの `winrt::com_ptr` などのスマート[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)が参照カウント（`AddRef` / `Release`）を自動的に管理します。
 
 ## 4. WinUI 3開発における最大の壁と突破口
 
@@ -255,7 +255,7 @@ M_{total} = M_{UI} + M_{engine} + M_{cache}
 $$
 
 ここで、WinUI 3のネイティブレンダリングによる $M_{UI}$ は、ブラウザエンジンをロードするElectronに比べて劇的に小さくなります（約50MB程度）。
-さらに、C++エンジン部のメモリ $M_{engine}$ は、論理ゲートの数 $N$ に対して、最適化された構造体とポインタの排除により線形にスケーリングします。
+さらに、C++エンジン部のメモリ $M_{engine}$ は、論理ゲートの数 $N$ に対して、最適化された構造体と[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の排除により線形にスケーリングします。
 
 $$
 M_{engine} = N \times \text{sizeof(LogicNode)}

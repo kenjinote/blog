@@ -46,7 +46,7 @@ $$
 $$
 
 **對技術選型的影響：**
-這個演算法會將「對 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 感興趣的 A」和「對 Rust 感興趣的 B」在潛在空間中拉近。如果 A 對某個新興的 Web 框架的貼文按了「讚」，那麼 B 的時間軸上也有很高的機率會顯示該框架的貼文。這就導致了在偏好特定技術堆疊的工程師群體中，特定技術會在局部引發大流行的現象。
+這個演算法會將「對 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 感興趣的 A」和「對 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 感興趣的 B」在潛在空間中拉近。如果 A 對某個新興的 Web 框架的貼文按了「讚」，那麼 B 的時間軸上也有很高的機率會顯示該框架的貼文。這就導致了在偏好特定技術堆疊的工程師群體中，特定技術會在局部引發大流行的現象。
 
 ### 2.2 使用深度學習的推薦模型 (DLRM)
 

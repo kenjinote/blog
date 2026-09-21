@@ -41,7 +41,7 @@ EXEファイルが依存するDLLファイルを調べ、それらが正しく�
 
 ![img_5.png](img_5.webp)
 
-NSA（アメリカ国家安全保障局）が開発し、オープンソースとして無料公開されている強力なリバースエンジニアリングツールです。EXEファイルのディスアセンブル（アセンブリ言語への変換）だけでなく、C言語に近い形へのデコンパイル機能も備えており、非常に人気があります。
+NSA（アメリカ国家安全保障局）が開発し、オープンソースとして無料公開されている強力なリバースエンジニアリングツールです。EXEファイルのディスアセンブル（[アセンブリ](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語への変換）だけでなく、[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)に近い形へのデコンパイル機能も備えており、非常に人気があります。
 
 ## IDA Free / IDA Pro
 

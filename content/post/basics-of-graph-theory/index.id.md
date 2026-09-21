@@ -143,7 +143,7 @@ Untuk memecahkan masalah pada graf secara efisien, banyak algoritma unggul telah
 Algoritma paling mendasar untuk mengunjungi semua simpul dalam jaringan secara sistematis tanpa kelalaian adalah **Pencarian Melebar-Pertama (Breadth-First Search, BFS)** dan **Pencarian Mendalam-Pertama (Depth-First Search, DFS)**.
 
 *   **Pencarian Melebar-Pertama (BFS)**: Menjelajahi secara konsentris, memprioritaskan simpul yang lebih dekat ke titik awal. Ini seperti riak yang menyebar ketika batu dilempar ke dalam air. Ideal untuk menemukan jalur terpendek (jalur dengan jumlah sisi minimum) dalam graf tak berbobot. Ini diimplementasikan menggunakan struktur data Antrean (Queue).
-*   **Pencarian Mendalam-Pertama (DFS)**: Menjelajahi sedalam mungkin, dan saat menemui jalan buntu, mundur ke titik percabangan sebelumnya untuk menjelajahi jalur lain. Ini seperti memecahkan labirin dengan menelusuri dinding. Digunakan untuk mendeteksi siklus dalam graf atau untuk pengurutan topologi. Ini diimplementasikan menggunakan Tumpukan (Stack) atau pemanggilan fungsi rekursif.
+*   **Pencarian Mendalam-Pertama (DFS)**: Menjelajahi sedalam mungkin, dan saat menemui jalan buntu, mundur ke titik percabangan sebelumnya untuk menjelajahi jalur lain. Ini seperti memecahkan labirin dengan menelusuri dinding. Digunakan untuk mendeteksi siklus dalam graf atau untuk pengurutan topologi. Ini diimplementasikan menggunakan Tumpukan ([Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)) atau pemanggilan fungsi rekursif.
 
 Di bawah ini adalah contoh implementasi sederhana dari Pencarian Melebar-Pertama (BFS) menggunakan Python.
 
@@ -289,7 +289,7 @@ Misalnya, untuk menjawab pertanyaan "Siapa tokoh sentral (influencer) dengan pen
 
 Dalam beberapa tahun terakhir, di garis depan kecerdasan buatan (AI) dan pembelajaran mesin, **Jaringan Saraf Graf (Graph Neural Networks, GNN)**, yang dapat secara langsung mempelajari data dengan struktur graf, telah menarik perhatian yang luar biasa.
 
-Model pembelajaran mesin tradisional, seperti CNN yang digunakan dalam pengenalan gambar atau Transformers yang digunakan dalam pemrosesan bahasa alami, dirancang untuk menangani data biasa seperti larik piksel mirip kisi atau urutan kata satu dimensi. Namun, menangani data graf yang tidak teratur dan kompleks seperti koneksi SNS yang kompleks atau struktur ikatan atom yang menyusun molekul sangatlah sulit.
+Model pembelajaran mesin tradisional, seperti CNN yang digunakan dalam pengenalan gambar atau [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)s yang digunakan dalam pemrosesan bahasa alami, dirancang untuk menangani data biasa seperti larik piksel mirip kisi atau urutan kata satu dimensi. Namun, menangani data graf yang tidak teratur dan kompleks seperti koneksi SNS yang kompleks atau struktur ikatan atom yang menyusun molekul sangatlah sulit.
 
 GNN mendobrak batasan ini dengan menyebarkan dan mempelajari secara bersamaan informasi kuantitas fitur masing-masing simpul di graf dan topologi (hubungan koneksi) seluruh graf. Saat ini, GNN telah dipraktikkan sebagai teknologi inti yang sangat diperlukan di aplikasi AI mutakhir, termasuk bidang penemuan obat (Drug Discovery) yang memprediksi properti senyawa baru, sistem rekomendasi lanjutan di Amazon dan Netflix, dan prediksi waktu tiba pada Google Maps.
 

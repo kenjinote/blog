@@ -110,7 +110,7 @@ const main = async () => {
 main();
 ```
 
-Keuntungan Event Loop adalah tidak memerlukan manajemen kunci (lock) untuk keadaan yang dibagikan. Namun, jika pemrosesan yang berat pada CPU dijalankan di Call Stack, seluruh Event Loop akan diblokir, dan ada risiko sistem menjadi terhenti (Pemblokiran Event Loop). Beban komputasi sebaiknya dibatasi pada pemrosesan ringan dari $ O(1) $ hingga $ O(N) $.
+Keuntungan Event Loop adalah tidak memerlukan manajemen kunci (lock) untuk keadaan yang dibagikan. Namun, jika pemrosesan yang berat pada CPU dijalankan di Call [Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/), seluruh Event Loop akan diblokir, dan ada risiko sistem menjadi terhenti (Pemblokiran Event Loop). Beban komputasi sebaiknya dibatasi pada pemrosesan ringan dari $ O(1) $ hingga $ O(N) $.
 
 ---
 
@@ -141,7 +141,7 @@ flowchart LR
 
 ### 3.2 Contoh Implementasi Actor Menggunakan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
-Dalam Rust, yang merupakan bahasa pemrograman sistem, Anda dapat membangun model Actor menggunakan crate asinkron yang kuat seperti `tokio` dan `actix`. Di sini, ditunjukkan implementasi pola Actor sederhana menggunakan saluran `mpsc` (Multi-Producer, Single-Consumer).
+Dalam [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), yang merupakan bahasa pemrograman sistem, Anda dapat membangun model Actor menggunakan crate asinkron yang kuat seperti `tokio` dan `actix`. Di sini, ditunjukkan implementasi pola Actor sederhana menggunakan saluran `mpsc` (Multi-Producer, Single-Consumer).
 
 ```rust
 use std::sync::Arc;

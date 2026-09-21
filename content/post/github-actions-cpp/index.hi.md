@@ -11,7 +11,7 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 # [GitHub Actions](https://kenji.blog/hi/p/cicd-pipeline-github-actions-best-practices/) का उपयोग करके C++ प्रोजेक्ट के लिए [CI/CD](https://kenji.blog/hi/p/cicd-pipeline-github-actions-best-practices/) पाइपलाइन बनाना: पूरी गाइड
 
-आधुनिक सॉफ्टवेयर विकास प्रतिमान में, निरंतर एकीकरण (Continuous Integration: CI) और निरंतर वितरण/परिनियोजन (Continuous Delivery/Deployment: CD) एक चुस्त (agile) विकास प्रक्रिया और उच्च गुणवत्ता वाले सॉफ्टवेयर को बनाए रखने के लिए आवश्यक तत्व हैं। कई प्रोग्रामिंग भाषाओं के अस्तित्व के बीच, C++ में CI/CD पाइपलाइन का निर्माण अन्य भाषाओं (जैसे Python, JavaScript, Go, आदि) की तुलना में अपनी अनूठी कठिनाइयों और जटिलताओं के साथ आता है।
+आधुनिक सॉफ्टवेयर विकास प्रतिमान में, निरंतर एकीकरण (Continuous Integration: CI) और निरंतर वितरण/परिनियोजन (Continuous Delivery/Deployment: CD) एक चुस्त (agile) विकास प्रक्रिया और उच्च गुणवत्ता वाले सॉफ्टवेयर को बनाए रखने के लिए आवश्यक तत्व हैं। कई प्रोग्रामिंग भाषाओं के अस्तित्व के बीच, C++ में CI/CD पाइपलाइन का निर्माण अन्य भाषाओं (जैसे Python, JavaScript, [Go](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/), आदि) की तुलना में अपनी अनूठी कठिनाइयों और जटिलताओं के साथ आता है।
 
 इस लेख में, हम बहुत विस्तार से बताएंगे कि GitHub Actions का उपयोग करके C++ प्रोजेक्ट्स के लिए स्क्रैच से एक मजबूत और व्यावहारिक CI/CD पाइपलाइन कैसे बनाई जाए। इसमें क्रॉस-प्लेटफॉर्म (Windows, Linux, macOS) पर मैट्रिक्स बिल्ड, CMake का उपयोग करके बिल्ड सिस्टम एकीकरण, CTest के साथ स्वचालित परीक्षण, स्थिर और गतिशील विश्लेषण (static and dynamic analysis) का स्वचालन, कवरेज मापन, और GitHub Releases के माध्यम से संकलित बाइनरी के स्वचालित वितरण जैसी सभी व्यावहारिक तकनीकें शामिल होंगी।
 

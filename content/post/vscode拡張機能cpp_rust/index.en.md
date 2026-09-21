@@ -11,7 +11,7 @@ tags: ["VSCode", "C++", "Rust", "Editor"]
 
 # Introduction
 
-In modern systems programming, C++ and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) have firmly established their positions as the most important languages. With a long track record and a massive ecosystem, C++ is indispensable for operating systems, game engines, and high-frequency trading (HFT) systems. Rust, on the other hand, is rapidly gaining popularity due to its memory safety provided by the ownership model and its modern language features, and is even being adopted in the Linux kernel. When developing in these two languages, the choice and configuration of your editor directly impacts development productivity.
+In modern systems programming, C++ and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) have firmly established their positions as the most important languages. With a long track record and a massive ecosystem, C++ is indispensable for operating systems, game engines, and high-frequency trading (HFT) systems. [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), on the other hand, is rapidly gaining popularity due to its memory safety provided by the ownership model and its modern language features, and is even being adopted in the Linux kernel. When developing in these two languages, the choice and configuration of your editor directly impacts development productivity.
 
 Visual Studio Code (VSCode) is loved by systems programmers worldwide for its high extensibility and lightweight nature. However, right after installation, VSCode is merely a text editor. To unlock the true power of C++ and Rust, it is essential to introduce appropriate extensions and meticulously configure them, such as language servers that deeply understand language semantics and debuggers that track state at the binary level.
 
@@ -59,7 +59,7 @@ Because `clangd` directly incorporates Clang's frontend technologies (parser and
 
 #### Why Choose clangd over ms-vscode.cpptools?
 - **Highly Accurate Analysis**: By directly handling Clang's AST (Abstract Syntax [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)), it accurately accurately evaluates complex template instantiations that heavily use SFINAE (Substitution Failure Is Not An Error) and nested macro expansions.
-- **Speed through Background Indexing**: Symbol information for the entire project is pre-calculated (indexed) in the background, allowing features like "Go to Definition" and "Find All References" to complete instantly even in massive projects.
+- **Speed through Background Indexing**: Symbol information for the entire project is pre-calculated (indexed) in the background, allowing features like "[Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) to Definition" and "Find All References" to complete instantly even in massive projects.
 
 #### Perfect Configuration for compile_commands.json
 For `clangd` to work correctly, a `compile_commands.json` file is required. This file describes the compiler flags (include paths and macro definitions) used to compile each source file in the project. If you are using CMake, you can generate it automatically with the following command:
@@ -99,7 +99,7 @@ By perfecting background indexing (optimizing the pre-computed data structure fo
 
 ### ② rust-analyzer (De Facto Standard for [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) Development)
 
-In Rust development, **`rust-analyzer`** is currently adopted as the official language server. The previously standard RLS ([Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) Language Server) had response limitations because its architecture directly called the compiler (`rustc`). In contrast, `rust-analyzer` was redesigned from scratch for IDEs, boasting powerful capabilities to incrementally parse even incomplete code.
+In [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) development, **`rust-analyzer`** is currently adopted as the official language server. The previously standard RLS ([Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) Language Server) had response limitations because its architecture directly called the compiler (`rustc`). In contrast, `rust-analyzer` was redesigned from scratch for IDEs, boasting powerful capabilities to incrementally parse even incomplete code.
 
 #### Features that Yield Overwhelming Productivity
 1. **Inlay Hints**: In [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), where type inference is strong, it is recommended not to explicitly write variable types, though this can sometimes reduce readability. Inlay hints display inferred types and function call argument names as faint text overlays in the editor.
@@ -125,9 +125,9 @@ Setting `cargo clippy` to run automatically in the background on save is practic
 
 ### ③ CodeLLDB (Powerful Cross-Platform Debugger)
 
-Whether developing in C++ or Rust, a debugger is essential for inspecting memory states at runtime. **`CodeLLDB`** is extremely compatible with [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) and runs stably across all platforms: Windows, Mac, and Linux.
+Whether developing in C++ or [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), a debugger is essential for inspecting memory states at runtime. **`CodeLLDB`** is extremely compatible with [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) and runs stably across all platforms: Windows, Mac, and Linux.
 
-The Rust compiler (`rustc`) uses LLVM as its backend, and the format of the generated debug information (DWARF / PDB) is perfectly compatible with LLDB, which is also part of the LLVM project.
+The [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) compiler (`rustc`) uses LLVM as its backend, and the format of the generated debug information (DWARF / PDB) is perfectly compatible with LLDB, which is also part of the LLVM project.
 
 #### Advanced launch.json Configuration Example
 
@@ -375,7 +375,7 @@ Both C++ and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) ar
 By applying the 10 extensions and configurations introduced in this article, VSCode evolves beyond a mere text editor into a "developer's powerful exoskeleton," combining deep compiler knowledge with the clairvoyant capabilities of a debugger.
 
 1. **clangd** (C++ Language Server)
-2. **rust-analyzer** (Rust Language Server)
+2. **rust-analyzer** ([Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) Language Server)
 3. **CodeLLDB** (Integrated Debugger)
 4. **CMake Tools** (C++ Build Automation)
 5. **crates** (Rust Dependency Management)

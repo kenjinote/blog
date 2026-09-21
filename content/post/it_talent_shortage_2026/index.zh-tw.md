@@ -125,7 +125,7 @@ xychart-beta
 
 ---
 
-## 4. 超越提示工程（Prompt Engineering）：真正需要的技能是什麼？
+## 4. 超越提示工程（[Prompt Engineering](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）：真正需要的技能是什麼？
 
 那麼，在未來的時代中所需要的IT人才究竟是怎樣的存在呢？如果認為「只要把提示工程學到極致就好」，那就言之過早了。使用自然語言下達指令的技術，會隨著AI模型的進化而變得簡單，且商品化（Commoditization）正在加速。
 

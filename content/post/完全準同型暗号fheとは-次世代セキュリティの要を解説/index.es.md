@@ -263,7 +263,7 @@ A medida que el FHE se acerca a velocidades prácticas, se esperan innovaciones 
 2.  **Detección de fraudes y prevención de lavado de dinero (AML) en instituciones financieras**:
     Bancos de la competencia pueden cotejar datos entre sí de forma cifrada, sin revelar la información de las cuentas de los clientes o el historial de transacciones, lo que permite realizar análisis interbancarios para detectar enormes redes de transferencias ilícitas.
 3.  **API de inferencia de IA segura (MaaS: Model as a [Service](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/))**:
-    Los usuarios envían su propia voz, imágenes faciales o indicaciones (prompts) de forma cifrada a servicios de IA (como un LLM tipo ChatGPT). El proveedor de IA genera la respuesta sin conocer en absoluto los datos introducidos por el usuario y la devuelve como texto cifrado. Esto elimina por completo la preocupación de que "la IA aprenda o espíe la información personal".
+    Los usuarios envían su propia voz, imágenes faciales o indicaciones (prompts) de forma cifrada a servicios de IA (como un [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) tipo ChatGPT). El proveedor de IA genera la respuesta sin conocer en absoluto los datos introducidos por el usuario y la devuelve como texto cifrado. Esto elimina por completo la preocupación de que "la IA aprenda o espíe la información personal".
 
 ---
 

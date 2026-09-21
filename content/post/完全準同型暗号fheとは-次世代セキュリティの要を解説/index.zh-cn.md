@@ -253,7 +253,7 @@ FHE在理论上提供了完美的安全性，但其实用化面临的最大挑�
 2.  **金融机构的欺诈检测与反洗钱 (AML)** ：
     相互竞争的银行之间无需透露客户的账户信息或交易记录，即可在加密状态下比对彼此的数据，从而实现跨行分析，以检测庞大的非法汇款网络。
 3.  **安全的AI推理API (MaaS: Model as a [Service](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/))** ：
-    用户可以将自己的声音、面部图像或提示词加密后发送给AI服务（如ChatGPT等LLM）。AI提供商在完全不知道用户输入内容的情况下生成回答，并以密文形式返回。这将完全消除“AI会学习/窥探个人信息”的担忧。
+    用户可以将自己的声音、面部图像或提示词加密后发送给AI服务（如ChatGPT等[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）。AI提供商在完全不知道用户输入内容的情况下生成回答，并以密文形式返回。这将完全消除“AI会学习/窥探个人信息”的担忧。
 
 ---
 

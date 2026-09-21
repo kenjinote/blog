@@ -11,7 +11,7 @@ description: '详细讲解在Rust中使用`winapi`和`user32-sys`包，通过调
 
 可以通过以下步骤在[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)中显示MessageBox。
 
-1. 安装Rust。参考 [Rust入门](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/)
+1. 安装[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)。参考 [Rust入门](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/)
 2. 在命令提示符中执行 `cargo new --bin MessageBox`。
 3. 移动到 `MessageBox` 目录。
 4. 打开 `Cargo.toml` 并修改如下。

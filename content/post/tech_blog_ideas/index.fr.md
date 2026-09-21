@@ -184,7 +184,7 @@ En utilisant la fonctionnalité de rétrolien (backlink) d'Obsidian (`[[Nom de l
 
 ## 5. Recherche sémantique à l'aide de bases de données vectorielles (Pinecone) et d'OpenAI Embeddings
 
-Lorsque le nombre de notes atteint des centaines ou des milliers, il devient difficile de trouver la note souhaitée avec une simple recherche par mots-clés (recherche en texte intégral). C'est là que la recherche sémantique, qui utilise les Embeddings des grands modèles de langage (LLM), démontre sa puissance, particulièrement utile lorsque vous vous dites : "Je ne me souviens pas des mots-clés, mais je veux trouver des notes conceptuellement similaires."
+Lorsque le nombre de notes atteint des centaines ou des milliers, il devient difficile de trouver la note souhaitée avec une simple recherche par mots-clés (recherche en texte intégral). C'est là que la recherche sémantique, qui utilise les Embeddings des grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)), démontre sa puissance, particulièrement utile lorsque vous vous dites : "Je ne me souviens pas des mots-clés, mais je veux trouver des notes conceptuellement similaires."
 
 En utilisant le modèle `text-embedding-ada-002` (ou `text-embedding-3-small`) d'OpenAI, chaque note Markdown d'Obsidian est convertie en un vecteur multidimensionnel (un tableau de nombres de centaines à milliers de dimensions). Dans ces espaces vectoriels, les vecteurs de phrases ayant des significations proches sont également physiquement proches l'un de l'autre.
 

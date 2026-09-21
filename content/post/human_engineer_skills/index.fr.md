@@ -11,7 +11,7 @@ tags: ["IA Générative", "DDD", "Architecture", "Avenir du travail"]
 
 # Les "compétences d'ingénieur spécifiques aux humains" requises à l'ère de la programmation par l'IA
 
-Ces dernières années, avec l'évolution fulgurante de l'IA générative (Generative AI) et des grands modèles de langage (LLM), le paysage de l'ingénierie logicielle a radicalement changé. GitHub Copilot et divers assistants de codage IA sont désormais utilisés au quotidien, et le phénomène selon lequel "l'IA génère instantanément du code si on lui donne des instructions en langage naturel" n'est plus de la science-fiction, mais la réalité d'aujourd'hui.
+Ces dernières années, avec l'évolution fulgurante de l'IA générative (Generative AI) et des grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)), le paysage de l'ingénierie logicielle a radicalement changé. GitHub Copilot et divers assistants de codage IA sont désormais utilisés au quotidien, et le phénomène selon lequel "l'IA génère instantanément du code si on lui donne des instructions en langage naturel" n'est plus de la science-fiction, mais la réalité d'aujourd'hui.
 
 À une telle époque, il est naturel pour de nombreux ingénieurs de s'inquiéter que "leur travail soit volé par l'IA". Il est vrai que le "simple travail de codage (Typing Code)", comme la création de code boilerplate pour des applications CRUD typiques, l'implémentation d'algorithmes simples, ou l'appel d'API de bibliothèques bien connues, se transforme rapidement en commodité.
 
@@ -23,7 +23,7 @@ Cependant, l'essence de l'ingénierie logicielle n'est pas de "taper du code". E
 
 Pour évaluer correctement les capacités de l'IA et déterminer dans quels domaines les humains devraient apporter de la valeur, il faut d'abord comprendre les limites structurelles de l'IA (en particulier des LLM) d'un point de vue mathématique et architectural.
 
-### 1.1 Limites de complexité de calcul et de contexte dans l'architecture Transformer
+### 1.1 Limites de complexité de calcul et de contexte dans l'architecture [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)
 
 La plupart des LLM actuels sont basés sur l'architecture "Transformer" annoncée par Google en 2017. Le cœur du Transformer réside dans le "mécanisme d'auto-attention (Self-Attention Mechanism)". Ce mécanisme calcule dans quelle mesure chaque jeton (token) d'une séquence d'entrée est lié à tous les autres jetons.
 
@@ -38,7 +38,7 @@ $$ \text{Complexity} = O(N^2 \cdot d) $$
 
 Récemment, des recherches ont progressé sur des optimisations au niveau matériel telles que FlashAttention, ainsi que sur Sparse Attention et des architectures alternatives capables de traiter en temps linéaire $O(N)$ comme Mamba ([State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) Space Models). Néanmoins, "comprendre parfaitement un contexte infini et générer une sortie globalement optimisée" reste extrêmement difficile.
 
-De plus, même si la fenêtre de contexte pouvait être physiquement agrandie, un phénomène appelé "Lost in the Middle (perte d'informations au milieu)" se produit. Les LLM sont fortement influencés par les informations au début et à la fin du prompt, et ont tendance à ignorer les exigences et contraintes importantes placées au milieu. C'est pourquoi, même si vous demandez à un LLM de lire l'intégralité du code source d'un système d'entreprise de plusieurs dizaines de milliers de lignes et de "faire un refactoring optimal", le code généré sera correct localement, mais s'effondrera dans son ensemble.
+De plus, même si la fenêtre de contexte pouvait être physiquement agrandie, un phénomène appelé "Lost in the Middle (perte d'informations au milieu)" se produit. Les [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) sont fortement influencés par les informations au début et à la fin du prompt, et ont tendance à ignorer les exigences et contraintes importantes placées au milieu. C'est pourquoi, même si vous demandez à un LLM de lire l'intégralité du code source d'un système d'entreprise de plusieurs dizaines de milliers de lignes et de "faire un refactoring optimal", le code généré sera correct localement, mais s'effondrera dans son ensemble.
 
 ### 1.2 Caractéristiques des modèles génératifs probabilistes et "Hallucinations"
 
@@ -201,7 +201,7 @@ pie title Répartition du temps de l'ingénieur (À l'ère de l'IA)
 
 ## 7. Conclusion : Ne pas refuser l'évolution, mais surfer sur la vague
 
-L'"ère où l'IA écrit du code" n'est pas une menace pour les ingénieurs, mais la plus grande opportunité de l'histoire. Tout comme le passage du langage d'assemblage au langage C a eu lieu autrefois, et l'évolution de la gestion des pointeurs de mémoire au garbage collection de Java s'est produite, la génération de code par l'IA n'est rien de plus qu'un "niveau d'abstraction supérieur".
+L'"ère où l'IA écrit du code" n'est pas une menace pour les ingénieurs, mais la plus grande opportunité de l'histoire. Tout comme le passage du langage d'assemblage au langage C a eu lieu autrefois, et l'évolution de la gestion des pointeurs de mémoire au garbage collection de [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) s'est produite, la génération de code par l'IA n'est rien de plus qu'un "niveau d'abstraction supérieur".
 
 Les ingénieurs de demain ne s'inquiéteront plus des spécifications détaillées d'un langage de programmation particulier ou des mises à jour des frameworks. Ils pourront concentrer leurs ressources sur une résolution de problèmes plus essentielle, de plus haut niveau et plus humaine, telle que **"Quel est le problème métier ?"**, **"Comment diviser et lier les données ?"**, ou **"Comment récupérer rapidement lorsque le système s'arrête ?"**.
 

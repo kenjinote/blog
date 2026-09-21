@@ -110,7 +110,7 @@ $$
 In der obigen Gleichung steht $S_t$ für den aktuellen globalen Zustand von Ethereum (die Salden jedes Kontos und der Speicher von Contracts), $T$ für eine Transaktion, $\Upsilon$ für die Zustandsübergangsfunktion der EVM und $S_{t+1}$ für den neuen Zustand nach der Ausführung der Transaktion.
 
 Die interne Struktur der EVM ist hauptsächlich in die folgenden Bereiche unterteilt:
-- ** Stack (Stapel) **: Eine LIFO (Last In, First Out) Datenstruktur mit bis zu 1024 Elementen. Wortgröße von 256 Bit. Er hält die Operanden für verschiedene Operationen.
+- ** [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) (Stapel) **: Eine LIFO (Last In, First Out) Datenstruktur mit bis zu 1024 Elementen. Wortgröße von 256 Bit. Er hält die Operanden für verschiedene Operationen.
 - ** Memory (Speicher) **: Ein flüchtiges Byte-Array, das nur während der Transaktionsausführung temporär gehalten wird.
 - ** Storage (Speicher) **: Ein persistenter Datenbereich, der jedem Contract zugewiesen wird. Er besteht aus einer [Key-Value](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/) (256-Bit zu 256-Bit) Datenbank, und Schreiboperationen sind mit hohen Gaskosten (Gebühren) verbunden.
 

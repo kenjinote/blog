@@ -12,7 +12,7 @@ description: 'VRAM（GPU記憶體）不足是LLM訓練和推論的最大障礙�
 
 # 前言：AI開發與「VRAM之壁」
 
-近年來，大型語言模型（LLM）和擴散模型（Diffusion Models）等生成式AI技術取得了飛速的發展。然而，當許多開發者和研究人員在本地環境中對這些最先進的AI模型進行訓練（微調）或推論（Inference）時，面臨了一個極其物理的障礙—— **「GPU記憶體（VRAM）不足」** 。
+近年來，大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）和擴散模型（Diffusion Models）等生成式AI技術取得了飛速的發展。然而，當許多開發者和研究人員在本地環境中對這些最先進的AI模型進行訓練（微調）或推論（Inference）時，面臨了一個極其物理的障礙—— **「GPU記憶體（VRAM）不足」** 。
 
 即使是NVIDIA GeForce RTX 4090等消費級高階GPU，其VRAM最大也只有24GB，根本無法直接載入像Llama 3 70B這樣巨大的模型。而資料中心級別的H100（80GB）或B200（192GB）等則非常昂貴，並非個人或小團隊能輕易使用。如果無法突破這道「VRAM之壁（The Wall of VRAM）」，就連接觸最先進模型的機會都沒有。
 
@@ -47,7 +47,7 @@ $$ M_{weights} = 8,000,000,000 \times 2 \text{ bytes} \approx 16,000,000,000 \te
 ## 1.2 推論時的記憶體消耗：KV Cache的增長
 
 在LLM的推論（特別是自迴歸式的文字生成）中，與權重消耗相當，甚至更嚴重擠壓VRAM的元兇就是 **KV Cache（[Key-Value](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache）** 。
-在Transformer架構中，為了避免重新計算過去已經生成和處理過的Token資訊，會將各個注意力層（Attention Layer）中的Key和Value張量（Tensor）持續快取在VRAM中。這雖然能提升計算速度（Compute），但隨著上下文長度（輸入提示詞長度＋生成長度）的增加，記憶體消耗量將呈線性爆炸性增長。
+在[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)架構中，為了避免重新計算過去已經生成和處理過的Token資訊，會將各個注意力層（Attention Layer）中的Key和Value張量（Tensor）持續快取在VRAM中。這雖然能提升計算速度（Compute），但隨著上下文長度（輸入提示詞長度＋生成長度）的增加，記憶體消耗量將呈線性爆炸性增長。
 
 處理1個Token時所消耗的KV Cache記憶體量 $M_{kv\_token}$，可根據模型架構透過以下公式嚴格計算出來：
 
@@ -112,7 +112,7 @@ graph TD
 ```
 
 **機制與挑戰:**
-由於Transformer模型採用層（Layer）串聯堆疊的結構，在某一層的計算完成之前，下一層的計算不會開始。利用這點，我們只將能夠裝入GPU的層（例如：第1到15層）常駐（釘選）在VRAM中，並將剩餘的層（第16到32層）放在容量大但速度慢的CPU RAM中。推論過程中，當第15層的計算完成後，會透過PCIe匯流排將第16層的權重從CPU傳輸（複製）到GPU，接著在GPU上執行計算。
+由於[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)模型採用層（Layer）串聯堆疊的結構，在某一層的計算完成之前，下一層的計算不會開始。利用這點，我們只將能夠裝入GPU的層（例如：第1到15層）常駐（釘選）在VRAM中，並將剩餘的層（第16到32層）放在容量大但速度慢的CPU RAM中。推論過程中，當第15層的計算完成後，會透過PCIe匯流排將第16層的權重從CPU傳輸（複製）到GPU，接著在GPU上執行計算。
 
 然而， **PCIe的頻寬（Bandwidth）會成為嚴重的瓶頸** 。PCIe 4.0 x16的理論最大頻寬為32GB/s（單向），與最新GPU的VRAM內部頻寬（例如RTX 4090的GDDR6X為1008GB/s，H100的HBM3更是超過3TB/s）相比，慢了兩個數量級，因此若過度依賴CPU卸載，推論速度（Tokens per Second）將會急劇下降。
 為了將速度降低的程度降至最低，實務上的重點在於盡可能將更多的層載入GPU（最大化GPU Layers），並將卸載的層數減至最少。
@@ -139,7 +139,7 @@ graph LR
 
 ## 2.3 FlashAttention：打破注意力計算的記憶體複雜度
 
-VRAM不足的問題，不僅來自於儲存資料所需的記憶體量，還因為計算過程中的「暫存工作區間」不足所引起。標準Transformer的自我注意力（Self-Attention）機制，針對序列長度 $N$，必須在VRAM上具體化（Materialize）出一個 $N \times N$ 的巨大注意力矩陣。這會讓記憶體複雜度變成 $O(N^2)$，成為長上下文中發生OOM的主因。
+VRAM不足的問題，不僅來自於儲存資料所需的記憶體量，還因為計算過程中的「暫存工作區間」不足所引起。標準[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)的自我注意力（Self-Attention）機制，針對序列長度 $N$，必須在VRAM上具體化（Materialize）出一個 $N \times N$ 的巨大注意力矩陣。這會讓記憶體複雜度變成 $O(N^2)$，成為長上下文中發生OOM的主因。
 
 解決這個問題的技術就是 **FlashAttention** （及其後續的FlashAttention-2, 3）。
 FlashAttention是一種有意識地配合GPU硬體架構（巨大但慢速的HBM，與極小但超高速的SRAM所構成的階層結構）而設計的演算法。它利用稱為平鋪（Tiling）的手法，將資料分塊載入SRAM，並在其中完成注意力計算，徹底避免了將 $N \times N$ 的矩陣寫入HBM（VRAM）的過程。
@@ -161,7 +161,7 @@ graph TD
     end
 ```
 
-這個架構最大的優勢在於，不存在VRAM這樣明確的界限，系統記憶體的幾乎整個區域都可以直接用來載入巨大的LLM。如果是一台擁有192GB統一記憶體的Mac Studio，就可以將70B等級或更巨大的模型（例如Grok-1等）在不經過量化的情況下載入單一設備中，並進行高速推論。以M2 Ultra為例，記憶體存取頻寬也達到了800GB/s，足以媲美消費級獨立顯示卡。這是一種從硬體層面解決「記憶體容量」與「頻寬」兩難的極其強大的方法。
+這個架構最大的優勢在於，不存在VRAM這樣明確的界限，系統記憶體的幾乎整個區域都可以直接用來載入巨大的[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)。如果是一台擁有192GB統一記憶體的Mac Studio，就可以將70B等級或更巨大的模型（例如Grok-1等）在不經過量化的情況下載入單一設備中，並進行高速推論。以M2 Ultra為例，記憶體存取頻寬也達到了800GB/s，足以媲美消費級獨立顯示卡。這是一種從硬體層面解決「記憶體容量」與「頻寬」兩難的極其強大的方法。
 
 ---
 

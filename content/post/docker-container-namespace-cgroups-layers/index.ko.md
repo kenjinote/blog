@@ -308,7 +308,7 @@ graph TD
 
 ### 8.1 멀티 스테이지 빌드(Multi-stage build)의 활용
 
-빌드 환경과 실행 환경을 분리함으로써 최종적인 이미지 크기를 극적으로 줄일 수 있습니다. 특히 Go나 Rust, Java 등의 컴파일 언어에서 유용합니다.
+빌드 환경과 실행 환경을 분리함으로써 최종적인 이미지 크기를 극적으로 줄일 수 있습니다. 특히 [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)나 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/), [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 등의 컴파일 언어에서 유용합니다.
 
 ```dockerfile
 # --- Stage 1: Build 환경 ---

@@ -15,9 +15,9 @@ description: 'Google이 개발한 프로그래밍 언어 ''Go(Golang)''의 설�
 
 
 # 시작하며
-Go는 Google이 2009년에 공개한 비교적 새로운 프로그래밍 언어입니다.
+[Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)는 Google이 2009년에 공개한 비교적 새로운 프로그래밍 언어입니다.
 Go의 컴파일러, 도구, 라이브러리는 오픈 소스로 공개되어 있습니다.
-또한, Go는 C 언어나 Java와 같은 정적 타입 언어이지만, C 언어와 같은 포인터를 사용하지 않는 언어입니다.
+또한, Go는 C 언어나 [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)와 같은 정적 타입 언어이지만, C 언어와 같은 포인터를 사용하지 않는 언어입니다.
 
 # 설치 방법
 
@@ -69,7 +69,7 @@ func main() {
 
 [http://go.shibu.jp/](http://go.shibu.jp/)
 
-Go를 배우는 데 필요한 설명은 위 링크(일본어 번역판)에 모여 있습니다.
+[Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)를 배우는 데 필요한 설명은 위 링크(일본어 번역판)에 모여 있습니다.
 Go와 관련된 기술은 오픈되어 있어서 종이 교재를 구입할 필요가 없을 정도로 충실합니다.
 
 그럼 즐거운 Go 라이프를!

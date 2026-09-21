@@ -338,7 +338,7 @@ def partition(arr, low, high):
     return i + 1
 ```
 
-### 3.3 Heap Sort (Pengurutan Tumpukan)
+### 3.3 [Heap](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) Sort (Pengurutan Tumpukan)
 
 Heap sort adalah algoritma pengurutan yang dengan cerdik memanfaatkan struktur data pohon yang disebut  **Binary Heap (Tumpukan Biner)** . Ia memiliki karakteristik hibrida yang mengambil keunggulan dari merge sort dan quick sort, di mana kompleksitas terburuknya adalah $O(n \log n)$, namun merupakan pengurutan In-place yang tidak memerlukan memori tambahan.
 
@@ -467,7 +467,7 @@ Meskipun buku teks akademis sering kali membahas hingga quick sort dan merge sor
 
 ### 5.1 Timsort (Bawaan pada Python)
 
-Timsort adalah algoritma yang diimplementasikan oleh Tim Peters untuk Python pada tahun 2002. Saat ini, algoritma ini merupakan penguasa dunia praktis yang diadopsi dalam banyak bahasa, tidak hanya `list.sort()` atau `sorted()` pada Python, tetapi juga pada array objek Java dan standard sort [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/).
+Timsort adalah algoritma yang diimplementasikan oleh Tim Peters untuk Python pada tahun 2002. Saat ini, algoritma ini merupakan penguasa dunia praktis yang diadopsi dalam banyak bahasa, tidak hanya `list.sort()` atau `sorted()` pada Python, tetapi juga pada array objek [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) dan standard sort [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/).
 
 Konsep desain terbesar Timsort didasarkan pada aturan praktis empiris bahwa  **"Data di dunia nyata jarang sepenuhnya acak, dan seringkali sebagian sudah terurut sampai tingkat tertentu (ada blok terurut menaik atau menurun secara berurutan)."** 
 
@@ -504,7 +504,7 @@ Kinerja algoritma pengurutan utama yang dibahas dalam artikel ini telah dirangku
 |  **Insertion Sort (Pengurutan Sisipan)**  | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | Yes | Sisipan. Sangat kuat pada data yang hampir terurut. |
 |  **Merge Sort (Pengurutan Gabung)**  | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | Divide & Conquer. Kompleksitas kokoh tapi makan memori. |
 |  **Quick Sort (Pengurutan Cepat)**  | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | $O(\log n)$ | No | Divide & Conquer. Rata-rata tercepat tapi awas kasus terburuk. |
-|  **Heap Sort (Pengurutan Tumpukan)**  | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No | Binary Heap. In-place dan kokoh. |
+|  **[Heap](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) Sort (Pengurutan Tumpukan)**  | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No | Binary Heap. In-place dan kokoh. |
 |  **Counting Sort (Pengurutan Hitung)**  | $O(n+k)$ | $O(n+k)$ | $O(n+k)$ | $O(k)$ | Yes | Non-perbandingan. Terkuat jika rentang kunci sempit. |
 |  **Timsort**  (Standar Python dkk.) | $O(n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | Hibrida. Adaptif terhadap data aktual dan tercepat. |
 |  **Introsort**  (Standar C++ dkk.) | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(\log n)$ | No | Hibrida. Menyeimbangkan kecepatan Quick dan kekokohan Heap. |

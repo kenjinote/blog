@@ -12,7 +12,7 @@ description: '在保护隐私的同时免费使用的本地LLM。本文将从技
 
 # 引言
 
-近年来，大型语言模型（LLM）的技术发展突飞猛进，像ChatGPT和Claude等基于云的AI服务已经得到广泛普及。然而，与此同时，“不想将公司的机密数据发送到外部服务器”、“希望降低API使用费”以及“希望构建完全离线运行的AI系统”的需求也在快速增加。
+近年来，大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的技术发展突飞猛进，像ChatGPT和Claude等基于云的AI服务已经得到广泛普及。然而，与此同时，“不想将公司的机密数据发送到外部服务器”、“希望降低API使用费”以及“希望构建完全离线运行的AI系统”的需求也在快速增加。
 
 为了满足这些需求，可以直接下载到自己的PC或公司内部服务器上运行的“本地LLM（开源LLM）”应运而生。直到2023年左右，在本地实现实用的准确度还很困难，但随着模型架构的进步和量化（Quantization）技术的发展，现在即使是消费级GPU（如NVIDIA RTX 3090 / 4090或Mac的Apple Silicon等），也可以十分流畅地运行非常高性能的LLM。
 
@@ -80,7 +80,7 @@ $$ M_{4bit} = \frac{8 \times 4.5}{8} = 4.5 \text{ GB} $$
 
 ### 架构演进与特点
 
-Llama 3在采用标准Transformer架构的同时，相较于上一代（Llama 2）进行了许多技术上的改进。特别值得关注的是以下几点：
+Llama 3在采用标准[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)架构的同时，相较于上一代（Llama 2）进行了许多技术上的改进。特别值得关注的是以下几点：
 
 - **全面采用GQA (Grouped Query Attention)**: 在Llama 2中仅用于大模型的GQA，在Llama 3中也被应用到了如8B这样的小模型上。这使得KV缓存的内存使用量大幅减少，即使在长上下文中也能实现高速推理。
 - **词表大小的扩充**: 分词器（基于Tiktoken）的词表大小扩展到了128,000个Token，极大提升了多语言和程序代码的压缩效率。日语处理效率也比Llama 2提升了数倍。
@@ -114,7 +114,7 @@ Llama 3拥有最雄厚的社区支持，其一大优势在于能够立即使用G
 
 ### MoE (Mixture of Experts) 机制
 
-“Mixtral 8x7B”作为首个真正采用 **MoE (混合专家)** 架构的开源LLM，取得了巨大的成功。
+“Mixtral 8x7B”作为首个真正采用 **MoE (混合专家)** 架构的开源[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)，取得了巨大的成功。
 MoE指的是在整个模型（约470亿参数）中内置8个“专家（Expert）网络”，并根据输入的每个Token，动态选择（路由）最合适的2个专家进行激活的机制。
 
 ```mermaid
@@ -144,7 +144,7 @@ Google利用其最先进的“Gemini”模型技术开发的开源模型便是�
 
 ### 独特的架构设计
 
-Gemma 2采用了一些与其他LLM截然不同的独特设计：
+Gemma 2采用了一些与其他[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)截然不同的独特设计：
 
 - **Logit Soft-capping**: 一项防止生成异常大Logit值的技术，从而提高训练和推理的稳定性。
 - **Sliding Window Attention (SWA) 与 Local Attention的混合**: 并非在所有层进行全注意力计算，而是交替使用仅关注局部上下文的层和关注全局的层。
@@ -227,7 +227,7 @@ xychart-beta
 
 ## 推理速度（Tokens/sec）的理论计算
 
-本地LLM的推理速度在很大程度上取决于GPU的“内存带宽（Memory Bandwidth）”。这是因为在生成阶段（解码）中，每生成一个Token都需要从内存中读取模型的全部权重。这是一个受制于内存（Memory-bound）而非受制于计算（Compute-bound）的过程。
+本地[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的推理速度在很大程度上取决于GPU的“内存带宽（Memory Bandwidth）”。这是因为在生成阶段（解码）中，每生成一个Token都需要从内存中读取模型的全部权重。这是一个受制于内存（Memory-bound）而非受制于计算（Compute-bound）的过程。
 
 理论上的最大推理速度 $T$（Tokens/sec），可以通过以下公式计算：
 
@@ -262,7 +262,7 @@ ollama run llama3
 推荐给希望通过直观的图形用户界面（GUI）进行操作的用户。可以在应用内搜索并下载Hugging Face上海量的GGUF模型，并在类似ChatGPT的聊天界面中进行对话。它可以直观地告诉您哪个模型能放入您PC的RAM/VRAM中，这项功能非常方便。
 
 ### 3. llama.cpp
-引爆本地LLM热潮的推手，也是所有相关生态基础的C/C++实现库。适合想要将性能优化到极限的工程师，或者想要将其嵌入到自己专属脚本中的极客（Hacker）。从Apple的Metal、NVIDIA的CUDA、AMD的ROCm，甚至是Intel的AVX指令集，它能将各种硬件的潜能发挥到极致。
+引爆本地[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)热潮的推手，也是所有相关生态基础的C/C++实现库。适合想要将性能优化到极限的工程师，或者想要将其嵌入到自己专属脚本中的极客（Hacker）。从Apple的Metal、NVIDIA的CUDA、AMD的ROCm，甚至是Intel的AVX指令集，它能将各种硬件的潜能发挥到极致。
 
 ---
 
@@ -276,7 +276,7 @@ ollama run llama3
 4. **以自然的日语输出和高级编码辅助为目的**: `Qwen 2.5`
 5. **在手机、性能较低的PC上，或者作为后台运行的超轻量处理**: `Phi-3 / Phi-3.5`
 
-开源LLM的进化速度非常惊人，每隔几个月就会发布颠覆以往常识的突破性成果。在未来，随着量化技术的进一步提升和新架构的出现，仅凭本地环境就能超越云端AI的日子或许已近在咫尺。
+开源[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的进化速度非常惊人，每隔几个月就会发布颠覆以往常识的突破性成果。在未来，随着量化技术的进一步提升和新架构的出现，仅凭本地环境就能超越云端AI的日子或许已近在咫尺。
 请务必根据您自身的硬件环境下载最合适的模型，去亲身体验本地AI所带来的压倒性的自由与无限可能。
 
 

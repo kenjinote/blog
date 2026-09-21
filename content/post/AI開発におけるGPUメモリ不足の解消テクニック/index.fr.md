@@ -12,9 +12,9 @@ description: 'Le manque de VRAM (mémoire GPU) est le plus grand obstacle à l''
 
 # Introduction : Le développement de l'IA et le "Mur de la VRAM"
 
-Ces dernières années, les technologies d'IA générative telles que les grands modèles de langage (LLM) et les modèles de diffusion (Diffusion Models) ont connu un développement rapide. Cependant, lors de l'apprentissage (fine-tuning) ou de l'exécution de l'inférence (Inference) de ces modèles d'IA de pointe dans un environnement local, de nombreux développeurs et chercheurs sont confrontés à un obstacle extrêmement physique : **le "manque de mémoire GPU (VRAM)"**.
+Ces dernières années, les technologies d'IA générative telles que les grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) et les modèles de diffusion (Diffusion Models) ont connu un développement rapide. Cependant, lors de l'apprentissage (fine-tuning) ou de l'exécution de l'inférence (Inference) de ces modèles d'IA de pointe dans un environnement local, de nombreux développeurs et chercheurs sont confrontés à un obstacle extrêmement physique : **le "manque de mémoire GPU (VRAM)"**.
 
-Même avec un GPU haut de gamme grand public comme le NVIDIA GeForce RTX 4090, la VRAM maximale est de 24 Go, ce qui rend impossible le chargement d'un modèle gigantesque comme Llama 3 70B tel quel. Les GPU destinés aux centres de données tels que le H100 (80 Go) ou le B200 (192 Go) sont très coûteux et ne sont pas facilement accessibles aux individus ou aux petites équipes. Si l'on ne parvient pas à franchir ce "Mur de la VRAM (The Wall of VRAM)", il est même impossible de toucher aux modèles de pointe.
+Même avec un GPU haut de gamme grand public comme le NVIDIA GeForce RTX 4090, la VRAM maximale est de 24 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), ce qui rend impossible le chargement d'un modèle gigantesque comme Llama 3 70B tel quel. Les GPU destinés aux centres de données tels que le H100 (80 Go) ou le B200 (192 Go) sont très coûteux et ne sont pas facilement accessibles aux individus ou aux petites équipes. Si l'on ne parvient pas à franchir ce "Mur de la VRAM (The Wall of VRAM)", il est même impossible de toucher aux modèles de pointe.
 
 Cet article explique en profondeur les techniques avancées, tant du côté de l'inférence que de l'apprentissage, pour surmonter cette contrainte physique de limitation de VRAM grâce à l'ingéniosité de l'architecture matérielle et logicielle. Nous explorerons en détail le déchargement CPU (CPU Offloading), l'optimisation du cache KV, les points de contrôle de gradient (Gradient Checkpointing) et la toute dernière architecture de mémoire unifiée (Unified Memory), le tout illustré par des formules mathématiques et des diagrammes. La lecture de cet article vous permettra de comprendre en profondeur le comportement de la VRAM et d'acquérir des connaissances pratiques pour manipuler des modèles gigantesques avec des ressources limitées.
 
@@ -47,7 +47,7 @@ En d'autres termes, le simple chargement des poids du modèle dans le GPU consom
 ## 1.2 Consommation de mémoire lors de l'inférence : l'augmentation du cache KV
 
 Lors de l'inférence des LLM (en particulier la génération de texte autorégressive), le **cache KV ([Key-Value](https://kenji.blog/fr/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)** exerce une pression sur la VRAM aussi forte, voire plus forte, que les poids eux-mêmes.
-Dans l'architecture Transformer, afin d'éviter de recalculer les informations des jetons (tokens) générés et traités précédemment, les tenseurs Key et Value de chaque couche d'attention continuent d'être mis en cache dans la VRAM. Cela améliore la vitesse de calcul (Compute), mais à mesure que la longueur du contexte (longueur du prompt d'entrée + longueur générée) augmente, la consommation de mémoire augmente de manière linéaire et explosive.
+Dans l'architecture [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/), afin d'éviter de recalculer les informations des jetons (tokens) générés et traités précédemment, les tenseurs Key et Value de chaque couche d'attention continuent d'être mis en cache dans la VRAM. Cela améliore la vitesse de calcul (Compute), mais à mesure que la longueur du contexte (longueur du prompt d'entrée + longueur générée) augmente, la consommation de mémoire augmente de manière linéaire et explosive.
 
 La quantité de mémoire du cache KV consommée lors du traitement d'un jeton $M_{kv\_token}$ est calculée de manière stricte par la formule suivante en fonction de l'architecture du modèle :
 
@@ -71,7 +71,7 @@ $$ M_{kv\_total} = M_{kv\_token} \times L_{seq} \times BatchSize $$
 - FP16 ($B=2$)
 - Taille du lot 1, longueur de la séquence 8192 (contexte 8K)
 
-$$ M_{kv\_total} = 2 \times 32 \times 32 \times 128 \times 2 \times 8192 \times 1 = 4,294,967,296 \text{ octets} \approx 4 \text{ Go} $$
+$$ M_{kv\_total} = 2 \times 32 \times 32 \times 128 \times 2 \times 8192 \times 1 = 4,294,967,296 \text{ octets} \approx 4 \text{ [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)} $$
 
 Si l'on allongeait le contexte à 32K (32768 jetons), le cache KV à lui seul consommerait environ 16 Go. Si l'on augmente la taille du lot à 4, cela fait 64 Go. C'est l'un des défis majeurs de l'inférence : l'exigence d'une VRAM bien plus gigantesque que la taille du modèle lui-même.
 
@@ -112,9 +112,9 @@ graph TD
 ```
 
 **Mécanismes et Défis :**
-Comme le modèle Transformer a une structure où les couches (layers) sont empilées en série, le calcul de la couche suivante ne commencera pas avant que le calcul d'une couche soit terminé. En tirant parti de cela, seules les couches qui rentrent dans le GPU (par exemple, couches 1 à 15) sont rendues résidentes (épinglées) dans la VRAM, tandis que les couches restantes (couches 16 à 32) sont placées dans la RAM CPU de grande capacité mais lente. Pendant l'inférence, une fois les calculs jusqu'à la 15ème couche terminés, les poids de la 16ème couche sont transférés (copiés) du CPU vers le GPU via le bus PCIe, et les calculs sont exécutés sur le GPU.
+Comme le modèle [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) a une structure où les couches (layers) sont empilées en série, le calcul de la couche suivante ne commencera pas avant que le calcul d'une couche soit terminé. En tirant parti de cela, seules les couches qui rentrent dans le GPU (par exemple, couches 1 à 15) sont rendues résidentes (épinglées) dans la VRAM, tandis que les couches restantes (couches 16 à 32) sont placées dans la RAM CPU de grande capacité mais lente. Pendant l'inférence, une fois les calculs jusqu'à la 15ème couche terminés, les poids de la 16ème couche sont transférés (copiés) du CPU vers le GPU via le bus PCIe, et les calculs sont exécutés sur le GPU.
 
-Cependant, **la bande passante (Bandwidth) du PCIe constitue un goulet d'étranglement sévère**. La bande passante maximale théorique du PCIe 4.0 x16 est de 32 Go/s (unidirectionnelle), mais comparée à la bande passante interne de la VRAM des derniers GPU (par exemple, la GDDR6X de la RTX 4090 est de 1008 Go/s, et la HBM3 de la H100 dépasse les 3 To/s), elle est deux ordres de grandeur plus lente. L'utilisation intensive du déchargement CPU réduit donc drastiquement la vitesse d'inférence (Tokens per Second).
+Cependant, **la bande passante (Bandwidth) du PCIe constitue un goulet d'étranglement sévère**. La bande passante maximale théorique du PCIe 4.0 x16 est de 32 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)/s (unidirectionnelle), mais comparée à la bande passante interne de la VRAM des derniers GPU (par exemple, la GDDR6X de la RTX 4090 est de 1008 Go/s, et la HBM3 de la H100 dépasse les 3 To/s), elle est deux ordres de grandeur plus lente. L'utilisation intensive du déchargement CPU réduit donc drastiquement la vitesse d'inférence (Tokens per Second).
 Pour minimiser la perte de vitesse, la clé en pratique est de placer autant de couches que possible dans le GPU (maximisation des GPU Layers) et de minimiser les couches à décharger.
 
 ## 2.2 Quantification du cache KV et PagedAttention
@@ -139,7 +139,7 @@ graph LR
 
 ## 2.3 FlashAttention : Briser la complexité de la mémoire dans le calcul de l'attention
 
-Le manque de VRAM n'est pas seulement causé par la quantité de mémoire pour stocker les données, mais aussi par le manque d'"espace de travail temporaire" pendant le calcul. Le mécanisme Self-Attention standard de Transformer nécessite de matérialiser (Materialize) sur la VRAM une énorme matrice d'attention de $N \times N$ pour une séquence de longueur $N$. Cela entraîne une complexité de mémoire de $O(N^2)$, ce qui est la principale cause des OOM avec de longs contextes.
+Le manque de VRAM n'est pas seulement causé par la quantité de mémoire pour stocker les données, mais aussi par le manque d'"espace de travail temporaire" pendant le calcul. Le mécanisme Self-Attention standard de [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) nécessite de matérialiser (Materialize) sur la VRAM une énorme matrice d'attention de $N \times N$ pour une séquence de longueur $N$. Cela entraîne une complexité de mémoire de $O(N^2)$, ce qui est la principale cause des OOM avec de longs contextes.
 
 Ce problème a été résolu par **FlashAttention** (ainsi que FlashAttention-2, 3).
 FlashAttention est un algorithme qui tient compte de l'architecture matérielle du GPU (la hiérarchie entre la HBM, immense mais lente, et la SRAM, minuscule mais ultra-rapide). En utilisant une méthode appelée Tiling (pavage), les données sont chargées dans la SRAM par blocs pour y effectuer complètement le calcul de l'attention, ce qui permet d'éviter totalement le processus d'écriture de la matrice $N \times N$ dans la HBM (VRAM).
@@ -150,7 +150,7 @@ Grâce à cela, la complexité de la mémoire des couches d'attention a considé
 
 **L'architecture de mémoire unifiée (Unified Memory Architecture : UMA)**, adoptée par Apple Silicon (séries M1/M2/M3/M4 Max et Ultra) ou par certains APU récents (comme AMD Strix Point), s'attaque à ce problème à la base même de l'architecture PC.
 
-Dans ces architectures, le CPU et le GPU sur la carte mère partagent exactement la même mémoire physique (par exemple, jusqu'à 192 Go de LPDDR5). Par conséquent, le concept même de "transfert de données lent du CPU vers le GPU via PCIe" n'existe physiquement pas.
+Dans ces architectures, le CPU et le GPU sur la carte mère partagent exactement la même mémoire physique (par exemple, jusqu'à 192 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de LPDDR5). Par conséquent, le concept même de "transfert de données lent du CPU vers le GPU via PCIe" n'existe physiquement pas.
 
 ```mermaid
 graph TD
@@ -161,7 +161,7 @@ graph TD
     end
 ```
 
-Le plus grand avantage de cette architecture est l'absence de frontière distincte comme la VRAM, ce qui permet d'utiliser la quasi-totalité de la mémoire système telle quelle pour charger des LLM gigantesques. Avec un Mac Studio disposant de 192 Go de mémoire unifiée, il est possible de charger des modèles colossaux de la classe des 70B ou plus (comme Grok-1) sur un seul appareil sans quantification, et de réaliser des inférences rapides. La bande passante d'accès à la mémoire atteint 800 Go/s sur le M2 Ultra, rivalisant avec les vitesses des GPU discrets grand public. C'est une approche extrêmement puissante qui résout le dilemme entre "capacité de mémoire" et "bande passante" au niveau matériel.
+Le plus grand avantage de cette architecture est l'absence de frontière distincte comme la VRAM, ce qui permet d'utiliser la quasi-totalité de la mémoire système telle quelle pour charger des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) gigantesques. Avec un Mac Studio disposant de 192 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de mémoire unifiée, il est possible de charger des modèles colossaux de la classe des 70B ou plus (comme Grok-1) sur un seul appareil sans quantification, et de réaliser des inférences rapides. La bande passante d'accès à la mémoire atteint 800 Go/s sur le M2 Ultra, rivalisant avec les vitesses des GPU discrets grand public. C'est une approche extrêmement puissante qui résout le dilemme entre "capacité de mémoire" et "bande passante" au niveau matériel.
 
 ---
 

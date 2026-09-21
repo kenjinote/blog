@@ -9,13 +9,13 @@ categories: ["programming", "cpp"]
 tags: ["C++", "Smart Pointers", "Memory Management", "Modern C++"]
 ---
 
-在 C++ 中的記憶體管理，長年以來都是開發者面臨的最大挑戰之一。依賴手動使用 `new` 與 `delete` 的傳統記憶體管理風格，成為了引發記憶體外洩 (Memory Leak)、懸空指標 (Dangling Pointer)、雙重釋放 (Double Free) 等嚴重 Bug 的溫床。然而，隨著 Modern C++ (C++11 起) 的問世，情況發生了戲劇性的變化。其核心正是「智慧指標 (Smart Pointers)」。
+在 C++ 中的記憶體管理，長年以來都是開發者面臨的最大挑戰之一。依賴手動使用 `new` 與 `delete` 的傳統記憶體管理風格，成為了引發記憶體外洩 (Memory Leak)、懸空指標 (Dangling [Pointer](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/))、雙重釋放 (Double Free) 等嚴重 Bug 的溫床。然而，隨著 Modern C++ (C++11 起) 的問世，情況發生了戲劇性的變化。其核心正是「智慧指標 (Smart Pointers)」。
 
 本文將針對 `std::unique_ptr`、`std::shared_ptr` 以及 `std::weak_ptr` 這些能夠根除記憶體外洩並實現安全且高效率資源管理的強大工具，介紹其運作機制與進階活用術，並結合內部實作（控制區塊與原子操作）、對效能的影響、以及透過數學模型進行參照計數的公式化，進行極為詳細的解說。
 
 ## 1. 簡介：C++ 記憶體管理的黑暗時代與 Modern C++ 的黎明
 
-在過去的 C++ 開發中，開發者必須親自負責釋放配置在堆積 (Heap) 上的記憶體。
+在過去的 C++ 開發中，開發者必須親自負責釋放配置在堆積 ([Heap](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)) 上的記憶體。
 
 ```cpp
 void legacy_function() {
@@ -36,7 +36,7 @@ void legacy_function() {
 
 ### 2.1 零開銷原則
 
-`std::unique_ptr` 最大的魅力在於其效能。在未自訂刪除器 (Custom Deleter) 的預設狀態下，`std::unique_ptr` 的大小與原生指標 (Raw Pointer) 完全相同。它不具有任何不必要的成員變數，也沒有使用虛擬函式。透過編譯器最佳化，經由 `std::unique_ptr` 進行的存取將被展開成與原生指標同等的組合語言程式碼。
+`std::unique_ptr` 最大的魅力在於其效能。在未自訂刪除器 (Custom Deleter) 的預設狀態下，`std::unique_ptr` 的大小與原生指標 (Raw [Pointer](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)) 完全相同。它不具有任何不必要的成員變數，也沒有使用虛擬函式。透過編譯器最佳化，經由 `std::unique_ptr` 進行的存取將被展開成與原生指標同等的組合語言程式碼。
 
 ### 2.2 所有權的轉移與 `std::move`
 

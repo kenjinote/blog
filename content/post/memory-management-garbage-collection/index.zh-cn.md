@@ -8,11 +8,11 @@ categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]
 ---
 
-# 欢迎来到内存管理的真相：从 C、Java、[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 探索深渊
+# 欢迎来到内存管理的真相：从 C、[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)、[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 探索深渊
 
 在软件开发中，内存管理是无法回避的永恒主题，也是决定系统性能与稳定性的最重要因素之一。本文将通过堪比两万字的深度解析，从内存管理的基础理论到现代架构中的优化手法，进行全面涵盖。
 
-C 语言带来的 **手动管理** 的自由与责任，Java 普及的 **垃圾回收** （ GC ）所带来的安全自动化，以及 Rust 提出的 **所有权** （ Ownership ）这一编译时验证范式。通过对比和分析这三种截然不同的方法，我们将深入探讨编程语言如何应对内存这一有限资源，揭示其 **历史与进化** 的本质。
+C 语言带来的 **手动管理** 的自由与责任，[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 普及的 **垃圾回收** （ GC ）所带来的安全自动化，以及 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 提出的 **所有权** （ Ownership ）这一编译时验证范式。通过对比和分析这三种截然不同的方法，我们将深入探讨编程语言如何应对内存这一有限资源，揭示其 **历史与进化** 的本质。
 
 ---
 
@@ -25,8 +25,8 @@ C 语言带来的 **手动管理** 的自由与责任，Java 普及的 **垃圾�
 1. **代码段 (Text Segment)** ：存储编译后的机器语言指令（可执行代码）的区域。通常设置为只读，以防止被篡改。
 2. **数据段 (Data Segment)** ：分配已初始化的全局变量或静态（ static ）变量的区域。
 3. **BSS 段 (BSS Segment)** ：分配未初始化的全局变量或静态变量，并在执行开始时清零。
-4. **栈区 (Stack Segment)** ：存放局部变量和函数调用时的上下文（返回地址、参数等）的区域。
-5. **堆区 (Heap Segment)** ：在程序执行时用于动态分配内存的区域。
+4. **栈区 ([Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/) Segment)** ：存放局部变量和函数调用时的上下文（返回地址、参数等）的区域。
+5. **堆区 ([Heap](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/) Segment)** ：在程序执行时用于动态分配内存的区域。
 
 ### 1.1 栈内存的特性与局限性
 
@@ -109,7 +109,7 @@ int main() {
 在 C 语言中的内存管理很容易产生以下典型的 bug（内存漏洞）。
 
 1. **内存泄漏 (Memory Leak)** ：因为忘记调用 `free` ，导致未使用的内存一直没有被释放而残留的现象。如果发生在长时间运行的服务器等环境中，最终会耗尽系统的所有内存，并被 OOM（Out Of Memory）Killer 强制终止。
-2. **悬垂指针 (Dangling Pointer)** ：继续指向已被 `free` 释放的内存区域的指针。尝试通过该指针访问内存，会引发未定义行为（如段错误等）。
+2. **悬垂指针 (Dangling [Pointer](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/))** ：继续指向已被 `free` 释放的内存区域的指针。尝试通过该指针访问内存，会引发未定义行为（如段错误等）。
 3. **重复释放 (Double Free)** ：对同一个堆区域的指针调用两次 `free` 的错误。这会破坏分配器的内部结构（如堆的空闲链表等），成为安全漏洞。
 4. **缓冲区溢出 (Buffer Overflow)** ：将数据写入超出了所分配的内存区域的现象。通过覆盖相邻的重要数据或返回地址，会成为执行恶意代码攻击（如栈粉碎等）的突破口。
 
@@ -121,7 +121,7 @@ $ M(t) = \int_0^t (A(\tau) - F(\tau)) d\tau $
 
 ---
 
-## 3. Java：垃圾回收带来的革命
+## 3. [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)：垃圾回收带来的革命
 
 对于长期苦恼于 C/C++ 中频繁发生的内存 bug 的软件业界来说，Java 带来了一次重大的范式转变。Java 从程序员手中夺走了内存管理的复杂性，并将其委托给 Java 虚拟机（ JVM ）内置的 **垃圾回收** （ GC ）。开发者从而可以只专注于业务逻辑的编写和对象的创建。
 
@@ -162,7 +162,7 @@ graph TD
 
 在上图中，绿色的对象被标记为可达并受到保护。另一方面，由红色虚线表示的对象集合因为未被任何地方引用，所以在清除阶段其内存将被自动回收。
 
-### 3.2 Java 代码中内存的行为
+### 3.2 [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 代码中内存的行为
 
 在 Java 中，通过 `new` 关键字在堆上分配对象，但不存在相当于 C 语言中 `free` 的释放指令。
 
@@ -208,7 +208,7 @@ public class GcExample {
 
 ## 4. [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)：所有权和借用带来的第三条路
 
-C 语言“通过手动管理实现的极限性能”和 Java“通过自动管理实现的内存安全”。长期以来，人们认为这两者之间存在着权衡（Trade-off）关系。然而，Rust 语言通过引入 **“所有权（ Ownership ）”** 这一革命性的模型，实现了在消除垃圾回收的同时，在编译时百分之百保证内存安全这一壮举。
+C 语言“通过手动管理实现的极限性能”和 [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)“通过自动管理实现的内存安全”。长期以来，人们认为这两者之间存在着权衡（Trade-off）关系。然而，[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 语言通过引入 **“所有权（ Ownership ）”** 这一革命性的模型，实现了在消除垃圾回收的同时，在编译时百分之百保证内存安全这一壮举。
 
 ### 4.1 所有权（Ownership）的三原则
 
@@ -243,7 +243,7 @@ fn main() {
 
 如果在所有的操作中都转移所有权，那么编程将变得极其不便。为了能在不剥夺所有权的情况下访问数据，[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 引入了 **引用（ Reference ）** 和 **借用（ Borrowing ）** 的概念。
 
-此外，Rust 编译器内置的 **借用检查器（ Borrow Checker ）** ，会在编译时强制执行以下严格规则。
+此外，[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 编译器内置的 **借用检查器（ Borrow Checker ）** ，会在编译时强制执行以下严格规则。
 
 - 在任意给定的时间，你要么只能拥有 **一个可变引用（ `&mut T` ）** ，要么只能拥有 **任意数量的不可变引用（ `&T` ）** （两者不能同时共存。防止数据竞争）。
 - 引用的生命周期（有效期）不得超过原数据的生命周期（完全防止悬垂指针）。
@@ -296,14 +296,14 @@ stateDiagram-v2
 ### 5.1 不同语言的缓存效率差异
 
 - **C / C++ / [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)** : 当创建结构体数组（如 `struct Array[100]` 或 `Vec<MyStruct>` ）时，数据在内存中是没有间隙、连续排列的。在遍历数组时，CPU 的硬件预取器会完美发挥作用，缓存命中率将飞跃性地提升。
-- **Java** : Java 的对象数组（ `MyObject[]` ）并非实体，而是“指向对象的引用（指针）”的数组。由于作为实体的各个对象被分配在堆上零散的位置，因此在每次循环处理时都要顺着指针访问随机的内存地址，这会导致严重的连续缓存未命中（ Cache Miss ）。
+- **[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)** : Java 的对象数组（ `MyObject[]` ）并非实体，而是“指向对象的引用（指针）”的数组。由于作为实体的各个对象被分配在堆上零散的位置，因此在每次循环处理时都要顺着指针访问随机的内存地址，这会导致严重的连续缓存未命中（ Cache Miss ）。
 
 内存访问的有效平均时间 $ T_{avg} $ 可表示如下。
 
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 这里，$ h $ 是缓存命中率（ $ 0 \le h \le 1 $ ），$ T_{cache} $ 是缓存访问时间（约 1〜4 ns ），$ T_{memory} $ 是主内存访问时间（约 100 ns ）。
-是像 C/[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 那样将 $ h $ 提升到 0.99，还是像 Java 的指针追踪那样降到 0.5，这会让应用程序的循环执行速度产生数十倍的差距。这就是在游戏引擎或高频交易系统中选择 C++ 或 Rust 的真正原因。
+是像 C/[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 那样将 $ h $ 提升到 0.99，还是像 [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 的指针追踪那样降到 0.5，这会让应用程序的循环执行速度产生数十倍的差距。这就是在游戏引擎或高频交易系统中选择 C++ 或 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 的真正原因。
 
 ---
 
@@ -314,9 +314,9 @@ $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 | 语言 | 方法 | 优点 | 缺点・课题 |
 |:---:|:---|:---|:---|
 | **C** | 通过 `malloc/free` 手动管理 | 极致的速度，缓存效率最大化，轻量 | 漏洞的温床（泄漏、重复释放），开发成本高 |
-| **Java** | GC (垃圾回收) | 提升开发速度，确保内存安全 | STW 导致的延迟波动，缓存效率恶化 |
+| **[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)** | GC (垃圾回收) | 提升开发速度，确保内存安全 | STW 导致的延迟波动，缓存效率恶化 |
 | **[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)** | 所有权・借用检查器 | 零运行时成本的安全性，高速 | 学习曲线陡峭，生命周期设计困难 |
 
 **内存管理** 的历史，是在性能与安全之间摇摆的跷跷板游戏。为了防止手动管理带来的惨剧，诞生了 GC；为了避免 GC 带来的性能损耗，又发明了所有权模型。
 
-在设计系统时，并非做出“因为最快所以用 Rust”、“因为安全所以用 Java”这样短视的决定，而是要将系统的需求（对延迟的严格程度、开发资源、可维护性）与背后的内存管理 **真相** 相结合，从而选择最合适的技术，这才是通往一流工程师的道路。
+在设计系统时，并非做出“因为最快所以用 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)”、“因为安全所以用 [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)”这样短视的决定，而是要将系统的需求（对延迟的严格程度、开发资源、可维护性）与背后的内存管理 **真相** 相结合，从而选择最合适的技术，这才是通往一流工程师的道路。

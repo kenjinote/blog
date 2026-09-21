@@ -79,7 +79,7 @@ Le choix du matériel est primordial pour la génération d'images par IA en loc
 ### 3.1 GPU (Carte graphique)
 C'est le cœur du traitement de l'IA. Pour exécuter Stable Diffusion dans un environnement Windows, les GPU NVIDIA sont le standard de facto. Bien qu'il soit possible d'utiliser les cartes Radeon d'AMD via ROCm, compte tenu de la difficulté de configuration sur Windows et du fait que de nombreuses extensions dépendent de CUDA (l'architecture de calcul parallèle de NVIDIA), on peut affirmer sans exagérer que NVIDIA est le seul choix viable.
 
-*   **Exigences minimales** : VRAM 6 Go (GTX 1060 6 Go / RTX 2060, etc.). ※Cependant, il y aura d'importantes restrictions de résolution et de fonctionnalités.
+*   **Exigences minimales** : VRAM 6 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) (GTX 1060 6 Go / RTX 2060, etc.). ※Cependant, il y aura d'importantes restrictions de résolution et de fonctionnalités.
 *   **Exigences recommandées** : VRAM 12 Go (RTX 3060 12 Go / RTX 4070, etc.). C'est la limite minimale pour faire fonctionner confortablement les modèles SDXL.
 *   **Exigences idéales** : VRAM 16 Go à 24 Go (RTX 4080 / RTX 3090 / RTX 4090). Nécessaire pour la génération en haute résolution, l'utilisation simultanée de ControlNet complexes ou l'apprentissage de modèles locaux (LoRA, etc.).
 
@@ -212,8 +212,8 @@ La majeure partie des calculs de Stable Diffusion est consacrée au Cross-Attent
 *   **SDP Attention (`--opt-sdp-attention`)** : Scaled Dot Product Attention, inclus par défaut depuis PyTorch 2.0. Il offre les mêmes avantages en matière de vitesse et d'économie de VRAM que xFormers, tout en ayant moins de dépendances. Il existe également des variantes sans non-déterminisme telles que `--opt-sub-quad-attention`.
 
 ### 7.2 Options de lancement pour économiser la VRAM
-*   `--medvram` : Pour les environnements avec 6 Go à 8 Go de VRAM. Divise le traitement de U-Net pour économiser de la mémoire, mais la vitesse diminue légèrement.
-*   `--lowvram` : Pour les environnements avec 4 Go de VRAM ou moins. Déplace constamment les modules dans et hors de la VRAM, ce qui réduit considérablement la vitesse mais permet de forcer l'exécution.
+*   `--medvram` : Pour les environnements avec 6 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) à 8 Go de VRAM. Divise le traitement de U-Net pour économiser de la mémoire, mais la vitesse diminue légèrement.
+*   `--lowvram` : Pour les environnements avec 4 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de VRAM ou moins. Déplace constamment les modules dans et hors de la VRAM, ce qui réduit considérablement la vitesse mais permet de forcer l'exécution.
 *   `--medvram-sdxl` : Un indicateur (flag) très utile qui n'applique MedVRAM que lors de l'utilisation des modèles SDXL.
 
 ### 7.3 Accélération extrême avec TensorRT
@@ -255,7 +255,7 @@ Erreurs fréquentes et solutions lors de la configuration et de l'utilisation d'
 3. Le calcul en FP16 peut ne pas être adapté au modèle utilisé (en particulier la série SD 2.1), essayez donc le mode pleine précision.
 
 ### Q3. Des erreurs Python ou Git se produisent au lancement de `webui-user.bat`.
-**R3 :** Il y a probablement une incohérence dans les bibliothèques de dépendances. Supprimez complètement le dossier `venv` situé dans le répertoire de WebUI, puis exécutez à nouveau `webui-user.bat`. L'environnement virtuel sera reconstruit proprement (un re-téléchargement de plusieurs Go sera nécessaire).
+**R3 :** Il y a probablement une incohérence dans les bibliothèques de dépendances. Supprimez complètement le dossier `venv` situé dans le répertoire de WebUI, puis exécutez à nouveau `webui-user.bat`. L'environnement virtuel sera reconstruit proprement (un re-téléchargement de plusieurs [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) sera nécessaire).
 
 ### Q4. J'ai téléchargé un modèle (Safetensors) mais il n'apparaît pas dans la liste.
 **R4 :** Vérifiez qu'il est bien placé dans le dossier `models/Stable-diffusion`, puis appuyez sur le bouton « Actualiser » à côté de la liste déroulante de sélection des Checkpoints dans l'interface. Si vous l'avez placé dans un sous-dossier, vérifiez que l'extension du fichier est correcte.
@@ -264,7 +264,7 @@ Erreurs fréquentes et solutions lors de la configuration et de l'utilisation d'
 
 ## 10. En conclusion : L'avenir de la génération d'images par IA et la supériorité des environnements locaux
 
-Le mouvement de la génération d'images par IA open source, qui a commencé avec Stable Diffusion, continue d'évoluer vers des architectures de nouvelle génération telles que SDXL, puis Stable Diffusion 3 et [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/).1. Le nombre de paramètres des modèles est devenu gigantesque, passant de quelques milliards à plusieurs dizaines de milliards, ce qui nécessitera de plus en plus des environnements GPU avec 24 Go de VRAM ou plus à l'avenir.
+Le mouvement de la génération d'images par IA open source, qui a commencé avec Stable Diffusion, continue d'évoluer vers des architectures de nouvelle génération telles que SDXL, puis Stable Diffusion 3 et [Flux](https://kenji.blog/fr/p/state-management-history-redux-context-recoil-zustand/).1. Le nombre de paramètres des modèles est devenu gigantesque, passant de quelques milliards à plusieurs dizaines de milliards, ce qui nécessitera de plus en plus des environnements GPU avec 24 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de VRAM ou plus à l'avenir.
 
 Cependant, les technologies d'optimisation locales telles que TensorRT, les techniques de quantification (Quantization) et GGUF évoluent tout aussi rapidement, créant un écosystème où une inférence adéquate sera possible même sur du matériel grand public standard.
 

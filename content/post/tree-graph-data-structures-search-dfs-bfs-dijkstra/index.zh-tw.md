@@ -217,7 +217,7 @@ graph TD
 作為樹狀結構中搜尋的基礎，有深度優先搜尋（DFS）與廣度優先搜尋（BFS）。
 
 ## 2. 深度優先搜尋（DFS: Depth-First Search）
-深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（Stack）的資料結構。
+深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（[Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）的資料結構。
 
 ### 樹狀結構中 DFS 的 Python 實作範例
 
@@ -246,7 +246,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度優先搜尋（DFS: Depth-First Search）
-深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（Stack）的資料結構。
+深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（[Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）的資料結構。
 
 ### 樹狀結構中 DFS 的 Python 實作範例
 
@@ -275,7 +275,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度優先搜尋（DFS: Depth-First Search）
-深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（Stack）的資料結構。
+深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（[Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）的資料結構。
 
 ### 樹狀結構中 DFS 的 Python 實作範例
 
@@ -304,7 +304,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度優先搜尋（DFS: Depth-First Search）
-深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（Stack）的資料結構。
+深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（[Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）的資料結構。
 
 ### 樹狀結構中 DFS 的 Python 實作範例
 
@@ -333,7 +333,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度優先搜尋（DFS: Depth-First Search）
-深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（Stack）的資料結構。
+深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（[Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）的資料結構。
 
 ### 樹狀結構中 DFS 的 Python 實作範例
 
@@ -362,7 +362,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度優先搜尋（DFS: Depth-First Search）
-深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（Stack）的資料結構。
+深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（[Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）的資料結構。
 
 ### 樹狀結構中 DFS 的 Python 實作範例
 
@@ -391,7 +391,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度優先搜尋（DFS: Depth-First Search）
-深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（Stack）的資料結構。
+深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（[Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）的資料結構。
 
 ### 樹狀結構中 DFS 的 Python 實作範例
 
@@ -420,7 +420,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度優先搜尋（DFS: Depth-First Search）
-深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（Stack）的資料結構。
+深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（[Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）的資料結構。
 
 ### 樹狀結構中 DFS 的 Python 實作範例
 
@@ -449,7 +449,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度優先搜尋（DFS: Depth-First Search）
-深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（Stack）的資料結構。
+深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（[Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）的資料結構。
 
 ### 樹狀結構中 DFS 的 Python 實作範例
 
@@ -478,7 +478,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度優先搜尋（DFS: Depth-First Search）
-深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（Stack）的資料結構。
+深度優先搜尋是從某個節點出發，盡可能深地前進，當到達死胡同時，則返回前一個節點繼續進行搜尋的演算法。藉由使用遞迴函式，可以非常簡單地進行實作。有時也會利用稱為堆疊（[Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）的資料結構。
 
 ### 樹狀結構中 DFS 的 Python 實作範例
 

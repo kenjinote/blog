@@ -142,8 +142,8 @@ def dijkstra(graph, start):
 
 ### 3.4 計算量について
 
-優先度付きキューとして二分ヒープ (Binary Heap) を用いた場合、各頂点はキューから1回取り出され、各辺は1回緩和されます。
-したがって、[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は $ O((|V| + |E|) \log |V|) $ となります。フィボナッチヒープを用いれば $ O(|E| + |V| \log |V|) $ まで理論上改善されますが、実用上は二分ヒープが多く用いられます。
+優先度付きキューとして二分[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/) (Binary [Heap](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)) を用いた場合、各頂点はキューから1回取り出され、各辺は1回緩和されます。
+したがって、[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は $ O((|V| + |E|) \log |V|) $ となります。フィボナッチ[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を用いれば $ O(|E| + |V| \log |V|) $ まで理論上改善されますが、実用上は二分ヒープが多く用いられます。
 
 ---
 

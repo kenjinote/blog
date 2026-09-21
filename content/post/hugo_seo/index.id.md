@@ -10,7 +10,7 @@ tags: ["SEO", "Frontmatter", "Open Graph", "JSON-LD"]
 description: 'Panduan lengkap untuk menguasai strategi SEO Hugo. Dari metadata, OGP, hingga data terstruktur JSON-LD, kami menjelaskan secara menyeluruh pengaturan frontmatter dan penyesuaian head.html yang secara dramatis akan meningkatkan lalu lintas Anda.'
 ---
 
-Hugo adalah salah satu generator situs statis (SSG) tercepat di dunia, ditulis dalam bahasa Go. Karena kecepatan build yang luar biasa dan sistem template yang fleksibel, Hugo sangat didukung oleh banyak insinyur dan blogger. Namun, hanya karena sebuah situs dibangun dan ditampilkan dengan cepat bukan berarti situs tersebut akan dinilai tinggi oleh mesin pencari (seperti Google atau Bing) dan menjangkau pengguna.
+Hugo adalah salah satu generator situs statis (SSG) tercepat di dunia, ditulis dalam bahasa [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/). Karena kecepatan build yang luar biasa dan sistem template yang fleksibel, Hugo sangat didukung oleh banyak insinyur dan blogger. Namun, hanya karena sebuah situs dibangun dan ditampilkan dengan cepat bukan berarti situs tersebut akan dinilai tinggi oleh mesin pencari (seperti Google atau Bing) dan menjangkau pengguna.
 
 Untuk meningkatkan peringkat pencarian, meningkatkan penyebaran di media sosial, dan pada akhirnya secara dramatis meningkatkan lalu lintas ke blog Anda, optimasi mesin pencari (SEO) yang cermat sangatlah penting. Inti dari strategi SEO di Hugo adalah kolaborasi antara **frontmatter** (yang ditulis di awal setiap artikel markdown) dan **template** ([Layout](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/)s) yang menafsirkannya dan menyebarkan metadata di dalam tag `<head>` HTML.
 

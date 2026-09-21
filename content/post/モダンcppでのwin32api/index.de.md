@@ -13,7 +13,7 @@ tags: ["C++", "Win32", "Windows API", "RAII"]
 
 Die **Windows API (allgemein bekannt als Win32 API)**, die die Grundlage des Windows-Betriebssystems bildet, ist eine riesige C-Sprachschnittstelle, die seit den Tagen von Windows NT und Windows 95 in den 1990er Jahren weitergegeben wurde. Auch heute noch müssen Sie beim Entwickeln nativer Anwendungen für Windows letztendlich diese Win32 API aufrufen, um auf die Kernfunktionen des Betriebssystems (Prozessverwaltung, Datei-I/O, Thread-Synchronisation, Fenstersteuerung usw.) zuzugreifen.
 
-Die Win32 API wurde jedoch für reines C entwickelt und geht nicht von den fortschrittlichen Sprachfunktionen aus, die **modernes C++ (Modern C++)** bietet (Ausnahmebehandlung, automatische Ressourcenverwaltung durch RAII, Move-Semantik, typsichere Aufzählungen, Smart Pointer usw.). Wenn man folglich die reine Win32 API so wie sie ist in C++-Code mischt, treten folgende Probleme auf:
+Die Win32 API wurde jedoch für reines C entwickelt und geht nicht von den fortschrittlichen Sprachfunktionen aus, die **modernes C++ (Modern C++)** bietet (Ausnahmebehandlung, automatische Ressourcenverwaltung durch RAII, Move-Semantik, typsichere Aufzählungen, Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) usw.). Wenn man folglich die reine Win32 API so wie sie ist in C++-Code mischt, treten folgende Probleme auf:
 
 *   **Manuelle Ressourcenverwaltung:** Ein mit `CreateFile` oder `CreateEvent` erhaltenes `HANDLE` muss zwingend mit `CloseHandle` freigegeben werden.
 *   **Mangelnde Ausnahmesicherheit:** Wenn eine C++-Ausnahme ausgelöst wird, kommt es leicht zu Ressourcenlecks, falls der Code für den ordnungsgemäßen Aufruf von `CloseHandle` nicht vorhanden ist.
@@ -109,7 +109,7 @@ RAII ist ein Konzept, das von Bjarne Stroustrup, dem Schöpfer von C++, vorgesch
 1.  Die Ressourcenbeschaffung (Acquisition) wird im **Konstruktor (Initialization)** des Objekts durchgeführt.
 2.  Die Ressourcenfreigabe wird im **Destruktor** des Objekts durchgeführt.
 
-Durch die Sprachspezifikation von C++ wird der Destruktor des auf dem Stack allozierten Objekts **zuverlässig und automatisch** aufgerufen, wenn der Gültigkeitsbereich (Scope) verlassen wird (sei es durch ein normales `return` oder während des Stack-Unwindings aufgrund einer Ausnahme).
+Durch die Sprachspezifikation von C++ wird der Destruktor des auf dem [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) allozierten Objekts **zuverlässig und automatisch** aufgerufen, wenn der Gültigkeitsbereich (Scope) verlassen wird (sei es durch ein normales `return` oder während des [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Unwindings aufgrund einer Ausnahme).
 
 Dies erlaubt es, die menschliche Fehlerwahrscheinlichkeit $p$ in der obigen Formel mathematisch auf **$0$** zu reduzieren.
 
@@ -336,7 +336,7 @@ Auf diese Weise eignet sich RAII hervorragend für die Verwaltung von Ressourcen
 
 ## 8. Modernisierung von Objekten zur Thread-Synchronisation
 
-In Win32 gibt es Thread-Synchronisationsprimitive wie `CRITICAL_SECTION` oder `SRWLOCK`. Das manuelle Aufrufen von `EnterCriticalSection` / `LeaveCriticalSection` ist aus Sicht der Ausnahmesicherheit ein No-Go.
+In Win32 gibt es Thread-Synchronisationsprimitive wie `CRITICAL_SECTION` oder `SRWLOCK`. Das manuelle Aufrufen von `EnterCriticalSection` / `LeaveCriticalSection` ist aus Sicht der Ausnahmesicherheit ein No-[Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/).
 
 Obwohl `std::mutex` und `std::lock_guard` aus C++11 sehr nützlich sind, gibt es Situationen, in denen man direkt die schnellen nativen Sperrmechanismen des Betriebssystems verwenden möchte (insbesondere SRWLock ist sehr ressourcenschonend).
 Der standardmäßige `std::lock_guard` ist so konzipiert, dass er jeden Typ akzeptiert (ähnlich dem Duck-Typing bei Templates), der die Elementfunktionen `lock()` und `unlock()` besitzt. Dies machen wir uns zunutze.
@@ -518,7 +518,7 @@ Die Anwendungslogik sollte niemals die reine Win32 API (Ebene E) direkt berühre
 
 ## 14. Leistungsanalyse der Zero-Cost-Abstraktion
 
-Einige fragen sich vielleicht: "Wird die Ausführung nicht langsamer als bei rohen C-APIs, wenn man RAII-Wrapper oder Smart Pointer verwendet?"
+Einige fragen sich vielleicht: "Wird die Ausführung nicht langsamer als bei rohen C-APIs, wenn man RAII-Wrapper oder Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) verwendet?"
 Betrachten wir hier das mathematische Modell der Leistungskosten.
 
 Die Ausführungszeit $T_{\text{total}}$ kann wie folgt zerlegt werden:

@@ -25,8 +25,8 @@ Untuk memahami bagaimana Git mengintegrasikan riwayat, pertama-tama kita perlu m
 
 Setiap komit Git diidentifikasi secara unik dengan 40 digit heksadesimal yang dihasilkan oleh fungsi hash SHA-1 (Secure Hash Algorithm 1) berdasarkan isinya. Objek komit terdiri dari elemen-elemen berikut:
 
-1. **Pointer ke objek [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**: Cuplikan struktur direktori dan file (Blob) pada saat itu.
-2. **Pointer ke komit induk (parent)**: Nilai hash dari satu atau lebih komit induk (komit pertama tidak memiliki induk, sedangkan komit merge memiliki dua induk atau lebih).
+1. **[Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) ke objek [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**: Cuplikan struktur direktori dan file (Blob) pada saat itu.
+2. **[Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) ke komit induk (parent)**: Nilai hash dari satu atau lebih komit induk (komit pertama tidak memiliki induk, sedangkan komit merge memiliki dua induk atau lebih).
 3. **Informasi pembuat (Author)**: Orang yang menulis kode beserta tanggal dan waktunya.
 4. **Informasi committer (Committer)**: Orang yang membuat/menerapkan komit beserta tanggal dan waktunya.
 5. **Pesan komit**: Teks yang menjelaskan maksud perubahan.

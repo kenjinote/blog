@@ -87,7 +87,7 @@ extern "C" {
 
 C++とPowerShell（.NET）間でデータをやり取りする際、最も注意すべきは **文字列のエンコーディング** と **[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)** です。
 
-- **`LPCWSTR` / `LPWSTR`**: C/C++のワイド文字列ポインタ（UTF-16LE）。Windows APIの `W` 系関数で標準的に使用されます。P/Invokeでは `CharSet = CharSet.Unicode` を指定することで、.NETの `String` や `StringBuilder` と自動的にマーシャリングされます。
+- **`LPCWSTR` / `LPWSTR`**: C/C++のワイド文字列[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（UTF-16LE）。Windows APIの `W` 系関数で標準的に使用されます。P/Invokeでは `CharSet = CharSet.Unicode` を指定することで、.NETの `String` や `StringBuilder` と自動的にマーシャリングされます。
 - **`BSTR`**: COM (Component Object Model) で使用される長さプレフィックス付きのワイド文字列。`SysAllocString` や `SysFreeString` でメモリを管理する必要があります。P/Invokeで `[MarshalAs(UnmanagedType.BStr)]` を指定します。
 
 C++側で新しくメモリを割り当ててPowerShell側に返す場合、誰がメモリを解放するのか（所有権）が問題になります。上記の `ProcessSystemString` 関数では、「呼び出し元（PowerShell）が事前に割り当てたバッファ（`outputBuffer`）にC++が結果を書き込む」という、Win32 APIの標準的なパターンを採用しています。これによりメモリリークを防ぐことができます。
@@ -279,7 +279,7 @@ PowerShellで `Get-Content` を使用し、正規表現を用いて1行ずつパ
 
 $$ G \propto \sum_{i=1}^{N} A_i $$
 
-C++のネイティブコードへ処理を移管した場合、メモリマッピング（`CreateFileMapping`, `MapViewOfFile`）を使用してファイル全体を直接メモリに展開し、ポインタ演算によってゼロコピー（Zero-copy）で文字列探索を行うことができます。この場合、オブジェクト生成に伴うオーバーヘッドは事実上ゼロとなり、理論上のメモリ帯域幅の上限に近い速度でパースが完了します。
+C++のネイティブコードへ処理を移管した場合、メモリマッピング（`CreateFileMapping`, `MapViewOfFile`）を使用してファイル全体を直接メモリに展開し、[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)演算によってゼロコピー（Zero-copy）で文字列探索を行うことができます。この場合、オブジェクト生成に伴うオーバーヘッドは事実上ゼロとなり、理論上のメモリ帯域幅の上限に近い速度でパースが完了します。
 
 パースした結果（例: 不正アクセスのIPアドレスリストなど）のみをPowerShell側に返すことで、P/Invokeのマーシャリング・コストも最小限に抑えることができます。
 
@@ -301,8 +301,8 @@ WMI（Windows Management Instrumentation）やCIM（Common Information Model）�
 
 連携において最も多く発生するバグは、 **メモリリーク** と **アクセス違反（Access Violation: 0xC0000005）** です。
 
-1. **ポインタの有効期間**: PowerShell側で `[ref]` や `StringBuilder` を渡す場合、P/Invokeは呼び出し中のみそのメモリを固定（Pin）します。C++側でそのポインタをグローバル変数に保存し、後からアクセスしてはいけません。非同期コールバックを行う場合は、`GCHandle` を用いて明示的にメモリを固定する必要があります。
-2. **64bit環境のポインタサイズ**: 現代のWindowsは64bit（x64）が基本です。C++側でのポインタサイズは8バイト、PowerShell（.NET）側では `IntPtr` を使用する必要があります。C++の `long` はWindowsでは4バイトであるため、ポインタを `long` にキャストして渡すような古いコードはクラッシュの原因となります。
+1. **[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の有効期間**: PowerShell側で `[ref]` や `StringBuilder` を渡す場合、P/Invokeは呼び出し中のみそのメモリを固定（Pin）します。C++側でその[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)をグローバル変数に保存し、後からアクセスしてはいけません。非同期コールバックを行う場合は、`GCHandle` を用いて明示的にメモリを固定する必要があります。
+2. **64bit環境の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)サイズ**: 現代のWindowsは64bit（x64）が基本です。C++側でのポインタサイズは8バイト、PowerShell（.NET）側では `IntPtr` を使用する必要があります。C++の `long` はWindowsでは4バイトであるため、[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を `long` にキャストして渡すような古いコードはクラッシュの原因となります。
 3. **文字列エンコーディングの不一致**: PowerShellは内部的にUTF-16を使用します。C++側でANSI文字列（`std::string`, `char*`）として受け取ろうとすると文字化けが発生します。必ずワイド文字列（`std::wstring`, `wchar_t*`）を使用し、P/Invoke側でも `CharSet = CharSet.Unicode` を指定してください。
 
 ## まとめ

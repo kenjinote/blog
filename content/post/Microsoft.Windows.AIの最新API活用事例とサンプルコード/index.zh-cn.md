@@ -14,7 +14,7 @@ description: '这是一份包含C#与C++实战代码示例的详细指南，全�
 
 ## 1. 引言：AI原生融入Windows的新时代
 
-近年来，AI技术的发展日新月异，正从基于云端的大型语言模型（LLM）应用，快速向边缘设备（本地PC）上的AI推演发生范式转变。在这一过程中起核心作用的，正是Microsoft为Windows 11提供的“Windows Copilot Runtime”以及用于操作它的“Microsoft.Windows.AI”API。
+近年来，AI技术的发展日新月异，正从基于云端的大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）应用，快速向边缘设备（本地PC）上的AI推演发生范式转变。在这一过程中起核心作用的，正是Microsoft为Windows 11提供的“Windows Copilot Runtime”以及用于操作它的“Microsoft.Windows.AI”API。
 
 利用云端API（如OpenAI或Azure OpenAI等）开发应用程序虽然容易，但始终伴随着延迟、隐私以及持续性成本等问题。另一方面，通过在本地运行AI模型，数据无需离开设备即可确保机密性，并能实现离线可用的超低延迟应用。
 
@@ -62,7 +62,7 @@ P_{\text{peak}} = 1.5 \times 10^9 \times 4 \times 4096 \times 2 \approx 49.15 \t
 $$
 这就从数学上证明了其性能足以满足Windows 11对于Copilot+ PC的40 TOPS的要求。
 
-此外，AI模型尤其是LLM的推理（解码阶段）往往会受限于 **内存带宽（Memory-Bound）** 。系统内存的理论带宽 $BW$ 计算如下。
+此外，AI模型尤其是[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的推理（解码阶段）往往会受限于 **内存带宽（Memory-Bound）** 。系统内存的理论带宽 $BW$ 计算如下。
 
 $$
 BW = f_{\text{mem}} \times W_{\text{bus}} \times \frac{2}{8}
@@ -306,7 +306,7 @@ int main() {
 ### 7.1 模型量化 (Quantization) 与 Olive Toolkit
 要发挥NPU的真正实力，将AI模型的权重和激活从FP32（单精度浮点数） **量化（Quantize）** 为INT8或INT4是绝对前提。NPU的架构专为整数运算优化，与FP32相比，INT8理论上能实现4倍的吞吐量，并大幅节省功耗。
 
-使用Microsoft提供的 `Olive (ONNX Live)` 工具链，可以将PyTorch等模型针对Windows环境进行自动优化。Olive强力支持对Transformer模型的特殊注意力优化以及针对不同硬件的图编译。
+使用Microsoft提供的 `Olive (ONNX Live)` 工具链，可以将PyTorch等模型针对Windows环境进行自动优化。Olive强力支持对[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)模型的特殊注意力优化以及针对不同硬件的图编译。
 
 ### 7.2 批处理 vs 交互式流的权衡
 在API调用中，将多个推理请求汇总进行批处理，可以提高NPU的利用率（Compute Utilization）。然而，在聊天机器人等交互式UI中，影响用户体验（UX）的决定性因素往往不是吞吐量，而是显示第一个token所需的时间（TTFT: Time To First Token）。

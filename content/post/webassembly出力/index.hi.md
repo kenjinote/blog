@@ -17,9 +17,9 @@ tags: ["C++", "Rust", "Wasm", "JavaScript"]
 
 ## 2. [WebAssembly](https://kenji.blog/hi/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/hi/p/webassembly-wasm-current-future/)) का अवलोकन और आर्किटेक्चर
 
-WebAssembly एक स्टैक-आधारित वर्चुअल मशीन के लिए बाइनरी निर्देश प्रारूप है। इसे C/C++, [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/), Go और Zig जैसी भाषाओं से संकलित किए जा सकने वाले "पोर्टेबल कंपाइलेशन टारगेट" के रूप में डिज़ाइन किया गया है, और इसका उद्देश्य वेब ब्राउज़र पर नेटिव के करीब गति से निष्पादित करना है।
+WebAssembly एक स्टैक-आधारित वर्चुअल मशीन के लिए बाइनरी निर्देश प्रारूप है। इसे C/C++, [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/), [Go](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) और Zig जैसी भाषाओं से संकलित किए जा सकने वाले "पोर्टेबल कंपाइलेशन टारगेट" के रूप में डिज़ाइन किया गया है, और इसका उद्देश्य वेब ब्राउज़र पर नेटिव के करीब गति से निष्पादित करना है।
 
-नीचे दिया गया आरेख C++ और Rust से WebAssembly उत्पन्न होने और ब्राउज़र के भीतर निष्पादित होने तक के सामान्य टूलचेन प्रवाह को दर्शाता है।
+नीचे दिया गया आरेख C++ और [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) से WebAssembly उत्पन्न होने और ब्राउज़र के भीतर निष्पादित होने तक के सामान्य टूलचेन प्रवाह को दर्शाता है।
 
 ```mermaid
 graph TD
@@ -139,7 +139,7 @@ Module.onRuntimeInitialized = () => {
 
 ## 5. [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) और `wasm-pack` के साथ दृष्टिकोण
 
-[Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) [WebAssembly](https://kenji.blog/hi/p/webassembly-wasm-current-future/) के लिए प्रथम श्रेणी का समर्थन प्रदान करता है, और `wasm-bindgen` और `wasm-pack` टूल का उपयोग करके, JavaScript और [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) के बीच उन्नत एकीकरण संभव है। जबकि Emscripten "ब्राउज़र में C/C++ का विशाल रनटाइम लाने" का दृष्टिकोण अपनाता है, Rust का `wasm-pack` "केवल न्यूनतम आवश्यक बाइंडिंग (JS ग्लू कोड) उत्पन्न करने" का दृष्टिकोण अपनाता है।
+[Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) [WebAssembly](https://kenji.blog/hi/p/webassembly-wasm-current-future/) के लिए प्रथम श्रेणी का समर्थन प्रदान करता है, और `wasm-bindgen` और `wasm-pack` टूल का उपयोग करके, JavaScript और [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) के बीच उन्नत एकीकरण संभव है। जबकि Emscripten "ब्राउज़र में C/C++ का विशाल रनटाइम लाने" का दृष्टिकोण अपनाता है, [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) का `wasm-pack` "केवल न्यूनतम आवश्यक बाइंडिंग (JS ग्लू कोड) उत्पन्न करने" का दृष्टिकोण अपनाता है।
 
 ### [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) कार्यान्वयन कोड
 
@@ -247,7 +247,7 @@ sequenceDiagram
 4. गणना के बाद, JS साइड पर पॉइंटर से परिणाम पढ़ें, और अंत में `Module._free` को कॉल करें।
 
 **wasm-bindgen ([Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/)) के मामले में**:
-यह उपर्युक्त बोझिल मेमोरी प्रबंधन प्रवाह को स्वचालित रूप से उत्पन्न ग्लू कोड (JS रैपर) के भीतर पूरी तरह से छुपा देता है। जब आप JS साइड से Rust फ़ंक्शन को एक साधारण `String` या `Array` पास करते हैं, तो पृष्ठभूमि में कार्यों की एक श्रृंखला स्वचालित रूप से की जाती है: बफर आवंटन (`malloc` के बराबर), प्रतिलिपि बनाना, पॉइंटर पास करना और मेमोरी को मुक्त करना।
+यह उपर्युक्त बोझिल मेमोरी प्रबंधन प्रवाह को स्वचालित रूप से उत्पन्न ग्लू कोड (JS रैपर) के भीतर पूरी तरह से छुपा देता है। जब आप JS साइड से [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) फ़ंक्शन को एक साधारण `String` या `Array` पास करते हैं, तो पृष्ठभूमि में कार्यों की एक श्रृंखला स्वचालित रूप से की जाती है: बफर आवंटन (`malloc` के बराबर), प्रतिलिपि बनाना, पॉइंटर पास करना और मेमोरी को मुक्त करना।
 
 ## 7. प्रदर्शन ओवरहेड और अनुकूलन
 
@@ -287,9 +287,9 @@ graph TD
 
 ब्राउज़र के [Wasm](https://kenji.blog/hi/p/webassembly-wasm-current-future/) इंजन इन अनुभागों को स्ट्रीमिंग संकलन (डाउनलोड करते समय समानांतर में मशीन कोड में संकलित) करके स्टार्टअप में नाटकीय रूप से तेजी लाते हैं।
 
-## 9. C++ बनाम Rust: आपको किसे चुनना चाहिए?
+## 9. C++ बनाम [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/): आपको किसे चुनना चाहिए?
 
-[WebAssembly](https://kenji.blog/hi/p/webassembly-wasm-current-future/) बनाने के लिए C++ या Rust में से किसे चुनना है, यह काफी हद तक आपके प्रोजेक्ट की आवश्यकताओं और मौजूदा संपत्तियों (assets) पर निर्भर करता है।
+[WebAssembly](https://kenji.blog/hi/p/webassembly-wasm-current-future/) बनाने के लिए C++ या [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) में से किसे चुनना है, यह काफी हद तक आपके प्रोजेक्ट की आवश्यकताओं और मौजूदा संपत्तियों (assets) पर निर्भर करता है।
 
 **C++ / Emscripten कब चुनें**:
 * जब आप मौजूदा C/C++ लाइब्रेरी (FFmpeg, OpenCV, SQLite, आदि) को ब्राउज़र में पोर्ट करना चाहते हैं।

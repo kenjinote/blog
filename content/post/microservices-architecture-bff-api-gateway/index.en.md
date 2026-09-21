@@ -32,7 +32,7 @@ However, as the system grows and the scale of features and development teams exp
 *   **Bloated and Complex Codebase**: With repeated feature additions, the codebase becomes massive, making it difficult to grasp the whole picture. The risk of one change unexpectedly affecting other features (regression bugs) increases.
 *   **Lack of Deployment Flexibility**: Even for a small fix, the entire application needs to be rebuilt and redeployed. This lengthens the deployment lead time and reduces agility.
 *   **Scalability Constraints**: Even if only a specific feature (for example, image processing) consumes a large amount of resources, the only way is to scale out the entire application, which deteriorates resource utilization efficiency.
-*   **Technology Stack [Lock](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)-in**: Because it is a single codebase, it is difficult to partially introduce new languages or frameworks, making it easy to be tied down to older technologies.
+*   **Technology [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) [Lock](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)-in**: Because it is a single codebase, it is difficult to partially introduce new languages or frameworks, making it easy to be tied down to older technologies.
 
 To overcome these challenges, many companies consider migrating to a **microservices architecture**.
 

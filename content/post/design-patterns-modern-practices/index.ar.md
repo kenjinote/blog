@@ -36,7 +36,7 @@ tags:
 
 نمط `Strategy` هو نمط يحدد عائلة من الخوارزميات، ويغلف كل منها لجعلها قابلة للتبديل.
 
-**نهج GoF التقليدي (على طريقة Java)**
+**نهج GoF التقليدي (على طريقة [Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/))**
 
 ```java
 // تعريف الواجهة
@@ -135,7 +135,7 @@ coroutineScope.launch {
 
 في العصر الحديث، يتم حل هذه المشكلة بشكل جميل باستخدام لغات تتميز بـ **أنواع البيانات الجبرية (ADT)** و **مطابقة الأنماط** (مثل [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) و Kotlin و Swift و Scala).
 
-**النهج الحديث (أنواع التعداد ومطابقة الأنماط في Rust)**
+**النهج الحديث (أنواع التعداد ومطابقة الأنماط في [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/))**
 
 ```rust
 // أنواع البيانات الجبرية (Enum مع متغيرات)
@@ -169,13 +169,13 @@ graph TD
     E["الخدمة B"] -->|"تعتمد على"| B
 ```
 
-نظراً لأن حاويات DI مثل Spring Framework (Java) و NestJS (TypeScript) و Dagger/Hilt (Android) تدير إنشاء وتدمير المثيلات، فلا يجب عليك كتابة منطق Singleton (مثل `getInstance()` أو `private constructor`) في الفئة نفسها.
+نظراً لأن حاويات DI مثل Spring Framework ([Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)) و NestJS (TypeScript) و Dagger/Hilt (Android) تدير إنشاء وتدمير المثيلات، فلا يجب عليك كتابة منطق Singleton (مثل `getInstance()` أو `private constructor`) في الفئة نفسها.
 
 ## 4. أنماط التصميم في البرمجة الوظيفية
 
 في عالم البرمجة الوظيفية، توجد "أنماط" ببعد مختلف عن GoF. هذه مدعومة بنظرية الفئات الرياضية (Category Theory).
 
-### 4.1. التحكم في الآثار الجانبية باستخدام Monad (الموناد)
+### 4.1. التحكم في الآثار الجانبية باستخدام [Monad](https://kenji.blog/ar/p/functional-programming-concepts-pure-functions-monads/) (الموناد)
 
 بينما تفترض أنماط GoF "تغيير الحالة (Mutation)"، يقوم النهج الوظيفي بحصر الآثار الجانبية (مثل الاستثناءات، والمعالجة غير المتزامنة، واحتمالية وجود Null) داخل نظام الأنواع.
 

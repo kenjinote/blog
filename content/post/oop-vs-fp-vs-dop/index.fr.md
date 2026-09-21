@@ -16,7 +16,7 @@ Dans cet article, nous approfondirons les philosophies, les forces et les **limi
 
 ## 1. L'essor et la chute de la programmation orientée objet (POO)
 
-La **programmation orientée objet** (POO) a régné en maître absolu du développement de logiciels des années 1990 aux années 2010. Des langages comme Java, C++ et C# ont conduit ce paradigme, et l'approche intuitive de modélisation du monde réel a été acceptée.
+La **programmation orientée objet** (POO) a régné en maître absolu du développement de logiciels des années 1990 aux années 2010. Des langages comme [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), C++ et C# ont conduit ce paradigme, et l'approche intuitive de modélisation du monde réel a été acceptée.
 
 ### 1.1 Concepts fondamentaux de la POO
 
@@ -200,9 +200,9 @@ Chaque paradigme a ses propres forces et faiblesses claires.
 
 ## 5. La solution optimale moderne : La « fusion » des paradigmes
 
-Aujourd'hui, il est considéré comme absurde de choisir une « seule bonne réponse » parmi ces derniers. Les langages de programmation modernes ([Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), TypeScript, Scala, Go, etc.) **prennent le meilleur** de ces paradigmes.
+Aujourd'hui, il est considéré comme absurde de choisir une « seule bonne réponse » parmi ces derniers. Les langages de programmation modernes ([Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), TypeScript, Scala, [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), etc.) **prennent le meilleur** de ces paradigmes.
 
-### 5.1 Rust démontre la fusion ultime
+### 5.1 [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) démontre la fusion ultime
 
 Rust fusionne ces trois paradigmes à un niveau étonnant.
 

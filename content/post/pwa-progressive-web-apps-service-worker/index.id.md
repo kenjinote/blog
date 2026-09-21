@@ -30,7 +30,7 @@ Saat mengembangkan aplikasi web, topik yang selalu diperdebatkan adalah "Apakah 
 
 ### 2.1. Kekuatan dan Kelemahan Aplikasi Asli
 
-Kekuatan terbesar dari aplikasi asli (aplikasi yang dikembangkan dengan Swift/Objective-C untuk iOS, Kotlin/Java untuk Android, dll.) adalah memiliki akses penuh ke API OS.
+Kekuatan terbesar dari aplikasi asli (aplikasi yang dikembangkan dengan Swift/Objective-C untuk iOS, Kotlin/[Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) untuk Android, dll.) adalah memiliki akses penuh ke API OS.
 Hal ini memungkinkan Anda untuk mengimplementasikan fitur-fitur canggih yang memanfaatkan kamera, GPS, Bluetooth, NFC, dan berbagai sensor secara maksimal. Selain itu, karena dioptimalkan untuk OS, kinerja renderingnya sangat tinggi, menjadikan aplikasi asli sangat menguntungkan untuk game yang sering menggunakan animasi kompleks dan grafik 3D.
 
 Di sisi lain, aplikasi asli memiliki kelemahan (tantangan) utama sebagai berikut:

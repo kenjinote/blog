@@ -16,7 +16,7 @@ tags:
 
 ## 1. 서론: 함수형 프로그래밍의 근저에 흐르는 철학
 
-현대의 소프트웨어 개발에서,  **함수형 프로그래밍** ([Functional Programming](https://kenji.blog/ko/p/oop-vs-fp-vs-dop/))은 더 이상 일부 마니아를 위한 접근법이 아니라 널리 보급된 패러다임이 되었습니다. React 등의 프런트엔드 기술부터 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)와 Scala, 나아가 Java나 C#과 같은 객체 지향 언어에 이르기까지, 함수를 일급 객체로 취급하거나 부작용을 배제하는 등의 개념이 도입되고 있습니다.
+현대의 소프트웨어 개발에서,  **함수형 프로그래밍** ([Functional Programming](https://kenji.blog/ko/p/oop-vs-fp-vs-dop/))은 더 이상 일부 마니아를 위한 접근법이 아니라 널리 보급된 패러다임이 되었습니다. React 등의 프런트엔드 기술부터 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)와 Scala, 나아가 [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)나 C#과 같은 객체 지향 언어에 이르기까지, 함수를 일급 객체로 취급하거나 부작용을 배제하는 등의 개념이 도입되고 있습니다.
 
 그러나 이 패러다임의 이면에는 컴퓨터가 물리적으로 탄생하기 이전인 1930년대에 구축된 심오한 수학적 이론이 존재합니다. 그것이 바로 알론조 처치(Alonzo Church)가 제안한  **람다 대수** ( $\lambda$-calculus )입니다.
 
@@ -219,7 +219,7 @@ firstTenEvens = take 10 (map (*2) naturals)
 
 ### 8.2 모나드(Monads)와 부작용의 관리
 
-순수 함수형 언어에서 수학적인 순수성(참조 투명성)을 유지한 채, 입출력이나 상태 변화 등의 "부작용(Side Effects)"을 어떻게 다룰지는 오랜 과제였습니다. Haskell은 범주론(Category Theory)의 개념인  **모나드** (Monad)를 도입함으로써 이 문제를 우아하게 해결했습니다.
+순수 함수형 언어에서 수학적인 순수성(참조 투명성)을 유지한 채, 입출력이나 상태 변화 등의 "부작용(Side Effects)"을 어떻게 다룰지는 오랜 과제였습니다. Haskell은 범주론(Category Theory)의 개념인  **모나드** ([Monad](https://kenji.blog/ko/p/functional-programming-concepts-pure-functions-monads/))를 도입함으로써 이 문제를 우아하게 해결했습니다.
 
 IO 모나드를 통해, "계산"과 "부작용을 동반하는 실행"을 타입 시스템 수준에서 완전히 분리하는 데 성공한 것입니다.
 

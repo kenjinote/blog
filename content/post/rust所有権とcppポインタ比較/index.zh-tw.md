@@ -10,13 +10,13 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: '徹底比較C++的指標與Rust的所有權、借用模型。從原生指標、智慧指標到借用檢查器，為您解說記憶體安全性的本質。'
 ---
 
-現代系統程式設計中，兼顧效能與記憶體安全性是永遠的課題。C++長年來一直稱霸這個領域，但近年來逐漸威脅其地位的便是[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)。Rust最大的特色在於，它沒有垃圾回收機制（GC），卻能透過「所有權（Ownership）」與「借用（Borrowing）」的概念，在編譯時期保證記憶體的安全性。
+現代系統程式設計中，兼顧效能與記憶體安全性是永遠的課題。C++長年來一直稱霸這個領域，但近年來逐漸威脅其地位的便是[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)。[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)最大的特色在於，它沒有垃圾回收機制（GC），卻能透過「所有權（Ownership）」與「借用（Borrowing）」的概念，在編譯時期保證記憶體的安全性。
 
-在本文中，我們將詳細比較C++的指標（原生指標、`std::unique_ptr`、`std::shared_ptr`）與[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的所有權模型，並搭配程式碼範例與圖解，徹底為您解說Rust的編譯器（借用檢查器）是如何防止釋放後使用（Use-After-Free）以及資料競爭（Data Race）的。
+在本文中，我們將詳細比較C++的指標（原生指標、`std::unique_ptr`、`std::shared_ptr`）與[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的所有權模型，並搭配程式碼範例與圖解，徹底為您解說[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)的編譯器（借用檢查器）是如何防止釋放後使用（Use-After-Free）以及資料競爭（Data Race）的。
 
 ## 1. 記憶體管理的基礎：堆疊與堆積
 
-為了理解記憶體管理的基礎，首先讓我們回顧一下程式是如何使用記憶體的。記憶體區域大致可分為「堆疊（Stack）」與「堆積（Heap）」。
+為了理解記憶體管理的基礎，首先讓我們回顧一下程式是如何使用記憶體的。記憶體區域大致可分為「堆疊（[Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）」與「堆積（[Heap](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）」。
 
 ### 堆疊（Stack）
 這是存放函式呼叫時的區域變數等資料的區域。它具有LIFO（後進先出）的結構，記憶體的配置與釋放都非常快速。只有在編譯時期就能確定大小的資料才會被配置在此處。
@@ -44,12 +44,12 @@ graph TD
 
 讓我們來看看C++中記憶體管理的演變。
 
-### 原生指標（Raw Pointers）的時代與問題點
+### 原生指標（Raw [Pointer](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)s）的時代與問題點
 
 從C語言繼承下來的原生指標（`*`）提供了極致的自由，但同時也成為以下這類嚴重Bug的溫床。
 
 - **記憶體洩漏（Memory Leak）**: 忘記對 `new` 出來的記憶體執行 `delete`。
-- **懸空指標（Dangling Pointer）**: 存取已經釋放記憶體（`delete` 後）的指標。
+- **懸空指標（Dangling [Pointer](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）**: 存取已經釋放記憶體（`delete` 後）的指標。
 - **雙重釋放（Double Free）**: 對同一塊記憶體區域執行了兩次 `delete`。
 
 ```cpp
@@ -93,13 +93,13 @@ void uniquePtrExample() {
 
 ## 3. [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的所有權（Ownership）：典範轉移
 
-Rust將C++中 `std::unique_ptr` 的概念視為語言規範的核心，並擁有更加嚴格的「所有權模型」。
+[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)將C++中 `std::unique_ptr` 的概念視為語言規範的核心，並擁有更加嚴格的「所有權模型」。
 
 ### 所有權的3個規則
 
 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的所有權系統建立在以下3個極其簡單的規則之上。
 
-1. **Rust中的每一個值，都有一個被稱為其擁有者（owner）的變數。**
+1. **[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)中的每一個值，都有一個被稱為其擁有者（owner）的變數。**
 2. **任何時候，擁有者都只能有一個。**
 3. **當擁有者離開作用域時，該值就會被丟棄。**
 
@@ -197,7 +197,7 @@ int main() {
 
 ### 透過[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)進行編譯時期防禦
 
-讓我們用Rust來撰寫完全一樣的邏輯。
+讓我們用[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)來撰寫完全一樣的邏輯。
 
 ```rust
 // Rust: 在編譯時期防止迭代器失效
@@ -275,7 +275,7 @@ fn main() {
 
 C++的指標與智慧指標為開發者提供了高度的控制能力與效能，但正確的使用與否卻取決於開發者的紀律。雖然RAII與 `std::unique_ptr` 的引入讓C++變得極為安全，但仍然無法在語言層級完全防止移動後存取或迭代器失效這類的「未定義行為」。
 
-相對地，[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)將所有權（Ownership）與借用（Borrowing）的規則內建於編譯器中，使得這些錯誤能在 **編譯時期** 而非執行時被偵測出來。「只要編譯通過，就保證記憶體安全」這樣強力的保證，正是Rust在系統程式設計領域中迅速獲得支持的最大理由。
+相對地，[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)將所有權（Ownership）與借用（Borrowing）的規則內建於編譯器中，使得這些錯誤能在 **編譯時期** 而非執行時被偵測出來。「只要編譯通過，就保證記憶體安全」這樣強力的保證，正是[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)在系統程式設計領域中迅速獲得支持的最大理由。
 
 對初學者來說，與Rust的借用檢查器搏鬥（Fight the borrow checker）是一大障礙，但這其實只不過是編譯器在嚴格地代勞處理C++程式設計師原本要在腦中進行的「追蹤指標生存期間」的複雜計算而已。
 

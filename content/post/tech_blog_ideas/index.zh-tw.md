@@ -184,7 +184,7 @@ Zettelkasten 主要有三種筆記：
 
 ## 5. 利用向量資料庫（Pinecone）與 OpenAI Embeddings 進行語意搜尋
 
-當筆記數量增加到數百、數千篇時，單純的關鍵字搜尋（全文檢索）就很難找到目標筆記。在「想不起關鍵字，但想尋找概念相似的筆記」時，活用大型語言模型（LLM）Embeddings 的語意搜尋就能發揮威力。
+當筆記數量增加到數百、數千篇時，單純的關鍵字搜尋（全文檢索）就很難找到目標筆記。在「想不起關鍵字，但想尋找概念相似的筆記」時，活用大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）Embeddings 的語意搜尋就能發揮威力。
 
 使用 OpenAI 的 `text-embedding-ada-002` 模型（或 `text-embedding-3-small`），將 Obsidian 的各篇 Markdown 筆記轉換為多維度的向量（數百至數千維度的數值陣列）。在這些向量空間中，意義相近的文章向量，在物理距離上也會比較接近。
 

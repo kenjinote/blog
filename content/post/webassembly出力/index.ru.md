@@ -17,9 +17,9 @@ tags: ["C++", "Rust", "Wasm", "JavaScript"]
 
 ## 2. Обзор и архитектура [WebAssembly](https://kenji.blog/ru/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/ru/p/webassembly-wasm-current-future/))
 
-WebAssembly — это бинарный формат инструкций для виртуальной машины на основе стека. Он разработан как «переносимая цель компиляции» для таких языков, как C/C++, [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/), Go и Zig, и предназначен для выполнения в веб-браузерах со скоростью, близкой к нативной.
+WebAssembly — это бинарный формат инструкций для виртуальной машины на основе стека. Он разработан как «переносимая цель компиляции» для таких языков, как C/C++, [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/), [Go](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/) и Zig, и предназначен для выполнения в веб-браузерах со скоростью, близкой к нативной.
 
-На следующей диаграмме показан общий процесс цепочки инструментов от исходного кода на C++ и Rust до генерации WebAssembly и его выполнения в браузере.
+На следующей диаграмме показан общий процесс цепочки инструментов от исходного кода на C++ и [Rust](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/) до генерации WebAssembly и его выполнения в браузере.
 
 ```mermaid
 graph TD
@@ -139,7 +139,7 @@ Module.onRuntimeInitialized = () => {
 
 ## 5. Подход с использованием [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/) и `wasm-pack`
 
-[Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/) предлагает первоклассную поддержку [WebAssembly](https://kenji.blog/ru/p/webassembly-wasm-current-future/), а инструменты `wasm-bindgen` и `wasm-pack` обеспечивают глубокую интеграцию между JavaScript и [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/). В то время как Emscripten использует подход «привнесения огромной среды выполнения C/C++ в браузер», Rust с `wasm-pack` использует подход «генерации только необходимого минимума привязок (связующего JS-кода)».
+[Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/) предлагает первоклассную поддержку [WebAssembly](https://kenji.blog/ru/p/webassembly-wasm-current-future/), а инструменты `wasm-bindgen` и `wasm-pack` обеспечивают глубокую интеграцию между JavaScript и [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/). В то время как Emscripten использует подход «привнесения огромной среды выполнения C/C++ в браузер», [Rust](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/) с `wasm-pack` использует подход «генерации только необходимого минимума привязок (связующего JS-кода)».
 
 ### Реализация кода на [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/)
 
@@ -287,7 +287,7 @@ graph TD
 
 Движки [Wasm](https://kenji.blog/ru/p/webassembly-wasm-current-future/) в браузерах реализуют потоковую компиляцию этих секций (компиляция в машинный код параллельно с загрузкой), что обеспечивает невероятно быстрый запуск.
 
-## 9. C++ против Rust: что выбрать?
+## 9. C++ против [Rust](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/): что выбрать?
 
 Выбор между C++ и Rust для генерации [WebAssembly](https://kenji.blog/ru/p/webassembly-wasm-current-future/) во многом зависит от требований проекта и существующих активов.
 
@@ -296,7 +296,7 @@ graph TD
 * Проекты портирования игр, где вы хотите использовать слои эмуляции графических API, например OpenGL в WebGL (слой эмуляции GL в Emscripten).
 * Если необходимы виртуализированные функции ОС, такие как эмуляция файловой системы (MEMFS).
 
-**Случаи, когда следует выбрать Rust / wasm-pack**:
+**Случаи, когда следует выбрать [Rust](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/) / wasm-pack**:
 * Если вы разрабатываете с нуля новые высокопроизводительные модули как часть веб-приложения.
 * Если вам нужна прочная, типобезопасная интеграция с экосистемой JavaScript (NPM модули и TypeScript).
 * Если вам нужен сравнительно небольшой размер бинарного файла и безопасное управление памятью (модель владения Rust).

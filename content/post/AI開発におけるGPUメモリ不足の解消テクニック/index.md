@@ -12,7 +12,7 @@ description: "LLMの学習や推論において最大の障壁となるVRAM（GP
 
 # はじめに：AI開発と「VRAMの壁」
 
-近年、大規模言語モデル（LLM）や拡散モデル（Diffusion Models）などの生成AI技術が急速な発展を遂げています。しかし、これらの最先端のAIモデルをローカル環境で学習（ファインチューニング）したり、推論（Inference）を実行したりする際、多くの開発者や研究者が直面するのが **「GPUメモリ（VRAM）不足」** という極めて物理的な障壁です。
+近年、[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）や拡散モデル（Diffusion Models）などの生成AI技術が急速な発展を遂げています。しかし、これらの最先端のAIモデルをローカル環境で学習（ファインチューニング）したり、推論（Inference）を実行したりする際、多くの開発者や研究者が直面するのが **「GPUメモリ（VRAM）不足」** という極めて物理的な障壁です。
 
 NVIDIA GeForce RTX 4090などのコンシューマー向けハイエンドGPUであってもVRAMは最大24GBであり、Llama 3 70Bのような巨大なモデルをそのままロードすることは到底不可能です。データセンター向けのH100（80GB）やB200（192GB）などは非常に高価であり、個人や小規模なチームが手軽に扱えるものではありません。この「VRAMの壁（The Wall of VRAM）」を突破できなければ、最先端のモデルに触れることすらできません。
 
@@ -47,7 +47,7 @@ $$ M_{weights} = 8,000,000,000 \times 2 \text{ bytes} \approx 16,000,000,000 \te
 ## 1.2 推論時のメモリ消費：KVキャッシュの増大
 
 LLMの推論（特に自己回帰的なテキスト生成）において、重みと同じかそれ以上にVRAMを激しく圧迫するのが **KVキャッシュ（[Key-Value](https://kenji.blog/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache）** です。
-Transformerアーキテクチャでは、過去に生成・処理したトークンの情報を再計算するのを防ぐため、各アテンション層でのKeyとValueのテンソルをVRAMにキャッシュし続けます。これにより計算速度（Compute）は向上しますが、コンテキスト長（入力プロンプト長＋生成長）が長くなるにつれて、メモリ消費量が線形に爆発的に増加します。
+[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)アーキテクチャでは、過去に生成・処理したトークンの情報を再計算するのを防ぐため、各アテンション層でのKeyとValueのテンソルをVRAMにキャッシュし続けます。これにより計算速度（Compute）は向上しますが、コンテキスト長（入力プロンプト長＋生成長）が長くなるにつれて、メモリ消費量が線形に爆発的に増加します。
 
 1トークンを処理する際に消費されるKVキャッシュのメモリ量 $M_{kv\_token}$ は、モデルのアーキテクチャに基づいて以下の数式で厳密に計算されます。
 
@@ -112,7 +112,7 @@ graph TD
 ```
 
 **メカニズムと課題:**
-Transformerモデルは層（レイヤー）が直列に積み重なった構造をしているため、ある層の計算が終わるまで次の層の計算は始まりません。これを利用し、GPUに収まる層（例：1層〜15層）だけをVRAMに常駐（ピン留め）させ、残りの層（16層〜32層）は大容量だが低速なCPU RAMに置いておきます。推論中、15層までの計算が終わると、16層目の重みをCPUからGPUへPCIeバス経由で転送（コピー）し、GPU上で計算を実行します。
+[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)モデルは層（レイヤー）が直列に積み重なった構造をしているため、ある層の計算が終わるまで次の層の計算は始まりません。これを利用し、GPUに収まる層（例：1層〜15層）だけをVRAMに常駐（ピン留め）させ、残りの層（16層〜32層）は大容量だが低速なCPU RAMに置いておきます。推論中、15層までの計算が終わると、16層目の重みをCPUからGPUへPCIeバス経由で転送（コピー）し、GPU上で計算を実行します。
 
 ただし、 **PCIeの帯域幅（Bandwidth）が強烈なボトルネック** となります。PCIe 4.0 x16の理論上の最大帯域幅は32GB/s（片方向）ですが、最新GPUのVRAM内部帯域幅（例えばRTX 4090のGDDR6Xは1008GB/s、H100のHBM3は3TB/s以上）と比較すると2桁も遅いため、CPUオフロードを多用すると推論速度（Tokens per Second）は劇的に低下します。
 速度低下を最小限に抑えるためには、可能な限り多くの層をGPUに載せ（GPU Layersの最大化）、オフロードする層を最小限にすることが実用上のポイントです。
@@ -139,7 +139,7 @@ graph LR
 
 ## 2.3 FlashAttention：アテンション計算のメモリ複雑性を打破
 
-VRAM不足は、データを保存するメモリ量だけでなく、計算中の「一時的なワークスペース」の不足によっても引き起こされます。標準的なTransformerのSelf-Attentionメカニズムは、シーケンス長 $N$ に対して $N \times N$ の巨大なアテンション行列をVRAM上に実体化（Materialize）する必要があります。これはメモリ計算量が $O(N^2)$ となり、長いコンテキストではOOMの主要因となります。
+VRAM不足は、データを保存するメモリ量だけでなく、計算中の「一時的なワークスペース」の不足によっても引き起こされます。標準的な[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)のSelf-Attentionメカニズムは、シーケンス長 $N$ に対して $N \times N$ の巨大なアテンション行列をVRAM上に実体化（Materialize）する必要があります。これはメモリ計算量が $O(N^2)$ となり、長いコンテキストではOOMの主要因となります。
 
 これを解決したのが **FlashAttention** （およびFlashAttention-2, 3）です。
 FlashAttentionは、GPUのハードウェアアーキテクチャ（巨大だが遅いHBMと、極小だが超高速なSRAMの階層構造）を意識したアルゴリズムです。タイル化（Tiling）と呼ばれる手法を用い、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ごとにデータをSRAMにロードしてアテンション計算を完結させることで、$N \times N$ の行列をHBM（VRAM）に書き出す処理を完全に回避します。
@@ -161,7 +161,7 @@ graph TD
     end
 ```
 
-このアーキテクチャの最大の利点は、VRAMという明確な壁がなく、システムメモリのほぼ全域を巨大なLLMのロードにそのまま使用できる点です。192GBのユニファイドメモリを持つMac Studioであれば、70Bクラスやそれ以上の巨大モデル（例えばGrok-1など）を量子化なしで単体デバイスにロードし、高速に推論することが可能です。メモリアクセス帯域幅もM2 Ultraで800GB/sに達し、コンシューマー向けディスクリートGPUに匹敵する速度を誇ります。「メモリ容量」と「帯域幅」のジレンマをハードウェアレベルで解決する非常に強力なアプローチです。
+このアーキテクチャの最大の利点は、VRAMという明確な壁がなく、システムメモリのほぼ全域を巨大な[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)のロードにそのまま使用できる点です。192GBのユニファイドメモリを持つMac Studioであれば、70Bクラスやそれ以上の巨大モデル（例えばGrok-1など）を量子化なしで単体デバイスにロードし、高速に推論することが可能です。メモリアクセス帯域幅もM2 Ultraで800GB/sに達し、コンシューマー向けディスクリートGPUに匹敵する速度を誇ります。「メモリ容量」と「帯域幅」のジレンマをハードウェアレベルで解決する非常に強力なアプローチです。
 
 ---
 

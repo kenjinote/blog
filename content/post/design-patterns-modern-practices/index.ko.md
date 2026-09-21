@@ -36,7 +36,7 @@ tags:
 
 `Strategy` 패턴은 알고리즘군을 정의하고, 각각을 캡슐화하여 교환 가능하게 만드는 패턴입니다.
 
-**기존의 GoF적 접근 방식 (Java풍)**
+**기존의 GoF적 접근 방식 ([Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)풍)**
 
 ```java
 // 인터페이스 정의
@@ -135,7 +135,7 @@ coroutineScope.launch {
 
 현대에서는 **대수적 데이터 타입 (ADT)** 과 **패턴 매칭** 을 갖춘 언어([Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala 등)를 사용함으로써, 이 문제가 아름답게 해결됩니다.
 
-**현대의 접근 방식 (Rust의 열거형과 패턴 매칭)**
+**현대의 접근 방식 ([Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)의 열거형과 패턴 매칭)**
 
 ```rust
 // 대수적 데이터 타입 (배리언트를 가지는 Enum)
@@ -169,13 +169,13 @@ graph TD
     E["서비스 B"] -->|"의존"| B
 ```
 
-Spring Framework(Java)나 NestJS(TypeScript), Dagger/Hilt(Android) 등의 DI 컨테이너가 인스턴스의 생성과 파기를 관리하므로, 클래스 자체에 Singleton 로직( `getInstance()` 나 `private constructor` )을 작성해서는 안 됩니다.
+Spring Framework([Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/))나 NestJS(TypeScript), Dagger/Hilt(Android) 등의 DI 컨테이너가 인스턴스의 생성과 파기를 관리하므로, 클래스 자체에 Singleton 로직( `getInstance()` 나 `private constructor` )을 작성해서는 안 됩니다.
 
 ## 4. 함수형 프로그래밍에서의 디자인 패턴
 
 함수형 프로그래밍의 세계에는 GoF와는 다른 차원의 '패턴'이 존재합니다. 이것들은 수학적인 범주론(Category Theory)에 의해 뒷받침되고 있습니다.
 
-### 4.1. Monad(모나드)에 의한 부수 효과의 제어
+### 4.1. [Monad](https://kenji.blog/ko/p/functional-programming-concepts-pure-functions-monads/)(모나드)에 의한 부수 효과의 제어
 
 GoF의 패턴이 '상태의 뮤테이션'을 전제로 하는 반면, 함수형 접근 방식에서는 부수 효과(예외, 비동기 처리, Null의 가능성)를 타입 시스템에 가둡니다.
 

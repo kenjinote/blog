@@ -209,7 +209,7 @@ int main() {
 
 ### Implementierung in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)
 
-In Rust wird die Implementierung verketteter Listen aufgrund der Eigentums- und Ausleihregeln (Ownership & Borrowing) tendenziell komplex. Beim wettbewerbsorientierten Programmieren (Competitive Programming) ist es daher üblich, sie als Index-Referenzproblem auf Arrays (oder `Vec`) zu modellieren.
+In [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) wird die Implementierung verketteter Listen aufgrund der Eigentums- und Ausleihregeln (Ownership & Borrowing) tendenziell komplex. Beim wettbewerbsorientierten Programmieren (Competitive Programming) ist es daher üblich, sie als Index-Referenzproblem auf Arrays (oder `Vec`) zu modellieren.
 Hier zeigen wir ein Implementierungsbeispiel unter Verwendung eines Arrays, das den "nächsten Index" anstelle eines "Zeigers auf den nächsten Knoten" speichert.
 
 ```rust

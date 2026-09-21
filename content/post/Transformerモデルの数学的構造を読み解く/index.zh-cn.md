@@ -9,9 +9,9 @@ categories: ["ai", "machine-learning", "mathematics"]
 tags: ["Transformer", "Deep Learning", "Attention", "Math"]
 ---
 
-# 引言：为什么要学习Transformer的数学原理？
+# 引言：为什么要学习[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的数学原理？
 
-毫不夸张地说，“Transformer”架构改写了现代自然语言处理（NLP）乃至整个AI的历史。该模型在2017年由Google的研究人员们在论文《Attention Is All You Need》中首次提出，目前作为OpenAI的GPT系列（ChatGPT的基础技术）、Google的BERT以及Anthropic的Claude等席卷全球的大型语言模型（LLM）的核心组件而发挥着作用。
+毫不夸张地说，“Transformer”架构改写了现代自然语言处理（NLP）乃至整个AI的历史。该模型在2017年由Google的研究人员们在论文《Attention Is All You Need》中首次提出，目前作为OpenAI的GPT系列（ChatGPT的基础技术）、Google的BERT以及Anthropic的Claude等席卷全球的大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的核心组件而发挥着作用。
 
 然而，目前的情况是，关于Transformer的工作原理，虽然经常能看到诸如“使用Attention（注意力机制）来理解上下文”这样的定性解释，但针对初学者的关于其背后的 **数学结构** 的深入解说是出乎意料地少的。为了真正理解AI是如何将“语言”作为“数学公式”来处理，并生成令人惊叹的自然文章的，解读其数学机制是不可或缺的。
 
@@ -69,7 +69,7 @@ $$ x_i = W_E \cdot \text{one\_hot}(w_i) $$
 由此，整篇文章被表示为矩阵 $X \in \mathbb{R}^{N \times d_{model}}$（$N$ 是文章的长度）。
 
 ## 3.2 Positional Encoding（位置编码）的必要性与数学公式
-Transformer并不像RNN那样按顺序处理单词，而是同时并行处理所有单词。从计算速度的角度来看这是一个很大的优势，但同时也会引起 **丢失“单词顺序（语序）”这一重要信息** 的问题。例如，“狗咬人”和“人咬狗”，虽然输入的单词集合相同，但含义却完全不同。
+[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)并不像RNN那样按顺序处理单词，而是同时并行处理所有单词。从计算速度的角度来看这是一个很大的优势，但同时也会引起 **丢失“单词顺序（语序）”这一重要信息** 的问题。例如，“狗咬人”和“人咬狗”，虽然输入的单词集合相同，但含义却完全不同。
 
 为了将这种语序信息提供给模型，人们设计出了 **Positional Encoding** 。
 位置 $pos$ 处的单词的第 $i$ 个维度的Positional Encoding $PE$ 是使用以下三角函数来计算的。
@@ -217,7 +217,7 @@ $$ \text{FFN}(x) = \max(0, x W_1 + b_1) W_2 + b_2 $$
 
 # 7. 残差连接（Residual Connection）与层归一化（Layer Normalization）
 
-在深度学习中，如果加深网络的层数，在训练时就会出现梯度消失或爆炸的问题，导致无法很好地学习。为了防止这种情况发生，在Transformer的每个子层（Attention和FFN）周围，都配置了 **残差连接（Residual Connection） ** 和 ** 层归一化（Layer Normalization）**。
+在深度学习中，如果加深网络的层数，在训练时就会出现梯度消失或爆炸的问题，导致无法很好地学习。为了防止这种情况发生，在[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)的每个子层（Attention和FFN）周围，都配置了 **残差连接（Residual Connection） ** 和 ** 层归一化（Layer Normalization）**。
 
 用数学公式来写，子层的输出将被如下处理：
 
@@ -274,7 +274,7 @@ Transformer是一个出色的模型，但也存在源于其数学结构的“弱
 请关注Self-Attention的计算复杂度。在计算得分矩阵 $Q K^T$ 时，因为要将 $(N \times d_k)$ 的矩阵与 $(d_k \times N)$ 的矩阵相乘，所以其计算复杂度为 **$O(N^2 \cdot d_{model})$** 。
 
 也就是说， **相对于序列长度 $N$，计算复杂度和内存使用量呈平方级增长** 。
-如果文章很短则不成问题，但如果想将像一整本书这样超长的上下文输入到LLM中，$N$ 就会达到数万至数十万，在传统的Attention计算下GPU的内存会瞬间耗尽。
+如果文章很短则不成问题，但如果想将像一整本书这样超长的上下文输入到[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)中，$N$ 就会达到数万至数十万，在传统的Attention计算下GPU的内存会瞬间耗尽。
 
 为了打破这种 $O(N^2)$ 的诅咒，近年来从数学和硬件方法的角度提出了各种各样的优化方案。
 其中具有代表性的例子就是 **FlashAttention** 。FlashAttention是一种为了将GPU的内存层级（SRAM和HBM）之间的数据传输（内存访问）降至最低，将Attention计算分割成瓦片状（Tiling）来执行的算法。尽管在数学公式上它输出的是与标准Attention完全相同的结果（Exact Attention），但通过硬件级别的优化实现了惊人的速度提升和内存削减，使得GPT-4等长上下文模型的实现成为了可能。
@@ -322,7 +322,7 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 # 结语：从数学公式中看到的“智能”的形状
 
-在本文中，我们解开了Transformer模型深处的数学结构。
+在本文中，我们解开了[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)模型深处的数学结构。
 
 将单词映射到多维向量空间的Embedding、通过合成三角波来表示位置信息的Positional Encoding、以及源于信息检索类比的矩阵内积计算——Self-Attention机制。这每一个组件，不过是线性代数、微积分、概率统计等基础数学知识的累积罢了。
 
@@ -330,9 +330,9 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 正如“Attention Is All You Need”这个带有挑衅性的标题所示，彻底抛弃复杂的循环处理和卷积处理，专注于纯粹的“Attention（相关度）”计算，这种架构的美，正是在于其数学上的简洁性。
 
-未来，也许会出现超越Transformer的全新架构（例如[State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) Space Model的Mamba等），但Transformer所建立的“通过Attention理解上下文”的数学框架，必将被永远铭刻在AI的历史中。
+未来，也许会出现超越Transformer的全新架构（例如[State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) Space Model的Mamba等），但[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)所建立的“通过Attention理解上下文”的数学框架，必将被永远铭刻在AI的历史中。
 
-如果你今后有机会使用ChatGPT或Claude等LLM，请想象一下在它们的后台中，每秒正进行着数万亿次 $Q K^T$ 的矩阵乘法运算，以及Softmax函数正在计算着概率的情景。这样你对技术的清晰度会提升，也一定能感受到AI的世界更加有趣。
+如果你今后有机会使用ChatGPT或Claude等[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)，请想象一下在它们的后台中，每秒正进行着数万亿次 $Q K^T$ 的矩阵乘法运算，以及Softmax函数正在计算着概率的情景。这样你对技术的清晰度会提升，也一定能感受到AI的世界更加有趣。
 
 ### 参考文献
 - Vaswani, A., et al. (2017). "Attention Is All You Need." *Advances in Neural Information Processing Systems*.

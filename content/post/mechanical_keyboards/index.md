@@ -106,7 +106,7 @@ VimやEmacsといったエディタで複雑なショートカット（例: `Ctr
 
 ### 3.1 QMK Firmware
 
-**QMK (Quantum Mechanical Keyboard)** は、オープンソースのキーボードファームウェアです。C言語で記述されており、キーマップの変更から、マクロの作成、LEDアニメーションの制御まで、文字通り「あらゆること」が可能です。
+**QMK (Quantum Mechanical Keyboard)** は、オープンソースのキーボードファームウェアです。[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)で記述されており、キーマップの変更から、マクロの作成、LEDアニメーションの制御まで、文字通り「あらゆること」が可能です。
 
 ### 3.2 高度なキーアサイン機能
 

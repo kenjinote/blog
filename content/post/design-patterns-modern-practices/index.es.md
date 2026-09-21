@@ -36,7 +36,7 @@ Aquí tomaremos algunos patrones GoF representativos y veremos cómo han sido re
 
 El patrón `Strategy` define una familia de algoritmos, los encapsula individualmente y los hace intercambiables.
 
-**Enfoque tradicional estilo GoF (estilo Java)**
+**Enfoque tradicional estilo GoF (estilo [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/))**
 
 ```java
 // Definición de la interfaz
@@ -135,7 +135,7 @@ El patrón `Visitor` es un patrón para separar una estructura de datos del proc
 
 En la actualidad, utilizando lenguajes ([Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala, etc.) equipados con **Tipos de Datos Algebraicos (ADT)** y **Pattern Matching**, este problema se resuelve de manera elegante.
 
-**Enfoque moderno (Tipos enumerados y Pattern Matching en Rust)**
+**Enfoque moderno (Tipos enumerados y Pattern Matching en [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/))**
 
 ```rust
 // Tipos de datos algebraicos (Enum con variantes)
@@ -169,13 +169,13 @@ graph TD
     E["Servicio B"] -->|"Depende de"| B
 ```
 
-Dado que los contenedores DI como Spring Framework (Java), NestJS (TypeScript) y Dagger/Hilt (Android) gestionan la creación y destrucción de instancias, no se debe escribir la lógica Singleton (como `getInstance()` o un `private constructor`) en la propia clase.
+Dado que los contenedores DI como Spring Framework ([Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/)), NestJS (TypeScript) y Dagger/Hilt (Android) gestionan la creación y destrucción de instancias, no se debe escribir la lógica Singleton (como `getInstance()` o un `private constructor`) en la propia clase.
 
 ## 4. Patrones de Diseño en la Programación Funcional
 
 En el mundo de la programación funcional, existen "patrones" de una dimensión diferente a la de GoF. Estos están respaldados por la Teoría de Categorías matemática (Category Theory).
 
-### 4.1. Control de efectos secundarios mediante Monad (Mónada)
+### 4.1. Control de efectos secundarios mediante [Monad](https://kenji.blog/es/p/functional-programming-concepts-pure-functions-monads/) (Mónada)
 
 Mientras que los patrones de GoF asumen la "mutación del estado", el enfoque funcional confina los efectos secundarios (excepciones, procesamiento asíncrono, posibilidad de Null) al sistema de tipos.
 

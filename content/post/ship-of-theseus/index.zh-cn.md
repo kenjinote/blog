@@ -45,7 +45,7 @@ graph LR
 
 ## 2. 面向对象编程中的“同一性”
 
-在代码层面思考“同一性”时，关系最密切的就是 **面向对象编程（OOP）** 的概念。在OOP中，为了判断同一性，大致存在两个标准。
+在代码层面思考“同一性”时，关系最密切的就是 **面向对象编程（[OOP](https://kenji.blog/zh-cn/p/object-oriented-programming-oop-solid-principles/)）** 的概念。在OOP中，为了判断同一性，大致存在两个标准。
 
 1. **引用的等价性（Reference Equality）** ：是否指向内存中的同一个位置（指针是否相同）
 2. **值的等价性（Value Equality）** ：所保持的属性（数据）是否全部相同

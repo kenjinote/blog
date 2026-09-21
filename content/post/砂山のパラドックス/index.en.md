@@ -22,7 +22,7 @@ Removing a single grain shouldn't turn a "heap" into "not a heap." However, if y
 
 Of course, no one would call a single grain of sand a "heap." And yet, we never once rejected the premise that "removing one grain still leaves a heap." The logic must break down somewhere, but **at exactly which grain did the heap stop being a heap?**
 
-This is the **Sorites Paradox (also known as the Paradox of the Heap)**, attributed to the ancient Greek philosopher Eubulides in the 4th century BCE.
+This is the **Sorites Paradox (also known as the Paradox of the [Heap](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/))**, attributed to the ancient Greek philosopher Eubulides in the 4th century BCE.
 
 ## Logical Structure
 
@@ -75,7 +75,7 @@ This is logically tidy, but most people feel intuitively uneasy with this positi
 Classical logic deals in a binary of "true or false," but fuzzy logic allows values **anywhere between 0 and 1.**
 
 For example:
-- 10,000 grains of sand → "Heap-ness = 1.0 (completely a heap)"
+- 10,000 grains of sand → "[Heap](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)-ness = 1.0 (completely a heap)"
 - 5,000 grains → "Heap-ness = 0.7"
 - 100 grains → "Heap-ness = 0.1"
 - 1 grain → "Heap-ness = 0.0 (completely not a heap)"

@@ -110,7 +110,7 @@ const main = async () => {
 main();
 ```
 
-La ventaja del Event Loop es que no es necesario gestionar bloqueos (locks) para el estado compartido. Sin embargo, si se ejecuta un procesamiento pesado (CPU bound) en el Call Stack, todo el Event Loop se bloquea, con el riesgo de que el sistema se detenga (bloqueo del Event Loop). La complejidad computacional debe limitarse a operaciones ligeras, de $ O(1) $ a $ O(N) $.
+La ventaja del Event Loop es que no es necesario gestionar bloqueos (locks) para el estado compartido. Sin embargo, si se ejecuta un procesamiento pesado (CPU bound) en el Call [Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/), todo el Event Loop se bloquea, con el riesgo de que el sistema se detenga (bloqueo del Event Loop). La complejidad computacional debe limitarse a operaciones ligeras, de $ O(1) $ a $ O(N) $.
 
 ---
 
@@ -141,7 +141,7 @@ flowchart LR
 
 ### 3.2 Ejemplo de implementación de un Actor con [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)
 
-En Rust, un lenguaje de programación de sistemas, es posible construir el modelo de Actores utilizando potentes crates asíncronos como `tokio` o `actix`. Aquí se muestra una implementación sencilla del patrón Actor utilizando un canal `mpsc` (Multi-Producer, Single-Consumer).
+En [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), un lenguaje de programación de sistemas, es posible construir el modelo de Actores utilizando potentes crates asíncronos como `tokio` o `actix`. Aquí se muestra una implementación sencilla del patrón Actor utilizando un canal `mpsc` (Multi-Producer, Single-Consumer).
 
 ```rust
 use std::sync::Arc;

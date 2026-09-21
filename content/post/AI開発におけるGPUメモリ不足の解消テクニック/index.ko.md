@@ -12,7 +12,7 @@ description: 'LLM 학습 및 추론에서 가장 큰 장벽이 되는 VRAM(GPU �
 
 # 서론: AI 개발과 'VRAM의 벽'
 
-최근 대규모 언어 모델(LLM)이나 확산 모델(Diffusion Models) 등 생성형 AI 기술이 급속한 발전을 이루고 있습니다. 하지만 이러한 최첨단 AI 모델을 로컬 환경에서 학습(파인 튜닝)하거나 추론(Inference)을 실행할 때, 많은 개발자와 연구자가 직면하는 것이 **'GPU 메모리(VRAM) 부족'** 이라는 극히 물리적인 장벽입니다.
+최근 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))이나 확산 모델(Diffusion Models) 등 생성형 AI 기술이 급속한 발전을 이루고 있습니다. 하지만 이러한 최첨단 AI 모델을 로컬 환경에서 학습(파인 튜닝)하거나 추론(Inference)을 실행할 때, 많은 개발자와 연구자가 직면하는 것이 **'GPU 메모리(VRAM) 부족'** 이라는 극히 물리적인 장벽입니다.
 
 NVIDIA GeForce RTX 4090과 같은 소비자용 하이엔드 GPU라 하더라도 VRAM은 최대 24GB이며, Llama 3 70B와 같은 거대한 모델을 그대로 로드하는 것은 도저히 불가능합니다. 데이터 센터용인 H100(80GB)나 B200(192GB) 등은 매우 고가여서, 개인이나 소규모 팀이 쉽게 다룰 수 있는 것이 아닙니다. 이 'VRAM의 벽(The Wall of VRAM)'을 돌파하지 못하면 최첨단 모델을 만져볼 수조차 없습니다.
 
@@ -47,7 +47,7 @@ $$ M_{weights} = 8,000,000,000 \times 2 \text{ bytes} \approx 16,000,000,000 \te
 ## 1.2 추론 시의 메모리 소비: KV 캐시의 증대
 
 LLM의 추론(특히 자기회귀적인 텍스트 생성)에서 가중치와 같거나 그 이상으로 VRAM을 강하게 압박하는 것이 **KV 캐시([Key-Value](https://kenji.blog/ko/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)** 입니다.
-Transformer 아키텍처에서는 과거에 생성·처리한 토큰의 정보를 재계산하는 것을 방지하기 위해, 각 어텐션 층에서의 Key와 Value 텐서를 VRAM에 계속 캐시합니다. 이로 인해 계산 속도(Compute)는 향상되지만, 컨텍스트 길이(입력 프롬프트 길이 + 생성 길이)가 길어짐에 따라 메모리 소비량이 선형적으로 폭발적으로 증가합니다.
+[Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 아키텍처에서는 과거에 생성·처리한 토큰의 정보를 재계산하는 것을 방지하기 위해, 각 어텐션 층에서의 Key와 Value 텐서를 VRAM에 계속 캐시합니다. 이로 인해 계산 속도(Compute)는 향상되지만, 컨텍스트 길이(입력 프롬프트 길이 + 생성 길이)가 길어짐에 따라 메모리 소비량이 선형적으로 폭발적으로 증가합니다.
 
 1 토큰을 처리할 때 소비되는 KV 캐시의 메모리 양 $M_{kv\_token}$은 모델의 아키텍처를 기반으로 다음 수식으로 엄밀하게 계산됩니다.
 
@@ -112,7 +112,7 @@ graph TD
 ```
 
 **메커니즘과 과제:**
-Transformer 모델은 층(레이어)이 직렬로 쌓인 구조를 하고 있기 때문에, 특정 층의 계산이 끝날 때까지 다음 층의 계산은 시작되지 않습니다. 이를 이용하여 GPU에 들어가는 층(예: 1층〜15층)만을 VRAM에 상주(고정)시키고, 나머지 층(16층〜32층)은 용량이 크지만 속도가 느린 CPU RAM에 둡니다. 추론 중, 15층까지의 계산이 끝나면 16층의 가중치를 CPU에서 GPU로 PCIe 버스를 통해 전송(복사)하고 GPU 상에서 계산을 실행합니다.
+[Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 모델은 층(레이어)이 직렬로 쌓인 구조를 하고 있기 때문에, 특정 층의 계산이 끝날 때까지 다음 층의 계산은 시작되지 않습니다. 이를 이용하여 GPU에 들어가는 층(예: 1층〜15층)만을 VRAM에 상주(고정)시키고, 나머지 층(16층〜32층)은 용량이 크지만 속도가 느린 CPU RAM에 둡니다. 추론 중, 15층까지의 계산이 끝나면 16층의 가중치를 CPU에서 GPU로 PCIe 버스를 통해 전송(복사)하고 GPU 상에서 계산을 실행합니다.
 
 단, **PCIe의 대역폭(Bandwidth)이 강력한 병목** 이 됩니다. PCIe 4.0 x16의 이론상 최대 대역폭은 32GB/s(단방향)이지만, 최신 GPU의 VRAM 내부 대역폭(예를 들어 RTX 4090의 GDDR6X는 1008GB/s, H100의 HBM3는 3TB/s 이상)과 비교하면 두 자릿수나 느리기 때문에 CPU 오프로딩을 다용하면 추론 속도(Tokens per Second)는 극적으로 저하됩니다.
 속도 저하를 최소한으로 억제하기 위해서는 가능한 한 많은 층을 GPU에 올리고(GPU Layers의 최대화), 오프로드하는 층을 최소화하는 것이 실용상의 포인트입니다.
@@ -139,7 +139,7 @@ graph LR
 
 ## 2.3 FlashAttention: 어텐션 계산의 메모리 복잡성 타파
 
-VRAM 부족은 데이터를 저장하는 메모리 양뿐만 아니라, 계산 중의 '임시 워크스페이스'의 부족에 의해서도 발생합니다. 표준적인 Transformer의 Self-Attention 메커니즘은 시퀀스 길이 $N$에 대해 $N \times N$의 거대한 어텐션 행렬을 VRAM 상에 구체화(Materialize)해야 합니다. 이는 메모리 계산량이 $O(N^2)$가 되어, 긴 컨텍스트에서는 OOM의 주요 원인이 됩니다.
+VRAM 부족은 데이터를 저장하는 메모리 양뿐만 아니라, 계산 중의 '임시 워크스페이스'의 부족에 의해서도 발생합니다. 표준적인 [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 Self-Attention 메커니즘은 시퀀스 길이 $N$에 대해 $N \times N$의 거대한 어텐션 행렬을 VRAM 상에 구체화(Materialize)해야 합니다. 이는 메모리 계산량이 $O(N^2)$가 되어, 긴 컨텍스트에서는 OOM의 주요 원인이 됩니다.
 
 이를 해결한 것이 **FlashAttention**(및 FlashAttention-2, 3)입니다.
 FlashAttention은 GPU의 하드웨어 아키텍처(거대하지만 느린 HBM과, 극소하지만 초고속인 SRAM의 계층 구조)를 의식한 알고리즘입니다. 타일링(Tiling)이라고 불리는 기법을 사용하여 블록 단위로 데이터를 SRAM에 로드하여 어텐션 계산을 완결시킴으로써, $N \times N$의 행렬을 HBM(VRAM)에 쓰는 처리를 완전히 회피합니다.
@@ -161,7 +161,7 @@ graph TD
     end
 ```
 
-이 아키텍처의 가장 큰 이점은 VRAM이라는 명확한 벽이 없고, 시스템 메모리의 거의 전역을 거대한 LLM 로드에 그대로 사용할 수 있다는 점입니다. 192GB의 유니파이드 메모리를 가진 Mac Studio라면, 70B 클래스나 그 이상의 거대한 모델(예를 들어 Grok-1 등)을 양자화 없이 단일 디바이스에 로드하여 고속으로 추론하는 것이 가능합니다. 메모리 액세스 대역폭도 M2 Ultra에서 800GB/s에 달하여, 소비자용 외장 GPU에 필적하는 속도를 자랑합니다. '메모리 용량'과 '대역폭'의 딜레마를 하드웨어 수준에서 해결하는 매우 강력한 접근법입니다.
+이 아키텍처의 가장 큰 이점은 VRAM이라는 명확한 벽이 없고, 시스템 메모리의 거의 전역을 거대한 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 로드에 그대로 사용할 수 있다는 점입니다. 192GB의 유니파이드 메모리를 가진 Mac Studio라면, 70B 클래스나 그 이상의 거대한 모델(예를 들어 Grok-1 등)을 양자화 없이 단일 디바이스에 로드하여 고속으로 추론하는 것이 가능합니다. 메모리 액세스 대역폭도 M2 Ultra에서 800GB/s에 달하여, 소비자용 외장 GPU에 필적하는 속도를 자랑합니다. '메모리 용량'과 '대역폭'의 딜레마를 하드웨어 수준에서 해결하는 매우 강력한 접근법입니다.
 
 ---
 

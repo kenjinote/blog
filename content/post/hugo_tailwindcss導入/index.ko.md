@@ -13,7 +13,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 현대 웹 프론트엔드 개발에서 성능과 개발자 경험(DX: Developer Experience)의 양립은 모든 프로젝트에서 가장 중요한 과제 중 하나입니다. 정적 사이트 생성기(SSG) 중에서도 세계 최고 수준의 빌드 속도를 자랑하는 **Hugo** 와, 유틸리티 퍼스트라는 혁신적인 패러다임을 도입한 **Tailwind CSS** 를 결합하는 것은 이 과제에 대한 하나의 궁극적인 해답이라고 할 수 있습니다.
 
-Hugo는 Go 언어로 작성되어 있어, 수천 페이지의 사이트라도 단 몇 초 혹은 밀리초 단위로 빌드를 완료하는 경이로운 성능을 가지고 있습니다. 한편, Tailwind CSS는 사전에 정의된 무수히 많은 유틸리티 클래스(`flex`, `text-center`, `mt-4` 등)를 HTML에 직접 작성함으로써, CSS 파일과 HTML 파일 사이를 오가는 컨텍스트 스위칭을 없애고 디자인 이터레이션을 가속화합니다.
+Hugo는 [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 언어로 작성되어 있어, 수천 페이지의 사이트라도 단 몇 초 혹은 밀리초 단위로 빌드를 완료하는 경이로운 성능을 가지고 있습니다. 한편, Tailwind CSS는 사전에 정의된 무수히 많은 유틸리티 클래스(`flex`, `text-center`, `mt-4` 등)를 HTML에 직접 작성함으로써, CSS 파일과 HTML 파일 사이를 오가는 컨텍스트 스위칭을 없애고 디자인 이터레이션을 가속화합니다.
 
 본 기사에서는 Hugo 테마에 Tailwind CSS를 도입하고, 나아가 PostCSS를 이용한 고도화된 에셋 파이프라인(Hugo Pipes)을 구축하는 절차를 아키텍처의 근간부터 수학적인 성능 최적화 관점에 이르기까지 철저하고 상세하게 해설합니다.
 
@@ -268,7 +268,7 @@ module.exports = {
 
 #### 파이프라인 해설 및 Mermaid 다이어그램
 
-위의 Go 템플릿 코드가 어떻게 CSS 파일을 처리해 나가는지, 일련의 파이프라인 처리를 다이어그램으로 설명합니다.
+위의 [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 템플릿 코드가 어떻게 CSS 파일을 처리해 나가는지, 일련의 파이프라인 처리를 다이어그램으로 설명합니다.
 
 ```mermaid
 flowchart TD

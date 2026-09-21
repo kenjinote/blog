@@ -12,7 +12,7 @@ description: '详细讲解如何从类似WordPress的动态CMS迁移到基于Go�
 
 在现代Web开发和博客运营中，网站的加载速度、安全性以及可维护性已成为极其重要的因素。长期以来，作为博客和企业网站基础而占据压倒性市场份额的“WordPress”，凭借其灵活的插件生态系统和直观的管理界面，深受广大用户喜爱。然而，由于它需要与数据库进行通信以及在服务器端进行动态页面生成（通过PHP处理），因此也面临着应对流量激增时的[脆弱性](https://kenji.blog/zh-cn/p/web-application-vulnerability-owasp-top-10/)以及加载延迟（Latency）等问题。
 
-因此，近年来“静态网站生成器（SSG: Static Site Generator）”正在迅速普及。在本文中，我们将深入探讨在众多SSG中基于Go语言开发、以其惊人的构建速度而闻名的“ **Hugo** ”。我们将从它与WordPress等动态CMS（Content Management System）的技术架构对比，到具体的迁移步骤、使用数理模型进行的性能评估，以及Hugo特有的目录结构和模板查找顺序，进行彻底的解析。
+因此，近年来“静态网站生成器（SSG: Static Site Generator）”正在迅速普及。在本文中，我们将深入探讨在众多SSG中基于[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)语言开发、以其惊人的构建速度而闻名的“ **Hugo** ”。我们将从它与WordPress等动态CMS（Content Management System）的技术架构对比，到具体的迁移步骤、使用数理模型进行的性能评估，以及Hugo特有的目录结构和模板查找顺序，进行彻底的解析。
 
 ---
 
@@ -191,7 +191,7 @@ flowchart LR
 2. **利用WordPress API自制脚本**
    这种方法是使用Python或Node.js等请求WordPress的[REST API](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/zh-cn/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)（`/wp-json/wp/v2/posts`），解析JSON数据并自己编写脚本来生成Markdown文件。对于大量使用了插件无法完全兼容的复杂自定义字段（如ACF等）的网站非常有效。
 3. **活用wp2hugo工具**
-   还有一种方法是利用Go语言等编写的CLI工具，将WordPress的导出XML文件（WXR）直接转换为Hugo格式。
+   还有一种方法是利用[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)语言等编写的CLI工具，将WordPress的导出XML文件（WXR）直接转换为Hugo格式。
 
 ### 4.2 固定链接（URL）结构的保持
 
@@ -214,7 +214,7 @@ WordPress特有的简码（如：`[gallery]`, `[caption]`，以及各种插件�
 
 ## 5. Hugo的CLI工具与构建・部署
 
-迁移工作完成后，终于可以使用Hugo构建网站并向世界发布了。作为Go语言的二进制文件提供的Hugo，其令人惊叹的速度能在短短几秒内完成包含数千到数万个页面的网站构建。
+迁移工作完成后，终于可以使用Hugo构建网站并向世界发布了。作为[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)语言的二进制文件提供的Hugo，其令人惊叹的速度能在短短几秒内完成包含数千到数万个页面的网站构建。
 
 ### 5.1 启动本地开发服务器
 
@@ -320,7 +320,7 @@ jobs:
 
 ## 7. 总结
 
-在本文中，我们详细讲解了从类似WordPress的动态CMS迁移到基于Go语言的强大静态网站生成器“Hugo”的整个过程，包括技术架构的差异、利用数理模型进行的性能证明以及具体的迁移步骤。
+在本文中，我们详细讲解了从类似WordPress的动态CMS迁移到基于[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)语言的强大静态网站生成器“Hugo”的整个过程，包括技术架构的差异、利用数理模型进行的性能证明以及具体的迁移步骤。
 
 向静态网站生成器迁移虽然需要前期的学习成本（如Git的操作、Markdown语法、从终端执行CLI命令、理解模板引擎的规范等），但它能带来“压倒性的加载速度”、“坚固的安全性”以及“免维护”的回报，这些足以弥补其学习成本且绰绰有余。
 

@@ -10,7 +10,7 @@ tags: ["SEO", "Frontmatter", "Open Graph", "JSON-LD"]
 description: '精通Hugo SEO优化的完整指南。从元数据、OGP到JSON-LD结构化数据，全面分析如何通过自定义前置数据和head.html来让访问量实现飞跃式增长。'
 ---
 
-Hugo是一个使用Go语言编写的世界最快级别的静态网站生成器（SSG）。凭借其压倒性的构建速度和灵活的模板系统，它获得了许多工程师和博主的高度支持。然而，仅仅让网站被快速生成和显示，并不能让它在搜索引擎（如Google或Bing）中获得高评价，也无法将文章传递给用户。
+Hugo是一个使用[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)语言编写的世界最快级别的静态网站生成器（SSG）。凭借其压倒性的构建速度和灵活的模板系统，它获得了许多工程师和博主的高度支持。然而，仅仅让网站被快速生成和显示，并不能让它在搜索引擎（如Google或Bing）中获得高评价，也无法将文章传递给用户。
 
 为了提高搜索排名、增强在社交媒体上的传播力，从而大幅增加博客的访问量，细致的SEO（搜索引擎优化）措施是不可或缺的。在Hugo中，SEO优化的核心在于两者的协同：写在每篇Markdown文章开头的 **前置数据（Frontmatter）** ，以及解析这些数据并在HTML的 `<head>` 标签中展开元数据的 **模板（[Layout](https://kenji.blog/zh-cn/p/browser-rendering-mechanism-dom-paint/)s）** 。
 

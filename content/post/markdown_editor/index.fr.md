@@ -9,7 +9,7 @@ categories: ["blogging", "productivity", "editors"]
 tags: ["Markdown", "VS Code", "Neovim", "textlint"]
 ---
 
-Pour écrire continuellement sur un blog technique, il est essentiel d'optimiser l'environnement de rédaction. Dans cet article, nous allons explorer en profondeur les paramètres d'éditeur avancés qui permettront d'améliorer de façon spectaculaire votre vitesse de rédaction de blogs techniques à l'aide de Markdown. Nous couvrirons tout de manière exhaustive : la personnalisation extrême de Visual Studio Code (VS Code) et Neovim, l'utilisation de snippets, l'introduction de textlint (un outil de vérification grammaticale), l'automatisation dans le pipeline [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/), et enfin les techniques de rédaction de pointe utilisant des LLM comme GitHub Copilot.
+Pour écrire continuellement sur un blog technique, il est essentiel d'optimiser l'environnement de rédaction. Dans cet article, nous allons explorer en profondeur les paramètres d'éditeur avancés qui permettront d'améliorer de façon spectaculaire votre vitesse de rédaction de blogs techniques à l'aide de Markdown. Nous couvrirons tout de manière exhaustive : la personnalisation extrême de Visual Studio Code (VS Code) et Neovim, l'utilisation de snippets, l'introduction de textlint (un outil de vérification grammaticale), l'automatisation dans le pipeline [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/), et enfin les techniques de rédaction de pointe utilisant des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) comme GitHub Copilot.
 
 ## 1. Modèle mathématique de l'amélioration de la vitesse de rédaction
 
@@ -244,11 +244,11 @@ flowchart TD
     H --> J["Déployer sur l'hébergement (Vercel/Netlify)"]
 ```
 
-## 5. L'art d'écrire en Markdown à l'ère des LLM
+## 5. L'art d'écrire en Markdown à l'ère des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)
 
-Dans la rédaction de blogs techniques modernes, l'utilisation de LLM (Large Language Models) est incontournable. En exploitant les outils d'IA intégrés à l'éditeur, la vitesse de rédaction peut être encore doublée.
+Dans la rédaction de blogs techniques modernes, l'utilisation de LLM ([Large Language Models](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) est incontournable. En exploitant les outils d'IA intégrés à l'éditeur, la vitesse de rédaction peut être encore doublée.
 
-### Ingénierie des prompts (Prompt Engineering) dans l'éditeur
+### Ingénierie des prompts ([Prompt Engineering](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) dans l'éditeur
 
 En utilisant GitHub Copilot Chat dans VS Code, ou `ChatGPT.nvim` et `Copilot.vim` dans Neovim, vous pouvez lancer des prompts comme celui-ci sans quitter votre éditeur :
 
@@ -256,7 +256,7 @@ En utilisant GitHub Copilot Chat dans VS Code, ou `ChatGPT.nvim` et `Copilot.vim
 
 Immédiatement, une structure Markdown avec des titres et des puces sera générée. Il ne nous reste plus qu'à étoffer cette structure.
 
-De plus, pour la rédaction de diagrammes Mermaid complexes ou de formules mathématiques (LaTeX), donner des instructions à l'IA permet de générer une syntaxe précise. Par exemple, la base de la mise en page des formules et diagrammes de cet article a également été accélérée grâce au pair-writing avec un LLM.
+De plus, pour la rédaction de diagrammes Mermaid complexes ou de formules mathématiques (LaTeX), donner des instructions à l'IA permet de générer une syntaxe précise. Par exemple, la base de la mise en page des formules et diagrammes de cet article a également été accélérée grâce au pair-writing avec un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/).
 
 ## 6. Conclusion
 
@@ -266,7 +266,7 @@ Nous avons expliqué les paramètres d'éditeur qui permettent de doubler la vit
 2. **Utilisation de VS Code** : Gagner du temps de saisie avec les extensions et les snippets de `markdown.json`.
 3. **Personnalisation extrême de Neovim** : Snippets dynamiques avec `LuaSnip` et utilisation exclusive du clavier.
 4. **textlint et analyse statique** : Intégration d'un Linter local et du [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) pour réduire le temps de correction à presque zéro.
-5. **Intégration des LLM** : Laisser l'IA générer la structure Markdown et le code des diagrammes directement dans l'éditeur.
+5. **Intégration des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)** : Laisser l'IA générer la structure Markdown et le code des diagrammes directement dans l'éditeur.
 
 En intégrant ces paramètres à votre propre environnement, la "corvée" de l'écriture disparaîtra, et le volume ainsi que la qualité de votre production technique s'amélioreront de manière spectaculaire. Pourquoi ne pas commencer par enregistrer un simple petit snippet dès aujourd'hui ?
 

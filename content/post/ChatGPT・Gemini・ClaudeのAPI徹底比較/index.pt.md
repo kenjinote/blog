@@ -11,7 +11,7 @@ tags: ["ChatGPT", "Gemini", "Claude", "API", "Comparison"]
 
 # ChatGPT・Gemini・Claude API: Comparação Completa e Qual Escolher?
 
-A evolução da tecnologia de IA é notável, especialmente no campo dos Grandes Modelos de Linguagem (LLM: Large Language Model), onde o ChatGPT (série GPT) da OpenAI, o Gemini do Google e o Claude da Anthropic estão travando uma intensa batalha tripartida pela supremacia. A partir de 2026, cada empresa tem lançado novos modelos e funcionalidades de API em questão de meses, ou até mesmo semanas, e para desenvolvedores e arquitetos de TI corporativos, a questão de "qual API integrar ao produto" tornou-se uma decisão crítica que dita o sucesso de um projeto.
+A evolução da tecnologia de IA é notável, especialmente no campo dos Grandes Modelos de Linguagem ([LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/): Large Language Model), onde o ChatGPT (série GPT) da OpenAI, o Gemini do Google e o Claude da Anthropic estão travando uma intensa batalha tripartida pela supremacia. A partir de 2026, cada empresa tem lançado novos modelos e funcionalidades de API em questão de meses, ou até mesmo semanas, e para desenvolvedores e arquitetos de TI corporativos, a questão de "qual API integrar ao produto" tornou-se uma decisão crítica que dita o sucesso de um projeto.
 
 Neste artigo, não apenas listaremos as especificações, mas compararemos e explicaremos detalhadamente as APIs desses três grandes provedores de IA sob a perspectiva do desenvolvedor, cobrindo o design da arquitetura, estrutura detalhada de preços, análise matemática da latência (atraso), exemplos práticos de implementação em Python e Node.js, e até os mais recentes métodos de otimização de custos, como o cache de prompt.
 
@@ -79,7 +79,7 @@ O texto de entrada na API é dividido internamente em unidades chamadas "tokens"
 
 ## 4. Análise Matemática de Latência e Desempenho
 
-Em aplicações de tempo real, a latência está diretamente ligada à experiência do usuário (UX). A latência da API do LLM, $T_{total}$, pode ser matematicamente modelada da seguinte forma:
+Em aplicações de tempo real, a latência está diretamente ligada à experiência do usuário (UX). A latência da API do [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/), $T_{total}$, pode ser matematicamente modelada da seguinte forma:
 
 $$ T_{total} = T_{network} + T_{TTFT} + (N \times T_{TPOT}) $$
 
@@ -90,7 +90,7 @@ Aqui, cada variável tem o seguinte significado:
 - $T_{TPOT}$ (Time Per Output Token): Tempo de geração por token. Por se tratar de um modelo autorregressivo, o cálculo é feito em série dependendo da saída anterior.
 
 ### 4.1 Complexidade Computacional do Mecanismo de Autoatenção
-A complexidade computacional da autoatenção (Self-Attention) na arquitetura Transformer aumenta de forma quadrática em relação ao comprimento da sequência de entrada $L$.
+A complexidade computacional da autoatenção (Self-Attention) na arquitetura [Transformer](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) aumenta de forma quadrática em relação ao comprimento da sequência de entrada $L$.
 
 $$ \text{Complexity} = O(L^2 \cdot d) $$
 
@@ -210,7 +210,7 @@ Ao executar este script, você pode facilmente medir qual modelo responde mais r
 
 ## 8. Implementação de Tool Calling (Chamada de Função) em Node.js
 
-Para que o LLM funcione não apenas como um chatbot, mas como um "Agente de IA" que interage com sistemas externos, o Tool Calling (ou Function Calling) é essencial. Abaixo está um exemplo em Node.js (TypeScript) instruindo a API da OpenAI a chamar uma API de clima.
+Para que o [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) funcione não apenas como um chatbot, mas como um "Agente de IA" que interage com sistemas externos, o Tool Calling (ou Function Calling) é essencial. Abaixo está um exemplo em Node.js (TypeScript) instruindo a API da OpenAI a chamar uma API de clima.
 
 ```typescript
 import OpenAI from "openai";
@@ -312,7 +312,7 @@ sequenceDiagram
 
 ## 11. Segurança e Conformidade de Nível Empresarial
 
-A maior preocupação quando empresas usam APIs de LLM em ambientes de produção é "nossos dados serão usados para treinar a IA?" e "isso atende aos requisitos de conformidade?".
+A maior preocupação quando empresas usam APIs de [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) em ambientes de produção é "nossos dados serão usados para treinar a IA?" e "isso atende aos requisitos de conformidade?".
 
 As 3 empresas declararam explicitamente que os dados enviados através de suas APIs (prompts e respostas) **não são usados para treinar os modelos (Zero Data Retention / No Training on Customer Data)** (※ A interface de chat da Web gratuita para consumidores é diferente).
 
@@ -340,7 +340,7 @@ Comparamos extensamente sob vários ângulos, mas, no final, a resposta para "Qu
    Lida bem com qualquer tarefa perfeitamente e oferece o suporte mais rico para ferramentas de terceiros. Se a sua empresa necessita de parsing de JSON confiável por meio das Structured Outputs (Saídas Estruturadas) ou raciocínio lógico muito avançado usando o modelo o1, o ecossistema da OpenAI é indispensável.
 
 ### Recomendação de Roteamento Multimodelo
-A tendência futura de arquitetura é não depender (e sofrer vendor lock-in) de uma única API, mas adotar o **"Roteamento de LLM" (LLM Routing)** para alternar de forma dinâmica o modelo dependendo da dificuldade e importância da tarefa.
+A tendência futura de arquitetura é não depender (e sofrer vendor lock-in) de uma única API, mas adotar o **"Roteamento de [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/)" (LLM Routing)** para alternar de forma dinâmica o modelo dependendo da dificuldade e importância da tarefa.
 Por exemplo, responder perguntas simples dos usuários usando as opções mais baratas e rápidas, como o `GPT-4o-mini` ou o `Gemini 1.5 Flash`, e recorrer ao `Claude 3.5 Sonnet` apenas quando for determinado que um processamento complexo é necessário, para se obter o equilíbrio perfeito entre custo e desempenho.
 
 A evolução da IA é incessante. Entenda profundamente as forças e fraquezas de cada API e as características de sua arquitetura, e construa aplicações de IA flexíveis e escaláveis.

@@ -10,13 +10,13 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: "C++의 포인터와 Rust의 '소유권'·'차용' 모델을 철저하게 비교. 원시 포인터, 스마트 포인터부터 보로우 체커까지, 메모리 안전성의 본질을 해설합니다."
 ---
 
-현대 시스템 프로그래밍에서 성능과 메모리 안전성의 양립은 영원한 과제입니다. C++는 오랫동안 이 분야의 제왕으로 군림해 왔지만, 최근 그 위상을 위협하고 있는 것이 바로 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)입니다. Rust의 가장 큰 특징은 가비지 컬렉션(GC) 없이 컴파일 타임에 메모리 안전성을 보장하는 '소유권(Ownership)'과 '차용(Borrowing)'이라는 개념에 있습니다.
+현대 시스템 프로그래밍에서 성능과 메모리 안전성의 양립은 영원한 과제입니다. C++는 오랫동안 이 분야의 제왕으로 군림해 왔지만, 최근 그 위상을 위협하고 있는 것이 바로 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)입니다. [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)의 가장 큰 특징은 가비지 컬렉션(GC) 없이 컴파일 타임에 메모리 안전성을 보장하는 '소유권(Ownership)'과 '차용(Borrowing)'이라는 개념에 있습니다.
 
-이 글에서는 C++의 포인터(원시 포인터, `std::unique_ptr`, `std::shared_ptr`)와 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 소유권 모델을 자세히 비교하고, Rust의 컴파일러(보로우 체커)가 어떻게 Use-After-Free(해제 후 사용)나 데이터 경합(Data Race)을 방지하는지 코드 예제와 다이어그램을 통해 철저하게 해설합니다.
+이 글에서는 C++의 포인터(원시 포인터, `std::unique_ptr`, `std::shared_ptr`)와 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 소유권 모델을 자세히 비교하고, [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)의 컴파일러(보로우 체커)가 어떻게 Use-After-Free(해제 후 사용)나 데이터 경합(Data Race)을 방지하는지 코드 예제와 다이어그램을 통해 철저하게 해설합니다.
 
 ## 1. 메모리 관리의 기초: 스택과 힙
 
-메모리 관리의 기본을 이해하기 위해, 먼저 프로그램이 메모리를 어떻게 활용하는지 되짚어 보겠습니다. 메모리 영역은 크게 '스택(Stack)'과 '힙(Heap)'으로 분류됩니다.
+메모리 관리의 기본을 이해하기 위해, 먼저 프로그램이 메모리를 어떻게 활용하는지 되짚어 보겠습니다. 메모리 영역은 크게 '스택([Stack](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/))'과 '힙([Heap](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/))'으로 분류됩니다.
 
 ### 스택(Stack)
 함수 호출 시 지역 변수 등이 쌓이는 영역입니다. LIFO(후입선출) 구조를 가지며 메모리 할당 및 해제가 매우 빠릅니다. 컴파일 타임에 크기를 결정할 수 있는 데이터만 배치됩니다.
@@ -44,12 +44,12 @@ graph TD
 
 C++에서의 메모리 관리 변천사를 살펴보겠습니다.
 
-### 원시 포인터(Raw Pointers)의 시대와 문제점
+### 원시 포인터(Raw [Pointer](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/)s)의 시대와 문제점
 
 C 언어에서 물려받은 원시 포인터(`*`)는 궁극의 자유를 제공하지만, 동시에 다음과 같은 심각한 버그의 온상이 됩니다.
 
 - **메모리 누수(Memory Leak)**: `new`한 메모리를 `delete`하는 것을 잊어버림.
-- **댕글링 포인터(Dangling Pointer)**: 메모리 해제 후(`delete` 후)의 포인터에 접근함.
+- **댕글링 포인터(Dangling [Pointer](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/))**: 메모리 해제 후(`delete` 후)의 포인터에 접근함.
 - **이중 해제(Double Free)**: 동일한 메모리 영역을 2번 `delete`해버림.
 
 ```cpp
@@ -93,13 +93,13 @@ void uniquePtrExample() {
 
 ## 3. [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 소유권(Ownership): 패러다임 시프트
 
-Rust는 C++의 `std::unique_ptr` 개념을 언어 사양의 근간에 두고, 이를 더욱 엄격하게 만든 '소유권 모델'을 가지고 있습니다.
+[Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)는 C++의 `std::unique_ptr` 개념을 언어 사양의 근간에 두고, 이를 더욱 엄격하게 만든 '소유권 모델'을 가지고 있습니다.
 
 ### 소유권의 3가지 규칙
 
 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 소유권 시스템은 다음 3가지의 매우 단순한 규칙을 바탕으로 합니다.
 
-1. **Rust의 각각의 값은 소유자(owner)라고 불리는 변수를 가진다.**
+1. **[Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)의 각각의 값은 소유자(owner)라고 불리는 변수를 가진다.**
 2. **어느 때든 소유자는 단 하나뿐이다.**
 3. **소유자가 스코프를 벗어나면 값은 파기된다.**
 
@@ -197,7 +197,7 @@ int main() {
 
 ### [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에 의한 컴파일 타임 방어
 
-완전히 동일한 로직을 Rust로 작성해 보겠습니다.
+완전히 동일한 로직을 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)로 작성해 보겠습니다.
 
 ```rust
 // Rust: 이터레이터 무효화를 컴파일 시점에 방지
@@ -275,7 +275,7 @@ fn main() {
 
 C++의 포인터나 스마트 포인터는 개발자에게 고도의 제어와 성능을 제공하지만, 그 올바른 사용은 개발자의 규율에 의존하고 있습니다. RAII나 `std::unique_ptr`의 도입으로 C++는 극적으로 안전해졌지만, 여전히 이동 후 접근이나 이터레이터 무효화와 같은 '미정의 동작'을 언어 레벨에서 완벽하게 방지할 수는 없습니다.
 
-반면 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 소유권(Ownership)과 차용(Borrowing)이라는 규칙을 컴파일러에 내장함으로써, 이러한 에러들을 실행 시점이 아닌 **컴파일 시점** 에 검출합니다. "컴파일이 통과되면 메모리 안전하다"라는 강력한 보장이야말로 Rust가 시스템 프로그래밍 분야에서 급속히 지지를 얻고 있는 가장 큰 이유입니다.
+반면 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 소유권(Ownership)과 차용(Borrowing)이라는 규칙을 컴파일러에 내장함으로써, 이러한 에러들을 실행 시점이 아닌 **컴파일 시점** 에 검출합니다. "컴파일이 통과되면 메모리 안전하다"라는 강력한 보장이야말로 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)가 시스템 프로그래밍 분야에서 급속히 지지를 얻고 있는 가장 큰 이유입니다.
 
 Rust의 보로우 체커와 싸우는 것(Fight the borrow checker)은 초학자에게 큰 장벽이 되지만, 이는 본래 C++ 프로그래머가 머릿속에서 수행하던 '포인터의 생존 기간 추적'이라는 복잡한 계산을 컴파일러가 엄밀하게 대행해 주고 있는 것에 불과합니다.
 

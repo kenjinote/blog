@@ -25,13 +25,13 @@ description: 'قمنا بإعداد قائمة بلغات البرمجة الم�
 
 ## [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)
 
-## Go
+## [Go](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)
 
 ## Python
 
 ## Ruby
 
-## Java
+## [Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)
 
 ## JavaScript
 
@@ -132,4 +132,4 @@ ML هي إحدى لغات البرمجة الوظيفية.
 
 ## Salesforce APEX
 
-لغة مشابهة جدًا لـ Java.
+لغة مشابهة جدًا لـ [Java](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/).

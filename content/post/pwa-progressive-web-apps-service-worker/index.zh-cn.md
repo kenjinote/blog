@@ -30,7 +30,7 @@ PWA，简而言之，就是“兼具Web可访问性与原生应用高性能、�
 
 ### 2.1. 原生应用的优缺点
 
-原生应用（使用iOS的Swift/Objective-C、Android的Kotlin/Java等开发的应用）最大的优势在于拥有对OS API的完全访问权限。
+原生应用（使用iOS的Swift/Objective-C、Android的Kotlin/[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)等开发的应用）最大的优势在于拥有对OS API的完全访问权限。
 借此，可以实现最大限度利用相机、GPS、蓝牙、NFC及各种传感器等的高级功能。此外，由于针对OS进行了优化，渲染性能极高，在频繁使用复杂动画和3D图形的游戏等方面，原生应用具有压倒性的优势。
 
 另一方面，原生应用也存在以下重大弱点（课题）：

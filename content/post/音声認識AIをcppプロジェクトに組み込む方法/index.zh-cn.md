@@ -47,7 +47,7 @@ $$ 16000 \times 1 \times \frac{32}{8} = 64,000 \text{ bytes/sec (64 KB/s)} $$
 
 ### 2.2 梅尔频谱图转换的数学原理
 
-在Whisper内部，并不会直接处理一维的音频波形数据（Raw Waveform）。在输入Transformer模型之前，它会先被转换为更接近人类听觉特性的频率表示—— **梅尔频谱图 (Mel-Spectrogram)** 。`whisper.cpp`在C++实现中包含了这种转换处理，但了解其原理有助于进行噪声对策和预处理的优化。
+在Whisper内部，并不会直接处理一维的音频波形数据（Raw Waveform）。在输入[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)模型之前，它会先被转换为更接近人类听觉特性的频率表示—— **梅尔频谱图 (Mel-Spectrogram)** 。`whisper.cpp`在C++实现中包含了这种转换处理，但了解其原理有助于进行噪声对策和预处理的优化。
 
 将普通频率 $f$ (Hz) 转换为梅尔尺度 $m$ 的近似公式如下：
 

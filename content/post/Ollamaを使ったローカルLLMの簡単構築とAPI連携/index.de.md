@@ -11,7 +11,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 # Einführung: Warum benötigen wir lokale LLMs?
 
-Mit dem Aufstieg von Large Language Models (LLMs) haben sich unser Leben und unsere Entwicklungsmethoden dramatisch verändert. Leistungsstarke Cloud-basierte KI-Dienste wie ChatGPT, Claude und Gemini entwickeln sich täglich weiter und bieten hoch entwickelte Schlussfolgerungsfähigkeiten. Dennoch sind Cloud-LLMs nicht für jeden Anwendungsfall optimal. Bei Cloud-LLMs bestehen folgende Herausforderungen:
+Mit dem Aufstieg von [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) haben sich unser Leben und unsere Entwicklungsmethoden dramatisch verändert. Leistungsstarke Cloud-basierte KI-Dienste wie ChatGPT, Claude und Gemini entwickeln sich täglich weiter und bieten hoch entwickelte Schlussfolgerungsfähigkeiten. Dennoch sind Cloud-LLMs nicht für jeden Anwendungsfall optimal. Bei Cloud-LLMs bestehen folgende Herausforderungen:
 
 1. **Datenschutz- und Sicherheitsprobleme**: Das Senden von Daten mit vertraulichen oder persönlichen Informationen an externe Server ist aus Compliance- und Sicherheitssicht für Unternehmen oft inakzeptabel.
 2. **Kostenunsicherheit**: Da die API-Nutzungsgebühren von der Anzahl der Token abhängen, besteht bei Systemen, die große Datenmengen verarbeiten oder häufige Anfragen stellen, das Risiko unbegrenzt steigender laufender Kosten.
@@ -26,15 +26,15 @@ In diesem Artikel werden wir das Tool "**Ollama**", mit dem sich lokale LLMs ers
 
 # Was ist Ollama? Die interne Architektur
 
-Ollama ist eine Plattform zur einfachen Ausführung und Verwaltung von quelloffenen Large Language Models (wie Llama 3, Phi-3, Mistral, Gemma usw.) in einer lokalen Umgebung. Um eine lokale LLM-Umgebung aufzubauen, waren bisher sehr komplizierte Schritte erforderlich: die Einrichtung einer Python-Umgebung, die Installation des CUDA-Toolkits, das Auflösen von PyTorch-Abhängigkeiten, das Herunterladen riesiger Modelldateien von Hugging Face und die Formatkonvertierung (z. B. von Safetensors nach GGUF).
+Ollama ist eine Plattform zur einfachen Ausführung und Verwaltung von quelloffenen [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (wie Llama 3, Phi-3, Mistral, Gemma usw.) in einer lokalen Umgebung. Um eine lokale [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Umgebung aufzubauen, waren bisher sehr komplizierte Schritte erforderlich: die Einrichtung einer Python-Umgebung, die Installation des CUDA-Toolkits, das Auflösen von PyTorch-Abhängigkeiten, das Herunterladen riesiger Modelldateien von Hugging Face und die Formatkonvertierung (z. B. von Safetensors nach GGUF).
 
 Ollama verbirgt diese Komplexität und ermöglicht den Umgang mit LLMs mit einer Benutzerfreundlichkeit, die an [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) erinnert. Mit einem einzigen Befehl können Modelle heruntergeladen (`pull`), ausgeführt (`run`) und als HTTP-Server gestartet werden.
 
 ## Die Kerntechnologie: Ein Wrapper für llama.cpp
 
-Als Backend der Inferenz-Engine von Ollama fungiert "**llama.cpp**", eine in C/C++ geschriebene, schnelle LLM-Inferenzbibliothek. llama.cpp besitzt die Fähigkeit, Modelle durch maximale Ausnutzung der Hardwareleistung auszuführen – unabhängig davon, ob es sich um Apple Silicon (Metal), NVIDIA GPUs (CUDA), AMD GPUs (ROCm) oder sogar um reine CPU-Umgebungen handelt.
+Als Backend der Inferenz-Engine von Ollama fungiert "**llama.cpp**", eine in C/C++ geschriebene, schnelle [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Inferenzbibliothek. llama.cpp besitzt die Fähigkeit, Modelle durch maximale Ausnutzung der Hardwareleistung auszuführen – unabhängig davon, ob es sich um Apple Silicon (Metal), NVIDIA GPUs (CUDA), AMD GPUs (ROCm) oder sogar um reine CPU-Umgebungen handelt.
 
-Ollama integriert llama.cpp und verwendet eine Architektur, bei der ein in Go geschriebener Serverprozess eine REST-API bereitstellt und im Hintergrund die llama.cpp-Inferenz-Engine aufruft.
+Ollama integriert llama.cpp und verwendet eine Architektur, bei der ein in [Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) geschriebener Serverprozess eine REST-API bereitstellt und im Hintergrund die llama.cpp-Inferenz-Engine aufruft.
 
 Das folgende Mermaid-Diagramm zeigt die Gesamtarchitektur von Ollama:
 
@@ -118,7 +118,7 @@ In der Modellbibliothek von Ollama können Sie die Version und das Quantisierung
 
 ### Was ist Quantisierung (Quantization)?
 
-Lassen Sie uns hier kurz auf die Quantisierung eingehen. Ein gewöhnliches LLM speichert einen Gewichtsparameter als 16-Bit-Gleitkommazahl (FP16). Bei einem Modell mit 8 Milliarden (8B) Parametern verbrauchen allein die Gewichte etwa 16 GB VRAM. Die Quantisierung ist eine Technik, die diese Werte in 4-Bit (Q4) oder 8-Bit (Q8) Integer komprimiert.
+Lassen Sie uns hier kurz auf die Quantisierung eingehen. Ein gewöhnliches [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) speichert einen Gewichtsparameter als 16-Bit-Gleitkommazahl (FP16). Bei einem Modell mit 8 Milliarden (8B) Parametern verbrauchen allein die Gewichte etwa 16 GB VRAM. Die Quantisierung ist eine Technik, die diese Werte in 4-Bit (Q4) oder 8-Bit (Q8) Integer komprimiert.
 
 Durch Quantisierung lassen sich der erforderliche Speicherplatz und die Speicherbandbreite drastisch reduzieren, während die Genauigkeitsverluste des Modells minimiert werden. Die von Ollama bereitgestellten Modelle liegen standardmäßig im GGUF-Format vor, bei dem eine optimale Quantisierung (meistens 4-Bit) bereits angewendet wurde.
 
@@ -341,7 +341,7 @@ Damit ist es möglich, die leistungsstarken Ketten (Chains) und Agentenfunktione
 
 # Integration in Node.js-Anwendungen
 
-Für Frontend- und Full-Stack-Entwickler ist die Möglichkeit, lokale LLMs aus einer TypeScript/Node.js-Umgebung aufzurufen, ein großer Vorteil. Dazu wird das offizielle `ollama` NPM-Paket verwendet.
+Für Frontend- und Full-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Entwickler ist die Möglichkeit, lokale LLMs aus einer TypeScript/Node.js-Umgebung aufzurufen, ein großer Vorteil. Dazu wird das offizielle `ollama` NPM-Paket verwendet.
 
 ## Installation
 
@@ -474,7 +474,7 @@ $$
 $$
 M_{model} = \frac{8,000 \times 4}{8 \times 1024} = \frac{32,000}{8192} \approx 3.9 \text{ GB}
 $$
-Wenn man den Speicher für den Kontext addiert, erkennt man, dass das Modell bei etwa 5 GB bis 6 GB VRAM vollständig auf der GPU abgelegt (Full Offload) werden kann. Selbst eine Mittelklasse-GPU aus heutiger Zeit mit 8 GB VRAM (wie eine RTX 4060) reicht also völlig aus, um ein leistungsstarkes LLM zu betreiben.
+Wenn man den Speicher für den Kontext addiert, erkennt man, dass das Modell bei etwa 5 GB bis 6 GB VRAM vollständig auf der GPU abgelegt (Full Offload) werden kann. Selbst eine Mittelklasse-GPU aus heutiger Zeit mit 8 GB VRAM (wie eine RTX 4060) reicht also völlig aus, um ein leistungsstarkes [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) zu betreiben.
 
 ---
 
@@ -495,7 +495,7 @@ Durch die Einbindung von Ollama-API-Anfragen in Python- oder Shell-Skripte läss
 
 Mit dem Erscheinen von Ollama ist die Einstiegshürde für lokale LLMs dramatisch gesunken. Die Kombination aus einem einfachen Befehlssystem, das an die Bedienung von [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n erinnert, und einer REST-API, die sich leicht aus externen Anwendungen heraus nutzen lässt, ist heute de facto der Standard für die Entwicklung lokaler KI-Lösungen.
 
-Entwickler, die mit den Kosten und Sicherheitsbeschränkungen von Cloud-LLMs kämpfen, sollten unbedingt die in diesem Artikel vorgestellten Schritte nutzen, um eine lokale LLM-Umgebung mit Ollama aufzubauen und in ihre Anwendungen zu integrieren. Auf diese Weise können Sie die Potenziale der KI noch freier und greifbarer erleben.
+Entwickler, die mit den Kosten und Sicherheitsbeschränkungen von Cloud-LLMs kämpfen, sollten unbedingt die in diesem Artikel vorgestellten Schritte nutzen, um eine lokale [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Umgebung mit Ollama aufzubauen und in ihre Anwendungen zu integrieren. Auf diese Weise können Sie die Potenziale der KI noch freier und greifbarer erleben.
 
 
 

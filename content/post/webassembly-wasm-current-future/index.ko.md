@@ -19,7 +19,7 @@ tags:
 
 웹 브라우저는 오랫동안 JavaScript라는 단일 언어에 의해 지배되어 왔습니다. 그러나 웹 애플리케이션이 복잡해지고 네이티브 앱에 필적하는 퍼포먼스가 요구됨에 따라, JavaScript 단독으로는 한계가 보이기 시작했습니다. 그래서 등장한 것이  **WebAssembly (Wasm)**  입니다.
 
-WebAssembly는 브라우저 상에서 네이티브 코드에 가까운 속도로 실행할 수 있는 새로운 바이너리 포맷입니다. C, C++, Rust 등의 프로그래밍 언어에서 컴파일되어 생성되며, 현재는 웹 개발뿐만 아니라 서버 사이드나 엣지 컴퓨팅, 나아가 IoT 디바이스에 이르기까지 폭넓은 영역에서 혁신을 가져오고 있습니다.
+WebAssembly는 브라우저 상에서 네이티브 코드에 가까운 속도로 실행할 수 있는 새로운 바이너리 포맷입니다. C, C++, [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 등의 프로그래밍 언어에서 컴파일되어 생성되며, 현재는 웹 개발뿐만 아니라 서버 사이드나 엣지 컴퓨팅, 나아가 IoT 디바이스에 이르기까지 폭넓은 영역에서 혁신을 가져오고 있습니다.
 
 본 기사에서는 WebAssembly의 기본 개념부터 브라우저 내에서 C나 Rust가 어떻게 동작하는지에 대한 기술적인 원리, JavaScript와의 연동, 퍼포먼스 비교, 그리고 브라우저 외부 세계에서의 응용(WASI)까지, WebAssembly의 현재와 미래에 대해 철저하게 해설합니다.
 
@@ -92,7 +92,7 @@ WebAssembly는  **스택 머신**  아키텍처를 채택하고 있습니다. �
 
 ## 2.3 메모리 모델 (리니어 메모리)
 
-C나 Rust에서는 포인터를 사용한 메모리 조작이 빈번하게 발생합니다. WebAssembly는 이를 구현하기 위해  **리니어 메모리 (Linear Memory)**  라는 개념을 채택하고 있습니다.
+C나 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)에서는 포인터를 사용한 메모리 조작이 빈번하게 발생합니다. WebAssembly는 이를 구현하기 위해  **리니어 메모리 (Linear Memory)**  라는 개념을 채택하고 있습니다.
 
 리니어 메모리는 WebAssembly 인스턴스에서 접근할 수 있는 연속된 바이트 배열입니다. JavaScript에서는 `ArrayBuffer` 또는 `SharedArrayBuffer` 로 보입니다. Wasm 내의 포인터는 단순한 이 배열의 인덱스(정수 값)에 불과합니다.
 
@@ -134,7 +134,7 @@ fetch('module.wasm')
 ## 3.2 Web API로의 접근과 바인딩
 
 Wasm 자체는 DOM이나 Web API에 직접 접근하는 기능을 가지고 있지 않습니다. 접근하려면 JavaScript를 거쳐야 합니다.
-하지만 이를 수동으로 작성하는 것은 매우 번거롭습니다. 그래서 Rust 생태계에서는  **wasm-bindgen**  과 같은 도구가 마련되어 있습니다.
+하지만 이를 수동으로 작성하는 것은 매우 번거롭습니다. 그래서 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 생태계에서는  **wasm-bindgen**  과 같은 도구가 마련되어 있습니다.
 
 ```rust
 // Rust 코드 (wasm-bindgen을 사용)
@@ -151,7 +151,7 @@ pub fn greet(name: &str) {
 }
 ```
 
-이 코드를 컴파일하면 `wasm-bindgen` 이 자동으로 JavaScript의 글루 코드(접착제가 되는 코드)를 생성하여 문자열의 메모리 전달 등을 은닉해 줍니다. 이를 통해 Rust에서 직접 브라우저의 API를 호출하는 듯한 개발 경험을 얻을 수 있습니다.
+이 코드를 컴파일하면 `wasm-bindgen` 이 자동으로 JavaScript의 글루 코드(접착제가 되는 코드)를 생성하여 문자열의 메모리 전달 등을 은닉해 줍니다. 이를 통해 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)에서 직접 브라우저의 API를 호출하는 듯한 개발 경험을 얻을 수 있습니다.
 
 ---
 
@@ -185,7 +185,7 @@ function fibJs(n) {
 }
 ```
 
-### Rust 구현
+### [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 구현
 ```rust
 #[no_mangle]
 pub fn fib_wasm(n: u32) -> u32 {
@@ -194,7 +194,7 @@ pub fn fib_wasm(n: u32) -> u32 {
 }
 ```
 
-$n=40$ 으로 계산시켰을 경우, 일반적으로 JavaScript(V8 엔진)에서도 JIT의 최적화 덕분에 꽤 고속으로 실행되지만, Rust에서 생성된 Wasm 쪽이  **약 1.5배에서 2배 이상**  빠르게 실행되는 경우가 많습니다. 특히 행렬 연산이나 이미지 처리 등, 메모리의 연속 접근이나 SIMD 명령이 빛을 발하는 영역에서는 그 차이가 더욱 두드러집니다.
+$n=40$ 으로 계산시켰을 경우, 일반적으로 JavaScript(V8 엔진)에서도 JIT의 최적화 덕분에 꽤 고속으로 실행되지만, [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)에서 생성된 Wasm 쪽이  **약 1.5배에서 2배 이상**  빠르게 실행되는 경우가 많습니다. 특히 행렬 연산이나 이미지 처리 등, 메모리의 연속 접근이나 SIMD 명령이 빛을 발하는 영역에서는 그 차이가 더욱 두드러집니다.
 
 ---
 
@@ -229,7 +229,7 @@ WebAssembly는 초기 릴리스(MVP) 이후에도 진화를 거듭하고 있으�
 Web Workers와 `SharedArrayBuffer` 를 이용함으로써 여러 Wasm 인스턴스가 동일한 메모리 영역을 공유하고, 멀티스레드로 병렬 처리를 수행하는 것이 가능해졌습니다. 이를 통해 고도의 물리 시뮬레이션이나 게임 엔진 등이 브라우저에서 원활하게 동작합니다.
 
 ## 6.3 가비지 컬렉션 (Wasm GC)
-기존의 Wasm은 리니어 메모리를 수동으로 관리하는 C나 Rust를 위한 설계였으나, Java, Kotlin, C#, Dart 등 가비지 컬렉션을 필요로 하는 언어를 효율적으로 Wasm으로 컴파일하기 위한  **Wasm GC**  제안이 표준화되어 가고 있습니다. 이를 통해 Flutter Web 등의 퍼포먼스가 비약적으로 향상되고 있습니다.
+기존의 Wasm은 리니어 메모리를 수동으로 관리하는 C나 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)를 위한 설계였으나, [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/), Kotlin, C#, Dart 등 가비지 컬렉션을 필요로 하는 언어를 효율적으로 Wasm으로 컴파일하기 위한  **Wasm GC**  제안이 표준화되어 가고 있습니다. 이를 통해 Flutter Web 등의 퍼포먼스가 비약적으로 향상되고 있습니다.
 
 ---
 
@@ -260,7 +260,7 @@ Wasm은 컨테이너보다 훨씬 가볍고 시작이 빠르며(수 밀리초), 
 현재 WebAssembly의 가장 큰 과제는 서로 다른 언어로 작성된 Wasm 모듈끼리 연동시키는 것이 어렵다는 점입니다(문자열이나 복잡한 데이터 타입의 메모리 표현이 언어에 따라 다르기 때문).
 
 이를 해결하는 것이  **WebAssembly Component Model**  입니다.
-컴포넌트 모델이 실현되면 "Rust로 작성된 Wasm 모듈"을 "Python으로 작성된 Wasm 모듈"에서 매끄럽게 함수 호출하는 등의 일이 가능해집니다. 이는 플랫폼과 언어에 의존하지 않는 차세대 마이크로서비스 아키텍처의 기반이 될 가능성을 품고 있습니다.
+컴포넌트 모델이 실현되면 "[Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)로 작성된 Wasm 모듈"을 "Python으로 작성된 Wasm 모듈"에서 매끄럽게 함수 호출하는 등의 일이 가능해집니다. 이는 플랫폼과 언어에 의존하지 않는 차세대 마이크로서비스 아키텍처의 기반이 될 가능성을 품고 있습니다.
 
 ## 8.2 플러그인 시스템으로서의 Wasm
 이미 Figma나 EnvoyProxy, Microsoft Flight Simulator 등 많은 소프트웨어가 독자적인 플러그인 시스템으로 WebAssembly를 채택하고 있습니다. 사용자가 작성한 서드파티 코드를 안전하고 빠르게 본체 애플리케이션 내에서 실행할 수 있기 때문입니다.

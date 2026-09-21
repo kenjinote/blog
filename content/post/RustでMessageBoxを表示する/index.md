@@ -11,7 +11,7 @@ description: 'Rustで`winapi`と`user32-sys`クレートを利用し、Windows A
 
 下記の手順で[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)でMessageBoxを表示することができます。
 
-1. Rustをインストールする。 [Rustのはじめかた](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/) 参照
+1. [Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)をインストールする。 [Rustのはじめかた](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/) 参照
 2. コマンドプロンプトで`cargo new --bin MessageBox`を実行する。
 3. `MessageBox`ディレクトリに移動する。
 4. `Cargo.toml`を開き、下記のように修正する。

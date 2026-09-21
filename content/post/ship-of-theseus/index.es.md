@@ -45,7 +45,7 @@ Esto es exactamente el **Barco de Teseo**. Aunque todos los componentes (piezas)
 
 ## 2. La "identidad" en la Programación Orientada a Objetos
 
-Al pensar en la "identidad" a nivel de código, el concepto más estrechamente relacionado es el de la **Programación Orientada a Objetos (OOP)**. En OOP, existen principalmente dos criterios para determinar la identidad.
+Al pensar en la "identidad" a nivel de código, el concepto más estrechamente relacionado es el de la **Programación Orientada a Objetos ([OOP](https://kenji.blog/es/p/object-oriented-programming-oop-solid-principles/))**. En OOP, existen principalmente dos criterios para determinar la identidad.
 
 1. **Igualdad de referencia (Reference Equality)**: ¿Apuntan al mismo lugar en la memoria (es el mismo puntero)?
 2. **Igualdad de valor (Value Equality)**: ¿Son todos los atributos (datos) que contienen iguales?

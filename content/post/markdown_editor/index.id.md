@@ -9,7 +9,7 @@ categories: ["blogging", "productivity", "editors"]
 tags: ["Markdown", "VS Code", "Neovim", "textlint"]
 ---
 
-Untuk terus menulis blog teknologi, pengoptimalan lingkungan penulisan sangatlah penting. Artikel ini akan membahas secara mendalam pengaturan editor tingkat lanjut yang dapat meningkatkan kecepatan penulisan blog teknologi menggunakan Markdown secara drastis. Kita akan membahas secara komprehensif mulai dari penyesuaian ekstrem Visual Studio Code (VS Code) dan Neovim, pemanfaatan snippet, pengenalan textlint sebagai alat pemeriksa tata bahasa hingga otomatisasi dalam pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/), dan teknik penulisan mutakhir memanfaatkan LLM seperti GitHub Copilot.
+Untuk terus menulis blog teknologi, pengoptimalan lingkungan penulisan sangatlah penting. Artikel ini akan membahas secara mendalam pengaturan editor tingkat lanjut yang dapat meningkatkan kecepatan penulisan blog teknologi menggunakan Markdown secara drastis. Kita akan membahas secara komprehensif mulai dari penyesuaian ekstrem Visual Studio Code (VS Code) dan Neovim, pemanfaatan snippet, pengenalan textlint sebagai alat pemeriksa tata bahasa hingga otomatisasi dalam pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/), dan teknik penulisan mutakhir memanfaatkan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) seperti GitHub Copilot.
 
 ## 1. Model Matematis Peningkatan Kecepatan Menulis
 
@@ -244,7 +244,7 @@ flowchart TD
     H --> J["Terapkan ke Hosting (Vercel/Netlify)"]
 ```
 
-## 5. Teknik Penulisan Markdown di Era LLM
+## 5. Teknik Penulisan Markdown di Era [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)
 
 Dalam penulisan blog teknologi modern, pemanfaatan LLM (Large Language Model) tidak bisa dihindari. Dengan memanfaatkan alat AI bawaan editor, kecepatan penulisan akan berlipat ganda.
 
@@ -256,7 +256,7 @@ Menggunakan GitHub Copilot Chat di VS Code atau `ChatGPT.nvim` dan `Copilot.vim`
 
 Kemudian, Markdown untuk judul dan poin-poin akan dihasilkan seketika. Kita hanya perlu menambahkan detail ke dalam kerangka kerja tersebut.
 
-Selain itu, untuk pembuatan diagram Mermaid yang kompleks dan rumus matematika (LaTeX), memberikan instruksi kepada AI akan menghasilkan sintaks yang akurat. Misalnya, tata letak rumus matematika dan diagram yang ditampilkan dalam artikel ini juga dipercepat melalui penulisan berpasangan (pair writing) dengan LLM.
+Selain itu, untuk pembuatan diagram Mermaid yang kompleks dan rumus matematika (LaTeX), memberikan instruksi kepada AI akan menghasilkan sintaks yang akurat. Misalnya, tata letak rumus matematika dan diagram yang ditampilkan dalam artikel ini juga dipercepat melalui penulisan berpasangan (pair writing) dengan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/).
 
 ## 6. Kesimpulan
 
@@ -266,7 +266,7 @@ Kami telah menjelaskan pengaturan editor yang dapat menggandakan kecepatan penul
 2. **Pemanfaatan VS Code**: Menghemat input dengan ekstensi dan snippet `markdown.json`.
 3. **Penyesuaian ekstrem Neovim**: Snippet dinamis oleh `LuaSnip` dan operasi keyboard penuh.
 4. **textlint dan analisis statis**: Integrasi [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dan Linter lokal untuk mendekati waktu koreksi ke nol.
-5. **Integrasi LLM**: Membuat AI secara langsung menghasilkan struktur Markdown dan kode diagram di dalam editor.
+5. **Integrasi [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)**: Membuat AI secara langsung menghasilkan struktur Markdown dan kode diagram di dalam editor.
 
 Dengan memasukkan pengaturan ini ke dalam lingkungan Anda sendiri, "kerepotan" menulis akan hilang, dan kuantitas serta kualitas output teknis akan meningkat secara dramatis. Bagaimana kalau memulainya bahkan dari satu pendaftaran snippet kecil?
 

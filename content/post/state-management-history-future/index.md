@@ -33,7 +33,7 @@ Webフロントエンド開発において、最も議論の的となり、そ�
 
 ### 1.1 UIは状態の写像である
 
-宣言的UI（Declarative UI）の時代において、UIは状態を入力とする純粋関数としてモデル化されます。数式で表すと以下のようになります。
+宣言的UI（Declarative UI）の時代において、UIは状態を入力とする[純粋関数](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)としてモデル化されます。数式で表すと以下のようになります。
 
 $$ UI = f(State) $$
 
@@ -142,7 +142,7 @@ Reduxは以下の3つの厳格な原則に基づいています。
     アプリケーション全体の状態は、単一のストア（Store）内にあるオブジェクトツリーとして保持される。
 2.  **[State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/) is read-only（状態は読み取り専用）**:
     状態を変更する唯一の方法は、何が起こったかを示すActionオブジェクトを発行（Dispatch）することである。
-3.  **Changes are made with pure functions（変更は純粋関数で行う）**:
+3.  **Changes are made with pure functions（変更は[純粋関数](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)で行う）**:
     Actionによって状態がどのように変更されるかを指定するために、Reducerと呼ばれる純粋関数を記述する。
 
 ### 5.2 Reducerと純粋関数
@@ -172,7 +172,7 @@ function counterReducer(state = initialState, action) {
 }
 ```
 
-この「イミュータビリティ（不変性）」と「純粋関数」の組み合わせにより、[Redux](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)は強力なタイムトラベルデバッグ（過去の状態への巻き戻し）や、ホットリローディングを実現しました。開発体験（DX）の面で大きなブレイクスルーでした。
+この「イミュータビリティ（[不変性](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)）」と「[純粋関数](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)」の組み合わせにより、[Redux](https://kenji.blog/p/state-management-history-redux-context-recoil-zustand/)は強力なタイムトラベルデバッグ（過去の状態への巻き戻し）や、ホットリローディングを実現しました。開発体験（DX）の面で大きなブレイクスルーでした。
 
 ### 5.3 Reduxの課題：ボイラープレートの壁
 

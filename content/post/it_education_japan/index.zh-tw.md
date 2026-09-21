@@ -26,7 +26,7 @@ description: '2020年度小學程式設計教育必修化至今已過數年，�
 
 ### 抽象化之牆與電腦科學的黑箱化
 
-以 Scratch 為首的視覺化程式設計環境，將程式設計中複雜的語法（Syntax）、嚴格的型別系統（Type system）、記憶體生命週期管理等構成電腦科學根基的重要元素進行了高度抽象化，並刻意隱藏（封裝）起來。這在降低初學者認知負荷方面表現優異，但卻成了邁向下一步真正工程學時的巨大障礙。因為在實際的軟體開發領域，對變數作用域（區域變數與全域變數）、複雜的資料結構（陣列、鏈結串列、雜湊表、二元搜尋樹、圖）、指標操作，以及記憶體的堆積（Heap）與堆疊（Stack）空間的理解是絕對不可或缺的。
+以 Scratch 為首的視覺化程式設計環境，將程式設計中複雜的語法（Syntax）、嚴格的型別系統（Type system）、記憶體生命週期管理等構成電腦科學根基的重要元素進行了高度抽象化，並刻意隱藏（封裝）起來。這在降低初學者認知負荷方面表現優異，但卻成了邁向下一步真正工程學時的巨大障礙。因為在實際的軟體開發領域，對變數作用域（區域變數與全域變數）、複雜的資料結構（陣列、鏈結串列、雜湊表、二元搜尋樹、圖）、指標操作，以及記憶體的堆積（[Heap](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）與堆疊（[Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）空間的理解是絕對不可或缺的。
 
 以下的 Mermaid 圖視覺化了初學者從視覺化程式設計過渡到真正的電腦科學過程中面臨的學習障礙與放棄（Drop-off）的節點。
 
@@ -74,7 +74,7 @@ $$
 - 插入排序 (Insertion Sort): $O(N^2)$
 - 合併排序 (Merge Sort): $O(N \log N)$
 - 快速排序 (Quick Sort): $O(N \log N)$
-- 堆積排序 (Heap Sort): $O(N \log N)$
+- 堆積排序 ([Heap](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/) Sort): $O(N \log N)$
 
 例如，合併排序的時間複雜度 $T(N)$，基於分治法（Divide and Conquer）的典範，可用以下遞迴關係式來表示：
 
@@ -200,7 +200,7 @@ flowchart LR
 
 在英國（UK），早在 2014 年起就將名為「Computing」的科目列為從 5 歲（Key Stage 1）開始的必修課。他們的課綱不僅停留在單純的「程式設計體驗」，還涵蓋了演算法的邏輯設計、透過布林代數（Boolean algebra）理解邏輯電路、網路拓樸、甚至是硬體架構，是非常學術且具系統性的正規電腦科學。
 
-在美國，存在由 CSTA（美國電腦科學教師協會）制定的 K-12（幼兒園至高中畢業）嚴格標準課綱，高中生修習的 AP（Advanced Placement）Computer Science A 中，會使用 Java 進行正規的物件導向程式設計、多型、遞迴處理、資料結構實作，以及演算法的複雜度評估，要求水準極高，達到大學一年級的程度。印度或中國在 STEM 教育上的激烈程度，以及從中脫穎而出的菁英階層的厚實度，就更不用說了。
+在美國，存在由 CSTA（美國電腦科學教師協會）制定的 K-12（幼兒園至高中畢業）嚴格標準課綱，高中生修習的 AP（Advanced Placement）Computer Science A 中，會使用 [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 進行正規的物件導向程式設計、多型、遞迴處理、資料結構實作，以及演算法的複雜度評估，要求水準極高，達到大學一年級的程度。印度或中國在 STEM 教育上的激烈程度，以及從中脫穎而出的菁英階層的厚實度，就更不用說了。
 
 ### 需求的技能與教授的技能之間的絕望落差
 
@@ -219,7 +219,7 @@ xychart-beta
 
 為了填補這個巨大的落差（死亡之谷，Death Valley），必須對學校教育進行根本性的典範轉移，並投入龐大的資金。在全國各地「資訊科」專業教師壓倒性不足的情況下，由數學科、理科，或是科技與家政科的教師在繁重本業之餘，且在缺乏充分培訓的狀態下兼著教程式設計的現狀體制下，是絕對無法培育出能在世界上競爭的頂尖工程師的。
 
-## 9. AI 時代（LLM）中「寫程式」價值的暴跌
+## 9. AI 時代（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）中「寫程式」價值的暴跌
 
 讓情況變得更加複雜的是，以 ChatGPT 為代表的大型語言模型（LLM），以及 GitHub Copilot 等 AI 寫碼助手的爆炸性普及。在 AI 能根據自然語言指令瞬間生成完美程式碼，甚至連測試程式碼都寫好的現代，僅僅「懂 Python 語法」、「知道如何呼叫 API」的所謂「寫碼員（Coder）」，其市場價值正在迅速暴跌。
 

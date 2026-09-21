@@ -28,7 +28,7 @@ Ini didasarkan pada Jupyter Notebook.
 
 - [Javascript Playground](https://playcode.io/)
 
-## Java
+## [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)
 
 - [paiza.IO Online Java compiler](https://paiza.io/ja/projects/new?language=java)
 
@@ -47,7 +47,7 @@ Ini didasarkan pada Jupyter Notebook.
 
 - [AWS Cloud9](https://aws.amazon.com/jp/cloud9/)
 
-Lingkungan pengembangan terintegrasi online yang disediakan oleh Amazon AWS. Hadir dengan pra-paket alat untuk lebih dari 40 bahasa pemrograman seperti Node.js, JavaScript, Python, PHP, Ruby, Go, C++, dll.
+Lingkungan pengembangan terintegrasi online yang disediakan oleh Amazon AWS. Hadir dengan pra-paket alat untuk lebih dari 40 bahasa pemrograman seperti Node.js, JavaScript, Python, PHP, Ruby, [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), C++, dll.
 
 - [Visual Studio Code for the Web](https://vscode.dev/)
 
@@ -55,7 +55,7 @@ Lingkungan pengembangan online dari Microsoft. Namun, tidak mungkin untuk mengek
 
 - [paiza.IO](https://paiza.io/projects/CGAcQLfW-IOXYy8Dq2OHBw?locale=ja-jp)
 
-Lingkungan eksekusi online yang mendukung 24 bahasa utama termasuk C, C++, Java, Ruby, Python, PHP, Perl, dll.
+Lingkungan eksekusi online yang mendukung 24 bahasa utama termasuk C, C++, [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), Ruby, Python, PHP, Perl, dll.
 
 - [CodePen](https://codepen.io/)
 

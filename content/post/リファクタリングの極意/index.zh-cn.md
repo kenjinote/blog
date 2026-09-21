@@ -216,7 +216,7 @@ C++98/03 时代的代码中，`new` 和 `delete` 散布在代码的各个角落�
 ### RAII (Resource Acquisition Is Initialization)
 RAII 是 C++ 中最重要的惯用法。它将资源的获取与对象的初始化（构造函数）结合起来，并将资源的释放与对象的销毁（析构函数）结合起来，从而保证在离开作用域时必定会释放资源。
 
-即使发生异常 (Exceptions)，在栈展开 (Stack Unwinding) 的过程中也会自动调用局部变量的析构函数，从而防止资源泄漏。
+即使发生异常 (Exceptions)，在栈展开 ([Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/) Unwinding) 的过程中也会自动调用局部变量的析构函数，从而防止资源泄漏。
 
 **Before (危险的遗留代码)**
 ```cpp

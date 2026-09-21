@@ -161,7 +161,7 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 ターミナルの操作において、最も頻繁に行うアクションの一つが **「過去に実行した複雑なコマンドを履歴から探し出して再実行する」** ことです。標準の `Ctrl+R`（リバースサーチ）は完全一致検索であるため、「たしか docker run でボリュームマウントして…」といった曖昧な記憶からコマンドを引き出すのは困難です。
 
-この課題をエレガントに解決するのが、Go言語で書かれた超高速な汎用あいまい検索ツール **`fzf`** です。
+この課題をエレガントに解決するのが、[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語で書かれた超高速な汎用あいまい検索ツール **`fzf`** です。
 
 ## 4.1. fzf によるあいまい検索の[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)
 

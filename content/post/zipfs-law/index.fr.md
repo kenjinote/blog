@@ -75,7 +75,7 @@ L'exemple le plus classique est la fréquence des mots dans les corpus de textes
 3. **and** : environ 2,8 % de probabilité d'apparition
 4. **to** : environ 2,6 % de probabilité d'apparition
 
-Ainsi, alors que quelques dizaines de mots fréquents représentent près de la moitié de l'ensemble du texte, des centaines de milliers d'autres mots n'apparaissent presque jamais. Ce phénomène de « longue traîne » est extrêmement important pour la création d'index de moteurs de recherche et la conception de vocabulaires pour les grands modèles de langage (LLM). Dans le domaine du traitement du langage naturel, les mots qui apparaissent beaucoup trop fréquemment (mots vides) transportent peu d'informations, on utilise donc des techniques comme TF-IDF pour réduire leur poids.
+Ainsi, alors que quelques dizaines de mots fréquents représentent près de la moitié de l'ensemble du texte, des centaines de milliers d'autres mots n'apparaissent presque jamais. Ce phénomène de « longue traîne » est extrêmement important pour la création d'index de moteurs de recherche et la conception de vocabulaires pour les grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)). Dans le domaine du traitement du langage naturel, les mots qui apparaissent beaucoup trop fréquemment (mots vides) transportent peu d'informations, on utilise donc des techniques comme TF-IDF pour réduire leur poids.
 
 ## 4.2. Distribution de la population urbaine
 

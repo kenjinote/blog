@@ -11,7 +11,7 @@ tags: ["ChatGPT", "Gemini", "Claude", "API", "Comparison"]
 
 # ChatGPT・Gemini・Claude API徹底比較！該如何選擇？
 
-AI技術的發展日新月異，特別是在大型語言模型（LLM: Large Language Model）領域，OpenAI的ChatGPT（GPT系列）、Google的Gemini，以及Anthropic的Claude正展開激烈的三足鼎立之爭。2026年的今天，各家公司以數月甚至數週為單位推出新的模型與API功能，對於開發者及企業IT架構師而言，「該將哪個API整合到產品中」的問題，已成為左右專案成功與否的極關鍵決策。
+AI技術的發展日新月異，特別是在大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/): Large Language Model）領域，OpenAI的ChatGPT（GPT系列）、Google的Gemini，以及Anthropic的Claude正展開激烈的三足鼎立之爭。2026年的今天，各家公司以數月甚至數週為單位推出新的模型與API功能，對於開發者及企業IT架構師而言，「該將哪個API整合到產品中」的問題，已成為左右專案成功與否的極關鍵決策。
 
 本文將針對這三大AI供應商的API，不僅列舉規格，更從開發者視角，深入比較與解說架構設計、詳細的計費結構、延遲（Latency）的數學分析、使用Python與Node.js的具體實作範例，乃至於提示快取（Prompt Caching）等最新的成本最佳化手法。
 
@@ -79,7 +79,7 @@ graph TD
 
 ## 4. 延遲與效能的數學分析
 
-在即時應用程式中，延遲（Latency）直接關係到使用者體驗（UX）。LLM API的延遲 $T_{total}$ 可在數學上建立如下模型：
+在即時應用程式中，延遲（Latency）直接關係到使用者體驗（UX）。[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) API的延遲 $T_{total}$ 可在數學上建立如下模型：
 
 $$ T_{total} = T_{network} + T_{TTFT} + (N \times T_{TPOT}) $$
 
@@ -90,7 +90,7 @@ $$ T_{total} = T_{network} + T_{TTFT} + (N \times T_{TPOT}) $$
 - $T_{TPOT}$ (Time Per Output Token): 生成單一Token所需的時間。由於是自迴歸（Autoregressive）模型，會依賴先前的輸出進行串行運算。
 
 ### 4.1 自注意力機制的運算複雜度
-Transformer架構中的自注意力（Self-Attention）運算複雜度，會相對於輸入序列長度 $L$ 呈二次函數增長。
+[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)架構中的自注意力（Self-Attention）運算複雜度，會相對於輸入序列長度 $L$ 呈二次函數增長。
 
 $$ \text{Complexity} = O(L^2 \cdot d) $$
 
@@ -210,7 +210,7 @@ if __name__ == "__main__":
 
 ## 8. 使用Node.js實作工具呼叫 (Tool Calling)
 
-為了讓LLM不僅僅是聊天機器人，而是能與外部系統串聯的「AI代理（AI Agent）」，工具呼叫（Tool Calling或Function Calling）是不可或缺的。以下是使用Node.js（TypeScript）讓OpenAI API呼叫天氣API的範例。
+為了讓[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)不僅僅是聊天機器人，而是能與外部系統串聯的「AI代理（AI Agent）」，工具呼叫（Tool Calling或Function Calling）是不可或缺的。以下是使用Node.js（TypeScript）讓OpenAI API呼叫天氣API的範例。
 
 ```typescript
 import OpenAI from "openai";
@@ -312,7 +312,7 @@ sequenceDiagram
 
 ## 11. 企業級的安全性與合規性
 
-當企業在正式環境中使用LLM API時，最擔憂的往往是「自家資料是否會被用於AI訓練」以及「是否符合合規性要求」。
+當企業在正式環境中使用[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) API時，最擔憂的往往是「自家資料是否會被用於AI訓練」以及「是否符合合規性要求」。
 
 這3家公司都明言，透過API傳送的資料（提示詞與回應） **不會被用於模型訓練（Zero Data Retention / No Training on Customer Data）** （※免費的消費者用Web聊天介面不在此限）。
 
@@ -340,7 +340,7 @@ sequenceDiagram
    能妥善處理各式各樣的任務，對第三方工具的支援也最豐富。若需要利用Structured Outputs進行確實的JSON解析，或是使用o1模型進行超高階邏輯推論，OpenAI生態系統是不可或缺的。
 
 ### 推薦多模型路由 (Multi-model Routing)
-未來的趨勢將不再依賴單一API（避免供應商鎖定），而是根據任務難易度或重要性動態切換模型的 **「LLM路由」** 架構。
+未來的趨勢將不再依賴單一API（避免供應商鎖定），而是根據任務難易度或重要性動態切換模型的 **「[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)路由」** 架構。
 例如，對於使用者簡單的提問，使用廉價且快速的 `GPT-4o-mini` 或 `Gemini 1.5 Flash` 來回應；僅當判斷需要複雜處理時，才將任務回退（Fallback）給 `Claude 3.5 Sonnet`。如此一來便能實現成本與效能的最佳平衡。
 
 AI的進化未曾停歇。請深刻理解各家API的優勢與劣勢，以及其架構特性，並建構出具備靈活性與可擴展性的AI應用程式吧。

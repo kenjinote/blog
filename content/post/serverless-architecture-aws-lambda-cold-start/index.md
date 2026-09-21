@@ -77,7 +77,7 @@ AWS Lambdaは当初、Linuxコンテナ（LXC/[Docker](https://kenji.blog/p/dock
 
 ### 3.1. Firecrackerとは何か？
 
-Firecrackerは、KVM（Kernel-based Virtual Machine）を利用して、軽量な「マイクロVM（MicroVM）」をミリ秒単位で起動するための仮想マシンモニター（VMM）です。Rust言語で書かれており、従来の仮想マシン（QEMUなど）と比較して、不要なデバイスモデルを極限まで削ぎ落とすことで、極めて高速な起動と低いメモリオーバーヘッドを実現しています。
+Firecrackerは、KVM（Kernel-based Virtual Machine）を利用して、軽量な「マイクロVM（MicroVM）」をミリ秒単位で起動するための仮想マシンモニター（VMM）です。[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語で書かれており、従来の仮想マシン（QEMUなど）と比較して、不要なデバイスモデルを極限まで削ぎ落とすことで、極めて高速な起動と低いメモリオーバーヘッドを実現しています。
 
 ```mermaid
 graph TD
@@ -142,7 +142,7 @@ stateDiagram-v2
 
 1. **コードのダウンロードと解凍**: デプロイパッケージがS3からダウンロードされ、環境に展開されます。パッケージサイズ（依存ライブラリの量）に比例して時間がかかります。
 2. **MicroVMの起動**: Firecrackerが起動します。ここはAWS側の最適化により非常に高速（ミリ秒単位）です。
-3. **ランタイムの初期化**: Node.js、Python、Javaなどのプロセスが起動します。特にJavaやC#などのJIT（Just-In-Time）コンパイルを行う言語は、ここで大きな時間を消費します。
+3. **ランタイムの初期化**: Node.js、Python、[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)などのプロセスが起動します。特にJavaやC#などのJIT（Just-In-Time）コンパイルを行う言語は、ここで大きな時間を消費します。
 4. **関数の初期化 (Init Phase)**: コードのグローバルスコープ（ハンドラー関数の外側）が評価されます。ここでDBへの接続プールを作成したり、重いSDKを初期化したりすると、初期化時間が長引きます。
 
 ### 4.2. 確率論から見るコールドスタート
@@ -162,12 +162,12 @@ $$ P_{warm} \approx 1 - e^{-\lambda \cdot T_w} $$
 
 コールドスタートはサーバーレスの宿命ですが、アーキテクチャ設計や実装の工夫により、その影響を最小限に抑えることが可能です。
 
-### 5.1. プログラミング言語の選択
+### 5.1. [プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の選択
 
 コールドスタートの速度は言語によって劇的に異なります。
 
-- **最速グループ**: Go、Rust、C++ などのAOT（Ahead-Of-Time）コンパイル言語、および軽量なスクリプト言語（Python、Node.js）。これらはコールドスタートが数百ミリ秒以内に収まりやすいです。
-- **遅いグループ**: Java、C# (.NET)。JVMやCLRの起動、JITコンパイルのオーバーヘッドにより、数秒〜十数秒のコールドスタートが発生する場合があります。
+- **最速グループ**: [Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)、[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)、C++ などのAOT（Ahead-Of-Time）コンパイル言語、および軽量なスクリプト言語（Python、Node.js）。これらはコールドスタートが数百ミリ秒以内に収まりやすいです。
+- **遅いグループ**: [Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)、C# (.NET)。JVMやCLRの起動、JITコンパイルのオーバーヘッドにより、数秒〜十数秒のコールドスタートが発生する場合があります。
 
 **LLRT (Low Latency Runtime)** のような、AWSが提供する実験的な軽量JavaScriptランタイムを利用することで、Node.jsの起動速度をさらに短縮するアプローチも注目されています。
 
@@ -209,7 +209,7 @@ const dynamo = DynamoDBDocumentClient.from(client);
 
 ## 6. ゲームチェンジャー：AWS Lambda SnapStart
 
-Javaのような起動の遅い言語の救世主として登場したのが **AWS Lambda SnapStart** です。これは仮想マシンの状態をスナップショット化し、コールドスタート時にそれを復元するという画期的な技術です。
+[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)のような起動の遅い言語の救世主として登場したのが **AWS Lambda SnapStart** です。これは仮想マシンの状態をスナップショット化し、コールドスタート時にそれを復元するという画期的な技術です。
 
 背景技術として **CRaU** (Checkpoint/Restore in Userspace) および FirecrackerのMicroVMスナップショット機能が利用されています。
 
@@ -252,7 +252,7 @@ sequenceDiagram
 
 ### 6.2. SnapStartのメリットと注意点
 
-SnapStartを有効にすると、Java関数のコールドスタート時間が **最大10倍以上** 高速化されます。ランタイムの起動やJITコンパイル、Spring Bootなどの重いフレームワークの初期化が「デプロイ時」に前倒しされるためです。
+SnapStartを有効にすると、[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)関数のコールドスタート時間が **最大10倍以上** 高速化されます。ランタイムの起動やJITコンパイル、Spring Bootなどの重いフレームワークの初期化が「デプロイ時」に前倒しされるためです。
 
 ただし、いくつかの注意点があります。
 

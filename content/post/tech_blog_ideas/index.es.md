@@ -184,7 +184,7 @@ Al utilizar la función de retroenlace (backlink) de Obsidian (`[[Nombre de la n
 
 ## 5. Búsqueda semántica utilizando una base de datos vectorial (Pinecone) y OpenAI Embeddings
 
-Cuando el número de notas aumenta a cientos o miles, resulta difícil encontrar la nota deseada mediante una simple búsqueda de palabras clave (búsqueda de texto completo). La búsqueda semántica (de significado) que aprovecha los Embeddings de los Modelos de Lenguaje Grande (LLM) demuestra su poder cuando "no puedes recordar las palabras clave, pero quieres encontrar una nota que sea conceptualmente similar".
+Cuando el número de notas aumenta a cientos o miles, resulta difícil encontrar la nota deseada mediante una simple búsqueda de palabras clave (búsqueda de texto completo). La búsqueda semántica (de significado) que aprovecha los Embeddings de los Modelos de Lenguaje Grande ([LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/)) demuestra su poder cuando "no puedes recordar las palabras clave, pero quieres encontrar una nota que sea conceptualmente similar".
 
 Utilizando el modelo `text-embedding-ada-002` (o `text-embedding-3-small`) de OpenAI, cada nota Markdown de Obsidian se convierte en un vector multidimensional (un arreglo de números de cientos a miles de dimensiones). En este espacio vectorial, los vectores de frases con significados similares también tienen una distancia física cercana.
 

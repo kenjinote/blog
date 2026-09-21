@@ -14,7 +14,7 @@ description: 'Windows 11におけるローカルAI機能の実装方法、Window
 
 ## 1. はじめに：AIがネイティブに組み込まれるWindowsの新時代
 
-近年、AI技術の進化は目覚ましく、クラウド上での大規模言語モデル（LLM）の活用から、エッジデバイス（ローカルPC）でのAI推論へと急速にパラダイムシフトが起きています。その中核を担うのが、MicrosoftがWindows 11向けに提供している「Windows Copilot Runtime」と、それを操作するための「Microsoft.Windows.AI」APIです。
+近年、AI技術の進化は目覚ましく、クラウド上での[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の活用から、エッジデバイス（ローカルPC）でのAI推論へと急速にパラダイムシフトが起きています。その中核を担うのが、MicrosoftがWindows 11向けに提供している「Windows Copilot Runtime」と、それを操作するための「Microsoft.Windows.AI」APIです。
 
 クラウドAPI（OpenAIやAzure OpenAIなど）を利用したアプリケーション開発は容易ですが、レイテンシ、プライバシー、そして継続的なコストという課題がつきまといます。一方、ローカルでAIモデルを動かすことで、機密データをデバイス外に出すことなく、[オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)でも機能する超低遅延なアプリケーションを実現できます。
 
@@ -62,7 +62,7 @@ P_{\text{peak}} = 1.5 \times 10^9 \times 4 \times 4096 \times 2 \approx 49.15 \t
 $$
 となります。Windows 11のCopilot+ PC要件である40 TOPSをクリアする性能であることが数学的に示されます。
 
-また、AIモデル、特にLLMの推論（デコードフェーズ）は **メモリ律速（Memory-Bound）** になりがちです。システムメモリの理論帯域幅 $BW$ は次のように計算されます。
+また、AIモデル、特に[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)の推論（デコードフェーズ）は **メモリ律速（Memory-Bound）** になりがちです。システムメモリの理論帯域幅 $BW$ は次のように計算されます。
 
 $$
 BW = f_{\text{mem}} \times W_{\text{bus}} \times \frac{2}{8}
@@ -306,7 +306,7 @@ Windows AI APIやDirectMLを活用して最上級のAIアプリケーション�
 ### 7.1 モデルの量子化 (Quantization) と Olive Toolkit
 NPUの真の力を発揮させるには、AIモデルの重みとアクティベーションをFP32（単精度浮動小数点）からINT8またはINT4へと **量子化（Quantization）** することが絶対条件です。NPUのアーキテクチャは整数演算に特化しており、FP32と比較してINT8では理論上4倍のスループットと大幅な省電力を実現します。
 
-Microsoftが提供する `Olive (ONNX Live)` ツールチェーンを使用することで、PyTorch等のモデルをWindows環境向けに自動最適化できます。Oliveは、Transformerモデルに対する特殊なアテンション最適化や、ハードウェアごとの[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)コンパイルを強力に支援します。
+Microsoftが提供する `Olive (ONNX Live)` ツールチェーンを使用することで、PyTorch等のモデルをWindows環境向けに自動最適化できます。Oliveは、[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)モデルに対する特殊なアテンション最適化や、ハードウェアごとの[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)コンパイルを強力に支援します。
 
 ### 7.2 バッチ処理 vs 対話型ストリーミングのトレードオフ
 API呼び出しにおいて、複数の推論リクエストをまとめてバッチ処理することで、NPUの利用効率（Compute Utilization）を高めることができます。しかし、チャットボットのような対話型UIの場合、スループットよりも最初のトークンが表示されるまでの時間（TTFT: Time To First Token）がユーザー体験（UX）を決定づけます。

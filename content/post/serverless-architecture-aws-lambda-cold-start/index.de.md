@@ -78,7 +78,7 @@ Ursprünglich nutzte AWS Lambda Linux-Container (ähnlich wie LXC/[Docker](https
 
 ### 3.1. Was ist Firecracker?
 
-Firecracker ist ein Virtual Machine Monitor (VMM), der KVM (Kernel-based Virtual Machine) verwendet, um leichtgewichtige „MicroVMs“ im Millisekundenbereich zu starten. Es ist in der Programmiersprache Rust geschrieben und erreicht im Vergleich zu herkömmlichen virtuellen Maschinen (wie QEMU) extrem schnelle Startzeiten und einen geringen Speicher-Overhead, indem unnötige Gerätemodelle auf das absolute Minimum reduziert werden.
+Firecracker ist ein Virtual Machine Monitor (VMM), der KVM (Kernel-based Virtual Machine) verwendet, um leichtgewichtige „MicroVMs“ im Millisekundenbereich zu starten. Es ist in der Programmiersprache [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) geschrieben und erreicht im Vergleich zu herkömmlichen virtuellen Maschinen (wie QEMU) extrem schnelle Startzeiten und einen geringen Speicher-Overhead, indem unnötige Gerätemodelle auf das absolute Minimum reduziert werden.
 
 ```mermaid
 graph TD
@@ -143,7 +143,7 @@ Die Zeit, die für einen Kaltstart benötigt wird, kann grob in den **AWS-seitig
 
 1. **Herunterladen und Entpacken des Codes**: Das Bereitstellungspaket wird von S3 heruntergeladen und in die Umgebung extrahiert. Die benötigte Zeit ist proportional zur Paketgröße (Menge der Abhängigkeiten).
 2. **Starten der MicroVM**: Firecracker wird gestartet. Dies ist dank Optimierungen durch AWS extrem schnell (im Millisekundenbereich).
-3. **Initialisierung der Laufzeitumgebung**: Der Node.js-, Python- oder Java-Prozess wird gestartet. Insbesondere Sprachen, die JIT-Kompilierung (Just-In-Time) verwenden, wie Java und C#, verbrauchen hier eine beträchtliche Menge an Zeit.
+3. **Initialisierung der Laufzeitumgebung**: Der Node.js-, Python- oder [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)-Prozess wird gestartet. Insbesondere Sprachen, die JIT-Kompilierung (Just-In-Time) verwenden, wie Java und C#, verbrauchen hier eine beträchtliche Menge an Zeit.
 4. **Initialisierung der Funktion (Init-Phase)**: Der globale Geltungsbereich des Codes (außerhalb der Handler-Funktion) wird ausgewertet. Wenn Sie hier einen Datenbankverbindungspool erstellen oder schwere SDKs initialisieren, verlängert sich die Initialisierungszeit.
 
 ### 4.2. Kaltstarts aus Sicht der Wahrscheinlichkeitstheorie
@@ -167,8 +167,8 @@ Kaltstarts sind das Schicksal von Serverless, aber ihre Auswirkungen können dur
 
 Die Geschwindigkeit von Kaltstarts variiert drastisch je nach Sprache.
 
-- **Die schnellste Gruppe**: AOT-kompilierte (Ahead-Of-Time) Sprachen wie Go, Rust und C++ sowie leichtgewichtige Skriptsprachen (Python, Node.js). Diese halten Kaltstarts in der Regel unter ein paar hundert Millisekunden.
-- **Die langsame Gruppe**: Java, C# (.NET). Durch den Start der JVM oder CLR und den Overhead der JIT-Kompilierung können Kaltstarts von einigen Sekunden bis zu mehr als zehn Sekunden auftreten.
+- **Die schnellste Gruppe**: AOT-kompilierte (Ahead-Of-Time) Sprachen wie [Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) und C++ sowie leichtgewichtige Skriptsprachen (Python, Node.js). Diese halten Kaltstarts in der Regel unter ein paar hundert Millisekunden.
+- **Die langsame Gruppe**: [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/), C# (.NET). Durch den Start der JVM oder CLR und den Overhead der JIT-Kompilierung können Kaltstarts von einigen Sekunden bis zu mehr als zehn Sekunden auftreten.
 
 Auch der Ansatz, experimentelle, leichtgewichtige JavaScript-Laufzeitumgebungen von AWS wie **LLRT (Low Latency Runtime)** zu nutzen, um die Startgeschwindigkeit von Node.js weiter zu reduzieren, gewinnt an Aufmerksamkeit.
 
@@ -210,7 +210,7 @@ Allerdings gibt es ein Dilemma (einen Kompromiss): Da auch im Leerlauf Kosten an
 
 ## 6. Ein Game-Changer: AWS Lambda SnapStart
 
-Als Retter für langsam startende Sprachen wie Java wurde **AWS Lambda SnapStart** eingeführt. Dies ist eine bahnbrechende Technologie, die einen Snapshot (Schnappschuss) des Zustands der virtuellen Maschine erstellt und diesen bei einem Kaltstart wiederherstellt.
+Als Retter für langsam startende Sprachen wie [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) wurde **AWS Lambda SnapStart** eingeführt. Dies ist eine bahnbrechende Technologie, die einen Snapshot (Schnappschuss) des Zustands der virtuellen Maschine erstellt und diesen bei einem Kaltstart wiederherstellt.
 
 Als Hintergrundtechnologien werden **CRaU** (Checkpoint/Restore in Userspace) und die MicroVM-Snapshot-Funktion von Firecracker verwendet.
 
@@ -253,7 +253,7 @@ sequenceDiagram
 
 ### 6.2. Vorteile und Hinweise zu SnapStart
 
-Wenn Sie SnapStart aktivieren, wird die Kaltstartzeit von Java-Funktionen **bis zu 10-mal oder mehr** beschleunigt. Dies liegt daran, dass der Start der Laufzeitumgebung, die JIT-Kompilierung und die Initialisierung schwerer Frameworks wie Spring Boot auf die „Bereitstellungszeit“ vorgezogen werden.
+Wenn Sie SnapStart aktivieren, wird die Kaltstartzeit von [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)-Funktionen **bis zu 10-mal oder mehr** beschleunigt. Dies liegt daran, dass der Start der Laufzeitumgebung, die JIT-Kompilierung und die Initialisierung schwerer Frameworks wie Spring Boot auf die „Bereitstellungszeit“ vorgezogen werden.
 
 Es gibt jedoch einige Dinge zu beachten:
 

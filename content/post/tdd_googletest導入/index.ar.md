@@ -316,7 +316,7 @@ genhtml coverage.info --output-directory coverage_report
 
 ### 7.1 زيادة وقت البناء (وقت الترجمة - Compile Time)
 تميل لغة C++ إلى استغراق أوقات ترجمة أطول بسبب الاستخدام المكثف للقوالب (templates) وتضمين الترويسات الكبيرة (headers). نظراً لأن دورة "Red-Green-Refactor" في TDD يجب أن تتم بسرعة، فإن التأخير في وقت البناء يعد أمراً قاتلاً.
-**الحل**: استخدم الإعلانات الأمامية (Forward Declaration) ومصطلح Pimpl (Pointer to implementation) لتقليل تبعيات ملفات الترويسة إلى الحد الأدنى. بالإضافة إلى ذلك، فإن تقديم أدوات التخزين المؤقت للبناء مثل Ccache فعال جداً.
+**الحل**: استخدم الإعلانات الأمامية (Forward Declaration) ومصطلح Pimpl ([Pointer](https://kenji.blog/ar/p/c-language-pointers-memory-management-stack-heap/) to implementation) لتقليل تبعيات ملفات الترويسة إلى الحد الأدنى. بالإضافة إلى ذلك، فإن تقديم أدوات التخزين المؤقت للبناء مثل Ccache فعال جداً.
 
 ### 7.2 إدخال TDD في الكود القديم (Legacy Code)
 من الصعب جداً تطبيق TDD لاحقاً على كود أحادي متآلف (Monolithic) ضخم موجود مسبقاً.

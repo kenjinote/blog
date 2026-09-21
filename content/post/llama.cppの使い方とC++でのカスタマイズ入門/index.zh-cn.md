@@ -10,15 +10,15 @@ tags: ["llama.cpp", "C++", "LLM", "AI", "Customization"]
 description: '全面涵盖从llama.cpp基础到基于C++的高级定制、Transformer的数学背景以及ggml架构分析的完整指南。'
 ---
 
-近年来，大型语言模型（LLM）的进化非常迅猛，其应用范围每天都在扩大。然而，要在本地环境中运行拥有数十亿、数百亿参数的模型，通常需要配备海量显存的高端GPU。打破这种“硬件壁垒”，让在普通PC、Mac甚至像Raspberry Pi这样的设备上进行LLM的实用推理成为可能的，就是 **llama.cpp** 。
+近年来，大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的进化非常迅猛，其应用范围每天都在扩大。然而，要在本地环境中运行拥有数十亿、数百亿参数的模型，通常需要配备海量显存的高端GPU。打破这种“硬件壁垒”，让在普通PC、Mac甚至像Raspberry Pi这样的设备上进行LLM的实用推理成为可能的，就是 **llama.cpp** 。
 
-本文不仅将介绍仅仅作为命令行工具的使用方法，还将面向工程师极其详细地解析其底层技术 `ggml` 的架构、Transformer与量化的数学背景，以及如何利用 C++ API 将 LLM 嵌入到自有应用程序并进行定制。
+本文不仅将介绍仅仅作为命令行工具的使用方法，还将面向工程师极其详细地解析其底层技术 `ggml` 的架构、[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)与量化的数学背景，以及如何利用 C++ API 将 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 嵌入到自有应用程序并进行定制。
 
 ---
 
 ## 1. llama.cpp 与 ggml 概述
 
-`llama.cpp` 是由 Georgi Gerganov 开发的、使用 C/C++ 编写的轻量级 LLM 推理引擎。它最初的目的是为了让 Meta 的 LLaMA 模型在 Apple Silicon (M1/M2 Mac) 上高速运行，但现在已支持各种架构和模型。
+`llama.cpp` 是由 Georgi Gerganov 开发的、使用 C/C++ 编写的轻量级 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 推理引擎。它最初的目的是为了让 Meta 的 LLaMA 模型在 Apple Silicon (M1/M2 Mac) 上高速运行，但现在已支持各种架构和模型。
 
 它最大的特点在于 **它是纯粹的 C/C++ 实现，没有外部依赖** 。由于不需要 Python 或 PyTorch 这种庞大的生态系统，它可以编译为单个可执行文件，因此部署极其简单。
 
@@ -32,7 +32,7 @@ description: '全面涵盖从llama.cpp基础到基于C++的高级定制、Transf
 
 ---
 
-## 2. 数学背景: Transformer 与量化 (Quantization)
+## 2. 数学背景: [Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 与量化 (Quantization)
 
 为了深入理解 llama.cpp，有必要了解它计算的数学公式，以及它是如何对计算进行近似的。
 
@@ -153,7 +153,7 @@ cmake --build . --config Release -j 8
 ## 5. C++ 定制入门: 使用 llama.cpp API
 
 接下来，我们将讲解本文的主题，即如何通过 C++ 代码控制 llama.cpp。
-如果你不仅想使用命令行工具，还想将 LLM 嵌入到你自己的应用程序（例如游戏引擎、桌面应用、嵌入式系统等）中，就需要直接调用 C++ API。
+如果你不仅想使用命令行工具，还想将 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 嵌入到你自己的应用程序（例如游戏引擎、桌面应用、嵌入式系统等）中，就需要直接调用 C++ API。
 
 llama.cpp 主要通过一个名为 `llama.h` 的头文件提供 C 语言接口。在 C++ 中调用时，也使用此接口。
 
@@ -223,7 +223,7 @@ int main(int argc, char ** argv) {
 
 ### 5.3 提示词的分词 (Tokenization)
 
-LLM 并不能直接理解文本，而是将其作为整数 ID（Token）的序列进行处理。需要将输入字符串转换为 Token。
+[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 并不能直接理解文本，而是将其作为整数 ID（Token）的序列进行处理。需要将输入字符串转换为 Token。
 
 ```cpp
     std::string prompt = "Q: 日本的首都是哪里？\nA:";
@@ -377,7 +377,7 @@ for (llama_token bad_tok : forbidden_tokens) {
 
 虽然 Python 生态系统对于原型开发非常方便，但在要求部署到边缘设备、集成到游戏中或需要进行实时处理的生产环境中，基于 C/C++ 的 `llama.cpp` 的直接控制将展现出压倒性的优势。
 
-希望大家也务必尝试亲手编写 C++ 代码，体验在本地环境中自由驾驭 LLM 的乐趣。
+希望大家也务必尝试亲手编写 C++ 代码，体验在本地环境中自由驾驭 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 的乐趣。
 
 > **参考链接集**
 > - [llama.cpp Official Repository](https://github.com/ggerganov/llama.cpp)

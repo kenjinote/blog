@@ -64,7 +64,7 @@ Para informar explícitamente a los motores de búsqueda que la página es un "a
 
 ### 1.3 HTML semántico y optimización de la estructura del documento
 
-El anidamiento adecuado de los encabezados (`h1` a `h6`) es fundamental, pero en un blog técnico se requiere el uso preciso de etiquetas semánticas de HTML5 como `article`, `section`, `aside` y `nav`. Además, al utilizar correctamente `<code>` y `<pre>` para el código fuente, `<kbd>` para la entrada del teclado, y `<var>` para variables, podrá proporcionar un HTML legible por máquinas. Esta es también una medida muy eficaz para la indexación de contenido por IA (recopilación de datos de entrenamiento LLM o sistemas RAG).
+El anidamiento adecuado de los encabezados (`h1` a `h6`) es fundamental, pero en un blog técnico se requiere el uso preciso de etiquetas semánticas de HTML5 como `article`, `section`, `aside` y `nav`. Además, al utilizar correctamente `<code>` y `<pre>` para el código fuente, `<kbd>` para la entrada del teclado, y `<var>` para variables, podrá proporcionar un HTML legible por máquinas. Esta es también una medida muy eficaz para la indexación de contenido por IA (recopilación de datos de entrenamiento [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) o sistemas RAG).
 
 ---
 

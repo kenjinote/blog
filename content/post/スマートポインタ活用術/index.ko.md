@@ -9,7 +9,7 @@ categories: ["programming", "cpp"]
 tags: ["C++", "Smart Pointers", "Memory Management", "Modern C++"]
 ---
 
-C++에서의 메모리 관리는 오랜 기간 동안 개발자에게 가장 큰 과제 중 하나였습니다. 수동으로 `new`와 `delete`에 의존하는 기존의 메모리 관리 스타일은 메모리 누수, 댕글링 포인터(dangling pointer), 이중 해제(double free)와 같은 심각한 버그를 일으키는 온상이었습니다. 하지만 Modern C++(C++11 이후)의 등장으로 상황은 극적으로 변했습니다. 그 핵심을 이루는 것이 바로 '스마트 포인터(Smart Pointers)'입니다.
+C++에서의 메모리 관리는 오랜 기간 동안 개발자에게 가장 큰 과제 중 하나였습니다. 수동으로 `new`와 `delete`에 의존하는 기존의 메모리 관리 스타일은 메모리 누수, 댕글링 포인터(dangling pointer), 이중 해제(double free)와 같은 심각한 버그를 일으키는 온상이었습니다. 하지만 Modern C++(C++11 이후)의 등장으로 상황은 극적으로 변했습니다. 그 핵심을 이루는 것이 바로 '스마트 포인터(Smart [Pointer](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/)s)'입니다.
 
 본 기사에서는 메모리 누수를 근절하고 안전하며 효율적인 리소스 관리를 실현하기 위한 강력한 도구인 `std::unique_ptr`, `std::shared_ptr`, 그리고 `std::weak_ptr`의 원리와 고급 활용법에 대해, 내부 구현(컨트롤 블록과 원자적 연산), 성능에 미치는 영향, 수학적 모델을 통한 참조 카운트의 공식화를 곁들여 아주 상세히 해설합니다.
 
@@ -36,7 +36,7 @@ void legacy_function() {
 
 ### 2.1 제로 오버헤드의 원칙
 
-`std::unique_ptr`의 가장 큰 매력은 그 성능입니다. 커스텀 딜리터(deleter)를 가지지 않는 기본 상태에서 `std::unique_ptr`의 크기는 원시 포인터(Raw Pointer)와 완전히 동일합니다. 불필요한 멤버 변수는 전혀 가지지 않으며 가상 함수도 사용되지 않습니다. 컴파일러의 최적화에 의해 `std::unique_ptr`를 통한 접근은 원시 포인터와 동등한 어셈블리 코드로 전개됩니다.
+`std::unique_ptr`의 가장 큰 매력은 그 성능입니다. 커스텀 딜리터(deleter)를 가지지 않는 기본 상태에서 `std::unique_ptr`의 크기는 원시 포인터(Raw [Pointer](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/))와 완전히 동일합니다. 불필요한 멤버 변수는 전혀 가지지 않으며 가상 함수도 사용되지 않습니다. 컴파일러의 최적화에 의해 `std::unique_ptr`를 통한 접근은 원시 포인터와 동등한 어셈블리 코드로 전개됩니다.
 
 ### 2.2 소유권 이동과 `std::move`
 

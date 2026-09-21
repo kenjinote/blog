@@ -184,7 +184,7 @@ Usando o recurso de backlinks (`[[Nome da Nota]]`) do Obsidian, por exemplo, ao 
 
 ## 5. Busca Semântica usando Banco de Dados Vetorial (Pinecone) e OpenAI Embeddings
 
-Quando o número de anotações chega a centenas ou milhares, torna-se difícil encontrar a nota desejada apenas através de pesquisas por palavras-chave (pesquisa de texto completo). Se você pensar "Não consigo me lembrar da palavra-chave, mas quero buscar uma anotação conceitualmente semelhante", a busca semântica, que aproveita os Embeddings de um modelo de linguagem de grande escala (LLM), mostrará sua eficácia.
+Quando o número de anotações chega a centenas ou milhares, torna-se difícil encontrar a nota desejada apenas através de pesquisas por palavras-chave (pesquisa de texto completo). Se você pensar "Não consigo me lembrar da palavra-chave, mas quero buscar uma anotação conceitualmente semelhante", a busca semântica, que aproveita os Embeddings de um modelo de linguagem de grande escala ([LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/)), mostrará sua eficácia.
 
 Usando os modelos `text-embedding-ada-002` ou `text-embedding-3-small` da OpenAI, cada anotação Markdown do Obsidian é convertida em vetores multidimensionais (conjuntos numéricos contendo de centenas a milhares de dimensões). Nesse espaço vetorial, sentenças com significados próximos também têm distâncias físicas reduzidas.
 

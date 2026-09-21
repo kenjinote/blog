@@ -12,7 +12,7 @@ description: '온프레미스 환경에서 TinyLLaMA를 효율적이고 가장 �
 
 ## 1. 시작하며: 왜 지금, TinyLLaMA와 온프레미스인가?
 
-대규모 언어 모델(LLM)의 진화는 무서운 속도로 진행되고 있지만, 그에 따라 모델의 파라미터 수도 수천억 규모로 계속 팽창하고 있습니다. GPT-4나 Claude 3와 같은 초거대 모델은 비할 데 없는 성능을 자랑하는 반면, 추론이나 학습에 드는 계산 비용, 그리고 외부 API를 이용할 때의 보안 및 데이터 프라이버시 우려가 기업에게 큰 장애물이 되고 있습니다. 특히 기밀성이 높은 사내 데이터나 개인정보를 다루는 업무에서는 클라우드상의 퍼블릭 LLM API로 데이터를 전송하는 것이 컴플라이언스(GDPR이나 APPI 등) 관점에서 허용되지 않는 경우가 많습니다.
+대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 진화는 무서운 속도로 진행되고 있지만, 그에 따라 모델의 파라미터 수도 수천억 규모로 계속 팽창하고 있습니다. GPT-4나 Claude 3와 같은 초거대 모델은 비할 데 없는 성능을 자랑하는 반면, 추론이나 학습에 드는 계산 비용, 그리고 외부 API를 이용할 때의 보안 및 데이터 프라이버시 우려가 기업에게 큰 장애물이 되고 있습니다. 특히 기밀성이 높은 사내 데이터나 개인정보를 다루는 업무에서는 클라우드상의 퍼블릭 LLM API로 데이터를 전송하는 것이 컴플라이언스(GDPR이나 APPI 등) 관점에서 허용되지 않는 경우가 많습니다.
 
 그래서 각광받고 있는 것이 **소규모 언어 모델(SLM: Small Language Models)** 과 **온프레미스 환경에서의 로컬 운영 ** 입니다. 그중에서도 '**TinyLLaMA**'는 불과 1.1B(11억) 파라미터라는 콤팩트한 크기이면서도 약 3조 토큰이라는 방대한 데이터 세트로 사전 학습되어, 동급 모델과 비교해 경이로운 성능을 발휘합니다.
 
@@ -37,7 +37,7 @@ TinyLLaMA는 Meta사가 개발한 LLaMA(Large Language Model Meta AI) 아키텍�
 4. **Grouped Query Attention (GQA):**
    Multi-Head Attention (MHA)와 Multi-Query Attention (MQA)의 중간적인 접근 방식으로, 키와 밸류의 헤드를 그룹화함으로써 메모리 대역폭을 절약하고 추론 속도를 획기적으로 향상시킵니다.
 
-다음 Mermaid 다이어그램은 TinyLLaMA의 전반적인 데이터 흐름과 Transformer 블록 구조를 보여줍니다.
+다음 Mermaid 다이어그램은 TinyLLaMA의 전반적인 데이터 흐름과 [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 블록 구조를 보여줍니다.
 
 ```mermaid
 graph TD
@@ -151,7 +151,7 @@ GPU의 텐서 코어(Tensor Core)를 최대한 활용하기 위해 학습 시의
 
 ## 6. 실전: TinyLLaMA의 QLoRA 파인튜닝 코드
 
-그러면 위에서 언급한 모든 최적화를 포함한 가장 빠른 튜닝용 PyTorch 스크립트를 해설하겠습니다. 여기서는 Hugging Face의 `trl` (Transformer Reinforcement Learning) 라이브러리의 `SFTTrainer` 를 이용합니다.
+그러면 위에서 언급한 모든 최적화를 포함한 가장 빠른 튜닝용 PyTorch 스크립트를 해설하겠습니다. 여기서는 Hugging Face의 `trl` ([Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) Reinforcement Learning) 라이브러리의 `SFTTrainer` 를 이용합니다.
 
 ### 6.1 데이터 세트 준비 및 모델 로드
 
@@ -353,7 +353,7 @@ python -m vllm.entrypoints.openai.api_server \
 
 본 기사에서는 1.1B라는 가벼운 파라미터 수임에도 불구하고 고성능인 'TinyLLaMA'를 대상으로 온프레미스 환경에서 가장 빠르고 메모리 효율적으로 파인튜닝을 수행하는 기법을 해설했습니다.
 
-- **LoRA / QLoRA** 를 통해 소비자용 GPU에서도 본격적인 LLM 튜닝이 가능해졌습니다.
+- **LoRA / QLoRA** 를 통해 소비자용 GPU에서도 본격적인 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 튜닝이 가능해졌습니다.
 - **Flash Attention 2** 와 **Gradient Checkpointing** 을 구사하여 학습 시간과 VRAM 소비를 극한까지 최적화했습니다.
 - **vLLM** 을 활용한 배포로 프로덕션 환경에서도 높은 처리량을 실현했습니다.
 

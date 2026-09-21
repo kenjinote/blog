@@ -64,7 +64,7 @@ Google 採用頁面體驗作為排名因素，特別是 **[Core Web Vitals](http
 
 ### 1.3 語意化HTML與文件結構的最佳化
 
-標題（`h1`〜`h6`）的適當嵌套是基本中的基本，但在技術部落格中會被要求正確使用 HTML5 的語意標籤，如 `article`, `section`, `aside`, `nav`。此外，透過適當區分表示原始碼的 `<code>` 和 `<pre>`、表示鍵盤輸入的 `<kbd>`、表示變數的 `<var>` 等，可以提供機器可讀 (machine-readable) 的 HTML。這對於 AI 的內容索引（LLM 的學習資料收集或 RAG 系統）也是非常有效的手段。
+標題（`h1`〜`h6`）的適當嵌套是基本中的基本，但在技術部落格中會被要求正確使用 HTML5 的語意標籤，如 `article`, `section`, `aside`, `nav`。此外，透過適當區分表示原始碼的 `<code>` 和 `<pre>`、表示鍵盤輸入的 `<kbd>`、表示變數的 `<var>` 等，可以提供機器可讀 (machine-readable) 的 HTML。這對於 AI 的內容索引（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的學習資料收集或 RAG 系統）也是非常有效的手段。
 
 ---
 

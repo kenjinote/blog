@@ -241,7 +241,7 @@ Edge AIはすでに様々な産業で実用化され、劇的なパラダイム�
 
 Edge AIの技術は急速に発展していますが、まだ多くの課題と興味深い未来の展望が存在します。
 
-**1. エッジでのLLM（大規模言語モデル）の稼働**:
+**1. エッジでの[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の稼働**:
 近年最大のトピックは、生成AIやLLMをエッジで動かす「Edge LLM」の試みです。数百億パラメータのモデルをそのままエッジに乗せることは不可能ですが、llama.cppのような最適化フレームワークや、4ビット/2ビットの極限までの量子化（AWQ, GPTQ等）、さらにはMicrosoftのPhi-3などの小型で高性能なSLM（Small Language Models）の登場により、スマートフォンやRaspberry Pi上でも自然言語処理が[オフライン](https://kenji.blog/p/pwa-progressive-web-apps-service-worker/)で完結する時代が到来しつつあります。
 
 **2. ニューロモルフィック・コンピューティングとSNN**:

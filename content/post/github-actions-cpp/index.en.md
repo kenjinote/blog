@@ -11,7 +11,7 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 # Building a [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) for C++ Projects Using [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/): A Complete Guide
 
-In the modern software development paradigm, Continuous Integration (CI) and Continuous Delivery/Deployment (CD) are essential elements for maintaining agile development processes and high-quality software. While there are numerous programming languages, building a CI/CD pipeline in C++ involves unique difficulties and complexities compared to other languages (such as Python, JavaScript, Go, etc.).
+In the modern software development paradigm, Continuous Integration (CI) and Continuous Delivery/Deployment (CD) are essential elements for maintaining agile development processes and high-quality software. While there are numerous programming languages, building a CI/CD pipeline in C++ involves unique difficulties and complexities compared to other languages (such as Python, JavaScript, [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), etc.).
 
 In this article, we will explain in extreme detail how to build a robust and practical CI/CD pipeline from scratch for C++ projects using GitHub Actions. We will cover a full range of practical techniques, from matrix builds across multiple platforms (Windows, Linux, macOS), build system integration using CMake, automated testing with CTest, automation of static and dynamic analysis, coverage measurement, to automated delivery of compiled binaries through GitHub Releases.
 

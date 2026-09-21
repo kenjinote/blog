@@ -338,7 +338,7 @@ def partition(arr, low, high):
     return i + 1
 ```
 
-### 3.3 Heap Sort
+### 3.3 [Heap](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) Sort
 
 Heap sort is a sorting algorithm that skillfully uses a tree data structure called a **Binary Heap**. It has the characteristics of taking the best parts of merge sort and quick sort, being an In-place sort that does not use additional memory while having a worst-case time complexity of $O(n \log n)$.
 
@@ -346,7 +346,7 @@ Heap sort is a sorting algorithm that skillfully uses a tree data structure call
 
 1. **Heap construction**: First, convert the given array into a "Max Heap". A Max Heap is a complete binary tree that satisfies the rule that the value of the parent node is always greater than or equal to the value of its child nodes. By using index calculations on the array (parent: $(i-1)/2$, left child: $2i+1$, right child: $2i+2$), the tree structure can be represented as an array.
 2. **Extraction and reconstruction of the maximum value**: The maximum value always exists at the root of the Max Heap (the beginning of the array `arr[0]`). Swap this maximum value with the element at the end of the array. This determines the maximum value at the final position of the array.
-3. Since the root has been rewritten, the condition of the heap breaks, so perform "Heapify" in the range excluding the end of the heap (the already determined part) to satisfy the condition of the Max Heap again.
+3. Since the root has been rewritten, the condition of the heap breaks, so perform "Heapify" in the range excluding the end of the heap (the already determined part) to satisfy the condition of the Max [Heap](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) again.
 4. By repeating this operation until there is one element, larger values are determined in order from the back of the array, and eventually sorted in ascending order.
 
 ```mermaid
@@ -467,7 +467,7 @@ While academic textbooks often cover up to quick sort and merge sort, what is ac
 
 ### 5.1 Timsort (Default in Python)
 
-Timsort is an algorithm implemented for Python by Tim Peters in 2002, and is now the champion of the practical world, adopted in many languages, such as Python's `list.sort()` and `sorted()`, Java's object arrays, and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)'s standard sort.
+Timsort is an algorithm implemented for Python by Tim Peters in 2002, and is now the champion of the practical world, adopted in many languages, such as Python's `list.sort()` and `sorted()`, [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)'s object arrays, and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)'s standard sort.
 
 The greatest design philosophy of Timsort is based on the rule of thumb that **"real-world data is rarely completely random, and is often partially sorted (has continuous ascending or descending blocks)."**
 
@@ -504,7 +504,7 @@ The performances of the main sorting algorithms explained in this article are su
 | **Insertion Sort** | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | Yes | Insertion. Extremely strong for nearly sorted data. |
 | **Merge Sort** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | Divide and conquer. Robust complexity but eats memory. |
 | **Quick Sort** | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | $O(\log n)$ | No | Divide and conquer. Fastest on average but beware of worst cases. |
-| **Heap Sort** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No | Binary heap. Robust with In-place. |
+| **[Heap](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) Sort** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No | Binary heap. Robust with In-place. |
 | **Counting Sort** | $O(n+k)$ | $O(n+k)$ | $O(n+k)$ | $O(k)$ | Yes | Non-comparison. Strongest when the key range is narrow. |
 | **Timsort** (Python standard etc.) | $O(n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | Hybrid. Adaptive and fastest for real data. |
 | **Introsort** (C++ standard etc.) | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(\log n)$ | No | Hybrid. Balances the speed of Quick and the robustness of Heap. |

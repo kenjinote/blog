@@ -9,9 +9,9 @@ categories: ["programming"]
 description: 'Nous expliquons aux débutants comment installer le langage de programmation « Go (Golang) » développé par Google. De l''obtention du programme d''installation à la création d''un programme Hello World, en passant par sa compilation et son exécution, c''est l''introduction idéale pour s''initier au langage Go.'
 ---
 # Introduction
-Go est un langage de programmation relativement nouveau publié par Google en 2009.
+[Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) est un langage de programmation relativement nouveau publié par Google en 2009.
 Le compilateur, les outils et les bibliothèques de Go sont open source.
-De plus, Go est un langage à typage statique comme C ou Java, mais il n'utilise pas de pointeurs comme le langage C.
+De plus, Go est un langage à typage statique comme C ou [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), mais il n'utilise pas de pointeurs comme le langage C.
 
 # Méthode d'installation
 
@@ -63,7 +63,7 @@ En exécutant `hello.exe`, `Hello, world!` s'affichera.
 
 [http://go.shibu.jp/](http://go.shibu.jp/)
 
-Les explications nécessaires pour apprendre Go sont regroupées dans le lien ci-dessus (version traduite en japonais).
+Les explications nécessaires pour apprendre [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) sont regroupées dans le lien ci-dessus (version traduite en japonais).
 La technologie liée à Go est tellement ouverte et riche qu'il n'est presque pas nécessaire d'acheter des textes papier.
 
 Alors, profitez bien de Go !

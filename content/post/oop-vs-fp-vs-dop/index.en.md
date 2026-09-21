@@ -10,13 +10,13 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 The history of programming language evolution is also a history of battles against complexity. As software grows in scale, developers hit walls related to state management, performance, and maintainability, leading to the proposal of various **programming paradigms** to overcome them.
 
-In this article, we will take a deep dive into the philosophy, strengths, and **limitations** of **Object-Oriented Programming** (OOP), which is mainstream in modern software development, **Functional Programming** (FP) with its mathematical robustness, and **Data-Oriented Programming** (DOP / DOD), which focuses on performance and the separation of data. Furthermore, we will explain how powerful modern languages (like [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) and TypeScript) are **fusing** these paradigms.
+In this article, we will take a deep dive into the philosophy, strengths, and **limitations** of **[Object-Oriented](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/) Programming** ([OOP](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/)), which is mainstream in modern software development, **[Functional Programming](https://kenji.blog/en/p/functional-programming-concepts-pure-functions-monads/)** (FP) with its mathematical robustness, and **Data-Oriented Programming** (DOP / DOD), which focuses on performance and the separation of data. Furthermore, we will explain how powerful modern languages (like [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) and TypeScript) are **fusing** these paradigms.
 
 ---
 
-## 1. The Rise and Fall of Object-Oriented Programming (OOP)
+## 1. The Rise and Fall of [Object-Oriented](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/) Programming ([OOP](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/))
 
-**Object-Oriented** Programming reigned as the absolute king of software development from the 1990s through the 2010s. Languages like Java, C++, and C# drove this paradigm, and its intuitive approach of modeling the real world was widely accepted.
+**Object-Oriented** Programming reigned as the absolute king of software development from the 1990s through the 2010s. Languages like [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), C++, and C# drove this paradigm, and its intuitive approach of modeling the real world was widely accepted.
 
 ### 1.1 Core Concepts of OOP
 
@@ -54,7 +54,7 @@ const animals: Animal[] = [new Dog("Buddy"), new Cat("Kitty")];
 animals.forEach(a => a.speak());
 ```
 
-### 1.2 Limitations of OOP and the "Banana and Gorilla Problem"
+### 1.2 Limitations of [OOP](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/) and the "Banana and Gorilla Problem"
 
 At first glance, OOP seems like a perfect modeling technique, but as systems scaled, it caused fatal problems such as **abuse of inheritance** and **implicit state management**.
 
@@ -89,9 +89,9 @@ Deep inheritance trees complicate code dependencies and make it extremely diffic
 
 ---
 
-## 2. The Mathematical Approach of Functional Programming (FP)
+## 2. The Mathematical Approach of [Functional Programming](https://kenji.blog/en/p/functional-programming-concepts-pure-functions-monads/) (FP)
 
-**Functional Programming** came into the spotlight as an antithesis to the complexity brought by OOP's "state mutation". Not only has it influenced languages like Haskell, Scala, and Clojure, but it also strongly influences modern JavaScript and TypeScript.
+**Functional Programming** came into the spotlight as an antithesis to the complexity brought by [OOP](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/)'s "state mutation". Not only has it influenced languages like Haskell, Scala, and Clojure, but it also strongly influences modern JavaScript and TypeScript.
 
 ### 2.1 Core Concepts of FP
 
@@ -140,7 +140,7 @@ Concepts like memory allocation to maintain immutability (load on garbage collec
 
 ### 3.1 Core Concepts of DOP
 
-DOP's supreme mandate is to "separate data and logic". While OOP combined data and logic into classes, DOP tears them apart.
+DOP's supreme mandate is to "separate data and logic". While [OOP](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/) combined data and logic into classes, DOP tears them apart.
 
 - **Separation of Data**: Data is defined merely as data structures (records, structs) without any behavior.
 - **ECS (Entity Component System)**: Instead of inheritance, data is split into components, and systems (functions) process them in bulk.
@@ -192,7 +192,7 @@ Each paradigm has clear strengths and weaknesses.
 
 | Paradigm | Strengths | Weaknesses | Optimal Use Cases |
 | :--- | :--- | :--- | :--- |
-| **OOP** | Intuitive modeling, hiding via encapsulation | Complication of inheritance, bugs from implicit state mutations | GUI frameworks, business domain modeling |
+| **[OOP](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/)** | Intuitive modeling, hiding via encapsulation | Complication of inheritance, bugs from implicit state mutations | GUI frameworks, business domain modeling |
 | **FP** | Resilience to concurrency, ease of testing, predictability | Steep learning curve, performance (GC load) | Data transformation pipelines, concurrent processing systems |
 | **DOP** | Overwhelming performance, transparency of state | Lower data cohesion, tends to be procedural | Game development, high-load computation, embedded systems |
 
@@ -200,15 +200,15 @@ Each paradigm has clear strengths and weaknesses.
 
 ## 5. The Optimal Solution Today: The "Fusion" of Paradigms
 
-Today, choosing a "single correct answer" among these is considered nonsense. Modern programming languages ([Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), TypeScript, Scala, Go, etc.) take the **best parts** of these paradigms.
+Today, choosing a "single correct answer" among these is considered nonsense. Modern programming languages ([Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), TypeScript, Scala, [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), etc.) take the **best parts** of these paradigms.
 
-### 5.1 The Ultimate Fusion Shown by Rust
+### 5.1 The Ultimate Fusion Shown by [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)
 
 Rust fuses these three paradigms at an astonishing level.
 
 1. **Data-Oriented**: Memory-efficient data representation using `struct` and `enum`.
 2. **Functional**: Rich Iterator API, pattern matching, and immutability by default.
-3. **Object-Oriented**: Polymorphism via `trait` and data encapsulation.
+3. **[Object-Oriented](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/)**: Polymorphism via `trait` and data encapsulation.
 
 ```rust
 // Separation of state (data) and behavior, and pattern matching
@@ -243,7 +243,7 @@ Even in frontend development using TypeScript (like React), the fusion of paradi
 
 - Component UI rendering is **Functional** (returning UI as pure functions).
 - Data fetching and cache management are **Data-Oriented** (normalized state trees using [Redux](https://kenji.blog/en/p/state-management-history-future/) or [Zustand](https://kenji.blog/en/p/state-management-history-redux-context-recoil-zustand/)).
-- Parts of complex domain logic are **Object-Oriented** (class-based service layers).
+- Parts of complex domain logic are **[Object-Oriented](https://kenji.blog/en/p/object-oriented-programming-oop-solid-principles/)** (class-based service layers).
 
 ---
 

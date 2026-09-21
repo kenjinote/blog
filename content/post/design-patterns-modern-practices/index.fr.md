@@ -36,7 +36,7 @@ Ici, nous examinerons certains patrons GoF représentatifs et comment ils ont é
 
 Le patron `Strategy` définit une famille d'algorithmes, encapsule chacun d'eux et les rend interchangeables.
 
-**L'approche GoF traditionnelle (style Java)**
+**L'approche GoF traditionnelle (style [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/))**
 
 ```java
 // Définition de l'interface
@@ -135,7 +135,7 @@ Le patron `Visitor` est un patron pour séparer les structures de données du tr
 
 Aujourd'hui, ce problème est élégamment résolu en utilisant des langages ([Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala, etc.) dotés de **types de données algébriques (ADT)** et de **pattern matching**.
 
-**L'approche moderne (Énumérations et Pattern Match de Rust)**
+**L'approche moderne (Énumérations et Pattern Match de [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/))**
 
 ```rust
 // Type de données algébrique (Enum avec variantes)
@@ -169,7 +169,7 @@ graph TD
     E["Service B"] -->|"Dépend de"| B
 ```
 
-Étant donné que les conteneurs DI tels que Spring Framework (Java), NestJS (TypeScript) et Dagger/Hilt (Android) gèrent la création et la destruction des instances, vous ne devriez pas écrire de logique Singleton (`getInstance()` ou `private constructor`) dans la classe elle-même.
+Étant donné que les conteneurs DI tels que Spring Framework ([Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)), NestJS (TypeScript) et Dagger/Hilt (Android) gèrent la création et la destruction des instances, vous ne devriez pas écrire de logique Singleton (`getInstance()` ou `private constructor`) dans la classe elle-même.
 
 ## 4. Les patrons de conception dans la programmation fonctionnelle
 

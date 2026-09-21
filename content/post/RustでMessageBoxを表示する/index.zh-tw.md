@@ -11,7 +11,7 @@ description: '說明如何在 Rust 中利用 `winapi` 與 `user32-sys` Crate，�
 
 您可以按照以下步驟在 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 中顯示 MessageBox。
 
-1. 安裝 Rust。 參考 [Rust 入門](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/)
+1. 安裝 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)。 參考 [Rust 入門](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/)
 2. 在命令提示字元中執行 `cargo new --bin MessageBox`。
 3. 進入 `MessageBox` 目錄。
 4. 打開 `Cargo.toml` 並修改如下。

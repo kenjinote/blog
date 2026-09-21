@@ -9,9 +9,9 @@ categories: ["ai", "machine-learning", "mathematics"]
 tags: ["Transformer", "Deep Learning", "Attention", "Math"]
 ---
 
-# 머리말: 왜 Transformer의 수학을 배우는가?
+# 머리말: 왜 [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 수학을 배우는가?
 
-현대 자연어 처리(NLP), 그리고 AI 전체의 역사를 새로 썼다고 해도 과언이 아닌 아키텍처가 바로 'Transformer'입니다. 2017년 Google 연구진이 발표한 논문 『Attention Is All You Need』에서 처음 제안된 이 모델은, OpenAI의 GPT 시리즈(ChatGPT의 기반 기술)나 Google의 BERT, Anthropic의 Claude 등 현재 세계를 휩쓸고 있는 대규모 언어 모델(LLM)의 심장부로 기능하고 있습니다.
+현대 자연어 처리(NLP), 그리고 AI 전체의 역사를 새로 썼다고 해도 과언이 아닌 아키텍처가 바로 'Transformer'입니다. 2017년 Google 연구진이 발표한 논문 『Attention Is All You Need』에서 처음 제안된 이 모델은, OpenAI의 GPT 시리즈(ChatGPT의 기반 기술)나 Google의 BERT, Anthropic의 Claude 등 현재 세계를 휩쓸고 있는 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 심장부로 기능하고 있습니다.
 
 하지만 Transformer의 원리에 대해 'Attention(주의 메커니즘)을 사용하여 문맥을 이해한다'와 같은 정성적인 설명은 자주 볼 수 있지만, 그 이면에 있는 **수학적인 구조** 에 대해 초보자를 위해 깊이 파고든 해설은 의외로 적은 것이 현실입니다. AI가 어떻게 '언어'를 '수식'으로 처리하고 놀라울 정도로 자연스러운 문장을 생성해 내는지 진정으로 이해하기 위해서는, 그 수학적 메커니즘을 파헤치는 것이 필수적입니다.
 
@@ -69,7 +69,7 @@ $$ x_i = W_E \cdot \text{one\_hot}(w_i) $$
 이에 따라 문장 전체는 행렬 $X \in \mathbb{R}^{N \times d_{model}}$ 로 표현됩니다($N$ 은 문장의 길이).
 
 ## 3.2 Positional Encoding(위치 인코딩)의 필요성과 수식
-Transformer는 RNN처럼 단어를 순서대로 처리하는 것이 아니라, 모든 단어를 동시에 병렬 처리합니다. 이는 계산 속도 측면에서는 큰 장점이지만, 동시에 **'단어의 순서(어순)'라는 중요한 정보가 손실되어 버린다** 는 문제를 야기합니다. 예를 들어 "개가 사람을 문다"와 "사람이 개를 문다"는 입력되는 단어 집합은 같지만 의미는 전혀 다릅니다.
+[Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)는 RNN처럼 단어를 순서대로 처리하는 것이 아니라, 모든 단어를 동시에 병렬 처리합니다. 이는 계산 속도 측면에서는 큰 장점이지만, 동시에 **'단어의 순서(어순)'라는 중요한 정보가 손실되어 버린다** 는 문제를 야기합니다. 예를 들어 "개가 사람을 문다"와 "사람이 개를 문다"는 입력되는 단어 집합은 같지만 의미는 전혀 다릅니다.
 
 이 어순 정보를 모델에 제공하기 위해 고안된 것이 **Positional Encoding** 입니다.
 위치 $pos$ 에 있는 단어의 $i$ 번째 차원에 대한 Positional Encoding $PE$ 는 다음 삼각 함수를 사용하여 계산됩니다.
@@ -217,7 +217,7 @@ $$ \text{FFN}(x) = \max(0, x W_1 + b_1) W_2 + b_2 $$
 
 # 7. 잔차 연결(Residual Connection)과 Layer Normalization
 
-딥러닝에서 네트워크의 층을 깊게 쌓아가면 학습 시 기울기가 소실되거나 폭발해 버려 제대로 학습할 수 없게 되는 문제가 발생합니다. 이를 방지하기 위해 Transformer의 각 서브 레이어(Attention과 FFN) 주변에는 **잔차 연결(Residual Connection)** 과 **Layer Normalization(층 정규화)** 가 배치되어 있습니다.
+딥러닝에서 네트워크의 층을 깊게 쌓아가면 학습 시 기울기가 소실되거나 폭발해 버려 제대로 학습할 수 없게 되는 문제가 발생합니다. 이를 방지하기 위해 [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 각 서브 레이어(Attention과 FFN) 주변에는 **잔차 연결(Residual Connection)** 과 **Layer Normalization(층 정규화)** 가 배치되어 있습니다.
 
 수식으로 쓰면 서브 레이어의 출력은 다음과 같이 처리됩니다.
 
@@ -274,7 +274,7 @@ Transformer는 훌륭한 모델이지만 그 수학적 구조로 인한 '약점'
 Self-Attention의 계산량에 주목해 봅시다. 점수 행렬 $Q K^T$ 의 계산에서는 $(N \times d_k)$ 의 행렬과 $(d_k \times N)$ 의 행렬을 곱해야 하므로, 그 계산량은 **$O(N^2 \cdot d_{model})$** 이 됩니다.
 
 즉, **시퀀스 길이 $N$ 에 대해 계산량과 메모리 사용량이 제곱으로 증가** 하는 것입니다.
-문장이 짧은 경우에는 문제가 되지 않지만, 책 한 권 전체와 같은 방대한 컨텍스트를 LLM에 입력하려고 하면 $N$ 이 수만~수십만에 달해 기존의 Attention 계산에서는 GPU 메모리가 즉시 고갈되고 맙니다.
+문장이 짧은 경우에는 문제가 되지 않지만, 책 한 권 전체와 같은 방대한 컨텍스트를 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)에 입력하려고 하면 $N$ 이 수만~수십만에 달해 기존의 Attention 계산에서는 GPU 메모리가 즉시 고갈되고 맙니다.
 
 이 $O(N^2)$ 의 저주를 끊어내기 위해 최근에는 수학적·하드웨어적 접근을 통한 다양한 최적화 기법이 제안되고 있습니다.
 그 대표적인 예가 **FlashAttention** 입니다. FlashAttention은 GPU의 메모리 계층(SRAM과 HBM) 간의 데이터 전송(메모리 액세스)을 최소화하도록 Attention 계산을 타일 모양으로 분할(Tiling)하여 수행하는 알고리즘입니다. 수식상으로는 표준적인 Attention과 완전히 같은 결과를 출력(Exact Attention)함에도 불구하고, 하드웨어 수준의 최적화를 통해 극적인 속도 향상과 메모리 절감을 실현하였고 GPT-4와 같은 긴 문맥 모델의 구현을 가능하게 했습니다.
@@ -322,7 +322,7 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 # 맺음말: 수식에서 보이는 '지능'의 형태
 
-본 문서에서는 Transformer 모델의 심오한 곳에 있는 수학적 구조를 파헤쳐 보았습니다.
+본 문서에서는 [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 모델의 심오한 곳에 있는 수학적 구조를 파헤쳐 보았습니다.
 
 단어를 다차원 벡터 공간에 매핑하는 Embedding, 위치 정보를 삼각파의 합성으로 표현하는 Positional Encoding, 그리고 정보 검색의 비유에서 비롯된 행렬의 내적 계산인 Self-Attention 메커니즘. 이들 하나하나의 컴포넌트는 선형대수학, 미적분학, 확률과 통계라는 기초적인 수학이 쌓여 이루어진 것에 불과합니다.
 
@@ -330,9 +330,9 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 'Attention Is All You Need'라는 도발적인 제목이 보여주듯 복잡한 순환 처리나 합성곱 처리를 버리고 순수한 '어텐션(연관도)' 계산에 특화된 이 아키텍처의 아름다움은 바로 그 수학적인 단순함에 있다고 할 수 있을 것입니다.
 
-앞으로 Transformer를 뛰어넘는 새로운 아키텍처([State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) Space Model인 Mamba 등)가 등장할 가능성도 있지만, Transformer가 구축한 'Attention을 통한 문맥 이해'의 수학적 프레임워크는 AI의 역사에 영원히 새겨질 것입니다.
+앞으로 Transformer를 뛰어넘는 새로운 아키텍처([State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) Space Model인 Mamba 등)가 등장할 가능성도 있지만, [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)가 구축한 'Attention을 통한 문맥 이해'의 수학적 프레임워크는 AI의 역사에 영원히 새겨질 것입니다.
 
-만약 여러분이 앞으로 ChatGPT나 Claude 등의 LLM을 사용할 기회가 있다면, 그 백그라운드에서 초당 수조 번의 $Q K^T$ 행렬곱이 계산되고 Softmax 함수가 확률을 산출해 내는 모습을 상상해 보세요. 기술에 대한 해상도가 높아져 AI의 세계가 더욱 흥미롭게 느껴질 것입니다.
+만약 여러분이 앞으로 ChatGPT나 Claude 등의 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 사용할 기회가 있다면, 그 백그라운드에서 초당 수조 번의 $Q K^T$ 행렬곱이 계산되고 Softmax 함수가 확률을 산출해 내는 모습을 상상해 보세요. 기술에 대한 해상도가 높아져 AI의 세계가 더욱 흥미롭게 느껴질 것입니다.
 
 ### 참고 문헌
 - Vaswani, A., et al. (2017). "Attention Is All You Need." *Advances in Neural Information Processing Systems*.

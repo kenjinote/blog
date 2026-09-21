@@ -87,7 +87,7 @@ L'indicateur le plus important pour évaluer le matériel de l'Edge AI est "TOPS
 
 ## 4. Implémentation sur les appareils Edge : Théorie et pratique de l'allègement des modèles
 
-Même avec l'évolution du matériel, il est impossible de charger d'énormes modèles d'apprentissage profond de plusieurs centaines de Mo à plusieurs Go (par exemple, GPT ou de grands réseaux ResNet) tels quels dans la RAM limitée (quelques Mo à quelques Go) des appareils edge. Par conséquent, la "compression de modèle" (Model Compression) est indispensable. Nous expliquerons en détail les techniques représentatives telles que la "Quantification" (Quantization) et "l'Élagage" (Pruning).
+Même avec l'évolution du matériel, il est impossible de charger d'énormes modèles d'apprentissage profond de plusieurs centaines de Mo à plusieurs [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) (par exemple, GPT ou de grands réseaux ResNet) tels quels dans la RAM limitée (quelques Mo à quelques Go) des appareils edge. Par conséquent, la "compression de modèle" (Model Compression) est indispensable. Nous expliquerons en détail les techniques représentatives telles que la "Quantification" (Quantization) et "l'Élagage" (Pruning).
 
 ### 4.1 Quantification des modèles (Quantization)
 
@@ -241,7 +241,7 @@ Sur les montres intelligentes ou les électrocardiogrammes (ECG) portables, l'ap
 
 Bien que la technologie Edge AI se développe rapidement, de nombreux défis et des perspectives d'avenir fascinantes demeurent.
 
-**1. Fonctionnement des LLM (Large Language Models) à l'edge** :
+**1. Fonctionnement des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) ([Large Language Models](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) à l'edge** :
 Le plus grand sujet de ces dernières années est la tentative de faire fonctionner l'IA générative ou les LLM sur l'edge, c'est-à-dire le "Edge LLM". Il est impossible de placer un modèle de plusieurs dizaines de milliards de paramètres tel quel sur un edge, mais avec des frameworks d'optimisation comme llama.cpp, une quantification extrême en 4 bits/2 bits (AWQ, GPTQ, etc.), ainsi que l'émergence de SLM (Small Language Models) compacts et performants comme Phi-3 de Microsoft, nous entrons dans une ère où le traitement du langage naturel peut être réalisé hors ligne, même sur un smartphone ou un Raspberry Pi.
 
 **2. Informatique neuromorphique et SNN** :

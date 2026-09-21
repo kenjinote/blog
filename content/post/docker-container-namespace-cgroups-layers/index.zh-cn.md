@@ -308,7 +308,7 @@ graph TD
 
 ### 8.1 利用多阶段构建（Multi-stage build）
 
-通过分离构建环境和运行环境，可以大幅缩小最终镜像的尺寸。这在Go、Rust、Java等编译型语言中尤为有效。
+通过分离构建环境和运行环境，可以大幅缩小最终镜像的尺寸。这在[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)、[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)、[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)等编译型语言中尤为有效。
 
 ```dockerfile
 # --- Stage 1: 构建环境 ---

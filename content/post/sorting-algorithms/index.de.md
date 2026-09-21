@@ -278,9 +278,9 @@ Die Leistung variiert stark je nachdem, wie das Pivot ausgewählt wird und wie d
 *   **Schlechteste Zeitkomplexität**: $O(n^2)$
     *   Dies ist eine fatale Schwäche. Wenn bei einem bereits sortierten Array immer das äußerste Element als Pivot ausgewählt wird, wird das Array weiterhin in "1" und "den gesamten Rest" aufgeteilt und fällt in die schlechteste Zeitkomplexität zurück. Um dies zu vermeiden, ist es unerlässlich, Pivot-Auswahltechniken wie den "Median-of-three" (Median aus dem ersten, mittleren und letzten Element nehmen) zu verwenden.
 *   **Durchschnittliche Zeitkomplexität**: $O(n \log n)$
-    *   In der Praxis ist der konstante Faktor sehr klein, und die Cache-Effizienz ist extrem gut, sodass es schneller arbeitet als Merge Sort oder Heap Sort.
+    *   In der Praxis ist der konstante Faktor sehr klein, und die Cache-Effizienz ist extrem gut, sodass es schneller arbeitet als Merge Sort oder [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) Sort.
 *   **Speicherkomplexität**: Durchschnittlich $O(\log n)$, im schlimmsten Fall $O(n)$
-    *   Obwohl es ein In-place-Algorithmus ist, der das Array selbst umschreibt, verbraucht es den Call-Stack für rekursive Aufrufe.
+    *   Obwohl es ein In-place-Algorithmus ist, der das Array selbst umschreibt, verbraucht es den Call-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) für rekursive Aufrufe.
 *   **Stabilität**: Instabil (Unstable)
     *   Es ist nicht stabil, weil bei der Partitionierungsoperation weit entfernte Elemente ausgetauscht werden.
 
@@ -338,7 +338,7 @@ def partition(arr, low, high):
     return i + 1
 ```
 
-### 3.3 Heap Sort (Heapsort)
+### 3.3 [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) Sort (Heapsort)
 
 Heap Sort ist ein Sortieralgorithmus, der geschickt eine Baumdatenstruktur namens **Binary Heap (Binärer Heap)** verwendet. Er hat die Eigenschaft, die besten Aspekte von Merge Sort und Quick Sort in sich zu vereinen: Es handelt sich um einen In-place-Sort, der keinen zusätzlichen Speicher benötigt, und dennoch eine schlechteste Zeitkomplexität von $O(n \log n)$ aufweist.
 
@@ -346,7 +346,7 @@ Heap Sort ist ein Sortieralgorithmus, der geschickt eine Baumdatenstruktur namen
 
 1. **Erstellen des Heaps**: Konvertiere zunächst das gegebene Array in einen "Max Heap" (Maximaler Heap). Ein Max Heap ist ein vollständiger Binärbaum, der die Regel erfüllt, dass der Wert des Elternknotens immer größer oder gleich dem Wert des Kindknotens ist. Durch die Verwendung der Indexberechnung im Array (Elternteil: $(i-1)/2$, linkes Kind: $2i+1$, rechtes Kind: $2i+2$) kann die Baumstruktur wie sie ist im Array dargestellt werden.
 2. **Extrahieren des Maximalwerts und Wiederherstellen**: An der Wurzel des Max-Heaps (dem Anfang des Arrays `arr[0]`) existiert immer der Maximalwert. Tausche diesen Maximalwert mit dem letzten Element des Arrays aus. Dadurch wird das Maximum an der Endposition des Arrays festgelegt.
-3. Da das Überschreiben der Wurzel die Bedingungen des Heaps bricht, wird "Heapify" (Wiederherstellung des Heaps) in dem Bereich mit Ausnahme des Endes des Heaps (dem festgelegten Teil) durchgeführt, um sicherzustellen, dass die Bedingungen für den Max Heap wieder erfüllt sind.
+3. Da das Überschreiben der Wurzel die Bedingungen des Heaps bricht, wird "Heapify" (Wiederherstellung des Heaps) in dem Bereich mit Ausnahme des Endes des Heaps (dem festgelegten Teil) durchgeführt, um sicherzustellen, dass die Bedingungen für den Max [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) wieder erfüllt sind.
 4. Indem dieser Vorgang wiederholt wird, bis nur noch ein Element übrig ist, werden die größten Werte in der Reihenfolge vom Ende des Arrays aus festgelegt, und das Array wird schließlich in aufsteigender Reihenfolge sortiert.
 
 ```mermaid
@@ -364,7 +364,7 @@ graph TD
 *   **Schlechteste, durchschnittliche und beste Zeitkomplexität**: Alle $O(n \log n)$
     *   Es erfordert $O(n)$ zum Aufbauen des Heaps und $n$ Wiederholungen der Extraktion und Wiederherstellung des Maximalwerts ($O(\log n)$), wodurch sich insgesamt $O(n \log n)$ ergibt. Da diese Zeitkomplexität unabhängig von der Datenanordnung garantiert ist, ist es in Systemen nützlich, in denen das Vermeiden des Worst-Case-Szenarios erforderlich ist.
 *   **Speicherkomplexität**: $O(1)$ (In-place)
-    *   Da der Heap-Baum direkt auf dem Array dargestellt wird, wird kein zusätzlicher Speicher benötigt.
+    *   Da der [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Baum direkt auf dem Array dargestellt wird, wird kein zusätzlicher Speicher benötigt.
 *   **Stabilität**: Instabil (Unstable)
     *   Es ist nicht stabil, weil weit entfernte Elemente während des Heap-Aufbaus und der Extraktion ausgetauscht werden.
 
@@ -467,7 +467,7 @@ Während akademische Lehrbücher oft nur Quick Sort oder Merge Sort behandeln, b
 
 ### 5.1 Timsort (Python Standard)
 
-Timsort ist ein Algorithmus, der 2002 von Tim Peters für Python implementiert wurde. Heute ist er der Champion der Praxis und wird nicht nur für Pythons `list.sort()` und `sorted()` verwendet, sondern auch für Java-Objektarrays, Rusts Standard-Sortierung und in vielen anderen Sprachen.
+Timsort ist ein Algorithmus, der 2002 von Tim Peters für Python implementiert wurde. Heute ist er der Champion der Praxis und wird nicht nur für Pythons `list.sort()` und `sorted()` verwendet, sondern auch für [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)-Objektarrays, Rusts Standard-Sortierung und in vielen anderen Sprachen.
 
 Die größte Designphilosophie von Timsort basiert auf der heuristischen Beobachtung: **"Daten aus der realen Welt sind selten völlig zufällig und weisen oft teilweise sortierte Muster auf (es gibt fortlaufende aufsteigende oder absteigende Blöcke)."**
 
@@ -486,7 +486,7 @@ Quick Sort ist im Durchschnitt am schnellsten, hatte aber eine fatale Schwäche:
 #### Eigenschaften von Introsort
 1. Grundsätzlich wird das Array mit dem schnellen **Quick Sort** geteilt.
 2. Es überwacht jedoch die Rekursionstiefe, und wenn die Tiefe der Teilung ein Vielfaches von $\log_2 n$ (z. B. $2 \times \log_2 n$) überschreitet, wird beurteilt (Introspection: Selbstbeobachtung), dass "die Pivot-Auswahl fehlgeschlagen ist und man auf die schlechteste Zeitkomplexität zusteuert".
-3. An diesem Punkt wechselt die Sortiermethode für dieses Teilarray zu **Heap Sort**, dessen schlechteste Zeitkomplexität $O(n \log n)$ beträgt.
+3. An diesem Punkt wechselt die Sortiermethode für dieses Teilarray zu **[Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) Sort**, dessen schlechteste Zeitkomplexität $O(n \log n)$ beträgt.
 4. Außerdem wird, wenn die Anzahl der Elemente sehr klein wird (z. B. 16 Elemente oder weniger), zu **Insertion Sort** gewechselt, um den Overhead von Funktionsaufrufen zu vermeiden.
 
 Dadurch wird ein tadelloser Algorithmus erreicht, der die überwältigende Durchschnittsgeschwindigkeit von Quick Sort beibehält und gleichzeitig selbst im schlimmsten Fall $O(n \log n)$ garantiert.
@@ -522,7 +522,7 @@ Darauf läuft es hinaus. Pythons `.sort()` oder C++ `std::sort` sind mit den in 
 Warum also müssen wir Sortieralgorithmen lernen?
 
 1. **Verständnis der Grundkonzepte**: Konzepte wie Zeitkomplexität (Big-O-Notation), In-place/Out-of-place und Stabilität sind nicht nur beim Sortieren, sondern auch beim Entwerfen aller Algorithmen und Datenstrukturen von grundlegender Bedeutung.
-2. **Systeme unter besonderen Einschränkungen**: In Umgebungen mit extrem begrenztem Speicherplatz, wie z. B. eingebetteten Systemen, müssen Sie möglicherweise Ihren eigenen Heap Sort mit $O(1)$ Speicherplatz oder ein In-place Quick Sort implementieren.
+2. **Systeme unter besonderen Einschränkungen**: In Umgebungen mit extrem begrenztem Speicherplatz, wie z. B. eingebetteten Systemen, müssen Sie möglicherweise Ihren eigenen [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) Sort mit $O(1)$ Speicherplatz oder ein In-place Quick Sort implementieren.
 3. **Ausnutzen der Eigenschaften von Daten**: Wenn Sie "1 Million Datensätze, deren Werte auf den Bereich von 1 bis 100 beschränkt sind", sortieren möchten, ist die Implementierung von Counting Sort ($O(n)$) überwältigend schneller als die Verwendung des Standard-Timsort ($O(n \log n)$).
 
 Indem Sie die interne Struktur von Algorithmen kennen, werden Sie die "Stärken" und "Schwächen" von Standardfunktionen, die als Blackbox bereitgestellt werden, verstehen und in der Lage sein, fortschrittlichere und effizientere Systeme zu entwerfen.

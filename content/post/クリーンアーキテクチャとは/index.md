@@ -131,7 +131,7 @@ $$ m > n $$
 
 ユースケース層（内側）がインターフェースアダプター層（外側のRepositoryの実装）を直接呼び出すと、依存性が外側に向かってしまい、依存性のルール違反となります。
 
-この問題を解決するのが、SOLID原則の「D（Dependency Inversion Principle: 依存性逆転の原則）」です。
+この問題を解決するのが、[SOLID原則](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)の「D（Dependency Inversion Principle: 依存性逆転の原則）」です。
 
 ### 依存性逆転の原則 (DIP) の定義
 1. 高位モジュールは低位モジュールに依存してはならない。両者は抽象に依存すべきである。

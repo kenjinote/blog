@@ -25,7 +25,7 @@ Gitが履歴をどのように統合するかを理解するためには、ま�
 
 Gitの各コミットは、その内容を元に計算されたSHA-1（Secure Hash Algorithm 1）ハッシュ関数による40桁の16進数で一意に識別されます。コミットオブジェクトは以下の要素から構成されます：
 
-1. **[Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)オブジェクトへのポインタ**: その時点のディレクトリ構造とファイル（Blob）のスナップショット
+1. **[Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)オブジェクトへの[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)**: その時点のディレクトリ構造とファイル（Blob）のスナップショット
 2. **親コミットへのポインタ**: 1つ以上の親コミットのハッシュ値（初回コミットは親を持たず、マージコミットは2つ以上の親を持ちます）
 3. **作成者情報（Author）**: コードを書いた人と日時
 4. **コミッター情報（Committer）**: コミットを作成・適用した人と日時
@@ -55,7 +55,7 @@ Gitのコミット履歴は、[グラフ](https://kenji.blog/p/tree-graph-data-s
 
 ## 3.1 DAG（有向非巡回グラフ）とは
 
-グラフ $G = (V, E)$ において、$V$ はコミットの集合（頂点）、$E$ はコミット間の親子関係を示す有向エッジの集合です。Gitにおいては、エッジの向きは「子コミットから親コミット」へと向かいます。新しいコミットは過去のコミットへのポインタを保持しているためです。
+グラフ $G = (V, E)$ において、$V$ はコミットの集合（頂点）、$E$ はコミット間の親子関係を示す有向エッジの集合です。Gitにおいては、エッジの向きは「子コミットから親コミット」へと向かいます。新しいコミットは過去のコミットへの[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を保持しているためです。
 
 ```mermaid
 graph BT
@@ -86,7 +86,7 @@ Gitの `git log` コマンドなどで履歴を表示する際、DAGはトポロ
 
 ## 4.1 Fast-Forward マージ（--ff）
 
-統合先（例：`main`）のブランチが、統合元（例：`feature`）のブランチの直接の祖先である場合、Gitは「Fast-Forward（早送り）」マージを実行します。これは、新しいコミットを作成せず、単にブランチのポインタを前に進めるだけの操作です。
+統合先（例：`main`）のブランチが、統合元（例：`feature`）のブランチの直接の祖先である場合、Gitは「Fast-Forward（早送り）」マージを実行します。これは、新しいコミットを作成せず、単にブランチの[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を前に進めるだけの操作です。
 
 ```mermaid
 gitGraph
@@ -145,7 +145,7 @@ Gitは「LCAの状態」「現在のブランチの状態」「相手のブラ�
 
 1. `feature` ブランチと `main` ブランチの共通祖先（LCA）を見つける。
 2. LCAから `feature` ブランチの先端までのコミットの差分を一時領域に保存する。
-3. `feature` ブランチのポインタを `main` ブランチの先端に移動させる。
+3. `feature` ブランチの[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を `main` ブランチの先端に移動させる。
 4. 保存しておいた差分を、新しいベース（`main`の先端）の上へ1つずつ順に適用（Cherry-Pick）し、新しいコミットを生成する。
 
 ```mermaid

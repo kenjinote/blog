@@ -45,9 +45,9 @@ graph LR
 
 ## 2. [オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)プログラミングにおける「同一性」
 
-コードレベルで「同一性」を考えたとき、最も関連が深いのが **オブジェクト指向プログラミング（OOP）** の概念です。OOPでは、同一性を判定するために大きく分けて2つの基準が存在します。
+コードレベルで「同一性」を考えたとき、最も関連が深いのが **[オブジェクト指向](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)プログラミング（[OOP](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)）** の概念です。OOPでは、同一性を判定するために大きく分けて2つの基準が存在します。
 
-1. **参照の等価性（Reference Equality）** ：メモリ上の同じ場所を指しているか（ポインタが同じか）
+1. **参照の等価性（Reference Equality）** ：メモリ上の同じ場所を指しているか（[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)が同じか）
 2. **値の等価性（Value Equality）** ：保持している属性（データ）がすべて同じか
 
 [テセウスの船](https://kenji.blog/p/ship-of-theseus/)において、「部品がすべて入れ替わったのだから別の船だ」と主張するのは **値の等価性** に重きを置く考え方です。一方、「歴史的・社会的な文脈が連続しているのだから同じ船だ」と主張するのは、ある種の **参照の等価性** に近いと言えるでしょう。

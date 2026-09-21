@@ -12,7 +12,7 @@ description: '关于如何在本地环境中最快且高效地微调 TinyLLaMA �
 
 ## 1. 引言：为什么现在选择 TinyLLaMA 和本地部署？
 
-大型语言模型（LLM）的演进正以惊人的速度推进，随之而来的是模型参数量也持续膨胀至数千亿规模。虽然像 GPT-4 和 Claude 3 这样的超大型模型拥有无与伦比的性能，但推理和训练所需的计算成本，以及使用外部 API 时存在的安全和数据隐私隐患，成为了企业面临的巨大障碍。特别是在处理高机密性的内部数据或个人信息的业务中，从合规性（如 GDPR、APPI 等）的角度来看，将数据发送到云端公开的 LLM API 往往是不可接受的。
+大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的演进正以惊人的速度推进，随之而来的是模型参数量也持续膨胀至数千亿规模。虽然像 GPT-4 和 Claude 3 这样的超大型模型拥有无与伦比的性能，但推理和训练所需的计算成本，以及使用外部 API 时存在的安全和数据隐私隐患，成为了企业面临的巨大障碍。特别是在处理高机密性的内部数据或个人信息的业务中，从合规性（如 GDPR、APPI 等）的角度来看，将数据发送到云端公开的 LLM API 往往是不可接受的。
 
 因此，备受瞩目的是 **小型语言模型（SLM: Small Language Models）** 以及 **本地环境部署（On-Premises）** 。其中，“ **TinyLLaMA** ”以仅 1.1B（11亿）参数的紧凑尺寸，却拥有在约 3 万亿 Token 的庞大数据集上预训练的底蕴，与同级别的模型相比，展现出惊人的性能。
 
@@ -37,7 +37,7 @@ TinyLLaMA 沿用了 Meta 公司开发的 LLaMA（Large Language Model Meta AI）
 4. **Grouped Query Attention (GQA):**
    介于多头注意力 (MHA) 和多查询注意力 (MQA) 之间的一种方法，通过将键 (Key) 和值 (Value) 的注意力头进行分组，节省了内存带宽并显著提高了推理速度。
 
-下面的 Mermaid 图展示了 TinyLLaMA 的整体数据流和 Transformer 块的结构。
+下面的 Mermaid 图展示了 TinyLLaMA 的整体数据流和 [Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 块的结构。
 
 ```mermaid
 graph TD
@@ -151,7 +151,7 @@ pip install transformers datasets peft trl accelerate bitsandbytes
 
 ## 6. 实践：TinyLLaMA 的 QLoRA 微调代码
 
-接下来，我们将讲解融合了上述所有优化技术的 PyTorch 脚本，以实现最快微调。这里使用 Hugging Face `trl` (Transformer Reinforcement Learning) 库中的 `SFTTrainer`。
+接下来，我们将讲解融合了上述所有优化技术的 PyTorch 脚本，以实现最快微调。这里使用 Hugging Face `trl` ([Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) Reinforcement Learning) 库中的 `SFTTrainer`。
 
 ### 6.1 准备数据集与加载模型
 
@@ -353,7 +353,7 @@ python -m vllm.entrypoints.openai.api_server \
 
 本文以参数量仅 1.1B 但性能强悍的“TinyLLaMA”为对象，详细解说了在本地环境中最快且内存高效地进行微调的方法。
 
-- 借助 **LoRA / QLoRA** ，即使在消费级 GPU 上也能进行正式的 LLM 微调。
+- 借助 **LoRA / QLoRA** ，即使在消费级 GPU 上也能进行正式的 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 微调。
 - 充分利用 **Flash Attention 2** 和 **Gradient Checkpointing** ，将训练时间和 VRAM 消耗优化到极致。
 - 通过使用 **vLLM** 进行部署，在生产环境中也能实现高吞吐量。
 

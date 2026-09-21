@@ -46,7 +46,7 @@ $$
 $$
 
 **Impact on Tech Selection:**
-This algorithm brings "Person A who is interested in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)" and "Person B who is interested in Rust" closer together in the latent space. If Person A "likes" a post about an emerging Web framework, posts about that framework will appear on Person B's timeline with a high probability. Because of this, a phenomenon occurs where specific technologies become locally popular within engineer groups that prefer certain tech stacks.
+This algorithm brings "Person A who is interested in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)" and "Person B who is interested in [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)" closer together in the latent space. If Person A "likes" a post about an emerging Web framework, posts about that framework will appear on Person B's timeline with a high probability. Because of this, a phenomenon occurs where specific technologies become locally popular within engineer groups that prefer certain tech stacks.
 
 ### 2.2 Deep Learning Recommendation Model (DLRM)
 

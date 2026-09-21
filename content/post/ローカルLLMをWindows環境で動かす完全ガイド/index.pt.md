@@ -9,7 +9,7 @@ categories: ["ai", "llm", "windows"]
 tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 ---
 
-# 1. Introdução: Por que LLM Local no Windows agora?
+# 1. Introdução: Por que [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) Local no Windows agora?
 
 Em 2026, a evolução da IA generativa e dos Grandes Modelos de Linguagem (LLM) está mostrando uma grande mudança de paradigma de serviços gigantescos de API na nuvem para "LLMs Locais" rodando em PCs pessoais ou ambientes locais (on-premises). IAs na nuvem como o GPT-5 da OpenAI e o Claude 3.5 da Anthropic são extremamente poderosas, mas nem todas as empresas ou indivíduos podem enviar todos os seus dados para a nuvem. Do ponto de vista de privacidade, segurança, latência e custos sustentáveis a longo prazo, a demanda por LLMs locais explodiu como nunca antes.
 
@@ -63,7 +63,7 @@ Após a instalação, execute `nvidia-smi` no terminal do WSL2; se a GPU for rec
 
 ---
 
-# 3. Arquitetura de LLM Local e Mecanismo de Inferência
+# 3. Arquitetura de [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) Local e Mecanismo de Inferência
 
 Compreender a estrutura interna de como o modelo gera texto em um ambiente local é extremamente útil para solução de problemas e otimização.
 
@@ -91,7 +91,7 @@ graph TD
 
 ## 3.1 Duas Fases: Prefill e Decode
 
-A geração de texto do LLM é dividida em duas fases com características computacionais diferentes.
+A geração de texto do [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) é dividida em duas fases com características computacionais diferentes.
 
 1. **Fase Prefill (Processamento de Prompt)**: A fase onde todo o prompt inserido é processado e compreendido de uma só vez. Devido à possibilidade de cálculo paralelo, a capacidade de cálculo da GPU (FLOPS) está diretamente ligada à velocidade. Se o prompt for longo, esta fase pode levar alguns segundos.
 2. **Fase Decode (Geração de Tokens)**: A fase onde se prevê um token de cada vez, que é repassado como próxima entrada (autorregressivo). Nesta fase, o cálculo paralelo é limitado, portanto a largura de banda de memória VRAM da GPU (Memory Bandwidth) se torna um gargalo decisivo.
@@ -273,7 +273,7 @@ graph LR
     LocalLLM --> Answer["Resposta Final"]
 ```
 
-Com a versão desktop do AnythingLLM (Windows), você só precisa designar o Ollama (para LLM e Embedding) e configurar o VectorDB local (LanceDB) nas opções, e essa arquitetura estará concluída em minutos. É o nascimento de uma IA Privada que nunca envia os dados a terceiros.
+Com a versão desktop do AnythingLLM (Windows), você só precisa designar o Ollama (para [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) e Embedding) e configurar o VectorDB local (LanceDB) nas opções, e essa arquitetura estará concluída em minutos. É o nascimento de uma IA Privada que nunca envia os dados a terceiros.
 
 ---
 
@@ -314,7 +314,7 @@ Abaixo, encontre os problemas comumente encontrados e suas soluções.
 
 # 10. Resumo e Perspectivas Futuras
 
-Em 2026, criar um ambiente local de LLM no Windows não é mais privilégio de apenas alguns engenheiros. Devido à padronização do formato GGUF, à ascensão de ecossistemas refinados como Ollama e LM Studio, e a otimizações de hardware como FlashAttention, qualquer pessoa pode obter um ambiente de IA corporativo com extrema facilidade.
+Em 2026, criar um ambiente local de [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) no Windows não é mais privilégio de apenas alguns engenheiros. Devido à padronização do formato GGUF, à ascensão de ecossistemas refinados como Ollama e LM Studio, e a otimizações de hardware como FlashAttention, qualquer pessoa pode obter um ambiente de IA corporativo com extrema facilidade.
 
 Aproveite ao máximo os seguintes pontos detalhados neste artigo:
 

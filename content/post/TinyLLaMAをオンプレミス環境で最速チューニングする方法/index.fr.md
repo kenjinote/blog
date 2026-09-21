@@ -12,7 +12,7 @@ description: "Un guide complet pour affiner TinyLLaMA de manière efficace et ul
 
 ## 1. Introduction : Pourquoi TinyLLaMA et le sur site aujourd'hui ?
 
-L'évolution des grands modèles de langage (LLM) progresse à une vitesse fulgurante, et avec elle, le nombre de paramètres des modèles continue de s'étendre pour atteindre des centaines de milliards. Si des modèles gigantesques comme GPT-4 et Claude 3 offrent des performances inégalées, les coûts de calcul pour l'inférence et l'apprentissage, ainsi que les problèmes de sécurité et de confidentialité des données lors de l'utilisation d'API externes, constituent des obstacles majeurs pour les entreprises. En particulier pour les tâches impliquant des données internes hautement confidentielles ou des informations personnelles, l'envoi de données à des API LLM publiques dans le cloud est souvent inacceptable du point de vue de la conformité (RGPD, APPI, etc.).
+L'évolution des grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) progresse à une vitesse fulgurante, et avec elle, le nombre de paramètres des modèles continue de s'étendre pour atteindre des centaines de milliards. Si des modèles gigantesques comme GPT-4 et Claude 3 offrent des performances inégalées, les coûts de calcul pour l'inférence et l'apprentissage, ainsi que les problèmes de sécurité et de confidentialité des données lors de l'utilisation d'API externes, constituent des obstacles majeurs pour les entreprises. En particulier pour les tâches impliquant des données internes hautement confidentielles ou des informations personnelles, l'envoi de données à des API LLM publiques dans le cloud est souvent inacceptable du point de vue de la conformité (RGPD, APPI, etc.).
 
 C'est là que les **petits modèles de langage (SLM : Small Language Models)** et le **déploiement local dans des environnements sur site** (on-premises) entrent en jeu. Parmi eux, "**TinyLLaMA**" se distingue. Avec une taille compacte de seulement 1,1B (1,1 milliard) de paramètres, il a été pré-entraîné sur un ensemble de données massif d'environ 3 billions de jetons (tokens), offrant des performances exceptionnelles par rapport aux modèles de la même catégorie.
 
@@ -37,7 +37,7 @@ TinyLLaMA suit l'architecture LLaMA (Large Language Model Meta AI) développée 
 4. **Grouped Query Attention (GQA) :**
    Une approche intermédiaire entre la Multi-Head Attention (MHA) et la Multi-Query Attention (MQA), qui permet d'économiser la bande passante mémoire et d'améliorer considérablement la vitesse d'inférence en regroupant les têtes de clé (key) et de valeur (value).
 
-Le diagramme Mermaid ci-dessous illustre le flux de données global de TinyLLaMA et la structure du bloc Transformer.
+Le diagramme Mermaid ci-dessous illustre le flux de données global de TinyLLaMA et la structure du bloc [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/).
 
 ```mermaid
 graph TD
@@ -102,7 +102,7 @@ QLoRA intègre trois technologies importantes :
 2. **Double Quantification (Double Quantization) :** Économise encore plus de mémoire en quantifiant également la constante de quantification (facteur d'échelle) elle-même.
 3. **Paged Optimizers :** Utilise la fonction de mémoire unifiée de NVIDIA pour évacuer temporairement le statut de l'optimiseur vers la RAM du processeur lorsque la VRAM est insuffisante.
 
-Grâce à cela, un fine-tuning qui nécessite normalement 16 à 24 Go de VRAM peut être exécuté confortablement même sur des GPU grand public (comme la RTX 3060 12 Go ou la RTX 4070).
+Grâce à cela, un fine-tuning qui nécessite normalement 16 à 24 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de VRAM peut être exécuté confortablement même sur des GPU grand public (comme la RTX 3060 12 Go ou la RTX 4070).
 
 ---
 
@@ -151,7 +151,7 @@ Pour maximiser l'utilisation des Tensor Cores du GPU, les calculs pendant l'appr
 
 ## 6. Pratique : Code de fine-tuning QLoRA pour TinyLLaMA
 
-Nous allons maintenant expliquer le script PyTorch pour le fine-tuning le plus rapide intégrant toutes les optimisations ci-dessus. Nous utiliserons ici `SFTTrainer` de la bibliothèque `trl` (Transformer Reinforcement Learning) de Hugging Face.
+Nous allons maintenant expliquer le script PyTorch pour le fine-tuning le plus rapide intégrant toutes les optimisations ci-dessus. Nous utiliserons ici `SFTTrainer` de la bibliothèque `trl` ([Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) Reinforcement Learning) de Hugging Face.
 
 ### 6.1 Préparation de l'ensemble de données et chargement du modèle
 
@@ -353,7 +353,7 @@ Avec cela, un point de terminaison compatible avec l'API OpenAI est construit da
 
 Dans cet article, nous avons expliqué la méthode de fine-tuning de "TinyLLaMA", qui offre des performances élevées malgré son poids léger de 1,1B de paramètres, de manière très rapide et économe en mémoire dans un environnement sur site.
 
-- **LoRA / QLoRA** permet un véritable fine-tuning de LLM même sur des GPU grand public.
+- **LoRA / QLoRA** permet un véritable fine-tuning de [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) même sur des GPU grand public.
 - En exploitant **Flash Attention 2** et **Gradient Checkpointing**, le temps d'apprentissage et la consommation de VRAM sont optimisés à l'extrême.
 - Le déploiement utilisant **vLLM** permet d'atteindre un débit élevé même dans des environnements de production.
 

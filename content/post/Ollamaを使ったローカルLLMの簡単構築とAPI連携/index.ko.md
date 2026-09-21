@@ -9,7 +9,7 @@ categories: ["ai", "programming", "api"]
 tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 ---
 
-# 시작하며: 왜 로컬 LLM이 필요한가?
+# 시작하며: 왜 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)이 필요한가?
 
 대규모 언어 모델(LLM)의 등장으로 우리의 생활과 개발 방식은 극적인 변화를 맞이했습니다. ChatGPT, Claude, Gemini와 같은 클라우드 기반의 강력한 AI 서비스는 나날이 진화를 거듭하며 매우 고도화된 추론 능력을 제공하고 있습니다. 하지만 모든 유스케이스에서 클라우드형 LLM이 최적의 선택인 것은 아닙니다. 클라우드 LLM에는 다음과 같은 과제들이 존재합니다.
 
@@ -18,7 +18,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 3. **지연 시간(Latency) 및 네트워크 의존성**: 오프라인 환경에서의 사용이나, 극히 낮은 지연 시간이 요구되는 엣지 디바이스에서의 실행에는 네트워크 통신이 병목 현상을 일으킵니다.
 4. **벤더 락인(Vendor [Lock](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/)-in)**: 특정 제공업체의 모델에 의존함으로써, 향후 서비스 종료나 약관 변경, 모델 업데이트로 인한 의도치 않은 동작 변화에 영향을 받을 가능성이 있습니다.
 
-이러한 과제들을 해결할 수단으로 주목받고 있는 것이 바로 '로컬 LLM'입니다. 자신의 하드웨어 위에서 모델을 구동함으로써, 데이터를 일절 외부로 전송하지 않고 월 사용료 걱정 없이 자유롭게 AI를 활용할 수 있습니다.
+이러한 과제들을 해결할 수단으로 주목받고 있는 것이 바로 '로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)'입니다. 자신의 하드웨어 위에서 모델을 구동함으로써, 데이터를 일절 외부로 전송하지 않고 월 사용료 걱정 없이 자유롭게 AI를 활용할 수 있습니다.
 
 본 기사에서는 로컬 LLM을 놀라울 정도로 쉽게 도입, 관리, API 연동할 수 있는 도구인 '**Ollama**'에 대해, 그 기초부터 내부 아키텍처, Python 및 Node.js를 사용한 고급 API 연동, 나아가 성능 튜닝을 위한 계산 공식에 이르기까지 철저하게 해설합니다.
 
@@ -28,13 +28,13 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 Ollama는 로컬 환경에서 오픈소스 대규모 언어 모델(Llama 3, Phi-3, Mistral, Gemma 등)을 쉽게 실행하고 관리하기 위한 플랫폼입니다. 그동안 로컬 LLM 환경을 구축하기 위해서는 Python 환경 설정, CUDA 툴킷 설치, PyTorch 의존성 해결, Hugging Face로부터의 거대한 모델 파일 다운로드 및 포맷 변환(Safetensors에서 GGUF로 등)과 같은 매우 번거로운 절차가 필요했습니다.
 
-Ollama는 이러한 복잡성을 숨기고, [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)와 같은 사용 편의성으로 LLM을 다룰 수 있게 해줍니다. 명령어 하나로 모델을 다운로드(`pull`)하고, 실행(`run`)하며, HTTP 서버로 구동할 수 있습니다.
+Ollama는 이러한 복잡성을 숨기고, [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)와 같은 사용 편의성으로 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 다룰 수 있게 해줍니다. 명령어 하나로 모델을 다운로드(`pull`)하고, 실행(`run`)하며, HTTP 서버로 구동할 수 있습니다.
 
 ## 핵심 기술: llama.cpp의 래퍼(Wrapper)
 
-Ollama의 추론 엔진 백엔드로 기능하는 것은 C/C++로 구현된 고속 LLM 추론 라이브러리인 '**llama.cpp**'입니다. llama.cpp는 Apple Silicon(Metal), NVIDIA GPU(CUDA), AMD GPU(ROCm), 심지어 CPU 전용 환경에서도 하드웨어의 성능을 최대한 끌어내어 모델을 실행하는 능력을 갖추고 있습니다.
+Ollama의 추론 엔진 백엔드로 기능하는 것은 C/C++로 구현된 고속 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 추론 라이브러리인 '**llama.cpp**'입니다. llama.cpp는 Apple Silicon(Metal), NVIDIA GPU(CUDA), AMD GPU(ROCm), 심지어 CPU 전용 환경에서도 하드웨어의 성능을 최대한 끌어내어 모델을 실행하는 능력을 갖추고 있습니다.
 
-Ollama는 llama.cpp를 내포하고 있으며, Go 언어로 작성된 서버 프로세스가 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)를 제공하고 백그라운드에서 llama.cpp의 추론 엔진을 호출하는 아키텍처를 채택하고 있습니다.
+Ollama는 llama.cpp를 내포하고 있으며, [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 언어로 작성된 서버 프로세스가 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)를 제공하고 백그라운드에서 llama.cpp의 추론 엔진을 호출하는 아키텍처를 채택하고 있습니다.
 
 아래의 Mermaid 다이어그램은 Ollama의 전체적인 아키텍처를 보여줍니다.
 
@@ -118,7 +118,7 @@ Ollama의 모델 라이브러리에서는 `모델명:태그` 형식으로 버전
 
 ### 양자화(Quantization)란?
 
-여기서 잠시 양자화에 대해 짚고 넘어가겠습니다. 일반적인 LLM은 1개의 가중치 파라미터를 16비트 부동소수점(FP16) 등으로 유지합니다. 80억(8B) 파라미터 모델의 경우 가중치만으로 약 16GB의 VRAM을 소비하게 됩니다. 이를 4비트(Q4)나 8비트(Q8) 정수형으로 압축하는 기술이 양자화입니다.
+여기서 잠시 양자화에 대해 짚고 넘어가겠습니다. 일반적인 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)은 1개의 가중치 파라미터를 16비트 부동소수점(FP16) 등으로 유지합니다. 80억(8B) 파라미터 모델의 경우 가중치만으로 약 16GB의 VRAM을 소비하게 됩니다. 이를 4비트(Q4)나 8비트(Q8) 정수형으로 압축하는 기술이 양자화입니다.
 
 양자화를 통해 모델의 정확도 저하를 최소화하면서 필요한 메모리 용량과 메모리 대역폭을 극적으로 줄일 수 있습니다. Ollama에서 배포되는 모델은 기본적으로 최적의 양자화(대부분 4비트)가 적용된 GGUF 포맷으로 되어 있습니다.
 
@@ -239,7 +239,7 @@ curl -X POST http://localhost:11434/api/generate -d '{
 
 ## /api/chat을 이용한 대화 생성
 
-최근의 LLM은 채팅 형식으로 파인튜닝(미세조정)되어 있기 때문에 애플리케이션 개발에서는 `/api/chat`이 권장됩니다.
+최근의 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)은 채팅 형식으로 파인튜닝(미세조정)되어 있기 때문에 애플리케이션 개발에서는 `/api/chat`이 권장됩니다.
 
 ```bash
 curl -X POST http://localhost:11434/api/chat -d '{
@@ -341,7 +341,7 @@ print(response)
 
 # Node.js 애플리케이션과의 통합
 
-프론트엔드 엔지니어나 풀스택 개발자에게 있어 TypeScript/Node.js 환경에서 로컬 LLM을 호출할 수 있다는 것은 큰 장점입니다. 공식 `ollama` NPM 패키지를 사용합니다.
+프론트엔드 엔지니어나 풀스택 개발자에게 있어 TypeScript/Node.js 환경에서 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 호출할 수 있다는 것은 큰 장점입니다. 공식 `ollama` NPM 패키지를 사용합니다.
 
 ## 설치
 
@@ -421,7 +421,7 @@ app.listen(3000, () => {
 
 # 성능 메트릭 및 수학적 분석
 
-로컬 LLM을 실제 서비스에 견딜 수 있는 수준으로 제공하기 위해서는 지연 시간(Latency)과 처리량(Throughput)의 분석이 필수적입니다. Ollama의 API 응답에는 성능과 관련된 상세한 메트릭이 포함되어 있습니다.
+로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 실제 서비스에 견딜 수 있는 수준으로 제공하기 위해서는 지연 시간(Latency)과 처리량(Throughput)의 분석이 필수적입니다. Ollama의 API 응답에는 성능과 관련된 상세한 메트릭이 포함되어 있습니다.
 
 ## 토큰 생성 속도 계산 모델
 
@@ -474,7 +474,7 @@ $$
 $$
 M_{model} = \frac{8,000 \times 4}{8 \times 1024} = \frac{32,000}{8192} \approx 3.9 \text{ GB}
 $$
-여기에 컨텍스트용 메모리를 더하면 약 5GB~6GB의 VRAM이 있으면 GPU상에 완전히 모델을 로드(Full Offload)할 수 있다는 것을 알 수 있습니다. 최근의 8GB VRAM을 탑재한 미들 클래스 GPU(RTX 4060 등)에서도 충분히 강력한 LLM을 동작시키는 것이 가능합니다.
+여기에 컨텍스트용 메모리를 더하면 약 5GB~6GB의 VRAM이 있으면 GPU상에 완전히 모델을 로드(Full Offload)할 수 있다는 것을 알 수 있습니다. 최근의 8GB VRAM을 탑재한 미들 클래스 GPU(RTX 4060 등)에서도 충분히 강력한 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 동작시키는 것이 가능합니다.
 
 ---
 
@@ -493,9 +493,9 @@ Python이나 셸 스크립트에 Ollama의 API 요청을 통합하여, 로그의
 
 ## 결론
 
-Ollama의 등장으로 로컬 LLM의 도입 장벽은 극적으로 낮아졌습니다. [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 컨테이너를 조작하는 듯한 단순한 명령어 체계와 외부 애플리케이션에서 쉽게 이용할 수 있는 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)의 조합은 로컬 AI 개발에 있어 현재의 데팩토 스탠더드(사실상의 표준)라고 해도 과언이 아닙니다.
+Ollama의 등장으로 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 도입 장벽은 극적으로 낮아졌습니다. [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 컨테이너를 조작하는 듯한 단순한 명령어 체계와 외부 애플리케이션에서 쉽게 이용할 수 있는 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/)의 조합은 로컬 AI 개발에 있어 현재의 데팩토 스탠더드(사실상의 표준)라고 해도 과언이 아닙니다.
 
-클라우드 LLM의 비용이나 보안 제약으로 고민하고 있는 개발자라면, 꼭 본 기사에서 소개한 절차를 참고하여 Ollama를 이용한 로컬 LLM 환경을 구축하고 자신의 애플리케이션에 통합해 보시기 바랍니다. AI가 가진 가능성을 더욱 자유롭고 가깝게 느낄 수 있을 것입니다.
+클라우드 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 비용이나 보안 제약으로 고민하고 있는 개발자라면, 꼭 본 기사에서 소개한 절차를 참고하여 Ollama를 이용한 로컬 LLM 환경을 구축하고 자신의 애플리케이션에 통합해 보시기 바랍니다. AI가 가진 가능성을 더욱 자유롭고 가깝게 느낄 수 있을 것입니다.
 
 
 

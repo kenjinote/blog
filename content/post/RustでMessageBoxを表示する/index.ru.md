@@ -11,7 +11,7 @@ description: 'Объясняется, как отобразить простое
 
 Вы можете отобразить MessageBox в [Rust](https://kenji.blog/ru/p/webassembly-wasm-current-future/), выполнив следующие шаги.
 
-1. Установите Rust. См. [С чего начать в Rust](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/)
+1. Установите [Rust](https://kenji.blog/ru/p/programming-languages-history-paradigm-evolution/). См. [С чего начать в Rust](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/)
 2. Выполните команду `cargo new --bin MessageBox` в командной строке.
 3. Перейдите в каталог `MessageBox`.
 4. Откройте `Cargo.toml` и измените его следующим образом.

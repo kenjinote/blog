@@ -217,7 +217,7 @@ graph TD
 As the basics of searching in tree structures, there are Depth-First Search (DFS) and Breadth-First Search (BFS).
 
 ## 2. Depth-First Search (DFS)
-Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a Stack.
+Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/).
 
 ### Python Implementation Example of DFS in a Tree Structure
 
@@ -246,7 +246,7 @@ dfs_tree(root)
 ```
 
 ## 2. Depth-First Search (DFS)
-Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a Stack.
+Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/).
 
 ### Python Implementation Example of DFS in a Tree Structure
 
@@ -275,7 +275,7 @@ dfs_tree(root)
 ```
 
 ## 2. Depth-First Search (DFS)
-Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a Stack.
+Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/).
 
 ### Python Implementation Example of DFS in a Tree Structure
 
@@ -304,7 +304,7 @@ dfs_tree(root)
 ```
 
 ## 2. Depth-First Search (DFS)
-Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a Stack.
+Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/).
 
 ### Python Implementation Example of DFS in a Tree Structure
 
@@ -333,7 +333,7 @@ dfs_tree(root)
 ```
 
 ## 2. Depth-First Search (DFS)
-Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a Stack.
+Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/).
 
 ### Python Implementation Example of DFS in a Tree Structure
 
@@ -362,7 +362,7 @@ dfs_tree(root)
 ```
 
 ## 2. Depth-First Search (DFS)
-Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a Stack.
+Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/).
 
 ### Python Implementation Example of DFS in a Tree Structure
 
@@ -391,7 +391,7 @@ dfs_tree(root)
 ```
 
 ## 2. Depth-First Search (DFS)
-Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a Stack.
+Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/).
 
 ### Python Implementation Example of DFS in a Tree Structure
 
@@ -420,7 +420,7 @@ dfs_tree(root)
 ```
 
 ## 2. Depth-First Search (DFS)
-Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a Stack.
+Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/).
 
 ### Python Implementation Example of DFS in a Tree Structure
 
@@ -449,7 +449,7 @@ dfs_tree(root)
 ```
 
 ## 2. Depth-First Search (DFS)
-Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a Stack.
+Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/).
 
 ### Python Implementation Example of DFS in a Tree Structure
 
@@ -478,7 +478,7 @@ dfs_tree(root)
 ```
 
 ## 2. Depth-First Search (DFS)
-Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a Stack.
+Depth-First Search is an algorithm that starts from a certain node, goes as deep as possible, and when it reaches a dead end, returns to the previous node to continue the search. It can be implemented very simply by using recursive functions. It also sometimes uses a data structure called a [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/).
 
 ### Python Implementation Example of DFS in a Tree Structure
 

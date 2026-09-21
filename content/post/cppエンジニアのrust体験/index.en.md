@@ -13,7 +13,7 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 In modern software engineering, C++ and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) stand as the two giants at the forefront of system programming. For many years, C++ has reigned as the absolute king in domains that extract extreme performance from hardware, such as operating systems, embedded devices, game engines, and high-frequency trading (HFT) systems. As a senior C++ engineer myself, I have continued writing code while keeping pace with the massive expansion of specifications—starting from the jungle of raw pointers in the C++98 era, through the wave of modernization introduced by C++11 (smart pointers, lambda expressions, the introduction of `auto`), and moving on to C++14/17/20.
 
-However, in recent years, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) has seen a dramatic rise as a solution to structural issues inherent in C++—particularly security vulnerabilities stemming from the "lack of memory safety" (it is said that about 70% of CVEs are memory-related) and the "endlessly complex specifications and undefined behavior (UB)." Its official adoption into the Linux kernel and large-scale Rust migration projects by tech giants like Microsoft, Google, and AWS are not mere passing fads, but signify a paradigm shift in system programming.
+However, in recent years, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) has seen a dramatic rise as a solution to structural issues inherent in C++—particularly security vulnerabilities stemming from the "lack of memory safety" (it is said that about 70% of CVEs are memory-related) and the "endlessly complex specifications and undefined behavior (UB)." Its official adoption into the Linux kernel and large-scale [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) migration projects by tech giants like Microsoft, Google, and AWS are not mere passing fads, but signify a paradigm shift in system programming.
 
 In this article, I will thoroughly compare and explain the "pros" and "cons" that a purebred C++ engineer felt after deeply learning and practically using Rust, focusing on technical aspects related to the foundation of the language specifications.
 
@@ -21,7 +21,7 @@ In this article, I will thoroughly compare and explain the "pros" and "cons" tha
 
 # 1. The Paradigm Shift in [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/): From RAII to Ownership and Borrowing
 
-## The Limits of RAII and Smart Pointers in C++
+## The Limits of RAII and Smart [Pointer](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)s in C++
 
 One of the greatest inventions of C++ is **RAII (Resource Acquisition Is Initialization)**. This concept of acquiring resources in the constructor and automatically releasing them in the destructor upon exiting a scope freed developers from the fear of memory leaks caused by manual `new` and `delete`. From C++11, `std::unique_ptr` and `std::shared_ptr` were introduced to the standard library, allowing the concept of Ownership to be expressed in code.
 
@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-In [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), the moment ownership of a variable is moved, the original variable is treated as equivalent to an "uninitialized" state by the compiler, completely blocking any subsequent access. Because of this, bugs like "Use-After-Free" and "Dangling Pointers" theoretically cannot pass compilation.
+In [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), the moment ownership of a variable is moved, the original variable is treated as equivalent to an "uninitialized" state by the compiler, completely blocking any subsequent access. Because of this, bugs like "Use-After-Free" and "Dangling [Pointer](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)s" theoretically cannot pass compilation.
 
 ```mermaid
 graph TD
@@ -102,7 +102,7 @@ In C++, it is easy to create multiple mutable references or pointers to the same
 
 ---
 
-# 2. Memory [Layout](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/) and the Mathematical Overhead of Smart Pointers
+# 2. Memory [Layout](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/) and the Mathematical Overhead of Smart [Pointer](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)s
 
 In system programming, an accurate understanding of memory layout is essential. Let's compare C++'s `std::shared_ptr` with [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)'s `std::rc::Rc` / `std::sync::Arc`.
 
@@ -158,7 +158,7 @@ int main() {
 
 ## [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)'s Mutex "Owns" the Data
 
-In Rust, `Mutex<T>` **encapsulates (owns)** the data type `T` to be protected using generics. To access the data, you must always call `lock()` to acquire a guard object. It is syntactically impossible to touch the data without acquiring the lock.
+In [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), `Mutex<T>` **encapsulates (owns)** the data type `T` to be protected using generics. To access the data, you must always call `lock()` to acquire a guard object. It is syntactically impossible to touch the data without acquiring the lock.
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -266,7 +266,7 @@ fn draw_dynamic(item: &dyn Drawable) {
 }
 ```
 
-The most prominent feature of dynamic dispatch in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) (`dyn Trait`) is that it does not hold a vptr within the data structure, but rather uses a **Fat Pointer**. A fat pointer holds a "pointer to the data" and a "pointer to the vtable" as a pair. This makes it incredibly easy to implement (extend) traits for types defined in external libraries at a later time and subject them to dynamic dispatch.
+The most prominent feature of dynamic dispatch in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) (`dyn Trait`) is that it does not hold a vptr within the data structure, but rather uses a **Fat [Pointer](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)**. A fat pointer holds a "pointer to the data" and a "pointer to the vtable" as a pair. This makes it incredibly easy to implement (extend) traits for types defined in external libraries at a later time and subject them to dynamic dispatch.
 
 ---
 
@@ -295,7 +295,7 @@ By simply adding one line with the name and version of a dependency library (cra
 
 # 7. Disadvantages and the Learning Curve When Learning [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)
 
-I have discussed Rust's strengths so far, but there are certainly "walls" and disadvantages that C++ engineers will face when trying to deploy Rust in practice.
+I have discussed [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)'s strengths so far, but there are certainly "walls" and disadvantages that C++ engineers will face when trying to deploy Rust in practice.
 
 ## 1. The Struggle with the Relentless [Borrow Checker](https://kenji.blog/en/p/memory-management-garbage-collection/)
 If you try to implement data structures in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) exactly as you did in C++ where you "somehow linked them with raw pointers" (for example, doubly linked lists, graph structures, or self-referential structs), compilation will fail due to ownership and lifetime constraints. To satisfy the borrow checker, you need to either use complex wrappers like `Rc<RefCell<T>>` or fundamentally redesign your architecture towards arena allocators or index-based management.
@@ -312,6 +312,6 @@ While integration with C (FFI) is very smooth, it is extremely difficult to dire
 
 C++ will likely continue to play a crucial role in game engine development and existing, massive infrastructure. The modernization brought by C++20/23 is remarkable, and it is becoming safer to write.
 
-However, for "newly launched system programming projects," I feel that it is now **harder to find a reason NOT to choose Rust**. The "certainty" of Rust—that as long as it compiles, you are freed from the fear of undefined behavior and memory corruption, and can safely perform concurrent processing with high performance—drastically improves an engineer's mental model.
+However, for "newly launched system programming projects," I feel that it is now **harder to find a reason NOT to choose [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)**. The "certainty" of Rust—that as long as it compiles, you are freed from the fear of undefined behavior and memory corruption, and can safely perform concurrent processing with high performance—drastically improves an engineer's mental model.
 
 For C++ engineers, learning Rust is not simply about memorizing new syntax, but it is the ultimate experience of gaining a new perspective on "how to manage memory and threads safely." By all means, please experience the comfort of Cargo and the strictness of the borrow checker for yourselves.

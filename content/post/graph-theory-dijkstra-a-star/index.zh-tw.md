@@ -142,7 +142,7 @@ def dijkstra(graph, start):
 
 ### 3.4 關於時間複雜度
 
-若使用二元樹堆積 (Binary Heap) 作為優先權佇列，每個頂點會從佇列中取出 1 次，每條邊會被鬆弛 1 次。
+若使用二元樹堆積 (Binary [Heap](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)) 作為優先權佇列，每個頂點會從佇列中取出 1 次，每條邊會被鬆弛 1 次。
 因此，時間複雜度為 $ O((|V| + |E|) \log |V|) $。若使用費波那契堆積 (Fibonacci Heap)，理論上可改善至 $ O(|E| + |V| \log |V|) $，但實務上大多使用二元樹堆積。
 
 ---

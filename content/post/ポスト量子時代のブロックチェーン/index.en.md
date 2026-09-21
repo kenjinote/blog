@@ -289,7 +289,7 @@ In the current EVM, a precompiled contract `ecrecover` (address: `0x01`) is prov
 
 However, the verification process of new lattice-based cryptographic algorithms like Dilithium and Falcon involves complex polynomial and matrix operations. Implementing this using only existing EVM Opcodes could consume millions to tens of millions of gas for just one signature verification. This is a level that would deplete the current block gas limit (about 30 million Gas) with a single transaction.
 
-To avoid this, it is necessary to incorporate a new Precompiled Contract for PQC verification (e.g., assigning DilithiumVerify to `0x10`) into the EVM itself through a network hard fork. This requires a long-term process where core developers of each Ethereum client (Geth, Nethermind, Erigon, etc.) collaborate to optimally implement lattice cryptography verification logic at the language level (C++, Go, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), etc.) and conduct security audits.
+To avoid this, it is necessary to incorporate a new Precompiled Contract for PQC verification (e.g., assigning DilithiumVerify to `0x10`) into the EVM itself through a network hard fork. This requires a long-term process where core developers of each Ethereum client (Geth, Nethermind, Erigon, etc.) collaborate to optimally implement lattice cryptography verification logic at the language level (C++, [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), etc.) and conduct security audits.
 
 ### 5.3. Difficulties in [Consensus](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) Building Through Hard Forks
 

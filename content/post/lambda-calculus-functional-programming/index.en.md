@@ -16,7 +16,7 @@ tags:
 
 ## 1. Introduction: The Philosophy Underlying [Functional Programming](https://kenji.blog/en/p/oop-vs-fp-vs-dop/)
 
-In modern software development, **functional programming** is no longer a niche approach for a subset of enthusiasts, but has become a widely adopted paradigm. From frontend technologies like React to [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) and Scala, and even object-oriented languages like Java and C#, concepts such as treating functions as first-class objects and eliminating side effects have been incorporated.
+In modern software development, **functional programming** is no longer a niche approach for a subset of enthusiasts, but has become a widely adopted paradigm. From frontend technologies like React to [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) and Scala, and even object-oriented languages like [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) and C#, concepts such as treating functions as first-class objects and eliminating side effects have been incorporated.
 
 However, behind this paradigm lies a profound mathematical theory constructed in the 1930s, before the physical birth of computers. That is the **lambda calculus** ($\lambda$-calculus) proposed by Alonzo Church.
 
@@ -149,7 +149,7 @@ $$
 
 The Y combinator satisfies $Y \ f = f \ (Y \ f)$ for any function $f$. By utilizing this, recursive structures can be expressed as application to the function itself, allowing infinite loops and recursion in computers to be processed within the framework of lambda calculus. This demonstrates that lambda calculus is Turing complete.
 
-## 6. The Birth of Lisp: From Theory to Programming Language
+## 6. The Birth of Lisp: From Theory to [Programming Language](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)
 
 In the late 1950s, John McCarthy was designing a new programming language for artificial intelligence research. Inspired by Church's lambda calculus, he developed a language that directly supported function abstraction and recursion. This is **Lisp** (LISt Processing).
 
@@ -219,7 +219,7 @@ firstTenEvens = take 10 (map (*2) naturals)
 
 ### 8.2 Monads and Managing Side Effects
 
-In purely functional languages, how to handle "Side Effects" like I/O and state changes while maintaining mathematical purity (referential transparency) has been a long-standing challenge. Haskell elegantly solved this problem by introducing the concept of a **Monad** from Category Theory.
+In purely functional languages, how to handle "Side Effects" like I/O and state changes while maintaining mathematical purity (referential transparency) has been a long-standing challenge. Haskell elegantly solved this problem by introducing the concept of a **[Monad](https://kenji.blog/en/p/functional-programming-concepts-pure-functions-monads/)** from Category Theory.
 
 With the IO monad, it succeeded in completely separating "computation" and "execution with side effects" at the type system level.
 

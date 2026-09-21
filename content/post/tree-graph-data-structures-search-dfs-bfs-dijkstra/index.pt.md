@@ -36,7 +36,7 @@ graph TD
 Como base para a exploração em uma estrutura de árvore, temos a busca em profundidade (DFS) e a busca em largura (BFS).
 
 ## 2. Busca em Profundidade (DFS: Depth-First Search)
-A busca em profundidade é um algoritmo que parte de um certo nó, avança o mais fundo possível e, ao chegar a um beco sem saída, retorna ao nó anterior para continuar a exploração. Usando funções recursivas, pode ser implementado de forma muito simples. Uma estrutura de dados chamada pilha (Stack) também pode ser utilizada.
+A busca em profundidade é um algoritmo que parte de um certo nó, avança o mais fundo possível e, ao chegar a um beco sem saída, retorna ao nó anterior para continuar a exploração. Usando funções recursivas, pode ser implementado de forma muito simples. Uma estrutura de dados chamada pilha ([Stack](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/)) também pode ser utilizada.
 
 ### Exemplo de implementação em Python de DFS em uma estrutura de árvore
 

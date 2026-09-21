@@ -884,6 +884,6 @@ def merge_sort(arr):
 - 如果需要稳定性，或者希望保证最坏情况的时间复杂度，会选择 **归并排序**。
 - 如果内存限制严格，并希望在原地获得稳定的性能，**堆排序** 是合适的。
 
-在现代编程语言（如 Python、Java、Rust 等）的标准库中，采用了结合这些算法优点的混合方法（如 TimSort 和 IntroSort），开发人员从零开始自己实现排序算法的机会已经减少。但是，理解其内部考虑了哪些权衡，是设计更高性能、更健壮软件的重要基础。
+在现代编程语言（如 Python、[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)、[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 等）的标准库中，采用了结合这些算法优点的混合方法（如 TimSort 和 IntroSort），开发人员从零开始自己实现排序算法的机会已经减少。但是，理解其内部考虑了哪些权衡，是设计更高性能、更健壮软件的重要基础。
 
 希望这篇文章能对你的算法学习和实际开发有所帮助。

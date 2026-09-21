@@ -10,13 +10,13 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: '彻底比较C++的指针与Rust的所有权及借用模型。从原始指针、智能指针到借用检查器，为您分析内存安全的本质。'
 ---
 
-现代系统编程中，兼顾性能与内存安全是永恒的课题。多年来，C++一直作为该领域的王者而存在，但近年来[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)正在逐渐威胁其地位。Rust最大的特点在于不使用垃圾回收（GC）的情况下，在编译时通过“所有权（Ownership）”和“借用（Borrowing）”的概念来保证内存安全。
+现代系统编程中，兼顾性能与内存安全是永恒的课题。多年来，C++一直作为该领域的王者而存在，但近年来[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)正在逐渐威胁其地位。[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)最大的特点在于不使用垃圾回收（GC）的情况下，在编译时通过“所有权（Ownership）”和“借用（Borrowing）”的概念来保证内存安全。
 
-本文将详细比较C++的指针（原始指针、`std::unique_ptr`、`std::shared_ptr`）与[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)的所有权模型，并通过代码示例和图表，深入解析Rust的编译器（借用检查器）是如何防止释放后使用（Use-After-Free）和数据竞争（Data Race）的。
+本文将详细比较C++的指针（原始指针、`std::unique_ptr`、`std::shared_ptr`）与[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)的所有权模型，并通过代码示例和图表，深入解析[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)的编译器（借用检查器）是如何防止释放后使用（Use-After-Free）和数据竞争（Data Race）的。
 
 ## 1. 内存管理基础：栈与堆
 
-为了理解内存管理的基础，让我们先回顾一下程序是如何使用内存的。内存区域大致可分为“栈（Stack）”和“堆（Heap）”。
+为了理解内存管理的基础，让我们先回顾一下程序是如何使用内存的。内存区域大致可分为“栈（[Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）”和“堆（[Heap](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）”。
 
 ### 栈（Stack）
 这是在函数调用时分配局部变量等数据的区域。它具有LIFO（后进先出）结构，内存的分配和释放非常快。只有在编译时能够确定大小的数据才会被放置在这里。
@@ -44,12 +44,12 @@ graph TD
 
 让我们来看看C++中内存管理的变迁。
 
-### 原始指针（Raw Pointers）时代及问题
+### 原始指针（Raw [Pointer](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)s）时代及问题
 
 从C语言继承而来的原始指针（`*`）提供了终极的自由，但同时也成为以下严重Bug的温床。
 
 - **内存泄漏（Memory Leak）**: 忘记使用`delete`释放通过`new`分配的内存。
-- **悬垂指针（Dangling Pointer）**: 访问在内存释放后（`delete`后）的指针。
+- **悬垂指针（Dangling [Pointer](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）**: 访问在内存释放后（`delete`后）的指针。
 - **双重释放（Double Free）**: 对同一块内存区域执行了两次`delete`。
 
 ```cpp
@@ -93,13 +93,13 @@ void uniquePtrExample() {
 
 ## 3. [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)的所有权（Ownership）：范式转移
 
-Rust将C++中`std::unique_ptr`的概念作为语言规范的基础，并拥有一个更严格的“所有权模型”。
+[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)将C++中`std::unique_ptr`的概念作为语言规范的基础，并拥有一个更严格的“所有权模型”。
 
 ### 所有权的3个规则
 
 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)的所有权系统基于以下三个极其简单的规则。
 
-1. **Rust中的每一个值都有一个被称为其所有者（owner）的变量。**
+1. **[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)中的每一个值都有一个被称为其所有者（owner）的变量。**
 2. **在任何时候，值有且只有一个所有者。**
 3. **当所有者离开作用域，这个值将被丢弃。**
 
@@ -150,7 +150,7 @@ sequenceDiagram
 
 $$ (N_r \ge 0 \land N_w = 0) \oplus (N_r = 0 \land N_w = 1) $$
 
-通过这个规则，[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)在 **编译时彻底消除了数据竞争（Data Race）** 。数据竞争发生在：①两个或多个指针同时访问同一数据；②至少有一个指针在进行写入操作；③没有同步机制。Rust通过在编译时打破条件②，防患于未然地阻止了数据竞争。
+通过这个规则，[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)在 **编译时彻底消除了数据竞争（Data Race）** 。数据竞争发生在：①两个或多个指针同时访问同一数据；②至少有一个指针在进行写入操作；③没有同步机制。[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)通过在编译时打破条件②，防患于未然地阻止了数据竞争。
 
 ```rust
 // Rust: 违反借用规则导致的编译错误
@@ -197,7 +197,7 @@ int main() {
 
 ### [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)中的编译期防御
 
-让我们用Rust编写完全相同的逻辑。
+让我们用[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)编写完全相同的逻辑。
 
 ```rust
 // Rust: 在编译时防止迭代器失效
@@ -275,7 +275,7 @@ fn main() {
 
 C++的指针和智能指针为开发者提供了高度的控制和性能，但它们的正确使用依赖于开发者的自律。RAII和`std::unique_ptr`的引入使得C++的安全性大幅提升，但即使如此，也无法在语言级别完全防止移动后的访问或迭代器失效等“未定义行为”。
 
-相反，[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)通过将所有权（Ownership）和借用（Borrowing）规则嵌入编译器，在 **编译时** 而非运行时检测这些错误。“只要能编译通过，内存就是安全的”，这种强有力的保证正是Rust在系统编程领域迅速获得支持的最大理由。
+相反，[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)通过将所有权（Ownership）和借用（Borrowing）规则嵌入编译器，在 **编译时** 而非运行时检测这些错误。“只要能编译通过，内存就是安全的”，这种强有力的保证正是[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)在系统编程领域迅速获得支持的最大理由。
 
 与Rust的借用检查器作斗争（Fight the borrow checker）对初学者来说是一大障碍，但这只不过是编译器在严格代替C++程序员原本在脑海中进行的追踪指针生命周期的复杂计算罢了。
 

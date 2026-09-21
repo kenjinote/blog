@@ -10,9 +10,9 @@ tags: ["llama.cpp", "GGUF", "Quantization", "LLM"]
 description: '我們將結合數學公式與架構圖，非常詳細地解說 llama.cpp 所採用的 GGUF 格式與 k-quants 量化技術的內部結構。'
 ---
 
-## 1. 前言：為什麼 LLM 需要量化？
+## 1. 前言：為什麼 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 需要量化？
 
-近年來大型語言模型（LLM: Large Language Models）的發展雖然令人矚目，但其背後卻浮現了「運算資源枯竭」與「記憶體頻寬瓶頸」等嚴重的問題。例如，若將像 Llama 3 這樣擁有 70B（700 億）參數的模型，以標準的 16 位元浮點數（FP16）載入記憶體中，光是參數就會消耗約 140GB 的 VRAM/RAM。如果再加上推論時的上下文（KV 快取），除非將多台資料中心用的高階 GPU（NVIDIA A100 80GB 或 H100 80GB）組成叢集，否則根本無法運作。
+近年來大型語言模型（LLM: [Large Language Models](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的發展雖然令人矚目，但其背後卻浮現了「運算資源枯竭」與「記憶體頻寬瓶頸」等嚴重的問題。例如，若將像 Llama 3 這樣擁有 70B（700 億）參數的模型，以標準的 16 位元浮點數（FP16）載入記憶體中，光是參數就會消耗約 140GB 的 VRAM/RAM。如果再加上推論時的上下文（KV 快取），除非將多台資料中心用的高階 GPU（NVIDIA A100 80GB 或 H100 80GB）組成叢集，否則根本無法運作。
 
 為了讓個人開發者與邊緣裝置（MacBook 或一般的電競 PC）也能夠執行 LLM，作為救星登場的就是 **llama.cpp** 以及其核心的 ** 量化（Quantization）技術**。尤其是被稱為 **GGUF (GPT-Generated Unified Format)** 的檔案格式，以及名為 **k-quants** 的進階區塊層級量化演算法，這是一種在將模型準確度（Perplexity）下降程度抑制到極限的同時，將模型大小壓縮至數分之一的革命性手法。
 
@@ -175,7 +175,7 @@ llama.cpp 根據目的提供了許多變體。「K」後面的後綴詞（S, M, 
 
 ## 5. 推論時的效能最佳化：SIMD 與 CUDA 架構
 
-單純將 GGUF 模型載入記憶體，推論速度並不會變快。LLM 的推論大部分是「矩陣乘積（Matrix-Vector Multiplication，簡稱 GEMV，或是 Matrix-Matrix，簡稱 GEMM）」。關鍵在於如何加速量化後的權重與保持為 FP16（或 FP32）的激活值（輸入資料）之間的乘積和運算。
+單純將 GGUF 模型載入記憶體，推論速度並不會變快。[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的推論大部分是「矩陣乘積（Matrix-Vector Multiplication，簡稱 GEMV，或是 Matrix-Matrix，簡稱 GEMM）」。關鍵在於如何加速量化後的權重與保持為 FP16（或 FP32）的激活值（輸入資料）之間的乘積和運算。
 
 ### 5.1. CPU 環境下 SIMD 指令的運用
 
@@ -226,7 +226,7 @@ sequenceDiagram
 | **Llama-3-8B (Q2_K)** | 約 3.0 GB | 4.5 GB 以上 | 快速 | 明顯劣化 |
 
 **注意事項 (KV 快取的影響)：**
-在 LLM 的推論中，當上下文長度（提示詞的 Token 數量）變長時，不僅是模型的權重，用來保存過去 Attention 狀態的 **KV 快取** 的記憶體消耗量也會爆發性地增加。
+在 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的推論中，當上下文長度（提示詞的 Token 數量）變長時，不僅是模型的權重，用來保存過去 Attention 狀態的 **KV 快取** 的記憶體消耗量也會爆發性地增加。
 例如，當上下文為 8192 個 Token 時，光是 KV 快取就會消耗數 GB。因此，在實際運用上，必須保留 `模型檔案大小 + 約 1.5GB～3GB` 的餘裕空間（Headroom）。之所以推薦 Q4_K_M，是因為即使保留了這個 KV 快取空間，它也能在一般搭載 8GB VRAM 的 GPU（如 RTX 3060 / 4060 等）上安全運作，是一條非常絕妙的分界線。
 
 在最近的 llama.cpp 中，也加入了 **將這個 KV 快取本身以 Q8_0 或 Q4_0 進行量化的功能** ，為了進一步延長上下文長度的巧思不斷推陳出新。
@@ -237,7 +237,7 @@ sequenceDiagram
 
 本文深入探討並解說了身為 llama.cpp 心臟部位的 GGUF 格式與 k-quants 量化技術的內部結構。
 
-1. **GGUF 的彈性：** 透過鍵值對（[Key-Value](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/)）型的後設資料結構，建立了一個堅固的生態系統，即使面對 LLM 的急速進化（新模型架構的出現），也能在沒有破壞性變更的情況下隨之發展。
+1. **GGUF 的彈性：** 透過鍵值對（[Key-Value](https://kenji.blog/zh-tw/p/nosql-database-selection-kvs-document-graph-wide-column/)）型的後設資料結構，建立了一個堅固的生態系統，即使面對 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的急速進化（新模型架構的出現），也能在沒有破壞性變更的情況下隨之發展。
 2. **k-quants 的極限壓縮：** 透過超級區塊與子區塊的階層性縮放因子管理，在保留離群值資訊的同時，達成了每個權重平均僅需 4.8 位元（Q4_K_M）的驚人壓縮率。
 3. **消除記憶體頻寬瓶頸：** 透過在 SIMD 或 CUDA 中實作的高階核心程式碼（Kernel），在即時反量化的同時進行計算，減少了 VRAM 的傳輸量，並飛躍性地提升了推論速度。
 

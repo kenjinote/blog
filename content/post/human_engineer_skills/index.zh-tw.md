@@ -11,7 +11,7 @@ tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 
 # AI 寫程式時代所需要的「人類專屬工程師技能」
 
-近年來，隨著生成式 AI (Generative AI) 與大型語言模型 (LLM) 的飛躍性進化，軟體工程的風景發生了劇烈變化。GitHub Copilot 及各種 AI 寫程式助手的日常使用，讓「只要用自然語言下達指令，AI 就能瞬間生成程式碼」這件事，不再是未來的科幻情節，而是今日的現實。
+近年來，隨著生成式 AI (Generative AI) 與大型語言模型 ([LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)) 的飛躍性進化，軟體工程的風景發生了劇烈變化。GitHub Copilot 及各種 AI 寫程式助手的日常使用，讓「只要用自然語言下達指令，AI 就能瞬間生成程式碼」這件事，不再是未來的科幻情節，而是今日的現實。
 
 在這樣的時代中，許多工程師會感到「自己的工作是不是會被 AI 奪走」的不安，這是很自然的。確實，像是建立典型 CRUD 應用的樣板 (Boilerplate)、實作簡單演算法，或是呼叫常見函式庫的 API 這些「單純的寫程式工作 (Typing Code)」正在快速商品化 (Commoditization)。
 
@@ -23,7 +23,7 @@ tags: ["Generative AI", "DDD", "Architecture", "Future of Work"]
 
 為了正確評估 AI 的能力，並看清人類應該在哪個領域發揮價值，首先必須從數學與架構的觀點，理解 AI（特別是 LLM）的結構性限制。
 
-### 1.1 Transformer 架構中的運算量與上下文限制
+### 1.1 [Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 架構中的運算量與上下文限制
 
 目前大部分的 LLM 都是基於 Google 在 2017 年發表的「Transformer」架構。Transformer 的核心在於「自注意力機制 (Self-Attention Mechanism)」。自注意力機制會計算輸入序列中的每個標記 (Token) 與其他所有標記之間的關聯程度。
 
@@ -38,7 +38,7 @@ $$ \text{Complexity} = O(N^2 \cdot d) $$
 
 近年來，雖然像是 FlashAttention 這種硬體層級的最佳化、Sparse Attention，甚至是 Mamba ([State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Space Models) 等能以線性時間 $O(N)$ 處理的替代架構研究正在進行，但要「完全理解無限的上下文，並生成整體最佳化的輸出」依然是非常困難的。
 
-此外，即使物理上擴大了上下文視窗 (Context Window)，也會發生被稱為「Lost in the Middle（中間資訊流失）」的現象。LLM 很容易受到提示詞 (Prompt) 開頭與結尾資訊的強烈影響，而傾向於忽略配置在中間的重要需求或限制。如果讓 LLM 讀取高達數萬行的企業級系統完整原始碼，並指示它「進行最佳的重構」，最終往往會生成局部正確、但整體邏輯崩潰的程式碼，原因就在於此。
+此外，即使物理上擴大了上下文視窗 (Context Window)，也會發生被稱為「Lost in the Middle（中間資訊流失）」的現象。[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 很容易受到提示詞 (Prompt) 開頭與結尾資訊的強烈影響，而傾向於忽略配置在中間的重要需求或限制。如果讓 LLM 讀取高達數萬行的企業級系統完整原始碼，並指示它「進行最佳的重構」，最終往往會生成局部正確、但整體邏輯崩潰的程式碼，原因就在於此。
 
 ### 1.2 機率生成模型的特性與「幻覺 (Hallucination)」
 
@@ -164,7 +164,7 @@ AI 生成的程式碼越多，在正式環境中運行「沒有人能完全理�
 
 「在本地或測試環境無法重現，只在正式環境的尖峰時段才會發生的 Bug」——例如，記憶體流失 (Memory Leak)、資料庫死結 (Deadlock)、連線池耗盡、網路封包遺失等問題，絕對無法光靠原始碼的靜態分析就能發現。
 
-人類工程師需要盯著正式環境的指標建立假說，分析執行緒傾印 (Thread Dump) 與堆積傾印 (Heap Dump)，找出瓶頸所在。AI 無法直接敲終端機對正式伺服器的程序進行效能分析 (Profiling)（基於安全性要求，也不該被允許）。
+人類工程師需要盯著正式環境的指標建立假說，分析執行緒傾印 (Thread Dump) 與堆積傾印 ([Heap](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/) Dump)，找出瓶頸所在。AI 無法直接敲終端機對正式伺服器的程序進行效能分析 (Profiling)（基於安全性要求，也不該被允許）。
 系統越複雜，具備實體基礎設施、網路協定、作業系統核心調校等「底層知識」與「直覺假說推論能力」的工程師，其價值就越高。
 
 ---
@@ -201,7 +201,7 @@ pie title 工程師的時間分配（AI 時代）
 
 ## 7. 結語：與其抗拒進化，不如駕馭浪潮
 
-「AI 寫程式的時代」對工程師來說不是威脅，而是歷史上最大的機會。就像過去從組合語言轉換到 C 語言，以及從手動管理記憶體指標進化到 Java 的垃圾回收機制一樣，AI 自動生成程式碼只不過是「抽象化層級又往上提升了一階」。
+「AI 寫程式的時代」對工程師來說不是威脅，而是歷史上最大的機會。就像過去從組合語言轉換到 C 語言，以及從手動管理記憶體指標進化到 [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 的垃圾回收機制一樣，AI 自動生成程式碼只不過是「抽象化層級又往上提升了一階」。
 
 未來的工程師不需要再為特定程式語言的細微規格，或框架的版本更新而患得患失，而是可以將資源集中在 **「商業課題是什麼」、「要如何切割資料、如何整合」、「當系統停機時該如何迅速復原」** 等更為本質且更具人類高度的問題解決上。
 

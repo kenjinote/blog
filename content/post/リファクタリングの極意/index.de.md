@@ -211,12 +211,12 @@ Die Lösung besteht darin, Abhängigkeiten von impliziten globalen Zuständen zu
 
 ## 6. Modernisierung der Speicherverwaltung und das Wesen von RAII
 
-Im Code der C++98/03-Ära waren `new` und `delete` im gesamten Code verstreut, was ein Nährboden für Speicherlecks (Memory Leaks) und hängende Zeiger (Dangling Pointers) war. In Modern C++ (ab C++11) wird das Konzept der **Eigentümerschaft (Ownership)** auf Sprachebene unterstützt, und eine sichere Ressourcenverwaltung mithilfe von Smart Pointern ist zum Standard geworden.
+Im Code der C++98/03-Ära waren `new` und `delete` im gesamten Code verstreut, was ein Nährboden für Speicherlecks (Memory Leaks) und hängende Zeiger (Dangling [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)s) war. In Modern C++ (ab C++11) wird das Konzept der **Eigentümerschaft (Ownership)** auf Sprachebene unterstützt, und eine sichere Ressourcenverwaltung mithilfe von Smart Pointern ist zum Standard geworden.
 
 ### RAII (Resource Acquisition Is Initialization)
 RAII ist das wichtigste Idiom in C++. Indem die Ressourcenzuweisung an die Objektinitialisierung (Konstruktor) und die Ressourcenfreigabe an die Objektzerstörung (Destruktor) gebunden wird, wird garantiert, dass die Ressource beim Verlassen des Gültigkeitsbereichs sicher freigegeben wird.
 
-Selbst wenn Ausnahmen (Exceptions) auftreten, wird der Destruktor lokaler Variablen während des Stack-Unwinding-Prozesses automatisch aufgerufen, wodurch Ressourcenlecks verhindert werden.
+Selbst wenn Ausnahmen (Exceptions) auftreten, wird der Destruktor lokaler Variablen während des [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Unwinding-Prozesses automatisch aufgerufen, wodurch Ressourcenlecks verhindert werden.
 
 **Vorher (Gefährlicher Legacy-Code)**
 ```cpp
@@ -246,7 +246,7 @@ void processFile(const char* filename) {
 
 Dieser Code erfordert die manuelle Freigabe von Ressourcen bei jeder Verzweigung im Kontrollfluss, was eine extrem fragile Struktur darstellt.
 
-**Nachher (Nutzung von RAII und Smart Pointern)**
+**Nachher (Nutzung von RAII und Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)n)**
 ```cpp
 void processFile(const std::string& filename) {
     // std::ifstream verwaltet Datei-Handles mit RAII
@@ -330,7 +330,7 @@ Bitte behalten Sie die in diesem Artikel erläuterten folgenden Schritte im Hint
 1. **Messen Sie die Komplexität und entwickeln Sie eine Strategie auf der Grundlage von Fakten**
 2. **Finden Sie Säume und schützen Sie das System mit Charakterisierungstests**
 3. **Brechen Sie enge Kopplungen durch DI auf und beseitigen Sie globale Zustände**
-4. **Beseitigen Sie Bedenken hinsichtlich der Speicherverwaltung durch RAII und Smart Pointer**
+4. **Beseitigen Sie Bedenken hinsichtlich der Speicherverwaltung durch RAII und Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)**
 5. **Nutzen Sie die Funktionen von Modern C++ und lassen Sie den Compiler die Arbeit erledigen**
 
 Die wahre Kunst des Refactorings besteht darin, den Geist der "Pfadfinderregel" (Hinterlasse den Campingplatz sauberer, als du ihn vorgefunden hast) beizubehalten und den Code durch tägliche Entwicklungsaufgaben allmählich, aber stetig weiter zu verbessern.

@@ -17,9 +17,9 @@ tags: ["C++", "Rust", "Wasm", "JavaScript"]
 
 ## 2. [WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)) 概要與架構
 
-WebAssembly 是一種針對堆疊式虛擬機（Stack-based Virtual Machine）的二進位指令格式。它被設計為一種「可移植的編譯目標（Portable Compilation Target）」，可由 C/C++、[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)、Go、Zig 等語言編譯而成，目的是在網頁瀏覽器上以接近原生的速度執行。
+WebAssembly 是一種針對堆疊式虛擬機（[Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)-based Virtual Machine）的二進位指令格式。它被設計為一種「可移植的編譯目標（Portable Compilation Target）」，可由 C/C++、[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)、[Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)、Zig 等語言編譯而成，目的是在網頁瀏覽器上以接近原生的速度執行。
 
-下圖展示了從 C++ 與 Rust 產生 WebAssembly，直到在瀏覽器中執行的工具鏈大致流程。
+下圖展示了從 C++ 與 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 產生 WebAssembly，直到在瀏覽器中執行的工具鏈大致流程。
 
 ```mermaid
 graph TD
@@ -139,7 +139,7 @@ Module.onRuntimeInitialized = () => {
 
 ## 5. 使用 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 與 `wasm-pack` 的方法
 
-[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 提供了對 [WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的一級（First-class）支援，透過使用 `wasm-bindgen` 與 `wasm-pack` 工具，可以實現 JavaScript 與 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 之間的高度整合。相對於 Emscripten 採用「將 C/C++ 龐大的 Runtime 帶入瀏覽器」的方法，Rust 的 `wasm-pack` 則是採用「只產生必要最小限度的綁定（JS 膠水程式碼）」的方法。
+[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 提供了對 [WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 的一級（First-class）支援，透過使用 `wasm-bindgen` 與 `wasm-pack` 工具，可以實現 JavaScript 與 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 之間的高度整合。相對於 Emscripten 採用「將 C/C++ 龐大的 Runtime 帶入瀏覽器」的方法，[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 的 `wasm-pack` 則是採用「只產生必要最小限度的綁定（JS 膠水程式碼）」的方法。
 
 ### [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 實作程式碼
 
@@ -287,9 +287,9 @@ graph TD
 
 瀏覽器的 [Wasm](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 引擎會透過串流編譯（Streaming Compilation，邊下載邊平行編譯為機器碼）這些區段，來實現啟動速度的劇烈提升。
 
-## 9. C++ 與 Rust：該選擇哪一個？
+## 9. C++ 與 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)：該選擇哪一個？
 
-在產生 [WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 時，該選擇 C++ 還是 Rust，很大程度上取決於專案需求與既有資產。
+在產生 [WebAssembly](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 時，該選擇 C++ 還是 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)，很大程度上取決於專案需求與既有資產。
 
 **應該選擇 C++ / Emscripten 的情況** ：
 * 想要將既有的 C/C++ 函式庫（FFmpeg、OpenCV、SQLite 等）移植到瀏覽器時。

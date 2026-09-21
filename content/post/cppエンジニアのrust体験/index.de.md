@@ -11,9 +11,9 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 # Einführung: Eine neue Morgenröte in der Systemprogrammierung
 
-In der modernen Softwareentwicklung sind C++ und [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) die zwei großen Giganten, die an vorderster Front der Systemprogrammierung stehen. Viele Jahre lang herrschte C++ als absoluter König in Bereichen, in denen extreme Hardwareleistung gefordert ist, wie Betriebssysteme, eingebettete Geräte, Spiele-Engines und Hochfrequenzhandel (HFT). Ich selbst schreibe als Senior-C++-Entwickler seit der C++98-Ära mit ihrem Dschungel aus rohen Zeigern Code und habe die Welle der Modernisierung durch C++11 (Einführung von Smart Pointern, [Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)-Ausdrücken und `auto`) sowie die kontinuierliche Vergrößerung der Spezifikationen in C++14/17/20 hautnah miterlebt.
+In der modernen Softwareentwicklung sind C++ und [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) die zwei großen Giganten, die an vorderster Front der Systemprogrammierung stehen. Viele Jahre lang herrschte C++ als absoluter König in Bereichen, in denen extreme Hardwareleistung gefordert ist, wie Betriebssysteme, eingebettete Geräte, Spiele-Engines und Hochfrequenzhandel (HFT). Ich selbst schreibe als Senior-C++-Entwickler seit der C++98-Ära mit ihrem Dschungel aus rohen Zeigern Code und habe die Welle der Modernisierung durch C++11 (Einführung von Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)n, [Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)-Ausdrücken und `auto`) sowie die kontinuierliche Vergrößerung der Spezifikationen in C++14/17/20 hautnah miterlebt.
 
-In den letzten Jahren hat [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) jedoch als Lösung für die strukturellen Probleme von C++ – insbesondere das "Fehlen von Speichersicherheit", das zu Sicherheitslücken führt (etwa 70% der CVEs sollen speicherbedingt sein), und die "endlos komplexen Spezifikationen sowie undefiniertes Verhalten (UB)" – einen dramatischen Aufstieg erlebt. Die offizielle Einführung in den Linux-Kernel sowie groß angelegte Migrationsprojekte zu Rust durch Tech-Giganten wie Microsoft, Google und AWS sind nicht nur ein vorübergehender Trend, sondern bedeuten einen Paradigmenwechsel in der Systemprogrammierung.
+In den letzten Jahren hat [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) jedoch als Lösung für die strukturellen Probleme von C++ – insbesondere das "Fehlen von Speichersicherheit", das zu Sicherheitslücken führt (etwa 70% der CVEs sollen speicherbedingt sein), und die "endlos komplexen Spezifikationen sowie undefiniertes Verhalten (UB)" – einen dramatischen Aufstieg erlebt. Die offizielle Einführung in den Linux-Kernel sowie groß angelegte Migrationsprojekte zu [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) durch Tech-Giganten wie Microsoft, Google und AWS sind nicht nur ein vorübergehender Trend, sondern bedeuten einen Paradigmenwechsel in der Systemprogrammierung.
 
 In diesem Artikel werde ich die "Vorteile" und "Nachteile", die ich als waschechter C++-Entwickler beim tiefgreifenden Erlernen und praktischen Einsatz von Rust erfahren habe, aus einer technischen Perspektive, die an die Grundlagen des Sprachdesigns rührt, gründlich vergleichen und erläutern.
 
@@ -21,11 +21,11 @@ In diesem Artikel werde ich die "Vorteile" und "Nachteile", die ich als waschech
 
 # 1. Paradigmenwechsel in der Speicherverwaltung: Von RAII zu Ownership und Borrowing
 
-## Die Grenzen von RAII und Smart Pointern in C++
+## Die Grenzen von RAII und Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)n in C++
 
 Eine der größten Erfindungen von C++ ist **RAII (Resource Acquisition Is Initialization)**. Dieses Konzept, bei dem Ressourcen im Konstruktor gesichert und beim Verlassen des Gültigkeitsbereichs (Scope) im Destruktor automatisch freigegeben werden, befreite Entwickler von der Angst vor Speicherlecks durch manuelles `new` und `delete`. Seit C++11 wurden `std::unique_ptr` und `std::shared_ptr` in die Standardbibliothek eingeführt, wodurch das Konzept der Eigentümerschaft (Ownership) im Code darstellbar wurde.
 
-Allerdings haben die Smart Pointer und die Move-Semantik von C++ eine fatale Schwäche: Die statische Überprüfung durch den Compiler ist unvollständig.
+Allerdings haben die Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) und die Move-Semantik von C++ eine fatale Schwäche: Die statische Überprüfung durch den Compiler ist unvollständig.
 
 ```cpp
 #include <iostream>
@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-Wenn in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) die Eigentümerschaft einer Variablen verschoben wird, behandelt der Compiler die ursprüngliche Variable so, als wäre sie "uninitialisiert", und blockiert jeglichen weiteren Zugriff vollständig. Dadurch können Fehler wie "Use-After-Free" oder "Dangling Pointers" theoretisch nicht durch die Kompilierung gelangen.
+Wenn in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) die Eigentümerschaft einer Variablen verschoben wird, behandelt der Compiler die ursprüngliche Variable so, als wäre sie "uninitialisiert", und blockiert jeglichen weiteren Zugriff vollständig. Dadurch können Fehler wie "Use-After-Free" oder "Dangling [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)s" theoretisch nicht durch die Kompilierung gelangen.
 
 ```mermaid
 graph TD
@@ -102,7 +102,7 @@ In C++ können problemlos mehrere veränderliche Referenzen oder Zeiger auf dass
 
 ---
 
-# 2. Speicherlayout und der mathematische Overhead von Smart Pointern
+# 2. Speicherlayout und der mathematische Overhead von Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)n
 
 In der Systemprogrammierung ist ein genaues Verständnis des Speicherlayouts unerlässlich. Vergleichen wir `std::shared_ptr` in C++ mit `std::rc::Rc` / `std::sync::Arc` in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/).
 
@@ -112,7 +112,7 @@ $$ Overhead_{C++} = sizeof(T) + sizeof(ControlBlock) $$
 
 Hierbei enthält der $ControlBlock$ den "Strong Ref Count" (Starker Referenzzähler), den "Weak Ref Count" (Schwacher Referenzzähler) und einen "Custom Deleter". Das Problem dabei ist, dass der Overhead von atomaren Anweisungen (wie Cache-Line-Sperren) bedingungslos auftritt, selbst in Situationen, in denen er nur in einem einzigen Thread verwendet wird.
 
-Im Gegensatz dazu trennt [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) Smart Pointer streng nach ihrem Verwendungszweck.
+Im Gegensatz dazu trennt [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) streng nach ihrem Verwendungszweck.
 
 - **Für Single-Thread**: `Rc<T>` (Reference Counted)
 - **Für Multi-Thread**: `Arc<T>` (Atomic Reference Counted)
@@ -213,7 +213,7 @@ graph TD
 
 # 4. Fehlerbehandlung: Ausnahmen vs. Algebraische Datentypen
 
-Der Standard für die Fehlerbehandlung in C++ sind "Ausnahmen (Exceptions)". Ausnahmen machen den Kontrollfluss jedoch undurchsichtig und verursachen Performance-Einbußen (Stack Unwinding und Aufblähung der RTTI). In eingebetteten Systemen oder Spiele-Engines werden Ausnahmen oft vollständig deaktiviert (`-fno-exceptions`), und man entscheidet sich für ein klassisches Design, das Fehlercodes zurückgibt. In C++23 wurde `std::expected` eingeführt, aber es wird Zeit brauchen, bis es das gesamte Ökosystem durchdringt.
+Der Standard für die Fehlerbehandlung in C++ sind "Ausnahmen (Exceptions)". Ausnahmen machen den Kontrollfluss jedoch undurchsichtig und verursachen Performance-Einbußen ([Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) Unwinding und Aufblähung der RTTI). In eingebetteten Systemen oder Spiele-Engines werden Ausnahmen oft vollständig deaktiviert (`-fno-exceptions`), und man entscheidet sich für ein klassisches Design, das Fehlercodes zurückgibt. In C++23 wurde `std::expected` eingeführt, aber es wird Zeit brauchen, bis es das gesamte Ökosystem durchdringt.
 
 In [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) gibt es das Konzept der Ausnahmen nicht. Fehler werden als reine "Werte" zurückgegeben und durch einen Aufzählungstyp (Algebraischer Datentyp) namens `Result<T, E>` dargestellt.
 
@@ -266,7 +266,7 @@ fn draw_dynamic(item: &dyn Drawable) {
 }
 ```
 
-Das Hauptmerkmal des dynamischen Dispatches in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) (`dyn Trait`) ist, dass er keinen vptr innerhalb der Datenstruktur hat, sondern einen **Fat Pointer** verwendet. Ein Fat Pointer hält ein Paar bestehend aus einem "Zeiger auf die Daten" und einem "Zeiger auf die vtable". Dies macht es extrem einfach, später Traits für Typen zu implementieren (zu erweitern), die in externen Bibliotheken definiert sind, und sie einem dynamischen Dispatch zu unterziehen.
+Das Hauptmerkmal des dynamischen Dispatches in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) (`dyn Trait`) ist, dass er keinen vptr innerhalb der Datenstruktur hat, sondern einen **Fat [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)** verwendet. Ein Fat Pointer hält ein Paar bestehend aus einem "Zeiger auf die Daten" und einem "Zeiger auf die vtable". Dies macht es extrem einfach, später Traits für Typen zu implementieren (zu erweitern), die in externen Bibliotheken definiert sind, und sie einem dynamischen Dispatch zu unterziehen.
 
 ---
 
@@ -295,7 +295,7 @@ Indem man einfach eine einzige Zeile mit dem Namen und der Version der Abhängig
 
 # 7. Nachteile und die Lernkurve beim Erlernen von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)
 
-Bisher habe ich über die Vorteile von Rust gesprochen, aber es gibt definitiv "Barrieren" und Nachteile, auf die C++-Entwickler stoßen, wenn sie Rust in der Praxis einsetzen.
+Bisher habe ich über die Vorteile von [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) gesprochen, aber es gibt definitiv "Barrieren" und Nachteile, auf die C++-Entwickler stoßen, wenn sie Rust in der Praxis einsetzen.
 
 ## 1. Der harte Kampf mit dem [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)
 Wenn man versucht, Datenstrukturen, die in C++ "irgendwie mit rohen Zeigern verbunden waren" (z. B. doppelt verkettete Listen, Graphenstrukturen oder selbstreferenzielle Strukturen), unverändert in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) zu implementieren, wird die Kompilierung aufgrund von Eigentümerschafts- und Lebensdauerbeschränkungen fehlschlagen. Um den Borrow Checker zufriedenzustellen, muss man entweder komplexe Wrapper wie `Rc<RefCell<T>>` verwenden oder das Design grundlegend überdenken, hin zu Arena-Allokatoren oder indexbasiertem Management.
@@ -312,6 +312,6 @@ Während die Integration mit C (FFI) sehr reibungslos verläuft, ist es äußers
 
 C++ wird auch in Zukunft eine wichtige Rolle in der Entwicklung von Spiele-Engines und in bestehenden riesigen Infrastrukturen spielen. Die Modernisierung durch C++20/23 ist ebenfalls bemerkenswert und ermöglicht ein sichereres Schreiben von Code.
 
-Bei "neu gestarteten Systemprogrammierungsprojekten" fällt es mir jedoch zunehmend schwerer, **Gründe zu finden, sich nicht für Rust zu entscheiden**. Die "Gewissheit" von Rust – dass man, sobald der Code kompiliert ist, von der Angst vor undefiniertem Verhalten und Speicherbeschädigung befreit ist und Nebenläufigkeit bei hoher Leistung sicher ausführen kann – verbessert das mentale Modell der Entwickler drastisch.
+Bei "neu gestarteten Systemprogrammierungsprojekten" fällt es mir jedoch zunehmend schwerer, **Gründe zu finden, sich nicht für [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) zu entscheiden**. Die "Gewissheit" von Rust – dass man, sobald der Code kompiliert ist, von der Angst vor undefiniertem Verhalten und Speicherbeschädigung befreit ist und Nebenläufigkeit bei hoher Leistung sicher ausführen kann – verbessert das mentale Modell der Entwickler drastisch.
 
 Für einen C++-Entwickler bedeutet das Erlernen von Rust nicht nur das Auswendiglernen einer neuen Syntax, sondern ist eine großartige Erfahrung, um eine neue Perspektive auf "die sichere Verwaltung von Speicher und Threads" zu gewinnen. Ich lade Sie alle ein, den Komfort von Cargo und die Strenge des [Borrow Checker](https://kenji.blog/de/p/memory-management-garbage-collection/)s selbst zu erleben.

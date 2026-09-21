@@ -11,7 +11,7 @@ description: 'Memperkenalkan cara menginstal CLI pembuat situs statis berkecepat
 
 # Apa itu Hugo
 
-Hugo adalah salah satu pembuat situs statis (static site generator). Ini memungkinkan Anda membuat situs web dengan mengubah file Markdown menjadi HTML. Hugo ditulis dalam bahasa Go dan berjalan sangat cepat.
+Hugo adalah salah satu pembuat situs statis (static site generator). Ini memungkinkan Anda membuat situs web dengan mengubah file Markdown menjadi HTML. Hugo ditulis dalam bahasa [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) dan berjalan sangat cepat.
 
 Blog ini juga dibuat menggunakan Hugo.
 

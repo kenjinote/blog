@@ -11,7 +11,7 @@ tags: ["Career", "AI", "Future", "Programming"]
 
 # AI時代的程式設計師該如何生存？寫程式的終結與新工程學的開端
 
-2026年的今天，軟體開發的現場正處於前所未有的劇變期。就在幾年前，「AI 寫程式」的概念充其量只停留在生成樣板程式碼（Boilerplate）或自動補全函式等程式設計師的「輔助工具」角色。然而，隨著大型語言模型（LLM）的驚人進化，情況發生了根本性的翻轉。現代的 AI 已不再只是個「聰明的打字機」，只要提供需求定義文件，它就能化身為「自主型初階工程師」，具備瞬間且自主地將從前端到後端邏輯、資料庫結構設計，甚至是建構 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線等整個系統組合起來的能力。
+2026年的今天，軟體開發的現場正處於前所未有的劇變期。就在幾年前，「AI 寫程式」的概念充其量只停留在生成樣板程式碼（Boilerplate）或自動補全函式等程式設計師的「輔助工具」角色。然而，隨著大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的驚人進化，情況發生了根本性的翻轉。現代的 AI 已不再只是個「聰明的打字機」，只要提供需求定義文件，它就能化身為「自主型初階工程師」，具備瞬間且自主地將從前端到後端邏輯、資料庫結構設計，甚至是建構 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線等整個系統組合起來的能力。
 
 在這樣的時代，我們「程式設計師」或「軟體工程師」該如何生存？在「寫程式」這個行為本身的經濟價值正迅速通貨緊縮的當下，只懂得特定程式語言語法（Syntax）、熟悉特定框架 API 的「寫碼工（Coder）」，正快速地被市場淘汰。
 
@@ -23,9 +23,9 @@ tags: ["Career", "AI", "Future", "Programming"]
 
 回顧軟體工程的歷史，可以發現它始終是一部「抽象化（Abstraction）」的歷史。我們一直都在建構能用更接近人類的語言，來描述更複雜系統的抽象層。
 
-早期的計算機科學家使用打孔卡片直接操作實體硬體的開關，以機器語言（0和1的排列）向電腦下達指令。之後，組合語言出現了，讓人們可以用較易理解的助記符號（Mnemonic）來操作硬體。隨著時代進步，C 語言、Fortran 等高階語言問世，成功封裝了記憶體管理或 CPU 暫存器等硬體複雜的細節。接著出現的 Java, Python, Ruby, TypeScript 等現代語言，讓程式設計師不再需要專注於「如何讓電腦運作（How）」，而能更專注於「想讓電腦做什麼（What）」。
+早期的計算機科學家使用打孔卡片直接操作實體硬體的開關，以機器語言（0和1的排列）向電腦下達指令。之後，組合語言出現了，讓人們可以用較易理解的助記符號（Mnemonic）來操作硬體。隨著時代進步，C 語言、Fortran 等高階語言問世，成功封裝了記憶體管理或 CPU 暫存器等硬體複雜的細節。接著出現的 [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/), Python, Ruby, TypeScript 等現代語言，讓程式設計師不再需要專注於「如何讓電腦運作（How）」，而能更專注於「想讓電腦做什麼（What）」。
 
-AI（LLM）的出現，是這段抽象化歷史中最新、也是最大的一次典範轉移。如果說程式語言的進化是「隱藏硬體」，那麼 LLM 的進化就是「隱藏語法（Syntax）」。
+AI（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的出現，是這段抽象化歷史中最新、也是最大的一次典範轉移。如果說程式語言的進化是「隱藏硬體」，那麼 LLM 的進化就是「隱藏語法（Syntax）」。
 
 ```mermaid
 graph TD
@@ -106,7 +106,7 @@ AI 在「局部最佳化」方面已凌駕人類。在撰寫單一函式、單�
 
 ---
 
-## 5. 需求定義才是「真正的提示工程（Prompt Engineering）」
+## 5. 需求定義才是「真正的提示工程（[Prompt Engineering](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）」
 
 最近常聽到的「提示工程」一詞，往往被誤解為「欺騙 AI 以獲得預期輸出的駭客技巧」。然而，軟體開發中提示工程的本質，毫無疑問是 **「高階的需求定義（Requirements Engineering）」** 。
 
@@ -178,7 +178,7 @@ sequenceDiagram
 2.  **精通雲端架構與分散式系統**: 不要只關注個別程式碼，而是專注於如何組合 AWS, GCP, Azure 等雲端資源來建構可擴展的系統。理解 [Terraform](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) 等 [IaC](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)（[Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)）的概念，培養將整個系統設計為程式碼的能力。
 3.  **成為商業領域的專家**: 深入學習自己所屬產業的商業模式、法律法規、使用者的行為心理。跨越工程師的框架，具備接近產品經理（PM）的視角。
 4.  **磨練溝通與引導（Facilitation）的技巧**: 解決人與人之間的「模糊性」並達成共識的過程，是 AI 無法取代的。與利害關係人對話、發現真正課題的軟實力，將成為最有價值的技能。
-5.  **把 AI 當作「同事」徹底利用**: 不要害怕 AI 工具的進化，而是將其作為最強大的武器來運用。在日常中頻繁使用最新的 LLM 或 AI 寫碼代理，累積「AI 在哪裡會失敗、如何調整提示才能發揮最高效能」的「隱性知識」。
+5.  **把 AI 當作「同事」徹底利用**: 不要害怕 AI 工具的進化，而是將其作為最強大的武器來運用。在日常中頻繁使用最新的 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 或 AI 寫碼代理，累積「AI 在哪裡會失敗、如何調整提示才能發揮最高效能」的「隱性知識」。
 
 ---
 

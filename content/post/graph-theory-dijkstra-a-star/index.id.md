@@ -142,7 +142,7 @@ def dijkstra(graph, start):
 
 ### 3.4 Tentang Kompleksitas Komputasi
 
-Jika kita menggunakan Binary Heap (Tumpukan Biner) sebagai antrean prioritas, setiap simpul diambil dari antrean sekali, dan setiap sisi direlaksasi sekali.
+Jika kita menggunakan Binary [Heap](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) (Tumpukan Biner) sebagai antrean prioritas, setiap simpul diambil dari antrean sekali, dan setiap sisi direlaksasi sekali.
 Oleh karena itu, kompleksitas waktunya menjadi $ O((|V| + |E|) \log |V|) $. Jika menggunakan Fibonacci Heap, secara teoritis dapat ditingkatkan menjadi $ O(|E| + |V| \log |V|) $, namun dalam praktiknya Binary Heap lebih sering digunakan.
 
 ---

@@ -9,15 +9,15 @@ categories: ["ai", "machine-learning", "mathematics"]
 tags: ["Transformer", "Deep Learning", "Attention", "Math"]
 ---
 
-# Einführung: Warum die Mathematik des Transformers lernen?
+# Einführung: Warum die Mathematik des [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)s lernen?
 
-Es ist keine Übertreibung zu sagen, dass die Architektur des „Transformers“ die Geschichte der modernen natürlichen Sprachverarbeitung (NLP) und der gesamten KI neu geschrieben hat. Dieses Modell, das erstmals 2017 in dem Paper „Attention Is All You Need“ von Google-Forschern vorgestellt wurde, fungiert als Herzstück der Large Language Models (LLM), die derzeit die Welt dominieren, wie etwa die GPT-Serie von OpenAI (die Basistechnologie von ChatGPT), BERT von Google und Claude von Anthropic.
+Es ist keine Übertreibung zu sagen, dass die Architektur des „Transformers“ die Geschichte der modernen natürlichen Sprachverarbeitung (NLP) und der gesamten KI neu geschrieben hat. Dieses Modell, das erstmals 2017 in dem Paper „Attention Is All You Need“ von Google-Forschern vorgestellt wurde, fungiert als Herzstück der [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)), die derzeit die Welt dominieren, wie etwa die GPT-Serie von OpenAI (die Basistechnologie von ChatGPT), BERT von Google und Claude von Anthropic.
 
 Während man oft qualitative Erklärungen zur Funktionsweise des Transformers findet, wie etwa „den Kontext mithilfe des Attention-Mechanismus (Aufmerksamkeitsmechanismus) verstehen“, gibt es überraschenderweise nur wenige tiefgehende Erklärungen der dahinterliegenden **mathematischen Struktur** für Anfänger. Um wirklich zu verstehen, wie die KI „Wörter“ als „mathematische Formeln“ verarbeitet und erstaunlich natürliche Texte generiert, ist es unerlässlich, ihre mathematischen Mechanismen zu entschlüsseln.
 
 In diesem Artikel werden wir die mathematischen Strukturen der Kernkomponenten des Transformers, wie den „Self-Attention-Mechanismus“, das „Query-[Key-Value](https://kenji.blog/de/p/nosql-database-selection-kvs-document-graph-wide-column/) (Q/K/V)-Modell“, die „Normalisierung durch die Softmax-Funktion“ und das „Positional Encoding“, für Leser mit Grundkenntnissen in Mathematik und Programmierung (auf dem Niveau von Matrizen und Ableitungen aus der Oberstufe) gründlich und verständlich erläutern.
 
-Sie könnten von der Aneinanderreihung mathematischer Formeln überwältigt sein, aber jede einzelne Berechnung hat eine klare „Bedeutung“. Wenn Sie diesen Artikel zu Ende gelesen haben, sollten Sie verstehen können, dass der Transformer nicht einfach eine magische Blackbox ist, sondern ein präzise entworfenes Kristall aus Mathematik und Statistik.
+Sie könnten von der Aneinanderreihung mathematischer Formeln überwältigt sein, aber jede einzelne Berechnung hat eine klare „Bedeutung“. Wenn Sie diesen Artikel zu Ende gelesen haben, sollten Sie verstehen können, dass der [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) nicht einfach eine magische Blackbox ist, sondern ein präzise entworfenes Kristall aus Mathematik und Statistik.
 
 ---
 
@@ -69,7 +69,7 @@ $$ x_i = W_E \cdot \text{one\_hot}(w_i) $$
 Dadurch wird der gesamte Satz als Matrix $X \in \mathbb{R}^{N \times d_{model}}$ dargestellt (wobei $N$ die Länge des Satzes ist).
 
 ## 3.2 Die Notwendigkeit und Formel des Positional Encodings
-Der Transformer verarbeitet Wörter nicht nacheinander wie ein RNN, sondern alle Wörter gleichzeitig und parallel. Dies ist hinsichtlich der Berechnungsgeschwindigkeit ein großer Vorteil, verursacht aber gleichzeitig das Problem, dass **die wichtige Information der „Reihenfolge der Wörter (Wortstellung)“ verloren geht**. Zum Beispiel sind die eingegebenen Wortmengen für „Ein Hund beißt einen Mann“ und „Ein Mann beißt einen Hund“ identisch, aber die Bedeutung ist völlig unterschiedlich.
+Der [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) verarbeitet Wörter nicht nacheinander wie ein RNN, sondern alle Wörter gleichzeitig und parallel. Dies ist hinsichtlich der Berechnungsgeschwindigkeit ein großer Vorteil, verursacht aber gleichzeitig das Problem, dass **die wichtige Information der „Reihenfolge der Wörter (Wortstellung)“ verloren geht**. Zum Beispiel sind die eingegebenen Wortmengen für „Ein Hund beißt einen Mann“ und „Ein Mann beißt einen Hund“ identisch, aber die Bedeutung ist völlig unterschiedlich.
 
 Um dem Modell diese Information über die Wortstellung zur Verfügung zu stellen, wurde das **Positional Encoding** entwickelt.
 Das Positional Encoding $PE$ für die $i$-te Dimension eines Wortes an der Position $pos$ wird mithilfe der folgenden trigonometrischen Funktionen berechnet.
@@ -217,7 +217,7 @@ Typischerweise wird die Dimension durch die Gewichte der ersten Schicht $W_1$ vo
 
 # 7. Residual Connection und Layer Normalization
 
-Im Deep Learning tritt bei tiefer werdenden Netzwerkschichten das Problem auf, dass Gradienten während des Trainings verschwinden oder explodieren, was ein erfolgreiches Training verhindert. Um dies zu verhindern, sind um jede Subschicht (Attention und FFN) des Transformers eine **Residual Connection (Restverbindung)** und eine **Layer Normalization (Schichtnormalisierung)** angeordnet.
+Im Deep Learning tritt bei tiefer werdenden Netzwerkschichten das Problem auf, dass Gradienten während des Trainings verschwinden oder explodieren, was ein erfolgreiches Training verhindert. Um dies zu verhindern, sind um jede Subschicht (Attention und FFN) des [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)s eine **Residual Connection (Restverbindung)** und eine **Layer Normalization (Schichtnormalisierung)** angeordnet.
 
 Als Formel geschrieben, wird die Ausgabe der Subschicht wie folgt verarbeitet:
 
@@ -274,7 +274,7 @@ Der Transformer ist ein großartiges Modell, hat aber aufgrund seiner mathematis
 Achten Sie auf den Rechenaufwand der Self-Attention. Bei der Berechnung der Score-Matrix $Q K^T$ wird eine $(N \times d_k)$-Matrix mit einer $(d_k \times N)$-Matrix multipliziert, sodass der Rechenaufwand **$O(N^2 \cdot d_{model})$** beträgt.
 
 Das bedeutet, dass **Rechenaufwand und Speicherverbrauch quadratisch zur Sequenzlänge $N$ ansteigen**.
-Bei kurzen Texten ist das kein Problem, aber wenn man versucht, einen extrem langen Kontext wie ein ganzes Buch in ein LLM einzuspeisen, erreicht $N$ Zehn- bis Hunderttausende, und bei herkömmlichen Attention-Berechnungen wäre der GPU-Speicher sofort erschöpft.
+Bei kurzen Texten ist das kein Problem, aber wenn man versucht, einen extrem langen Kontext wie ein ganzes Buch in ein [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) einzuspeisen, erreicht $N$ Zehn- bis Hunderttausende, und bei herkömmlichen Attention-Berechnungen wäre der GPU-Speicher sofort erschöpft.
 
 Um diesen Fluch der $O(N^2)$-Komplexität zu brechen, wurden in den letzten Jahren verschiedene Optimierungen aus mathematischen und hardwaretechnischen Ansätzen vorgeschlagen.
 Ein Paradebeispiel dafür ist **FlashAttention**. FlashAttention ist ein Algorithmus, der die Attention-Berechnung in Kacheln unterteilt (Tiling), um den Datentransfer (Speicherzugriff) zwischen den Speicherhierarchien der GPU (SRAM und HBM) zu minimieren. Obwohl es mathematisch exakt das gleiche Ergebnis wie die Standard-Attention liefert (Exact Attention), erreicht es durch Optimierung auf Hardware-Ebene eine dramatische Beschleunigung und Speicherreduzierung, was die Realisierung von Modellen mit langem Kontext wie GPT-4 ermöglicht hat.
@@ -322,7 +322,7 @@ Man kann sehen, dass der mathematisch dargestellte Ausdruck $Q K^T / \sqrt{d_k}$
 
 # Fazit: Die Form der „Intelligenz“, wie sie aus mathematischen Formeln ersichtlich wird
 
-In diesem Artikel haben wir die tiefgründigen mathematischen Strukturen des Transformer-Modells entschlüsselt.
+In diesem Artikel haben wir die tiefgründigen mathematischen Strukturen des [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Modells entschlüsselt.
 
 Das Embedding, das Wörter in einen mehrdimensionalen Vektorraum abbildet, das Positional Encoding, das Positionsinformationen durch die Synthese von Dreieckswellen ausdrückt, und der Self-Attention-Mechanismus, der aus einer Analogie zur Informationsbeschaffung entstandene Matrizenmultiplikationen verwendet. Jede dieser Komponenten ist lediglich eine Ansammlung von grundlegender Mathematik wie linearer Algebra, Differenzial- und Integralrechnung sowie Wahrscheinlichkeitsrechnung und Statistik.
 
@@ -330,7 +330,7 @@ Wenn sich diese einfachen Matrixoperationen jedoch in unzähligen Schichten übe
 
 Wie der provokante Titel „Attention Is All You Need“ andeutet, liegt die Schönheit dieser Architektur, die komplexe rekurrente und konvolutionale Verarbeitungen verworfen und sich auf die reinrassige Berechnung von „Attention (Relevanz)“ spezialisiert hat, gerade in ihrer mathematischen Einfachheit.
 
-In Zukunft könnten zwar neue Architekturen auftauchen, die den Transformer übertreffen (wie z. B. Mamba, ein [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Space Model), aber der mathematische Rahmen des „Kontextverständnisses durch Attention“, den der Transformer geschaffen hat, wird für immer in der Geschichte der KI verankert bleiben.
+In Zukunft könnten zwar neue Architekturen auftauchen, die den Transformer übertreffen (wie z. B. Mamba, ein [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Space Model), aber der mathematische Rahmen des „Kontextverständnisses durch Attention“, den der [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) geschaffen hat, wird für immer in der Geschichte der KI verankert bleiben.
 
 Wenn Sie künftig die Gelegenheit haben, LLMs wie ChatGPT oder Claude zu nutzen, stellen Sie sich vor, wie im Hintergrund jede Sekunde Billionen von Matrixmultiplikationen von $Q K^T$ berechnet werden und die Softmax-Funktion Wahrscheinlichkeiten ausspuckt. Ihr Verständnis für die Technologie wird sich vertiefen, und die Welt der KI wird Ihnen noch faszinierender erscheinen.
 

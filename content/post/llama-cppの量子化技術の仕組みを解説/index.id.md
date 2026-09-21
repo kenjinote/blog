@@ -10,9 +10,9 @@ tags: ["llama.cpp", "GGUF", "Quantization", "LLM"]
 description: 'Menjelaskan secara sangat mendetail tentang struktur internal dari format GGUF dan teknologi kuantisasi k-quants yang diadopsi dalam llama.cpp, disertai dengan rumus matematika dan diagram arsitektur.'
 ---
 
-## 1. Pendahuluan: Mengapa LLM Membutuhkan Kuantisasi?
+## 1. Pendahuluan: Mengapa [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) Membutuhkan Kuantisasi?
 
-Perkembangan Large Language Models (LLM) dalam beberapa tahun terakhir sangat luar biasa, namun di balik itu muncul masalah serius berupa "penipisan sumber daya komputasi" dan "bottleneck bandwidth memori". Misalnya, jika kita memuat model dengan 70B (70 miliar) parameter seperti Llama 3 ke dalam memori menggunakan presisi 16-bit floating-point (FP16) standar, parameternya saja akan mengonsumsi sekitar 140GB VRAM/RAM. Jika ditambah dengan konteks saat inferensi (KV cache), model ini tidak akan berjalan tanpa mengelompokkan beberapa GPU high-end untuk pusat data (NVIDIA A100 80GB atau H100 80GB).
+Perkembangan [Large Language Models](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) (LLM) dalam beberapa tahun terakhir sangat luar biasa, namun di balik itu muncul masalah serius berupa "penipisan sumber daya komputasi" dan "bottleneck bandwidth memori". Misalnya, jika kita memuat model dengan 70B (70 miliar) parameter seperti Llama 3 ke dalam memori menggunakan presisi 16-bit floating-point (FP16) standar, parameternya saja akan mengonsumsi sekitar 140GB VRAM/RAM. Jika ditambah dengan konteks saat inferensi (KV cache), model ini tidak akan berjalan tanpa mengelompokkan beberapa GPU high-end untuk pusat data (NVIDIA A100 80GB atau H100 80GB).
 
 Sebagai penyelamat untuk menjalankan LLM bagi pengembang individu dan perangkat edge (MacBook dan PC gaming umum), muncullah **llama.cpp** dan teknologi intinya yaitu **Kuantisasi (Quantization)**. Secara khusus, format file yang disebut **GGUF (GPT-Generated Unified Format)** dan algoritma kuantisasi berbasis blok tingkat lanjut yang disebut **k-quants**, merupakan metode revolusioner yang menekan penurunan akurasi model (Perplexity) seminimal mungkin sambil mengompresi ukuran model menjadi sebagian kecil saja.
 
@@ -175,7 +175,7 @@ llama.cpp menyediakan banyak variasi tergantung pada tujuannya. Akhiran setelah 
 
 ## 5. Optimalisasi Performa Inferensi: Arsitektur SIMD dan CUDA
 
-Sekadar memuat model GGUF ke dalam memori tidak membuat inferensi menjadi cepat. Sebagian besar inferensi LLM adalah "Perkalian Matriks (Matrix-Vector Multiplication, disingkat GEMV, atau Matrix-Matrix, GEMM)". Kuncinya adalah bagaimana mempercepat operasi penjumlahan-perkalian (multiply-accumulate) dari bobot terkuantisasi dan aktivasi (data input) yang dipertahankan dalam FP16 (atau FP32).
+Sekadar memuat model GGUF ke dalam memori tidak membuat inferensi menjadi cepat. Sebagian besar inferensi [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) adalah "Perkalian Matriks (Matrix-Vector Multiplication, disingkat GEMV, atau Matrix-Matrix, GEMM)". Kuncinya adalah bagaimana mempercepat operasi penjumlahan-perkalian (multiply-accumulate) dari bobot terkuantisasi dan aktivasi (data input) yang dipertahankan dalam FP16 (atau FP32).
 
 ### 5.1. Pemanfaatan Instruksi SIMD pada Lingkungan CPU
 
@@ -226,7 +226,7 @@ Di sini, mari kita lihat spesifikasi yang dibutuhkan berdasarkan tingkat kuantis
 | **Llama-3-8B (Q2_K)** | Sekitar 3,0 GB | Lebih dari 4,5 GB | Cepat | Penurunan yang jelas |
 
 **Catatan Penting (Pengaruh KV Cache):**
-Pada inferensi LLM, jika panjang konteks (jumlah token dari prompt) semakin panjang, tidak hanya bobot model, tetapi juga konsumsi memori untuk **KV Cache**, yang menyimpan kondisi Attention masa lalu, akan meledak secara drastis.
+Pada inferensi [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/), jika panjang konteks (jumlah token dari prompt) semakin panjang, tidak hanya bobot model, tetapi juga konsumsi memori untuk **KV Cache**, yang menyimpan kondisi Attention masa lalu, akan meledak secara drastis.
 Sebagai contoh, dengan konteks sepanjang 8192 token, ia bisa menghabiskan beberapa GB hanya untuk KV Cache. Oleh karena itu, dalam penerapan sebenarnya, batas aman (Headroom) sekitar `Ukuran file model + sekitar 1,5GB~3GB` harus disisihkan. Alasan utama mengapa Q4_K_M direkomendasikan adalah karena meskipun KV cache ini diamankan, ia tetap menjadi titik keseimbangan yang pas dan aman berjalan pada GPU dengan memori VRAM 8GB umum (seperti RTX 3060 / 4060).
 
 Dalam llama.cpp versi terbaru, fitur untuk **mengkuantisasi KV cache itu sendiri menjadi Q8_0 atau Q4_0** juga telah ditambahkan, sehingga selalu ada upaya tanpa henti untuk lebih memperpanjang panjang konteks.
@@ -237,7 +237,7 @@ Dalam llama.cpp versi terbaru, fitur untuk **mengkuantisasi KV cache itu sendiri
 
 Pada artikel ini, kita telah menggali lebih dalam dan menjelaskan tentang struktur internal dari format GGUF dan teknologi kuantisasi k-quants, yang merupakan jantung dari llama.cpp.
 
-1. **Fleksibilitas GGUF:** Melalui struktur metadata berbasis [Key-Value](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/), ekosistem yang tangguh telah dibangun sehingga dapat mengikuti perkembangan pesat LLM (seperti kemunculan arsitektur model baru) tanpa menyebabkan perubahan yang merusak kompatibilitas.
+1. **Fleksibilitas GGUF:** Melalui struktur metadata berbasis [Key-Value](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/), ekosistem yang tangguh telah dibangun sehingga dapat mengikuti perkembangan pesat [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) (seperti kemunculan arsitektur model baru) tanpa menyebabkan perubahan yang merusak kompatibilitas.
 2. **Kompresi Ekstrem oleh k-quants:** Dengan manajemen faktor skala hierarkis dari super-blok dan sub-blok, llama.cpp berhasil mempertahankan informasi nilai pencilan, sambil mencapai rasio kompresi menakjubkan dengan rata-rata 4,8 bit per bobot (Q4_K_M).
 3. **Mengatasi Bottleneck Bandwidth Memori:** Penerapan kernel canggih untuk SIMD dan CUDA yang melakukan komputasi serentak dengan dekuantisasi on-the-fly, dapat mengurangi jumlah transfer dari VRAM dan secara dramatis meningkatkan kecepatan inferensi.
 

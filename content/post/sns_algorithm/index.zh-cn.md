@@ -46,7 +46,7 @@ $$
 $$
 
 **对技术选型的影响：**
-这个算法会在潜在空间上将“对 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 感兴趣的 A”和“对 Rust 感兴趣的 B”拉近。如果 A 对某个新兴 Web 框架的帖子点了“赞”，那么 B 的时间线上也很大概率会出现该框架的帖子。由此，在偏好特定技术栈的工程师群体中，就会发生特定技术局部大流行的现象。
+这个算法会在潜在空间上将“对 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 感兴趣的 A”和“对 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 感兴趣的 B”拉近。如果 A 对某个新兴 Web 框架的帖子点了“赞”，那么 B 的时间线上也很大概率会出现该框架的帖子。由此，在偏好特定技术栈的工程师群体中，就会发生特定技术局部大流行的现象。
 
 ### 2.2 基于深度学习的推荐模型 (DLRM)
 

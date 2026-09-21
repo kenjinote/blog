@@ -217,7 +217,7 @@ graph TD
 Comme base de l'exploration dans une structure en arbre, il y a la recherche en profondeur (DFS) et la recherche en largeur (BFS).
 
 ## 2. Recherche en profondeur (DFS: Depth-First Search)
-La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile (Stack).
+La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile ([Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Exemple d'implémentation Python de DFS pour une structure en arbre
 
@@ -246,7 +246,7 @@ dfs_tree(root)
 ```
 
 ## 2. Recherche en profondeur (DFS: Depth-First Search)
-La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile (Stack).
+La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile ([Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Exemple d'implémentation Python de DFS pour une structure en arbre
 
@@ -275,7 +275,7 @@ dfs_tree(root)
 ```
 
 ## 2. Recherche en profondeur (DFS: Depth-First Search)
-La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile (Stack).
+La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile ([Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Exemple d'implémentation Python de DFS pour une structure en arbre
 
@@ -304,7 +304,7 @@ dfs_tree(root)
 ```
 
 ## 2. Recherche en profondeur (DFS: Depth-First Search)
-La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile (Stack).
+La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile ([Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Exemple d'implémentation Python de DFS pour une structure en arbre
 
@@ -333,7 +333,7 @@ dfs_tree(root)
 ```
 
 ## 2. Recherche en profondeur (DFS: Depth-First Search)
-La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile (Stack).
+La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile ([Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Exemple d'implémentation Python de DFS pour une structure en arbre
 
@@ -362,7 +362,7 @@ dfs_tree(root)
 ```
 
 ## 2. Recherche en profondeur (DFS: Depth-First Search)
-La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile (Stack).
+La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile ([Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Exemple d'implémentation Python de DFS pour une structure en arbre
 
@@ -391,7 +391,7 @@ dfs_tree(root)
 ```
 
 ## 2. Recherche en profondeur (DFS: Depth-First Search)
-La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile (Stack).
+La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile ([Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Exemple d'implémentation Python de DFS pour une structure en arbre
 
@@ -420,7 +420,7 @@ dfs_tree(root)
 ```
 
 ## 2. Recherche en profondeur (DFS: Depth-First Search)
-La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile (Stack).
+La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile ([Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Exemple d'implémentation Python de DFS pour une structure en arbre
 
@@ -449,7 +449,7 @@ dfs_tree(root)
 ```
 
 ## 2. Recherche en profondeur (DFS: Depth-First Search)
-La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile (Stack).
+La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile ([Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Exemple d'implémentation Python de DFS pour une structure en arbre
 
@@ -478,7 +478,7 @@ dfs_tree(root)
 ```
 
 ## 2. Recherche en profondeur (DFS: Depth-First Search)
-La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile (Stack).
+La recherche en profondeur est un algorithme qui part d'un certain nœud, va aussi loin que possible et, lorsqu'il atteint une impasse, retourne au nœud précédent pour continuer la recherche. En utilisant une fonction récursive, il peut être implémenté très simplement. Il utilise parfois aussi une structure de données appelée pile ([Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Exemple d'implémentation Python de DFS pour une structure en arbre
 

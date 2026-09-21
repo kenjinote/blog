@@ -34,7 +34,7 @@ First, please read the following story. And if you have a pen and paper at hand,
 > The three travelers each took out $10 from their wallets, paid a total of $30 to the clerk, and headed to their room.
 > 
 > After a while, the hotel manager came by and told the clerk:
-> "Today is a campaign day, so that room is only $25. Go return $5 immediately."
+> "Today is a campaign day, so that room is only $25. [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) return $5 immediately."
 > 
 > The clerk headed to the guest room holding $5 in bills. However, he thought to himself on the way:
 > "It's hard to split $5 equally among 3 people. If I secretly take $2 and return the remaining $3, it fits perfectly at $1 per person."

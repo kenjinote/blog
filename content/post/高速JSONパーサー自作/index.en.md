@@ -443,7 +443,7 @@ $$
 Space(N) \le C \times N \implies O(N)
 $$
 
-However, in recursive descent parsing, the call stack is consumed proportionally to the depth of the JSON nesting. For a depth of $D$, stack memory of $O(D)$ is required. Supplying a maliciously infinitely nested JSON poses the risk of causing a Stack Overflow, so a practical parser needs mechanisms like imposing a limit on recursion depth (e.g., 256 or 512) or expanding recursion into loops.
+However, in recursive descent parsing, the call stack is consumed proportionally to the depth of the JSON nesting. For a depth of $D$, stack memory of $O(D)$ is required. Supplying a maliciously infinitely nested JSON poses the risk of causing a [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) Overflow, so a practical parser needs mechanisms like imposing a limit on recursion depth (e.g., 256 or 512) or expanding recursion into loops.
 
 ---
 

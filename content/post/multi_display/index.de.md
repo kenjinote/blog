@@ -62,7 +62,7 @@ Nachdem wir die physische Ergonomie verstanden haben, wollen wir Muster von Disp
 
 ### 2.1 Dual-Monitor (Beispiel: 27 Zoll 4K × 2)
 
-Dies ist die Standardkonfiguration. Wenn sie nebeneinander platziert werden, befindet sich der Rahmen in der Mitte, sodass man den Kopf ständig nach links oder rechts neigen muss. Um dies zu vermeiden, empfiehlt es sich, einen direkt vor sich (Hauptmonitor) und den anderen diagonal (Nebenmonitor) zu platzieren oder sie vertikal zu stapeln (Stack-Konfiguration).
+Dies ist die Standardkonfiguration. Wenn sie nebeneinander platziert werden, befindet sich der Rahmen in der Mitte, sodass man den Kopf ständig nach links oder rechts neigen muss. Um dies zu vermeiden, empfiehlt es sich, einen direkt vor sich (Hauptmonitor) und den anderen diagonal (Nebenmonitor) zu platzieren oder sie vertikal zu stapeln ([Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Konfiguration).
 
 - **Vorteile:** Klare physische Bildschirmaufteilung. Einfache Verwaltung von Vollbildanwendungen.
 - **Nachteile:** Der Rahmen in der Mitte teilt das Sichtfeld. Hohe Rotationsbelastung des Halses.

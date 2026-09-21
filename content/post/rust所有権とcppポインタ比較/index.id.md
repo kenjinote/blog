@@ -10,11 +10,11 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'Perbandingan menyeluruh antara pointer C++ dan model kepemilikan/peminjaman Rust. Dari pointer mentah, smart pointer, hingga borrow checker, kami menjelaskan esensi dari keamanan memori.'
 ---
 
-Dalam pemrograman sistem modern, menyeimbangkan kinerja dan keamanan memori adalah tantangan abadi. C++ telah berkuasa sebagai raja di bidang ini selama bertahun-tahun, tetapi dalam beberapa tahun terakhir, posisinya mulai terancam oleh [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/). Fitur terbesar Rust terletak pada konsep "Kepemilikan" (Ownership) dan "Peminjaman" (Borrowing), yang menjamin keamanan memori pada saat kompilasi tanpa memiliki garbage collection (GC).
+Dalam pemrograman sistem modern, menyeimbangkan kinerja dan keamanan memori adalah tantangan abadi. C++ telah berkuasa sebagai raja di bidang ini selama bertahun-tahun, tetapi dalam beberapa tahun terakhir, posisinya mulai terancam oleh [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/). Fitur terbesar [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) terletak pada konsep "Kepemilikan" (Ownership) dan "Peminjaman" (Borrowing), yang menjamin keamanan memori pada saat kompilasi tanpa memiliki garbage collection (GC).
 
-Pada artikel ini, kita akan membandingkan secara rinci pointer C++ (pointer mentah, `std::unique_ptr`, `std::shared_ptr`) dan model kepemilikan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), serta menjelaskan secara menyeluruh bagaimana kompiler Rust (borrow checker) mencegah Use-After-Free (penggunaan setelah pembebasan) dan data race (perlombaan data), disertai dengan contoh kode dan diagram.
+Pada artikel ini, kita akan membandingkan secara rinci pointer C++ (pointer mentah, `std::unique_ptr`, `std::shared_ptr`) dan model kepemilikan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), serta menjelaskan secara menyeluruh bagaimana kompiler [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) (borrow checker) mencegah Use-After-Free (penggunaan setelah pembebasan) dan data race (perlombaan data), disertai dengan contoh kode dan diagram.
 
-## 1. Dasar-dasar Manajemen Memori: Stack dan Heap
+## 1. Dasar-dasar Manajemen Memori: [Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) dan [Heap](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)
 
 Untuk memahami dasar-dasar manajemen memori, mari kita tinjau kembali bagaimana sebuah program menggunakan memori. Area memori secara umum dibagi menjadi "Stack" dan "Heap".
 
@@ -40,7 +40,7 @@ graph TD
     E -.->|"Menunjuk ke"| F
 ```
 
-## 2. Pointer C++: Pertukaran antara Kebebasan dan Bahaya
+## 2. [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) C++: Pertukaran antara Kebebasan dan Bahaya
 
 Mari kita lihat evolusi manajemen memori di C++.
 
@@ -49,7 +49,7 @@ Mari kita lihat evolusi manajemen memori di C++.
 Pointer mentah (`*`) yang diwarisi dari bahasa C menawarkan kebebasan tertinggi, tetapi pada saat yang sama menjadi sarang bagi bug serius seperti berikut.
 
 - **Kebocoran Memori (Memory Leak)**: Lupa menggunakan `delete` pada memori yang dialokasikan dengan `new`.
-- **Dangling Pointer**: Mengakses pointer setelah memorinya dibebaskan (setelah `delete`).
+- **Dangling [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)**: Mengakses pointer setelah memorinya dibebaskan (setelah `delete`).
 - **Double Free**: Menggunakan `delete` dua kali pada area memori yang sama.
 
 ```cpp
@@ -65,7 +65,7 @@ void rawPointerExample() {
 }
 ```
 
-### Kemunculan RAII dan Smart Pointer (Sejak C++11)
+### Kemunculan RAII dan Smart [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) (Sejak C++11)
 
 Sejak C++11, smart pointer berdasarkan konsep RAII (Resource Acquisition Is Initialization) telah distandardisasi, dan penggunaan langsung pointer mentah sudah tidak disarankan.
 
@@ -93,13 +93,13 @@ Ini adalah pointer yang memungkinkan beberapa pointer untuk berbagi objek yang s
 
 ## 3. Kepemilikan (Ownership) [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/): Perubahan Paradigma
 
-Rust menjadikan konsep `std::unique_ptr` dari C++ sebagai inti dari spesifikasi bahasanya, dan memiliki "model kepemilikan" yang bahkan lebih ketat.
+[Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) menjadikan konsep `std::unique_ptr` dari C++ sebagai inti dari spesifikasi bahasanya, dan memiliki "model kepemilikan" yang bahkan lebih ketat.
 
 ### 3 Aturan Kepemilikan
 
 Sistem kepemilikan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) didasarkan pada tiga aturan yang sangat sederhana berikut:
 
-1. **Setiap nilai dalam Rust memiliki variabel yang disebut pemiliknya (owner).**
+1. **Setiap nilai dalam [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) memiliki variabel yang disebut pemiliknya (owner).**
 2. **Hanya boleh ada satu pemilik pada satu waktu.**
 3. **Ketika pemilik keluar dari scope, nilai tersebut akan dibuang.**
 
@@ -197,7 +197,7 @@ int main() {
 
 ### Pertahanan saat Kompilasi oleh [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
-Mari kita tulis logika yang sama persis di Rust.
+Mari kita tulis logika yang sama persis di [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/).
 
 ```rust
 // Rust: Mencegah invalidasi iterator pada saat kompilasi
@@ -273,9 +273,9 @@ Yang perlu diperhatikan adalah `Mutex<T>` di [Rust](https://kenji.blog/id/p/weba
 
 ## Kesimpulan: "Pemeriksaan Sebelumnya" oleh Kompiler, atau "Tanggung Jawab Sendiri" oleh Pengembang?
 
-Pointer dan smart pointer C++ menawarkan kontrol tingkat tinggi dan kinerja kepada para pengembang, tetapi penggunaannya yang benar bergantung pada disiplin pengembang. Meskipun C++ menjadi jauh lebih aman dengan diperkenalkannya RAII dan `std::unique_ptr`, "perilaku tidak terdefinisi" seperti akses setelah perpindahan atau pembatalan iterator masih tidak dapat dicegah sepenuhnya pada tingkat bahasa.
+[Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) dan smart pointer C++ menawarkan kontrol tingkat tinggi dan kinerja kepada para pengembang, tetapi penggunaannya yang benar bergantung pada disiplin pengembang. Meskipun C++ menjadi jauh lebih aman dengan diperkenalkannya RAII dan `std::unique_ptr`, "perilaku tidak terdefinisi" seperti akses setelah perpindahan atau pembatalan iterator masih tidak dapat dicegah sepenuhnya pada tingkat bahasa.
 
-Di sisi lain, [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) mendeteksi kesalahan-kesalahan ini **pada saat kompilasi** dan bukan saat runtime, dengan memasukkan aturan Kepemilikan (Ownership) dan Peminjaman (Borrowing) ke dalam kompiler. Jaminan kuat bahwa "jika dapat dikompilasi, maka memori aman" adalah alasan terbesar mengapa Rust dengan cepat mendapatkan dukungan dalam pemrograman sistem.
+Di sisi lain, [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) mendeteksi kesalahan-kesalahan ini **pada saat kompilasi** dan bukan saat runtime, dengan memasukkan aturan Kepemilikan (Ownership) dan Peminjaman (Borrowing) ke dalam kompiler. Jaminan kuat bahwa "jika dapat dikompilasi, maka memori aman" adalah alasan terbesar mengapa [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) dengan cepat mendapatkan dukungan dalam pemrograman sistem.
 
 Bertarung dengan borrow checker Rust (Fight the borrow checker) adalah rintangan besar bagi pemula, namun itu hanya kompiler yang dengan ketat mengambil alih perhitungan kompleks tentang "melacak masa pakai pointer" yang awalnya dilakukan di kepala oleh pemrogram C++.
 

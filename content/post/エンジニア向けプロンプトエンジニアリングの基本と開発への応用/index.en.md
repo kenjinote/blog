@@ -9,11 +9,11 @@ categories: ["programming", "ai", "prompt-engineering"]
 tags: ["Prompt Engineering", "LLM", "Development", "ChatGPT", "Claude"]
 ---
 
-# Introduction: Why Engineers Should Learn Prompt Engineering
+# Introduction: Why Engineers Should Learn [Prompt Engineering](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/)
 
-The world of software development is in the midst of an unprecedented paradigm shift due to the rapid evolution of Large Language Models (LLMs). It is no exaggeration to say that we are transitioning from "Software 2.0" (development via neural networks), as proposed by Andrej Karpathy, to "Software 3.0" (prompt-driven development via natural language).
+The world of software development is in the midst of an unprecedented paradigm shift due to the rapid evolution of [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs). It is no exaggeration to say that we are transitioning from "Software 2.0" (development via neural networks), as proposed by Andrej Karpathy, to "Software 3.0" (prompt-driven development via natural language).
 
-With the spread of AI assistant tools using GitHub Copilot, Cursor, or various LLM APIs, the primary job of engineers is shifting from "writing code from scratch" to "designing instructions to make AI generate the intended code, and reviewing and integrating the generated code."
+With the spread of AI assistant tools using GitHub Copilot, Cursor, or various [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) APIs, the primary job of engineers is shifting from "writing code from scratch" to "designing instructions to make AI generate the intended code, and reviewing and integrating the generated code."
 
 The most important skill in this new development methodology is **prompt engineering**. Prompt engineering is often talked about as a buzzword for non-engineers, such as "having a good chat with AI," but its essence is a **new form of programming language for non-deterministic computational systems**.
 
@@ -23,7 +23,7 @@ In this article, aimed at software engineers and architects, we will explain in 
 
 ## 1. Basics and Mathematical Background of Large Language Models (LLMs)
 
-To optimize prompts and consistently obtain the intended output, it is essential to understand the "contents of the black box" mathematically and structurally: how LLMs process and generate text and code internally. Most modern LLMs are auto-regressive language models using the Transformer architecture.
+To optimize prompts and consistently obtain the intended output, it is essential to understand the "contents of the black box" mathematically and structurally: how LLMs process and generate text and code internally. Most modern LLMs are auto-regressive language models using the [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) architecture.
 
 ### 1.1 Tokenization and BPE
 
@@ -41,7 +41,7 @@ Here, $w_i$ represents a token, and $t$ is the current time step. The model calc
 
 ### 1.3 Attention Mechanism and Context Window
 
-The core of the Transformer architecture is the Self-Attention mechanism. This allows the model to calculate the dependencies between tokens that are far apart in a sequence.
+The core of the [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) architecture is the Self-Attention mechanism. This allows the model to calculate the dependencies between tokens that are far apart in a sequence.
 
 $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V $$
 
@@ -71,7 +71,7 @@ When building AI applications using OpenAI's API (such as GPT-4) or Anthropic's 
 
 ### 2.1 System Prompt: Global Constraints and Persona Definition
 
-The system prompt defines **global constraints, persona (role), and fundamental behavior rules** for the LLM. To compare it to software design, it plays a role like the application's "environment variables" or "base class," or a container's "[Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/)file."
+The system prompt defines **global constraints, persona (role), and fundamental behavior rules** for the [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/). To compare it to software design, it plays a role like the application's "environment variables" or "base class," or a container's "[Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/)file."
 
 An excellent system prompt dramatically stabilizes output quality and format.
 
@@ -102,7 +102,7 @@ By robustly setting the system prompt, you can ensure output stability against h
 
 ---
 
-## 3. Core Prompt Engineering Techniques
+## 3. Core [Prompt Engineering](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) Techniques
 
 From here on, we will explain specific prompting paradigms to dramatically improve the accuracy of software development tasks.
 
@@ -135,7 +135,7 @@ By giving examples in this way, the model implicitly learns the timestamp format
 
 ### 3.2 Chain-of-Thought (CoT) and Zero-Shot CoT
 
-A breakthrough regarding the reasoning capabilities of LLMs was **Chain-of-Thought (CoT)**. In tasks requiring complex logic (e.g., implementing complex algorithms, tracking difficult bugs, constructing regular expressions), making an LLM abruptly output the final code often leads to logical leaps and errors (hallucinations).
+A breakthrough regarding the reasoning capabilities of LLMs was **Chain-of-Thought (CoT)**. In tasks requiring complex logic (e.g., implementing complex algorithms, tracking difficult bugs, constructing regular expressions), making an [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) abruptly output the final code often leads to logical leaps and errors (hallucinations).
 
 CoT is a technique that linguisticizes the intermediate reasoning process (thought process) before outputting the final answer. By making the model analyze the situation step-by-step itself, the context becomes richer with each token generated, dramatically improving the accuracy of the final conclusion.
 
@@ -199,7 +199,7 @@ The application of LLMs is rapidly evolving from single text input/output to the
 
 ### 4.1 Concept of the ReAct Framework
 
-While traditional LLMs could "think before answering (CoT)," they could not "act" to supplement their own knowledge gaps. The ReAct framework breaks through this limitation by making the LLM alternate between "Thought" and "Action".
+While traditional LLMs could "think before answering (CoT)," they could not "act" to supplement their own knowledge gaps. The ReAct framework breaks through this limitation by making the [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) alternate between "Thought" and "Action".
 
 The model analyzes the problem (Thought), and if it determines that information is lacking, it executes an external tool (Web search, database query, shell command, API call, etc.) (Action). It receives the execution result of the tool (Observation), advances its thoughts further using it as new context, and repeats this loop until it reaches the final answer (Finish).
 
@@ -217,20 +217,20 @@ graph LR
 
 The standard interface for incorporating ReAct into a system is **Function Calling (Tool Use)** provided by OpenAI and Anthropic.
 
-The engineer passes the "definition of available tools (JSON schema)" to the LLM along with the system prompt. The LLM analyzes the prompt's context, and if it determines that a tool should be used, it outputs the "name of the function to call" and its "arguments in JSON" instead of normal text. The loop is formed by executing the function on the application side and returning the result to the LLM.
+The engineer passes the "definition of available tools (JSON schema)" to the [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) along with the system prompt. The LLM analyzes the prompt's context, and if it determines that a tool should be used, it outputs the "name of the function to call" and its "arguments in JSON" instead of normal text. The loop is formed by executing the function on the application side and returning the result to the LLM.
 
 **Application Example in Development (Autonomous Debugging Agent):**
-When building an agent that investigates the cause and generates a patch when a test fails in the [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) pipeline, provide the LLM with tools like the following.
+When building an agent that investigates the cause and generates a patch when a test fails in the [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) pipeline, provide the [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) with tools like the following.
 
 1. `search_codebase(regex_pattern)`: Search code in the repository using regular expressions.
 2. `view_file_content(file_path, start_line, end_line)`: Read the contents of a specified file.
 3. `run_unit_test(test_file_path)`: Execute a specific unit test and retrieve the traceback.
 4. `propose_patch(file_path, diff_content)`: Propose a fix patch.
 
-The LLM autonomously reasons and acts as follows.
+The [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) autonomously reasons and acts as follows.
 - **Thought**: Looking at the test log, a `KeyError: 'user_id'` occurs on line 45 of `src/auth.py`. I need to check the surrounding code.
 - **Action**: `view_file_content(file_path="src/auth.py", start_line=30, end_line=60)`
-- **Observation**: (The application reads the file content and returns it to the LLM)
+- **Observation**: (The application reads the file content and returns it to the [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/))
 - **Thought**: I see, validation is missing for cases where `user_id` is not included in the response JSON from the API. Let's create a patch to rewrite it with a safe `.get()` method.
 - **Action**: `propose_patch(...)`
 
@@ -240,7 +240,7 @@ In this way, prompt engineering is elevated in dimension from "control of text g
 
 ## 5. RAG (Retrieval-Augmented Generation) and Codebase Integration
 
-One of the biggest weaknesses of LLMs is that they do not know "private information" or "latest information" that is not included in their pre-training data. If you ask about an internal private repository or proprietary API specifications, the LLM will either calmly tell lies (hallucinations) or can only give general answers.
+One of the biggest weaknesses of LLMs is that they do not know "private information" or "latest information" that is not included in their pre-training data. If you ask about an internal private repository or proprietary API specifications, the [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) will either calmly tell lies (hallucinations) or can only give general answers.
 
 The architecture that solves this is **RAG (Retrieval-Augmented Generation)**. RAG is a technology that combines information retrieval with the generative capabilities of LLMs.
 
@@ -358,7 +358,7 @@ In the software engineering world, untested code is called legacy code. The exac
 
 Prompt behavior easily breaks due to foundation model upgrades or changes in the domain data handled. To prevent this, it is essential to build an **Evaluation (Eval)** mechanism (LLMOps) to quantitatively evaluate the prompt's output.
 
-### 7.1 LLM-as-a-Judge (Evaluating LLMs with LLMs)
+### 7.1 [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/)-as-a-Judge (Evaluating LLMs with LLMs)
 
 In tasks like code generation or text summarization, testing for an Exact Match is impossible. Classical natural language processing evaluation metrics (such as BLEU or ROUGE) are also insufficient for measuring semantic accuracy.
 
@@ -386,5 +386,5 @@ We once moved from assembly language to C, and then to high-level languages equi
 By mastering these principles, prompts become not just text strings, but robust, scalable software components. We hope you will incorporate the advanced prompt engineering techniques explained in this article into your own development workflows and products, and thrive as an engineer leading the next generation of "Software 3.0."
 
 ---
-*Generated using Prompt Engineering Techniques.*
+*Generated using [Prompt Engineering](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) Techniques.*
 

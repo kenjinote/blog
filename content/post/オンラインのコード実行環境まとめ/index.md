@@ -28,7 +28,7 @@ Jupyter Notebookをベースにしている。
 
 - [Javascript Playground](https://playcode.io/)
 
-## Java
+## [Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)
 
 - [paiza.IO Online Java compiler](https://paiza.io/ja/projects/new?language=java)
 
@@ -47,7 +47,7 @@ Jupyter Notebookをベースにしている。
 
 - [AWS Cloud9](https://aws.amazon.com/jp/cloud9/)
 
-Amazon AWSが提供するオンライン統合開発環境。Node.js、JavaScript、Python、PHP、Ruby、Go、C++ など 40 を超えるプログラミング言語用のツールがあらかじめパッケージ化されています。
+Amazon AWSが提供するオンライン統合開発環境。Node.js、JavaScript、Python、PHP、Ruby、[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)、C++ など 40 を超える[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)用のツールがあらかじめパッケージ化されています。
 
 - [Visual Studio Code for the Web](https://vscode.dev/)
 
@@ -55,7 +55,7 @@ Microsoftが提供するオンライン上の開発環境。ただし、コン�
 
 - [paiza.IO](https://paiza.io/projects/CGAcQLfW-IOXYy8Dq2OHBw?locale=ja-jp)
 
-C,C++,Java,Ruby,Python,PHP,Perlなど 主要24言語に対応したオンライン実行環境。
+C,C++,[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/),Ruby,Python,PHP,Perlなど 主要24言語に対応したオンライン実行環境。
 
 - [CodePen](https://codepen.io/)
 

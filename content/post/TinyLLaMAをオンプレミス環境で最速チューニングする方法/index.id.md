@@ -12,7 +12,7 @@ description: 'Panduan lengkap untuk melakukan fine-tuning TinyLLaMA secara efisi
 
 ## 1. Pendahuluan: Mengapa Harus TinyLLaMA dan On-Premises Saat Ini?
 
-Evolusi Large Language Models (LLM) berlangsung dengan kecepatan yang luar biasa, dan seiring dengan itu, jumlah parameter model terus membengkak hingga skala ratusan miliar. Di satu sisi, model super raksasa seperti GPT-4 dan Claude 3 membanggakan kinerja yang tak tertandingi, namun biaya komputasi yang dibutuhkan untuk inferensi dan pelatihan, serta kekhawatiran tentang keamanan dan privasi data saat menggunakan API eksternal menjadi hambatan besar bagi perusahaan. Terutama dalam tugas-tugas yang menangani data internal yang sangat rahasia dan informasi pribadi, mengirimkan data ke API LLM publik di cloud sering kali tidak dapat diterima dari sudut pandang kepatuhan (seperti GDPR dan APPI).
+Evolusi [Large Language Models](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)) berlangsung dengan kecepatan yang luar biasa, dan seiring dengan itu, jumlah parameter model terus membengkak hingga skala ratusan miliar. Di satu sisi, model super raksasa seperti GPT-4 dan Claude 3 membanggakan kinerja yang tak tertandingi, namun biaya komputasi yang dibutuhkan untuk inferensi dan pelatihan, serta kekhawatiran tentang keamanan dan privasi data saat menggunakan API eksternal menjadi hambatan besar bagi perusahaan. Terutama dalam tugas-tugas yang menangani data internal yang sangat rahasia dan informasi pribadi, mengirimkan data ke API LLM publik di cloud sering kali tidak dapat diterima dari sudut pandang kepatuhan (seperti GDPR dan APPI).
 
 Oleh karena itu, yang kini menjadi sorotan adalah **Small Language Models (SLM)** dan **pengoperasian lokal di lingkungan on-premises**. Di antaranya, "**TinyLLaMA**" hadir dengan ukuran yang ringkas yaitu hanya 1.1B (1,1 miliar) parameter, namun telah melalui pre-training dengan dataset yang sangat besar yaitu sekitar 3 triliun token, sehingga menunjukkan kinerja yang luar biasa dibandingkan dengan model di kelasnya.
 
@@ -37,7 +37,7 @@ TinyLLaMA mengikuti arsitektur LLaMA (Large Language Model Meta AI) yang dikemba
 4. **Grouped Query Attention (GQA):**
    Ini adalah pendekatan perantara antara Multi-Head Attention (MHA) dan Multi-Query Attention (MQA). Dengan mengelompokkan head key dan value, metode ini menghemat bandwidth memori dan secara dramatis meningkatkan kecepatan inferensi.
 
-Diagram Mermaid berikut menunjukkan aliran data keseluruhan dan struktur blok Transformer dari TinyLLaMA.
+Diagram Mermaid berikut menunjukkan aliran data keseluruhan dan struktur blok [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) dari TinyLLaMA.
 
 ```mermaid
 graph TD
@@ -151,7 +151,7 @@ Untuk memaksimalkan penggunaan Tensor Core pada GPU, komputasi selama pelatihan 
 
 ## 6. Praktik: Kode Fine-Tuning QLoRA untuk TinyLLaMA
 
-Selanjutnya, kami akan menjelaskan skrip PyTorch untuk tuning tercepat yang mencakup semua optimasi di atas. Di sini, kami menggunakan `SFTTrainer` dari pustaka `trl` (Transformer Reinforcement Learning) oleh Hugging Face.
+Selanjutnya, kami akan menjelaskan skrip PyTorch untuk tuning tercepat yang mencakup semua optimasi di atas. Di sini, kami menggunakan `SFTTrainer` dari pustaka `trl` ([Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) Reinforcement Learning) oleh Hugging Face.
 
 ### 6.1 Persiapan Dataset dan Pemuatan Model
 
@@ -353,7 +353,7 @@ Dengan ini, sebuah endpoint yang kompatibel dengan API OpenAI dibangun di lingku
 
 Artikel ini menjelaskan metode fine-tuning tercepat dan paling hemat memori di lingkungan on-premises untuk "TinyLLaMA", sebuah model yang ringan dengan 1.1B parameter namun berkinerja tinggi.
 
-- Dengan **LoRA / QLoRA**, tuning LLM berskala penuh dapat dilakukan bahkan dengan GPU kelas konsumen.
+- Dengan **LoRA / QLoRA**, tuning [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) berskala penuh dapat dilakukan bahkan dengan GPU kelas konsumen.
 - Dengan memanfaatkan **Flash Attention 2** dan **Gradient Checkpointing** secara optimal, waktu pelatihan dan konsumsi VRAM diminimalkan secara ekstrem.
 - Penerapan yang memanfaatkan **vLLM** memungkinkan tercapainya throughput yang tinggi bahkan di lingkungan produksi.
 

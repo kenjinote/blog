@@ -9,11 +9,11 @@ categories: ["programming", "ai", "prompt-engineering"]
 tags: ["Prompt Engineering", "LLM", "Development", "ChatGPT", "Claude"]
 ---
 
-# Einführung: Warum Ingenieure Prompt Engineering lernen sollten
+# Einführung: Warum Ingenieure [Prompt Engineering](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) lernen sollten
 
-Die Welt der Softwareentwicklung befindet sich aufgrund der rasanten Entwicklung von Large Language Models (LLMs) inmitten eines beispiellosen Paradigmenwechsels. Es ist keine Übertreibung zu sagen, dass wir vom „Software 2.0“ (Entwicklung durch neuronale Netze), wie es von Andrejs Karpathy propagiert wurde, nun zum „Software 3.0“ (natürlichsprachliche, prompt-gesteuerte Entwicklung) übergehen.
+Die Welt der Softwareentwicklung befindet sich aufgrund der rasanten Entwicklung von [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) inmitten eines beispiellosen Paradigmenwechsels. Es ist keine Übertreibung zu sagen, dass wir vom „Software 2.0“ (Entwicklung durch neuronale Netze), wie es von Andrejs Karpathy propagiert wurde, nun zum „Software 3.0“ (natürlichsprachliche, prompt-gesteuerte Entwicklung) übergehen.
 
-Mit der Verbreitung von KI-Assistenten-Tools wie GitHub Copilot, Cursor oder verschiedenen LLM-APIs hat sich die Hauptaufgabe von Ingenieuren vom „Schreiben von Code von Grund auf“ hin zum „Entwerfen von Anweisungen, um die KI dazu zu bringen, den beabsichtigten Code zu generieren, und der anschließenden Überprüfung und Integration des generierten Codes“ gewandelt.
+Mit der Verbreitung von KI-Assistenten-Tools wie GitHub Copilot, Cursor oder verschiedenen [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-APIs hat sich die Hauptaufgabe von Ingenieuren vom „Schreiben von Code von Grund auf“ hin zum „Entwerfen von Anweisungen, um die KI dazu zu bringen, den beabsichtigten Code zu generieren, und der anschließenden Überprüfung und Integration des generierten Codes“ gewandelt.
 
 Die wichtigste Fähigkeit in dieser neuen Entwicklungsmethode ist das **Prompt Engineering**. Prompt Engineering wird oft als Schlagwort für Nicht-Ingenieure im Sinne von "geschicktem Plaudern mit der KI" abgetan, aber im Kern ist es eine **neue Art von Programmiersprache für nicht-deterministische (Non-deterministic) Rechensysteme**.
 
@@ -21,9 +21,9 @@ In diesem Artikel, der sich an Software-Ingenieure und Architekten richtet, wird
 
 ---
 
-## 1. Grundlagen und mathematischer Hintergrund von Large Language Models (LLMs)
+## 1. Grundlagen und mathematischer Hintergrund von [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs)
 
-Um Prompts zu optimieren und die beabsichtigte Ausgabe stabil zu erhalten, ist es unerlässlich, das "Innere der Blackbox" mathematisch und strukturell zu verstehen, also wie LLMs intern Text oder Code verarbeiten und generieren. Die meisten modernen LLMs sind autoregressive Sprachmodelle, die die Transformer-Architektur verwenden.
+Um Prompts zu optimieren und die beabsichtigte Ausgabe stabil zu erhalten, ist es unerlässlich, das "Innere der Blackbox" mathematisch und strukturell zu verstehen, also wie LLMs intern Text oder Code verarbeiten und generieren. Die meisten modernen LLMs sind autoregressive Sprachmodelle, die die [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Architektur verwenden.
 
 ### 1.1 Tokenisierung (Tokenization) und BPE
 
@@ -41,13 +41,13 @@ Hierbei repräsentiert $w_i$ ein Token und $t$ den aktuellen Zeitschritt. Das Mo
 
 ### 1.3 Aufmerksamkeitsmechanismus (Attention Mechanism) und Kontextfenster
 
-Der Kern der Transformer-Architektur ist der Self-Attention-Mechanismus. Dieser ermöglicht es dem Modell, die Abhängigkeiten zwischen weit entfernten Token in einer Sequenz zu berechnen.
+Der Kern der [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Architektur ist der Self-Attention-Mechanismus. Dieser ermöglicht es dem Modell, die Abhängigkeiten zwischen weit entfernten Token in einer Sequenz zu berechnen.
 
 $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{Q K^T}{\sqrt{d_k}}\right) V $$
 
 Hierbei sind $Q$ (Query), $K$ (Key) und $V$ (Value) Matrizen, die aus den Eingaberepräsentationen generiert werden, und $d_k$ ist ein Skalierungsfaktor. Diese Formel bedeutet: „Berechne, auf welche vergangenen Wörter (Key) das aktuell verarbeitete Wort (Query) achten (Attention) soll, und beziehe diese Informationen (Value) ein.“
 
-Warum ist das Verständnis dieses Mechanismus im Prompt Engineering so wichtig? Weil es direkt mit dem Konzept des **Kontextfensters (Context Window)** zusammenhängt. Wenn der Eingabe-Prompt zu lang wird, gehen wichtige Anweisungen in der Mitte des Kontexts verloren, das Gewicht der Attention verteilt sich und es tritt das Phänomen „Lost in the middle (Verlust von Mittelinformationen)“ auf. Anstatt gewaltige Dokumente oder Codebasen im Ganzen als Prompt zu übergeben, ist es erforderlich, nur die notwendigen Blöcke gezielt zu extrahieren und zu übergeben.
+Warum ist das Verständnis dieses Mechanismus im [Prompt Engineering](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) so wichtig? Weil es direkt mit dem Konzept des **Kontextfensters (Context Window)** zusammenhängt. Wenn der Eingabe-Prompt zu lang wird, gehen wichtige Anweisungen in der Mitte des Kontexts verloren, das Gewicht der Attention verteilt sich und es tritt das Phänomen „Lost in the middle (Verlust von Mittelinformationen)“ auf. Anstatt gewaltige Dokumente oder Codebasen im Ganzen als Prompt zu übergeben, ist es erforderlich, nur die notwendigen Blöcke gezielt zu extrahieren und zu übergeben.
 
 ### 1.4 Sampling-Steuerung durch den Temperaturparameter (Temperature)
 
@@ -71,7 +71,7 @@ Beim Aufbau von KI-Anwendungen unter Verwendung von APIs von OpenAI (wie GPT-4) 
 
 ### 2.1 System Prompt: Definition globaler Einschränkungen und Personas
 
-Der System Prompt definiert die **globalen Einschränkungen, die Persona (Rolle) und die grundlegenden Verhaltensregeln** für das LLM. Um es mit Softwaredesign zu vergleichen, spielt er eine Rolle wie „Umgebungsvariablen“ oder „Basisklasse“ einer Anwendung oder wie ein „[Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)file“ eines [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)s.
+Der System Prompt definiert die **globalen Einschränkungen, die Persona (Rolle) und die grundlegenden Verhaltensregeln** für das [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/). Um es mit Softwaredesign zu vergleichen, spielt er eine Rolle wie „Umgebungsvariablen“ oder „Basisklasse“ einer Anwendung oder wie ein „[Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)file“ eines [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)s.
 
 Ein hervorragender System Prompt stabilisiert die Ausgabqualität und das Format drastisch.
 
@@ -102,7 +102,7 @@ Durch das robuste Einstellen des System Prompts kann die Stabilität der Ausgabe
 
 ---
 
-## 3. Kerntechnologien des Prompt Engineerings
+## 3. Kerntechnologien des [Prompt Engineering](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)s
 
 Ab hier werden spezifische Prompting-Paradigmen erläutert, die die Präzision von Softwareentwicklungsaufgaben drastisch verbessern.
 
@@ -135,7 +135,7 @@ Indem Beispiele auf diese Weise bereitgestellt werden, lernt das Modell implizit
 
 ### 3.2 Chain-of-Thought (CoT) und Zero-Shot CoT
 
-Der Durchbruch bezüglich der Denkfähigkeit von LLMs war **Chain-of-Thought (CoT: Gedankenkette)**. Bei Aufgaben, die komplexe Logik erfordern (z. B. Implementierung komplexer Algorithmen, Verfolgung obskurer Bugs, Erstellung regulärer Ausdrücke), treten oft logische Sprünge oder Fehler (Halluzinationen) auf, wenn man das LLM anweist, direkt den endgültigen Code auszugeben.
+Der Durchbruch bezüglich der Denkfähigkeit von LLMs war **Chain-of-Thought (CoT: Gedankenkette)**. Bei Aufgaben, die komplexe Logik erfordern (z. B. Implementierung komplexer Algorithmen, Verfolgung obskurer Bugs, Erstellung regulärer Ausdrücke), treten oft logische Sprünge oder Fehler (Halluzinationen) auf, wenn man das [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) anweist, direkt den endgültigen Code auszugeben.
 
 CoT ist eine Methode, bei der der mittlere Denkprozess verbalisiert wird, bevor die endgültige Antwort ausgegeben wird. Wenn das Modell die Situation Schritt für Schritt analysiert, wird der Kontext mit jedem generierten Token reicher, was die Genauigkeit der endgültigen Schlussfolgerung drastisch verbessert.
 
@@ -217,24 +217,24 @@ graph LR
 
 Die Standard-Schnittstelle zur Einbindung von ReAct in Systeme ist das **Function Calling (Funktionsaufruf / Werkzeugverwendung)**, das von OpenAI oder Anthropic bereitgestellt wird.
 
-Ingenieure stellen dem LLM zusammen mit dem System Prompt „Definitionen der verfügbaren Werkzeuge (JSON-Schema)“ zur Verfügung. Das LLM analysiert den Kontext des Prompts und wenn es entscheidet, dass ein Werkzeug verwendet werden soll, gibt es nicht normalen Text aus, sondern den „aufzurufenden Funktionsnamen“ und die „zugehörigen Argumente als JSON“. Die Anwendung führt diese Funktion aus, gibt das Ergebnis an das LLM zurück und so wird eine Schleife gebildet.
+Ingenieure stellen dem [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) zusammen mit dem System Prompt „Definitionen der verfügbaren Werkzeuge (JSON-Schema)“ zur Verfügung. Das LLM analysiert den Kontext des Prompts und wenn es entscheidet, dass ein Werkzeug verwendet werden soll, gibt es nicht normalen Text aus, sondern den „aufzurufenden Funktionsnamen“ und die „zugehörigen Argumente als JSON“. Die Anwendung führt diese Funktion aus, gibt das Ergebnis an das LLM zurück und so wird eine Schleife gebildet.
 
 **Anwendungsbeispiel für die Entwicklung (Autonomer Debugging-Agent):**
-Wenn ein Agent erstellt wird, der bei einem fehlgeschlagenen Test in einer [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) die Ursache untersucht und einen Patch generiert, stellt man dem LLM folgende Tools zur Verfügung:
+Wenn ein Agent erstellt wird, der bei einem fehlgeschlagenen Test in einer [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) die Ursache untersucht und einen Patch generiert, stellt man dem [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) folgende Tools zur Verfügung:
 
 1. `search_codebase(regex_pattern)`: Durchsucht den Code im Repository mit regulären Ausdrücken.
 2. `view_file_content(file_path, start_line, end_line)`: Liest den Inhalt einer angegebenen Datei.
 3. `run_unit_test(test_file_path)`: Führt einen bestimmten Unit-Test aus und ruft den Traceback ab.
 4. `propose_patch(file_path, diff_content)`: Schlägt einen Patch zur Behebung vor.
 
-Das LLM schlussfolgert und handelt autonom wie folgt:
+Das [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) schlussfolgert und handelt autonom wie folgt:
 - **Thought**: Das Testprotokoll zeigt, dass in Zeile 45 in `src/auth.py` ein `KeyError: 'user_id'` aufgetreten ist. Ich muss den umgebenden Code überprüfen.
 - **Action**: `view_file_content(file_path="src/auth.py", start_line=30, end_line=60)`
-- **Observation**: (Anwendung liest den Dateiinhalt und gibt ihn an das LLM zurück)
+- **Observation**: (Anwendung liest den Dateiinhalt und gibt ihn an das [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) zurück)
 - **Thought**: Verstehe. Es fehlt eine Validierung für den Fall, dass die Antwort-JSON von der API keine `user_id` enthält. Ich werde einen Patch erstellen, der es in die sicherere Methode `.get()` umschreibt.
 - **Action**: `propose_patch(...)`
 
-Auf diese Weise hat das Prompt Engineering eine neue Dimension erreicht – von der „Steuerung der Textgenerierung“ hin zur „Definition von Werkzeugen und Gestaltung von Agenten-Schleifen (Orchestrierung)“.
+Auf diese Weise hat das [Prompt Engineering](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) eine neue Dimension erreicht – von der „Steuerung der Textgenerierung“ hin zur „Definition von Werkzeugen und Gestaltung von Agenten-Schleifen (Orchestrierung)“.
 
 ---
 
@@ -279,7 +279,7 @@ Eine wichtige Prompt-Engineering-Technik beim Aufbau von RAG für Codebasen ist,
 
 ## 6. Praktische Anwendungsfälle im Engineering und Beispiele für fortgeschrittene Prompts
 
-Im Folgenden werden praktische Anwendungsfälle und Prompt-Techniken vorgestellt, die zeigen, wie die Theorie des Prompt Engineerings angewendet werden kann, um den täglichen Entwicklungsalltag zu automatisieren und zu optimieren.
+Im Folgenden werden praktische Anwendungsfälle und Prompt-Techniken vorgestellt, die zeigen, wie die Theorie des [Prompt Engineering](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)s angewendet werden kann, um den täglichen Entwicklungsalltag zu automatisieren und zu optimieren.
 
 ### 6.1 Automatisierung von Code-Reviews und Ergänzung der statischen Analyse
 
@@ -354,11 +354,11 @@ def is_valid_ipv4(ip_str):
 
 ## 7. Bewertung von Prompts und LLMOps (Eval)
 
-In der Welt des Software-Engineerings wird Code, der nicht getestet ist, als Legacy-Code bezeichnet. Beim Prompt Engineering gilt genau dasselbe. Es ist extrem gefährlich, einen Prompt in der Produktionsumgebung bereitzustellen, der „ein paar Mal lokal gut funktioniert hat“.
+In der Welt des Software-Engineerings wird Code, der nicht getestet ist, als Legacy-Code bezeichnet. Beim [Prompt Engineering](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) gilt genau dasselbe. Es ist extrem gefährlich, einen Prompt in der Produktionsumgebung bereitzustellen, der „ein paar Mal lokal gut funktioniert hat“.
 
 Mit Upgrades der Basismodelle oder Änderungen in den verarbeiteten Domaindaten kann das Verhalten von Prompts leicht brechen. Um dies zu verhindern, ist es unerlässlich, Mechanismen (LLMOps) für die **Evaluation (Eval)** zu etablieren, die die Ausgaben des Prompts quantitativ bewerten.
 
-### 7.1 LLM-as-a-Judge (LLM bewertet LLM)
+### 7.1 [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-as-a-Judge (LLM bewertet LLM)
 
 Bei Aufgaben wie Codegenerierung oder Textzusammenfassung ist das Testen auf genaue Übereinstimmung (Exact Match) unmöglich. Selbst klassische Bewertungsmetriken in der Verarbeitung natürlicher Sprache (BLEU und ROUGE) sind oft nicht leistungsfähig genug, um semantische Genauigkeit zu messen.
 
@@ -368,7 +368,7 @@ Der aktuelle Industriestandard ist eine Methode namens **LLM-as-a-Judge**, bei d
 2. **Ausführung**: Lassen Sie das zu bewertende Modell und den Prompt Ausgaben für das Testset generieren.
 3. **Bewertung**: Verwenden Sie einen Bewertungsprompt (Meta-Prompt), um das Judge-LLM anzuweisen: „Bewerte die generierte Ausgabe mit 1 bis 5 Punkten, basierend darauf, ob sie die Anforderungen erfüllt.“
 
-Dies ermöglicht es, Leistungsrückgänge (Regressionen) beim Anpassen von Prompts in [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s automatisch zu erkennen. Das Prompt Engineering entwickelt sich von der handwerklichen „Prompt-Bastelei“ hin zum datengesteuerten, reproduzierbaren „Engineering“.
+Dies ermöglicht es, Leistungsrückgänge (Regressionen) beim Anpassen von Prompts in [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s automatisch zu erkennen. Das [Prompt Engineering](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) entwickelt sich von der handwerklichen „Prompt-Bastelei“ hin zum datengesteuerten, reproduzierbaren „Engineering“.
 
 ---
 
@@ -376,7 +376,7 @@ Dies ermöglicht es, Leistungsrückgänge (Regressionen) beim Anpassen von Promp
 
 In einer Zeit, in der KI Code schreibt, hört man oft vom „Ende des Programmierens“, aber die Realität sieht anders aus. Für Ingenieure hat sich lediglich die erforderliche Abstraktionsebene um eine Stufe erhöht.
 
-In der Vergangenheit haben wir den Übergang von der Assemblersprache zu C und dann zu höheren Programmiersprachen mit [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) vollzogen, was uns von der mühsamen Speicherverwaltung befreite und es uns ermöglichte, uns auf komplexere Geschäftslogik zu konzentrieren. LLMs und Prompt Engineering sind die nächste Welle der Abstraktion, die darauf folgt.
+In der Vergangenheit haben wir den Übergang von der Assemblersprache zu C und dann zu höheren Programmiersprachen mit [Garbage Collection](https://kenji.blog/de/p/memory-management-garbage-collection/) vollzogen, was uns von der mühsamen Speicherverwaltung befreite und es uns ermöglichte, uns auf komplexere Geschäftslogik zu konzentrieren. LLMs und [Prompt Engineering](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) sind die nächste Welle der Abstraktion, die darauf folgt.
 
 1. **Verständnis der Architektur**: Verstehen Sie die probabilistische Natur von LLMs (Autoregression, Attention, Temperature), um die Nicht-Determiniertheit des Systems zu steuern.
 2. **Kontextdesign**: Klare Übermittlung der Absicht durch Einschränkungen im System Prompt und die Nutzung von Few-Shot/CoT.
@@ -386,6 +386,6 @@ In der Vergangenheit haben wir den Übergang von der Assemblersprache zu C und d
 Indem Sie diese Prinzipien meistern, werden Prompts nicht mehr nur Zeichenfolgen sein, sondern robuste, skalierbare Softwarekomponenten. Ich hoffe, dass Sie die in diesem Artikel erläuterten fortgeschrittenen Prompt-Engineering-Methoden in Ihre Entwicklungs-[Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s und Produkte einbinden und so eine führende Rolle in der nächsten Generation von „Software 3.0“ spielen werden.
 
 ---
-*Generated using Prompt Engineering Techniques.*
+*Generated using [Prompt Engineering](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) Techniques.*
 
 

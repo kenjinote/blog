@@ -21,7 +21,7 @@ description: '昨今のAI開発はPythonが主流ですが、エッジデバイ�
 3. **エッジデバイスへの対応**: スマートフォンや組み込み機器、Raspberry Piのようなリソース制約の厳しい環境において、数ギガバイトものメモリを消費するPythonランタイムを動かす余裕はありません。
 4. **ハードウェアの直接制御**: メモリアロケーションのタイミング、SIMD命令の明示的な利用、GPUとのメモリ転送の最適化など、低レイヤーの制御がC++なら可能です。
 
-本記事では、Georgi Gerganov氏によって開発された「GGML」ライブラリのアーキテクチャに多大なインスピレーションを受けつつ、C++だけで大規模言語モデル（LLM）などを動かすための推論エンジンをスクラッチで構築していく過程を、技術的な深淵まで潜って解説します。
+本記事では、Georgi Gerganov氏によって開発された「GGML」ライブラリのアーキテクチャに多大なインスピレーションを受けつつ、C++だけで[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）などを動かすための推論エンジンをスクラッチで構築していく過程を、技術的な深淵まで潜って解説します。
 
 ---
 
@@ -46,15 +46,15 @@ graph TD
 3. **メモリアリーナ（Memory Arena）**: 動的メモリ確保（`malloc`や`new`）のオーバーヘッドを避けるための、事前確保型[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)機構。
 4. **バックエンド（Backend）**: CPUやGPUなど、特定のハードウェアに最適化された演算の実装（カーネル）。
 
-これらをC++の強力な機能（テンプレート、ポインタ演算、RAIIなど）を用いて組み上げていきます。
+これらをC++の強力な機能（テンプレート、[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)演算、RAIIなど）を用いて組み上げていきます。
 
 ---
 
-## 3. メモリ管理の極意：メモリアリーナとSIMDアライメント
+## 3. [メモリ管理](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の極意：メモリアリーナとSIMDアライメント
 
-推論エンジンにおけるメモリ管理は、パフォーマンスに直結する最も重要な要素の一つです。推論中、特にTransformerモデルの各層を通過する際、膨大な数の中間テンソルが生成されます。これを毎回標準の`malloc`で確保・解放していては、ヒープの断片化とOSのコンテキストスイッチによって致命的な速度低下を引き起こします。
+推論エンジンにおけるメモリ管理は、パフォーマンスに直結する最も重要な要素の一つです。推論中、特に[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)モデルの各層を通過する際、膨大な数の中間テンソルが生成されます。これを毎回標準の`malloc`で確保・解放していては、[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の断片化とOSのコンテキストスイッチによって致命的な速度低下を引き起こします。
 
-そこで、「 **メモリアリーナ（Memory Arena）** 」というアプローチを採用します。これは推論開始時に必要な最大メモリ量を計算（または決め打ち）して一括確保し、ポインタのインクリメントだけでメモリを切り出していく手法です。
+そこで、「 **メモリアリーナ（Memory Arena）** 」というアプローチを採用します。これは推論開始時に必要な最大メモリ量を計算（または決め打ち）して一括確保し、[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)のインクリメントだけでメモリを切り出していく手法です。
 
 ### 3.1 アライメントの重要性
 
@@ -189,7 +189,7 @@ graph LR
 
 ## 6. 数学と最適化の核心：行列積 (GEMM) 
 
-AI推論の計算量の90%以上は、行列乗算（GEMM: General Matrix Multiply）に費やされます。Transformerモデルの中核であるアテンション機構もフィードフォワードネットワーク（FFN）も、突き詰めれば巨大な行列積です。
+AI推論の計算量の90%以上は、行列乗算（GEMM: General Matrix Multiply）に費やされます。[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)モデルの中核であるアテンション機構もフィードフォワードネットワーク（FFN）も、突き詰めれば巨大な行列積です。
 
 2つの行列 $A$ (サイズ $M \times K$) と $B$ (サイズ $K \times N$) の積 $C = A B$ (サイズ $M \times N$) は、数式で表すと以下のようになります。
 
@@ -244,7 +244,7 @@ float dot_product_avx2(const float* a, const float* b, int n) {
 
 ## 7. ハードウェアの壁を越える：CUDAとMetalバックエンドの統合
 
-純粋なC++実装だけでもCPU上ではそこそこ動きますが、LLMなどの巨大なモデルを実用的な速度（例：1秒間に20トークン以上生成）で動かすには、GPUの並列計算能力が不可欠です。そこで、我々のエンジンにバックエンドの抽象化レイヤーを導入します。
+純粋なC++実装だけでもCPU上ではそこそこ動きますが、[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)などの巨大なモデルを実用的な速度（例：1秒間に20トークン以上生成）で動かすには、GPUの並列計算能力が不可欠です。そこで、我々のエンジンにバックエンドの抽象化レイヤーを導入します。
 
 ### 7.1 バックエンド抽象化
 
@@ -344,9 +344,9 @@ Apple Silicon環境では、MPS（Metal Performance Shaders）という行列積
 
 ---
 
-## 8. Transformerモデル特有の処理：AttentionとKVキャッシュ
+## 8. [Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)モデル特有の処理：AttentionとKVキャッシュ
 
-LLaMA 2/3やGPTといった最先端のLLMはTransformerアーキテクチャに基づいています。これをC++で実装するためには、以下の数式で表される「Scaled Dot-Product Attention」の構築が必須です。
+LLaMA 2/3やGPTといった最先端の[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)はTransformerアーキテクチャに基づいています。これをC++で実装するためには、以下の数式で表される「Scaled Dot-Product Attention」の構築が必須です。
 
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
@@ -389,7 +389,7 @@ KVキャッシュのメモリ確保も、事前に最大コンテキスト長（
 
 推論エンジン側では、メモリからINT4（またはINT8）で圧縮されたウェイトを読み出し、 **CPUまたはGPUのレジスタにロードした直後にFP16またはFP32に展開（Dequantize）して計算** を行います。
 
-驚くべきことに、計算量を増やしてでもメモリから読み込むデータ量を減らした方が速くなります。これは現代のハードウェアにおいて、推論タスクのボトルネックが「計算力（Compute Bound）」ではなく「 **メモリ帯域幅（Memory Bandwidth Bound）** 」にあるからです。INT4量子化を施したC++実装のエンジンであれば、8GB VRAMのMacBook AirなどでもサクサクとローカルLLMを動かすことが可能になります。
+驚くべきことに、計算量を増やしてでもメモリから読み込むデータ量を減らした方が速くなります。これは現代のハードウェアにおいて、推論タスクのボトルネックが「計算力（Compute Bound）」ではなく「 **メモリ帯域幅（Memory Bandwidth Bound）** 」にあるからです。INT4量子化を施したC++実装のエンジンであれば、8GB VRAMのMacBook Airなどでもサクサクとローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)を動かすことが可能になります。
 
 ---
 
@@ -414,7 +414,7 @@ Pythonは確かに便利です。研究開発やプロトタイピングにお�
 
 メモリのバイト列を直接操作し、SIMD命令でレジスタを限界まで叩き、GPUのVRAM帯域幅と格闘しながら作り上げた推論エンジンが、コンソール上に次々と自然な日本語のテキスト（トークン）を生成していくのを見た時の達成感は、Pythonのフレームワークで `model.generate()` を呼び出した時には決して得られない「エンジニアとしての純粋な喜び」があります。
 
-「Black Box」となりがちなAI技術ですが、テンソルの演算からメモリ確保に至るまですべてを自分の手でC++で書き上げることで、LLMがどのようにして「考えている」のか、その真のメカニズムを深く理解することができます。
+「Black Box」となりがちなAI技術ですが、テンソルの演算からメモリ確保に至るまですべてを自分の手でC++で書き上げることで、[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)がどのようにして「考えている」のか、その真のメカニズムを深く理解することができます。
 
 もしあなたがC++の基礎知識を持っていて、現在のAI技術に強い興味があるなら、ぜひ自作の推論エンジンの開発に挑戦してみてください。GGMLやllama.cppのソースコードは、最高の生きた教科書になるはずです。
 

@@ -184,7 +184,7 @@ Zettelkasten 主要包含三种类型的笔记：
 
 ## 5. 利用向量数据库（Pinecone）和 OpenAI Embeddings 进行语义搜索
 
-当笔记数量增加到成百上千条时，仅仅依靠关键词搜索（全文搜索）就很难找到目标笔记了。在“虽然想不起关键词，但想寻找概念上相似的笔记”的情况下，利用大语言模型（LLM）的 Embeddings 进行语义搜索能发挥巨大作用。
+当笔记数量增加到成百上千条时，仅仅依靠关键词搜索（全文搜索）就很难找到目标笔记了。在“虽然想不起关键词，但想寻找概念上相似的笔记”的情况下，利用大语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）的 Embeddings 进行语义搜索能发挥巨大作用。
 
 使用 OpenAI 的 `text-embedding-ada-002` 模型（或 `text-embedding-3-small`），将 Obsidian 的每一条 Markdown 笔记转换为多维向量（数百到数千维的数值数组）。在这些向量空间中，含义相近的句子，其向量的物理距离也会很近。
 

@@ -289,7 +289,7 @@ pie title 區塊鏈中的簽章資料大小比較 (概念圖)
 
 然而，像Dilithium或Falcon等新晶格密碼演算法的驗證過程，牽涉到複雜的多項式運算與矩陣運算。如果僅用現有的EVM操作碼（Opcode）來實作，單次簽章驗證就可能消耗數百萬到數千萬的Gas。這足以在單筆交易中耗盡目前的區塊Gas上限（約3000萬Gas）。
 
-為了避免這個情況，必須透過網路的硬分叉（Hard Fork），在EVM內部新增專門用於驗證PQC的Precompiled Contract（例如將 `0x10` 分配給 DilithiumVerify）。這需要各個以太坊客戶端（Geth, Nethermind, Erigon等）的核心開發者協同合作，在C++、Go、[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)等語言層級上進行晶格密碼學驗證邏輯的最佳化實作，並執行安全審計，這將是一個漫長的過程。
+為了避免這個情況，必須透過網路的硬分叉（Hard Fork），在EVM內部新增專門用於驗證PQC的Precompiled Contract（例如將 `0x10` 分配給 DilithiumVerify）。這需要各個以太坊客戶端（Geth, Nethermind, Erigon等）的核心開發者協同合作，在C++、[Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)、[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)等語言層級上進行晶格密碼學驗證邏輯的最佳化實作，並執行安全審計，這將是一個漫長的過程。
 
 ### 5.3. 硬分叉達成共識的困難度
 

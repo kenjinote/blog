@@ -12,7 +12,7 @@ description: 'Wir erklären die interne Struktur des in llama.cpp verwendeten GG
 
 ## 1. Einführung: Warum benötigen LLMs Quantisierung?
 
-Die Entwicklung von großen Sprachmodellen (LLM: Large Language Models) in den letzten Jahren war bemerkenswert, aber im Hintergrund sind ernsthafte Probleme aufgetreten: "Erschöpfung der Rechenressourcen" und "Engpässe bei der Speicherbandbreite". Wenn beispielsweise ein Modell mit 70B (70 Milliarden) Parametern wie Llama 3 im standardmäßigen 16-Bit-Gleitkommaformat (FP16) in den Speicher geladen wird, verbrauchen allein die Parameter etwa 140 GB VRAM/RAM. Wenn der Kontext (KV-Cache) während der Inferenz hinzugefügt wird, funktioniert dies nicht, ohne mehrere High-End-GPUs für Rechenzentren (wie NVIDIA A100 80GB oder H100 80GB) in einem Cluster zusammenzufassen.
+Die Entwicklung von großen Sprachmodellen ([LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/): [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)) in den letzten Jahren war bemerkenswert, aber im Hintergrund sind ernsthafte Probleme aufgetreten: "Erschöpfung der Rechenressourcen" und "Engpässe bei der Speicherbandbreite". Wenn beispielsweise ein Modell mit 70B (70 Milliarden) Parametern wie Llama 3 im standardmäßigen 16-Bit-Gleitkommaformat (FP16) in den Speicher geladen wird, verbrauchen allein die Parameter etwa 140 GB VRAM/RAM. Wenn der Kontext (KV-Cache) während der Inferenz hinzugefügt wird, funktioniert dies nicht, ohne mehrere High-End-GPUs für Rechenzentren (wie NVIDIA A100 80GB oder H100 80GB) in einem Cluster zusammenzufassen.
 
 Als Retter für die Ausführung von LLMs auf Edge-Geräten (wie MacBooks oder gängigen Gaming-PCs) für einzelne Entwickler tauchten **llama.cpp** und seine Kerntechnologie, die **Quantisierung (Quantization)**, auf. Insbesondere das Dateiformat **GGUF (GPT-Generated Unified Format)** und ein fortschrittlicher blockbasierter Quantisierungsalgorithmus namens **k-quants** sind bahnbrechende Methoden, die die Modellgröße auf einen Bruchteil komprimieren, während die Verschlechterung der Modellgenauigkeit (Perplexity) so gering wie möglich gehalten wird.
 
@@ -175,7 +175,7 @@ llama.cpp bietet je nach Zweck eine Vielzahl von Variationen. Die Suffixe (S, M,
 
 ## 5. Leistungsoptimierung bei der Inferenz: SIMD und CUDA-Architektur
 
-Einfach das GGUF-Modell in den Speicher zu laden, macht die Inferenz noch nicht schnell. Der Großteil der LLM-Inferenz besteht aus der "Matrix-Vektor-Multiplikation" (GEMV oder Matrix-Matrix, GEMM). Der Schlüssel liegt in der Beschleunigung der Multiply-Accumulate-Operationen zwischen den quantisierten Gewichten und den in FP16 (oder FP32) gehaltenen Aktivierungen (Eingabedaten).
+Einfach das GGUF-Modell in den Speicher zu laden, macht die Inferenz noch nicht schnell. Der Großteil der [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Inferenz besteht aus der "Matrix-Vektor-Multiplikation" (GEMV oder Matrix-Matrix, GEMM). Der Schlüssel liegt in der Beschleunigung der Multiply-Accumulate-Operationen zwischen den quantisierten Gewichten und den in FP16 (oder FP32) gehaltenen Aktivierungen (Eingabedaten).
 
 ### 5.1. Nutzung von SIMD-Befehlen in CPU-Umgebungen
 

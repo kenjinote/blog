@@ -62,6 +62,6 @@ Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
 
-アドレスは実行時に出力されるので（上記の例では`http://localhost:1313/`）、ブラウザにアドレスをコピーする。
+[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)は実行時に出力されるので（上記の例では`http://localhost:1313/`）、ブラウザに[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)をコピーする。
 プレビューはファイルが保存されるたびに自動更新される。
 プレビュー終えるにはコマンドプロンプトでCtrl+Cを入力する。

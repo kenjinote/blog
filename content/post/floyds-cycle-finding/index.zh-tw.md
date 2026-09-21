@@ -209,7 +209,7 @@ int main() {
 
 ### [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 實作
 
-在 Rust 的情況下，由於所有權與借用的規則，連結串列的實作往往會變得很複雜，但在競技程式設計等地，將其模型化為陣列（或 `Vec`）上的索引參照問題是常見的做法。
+在 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 的情況下，由於所有權與借用的規則，連結串列的實作往往會變得很複雜，但在競技程式設計等地，將其模型化為陣列（或 `Vec`）上的索引參照問題是常見的做法。
 這裡我們展示一個不使用「指向下一個的指標」，而是使用保存「下一個索引」的陣列的實作範例。
 
 ```rust

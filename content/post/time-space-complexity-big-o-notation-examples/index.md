@@ -94,7 +94,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : 準線形時間 (Linearithmic Time)
 
-O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、ヒープソートなど）がこの計算量を持ちます。
+O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソートなど）がこの計算量を持ちます。
 
 ```python
 def merge_sort(arr):
@@ -270,7 +270,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : 準線形時間 (Linearithmic Time)
 
-O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、ヒープソートなど）がこの計算量を持ちます。
+O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソートなど）がこの計算量を持ちます。
 
 ```python
 def merge_sort(arr):
@@ -446,7 +446,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : 準線形時間 (Linearithmic Time)
 
-O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、ヒープソートなど）がこの計算量を持ちます。
+O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソートなど）がこの計算量を持ちます。
 
 ```python
 def merge_sort(arr):
@@ -622,7 +622,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : 準線形時間 (Linearithmic Time)
 
-O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、ヒープソートなど）がこの計算量を持ちます。
+O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソートなど）がこの計算量を持ちます。
 
 ```python
 def merge_sort(arr):
@@ -798,7 +798,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : 準線形時間 (Linearithmic Time)
 
-O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、ヒープソートなど）がこの計算量を持ちます。
+O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソートなど）がこの計算量を持ちます。
 
 ```python
 def merge_sort(arr):
@@ -974,7 +974,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : 準線形時間 (Linearithmic Time)
 
-O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、ヒープソートなど）がこの計算量を持ちます。
+O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソートなど）がこの計算量を持ちます。
 
 ```python
 def merge_sort(arr):
@@ -1150,7 +1150,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : 準線形時間 (Linearithmic Time)
 
-O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、ヒープソートなど）がこの計算量を持ちます。
+O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソートなど）がこの計算量を持ちます。
 
 ```python
 def merge_sort(arr):
@@ -1326,7 +1326,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : 準線形時間 (Linearithmic Time)
 
-O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、ヒープソートなど）がこの計算量を持ちます。
+O(n) と O(log n) の積です。多くの効率的な比較[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソートなど）がこの計算量を持ちます。
 
 ```python
 def merge_sort(arr):

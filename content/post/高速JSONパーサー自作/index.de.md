@@ -115,7 +115,7 @@ private:
 };
 ```
 
-Durch dieses Design können rekursive Datenstrukturen wie `JsonArray` und `JsonObject` prägnant und sicher dargestellt werden (in einigen Implementierungen der C++-Standardbibliothek ist die Verwendung unvollständiger Typen innerhalb von `std::variant` eingeschränkt, weshalb eine Heap-Zuweisung mit Smart Pointern erforderlich sein kann, aber in den neuesten Compilern funktioniert der obige Code oft reibungslos).
+Durch dieses Design können rekursive Datenstrukturen wie `JsonArray` und `JsonObject` prägnant und sicher dargestellt werden (in einigen Implementierungen der C++-Standardbibliothek ist die Verwendung unvollständiger Typen innerhalb von `std::variant` eingeschränkt, weshalb eine [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Zuweisung mit Smart [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)n erforderlich sein kann, aber in den neuesten Compilern funktioniert der obige Code oft reibungslos).
 
 ---
 
@@ -256,7 +256,7 @@ private:
 };
 ```
 
-Der entscheidende Punkt hier ist, dass die Werte von Zeichenketten (String) und Zahlen (Number) als `std::string_view` extrahiert werden. Dadurch **treten auf der Lexer-Stufe keinerlei dynamische Speicherzuweisungen (Heap-Allocation) oder Kopien auf**. Dies ist ein wichtiges Design, das sich direkt auf die Performance auswirkt.
+Der entscheidende Punkt hier ist, dass die Werte von Zeichenketten (String) und Zahlen (Number) als `std::string_view` extrahiert werden. Dadurch **treten auf der Lexer-Stufe keinerlei dynamische Speicherzuweisungen ([Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Allocation) oder Kopien auf**. Dies ist ein wichtiges Design, das sich direkt auf die Performance auswirkt.
 
 ---
 
@@ -407,7 +407,7 @@ Da bei einem Recursive Descent Parser die Codestruktur und die JSON-Grammatik (B
 Allein durch die Implementierung eines einfachen Parsers kann man keine praktischen Bibliotheken schlagen. Wir stellen einige Optimierungstechniken vor, die spezifisch für C++ sind.
 
 ### 6.1. Zero-Copy-Architektur und `std::string_view`
-Der Großteil der Performance-Engpässe eines Parsers liegt in der "Kopie von Zeichenketten" und der "dynamischen Allokation von Heap-Speicher".
+Der Großteil der Performance-Engpässe eines Parsers liegt in der "Kopie von Zeichenketten" und der "dynamischen Allokation von [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Speicher".
 Wenn `std::string` häufig verwendet wird, tritt bei jeder Erstellung von Teilstrings eine Speicherzuweisung auf. Um dies zu verhindern, haben wir im Lexer konsequent `std::string_view` verwendet.
 Die Erstellungszeit von `std::string_view` hängt nicht von der Stringlänge $L$ ab und wird in $O(1)$ abgeschlossen.
 
@@ -443,7 +443,7 @@ $$
 Space(N) \le C \times N \implies O(N)
 $$
 
-Beim Recursive Descent Parsing wird der Aufrufstapel (Call Stack) jedoch proportional zur Verschachtelungstiefe (Depth) von JSON verbraucht. Für die Tiefe $D$ wird ein Stapelspeicher von $O(D)$ benötigt. Wenn böswillig endlos verschachteltes JSON eingegeben wird, besteht die Gefahr eines Stack Overflow. Daher müssen praktische Parser eine Grenze für die Rekursionstiefe festlegen (z. B. 256 oder 512) oder die Rekursion in Schleifen auflösen.
+Beim Recursive Descent Parsing wird der Aufrufstapel (Call [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)) jedoch proportional zur Verschachtelungstiefe (Depth) von JSON verbraucht. Für die Tiefe $D$ wird ein Stapelspeicher von $O(D)$ benötigt. Wenn böswillig endlos verschachteltes JSON eingegeben wird, besteht die Gefahr eines Stack Overflow. Daher müssen praktische Parser eine Grenze für die Rekursionstiefe festlegen (z. B. 256 oder 512) oder die Rekursion in Schleifen auflösen.
 
 ---
 

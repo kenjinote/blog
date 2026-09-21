@@ -12,7 +12,7 @@ description: "Kekurangan VRAM (memori GPU) yang menjadi hambatan terbesar dalam 
 
 # Pengantar: Pengembangan AI dan 'Tembok VRAM'
 
-Dalam beberapa tahun terakhir, teknologi AI generatif seperti Large Language Models (LLM) dan Diffusion Models telah mengalami perkembangan yang sangat pesat. Namun, ketika melatih (fine-tuning) atau menjalankan inferensi model-model AI mutakhir ini di lingkungan lokal, banyak pengembang dan peneliti menghadapi hambatan fisik yang sangat besar, yaitu **"kekurangan memori GPU (VRAM)"**.
+Dalam beberapa tahun terakhir, teknologi AI generatif seperti [Large Language Models](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)) dan Diffusion Models telah mengalami perkembangan yang sangat pesat. Namun, ketika melatih (fine-tuning) atau menjalankan inferensi model-model AI mutakhir ini di lingkungan lokal, banyak pengembang dan peneliti menghadapi hambatan fisik yang sangat besar, yaitu **"kekurangan memori GPU (VRAM)"**.
 
 Meskipun menggunakan GPU high-end untuk konsumen seperti NVIDIA GeForce RTX 4090, VRAM maksimal yang tersedia hanyalah 24GB, sehingga mustahil untuk memuat model raksasa seperti Llama 3 70B secara langsung. GPU untuk data center seperti H100 (80GB) dan B200 (192GB) sangatlah mahal, dan tidak mudah dijangkau oleh individu atau tim skala kecil. Jika kita tidak dapat menembus 'Tembok VRAM (The Wall of VRAM)' ini, kita bahkan tidak akan bisa menyentuh model-model mutakhir tersebut.
 
@@ -47,7 +47,7 @@ Dengan kata lain, sekadar memuat bobot model ke GPU akan mengonsumsi 16GB VRAM. 
 ## 1.2 Konsumsi Memori Saat Inferensi: Peningkatan Cache KV
 
 Dalam inferensi LLM (terutama pembuatan teks autoregresif), hal yang menekan VRAM sama atau bahkan lebih besar daripada bobotnya adalah **Cache KV ([Key-Value](https://kenji.blog/id/p/nosql-database-selection-kvs-document-graph-wide-column/) Cache)**.
-Pada arsitektur Transformer, tensor Key dan Value pada setiap lapisan attention terus di-cache dalam VRAM untuk mencegah perhitungan ulang informasi token yang telah diproses di masa lalu. Hal ini meningkatkan kecepatan komputasi (Compute), tetapi seiring dengan bertambahnya panjang konteks (panjang prompt masukan + panjang teks yang dihasilkan), konsumsi memori meningkat secara linear dan eksponensial.
+Pada arsitektur [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/), tensor Key dan Value pada setiap lapisan attention terus di-cache dalam VRAM untuk mencegah perhitungan ulang informasi token yang telah diproses di masa lalu. Hal ini meningkatkan kecepatan komputasi (Compute), tetapi seiring dengan bertambahnya panjang konteks (panjang prompt masukan + panjang teks yang dihasilkan), konsumsi memori meningkat secara linear dan eksponensial.
 
 Jumlah memori cache KV yang dikonsumsi saat memproses 1 token, $M_{kv\_token}$, dihitung secara akurat berdasarkan arsitektur model dengan rumus berikut:
 
@@ -112,7 +112,7 @@ graph TD
 ```
 
 **Mekanisme dan Tantangan:**
-Model Transformer memiliki struktur di mana setiap lapisan ditumpuk secara seri, sehingga perhitungan untuk suatu lapisan tidak akan dimulai sampai perhitungan lapisan sebelumnya selesai. Menggunakan prinsip ini, hanya lapisan yang muat di GPU (misal: lapisan 1 hingga 15) yang dibiarkan menetap (pinned) di VRAM, sedangkan lapisan sisanya (lapisan 16 hingga 32) ditempatkan di RAM CPU yang berkapasitas besar namun lambat. Selama inferensi, setelah perhitungan lapisan 15 selesai, bobot lapisan ke-16 ditransfer (disalin) dari CPU ke GPU melalui bus PCIe untuk dihitung di GPU.
+Model [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) memiliki struktur di mana setiap lapisan ditumpuk secara seri, sehingga perhitungan untuk suatu lapisan tidak akan dimulai sampai perhitungan lapisan sebelumnya selesai. Menggunakan prinsip ini, hanya lapisan yang muat di GPU (misal: lapisan 1 hingga 15) yang dibiarkan menetap (pinned) di VRAM, sedangkan lapisan sisanya (lapisan 16 hingga 32) ditempatkan di RAM CPU yang berkapasitas besar namun lambat. Selama inferensi, setelah perhitungan lapisan 15 selesai, bobot lapisan ke-16 ditransfer (disalin) dari CPU ke GPU melalui bus PCIe untuk dihitung di GPU.
 
 Namun, **bandwidth PCIe menjadi bottleneck (leher botol) yang parah**. Bandwidth maksimal secara teori untuk PCIe 4.0 x16 adalah 32GB/s (satu arah), namun dibandingkan dengan bandwidth internal VRAM GPU terbaru (misalnya GDDR6X pada RTX 4090 yang mencapai 1008GB/s, atau HBM3 pada H100 yang melebihi 3TB/s), kecepatannya dua tingkat besaran lebih lambat. Jadi, jika CPU offloading digunakan terlalu sering, kecepatan inferensi (Tokens per Second) akan menurun drastis.
 Untuk meminimalkan penurunan kecepatan, hal praktis yang perlu dilakukan adalah memuat sebanyak mungkin lapisan ke GPU (memaksimalkan Lapisan GPU) dan mengurangi jumlah lapisan yang di-offload sesedikit mungkin.
@@ -139,7 +139,7 @@ graph LR
 
 ## 2.3 FlashAttention: Memecahkan Kompleksitas Memori Perhitungan Attention
 
-Kekurangan VRAM tidak hanya disebabkan oleh ruang untuk menyimpan data, tetapi juga kekurangan "workspace sementara" saat komputasi dilakukan. Mekanisme Self-Attention Transformer standar mengharuskan kita untuk mematerialisasi matriks attention raksasa $N \times N$ pada VRAM untuk panjang urutan $N$. Kompleksitas memori ini mencapai $O(N^2)$, yang menjadi penyebab utama terjadinya OOM saat menangani konteks panjang.
+Kekurangan VRAM tidak hanya disebabkan oleh ruang untuk menyimpan data, tetapi juga kekurangan "workspace sementara" saat komputasi dilakukan. Mekanisme Self-Attention [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) standar mengharuskan kita untuk mematerialisasi matriks attention raksasa $N \times N$ pada VRAM untuk panjang urutan $N$. Kompleksitas memori ini mencapai $O(N^2)$, yang menjadi penyebab utama terjadinya OOM saat menangani konteks panjang.
 
 Hal ini diselesaikan dengan **FlashAttention** (dan FlashAttention-2, 3).
 FlashAttention adalah algoritma yang dirancang dengan memperhatikan arsitektur perangkat keras GPU (hierarki antara HBM yang sangat besar namun lambat dan SRAM yang sangat kecil namun super cepat). Algoritma ini menggunakan teknik yang disebut Tiling untuk memuat data per blok ke SRAM dan menyelesaikan perhitungan attention, dengan demikian sepenuhnya menghindari proses penulisan matriks $N \times N$ ke HBM (VRAM).
@@ -161,7 +161,7 @@ graph TD
     end
 ```
 
-Keuntungan terbesar arsitektur ini adalah tidak adanya tembok pasti pemisah VRAM, sehingga hampir seluruh area memori sistem bisa langsung digunakan untuk memuat LLM raksasa. Jika Anda menggunakan Mac Studio dengan memori terpadu sebesar 192GB, Anda bisa memuat model super besar sekelas 70B atau bahkan lebih besar (seperti Grok-1) dalam satu perangkat tanpa kuantisasi, dan menjalankan inferensinya dengan sangat cepat. Kecepatan akses (bandwidth) memorinya mencapai 800GB/s pada M2 Ultra, setara dengan diskrit GPU untuk kalangan konsumen. Ini adalah pendekatan perangkat keras yang sangat kuat dalam memecahkan dilema "kapasitas memori" berbanding "bandwidth".
+Keuntungan terbesar arsitektur ini adalah tidak adanya tembok pasti pemisah VRAM, sehingga hampir seluruh area memori sistem bisa langsung digunakan untuk memuat [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) raksasa. Jika Anda menggunakan Mac Studio dengan memori terpadu sebesar 192GB, Anda bisa memuat model super besar sekelas 70B atau bahkan lebih besar (seperti Grok-1) dalam satu perangkat tanpa kuantisasi, dan menjalankan inferensinya dengan sangat cepat. Kecepatan akses (bandwidth) memorinya mencapai 800GB/s pada M2 Ultra, setara dengan diskrit GPU untuk kalangan konsumen. Ini adalah pendekatan perangkat keras yang sangat kuat dalam memecahkan dilema "kapasitas memori" berbanding "bandwidth".
 
 ---
 

@@ -443,7 +443,7 @@ $$
 Space(N) \le C \times N \implies O(N)
 $$
 
-Cependant, dans l'analyse par descente récursive, la pile d'appels (call stack) est consommée proportionnellement à la profondeur (Depth) d'imbrication du JSON. Pour une profondeur $D$, une mémoire de pile de $O(D)$ est requise. Si on lui fournit un JSON malveillant infiniment imbriqué, cela risque de provoquer un débordement de pile (Stack Overflow). Dans un analyseur pratique, il est nécessaire de limiter la profondeur de récursion (par exemple, 256 ou 512) ou de transformer la récursion en boucle.
+Cependant, dans l'analyse par descente récursive, la pile d'appels (call stack) est consommée proportionnellement à la profondeur (Depth) d'imbrication du JSON. Pour une profondeur $D$, une mémoire de pile de $O(D)$ est requise. Si on lui fournit un JSON malveillant infiniment imbriqué, cela risque de provoquer un débordement de pile ([Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/) Overflow). Dans un analyseur pratique, il est nécessaire de limiter la profondeur de récursion (par exemple, 256 ou 512) ou de transformer la récursion en boucle.
 
 ---
 

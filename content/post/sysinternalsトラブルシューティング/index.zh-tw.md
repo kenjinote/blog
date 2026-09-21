@@ -42,7 +42,7 @@ ProcMon的驅動程式被註冊為迷你過濾驅動程式（Minifilter Driver�
 
 ## 2. 透過 Process Explorer (ProcExp) 深入探究處理程序與惡意軟體分析
 
-Process Explorer是一款「超強工作管理員」。它不僅顯示CPU/記憶體的使用率，還能將處理程序樹狀圖、控制代碼（Handle）、已載入的DLL，甚至是執行緒的呼叫堆疊（Call Stack）視覺化。
+Process Explorer是一款「超強工作管理員」。它不僅顯示CPU/記憶體的使用率，還能將處理程序樹狀圖、控制代碼（Handle）、已載入的DLL，甚至是執行緒的呼叫堆疊（Call [Stack](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/)）視覺化。
 
 ### 2.1 找出控制代碼洩漏與鎖定
 應用程式在開啟檔案時崩潰，導致之後無法刪除或移動該檔案的問題屢見不鮮。當出現「檔案已由另一個程式開啟」的錯誤時，可以使用ProcExp的 **Find** 功能（`Ctrl+F`）來搜尋檔案名稱或目錄名稱。

@@ -9,9 +9,9 @@ categories: ["ai", "machine-learning", "mathematics"]
 tags: ["Transformer", "Deep Learning", "Attention", "Math"]
 ---
 
-# Pendahuluan: Mengapa Belajar Matematika Transformer?
+# Pendahuluan: Mengapa Belajar Matematika [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)?
 
-Arsitektur yang dapat dikatakan telah menulis ulang sejarah Pemrosesan Bahasa Alami (NLP) modern, dan bahkan seluruh AI, adalah "Transformer". Diusulkan pertama kali dalam makalah "Attention Is All You Need" yang diterbitkan oleh para peneliti Google pada tahun 2017, model ini sekarang berfungsi sebagai jantung dari Model Bahasa Besar (LLM) yang menyapu dunia, seperti seri GPT OpenAI (teknologi dasar ChatGPT), BERT dari Google, dan Claude dari Anthropic.
+Arsitektur yang dapat dikatakan telah menulis ulang sejarah Pemrosesan Bahasa Alami (NLP) modern, dan bahkan seluruh AI, adalah "Transformer". Diusulkan pertama kali dalam makalah "Attention Is All You Need" yang diterbitkan oleh para peneliti Google pada tahun 2017, model ini sekarang berfungsi sebagai jantung dari Model Bahasa Besar ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)) yang menyapu dunia, seperti seri GPT OpenAI (teknologi dasar ChatGPT), BERT dari Google, dan Claude dari Anthropic.
 
 Namun, meskipun penjelasan kualitatif seperti "memahami konteks menggunakan Attention (mekanisme perhatian)" untuk cara kerja Transformer sering ditemukan, saat ini ternyata masih sedikit penjelasan mendalam tentang **struktur matematis** di baliknya yang ditujukan untuk pemula. Untuk benar-benar memahami bagaimana AI memproses "kata-kata" sebagai "rumus matematika" dan menghasilkan teks yang sangat alami, sangat penting untuk menguraikan mekanisme matematisnya.
 
@@ -69,7 +69,7 @@ $$ x_i = W_E \cdot \text{one\_hot}(w_i) $$
 Dengan ini, seluruh kalimat direpresentasikan sebagai matriks $X \in \mathbb{R}^{N \times d_{model}}$ (di mana $N$ adalah panjang kalimat).
 
 ## 3.2 Kebutuhan dan Rumus dari Positional Encoding
-Transformer tidak memproses kata-kata secara berurutan seperti RNN, melainkan memproses semua kata secara serentak secara paralel. Ini merupakan keuntungan besar dari segi kecepatan komputasi, tetapi pada saat yang sama menimbulkan masalah **hilangnya informasi penting tentang "urutan kata"**. Misalnya, "Anjing menggigit orang" dan "Orang menggigit anjing" memiliki kumpulan kata input yang sama tetapi maknanya sama sekali berbeda.
+[Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) tidak memproses kata-kata secara berurutan seperti RNN, melainkan memproses semua kata secara serentak secara paralel. Ini merupakan keuntungan besar dari segi kecepatan komputasi, tetapi pada saat yang sama menimbulkan masalah **hilangnya informasi penting tentang "urutan kata"**. Misalnya, "Anjing menggigit orang" dan "Orang menggigit anjing" memiliki kumpulan kata input yang sama tetapi maknanya sama sekali berbeda.
 
 Untuk memberikan informasi urutan kata ini kepada model, **Positional Encoding** dirancang.
 Positional Encoding $PE$ untuk dimensi ke-$i$ dari kata yang berada di posisi $pos$ dihitung menggunakan fungsi trigonometri berikut.
@@ -217,7 +217,7 @@ Biasanya, dimensi untuk sementara diperluas sangat besar oleh bobot $W_1$ di lap
 
 # 7. Residual Connection dan Layer Normalization
 
-Dalam deep learning, saat kita membuat lapisan jaringan semakin dalam, seringkali muncul masalah di mana gradien menghilang (vanishing) atau meledak (exploding) selama pembelajaran, sehingga model tidak dapat belajar dengan baik. Untuk mencegah hal ini, **Residual Connection (Koneksi Residu)** dan **Layer Normalization (Normalisasi Lapisan)** ditempatkan di sekitar setiap sub-lapisan (Attention dan FFN) dari Transformer.
+Dalam deep learning, saat kita membuat lapisan jaringan semakin dalam, seringkali muncul masalah di mana gradien menghilang (vanishing) atau meledak (exploding) selama pembelajaran, sehingga model tidak dapat belajar dengan baik. Untuk mencegah hal ini, **Residual Connection (Koneksi Residu)** dan **Layer Normalization (Normalisasi Lapisan)** ditempatkan di sekitar setiap sub-lapisan (Attention dan FFN) dari [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/).
 
 Jika ditulis dalam rumus, output dari sub-lapisan diproses sebagai berikut.
 
@@ -274,7 +274,7 @@ Transformer adalah model yang luar biasa, tetapi ada juga "kelemahan" karena str
 Perhatikan kompleksitas perhitungan dari Self-Attention. Dalam penghitungan matriks skor $Q K^T$, sebuah matriks berukuran $(N \times d_k)$ dan matriks $(d_k \times N)$ dikalikan, sehingga kompleksitas perhitungannya adalah **$O(N^2 \cdot d_{model})$**.
 
 Artinya, **kompleksitas komputasi dan penggunaan memori meningkat secara kuadratik seiring dengan panjang urutan $N$**.
-Ini tidak masalah untuk kalimat pendek, tetapi jika Anda mencoba memasukkan konteks yang sangat panjang seperti keseluruhan buku ke dalam LLM, maka nilai $N$ bisa mencapai puluhan ribu hingga ratusan ribu, dan memori GPU akan segera habis dengan perhitungan Attention konvensional.
+Ini tidak masalah untuk kalimat pendek, tetapi jika Anda mencoba memasukkan konteks yang sangat panjang seperti keseluruhan buku ke dalam [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/), maka nilai $N$ bisa mencapai puluhan ribu hingga ratusan ribu, dan memori GPU akan segera habis dengan perhitungan Attention konvensional.
 
 Untuk memecahkan kutukan $O(N^2)$ ini, berbagai optimalisasi telah diusulkan dalam beberapa tahun terakhir dari pendekatan perangkat keras maupun matematis.
 Contoh perwakilannya adalah **FlashAttention**. FlashAttention adalah algoritma yang melakukan perhitungan Attention dengan membaginya menjadi bentuk ubin (Tiling) sedemikian rupa untuk meminimalkan transfer data (akses memori) antara hierarki memori GPU (SRAM dan HBM). Meskipun secara matematis mengeluarkan hasil yang persis sama dengan Attention standar (Exact Attention), optimalisasi tingkat perangkat keras ini menghasilkan peningkatan kecepatan dan pengurangan memori yang drastis, sehingga memungkinkan terwujudnya model konteks panjang seperti GPT-4.
@@ -322,7 +322,7 @@ Dapat dilihat bahwa rumus matematika $Q K^T / \sqrt{d_k}$ diimplementasikan seca
 
 # Penutup: Bentuk "Kecerdasan" yang Terlihat dari Rumus Matematika
 
-Dalam artikel ini, kita telah menguraikan struktur matematis di kedalaman model Transformer.
+Dalam artikel ini, kita telah menguraikan struktur matematis di kedalaman model [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/).
 
 Embedding yang memetakan kata ke dalam ruang vektor multidimensi, Positional Encoding yang mengekspresikan informasi posisi melalui sintesis gelombang trigonometri, dan mekanisme Self-Attention yang merupakan perhitungan perkalian titik matriks yang lahir dari analogi temu balik informasi. Masing-masing komponen ini hanyalah akumulasi dari matematika dasar seperti aljabar linier, kalkulus, dan probabilitas & statistik.
 
@@ -330,9 +330,9 @@ Namun, ketika operasi matriks sederhana ini ditumpuk menjadi banyak lapisan dan 
 
 Seperti judul provokatif "Attention Is All You Need", keindahan dari arsitektur yang membuang pemrosesan recurrent yang rumit maupun pemrosesan konvolusional dan berfokus murni pada perhitungan "Attention" (tingkat relevansi) ini, bisa dikatakan justru terletak pada kesederhanaan matematisnya.
 
-Di masa depan, mungkin akan muncul arsitektur baru yang melampaui Transformer (seperti Mamba yang merupakan [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Space Model), tetapi kerangka kerja matematis "pemahaman konteks oleh Attention" yang dibangun oleh Transformer pasti akan terukir selamanya dalam sejarah AI.
+Di masa depan, mungkin akan muncul arsitektur baru yang melampaui Transformer (seperti Mamba yang merupakan [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Space Model), tetapi kerangka kerja matematis "pemahaman konteks oleh Attention" yang dibangun oleh [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) pasti akan terukir selamanya dalam sejarah AI.
 
-Jika Anda memiliki kesempatan untuk menggunakan LLM seperti ChatGPT atau Claude di masa mendatang, cobalah bayangkan bahwa di latar belakangnya terdapat triliunan kali perkalian matriks $Q K^T$ yang dihitung setiap detiknya, dan fungsi Softmax yang memunculkan probabilitas-probabilitasnya. Pemahaman (resolusi) terhadap teknologi ini akan meningkat, dan dunia AI akan terasa jauh lebih menarik bagi Anda.
+Jika Anda memiliki kesempatan untuk menggunakan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) seperti ChatGPT atau Claude di masa mendatang, cobalah bayangkan bahwa di latar belakangnya terdapat triliunan kali perkalian matriks $Q K^T$ yang dihitung setiap detiknya, dan fungsi Softmax yang memunculkan probabilitas-probabilitasnya. Pemahaman (resolusi) terhadap teknologi ini akan meningkat, dan dunia AI akan terasa jauh lebih menarik bagi Anda.
 
 ### Referensi
 - Vaswani, A., et al. (2017). "Attention Is All You Need." *Advances in Neural Information Processing Systems*.

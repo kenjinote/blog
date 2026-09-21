@@ -12,7 +12,7 @@ description: 'WordPressのような動的CMSから、Go言語ベースの超高�
 
 現代のウェブ開発やブログ運営において、サイトの表示速度とセキュリティ、そして保守性は極めて重要な要素となっています。長らくブログやコーポレートサイトの基盤として圧倒的なシェアを誇ってきた「WordPress」は、柔軟なプラグインエコシステムと直感的な管理画面により多くのユーザーに愛用されています。しかし、データベースとの通信やサーバーサイドでの動的なページ生成（PHPによる処理）を伴うため、トラフィックの急増に対する[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)や、表示遅延（レイテンシ）といった課題も抱えています。
 
-そこで近年、急速に普及しているのが「静的サイトジェネレーター（SSG: Static Site Generator）」です。本記事では、数あるSSGの中でもGo言語ベースで開発され、その圧倒的なビルド速度で知られる「 **Hugo** 」について深く掘り下げます。WordPressなどの動的CMS（Content Management System）との技術的アーキテクチャの比較から、具体的な移行手順、数理モデルを用いたパフォーマンス評価、そしてHugo固有のディレクトリ構造やテンプレートのルックアップ順序まで、徹底的に解説します。
+そこで近年、急速に普及しているのが「静的サイトジェネレーター（SSG: Static Site Generator）」です。本記事では、数あるSSGの中でも[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語ベースで開発され、その圧倒的なビルド速度で知られる「 **Hugo** 」について深く掘り下げます。WordPressなどの動的CMS（Content Management System）との技術的アーキテクチャの比較から、具体的な移行手順、数理モデルを用いたパフォーマンス評価、そしてHugo固有のディレクトリ構造やテンプレートのルックアップ順序まで、徹底的に解説します。
 
 ---
 
@@ -189,7 +189,7 @@ WordPressのデータをHugo用に出力するためには、専用のプラグ�
 2. **WordPress APIを利用した自作スクリプト**
    PythonやNode.js等でWordPressの[REST API](https://kenji.blog/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) (`/wp-json/wp/v2/posts`) を叩き、JSONデータを解析して自前でMarkdownファイルを生成するスクリプトを作成する方法です。プラグインでは対応しきれない複雑なカスタムフィールド（ACF等）を多用しているサイトで有効です。
 3. **wp2hugo ツールの活用**
-   Go言語などで書かれたCLIツールを利用して、WordPressのエクスポートXMLファイル（WXR）から直接Hugo形式へ変換するアプローチもあります。
+   [Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語などで書かれたCLIツールを利用して、WordPressのエクスポートXMLファイル（WXR）から直接Hugo形式へ変換するアプローチもあります。
 
 ### 4.2 パーマリンク（URL）構造の維持
 
@@ -212,7 +212,7 @@ WordPress固有のショートコード（例：`[gallery]`, `[caption]`, 各種
 
 ## 5. HugoのCLIツールとビルド・デプロイ
 
-移行作業が完了したら、いよいよHugoを用いてサイトをビルドし、世界へ向けて公開します。Go言語のバイナリとして提供されるHugoは、数千から数万ページのサイトであってもわずか数秒でビルドを完了する驚異的な速度を誇ります。
+移行作業が完了したら、いよいよHugoを用いてサイトをビルドし、世界へ向けて公開します。[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語のバイナリとして提供されるHugoは、数千から数万ページのサイトであってもわずか数秒でビルドを完了する驚異的な速度を誇ります。
 
 ### 5.1 ローカル開発用サーバーの起動
 
@@ -315,7 +315,7 @@ Hugoの場合、ツール自体のアップデートは必要に応じて行う�
 
 ## 7. まとめ
 
-本記事では、WordPressのような動的CMSから、Go言語ベースの強力な静的サイトジェネレーター「Hugo」への移行について、技術的なアーキテクチャの差異から数理的モデルによるパフォーマンスの証明、そして具体的な移行手順までを詳細に解説しました。
+本記事では、WordPressのような動的CMSから、[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語ベースの強力な静的サイトジェネレーター「Hugo」への移行について、技術的なアーキテクチャの差異から数理的モデルによるパフォーマンスの証明、そして具体的な移行手順までを詳細に解説しました。
 
 静的サイトジェネレーターへの移行は、初期の学習コスト（Gitの操作、Markdownの記法、ターミナルからのCLIコマンドの実行、テンプレートエンジンの仕様理解など）こそ必要ですが、それを補って余りあるほどの「圧倒的な表示速度」「強固なセキュリティ」、そして「メンテナンスフリー」というリターンをもたらします。
 

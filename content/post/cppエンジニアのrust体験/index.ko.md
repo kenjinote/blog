@@ -13,7 +13,7 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 현대 소프트웨어 엔지니어링에서 C++와 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 시스템 프로그래밍의 최전선에 서 있는 양대 산맥입니다. 오랫동안 C++는 운영 체제, 임베디드 장치, 게임 엔진, 고빈도 거래(HFT) 시스템 등 하드웨어의 극한 성능을 끌어내는 영역에서 절대적인 왕으로 군림해 왔습니다. 저 자신도 시니어 C++ 엔지니어로서 C++98 시절의 원시 포인터(raw pointer) 정글에서 시작해, C++11에 의한 현대화의 물결(스마트 포인터, 람다 표현식, `auto` 도입), 그리고 C++14/17/20으로 이어지는 사양의 거대화와 나란히 달리며 코드를 계속 작성해 왔습니다.
 
-그러나 최근 C++가 안고 있는 구조적인 과제, 특히 "메모리 안전성 결여"로 인한 보안 취약점(CVE의 약 70%가 메모리 기인이라고 알려져 있습니다)과 "끝없이 복잡해지는 사양 및 미정의 동작(UB)"에 대한 해결책으로 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)가 극적으로 대두되고 있습니다. Linux 커널에 공식 채택되거나 Microsoft, Google, AWS 등 거대 기술 기업의 대규모 Rust 전환 프로젝트는 단순한 일시적 유행이 아니라 시스템 프로그래밍의 패러다임 전환을 의미합니다.
+그러나 최근 C++가 안고 있는 구조적인 과제, 특히 "메모리 안전성 결여"로 인한 보안 취약점(CVE의 약 70%가 메모리 기인이라고 알려져 있습니다)과 "끝없이 복잡해지는 사양 및 미정의 동작(UB)"에 대한 해결책으로 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)가 극적으로 대두되고 있습니다. Linux 커널에 공식 채택되거나 Microsoft, Google, AWS 등 거대 기술 기업의 대규모 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 전환 프로젝트는 단순한 일시적 유행이 아니라 시스템 프로그래밍의 패러다임 전환을 의미합니다.
 
 본 문서에서는 오리지널 C++ 엔지니어가 실제로 Rust를 깊이 배우고 실전에서 사용하며 느낀 '장점'과 '단점'을 언어 사양의 근간과 관련된 기술적 관점에서 철저하게 비교하고 해설합니다.
 
@@ -59,7 +59,7 @@ C++에서는 `std::move`에 의해 내용이 비워진(유효하지만 지정되
 
 ## [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 소유권(Ownership)과 빌림 검사기의 절대적 방어
 
-Rust는 이 '소유권'이라는 개념을 언어의 핵심 설계에 통합하고, **빌림 검사기([Borrow Checker](https://kenji.blog/ko/p/memory-management-garbage-collection/))** 라고 불리는 컴파일러 기능을 통해 엄격한 정적 분석을 수행합니다.
+[Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)는 이 '소유권'이라는 개념을 언어의 핵심 설계에 통합하고, **빌림 검사기([Borrow Checker](https://kenji.blog/ko/p/memory-management-garbage-collection/))** 라고 불리는 컴파일러 기능을 통해 엄격한 정적 분석을 수행합니다.
 
 ```rust
 fn consume(s: String) {
@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에서는 변수의 소유권이 이동한 시점에 원본 변수는 컴파일러에 의해 '초기화되지 않은' 상태와 동등하게 취급되어, 이후의 접근을 완전히 차단합니다. 이로 인해 'Use-After-Free(해제 후 메모리 사용)'나 'Dangling Pointer(댕글링 포인터)'와 같은 버그는 이론상 컴파일을 통과할 수 없습니다.
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에서는 변수의 소유권이 이동한 시점에 원본 변수는 컴파일러에 의해 '초기화되지 않은' 상태와 동등하게 취급되어, 이후의 접근을 완전히 차단합니다. 이로 인해 'Use-After-Free(해제 후 메모리 사용)'나 'Dangling [Pointer](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/)(댕글링 포인터)'와 같은 버그는 이론상 컴파일을 통과할 수 없습니다.
 
 ```mermaid
 graph TD
@@ -158,7 +158,7 @@ int main() {
 
 ## [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 Mutex는 데이터를 "소유"한다
 
-Rust에서 `Mutex<T>`는 제네릭스를 사용하여 보호 대상인 데이터 타입 `T`를 **내포(소유)** 합니다. 데이터에 접근하기 위해서는 반드시 `lock()`을 호출하여 가드 객체를 얻어야 합니다. 잠금을 획득하지 않고 데이터에 접근하는 것은 문법적으로 불가능합니다.
+[Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)에서 `Mutex<T>`는 제네릭스를 사용하여 보호 대상인 데이터 타입 `T`를 **내포(소유)** 합니다. 데이터에 접근하기 위해서는 반드시 `lock()`을 호출하여 가드 객체를 얻어야 합니다. 잠금을 획득하지 않고 데이터에 접근하는 것은 문법적으로 불가능합니다.
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -266,7 +266,7 @@ fn draw_dynamic(item: &dyn Drawable) {
 }
 ```
 
-[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 동적 디스패치(`dyn Trait`)의 가장 큰 특징은 데이터 구조 내에 vptr을 가지지 않고, **팻 포인터(Fat Pointer)** 를 사용한다는 점입니다. 팻 포인터는 "데이터를 가리키는 포인터"와 "vtable을 가리키는 포인터"를 쌍으로 유지합니다. 이를 통해 외부 라이브러리에 정의된 타입에 대해 나중에 트레이트를 구현(확장)하여 동적 디스패치를 적용하는 것이 매우 쉬워집니다.
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 동적 디스패치(`dyn Trait`)의 가장 큰 특징은 데이터 구조 내에 vptr을 가지지 않고, **팻 포인터(Fat [Pointer](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/))** 를 사용한다는 점입니다. 팻 포인터는 "데이터를 가리키는 포인터"와 "vtable을 가리키는 포인터"를 쌍으로 유지합니다. 이를 통해 외부 라이브러리에 정의된 타입에 대해 나중에 트레이트를 구현(확장)하여 동적 디스패치를 적용하는 것이 매우 쉬워집니다.
 
 ---
 
@@ -295,7 +295,7 @@ graph TD
 
 # 7. [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)를 배우는 데 있어서의 단점과 학습 곡선
 
-지금까지 Rust의 장점을 이야기했지만, C++ 엔지니어가 Rust를 실전에 투입할 때 직면하는 '벽'이나 단점도 분명히 존재합니다.
+지금까지 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)의 장점을 이야기했지만, C++ 엔지니어가 Rust를 실전에 투입할 때 직면하는 '벽'이나 단점도 분명히 존재합니다.
 
 ## 1. 가혹한 빌림 검사기와의 격투
 C++에서 "대충 원시 포인터로 연결해두었던" 데이터 구조(예: 이중 연결 리스트나 그래프 구조, 자기 참조 구조체 등)를 Rust에서 그대로 구현하려고 하면, 소유권과 수명 제약으로 인해 컴파일이 통과되지 않습니다. 빌림 검사기를 만족시키기 위해서는 `Rc<RefCell<T>>`와 같은 복잡한 래퍼를 사용하거나 아레나 할당기(Arena Allocator), 인덱스 기반 관리로 설계를 근본적으로 재검토해야 합니다.
@@ -312,7 +312,7 @@ C 언어(FFI)와의 연동은 매우 매끄럽지만, 기존의 거대한 C++ �
 
 C++는 앞으로도 게임 엔진 개발이나 기존의 거대한 인프라스트럭처에서 중요한 역할을 계속 담당할 것입니다. C++20/23에 의한 현대화도 눈부시며 더욱 안전하게 작성할 수 있게 되었습니다.
 
-그러나 "새로 시작하는 시스템 프로그래밍 프로젝트"에 있어서 저는 이제 **Rust를 선택하지 않을 이유를 찾는 것이 더 어렵다** 고 느낍니다. 컴파일만 통과하면 미정의 동작과 메모리 파괴의 공포에서 해방되고 높은 성능으로 안전하게 병렬 처리를 수행할 수 있다는 Rust의 "확실성"은 엔지니어의 멘탈 모델을 극적으로 개선합니다.
+그러나 "새로 시작하는 시스템 프로그래밍 프로젝트"에 있어서 저는 이제 **[Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)를 선택하지 않을 이유를 찾는 것이 더 어렵다** 고 느낍니다. 컴파일만 통과하면 미정의 동작과 메모리 파괴의 공포에서 해방되고 높은 성능으로 안전하게 병렬 처리를 수행할 수 있다는 Rust의 "확실성"은 엔지니어의 멘탈 모델을 극적으로 개선합니다.
 
 C++ 엔지니어에게 Rust의 학습은 단순히 새로운 문법을 외우는 것이 아니라, "메모리와 스레드의 안전한 관리 방법"에 대한 새로운 시각을 얻는 최고의 경험입니다. 여러분도 꼭 Cargo의 쾌적함과 빌림 검사기의 엄격함을 체험해 보시기 바랍니다.
 

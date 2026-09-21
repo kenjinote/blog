@@ -153,7 +153,7 @@ int Calculator::Add(int a, int b) {
 GoogleTestを使用する際、アサーションマクロとして `EXPECT_*` と `ASSERT_*` の2種類が存在します。これらの違いを理解することは、堅牢なテストを書く上で非常に重要です。
 
 - **`EXPECT_EQ(expected, actual)`**: テストが失敗しても、現在のテスト関数の実行を ** 継続**します。1つのテスト内で複数の状態を検証したい場合に適しています。
-- **`ASSERT_EQ(expected, actual)`**: テストが失敗した場合、その場で現在のテスト関数の実行を ** 中断（致命的失敗）**します。これ以降の検証が意味を持たない場合（例：ポインタが `nullptr` でないことを確認した直後にデリファレンスする場合）に使用します。
+- **`ASSERT_EQ(expected, actual)`**: テストが失敗した場合、その場で現在のテスト関数の実行を ** 中断（致命的失敗）**します。これ以降の検証が意味を持たない場合（例：[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)が `nullptr` でないことを確認した直後にデリファレンスする場合）に使用します。
 
 ## 5. 依存性の注入（DI）とGoogleMockによるモック化
 
@@ -316,7 +316,7 @@ C++プロジェクトでTDDを導入する際には、特有の課題が存在�
 
 ### 7.1 ビルド時間（コンパイル時間）の増加
 C++はテンプレートの多用や大規模なヘッダのインクルードにより、コンパイル時間が長くなりがちです。TDDの「Red-Green-Refactor」サイクルは迅速に行われる必要があるため、ビルド時間の遅延は致命的です。
-**対策**: 前方宣言（Forward Declaration）やPimpl（Pointer to implementation）イディオムを活用し、ヘッダファイルの依存関係を最小限に抑えましょう。また、Ccacheなどのビルドキャッシュツールの導入も効果的です。
+**対策**: 前方宣言（Forward Declaration）やPimpl（[Pointer](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/) to implementation）イディオムを活用し、ヘッダファイルの依存関係を最小限に抑えましょう。また、Ccacheなどのビルドキャッシュツールの導入も効果的です。
 
 ### 7.2 レガシーコードへのTDD導入
 既存の巨大なモノリシックコードに後からTDDを適用するのは困難を極めます。

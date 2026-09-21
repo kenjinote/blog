@@ -64,7 +64,7 @@ Afin d'indiquer explicitement aux moteurs de recherche que la page est un « art
 
 ### 1.3 HTML sémantique et optimisation de la structure du document
 
-L'imbrication correcte des balises d'en-tête (`h1` à `h6`) est fondamentale, mais un blog technique exige également l'utilisation précise des balises sémantiques HTML5 telles que `article`, `section`, `aside` et `nav`. De plus, l'utilisation appropriée des balises `<code>` et `<pre>` pour le code source, `<kbd>` pour les entrées clavier, et `<var>` pour les variables permet de fournir un HTML lisible par les machines. Il s'agit également d'une méthode très efficace pour l'indexation de contenu par l'IA (collecte de données d'apprentissage pour les LLM et systèmes RAG).
+L'imbrication correcte des balises d'en-tête (`h1` à `h6`) est fondamentale, mais un blog technique exige également l'utilisation précise des balises sémantiques HTML5 telles que `article`, `section`, `aside` et `nav`. De plus, l'utilisation appropriée des balises `<code>` et `<pre>` pour le code source, `<kbd>` pour les entrées clavier, et `<var>` pour les variables permet de fournir un HTML lisible par les machines. Il s'agit également d'une méthode très efficace pour l'indexation de contenu par l'IA (collecte de données d'apprentissage pour les [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) et systèmes RAG).
 
 ---
 

@@ -11,7 +11,7 @@ tags: ["RAG", "Vector DB", "Embeddings", "Python", "Local AI"]
 
 # 들어가며
 
-최근 대규모 언어 모델(LLM)의 진화는 눈부시며, ChatGPT와 Claude 등을 필두로 많은 AI가 우리의 생활과 업무에 스며들고 있습니다. 하지만 일반적인 LLM에는 명확한 약점이 존재합니다. 바로 '학습 시점의 공개 정보'밖에 모른다는 점입니다. 사내 규정, 개인적인 메모, 미공개 프로젝트 자료와 같은 '비공개 문서'와 관련된 질문에는 당연히 대답할 수 없습니다. 무리하게 대답을 유도하면 사실과 다른 그럴듯한 거짓말(환각, Hallucination)을 생성할 위험이 커집니다.
+최근 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 진화는 눈부시며, ChatGPT와 Claude 등을 필두로 많은 AI가 우리의 생활과 업무에 스며들고 있습니다. 하지만 일반적인 LLM에는 명확한 약점이 존재합니다. 바로 '학습 시점의 공개 정보'밖에 모른다는 점입니다. 사내 규정, 개인적인 메모, 미공개 프로젝트 자료와 같은 '비공개 문서'와 관련된 질문에는 당연히 대답할 수 없습니다. 무리하게 대답을 유도하면 사실과 다른 그럴듯한 거짓말(환각, Hallucination)을 생성할 위험이 커집니다.
 
 그래서 현재 전 세계적으로 폭발적으로 보급되고 있는 것이 **RAG(Retrieval-Augmented Generation: 검색 증강 생성)** 라는 기술 아키텍처입니다. RAG를 사용하면 LLM에 독자적인 지식을 외부 데이터베이스로부터 동적으로 제공하고, 이를 바탕으로 정확하고 근거 있는 답변을 생성하게 할 수 있습니다.
 
@@ -54,7 +54,7 @@ graph TD
 
 ## 수집 페이즈 (사전 준비)
 1. **문서 로드**: PDF, Word, 텍스트 파일 등의 비정형 데이터를 읽어 들입니다.
-2. **청킹 (텍스트 분할)**: LLM의 입력 제한(컨텍스트 윈도우) 내에 맞추고 검색 정확도를 높이기 위해, 긴 문장을 의미 있는 덩어리(청크)로 분할합니다.
+2. **청킹 (텍스트 분할)**: [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 입력 제한(컨텍스트 윈도우) 내에 맞추고 검색 정확도를 높이기 위해, 긴 문장을 의미 있는 덩어리(청크)로 분할합니다.
 3. **임베딩 (벡터화)**: 분할된 청크를 임베딩 모델(Embedding Model)에 입력하여 수백~수천 차원의 수치 배열(벡터)로 변환합니다.
 4. **데이터베이스에 저장**: 변환된 벡터와 원본 텍스트 데이터를 연결하여 벡터 데이터베이스(Vector DB)에 저장합니다.
 
@@ -101,11 +101,11 @@ $$ \text{Cosine Similarity}(\mathbf{A}, \mathbf{B}) = \cos(\theta) = \frac{\math
 
 클라우드에 의존하지 않는 완전한 로컬 RAG를 구축하려면 오픈소스 생태계를 활용합니다. 아래에 권장되는 기술 스택을 소개합니다.
 
-1. **언어 모델 (LLM)**
+1. **언어 모델 ([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))**
    - 도구: `Ollama` 또는 `Llama.cpp`
    - 모델: `Llama-3-8B-Instruct`, `Gemma-2-9B-It`, `Qwen2-7B-Instruct` 등의 경량·고성능 오픈 모델. 일본어 태스크에는 일본어 튜닝이 된 `Llama-3-ELYZA-JP-8B` 등이 적합합니다.
 2. **임베딩 모델 (Embedding)**
-   - 모델: `intfloat/multilingual-e5-large` 또는 `BAAI/bge-m3`. 로컬에서 구동할 경우, Hugging Face에서 다운로드하여 Sentence-Transformers로 실행하는 것이 일반적입니다.
+   - 모델: `intfloat/multilingual-e5-large` 또는 `BAAI/bge-m3`. 로컬에서 구동할 경우, Hugging Face에서 다운로드하여 Sentence-[Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)s로 실행하는 것이 일반적입니다.
 3. **벡터 데이터베이스 (Vector DB)**
    - `ChromaDB`: Python 기반으로 설정이 매우 간단함. 로컬 개발에 최적.
    - `FAISS`: Meta가 개발한 고속 벡터 검색 라이브러리.
@@ -131,7 +131,7 @@ pip install chromadb sentence-transformers pypdf
 
 ## Step 2: 구현 코드 전체 모습
 
-다음은 PDF 파일을 읽어 벡터화하고 로컬 LLM이 질문에 답하게 하는 완전한 Python 스크립트입니다.
+다음은 PDF 파일을 읽어 벡터화하고 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)이 질문에 답하게 하는 완전한 Python 스크립트입니다.
 
 ```python
 import os
@@ -252,7 +252,7 @@ if __name__ == "__main__":
 벡터 검색은 고속이지만, 반드시 컨텍스트의 정확한 문맥 적합성을 평가하고 있는 것은 아닙니다. 검색 정확도를 향상시키기 위한 일반적인 파이프라인은 다음과 같습니다.
 1. **초기 검색 (First-stage Retrieval)**: 벡터 DB에서 넓고 얕게 관련 청크를 20~30건 정도 가져옵니다.
 2. **재평가 (Re-ranking)**: Cross-Encoder라고 불리는 다른 더 무거운 머신러닝 모델(예: `bge-reranker` 등)을 사용하여, 사용자의 쿼리와 가져온 청크의 쌍을 입력해 의미적 적합도 점수를 다시 계산합니다.
-3. **선별**: 점수가 높은 상위 3~5건만을 최종적인 컨텍스트로서 LLM의 프롬프트에 전달합니다.
+3. **선별**: 점수가 높은 상위 3~5건만을 최종적인 컨텍스트로서 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 프롬프트에 전달합니다.
 
 이 기법을 통해 무관한 노이즈 정보가 LLM에 전달되는 것을 방지하고 답변의 정확도(Precision)를 대폭 높일 수 있습니다.
 
@@ -267,7 +267,7 @@ graph LR
 
 ## 5.3 시맨틱 청킹과 부모 문서 검색
 고정된 글자 수로 기계적으로 텍스트를 분할하는 것이 아니라, 문장의 의미 변화를 AI로 감지하여 분할하는 'Semantic Chunking(시맨틱 청킹)'이라는 기법이 있습니다.
-또한, 'Parent 단락 검색(Parent Document Retriever)'이라는 기법에서는 검색용으로 매우 작은 단위(문장 등)로 벡터화를 수행하여 정확도 높은 검색을 실현하면서도, LLM에 전달할 때는 그 문장이 포함된 '원래의 큰 단락(부모 문서)'을 전달함으로써 LLM에 충분한 문맥(컨텍스트)을 제공합니다.
+또한, 'Parent 단락 검색(Parent Document Retriever)'이라는 기법에서는 검색용으로 매우 작은 단위(문장 등)로 벡터화를 수행하여 정확도 높은 검색을 실현하면서도, [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)에 전달할 때는 그 문장이 포함된 '원래의 큰 단락(부모 문서)'을 전달함으로써 LLM에 충분한 문맥(컨텍스트)을 제공합니다.
 
 ---
 

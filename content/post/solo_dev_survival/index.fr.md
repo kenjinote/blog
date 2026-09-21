@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # Introduction : La bataille de "ceux qui n'ont rien" défiant les géants
 
-Dans l'histoire du développement logiciel, il n'y a jamais eu d'époque aussi favorable aux développeurs solos (développeurs indépendants). La démocratisation des infrastructures cloud comme AWS et GCP, l'essor des BaaS (Backend as a [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/)) tels que Vercel et Supabase, et surtout, l'automatisation du codage grâce à l'évolution des LLM (Grands Modèles de Langage). Tout cela a créé un terrain où un individu peut rivaliser de front avec les "géants" que sont les grandes entreprises technologiques.
+Dans l'histoire du développement logiciel, il n'y a jamais eu d'époque aussi favorable aux développeurs solos (développeurs indépendants). La démocratisation des infrastructures cloud comme AWS et GCP, l'essor des BaaS (Backend as a [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/)) tels que Vercel et Supabase, et surtout, l'automatisation du codage grâce à l'évolution des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) (Grands Modèles de Langage). Tout cela a créé un terrain où un individu peut rivaliser de front avec les "géants" que sont les grandes entreprises technologiques.
 
 Cependant, le fait que les ressources technologiques se soient aplanies ne signifie pas que vous pouvez gagner en adoptant la même stratégie que les grandes entreprises. En termes de capital, de puissance marketing et de force de marque, l'individu est massivement désavantagé. Pour qu'un développeur solo survive et gagne, une "stratégie de survie" unique est indispensable.
 
@@ -248,7 +248,7 @@ De cette manière, en s'appuyant sur l'écosystème PostgreSQL standard, même s
 
 # 7. SEO programmatique et contenu généré par l'IA
 
-L'arme la plus puissante pour les développeurs solos sans budget marketing est le "SEO (optimisation pour les moteurs de recherche)". Récemment, le "SEO programmatique", qui combine sa propre base de données avec des LLM pour générer dynamiquement des milliers à des dizaines de milliers de pages de destination, a attiré l'attention.
+L'arme la plus puissante pour les développeurs solos sans budget marketing est le "SEO (optimisation pour les moteurs de recherche)". Récemment, le "SEO programmatique", qui combine sa propre base de données avec des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) pour générer dynamiquement des milliers à des dizaines de milliers de pages de destination, a attiré l'attention.
 
 La distribution du trafic suit également une loi de puissance. Plutôt que de cibler des mots-clés spécifiques de gros volume, en couvrant un grand nombre de "mots-clés de longue traîne" qui ont un faible volume de recherche mais un taux de conversion élevé, on augmente le trafic global.
 

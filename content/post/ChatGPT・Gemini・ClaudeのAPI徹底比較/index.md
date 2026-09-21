@@ -11,7 +11,7 @@ tags: ["ChatGPT", "Gemini", "Claude", "API", "Comparison"]
 
 # [ChatGPT・Gemini・ClaudeのAPI徹底比較！どれを選ぶべき？](https://kenji.blog/p/chatgpt-gemini-claude-api-comparison/)
 
-AI技術の進化は目覚ましく、特に大規模言語モデル（LLM: Large Language Model）の分野では、OpenAIのChatGPT（GPTシリーズ）、GoogleのGemini、AnthropicのClaudeが三つ巴の激しい覇権争いを繰り広げています。2026年現在、各社は数ヶ月、いや数週間単位で新しいモデルやAPI機能をリリースしており、開発者や企業のITアーキテクトにとって「どのAPIをプロダクトに組み込むべきか」という問いは、プロジェクトの成功を左右する極めて重要な意思決定となっています。
+AI技術の進化は目覚ましく、特に[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/): Large Language Model）の分野では、OpenAIのChatGPT（GPTシリーズ）、GoogleのGemini、AnthropicのClaudeが三つ巴の激しい覇権争いを繰り広げています。2026年現在、各社は数ヶ月、いや数週間単位で新しいモデルやAPI機能をリリースしており、開発者や企業のITアーキテクトにとって「どのAPIをプロダクトに組み込むべきか」という問いは、プロジェクトの成功を左右する極めて重要な意思決定となっています。
 
 本記事では、これら3大AIプロバイダーのAPIについて、単なるスペックの羅列にとどまらず、アーキテクチャ設計、詳細な料金構造、レイテンシ（遅延）の数学的分析、PythonおよびNode.jsによる具体的な実装例、プロンプトキャッシュなどの最新のコスト最適化手法に至るまで、開発者の視点から徹底的に比較・解説します。
 
@@ -79,7 +79,7 @@ APIに入力されたテキストは、内部で「トークン」という単�
 
 ## 4. レイテンシとパフォーマンスの数学的分析
 
-リアルタイムアプリケーションにおいて、レイテンシはユーザー体験（UX）に直結します。LLMのAPIのレイテンシ $T_{total}$ は、数学的に以下のようにモデル化できます。
+リアルタイムアプリケーションにおいて、レイテンシはユーザー体験（UX）に直結します。[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)のAPIのレイテンシ $T_{total}$ は、数学的に以下のようにモデル化できます。
 
 $$ T_{total} = T_{network} + T_{TTFT} + (N \times T_{TPOT}) $$
 
@@ -90,7 +90,7 @@ $$ T_{total} = T_{network} + T_{TTFT} + (N \times T_{TPOT}) $$
 - $T_{TPOT}$ (Time Per Output Token): 1トークンあたりの生成時間。自己回帰モデルであるため、前の出力に依存して直列に計算されます。
 
 ### 4.1 自己アテンション機構の計算量
-Transformerアーキテクチャにおける自己アテンション（Self-Attention）の計算量は、入力シーケンス長 $L$ に対して二次関数的に増加します。
+[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)アーキテクチャにおける自己アテンション（Self-Attention）の計算量は、入力シーケンス長 $L$ に対して二次関数的に増加します。
 
 $$ \text{Complexity} = O(L^2 \cdot d) $$
 
@@ -210,7 +210,7 @@ if __name__ == "__main__":
 
 ## 8. Node.jsによるTool Calling（Function Calling）実装
 
-LLMを単なるチャットボットではなく、外部システムと連携する「AIエージェント」として機能させるためには、Tool Calling（またはFunction Calling）が不可欠です。以下はNode.js（TypeScript）を使用して、OpenAIのAPIに天気APIを呼び出させる例です。
+[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)を単なるチャットボットではなく、外部システムと連携する「AIエージェント」として機能させるためには、Tool Calling（またはFunction Calling）が不可欠です。以下はNode.js（TypeScript）を使用して、OpenAIのAPIに天気APIを呼び出させる例です。
 
 ```typescript
 import OpenAI from "openai";
@@ -312,7 +312,7 @@ sequenceDiagram
 
 ## 11. エンタープライズレベルのセキュリティとコンプライアンス
 
-企業がLLM APIを本番環境で利用する際、最も懸念されるのが「自社のデータがAIの学習に使われないか」「コンプライアンス要件を満たしているか」という点です。
+企業が[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/) APIを本番環境で利用する際、最も懸念されるのが「自社のデータがAIの学習に使われないか」「コンプライアンス要件を満たしているか」という点です。
 
 3社とも、API経由で送信されたデータ（プロンプトおよびレスポンス）を **モデルの学習に使用しない（Zero Data Retention / No Training on Customer Data）** ことを明言しています（※無料のコンシューマ向けWebチャットUIは別です）。
 
@@ -340,7 +340,7 @@ sequenceDiagram
    あらゆるタスクをそつなくこなし、サードパーティのツール対応も最も豊富です。Structured Outputsを利用した確実なJSONパースや、o1モデルを用いた超高度な論理推論が必要な場合はOpenAIエコシステムが不可欠です。
 
 ### マルチモデル・ルーティングのすすめ
-単一のAPIに依存（ベンダー[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)イン）するのではなく、タスクの難易度や重要度に応じてモデルを動的に切り替える **「LLMルーティング」** アーキテクチャが今後のトレンドです。
+単一のAPIに依存（ベンダー[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)イン）するのではなく、タスクの難易度や重要度に応じてモデルを動的に切り替える **「[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)ルーティング」** アーキテクチャが今後のトレンドです。
 例えば、ユーザーからの単純な質問には安価で高速な `GPT-4o-mini` や `Gemini 1.5 Flash` で応答し、複雑な処理が必要と判断された場合のみ `Claude 3.5 Sonnet` にタスクをフォールバックさせることで、コストとパフォーマンスの最適なバランスを実現できます。
 
 AIの進化は止まりません。各APIの強みと弱み、そしてアーキテクチャの特性を深く理解し、柔軟でスケーラブルなAIアプリケーションを構築してください。

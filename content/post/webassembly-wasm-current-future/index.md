@@ -18,7 +18,7 @@ tags:
 
 Webブラウザは長らく、JavaScriptという単一の言語によって支配されてきました。しかし、ウェブアプリケーションが複雑化し、ネイティブアプリに匹敵するパフォーマンスが求められるようになるにつれ、JavaScript単体での限界も見えてきました。そこで登場したのが **WebAssembly (Wasm)** です。
 
-WebAssemblyは、ブラウザ上でネイティブコードに近い速度で実行できる新しいバイナリフォーマットです。C、C++、Rustなどのプログラミング言語からコンパイルして生成され、現在ではWeb開発だけでなく、サーバーサイドやエッジコンピューティング、さらにはIoTデバイスに至るまで、幅広い領域で革新をもたらしています。
+WebAssemblyは、ブラウザ上でネイティブコードに近い速度で実行できる新しいバイナリフォーマットです。C、C++、[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)などの[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)からコンパイルして生成され、現在ではWeb開発だけでなく、サーバーサイドやエッジコンピューティング、さらにはIoTデバイスに至るまで、幅広い領域で革新をもたらしています。
 
 本記事では、WebAssemblyの基本概念から、ブラウザ内でCやRustがどのように動くのかという技術的な仕組み、JavaScriptとの連携、パフォーマンスの比較、そしてブラウザ外の世界での応用（WASI）まで、WebAssemblyの現在と未来について徹底的に解説します。
 
@@ -52,7 +52,7 @@ WebAssemblyは以下の設計目標を掲げています。
 
 ## 2.1 コンパイル[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)
 
-CやRustのような言語は、通常、OSやCPUアーキテクチャに依存したマシン語にコンパイルされます。しかしWebAssemblyの場合、ターゲットアーキテクチャとして「wasm32」などのWasm用アーキテクチャを指定します。
+Cや[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)のような言語は、通常、OSやCPUアーキテクチャに依存したマシン語にコンパイルされます。しかしWebAssemblyの場合、ターゲットアーキテクチャとして「wasm32」などのWasm用アーキテクチャを指定します。
 
 多くの場合、LLVMというコンパイラ基盤が利用されます。
 
@@ -67,7 +67,7 @@ flowchart TD
 
 このように、開発者が書いたコードは中間表現（IR）を経て最適化され、最終的に `.wasm` という拡張子を持つコンパクトなバイナリファイルになります。
 
-## 2.2 バイトコードとスタックマシン
+## 2.2 バイトコードと[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)マシン
 
 WebAssemblyは **スタックマシン** アーキテクチャを採用しています。レジスタを持たず、計算はすべてスタック（LIFO形式のデータ構造）に対して行われます。
 
@@ -83,17 +83,17 @@ WebAssemblyは **スタックマシン** アーキテクチャを採用してい
 )
 ```
 
-1.  `local.get $a` で変数aの値をスタックに積む。
-2.  `local.get $b` で変数bの値をスタックに積む。
-3.  `i32.add` でスタックから2つの値を取り出して足し、結果をスタックに積む。
+1.  `local.get $a` で変数aの値を[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)に積む。
+2.  `local.get $b` で変数bの値を[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)に積む。
+3.  `i32.add` で[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)から2つの値を取り出して足し、結果をスタックに積む。
 
 このシンプルな構造により、デコード処理や検証処理が高速になり、ブラウザでのJITコンパイルが非常に短時間で行えます。
 
 ## 2.3 メモリモデル（リニアメモリ）
 
-CやRustではポインタを使ったメモリ操作が頻繁に行われます。WebAssemblyはこれを実現するために **リニアメモリ (Linear Memory)** という概念を採用しています。
+Cや[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)では[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を使ったメモリ操作が頻繁に行われます。WebAssemblyはこれを実現するために **リニアメモリ (Linear Memory)** という概念を採用しています。
 
-リニアメモリは、WebAssemblyインスタンスからアクセスできる連続したバイト配列です。JavaScriptからは `ArrayBuffer` または `SharedArrayBuffer` として見えます。Wasm内のポインタは、単なるこの配列のインデックス（整数値）に過ぎません。
+リニアメモリは、WebAssemblyインスタンスからアクセスできる連続したバイト配列です。JavaScriptからは `ArrayBuffer` または `SharedArrayBuffer` として見えます。Wasm内の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)は、単なるこの配列のインデックス（整数値）に過ぎません。
 
 ```mermaid
 flowchart LR
@@ -133,7 +133,7 @@ fetch('module.wasm')
 ## 3.2 Web APIへのアクセスとバインディング
 
 Wasm自体はDOMやWeb APIに直接アクセスする機能を持ちません。アクセスするにはJavaScriptを経由する必要があります。
-しかし、これらを手動で記述するのは非常に手間がかかります。そこで、Rustのエコシステムでは **wasm-bindgen** といったツールが用意されています。
+しかし、これらを手動で記述するのは非常に手間がかかります。そこで、[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)のエコシステムでは **wasm-bindgen** といったツールが用意されています。
 
 ```rust
 // Rustコード (wasm-bindgenを使用)
@@ -150,7 +150,7 @@ pub fn greet(name: &str) {
 }
 ```
 
-このコードをコンパイルすると、`wasm-bindgen` が自動的にJavaScriptのグルーコード（接着剤となるコード）を生成し、文字列のメモリ受け渡しなどを隠蔽してくれます。これにより、Rustから直接ブラウザのAPIを呼び出しているかのような開発体験が得られます。
+このコードをコンパイルすると、`wasm-bindgen` が自動的にJavaScriptのグルーコード（接着剤となるコード）を生成し、文字列のメモリ受け渡しなどを隠蔽してくれます。これにより、[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)から直接ブラウザのAPIを呼び出しているかのような開発体験が得られます。
 
 ---
 
@@ -164,7 +164,7 @@ pub fn greet(name: &str) {
 
 ## 4.1 ベンチマーク：[フィボナッチ数列](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)
 
-単純なフィボナッチ数列の計算で、JavaScriptとRust(Wasm)の速度を比較してみましょう。
+単純なフィボナッチ数列の計算で、JavaScriptと[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)(Wasm)の速度を比較してみましょう。
 数学的には以下の再帰式で表されます。計算量は指数関数的 `$ O(2^n) $` となり、CPUを強く消費します。
 
 $$
@@ -184,7 +184,7 @@ function fibJs(n) {
 }
 ```
 
-### Rust実装
+### [Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)実装
 ```rust
 #[no_mangle]
 pub fn fib_wasm(n: u32) -> u32 {
@@ -193,7 +193,7 @@ pub fn fib_wasm(n: u32) -> u32 {
 }
 ```
 
-$n=40$ で計算させた場合、一般的にJavaScript（V8エンジン）でもJITの最適化によりかなり高速に実行されますが、Rustから生成されたWasmの方が **約1.5倍から2倍以上** 高速に実行されるケースが多いです。特に行列演算や画像処理など、メモリの連続アクセスやSIMD命令が活きる領域では、その差はさらに顕著になります。
+$n=40$ で計算させた場合、一般的にJavaScript（V8エンジン）でもJITの最適化によりかなり高速に実行されますが、[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)から生成されたWasmの方が **約1.5倍から2倍以上** 高速に実行されるケースが多いです。特に行列演算や画像処理など、メモリの連続アクセスやSIMD命令が活きる領域では、その差はさらに顕著になります。
 
 ---
 
@@ -228,7 +228,7 @@ WebAssemblyは初期リリース（MVP）以降も進化を続けており、現
 Web Workersと `SharedArrayBuffer` を利用することで、複数のWasmインスタンスが同じメモリ領域を共有し、マルチスレッドで並行処理を行うことが可能になりました。これにより、高度な物理シミュレーションやゲームエンジンなどがブラウザでスムーズに動作します。
 
 ## 6.3 ガベージコレクション (Wasm GC)
-従来のWasmはリニアメモリを手動で管理するCやRust向けの設計でしたが、Java、Kotlin、C#、Dartなどのガベージコレクションを必要とする言語を効率的にWasmへコンパイルするための **Wasm GC** 提案が標準化されつつあります。これにより、Flutter Webなどのパフォーマンスが飛躍的に向上しています。
+従来のWasmはリニアメモリを手動で管理するCや[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)向けの設計でしたが、[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)、Kotlin、C#、Dartなどのガベージコレクションを必要とする言語を効率的にWasmへコンパイルするための **Wasm GC** 提案が標準化されつつあります。これにより、Flutter Webなどのパフォーマンスが飛躍的に向上しています。
 
 ---
 
@@ -259,7 +259,7 @@ Wasmはコンテナよりもはるかに軽量で起動が速く（数ミリ秒�
 現在のWebAssemblyの最大の課題は、異なる言語で書かれたWasmモジュール同士を連携させるのが難しいことです（文字列や複雑なデータ型のメモリ表現が言語によって異なるため）。
 
 これを解決するのが **WebAssembly Component Model** です。
-コンポーネントモデルが実現すれば、「Rustで書かれたWasmモジュール」を「Pythonで書かれたWasmモジュール」からシームレスに関数呼び出しする、といったことが可能になります。これは、プラットフォームと言語に依存しない次世代の[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)・アーキテクチャの基盤となる可能性を秘めています。
+コンポーネントモデルが実現すれば、「[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)で書かれたWasmモジュール」を「Pythonで書かれたWasmモジュール」からシームレスに関数呼び出しする、といったことが可能になります。これは、プラットフォームと言語に依存しない次世代の[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)・アーキテクチャの基盤となる可能性を秘めています。
 
 ## 8.2 プラグインシステムとしてのWasm
 既に、FigmaやEnvoyProxy、Microsoft Flight Simulatorなど、多くのソフトウェアが独自のプラグインシステムとしてWebAssemblyを採用しています。ユーザーが作成したサードパーティのコードを安全かつ高速に本体のアプリケーション内で実行できるからです。
@@ -270,7 +270,7 @@ Wasmはコンテナよりもはるかに軽量で起動が速く（数ミリ秒�
 
 WebAssemblyは、単なる「ブラウザで動く高速な技術」という枠を大きく超え、クラウドネイティブ、エッジコンピューティング、プラグインアーキテクチャにおける共通言語として成長しつつあります。
 
-C、C++、Rustのようなシステムプログラミング言語で開発された強力なロジックを、プラットフォームを問わず安全かつ高速に展開できる世界。それこそがWebAssemblyが切り拓く **現在と未来** です。
+C、C++、[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)のようなシステム[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)で開発された強力なロジックを、プラットフォームを問わず安全かつ高速に展開できる世界。それこそがWebAssemblyが切り拓く **現在と未来** です。
 
 今後のWeb開発において、UIの構築は引き続きJavaScript/TypeScriptが担い、パフォーマンスが要求されるコアロジックや既存のネイティブ資産の再利用にはWebAssemblyが活用されるという適材適所のハイブリッドなアプローチが主流となっていくでしょう。
 

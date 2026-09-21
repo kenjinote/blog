@@ -103,7 +103,7 @@ flowchart TD
 2. **弱衝突耐性（Second pre-image resistance）**: 与えられた入力 $x_1$ に対して、$H(x_1) = H(x_2)$ となるような別の入力 $x_2$ を見つけることが困難であること。
 3. **強衝突耐性（Collision resistance）**: $H(x_1) = H(x_2)$ となるような任意の2つの入力 $x_1, x_2$ を見つけることが困難であること。
 
-ビットコインでは、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ハッシュの計算や、公開鍵からアドレスを生成するプロセスなどでSHA-256が二重に適用されます（これを `SHA256(SHA256(x))`、またはHash256と呼びます）。
+ビットコインでは、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)ハッシュの計算や、公開鍵から[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を生成するプロセスなどでSHA-256が二重に適用されます（これを `SHA256(SHA256(x))`、またはHash256と呼びます）。
 
 ### [公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号（[Public Key](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) [Cryptography](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)）とデジタル署名
 
@@ -202,13 +202,13 @@ flowchart LR
     B -->|"Miner Fee (0.01 BTC)"| E["Miner"]
 ```
 
-アリスがボブに1.8 BTCを送りたいとします。アリスは自身が保有する1.5 BTCと0.5 BTCの2つのUTXO（合計2.0 BTC）をインプットとして指定し、ボブ宛てに1.8 BTCのアウトプットを作成します。残りの0.2 BTCのうち、0.19 BTCはお釣り（Change）としてアリス自身の新しいアドレス宛てのアウトプットとなり、差額の0.01 BTCは[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を処理したマイナーへの手数料（Fee）となります。
+アリスがボブに1.8 BTCを送りたいとします。アリスは自身が保有する1.5 BTCと0.5 BTCの2つのUTXO（合計2.0 BTC）をインプットとして指定し、ボブ宛てに1.8 BTCのアウトプットを作成します。残りの0.2 BTCのうち、0.19 BTCはお釣り（Change）としてアリス自身の新しい[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)宛てのアウトプットとなり、差額の0.01 BTCは[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を処理したマイナーへの手数料（Fee）となります。
 
 $$
 \sum \text{Inputs} = \sum \text{Outputs} + \text{[Transaction](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)\_Fee}
 $$
 
-このUTXOモデルは、トランザクションの独立性が高いため並列処理がしやすく、またプライバシーの観点（毎回新しいお釣りアドレスを使うことができる）でも優れています。
+このUTXOモデルは、トランザクションの独立性が高いため並列処理がしやすく、またプライバシーの観点（毎回新しいお釣り[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を使うことができる）でも優れています。
 
 ## 7. 未来とスケーラビリティ問題
 
@@ -253,7 +253,7 @@ $$
 もし、十分な量子ビット（Qubits）と低いエラー率を持つ実用的な大規模量子コンピュータが完成すれば、ビットコインの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)から秘密鍵が逆算されるリスクが生じます。
 これに対するビットコインネットワークの防衛策は以下の通りです。
 
-1. **ハッシュ関数の保護**: ビットコインアドレスは公開鍵そのものではなく、公開鍵にSHA-256とRIPEMD-160というハッシュ関数を適用したものです。量子コンピュータを使っても、ハッシュ関数の逆算（グローバーのアルゴリズムを用いたとしても計算量は $\mathcal{O}(\sqrt{N})$）は依然として困難です。そのため、[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を行って公開鍵をネットワークにさらすまでは、アドレスの中身は量子コンピュータに対しても安全と言えます。
+1. **ハッシュ関数の保護**: ビットコイン[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)は公開鍵そのものではなく、公開鍵にSHA-256とRIPEMD-160というハッシュ関数を適用したものです。量子コンピュータを使っても、ハッシュ関数の逆算（グローバーのアルゴリズムを用いたとしても計算量は $\mathcal{O}(\sqrt{N})$）は依然として困難です。そのため、[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を行って公開鍵をネットワークにさらすまでは、[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の中身は量子コンピュータに対しても安全と言えます。
 2. **耐量子暗号（Post-Quantum [Cryptography](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/): PQC）への移行**: 量子コンピュータが実用化される前に、ビットコインのプロトコルをハードフォークさせ、NIST（米国国立標準技術研究所）が選定する格子ベース暗号（Lattice-based cryptography）や多変数多項式暗号（Multivariate polynomial cryptography）といった、量子コンピュータでも解読が困難な新しい署名アルゴリズムに移行することが議論されています。
 
 ## 9. ネットワーク・トポロジーと[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)プロトコルの詳細

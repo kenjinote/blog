@@ -58,7 +58,7 @@ IaC 工具大致可分為「程式型」與「宣告型」兩種方法。
 
 # 2. 什麼是 Terraform
 
-Terraform 是由 HashiCorp 公司使用 Go 語言開發的開源 IaC 工具。從雲端基礎設施到 SaaS 的設定，可以將各種 API 作為程式碼來組態與管理。
+Terraform 是由 HashiCorp 公司使用 [Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 語言開發的開源 IaC 工具。從雲端基礎設施到 SaaS 的設定，可以將各種 API 作為程式碼來組態與管理。
 
 ## 2.1. 提供者 (Provider) 架構
 

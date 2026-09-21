@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # Pengantar: Cara Bertarung "Si Tak Berpunya" Menantang Para Raksasa
 
-Dalam sejarah pengembangan perangkat lunak, belum pernah ada era yang begitu menguntungkan bagi pengembang individu (indie developer) seperti saat ini. Demokratisasi infrastruktur cloud seperti AWS dan GCP, munculnya BaaS (Backend as a [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)) seperti Vercel dan Supabase, serta yang terpenting, otomatisasi pengkodean berkat evolusi LLM (Large Language Models). Semua ini telah menciptakan fondasi di mana individu dapat bersaing langsung dengan perusahaan teknologi besar yang bertindak sebagai "raksasa".
+Dalam sejarah pengembangan perangkat lunak, belum pernah ada era yang begitu menguntungkan bagi pengembang individu (indie developer) seperti saat ini. Demokratisasi infrastruktur cloud seperti AWS dan GCP, munculnya BaaS (Backend as a [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)) seperti Vercel dan Supabase, serta yang terpenting, otomatisasi pengkodean berkat evolusi [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) ([Large Language Models](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)). Semua ini telah menciptakan fondasi di mana individu dapat bersaing langsung dengan perusahaan teknologi besar yang bertindak sebagai "raksasa".
 
 Namun, hanya karena sumber daya teknis telah menjadi merata, bukan berarti Anda bisa menang dengan mengambil strategi yang sama dengan perusahaan besar. Dalam hal kekuatan modal, kekuatan pemasaran, dan kekuatan merek, individu berada pada kerugian yang sangat besar. Agar pengembang solo dapat bertahan dan menang, strategi bertahan hidup yang unik sangatlah penting.
 
@@ -248,7 +248,7 @@ Dengan mengadopsi ekosistem PostgreSQL standar dengan cara ini, jika sewaktu-wak
 
 # 7. SEO Terprogram dan Konten Buatan AI
 
-Senjata terkuat bagi pengembang solo tanpa anggaran pemasaran adalah "SEO (Search Engine Optimization)". Dalam beberapa tahun terakhir, "SEO Terprogram (Programmatic SEO)", yang secara dinamis menghasilkan ribuan hingga puluhan ribu halaman arahan (landing page) dengan menggabungkan database perusahaan sendiri dengan LLM, tengah menarik perhatian.
+Senjata terkuat bagi pengembang solo tanpa anggaran pemasaran adalah "SEO (Search Engine Optimization)". Dalam beberapa tahun terakhir, "SEO Terprogram (Programmatic SEO)", yang secara dinamis menghasilkan ribuan hingga puluhan ribu halaman arahan (landing page) dengan menggabungkan database perusahaan sendiri dengan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/), tengah menarik perhatian.
 
 Distribusi lalu lintas juga mengikuti hukum pangkat (power law). Alih-alih menargetkan kata kunci besar tertentu, tujuan utama adalah meningkatkan jumlah total akses dengan mencakup banyak "kata kunci ekor panjang" (long-tail keywords) yang volume pencariannya kecil namun tingkat konversinya tinggi.
 

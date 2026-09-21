@@ -338,7 +338,7 @@ def partition(arr, low, high):
     return i + 1
 ```
 
-### 3.3 힙 정렬 (Heap Sort)
+### 3.3 힙 정렬 ([Heap](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/) Sort)
 
 힙 정렬은 **이진 힙(Binary Heap)** 이라는 트리 구조의 자료 구조를 교묘하게 이용한 정렬 알고리즘입니다. 최악 시간 복잡도가 $O(n \log n)$ 이면서 추가 메모리를 사용하지 않는 In-place 한 정렬이라는, 병합 정렬과 퀵 정렬의 장점만을 모아놓은 듯한 특성을 가집니다.
 
@@ -467,7 +467,7 @@ def counting_sort(arr):
 
 ### 5.1 Timsort (Python의 기본)
 
-Timsort(팀소트)는 Tim Peters가 2002년에 Python용으로 구현한 알고리즘으로, 현재는 Python의 `list.sort()` 나 `sorted()` 는 물론, Java의 객체 배열이나 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 표준 정렬 등 수많은 언어에서 채택된 실무계의 패자입니다.
+Timsort(팀소트)는 Tim Peters가 2002년에 Python용으로 구현한 알고리즘으로, 현재는 Python의 `list.sort()` 나 `sorted()` 는 물론, [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)의 객체 배열이나 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)의 표준 정렬 등 수많은 언어에서 채택된 실무계의 패자입니다.
 
 Timsort의 가장 큰 설계 철학은 **"현실 세계의 데이터는 완전히 무작위인 경우가 적고, 어느 정도 부분적으로 정렬되어 있는(연속적인 오름차순이나 내림차순 블록이 있는) 경우가 많다"** 는 경험 법칙에 근거하고 있습니다.
 
@@ -504,7 +504,7 @@ Introspective Sort(인트로소트)는 C++의 STL인 `std::sort` 나 .NET (C#)�
 | **삽입 정렬 (Insertion Sort)** | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | Yes | 삽입. 거의 정렬된 데이터에 극히 강함. |
 | **병합 정렬 (Merge Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | 분할 정복. 견고한 복잡도지만 메모리를 많이 씀. |
 | **퀵 정렬 (Quick Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | $O(\log n)$ | No | 분할 정복. 평균적으로 가장 빠르나 최악의 경우 주의. |
-| **힙 정렬 (Heap Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No | 이진 힙. In-place로 견고함. |
+| **힙 정렬 ([Heap](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/) Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No | 이진 힙. In-place로 견고함. |
 | **계수 정렬 (Counting Sort)** | $O(n+k)$ | $O(n+k)$ | $O(n+k)$ | $O(k)$ | Yes | 비비교. 키 범위가 좁을 때 최강. |
 | **Timsort** (Python 등 표준) | $O(n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | 하이브리드. 실제 데이터에 적응형이며 가장 빠름. |
 | **Introsort** (C++ 등 표준) | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(\log n)$ | No | 하이브리드. Quick의 속도와 Heap의 견고성을 양립. |

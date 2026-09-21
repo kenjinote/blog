@@ -75,7 +75,7 @@ Das klassischste Beispiel ist die Worthäufigkeit in Textkorpora. Bei der Analys
 3. **and**: ca. 2,8 % Auftrittswahrscheinlichkeit
 4. **to**: ca. 2,6 % Auftrittswahrscheinlichkeit
 
-Während also nur ein paar Dutzend häufige Wörter fast die Hälfte des gesamten Textes ausmachen, tauchen Hunderttausende anderer Wörter fast nie auf. Dieses „Long Tail“-Phänomen ist beim Aufbau von Suchmaschinen-Indizes und bei der Gestaltung von Vokabularen für Large Language Models (LLMs) von enormer Bedeutung. Im Bereich der Verarbeitung natürlicher Sprache tragen zu häufig vorkommende Wörter (Stoppwörter) nur sehr wenige Informationen, weshalb Techniken wie TF-IDF verwendet werden, um deren Gewichtung zu verringern.
+Während also nur ein paar Dutzend häufige Wörter fast die Hälfte des gesamten Textes ausmachen, tauchen Hunderttausende anderer Wörter fast nie auf. Dieses „Long Tail“-Phänomen ist beim Aufbau von Suchmaschinen-Indizes und bei der Gestaltung von Vokabularen für [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) von enormer Bedeutung. Im Bereich der Verarbeitung natürlicher Sprache tragen zu häufig vorkommende Wörter (Stoppwörter) nur sehr wenige Informationen, weshalb Techniken wie TF-IDF verwendet werden, um deren Gewichtung zu verringern.
 
 ## 4.2. Städtische Bevölkerungsverteilung
 

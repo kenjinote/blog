@@ -22,7 +22,7 @@ Dieser Artikel bietet eine äußerst detaillierte Erklärung zur Implementierung
 
 ## 2. Windows Copilot Runtime und der Architekturüberblick
 
-Die Windows Copilot Runtime ist ein KI-Stack, der so konzipiert ist, dass Entwickler KI-Modelle problemlos in Windows integrieren und gleichzeitig die beste Leistung erzielen können. Diese Laufzeitumgebung abstrahiert die Hardwarebeschleunigung auf Betriebssystemebene und bietet Entwicklern eine einheitliche Schnittstelle.
+Die Windows Copilot Runtime ist ein KI-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/), der so konzipiert ist, dass Entwickler KI-Modelle problemlos in Windows integrieren und gleichzeitig die beste Leistung erzielen können. Diese Laufzeitumgebung abstrahiert die Hardwarebeschleunigung auf Betriebssystemebene und bietet Entwicklern eine einheitliche Schnittstelle.
 
 ```mermaid
 graph TD
@@ -306,7 +306,7 @@ Im Folgenden werden unverzichtbare Optimierungsstrategien für die Entwicklung e
 ### 7.1 Modellquantisierung (Quantization) und das Olive Toolkit
 Um das wahre Potenzial der NPU zu entfalten, ist es absolut notwendig, die Gewichte und Aktivierungen von KI-Modellen von FP32 (einfache Genauigkeit) zu INT8 oder INT4 zu **quantisieren (Quantization)**. Die NPU-Architektur ist auf Ganzzahloperationen spezialisiert und bietet mit INT8 im Vergleich zu FP32 theoretisch den vierfachen Durchsatz und massive Energieeinsparungen.
 
-Durch die Verwendung der von Microsoft bereitgestellten Toolchain `Olive (ONNX Live)` können Modelle aus PyTorch und anderen Frameworks automatisch für Windows-Umgebungen optimiert werden. Olive bietet starke Unterstützung für spezielle Aufmerksamkeitsoptimierungen (Attention-Optimierungen) in Transformer-Modellen und die hardwarebezogene Kompilierung von Graphen.
+Durch die Verwendung der von Microsoft bereitgestellten Toolchain `Olive (ONNX Live)` können Modelle aus PyTorch und anderen Frameworks automatisch für Windows-Umgebungen optimiert werden. Olive bietet starke Unterstützung für spezielle Aufmerksamkeitsoptimierungen (Attention-Optimierungen) in [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Modellen und die hardwarebezogene Kompilierung von Graphen.
 
 ### 7.2 Der Kompromiss: Batch-Verarbeitung vs. interaktives Streaming
 Bei API-Aufrufen kann die Auslastung der NPU (Compute Utilization) durch das Zusammenfassen mehrerer Inferenzanforderungen in einer Batch-Verarbeitung (Stapelverarbeitung) erhöht werden. Bei einer interaktiven Benutzeroberfläche wie einem Chatbot bestimmt jedoch die Zeit, bis das erste Token angezeigt wird (TTFT: Time To First Token), das Benutzererlebnis (UX) mehr als der bloße Durchsatz.

@@ -11,7 +11,7 @@ tags: ["RAG", "Vector DB", "Embeddings", "Python", "Local AI"]
 
 # 前言
 
-近年來，大型語言模型（LLM）的進化令人矚目，以 ChatGPT 和 Claude 為首的許多 AI 已經滲透到我們的生活和業務中。然而，一般的 LLM 存在著明顯的弱點。那就是它們只知道「訓練時的公開資訊」。對於公司內部規定、個人筆記、未公開的專案資料等「私有文件」相關的提問，它們自然無法回答。如果硬要它們回答，就會增加產生與事實不符、似是而非的謊言（幻覺，Hallucination）的風險。
+近年來，大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）的進化令人矚目，以 ChatGPT 和 Claude 為首的許多 AI 已經滲透到我們的生活和業務中。然而，一般的 LLM 存在著明顯的弱點。那就是它們只知道「訓練時的公開資訊」。對於公司內部規定、個人筆記、未公開的專案資料等「私有文件」相關的提問，它們自然無法回答。如果硬要它們回答，就會增加產生與事實不符、似是而非的謊言（幻覺，Hallucination）的風險。
 
 因此，目前在世界各地爆發性普及的技術架構就是 **RAG（Retrieval-Augmented Generation，檢索增強生成）** 。透過使用 RAG，可以從外部資料庫動態地提供專有知識給 LLM，讓它能基於這些知識產生準確且有根據的回答。
 
@@ -54,7 +54,7 @@ graph TD
 
 ## 攝取階段（事前準備）
 1. **讀取文件** ：讀取 PDF、Word、純文字檔等非結構化資料。
-2. **分塊（文字分割）** ：為了符合 LLM 的輸入限制（上下文視窗大小）並提高檢索精準度，將長篇文章分割成有意義的區塊（Chunk）。
+2. **分塊（文字分割）** ：為了符合 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的輸入限制（上下文視窗大小）並提高檢索精準度，將長篇文章分割成有意義的區塊（Chunk）。
 3. **嵌入（向量化）** ：將分割後的區塊輸入至嵌入模型（Embedding Model），轉換成數百到數千維的數值陣列（向量）。
 4. **儲存至資料庫** ：將轉換後的向量與原始文字資料關聯起來，儲存到向量資料庫（Vector DB）中。
 
@@ -101,11 +101,11 @@ $$ \text{Cosine Similarity}(\mathbf{A}, \mathbf{B}) = \cos(\theta) = \frac{\math
 
 為了建構完全不依賴雲端的本機 RAG，我們將活用開源生態系統。以下介紹推薦的技術堆疊。
 
-1. **語言模型 (LLM)**
+1. **語言模型 ([LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/))**
    - 工具：`Ollama` 或 `Llama.cpp`
    - 模型：`Llama-3-8B-Instruct`、`Gemma-2-9B-It`、`Qwen2-7B-Instruct` 等輕量且高效能的開源模型。針對日文任務，適合使用經過日文微調的 `Llama-3-ELYZA-JP-8B` 等。
 2. **嵌入模型 (Embedding)**
-   - 模型：`intfloat/multilingual-e5-large` 或 `BAAI/bge-m3`。若要在本機執行，通常會從 Hugging Face 下載並透過 Sentence-Transformers 執行。
+   - 模型：`intfloat/multilingual-e5-large` 或 `BAAI/bge-m3`。若要在本機執行，通常會從 Hugging Face 下載並透過 Sentence-[Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)s 執行。
 3. **向量資料庫 (Vector DB)**
    - `ChromaDB`：基於 Python，設定極為簡單。最適合用於本機開發。
    - `FAISS`：Meta 開發的高速向量檢索函式庫。
@@ -131,7 +131,7 @@ pip install chromadb sentence-transformers pypdf
 
 ## Step 2: 實作程式碼全貌
 
-以下是讀取 PDF 檔案、將其向量化並讓本機 LLM 進行問答的完整 Python 腳本。
+以下是讀取 PDF 檔案、將其向量化並讓本機 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 進行問答的完整 Python 腳本。
 
 ```python
 import os
@@ -252,7 +252,7 @@ if __name__ == "__main__":
 向量檢索速度很快，但它並不一定能準確評估上下文的語意適合度。為了提升檢索準確度，一般的流程如下：
 1. **初步檢索 (First-stage Retrieval)** ：從向量資料庫中，廣泛且初步地取得約 20 到 30 筆相關分塊。
 2. **重新評估 (Re-ranking)** ：使用另一個較為笨重、被稱為 Cross-Encoder 的機器學習模型（例如：`bge-reranker` 等），輸入使用者查詢與取得的分塊配對，重新計算語意適合度的分數。
-3. **篩選** ：僅挑選分數最高的前 3 到 5 筆作為最終的上下文，傳遞給 LLM 的提示詞。
+3. **篩選** ：僅挑選分數最高的前 3 到 5 筆作為最終的上下文，傳遞給 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的提示詞。
 
 透過這種方法，可以防止無關的雜訊資訊傳入 LLM，大幅提升回答的精準度（Precision）。
 
@@ -267,7 +267,7 @@ graph LR
 
 ## 5.3 語意分塊與父文件檢索
 還有一種被稱為「語意分塊 (Semantic Chunking)」的技術，不是根據固定的字元數死板地分割文字，而是由 AI 偵測文章語意的轉折點來進行分割。
-此外，「父文件檢索 (Parent Document Retriever)」技術則是為了檢索而將文字切割成非常小的單位（如句子等）以實現高精準度的檢索，但在提供給 LLM 時，則是將包含該句子的「原始大段落（父文件）」交給 LLM，藉此提供充足的上下文背景。
+此外，「父文件檢索 (Parent Document Retriever)」技術則是為了檢索而將文字切割成非常小的單位（如句子等）以實現高精準度的檢索，但在提供給 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 時，則是將包含該句子的「原始大段落（父文件）」交給 LLM，藉此提供充足的上下文背景。
 
 ---
 

@@ -316,7 +316,7 @@ genhtml coverage.info --output-directory coverage_report
 
 ### 7.1 建置時間（編譯時間）的增加
 由於 C++ 大量使用樣板（Template）以及大型標頭檔的引入（Include），編譯時間往往會變長。TDD 的「Red-Green-Refactor」循環必須快速進行，因此建置時間的延遲是致命的。
-**對策**: 善用前置宣告（Forward Declaration）與 Pimpl（Pointer to implementation）慣用語，將標頭檔的依賴關係降到最低。此外，導入如 Ccache 等建置快取工具也非常有效。
+**對策**: 善用前置宣告（Forward Declaration）與 Pimpl（[Pointer](https://kenji.blog/zh-tw/p/c-language-pointers-memory-management-stack-heap/) to implementation）慣用語，將標頭檔的依賴關係降到最低。此外，導入如 Ccache 等建置快取工具也非常有效。
 
 ### 7.2 在遺留程式碼（Legacy Code）中導入 TDD
 要在現有龐大的單體式（Monolithic）程式碼中事後應用 TDD 是非常困難的。

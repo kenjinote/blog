@@ -11,9 +11,9 @@ tags: ["RAG", "Vector DB", "Embeddings", "Python", "Local AI"]
 
 # Introduction
 
-In recent years, the evolution of Large Language Models (LLMs) has been remarkable, and many AIs, led by ChatGPT and Claude, have permeated our daily lives and business operations. However, general LLMs have a distinct weakness. That is, they only know "public information at the time of their training". Naturally, they cannot answer questions about "private documents" such as internal company regulations, personal notes, and unpublished project materials. Forcing them to answer increases the risk of generating plausible lies (hallucinations) that differ from the facts.
+In recent years, the evolution of [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) has been remarkable, and many AIs, led by ChatGPT and Claude, have permeated our daily lives and business operations. However, general LLMs have a distinct weakness. That is, they only know "public information at the time of their training". Naturally, they cannot answer questions about "private documents" such as internal company regulations, personal notes, and unpublished project materials. Forcing them to answer increases the risk of generating plausible lies (hallucinations) that differ from the facts.
 
-Therefore, the technological architecture known as **RAG (Retrieval-Augmented Generation)** is currently spreading explosively worldwide. By using RAG, it becomes possible to dynamically provide unique knowledge to the LLM from an external database and have it generate accurate and well-founded answers based on it.
+Therefore, the technological architecture known as **RAG (Retrieval-Augmented Generation)** is currently spreading explosively worldwide. By using RAG, it becomes possible to dynamically provide unique knowledge to the [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) from an external database and have it generate accurate and well-founded answers based on it.
 
 Furthermore, when handling enterprise domains or personal confidential information, sending data to cloud-based APIs like OpenAI is often unacceptable under security policies. What is required there is the construction of "Local RAG" combined with **Local AI** (an LLM that operates entirely on your own PC or on-premise server).
 
@@ -54,7 +54,7 @@ graph TD
 
 ## Ingestion Phase (Preparation)
 1. **Document Loading**: Loads unstructured data such as PDFs, Word documents, and text files.
-2. **Chunking (Text Splitting)**: Splits long texts into meaningful chunks to fit within the LLM's input limit (context window) and to improve search accuracy.
+2. **Chunking (Text Splitting)**: Splits long texts into meaningful chunks to fit within the [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/)'s input limit (context window) and to improve search accuracy.
 3. **Embedding (Vectorization)**: Inputs the split chunks into an Embedding Model and converts them into an array of numerical values (vectors) with hundreds to thousands of dimensions.
 4. **Saving to Database**: Saves the converted vectors and their associated original text data into a Vector Database (Vector DB).
 
@@ -97,15 +97,15 @@ Recent Vector DBs (Chroma, FAISS, Qdrant, etc.) employ an Approximate Nearest Ne
 
 ---
 
-# 3. Technology Stack for Building Local RAG
+# 3. Technology [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) for Building Local RAG
 
 To build a fully local RAG that does not rely on the cloud, we leverage the open-source ecosystem. The recommended technology stack is introduced below.
 
-1. **Large Language Model (LLM)**
+1. **Large Language Model ([LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/))**
    - Tools: `Ollama` or `Llama.cpp`
    - Models: Lightweight, high-performance open models like `Llama-3-8B-Instruct`, `Gemma-2-9B-It`, `Qwen2-7B-Instruct`. For Japanese tasks, Japanese-tuned models like `Llama-3-ELYZA-JP-8B` are suitable.
 2. **Embedding Model (Embedding)**
-   - Models: `intfloat/multilingual-e5-large` or `BAAI/bge-m3`. When running locally, it is common to download them from Hugging Face and run them with Sentence-Transformers.
+   - Models: `intfloat/multilingual-e5-large` or `BAAI/bge-m3`. When running locally, it is common to download them from Hugging Face and run them with Sentence-[Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/)s.
 3. **Vector Database (Vector DB)**
    - `ChromaDB`: Python-based and extremely easy to set up. Ideal for local development.
    - `FAISS`: A fast vector search library developed by Meta.
@@ -131,7 +131,7 @@ pip install chromadb sentence-transformers pypdf
 
 ## Step 2: Complete Implementation Code
 
-Below is the complete Python script to load a PDF file, vectorize it, and have the local LLM answer questions.
+Below is the complete Python script to load a PDF file, vectorize it, and have the local [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) answer questions.
 
 ```python
 import os
@@ -252,7 +252,7 @@ Therefore, by running **semantic search** via vector search and **keyword search
 Vector search is fast, but it does not necessarily evaluate the exact contextual relevance of the context. A general pipeline for improving search accuracy is as follows:
 1. **First-stage Retrieval**: Retrieve a broad and shallow range of relevant chunks (about 20-30) from the Vector DB.
 2. **Re-ranking**: Use another heavier machine learning model called a Cross-Encoder (e.g., `bge-reranker`) to input pairs of the user's query and the retrieved chunks, and recalculate their semantic relevance scores.
-3. **Selection**: Pass only the top 3-5 with the highest scores as the final context to the LLM prompt.
+3. **Selection**: Pass only the top 3-5 with the highest scores as the final context to the [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) prompt.
 
 This technique prevents irrelevant noise information from being passed to the LLM, significantly increasing the precision of the answers.
 
@@ -267,7 +267,7 @@ graph LR
 
 ## 5.3 Semantic Chunking and Parent Document Retrieval
 Instead of mechanically splitting text by a fixed number of characters, there is a technique called "Semantic Chunking" that uses AI to detect shifts in meaning and splits the text accordingly.
-Also, in the "Parent Document Retriever" technique, you vectorize in very small units (like sentences) for high-precision search, but when passing it to the LLM, you provide the "original large paragraph (parent document)" containing that sentence, thus providing sufficient context to the LLM.
+Also, in the "Parent Document Retriever" technique, you vectorize in very small units (like sentences) for high-precision search, but when passing it to the [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/), you provide the "original large paragraph (parent document)" containing that sentence, thus providing sufficient context to the LLM.
 
 ---
 

@@ -16,7 +16,7 @@ In the 18th century, the city of Königsberg in the Kingdom of Prussia (now Kali
 
 When this seemingly simple puzzle fell into the hands of the genius mathematician **[Leonhard Euler](https://kenji.blog/en/p/euler/)**, a revolution occurred in the world of mathematics. Euler not only proved that this problem was impossible but, in the process, also re-examined the properties of space from an entirely new perspective, laying the foundations for two critically important fields in modern mathematics: **[Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)** and **Topology**.
 
-In this article, we will delve deeply into the historical background of the [Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/) problem, Euler's brilliant method of solving it, and how it connects to modern science and technology, incorporating mathematical details. Go beyond a mere historical introduction and enjoy the beauty of the mathematical structure behind it.
+In this article, we will delve deeply into the historical background of the [Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/) problem, Euler's brilliant method of solving it, and how it connects to modern science and technology, incorporating mathematical details. [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) beyond a mere historical introduction and enjoy the beauty of the mathematical structure behind it.
 
 ## The City of Königsberg and the Seven Bridges: Historical Background
 

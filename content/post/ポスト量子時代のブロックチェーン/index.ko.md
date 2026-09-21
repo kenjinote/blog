@@ -289,7 +289,7 @@ pie title 블록체인에서의 서명 데이터 크기 비교 (개념도)
 
 하지만 Dilithium이나 Falcon과 같은 새로운 격자 기반 암호 알고리즘의 검증 처리는 복잡한 다항식 연산이나 행렬 연산을 수반하기 때문에, 기존의 EVM 연산 코드(Opcode)만으로 구현하면 단 1회의 서명 검증만으로 수백만에서 수천만 가스를 소비할 가능성이 있습니다. 이는 현재의 블록 가스 한도(약 3000만 Gas)를 1개의 트랜잭션으로 고갈시키는 수준입니다.
 
-이를 회피하기 위해서는 네트워크의 하드포크를 통해 새롭게 PQC 검증용 사전 컴파일된 컨트랙트(예: `0x10`에 DilithiumVerify를 할당하는 등)를 EVM 자체에 내장해야 합니다. 여기에는 각 이더리움 클라이언트(Geth, Nethermind, Erigon 등)의 코어 개발자가 협력하여 C++, Go, [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 등의 언어 레벨에서 격자 기반 암호 검증 로직을 최적화하여 구현하고, 보안 감사를 실시하는 장기간에 걸친 프로세스가 필요합니다.
+이를 회피하기 위해서는 네트워크의 하드포크를 통해 새롭게 PQC 검증용 사전 컴파일된 컨트랙트(예: `0x10`에 DilithiumVerify를 할당하는 등)를 EVM 자체에 내장해야 합니다. 여기에는 각 이더리움 클라이언트(Geth, Nethermind, Erigon 등)의 코어 개발자가 협력하여 C++, [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 등의 언어 레벨에서 격자 기반 암호 검증 로직을 최적화하여 구현하고, 보안 감사를 실시하는 장기간에 걸친 프로세스가 필요합니다.
 
 ### 5.3. 하드포크를 통한 합의 형성의 어려움
 

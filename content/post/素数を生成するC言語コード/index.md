@@ -9,7 +9,7 @@ categories: ["math-cryptography-quantum"]
 description: '指定された範囲（1からnまで）の素数を判定し、生成して列挙するシンプルなC言語のサンプルコードを紹介します。isPrime関数を用いた効率的なアルゴリズムで、初心者でもわかりやすいプログラミング実装例と解説を掲載しています。'
 ---
 
-以下は、指定された範囲内の素数を生成するシンプルなC言語のコードです。この例では、1からnまでの素数を列挙します。
+以下は、指定された範囲内の素数を生成するシンプルな[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)のコードです。この例では、1からnまでの素数を列挙します。
 
 ```cpp
 #include <stdio.h>

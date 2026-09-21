@@ -125,7 +125,7 @@ xychart-beta
 
 ---
 
-## 4. Jenseits von Prompt Engineering: Welche Fähigkeiten sind wirklich erforderlich?
+## 4. Jenseits von [Prompt Engineering](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/): Welche Fähigkeiten sind wirklich erforderlich?
 
 Was für IT-Fachkräfte werden in Zukunft also gebraucht? Es ist verfrüht zu denken, dass es reicht, "Prompt Engineering zu perfektionieren". Die Technik, Anweisungen in natürlicher Sprache zu geben, wird mit der Weiterentwicklung der KI-Modelle immer einfacher und wird zunehmend zur Massenware.
 

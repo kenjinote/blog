@@ -97,7 +97,7 @@ If a new flag were added to the TCP header or a new version of TCP were created,
 On the other hand, UDP is a very simple protocol that holds only information such as destination port, source port, and a checksum. Middleboxes also do not deeply interfere with the contents of UDP.
 Therefore, the approach adopted was: **"Reimplement all reliability controls and TLS encryption like TCP in user space (a location closer to the application layer) on the blank canvas of UDP."** This is QUIC.
 
-## 3.2 QUIC Protocol Stack
+## 3.2 QUIC Protocol [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)
 
 The protocol stack of HTTP/3 incorporating QUIC is as follows.
 

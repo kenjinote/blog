@@ -168,7 +168,7 @@ for s in test_strings:
 
 ### 下推自动机（ PDA ）
 
-识别上下文无关语言的计算模型是 **下推自动机** （ Pushdown Automaton, PDA ）。PDA 是在有限自动机的基础上增加了 **栈** （ Stack, 后进先出的内存）而构成的。通过使用栈，就可以实现诸如“记住左括号的数量，每当出现右括号就消耗一个”的功能。
+识别上下文无关语言的计算模型是 **下推自动机** （ Pushdown Automaton, PDA ）。PDA 是在有限自动机的基础上增加了 **栈** （ [Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/), 后进先出的内存）而构成的。通过使用栈，就可以实现诸如“记住左括号的数量，每当出现右括号就消耗一个”的功能。
 
 #### 示例：接受 $ a^n b^n $ 的 PDA
 
@@ -286,7 +286,7 @@ flowchart LR
 
 ### 正则表达式引擎的陷阱（ Catastrophic Backtracking ）
 
-许多编程语言（如 Java, Python, Ruby, JavaScript 等）内置的正则表达式引擎，并非理论上纯粹的 DFA，而是基于带有回溯的 NFA（或回溯引擎）来实现的。
+许多编程语言（如 [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/), Python, Ruby, JavaScript 等）内置的正则表达式引擎，并非理论上纯粹的 DFA，而是基于带有回溯的 NFA（或回溯引擎）来实现的。
 
 因此，当针对某些特定模式的正则表达式（如 `(a+)+$` 等）输入精心构造的字符串时，计算量会呈指数级爆炸，导致系统冻结，从而引发 **ReDoS** （ Regular Expression Denial of [Service](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/) ）漏洞。如果了解这些理论，就能进行逻辑思考，弄明白为什么会发生回溯，以及该如何重写模式以退回到相当于安全 DFA 的处理方式。
 

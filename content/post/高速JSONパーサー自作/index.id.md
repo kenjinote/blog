@@ -443,7 +443,7 @@ $$
 Space(N) \le C \times N \implies O(N)
 $$
 
-Namun, dalam parser penurunan rekursif (recursive descent parsing), memori call stack (tumpukan panggilan) yang dikonsumsi berbanding lurus dengan kedalaman bersarangnya JSON (Depth). Untuk kedalaman $D$, diperlukan memori stack $O(D)$. Karena berisiko menyebabkan Stack Overflow jika diberikan input JSON bersarang tanpa batas yang bersifat berbahaya (malicious), parser yang praktis perlu menetapkan batas atas kedalaman rekursi (misalnya: 256 atau 512), atau menyesuaikan alurnya dengan mengubah rekursi menjadi perulangan (loop).
+Namun, dalam parser penurunan rekursif (recursive descent parsing), memori call stack (tumpukan panggilan) yang dikonsumsi berbanding lurus dengan kedalaman bersarangnya JSON (Depth). Untuk kedalaman $D$, diperlukan memori stack $O(D)$. Karena berisiko menyebabkan [Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) Overflow jika diberikan input JSON bersarang tanpa batas yang bersifat berbahaya (malicious), parser yang praktis perlu menetapkan batas atas kedalaman rekursi (misalnya: 256 atau 512), atau menyesuaikan alurnya dengan mengubah rekursi menjadi perulangan (loop).
 
 ---
 

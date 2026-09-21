@@ -26,7 +26,7 @@ Let's check with a simple mathematical model why the phenomenon of "everyone slo
 There are 4,000 drivers heading from the starting point (residential area) to the goal point (business district).
 Initially, there were only two routes (upper route and lower route) as follows.
 
-- **Upper Route**: Go through a narrow road $A$, and then through a wide highway $B$.
+- **Upper Route**: [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) through a narrow road $A$, and then through a wide highway $B$.
 - **Lower Route**: Go through a wide highway $C$, and then through a narrow road $D$.
 
 The "narrow road" gets congested as the number of cars increases, so the travel time takes "the number of running cars $\div 100$" minutes.

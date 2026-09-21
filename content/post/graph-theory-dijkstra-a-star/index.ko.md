@@ -142,7 +142,7 @@ def dijkstra(graph, start):
 
 ### 3.4 시간 복잡도에 대해
 
-우선순위 큐로 이진 힙 (Binary Heap) 을 사용한 경우, 각 정점은 큐에서 1번 꺼내어지고, 각 간선은 1번 완화됩니다.
+우선순위 큐로 이진 힙 (Binary [Heap](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/)) 을 사용한 경우, 각 정점은 큐에서 1번 꺼내어지고, 각 간선은 1번 완화됩니다.
 따라서 시간 복잡도는 $ O((|V| + |E|) \log |V|) $ 가 됩니다. 피보나치 힙을 사용하면 이론상 $ O(|E| + |V| \log |V|) $ 까지 개선되지만, 실무에서는 이진 힙이 많이 사용됩니다.
 
 ---

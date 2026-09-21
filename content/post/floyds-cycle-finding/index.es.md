@@ -209,7 +209,7 @@ int main() {
 
 ### Implementación en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)
 
-En el caso de Rust, debido a las reglas de propiedad (ownership) y préstamo (borrowing), la implementación de listas enlazadas tiende a ser compleja, por lo que en la programación competitiva es común modelar esto como un problema de referencias de índices en un arreglo (o `Vec`).
+En el caso de [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), debido a las reglas de propiedad (ownership) y préstamo (borrowing), la implementación de listas enlazadas tiende a ser compleja, por lo que en la programación competitiva es común modelar esto como un problema de referencias de índices en un arreglo (o `Vec`).
 Aquí mostraremos un ejemplo de implementación utilizando un arreglo que mantiene el "índice siguiente" en lugar del "puntero al siguiente".
 
 ```rust

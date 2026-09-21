@@ -46,7 +46,7 @@ $$
 $$
 
 **기술 선정에 미치는 영향:**
-이 알고리즘은 '[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에 관심이 있는 A씨'와 'Rust에 관심이 있는 B씨'를 잠재 공간 상에서 가깝게 만듭니다. 만약 A씨가 신흥 웹 프레임워크의 게시물에 '좋아요'를 누른 경우, B씨의 타임라인에도 해당 프레임워크의 게시물이 높은 확률로 표시됩니다. 이로 인해 특정 기술 스택을 선호하는 엔지니어 집단 내에서 특정 기술이 국지적으로 대유행하는 현상이 일어납니다.
+이 알고리즘은 '[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에 관심이 있는 A씨'와 '[Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)에 관심이 있는 B씨'를 잠재 공간 상에서 가깝게 만듭니다. 만약 A씨가 신흥 웹 프레임워크의 게시물에 '좋아요'를 누른 경우, B씨의 타임라인에도 해당 프레임워크의 게시물이 높은 확률로 표시됩니다. 이로 인해 특정 기술 스택을 선호하는 엔지니어 집단 내에서 특정 기술이 국지적으로 대유행하는 현상이 일어납니다.
 
 ### 2.2 딥러닝을 이용한 추천 모델 (DLRM)
 

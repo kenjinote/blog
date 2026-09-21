@@ -241,7 +241,7 @@ In smartwatches and portable electrocardiograms (ECGs), signs of arrhythmias (su
 
 While Edge AI technology is developing rapidly, there are still many challenges and intriguing future prospects.
 
-**1. Running LLMs (Large Language Models) on the Edge**:
+**1. Running LLMs ([Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/)) on the Edge**:
 The biggest topic in recent years is the attempt to run generative AI and LLMs on the edge, known as "Edge LLMs." While it is impossible to put models with tens of billions of parameters directly on the edge, the advent of optimization frameworks like llama.cpp, extreme quantization down to 4-bit/2-bit (AWQ, GPTQ, etc.), and small, high-performance SLMs (Small Language Models) like Microsoft's Phi-3 is ushering in an era where natural language processing can be completed [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/) even on smartphones or Raspberry Pis.
 
 **2. Neuromorphic Computing and SNNs**:

@@ -78,7 +78,7 @@ Inicialmente, AWS Lambda utilizaba contenedores Linux (tecnología similar a LXC
 
 ### 3.1. ¿Qué es Firecracker?
 
-Firecracker es un monitor de máquina virtual (VMM) que utiliza KVM (Kernel-based Virtual Machine) para iniciar "MicroVMs" ligeras en milisegundos. Escrito en el lenguaje Rust, en comparación con las máquinas virtuales tradicionales (como QEMU), elimina por completo los modelos de dispositivos innecesarios para lograr inicios extremadamente rápidos y una baja sobrecarga de memoria.
+Firecracker es un monitor de máquina virtual (VMM) que utiliza KVM (Kernel-based Virtual Machine) para iniciar "MicroVMs" ligeras en milisegundos. Escrito en el lenguaje [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), en comparación con las máquinas virtuales tradicionales (como QEMU), elimina por completo los modelos de dispositivos innecesarios para lograr inicios extremadamente rápidos y una baja sobrecarga de memoria.
 
 ```mermaid
 graph TD
@@ -143,7 +143,7 @@ El tiempo que toma el cold start se divide a grandes rasgos en la **inicializaci
 
 1. **Descarga y descompresión del código**: El paquete de despliegue se descarga desde S3 y se extrae en el entorno. Toma tiempo en proporción al tamaño del paquete (cantidad de bibliotecas dependientes).
 2. **Inicio de MicroVM**: Inicia Firecracker. Esta parte es extremadamente rápida (en milisegundos) debido a las optimizaciones de AWS.
-3. **Inicialización del entorno de ejecución (Runtime)**: Inicia el proceso de Node.js, Python, Java, etc. Especialmente los lenguajes que compilan JIT (Just-In-Time), como Java o C#, consumen mucho tiempo aquí.
+3. **Inicialización del entorno de ejecución (Runtime)**: Inicia el proceso de Node.js, Python, [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), etc. Especialmente los lenguajes que compilan JIT (Just-In-Time), como Java o C#, consumen mucho tiempo aquí.
 4. **Inicialización de la función (Init Phase)**: Se evalúa el alcance global del código (fuera de la función del manejador). Si aquí se crea un pool de conexiones a la DB o se inicializa un SDK pesado, el tiempo de inicialización se prolongará.
 
 ### 4.2. El cold start desde la teoría de la probabilidad
@@ -167,7 +167,7 @@ El cold start es el destino de serverless, pero con creatividad en el diseño de
 
 La velocidad del cold start varía drásticamente según el lenguaje.
 
-- **Grupo más rápido**: Lenguajes con compilación AOT (Ahead-Of-Time) como Go, Rust y C++, y lenguajes de scripting ligeros (Python, Node.js). Estos tienden a mantener los cold starts por debajo de los cientos de milisegundos.
+- **Grupo más rápido**: Lenguajes con compilación AOT (Ahead-Of-Time) como [Go](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) y C++, y lenguajes de scripting ligeros (Python, Node.js). Estos tienden a mantener los cold starts por debajo de los cientos de milisegundos.
 - **Grupo lento**: Java, C# (.NET). Debido a la sobrecarga del inicio de JVM o CLR, y la compilación JIT, pueden producirse cold starts de varios a más de diez segundos.
 
 También llama la atención el enfoque de acortar aún más el tiempo de inicio de Node.js utilizando tiempos de ejecución JavaScript experimentales y ligeros proporcionados por AWS, como **LLRT (Low Latency Runtime)**.
@@ -210,7 +210,7 @@ Sin embargo, dado que los costos se incurren mientras los contenedores están en
 
 ## 6. Un cambio de juego: AWS Lambda SnapStart
 
-Como el salvador de los lenguajes de inicio lento como Java, apareció **AWS Lambda SnapStart**. Esta es una tecnología revolucionaria que crea una instantánea (snapshot) del estado de la máquina virtual y la restaura durante un cold start.
+Como el salvador de los lenguajes de inicio lento como [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/), apareció **AWS Lambda SnapStart**. Esta es una tecnología revolucionaria que crea una instantánea (snapshot) del estado de la máquina virtual y la restaura durante un cold start.
 
 Como tecnología base, se utilizan **CRaU** (Checkpoint/Restore in Userspace) y la funcionalidad de instantáneas de MicroVM de Firecracker.
 
@@ -253,7 +253,7 @@ sequenceDiagram
 
 ### 6.2. Ventajas y consideraciones de SnapStart
 
-Al habilitar SnapStart, el tiempo de cold start para funciones en Java se acelera en **hasta más de 10 veces**. Esto se debe a que el inicio del entorno de ejecución, la compilación JIT y la inicialización de frameworks pesados como Spring Boot se adelantan al "momento del despliegue".
+Al habilitar SnapStart, el tiempo de cold start para funciones en [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) se acelera en **hasta más de 10 veces**. Esto se debe a que el inicio del entorno de ejecución, la compilación JIT y la inicialización de frameworks pesados como Spring Boot se adelantan al "momento del despliegue".
 
 Sin embargo, hay algunas cosas a tener en cuenta.
 

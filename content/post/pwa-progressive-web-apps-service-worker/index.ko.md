@@ -30,7 +30,7 @@ PWA란 단적으로 말하면 "웹의 접근성과 네이티브 앱의 높은 �
 
 ### 2.1. 네이티브 앱의 강점과 약점
 
-네이티브 앱(iOS의 Swift/Objective-C, Android의 Kotlin/Java 등으로 개발된 앱)의 가장 큰 강점은 OS의 API에 대한 완전한 접근 권한을 가진다는 것입니다.
+네이티브 앱(iOS의 Swift/Objective-C, Android의 Kotlin/[Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 등으로 개발된 앱)의 가장 큰 강점은 OS의 API에 대한 완전한 접근 권한을 가진다는 것입니다.
 이를 통해 카메라, GPS, Bluetooth, NFC, 각종 센서 등을 최대한 활용한 고도화된 기능을 구현할 수 있습니다. 또한, OS에 최적화되어 있기 때문에 렌더링 성능이 매우 뛰어나며, 복잡한 애니메이션이나 3D 그래픽을 다수 사용하는 게임 등에는 네이티브 앱이 압도적으로 유리합니다.
 
 반면에 네이티브 앱에는 다음과 같은 큰 약점(과제)이 존재합니다.

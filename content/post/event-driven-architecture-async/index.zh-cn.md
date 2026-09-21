@@ -110,7 +110,7 @@ const main = async () => {
 main();
 ```
 
-Event Loop 的优势在于无需对共享状态进行锁管理。然而，如果在 Call Stack 中执行计算密集型（CPU Bound）的繁重任务，就会阻塞整个 Event Loop，导致系统陷入停滞状态（Event Loop 阻塞）。计算复杂度应保持在 $ O(1) $ 到 $ O(N) $ 的轻量级处理。
+Event Loop 的优势在于无需对共享状态进行锁管理。然而，如果在 Call [Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/) 中执行计算密集型（CPU Bound）的繁重任务，就会阻塞整个 Event Loop，导致系统陷入停滞状态（Event Loop 阻塞）。计算复杂度应保持在 $ O(1) $ 到 $ O(N) $ 的轻量级处理。
 
 ---
 
@@ -141,7 +141,7 @@ flowchart LR
 
 ### 3.2 使用 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的 Actor 实现示例
 
-在系统编程语言 Rust 中，可以使用 `tokio` 和 `actix` 等强大的异步 Crate 来构建 Actor 模型。这里展示一个使用 `mpsc`（多生产者，单消费者）通道的简单 Actor 模式实现。
+在系统编程语言 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 中，可以使用 `tokio` 和 `actix` 等强大的异步 Crate 来构建 Actor 模型。这里展示一个使用 `mpsc`（多生产者，单消费者）通道的简单 Actor 模式实现。
 
 ```rust
 use std::sync::Arc;

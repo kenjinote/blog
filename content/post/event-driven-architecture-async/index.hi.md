@@ -110,7 +110,7 @@ const main = async () => {
 main();
 ```
 
-Event Loop का लाभ यह है कि साझा स्टेट्स के लिए लॉक प्रबंधन की कोई आवश्यकता नहीं है। हालाँकि, यदि आप Call Stack पर CPU-बाउंड भारी कार्यों को निष्पादित करते हैं, तो संपूर्ण Event Loop ब्लॉक हो जाएगा, जिससे सिस्टम के रुकने का जोखिम होता है (Event Loop ब्लॉकिंग)। कम्प्यूटेशनल जटिलता को $ O(1) $ से $ O(N) $ वाले हल्के कार्यों तक सीमित रखा जाना चाहिए।
+Event Loop का लाभ यह है कि साझा स्टेट्स के लिए लॉक प्रबंधन की कोई आवश्यकता नहीं है। हालाँकि, यदि आप Call [Stack](https://kenji.blog/hi/p/c-language-pointers-memory-management-stack-heap/) पर CPU-बाउंड भारी कार्यों को निष्पादित करते हैं, तो संपूर्ण Event Loop ब्लॉक हो जाएगा, जिससे सिस्टम के रुकने का जोखिम होता है (Event Loop ब्लॉकिंग)। कम्प्यूटेशनल जटिलता को $ O(1) $ से $ O(N) $ वाले हल्के कार्यों तक सीमित रखा जाना चाहिए।
 
 ---
 
@@ -141,7 +141,7 @@ flowchart LR
 
 ### 3.2 [Rust](https://kenji.blog/hi/p/webassembly-wasm-current-future/) का उपयोग करके Actor का कार्यान्वयन उदाहरण
 
-सिस्टम प्रोग्रामिंग भाषा Rust में, आप `tokio` या `actix` जैसे शक्तिशाली एसिंक्रोनस क्रेट्स का उपयोग करके Actor मॉडल बना सकते हैं। यहां, हम `mpsc` (Multi-Producer, Single-Consumer) चैनल का उपयोग करके एक साधारण Actor पैटर्न का कार्यान्वयन दिखाएंगे।
+सिस्टम प्रोग्रामिंग भाषा [Rust](https://kenji.blog/hi/p/programming-languages-history-paradigm-evolution/) में, आप `tokio` या `actix` जैसे शक्तिशाली एसिंक्रोनस क्रेट्स का उपयोग करके Actor मॉडल बना सकते हैं। यहां, हम `mpsc` (Multi-Producer, Single-Consumer) चैनल का उपयोग करके एक साधारण Actor पैटर्न का कार्यान्वयन दिखाएंगे।
 
 ```rust
 use std::sync::Arc;

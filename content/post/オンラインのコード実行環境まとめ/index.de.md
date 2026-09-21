@@ -28,7 +28,7 @@ Es basiert auf Jupyter Notebook.
 
 - [Javascript Playground](https://playcode.io/)
 
-## Java
+## [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)
 
 - [paiza.IO Online Java compiler](https://paiza.io/ja/projects/new?language=java)
 
@@ -47,7 +47,7 @@ Es basiert auf Jupyter Notebook.
 
 - [AWS Cloud9](https://aws.amazon.com/jp/cloud9/)
 
-Eine von Amazon AWS bereitgestellte integrierte Online-Entwicklungsumgebung. Werkzeuge für über 40 Programmiersprachen wie Node.js, JavaScript, Python, PHP, Ruby, Go, C++ usw. sind vorpaketiert.
+Eine von Amazon AWS bereitgestellte integrierte Online-Entwicklungsumgebung. Werkzeuge für über 40 Programmiersprachen wie Node.js, JavaScript, Python, PHP, Ruby, [Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/), C++ usw. sind vorpaketiert.
 
 - [Visual Studio Code for the Web](https://vscode.dev/)
 
@@ -55,7 +55,7 @@ Eine von Microsoft bereitgestellte Online-Entwicklungsumgebung. Sprachen, die ko
 
 - [paiza.IO](https://paiza.io/projects/CGAcQLfW-IOXYy8Dq2OHBw?locale=ja-jp)
 
-Eine Online-Ausführungsumgebung, die 24 Hauptsprachen wie C, C++, Java, Ruby, Python, PHP, Perl usw. unterstützt.
+Eine Online-Ausführungsumgebung, die 24 Hauptsprachen wie C, C++, [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/), Ruby, Python, PHP, Perl usw. unterstützt.
 
 - [CodePen](https://codepen.io/)
 

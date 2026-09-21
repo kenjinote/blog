@@ -30,7 +30,7 @@ Die wichtigsten Trends, die das aktuelle Ökosystem für lokale LLMs prägen, si
 
 # 2. Hardwareanforderungen und OS-Vorbereitung
 
-Um ein lokales LLM mit praktikabler Geschwindigkeit (15 bis 30 Token pro Sekunde oder mehr) auszuführen, ist die Wahl der Hardware von entscheidender Bedeutung.
+Um ein lokales [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) mit praktikabler Geschwindigkeit (15 bis 30 Token pro Sekunde oder mehr) auszuführen, ist die Wahl der Hardware von entscheidender Bedeutung.
 
 ## 2.1 Empfohlene Hardwarekonfiguration
 
@@ -162,7 +162,7 @@ Beachten Sie, dass der erforderliche VRAM linear ansteigt, je länger die Kontex
 
 # 5. Praxis 1: Schnellstes und kürzestes Setup mit Ollama
 
-Da wir nun die Theorie verstehen, lassen Sie uns ein LLM tatsächlich in einer Windows-Umgebung ausführen.
+Da wir nun die Theorie verstehen, lassen Sie uns ein [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) tatsächlich in einer Windows-Umgebung ausführen.
 Im Jahr 2026 ist das benutzerfreundlichste Tool "Ollama". Es bietet ein [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-ähnliches, intuitives CLI.
 
 ## 5.1 Installation und Ausführung
@@ -273,7 +273,7 @@ graph LR
     LocalLLM --> Answer["Finale Antwort"]
 ```
 
-Mit der Desktop-Version von AnythingLLM (für Windows) können Sie diese Architektur in wenigen Minuten aufbauen, indem Sie in den Einstellungen Ollama (für LLM und Embedding) auswählen und eine lokale Vektor-DB (LanceDB) festlegen. Dies ist die Geburtsstunde einer privaten KI, die keinerlei Daten nach außen sendet.
+Mit der Desktop-Version von AnythingLLM (für Windows) können Sie diese Architektur in wenigen Minuten aufbauen, indem Sie in den Einstellungen Ollama (für [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) und Embedding) auswählen und eine lokale Vektor-DB (LanceDB) festlegen. Dies ist die Geburtsstunde einer privaten KI, die keinerlei Daten nach außen sendet.
 
 ---
 

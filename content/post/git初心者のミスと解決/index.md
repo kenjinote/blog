@@ -34,7 +34,7 @@ Gitは主に3つのオブジェクトを使用してリポジトリの状態を�
 1. **Blob (Binary Large Object)**
    ファイルの内容そのものを保存するオブジェクトです。ファイル名や権限の情報はここには含まれません。純粋なバイト列がzlibで圧縮され、SHA-1ハッシュ値（40文字の16進数）によって識別されます。
 2. **[Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
-   ディレクトリの構造を表すオブジェクトです。Treeオブジェクトは、他のTreeオブジェクト（サブディレクトリ）やBlobオブジェクト（ファイル）へのポインタ（SHA-1ハッシュ値）、およびそれらのファイル名、アクセス権限を含みます。UNIXのディレクトリのような役割を果たします。
+   ディレクトリの構造を表すオブジェクトです。Treeオブジェクトは、他のTreeオブジェクト（サブディレクトリ）やBlobオブジェクト（ファイル）への[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（SHA-1ハッシュ値）、およびそれらのファイル名、アクセス権限を含みます。UNIXのディレクトリのような役割を果たします。
 3. **Commit**
    ある時点でのリポジトリ全体のトップレベルのTreeオブジェクトへのポインタと、メタデータ（作成者、コミット日時、コミットメッセージ）、そして直前のコミット（親コミット）へのポインタを保持します。
 
@@ -56,7 +56,7 @@ ref: refs/heads/main
 ```
 
 これは、「現在の状態は `main` ブランチの先端にある」ということを意味します。そして、`.git/refs/heads/main` を開くと、そこに40文字のSHA-1ハッシュが書かれており、これが最新のCommitオブジェクトを指し示しているのです。
-Gitのブランチとは、単に特定のコミットを指し示す軽量なポインタ（ファイル）に過ぎません。この事実を知っているだけで、「ブランチを削除したらファイルが全部消えるのでは？」という恐怖がなくなります。
+Gitのブランチとは、単に特定のコミットを指し示す軽量な[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)（ファイル）に過ぎません。この事実を知っているだけで、「ブランチを削除したらファイルが全部消えるのでは？」という恐怖がなくなります。
 
 ---
 
@@ -101,7 +101,7 @@ $$ k \approx \sqrt{2 \ln(2)} \cdot 2^{80} \approx 1.2 \times 2^{80} $$
 
 ### 解決方法：`git reset` とブランチの作成
 
-Gitでは、コミットは独立したオブジェクトであり、ブランチはただのポインタです。したがって、「新しいブランチを作ってから、現在のブランチのポインタを巻き戻す」という操作で瞬時に解決できます。
+Gitでは、コミットは独立したオブジェクトであり、ブランチはただの[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)です。したがって、「新しいブランチを作ってから、現在のブランチのポインタを巻き戻す」という操作で瞬時に解決できます。
 
 ```bash
 # 1. 現在のコミット（間違えて作ったコミット）を指す新しいブランチを作成する
@@ -117,7 +117,7 @@ $ git checkout feature/login
 
 ### 図解：内部で何が起きたのか？
 
-Mermaidの `gitGraph` を用いて、この時のブランチポインタの移動を可視化してみましょう。
+Mermaidの `gitGraph` を用いて、この時のブランチ[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の移動を可視化してみましょう。
 
 ```mermaid
 gitGraph
@@ -128,7 +128,7 @@ gitGraph
     checkout feature/login
     checkout main
 ```
-最初は `main` と `HEAD` が "Mistaken Commit" を指していましたが、`git branch feature/login` により、そこに新しいポインタが作られます。その後 `git reset` によって `main` ポインタだけが "Bugfix" の位置に戻るのです。オブジェクト自体は何も削除されていません。
+最初は `main` と `HEAD` が "Mistaken Commit" を指していましたが、`git branch feature/login` により、そこに新しい[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)が作られます。その後 `git reset` によって `main` [ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)だけが "Bugfix" の位置に戻るのです。オブジェクト自体は何も削除されていません。
 
 ---
 
@@ -368,7 +368,7 @@ $ git reflog
 
 ## 12. おわりに
 
-Git初心者が陥りやすいミスと、その背後にあるGitの仕組み、そして解決方法について非常に詳細に解説してきました。間違ったブランチへのコミット、プッシュ済みコミットの打ち消し、Stashの活用、Detached HEADからの生還、そしてコンフリクトの解消。これらすべてにおいて重要なのは、「Gitが背後でどのようなオブジェクトとポインタを操作しているのか」をイメージすることです。
+Git初心者が陥りやすいミスと、その背後にあるGitの仕組み、そして解決方法について非常に詳細に解説してきました。間違ったブランチへのコミット、プッシュ済みコミットの打ち消し、Stashの活用、Detached HEADからの生還、そしてコンフリクトの解消。これらすべてにおいて重要なのは、「Gitが背後でどのようなオブジェクトと[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を操作しているのか」をイメージすることです。
 
 数式で表されるような厳格なDiffアルゴリズムによってファイルの差分が計算され、暗号学的なハッシュ関数によって歴史の整合性が担保されている。この美しい設計思想を理解すれば、Gitは決して「得体の知れないブラックボックス」ではなく、あなたのソースコードを強固に守る最強の盾であることがわかるはずです。
 

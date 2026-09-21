@@ -13,7 +13,7 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 Dalam rekayasa perangkat lunak modern, C++ dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) berdiri di garis depan pemrograman sistem sebagai dua raksasa utama. Selama bertahun-tahun, C++ telah berkuasa sebagai raja mutlak di domain yang menuntut performa ekstrem dari perangkat keras, seperti sistem operasi, perangkat tertanam (embedded devices), mesin game (game engines), dan sistem perdagangan frekuensi tinggi (HFT). Saya sendiri sebagai insinyur C++ senior, mulai dari belantara pointer mentah di era C++98, melalui gelombang modernisasi C++11 (pengenalan smart pointer, lambda expressions, dan `auto`), hingga mendampingi spesifikasi yang terus membengkak di C++14/17/20, telah terus menulis kode.
 
-Namun baru-baru ini, sebagai solusi untuk kelemahan struktural yang dimiliki C++—terutama kerentanan keamanan yang disebabkan oleh "kurangnya keamanan memori" (sekitar 70% dari CVE konon disebabkan oleh memori) dan "spesifikasi yang semakin kompleks tanpa akhir dan perilaku tidak terdefinisi (UB)"—[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) telah menunjukkan kebangkitan yang dramatis. Adopsi resminya ke dalam kernel Linux, serta proyek migrasi skala besar ke Rust oleh perusahaan-perusahaan teknologi raksasa seperti Microsoft, Google, dan AWS, bukanlah sekadar tren sementara, melainkan menandakan pergeseran paradigma dalam pemrograman sistem.
+Namun baru-baru ini, sebagai solusi untuk kelemahan struktural yang dimiliki C++—terutama kerentanan keamanan yang disebabkan oleh "kurangnya keamanan memori" (sekitar 70% dari CVE konon disebabkan oleh memori) dan "spesifikasi yang semakin kompleks tanpa akhir dan perilaku tidak terdefinisi (UB)"—[Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) telah menunjukkan kebangkitan yang dramatis. Adopsi resminya ke dalam kernel Linux, serta proyek migrasi skala besar ke [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) oleh perusahaan-perusahaan teknologi raksasa seperti Microsoft, Google, dan AWS, bukanlah sekadar tren sementara, melainkan menandakan pergeseran paradigma dalam pemrograman sistem.
 
 Dalam artikel ini, dari sudut pandang teknis yang berkaitan erat dengan fondasi spesifikasi bahasa, saya akan membandingkan dan menjelaskan secara mendalam "kelebihan" dan "kekurangan" yang dirasakan oleh seorang insinyur C++ tulen setelah benar-benar mempelajari Rust secara mendalam dan menggunakannya dalam praktik.
 
@@ -21,7 +21,7 @@ Dalam artikel ini, dari sudut pandang teknis yang berkaitan erat dengan fondasi 
 
 # 1. Pergeseran Paradigma Manajemen Memori: Dari RAII ke Kepemilikan dan Peminjaman
 
-## RAII pada C++ dan Keterbatasan Smart Pointer
+## RAII pada C++ dan Keterbatasan Smart [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)
 
 Salah satu penemuan terbesar C++ adalah **RAII (Resource Acquisition Is Initialization)**. Konsep ini, di mana sumber daya dialokasikan di konstruktor dan dibebaskan secara otomatis di destruktor saat keluar dari cakupan (scope), telah membebaskan pengembang dari teror kebocoran memori akibat penggunaan `new` dan `delete` secara manual. Mulai C++11, `std::unique_ptr` dan `std::shared_ptr` diperkenalkan ke perpustakaan standar, memungkinkan konsep kepemilikan (Ownership) untuk diekspresikan dalam kode.
 
@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-Di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), pada saat kepemilikan sebuah variabel dipindahkan, variabel asli tersebut diperlakukan oleh kompilator setara dengan status "tidak diinisialisasi" dan sepenuhnya memblokir akses selanjutnya. Akibatnya, bug seperti "Use-After-Free (penggunaan memori setelah pembebasan)" dan "Dangling Pointer (pointer menggantung)" secara teoretis tidak akan dapat melewati kompilasi.
+Di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), pada saat kepemilikan sebuah variabel dipindahkan, variabel asli tersebut diperlakukan oleh kompilator setara dengan status "tidak diinisialisasi" dan sepenuhnya memblokir akses selanjutnya. Akibatnya, bug seperti "Use-After-Free (penggunaan memori setelah pembebasan)" dan "Dangling [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) (pointer menggantung)" secara teoretis tidak akan dapat melewati kompilasi.
 
 ```mermaid
 graph TD
@@ -102,7 +102,7 @@ Di C++, sangat mudah untuk membuat beberapa referensi atau pointer yang mutable 
 
 ---
 
-# 2. Tata Letak Memori dan Overhead Matematis Smart Pointer
+# 2. Tata Letak Memori dan Overhead Matematis Smart [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)
 
 Dalam pemrograman sistem, pemahaman yang akurat tentang tata letak memori sangatlah penting. Mari kita bandingkan `std::shared_ptr` dari C++ dengan `std::rc::Rc` / `std::sync::Arc` dari [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/).
 
@@ -158,7 +158,7 @@ int main() {
 
 ## Mutex [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) "Memiliki" Datanya
 
-Di Rust, `Mutex<T>` menggunakan generik untuk **membungkus (memiliki)** tipe data yang dilindunginya, `T`. Untuk mengakses data, Anda diharuskan memanggil `lock()` untuk mendapatkan objek pelindung (guard object). Menyentuh data tanpa mendapatkan kunci (lock) adalah hal yang tidak mungkin secara tata bahasa (sintaks).
+Di [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), `Mutex<T>` menggunakan generik untuk **membungkus (memiliki)** tipe data yang dilindunginya, `T`. Untuk mengakses data, Anda diharuskan memanggil `lock()` untuk mendapatkan objek pelindung (guard object). Menyentuh data tanpa mendapatkan kunci (lock) adalah hal yang tidak mungkin secara tata bahasa (sintaks).
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -266,7 +266,7 @@ fn draw_dynamic(item: &dyn Drawable) {
 }
 ```
 
-Fitur terbesar dari dispatch dinamis [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) (`dyn Trait`) adalah penggunaan **Fat Pointer** alih-alih memiliki vptr di dalam struktur datanya. Fat Pointer menyimpan "pointer ke data" dan "pointer ke vtable" sebagai pasangan. Karena itu, sangat mudah untuk mengimplementasikan (memperluas) trait kemudian pada tipe yang didefinisikan oleh perpustakaan (library) eksternal untuk dipanggil secara dispatch dinamis.
+Fitur terbesar dari dispatch dinamis [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) (`dyn Trait`) adalah penggunaan **Fat [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)** alih-alih memiliki vptr di dalam struktur datanya. Fat Pointer menyimpan "pointer ke data" dan "pointer ke vtable" sebagai pasangan. Karena itu, sangat mudah untuk mengimplementasikan (memperluas) trait kemudian pada tipe yang didefinisikan oleh perpustakaan (library) eksternal untuk dipanggil secara dispatch dinamis.
 
 ---
 
@@ -295,7 +295,7 @@ Hanya dengan menambahkan satu baris nama dan versi dari pustaka dependensi (crat
 
 # 7. Kekurangan dan Kurva Pembelajaran dalam Mempelajari [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)
 
-Sejauh ini saya telah membicarakan tentang kelebihan Rust, tetapi "dinding" dan kekurangan yang pasti dihadapi oleh insinyur C++ ketika mencoba untuk menempatkan Rust ke dalam praktik pertempuran yang sesungguhnya tentu saja ada.
+Sejauh ini saya telah membicarakan tentang kelebihan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), tetapi "dinding" dan kekurangan yang pasti dihadapi oleh insinyur C++ ketika mencoba untuk menempatkan Rust ke dalam praktik pertempuran yang sesungguhnya tentu saja ada.
 
 ## 1. Pergulatan Sengit dengan [Borrow Checker](https://kenji.blog/id/p/memory-management-garbage-collection/)
 Jika Anda mencoba untuk secara langsung mengimplementasikan struktur data yang di C++ "biasanya dihubungkan dengan pointer mentah (raw pointer)" (seperti doubly linked list, struktur graf, atau struktur yang mereferensikan dirinya sendiri) ke dalam [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), kode tersebut tidak akan lulus kompilasi karena adanya batasan pada kepemilikan dan lifetime. Untuk memuaskan Borrow Checker, Anda perlu menerapkan pembungkus yang rumit seperti `Rc<RefCell<T>>`, atau secara fundamental merombak desain menjadi pengelolaan berbasis indeks atau menggunakan arena allocator.
@@ -312,6 +312,6 @@ Meskipun integrasi dengan bahasa C (FFI) sangat lancar, untuk mengintegrasikan [
 
 C++ di masa mendatang akan terus memainkan peran penting dalam pengembangan mesin game dan infrastruktur besar yang sudah ada. Modernisasi melalui C++20/23 juga sangat luar biasa, memungkinkannya untuk ditulis dengan cara yang jauh lebih aman.
 
-Namun, untuk "proyek pemrograman sistem yang baru dimulai," saya merasa sekarang **lebih sulit menemukan alasan untuk TIDAK memilih Rust**. "Kepastian (certainty)" yang ditawarkan oleh Rust, di mana selama kodenya lulus dikompilasi maka Anda terbebas dari ketakutan akan perilaku tidak terdefinisi dan kerusakan memori, serta kemampuan untuk memproses secara paralel dengan aman dan pada kinerja tinggi, secara dramatis meningkatkan model mental seorang insinyur.
+Namun, untuk "proyek pemrograman sistem yang baru dimulai," saya merasa sekarang **lebih sulit menemukan alasan untuk TIDAK memilih [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)**. "Kepastian (certainty)" yang ditawarkan oleh Rust, di mana selama kodenya lulus dikompilasi maka Anda terbebas dari ketakutan akan perilaku tidak terdefinisi dan kerusakan memori, serta kemampuan untuk memproses secara paralel dengan aman dan pada kinerja tinggi, secara dramatis meningkatkan model mental seorang insinyur.
 
 Bagi seorang insinyur C++, mempelajari Rust bukan sekadar tentang menghafal sintaksis baru, melainkan sebuah pengalaman terbaik untuk mendapatkan perspektif baru terhadap "metode pengelolaan memori dan thread yang aman". Saya harap Anda semua juga dapat merasakan secara langsung nyamannya penggunaan Cargo sekaligus ketegasan yang diberikan oleh [Borrow Checker](https://kenji.blog/id/p/memory-management-garbage-collection/).

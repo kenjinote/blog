@@ -209,7 +209,7 @@ int main() {
 
 ### [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的实现
 
-在 Rust 中，由于所有权和借用规则，链表的实现往往会变得复杂，但在竞技编程等场景中，将其建模为数组（或 `Vec`）上的索引引用问题是很常见的。
+在 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 中，由于所有权和借用规则，链表的实现往往会变得复杂，但在竞技编程等场景中，将其建模为数组（或 `Vec`）上的索引引用问题是很常见的。
 这里展示了一个不使用“指向下一个的指针”，而是使用保存“下一个索引”的数组的实现示例。
 
 ```rust

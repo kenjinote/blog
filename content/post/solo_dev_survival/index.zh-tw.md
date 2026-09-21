@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # 緒論：挑戰巨人的「無產者」戰鬥方式
 
-在軟體開發的歷史上，個人開發者（獨立開發者）迎來了前所未有的有利時代。AWS和GCP等雲端基礎設施的民主化，Vercel和Supabase等BaaS（Backend as a [Service](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)）的崛起，最重要的是LLM（大型語言模型）的進化帶來的程式碼自動化。這一切為個人創造了能夠與作為「巨人」的大型科技企業正面對決的土壤。
+在軟體開發的歷史上，個人開發者（獨立開發者）迎來了前所未有的有利時代。AWS和GCP等雲端基礎設施的民主化，Vercel和Supabase等BaaS（Backend as a [Service](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)）的崛起，最重要的是[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)（大型語言模型）的進化帶來的程式碼自動化。這一切為個人創造了能夠與作為「巨人」的大型科技企業正面對決的土壤。
 
 然而，即使技術資源變得扁平化，採用與大企業相同的戰略也未必能獲勝。在資本、行銷和品牌影響力方面，個人處於絕對的劣勢。個人開發者若要生存並取得勝利，獨特的「生存戰略」是不可或缺的。
 
@@ -248,7 +248,7 @@ export async function getUserByEmail(email: string) {
 
 # 7. 程式化 SEO 與 AI 生成內容
 
-對於沒有行銷預算的個人開發者來說，戰鬥的最強武器就是「SEO（搜尋引擎最佳化）」。近年來，結合自家資料庫與 LLM 來動態生成數千至數萬個落地頁的「程式化 SEO（Programmatic SEO）」備受矚目。
+對於沒有行銷預算的個人開發者來說，戰鬥的最強武器就是「SEO（搜尋引擎最佳化）」。近年來，結合自家資料庫與 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 來動態生成數千至數萬個落地頁的「程式化 SEO（Programmatic SEO）」備受矚目。
 
 流量的分佈同樣遵循冪律。與其瞄準特定的熱門關鍵字，不如大量涵蓋搜尋量雖小但轉換率較高的「長尾關鍵字」，藉此提升整體的存取量。
 

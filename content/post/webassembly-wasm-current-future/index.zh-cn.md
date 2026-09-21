@@ -19,7 +19,7 @@ tags:
 
 长期以来，Web 浏览器一直被 JavaScript 这一单一语言所主导。然而，随着 Web 应用程序变得日益复杂，以及对媲美原生应用的性能需求不断增加，仅靠 JavaScript 的局限性也开始显现。于是， **WebAssembly (Wasm)** 应运而生。
 
-WebAssembly 是一种新的二进制格式，可以在浏览器上以接近原生代码的速度运行。它是由 C、C++、Rust 等编程语言编译生成的，如今不仅在 Web 开发中，甚至在服务器端、边缘计算乃至 IoT 设备等广泛领域都带来了创新。
+WebAssembly 是一种新的二进制格式，可以在浏览器上以接近原生代码的速度运行。它是由 C、C++、[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 等编程语言编译生成的，如今不仅在 Web 开发中，甚至在服务器端、边缘计算乃至 IoT 设备等广泛领域都带来了创新。
 
 在本文中，我们将从 WebAssembly 的基本概念出发，深入探讨 C 和 Rust 在浏览器中运行的技术机制、与 JavaScript 的协作、性能对比，以及在浏览器外世界的应用（WASI），全面讲解 WebAssembly 的现在与未来。
 
@@ -92,7 +92,7 @@ WebAssembly 采用了 **堆栈机** 架构。它没有寄存器，所有的计�
 
 ## 2.3 内存模型（线性内存）
 
-在 C 和 Rust 中，频繁使用指针进行内存操作。为了实现这一点，WebAssembly 引入了 **线性内存 (Linear Memory)** 的概念。
+在 C 和 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 中，频繁使用指针进行内存操作。为了实现这一点，WebAssembly 引入了 **线性内存 (Linear Memory)** 的概念。
 
 线性内存是可以从 WebAssembly 实例中访问的连续字节数组。在 JavaScript 看来，它就像是 `ArrayBuffer` 或 `SharedArrayBuffer` 。Wasm 内部的指针仅仅是这个数组的索引（整数值）而已。
 
@@ -134,7 +134,7 @@ fetch('module.wasm')
 ## 3.2 访问 Web API 与绑定
 
 Wasm 本身并不具备直接访问 DOM 或 Web API 的功能。如果要访问，必须通过 JavaScript。
-然而，手动编写这些代码非常繁琐。因此，在 Rust 的生态系统中提供了 **wasm-bindgen** 等工具。
+然而，手动编写这些代码非常繁琐。因此，在 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 的生态系统中提供了 **wasm-bindgen** 等工具。
 
 ```rust
 // Rust 代码 (使用 wasm-bindgen)
@@ -151,7 +151,7 @@ pub fn greet(name: &str) {
 }
 ```
 
-当编译这段代码时， `wasm-bindgen` 会自动生成 JavaScript 的胶水代码（起粘合作用的代码），并隐藏字符串的内存传递等细节。借此，我们可以获得仿佛从 Rust 直接调用浏览器 API 一般的开发体验。
+当编译这段代码时， `wasm-bindgen` 会自动生成 JavaScript 的胶水代码（起粘合作用的代码），并隐藏字符串的内存传递等细节。借此，我们可以获得仿佛从 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 直接调用浏览器 API 一般的开发体验。
 
 ---
 
@@ -185,7 +185,7 @@ function fibJs(n) {
 }
 ```
 
-### Rust 实现
+### [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 实现
 ```rust
 #[no_mangle]
 pub fn fib_wasm(n: u32) -> u32 {
@@ -194,7 +194,7 @@ pub fn fib_wasm(n: u32) -> u32 {
 }
 ```
 
-在令 $n=40$ 进行计算时，通常 JavaScript（V8引擎）由于 JIT 优化也能执行得相当快，但由 Rust 生成的 Wasm 往往比其 **约1.5倍到2倍以上** 更快。特别是在矩阵运算或图像处理等能够发挥内存连续访问和 SIMD 指令优势的领域，这种差异会更加显著。
+在令 $n=40$ 进行计算时，通常 JavaScript（V8引擎）由于 JIT 优化也能执行得相当快，但由 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 生成的 Wasm 往往比其 **约1.5倍到2倍以上** 更快。特别是在矩阵运算或图像处理等能够发挥内存连续访问和 SIMD 指令优势的领域，这种差异会更加显著。
 
 ---
 
@@ -229,7 +229,7 @@ WebAssembly 在初始发布（MVP）之后也在不断演进，如今浏览器�
 通过利用 Web Workers 和 `SharedArrayBuffer` ，多个 Wasm 实例可以共享同一个内存区域，并以多线程并发执行处理。这使得高级物理模拟或游戏引擎等能够在浏览器中流畅运行。
 
 ## 6.3 垃圾回收 (Wasm GC)
-传统的 Wasm 是为 C 或 Rust 这种需要手动管理线性内存的语言设计的，但为了高效地将 Java、Kotlin、C#、Dart 等需要垃圾回收的语言编译到 Wasm， **Wasm GC** 提案正在标准化。由此，Flutter Web 等的性能得到了突飞猛进的提升。
+传统的 Wasm 是为 C 或 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 这种需要手动管理线性内存的语言设计的，但为了高效地将 [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)、Kotlin、C#、Dart 等需要垃圾回收的语言编译到 Wasm， **Wasm GC** 提案正在标准化。由此，Flutter Web 等的性能得到了突飞猛进的提升。
 
 ---
 
@@ -260,7 +260,7 @@ Wasm 比容器轻量得多，启动极快（几毫秒级别），且具有不依
 当前 WebAssembly 面临的最大挑战是，让不同语言编写的 Wasm 模块协同工作非常困难（因为不同语言中字符串或复杂数据类型的内存表示是不同的）。
 
 能够解决这个问题的是 **WebAssembly Component Model** 。
-如果组件模型得以实现，就能够做到例如从“用 Python 编写的 Wasm 模块”中无缝地调用“用 Rust 编写的 Wasm 模块”的函数。它具备成为不依赖平台和语言的下一代微服务架构基础的潜力。
+如果组件模型得以实现，就能够做到例如从“用 Python 编写的 Wasm 模块”中无缝地调用“用 [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 编写的 Wasm 模块”的函数。它具备成为不依赖平台和语言的下一代微服务架构基础的潜力。
 
 ## 8.2 作为插件系统的 Wasm
 事实上，Figma、EnvoyProxy、Microsoft Flight Simulator 等众多软件已经采用 WebAssembly 作为其专属的插件系统。这是因为它们能够安全且高速地在主体应用程序中运行用户编写的第三方代码。

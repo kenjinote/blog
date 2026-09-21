@@ -14,7 +14,7 @@ tags: ["Rust", "CLI", "clap", "tokio"]
 
 在現代的軟體開發中，CLI（命令列介面）工具是大幅提升開發者生產力不可或缺的存在。過去主要以 Shell 腳本、Python、Ruby 等為主流，但近年來 **[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)** 在 CLI 工具開發領域已經確立了事實標準（De facto standard）的堅固地位。
 
-本文將從基礎到進階，徹底解說如何使用 Rust 建構「爆速執行、爆速開發」的實用 CLI 工具。我們不只是要做出會動的東西，還將全面涵蓋商業級別的穩健錯誤處理（Error Handling）、使用非同步處理的高速 API 請求，以及能夠提升使用者體驗（UX）的進度條實作。
+本文將從基礎到進階，徹底解說如何使用 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 建構「爆速執行、爆速開發」的實用 CLI 工具。我們不只是要做出會動的東西，還將全面涵蓋商業級別的穩健錯誤處理（Error Handling）、使用非同步處理的高速 API 請求，以及能夠提升使用者體驗（UX）的進度條實作。
 
 讀完本文後，你將能夠掌握以下的高階 Rust 技術堆疊，並將自己開發的強大 CLI 工具發佈到全世界。
 
@@ -430,10 +430,10 @@ cargo publish
 
 本文詳細解說了使用 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 開發 CLI 工具的一連串流程。
 
-1. **設計方針** ：確認了 Rust 的安全性、高速性，以及單一執行檔的優勢。
+1. **設計方針** ：確認了 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 的安全性、高速性，以及單一執行檔的優勢。
 2. **Crate 的選擇** ：掌握了 `clap`、`tokio`、`serde`、`indicatif`、`thiserror`、`anyhow` 等強大的武器。
 3. **並行處理的數學優勢** ：基於阿姆達爾定律與利特爾法則，在理論上理解了非同步處理的威力。
 4. **實作與最佳化** ：從穩健的錯誤處理到極限的執行檔最佳化，融入了實用的經驗與技巧（Know-how）。
 
-使用 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 進行 CLI 開發，可以透過與編譯器的對話，從設計階段就確保軟體的品質，這是一個非常棒的體驗。請務必以這次完成的基礎程式碼為出發點，開發出專屬於你原創的 CLI 工具，並向全世界發表！Happy Rust Coding！
+使用 [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) 進行 CLI 開發，可以透過與編譯器的對話，從設計階段就確保軟體的品質，這是一個非常棒的體驗。請務必以這次完成的基礎程式碼為出發點，開發出專屬於你原創的 CLI 工具，並向全世界發表！Happy [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) Coding！
 

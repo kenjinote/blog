@@ -14,7 +14,7 @@ tags: ["Rust", "CLI", "clap", "tokio"]
 
 현대의 소프트웨어 개발에 있어 CLI(명령줄 인터페이스) 도구는 개발자의 생산성을 비약적으로 높여주는 필수불가결한 존재입니다. 예전에는 쉘 스크립트나 Python, Ruby 등이 주류였지만, 최근에는 **[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)** 가 CLI 도구 개발의 사실상 표준으로 확고한 지위를 구축해 나가고 있습니다.
 
-본 기사에서는 Rust를 사용하여 '초고속으로 동작하고, 초고속으로 개발할 수 있는' 실용적인 CLI 도구 구축 방법을 기초부터 응용까지 철저하게 해설합니다. 단순히 동작하는 것을 만드는 것에 그치지 않고, 상용 수준에서 통용되는 견고한 에러 핸들링, 비동기 처리를 이용한 고속 API 요청, 그리고 사용자 경험(UX)을 향상시키는 프로그레스 바 구현까지 망라하여 다룹니다.
+본 기사에서는 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)를 사용하여 '초고속으로 동작하고, 초고속으로 개발할 수 있는' 실용적인 CLI 도구 구축 방법을 기초부터 응용까지 철저하게 해설합니다. 단순히 동작하는 것을 만드는 것에 그치지 않고, 상용 수준에서 통용되는 견고한 에러 핸들링, 비동기 처리를 이용한 고속 API 요청, 그리고 사용자 경험(UX)을 향상시키는 프로그레스 바 구현까지 망라하여 다룹니다.
 
 이 기사를 끝까지 읽음으로써, 여러분은 다음과 같은 고도의 Rust 기술 스택을 마스터하고, 자신만의 강력한 CLI 도구를 세계를 향해 공개할 수 있게 될 것입니다.
 
@@ -430,10 +430,10 @@ cargo publish
 
 본 기사에서는 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)를 이용한 CLI 도구 개발의 일련의 흐름을 상세하게 해설했습니다.
 
-1. **설계 방침**: Rust의 안전성과 고속성, 단일 바이너리의 이점을 확인했습니다.
+1. **설계 방침**: [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)의 안전성과 고속성, 단일 바이너리의 이점을 확인했습니다.
 2. **크레이트 선정**: `clap`, `tokio`, `serde`, `indicatif`, `thiserror`, `anyhow`라는 강력한 무기를 얻었습니다.
 3. **병행 처리의 수학적 우위성**: 암달의 법칙과 리틀의 법칙을 바탕으로 비동기 처리의 위력을 이론적으로 이해했습니다.
 4. **구현과 최적화**: 견고한 에러 핸들링부터 극한의 바이너리 최적화까지 실용적인 노하우를 담았습니다.
 
-[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)를 활용한 CLI 개발은 컴파일러와의 대화를 통해 소프트웨어의 품질을 설계 단계부터 담보할 수 있는 훌륭한 경험입니다. 이번에 작성한 기본 코드를 바탕으로 부디 여러분만의 오리지널 CLI 도구를 개발하여 전 세계를 향해 공유해 보시기 바랍니다! Happy Rust Coding!
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)를 활용한 CLI 개발은 컴파일러와의 대화를 통해 소프트웨어의 품질을 설계 단계부터 담보할 수 있는 훌륭한 경험입니다. 이번에 작성한 기본 코드를 바탕으로 부디 여러분만의 오리지널 CLI 도구를 개발하여 전 세계를 향해 공유해 보시기 바랍니다! Happy [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) Coding!
 

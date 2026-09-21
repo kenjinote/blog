@@ -16,7 +16,7 @@ tags:
 
 ## 1. Introducción: La filosofía subyacente de la programación funcional
 
-En el desarrollo de software moderno, la **programación funcional** ([Functional Programming](https://kenji.blog/es/p/oop-vs-fp-vs-dop/)) ya no es un enfoque para unos pocos entusiastas, sino que se ha convertido en un paradigma ampliamente adoptado. Desde tecnologías frontend como React, hasta [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) y Scala, e incluso en lenguajes orientados a objetos como Java y C#, se han incorporado conceptos como el tratamiento de funciones como objetos de primera clase y la eliminación de efectos secundarios.
+En el desarrollo de software moderno, la **programación funcional** ([Functional Programming](https://kenji.blog/es/p/oop-vs-fp-vs-dop/)) ya no es un enfoque para unos pocos entusiastas, sino que se ha convertido en un paradigma ampliamente adoptado. Desde tecnologías frontend como React, hasta [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) y Scala, e incluso en lenguajes orientados a objetos como [Java](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) y C#, se han incorporado conceptos como el tratamiento de funciones como objetos de primera clase y la eliminación de efectos secundarios.
 
 Sin embargo, detrás de este paradigma existe una profunda teoría matemática construida en la década de 1930, antes del nacimiento físico de los ordenadores. Se trata del **cálculo lambda** ( $\lambda$-calculus ) propuesto por Alonzo Church.
 
@@ -219,7 +219,7 @@ firstTenEvens = take 10 (map (*2) naturals)
 
 ### 8.2 Mónadas (Monads) y manejo de efectos secundarios
 
-En los lenguajes funcionales puros, cómo manejar "efectos secundarios (Side Effects)" como la entrada/salida y los cambios de estado manteniendo la pureza matemática (transparencia referencial) fue un desafío de larga data. Haskell resolvió este problema de manera elegante mediante la introducción del concepto de **mónadas** (Monad) de la teoría de categorías (Category Theory).
+En los lenguajes funcionales puros, cómo manejar "efectos secundarios (Side Effects)" como la entrada/salida y los cambios de estado manteniendo la pureza matemática (transparencia referencial) fue un desafío de larga data. Haskell resolvió este problema de manera elegante mediante la introducción del concepto de **mónadas** ([Monad](https://kenji.blog/es/p/functional-programming-concepts-pure-functions-monads/)) de la teoría de categorías (Category Theory).
 
 A través de la mónada IO, tuvo éxito en separar completamente "el cálculo" y "la ejecución con efectos secundarios" a nivel del sistema de tipos.
 

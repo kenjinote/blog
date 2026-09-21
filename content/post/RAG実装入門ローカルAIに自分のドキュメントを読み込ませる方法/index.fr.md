@@ -11,7 +11,7 @@ tags: ["RAG", "Vector DB", "Embeddings", "Python", "Local AI"]
 
 # Introduction
 
-Ces dernières années, l'évolution des grands modèles de langage (LLM) a été remarquable, et de nombreuses IA telles que ChatGPT et Claude ont imprégné nos vies et nos entreprises. Cependant, les LLM généraux présentent une faiblesse évidente. Ils ne connaissent que les « informations publiques au moment de leur entraînement ». Naturellement, ils ne peuvent pas répondre aux questions concernant des « documents privés » tels que les règlements internes d'une entreprise, les notes personnelles ou les documents de projets non publiés. Si vous essayez de les forcer à répondre, le risque qu'ils génèrent des mensonges plausibles qui ne correspondent pas aux faits (hallucinations) augmente considérablement.
+Ces dernières années, l'évolution des grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) a été remarquable, et de nombreuses IA telles que ChatGPT et Claude ont imprégné nos vies et nos entreprises. Cependant, les LLM généraux présentent une faiblesse évidente. Ils ne connaissent que les « informations publiques au moment de leur entraînement ». Naturellement, ils ne peuvent pas répondre aux questions concernant des « documents privés » tels que les règlements internes d'une entreprise, les notes personnelles ou les documents de projets non publiés. Si vous essayez de les forcer à répondre, le risque qu'ils génèrent des mensonges plausibles qui ne correspondent pas aux faits (hallucinations) augmente considérablement.
 
 C'est pourquoi l'architecture technologique appelée **RAG (Retrieval-Augmented Generation : Génération Augmentée par la Recherche)** connaît actuellement une diffusion explosive dans le monde entier. L'utilisation du RAG permet de fournir dynamiquement des connaissances propres au LLM à partir d'une base de données externe, ce qui lui permet de générer des réponses précises et fondées.
 
@@ -54,7 +54,7 @@ graph TD
 
 ## Phase d'ingestion (Préparation)
 1. **Chargement des documents** : Chargez des données non structurées telles que des PDF, des documents Word, des fichiers texte, etc.
-2. **Chunking (Division du texte)** : Divisez les textes longs en blocs significatifs (chunks) pour les adapter à la limite d'entrée (fenêtre de contexte) du LLM et pour améliorer la précision de la recherche.
+2. **Chunking (Division du texte)** : Divisez les textes longs en blocs significatifs (chunks) pour les adapter à la limite d'entrée (fenêtre de contexte) du [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) et pour améliorer la précision de la recherche.
 3. **Embedding (Vectorisation)** : Entrez les chunks divisés dans un modèle de plongement (Embedding Model) et convertissez-les en un tableau de nombres (vecteur) de plusieurs centaines à plusieurs milliers de dimensions.
 4. **Enregistrement dans la base de données** : Enregistrez les vecteurs convertis et les données textuelles d'origine associées dans une base de données vectorielle (Vector DB).
 
@@ -101,11 +101,11 @@ Les bases de données vectorielles récentes (Chroma, FAISS, Qdrant, etc.) adopt
 
 Pour construire un RAG local complet qui ne dépend pas du cloud, nous tirerons parti de l'écosystème open source. Voici la pile technologique recommandée.
 
-1. **Modèle de langage (LLM)**
+1. **Modèle de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/))**
    - Outils : `Ollama` ou `Llama.cpp`
    - Modèles : Des modèles ouverts légers et performants tels que `Llama-3-8B-Instruct`, `Gemma-2-9B-It`, `Qwen2-7B-Instruct`. Pour les tâches en japonais, des modèles ajustés pour le japonais comme `Llama-3-ELYZA-JP-8B` sont appropriés.
 2. **Modèle de plongement (Embedding)**
-   - Modèles : `intfloat/multilingual-e5-large` ou `BAAI/bge-m3`. Lors de l'exécution locale, il est courant de les télécharger depuis Hugging Face et de les exécuter avec Sentence-Transformers.
+   - Modèles : `intfloat/multilingual-e5-large` ou `BAAI/bge-m3`. Lors de l'exécution locale, il est courant de les télécharger depuis Hugging Face et de les exécuter avec Sentence-[Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)s.
 3. **Base de données vectorielle (Vector DB)**
    - `ChromaDB` : Basée sur Python, son installation est extrêmement simple. Idéale pour le développement local.
    - `FAISS` : Une bibliothèque de recherche vectorielle rapide développée par Meta.
@@ -131,7 +131,7 @@ pip install chromadb sentence-transformers pypdf
 
 ## Étape 2 : Vue d'ensemble du code d'implémentation
 
-Voici un script Python complet pour lire un fichier PDF, le vectoriser et permettre à un LLM local de répondre aux questions.
+Voici un script Python complet pour lire un fichier PDF, le vectoriser et permettre à un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) local de répondre aux questions.
 
 ```python
 import os
@@ -252,7 +252,7 @@ Par conséquent, en effectuant parallèlement une **recherche sémantique** bas�
 La recherche vectorielle est rapide, mais elle n'évalue pas nécessairement la pertinence contextuelle exacte du contexte. Un pipeline courant pour améliorer la précision de la recherche est le suivant :
 1. **Recherche initiale (First-stage Retrieval)** : Récupérez largement et superficiellement environ 20 à 30 chunks pertinents à partir de la base de données vectorielle.
 2. **Réévaluation (Re-ranking)** : Utilisez un autre modèle d'apprentissage automatique plus lourd appelé Cross-Encoder (par exemple : `bge-reranker`, etc.) pour entrer la paire de la requête de l'utilisateur et du chunk récupéré, et recalculez le score de pertinence sémantique.
-3. **Sélection** : Seuls les 3 à 5 premiers résultats ayant les scores les plus élevés sont passés au prompt du LLM en tant que contexte final.
+3. **Sélection** : Seuls les 3 à 5 premiers résultats ayant les scores les plus élevés sont passés au prompt du [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) en tant que contexte final.
 
 Cette méthode empêche les informations bruyantes non pertinentes d'être transmises au LLM et peut considérablement augmenter la précision (Precision) des réponses.
 
@@ -267,7 +267,7 @@ graph LR
 
 ## 5.3 Chunking sémantique et recherche de document parent
 Plutôt que de diviser mécaniquement le texte par un nombre fixe de caractères, il existe une technique appelée « Semantic Chunking » qui utilise l'IA pour détecter les changements de sens dans les phrases et les diviser.
-De plus, dans une technique appelée « Parent Document Retriever (Recherche de document parent) », la vectorisation est effectuée en très petites unités (comme des phrases) pour la recherche afin d'obtenir une recherche très précise. Mais lorsqu'elle est transmise au LLM, c'est le « grand paragraphe d'origine (document parent) » contenant cette phrase qui est fourni, offrant ainsi un contexte suffisant au LLM.
+De plus, dans une technique appelée « Parent Document Retriever (Recherche de document parent) », la vectorisation est effectuée en très petites unités (comme des phrases) pour la recherche afin d'obtenir une recherche très précise. Mais lorsqu'elle est transmise au [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/), c'est le « grand paragraphe d'origine (document parent) » contenant cette phrase qui est fourni, offrant ainsi un contexte suffisant au LLM.
 
 ---
 
@@ -276,7 +276,7 @@ De plus, dans une technique appelée « Parent Document Retriever (Recherche de 
 Lors de la construction et de l'exploitation d'un RAG dans un environnement local, des obstacles spécifiques existent.
 
 - **Épuisement de la VRAM (Mémoire vidéo)** :
-  Pour faire fonctionner un LLM local à une vitesse pratique (des dizaines de tokens par seconde), le modèle doit être chargé dans la VRAM du GPU. Pour exécuter un modèle de classe 8B en fp16 (virgule flottante 16 bits), environ 16 Go de VRAM sont nécessaires. Cependant, en utilisant des technologies de **quantification (Quantization)** (techniques de compression en 4 bits ou 8 bits telles que les formats GGUF ou AWQ), il est possible de le faire fonctionner suffisamment vite même avec 8 Go de VRAM (PC de jeu standard, etc.). Llama.cpp et Ollama prennent en charge ces formats quantifiés de manière native.
+  Pour faire fonctionner un LLM local à une vitesse pratique (des dizaines de tokens par seconde), le modèle doit être chargé dans la VRAM du GPU. Pour exécuter un modèle de classe 8B en fp16 (virgule flottante 16 bits), environ 16 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) de VRAM sont nécessaires. Cependant, en utilisant des technologies de **quantification (Quantization)** (techniques de compression en 4 bits ou 8 bits telles que les formats GGUF ou AWQ), il est possible de le faire fonctionner suffisamment vite même avec 8 Go de VRAM (PC de jeu standard, etc.). Llama.cpp et Ollama prennent en charge ces formats quantifiés de manière native.
 - **Limite de la fenêtre de contexte** :
   Si la quantité de contexte récupérée par la recherche est trop importante, elle peut dépasser la limite d'entrée du LLM (limite de tokens), ou le modèle peut oublier les parties intermédiaires de l'information (phénomène de Lost in the middle). L'ajustement du nombre de chunks extraits et la sélection stricte à l'aide de la technologie de re-classement mentionnée ci-dessus sont essentiels.
 - **Gestion de la fraîcheur des données** :

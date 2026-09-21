@@ -26,13 +26,13 @@ description: '將C語言、Python、Java、JavaScript，以及Rust、Go、OCaml�
 
 ## [Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)
 
-## Go
+## [Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)
 
 ## Python
 
 ## Ruby
 
-## Java
+## [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)
 
 ## JavaScript
 
@@ -133,4 +133,4 @@ Windows 標準內建安裝。可以處理物件。
 
 ## Salesforce APEX
 
-與 Java 非常相似的語言。
+與 [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 非常相似的語言。

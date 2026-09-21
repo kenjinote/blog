@@ -52,7 +52,7 @@ Vamos montar tudo isso usando os poderosos recursos do C++ (templates, aritméti
 
 ## 3. Os segredos do gerenciamento de memória: Arena de Memória e Alinhamento SIMD
 
-O gerenciamento de memória em um motor de inferência é um dos fatores mais importantes que afeta diretamente o desempenho. Durante a inferência, um número colossal de tensores intermediários é gerado, especialmente ao passar por cada camada de um modelo Transformer. Se alocarmos e liberarmos isso a cada vez com o `malloc` padrão, a fragmentação do heap e as trocas de contexto do SO causarão uma lentidão fatal.
+O gerenciamento de memória em um motor de inferência é um dos fatores mais importantes que afeta diretamente o desempenho. Durante a inferência, um número colossal de tensores intermediários é gerado, especialmente ao passar por cada camada de um modelo [Transformer](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/). Se alocarmos e liberarmos isso a cada vez com o `malloc` padrão, a fragmentação do heap e as trocas de contexto do SO causarão uma lentidão fatal.
 
 Portanto, adotamos a abordagem da "**Arena de Memória (Memory Arena)**". Trata-se de uma técnica em que calculamos (ou fixamos) a quantidade máxima de memória necessária no início da inferência, alocamos tudo de uma vez e separamos a memória apenas incrementando um ponteiro.
 
@@ -189,7 +189,7 @@ Ao avaliar o grafo (forward pass), utilizamos a ordenação topológica para exe
 
 ## 6. O núcleo da matemática e otimização: Produto de Matrizes (GEMM) 
 
-Mais de 90% da quantidade de cálculos de inferência de IA é gasta em multiplicação de matrizes (GEMM: General Matrix Multiply). O mecanismo de atenção (Attention), núcleo do modelo Transformer, bem como as redes feed-forward (FFN), resumem-se, em última análise, a produtos gigantes de matrizes.
+Mais de 90% da quantidade de cálculos de inferência de IA é gasta em multiplicação de matrizes (GEMM: General Matrix Multiply). O mecanismo de atenção (Attention), núcleo do modelo [Transformer](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/), bem como as redes feed-forward (FFN), resumem-se, em última análise, a produtos gigantes de matrizes.
 
 O produto $C = A B$ (tamanho $M \times N$) de duas matrizes $A$ (tamanho $M \times K$) e $B$ (tamanho $K \times N$) pode ser expresso através da seguinte fórmula:
 
@@ -344,7 +344,7 @@ Em ambientes Apple Silicon, uma biblioteca de otimização chamada MPS (Metal Pe
 
 ---
 
-## 8. Processamento específico para modelos Transformer: Attention e Cache KV
+## 8. Processamento específico para modelos [Transformer](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/): Attention e Cache KV
 
 Os LLMs de ponta, como LLaMA 2/3 e GPT, são baseados na arquitetura Transformer. Para implementar isso em C++, é indispensável construir o "Scaled Dot-Product Attention", expresso pela seguinte fórmula:
 
@@ -414,7 +414,7 @@ Fazendo uso dessas técnicas, é possível manter a taxa de uso da CPU muito pr�
 
 Manipular a sequência de bytes na memória de forma direta, forçar os registradores ao limite com instruções SIMD e lutar contra a largura de banda da VRAM da GPU para construir um motor de inferência que vai gerando textos (tokens) em japonês natural (ou qualquer outro idioma) sequencialmente no console... A sensação de realização ao ver isso acontecer proporciona uma "alegria genuína de engenheiro", a qual nunca se obterá simplesmente chamando `model.generate()` em um framework Python.
 
-Embora a tecnologia de IA tenda a se tornar uma "Caixa Preta (Black Box)", escrever tudo à mão em C++, desde as operações de tensores até a alocação de memória, permite a você entender profundamente o verdadeiro mecanismo de como um LLM "pensa".
+Embora a tecnologia de IA tenda a se tornar uma "Caixa Preta (Black Box)", escrever tudo à mão em C++, desde as operações de tensores até a alocação de memória, permite a você entender profundamente o verdadeiro mecanismo de como um [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) "pensa".
 
 Se você tem conhecimentos básicos de C++ e possui um forte interesse nas atuais tecnologias de IA, experimente o desafio de desenvolver seu próprio motor de inferência. Os códigos-fonte do GGML ou llama.cpp servirão, sem dúvida, como os melhores livros didáticos vivos disponíveis.
 

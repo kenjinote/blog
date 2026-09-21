@@ -47,7 +47,7 @@ Da dies sehr leichtgewichtig ist, ist eine ausreichende Pufferung auch auf Edge-
 
 ### 2.2 Mathematik der Mel-Spektrogramm-Konvertierung
 
-Intern verarbeitet Whisper 1D-Audiowellendaten (Raw Waveform) nicht direkt. Sie werden in ein **Mel-Spektrogramm (Mel-Spectrogram)** umgewandelt, eine Frequenzdarstellung, die dem menschlichen Gehör nahekommt, bevor sie in das Transformer-Modell eingegeben werden. `whisper.cpp` enthält diesen Konvertierungsprozess innerhalb seiner C++-Implementierung, aber das Verständnis der Mechanik ist hilfreich für die Rauschunterdrückung und Optimierung der Vorverarbeitung.
+Intern verarbeitet Whisper 1D-Audiowellendaten (Raw Waveform) nicht direkt. Sie werden in ein **Mel-Spektrogramm (Mel-Spectrogram)** umgewandelt, eine Frequenzdarstellung, die dem menschlichen Gehör nahekommt, bevor sie in das [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Modell eingegeben werden. `whisper.cpp` enthält diesen Konvertierungsprozess innerhalb seiner C++-Implementierung, aber das Verständnis der Mechanik ist hilfreich für die Rauschunterdrückung und Optimierung der Vorverarbeitung.
 
 Die Formel zur Umwandlung einer normalen Frequenz $f$ (Hz) in die Mel-Skala $m$ wird wie folgt approximiert:
 

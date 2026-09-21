@@ -30,7 +30,7 @@ By memorizing keyboard operations for Visual Studio shortcuts, you can perform d
 | `Shift` + `Ctrl` + `F9`     | Delete all breakpoints                               |
 | `F10`                       | Step over                                            |
 | `F11`                       | Step into                                            |
-| `F12`                       | Go to definition                                     |
+| `F12`                       | [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) to definition                                     |
 | `Ctrl` + `D`                | Duplicate cursor line                                |
 | `Ctrl` + `X`                | Cut the line (if there is no selection)              |
 | `Ctrl` + `Shift` + `]`      | Select up to the matching brace of the cursor part   |
@@ -40,7 +40,7 @@ By memorizing keyboard operations for Visual Studio shortcuts, you can perform d
 | `Ctrl` + `Shift` + `V`      | Show clipboard history                               |
 | `Ctrl` + `K`, `Ctrl` + `C`  | Comment out the cursor line                          |
 | `Ctrl` + `K`, `Ctrl` + `U`  | Uncomment the cursor line                            |
-| `Ctrl` + `G`                | Go to line                                           |
+| `Ctrl` + `G`                | [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) to line                                           |
 | `Ctrl` + `F`                | Find                                                 |
 | `Ctrl` + `Shift` + `F`      | Find in files (Global search)                        |
 | `Ctrl` + `H`                | Replace                                              |

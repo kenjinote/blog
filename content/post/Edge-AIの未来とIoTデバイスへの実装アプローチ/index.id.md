@@ -241,7 +241,7 @@ Pada jam tangan pintar (smartwatch) dan elektrokardiogram (ECG) portabel, tanda-
 
 Meskipun teknologi Edge AI berkembang pesat, masih terdapat banyak tantangan dan prospek masa depan yang menarik.
 
-**1. Menjalankan LLM (Large Language Models) di Edge**:
+**1. Menjalankan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) ([Large Language Models](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)) di Edge**:
 Topik terbesar dalam beberapa tahun terakhir adalah upaya "Edge LLM" untuk menjalankan AI generatif dan LLM di edge. Meskipun tidak mungkin memuat model dengan puluhan miliar parameter langsung ke edge, kemunculan framework optimasi seperti llama.cpp, kuantisasi ekstrem hingga 4-bit/2-bit (AWQ, GPTQ, dll.), dan SLM (Small Language Models) berkinerja tinggi yang kecil namun kuat seperti Phi-3 dari Microsoft, membawa kita ke era di mana pemrosesan bahasa alami dapat diselesaikan secara [offline](https://kenji.blog/id/p/pwa-progressive-web-apps-service-worker/) bahkan di smartphone atau Raspberry Pi.
 
 **2. Komputasi Neuromorfik dan SNN**:

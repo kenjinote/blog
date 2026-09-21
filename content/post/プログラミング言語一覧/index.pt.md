@@ -26,13 +26,13 @@ description: 'Listamos várias linguagens de programação, desde C, Python, Jav
 
 ## [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/)
 
-## Go
+## [Go](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/)
 
 ## Python
 
 ## Ruby
 
-## Java
+## [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/)
 
 ## JavaScript
 
@@ -133,4 +133,4 @@ Instalado por padrão no Windows. Pode manipular objetos.
 
 ## Salesforce APEX
 
-Uma linguagem muito semelhante ao Java.
+Uma linguagem muito semelhante ao [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/).

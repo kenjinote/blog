@@ -14,7 +14,7 @@ description: 'A detailed guide covering how to implement local AI features in Wi
 
 ## 1. Introduction: A New Era of Windows with Natively Integrated AI
 
-In recent years, AI technology has evolved remarkably, resulting in a rapid paradigm shift from the utilization of Large Language Models (LLMs) on the cloud to AI inference on edge devices (local PCs). At the core of this are the "Windows Copilot Runtime" provided by Microsoft for Windows 11, and the "Microsoft.Windows.AI" APIs designed to operate it.
+In recent years, AI technology has evolved remarkably, resulting in a rapid paradigm shift from the utilization of [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) on the cloud to AI inference on edge devices (local PCs). At the core of this are the "Windows Copilot Runtime" provided by Microsoft for Windows 11, and the "Microsoft.Windows.AI" APIs designed to operate it.
 
 Application development using cloud APIs (such as OpenAI and Azure OpenAI) is easy, but it comes with challenges such as latency, privacy, and continuous costs. On the other hand, running AI models locally allows for the realization of ultra-low latency applications that work even [offline](https://kenji.blog/en/p/pwa-progressive-web-apps-service-worker/) without letting sensitive data leave the device.
 
@@ -306,7 +306,7 @@ Below, we summarize essential optimization strategies for developing top-tier AI
 ### 7.1 Model Quantization and the Olive Toolkit
 To unleash the true power of an NPU, it is an absolute requirement to **Quantize** the weights and activations of AI models from FP32 (single-precision floating-point) to INT8 or INT4. The NPU architecture is specialized for integer arithmetic, theoretically achieving 4x the throughput and massive power savings with INT8 compared to FP32.
 
-By using the `Olive (ONNX Live)` toolchain provided by Microsoft, you can automatically optimize models like PyTorch for the Windows environment. Olive strongly supports specific attention optimizations for Transformer models and hardware-specific graph compilation.
+By using the `Olive (ONNX Live)` toolchain provided by Microsoft, you can automatically optimize models like PyTorch for the Windows environment. Olive strongly supports specific attention optimizations for [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) models and hardware-specific graph compilation.
 
 ### 7.2 The Trade-off: Batch Processing vs. Interactive Streaming
 In API calls, by batching multiple inference requests together, you can increase NPU utilization (Compute Utilization). However, for interactive UIs like chatbots, the time until the first token is displayed (TTFT: Time To First Token) dictates the user experience (UX) more than throughput.

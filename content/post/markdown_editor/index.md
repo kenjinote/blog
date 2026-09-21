@@ -9,7 +9,7 @@ categories: ["blogging", "productivity", "editors"]
 tags: ["Markdown", "VS Code", "Neovim", "textlint"]
 ---
 
-技術ブログを継続して執筆するためには、執筆環境の最適化が必要不可欠です。本記事では、Markdownを用いた技術ブログの執筆スピードを劇的に向上させるための、高度なエディタ設定について深く掘り下げます。Visual Studio Code (VS Code) や Neovim の極限までのカスタマイズ、スニペットの活用、日本語の文法チェックツールである textlint の導入から [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/) [パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)での自動化、そして GitHub Copilot などの LLM を活用した最先端の執筆術まで、網羅的に解説します。
+技術ブログを継続して執筆するためには、執筆環境の最適化が必要不可欠です。本記事では、Markdownを用いた技術ブログの執筆スピードを劇的に向上させるための、高度なエディタ設定について深く掘り下げます。Visual Studio Code (VS Code) や Neovim の極限までのカスタマイズ、スニペットの活用、日本語の文法チェックツールである textlint の導入から [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/) [パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)での自動化、そして GitHub Copilot などの [LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/) を活用した最先端の執筆術まで、網羅的に解説します。
 
 ## 1. 執筆スピード向上の数理モデル
 
@@ -159,7 +159,7 @@ ls.add_snippets("markdown", {
 })
 ```
 
-このように、プログラミング言語(Lua)のパワーを借りることで、固定の文字列だけでなく、関数の戻り値を埋め込んだり、入力文字数に応じて動的にテーブルの列数を増減させるような変態的なスニペットを作成することも可能です。
+このように、[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)(Lua)のパワーを借りることで、固定の文字列だけでなく、関数の戻り値を埋め込んだり、入力文字数に応じて動的にテーブルの列数を増減させるような変態的なスニペットを作成することも可能です。
 
 ## 4. 執筆品質と速度を両立する静的解析 (textlintと正規表現)
 
@@ -244,11 +244,11 @@ flowchart TD
     H --> J["Deploy to Hosting (Vercel/Netlify)"]
 ```
 
-## 5. LLM時代のマークダウン執筆術
+## 5. [LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)時代のマークダウン執筆術
 
 現代の技術ブログ執筆において、LLM (Large Language Model) の活用は避けて通れません。エディタ内蔵のAIツールを活用することで、執筆速度はさらに倍増します。
 
-### エディタ内でのプロンプトエンジニアリング
+### エディタ内での[プロンプトエンジニアリング](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)
 
 VS Code の GitHub Copilot Chat や、Neovim の `ChatGPT.nvim` や `Copilot.vim` などを使い、エディタを離れることなく以下のようなプロンプトを投げます。
 
@@ -256,7 +256,7 @@ VS Code の GitHub Copilot Chat や、Neovim の `ChatGPT.nvim` や `Copilot.vim
 
 すると、即座に見出しや箇条書きのマークダウンが生成されます。私たちはその骨組みに肉付けをしていくだけで済みます。
 
-また、複雑な Mermaid の図や数式 (LaTeX) の記述も、AIに指示を出すことで正確な構文を生成してくれます。例えば、本記事に掲載している数式や図表のレイアウトの基礎も、LLMとのペアライティングによって高速化されています。
+また、複雑な Mermaid の図や数式 (LaTeX) の記述も、AIに指示を出すことで正確な構文を生成してくれます。例えば、本記事に掲載している数式や図表のレイアウトの基礎も、[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)とのペアライティングによって高速化されています。
 
 ## 6. まとめ
 
@@ -266,7 +266,7 @@ Markdownで技術ブログを書く際の執筆スピードを倍増させるエ
 2. **VS Codeの活用**: 拡張機能と `markdown.json` のスニペットで入力を省略。
 3. **Neovimの極限カスタマイズ**: `LuaSnip` による動的スニペットと完全なキーボード操作。
 4. **textlintと静的解析**: 校正時間をゼロに近づけるための [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/) とローカル Linter の統合。
-5. **LLMの統合**: エディタ内で直接 AI にマークダウンの構成や図表のコードを出力させる。
+5. **[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)の統合**: エディタ内で直接 AI にマークダウンの構成や図表のコードを出力させる。
 
 これらの設定を自身の環境に取り入れることで、執筆の「面倒くささ」がなくなり、技術的なアウトプットの量と質が劇的に向上するはずです。まずは小さなスニペット登録一つからでも始めてみてはいかがでしょうか。
 

@@ -16,7 +16,7 @@ tags:
 
 ## 1. 簡介：流淌在函數式編程根基的哲學
 
-在現代軟體開發中， **函數式編程** （[Functional Programming](https://kenji.blog/zh-tw/p/oop-vs-fp-vs-dop/)）早已不再是少數狂熱者的方法，而是成為了廣泛普及的範式。從React等前端技術，到[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)、Scala，甚至Java與C#等物件導向語言，都引入了將函數視為一等公民（第一級物件）的處理方式以及消除副作用等概念。
+在現代軟體開發中， **函數式編程** （[Functional Programming](https://kenji.blog/zh-tw/p/oop-vs-fp-vs-dop/)）早已不再是少數狂熱者的方法，而是成為了廣泛普及的範式。從React等前端技術，到[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)、Scala，甚至[Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)與C#等物件導向語言，都引入了將函數視為一等公民（第一級物件）的處理方式以及消除副作用等概念。
 
 然而，在這個範式的背後，存在著在電腦實體誕生之前的1930年代所建構的深奧數學理論。那就是由阿隆佐·邱奇（Alonzo Church）所提出的 **[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)演算** （ $\lambda$-calculus ）。
 
@@ -219,7 +219,7 @@ firstTenEvens = take 10 (map (*2) naturals)
 
 ### 8.2 單子（Monads）與副作用的管理
 
-在純函數式語言中，如何在保持數學純粹性（參照透明性）的同時，處理輸入輸出或狀態變化等「副作用（Side Effects）」，一直是一個長期的課題。Haskell透過引入範疇論（Category Theory）的概念—— **單子** （Monad），優雅地解決了這個問題。
+在純函數式語言中，如何在保持數學純粹性（參照透明性）的同時，處理輸入輸出或狀態變化等「副作用（Side Effects）」，一直是一個長期的課題。Haskell透過引入範疇論（Category Theory）的概念—— **單子** （[Monad](https://kenji.blog/zh-tw/p/functional-programming-concepts-pure-functions-monads/)），優雅地解決了這個問題。
 
 透過IO單子，成功地在型別系統層面上將「計算」與「伴隨副作用的執行」完全分離。
 

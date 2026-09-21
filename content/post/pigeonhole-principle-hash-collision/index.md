@@ -171,9 +171,9 @@ graph LR
 この衝突を解決するために、以下のようなアルゴリズムが組み込まれています。
 
 *  **チェイン法（Chaining）** ：衝突した要素をリンクリスト（連結リスト）で繋いで同じバケットに格納する。
-*  **オープンアドレス法（Open Addressing）** ：衝突が発生した場合、特定の規則に従って「空いている別のバケット」を探して格納する。
+*  **オープン[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)法（Open Addressing）** ：衝突が発生した場合、特定の規則に従って「空いている別のバケット」を探して格納する。
 
-プログラミング言語（Pythonの `dict` や Javaの `HashMap` など）の裏側では、鳩の巣原理によって引き起こされる衝突をいかに高速かつ効率的に捌くかという、高度な工夫が凝らされています。
+[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)（Pythonの `dict` や [Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の `HashMap` など）の裏側では、鳩の巣原理によって引き起こされる衝突をいかに高速かつ効率的に捌くかという、高度な工夫が凝らされています。
 
 ## 6. 暗号技術における安全性の確保と未来
 

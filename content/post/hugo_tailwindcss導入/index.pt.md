@@ -13,7 +13,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 No desenvolvimento moderno de front-end web, equilibrar desempenho e experiência de desenvolvimento (DX: Developer Experience) é uma das prioridades mais importantes em qualquer projeto. A combinação do **Hugo**, que possui a velocidade de construção mais rápida do mundo entre os geradores de sites estáticos (SSG), com o **Tailwind CSS**, que trouxe o paradigma inovador de utility-first (utilitário em primeiro lugar), pode ser considerada uma das soluções definitivas para este desafio.
 
-O Hugo é escrito em Go e possui um desempenho impressionante, capaz de concluir a construção de milhares de páginas em apenas short segundos ou até milissegundos. Por outro lado, o Tailwind CSS elimina a troca de contexto entre arquivos CSS e HTML, escrevendo diretamente no HTML inúmeras classes utilitárias predefinidas (como `flex`, `text-center`, `mt-4`), o que acelera a iteração do design.
+O Hugo é escrito em [Go](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) e possui um desempenho impressionante, capaz de concluir a construção de milhares de páginas em apenas short segundos ou até milissegundos. Por outro lado, o Tailwind CSS elimina a troca de contexto entre arquivos CSS e HTML, escrevendo diretamente no HTML inúmeras classes utilitárias predefinidas (como `flex`, `text-center`, `mt-4`), o que acelera a iteração do design.
 
 Neste artigo, explicaremos de forma completa e detalhada o processo de introdução do Tailwind CSS em um tema do Hugo, bem como a construção de um pipeline de assets avançado (Hugo Pipes) usando PostCSS, desde a base da arquitetura até a perspectiva da otimização matemática de desempenho.
 
@@ -268,7 +268,7 @@ A seguir, a partir dos templates do Hugo, leremos o arquivo CSS acima e descreve
 
 #### Explicação do [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) e Diagrama Mermaid
 
-Para entender como o código do template Go processa o arquivo CSS, ilustramos abaixo o processo do pipeline.
+Para entender como o código do template [Go](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) processa o arquivo CSS, ilustramos abaixo o processo do pipeline.
 
 ```mermaid
 flowchart TD

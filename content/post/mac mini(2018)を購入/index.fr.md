@@ -14,7 +14,7 @@ description: 'Pour mettre en place un environnement de développement d''applica
 J'ai acheté un mac mini (2018) d'occasion sur Mercari. Les spécifications sont les suivantes.
 
 - CPU : Intel Core i7 6 cœurs à 3,2 GHz
-- Mémoire : 32 Go
+- Mémoire : 32 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)
 - Stockage : SSD de 1 To
 
 Le prix était de ￥ 77 000

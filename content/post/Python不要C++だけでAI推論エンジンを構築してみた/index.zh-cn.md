@@ -21,7 +21,7 @@ description: '虽然现今的AI开发以Python为主流，但在需要边缘设�
 3. **支持边缘设备**: 在智能手机、嵌入式设备、Raspberry Pi等资源受限的环境中，没有余力运行消耗数GB内存的Python运行时。
 4. **硬件的直接控制**: 内存分配的时机、显式使用SIMD指令、优化与GPU的内存传输等底层控制，在C++中是可以实现的。
 
-本文深受Georgi Gerganov开发的“GGML”库架构的启发，将深入技术深渊，解说如何从零开始仅使用C++构建运行大型语言模型（LLM）等推理引擎的过程。
+本文深受Georgi Gerganov开发的“GGML”库架构的启发，将深入技术深渊，解说如何从零开始仅使用C++构建运行大型语言模型（[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)）等推理引擎的过程。
 
 ---
 
@@ -52,7 +52,7 @@ graph TD
 
 ## 3. 内存管理的奥秘：内存分配池与SIMD对齐
 
-推理引擎中的内存管理是直接影响性能的最重要因素之一。在推理过程中，特别是在通过Transformer模型的各层时，会生成大量的中间张量。如果每次都使用标准的`malloc`来分配和释放，堆的碎片化和操作系统的上下文切换将导致致命的速度下降。
+推理引擎中的内存管理是直接影响性能的最重要因素之一。在推理过程中，特别是在通过[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)模型的各层时，会生成大量的中间张量。如果每次都使用标准的`malloc`来分配和释放，堆的碎片化和操作系统的上下文切换将导致致命的速度下降。
 
 因此，我们采用“ **内存分配池（Memory Arena）** ”的方法。这是一种在推理开始时计算（或固定）所需的最大内存量并一次性分配，之后仅通过递增指针来切分内存的手法。
 
@@ -189,7 +189,7 @@ graph LR
 
 ## 6. 数学与优化的核心：矩阵乘法 (GEMM) 
 
-AI推理计算量的90%以上都花费在矩阵乘法（GEMM: General Matrix Multiply）上。Transformer模型核心的注意力机制和前馈网络（FFN），归根结底都是巨大的矩阵乘积。
+AI推理计算量的90%以上都花费在矩阵乘法（GEMM: General Matrix Multiply）上。[Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)模型核心的注意力机制和前馈网络（FFN），归根结底都是巨大的矩阵乘积。
 
 两个矩阵 $A$ (大小为 $M \times K$) 和 $B$ (大小为 $K \times N$) 的乘积 $C = A B$ (大小为 $M \times N$) 用公式表示如下。
 
@@ -244,7 +244,7 @@ float dot_product_avx2(const float* a, const float* b, int n) {
 
 ## 7. 跨越硬件壁垒：CUDA与Metal后端的集成
 
-虽然纯C++实现在CPU上能跑得还凑合，但要在实际可用的速度（例如：每秒生成20个令牌以上）下运行LLM等庞大的模型，GPU的并行计算能力是不可或缺的。因此，我们要在引擎中引入后端抽象层。
+虽然纯C++实现在CPU上能跑得还凑合，但要在实际可用的速度（例如：每秒生成20个令牌以上）下运行[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)等庞大的模型，GPU的并行计算能力是不可或缺的。因此，我们要在引擎中引入后端抽象层。
 
 ### 7.1 后端抽象
 
@@ -344,9 +344,9 @@ kernel void mul_mat_kernel(
 
 ---
 
-## 8. Transformer模型特有的处理：Attention与KV缓存
+## 8. [Transformer](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)模型特有的处理：Attention与KV缓存
 
-像LLaMA 2/3或GPT这样最先进的LLM是基于Transformer架构的。要在C++中实现它，必须构建以下公式表示的“缩放点积注意力 (Scaled Dot-Product Attention)”。
+像LLaMA 2/3或GPT这样最先进的[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)是基于Transformer架构的。要在C++中实现它，必须构建以下公式表示的“缩放点积注意力 (Scaled Dot-Product Attention)”。
 
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
@@ -389,7 +389,7 @@ graph TD
 
 在推理引擎端，从内存中读取被压缩为INT4（或INT8）的权重，在 **加载到CPU或GPU的寄存器后，立即展开（反量化）为FP16或FP32进行计算** 。
 
-令人惊讶的是，即使增加了计算量，减少从内存中读取的数据量反而会更快。这是因为在现代硬件中，推理任务的瓶颈不在于“计算力（Compute Bound）”，而在于“ **内存带宽（Memory Bandwidth Bound）** ”。如果是实现了INT4量化的C++引擎，即便是8GB VRAM的MacBook Air等设备也能非常流畅地运行本地LLM。
+令人惊讶的是，即使增加了计算量，减少从内存中读取的数据量反而会更快。这是因为在现代硬件中，推理任务的瓶颈不在于“计算力（Compute Bound）”，而在于“ **内存带宽（Memory Bandwidth Bound）** ”。如果是实现了INT4量化的C++引擎，即便是8GB VRAM的MacBook Air等设备也能非常流畅地运行本地[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)。
 
 ---
 
@@ -414,7 +414,7 @@ Python确实很方便。在研究开发和原型制作方面，它的生产力�
 
 直接操作内存的字节流，用SIMD指令将寄存器压榨到极限，与GPU的VRAM带宽搏斗，最终完成的推理引擎在控制台上源源不断地生成自然语言文本（令牌）——当你看到这一切时所体会到的成就感，是你在Python框架中调用 `model.generate()` 时绝对无法体验到的“纯粹的工程师之喜悦”。
 
-虽然AI技术很容易成为“黑盒”，但通过用C++亲手从张量运算到内存分配编写一切，可以深刻理解LLM究竟是如何“思考”的，领悟其真正的机制。
+虽然AI技术很容易成为“黑盒”，但通过用C++亲手从张量运算到内存分配编写一切，可以深刻理解[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)究竟是如何“思考”的，领悟其真正的机制。
 
 如果你具备C++的基础知识，并对当下的AI技术有着浓厚的兴趣，请务必尝试挑战开发自己的推理引擎。GGML和llama.cpp的源代码，绝对是最好的活教材。
 

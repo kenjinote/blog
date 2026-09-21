@@ -16,13 +16,13 @@ tags:
 
 ## 1. はじめに：GoFの呪縛と解放
 
-1994年、ソフトウェア工学の歴史において記念碑的な書籍『[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)における再利用のためのデザインパターン』（通称： **GoF** 本）が出版されました。この本は、当時のC++やSmalltalkといった言語を用いたオブジェクト指向設計のベストプラクティスを23のパターンとしてカタログ化し、世界中の開発者に共通の語彙を提供しました。
+1994年、ソフトウェア工学の歴史において記念碑的な書籍『[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)における再利用のための[デザインパターン](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)』（通称： **GoF** 本）が出版されました。この本は、当時のC++やSmalltalkといった言語を用いた[オブジェクト指向](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)設計のベストプラクティスを23のパターンとしてカタログ化し、世界中の開発者に共通の語彙を提供しました。
 
-しかし、現在では **「GoFパターンは時代遅れである」** という主張を耳にすることが増えています。その背景には、プログラミング言語の進化、[関数型プログラミング](https://kenji.blog/p/oop-vs-fp-vs-dop/)（FP）のパラダイムの普及、そしてクラウドネイティブな[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)の台頭があります。
+しかし、現在では **「GoFパターンは時代遅れである」** という主張を耳にすることが増えています。その背景には、[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の進化、[関数型プログラミング](https://kenji.blog/p/oop-vs-fp-vs-dop/)（FP）のパラダイムの普及、そしてクラウドネイティブな[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/)の台頭があります。
 
 本記事では、現代のソフトウェア開発において GoF パターンがどのような立ち位置にあるのか、そして現代のベストプラクティスとは何なのかを、コード例と図解を交えながら深く掘り下げます。
 
-## 2. デザインパターンとは何か？なぜ生まれたのか？
+## 2. [デザインパターン](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)とは何か？なぜ生まれたのか？
 
 デザインパターンとは、 **「特定の文脈において頻繁に発生する問題に対する、汎用的な解決策」** です。GoFが解決しようとした問題の多くは、実は「当時の言語機能の不足」を補うためのワークアラウンド（次善策）でもありました。
 
@@ -36,7 +36,7 @@ tags:
 
 `Strategy` パターンは、アルゴリズムのファミリを定義し、それぞれをカプセル化して交換可能にするパターンです。
 
-**従来のGoF的アプローチ（Java風）**
+**従来のGoF的アプローチ（[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)風）**
 
 ```java
 // インターフェースの定義
@@ -135,7 +135,7 @@ coroutineScope.launch {
 
 現代では、 **代数的データ型 (ADT)** と **パターンマッチング** を備えた言語（[Rust](https://kenji.blog/p/webassembly-wasm-current-future/), Kotlin, Swift, Scalaなど）を使用することで、この問題は美しく解決されます。
 
-**現代のアプローチ（Rustの列挙型とパターンマッチ）**
+**現代のアプローチ（[Rust](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の列挙型とパターンマッチ）**
 
 ```rust
 // 代数的データ型（バリアントを持つEnum）
@@ -169,17 +169,17 @@ graph TD
     E[Service B] -->|Depends on| B
 ```
 
-Spring Framework (Java) や NestJS (TypeScript)、Dagger/Hilt (Android) などのDIコンテナがインスタンスの生成と破棄を管理するため、クラス自体にSingletonのロジック（ `getInstance()` や `private constructor` ）を書くべきではありません。
+Spring Framework ([Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)) や NestJS (TypeScript)、Dagger/Hilt (Android) などのDIコンテナがインスタンスの生成と破棄を管理するため、クラス自体にSingletonのロジック（ `getInstance()` や `private constructor` ）を書くべきではありません。
 
-## 4. [関数型プログラミング](https://kenji.blog/p/oop-vs-fp-vs-dop/)におけるデザインパターン
+## 4. [関数型プログラミング](https://kenji.blog/p/oop-vs-fp-vs-dop/)における[デザインパターン](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)
 
-関数型プログラミングの世界には、GoFとは異なる次元の「パターン」が存在します。これらは数学的な圏論（Category Theory）に裏打ちされています。
+[関数型プログラミング](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)の世界には、GoFとは異なる次元の「パターン」が存在します。これらは数学的な圏論（Category Theory）に裏打ちされています。
 
-### 4.1. Monad（モナド）による副作用の制御
+### 4.1. [Monad](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)（[モナド](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)）による副作用の制御
 
 GoFのパターンが「状態のミューテーション」を前提としているのに対し、関数型のアプローチでは副作用（例外、[非同期処理](https://kenji.blog/p/event-driven-architecture-async/)、Nullの可能性）を型システムに閉じ込めます。
 
-例えば、Nullオブジェクトパターンや例外処理は、 `Maybe` (Optional) や `Either` (Result) といったモナドに置き換わります。
+例えば、Nullオブジェクトパターンや例外処理は、 `Maybe` (Optional) や `Either` (Result) といった[モナド](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)に置き換わります。
 
 $$
 f: A \rightarrow M[B]
@@ -226,6 +226,6 @@ let result = divide(10.0, 2.0).and_then(|res| divide(res, 2.0));
 - **クラスよりも関数（第一級関数の活用）**
 - **VisitorパターンよりもパターンマッチングとADT**
 - **SingletonよりもDIコンテナ**
-- **状態のミューテーションよりも不変性（Immutability）と純粋関数**
+- **状態のミューテーションよりも[不変性](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)（Immutability）と[純粋関数](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)**
 
-デザインパターンは死んでいません。それはプログラミング言語の進化とともに、より洗練された姿へと形を変えただけなのです。
+[デザインパターン](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)は死んでいません。それは[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の進化とともに、より洗練された姿へと形を変えただけなのです。

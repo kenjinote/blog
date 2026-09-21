@@ -9,7 +9,7 @@ categories: ["blogging", "productivity", "editors"]
 tags: ["Markdown", "VS Code", "Neovim", "textlint"]
 ---
 
-为了能够持续撰写技术博客，优化写作环境是必不可少的。本文将深入探讨如何通过高级编辑器设置，在使用 Markdown 撰写技术博客时使写作速度得到飞跃性的提升。我们将全面介绍 Visual Studio Code (VS Code) 和 Neovim 的极限自定义、代码片段的运用、引入日语（中文）语法检查工具 textlint 以及在 [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 流水线中实现自动化，最后还会介绍利用 GitHub Copilot 等 LLM 的最前沿写作技巧。
+为了能够持续撰写技术博客，优化写作环境是必不可少的。本文将深入探讨如何通过高级编辑器设置，在使用 Markdown 撰写技术博客时使写作速度得到飞跃性的提升。我们将全面介绍 Visual Studio Code (VS Code) 和 Neovim 的极限自定义、代码片段的运用、引入日语（中文）语法检查工具 textlint 以及在 [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 流水线中实现自动化，最后还会介绍利用 GitHub Copilot 等 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 的最前沿写作技巧。
 
 ## 1. 提高写作速度的数学模型
 
@@ -244,7 +244,7 @@ flowchart TD
     H --> J["部署到托管平台 (Vercel/Netlify)"]
 ```
 
-## 5. LLM 时代的 Markdown 写作技巧
+## 5. [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 时代的 Markdown 写作技巧
 
 在现代技术博客的写作中，LLM (Large Language Model) 的运用是不可避免的。通过利用编辑器内置的 AI 工具，写作速度将进一步成倍增长。
 
@@ -256,7 +256,7 @@ flowchart TD
 
 这样，AI 会立即生成带有标题和项目符号的 Markdown。我们只需要在这些骨架上填充血肉即可。
 
-此外，对于复杂的 Mermaid 图表或数学公式 (LaTeX) 的编写，通过向 AI 下达指令，它也能生成准确的语法。例如，本文中展示的数学公式和图表布局的基础，也是通过与 LLM 结对写作而加速完成的。
+此外，对于复杂的 Mermaid 图表或数学公式 (LaTeX) 的编写，通过向 AI 下达指令，它也能生成准确的语法。例如，本文中展示的数学公式和图表布局的基础，也是通过与 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/) 结对写作而加速完成的。
 
 ## 6. 总结
 
@@ -266,7 +266,7 @@ flowchart TD
 2. **活用 VS Code** ：通过扩展插件和 `markdown.json` 中的代码片段来省略输入。
 3. **Neovim 的极限自定义** ：利用 `LuaSnip` 实现动态代码片段和纯键盘操作。
 4. **textlint 与静态分析** ：整合本地 Linter 与 [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)，将校对时间逼近于零。
-5. **整合 LLM** ：直接在编辑器中让 AI 输出 Markdown 的结构和图表代码。
+5. **整合 [LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)** ：直接在编辑器中让 AI 输出 Markdown 的结构和图表代码。
 
 将这些设置引入到自己的环境中，就能消除写作的“麻烦感”，极大提高技术输出的数量与质量。不妨从注册一个小小的代码片段开始尝试一下吧。
 

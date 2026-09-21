@@ -241,7 +241,7 @@ $$ w_{t+1} = \sum_{k=1}^{K} \frac{n_k}{N} w_{t+1}^k $$
 
 边缘AI技术正在迅速发展，但仍面临许多挑战和令人期待的未来前景。
 
-**1. 在边缘运行LLM（大型语言模型）**:
+**1. 在边缘运行[LLM](https://kenji.blog/zh-cn/p/large-language-models-llm-transformer-prompt-engineering/)（大型语言模型）**:
 近年来最大的话题是试图在边缘运行生成式AI和LLM的“Edge LLM”。虽然不可能将数百亿参数的模型直接放置到边缘设备中，但随着llama.cpp等优化框架、4位/2位极限缩放量化（AWQ、GPTQ等）以及诸如微软Phi-3等小型高性能SLM（Small Language Models）的出现，在智能手机或Raspberry Pi上也能离线完成自然语言处理的时代正在到来。
 
 **2. 神经形态计算与SNN**:

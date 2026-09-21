@@ -57,7 +57,7 @@ IaCツールには、大きく分けて「手続き型」と「宣言型」の2�
 
 # 2. Terraformとは
 
-Terraformは、HashiCorp社によってGo言語で開発されたオープンソースのIaCツールです。クラウドインフラからSaaSの設定まで、あらゆるAPIをコードとして構成・管理することができます。
+Terraformは、HashiCorp社によって[Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)言語で開発されたオープンソースのIaCツールです。クラウドインフラからSaaSの設定まで、あらゆるAPIをコードとして構成・管理することができます。
 
 ## 2.1. プロバイダー（Provider）アーキテクチャ
 

@@ -15,7 +15,7 @@ In den letzten Jahren war die Entwicklung von großen Sprachmodellen (LLMs) beme
 
 Daher verbreitet sich derzeit eine Technologiearchitektur namens **RAG (Retrieval-Augmented Generation)** weltweit rasant. Durch den Einsatz von RAG ist es möglich, LLMs dynamisch mit eigenem Wissen aus externen Datenbanken zu versorgen und sie basierend darauf genaue und fundierte Antworten generieren zu lassen.
 
-Darüber hinaus ist es bei der Verarbeitung von vertraulichen Unternehmens- oder persönlichen Informationen oft aufgrund von Sicherheitsrichtlinien inakzeptabel, Daten an cloudbasierte APIs wie OpenAI zu senden. Was hier benötigt wird, ist der Aufbau eines "lokalen RAG" in Kombination mit einer **lokalen KI** (einem LLM, das vollständig auf dem eigenen PC oder On-Premise-Server läuft).
+Darüber hinaus ist es bei der Verarbeitung von vertraulichen Unternehmens- oder persönlichen Informationen oft aufgrund von Sicherheitsrichtlinien inakzeptabel, Daten an cloudbasierte APIs wie OpenAI zu senden. Was hier benötigt wird, ist der Aufbau eines "lokalen RAG" in Kombination mit einer **lokalen KI** (einem [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/), das vollständig auf dem eigenen PC oder On-Premise-Server läuft).
 
 In diesem Artikel werden wir alles von der grundlegenden RAG-Theorie über die konkrete Implementierung eines lokalen RAG mit Python, den mathematischen Hintergrund (wie die Vektorsuche funktioniert) bis hin zu fortgeschrittenen Techniken für den produktiven Betrieb des Systems umfassend erklären.
 
@@ -54,7 +54,7 @@ graph TD
 
 ## Ingestionsphase (Vorbereitung)
 1. **Dokumente laden**: Lesen von unstrukturierten Daten wie PDFs, Word- und Textdateien.
-2. **Chunking (Textaufteilung)**: Um in das Eingabelimit (Kontextfenster) des LLM zu passen und die Suchgenauigkeit zu erhöhen, werden lange Texte in sinnvolle Blöcke (Chunks) aufgeteilt.
+2. **Chunking (Textaufteilung)**: Um in das Eingabelimit (Kontextfenster) des [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) zu passen und die Suchgenauigkeit zu erhöhen, werden lange Texte in sinnvolle Blöcke (Chunks) aufgeteilt.
 3. **Embedding (Vektorisierung)**: Die aufgeteilten Chunks werden in ein Einbettungsmodell (Embedding Model) eingegeben und in numerische Arrays (Vektoren) mit Hunderten bis Tausenden von Dimensionen umgewandelt.
 4. **In der Datenbank speichern**: Die konvertierten Vektoren werden zusammen mit den ursprünglichen Textdaten in einer Vektordatenbank (Vector DB) gespeichert.
 
@@ -97,15 +97,15 @@ Moderne Vektor-DBs (Chroma, FAISS, Qdrant usw.) verwenden Algorithmen zur ungef�
 
 ---
 
-# 3. Der Technologie-Stack für den Aufbau eines lokalen RAG
+# 3. Der Technologie-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) für den Aufbau eines lokalen RAG
 
 Um ein vollständig lokales RAG aufzubauen, das nicht auf die Cloud angewiesen ist, nutzen wir das Open-Source-Ökosystem. Der folgende Technologie-Stack wird empfohlen:
 
-1. **Sprachmodell (LLM)**
+1. **Sprachmodell ([LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/))**
    - Tool: `Ollama` oder `Llama.cpp`
    - Modelle: Leichte und leistungsstarke offene Modelle wie `Llama-3-8B-Instruct`, `Gemma-2-9B-It`, `Qwen2-7B-Instruct`. Für japanische Aufgaben eignen sich auf Japanisch abgestimmte Modelle wie `Llama-3-ELYZA-JP-8B`.
 2. **Einbettungsmodell (Embedding)**
-   - Modelle: `intfloat/multilingual-e5-large` oder `BAAI/bge-m3`. Bei lokaler Ausführung ist es üblich, diese von Hugging Face herunterzuladen und mit Sentence-Transformers auszuführen.
+   - Modelle: `intfloat/multilingual-e5-large` oder `BAAI/bge-m3`. Bei lokaler Ausführung ist es üblich, diese von Hugging Face herunterzuladen und mit Sentence-[Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)s auszuführen.
 3. **Vektordatenbank (Vector DB)**
    - `ChromaDB`: Basiert auf Python und ist extrem einfach einzurichten. Ideal für die lokale Entwicklung.
    - `FAISS`: Eine von Meta entwickelte schnelle Vektorsuchbibliothek.
@@ -131,7 +131,7 @@ pip install chromadb sentence-transformers pypdf
 
 ## Schritt 2: Überblick über den Implementierungscode
 
-Das Folgende ist ein vollständiges Python-Skript, um eine PDF-Datei zu lesen, sie zu vektorisieren und ein lokales LLM Fragen dazu beantworten zu lassen.
+Das Folgende ist ein vollständiges Python-Skript, um eine PDF-Datei zu lesen, sie zu vektorisieren und ein lokales [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) Fragen dazu beantworten zu lassen.
 
 ```python
 import os
@@ -252,7 +252,7 @@ Indem man eine **semantische Suche** basierend auf der Vektorsuche parallel zu e
 Die Vektorsuche ist schnell, wertet aber nicht unbedingt die genaue kontextuelle Eignung des Kontexts aus. Eine gängige [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) zur Verbesserung der Suchgenauigkeit sieht wie folgt aus:
 1. **Initiale Suche (First-stage Retrieval)**: Etwa 20 bis 30 relevante Chunks werden breit und flach aus der Vektor-DB abgerufen.
 2. **Neubewertung (Re-ranking)**: Ein weiteres, schwereres maschinelles Lernmodell (z.B. `bge-reranker`), das als Cross-Encoder bezeichnet wird, wird verwendet, um das Paar aus der Benutzeranfrage und dem abgerufenen Chunk einzugeben und den semantischen Eignungsscore neu zu berechnen.
-3. **Auswahl**: Nur die Top 3 bis 5 mit den höchsten Scores werden an den LLM-Prompt als finaler Kontext weitergegeben.
+3. **Auswahl**: Nur die Top 3 bis 5 mit den höchsten Scores werden an den [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Prompt als finaler Kontext weitergegeben.
 
 Diese Methode verhindert, dass irrelevante Rauschinformationen an das LLM weitergegeben werden, und kann die Genauigkeit (Precision) der Antworten erheblich verbessern.
 
@@ -267,7 +267,7 @@ graph LR
 
 ## 5.3 Semantisches Chunking und Parent-Dokument-Suche
 Es gibt eine Technik namens "Semantic Chunking", bei der die KI Verschiebungen in der Bedeutung von Sätzen erkennt und den Text entsprechend aufteilt, anstatt den Text mechanisch nach einer festen Zeichenanzahl zu unterteilen.
-Zusätzlich verwendet eine Methode, die als "Parent Document Retriever" bezeichnet wird, sehr kleine Einheiten (wie Sätze) für die Vektorisierung zu Suchzwecken, um eine hochpräzise Suche zu erreichen. Bei der Übergabe an das LLM wird der "ursprüngliche große Absatz (das Parent-Dokument)", der diesen Satz enthält, weitergegeben und bietet dem LLM so ausreichend Kontext.
+Zusätzlich verwendet eine Methode, die als "Parent Document Retriever" bezeichnet wird, sehr kleine Einheiten (wie Sätze) für die Vektorisierung zu Suchzwecken, um eine hochpräzise Suche zu erreichen. Bei der Übergabe an das [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) wird der "ursprüngliche große Absatz (das Parent-Dokument)", der diesen Satz enthält, weitergegeben und bietet dem LLM so ausreichend Kontext.
 
 ---
 

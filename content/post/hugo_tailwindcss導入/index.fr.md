@@ -13,7 +13,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 Dans le développement Web front-end moderne, concilier les performances et l'expérience de développement (DX : Developer Experience) est l'une des priorités majeures de tout projet. L'association de **Hugo**, qui possède l'une des vitesses de compilation les plus rapides au monde parmi les générateurs de sites statiques (SSG), et de **Tailwind CSS**, qui a introduit le paradigme novateur du "utility-first" (utilitaire d'abord), constitue sans doute l'une des réponses ultimes à ce défi.
 
-Hugo est écrit en Go et présente des performances exceptionnelles, permettant de compiler un site de plusieurs milliers de pages en quelques secondes, voire en millisecondes. D'autre part, Tailwind CSS permet d'accélérer l'itération du design en éliminant les allers-retours entre les fichiers CSS et HTML grâce à l'écriture directe d'innombrables classes utilitaires prédéfinies (`flex`, `text-center`, `mt-4`, etc.) dans le code HTML.
+Hugo est écrit en [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) et présente des performances exceptionnelles, permettant de compiler un site de plusieurs milliers de pages en quelques secondes, voire en millisecondes. D'autre part, Tailwind CSS permet d'accélérer l'itération du design en éliminant les allers-retours entre les fichiers CSS et HTML grâce à l'écriture directe d'innombrables classes utilitaires prédéfinies (`flex`, `text-center`, `mt-4`, etc.) dans le code HTML.
 
 Cet article explique de manière approfondie et détaillée comment intégrer Tailwind CSS à un thème Hugo, et comment construire un pipeline d'assets avancé (Hugo Pipes) en utilisant PostCSS, depuis les bases de l'architecture jusqu'à l'optimisation mathématique des performances.
 
@@ -268,7 +268,7 @@ Ensuite, nous allons écrire le pipeline pour charger le fichier CSS ci-dessus d
 
 #### Explication du pipeline et diagramme Mermaid
 
-Illustrons la série d'étapes de traitement que le code modèle Go ci-dessus effectue sur le fichier CSS.
+Illustrons la série d'étapes de traitement que le code modèle [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) ci-dessus effectue sur le fichier CSS.
 
 ```mermaid
 flowchart TD

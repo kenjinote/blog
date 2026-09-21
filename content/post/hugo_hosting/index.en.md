@@ -10,7 +10,7 @@ tags: ["Hugo", "Cloudflare Pages", "GitHub Actions", "CI/CD"]
 description: 'A complete technical guide for hosting a Hugo-based static site for free and fast using Cloudflare Pages or GitHub Pages. We detail edge computing, CDN architecture, and CI/CD pipelines.'
 ---
 
-When running a website or blog, page speed (performance), operational costs, and security are extremely important factors. In the past, the combination of dynamic CMS (Content Management System) like WordPress and shared hosting was the mainstream, but currently, an architecture known as 'Jamstack' is gaining significant attention. Among them, by combining "Hugo", an ultra-fast static site generator (SSG) built in Go, with modern hosting services like Cloudflare Pages and GitHub Pages, it is possible to build a **completely free and blazing fast** blog environment.
+When running a website or blog, page speed (performance), operational costs, and security are extremely important factors. In the past, the combination of dynamic CMS (Content Management System) like WordPress and shared hosting was the mainstream, but currently, an architecture known as 'Jamstack' is gaining significant attention. Among them, by combining "Hugo", an ultra-fast static site generator (SSG) built in [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), with modern hosting services like Cloudflare Pages and GitHub Pages, it is possible to build a **completely free and blazing fast** blog environment.
 
 In this article, we will delve very deeply from a technical perspective into the specific steps to publish a Hugo-based static site with Cloudflare Pages and GitHub Pages, the architectural differences between each platform, the construction of [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) (Continuous Integration / Continuous Deployment) using [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/), DNS optimization, caching strategies, and even the introduction of privacy-friendly web analytics.
 
@@ -24,7 +24,7 @@ Traditional dynamic CMS (e.g., WordPress) issue queries to a database (such as M
 On the other hand, with Static Site Generators (SSG) adopting the Jamstack (JavaScript, APIs, and Markup) architecture, all HTML files, CSS, and JavaScript are generated in advance (at build time). In response to user requests, the web server (or CDN) simply returns the already generated static files as they are, thereby achieving overwhelming speed and robust security.
 
 ### 1.2 The Superiority of Hugo
-There are various choices for SSGs such as Next.js, Gatsby, Jekyll, and Astro, but the greatest feature of Hugo is its **build speed**. Benefiting from concurrent processing in the Go language, building even a site with thousands to tens of thousands of pages is completed in just a few seconds. This significantly reduces wait times in CI/CD pipelines and directly connects to an improved Developer Experience (DX).
+There are various choices for SSGs such as Next.js, Gatsby, Jekyll, and Astro, but the greatest feature of Hugo is its **build speed**. Benefiting from concurrent processing in the [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) language, building even a site with thousands to tens of thousands of pages is completed in just a few seconds. This significantly reduces wait times in CI/CD pipelines and directly connects to an improved Developer Experience (DX).
 
 ---
 

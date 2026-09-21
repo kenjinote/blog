@@ -42,7 +42,7 @@ tags: ["GitHub Copilot", "Local AI", "Workflow", "Developer Productivity"]
     *   **究極のプライバシー**: データは一切外部のネットワークに出ません。極秘のプロジェクトや、厳重なNDA下にあるコードベースを扱う際に最適です。
     *   **ゼロ・ネットワークレイテンシ**: インターネット回線の速度に依存せず、常に一定の速度で応答を返します。
     *   **オフライン環境での稼働**: 飛行機の中や、セキュリティ要件で外部ネットワークから隔離された環境でもフル機能を利用できます。
-    *   **無限のカスタマイズ**: 特定の言語やフレームワークに特化してファインチューニングを行ったり、独自のプロンプトエンジニアリングを自由に組み込むことができます。
+    *   **無限のカスタマイズ**: 特定の言語やフレームワークに特化してファインチューニングを行ったり、独自の[プロンプトエンジニアリング](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)を自由に組み込むことができます。
 *   **短所（Cons）**:
     *   **ハードウェア要件**: 快適に動作させるためには、十分なVRAM（ビデオメモリ）を搭載したマシン（例：VRAM 16GB〜24GB以上、あるいはMシリーズチップの統合メモリ32GB以上）が必要です。
     *   **モデル性能の限界**: ハードウェアの制約上、実行できるモデルサイズには限界があり、GPT-4クラスの複雑な論理的推論には及ばないケースが多いです。
@@ -108,7 +108,7 @@ graph TD
 ```
 
 ### 3.1 評価軸1：機密性（Privacy and Security）
-最も重要な判断基準です。企業ポリシーで外部送信が禁じられている顧客データを含むテストコードや、コアとなる独自のアルゴリズムを実装しているファイルでは、一切の妥協なくローカルAIを選択します。ローカルでRAG（検索拡張生成）を構築し、社内ドキュメントをベクターストアに格納してローカルLLMに参照させる手法も非常に有効です。
+最も重要な判断基準です。企業ポリシーで外部送信が禁じられている顧客データを含むテストコードや、コアとなる独自のアルゴリズムを実装しているファイルでは、一切の妥協なくローカルAIを選択します。ローカルでRAG（検索拡張生成）を構築し、社内ドキュメントをベクターストアに格納してローカル[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)に参照させる手法も非常に有効です。
 
 ### 3.2 評価軸2：レイテンシ（Latency）
 思考のスピードを止めないためには、補完のレイテンシは非常に重要です。クラウドAIはネットワークのラウンドトリップタイム（RTT）が必ず発生します。ローカルAIはネットワーク遅延がゼロであるため、軽量なモデルをVRAMに常駐させておけば、クラウドを超える体感速度を得ることが可能です。
@@ -168,7 +168,7 @@ $$ L_{local} = \frac{T_{in}}{S_{process\_local}} $$
 *   **シナリオ**: データベースのパスワードや、独自の[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)ロジック、あるいは未発表の新機能のコアロジックをリファクタリングしたい場面。
 *   **アプローチ**: IDEのネットワークアクセスを一時的に遮断するか、ローカルAI専用の拡張機能（例: Continue.devなど）を使用し、ローカルで稼働しているモデル（Ollama経由など）にプロンプトを投げます。データ漏洩のリスクをゼロに保ったまま、AIの支援を受けることができます。
 
-### ユースケース3: クラウドLLM（GPT-4 / Claude 3.5 Sonnet）によるアーキテクチャ設計と複雑なバグ修正
+### ユースケース3: クラウド[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（GPT-4 / Claude 3.5 Sonnet）によるアーキテクチャ設計と複雑なバグ修正
 *   **シナリオ**: 原因不明のメモリリークの解析や、「このモノリスアプリを[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)に分割するための最善のアプローチは？」といった高次元な設計相談。
 *   **アプローチ**: このようなタスクには、膨大な事前知識と高度な論理的推論能力が必要です。コストをかけてでも、最も賢いクラウドモデルを利用すべきです。数十個のファイルをコンテキストとして渡し、「どこに問題があるか」を深く洞察させます。
 
@@ -179,7 +179,7 @@ $$ L_{local} = \frac{T_{in}}{S_{process\_local}} $$
 ローカルAIを導入するための具体的なステップを簡単に紹介します。現在最も手軽かつ強力なアプローチは、 **Ollama** や **LM Studio** を使用することです。
 
 ### 6.1 Ollamaの導入
-Ollamaは、ローカル環境でLLMを動作させるための軽量なフレームワークです。MacOS、Windows、Linuxに対応しており、[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)のように直感的にモデルを管理できます。
+Ollamaは、ローカル環境で[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)を動作させるための軽量なフレームワークです。MacOS、Windows、Linuxに対応しており、[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)のように直感的にモデルを管理できます。
 
 ```bash
 # MacOSの場合

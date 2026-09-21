@@ -14,7 +14,7 @@ description: 'Windows 11에서의 로컬 AI 기능 구현 방법, Windows Copilo
 
 ## 1. 시작하며: AI가 네이티브로 내장되는 Windows의 새로운 시대
 
-최근 AI 기술의 진화는 눈부시며, 클라우드 상에서의 대규모 언어 모델(LLM) 활용에서 엣지 디바이스(로컬 PC)에서의 AI 추론으로 급속히 패러다임 전환이 일어나고 있습니다. 그 핵심을 담당하는 것이 Microsoft가 Windows 11용으로 제공하는 "Windows Copilot Runtime"과 이를 제어하기 위한 "Microsoft.Windows.AI" API입니다.
+최근 AI 기술의 진화는 눈부시며, 클라우드 상에서의 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)) 활용에서 엣지 디바이스(로컬 PC)에서의 AI 추론으로 급속히 패러다임 전환이 일어나고 있습니다. 그 핵심을 담당하는 것이 Microsoft가 Windows 11용으로 제공하는 "Windows Copilot Runtime"과 이를 제어하기 위한 "Microsoft.Windows.AI" API입니다.
 
 클라우드 API(OpenAI나 Azure OpenAI 등)를 이용한 애플리케이션 개발은 쉽지만, 지연 시간(레이턴시), 프라이버시, 그리고 지속적인 비용이라는 과제가 따라다닙니다. 반면, 로컬에서 AI 모델을 구동함으로써 기밀 데이터를 디바이스 밖으로 내보내지 않고 오프라인에서도 작동하는 초저지연 애플리케이션을 구현할 수 있습니다.
 
@@ -62,7 +62,7 @@ P_{\text{peak}} = 1.5 \times 10^9 \times 4 \times 4096 \times 2 \approx 49.15 \t
 $$
 가 됩니다. Windows 11의 Copilot+ PC 요건인 40 TOPS를 만족하는 성능임이 수학적으로 증명됩니다.
 
-또한, AI 모델, 특히 LLM의 추론(디코드 페이즈)은 **메모리 바운드(Memory-Bound)** 가 되기 쉽습니다. 시스템 메모리의 이론적 대역폭 $BW$ 는 다음과 같이 계산됩니다.
+또한, AI 모델, 특히 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 추론(디코드 페이즈)은 **메모리 바운드(Memory-Bound)** 가 되기 쉽습니다. 시스템 메모리의 이론적 대역폭 $BW$ 는 다음과 같이 계산됩니다.
 
 $$
 BW = f_{\text{mem}} \times W_{\text{bus}} \times \frac{2}{8}
@@ -306,7 +306,7 @@ Windows AI API나 DirectML을 활용하여 최상급의 AI 애플리케이션을
 ### 7.1 모델 양자화(Quantization)와 Olive Toolkit
 NPU의 진정한 힘을 발휘시키려면, AI 모델의 가중치와 활성화 값을 FP32(단정밀도 부동소수점)에서 INT8 또는 INT4로 **양자화(Quantization)** 하는 것이 절대적인 조건입니다. NPU의 아키텍처는 정수 연산에 특화되어 있어, FP32와 비교해 INT8에서는 이론상 4배의 처리량과 대폭적인 전력 절감을 실현합니다.
 
-Microsoft가 제공하는 `Olive (ONNX Live)` 툴체인을 사용하면 PyTorch 등의 모델을 Windows 환경에 맞게 자동 최적화할 수 있습니다. Olive는 Transformer 모델에 대한 특수한 어텐션 최적화나 하드웨어별 그래프 컴파일을 강력하게 지원합니다.
+Microsoft가 제공하는 `Olive (ONNX Live)` 툴체인을 사용하면 PyTorch 등의 모델을 Windows 환경에 맞게 자동 최적화할 수 있습니다. Olive는 [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 모델에 대한 특수한 어텐션 최적화나 하드웨어별 그래프 컴파일을 강력하게 지원합니다.
 
 ### 7.2 배치 처리 vs 대화형 스트리밍의 트레이드오프
 API 호출에 있어 여러 추론 요청을 묶어서 배치(Batch) 처리함으로써 NPU의 사용 효율(Compute Utilization)을 높일 수 있습니다. 그러나 챗봇과 같은 대화형 UI의 경우, 처리량보다도 첫 번째 토큰이 표시될 때까지의 시간(TTFT: Time To First Token)이 사용자 경험(UX)을 결정짓습니다.

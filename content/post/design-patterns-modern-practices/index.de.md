@@ -36,7 +36,7 @@ Hier werden wir typische GoF-Muster betrachten und sehen, wie sie in modernen Sp
 
 Das `Strategy`-Muster definiert eine Familie von Algorithmen, kapselt jeden einzelnen und macht sie austauschbar.
 
-**Der traditionelle GoF-Ansatz (Java-Stil)**
+**Der traditionelle GoF-Ansatz ([Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)-Stil)**
 
 ```java
 // Definition der Schnittstelle
@@ -135,7 +135,7 @@ Das `Visitor`-Muster wurde entwickelt, um die Datenstruktur von der Verarbeitung
 
 Heutzutage wird dieses Problem elegant durch Sprachen gelöst ([Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala usw.), die über **Algebraische Datentypen (ADT)** und **Pattern Matching** verfügen.
 
-**Der moderne Ansatz (Rust Enums und Pattern Matching)**
+**Der moderne Ansatz ([Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) Enums und Pattern Matching)**
 
 ```rust
 // Algebraischer Datentyp (Enum mit Varianten)
@@ -169,7 +169,7 @@ graph TD
     E["Dienst B"] -->|"Hängt ab von"| B
 ```
 
-Da DI-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) wie das Spring Framework (Java), NestJS (TypeScript) oder Dagger/Hilt (Android) die Erstellung und Zerstörung von Instanzen verwalten, sollte man keine Singleton-Logik (`getInstance()` oder `private constructor`) in die Klasse selbst schreiben.
+Da DI-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) wie das Spring Framework ([Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)), NestJS (TypeScript) oder Dagger/Hilt (Android) die Erstellung und Zerstörung von Instanzen verwalten, sollte man keine Singleton-Logik (`getInstance()` oder `private constructor`) in die Klasse selbst schreiben.
 
 ## 4. Design-Muster in der funktionalen Programmierung
 

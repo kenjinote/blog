@@ -338,7 +338,7 @@ def partition(arr, low, high):
     return i + 1
 ```
 
-### 3.3 堆排序 (Heap Sort)
+### 3.3 堆排序 ([Heap](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/) Sort)
 
 堆排序是巧妙利用了一种名为 **二叉堆 (Binary Heap)** 的树形数据结构的排序算法。它的最坏时间复杂度是 $O(n \log n)$，同时又是不使用额外内存的 In-place 排序，可以说是结合了归并排序和快速排序优点的特性。
 
@@ -467,7 +467,7 @@ def counting_sort(arr):
 
 ### 5.1 Timsort (Python的默认排序)
 
-Timsort 是由 Tim Peters 在 2002 年为 Python 实现的算法。现在不仅是 Python 的 `list.sort()` 和 `sorted()`，在 Java 的对象数组、[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的标准排序等众多语言中也都被采用，是实战领域的霸主。
+Timsort 是由 Tim Peters 在 2002 年为 Python 实现的算法。现在不仅是 Python 的 `list.sort()` 和 `sorted()`，在 [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 的对象数组、[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 的标准排序等众多语言中也都被采用，是实战领域的霸主。
 
 Timsort 最大的设计理念是基于一个经验法则： **“现实世界的数据很少是完全随机的，大部分情况下是部分有序的（存在连续的升序或降序块）”** 。
 
@@ -504,7 +504,7 @@ Timsort 最大的设计理念是基于一个经验法则： **“现实世界的
 | **插入排序 (Insertion Sort)** | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | Yes | 插入。对几乎排好序的数据极强。 |
 | **归并排序 (Merge Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | 分治法。复杂度坚固但耗内存。 |
 | **快速排序 (Quick Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | $O(\log n)$ | No | 分治法。平均最快但要注意最坏情况。 |
-| **堆排序 (Heap Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No | 二叉堆。In-place 且坚固。 |
+| **堆排序 ([Heap](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/) Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No | 二叉堆。In-place 且坚固。 |
 | **计数排序 (Counting Sort)** | $O(n+k)$ | $O(n+k)$ | $O(n+k)$ | $O(k)$ | Yes | 非比较。键范围窄时最强。 |
 | **Timsort** (Python等标准) | $O(n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | 混合。对实际数据自适应且最快。 |
 | **Introsort** (C++等标准) | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(\log n)$ | No | 混合。兼顾 Quick 的速度与 Heap 的坚固。 |

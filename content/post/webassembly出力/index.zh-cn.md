@@ -17,9 +17,9 @@ tags: ["C++", "Rust", "Wasm", "JavaScript"]
 
 ## 2. [WebAssembly](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)) 的概述与架构
 
-WebAssembly 是一种基于栈式虚拟机的二进制指令格式。它被设计为可从 C/C++、[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)、Go、Zig 等语言编译的“可移植编译目标”，旨在以接近原生的速度在Web浏览器中执行。
+WebAssembly 是一种基于栈式虚拟机的二进制指令格式。它被设计为可从 C/C++、[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)、[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)、Zig 等语言编译的“可移植编译目标”，旨在以接近原生的速度在Web浏览器中执行。
 
-下图展示了从C++和Rust生成WebAssembly并在浏览器中运行的大致工具链流程。
+下图展示了从C++和[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)生成WebAssembly并在浏览器中运行的大致工具链流程。
 
 ```mermaid
 graph TD
@@ -139,7 +139,7 @@ Module.onRuntimeInitialized = () => {
 
 ## 5. 基于[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)和`wasm-pack`的方法
 
-[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)为[WebAssembly](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)提供了第一方支持，通过使用`wasm-bindgen`和`wasm-pack`工具，可以实现JavaScript和[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)之间的高度协同。Emscripten采用了“将庞大的C/C++运行时带入浏览器”的方法，而Rust的`wasm-pack`则采用了“只生成最低限度绑定的（JS胶水代码）”的方法。
+[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)为[WebAssembly](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)提供了第一方支持，通过使用`wasm-bindgen`和`wasm-pack`工具，可以实现JavaScript和[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)之间的高度协同。Emscripten采用了“将庞大的C/C++运行时带入浏览器”的方法，而[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)的`wasm-pack`则采用了“只生成最低限度绑定的（JS胶水代码）”的方法。
 
 ### [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/) 实现代码
 
@@ -287,9 +287,9 @@ graph TD
 
 浏览器的[Wasm](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)引擎通过对这些段进行流式编译（在下载的同时并行编译为机器码），实现了启动速度的极大提升。
 
-## 9. C++ vs Rust：应该选择哪一个？
+## 9. C++ vs [Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)：应该选择哪一个？
 
-在生成[WebAssembly](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)时，选择C++还是Rust很大程度上取决于项目的要求和现有的资产。
+在生成[WebAssembly](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)时，选择C++还是[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)很大程度上取决于项目的要求和现有的资产。
 
 **应该选择 C++ / Emscripten 的情况** ：
 * 想要将现有的C/C++库（如FFmpeg、OpenCV、SQLite等）移植到浏览器中时。

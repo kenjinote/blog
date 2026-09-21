@@ -9,10 +9,10 @@ categories: ["programming"]
 description: 'C言語、Python、Java、JavaScriptから、Rust、Go、OCaml、Clojureといった様々なプログラミング言語を一覧化しました。開発や学習の参考に、各言語の概要や特徴を確認してみましょう。'
 ---
 
-# プログラミング言語一覧
+# [プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)一覧
 
 
-## C言語
+## [C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)
 
 ## C++
 
@@ -26,13 +26,13 @@ description: 'C言語、Python、Java、JavaScriptから、Rust、Go、OCaml、C
 
 ## [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)
 
-## Go
+## [Go](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)
 
 ## Python
 
 ## Ruby
 
-## Java
+## [Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)
 
 ## JavaScript
 
@@ -72,7 +72,7 @@ description: 'C言語、Python、Java、JavaScriptから、Rust、Go、OCaml、C
 INRIA（フランス国立情報学自動制御研究所）で開発されている関数型言語の一種。
 
 ## Clojure
-プログラミング言語であり、LISP系の言語の方言の一つ
+[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)であり、LISP系の言語の方言の一つ
 
 ## Scheme
 シンプルなプログラミング言語
@@ -81,19 +81,19 @@ INRIA（フランス国立情報学自動制御研究所）で開発されてい
 コンピュータにおいて汎用的な用途に使うことができる並行処理指向のオープンソースソフトウェア（英：Open Source Software、略：OSS）プログラミング言語および実行環境。
 
 ## Forth
-スタック指向のプログラミング言語
+[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)指向のプログラミング言語
 
 ## D
 D言語は強い静的型付け言語
 
 ## Eiffel
-Eiffelは[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)プログラミング言語のひとつ
+Eiffelは[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)のひとつ
 
 ## Ada
-Adaはオブジェクト指向プログラミング言語のひとつ
+Adaは[オブジェクト指向](https://kenji.blog/p/object-oriented-programming-oop-solid-principles/)プログラミング言語のひとつ
 
 ## [Pascal](https://kenji.blog/p/pascal/)
-[Pascal](https://kenji.blog/p/pascal/)は手続き型プログラミング言語のひとつ
+[Pascal](https://kenji.blog/p/pascal/)は手続き型[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)のひとつ
 
 ## COBOL
 昔からある。汎用のプログラミング言語である。
@@ -108,7 +108,7 @@ Adaはオブジェクト指向プログラミング言語のひとつ
 手続き型プログラミング言語のひとつ。 名前は「beginners' all-purpose symbolic instruction code」のバクロニムである。
 
 ## Smalltalk
-[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)プログラミング言語
+[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)
 
 ## Lisp
 前置記法で記述するプログラミング言語
@@ -117,7 +117,7 @@ Adaはオブジェクト指向プログラミング言語のひとつ
 MLは[関数型プログラミング](https://kenji.blog/p/lambda-calculus-functional-programming/)言語の一つ
 
 ## Prolog
-関係を定義し問題を解くために使われるプログラミング言語
+関係を定義し問題を解くために使われる[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)
 
 ## GLSL
 OpenGLのシェーダー言語
@@ -133,4 +133,4 @@ Windows標準でインストールされている。オブジェクトが扱え�
 
 ## Salesforce APEX
 
-Javaによく似た言語
+[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)によく似た言語

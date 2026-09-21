@@ -11,7 +11,7 @@ tags: ["ChatGPT", "Gemini", "Claude", "API", "Comparison"]
 
 # [ChatGPT, Gemini, and Claude APIs Thoroughly Compared! Which Should You Choose?](https://kenji.blog/en/p/chatgpt-gemini-claude-api-comparison/)
 
-AI technology is evolving remarkably, especially in the field of Large Language Models (LLM), where OpenAI's ChatGPT (GPT series), Google's Gemini, and Anthropic's Claude are engaged in a fierce three-way battle for supremacy. As of 2026, each company is releasing new models and API features on a scale of months, or even weeks. For developers and corporate IT architects, the question of "which API to integrate into products" has become a highly critical decision that dictates the success of a project.
+AI technology is evolving remarkably, especially in the field of [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/)), where OpenAI's ChatGPT (GPT series), Google's Gemini, and Anthropic's Claude are engaged in a fierce three-way battle for supremacy. As of 2026, each company is releasing new models and API features on a scale of months, or even weeks. For developers and corporate IT architects, the question of "which API to integrate into products" has become a highly critical decision that dictates the success of a project.
 
 In this article, we will thoroughly compare and explain these top 3 AI providers' APIs from a developer's perspective. We go beyond just listing specifications, and delve into architecture design, detailed pricing structures, mathematical analysis of latency, concrete implementation examples using Python and Node.js, and the latest cost-optimization techniques such as prompt caching.
 
@@ -79,7 +79,7 @@ The text input into the API is internally divided into units called "tokens".
 
 ## 4. Mathematical Analysis of Latency and Performance
 
-In real-time applications, latency is directly tied to the User Experience (UX). The latency of an LLM API, $T_{total}$, can be mathematically modeled as follows:
+In real-time applications, latency is directly tied to the User Experience (UX). The latency of an [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) API, $T_{total}$, can be mathematically modeled as follows:
 
 $$ T_{total} = T_{network} + T_{TTFT} + (N \times T_{TPOT}) $$
 
@@ -90,7 +90,7 @@ Here, each variable has the following meaning:
 - $T_{TPOT}$ (Time Per Output Token): Generation time per token. Because it is an autoregressive model, it is calculated serially depending on the previous output.
 
 ### 4.1 Computational Complexity of the Self-Attention Mechanism
-The computational complexity of Self-Attention in the Transformer architecture increases quadratically with respect to the input sequence length $L$.
+The computational complexity of Self-Attention in the [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) architecture increases quadratically with respect to the input sequence length $L$.
 
 $$ \text{Complexity} = O(L^2 \cdot d) $$
 
@@ -210,7 +210,7 @@ By running this script, you can easily measure which model responds the fastest 
 
 ## 8. Implementing Tool Calling (Function Calling) with Node.js
 
-To make an LLM function not just as a chatbot but as an "AI Agent" that cooperates with external systems, Tool Calling (or Function Calling) is indispensable. Below is an example using Node.js (TypeScript) to have the OpenAI API call a weather API.
+To make an [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) function not just as a chatbot but as an "AI Agent" that cooperates with external systems, Tool Calling (or Function Calling) is indispensable. Below is an example using Node.js (TypeScript) to have the OpenAI API call a weather API.
 
 ```typescript
 import OpenAI from "openai";
@@ -312,7 +312,7 @@ sequenceDiagram
 
 ## 11. Enterprise-Level Security and Compliance
 
-When enterprises use LLM APIs in production environments, their biggest concerns are "Will our company's data be used for training the AI?" and "Are compliance requirements met?"
+When enterprises use [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) APIs in production environments, their biggest concerns are "Will our company's data be used for training the AI?" and "Are compliance requirements met?"
 
 All three companies clearly state that data sent via API (prompts and responses) **will not be used for model training (Zero Data Retention / No Training on Customer Data)** (*This does not apply to free consumer web chat UIs).
 
@@ -340,7 +340,7 @@ Although we have compared them from various angles, the final conclusion to "Whi
    It handles any task flawlessly and has the most abundant third-party tool support. If you need reliable JSON parsing using Structured Outputs or ultra-advanced logical reasoning using the o1 model, the OpenAI ecosystem is indispensable.
 
 ### Recommendation for Multi-Model Routing
-The future trend is an **"LLM Routing"** architecture that dynamically switches models according to the difficulty and importance of the task, rather than depending on a single API (vendor lock-in).
+The future trend is an **"[LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) Routing"** architecture that dynamically switches models according to the difficulty and importance of the task, rather than depending on a single API (vendor lock-in).
 For example, you can respond to simple questions from users with the cheap and fast `GPT-4o-mini` or `Gemini 1.5 Flash`, and fallback the task to `Claude 3.5 Sonnet` only when complex processing is deemed necessary, thereby achieving the optimal balance of cost and performance.
 
 The evolution of AI will not stop. Please deeply understand the strengths, weaknesses, and architectural characteristics of each API to build flexible and scalable AI applications.

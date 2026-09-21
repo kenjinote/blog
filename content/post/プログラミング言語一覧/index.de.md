@@ -26,13 +26,13 @@ description: 'Wir haben eine Liste verschiedener Programmiersprachen zusammenges
 
 ## [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/)
 
-## Go
+## [Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)
 
 ## Python
 
 ## Ruby
 
-## Java
+## [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/)
 
 ## JavaScript
 
@@ -81,7 +81,7 @@ Eine einfache Programmiersprache.
 Eine nebenläufige, Open-Source-Software (OSS) Programmiersprache und Laufzeitumgebung, die für allgemeine Zwecke auf Computern verwendet werden kann.
 
 ## Forth
-Stack-orientierte Programmiersprache.
+[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-orientierte Programmiersprache.
 
 ## D
 Die D-Sprache ist eine stark statisch typisierte Sprache.
@@ -133,4 +133,4 @@ Standardmäßig unter Windows installiert. Kann Objekte manipulieren.
 
 ## Salesforce APEX
 
-Eine Sprache, die Java sehr ähnlich ist.
+Eine Sprache, die [Java](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) sehr ähnlich ist.

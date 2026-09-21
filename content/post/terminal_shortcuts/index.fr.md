@@ -161,7 +161,7 @@ Grâce à cela, même dans un environnement Windows, vous pouvez construire, rec
 
 Dans les opérations du terminal, l'une des actions les plus fréquentes consiste à **« retrouver dans l'historique une commande complexe exécutée par le passé pour la réexécuter »**. La recherche inversée standard avec `Ctrl+R` (reverse-i-search) étant une recherche par correspondance exacte, il est difficile de retrouver une commande à partir d'un souvenir vague tel que « je crois que c'était un montage de volume avec docker run... ».
 
-Ce problème est résolu de manière élégante par **`fzf`**, un outil de recherche approximative (fuzzy finder) générique et ultra-rapide écrit en langage Go.
+Ce problème est résolu de manière élégante par **`fzf`**, un outil de recherche approximative (fuzzy finder) générique et ultra-rapide écrit en langage [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/).
 
 ## 4.1. [Pipeline](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) de recherche approximative avec fzf
 

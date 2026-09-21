@@ -64,7 +64,7 @@ To explicitly tell search engines that the page is an "article" and "who" the au
 
 ### 1.3 Semantic HTML and Document Structure Optimization
 
-Proper nesting of headings (`h1` to `h6`) is fundamental, but tech blogs require accurate use of HTML5 semantic tags like `article`, `section`, `aside`, and `nav`. Also, appropriately distinguishing `<code>` and `<pre>` for source code, `<kbd>` for keyboard inputs, and `<var>` for variables provides machine-readable HTML. This is also a highly effective measure for AI content indexing (LLM training data collection and RAG systems).
+Proper nesting of headings (`h1` to `h6`) is fundamental, but tech blogs require accurate use of HTML5 semantic tags like `article`, `section`, `aside`, and `nav`. Also, appropriately distinguishing `<code>` and `<pre>` for source code, `<kbd>` for keyboard inputs, and `<var>` for variables provides machine-readable HTML. This is also a highly effective measure for AI content indexing ([LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) training data collection and RAG systems).
 
 ---
 

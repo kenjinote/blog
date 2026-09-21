@@ -30,7 +30,7 @@ Ao desenvolver uma aplicação Web, uma das discussões mais comuns é "se devem
 
 ### 2.1. Pontos fortes e fracos dos aplicativos nativos
 
-A maior força dos aplicativos nativos (aplicativos desenvolvidos em Swift/Objective-C para iOS, Kotlin/Java para Android, etc.) é ter acesso total às APIs do sistema operacional (OS).
+A maior força dos aplicativos nativos (aplicativos desenvolvidos em Swift/Objective-C para iOS, Kotlin/[Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) para Android, etc.) é ter acesso total às APIs do sistema operacional (OS).
 Isso permite realizar funcionalidades avançadas que fazem pleno uso de câmera, GPS, Bluetooth, NFC e vários sensores. Além disso, por serem otimizados para o sistema operacional, o desempenho de renderização é muito alto, dando aos aplicativos nativos uma vantagem esmagadora em jogos e similares que fazem uso intenso de animações complexas e gráficos 3D.
 
 Por outro lado, os aplicativos nativos têm grandes fraquezas (desafios) como as seguintes:

@@ -10,11 +10,11 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: "Une comparaison approfondie entre les pointeurs C++ et le modèle de possession et d'emprunt de Rust. Des pointeurs bruts et pointeurs intelligents jusqu'au vérificateur d'emprunts, nous expliquons l'essence de la sécurité de la mémoire."
 ---
 
-Dans la programmation système moderne, concilier performances et sécurité de la mémoire est un défi éternel. C++ règne en maître dans ce domaine depuis de nombreuses années, mais [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) menace récemment cette position. La principale caractéristique de Rust réside dans les concepts de « Possession » (Ownership) et d'« Emprunt » (Borrowing), qui garantissent la sécurité de la mémoire à la compilation sans avoir recours à un ramasse-miettes ([Garbage Collection](https://kenji.blog/fr/p/memory-management-garbage-collection/) - GC).
+Dans la programmation système moderne, concilier performances et sécurité de la mémoire est un défi éternel. C++ règne en maître dans ce domaine depuis de nombreuses années, mais [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) menace récemment cette position. La principale caractéristique de [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) réside dans les concepts de « Possession » (Ownership) et d'« Emprunt » (Borrowing), qui garantissent la sécurité de la mémoire à la compilation sans avoir recours à un ramasse-miettes ([Garbage Collection](https://kenji.blog/fr/p/memory-management-garbage-collection/) - GC).
 
-Dans cet article, nous comparerons en détail les pointeurs C++ (pointeurs bruts, `std::unique_ptr`, `std::shared_ptr`) avec le modèle de possession de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), et nous expliquerons de manière approfondie comment le compilateur de Rust (le [Borrow Checker](https://kenji.blog/fr/p/memory-management-garbage-collection/) ou vérificateur d'emprunts) prévient les problèmes de type Use-After-Free (utilisation après libération) et de Data Race (accès concurrent aux données), à l'aide d'exemples de code et de diagrammes.
+Dans cet article, nous comparerons en détail les pointeurs C++ (pointeurs bruts, `std::unique_ptr`, `std::shared_ptr`) avec le modèle de possession de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), et nous expliquerons de manière approfondie comment le compilateur de [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) (le [Borrow Checker](https://kenji.blog/fr/p/memory-management-garbage-collection/) ou vérificateur d'emprunts) prévient les problèmes de type Use-After-Free (utilisation après libération) et de Data Race (accès concurrent aux données), à l'aide d'exemples de code et de diagrammes.
 
-## 1. Les bases de la gestion de la mémoire : Pile (Stack) et Tas (Heap)
+## 1. Les bases de la gestion de la mémoire : Pile ([Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)) et Tas ([Heap](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/))
 
 Pour comprendre les bases de la gestion de la mémoire, revoyons d'abord comment un programme utilise la mémoire. L'espace mémoire est principalement divisé en « Pile » (Stack) et « Tas » (Heap).
 
@@ -28,7 +28,7 @@ Dans les langages sans ramasse-miettes comme C++ et [Rust](https://kenji.blog/fr
 
 $$ C_{memory} = \sum_{i=1}^{N} (T_{alloc, i} + T_{dealloc, i}) + O_{sync} $$
 
-Ici, $O_{sync}$ représente le surcoût de l'exclusion mutuelle (mutex ou opérations atomiques) dans un environnement multithread. Comme Rust détermine le moment de la libération de la mémoire à la compilation, il élimine la baisse de débit (Stop-The-World) due au ramasse-miettes à l'exécution, tout en exécutant $T_{dealloc}$ à un moment sûr et certain.
+Ici, $O_{sync}$ représente le surcoût de l'exclusion mutuelle (mutex ou opérations atomiques) dans un environnement multithread. Comme [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) détermine le moment de la libération de la mémoire à la compilation, il élimine la baisse de débit (Stop-The-World) due au ramasse-miettes à l'exécution, tout en exécutant $T_{dealloc}$ à un moment sûr et certain.
 
 ```mermaid
 graph TD
@@ -44,12 +44,12 @@ graph TD
 
 Examinons l'évolution de la gestion de la mémoire en C++.
 
-### L'ère des pointeurs bruts (Raw Pointers) et leurs problèmes
+### L'ère des pointeurs bruts (Raw [Pointer](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)s) et leurs problèmes
 
 Les pointeurs bruts (`*`) hérités du langage C offrent une liberté ultime, mais sont en même temps un nid à bugs graves :
 
 - **Fuite de mémoire (Memory Leak)** : Oublier de faire un `delete` sur une mémoire allouée avec `new`.
-- **Pointeur fantôme (Dangling Pointer)** : Accéder à un pointeur après que la mémoire a été libérée (après `delete`).
+- **Pointeur fantôme (Dangling [Pointer](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/))** : Accéder à un pointeur après que la mémoire a été libérée (après `delete`).
 - **Double libération (Double Free)** : Faire un `delete` deux fois sur la même zone mémoire.
 
 ```cpp
@@ -93,13 +93,13 @@ C'est un pointeur qui permet à plusieurs pointeurs de partager le même objet. 
 
 ## 3. La possession (Ownership) dans [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) : Un changement de paradigme
 
-Rust a intégré le concept de `std::unique_ptr` du C++ au cœur des spécifications de son langage et l'a rendu plus strict avec le « modèle de possession ».
+[Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) a intégré le concept de `std::unique_ptr` du C++ au cœur des spécifications de son langage et l'a rendu plus strict avec le « modèle de possession ».
 
 ### Les 3 règles de la possession
 
 Le système de possession de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) repose sur les 3 règles extrêmement simples suivantes :
 
-1. **Chaque valeur en Rust possède une variable qui en est le propriétaire (owner).**
+1. **Chaque valeur en [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) possède une variable qui en est le propriétaire (owner).**
 2. **Il ne peut y avoir qu'un seul propriétaire à la fois.**
 3. **Lorsque le propriétaire sort de la portée, la valeur est détruite.**
 
@@ -197,7 +197,7 @@ int main() {
 
 ### Défense à la compilation par [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)
 
-Écrivons exactement la même logique en Rust.
+Écrivons exactement la même logique en [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/).
 
 ```rust
 // Rust : Prévenir l'invalidation d'itérateur à la compilation
@@ -275,11 +275,11 @@ Ce qui est remarquable, c'est que le `Mutex<T>` de [Rust](https://kenji.blog/fr/
 
 Les pointeurs C++ et les pointeurs intelligents offrent aux développeurs un contrôle avancé et d'excellentes performances, mais leur utilisation correcte dépend de la discipline du développeur. L'introduction de RAII et de `std::unique_ptr` a rendu C++ considérablement plus sûr, mais il est toujours impossible de prévenir totalement au niveau du langage des « comportements indéfinis » tels que l'accès après un déplacement (move) ou l'invalidation d'itérateur.
 
-D'un autre côté, [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) intègre les règles de possession (Ownership) et d'emprunt (Borrowing) au compilateur, ce qui permet de détecter ces erreurs au moment de la **compilation** plutôt qu'à l'exécution. La garantie forte qui dit que « si cela compile, c'est que la mémoire est sûre » est la principale raison pour laquelle Rust gagne rapidement le soutien du monde de la programmation système.
+D'un autre côté, [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) intègre les règles de possession (Ownership) et d'emprunt (Borrowing) au compilateur, ce qui permet de détecter ces erreurs au moment de la **compilation** plutôt qu'à l'exécution. La garantie forte qui dit que « si cela compile, c'est que la mémoire est sûre » est la principale raison pour laquelle [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) gagne rapidement le soutien du monde de la programmation système.
 
 Le fait de lutter contre le [Borrow Checker](https://kenji.blog/fr/p/memory-management-garbage-collection/) de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) (Fight the borrow checker) représente un mur important pour les débutants, mais ce n'est rien de plus que le compilateur effectuant strictement à votre place le calcul complexe du « suivi de la durée de vie des pointeurs » que les programmeurs C++ faisaient traditionnellement dans leur tête.
 
-Si vous apprenez Rust après avoir compris la liberté et les dangers des pointeurs C++, vous pourrez comprendre bien plus en profondeur la philosophie qui se cache derrière la conception du modèle de possession, à savoir « pourquoi cela a-t-il été conçu ainsi ? ».
+Si vous apprenez [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) après avoir compris la liberté et les dangers des pointeurs C++, vous pourrez comprendre bien plus en profondeur la philosophie qui se cache derrière la conception du modèle de possession, à savoir « pourquoi cela a-t-il été conçu ainsi ? ».
 
 ---
 *Cet article est une comparaison et une réflexion sur les méthodes de gestion de la mémoire en C++ et Rust. Nous espérons qu'il vous sera utile pour choisir le langage approprié en fonction des exigences de votre projet.*

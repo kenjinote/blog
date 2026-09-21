@@ -209,7 +209,7 @@ int main() {
 
 ### Implementation in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)
 
-In Rust, the rules of ownership and borrowing tend to make the implementation of linked lists complicated, but modeling it as an index reference problem on an array (or `Vec`) is common in competitive programming.
+In [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), the rules of ownership and borrowing tend to make the implementation of linked lists complicated, but modeling it as an index reference problem on an array (or `Vec`) is common in competitive programming.
 Here, we show an example of implementation using an array that holds the "next index" instead of a "pointer to the next".
 
 ```rust

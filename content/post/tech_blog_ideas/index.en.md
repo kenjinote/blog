@@ -184,7 +184,7 @@ By using Obsidian's backlink feature (`[[Note Name]]`), you can link a note like
 
 ## 5. Semantic Search Using Vector Database (Pinecone) and OpenAI Embeddings
 
-When the number of notes increases to hundreds or thousands, it becomes difficult to find the desired note with just keyword search (full-text search). Semantic search utilizing Large Language Model (LLM) Embeddings demonstrates its power when "you can't remember the keyword, but want to find a note with a similar concept".
+When the number of notes increases to hundreds or thousands, it becomes difficult to find the desired note with just keyword search (full-text search). Semantic search utilizing Large Language Model ([LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/)) Embeddings demonstrates its power when "you can't remember the keyword, but want to find a note with a similar concept".
 
 Using OpenAI's `text-embedding-ada-002` model (or `text-embedding-3-small`), we convert each Markdown note in Obsidian into a multi-dimensional vector (an array of numbers with hundreds to thousands of dimensions). In these vector spaces, vectors of sentences with close meanings will have a close physical distance as well.
 

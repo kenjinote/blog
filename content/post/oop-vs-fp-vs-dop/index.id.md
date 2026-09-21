@@ -10,13 +10,13 @@ tags: ["oop", "fp", "dop", "rust", "typescript", "design-pattern"]
 
 Sejarah evolusi bahasa pemrograman juga merupakan sejarah pertempuran melawan kompleksitas. Seiring dengan membesarnya skala perangkat lunak, kita menghadapi hambatan pada manajemen status, performa, dan pemeliharaan, sehingga berbagai **paradigma pemrograman** telah diusulkan untuk mengatasinya.
 
-Pada artikel ini, kita akan membahas secara mendalam filosofi, keunggulan, dan **batasan** dari **Pemrograman Berorientasi Objek** (OOP) yang menjadi arus utama dalam pengembangan perangkat lunak modern, **Pemrograman Fungsional** (FP) yang memiliki ketangguhan matematis, dan **Pemrograman Berorientasi Data** (DOP / DOD) yang berfokus pada performa dan pemisahan data. Lebih lanjut, kita akan menjelaskan bagaimana bahasa modern yang kuat (seperti [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) dan TypeScript) melakukan **fusi** dari ketiganya.
+Pada artikel ini, kita akan membahas secara mendalam filosofi, keunggulan, dan **batasan** dari **Pemrograman Berorientasi Objek** ([OOP](https://kenji.blog/id/p/object-oriented-programming-oop-solid-principles/)) yang menjadi arus utama dalam pengembangan perangkat lunak modern, **Pemrograman Fungsional** (FP) yang memiliki ketangguhan matematis, dan **Pemrograman Berorientasi Data** (DOP / DOD) yang berfokus pada performa dan pemisahan data. Lebih lanjut, kita akan menjelaskan bagaimana bahasa modern yang kuat (seperti [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) dan TypeScript) melakukan **fusi** dari ketiganya.
 
 ---
 
-## 1. Pasang Surut Pemrograman Berorientasi Objek (OOP)
+## 1. Pasang Surut Pemrograman Berorientasi Objek ([OOP](https://kenji.blog/id/p/object-oriented-programming-oop-solid-principles/))
 
-**Berorientasi Objek** (Object-Oriented Programming) berkuasa sebagai raja mutlak dalam pengembangan perangkat lunak dari tahun 1990-an hingga 2010-an. Bahasa seperti Java, C++, dan C# memimpin paradigma ini, dan pendekatan intuitifnya dalam memodelkan dunia nyata dapat diterima dengan baik.
+**Berorientasi Objek** ([Object-Oriented](https://kenji.blog/id/p/object-oriented-programming-oop-solid-principles/) Programming) berkuasa sebagai raja mutlak dalam pengembangan perangkat lunak dari tahun 1990-an hingga 2010-an. Bahasa seperti [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), C++, dan C# memimpin paradigma ini, dan pendekatan intuitifnya dalam memodelkan dunia nyata dapat diterima dengan baik.
 
 ### 1.1 Konsep Inti OOP
 
@@ -54,7 +54,7 @@ const animals: Animal[] = [new Dog("Buddy"), new Cat("Kitty")];
 animals.forEach(a => a.speak());
 ```
 
-### 1.2 Batasan OOP dan "Masalah Pisang dan Gorila"
+### 1.2 Batasan [OOP](https://kenji.blog/id/p/object-oriented-programming-oop-solid-principles/) dan "Masalah Pisang dan Gorila"
 
 Sekilas OOP tampak seperti metode pemodelan yang sempurna, tetapi seiring dengan membesarnya skala sistem, ia memicu masalah fatal yaitu **penyalahgunaan pewarisan** dan **manajemen status implisit**.
 
@@ -91,7 +91,7 @@ Pohon pewarisan yang dalam memperumit dependensi kode dan membuatnya sangat suli
 
 ## 2. Pendekatan Matematis dari Pemrograman Fungsional (FP)
 
-**Pemrograman Fungsional** (Functional Programming) menjadi sorotan sebagai antitesis terhadap kompleksitas yang ditimbulkan oleh "mutasi status" dari OOP. Ini tidak hanya pada bahasa seperti Haskell, Scala, dan Clojure, tetapi di era modern juga memberikan pengaruh kuat pada JavaScript dan TypeScript.
+**Pemrograman Fungsional** ([Functional Programming](https://kenji.blog/id/p/functional-programming-concepts-pure-functions-monads/)) menjadi sorotan sebagai antitesis terhadap kompleksitas yang ditimbulkan oleh "mutasi status" dari [OOP](https://kenji.blog/id/p/object-oriented-programming-oop-solid-principles/). Ini tidak hanya pada bahasa seperti Haskell, Scala, dan Clojure, tetapi di era modern juga memberikan pengaruh kuat pada JavaScript dan TypeScript.
 
 ### 2.1 Konsep Inti FP
 
@@ -140,7 +140,7 @@ Alokasi memori untuk menjaga immutability (beban pada [Garbage Collection](https
 
 ### 3.1 Konsep Inti DOP
 
-DOP menjadikan "pemisahan data dan logika" sebagai tujuan utamanya. Berbeda dengan OOP yang menggabungkan data dan logika ke dalam kelas, DOP memisahkannya.
+DOP menjadikan "pemisahan data dan logika" sebagai tujuan utamanya. Berbeda dengan [OOP](https://kenji.blog/id/p/object-oriented-programming-oop-solid-principles/) yang menggabungkan data dan logika ke dalam kelas, DOP memisahkannya.
 
 - **Pemisahan Data** : Data didefinisikan murni sebagai struktur data (record, struct) dan tidak memiliki perilaku.
 - **ECS (Entity Component System)** : Alih-alih pewarisan, data dibagi menjadi komponen-komponen, dan sistem (fungsi) memprosesnya secara massal.
@@ -192,7 +192,7 @@ Masing-masing paradigma memiliki area keunggulan dan kelemahan yang jelas.
 
 | Paradigma | Kelebihan | Kekurangan | Kasus Penggunaan Optimal |
 | :--- | :--- | :--- | :--- |
-| **OOP** | Pemodelan intuitif, penyembunyian melalui enkapsulasi | Kompleksitas pewarisan, bug akibat mutasi status implisit | Framework GUI, pemodelan domain bisnis |
+| **[OOP](https://kenji.blog/id/p/object-oriented-programming-oop-solid-principles/)** | Pemodelan intuitif, penyembunyian melalui enkapsulasi | Kompleksitas pewarisan, bug akibat mutasi status implisit | Framework GUI, pemodelan domain bisnis |
 | **FP** | Ketahanan terhadap pemrosesan konkuren, kemudahan pengujian, prediktabilitas | Kurva pembelajaran yang curam, performa (beban GC) | Pipa transformasi data (data pipeline), sistem konkuren |
 | **DOP** | Performa yang luar biasa, transparansi status | Penurunan kohesi data, cenderung prosedural | Pengembangan game, pemrosesan komputasi beban tinggi, sistem tertanam (embedded) |
 
@@ -200,9 +200,9 @@ Masing-masing paradigma memiliki area keunggulan dan kelemahan yang jelas.
 
 ## 5. Solusi Optimal Masa Kini: "Fusi" Paradigma
 
-Saat ini, memilih satu "jawaban yang paling benar" di antara ini dianggap masuk akal. Bahasa pemrograman modern ([Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), TypeScript, Scala, Go, dll.) telah mengambil **bagian terbaik** dari paradigma-paradigma ini.
+Saat ini, memilih satu "jawaban yang paling benar" di antara ini dianggap masuk akal. Bahasa pemrograman modern ([Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), TypeScript, Scala, [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), dll.) telah mengambil **bagian terbaik** dari paradigma-paradigma ini.
 
-### 5.1 Fusi Utama yang Ditunjukkan oleh Rust
+### 5.1 Fusi Utama yang Ditunjukkan oleh [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)
 
 Rust menggabungkan ketiga paradigma ini pada tingkat yang menakjubkan.
 

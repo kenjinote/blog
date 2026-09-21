@@ -13,7 +13,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 En el desarrollo frontend moderno, equilibrar el rendimiento y la experiencia del desarrollador (DX: Developer Experience) es una de las prioridades más importantes en cualquier proyecto. Combinar **Hugo**, que cuenta con una de las velocidades de compilación más rápidas del mundo entre los generadores de sitios estáticos (SSG), con **Tailwind CSS**, que introdujo el paradigma innovador de *utility-first* (utilidad primero), se puede considerar una de las soluciones definitivas a este desafío.
 
-Hugo está escrito en el lenguaje Go y posee un rendimiento asombroso que completa la compilación en apenas unos segundos, o incluso milisegundos, incluso para sitios con miles de páginas. Por otro lado, Tailwind CSS elimina el cambio de contexto entre archivos CSS y HTML, acelerando la iteración del diseño al permitir escribir innumerables clases de utilidad predefinidas (como `flex`, `text-center`, `mt-4`, etc.) directamente en el HTML.
+Hugo está escrito en el lenguaje [Go](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) y posee un rendimiento asombroso que completa la compilación en apenas unos segundos, o incluso milisegundos, incluso para sitios con miles de páginas. Por otro lado, Tailwind CSS elimina el cambio de contexto entre archivos CSS y HTML, acelerando la iteración del diseño al permitir escribir innumerables clases de utilidad predefinidas (como `flex`, `text-center`, `mt-4`, etc.) directamente en el HTML.
 
 En este artículo, explicaremos de manera exhaustiva y detallada, desde los fundamentos de la arquitectura hasta la perspectiva de la optimización matemática del rendimiento, el proceso de introducir Tailwind CSS a un tema de Hugo y, además, la construcción de una canalización de activos (Hugo Pipes) avanzada usando PostCSS.
 
@@ -268,7 +268,7 @@ A continuación, describiremos la canalización para cargar el archivo CSS anter
 
 #### Explicación de la canalización y diagrama de Mermaid
 
-Ilustraremos mediante un diagrama de Mermaid cómo el código de la plantilla Go anterior procesa el archivo CSS a través de una serie de procesos de canalización.
+Ilustraremos mediante un diagrama de Mermaid cómo el código de la plantilla [Go](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) anterior procesa el archivo CSS a través de una serie de procesos de canalización.
 
 ```mermaid
 flowchart TD

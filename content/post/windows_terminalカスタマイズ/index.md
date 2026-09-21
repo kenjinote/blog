@@ -24,7 +24,7 @@ description: 'Windows Terminalのカスタマイズ手法を極限まで深掘�
 
 # 1. Windows Terminalのレンダリングアーキテクチャと数理モデル
 
-Windows Terminalがこれほどまでに高速かつ滑らかに動作する背景には、Windowsのモダンな[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィックススタックを最大限に活用した洗練されたレンダリング[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)が存在します。従来のGDI（Graphics Device Interface）に代わり、Windows TerminalはDirectWriteとDirectX（Direct2D/Direct3D）を活用したGPUベースのハードウェアアクセラレーションを採用しています。
+Windows Terminalがこれほどまでに高速かつ滑らかに動作する背景には、Windowsのモダンな[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィックス[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を最大限に活用した洗練されたレンダリング[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)が存在します。従来のGDI（Graphics Device Interface）に代わり、Windows TerminalはDirectWriteとDirectX（Direct2D/Direct3D）を活用したGPUベースのハードウェアアクセラレーションを採用しています。
 
 以下に、キー入力から画面に文字が描画されるまでのターミナルレンダリングパイプラインの概念図を示します。
 
@@ -172,7 +172,7 @@ Windows Terminalは「JSON Fragments」と呼ばれる拡張メカニズムを�
 
 ## 3.2 Nerd Fontsの導入とフォント設定の最適化（CaskaydiaCove Nerd Font）
 
-後述するOh My PoshやStarshipのような高度なプロンプトツールを使用する場合、Gitのブランチアイコン、プログラミング言語のロゴ、OSのシンボルなど、特殊なグリフ（アイコン）を含むフォントが必須となります。これらのアイコンを既存のプログラミング用フォントにパッチ（追加）したものが「 **Nerd Fonts** 」です。
+後述するOh My PoshやStarshipのような高度なプロンプトツールを使用する場合、Gitのブランチアイコン、[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)のロゴ、OSのシンボルなど、特殊なグリフ（アイコン）を含むフォントが必須となります。これらのアイコンを既存のプログラミング用フォントにパッチ（追加）したものが「 **Nerd Fonts** 」です。
 
 Microsoftが開発したプログラミング用フォント「Cascadia Code」は、非常に読みやすく優れていますが、デフォルトではNerd Fontのアイコンを含んでいません。そこで、Cascadia CodeにNerd Fontパッチを適用した「 **CaskaydiaCove Nerd Font** 」を導入することを強く推奨します。
 

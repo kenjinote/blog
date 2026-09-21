@@ -11,7 +11,7 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 # [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)를 사용한 C++ 프로젝트의 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인 구축: 완전 가이드
 
-현대 소프트웨어 개발 패러다임에서 지속적 통합(Continuous Integration: CI)과 지속적 제공/배포(Continuous Delivery/Deployment: CD)는 애자일한 개발 프로세스와 고품질 소프트웨어를 유지하는 데 필수적인 요소입니다. 수많은 프로그래밍 언어가 존재하지만, C++에서의 CI/CD 파이프라인 구축은 다른 언어(예: Python, JavaScript, Go 등)에 비해 독특한 어려움과 복잡성을 수반합니다.
+현대 소프트웨어 개발 패러다임에서 지속적 통합(Continuous Integration: CI)과 지속적 제공/배포(Continuous Delivery/Deployment: CD)는 애자일한 개발 프로세스와 고품질 소프트웨어를 유지하는 데 필수적인 요소입니다. 수많은 프로그래밍 언어가 존재하지만, C++에서의 CI/CD 파이프라인 구축은 다른 언어(예: Python, JavaScript, [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 등)에 비해 독특한 어려움과 복잡성을 수반합니다.
 
 본 문서에서는 GitHub Actions를 활용하여 C++ 프로젝트를 위한 견고하고 실용적인 CI/CD 파이프라인을 처음부터 구축하는 방법을 매우 상세하게 설명합니다. 크로스 플랫폼(Windows, Linux, macOS)에서의 매트릭스 빌드, CMake를 이용한 빌드 시스템 통합, CTest를 사용한 자동 테스트, 정적·동적 분석 자동화, 커버리지 측정, 그리고 GitHub Releases를 통한 컴파일된 바이너리의 자동 전달까지 모든 실전 기술을 망라합니다.
 

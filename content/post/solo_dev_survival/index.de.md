@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # Einführung: Wie "die Habenichtse" gegen die Giganten kämpfen
 
-In der Geschichte der Softwareentwicklung gab es noch nie eine so vorteilhafte Zeit für Einzelentwickler (Indie-Entwickler). Die Demokratisierung der Cloud-Infrastruktur wie AWS und GCP, der Aufstieg von BaaS (Backend as a [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)) wie Vercel und Supabase und vor allem die Automatisierung der Programmierung durch die Entwicklung von LLMs (Large Language Models). All dies hat einen Boden geschaffen, auf dem Einzelpersonen direkt mit den "Giganten", den großen Technologieunternehmen, konkurrieren können.
+In der Geschichte der Softwareentwicklung gab es noch nie eine so vorteilhafte Zeit für Einzelentwickler (Indie-Entwickler). Die Demokratisierung der Cloud-Infrastruktur wie AWS und GCP, der Aufstieg von BaaS (Backend as a [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)) wie Vercel und Supabase und vor allem die Automatisierung der Programmierung durch die Entwicklung von LLMs ([Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)). All dies hat einen Boden geschaffen, auf dem Einzelpersonen direkt mit den "Giganten", den großen Technologieunternehmen, konkurrieren können.
 
 Allerdings bedeutet die Einebnung der technischen Ressourcen nicht, dass man gewinnen kann, indem man dieselbe Strategie wie große Unternehmen verfolgt. Bei Kapital, Marketing und Markenmacht sind Einzelpersonen im absoluten Nachteil. Damit Einzelentwickler überleben und gewinnen können, ist eine einzigartige "Überlebensstrategie" unerlässlich.
 
@@ -52,7 +52,7 @@ Einzelentwickler sollten gezielt auf nischenspezifische und spezialisierte Probl
 
 Unternehmenssysteme werden mit "Stabilität" und "Skalierbarkeit" als oberste Priorität entwickelt, weshalb [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/) und [[Microservice](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)s](https://kenji.blog/de/p/microservices-architecture-bff-api-gateway/)-Architekturen verwendet werden. Wenn jedoch ein Einzelentwickler dasselbe tut, werden seine Ressourcen allein durch die Wartung und Verwaltung der Infrastruktur (Ops) aufgebraucht.
 
-Das Motto für den Tech-Stack des Einzelentwicklers lautet **"No-Ops" (Null Betrieb)**. Nutzen Sie serverlose Architekturen bis an die Grenzen aus und konzentrieren Sie sich ausschließlich auf das Schreiben der Geschäftslogik.
+Das Motto für den Tech-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) des Einzelentwicklers lautet **"No-Ops" (Null Betrieb)**. Nutzen Sie serverlose Architekturen bis an die Grenzen aus und konzentrieren Sie sich ausschließlich auf das Schreiben der Geschäftslogik.
 
 ## Architekturvergleich: Großunternehmen vs. Einzelentwickler
 
@@ -77,7 +77,7 @@ flowchart TD
     end
 ```
 
-Im Stack großer Unternehmen sind Koordinationen zwischen mehreren Teams und die Einrichtung von DevOps-Deployment-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s erforderlich, um neue Funktionen hinzuzufügen. Im Gegensatz dazu wird der Stack eines Einzelnen (z. B. Next.js + Supabase + Vercel) mit einem einzigen `git push` im globalen Edge-Netzwerk bereitgestellt, und auch die DB-Bereitstellung ist nicht erforderlich.
+Im [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) großer Unternehmen sind Koordinationen zwischen mehreren Teams und die Einrichtung von DevOps-Deployment-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s erforderlich, um neue Funktionen hinzuzufügen. Im Gegensatz dazu wird der [Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) eines Einzelnen (z. B. Next.js + Supabase + Vercel) mit einem einzigen `git push` im globalen Edge-Netzwerk bereitgestellt, und auch die DB-Bereitstellung ist nicht erforderlich.
 
 ## Nutzung von [Serverless](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/) und Edge-Computing
 

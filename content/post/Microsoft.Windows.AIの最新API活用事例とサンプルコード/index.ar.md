@@ -62,7 +62,7 @@ P_{\text{peak}} = 1.5 \times 10^9 \times 4 \times 4096 \times 2 \approx 49.15 \t
 $$
 كما يظهر رياضيًا، هذا الأداء يتجاوز متطلبات 40 TOPS لأجهزة Copilot+ PC في Windows 11.
 
-بالإضافة إلى ذلك، فإن استنتاج نماذج الذكاء الاصطناعي، وخاصة نماذج LLM (مرحلة فك التشفير)، يميل إلى أن يكون **مقيدًا بالذاكرة (Memory-Bound)**. يُحسب عرض النطاق الترددي النظري $BW$ لذاكرة النظام على النحو التالي.
+بالإضافة إلى ذلك، فإن استنتاج نماذج الذكاء الاصطناعي، وخاصة نماذج [LLM](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/) (مرحلة فك التشفير)، يميل إلى أن يكون **مقيدًا بالذاكرة (Memory-Bound)**. يُحسب عرض النطاق الترددي النظري $BW$ لذاكرة النظام على النحو التالي.
 
 $$
 BW = f_{\text{mem}} \times W_{\text{bus}} \times \frac{2}{8}
@@ -306,7 +306,7 @@ int main() {
 ### 7.1 تكميم النموذج (Quantization) ومجموعة أدوات Olive
 لإطلاق العنان للقوة الحقيقية لـ NPU، فإن الشرط المطلق هو **تكميم (Quantization)** أوزان وتنشيطات نموذج الذكاء الاصطناعي من FP32 (الفاصلة العائمة أحادية الدقة) إلى INT8 أو INT4. تم تحسين بنية NPU لعمليات الأعداد الصحيحة، ويوفر INT8 إنتاجية أعلى من الناحية النظرية بـ 4 أضعاف وتوفيرًا كبيرًا في الطاقة مقارنة بـ FP32.
 
-باستخدام سلسلة أدوات `Olive (ONNX Live)` التي توفرها Microsoft، يمكن تحسين نماذج مثل PyTorch تلقائيًا لبيئات Windows. يوفر Olive دعمًا قويًا لتحسينات الانتباه (Attention) الخاصة لنماذج المحولات (Transformer models) وتجميع الرسوم البيانية ([Graph](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) compilation) الخاصة بالأجهزة.
+باستخدام سلسلة أدوات `Olive (ONNX Live)` التي توفرها Microsoft، يمكن تحسين نماذج مثل PyTorch تلقائيًا لبيئات Windows. يوفر Olive دعمًا قويًا لتحسينات الانتباه (Attention) الخاصة لنماذج المحولات ([Transformer](https://kenji.blog/ar/p/large-language-models-llm-transformer-prompt-engineering/) models) وتجميع الرسوم البيانية ([Graph](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) compilation) الخاصة بالأجهزة.
 
 ### 7.2 مقايضة بين معالجة الدفعات (Batch Processing) والبث التفاعلي
 في استدعاءات واجهة برمجة التطبيقات، يمكن أن تؤدي معالجة الدفعات لطلبات استنتاج متعددة إلى زيادة كفاءة استخدام NPU (Compute Utilization). ومع ذلك، بالنسبة لواجهات المستخدم التفاعلية مثل روبوتات الدردشة، فإن الوقت المستغرق لعرض الرمز الأول (TTFT: Time To First Token) يحدد تجربة المستخدم (UX) أكثر من الإنتاجية.

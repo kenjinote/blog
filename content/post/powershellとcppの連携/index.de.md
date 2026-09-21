@@ -87,7 +87,7 @@ extern "C" {
 
 Beim Datenaustausch zwischen C++ und PowerShell (.NET) sind die **Zeichenfolgenkodierung** und die **Speicherverwaltung** die wichtigsten Punkte, auf die man achten muss.
 
-- **`LPCWSTR` / `LPWSTR`**: Pointer auf C/C++ Wide Strings (UTF-16LE). Sie werden standardmäßig in den `W`-Funktionen der Windows-API verwendet. Bei P/Invoke werden sie durch Angabe von `CharSet = CharSet.Unicode` automatisch in .NET `String` oder `StringBuilder` gemarshallt.
+- **`LPCWSTR` / `LPWSTR`**: [Pointer](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) auf C/C++ Wide Strings (UTF-16LE). Sie werden standardmäßig in den `W`-Funktionen der Windows-API verwendet. Bei P/Invoke werden sie durch Angabe von `CharSet = CharSet.Unicode` automatisch in .NET `String` oder `StringBuilder` gemarshallt.
 - **`BSTR`**: Wide Strings mit Längenpräfix, die in COM (Component Object Model) verwendet werden. Der Speicher muss mit `SysAllocString` und `SysFreeString` verwaltet werden. In P/Invoke wird `[MarshalAs(UnmanagedType.BStr)]` angegeben.
 
 Wenn auf der C++-Seite neuer Speicher zugewiesen und an PowerShell zurückgegeben wird, stellt sich die Frage, wer den Speicher freigibt (Eigentümerschaft). In der obigen Funktion `ProcessSystemString` wird das Standardmuster der Win32-API angewendet: "C++ schreibt das Ergebnis in den Puffer (`outputBuffer`), den der Aufrufer (PowerShell) zuvor zugewiesen hat". Dies verhindert Speicherlecks.

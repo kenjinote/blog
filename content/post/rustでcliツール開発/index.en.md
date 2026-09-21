@@ -14,7 +14,7 @@ tags: ["Rust", "CLI", "clap", "tokio"]
 
 In modern software development, CLI (Command Line Interface) tools are essential for dramatically boosting developer productivity. In the past, shell scripts, Python, or Ruby were the mainstream, but in recent years, **[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)** has established a solid position as the de facto standard for CLI tool development.
 
-In this article, we will thoroughly explain how to build practical CLI tools that "run at blazing speed and can be developed at blazing speed" using Rust, covering everything from the basics to advanced topics. Rather than just building something that works, we will comprehensively cover robust error handling suitable for commercial use, high-speed API requests using asynchronous processing, and implementing progress bars to improve user experience (UX).
+In this article, we will thoroughly explain how to build practical CLI tools that "run at blazing speed and can be developed at blazing speed" using [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), covering everything from the basics to advanced topics. Rather than just building something that works, we will comprehensively cover robust error handling suitable for commercial use, high-speed API requests using asynchronous processing, and implementing progress bars to improve user experience (UX).
 
 By reading this article to the end, you will master the following advanced Rust tech stack and be able to publish your own powerful CLI tools to the world.
 
@@ -36,7 +36,7 @@ Thanks to Rust's greatest weaponsâ€”its Ownership model and strong type systemâ€
 
 ---
 
-## 3. The Ultimate Crate Stack Adopted in This Tutorial
+## 3. The Ultimate Crate [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) Adopted in This Tutorial
 
 In the Rust ecosystem, there are many excellent crates (libraries) that strongly support CLI development. In this tutorial, we will use the following crates, which can be called the "golden stack" in modern Rust CLI development.
 
@@ -430,9 +430,9 @@ Build a [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practi
 
 In this article, we thoroughly explained the entire flow of CLI tool development using [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/).
 
-1. **Design Policy**: We confirmed the safety and speed of Rust, and the advantages of a single binary.
+1. **Design Policy**: We confirmed the safety and speed of [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), and the advantages of a single binary.
 2. **Crate Selection**: We acquired powerful weapons: `clap`, `tokio`, `serde`, `indicatif`, `thiserror`, and `anyhow`.
 3. **Mathematical Advantages of Concurrency**: We theoretically understood the power of asynchronous processing based on Amdahl's Law and Little's Law.
 4. **Implementation and Optimization**: We packed practical know-how, from robust error handling to extreme binary optimization.
 
-CLI development in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) is a wonderful experience where software quality can be guaranteed from the design stage through dialogue with the compiler. Based on the base code we created this time, please develop your own original CLI tool and share it with the world! Happy Rust Coding!
+CLI development in [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) is a wonderful experience where software quality can be guaranteed from the design stage through dialogue with the compiler. Based on the base code we created this time, please develop your own original CLI tool and share it with the world! Happy [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) Coding!

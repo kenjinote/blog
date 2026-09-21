@@ -244,11 +244,11 @@ flowchart TD
     H --> J["Deploy to Hosting (Vercel/Netlify)"]
 ```
 
-## 5. Markdown Writing Techniques in the LLM Era
+## 5. Markdown Writing Techniques in the [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) Era
 
-In modern tech blog writing, leveraging LLMs (Large Language Models) is unavoidable. By utilizing built-in AI tools in your editor, your writing speed will double once again.
+In modern tech blog writing, leveraging LLMs ([Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/)) is unavoidable. By utilizing built-in AI tools in your editor, your writing speed will double once again.
 
-### Prompt Engineering Within the Editor
+### [Prompt Engineering](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) Within the Editor
 
 Using GitHub Copilot Chat in VS Code, or `ChatGPT.nvim` and `Copilot.vim` in Neovim, you can send prompts like the following without ever leaving the editor.
 
@@ -256,7 +256,7 @@ Using GitHub Copilot Chat in VS Code, or `ChatGPT.nvim` and `Copilot.vim` in Neo
 
 Instantly, Markdown headings and bullet points are generated. We then simply flesh out that skeleton.
 
-Also, for complex Mermaid diagrams or mathematical formulas (LaTeX), giving instructions to the AI allows it to generate accurate syntax. For instance, the foundation for the layout of the mathematical formulas and charts in this article was also sped up through pair writing with an LLM.
+Also, for complex Mermaid diagrams or mathematical formulas (LaTeX), giving instructions to the AI allows it to generate accurate syntax. For instance, the foundation for the layout of the mathematical formulas and charts in this article was also sped up through pair writing with an [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/).
 
 ## 6. Conclusion
 
@@ -266,7 +266,7 @@ We have explained the editor settings to double your writing speed when writing 
 2. **Utilizing VS Code**: Save input time with extensions and `markdown.json` snippets.
 3. **Extreme Customization in Neovim**: Dynamic snippets and full keyboard operation via `LuaSnip`.
 4. **textlint and Static Analysis**: Integrate [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) and local linters to bring proofreading time close to zero.
-5. **LLM Integration**: Have AI directly output Markdown structures and chart code within the editor.
+5. **[LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) Integration**: Have AI directly output Markdown structures and chart code within the editor.
 
 By adopting these settings in your own environment, the "hassle" of writing will disappear, and the quantity and quality of your technical output should dramatically improve. Why not start by registering just a single small snippet?
 

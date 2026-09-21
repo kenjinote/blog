@@ -882,8 +882,8 @@ Meskipun kami telah memperkenalkan berbagai algoritma pengurutan, tidak ada satu
 - Untuk jumlah data yang sangat sedikit atau data yang hampir terurut, **Pengurutan Sisip** sangat efektif.
 - Untuk penggunaan umum yang memerlukan kecepatan tertinggi, **Pengurutan Cepat** adalah yang paling optimal.
 - Jika stabilitas diperlukan atau Anda ingin menjamin kompleksitas waktu terburuk, **Pengurutan Gabung** adalah pilihan yang tepat.
-- Jika batasan memori sangat ketat dan Anda menginginkan kinerja yang stabil secara in-place, **Pengurutan Heap** adalah pilihan yang tepat.
+- Jika batasan memori sangat ketat dan Anda menginginkan kinerja yang stabil secara in-place, **Pengurutan [Heap](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)** adalah pilihan yang tepat.
 
-Pustaka standar pada bahasa pemrograman modern (Python, Java, Rust, dll.) telah mengadopsi metode hibrida (seperti TimSort dan IntroSort) yang menggabungkan kekuatan algoritma-algoritma ini, sehingga mengurangi peluang para developer untuk mengimplementasikan algoritma pengurutan dari awal secara mandiri. Namun, memahami trade-off (tarik-ulur) seperti apa yang dipertimbangkan di baliknya merupakan fondasi penting dalam mendesain perangkat lunak yang lebih kuat dan berkinerja tinggi.
+Pustaka standar pada bahasa pemrograman modern (Python, [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), dll.) telah mengadopsi metode hibrida (seperti TimSort dan IntroSort) yang menggabungkan kekuatan algoritma-algoritma ini, sehingga mengurangi peluang para developer untuk mengimplementasikan algoritma pengurutan dari awal secara mandiri. Namun, memahami trade-off (tarik-ulur) seperti apa yang dipertimbangkan di baliknya merupakan fondasi penting dalam mendesain perangkat lunak yang lebih kuat dan berkinerja tinggi.
 
 Kami berharap artikel ini akan membantu Anda dalam pembelajaran algoritma dan pengembangan praktis.

@@ -9,7 +9,7 @@ categories: ["ai", "llm", "windows"]
 tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 ---
 
-# 1. 簡介：為什麼現在要在 Windows 上運行本地 LLM？
+# 1. 簡介：為什麼現在要在 Windows 上運行本地 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)？
 
 2026年的今天，生成式 AI 與大型語言模型（LLM）的進化，展現出從雲端上巨大的 API 服務，轉向在個人 PC 與地端環境運作的「本地 LLM」的巨大典範轉移。雖然 OpenAI 的 GPT-5 與 Anthropic 的 Claude 3.5 等雲端 AI 非常強大，但企業與個人並不能將所有數據都傳送到雲端。從隱私、安全性、延遲，以及長期、可持續性成本的觀點來看，對本地 LLM 的需求正迎來前所未有的爆發性增長。
 
@@ -63,7 +63,7 @@ wsl --update
 
 ---
 
-# 3. 本地 LLM 的架構與推論機制
+# 3. 本地 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的架構與推論機制
 
 了解模型在本地環境中是如何生成文字的內部結構，對於疑難排解和效能最佳化非常有用。
 
@@ -91,7 +91,7 @@ graph TD
 
 ## 3.1 兩個階段：Prefill 與 Decode
 
-LLM 的文字生成分為兩個具有不同計算特性的階段。
+[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的文字生成分為兩個具有不同計算特性的階段。
 
 1. **Prefill（提示詞處理）階段** ：將輸入的完整提示詞一次性處理並進行理解的階段。由於可以平行計算，GPU 的運算能力（FLOPS）將直接影響速度。如果提示詞很長，這個階段可能會需要花費數秒鐘的時間。
 2. **Decode（Token 生成）階段** ：逐一預測 Token 並將其作為下一次輸入（自迴歸）的階段。因為在這個階段平行計算會受到限制，所以 GPU 的 VRAM 頻寬（Memory Bandwidth）會成為決定性的瓶頸。
@@ -273,7 +273,7 @@ graph LR
     LocalLLM --> Answer["最終回答"]
 ```
 
-只要使用 AnythingLLM 電腦版（Windows），在設定畫面中指定 Ollama（作為 LLM 與 Embedding 引擎），並設定使用本地的 VectorDB（LanceDB），短短幾分鐘內就能完成這個架構。這將誕生一個完全不會向外部傳送任何資料的私有 AI。
+只要使用 AnythingLLM 電腦版（Windows），在設定畫面中指定 Ollama（作為 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 與 Embedding 引擎），並設定使用本地的 VectorDB（LanceDB），短短幾分鐘內就能完成這個架構。這將誕生一個完全不會向外部傳送任何資料的私有 AI。
 
 ---
 
@@ -314,7 +314,7 @@ Unsloth 將 CUDA 核心優化到了極致，與標準的 Hugging Face 函式庫�
 
 # 10. 總結與未來展望
 
-在 2026 年，於 Windows 環境下建置本地 LLM 已不再是少部分工程師的特權。隨著 GGUF 格式成為業界標準、Ollama 與 LM Studio 等完善生態系統的出現，以及以 FlashAttention 為首的硬體最佳化，任何人都可以輕易打造出企業級的 AI 環境。
+在 2026 年，於 Windows 環境下建置本地 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 已不再是少部分工程師的特權。隨著 GGUF 格式成為業界標準、Ollama 與 LM Studio 等完善生態系統的出現，以及以 FlashAttention 為首的硬體最佳化，任何人都可以輕易打造出企業級的 AI 環境。
 
 請務必活用本文所解說的以下重點：
 

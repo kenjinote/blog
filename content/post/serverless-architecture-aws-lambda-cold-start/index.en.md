@@ -40,7 +40,7 @@ For example, suppose a flash sale starts on an e-commerce site, and access insta
 
 With AWS Lambda, every time a request comes in, an independent execution environment (container) instantly starts up and processes the request. When access is zero, resources are completely dropped to zero, and when access suddenly increases, the number of parallel executions is automatically increased to handle it.
 
-### 1.3. Cost Optimization through Pay-As-You-Go
+### 1.3. Cost Optimization through Pay-As-You-[Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)
 
 Serverless bills only for the execution time in milliseconds (1ms increments for Lambda) and the amount of memory allocated. When in an idle state (when no one is accessing it), there is absolutely no cost.
 
@@ -78,7 +78,7 @@ Initially, AWS Lambda used Linux containers (technology similar to LXC/[Docker](
 
 ### 3.1. What is Firecracker?
 
-Firecracker is a Virtual Machine Monitor (VMM) that utilizes KVM (Kernel-based Virtual Machine) to boot lightweight "MicroVMs" in milliseconds. It is written in the Rust language, and compared to traditional virtual machines (like QEMU), it achieves extremely fast startup and low memory overhead by aggressively stripping away unnecessary device models.
+Firecracker is a Virtual Machine Monitor (VMM) that utilizes KVM (Kernel-based Virtual Machine) to boot lightweight "MicroVMs" in milliseconds. It is written in the [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) language, and compared to traditional virtual machines (like QEMU), it achieves extremely fast startup and low memory overhead by aggressively stripping away unnecessary device models.
 
 ```mermaid
 graph TD
@@ -143,7 +143,7 @@ The time it takes for a cold start can be broadly divided into **AWS-side initia
 
 1. **Code download and extraction**: The deployment package is downloaded from S3 and extracted into the environment. The time taken is proportional to the package size (amount of dependency libraries).
 2. **Starting the MicroVM**: Firecracker boots up. This is extremely fast (in milliseconds) due to AWS optimizations.
-3. **Runtime initialization**: Processes for Node.js, Python, Java, etc. start. In particular, languages that use JIT (Just-In-Time) compilation, such as Java or C#, consume a significant amount of time here.
+3. **Runtime initialization**: Processes for Node.js, Python, [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), etc. start. In particular, languages that use JIT (Just-In-Time) compilation, such as Java or C#, consume a significant amount of time here.
 4. **Function initialization (Init Phase)**: The global scope of the code (outside the handler function) is evaluated. If you create a DB connection pool or initialize a heavy SDK here, the initialization time will be prolonged.
 
 ### 4.2. Cold Starts from a Probability Perspective
@@ -163,11 +163,11 @@ In other words, the higher the request frequency $\lambda$ or the longer the con
 
 Cold starts are the destiny of serverless, but through architectural design and implementation ingenuity, it is possible to minimize their impact.
 
-### 5.1. Programming Language Selection
+### 5.1. [Programming Language](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) Selection
 
 The speed of a cold start varies dramatically depending on the language.
 
-- **Fastest group**: AOT (Ahead-Of-Time) compiled languages like Go, Rust, and C++, as well as lightweight scripting languages (Python, Node.js). Their cold starts often fit within a few hundred milliseconds.
+- **Fastest group**: AOT (Ahead-Of-Time) compiled languages like [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), and C++, as well as lightweight scripting languages (Python, Node.js). Their cold starts often fit within a few hundred milliseconds.
 - **Slow group**: Java, C# (.NET). Due to the overhead of starting the JVM or CLR and JIT compilation, cold starts of several seconds to over ten seconds may occur.
 
 Approaches to further shorten Node.js startup times by using experimental lightweight JavaScript runtimes provided by AWS, such as **LLRT (Low Latency Runtime)**, are also gaining attention.
@@ -210,7 +210,7 @@ However, there is a dilemma (trade-off) that the serverless benefit of "pay-as-y
 
 ## 6. Game Changer: AWS Lambda SnapStart
 
-What emerged as a savior for slow-starting languages like Java was **AWS Lambda SnapStart**. This is a groundbreaking technology that takes a snapshot of the virtual machine's state and restores it during a cold start.
+What emerged as a savior for slow-starting languages like [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) was **AWS Lambda SnapStart**. This is a groundbreaking technology that takes a snapshot of the virtual machine's state and restores it during a cold start.
 
 As background technology, **CRaU** (Checkpoint/Restore in Userspace) and Firecracker's MicroVM snapshot feature are utilized.
 
@@ -253,7 +253,7 @@ sequenceDiagram
 
 ### 6.2. Benefits and Caveats of SnapStart
 
-Enabling SnapStart can speed up the cold start time for Java functions by **up to 10 times or more**. This is because the initialization of the runtime, JIT compilation, and heavy frameworks like Spring Boot are brought forward to "deploy time."
+Enabling SnapStart can speed up the cold start time for [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) functions by **up to 10 times or more**. This is because the initialization of the runtime, JIT compilation, and heavy frameworks like Spring Boot are brought forward to "deploy time."
 
 However, there are a few caveats.
 

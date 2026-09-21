@@ -253,7 +253,7 @@ Da FHE mittlerweile praktische Geschwindigkeiten erreicht, werden bahnbrechende 
 2.  **Betrugserkennung und Anti-Geldwäsche (AML) für Finanzinstitute**:
     Konkurrierende Banken können gegenseitig ihre Daten in verschlüsselter Form abgleichen, um riesige illegale Überweisungsnetzwerke zu erkennen (Cross-Bank-Analyse), ohne Kundenkontoinformationen oder Transaktionshistorien preiszugeben.
 3.  **Sichere KI-Inferenz-API (MaaS: Model as a [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/))**:
-    Benutzer verschlüsseln ihre eigene Stimme, Gesichtsbilder oder Prompts und senden sie an einen KI-Dienst (z.B. ein LLM wie ChatGPT). Der KI-Anbieter generiert Antworten, ohne die Eingabe des Benutzers jemals zu kennen, und gibt sie als Geheimtext zurück. Dies beseitigt vollständig die Sorge, dass "die KI persönliche Informationen lernt oder einsehen kann".
+    Benutzer verschlüsseln ihre eigene Stimme, Gesichtsbilder oder Prompts und senden sie an einen KI-Dienst (z.B. ein [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) wie ChatGPT). Der KI-Anbieter generiert Antworten, ohne die Eingabe des Benutzers jemals zu kennen, und gibt sie als Geheimtext zurück. Dies beseitigt vollständig die Sorge, dass "die KI persönliche Informationen lernt oder einsehen kann".
 
 ---
 

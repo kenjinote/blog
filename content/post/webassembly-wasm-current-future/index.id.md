@@ -19,7 +19,7 @@ tags:
 
 Browser web telah lama didominasi oleh satu bahasa saja, yaitu JavaScript. Namun, seiring dengan aplikasi web yang semakin kompleks dan membutuhkan performa yang setara dengan aplikasi native, keterbatasan JavaScript mulai terlihat. Di sinilah **WebAssembly (Wasm)** muncul.
 
-WebAssembly adalah format biner baru yang dapat dijalankan di browser dengan kecepatan yang mendekati kode native. Ini dikompilasi dari bahasa pemrograman seperti C, C++, dan Rust, dan saat ini membawa inovasi tidak hanya dalam pengembangan web, tetapi juga di berbagai bidang, mulai dari server-side, komputasi edge, hingga perangkat IoT.
+WebAssembly adalah format biner baru yang dapat dijalankan di browser dengan kecepatan yang mendekati kode native. Ini dikompilasi dari bahasa pemrograman seperti C, C++, dan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), dan saat ini membawa inovasi tidak hanya dalam pengembangan web, tetapi juga di berbagai bidang, mulai dari server-side, komputasi edge, hingga perangkat IoT.
 
 Pada artikel ini, kita akan membahas secara tuntas masa kini dan masa depan WebAssembly, mulai dari konsep dasar, mekanisme teknis bagaimana C dan Rust dapat berjalan di dalam browser, integrasi dengan JavaScript, perbandingan performa, hingga penerapannya di dunia luar browser (WASI).
 
@@ -68,7 +68,7 @@ flowchart TD
 
 Dengan cara ini, kode yang ditulis oleh pengembang melewati representasi menengah (IR), dioptimalkan, dan akhirnya menjadi file biner ringkas dengan ekstensi `.wasm`.
 
-## 2.2 Kode Byte dan Mesin Tumpukan (Stack Machine)
+## 2.2 Kode Byte dan Mesin Tumpukan ([Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) Machine)
 
 WebAssembly mengadopsi arsitektur **mesin tumpukan (stack machine)**. Ia tidak memiliki register, dan semua perhitungan dilakukan pada tumpukan (struktur data LIFO).
 
@@ -92,9 +92,9 @@ Struktur sederhana ini mempercepat proses dekode dan validasi, sehingga kompilas
 
 ## 2.3 Model Memori (Memori Linear)
 
-Di bahasa C dan Rust, operasi memori menggunakan pointer sangat sering dilakukan. Untuk mewujudkan hal ini, WebAssembly mengadopsi konsep **Memori Linear (Linear Memory)**.
+Di bahasa C dan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), operasi memori menggunakan pointer sangat sering dilakukan. Untuk mewujudkan hal ini, WebAssembly mengadopsi konsep **Memori Linear (Linear Memory)**.
 
-Memori linear adalah susunan byte berurutan yang dapat diakses oleh instance WebAssembly. Dari JavaScript, ini terlihat sebagai `ArrayBuffer` atau `SharedArrayBuffer`. Pointer dalam Wasm hanyalah indeks (nilai integer) dari array ini.
+Memori linear adalah susunan byte berurutan yang dapat diakses oleh instance WebAssembly. Dari JavaScript, ini terlihat sebagai `ArrayBuffer` atau `SharedArrayBuffer`. [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) dalam Wasm hanyalah indeks (nilai integer) dari array ini.
 
 ```mermaid
 flowchart LR
@@ -134,7 +134,7 @@ fetch('module.wasm')
 ## 3.2 Akses dan Pengikatan ke Web API
 
 Wasm sendiri tidak memiliki fungsi untuk mengakses DOM atau API Web secara langsung. Untuk mengaksesnya, kita harus melalui JavaScript.
-Namun, menulis semua itu secara manual akan sangat memakan waktu. Oleh karena itu, di ekosistem Rust, terdapat alat bernama **wasm-bindgen**.
+Namun, menulis semua itu secara manual akan sangat memakan waktu. Oleh karena itu, di ekosistem [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), terdapat alat bernama **wasm-bindgen**.
 
 ```rust
 // Kode Rust (menggunakan wasm-bindgen)
@@ -151,7 +151,7 @@ pub fn greet(name: &str) {
 }
 ```
 
-Saat kode ini dikompilasi, `wasm-bindgen` secara otomatis akan menghasilkan kode lem (glue code) JavaScript, dan menyembunyikan hal-hal seperti pengiriman memori string. Hal ini memberikan pengalaman pengembangan seolah-olah kita memanggil API browser secara langsung dari Rust.
+Saat kode ini dikompilasi, `wasm-bindgen` secara otomatis akan menghasilkan kode lem (glue code) JavaScript, dan menyembunyikan hal-hal seperti pengiriman memori string. Hal ini memberikan pengalaman pengembangan seolah-olah kita memanggil API browser secara langsung dari [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/).
 
 ---
 
@@ -185,7 +185,7 @@ function fibJs(n) {
 }
 ```
 
-### Implementasi Rust
+### Implementasi [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)
 ```rust
 #[no_mangle]
 pub fn fib_wasm(n: u32) -> u32 {
@@ -194,7 +194,7 @@ pub fn fib_wasm(n: u32) -> u32 {
 }
 ```
 
-Jika dihitung untuk nilai $n=40$, JavaScript (mesin V8) pada umumnya berjalan sangat cepat berkat optimasi JIT, tetapi Wasm yang dihasilkan dari Rust biasanya berjalan **sekitar 1,5 hingga lebih dari 2 kali** lebih cepat. Perbedaan ini menjadi semakin terlihat dalam bidang di mana akses memori yang berurutan dan instruksi SIMD berguna, seperti perhitungan matriks dan pemrosesan gambar.
+Jika dihitung untuk nilai $n=40$, JavaScript (mesin V8) pada umumnya berjalan sangat cepat berkat optimasi JIT, tetapi Wasm yang dihasilkan dari [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) biasanya berjalan **sekitar 1,5 hingga lebih dari 2 kali** lebih cepat. Perbedaan ini menjadi semakin terlihat dalam bidang di mana akses memori yang berurutan dan instruksi SIMD berguna, seperti perhitungan matriks dan pemrosesan gambar.
 
 ---
 
@@ -229,7 +229,7 @@ Dukungan untuk instruksi SIMD yang memproses beberapa data secara bersamaan deng
 Dengan memanfaatkan Web Workers dan `SharedArrayBuffer`, kini beberapa instansi Wasm dapat berbagi ruang memori yang sama dan menjalankan pemrosesan paralel (multi-threading). Ini memungkinkan simulasi fisik dan mesin game yang kompleks untuk berjalan lancar di browser.
 
 ## 6.3 Pengumpulan Sampah (Wasm GC)
-Sementara Wasm konvensional dirancang untuk C dan Rust yang mengelola memori linear secara manual, spesifikasi **Wasm GC** perlahan-lahan sedang distandarisasi agar dapat secara efisien mengkompilasi bahasa yang membutuhkan pengumpulan sampah seperti Java, Kotlin, C#, dan Dart ke dalam Wasm. Berkat ini, performa aplikasi web seperti Flutter Web telah meningkat secara drastis.
+Sementara Wasm konvensional dirancang untuk C dan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) yang mengelola memori linear secara manual, spesifikasi **Wasm GC** perlahan-lahan sedang distandarisasi agar dapat secara efisien mengkompilasi bahasa yang membutuhkan pengumpulan sampah seperti [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), Kotlin, C#, dan Dart ke dalam Wasm. Berkat ini, performa aplikasi web seperti Flutter Web telah meningkat secara drastis.
 
 ---
 
@@ -260,7 +260,7 @@ Saat ini, beberapa proyek (seperti Kwasm dan Spin) yang mendalangi eksekusi modu
 Masalah terbesar yang dihadapi WebAssembly saat ini adalah sulitnya untuk menghubungkan modul Wasm yang ditulis dengan berbagai bahasa pemrograman (karena representasi memori untuk tipe data yang kompleks dan string berbeda antara satu bahasa dengan bahasa lainnya).
 
 **WebAssembly Component Model** adalah solusi untuk masalah ini.
-Jika Model Komponen terwujud, maka Anda bisa melakukan hal-hal seperti secara langsung memanggil fungsi di "Modul Wasm yang ditulis dalam Python" dari "Modul Wasm yang ditulis dengan Rust". Hal ini memiliki potensi sebagai pondasi dari arsitektur layanan mikro (microservices) generasi berikutnya yang independen dari platform dan bahasa tertentu.
+Jika Model Komponen terwujud, maka Anda bisa melakukan hal-hal seperti secara langsung memanggil fungsi di "Modul Wasm yang ditulis dalam Python" dari "Modul Wasm yang ditulis dengan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)". Hal ini memiliki potensi sebagai pondasi dari arsitektur layanan mikro (microservices) generasi berikutnya yang independen dari platform dan bahasa tertentu.
 
 ## 8.2 Wasm sebagai Sistem Plugin
 Sudah banyak perangkat lunak, seperti Figma, EnvoyProxy, dan Microsoft Flight Simulator, yang mengadopsi WebAssembly sebagai sistem plugin khusus mereka. Ini dikarenakan kode pihak ketiga buatan pengguna bisa dieksekusi dengan aman dan sangat cepat di dalam aplikasi utamanya.

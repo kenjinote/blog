@@ -12,7 +12,7 @@ description: 'LLMs locais que você pode usar gratuitamente enquanto protege sua
 
 # Introdução
 
-Nos últimos anos, a evolução tecnológica dos Large Language Models (LLM) tem sido notável, e serviços de IA baseados em nuvem como ChatGPT e Claude tornaram-se amplamente populares. No entanto, por outro lado, a necessidade de "não querer enviar dados confidenciais da empresa para servidores externos", "querer reduzir os custos de uso de API" e "querer construir um sistema de IA que funcione completamente [offline](https://kenji.blog/pt/p/pwa-progressive-web-apps-service-worker/)" está aumentando rapidamente.
+Nos últimos anos, a evolução tecnológica dos [Large Language Models](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) ([LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/)) tem sido notável, e serviços de IA baseados em nuvem como ChatGPT e Claude tornaram-se amplamente populares. No entanto, por outro lado, a necessidade de "não querer enviar dados confidenciais da empresa para servidores externos", "querer reduzir os custos de uso de API" e "querer construir um sistema de IA que funcione completamente [offline](https://kenji.blog/pt/p/pwa-progressive-web-apps-service-worker/)" está aumentando rapidamente.
 
 O que atende a essa demanda são os "LLMs locais (LLMs de código aberto)" que podem ser baixados e executados diretamente em seu próprio PC ou servidor interno. Até por volta de 2023, era difícil alcançar uma precisão prática localmente, mas com a evolução das arquiteturas de modelo e o desenvolvimento da tecnologia de quantização (Quantization), agora é possível rodar LLMs de altíssimo desempenho de forma suave até mesmo em GPUs voltadas para o consumidor (como NVIDIA RTX 3090 / 4090 e Apple Silicon do Mac).
 
@@ -20,7 +20,7 @@ Neste artigo, selecionamos os "Top 5 modelos recomendados" que são avaliados co
 
 ---
 
-# Por que rodar um LLM localmente?
+# Por que rodar um [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) localmente?
 
 A adoção de LLMs locais possui muitos benefícios únicos que as APIs baseadas em nuvem não têm.
 
@@ -80,7 +80,7 @@ Desenvolvida pela Meta, a série "Llama 3" é o padrão de fato da indústria pa
 
 ### Evolução e características da arquitetura
 
-A Llama 3 adota a arquitetura padrão do Transformer, mas inclui inúmeras melhorias técnicas em relação à geração anterior (Llama 2). Vale destacar os seguintes pontos:
+A Llama 3 adota a arquitetura padrão do [Transformer](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/), mas inclui inúmeras melhorias técnicas em relação à geração anterior (Llama 2). Vale destacar os seguintes pontos:
 
 - **Adoção padrão de GQA (Grouped Query Attention)**: O GQA, que era usado apenas em modelos de grande escala no Llama 2, foi adotado também em modelos de menor escala, como o 8B, no Llama 3. Como resultado, o uso de memória do cache KV foi drasticamente reduzido, permitindo uma inferência rápida mesmo com contextos longos.
 - **Expansão do tamanho do vocabulário**: O tamanho do vocabulário do tokenizador (baseado em Tiktoken) foi expandido para 128.000 tokens, e a eficiência da compactação de múltiplos idiomas e códigos de programa melhorou drasticamente. A eficiência do processamento em japonês também é várias vezes melhor quando comparada à Llama 2.
@@ -114,7 +114,7 @@ Os modelos fornecidos pela startup de IA francesa "Mistral AI" chocaram a indús
 
 ### Mecanismo do MoE (Mixture of Experts)
 
-O "Mixtral 8x7B" foi o primeiro LLM de código aberto a adotar totalmente a arquitetura **MoE (Mixture of Experts)**, e obteve grande sucesso.
+O "Mixtral 8x7B" foi o primeiro [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) de código aberto a adotar totalmente a arquitetura **MoE (Mixture of Experts)**, e obteve grande sucesso.
 MoE é um mecanismo que possui 8 "redes especialistas (Expert)" no modelo como um todo (cerca de 47 bilhões de parâmetros) e seleciona (roteia) dinamicamente apenas os dois melhores especialistas para cada token inserido.
 
 ```mermaid
@@ -187,7 +187,7 @@ A série Phi nasceu do paradigma "Textbook is all you need" (Um livro didático 
 ### A revolução do SLM (Pequeno Modelo de Linguagem)
 
 Recentemente, a abordagem principal para o desenvolvimento de LLMs era a técnica de força bruta de "simplesmente aumentar o número de parâmetros e o volume de dados". No entanto, a Microsoft provou que "se você elevar a qualidade dos dados fornecidos ao modelo (dados de livros didáticos de alta qualidade e dados sintéticos) ao extremo, mesmo com um pequeno número de parâmetros, é possível ter uma inteligência da classe do GPT-3.5".
-O Phi-3 não é chamado de LLM (Large Language Model), mas de **SLM (Small Language Model)**.
+O Phi-3 não é chamado de [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) (Large Language Model), mas de **SLM (Small Language Model)**.
 
 ```mermaid
 graph TD

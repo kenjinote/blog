@@ -10,11 +10,11 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'مقارنة شاملة بين مؤشرات C++ ونموذج الملكية والاستعارة في Rust. من المؤشرات الخام والمؤشرات الذكية إلى مدقق الاستعارة، نشرح جوهر أمان الذاكرة.'
 ---
 
-في برمجة الأنظمة الحديثة، يمثل تحقيق التوازن بين الأداء وأمان الذاكرة تحديًا مستمرًا. لفترة طويلة، سيطرت C++ على هذا المجال كملك متوج، ولكن في السنوات الأخيرة، بدأت لغة [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) في تهديد هذه المكانة. تتمثل الميزة الأبرز في Rust في مفهومي "الملكية (Ownership)" و"الاستعارة (Borrowing)"، اللذين يضمنان أمان الذاكرة في وقت الترجمة دون الحاجة إلى جامع قمامة ([Garbage Collection](https://kenji.blog/ar/p/memory-management-garbage-collection/)).
+في برمجة الأنظمة الحديثة، يمثل تحقيق التوازن بين الأداء وأمان الذاكرة تحديًا مستمرًا. لفترة طويلة، سيطرت C++ على هذا المجال كملك متوج، ولكن في السنوات الأخيرة، بدأت لغة [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) في تهديد هذه المكانة. تتمثل الميزة الأبرز في [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) في مفهومي "الملكية (Ownership)" و"الاستعارة (Borrowing)"، اللذين يضمنان أمان الذاكرة في وقت الترجمة دون الحاجة إلى جامع قمامة ([Garbage Collection](https://kenji.blog/ar/p/memory-management-garbage-collection/)).
 
-في هذه المقالة، سنقارن بالتفصيل بين مؤشرات C++ (المؤشرات الخام، `std::unique_ptr`، `std::shared_ptr`) ونموذج الملكية في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/). سنشرح بشكل شامل كيف يمنع مترجم Rust (مدقق الاستعارة أو [Borrow Checker](https://kenji.blog/ar/p/memory-management-garbage-collection/)) أخطاء مثل الاستخدام بعد التحرير (Use-After-Free) وسباق البيانات (Data Race)، وذلك مدعومًا بأمثلة برمجية ورسوم توضيحية.
+في هذه المقالة، سنقارن بالتفصيل بين مؤشرات C++ (المؤشرات الخام، `std::unique_ptr`، `std::shared_ptr`) ونموذج الملكية في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/). سنشرح بشكل شامل كيف يمنع مترجم [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) (مدقق الاستعارة أو [Borrow Checker](https://kenji.blog/ar/p/memory-management-garbage-collection/)) أخطاء مثل الاستخدام بعد التحرير (Use-After-Free) وسباق البيانات (Data Race)، وذلك مدعومًا بأمثلة برمجية ورسوم توضيحية.
 
-## 1. أساسيات إدارة الذاكرة: المكدس (Stack) والكومة (Heap)
+## 1. أساسيات إدارة الذاكرة: المكدس ([Stack](https://kenji.blog/ar/p/c-language-pointers-memory-management-stack-heap/)) والكومة ([Heap](https://kenji.blog/ar/p/c-language-pointers-memory-management-stack-heap/))
 
 لفهم أساسيات إدارة الذاكرة، دعونا نراجع أولاً كيف يستخدم البرنامج الذاكرة. تنقسم مساحة الذاكرة بشكل رئيسي إلى "المكدس (Stack)" و"الكومة (Heap)".
 
@@ -22,13 +22,13 @@ description: 'مقارنة شاملة بين مؤشرات C++ ونموذج ال�
 هي المنطقة التي يتم فيها تكديس المتغيرات المحلية وغيرها عند استدعاء الدوال. تتميز بهيكل LIFO (ما يدخل أخيرًا يخرج أولاً)، وتكون عملية تخصيص الذاكرة وتحريرها سريعة جدًا. يتم وضع البيانات التي يمكن تحديد حجمها في وقت الترجمة (Compile time) فقط هنا.
 
 ### الكومة (Heap)
-يتم فيها وضع البيانات التي يُحدد حجمها ديناميكيًا في وقت التشغيل (Runtime)، أو البيانات التي تحتاج إلى البقاء بعد انتهاء نطاق الدالة (Scope). يتم الوصول إليها عبر المؤشرات (Pointers) أو المراجع (References).
+يتم فيها وضع البيانات التي يُحدد حجمها ديناميكيًا في وقت التشغيل (Runtime)، أو البيانات التي تحتاج إلى البقاء بعد انتهاء نطاق الدالة (Scope). يتم الوصول إليها عبر المؤشرات ([Pointer](https://kenji.blog/ar/p/c-language-pointers-memory-management-stack-heap/)s) أو المراجع (References).
 
 في اللغات التي لا تحتوي على جامع قمامة مثل C++ و[Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، يمكن صياغة تكلفة إدارة ذاكرة الكومة بمعادلة رياضية كالتالي. بافتراض أن إجمالي عدد الكائنات هو $N$، ومتوسط الوقت المستغرق في التخصيص هو $T_{alloc}$، ومتوسط الوقت المستغرق في التحرير هو $T_{dealloc}$، فإن إجمالي تكلفة إدارة الذاكرة $C_{memory}$ يكون:
 
 $$ C_{memory} = \sum_{i=1}^{N} (T_{alloc, i} + T_{dealloc, i}) + O_{sync} $$
 
-حيث يمثل $O_{sync}$ النفقات الإضافية (Overhead) للتحكم الحصري (مثل كائنات المزامنة Mutex والعمليات الذرية Atomic operations) في بيئة متعددة الخيوط (Multithreaded). نظرًا لأن Rust تحدد توقيت تحرير الذاكرة في وقت الترجمة، فإنها تقضي على مشكلة انخفاض الإنتاجية (Stop-The-World) الناتجة عن جامع القمامة في وقت التشغيل، وتنفذ $T_{dealloc}$ في وقت آمن ومؤكد.
+حيث يمثل $O_{sync}$ النفقات الإضافية (Overhead) للتحكم الحصري (مثل كائنات المزامنة Mutex والعمليات الذرية Atomic operations) في بيئة متعددة الخيوط (Multithreaded). نظرًا لأن [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) تحدد توقيت تحرير الذاكرة في وقت الترجمة، فإنها تقضي على مشكلة انخفاض الإنتاجية (Stop-The-World) الناتجة عن جامع القمامة في وقت التشغيل، وتنفذ $T_{dealloc}$ في وقت آمن ومؤكد.
 
 ```mermaid
 graph TD
@@ -44,12 +44,12 @@ graph TD
 
 دعونا نلقي نظرة على تطور إدارة الذاكرة في C++.
 
-### عصر المؤشرات الخام (Raw Pointers) ومشاكلها
+### عصر المؤشرات الخام (Raw [Pointer](https://kenji.blog/ar/p/c-language-pointers-memory-management-stack-heap/)s) ومشاكلها
 
 توفر المؤشرات الخام (`*`)، الموروثة من لغة C، حرية مطلقة، ولكنها في الوقت نفسه تعتبر بيئة خصبة لأخطاء خطيرة مثل:
 
 - **تسرب الذاكرة (Memory Leak)**: نسيان استخدام `delete` للذاكرة المخصصة بواسطة `new`.
-- **المؤشرات المتدلية (Dangling Pointer)**: الوصول إلى مؤشر يشير إلى ذاكرة تم تحريرها (بعد `delete`).
+- **المؤشرات المتدلية (Dangling [Pointer](https://kenji.blog/ar/p/c-language-pointers-memory-management-stack-heap/))**: الوصول إلى مؤشر يشير إلى ذاكرة تم تحريرها (بعد `delete`).
 - **التحرير المزدوج (Double Free)**: استخدام `delete` لنفس مساحة الذاكرة مرتين.
 
 ```cpp
@@ -93,13 +93,13 @@ void uniquePtrExample() {
 
 ## 3. الملكية (Ownership) في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/): نقلة نوعية
 
-تضع Rust مفهوم `std::unique_ptr` الخاص بـ C++ كجوهر لمواصفات اللغة، مع تطبيق "نموذج ملكية" أكثر صرامة.
+تضع [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) مفهوم `std::unique_ptr` الخاص بـ C++ كجوهر لمواصفات اللغة، مع تطبيق "نموذج ملكية" أكثر صرامة.
 
 ### القواعد الثلاث للملكية
 
 يعتمد نظام الملكية في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) على ثلاث قواعد بسيطة للغاية:
 
-1. **كل قيمة في Rust تمتلك متغيرًا يُسمى "المالك" (Owner).**
+1. **كل قيمة في [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) تمتلك متغيرًا يُسمى "المالك" (Owner).**
 2. **يمكن أن يكون هناك مالك واحد فقط في أي وقت.**
 3. **عندما يخرج المالك من النطاق (Scope)، سيتم تدمير القيمة.**
 
@@ -171,7 +171,7 @@ fn main() {
 
 ### إبطال المكرر في C++ (انهيار وقت التشغيل)
 
-عند تعديل `std::vector` في C++ داخل حلقة تكرارية، هناك احتمال أن يتم إعادة تخصيص الذاكرة الأساسية (Reallocation)، مما يحول المرجع إلى مؤشر متدلٍ (Dangling Pointer).
+عند تعديل `std::vector` في C++ داخل حلقة تكرارية، هناك احتمال أن يتم إعادة تخصيص الذاكرة الأساسية (Reallocation)، مما يحول المرجع إلى مؤشر متدلٍ (Dangling [Pointer](https://kenji.blog/ar/p/c-language-pointers-memory-management-stack-heap/)).
 
 ```cpp
 // C++: خطأ إبطال المكرر
@@ -197,7 +197,7 @@ int main() {
 
 ### حماية وقت الترجمة بواسطة [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)
 
-دعونا نكتب نفس المنطق تمامًا باستخدام Rust.
+دعونا نكتب نفس المنطق تمامًا باستخدام [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/).
 
 ```rust
 // Rust: منع إبطال المكرر في وقت الترجمة
@@ -275,7 +275,7 @@ fn main() {
 
 توفر المؤشرات والمؤشرات الذكية في C++ للمطور تحكمًا متقدمًا وأداءً عاليًا، ولكن الاستخدام الصحيح لها يعتمد على انضباط المطور. على الرغم من أن C++ أصبحت أكثر أمانًا بشكل دراماتيكي مع إدخال RAII و `std::unique_ptr`، إلا أنها لا تستطيع منع "السلوك غير المحدد" تمامًا على مستوى اللغة، مثل الوصول بعد النقل أو إبطال المكرر.
 
-من ناحية أخرى، من خلال تضمين قواعد الملكية (Ownership) والاستعارة (Borrowing) في المترجم، تكتشف [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) هذه الأخطاء **في وقت الترجمة** بدلاً من وقت التشغيل. إن الضمان القوي المتمثل في "إذا نجحت عملية الترجمة، فإن الذاكرة آمنة" هو السبب الأكبر الذي جعل Rust تكتسب دعمًا سريعًا في برمجة الأنظمة.
+من ناحية أخرى، من خلال تضمين قواعد الملكية (Ownership) والاستعارة (Borrowing) في المترجم، تكتشف [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) هذه الأخطاء **في وقت الترجمة** بدلاً من وقت التشغيل. إن الضمان القوي المتمثل في "إذا نجحت عملية الترجمة، فإن الذاكرة آمنة" هو السبب الأكبر الذي جعل [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) تكتسب دعمًا سريعًا في برمجة الأنظمة.
 
 على الرغم من أن القتال ضد مدقق الاستعارة في Rust (Fight the borrow checker) يمثل عقبة كبيرة للمبتدئين، إلا أنه في الواقع قيام المترجم بالنيابة عنك بعملية حسابية معقدة تتمثل في "تتبع مدة بقاء المؤشر"، والتي كان مبرمجو C++ يقومون بها عادة في رؤوسهم.
 

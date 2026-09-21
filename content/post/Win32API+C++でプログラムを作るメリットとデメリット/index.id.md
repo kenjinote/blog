@@ -33,7 +33,7 @@ Dimungkinkan juga untuk membangun alat yang disesuaikan untuk tujuan tertentu, a
 
 ### Mudah Didistribusikan Tanpa Perlu Runtime
 
-Karena tidak diperlukan runtime eksternal seperti .NET atau Java, aplikasi **dapat didistribusikan hanya dengan satu file yang dapat dieksekusi** .
+Karena tidak diperlukan runtime eksternal seperti .NET atau [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), aplikasi **dapat didistribusikan hanya dengan satu file yang dapat dieksekusi** .
 Masalah saat redistribusi jarang terjadi, dan daya tariknya adalah mudah dijalankan bahkan tanpa penginstal.
 
 ### Aplikasi Ringan Dapat Dibuat

@@ -125,7 +125,7 @@ xychart-beta
 
 ---
 
-## 4. Melampaui *Prompt Engineering*: Apa Keterampilan yang Benar-benar Dibutuhkan?
+## 4. Melampaui *[Prompt Engineering](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)*: Apa Keterampilan yang Benar-benar Dibutuhkan?
 
 Lalu, seperti apa sosok bakat IT yang dibutuhkan di era mendatang? Berpikir bahwa "cukup dengan menguasai *prompt engineering* saja" adalah kesimpulan yang terlalu dini. Teknik memberikan instruksi menggunakan bahasa alami semakin lama semakin mudah dan menjadi komoditas seiring dengan evolusi model AI.
 

@@ -53,7 +53,7 @@ $$ P(d) = \log_{10} \left( 1 + \frac{1}{d} \right) $$
 
 ## なぜ「1」が多くなるのか？
 
-直感に反するこの法則ですが、なぜこのような偏りが生じるのでしょうか？ その理由を理解するための直感的な説明が **スケール不変性 (Scale Invariance)** と **対数スケールでの一様性** です。
+直感に反するこの法則ですが、なぜこのような偏りが生じるのでしょうか？ その理由を理解するための直感的な説明が **スケール[不変性](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/) (Scale Invariance)** と **対数スケールでの一様性** です。
 
 ### スケール不変性
 

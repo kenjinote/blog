@@ -14,7 +14,7 @@ description: 'Una guía detallada que cubre cómo implementar funciones de IA lo
 
 ## 1. Introducción: La nueva era de Windows con IA integrada de forma nativa
 
-En los últimos años, la evolución de la tecnología de IA ha sido notable, y se ha producido un rápido cambio de paradigma desde la utilización de grandes modelos de lenguaje (LLM) en la nube hasta la inferencia de IA en dispositivos de borde (PC locales). El núcleo de esto es "Windows Copilot Runtime" proporcionado por Microsoft para Windows 11 y la API "Microsoft.Windows.AI" para operarlo.
+En los últimos años, la evolución de la tecnología de IA ha sido notable, y se ha producido un rápido cambio de paradigma desde la utilización de grandes modelos de lenguaje ([LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/)) en la nube hasta la inferencia de IA en dispositivos de borde (PC locales). El núcleo de esto es "Windows Copilot Runtime" proporcionado por Microsoft para Windows 11 y la API "Microsoft.Windows.AI" para operarlo.
 
 El desarrollo de aplicaciones utilizando APIs en la nube (como OpenAI y Azure OpenAI) es fácil, pero conlleva desafíos como la latencia, la privacidad y los costos continuos. Por otro lado, al ejecutar modelos de IA localmente, puede lograr aplicaciones de latencia ultrabaja que funcionan incluso sin conexión, sin que los datos confidenciales salgan del dispositivo.
 
@@ -62,7 +62,7 @@ P_{\text{peak}} = 1.5 \times 10^9 \times 4 \times 4096 \times 2 \approx 49.15 \t
 $$
 Queda demostrado matemáticamente que este rendimiento supera los 40 TOPS, que es el requisito para un PC Copilot+ con Windows 11.
 
-Además, la inferencia de los modelos de IA, especialmente de los LLM (fase de decodificación), tiende a estar **limitada por la memoria (Memory-Bound)**. El ancho de banda teórico de la memoria del sistema $BW$ se calcula de la siguiente manera.
+Además, la inferencia de los modelos de IA, especialmente de los [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) (fase de decodificación), tiende a estar **limitada por la memoria (Memory-Bound)**. El ancho de banda teórico de la memoria del sistema $BW$ se calcula de la siguiente manera.
 
 $$
 BW = f_{\text{mem}} \times W_{\text{bus}} \times \frac{2}{8}
@@ -306,7 +306,7 @@ A continuación se resumen las estrategias de optimización esenciales al desarr
 ### 7.1 Cuantización de modelos (Quantization) y Olive Toolkit
 Para liberar el verdadero poder de la NPU, es un requisito absoluto **cuantizar (Quantization)** los pesos y las activaciones del modelo de IA de FP32 (punto flotante de precisión simple) a INT8 o INT4. La arquitectura de la NPU está especializada en operaciones de enteros y, en comparación con FP32, INT8 logra teóricamente 4 veces el rendimiento y un ahorro de energía significativo.
 
-Al utilizar la cadena de herramientas `Olive (ONNX Live)` proporcionada por Microsoft, los modelos como PyTorch se pueden optimizar automáticamente para entornos Windows. Olive brinda un fuerte soporte para la optimización de atención especial para modelos Transformer y la compilación de gráficos por hardware.
+Al utilizar la cadena de herramientas `Olive (ONNX Live)` proporcionada por Microsoft, los modelos como PyTorch se pueden optimizar automáticamente para entornos Windows. Olive brinda un fuerte soporte para la optimización de atención especial para modelos [Transformer](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) y la compilación de gráficos por hardware.
 
 ### 7.2 La compensación entre el procesamiento por lotes y el streaming interactivo
 En las llamadas a la API, al agrupar múltiples solicitudes de inferencia (procesamiento por lotes), se puede aumentar la eficiencia de utilización (Compute Utilization) de la NPU. Sin embargo, en el caso de las interfaces de usuario interactivas, como los chatbots, el tiempo hasta que se muestra el primer token (TTFT: Time To First Token) determina la experiencia del usuario (UX) más que el rendimiento (throughput).

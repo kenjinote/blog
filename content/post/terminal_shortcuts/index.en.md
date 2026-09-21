@@ -161,7 +161,7 @@ Thanks to this, even in a Windows environment, you can intuitively construct, se
 
 One of the most frequent actions in terminal operations is **"finding a complex command executed in the past from history and re-executing it"**. Because the standard `Ctrl+R` (reverse search) is an exact match search, it's difficult to pull out a command from a vague memory like "I'm sure it was a docker run with a volume mount...".
 
-The tool that elegantly solves this problem is **`fzf`**, an ultra-fast general-purpose fuzzy finder written in Go.
+The tool that elegantly solves this problem is **`fzf`**, an ultra-fast general-purpose fuzzy finder written in [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/).
 
 ## 4.1. Fuzzy Search [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) with fzf
 

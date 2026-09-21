@@ -17,9 +17,9 @@ tags: ["C++", "Rust", "Wasm", "JavaScript"]
 
 ## 2. نظرة عامة على [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/)) وبنيته
 
-WebAssembly هو تنسيق أوامر ثنائي لآلة افتراضية تعتمد على المكدس (Stack-based virtual machine). تم تصميمه كـ "هدف تجميع محمول" يمكن التحويل البرمجي إليه من لغات مثل C/C++، [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، Go، و Zig، ويهدف إلى التنفيذ بسرعة تقترب من السرعة الأصلية على متصفحات الويب.
+WebAssembly هو تنسيق أوامر ثنائي لآلة افتراضية تعتمد على المكدس ([Stack](https://kenji.blog/ar/p/c-language-pointers-memory-management-stack-heap/)-based virtual machine). تم تصميمه كـ "هدف تجميع محمول" يمكن التحويل البرمجي إليه من لغات مثل C/C++، [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، [Go](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)، و Zig، ويهدف إلى التنفيذ بسرعة تقترب من السرعة الأصلية على متصفحات الويب.
 
-يوضح الشكل التالي التدفق العام لسلسلة الأدوات (toolchain) بدءًا من توليد WebAssembly من C++ و Rust حتى تنفيذه في المتصفح.
+يوضح الشكل التالي التدفق العام لسلسلة الأدوات (toolchain) بدءًا من توليد WebAssembly من C++ و [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) حتى تنفيذه في المتصفح.
 
 ```mermaid
 graph TD
@@ -141,7 +141,7 @@ Module.onRuntimeInitialized = () => {
 
 توفر [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) دعمًا من الدرجة الأولى لـ [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، وباستخدام أدوات `wasm-bindgen` و `wasm-pack`، يمكن تحقيق تكامل متقدم بين JavaScript و [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/). في حين أن Emscripten يتبع نهج "إحضار وقت تشغيل C/C++ الضخم إلى المتصفح"، فإن `wasm-pack` في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) يتبع نهج "إنشاء الروابط الضرورية فقط (كود الغراء JS)".
 
-### كود تنفيذ Rust
+### كود تنفيذ [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/)
 
 قم بإنشاء مشروع Cargo وحدد `cdylib` و `wasm-bindgen` في `Cargo.toml`.
 
@@ -287,9 +287,9 @@ graph TD
 
 من خلال البث والترجمة (Streaming Compilation) (الترجمة إلى لغة الآلة بالتوازي أثناء التنزيل) لهذه الأقسام، تحقق محركات [Wasm](https://kenji.blog/ar/p/webassembly-wasm-current-future/) في المتصفح سرعة تشغيل أسرع بشكل كبير.
 
-## 9. C++ مقابل Rust: أيهما يجب أن تختار؟
+## 9. C++ مقابل [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/): أيهما يجب أن تختار؟
 
-عند إنشاء [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، يعتمد الاختيار بين C++ و Rust بشكل كبير على متطلبات المشروع والأصول الحالية.
+عند إنشاء [WebAssembly](https://kenji.blog/ar/p/webassembly-wasm-current-future/)، يعتمد الاختيار بين C++ و [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/) بشكل كبير على متطلبات المشروع والأصول الحالية.
 
 **الحالات التي يجب فيها اختيار C++ / Emscripten**:
 * عندما تريد ترحيل (porting) مكتبات C/C++ الحالية (مثل FFmpeg، OpenCV، SQLite) إلى المتصفح.

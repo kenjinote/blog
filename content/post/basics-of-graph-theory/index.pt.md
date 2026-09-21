@@ -143,7 +143,7 @@ Para resolver problemas em grafos de forma eficiente, muitos excelentes algoritm
 Os algoritmos mais fundamentais para visitar sistematicamente todos os vértices numa rede sem omissão são a **Busca em Largura (Breadth-First Search, BFS)** e a **Busca em Profundidade (Depth-First Search, DFS)**.
 
 *   **Busca em Largura (BFS)**: Explora concentricamente, priorizando os vértices mais próximos ao ponto de partida. É como ondulações se espalhando quando uma pedra é atirada na água. É ideal para encontrar o caminho mais curto (o caminho com o número mínimo de arestas) em um grafo não ponderado. É implementado usando uma estrutura de dados de Fila (Queue).
-*   **Busca em Profundidade (DFS)**: Explora o mais profundamente possível, e ao atingir um beco sem saída, volta ao ponto de ramificação anterior para explorar outro caminho. É como resolver um labirinto seguindo as paredes. Usado para detectar ciclos em um grafo ou para ordenação topológica. É implementado usando uma Pilha (Stack) ou chamadas de função recursivas.
+*   **Busca em Profundidade (DFS)**: Explora o mais profundamente possível, e ao atingir um beco sem saída, volta ao ponto de ramificação anterior para explorar outro caminho. É como resolver um labirinto seguindo as paredes. Usado para detectar ciclos em um grafo ou para ordenação topológica. É implementado usando uma Pilha ([Stack](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/)) ou chamadas de função recursivas.
 
 Abaixo está um exemplo de implementação simples da Busca em Largura (BFS) usando Python.
 
@@ -289,7 +289,7 @@ Por exemplo, para responder à questão "Quem é a figura central (influenciador
 
 Nos últimos anos, na vanguarda da inteligência artificial (IA) e do aprendizado de máquina, as **Redes Neurais de Grafos (Graph Neural Networks, GNN)**, que podem aprender diretamente a partir de dados com estruturas de grafos, atraíram uma atenção explosiva.
 
-Os modelos de aprendizado de máquina tradicionais, como as CNNs utilizadas no reconhecimento de imagens ou os Transformers usados no processamento de linguagem natural, foram concebidos para lidar com dados regulares, como arrays de píxeis em grelha ou sequências de palavras unidimensionais. No entanto, era extremamente difícil lidar com dados de grafos irregulares e complexos, como as intrincadas ligações de SNS ou as estruturas de ligações atómicas que constituem as moléculas.
+Os modelos de aprendizado de máquina tradicionais, como as CNNs utilizadas no reconhecimento de imagens ou os [Transformer](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/)s usados no processamento de linguagem natural, foram concebidos para lidar com dados regulares, como arrays de píxeis em grelha ou sequências de palavras unidimensionais. No entanto, era extremamente difícil lidar com dados de grafos irregulares e complexos, como as intrincadas ligações de SNS ou as estruturas de ligações atómicas que constituem as moléculas.
 
 As GNNs ultrapassaram esta barreira ao propagar e aprender simultaneamente as informações de características de cada vértice do grafo e a topologia (relações de ligação) de todo o grafo. Atualmente, as GNNs foram implementadas na prática como tecnologias essenciais em aplicações de IA de ponta, nomeadamente no campo da descoberta de fármacos (Drug Discovery), prevendo as propriedades de novos compostos, em sistemas avançados de recomendação na Amazon e Netflix, e na previsão da hora de chegada no Google Maps.
 

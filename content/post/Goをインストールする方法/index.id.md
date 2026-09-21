@@ -9,9 +9,9 @@ categories: ["programming"]
 description: 'Menjelaskan untuk pemula cara menginstal bahasa pemrograman ''Go (Golang)'' yang dikembangkan oleh Google. Sangat cocok sebagai pengantar bahasa Go pertama Anda, mulai dari mendapatkan installer, hingga langkah pembuatan program Hello World, kompilasi, dan penjalanan.'
 ---
 # Pengantar
-Go adalah bahasa pemrograman yang relatif baru yang dirilis oleh Google pada tahun 2009.
+[Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) adalah bahasa pemrograman yang relatif baru yang dirilis oleh Google pada tahun 2009.
 Kompiler, alat, dan pustaka Go bersifat sumber terbuka (open source).
-Selain itu, Go adalah bahasa dengan pengetikan statis seperti C dan Java, tetapi tidak menggunakan pointer seperti bahasa C.
+Selain itu, Go adalah bahasa dengan pengetikan statis seperti C dan [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), tetapi tidak menggunakan pointer seperti bahasa C.
 
 # Cara Instalasi
 
@@ -63,7 +63,7 @@ Menjalankan `hello.exe` akan menghasilkan `Hello, world!`.
 
 [http://go.shibu.jp/](http://go.shibu.jp/)
 
-Penjelasan yang diperlukan untuk mempelajari Go dirangkum pada tautan di atas.
+Penjelasan yang diperlukan untuk mempelajari [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) dirangkum pada tautan di atas.
 Teknologi yang terkait dengan Go sangat terbuka dan lengkap sehingga Anda tidak perlu membeli buku cetak.
 
 Jadi, nikmati hidup dengan Go!

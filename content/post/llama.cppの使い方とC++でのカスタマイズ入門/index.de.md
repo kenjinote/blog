@@ -10,15 +10,15 @@ tags: ["llama.cpp", "C++", "LLM", "AI", "Customization"]
 description: 'Ein vollständiger Leitfaden von den Grundlagen von llama.cpp bis hin zu fortgeschrittenen C++-Anpassungen, dem mathematischen Hintergrund von Transformern und der ggml-Architektur.'
 ---
 
-In den letzten Jahren war die Entwicklung von Large Language Models (LLMs) enorm und ihre Anwendungsbereiche erweitern sich täglich. Um jedoch Modelle mit Milliarden oder zig Milliarden Parametern in einer lokalen Umgebung auszuführen, benötigt man normalerweise eine High-End-GPU mit enorm viel VRAM. **llama.cpp** hat diese „Hardware-Barriere“ durchbrochen und ermöglicht praktische LLM-Inferenz auf gewöhnlichen PCs, Macs und sogar auf Geräten wie dem Raspberry Pi.
+In den letzten Jahren war die Entwicklung von [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) enorm und ihre Anwendungsbereiche erweitern sich täglich. Um jedoch Modelle mit Milliarden oder zig Milliarden Parametern in einer lokalen Umgebung auszuführen, benötigt man normalerweise eine High-End-GPU mit enorm viel VRAM. **llama.cpp** hat diese „Hardware-Barriere“ durchbrochen und ermöglicht praktische [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Inferenz auf gewöhnlichen PCs, Macs und sogar auf Geräten wie dem Raspberry Pi.
 
-In diesem Artikel erklären wir nicht nur die Nutzung als reines Kommandozeilentool, sondern gehen für Entwickler äußerst detailliert auf die zugrunde liegende `ggml`-Architektur, den mathematischen Hintergrund von Transformern und Quantisierung sowie die Nutzung der C++-API ein, um LLMs in eigene Anwendungen zu integrieren und anzupassen.
+In diesem Artikel erklären wir nicht nur die Nutzung als reines Kommandozeilentool, sondern gehen für Entwickler äußerst detailliert auf die zugrunde liegende `ggml`-Architektur, den mathematischen Hintergrund von [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)n und Quantisierung sowie die Nutzung der C++-API ein, um LLMs in eigene Anwendungen zu integrieren und anzupassen.
 
 ---
 
 ## 1. Übersicht über llama.cpp und ggml
 
-`llama.cpp` ist eine von Georgi Gerganov in C/C++ geschriebene, leichtgewichtige LLM-Inferenz-Engine. Ursprünglich wurde sie entwickelt, um Metas LLaMA-Modelle auf Apple Silicon (M1/M2 Macs) mit hoher Geschwindigkeit auszuführen, unterstützt aber mittlerweile verschiedene Architekturen und Modelle.
+`llama.cpp` ist eine von Georgi Gerganov in C/C++ geschriebene, leichtgewichtige [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Inferenz-Engine. Ursprünglich wurde sie entwickelt, um Metas LLaMA-Modelle auf Apple Silicon (M1/M2 Macs) mit hoher Geschwindigkeit auszuführen, unterstützt aber mittlerweile verschiedene Architekturen und Modelle.
 
 Das größte Merkmal ist, dass es sich um eine **reine C/C++-Implementierung ohne externe Abhängigkeiten** handelt. Da kein riesiges Ökosystem wie Python oder PyTorch benötigt wird und es als einzelne ausführbare Datei kompiliert werden kann, ist die Bereitstellung extrem einfach.
 
@@ -32,7 +32,7 @@ Das Herzstück von `llama.cpp` ist die Tensor-Berechnungsbibliothek **ggml**. gg
 
 ---
 
-## 2. Mathematischer Hintergrund: Transformer und Quantisierung
+## 2. Mathematischer Hintergrund: [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) und Quantisierung
 
 Um llama.cpp tiefgreifend zu verstehen, muss man die mathematischen Formeln kennen, die es berechnet, und wissen, wie es diese Berechnungen annähert.
 
@@ -153,7 +153,7 @@ Bei einem erfolgreichen Build werden ausführbare Dateien wie `llama-cli` und di
 ## 5. Einführung in die C++-Anpassung: Nutzung der llama.cpp API
 
 Von hier an behandeln wir das Hauptthema: die Steuerung von llama.cpp aus C++-Code.
-Um ein LLM in Ihre eigenen Anwendungen (z. B. Spiel-Engines, Desktop-Apps, eingebettete Systeme usw.) zu integrieren, anstatt nur das Kommandozeilentool zu verwenden, müssen Sie die C++-API direkt aufrufen.
+Um ein [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) in Ihre eigenen Anwendungen (z. B. Spiel-Engines, Desktop-Apps, eingebettete Systeme usw.) zu integrieren, anstatt nur das Kommandozeilentool zu verwenden, müssen Sie die C++-API direkt aufrufen.
 
 llama.cpp bietet hauptsächlich eine C-Schnittstelle über eine Header-Datei namens `llama.h`. Auch beim Aufruf aus C++ wird diese Schnittstelle verwendet.
 

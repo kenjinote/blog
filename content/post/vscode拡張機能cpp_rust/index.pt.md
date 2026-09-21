@@ -11,7 +11,7 @@ tags: ["VSCode", "C++", "Rust", "Editor"]
 
 # Introdução
 
-Na programação de sistemas moderna, C++ e [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) estabeleceram uma posição firme como as linguagens mais importantes. O C++ é indispensável para sistemas operacionais, motores de jogos e sistemas de negociação de alta frequência (HFT), graças ao seu longo histórico e vasto ecossistema. Por outro lado, o Rust, que está se espalhando rapidamente devido à sua segurança de memória garantida pelo modelo de propriedade (Ownership) e às especificações de linguagem modernas, também está ganhando adoção no kernel do Linux. Ao desenvolver nessas duas linguagens, a escolha e a configuração do editor afetam diretamente a produtividade.
+Na programação de sistemas moderna, C++ e [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) estabeleceram uma posição firme como as linguagens mais importantes. O C++ é indispensável para sistemas operacionais, motores de jogos e sistemas de negociação de alta frequência (HFT), graças ao seu longo histórico e vasto ecossistema. Por outro lado, o [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), que está se espalhando rapidamente devido à sua segurança de memória garantida pelo modelo de propriedade (Ownership) e às especificações de linguagem modernas, também está ganhando adoção no kernel do Linux. Ao desenvolver nessas duas linguagens, a escolha e a configuração do editor afetam diretamente a produtividade.
 
 O Visual Studio Code (VSCode) é amado por programadores de sistemas em todo o mundo devido à sua alta extensibilidade e leveza. No entanto, o VSCode recém-instalado é apenas um simples editor de texto. Para extrair o verdadeiro poder do C++ e do Rust, a introdução de extensões apropriadas e configurações precisas, como servidores de linguagem que entendem profundamente a semântica da linguagem, e depuradores que rastreiam o estado em nível de binário, são essenciais.
 
@@ -99,7 +99,7 @@ Dominando a indexação em segundo plano (otimização estrutural de dados pré-
 
 ### ② rust-analyzer (O Padrão de Fato para Desenvolvimento em [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/))
 
-No desenvolvimento em Rust, o atual servidor de linguagem oficial é o **`rust-analyzer`**. O RLS ([Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) Language Server), antigo padrão, chamava diretamente o compilador (`rustc`), o que limitava o seu tempo de resposta. O `rust-analyzer` foi projetado do zero para IDEs e tem uma função poderosa capaz de fazer análise incremental, mesmo de código incompleto.
+No desenvolvimento em [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), o atual servidor de linguagem oficial é o **`rust-analyzer`**. O RLS ([Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) Language Server), antigo padrão, chamava diretamente o compilador (`rustc`), o que limitava o seu tempo de resposta. O `rust-analyzer` foi projetado do zero para IDEs e tem uma função poderosa capaz de fazer análise incremental, mesmo de código incompleto.
 
 #### Funcionalidades que trazem produtividade esmagadora
 1. **Inlay Hints (Dicas em linha)**: No [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), graças à sua forte inferência de tipos, recomenda-se evitar declarações de tipos explícitas, mas isso pode reduzir a legibilidade. Os Inlay Hints exibem o tipo inferido ou o nome do argumento de chamadas de função com letras mais finas diretamente na tela do editor.
@@ -125,9 +125,9 @@ A configuração que executa automaticamente o `cargo clippy` em segundo plano a
 
 ### ③ CodeLLDB (Poderoso Depurador Multiplataforma)
 
-Tanto na programação C++ quanto no Rust, um depurador para investigar o estado da memória durante a execução é essencial. O **`CodeLLDB`** é particularmente compatível com [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) e funciona de forma consistente no Windows, Mac e Linux.
+Tanto na programação C++ quanto no [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), um depurador para investigar o estado da memória durante a execução é essencial. O **`CodeLLDB`** é particularmente compatível com [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) e funciona de forma consistente no Windows, Mac e Linux.
 
-O compilador do Rust (`rustc`) usa o LLVM no seu back-end, portanto o formato das informações de depuração geradas (DWARF / PDB) é totalmente compatível com o LLDB, que também faz parte do projeto LLVM.
+O compilador do [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) (`rustc`) usa o LLVM no seu back-end, portanto o formato das informações de depuração geradas (DWARF / PDB) é totalmente compatível com o LLDB, que também faz parte do projeto LLVM.
 
 #### Exemplo avançado de configuração do launch.json
 
@@ -336,7 +336,7 @@ sequenceDiagram
 
 Como ilustrado neste diagrama de sequência, existe um imenso fluxo contínuo de protocolos interativos durante o processamento da depuração. Essas comunicações infinitas (rodando sob a Especificação do Protocolo Debug Adapter - DAP) garantem operações suaves que ligam a interação do VSCode em conjunto ao CodeLLDB. Estruturas complexas orientadas à agregação de ponteiros abstratos como as bases orientadoras do `std::map` originário do C++ e `Vec<T>` em [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) transparecem formatações perfeitas ao visual do VSCode (através do mapeamento da matriz visual por árvore expandível da estrutura de objetos orientados a itens), permitindo a leitura e percepção natural pelo recurso embutido e formatado a partir da base do CodeLLDB.
 
-Tudo isso graças ao compilador Rust que exporta todo o layout estrutural provindo nativamente (exemplo dos tamanhos estruturais orientando paddings de dados alocados nos preenchimentos) via formato DWARF. A partir das origens provindas com bases formadoras do CodeLLDB, tudo será lido da memória base no aspecto bruto binário de modo que converta lindamente esses dados complexos para visualizações interativas ao olho humano.
+Tudo isso graças ao compilador [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/) que exporta todo o layout estrutural provindo nativamente (exemplo dos tamanhos estruturais orientando paddings de dados alocados nos preenchimentos) via formato DWARF. A partir das origens provindas com bases formadoras do CodeLLDB, tudo será lido da memória base no aspecto bruto binário de modo que converta lindamente esses dados complexos para visualizações interativas ao olho humano.
 
 ---
 
@@ -375,7 +375,7 @@ C++ e [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/) são amba
 Adotando as dez ferramentas e as configurações detalhadas recomendadas neste artigo, o VSCode transcende o status de "simples editor de texto", elevando-se a um "Exoesqueleto de desenvolvedor" que une a inteligência avançada de compilação e o profundo poder investigativo das ferramentas de depuração.
 
 1. **clangd** (Servidor de Linguagem C++)
-2. **rust-analyzer** (Servidor de Linguagem Rust)
+2. **rust-analyzer** (Servidor de Linguagem [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/))
 3. **CodeLLDB** (Depurador Integrado)
 4. **CMake Tools** (Automação de Build C++)
 5. **crates** (Gestão de Dependências Rust)

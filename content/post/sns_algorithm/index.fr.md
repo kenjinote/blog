@@ -46,7 +46,7 @@ $$
 $$
 
 **Impact sur la sélection technologique :**
-Cet algorithme rapproche "l'utilisateur A intéressé par [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)" et "l'utilisateur B intéressé par Rust" dans l'espace latent. Si A "aime" une publication sur un nouveau framework Web, il est très probable que cette publication apparaisse également dans le fil d'actualité de B. Cela provoque un phénomène de mode locale autour d'une technologie spécifique au sein d'un groupe d'ingénieurs préférant une stack technologique particulière.
+Cet algorithme rapproche "l'utilisateur A intéressé par [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)" et "l'utilisateur B intéressé par [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)" dans l'espace latent. Si A "aime" une publication sur un nouveau framework Web, il est très probable que cette publication apparaisse également dans le fil d'actualité de B. Cela provoque un phénomène de mode locale autour d'une technologie spécifique au sein d'un groupe d'ingénieurs préférant une stack technologique particulière.
 
 ### 2.2 Modèles de recommandation utilisant l'apprentissage profond (DLRM)
 

@@ -278,9 +278,9 @@ def merge(left, right):
 *   **最悪[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)**: $O(n^2)$
     *   これは致命的な弱点です。すでにソート済みの配列に対して、常に端の要素をピボットとして選んでしまうと、配列が「1つ」と「残り全部」に偏って分割され続け、最悪計算量に陥ります。これを回避するために「Median-of-three（先頭・中央・末尾の中央値をとる）」などのピボット選択の工夫が必須です。
 *   **平均時間計算量**: $O(n \log n)$
-    *   実質的には定数係数が非常に小さく、キャッシュ効率が極めて良いため、マージソートやヒープソートよりも高速に動作します。
+    *   実質的には定数係数が非常に小さく、キャッシュ効率が極めて良いため、マージソートや[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソートよりも高速に動作します。
 *   **空間計算量**: 平均 $O(\log n)$、最悪 $O(n)$
-    *   配列自体を直接書き換える In-place なアルゴリズムですが、再帰呼び出しのためのコールスタックを消費します。
+    *   配列自体を直接書き換える In-place なアルゴリズムですが、再帰呼び出しのためのコール[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を消費します。
 *   **安定性**: 不安定 (Unstable)
     *   パーティション操作において離れた要素の交換が行われるため、安定ではありません。
 
@@ -338,15 +338,15 @@ def partition(arr, low, high):
     return i + 1
 ```
 
-### 3.3 ヒープソート (Heap Sort)
+### 3.3 [ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソート ([Heap](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/) Sort)
 
 ヒープソートは、**二分ヒープ（Binary Heap）**という[木構造](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)のデータ構造を巧みに利用した[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)です。最悪計算量が $O(n \log n)$ でありながら、追加のメモリを使用しない In-place なソートであるという、[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)と[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)の良いとこ取りのような特性を持ちます。
 
-#### ヒープソートの仕組み
+#### [ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソートの仕組み
 
-1. **ヒープの構築**: まず、与えられた配列を「最大ヒープ（Max Heap）」に変換します。最大ヒープとは、親ノードの値が必ず子ノードの値以上になるという規則を満たした完全二分木のことです。配列上でインデックス計算（親：$(i-1)/2$、左子：$2i+1$、右子：$2i+2$）を用いることで、木構造を配列のまま表現できます。
+1. **ヒープの構築**: まず、与えられた配列を「最大ヒープ（Max [Heap](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)）」に変換します。最大ヒープとは、親ノードの値が必ず子ノードの値以上になるという規則を満たした完全二分木のことです。配列上でインデックス計算（親：$(i-1)/2$、左子：$2i+1$、右子：$2i+2$）を用いることで、木構造を配列のまま表現できます。
 2. **最大値の抽出と再構築**: 最大ヒープのルート（配列の先頭 `arr[0]`）には必ず最大値が存在します。この最大値を配列の末尾の要素と交換します。これにより、最大値が配列の最終位置に確定します。
-3. ルートが書き換えられたことでヒープの条件が崩れるため、ヒープの末尾（確定済みの部分）を除いた範囲で「ヒープの再構築（Heapify）」を行い、再び最大ヒープの条件を満たすようにします。
+3. ルートが書き換えられたことで[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の条件が崩れるため、ヒープの末尾（確定済みの部分）を除いた範囲で「ヒープの再構築（Heapify）」を行い、再び最大ヒープの条件を満たすようにします。
 4. この操作を要素が1つになるまで繰り返すことで、配列の後ろから順に大きい値が確定し、最終的に昇順にソートされます。
 
 ```mermaid
@@ -362,7 +362,7 @@ graph TD
 #### 時間・[空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)と特徴
 
 *   **最悪・平均・最良[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)**: 全て $O(n \log n)$
-    *   ヒープの構築に $O(n)$、最大値の抽出と再構築（$O(\log n)$）を $n$ 回繰り返すため、全体で $O(n \log n)$ となります。いかなるデータの並びでもこの計算量が保証されるため、最悪ケースの回避が求められるシステムで重宝します。
+    *   [ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)の構築に $O(n)$、最大値の抽出と再構築（$O(\log n)$）を $n$ 回繰り返すため、全体で $O(n \log n)$ となります。いかなるデータの並びでもこの計算量が保証されるため、最悪ケースの回避が求められるシステムで重宝します。
 *   **空間計算量**: $O(1)$ （In-place）
     *   配列上でそのままヒープ木を表現するため、追加のメモリを必要としません。
 *   **安定性**: 不安定 (Unstable)
@@ -463,11 +463,11 @@ def counting_sort(arr):
 
 ## 5. 現代の実用界を支配するハイブリッドアルゴリズム
 
-学術的な教科書では[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)や[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)までが扱われることが多いですが、現在のプログラミング言語の裏側で実際に稼働しているのは、複数のアルゴリズムの長所を組み合わせた **ハイブリッドアルゴリズム** です。
+学術的な教科書では[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)や[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)までが扱われることが多いですが、現在の[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の裏側で実際に稼働しているのは、複数のアルゴリズムの長所を組み合わせた **ハイブリッドアルゴリズム** です。
 
 ### 5.1 Timsort (Pythonのデフォルト)
 
-Timsort（ティムソート）は、Tim Peters氏によって2002年にPython向けに実装されたアルゴリズムで、現在ではPythonの `list.sort()` や `sorted()` はもちろん、Javaのオブジェクト配列や[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の標準ソートなど、数多くの言語で採用されている実用界の覇者です。
+Timsort（ティムソート）は、Tim Peters氏によって2002年にPython向けに実装されたアルゴリズムで、現在ではPythonの `list.sort()` や `sorted()` はもちろん、[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)のオブジェクト配列や[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の標準ソートなど、数多くの言語で採用されている実用界の覇者です。
 
 Timsortの最大の設計思想は、 **「現実世界のデータは、完全にランダムなものは少なく、ある程度部分的にソートされている（連続した昇順や降順のブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)がある）ことが多い」** という経験則に基づいています。
 
@@ -486,7 +486,7 @@ Introspective Sort (イントロソート) は、C++のSTLである `std::sort` 
 #### Introsortの特徴
 1. 基本的には高速な **クイックソート** を用いて配列を分割していきます。
 2. しかし、再帰の深さを監視し、分割の深さが $\log_2 n$ の定数倍（例: $2 \times \log_2 n$）を超えた場合、「ピボットの選択がうまくいかず、最悪計算量に陥りかけている」と判断（Introspection：自己内省）します。
-3. その時点で、その部分配列に対するソート手法を、最悪計算量が $O(n \log n)$ である **ヒープソート** に切り替えます。
+3. その時点で、その部分配列に対するソート手法を、最悪計算量が $O(n \log n)$ である **[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソート** に切り替えます。
 4. また、要素数が非常に小さくなった場合（例: 16要素以下）は、関数呼び出しのオーバーヘッドを避けるため **挿入ソート** に切り替えます。
 
 これにより、クイックソートの圧倒的な平均速度を維持しつつ、最悪の場合でも $O(n \log n)$ を保証するという、非の打ち所がないアルゴリズムを実現しています。
@@ -504,7 +504,7 @@ Introspective Sort (イントロソート) は、C++のSTLである `std::sort` 
 | **挿入ソート (Insertion Sort)** | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | Yes | 挿入。ほぼソート済みのデータに極めて強い。 |
 | **[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/) (Merge Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | 分割統治。堅牢な計算量だがメモリを食う。 |
 | **クイックソート (Quick Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | $O(\log n)$ | No | 分割統治。平均最速だが最悪ケースに注意。 |
-| **ヒープソート (Heap Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No | 二分ヒープ。In-placeで堅牢。 |
+| **[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソート ([Heap](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/) Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No | 二分ヒープ。In-placeで堅牢。 |
 | **計数ソート (Counting Sort)** | $O(n+k)$ | $O(n+k)$ | $O(n+k)$ | $O(k)$ | Yes | 非比較。キー範囲が狭い場合に最強。 |
 | **Timsort** (Python等標準) | $O(n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | ハイブリッド。実データに対して適応的で最速。 |
 | **Introsort** (C++等標準) | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(\log n)$ | No | ハイブリッド。Quickの速さとHeapの堅牢性を両立。 |
@@ -522,7 +522,7 @@ Introspective Sort (イントロソート) は、C++のSTLである `std::sort` 
 しかし、ではなぜ[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)を学ぶ必要があるのでしょうか？
 
 1. **基礎概念の理解**: 計算量（[Big O](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) Notation）、In-place/Out-of-place、安定性といった概念は、ソートに限らずあらゆるアルゴリズム設計・データ構造設計の基礎となります。
-2. **特殊な制約下のシステム**: 組み込みシステムなどメモリが極度に制限された環境では、$O(1)$ 空間のヒープソートや In-place なクイックソートを自前で実装する必要があるかもしれません。
+2. **特殊な制約下のシステム**: 組み込みシステムなどメモリが極度に制限された環境では、$O(1)$ 空間の[ヒープ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソートや In-place なクイックソートを自前で実装する必要があるかもしれません。
 3. **データの性質を活かす**: 「値の範囲が1〜100に限られている100万件のデータ」をソートする場合、標準のTimsort（$O(n \log n)$）を使うよりも、計数ソート（$O(n)$）を実装した方が圧倒的に高速になります。
 
 アルゴリズムの内部構造を知ることで、ブラックボックスとして提供されている標準関数の「得意なこと」と「苦手なこと」を理解し、より高度で効率的なシステム設計を行うことができるようになるのです。

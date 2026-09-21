@@ -17,9 +17,9 @@ Artikel ini akan membahas secara mendalam mulai dari dasar-dasar WebAssembly, ca
 
 ## 2. Gambaran Umum dan Arsitektur [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/))
 
-WebAssembly adalah format instruksi biner untuk mesin virtual berbasis stack. Ia dirancang sebagai "target kompilasi portabel" yang dapat dikompilasi dari bahasa seperti C/C++, [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), Go, Zig, dll., dengan tujuan untuk dieksekusi pada kecepatan yang mendekati native di browser web.
+WebAssembly adalah format instruksi biner untuk mesin virtual berbasis stack. Ia dirancang sebagai "target kompilasi portabel" yang dapat dikompilasi dari bahasa seperti C/C++, [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), Zig, dll., dengan tujuan untuk dieksekusi pada kecepatan yang mendekati native di browser web.
 
-Diagram berikut menunjukkan gambaran umum alur toolchain dari pembuatan WebAssembly menggunakan C++ dan Rust, hingga dieksekusi di dalam browser.
+Diagram berikut menunjukkan gambaran umum alur toolchain dari pembuatan WebAssembly menggunakan C++ dan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), hingga dieksekusi di dalam browser.
 
 ```mermaid
 graph TD
@@ -141,7 +141,7 @@ Module.onRuntimeInitialized = () => {
 
 [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) menyediakan dukungan kelas satu untuk [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/), dan menggunakan alat `wasm-bindgen` serta `wasm-pack` memungkinkan interaksi tingkat tinggi antara JavaScript dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/). Sementara pendekatan Emscripten "membawa runtime besar C/C++ ke browser," pendekatan `wasm-pack` dari [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) "hanya menghasilkan binding (JS glue code) minimal yang diperlukan."
 
-### Kode Implementasi Rust
+### Kode Implementasi [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)
 
 Buat proyek Cargo, dan tentukan `cdylib` dan `wasm-bindgen` di `Cargo.toml`.
 
@@ -243,7 +243,7 @@ Bilangan bulat dan pecahan (floating point) (`i32`, `i64`, `f32`, `f64`) dapat d
 **Kasus Emscripten**:
 1. Panggil `Module._malloc` di sisi JS untuk mengalokasikan memori linear di sisi [Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/).
 2. JS menulis data ke alamat memori yang dialokasikan (pointer) menggunakan `Module.HEAPU8.set()`, dll.
-3. Pointer dilewatkan ke fungsi C++.
+3. [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/) dilewatkan ke fungsi C++.
 4. Setelah dihitung, JS membaca hasil dari pointer, dan akhirnya memanggil `Module._free`.
 
 **Kasus wasm-bindgen ([Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/))**:
@@ -287,9 +287,9 @@ Angka ajaib (magic number) file ini selalu dimulai dengan `0x00 0x61 0x73 0x6D` 
 
 Engine [Wasm](https://kenji.blog/id/p/webassembly-wasm-current-future/) pada browser dapat mencapai peningkatan kecepatan proses startup yang dramatis dengan mengkompilasi bagian-bagian ini secara streaming (menerjemahkan ke bahasa mesin secara paralel sambil mengunduhnya).
 
-## 9. C++ vs Rust: Mana yang Harus Dipilih?
+## 9. C++ vs [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/): Mana yang Harus Dipilih?
 
-Dalam pembuatan [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/), memilih antara C++ dan Rust sangat bergantung pada persyaratan proyek dan aset yang sudah ada.
+Dalam pembuatan [WebAssembly](https://kenji.blog/id/p/webassembly-wasm-current-future/), memilih antara C++ dan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) sangat bergantung pada persyaratan proyek dan aset yang sudah ada.
 
 **Kasus memilih C++ / Emscripten**:
 * Ingin melakukan porting library C/C++ yang sudah ada (FFmpeg, OpenCV, SQLite, dll.) ke browser.

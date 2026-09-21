@@ -21,7 +21,7 @@ description: '최근의 AI 개발은 Python이 주류이지만, 엣지 디바이
 3. **엣지 디바이스 대응**: 스마트폰이나 임베디드 기기, 라즈베리 파이 같은 리소스 제약이 심한 환경에서 수 기가바이트의 메모리를 소비하는 Python 런타임을 구동할 여유는 없습니다.
 4. **하드웨어 직접 제어**: 메모리 할당 타이밍, SIMD 명령어의 명시적 사용, GPU와의 메모리 전송 최적화 등 로우 레벨 제어는 C++에서만 가능합니다.
 
-본 기사에서는 Georgi Gerganov 씨가 개발한 'GGML' 라이브러리의 아키텍처에서 많은 영감을 받아, C++만으로 대규모 언어 모델(LLM) 등을 구동하기 위한 추론 엔진을 처음부터 구축해 나가는 과정을 기술적인 깊은 곳까지 파고들어 해설합니다.
+본 기사에서는 Georgi Gerganov 씨가 개발한 'GGML' 라이브러리의 아키텍처에서 많은 영감을 받아, C++만으로 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)) 등을 구동하기 위한 추론 엔진을 처음부터 구축해 나가는 과정을 기술적인 깊은 곳까지 파고들어 해설합니다.
 
 ---
 
@@ -52,7 +52,7 @@ graph TD
 
 ## 3. 메모리 관리의 극의: 메모리 아레나와 SIMD 정렬
 
-추론 엔진에서 메모리 관리는 성능과 직결되는 가장 중요한 요소 중 하나입니다. 추론 중, 특히 트랜스포머(Transformer) 모델의 각 층을 통과할 때 방대한 수의 중간 텐서가 생성됩니다. 이를 매번 표준 `malloc`으로 할당하고 해제한다면, 힙의 단편화와 OS의 컨텍스트 스위칭으로 인해 치명적인 속도 저하를 초래합니다.
+추론 엔진에서 메모리 관리는 성능과 직결되는 가장 중요한 요소 중 하나입니다. 추론 중, 특히 트랜스포머([Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)) 모델의 각 층을 통과할 때 방대한 수의 중간 텐서가 생성됩니다. 이를 매번 표준 `malloc`으로 할당하고 해제한다면, 힙의 단편화와 OS의 컨텍스트 스위칭으로 인해 치명적인 속도 저하를 초래합니다.
 
 그래서 '**메모리 아레나(Memory Arena)**'라는 접근 방식을 채택합니다. 이는 추론 시작 시 필요한 최대 메모리 양을 계산(또는 미리 결정)하여 일괄적으로 할당하고, 포인터의 증가만으로 메모리를 잘라내어 사용하는 방법입니다.
 
@@ -244,7 +244,7 @@ float dot_product_avx2(const float* a, const float* b, int n) {
 
 ## 7. 하드웨어의 장벽을 넘다: CUDA 및 Metal 백엔드 통합
 
-순수 C++ 구현만으로도 CPU 상에서는 어느 정도 동작하지만, LLM과 같은 거대 모델을 실용적인 속도(예: 1초당 20토큰 이상 생성)로 구동하기 위해서는 GPU의 병렬 계산 능력이 필수적입니다. 따라서 우리 엔진에 백엔드 추상화 레이어를 도입합니다.
+순수 C++ 구현만으로도 CPU 상에서는 어느 정도 동작하지만, [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)과 같은 거대 모델을 실용적인 속도(예: 1초당 20토큰 이상 생성)로 구동하기 위해서는 GPU의 병렬 계산 능력이 필수적입니다. 따라서 우리 엔진에 백엔드 추상화 레이어를 도입합니다.
 
 ### 7.1 백엔드 추상화
 
@@ -346,7 +346,7 @@ Apple Silicon 환경에서는 MPS(Metal Performance Shaders)라는 행렬곱 전
 
 ## 8. 트랜스포머 모델 특유의 처리: 어텐션(Attention)과 KV 캐시
 
-LLaMA 2/3이나 GPT와 같은 최첨단 LLM은 트랜스포머 아키텍처에 기반을 두고 있습니다. 이를 C++로 구현하기 위해서는 다음 수식으로 표현되는 'Scaled Dot-Product Attention'의 구축이 필수입니다.
+LLaMA 2/3이나 GPT와 같은 최첨단 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)은 트랜스포머 아키텍처에 기반을 두고 있습니다. 이를 C++로 구현하기 위해서는 다음 수식으로 표현되는 'Scaled Dot-Product Attention'의 구축이 필수입니다.
 
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
@@ -389,7 +389,7 @@ KV 캐시의 메모리 할당도, 사전에 최대 컨텍스트 길이(예를 �
 
 추론 엔진 측에서는 메모리에서 INT4(또는 INT8)로 압축된 가중치를 읽어내어, **CPU나 GPU의 레지스터에 로드한 직후에 FP16 또는 FP32로 전개(Dequantize)하여 계산** 을 수행합니다.
 
-놀랍게도 계산량을 늘려서라도 메모리에서 읽어들이는 데이터 양을 줄이는 쪽이 더 빠릅니다. 이는 현대 하드웨어에서 추론 작업의 병목 현상이 '계산 능력(Compute Bound)'이 아니라 '**메모리 대역폭(Memory Bandwidth Bound)**'에 있기 때문입니다. INT4 양자화를 적용한 C++ 구현 엔진이라면, 8GB VRAM을 가진 MacBook Air 등에서도 쾌적하게 로컬 LLM을 구동할 수 있습니다.
+놀랍게도 계산량을 늘려서라도 메모리에서 읽어들이는 데이터 양을 줄이는 쪽이 더 빠릅니다. 이는 현대 하드웨어에서 추론 작업의 병목 현상이 '계산 능력(Compute Bound)'이 아니라 '**메모리 대역폭(Memory Bandwidth Bound)**'에 있기 때문입니다. INT4 양자화를 적용한 C++ 구현 엔진이라면, 8GB VRAM을 가진 MacBook Air 등에서도 쾌적하게 로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)을 구동할 수 있습니다.
 
 ---
 
@@ -414,7 +414,7 @@ Python은 확실히 편리합니다. 연구 개발이나 프로토타이핑에 �
 
 메모리의 바이트 배열을 직접 조작하고, SIMD 명령어로 레지스터를 한계까지 몰아붙이며, GPU의 VRAM 대역폭과 씨름하며 만들어낸 추론 엔진이, 콘솔 상에 연이어 자연스러운 한국어(또는 일본어 등) 텍스트(토큰)를 생성해 나가는 모습을 보았을 때의 성취감은, Python 프레임워크에서 `model.generate()`를 호출했을 때는 결코 얻을 수 없는 '엔지니어로서의 순수한 기쁨'이 있습니다.
 
-'블랙박스'가 되기 쉬운 AI 기술이지만, 텐서 연산부터 메모리 할당에 이르기까지 모든 것을 내 손으로 C++로 작성함으로써 LLM이 어떻게 '생각'하는지 그 진정한 메커니즘을 깊이 이해할 수 있습니다.
+'블랙박스'가 되기 쉬운 AI 기술이지만, 텐서 연산부터 메모리 할당에 이르기까지 모든 것을 내 손으로 C++로 작성함으로써 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)이 어떻게 '생각'하는지 그 진정한 메커니즘을 깊이 이해할 수 있습니다.
 
 만약 여러분이 C++에 대한 기초 지식이 있고 현재의 AI 기술에 강한 흥미가 있다면, 꼭 직접 추론 엔진 개발에 도전해 보시기 바랍니다. GGML이나 llama.cpp의 소스 코드는 최고의 살아있는 교과서가 될 것입니다.
 

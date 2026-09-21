@@ -27,7 +27,7 @@ description: 'Presentamos cómo instalar la CLI de Hugo, un rápido generador de
 
 # ¿Qué es Hugo?
 
-Hugo es un generador de sitios estáticos. Puedes crear sitios web convirtiendo archivos Markdown a HTML. Hugo está escrito en el lenguaje Go y funciona a gran velocidad.
+Hugo es un generador de sitios estáticos. Puedes crear sitios web convirtiendo archivos Markdown a HTML. Hugo está escrito en el lenguaje [Go](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) y funciona a gran velocidad.
 
 Este blog también fue creado con Hugo.
 

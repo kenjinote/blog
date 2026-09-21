@@ -14,7 +14,7 @@ description: '本指南詳細涵蓋了在 Windows 11 中實作本機 AI 功能�
 
 ## 1. 前言：AI 原生內建於 Windows 的新時代
 
-近年來，AI 技術的發展日新月異，正迅速從雲端上的大型語言模型（LLM）應用，典範轉移至邊緣裝置（本機 PC）上的 AI 推論。其中扮演核心角色的，正是 Microsoft 為 Windows 11 提供的「Windows Copilot Runtime」以及用於操作它的「Microsoft.Windows.AI」API。
+近年來，AI 技術的發展日新月異，正迅速從雲端上的大型語言模型（[LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)）應用，典範轉移至邊緣裝置（本機 PC）上的 AI 推論。其中扮演核心角色的，正是 Microsoft 為 Windows 11 提供的「Windows Copilot Runtime」以及用於操作它的「Microsoft.Windows.AI」API。
 
 使用雲端 API（如 OpenAI 或 Azure OpenAI 等）開發應用程式雖然容易，但總是伴隨著延遲、隱私和持續成本的挑戰。另一方面，透過在本機執行 AI 模型，我們可以在機密資料不離開裝置的情況下，實現即使在離線狀態也能運作的超低延遲應用程式。
 
@@ -62,7 +62,7 @@ P_{\text{peak}} = 1.5 \times 10^9 \times 4 \times 4096 \times 2 \approx 49.15 \t
 $$
 在數學上證明了此效能足以跨越 Windows 11 的 Copilot+ PC 要求（40 TOPS）。
 
-此外，AI 模型，尤其是 LLM 的推論（解碼階段）往往受限於 **記憶體頻寬（Memory-Bound）** 。系統記憶體的理論頻寬 $BW$ 計算方式如下：
+此外，AI 模型，尤其是 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 的推論（解碼階段）往往受限於 **記憶體頻寬（Memory-Bound）** 。系統記憶體的理論頻寬 $BW$ 計算方式如下：
 
 $$
 BW = f_{\text{mem}} \times W_{\text{bus}} \times \frac{2}{8}
@@ -306,7 +306,7 @@ int main() {
 ### 7.1 模型量化 (Quantization) 與 Olive 工具組
 要發揮 NPU 的真正實力，將 AI 模型的權重與激勵值從 FP32（單精度浮點數） **量化（Quantization）** 至 INT8 或 INT4 絕對是必要條件。NPU 的架構專為整數運算而設計，相較於 FP32，INT8 在理論上能達到 4 倍的吞吐量，並大幅節省耗電。
 
-透過使用 Microsoft 提供的 `Olive (ONNX Live)` 工具鏈，可以將 PyTorch 等模型自動針對 Windows 環境進行最佳化。Olive 能強力支援對 Transformer 模型的特殊注意力最佳化，以及針對各種硬體的運算圖編譯。
+透過使用 Microsoft 提供的 `Olive (ONNX Live)` 工具鏈，可以將 PyTorch 等模型自動針對 Windows 環境進行最佳化。Olive 能強力支援對 [Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 模型的特殊注意力最佳化，以及針對各種硬體的運算圖編譯。
 
 ### 7.2 批次處理 vs 互動式串流的權衡
 在 API 呼叫中，將多個推論請求合併進行批次處理，可以提高 NPU 的利用率（Compute Utilization）。然而，在如聊天機器人這類互動式 UI 的情況下，決定使用者體驗（UX）的並非吞吐量，而是顯示第一個權杖所需的時間（TTFT: Time To First Token）。

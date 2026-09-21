@@ -30,7 +30,7 @@ tags:
 
 ### 2.1. 原生應用程式的優勢與劣勢
 
-原生應用程式（針對 iOS 使用 Swift/Objective-C，Android 使用 Kotlin/Java 等開發的應用程式）最大的優勢，就是擁有對 OS API 的完全存取權限。
+原生應用程式（針對 iOS 使用 Swift/Objective-C，Android 使用 Kotlin/[Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 等開發的應用程式）最大的優勢，就是擁有對 OS API 的完全存取權限。
 這使得它能夠充分利用相機、GPS、藍牙、NFC 以及各種感測器等，實現進階功能。此外，由於針對 OS 進行了最佳化，繪圖效能極高，對於大量使用複雜動畫或 3D 圖形的遊戲等，原生應用程式具有壓倒性的優勢。
 
 另一方面，原生應用程式存在以下幾個明顯的弱點（挑戰）：

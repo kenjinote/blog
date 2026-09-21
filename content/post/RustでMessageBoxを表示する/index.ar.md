@@ -11,7 +11,7 @@ description: 'نشرح كيفية عرض مربع رسالة بسيط (MessageBo
 
 يمكنك عرض MessageBox في [Rust](https://kenji.blog/ar/p/webassembly-wasm-current-future/) باتباع الخطوات التالية.
 
-1. قم بتثبيت Rust. راجع [كيفية البدء مع Rust](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/)
+1. قم بتثبيت [Rust](https://kenji.blog/ar/p/programming-languages-history-paradigm-evolution/). راجع [كيفية البدء مع Rust](https://kenji.blog/posts/rust%E3%81%AE%E3%81%AF%E3%81%98%E3%82%81%E3%81%8B%E3%81%9F/)
 2. قم بتشغيل `cargo new --bin MessageBox` في موجه الأوامر.
 3. انتقل إلى الدليل `MessageBox`.
 4. افتح `Cargo.toml` وقم بتعديله كما يلي.

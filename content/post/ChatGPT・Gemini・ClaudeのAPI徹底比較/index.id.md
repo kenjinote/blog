@@ -11,7 +11,7 @@ tags: ["ChatGPT", "Gemini", "Claude", "API", "Comparison"]
 
 # Perbandingan Lengkap API ChatGPT, Gemini, dan Claude! Mana yang Harus Dipilih?
 
-Evolusi teknologi AI sangat luar biasa, khususnya di bidang Model Bahasa Besar (LLM: Large Language Model), di mana ChatGPT (seri GPT) dari OpenAI, Gemini dari Google, dan Claude dari Anthropic sedang bersaing sengit untuk supremasi. Pada tahun 2026 ini, setiap perusahaan merilis model dan fitur API baru dalam hitungan bulan, bahkan minggu. Bagi pengembang dan arsitek TI perusahaan, pertanyaan "API mana yang harus diintegrasikan ke dalam produk?" telah menjadi keputusan krusial yang menentukan kesuksesan sebuah proyek.
+Evolusi teknologi AI sangat luar biasa, khususnya di bidang Model Bahasa Besar ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/): Large Language Model), di mana ChatGPT (seri GPT) dari OpenAI, Gemini dari Google, dan Claude dari Anthropic sedang bersaing sengit untuk supremasi. Pada tahun 2026 ini, setiap perusahaan merilis model dan fitur API baru dalam hitungan bulan, bahkan minggu. Bagi pengembang dan arsitek TI perusahaan, pertanyaan "API mana yang harus diintegrasikan ke dalam produk?" telah menjadi keputusan krusial yang menentukan kesuksesan sebuah proyek.
 
 Dalam artikel ini, kita tidak hanya akan menyebutkan spesifikasi dari ketiga API penyedia AI besar ini, tetapi juga akan membandingkan dan menjelaskannya secara komprehensif dari sudut pandang pengembang. Kita akan membahas arsitektur desain, struktur harga yang detail, analisis matematis dari latensi, contoh implementasi konkret menggunakan Python dan Node.js, hingga metode optimasi biaya terbaru seperti prompt caching.
 
@@ -79,7 +79,7 @@ Teks yang dimasukkan ke dalam API secara internal dibagi menjadi unit-unit yang 
 
 ## 4. Analisis Matematis tentang Latensi dan Performa
 
-Dalam aplikasi real-time, latensi berdampak langsung pada pengalaman pengguna (UX). Latensi API LLM $T_{total}$ dapat dimodelkan secara matematis sebagai berikut.
+Dalam aplikasi real-time, latensi berdampak langsung pada pengalaman pengguna (UX). Latensi API [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) $T_{total}$ dapat dimodelkan secara matematis sebagai berikut.
 
 $$ T_{total} = T_{network} + T_{TTFT} + (N \times T_{TPOT}) $$
 
@@ -90,7 +90,7 @@ Di sini, masing-masing variabel memiliki arti sebagai berikut:
 - $T_{TPOT}$ (Time Per Output Token): Waktu pembuatan per token. Karena merupakan model autoregresif, token dihitung secara seri dengan bergantung pada output sebelumnya.
 
 ### 4.1 Kompleksitas Komputasi dari Mekanisme Self-Attention
-Kompleksitas komputasi dari Self-Attention dalam arsitektur Transformer meningkat secara kuadratik terhadap panjang urutan input $L$.
+Kompleksitas komputasi dari Self-Attention dalam arsitektur [Transformer](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) meningkat secara kuadratik terhadap panjang urutan input $L$.
 
 $$ \text{Complexity} = O(L^2 \cdot d) $$
 
@@ -210,7 +210,7 @@ Dengan menjalankan skrip ini, Anda dapat dengan mudah mengukur model mana yang m
 
 ## 8. Implementasi Tool Calling (Function Calling) Menggunakan Node.js
 
-Untuk membuat LLM berfungsi sebagai "Agen AI" yang berintegrasi dengan sistem eksternal (bukan sekadar chatbot), Tool Calling (atau Function Calling) sangatlah penting. Berikut adalah contoh penggunaan Node.js (TypeScript) agar API OpenAI dapat memanggil API cuaca.
+Untuk membuat [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) berfungsi sebagai "Agen AI" yang berintegrasi dengan sistem eksternal (bukan sekadar chatbot), Tool Calling (atau Function Calling) sangatlah penting. Berikut adalah contoh penggunaan Node.js (TypeScript) agar API OpenAI dapat memanggil API cuaca.
 
 ```typescript
 import OpenAI from "openai";
@@ -312,7 +312,7 @@ sequenceDiagram
 
 ## 11. Keamanan dan Kepatuhan Tingkat Perusahaan (Enterprise)
 
-Saat perusahaan menggunakan API LLM di lingkungan produksi (production), kekhawatiran terbesar adalah "Apakah data kami akan digunakan untuk melatih AI?" dan "Apakah ini memenuhi persyaratan kepatuhan (compliance)?"
+Saat perusahaan menggunakan API [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) di lingkungan produksi (production), kekhawatiran terbesar adalah "Apakah data kami akan digunakan untuk melatih AI?" dan "Apakah ini memenuhi persyaratan kepatuhan (compliance)?"
 
 Ketiga penyedia secara tegas menyatakan bahwa data yang dikirim melalui API (prompt dan respons) **tidak digunakan untuk pelatihan model (Zero Data Retention / No Training on Customer Data)** (*Hal ini berbeda dari UI obrolan web gratis yang ditujukan untuk konsumen).
 
@@ -340,7 +340,7 @@ Sejauh ini kita telah membandingkan dari berbagai sudut, tetapi pada akhirnya, j
    Model ini menangani hampir semua tugas dengan baik dan memiliki dukungan alat (tool) pihak ketiga yang paling banyak. Jika Anda memerlukan parsing JSON yang andal menggunakan Structured Outputs, atau penalaran logis tingkat sangat tinggi menggunakan model o1, maka ekosistem OpenAI sangat diperlukan.
 
 ### Rekomendasi Routing Multi-Model
-Tren masa depan bukanlah bergantung pada API tunggal (vendor lock-in), melainkan arsitektur **"LLM Routing"** di mana Anda dapat secara dinamis mengganti model tergantung pada tingkat kesulitan dan pentingnya tugas.
+Tren masa depan bukanlah bergantung pada API tunggal (vendor lock-in), melainkan arsitektur **"[LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) Routing"** di mana Anda dapat secara dinamis mengganti model tergantung pada tingkat kesulitan dan pentingnya tugas.
 Misalnya, untuk merespons pertanyaan sederhana dari pengguna, Anda dapat menggunakan `GPT-4o-mini` atau `Gemini 1.5 Flash` yang murah dan cepat. Namun, jika dinilai memerlukan pemrosesan yang lebih kompleks, barulah tugas tersebut diserahkan ke `Claude 3.5 Sonnet`. Dengan cara ini, keseimbangan optimal antara biaya dan performa dapat tercapai.
 
 Evolusi AI tidak akan berhenti. Pahami secara mendalam kelebihan dan kekurangan dari masing-masing API, serta karakteristik arsitekturnya, agar Anda dapat membangun aplikasi AI yang fleksibel dan skalabel.

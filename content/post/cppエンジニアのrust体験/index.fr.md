@@ -13,7 +13,7 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 Dans l'ingénierie logicielle moderne, C++ et [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) sont les deux géants à l'avant-garde de la programmation système. Pendant de nombreuses années, le C++ a régné en maître absolu dans les domaines poussant les performances matérielles à leurs limites extrêmes, tels que les systèmes d'exploitation, les appareils embarqués, les moteurs de jeu et les systèmes de trading à haute fréquence (HFT). En tant qu'ingénieur C++ senior moi-même, j'ai commencé dans la jungle des pointeurs bruts de l'ère C++98, et j'ai continué à écrire du code tout en suivant la vague de modernisation apportée par C++11 (pointeurs intelligents, expressions lambda et l'introduction de `auto`), ainsi que l'expansion massive des spécifications qui a suivi avec C++14/17/20.
 
-Cependant, ces dernières années, [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) a connu une montée en puissance spectaculaire en tant que solution aux problèmes structurels du C++, en particulier le "manque de sécurité de la mémoire" entraînant des vulnérabilités de sécurité (on dit qu'environ 70 % des CVE sont liés à la mémoire) et les "spécifications infiniment complexes et comportements indéfinis (UB)". Son adoption officielle dans le noyau Linux et les projets de migration à grande échelle vers Rust par des géants de la technologie comme Microsoft, Google et AWS ne sont pas qu'une simple tendance passagère, mais signifient un véritable changement de paradigme dans la programmation système.
+Cependant, ces dernières années, [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) a connu une montée en puissance spectaculaire en tant que solution aux problèmes structurels du C++, en particulier le "manque de sécurité de la mémoire" entraînant des vulnérabilités de sécurité (on dit qu'environ 70 % des CVE sont liés à la mémoire) et les "spécifications infiniment complexes et comportements indéfinis (UB)". Son adoption officielle dans le noyau Linux et les projets de migration à grande échelle vers [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) par des géants de la technologie comme Microsoft, Google et AWS ne sont pas qu'une simple tendance passagère, mais signifient un véritable changement de paradigme dans la programmation système.
 
 Dans cet article, je vais comparer et expliquer en détail les "avantages" et les "inconvénients" que j'ai ressentis en tant que pur ingénieur C++ ayant appris Rust en profondeur et l'ayant utilisé en pratique, d'un point de vue technique lié aux fondements même du langage.
 
@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-En [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), lorsque la possession d'une variable est transférée, la variable d'origine est traitée par le compilateur comme étant équivalente à un état "non initialisé", bloquant complètement tout accès ultérieur. Par conséquent, les bugs tels que l'"utilisation après libération (Use-After-Free)" ou les "pointeurs fantômes (Dangling Pointers)" ne peuvent théoriquement pas passer la compilation.
+En [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), lorsque la possession d'une variable est transférée, la variable d'origine est traitée par le compilateur comme étant équivalente à un état "non initialisé", bloquant complètement tout accès ultérieur. Par conséquent, les bugs tels que l'"utilisation après libération (Use-After-Free)" ou les "pointeurs fantômes (Dangling [Pointer](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)s)" ne peuvent théoriquement pas passer la compilation.
 
 ```mermaid
 graph TD
@@ -158,7 +158,7 @@ int main() {
 
 ## Le Mutex en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) "possède" les données
 
-En Rust, `Mutex<T>` utilise des génériques pour **encapsuler (posséder)** le type de données `T` à protéger. Pour accéder aux données, il est obligatoire d'appeler `lock()` pour obtenir un objet de garde (guard). Toucher aux données sans acquérir le verrou est syntaxiquement impossible.
+En [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), `Mutex<T>` utilise des génériques pour **encapsuler (posséder)** le type de données `T` à protéger. Pour accéder aux données, il est obligatoire d'appeler `lock()` pour obtenir un objet de garde (guard). Toucher aux données sans acquérir le verrou est syntaxiquement impossible.
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -266,7 +266,7 @@ fn draw_dynamic(item: &dyn Drawable) {
 }
 ```
 
-La principale caractéristique de la répartition dynamique de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) (`dyn Trait`) est qu'elle n'a pas de vptr dans la structure de données, mais utilise un **Fat Pointer** (pointeur lourd). Un Fat Pointer contient une paire : "un pointeur vers les données" et "un pointeur vers la vtable". Il est ainsi très facile d'implémenter (étendre) un trait pour un type défini dans une bibliothèque externe a posteriori et de le soumettre à une répartition dynamique.
+La principale caractéristique de la répartition dynamique de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) (`dyn Trait`) est qu'elle n'a pas de vptr dans la structure de données, mais utilise un **Fat [Pointer](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)** (pointeur lourd). Un Fat Pointer contient une paire : "un pointeur vers les données" et "un pointeur vers la vtable". Il est ainsi très facile d'implémenter (étendre) un trait pour un type défini dans une bibliothèque externe a posteriori et de le soumettre à une répartition dynamique.
 
 ---
 
@@ -295,7 +295,7 @@ Il suffit d'ajouter une ligne avec le nom et la version de la bibliothèque dép
 
 # 7. Les inconvénients et la courbe d'apprentissage de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/)
 
-Bien que j'aie vanté les mérites de Rust jusqu'ici, il y a certainement des "murs" et des inconvénients auxquels un ingénieur C++ devra faire face lors du déploiement de Rust en production.
+Bien que j'aie vanté les mérites de [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) jusqu'ici, il y a certainement des "murs" et des inconvénients auxquels un ingénieur C++ devra faire face lors du déploiement de Rust en production.
 
 ## 1. La lutte acharnée avec le [Borrow Checker](https://kenji.blog/fr/p/memory-management-garbage-collection/)
 Si vous essayez d'implémenter des structures de données que vous auriez "vaguement connectées avec des pointeurs bruts" en C++ (comme les listes doublement chaînées, les graphes ou les structures auto-référentielles) directement en [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), la compilation échouera en raison des contraintes de possession (ownership) et de durée de vie (lifetimes). Pour satisfaire le Borrow Checker, vous devez soit utiliser des enveloppes (wrappers) complexes comme `Rc<RefCell<T>>`, soit revoir fondamentalement la conception avec un allocateur d'arène ou une gestion basée sur des index.
@@ -312,6 +312,6 @@ Bien que l'intégration avec le langage C (FFI) soit très fluide, il est extrê
 
 Le C++ continuera de jouer un rôle important dans le développement de moteurs de jeu et dans les énormes infrastructures existantes. Sa modernisation avec C++20/23 est également remarquable, permettant d'écrire du code de manière plus sûre.
 
-Cependant, pour les "nouveaux projets de programmation système", je trouve qu'il est désormais **plus difficile de trouver des raisons de ne pas choisir Rust**. La "certitude" de Rust—une fois que ça compile, vous êtes libéré de la peur des comportements indéfinis et de la corruption de mémoire, et vous pouvez gérer la concurrence en toute sécurité avec de hautes performances—améliore radicalement le modèle mental de l'ingénieur.
+Cependant, pour les "nouveaux projets de programmation système", je trouve qu'il est désormais **plus difficile de trouver des raisons de ne pas choisir [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)**. La "certitude" de Rust—une fois que ça compile, vous êtes libéré de la peur des comportements indéfinis et de la corruption de mémoire, et vous pouvez gérer la concurrence en toute sécurité avec de hautes performances—améliore radicalement le modèle mental de l'ingénieur.
 
 Pour un ingénieur C++, apprendre Rust ne se limite pas à mémoriser une nouvelle syntaxe ; c'est une excellente expérience qui offre une nouvelle perspective sur "la gestion sûre de la mémoire et des threads". Je vous encourage vivement à expérimenter par vous-même le confort de Cargo et la rigueur du [Borrow Checker](https://kenji.blog/fr/p/memory-management-garbage-collection/).

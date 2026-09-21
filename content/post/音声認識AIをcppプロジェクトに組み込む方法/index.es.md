@@ -47,7 +47,7 @@ Al ser muy ligero, es completamente posible realizar el almacenamiento en búfer
 
 ### 2.2 Matemáticas de la conversión del espectrograma de Mel
 
-Internamente, Whisper no procesa directamente los datos de forma de onda de audio unidimensional (Raw Waveform). Antes de ingresar al modelo Transformer, se convierte a un **espectrograma de Mel (Mel-Spectrogram)**, que es una representación de frecuencia cercana a las características de la audición humana. `whisper.cpp` incluye este proceso de conversión dentro de su implementación en C++, pero comprender su mecanismo es útil para lidiar con el ruido y optimizar el preprocesamiento.
+Internamente, Whisper no procesa directamente los datos de forma de onda de audio unidimensional (Raw Waveform). Antes de ingresar al modelo [Transformer](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/), se convierte a un **espectrograma de Mel (Mel-Spectrogram)**, que es una representación de frecuencia cercana a las características de la audición humana. `whisper.cpp` incluye este proceso de conversión dentro de su implementación en C++, pero comprender su mecanismo es útil para lidiar con el ruido y optimizar el preprocesamiento.
 
 La fórmula para convertir la frecuencia normal $f$ (Hz) a la escala Mel $m$ se aproxima de la siguiente manera:
 

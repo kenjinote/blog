@@ -21,7 +21,7 @@ Entonces, ¿por qué molestarse en eliminar Python y crear un motor de inferenci
 3. **Compatibilidad con dispositivos Edge**: En entornos con recursos estrictamente limitados, como teléfonos inteligentes, dispositivos integrados o Raspberry Pi, no hay margen para ejecutar un entorno de ejecución de Python que consume varios gigabytes de memoria.
 4. **Control directo del hardware**: C++ permite el control a bajo nivel, como la temporización de la asignación de memoria, el uso explícito de instrucciones SIMD y la optimización de las transferencias de memoria con la GPU.
 
-En este artículo, basándome en gran medida en la arquitectura de la biblioteca "GGML" desarrollada por Georgi Gerganov, explicaré el proceso de construir desde cero un motor de inferencia para ejecutar modelos de lenguaje grande (LLM) usando solo C++, sumergiéndonos en las profundidades técnicas.
+En este artículo, basándome en gran medida en la arquitectura de la biblioteca "GGML" desarrollada por Georgi Gerganov, explicaré el proceso de construir desde cero un motor de inferencia para ejecutar modelos de lenguaje grande ([LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/)) usando solo C++, sumergiéndonos en las profundidades técnicas.
 
 ---
 
@@ -52,7 +52,7 @@ Ensamblaremos estos componentes utilizando las poderosas características de C++
 
 ## 3. El secreto de la gestión de memoria: Memory Arena y Alineación SIMD
 
-La gestión de memoria en un motor de inferencia es uno de los factores más importantes directamente relacionados con el rendimiento. Durante la inferencia, especialmente al pasar a través de cada capa de un modelo Transformer, se genera una enorme cantidad de tensores intermedios. Si se asignan y liberan cada vez con el `malloc` estándar, la fragmentación del montón (heap) y los cambios de contexto del sistema operativo causarán caídas drásticas y fatales en la velocidad.
+La gestión de memoria en un motor de inferencia es uno de los factores más importantes directamente relacionados con el rendimiento. Durante la inferencia, especialmente al pasar a través de cada capa de un modelo [Transformer](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/), se genera una enorme cantidad de tensores intermedios. Si se asignan y liberan cada vez con el `malloc` estándar, la fragmentación del montón (heap) y los cambios de contexto del sistema operativo causarán caídas drásticas y fatales en la velocidad.
 
 Por lo tanto, adoptamos el enfoque de un "**Memory Arena**". Este es un método en el que se calcula (o se fija) y se asigna de una sola vez la cantidad máxima de memoria necesaria al inicio de la inferencia, y luego la memoria se extrae simplemente incrementando un puntero.
 
@@ -189,7 +189,7 @@ Al evaluar el grafo (forward pass), se utiliza el ordenamiento topológico para 
 
 ## 6. El núcleo de las matemáticas y la optimización: Producto de Matrices (GEMM)
 
-Más del 90% de la carga computacional de la inferencia de IA se gasta en la multiplicación general de matrices (GEMM: General Matrix Multiply). Tanto el mecanismo de atención, que es el núcleo del modelo Transformer, como las redes feed-forward (FFN), son en última instancia enormes multiplicaciones de matrices.
+Más del 90% de la carga computacional de la inferencia de IA se gasta en la multiplicación general de matrices (GEMM: General Matrix Multiply). Tanto el mecanismo de atención, que es el núcleo del modelo [Transformer](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/), como las redes feed-forward (FFN), son en última instancia enormes multiplicaciones de matrices.
 
 El producto $C = A B$ (de tamaño $M \times N$) de dos matrices $A$ (tamaño $M \times K$) y $B$ (tamaño $K \times N$) se expresa matemáticamente de la siguiente manera.
 
@@ -344,9 +344,9 @@ En el entorno de Apple Silicon, también se proporciona una biblioteca optimizad
 
 ---
 
-## 8. Procesamiento específico del modelo Transformer: Attention y Caché KV
+## 8. Procesamiento específico del modelo [Transformer](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/): Attention y Caché KV
 
-Los LLM de vanguardia, como LLaMA 2/3 y GPT, se basan en la arquitectura Transformer. Para implementar esto en C++, la construcción del "Scaled Dot-Product Attention" expresado en la siguiente fórmula es indispensable.
+Los [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) de vanguardia, como LLaMA 2/3 y GPT, se basan en la arquitectura Transformer. Para implementar esto en C++, la construcción del "Scaled Dot-Product Attention" expresado en la siguiente fórmula es indispensable.
 
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V

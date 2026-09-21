@@ -142,7 +142,7 @@ def dijkstra(graph, start):
 
 ### 3.4 À propos de la complexité temporelle
 
-Si nous utilisons un tas binaire (Binary Heap) comme file de priorité, chaque sommet est extrait de la file une fois, et chaque arête est relâchée une fois.
+Si nous utilisons un tas binaire (Binary [Heap](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)) comme file de priorité, chaque sommet est extrait de la file une fois, et chaque arête est relâchée une fois.
 Par conséquent, la complexité temporelle est de $ O((|V| + |E|) \log |V|) $. Si l'on utilise un tas de Fibonacci, on peut théoriquement l'améliorer jusqu'à $ O(|E| + |V| \log |V|) $, mais en pratique, le tas binaire est souvent utilisé.
 
 ---

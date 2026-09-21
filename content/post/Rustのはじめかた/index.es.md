@@ -45,7 +45,7 @@ se compilará, y al ejecutar `./main` (`main.exe` en el caso de Windows), se imp
 [The Rust Programming Language Versión Japonesa](https://doc.rust-jp.rs/book-ja/)
 
 Las explicaciones necesarias para aprender [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/) están recopiladas en el enlace anterior (versión traducida al japonés).
-Es tan completo que no hay necesidad de comprar un libro de texto de Rust.
+Es tan completo que no hay necesidad de comprar un libro de texto de [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/).
 
 # Si desea probarlo en la Web
 

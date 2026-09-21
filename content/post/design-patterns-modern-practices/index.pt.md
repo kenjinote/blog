@@ -36,7 +36,7 @@ Aqui, abordaremos alguns padrões GoF representativos e veremos como eles estão
 
 O padrão `Strategy` define uma família de algoritmos, encapsula cada um deles e os torna intercambiáveis.
 
-**Abordagem tradicional no estilo GoF (estilo Java)**
+**Abordagem tradicional no estilo GoF (estilo [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/))**
 
 ```java
 // Definição da interface
@@ -135,7 +135,7 @@ O padrão `Visitor` separa a estrutura de dados das operações sobre ela, mas t
 
 Hoje em dia, usando linguagens (como [Rust](https://kenji.blog/pt/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala, etc.) que possuem **Tipos de Dados Algébricos (ADT)** e **Correspondência de padrões (Pattern matching)**, esse problema é resolvido de maneira elegante.
 
-**Abordagem moderna (Enums e Pattern match no Rust)**
+**Abordagem moderna (Enums e Pattern match no [Rust](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/))**
 
 ```rust
 // Tipo de dados algébrico (Enum com variantes)
@@ -169,13 +169,13 @@ graph TD
     E["Serviço B"] -->|"Depende de"| B
 ```
 
-Como contêineres de DI como Spring Framework (Java), NestJS (TypeScript) e Dagger/Hilt (Android) gerenciam a criação e destruição de instâncias, você não deve escrever a lógica de Singleton (`getInstance()` ou construtores privados) na própria classe.
+Como contêineres de DI como Spring Framework ([Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/)), NestJS (TypeScript) e Dagger/Hilt (Android) gerenciam a criação e destruição de instâncias, você não deve escrever a lógica de Singleton (`getInstance()` ou construtores privados) na própria classe.
 
 ## 4. Padrões de projeto na Programação Funcional
 
 No mundo da programação funcional, existem "padrões" em uma dimensão diferente do GoF. Eles são apoiados pela teoria das categorias matemáticas (Category Theory).
 
-### 4.1. Controle de efeitos colaterais com Monad
+### 4.1. Controle de efeitos colaterais com [Monad](https://kenji.blog/pt/p/functional-programming-concepts-pure-functions-monads/)
 
 Enquanto os padrões GoF assumem "mutação de estado", a abordagem funcional confina os efeitos colaterais (exceções, processamento assíncrono, possibilidade de Null) no sistema de tipos.
 

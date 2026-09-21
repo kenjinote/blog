@@ -12,7 +12,7 @@ description: 'WordPress와 같은 동적 CMS에서 Go 언어 기반의 초고속
 
 현대 웹 개발이나 블로그 운영에 있어서 사이트의 표시 속도와 보안, 그리고 유지보수성은 매우 중요한 요소가 되었습니다. 오랫동안 블로그나 기업 사이트의 기반으로서 압도적인 점유율을 자랑해 온 'WordPress'는 유연한 플러그인 생태계와 직관적인 관리 화면으로 많은 사용자에게 사랑받고 있습니다. 하지만 데이터베이스와의 통신이나 서버 사이드에서의 동적인 페이지 생성(PHP에 의한 처리)을 동반하기 때문에, 트래픽 급증에 대한 취약성이나 표시 지연(레이턴시)과 같은 과제도 안고 있습니다.
 
-그래서 최근 급속히 보급되고 있는 것이 '정적 사이트 생성기(SSG: Static Site Generator)'입니다. 본 기사에서는 수많은 SSG 중에서도 Go 언어 기반으로 개발되어 그 압도적인 빌드 속도로 알려진 '**Hugo**'에 대해 깊이 파헤쳐 보겠습니다. WordPress 등의 동적 CMS(Content Management System)와의 기술적 아키텍처 비교부터, 구체적인 마이그레이션 절차, 수리 모델을 이용한 성능 평가, 그리고 Hugo 고유의 디렉토리 구조와 템플릿의 룩업 순서까지 철저하게 해설합니다.
+그래서 최근 급속히 보급되고 있는 것이 '정적 사이트 생성기(SSG: Static Site Generator)'입니다. 본 기사에서는 수많은 SSG 중에서도 [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 언어 기반으로 개발되어 그 압도적인 빌드 속도로 알려진 '**Hugo**'에 대해 깊이 파헤쳐 보겠습니다. WordPress 등의 동적 CMS(Content Management System)와의 기술적 아키텍처 비교부터, 구체적인 마이그레이션 절차, 수리 모델을 이용한 성능 평가, 그리고 Hugo 고유의 디렉토리 구조와 템플릿의 룩업 순서까지 철저하게 해설합니다.
 
 ---
 
@@ -189,7 +189,7 @@ WordPress의 데이터를 Hugo용으로 출력하기 위해서는 전용 플러�
 2. **WordPress API를 이용한 자체 제작 스크립트**
    Python이나 Node.js 등으로 WordPress의 [REST API](https://kenji.blog/ko/p/graphql-vs-rest-api-[overfetching](https://kenji.blog/ko/p/graphql-vs-rest-api-overfetching-type-safety/)-type-safety/) (`/wp-json/wp/v2/posts`) 를 호출하고 JSON 데이터를 분석하여 자체적으로 Markdown 파일을 생성하는 스크립트를 작성하는 방법입니다. 플러그인으로는 다 대응할 수 없는 복잡한 커스텀 필드(ACF 등)를 많이 사용하는 사이트에서 유효합니다.
 3. **wp2hugo 도구의 활용**
-   Go 언어 등으로 작성된 CLI 도구를 이용하여 WordPress의 내보내기 XML 파일(WXR)에서 직접 Hugo 형식으로 변환하는 접근법도 있습니다.
+   [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 언어 등으로 작성된 CLI 도구를 이용하여 WordPress의 내보내기 XML 파일(WXR)에서 직접 Hugo 형식으로 변환하는 접근법도 있습니다.
 
 ### 4.2 퍼머링크 (URL) 구조의 유지
 
@@ -212,7 +212,7 @@ WordPress 고유의 숏코드(예: `[gallery]`, `[caption]`, 각종 플러그인
 
 ## 5. Hugo의 CLI 도구와 빌드 및 배포
 
-마이그레이션 작업이 완료되면, 드디어 Hugo를 사용하여 사이트를 빌드하고 전 세계에 공개합니다. Go 언어의 바이너리로 제공되는 Hugo는 수천에서 수만 페이지의 사이트라도 불과 몇 초 만에 빌드를 완료하는 경이로운 속도를 자랑합니다.
+마이그레이션 작업이 완료되면, 드디어 Hugo를 사용하여 사이트를 빌드하고 전 세계에 공개합니다. [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 언어의 바이너리로 제공되는 Hugo는 수천에서 수만 페이지의 사이트라도 불과 몇 초 만에 빌드를 완료하는 경이로운 속도를 자랑합니다.
 
 ### 5.1 로컬 개발용 서버의 기동
 
@@ -315,7 +315,7 @@ Hugo의 경우, 도구 자체의 업데이트는 필요에 따라 수행하면 �
 
 ## 7. 정리
 
-본 기사에서는 WordPress와 같은 동적 CMS에서 Go 언어 기반의 강력한 정적 사이트 생성기 'Hugo'로의 마이그레이션에 대해, 기술적인 아키텍처의 차이부터 수학적 모델을 통한 성능 증명, 그리고 구체적인 마이그레이션 절차까지 자세히 해설했습니다.
+본 기사에서는 WordPress와 같은 동적 CMS에서 [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 언어 기반의 강력한 정적 사이트 생성기 'Hugo'로의 마이그레이션에 대해, 기술적인 아키텍처의 차이부터 수학적 모델을 통한 성능 증명, 그리고 구체적인 마이그레이션 절차까지 자세히 해설했습니다.
 
 정적 사이트 생성기로의 마이그레이션은 초기 학습 비용(Git 조작, Markdown 표기법, 터미널에서의 CLI 명령어 실행, 템플릿 엔진의 사양 이해 등)이 필요하지만, 그것을 보상하고도 남을 만큼의 '압도적인 표시 속도', '강력한 보안', 그리고 '유지보수 불필요'라는 이점을 가져다줍니다.
 

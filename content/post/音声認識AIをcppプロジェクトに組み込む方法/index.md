@@ -47,7 +47,7 @@ $$ 16000 \times 1 \times \frac{32}{8} = 64,000 \text{ bytes/sec (64 KB/s)} $$
 
 ### 2.2 Melスペクトログラム変換の数理
 
-Whisperの内部では、1次元の音声波形データ（Raw Waveform）を直接処理するわけではありません。人間の聴覚特性に近い周波数表現である **Melスペクトログラム (Mel-Spectrogram)** に変換してからTransformerモデルに入力されます。`whisper.cpp` はこの変換処理をC++実装内に内包していますが、仕組みを理解しておくことはノイズ対策や前処理の最適化に役立ちます。
+Whisperの内部では、1次元の音声波形データ（Raw Waveform）を直接処理するわけではありません。人間の聴覚特性に近い周波数表現である **Melスペクトログラム (Mel-Spectrogram)** に変換してから[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)モデルに入力されます。`whisper.cpp` はこの変換処理をC++実装内に内包していますが、仕組みを理解しておくことはノイズ対策や前処理の最適化に役立ちます。
 
 通常の周波数 $f$ (Hz) をMel尺度 $m$ に変換する数式は以下の通り近似されます。
 
@@ -253,7 +253,7 @@ graph LR
 
 ### 7.1 ggmlテンソルライブラリの威力
 
-`whisper.cpp` のバックエンドである `ggml` は、依存関係を持たないC言語のテンソルライブラリです。最大の特徴は、 **重みデータの動的な量子化 (Quantization)** をサポートしている点です。
+`whisper.cpp` のバックエンドである `ggml` は、依存関係を持たない[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)のテンソルライブラリです。最大の特徴は、 **重みデータの動的な量子化 (Quantization)** をサポートしている点です。
 
 例えば、Whisper `Small` モデル（約2億4000万パラメータ）のメモリサイズを計算してみましょう。
 通常（16-bit Float = 2バイト）の場合：

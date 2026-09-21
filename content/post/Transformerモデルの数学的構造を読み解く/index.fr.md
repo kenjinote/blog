@@ -9,9 +9,9 @@ categories: ["ai", "machine-learning", "mathematics"]
 tags: ["Transformer", "Apprentissage profond", "Attention", "Mathématiques"]
 ---
 
-# Introduction : Pourquoi apprendre les mathématiques du Transformer ?
+# Introduction : Pourquoi apprendre les mathématiques du [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) ?
 
-Il n'est pas exagéré de dire que le "Transformer" est l'architecture qui a réécrit l'histoire du traitement du langage naturel (NLP) moderne et de l'IA dans son ensemble. Ce modèle, proposé pour la première fois dans l'article "Attention Is All You Need" publié par des chercheurs de Google en 2017, sert de cœur aux grands modèles de langage (LLM) qui dominent actuellement le monde, tels que la série GPT d'OpenAI (la technologie sous-jacente de ChatGPT), BERT de Google et Claude d'Anthropic.
+Il n'est pas exagéré de dire que le "Transformer" est l'architecture qui a réécrit l'histoire du traitement du langage naturel (NLP) moderne et de l'IA dans son ensemble. Ce modèle, proposé pour la première fois dans l'article "Attention Is All You Need" publié par des chercheurs de Google en 2017, sert de cœur aux grands modèles de langage ([LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)) qui dominent actuellement le monde, tels que la série GPT d'OpenAI (la technologie sous-jacente de ChatGPT), BERT de Google et Claude d'Anthropic.
 
 Cependant, bien que l'on trouve souvent des explications qualitatives sur le fonctionnement du Transformer telles que "comprendre le contexte en utilisant l'Attention (mécanisme d'attention)", il existe actuellement très peu d'explications approfondies destinées aux débutants sur la **structure mathématique** qui se cache derrière. Pour vraiment comprendre comment l'IA traite les "mots" comme des "formules mathématiques" et génère des textes étonnamment naturels, il est essentiel de décrypter son mécanisme mathématique.
 
@@ -69,7 +69,7 @@ $$ x_i = W_E \cdot \text{one\_hot}(w_i) $$
 Ainsi, la phrase entière est représentée comme une matrice $X \in \mathbb{R}^{N \times d_{model}}$ ($N$ étant la longueur de la phrase).
 
 ## 3.2 La nécessité et les formules du Positional Encoding (Encodage positionnel)
-Le Transformer ne traite pas les mots séquentiellement comme les RNN, mais traite tous les mots simultanément et en parallèle. Bien que cela soit un grand avantage du point de vue de la vitesse de calcul, cela pose le problème que **l'information importante de "l'ordre des mots" est perdue**. Par exemple, "Un chien mord un homme" et "Un homme mord un chien" ont le même ensemble de mots en entrée, mais des significations complètement différentes.
+Le [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) ne traite pas les mots séquentiellement comme les RNN, mais traite tous les mots simultanément et en parallèle. Bien que cela soit un grand avantage du point de vue de la vitesse de calcul, cela pose le problème que **l'information importante de "l'ordre des mots" est perdue**. Par exemple, "Un chien mord un homme" et "Un homme mord un chien" ont le même ensemble de mots en entrée, mais des significations complètement différentes.
 
 Le **Positional Encoding** a été conçu pour fournir cette information d'ordre des mots au modèle.
 Le Positional Encoding $PE$ pour la dimension $i$ du mot situé à la position $pos$ est calculé à l'aide des fonctions trigonométriques suivantes.
@@ -217,7 +217,7 @@ Habituellement, la dimension est temporairement considérablement augmentée par
 
 # 7. Connexions résiduelles (Residual Connection) et Layer Normalization
 
-En apprentissage profond, lorsque les couches du réseau sont approfondies, il y a un problème de disparition ou d'explosion des gradients pendant l'apprentissage, ce qui empêche un apprentissage correct. Pour éviter cela, des **connexions résiduelles (Residual Connection)** et une **Layer Normalization (normalisation de couche)** sont placées autour de chaque sous-couche (Attention et FFN) du Transformer.
+En apprentissage profond, lorsque les couches du réseau sont approfondies, il y a un problème de disparition ou d'explosion des gradients pendant l'apprentissage, ce qui empêche un apprentissage correct. Pour éviter cela, des **connexions résiduelles (Residual Connection)** et une **Layer Normalization (normalisation de couche)** sont placées autour de chaque sous-couche (Attention et FFN) du [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/).
 
 Écrit mathématiquement, la sortie de la sous-couche est traitée comme suit :
 
@@ -274,7 +274,7 @@ Le Transformer est un modèle formidable, mais il a aussi des "faiblesses" dues 
 Faites attention à la complexité de calcul de la Self-Attention. Le calcul de la matrice de scores $Q K^T$ nécessite de multiplier une matrice de $(N \times d_k)$ par une matrice de $(d_k \times N)$, sa complexité de calcul est donc de **$O(N^2 \cdot d_{model})$**.
 
 En d'autres termes, **la quantité de calculs et l'utilisation de la mémoire augmentent de manière quadratique par rapport à la longueur de la séquence $N$**.
-Cela ne pose pas de problème si la phrase est courte, mais si vous essayez de saisir un long contexte tel qu'un livre entier dans un LLM, $N$ atteint des dizaines à des centaines de milliers, et la mémoire du GPU s'épuise immédiatement avec le calcul classique de l'Attention.
+Cela ne pose pas de problème si la phrase est courte, mais si vous essayez de saisir un long contexte tel qu'un livre entier dans un [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/), $N$ atteint des dizaines à des centaines de milliers, et la mémoire du GPU s'épuise immédiatement avec le calcul classique de l'Attention.
 
 Pour briser cette malédiction de $O(N^2)$, diverses optimisations basées sur des approches mathématiques et matérielles ont été proposées ces dernières années.
 Un exemple typique est **FlashAttention**. FlashAttention est un algorithme qui divise le calcul de l'Attention en tuiles (Tiling) afin de minimiser le transfert de données (accès mémoire) entre la hiérarchie de la mémoire GPU (SRAM et HBM). Bien que mathématiquement il produise exactement le même résultat que l'Attention standard (Exact Attention), les optimisations au niveau matériel permettent de réaliser une accélération spectaculaire et une réduction de la mémoire, rendant possible des modèles à long contexte comme GPT-4.
@@ -322,7 +322,7 @@ Vous pouvez voir que la formule mathématique $Q K^T / \sqrt{d_k}$ est implémen
 
 # Conclusion : La forme de l'"intelligence" vue à travers les mathématiques
 
-Dans cet article, nous avons décrypté la structure mathématique profonde du modèle Transformer.
+Dans cet article, nous avons décrypté la structure mathématique profonde du modèle [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/).
 
 L'Embedding qui mappe les mots dans un espace vectoriel multidimensionnel, le Positional Encoding qui exprime les informations de position par la synthèse d'ondes triangulaires, et le mécanisme de Self-Attention qui est un calcul de produit scalaire matriciel né de l'analogie de la recherche d'informations. Chacun de ces composants n'est qu'une accumulation de mathématiques fondamentales telles que l'algèbre linéaire, le calcul différentiel et intégral, et les probabilités et statistiques.
 
@@ -330,9 +330,9 @@ Cependant, lorsque ces simples opérations matricielles se superposent sur de no
 
 Comme l'indique le titre provocateur "Attention Is All You Need", la beauté de cette architecture, qui a abandonné les traitements récurrents et convolutifs complexes pour se spécialiser uniquement dans le calcul de "l'attention (degré de pertinence)", réside véritablement dans sa simplicité mathématique.
 
-À l'avenir, il est possible que de nouvelles architectures dépassant le Transformer (telles que Mamba, qui est un [State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) Space Model) apparaissent, mais le cadre mathématique de "compréhension du contexte par Attention" construit par le Transformer restera à jamais gravé dans l'histoire de l'IA.
+À l'avenir, il est possible que de nouvelles architectures dépassant le Transformer (telles que Mamba, qui est un [State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) Space Model) apparaissent, mais le cadre mathématique de "compréhension du contexte par Attention" construit par le [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) restera à jamais gravé dans l'histoire de l'IA.
 
-Si vous avez l'occasion d'utiliser des LLM comme ChatGPT ou Claude à l'avenir, essayez d'imaginer les billions de produits matriciels $Q K^T$ calculés chaque seconde en arrière-plan, et la fonction Softmax crachant des probabilités. Votre résolution de compréhension de la technologie augmentera, et vous trouverez probablement le monde de l'IA encore plus fascinant.
+Si vous avez l'occasion d'utiliser des [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) comme ChatGPT ou Claude à l'avenir, essayez d'imaginer les billions de produits matriciels $Q K^T$ calculés chaque seconde en arrière-plan, et la fonction Softmax crachant des probabilités. Votre résolution de compréhension de la technologie augmentera, et vous trouverez probablement le monde de l'IA encore plus fascinant.
 
 ### Références
 - Vaswani, A., et al. (2017). "Attention Is All You Need." *Advances in Neural Information Processing Systems*.

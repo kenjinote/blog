@@ -12,7 +12,7 @@ description: '在本地環境中高效且最快地微調 TinyLLaMA 的完整指�
 
 ## 1. 前言：為什麼現在要選擇 TinyLLaMA 與本地部署？
 
-大型語言模型 (LLM) 的進化正以驚人的速度發展，隨之而來的是模型參數數量也持續膨脹至數千億規模。儘管 GPT-4 或 Claude 3 這樣超巨大的模型擁有無與倫比的效能，但對於企業而言，推論和訓練所需的運算成本，以及使用外部 API 時對安全性與資料隱私的擔憂，已成為巨大的障礙。特別是在處理高度機密的內部資料或個人資訊的業務中，基於合規性（如 GDPR 或 APPI 等）的考量，將資料傳送至雲端上的公開 LLM API 往往是不被允許的。
+大型語言模型 ([LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/)) 的進化正以驚人的速度發展，隨之而來的是模型參數數量也持續膨脹至數千億規模。儘管 GPT-4 或 Claude 3 這樣超巨大的模型擁有無與倫比的效能，但對於企業而言，推論和訓練所需的運算成本，以及使用外部 API 時對安全性與資料隱私的擔憂，已成為巨大的障礙。特別是在處理高度機密的內部資料或個人資訊的業務中，基於合規性（如 GDPR 或 APPI 等）的考量，將資料傳送至雲端上的公開 LLM API 往往是不被允許的。
 
 因此， **小型語言模型 (SLM: Small Language Models)** 與 ** 在本地環境中進行區域網路運作**正逐漸受到矚目。其中，「 **TinyLLaMA** 」雖然僅有 1.1B（11 億）參數的精簡大小，卻使用了約 3 兆個 Token 的龐大資料集進行預訓練，與同級別的模型相比，展現出驚人的效能。
 
@@ -37,7 +37,7 @@ TinyLLaMA 沿用了 Meta 公司開發的 LLaMA (Large Language Model Meta AI) �
 4. **Grouped Query Attention (GQA):**
    介於多頭注意力機制 (Multi-Head Attention, MHA) 與多查詢注意力機制 (Multi-Query Attention, MQA) 之間的方法，透過將 Key 和 Value 的注意力頭進行分組，節省了記憶體頻寬，並顯著提升了推論速度。
 
-以下的 Mermaid 圖表展示了 TinyLLaMA 的整體資料流與 Transformer 區塊的結構。
+以下的 Mermaid 圖表展示了 TinyLLaMA 的整體資料流與 [Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 區塊的結構。
 
 ```mermaid
 graph TD
@@ -151,7 +151,7 @@ pip install transformers datasets peft trl accelerate bitsandbytes
 
 ## 6. 實作：TinyLLaMA 的 QLoRA 微調程式碼
 
-接下來，我們將解說包含了上述所有最佳化的最快微調 PyTorch 腳本。在這裡，我們將使用 Hugging Face 的 `trl` (Transformer Reinforcement Learning) 函式庫中的 `SFTTrainer`。
+接下來，我們將解說包含了上述所有最佳化的最快微調 PyTorch 腳本。在這裡，我們將使用 Hugging Face 的 `trl` ([Transformer](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) Reinforcement Learning) 函式庫中的 `SFTTrainer`。
 
 ### 6.1 資料集準備與模型載入
 
@@ -353,7 +353,7 @@ python -m vllm.entrypoints.openai.api_server \
 
 本文針對參數數量僅有 1.1B、輕量卻擁有高效能的「TinyLLaMA」，解說了如何在本地環境中最快且最高效利用記憶體來進行微調的方法。
 
-- 透過 **LoRA / QLoRA** ，即使在消費級 GPU 也能進行正式的 LLM 微調。
+- 透過 **LoRA / QLoRA** ，即使在消費級 GPU 也能進行正式的 [LLM](https://kenji.blog/zh-tw/p/large-language-models-llm-transformer-prompt-engineering/) 微調。
 - 靈活運用 **Flash Attention 2** 與 **Gradient Checkpointing** ，將訓練時間與 VRAM 消耗最佳化至極限。
 - 透過活用 **vLLM** 進行部署，在正式環境中也能實現高吞吐量。
 

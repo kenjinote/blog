@@ -46,7 +46,7 @@ $$
 $$
 
 **Impacto en la selección tecnológica:**
-Este algoritmo acerca en el espacio latente a la "Persona A, interesada en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)" y a la "Persona B, interesada en Rust". Si la Persona A da "Me gusta" a una publicación sobre un nuevo framework web, es muy probable que la publicación de ese framework también aparezca en la línea de tiempo de la Persona B. Como resultado, ocurre el fenómeno en el que una tecnología específica se vuelve localmente muy popular dentro de un grupo de ingenieros que prefieren una pila tecnológica particular.
+Este algoritmo acerca en el espacio latente a la "Persona A, interesada en [Rust](https://kenji.blog/es/p/webassembly-wasm-current-future/)" y a la "Persona B, interesada en [Rust](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/)". Si la Persona A da "Me gusta" a una publicación sobre un nuevo framework web, es muy probable que la publicación de ese framework también aparezca en la línea de tiempo de la Persona B. Como resultado, ocurre el fenómeno en el que una tecnología específica se vuelve localmente muy popular dentro de un grupo de ingenieros que prefieren una pila tecnológica particular.
 
 ### 2.2 Modelos de recomendación usando Aprendizaje Profundo (DLRM)
 

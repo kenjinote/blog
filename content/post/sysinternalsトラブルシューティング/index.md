@@ -42,7 +42,7 @@ ProcMonのドライバはミニフィルタードライバとして登録され�
 
 ## 2. Process Explorer (ProcExp) によるプロセスの深掘りとマルウェア解析
 
-Process Explorerは「超強力なタスクマネージャー」です。単なるCPU/メモリの使用率だけでなく、プロセスツリー、ハンドル、ロードされているDLL、スレッドのコールスタックまで可視化します。
+Process Explorerは「超強力なタスクマネージャー」です。単なるCPU/メモリの使用率だけでなく、プロセスツリー、ハンドル、ロードされているDLL、スレッドのコール[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)まで可視化します。
 
 ### 2.1 ハンドルリークと[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の特定
 アプリケーションがファイルを開いたままクラッシュし、その後そのファイルを削除・移動できなくなる問題は頻発します。「ファイルは別のプログラムによって開かれています」というエラーが出た場合、ProcExpの **Find** 機能（`Ctrl+F`）を使ってファイル名やディレクトリ名を検索します。
@@ -153,7 +153,7 @@ AutorunsでもProcExpと同様に、`Options` から `Verify Code Signatures` �
 ## 5. TCPView による隠れたネットワーク接続の追跡
 
 タスクマネージャーのネットワークタブや `netstat -ano` コマンドでも通信状況は確認できますが、更新が遅かったり、プロセス名とPIDのマッピングを手動で行うのは手間です。
-TCPViewは、すべての[TCP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)および[UDP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)エンドポイントをリアルタイムで監視し、どのプロセスがどのリモートアドレス・ポートと通信しているかを一覧表示します。
+TCPViewは、すべての[TCP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)および[UDP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)エンドポイントをリアルタイムで監視し、どのプロセスがどのリモート[アドレス](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)・ポートと通信しているかを一覧表示します。
 
 ### 5.1 不正なC2通信の特定
 マルウェアがバックドアを設置し、外部のC2（Command and Control）サーバーにBeacon（ビーコン）を送信している場合、TCPViewで以下のような特徴を探します。
@@ -170,7 +170,7 @@ TCPViewは、すべての[TCP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/
 Sysinternalsツール群は、Windows OSが裏側で行っているすべての挙動を可視化するための強力な「レントゲン」です。これらのツールを効果的に活用するためには、以下のベストプラクティスを遵守してください。
 
 1.  **シンボル（Symbols）の構成**:
-    ProcExpやProcMonでコールスタックを正確に解決するためには、Microsoftのパブリックシンボルサーバーを設定することが必須です。環境変数に以下を設定してください。
+    ProcExpやProcMonでコール[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を正確に解決するためには、Microsoftのパブリックシンボルサーバーを設定することが必須です。環境変数に以下を設定してください。
     `_NT_SYMBOL_PATH = srv*c:\symbols*https://msdl.microsoft.com/download/symbols`
 2.  **ノイズからの信号抽出（Signal-to-Noise Ratioの向上）**:
     ProcMonのログは数百万行に及びます。「正常な動作（SUCCESS）」や「安全とわかっているプロセス（System, explorer.exeなど）」を積極的に `Exclude` フィルターで除外し、問題の核心（ACCESS DENIED, NAME NOT FOUND）に焦点を当ててください。

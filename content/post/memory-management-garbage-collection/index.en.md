@@ -8,15 +8,15 @@ categories: ["programming", "computer-science", "software-engineering"]
 tags: ["memory-management", "c-language", "java", "rust", "garbage-collection"]
 ---
 
-# Welcome to the Truth of Memory Management: Unraveling the Abyss from C, Java, and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)
+# Welcome to the Truth of [Memory Management](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/): Unraveling the Abyss from C, [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), and [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)
 
 In software development, memory management is an eternal theme that cannot be avoided, and is one of the most important factors determining the performance and stability of a system. In this article, through an overwhelming deep dive comparable to a 20,000-character scale, we comprehensively cover everything from the basic theory of memory management to optimization techniques in modern architectures.
 
-The freedom and responsibility of **manual management** brought by the C language, the safe automation through **garbage collection** (GC) popularized by Java, and the paradigm of compile-time verification called **Ownership** presented by Rust. By comparing and analyzing these three completely different approaches, we approach the essence of its **history and evolution**, and how programming languages have faced the limited resource of memory.
+The freedom and responsibility of **manual management** brought by the C language, the safe automation through **garbage collection** (GC) popularized by [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), and the paradigm of compile-time verification called **Ownership** presented by [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/). By comparing and analyzing these three completely different approaches, we approach the essence of its **history and evolution**, and how programming languages have faced the limited resource of memory.
 
 ---
 
-## 1. Basic Structure of Memory: Stack, Heap, and Virtual Memory
+## 1. Basic Structure of Memory: [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/), [Heap](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/), and Virtual Memory
 
 When a program is executed, the operating system (OS) allocates an abstracted memory area called "virtual memory space" to the process. From the program's perspective, this space appears as a continuous, massive memory space, but behind the scenes, it is mapped to physical memory (RAM) or swap space by the OS's paging mechanism.
 
@@ -104,12 +104,12 @@ int main() {
 }
 ```
 
-### 2.2 The Nightmare Caused by Manual Memory Management
+### 2.2 The Nightmare Caused by Manual [Memory Management](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)
 
 Memory management in C easily creates typical bugs (memory vulnerabilities) like the following.
 
 1. **Memory Leak**: A phenomenon where unused memory remains un-freed by forgetting to call `free`. If it occurs on a long-running server, it eventually consumes all the system memory and is force-killed by the OOM (Out Of Memory) killer.
-2. **Dangling Pointer**: A pointer that continues to point to a memory area that has already been freed by `free`. Attempting to access memory through this pointer causes undefined behavior (such as segmentation faults).
+2. **Dangling [Pointer](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)**: A pointer that continues to point to a memory area that has already been freed by `free`. Attempting to access memory through this pointer causes undefined behavior (such as segmentation faults).
 3. **Double Free**: An error where `free` is called twice on the same heap area pointer. It destroys the internal structure of the allocator (like the heap's free list) and becomes a security vulnerability.
 4. **Buffer Overflow**: A phenomenon of writing data beyond the allocated memory area. By overwriting adjacent important data or return addresses, it becomes a foothold for attacks executing malicious code (like stack smashing).
 
@@ -121,7 +121,7 @@ Ideally, at the point $ T $ when the program terminates normally, logically $ M(
 
 ---
 
-## 3. Java: The Revolution Brought by Garbage Collection
+## 3. [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/): The Revolution Brought by Garbage Collection
 
 Java brought a major paradigm shift to the software industry, which had suffered from frequent memory bugs in C/C++. Java took away the complexity of memory management from programmers and entrusted it to the **garbage collection** (GC) embedded in the Java Virtual Machine (JVM). Developers could now focus only on describing business logic and generating objects.
 
@@ -162,7 +162,7 @@ graph TD
 
 In the above diagram, the green objects are marked as reachable and protected. On the other hand, the set of objects indicated by the red dotted lines are no longer referenced from anywhere, so their memory is automatically collected in the sweep phase.
 
-### 3.2 Memory Behavior in Java Code
+### 3.2 Memory Behavior in [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) Code
 
 In Java, objects are allocated on the heap with the `new` keyword, but there is no free command corresponding to C's `free`.
 
@@ -208,7 +208,7 @@ When GC is executed, all threads of the application pause to maintain memory con
 
 ## 4. [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/): The Third Path Brought by Ownership and Borrowing
 
-"Ultimate performance through manual management" in C and "memory safety through automatic management" in Java. These two have long been considered a trade-off relationship. However, the Rust language achieved the feat of guaranteeing 100% memory safety at compile time while eliminating garbage collection by introducing the groundbreaking model of **"Ownership"**.
+"Ultimate performance through manual management" in C and "memory safety through automatic management" in [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/). These two have long been considered a trade-off relationship. However, the [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) language achieved the feat of guaranteeing 100% memory safety at compile time while eliminating garbage collection by introducing the groundbreaking model of **"Ownership"**.
 
 ### 4.1 The 3 Principles of Ownership
 
@@ -243,7 +243,7 @@ fn main() {
 
 If ownership is moved in every operation, programming becomes extremely inconvenient. To access data without taking ownership, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) has concepts of **References** and **Borrowing**.
 
-Furthermore, the **Borrow Checker** built into the Rust compiler enforces the following strict rules at compile time:
+Furthermore, the **Borrow Checker** built into the [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) compiler enforces the following strict rules at compile time:
 
 - At any given time, you can have either **one mutable reference (`&mut T`)** or **any number of immutable references (`&T`)** (simultaneous coexistence is not allowed. Prevention of Data Races).
 - The lifetime (valid period) of a reference must not exceed the lifetime of the original data (complete prevention of dangling pointers).
@@ -296,14 +296,14 @@ When a CPU reads data from memory, it loads not just that data but an entire adj
 ### 5.1 Differences in Cache Efficiency by Language
 
 - **C / C++ / [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)**: When you create an array of structures (`struct Array[100]` or `Vec<MyStruct>`), the data is arranged continuously in memory without gaps. When looping through the array, the CPU's hardware prefetcher functions perfectly, dramatically increasing the cache hit rate.
-- **Java**: Java's object arrays (`MyObject[]`) are not arrays of entities, but arrays of "references (pointers) to objects". Since each entity object is allocated in scattered locations on the heap, you trace pointers and access random memory addresses at each loop iteration, repeatedly causing severe Cache Misses.
+- **[Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)**: Java's object arrays (`MyObject[]`) are not arrays of entities, but arrays of "references (pointers) to objects". Since each entity object is allocated in scattered locations on the heap, you trace pointers and access random memory addresses at each loop iteration, repeatedly causing severe Cache Misses.
 
 The effective average time $ T_{avg} $ of memory access is expressed as follows:
 
 $ T_{avg} = h \cdot T_{cache} + (1 - h) \cdot T_{memory} $
 
 Here, $ h $ is the cache hit rate ($ 0 \le h \le 1 $), $ T_{cache} $ is the cache access time (about 1-4 ns), and $ T_{memory} $ is the main memory access time (about 100 ns).
-Whether you make $ h $ 0.99 (the C/[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) approach) or drop it to 0.5 (Java's pointer chasing), creates a difference of tens of times in the loop execution speed of the application. This is the true reason why C++ and Rust are chosen for game engines and high-frequency trading systems.
+Whether you make $ h $ 0.99 (the C/[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) approach) or drop it to 0.5 ([Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)'s pointer chasing), creates a difference of tens of times in the loop execution speed of the application. This is the true reason why C++ and [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) are chosen for game engines and high-frequency trading systems.
 
 ---
 
@@ -314,9 +314,9 @@ In this article, we dived deep into three completely different memory management
 | Language | Approach | Merits | Demerits / Challenges |
 |:---:|:---|:---|:---|
 | **C** | Manual management via `malloc/free` | Ultimate speed, maximum cache efficiency, lightweight | Hotbed for vulnerabilities (leaks, double free), high development cost |
-| **Java** | GC (Garbage Collection) | Improved development speed, guaranteed memory safety | Latency fluctuation due to STW, deterioration of cache efficiency |
+| **[Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)** | GC (Garbage Collection) | Improved development speed, guaranteed memory safety | Latency fluctuation due to STW, deterioration of cache efficiency |
 | **[Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)** | Ownership / Borrow Checker | Zero-cost runtime safety, fast | Steep learning curve, difficulty in lifetime design |
 
 The history of **memory management** has been a seesaw game oscillating between performance and safety. GC was born to prevent tragedies caused by manual management, and the ownership model was invented to avoid the performance penalty of GC.
 
-When we design a system, rather than short-circuited decisions like "use Rust because it's the fastest" or "use Java because it's safe", it can be said that the path to becoming a top-tier engineer is to select the optimal technology after comparing the system requirements (strictness regarding latency, development resources, maintainability) with the **truth** of memory management behind them.
+When we design a system, rather than short-circuited decisions like "use [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) because it's the fastest" or "use [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) because it's safe", it can be said that the path to becoming a top-tier engineer is to select the optimal technology after comparing the system requirements (strictness regarding latency, development resources, maintainability) with the **truth** of memory management behind them.

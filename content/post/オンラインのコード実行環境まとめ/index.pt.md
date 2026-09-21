@@ -28,7 +28,7 @@ Google Colaboratory é um ambiente de execução de código Python online.
 
 - [Javascript Playground](https://playcode.io/)
 
-## Java
+## [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/)
 
 - [paiza.IO Online Java compiler](https://paiza.io/ja/projects/new?language=java)
 
@@ -47,7 +47,7 @@ Google Colaboratory é um ambiente de execução de código Python online.
 
 - [AWS Cloud9](https://aws.amazon.com/jp/cloud9/)
 
-Um ambiente de desenvolvimento integrado (IDE) online fornecido pela Amazon AWS. Ferramentas para mais de 40 linguagens de programação como Node.js, JavaScript, Python, PHP, Ruby, Go, C++, etc. já vêm empacotadas.
+Um ambiente de desenvolvimento integrado (IDE) online fornecido pela Amazon AWS. Ferramentas para mais de 40 linguagens de programação como Node.js, JavaScript, Python, PHP, Ruby, [Go](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), C++, etc. já vêm empacotadas.
 
 - [Visual Studio Code for the Web](https://vscode.dev/)
 
@@ -55,7 +55,7 @@ Um ambiente de desenvolvimento online fornecido pela Microsoft. No entanto, ling
 
 - [paiza.IO](https://paiza.io/projects/CGAcQLfW-IOXYy8Dq2OHBw?locale=ja-jp)
 
-Um ambiente de execução online que suporta 24 linguagens principais como C, C++, Java, Ruby, Python, PHP, Perl, etc.
+Um ambiente de execução online que suporta 24 linguagens principais como C, C++, [Java](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/), Ruby, Python, PHP, Perl, etc.
 
 - [CodePen](https://codepen.io/)
 

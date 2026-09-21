@@ -27,7 +27,7 @@ description: '고속 정적 사이트 생성기 Hugo의 CLI 설치 방법과 블
 
 # Hugo란
 
-Hugo는 정적 사이트 생성기 중 하나입니다. Markdown 파일을 HTML로 변환하여 웹사이트를 만들 수 있습니다. Hugo는 Go 언어로 작성되어 빠르게 동작합니다.
+Hugo는 정적 사이트 생성기 중 하나입니다. Markdown 파일을 HTML로 변환하여 웹사이트를 만들 수 있습니다. Hugo는 [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 언어로 작성되어 빠르게 동작합니다.
 
 이 블로그도 Hugo로 제작되었습니다.
 

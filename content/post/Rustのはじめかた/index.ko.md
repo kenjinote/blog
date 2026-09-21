@@ -47,7 +47,7 @@ fn main() {
 [The Rust Programming Language 일본어판](https://doc.rust-jp.rs/book-ja/)
 
 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)를 배우는 데 필요한 설명은 위 링크(일본어 번역판)에 모여 있습니다.
-Rust 교재를 구입할 필요가 없을 정도로 충실하게 구성되어 있습니다.
+[Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 교재를 구입할 필요가 없을 정도로 충실하게 구성되어 있습니다.
 
 # Web에서 실행해 보고 싶은 경우
 

@@ -246,9 +246,9 @@ flowchart TD
 
 ## 5. Markdown-Schreibtechniken im Zeitalter der LLMs
 
-Beim modernen Schreiben von Technik-Blogs ist die Nutzung von LLMs (Large Language Models) unumgänglich. Durch den Einsatz in Editoren integrierter KI-Tools wird die Schreibgeschwindigkeit weiter verdoppelt.
+Beim modernen Schreiben von Technik-Blogs ist die Nutzung von LLMs ([Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)) unumgänglich. Durch den Einsatz in Editoren integrierter KI-Tools wird die Schreibgeschwindigkeit weiter verdoppelt.
 
-### Prompt Engineering im Editor
+### [Prompt Engineering](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) im Editor
 
 Mit GitHub Copilot Chat in VS Code oder `ChatGPT.nvim` und `Copilot.vim` in Neovim können Sie beispielsweise den folgenden Prompt absenden, ohne den Editor zu verlassen:
 
@@ -256,7 +256,7 @@ Mit GitHub Copilot Chat in VS Code oder `ChatGPT.nvim` und `Copilot.vim` in Neov
 
 Sofort wird ein Markdown mit Überschriften und Aufzählungspunkten generiert. Wir müssen dieses Grundgerüst nur noch mit Inhalten füllen.
 
-Darüber hinaus generiert die KI auch bei komplexen Mermaid-Diagrammen oder mathematischen Formeln (LaTeX) die genaue Syntax, wenn man ihr Anweisungen gibt. Beispielsweise wurde auch die Grundlage für das [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/) der mathematischen Formeln und Diagramme in diesem Artikel durch Pair-Writing mit einem LLM beschleunigt.
+Darüber hinaus generiert die KI auch bei komplexen Mermaid-Diagrammen oder mathematischen Formeln (LaTeX) die genaue Syntax, wenn man ihr Anweisungen gibt. Beispielsweise wurde auch die Grundlage für das [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/) der mathematischen Formeln und Diagramme in diesem Artikel durch Pair-Writing mit einem [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) beschleunigt.
 
 ## 6. Zusammenfassung
 

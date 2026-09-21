@@ -62,7 +62,7 @@ Una vez comprendida la ergonomía física, evaluaremos y compararemos los patron
 
 ### 2.1 Monitor dual (ej.: 27 pulgadas 4K × 2)
 
-Es la configuración más estándar. Si se colocan uno al lado del otro, el bisel quedará en el centro, obligando a inclinar el cuello constantemente hacia la izquierda o la derecha. Para evitar esto, se recomienda colocar uno al frente (principal) y el otro en diagonal (secundario), o apilarlos verticalmente (configuración Stack).
+Es la configuración más estándar. Si se colocan uno al lado del otro, el bisel quedará en el centro, obligando a inclinar el cuello constantemente hacia la izquierda o la derecha. Para evitar esto, se recomienda colocar uno al frente (principal) y el otro en diagonal (secundario), o apilarlos verticalmente (configuración [Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)).
 
 - **Ventajas:** División física de pantallas clara. Fácil gestión de aplicaciones a pantalla completa.
 - **Desventajas:** El bisel central divide la visión. Alta carga de rotación para el cuello.

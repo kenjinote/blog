@@ -217,7 +217,7 @@ graph TD
 Como conceptos básicos de búsqueda en la estructura de árbol, existen la búsqueda en profundidad (DFS) y la búsqueda en anchura (BFS).
 
 ## 2. Búsqueda en profundidad (DFS: Depth-First Search)
-La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila (Stack).
+La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila ([Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Ejemplo de implementación en Python de DFS en una estructura de árbol
 
@@ -246,7 +246,7 @@ dfs_tree(root)
 ```
 
 ## 2. Búsqueda en profundidad (DFS: Depth-First Search)
-La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila (Stack).
+La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila ([Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Ejemplo de implementación en Python de DFS en una estructura de árbol
 
@@ -275,7 +275,7 @@ dfs_tree(root)
 ```
 
 ## 2. Búsqueda en profundidad (DFS: Depth-First Search)
-La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila (Stack).
+La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila ([Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Ejemplo de implementación en Python de DFS en una estructura de árbol
 
@@ -304,7 +304,7 @@ dfs_tree(root)
 ```
 
 ## 2. Búsqueda en profundidad (DFS: Depth-First Search)
-La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila (Stack).
+La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila ([Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Ejemplo de implementación en Python de DFS en una estructura de árbol
 
@@ -333,7 +333,7 @@ dfs_tree(root)
 ```
 
 ## 2. Búsqueda en profundidad (DFS: Depth-First Search)
-La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila (Stack).
+La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila ([Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Ejemplo de implementación en Python de DFS en una estructura de árbol
 
@@ -362,7 +362,7 @@ dfs_tree(root)
 ```
 
 ## 2. Búsqueda en profundidad (DFS: Depth-First Search)
-La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila (Stack).
+La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila ([Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Ejemplo de implementación en Python de DFS en una estructura de árbol
 
@@ -391,7 +391,7 @@ dfs_tree(root)
 ```
 
 ## 2. Búsqueda en profundidad (DFS: Depth-First Search)
-La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila (Stack).
+La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila ([Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Ejemplo de implementación en Python de DFS en una estructura de árbol
 
@@ -420,7 +420,7 @@ dfs_tree(root)
 ```
 
 ## 2. Búsqueda en profundidad (DFS: Depth-First Search)
-La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila (Stack).
+La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila ([Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Ejemplo de implementación en Python de DFS en una estructura de árbol
 
@@ -449,7 +449,7 @@ dfs_tree(root)
 ```
 
 ## 2. Búsqueda en profundidad (DFS: Depth-First Search)
-La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila (Stack).
+La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila ([Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Ejemplo de implementación en Python de DFS en una estructura de árbol
 
@@ -478,7 +478,7 @@ dfs_tree(root)
 ```
 
 ## 2. Búsqueda en profundidad (DFS: Depth-First Search)
-La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila (Stack).
+La búsqueda en profundidad es un algoritmo que parte de un cierto nodo, avanza lo más profundo posible, y al llegar a un callejón sin salida, regresa al nodo anterior para continuar la búsqueda. Se puede implementar de manera muy simple utilizando funciones recursivas. También se suele utilizar una estructura de datos llamada pila ([Stack](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Ejemplo de implementación en Python de DFS en una estructura de árbol
 

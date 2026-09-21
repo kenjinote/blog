@@ -12,7 +12,7 @@ description: '프라이버시를 보호하면서 무료로 사용할 수 있는 
 
 # 머리말
 
-최근 대규모 언어 모델(LLM)의 기술 발전은 눈부시며, ChatGPT나 Claude와 같은 클라우드 기반 AI 서비스가 널리 보급되고 있습니다. 하지만 한편으로는 "자사의 기밀 데이터를 외부 서버로 전송하고 싶지 않다", "API 이용 요금을 절감하고 싶다", "완전히 오프라인으로 동작하는 AI 시스템을 구축하고 싶다"는 요구가 급속히 높아지고 있습니다.
+최근 대규모 언어 모델([LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/))의 기술 발전은 눈부시며, ChatGPT나 Claude와 같은 클라우드 기반 AI 서비스가 널리 보급되고 있습니다. 하지만 한편으로는 "자사의 기밀 데이터를 외부 서버로 전송하고 싶지 않다", "API 이용 요금을 절감하고 싶다", "완전히 오프라인으로 동작하는 AI 시스템을 구축하고 싶다"는 요구가 급속히 높아지고 있습니다.
 
 이러한 요구에 부응하는 것이 자신의 PC나 사내 서버에 직접 다운로드하여 실행할 수 있는 '로컬 LLM(오픈소스 LLM)'입니다. 2023년경까지만 해도 로컬에서 실용적인 정확도를 내는 것은 어려웠지만, 모델 아키텍처의 진화와 양자화(Quantization) 기술의 발전으로 현재는 소비자용 GPU(NVIDIA RTX 3090 / 4090이나 Mac의 Apple Silicon 등)에서도 매우 고성능의 LLM을 원활하게 구동할 수 있게 되었습니다.
 
@@ -80,7 +80,7 @@ Meta사가 개발하여 오픈소스 LLM의 사실상 업계 표준(디팩토 �
 
 ### 아키텍처의 진화와 특징
 
-Llama 3는 표준적인 Transformer 아키텍처를 채택하면서도 이전 세대(Llama 2)로부터 수많은 기술적 개량이 가해졌습니다. 특히 주목할 만한 점은 다음과 같습니다.
+Llama 3는 표준적인 [Transformer](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 아키텍처를 채택하면서도 이전 세대(Llama 2)로부터 수많은 기술적 개량이 가해졌습니다. 특히 주목할 만한 점은 다음과 같습니다.
 
 - **GQA (Grouped Query Attention)의 표준 채택**: Llama 2에서는 대규모 모델에만 채택되었던 GQA가 Llama 3에서는 8B와 같은 소규모 모델에도 채택되었습니다. 이로 인해 KV 캐시의 메모리 사용량이 급감하여 긴 컨텍스트에서도 빠른 추론이 가능해졌습니다.
 - **어휘 크기 확대**: 토크나이저(Tiktoken 기반)의 어휘 크기가 128,000 토큰으로 확장되어 다국어 및 프로그램 코드의 압축 효율이 극적으로 향상되었습니다. 일본어 처리 효율도 Llama 2와 비교하여 수 배 좋아졌습니다.
@@ -114,7 +114,7 @@ Llama 3는 커뮤니티의 지원이 가장 두터우며, GGUF, AWQ, EXL2 등 �
 
 ### MoE (Mixture of Experts) 의 구조
 
-'Mixtral 8x7B'는 오픈소스 LLM 최초로 **MoE (Mixture of Experts)** 아키텍처를 본격적으로 도입하여 큰 성공을 거두었습니다.
+'Mixtral 8x7B'는 오픈소스 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 최초로 **MoE (Mixture of Experts)** 아키텍처를 본격적으로 도입하여 큰 성공을 거두었습니다.
 MoE란 모델 전체(약 470억 파라미터) 내에 8개의 '전문가(Expert) 네트워크'를 두어, 입력된 토큰마다 최적의 전문가 2개만을 동적으로 선택(라우팅)하는 방식입니다.
 
 ```mermaid
@@ -144,7 +144,7 @@ Google이 자사의 최첨단 모델 'Gemini'의 기술을 활용하여 개발�
 
 ### 독자적인 아키텍처 설계
 
-Gemma 2는 다른 LLM과는 선을 긋는 몇 가지 독자적인 설계를 채택하고 있습니다.
+Gemma 2는 다른 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)과는 선을 긋는 몇 가지 독자적인 설계를 채택하고 있습니다.
 
 - **Logit Soft-capping**: 비정상적으로 큰 로짓 값이 생성되는 것을 방지하여 학습과 추론의 안정성을 높이는 기술.
 - **Sliding Window Attention (SWA) 와 Local Attention의 하이브리드**: 모든 레이어에서 풀 어텐션을 수행하는 것이 아니라, 국소적인 컨텍스트만 보는 레이어와 전체를 보는 레이어를 번갈아 배치하고 있습니다.
@@ -227,7 +227,7 @@ xychart-beta
 
 ## 추론 속도 (Tokens/sec) 의 이론적 계산
 
-로컬 LLM의 추론 속도는 GPU의 '메모리 대역폭(Memory Bandwidth)'에 크게 의존합니다. 생성 단계(디코딩)에서는 1개의 토큰을 생성할 때마다 모델의 전체 가중치를 메모리에서 읽어와야 하기 때문입니다. 계산 한계(Compute-bound)가 아닌 메모리 한계(Memory-bound) 처리가 됩니다.
+로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 추론 속도는 GPU의 '메모리 대역폭(Memory Bandwidth)'에 크게 의존합니다. 생성 단계(디코딩)에서는 1개의 토큰을 생성할 때마다 모델의 전체 가중치를 메모리에서 읽어와야 하기 때문입니다. 계산 한계(Compute-bound)가 아닌 메모리 한계(Memory-bound) 처리가 됩니다.
 
 이론적인 최대 추론 속도 $T$(Tokens/sec)는 다음 식을 통해 계산됩니다.
 
@@ -262,7 +262,7 @@ ollama run llama3
 GUI 기반으로 직관적인 조작을 원하는 분들에게 추천하는 애플리케이션입니다. Hugging Face의 방대한 GGUF 모델 목록을 앱 내에서 검색하고 다운로드할 수 있으며, ChatGPT와 유사한 채팅 화면에서 대화를 즐길 수 있습니다. 어떤 모델이 자신의 PC RAM/VRAM에 들어맞는지를 시각적으로 알려주는 기능이 매우 유용합니다.
 
 ### 3. llama.cpp
-로컬 LLM 붐의 주역이자 모든 기반이 되고 있는 C/C++ 구현 라이브러리입니다. 극한까지 성능을 튜닝하고 싶은 엔지니어나 독자적인 스크립트에 내장하고 싶은 해커를 위한 도구입니다. Apple의 Metal, NVIDIA의 CUDA, AMD의 ROCm, 나아가 Intel의 AVX 명령어 세트까지 모든 하드웨어의 잠재력을 한계까지 끌어냅니다.
+로컬 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/) 붐의 주역이자 모든 기반이 되고 있는 C/C++ 구현 라이브러리입니다. 극한까지 성능을 튜닝하고 싶은 엔지니어나 독자적인 스크립트에 내장하고 싶은 해커를 위한 도구입니다. Apple의 Metal, NVIDIA의 CUDA, AMD의 ROCm, 나아가 Intel의 AVX 명령어 세트까지 모든 하드웨어의 잠재력을 한계까지 끌어냅니다.
 
 ---
 
@@ -276,7 +276,7 @@ GUI 기반으로 직관적인 조작을 원하는 분들에게 추천하는 애�
 4. **자연스러운 일본어 출력과 고도의 코딩 지원이 목적이라면**: `Qwen 2.5`
 5. **스마트폰이나 사양이 낮은 PC, 백그라운드에서의 초경량 처리가 목적이라면**: `Phi-3 / Phi-3.5`
 
-오픈소스 LLM의 진화 속도는 무서울 정도이며, 몇 달에 한 번씩 기존의 상식을 뒤엎는 혁신적인 결과가 발표되고 있습니다. 앞으로 양자화 기술의 추가적인 향상과 새로운 아키텍처의 등장으로 로컬 환경만으로도 클라우드 AI를 능가할 날이 머지않았을지도 모릅니다.
+오픈소스 [LLM](https://kenji.blog/ko/p/large-language-models-llm-transformer-prompt-engineering/)의 진화 속도는 무서울 정도이며, 몇 달에 한 번씩 기존의 상식을 뒤엎는 혁신적인 결과가 발표되고 있습니다. 앞으로 양자화 기술의 추가적인 향상과 새로운 아키텍처의 등장으로 로컬 환경만으로도 클라우드 AI를 능가할 날이 머지않았을지도 모릅니다.
 여러분의 하드웨어 환경에 맞춰 최적의 모델을 다운로드하고, 로컬 AI의 압도적인 자유와 가능성을 직접 체험해 보시기 바랍니다.
 
 

@@ -94,7 +94,7 @@ def linear_search(arr, target):
 
 ## 4. O(n log n) : Tempo Linearítmico (Linearithmic Time)
 
-É o produto de O(n) e O(log n). Muitos algoritmos de ordenação por comparação eficientes (Merge Sort, Quick Sort, Heap Sort, etc.) possuem essa complexidade.
+É o produto de O(n) e O(log n). Muitos algoritmos de ordenação por comparação eficientes (Merge Sort, Quick Sort, [Heap](https://kenji.blog/pt/p/c-language-pointers-memory-management-stack-heap/) Sort, etc.) possuem essa complexidade.
 
 ```python
 def merge_sort(arr):

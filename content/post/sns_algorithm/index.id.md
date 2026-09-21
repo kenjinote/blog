@@ -46,7 +46,7 @@ $$
 $$
 
 **Dampak pada Pemilihan Teknologi:**
-Algoritma ini membawa "Si A yang tertarik dengan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)" dan "Si B yang tertarik dengan Rust" lebih dekat di ruang laten. Jika Si A "menyukai" postingan tentang kerangka kerja Web yang sedang berkembang, postingan tentang kerangka kerja tersebut akan memiliki probabilitas tinggi untuk ditampilkan di linimasa Si B juga. Akibatnya, terjadi fenomena di mana sebuah teknologi spesifik menjadi sangat populer secara lokal di dalam kelompok insinyur yang menyukai tumpukan teknologi tertentu.
+Algoritma ini membawa "Si A yang tertarik dengan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/)" dan "Si B yang tertarik dengan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)" lebih dekat di ruang laten. Jika Si A "menyukai" postingan tentang kerangka kerja Web yang sedang berkembang, postingan tentang kerangka kerja tersebut akan memiliki probabilitas tinggi untuk ditampilkan di linimasa Si B juga. Akibatnya, terjadi fenomena di mana sebuah teknologi spesifik menjadi sangat populer secara lokal di dalam kelompok insinyur yang menyukai tumpukan teknologi tertentu.
 
 ### 2.2 Model Rekomendasi Berbasis Pembelajaran Mendalam (DLRM)
 

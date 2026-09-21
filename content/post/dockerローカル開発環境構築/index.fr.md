@@ -399,7 +399,7 @@ Voici des problèmes fréquents rencontrés lors de l'utilisation d'un environne
    Si vous obtenez une erreur telle que `Bind for 0.0.0.0:8000 failed: port is already allocated`, c'est qu'un autre processus sur la machine locale utilise ce port. Vous pouvez éviter cela en changeant le numéro de port côté hôte, comme `ports: - "8080:8000"`.
 
 2. **Épuisement de l'espace disque**
-   L'utilisation de [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/) sur une longue période peut accumuler des images et volumes inutilisés (Dangling Images / Volumes), occupant parfois des dizaines de Go d'espace disque. Il est recommandé de nettoyer périodiquement le système avec la commande suivante :
+   L'utilisation de [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/) sur une longue période peut accumuler des images et volumes inutilisés (Dangling Images / Volumes), occupant parfois des dizaines de [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) d'espace disque. Il est recommandé de nettoyer périodiquement le système avec la commande suivante :
    ```bash
    docker system prune -a --volumes
    ```

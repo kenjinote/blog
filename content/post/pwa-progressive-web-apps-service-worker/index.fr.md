@@ -30,7 +30,7 @@ Lors du développement d'une application web, la question "Faut-il adopter une a
 
 ### 2.1. Forces et faiblesses des applications natives
 
-La plus grande force des applications natives (applications développées en Swift/Objective-C pour iOS, Kotlin/Java pour Android, etc.) est d'avoir un accès complet aux API du système d'exploitation.
+La plus grande force des applications natives (applications développées en Swift/Objective-C pour iOS, Kotlin/[Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) pour Android, etc.) est d'avoir un accès complet aux API du système d'exploitation.
 Cela permet d'implémenter des fonctionnalités avancées exploitant pleinement l'appareil photo, le GPS, le Bluetooth, le NFC, divers capteurs, etc. De plus, étant optimisées pour le système d'exploitation, les performances de rendu sont très élevées, ce qui donne un avantage considérable aux applications natives pour les jeux nécessitant de nombreuses animations complexes ou des graphismes 3D.
 
 D'un autre côté, les applications natives présentent des faiblesses (défis) majeures, telles que :

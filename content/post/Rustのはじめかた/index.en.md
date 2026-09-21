@@ -38,7 +38,7 @@ When you run `rustc main.rs` from the command prompt or terminal, it will be com
 [The Rust Programming Language Japanese Version](https://doc.rust-jp.rs/book-ja/)
 
 The explanations necessary for learning [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) are gathered in the link above (Japanese translation version).
-It is so comprehensive that there is no need to purchase a Rust textbook.
+It is so comprehensive that there is no need to purchase a [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) textbook.
 
 # If you want to try it on the Web
 

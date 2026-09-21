@@ -217,7 +217,7 @@ graph TD
 作为树形结构中搜索的基础，主要有深度优先搜索（DFS）和广度优先搜索（BFS）。
 
 ## 2. 深度优先搜索（DFS: Depth-First Search）
-深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（Stack）的数据结构。
+深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（[Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）的数据结构。
 
 ### 树形结构中DFS的Python实现示例
 
@@ -246,7 +246,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度优先搜索（DFS: Depth-First Search）
-深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（Stack）的数据结构。
+深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（[Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）的数据结构。
 
 ### 树形结构中DFS的Python实现示例
 
@@ -275,7 +275,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度优先搜索（DFS: Depth-First Search）
-深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（Stack）的数据结构。
+深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（[Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）的数据结构。
 
 ### 树形结构中DFS的Python实现示例
 
@@ -304,7 +304,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度优先搜索（DFS: Depth-First Search）
-深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（Stack）的数据结构。
+深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（[Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）的数据结构。
 
 ### 树形结构中DFS的Python实现示例
 
@@ -333,7 +333,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度优先搜索（DFS: Depth-First Search）
-深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（Stack）的数据结构。
+深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（[Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）的数据结构。
 
 ### 树形结构中DFS的Python实现示例
 
@@ -362,7 +362,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度优先搜索（DFS: Depth-First Search）
-深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（Stack）的数据结构。
+深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（[Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）的数据结构。
 
 ### 树形结构中DFS的Python实现示例
 
@@ -391,7 +391,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度优先搜索（DFS: Depth-First Search）
-深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（Stack）的数据结构。
+深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（[Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）的数据结构。
 
 ### 树形结构中DFS的Python实现示例
 
@@ -420,7 +420,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度优先搜索（DFS: Depth-First Search）
-深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（Stack）的数据结构。
+深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（[Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）的数据结构。
 
 ### 树形结构中DFS的Python实现示例
 
@@ -449,7 +449,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度优先搜索（DFS: Depth-First Search）
-深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（Stack）的数据结构。
+深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（[Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）的数据结构。
 
 ### 树形结构中DFS的Python实现示例
 
@@ -478,7 +478,7 @@ dfs_tree(root)
 ```
 
 ## 2. 深度优先搜索（DFS: Depth-First Search）
-深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（Stack）的数据结构。
+深度优先搜索是从某个节点出发，尽可能深地前进，遇到死胡同时则返回上一个节点继续搜索的算法。通过使用递归函数，可以非常简单地实现它。有时也会使用称为栈（[Stack](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）的数据结构。
 
 ### 树形结构中DFS的Python实现示例
 

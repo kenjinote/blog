@@ -19,7 +19,7 @@ tags:
 
 For a long time, web browsers were dominated by a single language: JavaScript. However, as web applications have become more complex and require performance comparable to native apps, the limitations of JavaScript alone have become apparent. This is where **WebAssembly (Wasm)** comes in.
 
-WebAssembly is a new binary format that can execute at near-native speeds in the browser. Compiled from programming languages such as C, C++, and Rust, it is currently bringing innovation not only to web development but also to a wide range of areas including server-side, edge computing, and even IoT devices.
+WebAssembly is a new binary format that can execute at near-native speeds in the browser. Compiled from programming languages such as C, C++, and [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), it is currently bringing innovation not only to web development but also to a wide range of areas including server-side, edge computing, and even IoT devices.
 
 In this article, we will thoroughly explain the present and future of WebAssembly, covering basic concepts, the technical mechanisms of how C and Rust work within the browser, integration with JavaScript, performance comparisons, and applications outside the browser (WASI).
 
@@ -53,7 +53,7 @@ So, how exactly does C and Rust code execute in the browser? Let's look at the p
 
 ## 2.1 Compilation [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)
 
-Languages like C and Rust are typically compiled into machine code dependent on the OS or CPU architecture. However, in the case of WebAssembly, you specify a Wasm architecture such as "wasm32" as the target.
+Languages like C and [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) are typically compiled into machine code dependent on the OS or CPU architecture. However, in the case of WebAssembly, you specify a Wasm architecture such as "wasm32" as the target.
 
 In many cases, the LLVM compiler infrastructure is used.
 
@@ -68,7 +68,7 @@ flowchart TD
 
 In this way, the code written by the developer goes through an intermediate representation (IR), is optimized, and finally becomes a compact binary file with a `.wasm` extension.
 
-## 2.2 Bytecode and Stack Machine
+## 2.2 Bytecode and [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) Machine
 
 WebAssembly adopts a **stack machine** architecture. It has no registers, and all calculations are performed on a stack (a LIFO data structure).
 
@@ -92,9 +92,9 @@ This simple structure allows for fast decoding and validation processes, enablin
 
 ## 2.3 Memory Model (Linear Memory)
 
-Memory manipulation using pointers is frequent in C and Rust. To achieve this, WebAssembly adopts the concept of **Linear Memory**.
+Memory manipulation using pointers is frequent in C and [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/). To achieve this, WebAssembly adopts the concept of **Linear Memory**.
 
-Linear memory is a contiguous byte array that can be accessed from a WebAssembly instance. From JavaScript, it appears as an `ArrayBuffer` or `SharedArrayBuffer`. Pointers within Wasm are simply indices (integer values) of this array.
+Linear memory is a contiguous byte array that can be accessed from a WebAssembly instance. From JavaScript, it appears as an `ArrayBuffer` or `SharedArrayBuffer`. [Pointer](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)s within Wasm are simply indices (integer values) of this array.
 
 ```mermaid
 flowchart LR
@@ -134,7 +134,7 @@ fetch('module.wasm')
 ## 3.2 Web API Access and Bindings
 
 Wasm itself does not have the ability to directly access the DOM or Web APIs. Access must be done through JavaScript.
-However, writing this manually is very tedious. Therefore, tools like **wasm-bindgen** are available in the Rust ecosystem.
+However, writing this manually is very tedious. Therefore, tools like **wasm-bindgen** are available in the [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) ecosystem.
 
 ```rust
 // Rust code (using wasm-bindgen)
@@ -151,7 +151,7 @@ pub fn greet(name: &str) {
 }
 ```
 
-When this code is compiled, `wasm-bindgen` automatically generates JavaScript glue code, hiding the details of memory passing for strings, etc. This provides a development experience as if you were directly calling browser APIs from Rust.
+When this code is compiled, `wasm-bindgen` automatically generates JavaScript glue code, hiding the details of memory passing for strings, etc. This provides a development experience as if you were directly calling browser APIs from [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/).
 
 ---
 
@@ -161,7 +161,7 @@ Why is WebAssembly faster than JavaScript?
 
 1.  **Parsing Speed**: Since Wasm is a binary format, it can be decoded much faster than parsing text-based JS source code to build an Abstract Syntax [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (AST).
 2.  **JIT Optimization**: Because JS is a dynamically typed language, the JIT compiler must perform type inference at runtime and undo optimizations (Deoptimization) if the inference is wrong. Wasm is statically typed, and powerful optimizations have already been performed at compile time by tools like LLVM, allowing the browser to focus directly on generating machine code.
-3.  **Avoidance of Garbage Collection (GC)**: Wasm written in C or Rust manages memory independently, so unexpected pauses (stop-the-world) caused by the JS engine's GC do not occur (*We will discuss Wasm GC specifications later).
+3.  **Avoidance of Garbage Collection (GC)**: Wasm written in C or [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) manages memory independently, so unexpected pauses (stop-the-world) caused by the JS engine's GC do not occur (*We will discuss Wasm GC specifications later).
 
 ## 4.1 Benchmark: Fibonacci Sequence
 
@@ -185,7 +185,7 @@ function fibJs(n) {
 }
 ```
 
-### Rust Implementation
+### [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) Implementation
 ```rust
 #[no_mangle]
 pub fn fib_wasm(n: u32) -> u32 {
@@ -194,7 +194,7 @@ pub fn fib_wasm(n: u32) -> u32 {
 }
 ```
 
-When calculated at $n=40$, JavaScript (V8 engine) generally executes quite quickly due to JIT optimization, but Wasm generated from Rust is often **about 1.5 to over 2 times** faster. Especially in areas like matrix operations and image processing, where contiguous memory access and SIMD instructions shine, the difference becomes even more pronounced.
+When calculated at $n=40$, JavaScript (V8 engine) generally executes quite quickly due to JIT optimization, but Wasm generated from [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) is often **about 1.5 to over 2 times** faster. Especially in areas like matrix operations and image processing, where contiguous memory access and SIMD instructions shine, the difference becomes even more pronounced.
 
 ---
 
@@ -229,7 +229,7 @@ SIMD instructions, which process multiple pieces of data simultaneously with a s
 By utilizing Web Workers and `SharedArrayBuffer`, multiple Wasm instances can share the same memory area and perform parallel processing with multithreading. This allows advanced physics simulations and game engines to run smoothly in the browser.
 
 ## 6.3 Garbage Collection (Wasm GC)
-While traditional Wasm was designed for languages like C and Rust that manually manage linear memory, the **Wasm GC** proposal is being standardized to efficiently compile languages that require garbage collection, such as Java, Kotlin, C#, and Dart, to Wasm. This is dramatically improving the performance of frameworks like Flutter Web.
+While traditional Wasm was designed for languages like C and [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) that manually manage linear memory, the **Wasm GC** proposal is being standardized to efficiently compile languages that require garbage collection, such as [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), Kotlin, C#, and Dart, to Wasm. This is dramatically improving the performance of frameworks like Flutter Web.
 
 ---
 
@@ -260,7 +260,7 @@ Currently, projects that orchestrate Wasm modules directly on [Kubernetes](https
 The biggest challenge with current WebAssembly is that it is difficult to link Wasm modules written in different languages together (because memory representations of strings and complex data types differ from language to language).
 
 The **WebAssembly Component Model** solves this.
-If the Component Model is realized, it will become possible to seamlessly call functions between a "Wasm module written in Rust" and a "Wasm module written in Python." This has the potential to become the foundation for a next-generation microservice architecture that is independent of platforms and languages.
+If the Component Model is realized, it will become possible to seamlessly call functions between a "Wasm module written in [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/)" and a "Wasm module written in Python." This has the potential to become the foundation for a next-generation microservice architecture that is independent of platforms and languages.
 
 ## 8.2 Wasm as a Plugin System
 Already, many software applications such as Figma, EnvoyProxy, and Microsoft Flight Simulator have adopted WebAssembly as their proprietary plugin system. This is because user-created third-party code can be safely and rapidly executed within the main application.

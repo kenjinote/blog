@@ -44,7 +44,7 @@ L'IA locale est un modèle exécuté directement sur la machine locale du dével
     *   **Fonctionnement hors ligne** : Vous pouvez utiliser toutes les fonctionnalités même dans un avion ou dans un environnement isolé du réseau externe pour des raisons de sécurité.
     *   **Personnalisation illimitée** : Vous pouvez librement effectuer un ajustement fin (fine-tuning) spécialisé pour des langages ou frameworks spécifiques, et intégrer votre propre ingénierie de prompt.
 *   **Inconvénients (Cons)** :
-    *   **Exigences matérielles** : Pour fonctionner confortablement, une machine avec suffisamment de VRAM (mémoire vidéo) est requise (ex : VRAM 16 Go à 24 Go ou plus, ou 32 Go de mémoire unifiée ou plus sur les puces de la série M).
+    *   **Exigences matérielles** : Pour fonctionner confortablement, une machine avec suffisamment de VRAM (mémoire vidéo) est requise (ex : VRAM 16 [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) à 24 Go ou plus, ou 32 Go de mémoire unifiée ou plus sur les puces de la série M).
     *   **Limites de performance du modèle** : En raison de contraintes matérielles, il y a une limite à la taille des modèles exécutables, qui sont souvent en deçà du raisonnement logique complexe d'un modèle de la classe GPT-4.
     *   **Restriction de la fenêtre de contexte** : En raison des contraintes de capacité mémoire, la longueur du contexte gérable est généralement limitée à quelques milliers ou dizaines de milliers de tokens.
 
@@ -108,7 +108,7 @@ graph TD
 ```
 
 ### 3.1 Critère d'évaluation 1 : Confidentialité (Privacy and Security)
-C'est le critère de jugement le plus important. Pour le code de test contenant des données clients dont l'envoi externe est interdit par la politique de l'entreprise, ou les fichiers implémentant des algorithmes propriétaires fondamentaux, l'IA locale est choisie sans aucun compromis. Une méthode très efficace consiste à construire une RAG (génération augmentée par la recherche) locale, à stocker les documents internes dans un magasin vectoriel et à laisser le LLM local s'y référer.
+C'est le critère de jugement le plus important. Pour le code de test contenant des données clients dont l'envoi externe est interdit par la politique de l'entreprise, ou les fichiers implémentant des algorithmes propriétaires fondamentaux, l'IA locale est choisie sans aucun compromis. Une méthode très efficace consiste à construire une RAG (génération augmentée par la recherche) locale, à stocker les documents internes dans un magasin vectoriel et à laisser le [LLM](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/) local s'y référer.
 
 ### 3.2 Critère d'évaluation 2 : Latence (Latency)
 Pour ne pas interrompre le fil de la pensée, la latence de l'autocomplétion est extrêmement importante. L'IA cloud subit inévitablement le temps d'aller-retour du réseau (RTT). L'IA locale ayant une latence réseau nulle, si un modèle léger est conservé en VRAM, il est possible d'obtenir une vitesse perçue supérieure à celle du cloud.

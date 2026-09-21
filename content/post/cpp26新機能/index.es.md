@@ -326,7 +326,7 @@ int main() {
 }
 ```
 
-## 6.2 Punteros de peligro (Hazard Pointers) y RCU (Read-Copy Update)
+## 6.2 Punteros de peligro (Hazard [Pointer](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)s) y RCU (Read-Copy Update)
 
 Como características estándar que apoyan la implementación de estructuras de datos libres de bloqueos (lock-free), se han estandarizado **Hazard Pointers** (`std::hazard_pointer`) y **RCU** (`std::rcu`). Como resultado, la barrera de entrada para implementar estructuras de datos concurrentes de alto rendimiento en C++ ha disminuido considerablemente.
 
@@ -359,7 +359,7 @@ C++26 es una versión verdaderamente histórica en la que se introducen de golpe
 *   Con **Reflection (Reflexión)**, la complejidad de la metaprogramación se elimina y se logra un acceso al AST de $O(1)$.
 *   Con **Contracts (Programación por contratos)**, se pueden establecer explícitamente precondiciones y postcondiciones de funciones para construir programas robustos.
 *   Con **Pattern Matching (Coincidencia de patrones)**, las ramificaciones complejas y transiciones de estado se pueden describir de forma intuitiva y segura.
-*   Con **Senders/Receivers** y **RCU / Hazard Pointers**, se estandariza el procesamiento concurrente para maximizar el rendimiento extremo.
+*   Con **Senders/Receivers** y **RCU / Hazard [Pointer](https://kenji.blog/es/p/c-language-pointers-memory-management-stack-heap/)s**, se estandariza el procesamiento concurrente para maximizar el rendimiento extremo.
 
 Al utilizar adecuadamente estas características, la mayor ventaja de C++, la "abstracción sin sobrecarga" (Zero-overhead Abstraction), se podrá lograr a un nivel superior y con un código sorprendentemente limpio.
 

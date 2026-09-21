@@ -161,7 +161,7 @@ Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
 
 在終端機操作中，最頻繁執行的動作之一就是 **「從歷史紀錄中找出過去執行過的複雜指令並重新執行」** 。標準的 `Ctrl+R`（反向搜尋）是完全比對，因此很難從「好像是 docker run 並且掛載了 volume...」這種模糊的記憶中把指令找出來。
 
-用 Go 語言編寫的超高速通用模糊搜尋工具 **`fzf`**，優雅地解決了這個問題。
+用 [Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 語言編寫的超高速通用模糊搜尋工具 **`fzf`**，優雅地解決了這個問題。
 
 ## 4.1. 透過 fzf 進行模糊搜尋的管線
 

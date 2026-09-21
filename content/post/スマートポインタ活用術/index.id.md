@@ -9,7 +9,7 @@ categories: ["programming", "cpp"]
 tags: ["C++", "Smart Pointers", "Memory Management", "Modern C++"]
 ---
 
-Manajemen memori dalam C++ telah menjadi salah satu tantangan terbesar bagi pengembang selama bertahun-tahun. Gaya manajemen memori tradisional yang bergantung pada `new` dan `delete` secara manual merupakan sarang bagi bug yang serius, seperti kebocoran memori (memory leak), pointer yang menggantung (dangling pointer), dan pembebasan ganda (double free). Namun, dengan munculnya Modern C++ (C++11 dan seterusnya), situasinya telah berubah secara drastis. Inti dari perubahan ini adalah "Smart Pointer".
+Manajemen memori dalam C++ telah menjadi salah satu tantangan terbesar bagi pengembang selama bertahun-tahun. Gaya manajemen memori tradisional yang bergantung pada `new` dan `delete` secara manual merupakan sarang bagi bug yang serius, seperti kebocoran memori (memory leak), pointer yang menggantung (dangling pointer), dan pembebasan ganda (double free). Namun, dengan munculnya Modern C++ (C++11 dan seterusnya), situasinya telah berubah secara drastis. Inti dari perubahan ini adalah "Smart [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)".
 
 Dalam artikel ini, kami akan menjelaskan dengan sangat mendetail mekanisme dan panduan pemanfaatan tingkat lanjut dari `std::unique_ptr`, `std::shared_ptr`, dan `std::weak_ptr` yang merupakan alat yang ampuh untuk memberantas kebocoran memori dan mewujudkan manajemen sumber daya yang aman serta efisien. Penjelasan ini akan mencakup implementasi internal (control block dan operasi atomik), dampaknya pada performa, serta perumusan penghitungan referensi (reference counting) menggunakan model matematika.
 
@@ -36,7 +36,7 @@ Pada kode seperti di atas, jika pengecualian (exception) terjadi atau pengembali
 
 ### 2.1 Prinsip Nol Overhead
 
-Daya tarik terbesar dari `std::unique_ptr` adalah performanya. Dalam keadaan default tanpa kustom deleter, ukuran `std::unique_ptr` sepenuhnya sama dengan pointer mentah (Raw Pointer). Tidak memiliki variabel anggota (member variables) yang tidak perlu, dan fungsi virtual juga tidak digunakan. Melalui pengoptimalan kompilator, akses melalui `std::unique_ptr` dikembangkan menjadi kode assembly yang setara dengan pointer mentah.
+Daya tarik terbesar dari `std::unique_ptr` adalah performanya. Dalam keadaan default tanpa kustom deleter, ukuran `std::unique_ptr` sepenuhnya sama dengan pointer mentah (Raw [Pointer](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)). Tidak memiliki variabel anggota (member variables) yang tidak perlu, dan fungsi virtual juga tidak digunakan. Melalui pengoptimalan kompilator, akses melalui `std::unique_ptr` dikembangkan menjadi kode assembly yang setara dengan pointer mentah.
 
 ### 2.2 Perpindahan Kepemilikan dan `std::move`
 

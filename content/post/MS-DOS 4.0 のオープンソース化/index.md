@@ -12,7 +12,7 @@ description: '約40年前にリリースされたOS「MS-DOS 4.0」のソース�
 ## MS-DOS 4.0 のオープンソース化
 
 マイクロソフト社は約 40 年前リリースされた MS-DOS 4.0 のソースコードを公開した。
-ほぼ完全に 8086 アセンブリ コードで書かれている。
+ほぼ完全に 8086 [アセンブリ](https://kenji.blog/p/programming-languages-history-paradigm-evolution/) コードで書かれている。
 
 ## github リポジトリ
 

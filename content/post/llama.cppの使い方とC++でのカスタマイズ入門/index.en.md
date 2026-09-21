@@ -10,15 +10,15 @@ tags: ["llama.cpp", "C++", "LLM", "AI", "Customization"]
 description: 'A complete guide covering everything from the basics of llama.cpp to advanced C++ customization, the mathematical background of Transformers, and the ggml architecture.'
 ---
 
-In recent years, the evolution of Large Language Models (LLMs) has been tremendous, and their scope of application is expanding daily. However, running models with billions or tens of billions of parameters locally typically requires a high-end GPU with an enormous amount of VRAM. Breaking through this "hardware barrier" and making practical LLM inference possible on everyday PCs, Macs, and even devices like the Raspberry Pi is **llama.cpp**.
+In recent years, the evolution of [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) has been tremendous, and their scope of application is expanding daily. However, running models with billions or tens of billions of parameters locally typically requires a high-end GPU with an enormous amount of VRAM. Breaking through this "hardware barrier" and making practical [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) inference possible on everyday PCs, Macs, and even devices like the Raspberry Pi is **llama.cpp**.
 
-This article goes beyond just explaining how to use the command-line tool. It provides an extremely detailed explanation for engineers, covering the architecture of its underlying technology `ggml`, the mathematical background of Transformers and quantization, and how to use the C++ API to integrate and customize LLMs within your own applications.
+This article goes beyond just explaining how to use the command-line tool. It provides an extremely detailed explanation for engineers, covering the architecture of its underlying technology `ggml`, the mathematical background of [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/)s and quantization, and how to use the C++ API to integrate and customize LLMs within your own applications.
 
 ---
 
 ## 1. Overview of llama.cpp and ggml
 
-`llama.cpp` is a lightweight LLM inference engine written in C/C++, developed by Georgi Gerganov. Originally created with the goal of running Meta's LLaMA model quickly on Apple Silicon (M1/M2 Macs), it now supports a variety of architectures and models.
+`llama.cpp` is a lightweight [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) inference engine written in C/C++, developed by Georgi Gerganov. Originally created with the goal of running Meta's LLaMA model quickly on Apple Silicon (M1/M2 Macs), it now supports a variety of architectures and models.
 
 Its biggest feature is that it is a **pure C/C++ implementation with no external dependencies**. Because it doesn't require a massive ecosystem like Python or PyTorch and can be compiled as a single executable, deployment is incredibly easy.
 
@@ -32,7 +32,7 @@ The heart of `llama.cpp` is the tensor math library **ggml**. ggml was designed 
 
 ---
 
-## 2. Mathematical Background: Transformers and Quantization
+## 2. Mathematical Background: [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/)s and Quantization
 
 To deeply understand llama.cpp, you need to know the mathematical formulas it calculates and how it approximates these calculations.
 
@@ -153,7 +153,7 @@ Upon a successful build, executable files like `llama-cli` and the `llama` libra
 ## 5. Introduction to C++ Customization: Using the llama.cpp API
 
 From here on, we will discuss the main topic: controlling llama.cpp from C++ code.
-To embed an LLM into your own application (e.g., a game engine, desktop app, or embedded system) rather than just using command-line tools, you need to hit the C++ API directly.
+To embed an [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) into your own application (e.g., a game engine, desktop app, or embedded system) rather than just using command-line tools, you need to hit the C++ API directly.
 
 llama.cpp primarily provides a C language interface through a header file called `llama.h`. We use this interface even when calling from C++.
 
@@ -223,7 +223,7 @@ int main(int argc, char ** argv) {
 
 ### 5.3 Tokenization of the Prompt
 
-An LLM does not understand text directly; it processes strings as sequences of integer IDs (tokens). Therefore, the input string must be converted into tokens.
+An [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) does not understand text directly; it processes strings as sequences of integer IDs (tokens). Therefore, the input string must be converted into tokens.
 
 ```cpp
     std::string prompt = "Q: What is the capital of Japan?\nA:";

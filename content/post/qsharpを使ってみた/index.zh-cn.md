@@ -14,7 +14,7 @@ description: '从基础到深入详细讲解量子编程语言 Q# 的特点、�
 
 近年来，量子计算领域在硬件和软件方面的技术革新令人瞩目。经典计算机（我们现在日常使用的PC、智能手机、超级计算机等）使用确定状态“0”或“1”的比特组合来处理信息，而量子计算机则直接利用量子力学特有的物理现象，如“叠加（Superposition）”和“量子纠缠（Entanglement）”，作为信息处理的基础。这使得对于某些类别的问题，量子计算机有可能实现经典计算机即使用尽宇宙寿命也无法达到的计算速度水平，即实现“量子霸权（Quantum Supremacy）”或“量子优势（Quantum Advantage）”。例如，在巨大数的素因数分解（Shor算法）、数据库的高速搜索（Grover算法）、量子化学模拟（VQE算法）、组合优化问题，甚至机器学习的特定过程（量子机器学习，Quantum Machine Learning）等方面，都有望大幅减少计算量。
 
-然而，要将量子计算机的这种惊人潜力转化为现实的应用，仅仅依靠物理硬件（如超导量子比特或离子阱等）的进步是不够的。准确设计量子电路，以及无错误且高效地编写量子算法的“量子编程语言”，及其背后强大的开发、执行和调试环境是必不可少的。经典的编程语言（如C++、Python、Java等）擅长抽象经典CPU架构的操作，但它们的设计并不适合自然地描述具有非确定性和复数振幅的量子状态操作。
+然而，要将量子计算机的这种惊人潜力转化为现实的应用，仅仅依靠物理硬件（如超导量子比特或离子阱等）的进步是不够的。准确设计量子电路，以及无错误且高效地编写量子算法的“量子编程语言”，及其背后强大的开发、执行和调试环境是必不可少的。经典的编程语言（如C++、Python、[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)等）擅长抽象经典CPU架构的操作，但它们的设计并不适合自然地描述具有非确定性和复数振幅的量子状态操作。
 
 在本文中，我们将聚焦于众多量子编程环境中，由微软强力推进并开源开发的量子开发工具包“Quantum Development Kit (QDK)”，以及作为其核心的专用编程语言“Q# (Q sharp)”。
 
@@ -236,7 +236,7 @@ namespace Quantum.BellState {
 ```
 
 ### 代码解析与运行结果确认
-- `namespace`: 类似于 Java 或 C#，用于在逻辑上组织程序并防止名称冲突的命名空间声明。
+- `namespace`: 类似于 [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 或 C#，用于在逻辑上组织程序并防止名称冲突的命名空间声明。
 - `open`: 导入所需的库（模块）。`Microsoft.Quantum.Intrinsic` 包含基本的量子门如 H, X, Y, Z, CNOT 等，而 `Microsoft.Quantum.Measurement` 包含如 `MResetZ` 这样方便的测量相关功能。
 - `use (q1, q2) = (Qubit(), Qubit());`: 动态分配了两个量子比特。
 - `H(q1); CNOT(q1, q2);`: 这两行正是生成量子纠缠的核心部分。可以非常简单且直观地编写。

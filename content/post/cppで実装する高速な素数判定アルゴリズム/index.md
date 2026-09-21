@@ -94,7 +94,7 @@ long long mod_pow(long long a, long long b, long long m) {
 # 3. ミラー・ラビン素数判定法 (Miller-Rabin Primality Test)
 
 [フェルマー](https://kenji.blog/p/fermat/)テストの弱点（カーマイケル数の存在）を見事に克服したのが、ミラー（Gary L. Miller）とラビン（Michael O. Rabin）によって考案された「ミラー・ラビン素数判定法」です。
-現在、実用的な高速素数判定アルゴリズムとして、さまざまなプログラミング言語の内部ライブラリや暗号システムの鍵生成で最も広く使われています。
+現在、実用的な高速素数判定アルゴリズムとして、さまざまな[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)の内部ライブラリや暗号システムの鍵生成で最も広く使われています。
 
 ## 数学的原理
 

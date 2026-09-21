@@ -142,7 +142,7 @@ def dijkstra(graph, start):
 
 ### 3.4 Über die Zeitkomplexität
 
-Wenn wir einen binären Heap (Binary Heap) als Prioritätswarteschlange verwenden, wird jeder Knoten einmal aus der Warteschlange entnommen und jede Kante wird einmal relaxiert.
+Wenn wir einen binären [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) (Binary Heap) als Prioritätswarteschlange verwenden, wird jeder Knoten einmal aus der Warteschlange entnommen und jede Kante wird einmal relaxiert.
 Daher beträgt die Zeitkomplexität $ O((|V| + |E|) \log |V|) $. Wenn ein Fibonacci-Heap verwendet wird, kann dies theoretisch auf $ O(|E| + |V| \log |V|) $ verbessert werden, aber in der Praxis wird oft ein binärer Heap verwendet.
 
 ---

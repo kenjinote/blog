@@ -161,7 +161,7 @@ Dadurch können Sie selbst in einer Windows-Umgebung intuitiv Befehle erstellen,
 
 Eine der häufigsten Aktionen bei der Terminal-Bedienung ist das **"Suchen und erneute Ausführen eines komplexen Befehls, der in der Vergangenheit aus dem Verlauf ausgeführt wurde"**. Da das standardmäßige `Ctrl+R` (Reverse Search) eine exakte Suche ist, ist es schwierig, Befehle aus einer vagen Erinnerung wie "Ich glaube, ich habe mit docker run ein Volume gemountet..." abzurufen.
 
-Eine elegante Lösung für dieses Problem ist das in Go geschriebene, ultraschnelle, universelle Fuzzy-Suchwerkzeug **`fzf`**.
+Eine elegante Lösung für dieses Problem ist das in [Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) geschriebene, ultraschnelle, universelle Fuzzy-Suchwerkzeug **`fzf`**.
 
 ## 4.1. Die [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) der Fuzzy-Suche mit fzf
 

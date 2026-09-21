@@ -209,7 +209,7 @@ int main() {
 
 ### [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 구현
 
-Rust의 경우 소유권과 대여 규칙에 의해 연결 리스트의 구현이 복잡해지기 쉽지만, 배열(또는 `Vec`) 상의 인덱스 참조 문제로 모델링하는 것이 경기 프로그래밍 등에서는 일반적입니다.
+[Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)의 경우 소유권과 대여 규칙에 의해 연결 리스트의 구현이 복잡해지기 쉽지만, 배열(또는 `Vec`) 상의 인덱스 참조 문제로 모델링하는 것이 경기 프로그래밍 등에서는 일반적입니다.
 여기서는 '다음으로의 포인터' 대신 '다음 인덱스'를 유지하는 배열을 사용한 구현 예시를 나타냅니다.
 
 ```rust

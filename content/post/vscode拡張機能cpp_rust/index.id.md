@@ -11,7 +11,7 @@ tags: ["VSCode", "C++", "Rust", "Editor"]
 
 # Pengantar
 
-Dalam pemrograman sistem modern, C++ dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) telah mengukuhkan posisi mereka sebagai bahasa yang paling penting. C++ sangat diperlukan dalam OS, mesin game, dan sistem perdagangan frekuensi tinggi (HFT) dengan rekam jejaknya yang panjang dan ekosistem yang luas. Dan Rust, yang menyebar dengan cepat berkat keamanan memori yang diberikan oleh model kepemilikan (Ownership) serta spesifikasi bahasanya yang modern, dan adopsinya ke dalam kernel Linux terus berlanjut. Saat mengembangkan dalam kedua bahasa ini, pilihan editor dan pengaturannya berhubungan langsung dengan produktivitas pengembangan.
+Dalam pemrograman sistem modern, C++ dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) telah mengukuhkan posisi mereka sebagai bahasa yang paling penting. C++ sangat diperlukan dalam OS, mesin game, dan sistem perdagangan frekuensi tinggi (HFT) dengan rekam jejaknya yang panjang dan ekosistem yang luas. Dan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), yang menyebar dengan cepat berkat keamanan memori yang diberikan oleh model kepemilikan (Ownership) serta spesifikasi bahasanya yang modern, dan adopsinya ke dalam kernel Linux terus berlanjut. Saat mengembangkan dalam kedua bahasa ini, pilihan editor dan pengaturannya berhubungan langsung dengan produktivitas pengembangan.
 
 Visual Studio Code (VSCode) sangat disukai oleh programmer sistem di seluruh dunia karena kemudahan ekstensinya dan sifatnya yang ringan. Namun, VSCode setelah diinstal hanyalah sekadar editor teks biasa. Untuk memaksimalkan kekuatan sejati dari C++ dan Rust, pengenalan ekstensi yang tepat dan pengaturan yang teliti sangat diperlukan, seperti server bahasa yang sangat memahami semantik bahasa tersebut, serta debugger yang melacak status hingga tingkat biner.
 
@@ -59,7 +59,7 @@ Karena `clangd` secara langsung menggabungkan teknologi frontend dari compiler C
 
 #### Alasan Memilih clangd daripada ms-vscode.cpptools
 - **Analisis dengan Akurasi Tinggi**: Karena menangani AST (Abstract Syntax [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) Clang secara langsung, ia mengevaluasi dengan akurat instansiasi template yang rumit yang menggunakan banyak SFINAE (Substitution Failure Is Not An Error) dan ekspansi makro yang bersarang.
-- **Peningkatan Kecepatan oleh Indeks Latar Belakang**: Dengan melakukan pra-komputasi (indeksasi) informasi simbol dari seluruh proyek di latar belakang, fitur seperti "Buka Definisi" (Go to Definition) atau "Temukan Semua Referensi" (Find All References) dapat diselesaikan dalam sekejap bahkan pada proyek besar.
+- **Peningkatan Kecepatan oleh Indeks Latar Belakang**: Dengan melakukan pra-komputasi (indeksasi) informasi simbol dari seluruh proyek di latar belakang, fitur seperti "Buka Definisi" ([Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) to Definition) atau "Temukan Semua Referensi" (Find All References) dapat diselesaikan dalam sekejap bahkan pada proyek besar.
 
 #### Pengaturan Sempurna compile_commands.json
 Agar `clangd` berfungsi dengan benar, diperlukan `compile_commands.json`, yang mendeskripsikan dengan flag compiler mana (seperti path include dan definisi makro) masing-masing file sumber dalam proyek tersebut dikompilasi. Jika Anda menggunakan CMake, file ini bisa dihasilkan secara otomatis dengan perintah berikut.
@@ -99,7 +99,7 @@ Dengan mengoptimalkan indeks latar belakang secara maksimal (optimasi struktur d
 
 ### ② rust-analyzer (Standar De Facto Pengembangan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/))
 
-Dalam pengembangan Rust, **`rust-analyzer`** adalah yang diadopsi sebagai server bahasa resmi saat ini. Dulu standar yang digunakan adalah RLS ([Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) Language Server) yang memiliki arsitektur memanggil langsung compiler (rustc), sehingga waktu responsnya terbatas. Namun, `rust-analyzer` dirancang ulang dari awal khusus untuk IDE, dan memiliki fitur kuat yang mampu mem-parsing kode secara bertahap (incremental) bahkan jika kode tersebut tidak lengkap.
+Dalam pengembangan [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), **`rust-analyzer`** adalah yang diadopsi sebagai server bahasa resmi saat ini. Dulu standar yang digunakan adalah RLS ([Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) Language Server) yang memiliki arsitektur memanggil langsung compiler (rustc), sehingga waktu responsnya terbatas. Namun, `rust-analyzer` dirancang ulang dari awal khusus untuk IDE, dan memiliki fitur kuat yang mampu mem-parsing kode secara bertahap (incremental) bahkan jika kode tersebut tidak lengkap.
 
 #### Fitur yang Menghasilkan Produktivitas Luar Biasa
 1. **Inlay Hints (Petunjuk Inlay)**: Di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) yang inferensi tipenya kuat, disarankan untuk tidak menulis tipe variabel secara eksplisit, tetapi ini dapat menurunkan tingkat keterbacaan (readability). Inlay Hints menampilkan tipe yang diinferensikan serta nama argumen panggilan fungsi dalam teks pudar yang ditumpangkan (overlay) pada editor.
@@ -125,7 +125,7 @@ Pengaturan untuk menjalankan `cargo clippy` secara otomatis di latar belakang sa
 
 ### ③ CodeLLDB (Debugger Lintas Platform yang Kuat)
 
-Baik ketika mengembangkan dengan C++ maupun Rust, debugger sangat diperlukan untuk memeriksa status memori pada saat runtime (waktu berjalan). Khususnya yang beroperasi secara stabil di seluruh platform Windows, Mac, dan Linux, serta memiliki afinitas yang sangat tinggi dengan Rust adalah **`CodeLLDB`**.
+Baik ketika mengembangkan dengan C++ maupun [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), debugger sangat diperlukan untuk memeriksa status memori pada saat runtime (waktu berjalan). Khususnya yang beroperasi secara stabil di seluruh platform Windows, Mac, dan Linux, serta memiliki afinitas yang sangat tinggi dengan Rust adalah **`CodeLLDB`**.
 
 Karena compiler [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) (rustc) menggunakan LLVM sebagai backend, format informasi debug yang dihasilkan (DWARF / PDB) sangat cocok dengan LLDB yang juga merupakan bagian dari proyek LLVM.
 
@@ -196,7 +196,7 @@ Dengan menetapkan `Ninja` sebagai alat build (build tool), kompilasi paralel aka
 
 ### ⑤ crates (Manajemen Dependensi Paket [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) secara Real-Time)
 
-Ini adalah ekstensi yang sangat berguna untuk mengelola file dependensi Rust, yaitu `Cargo.toml`.
+Ini adalah ekstensi yang sangat berguna untuk mengelola file dependensi [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), yaitu `Cargo.toml`.
 
 Di sebelah nomor versi dependensi crate (library), ekstensi ini akan memeriksa secara real-time apakah ada versi terbaru yang terdaftar di Crates.io (repositori resmi) dan menampilkannya sebaris (inline) di dalam editor.
 
@@ -336,7 +336,7 @@ sequenceDiagram
 
 Seperti yang ditunjukkan oleh diagram sekuens ini, banyak komunikasi yang terjadi antara VSCode dan CodeLLDB (melalui protokol yang disebut Debug Adapter Protocol - DAP) selama sesi debug. Struktur data yang rumit yang merupakan kumpulan pointer seperti `std::map` pada C++ atau `Vec<T>` pada [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), secara intuitif ditampilkan (sebagai tree yang diperluas sesuai isi array) pada GUI VSCode melalui fitur pemformat yang tertanam di CodeLLDB.
 
-Hal ini dapat dicapai berkat kompilator Rust yang menanamkan informasi tata letak tipe data (seperti ukuran dan padding) dengan terperinci ke dalam format DWARF, sementara CodeLLDB mengubah rentetan byte mentah (raw byte data) dari memori target secara spektakuler sesuai dengan layout tersebut menjadi struktur data yang dapat dibaca manusia.
+Hal ini dapat dicapai berkat kompilator [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/) yang menanamkan informasi tata letak tipe data (seperti ukuran dan padding) dengan terperinci ke dalam format DWARF, sementara CodeLLDB mengubah rentetan byte mentah (raw byte data) dari memori target secara spektakuler sesuai dengan layout tersebut menjadi struktur data yang dapat dibaca manusia.
 
 ---
 
@@ -375,7 +375,7 @@ C++ dan [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) adalah 
 Dengan menerapkan 10 ekstensi dan pengaturannya yang disebutkan dalam artikel ini, VSCode berkembang melampaui kerangka "editor teks biasa", bertransformasi menjadi "eksoskeleton yang kuat untuk para pengembang" lengkap dengan perpaduan pengetahuan mendalam dari kompilator dan penglihatan tembus pandang sang debugger.
 
 1. **clangd** (Server Bahasa C++)
-2. **rust-analyzer** (Server Bahasa Rust)
+2. **rust-analyzer** (Server Bahasa [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/))
 3. **CodeLLDB** (Debugger Terintegrasi)
 4. **CMake Tools** (Otomatisasi Build C++)
 5. **crates** (Manajemen Dependensi Rust)

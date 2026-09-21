@@ -117,7 +117,7 @@ Pencarian matematika Leibniz sangat erat kaitannya dengan sistem filsafatnya yan
 
 ### 3.1 Monadologi
 
-Dalam karya filosofis representatifnya, *Monadologi*, ia berargumen bahwa dunia terdiri dari "Monad", yang merupakan substansi spiritual tertinggi yang tidak memiliki perluasan spasial dan tidak dapat dibagi.
+Dalam karya filosofis representatifnya, *Monadologi*, ia berargumen bahwa dunia terdiri dari "[Monad](https://kenji.blog/id/p/functional-programming-concepts-pure-functions-monads/)", yang merupakan substansi spiritual tertinggi yang tidak memiliki perluasan spasial dan tidak dapat dibagi.
 
 Berbeda dengan atom material, setiap monad adalah unit spiritual dengan persepsinya sendiri. Seperti ungkapan terkenalnya "Monad tidak memiliki jendela", monad tidak berinteraksi langsung satu sama lain.
 

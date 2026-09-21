@@ -78,7 +78,7 @@ AWS Lambda는 당초 Linux 컨테이너(LXC/[Docker](https://kenji.blog/ko/p/doc
 
 ### 3.1. Firecracker란 무엇인가?
 
-Firecracker는 KVM(Kernel-based Virtual Machine)을 활용하여 경량 "마이크로VM(MicroVM)"을 밀리초 단위로 시작하기 위한 가상 머신 모니터(VMM)입니다. Rust 언어로 작성되었으며, 기존 가상 머신(QEMU 등)과 비교하여 불필요한 디바이스 모델을 극한까지 덜어냄으로써 매우 빠른 시작과 낮은 메모리 오버헤드를 실현했습니다.
+Firecracker는 KVM(Kernel-based Virtual Machine)을 활용하여 경량 "마이크로VM(MicroVM)"을 밀리초 단위로 시작하기 위한 가상 머신 모니터(VMM)입니다. [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 언어로 작성되었으며, 기존 가상 머신(QEMU 등)과 비교하여 불필요한 디바이스 모델을 극한까지 덜어냄으로써 매우 빠른 시작과 낮은 메모리 오버헤드를 실현했습니다.
 
 ```mermaid
 graph TD
@@ -143,7 +143,7 @@ stateDiagram-v2
 
 1. **코드 다운로드 및 압축 해제**: 배포 패키지가 S3에서 다운로드되어 환경에 압축 해제됩니다. 패키지 크기(종속성 라이브러리의 양)에 비례하여 시간이 걸립니다.
 2. **MicroVM 시작**: Firecracker가 시작됩니다. 이 부분은 AWS 측의 최적화를 통해 매우 빠릅니다(밀리초 단위).
-3. **런타임 초기화**: Node.js, Python, Java 등의 프로세스가 시작됩니다. 특히 Java나 C# 등 JIT(Just-In-Time) 컴파일을 수행하는 언어는 여기서 많은 시간을 소비합니다.
+3. **런타임 초기화**: Node.js, Python, [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 등의 프로세스가 시작됩니다. 특히 Java나 C# 등 JIT(Just-In-Time) 컴파일을 수행하는 언어는 여기서 많은 시간을 소비합니다.
 4. **함수 초기화 (Init Phase)**: 코드의 전역 스코프(핸들러 함수 외부)가 평가됩니다. 여기서 DB에 대한 연결 풀을 생성하거나 무거운 SDK를 초기화하면 초기화 시간이 길어집니다.
 
 ### 4.2. 확률론으로 보는 콜드 스타트
@@ -167,7 +167,7 @@ $ P_{warm} \approx 1 - e^{-\lambda \cdot T_w} $
 
 콜드 스타트의 속도는 언어에 따라 극적으로 다릅니다.
 
-- **가장 빠른 그룹**: Go, Rust, C++ 등의 AOT(Ahead-Of-Time) 컴파일 언어, 그리고 경량 스크립트 언어(Python, Node.js). 이들은 콜드 스타트가 수백 밀리초 이내로 유지되기 쉽습니다.
+- **가장 빠른 그룹**: [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/), C++ 등의 AOT(Ahead-Of-Time) 컴파일 언어, 그리고 경량 스크립트 언어(Python, Node.js). 이들은 콜드 스타트가 수백 밀리초 이내로 유지되기 쉽습니다.
 - **느린 그룹**: Java, C# (.NET). JVM이나 CLR의 시작, JIT 컴파일의 오버헤드로 인해 수 초에서 십여 초의 콜드 스타트가 발생하는 경우가 있습니다.
 
 **LLRT (Low Latency Runtime)** 와 같은, AWS가 제공하는 실험적인 경량 JavaScript 런타임을 사용하여 Node.js의 시작 속도를 더욱 단축시키는 접근 방식도 주목받고 있습니다.
@@ -210,7 +210,7 @@ const dynamo = DynamoDBDocumentClient.from(client);
 
 ## 6. 게임 체인저: AWS Lambda SnapStart
 
-Java와 같이 시작이 느린 언어의 구세주로 등장한 것이 **AWS Lambda SnapStart** 입니다. 이는 가상 머신의 상태를 스냅샷화하고 콜드 스타트 시에 이를 복원하는 획기적인 기술입니다.
+[Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)와 같이 시작이 느린 언어의 구세주로 등장한 것이 **AWS Lambda SnapStart** 입니다. 이는 가상 머신의 상태를 스냅샷화하고 콜드 스타트 시에 이를 복원하는 획기적인 기술입니다.
 
 배경 기술로 **CRaU** (Checkpoint/Restore in Userspace) 및 Firecracker의 MicroVM 스냅샷 기능이 사용되고 있습니다.
 
@@ -253,7 +253,7 @@ sequenceDiagram
 
 ### 6.2. SnapStart의 장점과 주의점
 
-SnapStart를 활성화하면 Java 함수의 콜드 스타트 시간이 **최대 10배 이상** 빨라집니다. 런타임 시작이나 JIT 컴파일, Spring Boot 등 무거운 프레임워크의 초기화가 '배포 시'에 앞당겨지기 때문입니다.
+SnapStart를 활성화하면 [Java](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 함수의 콜드 스타트 시간이 **최대 10배 이상** 빨라집니다. 런타임 시작이나 JIT 컴파일, Spring Boot 등 무거운 프레임워크의 초기화가 '배포 시'에 앞당겨지기 때문입니다.
 
 단, 몇 가지 주의점이 있습니다.
 

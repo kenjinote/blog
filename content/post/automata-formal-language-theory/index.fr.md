@@ -168,7 +168,7 @@ Pour exprimer la correspondance des parenthèses, qui ne peut pas être exprimé
 
 ### Automates à pile ( PDA )
 
-Le modèle de calcul qui reconnaît les langages hors-contexte est l'**automate à pile** ( Pushdown Automaton, PDA ). Un PDA est un automate fini auquel on ajoute une **pile** ( Stack, mémoire dernier entré, premier sorti ). L'utilisation d'une pile permet des opérations telles que « mémoriser le nombre de parenthèses ouvrantes et les consommer à chaque parenthèse fermante ».
+Le modèle de calcul qui reconnaît les langages hors-contexte est l'**automate à pile** ( Pushdown Automaton, PDA ). Un PDA est un automate fini auquel on ajoute une **pile** ( [Stack](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/), mémoire dernier entré, premier sorti ). L'utilisation d'une pile permet des opérations telles que « mémoriser le nombre de parenthèses ouvrantes et les consommer à chaque parenthèse fermante ».
 
 #### Exemple concret : Un PDA acceptant $ a^n b^n $
 
@@ -286,7 +286,7 @@ Les théories que nous avons vues jusqu'à présent ne se limitent en aucun cas 
 
 ### Le piège des moteurs Regex ( Catastrophic Backtracking )
 
-Les moteurs d'expressions régulières intégrés dans de nombreux langages de programmation ( Java, Python, Ruby, JavaScript, etc. ) ne sont pas de purs DFA théoriques, mais sont implémentés sur une base de NFA avec retour sur trace (ou moteur de backtracking).
+Les moteurs d'expressions régulières intégrés dans de nombreux langages de programmation ( [Java](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), Python, Ruby, JavaScript, etc. ) ne sont pas de purs DFA théoriques, mais sont implémentés sur une base de NFA avec retour sur trace (ou moteur de backtracking).
 
 Pour cette raison, si une chaîne astucieuse est donnée à un modèle spécifique d'expression régulière (par exemple : `(a+)+$`), la complexité de calcul peut exploser exponentiellement et provoquer une vulnérabilité appelée **ReDoS** ( Regular Expression Denial of [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/) ) qui gèle le système. Si vous connaissez la théorie, vous pouvez comprendre logiquement pourquoi le retour sur trace se produit et comment réécrire le modèle pour l'adapter à un traitement équivalent à un DFA sûr.
 

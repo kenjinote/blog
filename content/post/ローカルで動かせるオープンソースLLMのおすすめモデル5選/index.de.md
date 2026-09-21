@@ -12,7 +12,7 @@ description: 'Lokale LLMs, die Privatsphäre schützen und kostenlos nutzbar sin
 
 # Einführung
 
-In den letzten Jahren war die technologische Entwicklung von Large Language Models (LLMs) bemerkenswert, und Cloud-basierte KI-Dienste wie ChatGPT und Claude sind weit verbreitet. Gleichzeitig steigt jedoch rapide der Bedarf, "vertrauliche Unternehmensdaten nicht an externe Server senden zu wollen", "API-Nutzungskosten senken zu wollen" und "ein vollständig [offline](https://kenji.blog/de/p/pwa-progressive-web-apps-service-worker/) funktionierendes KI-System aufbauen zu wollen".
+In den letzten Jahren war die technologische Entwicklung von [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) bemerkenswert, und Cloud-basierte KI-Dienste wie ChatGPT und Claude sind weit verbreitet. Gleichzeitig steigt jedoch rapide der Bedarf, "vertrauliche Unternehmensdaten nicht an externe Server senden zu wollen", "API-Nutzungskosten senken zu wollen" und "ein vollständig [offline](https://kenji.blog/de/p/pwa-progressive-web-apps-service-worker/) funktionierendes KI-System aufbauen zu wollen".
 
 Diese Anforderungen werden von "lokalen LLMs (Open-Source-LLMs)" erfüllt, die direkt auf den eigenen PC oder Unternehmensserver heruntergeladen und ausgeführt werden können. Bis etwa 2023 war es schwierig, lokal eine praktikable Genauigkeit zu erreichen, aber durch die Weiterentwicklung der Modellarchitekturen und Fortschritte in der Quantisierungstechnologie (Quantization) ist es heute möglich, selbst auf Consumer-GPUs (wie NVIDIA RTX 3090 / 4090 oder Apples Apple Silicon im Mac) sehr leistungsstarke LLMs flüssig auszuführen.
 
@@ -25,7 +25,7 @@ In diesem Artikel wählen wir aus der Vielzahl von Open-Source-LLMs die "Top 5 d
 Die Einführung von lokalen LLMs bietet viele einzigartige Vorteile, die Cloud-basierte APIs nicht haben.
 
 ### 1. Gewährleistung vollständiger Privatsphäre und Sicherheit
-Bei der Nutzung einer Cloud-API werden die eingegebenen Prompts und Daten an die Server externer Unternehmen gesendet. Dies stellt ein erhebliches Risiko dar, wenn persönliche Informationen oder vertrauliche Unternehmensdaten verarbeitet werden. Bei einem lokalen LLM werden die Daten vollständig auf dem Endgerät verarbeitet, wodurch das Risiko von Datenlecks nach außen auf null reduziert werden kann.
+Bei der Nutzung einer Cloud-API werden die eingegebenen Prompts und Daten an die Server externer Unternehmen gesendet. Dies stellt ein erhebliches Risiko dar, wenn persönliche Informationen oder vertrauliche Unternehmensdaten verarbeitet werden. Bei einem lokalen [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) werden die Daten vollständig auf dem Endgerät verarbeitet, wodurch das Risiko von Datenlecks nach außen auf null reduziert werden kann.
 
 ### 2. Erhebliche Kostensenkung
 Kommerzielle APIs (wie die OpenAI API) basieren auf einem nutzungsabhängigen Preismodell entsprechend der Anzahl der Eingabe- und Ausgabe-Token. Die Verarbeitung großer Dokumentenmengen oder der ständige Betrieb von Chatbots kann monatliche Kosten von Tausenden bis Zehntausenden von Euro verursachen. Mit einem lokalen LLM hingegen fallen nur die anfänglichen Hardware-Investitionen und die Stromkosten an, und es kann unbegrenzt oft und ohne Token-Limit genutzt werden.
@@ -83,7 +83,7 @@ Die von Meta entwickelte "Llama 3"-Serie ist der De-facto-Standard unter den Ope
 
 ### Entwicklung und Merkmale der Architektur
 
-Llama 3 übernimmt die Standard-Transformer-Architektur, beinhaltet jedoch zahlreiche technische Verbesserungen gegenüber der Vorgängergeneration (Llama 2). Besonders bemerkenswert sind folgende Punkte:
+Llama 3 übernimmt die Standard-[Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Architektur, beinhaltet jedoch zahlreiche technische Verbesserungen gegenüber der Vorgängergeneration (Llama 2). Besonders bemerkenswert sind folgende Punkte:
 
 - **Standardmäßige Einführung von GQA (Grouped Query Attention)**: GQA, das bei Llama 2 nur in großen Modellen verwendet wurde, wird bei Llama 3 auch in kleineren Modellen wie 8B eingesetzt. Dies reduziert den Speicherverbrauch des KV-Caches drastisch und ermöglicht eine schnelle Inferenz auch bei langen Kontexten.
 - **Erweiterung der Vokabulargröße**: Die Vokabulargröße des Tokenizers (Tiktoken-basiert) wurde auf 128.000 Token erweitert, was die Kompressionseffizienz für mehrere Sprachen und Programmcode dramatisch verbessert. Die Effizienz der japanischen Verarbeitung ist im Vergleich zu Llama 2 ebenfalls um ein Vielfaches besser geworden.
@@ -117,7 +117,7 @@ Die Modelle des französischen KI-Startups "Mistral AI" schockierten die Branche
 
 ### Mechanismus von MoE (Mixture of Experts)
 
-"Mixtral 8x7B" war das erste Open-Source-LLM, das die **MoE (Mixture of Experts)**-Architektur in großem Maßstab einsetzte und damit großen Erfolg hatte.
+"Mixtral 8x7B" war das erste Open-Source-[LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/), das die **MoE (Mixture of Experts)**-Architektur in großem Maßstab einsetzte und damit großen Erfolg hatte.
 MoE ist ein Mechanismus, bei dem das gesamte Modell (etwa 47 Milliarden Parameter) in 8 "Experten (Expert)-Netzwerke" unterteilt ist, und für jedes eingegebene Token dynamisch nur die zwei optimalen Experten ausgewählt (geroutet) werden.
 
 ```mermaid
@@ -189,7 +189,7 @@ Die Phi-Serie ist aus dem von Microsoft propagierten Paradigma "Textbook is all 
 
 ### Revolution der SLMs (Small Language Models)
 
-Während die jüngste LLM-Entwicklung von der brachialen Methode geprägt war, "einfach die Anzahl der Parameter und der Daten zu erhöhen", hat Microsoft bewiesen, dass "wenn man die Qualität der dem Modell zur Verfügung gestellten Daten (hochwertige Lehrbuchdaten und synthetische Daten) aufs Äußerste erhöht, ein Modell selbst mit einer kleinen Anzahl von Parametern eine Intelligenz auf dem Niveau von GPT-3.5 besitzen kann".
+Während die jüngste [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Entwicklung von der brachialen Methode geprägt war, "einfach die Anzahl der Parameter und der Daten zu erhöhen", hat Microsoft bewiesen, dass "wenn man die Qualität der dem Modell zur Verfügung gestellten Daten (hochwertige Lehrbuchdaten und synthetische Daten) aufs Äußerste erhöht, ein Modell selbst mit einer kleinen Anzahl von Parametern eine Intelligenz auf dem Niveau von GPT-3.5 besitzen kann".
 Phi-3 wird nicht als LLM (Large Language Model), sondern als **SLM (Small Language Model)** bezeichnet.
 
 ```mermaid
@@ -230,7 +230,7 @@ xychart-beta
 
 ## Theoretische Berechnung der Inferenzgeschwindigkeit (Tokens/sec)
 
-Die Inferenzgeschwindigkeit eines lokalen LLM hängt stark von der "Speicherbandbreite (Memory Bandwidth)" der GPU ab. In der Generierungsphase (Dekodierung) müssen alle Gewichte des Modells für jedes generierte Token aus dem Speicher gelesen werden. Es handelt sich also um einen speicherbegrenzten (Memory-bound) und nicht um einen rechenbegrenzten (Compute-bound) Prozess.
+Die Inferenzgeschwindigkeit eines lokalen [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) hängt stark von der "Speicherbandbreite (Memory Bandwidth)" der GPU ab. In der Generierungsphase (Dekodierung) müssen alle Gewichte des Modells für jedes generierte Token aus dem Speicher gelesen werden. Es handelt sich also um einen speicherbegrenzten (Memory-bound) und nicht um einen rechenbegrenzten (Compute-bound) Prozess.
 
 Die theoretisch maximale Inferenzgeschwindigkeit $T$ (Tokens/sec) wird durch folgende Formel berechnet:
 
@@ -265,7 +265,7 @@ Darüber hinaus fungiert Ollama im Hintergrund als REST-API-Server, was die Inte
 Eine empfehlenswerte Anwendung für diejenigen, die eine intuitive GUI-basierte Bedienung bevorzugen. Sie können eine riesige Liste von GGUF-Modellen von Hugging Face direkt in der App suchen und herunterladen und Unterhaltungen in einem ChatGPT-ähnlichen Chat-Fenster genießen. Die Funktion, die visuell anzeigt, welche Modelle in den RAM/VRAM Ihres PCs passen, ist sehr nützlich.
 
 ### 3. llama.cpp
-Dies ist der Auslöser des lokalen LLM-Booms und die in C/C++ geschriebene Bibliothek, die die Grundlage für alles bildet. Sie richtet sich an Ingenieure, die die Leistung bis zum Äußersten optimieren wollen, oder an Hacker, die sie in ihre eigenen Skripte einbauen möchten. Sie reizt das Potenzial aller Hardware bis zum Limit aus, von Apples Metal über NVIDIAs CUDA und AMDs ROCm bis hin zum Intel AVX-Befehlssatz.
+Dies ist der Auslöser des lokalen [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Booms und die in C/C++ geschriebene Bibliothek, die die Grundlage für alles bildet. Sie richtet sich an Ingenieure, die die Leistung bis zum Äußersten optimieren wollen, oder an Hacker, die sie in ihre eigenen Skripte einbauen möchten. Sie reizt das Potenzial aller Hardware bis zum Limit aus, von Apples Metal über NVIDIAs CUDA und AMDs ROCm bis hin zum Intel AVX-Befehlssatz.
 
 ---
 

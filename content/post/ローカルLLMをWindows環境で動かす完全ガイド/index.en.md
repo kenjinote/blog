@@ -11,9 +11,9 @@ tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 
 # 1. Introduction: Why Local LLMs on Windows Now?
 
-As of 2026, the evolution of generative AI and Large Language Models (LLMs) shows a major paradigm shift from gigantic cloud-based API services to "local LLMs" running on personal PCs and on-premise environments. While cloud AIs like OpenAI's GPT-5 and Anthropic's Claude 3.5 are incredibly powerful, not all companies and individuals can send all their data to the cloud. From the perspectives of privacy, security, latency, and long-term sustainable costs, the demand for local LLMs is exploding like never before.
+As of 2026, the evolution of generative AI and [Large Language Models](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) shows a major paradigm shift from gigantic cloud-based API services to "local LLMs" running on personal PCs and on-premise environments. While cloud AIs like OpenAI's GPT-5 and Anthropic's Claude 3.5 are incredibly powerful, not all companies and individuals can send all their data to the cloud. From the perspectives of privacy, security, latency, and long-term sustainable costs, the demand for local LLMs is exploding like never before.
 
-The evolution of the local LLM ecosystem, especially in the Windows environment, is remarkable. Until a few years ago, "Linux for AI development and execution" was common sense, but as of 2026, Windows has transformed into an extremely powerful and accessible AI platform.
+The evolution of the local [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) ecosystem, especially in the Windows environment, is remarkable. Until a few years ago, "Linux for AI development and execution" was common sense, but as of 2026, Windows has transformed into an extremely powerful and accessible AI platform.
 
 In this article, based on the latest technology trends of 2026, we provide a complete guide to building, operating, and optimizing local LLMs in a Windows environment. From easy setup using Ollama for beginners to extreme optimization using llama.cpp for advanced users, and further deep dives into the mathematical approach of VRAM calculation, deep understanding of the architecture, and local fine-tuning, we will explain everything thoroughly with an overwhelming volume.
 
@@ -63,7 +63,7 @@ After installation, run `nvidia-smi` inside the WSL2 terminal, and if the GPU is
 
 ---
 
-# 3. Local LLM Architecture and Inference Mechanism
+# 3. Local [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) Architecture and Inference Mechanism
 
 Understanding how models generate text in a local environment and their internal structure is very useful for troubleshooting and optimization.
 
@@ -91,7 +91,7 @@ graph TD
 
 ## 3.1 Two Phases: Prefill and Decode
 
-LLM text generation is divided into two phases with different computational characteristics.
+[LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) text generation is divided into two phases with different computational characteristics.
 
 1. **Prefill Phase (Prompt Processing)**: The phase that processes and understands the entire input prompt at once. Since parallel computing is possible, the computational power of the GPU (FLOPS) directly links to speed. If the prompt is long, this phase can take several seconds.
 2. **Decode Phase (Token Generation)**: The phase that predicts one token at a time and feeds it to the next input (autoregressive). Since parallel computing is restricted in this phase, GPU VRAM bandwidth (Memory Bandwidth) becomes the definitive bottleneck.
@@ -273,7 +273,7 @@ graph LR
     LocalLLM --> Answer["Final Answer"]
 ```
 
-Using the AnythingLLM desktop version (Windows), just specify Ollama (LLM and Embedding) from the settings screen and set it up to use a local VectorDB (LanceDB). This architecture can be completed in minutes. A private AI is born that does not send any data externally.
+Using the AnythingLLM desktop version (Windows), just specify Ollama ([LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) and Embedding) from the settings screen and set it up to use a local VectorDB (LanceDB). This architecture can be completed in minutes. A private AI is born that does not send any data externally.
 
 ---
 
@@ -314,7 +314,7 @@ Common problems faced and their solutions.
 
 # 10. Conclusion and Future Prospects
 
-In 2026, building a local LLM in a Windows environment is no longer the privilege of a limited number of engineers. With the de facto standardization of the GGUF format, the emergence of refined ecosystems like Ollama and LM Studio, and hardware optimizations led by FlashAttention, anyone can easily obtain an enterprise-grade AI environment.
+In 2026, building a local [LLM](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/) in a Windows environment is no longer the privilege of a limited number of engineers. With the de facto standardization of the GGUF format, the emergence of refined ecosystems like Ollama and LM Studio, and hardware optimizations led by FlashAttention, anyone can easily obtain an enterprise-grade AI environment.
 
 Please make use of the following points explained in this article:
 

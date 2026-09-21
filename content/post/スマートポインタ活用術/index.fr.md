@@ -9,7 +9,7 @@ categories: ["programming", "cpp"]
 tags: ["C++", "Smart Pointers", "Memory Management", "Modern C++"]
 ---
 
-La gestion de la mémoire en C++ a longtemps été l'un des plus grands défis pour les développeurs. Le style traditionnel de gestion de la mémoire, qui repose sur l'utilisation manuelle de `new` et `delete`, a été un terrain propice pour des bugs graves tels que les fuites de mémoire, les pointeurs sauvages (dangling pointers) et les doubles libérations. Cependant, avec l'avènement du C++ moderne (depuis C++11), la situation a radicalement changé. Au cœur de cette évolution se trouvent les "pointeurs intelligents" (Smart Pointers).
+La gestion de la mémoire en C++ a longtemps été l'un des plus grands défis pour les développeurs. Le style traditionnel de gestion de la mémoire, qui repose sur l'utilisation manuelle de `new` et `delete`, a été un terrain propice pour des bugs graves tels que les fuites de mémoire, les pointeurs sauvages (dangling pointers) et les doubles libérations. Cependant, avec l'avènement du C++ moderne (depuis C++11), la situation a radicalement changé. Au cœur de cette évolution se trouvent les "pointeurs intelligents" (Smart [Pointer](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)s).
 
 Dans cet article, nous allons expliquer de manière très détaillée le fonctionnement et l'utilisation avancée de `std::unique_ptr`, `std::shared_ptr` et `std::weak_ptr`. Ce sont des outils puissants pour éradiquer les fuites de mémoire et réaliser une gestion sûre et efficace des ressources. Nous aborderons leur implémentation interne (blocs de contrôle et opérations atomiques), leur impact sur les performances, ainsi que la formulation mathématique du comptage de références.
 
@@ -36,7 +36,7 @@ Dans un code comme celui ci-dessus, si une exception se produit ou si un retour 
 
 ### 2.1 Le principe du zéro surcoût
 
-Le plus grand atout de `std::unique_ptr` est sa performance. Dans son état par défaut (sans destructeur personnalisé), la taille de `std::unique_ptr` est exactement la même que celle d'un pointeur brut (Raw Pointer). Il ne possède aucune variable membre inutile et n'utilise pas de fonctions virtuelles. Grâce à l'optimisation du compilateur, l'accès via `std::unique_ptr` se déploie en code assembleur équivalent à celui d'un pointeur brut.
+Le plus grand atout de `std::unique_ptr` est sa performance. Dans son état par défaut (sans destructeur personnalisé), la taille de `std::unique_ptr` est exactement la même que celle d'un pointeur brut (Raw [Pointer](https://kenji.blog/fr/p/c-language-pointers-memory-management-stack-heap/)). Il ne possède aucune variable membre inutile et n'utilise pas de fonctions virtuelles. Grâce à l'optimisation du compilateur, l'accès via `std::unique_ptr` se déploie en code assembleur équivalent à celui d'un pointeur brut.
 
 ### 2.2 Transfert de propriété et `std::move`
 

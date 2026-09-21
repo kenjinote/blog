@@ -9,11 +9,11 @@ categories: ["programming", "cpp", "windows"]
 tags: ["C++", "Win32", "Windows API", "RAII"]
 ---
 
-## 1. はじめに：C言語ベースのWin32 APIと現代のC++の乖離
+## 1. はじめに：[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ベースのWin32 APIと現代のC++の乖離
 
 Windows OSの基盤となる **Windows API (通称 Win32 API)** は、1990年代の Windows NT や Windows 95 の時代から脈々と受け継がれてきた巨大なC言語のインターフェースです。現在でも、Windows向けのネイティブアプリケーションを開発する際、OSのコア機能（プロセス管理、ファイルI/O、スレッド同期、ウィンドウ制御など）にアクセスするためには、最終的にこのWin32 APIを呼び出す必要があります。
 
-しかし、Win32 APIは純粋なC言語向けに設計されており、 **現代のC++（Modern C++）** が持つ高度な言語機能（例外処理、RAIIによる自動リソース管理、ムーブセマンティクス、型安全な列挙型、スマートポインタなど）を前提としていません。その結果、生のWin32 APIをそのままC++のコードに混ぜ込むと、以下のような問題が発生します。
+しかし、Win32 APIは純粋なC言語向けに設計されており、 **現代のC++（Modern C++）** が持つ高度な言語機能（例外処理、RAIIによる自動リソース管理、ムーブセマンティクス、型安全な列挙型、スマート[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)など）を前提としていません。その結果、生のWin32 APIをそのままC++のコードに混ぜ込むと、以下のような問題が発生します。
 
 *   **手動のリソース管理:** `CreateFile` や `CreateEvent` で取得した `HANDLE` を、必ず `CloseHandle` で解放しなければならない。
 *   **例外安全性の欠如:** C++の例外がスローされた場合、適切に `CloseHandle` を呼び出す処理を記述しておかないと、容易にリソースリークが発生する。
@@ -109,7 +109,7 @@ RAIIは、C++の生みの親であるビャーネ・ストロヴストルップ�
 1.  リソースの確保（Acquisition）を、オブジェクトの **コンストラクタ (Initialization)** で行う。
 2.  リソースの解放を、オブジェクトの **デストラクタ** で行う。
 
-C++の言語仕様により、スコープを抜けるとき（正常な `return` であろうと、例外によるスタックアンワインド中であろうと）、スタック上に確保されたオブジェクトのデストラクタは **確実かつ自動的** に呼び出されます。
+C++の言語仕様により、スコープを抜けるとき（正常な `return` であろうと、例外による[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)アンワインド中であろうと）、スタック上に確保されたオブジェクトのデストラクタは **確実かつ自動的** に呼び出されます。
 
 これにより、先ほどの数式における人間のミス確率 $p$ を数学的に **$0$** にすることができます。
 
@@ -210,11 +210,11 @@ Win32 APIを扱う上で、C++プログラマを最も悩ませる仕様の1つ�
 *   `CreateEvent` や `CreateThread` など：失敗すると `NULL` (`nullptr`) を返す。
 *   `CreateFile` など：失敗すると `INVALID_HANDLE_VALUE` (値としては `(HANDLE)-1`) を返す。
 
-標準の `std::unique_ptr` は、内部ポインタが `nullptr` の場合を「空の状態（リソースを所有していない状態）」として特別扱いします。つまり、`if (ptr)` のような真偽値判定は `nullptr` に対してのみ `false` を返します。
+標準の `std::unique_ptr` は、内部[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)が `nullptr` の場合を「空の状態（リソースを所有していない状態）」として特別扱いします。つまり、`if (ptr)` のような真偽値判定は `nullptr` に対してのみ `false` を返します。
 
 しかし、`CreateFile` が失敗して `INVALID_HANDLE_VALUE` を返した場合、`std::unique_ptr` はそれを「有効な非NULLポインタ」と誤認してしまいます。
 
-この問題をエレガントに解決するには、C++の `std::unique_ptr` の高度な仕様を利用し、 **カスタムポインタ型** を定義します。
+この問題をエレガントに解決するには、C++の `std::unique_ptr` の高度な仕様を利用し、 **カスタム[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)型** を定義します。
 
 ```cpp
 #include <windows.h>
@@ -468,7 +468,7 @@ WILの真髄は `wil::unique_any` という強大なテンプレートにあり�
 
 ## 12. Microsoftの回答 (2)：C++/WinRT によるCOMの抽象化
 
-Win32 APIの多く（特にシェルの拡張やDirectXなど）は、C言語ベースのCOM (Component Object Model) インターフェースを通じて提供されます。
+Win32 APIの多く（特にシェルの拡張やDirectXなど）は、[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ベースのCOM (Component Object Model) インターフェースを通じて提供されます。
 従来の `CComPtr` (ATL) や `ComPtr` (WRL) をさらに進化させ、現在 Microsoft が公式に推奨しているのが **C++/WinRT** です。
 
 C++/WinRT は、Windows ランタイム (WinRT) だけでなく、従来のCOMオブジェクトも極めてスマートに扱うことができます。
@@ -517,7 +517,7 @@ graph TD
 
 ## 14. ゼロコスト抽象化のパフォーマンス分析
 
-「RAIIラッパーやスマートポインタを使うと、生のC言語APIより動作が遅くなるのではないか？」という疑問を持つ方もいるかもしれません。
+「RAIIラッパーやスマート[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を使うと、生のC言語APIより動作が遅くなるのではないか？」という疑問を持つ方もいるかもしれません。
 ここで、パフォーマンスコストの数式モデルを見てみましょう。
 
 実行時間 $T_{\text{total}}$ は次のように分解できます。
@@ -528,7 +528,7 @@ $$ T_{\text{total}} = T_{\text{syscall}} + T_{\text{wrapper}} + T_{\text{cleanup
 *   $T_{\text{wrapper}}$: `std::unique_ptr` や WIL のラッパークラス構築にかかる時間。
 *   $T_{\text{cleanup}}$: デストラクタ呼び出しにかかる時間。
 
-C++のコンパイラ（MSVC, Clang, GCC）は、インライン化 (Inlining) の最適化に極めて優れています。`std::unique_ptr` のコンストラクタやデストラクタ、オーバーロードされた `operator*` や `operator bool` は全て `inline` 展開され、メモリ上の生のポインタに対する直接操作と全く同じ機械語にコンパイルされます。
+C++のコンパイラ（MSVC, Clang, GCC）は、インライン化 (Inlining) の最適化に極めて優れています。`std::unique_ptr` のコンストラクタやデストラクタ、オーバーロードされた `operator*` や `operator bool` は全て `inline` 展開され、メモリ上の生の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)に対する直接操作と全く同じ機械語にコンパイルされます。
 
 すなわち、 **$T_{\text{wrapper}} \approx 0$** となります。これはC++の最大の哲学である **Zero-cost Abstraction (ゼロコスト抽象化)** の証明です。安全性を手に入れても、実行時のオーバーヘッドは文字通りゼロなのです。
 
@@ -536,14 +536,14 @@ C++のコンパイラ（MSVC, Clang, GCC）は、インライン化 (Inlining) �
 
 ## 15. まとめ：安全なWindowsプログラミングの未来
 
-Win32 APIは、歴史的な理由によりC言語のパラダイムで設計された古き良き遺産です。しかし、それを呼び出す側であるC++は進化を続けており、現在では極めて安全で表現力豊かなコードを書くことが可能です。
+Win32 APIは、歴史的な理由により[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)のパラダイムで設計された古き良き遺産です。しかし、それを呼び出す側であるC++は進化を続けており、現在では極めて安全で表現力豊かなコードを書くことが可能です。
 
 本記事で解説した重要ポイントを振り返ります。
 
 1.  **手動の `CloseHandle` や `DeleteObject` は一切書かない。** すべてを `std::unique_ptr` などのRAIIコンテナに封じ込める。
-2.  **`INVALID_HANDLE_VALUE` の罠を理解する。** 専用のカスタムデリータ・カスタムポインタトレイトを実装するか、WILの `wil::unique_handle` を使う。
+2.  **`INVALID_HANDLE_VALUE` の罠を理解する。** 専用のカスタムデリータ・カスタム[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)トレイトを実装するか、WILの `wil::unique_handle` を使う。
 3.  **エラーハンドリングをモダナイズする。** `GetLastError()` や `HRESULT` を `std::system_error` の例外として投げるか、C++23の `std::expected` を用いて型安全に処理する。
 4.  **巨人の肩に乗る。** Microsoft公式の WIL や C++/WinRT を積極的に採用し、車輪の再発明を避ける。
 
-現代のC++開発において、生のポインタやハンドルを裸のまま持ち歩くことは、シートベルトを締めずに高速道路を走るようなものです。C++が提供する強力な型システムとRAIIを駆使し、安全で堅牢なWindowsアプリケーション開発を楽しんでください。
+現代のC++開発において、生の[ポインタ](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)やハンドルを裸のまま持ち歩くことは、シートベルトを締めずに高速道路を走るようなものです。C++が提供する強力な型システムとRAIIを駆使し、安全で堅牢なWindowsアプリケーション開発を楽しんでください。
 

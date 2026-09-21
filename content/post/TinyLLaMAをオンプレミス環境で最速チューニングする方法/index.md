@@ -12,7 +12,7 @@ description: 'TinyLLaMAをオンプレミス環境で効率的かつ最速でフ
 
 ## 1. はじめに：なぜ今、TinyLLaMAとオンプレミスなのか？
 
-大規模言語モデル（LLM）の進化は凄まじいスピードで進んでいますが、それに伴いモデルのパラメータ数も数千億規模へと膨張し続けています。GPT-4やClaude 3のような超巨大モデルは比類なき性能を誇る一方で、推論や学習にかかる計算コスト、そして外部APIを利用する際のセキュリティやデータプライバシーの懸念が企業にとって大きなハードルとなっています。特に機密性の高い社内データや個人情報を扱う業務においては、クラウド上のパブリックなLLM APIへデータを送信することは、コンプライアンス（GDPRやAPPIなど）の観点から許容されないケースが多々あります。
+[大規模言語モデル](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)（[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)）の進化は凄まじいスピードで進んでいますが、それに伴いモデルのパラメータ数も数千億規模へと膨張し続けています。GPT-4やClaude 3のような超巨大モデルは比類なき性能を誇る一方で、推論や学習にかかる計算コスト、そして外部APIを利用する際のセキュリティやデータプライバシーの懸念が企業にとって大きなハードルとなっています。特に機密性の高い社内データや個人情報を扱う業務においては、クラウド上のパブリックなLLM APIへデータを送信することは、コンプライアンス（GDPRやAPPIなど）の観点から許容されないケースが多々あります。
 
 そこで脚光を浴びているのが、 **小規模言語モデル（SLM: Small Language Models）** と ** オンプレミス環境でのローカル運用 ** です。その中でも「**TinyLLaMA** 」は、わずか1.1B（11億）パラメータというコンパクトなサイズでありながら、約3兆トークンという膨大なデータセットで事前学習されており、同クラスのモデルと比較して驚異的な性能を発揮します。
 
@@ -22,7 +22,7 @@ description: 'TinyLLaMAをオンプレミス環境で効率的かつ最速でフ
 
 ## 2. TinyLLaMAのアーキテクチャと特徴
 
-TinyLLaMAは、Meta社が開発したLLaMA（Large Language Model Meta AI）アーキテクチャを踏襲しています。パラメータ数を1.1Bに抑えつつも、LLaMA 2と同じ技術スタックを利用しているため、エコシステムの互換性が非常に高いのが特徴です。
+TinyLLaMAは、Meta社が開発したLLaMA（Large Language Model Meta AI）アーキテクチャを踏襲しています。パラメータ数を1.1Bに抑えつつも、LLaMA 2と同じ技術[スタック](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)を利用しているため、エコシステムの互換性が非常に高いのが特徴です。
 
 ### 主要なアーキテクチャコンポーネント
 
@@ -37,7 +37,7 @@ TinyLLaMAは、Meta社が開発したLLaMA（Large Language Model Meta AI）ア�
 4. **Grouped Query Attention (GQA):**
    Multi-Head Attention (MHA) と Multi-Query Attention (MQA) の中間的なアプローチであり、キーとバリューのヘッドをグループ化することで、メモリ帯域幅を節約し推論速度を劇的に向上させます。
 
-以下のMermaid図は、TinyLLaMAの全体的なデータフローとTransformerブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の構造を示しています。
+以下のMermaid図は、TinyLLaMAの全体的なデータフローと[Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の構造を示しています。
 
 ```mermaid
 graph TD
@@ -151,7 +151,7 @@ GPUのTensor Coreを最大限に活用するため、学習時の計算を `bflo
 
 ## 6. 実践：TinyLLaMAのQLoRAファインチューニングコード
 
-それでは、上記すべての最適化を盛り込んだ最速チューニング用のPyTorchスクリプトを解説します。ここではHugging Faceの `trl` (Transformer Reinforcement Learning) ライブラリの `SFTTrainer` を利用します。
+それでは、上記すべての最適化を盛り込んだ最速チューニング用のPyTorchスクリプトを解説します。ここではHugging Faceの `trl` ([Transformer](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/) Reinforcement Learning) ライブラリの `SFTTrainer` を利用します。
 
 ### 6.1 データセットの準備とモデルのロード
 
@@ -353,7 +353,7 @@ python -m vllm.entrypoints.openai.api_server \
 
 本記事では、パラメータ数が1.1Bと軽量でありながら高性能な「TinyLLaMA」を対象に、オンプレミス環境において最速かつメモリ効率良くファインチューニングを行う手法を解説しました。
 
-- **LoRA / QLoRA** により、コンシューマー向けGPUでも本格的なLLMチューニングが可能に。
+- **LoRA / QLoRA** により、コンシューマー向けGPUでも本格的な[LLM](https://kenji.blog/p/large-language-models-llm-transformer-prompt-engineering/)チューニングが可能に。
 - **Flash Attention 2** と **Gradient Checkpointing** を駆使することで、学習時間とVRAM消費を極限まで最適化。
 - **vLLM** を活用したデプロイにより、本番環境でも高いスループットを実現。
 

@@ -326,9 +326,9 @@ int main() {
 }
 ```
 
-## 6.2 Hazard Pointers 와 RCU (Read-Copy Update)
+## 6.2 Hazard [Pointer](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/)s 와 RCU (Read-Copy Update)
 
-락 프리([Lock](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/)-free) 데이터 구조의 구현을 뒷받침하는 표준 기능으로서 **Hazard Pointers** (`std::hazard_pointer`) 와 **RCU** (`std::rcu`) 가 표준화되었습니다. 이로써 C++에서 고성능 동시성 데이터 구조를 구현할 때의 진입 장벽이 크게 낮아졌습니다.
+락 프리([Lock](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/)-free) 데이터 구조의 구현을 뒷받침하는 표준 기능으로서 **Hazard [Pointer](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/)s** (`std::hazard_pointer`) 와 **RCU** (`std::rcu`) 가 표준화되었습니다. 이로써 C++에서 고성능 동시성 데이터 구조를 구현할 때의 진입 장벽이 크게 낮아졌습니다.
 
 RCU는 특히 읽기(Read)가 압도적으로 많은 워크로드에서 캐시 라인의 경합을 배제하고 선형적인 확장성을 실현합니다. 수학적으로 표현하면 스레드 수 $T$ 에 대해 읽기 처리량(Throughput)은 이상적인 $O(T)$ 의 증가를 보입니다.
 
@@ -359,7 +359,7 @@ C++26은 오랫동안 C++ 프로그래머가 기다려온 '꿈의 기능'이 한
 *   **리플렉션** 을 통해 메타프로그래밍의 난해함이 사라지고 $O(1)$ 의 AST 접근이 실현되었습니다.
 *   **계약 프로그래밍** 을 통해 함수의 사전/사후 조건을 명시하여 견고한 프로그램을 구축할 수 있게 되었습니다.
 *   **패턴 매칭** 을 통해 복잡한 분기나 상태 전이를 직관적이고 안전하게 기술할 수 있습니다.
-*   **Senders/Receivers** 와 **RCU / Hazard Pointers** 를 통해 극한의 성능을 이끌어내는 동시성 처리가 표준화되었습니다.
+*   **Senders/Receivers** 와 **RCU / Hazard [Pointer](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/)s** 를 통해 극한의 성능을 이끌어내는 동시성 처리가 표준화되었습니다.
 
 이러한 기능을 적절히 활용함으로써 C++의 가장 큰 강점인 '제로 오버헤드 추상화(Zero-overhead Abstraction)'를 더 높은 수준에서, 게다가 놀라울 정도로 깔끔한 코드로 실현할 수 있게 됩니다.
 

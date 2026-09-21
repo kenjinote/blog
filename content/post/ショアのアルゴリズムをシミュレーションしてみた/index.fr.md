@@ -341,7 +341,7 @@ Pour se préparer à l'arrivée du « Q-Day » (le jour où les ordinateurs quan
 
 La PQC est basée sur de nouveaux problèmes mathématiques (problèmes de réseaux euclidiens, polynômes multivariés, fonctions de hachage, etc.) que l'on considère impossibles à résoudre efficacement même avec l'algorithme de Shor (ou l'algorithme de Grover). Des algorithmes comme « CRYSTALS-Kyber » et « CRYSTALS-Dilithium » ont déjà été sélectionnés comme normes standards, et leur intégration commence progressivement dans les protocoles de communication des navigateurs web ou iMessage d'Apple.
 
-[Pour les ingénieurs](https://kenji.blog/fr/p/[エンジニア向け](https://kenji.blog/fr/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)プロンプトエンジニアリングの基本と開発への応用/) qui gèrent les infrastructures informatiques, intégrer l'« agilité cryptographique » (la capacité à changer rapidement de méthode de chiffrement) pour passer du [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) existant ou de la cryptographie sur les courbes elliptiques à la PQC, constituera une mission majeure dans le futur.
+[Pour les ingénieurs](https://kenji.blog/fr/p/[エンジニア向け](https://kenji.blog/fr/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)[プロンプトエンジニアリング](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/)の基本と開発への応用/) qui gèrent les infrastructures informatiques, intégrer l'« agilité cryptographique » (la capacité à changer rapidement de méthode de chiffrement) pour passer du [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) existant ou de la cryptographie sur les courbes elliptiques à la PQC, constituera une mission majeure dans le futur.
 
 ---
 

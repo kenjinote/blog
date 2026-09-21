@@ -13,7 +13,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 在現代的Web前端開發中，兼顧效能與開發體驗（DX：Developer Experience）是所有專案中最重要的課題之一。將在靜態網站生成器（SSG）中擁有世界最快建置速度的 **Hugo** ，與引入了實用優先（Utility-First）這一革新典範的 **Tailwind CSS** 相結合，可以說是由此課題得出的一個終極解答。
 
-Hugo是使用Go語言編寫的，即使是擁有數千個頁面的網站，也具備在短短幾秒，甚至毫秒級別內完成建置的驚人效能。另一方面，Tailwind CSS透過在HTML中直接寫入預先定義的無數個實用類別（例如：`flex`、`text-center`、`mt-4`等），消除了在CSS檔案與HTML檔案之間來回切換的上下文切換（Context Switch），從而加速了設計的迭代。
+Hugo是使用[Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)語言編寫的，即使是擁有數千個頁面的網站，也具備在短短幾秒，甚至毫秒級別內完成建置的驚人效能。另一方面，Tailwind CSS透過在HTML中直接寫入預先定義的無數個實用類別（例如：`flex`、`text-center`、`mt-4`等），消除了在CSS檔案與HTML檔案之間來回切換的上下文切換（Context Switch），從而加速了設計的迭代。
 
 本文將徹底且詳細地解說在Hugo主題中導入Tailwind CSS，並進一步使用PostCSS建立進階資源管道（Hugo Pipes）的步驟，內容涵蓋從架構的基礎到數學的效能最佳化觀點。
 
@@ -268,7 +268,7 @@ module.exports = {
 
 #### 管道解說與Mermaid圖解
 
-上述的Go樣板程式碼是如何處理CSS檔案的，這裡將一連串的管道處理進行圖解。
+上述的[Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)樣板程式碼是如何處理CSS檔案的，這裡將一連串的管道處理進行圖解。
 
 ```mermaid
 flowchart TD

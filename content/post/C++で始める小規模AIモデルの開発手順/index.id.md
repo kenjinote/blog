@@ -12,7 +12,7 @@ description: 'Menjelaskan langkah-langkah pengembangan terperinci dan arsitektur
 
 # Panduan Pengembangan Model AI Skala Kecil (seperti TinyLLaMA) Menggunakan C++
 
-Baru-baru ini, minat terhadap eksekusi model bahasa besar (LLM) di lingkungan lokal telah meningkat secara pesat. Secara khusus, model berskala kecil seperti TinyLLaMA (1.1B parameter) dapat diinferensi dengan kecepatan praktis bahkan pada perangkat edge dengan sumber daya terbatas atau laptop umum (termasuk lingkungan Windows). Sementara pengembangan menggunakan Python dan PyTorch adalah arus utama, ketika mengejar kinerja dan efisiensi memori terbaik, kombinasi C++ dan pustaka tensor berbasis C, "ggml", telah menjadi standar de facto.
+Baru-baru ini, minat terhadap eksekusi model bahasa besar ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)) di lingkungan lokal telah meningkat secara pesat. Secara khusus, model berskala kecil seperti TinyLLaMA (1.1B parameter) dapat diinferensi dengan kecepatan praktis bahkan pada perangkat edge dengan sumber daya terbatas atau laptop umum (termasuk lingkungan Windows). Sementara pengembangan menggunakan Python dan PyTorch adalah arus utama, ketika mengejar kinerja dan efisiensi memori terbaik, kombinasi C++ dan pustaka tensor berbasis C, "ggml", telah menjadi standar de facto.
 
 Artikel ini akan menjelaskan secara rinci prosedur pengembangan (atau pemahaman mendalam tentang struktur internal llama.cpp yang sudah ada) untuk membangun mesin inferensi dari awal guna memuat TinyLLaMA dan melakukan pembuatan teks menggunakan C++.
 

@@ -21,7 +21,7 @@ tags: ["Big O Notation", "Prime Factorization", "Algorithms", "RSA"]
 
 # 計算量とビッグオー($\mathcal{O}$)表記の厳密な定義
 
-アルゴリズムの性能や効率を評価する際、単純に「プログラムの実行時間（秒数）」を測るだけでは不十分です。なぜなら、実行時間は使用するコンピュータの性能（CPUのク[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)数やメモリの速度など）や、プログラミング言語、コンパイラの最適化に大きく依存するからです。
+アルゴリズムの性能や効率を評価する際、単純に「プログラムの実行時間（秒数）」を測るだけでは不十分です。なぜなら、実行時間は使用するコンピュータの性能（CPUのク[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)数やメモリの速度など）や、[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)、コンパイラの最適化に大きく依存するからです。
 
 そこで、ハードウェアや環境に依存しない普遍的な評価指標として用いられるのが **[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)（Time Complexity） ** であり、それを表現するための記法が ** ビッグオー表記（Big-O Notation）** です。ビッグオー表記は、入力データのサイズ $N$ が非常に大きくなったときに、アルゴリズムの実行時間（あるいは実行ステップ数）が $N$ に対してどのように増加していくか（漸近的な増加率）を表す数学的な記法です。
 

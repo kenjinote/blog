@@ -75,7 +75,7 @@ Contoh paling klasik adalah frekuensi kata dalam korpus teks. Saat menganalisis 
 3. **and**: sekitar 2.8% probabilitas kemunculan
 4. **to**: sekitar 2.6% probabilitas kemunculan
 
-Jadi, sementara beberapa lusin kata yang sering muncul menyumbang hampir setengah dari keseluruhan teks, ratusan ribu kata lainnya jarang muncul. Fenomena "Ekor Panjang" (Long Tail) ini sangat penting dalam membangun indeks mesin pencari dan merancang kosakata untuk Model Bahasa Besar (LLM). Di bidang pemrosesan bahasa alami, kata-kata yang terlalu sering muncul (kata henti atau *stop words*) memuat sedikit informasi, jadi teknik seperti TF-IDF digunakan untuk menurunkan bobotnya.
+Jadi, sementara beberapa lusin kata yang sering muncul menyumbang hampir setengah dari keseluruhan teks, ratusan ribu kata lainnya jarang muncul. Fenomena "Ekor Panjang" (Long Tail) ini sangat penting dalam membangun indeks mesin pencari dan merancang kosakata untuk Model Bahasa Besar ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/)). Di bidang pemrosesan bahasa alami, kata-kata yang terlalu sering muncul (kata henti atau *stop words*) memuat sedikit informasi, jadi teknik seperti TF-IDF digunakan untuk menurunkan bobotnya.
 
 ## 4.2. Distribusi Populasi Kota
 

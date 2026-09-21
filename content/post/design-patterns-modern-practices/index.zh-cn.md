@@ -36,7 +36,7 @@ tags:
 
 `Strategy` 模式定义了一系列算法，并将每个算法封装起来，使它们可以相互替换。
 
-**传统的 GoF 方法（Java 风格）**
+**传统的 GoF 方法（[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 风格）**
 
 ```java
 // 接口定义
@@ -135,7 +135,7 @@ coroutineScope.launch {
 
 在现代，通过使用具备 **代数数据类型 (ADT)** 和 **模式匹配** 的语言（如 [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala 等），这个问题可以被优雅地解决。
 
-**现代方法（Rust 的枚举和模式匹配）**
+**现代方法（[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/) 的枚举和模式匹配）**
 
 ```rust
 // 代数数据类型（带有变体的 Enum）
@@ -169,17 +169,17 @@ graph TD
     E["服务 B"] -->|"依赖于"| B
 ```
 
-由于 Spring Framework (Java)、NestJS (TypeScript) 以及 Dagger/Hilt (Android) 等 DI 容器负责管理实例的创建和销毁，因此不应该在类本身中编写 Singleton 的逻辑（如 `getInstance()` 或 `private constructor` ）。
+由于 Spring Framework ([Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/))、NestJS (TypeScript) 以及 Dagger/Hilt (Android) 等 DI 容器负责管理实例的创建和销毁，因此不应该在类本身中编写 Singleton 的逻辑（如 `getInstance()` 或 `private constructor` ）。
 
 ## 4. 函数式编程中的设计模式
 
 在函数式编程的世界中，存在着与 GoF 不同维度的“模式”。这些模式由数学上的范畴论（Category Theory）提供理论支持。
 
-### 4.1. 使用 Monad（单子）控制副作用
+### 4.1. 使用 [Monad](https://kenji.blog/zh-cn/p/functional-programming-concepts-pure-functions-monads/)（单子）控制副作用
 
 GoF 的模式是以“状态的突变”为前提的，而在函数式的方法中，副作用（异常、异步处理、Null 的可能性）被限制在类型系统中。
 
-例如，Null 对象模式或异常处理，被替换为了 `Maybe` (Optional) 或 `Either` (Result) 等 Monad。
+例如，Null 对象模式或异常处理，被替换为了 `Maybe` (Optional) 或 `Either` (Result) 等 [Monad](https://kenji.blog/zh-cn/p/functional-programming-concepts-pure-functions-monads/)。
 
 $$
 f: A \rightarrow M[B]

@@ -28,7 +28,7 @@ Google Colaboratory 是一个可以在线执行 Python 的环境。
 
 - [Javascript Playground](https://playcode.io/)
 
-## Java
+## [Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)
 
 - [paiza.IO Online Java compiler](https://paiza.io/ja/projects/new?language=java)
 
@@ -47,7 +47,7 @@ Google Colaboratory 是一个可以在线执行 Python 的环境。
 
 - [AWS Cloud9](https://aws.amazon.com/jp/cloud9/)
 
-Amazon AWS 提供的在线集成开发环境。预先打包了超过 40 种编程语言的工具，如 Node.js、JavaScript、Python、PHP、Ruby、Go、C++ 等。
+Amazon AWS 提供的在线集成开发环境。预先打包了超过 40 种编程语言的工具，如 Node.js、JavaScript、Python、PHP、Ruby、[Go](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)、C++ 等。
 
 - [Visual Studio Code for the Web](https://vscode.dev/)
 
@@ -55,7 +55,7 @@ Microsoft 提供的在线开发环境。但是，无法执行或调试需要编�
 
 - [paiza.IO](https://paiza.io/projects/CGAcQLfW-IOXYy8Dq2OHBw?locale=ja-jp)
 
-支持 C、C++、Java、Ruby、Python、PHP、Perl 等 24 种主要语言的在线执行环境。
+支持 C、C++、[Java](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)、Ruby、Python、PHP、Perl 等 24 种主要语言的在线执行环境。
 
 - [CodePen](https://codepen.io/)
 

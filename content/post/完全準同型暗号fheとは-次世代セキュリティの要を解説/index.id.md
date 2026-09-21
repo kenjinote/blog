@@ -253,7 +253,7 @@ Sekarang setelah FHE mendekati kecepatan yang praktis, inovasi destruktif dihara
 2.  **Deteksi Penipuan dan Anti-Pencucian Uang (AML) untuk Institusi Keuangan**:
     Bank-bank yang saling bersaing dapat mencocokkan data masing-masing dalam keadaan terenkripsi tanpa mengungkapkan informasi rekening pelanggan atau riwayat transaksi, sehingga memungkinkan analisis antar bank (cross-bank) untuk mendeteksi jaringan transfer penipuan yang besar.
 3.  **API Inferensi AI yang Aman (MaaS: Model as a [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/))**:
-    Pengguna dapat mengenkripsi audio, gambar wajah, atau prompt mereka sendiri dan mengirimkannya ke layanan AI (seperti LLM seperti ChatGPT). Penyedia AI menghasilkan respons tanpa mengetahui input pengguna sama sekali, dan mengembalikannya sebagai ciphertext. Dengan ini, kekhawatiran tentang "AI yang mempelajari atau mengintip informasi pribadi" dapat sepenuhnya dihilangkan.
+    Pengguna dapat mengenkripsi audio, gambar wajah, atau prompt mereka sendiri dan mengirimkannya ke layanan AI (seperti [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) seperti ChatGPT). Penyedia AI menghasilkan respons tanpa mengetahui input pengguna sama sekali, dan mengembalikannya sebagai ciphertext. Dengan ini, kekhawatiran tentang "AI yang mempelajari atau mengintip informasi pribadi" dapat sepenuhnya dihilangkan.
 
 ---
 

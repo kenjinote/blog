@@ -64,7 +64,7 @@ Untuk secara eksplisit memberi tahu mesin pencari bahwa halaman tersebut adalah 
 
 ### 1.3 HTML Semantik dan Optimasi Struktur Dokumen
 
-Meskipun nesting (penyarangan) heading yang tepat (`h1` hingga `h6`) adalah hal mendasar, pada blog teknologi Anda dituntut untuk menggunakan tag semantik HTML5 seperti `article`, `section`, `aside`, dan `nav` secara akurat. Selain itu, dengan menggunakan `<code>` atau `<pre>` untuk menunjukkan kode sumber, `<kbd>` untuk input keyboard, dan `<var>` untuk variabel secara tepat, Anda dapat menyediakan HTML yang dapat dibaca mesin (machine-readable). Ini juga merupakan langkah yang sangat efektif untuk memfasilitasi pengindeksan konten oleh AI (pengumpulan data pelatihan LLM atau sistem RAG).
+Meskipun nesting (penyarangan) heading yang tepat (`h1` hingga `h6`) adalah hal mendasar, pada blog teknologi Anda dituntut untuk menggunakan tag semantik HTML5 seperti `article`, `section`, `aside`, dan `nav` secara akurat. Selain itu, dengan menggunakan `<code>` atau `<pre>` untuk menunjukkan kode sumber, `<kbd>` untuk input keyboard, dan `<var>` untuk variabel secara tepat, Anda dapat menyediakan HTML yang dapat dibaca mesin (machine-readable). Ini juga merupakan langkah yang sangat efektif untuk memfasilitasi pengindeksan konten oleh AI (pengumpulan data pelatihan [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) atau sistem RAG).
 
 ---
 

@@ -21,7 +21,7 @@ Warum sollte man also Python explizit ausschließen und eine KI-Inferenz-Engine 
 3. **Unterstützung für Edge-Geräte**: In ressourcenbeschränkten Umgebungen wie Smartphones, eingebetteten Geräten oder dem Raspberry Pi gibt es keinen Spielraum, um eine Python-Laufzeitumgebung auszuführen, die mehrere Gigabyte an Speicher verbraucht.
 4. **Direkte Hardwaresteuerung**: Low-Level-Steuerungen wie das Timing der Speicherzuweisung, die explizite Nutzung von SIMD-Befehlen und die Optimierung des Speichertransfers mit der GPU sind mit C++ möglich.
 
-In diesem Artikel werden wir den Prozess des Aufbaus einer Inferenz-Engine für Large Language Models (LLMs) und andere Modelle komplett von Grund auf in C++ tiefgreifend und technisch erklären, stark inspiriert von der Architektur der Bibliothek "GGML", die von Georgi Gerganov entwickelt wurde.
+In diesem Artikel werden wir den Prozess des Aufbaus einer Inferenz-Engine für [Large Language Models](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) (LLMs) und andere Modelle komplett von Grund auf in C++ tiefgreifend und technisch erklären, stark inspiriert von der Architektur der Bibliothek "GGML", die von Georgi Gerganov entwickelt wurde.
 
 ---
 
@@ -52,7 +52,7 @@ Wir werden diese Komponenten unter Verwendung der mächtigen Funktionen von C++ 
 
 ## 3. Das Geheimnis der Speicherverwaltung: Memory Arena und SIMD-Alignment
 
-Die Speicherverwaltung in einer Inferenz-Engine ist einer der wichtigsten Faktoren, der sich direkt auf die Leistung auswirkt. Während der Inferenz, insbesondere beim Durchlaufen der einzelnen Schichten eines Transformer-Modells, wird eine enorme Anzahl von Zwischen-Tensoren generiert. Wenn diese jedes Mal mit dem standardmäßigen `malloc` zugewiesen und freigegeben werden, führt dies aufgrund von Heap-Fragmentierung und OS-Kontextwechseln zu massiven Leistungseinbußen.
+Die Speicherverwaltung in einer Inferenz-Engine ist einer der wichtigsten Faktoren, der sich direkt auf die Leistung auswirkt. Während der Inferenz, insbesondere beim Durchlaufen der einzelnen Schichten eines [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Modells, wird eine enorme Anzahl von Zwischen-Tensoren generiert. Wenn diese jedes Mal mit dem standardmäßigen `malloc` zugewiesen und freigegeben werden, führt dies aufgrund von [Heap](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/)-Fragmentierung und OS-Kontextwechseln zu massiven Leistungseinbußen.
 
 Daher verwenden wir den Ansatz einer "**Memory Arena**". Bei dieser Methode wird die maximale Speichermenge, die zu Beginn der Inferenz benötigt wird, berechnet (oder vorgegeben) und auf einmal zugewiesen. Der Speicher wird dann einfach durch das Inkrementieren eines Zeigers reserviert.
 
@@ -189,7 +189,7 @@ Bei der Auswertung des Graphen (Vorwärtspass) wird eine topologische Sortierung
 
 ## 6. Der Kern von Mathematik und Optimierung: Matrixmultiplikation (GEMM)
 
-Mehr als 90 % der Rechenleistung bei der KI-Inferenz werden für Matrixmultiplikationen (GEMM: General Matrix Multiply) aufgewendet. Der Kern von Transformer-Modellen, der Attention-Mechanismus und das Feed-Forward Network (FFN), sind letztlich gigantische Matrixmultiplikationen.
+Mehr als 90 % der Rechenleistung bei der KI-Inferenz werden für Matrixmultiplikationen (GEMM: General Matrix Multiply) aufgewendet. Der Kern von [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Modellen, der Attention-Mechanismus und das Feed-Forward Network (FFN), sind letztlich gigantische Matrixmultiplikationen.
 
 Das Produkt $C = A B$ (Größe $M \times N$) von zwei Matrizen $A$ (Größe $M \times K$) und $B$ (Größe $K \times N$) wird mathematisch wie folgt ausgedrückt:
 
@@ -344,7 +344,7 @@ In Apple Silicon-Umgebungen steht auch eine optimierte Bibliothek für Matrixmul
 
 ---
 
-## 8. Spezifische Verarbeitung für Transformer-Modelle: Attention und KV-Cache
+## 8. Spezifische Verarbeitung für [Transformer](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/)-Modelle: Attention und KV-Cache
 
 Hochmoderne LLMs wie LLaMA 2/3 oder GPT basieren auf der Transformer-Architektur. Um dies in C++ zu implementieren, ist es unerlässlich, die "Scaled Dot-Product Attention", ausgedrückt durch folgende mathematische Formel, aufzubauen:
 
@@ -414,7 +414,7 @@ Python ist zweifellos praktisch. In der Forschung, Entwicklung und beim Prototyp
 
 Das Erfolgserlebnis, das man verspürt, wenn die eigens entwickelte Inferenz-Engine – erschaffen durch das direkte Manipulieren von Speicher-Bytefolgen, das Ausreizen von Registern durch SIMD-Befehle und den Kampf mit der VRAM-Bandbreite der GPU – nacheinander natürliche japanische (oder deutsche) Text-Tokens in der Konsole generiert, bietet eine "reine Ingenieursfreude", die man beim Aufrufen von `model.generate()` in einem Python-Framework niemals erleben wird.
 
-KI-Technologie neigt dazu, eine "Black Box" zu sein. Doch indem man von Tensor-Operationen bis hin zur Speicherverwaltung alles selbst in C++ schreibt, kann man ein tiefes Verständnis für die wahren Mechanismen erlangen und begreifen, wie ein LLM "denkt".
+KI-Technologie neigt dazu, eine "Black Box" zu sein. Doch indem man von Tensor-Operationen bis hin zur Speicherverwaltung alles selbst in C++ schreibt, kann man ein tiefes Verständnis für die wahren Mechanismen erlangen und begreifen, wie ein [LLM](https://kenji.blog/de/p/large-language-models-llm-transformer-prompt-engineering/) "denkt".
 
 Wenn Sie über Grundkenntnisse in C++ verfügen und ein starkes Interesse an der aktuellen KI-Technologie haben, sollten Sie unbedingt versuchen, eine eigene Inferenz-Engine zu entwickeln. Die Quellcodes von GGML und llama.cpp werden Ihnen dabei als die besten "lebenden Lehrbücher" dienen.
 

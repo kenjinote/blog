@@ -38,7 +38,7 @@ Wenn Sie `rustc main.rs` über die Eingabeaufforderung oder das Terminal ausfüh
 [The Rust Programming Language Japanische Ausgabe](https://doc.rust-jp.rs/book-ja/)
 
 Die Erklärungen, die zum Erlernen von [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) notwendig sind, sind unter dem obigen Link (japanisch übersetzte Version) zusammengestellt.
-Sie ist so umfassend, dass Sie kein Buch über Rust kaufen müssen.
+Sie ist so umfassend, dass Sie kein Buch über [Rust](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) kaufen müssen.
 
 # Wenn Sie es im Web ausprobieren möchten
 

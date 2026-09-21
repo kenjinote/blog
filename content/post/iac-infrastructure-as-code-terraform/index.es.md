@@ -58,7 +58,7 @@ Se describe **"cuál (What) debe ser el estado final deseado"**. El sistema comp
 
 # 2. ¿Qué es Terraform?
 
-Terraform es una herramienta de IaC de código abierto desarrollada en Go por HashiCorp. Permite configurar y gestionar cualquier API, desde infraestructura en la nube hasta configuraciones SaaS, como código.
+Terraform es una herramienta de IaC de código abierto desarrollada en [Go](https://kenji.blog/es/p/programming-languages-history-paradigm-evolution/) por HashiCorp. Permite configurar y gestionar cualquier API, desde infraestructura en la nube hasta configuraciones SaaS, como código.
 
 ## 2.1. Arquitectura de Proveedores (Provider)
 

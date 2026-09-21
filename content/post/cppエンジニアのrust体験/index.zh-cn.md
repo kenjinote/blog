@@ -13,7 +13,7 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 在现代软件工程中，C++和[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)是站在系统编程最前沿的两大巨头。多年来，在操作系统、嵌入式设备、游戏引擎、高频交易（HFT）系统等需要发挥硬件极限性能的领域，C++一直作为绝对的王者君临天下。作为一名资深C++工程师，我自己也是从C++98时代的裸指针丛林开始，经历了C++11的现代化浪潮（智能指针、[Lambda](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/)表达式、`auto`的引入），并伴随着C++14/17/20规范的不断庞大，一直坚持编写代码至今。
 
-然而近年来，作为C++结构性问题——特别是“缺乏内存安全”导致的安全漏洞（据说约70%的CVE源于内存问题）以及“无止境复杂化的规范和未定义行为（UB）”——的解决方案，[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)正在戏剧性地崛起。被Linux内核正式采用，以及微软、谷歌、AWS等科技巨头大规模向Rust迁移的项目，并不只是短暂的流行，而是意味着系统编程领域范式的转变。
+然而近年来，作为C++结构性问题——特别是“缺乏内存安全”导致的安全漏洞（据说约70%的CVE源于内存问题）以及“无止境复杂化的规范和未定义行为（UB）”——的解决方案，[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)正在戏剧性地崛起。被Linux内核正式采用，以及微软、谷歌、AWS等科技巨头大规模向[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)迁移的项目，并不只是短暂的流行，而是意味着系统编程领域范式的转变。
 
 在本文中，我将作为一名纯正的C++工程师，从涉及语言规范根本的技术视角，彻底比较并剖析在深入学习Rust并将其应用于实战后所体会到的“优点”和“缺点”。
 
@@ -59,7 +59,7 @@ int main() {
 
 ## [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)的所有权（Ownership）与借用检查器的绝对防御
 
-Rust将“所有权”这一概念融入了语言的核心设计中，并通过称为 **借用检查器（[Borrow Checker](https://kenji.blog/zh-cn/p/memory-management-garbage-collection/)）** 的编译器功能进行严格的静态分析。
+[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)将“所有权”这一概念融入了语言的核心设计中，并通过称为 **借用检查器（[Borrow Checker](https://kenji.blog/zh-cn/p/memory-management-garbage-collection/)）** 的编译器功能进行严格的静态分析。
 
 ```rust
 fn consume(s: String) {
@@ -77,7 +77,7 @@ fn main() {
 }
 ```
 
-在[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)中，当变量的所有权转移时，原变量会被编译器视为“未初始化”状态，从而彻底阻断后续的访问。这使得“释放后使用（Use-After-Free）”或“悬垂指针（Dangling Pointer）”等漏洞在理论上根本无法通过编译。
+在[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)中，当变量的所有权转移时，原变量会被编译器视为“未初始化”状态，从而彻底阻断后续的访问。这使得“释放后使用（Use-After-Free）”或“悬垂指针（Dangling [Pointer](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）”等漏洞在理论上根本无法通过编译。
 
 ```mermaid
 graph TD
@@ -158,7 +158,7 @@ int main() {
 
 ## [Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)的互斥锁“所有”数据
 
-在Rust中，`Mutex<T>`通过泛型将要保护的数据类型 `T` **包裹（所有）** 在内部。为了访问数据，必须调用`lock()`获取一个守卫对象。在不获取锁的情况下接触数据，在语法上是不可能的。
+在[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)中，`Mutex<T>`通过泛型将要保护的数据类型 `T` **包裹（所有）** 在内部。为了访问数据，必须调用`lock()`获取一个守卫对象。在不获取锁的情况下接触数据，在语法上是不可能的。
 
 ```rust
 use std::sync::{Arc, Mutex};
@@ -266,7 +266,7 @@ fn draw_dynamic(item: &dyn Drawable) {
 }
 ```
 
-[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)动态分发（`dyn Trait`）最大的特点是，数据结构内部不包含vptr，而是使用 **胖指针（Fat Pointer）** 。胖指针成对地保存“指向数据的指针”和“指向vtable的指针”。这使得对外部库定义的类型进行事后特征实现（扩展）并应用于动态分发变得非常容易。
+[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)动态分发（`dyn Trait`）最大的特点是，数据结构内部不包含vptr，而是使用 **胖指针（Fat [Pointer](https://kenji.blog/zh-cn/p/c-language-pointers-memory-management-stack-heap/)）** 。胖指针成对地保存“指向数据的指针”和“指向vtable的指针”。这使得对外部库定义的类型进行事后特征实现（扩展）并应用于动态分发变得非常容易。
 
 ---
 
@@ -295,7 +295,7 @@ graph TD
 
 # 7. 学习[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)的缺点与学习曲线
 
-到目前为止，我已经讲述了Rust的优点，但是C++工程师在将Rust投入实战时，也肯定会面临一些“高墙”和缺点。
+到目前为止，我已经讲述了[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)的优点，但是C++工程师在将Rust投入实战时，也肯定会面临一些“高墙”和缺点。
 
 ## 1. 与严苛的借用检查器搏斗
 如果我们试图将C++中“随便用裸指针连接”的数据结构（例如双向链表、图结构、自引用结构体等）原封不动地在Rust中实现，会因为所有权和生命周期的限制而无法通过编译。为了满足借用检查器，我们需要使用 `Rc<RefCell<T>>` 进行复杂的包装，或者从根本上重新设计，改用Arena分配器或基于索引的管理。
@@ -312,7 +312,7 @@ graph TD
 
 未来，C++仍将在游戏引擎开发以及现有庞大基础设施中继续扮演重要角色。C++20/23带来的现代化进程也引人瞩目，使得代码编写变得越来越安全。
 
-然而，在“新启动的系统编程项目”中，我觉得 **越来越难找到不选择Rust的理由了** 。只要通过编译，就能从未定义行为和内存破坏的恐惧中解脱出来，并以高性能安全地进行并发处理——Rust带来的这种“确定性”极大地改善了工程师的心理模型。
+然而，在“新启动的系统编程项目”中，我觉得 **越来越难找到不选择[Rust](https://kenji.blog/zh-cn/p/programming-languages-history-paradigm-evolution/)的理由了** 。只要通过编译，就能从未定义行为和内存破坏的恐惧中解脱出来，并以高性能安全地进行并发处理——Rust带来的这种“确定性”极大地改善了工程师的心理模型。
 
 对于C++工程师而言，学习Rust不仅仅是记住新的语法，更是一次绝佳的体验，让你在“如何安全管理内存和线程”方面获得全新的视野。请大家也务必亲自体验一下Cargo的舒适与借用检查器的严苛。
 

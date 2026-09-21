@@ -125,7 +125,7 @@ xychart-beta
 
 ---
 
-## 4. Beyond Prompt Engineering: What Are the Truly Necessary Skills?
+## 4. Beyond [Prompt Engineering](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/): What Are the Truly Necessary Skills?
 
 So, what kind of IT talent is required in the coming era? It's premature to think that "mastering prompt engineering is enough." The skill of issuing instructions in natural language is becoming easier and commoditized as AI models evolve.
 

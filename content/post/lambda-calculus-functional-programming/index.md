@@ -16,11 +16,11 @@ tags:
 
 ## 1. はじめに：[関数型プログラミング](https://kenji.blog/p/oop-vs-fp-vs-dop/)の根底に流れる哲学
 
-現代のソフトウェア開発において、 **関数型プログラミング** （[Functional Programming](https://kenji.blog/p/oop-vs-fp-vs-dop/)）はもはや一部のマニア向けのアプローチではなく、広く普及したパラダイムとなりました。Reactなどのフロントエンド技術から、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)やScala、さらにはJavaやC#といった[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)言語にまで、関数の第一級オブジェクトとしての扱いや副作用の排除といった概念が取り入れられています。
+現代のソフトウェア開発において、 **[関数型プログラミング](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)** （[Functional Programming](https://kenji.blog/p/oop-vs-fp-vs-dop/)）はもはや一部のマニア向けのアプローチではなく、広く普及したパラダイムとなりました。Reactなどのフロントエンド技術から、[Rust](https://kenji.blog/p/webassembly-wasm-current-future/)やScala、さらには[Java](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)やC#といった[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)言語にまで、関数の第一級オブジェクトとしての扱いや副作用の排除といった概念が取り入れられています。
 
 しかし、このパラダイムの背後には、コンピュータが物理的に誕生する以前の1930年代に構築された深遠な数学的理論が存在します。それが、アロンゾ・チャーチ（Alonzo Church）によって提唱された **ラムダ計算** （ $\lambda$-calculus ）です。
 
-この記事では、ラムダ計算の基礎理論から始まり、それがどのようにして初期のプログラミング言語である **Lisp** に影響を与え、そして純粋関数型言語である **Haskell** に至るまで、どのような歴史的・理論的発展を遂げたのかを、詳細に探求していきます。
+この記事では、ラムダ計算の基礎理論から始まり、それがどのようにして初期の[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)である **Lisp** に影響を与え、そして[純粋関数](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)型言語である **Haskell** に至るまで、どのような歴史的・理論的発展を遂げたのかを、詳細に探求していきます。
 
 ## 2. ラムダ計算の誕生：アロンゾ・チャーチと計算の定義
 
@@ -149,7 +149,7 @@ $$
 
 Yコンビネータは、任意の関数 $f$ に対して $Y \ f = f \ (Y \ f)$ を満たします。これを利用することで、再帰構造を関数自身への適用として表現し、計算機の無限のループや再帰をラムダ計算の枠内で処理できるようになります。これにより、ラムダ計算がチューリング完全であることが示されます。
 
-## 6. Lispの誕生：理論からプログラミング言語へ
+## 6. Lispの誕生：理論から[プログラミング言語](https://kenji.blog/p/programming-languages-history-paradigm-evolution/)へ
 
 1950年代後半、ジョン・マッカーシー（John McCarthy）は、人工知能の研究のために新たなプログラミング言語を設計していました。彼はチャーチのラムダ計算にインスピレーションを受け、関数の抽象化や再帰を直接的にサポートする言語を開発しました。これが **Lisp** （LISt Processing）です。
 
@@ -200,7 +200,7 @@ graph LR
 
 ## 8. Haskellの登場と純粋[関数型プログラミング](https://kenji.blog/p/oop-vs-fp-vs-dop/)の到達点
 
-1980年代後半、関数型言語の研究者たちは、標準化された遅延評価ベースの純粋関数型言語を作成するために委員会を設立しました。論理学者ハスケル・カリー（Haskell Curry）の名を冠した **Haskell** の誕生です。
+1980年代後半、関数型言語の研究者たちは、標準化された遅延評価ベースの[純粋関数](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)型言語を作成するために委員会を設立しました。論理学者ハスケル・カリー（Haskell Curry）の名を冠した **Haskell** の誕生です。
 
 ### 8.1 遅延評価（Lazy Evaluation）
 
@@ -217,9 +217,9 @@ firstTenEvens :: [Integer]
 firstTenEvens = take 10 (map (*2) naturals)
 ```
 
-### 8.2 モナド（Monads）と副作用の管理
+### 8.2 [モナド](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)（Monads）と副作用の管理
 
-純粋関数型言語において、数学的な純粋性（参照透過性）を保ったまま、入出力や状態変化などの「副作用（Side Effects）」をどのように扱うかは長年の課題でした。Haskellは圏論（Category Theory）の概念である **モナド** （Monad）を導入することでこの問題をエレガントに解決しました。
+[純粋関数](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)型言語において、数学的な純粋性（参照透過性）を保ったまま、入出力や状態変化などの「副作用（Side Effects）」をどのように扱うかは長年の課題でした。Haskellは圏論（Category Theory）の概念である **モナド** （[Monad](https://kenji.blog/p/functional-programming-concepts-pure-functions-monads/)）を導入することでこの問題をエレガントに解決しました。
 
 IOモナドによって、「計算」と「副作用を伴う実行」を型システムレベルで完全に分離することに成功したのです。
 

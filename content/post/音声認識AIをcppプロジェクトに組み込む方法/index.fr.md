@@ -47,7 +47,7 @@ $$ 16000 \times 1 \times \frac{32}{8} = 64,000 \text{ bytes/sec (64 KB/s)} $$
 
 ### 2.2 Mathématiques de la conversion en spectrogramme Mel
 
-En interne, Whisper ne traite pas directement les données de forme d'onde audio unidimensionnelles (Raw Waveform). Avant d'être transmises au modèle Transformer, elles sont converties en un **spectrogramme Mel (Mel-Spectrogram)**, qui est une représentation fréquentielle proche des caractéristiques de l'audition humaine. `whisper.cpp` inclut ce processus de conversion dans son implémentation C++, mais en comprendre le mécanisme est utile pour la réduction du bruit et l'optimisation du prétraitement.
+En interne, Whisper ne traite pas directement les données de forme d'onde audio unidimensionnelles (Raw Waveform). Avant d'être transmises au modèle [Transformer](https://kenji.blog/fr/p/large-language-models-llm-transformer-prompt-engineering/), elles sont converties en un **spectrogramme Mel (Mel-Spectrogram)**, qui est une représentation fréquentielle proche des caractéristiques de l'audition humaine. `whisper.cpp` inclut ce processus de conversion dans son implémentation C++, mais en comprendre le mécanisme est utile pour la réduction du bruit et l'optimisation du prétraitement.
 
 La formule pour convertir une fréquence normale $f$ (Hz) à l'échelle Mel $m$ est approximée comme suit :
 

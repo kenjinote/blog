@@ -12,7 +12,7 @@ description: 'Guia completo para realizar o fine-tuning do TinyLLaMA de forma ef
 
 ## 1. Introdução: Por que TinyLLaMA e On-Premises agora?
 
-A evolução dos grandes modelos de linguagem (LLM) está avançando a uma velocidade incrível, mas, consequentemente, o número de parâmetros dos modelos continua a inchar para a escala de centenas de bilhões. Embora modelos supergigantes como GPT-4 e Claude 3 possuam um desempenho inigualável, o custo computacional para inferência e treinamento, bem como as preocupações de segurança e privacidade de dados ao usar APIs externas, tornaram-se grandes obstáculos para as empresas. Especialmente em operações que lidam com dados corporativos altamente confidenciais e informações pessoais, enviar dados para uma API de LLM pública na nuvem frequentemente não é permitido do ponto de vista da conformidade (como GDPR e LGPD).
+A evolução dos grandes modelos de linguagem ([LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/)) está avançando a uma velocidade incrível, mas, consequentemente, o número de parâmetros dos modelos continua a inchar para a escala de centenas de bilhões. Embora modelos supergigantes como GPT-4 e Claude 3 possuam um desempenho inigualável, o custo computacional para inferência e treinamento, bem como as preocupações de segurança e privacidade de dados ao usar APIs externas, tornaram-se grandes obstáculos para as empresas. Especialmente em operações que lidam com dados corporativos altamente confidenciais e informações pessoais, enviar dados para uma API de LLM pública na nuvem frequentemente não é permitido do ponto de vista da conformidade (como GDPR e LGPD).
 
 É aí que os **Pequenos Modelos de Linguagem (SLM: Small Language Models)** e as **operações locais em ambientes on-premises** estão ganhando destaque. Entre eles, o "**TinyLLaMA**" tem um tamanho compacto de apenas 1.1B (1.1 bilhão) de parâmetros, mas foi pré-treinado com um enorme conjunto de dados de cerca de 3 trilhões de tokens, demonstrando um desempenho impressionante em comparação com modelos da mesma classe.
 
@@ -37,7 +37,7 @@ O TinyLLaMA segue a arquitetura LLaMA (Large Language Model Meta AI) desenvolvid
 4. **Grouped Query Attention (GQA):**
    Uma abordagem intermediária entre a Multi-Head Attention (MHA) e a Multi-Query Attention (MQA), que economiza largura de banda de memória e melhora drasticamente a velocidade de inferência agrupando as cabeças de chaves e valores.
 
-O diagrama Mermaid a seguir mostra o fluxo de dados geral e a estrutura dos blocos Transformer do TinyLLaMA.
+O diagrama Mermaid a seguir mostra o fluxo de dados geral e a estrutura dos blocos [Transformer](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) do TinyLLaMA.
 
 ```mermaid
 graph TD
@@ -151,7 +151,7 @@ Para maximizar a utilização dos Tensor Cores da GPU, os cálculos durante o tr
 
 ## 6. Prática: Código de Fine-Tuning QLoRA do TinyLLaMA
 
-Agora, explicaremos o script PyTorch para o fine-tuning mais rápido, incorporando todas as otimizações acima. Aqui, utilizaremos o `SFTTrainer` da biblioteca `trl` (Transformer Reinforcement Learning) da Hugging Face.
+Agora, explicaremos o script PyTorch para o fine-tuning mais rápido, incorporando todas as otimizações acima. Aqui, utilizaremos o `SFTTrainer` da biblioteca `trl` ([Transformer](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) Reinforcement Learning) da Hugging Face.
 
 ### 6.1 Preparação do Conjunto de Dados e Carregamento do Modelo
 
@@ -357,4 +357,4 @@ Neste artigo, explicamos um método para realizar o fine-tuning do "TinyLLaMA" �
 - O uso intenso de **Flash Attention 2** e **Gradient Checkpointing** otimiza o tempo de treinamento e o consumo de VRAM ao máximo.
 - O deployment utilizando o **vLLM** atinge uma alta taxa de transferência, mesmo em ambientes de produção.
 
-A operação de um LLM local on-premises não apenas protege a confidencialidade dos dados, mas também se torna uma arma poderosa para construir IAs especializadas em domínios específicos (como jurídico, médico, regulamentos internos, etc.) a um baixo custo. Utilize este guia como referência para cultivar o TinyLLaMA exclusivo da sua própria empresa.
+A operação de um [LLM](https://kenji.blog/pt/p/large-language-models-llm-transformer-prompt-engineering/) local on-premises não apenas protege a confidencialidade dos dados, mas também se torna uma arma poderosa para construir IAs especializadas em domínios específicos (como jurídico, médico, regulamentos internos, etc.) a um baixo custo. Utilize este guia como referência para cultivar o TinyLLaMA exclusivo da sua própria empresa.

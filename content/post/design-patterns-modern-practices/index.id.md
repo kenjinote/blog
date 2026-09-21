@@ -36,7 +36,7 @@ Di sini, kita akan melihat beberapa pola GoF representatif dan bagaimana mereka 
 
 Pola `Strategy` mendefinisikan keluarga algoritma, mengenkapsulasi masing-masing algoritma, dan membuatnya dapat dipertukarkan.
 
-**Pendekatan Gaya GoF Tradisional (Gaya Java)**
+**Pendekatan Gaya GoF Tradisional (Gaya [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/))**
 
 ```java
 // Definisi antarmuka
@@ -135,7 +135,7 @@ Pola `Visitor` memisahkan struktur data dari pemrosesan di atasnya, namun memili
 
 Di zaman modern, masalah ini diselesaikan dengan indah dengan menggunakan bahasa ([Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/), Kotlin, Swift, Scala, dll.) yang memiliki **tipe data aljabar (ADT)** dan **pencocokan pola** (*pattern matching*).
 
-**Pendekatan Modern (Enum dan Pencocokan Pola di Rust)**
+**Pendekatan Modern (Enum dan Pencocokan Pola di [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/))**
 
 ```rust
 // Tipe data aljabar (Enum dengan varian)
@@ -169,13 +169,13 @@ graph TD
     E["Layanan B"] -->|"Bergantung pada"| B
 ```
 
-Karena wadah DI seperti Spring Framework (Java), NestJS (TypeScript), dan Dagger/Hilt (Android) mengelola pembuatan dan penghancuran instans, Anda sebaiknya tidak menulis logika Singleton (seperti `getInstance()` atau *private constructor*) di dalam kelas itu sendiri.
+Karena wadah DI seperti Spring Framework ([Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/)), NestJS (TypeScript), dan Dagger/Hilt (Android) mengelola pembuatan dan penghancuran instans, Anda sebaiknya tidak menulis logika Singleton (seperti `getInstance()` atau *private constructor*) di dalam kelas itu sendiri.
 
 ## 4. Pola Desain dalam Pemrograman Fungsional
 
 Dunia pemrograman fungsional memiliki "pola" dengan dimensi yang berbeda dari GoF. Hal ini didukung oleh Teori Kategori matematis.
 
-### 4.1. Pengendalian Efek Samping dengan Monad
+### 4.1. Pengendalian Efek Samping dengan [Monad](https://kenji.blog/id/p/functional-programming-concepts-pure-functions-monads/)
 
 Sementara pola GoF mengasumsikan "mutasi status", pendekatan fungsional membatasi efek samping (pengecualian, asinkron, kemungkinan Null) ke dalam sistem tipe.
 
@@ -191,7 +191,7 @@ $$
 bind: M[A] \times (A \rightarrow M[B]) \rightarrow M[B]
 $$
 
-**Tipe Result di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) (Aplikasi dari Monad Either)**
+**Tipe Result di [Rust](https://kenji.blog/id/p/webassembly-wasm-current-future/) (Aplikasi dari [Monad](https://kenji.blog/id/p/functional-programming-concepts-pure-functions-monads/) Either)**
 
 ```rust
 fn divide(numerator: f64, denominator: f64) -> Result<f64, String> {

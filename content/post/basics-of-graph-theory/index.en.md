@@ -143,7 +143,7 @@ To efficiently solve problems on graphs, many excellent algorithms have been dev
 The most fundamental algorithms for systematically visiting all vertices in a network without omission are **Breadth-First Search (BFS)** and **Depth-First Search (DFS)**.
 
 *   **Breadth-First Search (BFS)**: Explores concentrically, prioritizing vertices closer to the starting point. It's like ripples spreading out when a stone is thrown into water. It is ideal for finding the shortest path (the path with the minimum number of edges) in an unweighted graph. It is implemented using a Queue data structure.
-*   **Depth-First Search (DFS)**: Explores as deeply as possible, and when hitting a dead end, backtracks to the previous branching point to explore another path. It's like solving a maze by tracing the walls. Used for detecting cycles in a graph or for topological sorting. It is implemented using a Stack or recursive function calls.
+*   **Depth-First Search (DFS)**: Explores as deeply as possible, and when hitting a dead end, backtracks to the previous branching point to explore another path. It's like solving a maze by tracing the walls. Used for detecting cycles in a graph or for topological sorting. It is implemented using a [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) or recursive function calls.
 
 Below is a simple implementation example of Breadth-First Search (BFS) using Python.
 
@@ -289,7 +289,7 @@ For example, to answer the question "Who is the central figure (influencer) with
 
 In recent years, at the forefront of artificial intelligence (AI) and machine learning, **Graph Neural Networks (GNN)**, which can directly learn data with graph structures, have garnered explosive attention.
 
-Traditional machine learning models, such as CNNs used in image recognition or Transformers used in natural language processing, were designed to handle regular data like grid-like pixel arrays or one-dimensional word sequences. However, it was extremely difficult to handle irregular and complex graph data like complex SNS connections or atomic bond structures making up molecules.
+Traditional machine learning models, such as CNNs used in image recognition or [Transformer](https://kenji.blog/en/p/large-language-models-llm-transformer-prompt-engineering/)s used in natural language processing, were designed to handle regular data like grid-like pixel arrays or one-dimensional word sequences. However, it was extremely difficult to handle irregular and complex graph data like complex SNS connections or atomic bond structures making up molecules.
 
 GNNs broke through this barrier by simultaneously propagating and learning the feature quantity information of each vertex on the graph and the topology (connection relationships) of the entire graph. Today, GNNs have been put into practical use as indispensable core technologies in cutting-edge AI applications, including the field of drug discovery predicting the properties of new compounds, advanced recommendation systems on Amazon and Netflix, and arrival time prediction on Google Maps.
 

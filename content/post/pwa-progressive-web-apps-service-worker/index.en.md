@@ -30,7 +30,7 @@ When developing a web application, it is always a subject of debate whether to a
 
 ### 2.1. Strengths and Weaknesses of Native Apps
 
-The greatest strength of native apps (apps developed in Swift/Objective-C for iOS, Kotlin/Java for Android, etc.) is having full access to the OS's APIs.
+The greatest strength of native apps (apps developed in Swift/Objective-C for iOS, Kotlin/[Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) for Android, etc.) is having full access to the OS's APIs.
 This allows for the realization of advanced features that fully utilize the camera, GPS, Bluetooth, NFC, various sensors, etc. In addition, because they are optimized for the OS, rendering performance is extremely high, giving native apps an overwhelming advantage in games that heavily use complex animations and 3D graphics.
 
 On the other hand, native apps have the following major weaknesses (challenges).

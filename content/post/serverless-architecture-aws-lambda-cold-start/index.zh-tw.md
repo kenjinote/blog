@@ -78,7 +78,7 @@ AWS Lambda 最初使用 Linux 容器（類似 LXC/[Docker](https://kenji.blog/zh
 
 ### 3.1. Firecracker 是什麼？
 
-Firecracker 是一種利用 KVM（Kernel-based Virtual Machine），可在毫秒級別啟動輕量級「MicroVM（微虛擬機）」的虛擬機器監視器（VMM）。它是用 Rust 語言撰寫的，與傳統的虛擬機器（如 QEMU 等）相比，透過極致地削減不必要的裝置模型，實現了極快的啟動速度與極低的記憶體負擔。
+Firecracker 是一種利用 KVM（Kernel-based Virtual Machine），可在毫秒級別啟動輕量級「MicroVM（微虛擬機）」的虛擬機器監視器（VMM）。它是用 [Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 語言撰寫的，與傳統的虛擬機器（如 QEMU 等）相比，透過極致地削減不必要的裝置模型，實現了極快的啟動速度與極低的記憶體負擔。
 
 ```mermaid
 graph TD
@@ -143,7 +143,7 @@ stateDiagram-v2
 
 1. **下載與解壓縮程式碼** ：從 S3 下載部署套件並解壓縮至環境中。此步驟耗時與套件大小（相依程式庫的數量）成正比。
 2. **啟動 MicroVM** ：啟動 Firecracker。得益於 AWS 端的最佳化，這部分非常快速（毫秒級別）。
-3. **初始化執行環境** ：啟動 Node.js、Python、Java 等行程。特別是像 Java 或 C# 這類進行 JIT（Just-In-Time）編譯的語言，會在此消耗大量時間。
+3. **初始化執行環境** ：啟動 Node.js、Python、[Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 等行程。特別是像 Java 或 C# 這類進行 JIT（Just-In-Time）編譯的語言，會在此消耗大量時間。
 4. **初始化函式 (Init 階段)** ：評估程式碼的全域作用域（處理常式函式之外的部分）。如果在這邊建立資料庫連線池或初始化沉重的 SDK，將會拖長初始化時間。
 
 ### 4.2. 從機率論看冷啟動
@@ -167,7 +167,7 @@ $ P_{warm} \approx 1 - e^{-\lambda \cdot T_w} $
 
 冷啟動的速度會因語言而有戲劇性的差異。
 
-- **最快群組** ：Go、Rust、C++ 等 AOT（Ahead-Of-Time）編譯語言，以及輕量級的指令碼語言（Python、Node.js）。這些語言的冷啟動時間通常能控制在數百毫秒以內。
+- **最快群組** ：[Go](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)、[Rust](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)、C++ 等 AOT（Ahead-Of-Time）編譯語言，以及輕量級的指令碼語言（Python、Node.js）。這些語言的冷啟動時間通常能控制在數百毫秒以內。
 - **較慢群組** ：Java、C# (.NET)。由於 JVM 或 CLR 的啟動及 JIT 編譯的負載，有時會發生數秒至十幾秒的冷啟動。
 
 像 **LLRT (Low Latency Runtime)** 這種 AWS 提供的實驗性輕量級 JavaScript 執行環境，因其能進一步縮短 Node.js 啟動速度的方法而備受關注。
@@ -210,7 +210,7 @@ const dynamo = DynamoDBDocumentClient.from(client);
 
 ## 6. 改變遊戲規則的技術：AWS Lambda SnapStart
 
-作為啟動較慢語言（如 Java）的救星而登場的，便是 **AWS Lambda SnapStart** 。這是一項將虛擬機器狀態快照化，並在冷啟動時將其還原的革命性技術。
+作為啟動較慢語言（如 [Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/)）的救星而登場的，便是 **AWS Lambda SnapStart** 。這是一項將虛擬機器狀態快照化，並在冷啟動時將其還原的革命性技術。
 
 作為背景技術，它利用了 **CRaU** (Checkpoint/Restore in Userspace) 以及 Firecracker 的 MicroVM 快照功能。
 
@@ -253,7 +253,7 @@ sequenceDiagram
 
 ### 6.2. SnapStart 的優點與注意事項
 
-啟用 SnapStart 後，Java 函式的冷啟動時間 **最高可加速 10 倍以上** 。這是因為啟動執行環境、JIT 編譯以及 Spring Boot 等沉重框架的初始化，都被提前到了「部署時」完成。
+啟用 SnapStart 後，[Java](https://kenji.blog/zh-tw/p/programming-languages-history-paradigm-evolution/) 函式的冷啟動時間 **最高可加速 10 倍以上** 。這是因為啟動執行環境、JIT 編譯以及 Spring Boot 等沉重框架的初始化，都被提前到了「部署時」完成。
 
 但是，有幾點需要注意。
 

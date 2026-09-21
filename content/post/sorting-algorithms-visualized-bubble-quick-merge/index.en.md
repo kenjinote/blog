@@ -882,8 +882,8 @@ We have introduced various sorting algorithms, but there is no "only correct ans
 - **Insertion sort** is effective when the data volume is very small or for nearly sorted data.
 - **Quick sort** is optimal when the highest speed is required for general purposes.
 - **Merge sort** is selected when stability is needed or when the worst-case time complexity needs to be guaranteed.
-- **Heap sort** is suitable when memory constraints are tight and in-place stable performance is desired.
+- **[Heap](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) sort** is suitable when memory constraints are tight and in-place stable performance is desired.
 
-In standard libraries of modern programming languages (Python, Java, Rust, etc.), hybrid methods (such as TimSort and IntroSort) that combine the strengths of these algorithms are adopted, reducing the opportunities for developers to implement sorting algorithms from scratch themselves. However, understanding what trade-offs are considered internally is an important foundation for designing more performant and robust software.
+In standard libraries of modern programming languages (Python, [Java](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/), etc.), hybrid methods (such as TimSort and IntroSort) that combine the strengths of these algorithms are adopted, reducing the opportunities for developers to implement sorting algorithms from scratch themselves. However, understanding what trade-offs are considered internally is an important foundation for designing more performant and robust software.
 
 We hope this article helps with your algorithm learning and practical development.

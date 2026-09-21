@@ -17,9 +17,9 @@ Dans cet article, nous allons explorer les bases de WebAssembly, puis détailler
 
 ## 2. Vue d'ensemble et architecture de [WebAssembly](https://kenji.blog/fr/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/fr/p/webassembly-wasm-current-future/))
 
-WebAssembly est un format d'instructions binaire conçu pour une machine virtuelle basée sur une pile. Il a été conçu comme une cible de compilation portable pouvant être compilée à partir de langages tels que C/C++, [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), Go, Zig, etc., dans le but de s'exécuter à une vitesse proche de la vitesse native dans les navigateurs Web.
+WebAssembly est un format d'instructions binaire conçu pour une machine virtuelle basée sur une pile. Il a été conçu comme une cible de compilation portable pouvant être compilée à partir de langages tels que C/C++, [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/), [Go](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/), Zig, etc., dans le but de s'exécuter à une vitesse proche de la vitesse native dans les navigateurs Web.
 
-Le diagramme suivant illustre le flux général de la chaîne d'outils, depuis la génération de WebAssembly à partir de C++ et Rust jusqu'à son exécution dans le navigateur.
+Le diagramme suivant illustre le flux général de la chaîne d'outils, depuis la génération de WebAssembly à partir de C++ et [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) jusqu'à son exécution dans le navigateur.
 
 ```mermaid
 graph TD
@@ -141,7 +141,7 @@ Module.onRuntimeInitialized = () => {
 
 [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) offre un support de première classe pour [WebAssembly](https://kenji.blog/fr/p/webassembly-wasm-current-future/), et l'utilisation des outils `wasm-bindgen` et `wasm-pack` permet une intégration avancée entre JavaScript et [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/). Alors qu'Emscripten adopte une approche consistant à apporter un énorme runtime C/C++ dans le navigateur, `wasm-pack` de [Rust](https://kenji.blog/fr/p/webassembly-wasm-current-future/) adopte une approche consistant à générer uniquement les liaisons (code de liaison JS) strictement nécessaires.
 
-### Code d'implémentation Rust
+### Code d'implémentation [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/)
 
 Créez un projet Cargo et spécifiez `cdylib` et `wasm-bindgen` dans `Cargo.toml`.
 
@@ -287,9 +287,9 @@ Le nombre magique du fichier commence toujours par `0x00 0x61 0x73 0x6D` (`\0asm
 
 Le moteur [Wasm](https://kenji.blog/fr/p/webassembly-wasm-current-future/) du navigateur réalise une accélération spectaculaire du démarrage en compilant ces sections en flux (streaming compilation) - en les compilant en code machine en parallèle pendant leur téléchargement.
 
-## 9. C++ vs Rust : Lequel devriez-vous choisir ?
+## 9. C++ vs [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) : Lequel devriez-vous choisir ?
 
-Lors de la génération de [WebAssembly](https://kenji.blog/fr/p/webassembly-wasm-current-future/), le choix entre C++ et Rust dépend fortement des exigences du projet et des ressources existantes.
+Lors de la génération de [WebAssembly](https://kenji.blog/fr/p/webassembly-wasm-current-future/), le choix entre C++ et [Rust](https://kenji.blog/fr/p/programming-languages-history-paradigm-evolution/) dépend fortement des exigences du projet et des ressources existantes.
 
 **Cas où vous devriez choisir C++ / Emscripten** :
 * Si vous souhaitez porter des bibliothèques C/C++ existantes (FFmpeg, OpenCV, SQLite, etc.) vers le navigateur.

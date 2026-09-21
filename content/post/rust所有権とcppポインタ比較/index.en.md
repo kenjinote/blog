@@ -10,11 +10,11 @@ tags: ["C++", "Rust", "Ownership", "Pointers"]
 description: 'A thorough comparison between C++ pointers and Rust ownership/borrowing models. Explains the essence of memory safety from raw pointers and smart pointers to the borrow checker.'
 ---
 
-Modern system programming constantly faces the challenge of balancing performance and memory safety. While C++ has reigned as the king of this domain for many years, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) has recently emerged to threaten its position. The most prominent feature of Rust lies in its concepts of "Ownership" and "Borrowing", which guarantee memory safety at compile time without relying on [Garbage Collection](https://kenji.blog/en/p/memory-management-garbage-collection/) (GC).
+Modern system programming constantly faces the challenge of balancing performance and memory safety. While C++ has reigned as the king of this domain for many years, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) has recently emerged to threaten its position. The most prominent feature of [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) lies in its concepts of "Ownership" and "Borrowing", which guarantee memory safety at compile time without relying on [Garbage Collection](https://kenji.blog/en/p/memory-management-garbage-collection/) (GC).
 
-In this article, we will thoroughly compare C++ pointers (raw pointers, `std::unique_ptr`, `std::shared_ptr`) with the [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) ownership model. We will use code examples and diagrams to explain how the Rust compiler ([Borrow Checker](https://kenji.blog/en/p/memory-management-garbage-collection/)) prevents Use-After-Free (using memory after it has been freed) and Data Races.
+In this article, we will thoroughly compare C++ pointers (raw pointers, `std::unique_ptr`, `std::shared_ptr`) with the [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) ownership model. We will use code examples and diagrams to explain how the [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) compiler ([Borrow Checker](https://kenji.blog/en/p/memory-management-garbage-collection/)) prevents Use-After-Free (using memory after it has been freed) and Data Races.
 
-## 1. Basics of [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/): Stack and Heap
+## 1. Basics of [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/): [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) and [Heap](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)
 
 To understand the basics of memory management, let's first review how a program utilizes memory. Memory regions are broadly categorized into the "Stack" and the "Heap".
 
@@ -28,7 +28,7 @@ In languages without garbage collection like C++ and [Rust](https://kenji.blog/e
 
 $$ C_{memory} = \sum_{i=1}^{N} (T_{alloc, i} + T_{dealloc, i}) + O_{sync} $$
 
-Here, $O_{sync}$ is the overhead for mutual exclusion (such as mutexes or atomic operations) in a multi-threaded environment. Because Rust determines the timing of memory deallocation at compile time, it eliminates the throughput degradation (Stop-The-World) caused by runtime garbage collection, while executing $T_{dealloc}$ at a reliable and safe timing.
+Here, $O_{sync}$ is the overhead for mutual exclusion (such as mutexes or atomic operations) in a multi-threaded environment. Because [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) determines the timing of memory deallocation at compile time, it eliminates the throughput degradation (Stop-The-World) caused by runtime garbage collection, while executing $T_{dealloc}$ at a reliable and safe timing.
 
 ```mermaid
 graph TD
@@ -40,7 +40,7 @@ graph TD
     E -.->|"Points to"| F
 ```
 
-## 2. C++ Pointers: The Trade-off Between Freedom and Danger
+## 2. C++ [Pointer](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)s: The Trade-off Between Freedom and Danger
 
 Let's look at the evolution of memory management in C++.
 
@@ -49,7 +49,7 @@ Let's look at the evolution of memory management in C++.
 Raw pointers (`*`) inherited from C provide ultimate freedom, but simultaneously become a hotbed for critical bugs such as:
 
 - **Memory Leak**: Forgetting to `delete` memory allocated with `new`.
-- **Dangling Pointer**: Accessing a pointer after the memory has been freed (after `delete`).
+- **Dangling [Pointer](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)**: Accessing a pointer after the memory has been freed (after `delete`).
 - **Double Free**: Freeing the same memory region twice with `delete`.
 
 ```cpp
@@ -65,7 +65,7 @@ void rawPointerExample() {
 }
 ```
 
-### The Advent of RAII and Smart Pointers (C++11 and Later)
+### The Advent of RAII and Smart [Pointer](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/)s (C++11 and Later)
 
 Since C++11, smart pointers based on the concept of RAII (Resource Acquisition Is Initialization) have been standardized, and the direct use of raw pointers is deprecated.
 
@@ -93,13 +93,13 @@ A pointer that allows multiple pointers to share the same object. It uses Refere
 
 ## 3. [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)'s Ownership: A Paradigm Shift
 
-Rust places the concept of C++'s `std::unique_ptr` at the core of its language specifications, adopting a much stricter "Ownership Model".
+[Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) places the concept of C++'s `std::unique_ptr` at the core of its language specifications, adopting a much stricter "Ownership Model".
 
 ### The 3 Rules of Ownership
 
 The [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) ownership system is based on the following three extremely simple rules:
 
-1. **Each value in Rust has a variable that's called its owner.**
+1. **Each value in [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) has a variable that's called its owner.**
 2. **There can only be one owner at a time.**
 3. **When the owner goes out of scope, the value will be dropped.**
 
@@ -197,7 +197,7 @@ int main() {
 
 ### Compile-Time Defense by [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/)
 
-Let's write the exact same logic in Rust.
+Let's write the exact same logic in [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/).
 
 ```rust
 // Rust: Preventing iterator invalidation at compile time
@@ -275,7 +275,7 @@ What is especially noteworthy is that [Rust](https://kenji.blog/en/p/webassembly
 
 C++ pointers and smart pointers offer developers a high degree of control and performance, but their correct usage relies entirely on developer discipline. The introduction of RAII and `std::unique_ptr` dramatically increased the safety of C++, but it still cannot completely prevent "undefined behaviors" like use-after-free or iterator invalidation at the language level.
 
-On the other hand, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) embeds the rules of Ownership and Borrowing into the compiler, detecting these errors at **compile time** rather than at runtime. The strong guarantee that "if it compiles, it is memory safe" is the biggest reason why Rust is rapidly gaining support in system programming.
+On the other hand, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/) embeds the rules of Ownership and Borrowing into the compiler, detecting these errors at **compile time** rather than at runtime. The strong guarantee that "if it compiles, it is memory safe" is the biggest reason why [Rust](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) is rapidly gaining support in system programming.
 
 "Fighting the borrow checker" presents a significant hurdle for beginners, but it simply means the compiler is strictly taking over the complex calculation of "tracking pointer lifetimes" that C++ programmers originally had to perform in their heads.
 

@@ -58,7 +58,7 @@ Mendeskripsikan **"Seperti apa hasil akhir (What) yang diinginkan"** . Sistem me
 
 # 2. Apa itu Terraform
 
-Terraform adalah alat IaC *open source* yang dikembangkan oleh HashiCorp dengan bahasa Go. Ini dapat mengkonfigurasi dan mengelola berbagai macam API, dari infrastruktur awan hingga pengaturan SaaS, sebagai kode.
+Terraform adalah alat IaC *open source* yang dikembangkan oleh HashiCorp dengan bahasa [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/). Ini dapat mengkonfigurasi dan mengelola berbagai macam API, dari infrastruktur awan hingga pengaturan SaaS, sebagai kode.
 
 ## 2.1. Arsitektur Provider
 

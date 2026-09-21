@@ -217,7 +217,7 @@ graph TD
 Sebagai dasar pencarian dalam struktur pohon, terdapat pencarian mendalam pertama (DFS) dan pencarian melebar pertama (BFS).
 
 ## 2. Pencarian Mendalam Pertama (DFS: Depth-First Search)
-Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan (Stack).
+Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan ([Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Contoh Implementasi Python dari DFS pada Struktur Pohon
 
@@ -246,7 +246,7 @@ dfs_tree(root)
 ```
 
 ## 2. Pencarian Mendalam Pertama (DFS: Depth-First Search)
-Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan (Stack).
+Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan ([Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Contoh Implementasi Python dari DFS pada Struktur Pohon
 
@@ -275,7 +275,7 @@ dfs_tree(root)
 ```
 
 ## 2. Pencarian Mendalam Pertama (DFS: Depth-First Search)
-Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan (Stack).
+Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan ([Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Contoh Implementasi Python dari DFS pada Struktur Pohon
 
@@ -304,7 +304,7 @@ dfs_tree(root)
 ```
 
 ## 2. Pencarian Mendalam Pertama (DFS: Depth-First Search)
-Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan (Stack).
+Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan ([Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Contoh Implementasi Python dari DFS pada Struktur Pohon
 
@@ -333,7 +333,7 @@ dfs_tree(root)
 ```
 
 ## 2. Pencarian Mendalam Pertama (DFS: Depth-First Search)
-Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan (Stack).
+Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan ([Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Contoh Implementasi Python dari DFS pada Struktur Pohon
 
@@ -362,7 +362,7 @@ dfs_tree(root)
 ```
 
 ## 2. Pencarian Mendalam Pertama (DFS: Depth-First Search)
-Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan (Stack).
+Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan ([Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Contoh Implementasi Python dari DFS pada Struktur Pohon
 
@@ -391,7 +391,7 @@ dfs_tree(root)
 ```
 
 ## 2. Pencarian Mendalam Pertama (DFS: Depth-First Search)
-Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan (Stack).
+Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan ([Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Contoh Implementasi Python dari DFS pada Struktur Pohon
 
@@ -420,7 +420,7 @@ dfs_tree(root)
 ```
 
 ## 2. Pencarian Mendalam Pertama (DFS: Depth-First Search)
-Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan (Stack).
+Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan ([Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Contoh Implementasi Python dari DFS pada Struktur Pohon
 
@@ -449,7 +449,7 @@ dfs_tree(root)
 ```
 
 ## 2. Pencarian Mendalam Pertama (DFS: Depth-First Search)
-Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan (Stack).
+Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan ([Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Contoh Implementasi Python dari DFS pada Struktur Pohon
 
@@ -478,7 +478,7 @@ dfs_tree(root)
 ```
 
 ## 2. Pencarian Mendalam Pertama (DFS: Depth-First Search)
-Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan (Stack).
+Pencarian mendalam pertama adalah algoritma yang dimulai dari suatu simpul, bergerak sedalam mungkin, dan ketika mencapai jalan buntu, ia akan kembali ke simpul sebelumnya dan melanjutkan pencarian. Dengan menggunakan fungsi rekursif, ini dapat diimplementasikan dengan sangat sederhana. Terkadang ini juga memanfaatkan struktur data yang disebut tumpukan ([Stack](https://kenji.blog/id/p/c-language-pointers-memory-management-stack-heap/)).
 
 ### Contoh Implementasi Python dari DFS pada Struktur Pohon
 

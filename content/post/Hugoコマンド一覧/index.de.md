@@ -11,7 +11,7 @@ description: 'Wir stellen die CLI-Installationsmethode für den schnellen Static
 
 # Was ist Hugo
 
-Hugo ist ein Generator für statische Websites. Sie können eine Website erstellen, indem Sie Markdown-Dateien in HTML konvertieren. Hugo ist in der Sprache Go geschrieben und arbeitet sehr schnell.
+Hugo ist ein Generator für statische Websites. Sie können eine Website erstellen, indem Sie Markdown-Dateien in HTML konvertieren. Hugo ist in der Sprache [Go](https://kenji.blog/de/p/programming-languages-history-paradigm-evolution/) geschrieben und arbeitet sehr schnell.
 
 Dieser Blog wurde ebenfalls mit Hugo erstellt.
 

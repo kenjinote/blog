@@ -161,7 +161,7 @@ Assim, mesmo no ambiente Windows, você pode construir, procurar e executar coma
 
 Uma das ações mais repetitivas no terminal é **"pesquisar no histórico por um comando complexo já executado e executá-lo novamente"**. O `Ctrl+R` padrão (pesquisa reversa) usa correspondência exata, dificultando a busca quando só lembramos vagamente de trechos como "Acho que tinha um docker run para montar um volume...".
 
-Isso é resolvido brilhantemente pela ferramenta ultrarrápida de busca aproximada (fuzzy search), **`fzf`**, desenvolvida em Go.
+Isso é resolvido brilhantemente pela ferramenta ultrarrápida de busca aproximada (fuzzy search), **`fzf`**, desenvolvida em [Go](https://kenji.blog/pt/p/programming-languages-history-paradigm-evolution/).
 
 ## 4.1. O [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) de Busca Aproximada com fzf
 

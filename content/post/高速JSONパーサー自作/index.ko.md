@@ -443,7 +443,7 @@ $$
 Space(N) \le C \times N \implies O(N)
 $$
 
-단, 재귀적 하향 구문 분석에서는 JSON의 중첩 깊이(Depth)에 비례하여 콜 스택을 소비합니다. 깊이 $D$에 대해 스택 메모리 $O(D)$가 필요합니다. 악의적인 무한 중첩 JSON이 주어지면 Stack Overflow를 일으킬 위험성이 있으므로, 실용적인 파서에서는 재귀 깊이에 상한(예: 256이나 512 등)을 두거나 재귀를 루프로 전개하는 연구가 필요합니다.
+단, 재귀적 하향 구문 분석에서는 JSON의 중첩 깊이(Depth)에 비례하여 콜 스택을 소비합니다. 깊이 $D$에 대해 스택 메모리 $O(D)$가 필요합니다. 악의적인 무한 중첩 JSON이 주어지면 [Stack](https://kenji.blog/ko/p/c-language-pointers-memory-management-stack-heap/) Overflow를 일으킬 위험성이 있으므로, 실용적인 파서에서는 재귀 깊이에 상한(예: 256이나 512 등)을 두거나 재귀를 루프로 전개하는 연구가 필요합니다.
 
 ---
 

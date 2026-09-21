@@ -9,9 +9,9 @@ categories: ["ai", "llm", "windows"]
 tags: ["LLM", "Windows", "Local AI", "Ollama", "llama.cpp"]
 ---
 
-# 1. Pendahuluan: Mengapa LLM Lokal di Windows Sekarang?
+# 1. Pendahuluan: Mengapa [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) Lokal di Windows Sekarang?
 
-Pada tahun 2026, evolusi AI Generatif dan Large Language Models (LLM) menunjukkan pergeseran paradigma besar dari layanan API raksasa di cloud ke "LLM lokal" yang berjalan di PC pribadi atau lingkungan on-premise. AI cloud seperti GPT-5 dari OpenAI dan Claude 3.5 dari Anthropic sangat kuat, namun tidak semua perusahaan atau individu dapat mengirimkan seluruh data mereka ke cloud. Dari perspektif privasi, keamanan, latensi, serta biaya jangka panjang dan berkelanjutan, permintaan untuk LLM lokal meningkat pesat seperti yang belum pernah terjadi sebelumnya.
+Pada tahun 2026, evolusi AI Generatif dan [Large Language Models](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) (LLM) menunjukkan pergeseran paradigma besar dari layanan API raksasa di cloud ke "LLM lokal" yang berjalan di PC pribadi atau lingkungan on-premise. AI cloud seperti GPT-5 dari OpenAI dan Claude 3.5 dari Anthropic sangat kuat, namun tidak semua perusahaan atau individu dapat mengirimkan seluruh data mereka ke cloud. Dari perspektif privasi, keamanan, latensi, serta biaya jangka panjang dan berkelanjutan, permintaan untuk LLM lokal meningkat pesat seperti yang belum pernah terjadi sebelumnya.
 
 Khususnya di lingkungan Windows, evolusi ekosistem LLM lokal sangat luar biasa. Hingga beberapa tahun yang lalu, menjadi rahasia umum bahwa "pengembangan dan eksekusi AI sama dengan Linux", tetapi pada tahun 2026, Windows telah bertransformasi menjadi platform AI yang sangat kuat dan mudah digunakan.
 
@@ -63,7 +63,7 @@ Setelah instalasi, jalankan `nvidia-smi` di terminal WSL2. Jika GPU terdeteksi s
 
 ---
 
-# 3. Arsitektur LLM Lokal dan Mekanisme Inferensi
+# 3. Arsitektur [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) Lokal dan Mekanisme Inferensi
 
 Memahami struktur internal bagaimana model menghasilkan teks di lingkungan lokal sangat berguna untuk pemecahan masalah dan pengoptimalan.
 
@@ -91,7 +91,7 @@ graph TD
 
 ## 3.1 Dua Fase: Prefill dan Decode
 
-Pembuatan teks LLM dibagi menjadi dua fase dengan karakteristik komputasi yang berbeda.
+Pembuatan teks [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) dibagi menjadi dua fase dengan karakteristik komputasi yang berbeda.
 
 1. **Fase Prefill (Pemrosesan Prompt)**: Ini adalah fase untuk memproses dan memahami seluruh prompt input sekaligus. Karena komputasi paralel memungkinkan, kapasitas komputasi GPU (FLOPS) berbanding lurus dengan kecepatan. Jika prompt panjang, fase ini bisa memakan waktu beberapa detik.
 2. **Fase Decode (Pembuatan Token)**: Fase ini memprediksi token demi token dan memasukkannya kembali sebagai input berikutnya (autoregresif). Karena komputasi paralel terbatas dalam fase ini, bandwidth VRAM GPU (Memory Bandwidth) menjadi bottleneck penentu.
@@ -273,7 +273,7 @@ graph LR
     LocalLLM --> Answer["Jawaban Akhir"]
 ```
 
-Dengan AnythingLLM versi desktop (Windows), Anda hanya perlu menentukan Ollama (LLM dan Embedding) dari layar pengaturan, dan mengaturnya untuk menggunakan VectorDB lokal (LanceDB), dan arsitektur ini selesai dalam beberapa menit. Lahirlah AI privat yang tidak mengirimkan data apa pun ke luar.
+Dengan AnythingLLM versi desktop (Windows), Anda hanya perlu menentukan Ollama ([LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) dan Embedding) dari layar pengaturan, dan mengaturnya untuk menggunakan VectorDB lokal (LanceDB), dan arsitektur ini selesai dalam beberapa menit. Lahirlah AI privat yang tidak mengirimkan data apa pun ke luar.
 
 ---
 
@@ -314,7 +314,7 @@ Ini adalah masalah umum dan solusinya.
 
 # 10. Kesimpulan dan Prospek Masa Depan
 
-Pada tahun 2026, membangun LLM lokal di lingkungan Windows tidak lagi menjadi hak istimewa eksklusif segelintir insinyur. Melalui standar de facto format GGUF, munculnya ekosistem yang disempurnakan seperti Ollama dan LM Studio, serta pengoptimalan perangkat keras termasuk FlashAttention, siapa pun kini dapat dengan mudah memperoleh lingkungan AI tingkat perusahaan (enterprise).
+Pada tahun 2026, membangun [LLM](https://kenji.blog/id/p/large-language-models-llm-transformer-prompt-engineering/) lokal di lingkungan Windows tidak lagi menjadi hak istimewa eksklusif segelintir insinyur. Melalui standar de facto format GGUF, munculnya ekosistem yang disempurnakan seperti Ollama dan LM Studio, serta pengoptimalan perangkat keras termasuk FlashAttention, siapa pun kini dapat dengan mudah memperoleh lingkungan AI tingkat perusahaan (enterprise).
 
 Silakan manfaatkan poin-poin yang dijelaskan dalam artikel ini:
 

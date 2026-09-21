@@ -98,7 +98,7 @@ The teacher smiled smugly.
 
 ---
 
-## 3. Where Did the Logic Go Wrong?
+## 3. Where Did the Logic [Go](https://kenji.blog/en/p/programming-languages-history-paradigm-evolution/) Wrong?
 
 Even though Student A's proof looked perfect, why did a "perfect surprise test" actually take place in reality?
 This problem is originally called the "Unexpected Hanging Paradox," and ever since it was devised by the Swedish mathematician Lennart Ekbom in the 1940s, it has continued to trouble philosophers and logicians.

@@ -24,7 +24,7 @@ Wir hoffen, dass dies den Lesern dabei hilft, ihre eigene beste Terminalumgebung
 
 # 1. Die Rendering-Architektur und das mathematische Modell von Windows Terminal
 
-Hinter dem schnellen und flüssigen Betrieb des Windows Terminals verbirgt sich eine raffinierte Rendering-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/), die den modernen Grafik-Stack von Windows voll ausnutzt. Anstelle des traditionellen GDI (Graphics Device Interface) verwendet das Windows Terminal hardwarebeschleunigtes GPU-Rendering auf Basis von DirectWrite und DirectX (Direct2D/Direct3D).
+Hinter dem schnellen und flüssigen Betrieb des Windows Terminals verbirgt sich eine raffinierte Rendering-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/), die den modernen Grafik-[Stack](https://kenji.blog/de/p/c-language-pointers-memory-management-stack-heap/) von Windows voll ausnutzt. Anstelle des traditionellen GDI (Graphics Device Interface) verwendet das Windows Terminal hardwarebeschleunigtes GPU-Rendering auf Basis von DirectWrite und DirectX (Direct2D/Direct3D).
 
 Das folgende Diagramm veranschaulicht das konzeptionelle Modell der Terminal-Rendering-Pipeline von der Tastatureingabe bis zum Zeichnen der Zeichen auf dem Bildschirm.
 

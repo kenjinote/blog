@@ -10,9 +10,9 @@ tags: ["llama.cpp", "GGUF", "Cuantización", "LLM"]
 description: 'Explicaremos con gran detalle, incluyendo fórmulas matemáticas y diagramas de arquitectura, la estructura interna del formato GGUF y la tecnología de cuantización k-quants empleada en llama.cpp.'
 ---
 
-## 1. Introducción: ¿Por qué los LLM necesitan cuantización?
+## 1. Introducción: ¿Por qué los [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) necesitan cuantización?
 
-El reciente avance de los modelos de lenguaje grande (LLM: Large Language Models) ha sido notable, pero detrás de escena han surgido problemas graves como el "agotamiento de recursos de cómputo" y el "cuello de botella del ancho de banda de memoria". Por ejemplo, si se carga en memoria un modelo de 70B (70 mil millones) de parámetros como Llama 3 utilizando el estándar de coma flotante de 16 bits (FP16), solo los parámetros consumirán unos 140 GB de VRAM/RAM. Si a esto le sumamos el contexto durante la inferencia (caché KV), el modelo no podrá funcionar sin agrupar en un clúster múltiples GPU de gama alta para centros de datos (como NVIDIA A100 de 80 GB o H100 de 80 GB).
+El reciente avance de los modelos de lenguaje grande (LLM: [Large Language Models](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/)) ha sido notable, pero detrás de escena han surgido problemas graves como el "agotamiento de recursos de cómputo" y el "cuello de botella del ancho de banda de memoria". Por ejemplo, si se carga en memoria un modelo de 70B (70 mil millones) de parámetros como Llama 3 utilizando el estándar de coma flotante de 16 bits (FP16), solo los parámetros consumirán unos 140 GB de VRAM/RAM. Si a esto le sumamos el contexto durante la inferencia (caché KV), el modelo no podrá funcionar sin agrupar en un clúster múltiples GPU de gama alta para centros de datos (como NVIDIA A100 de 80 GB o H100 de 80 GB).
 
 Como salvador para ejecutar LLMs en dispositivos edge (como MacBooks o PCs de gaming comunes) y para desarrolladores individuales, apareció **llama.cpp** y su tecnología principal, la **cuantización (Quantization)**. En particular, el formato de archivo **GGUF (GPT-Generated Unified Format)** y el avanzado algoritmo de cuantización por bloques llamado **k-quants** son métodos innovadores que comprimen el tamaño del modelo a una fracción de su original, minimizando al máximo la degradación en la precisión (Perplejidad) del mismo.
 
@@ -175,7 +175,7 @@ llama.cpp ofrece múltiples variaciones según el objetivo. Los sufijos después
 
 ## 5. Optimización del rendimiento en la inferencia: Arquitecturas SIMD y CUDA
 
-El solo hecho de cargar un modelo GGUF en memoria no hace que la inferencia sea rápida. La mayor parte de la inferencia de un LLM es una "multiplicación de matriz-vector (Matrix-Vector Multiplication, abreviado GEMV, o Matriz-Matriz, GEMM)". La clave reside en cómo acelerar la operación de suma de productos (dot product) entre los pesos cuantizados y las activaciones (datos de entrada) retenidas en FP16 (o FP32).
+El solo hecho de cargar un modelo GGUF en memoria no hace que la inferencia sea rápida. La mayor parte de la inferencia de un [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) es una "multiplicación de matriz-vector (Matrix-Vector Multiplication, abreviado GEMV, o Matriz-Matriz, GEMM)". La clave reside en cómo acelerar la operación de suma de productos (dot product) entre los pesos cuantizados y las activaciones (datos de entrada) retenidas en FP16 (o FP32).
 
 ### 5.1. Aprovechamiento de instrucciones SIMD en entornos de CPU
 
@@ -226,7 +226,7 @@ Tomemos como ejemplo el modelo Llama 3 de 8B para ver los requisitos técnicos s
 | **Llama-3-8B (Q2_K)** | Aprox. 3.0 GB | 4.5 GB o más | Rápida | Degradación evidente |
 
 **Punto de atención (El impacto de la caché KV):**
-Durante la inferencia de un LLM, a medida que la longitud del contexto (número de tokens en el prompt) aumenta, el consumo de memoria se incrementa de manera explosiva no solo por los pesos del modelo, sino también por la **Caché KV**, que guarda el estado histórico de Attention.
+Durante la inferencia de un [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/), a medida que la longitud del contexto (número de tokens en el prompt) aumenta, el consumo de memoria se incrementa de manera explosiva no solo por los pesos del modelo, sino también por la **Caché KV**, que guarda el estado histórico de Attention.
 Por ejemplo, si el contexto tiene 8192 tokens, la caché KV por sí sola consumirá varios gigabytes. Por tanto, en la operación real, es necesario asegurar un margen (Headroom) de `Tamaño del archivo del modelo + Aprox. 1.5GB ~ 3GB`. La razón por la que se recomienda Q4_K_M es porque, incluso reservando este espacio para la caché KV, representa el equilibrio ideal para funcionar con seguridad en una GPU común de 8 GB de VRAM (como una RTX 3060 / 4060).
 
 En las versiones recientes de llama.cpp, se ha añadido también **la función de cuantizar la propia Caché KV a Q8_0 o Q4_0**, de manera que se investiga incesantemente para poder extender aún más la longitud de los contextos.
@@ -237,7 +237,7 @@ En las versiones recientes de llama.cpp, se ha añadido también **la función d
 
 En este artículo, hemos profundizado en la estructura interna del formato GGUF y la tecnología de cuantización k-quants, que conforman el núcleo de llama.cpp.
 
-1. **La flexibilidad de GGUF:** Su estructura de metadatos tipo clave-valor ha construido un sólido ecosistema capaz de seguir el rápido ritmo evolutivo de los LLM (con la aparición de nuevas arquitecturas de modelos) sin sufrir cambios destructivos.
+1. **La flexibilidad de GGUF:** Su estructura de metadatos tipo clave-valor ha construido un sólido ecosistema capaz de seguir el rápido ritmo evolutivo de los [LLM](https://kenji.blog/es/p/large-language-models-llm-transformer-prompt-engineering/) (con la aparición de nuevas arquitecturas de modelos) sin sufrir cambios destructivos.
 2. **Compresión extrema mediante k-quants:** A través de la gestión jerárquica de los factores de escala en superbloques y subbloques, se ha logrado una asombrosa compresión promedio de 4.8 bits por peso (en Q4_K_M), conservando al mismo tiempo la información de los valores atípicos.
 3. **Resolución del cuello de botella en el ancho de banda de memoria:** Mediante el uso de sofisticadas implementaciones de kernels en SIMD y CUDA, y al realizar la descuantización al vuelo mientras se calcula, se reduce la cantidad de transferencia hacia/desde la VRAM, lo que mejora drásticamente la velocidad de inferencia.
 

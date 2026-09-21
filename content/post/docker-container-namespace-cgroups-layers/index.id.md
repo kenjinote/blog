@@ -308,7 +308,7 @@ Berdasarkan pengetahuan yang telah kita pelajari sejauh ini, mari kita bahas car
 
 ### 8.1 Memanfaatkan Pembuatan Multi-tahap (Multi-stage build)
 
-Dengan memisahkan lingkungan build (pembuatan) dan lingkungan jalankan (eksekusi), Anda dapat secara drastis mengurangi ukuran gambar akhir. Ini sangat efektif untuk bahasa yang dikompilasi seperti Go, Rust, atau Java.
+Dengan memisahkan lingkungan build (pembuatan) dan lingkungan jalankan (eksekusi), Anda dapat secara drastis mengurangi ukuran gambar akhir. Ini sangat efektif untuk bahasa yang dikompilasi seperti [Go](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), [Rust](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/), atau [Java](https://kenji.blog/id/p/programming-languages-history-paradigm-evolution/).
 
 ```dockerfile
 # --- Tahap 1: Lingkungan Build ---

@@ -13,7 +13,7 @@ description: 'Windows環境でC言語用暗号化通信ライブラリ「OpenSSL
 
 [暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)通信をおこなう上で必要な処理を提供するオープンソースライブラリです。
 
-プログラムから使うには、C言語ソースコードが公開されているので、ビルドしてライブラリを作成する必要があります。
+プログラムから使うには、[C言語](https://kenji.blog/p/c-language-pointers-memory-management-stack-heap/)ソースコードが公開されているので、ビルドしてライブラリを作成する必要があります。
 
 以下ではビルド手順を紹介します。
 

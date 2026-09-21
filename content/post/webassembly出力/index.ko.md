@@ -17,9 +17,9 @@ tags: ["C++", "Rust", "Wasm", "JavaScript"]
 
 ## 2. [WebAssembly](https://kenji.blog/ko/p/webassembly-wasm-current-future/) ([Wasm](https://kenji.blog/ko/p/webassembly-wasm-current-future/)) 개요 및 아키텍처
 
-WebAssembly는 스택 기반 가상 머신을 위한 바이너리 명령 포맷입니다. C/C++, [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/), Go, Zig 등의 언어에서 컴파일 가능한 '이식성 있는 컴파일 타깃'으로 설계되었으며, 웹 브라우저 상에서 네이티브에 가까운 속도로 실행하는 것을 목적으로 합니다.
+WebAssembly는 스택 기반 가상 머신을 위한 바이너리 명령 포맷입니다. C/C++, [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/), [Go](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/), Zig 등의 언어에서 컴파일 가능한 '이식성 있는 컴파일 타깃'으로 설계되었으며, 웹 브라우저 상에서 네이티브에 가까운 속도로 실행하는 것을 목적으로 합니다.
 
-다음 그림은 C++와 Rust에서 WebAssembly가 생성되어 브라우저 내에서 실행되기까지의 대략적인 툴체인 흐름을 보여줍니다.
+다음 그림은 C++와 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)에서 WebAssembly가 생성되어 브라우저 내에서 실행되기까지의 대략적인 툴체인 흐름을 보여줍니다.
 
 ```mermaid
 graph TD
@@ -139,7 +139,7 @@ Module.onRuntimeInitialized = () => {
 
 ## 5. [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)와 `wasm-pack`을 통한 접근법
 
-[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 [WebAssembly](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에 대한 일급 지원(first-class support)을 제공하며, `wasm-bindgen` 및 `wasm-pack` 도구를 사용함으로써 JavaScript와 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 간의 고도화된 연동이 가능합니다. Emscripten이 'C/C++의 거대한 런타임을 브라우저로 가져오는' 방식인 반면, Rust의 `wasm-pack`은 '필요 최소한의 바인딩(JS 글루 코드)만을 생성하는' 방식을 취합니다.
+[Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/)는 [WebAssembly](https://kenji.blog/ko/p/webassembly-wasm-current-future/)에 대한 일급 지원(first-class support)을 제공하며, `wasm-bindgen` 및 `wasm-pack` 도구를 사용함으로써 JavaScript와 [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 간의 고도화된 연동이 가능합니다. Emscripten이 'C/C++의 거대한 런타임을 브라우저로 가져오는' 방식인 반면, [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/)의 `wasm-pack`은 '필요 최소한의 바인딩(JS 글루 코드)만을 생성하는' 방식을 취합니다.
 
 ### [Rust](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 구현 코드
 
@@ -287,9 +287,9 @@ graph TD
 
 브라우저의 [Wasm](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 엔진은 이러한 섹션들을 스트리밍 컴파일(다운로드와 동시에 병렬로 기계어로 컴파일)함으로써 실행의 극적인 고속화를 실현하고 있습니다.
 
-## 9. C++ vs Rust: 어느 것을 선택해야 하는가?
+## 9. C++ vs [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/): 어느 것을 선택해야 하는가?
 
-[WebAssembly](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 생성 시 C++와 Rust 중 어느 것을 선택할지는 프로젝트의 요구 사항과 기존 자산에 크게 좌우됩니다.
+[WebAssembly](https://kenji.blog/ko/p/webassembly-wasm-current-future/) 생성 시 C++와 [Rust](https://kenji.blog/ko/p/programming-languages-history-paradigm-evolution/) 중 어느 것을 선택할지는 프로젝트의 요구 사항과 기존 자산에 크게 좌우됩니다.
 
 **C++ / Emscripten을 선택해야 하는 경우**:
 * 기존 C/C++ 라이브러리(FFmpeg, OpenCV, SQLite 등)를 브라우저로 이식(porting)하고 싶은 경우.

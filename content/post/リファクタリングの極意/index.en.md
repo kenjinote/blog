@@ -216,7 +216,7 @@ In code from the C++98/03 era, `new` and `delete` are scattered everywhere, serv
 ### RAII (Resource Acquisition Is Initialization)
 RAII is the most important idiom in C++. By tying resource acquisition to object initialization (constructor) and resource release to object destruction (destructor), it guarantees that resources are reliably released when they go out of scope.
 
-Even if Exceptions occur, local variable destructors are automatically called during the Stack Unwinding process, thus preventing resource leaks.
+Even if Exceptions occur, local variable destructors are automatically called during the [Stack](https://kenji.blog/en/p/c-language-pointers-memory-management-stack-heap/) Unwinding process, thus preventing resource leaks.
 
 **Before (Dangerous legacy code)**
 ```cpp
