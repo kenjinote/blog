@@ -103,14 +103,14 @@ QUIC最令人惊讶之处在于，它抛弃了长期作为互联网基础的TCP�
 
 ```mermaid
 flowchart TD
-    subgraph HTTP/3 Stack ["HTTP/3 Stack"]
+    subgraph "HTTP/3 Stack ["HTTP/3 Stack"]"
         H3["HTTP/3 (HTTP Semantics, QPACK)"]
         QUIC["QUIC (Multiplexing, Congestion Control, TLS 1.3)"]
         UDP["UDP"]
         IP["IP"]
     end
     
-    subgraph HTTP/2 Stack ["HTTP/2 Stack"]
+    subgraph "HTTP/2 Stack ["HTTP/2 Stack"]"
         H2["HTTP/2 (HPACK)"]
         TLS["TLS 1.2 / 1.3"]
         TCP["TCP"]

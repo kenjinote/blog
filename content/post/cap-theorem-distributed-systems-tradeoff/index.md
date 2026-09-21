@@ -93,7 +93,7 @@ Node 2 が `0` を返せば、クライアントには正常なレスポンス�
 
 ```mermaid
 flowchart TD
-    subgraph CAP Theorem
+    subgraph "CAP Theorem"
     C(Consistency\n一貫性)
     A(Availability\n可用性)
     P(Partition Tolerance\n分断耐性)

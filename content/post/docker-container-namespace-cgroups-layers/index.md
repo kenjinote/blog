@@ -35,11 +35,11 @@ graph TD
     HostOS --> VM1[VM 1]
     HostOS --> VM2[VM 2]
     
-    subgraph VM 1
+    subgraph "VM 1"
     GuestOS1[Guest OS] --> Bins1[Bins/Libs] --> App1[App A]
     end
     
-    subgraph VM 2
+    subgraph "VM 2"
     GuestOS2[Guest OS] --> Bins2[Bins/Libs] --> App2[App B]
     end
 ```
@@ -58,11 +58,11 @@ graph TD
     ContainerEngine --> Cont1[Container 1]
     ContainerEngine --> Cont2[Container 2]
     
-    subgraph Container 1
+    subgraph "Container 1"
     Bins1[Bins/Libs] --> App1[App A]
     end
     
-    subgraph Container 2
+    subgraph "Container 2"
     Bins2[Bins/Libs] --> App2[App B]
     end
 ```
@@ -179,15 +179,15 @@ OverlayFSは、異なるディレクトリ（下層と上層）をマージし�
 
 ```mermaid
 graph TD
-    subgraph Container Mount
+    subgraph "Container Mount"
         Merge[Merged View <br> /var/lib/docker/overlay2/.../merged]
     end
     
-    subgraph Container Layer
+    subgraph "Container Layer"
         Upper[Upperdir: Read/Write <br> 変更・追加されたファイル]
     end
     
-    subgraph Image Layers
+    subgraph "Image Layers"
         Lower1[Lowerdir 1: Read-Only <br> Layer 3]
         Lower2[Lowerdir 2: Read-Only <br> Layer 2]
         Lower3[Lowerdir 3: Read-Only <br> Layer 1 Base OS]
@@ -271,7 +271,7 @@ Dockerのデフォルトネットワークモデルは **Bridgeネットワー�
 
 ```mermaid
 graph TD
-    subgraph Host Network Namespace
+    subgraph "Host Network Namespace"
         Eth0[eth0 (Physical Interface)]
         Docker0[docker0 (Virtual Bridge)]
         VethHost1[veth_1a]
@@ -282,11 +282,11 @@ graph TD
         Docker0 <--> VethHost2
     end
     
-    subgraph Container 1 Network Namespace
+    subgraph "Container 1 Network Namespace"
         Eth0C1[eth0 (Container 1)]
     end
     
-    subgraph Container 2 Network Namespace
+    subgraph "Container 2 Network Namespace"
         Eth0C2[eth0 (Container 2)]
     end
     

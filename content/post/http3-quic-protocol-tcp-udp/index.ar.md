@@ -103,14 +103,14 @@ architecture-beta
 
 ```mermaid
 flowchart TD
-    subgraph HTTP/3 Stack ["حزمة HTTP/3"]
+    subgraph "HTTP/3 Stack ["حزمة HTTP/3"]"
         H3["HTTP/3 (دلالات HTTP، QPACK)"]
         QUIC["QUIC (تعدد الإرسال، التحكم في الازدحام، TLS 1.3)"]
         UDP["UDP"]
         IP["IP"]
     end
     
-    subgraph HTTP/2 Stack ["حزمة HTTP/2"]
+    subgraph "HTTP/2 Stack ["حزمة HTTP/2"]"
         H2["HTTP/2 (HPACK)"]
         TLS["TLS 1.2 / 1.3"]
         TCP["TCP"]

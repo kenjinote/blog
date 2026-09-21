@@ -136,7 +136,7 @@ JavaのGCは「到達可能性（ Reachability ）」という概念に基づい
 
 ```mermaid
 graph TD
-    subgraph GC Roots
+    subgraph "GC Roots"
         ThreadStack[スレッドスタック]
         StaticClass[静的クラス変数]
     end

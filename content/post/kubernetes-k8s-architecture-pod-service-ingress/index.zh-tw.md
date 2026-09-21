@@ -252,7 +252,7 @@ Ingress 是將叢集外部至叢集內部 Service 的 HTTP 與 HTTPS 路由公�
 ```mermaid
 flowchart LR
     Client(["外部用戶端 (External Client)"])
-    subgraph K8s Cluster ["K8s 叢集 (K8s Cluster)"]
+    subgraph "K8s Cluster ["K8s 叢集 (K8s Cluster)"]"
         Ingress["Ingress Controller"]
         
         subgraph Services ["服務 (Services)"]

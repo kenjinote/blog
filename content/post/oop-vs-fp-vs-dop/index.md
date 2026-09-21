@@ -164,13 +164,13 @@ fn update_positions(positions: &mut [Position], velocities: &[Velocity], dt: f32
 
 ```mermaid
 graph TD
-    subgraph Data (Components)
+    subgraph Data [\"Data (Components)\"]
         P[Positions Array]
         V[Velocities Array]
         H[Healths Array]
     end
 
-    subgraph Logic (Systems)
+    subgraph Logic [\"Logic (Systems)\"]
         PhysicsSystem
         DamageSystem
     end

@@ -180,7 +180,7 @@ NP困難であり、かつ自身もクラスNPに属する問題のクラスで�
 
 ```mermaid
 graph TD
-    subgraph 計算複雑性クラスの包含関係 (P!=NPの仮定)
+    subgraph "計算複雑性クラスの包含関係 (P!=NPの仮定)"
         NPH[NP困難 (NP-Hard)]
         NPC[NP完全 (NP-Complete)]
         NP_Class[NP]

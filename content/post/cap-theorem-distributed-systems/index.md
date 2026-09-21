@@ -28,7 +28,7 @@ CAP定理について語る前に、そもそも **分散システム** （[Dist
 ```mermaid
 graph LR
     Client((Client))
-    subgraph Distributed System
+    subgraph "Distributed System"
         NodeA[Node A]
         NodeB[Node B]
         NodeC[Node C]

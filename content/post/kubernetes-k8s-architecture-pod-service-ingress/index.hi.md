@@ -252,7 +252,7 @@ Ingress को काम करने के लिए, क्लस्टर �
 ```mermaid
 flowchart LR
     Client(["External Client"])
-    subgraph K8s Cluster
+    subgraph "K8s Cluster"
         Ingress["Ingress Controller"]
         
         subgraph Services

@@ -251,7 +251,7 @@ Ingressを機能させるには、 **Ingress Controller** （NGINX Ingress Contr
 ```mermaid
 flowchart LR
     Client([External Client])
-    subgraph K8s Cluster
+    subgraph "K8s Cluster"
         Ingress[Ingress Controller]
         
         subgraph Services

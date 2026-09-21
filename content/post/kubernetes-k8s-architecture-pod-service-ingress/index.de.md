@@ -252,7 +252,7 @@ Das folgende Mermaid-Diagramm zeigt den Fluss des Datenverkehrs über den Ingres
 ```mermaid
 flowchart LR
     Client(["External Client"])
-    subgraph K8s Cluster ["K8s Cluster"]
+    subgraph "K8s Cluster ["K8s Cluster"]"
         Ingress["Ingress Controller"]
         
         subgraph Services ["Services"]

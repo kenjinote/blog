@@ -133,7 +133,7 @@ flowchart LR
     C -->|Message| D(Mailbox)
     D --> A
     
-    subgraph Actor System
+    subgraph "Actor System"
         A
         C
     end
