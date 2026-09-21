@@ -11,13 +11,13 @@ tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 
 # 1. 導入：ポスト量子暗号（PQC）の夜明けと格子暗号の台頭
 
-現代社会のデジタルインフラを支えているのは、RSA暗号や楕円曲線暗号（ECC）をはじめとする公開鍵暗号技術です。これらの暗号方式は、「素因数分解問題」や「離散対数問題」といった、従来の古典コンピュータでは効率的に解くことができない（指数関数的な時間を要する）と信じられている数学的な困難性に安全性の根拠を置いています。
+現代社会のデジタルインフラを支えているのは、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や楕円曲線暗号（ECC）をはじめとする[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号技術です。これらの暗号方式は、「素因数分解問題」や「離散対数問題」といった、従来の古典コンピュータでは効率的に解くことができない（指数関数的な時間を要する）と信じられている数学的な困難性に安全性の根拠を置いています。
 
-しかし、1994年にピーター・ショア（Peter Shor）によって発表された「Shorのアルゴリズム」は、暗号界に激震を走らせました。このアルゴリズムは、大規模な[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)が実現した暁には、素因数分解問題や離散対数問題を多項式時間で解いてしまうことを数学的に証明したのです。これはつまり、現在広く利用されている公開鍵暗号が、将来的に完全に解読可能になってしまうということを意味しています。
+しかし、1994年にピーター・ショア（Peter Shor）によって発表された「Shorのアルゴリズム」は、暗号界に激震を走らせました。このアルゴリズムは、大規模な[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)が実現した暁には、素因数分解問題や離散対数問題を多項式時間で解いてしまうことを数学的に証明したのです。これはつまり、現在広く利用されている[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号が、将来的に完全に解読可能になってしまうということを意味しています。
 
 このような「量子コンピュータの脅威（Quantum Threat）」に対抗するため、量子コンピュータを用いても解読が困難な新しい暗号方式の研究が急務となりました。これが「ポスト量子暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy: PQC）」または「耐量子計算機暗号」と呼ばれる分野です。
 
-PQCにはいくつかの有力な候補が存在します。ハッシュベース暗号、符号ベース暗号、多変数多項式暗号、同種写像暗号などが挙げられますが、その中でも現在最も注目を集め、NIST（米国国立標準技術研究所）によるPQC標準化プロセスの中心となっているのが「格子暗号（Lattice-based cryptography）」です。格子暗号は、他の方式と比較して、暗号化・復号の処理速度が非常に高速であり、また「最悪時計算量（Worst-case complexity）」から「平均時計算量（Average-case complexity）」への帰着という、暗号理論において極めて強力な安全性の証明を持つという際立った特徴を持っています。
+PQCにはいくつかの有力な候補が存在します。ハッシュベース暗号、符号ベース暗号、多変数多項式暗号、同種写像暗号などが挙げられますが、その中でも現在最も注目を集め、NIST（米国国立標準技術研究所）によるPQC標準化プロセスの中心となっているのが「格子暗号（Lattice-based cryptography）」です。格子暗号は、他の方式と比較して、[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)・復号の処理速度が非常に高速であり、また「最悪時計算量（Worst-case complexity）」から「平均時計算量（Average-case complexity）」への帰着という、暗号理論において極めて強力な安全性の証明を持つという際立った特徴を持っています。
 
 本記事では、この格子暗号の基礎となる「格子（Lattice）」の数学的定義から出発し、格子上の困難な問題であるSVP（最短ベクトル問題）やCVP（最近接ベクトル問題）、そして現代の格子暗号の心臓部とも言える「LWE問題（Learning With Errors）」について、数式と幾何学的な直観、そして具体的な数値例を交えて、徹底的に深く解説していきます。
 
@@ -50,7 +50,7 @@ $$
 $$ B' = B U $$
 と表せることです。このような行列 $U$ を「ユニモジュラ行列（Unimodular matrix）」と呼びます。
 
-暗号への応用における基本的なアイデアは、「良い基底（直交に近く、短いベクトルからなる基底）」を秘密鍵とし、「悪い基底（互いに極端に斜交し、非常に長いベクトルからなる基底）」を公開鍵として用いることです。悪い基底から良い基底を計算で求めることは、次元が高くなると非常に困難になります。これが格子暗号の基本的な直観です。
+暗号への応用における基本的なアイデアは、「良い基底（直交に近く、短いベクトルからなる基底）」を秘密鍵とし、「悪い基底（互いに極端に斜交し、非常に長いベクトルからなる基底）」を[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)として用いることです。悪い基底から良い基底を計算で求めることは、次元が高くなると非常に困難になります。これが格子暗号の基本的な直観です。
 
 # 3. 格子における計算困難な問題
 
@@ -142,9 +142,9 @@ graph TD
     style C fill:#ccccff,stroke:#0000ff,stroke-width:2px,color:#000
 ```
 
-# 5. LWEを用いた公開鍵暗号方式（Regev暗号）の構築
+# 5. LWEを用いた[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号方式（Regev暗号）の構築
 
-LWE問題の困難性を理解したところで、それを使ってどのように暗号化と復号を行うのか、Oded Regevが提案した基本的な公開鍵暗号方式を見ていきましょう。ここでは、1ビットのメッセージ $M \in \{0, 1\}$ を暗号化する最も基本的な仕組みを解説します。
+LWE問題の困難性を理解したところで、それを使ってどのように[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)と復号を行うのか、Oded Regevが提案した基本的な公開鍵暗号方式を見ていきましょう。ここでは、1ビットのメッセージ $M \in \{0, 1\}$ を暗号化する最も基本的な仕組みを解説します。
 
 ## 5.1 鍵生成（Key Generation）
 1. システムパラメータとして、法となる素数 $q$、次元 $n$、方程式の数 $m$（$m > n \log q$）を決定します。
@@ -152,12 +152,12 @@ LWE問題の困難性を理解したところで、それを使ってどのよ�
 3. ランダムな行列 $A \in \mathbb{Z}_q^{m \times n}$ を生成します。
 4. 小さな誤差ベクトル $\mathbf{e} \in \mathbb{Z}_q^m$ を離散[ガウス](https://kenji.blog/p/gauss/)分布などの誤差分布から選びます。
 5. ベクトル $\mathbf{b} = A \mathbf{s} + \mathbf{e} \pmod q$ を計算します。
-6. 公開鍵（Public Key）は $(A, \mathbf{b})$ となります。
+6. [公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)（[Public Key](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)）は $(A, \mathbf{b})$ となります。
 7. 秘密鍵（Secret Key）は $\mathbf{s}$ となります。
 
 公開鍵はまさに「LWE問題のインスタンス」そのものです。公開鍵 $(A, \mathbf{b})$ から秘密鍵 $\mathbf{s}$ を求めることは、探索LWE問題を解くことに等しいため、安全性が保証されます。
 
-## 5.2 暗号化（Encryption）
+## 5.2 [暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)（Encryption）
 アリスはボブの公開鍵 $(A, \mathbf{b})$ を用いて、1ビットのメッセージ $M \in \{0, 1\}$ を暗号化します。
 
 1. ランダムなバイナリベクトル（成分が0か1）$\mathbf{r} \in \{0, 1\}^m$ を選びます。
@@ -229,7 +229,7 @@ flowchart LR
 
 # 6. 具体的な数値を用いたLWE暗号のトイ・エグザンプル
 
-数式の羅列だけでは実感が湧きにくいと思いますので、実際に非常に小さな数値パラメータを設定して、暗号化から復号までの計算を追ってみましょう。
+数式の羅列だけでは実感が湧きにくいと思いますので、実際に非常に小さな数値パラメータを設定して、[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)から復号までの計算を追ってみましょう。
 （※現実の暗号システムでは、安全性確保のため $n$ は500以上、$q$ は数千以上の値が使われます）
 
 **【パラメータ設定】**
@@ -245,7 +245,7 @@ $$ \mathbf{s} = \begin{pmatrix} 3 \\ 4 \end{pmatrix} \in \mathbb{Z}_{17}^2 $$
 $$ A = \begin{pmatrix} 2 & 15 \\ 1 & 8 \\ 14 & 5 \\ 9 & 10 \end{pmatrix} \in \mathbb{Z}_{17}^{4 \times 2} $$
 $$ \mathbf{e} = \begin{pmatrix} 1 \\ -1 \\ 0 \\ 2 \end{pmatrix} \equiv \begin{pmatrix} 1 \\ 16 \\ 0 \\ 2 \end{pmatrix} \pmod{17} $$
 
-次に公開鍵 $\mathbf{b}$ を計算します。
+次に[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) $\mathbf{b}$ を計算します。
 $$ A \mathbf{s} = \begin{pmatrix} 2 & 15 \\ 1 & 8 \\ 14 & 5 \\ 9 & 10 \end{pmatrix} \begin{pmatrix} 3 \\ 4 \end{pmatrix} = \begin{pmatrix} 2\times 3 + 15\times 4 \\ 1\times 3 + 8\times 4 \\ 14\times 3 + 5\times 4 \\ 9\times 3 + 10\times 4 \end{pmatrix} = \begin{pmatrix} 6 + 60 \\ 3 + 32 \\ 42 + 20 \\ 27 + 40 \end{pmatrix} = \begin{pmatrix} 66 \\ 35 \\ 62 \\ 67 \end{pmatrix} $$
 これを法 17 で計算します。($66 = 17 \times 3 + 15$ など)
 $$ A \mathbf{s} \pmod{17} = \begin{pmatrix} 15 \\ 1 \\ 11 \\ 16 \end{pmatrix} $$
@@ -312,17 +312,17 @@ Module-LWEでは、多項式を要素とする小さな行列とベクトルを�
 
 最後に、「なぜ格子暗号は量子コンピュータを用いても解読されないと考えられているのか？」という核心部分に触れておきます。
 
-量子コンピュータがRSA暗号や楕円曲線暗号を破るShorのアルゴリズムは、本質的には「隠れ部分群問題（Hidden Subgroup Problem: HSP）」を解くアルゴリズムです。RSAやECCの背景にある数学的構造（有限[アーベル](https://kenji.blog/p/abel/)群）は周期性を持っており、量子フーリエ変換（QFT）という量子アルゴリズム特Actions:特有の操作を用いることで、この周期（隠れた部分群）を一気に抽出することができます。
+量子コンピュータが[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や楕円曲線暗号を破るShorのアルゴリズムは、本質的には「隠れ部分群問題（Hidden Subgroup Problem: HSP）」を解くアルゴリズムです。RSAやECCの背景にある数学的構造（有限[アーベル](https://kenji.blog/p/abel/)群）は周期性を持っており、量子フーリエ変換（QFT）という量子アルゴリズム特Actions:特有の操作を用いることで、この周期（隠れた部分群）を一気に抽出することができます。
 
 しかし、格子問題は根本的に異なります。格子にも周期性はありますが、SVPやCVPで求められているのは「最短の距離」や「ノイズの除去」という幾何学的な非線形な性質です。Shorのアルゴリズムのような「[アーベル](https://kenji.blog/p/abel/)群上の量子フーリエ変換」をそのまま適用しても、格子問題の解答となる有用な情報を効率的に抽出することができません。現在までに、SVPやLWEに対して多項式時間で解くことができる量子アルゴリズムは発見されておらず、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)の並列計算能力をもってしても総当たりに近い探索（グローバーのアルゴリズムによる平方根の高速化程度）しか有効な手段がないと広く信じられています。
 
 # 9. まとめ
 
-本記事では、格子暗号の数学的直観について、格子の幾何学的定義から始まり、LWE問題の定式化、そして公開鍵暗号の構築に至るまで詳細に解説しました。
+本記事では、格子暗号の数学的直観について、格子の幾何学的定義から始まり、LWE問題の定式化、そして[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の構築に至るまで詳細に解説しました。
 
 1. **格子（Lattice）** は、基底ベクトルの整数係数線形結合で表される離散的な空間であり、高次元においては直交に近い「良い基底」を見つけること（SVP）が困難になります。
 2. **LWE問題（Learning With Errors）** は、ノイズ付きの連立一次方程式を解く問題であり、これが格子の最悪ケース問題の困難性に結びついているため、強力な安全性の根拠を提供します。
-3. LWE問題を利用することで、ノイズを意図的に加えたり消去したりする巧妙な仕組みにより、暗号化と復号（ **Regev暗号** ）が実現されます。
+3. LWE問題を利用することで、ノイズを意図的に加えたり消去したりする巧妙な仕組みにより、[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)と復号（ **Regev暗号** ）が実現されます。
 4. 現実のプロトコルでは、通信効率と計算速度を高めるために多項式環を用いた **Ring-LWE** や **Module-LWE** が採用されており、NIST標準の **ML-KEM** の基盤となっています。
 
 量子コンピュータという未曾有の計算パラダイムシフトが迫る中、古典的な線形代数と整数論の深淵から生まれた「格子暗号」が、未来のインターネットセキュリティの基盤を担うというのは非常にロマンのある話です。格子暗号の基礎となる数学は決して難解すぎるものではなく、線形代数と確率の基礎知識があれば十分にその美しい構造を理解することができます。本記事が、PQCの核となる格子暗号の理解への一助となれば幸いです。

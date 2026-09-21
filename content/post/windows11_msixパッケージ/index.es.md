@@ -131,7 +131,7 @@ Con esto se completa el archivo MSIX sin firmar, pero en este estado no se puede
 
 Para entender profundamente por qué un paquete MSIX necesita estar firmado, es necesario comprender el mecanismo criptográfico detrás de las firmas digitales. La firma digital garantiza que el paquete "fue creado indudablemente por el editor especificado (autenticidad)" y que "no ha sido alterado por terceros desde su creación hasta el presente (integridad)".
 
-La firma de MSIX suele utilizar una combinación de cifrado RSA y SHA-256 (Secure Hash Algorithm de 256 bits).
+La firma de MSIX suele utilizar una combinación de cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) y SHA-256 (Secure Hash Algorithm de 256 bits).
 
 ### Aplicación de la función hash
 Primero, consideremos todo el contenido binario del paquete MSIX como el mensaje $M$. La herramienta de firma (SignTool.exe) aplica la función hash criptográfica SHA-256 a este mensaje $M$ y calcula un valor hash de longitud fija (256 bits) $H(M)$.
@@ -141,7 +141,7 @@ A continuación, el editor utiliza su "Clave Privada (Private Key)" $d$ para cif
 
 $$ \sigma \equiv (H(M))^d \pmod n $$
 
-Donde $n$ es el módulo RSA (el producto de dos grandes números primos). Un certificado (formato X.509) que contiene esta firma $\sigma$ y la "Clave Pública (Public Key)" $e$ del editor se incrusta como parte del paquete MSIX (`AppxSignature.p7x`).
+Donde $n$ es el módulo RSA (el producto de dos grandes números primos). Un certificado (formato X.509) que contiene esta firma $\sigma$ y la "Clave Pública ([Public Key](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/))" $e$ del editor se incrusta como parte del paquete MSIX (`AppxSignature.p7x`).
 
 ### Verificación de la firma (Windows OS)
 Cuando el usuario intenta instalar el MSIX, el sistema operativo Windows extrae la clave pública $e$ del certificado dentro del paquete y realiza el siguiente cálculo para restaurar el valor hash $H'(M)$.

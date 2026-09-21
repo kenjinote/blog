@@ -12,9 +12,9 @@ description: '量子コンピュータの台頭による暗号危殆化の脅威
 
 ## 1. はじめに：[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)がもたらす「暗号の危機」
 
-現代のインターネット社会において、通信の機密性やデータの完全性を守るために公開鍵暗号技術はインフラとして必要不可欠です。現在広く利用されているRSA暗号や楕円曲線暗号（ECC）は、それぞれ「巨大な合成数の素因数分解の困難性」や「楕円曲線上の離散対数問題の困難性」という数学的な壁に依存して安全性を担保しています。古典的なコンピュータ（スーパーコンピュータを含む現在私たちが使っているコンピュータ）では、これらの数学的問題を解くためには宇宙の年齢よりも長い時間がかかると証明されており、それが安全性の根拠となってきました。
+現代のインターネット社会において、通信の機密性やデータの完全性を守るために[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号技術はインフラとして必要不可欠です。現在広く利用されている[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や楕円曲線暗号（ECC）は、それぞれ「巨大な合成数の素因数分解の困難性」や「楕円曲線上の離散対数問題の困難性」という数学的な壁に依存して安全性を担保しています。古典的なコンピュータ（スーパーコンピュータを含む現在私たちが使っているコンピュータ）では、これらの数学的問題を解くためには宇宙の年齢よりも長い時間がかかると証明されており、それが安全性の根拠となってきました。
 
-しかし、この堅牢な前提は **量子コンピュータ** の理論と実用化の進展によって根底から覆されようとしています。1994年に暗号学者ピーター・ショア（Peter Shor）が発表した「 **Shorのアルゴリズム** 」は、十分な性能を持つ誤り耐性汎用量子コンピュータ（CRQC: [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer）上で実行することで、素因数分解問題や離散対数問題を「多項式時間」で解読できることを理論的に証明しました。これは、現在使われている公開鍵暗号がすべて無力化されることを意味します。
+しかし、この堅牢な前提は **量子コンピュータ** の理論と実用化の進展によって根底から覆されようとしています。1994年に暗号学者ピーター・ショア（Peter Shor）が発表した「 **Shorのアルゴリズム** 」は、十分な性能を持つ誤り耐性汎用量子コンピュータ（CRQC: [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer）上で実行することで、素因数分解問題や離散対数問題を「多項式時間」で解読できることを理論的に証明しました。これは、現在使われている[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号がすべて無力化されることを意味します。
 
 ```mermaid
 graph TD
@@ -26,7 +26,7 @@ graph TD
     F["Store Now, Decrypt Later (SNDL)"] --> E
 ```
 
-「[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)の本格的な完成はまだ数十年先だから問題ない」と考えるのは非常に危険です。なぜなら、 **Store Now, Decrypt Later (SNDL：今すぐ保存し、後で復号する)** と呼ばれる攻撃手法がすでに現実の脅威となっているからです。これは、悪意のある国家やハッカー組織が、現在の暗号化された通信データ（TLSのトラフィックなど）を大量にストレージに保存しておき、将来強力な量子コンピュータが利用可能になった瞬間にそれらをすべて復号するという攻撃です。国家機密、インフラ情報、長期間保護すべき医療データなどは、すでにこの脅威に晒されています。
+「[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)の本格的な完成はまだ数十年先だから問題ない」と考えるのは非常に危険です。なぜなら、 **Store Now, Decrypt Later (SNDL：今すぐ保存し、後で復号する)** と呼ばれる攻撃手法がすでに現実の脅威となっているからです。これは、悪意のある国家やハッカー組織が、現在の[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)された通信データ（TLSのトラフィックなど）を大量にストレージに保存しておき、将来強力な量子コンピュータが利用可能になった瞬間にそれらをすべて復号するという攻撃です。国家機密、インフラ情報、長期間保護すべき医療データなどは、すでにこの脅威に晒されています。
 
 また、対称鍵暗号（AESなど）やハッシュ関数（SHA-256など）に対しても、1996年に発見された **Groverのアルゴリズム** が存在します。これにより、総当たり攻撃（ブルートフォース）の計算量が平方根に削減されます。つまり、AES-128のセキュリティレベルは実質的に2の64乗に半減するため、量子時代においてはAES-256やSHA-384といった、より長い鍵やハッシュ長を使用することが推奨されています。
 
@@ -39,8 +39,8 @@ graph TD
 暗号技術の移行には、プロトコルの再設計、システムのアップデート、ハードウェアの交換などを含め、数年から数十年の時間がかかります。そのため、世界中の暗号学者たちは早期からPQCの研究を進めてきました。その中心的な役割を担ってきたのが米国のNIST（国立標準技術研究所）です。NISTは2016年にPQCの標準化プロセスを公募し、全世界の暗号コミュニティから全く新しい暗号アルゴリズムの提案を受け付けました。
 
 標準化の対象となったのは以下の2つの主要カテゴリです。
-1. **公開鍵暗号 / 鍵カプセル化メカニズム (KEM: Key Encapsulation Mechanism)**: TLS接続などで、通信経路を暗号化するための共通鍵を安全に共有（配送）するための仕組み。
-2. **デジタル署名 (Digital Signatures)**: ソフトウェアのアップデートや電子証明書において、データの改ざんがないことや、送信者のなりすましがないこと（真正性）を証明するための仕組み。
+1. **[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号 / 鍵カプセル化メカニズム (KEM: Key Encapsulation Mechanism)**: TLS接続などで、通信経路を[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)するための共通鍵を安全に共有（配送）するための仕組み。
+2. **デジタル署名 ([Digital Signature](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)s)**: ソフトウェアのアップデートや電子証明書において、データの改ざんがないことや、送信者のなりすましがないこと（真正性）を証明するための仕組み。
 
 約6年間にわたる非常に激しい評価・解析と暗号解読の競争（Round 1〜Round 3）を経て、さらに一部のアルゴリズムについてはRound 4の追加評価が行われました。その結果、2024年に以下のアルゴリズムが正式な連邦情報処理標準（FIPS）として発行され、今後の世界の標準として確定しました。
 
@@ -49,7 +49,7 @@ graph TD
 - **FIPS 205 (SLH-DSA)**: SPHINCS+に基づくステートレスハッシュベース署名
 - **（今後の策定予定）FN-DSA**: FALCONに基づくデジタル署名
 
-これらの選定されたアルゴリズムは、依拠する数学的な「困難性問題」がそれぞれ異なっており、ある一つのアルゴリズムに将来致命的な脆弱性が発見された場合でも、システム全体が崩壊しないように多様性（[Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/) Agility）が確保されています。標準化プロセスでは、主に格子暗号（Lattice-based cryptography）が性能の面から主役となりましたが、ハッシュベース暗号や符号ベース暗号が強力なバックアップとして採用されています。
+これらの選定されたアルゴリズムは、依拠する数学的な「困難性問題」がそれぞれ異なっており、ある一つのアルゴリズムに将来致命的な[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)が発見された場合でも、システム全体が崩壊しないように多様性（[Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/) Agility）が確保されています。標準化プロセスでは、主に格子暗号（Lattice-based cryptography）が性能の面から主役となりましたが、ハッシュベース暗号や符号ベース暗号が強力なバックアップとして採用されています。
 
 ---
 
@@ -58,11 +58,11 @@ graph TD
 PQCアルゴリズムは、その安全性の根拠となる数学的な問題によって、主に以下の5つのカテゴリに大別されます。本記事では特に上位3つについて詳しく掘り下げます。
 
 1. **格子暗号 (Lattice-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)**:
-   多次元の格子空間における最短ベクトル問題（SVP）や最近接ベクトル問題（CVP）、およびそこから派生したLWE問題に基づきます。NIST標準化の中心であり、Kyber、Dilithium、FALCONが該当します。処理速度、公開鍵サイズ、暗号文サイズのバランスが最も優れており、汎用的な利用に適しています。
+   多次元の格子空間における最短ベクトル問題（SVP）や最近接ベクトル問題（CVP）、およびそこから派生したLWE問題に基づきます。NIST標準化の中心であり、Kyber、Dilithium、FALCONが該当します。処理速度、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)サイズ、暗号文サイズのバランスが最も優れており、汎用的な利用に適しています。
 2. **ハッシュベース暗号 (Hash-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)**:
    暗号学的ハッシュ関数（SHA-2やSHAKEなど）の「衝突耐性」と「一方向性」のみに安全性の根拠を置きます。デジタル署名（SPHINCS+など）にのみ適用可能ですが、安全性の証明が最も強固であり、未知の数学的攻撃に対する耐性が極めて高いのが特徴です。
 3. **符号ベース暗号 (Code-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)**:
-   誤り訂正符号の理論に基づき、シンドローム復号問題（Syndrome Decoding Problem）の困難性に依存します。1970年代に提案されたClassic McElieceが代表的で、非常に長い歴史と実績のある安全性を持つ反面、公開鍵のサイズがメガバイト単位と極端に大きくなります。
+   誤り訂正符号の理論に基づき、シンドローム復号問題（Syndrome Decoding Problem）の困難性に依存します。1970年代に提案されたClassic McElieceが代表的で、非常に長い歴史と実績のある安全性を持つ反面、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)のサイズがメガバイト単位と極端に大きくなります。
 4. **多変数多項式暗号 (Multivariate Polynomial [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)**:
    有限体上の多変数連立二次方程式の解を求めること（MQ問題）の困難性に基づきます。主にデジタル署名（Rainbowなど）として提案されましたが、NISTの最終ラウンドの最中にパソコン1台で数日で解読されるという強力な攻撃手法が発見され、多くのアルゴリズムが標準化から脱落しました。
 5. **同種写像暗号 (Isogeny-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)**:
@@ -102,7 +102,7 @@ $$ R_q = \mathbb{Z}_q[X]/(X^n + 1) $$
 
 ここで、$n$ は 2 のべき乗（例：256）、$q$ は適当な素数です。この環の上で、要素 $a, s, e \in R_q$ を用いて $b = a \cdot s + e \pmod q$ を計算します。一つの多項式 $a$ が $n$ 個の係数を持つため、データを大幅に圧縮でき、さらに **NTT (Number Theoretic Transform: 数論変換)** という高速フーリエ変換（FFT）の有限体バージョンを用いることで、$O(n \log n)$ の計算量で超高速に多項式の乗算が可能になります。
 
-しかし、Ring-LWEには「環の特殊な代数構造に起因する未知の脆弱性が存在するかもしれない」という懸念がありました。また、セキュリティレベル（AES-128, 192, 256相当など）を変更する際に、多項式の次数 $n$ そのものを変える必要があり、それに伴いNTTのアルゴリズムなど実装全体を書き直さなければならないという工学的な課題がありました。
+しかし、Ring-LWEには「環の特殊な代数構造に起因する未知の[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)が存在するかもしれない」という懸念がありました。また、セキュリティレベル（AES-128, 192, 256相当など）を変更する際に、多項式の次数 $n$ そのものを変える必要があり、それに伴いNTTのアルゴリズムなど実装全体を書き直さなければならないという工学的な課題がありました。
 
 そこで、標準化アルゴリズムであるKyberやDilithiumが採用したのが **Module-LWE (M-LWE) 問題** です。Module-LWEは、無構造なStandard LWEと、構造を持ちすぎるRing-LWEのちょうど中間に位置する妥協案であり、多項式環 $R_q$ の要素を成分とする $k \times k$ の行列（モジュール）を使用します。
 
@@ -124,7 +124,7 @@ Module-LWEの最大の利点は、多項式の次数 $n$（NIST標準では $n=2
 
 ### 5.1. KEM (Key Encapsulation Mechanism) のアーキテクチャ
 
-PQCの時代では、RSAのように「クライアントが共通鍵を作ってサーバーの公開鍵で暗号化して送る」という直接的なアプローチではなく、KEMというカプセル化の枠組みが標準となります。
+PQCの時代では、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)のように「クライアントが共通鍵を作ってサーバーの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)で[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)して送る」という直接的なアプローチではなく、KEMというカプセル化の枠組みが標準となります。
 
 ```mermaid
 sequenceDiagram
@@ -148,9 +148,9 @@ sequenceDiagram
 
 ### 5.2. Kyberの内部アルゴリズムの仕組みと藤崎・岡本変換
 
-Kyberの設計は非常に洗練されています。まず、CPA（選択平文攻撃）に対してのみ安全な公開鍵暗号方式（Kyber.CPAPKE）を構築し、それに **藤崎・岡本変換 (Fujisaki-Okamoto Transform)** と呼ばれる暗号学的に非常に強力な手法を適用することで、CCA（適応的選択暗号文攻撃）に対しても安全な完全なKEMへとアップグレードする設計を採用しています。
+Kyberの設計は非常に洗練されています。まず、CPA（選択平文攻撃）に対してのみ安全な[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号方式（Kyber.CPAPKE）を構築し、それに **藤崎・岡本変換 (Fujisaki-Okamoto Transform)** と呼ばれる暗号学的に非常に強力な手法を適用することで、CCA（適応的選択暗号文攻撃）に対しても安全な完全なKEMへとアップグレードする設計を採用しています。
 
-CPAPKEの核となる暗号化と復号のメカニズムは以下の通りです。
+CPAPKEの核となる[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)と復号のメカニズムは以下の通りです。
 
 1. **鍵生成 (Key Generation)**:
    - ランダムなシード値から、NTTドメイン上の行列 $A \in R_q^{k \times k}$ を生成します。法 $q$ は $3329$ が使われます。
@@ -172,7 +172,7 @@ CPAPKEの核となる暗号化と復号のメカニズムは以下の通りで�
    - 残るのは $\lfloor q/2 \rceil \cdot m + (\vec{e}^T\vec{r} + e_2 - \vec{s}^T\vec{e_1})$ となります。
    - 括弧内の項は「小さな誤差同士の積や和」であるため、全体としても十分に小さな値（ノイズ）に留まります。したがって、各係数が $0$ に近いか $q/2$ に近いかを閾値判定することで、元のメッセージ $m$ のビット（0 または 1）を完全にエラーなく復元することができます。
 
-Kyberの最大の強みは、その圧倒的な **処理速度** と **適度な鍵サイズ** です。Kyber768の場合、公開鍵サイズは1,184バイト、暗号文サイズは1,088バイトであり、RSA-3072（鍵サイズ約384バイト）などと比較すると大きいものの、現代のインターネット通信のMTU（Maximum Transmission Unit）内にパケット分割なしで収めることが可能であり、ネットワークのレイテンシにほとんど悪影響を与えません。
+Kyberの最大の強みは、その圧倒的な **処理速度** と **適度な鍵サイズ** です。Kyber768の場合、公開鍵サイズは1,184バイト、暗号文サイズは1,088バイトであり、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)-3072（鍵サイズ約384バイト）などと比較すると大きいものの、現代のインターネット通信のMTU（Maximum Transmission Unit）内にパケット分割なしで収めることが可能であり、ネットワークのレイテンシにほとんど悪影響を与えません。
 
 ---
 
@@ -212,7 +212,7 @@ FALCONは、この重い計算を「 **高速フーリエ直交化 (Fast Fourier
 
 ### 7.2. FALCONのメリットとデメリット
 
-FALCONの圧倒的なメリットは、その **署名サイズと公開鍵サイズが極めて小さい（コンパクトである）** ことです。Dilithium3の署名サイズが約3,309バイトであるのに対し、FALCON-512の署名サイズはわずか約666バイトです。公開鍵も897バイトと非常に小さく、通信帯域が極端に制限される環境や、IoTデバイス、特定のネットワークプロトコルにおいては救世主となります。
+FALCONの圧倒的なメリットは、その **署名サイズと[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)サイズが極めて小さい（コンパクトである）** ことです。Dilithium3の署名サイズが約3,309バイトであるのに対し、FALCON-512の署名サイズはわずか約666バイトです。公開鍵も897バイトと非常に小さく、通信帯域が極端に制限される環境や、IoTデバイス、特定のネットワークプロトコルにおいては救世主となります。
 
 しかし、重大なデメリットが存在します。署名生成時に複雑な **浮動小数点演算（64-bit IEEE 754）** を伴う離散[ガウス](https://kenji.blog/p/gauss/)サンプリングが必須となるため、タイミング漏洩を防ぐ定数時間実装（Constant-time implementation）が極めて難しく、コードも巨大化します。このため、FALCONは汎用的な利用（Dilithium）に対する、特定用途向けの強力な特化型アルゴリズムという位置付けになります。
 
@@ -247,7 +247,7 @@ SPHINCS+は、この[状態管理](https://kenji.blog/p/state-management-history
 
 SPHINCS+では、署名を行う際、状態を管理する代わりに、Hyper-Treeの底辺にある膨大な数のFORS鍵の中から、擬似乱数を用いてランダムに一つを選び出して署名します。木の葉の数が天文学的に多いため、同じ鍵を偶然二度選んでしまう確率（コリジョン）が無視できるほど小さくなり、結果としてステートレスを実現しています。
 
-SPHINCS+の唯一にして最大の弱点は、 **署名サイズが極めて大きい** ことです。パラメータにもよりますが、署名サイズは17キロバイト〜49キロバイトにも達し、署名生成速度も格子暗号に比べて圧倒的に遅くなります。そのため、日常的なWebブラウジングでの利用よりも、ソフトウェアのアップデート署名やルート認証局（CA）の証明書など、頻繁に署名を行わず、かつ長期間の絶対的な安全性が強く求められる用途での利用が想定されています。
+SPHINCS+の唯一にして最大の弱点は、 **署名サイズが極めて大きい** ことです。パラメータにもよりますが、署名サイズは17キロバイト〜49キロバイトにも達し、署名生成速度も格子暗号に比べて圧倒的に遅くなります。そのため、日常的なWebブラウジングでの利用よりも、ソフトウェアのアップデート署名やルート[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)局（CA）の証明書など、頻繁に署名を行わず、かつ長期間の絶対的な安全性が強く求められる用途での利用が想定されています。
 
 ---
 
@@ -255,12 +255,12 @@ SPHINCS+の唯一にして最大の弱点は、 **署名サイズが極めて大
 
 NISTの標準化プロセスにおいて、Round 4の最終候補として現在も評価が継続されている重要なアプローチが、 **符号ベース暗号** の **Classic McEliece** です。
 
-1978年にRobert McElieceによって提案されたこのアルゴリズムは、公開鍵暗号の歴史の中でもRSAと並んで最も古いものの一つです。「Goppa符号（ゴッパ符号）」と呼ばれる代数幾何符号を利用しており、メッセージに意図的にエラー（ノイズベクトル）を加えて暗号化し、秘密鍵としてGoppa符号のパリティ検査行列を持つ者だけが、強力な誤り訂正能力を使ってエラーを取り除き、元のメッセージを復号できる、という「 **シンドローム復号問題 (Syndrome Decoding Problem)** 」に基づいています。
+1978年にRobert McElieceによって提案されたこのアルゴリズムは、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の歴史の中でも[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)と並んで最も古いものの一つです。「Goppa符号（ゴッパ符号）」と呼ばれる代数幾何符号を利用しており、メッセージに意図的にエラー（ノイズベクトル）を加えて[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)し、秘密鍵としてGoppa符号のパリティ検査行列を持つ者だけが、強力な誤り訂正能力を使ってエラーを取り除き、元のメッセージを復号できる、という「 **シンドローム復号問題 (Syndrome Decoding Problem)** 」に基づいています。
 
 $$ \vec{c} = \vec{m} G + \vec{e} $$
 （$G$ は公開鍵であるスクランブルされた生成行列、$\vec{e}$ は重み $t$ のエラーベクトル）
 
-Classic McElieceの驚くべき点は、 **提案から40年以上経過し、世界中の暗号学者による激しい解読の研究に晒されてきたにもかかわらず、その本質的な脆弱性が一度も発見されていない** という、圧倒的な実績にあります。PQCの中で最も「時間が証明した強固な安全性」を持っています。
+Classic McElieceの驚くべき点は、 **提案から40年以上経過し、世界中の暗号学者による激しい解読の研究に晒されてきたにもかかわらず、その本質的な[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)が一度も発見されていない** という、圧倒的な実績にあります。PQCの中で最も「時間が証明した強固な安全性」を持っています。
 
 さらに、暗号文のサイズが非常に小さい（わずか100〜200バイト程度）というメリットがあります。しかし、 **公開鍵のサイズがメガバイト（MB）単位になる** という致命的な欠点が存在します。最も低いセキュリティレベル（AES-128相当）でも公開鍵が約250KB、高いレベルでは1MBを超えます。
 
@@ -326,7 +326,7 @@ NISTによるFIPS 203 (ML-KEM)、FIPS 204 (ML-DSA)、FIPS 205 (SLH-DSA) の標�
 *References:*
 * *NIST Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy Standardization Program*
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
-* *FIPS 204: Module-Lattice-Based Digital Signature Standard*
+* *FIPS 204: Module-Lattice-Based [Digital Signature](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
 
 

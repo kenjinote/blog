@@ -10,11 +10,11 @@ tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: '透過 Slack App 整合實作，詳細圖解與解說 OAuth 2.0 的授權碼授權流程運作機制。這是一份包含 Node.js 具體程式碼範例與安全最佳實踐的完整指南。'
 ---
 
-# 前言：為什麼要學習 OAuth 2.0？
+# 前言：為什麼要學習 [[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)？
 
-在現代的 Web 應用程式中，多個服務協同運作已成為理所當然的景象。例如，「使用 Google 帳號登入」、「當 Trello 任務更新時發送通知到 Slack」、「將 Zoom 的會議連結自動加入 Google 日曆」等功能。在這些功能背後活躍的，正是稱為 **OAuth 2.0 (Open Authorization 2.0)** 的授權框架。
+在現代的 Web 應用程式中，多個服務協同運作已成為理所當然的景象。例如，「使用 Google 帳號登入」、「當 Trello 任務更新時發送通知到 Slack」、「將 Zoom 的會議連結自動加入 Google 日曆」等功能。在這些功能背後活躍的，正是稱為 **OAuth 2.0 (Open [Authorization](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 2.0)** 的授權框架。
 
-過去，在不同服務之間交換資料時，使用者會將自己的帳號密碼直接交給合作服務，這種稱為「基本驗證（Basic Authentication）」或「密碼共享」的手法非常危險。然而，這種方法會讓合作服務掌握使用者的所有權限，伴隨著安全性上致命的風險。
+過去，在不同服務之間交換資料時，使用者會將自己的帳號密碼直接交給合作服務，這種稱為「基本驗證（Basic [Authentication](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)）」或「密碼共享」的手法非常危險。然而，這種方法會讓合作服務掌握使用者的所有權限，伴隨著安全性上致命的風險。
 
 OAuth 2.0 的誕生正是為了避免這種「密碼共享」的情況，同時作為一種標準協定（RFC 6749），將「僅限特定權限（Scope）」在「有限時間內」委派給第三方應用程式。
 
@@ -22,7 +22,7 @@ OAuth 2.0 的誕生正是為了避免這種「密碼共享」的情況，同時�
 
 ---
 
-# 1. OAuth 2.0 的基本概念：4 個角色（Roles）
+# 1. [[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 的基本概念：4 個角色（Roles）
 
 理解 OAuth 2.0 的第一步，是準確掌握登場人物（角色）。在 RFC 6749 中，定義了以下 4 個角色：
 
@@ -38,19 +38,19 @@ graph TD
 1. **Resource Owner（資源擁有者）**
    - 擁有賦予資源存取權限的實體。通常指的是「終端使用者（人類）」。在這次的範例中，指的是「隸屬於 Slack 工作區，並擁有在頻道中發送訊息權限的你」。
 2. **Client（客戶端）**
-   - 取得資源擁有者的許可後，試圖存取資源伺服器的應用程式。在這次的範例中，指的是「你正在開發的 Node.js 應用程式（Slack App）」。雖然名稱是「客戶端」，但在 OAuth 的語境中，即使是在伺服器端運行的 Web 應用程式也被稱為「客戶端」。
-3. **Authorization Server（授權伺服器）**
+   - 取得資源擁有者的許可後，試圖存取資源伺服器的應用程式。在這次的範例中，指的是「你正在開發的 Node.js 應用程式（Slack App）」。雖然名稱是「客戶端」，但在 [OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 的語境中，即使是在伺服器端運行的 Web 應用程式也被稱為「客戶端」。
+3. **[Authorization](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) Server（授權伺服器）**
    - 驗證資源擁有者，並在取得資源擁有者的授權後，向客戶端發行存取權杖（Access Token）的伺服器。在這次的範例中，是提供 `slack.com/oauth/v2/authorize` 的 Slack 驗證基礎設施。
 4. **Resource Server（資源伺服器）**
    - 託管受保護的資源，並接受使用存取權杖對資源的存取請求並給予回應的伺服器。在這次的範例中，是提供 `chat.postMessage` 等 API 的 `slack.com/api/` 端點。
 
-一句話來說，OAuth 的流程就是 **「Client 取得 Resource Owner 的同意後，從 Authorization Server 接收存取權杖，並使用它來從 Resource Server 取得或操作資料」** 的一連串步驟。
+一句話來說，[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 的流程就是 **「Client 取得 Resource Owner 的同意後，從 [Authorization](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) Server 接收存取權杖，並使用它來從 Resource Server 取得或操作資料」** 的一連串步驟。
 
 ---
 
 # 2. 授權碼授權流程（Authorization Code Grant）完全解剖
 
-OAuth 2.0 存在多種流程（授權類型），但在像是 Web 應用程式這種能在伺服器端安全保存金鑰（Client Secret）的環境中，最受推薦且最被廣泛使用的就是 **授權碼授權流程（Authorization Code Grant）** 。
+[OAuth 2.0](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 存在多種流程（授權類型），但在像是 Web 應用程式這種能在伺服器端安全保存金鑰（Client Secret）的環境中，最受推薦且最被廣泛使用的就是 **授權碼授權流程（Authorization Code Grant）** 。
 
 授權碼授權流程最大的特色，在於明確分離了 **前台通道（Front-channel，透過瀏覽器的通訊） ** 與 ** 後台通道（Back-channel，伺服器間的直接通訊）**。在前台通道中僅傳遞暫時的「授權碼（Authorization Code）」，最終的「存取權杖」則是在後台通道取得，藉此大幅降低了權杖洩漏到瀏覽器歷史紀錄或推薦連結（Referer）的風險。
 
@@ -99,7 +99,7 @@ sequenceDiagram
 3. 建立後，在「Basic Information」畫面中，取得以下兩個重要的憑證（Credentials）：
    - **Client ID**: 公開且唯一識別你的應用程式的 ID。將其包含在透過瀏覽器發送的請求（前台通道）中也沒有問題。
    - **Client Secret**: 只有你的應用程式才知道的機密字串。 ** 絕對不可以暴露在瀏覽器端，也不可以提交（Commit）到 GitHub 等地方。**
-4. 移動到「OAuth & Permissions」畫面，在「Redirect URLs」中註冊回呼（Callback）網址。這次假設是本地開發，請設定如下：
+4. 移動到「[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) & Permissions」畫面，在「Redirect URLs」中註冊回呼（Callback）網址。這次假設是本地開發，請設定如下：
    - `http://localhost:3000/slack/oauth_redirect`
 
 到此準備工作就完成了。接下來進入伺服器的實作。
@@ -191,7 +191,7 @@ Location: https://slack.com/oauth/v2/authorize?client_id=123.456&scope=chat%3Awr
 Set-Cookie: connect.sid=...; Path=/; HttpOnly
 ```
 
-使用者的瀏覽器會立刻跳轉至指定的 `Location`，接著顯示 Slack 的畫面（同意畫面 / Consent Screen），並出現大家熟悉的「My First OAuth App 正在請求存取您的工作區」畫面。
+使用者的瀏覽器會立刻跳轉至指定的 `Location`，接著顯示 Slack 的畫面（同意畫面 / Consent Screen），並出現大家熟悉的「My First [OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) App 正在請求存取您的工作區」畫面。
 
 ---
 
@@ -291,7 +291,7 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 # 6. 權杖範圍與最小權限原則 (Principle of Least Privilege)
 
-在 OAuth 2.0 中最重要的概念之一就是「範圍（Scope）」。範圍是指與存取權杖綁定的權限界限。
+在 [[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 中最重要的概念之一就是「範圍（Scope）」。範圍是指與存取權杖綁定的權限界限。
 
 在 Slack 中，權限分類得非常精細，主要分為 **Bot Token Scopes** 和 **User Token Scopes** 。
 - `chat:write` (Bot): 作為應用程式（機器人）本身在頻道中發送訊息的權限。
@@ -305,9 +305,9 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 # 7. 更進階的安全性：PKCE (Proof Key for Code Exchange)
 
-近年來，作為進一步強化 OAuth 2.0 安全性的機制， **PKCE（Proof Key for Code Exchange，RFC 7636，發音為 "pixy"）** 已被標準化並廣泛使用。
+近年來，作為進一步強化 [[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 安全性的機制， **PKCE（Proof Key for Code Exchange，RFC 7636，發音為 "pixy"）** 已被標準化並廣泛使用。
 
-最初，PKCE 是為了無法安全保存 `client_secret` 的「公開客戶端（Public Client）」，如原生應用程式（iOS/Android）或 SPA（Single Page Application）而設計的。然而，在目前的安全性最佳實踐（OAuth 2.1 草案）中，即使是伺服器端的「機密客戶端（Confidential Client）」，也強烈建議使用 PKCE。
+最初，PKCE 是為了無法安全保存 `client_secret` 的「公開客戶端（Public Client）」，如原生應用程式（iOS/Android）或 SPA（Single Page Application）而設計的。然而，在目前的安全性最佳實踐（[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 2.1 草案）中，即使是伺服器端的「機密客戶端（Confidential Client）」，也強烈建議使用 PKCE。
 
 ## PKCE 的運作機制與數學背景
 
@@ -352,25 +352,25 @@ sequenceDiagram
 最後，是關於如何保存取得的存取權杖的最佳實踐。
 
 ## 1. 存入資料庫時必須進行加密
-存取權杖（`xoxb-...`）就等同於 Slack 工作區的「備用鑰匙」。絕對不能以明文（Plain Text）的形式保存在資料庫（MySQL、PostgreSQL、MongoDB 等）中。萬一因為 SQL 注入（SQL Injection）等攻擊導致資料庫外洩，將引發所有客戶的 Slack 帳號被盜用的慘劇。
+存取權杖（`xoxb-...`）就等同於 Slack 工作區的「備用鑰匙」。絕對不能以明文（Plain Text）的形式保存在資料庫（MySQL、PostgreSQL、MongoDB 等）中。萬一因為 SQL 注入（[SQL Injection](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)）等攻擊導致資料庫外洩，將引發所有客戶的 Slack 帳號被盜用的慘劇。
 
 請務必在應用程式層使用 **AES-256-GCM** 等強大的對稱金鑰加密技術進行加密後，再存入資料庫。用於加密/解密的主要金鑰（Master Key），應利用 AWS KMS（Key Management [Service](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)）或 GCP Cloud KMS 等安全的金鑰管理服務進行嚴格控管。
 
 ## 2. 權杖輪替（Token Rotation）
-持續使用長期有效的權杖會伴隨風險。在最新的 OAuth 實作中，建議採用「更新權杖（Refresh Token）」，引入每隔數小時就重新發行新存取權杖的機制（Token Rotation / 權杖輪替）。在 Slack API 中，也可以透過選項設定來啟用權杖輪替功能。
+持續使用長期有效的權杖會伴隨風險。在最新的 [OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 實作中，建議採用「更新權杖（Refresh Token）」，引入每隔數小時就重新發行新存取權杖的機制（Token Rotation / 權杖輪替）。在 Slack API 中，也可以透過選項設定來啟用權杖輪替功能。
 
 ---
 
 # 總結
 
-本文透過 Slack App 整合的具體 Node.js 實作程式碼，詳細解說了 OAuth 2.0 的授權碼授權流程。
+本文透過 Slack App 整合的具體 Node.js 實作程式碼，詳細解說了 [OAuth 2.0](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 的授權碼授權流程。
 
 1. 透過意識到 **4 個角色（RO, Client, AS, RS）** ，可以使整體系統的架構更加明確。
 2. **授權碼授權流程** 巧妙地活用了瀏覽器與伺服器之間的通訊路徑（前台 / 後台通道）來確保安全性。
 3. 了解其背後的密碼學機制，如利用 **`state` 參數 ** 防禦 [CSRF](https://kenji.blog/zh-tw/p/web-security-basics-cors-csp/)，以及利用 **PKCE** 防止授權碼攔截攻擊等，是邁向安全實作的捷徑。
 4. 基於 **最小權限原則** 的範圍設計，以及在存入資料庫時進行加密，是營運上絕對不可或缺的要素。
 
-OAuth 2.0 是一門非常深奧的學問，光是 RFC 就有龐大的規格，但像這樣以實際的平台（Slack）為目標，一邊動手實作一邊學習，應該就能體會到其精練的設計理念與堅固的安全機制。希望本文的知識能在未來的應用程式開發或 API 整合實作中對您有所幫助。
+[[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 是一門非常深奧的學問，光是 RFC 就有龐大的規格，但像這樣以實際的平台（Slack）為目標，一邊動手實作一邊學習，應該就能體會到其精練的設計理念與堅固的安全機制。希望本文的知識能在未來的應用程式開發或 API 整合實作中對您有所幫助。
 
 
 

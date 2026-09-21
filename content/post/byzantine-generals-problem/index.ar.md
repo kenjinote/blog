@@ -8,7 +8,7 @@ tags: ["Byzantine Generals Problem", "Blockchain", "Consensus", "Algorithm"]
 slug: "byzantine-generals-problem"
 ---
 
-عند دراسة الأنظمة الموزعة ([Distributed System](https://kenji.blog/ar/p/cap-theorem-distributed-systems/)s) أو تقنية البلوكشين (Blockchain)، فمن المؤكد أنك ستواجه ما يُعرف بـ **[مشكلة الجنرالات البيزنطيين](https://kenji.blog/ar/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/ar/p/byzantine-generals-problem-consensus/) Problem). تتناول هذه المشكلة موضوعاً في غاية الأهمية: كيف يمكن للنظام بأكمله أن يتوصل إلى إجماع (Consensus) صحيح في بيئة يوجد بها "خونة" أو "عقد (Nodes) معطلة" داخل الشبكة.
+عند دراسة الأنظمة الموزعة ([Distributed System](https://kenji.blog/ar/p/cap-theorem-distributed-systems/)s) أو تقنية البلوكشين ([Blockchain](https://kenji.blog/ar/p/blockchain-technology-smart-contract-distributed-ledger/))، فمن المؤكد أنك ستواجه ما يُعرف بـ **[مشكلة الجنرالات البيزنطيين](https://kenji.blog/ar/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/ar/p/byzantine-generals-problem-consensus/) Problem). تتناول هذه المشكلة موضوعاً في غاية الأهمية: كيف يمكن للنظام بأكمله أن يتوصل إلى إجماع ([Consensus](https://kenji.blog/ar/p/blockchain-technology-smart-contract-distributed-ledger/)) صحيح في بيئة يوجد بها "خونة" أو "عقد (Nodes) معطلة" داخل الشبكة.
 
 في هذه المقالة، سنشرح **[مشكلة الجنرالات البيزنطيين](https://kenji.blog/ar/p/byzantine-generals-problem/)** بالتفصيل من الأساسيات إلى التطبيقات، وذلك باستخدام قصة ملموسة، وشروط رياضية، ورسوم توضيحية.
 
@@ -112,15 +112,15 @@ end
 
 ### خوارزمية الرسائل الموقعة (Signed Messages Algorithm)
 
-ماذا لو كانت الرسائل المرسلة مرفقة بـ "توقيع رقمي غير قابل للتزوير" (Digital Signature)، بحيث **يمكن إثبات من أرسل الرسالة بشكل مؤكد**؟
+ماذا لو كانت الرسائل المرسلة مرفقة بـ "توقيع رقمي غير قابل للتزوير" ([Digital Signature](https://kenji.blog/ar/p/modern-cryptography-public-key-hash-signature/))، بحيث **يمكن إثبات من أرسل الرسالة بشكل مؤكد**؟
 
 في هذا النموذج، يصبح من المستحيل العبث بالأوامر الصادرة عن القائد أثناء انتقالها. ونتيجة لذلك، بغض النظر عن عدد الخونة، فقد ثبت أنه يمكن التوصل إلى إجماع طالما كان هناك $n \ge m + 2$ من الجنرالات (أي ثلاثة أشخاص على الأقل) مقابل $m$ من الخونة. في الأنظمة الحديثة، تلعب التواقيع الرقمية باستخدام التشفير بالمفتاح العام هذا الدور.
 
-## 4. البلوكشين (Blockchain) وتحمل الأخطاء البيزنطية (BFT)
+## 4. البلوكشين ([Blockchain](https://kenji.blog/ar/p/blockchain-technology-smart-contract-distributed-ledger/)) وتحمل الأخطاء البيزنطية (BFT)
 
 تسمى القدرة على مقاومة [مشكلة الجنرالات البيزنطيين](https://kenji.blog/ar/p/byzantine-generals-problem/) **تحمل الأخطاء البيزنطية** (Byzantine Fault Tolerance, BFT). وهو مؤشر مهم لضمان استمرار النظام الموزع في العمل بشكل طبيعي حتى مع وجود أعطال أو هجمات خبيثة.
 
-في السنوات الأخيرة، عادت هذه المشكلة لتسلط عليها الأضواء بشكل كبير بفضل ظهور **تقنية البلوكشين** (Blockchain). نظراً لأن البلوكشين عبارة عن شبكة نظير إلى نظير ([P2P](https://kenji.blog/ar/p/webrtc-realtime-communication-p2p/)) بدون مدير مركزي، فهناك احتمال أن يقوم المشاركون (العقد) الخبيثون بنشر سجلات معاملات مزيفة. إنها [مشكلة الجنرالات البيزنطيين](https://kenji.blog/ar/p/byzantine-generals-problem/) بحد ذاتها.
+في السنوات الأخيرة، عادت هذه المشكلة لتسلط عليها الأضواء بشكل كبير بفضل ظهور **تقنية البلوكشين** ([Blockchain](https://kenji.blog/ar/p/blockchain-technology-smart-contract-distributed-ledger/)). نظراً لأن البلوكشين عبارة عن شبكة نظير إلى نظير ([P2P](https://kenji.blog/ar/p/webrtc-realtime-communication-p2p/)) بدون مدير مركزي، فهناك احتمال أن يقوم المشاركون (العقد) الخبيثون بنشر سجلات معاملات مزيفة. إنها [مشكلة الجنرالات البيزنطيين](https://kenji.blog/ar/p/byzantine-generals-problem/) بحد ذاتها.
 
 ### كيف يعمل PBFT (Practical Byzantine Fault Tolerance)
 
@@ -145,15 +145,15 @@ subgraph "المراحل الرئيسية لـ PBFT"
 end
 ```
 
-من خلال هذه العملية، حتى لو كان هناك $m$ من العقد المعطلة أو الخبيثة في الشبكة، يمكن معالجة الطلبات بالترتيب الصحيح طالما أن إجمالي عدد العقد يلبي $n \ge 3m + 1$. نظراً لأن حجم الاتصال بين المكونات في PBFT يزداد بشكل يتناسب مع مربع عدد العقد، فهو غير مناسب للشبكات الكبيرة مثل البلوكشين العام (Public Chain). لكنه يُستخدم على نطاق واسع في شبكات البلوكشين الخاصة (Consortium Blockchain) (مثل Hyperledger Fabric) حيث يكون عدد العقد محدوداً، لأنه يوفر إجماعاً سريعاً جداً وحتمياً.
+من خلال هذه العملية، حتى لو كان هناك $m$ من العقد المعطلة أو الخبيثة في الشبكة، يمكن معالجة الطلبات بالترتيب الصحيح طالما أن إجمالي عدد العقد يلبي $n \ge 3m + 1$. نظراً لأن حجم الاتصال بين المكونات في PBFT يزداد بشكل يتناسب مع مربع عدد العقد، فهو غير مناسب للشبكات الكبيرة مثل البلوكشين العام (Public Chain). لكنه يُستخدم على نطاق واسع في شبكات البلوكشين الخاصة (Consortium [Blockchain](https://kenji.blog/ar/p/blockchain-technology-smart-contract-distributed-ledger/)) (مثل Hyperledger Fabric) حيث يكون عدد العقد محدوداً، لأنه يوفر إجماعاً سريعاً جداً وحتمياً.
 
 ### إجماع ناكاموتو (Proof of Work)
 
-اتخذ ساتوشي ناكاموتو (Satoshi Nakamoto)، مبتكر البيتكوين، نهجاً جديداً تماماً للتعامل مع هذه المشكلة. هذا هو **إجماع ناكاموتو** (Nakamoto Consensus) الذي يجمع بين **إثبات العمل** (Proof of Work - PoW) وقاعدة أن أطول سلسلة هي السلسلة الصحيحة.
+اتخذ ساتوشي ناكاموتو (Satoshi Nakamoto)، مبتكر البيتكوين، نهجاً جديداً تماماً للتعامل مع هذه المشكلة. هذا هو **إجماع ناكاموتو** (Nakamoto [Consensus](https://kenji.blog/ar/p/blockchain-technology-smart-contract-distributed-ledger/)) الذي يجمع بين **إثبات العمل** (Proof of Work - [PoW](https://kenji.blog/ar/p/blockchain-technology-smart-contract-distributed-ledger/)) وقاعدة أن أطول سلسلة هي السلسلة الصحيحة.
 
 في إجماع ناكاموتو، فقط أولئك الذين يفوزون في مسابقة رياضية (التعدين) يكتسبون الحق في اقتراح كتلة (Block). لكي يتعرف النظام على معلومات خاطئة، يجب السيطرة على أكثر من نصف (51% أو أكثر) من قوة الحوسبة للشبكة بأكملها، وهو تصميم يجعل الأمر بالغ الصعوبة من الناحية العملية. بهذا، يُعتبر أنه حل [مشكلة الجنرالات البيزنطيين](https://kenji.blog/ar/p/byzantine-generals-problem/) باحتمالية عالية في شبكة مفتوحة يشارك فيها عدد غير محدد من الأشخاص.
 
-### تطبيق BFT في إثبات الحصة (Proof of Stake - PoS)
+### تطبيق BFT في إثبات الحصة (Proof of Stake - [PoS](https://kenji.blog/ar/p/blockchain-technology-smart-contract-distributed-ledger/))
 
 كان إجماع ناكاموتو ثورياً، لكنه واجه مشكلة استهلاك كميات هائلة من الطاقة في التعدين. ولحل هذه المشكلة، ظهر نظام **إثبات الحصة** (Proof of Stake - PoS)، الذي يمنح حق اقتراح الكتلة وفقاً لكمية الأصول المشفرة (الحصة أو Stake) التي تحتفظ بها العقدة.
 

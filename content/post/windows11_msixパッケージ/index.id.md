@@ -138,7 +138,7 @@ Dengan ini, file MSIX yang belum ditandatangani telah selesai, namun tidak dapat
 
 Untuk memahami lebih dalam mengapa paket MSIX perlu ditandatangani, Anda perlu memahami mekanisme kriptografi di balik tanda tangan digital. Tanda tangan digital menjamin bahwa paket "secara meyakinkan dibuat oleh penerbit yang ditentukan (autentikasi)" dan "tidak dimodifikasi oleh pihak ketiga sejak dibuat hingga saat ini (integritas)".
 
-Penandatanganan MSIX biasanya menggunakan kombinasi kriptografi RSA dan SHA-256 (Secure Hash Algorithm 256-bit).
+Penandatanganan MSIX biasanya menggunakan kombinasi kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan SHA-256 (Secure Hash Algorithm 256-bit).
 
 ### Penerapan Fungsi Hash
 
@@ -150,7 +150,7 @@ Selanjutnya, penerbit mengenkripsi nilai hash tersebut menggunakan "Kunci Privat
 
 $$ \sigma \equiv (H(M))^d \pmod n $$
 
-Di sini, $n$ adalah modulus RSA (produk dari dua bilangan prima raksasa). Sertifikat (format X.509) yang berisi tanda tangan $\sigma$ ini beserta "Kunci Publik (Public Key)" $e$ milik penerbit tertanam sebagai bagian dari paket MSIX (`AppxSignature.p7x`).
+Di sini, $n$ adalah modulus RSA (produk dari dua bilangan prima raksasa). Sertifikat (format X.509) yang berisi tanda tangan $\sigma$ ini beserta "Kunci Publik ([Public Key](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/))" $e$ milik penerbit tertanam sebagai bagian dari paket MSIX (`AppxSignature.p7x`).
 
 ### Verifikasi Tanda Tangan (Sistem Operasi Windows)
 
@@ -275,7 +275,7 @@ Praktik terbaik di lingkungan perusahaan adalah sebagai berikut.
 
 ### 1. Pemanfaatan Group Policy Active Directory (GPO)
 
-Jika Active Directory telah diterapkan di dalam perusahaan, Anda dapat menggunakan "Kebijakan Kunci Publik" (Public Key Policies) GPO untuk secara otomatis mendistribusikan sertifikat yang ditandatangani sendiri (file CER) ke "Otoritas Sertifikasi Akar Tepercaya" di semua PC yang bergabung dalam domain. Dengan melakukan ini, karyawan dapat menginstal hanya dengan mengklik dua kali file MSIX di folder bersama tanpa perlu memikirkan tentang sertifikat sama sekali.
+Jika Active Directory telah diterapkan di dalam perusahaan, Anda dapat menggunakan "Kebijakan Kunci Publik" ([Public Key](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) Policies) GPO untuk secara otomatis mendistribusikan sertifikat yang ditandatangani sendiri (file CER) ke "Otoritas Sertifikasi Akar Tepercaya" di semua PC yang bergabung dalam domain. Dengan melakukan ini, karyawan dapat menginstal hanya dengan mengklik dua kali file MSIX di folder bersama tanpa perlu memikirkan tentang sertifikat sama sekali.
 
 ### 2. Penerapan melalui Microsoft Intune (MDM)
 

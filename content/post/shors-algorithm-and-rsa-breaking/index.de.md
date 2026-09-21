@@ -10,11 +10,11 @@ description: 'Erklärt, wie die RSA-Kryptographie, die die heutige Kommunikation
 
 ## Einleitung: Die Schnittstelle von Kryptographie und Quantencomputern
 
-In der modernen Internetgesellschaft ist die "Public-Key-Kryptographie" die Grundlage für den Schutz des Kommunikationsgeheimnisses. Ein prominentes Beispiel ist die "RSA-Verschlüsselung", die 1977 von Ron Rivest, Adi Shamir und Leonard Adleman entwickelt wurde. Von Online-Shopping-Zahlungen, die wir täglich nutzen, über das Surfen auf Websites (HTTPS) bis hin zum Senden und Empfangen von E-Mails fungiert die RSA-Verschlüsselung als Herzstück der Internet-Infrastruktur.
+In der modernen Internetgesellschaft ist die "Public-Key-Kryptographie" die Grundlage für den Schutz des Kommunikationsgeheimnisses. Ein prominentes Beispiel ist die "[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung", die 1977 von Ron Rivest, Adi Shamir und Leonard Adleman entwickelt wurde. Von Online-Shopping-Zahlungen, die wir täglich nutzen, über das Surfen auf Websites (HTTPS) bis hin zum Senden und Empfangen von E-Mails fungiert die RSA-Verschlüsselung als Herzstück der Internet-Infrastruktur.
 
 Jedoch wurde darauf hingewiesen, dass die Sicherheit durch das Aufkommen von "Quantencomputern" grundlegend untergraben werden könnte. In den Medien finden sich manchmal aufsehenerregende Schlagzeilen wie "Wenn der Quantencomputer fertiggestellt ist, werden alle Passwörter und Verschlüsselungen der Welt in Sekunden geknackt". Ist das wirklich wahr?
 
-In diesem Artikel werden wir tief in die Mechanismen der GNFS (General Number Field Sieve), einer klassischen kryptoanalytischen Methode, und des "[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))", des ultimativen kryptoanalytischen Algorithmus unter Verwendung eines Quantencomputers, eintauchen. Wir werden fortgeschrittene Konzepte wie die Quanten-Fouriertransformation und das Finden von Perioden leicht verständlich erklären und den aktuellen Stand der Quantenhardware in der derzeitigen NISQ-Ära (Noisy Intermediate-Scale Quantum) sowie die tatsächlichen Hürden zur Knackung von RSA-2048 detailliert untersuchen.
+In diesem Artikel werden wir tief in die Mechanismen der GNFS (General Number Field Sieve), einer klassischen kryptoanalytischen Methode, und des "[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))", des ultimativen kryptoanalytischen Algorithmus unter Verwendung eines Quantencomputers, eintauchen. Wir werden fortgeschrittene Konzepte wie die Quanten-Fouriertransformation und das Finden von Perioden leicht verständlich erklären und den aktuellen Stand der Quantenhardware in der derzeitigen NISQ-Ära (Noisy Intermediate-Scale Quantum) sowie die tatsächlichen Hürden zur Knackung von [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-2048 detailliert untersuchen.
 
 ---
 
@@ -123,7 +123,7 @@ Wenn wir das erste Register nach Anwendung der QFT messen, erhalten wir mit sehr
 
 Wir geben dieses Messergebnis $ c $ an den klassischen Computer zurück und bilden einen Bruch $ \frac{c}{2^n} \approx \frac{j}{r} $. Und durch die Berechnung von Näherungswerten mit einer mathematischen Methode namens "Kettenbruchentwicklung (Continued fraction expansion)" können wir die Periode $ r $, die im Nenner steht, wunderbar aufdecken.
 
-Wenn $ r $ bekannt ist, können die Primfaktoren von $ N $ mithilfe der Formel aus Schritt 1 berechnet werden, und die RSA-Verschlüsselung wird vollständig geknackt.
+Wenn $ r $ bekannt ist, können die Primfaktoren von $ N $ mithilfe der Formel aus Schritt 1 berechnet werden, und die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung wird vollständig geknackt.
 
 ---
 
@@ -184,5 +184,5 @@ Bereits in großen Softwares und Plattformen wie Google Chrome und Apples iMessa
 
 Quantencomputer wandeln sich von Träumereien der Science-Fiction zu echten ingenieurtechnischen Herausforderungen. Shors Algorithmus ist eine großartige intellektuelle Errungenschaft der Menschheit, die Mathematik und Quantenmechanik vereint, aber er birgt auch die "zerstörerische Kraft", die Grundlagen unserer digitalen Gesellschaft zu erschüttern.
 
-Die RSA-Verschlüsselung wird nicht schon morgen unbrauchbar sein. Angesichts der Entwicklung der Quantentechnologie und des Risikos von "Store Now, Decrypt Later" hat die gigantische Migration in der Geschichte der Kryptographie, der Übergang zu PQC, jedoch bereits begonnen. Wir sind heute Zeugen der vordersten Front eines Paradigmenwechsels in der Informationssicherheit.
+Die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung wird nicht schon morgen unbrauchbar sein. Angesichts der Entwicklung der Quantentechnologie und des Risikos von "Store Now, Decrypt Later" hat die gigantische Migration in der Geschichte der Kryptographie, der Übergang zu PQC, jedoch bereits begonnen. Wir sind heute Zeugen der vordersten Front eines Paradigmenwechsels in der Informationssicherheit.
 

@@ -11,7 +11,7 @@ tags: ["FHE", "Homomorphic Encryption", "Cloud Computing", "Privacy"]
 
 隨著雲端運算和 AI 技術逐漸成為社會的基礎，『資料隱私』與『資料活用』之間的權衡，已成為最重要的課題之一。越來越多的需求希望能在雲端上讓 AI 分析醫療數據、金融資訊、個人生物特徵等高機密性資料，但由於資安上的疑慮，許多企業對於將資料外傳感到猶豫。
 
-傳統的加密技術（如 AES 或 RSA 等）非常擅長保護儲存中的資料（Data at Rest）以及在網路上傳輸的資料（Data in Transit）。然而，當伺服器端要對資料進行搜尋或機器學習等 **處理（計算）時（Data in Use），就必須先進行解密，將其還原為明文** 。如果在解密的這段期間伺服器遭到駭客攻擊，或是內部的惡意管理者偷窺資料，將直接導致資訊外洩。
+傳統的加密技術（如 AES 或 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 等）非常擅長保護儲存中的資料（Data at Rest）以及在網路上傳輸的資料（Data in Transit）。然而，當伺服器端要對資料進行搜尋或機器學習等 **處理（計算）時（Data in Use），就必須先進行解密，將其還原為明文** 。如果在解密的這段期間伺服器遭到駭客攻擊，或是內部的惡意管理者偷窺資料，將直接導致資訊外洩。
 
 為了克服這種「處理時必須解密」的根本性弱點，有一項夢幻技術應運而生，那就是 **完全同態加密（Fully Homomorphic Encryption: FHE）** 。只要使用 FHE，就能在維持資料加密的狀態下進行運算處理，而完全不需要解密，並且僅將計算結果的密文回傳給客戶端。
 
@@ -55,7 +55,7 @@ graph TD
 ### Partially Homomorphic Encryption (PHE: 部分同態加密)
 PHE 是一種只能無限制地執行加法或乘法中 **其中一種** 的加密方式。事實上，具備這種性質的加密技術自古便已存在。
 
-*   **RSA 加密（對乘法的同態性）**
+*   **[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密（對乘法的同態性）**
     RSA 加密在無意中具備了對乘法的同態性。若明文為 $m_1, m_2$，公鑰為 $(e, N)$：
     $$ E(m_1) = m_1^e \pmod N $$
     $$ E(m_2) = m_2^e \pmod N $$
@@ -259,7 +259,7 @@ print(f"解密後的乘法結果: {res_mul}")
 
 ## 9. 結論：密碼學的未來將邁向「看不見的計算」
 
-就像 1970 年代發明了公開金鑰加密（RSA）後，網際網路上的安全通訊（如 HTTPS 等）才得以實現一樣，Craig Gentry 發明 FHE 的創舉，同樣是密碼學歷史上最重要的里程碑之一。
+就像 1970 年代發明了公開金鑰加密（[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)）後，網際網路上的安全通訊（如 HTTPS 等）才得以實現一樣，Craig Gentry 發明 FHE 的創舉，同樣是密碼學歷史上最重要的里程碑之一。
 
 現在，完全同態加密（FHE）已走出實驗室的理論階段，並進入 Microsoft、IBM、Intel、Google 以及許多新創公司為了商業化而激烈競爭的階段。儘管計算成本與資料容量的課題依然存在，但隨著演算法的精進與硬體加速器的發展，其效能正以超越摩爾定律的速度持續提升中。
 

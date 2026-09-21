@@ -173,9 +173,9 @@ $$ T_{total} = \frac{D}{c} + \frac{L}{B} + T_{proc} $$
 
 使用传统VPN时，远程工程师在访问云上的SaaS（例如GitHub或AWS控制台）时，也必须将所有流量先引回公司网络的VPN网关，然后再从中转出互联网，这就发生了被称为“发夹NAT（Hairpinning）”的低效路由。这不仅无端增加了距离 $D$，还因为VPN设备加解密处理使 $T_{proc}$ 飙升。这极大地恶化了工程师敲击键盘的响应速度，破坏了心流状态。
 
-## 零信任（BeyondCorp）带来的范式转变
+## 零信任（[BeyondCorp](https://kenji.blog/zh-cn/p/zero-trust-network-architecture-beyond-corp/)）带来的范式转变
 
-打破这种网络限制，实现真正“无论何处都能舒适安全地工作”的环境的，是以谷歌提出的“BeyondCorp”为代表的 **零信任网络架构（Zero Trust Network Architecture: ZTNA）** 。
+打破这种网络限制，实现真正“无论何处都能舒适安全地工作”的环境的，是以谷歌提出的“BeyondCorp”为代表的 **零信任网络架构（[Zero Trust](https://kenji.blog/zh-cn/p/zero-trust-network-architecture-beyond-corp/) Network Architecture: ZTNA）** 。
 
 零信任的核心在于，“不以网络的边界（公司内还是公司外）作为信任的依据”。
 

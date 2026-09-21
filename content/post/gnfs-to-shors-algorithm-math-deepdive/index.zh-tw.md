@@ -10,7 +10,7 @@ categories: ["math-cryptography-quantum"]
 description: '質因數分解問題是RSA密碼安全性的基石。本文將透過數學公式與概念圖，徹底解說古典最強演算法「普通數域篩法（GNFS）」的數學機制，以及為何量子電腦的「秀爾演算法(Shor''s algorithm)」能將其攻破。'
 ---
 
-現代網際網路社會中的資訊安全，主要依賴以RSA密碼為首的公開金鑰密碼系統來保護。RSA密碼安全性的基礎，仰賴於 **「對巨大的合成數進行質因數分解，在計算複雜度上是極度困難的」** 這個事實。
+現代網際網路社會中的資訊安全，主要依賴以[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)密碼為首的公開金鑰密碼系統來保護。RSA密碼安全性的基礎，仰賴於 **「對巨大的合成數進行質因數分解，在計算複雜度上是極度困難的」** 這個事實。
 
 本文將解析古典電腦中最強的質因數分解演算法 **「普通數體篩法」 ** （General Number Field Sieve, GNFS）的數學機制，並透過數學公式與概念圖，深入探討為何它會被彼得·秀爾（Peter Shor）所發現的 ** 「Shor演算法」** 完全擊敗，徹底剖析這場典範轉移。
 

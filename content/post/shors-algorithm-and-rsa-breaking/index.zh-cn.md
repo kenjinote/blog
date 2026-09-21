@@ -10,11 +10,11 @@ description: '讲解量子计算机的崛起将如何威胁支撑现代通信基
 
 ## 引言：密码学技术与量子计算机的交汇点
 
-在现代互联网社会中，“公钥加密”是保护通信机密的基础。其中最具代表性的，是1977年由Ron Rivest、Adi Shamir和Leonard Adleman三位学者开发的“RSA加密”。从我们每天使用的在线购物支付、网站浏览（HTTPS）到电子邮件的收发，RSA加密作为互联网基础设施的心脏发挥着作用。
+在现代互联网社会中，“公钥加密”是保护通信机密的基础。其中最具代表性的，是1977年由Ron Rivest、Adi Shamir和Leonard Adleman三位学者开发的“[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密”。从我们每天使用的在线购物支付、网站浏览（HTTPS）到电子邮件的收发，RSA加密作为互联网基础设施的心脏发挥着作用。
 
 然而，随着“量子计算机”的出现，人们指出这种安全性有可能被彻底颠覆。媒体上甚至会看到“量子计算机一旦完成，世界上的密码和加密将在几秒钟内被破解”这样耸人听闻的标题。这到底是不是真的呢？
 
-在本文中，我们将深入探讨经典的密码破解方法GNFS（一般数域筛选法），以及使用量子计算机的密码破解算法终极武器——“秀尔算法（[Shor's Algorithm](https://kenji.blog/zh-cn/p/quantum-computing-shors-algorithm/)）”的原理。我们将通俗易懂地讲解量子傅里叶变换和周期寻找等高级概念，并详细验证在当前NISQ（含噪中型量子）时代的量子硬件现状，以及实际破解RSA-2048所需跨越的障碍。
+在本文中，我们将深入探讨经典的密码破解方法GNFS（一般数域筛选法），以及使用量子计算机的密码破解算法终极武器——“秀尔算法（[Shor's Algorithm](https://kenji.blog/zh-cn/p/quantum-computing-shors-algorithm/)）”的原理。我们将通俗易懂地讲解量子傅里叶变换和周期寻找等高级概念，并详细验证在当前NISQ（含噪中型量子）时代的量子硬件现状，以及实际破解[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)-2048所需跨越的障碍。
 
 ---
 
@@ -122,7 +122,7 @@ $ |x, a^x \bmod N\rangle $
 
 将这个测量结果 $ c $ 传回经典计算机，构建分数 $ \frac{c}{2^n} \approx \frac{j}{r} $。然后，利用称为“连分数展开（Continued fraction expansion）”的数学方法计算近似值，就能巧妙地找出作为分母的周期 $ r $。
 
-一旦知道了 $ r $，剩下的就是使用步骤1的公式计算出 $ N $ 的质因数，RSA加密就被彻底破解了。
+一旦知道了 $ r $，剩下的就是使用步骤1的公式计算出 $ N $ 的质因数，[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密就被彻底破解了。
 
 ---
 
@@ -183,6 +183,6 @@ PQC是基于即使使用量子计算机也很难破解（即无法应用秀尔�
 
 量子计算机正在从科幻世界里的梦想，转变为现实的工程挑战。秀尔算法是数学与量子力学融合的人类伟大智力成果，但同时，它也暗藏着动摇我们数字社会基石的“破坏力”。
 
-RSA加密并不会明天立刻就变得不可用。但是，考虑到量子技术的发展以及“Store Now, Decrypt Later”的风险，向PQC过渡这一密码学史上规模空前的迁移已经开始。我们现在正在见证信息安全领域范式转移的最前线。
+[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密并不会明天立刻就变得不可用。但是，考虑到量子技术的发展以及“Store Now, Decrypt Later”的风险，向PQC过渡这一密码学史上规模空前的迁移已经开始。我们现在正在见证信息安全领域范式转移的最前线。
 
 

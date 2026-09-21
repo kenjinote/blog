@@ -10,11 +10,11 @@ tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'OAuth 2.0의 인가 코드 그랜트 플로우의 원리를 Slack App 연동 구현을 통해 상세히 도해하고 해설합니다. Node.js를 이용한 구체적인 코드 예제와 보안 모범 사례까지 총망라한 완전판 가이드입니다.'
 ---
 
-# 들어가며: 왜 OAuth 2.0을 배워야 하는가?
+# 들어가며: 왜 [[OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)을 배워야 하는가?
 
-현대의 웹 애플리케이션에서 여러 서비스가 연동되어 동작하는 것은 더 이상 낯선 풍경이 아닙니다. 예를 들어, "Google 계정으로 로그인하기", "Trello의 작업이 업데이트되면 Slack으로 알림 보내기", "Zoom 회의 링크를 Google 캘린더에 자동 추가하기"와 같은 기능들입니다. 이 모든 것의 이면에서 활약하고 있는 것이 **OAuth 2.0 (Open Authorization 2.0)** 이라는 인가(Authorization) 프레임워크입니다.
+현대의 웹 애플리케이션에서 여러 서비스가 연동되어 동작하는 것은 더 이상 낯선 풍경이 아닙니다. 예를 들어, "Google 계정으로 로그인하기", "Trello의 작업이 업데이트되면 Slack으로 알림 보내기", "Zoom 회의 링크를 Google 캘린더에 자동 추가하기"와 같은 기능들입니다. 이 모든 것의 이면에서 활약하고 있는 것이 **OAuth 2.0 (Open [Authorization](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) 2.0)** 이라는 인가(Authorization) 프레임워크입니다.
 
-과거에는 다른 서비스 간에 데이터를 주고받을 때, 사용자가 자신의 ID와 비밀번호를 연동 대상 서비스에 직접 전달하는 "기본 인증(Basic Authentication)"이나 "비밀번호 공유"라는 매우 위험한 방식이 사용되었습니다. 하지만 이 방법은 연동 대상 서비스가 사용자의 모든 권한을 쥐게 되어 치명적인 보안 위험을 수반합니다.
+과거에는 다른 서비스 간에 데이터를 주고받을 때, 사용자가 자신의 ID와 비밀번호를 연동 대상 서비스에 직접 전달하는 "기본 인증(Basic [Authentication](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/))"이나 "비밀번호 공유"라는 매우 위험한 방식이 사용되었습니다. 하지만 이 방법은 연동 대상 서비스가 사용자의 모든 권한을 쥐게 되어 치명적인 보안 위험을 수반합니다.
 
 OAuth 2.0은 이러한 "비밀번호 공유"를 방지하면서, "특정 권한(스코프)만"을 "제한된 시간 동안만" 서드파티 애플리케이션에 위임하기 위한 표준 프로토콜(RFC 6749)로 탄생했습니다.
 
@@ -22,7 +22,7 @@ OAuth 2.0은 이러한 "비밀번호 공유"를 방지하면서, "특정 권한(
 
 ---
 
-# 1. OAuth 2.0의 기본 개념: 4가지 역할(Roles)
+# 1. [[OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)의 기본 개념: 4가지 역할(Roles)
 
 OAuth 2.0을 이해하기 위한 첫걸음은 등장인물(Role)을 정확히 파악하는 것입니다. RFC 6749에서는 다음의 4가지 역할을 정의하고 있습니다.
 
@@ -38,19 +38,19 @@ graph TD
 1. **Resource Owner (리소스 오너)**
    - 리소스에 대한 접근 권한을 부여할 수 있는 권한을 가진 엔티티입니다. 일반적으로 "엔드 유저(사람)"를 가리킵니다. 이번 예제에서는 "Slack 워크스페이스에 소속되어 있고 채널에 메시지를 게시할 권한을 가진 여러분 자신"입니다.
 2. **Client (클라이언트)**
-   - 리소스 오너의 허가를 얻어 리소스 서버에 접근하려는 애플리케이션입니다. 이번 예제에서는 "여러분이 개발 중인 Node.js 애플리케이션(Slack App)"입니다. "클라이언트"라는 이름이지만, 서버 사이드에서 동작하는 웹 애플리케이션이라 하더라도 OAuth의 문맥에서는 "클라이언트"라고 불립니다.
-3. **Authorization Server (인가 서버)**
+   - 리소스 오너의 허가를 얻어 리소스 서버에 접근하려는 애플리케이션입니다. 이번 예제에서는 "여러분이 개발 중인 Node.js 애플리케이션(Slack App)"입니다. "클라이언트"라는 이름이지만, 서버 사이드에서 동작하는 웹 애플리케이션이라 하더라도 [OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)의 문맥에서는 "클라이언트"라고 불립니다.
+3. **[Authorization](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) Server (인가 서버)**
    - 리소스 오너를 인증하고, 리소스 오너로부터 인가를 얻은 후 클라이언트에게 액세스 토큰을 발급하는 서버입니다. 이번 예제에서는 `slack.com/oauth/v2/authorize` 를 제공하는 Slack의 인증 기반입니다.
 4. **Resource Server (리소스 서버)**
    - 보호된 리소스를 호스팅하며, 액세스 토큰을 사용한 리소스 접근 요청을 접수하고 응답하는 서버입니다. 이번 예제에서는 `chat.postMessage` 등의 API를 제공하는 `slack.com/api/` 의 엔드포인트입니다.
 
-OAuth의 흐름이란 한마디로 **"Client가 Resource Owner의 동의를 얻어 Authorization Server로부터 액세스 토큰을 받고, 이를 사용하여 Resource Server에서 데이터를 조회·조작하는"** 일련의 절차를 의미합니다.
+[OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)의 흐름이란 한마디로 **"Client가 Resource Owner의 동의를 얻어 [Authorization](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) Server로부터 액세스 토큰을 받고, 이를 사용하여 Resource Server에서 데이터를 조회·조작하는"** 일련의 절차를 의미합니다.
 
 ---
 
 # 2. 인가 코드 그랜트 (Authorization Code Grant) 완전 해부
 
-OAuth 2.0에는 여러 플로우(그랜트 타입)가 존재하지만, 웹 애플리케이션과 같이 서버 사이드에서 비밀키(Client Secret)를 안전하게 보관할 수 있는 환경에서 가장 권장되며 널리 쓰이는 것이 **인가 코드 그랜트(Authorization Code Grant)** 입니다.
+[OAuth 2.0](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)에는 여러 플로우(그랜트 타입)가 존재하지만, 웹 애플리케이션과 같이 서버 사이드에서 비밀키(Client Secret)를 안전하게 보관할 수 있는 환경에서 가장 권장되며 널리 쓰이는 것이 **인가 코드 그랜트(Authorization Code Grant)** 입니다.
 
 인가 코드 그랜트의 가장 큰 특징은 **프론트 채널(브라우저를 경유하는 통신)** 과 ** 백 채널(서버 간 직접 통신)** 을 명확히 분리하고 있다는 점입니다. 프론트 채널에서는 일회성 "인가 코드(Authorization Code)"만을 주고받으며, 최종적인 "액세스 토큰"의 취득은 백 채널에서 수행함으로써 토큰이 브라우저의 방문 기록이나 리퍼러에 유출될 위험을 극적으로 낮춥니다.
 
@@ -99,7 +99,7 @@ sequenceDiagram
 3. 생성 후 나타나는 "Basic Information" 화면에서 다음의 두 가지 중요한 크리덴셜(자격 증명)을 확인합니다.
    - **Client ID**: 앱을 공개적으로 고유하게 식별하는 ID. 브라우저를 경유하는 요청(프론트 채널)에 포함되어도 문제가 없습니다.
    - **Client Secret**: 여러분의 앱만 알고 있는 비밀 문자열. ** 절대 브라우저 측에 노출시키거나 GitHub 등에 커밋해서는 안 됩니다.**
-4. "OAuth & Permissions" 화면으로 이동하여 "Redirect URLs"에 콜백 받을 URL을 등록합니다. 이번에는 로컬 개발을 가정하여 다음을 설정합니다.
+4. "[OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) & Permissions" 화면으로 이동하여 "Redirect URLs"에 콜백 받을 URL을 등록합니다. 이번에는 로컬 개발을 가정하여 다음을 설정합니다.
    - `http://localhost:3000/slack/oauth_redirect`
 
 이제 준비가 완료되었습니다. 서버 구현에 들어가겠습니다.
@@ -191,7 +191,7 @@ Location: https://slack.com/oauth/v2/authorize?client_id=123.456&scope=chat%3Awr
 Set-Cookie: connect.sid=...; Path=/; HttpOnly
 ```
 
-사용자의 브라우저는 즉시 지정된 `Location`으로 이동하여 Slack 화면(Consent Screen)이 표시되고, "My First OAuth App이 워크스페이스에 대한 접근 권한을 요청하고 있습니다"라는 익숙한 화면이 나타납니다.
+사용자의 브라우저는 즉시 지정된 `Location`으로 이동하여 Slack 화면(Consent Screen)이 표시되고, "My First [OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) App이 워크스페이스에 대한 접근 권한을 요청하고 있습니다"라는 익숙한 화면이 나타납니다.
 
 ---
 
@@ -291,7 +291,7 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 # 6. 토큰 스코프와 최소 권한의 원칙 (Principle of Least Privilege)
 
-OAuth 2.0에서 가장 중요한 개념 중 하나가 "스코프(Scope)"입니다. 스코프란 액세스 토큰에 연결된 권한의 범위를 의미합니다.
+[[OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)에서 가장 중요한 개념 중 하나가 "스코프(Scope)"입니다. 스코프란 액세스 토큰에 연결된 권한의 범위를 의미합니다.
 
 Slack에서는 권한이 매우 세분화되어 있으며, 크게 **Bot Token Scopes** 와 **User Token Scopes** 가 존재합니다.
 - `chat:write` (Bot): 앱(봇) 자신으로서 채널에 메시지를 게시할 권한.
@@ -305,9 +305,9 @@ Slack에서는 권한이 매우 세분화되어 있으며, 크게 **Bot Token Sc
 
 # 7. 보다 고도화된 보안: PKCE (Proof Key for Code Exchange)
 
-최근 OAuth 2.0의 보안을 한층 더 강화하는 메커니즘으로 **PKCE (Proof Key for Code Exchange, RFC 7636, "픽시"라고 발음)** 가 표준화되어 널리 이용되고 있습니다.
+최근 [[OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)의 보안을 한층 더 강화하는 메커니즘으로 **PKCE (Proof Key for Code Exchange, RFC 7636, "픽시"라고 발음)** 가 표준화되어 널리 이용되고 있습니다.
 
-원래 PKCE는 네이티브 앱(iOS/Android)이나 SPA(Single Page Application) 등 `client_secret`을 안전하게 보관할 수 없는 "퍼블릭 클라이언트"를 위해 설계된 것이었습니다. 그러나 현재는 보안 모범 사례(OAuth 2.1 초안)에서 서버 사이드의 "컨피덴셜 클라이언트"일지라도 PKCE의 사용이 강력히 권장되고 있습니다.
+원래 PKCE는 네이티브 앱(iOS/Android)이나 SPA(Single Page Application) 등 `client_secret`을 안전하게 보관할 수 없는 "퍼블릭 클라이언트"를 위해 설계된 것이었습니다. 그러나 현재는 보안 모범 사례([OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) 2.1 초안)에서 서버 사이드의 "컨피덴셜 클라이언트"일지라도 PKCE의 사용이 강력히 권장되고 있습니다.
 
 ## PKCE의 원리와 수학적 배경
 
@@ -357,20 +357,20 @@ sequenceDiagram
 반드시 애플리케이션 레이어에서 **AES-256-GCM** 등의 강력한 대칭키 암호를 사용하여 암호화한 뒤 DB에 저장해야 합니다. 암호화/복호화를 위한 마스터 키는 AWS KMS(Key Management 경[Service](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/))나 GCP Cloud KMS 같은 안전한 키 관리 서비스를 이용하여 엄격하게 관리합니다.
 
 ## 2. 토큰 로테이션 (Token Rotation)
-장기적으로 유효한 토큰을 계속 사용하는 것은 위험이 따릅니다. 최신 OAuth 구현에서는 "리프레시 토큰(Refresh Token)"을 이용해 몇 시간마다 새로운 액세스 토큰을 다시 발급받는 메커니즘(Token Rotation)을 도입할 것을 권장합니다. Slack API에서도 옵션 설정으로 토큰 로테이션을 활성화할 수 있습니다.
+장기적으로 유효한 토큰을 계속 사용하는 것은 위험이 따릅니다. 최신 [OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) 구현에서는 "리프레시 토큰(Refresh Token)"을 이용해 몇 시간마다 새로운 액세스 토큰을 다시 발급받는 메커니즘(Token Rotation)을 도입할 것을 권장합니다. Slack API에서도 옵션 설정으로 토큰 로테이션을 활성화할 수 있습니다.
 
 ---
 
 # 요약
 
-본 문서에서는 OAuth 2.0의 인가 코드 그랜트 플로우에 대해 Slack App 연동의 구체적인 Node.js 구현 코드를 곁들여 상세히 해설했습니다.
+본 문서에서는 [OAuth 2.0](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)의 인가 코드 그랜트 플로우에 대해 Slack App 연동의 구체적인 Node.js 구현 코드를 곁들여 상세히 해설했습니다.
 
 1. **4가지 역할(RO, Client, AS, RS)** 을 의식함으로써 시스템 전체의 아키텍처가 명확해집니다.
 2. **인가 코드 그랜트** 는 브라우저와 서버 간의 통신 경로(프론트/백 채널)를 교묘하게 구분하여 사용함으로써 안전성을 보장합니다.
 3. **`state` 파라미터 **를 통한 [CSRF](https://kenji.blog/ko/p/web-security-basics-cors-csp/) 방어와 **PKCE** 를 통한 인가 코드 인터셉트 공격 방지 등, 배경에 있는 암호학적 메커니즘을 이해하는 것이 안전한 구현으로 가는 지름길입니다.
 4. **최소 권한의 원칙** 에 입각한 스코프 설계와 DB 저장 시의 암호화는 운영상 절대 빼놓을 수 없는 요소입니다.
 
-OAuth 2.0은 매우 심오하고 RFC 문서만 해도 방대한 사양이 존재하지만, 이처럼 실제 플랫폼(Slack)을 타겟으로 하여 직접 만들어보며 배우면 그 세련된 설계 사상과 견고한 보안 메커니즘을 실감할 수 있을 것입니다. 향후 애플리케이션 개발이나 API 연동 구현에 있어 이 문서의 지식이 도움이 되기를 바랍니다.
+[[OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)은 매우 심오하고 RFC 문서만 해도 방대한 사양이 존재하지만, 이처럼 실제 플랫폼(Slack)을 타겟으로 하여 직접 만들어보며 배우면 그 세련된 설계 사상과 견고한 보안 메커니즘을 실감할 수 있을 것입니다. 향후 애플리케이션 개발이나 API 연동 구현에 있어 이 문서의 지식이 도움이 되기를 바랍니다.
 
 
 

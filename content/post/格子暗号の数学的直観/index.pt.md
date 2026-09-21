@@ -11,7 +11,7 @@ tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 
 # 1. Introdução: O alvorecer da Criptografia Pós-Quântica (PQC) e a ascensão da criptografia baseada em reticulados
 
-A infraestrutura digital da sociedade moderna é sustentada por tecnologias de criptografia de chave pública, como a criptografia RSA e a Criptografia de Curva Elíptica (ECC). Esses métodos criptográficos baseiam sua segurança na dificuldade matemática de problemas como o "Problema de Fatoração de Inteiros" e o "Problema do Logaritmo Discreto", que se acredita não poderem ser resolvidos eficientemente (exigindo tempo exponencial) pelos computadores clássicos convencionais.
+A infraestrutura digital da sociedade moderna é sustentada por tecnologias de criptografia de chave pública, como a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e a Criptografia de Curva Elíptica (ECC). Esses métodos criptográficos baseiam sua segurança na dificuldade matemática de problemas como o "Problema de Fatoração de Inteiros" e o "Problema do Logaritmo Discreto", que se acredita não poderem ser resolvidos eficientemente (exigindo tempo exponencial) pelos computadores clássicos convencionais.
 
 No entanto, o "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)", publicado por Peter Shor em 1994, enviou ondas de choque através do mundo da criptografia. Este algoritmo provou matematicamente que, uma vez realizados computadores quânticos de grande escala, problemas de fatoração de inteiros e logaritmos discretos serão resolvidos em tempo polinomial. Isso significa que a criptografia de chave pública amplamente utilizada hoje se tornará completamente decifrável no futuro.
 
@@ -152,7 +152,7 @@ Agora que entendemos a dificuldade do problema LWE, vamos ver a criptografia de 
 3. Gere uma matriz aleatória $A \in \mathbb{Z}_q^{m \times n}$.
 4. Escolha um vetor de erro pequeno $\mathbf{e} \in \mathbb{Z}_q^m$ a partir de uma distribuição de erro como a distribuição gaussiana discreta.
 5. Calcule o vetor $\mathbf{b} = A \mathbf{s} + \mathbf{e} \pmod q$.
-6. A chave pública (Public Key) será $(A, \mathbf{b})$.
+6. A chave pública ([Public Key](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)) será $(A, \mathbf{b})$.
 7. A chave privada (Secret Key) será $\mathbf{s}$.
 
 A chave pública é exatamente a "instância do problema LWE" em si. Uma vez que encontrar a chave privada $\mathbf{s}$ a partir da chave pública $(A, \mathbf{b})$ é equivalente a resolver o problema de busca LWE, a segurança é garantida.
@@ -312,7 +312,7 @@ Atualmente, o "CRYSTALS-Kyber" (nome padronizado: ML-KEM), selecionado pelo NIST
 
 Por fim, tocaremos na questão central: "Por que se acredita que a criptografia baseada em reticulados não pode ser decifrada nem mesmo por computadores quânticos?".
 
-O algoritmo de Shor, que permite aos computadores quânticos quebrar a criptografia RSA ou a criptografia de curvas elípticas, é essencialmente um algoritmo para resolver o "Problema do Subgrupo Oculto (Hidden Subgroup Problem: HSP)". As estruturas matemáticas subjacentes à RSA e à ECC (grupos abelianos finitos) possuem periodicidade, e usando a operação específica de algoritmos quânticos chamada Transformada de Fourier Quântica (QFT), esse período (subgrupo oculto) pode ser extraído de uma vez.
+O algoritmo de Shor, que permite aos computadores quânticos quebrar a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) ou a criptografia de curvas elípticas, é essencialmente um algoritmo para resolver o "Problema do Subgrupo Oculto (Hidden Subgroup Problem: HSP)". As estruturas matemáticas subjacentes à RSA e à ECC (grupos abelianos finitos) possuem periodicidade, e usando a operação específica de algoritmos quânticos chamada Transformada de Fourier Quântica (QFT), esse período (subgrupo oculto) pode ser extraído de uma vez.
 
 Contudo, os problemas de reticulados são fundamentalmente diferentes. Embora os reticulados também tenham periodicidade, o que é requerido em problemas como SVP e CVP são propriedades geométricas não-lineares, como "a distância mais curta" e "a remoção de ruído". Mesmo que se aplique a "transformada de Fourier quântica sobre grupos abelianos" como no algoritmo de Shor diretamente, informações úteis que poderiam ser a resposta a problemas de reticulados não podem ser extraídas eficientemente. Até o momento, não foram descobertos algoritmos quânticos que resolvam SVP ou LWE em tempo polinomial e acredita-se amplamente que, mesmo com a capacidade de computação paralela dos computadores quânticos, não exista meio eficaz além de uma busca por força bruta (com uma aceleração na raiz quadrada pelo algoritmo de Grover).
 

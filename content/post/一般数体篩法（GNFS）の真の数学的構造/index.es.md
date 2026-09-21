@@ -134,7 +134,7 @@ A menos que esta unidad $u$ sea en sí misma un cuadrado (elemento cuadrático) 
 ## Etapa 5: La magia de Adleman, "Caracteres Cuadráticos" (Quadratic Characters)
 
 Los obstáculos del grupo de clases de ideales y del grupo de unidades. ¿Cómo los superamos?
-Aquí es donde entra la genial técnica introducida por el criptógrafo Leonard Adleman (la "A" de RSA) y otros: los **"Caracteres Cuadráticos" (Quadratic Characters)**.
+Aquí es donde entra la genial técnica introducida por el criptógrafo Leonard Adleman (la "A" de [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)) y otros: los **"Caracteres Cuadráticos" (Quadratic Characters)**.
 
 Para determinar "si un elemento es un cuadrado perfecto dentro de un cuerpo algebraico", utilizamos una versión para cuerpos algebraicos del símbolo de [Legendre](https://kenji.blog/es/p/legendre/) (residuo cuadrático).
 En la matriz gigante anterior (el rompecabezas para hacer que el número de ideales primos sea par), **añadimos en secreto unas cuantas decenas de condiciones (columnas) adicionales para que "los caracteres cuadráticos para algunos ideales primos especiales $\mathfrak{q}$ también sean todos $1$ (pares)"**.
@@ -173,7 +173,7 @@ Además, dado que el par original $(a, b)$ fue creado correspondientemente en la
 El resto es rezar para que $X$ e $Y$ no sean una solución trivial ($X \equiv \pm Y$), y calcular:
 **$\gcd(X - Y, N)$**
 
-Si es una solución no trivial, el algoritmo de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) correrá en 0.001 segundos e imprimirá en la pantalla de salida el corazón del cifrado RSA: los primos secretos $p$ y $q$.
+Si es una solución no trivial, el algoritmo de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) correrá en 0.001 segundos e imprimirá en la pantalla de salida el corazón del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/): los primos secretos $p$ y $q$.
 
 ---
 

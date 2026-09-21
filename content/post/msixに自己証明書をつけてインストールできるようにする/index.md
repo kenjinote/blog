@@ -88,7 +88,7 @@ signtool sign /fd SHA256 /f "D:\pfx\cert.pfx" /p "password" "C:\installer\instal
 * **signtool** で MSIX に署名する
 
 この流れを押さえれば、商用証明書を買わずにローカル環境で動作確認やテスト配布が可能になります。
-もちろん実際の商用配布では認証局発行の証明書が必須ですが、開発・検証段階ではこの手法がとても便利です。
+もちろん実際の商用配布では[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)局発行の証明書が必須ですが、開発・検証段階ではこの手法がとても便利です。
 
 ---
 

@@ -35,7 +35,7 @@ flowchart TD
     C -->|"Audit Logs"| G["Security & Compliance Hub"]
 ```
 
-このような[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)では、データの流入時にハッシュ化、マスキング、暗号化などの処理が自動的に適用されます。しかし、後述するように、単純なマスキングや仮名化（Pseudonymization）だけでは、他のデータソースとの突き合わせによる「再識別化（Re-identification）」のリスクを完全に排除することはできません。
+このような[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)では、データの流入時にハッシュ化、マスキング、[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)などの処理が自動的に適用されます。しかし、後述するように、単純なマスキングや仮名化（Pseudonymization）だけでは、他のデータソースとの突き合わせによる「再識別化（Re-identification）」のリスクを完全に排除することはできません。
 
 ## 2. プライバシー保護技術（PETs）の深い理解
 
@@ -50,7 +50,7 @@ flowchart TD
 2. **準識別子 (Quasi-Identifiers: QIs)** ：年齢、性別、郵便番号など、単体では個人を特定できないが、組み合わせることで特定可能になる情報。
 3. **機密属性 (Sensitive Attributes)** ：病名や年収など、保護すべき情報。
 
-k-匿名性は、準識別子の組み合わせ（同値類：Equivalence Class）が必ず $k$ 個以上存在することを保証します。しかし、k-匿名性には「同質性攻撃（Homogeneity Attack）」や「背景知識攻撃（Background Knowledge Attack）」に対する脆弱性があります。例えば、ある同値類に属する $k$ 人全員が同じ病名（機密属性）を持っていた場合、k-匿名性が保たれていても病名が特定されてしまいます。
+k-匿名性は、準識別子の組み合わせ（同値類：Equivalence Class）が必ず $k$ 個以上存在することを保証します。しかし、k-匿名性には「同質性攻撃（Homogeneity Attack）」や「背景知識攻撃（Background Knowledge Attack）」に対する[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)があります。例えば、ある同値類に属する $k$ 人全員が同じ病名（機密属性）を持っていた場合、k-匿名性が保たれていても病名が特定されてしまいます。
 
 これを克服するために提案されたのが以下の拡張モデルです。
 
@@ -132,7 +132,7 @@ $$ w_{t+1} = \sum_{k=1}^K \frac{n_k}{n} w_{t+1}^k $$
 
 ### 2.4 準同型暗号 (Homomorphic Encryption: HE)
 
-データを暗号化したままの状態で計算（加算や乗算など）を行うことを可能にする「魔法のような」暗号技術が準同型暗号です。通常の暗号化手法では、データに対して計算処理を行う場合、一度復号化（平文に戻す）する必要がありますが、クラウドサーバー上で復号化を行うことはセキュリティ上の脆弱性となります。
+データを[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)したままの状態で計算（加算や乗算など）を行うことを可能にする「魔法のような」暗号技術が準同型暗号です。通常の暗号化手法では、データに対して計算処理を行う場合、一度復号化（平文に戻す）する必要がありますが、クラウドサーバー上で復号化を行うことはセキュリティ上の[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)となります。
 
 準同型暗号を用いれば、以下のような特性が実現されます。暗号化関数を $E(\cdot)$ としたとき、平文 $m_1$ と $m_2$ の加算や乗算が、暗号文のままの演算（$\oplus$ や $\otimes$）で可能になります。
 

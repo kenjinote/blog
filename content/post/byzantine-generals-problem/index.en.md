@@ -45,7 +45,7 @@ In this situation, Lieutenant 1 receives contradictory information: "The command
 
 In this way, asking "how can normal nodes reach the same conclusion in a network where malicious nodes can broadcast arbitrary false information" is the essence of the **[Byzantine Generals](https://kenji.blog/en/p/byzantine-generals-problem-consensus/) Problem**.
 
-## 2. Strict Conditions for Consensus
+## 2. Strict Conditions for [Consensus](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/)
 
 To reach consensus as a system in this problem, the following two conditions (interactive consistency conditions) must be met:
 
@@ -116,7 +116,7 @@ What if the sent messages are appended with "unforgeable digital signatures," ma
 
 In this model, an order issued by a commander cannot be altered in transit. As a result, it has been proved that regardless of the number of traitors $m$, consensus can be formed as long as there are $n \ge m + 2$ generals (i.e., a minimum of 3 in total). In modern systems, digital signatures based on public-key cryptography serve this role.
 
-## 4. Blockchain and Byzantine Fault Tolerance
+## 4. [Blockchain](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) and Byzantine Fault Tolerance
 
 Tolerance against the Byzantine Generals Problem is called **Byzantine Fault Tolerance** (BFT). It is an important metric for a distributed system to withstand failures or malicious attacks and continue operating normally.
 
@@ -147,15 +147,15 @@ end
 
 Through this process, even if there are $m$ faulty or malicious nodes in the network, as long as the total number of nodes satisfies $n \ge 3m + 1$, requests can be processed in the correct order. In PBFT, the amount of communication between components increases proportionally to the square of the number of nodes, making it unsuitable for large-scale networks like public chains. However, it is widely used in consortium blockchains with a limited number of nodes (such as Hyperledger Fabric) because it provides extremely fast and deterministic consensus.
 
-### Nakamoto Consensus (Proof of Work)
+### Nakamoto [Consensus](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Work)
 
-Satoshi Nakamoto, the creator of [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/), addressed this problem with a completely new approach. This is the **Nakamoto Consensus**, combining **Proof of Work** (PoW) with a rule that considers the longest chain as the correct one.
+Satoshi Nakamoto, the creator of [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/), addressed this problem with a completely new approach. This is the **Nakamoto [Consensus](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/)**, combining **Proof of Work** ([PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/)) with a rule that considers the longest chain as the correct one.
 
 In Nakamoto Consensus, only the one who wins a mathematical computational race (mining) gains the right to propose a block. To make the network recognize fake information, it is necessary to control the majority (51% or more) of the computing power of the entire network, which is designed to be extremely difficult in reality. As a result, it is evaluated as having probabilistically solved the [Byzantine Generals](https://kenji.blog/en/p/byzantine-generals-problem-consensus/) Problem in an open network with an unspecified number of participants.
 
-### Application of BFT in PoS (Proof of Stake)
+### Application of BFT in [PoS](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Stake)
 
-Nakamoto Consensus was revolutionary, but it had a problem of consuming enormous amounts of electricity for mining. To solve this, **Proof of Stake** (PoS) emerged, which grants block proposal rights according to the amount of crypto assets (stake) held by a node.
+Nakamoto [Consensus](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) was revolutionary, but it had a problem of consuming enormous amounts of electricity for mining. To solve this, **Proof of Stake** (PoS) emerged, which grants block proposal rights according to the amount of crypto assets (stake) held by a node.
 
 Many modern PoS algorithms, such as Ethereum's Casper and Cosmos's Tendermint, are designed based on this BFT. For example, Tendermint further refines the concept of PBFT mentioned above and forms consensus in a network of "validators" incorporating weighting by stake amount. It is designed so that the next block cannot be generated without collecting signatures from 2/3 or more of the validators, making it a great example of realizing the condition $n \ge 3m + 1$ (traitors being less than 1/3) in a modern public chain.
 

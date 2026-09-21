@@ -12,7 +12,7 @@ description: "A chegada do 'Q-Day', onde o incrível poder de computação dos c
 
 ## 1. Introdução: Os passos da era pós-quântica e a crise da blockchain
 
-Desde a criação do [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/) por Satoshi Nakamoto em 2009, a tecnologia blockchain cresceu para se tornar a base de sistemas financeiros e aplicativos em todo o mundo como um "livro-razão descentralizado e à prova de adulteração". Essa segurança robusta é sustentada pela criptografia moderna, especificamente a **Criptografia de Chave Pública (Public Key [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)** e as **Funções Hash Criptográficas ([Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphic Hash Functions)**.
+Desde a criação do [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/) por Satoshi Nakamoto em 2009, a tecnologia blockchain cresceu para se tornar a base de sistemas financeiros e aplicativos em todo o mundo como um "livro-razão descentralizado e à prova de adulteração". Essa segurança robusta é sustentada pela criptografia moderna, especificamente a **Criptografia de Chave Pública ([Public Key](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)** e as **Funções Hash Criptográficas ([Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)s)**.
 
 Essas tecnologias criptográficas garantem a segurança com base na "dificuldade computacional" matemática, segundo a qual computadores clássicos (os PCs e supercomputadores que usamos atualmente) levariam um tempo equivalente à idade do universo para decifrá-las.
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. Fundamentos e dificuldade computacional da Criptografia de Curva Elíptica (ECDSA)
 
-Muitas blockchains, incluindo [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/) e Ethereum, adotam o **Algoritmo de Assinatura Digital de Curva Elíptica (ECDSA: Elliptic Curve Digital Signature Algorithm)** como seu algoritmo de assinatura digital. Especificamente, o [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/) usa uma curva elíptica com o parâmetro `secp256k1`.
+Muitas blockchains, incluindo [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/) e Ethereum, adotam o **Algoritmo de Assinatura Digital de Curva Elíptica (ECDSA: Elliptic Curve [Digital Signature](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) Algorithm)** como seu algoritmo de assinatura digital. Especificamente, o [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/) usa uma curva elíptica com o parâmetro `secp256k1`.
 
 A segurança da criptografia de curva elíptica depende da dificuldade computacional do **Problema do Logaritmo Discreto em Curvas Elípticas (ECDLP: Elliptic Curve Discrete Logarithm Problem)**.
 Uma curva elíptica é definida pela equação na forma padrão de Weierstrass a seguir:
@@ -62,7 +62,7 @@ Usar um computador clássico para calcular reversamente (encontrar o logaritmo d
 
 ### 2.2. Colapso pelo [Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/))
 
-No entanto, o **Algoritmo de Shor**, publicado por Peter Shor em 1994, destruiu completamente essa premissa. O algoritmo de Shor foi originalmente proposto para resolver o problema de fatoração de inteiros (a base da criptografia RSA) em tempo polinomial, mas também pode ser aplicado ao problema do logaritmo discreto e ao problema do logaritmo discreto em curvas elípticas.
+No entanto, o **Algoritmo de Shor**, publicado por Peter Shor em 1994, destruiu completamente essa premissa. O algoritmo de Shor foi originalmente proposto para resolver o problema de fatoração de inteiros (a base da criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)) em tempo polinomial, mas também pode ser aplicado ao problema do logaritmo discreto e ao problema do logaritmo discreto em curvas elípticas.
 
 O núcleo do algoritmo de Shor reside em sua capacidade de encontrar rapidamente o "Período (Period)" de uma função usando a **Transformada de Fourier Quântica (QFT: Quantum Fourier Transform)**.
 
@@ -112,7 +112,7 @@ O número de portas quânticas exigido para todo esse processo é $\mathcal{O}(\
 
 Outra ameaça é o **Algoritmo de Grover**, proposto por Lov Grover em 1996. Ele tem um impacto significativo nas funções hash (ex: SHA-256).
 
-Na blockchain, as funções hash são usadas para garantir a integridade dos dados, gerar endereços e servir como base para a **mineração PoW (Proof of Work)** no [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/). O cálculo reverso (cálculo de pré-imagem) de uma função hash pode ser visto como um "problema de busca em banco de dados não estruturado" no qual, para um valor de saída específico $y$, buscamos um valor de entrada $x$ tal que $H(x) = y$.
+Na blockchain, as funções hash são usadas para garantir a integridade dos dados, gerar endereços e servir como base para a **mineração [PoW](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Work)** no [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/). O cálculo reverso (cálculo de pré-imagem) de uma função hash pode ser visto como um "problema de busca em banco de dados não estruturado" no qual, para um valor de saída específico $y$, buscamos um valor de entrada $x$ tal que $H(x) = y$.
 
 Com computadores clássicos, para encontrar a resposta correta dentre $N$ possibilidades, é necessária uma média de $\frac{N}{2}$ tentativas, ou $N$ tentativas no pior dos casos. Ou seja, a complexidade é $\mathcal{O}(N)$.
 No entanto, o algoritmo de Grover usa uma técnica quântica chamada "Amplificação de Amplitude (Amplitude Amplification)". Ele amplifica repetidamente a amplitude de probabilidade do estado que é a resposta correta dentre todas as possibilidades em superposição, reduzindo assim o tempo de busca para a raiz quadrada.
@@ -262,7 +262,7 @@ Em algoritmos práticos usados pela blockchain (como Dilithium), utilizam-se ess
 
 ---
 
-## 5. Desafios técnicos na transição de PQC em Blockchains
+## 5. Desafios técnicos na transição de PQC em [Blockchain](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/)s
 
 Apenas a existência dos algoritmos de PQC (como Dilithium ou SPHINCS+) não significa que possam ser imediatamente implementados no [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/) ou no Ethereum amanhã. Sistemas descentralizados enfrentam diversos obstáculos enormes.
 
@@ -306,7 +306,7 @@ Aqui está um mapa básico delineando as rotas da comunidade antes de sucumbir p
 
 ### Fase 1: Assinatura Híbrida e Abstração de Contas (Hoje - 2028)
 No campo de desenvolvimento atual, o corpo principal da blockchain do Ethereum (Vitalik Buterin e cia.) foca nas **"Assinaturas Híbridas (Hybrid Signatures)"**, que englobam a PQC (seja baseada em hash, reticulados, ou outros métodos) e a clássica ECDSA. Essa transação exige ambos e, mesmo quando uma é corrompida, as barreiras da outra impedem os estragos, assim validando o procedimento de forma pacífica.
-Ao invés de contar só com forks pesados a nível de protocolo, implementações adicionais como a Abstração da Conta (Account Abstraction, ERC-4337) em Smart Contract Wallets com formato Opt-in já estão sendo oferecidas por aqueles que desejam testar a PQC em suas próprias chaves.
+Ao invés de contar só com forks pesados a nível de protocolo, implementações adicionais como a Abstração da Conta (Account Abstraction, ERC-4337) em [Smart Contract](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/) Wallets com formato Opt-in já estão sendo oferecidas por aqueles que desejam testar a PQC em suas próprias chaves.
 
 ### Fase 2: Uso de Provas de Conhecimento Zero (ZK-Rollups) (2025 -)
 Para combater a "ampliação do tamanho das assinaturas", um defeito crônico da PQC, o salvador parece ser o advento da tecnologia Layer-2 focada em **ZK-Rollups (Zero-Knowledge Proofs)**.
@@ -336,7 +336,7 @@ Para qualquer indivíduo normal investido nesse campo, não precisa de ataques d
 * **Evitar reciclar endereços**: Evite endereços (os já manuseados e cujas chaves públicas perambulam na blockchain exposta). E também manter no radar as regras básicas de privacidade.
 * **Ficar atento nas tecnologias e relatórios**: Como ler BIPs e EIPs da comunidade de [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)/Ethereum focadas nos Hard Forks. Isso propicia que seja fácil fazer a manobra da sua carteira se requerido num anúncio do tipo, da melhor maneira possível.
 
-A resiliência das Blockchains define seu ciclo imortal e histórico, superando e vencendo a escalabilidade (a conversão brutal que aconteceu no PoW e PoS no ecossistema atual e a própria camada sustentável ambiental) com melhoria vital. Em frente as crises de magnitude quântica global, é um embate que exigirá todos de nós no coletivo inteiro das rotas descentralizadas para superar o dilema sem igual.
+A resiliência das [Blockchain](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/)s define seu ciclo imortal e histórico, superando e vencendo a escalabilidade (a conversão brutal que aconteceu no [PoW](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/) e [PoS](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/) no ecossistema atual e a própria camada sustentável ambiental) com melhoria vital. Em frente as crises de magnitude quântica global, é um embate que exigirá todos de nós no coletivo inteiro das rotas descentralizadas para superar o dilema sem igual.
 E no decorrer dessa odisseia, quem dirá se o choque dessas duas esferas intelectuais criadas pelas mentes humanas (A tecnologia Blockchain imutável versus a capacidade máxima Quântica), gerem não apenas destruição e escombros, mas uma transcendência suprema da tecnologia baseada em segurança superior no amanhecer sem fim da posteridade!
 
 ---

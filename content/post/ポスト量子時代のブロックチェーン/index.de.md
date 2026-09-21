@@ -10,19 +10,19 @@ tags: ["Blockchain", "PQC", "Quantum Computing", "Bitcoin", "Security"]
 description: 'Die Ankunft des Q-Day, an dem die erstaunliche Rechenleistung von Quantencomputern die Grundlagen der Blockchain erschüttert. Vom Zusammenbruch von ECDSA durch Shors Algorithmus bis hin zu Migrationsstrategien auf quantenresistente Kryptografie (PQC) – wir erklären die Zukunft von Krypto-Assets aus technischer Sicht im Detail.'
 ---
 
-## 1. Einführung: Die Schritte des Post-Quanten-Zeitalters und die Krise der Blockchain
+## 1. Einführung: Die Schritte des Post-Quanten-Zeitalters und die Krise der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)
 
-Seit der Erfindung von [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) durch Satoshi Nakamoto im Jahr 2009 hat sich die Blockchain-Technologie als "dezentrales und manipulationssicheres Hauptbuch" zur Grundlage von Finanzsystemen und Anwendungen weltweit entwickelt. Diese robuste Sicherheit wird durch moderne kryptografische Technologien wie die **Public-Key-Kryptografie (Public Key [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)** und **kryptografische Hashfunktionen ([Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphic Hash Functions)** aufrechterhalten.
+Seit der Erfindung von [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) durch Satoshi Nakamoto im Jahr 2009 hat sich die [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Technologie als "dezentrales und manipulationssicheres Hauptbuch" zur Grundlage von Finanzsystemen und Anwendungen weltweit entwickelt. Diese robuste Sicherheit wird durch moderne kryptografische Technologien wie die **Public-Key-Kryptografie ([Public Key](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)** und **kryptografische Hashfunktionen ([Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)s)** aufrechterhalten.
 
 Diese kryptografischen Technologien garantieren Sicherheit basierend auf mathematischer "Rechenschwierigkeit", was bedeutet, dass selbst mit klassischen Computern (den PCs oder Supercomputern, die wir heute verwenden) eine Entschlüsselung unmöglich ist, selbst wenn man die Lebensdauer des Universums dafür aufwenden würde.
 
 Diese Prämisse wird jedoch durch die rasche Entwicklung und praktische Anwendung von **Quantencomputern (Quantum Computers)**, der Grenze von Physik und Informatik, grundlegend umgestoßen. Quantencomputer, die quantenmechanische Phänomene wie "Superposition" und "Quantenverschränkung (Entanglement)" nutzen, weisen bei bestimmten mathematischen Problemen eine Rechenleistung auf, die klassische Computer bei weitem übertrifft – die sogenannte "Quantenüberlegenheit (Quantum Supremacy)".
 
-In diesem Artikel werden wir eingehend und aus einer technischen und mathematischen Perspektive untersuchen, welchen spezifischen Bedrohungen die Blockchain-Technologie durch Quantencomputer ausgesetzt ist. Wir werden die neuesten Entwicklungen der **Post-Quanten-Kryptografie (PQC: Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)** als Lösung und die Migrationsszenarien für Krypto-Asset-Netzwerke detailliert erläutern.
+In diesem Artikel werden wir eingehend und aus einer technischen und mathematischen Perspektive untersuchen, welchen spezifischen Bedrohungen die [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Technologie durch Quantencomputer ausgesetzt ist. Wir werden die neuesten Entwicklungen der **Post-Quanten-Kryptografie (PQC: Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)** als Lösung und die Migrationsszenarien für Krypto-Asset-Netzwerke detailliert erläutern.
 
 ---
 
-## 2. Grundlagen von Quantencomputern und zwei große Bedrohungen für die Blockchain
+## 2. Grundlagen von Quantencomputern und zwei große Bedrohungen für die [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)
 
 Aktuelle Blockchain-Systeme bestehen hauptsächlich aus den folgenden zwei kryptografischen Elementen, die jeweils unterschiedlichen Bedrohungen durch Quantenalgorithmen ausgesetzt sind.
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. Grundlagen der Elliptic Curve [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy (ECDSA) und Rechenschwierigkeit
 
-Viele Blockchains wie [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) und Ethereum verwenden den **Elliptic Curve Digital Signature Algorithm (ECDSA)** als ihren digitalen Signaturalgorithmus. Insbesondere nutzt [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) eine elliptische Kurve mit den Parametern `secp256k1`.
+Viele [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s wie [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) und Ethereum verwenden den **Elliptic Curve [Digital Signature](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) Algorithm (ECDSA)** als ihren digitalen Signaturalgorithmus. Insbesondere nutzt [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) eine elliptische Kurve mit den Parametern `secp256k1`.
 
 Die Sicherheit der Elliptic Curve [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy beruht auf der Rechenschwierigkeit des **Elliptic Curve Discrete Logarithm Problem (ECDLP)**.
 Eine elliptische Kurve wird durch eine Gleichung in der folgenden Weierstraß-Normalform definiert.
@@ -62,7 +62,7 @@ Die umgekehrte Berechnung des privaten Schlüssels $k$ aus dem veröffentlichten
 
 ### 2.2. Der Zusammenbruch durch Shors Algorithmus ([Shor's Algorithm](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))
 
-Dieser Ansatz wurde jedoch 1994 durch **Shors Algorithmus**, der von Peter Shor veröffentlicht wurde, vollständig zerstört. Shors Algorithmus wurde ursprünglich vorgeschlagen, um das Primfaktorzerlegungsproblem (die Basis der RSA-Kryptografie) in polynomieller Zeit zu lösen, er kann jedoch auch auf das Problem des diskreten Logarithmus und das Problem des diskreten Logarithmus auf elliptischen Kurven angewendet werden.
+Dieser Ansatz wurde jedoch 1994 durch **Shors Algorithmus**, der von Peter Shor veröffentlicht wurde, vollständig zerstört. Shors Algorithmus wurde ursprünglich vorgeschlagen, um das Primfaktorzerlegungsproblem (die Basis der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptografie) in polynomieller Zeit zu lösen, er kann jedoch auch auf das Problem des diskreten Logarithmus und das Problem des diskreten Logarithmus auf elliptischen Kurven angewendet werden.
 
 Der Kern von Shors Algorithmus liegt in der Verwendung der **Quanten-Fourier-Transformation (QFT: Quantum Fourier Transform)**, um die "Periode (Period)" einer Funktion schnell zu finden.
 
@@ -112,7 +112,7 @@ Die Anzahl der für diesen gesamten Prozess benötigten Quantengatter beträgt $
 
 Eine weitere Bedrohung ist **Grovers Algorithmus**, der 1996 von Lov Grover vorgeschlagen wurde. Dieser hat große Auswirkungen auf Hashfunktionen (z. B. SHA-256).
 
-In der Blockchain werden Hashfunktionen zur Gewährleistung der Datenintegrität, zur Generierung von Adressen und als Grundlage für das **PoW-Mining (Proof of Work)** in [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) verwendet. Die Rückrechnung (Urbildberechnung) einer Hashfunktion kann als "Problem der Suche in unstrukturierten Datenbanken" betrachtet werden, bei dem nach einem Eingabewert $x$ gesucht wird, für den $H(x) = y$ für einen bestimmten Ausgabewert $y$ gilt.
+In der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) werden Hashfunktionen zur Gewährleistung der Datenintegrität, zur Generierung von Adressen und als Grundlage für das **[PoW](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Mining (Proof of Work)** in [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) verwendet. Die Rückrechnung (Urbildberechnung) einer Hashfunktion kann als "Problem der Suche in unstrukturierten Datenbanken" betrachtet werden, bei dem nach einem Eingabewert $x$ gesucht wird, für den $H(x) = y$ für einen bestimmten Ausgabewert $y$ gilt.
 
 Mit einem klassischen Computer sind im Durchschnitt $\frac{N}{2}$ und im schlimmsten Fall $N$ Versuche erforderlich, um die richtige Antwort unter $N$ Möglichkeiten zu finden. Die Berechnungskomplexität beträgt also $\mathcal{O}(N)$.
 Grovers Algorithmus verwendet jedoch eine Quantentechnologie namens "Amplitudenverstärkung (Amplitude Amplification)". Durch iteratives Verstärken der Wahrscheinlichkeitsamplitude des Zustands, der die richtige Antwort darstellt, aus allen Möglichkeiten im Superpositionszustand, wird die Suchzeit auf die Quadratwurzel reduziert.
@@ -141,11 +141,11 @@ Welchen spezifischen Schwachstellen werden Krypto-Asset-Netzwerke in einer Welt 
 [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)-Adressen ([P2P](https://kenji.blog/de/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash und P2WPKH: Pay-to-Witness-Public-Key-Hash) verwenden nicht den öffentlichen Schlüssel selbst, sondern einen mehrfach gehashten öffentlichen Schlüssel.
 
 $$
-\text{[Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
+\text{[Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{[Public Key](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)})))
 $$
 
 Wie bereits erwähnt, sind Hashfunktionen resistent gegen Quantenangriffe (Grovers Algorithmus), sodass es selbst für Quantencomputer unmöglich ist, den ursprünglichen "öffentlichen Schlüssel" aus der "Adresse", die ein Hashwert ist, rückzurechnen.
-Das bedeutet, dass für **"unbenutzte Adressen (solche, von denen noch nie Gelder gesendet wurden)"** der öffentliche Schlüssel überhaupt nicht auf der Blockchain offengelegt ist und nur der Hashwert aufgezeichnet wird. Da der öffentliche Schlüssel unbekannt ist, gibt es daher kein Ziel für die Ausführung von Shors Algorithmus, und der private Schlüssel kann nicht identifiziert werden. Es kann gesagt werden, dass Wallets in diesem Zustand quantensicher (Quantum-safe) sind.
+Das bedeutet, dass für **"unbenutzte Adressen (solche, von denen noch nie Gelder gesendet wurden)"** der öffentliche Schlüssel überhaupt nicht auf der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) offengelegt ist und nur der Hashwert aufgezeichnet wird. Da der öffentliche Schlüssel unbekannt ist, gibt es daher kein Ziel für die Ausführung von Shors Algorithmus, und der private Schlüssel kann nicht identifiziert werden. Es kann gesagt werden, dass Wallets in diesem Zustand quantensicher (Quantum-safe) sind.
 
 ### 3.2. Fatale Schwachstelle beim Senden von Transaktionen (Front-Running-Angriff)
 
@@ -180,7 +180,7 @@ Diese Abfolge von Ereignissen wird als **Front-Running-Angriff (Front-running At
 
 ### 3.3. Die Krise wiederverwendeter Adressen und alter Adressen ([P2P](https://kenji.blog/de/p/webrtc-realtime-communication-p2p/)K)
 
-Ein noch größeres Problem ist, dass bei Adressen, von denen in der Vergangenheit bereits Gelder gesendet wurden (z. B. wenn sie als Wechselgeldadressen wiederverwendet werden), der öffentliche Schlüssel bereits dauerhaft auf der Blockchain aufgezeichnet ist. Bei diesen Adressen besteht jederzeit die Gefahr, dass der private Schlüssel berechnet und das Guthaben gestohlen wird, ohne dass auf das Senden einer Transaktion gewartet werden muss.
+Ein noch größeres Problem ist, dass bei Adressen, von denen in der Vergangenheit bereits Gelder gesendet wurden (z. B. wenn sie als Wechselgeldadressen wiederverwendet werden), der öffentliche Schlüssel bereits dauerhaft auf der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) aufgezeichnet ist. Bei diesen Adressen besteht jederzeit die Gefahr, dass der private Schlüssel berechnet und das Guthaben gestohlen wird, ohne dass auf das Senden einer Transaktion gewartet werden muss.
 
 Darüber hinaus wurde beim **P2PK-Format (Pay-to-Public-Key)**, das von 2009 bis etwa 2010 vorherrschte und die frühen Mining-Belohnungen von Satoshi Nakamoto (über 1 Million BTC) enthält, der öffentliche Schlüssel selbst direkt als Adresse auf der Blockchain aufgezeichnet, nicht als Hash. Diese massiven Mengen an ruhenden [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)s wären das leichteste Ziel für Quantencomputer, und wenn sie alle auf einmal gestohlen und auf den Markt geworfen werden, könnte dies einen massiven Preisverfall auslösen.
 
@@ -188,7 +188,7 @@ Darüber hinaus wurde beim **P2PK-Format (Pay-to-Public-Key)**, das von 2009 bis
 
 ## 4. Migrationsszenarien zur Post-Quanten-Kryptografie (PQC: Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)
 
-Um eine solche Katastrophe am "Q-Day (dem Tag, an dem die Kryptografie durch Quantencomputer gebrochen wird)" zu vermeiden, planen die kryptografische Wissenschaft und die Blockchain-Community den Übergang zur **Post-Quanten-Kryptografie (PQC)**, die auch von Quantenalgorithmen schwer zu knacken ist.
+Um eine solche Katastrophe am "Q-Day (dem Tag, an dem die Kryptografie durch Quantencomputer gebrochen wird)" zu vermeiden, planen die kryptografische Wissenschaft und die [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Community den Übergang zur **Post-Quanten-Kryptografie (PQC)**, die auch von Quantenalgorithmen schwer zu knacken ist.
 Das US National Institute of Standards and Technology (NIST) führt seit Jahren einen PQC-Standardisierungsprozess durch, und nach mehreren Runden strenger Evaluierung wurden einige vielversprechende kryptografische Methoden als endgültige Standards ausgewählt.
 
 Wir werden die wichtigsten PQC-Algorithmen, die als Alternativen für digitale Blockchain-Signaturen Beachtung finden, zusammen mit ihren mathematischen Mechanismen im Detail erläutern.
@@ -236,7 +236,7 @@ H(s_i) \overset{?}{=} \text{pk}_{i, h_i} \quad (\text{für alle } 1 \le i \le 25
 $$
 
 Dieser Prozess ist mathematisch extrem einfach, und solange ein Quantencomputer die Funktion $H$ nicht rückrechnen kann, ist es unmöglich, eine Signatur zu fälschen. Da jedoch bei einer Signatur die Hälfte des privaten Schlüssels dem Netzwerk offengelegt wird, führt das Signieren einer anderen Nachricht mit demselben Schlüsselpaar dazu, dass die offengelegten privaten Schlüssel kombiniert werden und dem Angreifer Raum für Fälschungen bieten. Dies führt zu der starken Einschränkung, dass sie nur "einmalig (One-Time)" verwendet werden können.
-Um dies praktikabel zu machen, wurden Technologien wie **XMSS**, die einen Merkle-Baum verwenden, um zahlreiche One-Time-Schlüssel in einem Stamm-Public-Key (Root Public Key) zu bündeln, und zustandslose (**stateless**) Methoden wie **SPHINCS+** entwickelt, die jedoch den Nachteil haben, dass die Signaturgrößen mehrere Dutzend Kilobyte erreichen.
+Um dies praktikabel zu machen, wurden Technologien wie **XMSS**, die einen Merkle-Baum verwenden, um zahlreiche One-Time-Schlüssel in einem Stamm-Public-Key (Root [Public Key](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)) zu bündeln, und zustandslose (**stateless**) Methoden wie **SPHINCS+** entwickelt, die jedoch den Nachteil haben, dass die Signaturgrößen mehrere Dutzend Kilobyte erreichen.
 
 ### 4.2. Gitterbasierte Kryptografie (Lattice-Based [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)
 
@@ -255,7 +255,7 @@ $$
 $$
 
 Selbst wenn die Matrix $\mathbf{A}$ und der Vektor $\mathbf{b}$ (öffentlicher Schlüssel) öffentlich bekannt sind, ist die Rückrechnung des privaten Schlüssels $\mathbf{s}$ durch das Vorhandensein des Rauschens $\mathbf{e}$ sehr schwierig. Ohne das Rauschen könnte es einfach durch Gaußsche Elimination gelöst werden, aber das Hinzufügen von Rauschen führt zu einer explosiven Vergrößerung des Suchraums in allen Dimensionen, was eine robuste Sicherheit sowohl gegen klassische als auch gegen Quantencomputer bietet.
-In tatsächlichen Algorithmen, die in Blockchains und ähnlichem verwendet werden (wie Dilithium), wird dies als **Ring-LWE (oder Module-LWE)** auf einem Polynomring eingesetzt, um die Schlüsselgröße zu reduzieren und Berechnungen zu beschleunigen.
+In tatsächlichen Algorithmen, die in [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s und ähnlichem verwendet werden (wie Dilithium), wird dies als **Ring-LWE (oder Module-LWE)** auf einem Polynomring eingesetzt, um die Schlüsselgröße zu reduzieren und Berechnungen zu beschleunigen.
 
 * **Vorteile**: Im Vergleich zu Hash-basierten Signaturen sind der öffentliche Schlüssel und die Signaturgröße relativ klein (wenige Kilobyte), und die Rechengeschwindigkeit für die Signaturerstellung und -überprüfung ist extrem schnell (vergleichbar oder schneller als ECDSA).
 * **Nachteile**: Die mathematische Struktur ist komplex und der historische Bewertungszeitraum ist kurz, sodass das Risiko, dass in Zukunft neue Entschlüsselungsalgorithmen entdeckt werden, nicht Null ist.
@@ -282,7 +282,7 @@ pie title Vergleich der Signaturdatengrößen in der Blockchain (Konzeptdiagramm
 ```
 *(※ Die Datenaufblähung von Transaktionen bei der Einführung von PQC wird zu einem fatalen Engpass für die Skalierbarkeit werden)*
 
-### 5.2. Auswirkungen auf die Ethereum Virtual Machine (EVM) und vorkompilierte Smart Contracts
+### 5.2. Auswirkungen auf die Ethereum Virtual Machine (EVM) und vorkompilierte [Smart Contract](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s
 
 In Turing-vollständigen Smart-Contract-Plattformen wie Ethereum erfordert die Einführung von PQC ein grundlegendes Upgrade der EVM (Ethereum Virtual Machine).
 In der aktuellen EVM wird zur Überprüfung von ECDSA-Signaturen ein vorkompilierter Contract (Precompiled Contract) namens `ecrecover` (Adresse: `0x01`) bereitgestellt, der so optimiert ist, dass er Signaturprüfungen mit sehr niedrigen Gasgebühren (3000 Gas) durchführt.
@@ -305,7 +305,7 @@ Obwohl die Meinungen unter Forschern auseinandergehen, prognostizieren viele Exp
 Die Roadmap, die das Krypto-Asset-Ökosystem einschlagen sollte, bevor es zu spät ist, sieht wie folgt aus.
 
 ### Phase 1: Hybride Signaturen und Kontoabstraktion (Account Abstraction) (Jetzt bis ca. 2028)
-Die derzeitige Blockchain-Community, insbesondere das Ethereum-Entwicklungsteam (Vitalik Buterin usw.), erwägt **"hybride Signaturen"**, die ECDSA und PQC (Hash-basierte Signaturen oder gitterbasierte Kryptografie) kombinieren. Dies ist ein Ansatz, bei dem einer Transaktion sowohl die bestehende sichere ECDSA-Signatur als auch eine PQC-Signatur hinzugefügt werden, wodurch die Sicherheit erhalten bleibt, selbst wenn eine davon gebrochen wird.
+Die derzeitige [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Community, insbesondere das Ethereum-Entwicklungsteam (Vitalik Buterin usw.), erwägt **"hybride Signaturen"**, die ECDSA und PQC (Hash-basierte Signaturen oder gitterbasierte Kryptografie) kombinieren. Dies ist ein Ansatz, bei dem einer Transaktion sowohl die bestehende sichere ECDSA-Signatur als auch eine PQC-Signatur hinzugefügt werden, wodurch die Sicherheit erhalten bleibt, selbst wenn eine davon gebrochen wird.
 Darüber hinaus werden durch die Nutzung der Kontoabstraktion (Account Abstraction, ERC-4337) Bemühungen vorangetrieben, PQC-Signaturen auf Smart-Contract-Wallets auf Opt-in-Basis (nur für Benutzer, die dies wünschen) zu implementieren und zu unterstützen, ohne auf einen Protokoll-Hard-Fork zu warten.
 
 ### Phase 2: Nutzung von Zero-Knowledge Proofs (ZK-Rollups) (2025 ~)
@@ -318,7 +318,7 @@ Sobald die NIST-Standardisierung für PQC vollständig etabliert ist und branche
 
 ### Wegweisende Projektbeispiele
 
-Einige Blockchain-Projekte haben diese Quantenbedrohung antizipiert und wurden von Anfang an mit dem Anspruch auf Quantenresistenz entwickelt.
+Einige [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Projekte haben diese Quantenbedrohung antizipiert und wurden von Anfang an mit dem Anspruch auf Quantenresistenz entwickelt.
 * **QRL (Quantum Resistant Ledger)**: Eine frühe Blockchain, die XMSS (eXtended Merkle Signature Scheme), eine Hash-basierte PQC, nativ auf Protokollebene implementiert hat.
 * **Algorand / Cellframe**: Projektgruppen, die über eine flexible modulare Architektur der Kryptografie-Schicht im Hinblick auf zukünftige PQC-Updates verfügen und aktiv nach der Integration von Gitterkryptografie suchen.
 
@@ -337,7 +337,7 @@ Normale Krypto-Benutzer und Investoren wie wir müssen jetzt nicht in Panik gera
 * **Vermeiden Sie die Wiederverwendung von Adressen**: Vermeiden Sie es strikt, Gelder für lange Zeiträume an "verwendeten Adressen (Adressen, von denen mindestens einmal Gelder gesendet wurden und der öffentliche Schlüssel auf der Blockchain freigelegt ist)" zu speichern. Dies gilt nicht nur aus Gründen des Datenschutzes, sondern auch aus Sicherheitsgründen.
 * **Behalten Sie Technologietrends im Auge**: Verfolgen Sie Nachrichten über Diskussionen und Hard Forks im Zusammenhang mit der PQC-Migration auf großen Netzwerken wie [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)-BIPs oder Ethereum-EIPs, damit Sie Ihre Wallets bei Bedarf rechtzeitig migrieren können.
 
-Die Geschichte der Blockchain ist immer eine Geschichte von Upgrades und Widerstandsfähigkeit (Resilience) gegenüber neuen technologischen Bedrohungen. So wie sie Skalierbarkeitsprobleme und Umweltbedenken (wie den Übergang von PoW zu PoS) überwunden hat, wird das gesamte Ökosystem zweifellos nach Lösungen für diese beispiellose Quantenbedrohung suchen und sich anpassen.
+Die Geschichte der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) ist immer eine Geschichte von Upgrades und Widerstandsfähigkeit (Resilience) gegenüber neuen technologischen Bedrohungen. So wie sie Skalierbarkeitsprobleme und Umweltbedenken (wie den Übergang von [PoW](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) zu [PoS](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)) überwunden hat, wird das gesamte Ökosystem zweifellos nach Lösungen für diese beispiellose Quantenbedrohung suchen und sich anpassen.
 Wir können auf eine Zukunft hoffen, in der die neue Weisheit der Menschheit in Form von Quantencomputern und die Vertrauenstechnologie dezentraler Ledger nicht durch eine Kollision zusammenbrechen, sondern auf einer höheren Ebene zu einem robusteren System verschmelzen.
 
 ---

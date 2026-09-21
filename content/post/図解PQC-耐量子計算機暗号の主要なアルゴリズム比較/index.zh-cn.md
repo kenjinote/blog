@@ -12,7 +12,7 @@ description: '针对量子计算机崛起带来的密码学危机威胁，以及
 
 ## 1. 引言：量子计算机带来的“密码危机”
 
-在现代互联网社会中，为了保护通信的机密性和数据的完整性，公钥密码技术作为基础设施是不可或缺的。目前广泛使用的RSA加密和椭圆曲线加密（ECC），分别依赖于“大整数素数分解的困难性”和“椭圆曲线上离散对数问题的困难性”等数学壁垒来保证安全性。在经典计算机（包括超级计算机在内的我们目前使用的计算机）上，解开这些数学问题被证明需要比宇宙年龄还要长的时间，这一直是其安全性的依据。
+在现代互联网社会中，为了保护通信的机密性和数据的完整性，公钥密码技术作为基础设施是不可或缺的。目前广泛使用的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密和椭圆曲线加密（ECC），分别依赖于“大整数素数分解的困难性”和“椭圆曲线上离散对数问题的困难性”等数学壁垒来保证安全性。在经典计算机（包括超级计算机在内的我们目前使用的计算机）上，解开这些数学问题被证明需要比宇宙年龄还要长的时间，这一直是其安全性的依据。
 
 然而，这一坚固的前提正随着 **量子计算机** 的理论与实用化进展而面临被彻底颠覆的危险。1994年，密码学家彼得·秀尔（Peter Shor）发表了“ **Shor算法** ”，理论上证明了在具备足够性能的容错通用量子计算机（CRQC: [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer）上运行该算法，能够在“多项式时间”内破解素数分解问题和离散对数问题。这意味着目前使用的所有公钥密码都将被使其无效化。
 
@@ -40,7 +40,7 @@ graph TD
 
 标准化的对象主要分为以下两个类别：
 1. **公钥密码 / 密钥封装机制 (KEM: Key Encapsulation Mechanism)**: 在TLS连接等场景中，为了加密通信路径，安全共享（分发）对称密钥的机制。
-2. **数字签名 (Digital Signatures)**: 在软件更新或电子证书中，证明数据未被篡改且发送者身份真实（真实性）的机制。
+2. **数字签名 ([Digital Signature](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)s)**: 在软件更新或电子证书中，证明数据未被篡改且发送者身份真实（真实性）的机制。
 
 经过大约6年非常激烈的评估、分析与密码破解竞争（Round 1〜Round 3），部分算法还进行了Round 4的追加评估。最终结果是，2024年以下算法作为正式的联邦信息处理标准（FIPS）发布，并确立为未来世界的标准。
 
@@ -124,7 +124,7 @@ Module-LWE 的最大优势在于，保持多项式的次数 $n$（NIST标准中 
 
 ### 5.1. KEM (Key Encapsulation Mechanism) 的架构
 
-在PQC时代，不再像RSA那样采用“客户端生成对称密钥，用服务器公钥加密后发送”的直接方法，而是将KEM这种封装框架作为标准。
+在PQC时代，不再像[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)那样采用“客户端生成对称密钥，用服务器公钥加密后发送”的直接方法，而是将KEM这种封装框架作为标准。
 
 ```mermaid
 sequenceDiagram
@@ -172,7 +172,7 @@ CPAPKE核心的加密和解密机制如下：
    - 剩下的部分为 $\lfloor q/2 \rceil \cdot m + (\vec{e}^T\vec{r} + e_2 - \vec{s}^T\vec{e_1})$。
    - 括号内的项是“微小误差的乘积和求和”，因此整体依然是一个足够小的值（噪声）。于是，通过阈值判定每个系数是接近 $0$ 还是接近 $q/2$，即可完全无误差地还原原消息 $m$ 的每一位（0 或 1）。
 
-Kyber最大的优势在于其压倒性的 **处理速度** 和 **适中的密钥大小** 。在Kyber768的情况下，公钥尺寸为1,184字节，密文尺寸为1,088字节，虽然相比于RSA-3072（密钥约384字节）要大，但可以无需进行数据包分割地容纳在现代互联网通信的MTU（最大传输单元）内，对网络延迟几乎没有负面影响。
+Kyber最大的优势在于其压倒性的 **处理速度** 和 **适中的密钥大小** 。在Kyber768的情况下，公钥尺寸为1,184字节，密文尺寸为1,088字节，虽然相比于[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)-3072（密钥约384字节）要大，但可以无需进行数据包分割地容纳在现代互联网通信的MTU（最大传输单元）内，对网络延迟几乎没有负面影响。
 
 ---
 
@@ -255,7 +255,7 @@ SPHINCS+唯一也是最大的弱点在于， **签名尺寸非常庞大** 。根
 
 在NIST标准化进程中，作为Round 4的最终候选仍在继续评估的一个重要方案是， **基于编码的密码学** 中的 **Classic McEliece** 。
 
-1978年由Robert McEliece提出的这一算法，是公钥密码学历史中与RSA并肩最古老的算法之一。它利用了被称为“Goppa码（哥帕码）”的代数几何码，在消息中故意加入错误（噪声向量）进行加密，只有拥有作为私钥的Goppa码奇偶校验矩阵的人，才能利用其强大的纠错能力消除错误，从而解密出原始消息。这基于“ **伴随式解码问题 (Syndrome Decoding Problem)** ”。
+1978年由Robert McEliece提出的这一算法，是公钥密码学历史中与[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)并肩最古老的算法之一。它利用了被称为“Goppa码（哥帕码）”的代数几何码，在消息中故意加入错误（噪声向量）进行加密，只有拥有作为私钥的Goppa码奇偶校验矩阵的人，才能利用其强大的纠错能力消除错误，从而解密出原始消息。这基于“ **伴随式解码问题 (Syndrome Decoding Problem)** ”。
 
 $$ \vec{c} = \vec{m} G + \vec{e} $$
 （$G$ 是公开的被置换过的生成矩阵，$\vec{e}$ 是汉明重量为 $t$ 的错误向量）
@@ -326,7 +326,7 @@ NIST完成了 FIPS 203 (ML-KEM)、FIPS 204 (ML-DSA)、FIPS 205 (SLH-DSA) 的标�
 *References:*
 * *NIST Post-Quantum [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy Standardization Program*
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
-* *FIPS 204: Module-Lattice-Based Digital Signature Standard*
+* *FIPS 204: Module-Lattice-Based [Digital Signature](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
 
 

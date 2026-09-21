@@ -67,7 +67,7 @@ Anota los siguientes dos valores que se muestran en la pestaña "Información ge
 
 ---
 
-## 🔐 Obtener el token de acceso (OAuth2)
+## 🔐 Obtener el token de acceso ([OAuth](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/)2)
 
 Para obtenerlo, usaremos el flujo `client_credentials`.  
 Ejecuta el siguiente comando con curl para obtener el token de acceso.
@@ -196,7 +196,7 @@ curl -X GET ^
 | --------- | ----------------------------- |
 | Graph API | API oficial para interactuar con Teams |
 | Registro de aplicación | Procedimientos de autenticación necesarios en Azure |
-| Token de acceso | Obtenido a través de OAuth2 y usado para peticiones |
+| Token de acceso | Obtenido a través de [OAuth](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/)2 y usado para peticiones |
 | Implementación en C++ | Llama a la Graph API utilizando WinHTTP |
 
 ## 🚀 Próximos pasos

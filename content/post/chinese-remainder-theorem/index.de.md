@@ -14,7 +14,7 @@ tags:
 
 ## Einführung
 
-Der Chinesische Restsatz ([Chinese Remainder Theorem](https://kenji.blog/de/p/chinese-remainder-theorem/), kurz CRT) ist einer der wichtigsten und schönsten Sätze in der Zahlentheorie. Sein Ursprung lässt sich auf den antiken chinesischen mathematischen Text „Sunzi Suanjing“ zurückverfolgen, der vermutlich zwischen dem 3. und 5. Jahrhundert zusammengestellt wurde. Angefangen bei einem einfachen Rechenproblem aus der Antike, spielt dieser Satz nach Jahrtausenden heute eine unverzichtbare Rolle in der Public-Key-Kryptographie, wie der **RSA-Kryptographie**, die unsere tägliche sichere Kommunikation im Internet gewährleistet.
+Der Chinesische Restsatz ([Chinese Remainder Theorem](https://kenji.blog/de/p/chinese-remainder-theorem/), kurz CRT) ist einer der wichtigsten und schönsten Sätze in der Zahlentheorie. Sein Ursprung lässt sich auf den antiken chinesischen mathematischen Text „Sunzi Suanjing“ zurückverfolgen, der vermutlich zwischen dem 3. und 5. Jahrhundert zusammengestellt wurde. Angefangen bei einem einfachen Rechenproblem aus der Antike, spielt dieser Satz nach Jahrtausenden heute eine unverzichtbare Rolle in der Public-Key-Kryptographie, wie der **[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie**, die unsere tägliche sichere Kommunikation im Internet gewährleistet.
 
 In diesem Artikel erklären wir den **Chinesischen Restsatz** im Detail, von seinem historischen Hintergrund über die strenge mathematische Definition und die konkreten Berechnungsschritte bis hin zu seinen Anwendungen in der modernen Kryptographie, ergänzt durch Illustrationen und konkrete Beispiele.
 
@@ -103,7 +103,7 @@ $233 \equiv 23 \pmod{105}$
 
 Daher ist die kleinste positive Lösung **23**, was perfekt mit Sunzis Lösung übereinstimmt.
 
-## Anwendungen in der Moderne: RSA-Kryptographie und CRT
+## Anwendungen in der Moderne: [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie und CRT
 
 Der **Chinesische Restsatz**, einst ein antikes Rätsel, hat in unserer modernen digitalen Gesellschaft äußerst praktische Anwendungen. Ein Paradebeispiel ist die Beschleunigung der Entschlüsselung und Signaturerstellung in der **RSA-Kryptographie**.
 
@@ -140,7 +140,7 @@ graph TD
    $M_q = C^{d_q} \pmod q$
 3. Wende den CRT auf $M_p$ und $M_q$ an, um $M \pmod N$ zu erhalten.
 
-Wenn sich die Bitlänge des Moduls halbiert (z. B. 1024 Bit), betragen die Kosten für die Potenzierung nur noch etwa 1/8. Selbst wenn man dies zweimal durchführt, betragen die Gesamtkosten etwa 1/4. Daher kann die Verwendung von RSA-CRT die Entschlüsselung und Signaturerstellung um das **etwa 4-fache beschleunigen**. Bei Geräten mit begrenzten Rechenressourcen wie Smartphones und Chipkarten ist diese Beschleunigung extrem wichtig.
+Wenn sich die Bitlänge des Moduls halbiert (z. B. 1024 Bit), betragen die Kosten für die Potenzierung nur noch etwa 1/8. Selbst wenn man dies zweimal durchführt, betragen die Gesamtkosten etwa 1/4. Daher kann die Verwendung von [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-CRT die Entschlüsselung und Signaturerstellung um das **etwa 4-fache beschleunigen**. Bei Geräten mit begrenzten Rechenressourcen wie Smartphones und Chipkarten ist diese Beschleunigung extrem wichtig.
 
 ## Programmierimplementierung des Chinesischen Restsatzes
 

@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-$x$ et $y$ peuvent être concrètement calculés en développant l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) (l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) étendu), qui est devenu un théorème fondamental indispensable dans la cryptographie moderne (comme RSA). Dans les contextes qui valorisent l'exactitude historique, cela est parfois appelé le **théorème de [Bachet](https://kenji.blog/fr/p/bachet/)**.
+$x$ et $y$ peuvent être concrètement calculés en développant l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) (l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) étendu), qui est devenu un théorème fondamental indispensable dans la cryptographie moderne (comme [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)). Dans les contextes qui valorisent l'exactitude historique, cela est parfois appelé le **théorème de [Bachet](https://kenji.blog/fr/p/bachet/)**.
 
 ## Conclusion
 

@@ -51,7 +51,7 @@ description: '想知道如何实现从C++向Microsoft Teams自动发送消息吗
 
 ---
 
-## 🔐 获取访问令牌（OAuth2）
+## 🔐 获取访问令牌（[OAuth](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/)2）
 
 获取令牌时使用 `client_credentials` 流程。  
 使用 curl 执行以下命令，获取访问令牌。
@@ -180,7 +180,7 @@ curl -X GET ^
 | --------- | ----------------------------- |
 | Graph API | 与 Teams 交互的官方 API           |
 | 应用注册     | 在 Azure 上进行必要的认证手续              |
-| 访问令牌  | 通过 OAuth2 获取，并用于请求中        |
+| 访问令牌  | 通过 [OAuth](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/)2 获取，并用于请求中        |
 | C++ 实现    | 使用 WinHTTP 调用 Graph API |
 
 ## 🚀 后续步骤

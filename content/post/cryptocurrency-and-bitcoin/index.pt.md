@@ -39,7 +39,7 @@ O "eCash" idealizado por David Chaum, o "Hashcash" de Adam Back e o "Bit gold" d
 
 Em 2008, ocorreu a crise financeira global desencadeada pelo colapso do Lehman Brothers. Em 31 de outubro do mesmo ano, quando a desconfiança no sistema financeiro existente atingiu o auge, uma pessoa (ou grupo) anônima sob o pseudônimo de "Satoshi Nakamoto" postou um artigo em uma lista de discussão de criptografia.
 
-O título era "Bitcoin: A Peer-to-Peer Electronic Cash System" (Bitcoin: Um Sistema de Dinheiro Eletrônico [P2P](https://kenji.blog/pt/p/webrtc-realtime-communication-p2p/)). Este artigo de 9 páginas mostrou como resolver o problema do gasto duplo que as tentativas anteriores de dinheiro eletrônico enfrentavam, de uma forma completamente descentralizada, usando um mecanismo chamado **Proof of Work (PoW)**.
+O título era "Bitcoin: A Peer-to-Peer Electronic Cash System" (Bitcoin: Um Sistema de Dinheiro Eletrônico [P2P](https://kenji.blog/pt/p/webrtc-realtime-communication-p2p/)). Este artigo de 9 páginas mostrou como resolver o problema do gasto duplo que as tentativas anteriores de dinheiro eletrônico enfrentavam, de uma forma completamente descentralizada, usando um mecanismo chamado **Proof of Work ([PoW](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/))**.
 
 ### O Bloco Gênesis (Genesis Block)
 
@@ -50,9 +50,9 @@ Em 3 de janeiro de 2009, a rede Bitcoin começou a operar. O primeiro bloco mine
 
 Esta era a manchete do jornal britânico *The Times* da época e, além de ser uma forte ironia sobre os resgates financeiros pelos bancos centrais, também serve como uma marca de tempo (timestamp) para o Bitcoin como um sistema que durará para sempre.
 
-## 3. A Arquitetura da Blockchain
+## 3. A Arquitetura da [Blockchain](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/)
 
-A tecnologia central que sustenta o Bitcoin é a "Blockchain". A Blockchain é uma forma de Tecnologia de Registro Distribuído (Distributed Ledger Technology: DLT), que tem uma estrutura onde os dados são agrupados em unidades chamadas "blocos" e conectados como uma cadeia (chain) de forma criptográfica.
+A tecnologia central que sustenta o Bitcoin é a "Blockchain". A Blockchain é uma forma de Tecnologia de Registro Distribuído ([Distributed Ledger](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT), que tem uma estrutura onde os dados são agrupados em unidades chamadas "blocos" e conectados como uma cadeia (chain) de forma criptográfica.
 
 ```mermaid
 flowchart TD
@@ -105,17 +105,17 @@ A função de hash $H$ deve satisfazer as seguintes propriedades:
 
 No Bitcoin, o SHA-256 é aplicado duplamente em processos como o cálculo de hashes de blocos e a geração de endereços a partir de chaves públicas (isso é chamado de `SHA256(SHA256(x))` ou Hash256).
 
-### Criptografia de Chave Pública (Public Key Cryptography) e Assinaturas Digitais
+### Criptografia de Chave Pública ([Public Key](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) [Cryptography](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)) e Assinaturas Digitais
 
 A propriedade das criptomoedas é provada por um par de Chave Privada (Private Key) e Chave Pública (Public Key).
 - **Chave Privada** $k$: Um número inteiro de 256 bits gerado aleatoriamente. Absolutamente não deve ser conhecida por outros.
 - **Chave Pública** $K$: Uma chave calculada a partir da chave privada usando uma função unidirecional. É publicada na rede.
 
-Quando Alice envia Bitcoin para Bob, Alice usa sua chave privada para criar uma **Assinatura Digital (Digital Signature)** para os dados da transação. Os participantes da rede podem usar a chave pública de Alice para verificar se a assinatura é válida (se Alice realmente a criou usando sua chave privada).
+Quando Alice envia Bitcoin para Bob, Alice usa sua chave privada para criar uma **Assinatura Digital ([Digital Signature](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/))** para os dados da transação. Os participantes da rede podem usar a chave pública de Alice para verificar se a assinatura é válida (se Alice realmente a criou usando sua chave privada).
 
 ### Criptografia de Curva Elíptica (Elliptic Curve Cryptography: ECC) e secp256k1
 
-Para a geração de chaves públicas e assinaturas digitais no Bitcoin, em vez da criptografia RSA, a **Criptografia de Curva Elíptica (ECC)** é adotada. A ECC tem a vantagem de fornecer um nível de segurança equivalente com um tamanho de chave muito menor em comparação com o RSA.
+Para a geração de chaves públicas e assinaturas digitais no Bitcoin, em vez da criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), a **Criptografia de Curva Elíptica (ECC)** é adotada. A ECC tem a vantagem de fornecer um nível de segurança equivalente com um tamanho de chave muito menor em comparação com o RSA.
 
 Os parâmetros específicos da curva elíptica usados no Bitcoin são chamados de **secp256k1**. Esta curva é definida sobre um corpo finito $\mathbb{F}_p$ e é expressa pela seguinte equação:
 
@@ -153,7 +153,7 @@ No processo de verificação, os seguintes cálculos são realizados usando a ch
 3. Calcular o ponto $(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$.
 4. Se $r \equiv x_2 \pmod{n}$, a assinatura é considerada válida.
 
-## 5. Algoritmo de Consenso e Proof of Work (PoW)
+## 5. Algoritmo de Consenso e Proof of Work ([PoW](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/))
 
 Em uma rede descentralizada, o mecanismo para que todos concordem com o mesmo estado do registro é o algoritmo de consenso.
 
@@ -161,7 +161,7 @@ Em uma rede descentralizada, o mecanismo para que todos concordem com o mesmo es
 
 Como um problema clássico na computação distribuída, existe o "Problema dos Generais Bizantinos". Vários generais estão sitiando a cidade de um inimigo e devem concordar sobre atacar ou recuar, mas há uma possibilidade de haver traidores entre os generais que enviarão mensagens falsas. O problema é como chegar a um consenso correto com apenas generais honestos sob tais circunstâncias.
 
-O Bitcoin essencialmente resolveu esse problema combinando **Proof of Work (PoW)** com a **Regra da Cadeia Mais Longa (Longest Chain Rule)**.
+O Bitcoin essencialmente resolveu esse problema combinando **Proof of Work ([PoW](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/))** com a **Regra da Cadeia Mais Longa (Longest Chain Rule)**.
 
 ### A Matemática da Mineração e o Nonce
 
@@ -226,9 +226,9 @@ Uma abordagem promissora para resolver o problema de escalabilidade é a Lightni
 
 Na Lightning Network, os participantes abrem "Canais de Pagamento" (Payment Channels) fora da blockchain (off-chain). Dentro do canal, desde que ambas as partes concordem, os fundos podem ser transferidos instantaneamente e de forma quase gratuita, quantas vezes quiserem, sem registrar a transação na blockchain. Apenas durante o acerto final de contas, a transação é registrada na blockchain (Camada 1).
 
-### Comparação com o Proof of Stake (PoS)
+### Comparação com o Proof of Stake ([PoS](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/))
 
-Outro grande problema do PoW é o enorme consumo de eletricidade causado pela mineração. Como contramedida a este problema ambiental, criptomoedas como o Ethereum migraram para um algoritmo de consenso diferente chamado **Proof of Stake (PoS)**.
+Outro grande problema do [PoW](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/) é o enorme consumo de eletricidade causado pela mineração. Como contramedida a este problema ambiental, criptomoedas como o Ethereum migraram para um algoritmo de consenso diferente chamado **Proof of Stake (PoS)**.
 
 No PoS, em vez do poder computacional (hashrate), o direito de gerar o próximo bloco (como validador) é atribuído probabilisticamente de acordo com a quantidade de criptomoeda mantida (stake) e o tempo que foi mantida. Embora isso reduza o consumo de eletricidade em mais de 99%, também há críticas de que seja "um sistema onde os ricos ficam mais ricos" ou "se a descentralização completa não será comprometida". O Bitcoin, por mais criticado que seja, continua a manter a filosofia do PoW da "garantia da segurança física pelo consumo de energia".
 
@@ -248,13 +248,13 @@ Na secp256k1 do Bitcoin, como $p \approx 2^{256}$, são necessárias cerca de $2
 ### A Ameaça dos Computadores Quânticos e a Criptografia Pós-Quântica
 
 No entanto, há uma grande preocupação com a segurança computacional. Essa é a ascensão dos **Computadores Quânticos (Quantum Computers)**.
-O "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)" ([Shor's Algorithm](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)), publicado por Peter Shor em 1994, provou matematicamente que o uso de computadores quânticos pode resolver o problema de fatoração de primos (a base da criptografia RSA) e o problema do logaritmo discreto (a base da ECC) em tempo polinomial $\mathcal{O}(n^3)$.
+O "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)" ([Shor's Algorithm](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)), publicado por Peter Shor em 1994, provou matematicamente que o uso de computadores quânticos pode resolver o problema de fatoração de primos (a base da criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)) e o problema do logaritmo discreto (a base da ECC) em tempo polinomial $\mathcal{O}(n^3)$.
 
 Se for concluído um computador quântico prático em larga escala com Qubits suficientes e baixa taxa de erro, haverá o risco de que chaves privadas sejam calculadas retroativamente a partir das chaves públicas do Bitcoin.
 As defesas da rede Bitcoin contra isso são as seguintes:
 
 1. **Proteção de Funções de Hash**: Um endereço Bitcoin não é a própria chave pública, mas o resultado da aplicação das funções de hash SHA-256 e RIPEMD-160 à chave pública. Mesmo com um computador quântico, o cálculo inverso da função de hash (mesmo usando o algoritmo de Grover, a complexidade é $\mathcal{O}(\sqrt{N})$) continua sendo difícil. Portanto, até que uma transação seja feita e a chave pública seja exposta à rede, o conteúdo do endereço é considerado seguro mesmo contra computadores quânticos.
-2. **Transição para Criptografia Pós-Quântica (Post-Quantum Cryptography: PQC)**: Antes que os computadores quânticos sejam colocados em uso prático, o protocolo do Bitcoin seria bifurcado (hard fork) e discutido para mudar para um novo algoritmo de assinatura que seja difícil de ser decifrado por computadores quânticos, como a criptografia baseada em reticulados (Lattice-based cryptography) ou criptografia polinomial multivariável (Multivariate polynomial cryptography) selecionadas pelo NIST (Instituto Nacional de Padrões e Tecnologia dos EUA).
+2. **Transição para Criptografia Pós-Quântica (Post-Quantum [Cryptography](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/): PQC)**: Antes que os computadores quânticos sejam colocados em uso prático, o protocolo do Bitcoin seria bifurcado (hard fork) e discutido para mudar para um novo algoritmo de assinatura que seja difícil de ser decifrado por computadores quânticos, como a criptografia baseada em reticulados (Lattice-based cryptography) ou criptografia polinomial multivariável (Multivariate polynomial cryptography) selecionadas pelo NIST (Instituto Nacional de Padrões e Tecnologia dos EUA).
 
 ## 9. Topologia de Rede e Detalhes do Protocolo [P2P](https://kenji.blog/pt/p/webrtc-realtime-communication-p2p/)
 
@@ -266,7 +266,7 @@ Os computadores que participam da rede são chamados de "Nós" (Nodes). Existem 
 
 - **Nó Completo (Full Node)**: É um nó que faz o download de todos os dados da blockchain (mais de centenas de GB), desde o bloco Gênesis até o bloco mais recente, e os verifica. Como ele verifica a validade das transações e a presença de gasto duplo de forma independente, ele desempenha o papel central da segurança da rede.
 - **Nó SPV (Simplified Payment Verification Node)**: É um nó leve que baixa apenas o cabeçalho do bloco, e não a blockchain inteira. É usado principalmente em carteiras para smartphones, etc. Embora possa confirmar se sua própria transação está incluída em um bloco (verificação do caminho de Merkle), não possui a capacidade de verificação de um nó completo.
-- **Nó de Mineração (Mining Node)**: É o nó que executa os cálculos de PoW e gera novos blocos. Hoje em dia, enormes "Piscinas de Mineração" (Mining Pools), que agrupam hardware dedicado à mineração chamado ASIC (Application Specific Integrated Circuit), desempenham esse papel.
+- **Nó de Mineração (Mining Node)**: É o nó que executa os cálculos de [PoW](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/) e gera novos blocos. Hoje em dia, enormes "Piscinas de Mineração" (Mining Pools), que agrupam hardware dedicado à mineração chamado ASIC (Application Specific Integrated Circuit), desempenham esse papel.
 
 ### Processo de Propagação de Transações (Gossip Protocol)
 
@@ -279,7 +279,7 @@ Quando um usuário (Alice) cria uma transação para enviar Bitcoin, como esses 
 
 Com isso, transações válidas se espalham para os Mempools dos nós em todo o mundo em questão de segundos. Os mineradores priorizam e selecionam do Mempool as transações com taxas (Fee) mais altas e as agrupam em novos blocos.
 
-## 10. Economia da Blockchain: Teoria dos Jogos e Design de Incentivos
+## 10. Economia da [Blockchain](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/): Teoria dos Jogos e Design de Incentivos
 
 A maior conquista de Satoshi Nakamoto não foi apenas resolver os quebra-cabeças criptográficos, mas também construir um perfeito **Design de Incentivos (Incentive Design)** em que "o comportamento egoísta de indivíduos e organizações resulta no aumento da segurança de toda a rede".
 

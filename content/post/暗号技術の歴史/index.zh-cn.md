@@ -14,7 +14,7 @@ description: '从古代的凯撒密码，到恩尼格玛、公钥密码，再到
 
 密码技术（[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）是保持信息机密性的技术，伴随着人类历史不断演进。从古代战争中秘密指令的传递，到现代互联网中信用卡信息的保护，密码的目的始终如一，即“让预期的接收者能够理解信息，而让第三方无法解读”。
 
-在现代信息安全中，密码技术不仅仅局限于“信息的隐藏（机密性：Confidentiality）”，还承担着保障数据“完整性（Integrity）”、“认证（Authentication）”和“不可否认性（Non-repudiation）”等重要作用。
+在现代信息安全中，密码技术不仅仅局限于“信息的隐藏（机密性：Confidentiality）”，还承担着保障数据“完整性（Integrity）”、“认证（[Authentication](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/)）”和“不可否认性（Non-repudiation）”等重要作用。
 
 本文将从古代简单的替换密码开始，涵盖机械密码、现代对称密钥与公钥密码，直到因量子计算机实用化而到来的“抗量子密码（PQC）”时代，从技术和数学的角度，为您详细梳理密码技术演进的历史。
 
@@ -135,7 +135,7 @@ graph TD
 
 ---
 
-# 5. 公钥密码的革命：从Diffie-Hellman到RSA
+# 5. 公钥密码的革命：从Diffie-Hellman到[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)
 
 对称密钥密码存在一个致命的弱点，那就是“密钥分配问题（Key Distribution Problem）”。即在开始加密通信之前，如何与远方的通信对象安全地共享“对称密钥”。解决这一问题的，正是诞生于20世纪70年代的“公钥密码”。
 
@@ -195,11 +195,11 @@ rsa_example()
 
 # 6. 椭圆曲线密码（ECC）的崛起
 
-RSA密码虽然强大，但随着计算机性能的提高，为了保持安全性，必须增加密钥长度（目前通常为2048或3072比特），这就导致了计算成本激增的问题。
+[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码虽然强大，但随着计算机性能的提高，为了保持安全性，必须增加密钥长度（目前通常为2048或3072比特），这就导致了计算成本激增的问题。
 
 因此，1985年有人提出了“椭圆曲线密码（Elliptic Curve [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy: ECC）”。它利用了有限域上椭圆曲线（通常形式为 $y^2 = x^3 + ax + b$）上点的加法运算。
 
-众所周知，椭圆曲线上的离散对数问题（ECDLP）比素数分解问题更难求解。 **利用ECC，仅需256比特的密钥长度就能实现与3072比特RSA相当的安全性** 。这也使得在智能手机或物联网（IoT）设备等计算资源有限的环境下，仍能实现高速且安全的加密通信（如ECDSA或ECDH等）。
+众所周知，椭圆曲线上的离散对数问题（ECDLP）比素数分解问题更难求解。 **利用ECC，仅需256比特的密钥长度就能实现与3072比特[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)相当的安全性** 。这也使得在智能手机或物联网（IoT）设备等计算资源有限的环境下，仍能实现高速且安全的加密通信（如ECDSA或ECDH等）。
 
 ---
 
@@ -261,7 +261,7 @@ timeline
 
 密码技术的历史，就是一部发明新加密方式（盾）与破解它的新解密手段（矛）之间永无止境的斗争史。
 
-凯撒密码败给了频率分析，曾号称无敌的恩尼格玛则败给了图灵的天才头脑与机器的力量。而如今，支撑现代互联网社会根基的RSA和ECC等强力密码，也面临着量子计算机这一全新“矛”的威胁。
+凯撒密码败给了频率分析，曾号称无敌的恩尼格玛则败给了图灵的天才头脑与机器的力量。而如今，支撑现代互联网社会根基的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)和ECC等强力密码，也面临着量子计算机这一全新“矛”的威胁。
 
 然而，人类已经着眼于更遥远的未来，正在准备抗量子密码（PQC）这一面崭新的“盾”。目前，对于全球的IT基础设施而言，从现有的公钥密码向PQC过渡的准备工作（确保密码敏捷性，[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/) Agility）已成为当务之急。
 

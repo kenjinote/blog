@@ -10,11 +10,11 @@ description: '量子コンピュータの台頭によって現代の通信イン
 
 ## はじめに：暗号技術と[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)の交差点
 
-現代のインターネット社会において、通信の秘密を守るための基盤となっているのが「公開鍵暗号」です。その中でも代表的なものが、1977年にRon Rivest、Adi Shamir、Leonard Adlemanの3氏によって開発された「RSA暗号」です。私たちが毎日利用しているオンラインショッピングの決済、ウェブサイトの閲覧（HTTPS）、メールの送受信に至るまで、RSA暗号はインターネットインフラの心臓部として機能しています。
+現代のインターネット社会において、通信の秘密を守るための基盤となっているのが「[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号」です。その中でも代表的なものが、1977年にRon Rivest、Adi Shamir、Leonard Adlemanの3氏によって開発された「[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号」です。私たちが毎日利用しているオンラインショッピングの決済、ウェブサイトの閲覧（HTTPS）、メールの送受信に至るまで、RSA暗号はインターネットインフラの心臓部として機能しています。
 
 しかし、「量子コンピュータ」の登場によって、この安全性が根底から覆される可能性が指摘されています。メディアでは「量子コンピュータが完成すれば、世界中のパスワードや暗号が数秒で解読されてしまう」といったセンセーショナルな見出しが躍ることもあります。果たして、それは本当なのでしょうか？
 
-本記事では、古典的な暗号解読手法であるGNFS（一般数体ふるい法）と、量子コンピュータを用いた暗号解読アルゴリズムの決定版である「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)（[Shor's Algorithm](https://kenji.blog/p/quantum-computing-shors-algorithm/)）」の仕組みを深く掘り下げます。量子フーリエ変換や周期発見といった高度な概念を分かりやすく解説し、現在のNISQ（Noisy Intermediate-Scale Quantum）時代における量子ハードウェアの現状と、実際にRSA-2048を破るために必要なハードルについて詳細に検証していきます。
+本記事では、古典的な暗号解読手法であるGNFS（一般数体ふるい法）と、量子コンピュータを用いた暗号解読アルゴリズムの決定版である「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)（[Shor's Algorithm](https://kenji.blog/p/quantum-computing-shors-algorithm/)）」の仕組みを深く掘り下げます。量子フーリエ変換や周期発見といった高度な概念を分かりやすく解説し、現在のNISQ（Noisy Intermediate-Scale Quantum）時代における量子ハードウェアの現状と、実際に[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)-2048を破るために必要なハードルについて詳細に検証していきます。
 
 ---
 
@@ -123,7 +123,7 @@ QFT適用後に第1レジスタを測定すると、非常に高い確率で $ c
 
 この測定結果 $ c $ を古典コンピュータに戻し、$ \frac{c}{2^n} \approx \frac{j}{r} $ という分数を作ります。そして、数学的手法である「連分数展開（Continued fraction expansion）」を用いて近似値を計算することで、分母である周期 $ r $ を見事にあぶり出すことができます。
 
-$ r $ が分かれば、あとはステップ1の公式を使って $ N $ の素因数を計算し、RSA暗号は完全に解読されます。
+$ r $ が分かれば、あとはステップ1の公式を使って $ N $ の素因数を計算し、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号は完全に解読されます。
 
 ---
 
@@ -167,7 +167,7 @@ Craig Gidney (Google) と Martin Ekerå による2021年の論文による画期
 
 「まだ10年以上かかるなら安心だ」と考えるのは早計です。現在、国家の機密情報や医療データ、長期的なインフラ設計など、数十年先まで秘密を担保しなければならないデータが存在します。
 
-ここで懸念されているのが、 **「Store Now, Decrypt Later（今保存して、後で解読する）」** という攻撃手法です。悪意のある国家や組織が、現在のRSAやECC（楕円曲線暗号）で暗号化された通信データをすべて傍受し、ストレージに保存しておくのです。そして10年後、20年後に強力な量子コンピュータが完成した瞬間に、ショアのアルゴリズムを用いて過去のデータをすべて解読し、秘密を暴露するという手法です。
+ここで懸念されているのが、 **「Store Now, Decrypt Later（今保存して、後で解読する）」** という攻撃手法です。悪意のある国家や組織が、現在のRSAやECC（楕円曲線暗号）で[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)された通信データをすべて傍受し、ストレージに保存しておくのです。そして10年後、20年後に強力な量子コンピュータが完成した瞬間に、ショアのアルゴリズムを用いて過去のデータをすべて解読し、秘密を暴露するという手法です。
 
 このタイムラグの脅威に対抗するため、NIST（米国国立標準技術研究所）を中心に、 **「耐量子計算機暗号（PQC: Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）」** の標準化プロセスが急ピッチで進められてきました。
 
@@ -184,4 +184,4 @@ PQCは、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors
 
 量子コンピュータは、SFの世界の夢物語から現実の工学的挑戦へと移行しています。ショアのアルゴリズムは、数学と量子力学が融合した人類の偉大な知的成果ですが、同時に我々のデジタル社会の基盤を揺るがす「破壊的な力」を秘めています。
 
-RSA暗号が明日すぐに使えなくなるわけではありません。しかし、量子技術の進化と「Store Now, Decrypt Later」のリスクを鑑みれば、PQCへの移行という暗号史に残る大規模なマイグレーションはすでに始まっています。我々は今、情報セキュリティにおけるパラダイムシフトの最前線を目撃しているのです。
+[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号が明日すぐに使えなくなるわけではありません。しかし、量子技術の進化と「Store Now, Decrypt Later」のリスクを鑑みれば、PQCへの移行という暗号史に残る大規模なマイグレーションはすでに始まっています。我々は今、情報セキュリティにおけるパラダイムシフトの最前線を目撃しているのです。

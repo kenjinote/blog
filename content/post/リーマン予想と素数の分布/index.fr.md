@@ -15,7 +15,7 @@ Les « nombres premiers » (Prime Numbers) sont des entiers naturels qui ne sont
 
 Celle qui s'est le plus rapprochée du mystère des nombres premiers est l'**« Hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) » ([Riemann](https://kenji.blog/fr/p/riemann/) Hypothesis)**, proposée en 1859 par le mathématicien allemand [Bernhard Riemann](https://kenji.blog/fr/p/riemann/). L'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est l'un des problèmes les plus importants et non résolus des mathématiques modernes, et elle fait partie des Problèmes du prix du millénaire définis par l'Institut de mathématiques Clay, avec une récompense d'un million de dollars.
 
-À première vue, un problème difficile de mathématiques pures concernant la distribution des nombres premiers peut sembler sans rapport avec notre vie quotidienne. Cependant, la sécurité de l'infrastructure d'Internet qui soutient la société moderne, en particulier **les technologies de cryptographie moderne telles que le chiffrement RSA et la cryptographie sur les courbes elliptiques (ECC)**, dépend profondément des propriétés des nombres premiers géants.
+À première vue, un problème difficile de mathématiques pures concernant la distribution des nombres premiers peut sembler sans rapport avec notre vie quotidienne. Cependant, la sécurité de l'infrastructure d'Internet qui soutient la société moderne, en particulier **les technologies de cryptographie moderne telles que le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et la cryptographie sur les courbes elliptiques (ECC)**, dépend profondément des propriétés des nombres premiers géants.
 
 Dans cet article, nous entreprendrons un voyage mathématique allant de la distribution des nombres premiers au théorème des nombres premiers, à la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/), pour atteindre le cœur de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/). Nous explorerons en profondeur comment elle est liée à la cryptographie moderne et ce qu'il adviendrait du monde si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) venait à être prouvée.
 
@@ -122,7 +122,7 @@ En d'autres termes, **si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riema
 
 # 6. La cryptographie moderne et sa relation indissociable avec les nombres premiers
 
-Jusqu'ici, nous étions dans le monde profond des mathématiques pures, mais ces propriétés des nombres premiers soutiennent fondamentalement la société numérique moderne. Le représentant de cela est la cryptographie à clé publique telle que le **chiffrement RSA**.
+Jusqu'ici, nous étions dans le monde profond des mathématiques pures, mais ces propriétés des nombres premiers soutiennent fondamentalement la société numérique moderne. Le représentant de cela est la cryptographie à clé publique telle que le **chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)**.
 
 La sécurité de toutes les communications, y compris les paiements par carte de crédit sur Internet, la transmission de mots de passe et les signatures numériques de la blockchain, dépend des « nombres premiers ».
 
@@ -152,7 +152,7 @@ graph LR
     F -.-> G["Impossible de calculer d sans connaître p et q"]
 ```
 
-Pour casser le chiffrement RSA, il faut trouver (factoriser) les nombres premiers originaux $p$ et $q$ à partir du gigantesque $N$. Même en utilisant les algorithmes les plus courants (Crible algébrique : GNFS, etc.), la factorisation d'un nombre de centaines de chiffres prendrait un temps dépassant de loin l'âge de l'univers, même avec des superordinateurs.
+Pour casser le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), il faut trouver (factoriser) les nombres premiers originaux $p$ et $q$ à partir du gigantesque $N$. Même en utilisant les algorithmes les plus courants (Crible algébrique : GNFS, etc.), la factorisation d'un nombre de centaines de chiffres prendrait un temps dépassant de loin l'âge de l'univers, même avec des superordinateurs.
 
 ---
 
@@ -161,7 +161,7 @@ Pour casser le chiffrement RSA, il faut trouver (factoriser) les nombres premier
 Alors, comment « l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) » au sommet des mathématiques pures et la « cryptographie » se croisent-elles ?
 
 ### 7.1. Algorithmes de génération de nombres premiers (test de primalité) et l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) généralisée (GRH)
-Pour utiliser le chiffrement RSA, il faut d'abord générer des nombres premiers géants $p$ et $q$. Cependant, déterminer de manière fiable et rapide si « un certain nombre est premier » n'est pas facile.
+Pour utiliser le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), il faut d'abord générer des nombres premiers géants $p$ et $q$. Cependant, déterminer de manière fiable et rapide si « un certain nombre est premier » n'est pas facile.
 
 Actuellement, l'algorithme pratique utilisé est le **test de primalité de Miller-Rabin (Miller-Rabin primality test)**, qui est un algorithme probabiliste. Cet algorithme est rapide, mais il existe un risque de « pseudo-premiers » où un nombre composé est identifié à tort comme premier avec une probabilité extrêmement faible.
 
@@ -179,7 +179,7 @@ Pour évaluer rigoureusement la fréquence d'apparition des nombres friables, un
 
 # 8. Si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est prouvée, la cryptographie sera-t-elle cassée ?
 
-On dit parfois comme une légende urbaine que « si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est résolue, le chiffrement RSA s'effondrera en un instant », mais **c'est mathématiquement inexact**.
+On dit parfois comme une légende urbaine que « si l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) est résolue, le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) s'effondrera en un instant », mais **c'est mathématiquement inexact**.
 
 La preuve de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) elle-même ne créera pas immédiatement un algorithme magique qui accélère considérablement la factorisation. L'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/) n'est qu'un théorème sur la « régularité de la distribution macroscopique » des nombres premiers, et elle ne nous dit pas directement par quels nombres premiers un nombre individuel $N$ est divisible (propriété locale).
 
@@ -189,7 +189,7 @@ Il est extrêmement probable que de **« nouveaux outils mathématiques » et de
 Si des méthodes géométriques algébriques inconnues ou des méthodes géométriques non commutatives permettant de manipuler complètement les propriétés des zéros de la fonction zêta de [Riemann](https://kenji.blog/fr/p/riemann/) sont établies, il n'est pas exclu que cela conduise à la découverte d'un algorithme révolutionnaire de factorisation (par exemple, un algorithme classique qui réduit la complexité au temps polynomial). En ce sens, les cryptographes ne peuvent jamais quitter des yeux les développements de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/).
 
 ### Ordinateurs quantiques et algorithme de Shor
-Une menace plus directe et réaliste pour la cryptographie n'est pas la preuve de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/), mais les **ordinateurs quantiques**. « L'algorithme de Shor » publié par Peter Shor en 1994 a prouvé qu'avec un ordinateur quantique suffisamment performant, la factorisation peut être résolue en temps polynomial. Cela casserait fondamentalement le chiffrement RSA et la cryptographie sur les courbes elliptiques.
+Une menace plus directe et réaliste pour la cryptographie n'est pas la preuve de l'hypothèse de [Riemann](https://kenji.blog/fr/p/riemann/), mais les **ordinateurs quantiques**. « L'algorithme de Shor » publié par Peter Shor en 1994 a prouvé qu'avec un ordinateur quantique suffisamment performant, la factorisation peut être résolue en temps polynomial. Cela casserait fondamentalement le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et la cryptographie sur les courbes elliptiques.
 
 Actuellement, une transition vers la « cryptographie post-quantique (Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy, PQC) » (comme la cryptographie fondée sur les réseaux) qui ne peut pas être déchiffrée même par des ordinateurs quantiques progresse dans le monde entier. Les technologies de cryptographie basées sur les nombres premiers peuvent en un sens atteindre la fin de leur âge d'or, mais la valeur mathématique des nombres premiers eux-mêmes ne sera jamais perdue.
 

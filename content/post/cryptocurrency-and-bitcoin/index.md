@@ -39,7 +39,7 @@ tags: ["bitcoin", "cryptography", "blockchain"]
 
 2008年、リーマン・ブラザーズの破綻に端を発する世界的な金融危機が発生しました。既存の金融システムに対する不信感が頂点に達していた同年10月31日、「サトシ・ナカモト（Satoshi Nakamoto）」と名乗る匿名の人物（またはグループ）が、暗号学のメーリングリストに一本の論文を投稿しました。
 
-タイトルは『Bitcoin: A Peer-to-Peer Electronic Cash System』（ビットコイン：[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)電子マネーシステム）。この9ページの論文は、これまでの電子マネーの試みが抱えていた二重支払い問題を、 **プルーフ・オブ・ワーク（Proof of Work: PoW）** という仕組みを使って完全に分散化された形で解決する方法を示していました。
+タイトルは『Bitcoin: A Peer-to-Peer Electronic Cash System』（ビットコイン：[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)電子マネーシステム）。この9ページの論文は、これまでの電子マネーの試みが抱えていた二重支払い問題を、 **プルーフ・オブ・ワーク（Proof of Work: [PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)）** という仕組みを使って完全に分散化された形で解決する方法を示していました。
 
 ### ジェネシスブロック（Genesis Block）
 
@@ -50,9 +50,9 @@ tags: ["bitcoin", "cryptography", "blockchain"]
 
 これは、当時のイギリスの新聞『The Times』の見出しであり、中央銀行による金融救済策に対する強烈な皮肉であるとともに、ビットコインが永遠に残り続けるシステムとしてのタイムスタンプの役割を果たしています。
 
-## 3. ブロックチェーンのアーキテクチャ
+## 3. [ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)のアーキテクチャ
 
-ビットコインを支える中核技術が「ブロックチェーン（Blockchain）」です。ブロックチェーンは、分散型台帳技術（Distributed Ledger Technology: DLT）のひとつの形態であり、データが「ブロック」と呼ばれる単位でまとめられ、それらが暗号学的にチェーン（鎖）のようにつながった構造をしています。
+ビットコインを支える中核技術が「ブロックチェーン（[Blockchain](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)）」です。ブロックチェーンは、分散型台帳技術（[Distributed Ledger](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT）のひとつの形態であり、データが「ブロック」と呼ばれる単位でまとめられ、それらが暗号学的にチェーン（鎖）のようにつながった構造をしています。
 
 ```mermaid
 flowchart TD
@@ -76,7 +76,7 @@ flowchart TD
 
 ### マークルツリー（Merkle Trees）
 
-ブロックチェーンでは、ブロックサイズを抑えつつ、データの改ざんを効率的に検出するために **マークルツリー（Merkle Tree）** というデータ構造を利用します。マークルツリーは二分木の一種で、葉ノードに各トランザクションのハッシュ値が入り、親ノードは子ノードのハッシュ値を連結して再度ハッシュ化したものになります。
+[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、ブロックサイズを抑えつつ、データの改ざんを効率的に検出するために **マークルツリー（Merkle Tree）** というデータ構造を利用します。マークルツリーは二分木の一種で、葉ノードに各トランザクションのハッシュ値が入り、親ノードは子ノードのハッシュ値を連結して再度ハッシュ化したものになります。
 
 ```mermaid
 flowchart TD
@@ -92,7 +92,7 @@ flowchart TD
 
 ## 4. 数理的・暗号学的基盤
 
-ビットコインの堅牢性は、高度な数学的基盤に支えられています。ここでは、その中核をなすハッシュ関数、公開鍵暗号、および楕円曲線暗号について深く掘り下げます。
+ビットコインの堅牢性は、高度な数学的基盤に支えられています。ここでは、その中核をなすハッシュ関数、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号、および楕円曲線暗号について深く掘り下げます。
 
 ### SHA-256（Secure Hash Algorithm 256-bit）
 
@@ -105,17 +105,17 @@ flowchart TD
 
 ビットコインでは、ブロックハッシュの計算や、公開鍵からアドレスを生成するプロセスなどでSHA-256が二重に適用されます（これを `SHA256(SHA256(x))`、またはHash256と呼びます）。
 
-### 公開鍵暗号（Public Key Cryptography）とデジタル署名
+### [公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号（[Public Key](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) [Cryptography](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)）とデジタル署名
 
 暗号資産の所有権は、秘密鍵（Private Key）と公開鍵（Public Key）のペアによって証明されます。
 - **秘密鍵** $k$: ランダムに生成された256ビットの整数。絶対に他人に知られてはなりません。
 - **公開鍵** $K$: 秘密鍵から一方向関数を用いて計算される鍵。ネットワーク上に公開されます。
 
-アリスがボブにビットコインを送金する場合、アリスは自身の秘密鍵を使ってトランザクションデータに対して **デジタル署名（Digital Signature）** を作成します。ネットワークの参加者は、アリスの公開鍵を使ってその署名が正当なものか（本当にアリスが秘密鍵を使って作成したものか）を検証することができます。
+アリスがボブにビットコインを送金する場合、アリスは自身の秘密鍵を使ってトランザクションデータに対して **デジタル署名（[Digital Signature](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)）** を作成します。ネットワークの参加者は、アリスの公開鍵を使ってその署名が正当なものか（本当にアリスが秘密鍵を使って作成したものか）を検証することができます。
 
 ### 楕円曲線暗号（Elliptic Curve Cryptography: ECC）と secp256k1
 
-ビットコインの公開鍵生成およびデジタル署名には、RSA暗号ではなく **楕円曲線暗号（ECC）** が採用されています。ECCは、RSAに比べてはるかに短い鍵長で同等のセキュリティレベルを提供できるという利点があります。
+ビットコインの公開鍵生成およびデジタル署名には、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号ではなく **楕円曲線暗号（ECC）** が採用されています。ECCは、RSAに比べてはるかに短い鍵長で同等のセキュリティレベルを提供できるという利点があります。
 
 ビットコインで用いられる特定の楕円曲線のパラメータは **secp256k1** と呼ばれます。この曲線は有限体 $\mathbb{F}_p$ 上で定義され、次の方程式で表されます。
 
@@ -153,7 +153,7 @@ $$
 3. 点 $(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$ を計算する。
 4. $r \equiv x_2 \pmod{n}$ であれば、署名は正当であるとみなされる。
 
-## 5. [コンセンサスアルゴリズム](https://kenji.blog/p/byzantine-generals-problem-consensus/)とプルーフ・オブ・ワーク（PoW）
+## 5. [コンセンサスアルゴリズム](https://kenji.blog/p/byzantine-generals-problem-consensus/)とプルーフ・オブ・ワーク（[PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)）
 
 分散型ネットワークにおいて、全員が同じ台帳の状態に合意するための仕組みがコンセンサスアルゴリズムです。
 
@@ -161,7 +161,7 @@ $$
 
 分散コンピューティングにおける古典的な問題として「ビザンチン将軍問題」があります。複数の将軍が敵の都市を包囲しており、攻撃か撤退かで意見を一致させなければなりませんが、将軍の中には裏切り者がいて偽のメッセージを送る可能性があります。このような状況下で、いかにして誠実な将軍たちだけで正しい合意に達することができるかという問題です。
 
-ビットコインは、**プルーフ・オブ・ワーク（PoW）** と **最長チェーンのルール（Longest Chain Rule）** を組み合わせることで、この問題を実質的に解決しました。
+ビットコインは、**プルーフ・オブ・ワーク（[PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)）** と **最長チェーンのルール（Longest Chain Rule）** を組み合わせることで、この問題を実質的に解決しました。
 
 ### マイニングの数理とナンス（Nonce）
 
@@ -173,7 +173,7 @@ $$
 
 ハッシュ関数の出力は完全にランダムに見えるため、条件を満たすナンスを見つけるための効率的なアルゴリズムは存在しません。ひたすらナンスの値を変更してハッシュ計算を繰り返す総当たり攻撃（Brute-force）しか方法がないのです。
 
-ターゲットの値が小さいほど、条件を満たすハッシュを見つける確率は低くなります。もしターゲットが先頭に $k$ 個のゼロを要求するような値であれば、そのブロックを見つけるのに必要な平均計算回数は $2^k$ 回となります。この膨大な計算エネルギーの投下こそが、ブロックチェーンの過去の記録を改ざんすることを不可能にしています。
+ターゲットの値が小さいほど、条件を満たすハッシュを見つける確率は低くなります。もしターゲットが先頭に $k$ 個のゼロを要求するような値であれば、そのブロックを見つけるのに必要な平均計算回数は $2^k$ 回となります。この膨大な計算エネルギーの投下こそが、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の過去の記録を改ざんすることを不可能にしています。
 
 ### 難易度調整（Difficulty Adjustment）
 
@@ -216,7 +216,7 @@ $$
 
 ### フォーク（Forks）：ソフトフォークとハードフォーク
 
-ブロックチェーンのプロトコルをアップグレードする際、「フォーク（分岐）」と呼ばれる事象が発生することがあります。
+[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)のプロトコルをアップグレードする際、「フォーク（分岐）」と呼ばれる事象が発生することがあります。
 - **ソフトフォーク（Soft Fork）**: 後方互換性のあるアップグレード。古いルールのノードでも、新しいルールのブロックを有効とみなします（例：SegWitの導入）。
 - **ハードフォーク（Hard Fork）**: 後方互換性のないアップグレード。新しいルールのブロックは古いノードには拒否されるため、ネットワークが完全に2つに分裂する可能性があります（例：Bitcoin Cashの誕生）。
 
@@ -226,11 +226,11 @@ $$
 
 ライトニングネットワークでは、参加者同士がブロックチェーン外（オフチェーン）で「ペイメントチャネル（Payment Channel）」を開設します。チャネル内では、双方が納得する限り、ブロックチェーンにトランザクションを記録することなく、一瞬で、かつほぼ無料で何度でも資金のやり取りが可能です。最終的な残高の精算時のみ、ブロックチェーン（レイヤー1）にトランザクションを記録します。
 
-### Proof of Stake（PoS）との比較
+### Proof of Stake（[PoS](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)）との比較
 
-PoWのもう一つの大きな課題は、マイニングによる莫大な電力消費です。この環境問題への対策として、Ethereumなどは **プルーフ・オブ・ステーク（Proof of Stake: PoS）** という別の[コンセンサスアルゴリズム](https://kenji.blog/p/byzantine-generals-problem-consensus/)に移行しました。
+[PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)のもう一つの大きな課題は、マイニングによる莫大な電力消費です。この環境問題への対策として、Ethereumなどは **プルーフ・オブ・ステーク（Proof of Stake: PoS）** という別の[コンセンサスアルゴリズム](https://kenji.blog/p/byzantine-generals-problem-consensus/)に移行しました。
 
-PoSでは、計算能力（ハッシュレート）ではなく、保有している暗号資産の量（ステーク）と保有期間に応じて、次のブロックを生成する権利（バリデータ）が確率的に割り当てられます。これにより電力消費は99%以上削減されますが、「お金持ちがよりお金持ちになるシステムではないか」「完全な分散化が損なわれるのではないか」という批判も存在します。ビットコインは、どれほど批判されようとも、「エネルギーを消費することによる物理的なセキュリティ担保」というPoWの哲学を堅持し続けています。
+[PoS](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、計算能力（ハッシュレート）ではなく、保有している暗号資産の量（ステーク）と保有期間に応じて、次のブロックを生成する権利（バリデータ）が確率的に割り当てられます。これにより電力消費は99%以上削減されますが、「お金持ちがよりお金持ちになるシステムではないか」「完全な分散化が損なわれるのではないか」という批判も存在します。ビットコインは、どれほど批判されようとも、「エネルギーを消費することによる物理的なセキュリティ担保」という[PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の哲学を堅持し続けています。
 
 ## 8. 暗号理論の深淵：数学的証明とプロトコルの堅牢性
 
@@ -240,7 +240,7 @@ PoSでは、計算能力（ハッシュレート）ではなく、保有して�
 
 計算量的安全性とは、「ある暗号を解読するためには、宇宙の寿命よりも長い時間と天文学的な計算資源が必要であるため、実質的に解読不可能である」という前提に基づくセキュリティです。
 
-ビットコインの公開鍵暗号の安全性を担保する楕円曲線離散対数問題（ECDLP）を数式で再確認しましょう。
+ビットコインの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の安全性を担保する楕円曲線離散対数問題（ECDLP）を数式で再確認しましょう。
 点 $P$ と $Q$ が楕円曲線 $E(\mathbb{F}_p)$ 上にあり、$Q = kP$ を満たす未知の整数 $k$ を求める問題です。
 古典的なコンピュータを用いた場合、この問題を解くための最良のアルゴリズム（Pollardの $\rho$ 法など）の計算量は $\mathcal{O}(\sqrt{p})$ となります。
 ビットコインの secp256k1 では $p \approx 2^{256}$ であるため、解読には約 $2^{128}$ 回の演算が必要です。これは現在の地球上のすべてのコンピュータを動員しても、宇宙の寿命（約138億年）の何兆倍もの時間がかかる計算量です。
@@ -248,13 +248,13 @@ PoSでは、計算能力（ハッシュレート）ではなく、保有して�
 ### [量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)の脅威と耐量子暗号
 
 しかし、計算量的安全性には一つの大きな懸念があります。それが **量子コンピュータ（Quantum Computer）** の台頭です。
-1994年にピーター・ショア（Peter Shor）が発表した「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)（[Shor's Algorithm](https://kenji.blog/p/quantum-computing-shors-algorithm/)）」は、量子コンピュータを用いれば、素因数分解問題（RSA暗号の基礎）や離散対数問題（ECCの基礎）を多項式時間 $\mathcal{O}(n^3)$ で解くことができることを数学的に証明しました。
+1994年にピーター・ショア（Peter Shor）が発表した「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)（[Shor's Algorithm](https://kenji.blog/p/quantum-computing-shors-algorithm/)）」は、量子コンピュータを用いれば、素因数分解問題（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の基礎）や離散対数問題（ECCの基礎）を多項式時間 $\mathcal{O}(n^3)$ で解くことができることを数学的に証明しました。
 
-もし、十分な量子ビット（Qubits）と低いエラー率を持つ実用的な大規模量子コンピュータが完成すれば、ビットコインの公開鍵から秘密鍵が逆算されるリスクが生じます。
+もし、十分な量子ビット（Qubits）と低いエラー率を持つ実用的な大規模量子コンピュータが完成すれば、ビットコインの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)から秘密鍵が逆算されるリスクが生じます。
 これに対するビットコインネットワークの防衛策は以下の通りです。
 
 1. **ハッシュ関数の保護**: ビットコインアドレスは公開鍵そのものではなく、公開鍵にSHA-256とRIPEMD-160というハッシュ関数を適用したものです。量子コンピュータを使っても、ハッシュ関数の逆算（グローバーのアルゴリズムを用いたとしても計算量は $\mathcal{O}(\sqrt{N})$）は依然として困難です。そのため、トランザクションを行って公開鍵をネットワークにさらすまでは、アドレスの中身は量子コンピュータに対しても安全と言えます。
-2. **耐量子暗号（Post-Quantum Cryptography: PQC）への移行**: 量子コンピュータが実用化される前に、ビットコインのプロトコルをハードフォークさせ、NIST（米国国立標準技術研究所）が選定する格子ベース暗号（Lattice-based cryptography）や多変数多項式暗号（Multivariate polynomial cryptography）といった、量子コンピュータでも解読が困難な新しい署名アルゴリズムに移行することが議論されています。
+2. **耐量子暗号（Post-Quantum [Cryptography](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/): PQC）への移行**: 量子コンピュータが実用化される前に、ビットコインのプロトコルをハードフォークさせ、NIST（米国国立標準技術研究所）が選定する格子ベース暗号（Lattice-based cryptography）や多変数多項式暗号（Multivariate polynomial cryptography）といった、量子コンピュータでも解読が困難な新しい署名アルゴリズムに移行することが議論されています。
 
 ## 9. ネットワーク・トポロジーと[P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/)プロトコルの詳細
 
@@ -264,9 +264,9 @@ PoSでは、計算能力（ハッシュレート）ではなく、保有して�
 
 ネットワークに参加するコンピュータは「ノード（Node）」と呼ばれます。ノードにはいくつか種類があり、それぞれ役割が異なります。
 
-- **フルノード（Full Node）**: ジェネシスブロックから最新のブロックに至るまで、すべてのブロックチェーンデータ（数百GB以上）をダウンロードし、検証するノードです。トランザクションの正当性や二重支払いの有無を独立してチェックするため、ネットワークのセキュリティの根幹を担います。
+- **フルノード（Full Node）**: ジェネシスブロックから最新のブロックに至るまで、すべての[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)データ（数百GB以上）をダウンロードし、検証するノードです。トランザクションの正当性や二重支払いの有無を独立してチェックするため、ネットワークのセキュリティの根幹を担います。
 - **SPVノード（Simplified Payment Verification Node）**: ブロックチェーン全体ではなく、ブロックヘッダのみをダウンロードする軽量ノードです。主にスマートフォン用のウォレットなどで使われます。自身のトランザクションがブロックに含まれているか（マークルパスの検証）は確認できますが、フルノードほどの検証能力はありません。
-- **マイニングノード（Mining Node）**: PoWの計算を行い、新しいブロックを生成するノードです。現在では、ASIC（Application Specific Integrated Circuit）と呼ばれるマイニング専用のハードウェアを束ねた巨大な「マイニングプール」がこの役割を担っています。
+- **マイニングノード（Mining Node）**: [PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の計算を行い、新しいブロックを生成するノードです。現在では、ASIC（Application Specific Integrated Circuit）と呼ばれるマイニング専用のハードウェアを束ねた巨大な「マイニングプール」がこの役割を担っています。
 
 ### トランザクションの伝播プロセス（Gossip Protocol）
 
@@ -325,7 +325,7 @@ PoSでは、計算能力（ハッシュレート）ではなく、保有して�
 - **Bitcoin: A Peer-to-Peer Electronic Cash System** (Satoshi Nakamoto, 2008)
   - すべての始まりとなった記念碑的論文。わずか9ページの中に、PoW、インセンティブ、マークルツリーを組み合わせた分散型台帳の基本設計が完璧な形で記述されています。
 - **Ethereum: A Secure Decentralised Generalised Transaction Ledger** (Gavin Wood, 2014)
-  - イーサリアムのYellow Paper。ビットコインのUTXOモデルに対して、チューリング完全なスマートコントラクトを実行可能なアカウントベースのステートマシンとしてブロックチェーンを再定義しました。
+  - イーサリアムのYellow Paper。ビットコインのUTXOモデルに対して、チューリング完全な[スマートコントラクト](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)を実行可能なアカウントベースのステートマシンとしてブロックチェーンを再定義しました。
 
 ### 暗号理論と数学の基礎
 ブロックチェーンを真に理解するためには、情報セキュリティと応用数学の知識が不可欠です。以下の分野を学習することをお勧めします。
@@ -336,4 +336,4 @@ PoSでは、計算能力（ハッシュレート）ではなく、保有して�
 > **Warning: 投資に関する免責事項**
 > 本記事は、暗号資産の基盤技術およびその歴史・数理的構造について解説する目的で作成されており、いかなる暗号資産への投資を推奨、勧誘するものではありません。暗号資産の価格は極めてボラティリティが高く、投資には元本割れを含む大きなリスクが伴います。
 
-ブロックチェーンの技術的探求は、コンピュータサイエンス、経済学、社会学が交差する知のフロンティアです。コードを読み、自身でノードを立ち上げ、テストネットでトランザクションを生成してみることで、この技術の真の可能性とその限界を肌で感じることができるでしょう。
+[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の技術的探求は、コンピュータサイエンス、経済学、社会学が交差する知のフロンティアです。コードを読み、自身でノードを立ち上げ、テストネットでトランザクションを生成してみることで、この技術の真の可能性とその限界を肌で感じることができるでしょう。

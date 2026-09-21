@@ -118,7 +118,7 @@ Wenn diese Einheit $u$ nicht selbst das Quadrat von etwas ist, kann die linke Se
 ## Phase 5: Adlemans Magie "Quadratische Charaktere" (Quadratic Characters)
 
 Das Hindernis der Idealklassengruppe und das Hindernis der Einheitengruppe. Wie können wir diese beiden überwinden?
-Hier kommt die brillante Methode der **"Quadratischen Charaktere (Quadratic Characters)"** ins Spiel, die von dem Kryptographen Leonard Adleman (das "A" von RSA) und anderen eingeführt wurde.
+Hier kommt die brillante Methode der **"Quadratischen Charaktere (Quadratic Characters)"** ins Spiel, die von dem Kryptographen Leonard Adleman (das "A" von [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)) und anderen eingeführt wurde.
 
 Um festzustellen, "ob ein bestimmtes Element ein perfektes Quadrat im algebraischen Körper ist", verwenden wir die Zahlkörper-Version des [Legendre](https://kenji.blog/de/p/legendre/)-Symbols (quadratischer Rest).
 In dieser riesigen Matrix (dem Rätsel, um die Primidealzählungen gerade zu machen), **fügen wir heimlich ein paar Dutzend zusätzliche Bedingungen (Spalten) hinzu, die besagen: "Die quadratischen Charaktere für einige spezielle Primideale $\mathfrak{q}$ müssen ebenfalls alle $1$ (gerade) sein"** .
@@ -157,7 +157,7 @@ Da die ursprünglichen Paare $(a, b)$ außerdem in Entsprechung in den Formen $a
 Alles, was bleibt, ist zu beten, dass diese $X$ und $Y$ keine trivialen Lösungen ($X \equiv \pm Y$) sind, und
 **$\gcd(X - Y, N)$** zu berechnen.
 
-Wenn es sich um eine nicht-triviale Lösung handelt, durchläuft der [Euklid](https://kenji.blog/de/p/euclid/)ische Algorithmus sie in 0,001 Sekunden, und die geheimen Primzahlen $p$ und $q$, die das Herzstück der RSA-Kryptographie bilden, werden auf dem Ausgabebildschirm gedruckt.
+Wenn es sich um eine nicht-triviale Lösung handelt, durchläuft der [Euklid](https://kenji.blog/de/p/euclid/)ische Algorithmus sie in 0,001 Sekunden, und die geheimen Primzahlen $p$ und $q$, die das Herzstück der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie bilden, werden auf dem Ausgabebildschirm gedruckt.
 
 ---
 

@@ -199,7 +199,7 @@ When considering the field extension (splitting field) that contains all the roo
 The answer is, **by abstracting, we can realize that seemingly completely different phenomena actually possess the same structure**.
 
 1. **[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and Finite Fields**
-   The reason we can securely communicate over the Internet is thanks to technologies like RSA and elliptic curve cryptography. These directly apply the properties of algebraic structures like "finite fields" and "groups" (such as the difficulty of the discrete logarithm problem) rather than real numbers.
+   The reason we can securely communicate over the Internet is thanks to technologies like [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) and elliptic curve cryptography. These directly apply the properties of algebraic structures like "finite fields" and "groups" (such as the difficulty of the discrete logarithm problem) rather than real numbers.
 
 2. **Physics and Group Theory**
    In modern physics, especially particle physics and quantum mechanics, "group theory" is the language for describing the laws of the universe. The symmetries of particles and conservation laws (like the law of conservation of energy) are mathematically proven as properties of the "symmetric groups" or "Lie groups" possessed by physical systems.

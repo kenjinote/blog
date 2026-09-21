@@ -39,7 +39,7 @@ Many ideas that laid the foundation for Bitcoin emerged from this community, suc
 
 In 2008, a global financial crisis triggered by the collapse of Lehman Brothers occurred. In October of that year, when distrust in the existing financial system reached its peak, an anonymous person (or group) calling themselves "Satoshi Nakamoto" posted a paper to a cryptography mailing list.
 
-The title was "Bitcoin: A Peer-to-Peer Electronic Cash System". This 9-page paper demonstrated how to solve the double-spending problem that had plagued previous attempts at electronic money in a completely decentralized manner using a mechanism called **Proof of Work (PoW)**.
+The title was "Bitcoin: A Peer-to-Peer Electronic Cash System". This 9-page paper demonstrated how to solve the double-spending problem that had plagued previous attempts at electronic money in a completely decentralized manner using a mechanism called **Proof of Work ([PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/))**.
 
 ### Genesis Block
 
@@ -49,9 +49,9 @@ On January 3, 2009, the Bitcoin network began operating. The first block mined i
 
 This was a headline from the British newspaper "The Times" at the time. It served as a strong irony against the financial bailout by the central bank, as well as a timestamp for a system meant to last forever.
 
-## 3. Blockchain Architecture
+## 3. [Blockchain](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) Architecture
 
-The core technology that supports Bitcoin is the "Blockchain". Blockchain is a form of Distributed Ledger Technology (DLT) where data is grouped into units called "blocks", which are cryptographically linked together like a chain.
+The core technology that supports Bitcoin is the "Blockchain". Blockchain is a form of [Distributed Ledger](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) Technology (DLT) where data is grouped into units called "blocks", which are cryptographically linked together like a chain.
 
 ```mermaid
 flowchart TD
@@ -104,7 +104,7 @@ A hash function $H$ must satisfy the following properties:
 
 In Bitcoin, SHA-256 is applied twice (this is called `SHA256(SHA256(x))`, or Hash256) in processes such as calculating block hashes and generating addresses from public keys.
 
-### Public Key Cryptography and Digital Signatures
+### [Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) [Cryptography](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) and [Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s
 
 Ownership of cryptocurrency is proven by a pair of keys: a Private Key and a Public Key.
 - **Private Key** $k$: A randomly generated 256-bit integer. It must never be known to anyone else.
@@ -114,7 +114,7 @@ When Alice sends Bitcoin to Bob, Alice uses her private key to create a **Digita
 
 ### Elliptic Curve Cryptography (ECC) and secp256k1
 
-For Bitcoin's public key generation and digital signatures, **Elliptic Curve Cryptography (ECC)** is adopted instead of RSA encryption. ECC has the advantage of providing an equivalent level of security with a much shorter key length compared to RSA.
+For Bitcoin's public key generation and digital signatures, **Elliptic Curve Cryptography (ECC)** is adopted instead of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption. ECC has the advantage of providing an equivalent level of security with a much shorter key length compared to RSA.
 
 The specific elliptic curve parameters used in Bitcoin are called **secp256k1**. This curve is defined over a finite field $\mathbb{F}_p$ and is represented by the following equation:
 
@@ -152,7 +152,7 @@ In the verification process, the following calculations are performed using the 
 3. Calculate the point $(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$.
 4. If $r \equiv x_2 \pmod{n}$, the signature is considered valid.
 
-## 5. [Consensus Algorithm](https://kenji.blog/en/p/byzantine-generals-problem-consensus/)s and Proof of Work (PoW)
+## 5. [Consensus Algorithm](https://kenji.blog/en/p/byzantine-generals-problem-consensus/)s and Proof of Work ([PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/))
 
 In a decentralized network, the consensus algorithm is the mechanism by which everyone agrees on the state of the same ledger.
 
@@ -160,7 +160,7 @@ In a decentralized network, the consensus algorithm is the mechanism by which ev
 
 A classic problem in distributed computing is the "Byzantine Generals Problem". Multiple generals are besieging an enemy city and must agree on whether to attack or retreat, but there may be traitors among the generals who might send fake messages. The problem is how to reach a correct consensus with only honest generals under such circumstances.
 
-Bitcoin practically solved this problem by combining **Proof of Work (PoW)** and the **Longest Chain Rule**.
+Bitcoin practically solved this problem by combining **Proof of Work ([PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/))** and the **Longest Chain Rule**.
 
 ### The Mathematics of Mining and Nonce
 
@@ -225,15 +225,15 @@ A promising approach to solving scalability issues is the **Layer 2** solution k
 
 In the Lightning Network, participants open a "Payment Channel" off the blockchain (off-chain). Within the channel, as long as both parties agree, funds can be exchanged instantly and almost for free an unlimited number of times without recording transactions on the blockchain. Transactions are recorded on the blockchain (Layer 1) only when the final balance is settled.
 
-### Comparison with Proof of Stake (PoS)
+### Comparison with Proof of Stake ([PoS](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/))
 
-Another major challenge with PoW is the massive power consumption from mining. As a countermeasure to this environmental issue, networks like Ethereum have transitioned to another consensus algorithm called **Proof of Stake (PoS)**.
+Another major challenge with [PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) is the massive power consumption from mining. As a countermeasure to this environmental issue, networks like Ethereum have transitioned to another consensus algorithm called **Proof of Stake (PoS)**.
 
 In PoS, the right to generate the next block (validators) is probabilistically assigned based on the amount of cryptocurrency held (stake) and the holding period, rather than computing power (hash rate). This reduces power consumption by over 99%, but there are also criticisms such as "isn't it a system where the rich get richer?" or "might it compromise true decentralization?". No matter how much it is criticized, Bitcoin continues to adhere to the philosophy of PoW: "securing physical security through the consumption of energy."
 
 ## 8. The Abyss of Cryptographic Theory: Mathematical Proofs and Protocol Robustness
 
-Behind SHA-256 and Elliptic Curve Cryptography (ECC) explained in the previous chapters, there are two paradigms: information-theoretic security and computational security. Modern cryptocurrencies, including Bitcoin, primarily rely on Computational Security.
+Behind SHA-256 and Elliptic Curve [Cryptography](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) (ECC) explained in the previous chapters, there are two paradigms: information-theoretic security and computational security. Modern cryptocurrencies, including Bitcoin, primarily rely on Computational Security.
 
 ### Computational Security and the Discrete Logarithm Problem
 
@@ -247,13 +247,13 @@ In Bitcoin's secp256k1, $p \approx 2^{256}$, so cracking it would require about 
 ### The Threat of Quantum Computers and Post-Quantum Cryptography
 
 However, there is one major concern regarding computational security. That is the rise of **Quantum Computers**.
-"[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)", published by Peter Shor in 1994, mathematically proved that if a quantum computer is used, problems such as the prime factorization problem (the foundation of RSA cryptography) and the discrete logarithm problem (the foundation of ECC) can be solved in polynomial time $\mathcal{O}(n^3)$.
+"[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)", published by Peter Shor in 1994, mathematically proved that if a quantum computer is used, problems such as the prime factorization problem (the foundation of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography) and the discrete logarithm problem (the foundation of ECC) can be solved in polynomial time $\mathcal{O}(n^3)$.
 
 If a practical, large-scale quantum computer with sufficient Qubits and a low error rate is completed, there will be a risk that private keys could be reverse-engineered from Bitcoin public keys.
 The Bitcoin network's defense measures against this are as follows:
 
-1. **Protection of Hash Functions**: A Bitcoin address is not the public key itself, but the result of applying the SHA-256 and RIPEMD-160 hash functions to the public key. Even using a quantum computer, reversing a hash function (even using Grover's algorithm, the computational complexity is $\mathcal{O}(\sqrt{N})$) remains difficult. Therefore, until a transaction is made and the public key is exposed to the network, the contents of the address can be considered safe even from quantum computers.
-2. **Transition to Post-Quantum Cryptography (PQC)**: There is discussion about hard forking the Bitcoin protocol before quantum computers become practical to transition to new signature algorithms that are difficult even for quantum computers to crack, such as lattice-based cryptography or multivariate polynomial cryptography, which are being selected by NIST (National Institute of Standards and Technology).
+1. **Protection of [Hash Function](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s**: A Bitcoin address is not the public key itself, but the result of applying the SHA-256 and RIPEMD-160 hash functions to the public key. Even using a quantum computer, reversing a hash function (even using Grover's algorithm, the computational complexity is $\mathcal{O}(\sqrt{N})$) remains difficult. Therefore, until a transaction is made and the public key is exposed to the network, the contents of the address can be considered safe even from quantum computers.
+2. **Transition to Post-Quantum [Cryptography](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) (PQC)**: There is discussion about hard forking the Bitcoin protocol before quantum computers become practical to transition to new signature algorithms that are difficult even for quantum computers to crack, such as lattice-based cryptography or multivariate polynomial cryptography, which are being selected by NIST (National Institute of Standards and Technology).
 
 ## 9. Network Topology and [P2P](https://kenji.blog/en/p/webrtc-realtime-communication-p2p/) Protocol Details
 
@@ -265,7 +265,7 @@ Computers participating in the network are called "Nodes". There are several typ
 
 - **Full Node**: A node that downloads and verifies all blockchain data (over hundreds of GB) from the Genesis Block to the latest block. They are the backbone of network security, independently checking the validity of transactions and looking for double spending.
 - **SPV Node (Simplified Payment Verification Node)**: A lightweight node that downloads only block headers rather than the entire blockchain. It is mainly used in smartphone wallets. It can verify whether its own transactions are included in a block (verifying the Merkle Path), but it does not have the verification capability of a full node.
-- **Mining Node**: A node that performs PoW calculations and generates new blocks. Today, huge "mining pools," which bundle specialized mining hardware called ASICs (Application Specific Integrated Circuits), take on this role.
+- **Mining Node**: A node that performs [PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) calculations and generates new blocks. Today, huge "mining pools," which bundle specialized mining hardware called ASICs (Application Specific Integrated Circuits), take on this role.
 
 ### Transaction Propagation Process (Gossip Protocol)
 
@@ -278,7 +278,7 @@ When a user (Alice) creates a transaction to send Bitcoin, how does that data sp
 
 As a result, valid transactions reach the Mempools of nodes worldwide within a few seconds. Miners preferentially select transactions with high fees from this Mempool and pack them into a new block.
 
-## 10. The Economics of Blockchain: Game Theory and Incentive Design
+## 10. The Economics of [Blockchain](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/): Game Theory and Incentive Design
 
 Satoshi Nakamoto's greatest achievement was not just solving a cryptographic puzzle, but constructing a perfect **Incentive Design** where "the selfish actions of humans and organizations ultimately enhance the security of the entire network".
 

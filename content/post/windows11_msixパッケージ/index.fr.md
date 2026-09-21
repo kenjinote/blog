@@ -131,7 +131,7 @@ Cela produit un fichier MSIX non signé, mais dans cet état, il ne peut pas êt
 
 Pour comprendre en profondeur pourquoi un package MSIX nécessite une signature, il faut comprendre les mécanismes cryptographiques sous-jacents de la signature numérique. Une signature numérique garantit que le package « a bien été créé par l'éditeur spécifié (Authentification) » et « n'a pas été altéré par un tiers depuis sa création jusqu'à présent (Intégrité) ».
 
-La signature d'un MSIX utilise généralement une combinaison de la cryptographie RSA et de l'algorithme SHA-256 (Secure Hash Algorithm 256-bit).
+La signature d'un MSIX utilise généralement une combinaison de la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et de l'algorithme SHA-256 (Secure Hash Algorithm 256-bit).
 
 ### Application de la fonction de hachage
 Tout d'abord, on considère l'ensemble du binaire du package MSIX (le contenu) comme un message $M$. L'outil de signature (SignTool.exe) applique la fonction de hachage cryptographique SHA-256 à ce message $M$ pour calculer une valeur de hachage de longueur fixe (256 bits), $H(M)$.
@@ -141,7 +141,7 @@ Ensuite, l'éditeur utilise sa propre « Clé Privée » (Private Key) $d$ pour 
 
 $$ \sigma \equiv (H(M))^d \pmod n $$
 
-Où $n$ est le module RSA (le produit de deux très grands nombres premiers). Le certificat (format X.509) contenant cette signature $\sigma$ et la « Clé Publique » (Public Key) $e$ de l'éditeur est intégré en tant que partie du package MSIX (`AppxSignature.p7x`).
+Où $n$ est le module RSA (le produit de deux très grands nombres premiers). Le certificat (format X.509) contenant cette signature $\sigma$ et la « Clé Publique » ([Public Key](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)) $e$ de l'éditeur est intégré en tant que partie du package MSIX (`AppxSignature.p7x`).
 
 ### Vérification de la signature (Windows OS)
 Lorsqu'un utilisateur tente d'installer le MSIX, le système d'exploitation Windows extrait la clé publique $e$ du certificat dans le package et effectue le calcul suivant pour restaurer la valeur de hachage $H'(M)$.

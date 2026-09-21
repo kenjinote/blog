@@ -350,7 +350,7 @@ Saat merancang modul di Terraform, menyiapkan `az_count` sebagai variabel input 
 
 ## Anti-pola
 1. **Bercampur dengan Perubahan Manual** : Memodifikasi sumber daya yang dikelola oleh Terraform secara langsung melalui GUI. Ini menyebabkan ketidakkonsistenan *State*.
-2. **Hard-coding Kredensial** : Menulis *access key* dan *secret key* secara langsung di dalam kode. Harap gunakan variabel lingkungan atau peran IAM (integrasi OIDC, dll.).
+2. **Hard-coding Kredensial** : Menulis *access key* dan *secret key* secara langsung di dalam kode. Harap gunakan variabel lingkungan atau peran IAM (integrasi [OIDC](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/), dll.).
 3. **Modul yang Terlalu Kompleks** : Jika Anda mencoba memberikan setiap fitur kepada modul, jumlah variabel akan mencapai puluhan, dan keterbacaan akan menurun secara signifikan. Ingatlah "satu modul memiliki satu tanggung jawab (*Single Responsibility*)".
 
 ---

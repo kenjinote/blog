@@ -12,7 +12,7 @@ description: 'Menjelaskan mekanisme ''Saringan Medan Angka Umum (GNFS)'', matema
 # Apa Itu Matematika Terkuat Umat Manusia "General Number Field Sieve (GNFS)" yang Membobol Kriptografi Internet?
 
 Internet yang kita gunakan setiap hari. Semua komunikasi, seperti pesan LINE, YouTube, dan belanja di Amazon, dilindungi oleh "kriptografi".
-Saat ini, kriptografi yang paling banyak digunakan di dunia adalah "Sandi RSA".
+Saat ini, kriptografi yang paling banyak digunakan di dunia adalah "Sandi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)".
 
 Inti dari pertahanan Sandi RSA sangatlah sederhana. Ia memanfaatkan sifat matematika bahwa **"faktorisasi prima dari angka yang sangat besar tidak dapat dipecahkan bahkan oleh komputer sekalipun"** .
 Sebagai contoh, untuk "15", kita langsung tahu bahwa itu adalah "3 × 5", tetapi saat angkanya menjadi "270 digit", menggabungkan seluruh superkomputer di dunia pun akan memakan waktu ratusan juta tahun untuk memecahkannya.
@@ -133,7 +133,7 @@ Setelah kombinasi ditemukan,
 Terakhir, substitusikan $x$ dalam $Y(x)$ dari dunia aljabar dengan $m$, memindahkan dan menggabungkannya ke dunia nyata.
 Lalu, seperti keajaiban matematika, kondisi **"sisa pembagian $X^2$ dan $Y^2$ sama"** akan terbentuk dengan sempurna!
 
-Setelah itu, seperti di Bab 1, dengan menghitung faktor persekutuan terbesar dari $X - Y$ dan $N$, sandi RSA yang tak tertembus akan hancur lebur, dan bilangan prima rahasia akan terungkap.
+Setelah itu, seperti di Bab 1, dengan menghitung faktor persekutuan terbesar dari $X - Y$ dan $N$, sandi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) yang tak tertembus akan hancur lebur, dan bilangan prima rahasia akan terungkap.
 
 ---
 

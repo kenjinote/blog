@@ -118,7 +118,7 @@ $$\prod_{S} (a - b\alpha) = u \cdot \gamma^2$$
 ## 第五阶段：阿德曼的魔法“二次剩余特征（Quadratic Characters）”
 
 理想类群的障碍与单位群的障碍。如何跨越这两个障碍呢？
-这时，密码学家伦纳德·阿德曼（RSA中的"A"）等人引入的天才手法 **“二次剩余特征（Quadratic Characters）”** 发挥了作用。
+这时，密码学家伦纳德·阿德曼（[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)中的"A"）等人引入的天才手法 **“二次剩余特征（Quadratic Characters）”** 发挥了作用。
 
 为了判断“某个元素在代数数域中是否完全是平方？”，我们使用了勒让德符号（二次剩余）的代数数域版本。
 在之前的巨大矩阵（为了让素理想个数变为偶数而拼凑的矩阵）中， **悄悄增加几十个额外的条件（列），要求“对于几个特定的素理想 $\mathfrak{q}$，其二次剩余特征也都必须为 $1$（偶数）”** 。
@@ -157,7 +157,7 @@ $$X = V \pmod N$$
 接下来，只需祈祷这个 $X$ 和 $Y$ 不是平凡解（$X \equiv \pm Y$），然后计算：
 **$\gcd(X - Y, N)$**
 
-如果是非平凡解，[欧几里得](https://kenji.blog/zh-cn/p/euclid/)辗转相除法将在 0.001 秒内跑完，RSA密码的心脏——秘密质数 $p$ 和 $q$ ——将被打印在输出屏幕上。
+如果是非平凡解，[欧几里得](https://kenji.blog/zh-cn/p/euclid/)辗转相除法将在 0.001 秒内跑完，[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码的心脏——秘密质数 $p$ 和 $q$ ——将被打印在输出屏幕上。
 
 ---
 

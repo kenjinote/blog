@@ -39,7 +39,7 @@ tags: ["比特币", "密码学", "区块链"]
 
 2008 年，发生了由雷曼兄弟破产引发的全球性金融危机。就在同年 10 月 31 日，当人们对现有金融系统的不信任感达到顶峰时，一个（或一群）化名为“中本聪（Satoshi Nakamoto）”的匿名人士向密码学邮件列表提交了一篇论文。
 
-这篇论文的标题是《Bitcoin: A Peer-to-Peer Electronic Cash System》（比特币：一种点对点的电子现金系统）。这篇仅有 9 页的论文展示了如何使用 **工作量证明（Proof of Work: PoW）** 机制，以完全去中心化的方式解决以往电子货币尝试中存在的双重支付问题。
+这篇论文的标题是《Bitcoin: A Peer-to-Peer Electronic Cash System》（比特币：一种点对点的电子现金系统）。这篇仅有 9 页的论文展示了如何使用 **工作量证明（Proof of Work: [PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)）** 机制，以完全去中心化的方式解决以往电子货币尝试中存在的双重支付问题。
 
 ### 创世区块（Genesis Block）
 
@@ -52,7 +52,7 @@ tags: ["比特币", "密码学", "区块链"]
 
 ## 3. 区块链的架构
 
-支撑比特币的核心技术是“区块链（Blockchain）”。区块链是分布式账本技术（Distributed Ledger Technology: DLT）的一种形式，数据被打包成称为“区块”的单位，它们像链条一样在密码学上连接在一起。
+支撑比特币的核心技术是“区块链（[Blockchain](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)）”。区块链是分布式账本技术（[Distributed Ledger](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT）的一种形式，数据被打包成称为“区块”的单位，它们像链条一样在密码学上连接在一起。
 
 ```mermaid
 flowchart TD
@@ -105,17 +105,17 @@ flowchart TD
 
 在比特币中，SHA-256 在计算区块哈希以及从公钥生成地址的过程中被应用两次（这被称为 `SHA256(SHA256(x))` 或 Hash256）。
 
-### 公钥密码学（Public Key Cryptography）与数字签名
+### 公钥密码学（[Public Key](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) [Cryptography](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)）与数字签名
 
 加密资产的所有权由私钥（Private Key）和公钥（Public Key）对来证明。
 - **私钥** $k$：随机生成的 256 位整数。绝对不能让别人知道。
 - **公钥** $K$：使用单向函数从私钥计算得出的密钥。在网络上公开。
 
-当爱丽丝向鲍勃发送比特币时，爱丽丝使用她自己的私钥对交易数据创建 **数字签名（Digital Signature）** 。网络参与者可以使用爱丽丝的公钥来验证该签名的合法性（是否真的是爱丽丝用私钥创建的）。
+当爱丽丝向鲍勃发送比特币时，爱丽丝使用她自己的私钥对交易数据创建 **数字签名（[Digital Signature](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)）** 。网络参与者可以使用爱丽丝的公钥来验证该签名的合法性（是否真的是爱丽丝用私钥创建的）。
 
 ### 椭圆曲线密码学（Elliptic Curve Cryptography: ECC）与 secp256k1
 
-比特币在公钥生成和数字签名中采用了 **椭圆曲线密码学（ECC）** ，而不是 RSA 密码。ECC 的优势在于它能以比 RSA 短得多的密钥长度提供同等水平的安全性。
+比特币在公钥生成和数字签名中采用了 **椭圆曲线密码学（ECC）** ，而不是 [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) 密码。ECC 的优势在于它能以比 RSA 短得多的密钥长度提供同等水平的安全性。
 
 比特币中使用的特定椭圆曲线参数被称为 **secp256k1** 。这条曲线定义在有限域 $\mathbb{F}_p$ 上，由以下方程表示：
 
@@ -153,7 +153,7 @@ $$
 3. 计算点 $(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$。
 4. 如果 $r \equiv x_2 \pmod{n}$，则认为签名是有效的。
 
-## 5. 共识算法与工作量证明（PoW）
+## 5. 共识算法与工作量证明（[PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)）
 
 在去中心化网络中，让所有人都对相同的账本状态达成一致的机制就是共识算法。
 
@@ -161,7 +161,7 @@ $$
 
 分布式计算中的一个经典问题是“拜占庭将军问题”。多位将军包围了一座敌方城市，他们必须在进攻或撤退上达成一致意见，但将军中可能有叛徒发送虚假信息。在这个问题中，我们要探讨在这样的情况下，忠诚的将军们如何达成正确的共识。
 
-比特币通过将 **工作量证明（PoW）** 与 **最长链规则（Longest Chain Rule）** 相结合，实质上解决了这个问题。
+比特币通过将 **工作量证明（[PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)）** 与 **最长链规则（Longest Chain Rule）** 相结合，实质上解决了这个问题。
 
 ### 挖矿的数学机制与随机数（Nonce）
 
@@ -226,9 +226,9 @@ $$
 
 在闪电网络中，参与者之间在区块链之外（链下）建立“支付通道（Payment Channel）”。在通道内，只要双方同意，就可以瞬间且几乎免费地进行无数次资金转移，而无需将交易记录在区块链上。只有在最终结算余额时，才会将交易记录到区块链（第一层）上。
 
-### 与权益证明（PoS）的比较
+### 与权益证明（[PoS](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)）的比较
 
-PoW 的另一个巨大挑战是挖矿带来的庞大电力消耗。为了应对这一环境问题，以太坊等项目已经转向了名为 **权益证明（Proof of Stake: PoS）** 的另一种共识算法。
+[PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/) 的另一个巨大挑战是挖矿带来的庞大电力消耗。为了应对这一环境问题，以太坊等项目已经转向了名为 **权益证明（Proof of Stake: PoS）** 的另一种共识算法。
 
 在 PoS 中，决定下一个区块生成权利（验证者）的并非计算能力（哈希率），而是根据所持有的加密资产数量（权益）及其持有时长来概率性地分配。虽然这使电力消耗减少了 99% 以上，但也有批评认为它是一个“富人愈富的系统”，或者“可能会损害完全的去中心化”。无论受到怎样的批评，比特币始终坚持 PoW 的哲学，即“通过消耗能源来提供物理安全性”。
 
@@ -248,13 +248,13 @@ PoW 的另一个巨大挑战是挖矿带来的庞大电力消耗。为了应对�
 ### 量子计算机的威胁与抗量子密码学
 
 然而，计算复杂度安全性有一个重大隐患，那就是 **量子计算机（Quantum Computer）** 的崛起。
-1994 年，彼得·秀尔（Peter Shor）发表了“秀尔算法（[Shor's Algorithm](https://kenji.blog/zh-cn/p/quantum-computing-shors-algorithm/)）”，在数学上证明了如果使用量子计算机，可以在多项式时间 $\mathcal{O}(n^3)$ 内解决质因数分解问题（RSA 密码的基础）和离散对数问题（ECC 的基础）。
+1994 年，彼得·秀尔（Peter Shor）发表了“秀尔算法（[Shor's Algorithm](https://kenji.blog/zh-cn/p/quantum-computing-shors-algorithm/)）”，在数学上证明了如果使用量子计算机，可以在多项式时间 $\mathcal{O}(n^3)$ 内解决质因数分解问题（[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) 密码的基础）和离散对数问题（ECC 的基础）。
 
 如果研制出具有足够量子比特（Qubits）和低错误率的实用大规模量子计算机，比特币的私钥就有从公钥被逆向推导出的风险。
 针对此，比特币网络的防御策略如下：
 
 1. **哈希函数的保护** ：比特币地址并非公钥本身，而是对公钥应用了 SHA-256 和 RIPEMD-160 哈希函数后生成的值。即使使用量子计算机，逆向推导哈希函数（即使使用格罗弗算法，计算复杂度也是 $\mathcal{O}(\sqrt{N})$）仍然很困难。因此，在进行交易并向网络暴露公钥之前，地址的内容对抗量子计算机可以说是安全的。
-2. **向抗量子密码学（Post-Quantum Cryptography: PQC）过渡** ：目前正在讨论，在量子计算机投入实用之前，通过硬分叉比特币协议，将其过渡到即使是量子计算机也难以破解的新签名算法，例如 NIST（美国国家标准与技术研究院）正在评选的基于格的密码学（Lattice-based cryptography）或多变量多项式密码学（Multivariate polynomial cryptography）。
+2. **向抗量子密码学（Post-Quantum [Cryptography](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/): PQC）过渡** ：目前正在讨论，在量子计算机投入实用之前，通过硬分叉比特币协议，将其过渡到即使是量子计算机也难以破解的新签名算法，例如 NIST（美国国家标准与技术研究院）正在评选的基于格的密码学（Lattice-based cryptography）或多变量多项式密码学（Multivariate polynomial cryptography）。
 
 ## 9. 网络拓扑与 [P2P](https://kenji.blog/zh-cn/p/webrtc-realtime-communication-p2p/) 协议详解
 
@@ -266,7 +266,7 @@ PoW 的另一个巨大挑战是挖矿带来的庞大电力消耗。为了应对�
 
 - **全节点（Full Node）** ：从创世区块到最新区块，下载并验证所有区块链数据（数百 GB 以上）的节点。因为它们独立检查交易的有效性和是否存在双重支付，全节点承担着网络安全的基础。
 - **SPV 节点（Simplified Payment Verification Node）** ：不下载整个区块链，而只下载区块头的轻量级节点。主要用于智能手机上的钱包等。虽然它可以确认自己的交易是否包含在区块中（验证默克尔路径），但没有全节点那样的验证能力。
-- **挖矿节点（Mining Node）** ：进行 PoW 计算并生成新区块的节点。目前，将被称为 ASIC（专用集成电路）的挖矿专用硬件组合起来的巨大“矿池”承担着这一角色。
+- **挖矿节点（Mining Node）** ：进行 [PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/) 计算并生成新区块的节点。目前，将被称为 ASIC（专用集成电路）的挖矿专用硬件组合起来的巨大“矿池”承担着这一角色。
 
 ### 交易传播过程（Gossip Protocol）
 

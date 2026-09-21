@@ -196,6 +196,6 @@ Se estiver interessado, na próxima vez:
 
 * **Anexo de arquivos**
 * **UI com botões**
-* **Operações flexíveis de API com Slack App + OAuth2**
+* **Operações flexíveis de API com Slack App + [OAuth](https://kenji.blog/pt/p/oauth2-oidc-authentication-authorization-difference/)2**
 
 Podemos apresentar uma integração ainda mais avançada com o Slack!

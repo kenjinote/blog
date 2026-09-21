@@ -96,12 +96,12 @@ Di dunia matematika, masalah selesai ketika sesuatu terbukti "eksistensinya", te
 
 Di sini, mari kita lihat proses menerjemahkan rumus ke dalam kode melalui dua contoh konkret.
 
-### 4.1 Contoh 1: Matematika Kriptografi RSA dan Implementasi Python
+### 4.1 Contoh 1: Matematika Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan Implementasi Python
 
 Kriptografi RSA, yang merupakan representasi dari kriptografi kunci publik, adalah aplikasi yang indah dari teori bilangan dasar (Aritmatika modular, Teorema Euler, [Algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an](https://kenji.blog/p/euclidean-algorithm/) Lanjutan).
 
 #### Latar Belakang Matematika
-Proses pembuatan kunci, enkripsi, dan dekripsi kriptografi RSA direpresentasikan oleh rumus berikut.
+Proses pembuatan kunci, enkripsi, dan dekripsi kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) direpresentasikan oleh rumus berikut.
 
 1. **Pembuatan Kunci**:
    Pilih bilangan prima yang sangat besar $p, q$, lalu biarkan $n = pq$.

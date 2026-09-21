@@ -10,9 +10,9 @@ tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'شرح تفصيلي ومصور لآلية عمل تدفق منح رمز التفويض (Authorization Code Grant) في OAuth 2.0 من خلال تنفيذ تكامل Slack App. هذا دليل شامل يتضمن أمثلة برمجية عملية باستخدام Node.js وأفضل الممارسات الأمنية.'
 ---
 
-# مقدمة: لماذا نتعلم OAuth 2.0؟
+# مقدمة: لماذا نتعلم [[OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/)؟
 
-في تطبيقات الويب الحديثة، أصبح من المعتاد جداً أن تعمل خدمات متعددة معاً. على سبيل المثال، ميزات مثل "تسجيل الدخول باستخدام حساب Google" أو "إرسال إشعار إلى Slack عند تحديث مهمة في Trello" أو "إضافة رابط اجتماع Zoom تلقائياً إلى تقويم Google". الإطار الذي يعمل خلف الكواليس لتنفيذ كل هذا هو إطار التفويض **OAuth 2.0 (Open Authorization 2.0)**.
+في تطبيقات الويب الحديثة، أصبح من المعتاد جداً أن تعمل خدمات متعددة معاً. على سبيل المثال، ميزات مثل "تسجيل الدخول باستخدام حساب Google" أو "إرسال إشعار إلى Slack عند تحديث مهمة في Trello" أو "إضافة رابط اجتماع Zoom تلقائياً إلى تقويم Google". الإطار الذي يعمل خلف الكواليس لتنفيذ كل هذا هو إطار التفويض **OAuth 2.0 (Open [Authorization](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) 2.0)**.
 
 في الماضي، عند تبادل البيانات بين الخدمات المختلفة، تم استخدام طرق خطيرة للغاية مثل "المصادقة الأساسية" أو "مشاركة كلمة المرور"، حيث يقوم المستخدم بإعطاء معرّفه وكلمة المرور الخاصة به مباشرة إلى الخدمة المتكاملة. ومع ذلك، تؤدي هذه الطريقة إلى منح الخدمة الأخرى صلاحيات المستخدم الكاملة، مما يشكل خطراً أمنياً فادحاً.
 
@@ -22,7 +22,7 @@ description: 'شرح تفصيلي ومصور لآلية عمل تدفق منح �
 
 ---
 
-# 1. المفاهيم الأساسية لـ OAuth 2.0: الأدوار الأربعة (Roles)
+# 1. المفاهيم الأساسية لـ [[OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/): الأدوار الأربعة (Roles)
 
 الخطوة الأولى لفهم OAuth 2.0 هي الفهم الدقيق للأشخاص (الأدوار) المعنيين. في RFC 6749، يتم تعريف الأدوار الأربعة التالية:
 
@@ -38,19 +38,19 @@ graph TD
 1. **مالك المورد (Resource Owner)**
    - الكيان الذي يمتلك صلاحية منح حق الوصول إلى المورد. عادةً ما يشير إلى "المستخدم النهائي (الإنسان)". في هذا المثال، هو "أنت نفسك، كعضو في مساحة عمل Slack ولديك صلاحية نشر رسائل في القنوات".
 2. **العميل (Client)**
-   - التطبيق الذي يحاول الوصول إلى خادم الموارد بعد الحصول على إذن من مالك المورد. في هذا المثال، هو "تطبيق Node.js الذي تقوم بتطويره (Slack App)". على الرغم من تسميته "العميل"، إلا أنه في سياق OAuth، يسمى "العميل" حتى لو كان تطبيق ويب يعمل على جانب الخادم.
-3. **خادم التفويض (Authorization Server)**
+   - التطبيق الذي يحاول الوصول إلى خادم الموارد بعد الحصول على إذن من مالك المورد. في هذا المثال، هو "تطبيق Node.js الذي تقوم بتطويره (Slack App)". على الرغم من تسميته "العميل"، إلا أنه في سياق [OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/)، يسمى "العميل" حتى لو كان تطبيق ويب يعمل على جانب الخادم.
+3. **خادم التفويض ([Authorization](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) Server)**
    - الخادم الذي يقوم بمصادقة مالك المورد، ويحصل على التفويض منه، ويصدر رمز الوصول للعميل. في هذا المثال، هي بنية مصادقة Slack التي توفر `slack.com/oauth/v2/authorize`.
 4. **خادم الموارد (Resource Server)**
    - الخادم الذي يستضيف الموارد المحمية، ويستقبل طلبات الوصول إلى الموارد باستخدام رمز الوصول، ويستجيب لها. في هذا المثال، هي نقاط نهاية `slack.com/api/` التي توفر واجهات برمجة التطبيقات مثل `chat.postMessage`.
 
-بكلمات بسيطة، تدفق OAuth هو **"سلسلة من الخطوات حيث يحصل العميل على موافقة مالك المورد، ويستلم رمز وصول من خادم التفويض، ويستخدمه لاسترداد البيانات والتعامل معها من خادم الموارد"**.
+بكلمات بسيطة، تدفق [OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) هو **"سلسلة من الخطوات حيث يحصل العميل على موافقة مالك المورد، ويستلم رمز وصول من خادم التفويض، ويستخدمه لاسترداد البيانات والتعامل معها من خادم الموارد"**.
 
 ---
 
-# 2. التشريح الكامل لمنح رمز التفويض (Authorization Code Grant)
+# 2. التشريح الكامل لمنح رمز التفويض ([Authorization](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) Code Grant)
 
-هناك عدة تدفقات (أنواع المنح) في OAuth 2.0، ولكن التدفق الأكثر توصيةً واستخداماً في البيئات التي يمكن فيها الاحتفاظ بالمفتاح السري (Client Secret) بأمان على جانب الخادم (مثل تطبيقات الويب) هو **منح رمز التفويض (Authorization Code Grant)**.
+هناك عدة تدفقات (أنواع المنح) في [OAuth 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/)، ولكن التدفق الأكثر توصيةً واستخداماً في البيئات التي يمكن فيها الاحتفاظ بالمفتاح السري (Client Secret) بأمان على جانب الخادم (مثل تطبيقات الويب) هو **منح رمز التفويض (Authorization Code Grant)**.
 
 الميزة الرئيسية لمنح رمز التفويض هي الفصل الواضح بين **القناة الأمامية (Front Channel - الاتصال عبر المتصفح)** و ** القناة الخلفية (Back Channel - الاتصال المباشر بين الخوادم)**. في القناة الأمامية، يتم تمرير "رمز تفويض (Authorization Code)" مؤقت فقط، بينما يتم الحصول على "رمز الوصول (Access Token)" النهائي في القناة الخلفية. هذا يقلل بشكل كبير من خطر تسريب الرمز عبر سجل المتصفح أو المُحيل (Referer).
 
@@ -99,7 +99,7 @@ sequenceDiagram
 3. في شاشة "Basic Information" التي تظهر بعد الإنشاء، احصل على بيانات الاعتماد (Credentials) الهامة التالية.
    - **Client ID**: المعرّف الذي يميز تطبيقك بشكل فريد وعلني. لا توجد مشكلة في تضمينه في الطلبات التي تمر عبر المتصفح (القناة الأمامية).
    - **Client Secret**: سلسلة سرية يعرفها تطبيقك فقط. ** يجب ألا يتم كشفها أبداً لجانب المتصفح، ويجب عدم رفعها (commit) إلى GitHub وغيرها.**
-4. انتقل إلى شاشة "OAuth & Permissions" وسجل عنوان URL لرد النداء (Callback) في "Redirect URLs". بافتراض التطوير المحلي (Local Development) هذه المرة، سنقوم بإعداد ما يلي:
+4. انتقل إلى شاشة "[OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) & Permissions" وسجل عنوان URL لرد النداء (Callback) في "Redirect URLs". بافتراض التطوير المحلي (Local Development) هذه المرة، سنقوم بإعداد ما يلي:
    - `http://localhost:3000/slack/oauth_redirect`
 
 الآن اكتملت التحضيرات. لنبدأ في تنفيذ الخادم.
@@ -191,7 +191,7 @@ Location: https://slack.com/oauth/v2/authorize?client_id=123.456&scope=chat%3Awr
 Set-Cookie: connect.sid=...; Path=/; HttpOnly
 ```
 
-سينتقل متصفح المستخدم على الفور إلى `Location` المحدد، وستظهر شاشة Slack (Consent Screen)، وستظهر الشاشة المألوفة "My First OAuth App يطلب الوصول إلى مساحة العمل الخاصة بك".
+سينتقل متصفح المستخدم على الفور إلى `Location` المحدد، وستظهر شاشة Slack (Consent Screen)، وستظهر الشاشة المألوفة "My First [OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) App يطلب الوصول إلى مساحة العمل الخاصة بك".
 
 ---
 
@@ -291,7 +291,7 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 # 6. نطاقات الرموز ومبدأ الامتياز الأقل (Principle of Least Privilege)
 
-أحد أهم المفاهيم في OAuth 2.0 هو "النطاق (Scope)". يشير النطاق إلى مدى الصلاحيات المرتبطة برمز الوصول.
+أحد أهم المفاهيم في [[OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) هو "النطاق (Scope)". يشير النطاق إلى مدى الصلاحيات المرتبطة برمز الوصول.
 
 في Slack، يتم تصنيف الصلاحيات بدقة بالغة، وتنقسم بشكل عام إلى **نطاقات رموز البوت (Bot Token Scopes)** و ** نطاقات رموز المستخدمين (User Token Scopes)**.
 - `chat:write` (Bot): صلاحية إرسال رسالة إلى القناة كالتطبيق (البوت) نفسه.
@@ -305,9 +305,9 @@ app.get('/slack/oauth_redirect', async (req, res) => {
 
 # 7. أمان متقدم أكثر: PKCE (مفتاح الإثبات لتبادل الرمز Proof Key for Code Exchange)
 
-مؤخراً، تم توحيد **PKCE (مفتاح الإثبات لتبادل الرمز، RFC 7636، يُنطق "بيكسي")** واستخدامه على نطاق واسع كآلية لتعزيز أمان OAuth 2.0.
+مؤخراً، تم توحيد **PKCE (مفتاح الإثبات لتبادل الرمز، RFC 7636، يُنطق "بيكسي")** واستخدامه على نطاق واسع كآلية لتعزيز أمان [[OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/).
 
-في الأصل، تم تصميم PKCE لـ "العملاء العامين (Public Clients)" مثل التطبيقات الأصلية (iOS/Android) أو تطبيقات الصفحة الواحدة (SPA) التي لا يمكنها الاحتفاظ بـ `client_secret` بأمان. ومع ذلك، يوصى الآن بشدة باستخدام PKCE حتى مع "العملاء السريين (Confidential Clients)" على جانب الخادم وفقاً لأفضل الممارسات الأمنية (مسودة OAuth 2.1).
+في الأصل، تم تصميم PKCE لـ "العملاء العامين (Public Clients)" مثل التطبيقات الأصلية (iOS/Android) أو تطبيقات الصفحة الواحدة (SPA) التي لا يمكنها الاحتفاظ بـ `client_secret` بأمان. ومع ذلك، يوصى الآن بشدة باستخدام PKCE حتى مع "العملاء السريين (Confidential Clients)" على جانب الخادم وفقاً لأفضل الممارسات الأمنية (مسودة [OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) 2.1).
 
 ## آلية عمل PKCE والخلفية الرياضية
 
@@ -357,20 +357,20 @@ sequenceDiagram
 تأكد دائماً من تشفيره باستخدام تشفير قوي بالمفتاح المتماثل مثل **AES-256-GCM** في طبقة التطبيق قبل حفظه في قاعدة البيانات (DB). تتم إدارة المفتاح الرئيسي للتشفير/فك التشفير بصرامة باستخدام خدمات إدارة المفاتيح الآمنة مثل AWS KMS (Key Management [Service](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/)) أو GCP Cloud KMS.
 
 ## 2. تدوير الرموز (Token Rotation)
-هناك مخاطرة في الاستمرار في استخدام رموز صالحة لفترة طويلة. في أحدث تطبيقات OAuth، يوصى باعتماد آلية لإنشاء رمز وصول جديد كل بضع ساعات باستخدام "رمز التجديد (Refresh Token)" وهو ما يسمى بـ (Token Rotation). في Slack API أيضاً، يمكنك تفعيل تدوير الرموز (Token Rotation) في الإعدادات الاختيارية.
+هناك مخاطرة في الاستمرار في استخدام رموز صالحة لفترة طويلة. في أحدث تطبيقات [OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/)، يوصى باعتماد آلية لإنشاء رمز وصول جديد كل بضع ساعات باستخدام "رمز التجديد (Refresh Token)" وهو ما يسمى بـ (Token Rotation). في Slack API أيضاً، يمكنك تفعيل تدوير الرموز (Token Rotation) في الإعدادات الاختيارية.
 
 ---
 
 # الخلاصة
 
-في هذه المقالة، شرحنا بالتفصيل تدفق منح رمز التفويض لـ OAuth 2.0، مع أمثلة برمجية محددة لتنفيذ تكامل Slack App باستخدام Node.js.
+في هذه المقالة، شرحنا بالتفصيل تدفق منح رمز التفويض لـ [OAuth 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/)، مع أمثلة برمجية محددة لتنفيذ تكامل Slack App باستخدام Node.js.
 
 1. من خلال الوعي بـ **الأدوار الأربعة (RO، Client، AS، RS)** ، تصبح بنية النظام بأكمله واضحة.
 2. **منح رمز التفويض** يضمن الأمان من خلال الاستخدام الذكي لمسارات الاتصال (القناة الأمامية/الخلفية) بين المتصفح والخادم.
 3. إن فهم الآليات التشفيرية الأساسية، مثل الدفاع ضد [CSRF](https://kenji.blog/ar/p/web-security-basics-cors-csp/) بواسطة **المعلمة `state`** ومنع هجمات اعتراض رمز التفويض بواسطة **PKCE** ، هو أقصر طريق للتنفيذ الآمن.
 4. يعتبر تصميم النطاق بناءً على **مبدأ الامتياز الأقل** والتشفير عند الحفظ في قاعدة البيانات عناصر لا غنى عنها مطلقاً في العمليات التشغيلية.
 
-عالم OAuth 2.0 عميق جداً، وهناك مواصفات ضخمة في RFC وحده، ولكن من خلال التعلم العملي باستهداف منصة فعلية (Slack) كما فعلنا، ستتمكن من إدراك فلسفة التصميم المتطورة وآليات الأمان القوية الخاصة به. نأمل أن تكون المعرفة الواردة في هذه المقالة مفيدة في تطوير تطبيقاتك المستقبلية وتنفيذ تكامل واجهات برمجة التطبيقات (API).
+عالم [[OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) عميق جداً، وهناك مواصفات ضخمة في RFC وحده، ولكن من خلال التعلم العملي باستهداف منصة فعلية (Slack) كما فعلنا، ستتمكن من إدراك فلسفة التصميم المتطورة وآليات الأمان القوية الخاصة به. نأمل أن تكون المعرفة الواردة في هذه المقالة مفيدة في تطوير تطبيقاتك المستقبلية وتنفيذ تكامل واجهات برمجة التطبيقات (API).
 
 
 

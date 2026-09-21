@@ -11,11 +11,11 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 ## 1. はじめに：現代暗号を支える数学の神秘
 
-現代のデジタル社会、とりわけインターネットを介した通信において、「暗号化」は不可欠な基盤技術となっています。私たちがウェブブラウザでHTTPS経由で安全にウェブサイトを閲覧し、オンラインバンキングで金融取引を行い、メッセージングアプリでプライベートなやり取りができるのは、高度な数学的理論に裏打ちされた暗号プロトコルが背後で機能しているからです。その中でも特に重要な役割を担っているのが「公開鍵暗号方式」であり、その代表格が **RSA暗号** です。
+現代のデジタル社会、とりわけインターネットを介した通信において、「[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)」は不可欠な基盤技術となっています。私たちがウェブブラウザでHTTPS経由で安全にウェブサイトを閲覧し、オンラインバンキングで金融取引を行い、メッセージングアプリでプライベートなやり取りができるのは、高度な数学的理論に裏打ちされた暗号プロトコルが背後で機能しているからです。その中でも特に重要な役割を担っているのが「[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号方式」であり、その代表格が **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号** です。
 
 RSA暗号をはじめとする多くの暗号アルゴリズムの安全性や正当性は、17世紀のフランスの数学者[ピエール・ド・フェルマー](https://kenji.blog/p/fermat/)（[Pierre de Fermat](https://kenji.blog/p/fermat/)）が発見した非常に美しく、かつ強力な定理に大きく依存しています。それが **[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/p/fermats-little-theorem/)）** です。さらに、これを一般化したレオンハルト・[オイラー](https://kenji.blog/p/euler/)（[Leonhard Euler](https://kenji.blog/p/euler/)）の定理も、暗号理論において決定的な役割を果たしています。
 
-本記事では、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)という純粋数学の発見が、いかにして現代の実用的な暗号技術、特に「素数判定」や「RSA暗号」へと応用されているのかを、基礎から徹底的に解説します。数学的な証明、暗号化・復号のメカニズム、そして C++ と Python を用いた具体的なアルゴリズムの実装までを網羅する、非常に詳細な技術ガイドとなります。
+本記事では、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)という純粋数学の発見が、いかにして現代の実用的な暗号技術、特に「素数判定」や「[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号」へと応用されているのかを、基礎から徹底的に解説します。数学的な証明、[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)・復号のメカニズム、そして C++ と Python を用いた具体的なアルゴリズムの実装までを網羅する、非常に詳細な技術ガイドとなります。
 
 ---
 
@@ -42,7 +42,7 @@ $$
 3. **乗法**: $a \equiv b \pmod n$ かつ $c \equiv d \pmod n$ ならば、$a \times c \equiv b \times d \pmod n$
 4. **べき乗**: $a \equiv b \pmod n$ ならば、任意の自然数 $k$ について $a^k \equiv b^k \pmod n$
 
-ただし、 **除法（割り算）** については注意が必要です。一般に、$a \times c \equiv b \times c \pmod n$ だからといって、両辺を $c$ で割って $a \equiv b \pmod n$ とすることはできません。これが成り立つのは、$c$ と $n$ が互いに素（最大公約数が 1）である場合に限られます。この「モジュラ逆元」の概念は、後述するRSA暗号の鍵生成において極めて重要になります。
+ただし、 **除法（割り算）** については注意が必要です。一般に、$a \times c \equiv b \times c \pmod n$ だからといって、両辺を $c$ で割って $a \equiv b \pmod n$ とすることはできません。これが成り立つのは、$c$ と $n$ が互いに素（最大公約数が 1）である場合に限られます。この「モジュラ逆元」の概念は、後述する[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の鍵生成において極めて重要になります。
 
 ---
 
@@ -112,7 +112,7 @@ $$
 
 ## 4. [オイラー](https://kenji.blog/p/euler/)のトーティエント関数と[オイラー](https://kenji.blog/p/euler/)の定理
 
-[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)は「素数 $p$」に関する定理ですが、これを「任意の正の整数 $n$」に一般化したのが、レオンハルト・[オイラー](https://kenji.blog/p/euler/)です。RSA暗号を理解するには、この拡張が不可欠です。
+[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)は「素数 $p$」に関する定理ですが、これを「任意の正の整数 $n$」に一般化したのが、レオンハルト・[オイラー](https://kenji.blog/p/euler/)です。[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号を理解するには、この拡張が不可欠です。
 
 ### 4.1 [オイラー](https://kenji.blog/p/euler/)のトーティエント関数 $\phi(n)$
 
@@ -122,7 +122,7 @@ $$
 - 2つの異なる素数 $p, q$ について、その積 $n = p \times q$ の場合、$\phi(n)$ は非常に簡単な式で求まります。
   $$ \phi(p \times q) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
 
-この性質が、RSA暗号の鍵生成における根幹のロジックとなります。
+この性質が、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の鍵生成における根幹のロジックとなります。
 
 ### 4.2 [オイラー](https://kenji.blog/p/euler/)の定理
 
@@ -138,7 +138,7 @@ $$
 
 ## 5. 巨大な素数を見つける：[フェルマー](https://kenji.blog/p/fermat/)の素数判定法
 
-暗号技術（RSA暗号やDiffie-Hellman鍵交換など）においては、数百桁にも及ぶ「巨大な素数」を高速に見つけ出す必要があります。しかし、巨大な数 $N$ が素数かどうかを判定するために、$2$ から $\sqrt{N}$ までのすべての数で割り切れるか試す「試し割り法」では、宇宙の寿命ほどの時間がかかってしまいます。
+暗号技術（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号やDiffie-Hellman鍵交換など）においては、数百桁にも及ぶ「巨大な素数」を高速に見つけ出す必要があります。しかし、巨大な数 $N$ が素数かどうかを判定するために、$2$ から $\sqrt{N}$ までのすべての数で割り切れるか試す「試し割り法」では、宇宙の寿命ほどの時間がかかってしまいます。
 
 そこで登場するのが、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)を逆手に取った「確率的素数判定法」である **[フェルマー](https://kenji.blog/p/fermat/)テスト（[Fermat](https://kenji.blog/p/fermat/) Primality Test）** です。
 
@@ -173,7 +173,7 @@ flowchart TD
 
 [フェルマー](https://kenji.blog/p/fermat/)テストは非常に高速ですが、重大な欠点があります。それは、合成数であるにもかかわらず、すべての $a$ に対して $a^{N-1} \equiv 1 \pmod N$ を満たしてしまう悪魔のような数が存在することです。これを **カーマイケル数 (Carmichael numbers)** と呼びます。最も小さいカーマイケル数は $561$ ($3 \times 11 \times 17$) です。
 
-カーマイケル数が存在するため、純粋な[フェルマー](https://kenji.blog/p/fermat/)テストだけでは絶対的な素数判定はできません。そのため、実際の暗号化システム（OpenSSLなど）では、[フェルマー](https://kenji.blog/p/fermat/)テストを改良した **ミラー・ラビン（Miller-Rabin）素数判定法** が標準的に使用されています。ミラー・ラビン判定法はカーマイケル数を見破ることができるため、誤判定の確率を実質的にゼロにすることができます。
+カーマイケル数が存在するため、純粋な[フェルマー](https://kenji.blog/p/fermat/)テストだけでは絶対的な素数判定はできません。そのため、実際の[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)システム（OpenSSLなど）では、[フェルマー](https://kenji.blog/p/fermat/)テストを改良した **ミラー・ラビン（Miller-Rabin）素数判定法** が標準的に使用されています。ミラー・ラビン判定法はカーマイケル数を見破ることができるため、誤判定の確率を実質的にゼロにすることができます。
 
 ### 5.4 高速なべき乗剰余演算（繰り返し二乗法）
 
@@ -281,10 +281,10 @@ else:
 
 ---
 
-## 7. RSA暗号への応用：[フェルマー](https://kenji.blog/p/fermat/)と[オイラー](https://kenji.blog/p/euler/)が結実する場所
+## 7. [RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号への応用：[フェルマー](https://kenji.blog/p/fermat/)と[オイラー](https://kenji.blog/p/euler/)が結実する場所
 
-[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)（および[オイラー](https://kenji.blog/p/euler/)の定理）の最も偉大な応用先が、1977年にRivest, Shamir, Adlemanの3人によって開発された **RSA暗号** です。
-RSA暗号は「公開鍵暗号」という画期的なシステムであり、暗号化するための鍵（公開鍵）は全世界に公開しておきながら、復号するための鍵（秘密鍵）は受信者本人だけが知っているという仕組みを実現しています。
+[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)（および[オイラー](https://kenji.blog/p/euler/)の定理）の最も偉大な応用先が、1977年にRivest, Shamir, Adlemanの3人によって開発された **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号** です。
+RSA暗号は「[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号」という画期的なシステムであり、[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)するための鍵（公開鍵）は全世界に公開しておきながら、復号するための鍵（秘密鍵）は受信者本人だけが知っているという仕組みを実現しています。
 
 この非対称性は、「巨大な合成数の素因数分解は極めて困難である」という計算量的安全性に基づいています。
 
@@ -319,9 +319,9 @@ sequenceDiagram
    $$ e \cdot d \equiv 1 \pmod{\phi(N)} $$
    この計算には **拡張[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)** が用いられます。
 
-これで、 **公開鍵は $(N, e)$** 、 **秘密鍵は $(N, d)$** となります。（$p, q, \phi(N)$ は直ちに破棄するか厳重に隠匿します）。
+これで、 **[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)は $(N, e)$** 、 **秘密鍵は $(N, d)$** となります。（$p, q, \phi(N)$ は直ちに破棄するか厳重に隠匿します）。
 
-#### ステップ2：暗号化（送信者ボブの作業）
+#### ステップ2：[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)（送信者ボブの作業）
 
 ボブはアリスにメッセージ $M$ を送りたいとします（$M$ は文字を数値化したもので、$0 \le M < N$ です）。
 ボブはアリスの公開鍵 $(N, e)$ を使い、次の計算を行って暗号文 $C$ を作ります。
@@ -356,7 +356,7 @@ $$ e \cdot d = 1 + k \cdot \phi(N) $$
 これを上の式に代入します。
 $$ M^{ed} = M^{1 + k \cdot \phi(N)} = M \cdot M^{k \cdot \phi(N)} = M \cdot (M^{\phi(N)})^k \pmod N $$
 
-ここで **[オイラー](https://kenji.blog/p/euler/)の定理** ($M^{\phi(N)} \equiv 1 \pmod N$) が登場します。（※厳密には $M$ と $N$ が互いに素である必要がありますが、RSAにおいては $M$ と $N$ が互いに素でない確率は天文学的に低く、かつ中国剰余定理を用いることで互いに素でなくても成立することが証明できます）。
+ここで **[オイラー](https://kenji.blog/p/euler/)の定理** ($M^{\phi(N)} \equiv 1 \pmod N$) が登場します。（※厳密には $M$ と $N$ が互いに素である必要がありますが、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)においては $M$ と $N$ が互いに素でない確率は天文学的に低く、かつ中国剰余定理を用いることで互いに素でなくても成立することが証明できます）。
 
 [オイラー](https://kenji.blog/p/euler/)の定理を適用すると、$M^{\phi(N)} \equiv 1$ なので、
 $$ M \cdot (1)^k \equiv M \pmod N $$
@@ -365,9 +365,9 @@ $$ M \cdot (1)^k \equiv M \pmod N $$
 
 ---
 
-## 8. RSA暗号のトイ実装 (Python)
+## 8. [RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号のトイ実装 (Python)
 
-理論だけでは実感が湧きにくいため、Pythonを使って実際にRSA暗号の鍵生成・暗号化・復号のプロセスを実装してみましょう。これは教育用の「トイ（おもちゃ）実装」ですが、使われている数学は本物と全く同じです。
+理論だけでは実感が湧きにくいため、Pythonを使って実際にRSA暗号の鍵生成・[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)・復号のプロセスを実装してみましょう。これは教育用の「トイ（おもちゃ）実装」ですが、使われている数学は本物と全く同じです。
 
 モジュラ逆元 $d$ を求めるための「拡張[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)」も実装に含めます。
 
@@ -468,7 +468,7 @@ if __name__ == '__main__':
 
 [ピエール・ド・フェルマー](https://kenji.blog/p/fermat/)がこの「小定理」を発見した17世紀当時、これが何かの役に立つと考えた人は皆無でした。[フェルマー](https://kenji.blog/p/fermat/)自身も純粋な数学的探求心から数論の研究を行っていました。
 
-しかし、約300年後の1970年代、コンピュータネットワークの黎明期において、安全な通信プロトコルを確立するために不可欠な暗号技術として、[フェルマー](https://kenji.blog/p/fermat/)の定理は劇的な復活を遂げました。[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)に基づく素数判定技術と、[オイラー](https://kenji.blog/p/euler/)の定理に基づくRSA暗号は、現代のインターネットインフラを文字通り支えています。
+しかし、約300年後の1970年代、コンピュータネットワークの黎明期において、安全な通信プロトコルを確立するために不可欠な暗号技術として、[フェルマー](https://kenji.blog/p/fermat/)の定理は劇的な復活を遂げました。[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)に基づく素数判定技術と、[オイラー](https://kenji.blog/p/euler/)の定理に基づく[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号は、現代のインターネットインフラを文字通り支えています。
 
 私たちが日々何気なく送っているLINEのメッセージも、Amazonでの買い物も、すべてはこの $a^{p-1} \equiv 1 \pmod p$ というシンプルで美しい数式の上で踊っているのです。数学がいかに抽象的であっても、いつか必ず人類の役に立つ時が来るということを、[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)は教えてくれています。
 

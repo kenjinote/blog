@@ -14,7 +14,7 @@ tags:
 
 En la sociedad actual de Internet, nuestra capacidad para comunicarnos de forma segura se debe a la **criptografía**. En la base de esta criptografía se encuentra un hermoso teorema descubierto en el siglo XVII por el matemático [Pierre de Fermat](https://kenji.blog/es/p/fermat/).
 
-En este artículo, explicaremos **el Pequeño Teorema de [Fermat](https://kenji.blog/es/p/fermat/)**, una piedra angular crucial de la teoría de números, de una manera fácil de entender, cubriendo su significado, demostración y cómo se aplica en la criptografía RSA moderna.
+En este artículo, explicaremos **el Pequeño Teorema de [Fermat](https://kenji.blog/es/p/fermat/)**, una piedra angular crucial de la teoría de números, de una manera fácil de entender, cubriendo su significado, demostración y cómo se aplica en la criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) moderna.
 
 ## ¿Qué es el Pequeño Teorema de [Fermat](https://kenji.blog/es/p/fermat/)?
 
@@ -92,9 +92,9 @@ flowchart TD
 
 Sin embargo, debido a que existen números excepcionales llamados **números de Carmichael**, que son números compuestos pero que satisfacen $a^{n-1} \equiv 1 \pmod n$, esta prueba por sí sola no puede probar definitivamente la primalidad. Por lo tanto, en la práctica, se utilizan métodos como el test de primalidad de Miller-Rabin.
 
-## Aplicación a la Criptografía Moderna: Criptografía RSA
+## Aplicación a la Criptografía Moderna: Criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)
 
-La aplicación más importante del Pequeño Teorema de [Fermat](https://kenji.blog/es/p/fermat/) (y su generalización, el **Teorema de Euler**) es la **criptografía RSA**, que sustenta la seguridad de Internet.
+La aplicación más importante del Pequeño Teorema de [Fermat](https://kenji.blog/es/p/fermat/) (y su generalización, el **Teorema de Euler**) es la **criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)**, que sustenta la seguridad de Internet.
 
 La criptografía RSA se basa en la dificultad de factorizar números masivos para su seguridad. Dentro de su mecanismo, el principio del "Pequeño Teorema de [Fermat](https://kenji.blog/es/p/fermat/)" juega un papel decisivo en los procesos de generación de claves y descifrado.
 
@@ -111,7 +111,7 @@ sequenceDiagram
     Note over Receiver: "M = C^d mod n"
 ```
 
-En la criptografía RSA, se preparan dos enormes números primos, $p$ y $q$, y establecemos $n = p \times q$.
+En la criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/), se preparan dos enormes números primos, $p$ y $q$, y establecemos $n = p \times q$.
 Por el Teorema de Euler, las claves ($e$ y $d$) se diseñan para que $M^{ed} \equiv M \pmod n$ se cumpla en los procesos de cifrado y descifrado. Aquí, el fenómeno mágico de que el texto plano $M$ vuelva a su forma original depende esencialmente de las propiedades matemáticas garantizadas por el Pequeño Teorema de [Fermat](https://kenji.blog/es/p/fermat/).
 
 ## Conclusión

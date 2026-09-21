@@ -11,7 +11,7 @@ tags: ["FHE", "Homomorphic Encryption", "Cloud Computing", "Privacy"]
 
 Alors que le cloud computing et les technologies d'IA s'imposent comme les fondations de notre société, le compromis entre la « confidentialité des données » et l'« utilisation des données » est devenu l'un des défis les plus importants. Bien qu'il y ait une demande croissante pour que les IA analysent des données hautement confidentielles dans le cloud, telles que des données médicales, des informations financières ou des données biométriques personnelles, de nombreuses entreprises hésitent à envoyer leurs données à l'extérieur en raison de préoccupations liées à la sécurité.
 
-Les technologies de chiffrement traditionnelles (telles qu'AES et RSA) excellent à protéger les données stockées (Data at Rest) et les données en transit sur le réseau (Data in Transit). Cependant, **lorsque le serveur effectue des traitements (calculs)** sur les données, comme des recherches ou de l'apprentissage automatique (Data in Use), **il est nécessaire de déchiffrer au préalable les données pour les ramener en texte clair**. Si le serveur est piraté au moment du déchiffrement, ou si un administrateur interne malveillant jette un coup d'œil aux données, cela conduit directement à une fuite d'informations.
+Les technologies de chiffrement traditionnelles (telles qu'AES et [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)) excellent à protéger les données stockées (Data at Rest) et les données en transit sur le réseau (Data in Transit). Cependant, **lorsque le serveur effectue des traitements (calculs)** sur les données, comme des recherches ou de l'apprentissage automatique (Data in Use), **il est nécessaire de déchiffrer au préalable les données pour les ramener en texte clair**. Si le serveur est piraté au moment du déchiffrement, ou si un administrateur interne malveillant jette un coup d'œil aux données, cela conduit directement à une fuite d'informations.
 
 La technologie de rêve qui surmonte cette faiblesse fondamentale du « déchiffrement lors du traitement » est le **Chiffrement Homomorphe Complet (Fully Homomorphic Encryption : FHE)**. L'utilisation du FHE permet d'effectuer des calculs sur les données tout en les gardant chiffrées, sans jamais les déchiffrer, et de renvoyer uniquement le texte chiffré du résultat au client.
 
@@ -56,7 +56,7 @@ Le chiffrement homomorphe n'a pas atteint sa forme « complète » actuelle en u
 
 Le PHE est un schéma de chiffrement permettant d'effectuer **soit des additions, soit des multiplications**, de manière illimitée. En réalité, des chiffrements possédant cette propriété existent depuis longtemps.
 
-*   **Chiffrement RSA (homomorphisme vis-à-vis de la multiplication)**
+*   **Chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) (homomorphisme vis-à-vis de la multiplication)**
     Le chiffrement RSA possède involontairement un homomorphisme multiplicatif. Soit les textes clairs $m_1, m_2$ et la clé publique $(e, N)$ :
     $$ E(m_1) = m_1^e \pmod N $$
     $$ E(m_2) = m_2^e \pmod N $$
@@ -269,7 +269,7 @@ Maintenant que le FHE atteint des vitesses pratiques, des innovations disruptive
 
 ## 9. Conclusion : L'avenir de la cryptographie se dirige vers le « calcul invisible »
 
-Tout comme l'invention de la cryptographie à clé publique (RSA) dans les années 1970 a rendu possible des communications sécurisées sur Internet (comme le HTTPS), l'invention du FHE par Craig Gentry constitue l'une des étapes les plus importantes de l'histoire de la cryptographie.
+Tout comme l'invention de la cryptographie à clé publique ([RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)) dans les années 1970 a rendu possible des communications sécurisées sur Internet (comme le HTTPS), l'invention du FHE par Craig Gentry constitue l'une des étapes les plus importantes de l'histoire de la cryptographie.
 
 Aujourd'hui, le Chiffrement Homomorphe Complet (FHE) est sorti de la théorie des laboratoires, et des entreprises telles que Microsoft, IBM, Intel, Google et de nombreuses startups se font une concurrence féroce pour le rendre pratique. Bien que des défis liés aux coûts de calcul et à la taille des données subsistent, grâce au raffinement des algorithmes et à l'évolution des accélérateurs matériels, les performances continuent de s'améliorer à un rythme dépassant la loi de Moore.
 

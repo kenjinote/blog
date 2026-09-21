@@ -11,7 +11,7 @@ tags: ["Big O Notation", "Prime Factorization", "Algorithms", "RSA"]
 
 # Einführung: Warum ist die Primfaktorzerlegung so „schwierig“?
 
-Dass wir in der modernen Internetgesellschaft sicher online einkaufen oder vertrauliche Informationen austauschen können, verdanken wir der Existenz der „Kryptographie“. Und das Fundament, das die Sicherheit dieser kryptographischen Techniken (insbesondere der weit verbreiteten RSA-Verschlüsselung) trägt, ist die mathematische Tatsache, dass „die Primfaktorzerlegung sehr großer ganzer Zahlen extrem schwierig ist“.
+Dass wir in der modernen Internetgesellschaft sicher online einkaufen oder vertrauliche Informationen austauschen können, verdanken wir der Existenz der „Kryptographie“. Und das Fundament, das die Sicherheit dieser kryptographischen Techniken (insbesondere der weit verbreiteten [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung) trägt, ist die mathematische Tatsache, dass „die Primfaktorzerlegung sehr großer ganzer Zahlen extrem schwierig ist“.
 
 Auf den ersten Blick scheint die Primfaktorzerlegung eine einfache Aufgabe zu sein, bei der man „eine Zahl lediglich in das Produkt von Primzahlen zerlegt“. Wenn jedoch die Anzahl der Ziffern groß wird, verwandelt sie sich in ein extrem schwieriges Problem, das selbst die schnellsten Supercomputer der Welt, wenn sie für Jahrzehnte oder Jahrhunderte laufen, nicht lösen können. Die Primfaktorzerlegung, die wir normalerweise in der Schule lernen, ist bestenfalls eine einfache Aufgabe, bei der durch $2$, $3$ oder $5$ dividiert wird. Wenn wir jedoch mit dem Produkt unbekannter Primzahlen von Hunderten von Ziffern konfrontiert werden, bricht dieser einfache Ansatz völlig zusammen.
 
@@ -94,13 +94,13 @@ Ich hoffe, es ist klar geworden, wie wichtig die Unterschiede in der Komplexitä
 
 ---
 
-# Die Funktionsweise der RSA-Verschlüsselung und das Problem der Primfaktorzerlegung
+# Die Funktionsweise der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung und das Problem der Primfaktorzerlegung
 
 Um zu verstehen, warum die Primfaktorzerlegung so wichtig ist, werfen wir einen kurzen Blick auf die Funktionsweise der RSA-Verschlüsselung. Die RSA-Verschlüsselung ist ein asymmetrisches kryptographisches Verfahren (Public-Key-Kryptographie), das 1977 von Ron Rivest, Adi Shamir und Leonard Adleman entwickelt wurde.
 
 ### Schritte der Schlüsselgenerierung
 1. Wählen Sie zufällig zwei sehr große Primzahlen $p$ und $q$ aus. (Zum Beispiel jeweils mit einer Länge von 1024 Bit)
-2. Multiplizieren Sie diese, um $N = p \times q$ zu berechnen. Dieses $N$ wird als Teil des öffentlichen Schlüssels (Public Key) weltweit veröffentlicht. (Es wird 2048 Bit lang sein)
+2. Multiplizieren Sie diese, um $N = p \times q$ zu berechnen. Dieses $N$ wird als Teil des öffentlichen Schlüssels ([Public Key](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)) weltweit veröffentlicht. (Es wird 2048 Bit lang sein)
 3. Berechnen Sie Eulers Totient-Funktion $\phi(N) = (p-1)(q-1)$.
 4. Wählen Sie eine ganze Zahl $e$, die teilerfremd zu $\phi(N)$ ist, und machen Sie dies ebenfalls zum Teil des öffentlichen Schlüssels.
 5. Berechnen Sie ein $d$ (den privaten Schlüssel), sodass $e \times d \equiv 1 \pmod{\phi(N)}$ gilt.
@@ -165,7 +165,7 @@ Ausgedrückt durch die Eingabegröße $n = \log_2 N$:
 $$ N^{1/4} = (2^n)^{1/4} = 2^{n/4} $$
 
 Folglich beträgt die Komplexität **$\mathcal{O}(2^{n/4})$**.
-Im Vergleich zu $\mathcal{O}(2^{n/2})$ der Probedivision ist dies drastisch schneller, und in der Praxis ist es für die Primfaktorzerlegung von Zahlen mittlerer Größe (Dutzende von Ziffern) äußerst leistungsfähig. Dennoch hat es die Barriere der „exponentiellen Zeit“ für die Bitlänge $n$ immer noch nicht überwunden und ist gegenüber den riesigen Zahlen von 2048 Bit (etwa 600 Dezimalstellen), wie sie bei der RSA-Verschlüsselung verwendet werden, machtlos.
+Im Vergleich zu $\mathcal{O}(2^{n/2})$ der Probedivision ist dies drastisch schneller, und in der Praxis ist es für die Primfaktorzerlegung von Zahlen mittlerer Größe (Dutzende von Ziffern) äußerst leistungsfähig. Dennoch hat es die Barriere der „exponentiellen Zeit“ für die Bitlänge $n$ immer noch nicht überwunden und ist gegenüber den riesigen Zahlen von 2048 Bit (etwa 600 Dezimalstellen), wie sie bei der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung verwendet werden, machtlos.
 
 ## 4. Multiples Polynom-quadratisches Sieb (MPQS: Multiple Polynomial Quadratic Sieve)
 
@@ -186,7 +186,7 @@ Das Quadratische Sieb war der schnellste Algorithmus der Welt, bis das Allgemein
 
 Derzeit gilt das **Allgemeine Zahlkörpersieb (GNFS)** als „weltweit schnellstes“ Verfahren zur Primfaktorzerlegung von riesigen ganzen Zahlen mit über 100 Ziffern. Es wurde in den späten 1980er Jahren entwickelt und ist ein fortschrittlicher Algorithmus, der das Quadratische Sieb weiterentwickelt und tiefgehende Ergebnisse der algebraischen Zahlentheorie (Zahlkörper) nutzt.
 
-Bei Angriffen auf die RSA-Verschlüsselung (Primfaktorzerlegung aus dem öffentlichen Schlüssel) ist es stets dieses GNFS, das immer wieder Weltrekorde bricht. Es gibt Berichte, dass im Jahr 2020 eine 829-Bit-Zahl (250 Dezimalstellen, RSA-250) erfolgreich primfaktorzerlegt wurde, aber das erforderte den parallelen, langfristigen Betrieb von Tausenden von Computern.
+Bei Angriffen auf die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung (Primfaktorzerlegung aus dem öffentlichen Schlüssel) ist es stets dieses GNFS, das immer wieder Weltrekorde bricht. Es gibt Berichte, dass im Jahr 2020 eine 829-Bit-Zahl (250 Dezimalstellen, RSA-250) erfolgreich primfaktorzerlegt wurde, aber das erforderte den parallelen, langfristigen Betrieb von Tausenden von Computern.
 
 ### Mathematische Struktur des Algorithmus
 GNFS ist sehr komplex, verläuft aber grob in folgenden Schritten:
@@ -268,7 +268,7 @@ graph LR
 ```
 
 In Shors Algorithmus wird der Prozess der „Periodenfindung“, der bei klassischen Algorithmen einen Engpass darstellt, durch die „Quanten-Fourier-Transformation (QFT)“ unter Verwendung von Quantenverschränkung und Quantenüberlagerung massiv parallel und im Bruchteil einer Sekunde berechnet.
-Sobald er auf einem Quantencomputer praktischer Größe (mit wenig Rauschen und einer ausreichenden Anzahl logischer Qubits) ausgeführt werden kann, besteht die Möglichkeit, dass die derzeit als sicher geltende 2048-Bit-RSA-Verschlüsselung innerhalb von Stunden bis wenigen Tagen vollständig entschlüsselt wird.
+Sobald er auf einem Quantencomputer praktischer Größe (mit wenig Rauschen und einer ausreichenden Anzahl logischer Qubits) ausgeführt werden kann, besteht die Möglichkeit, dass die derzeit als sicher geltende 2048-Bit-[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung innerhalb von Stunden bis wenigen Tagen vollständig entschlüsselt wird.
 
 Um sich auf diese Bedrohung vorzubereiten, treiben derzeit Kryptographen weltweit und das NIST (National Institute of Standards and Technology der USA) die Standardisierung in Richtung einer „Post-Quanten-Kryptographie (Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy: PQC)“ voran, die auch für Quantencomputer schwer zu entschlüsseln ist. Gitterbasierte Kryptographie (Lattice-based cryptography) ist ein typisches Beispiel dafür. Deren Sicherheit beruht auf mathematischen Schwierigkeiten, die sich völlig vom Problem der Primfaktorzerlegung unterscheiden (wie z. B. dem Problem des kürzesten Vektors).
 
@@ -281,7 +281,7 @@ In diesem Artikel haben wir von den Grundlagen der Zeitkomplexität (Big-O-Notat
 * Die **Big-O-Notation ($\mathcal{O}$)** ist ein wichtiger Indikator, der die Wachstumsrate der Anzahl der Rechenschritte im Verhältnis zur Zunahme der Eingabegröße $n$ zeigt, und zwischen polynomieller Zeit und exponentieller Zeit existiert eine praktisch unüberwindbare, riesige Mauer.
 * Die **Probedivision** und **Pollards $\rho$-Methode** sind rein „exponentielle Zeit“-Algorithmen und bei riesigen Zahlen machtlos.
 * Das **Allgemeine Zahlkörpersieb (GNFS)**, der derzeit schnellste klassische Algorithmus, nutzt fortschrittliche algebraische Zahlentheorie, um eine „subexponentielle Zeit“ zu erreichen, aber es erreicht dennoch keine polynomielle Zeit und benötigt astronomische Zeiten für die Primfaktorzerlegung riesiger Zahlen.
-* Gerade die Tatsache, **„dass kein klassischer Algorithmus existiert, der dieses in polynomieller Zeit löst (was stark vermutet wird)“**, gewährleistet die Sicherheit der RSA-Verschlüsselung und stützt die moderne digitale Gesellschaft.
+* Gerade die Tatsache, **„dass kein klassischer Algorithmus existiert, der dieses in polynomieller Zeit löst (was stark vermutet wird)“**, gewährleistet die Sicherheit der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung und stützt die moderne digitale Gesellschaft.
 * Mit dem Aufkommen von **Quantencomputern und Shors Algorithmus** wird die Primfaktorzerlegung in polynomieller Zeit jedoch theoretisch möglich, und die Kryptographie ist dabei, in das nächste Zeitalter (Post-Quanten-Kryptographie) überzugehen.
 
 Die Tatsache, dass ein abstraktes Konzept wie die Komplexität von Algorithmen direkt mit der Sicherheit unseres Lebens verbunden ist, gehört zu den faszinierendsten und spannendsten Aspekten der Informatik und Mathematik. Bitte behalten Sie die zukünftigen technologischen Fortschritte, insbesondere die Entwicklungen bei Quantencomputern und den Wandel in der Kryptographie, genau im Auge.

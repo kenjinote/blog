@@ -196,6 +196,6 @@ If you're interested, next time:
 
 * **File attachments**
 * **UI with buttons**
-* **Flexible API operations with Slack App + OAuth2**
+* **Flexible API operations with Slack App + [OAuth](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/)2**
 
 I can introduce you to more advanced Slack integrations like these!

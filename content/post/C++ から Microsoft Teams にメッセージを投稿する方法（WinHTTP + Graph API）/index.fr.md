@@ -51,7 +51,7 @@ Gardez une trace des deux éléments suivants affichés dans l'onglet "Vue d'ens
 
 ---
 
-## 🔐 Obtention du jeton d'accès (OAuth2)
+## 🔐 Obtention du jeton d'accès ([OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/)2)
 
 Nous utiliserons le flux `client_credentials` pour l'obtention.  
 Exécutez la commande ci-dessous avec curl pour obtenir le jeton d'accès.
@@ -180,7 +180,7 @@ curl -X GET ^
 | --------- | ----------------------------- |
 | Graph API | API officielle pour interagir avec Teams |
 | Inscription de l'application | Procédures d'authentification requises sur Azure |
-| Jeton d'accès | Obtenu via OAuth2 et utilisé pour les requêtes |
+| Jeton d'accès | Obtenu via [OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/)2 et utilisé pour les requêtes |
 | Implémentation C++ | Appelle l'API Graph en utilisant WinHTTP |
 
 ## 🚀 Prochaines étapes

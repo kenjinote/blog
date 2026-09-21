@@ -283,7 +283,7 @@ Cuando el número de ciudades supera $N=20$, la solución estricta (fuerza bruta
 
 En la actualidad, los sistemas criptográficos de todo el mundo (el SSL/TLS utilizado en las compras por Internet, las cadenas de bloques como Bitcoin, etc.) aprovechan la asimetría de que **«resolverlo requiere una cantidad inmensa de tiempo, pero verificarlo se puede hacer en un instante»**.
 
-La factorización en números primos, fundamento del sistema criptográfico RSA, es uno de ellos.
+La factorización en números primos, fundamento del sistema criptográfico [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/), es uno de ellos.
 Imaginemos que alguien demuestra $P = NP$ y construye un algoritmo mágico (demostración constructiva) para resolver los problemas NP en tiempo polinómico. Esto causaría los siguientes **cambios de paradigma en la sociedad humana**.
 
 1. **Colapso de la criptografía**: Todos los sistemas modernos de criptografía de clave pública, como el sistema criptográfico RSA y la criptografía de curva elíptica, serían quebrantados instantáneamente y la seguridad digital colapsaría por completo.

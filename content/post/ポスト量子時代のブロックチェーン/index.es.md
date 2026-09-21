@@ -12,7 +12,7 @@ description: 'La llegada del "Q-Day", donde el increíble poder computacional de
 
 ## 1. Introducción: Los pasos de la era post-cuántica y la crisis del blockchain
 
-Desde el nacimiento de [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) en 2009 por Satoshi Nakamoto, la tecnología blockchain ha crecido hasta convertirse en la base de sistemas financieros y aplicaciones en todo el mundo como un "libro mayor descentralizado e inalterable". Esta robusta seguridad está respaldada por tecnologías criptográficas modernas: **Criptografía de Clave Pública (Public Key [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy)** y **Funciones Hash Criptográficas ([Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphic Hash Functions)**.
+Desde el nacimiento de [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) en 2009 por Satoshi Nakamoto, la tecnología blockchain ha crecido hasta convertirse en la base de sistemas financieros y aplicaciones en todo el mundo como un "libro mayor descentralizado e inalterable". Esta robusta seguridad está respaldada por tecnologías criptográficas modernas: **Criptografía de Clave Pública ([Public Key](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy)** y **Funciones Hash Criptográficas ([Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)s)**.
 
 Estas tecnologías criptográficas garantizan la seguridad basándose en la "dificultad computacional" matemática, lo que significa que una computadora clásica (como las PC o supercomputadoras que usamos hoy en día) tardaría la edad del universo en descifrarlas.
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. Fundamentos y dificultad computacional de la Criptografía de Curva Elíptica (ECDSA)
 
-Muchas blockchains, incluidas [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) y Ethereum, adoptan el **Algoritmo de Firma Digital de Curva Elíptica (ECDSA: Elliptic Curve Digital Signature Algorithm)** como su algoritmo de firma digital. Específicamente, [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) utiliza la curva elíptica con el parámetro `secp256k1`.
+Muchas blockchains, incluidas [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) y Ethereum, adoptan el **Algoritmo de Firma Digital de Curva Elíptica (ECDSA: Elliptic Curve [Digital Signature](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) Algorithm)** como su algoritmo de firma digital. Específicamente, [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) utiliza la curva elíptica con el parámetro `secp256k1`.
 
 La seguridad de la criptografía de curva elíptica se basa en la dificultad computacional del **Problema del Logaritmo Discreto de Curva Elíptica (ECDLP: Elliptic Curve Discrete Logarithm Problem)**.
 Una curva elíptica se define por una ecuación en la forma normal de Weierstrass de la siguiente manera:
@@ -62,7 +62,7 @@ Usando una computadora clásica, calcular inversamente la clave privada $k$ (enc
 
 ### 2.2. Colapso por el [Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/es/p/quantum-computing-shors-algorithm/))
 
-Sin embargo, el **Algoritmo de Shor**, publicado por Peter Shor en 1994, destruyó por completo esta premisa. El algoritmo de Shor fue propuesto originalmente para resolver el problema de factorización de enteros (la base del cifrado RSA) en tiempo polinómico, pero también es aplicable al problema del logaritmo discreto y al problema del logaritmo discreto de curva elíptica.
+Sin embargo, el **Algoritmo de Shor**, publicado por Peter Shor en 1994, destruyó por completo esta premisa. El algoritmo de Shor fue propuesto originalmente para resolver el problema de factorización de enteros (la base del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)) en tiempo polinómico, pero también es aplicable al problema del logaritmo discreto y al problema del logaritmo discreto de curva elíptica.
 
 El núcleo del algoritmo de Shor radica en el uso de la **Transformada de Fourier Cuántica (QFT: Quantum Fourier Transform)** para encontrar rápidamente el "período (Period)" de una función.
 
@@ -112,7 +112,7 @@ El número de compuertas cuánticas necesarias para todo este proceso es $\mathc
 
 Otra amenaza es el **Algoritmo de Grover**, propuesto por Lov Grover en 1996. Esto tiene un impacto importante en las funciones hash (por ejemplo: SHA-256).
 
-En blockchain, las funciones hash se utilizan para garantizar la integridad de los datos, generar direcciones y como base para la minería **PoW (Proof of Work)** en [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/). Calcular a la inversa una función hash (cálculo de preimagen) puede considerarse como un "problema de búsqueda en base de datos no estructurada" donde, dado un valor de salida específico $y$, se busca un valor de entrada $x$ tal que $H(x) = y$.
+En blockchain, las funciones hash se utilizan para garantizar la integridad de los datos, generar direcciones y como base para la minería **[PoW](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Work)** en [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/). Calcular a la inversa una función hash (cálculo de preimagen) puede considerarse como un "problema de búsqueda en base de datos no estructurada" donde, dado un valor de salida específico $y$, se busca un valor de entrada $x$ tal que $H(x) = y$.
 
 En una computadora clásica, para encontrar la respuesta correcta entre $N$ posibilidades, se requieren en promedio $\frac{N}{2}$ intentos, y en el peor de los casos, $N$ intentos. Es decir, la complejidad computacional es $\mathcal{O}(N)$.
 Sin embargo, el algoritmo de Grover utiliza una técnica cuántica llamada "Amplificación de Amplitud (Amplitude Amplification)". Al amplificar iterativamente la amplitud de probabilidad del estado que es la respuesta correcta entre todas las posibilidades en estado de superposición, se reduce el tiempo de búsqueda a la raíz cuadrada.
@@ -141,7 +141,7 @@ En un mundo donde es posible descifrar ECDSA con computadoras cuánticas, ¿a qu
 Las direcciones de [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) ([P2P](https://kenji.blog/es/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash o P2WPKH: Pay-to-Witness-Public-Key-Hash) no utilizan la clave pública directamente, sino un hash repetido de la clave pública.
 
 $$
-\text{[Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
+\text{[Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{[Public Key](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)})))
 $$
 
 Como se mencionó anteriormente, debido a que las funciones hash son resistentes a los ataques cuánticos (algoritmo de Grover), deducir a la inversa la "clave pública" original a partir de la "dirección" (valor hash) es imposible incluso con una computadora cuántica.
@@ -337,7 +337,7 @@ No existe necesidad de que los inversores o usuarios comunes de criptoactivos en
 * **Evitar la reutilización de direcciones**: No atesorar fondos por períodos prolongados en "direcciones usadas (que se hayan empleado alguna vez para realizar una transacción, por lo que su clave pública ha sido expuesta permanentemente en la cadena)". Una regla esencial no solo para resguardar la privacidad, sino también por pura seguridad cuántica.
 * **Atención a las tendencias tecnológicas**: Permanecer sintonizados a discusiones vitales (por ej. los BIP de [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) y EIP de Ethereum) respecto a la transición PQC o los posibles Hard Forks, a fin de ser capaces de migrar nuestras carteras correctamente cuando llegue el instante apropiado.
 
-La historia del blockchain consiste, en gran medida, en una evolución constante propiciada por su resiliencia contra amenazas tecnológicas inéditas. Tal como se superaron las crisis de la escalabilidad o el impacto medioambiental (con el salto del PoW al PoS), es más que seguro que el ecosistema completo investigará y se ajustará a este inédito peligro cuántico.
+La historia del blockchain consiste, en gran medida, en una evolución constante propiciada por su resiliencia contra amenazas tecnológicas inéditas. Tal como se superaron las crisis de la escalabilidad o el impacto medioambiental (con el salto del [PoW](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/) al [PoS](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/)), es más que seguro que el ecosistema completo investigará y se ajustará a este inédito peligro cuántico.
 Nuestra expectación se deposita en visualizar un porvenir donde el nacimiento de la computación cuántica —el nuevo apogeo del ingenio humano— y el blockchain (la tecnología de la confianza descentralizada) logren amoldarse armoniosamente para constituir sistemas invulnerables de orden superior, lejos de sucumbir en un colapso.
 
 ---

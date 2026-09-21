@@ -67,7 +67,7 @@ Plus le nombre d'essais `num_samples` est élevé, plus la valeur de $\pi$ obten
 
 ### Exemple concret 2 : Le test de primalité de Miller-Rabin
 
-C'est un algorithme permettant de déterminer très rapidement si un nombre géant est premier. Lors de la génération de clés dans la cryptographie RSA, on a besoin de nombres premiers longs de centaines de chiffres. S'y atteler avec la division par essais déterministe (en divisant successivement par $2, 3, 5, \dots$) prendrait plus de temps que l'âge de l'univers.
+C'est un algorithme permettant de déterminer très rapidement si un nombre géant est premier. Lors de la génération de clés dans la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), on a besoin de nombres premiers longs de centaines de chiffres. S'y atteler avec la division par essais déterministe (en divisant successivement par $2, 3, 5, \dots$) prendrait plus de temps que l'âge de l'univers.
 
 C'est là qu'intervient le **test de primalité de Miller-Rabin**, qui utilise la méthode de Monte-Carlo.
 Pour vérifier si un nombre $n$ est premier, on choisit une base aléatoire $a$ et on vérifie si une condition spécifique basée sur une extension du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) est satisfaite.

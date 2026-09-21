@@ -14,7 +14,7 @@ tags:
   - "python"
 ---
 
-現代網際網路社會的安全性，是由RSA密碼等公開金鑰密碼系統所保護。這些密碼系統的安全性基礎，在於「分解巨大的質因數，對目前的電腦（古典電腦）來說需要天文數字般的時間」這樣一個數學上的困難度。
+現代網際網路社會的安全性，是由[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)密碼等公開金鑰密碼系統所保護。這些密碼系統的安全性基礎，在於「分解巨大的質因數，對目前的電腦（古典電腦）來說需要天文數字般的時間」這樣一個數學上的困難度。
 
 然而，擁有從根本上推翻這個前提之潛力的，就是 **量子電腦** 。特別是在1994年由彼得·秀爾（Peter Shor）所發現的 **秀爾演算法** （Shor's Algorithm），在數學上證明了只要量子電腦實用化，就能在現實的時間內破解RSA密碼。
 
@@ -110,7 +110,7 @@ graph LR
 
 ---
 
-## 3. 密碼技術的基礎與RSA密碼
+## 3. 密碼技術的基礎與[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)密碼
 
 為了理解秀爾演算法的衝擊力，我們必須先了解目前主流的公開金鑰密碼，也就是 **RSA密碼** 的運作原理。
 
@@ -356,7 +356,7 @@ print(f"\n推測的相位(phase): {measured_phases[:4]} ...")
 
 ---
 
-## 7. 為什麼RSA密碼面臨危機？
+## 7. 為什麼[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)密碼面臨危機？
 
 在古典電腦中，質因數分解的計算量會隨著位數的增加呈指數級增長。例如，分解100位數需要幾秒，200位數需要幾年，而RSA-2048（約617位數）估計需要超過宇宙壽命的時間。
 
@@ -380,7 +380,7 @@ print(f"\n推測的相位(phase): {measured_phases[:4]} ...")
 
 ## 9. 次世代的密碼技術：後量子密碼學（PQC）
 
-為了對抗秀爾演算法的威脅，以美國國家標準暨技術研究院（NIST）為首的全球機構，正在推動即使是量子電腦也無法破解的新密碼系統—— **抗量子計算機密碼學（Post-Quantum Cryptography: PQC）** 的標準化。
+為了對抗秀爾演算法的威脅，以美國國家標準暨技術研究院（NIST）為首的全球機構，正在推動即使是量子電腦也無法破解的新密碼系統—— **抗量子計算機密碼學（Post-Quantum [Cryptography](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/): PQC）** 的標準化。
 
 PQC並不使用量子技術，它是基於即使使用量子演算法也無法有效求解（無法套用秀爾演算法），且能在古典電腦上執行的新數學問題。
 

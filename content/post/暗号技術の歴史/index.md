@@ -14,9 +14,9 @@ description: "古代のシーザー暗号から、エニグマ、公開鍵暗号
 
 暗号技術（[Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）は、情報の秘匿性を保つための技術であり、人類の歴史とともに進化してきました。古代の戦争における秘密司令の伝達から、現代のインターネットにおけるクレジットカード情報の保護に至るまで、暗号の目的は一貫しています。それは「意図された受信者だけが情報を理解でき、第三者には解読できないようにする」ことです。
 
-現代の情報セキュリティにおいて、暗号技術は単なる「情報の秘匿（機密性: Confidentiality）」にとどまらず、データの「完全性（Integrity）」、「認証（Authentication）」、「否認防止（Non-repudiation）」といった重要な役割を担っています。
+現代の情報セキュリティにおいて、暗号技術は単なる「情報の秘匿（機密性: Confidentiality）」にとどまらず、データの「完全性（Integrity）」、「[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)（[Authentication](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)）」、「否認防止（Non-repudiation）」といった重要な役割を担っています。
 
-本記事では、古代の単純な換字式暗号から始まり、機械式暗号、現代の共通鍵・公開鍵暗号、そして[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)の実用化によって到来する「耐量子暗号（PQC）」の時代まで、暗号技術の進化の歴史を技術的・数学的な観点から詳細に紐解いていきます。
+本記事では、古代の単純な換字式暗号から始まり、機械式暗号、現代の共通鍵・[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号、そして[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)の実用化によって到来する「耐量子暗号（PQC）」の時代まで、暗号技術の進化の歴史を技術的・数学的な観点から詳細に紐解いていきます。
 
 ---
 
@@ -65,7 +65,7 @@ print(f"暗号文: {ciphertext}") # KHOOR ZRUOG
 
 これに対抗するため、16世紀に考案されたのが「ヴィジュネル暗号（Vigenère cipher）」です。これは複数のシフト（鍵）を周期的に切り替えて使用する多表式換字暗号（Polyalphabetic substitution）であり、約300年もの間「解読不能な暗号（Le Chiffre Indéchiffrable）」と呼ばれていました。
 
-数学的には、平文の $i$ 番目の文字 $P_i$ と、繰り返される鍵の $i$ 番目の文字 $K_i$ を用いて次のように暗号化します。
+数学的には、平文の $i$ 番目の文字 $P_i$ と、繰り返される鍵の $i$ 番目の文字 $K_i$ を用いて次のように[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)します。
 
 $$C_i \equiv P_i + K_i \pmod{26}$$
 
@@ -88,7 +88,7 @@ graph TD
 
 # 3. 機械式暗号と世界大戦：エニグマとその解読
 
-20世紀に入ると、通信手段は手紙から電信や無線へと移行し、暗号化の速度と複雑さが求められるようになりました。ここで登場したのが、ローター（回転盤）を組み合わせた「機械式暗号」です。
+20世紀に入ると、通信手段は手紙から電信や無線へと移行し、[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)の速度と複雑さが求められるようになりました。ここで登場したのが、ローター（回転盤）を組み合わせた「機械式暗号」です。
 
 ## エニグマ（Enigma）の脅威
 第二次世界大戦中、ナチス・ドイツが使用した「エニグマ」は、暗号技術史において最も有名な暗号機です。エニグマは複数のローター（通常3〜4個）と、文字の配線を入れ替えるプラグボード（Steckerbrett）、そしてリフレクター（反転ローター）で構成されていました。
@@ -113,7 +113,7 @@ graph TD
 
 ## DES (Data Encryption Standard)
 1977年、アメリカ国立標準技術研究所（NIST、当時はNBS）は、IBMの設計をベースとした「DES」を標準暗号として制定しました。
-DESは「ファイステル構造（Feistel Network）」と呼ばれるアーキテクチャを採用しており、64ビットのブロック長と56ビットの鍵長を持ちます。暗号化と復号のアルゴリズムがほぼ同じ構造になるという実装上の利点がありました。
+DESは「ファイステル構造（Feistel Network）」と呼ばれるアーキテクチャを採用しており、64ビットのブロック長と56ビットの鍵長を持ちます。[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)と復号のアルゴリズムがほぼ同じ構造になるという実装上の利点がありました。
 
 しかし、コンピュータの計算能力が向上するにつれ、56ビットの鍵長（約 $7.2 \times 10^{16}$ 通り）では不十分であることが明らかになります。1998年には電子フロンティア財団（EFF）が専用マシン「Deep Crack」を開発し、数日でDESを解読してみせました。
 
@@ -135,7 +135,7 @@ graph TD
 
 ---
 
-# 5. 公開鍵暗号の革命：Diffie-HellmanからRSAへ
+# 5. [公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の革命：Diffie-Hellmanから[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)へ
 
 共通鍵暗号には決定的な弱点がありました。それは「鍵配送問題（Key Distribution Problem）」です。暗号通信を始める前に、遠く離れた相手とどうやって安全に「共通の鍵」を共有するのかという問題です。この問題を解決したのが1970年代に誕生した「公開鍵暗号」です。
 
@@ -148,16 +148,16 @@ graph TD
 4. Aliceは $K = B^a \pmod{p}$ を計算し、Bobは $K = A^b \pmod{p}$ を計算します。
 5. 指数法則により $K = (g^b)^a = (g^a)^b = g^{ab} \pmod{p}$ となり、見事に同じ鍵 $K$ を共有できます。
 
-## RSA暗号
+## [RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号
 翌1977年、ロン・リベスト、アディ・シャミア、レオナルド・エーデルマンの3人によって考案されたのが「RSA暗号」です。これは「巨大な合成数の素因数分解は困難である」という性質に基づいています。
 
 **RSAの数学的仕組み:**
 1. 2つの巨大な素数 $p$ と $q$ を選び、$n = p \times q$ を計算します。
 2. [オイラー](https://kenji.blog/p/euler/)のトーティエント関数 $\phi(n) = (p-1)(q-1)$ を計算します。
-3. $\phi(n)$ と互いに素な整数 $e$（公開鍵）を選びます。
+3. $\phi(n)$ と互いに素な整数 $e$（[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)）を選びます。
 4. $e \times d \equiv 1 \pmod{\phi(n)}$ となる整数 $d$（秘密鍵）を計算します。
 
-暗号化: 平文 $M$ に対して $C \equiv M^e \pmod{n}$
+[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/): 平文 $M$ に対して $C \equiv M^e \pmod{n}$
 復号: 暗号文 $C$ に対して $M \equiv C^d \pmod{n}$
 
 ```python
@@ -195,11 +195,11 @@ rsa_example()
 
 # 6. 楕円曲線暗号（ECC）の台頭
 
-RSA暗号は強力ですが、コンピュータの性能向上に伴い、安全性を保つために鍵長を長くする（現在では2048ビットや3072ビット）必要があり、計算コストが増大するという問題が生じました。
+[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号は強力ですが、コンピュータの性能向上に伴い、安全性を保つために鍵長を長くする（現在では2048ビットや3072ビット）必要があり、計算コストが増大するという問題が生じました。
 
 そこで1985年に提案されたのが「楕円曲線暗号（Elliptic Curve [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy: ECC）」です。これは有限体上の楕円曲線（一般に $y^2 = x^3 + ax + b$ の形）における点の加算を利用したものです。
 
-楕円曲線上の離散対数問題（ECDLP）は、素因数分解問題よりもさらに解くのが困難であることが知られており、 **RSAの3072ビットと同等の安全性を、ECCならわずか256ビットの鍵長で実現** できます。これにより、スマートフォンやIoTデバイスなど、計算リソースが限られた環境でも高速かつ安全な暗号通信（ECDSAやECDHなど）が可能になりました。
+楕円曲線上の離散対数問題（ECDLP）は、素因数分解問題よりもさらに解くのが困難であることが知られており、 **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)の3072ビットと同等の安全性を、ECCならわずか256ビットの鍵長で実現** できます。これにより、スマートフォンやIoTデバイスなど、計算リソースが限られた環境でも高速かつ安全な暗号通信（ECDSAやECDHなど）が可能になりました。
 
 ---
 
@@ -207,7 +207,7 @@ RSA暗号は強力ですが、コンピュータの性能向上に伴い、安�
 
 暗号技術は盤石に思えましたが、1994年にピーター・ショア（Peter Shor）が発表した「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)」によって大きな衝撃が走ります。
 
-量子コンピュータは「重ね合わせ」と「量子もつれ」という量子力学の性質を利用して計算を行います。ショアのアルゴリズムを十分な性能の量子コンピュータ上で実行すると、素因数分解問題や離散対数問題が「多項式時間」で解けてしまうことが数学的に証明されたのです。つまり、実用的な量子コンピュータが完成した日（Q-Day）、現在使われているRSAやECCなどの公開鍵暗号はすべて瞬時に破綻します。
+量子コンピュータは「重ね合わせ」と「量子もつれ」という量子力学の性質を利用して計算を行います。ショアのアルゴリズムを十分な性能の量子コンピュータ上で実行すると、素因数分解問題や離散対数問題が「多項式時間」で解けてしまうことが数学的に証明されたのです。つまり、実用的な量子コンピュータが完成した日（Q-Day）、現在使われている[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)やECCなどの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号はすべて瞬時に破綻します。
 
 ## PQC（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）の登場
 この未曾有の脅威に備え、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)でも解読が困難な新しい数学的問題に基づく「耐量子計算機暗号（PQC）」の研究が急ピッチで進められています。NIST（米国国立標準技術研究所）は長年にわたりPQCの標準化プロセスを進めており、主に以下の数学的アプローチが有力視されています。
@@ -242,7 +242,7 @@ b = (np.dot(A, s) + e) % q
 ハッシュ関数の衝突耐性のみに安全性の根拠を置くデジタル署名方式です。数学的な構造を持たないため量子攻撃に強いですが、署名サイズが大きくなる傾向があります（SPHINCS+など）。
 
 ### 3. 符号ベース暗号（Code-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy）
-誤り訂正符号の理論に基づく暗号方式です。1978年に提案されたMcEliece暗号などが有名で、歴史が古く安全性に定評がありますが、公開鍵のサイズが非常に大きい（数メガバイトに及ぶこともある）という課題があります。
+誤り訂正符号の理論に基づく暗号方式です。1978年に提案されたMcEliece暗号などが有名で、歴史が古く安全性に定評がありますが、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)のサイズが非常に大きい（数メガバイトに及ぶこともある）という課題があります。
 
 ```mermaid
 timeline
@@ -261,9 +261,9 @@ timeline
 
 [暗号技術の歴史](https://kenji.blog/p/暗号技術の歴史/)は、新しい暗号方式（盾）の発明と、それを破る新しい解読手法（矛）の終わりのない戦いの歴史です。
 
-シーザー暗号は頻度分析に敗れ、無敵を誇ったエニグマは[チューリング](https://kenji.blog/p/turing/)の天才的頭脳と機械の力に敗れました。そして今、現代インターネット社会の根幹を支えるRSAやECCといった強力な暗号も、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)という新たな「矛」の前に脅威に晒されています。
+シーザー暗号は頻度分析に敗れ、無敵を誇ったエニグマは[チューリング](https://kenji.blog/p/turing/)の天才的頭脳と機械の力に敗れました。そして今、現代インターネット社会の根幹を支える[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)やECCといった強力な暗号も、[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)という新たな「矛」の前に脅威に晒されています。
 
-しかし、人類は既にその先の未来を見据え、耐量子暗号（PQC）という新たな「盾」を準備しつつあります。現在、世界中のITインフラにおいて、既存の公開鍵暗号からPQCへの移行準備（[Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/) Agilityの確保）が急務となっています。
+しかし、人類は既にその先の未来を見据え、耐量子暗号（PQC）という新たな「盾」を準備しつつあります。現在、世界中のITインフラにおいて、既存の[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号からPQCへの移行準備（[Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/) Agilityの確保）が急務となっています。
 
 暗号技術は、単なる難解な数学のパズルではなく、私たちのプライバシー、財産、そして社会インフラそのものを守るための最強の防壁なのです。
 

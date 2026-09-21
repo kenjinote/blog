@@ -138,7 +138,7 @@ En exécutant ce code, on peut observer que le ratio $\pi(x) / (x/\ln(x))$ se ra
 
 Les propriétés des nombres premiers ne sont pas seulement un sujet fascinant en mathématiques pures, mais elles sont aussi un élément crucial qui soutient l'infrastructure de sécurité de notre société moderne.
 
-La cryptographie à clé publique, telle que le chiffrement RSA, utilise la propriété selon laquelle "la factorisation en nombres premiers d'entiers gigantesques est extrêmement difficile". Le théorème des nombres premiers garantit la probabilité de trouver un "nombre premier d'une taille appropriée", ce qui est nécessaire pour la génération de clés cryptographiques.
+La cryptographie à clé publique, telle que le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), utilise la propriété selon laquelle "la factorisation en nombres premiers d'entiers gigantesques est extrêmement difficile". Le théorème des nombres premiers garantit la probabilité de trouver un "nombre premier d'une taille appropriée", ce qui est nécessaire pour la génération de clés cryptographiques.
 
 Par exemple, la probabilité qu'un nombre impair aléatoire de 1024 bits soit premier est estimée à environ $1 / (1024 \times \ln(2) / 2) \approx 1 / 355$. Cela signifie qu'en effectuant le test de primalité quelques centaines de fois, on peut trouver un grand nombre premier nécessaire avec une probabilité élevée, et sans le théorème des nombres premiers, la construction de systèmes cryptographiques efficaces serait impossible.
 

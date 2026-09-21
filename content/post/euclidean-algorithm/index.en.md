@@ -150,10 +150,10 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 # Check: 111 * 3 + 30 * (-11) = 333 - 330 = 3
 ```
 
-## Applications in Modern Society (RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy, etc.)
+## Applications in Modern Society ([RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy, etc.)
 
 The Extended [Euclide](https://kenji.blog/en/p/euclid/)an algorithm is not just a math puzzle, but an essential technology supporting modern internet society.
-A prime example is **RSA cryptography**. In the key generation process of RSA encryption, it is necessary to find a private key $d$ (modular inverse) that satisfies $e d \equiv 1 \pmod{\phi(N)}$ for a given number $e$ and Euler's totient function $\phi(N)$.
+A prime example is **[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography**. In the key generation process of RSA encryption, it is necessary to find a private key $d$ (modular inverse) that satisfies $e d \equiv 1 \pmod{\phi(N)}$ for a given number $e$ and Euler's totient function $\phi(N)$.
 Because this can be rearranged into the form $ed + k\phi(N) = 1$, we can use the Extended [Euclide](https://kenji.blog/en/p/euclid/)an algorithm to compute $d$ at extremely high speeds.
 
 ## Conclusion

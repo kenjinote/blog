@@ -14,7 +14,7 @@ description: 'Dari sandi Caesar kuno, mesin Enigma, kriptografi kunci publik, hi
 
 Kriptografi ([Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy) adalah teknologi untuk menjaga kerahasiaan informasi, dan telah berevolusi bersamaan dengan sejarah umat manusia. Dari transmisi perintah rahasia dalam perang kuno hingga perlindungan informasi kartu kredit di internet modern, tujuan kriptografi tetap konsisten. Tujuannya adalah "memastikan bahwa hanya penerima yang dituju yang dapat memahami informasi tersebut, dan tidak dapat diuraikan oleh pihak ketiga".
 
-Dalam keamanan informasi modern, kriptografi tidak hanya terbatas pada "kerahasiaan informasi (Kerahasiaan: Confidentiality)", tetapi juga memainkan peran penting dalam "Integritas (Integrity)", "Otentikasi (Authentication)", dan "Nirsangkal (Non-repudiation)" dari data.
+Dalam keamanan informasi modern, kriptografi tidak hanya terbatas pada "kerahasiaan informasi (Kerahasiaan: Confidentiality)", tetapi juga memainkan peran penting dalam "Integritas (Integrity)", "Otentikasi ([Authentication](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/))", dan "Nirsangkal (Non-repudiation)" dari data.
 
 Dalam artikel ini, kita akan mengungkap sejarah evolusi kriptografi dari perspektif teknis dan matematis, dimulai dari sandi substitusi sederhana kuno, mesin sandi mekanis, kriptografi kunci simetris dan kunci publik modern, hingga era "Kriptografi Pasca-Kuantum (PQC)" yang tiba dengan komersialisasi komputer kuantum.
 
@@ -135,7 +135,7 @@ graph TD
 
 ---
 
-# 5. Revolusi Kriptografi Kunci Publik: Dari Diffie-Hellman ke RSA
+# 5. Revolusi Kriptografi Kunci Publik: Dari Diffie-Hellman ke [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)
 
 Kriptografi kunci simetris memiliki kelemahan fatal: "Masalah Distribusi Kunci (Key Distribution Problem)". Masalahnya adalah bagaimana berbagi "kunci bersama" dengan aman dengan pihak yang berada jauh sebelum memulai komunikasi terenkripsi. "Kriptografi Kunci Publik" yang lahir pada tahun 1970-an memecahkan masalah ini.
 
@@ -148,7 +148,7 @@ Pada tahun 1976, Whitfield Diffie dan Martin Hellman menerbitkan makalah terobos
 4. Alice menghitung $K = B^a \pmod{p}$, dan Bob menghitung $K = A^b \pmod{p}$.
 5. Melalui hukum eksponen, $K = (g^b)^a = (g^a)^b = g^{ab} \pmod{p}$, memungkinkan mereka untuk dengan sukses berbagi kunci yang sama $K$.
 
-## Kriptografi RSA
+## Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)
 Tahun berikutnya, pada tahun 1977, "Kriptografi RSA" diciptakan oleh tiga orang: Ron Rivest, Adi Shamir, dan Leonard Adleman. Ini didasarkan pada properti bahwa "memfaktorkan bilangan komposit besar menjadi bilangan prima adalah sulit".
 
 **Mekanisme Matematis RSA:**
@@ -195,11 +195,11 @@ rsa_example()
 
 # 6. Bangkitnya Kriptografi Kurva Eliptik (ECC)
 
-Meskipun kriptografi RSA kuat, dengan peningkatan kinerja komputer, menjadi perlu untuk memperpanjang kunci (saat ini 2048 atau 3072 bit) untuk menjaga keamanan, yang mengakibatkan masalah peningkatan biaya komputasi.
+Meskipun kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) kuat, dengan peningkatan kinerja komputer, menjadi perlu untuk memperpanjang kunci (saat ini 2048 atau 3072 bit) untuk menjaga keamanan, yang mengakibatkan masalah peningkatan biaya komputasi.
 
 Sebagai solusinya, "Kriptografi Kurva Eliptik (ECC: Elliptic Curve [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)" diusulkan pada tahun 1985. Ini menggunakan penambahan titik pada kurva eliptik di atas medan berhingga (umumnya dalam bentuk $y^2 = x^3 + ax + b$).
 
-Masalah logaritma diskrit pada kurva eliptik (ECDLP) diketahui lebih sulit dipecahkan daripada masalah faktorisasi prima, sehingga **ECC dapat mencapai tingkat keamanan yang setara dengan RSA 3072-bit hanya dengan panjang kunci 256-bit**. Hal ini memungkinkan komunikasi terenkripsi yang cepat dan aman (seperti ECDSA dan ECDH) bahkan di lingkungan dengan sumber daya komputasi terbatas seperti smartphone dan perangkat IoT.
+Masalah logaritma diskrit pada kurva eliptik (ECDLP) diketahui lebih sulit dipecahkan daripada masalah faktorisasi prima, sehingga **ECC dapat mencapai tingkat keamanan yang setara dengan [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) 3072-bit hanya dengan panjang kunci 256-bit**. Hal ini memungkinkan komunikasi terenkripsi yang cepat dan aman (seperti ECDSA dan ECDH) bahkan di lingkungan dengan sumber daya komputasi terbatas seperti smartphone dan perangkat IoT.
 
 ---
 
@@ -261,7 +261,7 @@ timeline
 
 Sejarah teknologi kriptografi adalah sejarah pertarungan tanpa akhir antara penemuan metode kriptografi baru (perisai) dan metode dekripsi baru (tombak) yang memecahkannya.
 
-Sandi Caesar dikalahkan oleh analisis frekuensi, dan Enigma yang konon tak terkalahkan dihancurkan oleh otak jenius Turing dan kekuatan mesin. Dan kini, kriptografi kuat seperti RSA dan ECC yang mendukung fondasi masyarakat internet modern, dihadapkan pada ancaman dari "tombak" baru yang disebut komputer kuantum.
+Sandi Caesar dikalahkan oleh analisis frekuensi, dan Enigma yang konon tak terkalahkan dihancurkan oleh otak jenius Turing dan kekuatan mesin. Dan kini, kriptografi kuat seperti [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan ECC yang mendukung fondasi masyarakat internet modern, dihadapkan pada ancaman dari "tombak" baru yang disebut komputer kuantum.
 
 Namun, umat manusia telah melihat masa depan dan sedang bersiap dengan "perisai" baru yang disebut Kriptografi Pasca-Kuantum (PQC). Saat ini, mempersiapkan transisi dari kriptografi kunci publik yang ada menuju PQC (memastikan [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) Agility) adalah tugas mendesak di infrastruktur TI di seluruh dunia.
 

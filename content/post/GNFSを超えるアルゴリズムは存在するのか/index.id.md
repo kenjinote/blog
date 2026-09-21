@@ -11,7 +11,7 @@ tags: ["GNFS", "Integer Factorization", "RSA", "Algorithms"]
 
 ## 1. Pendahuluan: Faktorisasi Bilangan Prima dan Fondasi Kriptografi Modern
 
-Keamanan komunikasi internet dalam masyarakat modern sangat bergantung pada keamanan kriptografi RSA, yang merupakan kriptografi kunci publik. Keamanan kriptografi RSA sendiri didasarkan pada asumsi matematis tentang "kesulitan memfaktorkan bilangan komposit raksasa menjadi bilangan prima". Jika algoritma faktorisasi bilangan prima yang sangat efisien ditemukan, infrastruktur komunikasi di seluruh dunia akan runtuh dari dasarnya.
+Keamanan komunikasi internet dalam masyarakat modern sangat bergantung pada keamanan kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), yang merupakan kriptografi kunci publik. Keamanan kriptografi RSA sendiri didasarkan pada asumsi matematis tentang "kesulitan memfaktorkan bilangan komposit raksasa menjadi bilangan prima". Jika algoritma faktorisasi bilangan prima yang sangat efisien ditemukan, infrastruktur komunikasi di seluruh dunia akan runtuh dari dasarnya.
 
 Saat ini, dalam hal faktorisasi bilangan bulat raksasa menggunakan komputer klasik, algoritma tercepat dan terkuat yang mendominasi adalah **General Number Field Sieve (GNFS)**. GNFS lahir sebagai bentuk perluasan dari Special Number Field Sieve (SNFS) yang diusulkan pada akhir tahun 1980-an, dan hingga hari ini telah mencetak rekor faktorisasi bilangan komposit raksasa seperti RSA-768 dan RSA-250.
 
@@ -122,7 +122,7 @@ $$ f_1(x), f_{2,1}(x), f_{2,2}(x), \dots, f_{2,V}(x) $$
 
 Dengan menggunakan beberapa lapangan aljabar, probabilitas untuk "menjadi halus pada salah satu lapangan aljabar" pada setiap langkah penyaringan dapat ditingkatkan secara drastis. Melalui pendekatan ini, Coppersmith berhasil sedikit mengurangi konstanta $c$ dari kompleksitas $L_n[1/3, c]$.
 Secara khusus, secara teoritis telah ditunjukkan bahwa sementara konstanta GNFS adalah $c = (64/9)^{1/3} \approx 1.923$, dengan mengoptimalkan MNFS, kompleksitas waktu dapat direduksi hingga sekitar $c \approx 1.902$.
-Namun dalam praktiknya, *overhead* pengelolaan berbagai lapangan aljabar sangatlah besar, dan hal ini belum mencapai terobosan yang menentukan untuk modulus RSA dalam skala praktis.
+Namun dalam praktiknya, *overhead* pengelolaan berbagai lapangan aljabar sangatlah besar, dan hal ini belum mencapai terobosan yang menentukan untuk modulus [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dalam skala praktis.
 
 ### 4.2 Apakah Algoritma Kelas $L_n[1/4]$ Mungkin?
 
@@ -158,7 +158,7 @@ graph LR
 
 Perbedaan antara dua kelas kompleksitas komputasi ini memiliki makna yang sangat krusial (menentukan) dalam keamanan kriptografi dunia nyata.
 
-Sebagai contoh, perhatikan kasus pemfaktoran RSA-2048 (bilangan komposit 2048-bit).
+Sebagai contoh, perhatikan kasus pemfaktoran [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)-2048 (bilangan komposit 2048-bit).
 - **GNFS (Klasik)**: Mensubstitusikan $n \approx 2^{2048}$ ke dalam $L_n[1/3, 1.923]$, diperlukan sekitar $2^{112}$ operasi. Ini adalah jumlah perhitungan astronomis yang akan membutuhkan waktu lebih lama daripada umur alam semesta, bahkan jika semua sumber daya komputasi di Bumi saat ini digabungkan.
 - **Algoritma Shor (Kuantum)**: Dengan algoritma $O((\log n)^3)$, hanya diperlukan sekitar $2048^3 \approx 8.5 \times 10^9$ operasi gerbang logika. Hal ini berarti, jika perangkat keras yang tepat (komputer kuantum universal dengan jutaan qubit fisik dan kemampuan koreksi kesalahan) tersedia, perhitungan dapat diselesaikan hanya dalam beberapa jam atau beberapa hari saja.
 

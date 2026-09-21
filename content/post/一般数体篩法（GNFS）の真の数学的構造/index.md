@@ -118,7 +118,7 @@ $$\prod_{S} (a - b\alpha) = u \cdot \gamma^2$$
 ## 第5段階：アドレマンの魔法「平方剰余指標（Quadratic Characters）」
 
 イデアル類群の障害と、単数群の障害。この2つをどうやって乗り越えるのか？
-ここで、暗号学者レナード・アドレマン（RSAの"A"）らが導入した天才的な手法 **「平方剰余指標（Quadratic Characters）」** が登場します。
+ここで、暗号学者レナード・アドレマン（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)の"A"）らが導入した天才的な手法 **「平方剰余指標（Quadratic Characters）」** が登場します。
 
 「ある要素が代数体の中で完全に2乗になっているか？」を判定するために、[ルジャンドル](https://kenji.blog/p/legendre/)記号（平方剰余）の代数体バージョンを使います。
 先ほどの巨大な行列（素イデアルの個数を偶数にするためのパズル）に、 **「いくつかの特別な素イデアル $\mathfrak{q}$ に対する平方剰余指標もすべて $1$（偶数）になる」という追加の条件（列）を数十個ほどこっそり付け足す** のです。
@@ -157,7 +157,7 @@ $$X = V \pmod N$$
 あとは、この $X$ と $Y$ が自明な解（$X \equiv \pm Y$）でないことを祈りながら、
 **$\gcd(X - Y, N)$** を計算します。
 
-非自明な解であれば、[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)が0.001秒で走り抜け、RSA暗号の心臓部である秘密の素数 $p$ と $q$ が出力画面に印字されます。
+非自明な解であれば、[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)が0.001秒で走り抜け、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の心臓部である秘密の素数 $p$ と $q$ が出力画面に印字されます。
 
 ---
 

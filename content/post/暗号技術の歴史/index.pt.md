@@ -14,7 +14,7 @@ description: 'Da antiga cifra de César ao Enigma, à criptografia de chave púb
 
 A criptografia ([Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy) é uma tecnologia para preservar o sigilo das informações e tem evoluído junto com a história da humanidade. Desde a transmissão de comandos secretos em guerras antigas até a proteção de informações de cartão de crédito na internet moderna, o propósito da criptografia tem sido consistente. Consiste em "garantir que apenas os destinatários pretendidos possam entender as informações e que terceiros não consigam decifrá-las".
 
-Na segurança da informação moderna, a tecnologia criptográfica não se limita apenas ao "sigilo da informação (Confidencialidade: Confidentiality)", mas desempenha papéis cruciais como a "Integridade (Integrity)" dos dados, a "Autenticação (Authentication)" e o "Não-repúdio (Non-repudiation)".
+Na segurança da informação moderna, a tecnologia criptográfica não se limita apenas ao "sigilo da informação (Confidencialidade: Confidentiality)", mas desempenha papéis cruciais como a "Integridade (Integrity)" dos dados, a "Autenticação ([Authentication](https://kenji.blog/pt/p/oauth2-oidc-authentication-authorization-difference/))" e o "Não-repúdio (Non-repudiation)".
 
 Neste artigo, desvendaremos detalhadamente a história da evolução da tecnologia criptográfica a partir de uma perspectiva técnica e matemática, começando pelas simples cifras de substituição antigas, passando pelas cifras mecânicas, as modernas criptografias de chave simétrica e chave pública, e chegando à era da "Criptografia Pós-Quântica (PQC)" que surge com o uso prático dos computadores quânticos.
 
@@ -135,7 +135,7 @@ graph TD
 
 ---
 
-# 5. A Revolução da Criptografia de Chave Pública: De Diffie-Hellman a RSA
+# 5. A Revolução da Criptografia de Chave Pública: De Diffie-Hellman a [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)
 
 A criptografia de chave simétrica possuía uma fraqueza decisiva. Trata-se do "Problema de Distribuição de Chaves (Key Distribution Problem)". É o problema de como compartilhar de forma segura uma "chave comum" com uma parte distante antes de iniciar a comunicação criptografada. Este problema foi resolvido pela "Criptografia de Chave Pública", nascida na década de 1970.
 
@@ -148,7 +148,7 @@ Em 1976, Whitfield Diffie e Martin Hellman publicaram o artigo revolucionário "
 4. Alice calcula $K = B^a \pmod{p}$, e Bob calcula $K = A^b \pmod{p}$.
 5. Pelas leis dos expoentes, $K = (g^b)^a = (g^a)^b = g^{ab} \pmod{p}$, e assim, de forma brilhante, eles podem compartilhar a mesma chave $K$.
 
-## Criptografia RSA
+## Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)
 No ano seguinte, em 1977, a "Criptografia RSA" foi concebida por Ron Rivest, Adi Shamir e Leonard Adleman. Ela baseia-se na propriedade de que "a fatoração de números compostos gigantes é difícil".
 
 **Mecanismo matemático do RSA:**
@@ -195,11 +195,11 @@ rsa_example()
 
 # 6. A Ascensão da Criptografia de Curva Elíptica (ECC)
 
-A criptografia RSA é forte, mas com a melhoria no desempenho dos computadores, tornou-se necessário aumentar o tamanho da chave para manter a segurança (atualmente 2048 bits ou 3072 bits), o que gerou o problema do aumento do custo computacional.
+A criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) é forte, mas com a melhoria no desempenho dos computadores, tornou-se necessário aumentar o tamanho da chave para manter a segurança (atualmente 2048 bits ou 3072 bits), o que gerou o problema do aumento do custo computacional.
 
 Portanto, em 1985 foi proposta a "Criptografia de Curva Elíptica (Elliptic Curve [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy: ECC)". Isso utiliza a adição de pontos em uma curva elíptica sobre um campo finito (geralmente na forma de $y^2 = x^3 + ax + b$).
 
-Sabe-se que o Problema do Logaritmo Discreto em Curvas Elípticas (ECDLP) é ainda mais difícil de resolver do que o problema da fatoração de primos, e **o ECC pode alcançar a mesma segurança que o RSA de 3072 bits com um tamanho de chave de apenas 256 bits**. Isso possibilitou uma comunicação criptografada de alta velocidade e segurança (como ECDSA e ECDH) até mesmo em ambientes com recursos computacionais limitados, como smartphones e dispositivos IoT.
+Sabe-se que o Problema do Logaritmo Discreto em Curvas Elípticas (ECDLP) é ainda mais difícil de resolver do que o problema da fatoração de primos, e **o ECC pode alcançar a mesma segurança que o [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) de 3072 bits com um tamanho de chave de apenas 256 bits**. Isso possibilitou uma comunicação criptografada de alta velocidade e segurança (como ECDSA e ECDH) até mesmo em ambientes com recursos computacionais limitados, como smartphones e dispositivos IoT.
 
 ---
 
@@ -207,7 +207,7 @@ Sabe-se que o Problema do Logaritmo Discreto em Curvas Elípticas (ECDLP) é ain
 
 A tecnologia criptográfica parecia sólida, mas em 1994, o "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)" publicado por Peter Shor causou um grande impacto.
 
-Os computadores quânticos realizam cálculos utilizando as propriedades da mecânica quântica de "superposição" e "emaranhamento quântico". Foi matematicamente provado que a execução do algoritmo de Shor em um computador quântico de desempenho suficiente pode resolver o problema de fatoração de primos e o problema do logaritmo discreto em "tempo polinomial". Ou seja, no dia em que um computador quântico prático for concluído (Q-Day), as criptografias de chave pública usadas atualmente, como RSA e ECC, serão corrompidas instantaneamente.
+Os computadores quânticos realizam cálculos utilizando as propriedades da mecânica quântica de "superposição" e "emaranhamento quântico". Foi matematicamente provado que a execução do algoritmo de Shor em um computador quântico de desempenho suficiente pode resolver o problema de fatoração de primos e o problema do logaritmo discreto em "tempo polinomial". Ou seja, no dia em que um computador quântico prático for concluído (Q-Day), as criptografias de chave pública usadas atualmente, como [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e ECC, serão corrompidas instantaneamente.
 
 ## O Surgimento da PQC (Post-Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy)
 Em preparação para esta ameaça sem precedentes, pesquisas em "Criptografia Pós-Quântica (PQC)", baseada em novos problemas matemáticos difíceis de resolver mesmo para computadores quânticos, estão avançando a passos largos. O NIST (Instituto Nacional de Padrões e Tecnologia dos EUA) tem conduzido um processo de padronização da PQC ao longo de muitos anos, e as seguintes abordagens matemáticas são consideradas as mais promissoras.
@@ -261,7 +261,7 @@ timeline
 
 A história da tecnologia criptográfica é a história de uma batalha interminável entre a invenção de novos esquemas de criptografia (escudos) e os novos métodos de decodificação que os quebram (lanças).
 
-A Cifra de César foi derrotada pela análise de frequência, e a outrora invencível Enigma foi derrotada pelo gênio de Turing e o poder das máquinas. E agora, as fortes criptografias como RSA e ECC, que sustentam as bases da sociedade moderna da internet, estão sob a ameaça da nova "lança", que é o computador quântico.
+A Cifra de César foi derrotada pela análise de frequência, e a outrora invencível Enigma foi derrotada pelo gênio de Turing e o poder das máquinas. E agora, as fortes criptografias como [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e ECC, que sustentam as bases da sociedade moderna da internet, estão sob a ameaça da nova "lança", que é o computador quântico.
 
 No entanto, a humanidade já vislumbra o futuro e está se preparando para o novo "escudo", a Criptografia Pós-Quântica (PQC). Atualmente, as preparações para a transição (Garantia de Agilidade Criptográfica - [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/) Agility) das criptografias de chave pública existentes para a PQC em infraestruturas de TI ao redor do mundo são uma questão de urgência.
 

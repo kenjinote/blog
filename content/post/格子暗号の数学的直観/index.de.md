@@ -11,7 +11,7 @@ tags: ["Gitter", "PQC", "LWE", "Kryptographie", "Mathematik"]
 
 # 1. Einführung: Anbruch der Post-Quanten-Kryptographie (PQC) und der Aufstieg der gitterbasierten Kryptographie
 
-Die digitale Infrastruktur unserer modernen Gesellschaft stützt sich auf Public-Key-Kryptographie-Technologien wie RSA und elliptische Kurvenkryptographie (ECC). Diese Verschlüsselungsmethoden basieren ihre Sicherheit auf mathematischen Schwierigkeiten wie dem "Faktorisierungsproblem" und dem "diskreten Logarithmusproblem", von denen angenommen wird, dass sie von herkömmlichen klassischen Computern nicht effizient (sie benötigen exponentielle Zeit) gelöst werden können.
+Die digitale Infrastruktur unserer modernen Gesellschaft stützt sich auf Public-Key-Kryptographie-Technologien wie [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) und elliptische Kurvenkryptographie (ECC). Diese Verschlüsselungsmethoden basieren ihre Sicherheit auf mathematischen Schwierigkeiten wie dem "Faktorisierungsproblem" und dem "diskreten Logarithmusproblem", von denen angenommen wird, dass sie von herkömmlichen klassischen Computern nicht effizient (sie benötigen exponentielle Zeit) gelöst werden können.
 
 Allerdings erschütterte der 1994 von Peter Shor veröffentlichte "[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)" die Welt der Kryptographie. Dieser Algorithmus bewies mathematisch, dass, sobald großangelegte Quantencomputer realisiert sind, das Faktorisierungsproblem und das diskrete Logarithmusproblem in polynomieller Zeit gelöst werden könnten. Das bedeutet, dass die heute weit verbreitete Public-Key-Kryptographie in Zukunft vollständig entschlüsselbar sein wird.
 
@@ -152,7 +152,7 @@ Da wir nun die Schwierigkeit des LWE-Problems verstehen, wollen wir uns ansehen,
 3. Generiere eine zufällige Matrix $A \in \mathbb{Z}_q^{m \times n}$.
 4. Wähle einen kleinen Fehlervektor $\mathbf{e} \in \mathbb{Z}_q^m$ aus einer Fehlerverteilung wie der diskreten Gaußverteilung.
 5. Berechne den Vektor $\mathbf{b} = A \mathbf{s} + \mathbf{e} \pmod q$.
-6. Der öffentliche Schlüssel (Public Key) ist $(A, \mathbf{b})$.
+6. Der öffentliche Schlüssel ([Public Key](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)) ist $(A, \mathbf{b})$.
 7. Der geheime Schlüssel (Secret Key) ist $\mathbf{s}$.
 
 Der öffentliche Schlüssel ist buchstäblich eine "Instanz des LWE-Problems" selbst. Die Sicherheit ist garantiert, weil die Berechnung des geheimen Schlüssels $\mathbf{s}$ aus dem öffentlichen Schlüssel $(A, \mathbf{b})$ der Lösung des Such-LWE-Problems entspricht.
@@ -312,7 +312,7 @@ Der derzeit vom NIST als Standard für einen PQC-Schlüsselaustauschalgorithmus 
 
 Zum Schluss wollen wir auf den Kernpunkt eingehen: "Warum geht man davon aus, dass gitterbasierte Kryptographie selbst mit einem Quantencomputer nicht entschlüsselt werden kann?"
 
-Der [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/), mit dem Quantencomputer RSA-Kryptographie und elliptische Kurvenkryptographie brechen können, ist im Wesentlichen ein Algorithmus zur Lösung des "Problems der versteckten Untergruppe (Hidden Subgroup Problem: HSP)". Die mathematischen Strukturen (endliche abelsche Gruppen), die hinter RSA und ECC stehen, weisen eine Periodizität auf. Durch die Anwendung einer quantenalgorithmus-spezifischen Operation, der Quanten-Fourier-Transformation (QFT), kann diese Periode (die versteckte Untergruppe) auf einen Schlag extrahiert werden.
+Der [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/), mit dem Quantencomputer [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie und elliptische Kurvenkryptographie brechen können, ist im Wesentlichen ein Algorithmus zur Lösung des "Problems der versteckten Untergruppe (Hidden Subgroup Problem: HSP)". Die mathematischen Strukturen (endliche abelsche Gruppen), die hinter RSA und ECC stehen, weisen eine Periodizität auf. Durch die Anwendung einer quantenalgorithmus-spezifischen Operation, der Quanten-Fourier-Transformation (QFT), kann diese Periode (die versteckte Untergruppe) auf einen Schlag extrahiert werden.
 
 Gitterprobleme sind jedoch grundlegend anders. Gitter weisen ebenfalls eine Periodizität auf, aber das, was bei SVP oder CVP verlangt wird, sind geometrische und nichtlineare Eigenschaften wie der "kürzeste Abstand" oder die "Beseitigung von Rauschen". Selbst wenn man eine "Quanten-Fourier-Transformation über abelschen Gruppen" wie bei Shors Algorithmus direkt anwendet, kann man die nützlichen Informationen, die als Lösung für das Gitterproblem dienen, nicht effizient extrahieren. Bis heute wurde kein Quantenalgorithmus entdeckt, der SVP oder LWE in polynomieller Zeit lösen kann. Es wird weithin angenommen, dass selbst die parallele Rechenleistung von Quantencomputern nur Brute-Force-ähnliche Suchen (etwa im Umfang der Quadratwurzel-Beschleunigung durch den Grover-Algorithmus) als wirksames Mittel zur Verfügung hat.
 

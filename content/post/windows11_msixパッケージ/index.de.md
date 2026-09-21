@@ -131,7 +131,7 @@ Damit ist die unsignierte MSIX-Datei fertig, aber in diesem Zustand kann sie nic
 
 Um zu verstehen, warum MSIX-Pakete eine Signatur benötigen, ist es notwendig, die kryptographischen Mechanismen hinter digitalen Signaturen zu verstehen. Eine digitale Signatur garantiert, dass das Paket "mit Sicherheit von dem angegebenen Herausgeber erstellt wurde (Authentifizierung)" und dass es "seit der Erstellung bis heute nicht von Dritten manipuliert wurde (Integrität)".
 
-Für MSIX-Signaturen wird normalerweise eine Kombination aus RSA-Verschlüsselung und SHA-256 (Secure Hash Algorithm 256-bit) verwendet.
+Für MSIX-Signaturen wird normalerweise eine Kombination aus [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung und SHA-256 (Secure Hash Algorithm 256-bit) verwendet.
 
 ### Anwendung der Hash-Funktion
 Zunächst betrachten wir die gesamte Binärdatei (den Inhalt) des MSIX-Pakets als Nachricht $M$. Das Signatur-Tool (SignTool.exe) wendet die kryptographische Hash-Funktion SHA-256 auf diese Nachricht $M$ an, um einen Hash-Wert $H(M)$ fester Länge (256 Bit) zu berechnen.
@@ -141,7 +141,7 @@ Anschließend verwendet der Herausgeber seinen "privaten Schlüssel (Private Key
 
 $$ \sigma \equiv (H(M))^d \pmod n $$
 
-Hierbei ist $n$ der RSA-Modul (das Produkt zweier sehr großer Primzahlen). Ein Zertifikat (im X.509-Format), das diese Signatur $\sigma$ und den "öffentlichen Schlüssel (Public Key)" $e$ des Herausgebers enthält, wird als Teil des MSIX-Pakets (`AppxSignature.p7x`) eingebettet.
+Hierbei ist $n$ der RSA-Modul (das Produkt zweier sehr großer Primzahlen). Ein Zertifikat (im X.509-Format), das diese Signatur $\sigma$ und den "öffentlichen Schlüssel ([Public Key](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/))" $e$ des Herausgebers enthält, wird als Teil des MSIX-Pakets (`AppxSignature.p7x`) eingebettet.
 
 ### Validierung der Signatur (Windows OS)
 Wenn ein Benutzer versucht, das MSIX-Paket zu installieren, extrahiert das Windows-Betriebssystem den öffentlichen Schlüssel $e$ aus dem Zertifikat im Paket und führt die folgende Berechnung durch, um den Hash-Wert $H'(M)$ wiederherzustellen:

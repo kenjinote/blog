@@ -321,7 +321,7 @@ sudo usermod -aG docker $USER
 
 Git의 SSH 클론이나 원격 서버에 SSH 접속을 수행할 때, Windows 측과 WSL 측에서 별도의 SSH 키를 관리하는 것은 매우 번거롭습니다. 보안과 편의성을 양립시키기 위해 Windows 측에서 가동 중인 SSH 에이전트(또는 1Password와 같은 암호 관리자)를 WSL 측에 브릿지하는 설정을 수행합니다.
 
-여기에서는 가장 안전하고 모던한 접근 방식으로, **1Password의 SSH 에이전트 기능 ** 또는 **Windows의 OpenSSH Authentication Agent** 를 이용하고, `npiperelay` 나 `socat` 을 사용하여 WSL2의 UNIX 도메인 소켓으로 포워딩하는 방법을 설명합니다.
+여기에서는 가장 안전하고 모던한 접근 방식으로, **1Password의 SSH 에이전트 기능 ** 또는 **Windows의 OpenSSH [Authentication](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) Agent** 를 이용하고, `npiperelay` 나 `socat` 을 사용하여 WSL2의 UNIX 도메인 소켓으로 포워딩하는 방법을 설명합니다.
 
 ### ssh-agent의 소켓 포워딩
 

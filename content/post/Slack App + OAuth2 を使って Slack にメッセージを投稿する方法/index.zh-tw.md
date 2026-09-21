@@ -11,20 +11,20 @@ description: '說明如何利用 Slack App 的 OAuth 權杖，透過 Slack Web A
 
 ## ✅ 使用存取權杖的發文方法（Slack Web API）
 
-Slack 的「OAuth Token（例如 xoxb-... 等）」是用來透過 Slack 的 [Web API](https://api.slack.com/methods/chat.postMessage) 發文的密鑰。
+Slack 的「[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) Token（例如 xoxb-... 等）」是用來透過 Slack 的 [Web API](https://api.slack.com/methods/chat.postMessage) 發文的密鑰。
 在這種情況下，與 Webhook 不同，你需要向 **Slack API 端點** 進行帶有 `Authorization: Bearer` 標頭的 `POST` 請求。
 
 ---
 
 ## 🔑 必要前提
 
-你必須在 Slack 應用程式的 **OAuth 範圍內包含 `chat:write`** ：
+你必須在 Slack 應用程式的 **[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 範圍內包含 `chat:write`** ：
 
 ### 設定步驟
 
 1. 前往 [https://api.slack.com/apps](https://api.slack.com/apps)
 2. 建立應用程式或選擇現有應用程式
-3. 在「OAuth & Permissions」 > `Scopes` 中
+3. 在「[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) & Permissions」 > `Scopes` 中
    → 新增 `chat:write`
 4. 點擊「Install to Workspace」或「Reinstall」以獲取 `Access Token`（例如：`xoxb-xxxxxxxxxx`）
 

@@ -10,7 +10,7 @@ categories: ["math-cryptography-quantum"]
 description: 'Le problème de la factorisation qui sous-tend la sécurité du chiffrement RSA. Depuis le mécanisme mathématique de « l''algorithme du Crible du Corps de Nombres Généralisé (GNFS) », le plus puissant des algorithmes classiques, jusqu''aux raisons pour lesquelles « l''algorithme de Shor » des ordinateurs quantiques le surpasse, nous l''expliquerons en profondeur à l''aide de formules et de schémas conceptuels.'
 ---
 
-Dans la société Internet moderne, la sécurité des informations est protégée par des systèmes de cryptographie à clé publique tels que le chiffrement RSA. Le fondement de la sécurité du chiffrement RSA repose sur le fait suivant : **« la factorisation de nombres composés géants est extrêmement difficile sur le plan de la complexité des calculs »**.
+Dans la société Internet moderne, la sécurité des informations est protégée par des systèmes de cryptographie à clé publique tels que le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/). Le fondement de la sécurité du chiffrement RSA repose sur le fait suivant : **« la factorisation de nombres composés géants est extrêmement difficile sur le plan de la complexité des calculs »**.
 
 Cet article décortique le mécanisme mathématique du **« crible algébrique » ** (General Number Field Sieve, GNFS), l'algorithme de factorisation en nombres premiers le plus puissant sur les ordinateurs classiques, et explore en profondeur, à l'aide de formules et de schémas conceptuels, ce changement de paradigme et pourquoi il est complètement vaincu par ** « l'algorithme de Shor »** découvert par Peter Shor.
 

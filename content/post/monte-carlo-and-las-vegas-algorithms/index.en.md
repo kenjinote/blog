@@ -67,7 +67,7 @@ The more you increase the number of trials `num_samples`, the more accurate the 
 
 ### Concrete Example 2: Miller-Rabin Primality Test
 
-This is an algorithm that quickly determines whether a huge number is a prime number. When generating keys for RSA encryption, etc., prime numbers of hundreds of digits are required, but if this is done using deterministic trial division (dividing sequentially by $2, 3, 5, \dots$), it will not finish even if the lifespan of the universe runs out.
+This is an algorithm that quickly determines whether a huge number is a prime number. When generating keys for [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption, etc., prime numbers of hundreds of digits are required, but if this is done using deterministic trial division (dividing sequentially by $2, 3, 5, \dots$), it will not finish even if the lifespan of the universe runs out.
 
 Here, we use a Monte Carlo method called the **Miller-Rabin primality test**.
 For the number $n$ you want to test, select a random base $a$ and test whether it satisfies a specific conditional expression based on an extension of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/).

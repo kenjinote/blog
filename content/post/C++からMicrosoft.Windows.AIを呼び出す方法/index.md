@@ -118,7 +118,7 @@ binding.Bind(L"input_0", tensor);
 
 * モデルファイルが実行フォルダに存在しないと `FileNotFoundException` が出ます。
 * 入出力名が一致していないと `invalid_argument` エラーになります。
-* モデルの正確なIO仕様は [Netron](https://netron.app) などのツールで確認可能。
+* モデルの正確なIO仕様は [Netron](https://netron.app) などのツールで確[認可](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)能。
 
 ---
 

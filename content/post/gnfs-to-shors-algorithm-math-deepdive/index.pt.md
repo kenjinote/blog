@@ -10,7 +10,7 @@ categories: ["math-cryptography-quantum"]
 description: 'O problema da fatoração de inteiros, que garante a segurança da criptografia RSA. Explicamos detalhadamente, usando equações e diagramas conceituais, desde o mecanismo matemático do mais forte algoritmo clássico, o ''General Number Field Sieve (GNFS)'', até o motivo pelo qual o ''Algoritmo de Shor'' num computador quântico consegue derrotá-lo.'
 ---
 
-A segurança da informação na sociedade da internet moderna é protegida por sistemas de criptografia de chave pública, como a criptografia RSA. A base para a segurança da criptografia RSA depende do fato de que **"a fatoração de números compostos gigantescos é computacionalmente extremamente difícil"** .
+A segurança da informação na sociedade da internet moderna é protegida por sistemas de criptografia de chave pública, como a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/). A base para a segurança da criptografia RSA depende do fato de que **"a fatoração de números compostos gigantescos é computacionalmente extremamente difícil"** .
 
 Neste artigo, desvendaremos o mecanismo matemático do **"Crivo do Corpo de Números Generalizado"** (General Number Field Sieve, GNFS), que é o algoritmo de fatoração mais poderoso em computadores clássicos, e aprofundaremos minuciosamente, usando fórmulas matemáticas e diagramas conceituais, a mudança de paradigma de por que ele é completamente superado pelo **"[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)"** , descoberto por Peter Shor.
 

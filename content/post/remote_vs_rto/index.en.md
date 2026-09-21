@@ -16,7 +16,7 @@ The global pandemic of the early 2020s fundamentally overturned the definition o
 
 However, as the pandemic subsides, the industry landscape is transforming once again. Tech giants like Amazon, Google, and Meta have begun strongly pushing for a "hybrid model" that mandates several days of office attendance a week, or even a full "Return to Office (RTO)." This top-down RTO directive from management is creating severe friction with many engineers (Individual Contributors: ICs). While engineers argue that "a quiet home environment allows for better focus on code" and "commuting time is a waste of life," management counters that "innovation is born from serendipitous encounters" and "face-to-face communication is essential for fostering organizational culture."
 
-In this article, we will not dismiss this binary debate of "Remote Work vs. Return to Office" as mere emotional arguments or matters of personal preference. Instead, we will thoroughly dissect it through the objective and technical lenses of organizational sociology, quantitative evaluation of engineering productivity (DORA metrics, SPACE framework), and underlying network architecture (VPN and Zero Trust). Let's explore the "true optimal solution" that modern engineering organizations should aim for regarding this complex issue at the intersection of technology and human society.
+In this article, we will not dismiss this binary debate of "Remote Work vs. Return to Office" as mere emotional arguments or matters of personal preference. Instead, we will thoroughly dissect it through the objective and technical lenses of organizational sociology, quantitative evaluation of engineering productivity (DORA metrics, SPACE framework), and underlying network architecture (VPN and [Zero Trust](https://kenji.blog/en/p/zero-trust-network-architecture-beyond-corp/)). Let's explore the "true optimal solution" that modern engineering organizations should aim for regarding this complex issue at the intersection of technology and human society.
 
 ---
 
@@ -158,7 +158,7 @@ In initial architecture design or discussions of complex algorithms, the synchro
 
 ---
 
-# The Technological Foundation Supporting Remote Work: From the Limits of VPN to Zero Trust
+# The Technological Foundation Supporting Remote Work: From the Limits of VPN to [Zero Trust](https://kenji.blog/en/p/zero-trust-network-architecture-beyond-corp/)
 
 So far, we have discussed this from the perspectives of sociology and productivity, but another crucial factor determining the remote work experience is "network architecture." An engineer's productivity is directly linked to the access latency of the development environment and production servers.
 
@@ -172,7 +172,7 @@ $$ T_{total} = \frac{D}{c} + \frac{L}{B} + T_{proc} $$
 
 When using a traditional VPN, even when a remote engineer accesses cloud-based SaaS (like GitHub or the AWS console), an inefficient routing called "Hairpinning (Hairpin NAT)" occurs, where all traffic is pulled into the corporate network's VPN gateway before exiting to the internet. This unnecessarily increases the distance $D$ and causes the encryption/decryption processing delay $T_{proc}$ of the VPN appliance to skyrocket. This significantly degrades the response of an engineer's typing, destroying their state of flow.
 
-## The Paradigm Shift Brought by Zero Trust (BeyondCorp)
+## The Paradigm Shift Brought by Zero Trust ([BeyondCorp](https://kenji.blog/en/p/zero-trust-network-architecture-beyond-corp/))
 
 Breaking through these network limitations and realizing a true "environment where you can work comfortably and securely from anywhere" is the **Zero Trust Network Architecture (ZTNA)**, pioneered by Google's "BeyondCorp."
 
@@ -194,7 +194,7 @@ graph TD
     end
 ```
 
-In a Zero Trust architecture, there are no centralized chokepoints like VPNs. Whether from a home Wi-Fi network or a public cafe LAN, engineers access each resource directly through the shortest path via an Identity-Aware Proxy (IAP), based on strong contexts of device authentication (such as client certificates) and user authentication (MFA).
+In a [Zero Trust](https://kenji.blog/en/p/zero-trust-network-architecture-beyond-corp/) architecture, there are no centralized chokepoints like VPNs. Whether from a home Wi-Fi network or a public cafe LAN, engineers access each resource directly through the shortest path via an Identity-Aware Proxy (IAP), based on strong contexts of device authentication (such as client certificates) and user authentication (MFA).
 
 As a result, the unnecessary distance $D$ and excessive processing delay $T_{proc}$ in the aforementioned latency equation are eliminated, enabling terminal operations and massive data transfers with extremely low latency, entirely comparable to being in the office. The state where "productivity does not drop even when remote" is not just a matter of mentality, but is realized only with the construction of such an advanced Zero Trust foundation.
 

@@ -10,7 +10,7 @@ description: 'La cryptographie à clé publique comporte le risque d''être déc
 
 ## Introduction : La "menace" de l'informatique quantique pour la technologie de cryptographie
 
-Actuellement, la plupart des communications que nous effectuons quotidiennement sur Internet — paiements bancaires en ligne, navigation web (HTTPS), échanges sur des applications de messagerie, et même transactions sur blockchain ou cryptomonnaies — sont protégées par une technologie appelée "cryptographie à clé publique". Plus précisément, des algorithmes comme le chiffrement RSA et la cryptographie sur les courbes elliptiques (ECC) constituent le fondement de la fiabilité de notre société numérique moderne.
+Actuellement, la plupart des communications que nous effectuons quotidiennement sur Internet — paiements bancaires en ligne, navigation web (HTTPS), échanges sur des applications de messagerie, et même transactions sur blockchain ou cryptomonnaies — sont protégées par une technologie appelée "cryptographie à clé publique". Plus précisément, des algorithmes comme le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et la cryptographie sur les courbes elliptiques (ECC) constituent le fondement de la fiabilité de notre société numérique moderne.
 
 Ces méthodes de cryptographie reposent sur des problèmes mathématiques difficiles, tels que la "factorisation en nombres premiers de très grands nombres" et le "problème du logarithme discret", dont la résolution par les ordinateurs classiques actuels (y compris les supercalculateurs) prendrait un temps astronomique, garantissant ainsi leur sécurité. Cependant, avec la mise en pratique des **ordinateurs quantiques** , qui connaissent des progrès remarquables ces dernières années, cette prémisse sera fondamentalement renversée.
 
@@ -28,7 +28,7 @@ La cryptographie post-quantique (Post-Quantum [Crypto](https://kenji.blog/fr/p/c
 
 Des technologies souvent confondues sont la "cryptographie quantique (Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)" et la "distribution quantique de clés (QKD)", mais il s'agit d'approches totalement différentes. La cryptographie quantique (QKD) est une technologie matérielle qui utilise les lois de la mécanique quantique (comme le fait que l'observation modifie l'état) pour rendre l'écoute sur le canal de communication physiquement impossible. Elle nécessite des fibres optiques dédiées et des équipements spéciaux, ce qui pose des problèmes de coût de déploiement et de limite de distance.
 
-En revanche, **la PQC est une technologie de cryptographie purement logicielle basée sur les mathématiques** . Par conséquent, elle peut être intégrée sous forme de mise à jour logicielle dans l'infrastructure Internet existante, les serveurs, les smartphones, les navigateurs, etc., ce qui la rend extrêmement applicable dans le monde réel. Pour les entreprises informatiques et les gouvernements du monde entier, remplacer (migrer) le RSA et l'ECC actuellement utilisés par cette PQC est une tâche urgente.
+En revanche, **la PQC est une technologie de cryptographie purement logicielle basée sur les mathématiques** . Par conséquent, elle peut être intégrée sous forme de mise à jour logicielle dans l'infrastructure Internet existante, les serveurs, les smartphones, les navigateurs, etc., ce qui la rend extrêmement applicable dans le monde réel. Pour les entreprises informatiques et les gouvernements du monde entier, remplacer (migrer) le [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et l'ECC actuellement utilisés par cette PQC est une tâche urgente.
 
 ---
 
@@ -64,7 +64,7 @@ Imaginez un nombre infini de points disposés en réseau dans un espace à très
 
 **Avantages :** 
 - Applicable à la fois à l'échange de clés (KEM) et aux signatures numériques.
-- Vitesse de traitement très rapide (parfois plus rapide que RSA ou ECC).
+- Vitesse de traitement très rapide (parfois plus rapide que [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) ou ECC).
 - Bon équilibre avec des tailles de clé et de texte chiffré relativement petites.
 
 La plupart des algorithmes actuellement normalisés par le NIST (tels que ML-KEM et ML-DSA) adoptent cette cryptographie basée sur les réseaux.
@@ -149,7 +149,7 @@ Bien que le NIST ait terminé son premier processus de normalisation, il continu
 
 ## Scénarios de transition vers la PQC et défis : L'importance de la "[Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)-Agilité"
 
-Avec la publication de normes officielles par le NIST, les agences gouvernementales, les institutions financières et les entreprises technologiques du monde entier accélèrent leur migration (transition) des systèmes existants RSA/ECC vers la PQC. Les directives d'organismes tels que la NSA (Agence nationale de sécurité américaine) recommandent également d'achever cette migration rapidement.
+Avec la publication de normes officielles par le NIST, les agences gouvernementales, les institutions financières et les entreprises technologiques du monde entier accélèrent leur migration (transition) des systèmes existants [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)/ECC vers la PQC. Les directives d'organismes tels que la NSA (Agence nationale de sécurité américaine) recommandent également d'achever cette migration rapidement.
 
 ### Adoption d'une approche hybride
 

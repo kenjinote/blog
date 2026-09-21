@@ -39,7 +39,7 @@ De esta comunidad surgieron numerosas ideas que sentarían las bases para Bitcoi
 
 En 2008, estalló una crisis financiera mundial provocada por el colapso de Lehman Brothers. El 31 de octubre del mismo año, cuando la desconfianza en el sistema financiero existente había alcanzado su punto máximo, una persona (o grupo) anónima bajo el nombre de "Satoshi Nakamoto" publicó un artículo en una lista de correo de criptografía.
 
-El título era "Bitcoin: A Peer-to-Peer Electronic Cash System" (Bitcoin: Un Sistema de Efectivo Electrónico Peer-to-Peer). Este documento de 9 páginas mostraba cómo resolver el problema del doble gasto que había plagado intentos anteriores de dinero electrónico de una manera completamente descentralizada utilizando un mecanismo llamado **Prueba de Trabajo (Proof of Work: PoW)**.
+El título era "Bitcoin: A Peer-to-Peer Electronic Cash System" (Bitcoin: Un Sistema de Efectivo Electrónico Peer-to-Peer). Este documento de 9 páginas mostraba cómo resolver el problema del doble gasto que había plagado intentos anteriores de dinero electrónico de una manera completamente descentralizada utilizando un mecanismo llamado **Prueba de Trabajo (Proof of Work: [PoW](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/))**.
 
 ### El Bloque Génesis (Genesis Block)
 
@@ -50,9 +50,9 @@ El 3 de enero de 2009, la red de Bitcoin comenzó a operar. El primer bloque min
 
 Este era el titular del periódico británico "The Times" de la época, y servía como una fuerte ironía hacia las medidas de rescate financiero por parte del banco central, al tiempo que actuaba como una marca de tiempo para que Bitcoin permaneciera eternamente como sistema.
 
-## 3. Arquitectura Blockchain
+## 3. Arquitectura [Blockchain](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/)
 
-La tecnología central que soporta Bitcoin es la "Cadena de bloques" (Blockchain). Blockchain es una forma de Tecnología de Libro Mayor Distribuido (Distributed Ledger Technology: DLT), que tiene una estructura donde los datos se agrupan en unidades llamadas "bloques" y están vinculados criptográficamente como una cadena.
+La tecnología central que soporta Bitcoin es la "Cadena de bloques" (Blockchain). Blockchain es una forma de Tecnología de Libro Mayor Distribuido ([Distributed Ledger](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT), que tiene una estructura donde los datos se agrupan en unidades llamadas "bloques" y están vinculados criptográficamente como una cadena.
 
 ```mermaid
 flowchart TD
@@ -105,17 +105,17 @@ La función hash $H$ debe satisfacer las siguientes propiedades:
 
 En Bitcoin, SHA-256 se aplica doblemente en procesos como el cálculo de hashes de bloques y la generación de direcciones a partir de claves públicas (esto se llama `SHA256(SHA256(x))` o Hash256).
 
-### Criptografía de Clave Pública (Public Key Cryptography) y Firmas Digitales
+### Criptografía de Clave Pública ([Public Key](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) [Cryptography](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)) y Firmas Digitales
 
 La propiedad de una criptomoneda se demuestra mediante un par de clave privada (Private Key) y clave pública (Public Key).
 - **Clave privada** $k$: Un número entero de 256 bits generado aleatoriamente. Nunca debe ser conocido por otros.
 - **Clave pública** $K$: Una clave calculada a partir de la clave privada utilizando una función unidireccional. Se publica en la red.
 
-Cuando Alice envía Bitcoin a Bob, Alice usa su clave privada para crear una **firma digital (Digital Signature)** para los datos de la transacción. Los participantes de la red pueden usar la clave pública de Alice para verificar si la firma es válida (si realmente fue creada por Alice usando su clave privada).
+Cuando Alice envía Bitcoin a Bob, Alice usa su clave privada para crear una **firma digital ([Digital Signature](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/))** para los datos de la transacción. Los participantes de la red pueden usar la clave pública de Alice para verificar si la firma es válida (si realmente fue creada por Alice usando su clave privada).
 
 ### Criptografía de Curva Elíptica (Elliptic Curve Cryptography: ECC) y secp256k1
 
-Para la generación de claves públicas de Bitcoin y firmas digitales, se emplea **criptografía de curva elíptica (ECC)** en lugar del cifrado RSA. ECC tiene la ventaja de proporcionar niveles de seguridad equivalentes con tamaños de clave mucho más cortos en comparación con RSA.
+Para la generación de claves públicas de Bitcoin y firmas digitales, se emplea **criptografía de curva elíptica (ECC)** en lugar del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/). ECC tiene la ventaja de proporcionar niveles de seguridad equivalentes con tamaños de clave mucho más cortos en comparación con RSA.
 
 Los parámetros específicos de la curva elíptica utilizada en Bitcoin se llaman **secp256k1**. Esta curva está definida sobre un campo finito $\mathbb{F}_p$ y se expresa mediante la siguiente ecuación:
 
@@ -153,7 +153,7 @@ En el proceso de verificación, se realizan los siguientes cálculos usando la c
 3. Calcular el punto $(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$.
 4. Si $r \equiv x_2 \pmod{n}$, la firma se considera válida.
 
-## 5. Algoritmo de Consenso y Prueba de Trabajo (PoW)
+## 5. Algoritmo de Consenso y Prueba de Trabajo ([PoW](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/))
 
 En una red descentralizada, un algoritmo de consenso es el mecanismo para que todos acuerden el mismo estado del libro mayor.
 
@@ -161,7 +161,7 @@ En una red descentralizada, un algoritmo de consenso es el mecanismo para que to
 
 El "Problema de los Generales Bizantinos" es un problema clásico en la computación distribuida. Múltiples generales están asediando una ciudad enemiga y deben acordar si atacar o retirarse. Sin embargo, puede haber traidores entre los generales que envían mensajes falsos. El problema es cómo los generales honestos pueden llegar a un acuerdo correcto en tal situación.
 
-Bitcoin resolvió prácticamente este problema combinando la **Prueba de Trabajo (PoW)** y la **Regla de la Cadena Más Larga (Longest Chain Rule)**.
+Bitcoin resolvió prácticamente este problema combinando la **Prueba de Trabajo ([PoW](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/))** y la **Regla de la Cadena Más Larga (Longest Chain Rule)**.
 
 ### Matemáticas de la Minería y Nonce
 
@@ -226,9 +226,9 @@ Un enfoque prometedor para resolver el problema de escalabilidad es Lightning Ne
 
 En Lightning Network, los participantes abren "Canales de Pago" (Payment Channels) fuera de la cadena de bloques (fuera de la cadena). Dentro del canal, siempre que ambas partes estén de acuerdo, los fondos se pueden intercambiar de forma instantánea, casi sin costo y en innumerables ocasiones sin registrar la transacción en la cadena de bloques. Solo en la liquidación del saldo final se registra la transacción en la cadena de bloques (Capa 1).
 
-### Comparación con Prueba de Participación (PoS)
+### Comparación con Prueba de Participación ([PoS](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/))
 
-Otro gran desafío de PoW es el enorme consumo de energía de la minería. Como contramedida a este problema ambiental, Ethereum y otros han migrado a otro algoritmo de consenso llamado **Prueba de Participación (Proof of Stake: PoS)**.
+Otro gran desafío de [PoW](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/) es el enorme consumo de energía de la minería. Como contramedida a este problema ambiental, Ethereum y otros han migrado a otro algoritmo de consenso llamado **Prueba de Participación (Proof of Stake: PoS)**.
 
 En PoS, el derecho a generar el siguiente bloque (validador) se asigna probabilísticamente en función de la cantidad de criptomoneda retenida (participación) y el período de retención, en lugar de la potencia computacional (tasa de hash). Esto reduce el consumo de energía en más del 99%, pero existen críticas de que "es un sistema donde los ricos se hacen más ricos" y de que "la descentralización completa podría verse comprometida". Sin embargo, independientemente de cuánto sea criticado, Bitcoin continúa adhiriéndose a la filosofía PoW de "seguridad física a través del consumo de energía".
 
@@ -248,13 +248,13 @@ Dado que $p \approx 2^{256}$ en secp256k1 de Bitcoin, el descifrado requiere alr
 ### La Amenaza de las Computadoras Cuánticas y la Criptografía Poscúantica
 
 Sin embargo, hay una gran preocupación con la seguridad computacional. Ese es el surgimiento de las **computadoras cuánticas (Quantum Computers)**.
-En 1994, Peter Shor publicó el "[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)" ([Shor's Algorithm](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)), que demostró matemáticamente que las computadoras cuánticas pueden resolver el problema de factorización de enteros (la base del cifrado RSA) y el problema del logaritmo discreto (la base de ECC) en tiempo polinomial $\mathcal{O}(n^3)$.
+En 1994, Peter Shor publicó el "[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)" ([Shor's Algorithm](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)), que demostró matemáticamente que las computadoras cuánticas pueden resolver el problema de factorización de enteros (la base del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)) y el problema del logaritmo discreto (la base de ECC) en tiempo polinomial $\mathcal{O}(n^3)$.
 
 Si se completan computadoras cuánticas prácticas a gran escala con suficientes qubits y bajas tasas de error, existe el riesgo de que la clave privada pueda ser calculada inversamente a partir de la clave pública de Bitcoin.
 Las medidas de defensa de la red de Bitcoin contra esto son las siguientes:
 
 1. **Protección de funciones hash**: Una dirección de Bitcoin no es la clave pública en sí, sino el resultado de aplicar las funciones hash SHA-256 y RIPEMD-160 a la clave pública. Incluso utilizando computadoras cuánticas, invertir una función hash (incluso con el algoritmo de Grover, la complejidad es $\mathcal{O}(\sqrt{N})$) sigue siendo difícil. Por lo tanto, hasta que se realice una transacción y la clave pública se exponga a la red, el contenido de la dirección se considera seguro incluso contra computadoras cuánticas.
-2. **Migración a Criptografía Poscúantica (Post-Quantum Cryptography: PQC)**: Se está discutiendo realizar una bifurcación dura en el protocolo de Bitcoin antes de que las computadoras cuánticas se vuelvan prácticas, con el fin de migrar a nuevos algoritmos de firma que sean difíciles de descifrar incluso para las computadoras cuánticas, como la criptografía basada en retículos (Lattice-based cryptography) y la criptografía polinómica multivariable (Multivariate polynomial cryptography) seleccionadas por el NIST (Instituto Nacional de Estándares y Tecnología de EE. UU.).
+2. **Migración a Criptografía Poscúantica (Post-Quantum [Cryptography](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/): PQC)**: Se está discutiendo realizar una bifurcación dura en el protocolo de Bitcoin antes de que las computadoras cuánticas se vuelvan prácticas, con el fin de migrar a nuevos algoritmos de firma que sean difíciles de descifrar incluso para las computadoras cuánticas, como la criptografía basada en retículos (Lattice-based cryptography) y la criptografía polinómica multivariable (Multivariate polynomial cryptography) seleccionadas por el NIST (Instituto Nacional de Estándares y Tecnología de EE. UU.).
 
 ## 9. Topología de Red y Detalles del Protocolo [P2P](https://kenji.blog/es/p/webrtc-realtime-communication-p2p/)
 
@@ -266,7 +266,7 @@ Las computadoras que participan en la red se llaman "Nodos" (Nodes). Hay varios 
 
 - **Nodo Completo (Full Node)**: Un nodo que descarga y verifica todos los datos de la cadena de bloques (cientos de GB o más) desde el bloque génesis hasta el último bloque. Es la columna vertebral de la seguridad de la red porque verifica de forma independiente la validez de las transacciones y la presencia del doble gasto.
 - **Nodo SPV (Simplified Payment Verification Node)**: Un nodo ligero que descarga solo las cabeceras de los bloques en lugar de toda la cadena de bloques. Se utiliza principalmente en billeteras de teléfonos inteligentes. Puede verificar si sus propias transacciones están incluidas en un bloque (verificación de ruta de Merkle), pero carece de las capacidades de verificación de un nodo completo.
-- **Nodo Minero (Mining Node)**: Un nodo que realiza cálculos de PoW y genera nuevos bloques. Hoy en día, enormes "grupos de minería" (Mining pools) que agrupan hardware dedicado a la minería llamado ASIC (Application Specific Integrated Circuit) asumen este papel.
+- **Nodo Minero (Mining Node)**: Un nodo que realiza cálculos de [PoW](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/) y genera nuevos bloques. Hoy en día, enormes "grupos de minería" (Mining pools) que agrupan hardware dedicado a la minería llamado ASIC (Application Specific Integrated Circuit) asumen este papel.
 
 ### Proceso de Propagación de Transacciones (Gossip Protocol)
 
@@ -279,7 +279,7 @@ Cuando un usuario (Alice) crea una transacción para enviar Bitcoin, ¿cómo se 
 
 De esta manera, las transacciones válidas se extienden a las mempools de los nodos en todo el mundo en cuestión de segundos. Los mineros priorizan las transacciones con comisiones altas (Fees) de esta mempool y las empaquetan en nuevos bloques.
 
-## 10. Economía de Blockchain: Teoría de Juegos y Diseño de Incentivos
+## 10. Economía de [Blockchain](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/): Teoría de Juegos y Diseño de Incentivos
 
 El mayor logro de Satoshi Nakamoto no fue solo resolver el rompecabezas criptográfico, sino también construir un **diseño de incentivos (Incentive Design)** perfecto donde "las acciones egoístas de individuos y organizaciones, en última instancia, aumentan la seguridad de toda la red".
 

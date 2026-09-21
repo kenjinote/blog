@@ -11,11 +11,11 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 ## 1. 引言：支撑现代密码学的数学奥秘
 
-在现代数字社会，尤其是基于互联网的通信中，“加密”已经成为不可或缺的基础设施技术。我们在网络浏览器上通过HTTPS安全地浏览网站、在网上银行进行金融交易、在即时通讯应用上进行私密交流，这一切的背后，都是由基于高级数学理论的加密协议在发挥作用。其中发挥关键作用的是“公钥加密算法”，其代表就是 **RSA加密** 。
+在现代数字社会，尤其是基于互联网的通信中，“加密”已经成为不可或缺的基础设施技术。我们在网络浏览器上通过HTTPS安全地浏览网站、在网上银行进行金融交易、在即时通讯应用上进行私密交流，这一切的背后，都是由基于高级数学理论的加密协议在发挥作用。其中发挥关键作用的是“公钥加密算法”，其代表就是 **[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密** 。
 
 包括RSA加密在内的许多加密算法的安全性与合理性，都极大地依赖于17世纪法国数学家[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)（[Pierre de Fermat](https://kenji.blog/zh-cn/p/fermat/)）发现的一个非常优美且强大的定理。那就是 **[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/zh-cn/p/fermats-little-theorem/)）** 。此外，将其一般化的[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)（[Leonhard Euler](https://kenji.blog/zh-cn/p/euler/)）定理也在密码学理论中发挥了决定性作用。
 
-本文将从基础开始全面解析，纯数学的发现——[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)，是如何被应用到现代实用的加密技术中，特别是在“素数测试”和“RSA加密”中的。本篇将是一份非常详细的技术指南，涵盖数学证明、加密与解密的机制，以及使用 C++ 和 Python 进行的具体算法实现。
+本文将从基础开始全面解析，纯数学的发现——[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)，是如何被应用到现代实用的加密技术中，特别是在“素数测试”和“[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密”中的。本篇将是一份非常详细的技术指南，涵盖数学证明、加密与解密的机制，以及使用 C++ 和 Python 进行的具体算法实现。
 
 ---
 
@@ -42,7 +42,7 @@ $$
 3. **乘法**: 如果 $a \equiv b \pmod n$ 且 $c \equiv d \pmod n$，那么 $a \times c \equiv b \times d \pmod n$
 4. **幂运算**: 如果 $a \equiv b \pmod n$，那么对于任意自然数 $k$，都有 $a^k \equiv b^k \pmod n$
 
-但是，关于 **除法** 则需要特别注意。通常情况下，即使 $a \times c \equiv b \times c \pmod n$，也不能直接将两边同时除以 $c$ 得到 $a \equiv b \pmod n$。这只有在 $c$ 和 $n$ 互质（最大公约数为1）的情况下才成立。这个“模逆元”的概念，在后文所述的RSA加密密钥生成中极其重要。
+但是，关于 **除法** 则需要特别注意。通常情况下，即使 $a \times c \equiv b \times c \pmod n$，也不能直接将两边同时除以 $c$ 得到 $a \equiv b \pmod n$。这只有在 $c$ 和 $n$ 互质（最大公约数为1）的情况下才成立。这个“模逆元”的概念，在后文所述的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密密钥生成中极其重要。
 
 ---
 
@@ -112,7 +112,7 @@ $$
 
 ## 4. 欧拉函数与欧拉定理
 
-[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)是关于“素数 $p$”的定理，而将其推广到“任意正整数 $n$”的人，正是[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)。要理解RSA加密，这种推广是必不可少的。
+[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)是关于“素数 $p$”的定理，而将其推广到“任意正整数 $n$”的人，正是[莱昂哈德·欧拉](https://kenji.blog/zh-cn/p/euler/)。要理解[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密，这种推广是必不可少的。
 
 ### 4.1 欧拉函数 $\phi(n)$
 
@@ -138,7 +138,7 @@ $$
 
 ## 5. 寻找巨大的素数：费马素性测试
 
-在加密技术（如RSA加密或Diffie-Hellman密钥交换等）中，需要高速地找出长达数百位的“巨大素数”。然而，为了判断一个巨大的数 $N$ 是否为素数，如果尝试用 $2$ 到 $\sqrt{N}$ 之间的所有数去试除，这种“试除法”可能需要耗费宇宙寿命般的时间。
+在加密技术（如[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密或Diffie-Hellman密钥交换等）中，需要高速地找出长达数百位的“巨大素数”。然而，为了判断一个巨大的数 $N$ 是否为素数，如果尝试用 $2$ 到 $\sqrt{N}$ 之间的所有数去试除，这种“试除法”可能需要耗费宇宙寿命般的时间。
 
 于是，利用[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)逆向思维的“概率素性测试”—— **费马测试（[Fermat](https://kenji.blog/zh-cn/p/fermat/) Primality Test）** 登场了。
 
@@ -281,9 +281,9 @@ else:
 
 ---
 
-## 7. 在RSA加密中的应用：费马与欧拉的结晶
+## 7. 在[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密中的应用：费马与欧拉的结晶
 
-[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)（以及欧拉定理）最伟大的应用领域，就是1977年由Rivest、Shamir和Adleman三人开发的 **RSA加密** 。
+[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)（以及欧拉定理）最伟大的应用领域，就是1977年由Rivest、Shamir和Adleman三人开发的 **[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密** 。
 RSA加密是一种革命性的“公钥加密”系统，它实现了一种机制：用于加密的密钥（公钥）对全世界公开，而用于解密的密钥（私钥）只有接收者本人知晓。
 
 这种非对称性，是基于“对巨大的合数进行质因数分解极其困难”的计算复杂性安全保证的。
@@ -356,7 +356,7 @@ $$ e \cdot d = 1 + k \cdot \phi(N) $$
 将此代入上面的公式：
 $$ M^{ed} = M^{1 + k \cdot \phi(N)} = M \cdot M^{k \cdot \phi(N)} = M \cdot (M^{\phi(N)})^k \pmod N $$
 
-此时， **欧拉定理** ($M^{\phi(N)} \equiv 1 \pmod N$) 就登场了。（※严格来说，这要求 $M$ 和 $N$ 互质，但在RSA中，$M$ 和 $N$ 不互质的概率是天文数字级别的低，而且利用中国剩余定理可以证明即使不互质等式也成立）。
+此时， **欧拉定理** ($M^{\phi(N)} \equiv 1 \pmod N$) 就登场了。（※严格来说，这要求 $M$ 和 $N$ 互质，但在[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)中，$M$ 和 $N$ 不互质的概率是天文数字级别的低，而且利用中国剩余定理可以证明即使不互质等式也成立）。
 
 应用欧拉定理，由于 $M^{\phi(N)} \equiv 1$，因此：
 $$ M \cdot (1)^k \equiv M \pmod N $$
@@ -468,7 +468,7 @@ if __name__ == '__main__':
 
 17世纪[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)发现这个“小定理”时，没有人觉得这会有什么用处。费马本人也是出于纯粹的数学探求欲才去研究数论的。
 
-然而，在大约300年后的20世纪70年代，计算机网络黎明期，作为确立安全通信协议不可或缺的加密技术，费马定理迎来了戏剧性的复苏。基于[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的素性测试技术和基于欧拉定理的RSA加密，字面意义上支撑了现代的互联网基础设施。
+然而，在大约300年后的20世纪70年代，计算机网络黎明期，作为确立安全通信协议不可或缺的加密技术，费马定理迎来了戏剧性的复苏。基于[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的素性测试技术和基于欧拉定理的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密，字面意义上支撑了现代的互联网基础设施。
 
 我们每天不经意间发送的微信消息、在淘宝上的购物，这一切都在 $a^{p-1} \equiv 1 \pmod p$ 这个简单而优美的数学公式之上舞动。[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)告诉我们，无论数学多么抽象，总有一天它必然会为人类所用。
 

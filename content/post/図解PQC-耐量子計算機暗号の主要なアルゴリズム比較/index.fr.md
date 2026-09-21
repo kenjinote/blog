@@ -12,7 +12,7 @@ description: 'Nous expliquons en détail la menace de la compromission cryptogra
 
 ## 1. Introduction : La « crise de la cryptographie » provoquée par les ordinateurs quantiques
 
-Dans la société Internet moderne, la cryptographie à clé publique est une infrastructure indispensable pour protéger la confidentialité des communications et l'intégrité des données. Les méthodes de cryptographie largement utilisées aujourd'hui, telles que RSA et la cryptographie sur les courbes elliptiques (ECC), reposent sur des barrières mathématiques telles que la « difficulté de la factorisation de très grands nombres composés » ou la « difficulté du problème du logarithme discret sur les courbes elliptiques » pour garantir leur sécurité. Avec les ordinateurs classiques (les ordinateurs que nous utilisons actuellement, y compris les superordinateurs), il a été prouvé qu'il faudrait plus de temps que l'âge de l'univers pour résoudre ces problèmes mathématiques, ce qui constitue le fondement de leur sécurité.
+Dans la société Internet moderne, la cryptographie à clé publique est une infrastructure indispensable pour protéger la confidentialité des communications et l'intégrité des données. Les méthodes de cryptographie largement utilisées aujourd'hui, telles que [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et la cryptographie sur les courbes elliptiques (ECC), reposent sur des barrières mathématiques telles que la « difficulté de la factorisation de très grands nombres composés » ou la « difficulté du problème du logarithme discret sur les courbes elliptiques » pour garantir leur sécurité. Avec les ordinateurs classiques (les ordinateurs que nous utilisons actuellement, y compris les superordinateurs), il a été prouvé qu'il faudrait plus de temps que l'âge de l'univers pour résoudre ces problèmes mathématiques, ce qui constitue le fondement de leur sécurité.
 
 Cependant, cette prémisse solide est sur le point d'être fondamentalement bouleversée par l'avancée de la théorie et de la mise en pratique des **ordinateurs quantiques**. En 1994, l'algorithme de Shor, publié par le cryptographe Peter Shor (« **[Algorithme de Shor](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/)** »), a prouvé théoriquement que les problèmes de factorisation et de logarithme discret pourraient être résolus en « temps polynomial » s'ils étaient exécutés sur un ordinateur quantique universel tolérant aux pannes (CRQC : [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer) d'une capacité suffisante. Cela signifie que toutes les cryptographies à clé publique utilisées actuellement seront rendues inefficaces.
 
@@ -40,7 +40,7 @@ La transition des technologies cryptographiques, qui implique la refonte des pro
 
 Les deux principales catégories ciblées par la standardisation étaient les suivantes :
 1. **[Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie à clé publique / Mécanisme d'encapsulation de clé (KEM : Key Encapsulation Mechanism)** : Mécanisme permettant de partager (distribuer) en toute sécurité une clé symétrique pour chiffrer le canal de communication dans des connexions telles que TLS.
-2. **Signatures numériques (Digital Signatures)** : Mécanisme permettant de prouver, dans les mises à jour logicielles et les certificats électroniques, que les données n'ont pas été altérées et qu'il n'y a pas d'usurpation d'identité de l'expéditeur (authenticité).
+2. **Signatures numériques ([Digital Signature](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)s)** : Mécanisme permettant de prouver, dans les mises à jour logicielles et les certificats électroniques, que les données n'ont pas été altérées et qu'il n'y a pas d'usurpation d'identité de l'expéditeur (authenticité).
 
 Après environ six années de concurrence acharnée en matière d'évaluation, d'analyse et de cryptanalyse (Round 1 à Round 3), une évaluation supplémentaire (Round 4) a été menée pour certains algorithmes. En conséquence, les algorithmes suivants ont été officiellement publiés en tant que Federal Information Processing Standards (FIPS) en 2024, s'établissant comme les futures normes mondiales.
 
@@ -124,7 +124,7 @@ Officiellement standardisé sous le nom de **FIPS 203 (ML-KEM)**, CRYSTALS-Kyber
 
 ### 5.1. Architecture du KEM (Key Encapsulation Mechanism)
 
-À l'ère de la PQC, l'approche directe telle que RSA où « le client crée une clé partagée, la chiffre avec la clé publique du serveur et l'envoie » est remplacée par le cadre d'encapsulation appelé KEM.
+À l'ère de la PQC, l'approche directe telle que [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) où « le client crée une clé partagée, la chiffre avec la clé publique du serveur et l'envoie » est remplacée par le cadre d'encapsulation appelé KEM.
 
 ```mermaid
 sequenceDiagram
@@ -172,7 +172,7 @@ Le mécanisme de chiffrement et de déchiffrement au cœur de CPAPKE est le suiv
    - Il reste $\lfloor q/2 \rceil \cdot m + (\vec{e}^T\vec{r} + e_2 - \vec{s}^T\vec{e_1})$.
    - Les termes entre parenthèses étant des « produits ou sommes de petites erreurs », l'ensemble reste une valeur (bruit) suffisamment petite. Par conséquent, en déterminant si chaque coefficient est proche de $0$ ou de $q/2$, les bits (0 ou 1) du message d'origine $m$ peuvent être parfaitement restaurés sans aucune erreur.
 
-La plus grande force de Kyber réside dans sa **vitesse de traitement** impressionnante et sa **taille de clé modérée**. Pour Kyber768, la taille de la clé publique est de 1 184 octets et la taille du texte chiffré est de 1 088 octets. Bien qu'elles soient plus importantes par rapport à RSA-3072 (taille de clé d'environ 384 octets), il est possible de les faire tenir dans l'unité de transmission maximale (MTU) des communications Internet modernes sans fragmentation des paquets, ce qui n'a presque aucun impact négatif sur la latence du réseau.
+La plus grande force de Kyber réside dans sa **vitesse de traitement** impressionnante et sa **taille de clé modérée**. Pour Kyber768, la taille de la clé publique est de 1 184 octets et la taille du texte chiffré est de 1 088 octets. Bien qu'elles soient plus importantes par rapport à [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)-3072 (taille de clé d'environ 384 octets), il est possible de les faire tenir dans l'unité de transmission maximale (MTU) des communications Internet modernes sans fragmentation des paquets, ce qui n'a presque aucun impact négatif sur la latence du réseau.
 
 ---
 
@@ -255,7 +255,7 @@ La seule et plus grande faiblesse de SPHINCS+ est que **la taille de sa signatur
 
 Dans le processus de standardisation du NIST, **Classic McEliece**, de la **cryptographie basée sur les codes**, est une approche importante dont l'évaluation se poursuit toujours en tant que candidat final de la phase 4.
 
-Proposé par Robert McEliece en 1978, cet algorithme est l'un des plus anciens de l'histoire de la cryptographie à clé publique, aux côtés du RSA. Il utilise des codes de géométrie algébrique appelés « codes de Goppa », qui ajoutent intentionnellement une erreur (vecteur de bruit) au message lors du chiffrement. Seule la personne possédant la matrice de contrôle de parité du code de Goppa comme clé secrète peut utiliser sa puissante capacité de correction d'erreurs pour supprimer l'erreur et déchiffrer le message d'origine, un principe basé sur le « **problème du décodage de syndrome (Syndrome Decoding Problem)** ».
+Proposé par Robert McEliece en 1978, cet algorithme est l'un des plus anciens de l'histoire de la cryptographie à clé publique, aux côtés du [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/). Il utilise des codes de géométrie algébrique appelés « codes de Goppa », qui ajoutent intentionnellement une erreur (vecteur de bruit) au message lors du chiffrement. Seule la personne possédant la matrice de contrôle de parité du code de Goppa comme clé secrète peut utiliser sa puissante capacité de correction d'erreurs pour supprimer l'erreur et déchiffrer le message d'origine, un principe basé sur le « **problème du décodage de syndrome (Syndrome Decoding Problem)** ».
 
 $$ \vec{c} = \vec{m} G + \vec{e} $$
 （$G$ est la matrice génératrice brouillée qui est la clé publique, et $\vec{e}$ est le vecteur d'erreur de poids $t$）
@@ -326,7 +326,7 @@ La bataille entre l'ordinateur quantique et la cryptographie est un domaine pass
 *Références :*
 * *NIST Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy Standardization Program*
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
-* *FIPS 204: Module-Lattice-Based Digital Signature Standard*
+* *FIPS 204: Module-Lattice-Based [Digital Signature](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
 
 

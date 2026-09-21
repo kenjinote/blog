@@ -111,7 +111,7 @@ Der wahre Wert von Quantencomputern liegt ausschließlich in **"spezifischen Pro
 ### Worin Quantencomputer gut sind (Killer-Applikationen)
 
 #### 1. Primfaktorzerlegung und Entschlüsselung ([Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))
-Gegenwärtig basiert "RSA-Kryptographie", die sichere Kommunikation im Internet schützt (wie Kreditkartenzahlungen und die Übertragung persönlicher Daten), auf der Prämisse, dass "die Primfaktorzerlegung sehr großer Zahlen für klassische Computer praktisch unmöglich ist (da sie enorm viel Zeit in Anspruch nimmt)".
+Gegenwärtig basiert "[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie", die sichere Kommunikation im Internet schützt (wie Kreditkartenzahlungen und die Übertragung persönlicher Daten), auf der Prämisse, dass "die Primfaktorzerlegung sehr großer Zahlen für klassische Computer praktisch unmöglich ist (da sie enorm viel Zeit in Anspruch nimmt)".
 Mit dem "Shor-Algorithmus", der 1994 von dem Mathematiker Peter Shor entdeckt wurde, können Quantencomputer Interferenz jedoch geschickt nutzen, um dies mit dramatischer Geschwindigkeit (in polynomieller Zeit) zu lösen. Infolgedessen besteht das Risiko, dass aktuelle kryptografische Systeme in Zukunft zusammenbrechen, und Zentralbanken sowie Regierungsbehörden weltweit beeilen sich, auf "Post-Quanten-Kryptographie (Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)" umzusteigen.
 
 #### 2. Quantenchemische Berechnungen und die Entwicklung neuer Materialien und Medikamente

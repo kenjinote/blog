@@ -14,7 +14,7 @@ tags:
 
 在现代互联网社会中，我们能够安全地进行通信，全靠 **密码学** 的功劳。而在这密码学的基础之中，存在着由17世纪数学家[皮埃尔·德·费马](https://kenji.blog/zh-cn/p/fermat/)（[Pierre de Fermat](https://kenji.blog/zh-cn/p/fermat/)）发现的一条优美的定理。
 
-本文将以通俗易懂的方式，为您讲解数论的重要基础—— **[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)** （[Fermat's Little Theorem](https://kenji.blog/zh-cn/p/fermats-little-theorem/)），探讨它的含义、证明方法，以及它是如何被应用到现代RSA密码学中的。
+本文将以通俗易懂的方式，为您讲解数论的重要基础—— **[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)** （[Fermat's Little Theorem](https://kenji.blog/zh-cn/p/fermats-little-theorem/)），探讨它的含义、证明方法，以及它是如何被应用到现代[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码学中的。
 
 ## 什么是[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)？
 
@@ -92,9 +92,9 @@ flowchart TD
 
 不过，由于存在一种被称为 **卡迈克尔数** （Carmichael numbers）的特殊数字，它们虽然是合数，却能满足 $a^{n-1} \equiv 1 \pmod n$，因此仅凭这个检验无法百分之百确定素数。所以，在实际应用中，通常会使用米勒-拉宾（Miller-Rabin）素性检验法等。
 
-## 在现代密码学中的应用：RSA密码
+## 在现代密码学中的应用：[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码
 
-[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)（以及它的推广，即 **欧拉定理** ）最重要的应用领域，就是支撑着互联网安全的 **RSA密码**。
+[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)（以及它的推广，即 **欧拉定理** ）最重要的应用领域，就是支撑着互联网安全的 **[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码**。
 
 RSA密码的安全性建立在大整数分解的困难性之上。在其机制中，“[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)”的原理在密钥生成与解密过程中发挥着决定性的作用。
 
@@ -111,7 +111,7 @@ sequenceDiagram
     Note over Receiver: "M = C^d mod n"
 ```
 
-在RSA密码中，准备两个巨大的素数 $p$ 和 $q$，并令 $n = p \times q$。
+在[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码中，准备两个巨大的素数 $p$ 和 $q$，并令 $n = p \times q$。
 根据欧拉定理，在加密和解密的过程中，密钥（$e$ 和 $d$）被设计成使得 $M^{ed} \equiv M \pmod n$ 成立。在这里，明文 $M$ 能够神奇地恢复原貌，本质上正是依赖于[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)所保证的数学性质。
 
 ## 总结

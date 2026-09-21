@@ -132,7 +132,7 @@ It takes time to establish legal regulations, and it is difficult to completely 
 The `robots.txt` file, placed in the root directory of a website, is originally a protocol for controlling search engine crawlers, but in 2026, it has become established as a standard means to uniformly block AI training crawlers (e.g., OpenAI's `GPTBot`, Google's `Google-Extended`, Anthropic's `ClaudeBot`).
 However, `robots.txt` has no legal binding force and has a fundamental flaw in that it can be easily ignored by malicious rogue scrapers. Therefore, standardization (such as W3C TDM Rep) has spread globally to embed the intention of TDM (Text and Data Mining) opt-out directly into HTTP headers or HTML meta tags (e.g., `<meta name="tdm-reservation" content="1">`) to give it legal effect in a machine-readable form. Under the EU AI Act, scraping that ignores this meta tag is treated as a clear illegal act.
 
-### 5.2. C2PA and Native Implementation of Content Provenance Authentication
+### 5.2. C2PA and Native Implementation of Content Provenance [Authentication](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/)
 **C2PA (Coalition for Content Provenance and Authenticity)** is a technical standard that attaches cryptographically signed, tamper-proof "provenance metadata" to digital content such as images, videos, and audio. In 2026, C2PA is natively implemented in major digital cameras (Sony, Leica, Nikon, etc.), image editing software (such as Adobe Photoshop), and even standard camera apps on iOS and Android.
 
 ```mermaid

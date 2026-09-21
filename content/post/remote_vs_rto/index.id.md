@@ -16,7 +16,7 @@ Pandemi global di awal tahun 2020-an secara mendasar mengubah definisi "tempat k
 
 Namun, seiring meredanya pandemi, lanskap industri kembali berubah. Perusahaan teknologi raksasa seperti Amazon, Google, dan Meta telah mulai secara agresif mempromosikan "model hibrida" yang mewajibkan karyawan masuk ke kantor beberapa hari dalam seminggu, atau bahkan sepenuhnya menerapkan kebijakan "Kembali ke Kantor" (RTO: Return to Office). Arahan RTO dari atas ke bawah ini telah menciptakan gesekan yang signifikan dengan banyak insinyur (Individual Contributors: IC). Di satu sisi, para insinyur berpendapat bahwa "lingkungan rumah yang tenang memungkinkan mereka lebih fokus pada kode," dan "waktu perjalanan adalah pemborosan hidup." Di sisi lain, manajemen membalas bahwa "inovasi lahir dari pertemuan yang tidak disengaja" dan "komunikasi tatap muka sangat penting untuk menumbuhkan budaya organisasi."
 
-Dalam artikel ini, kita tidak akan mengabaikan perdebatan dikotomis antara "Kerja Jarak Jauh vs. Kembali ke Kantor" ini hanya sebagai argumen emosional atau sekadar masalah preferensi pribadi, melainkan akan membedahnya secara mendalam melalui lensa teknis dan objektif, yang meliputi sosiologi organisasi, penilaian kuantitatif terhadap produktivitas rekayasa (metrik DORA, framework SPACE), dan arsitektur jaringan yang mendasarinya (VPN dan Zero Trust). Mari kita eksplorasi "solusi yang benar-benar optimal" yang harus dituju oleh organisasi rekayasa modern dalam menghadapi masalah kompleks yang berada di persimpangan antara teknologi dan masyarakat manusia ini.
+Dalam artikel ini, kita tidak akan mengabaikan perdebatan dikotomis antara "Kerja Jarak Jauh vs. Kembali ke Kantor" ini hanya sebagai argumen emosional atau sekadar masalah preferensi pribadi, melainkan akan membedahnya secara mendalam melalui lensa teknis dan objektif, yang meliputi sosiologi organisasi, penilaian kuantitatif terhadap produktivitas rekayasa (metrik DORA, framework SPACE), dan arsitektur jaringan yang mendasarinya (VPN dan [Zero Trust](https://kenji.blog/id/p/zero-trust-network-architecture-beyond-corp/)). Mari kita eksplorasi "solusi yang benar-benar optimal" yang harus dituju oleh organisasi rekayasa modern dalam menghadapi masalah kompleks yang berada di persimpangan antara teknologi dan masyarakat manusia ini.
 
 ---
 
@@ -159,7 +159,7 @@ Dalam perancangan awal arsitektur atau dalam diskusi algoritme yang kompleks, ak
 
 ---
 
-# Infrastruktur Teknologi Pendukung Kerja Jarak Jauh: Dari Keterbatasan VPN Menuju Zero Trust
+# Infrastruktur Teknologi Pendukung Kerja Jarak Jauh: Dari Keterbatasan VPN Menuju [Zero Trust](https://kenji.blog/id/p/zero-trust-network-architecture-beyond-corp/)
 
 Sejauh ini, kita telah berdiskusi dari perspektif sosiologi dan produktivitas. Namun, elemen penting lain yang sangat menentukan pengalaman bekerja jarak jauh adalah "arsitektur jaringan". Produktivitas seorang insinyur berkaitan langsung dengan latensi akses ke lingkungan pengembangan maupun server produksi.
 
@@ -173,7 +173,7 @@ $$ T_{total} = \frac{D}{c} + \frac{L}{B} + T_{proc} $$
 
 Ketika menggunakan VPN tradisional, bahkan saat insinyur yang bekerja dari jarak jauh mengakses layanan SaaS yang ada di komputasi awan (cloud, seperti GitHub atau konsol AWS), semua lalu lintas jaringan pertama-tama harus ditarik ke gateway VPN dalam jaringan internal perusahaan, baru kemudian keluar menuju internet. Hal ini menyebabkan rutekan (routing) yang tidak efisien, sering disebut sebagai "Hairpin NAT (Hairpinning)". Proses ini membuat jarak $D$ meningkat dengan percuma, dan di saat bersamaan proses enkripsi dan dekripsi oleh perangkat VPN juga menyebabkan peningkatan $T_{proc}$ secara ekstrem. Pada akhirnya, hal ini memperlambat respons ketikan dari para insinyur dan merusak keadaan mengalir (flow state) mereka.
 
-## Pergeseran Paradigma Berkat Zero Trust (BeyondCorp)
+## Pergeseran Paradigma Berkat Zero Trust ([BeyondCorp](https://kenji.blog/id/p/zero-trust-network-architecture-beyond-corp/))
 
 Yang berhasil menembus batasan jaringan tersebut serta mewujudkan "lingkungan di mana orang-orang dapat bekerja dengan nyaman dan aman dari mana saja" dengan sesungguhnya adalah **Arsitektur Jaringan Zero Trust (Zero Trust Network Architecture: ZTNA)**, yang mana salah satu pelopornya adalah "BeyondCorp" dari Google.
 
@@ -195,7 +195,7 @@ graph TD
     end
 ```
 
-Dalam arsitektur Zero Trust, tidak ada titik sumbat (choke point) terpusat seperti halnya VPN. Bahkan saat terhubung dari Wi-Fi rumah ataupun dari LAN nirkabel umum di kedai kopi, para insinyur langsung mengakses tiap-tiap sumber daya dengan rute terpendek yang difasilitasi oleh Identity-Aware Proxy (IAP) berdasarkan konteks kuat dari autentikasi perangkat (seperti sertifikat klien) dan autentikasi pengguna (MFA).
+Dalam arsitektur [Zero Trust](https://kenji.blog/id/p/zero-trust-network-architecture-beyond-corp/), tidak ada titik sumbat (choke point) terpusat seperti halnya VPN. Bahkan saat terhubung dari Wi-Fi rumah ataupun dari LAN nirkabel umum di kedai kopi, para insinyur langsung mengakses tiap-tiap sumber daya dengan rute terpendek yang difasilitasi oleh Identity-Aware Proxy (IAP) berdasarkan konteks kuat dari autentikasi perangkat (seperti sertifikat klien) dan autentikasi pengguna (MFA).
 
 Arsitektur ini menghilangkan jarak $D$ yang terbuang sia-sia serta penundaan pemrosesan $T_{proc}$ yang berlebihan yang terdapat pada persamaan latensi sebelumnya, dan memungkinkan pengoperasian terminal dan pertukaran data skala besar dengan latensi yang sangat rendah, tidak jauh berbeda jika dibandingkan dengan berada di kantor. Keadaan di mana "produktivitas tidak terpengaruh oleh kerja jarak jauh" ini bukanlah sekadar dorongan mental belaka, namun hanya dapat direalisasikan lewat pengembangan infrastruktur Zero Trust tingkat lanjut seperti ini.
 

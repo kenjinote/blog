@@ -140,7 +140,7 @@ Selanjutnya, memahami struktur dari indeks "[B-Tree](https://kenji.blog/id/p/b-t
 
 Dalam pendidikan literasi informasi, pendidikan keamanan siber masih berada pada tingkat permukaan, seperti "Ayo gunakan kata sandi yang rumit" dan "Jangan klik tautan yang mencurigakan". Sementara itu, matematika dari "Teori Kriptografi", yang menjadi pilar masyarakat internet modern, hampir tidak pernah diajarkan.
 
-Komunikasi HTTPS dan tanda tangan digital yang kita gunakan setiap hari dilindungi oleh kriptografi kunci publik seperti enkripsi RSA. Keamanan enkripsi RSA bergantung pada kesulitan matematika (dianggap sebagai masalah NP-intermediat) bahwa "faktorisasi prima dari bilangan bulat yang sangat besar tidak dapat diselesaikan dalam waktu yang realistis menggunakan komputer klasik saat ini".
+Komunikasi HTTPS dan tanda tangan digital yang kita gunakan setiap hari dilindungi oleh kriptografi kunci publik seperti enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/). Keamanan enkripsi RSA bergantung pada kesulitan matematika (dianggap sebagai masalah NP-intermediat) bahwa "faktorisasi prima dari bilangan bulat yang sangat besar tidak dapat diselesaikan dalam waktu yang realistis menggunakan komputer klasik saat ini".
 
 Rumus matematika yang menjadi dasar enkripsi RSA adalah penerapan dari fungsi totient Euler dan [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) yang indah.
 

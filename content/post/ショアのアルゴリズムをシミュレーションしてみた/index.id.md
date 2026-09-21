@@ -12,7 +12,7 @@ description: 'Bagaimana komputer kuantum berpotensi menghancurkan teknologi krip
 
 # 1. Pendahuluan: Krisis Kriptografi yang Dibawa oleh Komputer Kuantum
 
-Sebagian besar keamanan dalam masyarakat internet modern bergantung pada **kriptografi kunci publik** (terutama enkripsi RSA). Saat kita mengirimkan informasi kartu kredit saat berbelanja online, atau bertukar data yang sangat rahasia, konten komunikasi tersebut dilindungi dengan kuat oleh enkripsi RSA.
+Sebagian besar keamanan dalam masyarakat internet modern bergantung pada **kriptografi kunci publik** (terutama enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)). Saat kita mengirimkan informasi kartu kredit saat berbelanja online, atau bertukar data yang sangat rahasia, konten komunikasi tersebut dilindungi dengan kuat oleh enkripsi RSA.
 
 Dasar keamanan enkripsi RSA bergantung pada fakta matematis bahwa "**memfaktorkan bilangan bulat raksasa ke dalam faktor prima sangat sulit dilakukan oleh komputer klasik (PC atau superkomputer yang biasa kita gunakan)**". Namun, "**Algoritma Shor ([Shor's Algorithm](https://kenji.blog/id/p/quantum-computing-shors-algorithm/))**" yang dipublikasikan oleh Peter Shor pada tahun 1994, meruntuhkan asumsi ini dari dasarnya. Terbukti secara matematis bahwa jika Algoritma Shor dijalankan pada komputer kuantum skala besar, faktorisasi prima yang akan memakan waktu lebih lama dari usia alam semesta pada komputer klasik, dapat diselesaikan hanya dalam beberapa menit hingga beberapa jam.
 
@@ -322,7 +322,7 @@ Dengan mengesankan, kita berhasil memfaktorkan $15 = 3 \times 5$.
 
 # 6. Tantangan menuju Penerapan Praktis dan Keterbatasan di Era NISQ
 
-Meskipun memfaktorkan $N=15$ di simulator cukup mudah dilakukan, namun pada kenyataannya, masih banyak hambatan yang dihadapi oleh komputer kuantum nyata untuk memfaktorkan RSA-2048 (angka desimal 617 digit) yang digunakan dalam dunia nyata.
+Meskipun memfaktorkan $N=15$ di simulator cukup mudah dilakukan, namun pada kenyataannya, masih banyak hambatan yang dihadapi oleh komputer kuantum nyata untuk memfaktorkan [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)-2048 (angka desimal 617 digit) yang digunakan dalam dunia nyata.
 
 Era di mana kita hidup saat ini disebut sebagai **Era NISQ (Noisy Intermediate-Scale Quantum)**. Qubit sangat rentan terhadap gangguan dari lingkungan eksternal dan dapat mengalami "decoherence" di tengah komputasi, yang merusak keadaan kuantum.
 
@@ -341,7 +341,7 @@ Untuk bersiap menghadapi datangnya "Q-Day (Hari di mana komputer kuantum mematah
 
 PQC didasarkan pada masalah matematis baru (seperti masalah kisi (lattice-based), polinomial multivariat, dan berbasis fungsi hash) yang secara matematis dianggap tidak dapat diselesaikan secara efisien bahkan jika menggunakan Algoritma Shor (ataupun Algoritma Grover). Algoritma seperti "CRYSTALS-Kyber" dan "CRYSTALS-Dilithium" telah dipilih sebagai standar, dan penerapannya secara bertahap mulai dilakukan pada iMessage milik Apple dan berbagai protokol komunikasi browser web.
 
-Bagi teknisi yang mengelola infrastruktur TI, memasukkan "crypto-agility" (ketangkasan kriptografi: desain di mana metode kriptografi dapat dialihkan dengan cepat) dari enkripsi RSA atau kurva eliptik yang ada ke PQC ke dalam sistem mereka, akan menjadi misi utama yang sangat penting di masa depan.
+Bagi teknisi yang mengelola infrastruktur TI, memasukkan "crypto-agility" (ketangkasan kriptografi: desain di mana metode kriptografi dapat dialihkan dengan cepat) dari enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) atau kurva eliptik yang ada ke PQC ke dalam sistem mereka, akan menjadi misi utama yang sangat penting di masa depan.
 
 ---
 

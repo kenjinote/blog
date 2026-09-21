@@ -28,7 +28,7 @@ description: 'Explicamos cómo funciona la ''Criba general del cuerpo de número
 # ¿Qué es la "Criba General del Cuerpo de Números (GNFS)", las matemáticas más fuertes de la humanidad que rompen el cifrado de Internet?
 
 El Internet que usamos todos los días. Los mensajes de LINE, YouTube, las compras en Amazon, todas las comunicaciones están protegidas por "cifrado".
-Actualmente, el representante del cifrado más utilizado en todo el mundo es el "Cifrado RSA".
+Actualmente, el representante del cifrado más utilizado en todo el mundo es el "Cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)".
 
 La clave de la defensa del cifrado RSA es muy simple. Utiliza la propiedad matemática de que **"la factorización de números primos gigantescos no puede ser resuelta ni siquiera por computadoras"**.
 Por ejemplo, si es "15", se sabe inmediatamente que es "3 × 5", pero en el momento en que esto se convierte en un "número de 270 dígitos", incluso reuniendo las supercomputadoras de todo el mundo llevaría cientos de millones de años resolverlo.
@@ -149,7 +149,7 @@ Una vez que se encuentra la combinación,
 Finalmente, sustituimos $x$ en el $Y(x)$ del mundo algebraico por $m$, para teletransportarlo y unirlo al mundo real.
 Entonces, como magia matemática, se completa estrictamente el estado en que **"el residuo de $X^2$ y $Y^2$ es el mismo"**!
 
-El resto es como en el Capítulo 1, si calculamos el máximo común divisor de $X - Y$ y $N$, el inexpugnable cifrado RSA colapsa estruendosamente, y los números primos secretos hacen su aparición.
+El resto es como en el Capítulo 1, si calculamos el máximo común divisor de $X - Y$ y $N$, el inexpugnable cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) colapsa estruendosamente, y los números primos secretos hacen su aparición.
 
 ---
 

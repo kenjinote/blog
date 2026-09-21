@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-これは[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)を拡張することで具体的に $x, y$ を計算することができ（拡張[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)）、現代の暗号理論（例えばRSA暗号など）においても不可欠な基礎定理となっています。歴史的な正確さを重んじる文脈では、これを **[バシェ](https://kenji.blog/p/bachet/)の定理** と呼ぶこともあります。
+これは[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)を拡張することで具体的に $x, y$ を計算することができ（拡張[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)）、現代の暗号理論（例えば[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号など）においても不可欠な基礎定理となっています。歴史的な正確さを重んじる文脈では、これを **[バシェ](https://kenji.blog/p/bachet/)の定理** と呼ぶこともあります。
 
 ## まとめ
 

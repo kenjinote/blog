@@ -67,7 +67,7 @@ Semakin besar jumlah percobaan `num_samples`, semakin akurat nilai $\pi$ yang di
 
 ### Contoh 2: Uji Primalitas Miller-Rabin
 
-Ini adalah algoritma untuk menguji apakah suatu bilangan besar adalah bilangan prima dengan cepat. Saat membuat kunci pada kriptografi RSA, diperlukan bilangan prima dengan panjang ratusan digit, namun jika hal ini dilakukan dengan metode pembagian percobaan deterministik (metode dengan membagi berurutan $2, 3, 5, \dots$), ia tidak akan selesai bahkan hingga akhir umur alam semesta.
+Ini adalah algoritma untuk menguji apakah suatu bilangan besar adalah bilangan prima dengan cepat. Saat membuat kunci pada kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), diperlukan bilangan prima dengan panjang ratusan digit, namun jika hal ini dilakukan dengan metode pembagian percobaan deterministik (metode dengan membagi berurutan $2, 3, 5, \dots$), ia tidak akan selesai bahkan hingga akhir umur alam semesta.
 
 Di sinilah kita menggunakan **uji primalitas Miller-Rabin** yang memanfaatkan metode Monte Carlo.
 Untuk bilangan $n$ yang akan diuji, kita memilih basis acak $a$, dan mengujinya apakah ia memenuhi kondisi tertentu berdasarkan generalisasi [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/).

@@ -96,12 +96,12 @@ Dans le monde des mathématiques, il suffit de prouver qu'une chose "existe", ma
 
 Voyons ici le processus de transcription de formules en code à travers deux exemples concrets.
 
-### 4.1 Exemple 1 : Les mathématiques de la cryptographie RSA et son implémentation en Python
+### 4.1 Exemple 1 : Les mathématiques de la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et son implémentation en Python
 
 La cryptographie RSA, représentante de la cryptographie à clé publique, est une belle application de la théorie élémentaire des nombres (congruences, théorème d'Euler, algorithme d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) étendu).
 
 #### Contexte mathématique
-Les processus de génération de clés, de chiffrement et de déchiffrement de la cryptographie RSA sont représentés par les formules suivantes.
+Les processus de génération de clés, de chiffrement et de déchiffrement de la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) sont représentés par les formules suivantes.
 
 1. **Génération de clés** :
    Choisissez d'énormes nombres premiers $p, q$, et posez $n = pq$.

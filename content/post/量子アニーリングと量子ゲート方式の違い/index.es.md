@@ -184,7 +184,7 @@ Veamos áreas de aplicación específicas en las que cada método sobresale.
 
 ### 6.2. Casos de uso del modelo de puertas cuánticas
 - **Simulación de química cuántica**: Simulaciones de alta precisión de estados de energía moleculares y reacciones químicas.
-- **Factorización de enteros ([Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/))**: Algoritmo que factoriza números compuestos enormes en tiempo polinomial. Si esto se vuelve práctico, las infraestructuras de criptografía de clave pública actuales como RSA se romperían, por lo que la transición a la criptografía poscuántica (PQC) es urgente.
+- **Factorización de enteros ([Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/))**: Algoritmo que factoriza números compuestos enormes en tiempo polinomial. Si esto se vuelve práctico, las infraestructuras de criptografía de clave pública actuales como [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) se romperían, por lo que la transición a la criptografía poscuántica (PQC) es urgente.
 - **Búsqueda en bases de datos (Algoritmo de Grover)**: Al buscar datos objetivo en una base de datos no ordenada, las computadoras clásicas requieren pasos $O(N)$, pero el algoritmo de Grover puede buscar en pasos $O(\sqrt{N})$.
 
 ### 6.3. Algoritmos híbridos en la era NISQ: VQE y QAOA

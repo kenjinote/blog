@@ -196,6 +196,6 @@ Hello from C++ :rocket:
 
 * **إرفاق الملفات**
 * **واجهة مستخدم بأزرار**
-* **عمليات API مرنة عبر Slack App + OAuth2**
+* **عمليات API مرنة عبر Slack App + [OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/)2**
 
 يمكننا أيضًا تقديم تكامل متقدم مع Slack بخطوة أبعد مثل هذه!

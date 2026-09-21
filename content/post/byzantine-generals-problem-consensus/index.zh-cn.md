@@ -290,4 +290,4 @@ $ |Q_1 \cap Q_2| = 2Q - n = 2(2f + 1) - (3f + 1) = f + 1 $
 *   **Raft** ：追求易于理解和易于实现，成为了现代分布式KVS的事实标准。
 *   **PBFT** ：在混杂恶意节点的环境下实现了确定性共识，成为了区块链技术的基础。
 
-如今，比特币采用的 **Nakamoto Consensus (PoW)** ，以及Tendermint、HotStuff等在减少PBFT通信开销的同时提高了可扩展性的新型BFT算法不断涌现。根据系统的需求（节点的可靠性、所需的吞吐量、延迟），选择合适的共识算法是构建稳健的分布式系统的关键。
+如今，比特币采用的 **Nakamoto [Consensus](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/) ([PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/))** ，以及Tendermint、HotStuff等在减少PBFT通信开销的同时提高了可扩展性的新型BFT算法不断涌现。根据系统的需求（节点的可靠性、所需的吞吐量、延迟），选择合适的共识算法是构建稳健的分布式系统的关键。

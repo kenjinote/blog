@@ -17,7 +17,7 @@ Dalam artikel ini, kami akan menjelaskan secara menyeluruh dengan detail yang lu
 
 ---
 
-## 1. Mengapa Kriptografi Kurva Eliptik? (Perbandingan dengan RSA)
+## 1. Mengapa Kriptografi Kurva Eliptik? (Perbandingan dengan [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/))
 
 Sinonim dari kriptografi kunci publik telah lama adalah **kriptografi RSA**. RSA mendasarkan keamanannya pada "kesulitan faktorisasi prima dari bilangan komposit yang sangat besar". Namun, seiring dengan peningkatan kemampuan komputasi komputer, ada kebutuhan untuk terus memperpanjang panjang kunci (jumlah bit modulus) RSA untuk mempertahankan keamanannya. Saat ini, direkomendasikan setidaknya panjang kunci 2048 bit, atau 3072 bit hingga 4096 bit untuk keamanan yang lebih baik.
 
@@ -436,7 +436,7 @@ Kriptografi kurva eliptik (ECC) mungkin tampak aneh pada pandangan pertama denga
 
 Dalam artikel ini, kami menjelaskan poin-poin penting berikut:
 
-1. **Keunggulan terhadap RSA**: Memberikan keamanan kuat dengan panjang kunci yang jauh lebih pendek, sangat cocok untuk era perangkat seluler dan IoT modern.
+1. **Keunggulan terhadap [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)**: Memberikan keamanan kuat dengan panjang kunci yang jauh lebih pendek, sangat cocok untuk era perangkat seluler dan IoT modern.
 2. **Dasar-dasar Teori Grup dan Lapangan Berhingga**: Struktur matematika yang mendasari ECC.
 3. **Rumus Penambahan dan Penggandaan**: Metode untuk mengimplementasikan operasi grup aljabar menggunakan persamaan Weierstrass.
 4. **Ancaman Serangan Saluran Samping (Side-Channel Attack)**: Bagaimana percabangan kondisional yang bergantung pada bit kunci privat menghasilkan kerentanan yang fatal.
@@ -444,7 +444,7 @@ Dalam artikel ini, kami menjelaskan poin-poin penting berikut:
 
 Membuat perpustakaan kriptografi Anda sendiri yang sebenarnya berjalan di lingkungan produksi sangat tidak disarankan ("Don't roll your own crypto") karena risiko keamanannya sangat tinggi. Namun, pemahaman mendalam tentang algoritma dan latar belakang matematika yang beroperasi di dalamnya harus menjadi senjata yang sangat berharga bagi insinyur yang merancang dan mengoperasikan sistem yang lebih aman dan berkinerja tinggi.
 
-Pada artikel berikutnya, kami ingin menggali lebih dalam tentang mekanisme **ECDSA (Elliptic Curve Digital Signature Algorithm)**, yaitu algoritma tanda tangan digital menggunakan kurva eliptik ini, serta **Tanda Tangan Schnorr** yang diadopsi pada [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/).
+Pada artikel berikutnya, kami ingin menggali lebih dalam tentang mekanisme **ECDSA (Elliptic Curve [Digital Signature](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) Algorithm)**, yaitu algoritma tanda tangan digital menggunakan kurva eliptik ini, serta **Tanda Tangan Schnorr** yang diadopsi pada [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/).
 
 
 

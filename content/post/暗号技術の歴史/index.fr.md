@@ -14,7 +14,7 @@ description: "De l'ancien chiffre de César à la machine Enigma, en passant par
 
 La cryptographie ([Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy) est la technologie permettant de préserver la confidentialité des informations, et a évolué avec l'histoire de l'humanité. De la transmission d'ordres secrets lors des guerres antiques à la protection des informations de cartes de crédit sur l'Internet moderne, le but de la cryptographie est resté le même. Il s'agit de « s'assurer que seul le destinataire prévu peut comprendre l'information, et qu'elle ne peut pas être déchiffrée par des tiers ».
 
-Dans la sécurité de l'information moderne, la cryptographie ne se limite pas à la simple « dissimulation de l'information (Confidentialité) », mais joue également un rôle important dans l'« Intégrité (Integrity) » des données, l'« Authentification (Authentication) », et la « Non-répudiation (Non-repudiation) ».
+Dans la sécurité de l'information moderne, la cryptographie ne se limite pas à la simple « dissimulation de l'information (Confidentialité) », mais joue également un rôle important dans l'« Intégrité (Integrity) » des données, l'« Authentification ([Authentication](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/)) », et la « Non-répudiation (Non-repudiation) ».
 
 Cet article retrace en détail l'histoire de l'évolution de la cryptographie d'un point de vue technologique et mathématique, en commençant par les simples chiffrements par substitution de l'Antiquité, en passant par les chiffrements mécaniques, la cryptographie moderne à clé symétrique et publique, jusqu'à l'ère de la « [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie Post-Quantique (PQC) » provoquée par l'utilisation pratique des ordinateurs quantiques.
 
@@ -135,7 +135,7 @@ graph TD
 
 ---
 
-# 5. La révolution de la cryptographie à clé publique : de Diffie-Hellman à RSA
+# 5. La révolution de la cryptographie à clé publique : de Diffie-Hellman à [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)
 
 La cryptographie à clé symétrique avait une faiblesse fatale. C'était le « Problème de distribution de clés (Key Distribution Problem) ». C'est la question de savoir comment partager en toute sécurité une « clé commune » avec une partie distante avant de commencer la communication chiffrée. Ce problème a été résolu par la « cryptographie à clé publique », née dans les années 1970.
 
@@ -148,7 +148,7 @@ En 1976, Whitfield Diffie et Martin Hellman ont publié l'article révolutionnai
 4. Alice calcule $K = B^a \pmod{p}$, et Bob calcule $K = A^b \pmod{p}$.
 5. Par les lois des exposants, $K = (g^b)^a = (g^a)^b = g^{ab} \pmod{p}$, réussissant ainsi à partager la même clé $K$.
 
-## Le chiffrement RSA
+## Le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)
 L'année suivante, en 1977, le « chiffrement RSA » a été conçu par Ron Rivest, Adi Shamir et Leonard Adleman. Il est basé sur la propriété qu'« il est difficile de factoriser en nombres premiers d'énormes nombres composés ».
 
 **Mécanisme mathématique de RSA :**
@@ -195,11 +195,11 @@ rsa_example()
 
 # 6. L'essor de la cryptographie sur les courbes elliptiques (ECC)
 
-Le chiffrement RSA est puissant, mais à mesure que les performances des ordinateurs s'améliorent, il est devenu nécessaire d'augmenter la longueur de la clé (actuellement 2048 bits ou 3072 bits) pour maintenir la sécurité, ce qui a entraîné le problème de l'augmentation des coûts de calcul.
+Le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) est puissant, mais à mesure que les performances des ordinateurs s'améliorent, il est devenu nécessaire d'augmenter la longueur de la clé (actuellement 2048 bits ou 3072 bits) pour maintenir la sécurité, ce qui a entraîné le problème de l'augmentation des coûts de calcul.
 
 Ainsi, la « [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie sur les courbes elliptiques (Elliptic Curve [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy : ECC) » a été proposée en 1985. Elle utilise l'addition de points sur une courbe elliptique (généralement de la forme $y^2 = x^3 + ax + b$) sur un corps fini.
 
-Le problème du logarithme discret sur courbe elliptique (ECDLP) est connu pour être encore plus difficile à résoudre que le problème de factorisation en nombres premiers, et **la sécurité équivalente à 3072 bits pour RSA peut être atteinte avec une longueur de clé de seulement 256 bits pour ECC**. Cela a rendu possible une communication chiffrée rapide et sécurisée (comme ECDSA et ECDH) même dans des environnements avec des ressources de calcul limitées, comme les smartphones et les appareils IoT.
+Le problème du logarithme discret sur courbe elliptique (ECDLP) est connu pour être encore plus difficile à résoudre que le problème de factorisation en nombres premiers, et **la sécurité équivalente à 3072 bits pour [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) peut être atteinte avec une longueur de clé de seulement 256 bits pour ECC**. Cela a rendu possible une communication chiffrée rapide et sécurisée (comme ECDSA et ECDH) même dans des environnements avec des ressources de calcul limitées, comme les smartphones et les appareils IoT.
 
 ---
 
@@ -261,7 +261,7 @@ timeline
 
 L'histoire de la technologie cryptographique est l'histoire d'une bataille sans fin entre l'invention de nouvelles méthodes de chiffrement (le bouclier) et de nouvelles méthodes de déchiffrement (la lance) pour les percer.
 
-Le chiffre de César a été vaincu par l'analyse fréquentielle, et l'Enigma prétendument invincible a été vaincue par le génie de Turing et la puissance de la machine. Et aujourd'hui, les chiffrements puissants comme RSA et ECC qui soutiennent les fondements de la société Internet moderne sont menacés par une nouvelle « lance », l'ordinateur quantique.
+Le chiffre de César a été vaincu par l'analyse fréquentielle, et l'Enigma prétendument invincible a été vaincue par le génie de Turing et la puissance de la machine. Et aujourd'hui, les chiffrements puissants comme [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et ECC qui soutiennent les fondements de la société Internet moderne sont menacés par une nouvelle « lance », l'ordinateur quantique.
 
 Cependant, l'humanité regarde déjà vers l'avenir, et se prépare à un nouveau « bouclier » appelé cryptographie post-quantique (PQC). Actuellement, dans les infrastructures informatiques du monde entier, la préparation à la transition de la cryptographie à clé publique existante vers la PQC (garantir la crypto-agilité) est une question urgente.
 

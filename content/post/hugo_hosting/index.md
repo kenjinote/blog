@@ -53,7 +53,7 @@ Cloudflare Pagesは、Cloudflareが誇る世界最大規模のAnycastネット�
 [HTTP/3](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)（[QUIC](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)）の標準サポート、画像最適化、エッジ関数（Cloudflare Workers）の統合など、圧倒的なパフォーマンスチューニングが可能です。また、帯域幅に対する課金がなく、どれだけトラフィックが急増しても無料で運用できる点が大きなメリットです。
 
 ### 2.4 Netlify
-NetlifyはJamstackのパイオニア的存在であり、フォーム機能、認証（Identity）、[サーバーレス](https://kenji.blog/p/serverless-architecture-aws-lambda-cold-start/)関数などを統合したオールインワンのDXを提供します。しかし、無料枠の帯域幅（月間100GB）を超えると高額な従量課金が発生するため、画像や動画を多用するブログではコスト管理に注意が必要です。
+NetlifyはJamstackのパイオニア的存在であり、フォーム機能、[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)（Identity）、[サーバーレス](https://kenji.blog/p/serverless-architecture-aws-lambda-cold-start/)関数などを統合したオールインワンのDXを提供します。しかし、無料枠の帯域幅（月間100GB）を超えると高額な従量課金が発生するため、画像や動画を多用するブログではコスト管理に注意が必要です。
 
 ---
 

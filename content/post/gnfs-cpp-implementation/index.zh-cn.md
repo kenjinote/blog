@@ -11,7 +11,7 @@ description: '附带C++实现代码，彻底分析用于解密RSA密码的因数
 
 # 【完全解剖】使用C++实现并理解最强密码破解算法「GNFS」
 
-支撑现代互联网根基的「RSA加密」。其坚固性依赖于一种数学信念：“以目前的计算机，想要对巨大的合数进行素数分解实际上是不可能的”。
+支撑现代互联网根基的「[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密」。其坚固性依赖于一种数学信念：“以目前的计算机，想要对巨大的合数进行素数分解实际上是不可能的”。
 
 然而，人类从未放弃。如今，在经典计算机（非量子计算机）上，存在着一种用于进行巨大素数分解的 **人类最强、最尖端的算法 ** 。那就是 **「一般数域筛选法（GNFS：General Number Field Sieve）」** 。
 
@@ -430,7 +430,7 @@ $$V^2 = \prod_{S} (a - bm)$$
 
 **$$X^2 \equiv Y^2 \pmod N$$** 
 
-剩下的就只是计算 $\gcd(X-Y, N)$ 了。经过0.001秒的短暂运算，当非平凡因子打印在屏幕上的那一刻，曾被认为坚不可摧的RSA加密便彻底崩溃了。
+剩下的就只是计算 $\gcd(X-Y, N)$ 了。经过0.001秒的短暂运算，当非平凡因子打印在屏幕上的那一刻，曾被认为坚不可摧的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密便彻底崩溃了。
 
 ---
 

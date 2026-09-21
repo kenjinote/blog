@@ -14,7 +14,7 @@ tags:
   - "python"
 ---
 
-Keamanan dalam masyarakat internet modern dilindungi oleh sistem kriptografi kunci publik seperti kriptografi RSA. Sistem kriptografi ini didasarkan pada kesulitan matematis bahwa "faktorisasi prima dari bilangan yang sangat besar membutuhkan waktu astronomis jika dihitung menggunakan komputer saat ini (komputer klasik)."
+Keamanan dalam masyarakat internet modern dilindungi oleh sistem kriptografi kunci publik seperti kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/). Sistem kriptografi ini didasarkan pada kesulitan matematis bahwa "faktorisasi prima dari bilangan yang sangat besar membutuhkan waktu astronomis jika dihitung menggunakan komputer saat ini (komputer klasik)."
 
 Namun, **komputer kuantum** memiliki potensi untuk membalikkan premis tersebut dari akarnya. Secara khusus, **Algoritma Shor** (Shor's Algorithm), yang ditemukan oleh Peter Shor pada tahun 1994, secara matematis membuktikan bahwa jika komputer kuantum direalisasikan, ia dapat memecahkan kriptografi RSA dalam waktu yang realistis.
 
@@ -110,7 +110,7 @@ graph LR
 
 ---
 
-## 3. Dasar-dasar Teknologi Kriptografi dan Kriptografi RSA
+## 3. Dasar-dasar Teknologi Kriptografi dan Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)
 
 Untuk memahami dampak Algoritma Shor, kita perlu mengetahui bagaimana **kriptografi RSA**, yang merupakan kriptografi kunci publik arus utama saat ini, bekerja.
 
@@ -356,7 +356,7 @@ Setelah periode $r=4$ diketahui, seperti yang dijelaskan sebelumnya, faktor prim
 
 ---
 
-## 7. Mengapa Kriptografi RSA Terancam?
+## 7. Mengapa Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) Terancam?
 
 Jumlah komputasi untuk faktorisasi prima di komputer klasik meningkat secara eksponensial seiring bertambahnya jumlah digit. Misalnya, faktorisasi bilangan 100 digit memakan waktu beberapa detik, 200 digit butuh bertahun-tahun, dan diperkirakan butuh waktu lebih lama dari umur alam semesta untuk RSA-2048 (sekitar 617 digit).
 
@@ -380,7 +380,7 @@ Teknologi yang sedang diteliti untuk mencapai hal ini adalah **Koreksi Kesalahan
 
 ## 9. Teknologi Kriptografi Generasi Berikutnya: Kriptografi Pasca-Kuantum (PQC)
 
-Untuk menghadapi ancaman Algoritma Shor, institusi di seluruh dunia, termasuk National Institute of Standards and Technology (NIST) AS, sedang dalam proses menstandarkan bentuk kriptografi baru yang disebut **Kriptografi Pasca-Kuantum (Post-Quantum Cryptography: PQC)**, yang tidak dapat diretas bahkan oleh komputer kuantum.
+Untuk menghadapi ancaman Algoritma Shor, institusi di seluruh dunia, termasuk National Institute of Standards and Technology (NIST) AS, sedang dalam proses menstandarkan bentuk kriptografi baru yang disebut **Kriptografi Pasca-Kuantum (Post-Quantum [Cryptography](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/): PQC)**, yang tidak dapat diretas bahkan oleh komputer kuantum.
 
 PQC tidak menggunakan teknologi kuantum; ia dapat dijalankan pada komputer klasik, tetapi berlandaskan pada masalah matematika baru yang tidak dapat dipecahkan secara efisien sekalipun menggunakan algoritma kuantum (Algoritma Shor tidak dapat diterapkan padanya).
 

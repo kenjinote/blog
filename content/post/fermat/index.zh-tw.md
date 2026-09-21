@@ -39,7 +39,7 @@ flowchart TD
 
 ### 2.1. [費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)
 
-構成現代密碼學（如 RSA 加密）基礎的一個非常重要的定理就是 **[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)**。它揭示了一個關於質數的驚人性質，並在我們現代網際網路社會中默默地支撐著安全技術。
+構成現代密碼學（如 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密）基礎的一個非常重要的定理就是 **[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)**。它揭示了一個關於質數的驚人性質，並在我們現代網際網路社會中默默地支撐著安全技術。
 
 該定理的表述如下：
 對於任何質數 $p$ 和任何與 $p$ 互質（即不是 $p$ 的倍數）的整數 $a$，以下同餘式成立：

@@ -39,7 +39,7 @@ flowchart TD
 
 ### 2.1. [フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)
 
-現代の暗号理論（RSA暗号など）の根幹をなす非常に重要な定理が **[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)** です。これは素数に関する驚くべき性質を示しており、現代のインターネット社会におけるセキュリティ技術を陰で支えています。
+現代の暗号理論（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号など）の根幹をなす非常に重要な定理が **[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)** です。これは素数に関する驚くべき性質を示しており、現代のインターネット社会におけるセキュリティ技術を陰で支えています。
 
 定理の主張は以下の通りです。
 任意の素数 $p$ と、 $p$ と互いに素な（つまり $p$ の倍数ではない）任意の整数 $a$ に対して、以下の合同式が成り立ちます。

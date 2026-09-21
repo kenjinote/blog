@@ -310,7 +310,7 @@ jobs:
       node-version: '20'
 ```
 
-## 利用 OIDC (OpenID Connect) 進行安全的雲端整合
+## 利用 [OIDC](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) ([OpenID Connect](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)) 進行安全的雲端整合
 
 部署至 AWS、GCP、Azure 等雲端供應商時，若將長期的憑證（如密鑰）儲存在 GitHub 會有安全上的風險。
 
@@ -364,6 +364,6 @@ $ S = \lambda \times (T_{manual} - T_{auto}) $
 *   **頻繁整合：** 為了及早發現 Bug，請頻繁地合併微小的變更。
 *   **活用快取：** 縮短工作流程的執行時間，提升開發體驗。
 *   **自動化品質與安全性：** 將 Lint、測試、漏洞掃描整合至管線中。
-*   **利用 OIDC：** 與雲端供應商整合時，請使用 OIDC 發行的暫時性權杖取代密鑰。
+*   **利用 [OIDC](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)：** 與雲端供應商整合時，請使用 OIDC 發行的暫時性權杖取代密鑰。
 
 GitHub Actions 是一套極具彈性且強大的工具。建議您先從自動化 Lint 等一小步開始，再隨著專案成長逐步擴充管線。讓我們藉助自動化的力量，實現更快速、更高品質的軟體開發吧。

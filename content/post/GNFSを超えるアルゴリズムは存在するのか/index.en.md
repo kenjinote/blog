@@ -11,7 +11,7 @@ tags: ["GNFS", "Integer Factorization", "RSA", "Algorithms"]
 
 ## 1. Introduction: Integer Factorization and the Foundation of Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-The security of internet communication in modern society heavily relies on the security of the RSA cryptosystem, a public-key encryption. And the security of RSA is based on the mathematical assumption of "the difficulty of factoring huge composite numbers". If an extremely efficient integer factorization algorithm were discovered, the world's communication infrastructure would collapse from its foundation.
+The security of internet communication in modern society heavily relies on the security of the [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptosystem, a public-key encryption. And the security of RSA is based on the mathematical assumption of "the difficulty of factoring huge composite numbers". If an extremely efficient integer factorization algorithm were discovered, the world's communication infrastructure would collapse from its foundation.
 
 Currently, the **General Number Field Sieve (GNFS)** reigns as the fastest and strongest algorithm for factoring huge integers using classical computers. GNFS was born as an extension of the Special Number Field Sieve (SNFS) proposed in the late 1980s, and to this day, it has established factorization records for huge composite numbers such as RSA-768 and RSA-250.
 
@@ -123,7 +123,7 @@ $$ f_1(x), f_{2,1}(x), f_{2,2}(x), \dots, f_{2,V}(x) $$
 
 By utilizing multiple algebraic fields, the probability of "becoming smooth in any of the algebraic fields" can be dramatically increased in each sieving step. Coppersmith succeeded in slightly reducing the constant $c$ in the complexity $L_n[1/3, c]$ through this approach.
 Specifically, while the constant of GNFS is $c = (64/9)^{1/3} \approx 1.923$, it has been theoretically shown that optimizing MNFS can reduce the complexity to about $c \approx 1.902$.
-However, in practice, the overhead of managing multiple fields is large, and it has not yet led to a decisive breakthrough for RSA moduli on a practical scale.
+However, in practice, the overhead of managing multiple fields is large, and it has not yet led to a decisive breakthrough for [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) moduli on a practical scale.
 
 ### 4.2 Is an $L_n[1/4]$ Class Algorithm Possible?
 
@@ -159,7 +159,7 @@ graph LR
 
 The difference between these two complexity classes holds decisive meaning in real-world cryptographic security.
 
-For example, consider the case of factoring RSA-2048 (a 2048-bit composite number).
+For example, consider the case of factoring [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)-2048 (a 2048-bit composite number).
 - **GNFS (Classical)**: Substituting $n \approx 2^{2048}$ into $L_n[1/3, 1.923]$, about $2^{112}$ operations are required. This is an astronomical amount of computation that would take longer than the lifespan of the universe even if all the computing resources on Earth today were mobilized.
 - **[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/) (Quantum)**: With an $O((\log n)^3)$ algorithm, about $2048^3 \approx 8.5 \times 10^9$ logical gate operations are sufficient. This means that if appropriate hardware (a universal quantum computer with millions of physical qubits and error correction capabilities) exists, the calculation could be completed in just a few hours to a few days.
 
@@ -172,7 +172,7 @@ The paradigm shift from the sub-exponential function of "exponent $\alpha=1/3$" 
 The current scientific consensus on the question "Are there classical algorithms beyond GNFS?" is as follows:
 
 1. **Practical improvements continue, but there are no asymptotic leaps**: Attempts to improve the constant term $c$ of GNFS, such as MNFS, optimization of polynomial selection, and parallelization of the Block Wiedemann method, are ongoing. However, the possibility of discovering a classical algorithm with $\alpha$ falling below $1/3$ is considered extremely low.
-2. **The security of RSA on classical computers remains strong**: The computational complexity of GNFS remains enormous, and RSA-2048 and RSA-4096 will continue to maintain their security against attacks by classical computers for decades to come.
+2. **The security of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) on classical computers remains strong**: The computational complexity of GNFS remains enormous, and RSA-2048 and RSA-4096 will continue to maintain their security against attacks by classical computers for decades to come.
 3. **The true threat is quantum algorithms**: What crossed the barrier of computational complexity was Shor's algorithm, based on the principles of quantum mechanics. As a result, the world is forced to transition to Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC). The transition to new mathematical problems that are considered difficult to solve even for quantum computers (cannot be solved in polynomial time), such as lattice-based cryptography and hash-based cryptography, is currently at the forefront of cryptography.
 
 The General Number Field Sieve (GNFS) is one of the "highest peaks" humanity has reached by challenging the limits of classical mathematics and algorithm design. Understanding the profound mathematical structure of GNFS is not merely learning the history of cryptanalysis, but also an intellectual journey of exploration that touches upon the beauty of computational complexity theory and algebraic number theory. Until the day quantum computers are put into practical use, GNFS will likely continue to defend its throne as the strongest integer factorization algorithm.

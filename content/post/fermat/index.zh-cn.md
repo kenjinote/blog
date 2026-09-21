@@ -39,7 +39,7 @@ flowchart TD
 
 ### 2.1. [费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)
 
-构成现代密码学（如 RSA 加密）基础的一个非常重要的定理就是 **[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)**。它揭示了一个关于素数的惊人性质，并在我们现代互联网社会中默默地支撑着安全技术。
+构成现代密码学（如 [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) 加密）基础的一个非常重要的定理就是 **[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)**。它揭示了一个关于素数的惊人性质，并在我们现代互联网社会中默默地支撑着安全技术。
 
 该定理的表述如下：
 对于任何素数 $p$ 和任何与 $p$ 互素（即不是 $p$ 的倍数）的整数 $a$，以下同余式成立：

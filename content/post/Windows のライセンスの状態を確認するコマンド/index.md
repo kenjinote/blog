@@ -11,7 +11,7 @@ description: 'Windowsのライセンスが正しく認証されているか確�
 
 # 【Windows】ライセンスの状態を確認する方法（コマンド1つでOK）
 
-Windowsのライセンスが正しく認証されているかどうか、気になったことはありませんか？
+Windowsのライセンスが正しく[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)されているかどうか、気になったことはありませんか？
 
 そんなときに便利なのが、 **コマンド一発でライセンス情報を確認できる方法** です。以下の手順を実行するだけで、現在のライセンス状態を簡単にチェックできます。
 
@@ -43,7 +43,7 @@ slmgr /dli
 
 * プロダクトキーの一部
 * ライセンスの種類（リテール、OEMなど）
-* ライセンスの状態（有効、期限切れ、未認証など）
+* ライセンスの状態（有効、期限切れ、未[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)など）
 
 ## もっと詳細な情報を知りたいときは？
 

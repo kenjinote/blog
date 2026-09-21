@@ -16,7 +16,7 @@ La pandémie mondiale du début des années 2020 a fondamentalement bouleversé 
 
 Cependant, alors que la pandémie touche à sa fin, le paysage de l'industrie est à nouveau en train de changer. De grandes entreprises technologiques telles qu'Amazon, Google et Meta ont commencé à promouvoir fortement un "modèle hybride" nécessitant plusieurs jours de présence au bureau par semaine, ou même un "retour au bureau" (RTO : Return to Office) complet. Cette directive RTO imposée par la direction crée de graves frictions avec de nombreux ingénieurs (Contributeurs Individuels : IC). Face aux ingénieurs qui affirment que "l'environnement calme de la maison permet de mieux se concentrer sur le code" et que "le temps de trajet est un gaspillage de vie", la direction rétorque que "l'innovation naît de rencontres fortuites" et que "la communication en face à face est essentielle pour cultiver la culture d'entreprise".
 
-Dans cet article, nous ne traiterons pas ce débat binaire "Télétravail vs Retour au bureau" comme une simple question d'émotion ou de préférence personnelle. Nous l'analyserons en profondeur à travers un prisme objectif et technique : la sociologie des organisations, l'évaluation quantitative de la productivité de l'ingénierie (métriques DORA, framework SPACE) et l'architecture réseau sous-jacente (VPN et Zero Trust). Au carrefour de la technologie et de la société humaine, explorons la "véritable solution optimale" que les organisations d'ingénierie modernes devraient viser.
+Dans cet article, nous ne traiterons pas ce débat binaire "Télétravail vs Retour au bureau" comme une simple question d'émotion ou de préférence personnelle. Nous l'analyserons en profondeur à travers un prisme objectif et technique : la sociologie des organisations, l'évaluation quantitative de la productivité de l'ingénierie (métriques DORA, framework SPACE) et l'architecture réseau sous-jacente (VPN et [Zero Trust](https://kenji.blog/fr/p/zero-trust-network-architecture-beyond-corp/)). Au carrefour de la technologie et de la société humaine, explorons la "véritable solution optimale" que les organisations d'ingénierie modernes devraient viser.
 
 ---
 
@@ -159,7 +159,7 @@ Pour la conception initiale de l'architecture ou la discussion d'algorithmes com
 
 ---
 
-# L'infrastructure technique soutenant le télétravail : Des limites du VPN vers le Zero Trust
+# L'infrastructure technique soutenant le télétravail : Des limites du VPN vers le [Zero Trust](https://kenji.blog/fr/p/zero-trust-network-architecture-beyond-corp/)
 
 Jusqu'à présent, nous avons abordé le sujet sous l'angle de la sociologie et de la productivité, mais un autre facteur crucial qui détermine l'expérience du télétravail est "l'architecture réseau". La productivité d'un ingénieur est directement liée à la latence d'accès aux environnements de développement et aux serveurs de production.
 
@@ -173,7 +173,7 @@ $$ T_{total} = \frac{D}{c} + \frac{L}{B} + T_{proc} $$
 
 Avec un VPN traditionnel, lorsqu'un ingénieur distant accède à un SaaS sur le cloud (par exemple, GitHub ou la console AWS), l'ensemble du trafic doit d'abord passer par la passerelle VPN du réseau de l'entreprise avant de ressortir vers Internet, provoquant un routage inefficace appelé "Hairpinning" (ou Hairpin NAT). Cela augmente inutilement la distance $D$ et fait grimper en flèche le temps $T_{proc}$ dû aux processus de chiffrement/déchiffrement des appliances VPN. Cela dégrade considérablement la réactivité de la frappe de l'ingénieur, détruisant son état de flux (flow).
 
-## Le changement de paradigme grâce au Zero Trust (BeyondCorp)
+## Le changement de paradigme grâce au Zero Trust ([BeyondCorp](https://kenji.blog/fr/p/zero-trust-network-architecture-beyond-corp/))
 
 Ce qui brise ces limites réseau et réalise un véritable "environnement de travail confortable et sécurisé depuis n'importe où" est l'**Architecture Réseau Zero Trust (Zero Trust Network Architecture : ZTNA)**, popularisée par "BeyondCorp" de Google.
 
@@ -195,7 +195,7 @@ graph TD
     end
 ```
 
-Dans une architecture Zero Trust, il n'y a pas de point de passage centralisé comme un VPN. Que l'ingénieur soit sur son Wi-Fi domestique ou sur le LAN sans fil public d'un café, il accède à chaque ressource directement par le chemin le plus court via un Proxy Sensible à l'Identité (IAP), sur la base d'un contexte robuste combinant l'authentification de l'appareil (certificats clients, etc.) et l'authentification de l'utilisateur (MFA).
+Dans une architecture [Zero Trust](https://kenji.blog/fr/p/zero-trust-network-architecture-beyond-corp/), il n'y a pas de point de passage centralisé comme un VPN. Que l'ingénieur soit sur son Wi-Fi domestique ou sur le LAN sans fil public d'un café, il accède à chaque ressource directement par le chemin le plus court via un Proxy Sensible à l'Identité (IAP), sur la base d'un contexte robuste combinant l'authentification de l'appareil (certificats clients, etc.) et l'authentification de l'utilisateur (MFA).
 
 Cela élimine la distance inutile $D$ et le délai de traitement excessif $T_{proc}$ de l'équation de latence mentionnée précédemment, permettant des opérations de terminal ou des transferts de données massifs avec une latence extrêmement faible, tout aussi confortable qu'au bureau. L'affirmation selon laquelle "la productivité ne baisse pas, même à distance" n'est pas qu'une simple question de volonté, mais une réalité qui ne peut être atteinte que grâce à la mise en place d'une infrastructure Zero Trust aussi avancée.
 

@@ -196,6 +196,6 @@ Wenn Sie interessiert sind, zeige ich das nächste Mal:
 
 * **Datei anhängen** 
 * **UI mit Buttons** 
-* **Flexible API-Bedienung mit Slack App + OAuth2** 
+* **Flexible API-Bedienung mit Slack App + [OAuth](https://kenji.blog/de/p/oauth2-oidc-authentication-authorization-difference/)2** 
 
 und wir können Ihnen einen weiteren Schritt der Slack-Integration vorstellen!

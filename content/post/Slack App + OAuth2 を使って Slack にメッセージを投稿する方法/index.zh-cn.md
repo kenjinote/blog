@@ -11,20 +11,20 @@ description: '讲解如何利用Slack App的OAuth令牌，通过Slack Web API发
 
 ## ✅ 使用访问令牌的发布方法（Slack Web API）
 
-Slack 的「OAuth Token（如 xoxb-〜）」是使用 Slack 的 [Web API](https://api.slack.com/methods/chat.postMessage) 进行发布的密钥。
+Slack 的「[OAuth](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) Token（如 xoxb-〜）」是使用 Slack 的 [Web API](https://api.slack.com/methods/chat.postMessage) 进行发布的密钥。
 在这种情况下，与 Webhook 不同，它是向 **Slack API 端点** 发送带有 `Authorization: Bearer` 请求头的 `POST` 请求。
 
 ---
 
 ## 🔑 必要前提
 
-在 Slack 应用中需要将 **`chat:write` 包含在 OAuth 作用域（Scope）中**：
+在 Slack 应用中需要将 **`chat:write` 包含在 [OAuth](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) 作用域（Scope）中**：
 
 ### 设置步骤
 
 1. 访问 [https://api.slack.com/apps](https://api.slack.com/apps)
 2. 创建应用或选择现有应用
-3. 在「OAuth & Permissions」 > `Scopes` 中
+3. 在「[OAuth](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) & Permissions」 > `Scopes` 中
    → 添加 `chat:write`
 4. 点击「Install to Workspace」或「Reinstall」获取 `Access Token`（例如：`xoxb-xxxxxxxxxx`）
 

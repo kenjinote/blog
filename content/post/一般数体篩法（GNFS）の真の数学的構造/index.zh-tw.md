@@ -118,7 +118,7 @@ $$\prod_{S} (a - b\alpha) = u \cdot \gamma^2$$
 ## 第五階段：阿德曼的魔法「二次特徵（Quadratic Characters）」
 
 理想類群的障礙與單位群的障礙。這兩個障礙該如何克服呢？
-這裡登場的是由密碼學家雷納德·阿德曼（RSA中的"A"）等人引入的天才手法—— **「二次特徵（Quadratic Characters）」** 。
+這裡登場的是由密碼學家雷納德·阿德曼（[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)中的"A"）等人引入的天才手法—— **「二次特徵（Quadratic Characters）」** 。
 
 為了判定「某個元素在代數體中是否為完全平方」，我們使用勒讓德符號（二次剩餘）的代數體版本。
 在剛才那個巨大的矩陣（為了將質理想個數湊成偶數的解謎）中，我們 **偷偷加上了幾十個額外條件（行），要求「對某些特殊質理想 $\mathfrak{q}$ 的二次特徵也全都要是 $1$（偶數）」** 。
@@ -157,7 +157,7 @@ $$X = V \pmod N$$
 剩下能做的，就是祈禱這對 $X$ 與 $Y$ 不是平凡解（$X \equiv \pm Y$），然後計算
 **$\gcd(X - Y, N)$** 。
 
-如果是非平凡解，[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法會在 0.001 秒內跑完，將作為 RSA 密碼心臟的秘密質數 $p$ 和 $q$ 印在輸出畫面上。
+如果是非平凡解，[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法會在 0.001 秒內跑完，將作為 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 密碼心臟的秘密質數 $p$ 和 $q$ 印在輸出畫面上。
 
 ---
 

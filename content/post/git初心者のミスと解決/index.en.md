@@ -60,7 +60,7 @@ A branch in Git is simply a lightweight pointer (file) that points to a specific
 
 ---
 
-## 3. Deciphering Git with Mathematics: Diff Algorithms and Hash Functions
+## 3. Deciphering Git with Mathematics: Diff Algorithms and [Hash Function](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s
 
 When Git detects conflicts or displays file differences, sophisticated algorithms are running internally.
 

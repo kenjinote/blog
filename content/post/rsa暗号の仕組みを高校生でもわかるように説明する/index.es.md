@@ -9,7 +9,7 @@ categories: ["mathematics", "cryptography"]
 tags: ["RSA", "Números primos", "Matemáticas", "Criptografía"]
 ---
 
-Una de las tecnologías que sustenta la seguridad de la sociedad de internet desde su base es el "cifrado RSA". Gran parte de las comunicaciones que usamos casualmente todos los días, como los pagos con tarjeta de crédito en compras en línea, los intercambios de mensajes en redes sociales con amigos y el envío o recepción de información confidencial de las empresas, están protegidas por este cifrado RSA o sus tecnologías sucesoras.
+Una de las tecnologías que sustenta la seguridad de la sociedad de internet desde su base es el "cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)". Gran parte de las comunicaciones que usamos casualmente todos los días, como los pagos con tarjeta de crédito en compras en línea, los intercambios de mensajes en redes sociales con amigos y el envío o recepción de información confidencial de las empresas, están protegidas por este cifrado RSA o sus tecnologías sucesoras.
 
 Sin embargo, al escuchar "cifrado", podrías imaginar máquinas de cifrado complejas como las que aparecen en las películas de espías, o matemáticas súper avanzadas que solo un puñado de genios puede entender. Es cierto que la teoría criptográfica moderna se basa en matemáticas avanzadas, pero **el mecanismo fundamental del cifrado RSA se puede entender perfectamente si tienes conocimientos de las matemáticas que se aprenden en la escuela secundaria (propiedades de los números enteros, números primos, congruencias, etc.)**.
 
@@ -58,7 +58,7 @@ Para hacer realidad este revolucionario sistema, se necesita una especie de **"f
 
 ---
 
-## 2. Fundamento matemático 1 que sustenta el cifrado RSA: Números primos y factorización en números primos
+## 2. Fundamento matemático 1 que sustenta el cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/): Números primos y factorización en números primos
 
 La seguridad del cifrado RSA se basa en el hecho matemático de que **"la factorización en números primos de números gigantescos es extremadamente difícil"**.
 
@@ -135,7 +135,7 @@ $$ \phi(p) = p - 1 $$
 **[Propiedad especial en el caso del producto de números primos]**
 Para dos números primos diferentes $p$ y $q$, si definimos $N = p \times q$, $\phi(N)$ se puede calcular fácilmente de la siguiente manera:
 $$ \phi(N) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-Esta propiedad funciona como la "puerta trasera secreta (trapdoor)" del cifrado RSA. Una persona (el creador de la clave) que conoce $p$ y $q$ puede calcular $\phi(N)$ en un instante, pero un tercero que solo conoce $N$ no puede encontrar $\phi(N)$ a menos que factorice $N$ en números primos.
+Esta propiedad funciona como la "puerta trasera secreta (trapdoor)" del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/). Una persona (el creador de la clave) que conoce $p$ y $q$ puede calcular $\phi(N)$ en un instante, pero un tercero que solo conoce $N$ no puede encontrar $\phi(N)$ a menos que factorice $N$ en números primos.
 
 ### 4.2 El Teorema de Euler
 
@@ -153,7 +153,7 @@ $$ a^{\phi(N) + 1} \equiv a \pmod N $$
 Además, para cualquier entero $k$, dado que $a^{k \cdot \phi(N)}$ también se convierte en $1^k = 1$, se cumple la siguiente ecuación:
 $$ a^{k \cdot \phi(N) + 1} \equiv a \pmod N $$
 
-¡Esta fórmula es precisamente el principio fundamental que hace posible la magia del cifrado RSA de **"volver al estado original al cifrar y descifrar"**!
+¡Esta fórmula es precisamente el principio fundamental que hace posible la magia del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) de **"volver al estado original al cifrar y descifrar"**!
 
 ---
 
@@ -238,7 +238,7 @@ Dado que Alice no conoce $d$ y un espía tampoco conoce $d$, ¡el único que pue
 
 ---
 
-## 7. Ejemplo concreto: Experimentemos el RSA calculando a mano con números primos pequeños
+## 7. Ejemplo concreto: Experimentemos el [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) calculando a mano con números primos pequeños
 
 Intentemos comunicarnos de forma cifrada desde Alice a Bob utilizando números pequeños (números primos) reales.
 
@@ -281,7 +281,7 @@ $-17$ significa lo mismo que $120 - 17 = 103$ en el mundo del módulo $120$. Por
 
 ---
 
-## 9. Otra cara del cifrado RSA: Firmas digitales
+## 9. Otra cara del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/): Firmas digitales
 
 Lo maravilloso del cifrado RSA es que, invirtiendo los roles de la clave pública y la clave privada, también se puede utilizar como **"firma digital"**.
 
@@ -302,7 +302,7 @@ Alice convierte un mensaje utilizando su propia clave privada $d$ (esta es la fi
 
 ---
 
-## 10. Experimentando el cifrado RSA con programación
+## 10. Experimentando el cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) con programación
 
 El cálculo de potencias, que es difícil de hacer a mano, se puede implementar muy fácilmente utilizando Python. El siguiente es un código de Python que permite experimentar la lógica central del cifrado RSA.
 
@@ -342,7 +342,7 @@ La función `pow(base, exp, mod)` de Python utiliza internamente un algoritmo r�
 
 ## 11. Resumen y futuras tecnologías criptográficas
 
-Hemos desentrañado el mecanismo del cifrado RSA basándonos en los conocimientos de matemáticas de secundaria.
+Hemos desentrañado el mecanismo del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) basándonos en los conocimientos de matemáticas de secundaria.
 
 1. **La dificultad de la factorización en números primos:** $p \times q = N$ es fácil, pero encontrar $p, q$ a partir de $N$ es muy difícil.
 2. **Congruencias y el Teorema de Euler:** A través de la ley $a^{\phi(N)} \equiv 1 \pmod N$, se completa la puerta trasera mágica que dice "al elevar a una potencia con un número determinado, se vuelve al original".

@@ -14,7 +14,7 @@ tags:
 
 현대 인터넷 사회에서 우리가 안전하게 통신할 수 있는 것은 **암호 이론** 덕분입니다. 그리고 그 암호 이론의 근저에는 17세기 수학자 [피에르 드 페르마](https://kenji.blog/ko/p/fermat/)([Pierre de Fermat](https://kenji.blog/ko/p/fermat/))가 발견한 아름다운 정리가 존재하고 있습니다.
 
-본 기사에서는 정수론의 중요한 기초인 **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)** ([Fermat's Little Theorem](https://kenji.blog/ko/p/fermats-little-theorem/))에 대해, 그 의미와 증명, 그리고 현대의 RSA 암호에 어떻게 응용되고 있는지를 알기 쉽게 해설합니다.
+본 기사에서는 정수론의 중요한 기초인 **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)** ([Fermat's Little Theorem](https://kenji.blog/ko/p/fermats-little-theorem/))에 대해, 그 의미와 증명, 그리고 현대의 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호에 어떻게 응용되고 있는지를 알기 쉽게 해설합니다.
 
 ## [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)란?
 
@@ -92,9 +92,9 @@ flowchart TD
 
 다만, 합성수임에도 불구하고 $a^{n-1} \equiv 1 \pmod n$ 을 만족시켜 버리는 **카마이클 수** (Carmichael numbers)라고 불리는 예외적인 수가 존재하기 때문에, 이 테스트 단독으로는 확실한 소수 판정을 할 수 없습니다. 그래서 실용적으로는 밀러-라빈 소수 판정법 등이 사용됩니다.
 
-## 현대 암호 이론에의 응용: RSA 암호
+## 현대 암호 이론에의 응용: [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호
 
-[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)(및 그 일반화인 **오일러의 정리** )의 가장 중요한 응용처가 바로 인터넷의 보안을 지탱하는 **RSA 암호** 입니다.
+[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)(및 그 일반화인 **오일러의 정리** )의 가장 중요한 응용처가 바로 인터넷의 보안을 지탱하는 **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호** 입니다.
 
 RSA 암호는 거대한 수의 소인수분해가 어렵다는 점을 안전성의 근거로 삼고 있습니다. 그 구조에 있어서, '[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)'의 원리가 키의 생성과 복호화 과정에서 결정적인 역할을 하고 있습니다.
 
@@ -111,7 +111,7 @@ sequenceDiagram
     Note over Receiver: "M = C^d mod n"
 ```
 
-RSA 암호에서는 $p$ 와 $q$ 라는 2개의 거대한 소수를 준비하고, $n = p \times q$ 로 둡니다.
+[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호에서는 $p$ 와 $q$ 라는 2개의 거대한 소수를 준비하고, $n = p \times q$ 로 둡니다.
 오일러의 정리에 의해 암호화와 복호화 과정에서 $M^{ed} \equiv M \pmod n$ 이 성립하도록 키($e$ 와 $d$)가 설계됩니다. 여기서 평문 $M$ 이 원래 모습으로 돌아간다는 마법 같은 현상은 본질적으로 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)가 보장하고 있는 수학적 성질에 의존하고 있는 것입니다.
 
 ## 요약

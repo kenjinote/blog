@@ -350,7 +350,7 @@ $$
 
 ## 反模式
 1. **手动更改的混合** ：直接从GUI更改Terraform管理的资源。这会导致State不一致。
-2. **凭据的硬编码** ：在代码中直接写入访问密钥或秘密密钥。请使用环境变量或IAM角色（如OIDC集成）。
+2. **凭据的硬编码** ：在代码中直接写入访问密钥或秘密密钥。请使用环境变量或IAM角色（如[OIDC](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/)集成）。
 3. **过于复杂的模块** ：如果试图让模块拥有所有功能，变量将会多达几十个，可读性显著下降。请牢记“一个模块一个关注点（Single Responsibility）”。
 
 ---

@@ -113,7 +113,7 @@ def is_mersenne_prime(p):
     return s == 0
 ```
 
-The gigantic primes discovered play a critical role in supporting the information society, serving as the foundation for the security evaluation of modern public-key cryptography systems like RSA, and random number generation algorithms (such as the [Mersenne](https://kenji.blog/en/p/mersenne/) Twister).
+The gigantic primes discovered play a critical role in supporting the information society, serving as the foundation for the security evaluation of modern public-key cryptography systems like [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/), and random number generation algorithms (such as the [Mersenne](https://kenji.blog/en/p/mersenne/) Twister).
 
 ## Contributions to Acoustics and Music Theory: [Mersenne](https://kenji.blog/en/p/mersenne/)'s Laws
 

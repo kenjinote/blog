@@ -14,7 +14,7 @@ tags:
   - "python"
 ---
 
-Security in modern internet society is protected by public-key cryptography systems such as RSA encryption. These cryptographic systems base their security on the mathematical difficulty that "factoring giant numbers takes an astronomical amount of time for current computers (classical computers)."
+Security in modern internet society is protected by public-key cryptography systems such as [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption. These cryptographic systems base their security on the mathematical difficulty that "factoring giant numbers takes an astronomical amount of time for current computers (classical computers)."
 
 However, it is the **quantum computer** that has the potential to fundamentally overturn this premise. In particular, **Shor's Algorithm**, discovered by Peter Shor in 1994, mathematically proved that if a quantum computer were put into practical use, RSA encryption could be broken within a realistic timeframe.
 
@@ -110,7 +110,7 @@ graph LR
 
 ---
 
-## 3. Basics of Cryptography and RSA Encryption
+## 3. Basics of [Cryptography](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) and [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Encryption
 
 To understand the impact of Shor's algorithm, it is necessary to know the mechanism of **RSA encryption**, which is currently the mainstream public-key cryptography.
 
@@ -356,7 +356,7 @@ Once the period $r=4$ is known, as previously mentioned, the prime factors $3$ a
 
 ---
 
-## 7. Why is RSA Encryption in Jeopardy?
+## 7. Why is [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Encryption in Jeopardy?
 
 The computational complexity of prime factorization on a classical computer increases exponentially as the number of digits increases. For example, it is estimated to take a few seconds to factorize a 100-digit number, several years for 200 digits, and more time than the age of the universe for RSA-2048 (about 617 digits).
 
@@ -378,7 +378,7 @@ Quantum states are extremely delicate, and slight heat or electromagnetic waves 
 
 ---
 
-## 9. Next-Generation Cryptographic Technology: Post-Quantum Cryptography (PQC)
+## 9. Next-Generation Cryptographic Technology: Post-Quantum [Cryptography](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) (PQC)
 
 To counter the threat of Shor's algorithm, organizations around the world, including the National Institute of Standards and Technology (NIST) in the US, are promoting the standardization of a new cryptographic method called **Post-Quantum Cryptography (PQC)** that cannot be decrypted even by quantum computers.
 

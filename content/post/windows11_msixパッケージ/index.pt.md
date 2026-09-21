@@ -131,7 +131,7 @@ Isso concluirá a criação do arquivo MSIX não assinado, mas, nesse estado, el
 
 Para entender profundamente por que os pacotes MSIX precisam de assinatura, é necessário compreender o mecanismo criptográfico por trás da assinatura digital. A assinatura digital garante que o pacote "foi certamente criado pelo fornecedor especificado (autenticidade)" e "não foi adulterado por terceiros desde a sua criação até agora (integridade)".
 
-A assinatura do MSIX geralmente usa uma combinação da criptografia RSA e SHA-256 (Secure Hash Algorithm 256-bit).
+A assinatura do MSIX geralmente usa uma combinação da criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e SHA-256 (Secure Hash Algorithm 256-bit).
 
 ### Aplicação da função hash
 Primeiro, considere que todos os binários (conteúdo) do pacote MSIX sejam a mensagem $M$. A ferramenta de assinatura (SignTool.exe) aplica a função de hash criptográfico SHA-256 a esta mensagem $M$ para calcular um valor de hash $H(M)$ de comprimento fixo (256 bits).
@@ -141,7 +141,7 @@ Em seguida, o fornecedor usa a sua própria "chave privada (Private Key)" $d$ pa
 
 $$ \sigma \equiv (H(M))^d \pmod n $$
 
-Aqui, $n$ é o módulo RSA (o produto de dois grandes números primos). Um certificado (no formato X.509) contendo esta assinatura $\sigma$ e a "chave pública (Public Key)" $e$ do fornecedor é incorporado como parte do pacote MSIX (`AppxSignature.p7x`).
+Aqui, $n$ é o módulo RSA (o produto de dois grandes números primos). Um certificado (no formato X.509) contendo esta assinatura $\sigma$ e a "chave pública ([Public Key](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/))" $e$ do fornecedor é incorporado como parte do pacote MSIX (`AppxSignature.p7x`).
 
 ### Verificação da assinatura (Sistema Operacional Windows)
 Quando o usuário tenta instalar o MSIX, o sistema operacional Windows extrai a chave pública $e$ do certificado dentro do pacote e realiza o seguinte cálculo para restaurar o valor do hash $H'(M)$:

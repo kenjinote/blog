@@ -196,6 +196,6 @@ Hello from C++ :rocket:
 
 *  **檔案附件** 
 *  **帶按鈕的 UI** 
-*  **使用 Slack App + OAuth2 進行靈活的 API 操作** 
+*  **使用 Slack App + [OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)2 進行靈活的 API 操作** 
 
 等，為您介紹更進一步的 Slack 整合！

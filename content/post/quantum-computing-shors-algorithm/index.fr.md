@@ -14,7 +14,7 @@ tags:
   - "python"
 ---
 
-La sécurité dans la société Internet moderne est protégée par des systèmes de cryptographie à clé publique tels que le chiffrement RSA. Ces systèmes de cryptographie fondent leur sécurité sur la difficulté mathématique : "la factorisation en nombres premiers de nombres gigantesques prendrait un temps astronomique avec les ordinateurs actuels (ordinateurs classiques)".
+La sécurité dans la société Internet moderne est protégée par des systèmes de cryptographie à clé publique tels que le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/). Ces systèmes de cryptographie fondent leur sécurité sur la difficulté mathématique : "la factorisation en nombres premiers de nombres gigantesques prendrait un temps astronomique avec les ordinateurs actuels (ordinateurs classiques)".
 
 Cependant, l' **ordinateur quantique** possède le potentiel de renverser fondamentalement cette prémisse. En particulier, l' **algorithme de Shor** (Shor's Algorithm), découvert en 1994 par Peter Shor, a prouvé mathématiquement que si un ordinateur quantique devenait réalisable, il pourrait casser le chiffrement RSA dans un temps réaliste.
 
@@ -110,7 +110,7 @@ graph LR
 
 ---
 
-## 3. Les bases de la cryptographie et le chiffrement RSA
+## 3. Les bases de la cryptographie et le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)
 
 Pour comprendre l'impact de l'algorithme de Shor, il est nécessaire de connaître le fonctionnement du **chiffrement RSA** , qui est actuellement le chiffrement à clé publique dominant.
 
@@ -356,7 +356,7 @@ Une fois la période $r=4$ connue, on peut en déduire les facteurs premiers $3$
 
 ---
 
-## 7. Pourquoi le chiffrement RSA est-il en danger ?
+## 7. Pourquoi le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) est-il en danger ?
 
 La complexité temporelle de la factorisation en nombres premiers sur un ordinateur classique augmente de manière exponentielle avec le nombre de chiffres. Par exemple, il faut quelques secondes pour factoriser un nombre de 100 chiffres, plusieurs années pour 200 chiffres, et on estime qu'il faudrait un temps supérieur à l'âge de l'univers pour le RSA-2048 (environ 617 chiffres).
 
@@ -380,7 +380,7 @@ La technologie étudiée pour y parvenir est la **correction d'erreurs quantique
 
 ## 9. Les technologies cryptographiques de nouvelle génération : Cryptographie post-quantique (PQC)
 
-Afin de contrer la menace de l'algorithme de Shor, des institutions du monde entier, dont le National Institute of Standards and Technology (NIST) américain, procèdent à la normalisation de la **cryptographie post-quantique (PQC : Post-Quantum Cryptography)** , de nouveaux systèmes de cryptographie impossibles à déchiffrer même par des ordinateurs quantiques.
+Afin de contrer la menace de l'algorithme de Shor, des institutions du monde entier, dont le National Institute of Standards and Technology (NIST) américain, procèdent à la normalisation de la **cryptographie post-quantique (PQC : Post-Quantum [Cryptography](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/))** , de nouveaux systèmes de cryptographie impossibles à déchiffrer même par des ordinateurs quantiques.
 
 La PQC n'utilise pas la technologie quantique ; elle est exécutable sur des ordinateurs classiques, mais se base sur de nouveaux problèmes mathématiques qui ne peuvent pas être résolus efficacement par les algorithmes quantiques (auxquels l'algorithme de Shor ne s'applique pas).
 

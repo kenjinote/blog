@@ -14,7 +14,7 @@ tags:
 
 ## Introduction
 
-Le théorème des restes chinois ([Chinese Remainder Theorem](https://kenji.blog/fr/p/chinese-remainder-theorem/), en abrégé TRC) est l'un des théorèmes les plus importants et les plus beaux de la théorie des nombres. Son origine remonte au manuel de mathématiques de la Chine antique, le « Sunzi Suanjing » (Classique mathématique de Sunzi), qui aurait été compilé entre le IIIe et le Ve siècle. Ce théorème, qui a commencé par de simples problèmes de calcul dans l'Antiquité, joue un rôle indispensable dans la technologie de la cryptographie à clé publique, telle que la **cryptographie RSA**, qui soutient les communications sécurisées sur Internet que nous utilisons quotidiennement aujourd'hui, après des milliers d'années.
+Le théorème des restes chinois ([Chinese Remainder Theorem](https://kenji.blog/fr/p/chinese-remainder-theorem/), en abrégé TRC) est l'un des théorèmes les plus importants et les plus beaux de la théorie des nombres. Son origine remonte au manuel de mathématiques de la Chine antique, le « Sunzi Suanjing » (Classique mathématique de Sunzi), qui aurait été compilé entre le IIIe et le Ve siècle. Ce théorème, qui a commencé par de simples problèmes de calcul dans l'Antiquité, joue un rôle indispensable dans la technologie de la cryptographie à clé publique, telle que la **cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)**, qui soutient les communications sécurisées sur Internet que nous utilisons quotidiennement aujourd'hui, après des milliers d'années.
 
 Dans cet article, nous expliquerons en détail ce **théorème des restes chinois**, de son contexte historique à sa définition mathématique rigoureuse, en passant par des procédures de calcul spécifiques et ses applications dans la théorie de la cryptographie moderne, le tout accompagné de diagrammes et d'exemples concrets.
 
@@ -103,7 +103,7 @@ $233 \equiv 23 \pmod{105}$
 
 Par conséquent, la plus petite solution positive est **23**, ce qui correspond parfaitement à la solution de Sunzi.
 
-## Application moderne : [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie RSA et TRC
+## Application moderne : [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et TRC
 
 Le **théorème des restes chinois**, qui était une énigme de l'Antiquité, a des applications extrêmement pratiques dans la société numérique moderne. L'exemple typique est l'accélération du déchiffrement et de la génération de signature dans la **cryptographie RSA**.
 
@@ -140,7 +140,7 @@ graph TD
    $M_q = C^{d_q} \pmod q$
 3. Appliquez le TRC à $M_p$ et $M_q pour trouver $M \pmod N$.
 
-Lorsque le module a la moitié de la longueur en bits (par exemple, 1024 bits), le coût du calcul de l'exponentiation est d'environ 1/8. Même en le faisant deux fois, le coût global est d'environ 1/4, et l'utilisation de RSA-CRT peut accélérer le déchiffrement et la génération de signature d' **environ 4 fois**. Dans les appareils aux ressources de calcul limitées, tels que les smartphones et les cartes à puce, cette accélération est extrêmement importante.
+Lorsque le module a la moitié de la longueur en bits (par exemple, 1024 bits), le coût du calcul de l'exponentiation est d'environ 1/8. Même en le faisant deux fois, le coût global est d'environ 1/4, et l'utilisation de [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)-CRT peut accélérer le déchiffrement et la génération de signature d' **environ 4 fois**. Dans les appareils aux ressources de calcul limitées, tels que les smartphones et les cartes à puce, cette accélération est extrêmement importante.
 
 ## Implémentation du théorème des restes chinois par la programmation
 

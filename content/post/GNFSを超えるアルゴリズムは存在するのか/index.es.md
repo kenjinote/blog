@@ -11,7 +11,7 @@ tags: ["GNFS", "Factorización de enteros", "RSA", "Algoritmos"]
 
 ## 1. Introducción: La factorización de enteros y la base de la criptografía moderna
 
-La seguridad de las comunicaciones por internet en la sociedad moderna depende en gran medida de la seguridad del cifrado RSA, que es un sistema de cifrado de clave pública. Y la seguridad del cifrado RSA se basa en la suposición matemática de la "dificultad de factorizar enormes números compuestos". Si se descubriera un algoritmo de factorización de enteros extremadamente eficiente, la infraestructura de comunicaciones de todo el mundo se derrumbaría desde sus cimientos.
+La seguridad de las comunicaciones por internet en la sociedad moderna depende en gran medida de la seguridad del cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/), que es un sistema de cifrado de clave pública. Y la seguridad del cifrado RSA se basa en la suposición matemática de la "dificultad de factorizar enormes números compuestos". Si se descubriera un algoritmo de factorización de enteros extremadamente eficiente, la infraestructura de comunicaciones de todo el mundo se derrumbaría desde sus cimientos.
 
 Actualmente, en la factorización de enteros enormes utilizando ordenadores clásicos, el algoritmo más rápido y poderoso que reina es la **Criba General del Cuerpo de Números (GNFS: General Number Field Sieve)**. GNFS nació como una extensión de la Criba Especial del Cuerpo de Números (SNFS) propuesta a finales de la década de 1980, y hasta el día de hoy ha establecido récords de factorización de enormes números compuestos como RSA-768 y RSA-250.
 
@@ -122,7 +122,7 @@ $$ f_1(x), f_{2,1}(x), f_{2,2}(x), \dots, f_{2,V}(x) $$
 
 Al utilizar múltiples cuerpos algebraicos, se puede aumentar drásticamente la probabilidad de que "sea suave en alguno de los cuerpos algebraicos" en cada paso del cribado. Coppersmith logró reducir ligeramente la constante $c$ de la complejidad computacional $L_n[1/3, c]$ mediante este enfoque.
 Específicamente, se ha demostrado teóricamente que mientras la constante de GNFS es $c = (64/9)^{1/3} \approx 1.923$, al optimizar MNFS, el costo computacional puede reducirse hasta un valor cercano a $c \approx 1.902$.
-Sin embargo, en la práctica, la carga adicional (overhead) de gestionar múltiples cuerpos es enorme y no se ha logrado un avance decisivo frente al módulo RSA a una escala de aplicación práctica.
+Sin embargo, en la práctica, la carga adicional (overhead) de gestionar múltiples cuerpos es enorme y no se ha logrado un avance decisivo frente al módulo [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) a una escala de aplicación práctica.
 
 ### 4.2 ¿Es posible un algoritmo de la clase $L_n[1/4]$?
 
@@ -158,7 +158,7 @@ graph LR
 
 La diferencia entre estas dos clases de complejidad computacional tiene un significado crucial en la seguridad de la criptografía del mundo real.
 
-Por ejemplo, considere el caso de factorizar RSA-2048 (un número compuesto de 2048 bits).
+Por ejemplo, considere el caso de factorizar [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)-2048 (un número compuesto de 2048 bits).
 - **GNFS (Clásico)**: Al sustituir $n \approx 2^{2048}$ en $L_n[1/3, 1.923]$, se requieren aproximadamente $2^{112}$ operaciones. Esta es una cantidad astronómica de cálculos que tomaría más del tiempo de vida del universo, incluso combinando todos los recursos de computación de la Tierra en la actualidad.
 - **[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/) (Cuántico)**: Con el algoritmo de $O((\log n)^3)$, tomaría aproximadamente $2048^3 \approx 8.5 \times 10^9$ operaciones de puertas lógicas. Esto significa que si existiera el hardware adecuado (un ordenador cuántico universal con millones de cúbits físicos y capacidad de corrección de errores), el cálculo se completaría en tan solo unas horas o unos días.
 
@@ -171,7 +171,7 @@ El cambio de paradigma del tiempo subexponencial de "exponente $\alpha=1/3$" al 
 El consenso actual en la comunidad científica frente a la pregunta "¿Existe algún algoritmo clásico que supere a GNFS?" es el siguiente:
 
 1. **Las mejoras prácticas continúan, pero no hay un salto asintótico**: Los intentos de mejorar el término constante $c$ de GNFS continúan, como en el caso de MNFS, la optimización de la selección de polinomios y la paralelización del algoritmo de Wiedemann por bloques. Sin embargo, se considera que la posibilidad de descubrir un algoritmo clásico que caiga por debajo de $\alpha = 1/3$ es extremadamente baja.
-2. **La seguridad de RSA en ordenadores clásicos sigue siendo robusta**: La complejidad computacional de GNFS sigue siendo inmensa, y RSA-2048 y RSA-4096 seguirán siendo seguros frente a ataques a través de ordenadores clásicos durante las próximas décadas.
+2. **La seguridad de [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) en ordenadores clásicos sigue siendo robusta**: La complejidad computacional de GNFS sigue siendo inmensa, y RSA-2048 y RSA-4096 seguirán siendo seguros frente a ataques a través de ordenadores clásicos durante las próximas décadas.
 3. **La verdadera amenaza es el algoritmo cuántico**: El que ha cruzado la barrera de la complejidad computacional es el algoritmo de Shor, basado en los principios de la mecánica cuántica. Debido a esto, el mundo se está viendo obligado a migrar hacia la criptografía poscuántica (PQC: Post-Quantum [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy). La vanguardia de la criptografía actual consiste en la transición a nuevos problemas matemáticos, como la criptografía basada en retículos y la criptografía basada en hash, que se consideran difíciles de descifrar (imposibles de resolver en tiempo polinómico) incluso para los ordenadores cuánticos.
 
 La Criba General del Cuerpo de Números (GNFS) es uno de los "mayores logros" alcanzados por la humanidad al desafiar los límites de las matemáticas clásicas y el diseño de algoritmos. Comprender la profunda estructura matemática de GNFS no es solo aprender sobre la historia del criptoanálisis, sino que también es un viaje de exploración intelectual para entrar en contacto con la belleza de la teoría de la complejidad computacional y la teoría de los números algebraicos. Hasta el día en que los ordenadores cuánticos se implementen de forma práctica, GNFS seguramente seguirá defendiendo su trono como el algoritmo de factorización de enteros más poderoso.

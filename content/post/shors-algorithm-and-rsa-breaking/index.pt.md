@@ -10,11 +10,11 @@ description: 'Explicamos como a criptografia RSA, que suporta a infraestrutura d
 
 ## Introdução: A Interseção entre Criptografia e Computadores Quânticos
 
-Na sociedade da internet moderna, a base para proteger o segredo das comunicações é a "criptografia de chave pública". Um dos mais representativos é a "Criptografia RSA", desenvolvida em 1977 por Ron Rivest, Adi Shamir e Leonard Adleman. Desde pagamentos de compras online que usamos diariamente, navegação em sites (HTTPS), até envio e recebimento de e-mails, a criptografia RSA funciona como o coração da infraestrutura da internet.
+Na sociedade da internet moderna, a base para proteger o segredo das comunicações é a "criptografia de chave pública". Um dos mais representativos é a "Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)", desenvolvida em 1977 por Ron Rivest, Adi Shamir e Leonard Adleman. Desde pagamentos de compras online que usamos diariamente, navegação em sites (HTTPS), até envio e recebimento de e-mails, a criptografia RSA funciona como o coração da infraestrutura da internet.
 
 No entanto, com o surgimento dos "computadores quânticos", foi apontado que essa segurança pode ser subvertida desde a base. Na mídia, às vezes vemos manchetes sensacionalistas como "Se um computador quântico for concluído, senhas e criptografias em todo o mundo serão decifradas em segundos". Mas será que isso é verdade?
 
-Neste artigo, aprofundaremos como funcionam o GNFS (General Number Field Sieve), um método clássico de descriptografia, e a versão definitiva dos algoritmos de descriptografia usando computadores quânticos, o "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/))". Explicaremos de forma fácil conceitos avançados, como a transformação quântica de Fourier e a descoberta de períodos, e examinaremos em detalhes o estado atual do hardware quântico na era NISQ (Noisy Intermediate-Scale Quantum) e os obstáculos reais necessários para quebrar a RSA-2048.
+Neste artigo, aprofundaremos como funcionam o GNFS (General Number Field Sieve), um método clássico de descriptografia, e a versão definitiva dos algoritmos de descriptografia usando computadores quânticos, o "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/))". Explicaremos de forma fácil conceitos avançados, como a transformação quântica de Fourier e a descoberta de períodos, e examinaremos em detalhes o estado atual do hardware quântico na era NISQ (Noisy Intermediate-Scale Quantum) e os obstáculos reais necessários para quebrar a [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)-2048.
 
 ---
 
@@ -120,7 +120,7 @@ Após aplicar a QFT, se você medir o primeiro registrador, com uma probabilidad
 
 Trazendo o resultado desta medição $ c $ de volta para um computador clássico, criamos uma fração $ \frac{c}{2^n} \approx \frac{j}{r} $. Em seguida, usando o método matemático da "Expansão de Fração Contínua" (Continued fraction expansion) para calcular valores aproximados, podemos descobrir o período $ r $, que é o denominador.
 
-Uma vez conhecido o $ r $, o resto é calcular os fatores de $ N $ usando a fórmula do Passo 1, e a criptografia RSA é completamente quebrada.
+Uma vez conhecido o $ r $, o resto é calcular os fatores de $ N $ usando a fórmula do Passo 1, e a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) é completamente quebrada.
 
 ---
 
@@ -181,5 +181,5 @@ Testes de implementação e implementações híbridas da PQC já foram iniciado
 
 Os computadores quânticos estão passando de histórias de ficção científica para desafios reais de engenharia. O algoritmo de Shor é uma grande conquista intelectual da humanidade que mescla a matemática e a mecânica quântica, mas, ao mesmo tempo, guarda um "poder destrutivo" para sacudir as bases da nossa sociedade digital.
 
-Isso não significa que a criptografia RSA se tornará inutilizável a partir de amanhã. No entanto, considerando a evolução da tecnologia quântica e o risco do "Store Now, Decrypt Later", a grande migração que ficará na história da criptografia - a transição para a PQC - já começou. Agora estamos testemunhando a linha de frente de uma mudança de paradigma na segurança da informação.
+Isso não significa que a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) se tornará inutilizável a partir de amanhã. No entanto, considerando a evolução da tecnologia quântica e o risco do "Store Now, Decrypt Later", a grande migração que ficará na história da criptografia - a transição para a PQC - já começou. Agora estamos testemunhando a linha de frente de uma mudança de paradigma na segurança da informação.
 

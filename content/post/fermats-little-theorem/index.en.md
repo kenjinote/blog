@@ -14,7 +14,7 @@ tags:
 
 In modern internet society, we owe our ability to communicate securely to **cryptography**. At the very foundation of this cryptography lies a beautiful theorem discovered by the 17th-century mathematician [Pierre de Fermat](https://kenji.blog/en/p/fermat/).
 
-In this article, we will explain **[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)**, a crucial cornerstone of number theory, in an easy-to-understand manner, covering its meaning, proof, and how it is applied to modern RSA cryptography.
+In this article, we will explain **[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)**, a crucial cornerstone of number theory, in an easy-to-understand manner, covering its meaning, proof, and how it is applied to modern [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography.
 
 ## What is [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)?
 
@@ -92,9 +92,9 @@ flowchart TD
 
 However, because there exist exceptional numbers called **Carmichael numbers**, which are composite numbers yet satisfy $a^{n-1} \equiv 1 \pmod n$, this test alone cannot definitively prove primality. Therefore, in practice, methods like the Miller-Rabin primality test are used.
 
-## Application to Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
+## Application to Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-The most important application of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) (and its generalization, **Euler's Theorem**) is **RSA cryptography**, which underpins internet security.
+The most important application of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) (and its generalization, **Euler's Theorem**) is **[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography**, which underpins internet security.
 
 RSA cryptography relies on the difficulty of factoring massive numbers for its security. Within its mechanism, the principle of "[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)" plays a decisive role in the key generation and decryption processes.
 
@@ -111,7 +111,7 @@ sequenceDiagram
     Note over Receiver: "M = C^d mod n"
 ```
 
-In RSA cryptography, two huge prime numbers, $p$ and $q$, are prepared, and we set $n = p \times q$.
+In [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography, two huge prime numbers, $p$ and $q$, are prepared, and we set $n = p \times q$.
 By Euler's Theorem, the keys ($e$ and $d$) are designed so that $M^{ed} \equiv M \pmod n$ holds true in the encryption and decryption processes. Here, the magical phenomenon of the plaintext $M$ returning to its original form essentially relies on the mathematical properties guaranteed by [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/).
 
 ## Conclusion

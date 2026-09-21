@@ -181,7 +181,7 @@ jobs:
 
 現代のCI/CDでは、セキュリティチェックを自動化する **DevSecOps** のアプローチが不可欠です。GitHub Actionsを利用すれば、簡単にセキュリティスキャンを組み込めます。
 
-### 依存関係の脆弱性スキャン (npm audit)
+### 依存関係の[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)スキャン (npm audit)
 
 ```yaml
       - name: 脆弱性のスキャン
@@ -190,7 +190,7 @@ jobs:
 
 ### 静的アプリケーションセキュリティテスト (SAST)
 
-GitHub Advanced Securityの機能であるCodeQLなどを利用して、ソースコード自体の脆弱性をスキャンできます。（※プライベートリポジトリではライセンスが必要な場合があります）
+GitHub Advanced Securityの機能であるCodeQLなどを利用して、ソースコード自体の[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)をスキャンできます。（※プライベートリポジトリではライセンスが必要な場合があります）
 
 ```yaml
   security-scan:
@@ -309,11 +309,11 @@ jobs:
       node-version: '20'
 ```
 
-## OIDC (OpenID Connect) を利用した安全なクラウド連携
+## [OIDC](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/) ([OpenID Connect](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)) を利用した安全なクラウド連携
 
 AWS、GCP、Azureなどのクラウドプロバイダへデプロイする際、長期的なクレデンシャル（シークレットキーなど）をGitHubに保存するのはセキュリティリスクが伴います。
 
-OIDCを使用すると、GitHub Actionsのジョブがクラウドプロバイダに対して一時的なトークンを要求し、安全に認証を行うことができます。
+OIDCを使用すると、GitHub Actionsのジョブがクラウドプロバイダに対して一時的なトークンを要求し、安全に[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)を行うことができます。
 
 例えば、AWSにデプロイする場合：
 
@@ -362,7 +362,7 @@ $$ S = \lambda \times (T_{manual} - T_{auto}) $$
 
 *   **頻繁に統合する:** バグを早期に発見するため、小さな変更を頻繁にマージしましょう。
 *   **キャッシュを活用する:** ワークフローの実行時間を短縮し、開発体験を向上させましょう。
-*   **品質とセキュリティを自動化する:** Lint、テスト、脆弱性スキャンをパイプラインに組み込みましょう。
-*   **OIDCを利用する:** クラウドプロバイダとの連携は、シークレットキーではなくOIDCによる一時トークンを利用しましょう。
+*   **品質とセキュリティを自動化する:** Lint、テスト、[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)スキャンをパイプラインに組み込みましょう。
+*   **[OIDC](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)を利用する:** クラウドプロバイダとの連携は、シークレットキーではなくOIDCによる一時トークンを利用しましょう。
 
 GitHub Actionsは非常に柔軟で強力なツールです。まずはLintの自動化といった小さな一歩から始め、プロジェクトの成長に合わせて徐々にパイプラインを拡張していくことをお勧めします。自動化の力を借りて、より高速で高品質なソフトウェア開発を実現しましょう。

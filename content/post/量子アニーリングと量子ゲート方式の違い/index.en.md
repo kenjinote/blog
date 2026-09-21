@@ -184,7 +184,7 @@ Let's look at the specific application areas where each method excels.
 
 ### 6.2. Use Cases for the Quantum Gate Model
 - **Quantum Chemistry Simulation**: Simulating molecular energy states and chemical reactions with high precision.
-- **Prime Factorization ([Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/))**: An algorithm that factors huge composite numbers in polynomial time. When this is put into practical use, current public-key infrastructure like RSA encryption will be broken, making the transition to Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC) an urgent issue.
+- **Prime Factorization ([Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/))**: An algorithm that factors huge composite numbers in polynomial time. When this is put into practical use, current public-key infrastructure like [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption will be broken, making the transition to Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC) an urgent issue.
 - **Database Search (Grover's Algorithm)**: When searching for target data from an unsorted database, classical computers require $O(N)$ steps, but Grover's algorithm can search in $O(\sqrt{N})$ steps.
 
 ### 6.3. Hybrid Algorithms in the NISQ Era: VQE and QAOA

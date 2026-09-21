@@ -190,7 +190,7 @@ By using ZKPs, based on a digital certificate (Verifiable Credential) issued by 
 
 Projects for Proof of Personhood like Worldcoin also incorporate a mechanism to prove only that one is a "unique human" using ZKPs, rather than storing and sharing iris data directly.
 
-### 3. Confidential Smart Contracts and Enterprise Use
+### 3. Confidential [Smart Contract](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/)s and Enterprise Use
 
 The property of public blockchains that "all data is public" has been a major barrier for companies handling confidential transactions and supply chain information on the blockchain.
 

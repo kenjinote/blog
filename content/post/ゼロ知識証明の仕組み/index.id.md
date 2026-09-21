@@ -166,7 +166,7 @@ Setelah beralih dari teori ke praktik, ZKP saat ini sedang memicu revolusi di ga
 
 ### 1. Skala Puncak Ethereum Melalui ZK-Rollups
 
-Blockchain L1 (Layer 1) seperti Ethereum terlalu memprioritaskan desentralisasi dan keamanan sehingga menghadapi keterbatasan besar dalam skalabilitas (trilema). Solusi L2 (Layer 2) definitif untuk memecahkan masalah ini adalah **ZK-Rollups**.
+[Blockchain](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) L1 (Layer 1) seperti Ethereum terlalu memprioritaskan desentralisasi dan keamanan sehingga menghadapi keterbatasan besar dalam skalabilitas (trilema). Solusi L2 (Layer 2) definitif untuk memecahkan masalah ini adalah **ZK-Rollups**.
 
 Pada ZK-Rollup, ribuan transaksi dieksekusi dan diproses secara off-chain (L2), lalu menghasilkan "sebuah ZKP (Bukti Validitas / Validity Proof)" yang menunjukkan bahwa semua transaksi tersebut telah dieksekusi dengan benar. Smart contract pada rantai L1 hanya perlu memverifikasi bukti ini.
 
@@ -190,7 +190,7 @@ Dengan menggunakan ZKP, berdasarkan sertifikat digital (Verifiable Credential) y
 
 Pada proyek Proof of Personhood (bukti kemanusiaan) seperti Worldcoin, data selaput pelangi (iris) mata tidak disimpan atau dibagikan secara langsung. Sebaliknya, mereka menggunakan ZKP untuk membuktikan "hanya bahwa seseorang adalah manusia yang unik".
 
-### 3. Smart Contract Rahasia dan Penggunaan di Tingkat Perusahaan (Enterprise)
+### 3. [Smart Contract](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) Rahasia dan Penggunaan di Tingkat Perusahaan (Enterprise)
 
 Sifat blockchain publik di mana "semua data dipublikasikan" sebelumnya menjadi hambatan besar bagi perusahaan ketika mereka ingin mengelola transaksi rahasia atau informasi rantai pasokan di atas blockchain.
 

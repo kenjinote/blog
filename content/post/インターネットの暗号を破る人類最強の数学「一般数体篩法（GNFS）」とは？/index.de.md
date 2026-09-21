@@ -12,7 +12,7 @@ description: 'Wir erklären die Funktionsweise der stärksten Mathematik der Men
 # Was ist das "General Number Field Sieve (GNFS)", die stärkste Mathematik der Menschheit, die die Internetverschlüsselung knackt?
 
 Das Internet, das wir jeden Tag nutzen. LINE-Nachrichten, YouTube, Einkaufen auf Amazon – die gesamte Kommunikation wird durch "Verschlüsselung" geschützt.
-Derzeit ist der weltweit am häufigsten verwendete Vertreter die "RSA-Verschlüsselung".
+Derzeit ist der weltweit am häufigsten verwendete Vertreter die "[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung".
 
 Der Schlüssel zur Verteidigung der RSA-Verschlüsselung ist sehr einfach. Er nutzt die mathematische Eigenschaft, dass ** "die Primfaktorzerlegung gigantischer Zahlen selbst von Computern nicht gelöst werden kann" ** .
 Bei "15" wissen wir zum Beispiel sofort, dass es "3 × 5" ist, aber sobald es eine "270-stellige Zahl" wird, würde es Hunderte von Millionen Jahren dauern, selbst wenn man alle Supercomputer der Welt zusammennimmt, um sie zu lösen.
@@ -133,7 +133,7 @@ Sobald die Kombination gefunden ist:
 Ersetzen Sie schließlich das $x$ in der Buchstabenformel $Y(x)$ durch $m$, springen Sie in die reale Welt zurück und verbinden Sie sie.
 Dann ist, wie durch mathematische Magie, die Bedingung erfüllt, dass ** "die Reste von $X^2$ und $Y^2$ gleich sind" ** !
 
-Der Rest besteht, wie in Kapitel 1, lediglich darin, den größten gemeinsamen Teiler von $X - Y$ und $N$ zu berechnen, und die uneinnehmbare RSA-Verschlüsselung wird zusammenbrechen und die geheimen Primzahlen offenbaren.
+Der Rest besteht, wie in Kapitel 1, lediglich darin, den größten gemeinsamen Teiler von $X - Y$ und $N$ zu berechnen, und die uneinnehmbare [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung wird zusammenbrechen und die geheimen Primzahlen offenbaren.
 
 ---
 

@@ -11,7 +11,7 @@ tags: ["Big O Notation", "Prime Factorization", "Algorithms", "RSA"]
 
 # Introduction: Why is Prime Factorization "Difficult"?
 
-In our modern Internet society, the reason we can safely enjoy online shopping and exchange confidential information is because of the existence of "cryptography". And the foundation of the security of this cryptography (especially widely used ones like RSA) is supported by the mathematical fact that "prime factorization of enormous integers is extremely difficult."
+In our modern Internet society, the reason we can safely enjoy online shopping and exchange confidential information is because of the existence of "cryptography". And the foundation of the security of this cryptography (especially widely used ones like [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)) is supported by the mathematical fact that "prime factorization of enormous integers is extremely difficult."
 
 At first glance, prime factorization might seem like a simple task of "just breaking down numbers into a multiplication of primes," but as the number of digits grows, it transforms into an ultra-difficult problem that cannot be solved even if the world's fastest supercomputer is run for decades or centuries. The prime factorization we typically learn in school is, at best, a simple process of dividing by $2$, $3$, or $5$. However, when faced with the product of unknown prime numbers spanning hundreds of digits, that simple approach completely breaks down.
 
@@ -94,9 +94,9 @@ You can see how important the difference in computational complexity is in selec
 
 ---
 
-# The Mechanism of RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and the Prime Factorization Problem
+# The Mechanism of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and the Prime Factorization Problem
 
-To understand why prime factorization is important, let's briefly review the mechanism of RSA cryptography. RSA cryptography is a public-key cryptosystem developed in 1977 by Ron Rivest, Adi Shamir, and Leonard Adleman.
+To understand why prime factorization is important, let's briefly review the mechanism of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography. RSA cryptography is a public-key cryptosystem developed in 1977 by Ron Rivest, Adi Shamir, and Leonard Adleman.
 
 ### Key Generation Steps
 1. Randomly select two very large prime numbers $p$ and $q$. (e.g., each 1024 bits long)
@@ -165,7 +165,7 @@ Expressing this with the input size $n = \log_2 N$:
 $$ N^{1/4} = (2^n)^{1/4} = 2^{n/4} $$
 
 Therefore, the computational complexity is **$\mathcal{O}(2^{n/4})$**.
-Compared to Trial Division's $\mathcal{O}(2^{n/2})$, it is dramatically faster, and in practice, it is very powerful for factoring numbers of medium scale (tens of digits). However, it still has not broken the wall of "exponential time" relative to the bit length $n$, and it is powerless against the huge numbers used in RSA cryptography, such as 2048 bits (about 600 decimal digits).
+Compared to Trial Division's $\mathcal{O}(2^{n/2})$, it is dramatically faster, and in practice, it is very powerful for factoring numbers of medium scale (tens of digits). However, it still has not broken the wall of "exponential time" relative to the bit length $n$, and it is powerless against the huge numbers used in [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography, such as 2048 bits (about 600 decimal digits).
 
 ## 4. Multiple Polynomial Quadratic Sieve (MPQS)
 
@@ -186,7 +186,7 @@ The Quadratic Sieve was the world's fastest algorithm until the General Number F
 
 Currently, the **General Number Field Sieve (GNFS)** is considered the "world's fastest" in prime factorization of huge integers exceeding 100 digits. Devised in the late 1980s, it is an advanced algorithm that further developed the Quadratic Sieve using deep results from algebraic number theory (number fields).
 
-In attacks on RSA cryptography (prime factorization from the public key), it is always this GNFS that continues to break world records. In 2020, it was reported that the prime factorization of an 829-bit (250-digit) composite number (RSA-250) was successful, but this required running thousands of computers in parallel for a long period.
+In attacks on [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography (prime factorization from the public key), it is always this GNFS that continues to break world records. In 2020, it was reported that the prime factorization of an 829-bit (250-digit) composite number (RSA-250) was successful, but this required running thousands of computers in parallel for a long period.
 
 ### Mathematical Structure of the Algorithm
 GNFS is extremely complex, but it roughly proceeds in the following steps.
@@ -240,11 +240,11 @@ One of the greatest unsolved problems in computer science is the "P = NP conject
 The prime factorization problem belongs to NP (the class of problems whose correctness can be verified in polynomial time if an answer is given), but it has not been proven to be [NP-complet](https://kenji.blog/en/p/p-vs-np-problem/)e (the class of the most difficult problems in NP).
 Also, whether it belongs to P (the class of problems that can be solved in polynomial time) (i.e., whether a polynomial time algorithm exists) remains unsolved.
 
-Many researchers conjecture that prime factorization belongs to an intermediate class that is neither P nor NP-complete (NP-intermediate). If an algorithm that solves prime factorization on a classical computer in polynomial time (for example, $\mathcal{O}(n^3)$) is discovered, it will be a huge incident that destroys cryptographic systems all over the world, but to date, no such algorithm has been discovered. It is estimated that breaking a 2048-bit RSA cipher would take longer than the lifespan of the universe, even if the performance of classical computers improves according to Moore's Law.
+Many researchers conjecture that prime factorization belongs to an intermediate class that is neither P nor NP-complete (NP-intermediate). If an algorithm that solves prime factorization on a classical computer in polynomial time (for example, $\mathcal{O}(n^3)$) is discovered, it will be a huge incident that destroys cryptographic systems all over the world, but to date, no such algorithm has been discovered. It is estimated that breaking a 2048-bit [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cipher would take longer than the lifespan of the universe, even if the performance of classical computers improves according to Moore's Law.
 
 ## Quantum Computers as a "Game Changer": [Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)
 
-RSA cryptography is robust on classical computers, but the situation changes entirely when "quantum computers," which operate on entirely different principles, are put to practical use.
+[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography is robust on classical computers, but the situation changes entirely when "quantum computers," which operate on entirely different principles, are put to practical use.
 **"Shor's algorithm"**, published by Peter Shor in 1994, is an algorithm that can shockingly solve prime factorization in **polynomial time $\mathcal{O}(n^3)$** (more strictly, about $\mathcal{O}(n^2 \log n \log \log n)$ in terms of the number of quantum gates) by utilizing the Quantum Fourier Transform.
 
 Let's verify the difference in computational complexity between classical algorithms and quantum algorithms in the Mermaid diagram below.
@@ -268,7 +268,7 @@ graph LR
 ```
 
 In Shor's algorithm, the process of "period finding," which was a bottleneck in classical algorithms, is computed in parallel and instantaneously by the "Quantum Fourier Transform (QFT)" using quantum entanglement and quantum superposition.
-When it becomes executable on a practical-scale quantum computer (with low noise and a sufficient number of logical qubits), the 2048-bit RSA cipher currently considered safe could be completely decrypted in a matter of hours or days.
+When it becomes executable on a practical-scale quantum computer (with low noise and a sufficient number of logical qubits), the 2048-bit [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cipher currently considered safe could be completely decrypted in a matter of hours or days.
 
 To prepare for this threat, cryptographers around the world and NIST (National Institute of Standards and Technology) are currently accelerating standardization efforts to transition to "Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)," which is difficult to break even with quantum computers. Lattice-based cryptography is a representative example of this, and their security relies on entirely different mathematical difficulties (such as the shortest vector problem) rather than the prime factorization problem.
 
@@ -281,7 +281,7 @@ In this article, starting from the basics of computational complexity (Big-O not
 * **Big-O ($\mathcal{O}$) notation** is an important metric showing the growth rate of computational steps against the increase in input size $n$, and there is a massive wall that cannot practically be crossed between polynomial time and exponential time.
 * **Trial Division** and **Pollard's $\rho$ algorithm** are pure "exponential time" algorithms and are powerless against huge numbers.
 * The currently fastest classical algorithm, the **General Number Field Sieve (GNFS)**, achieved "sub-exponential time" by making full use of advanced algebraic number theory, but it still falls short of polynomial time and requires astronomical amounts of time for factoring huge numbers.
-* The fact that **"no classical algorithm exists that solves it in polynomial time (as strongly conjectured)"** guarantees the security of RSA cryptography and supports modern digital society.
+* The fact that **"no classical algorithm exists that solves it in polynomial time (as strongly conjectured)"** guarantees the security of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography and supports modern digital society.
 * However, with the advent of **quantum computers and Shor's algorithm**, prime factorization in polynomial time has theoretically become possible, and cryptographic technology is about to shift to the next era (post-quantum cryptography).
 
 The fact that the abstract concept of an algorithm's computational complexity is directly linked to the security of our daily lives is one of the most fascinating and thrilling aspects of information science and mathematics. Please pay close attention to future technological progress, especially the development trends of quantum computers and the transitions in cryptography.

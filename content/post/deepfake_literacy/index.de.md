@@ -219,7 +219,7 @@ C2PA ist ein Konsortium, das unter Beteiligung großer Unternehmen wie Adobe, Mi
 Die Kerntechnologie von C2PA sind digitale Signaturen unter Verwendung einer Public-Key-Infrastruktur (PKI) sowie die Bindung von Inhalts-Hashes.
 
 1. **Metadaten-Generierung (Manifest)**: In dem Moment, in dem ein Foto mit einer Kamera aufgenommen oder mit Software bearbeitet wird, werden Metadaten, genannt "Manifest", generiert, die den Betriebsverlauf, Geräteinformationen und Erstellerinformationen enthalten.
-2. **Kryptografische Signatur (Digital Signature)**: Das Manifest und der Hashwert des Bildes selbst (eine Zusammenfassung der Pixeldaten) werden mit einem privaten Hardware- oder Software-Schlüssel digital signiert.
+2. **Kryptografische Signatur ([Digital Signature](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/))**: Das Manifest und der Hashwert des Bildes selbst (eine Zusammenfassung der Pixeldaten) werden mit einem privaten Hardware- oder Software-Schlüssel digital signiert.
 3. **Einbettung in das Asset**: Das signierte Manifest (C2PA Credential) wird in die Header-Informationen von Dateiformaten wie JPEG oder MP4 eingebettet.
 
 Selbst wenn ein Angreifer einen Teil eines Bildes verfälscht oder versucht, gefälschte Metadaten an ein KI-generiertes Bild anzuhängen, ändert sich der Hashwert des Bildes selbst, was dazu führt, dass die Überprüfung der digitalen Signatur fehlschlägt und die Manipulation sofort erkannt wird.

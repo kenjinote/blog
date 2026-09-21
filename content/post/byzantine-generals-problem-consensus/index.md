@@ -15,7 +15,7 @@ tags:
   - algorithm
 ---
 
-現代のクラウドコンピューティングやブロックチェーン技術を支える根幹には、複数のコンピュータ（ノード）間で状態を共有し、一致させる **コンセンサスアルゴリズム** が存在します。本記事では、その理論的基礎である「ビザンチン将軍問題」から始まり、実用的なシステムで広く採用されている **Paxos** や **Raft** 、さらには悪意のある参加者が存在する環境下での **BFT（Byzantine Fault Tolerance）** について、数学的証明やコード実装を交えて深く掘り下げていきます。
+現代のクラウドコンピューティングや[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術を支える根幹には、複数のコンピュータ（ノード）間で状態を共有し、一致させる **コンセンサスアルゴリズム** が存在します。本記事では、その理論的基礎である「ビザンチン将軍問題」から始まり、実用的なシステムで広く採用されている **Paxos** や **Raft** 、さらには悪意のある参加者が存在する環境下での **BFT（Byzantine Fault Tolerance）** について、数学的証明やコード実装を交えて深く掘り下げていきます。
 
 ## 1. [分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)における合意形成と課題
 
@@ -268,7 +268,7 @@ sequenceDiagram
     B2->>C: Reply
 ```
 
-PBFTは、前述の $ n > 3f $ の条件を満たす $ n = 3f + 1 $ のノード構成で動作し、ノード間の $ O(N^2) $ の通信オーバーヘッドを伴いますが、確定的な合意（Finality）を提供します。これは、現代のコンソーシアム型ブロックチェーン（Hyperledger Fabricなど）で広く採用されています。
+PBFTは、前述の $ n > 3f $ の条件を満たす $ n = 3f + 1 $ のノード構成で動作し、ノード間の $ O(N^2) $ の通信オーバーヘッドを伴いますが、確定的な合意（Finality）を提供します。これは、現代のコンソーシアム型[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)（Hyperledger Fabricなど）で広く採用されています。
 
 ### 5.2 数学的制約の再確認
 
@@ -288,6 +288,6 @@ $$ |Q_1 \cap Q_2| = 2Q - n = 2(2f + 1) - (3f + 1) = f + 1 $$
 
 *   **Paxos** : 数学的に証明された堅牢な基盤ですが、複雑さが課題。
 *   **Raft** : 理解しやすさと実装のしやすさを追求し、現代の分散KVSのデファクトスタンダードに。
-*   **PBFT** : 悪意あるノードが混在する環境下での確定的合意を実現し、ブロックチェーン技術の基盤へ。
+*   **PBFT** : 悪意あるノードが混在する環境下での確定的合意を実現し、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術の基盤へ。
 
-今日では、ビットコインが採用した **Nakamoto Consensus (PoW)** や、Tendermint, HotStuffなど、PBFTの通信オーバーヘッドを削減しつつスケーラビリティを向上させた新しいBFTアルゴリズムが次々と誕生しています。システムの要件（ノードの信頼性、必要なスループット、レイテンシ）に応じて、適切なコンセンサスアルゴリズムを選択することが、堅牢な分散システムを構築する上での鍵となります。
+今日では、ビットコインが採用した **Nakamoto [Consensus](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/) ([PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/))** や、Tendermint, HotStuffなど、PBFTの通信オーバーヘッドを削減しつつスケーラビリティを向上させた新しいBFTアルゴリズムが次々と誕生しています。システムの要件（ノードの信頼性、必要なスループット、レイテンシ）に応じて、適切なコンセンサスアルゴリズムを選択することが、堅牢な分散システムを構築する上での鍵となります。

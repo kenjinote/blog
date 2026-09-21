@@ -14,7 +14,7 @@ tags:
 
 ## Introducción
 
-El Teorema Chino del Resto ([Chinese Remainder Theorem](https://kenji.blog/es/p/chinese-remainder-theorem/), abreviado CRT) es uno de los teoremas más importantes y hermosos en la teoría de números. Sus orígenes se remontan al "Sunzi Suanjing", un antiguo libro de matemáticas chino que se cree fue compilado entre los siglos III y V. Este teorema, que comenzó con problemas aritméticos simples en la antigüedad, juega un papel indispensable miles de años después en la actualidad, en tecnologías de criptografía de clave pública como la **criptografía RSA**, que respaldan la comunicación segura en Internet que usamos a diario.
+El Teorema Chino del Resto ([Chinese Remainder Theorem](https://kenji.blog/es/p/chinese-remainder-theorem/), abreviado CRT) es uno de los teoremas más importantes y hermosos en la teoría de números. Sus orígenes se remontan al "Sunzi Suanjing", un antiguo libro de matemáticas chino que se cree fue compilado entre los siglos III y V. Este teorema, que comenzó con problemas aritméticos simples en la antigüedad, juega un papel indispensable miles de años después en la actualidad, en tecnologías de criptografía de clave pública como la **criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)**, que respaldan la comunicación segura en Internet que usamos a diario.
 
 En este artículo, explicaremos en detalle este **Teorema Chino del Resto**, desde sus antecedentes históricos hasta su rigurosa definición matemática, procedimientos de cálculo específicos y aplicaciones en la teoría de la criptografía moderna, acompañados de diagramas y ejemplos concretos.
 
@@ -103,7 +103,7 @@ $233 \equiv 23 \pmod{105}$
 
 Por lo tanto, la solución positiva más pequeña es **23**, lo cual coincide perfectamente con la solución de Sunzi.
 
-## Aplicación moderna: Criptografía RSA y CRT
+## Aplicación moderna: Criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) y CRT
 
 El **Teorema Chino del Resto**, que solía ser un antiguo rompecabezas, tiene una aplicación sumamente práctica en la sociedad digital moderna. Un ejemplo representativo de ello es la aceleración del descifrado y la generación de firmas en la **criptografía RSA**.
 
@@ -140,7 +140,7 @@ graph TD
    $M_q = C^{d_q} \pmod q$
 3. Se aplica el CRT a $M_p$ y $M_q$ para obtener $M \pmod N$.
 
-Cuando el módulo tiene la mitad de la longitud en bits (por ejemplo, 1024 bits), el costo de la exponenciación se reduce a aproximadamente 1/8. Incluso realizando esto dos veces, el costo total es de aproximadamente 1/4, por lo que el uso de RSA-CRT permite acelerar el descifrado y la generación de firmas en **aproximadamente 4 veces**. En dispositivos con recursos computacionales limitados como teléfonos inteligentes y tarjetas IC, esta aceleración es extremadamente importante.
+Cuando el módulo tiene la mitad de la longitud en bits (por ejemplo, 1024 bits), el costo de la exponenciación se reduce a aproximadamente 1/8. Incluso realizando esto dos veces, el costo total es de aproximadamente 1/4, por lo que el uso de [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)-CRT permite acelerar el descifrado y la generación de firmas en **aproximadamente 4 veces**. En dispositivos con recursos computacionales limitados como teléfonos inteligentes y tarjetas IC, esta aceleración es extremadamente importante.
 
 ## Implementación del Teorema Chino del Resto mediante programación
 

@@ -118,7 +118,7 @@ $$\prod_{S} (a - b\alpha) = u \cdot \gamma^2$$
 ## Phase 5 : La Magie d'Adleman "Caractères Quadratiques" (Quadratic Characters)
 
 L'obstacle du groupe des classes d'idéaux et l'obstacle du groupe des unités. Comment surmonter ces deux-là ?
-C'est ici qu'intervient la brillante méthode des **"Caractères Quadratiques (Quadratic Characters)"** , introduzido par le cryptographe Leonard Adleman (le "A" de RSA) et d'autres.
+C'est ici qu'intervient la brillante méthode des **"Caractères Quadratiques (Quadratic Characters)"** , introduzido par le cryptographe Leonard Adleman (le "A" de [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)) et d'autres.
 
 Pour déterminer "si un certain élément est un carré parfait dans le corps algébrique", on utilise la version pour corps algébriques du Symbole de [Legendre](https://kenji.blog/fr/p/legendre/) (résidu quadratique).
 Dans cette matrice géante d'avant (le puzzle pour rendre pairs les comptes d'idéaux premiers), on **ajoute furtivement quelques dizaines de conditions supplémentaires (colonnes) disant que "les caractères quadratiques pour certains idéaux premiers spéciaux $\mathfrak{q}$ doivent également tous être $1$ (pairs)"** .
@@ -157,7 +157,7 @@ De plus, puisque les paires originales $(a, b)$ ont été créées en correspond
 Il ne reste plus qu'à prier pour que ces $X$ et $Y$ ne soient pas des solutions triviales ($X \equiv \pm Y$), et à calculer
 **$\gcd(X - Y, N)$** .
 
-S'il s'agit d'une solution non triviale, l'algorithme d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) s'exécutera en 0,001 seconde, et les nombres premiers secrets $p$ et $q$, qui sont le cœur de la cryptographie RSA, seront imprimés sur l'écran de sortie.
+S'il s'agit d'une solution non triviale, l'algorithme d'[[Euclid](https://kenji.blog/fr/p/euclid/)e](https://kenji.blog/p/euclid/) s'exécutera en 0,001 seconde, et les nombres premiers secrets $p$ et $q$, qui sont le cœur de la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), seront imprimés sur l'écran de sortie.
 
 ---
 

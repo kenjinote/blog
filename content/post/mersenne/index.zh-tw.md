@@ -113,7 +113,7 @@ def is_mersenne_prime(p):
     return s == 0
 ```
 
-發現的巨大質數在支持資訊社會方面發揮著關鍵作用，可作為現代公鑰密碼系統（如RSA）安全性評估以及隨機數生成演算法（如梅森旋轉演算法）的基礎。
+發現的巨大質數在支持資訊社會方面發揮著關鍵作用，可作為現代公鑰密碼系統（如[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)）安全性評估以及隨機數生成演算法（如梅森旋轉演算法）的基礎。
 
 ## 聲學與音樂理論的貢獻：梅森定律
 

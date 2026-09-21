@@ -11,7 +11,7 @@ tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 
 # 1. Introduction : L'aube de la cryptographie post-quantique (PQC) et l'essor de la cryptographie basée sur les réseaux
 
-L'infrastructure numérique de la société moderne repose sur des technologies de cryptographie à clé publique telles que le chiffrement RSA et la cryptographie sur les courbes elliptiques (ECC). Ces méthodes cryptographiques basent leur sécurité sur la difficulté mathématique de problèmes tels que le "problème de la factorisation en nombres premiers" ou le "problème du logarithme discret", qui sont considérés comme impossibles à résoudre efficacement (nécessitant un temps exponentiel) par les ordinateurs classiques conventionnels.
+L'infrastructure numérique de la société moderne repose sur des technologies de cryptographie à clé publique telles que le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et la cryptographie sur les courbes elliptiques (ECC). Ces méthodes cryptographiques basent leur sécurité sur la difficulté mathématique de problèmes tels que le "problème de la factorisation en nombres premiers" ou le "problème du logarithme discret", qui sont considérés comme impossibles à résoudre efficacement (nécessitant un temps exponentiel) par les ordinateurs classiques conventionnels.
 
 Cependant, en 1994, l'algorithme de Shor, publié par Peter Shor, a provoqué une onde de choc dans le monde de la cryptographie. Cet algorithme a prouvé mathématiquement qu'une fois qu'un ordinateur quantique à grande échelle sera réalisé, il pourra résoudre les problèmes de factorisation en nombres premiers et de logarithme discret en un temps polynomial. Cela signifie que la cryptographie à clé publique largement utilisée aujourd'hui deviendra complètement décryptable à l'avenir.
 
@@ -152,7 +152,7 @@ Maintenant que nous avons compris la difficulté du problème LWE, examinons le 
 3. Générez une matrice aléatoire $A \in \mathbb{Z}_q^{m \times n}$.
 4. Choisissez un petit vecteur d'erreur $\mathbf{e} \in \mathbb{Z}_q^m$ à partir d'une distribution d'erreur telle que la distribution gaussienne discrète.
 5. Calculez le vecteur $\mathbf{b} = A \mathbf{s} + \mathbf{e} \pmod q$.
-6. La clé publique (Public Key) sera $(A, \mathbf{b})$.
+6. La clé publique ([Public Key](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)) sera $(A, \mathbf{b})$.
 7. La clé secrète (Secret Key) sera $\mathbf{s}$.
 
 La clé publique est littéralement une "instance du problème LWE". Puisque trouver la clé secrète $\mathbf{s}$ à partir de la clé publique $(A, \mathbf{b})$ équivaut à résoudre le problème de recherche LWE, la sécurité est garantie.
@@ -312,7 +312,7 @@ Actuellement, "CRYSTALS-Kyber" (nom standardisé : ML-KEM), qui a été sélecti
 
 Enfin, abordons le point essentiel : "Pourquoi considère-t-on que la cryptographie basée sur les réseaux ne sera pas brisée même avec des ordinateurs quantiques ?"
 
-L'algorithme de Shor, grâce auquel les ordinateurs quantiques brisent le chiffrement RSA et la cryptographie sur les courbes elliptiques, est essentiellement un algorithme qui résout le "problème du sous-groupe caché (Hidden Subgroup Problem: HSP)". La structure mathématique derrière RSA et ECC (groupes abéliens finis) présente une périodicité, et en utilisant une opération spécifique à l'algorithme quantique appelée Transformée de Fourier Quantique (QFT), cette période (le sous-groupe caché) peut être extraite en une seule fois.
+L'algorithme de Shor, grâce auquel les ordinateurs quantiques brisent le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et la cryptographie sur les courbes elliptiques, est essentiellement un algorithme qui résout le "problème du sous-groupe caché (Hidden Subgroup Problem: HSP)". La structure mathématique derrière RSA et ECC (groupes abéliens finis) présente une périodicité, et en utilisant une opération spécifique à l'algorithme quantique appelée Transformée de Fourier Quantique (QFT), cette période (le sous-groupe caché) peut être extraite en une seule fois.
 
 Cependant, les problèmes de réseaux sont fondamentalement différents. Bien que les réseaux aient également une périodicité, ce qui est requis dans SVP et CVP sont des propriétés géométriques non linéaires telles que "la distance la plus courte" ou "la suppression du bruit". Même si nous appliquons la "Transformée de Fourier quantique sur un groupe abélien" comme l'algorithme de Shor tel quel, nous ne pouvons pas extraire efficacement les informations utiles qui seraient la solution au problème du réseau. Jusqu'à présent, aucun algorithme quantique capable de résoudre SVP ou LWE en temps polynomial n'a été découvert, et on croit largement que même avec la capacité de calcul parallèle des ordinateurs quantiques, seuls des moyens de résolution proches d'une recherche par force brute (une accélération de l'ordre de la racine carrée grâce à l'algorithme de Grover) sont valables.
 

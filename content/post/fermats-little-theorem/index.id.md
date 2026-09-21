@@ -14,7 +14,7 @@ tags:
 
 Dalam masyarakat internet modern, kemampuan kita untuk berkomunikasi secara aman berkat **kriptografi**. Di dasar kriptografi ini terdapat sebuah teorema indah yang ditemukan pada abad ke-17 oleh matematikawan [Pierre de Fermat](https://kenji.blog/id/p/fermat/).
 
-Dalam artikel ini, kita akan menjelaskan **[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)**, landasan penting dari teori bilangan, dengan cara yang mudah dipahami, mencakup makna, pembuktian, dan bagaimana hal itu diterapkan pada kriptografi RSA modern.
+Dalam artikel ini, kita akan menjelaskan **[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)**, landasan penting dari teori bilangan, dengan cara yang mudah dipahami, mencakup makna, pembuktian, dan bagaimana hal itu diterapkan pada kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) modern.
 
 ## Apa itu [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)?
 
@@ -92,9 +92,9 @@ flowchart TD
 
 Namun, karena terdapat bilangan-bilangan pengecualian yang disebut **bilangan Carmichael**, yang merupakan bilangan komposit namun memenuhi $a^{n-1} \equiv 1 \pmod n$, uji ini saja tidak dapat membuktikan keprimaan secara definitif. Oleh karena itu, dalam praktiknya, metode seperti uji primalitas Miller-Rabin digunakan.
 
-## Aplikasi pada Kriptografi Modern: Kriptografi RSA
+## Aplikasi pada Kriptografi Modern: Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)
 
-Aplikasi terpenting dari [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) (dan generalisasinya, **Teorema Euler**) adalah **kriptografi RSA**, yang mendasari keamanan internet.
+Aplikasi terpenting dari [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) (dan generalisasinya, **Teorema Euler**) adalah **kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)**, yang mendasari keamanan internet.
 
 Kriptografi RSA bergantung pada kesulitan memfaktorkan bilangan besar untuk keamanannya. Dalam mekanismenya, prinsip "[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)" memainkan peran yang sangat penting dalam proses pembuatan kunci dan dekripsi.
 
@@ -111,7 +111,7 @@ sequenceDiagram
     Note over Receiver: "M = C^d mod n"
 ```
 
-Dalam kriptografi RSA, dua bilangan prima besar, $p$ dan $q$, disiapkan, dan kita menetapkan $n = p \times q$.
+Dalam kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), dua bilangan prima besar, $p$ dan $q$, disiapkan, dan kita menetapkan $n = p \times q$.
 Menurut Teorema Euler, kunci ($e$ dan $d$) dirancang sedemikian rupa sehingga $M^{ed} \equiv M \pmod n$ berlaku dalam proses enkripsi dan dekripsi. Di sini, fenomena magis dari teks terang $M$ yang kembali ke bentuk aslinya pada dasarnya bergantung pada sifat-sifat matematis yang dijamin oleh [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/).
 
 ## Kesimpulan

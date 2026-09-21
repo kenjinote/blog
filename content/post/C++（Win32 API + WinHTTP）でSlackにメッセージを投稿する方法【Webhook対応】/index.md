@@ -196,7 +196,7 @@ C++でSlack連携なんて…と思っていたあなたも、今日から通知
 
 * **ファイル添付**
 * **ボタン付きUI**
-* **Slack App + OAuth2による柔軟なAPI操作**
+* **Slack App + [OAuth](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)2による柔軟なAPI操作**
 
 など、もう一歩踏み込んだSlack連携もご紹介できます！
 

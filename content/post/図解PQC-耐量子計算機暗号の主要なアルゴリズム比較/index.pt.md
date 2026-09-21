@@ -12,7 +12,7 @@ description: 'Uma explicação detalhada sobre a ameaça de comprometimento da c
 
 ## 1. Introdução: A "crise da criptografia" trazida pelos computadores quânticos
 
-Na sociedade da internet moderna, a tecnologia de criptografia de chave pública é infraestrutura indispensável para proteger a confidencialidade das comunicações e a integridade dos dados. A criptografia RSA e a criptografia de curva elíptica (ECC), amplamente utilizadas hoje, dependem de barreiras matemáticas, respectivamente a "dificuldade de fatoração de números compostos gigantescos" e a "dificuldade do problema do logaritmo discreto em curvas elípticas", para garantir a segurança. Em computadores clássicos (os computadores que usamos hoje, incluindo supercomputadores), está provado que resolver esses problemas matemáticos levaria mais tempo do que a idade do universo, o que tem sido a base de sua segurança.
+Na sociedade da internet moderna, a tecnologia de criptografia de chave pública é infraestrutura indispensável para proteger a confidencialidade das comunicações e a integridade dos dados. A criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e a criptografia de curva elíptica (ECC), amplamente utilizadas hoje, dependem de barreiras matemáticas, respectivamente a "dificuldade de fatoração de números compostos gigantescos" e a "dificuldade do problema do logaritmo discreto em curvas elípticas", para garantir a segurança. Em computadores clássicos (os computadores que usamos hoje, incluindo supercomputadores), está provado que resolver esses problemas matemáticos levaria mais tempo do que a idade do universo, o que tem sido a base de sua segurança.
 
 No entanto, essa premissa robusta está prestes a ser fundamentalmente derrubada pelo progresso na teoria e aplicação prática dos **computadores quânticos**. O "**[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)**", publicado em 1994 pelo criptógrafo Peter Shor, provou teoricamente que problemas de fatoração de primos e logaritmos discretos podem ser resolvidos em "tempo polinomial" executando-os em um computador quântico universal tolerante a falhas (CRQC: [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer) com desempenho suficiente. Isso significa que toda a criptografia de chave pública atualmente em uso será neutralizada.
 
@@ -40,7 +40,7 @@ A transição da tecnologia de criptografia leva anos ou até décadas, incluind
 
 As duas categorias principais para padronização foram as seguintes:
 1. **Criptografia de chave pública / Mecanismo de encapsulamento de chaves (KEM: Key Encapsulation Mechanism)**: Um mecanismo para compartilhar de forma segura uma chave simétrica para criptografar o caminho de comunicação, como em conexões TLS.
-2. **Assinaturas digitais (Digital Signatures)**: Um mecanismo para provar que os dados não foram alterados e que não há falsificação pelo remetente (autenticidade) em atualizações de software e certificados digitais.
+2. **Assinaturas digitais ([Digital Signature](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)s)**: Um mecanismo para provar que os dados não foram alterados e que não há falsificação pelo remetente (autenticidade) em atualizações de software e certificados digitais.
 
 Após quase 6 anos de feroz avaliação, análise e competição criptoanalítica (Rodada 1 à Rodada 3), alguns algoritmos também foram submetidos a uma avaliação adicional na Rodada 4. Como resultado, em 2024, os seguintes algoritmos foram oficialmente emitidos como Padrões Federais de Processamento de Informação (FIPS) e foram estabelecidos como padrões globais futuros.
 
@@ -124,7 +124,7 @@ O CRYSTALS-Kyber, oficialmente padronizado como **FIPS 203 (ML-KEM)**, é um mec
 
 ### 5.1. Arquitetura do KEM (Key Encapsulation Mechanism)
 
-Na era da PQC, a abordagem de encapsulamento de KEM torna-se padrão, em vez da abordagem direta como no RSA, onde "o cliente cria uma chave simétrica e a criptografa com a chave pública do servidor e a envia".
+Na era da PQC, a abordagem de encapsulamento de KEM torna-se padrão, em vez da abordagem direta como no [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), onde "o cliente cria uma chave simétrica e a criptografa com a chave pública do servidor e a envia".
 
 ```mermaid
 sequenceDiagram
@@ -172,7 +172,7 @@ Os mecanismos principais de criptografia e descriptografia do CPAPKE são os seg
    - O que resta é $\lfloor q/2 \rceil \cdot m + (\vec{e}^T\vec{r} + e_2 - \vec{s}^T\vec{e_1})$.
    - O termo entre parênteses é "o produto ou soma de pequenos erros", então permanece um valor pequeno (ruído) como um todo. Portanto, julgando pelos limites se cada coeficiente está perto de $0$ ou de $q/2$, os bits (0 ou 1) da mensagem original $m$ podem ser perfeitamente restaurados sem erros.
 
-A maior força do Kyber é sua impressionante **velocidade de processamento** e **tamanho de chave moderado**. Para o Kyber768, o tamanho da chave pública é de 1.184 bytes e o tamanho do texto cifrado é de 1.088 bytes. Embora sejam maiores em comparação com o RSA-3072 (tamanho da chave em torno de 384 bytes), eles podem caber dentro do MTU (Maximum Transmission Unit) das comunicações modernas da internet sem fragmentação de pacotes, tendo um efeito adverso quase nulo na latência da rede.
+A maior força do Kyber é sua impressionante **velocidade de processamento** e **tamanho de chave moderado**. Para o Kyber768, o tamanho da chave pública é de 1.184 bytes e o tamanho do texto cifrado é de 1.088 bytes. Embora sejam maiores em comparação com o [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)-3072 (tamanho da chave em torno de 384 bytes), eles podem caber dentro do MTU (Maximum Transmission Unit) das comunicações modernas da internet sem fragmentação de pacotes, tendo um efeito adverso quase nulo na latência da rede.
 
 ---
 
@@ -255,7 +255,7 @@ A única e maior fraqueza do SPHINCS+ é o **tamanho gigantesco de suas assinatu
 
 Uma abordagem importante que ainda está sendo avaliada como candidato final da Rodada 4 no processo de padronização do NIST é o **Classic McEliece**, uma **criptografia baseada em código**.
 
-Proposto em 1978 por Robert McEliece, este algoritmo, juntamente com o RSA, é um dos mais antigos na história da criptografia de chave pública. Utiliza "Códigos de Goppa", um código geométrico algébrico. Baseia-se no "**Problema de Decodificação de Síndrome (Syndrome Decoding Problem)**", em que a mensagem é criptografada adicionando um erro intencional (vetor de ruído), e apenas aquele com a matriz de verificação de paridade do código de Goppa como chave secreta pode usar recursos poderosos de correção de erros para remover o ruído e recuperar a mensagem original.
+Proposto em 1978 por Robert McEliece, este algoritmo, juntamente com o [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), é um dos mais antigos na história da criptografia de chave pública. Utiliza "Códigos de Goppa", um código geométrico algébrico. Baseia-se no "**Problema de Decodificação de Síndrome (Syndrome Decoding Problem)**", em que a mensagem é criptografada adicionando um erro intencional (vetor de ruído), e apenas aquele com a matriz de verificação de paridade do código de Goppa como chave secreta pode usar recursos poderosos de correção de erros para remover o ruído e recuperar a mensagem original.
 
 $$ \vec{c} = \vec{m} G + \vec{e} $$
 (Onde $G$ é a matriz geradora codificada (scrambled) atuando como chave pública, e $\vec{e}$ é o vetor de erro com peso $t$)

@@ -321,7 +321,7 @@ sudo usermod -aG docker $USER
 
 在进行Git的SSH克隆或通过SSH连接远程服务器时，如果在Windows端和WSL端分别管理不同的SSH密钥会非常麻烦。为了兼顾安全性与便利性，我们将进行设置，把运行在Windows端的SSH Agent（或1Password等密码管理器）桥接到WSL端。
 
-在此，我们将讲解一种最安全且现代的方式：利用 **1Password的SSH Agent功能** 或 **Windows的OpenSSH Authentication Agent** ，并通过 `npiperelay` 和 `socat` 将其转发到WSL2的UNIX域套接字的方法。
+在此，我们将讲解一种最安全且现代的方式：利用 **1Password的SSH Agent功能** 或 **Windows的OpenSSH [Authentication](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/) Agent** ，并通过 `npiperelay` 和 `socat` 将其转发到WSL2的UNIX域套接字的方法。
 
 ### ssh-agent的套接字转发
 

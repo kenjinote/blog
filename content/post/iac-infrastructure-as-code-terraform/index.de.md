@@ -350,7 +350,7 @@ Beim Entwerfen von Modulen in Terraform ist es eine fortgeschrittene Designfähi
 
 ## Anti-Pattern
 1. **Mischen mit manuellen Änderungen** : Das direkte Ändern von von Terraform verwalteten Ressourcen über die GUI. Dies führt zu Inkonsistenzen im State.
-2. **Hardcoding von Anmeldeinformationen** : Das direkte Schreiben von Access Keys und Secret Keys in den Code. Verwenden Sie Umgebungsvariablen oder IAM-Rollen (wie OIDC-Integration).
+2. **Hardcoding von Anmeldeinformationen** : Das direkte Schreiben von Access Keys und Secret Keys in den Code. Verwenden Sie Umgebungsvariablen oder IAM-Rollen (wie [OIDC](https://kenji.blog/de/p/oauth2-oidc-authentication-authorization-difference/)-Integration).
 3. **Zu komplexe Module** : Wenn Sie versuchen, ein Modul mit allen Funktionen auszustatten, wird es Dutzende von Variablen haben, und die Lesbarkeit wird erheblich abnehmen. Denken Sie daran: "Ein Modul hat eine Verantwortung (Single Responsibility)."
 
 ---

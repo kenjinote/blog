@@ -184,7 +184,7 @@ Examinons les domaines d'application spécifiques dans lesquels chaque méthode 
 
 ### 6.2. Cas d'utilisation du modèle à portes quantiques
 - **Simulation de chimie quantique** : Simule les états énergétiques des molécules et les réactions chimiques avec une grande précision.
-- **Factorisation en nombres premiers ([Algorithme de Shor](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/))** : Un algorithme qui factorise d'énormes nombres composés en temps polynomial. Lorsque cela sera mis en pratique, les infrastructures de cryptographie à clé publique actuelles, telles que le chiffrement RSA, seront compromises, rendant la transition vers la cryptographie post-quantique (PQC) urgente.
+- **Factorisation en nombres premiers ([Algorithme de Shor](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/))** : Un algorithme qui factorise d'énormes nombres composés en temps polynomial. Lorsque cela sera mis en pratique, les infrastructures de cryptographie à clé publique actuelles, telles que le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), seront compromises, rendant la transition vers la cryptographie post-quantique (PQC) urgente.
 - **Recherche dans une base de données (Algorithme de Grover)** : Lors de la recherche de données cibles dans une base de données non triée, les ordinateurs classiques nécessitent $O(N)$ étapes, mais l'algorithme de Grover peut effectuer la recherche en $O(\sqrt{N})$ étapes.
 
 ### 6.3. Algorithmes hybrides de l'ère NISQ : VQE et QAOA

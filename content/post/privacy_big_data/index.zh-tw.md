@@ -50,7 +50,7 @@ flowchart TD
 2. **準識別碼 (Quasi-Identifiers: QIs)** ：年齡、性別、郵遞區號等，單獨無法辨識個人，但組合起來就有可能辨識的資訊。
 3. **機密屬性 (Sensitive Attributes)** ：病名或年收入等，應受保護的資訊。
 
-k-匿名性保證了準識別碼的組合（等價類：Equivalence Class）必定存在至少 $k$ 個以上。然而，k-匿名性對於「同質性攻擊（Homogeneity Attack）」和「背景知識攻擊（Background Knowledge Attack）」具有脆弱性。例如，如果某個等價類中的 $k$ 人皆患有相同的病名（機密屬性），即使維持了 k-匿名性，病名也會被特定出來。
+k-匿名性保證了準識別碼的組合（等價類：Equivalence Class）必定存在至少 $k$ 個以上。然而，k-匿名性對於「同質性攻擊（Homogeneity Attack）」和「背景知識攻擊（Background Knowledge Attack）」具有[脆弱性](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)。例如，如果某個等價類中的 $k$ 人皆患有相同的病名（機密屬性），即使維持了 k-匿名性，病名也會被特定出來。
 
 為克服此問題，提出了以下的擴充模型：
 

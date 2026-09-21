@@ -150,10 +150,10 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 # Verificação: 111 * 3 + 30 * (-11) = 333 - 330 = 3
 ```
 
-## Aplicações na Sociedade Moderna (Criptografia RSA, etc.)
+## Aplicações na Sociedade Moderna (Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), etc.)
 
 O algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) Estendido não é apenas um quebra-cabeça matemático, mas uma tecnologia essencial de apoio à sociedade moderna da Internet.
-Um excelente exemplo é a **criptografia RSA** . No processo de geração de chaves da criptografia RSA, é necessário encontrar uma chave privada $d$ (inverso modular) que satisfaça $e d \equiv 1 \pmod{\phi(N)}$ para um determinado número $e$ e a função totiente de Euler $\phi(N)$ .
+Um excelente exemplo é a **criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)** . No processo de geração de chaves da criptografia RSA, é necessário encontrar uma chave privada $d$ (inverso modular) que satisfaça $e d \equiv 1 \pmod{\phi(N)}$ para um determinado número $e$ e a função totiente de Euler $\phi(N)$ .
 Como isso pode ser reorganizado na forma $ed + k\phi(N) = 1$ , podemos usar o Algoritmo de [Euclides](https://kenji.blog/pt/p/euclid/) Estendido para calcular $d$ em velocidades extremamente altas.
 
 ## Conclusão

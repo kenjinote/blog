@@ -12,7 +12,7 @@ description: '양자 컴퓨터의 대두로 인한 암호 무력화 위협과 �
 
 ## 1. 시작하며: 양자 컴퓨터가 가져올 '암호의 위기'
 
-현대 인터넷 사회에서 통신의 기밀성과 데이터의 무결성을 보호하기 위해 공개키 암호 기술은 인프라로서 필수 불가결합니다. 현재 널리 사용되고 있는 RSA 암호나 타원 곡선 암호(ECC)는 각각 '거대한 합성수의 소인수분해의 어려움'이나 '타원 곡선 상의 이산대수 문제의 어려움'이라는 수학적인 장벽에 의존하여 안전성을 담보하고 있습니다. 고전적인 컴퓨터(슈퍼컴퓨터를 포함하여 현재 우리가 사용하고 있는 컴퓨터)에서는 이러한 수학적 문제를 풀기 위해서는 우주의 나이보다 더 오랜 시간이 걸린다고 증명되어 있으며, 그것이 안전성의 근거가 되어 왔습니다.
+현대 인터넷 사회에서 통신의 기밀성과 데이터의 무결성을 보호하기 위해 공개키 암호 기술은 인프라로서 필수 불가결합니다. 현재 널리 사용되고 있는 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호나 타원 곡선 암호(ECC)는 각각 '거대한 합성수의 소인수분해의 어려움'이나 '타원 곡선 상의 이산대수 문제의 어려움'이라는 수학적인 장벽에 의존하여 안전성을 담보하고 있습니다. 고전적인 컴퓨터(슈퍼컴퓨터를 포함하여 현재 우리가 사용하고 있는 컴퓨터)에서는 이러한 수학적 문제를 풀기 위해서는 우주의 나이보다 더 오랜 시간이 걸린다고 증명되어 있으며, 그것이 안전성의 근거가 되어 왔습니다.
 
 그러나 이 견고한 전제는 **양자 컴퓨터 ** 의 이론과 실용화의 진전으로 인해 근본적으로 뒤집히려 하고 있습니다. 1994년에 암호학자 피터 쇼어(Peter Shor)가 발표한 '**쇼어의 알고리즘([Shor's Algorithm](https://kenji.blog/ko/p/quantum-computing-shors-algorithm/))**'은 충분한 성능을 가진 오류 내성 범용 양자 컴퓨터(CRQC: [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer)에서 실행함으로써 소인수분해 문제나 이산대수 문제를 '다항식 시간'에 해독할 수 있음을 이론적으로 증명했습니다. 이는 현재 사용되고 있는 공개키 암호가 모두 무력화됨을 의미합니다.
 
@@ -40,7 +40,7 @@ graph TD
 
 표준화 대상이 된 것은 다음 두 가지 주요 카테고리입니다.
 1. **공개키 암호 / 키 캡슐화 메커니즘 (KEM: Key Encapsulation Mechanism)**: TLS 연결 등에서 통신 경로를 암호화하기 위한 대칭키를 안전하게 공유(분배)하기 위한 구조.
-2. **디지털 서명 (Digital Signatures)**: 소프트웨어 업데이트나 전자 인증서에서 데이터가 위조되지 않았음과 송신자의 스푸핑이 없음(진정성)을 증명하기 위한 구조.
+2. **디지털 서명 ([Digital Signature](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)s)**: 소프트웨어 업데이트나 전자 인증서에서 데이터가 위조되지 않았음과 송신자의 스푸핑이 없음(진정성)을 증명하기 위한 구조.
 
 약 6년에 걸친 매우 치열한 평가·분석 및 암호 해독 경쟁(Round 1~Round 3)을 거쳐, 일부 알고리즘에 대해서는 Round 4의 추가 평가가 이루어졌습니다. 그 결과, 2024년에 다음 알고리즘들이 정식 연방 정보 처리 표준(FIPS)으로 발행되어 향후 세계 표준으로 확정되었습니다.
 
@@ -124,7 +124,7 @@ Module-LWE의 가장 큰 이점은 다항식의 차수 $n$(NIST 표준에서는 
 
 ### 5.1. KEM (Key Encapsulation Mechanism) 아키텍처
 
-PQC의 시대에서는 RSA처럼 '클라이언트가 대칭키를 만들어 서버의 공개키로 암호화해서 보낸다'는 직접적인 접근 방식이 아니라, KEM이라는 캡슐화의 틀이 표준이 됩니다.
+PQC의 시대에서는 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)처럼 '클라이언트가 대칭키를 만들어 서버의 공개키로 암호화해서 보낸다'는 직접적인 접근 방식이 아니라, KEM이라는 캡슐화의 틀이 표준이 됩니다.
 
 ```mermaid
 sequenceDiagram
@@ -172,7 +172,7 @@ CPAPKE의 핵심이 되는 암호화와 복호화의 메커니즘은 다음과 �
    - 남는 것은 $\lfloor q/2 \rceil \cdot m + (\vec{e}^T\vec{r} + e_2 - \vec{s}^T\vec{e_1})$이 됩니다.
    - 괄호 안의 항은 '작은 오차끼리의 곱이나 합'이므로 전체적으로도 충분히 작은 값(노이즈)에 머무릅니다. 따라서 각 계수가 $0$에 가까운지 $q/2$에 가까운지를 임계값 판정함으로써 원래 메시지 $m$의 비트(0 또는 1)를 완전히 오류 없이 복원할 수 있습니다.
 
-Kyber의 가장 큰 강점은 그 압도적인 **처리 속도 ** 와 **적절한 키 크기** 에 있습니다. Kyber768의 경우 공개키 크기는 1,184바이트, 암호문 크기는 1,088바이트이며, RSA-3072(키 크기 약 384바이트) 등과 비교하면 크지만 현대 인터넷 통신의 MTU(Maximum Transmission Unit) 내에 패킷 분할 없이 담는 것이 가능하여 네트워크 지연(Latency)에 거의 악영향을 주지 않습니다.
+Kyber의 가장 큰 강점은 그 압도적인 **처리 속도 ** 와 **적절한 키 크기** 에 있습니다. Kyber768의 경우 공개키 크기는 1,184바이트, 암호문 크기는 1,088바이트이며, [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)-3072(키 크기 약 384바이트) 등과 비교하면 크지만 현대 인터넷 통신의 MTU(Maximum Transmission Unit) 내에 패킷 분할 없이 담는 것이 가능하여 네트워크 지연(Latency)에 거의 악영향을 주지 않습니다.
 
 ---
 
@@ -255,7 +255,7 @@ SPHINCS+의 유일하고도 가장 큰 약점은 **서명 크기가 극히 크�
 
 NIST 표준화 프로세스에서 Round 4의 최종 후보로서 현재도 계속 평가받고 있는 중요한 접근 방식이 **코드 기반 암호 ** 인 **Classic McEliece** 입니다.
 
-1978년 Robert McEliece가 제안한 이 알고리즘은 공개키 암호 역사 중에서도 RSA와 더불어 가장 오래된 것 중 하나입니다. 'Goppa 코드(고파 부호)'라고 불리는 대수 기하 코드를 이용하여 메시지에 의도적으로 오류(노이즈 벡터)를 더해 암호화하고, 비밀키로서 Goppa 코드의 패리티 검사 행렬을 가진 자만이 강력한 오류 정정 능력을 사용해 오류를 제거하고 원래의 메시지를 복호화할 수 있다는 '**신드롬 복호화 문제 (Syndrome Decoding Problem)**'에 기반하고 있습니다.
+1978년 Robert McEliece가 제안한 이 알고리즘은 공개키 암호 역사 중에서도 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)와 더불어 가장 오래된 것 중 하나입니다. 'Goppa 코드(고파 부호)'라고 불리는 대수 기하 코드를 이용하여 메시지에 의도적으로 오류(노이즈 벡터)를 더해 암호화하고, 비밀키로서 Goppa 코드의 패리티 검사 행렬을 가진 자만이 강력한 오류 정정 능력을 사용해 오류를 제거하고 원래의 메시지를 복호화할 수 있다는 '**신드롬 복호화 문제 (Syndrome Decoding Problem)**'에 기반하고 있습니다.
 
 $$ \vec{c} = \vec{m} G + \vec{e} $$
 ($G$는 공개키인 스크램블된 생성 행렬, $\vec{e}$는 가중치 $t$의 오류 벡터)
@@ -326,7 +326,7 @@ NIST의 FIPS 203 (ML-KEM), FIPS 204 (ML-DSA), FIPS 205 (SLH-DSA) 표준화 완�
 *References:*
 * *NIST Post-Quantum [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy Standardization Program*
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
-* *FIPS 204: Module-Lattice-Based Digital Signature Standard*
+* *FIPS 204: Module-Lattice-Based [Digital Signature](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
 
 

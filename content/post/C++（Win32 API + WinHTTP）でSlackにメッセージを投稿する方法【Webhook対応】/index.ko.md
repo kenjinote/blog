@@ -212,6 +212,6 @@ C++로 Slack 연동이라니... 라고 생각했던 당신도 오늘부터 알�
 
 * **파일 첨부**
 * **버튼이 포함된 UI**
-* **Slack App + OAuth2에 의한 유연한 API 조작**
+* **Slack App + [OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)2에 의한 유연한 API 조작**
 
 등 한 걸음 더 나아간 Slack 연동도 소개할 수 있습니다!

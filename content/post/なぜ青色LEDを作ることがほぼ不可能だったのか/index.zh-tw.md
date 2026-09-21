@@ -11,6 +11,6 @@ description: '介紹解說藍光 LED 實現難度有多高的英文紀錄片。�
 
 ## 為什麼製造藍光LED幾乎是不可能的
 
-介紹一部英語紀錄片。非常有趣。給人留下的強烈印象是，解決這個極其困難問題的日本人，最初在日本國內並沒有得到太多認可。
+介紹一部英語紀錄片。非常有趣。給人留下的強烈印象是，解決這個極其困難問題的日本人，最初在日本國內並沒有得到太多[認可](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)。
 
 {{<youtube AF8d72mA41M>}}

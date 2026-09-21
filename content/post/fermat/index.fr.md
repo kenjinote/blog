@@ -39,7 +39,7 @@ Le plus grand intérêt de [Fermat](https://kenji.blog/fr/p/fermat/) et le domai
 
 ### 2.1. Petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/)
 
-Un théorème remarquablement important qui forme la base de la cryptographie moderne (comme le chiffrement RSA) est le **Petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/)**. Il révèle une propriété surprenante concernant les nombres premiers et soutient silencieusement la technologie de sécurité dans notre société Internet moderne.
+Un théorème remarquablement important qui forme la base de la cryptographie moderne (comme le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)) est le **Petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/)**. Il révèle une propriété surprenante concernant les nombres premiers et soutient silencieusement la technologie de sécurité dans notre société Internet moderne.
 
 L'énoncé du théorème est le suivant :
 Pour tout nombre premier $p$ et tout entier $a$ qui est premier avec $p$ (ce qui signifie qu'il n'est pas un multiple de $p$), la congruence suivante est vraie :

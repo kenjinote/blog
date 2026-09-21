@@ -310,7 +310,7 @@ jobs:
       node-version: '20'
 ```
 
-## Integração de Nuvem Segura usando OIDC (OpenID Connect)
+## Integração de Nuvem Segura usando [OIDC](https://kenji.blog/pt/p/oauth2-oidc-authentication-authorization-difference/) ([OpenID Connect](https://kenji.blog/pt/p/oauth2-oidc-authentication-authorization-difference/))
 
 Ao implantar em provedores de nuvem como AWS, GCP e Azure, salvar credenciais de longo prazo (como chaves secretas) no GitHub acarreta riscos de segurança.
 
@@ -364,6 +364,6 @@ Neste artigo, explicamos em detalhes os fundamentos do CI/CD, como construir um 
 *   **Integre com frequência:** Faça o merge de pequenas alterações com frequência para detectar bugs com antecedência.
 *   **Utilize cache:** Reduza o tempo de execução dos fluxos de trabalho e melhore a experiência de desenvolvimento.
 *   **Automatize a qualidade e segurança:** Incorpore Lint, testes e verificações de vulnerabilidade no pipeline.
-*   **Use OIDC:** Utilize tokens temporários OIDC em vez de chaves secretas para a integração com provedores de nuvem.
+*   **Use [OIDC](https://kenji.blog/pt/p/oauth2-oidc-authentication-authorization-difference/):** Utilize tokens temporários OIDC em vez de chaves secretas para a integração com provedores de nuvem.
 
 O GitHub Actions é uma ferramenta extremamente flexível e poderosa. Recomendamos que você comece com pequenos passos, como automatizar o Lint, e expanda o pipeline gradualmente à medida que o projeto crescer. Com o poder da automação, você pode obter um desenvolvimento de software mais rápido e de maior qualidade.

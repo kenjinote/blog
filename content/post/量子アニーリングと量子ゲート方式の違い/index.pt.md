@@ -184,7 +184,7 @@ Vamos ver as áreas de aplicação específicas em que cada método se destaca.
 
 ### 6.2. Casos de Uso do Modelo de Porta Quântica
 - **Simulação Química Quântica**: Simulação de alta precisão dos estados energéticos de moléculas e reações químicas.
-- **Fatoração em Primos ([Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/))**: Um algoritmo para fatorar enormes números compostos em tempo polinomial. Se for colocado em uso prático, a infraestrutura atual de criptografia de chave pública, como o RSA, será quebrada, tornando urgente a transição para a criptografia pós-quântica (PQC).
+- **Fatoração em Primos ([Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/))**: Um algoritmo para fatorar enormes números compostos em tempo polinomial. Se for colocado em uso prático, a infraestrutura atual de criptografia de chave pública, como o [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), será quebrada, tornando urgente a transição para a criptografia pós-quântica (PQC).
 - **Busca em Banco de Dados (Algoritmo de Grover)**: Quando se pesquisa dados em bancos de dados não classificados, computadores clássicos exigem etapas de $O(N)$, enquanto o algoritmo de Grover pode pesquisar em etapas de $O(\sqrt{N})$.
 
 ### 6.3. Algoritmos Híbridos na Era NISQ: VQE e QAOA

@@ -10,7 +10,7 @@ categories: ["math-cryptography-quantum"]
 description: 'Masalah faktorisasi prima yang menopang keamanan sandi RSA. Kami menjelaskan secara menyeluruh dengan rumus matematika dan diagram konsep mulai dari mekanisme matematis algoritme klasik terkuat ''General Number Field Sieve (GNFS)'', hingga mengapa ''Algoritme Shor'' oleh komputer kuantum dapat mengalahkannya.'
 ---
 
-Keamanan informasi dalam masyarakat internet modern dilindungi oleh kriptografi kunci publik seperti kriptografi RSA. Dasar keamanan kriptografi RSA bergantung pada fakta bahwa **"faktorisasi prima dari bilangan komposit yang sangat besar sangatlah sulit secara komputasi"** .
+Keamanan informasi dalam masyarakat internet modern dilindungi oleh kriptografi kunci publik seperti kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/). Dasar keamanan kriptografi RSA bergantung pada fakta bahwa **"faktorisasi prima dari bilangan komposit yang sangat besar sangatlah sulit secara komputasi"** .
 
 Dalam artikel ini, kita akan mengungkap mekanisme matematis dari **"General Number Field Sieve"** (GNFS), algoritma faktorisasi prima terkuat untuk komputer klasik, dan mendalami mengapa algoritma ini sepenuhnya dikalahkan oleh **"Algoritma Shor"** yang ditemukan oleh Peter Shor. Kita akan mengeksplorasi pergeseran paradigma ini secara mendalam menggunakan rumus dan diagram konseptual.
 

@@ -11,7 +11,7 @@ description: 'Explication approfondie du fonctionnement de « l''algorithme du C
 
 # 【Anatomie Complète】Comprendre et implémenter l'algorithme de décryptage ultime « GNFS » en C++
 
-La cryptographie RSA, qui soutient l'Internet moderne, repose sur une croyance mathématique : « il est virtuellement impossible pour les ordinateurs actuels de factoriser d'énormes nombres composés ».
+La cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), qui soutient l'Internet moderne, repose sur une croyance mathématique : « il est virtuellement impossible pour les ordinateurs actuels de factoriser d'énormes nombres composés ».
 
 Cependant, l'humanité n'a jamais abandonné. Actuellement, pour les ordinateurs classiques (non quantiques), il existe **l'algorithme le plus puissant et le plus avancé de l'humanité ** pour effectuer des factorisations géantes. C'est le ** « Crible Général du Corps de Nombres (GNFS : General Number Field Sieve) »**.
 
@@ -431,7 +431,7 @@ Si on pose $V$ du côté rationnel tel quel comme $X$, l'équation absolue que n
 
 **$$X^2 \equiv Y^2 \pmod N$$** 
 
-Ensuite, il suffit de calculer $\gcd(X-Y, N)$. Au moment où le traitement de 0,001 seconde s'achève et qu'un facteur non trivial s'imprime à l'écran, le cryptage RSA, autrefois considéré comme imprenable, s'effondre complètement.
+Ensuite, il suffit de calculer $\gcd(X-Y, N)$. Au moment où le traitement de 0,001 seconde s'achève et qu'un facteur non trivial s'imprime à l'écran, le cryptage [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), autrefois considéré comme imprenable, s'effondre complètement.
 
 ---
 

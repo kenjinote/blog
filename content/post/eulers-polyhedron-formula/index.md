@@ -99,7 +99,7 @@ flowchart TD
 
 $$ \sum (\text{不足角}) = 720^\circ $$
 
-この定理は、[オイラー](https://kenji.blog/p/euler/)の公式 $V - E + F = 2$ と数学的に全く等価です。しかし[デカルト](https://kenji.blog/p/descartes/)はこの発見を出版せず、暗号化された手稿の中に隠していました。彼の死後、その手稿は[ライプニッツ](https://kenji.blog/p/leibniz/)によって解読されましたが、世間に広く知られることはありませんでした。そのため、この偉大な性質は[オイラー](https://kenji.blog/p/euler/)によって再発見され、「[オイラー](https://kenji.blog/p/euler/)の公式」として歴史に名を刻むことになったのです。
+この定理は、[オイラー](https://kenji.blog/p/euler/)の公式 $V - E + F = 2$ と数学的に全く等価です。しかし[デカルト](https://kenji.blog/p/descartes/)はこの発見を出版せず、[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)された手稿の中に隠していました。彼の死後、その手稿は[ライプニッツ](https://kenji.blog/p/leibniz/)によって解読されましたが、世間に広く知られることはありませんでした。そのため、この偉大な性質は[オイラー](https://kenji.blog/p/euler/)によって再発見され、「[オイラー](https://kenji.blog/p/euler/)の公式」として歴史に名を刻むことになったのです。
 
 ## トポロジー（位相幾何学）の誕生：「やわらかい幾何学」
 

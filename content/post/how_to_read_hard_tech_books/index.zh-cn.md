@@ -96,12 +96,12 @@ graph LR
 
 下面我们将通过两个具体的例子，来看看将公式转化为代码的过程。
 
-### 4.1 实例1：RSA加密的数学与 Python 实现
+### 4.1 实例1：[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密的数学与 Python 实现
 
 作为公钥密码学代表的 RSA 加密，是初等数论（同余式、欧拉定理、扩展[[欧几里得](https://kenji.blog/zh-cn/p/euclid/)算法](https://kenji.blog/p/euclidean-algorithm/)）的绝美应用。
 
 #### 数学背景
-RSA 加密的密钥生成以及加解密过程可以用以下公式表示：
+[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) 加密的密钥生成以及加解密过程可以用以下公式表示：
 
 1. **密钥生成**:
    选取巨大的素数 $p, q$，令 $n = pq$。

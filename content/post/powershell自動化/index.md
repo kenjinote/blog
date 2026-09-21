@@ -445,7 +445,7 @@ Write-Host "すべてのリポジトリの更新処理が完了しました。" 
 PowerShellを用いた自動化スクリプトを長期間運用する上で、いくつか気をつけるべきベストプラクティスがあります。
 
 ### 1. 資格情報の安全な管理
-スクリプト内でパスワードやAPIキー（例：Slack Webhook URL、データベース接続文字列）をプレーンテキストでハードコードするのはセキュリティ上の大きなリスクです。PowerShellには `Export-Clixml` や `ConvertFrom-SecureString` といった、認証情報を暗号化して保存する機能が備わっています。
+スクリプト内でパスワードやAPIキー（例：Slack Webhook URL、データベース接続文字列）をプレーンテキストでハードコードするのはセキュリティ上の大きなリスクです。PowerShellには `Export-Clixml` や `ConvertFrom-SecureString` といった、[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)情報を[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)して保存する機能が備わっています。
 
 ```powershell
 # 初回のみ手動実行（パスワード入力ダイアログが表示される）
@@ -456,7 +456,7 @@ $cred = Import-Clixml -Path "C:\Scripts\Creds\admin.xml"
 # $cred を用いてリモートサーバー接続などを行う
 ```
 
-これにより、スクリプト実行ユーザーのプロファイルでのみ復号化可能な安全な認証情報の取り扱いが可能になります。
+これにより、スクリプト実行ユーザーのプロファイルでのみ復号化可能な安全な[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)情報の取り扱いが可能になります。
 
 ### 2. トランスクリプト（Transcript）による実行ログの全記録
 前述の例では `Add-Content` 等で個別にログを出力していましたが、PowerShellには画面に出力されたすべての情報（エラーメッセージや標準出力含む）を自動的にファイルに書き出すトランスクリプト機能があります。

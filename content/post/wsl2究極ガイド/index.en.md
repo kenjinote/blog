@@ -317,7 +317,7 @@ After a reboot, `systemctl start docker` will function exactly like a native Lin
 
 ---
 
-## 8. SSH Key Integration: Seamless Authentication between Windows and WSL
+## 8. SSH Key Integration: Seamless [Authentication](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/) between Windows and WSL
 
 Managing separate SSH keys on the Windows side and the WSL side when doing Git SSH cloning or SSH connecting to remote servers is extremely tedious. To balance security and convenience, configure a bridge for the SSH agent running on the Windows side (or a password manager like 1Password) to the WSL side.
 

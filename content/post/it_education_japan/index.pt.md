@@ -140,7 +140,7 @@ Além disso, aprender a estrutura de índices "[B-Tree](https://kenji.blog/pt/p/
 
 Na educação em alfabetização informacional, realiza-se uma educação de segurança superficial como "vamos fazer senhas complexas" ou "não clique em links suspeitos", mas a matemática da "teoria da criptografia" que sustenta a sociedade da Internet raramente é ensinada.
 
-As comunicações HTTPS e as assinaturas eletrônicas que usamos diariamente são protegidas por criptografia de chave pública, como o RSA. A segurança do RSA baseia-se na dificuldade matemática (considerada um problema NP-intermediário) que afirma que "a fatoração de números inteiros gigantes não pode ser resolvida em tempo viável por computadores clássicos atuais".
+As comunicações HTTPS e as assinaturas eletrônicas que usamos diariamente são protegidas por criptografia de chave pública, como o [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/). A segurança do RSA baseia-se na dificuldade matemática (considerada um problema NP-intermediário) que afirma que "a fatoração de números inteiros gigantes não pode ser resolvida em tempo viável por computadores clássicos atuais".
 
 As equações subjacentes à criptografia RSA são uma bela aplicação da função totiente de Euler e do pequeno teorema de [Fermat](https://kenji.blog/pt/p/fermat/).
 

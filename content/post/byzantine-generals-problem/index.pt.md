@@ -116,7 +116,7 @@ E se a mensagem enviada for acompanhada por uma "assinatura digital não falsifi
 
 Neste modelo, torna-se impossível adulterar as ordens emitidas pelo comandante no meio do caminho. Como resultado, não importa quantos traidores existam, provou-se que o consenso pode ser alcançado, desde que existam $n \ge m + 2$ generais (ou seja, um total de pelo menos 3 pessoas) contra $m$ traidores. Nos sistemas modernos, as assinaturas digitais por criptografia de chave pública desempenham este papel.
 
-## 4. Blockchain e Tolerância a Falhas Bizantinas
+## 4. [Blockchain](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/) e Tolerância a Falhas Bizantinas
 
 A resistência a este Problema dos Generais Bizantinos é designada por **Tolerância a Falhas Bizantinas** (Byzantine Fault Tolerance, BFT). É um indicador crucial de que um sistema distribuído pode resistir a falhas e ataques maliciosos e continuar a funcionar normalmente.
 
@@ -149,11 +149,11 @@ Através deste processo, mesmo se houver $m$ nós defeituosos ou maliciosos na r
 
 ### Consenso Nakamoto (Proof of Work)
 
-Satoshi Nakamoto, o criador do [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/), lidou com este problema com uma abordagem completamente nova. Essa é a combinação do **Proof of Work** (PoW) e da regra de que a cadeia mais longa é a correta, conhecido como **Consenso Nakamoto**.
+Satoshi Nakamoto, o criador do [Bitcoin](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/), lidou com este problema com uma abordagem completamente nova. Essa é a combinação do **Proof of Work** ([PoW](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/)) e da regra de que a cadeia mais longa é a correta, conhecido como **Consenso Nakamoto**.
 
 No Consenso Nakamoto, apenas aquele que vence a competição de cálculo matemático (mineração) ganha o direito de propor um bloco. Para forçar a rede a aceitar informações falsas, seria necessário controlar mais de metade (mais de 51%) do poder computacional de toda a rede, o que na realidade foi concebido para ser extremamente difícil. Isso resolve probabilisticamente o Problema dos Generais Bizantinos numa rede aberta, da qual pode participar um número indeterminado de pessoas.
 
-### Aplicação da BFT no PoS (Proof of Stake)
+### Aplicação da BFT no [PoS](https://kenji.blog/pt/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Stake)
 
 Embora o Consenso Nakamoto tenha sido revolucionário, apresentou o problema de consumir imensa energia para a mineração. Para resolver isso, surgiu o **Proof of Stake** (PoS), que atribui o direito de propor blocos consoante a quantidade de ativos criptográficos (stake) detida por um nó.
 

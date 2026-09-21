@@ -11,15 +11,15 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 # [楕円曲線暗号（ECC）の数学的基礎とC++での実装](https://kenji.blog/p/楕円曲線暗号の数学的基礎とcppでの実装/)
 
-現代の暗号技術において、 **楕円曲線暗号（Elliptic Curve [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy: ECC）** は極めて重要な役割を果たしています。私たちの日常的なインターネット通信（HTTPS/TLS）から、スマートフォンのセキュアエンクレーブ、SSHによるサーバー認証、FIDOなどのパスワードレス認証、さらには[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)やイーサリアムなどの[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)に至るまで、現代のデジタル社会の信頼基盤はECCによって支えられていると言っても過言ではありません。
+現代の暗号技術において、 **楕円曲線暗号（Elliptic Curve [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy: ECC）** は極めて重要な役割を果たしています。私たちの日常的なインターネット通信（HTTPS/TLS）から、スマートフォンのセキュアエンクレーブ、SSHによるサーバー[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)、FIDOなどのパスワードレス認証、さらには[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)やイーサリアムなどの[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)に至るまで、現代のデジタル社会の信頼基盤はECCによって支えられていると言っても過言ではありません。
 
 本記事では、この楕円曲線暗号がいかにして機能しているのか、その背後にある美しくも難解な数学的理論（有限体上の代数幾何学）から出発し、実際のC++を用いた実装方法、さらにはサイドチャネル攻撃（タイミング攻撃）を防ぐためのセキュアなコーディング手法まで、圧倒的なボリュームで徹底的に解説します。
 
 ---
 
-## 1. なぜ楕円曲線暗号なのか？（RSAとの比較）
+## 1. なぜ楕円曲線暗号なのか？（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)との比較）
 
-公開鍵暗号方式の代名詞といえば、長らく **RSA暗号** でした。RSA暗号は「巨大な合成数の素因数分解の困難性」を安全性の根拠としています。しかし、コンピューターの計算能力の向上に伴い、安全性を維持するためにはRSAの鍵長（モジュラスのビット数）を継続的に長くする必要が生じました。現在では、最低でも2048ビット、より安全を期すなら3072ビットや4096ビットの鍵長が推奨されています。
+[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号方式の代名詞といえば、長らく **RSA暗号** でした。RSA暗号は「巨大な合成数の素因数分解の困難性」を安全性の根拠としています。しかし、コンピューターの計算能力の向上に伴い、安全性を維持するためにはRSAの鍵長（モジュラスのビット数）を継続的に長くする必要が生じました。現在では、最低でも2048ビット、より安全を期すなら3072ビットや4096ビットの鍵長が推奨されています。
 
 これに対して、楕円曲線暗号（ECC）は **「楕円曲線上の離散対数問題（ECDLP）」** という別の数学的困難性を安全性の根拠としています。ECDLPを解くための効率的なアルゴリズム（準指数関数時間アルゴリズムなど）は現在に至るまで発見されておらず、既知の最も効率的な攻撃手法であっても指数関数的な時間を要します。
 
@@ -174,7 +174,7 @@ $$ kP = \underbrace{P + P + \dots + P}_{k\text{回}} $$
 > 既知の点 $P$（ベースポイント）と、計算結果の点 $Q$ が与えられたとき、$Q = kP$ を満たすスカラー $k$ を求めよ。
 
 $k$ と $P$ から $Q$ を計算する（順方向）のは後述のアルゴリズムを用いれば簡単（多項式時間）ですが、$P$ と $Q$ から $k$ を逆算する（逆方向）ことは、総当たり的な探索以外に効率的な解法がなく、事実上不可能です（一方向性関数）。
-暗号プロトコルにおいては、 **$k$ が「秘密鍵」、$Q$ が「公開鍵」** に対応します。
+暗号プロトコルにおいては、 **$k$ が「秘密鍵」、$Q$ が「[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)」** に対応します。
 
 ### 5.3. Double-and-Add アルゴリズム
 $k$ が巨大な数（例：$2^{256}$）の場合、$P$ を愚直に $k$ 回足し合わせることは宇宙の寿命が尽きても終わりません。そこで、高速にスカラー倍算を行うために **Double-and-Add法（バイナリ法）** が用いられます。
@@ -226,7 +226,7 @@ sequenceDiagram
 
 ## 7. 実装の落とし穴：サイドチャネル攻撃と対策
 
-理論的に完璧な暗号アルゴリズムであっても、それをプログラムとして実装する過程で脆弱性が生まれ得ます。それが **「サイドチャネル攻撃（Side-Channel Attack）」** です。
+理論的に完璧な暗号アルゴリズムであっても、それをプログラムとして実装する過程で[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)が生まれ得ます。それが **「サイドチャネル攻撃（Side-Channel Attack）」** です。
 
 ### 7.1. タイミング攻撃（Timing Attack）
 前述の Double-and-Add アルゴリズムを振り返ってみましょう。
@@ -436,15 +436,15 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 
 本記事では以下の重要なポイントを解説しました。
 
-1. **RSAに対する優位性**: 非常に短い鍵長で強力なセキュリティを提供し、現代のモバイル・IoT時代に最適であること。
+1. **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)に対する優位性**: 非常に短い鍵長で強力なセキュリティを提供し、現代のモバイル・IoT時代に最適であること。
 2. **群論と有限体の基礎**: ECCの土台となる数学的構造。
 3. **加算と2倍算の公式**: ワイエルシュトラス方程式を用いた代数的な群演算の実装方法。
-4. **サイドチャネル攻撃の脅威**: 秘密鍵のビットに依存した条件分岐が致命的な脆弱性を生むこと。
+4. **サイドチャネル攻撃の脅威**: 秘密鍵のビットに依存した条件分岐が致命的な[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)を生むこと。
 5. **Constant-Time 実装**: Montgomery Ladder と Conditional Swap を用いて、ハードウェアレベルの挙動を均一化し攻撃を防ぐC++コーディング技法。
 
 実際にプロダクション環境で動作する暗号ライブラリを自作することは、セキュリティ上のリスクが極めて高いため非推奨（"Don't roll your own crypto"）とされています。しかし、その内部で動いているアルゴリズムと数学的背景を深く理解することは、よりセキュアでパフォーマンスの高いシステムを設計・運用するエンジニアにとって、かけがえのない強力な武器となるはずです。
 
-次回の記事では、この楕円曲線を用いたデジタル署名アルゴリズムである **ECDSA (Elliptic Curve Digital Signature Algorithm)** のメカニズムや、[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)で採用されている **Schnorr署名** についてさらに深く掘り下げていきたいと思います。
+次回の記事では、この楕円曲線を用いたデジタル署名アルゴリズムである **ECDSA (Elliptic Curve [Digital Signature](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) Algorithm)** のメカニズムや、[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)で採用されている **Schnorr署名** についてさらに深く掘り下げていきたいと思います。
 
 
 

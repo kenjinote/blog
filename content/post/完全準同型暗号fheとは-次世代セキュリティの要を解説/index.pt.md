@@ -11,7 +11,7 @@ tags: ["FHE", "Homomorphic Encryption", "Cloud Computing", "Privacy"]
 
 À medida que a computação em nuvem e a tecnologia de IA se estabelecem como base da sociedade, o trade-off entre a "privacidade de dados" e a "utilização de dados" tornou-se um dos desafios mais importantes. Embora haja uma demanda crescente por ter IAs analisando dados altamente sensíveis na nuvem — como dados médicos, informações financeiras e dados biométricos pessoais —, muitas empresas hesitam em enviar dados externamente por questões de segurança.
 
-Tecnologias de criptografia tradicionais (como AES e RSA) são excelentes em proteger dados armazenados em disco (Data at Rest) ou dados transmitidos pela rede (Data in Transit). No entanto, quando o servidor executa **processamentos (cálculos) nos dados, como pesquisas ou aprendizado de máquina (Data in Use), é necessário descriptografar a cifra e retorná-la a texto plano primeiro**. Se o servidor for hackeado exatamente no momento em que os dados estão descriptografados, ou se um administrador interno mal-intencionado visualizar os dados, isso levará diretamente a um vazamento de informações.
+Tecnologias de criptografia tradicionais (como AES e [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)) são excelentes em proteger dados armazenados em disco (Data at Rest) ou dados transmitidos pela rede (Data in Transit). No entanto, quando o servidor executa **processamentos (cálculos) nos dados, como pesquisas ou aprendizado de máquina (Data in Use), é necessário descriptografar a cifra e retorná-la a texto plano primeiro**. Se o servidor for hackeado exatamente no momento em que os dados estão descriptografados, ou se um administrador interno mal-intencionado visualizar os dados, isso levará diretamente a um vazamento de informações.
 
 A tecnologia dos sonhos que supera essa fraqueza fundamental da "descriptografia durante o processamento" é a **Criptografia Totalmente Homomórfica (Fully Homomorphic Encryption: FHE)**. Ao usar a FHE, torna-se possível realizar cálculos nos dados enquanto eles permanecem criptografados, sem qualquer descriptografia, e retornar apenas o texto cifrado do resultado para o cliente.
 
@@ -55,7 +55,7 @@ A criptografia homomórfica não atingiu sua forma "totalmente" atual de uma só
 ### Partially Homomorphic Encryption (PHE: Criptografia Parcialmente Homomórfica)
 A PHE é um método de criptografia que permite que **apenas uma das operações** (ou adição ou multiplicação) seja executada um número ilimitado de vezes. Na verdade, criptografias com essa propriedade existem há muito tempo.
 
-*   **Criptografia RSA (Homomorfismo para multiplicação)**
+*   **Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) (Homomorfismo para multiplicação)**
     A criptografia RSA obteve inadvertidamente propriedade homomórfica multiplicativa. Dados os textos planos $m_1, m_2$ e a chave pública $(e, N)$:
     $$ E(m_1) = m_1^e \pmod N $$
     $$ E(m_2) = m_2^e \pmod N $$
@@ -259,7 +259,7 @@ Hoje em dia, onde a FHE está alcançando uma velocidade em níveis práticos, s
 
 ## 9. Conclusão: O Futuro da Criptografia em Direção ao "Cálculo Invisível"
 
-Assim como a invenção da criptografia de chave pública (como a RSA) na década de 1970 possibilitou a comunicação segura pela internet (como no HTTPS), a invenção da FHE por Craig Gentry é um dos marcos mais cruciais em toda a história criptográfica da humanidade.
+Assim como a invenção da criptografia de chave pública (como a [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)) na década de 1970 possibilitou a comunicação segura pela internet (como no HTTPS), a invenção da FHE por Craig Gentry é um dos marcos mais cruciais em toda a história criptográfica da humanidade.
 
 No presente, a Criptografia Totalmente Homomórfica (FHE) deu um salto dos laboratórios teóricos para o mundo real, entrando agora na etapa pela qual as corporações da Microsoft, IBM, Intel, Google, assim como uma quantidade de startups lutam firmemente em direção ao estado da comercialização tangível no sistema prático. O problema da quantidade do peso do tamanho expansível nos dados codificados ainda está contido no rol de entraves e desafios a transpor, mas à luz do requinte arquitetônico dos modelos e softwares matemáticos de algoritmo em sincronia contínua de aperfeiçoamento nos hardwares superacelerados tecnológicos, sua capacidade de melhoria atinge avanços velozes cujas expectativas superam a Lei de Moore.
 

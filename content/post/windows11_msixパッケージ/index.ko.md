@@ -131,7 +131,7 @@ MakeAppx.exe pack /d "C:\Path\To\AppFolder" /p "C:\Path\To\Output\AwesomeApp_1.0
 
 MSIX 패키지에 왜 서명이 필요한지를 깊이 이해하기 위해서는 디지털 서명 이면에 있는 암호학적 메커니즘을 이해해야 합니다. 디지털 서명은 패키지가 "확실하게 지정된 게시자에 의해 생성되었다는 것(인증)"과 "생성 후부터 현재까지 제3자에 의해 변조되지 않았다는 것(무결성)"을 보증합니다.
 
-MSIX 서명에는 일반적으로 RSA 암호와 SHA-256(Secure Hash Algorithm 256-bit)이 결합되어 사용됩니다.
+MSIX 서명에는 일반적으로 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호와 SHA-256(Secure Hash Algorithm 256-bit)이 결합되어 사용됩니다.
 
 ### 해시 함수의 적용
 먼저 MSIX 패키지의 바이너리 전체(내용물)를 메시지 $M$이라고 합시다. 서명 툴(SignTool.exe)은 이 메시지 $M$에 대해 암호학적 해시 함수인 SHA-256을 적용하여 고정 길이(256비트)의 해시값 $H(M)$을 계산합니다.
@@ -141,7 +141,7 @@ MSIX 서명에는 일반적으로 RSA 암호와 SHA-256(Secure Hash Algorithm 25
 
 $$ \sigma \equiv (H(M))^d \pmod n $$
 
-여기서 $n$은 RSA 모듈러스(두 개의 거대한 소수의 곱)입니다. 이 서명 $\sigma$와 게시자의 "공개 키(Public Key)" $e$를 포함하는 인증서(X.509 형식)가 MSIX 패키지의 일부(`AppxSignature.p7x`)로 임베드됩니다.
+여기서 $n$은 RSA 모듈러스(두 개의 거대한 소수의 곱)입니다. 이 서명 $\sigma$와 게시자의 "공개 키([Public Key](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/))" $e$를 포함하는 인증서(X.509 형식)가 MSIX 패키지의 일부(`AppxSignature.p7x`)로 임베드됩니다.
 
 ### 서명 검증(Windows OS)
 사용자가 MSIX를 설치하려고 할 때, Windows OS는 패키지 내의 인증서에서 공개 키 $e$를 추출하고 다음의 계산을 수행하여 해시값 $H'(M)$을 복원합니다.

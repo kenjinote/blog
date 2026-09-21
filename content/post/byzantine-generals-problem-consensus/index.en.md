@@ -17,9 +17,9 @@ tags:
 
 At the core of modern cloud computing and blockchain technologies lies the **consensus algorithm**, which allows multiple computers (nodes) to share and agree on a state. In this article, we will delve deeply into its theoretical foundation, the "Byzantine Generals Problem," and explore **Paxos** and **Raft**, which are widely adopted in practical systems, as well as **BFT (Byzantine Fault Tolerance)** in environments where malicious participants exist. We will include mathematical proofs and code implementations.
 
-## 1. Consensus and Challenges in [Distributed System](https://kenji.blog/en/p/cap-theorem-distributed-systems/)s
+## 1. [Consensus](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) and Challenges in [Distributed System](https://kenji.blog/en/p/cap-theorem-distributed-systems/)s
 
-In distributed systems, various failures that cannot occur on a single computer, such as network delays, packet loss, node crashes, or malicious tampering, can occur. Consensus algorithms are the mechanism for maintaining a consistent state across the entire system while withstanding these failures.
+In distributed systems, various failures that cannot occur on a single computer, such as network delays, packet loss, node crashes, or malicious tampering, can occur. [Consensus](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) algorithms are the mechanism for maintaining a consistent state across the entire system while withstanding these failures.
 
 The fault tolerance of a system is mainly classified into the following two types:
 
@@ -67,7 +67,7 @@ graph TD
 
 ---
 
-## 3. Paxos: The Monument of Theoretical Consensus
+## 3. Paxos: The Monument of Theoretical [Consensus](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/)
 
 In the realm of CFT (Crash Fault Tolerance), which does not consider Byzantine faults, the first powerful algorithm is **Paxos**. Also proposed by Leslie Lamport in 1989 (published in 1998), it is used in Google's Chubby, Spanner, and others.
 
@@ -285,7 +285,7 @@ In this way, even if $ f $ malicious nodes belong to both quorums, there is alwa
 
 ---
 
-## 6. Conclusion: The Evolution of Consensus Algorithms
+## 6. Conclusion: The Evolution of [Consensus](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) Algorithms
 
 In this article, we explained consensus formation, the greatest challenge in distributed systems, starting from the theoretical "Byzantine Generals Problem," moving to crash-tolerant **Paxos** and **Raft**, and covering **PBFT**, which is resistant to malicious nodes.
 
@@ -293,4 +293,4 @@ In this article, we explained consensus formation, the greatest challenge in dis
 *   **Raft** : Pursues understandability and ease of implementation, becoming the de facto standard for modern distributed KVS.
 *   **PBFT** : Achieves deterministic consensus in environments mixed with malicious nodes, forming the foundation of blockchain technology.
 
-Today, new BFT algorithms like the **Nakamoto Consensus (PoW)** adopted by Bitcoin, Tendermint, and HotStuff continue to emerge, reducing the communication overhead of PBFT while improving scalability. Selecting the appropriate consensus algorithm based on system requirements (node reliability, required throughput, latency) is the key to building a robust distributed system.
+Today, new BFT algorithms like the **Nakamoto Consensus ([PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/))** adopted by Bitcoin, Tendermint, and HotStuff continue to emerge, reducing the communication overhead of PBFT while improving scalability. Selecting the appropriate consensus algorithm based on system requirements (node reliability, required throughput, latency) is the key to building a robust distributed system.

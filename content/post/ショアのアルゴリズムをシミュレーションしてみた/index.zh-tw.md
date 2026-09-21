@@ -12,7 +12,7 @@ description: '詳細解說量子電腦將如何破壞現有密碼技術，從秀
 
 # 1. 簡介：量子電腦帶來的密碼危機
 
-現代網際網路社會中的安全性，大部分依賴於 **公鑰加密系統** （尤其是RSA加密）。當我們在線上購物傳送信用卡資訊，或是傳遞高機密性資料時，這些通訊內容都受到RSA加密的強力保護。
+現代網際網路社會中的安全性，大部分依賴於 **公鑰加密系統** （尤其是[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密）。當我們在線上購物傳送信用卡資訊，或是傳遞高機密性資料時，這些通訊內容都受到RSA加密的強力保護。
 
 RSA加密的安全性基礎，仰賴於一個數學事實：「 **將極大的整數進行質因數分解，對古典電腦（我們平時使用的PC或超級電腦）來說是極度困難的** 」。然而，彼得·秀爾（Peter Shor）在1994年發表的「 **秀爾演算法（[Shor's Algorithm](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/)）** 」，卻從根本上推翻了這個前提。數學上已經證明，如果在大規模的量子電腦上執行秀爾演算法，原本古典電腦需要耗費超過宇宙年齡才能完成的質因數分解，只需短短幾分鐘到幾小時就能解開。
 
@@ -322,7 +322,7 @@ $q = \gcd(7^2 + 1, 15) = \gcd(50, 15) = 5$
 
 # 6. 邁向實用化的挑戰與 NISQ 時代的極限
 
-雖然在模擬器上將 $N=15$ 進行質因數分解非常簡單，但要在現實中的量子電腦上分解社會中實際使用的 RSA-2048（617位數的十進位數），目前還存在著許多難以跨越的障礙。
+雖然在模擬器上將 $N=15$ 進行質因數分解非常簡單，但要在現實中的量子電腦上分解社會中實際使用的 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)-2048（617位數的十進位數），目前還存在著許多難以跨越的障礙。
 
 我們現在所處的時代，被稱為 **NISQ（Noisy Intermediate-Scale Quantum：含雜訊中等規模量子）時代** 。量子位元對外部環境的雜訊極度敏感，計算途中容易發生「退相干（Decoherence）」導致狀態崩壞。
 
@@ -341,7 +341,7 @@ $q = \gcd(7^2 + 1, 15) = \gcd(50, 15) = 5$
 
 PQC 建立在被認為即使使用秀爾演算法（或葛羅佛演算法）也無法在數學上有效解開的全新數學問題（如晶格問題、多變數多項式問題、雜湊函數等）基礎上。目前像是「CRYSTALS-Kyber」與「CRYSTALS-Dilithium」等演算法已經被選為標準規格，並正逐漸導入 Apple 的 iMessage 或是各大網頁瀏覽器的通訊協定中。
 
-對管理IT基礎設施的工程師來說，在系統中導入從現有 RSA 或橢圓曲線密碼轉換到 PQC 的「密碼敏捷性（[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)-Agility：能快速切換密碼系統的設計）」，將會是未來的一大任務。
+對管理IT基礎設施的工程師來說，在系統中導入從現有 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 或橢圓曲線密碼轉換到 PQC 的「密碼敏捷性（[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)-Agility：能快速切換密碼系統的設計）」，將會是未來的一大任務。
 
 ---
 

@@ -150,10 +150,10 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 # Periksa: 111 * 3 + 30 * (-11) = 333 - 330 = 3
 ```
 
-## Aplikasi dalam Masyarakat Modern (Kriptografi RSA, dll.)
+## Aplikasi dalam Masyarakat Modern (Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), dll.)
 
 [Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/) Diperluas bukan sekadar teka-teki matematika, melainkan teknologi esensial yang mendukung masyarakat internet modern.
-Contoh utamanya adalah **kriptografi RSA** . Dalam proses pembuatan kunci enkripsi RSA, perlu ditemukan kunci privat $d$ (invers modular) yang memenuhi $e d \equiv 1 \pmod{\phi(N)}$ untuk suatu bilangan $e$ dan fungsi totient Euler $\phi(N)$ .
+Contoh utamanya adalah **kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)** . Dalam proses pembuatan kunci enkripsi RSA, perlu ditemukan kunci privat $d$ (invers modular) yang memenuhi $e d \equiv 1 \pmod{\phi(N)}$ untuk suatu bilangan $e$ dan fungsi totient Euler $\phi(N)$ .
 Karena ini dapat disusun ulang ke dalam bentuk $ed + k\phi(N) = 1$ , kita dapat menggunakan [Algoritma Euclidean](https://kenji.blog/id/p/euclidean-algorithm/) Diperluas untuk menghitung $d$ pada kecepatan yang sangat tinggi.
 
 ## Kesimpulan

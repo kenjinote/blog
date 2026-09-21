@@ -11,7 +11,7 @@ tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 
 # 1. Introducción: El amanecer de la criptografía poscuántica (PQC) y el auge de la criptografía basada en retículos
 
-La infraestructura digital de la sociedad moderna se basa en tecnologías de criptografía de clave pública, como el cifrado RSA y la criptografía de curva elíptica (ECC). Estos métodos basan su seguridad en la dificultad matemática de problemas como la "factorización de enteros" o el "logaritmo discreto", los cuales se cree que no pueden resolverse eficientemente (requieren tiempo exponencial) con computadoras clásicas convencionales.
+La infraestructura digital de la sociedad moderna se basa en tecnologías de criptografía de clave pública, como el cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) y la criptografía de curva elíptica (ECC). Estos métodos basan su seguridad en la dificultad matemática de problemas como la "factorización de enteros" o el "logaritmo discreto", los cuales se cree que no pueden resolverse eficientemente (requieren tiempo exponencial) con computadoras clásicas convencionales.
 
 Sin embargo, el "[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)", publicado por Peter Shor en 1994, sacudió el mundo de la criptografía. Este algoritmo demostró matemáticamente que una vez que se construyan computadoras cuánticas a gran escala, estas podrán resolver los problemas de factorización de enteros y de logaritmo discreto en tiempo polinomial. Esto significa que la criptografía de clave pública ampliamente utilizada en la actualidad se volverá completamente descifrable en el futuro.
 
@@ -152,7 +152,7 @@ Habiendo entendido la dificultad del problema LWE, veamos cómo funciona el cifr
 3. Se genera una matriz aleatoria $A \in \mathbb{Z}_q^{m \times n}$.
 4. Se selecciona un pequeño vector de error $\mathbf{e} \in \mathbb{Z}_q^m$ a partir de una distribución de errores como la distribución gaussiana discreta.
 5. Se calcula el vector $\mathbf{b} = A \mathbf{s} + \mathbf{e} \pmod q$.
-6. La clave pública (Public Key) será $(A, \mathbf{b})$.
+6. La clave pública ([Public Key](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)) será $(A, \mathbf{b})$.
 7. La clave secreta o privada (Secret Key) será $\mathbf{s}$.
 
 La clave pública es precisamente una "instancia del problema LWE". Dado que derivar la clave secreta $\mathbf{s}$ a partir de la clave pública $(A, \mathbf{b})$ equivale a resolver el problema de búsqueda LWE, la seguridad está garantizada.
@@ -312,7 +312,7 @@ Actualmente, "CRYSTALS-Kyber" (Nombre estandarizado: ML-KEM), que ha sido selecc
 
 Finalmente, tocaremos el núcleo de la pregunta: "¿Por qué se cree que la criptografía basada en retículos no se puede descifrar ni siquiera usando computadoras cuánticas?"
 
-El algoritmo de Shor, que hace que las computadoras cuánticas rompan RSA y ECC, es esencialmente un algoritmo para resolver el "Problema del Subgrupo Oculto (Hidden Subgroup Problem: HSP)". La estructura matemática (grupos abelianos finitos) detrás de RSA y ECC tiene periodicidad, y al usar una operación cuántica específica llamada Transformada Cuántica de Fourier (QFT), este período (el subgrupo oculto) se puede extraer de una vez.
+El algoritmo de Shor, que hace que las computadoras cuánticas rompan [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) y ECC, es esencialmente un algoritmo para resolver el "Problema del Subgrupo Oculto (Hidden Subgroup Problem: HSP)". La estructura matemática (grupos abelianos finitos) detrás de RSA y ECC tiene periodicidad, y al usar una operación cuántica específica llamada Transformada Cuántica de Fourier (QFT), este período (el subgrupo oculto) se puede extraer de una vez.
 
 Sin embargo, los problemas de retículos son fundamentalmente diferentes. Aunque los retículos también tienen periodicidad, lo que se busca en SVP y CVP son propiedades geométricas no lineales, como la "distancia más corta" o la "eliminación del ruido". Incluso aplicando directamente la "Transformada Cuántica de Fourier sobre un grupo abeliano" como en el algoritmo de Shor, no se puede extraer eficientemente información útil que resuelva el problema del retículo. Hasta la fecha, no se han descubierto algoritmos cuánticos capaces de resolver SVP o LWE en tiempo polinomial, y se cree ampliamente que, a pesar del poder de cálculo paralelo de las computadoras cuánticas, el único método efectivo es una búsqueda casi exhaustiva (aproximadamente una aceleración de la raíz cuadrada mediante el algoritmo de Grover).
 

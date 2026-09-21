@@ -11,7 +11,7 @@ tags: ["FHE", "Homomorphic Encryption", "Cloud Computing", "Privacy"]
 
 Während Cloud-Computing und KI-Technologien als Grundlage unserer Gesellschaft fest etabliert sind, ist der Kompromiss zwischen "Datenschutz" und "Datennutzung" zu einer der wichtigsten Herausforderungen geworden. Es gibt eine wachsende Nachfrage danach, dass KI hochsensible Daten wie medizinische Daten, Finanzinformationen und persönliche biometrische Daten in der Cloud analysiert. Dennoch zögern viele Unternehmen aus Sicherheitsbedenken, Daten nach außen zu senden.
 
-Herkömmliche Verschlüsselungstechnologien (wie AES und RSA) eignen sich hervorragend zum Schutz von gespeicherten Daten (Data at Rest) oder Daten, die über ein Netzwerk übertragen werden (Data in Transit). **Wenn der Server jedoch Verarbeitungen (Berechnungen) wie Suchen oder maschinelles Lernen an den Daten durchführt (Data in Use), müssen die Daten zuerst entschlüsselt und wieder in Klartext umgewandelt werden.** Wenn der Server in diesem Moment der Entschlüsselung gehackt wird oder ein böswilliger interner Administrator die Daten einsieht, führt dies direkt zu einem Informationsleck.
+Herkömmliche Verschlüsselungstechnologien (wie AES und [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)) eignen sich hervorragend zum Schutz von gespeicherten Daten (Data at Rest) oder Daten, die über ein Netzwerk übertragen werden (Data in Transit). **Wenn der Server jedoch Verarbeitungen (Berechnungen) wie Suchen oder maschinelles Lernen an den Daten durchführt (Data in Use), müssen die Daten zuerst entschlüsselt und wieder in Klartext umgewandelt werden.** Wenn der Server in diesem Moment der Entschlüsselung gehackt wird oder ein böswilliger interner Administrator die Daten einsieht, führt dies direkt zu einem Informationsleck.
 
 Die **vollständig homomorphe Verschlüsselung (Fully Homomorphic Encryption: FHE)** ist eine Traumtechnologie, die diese fundamentale Schwäche der "Entschlüsselung während der Verarbeitung" überwindet. Mit FHE ist es möglich, Berechnungen an Daten durchzuführen, während sie verschlüsselt bleiben, ohne sie jemals zu entschlüsseln, und nur das verschlüsselte Ergebnis an den Client zurückzusenden.
 
@@ -55,7 +55,7 @@ Die homomorphe Verschlüsselung hat ihre aktuelle "vollständige" Form nicht auf
 ### Partially Homomorphic Encryption (PHE: Partiell homomorphe Verschlüsselung)
 PHE ist ein Verschlüsselungsschema, das es erlaubt, **entweder** Addition oder Multiplikation unbegrenzt durchzuführen. Tatsächlich existieren Verschlüsselungen mit dieser Eigenschaft schon seit langer Zeit.
 
-*   **RSA-Verschlüsselung (Homomorphismus bezüglich Multiplikation)**
+*   **[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung (Homomorphismus bezüglich Multiplikation)**
     Die RSA-Verschlüsselung hatte unbeabsichtigt eine multiplikative homomorphe Eigenschaft. Seien $m_1, m_2$ Klartexte und $(e, N)$ der öffentliche Schlüssel:
     $$ E(m_1) = m_1^e \pmod N $$
     $$ E(m_2) = m_2^e \pmod N $$
@@ -259,7 +259,7 @@ Da FHE mittlerweile praktische Geschwindigkeiten erreicht, werden bahnbrechende 
 
 ## 9. Fazit: Die Zukunft der Kryptographie geht hin zu "unsichtbaren Berechnungen"
 
-Genauso wie die Erfindung der Public-Key-Kryptographie (RSA) in den 1970er Jahren die sichere Kommunikation (wie HTTPS) über das Internet ermöglichte, ist die Erfindung von FHE durch Craig Gentry einer der wichtigsten Meilensteine in der Geschichte der Kryptographie.
+Genauso wie die Erfindung der Public-Key-Kryptographie ([RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)) in den 1970er Jahren die sichere Kommunikation (wie HTTPS) über das Internet ermöglichte, ist die Erfindung von FHE durch Craig Gentry einer der wichtigsten Meilensteine in der Geschichte der Kryptographie.
 
 Heute verlässt die vollständig homomorphe Verschlüsselung (FHE) die Forschungslabors und tritt in ein Stadium ein, in dem Microsoft, IBM, Intel, Google und viele Start-ups um die Kommerzialisierung wetteifern. Herausforderungen hinsichtlich der Rechenkosten und der Datengröße bestehen weiterhin, aber durch die Verfeinerung von Algorithmen und die Entwicklung von Hardware-Beschleunigern wird die Leistung in einem Tempo verbessert, das das Mooresche Gesetz übertrifft.
 

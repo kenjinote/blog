@@ -11,7 +11,7 @@ tags: ["Notasi Big O", "Faktorisasi Prima", "Algoritma", "RSA"]
 
 # Pendahuluan: Mengapa Faktorisasi Prima Itu "Sulit"?
 
-Dalam masyarakat internet modern, alasan kita dapat menikmati belanja online dengan aman dan bertukar informasi rahasia adalah berkat keberadaan "teknologi kriptografi". Dan inti yang menopang keamanan teknologi kriptografi tersebut (terutama kriptografi RSA yang banyak digunakan) adalah fakta matematis bahwa "faktorisasi prima dari bilangan bulat yang sangat besar adalah hal yang sangat sulit".
+Dalam masyarakat internet modern, alasan kita dapat menikmati belanja online dengan aman dan bertukar informasi rahasia adalah berkat keberadaan "teknologi kriptografi". Dan inti yang menopang keamanan teknologi kriptografi tersebut (terutama kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) yang banyak digunakan) adalah fakta matematis bahwa "faktorisasi prima dari bilangan bulat yang sangat besar adalah hal yang sangat sulit".
 
 Sekilas, faktorisasi prima mungkin terlihat seperti tugas sederhana yaitu "sekadar memecah bilangan menjadi perkalian bilangan-bilangan prima", tetapi ketika jumlah digitnya menjadi sangat besar, ini berubah menjadi masalah super sulit yang bahkan tidak dapat dipecahkan oleh superkomputer tercepat di dunia meskipun dijalankan selama puluhan atau ratusan tahun. Faktorisasi prima yang biasa kita pelajari di sekolah paling-paling hanyalah proses sederhana dengan membagi menggunakan $2$, $3$, atau $5$, namun ketika dihadapkan pada perkalian antara bilangan-bilangan prima tak dikenal yang panjangnya mencapai ratusan digit, pendekatan sederhana tersebut akan hancur sepenuhnya.
 
@@ -94,7 +94,7 @@ Saya harap Anda sekarang mengerti betapa pentingnya perbedaan kompleksitas waktu
 
 ---
 
-# Cara Kerja Kriptografi RSA dan Masalah Faktorisasi Prima
+# Cara Kerja Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan Masalah Faktorisasi Prima
 
 Untuk memahami mengapa faktorisasi prima itu penting, mari kita tinjau secara singkat bagaimana kriptografi RSA bekerja. Kriptografi RSA adalah sistem kriptografi kunci publik yang dikembangkan pada tahun 1977 oleh tiga orang: Ronald Rivest, Adi Shamir, dan Leonard Adleman.
 
@@ -165,7 +165,7 @@ Dinyatakan dalam ukuran input $n = \log_2 N$:
 $$ N^{1/4} = (2^n)^{1/4} = 2^{n/4} $$
 
 Oleh karena itu, kompleksitas waktunya adalah **$\mathcal{O}(2^{n/4})$**.
-Dibandingkan dengan $\mathcal{O}(2^{n/2})$ pada pembagian percobaan, kecepatan ini telah meningkat drastis, dan secara praktis sangat kuat untuk memfaktorkan bilangan berskala menengah (puluhan digit). Namun, ia masih belum mampu melampaui dinding "waktu eksponensial" terhadap panjang bit $n$, dan tidak berdaya melawan angka raksasa sebesar 2048 bit (sekitar 600 digit desimal) seperti yang digunakan dalam kriptografi RSA.
+Dibandingkan dengan $\mathcal{O}(2^{n/2})$ pada pembagian percobaan, kecepatan ini telah meningkat drastis, dan secara praktis sangat kuat untuk memfaktorkan bilangan berskala menengah (puluhan digit). Namun, ia masih belum mampu melampaui dinding "waktu eksponensial" terhadap panjang bit $n$, dan tidak berdaya melawan angka raksasa sebesar 2048 bit (sekitar 600 digit desimal) seperti yang digunakan dalam kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/).
 
 ## 4. Saringan Kuadrat Polinomial Berganda (MPQS: Multiple Polynomial Quadratic Sieve)
 
@@ -186,7 +186,7 @@ Saringan kuadrat adalah algoritma tercepat di dunia hingga munculnya saringan me
 
 Saat ini, apa yang dianggap sebagai "tercepat di dunia" dalam faktorisasi bilangan bulat raksasa yang lebih dari 100 digit adalah **Saringan Medan Angka Umum (GNFS)**. Ditemukan pada akhir tahun 1980-an, ini merupakan algoritma tingkat lanjut yang memanfaatkan hasil mendalam dari teori bilangan aljabar (medan angka), memperluas metode saringan kuadrat.
 
-Dalam serangan terhadap kriptografi RSA (faktorisasi prima dari kunci publik), GNFS inilah yang selalu memecahkan rekor dunia baru. Pada tahun 2020, dilaporkan adanya keberhasilan dalam memfaktorkan bilangan komposit sebesar 829 bit (250 digit) (RSA-250), tetapi ini membutuhkan pengoperasian paralel ribuan komputer selama jangka waktu yang lama.
+Dalam serangan terhadap kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) (faktorisasi prima dari kunci publik), GNFS inilah yang selalu memecahkan rekor dunia baru. Pada tahun 2020, dilaporkan adanya keberhasilan dalam memfaktorkan bilangan komposit sebesar 829 bit (250 digit) (RSA-250), tetapi ini membutuhkan pengoperasian paralel ribuan komputer selama jangka waktu yang lama.
 
 ### Struktur Matematis dari Algoritma
 GNFS sangat rumit, tetapi secara kasar berjalan dengan langkah-langkah berikut.
@@ -240,7 +240,7 @@ Masalah yang belum terpecahkan terbesar dalam ilmu komputer adalah "Masalah P = 
 Masalah faktorisasi prima masuk dalam kelas NP (kelas masalah di mana jika diberikan jawaban, kebenarannya dapat diverifikasi dalam waktu polinomial), tetapi belum terbukti sebagai [NP-complet](https://kenji.blog/id/p/p-vs-np-problem/)e (kelas masalah yang paling sulit di dalam NP).
 Selain itu, masih belum terpecahkan juga apakah masalah tersebut masuk ke dalam kelas P (kelas masalah yang dapat diselesaikan dalam waktu polinomial) atau tidak (yaitu apakah ada algoritma waktu polinomial).
 
-Banyak peneliti memperkirakan bahwa faktorisasi prima masuk ke dalam kelas perantara antara P dan NP-complete (NP-intermediate). Jika suatu algoritma yang dapat menyelesaikan faktorisasi prima pada komputer klasik dalam waktu polinomial (misalnya, $\mathcal{O}(n^3)$) ditemukan, hal itu akan menjadi peristiwa besar yang menghancurkan sistem kriptografi di seluruh dunia. Namun, hingga saat ini, belum ada algoritma semacam itu yang ditemukan. Untuk memecahkan kriptografi RSA 2048 bit, diperkirakan butuh waktu yang lebih lama dari umur alam semesta, bahkan jika kinerja komputer klasik meningkat sesuai dengan Hukum Moore.
+Banyak peneliti memperkirakan bahwa faktorisasi prima masuk ke dalam kelas perantara antara P dan NP-complete (NP-intermediate). Jika suatu algoritma yang dapat menyelesaikan faktorisasi prima pada komputer klasik dalam waktu polinomial (misalnya, $\mathcal{O}(n^3)$) ditemukan, hal itu akan menjadi peristiwa besar yang menghancurkan sistem kriptografi di seluruh dunia. Namun, hingga saat ini, belum ada algoritma semacam itu yang ditemukan. Untuk memecahkan kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) 2048 bit, diperkirakan butuh waktu yang lebih lama dari umur alam semesta, bahkan jika kinerja komputer klasik meningkat sesuai dengan Hukum Moore.
 
 ## Komputer Kuantum sang "Pengubah Permainan": Algoritma Shor
 
@@ -268,7 +268,7 @@ graph LR
 ```
 
 Dalam Algoritma Shor, proses "penemuan periode (period finding)" yang menjadi hambatan (bottleneck) pada algoritma klasik, dapat dihitung secara instan dan paralel oleh "Transformasi Fourier Kuantum (QFT)" yang menggunakan keterikatan kuantum dan superposisi kuantum.
-Jika nanti dapat dieksekusi pada komputer kuantum skala praktis (dengan noise rendah dan memiliki jumlah qubit logis yang memadai), kriptografi RSA 2048-bit yang saat ini dianggap aman berpotensi dapat dipecahkan sepenuhnya dalam waktu beberapa jam hingga beberapa hari.
+Jika nanti dapat dieksekusi pada komputer kuantum skala praktis (dengan noise rendah dan memiliki jumlah qubit logis yang memadai), kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) 2048-bit yang saat ini dianggap aman berpotensi dapat dipecahkan sepenuhnya dalam waktu beberapa jam hingga beberapa hari.
 
 Untuk bersiap menghadapi ancaman ini, ahli kriptografi di seluruh dunia dan NIST (Institut Standar dan Teknologi Nasional AS) saat ini mempercepat proses standardisasi menuju transisi ke "Kriptografi Pasca-Kuantum (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy: PQC)" yang sulit untuk dipecahkan bahkan oleh komputer kuantum sekalipun. Kriptografi berbasis kisi (Lattice-based cryptography) adalah salah satu contoh yang representatif, di mana mereka mendasarkan keamanan pada kesulitan matematis yang sama sekali berbeda dengan masalah faktorisasi prima (contohnya masalah vektor terpendek).
 
@@ -281,7 +281,7 @@ Dalam artikel ini, kita telah membahas secara mendalam dan terperinci, mulai dar
 * **Notasi Big O ($\mathcal{O}$)** adalah indikator penting yang menunjukkan laju peningkatan jumlah langkah komputasi terhadap peningkatan ukuran input $n$, dan terdapat pembatas (dinding) raksasa yang praktis tidak dapat dilampaui di antara waktu polinomial dan waktu eksponensial.
 * **Pembagian Percobaan** dan **Algoritma $\rho$ Pollard** murni merupakan algoritma "waktu eksponensial", dan sama sekali tak berdaya ketika menghadapi angka yang sangat besar.
 * Algoritma klasik tercepat saat ini, **Saringan Medan Angka Umum (GNFS)**, mencapai "waktu sub-eksponensial" dengan memanfaatkan kemajuan teori bilangan aljabar tingkat lanjut, tetapi ia masih belum mencapai waktu polinomial, sehingga untuk memfaktorkan bilangan besar masih memerlukan waktu yang astronomis.
-* Fakta bahwa **"tidak ada algoritma klasik (atau diduga kuat tidak ada) yang bisa memecahkannya dalam waktu polinomial"** inilah yang menjadi penjamin keamanan kriptografi RSA, yang menopang masyarakat digital modern kita.
+* Fakta bahwa **"tidak ada algoritma klasik (atau diduga kuat tidak ada) yang bisa memecahkannya dalam waktu polinomial"** inilah yang menjadi penjamin keamanan kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), yang menopang masyarakat digital modern kita.
 * Namun, berkat kehadiran **komputer kuantum dan Algoritma Shor**, secara teoritis faktorisasi prima kini dimungkinkan dalam waktu polinomial, dan teknologi kriptografi sedang bergeser ke era baru (Kriptografi Pasca-Kuantum).
 
 Fakta bahwa konsep abstrak dari sebuah kompleksitas waktu sebuah algoritma terhubung langsung dengan keamanan hidup kita adalah salah satu sisi ilmu komputer dan matematika yang paling mendebarkan dan mempesona. Silakan terus pantau kemajuan teknologi di masa mendatang, terutama tren pengembangan komputer kuantum dan pergeseran dalam teknologi kriptografi.

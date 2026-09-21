@@ -413,7 +413,7 @@ QUIC的真正价值不仅限于实现HTTP/3。作为一种“高性能且安全�
 
 本文深入探讨了HTTP/3和QUIC协议，从TCP的局限性到向UDP的范式转移、队头阻塞的解决、连接建立的加速，直至实现与运维的挑战。
 
-*   **TCP的局限性:** 由于顺序保证引起的队头阻塞、握手延迟、以及对IP地址变更的脆弱性。
+*   **TCP的局限性:** 由于顺序保证引起的队头阻塞、握手延迟、以及对IP地址变更的[脆弱性](https://kenji.blog/zh-cn/p/web-application-vulnerability-owasp-top-10/)。
 *   **QUIC的革新:** 基于UDP，在用户空间实现了流多路复用、TLS 1.3的整合以及通过连接ID的连接迁移。
 *   **HTTP/3:** 针对QUIC特性进行优化的QPACK等新HTTP规范。
 

@@ -11,20 +11,20 @@ description: 'Slack AppのOAuthトークンを利用して、Slack Web API経由
 
 ## ✅ アクセストークンを使う投稿方法（Slack Web API）
 
-Slackの「OAuth Token（xoxb-〜 など）」は、Slackの [Web API](https://api.slack.com/methods/chat.postMessage) を使って投稿するためのキーです。
+Slackの「[OAuth](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/) Token（xoxb-〜 など）」は、Slackの [Web API](https://api.slack.com/methods/chat.postMessage) を使って投稿するためのキーです。
 この場合、Webhookとは違い **Slack API エンドポイント** に `Authorization: Bearer` ヘッダー付きで `POST` します。
 
 ---
 
 ## 🔑 必要な前提
 
-Slackアプリで **OAuthスコープに `chat:write`** を含める必要があります：
+Slackアプリで **[OAuth](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)スコープに `chat:write`** を含める必要があります：
 
 ### 設定手順
 
 1. [https://api.slack.com/apps](https://api.slack.com/apps) にアクセス
 2. アプリ作成 or 既存アプリを選択
-3. 「OAuth & Permissions」 > `Scopes` にて
+3. 「[OAuth](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/) & Permissions」 > `Scopes` にて
    → `chat:write` を追加
 4. 「Install to Workspace」または「Reinstall」して `Access Token` を取得（例: `xoxb-xxxxxxxxxx`）
 

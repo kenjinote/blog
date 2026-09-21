@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-$x$ und $y$ können durch den erweiterten euklidischen Algorithmus konkret berechnet werden, der zu einem unverzichtbaren Grundlagen-Theorem in der modernen Kryptographie (wie RSA) geworden ist. In Kontexten, die Wert auf historische Genauigkeit legen, wird dies manchmal als **Satz von [Bachet](https://kenji.blog/de/p/bachet/)** bezeichnet.
+$x$ und $y$ können durch den erweiterten euklidischen Algorithmus konkret berechnet werden, der zu einem unverzichtbaren Grundlagen-Theorem in der modernen Kryptographie (wie [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)) geworden ist. In Kontexten, die Wert auf historische Genauigkeit legen, wird dies manchmal als **Satz von [Bachet](https://kenji.blog/de/p/bachet/)** bezeichnet.
 
 ## Fazit
 

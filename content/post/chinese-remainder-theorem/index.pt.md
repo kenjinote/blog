@@ -14,7 +14,7 @@ tags:
 
 ## Introdução
 
-O Teorema Chinês do Resto ([Chinese Remainder Theorem](https://kenji.blog/pt/p/chinese-remainder-theorem/), abreviado CRT) é um dos teoremas mais importantes e belos da teoria dos números. As suas origens remontam ao "Sunzi Suanjing", um antigo livro de matemática chinês compilado entre os séculos III e V. Este teorema, que começou com simples problemas aritméticos na antiguidade, desempenha hoje, milhares de anos depois, um papel essencial nas tecnologias de criptografia de chave pública, como a **Criptografia RSA**, que suportam as comunicações seguras na internet que utilizamos diariamente.
+O Teorema Chinês do Resto ([Chinese Remainder Theorem](https://kenji.blog/pt/p/chinese-remainder-theorem/), abreviado CRT) é um dos teoremas mais importantes e belos da teoria dos números. As suas origens remontam ao "Sunzi Suanjing", um antigo livro de matemática chinês compilado entre os séculos III e V. Este teorema, que começou com simples problemas aritméticos na antiguidade, desempenha hoje, milhares de anos depois, um papel essencial nas tecnologias de criptografia de chave pública, como a **Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)**, que suportam as comunicações seguras na internet que utilizamos diariamente.
 
 Neste artigo, explicaremos detalhadamente este **Teorema Chinês do Resto**, desde o seu contexto histórico, definições matemáticas rigorosas e procedimentos de cálculo específicos, até às suas aplicações na teoria da criptografia moderna, acompanhados de diagramas e exemplos concretos.
 
@@ -140,7 +140,7 @@ graph TD
    $M_q = C^{d_q} \pmod q$
 3. O CRT é aplicado a $M_p$ e $M_q$ para obter $M \pmod N$.
 
-Quando o módulo fica com metade do tamanho em bits (por exemplo, 1024 bits), o custo do cálculo da exponenciação diminui para cerca de 1/8. Fazer isto duas vezes resulta num custo total de cerca de 1/4; logo, o uso de RSA-CRT pode tornar a decifragem e a geração de assinaturas **cerca de 4 vezes mais rápidas**. Em dispositivos com recursos computacionais limitados, como smartphones ou cartões inteligentes, esta aceleração é crucial.
+Quando o módulo fica com metade do tamanho em bits (por exemplo, 1024 bits), o custo do cálculo da exponenciação diminui para cerca de 1/8. Fazer isto duas vezes resulta num custo total de cerca de 1/4; logo, o uso de [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)-CRT pode tornar a decifragem e a geração de assinaturas **cerca de 4 vezes mais rápidas**. Em dispositivos com recursos computacionais limitados, como smartphones ou cartões inteligentes, esta aceleração é crucial.
 
 ## Implementação em Programação do Teorema Chinês do Resto
 

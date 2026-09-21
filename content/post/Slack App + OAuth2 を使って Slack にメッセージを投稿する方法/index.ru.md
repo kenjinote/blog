@@ -11,20 +11,20 @@ description: 'Объясняется, как отправлять сообщен
 
 ## ✅ Как отправлять сообщения с использованием токена доступа (Slack Web API)
 
-«OAuth Token (например, xoxb- и т.д.)» от Slack — это ключ для публикации сообщений с помощью [Web API](https://api.slack.com/methods/chat.postMessage) от Slack.
+«[OAuth](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) Token (например, xoxb- и т.д.)» от Slack — это ключ для публикации сообщений с помощью [Web API](https://api.slack.com/methods/chat.postMessage) от Slack.
 В этом случае, в отличие от Webhook, вы выполняете `POST` запрос к **конечной точке API Slack** с заголовком `Authorization: Bearer`.
 
 ---
 
 ## 🔑 Необходимые условия
 
-Вы должны включить **`chat:write` в область действия OAuth** в вашем приложении Slack:
+Вы должны включить **`chat:write` в область действия [OAuth](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/)** в вашем приложении Slack:
 
 ### Шаги настройки
 
 1. Перейдите на [https://api.slack.com/apps](https://api.slack.com/apps)
 2. Создайте приложение или выберите существующее
-3. В «OAuth & Permissions» > `Scopes`
+3. В «[OAuth](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) & Permissions» > `Scopes`
    → Добавьте `chat:write`
 4. Выполните «Install to Workspace» или «Reinstall», чтобы получить `Access Token` (например: `xoxb-xxxxxxxxxx`)
 

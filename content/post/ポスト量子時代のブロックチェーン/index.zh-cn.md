@@ -12,7 +12,7 @@ description: '量子计算机惊人的计算能力将动摇区块链的根基，
 
 ## 1. 引言：后量子时代的脚步声与区块链的危机
 
-自2009年中本聪（Satoshi Nakamoto）创造[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)（[Bitcoin](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)）以来，区块链技术作为“去中心化且不可篡改的账本”，已成长为全球金融系统和应用程序的基础设施。支撑这种坚如磐石的安全性的是 **公钥密码学（Public Key [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）** 和 **密码学哈希函数（[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphic Hash Functions）** 等现代密码技术。
+自2009年中本聪（Satoshi Nakamoto）创造[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)（[Bitcoin](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)）以来，区块链技术作为“去中心化且不可篡改的账本”，已成长为全球金融系统和应用程序的基础设施。支撑这种坚如磐石的安全性的是 **公钥密码学（[Public Key](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）** 和 **密码学哈希函数（[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)s）** 等现代密码技术。
 
 这些密码技术保证安全性的依据是数学上的“计算困难性”，即使用经典计算机（我们现在使用的个人电脑和超级计算机），即使花费宇宙寿命般漫长的时间也无法破解。
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. 椭圆曲线密码学（ECDSA）的基础与计算困难性
 
-包括[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)和以太坊（Ethereum）在内的许多区块链，都采用了 **椭圆曲线数字签名算法（ECDSA：Elliptic Curve Digital Signature Algorithm）** 作为其数字签名算法。具体而言，[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)使用的是参数名为 `secp256k1` 的椭圆曲线。
+包括[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)和以太坊（Ethereum）在内的许多区块链，都采用了 **椭圆曲线数字签名算法（ECDSA：Elliptic Curve [Digital Signature](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) Algorithm）** 作为其数字签名算法。具体而言，[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)使用的是参数名为 `secp256k1` 的椭圆曲线。
 
 椭圆曲线密码学的安全性依赖于 **椭圆曲线离散对数问题（ECDLP：Elliptic Curve Discrete Logarithm Problem）** 的计算困难性。
 椭圆曲线由以下Weierstrass标准形式的方程定义：
@@ -62,7 +62,7 @@ $$
 
 ### 2.2. Shor算法（[Shor's Algorithm](https://kenji.blog/zh-cn/p/quantum-computing-shors-algorithm/)）导致的崩溃
 
-然而，彼得·肖尔（Peter Shor）在1994年提出的 **Shor算法** 彻底打破了这一前提。Shor算法最初是为了在多项式时间内解决整数分解问题（RSA密码的基础）而提出的，但它同样适用于离散对数问题和椭圆曲线离散对数问题。
+然而，彼得·肖尔（Peter Shor）在1994年提出的 **Shor算法** 彻底打破了这一前提。Shor算法最初是为了在多项式时间内解决整数分解问题（[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码的基础）而提出的，但它同样适用于离散对数问题和椭圆曲线离散对数问题。
 
 Shor算法的核心在于利用 **量子傅里叶变换（QFT：Quantum Fourier Transform）** 来快速找到函数的“周期（Period）”。
 
@@ -112,7 +112,7 @@ $$
 
 另一个威胁是洛夫·格罗弗（Lov Grover）在1996年提出的 **Grover算法** 。这会对哈希函数（例如：SHA-256）产生重大影响。
 
-在区块链中，哈希函数被用于保证数据的完整性、生成地址，以及作为[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/) **PoW（工作量证明）挖矿** 的基础。哈希函数的反向计算（原像计算）可以被视为一个“非结构化数据库搜索问题”，即寻找一个输入值 $x$，使得 $H(x)$ 等于某个特定的输出值 $y$。
+在区块链中，哈希函数被用于保证数据的完整性、生成地址，以及作为[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/) **[PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)（工作量证明）挖矿** 的基础。哈希函数的反向计算（原像计算）可以被视为一个“非结构化数据库搜索问题”，即寻找一个输入值 $x$，使得 $H(x)$ 等于某个特定的输出值 $y$。
 
 在经典计算机中，要从 $N$ 个可能性中找到正确答案，平均需要 $\frac{N}{2}$ 次尝试，最坏情况下需要 $N$ 次尝试。即计算复杂度为 $\mathcal{O}(N)$。
 然而，Grover算法使用了一种称为“振幅放大（Amplitude Amplification）”的量子技术。通过迭代放大处于叠加态的所有可能性中正确答案状态的概率振幅，将搜索时间缩短到其平方根。
@@ -311,7 +311,7 @@ pie title 区块链中签名数据大小比较 (概念图)
 ### 阶段2：利用零知识证明（ZK-Rollups）（2025年〜）
 作为解决PQC最大弱点——“签名数据膨胀”的王牌，业界寄希望于Layer 2技术的 **ZK-Rollups（零知识证明）** 。
 不是将庞大的PQC签名数据直接写入Layer 1（主链），而是在Layer 2上验证并汇总大量PQC交易。然后，使用ZK-SNARKs或ZK-STARKs将它们压缩成一个极小的“证明数据（Proof）”，再将其记录到Layer 1中。
-需要注意的是，部分SNARKs的构造（如Groth16等）本身也具有量子脆弱性，因此采用仅依赖具有抗量子能力的哈希函数的 **ZK-STARKs** 将成为关键。
+需要注意的是，部分SNARKs的构造（如Groth16等）本身也具有量子[脆弱性](https://kenji.blog/zh-cn/p/web-application-vulnerability-owasp-top-10/)，因此采用仅依赖具有抗量子能力的哈希函数的 **ZK-STARKs** 将成为关键。
 
 ### 阶段3：协议层面的硬分叉（2030年左右）
 当NIST的PQC标准化完全落地，行业标准库也已齐备并经过充分测试后，预计[Bitcoin](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)和Ethereum等主流公链将进行硬分叉，把默认的签名方式完全迁移到PQC。在这一过渡期，各方将会进行大规模的宣发，呼吁用户“将资金从旧钱包转移到支持PQC的新钱包”。
@@ -337,7 +337,7 @@ Shor算法和Grover算法这两把量子计算机的利剑，分别威胁着当�
 * **避免地址重用** ：不仅出于隐私保护的考量，更应从安全性出发，坚决不在“已使用的地址（哪怕只发送过一次资金，公钥已暴露在区块链上的地址）”中长期存放资金。
 * **关注技术动向** ：时刻留意主要网络关于PQC迁移的讨论或硬分叉新闻（如[Bitcoin](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)的BIP、Ethereum的EIP等），确保在需要时能妥善完成钱包的迁移工作。
 
-区块链的历史，也是一部不断应对新技术威胁进行升级与自我修复（Resilience）的历史。正如克服可扩展性问题和环境问题（从PoW转向PoS等）一样，面对这前所未有的量子威胁，整个生态系统也定会摸索出解决方案并成功适应。
+区块链的历史，也是一部不断应对新技术威胁进行升级与自我修复（Resilience）的历史。正如克服可扩展性问题和环境问题（从[PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)转向[PoS](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)等）一样，面对这前所未有的量子威胁，整个生态系统也定会摸索出解决方案并成功适应。
 我们有理由期待，量子计算机这一人类新智慧的结晶，与去中心化分布式账本这一信任技术的碰撞，将不会走向毁灭，而是升华为更高维度、更加坚不可摧的融合系统。
 
 ---

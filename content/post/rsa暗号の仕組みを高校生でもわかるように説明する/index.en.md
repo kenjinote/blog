@@ -9,7 +9,7 @@ categories: ["mathematics", "cryptography"]
 tags: ["RSA", "Prime Numbers", "Math", "Cryptography"]
 ---
 
-One of the technologies supporting the safety of our internet society from the ground up is "RSA Encryption". Many of the communications we casually use every day, such as credit card payments in online shopping, SNS exchanges with friends, and the transmission/reception of company confidential information, are protected by this RSA encryption and its successor technologies.
+One of the technologies supporting the safety of our internet society from the ground up is "[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Encryption". Many of the communications we casually use every day, such as credit card payments in online shopping, SNS exchanges with friends, and the transmission/reception of company confidential information, are protected by this RSA encryption and its successor technologies.
 
 However, when you hear the word "cryptography", you might imagine complex cipher machines like those in spy movies, or super advanced mathematics that only a few geniuses can understand. It is true that modern cryptographic theory is based on advanced mathematics, but **the fundamental mechanism of RSA encryption can be fully understood if you have the knowledge of high school mathematics (properties of integers, prime numbers, congruences, etc.)**.
 
@@ -19,7 +19,7 @@ In this article, taking high school math knowledge as a starting point, I will t
 
 ## 1. Symmetric-key and Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-Before getting into the mathematical mechanisms of RSA encryption, let's first organize the basic ideas of cryptography. [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic methods can be broadly divided into two types: "Symmetric-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" and "Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy".
+Before getting into the mathematical mechanisms of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption, let's first organize the basic ideas of cryptography. [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic methods can be broadly divided into two types: "Symmetric-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" and "Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy".
 
 ### 1.1 Limitations of Symmetric-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
@@ -31,7 +31,7 @@ There is a major problem with this method. It is the "key distribution problem".
 
 ### 1.2 The Breakthrough Invention: "Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy"
 
-"Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" was invented to solve this key distribution problem. RSA encryption is also one of this kind.
+"Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" was invented to solve this key distribution problem. [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption is also one of this kind.
 
 In public-key cryptography, we use **two different keys: a "key for encryption (public key)" and a "key for decryption (private key)"**.
 
@@ -58,7 +58,7 @@ In order to realize this epoch-making system, a kind of **"one-way function (a o
 
 ---
 
-## 2. The Mathematical Foundation Supporting RSA 1: Prime Numbers and Prime Factorization
+## 2. The Mathematical Foundation Supporting [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) 1: Prime Numbers and Prime Factorization
 
 The security of RSA encryption is based on the mathematical fact that **"prime factorization of huge numbers is extremely difficult."**
 
@@ -135,7 +135,7 @@ $$ \phi(p) = p - 1 $$
 **[Special Property in the Case of the Product of Prime Numbers]**
 For two distinct prime numbers $p$ and $q$, if $N = p \times q$, $\phi(N)$ can be easily calculated as follows.
 $$ \phi(N) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-This property functions as the "secret backdoor (trapdoor)" in RSA encryption. The person who knows $p$ and $q$ (the creator of the key) can calculate $\phi(N)$ instantly, but a third party who only knows $N$ cannot determine $\phi(N)$ unless they prime factorize $N$.
+This property functions as the "secret backdoor (trapdoor)" in [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption. The person who knows $p$ and $q$ (the creator of the key) can calculate $\phi(N)$ instantly, but a third party who only knows $N$ cannot determine $\phi(N)$ unless they prime factorize $N$.
 
 ### 4.2 Euler's Theorem
 
@@ -153,7 +153,7 @@ $$ a^{\phi(N) + 1} \equiv a \pmod N $$
 Furthermore, for any integer $k$, since $a^{k \cdot \phi(N)}$ also becomes $1^k = 1$, the following equation holds.
 $$ a^{k \cdot \phi(N) + 1} \equiv a \pmod N $$
 
-This very equation is the fundamental principle that makes the magic of RSA encryption work: **"If you encrypt and then decrypt, it returns to the original."**
+This very equation is the fundamental principle that makes the magic of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption work: **"If you encrypt and then decrypt, it returns to the original."**
 
 ---
 
@@ -188,7 +188,7 @@ The receiver, Bob, generates a "public key" and a "private key" for himself.
 1. **Choice of Primes:** Randomly choose two large prime numbers $p$ and $q$.
 2. **Calculation of Modulus $N$:** Calculate $N = p \times q$. This $N$ is made public.
 3. **Calculation of $\phi(N)$:** Calculate Euler's function $\phi(N) = (p - 1)(q - 1)$. This is a secret number only Bob knows.
-4. **Choice of Public Key $e$:** Choose an integer $e$ such that $1 < e < \phi(N)$ and $e$ is coprime with $\phi(N)$.
+4. **Choice of [Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) $e$:** Choose an integer $e$ such that $1 < e < \phi(N)$ and $e$ is coprime with $\phi(N)$.
 5. **Calculation of Private Key $d$:** Find an integer $d$ that satisfies the following condition.
    $$ e \times d \equiv 1 \pmod{\phi(N)} $$
    In other words, this is "a number $d$ such that the remainder is $1$ when $e \times d$ is divided by $\phi(N)$."
@@ -238,7 +238,7 @@ Alice does not know $d$, and an eavesdropper does not know $d$ either, so only B
 
 ---
 
-## 7. Concrete Example: Experiencing RSA by Hand Calculation Using Small Primes
+## 7. Concrete Example: Experiencing [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) by Hand Calculation Using Small Primes
 
 Let's actually try encrypted communication from Alice to Bob using small numbers (prime numbers).
 
@@ -281,7 +281,7 @@ In the world of modulo $120$, $-17$ has the same meaning as $120 - 17 = 103$. Th
 
 ---
 
-## 9. Another Face of RSA Encryption: Digital Signatures
+## 9. Another Face of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Encryption: [Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s
 
 The wonderful thing about RSA encryption is that it can also be used as a **"digital signature"** by reversing the roles of the public and private keys.
 
@@ -302,7 +302,7 @@ Alice transforms the message using her own private key $d$ (this is the signatur
 
 ---
 
-## 10. Experiencing RSA Encryption with Programming
+## 10. Experiencing [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Encryption with Programming
 
 Exponentiation calculations that are tough by hand can be implemented very easily using Python. Below is a Python code that lets you experience the core logic of RSA encryption.
 
@@ -342,7 +342,7 @@ Python's `pow(base, exp, mod)` function internally uses a fast algorithm called 
 
 ## 11. Conclusion and Future [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic Technology
 
-Based on the knowledge of high school mathematics, we have uncovered how RSA encryption works.
+Based on the knowledge of high school mathematics, we have uncovered how [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption works.
 
 1. **Difficulty of Prime Factorization:** $p \times q = N$ is easy, but finding $p, q$ from $N$ is extremely difficult.
 2. **Congruence and Euler's Theorem:** With the rule $a^{\phi(N)} \equiv 1 \pmod N$, the magic trapdoor "raising to a certain power brings it back to the original" is completed.

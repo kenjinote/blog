@@ -11,11 +11,11 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 ## 1. Introduction: The Mystery of Mathematics Supporting Modern [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-In modern digital society, especially in communication over the Internet, "encryption" has become an indispensable foundational technology. The reason we can securely browse websites via HTTPS, perform financial transactions through online banking, and exchange private messages on messaging apps is because cryptographic protocols backed by highly advanced mathematical theories are working behind the scenes. Among them, "Public-Key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" plays a particularly important role, and its prime representative is **RSA cryptography**.
+In modern digital society, especially in communication over the Internet, "encryption" has become an indispensable foundational technology. The reason we can securely browse websites via HTTPS, perform financial transactions through online banking, and exchange private messages on messaging apps is because cryptographic protocols backed by highly advanced mathematical theories are working behind the scenes. Among them, "Public-Key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" plays a particularly important role, and its prime representative is **[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography**.
 
 The security and correctness of many cryptographic algorithms, including RSA cryptography, depend heavily on a very beautiful and powerful theorem discovered by the 17th-century French mathematician [Pierre de Fermat](https://kenji.blog/en/p/fermat/). That is **[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)**. Furthermore, [Leonhard Euler](https://kenji.blog/en/p/euler/)'s theorem, which generalizes this, also plays a decisive role in cryptographic theory.
 
-In this article, we will thoroughly explain from the basics how the pure mathematical discovery of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) is applied to modern practical cryptographic technologies, especially "primality testing" and "RSA cryptography". This will be a highly detailed technical guide covering mathematical proofs, encryption and decryption mechanisms, and specific algorithm implementations using C++ and Python.
+In this article, we will thoroughly explain from the basics how the pure mathematical discovery of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) is applied to modern practical cryptographic technologies, especially "primality testing" and "[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography". This will be a highly detailed technical guide covering mathematical proofs, encryption and decryption mechanisms, and specific algorithm implementations using C++ and Python.
 
 ---
 
@@ -42,7 +42,7 @@ In modular arithmetic, normal basic arithmetic operations (addition, subtraction
 3. **Multiplication**: If $a \equiv b \pmod n$ and $c \equiv d \pmod n$, then $a \times c \equiv b \times d \pmod n$
 4. **Exponentiation**: If $a \equiv b \pmod n$, then for any natural number $k$, $a^k \equiv b^k \pmod n$
 
-However, care must be taken with **division**. In general, just because $a \times c \equiv b \times c \pmod n$, you cannot divide both sides by $c$ to get $a \equiv b \pmod n$. This only holds true when $c$ and $n$ are coprime (their greatest common divisor is 1). This concept of "modular inverse" becomes extremely important in the key generation of RSA cryptography discussed later.
+However, care must be taken with **division**. In general, just because $a \times c \equiv b \times c \pmod n$, you cannot divide both sides by $c$ to get $a \equiv b \pmod n$. This only holds true when $c$ and $n$ are coprime (their greatest common divisor is 1). This concept of "modular inverse" becomes extremely important in the key generation of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography discussed later.
 
 ---
 
@@ -112,7 +112,7 @@ This is the proof of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-l
 
 ## 4. Euler's Totient Function and Euler's Theorem
 
-[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) is a theorem concerning "prime numbers $p$", but it was [Leonhard Euler](https://kenji.blog/en/p/euler/) who generalized this to "any positive integer $n$". This extension is essential for understanding RSA cryptography.
+[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) is a theorem concerning "prime numbers $p$", but it was [Leonhard Euler](https://kenji.blog/en/p/euler/) who generalized this to "any positive integer $n$". This extension is essential for understanding [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography.
 
 ### 4.1 Euler's Totient Function $\phi(n)$
 
@@ -138,7 +138,7 @@ If $n$ is a prime number $p$, then $\phi(p) = p - 1$, so this becomes [Fermat's 
 
 ## 5. Finding Giant Prime Numbers: [Fermat](https://kenji.blog/en/p/fermat/) Primality Test
 
-In cryptographic technologies (such as RSA cryptography and Diffie-Hellman key exchange), it is necessary to find "giant prime numbers" spanning hundreds of digits at high speed. However, to test whether a giant number $N$ is prime, checking if it is divisible by every number from $2$ to $\sqrt{N}$ (trial division) would take as long as the lifespan of the universe.
+In cryptographic technologies (such as [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography and Diffie-Hellman key exchange), it is necessary to find "giant prime numbers" spanning hundreds of digits at high speed. However, to test whether a giant number $N$ is prime, checking if it is divisible by every number from $2$ to $\sqrt{N}$ (trial division) would take as long as the lifespan of the universe.
 
 This is where the **[Fermat](https://kenji.blog/en/p/fermat/) Primality Test** comes in, a "probabilistic primality test" that takes advantage of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/).
 
@@ -281,16 +281,16 @@ else:
 
 ---
 
-## 7. Application to RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: Where [Fermat](https://kenji.blog/en/p/fermat/) and Euler Bear Fruit
+## 7. Application to [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: Where [Fermat](https://kenji.blog/en/p/fermat/) and Euler Bear Fruit
 
-The greatest application of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) (and Euler's Theorem) is **RSA cryptography**, developed in 1977 by Rivest, Shamir, and Adleman.
+The greatest application of [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) (and Euler's Theorem) is **[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography**, developed in 1977 by Rivest, Shamir, and Adleman.
 RSA cryptography is an epoch-making system called "public-key cryptography", realizing a mechanism where the key for encryption (public key) is published to the whole world, while the key for decryption (private key) is known only to the receiver themselves.
 
 This asymmetry is based on the computational security that "factorizing a giant composite number into its prime factors is extremely difficult."
 
 ### 7.1 Mechanism of RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (Key Generation, Encryption, Decryption)
 
-Let's check the overall communication flow of RSA cryptography with a Mermaid sequence diagram.
+Let's check the overall communication flow of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography with a Mermaid sequence diagram.
 
 ```mermaid
 sequenceDiagram
@@ -356,7 +356,7 @@ $$ e \cdot d = 1 + k \cdot \phi(N) $$
 Substitute this into the above equation:
 $$ M^{ed} = M^{1 + k \cdot \phi(N)} = M \cdot M^{k \cdot \phi(N)} = M \cdot (M^{\phi(N)})^k \pmod N $$
 
-Here, **Euler's Theorem** ($M^{\phi(N)} \equiv 1 \pmod N$) comes into play. (*Strictly speaking, $M$ and $N$ need to be coprime, but in RSA, the probability that $M$ and $N$ are not coprime is astronomically low, and using the [Chinese Remainder Theorem](https://kenji.blog/en/p/chinese-remainder-theorem/), it can be proven to hold even if they are not coprime).
+Here, **Euler's Theorem** ($M^{\phi(N)} \equiv 1 \pmod N$) comes into play. (*Strictly speaking, $M$ and $N$ need to be coprime, but in [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/), the probability that $M$ and $N$ are not coprime is astronomically low, and using the [Chinese Remainder Theorem](https://kenji.blog/en/p/chinese-remainder-theorem/), it can be proven to hold even if they are not coprime).
 
 Applying Euler's Theorem, since $M^{\phi(N)} \equiv 1$:
 $$ M \cdot (1)^k \equiv M \pmod N $$
@@ -365,9 +365,9 @@ $M$ is beautifully restored! The properties of numbers discovered hundreds of ye
 
 ---
 
-## 8. Toy Implementation of RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (Python)
+## 8. Toy Implementation of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (Python)
 
-It's hard to get a real feel from theory alone, so let's actually implement the key generation, encryption, and decryption process of RSA cryptography using Python. This is a "toy implementation" for educational purposes, but the math used is exactly the same as the real thing.
+It's hard to get a real feel from theory alone, so let's actually implement the key generation, encryption, and decryption process of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography using Python. This is a "toy implementation" for educational purposes, but the math used is exactly the same as the real thing.
 
 The "extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm" for finding the modular inverse $d$ is also included in the implementation.
 
@@ -468,7 +468,7 @@ When you run this code, you can see how an array of characters is converted into
 
 In the 17th century when [Pierre de Fermat](https://kenji.blog/en/p/fermat/) discovered this "Little Theorem", no one thought it would be of any use. [Fermat](https://kenji.blog/en/p/fermat/) himself studied number theory out of pure mathematical curiosity.
 
-However, about 300 years later in the 1970s, at the dawn of computer networks, [Fermat](https://kenji.blog/en/p/fermat/)'s theorem made a dramatic comeback as an indispensable cryptographic technology for establishing secure communication protocols. Primality testing technology based on [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) and RSA cryptography based on Euler's theorem literally support modern Internet infrastructure.
+However, about 300 years later in the 1970s, at the dawn of computer networks, [Fermat](https://kenji.blog/en/p/fermat/)'s theorem made a dramatic comeback as an indispensable cryptographic technology for establishing secure communication protocols. Primality testing technology based on [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) and [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography based on Euler's theorem literally support modern Internet infrastructure.
 
 The LINE messages we casually send every day, the shopping on Amazon, all dance on this simple and beautiful formula $a^{p-1} \equiv 1 \pmod p$. No matter how abstract mathematics may be, [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/) teaches us that the time will definitely come when it will be useful to humanity.
 

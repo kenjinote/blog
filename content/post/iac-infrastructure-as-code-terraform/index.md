@@ -319,8 +319,8 @@ sequenceDiagram
 
 ## 8.1. セキュリティのシフトレフト
 
-[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)には、インフラの脆弱性を早期に発見するための静的解析ツールを組み込むべきです。
-- **tfsec** や **checkov** : 「S3バケットがパブリック公開されている」「DBが暗号化されていない」といったセキュリティリスクをコードレベルでスキャンし、問題があればCIをエラーで止めます。
+[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)には、インフラの[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)を早期に発見するための静的解析ツールを組み込むべきです。
+- **tfsec** や **checkov** : 「S3バケットがパブリック公開されている」「DBが[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)されていない」といったセキュリティリスクをコードレベルでスキャンし、問題があればCIをエラーで止めます。
 
 ---
 
@@ -349,7 +349,7 @@ Terraformでモジュールを設計する際、入力変数として `az_count`
 
 ## アンチパターン
 1. **手動変更との混在** ：Terraformで管理しているリソースをGUIから直接変更すること。Stateの不整合を招きます。
-2. **クレデンシャルのハードコード** ：アクセスキーやシークレットキーをコード内に直接記述すること。環境変数やIAMロール（OIDC連携など）を使用してください。
+2. **クレデンシャルのハードコード** ：アクセスキーやシークレットキーをコード内に直接記述すること。環境変数やIAMロール（[OIDC](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)連携など）を使用してください。
 3. **複雑すぎるモジュール** ：モジュールにあらゆる機能を持たせようとすると、変数が数十個にもなり、可読性が著しく低下します。「1つのモジュールは1つの関心事（Single Responsibility）」を意識しましょう。
 
 ---

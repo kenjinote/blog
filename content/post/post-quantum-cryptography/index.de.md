@@ -10,7 +10,7 @@ description: 'Public-Key-Kryptographie birgt das Risiko, in Zukunft durch die pr
 
 ## Einführung: Die "Bedrohung" der Kryptographie durch Quantencomputer
 
-Heutzutage wird ein Großteil unserer alltäglichen Kommunikation im Internet – Online-Banking-Zahlungen, das Surfen auf Websites (HTTPS), Nachrichten in Messenger-Apps bis hin zu Blockchain- und Krypto-Asset-Transaktionen – durch eine Technologie namens "Public-Key-Kryptographie" geschützt. Konkret bilden Algorithmen wie die RSA-Kryptographie und die Elliptische-Kurven-Kryptographie (ECC) die Grundlage für die Zuverlässigkeit unserer modernen digitalen Gesellschaft.
+Heutzutage wird ein Großteil unserer alltäglichen Kommunikation im Internet – Online-Banking-Zahlungen, das Surfen auf Websites (HTTPS), Nachrichten in Messenger-Apps bis hin zu [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)- und Krypto-Asset-Transaktionen – durch eine Technologie namens "Public-Key-Kryptographie" geschützt. Konkret bilden Algorithmen wie die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie und die Elliptische-Kurven-Kryptographie (ECC) die Grundlage für die Zuverlässigkeit unserer modernen digitalen Gesellschaft.
 
 Diese Verschlüsselungsmethoden basieren auf der Sicherheit mathematischer Probleme, wie der "Faktorisierung riesiger Zahlen" und dem "diskreten Logarithmusproblem", für deren Lösung heutige klassische Computer (einschließlich Supercomputer) astronomisch lange brauchen würden. Wenn jedoch der in den letzten Jahren rasant voranschreitende **Quantencomputer** in die Praxis umgesetzt wird, wird diese Prämisse grundlegend auf den Kopf gestellt.
 
@@ -28,7 +28,7 @@ Post-Quanten-Kryptographie (Post-Quantum [Crypto](https://kenji.blog/de/p/crypto
 
 Technologien, die oft damit verwechselt werden, sind die "Quantenkryptographie (Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy)" und die "Quantenschlüsselverteilung (QKD)", aber diese verfolgen völlig andere Ansätze. Die Quantenkryptographie (QKD) ist eine hardwarebasierte Technologie, die physikalische Gesetze der Quantenmechanik (wie die Eigenschaft, dass sich der Zustand bei Beobachtung ändert) nutzt, um Abhören auf dem Kommunikationsweg physikalisch unmöglich zu machen. Sie erfordert dedizierte Glasfasern und spezielle Geräte, was zu Herausforderungen hinsichtlich Einführungskosten und Entfernungsbeschränkungen führt.
 
-Andererseits ist die **PQC eine rein "mathematisch" basierte, softwarebasierte kryptographische Technologie** . Daher kann sie als Software-Update in bestehende Internet-Infrastrukturen, Server, Smartphones, Browser usw. integriert werden und zeichnet sich durch eine sehr hohe Anwendbarkeit in der realen Welt aus. Für IT-Unternehmen und Regierungsbehörden weltweit ist es eine dringende Aufgabe, die derzeit verwendeten RSA und ECC durch diese PQC zu ersetzen (zu migrieren).
+Andererseits ist die **PQC eine rein "mathematisch" basierte, softwarebasierte kryptographische Technologie** . Daher kann sie als Software-Update in bestehende Internet-Infrastrukturen, Server, Smartphones, Browser usw. integriert werden und zeichnet sich durch eine sehr hohe Anwendbarkeit in der realen Welt aus. Für IT-Unternehmen und Regierungsbehörden weltweit ist es eine dringende Aufgabe, die derzeit verwendeten [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) und ECC durch diese PQC zu ersetzen (zu migrieren).
 
 ---
 
@@ -64,7 +64,7 @@ Stellen Sie sich unzählige Punkte vor, die in einem gitterartigen Muster in ein
 
 **Vorteile:** 
 - Anwendbar sowohl für Schlüsselaustausch (KEM) als auch für digitale Signaturen.
-- Sehr schnelle Verarbeitungsgeschwindigkeit (in einigen Fällen schneller als RSA und ECC).
+- Sehr schnelle Verarbeitungsgeschwindigkeit (in einigen Fällen schneller als [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) und ECC).
 - Gute Balance mit relativ kleinen Schlüssel- und Chiffretextgrößen.
 
 Viele der derzeit vom NIST standardisierten Algorithmen (wie ML-KEM und ML-DSA) verwenden diese gitterbasierte Kryptographie.
@@ -149,7 +149,7 @@ Während das NIST seinen ersten Standardisierungsprozess abgeschlossen hat, setz
 
 ## Übergangsszenarien zur PQC und Herausforderungen: Die Bedeutung der "[Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)-Agility"
 
-Mit der Veröffentlichung formeller Standards durch das NIST werden Regierungsbehörden, Finanzinstitute und Technologieunternehmen auf der ganzen Welt den Übergang (Migration) vom bestehenden RSA/ECC zur PQC ernsthaft einleiten. Richtlinien von Organisationen wie der NSA (National Security Agency) empfehlen ebenfalls einen baldigen Abschluss der Migration.
+Mit der Veröffentlichung formeller Standards durch das NIST werden Regierungsbehörden, Finanzinstitute und Technologieunternehmen auf der ganzen Welt den Übergang (Migration) vom bestehenden [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)/ECC zur PQC ernsthaft einleiten. Richtlinien von Organisationen wie der NSA (National Security Agency) empfehlen ebenfalls einen baldigen Abschluss der Migration.
 
 ### Annahme eines hybriden Ansatzes
 

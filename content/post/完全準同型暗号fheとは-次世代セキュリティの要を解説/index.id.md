@@ -11,7 +11,7 @@ tags: ["FHE", "Homomorphic Encryption", "Cloud Computing", "Privacy"]
 
 Seiring dengan cloud computing dan teknologi AI yang menjadi infrastruktur masyarakat, pertukaran antara "privasi data" dan "pemanfaatan data" telah menjadi salah satu masalah terpenting. Meskipun terdapat permintaan yang meningkat untuk membiarkan AI di cloud menganalisis data yang sangat sensitif seperti data medis, informasi keuangan, dan informasi biometrik pribadi, banyak perusahaan ragu untuk mengirimkan data ke pihak eksternal karena masalah keamanan.
 
-Teknologi enkripsi konvensional (seperti AES dan RSA) sangat baik dalam melindungi data yang disimpan dalam penyimpanan (Data at Rest) dan data yang mengalir melalui jaringan (Data in Transit). Namun, **saat melakukan pemrosesan (komputasi) seperti pencarian dan machine learning pada data di sisi server (Data in Use), data tersebut harus didekripsi terlebih dahulu untuk kembali ke bentuk plaintext**. Jika server diretas pada saat dekripsi ini, atau jika administrator internal yang berniat jahat mengintip data tersebut, hal ini akan langsung menyebabkan kebocoran informasi.
+Teknologi enkripsi konvensional (seperti AES dan [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)) sangat baik dalam melindungi data yang disimpan dalam penyimpanan (Data at Rest) dan data yang mengalir melalui jaringan (Data in Transit). Namun, **saat melakukan pemrosesan (komputasi) seperti pencarian dan machine learning pada data di sisi server (Data in Use), data tersebut harus didekripsi terlebih dahulu untuk kembali ke bentuk plaintext**. Jika server diretas pada saat dekripsi ini, atau jika administrator internal yang berniat jahat mengintip data tersebut, hal ini akan langsung menyebabkan kebocoran informasi.
 
 Teknologi impian yang mengatasi kelemahan mendasar dari "dekripsi saat pemrosesan" ini adalah **Fully Homomorphic Encryption (FHE)**. Dengan menggunakan FHE, dimungkinkan untuk melakukan proses komputasi sambil menjaga data tetap terenkripsi tanpa mendekripsinya sama sekali, dan hanya mengembalikan ciphertext dari hasil komputasi tersebut kepada klien.
 
@@ -55,7 +55,7 @@ Homomorphic Encryption tidak langsung mencapai bentuk "sempurna" yang ada saat i
 ### Partially Homomorphic Encryption (PHE)
 PHE adalah skema enkripsi yang memungkinkan operasi penjumlahan atau perkalian, **salah satu dari keduanya saja**, tanpa batas. Faktanya, enkripsi dengan sifat ini telah ada sejak lama.
 
-*   **Enkripsi RSA (Homomorfisme terhadap perkalian)**
+*   **Enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) (Homomorfisme terhadap perkalian)**
     Enkripsi RSA secara tidak sengaja memiliki homomorfisme perkalian. Jika plaintext $m_1, m_2$ dan kunci publik $(e, N)$:
     $$ E(m_1) = m_1^e \pmod N $$
     $$ E(m_2) = m_2^e \pmod N $$
@@ -259,7 +259,7 @@ Sekarang setelah FHE mendekati kecepatan yang praktis, inovasi destruktif dihara
 
 ## 9. Kesimpulan: Masa Depan Kriptografi menuju "Komputasi Tak Terlihat"
 
-Sama seperti penemuan kriptografi kunci publik (RSA) pada tahun 1970-an yang memungkinkan komunikasi aman di internet (seperti HTTPS), penemuan FHE oleh Craig Gentry adalah salah satu tonggak sejarah paling penting dalam sejarah kriptografi.
+Sama seperti penemuan kriptografi kunci publik ([RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)) pada tahun 1970-an yang memungkinkan komunikasi aman di internet (seperti HTTPS), penemuan FHE oleh Craig Gentry adalah salah satu tonggak sejarah paling penting dalam sejarah kriptografi.
 
 Saat ini, Fully Homomorphic Encryption (FHE) telah melompat dari teori di laboratorium, dan memasuki tahap di mana Microsoft, IBM, Intel, Google, dan banyak startup bersaing keras menuju implementasi praktisnya. Walaupun tantangan dalam biaya komputasi dan ukuran data masih ada, perbaikan kinerja terus berlanjut melampaui Hukum Moore berkat penyempurnaan algoritma dan evolusi akselerator hardware.
 

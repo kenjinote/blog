@@ -150,7 +150,7 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 # Überprüfen: 111 * 3 + 30 * (-11) = 333 - 330 = 3
 ```
 
-## Anwendungen in der modernen Gesellschaft (RSA-Kryptographie usw.)
+## Anwendungen in der modernen Gesellschaft ([RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie usw.)
 
 Der erweiterte euklidische Algorithmus ist nicht nur ein mathematisches Rätsel, sondern eine wesentliche Technologie, die die moderne Internetgesellschaft unterstützt.
 Ein Paradebeispiel ist die **RSA-Kryptographie** . Beim Schlüsselerzeugungsprozess der RSA-Verschlüsselung ist es notwendig, einen privaten Schlüssel $d$ (modulares Inverses) zu finden, der $e d \equiv 1 \pmod{\phi(N)}$ für eine gegebene Zahl $e$ und die Eulersche Phi-Funktion $\phi(N)$ erfüllt.

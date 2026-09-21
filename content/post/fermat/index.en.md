@@ -39,7 +39,7 @@ flowchart TD
 
 ### 2.1. [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)
 
-A remarkably important theorem that forms the foundation of modern cryptography (such as RSA encryption) is **[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)**. It reveals a surprising property regarding prime numbers and silently supports security technology in our modern internet society.
+A remarkably important theorem that forms the foundation of modern cryptography (such as [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption) is **[Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)**. It reveals a surprising property regarding prime numbers and silently supports security technology in our modern internet society.
 
 The statement of the theorem is as follows:
 For any prime number $p$ and any integer $a$ that is coprime to $p$ (meaning it is not a multiple of $p$), the following congruence holds:

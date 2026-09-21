@@ -14,7 +14,7 @@ description: "From the ancient Caesar cipher, through Enigma and public-key cryp
 
 [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy is the technology used to maintain the confidentiality of information, and it has evolved alongside human history. From the transmission of secret commands in ancient wars to the protection of credit card information on the modern internet, the purpose of cryptography has remained consistent: "to ensure that only the intended recipient can understand the information, and that it cannot be deciphered by third parties."
 
-In modern information security, cryptography goes beyond simple "information concealment (Confidentiality)" and plays crucial roles in ensuring data "Integrity," "Authentication," and "Non-repudiation."
+In modern information security, cryptography goes beyond simple "information concealment (Confidentiality)" and plays crucial roles in ensuring data "Integrity," "[Authentication](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/)," and "Non-repudiation."
 
 In this article, we will thoroughly unravel the history of cryptographic evolution from a technical and mathematical perspective, starting from simple ancient substitution ciphers, through mechanical ciphers, modern symmetric and public-key cryptography, to the era of "Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)" brought about by the practical application of quantum computers.
 
@@ -135,7 +135,7 @@ graph TD
 
 ---
 
-# 5. The Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy Revolution: From Diffie-Hellman to RSA
+# 5. The Public-key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy Revolution: From Diffie-Hellman to [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)
 
 Symmetric-key cryptography had a fatal weakness. It was the "Key Distribution Problem": how to securely share a "common key" with a distant party before starting encrypted communication. The "public-key cryptography" born in the 1970s solved this problem.
 
@@ -148,8 +148,8 @@ In 1976, Whitfield Diffie and Martin Hellman published a groundbreaking paper, "
 4. Alice calculates $K = B^a \pmod{p}$, and Bob calculates $K = A^b \pmod{p}$.
 5. By the laws of exponents, $K = (g^b)^a = (g^a)^b = g^{ab} \pmod{p}$, and they successfully share the exact same key $K$.
 
-## RSA [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
-The following year, in 1977, "RSA cryptography" was devised by Ron Rivest, Adi Shamir, and Leonard Adleman. It is based on the property that "factoring the product of two very large prime numbers is difficult."
+## [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
+The following year, in 1977, "[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography" was devised by Ron Rivest, Adi Shamir, and Leonard Adleman. It is based on the property that "factoring the product of two very large prime numbers is difficult."
 
 **Mathematical Mechanism of RSA:**
 1. Choose two large prime numbers $p$ and $q$, and calculate $n = p \times q$.
@@ -195,11 +195,11 @@ rsa_example()
 
 # 6. The Rise of Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC)
 
-While RSA cryptography is powerful, as computer performance improved, it became necessary to increase the key length to maintain security (currently 2048 or 3072 bits), which caused the problem of increased computational cost.
+While [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography is powerful, as computer performance improved, it became necessary to increase the key length to maintain security (currently 2048 or 3072 bits), which caused the problem of increased computational cost.
 
 Thus, in 1985, "Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC)" was proposed. This utilizes point addition on elliptic curves over finite fields (generally of the form $y^2 = x^3 + ax + b$).
 
-The Elliptic Curve Discrete Logarithm Problem (ECDLP) is known to be even harder to solve than the integer factorization problem, and **ECC can achieve security equivalent to a 3072-bit RSA key with a key length of only 256 bits**. This made fast and secure encrypted communication (such as ECDSA and ECDH) possible even in environments with limited computational resources, like smartphones and IoT devices.
+The Elliptic Curve Discrete Logarithm Problem (ECDLP) is known to be even harder to solve than the integer factorization problem, and **ECC can achieve security equivalent to a 3072-bit [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) key with a key length of only 256 bits**. This made fast and secure encrypted communication (such as ECDSA and ECDH) possible even in environments with limited computational resources, like smartphones and IoT devices.
 
 ---
 
@@ -207,7 +207,7 @@ The Elliptic Curve Discrete Logarithm Problem (ECDLP) is known to be even harder
 
 [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic technology seemed rock-solid, but in 1994, a massive shockwave hit with the announcement of "[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)" by Peter Shor.
 
-Quantum computers perform calculations utilizing the properties of quantum mechanics, namely "superposition" and "quantum entanglement." It was mathematically proven that if Shor's algorithm is executed on a sufficiently capable quantum computer, the integer factorization problem and the discrete logarithm problem could be solved in "polynomial time." This means that on the day a practical quantum computer is completed (Q-Day), all currently used public-key cryptosystems like RSA and ECC will instantaneously collapse.
+Quantum computers perform calculations utilizing the properties of quantum mechanics, namely "superposition" and "quantum entanglement." It was mathematically proven that if Shor's algorithm is executed on a sufficiently capable quantum computer, the integer factorization problem and the discrete logarithm problem could be solved in "polynomial time." This means that on the day a practical quantum computer is completed (Q-Day), all currently used public-key cryptosystems like [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) and ECC will instantaneously collapse.
 
 ## The Emergence of PQC (Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy)
 To prepare for this unprecedented threat, research is rapidly progressing on "Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC)," based on new mathematical problems that are difficult to break even for quantum computers. NIST (National Institute of Standards and Technology) has been running a PQC standardization process for many years, and the following mathematical approaches are primarily considered the most promising.
@@ -261,7 +261,7 @@ timeline
 
 The history of cryptography is a history of an endless battle between the invention of new cryptographic schemes (the shield) and new decryption methods to break them (the spear).
 
-The Caesar cipher was defeated by frequency analysis, and the invincible Enigma was defeated by Turing's genius mind and the power of machines. And now, the powerful ciphers like RSA and ECC that form the backbone of modern internet society are exposed to the threat of a new "spear," the quantum computer.
+The Caesar cipher was defeated by frequency analysis, and the invincible Enigma was defeated by Turing's genius mind and the power of machines. And now, the powerful ciphers like [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) and ECC that form the backbone of modern internet society are exposed to the threat of a new "spear," the quantum computer.
 
 However, humanity is already looking towards the future beyond that and is preparing a new "shield" called Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC). Currently, preparing for the transition from existing public-key cryptography to PQC (ensuring [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) Agility) is an urgent task for IT infrastructures worldwide.
 

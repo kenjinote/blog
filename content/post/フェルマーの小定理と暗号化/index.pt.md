@@ -11,11 +11,11 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 ## 1. Introdução: O mistério matemático que sustenta a criptografia moderna
 
-Na sociedade digital moderna, especialmente nas comunicações via Internet, a "criptografia" tornou-se uma tecnologia fundamental indispensável. O fato de podermos navegar na web de forma segura via HTTPS em nossos navegadores, realizar transações financeiras no internet banking e trocar mensagens privadas em aplicativos de mensagens é possível devido aos protocolos criptográficos apoiados por teorias matemáticas avançadas que operam nos bastidores. Entre eles, o sistema de "criptografia de chave pública" desempenha um papel particularmente importante, e seu principal representante é a **Criptografia RSA**.
+Na sociedade digital moderna, especialmente nas comunicações via Internet, a "criptografia" tornou-se uma tecnologia fundamental indispensável. O fato de podermos navegar na web de forma segura via HTTPS em nossos navegadores, realizar transações financeiras no internet banking e trocar mensagens privadas em aplicativos de mensagens é possível devido aos protocolos criptográficos apoiados por teorias matemáticas avançadas que operam nos bastidores. Entre eles, o sistema de "criptografia de chave pública" desempenha um papel particularmente importante, e seu principal representante é a **Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)**.
 
 A segurança e a validade de muitos algoritmos criptográficos, incluindo o RSA, dependem fortemente de um teorema muito belo e poderoso descoberto pelo matemático francês do século 17, [Pierre de Fermat](https://kenji.blog/pt/p/fermat/). Esse é o **Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) ([Fermat's Little Theorem](https://kenji.blog/pt/p/fermats-little-theorem/))**. Além disso, o teorema de [Leonhard Euler](https://kenji.blog/pt/p/euler/), que generaliza isso, também desempenha um papel decisivo na teoria da criptografia.
 
-Neste artigo, explicaremos detalhadamente desde o básico como a descoberta do Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/), na matemática pura, é aplicada às tecnologias de criptografia práticas modernas, em particular ao "teste de primalidade" e à "criptografia RSA". Este será um guia técnico muito detalhado que cobre provas matemáticas, os mecanismos de criptografia e descriptografia, e implementações de algoritmos específicos em C++ e Python.
+Neste artigo, explicaremos detalhadamente desde o básico como a descoberta do Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/), na matemática pura, é aplicada às tecnologias de criptografia práticas modernas, em particular ao "teste de primalidade" e à "criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)". Este será um guia técnico muito detalhado que cobre provas matemáticas, os mecanismos de criptografia e descriptografia, e implementações de algoritmos específicos em C++ e Python.
 
 ---
 
@@ -42,7 +42,7 @@ Na aritmética modular, as quatro operações aritméticas normais (adição, su
 3. **Multiplicação**: Se $a \equiv b \pmod n$ e $c \equiv d \pmod n$, então $a \times c \equiv b \times d \pmod n$
 4. **Exponenciação**: Se $a \equiv b \pmod n$, então para qualquer número natural $k$, $a^k \equiv b^k \pmod n$
 
-No entanto, é necessário ter cuidado com a **divisão**. Em geral, o fato de que $a \times c \equiv b \times c \pmod n$ não significa que podemos dividir ambos os lados por $c$ para obter $a \equiv b \pmod n$. Isso só é verdadeiro se $c$ e $n$ forem coprimos (o máximo divisor comum for 1). Esse conceito de "inverso modular" torna-se extremamente importante na geração de chaves da criptografia RSA descrita mais adiante.
+No entanto, é necessário ter cuidado com a **divisão**. Em geral, o fato de que $a \times c \equiv b \times c \pmod n$ não significa que podemos dividir ambos os lados por $c$ para obter $a \equiv b \pmod n$. Isso só é verdadeiro se $c$ e $n$ forem coprimos (o máximo divisor comum for 1). Esse conceito de "inverso modular" torna-se extremamente importante na geração de chaves da criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) descrita mais adiante.
 
 ---
 
@@ -112,7 +112,7 @@ Esta é a prova do Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/).
 
 ## 4. A Função Totiente de Euler e o Teorema de Euler
 
-[O Pequeno Teorema de Fermat](https://kenji.blog/pt/p/fermats-little-theorem/) é um teorema sobre um "número primo $p$", mas quem o generalizou para "qualquer inteiro positivo $n$" foi [Leonhard Euler](https://kenji.blog/pt/p/euler/). Essa extensão é essencial para compreender a criptografia RSA.
+[O Pequeno Teorema de Fermat](https://kenji.blog/pt/p/fermats-little-theorem/) é um teorema sobre um "número primo $p$", mas quem o generalizou para "qualquer inteiro positivo $n$" foi [Leonhard Euler](https://kenji.blog/pt/p/euler/). Essa extensão é essencial para compreender a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/).
 
 ### 4.1 Função Totiente de Euler $\phi(n)$
 
@@ -138,7 +138,7 @@ Se $n$ for um número primo $p$, então $\phi(p) = p - 1$, o que o torna exatame
 
 ## 5. Encontrando Números Primos Gigantescos: O Teste de Primalidade de [Fermat](https://kenji.blog/pt/p/fermat/)
 
-Na tecnologia criptográfica (como a criptografia RSA e a troca de chaves Diffie-Hellman), é necessário encontrar "números primos gigantescos" de centenas de dígitos em alta velocidade. No entanto, para testar se um número gigante $N$ é primo através da "divisão por tentativa" (testando a divisibilidade por todos os números de $2$ a $\sqrt{N}$), levaria tanto tempo quanto a idade do universo.
+Na tecnologia criptográfica (como a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e a troca de chaves Diffie-Hellman), é necessário encontrar "números primos gigantescos" de centenas de dígitos em alta velocidade. No entanto, para testar se um número gigante $N$ é primo através da "divisão por tentativa" (testando a divisibilidade por todos os números de $2$ a $\sqrt{N}$), levaria tanto tempo quanto a idade do universo.
 
 Aqui entra o **Teste de Primalidade de [Fermat](https://kenji.blog/pt/p/fermat/) ([Fermat](https://kenji.blog/pt/p/fermat/) Primality Test)**, um "teste de primalidade probabilístico" que usa o Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/).
 
@@ -281,9 +281,9 @@ else:
 
 ---
 
-## 7. Aplicação na Criptografia RSA: Onde [Fermat](https://kenji.blog/pt/p/fermat/) e Euler dão Frutos
+## 7. Aplicação na Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/): Onde [Fermat](https://kenji.blog/pt/p/fermat/) e Euler dão Frutos
 
-A maior aplicação do Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) (e do Teorema de Euler) é a **Criptografia RSA**, desenvolvida por Rivest, Shamir e Adleman em 1977.
+A maior aplicação do Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) (e do Teorema de Euler) é a **Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)**, desenvolvida por Rivest, Shamir e Adleman em 1977.
 A criptografia RSA é um sistema revolucionário de "criptografia de chave pública", que consegue um mecanismo onde a chave para criptografar (a chave pública) é revelada a todo o mundo, enquanto a chave para descriptografar (a chave privada) é conhecida apenas pelo destinatário pretendido.
 
 Essa assimetria é baseada na segurança computacional proporcionada pelo fato de que "a fatoração de um número composto gigantesco é extremamente difícil".
@@ -356,7 +356,7 @@ $$ e \cdot d = 1 + k \cdot \phi(N) $$
 Substituindo isso na equação acima:
 $$ M^{ed} = M^{1 + k \cdot \phi(N)} = M \cdot M^{k \cdot \phi(N)} = M \cdot (M^{\phi(N)})^k \pmod N $$
 
-Aqui, entra o **Teorema de Euler** ($M^{\phi(N)} \equiv 1 \pmod N$). (*Rigorosamente, $M$ e $N$ precisam ser coprimos, mas em RSA, a probabilidade de que $M$ e $N$ não sejam coprimos é astronomicamente baixa, e pelo Teorema Chinês do Resto, pode-se provar que é válido mesmo se não forem coprimos*).
+Aqui, entra o **Teorema de Euler** ($M^{\phi(N)} \equiv 1 \pmod N$). (*Rigorosamente, $M$ e $N$ precisam ser coprimos, mas em [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), a probabilidade de que $M$ e $N$ não sejam coprimos é astronomicamente baixa, e pelo Teorema Chinês do Resto, pode-se provar que é válido mesmo se não forem coprimos*).
 
 Aplicando o Teorema de Euler, como $M^{\phi(N)} \equiv 1$, temos:
 $$ M \cdot (1)^k \equiv M \pmod N $$
@@ -365,7 +365,7 @@ $M$ foi perfeitamente restaurado! As propriedades dos números que [Fermat](http
 
 ---
 
-## 8. Implementação da Criptografia RSA de Brinquedo (Python)
+## 8. Implementação da Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) de Brinquedo (Python)
 
 Uma vez que é difícil ter uma noção de como isso funciona baseando-se apenas na teoria, vamos usar o Python para implementar o processo de geração de chaves, criptografia e descriptografia da criptografia RSA na prática. Esta é uma "implementação de brinquedo" educacional, mas a matemática subjacente é exatamente a mesma.
 
@@ -468,7 +468,7 @@ Quando você executa este código, você pode confirmar como a matriz de caracte
 
 Quando [Pierre de Fermat](https://kenji.blog/pt/p/fermat/) descobriu este "pequeno teorema" no século 17, ninguém pensou que isso pudesse ser útil de alguma forma. O próprio [Fermat](https://kenji.blog/pt/p/fermat/) conduziu suas pesquisas em teoria dos números com curiosidade puramente matemática.
 
-No entanto, nos anos 1970, cerca de 300 anos depois, nos primórdios das redes de computadores, o teorema de [Fermat](https://kenji.blog/pt/p/fermat/) fez um retorno dramático como uma tecnologia de criptografia essencial para estabelecer protocolos de comunicação seguros. A tecnologia do teste de primalidade baseada no Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) e a Criptografia RSA, com base no Teorema de Euler, sustentam literalmente a infraestrutura moderna da internet.
+No entanto, nos anos 1970, cerca de 300 anos depois, nos primórdios das redes de computadores, o teorema de [Fermat](https://kenji.blog/pt/p/fermat/) fez um retorno dramático como uma tecnologia de criptografia essencial para estabelecer protocolos de comunicação seguros. A tecnologia do teste de primalidade baseada no Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/) e a Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), com base no Teorema de Euler, sustentam literalmente a infraestrutura moderna da internet.
 
 Até mesmo a mensagem no LINE que enviamos casualmente todos os dias e nossas compras na Amazon, estão todas dançando no topo desta simples e bela fórmula: $a^{p-1} \equiv 1 \pmod p$. [O Pequeno Teorema de Fermat](https://kenji.blog/pt/p/fermats-little-theorem/) nos ensina que, não importa o quão abstrata seja a matemática, o momento em que ela for útil para a humanidade sem dúvida chegará algum dia.
 

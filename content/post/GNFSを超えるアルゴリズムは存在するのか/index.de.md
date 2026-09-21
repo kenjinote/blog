@@ -11,7 +11,7 @@ tags: ["GNFS", "Integer Factorization", "RSA", "Algorithms"]
 
 ## 1. Einführung: Primfaktorzerlegung und die Grundlage der modernen Kryptographie
 
-Die Sicherheit der Internetkommunikation in der modernen Gesellschaft hängt stark von der Sicherheit der RSA-Kryptographie ab, einem Public-Key-Kryptosystem. Die Sicherheit des RSA-Verfahrens basiert auf der mathematischen Annahme, dass es schwierig ist, riesige zusammengesetzte Zahlen in ihre Primfaktoren zu zerlegen. Wenn ein extrem effizienter Algorithmus zur Primfaktorzerlegung entdeckt würde, würde die Kommunikationsinfrastruktur der ganzen Welt von Grund auf zusammenbrechen.
+Die Sicherheit der Internetkommunikation in der modernen Gesellschaft hängt stark von der Sicherheit der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie ab, einem Public-Key-Kryptosystem. Die Sicherheit des RSA-Verfahrens basiert auf der mathematischen Annahme, dass es schwierig ist, riesige zusammengesetzte Zahlen in ihre Primfaktoren zu zerlegen. Wenn ein extrem effizienter Algorithmus zur Primfaktorzerlegung entdeckt würde, würde die Kommunikationsinfrastruktur der ganzen Welt von Grund auf zusammenbrechen.
 
 Derzeit ist das **Allgemeine Zahlkörpersieb (GNFS: General Number Field Sieve)** der schnellste und stärkste Algorithmus zur Primfaktorzerlegung riesiger ganzen Zahlen auf klassischen Computern. Das GNFS entstand als Erweiterung des Speziellen Zahlkörpersiebs (SNFS), das Ende der 1980er Jahre vorgeschlagen wurde. Bis heute hat es Rekorde bei der Faktorisierung riesiger zusammengesetzter Zahlen wie RSA-768 und RSA-250 aufgestellt.
 
@@ -122,7 +122,7 @@ $$ f_1(x), f_{2,1}(x), f_{2,2}(x), \dots, f_{2,V}(x) $$
 
 Durch die Verwendung mehrerer algebraischer Körper kann die Wahrscheinlichkeit, dass die Zahl in jedem Siebschritt "in einem der algebraischen Körper glatt wird", drastisch erhöht werden. Mit diesem Ansatz ist es Coppersmith gelungen, die Konstante $c$ in der Komplexität $L_n[1/3, c]$ leicht zu reduzieren.
 Konkret wurde theoretisch gezeigt, dass, während die Konstante des GNFS $c = (64/9)^{1/3} \approx 1,923$ ist, die Optimierung des MNFS den Rechenaufwand auf etwa $c \approx 1,902$ reduzieren kann.
-In der Praxis ist jedoch der Overhead durch die Verwaltung mehrerer Körper groß, und es hat nicht zu einem entscheidenden Durchbruch bei RSA-Modulen in praktischer Größe geführt.
+In der Praxis ist jedoch der Overhead durch die Verwaltung mehrerer Körper groß, und es hat nicht zu einem entscheidenden Durchbruch bei [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Modulen in praktischer Größe geführt.
 
 ### 4.2 Sind Algorithmen der Klasse $L_n[1/4]$ möglich?
 
@@ -158,7 +158,7 @@ graph LR
 
 Der Unterschied zwischen diesen beiden Komplexitätsklassen hat entscheidende Auswirkungen auf die reale kryptographische Sicherheit.
 
-Betrachten wir beispielsweise den Fall der Faktorisierung von RSA-2048 (eine zusammengesetzte Zahl mit 2048 Bit).
+Betrachten wir beispielsweise den Fall der Faktorisierung von [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-2048 (eine zusammengesetzte Zahl mit 2048 Bit).
 - **GNFS (Klassisch)**: Setzt man $n \approx 2^{2048}$ in $L_n[1/3, 1.923]$ ein, so benötigt man etwa $2^{112}$ Operationen. Dies ist eine astronomische Rechenmenge, die länger als die Lebensdauer des Universums dauern würde, selbst wenn man alle aktuellen Rechenressourcen der Erde bündeln würde.
 - **[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) (Quanten)**: Bei einem $O((\log n)^3)$-Algorithmus sind nur etwa $2048^3 \approx 8,5 \times 10^9$ logische Gatteroperationen erforderlich. Dies bedeutet, dass die Berechnung in nur wenigen Stunden bis Tagen abgeschlossen sein könnte, sofern die entsprechende Hardware (ein universeller Quantencomputer mit Millionen von physischen Qubits und Fehlerkorrekturfähigkeiten) vorhanden ist.
 
@@ -171,7 +171,7 @@ Der Paradigmenwechsel von einer subexponentiellen Funktion mit einem "Exponenten
 Der aktuelle Konsens der wissenschaftlichen Gemeinschaft zur Frage "Gibt es einen klassischen Algorithmus, der das GNFS übertrifft?" lautet wie folgt:
 
 1. **Praktische Verbesserungen werden fortgesetzt, aber es gibt keinen asymptotischen Sprung**: Versuche, den konstanten Term $c$ des GNFS zu verbessern, wie MNFS, Optimierung der Polynomauswahl und Parallelisierung der Block-Wiedemann-Methode, werden fortgesetzt. Es gilt jedoch als äußerst unwahrscheinlich, dass ein klassischer Algorithmus entdeckt wird, der $\alpha = 1/3$ unterschreitet.
-2. **Die Sicherheit von RSA auf klassischen Computern bleibt stark**: Der Rechenaufwand für das GNFS bleibt enorm, und RSA-2048 und RSA-4096 werden auf Jahrzehnte hinaus sicher gegen Angriffe klassischer Computer bleiben.
+2. **Die Sicherheit von [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) auf klassischen Computern bleibt stark**: Der Rechenaufwand für das GNFS bleibt enorm, und RSA-2048 und RSA-4096 werden auf Jahrzehnte hinaus sicher gegen Angriffe klassischer Computer bleiben.
 3. **Die wahre Bedrohung ist der Quantenalgorithmus**: Die Wand der Berechnungskomplexität wurde durch Shors Algorithmus überwunden, der auf den Prinzipien der Quantenmechanik beruht. Infolgedessen ist die Welt gezwungen, auf Post-Quanten-Kryptographie (PQC: Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy) umzusteigen. Der Übergang zu neuen mathematischen Problemen wie gitterbasierter Kryptographie und Hash-basierter Kryptographie, die auch für Quantencomputer als schwer zu knacken (nicht in Polynomzeit lösbar) gelten, ist die aktuelle Spitze der Kryptographie.
 
 Das Allgemeine Zahlkörpersieb (GNFS) ist einer der "höchsten Punkte", den die Menschheit erreicht hat, indem sie die Grenzen der klassischen Mathematik und des Algorithmus-Designs herausgefordert hat. Das Verständnis der tiefgreifenden mathematischen Struktur des GNFS ist nicht nur das Erlernen der Geschichte der Kryptoanalyse, sondern auch eine intellektuelle Reise, um die Schönheit der Berechnungskomplexitätstheorie und der algebraischen Zahlentheorie zu erfahren. Bis zu dem Tag, an dem Quantencomputer in die Praxis umgesetzt werden, wird das GNFS seinen Thron als stärkster Algorithmus zur Primfaktorzerlegung behalten.

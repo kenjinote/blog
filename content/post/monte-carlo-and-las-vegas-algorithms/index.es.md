@@ -67,7 +67,7 @@ Cuanto más aumentes el número de intentos `num_samples`, obtendrás un valor m
 
 ### Ejemplo 2: Test de primalidad de Miller-Rabin
 
-Este es un algoritmo rápido para determinar si un número muy grande es primo. Al generar claves en la criptografía RSA se necesitan números primos de cientos de dígitos; comprobar si un número es primo mediante un método de división por ensayo determinista (dividiendo secuencialmente entre $2, 3, 5, \dots$) llevaría más tiempo que la edad del universo.
+Este es un algoritmo rápido para determinar si un número muy grande es primo. Al generar claves en la criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) se necesitan números primos de cientos de dígitos; comprobar si un número es primo mediante un método de división por ensayo determinista (dividiendo secuencialmente entre $2, 3, 5, \dots$) llevaría más tiempo que la edad del universo.
 
 Aquí es donde entra en juego el algoritmo de Montecarlo conocido como el **Test de primalidad de Miller-Rabin**.
 Para un número dado $n$ que queremos evaluar, elegimos una base aleatoria $a$ y probamos si cumple con ciertas ecuaciones basadas en la extensión del pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/).

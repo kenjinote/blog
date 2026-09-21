@@ -96,12 +96,12 @@ graph LR
 
 여기서는 두 가지 구체적인 예를 통해 수식을 코드로 구현하는 과정을 살펴보겠습니다.
 
-### 4.1 실제 사례 1: RSA 암호의 수학과 Python 구현
+### 4.1 실제 사례 1: [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호의 수학과 Python 구현
 
 공개키 암호 방식의 대표격인 RSA 암호는, 초등 정수론(합동식, 오일러의 정리, 확장 [[유클리드](https://kenji.blog/ko/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/))의 아름다운 응용입니다.
 
 #### 수학적 배경
-RSA 암호의 키 생성과 암호화·복호화 프로세스는 다음 수식으로 표현됩니다.
+[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호의 키 생성과 암호화·복호화 프로세스는 다음 수식으로 표현됩니다.
 
 1. **키 생성**:
    거대한 소수 $p, q$ 를 선택하고, $n = pq$ 로 둔다.

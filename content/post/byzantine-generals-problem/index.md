@@ -8,7 +8,7 @@ tags: ["ビザンチン将軍問題", "ブロックチェーン", "合意形成"
 slug: "byzantine-generals-problem"
 ---
 
-[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)やブロックチェーン技術を学ぶ上で、必ずと言っていいほど直面するのが **[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/p/byzantine-generals-problem-consensus/) Problem) です。これは、ネットワーク内に「裏切り者」や「故障したノード」が存在する状況下で、システム全体としてどのように正しい合意を形成するのか、という非常に重要なテーマを扱っています。
+[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)や[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術を学ぶ上で、必ずと言っていいほど直面するのが **[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)** ([Byzantine Generals](https://kenji.blog/p/byzantine-generals-problem-consensus/) Problem) です。これは、ネットワーク内に「裏切り者」や「故障したノード」が存在する状況下で、システム全体としてどのように正しい合意を形成するのか、という非常に重要なテーマを扱っています。
 
 本記事では、この **[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)** について、具体的なストーリー、数学的な条件式、図解を交えながら、基礎から応用までを詳しく解説していきます。
 
@@ -114,13 +114,13 @@ end
 
 もし、送られるメッセージに「偽造不可能なデジタル署名」が付与されており、 **誰がメッセージを発信したかが確実に証明できる** 場合はどうでしょうか。
 
-このモデルでは、司令官が発した命令を途中で改ざんすることができなくなります。その結果、裏切り者が何人いようとも、$m$ 人の裏切り者に対して $n \ge m + 2$ （つまり全体で最低3人以上）の将軍がいれば、合意を形成できることが証明されています。現代のシステムにおいては、公開鍵暗号方式によるデジタル署名がこの役割を担っています。
+このモデルでは、司令官が発した命令を途中で改ざんすることができなくなります。その結果、裏切り者が何人いようとも、$m$ 人の裏切り者に対して $n \ge m + 2$ （つまり全体で最低3人以上）の将軍がいれば、合意を形成できることが証明されています。現代のシステムにおいては、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号方式によるデジタル署名がこの役割を担っています。
 
-## 4. ブロックチェーンとビザンチン・フォールト・トレランス
+## 4. [ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)とビザンチン・フォールト・トレランス
 
 [ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)に対する耐性のことを **ビザンチン・フォールト・トレランス** (Byzantine Fault Tolerance, BFT) と呼びます。[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)が故障や悪意のある攻撃に耐えて正常に稼働し続けるための重要な指標です。
 
-近年、この問題が再び大きく脚光を浴びたのは **ブロックチェーン技術** の登場によるものです。ブロックチェーンは中央管理者のいない [P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/) ネットワークであるため、悪意のある参加者（ノード）が嘘の取引履歴を流す可能性があります。まさに[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)そのものです。
+近年、この問題が再び大きく脚光を浴びたのは **[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)技術** の登場によるものです。ブロックチェーンは中央管理者のいない [P2P](https://kenji.blog/p/webrtc-realtime-communication-p2p/) ネットワークであるため、悪意のある参加者（ノード）が嘘の取引履歴を流す可能性があります。まさに[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)そのものです。
 
 ### PBFT (Practical Byzantine Fault Tolerance) の仕組み
 
@@ -145,17 +145,17 @@ subgraph "PBFTの主要フェーズ"
 end
 ```
 
-このプロセスを経ることで、ネットワーク内に $m$ 個の故障・悪意あるノードが存在しても、総ノード数が $n \ge 3m + 1$ を満たしていれば、正しい順序でリクエストを処理することができます。PBFTは、コンポーネント間の通信量がノード数の2乗に比例して増加するため、パブリックチェーンのような大規模ネットワークには不向きですが、ノード数が限定されたコンソーシアム型ブロックチェーン（例えば Hyperledger Fabric など）においては、非常に高速で確定的な合意をもたらすため広く利用されています。
+このプロセスを経ることで、ネットワーク内に $m$ 個の故障・悪意あるノードが存在しても、総ノード数が $n \ge 3m + 1$ を満たしていれば、正しい順序でリクエストを処理することができます。PBFTは、コンポーネント間の通信量がノード数の2乗に比例して増加するため、パブリックチェーンのような大規模ネットワークには不向きですが、ノード数が限定されたコンソーシアム型[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)（例えば Hyperledger Fabric など）においては、非常に高速で確定的な合意をもたらすため広く利用されています。
 
 ### ナカモト・コンセンサス (Proof of Work)
 
-[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)の生みの親であるサトシ・ナカモトは、全く新しいアプローチでこの問題に対処しました。それが **Proof of Work** (PoW) と、最も長いチェーンを正とするルールを組み合わせた **ナカモト・コンセンサス** です。
+[ビットコイン](https://kenji.blog/p/cryptocurrency-and-bitcoin/)の生みの親であるサトシ・ナカモトは、全く新しいアプローチでこの問題に対処しました。それが **Proof of Work** ([PoW](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)) と、最も長いチェーンを正とするルールを組み合わせた **ナカモト・コンセンサス** です。
 
 ナカモト・コンセンサスでは、数学的な計算競争（マイニング）に勝った者だけがブロックを提案できる権利を得ます。嘘の情報をネットワークに認識させるためには、ネットワーク全体の計算力の過半数（51%以上）を支配する必要があり、現実的には極めて困難な設計となっています。これにより、不特定多数が参加するオープンなネットワークにおいて、確率的に[ビザンチン将軍問題](https://kenji.blog/p/byzantine-generals-problem/)を解決したと評価されています。
 
-### PoS (Proof of Stake) における BFT の応用
+### [PoS](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Stake) における BFT の応用
 
-ナカモト・コンセンサスは画期的でしたが、マイニングに莫大な電力を消費するという課題がありました。これを解決するために登場したのが、ノードが保有する[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)の量（ステーク）に応じてブロック提案権を与える **Proof of Stake** (PoS) です。
+ナカモト・コンセンサスは画期的でしたが、マイニングに莫大な電力を消費するという課題がありました。これを解決するために登場したのが、ノードが保有する[暗号資産](https://kenji.blog/p/cryptocurrency-and-bitcoin/)の量（ステーク）に応じてブロック提案権を与える **Proof of Stake** ([PoS](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)) です。
 
 イーサリアム (Ethereum) の Casper や、コスモス (Cosmos) の Tendermint など、最新の PoS アルゴリズムの多くは、この BFT をベースに設計されています。例えば Tendermint は、前述の PBFT の考え方をさらに洗練させ、ステーク量による重み付けを取り入れた「バリデーター（承認者）」のネットワークで合意を形成します。バリデーターの 2/3 以上の署名が集まらなければ次のブロックが生成されない仕組みになっており、まさに $n \ge 3m + 1$ の条件（裏切り者が 1/3 未満）を現代のパブリックチェーンで実現した好例と言えます。
 

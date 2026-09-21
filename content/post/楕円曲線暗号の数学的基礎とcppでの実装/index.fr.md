@@ -17,7 +17,7 @@ Dans cet article, nous expliquerons en profondeur, avec un volume de contenu imp
 
 ---
 
-## 1. Pourquoi la cryptographie sur les courbes elliptiques ? (Comparaison avec RSA)
+## 1. Pourquoi la cryptographie sur les courbes elliptiques ? (Comparaison avec [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/))
 
 Pendant longtemps, le synonyme de cryptographie à clé publique a été la **cryptographie RSA**. La sécurité de RSA repose sur la "difficulté de la factorisation en nombres premiers de très grands nombres composés". Cependant, avec l'amélioration de la puissance de calcul des ordinateurs, il a été nécessaire d'allonger continuellement la taille des clés RSA (le nombre de bits du module) pour maintenir la sécurité. Aujourd'hui, une taille de clé d'au moins 2048 bits est recommandée, voire 3072 bits ou 4096 bits pour plus de sécurité.
 
@@ -435,7 +435,7 @@ La cryptographie sur les courbes elliptiques (ECC) peut sembler mystérieuse à 
 
 Cet article a expliqué les points importants suivants :
 
-1. **Supériorité par rapport à RSA** : Offre une sécurité forte avec une taille de clé très courte, ce qui est optimal pour l'ère moderne du mobile et de l'IoT.
+1. **Supériorité par rapport à [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)** : Offre une sécurité forte avec une taille de clé très courte, ce qui est optimal pour l'ère moderne du mobile et de l'IoT.
 2. **Fondements de la théorie des groupes et des corps finis** : Les structures mathématiques sur lesquelles repose l'ECC.
 3. **Formules d'addition et de doublement** : Méthode d'implémentation des opérations algébriques de groupe à l'aide de l'équation de Weierstrass.
 4. **Menace des attaques par canaux auxiliaires** : Le fait que les branchements conditionnels dépendants des bits de la clé privée créent une vulnérabilité fatale.
@@ -443,7 +443,7 @@ Cet article a expliqué les points importants suivants :
 
 Écrire soi-même une bibliothèque cryptographique fonctionnant en environnement de production est fortement déconseillé ("Don't roll your own crypto") car les risques de sécurité sont extrêmement élevés. Cependant, comprendre en profondeur les algorithmes et le contexte mathématique qui fonctionnent en son sein devrait être une arme incroyablement puissante pour les ingénieurs concevant et exploitant des systèmes plus sécurisés et plus performants.
 
-Dans le prochain article, nous approfondirons le mécanisme de l'**ECDSA (Elliptic Curve Digital Signature Algorithm)**, un algorithme de signature numérique utilisant ces courbes elliptiques, ainsi que les **signatures de Schnorr** adoptées par [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/).
+Dans le prochain article, nous approfondirons le mécanisme de l'**ECDSA (Elliptic Curve [Digital Signature](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) Algorithm)**, un algorithme de signature numérique utilisant ces courbes elliptiques, ainsi que les **signatures de Schnorr** adoptées par [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/).
 
 
 

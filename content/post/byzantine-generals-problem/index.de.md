@@ -12,7 +12,7 @@ tags:
 slug: "byzantine-generals-problem"
 ---
 
-Beim Erlernen von verteilten Systemen und Blockchain-Technologie stößt man fast zwangsläufig auf das **Problem der byzantinischen Generäle** ([Byzantine Generals](https://kenji.blog/de/p/byzantine-generals-problem-consensus/) Problem). Es behandelt das äußerst wichtige Thema, wie ein System als Ganzes einen korrekten Konsens bilden kann, wenn sich im Netzwerk „Verräter“ oder „fehlerhafte Knoten“ befinden.
+Beim Erlernen von verteilten Systemen und [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Technologie stößt man fast zwangsläufig auf das **Problem der byzantinischen Generäle** ([Byzantine Generals](https://kenji.blog/de/p/byzantine-generals-problem-consensus/) Problem). Es behandelt das äußerst wichtige Thema, wie ein System als Ganzes einen korrekten Konsens bilden kann, wenn sich im Netzwerk „Verräter“ oder „fehlerhafte Knoten“ befinden.
 
 In diesem Artikel werden wir dieses **Problem der byzantinischen Generäle** von den Grundlagen bis zur Anwendung detailliert erläutern, unterstützt durch anschauliche Geschichten, mathematische Bedingungen und Diagramme.
 
@@ -120,7 +120,7 @@ Was wäre, wenn die gesendeten Nachrichten mit einer „unfälschbaren digitalen
 
 In diesem Modell können die vom Kommandanten ausgegebenen Befehle auf dem Weg nicht mehr manipuliert werden. Als Ergebnis ist mathematisch erwiesen, dass ein Konsens gebildet werden kann, solange $n \ge m + 2$ (also insgesamt mindestens 3 Generäle) für $m$ Verräter gilt, unabhängig davon, wie viele Verräter es gibt. In modernen Systemen übernehmen digitale Signaturen auf Basis der Public-Key-Kryptografie diese Rolle.
 
-## 4. Blockchain und byzantinische Fehlertoleranz
+## 4. [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) und byzantinische Fehlertoleranz
 
 Die Widerstandsfähigkeit gegenüber dem Problem der byzantinischen Generäle wird als **byzantinische Fehlertoleranz** (Byzantine Fault Tolerance, BFT) bezeichnet. Sie ist ein wichtiger Indikator dafür, dass ein verteiltes System Ausfälle oder böswillige Angriffe überstehen und normal weiterarbeiten kann.
 
@@ -149,19 +149,19 @@ subgraph "Hauptphasen von PBFT"
 end
 ```
 
-Durch diesen Prozess können Anfragen in der richtigen Reihenfolge verarbeitet werden, selbst wenn es $m$ fehlerhafte oder bösartige Knoten im Netzwerk gibt, solange die Gesamtzahl der Knoten $n \ge 3m + 1$ erfüllt. Da bei PBFT das Kommunikationsvolumen zwischen den Komponenten quadratisch mit der Anzahl der Knoten ansteigt, eignet es sich nicht für groß angelegte Netzwerke wie Public Blockchains, wird jedoch häufig in Konsortium-Blockchains mit einer begrenzten Anzahl von Knoten (z. B. Hyperledger Fabric) verwendet, da es einen sehr schnellen und deterministischen Konsens ermöglicht.
+Durch diesen Prozess können Anfragen in der richtigen Reihenfolge verarbeitet werden, selbst wenn es $m$ fehlerhafte oder bösartige Knoten im Netzwerk gibt, solange die Gesamtzahl der Knoten $n \ge 3m + 1$ erfüllt. Da bei PBFT das Kommunikationsvolumen zwischen den Komponenten quadratisch mit der Anzahl der Knoten ansteigt, eignet es sich nicht für groß angelegte Netzwerke wie Public [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s, wird jedoch häufig in Konsortium-Blockchains mit einer begrenzten Anzahl von Knoten (z. B. Hyperledger Fabric) verwendet, da es einen sehr schnellen und deterministischen Konsens ermöglicht.
 
 ### Nakamoto-Konsens (Proof of Work)
 
-Satoshi Nakamoto, der Erfinder von [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/), ging dieses Problem mit einem völlig neuen Ansatz an. Dies ist der **Nakamoto-Konsens**, eine Kombination aus **Proof of Work** (PoW) und der Regel, dass die längste Kette als gültig betrachtet wird.
+Satoshi Nakamoto, der Erfinder von [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/), ging dieses Problem mit einem völlig neuen Ansatz an. Dies ist der **Nakamoto-Konsens**, eine Kombination aus **Proof of Work** ([PoW](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)) und der Regel, dass die längste Kette als gültig betrachtet wird.
 
 Beim Nakamoto-Konsens erhält nur derjenige, der einen mathematischen Rechenwettbewerb (Mining) gewinnt, das Recht, einen Block vorzuschlagen. Um dem Netzwerk falsche Informationen aufzuzwingen, müsste man die Mehrheit (mehr als 51 %) der Rechenleistung des gesamten Netzwerks kontrollieren, was in der Realität extrem schwierig ist. Dadurch wird davon ausgegangen, dass das Problem der byzantinischen Generäle in einem offenen Netzwerk mit einer unbestimmten Anzahl von Teilnehmern probabilistisch gelöst wurde.
 
-### Anwendung von BFT im PoS (Proof of Stake)
+### Anwendung von BFT im [PoS](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Stake)
 
 Obwohl der Nakamoto-Konsens revolutionär war, hatte er das Problem, dass das Mining enorme Mengen an Strom verbraucht. Zur Lösung dieses Problems wurde der **Proof of Stake** (PoS) eingeführt, bei dem das Recht, Blöcke vorzuschlagen, entsprechend der Menge der von den Knoten gehaltenen Krypto-Assets (Stake) vergeben wird.
 
-Viele der neuesten PoS-Algorithmen, wie Casper von Ethereum oder Tendermint von Cosmos, sind auf Basis dieser BFT konzipiert. Beispielsweise verfeinert Tendermint das oben erwähnte PBFT-Konzept und bildet einen Konsens in einem Netzwerk von „Validatoren (Prüfern)“, das eine Gewichtung nach der Höhe des Stakes einführt. Es ist so aufgebaut, dass der nächste Block nur generiert wird, wenn die Signaturen von mehr als 2/3 der Validatoren gesammelt werden, was ein hervorragendes Beispiel dafür ist, wie die Bedingung $n \ge 3m + 1$ (Verräter machen weniger als 1/3 aus) in modernen Public Blockchains realisiert wird.
+Viele der neuesten PoS-Algorithmen, wie Casper von Ethereum oder Tendermint von Cosmos, sind auf Basis dieser BFT konzipiert. Beispielsweise verfeinert Tendermint das oben erwähnte PBFT-Konzept und bildet einen Konsens in einem Netzwerk von „Validatoren (Prüfern)“, das eine Gewichtung nach der Höhe des Stakes einführt. Es ist so aufgebaut, dass der nächste Block nur generiert wird, wenn die Signaturen von mehr als 2/3 der Validatoren gesammelt werden, was ein hervorragendes Beispiel dafür ist, wie die Bedingung $n \ge 3m + 1$ (Verräter machen weniger als 1/3 aus) in modernen Public [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s realisiert wird.
 
 ## 5. Mathematische Modellierung von BFT und ihre Anwendung
 

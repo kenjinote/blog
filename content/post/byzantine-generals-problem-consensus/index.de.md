@@ -15,7 +15,7 @@ tags:
   - algorithm
 ---
 
-Im Kern der modernen Cloud-Computing- und Blockchain-Technologien gibt es **Konsensalgorithmen** (consensus algorithms), die den Zustand über mehrere Computer (Knoten) hinweg teilen und synchronisieren. In diesem Artikel werden wir von den theoretischen Grundlagen des "Problems der byzantinischen Generäle" (Byzantine Generals Problem) ausgehen und uns eingehend mit **Paxos** und **Raft**, die in praktischen Systemen weit verbreitet sind, sowie mit **BFT (Byzantine Fault Tolerance)** in Umgebungen mit böswilligen Teilnehmern befassen, einschließlich mathematischer Beweise und Code-Implementierungen.
+Im Kern der modernen Cloud-Computing- und [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Technologien gibt es **Konsensalgorithmen** (consensus algorithms), die den Zustand über mehrere Computer (Knoten) hinweg teilen und synchronisieren. In diesem Artikel werden wir von den theoretischen Grundlagen des "Problems der byzantinischen Generäle" (Byzantine Generals Problem) ausgehen und uns eingehend mit **Paxos** und **Raft**, die in praktischen Systemen weit verbreitet sind, sowie mit **BFT (Byzantine Fault Tolerance)** in Umgebungen mit böswilligen Teilnehmern befassen, einschließlich mathematischer Beweise und Code-Implementierungen.
 
 ## 1. Konsensbildung und Herausforderungen in verteilten Systemen
 
@@ -268,7 +268,7 @@ sequenceDiagram
     B2->>C: "Reply"
 ```
 
-PBFT arbeitet mit einer Knotenkonfiguration von $ n = 3f + 1 $, die die zuvor erwähnte Bedingung $ n > 3f $ erfüllt. Es beinhaltet einen Kommunikations-Overhead von $ O(N^2) $ zwischen den Knoten, bietet jedoch eine endgültige Übereinkunft (Finality). Dies wird in modernen Konsortium-Blockchains (wie Hyperledger Fabric) weit verbreitet verwendet.
+PBFT arbeitet mit einer Knotenkonfiguration von $ n = 3f + 1 $, die die zuvor erwähnte Bedingung $ n > 3f $ erfüllt. Es beinhaltet einen Kommunikations-Overhead von $ O(N^2) $ zwischen den Knoten, bietet jedoch eine endgültige Übereinkunft (Finality). Dies wird in modernen Konsortium-[Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s (wie Hyperledger Fabric) weit verbreitet verwendet.
 
 ### 5.2 Erneute Überprüfung der mathematischen Einschränkungen
 
@@ -292,4 +292,4 @@ In diesem Artikel haben wir die Konsensbildung, die größte Herausforderung in 
 *   **Raft** : Legt den Fokus auf Verständlichkeit und einfache Implementierung und ist zum De-facto-Standard für moderne verteilte KVS geworden.
 *   **PBFT** : Erreicht einen deterministischen Konsens in Umgebungen mit böswilligen Knoten und wurde zur Grundlage der Blockchain-Technologie.
 
-Heute entstehen ständig neue BFT-Algorithmen, wie der in Bitcoin verwendete **Nakamoto Consensus (PoW)**, Tendermint und HotStuff, die den Kommunikations-Overhead von PBFT reduzieren und die Skalierbarkeit verbessern. Die Wahl des richtigen Konsensalgorithmus in Abhängigkeit von den Systemanforderungen (Knotenzuverlässigkeit, erforderlicher Durchsatz, Latenz) ist der Schlüssel zum Aufbau eines robusten verteilten Systems.
+Heute entstehen ständig neue BFT-Algorithmen, wie der in Bitcoin verwendete **Nakamoto [Consensus](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) ([PoW](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/))**, Tendermint und HotStuff, die den Kommunikations-Overhead von PBFT reduzieren und die Skalierbarkeit verbessern. Die Wahl des richtigen Konsensalgorithmus in Abhängigkeit von den Systemanforderungen (Knotenzuverlässigkeit, erforderlicher Durchsatz, Latenz) ist der Schlüssel zum Aufbau eines robusten verteilten Systems.

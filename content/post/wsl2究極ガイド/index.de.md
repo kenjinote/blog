@@ -321,7 +321,7 @@ Nach dem Neustart funktioniert `systemctl start docker` genau wie in einer nativ
 
 Bei der Durchführung von SSH-Klonen in Git oder Verbindungen zu Remote-Servern über SSH ist es sehr mühsam, separate SSH-Schlüssel auf der Windows- und der WSL-Seite zu verwalten. Um Sicherheit und Komfort in Einklang zu bringen, richten wir eine Brücke vom auf der Windows-Seite laufenden SSH-Agenten (oder einem Passwort-Manager wie 1Password) zur WSL-Seite ein.
 
-Hier erklären wir die sicherste und modernste Methode, den **SSH-Agenten von 1Password** oder den **OpenSSH Authentication Agent von Windows** zu verwenden und ihn mithilfe von `npiperelay` oder `socat` an den UNIX-Domain-Socket von WSL2 weiterzuleiten.
+Hier erklären wir die sicherste und modernste Methode, den **SSH-Agenten von 1Password** oder den **OpenSSH [Authentication](https://kenji.blog/de/p/oauth2-oidc-authentication-authorization-difference/) Agent von Windows** zu verwenden und ihn mithilfe von `npiperelay` oder `socat` an den UNIX-Domain-Socket von WSL2 weiterzuleiten.
 
 ### ssh-agent Socket-Weiterleitung
 

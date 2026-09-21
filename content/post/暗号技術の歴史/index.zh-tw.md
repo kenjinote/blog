@@ -14,7 +14,7 @@ description: '從古代的凱撒密碼，到恩尼格瑪密碼機、公開金鑰
 
 密碼學（[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）是為了保持資訊機密性的一門技術，它伴隨著人類歷史不斷演進。從古代戰爭中傳遞秘密指令，到現代網際網路保護信用卡資訊，密碼學的目的始終如一：即「確保只有預期的接收者能理解資訊，而第三方無法解密」。
 
-在現代資訊安全中，密碼學不僅僅是「隱藏資訊（機密性: Confidentiality）」，它還擔負著確保資料「完整性（Integrity）」、「身分鑑別（Authentication）」與「不可否認性（Non-repudiation）」等重要角色。
+在現代資訊安全中，密碼學不僅僅是「隱藏資訊（機密性: Confidentiality）」，它還擔負著確保資料「完整性（Integrity）」、「身分鑑別（[Authentication](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)）」與「不可否認性（Non-repudiation）」等重要角色。
 
 本文將從古代簡單的替換式密碼開始，歷經機械式密碼、現代的對稱金鑰與公開金鑰加密，一直到量子電腦實用化所帶來的「後量子密碼學（PQC）」時代，從技術與數學的角度詳細剖析密碼技術演進的歷史。
 
@@ -135,7 +135,7 @@ graph TD
 
 ---
 
-# 5. 公開金鑰加密的革命：從 Diffie-Hellman 到 RSA
+# 5. 公開金鑰加密的革命：從 Diffie-Hellman 到 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)
 
 對稱金鑰加密存在一個致命的弱點，那就是「金鑰配送問題（Key Distribution Problem）」。也就是在開始加密通訊之前，如何與遠方的對象安全地共享「對稱金鑰」的問題。解決這個問題的正是 1970 年代誕生的「公開金鑰加密」。
 
@@ -195,11 +195,11 @@ rsa_example()
 
 # 6. 橢圓曲線密碼學（ECC）的崛起
 
-RSA 加密雖然強大，但隨著電腦效能的提升，為了維持安全性必須加長金鑰長度（目前為 2048 位元或 3072 位元），這導致了運算成本增加的問題。
+[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密雖然強大，但隨著電腦效能的提升，為了維持安全性必須加長金鑰長度（目前為 2048 位元或 3072 位元），這導致了運算成本增加的問題。
 
 因此在 1985 年提出了「橢圓曲線密碼學（Elliptic Curve [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy: ECC）」。這利用了有限體上橢圓曲線（通常為 $y^2 = x^3 + ax + b$ 形式）的點加法。
 
-橢圓曲線上的離散對數問題（ECDLP）已知比質因數分解問題更難求解， **ECC 只要 256 位元的金鑰長度，就能實現與 RSA 3072 位元同等的安全性** 。這使得在智慧型手機或 IoT 裝置等運算資源有限的環境中，也能進行高速且安全的加密通訊（如 ECDSA 或 ECDH 等）。
+橢圓曲線上的離散對數問題（ECDLP）已知比質因數分解問題更難求解， **ECC 只要 256 位元的金鑰長度，就能實現與 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 3072 位元同等的安全性** 。這使得在智慧型手機或 IoT 裝置等運算資源有限的環境中，也能進行高速且安全的加密通訊（如 ECDSA 或 ECDH 等）。
 
 ---
 
@@ -261,7 +261,7 @@ timeline
 
 密碼技術的歷史，就是發明新加密方式（盾）與破解它的新解密手法（矛）之間無止盡的戰鬥歷史。
 
-凱撒密碼敗給了頻率分析，號稱無敵的恩尼格瑪密碼機則敗給了圖靈的天才頭腦與機器的力量。而現在，支撐現代網際網路社會根基的 RSA 與 ECC 等強大密碼，也正暴露在量子電腦這個全新的「矛」的威脅之下。
+凱撒密碼敗給了頻率分析，號稱無敵的恩尼格瑪密碼機則敗給了圖靈的天才頭腦與機器的力量。而現在，支撐現代網際網路社會根基的 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 與 ECC 等強大密碼，也正暴露在量子電腦這個全新的「矛」的威脅之下。
 
 然而，人類已經放眼未來的下一步，正在準備名為後量子密碼學（PQC）的全新「盾」。目前，在全世界的 IT 基礎設施中，確保從現有公開金鑰加密轉移至 PQC 的準備（確保密碼靈活性，[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/) Agility）已成為當務之急。
 

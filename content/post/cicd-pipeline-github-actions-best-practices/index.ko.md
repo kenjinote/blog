@@ -310,7 +310,7 @@ jobs:
       node-version: '20'
 ```
 
-## OIDC (OpenID Connect) 를 이용한 안전한 클라우드 연동
+## [OIDC](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) ([OpenID Connect](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)) 를 이용한 안전한 클라우드 연동
 
 AWS, GCP, Azure 등의 클라우드 프로바이더로 배포할 때, 장기적인 자격 증명(시크릿 키 등)을 GitHub에 저장하는 것은 보안 리스크가 따릅니다.
 
@@ -364,6 +364,6 @@ $ S = \lambda \times (T_{manual} - T_{auto}) $
 *   **자주 통합하기:** 버그를 조기에 발견하기 위해 작은 변경 사항을 자주 병합합시다.
 *   **캐시 활용하기:** 워크플로 실행 시간을 단축하고 개발 경험을 향상합시다.
 *   **품질과 보안 자동화하기:** Lint, 테스트, 취약점 스캔을 파이프라인에 편입합시다.
-*   **OIDC 이용하기:** 클라우드 프로바이더와의 연동은 시크릿 키 대신 OIDC를 통한 임시 토큰을 이용합시다.
+*   **[OIDC](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) 이용하기:** 클라우드 프로바이더와의 연동은 시크릿 키 대신 OIDC를 통한 임시 토큰을 이용합시다.
 
 GitHub Actions는 매우 유연하고 강력한 도구입니다. 먼저 Lint 자동화와 같은 작은 첫걸음부터 시작하여 프로젝트 성장에 맞춰 점진적으로 파이프라인을 확장해 나가는 것을 권장합니다. 자동화의 힘을 빌려 더욱 빠르고 고품질의 소프트웨어 개발을 실현합시다.

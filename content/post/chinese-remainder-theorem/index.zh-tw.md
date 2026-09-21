@@ -14,7 +14,7 @@ tags:
 
 ## 引言
 
-中國剩餘定理（[Chinese Remainder Theorem](https://kenji.blog/zh-tw/p/chinese-remainder-theorem/)，簡稱CRT）是數論中最重要且優美的定理之一。其起源可以追溯到3世紀至5世紀左右編纂的古代中國數學著作《孫子算經》。這個從古代樸素的算術問題開始的定理，在經過幾千年後的現代，在我們日常使用的互聯網安全通訊所依賴的 **RSA加密** 等公鑰加密技術中，發揮著不可或缺的作用。
+中國剩餘定理（[Chinese Remainder Theorem](https://kenji.blog/zh-tw/p/chinese-remainder-theorem/)，簡稱CRT）是數論中最重要且優美的定理之一。其起源可以追溯到3世紀至5世紀左右編纂的古代中國數學著作《孫子算經》。這個從古代樸素的算術問題開始的定理，在經過幾千年後的現代，在我們日常使用的互聯網安全通訊所依賴的 **[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密** 等公鑰加密技術中，發揮著不可或缺的作用。
 
 本文將詳細解說 **中國剩餘定理** ，從其歷史背景到數學上的嚴格定義、具體的計算步驟，以及在現代密碼學理論中的應用，並配以圖解和具體例子。
 
@@ -104,7 +104,7 @@ $233 \equiv 23 \pmod{105}$
 
 因此，最小的正數解為 **23** ，完美符合孫子問題的解。
 
-## 現代應用：RSA加密與CRT
+## 現代應用：[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密與CRT
 
 作為古代數學難題的 **中國剩餘定理** ，在現代數位社會中擁有著極其重要的實際用途。其代表性例子就是在 **RSA加密** 中加速解密和簽章生成。
 
@@ -141,7 +141,7 @@ graph TD
    $M_q = C^{d_q} \pmod q$
 3. 對 $M_p$ 和 $M_q$ 應用CRT，求出 $M \pmod N$。
 
-當模數的位元長度減半（例如1024位元）時，冪運算的成本大約會變為1/8。即使執行兩次，總成本也只是大約1/4。利用RSA-CRT，能夠使解密和簽章生成的運算 **提速約4倍** 。對於智慧型手機和智慧卡等計算資源有限的設備，這種加速是至關重要的。
+當模數的位元長度減半（例如1024位元）時，冪運算的成本大約會變為1/8。即使執行兩次，總成本也只是大約1/4。利用[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)-CRT，能夠使解密和簽章生成的運算 **提速約4倍** 。對於智慧型手機和智慧卡等計算資源有限的設備，這種加速是至關重要的。
 
 ## 中國剩餘定理的程式實作
 

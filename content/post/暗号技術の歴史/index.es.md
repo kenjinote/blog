@@ -14,7 +14,7 @@ description: 'Desde el antiguo cifrado César hasta Enigma, la criptografía de 
 
 La criptografía ([Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy) es la tecnología utilizada para mantener el secreto de la información y ha evolucionado junto con la historia de la humanidad. Desde la transmisión de órdenes secretas en las guerras antiguas hasta la protección de la información de tarjetas de crédito en el internet moderno, el propósito de la criptografía ha sido constante. Es "garantizar que solo el destinatario previsto pueda entender la información y que no pueda ser descifrada por terceros".
 
-En la seguridad de la información moderna, la criptografía no se limita simplemente al "secreto de la información (Confidencialidad: Confidentiality)", sino que desempeña roles cruciales como la "Integridad (Integrity)", la "Autenticación (Authentication)" y el "No repudio (Non-repudiation)" de los datos.
+En la seguridad de la información moderna, la criptografía no se limita simplemente al "secreto de la información (Confidencialidad: Confidentiality)", sino que desempeña roles cruciales como la "Integridad (Integrity)", la "Autenticación ([Authentication](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/))" y el "No repudio (Non-repudiation)" de los datos.
 
 En este artículo, desentrañaremos en detalle la historia de la evolución de la criptografía desde una perspectiva técnica y matemática, comenzando desde los simples cifrados de sustitución de la antigüedad, pasando por los cifrados mecánicos, la criptografía moderna de clave simétrica y pública, hasta llegar a la era de la "criptografía poscuántica (PQC)", que llegará con la implementación práctica de las computadoras cuánticas.
 
@@ -135,7 +135,7 @@ graph TD
 
 ---
 
-# 5. La revolución de la criptografía de clave pública: de Diffie-Hellman a RSA
+# 5. La revolución de la criptografía de clave pública: de Diffie-Hellman a [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)
 
 La criptografía de clave simétrica tenía una debilidad fatal. Ese era el "Problema de distribución de claves (Key Distribution Problem)". Este es el problema de cómo compartir de forma segura una "clave común" con una parte lejana antes de iniciar una comunicación cifrada. La "criptografía de clave pública", nacida en la década de 1970, resolvió este problema.
 
@@ -148,7 +148,7 @@ En 1976, Whitfield Diffie y Martin Hellman publicaron el artículo pionero "New 
 4. Alice calcula $K = B^a \pmod{p}$ y Bob calcula $K = A^b \pmod{p}$.
 5. Por las leyes de los exponentes, $K = (g^b)^a = (g^a)^b = g^{ab} \pmod{p}$, y comparten con éxito la misma clave $K$.
 
-## Criptografía RSA
+## Criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)
 Al año siguiente, en 1977, Ron Rivest, Adi Shamir y Leonard Adleman idearon la "Criptografía RSA". Se basa en la propiedad de que "la factorización de números primos de números compuestos enormes es difícil".
 
 **Mecanismo matemático de RSA:**
@@ -195,11 +195,11 @@ rsa_example()
 
 # 6. El auge de la criptografía de curva elíptica (ECC)
 
-Aunque la criptografía RSA es poderosa, a medida que el rendimiento de las computadoras ha mejorado, se ha vuelto necesario utilizar longitudes de clave más largas (actualmente 2048 o 3072 bits) para mantener la seguridad, lo que aumenta los costos de cálculo.
+Aunque la criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) es poderosa, a medida que el rendimiento de las computadoras ha mejorado, se ha vuelto necesario utilizar longitudes de clave más largas (actualmente 2048 o 3072 bits) para mantener la seguridad, lo que aumenta los costos de cálculo.
 
 Por lo tanto, en 1985 se propuso la "Criptografía de curva elíptica (Elliptic Curve [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/)graphy: ECC)". Esto utiliza la suma de puntos en curvas elípticas (generalmente en la forma $y^2 = x^3 + ax + b$) sobre cuerpos finitos.
 
-Se sabe que el problema del logaritmo discreto de curva elíptica (ECDLP) es aún más difícil de resolver que el problema de factorización de enteros, y **la misma seguridad que RSA de 3072 bits se puede lograr con ECC utilizando una longitud de clave de solo 256 bits**. Esto ha permitido una comunicación cifrada rápida y segura (como ECDSA y ECDH) incluso en entornos con recursos informáticos limitados, como teléfonos inteligentes y dispositivos IoT.
+Se sabe que el problema del logaritmo discreto de curva elíptica (ECDLP) es aún más difícil de resolver que el problema de factorización de enteros, y **la misma seguridad que [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) de 3072 bits se puede lograr con ECC utilizando una longitud de clave de solo 256 bits**. Esto ha permitido una comunicación cifrada rápida y segura (como ECDSA y ECDH) incluso en entornos con recursos informáticos limitados, como teléfonos inteligentes y dispositivos IoT.
 
 ---
 
@@ -261,7 +261,7 @@ timeline
 
 La historia de la criptografía es la historia de una batalla interminable entre la invención de nuevos métodos de cifrado (escudos) y nuevas técnicas de descifrado (espadas) para romperlos.
 
-El cifrado César fue derrotado por el análisis de frecuencias, y la invencible Enigma fue derrotada por el genio de Turing y el poder de las máquinas. Y ahora, las poderosas criptografías como RSA y ECC, que sustentan la sociedad de Internet moderna, también están amenazadas por una nueva "espada", las computadoras cuánticas.
+El cifrado César fue derrotado por el análisis de frecuencias, y la invencible Enigma fue derrotada por el genio de Turing y el poder de las máquinas. Y ahora, las poderosas criptografías como [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) y ECC, que sustentan la sociedad de Internet moderna, también están amenazadas por una nueva "espada", las computadoras cuánticas.
 
 Sin embargo, la humanidad ya está mirando hacia el futuro y preparando un nuevo "escudo", la criptografía poscuántica (PQC). Actualmente, prepararse para la transición de la criptografía de clave pública existente a PQC (garantizar la agilidad criptográfica: [Crypto](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/) Agility) es una tarea urgente para la infraestructura de TI en todo el mundo.
 

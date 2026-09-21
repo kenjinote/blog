@@ -11,7 +11,7 @@ tags: ["Big O Notation", "Prime Factorization", "Algorithms", "RSA"]
 
 # Introduction : Pourquoi la factorisation en nombres premiers est-elle « difficile » ?
 
-Dans la société Internet moderne, si nous pouvons faire des achats en ligne en toute tranquillité et échanger des informations confidentielles, c'est grâce à l'existence de la « cryptographie ». Et la sécurité de cette cryptographie (en particulier le chiffrement RSA, largement utilisé) repose sur un fait mathématique : « la factorisation de très grands nombres entiers en nombres premiers est extrêmement difficile ».
+Dans la société Internet moderne, si nous pouvons faire des achats en ligne en toute tranquillité et échanger des informations confidentielles, c'est grâce à l'existence de la « cryptographie ». Et la sécurité de cette cryptographie (en particulier le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), largement utilisé) repose sur un fait mathématique : « la factorisation de très grands nombres entiers en nombres premiers est extrêmement difficile ».
 
 À première vue, la factorisation en nombres premiers peut sembler être une tâche simple consistant « juste à décomposer un nombre en produits de nombres premiers ». Cependant, lorsque le nombre de chiffres devient important, cela se transforme en un problème tellement complexe que même les superordinateurs les plus rapides du monde, fonctionnant pendant des décennies ou des siècles, ne pourraient le résoudre. La factorisation que nous apprenons à l'école est au mieux une tâche simple consistant à diviser par $2$, $3$ ou $5$, mais face au produit de deux nombres premiers inconnus de plusieurs centaines de chiffres, cette approche simpliste s'effondre complètement.
 
@@ -94,7 +94,7 @@ Vous comprenez désormais à quel point la différence de complexité est crucia
 
 ---
 
-# Mécanisme du chiffrement RSA et le problème de la factorisation en nombres premiers
+# Mécanisme du chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et le problème de la factorisation en nombres premiers
 
 Pour comprendre pourquoi la factorisation en nombres premiers est importante, rappelons brièvement le fonctionnement du chiffrement RSA. Le chiffrement RSA est un système de cryptographie à clé publique développé en 1977 par Ronald Rivest, Adi Shamir et Leonard Adleman.
 
@@ -165,7 +165,7 @@ Exprimé avec la taille d'entrée $n = \log_2 N$ :
 $$ N^{1/4} = (2^n)^{1/4} = 2^{n/4} $$
 
 Par conséquent, la complexité est **$\mathcal{O}(2^{n/4})$**.
-Par rapport au $\mathcal{O}(2^{n/2})$ de la méthode des divisions successives, l'accélération est spectaculaire, et elle est très puissante en pratique pour factoriser des nombres de taille moyenne (plusieurs dizaines de chiffres). Cependant, elle ne parvient toujours pas à franchir la barrière du « temps exponentiel » par rapport à la longueur de bit $n$, la rendant impuissante face aux nombres gigantesques de 2048 bits (environ 600 chiffres décimaux) utilisés dans le chiffrement RSA.
+Par rapport au $\mathcal{O}(2^{n/2})$ de la méthode des divisions successives, l'accélération est spectaculaire, et elle est très puissante en pratique pour factoriser des nombres de taille moyenne (plusieurs dizaines de chiffres). Cependant, elle ne parvient toujours pas à franchir la barrière du « temps exponentiel » par rapport à la longueur de bit $n$, la rendant impuissante face aux nombres gigantesques de 2048 bits (environ 600 chiffres décimaux) utilisés dans le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/).
 
 ## 4. Crible Quadratique à Polys Multiples (MPQS: Multiple Polynomial Quadratic Sieve)
 
@@ -186,7 +186,7 @@ Le crible quadratique fut l'algorithme le plus rapide au monde jusqu'à l'appari
 
 Actuellement, l'algorithme réputé « le plus rapide au monde » pour la factorisation de nombres entiers géants dépassant 100 chiffres est le **crible du corps de nombres généralisé (GNFS)**. Conçu à la fin des années 1980, il s'agit d'un algorithme très sophistiqué qui prolonge le crible quadratique en utilisant des résultats profonds de la théorie algébrique des nombres (corps de nombres).
 
-Dans les attaques contre le chiffrement RSA (factorisation à partir de la clé publique), c'est toujours ce GNFS qui bat les records mondiaux. En 2020, on a signalé le succès de la factorisation d'un nombre composé de 829 bits (250 chiffres) (RSA-250), mais cela a nécessité l'exécution en parallèle de milliers d'ordinateurs sur une longue période.
+Dans les attaques contre le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) (factorisation à partir de la clé publique), c'est toujours ce GNFS qui bat les records mondiaux. En 2020, on a signalé le succès de la factorisation d'un nombre composé de 829 bits (250 chiffres) (RSA-250), mais cela a nécessité l'exécution en parallèle de milliers d'ordinateurs sur une longue période.
 
 ### Structure mathématique de l'algorithme
 Le GNFS est extrêmement complexe, mais il se déroule grossièrement selon les étapes suivantes.
@@ -240,7 +240,7 @@ L'un des plus grands problèmes non résolus de l'informatique est la « conject
 Le problème de la factorisation appartient à NP (la classe des problèmes dont la solution, si elle est donnée, peut être vérifiée en temps polynomial), mais il n'a pas été prouvé qu'il soit [NP-complet](https://kenji.blog/fr/p/p-vs-np-problem/) (la classe des problèmes les plus difficiles dans NP).
 De plus, il n'est pas encore prouvé s'il appartient à P (la classe des problèmes solvables en temps polynomial), c'est-à-dire s'il existe un algorithme en temps polynomial pour le résoudre.
 
-De nombreux chercheurs supposent que la factorisation appartient à une classe intermédiaire entre P et NP-complet (NP-intermédiaire). Si un algorithme résolvant la factorisation en temps polynomial sur un ordinateur classique (par exemple, $\mathcal{O}(n^3)$) venait à être découvert, ce serait un événement majeur qui ferait s'effondrer les systèmes cryptographiques du monde entier ; cependant, jusqu'à présent, aucun algorithme de ce type n'a été trouvé. Il est estimé que le déchiffrement d'une clé RSA de 2048 bits prendrait plus de temps que la durée de vie de l'univers, même si les performances des ordinateurs classiques continuaient à s'améliorer selon la loi de Moore.
+De nombreux chercheurs supposent que la factorisation appartient à une classe intermédiaire entre P et NP-complet (NP-intermédiaire). Si un algorithme résolvant la factorisation en temps polynomial sur un ordinateur classique (par exemple, $\mathcal{O}(n^3)$) venait à être découvert, ce serait un événement majeur qui ferait s'effondrer les systèmes cryptographiques du monde entier ; cependant, jusqu'à présent, aucun algorithme de ce type n'a été trouvé. Il est estimé que le déchiffrement d'une clé [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) de 2048 bits prendrait plus de temps que la durée de vie de l'univers, même si les performances des ordinateurs classiques continuaient à s'améliorer selon la loi de Moore.
 
 ## L'ordinateur quantique, un « changeur de donne (Game Changer) » : l'algorithme de Shor
 
@@ -268,7 +268,7 @@ graph LR
 ```
 
 Dans l'algorithme de Shor, le processus de « recherche de période », qui constituait un goulot d'étranglement dans les algorithmes classiques, est calculé en parallèle et en un instant grâce à l'intrication et à la superposition quantiques utilisant la « transformée de Fourier quantique (QFT) ».
-S'il devient possible de l'exécuter sur un ordinateur quantique de taille pratique (avec peu de bruit et un nombre suffisant de qubits logiques), la clé RSA de 2048 bits, actuellement considérée comme sûre, pourrait être complètement déchiffrée en quelques heures à quelques jours.
+S'il devient possible de l'exécuter sur un ordinateur quantique de taille pratique (avec peu de bruit et un nombre suffisant de qubits logiques), la clé [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) de 2048 bits, actuellement considérée comme sûre, pourrait être complètement déchiffrée en quelques heures à quelques jours.
 
 Pour se prémunir contre cette menace, les cryptographes du monde entier et le NIST (Institut national des normes et de la technologie aux États-Unis) accélèrent actuellement les travaux de normalisation pour la transition vers la « [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie post-quantique (Post-Quantum [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy : PQC) », qui reste difficile à déchiffrer même pour les ordinateurs quantiques. La cryptographie fondée sur les réseaux euclidiens (Lattice-based cryptography) en est un exemple représentatif, sa sécurité reposant sur une difficulté mathématique totalement différente de celle de la factorisation (par exemple, le problème du vecteur le plus court).
 
@@ -281,7 +281,7 @@ Dans cet article, en partant des bases de la complexité algorithmique (notation
 * La **notation Grand O ($\mathcal{O}$)** est un indicateur clé montrant le taux de croissance du nombre d'étapes de calcul par rapport à l'augmentation de la taille d'entrée $n$, et il existe un fossé infranchissable en pratique entre le temps polynomial et le temps exponentiel.
 * La **méthode des divisions successives** et l'**algorithme $\rho$ de Pollard** sont de purs algorithmes en « temps exponentiel », impuissants face aux nombres gigantesques.
 * Le **crible du corps de nombres généralisé (GNFS)**, actuellement le plus rapide des algorithmes classiques, a atteint un temps « sous-exponentiel » en exploitant une théorie algébrique des nombres avancée, mais n'atteint toujours pas un temps polynomial, et la factorisation de nombres énormes prendrait un temps astronomique.
-* Le fait **« qu'il n'existe pas (ou qu'on suppose fortement qu'il n'existe pas) d'algorithme classique résolvant ce problème en temps polynomial »** est exactement ce qui garantit la sécurité du chiffrement RSA et soutient notre société numérique moderne.
+* Le fait **« qu'il n'existe pas (ou qu'on suppose fortement qu'il n'existe pas) d'algorithme classique résolvant ce problème en temps polynomial »** est exactement ce qui garantit la sécurité du chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) et soutient notre société numérique moderne.
 * Cependant, avec l'avènement de **l'ordinateur quantique et de l'algorithme de Shor**, la factorisation en temps polynomial devient théoriquement possible, et la technologie cryptographique s'apprête à entrer dans une nouvelle ère (la cryptographie post-quantique).
 
 Le fait qu'un concept aussi abstrait que la complexité d'un algorithme soit directement lié à la sécurité de notre quotidien est l'un des aspects les plus fascinants et palpitants de l'informatique et des mathématiques. Nous vous invitons à rester attentifs aux futurs développements technologiques, en particulier à l'évolution des ordinateurs quantiques et aux transitions de la technologie cryptographique.

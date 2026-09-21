@@ -118,7 +118,7 @@ Kecuali unit $u$ ini sendiri adalah kuadrat dari sesuatu (elemen kuadrat), sisi 
 ## Tahap 5: Sihir Adleman "Karakter Kuadratik" (Quadratic Characters)
 
 Rintangan grup kelas ideal dan rintangan grup unit. Bagaimana kita mengatasi keduanya?
-Di sinilah muncul metode jenius yang disebut **"Karakter Kuadratik" (Quadratic Characters)**, yang diperkenalkan oleh kriptografer Leonard Adleman (huruf "A" di RSA) dan rekan-rekannya.
+Di sinilah muncul metode jenius yang disebut **"Karakter Kuadratik" (Quadratic Characters)**, yang diperkenalkan oleh kriptografer Leonard Adleman (huruf "A" di [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)) dan rekan-rekannya.
 
 Untuk menentukan apakah "suatu elemen benar-benar kuadrat sempurna di medan aljabar", kita menggunakan versi medan aljabar dari simbol [Legendre](https://kenji.blog/id/p/legendre/) (residu kuadrat).
 Pada matriks raksasa tadi (teka-teki untuk membuat jumlah ideal prima genap), kita secara diam-diam menambahkan beberapa lusin kondisi tambahan (kolom) yang menyatakan bahwa **"karakter kuadratik untuk beberapa ideal prima khusus $\mathfrak{q}$ juga semuanya menjadi $1$ (genap)"**.
@@ -157,7 +157,7 @@ Lebih jauh lagi, karena pasangan asli $(a, b)$ dibentuk dengan cara yang berkore
 Sekarang, tinggal berdoa agar $X$ dan $Y$ bukan merupakan solusi trivial ($X \equiv \pm Y$), lalu kita hitung:
 **$\gcd(X - Y, N)$**
 
-Jika itu adalah solusi non-trivial, algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an akan melesat dalam 0,001 detik, dan bilangan prima rahasia $p$ dan $q$, yang merupakan jantung kriptografi RSA, akan dicetak di layar keluaran.
+Jika itu adalah solusi non-trivial, algoritma [[Euclid](https://kenji.blog/id/p/euclid/)e](https://kenji.blog/p/euclid/)an akan melesat dalam 0,001 detik, dan bilangan prima rahasia $p$ dan $q$, yang merupakan jantung kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), akan dicetak di layar keluaran.
 
 ---
 

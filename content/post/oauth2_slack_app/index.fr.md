@@ -10,9 +10,9 @@ tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'Nous expliquons en détail le fonctionnement du flux d''octroi de code d''autorisation (Authorization Code Grant) d''OAuth 2.0 à travers la mise en œuvre d''une intégration d''application Slack. Il s''agit d''un guide complet couvrant des exemples concrets de code en Node.js et les meilleures pratiques de sécurité.'
 ---
 
-# Introduction : Pourquoi apprendre OAuth 2.0 ?
+# Introduction : Pourquoi apprendre [[OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) ?
 
-Dans les applications Web modernes, il est devenu courant que plusieurs services collaborent ensemble. Par exemple, des fonctionnalités telles que "Se connecter avec un compte Google", "Envoyer une notification à Slack lorsqu'une tâche Trello est mise à jour" ou "Ajouter automatiquement un lien de réunion Zoom à Google Agenda". Dans les coulisses de toutes ces actions se trouve le framework d'autorisation appelé **OAuth 2.0 (Open Authorization 2.0)**.
+Dans les applications Web modernes, il est devenu courant que plusieurs services collaborent ensemble. Par exemple, des fonctionnalités telles que "Se connecter avec un compte Google", "Envoyer une notification à Slack lorsqu'une tâche Trello est mise à jour" ou "Ajouter automatiquement un lien de réunion Zoom à Google Agenda". Dans les coulisses de toutes ces actions se trouve le framework d'autorisation appelé **OAuth 2.0 (Open [Authorization](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) 2.0)**.
 
 Auparavant, lors de l'échange de données entre différents services, des méthodes extrêmement dangereuses appelées "authentification de base" et "partage de mot de passe" étaient utilisées, où l'utilisateur donnait directement son identifiant et son mot de passe au service partenaire. Cependant, avec cette méthode, le service partenaire détient tous les droits de l'utilisateur, ce qui entraîne des risques de sécurité critiques.
 
@@ -22,7 +22,7 @@ Dans cet article, nous expliquerons le fonctionnement d'OAuth 2.0 de manière ex
 
 ---
 
-# 1. Concept de base d'OAuth 2.0 : Les 4 rôles (Roles)
+# 1. Concept de base d'[[OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) : Les 4 rôles (Roles)
 
 La première étape pour comprendre OAuth 2.0 est d'identifier précisément les acteurs (Rôles). Le RFC 6749 définit les 4 rôles suivants.
 
@@ -38,19 +38,19 @@ graph TD
 1. **Resource Owner (Propriétaire de la ressource)**
    - Il s'agit de l'entité ayant le pouvoir d'accorder l'accès à une ressource. Il désigne généralement l'"utilisateur final (humain)". Dans notre exemple, c'est "vous-même, appartenant à un espace de travail Slack et ayant la permission de publier des messages dans des canaux".
 2. **Client (Client)**
-   - C'est l'application qui tente d'accéder au serveur de ressources avec l'autorisation du propriétaire de la ressource. Dans notre exemple, c'est "l'application Node.js que vous développez (Slack App)". Bien qu'il soit appelé "Client", même s'il s'agit d'une application Web s'exécutant côté serveur, il est appelé "Client" dans le contexte d'OAuth.
-3. **Authorization Server (Serveur d'autorisation)**
+   - C'est l'application qui tente d'accéder au serveur de ressources avec l'autorisation du propriétaire de la ressource. Dans notre exemple, c'est "l'application Node.js que vous développez (Slack App)". Bien qu'il soit appelé "Client", même s'il s'agit d'une application Web s'exécutant côté serveur, il est appelé "Client" dans le contexte d'[OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/).
+3. **[Authorization](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) Server (Serveur d'autorisation)**
    - C'est le serveur qui authentifie le propriétaire de la ressource, obtient son autorisation, puis émet un jeton d'accès (access token) au client. Dans notre exemple, c'est l'infrastructure d'authentification de Slack qui fournit `slack.com/oauth/v2/authorize`.
 4. **Resource Server (Serveur de ressources)**
    - C'est le serveur qui héberge les ressources protégées, accepte les demandes d'accès aux ressources à l'aide de jetons d'accès et y répond. Dans notre exemple, ce sont les points de terminaison `slack.com/api/` qui fournissent des API comme `chat.postMessage`.
 
-Le flux OAuth, en un mot, est la série d'étapes où **"le Client, avec le consentement du Propriétaire de la ressource, reçoit un jeton d'accès du Serveur d'autorisation et l'utilise pour récupérer ou manipuler des données du Serveur de ressources"**.
+Le flux [OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/), en un mot, est la série d'étapes où **"le Client, avec le consentement du Propriétaire de la ressource, reçoit un jeton d'accès du Serveur d'autorisation et l'utilise pour récupérer ou manipuler des données du Serveur de ressources"**.
 
 ---
 
-# 2. Anatomie complète de l'octroi de code d'autorisation (Authorization Code Grant)
+# 2. Anatomie complète de l'octroi de code d'autorisation ([Authorization](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) Code Grant)
 
-Bien qu'il existe plusieurs flux (types d'octroi) dans OAuth 2.0, l'**octroi de code d'autorisation (Authorization Code Grant)** est le plus recommandé et le plus largement utilisé dans les environnements où un secret client (Client Secret) peut être conservé en toute sécurité côté serveur, comme les applications Web.
+Bien qu'il existe plusieurs flux (types d'octroi) dans [OAuth 2.0](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/), l'**octroi de code d'autorisation (Authorization Code Grant)** est le plus recommandé et le plus largement utilisé dans les environnements où un secret client (Client Secret) peut être conservé en toute sécurité côté serveur, comme les applications Web.
 
 La plus grande caractéristique de l'octroi de code d'autorisation est qu'il sépare clairement le **canal frontal (communication via le navigateur)** du **canal arrière (communication directe entre serveurs)**. Dans le canal frontal, seul un "code d'autorisation (Authorization Code)" temporaire est transmis, et l'obtention finale du "jeton d'accès" est effectuée dans le canal arrière, ce qui réduit considérablement le risque que le jeton soit divulgué dans l'historique du navigateur ou le référent.
 
@@ -99,7 +99,7 @@ Avant d'écrire du code, nous devons enregistrer "l'existence d'un nouveau clien
 3. Sur l'écran "Basic Information" après la création, obtenez les 2 informations d'identification importantes suivantes.
    - **Client ID** : Un ID qui identifie publiquement et de manière unique votre application. Il n'y a aucun problème à l'inclure dans les requêtes passant par le navigateur (canal frontal).
    - **Client Secret** : Une chaîne secrète que seule votre application connaît. **Ne l'exposez absolument jamais côté navigateur, et ne la validez (commit) pas sur GitHub, etc.**
-4. Accédez à l'écran "OAuth & Permissions" et enregistrez l'URL de rappel (callback) dans "Redirect URLs". Cette fois, en supposant un développement local, nous configurons ce qui suit.
+4. Accédez à l'écran "[OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) & Permissions" et enregistrez l'URL de rappel (callback) dans "Redirect URLs". Cette fois, en supposant un développement local, nous configurons ce qui suit.
    - `http://localhost:3000/slack/oauth_redirect`
 
 La préparation est maintenant terminée. Passons à l'implémentation du serveur.
@@ -191,7 +191,7 @@ Location: https://slack.com/oauth/v2/authorize?client_id=123.456&scope=chat%3Awr
 Set-Cookie: connect.sid=...; Path=/; HttpOnly
 ```
 
-Le navigateur de l'utilisateur naviguera immédiatement vers l'emplacement `Location` spécifié, l'écran de Slack (Consent Screen) s'affichera, et l'écran familier "My First OAuth App demande l'accès à votre espace de travail" apparaîtra.
+Le navigateur de l'utilisateur naviguera immédiatement vers l'emplacement `Location` spécifié, l'écran de Slack (Consent Screen) s'affichera, et l'écran familier "My First [OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) App demande l'accès à votre espace de travail" apparaîtra.
 
 ---
 
@@ -291,7 +291,7 @@ Cette chaîne commençant par `xoxb-` est le **Bot Access Token (Jeton d'accès 
 
 # 6. Portées de jeton et principe du moindre privilège (Principle of Least Privilege)
 
-L'un des concepts les plus importants d'OAuth 2.0 est la "Portée (Scope)". La portée désigne la plage d'autorisations associée à un jeton d'accès.
+L'un des concepts les plus importants d'[[OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) est la "Portée (Scope)". La portée désigne la plage d'autorisations associée à un jeton d'accès.
 
 Dans Slack, les autorisations sont classées très finement et se divisent principalement en **Bot Token Scopes** et **User Token Scopes**.
 - `chat:write` (Bot) : Permission pour l'application (le bot) de publier un message dans un canal en son propre nom.
@@ -305,9 +305,9 @@ Conformément au principe fondamental de sécurité "Principe du moindre privil�
 
 # 7. Sécurité avancée : PKCE (Proof Key for Code Exchange)
 
-Récemment, **PKCE (Proof Key for Code Exchange, RFC 7636, prononcé "pixy")** a été standardisé et est largement utilisé comme mécanisme pour renforcer encore la sécurité d'OAuth 2.0.
+Récemment, **PKCE (Proof Key for Code Exchange, RFC 7636, prononcé "pixy")** a été standardisé et est largement utilisé comme mécanisme pour renforcer encore la sécurité d'[[OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/).
 
-À l'origine, PKCE a été conçu pour les "clients publics" qui ne peuvent pas stocker `client_secret` en toute sécurité, tels que les applications natives (iOS/Android) ou les SPA (Single Page Applications). Cependant, à l'heure actuelle, dans les meilleures pratiques de sécurité (Draft OAuth 2.1), l'utilisation de PKCE est fortement recommandée même pour les "clients confidentiels" côté serveur.
+À l'origine, PKCE a été conçu pour les "clients publics" qui ne peuvent pas stocker `client_secret` en toute sécurité, tels que les applications natives (iOS/Android) ou les SPA (Single Page Applications). Cependant, à l'heure actuelle, dans les meilleures pratiques de sécurité (Draft [OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) 2.1), l'utilisation de PKCE est fortement recommandée même pour les "clients confidentiels" côté serveur.
 
 ## Mécanisme de PKCE et contexte mathématique
 
@@ -357,19 +357,19 @@ Le jeton d'accès (`xoxb-...`) est la "clé de rechange" pour votre espace de tr
 Assurez-vous toujours de le crypter au niveau de l'application en utilisant une cryptographie symétrique forte comme **AES-256-GCM** avant de le sauvegarder dans la base de données. La clé principale (master key) pour le cryptage/décryptage doit être strictement gérée à l'aide d'un service de gestion des clés sécurisé tel qu'AWS KMS (Key Management [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/)) ou GCP Cloud KMS.
 
 ## 2. Rotation des jetons (Token Rotation)
-Continuer à utiliser un jeton valide à long terme comporte des risques. Les implémentations récentes d'OAuth recommandent d'incorporer un mécanisme pour réémettre de nouveaux jetons d'accès toutes les quelques heures en utilisant un "Jeton de rafraîchissement (Refresh Token)" (Token Rotation). Dans l'API Slack également, il est possible d'activer la rotation des jetons dans les paramètres d'options.
+Continuer à utiliser un jeton valide à long terme comporte des risques. Les implémentations récentes d'[OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) recommandent d'incorporer un mécanisme pour réémettre de nouveaux jetons d'accès toutes les quelques heures en utilisant un "Jeton de rafraîchissement (Refresh Token)" (Token Rotation). Dans l'API Slack également, il est possible d'activer la rotation des jetons dans les paramètres d'options.
 
 ---
 
 # Résumé
 
-Dans cet article, nous avons expliqué en détail le flux d'octroi de code d'autorisation d'OAuth 2.0 avec des codes d'implémentation Node.js spécifiques pour l'intégration de Slack App.
+Dans cet article, nous avons expliqué en détail le flux d'octroi de code d'autorisation d'[OAuth 2.0](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) avec des codes d'implémentation Node.js spécifiques pour l'intégration de Slack App.
 
 1. En étant conscient des **4 rôles (RO, Client, AS, RS)**, l'architecture de l'ensemble du système devient claire.
 2. L'**octroi de code d'autorisation** garantit la sécurité en utilisant habilement le chemin de communication entre le navigateur et le serveur (canal frontal/arrière).
 3. Comprendre les mécanismes cryptographiques sous-jacents, tels que la protection [CSRF](https://kenji.blog/fr/p/web-security-basics-cors-csp/) par le **paramètre `state`** et la prévention de l'interception du code d'autorisation par **PKCE**, est un raccourci vers une implémentation sécurisée.
 4. La conception des portées (scopes) basée sur le **principe du moindre privilège** et le cryptage lors de la sauvegarde dans la base de données sont des éléments absolument indispensables pour l'exploitation.
 
-OAuth 2.0 est très profond et la RFC à elle seule a des spécifications massives, mais en apprenant de manière pratique en ciblant une plateforme réelle (Slack) de cette façon, vous devriez être en mesure de ressentir sa philosophie de conception raffinée et ses mécanismes de sécurité robustes. Nous espérons que les connaissances de cet article vous seront utiles dans le développement de vos futures applications et l'implémentation de vos intégrations d'API.
+[[OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) est très profond et la RFC à elle seule a des spécifications massives, mais en apprenant de manière pratique en ciblant une plateforme réelle (Slack) de cette façon, vous devriez être en mesure de ressentir sa philosophie de conception raffinée et ses mécanismes de sécurité robustes. Nous espérons que les connaissances de cet article vous seront utiles dans le développement de vos futures applications et l'implémentation de vos intégrations d'API.
 
 

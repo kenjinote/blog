@@ -11,7 +11,7 @@ tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 
 # 1. Pendahuluan: Fajar Kriptografi Pasca-Kuantum (PQC) dan Bangkitnya Kriptografi Berbasis Kisi
 
-Infrastruktur digital masyarakat modern saat ini ditopang oleh teknologi kriptografi kunci publik seperti kriptografi RSA dan kriptografi kurva eliptik (ECC). Metode kriptografi ini mendasarkan keamanannya pada kesulitan matematis seperti "masalah faktorisasi bilangan bulat" dan "masalah logaritma diskrit", yang diyakini tidak dapat dipecahkan secara efisien (membutuhkan waktu eksponensial) oleh komputer klasik konvensional.
+Infrastruktur digital masyarakat modern saat ini ditopang oleh teknologi kriptografi kunci publik seperti kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan kriptografi kurva eliptik (ECC). Metode kriptografi ini mendasarkan keamanannya pada kesulitan matematis seperti "masalah faktorisasi bilangan bulat" dan "masalah logaritma diskrit", yang diyakini tidak dapat dipecahkan secara efisien (membutuhkan waktu eksponensial) oleh komputer klasik konvensional.
 
 Namun, "Algoritma Shor" yang diterbitkan oleh Peter Shor pada tahun 1994, mengirimkan gelombang kejut ke dunia kriptografi. Algoritma ini secara matematis membuktikan bahwa ketika komputer kuantum skala besar terwujud, komputer tersebut akan dapat menyelesaikan masalah faktorisasi bilangan bulat dan masalah logaritma diskrit dalam waktu polinomial. Ini berarti bahwa kriptografi kunci publik yang digunakan secara luas saat ini akan dapat dipecahkan sepenuhnya di masa depan.
 
@@ -152,7 +152,7 @@ Setelah memahami kesulitan masalah LWE, mari kita lihat skema kriptografi kunci 
 3. Hasilkan matriks acak $A \in \mathbb{Z}_q^{m \times n}$.
 4. Pilih vektor kesalahan kecil $\mathbf{e} \in \mathbb{Z}_q^m$ dari distribusi kesalahan seperti distribusi Gaussian diskrit.
 5. Hitung vektor $\mathbf{b} = A \mathbf{s} + \mathbf{e} \pmod q$.
-6. Kunci publik (Public Key) adalah $(A, \mathbf{b})$.
+6. Kunci publik ([Public Key](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)) adalah $(A, \mathbf{b})$.
 7. Kunci privat (Secret Key) adalah $\mathbf{s}$.
 
 Kunci publik persis merupakan "instansiasi dari masalah LWE" itu sendiri. Menemukan kunci privat $\mathbf{s}$ dari kunci publik $(A, \mathbf{b})$ sama dengan memecahkan masalah pencarian LWE, sehingga keamanannya terjamin.
@@ -312,7 +312,7 @@ Saat ini, "CRYSTALS-Kyber" (nama standar: ML-KEM), yang dipilih oleh NIST sebaga
 
 Terakhir, mari kita sentuh bagian inti dari "Mengapa kriptografi berbasis kisi diyakini tidak dapat dipecahkan bahkan menggunakan komputer kuantum?".
 
-Algoritma Shor, yang digunakan komputer kuantum untuk memecahkan kriptografi RSA dan kriptografi kurva eliptik, pada dasarnya adalah algoritma untuk memecahkan "Masalah Subgrup Tersembunyi (Hidden Subgroup Problem: HSP)". Struktur matematika di balik RSA dan ECC (grup [Abel](https://kenji.blog/id/p/abel/)ian hingga) memiliki periodisitas, dan dengan menggunakan operasi yang unik untuk algoritma kuantum yang disebut Transformasi Fourier Kuantum (Quantum Fourier Transform: QFT), periode ini (subgrup tersembunyi) dapat diekstraksi sekaligus.
+Algoritma Shor, yang digunakan komputer kuantum untuk memecahkan kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan kriptografi kurva eliptik, pada dasarnya adalah algoritma untuk memecahkan "Masalah Subgrup Tersembunyi (Hidden Subgroup Problem: HSP)". Struktur matematika di balik RSA dan ECC (grup [Abel](https://kenji.blog/id/p/abel/)ian hingga) memiliki periodisitas, dan dengan menggunakan operasi yang unik untuk algoritma kuantum yang disebut Transformasi Fourier Kuantum (Quantum Fourier Transform: QFT), periode ini (subgrup tersembunyi) dapat diekstraksi sekaligus.
 
 Namun, masalah kisi pada dasarnya berbeda. Meskipun kisi juga memiliki periodisitas, apa yang dicari dalam SVP dan CVP adalah sifat geometris non-linear seperti "jarak terpendek" dan "penghilangan noise". Bahkan jika "transformasi Fourier kuantum pada grup [Abel](https://kenji.blog/id/p/abel/)ian" seperti algoritma Shor diterapkan secara langsung, informasi berguna yang merupakan jawaban dari masalah kisi tidak dapat diekstraksi secara efisien. Hingga saat ini, tidak ada algoritma kuantum yang dapat memecahkan SVP dan LWE dalam waktu polinomial yang telah ditemukan, dan diyakini secara luas bahwa bahkan dengan kekuatan komputasi paralel dari komputer kuantum, satu-satunya metode yang efektif hanyalah pencarian yang mendekati brute force (percepatan akar kuadrat oleh algoritma Grover).
 

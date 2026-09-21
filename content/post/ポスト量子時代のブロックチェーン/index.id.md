@@ -10,9 +10,9 @@ tags: ["Blockchain", "PQC", "Quantum Computing", "Bitcoin", "Security"]
 description: 'Kedatangan "Q-Day" ketika daya komputasi luar biasa dari komputer kuantum akan mengguncang fondasi blockchain. Dari runtuhnya ECDSA oleh algoritma Shor hingga strategi transisi ke kriptografi tahan kuantum (PQC), kami memberikan penjelasan teknis menyeluruh tentang masa depan aset kripto.'
 ---
 
-## 1. Pendahuluan: Langkah Era Pasca-Kuantum dan Krisis Blockchain
+## 1. Pendahuluan: Langkah Era Pasca-Kuantum dan Krisis [Blockchain](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/)
 
-Sejak [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) diciptakan oleh Satoshi Nakamoto pada tahun 2009, teknologi blockchain telah berkembang menjadi fondasi sistem keuangan dan aplikasi di seluruh dunia sebagai "buku besar yang terdesentralisasi dan tidak dapat diubah". Keamanan yang kuat ini didukung oleh teknologi kriptografi modern yaitu **Kriptografi Kunci Publik (Public Key [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)** dan **Fungsi Hash Kriptografi ([Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphic Hash Functions)**.
+Sejak [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) diciptakan oleh Satoshi Nakamoto pada tahun 2009, teknologi blockchain telah berkembang menjadi fondasi sistem keuangan dan aplikasi di seluruh dunia sebagai "buku besar yang terdesentralisasi dan tidak dapat diubah". Keamanan yang kuat ini didukung oleh teknologi kriptografi modern yaitu **Kriptografi Kunci Publik ([Public Key](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)** dan **Fungsi Hash Kriptografi ([Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)s)**.
 
 Teknologi kriptografi ini menjamin keamanan berdasarkan "kesulitan komputasi" matematis, di mana komputer klasik (PC dan superkomputer yang kita gunakan saat ini) tidak akan dapat memecahkannya bahkan jika menghabiskan waktu selama umur alam semesta.
 
@@ -22,7 +22,7 @@ Dalam artikel ini, kami akan menjelaskan secara mendalam dari perspektif teknis 
 
 ---
 
-## 2. Dasar-dasar Komputer Kuantum dan 2 Ancaman Utama terhadap Blockchain
+## 2. Dasar-dasar Komputer Kuantum dan 2 Ancaman Utama terhadap [Blockchain](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/)
 
 Sistem blockchain saat ini pada dasarnya terdiri dari dua elemen kriptografi berikut, yang masing-masing terpapar pada ancaman berbeda oleh algoritma kuantum.
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. Dasar dan Kesulitan Komputasi Kriptografi Kurva Eliptik (ECDSA)
 
-Banyak blockchain, termasuk [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) dan Ethereum, menggunakan **Algoritma Tanda Tangan Digital Kurva Eliptik (ECDSA: Elliptic Curve Digital Signature Algorithm)** sebagai algoritma tanda tangan digital. Secara khusus, [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) menggunakan kurva eliptik dengan parameter `secp256k1`.
+Banyak blockchain, termasuk [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) dan Ethereum, menggunakan **Algoritma Tanda Tangan Digital Kurva Eliptik (ECDSA: Elliptic Curve [Digital Signature](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) Algorithm)** sebagai algoritma tanda tangan digital. Secara khusus, [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) menggunakan kurva eliptik dengan parameter `secp256k1`.
 
 Keamanan kriptografi kurva eliptik bergantung pada kesulitan komputasi dari **Masalah Logaritma Diskrit Kurva Eliptik (ECDLP: Elliptic Curve Discrete Logarithm Problem)**.
 Kurva eliptik didefinisikan oleh persamaan dalam bentuk standar Weierstrass berikut.
@@ -62,7 +62,7 @@ Menghitung mundur (mencari logaritma diskrit) kunci privat $k$ dari kunci publik
 
 ### 2.2. Keruntuhan oleh Algoritma Shor ([Shor's Algorithm](https://kenji.blog/id/p/quantum-computing-shors-algorithm/))
 
-Namun, **Algoritma Shor** yang diumumkan oleh Peter Shor pada tahun 1994, menghancurkan premis ini sepenuhnya. Algoritma Shor pada awalnya diusulkan untuk memecahkan masalah faktorisasi prima (dasar kriptografi RSA) dalam waktu polinomial, tetapi algoritma ini juga dapat diterapkan pada masalah logaritma diskrit dan masalah logaritma diskrit kurva eliptik.
+Namun, **Algoritma Shor** yang diumumkan oleh Peter Shor pada tahun 1994, menghancurkan premis ini sepenuhnya. Algoritma Shor pada awalnya diusulkan untuk memecahkan masalah faktorisasi prima (dasar kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)) dalam waktu polinomial, tetapi algoritma ini juga dapat diterapkan pada masalah logaritma diskrit dan masalah logaritma diskrit kurva eliptik.
 
 Inti dari Algoritma Shor terletak pada penggunaan **Transformasi Fourier Kuantum (QFT: Quantum Fourier Transform)** untuk menemukan "Periode (Period)" dari suatu fungsi dengan kecepatan tinggi.
 
@@ -112,7 +112,7 @@ Jumlah gerbang kuantum yang diperlukan dalam seluruh proses ini adalah $\mathcal
 
 Ancaman lainnya adalah **Algoritma Grover**, yang diusulkan oleh Lov Grover pada tahun 1996. Ini berdampak besar pada fungsi hash (misalnya SHA-256).
 
-Dalam blockchain, fungsi hash digunakan untuk memastikan integritas data, menghasilkan alamat, dan sebagai dasar penambangan **PoW (Proof of Work)** pada [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/). Perhitungan mundur dari fungsi hash (komputasi pracitra) dapat dianggap sebagai "masalah pencarian basis data tidak terstruktur" untuk menemukan nilai input $x$ sehingga $H(x) = y$ untuk nilai output tertentu $y$.
+Dalam blockchain, fungsi hash digunakan untuk memastikan integritas data, menghasilkan alamat, dan sebagai dasar penambangan **[PoW](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Work)** pada [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/). Perhitungan mundur dari fungsi hash (komputasi pracitra) dapat dianggap sebagai "masalah pencarian basis data tidak terstruktur" untuk menemukan nilai input $x$ sehingga $H(x) = y$ untuk nilai output tertentu $y$.
 
 Dalam komputer klasik, diperlukan rata-rata $\frac{N}{2}$ percobaan, dan paling banyak $N$ percobaan, untuk menemukan jawaban yang benar dari $N$ kemungkinan. Artinya, kompleksitas komputasi adalah $\mathcal{O}(N)$.
 Namun, algoritma Grover menggunakan teknologi kuantum yang disebut "Amplifikasi Amplitudo (Amplitude Amplification)". Dengan memperkuat amplitudo probabilitas status yang menjadi jawaban yang benar secara iteratif dari semua kemungkinan dalam status superposisi, waktu pencarian dipersingkat menjadi akar kuadrat.
@@ -141,7 +141,7 @@ Di dunia di mana komputer kuantum dapat memecahkan ECDSA, kerentanan spesifik ap
 Alamat [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) (seperti [P2P](https://kenji.blog/id/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash atau P2WPKH: Pay-to-Witness-Public-Key-Hash) tidak menggunakan kunci publik itu sendiri, melainkan hash dari kunci publik yang diproses beberapa kali.
 
 $$
-\text{[Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
+\text{[Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{[Public Key](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)})))
 $$
 
 Seperti disebutkan di atas, karena fungsi hash tahan terhadap serangan kuantum (Algoritma Grover), komputer kuantum tidak dapat menghitung mundur "kunci publik" asli dari "alamat" yang merupakan nilai hash.
@@ -262,7 +262,7 @@ Dalam algoritma yang sebenarnya digunakan di blockchain dan sejenisnya (seperti 
 
 ---
 
-## 5. Tantangan Teknis Transisi PQC di Blockchain
+## 5. Tantangan Teknis Transisi PQC di [Blockchain](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/)
 
 Fakta bahwa algoritma PQC (seperti Dilithium dan SPHINCS+) ada tidak berarti bahwa mereka dapat segera diterapkan ke [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) atau Ethereum. Terdapat beberapa tantangan berat yang khusus untuk sistem terdesentralisasi.
 
@@ -337,7 +337,7 @@ Tidak perlu bagi kita pengguna dan investor aset kripto pada umumnya untuk panik
 * **Hindari menggunakan ulang alamat**: Untuk menegakkan keamanan, bukan hanya privasi, disarankan untuk tidak menyimpan dana dalam jangka waktu lama di "alamat yang telah digunakan (alamat yang pernah digunakan untuk mengirim dana sekali saja, sehingga kunci publiknya terpapar di blockchain)".
 * **Mengamati tren teknologi**: Terus awasi diskusi tentang transisi PQC di jaringan utama seperti BIP [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/) atau EIP Ethereum, serta berita mengenai hard fork, agar Anda dapat melakukan operasi migrasi dompet pada waktu yang diperlukan dengan benar.
 
-Sejarah blockchain adalah sejarah berkelanjutan antara ketahanan (resiliensi) dan pembaruan sistem dalam menghadapi ancaman teknis baru. Sama seperti mereka yang mengatasi masalah skalabilitas dan isu lingkungan (seperti transisi dari PoW ke PoS), seluruh ekosistem kemungkinan besar akan mencari solusi dan beradaptasi terhadap ancaman kuantum yang belum pernah terjadi ini.
+Sejarah blockchain adalah sejarah berkelanjutan antara ketahanan (resiliensi) dan pembaruan sistem dalam menghadapi ancaman teknis baru. Sama seperti mereka yang mengatasi masalah skalabilitas dan isu lingkungan (seperti transisi dari [PoW](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) ke [PoS](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/)), seluruh ekosistem kemungkinan besar akan mencari solusi dan beradaptasi terhadap ancaman kuantum yang belum pernah terjadi ini.
 Kita dapat berharap pada masa depan di mana komputer kuantum sebagai kearifan baru umat manusia dan teknologi tepercaya berupa buku besar terdesentralisasi, bukan bertabrakan dan hancur, namun menyatu menjadi sistem kuat di dimensi yang lebih tinggi.
 
 ---

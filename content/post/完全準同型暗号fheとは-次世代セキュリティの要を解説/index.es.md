@@ -11,7 +11,7 @@ tags: ["FHE", "Homomorphic Encryption", "Cloud Computing", "Privacy"]
 
 A medida que la computación en la nube y la tecnología de IA se establecen como la base de la sociedad, la compensación entre la "privacidad de los datos" y la "utilización de los datos" se ha convertido en uno de los problemas más importantes. Aunque existe una demanda creciente para que la IA en la nube analice datos altamente confidenciales como datos médicos, información financiera e información biométrica personal, muchas empresas dudan en enviar datos externamente debido a preocupaciones de seguridad.
 
-Las tecnologías de cifrado tradicionales (como AES y RSA) son excelentes para proteger los datos almacenados en disco (Data at Rest) y los datos que fluyen por la red (Data in Transit). Sin embargo, **cuando el servidor realiza un procesamiento (cálculo) en los datos, como una búsqueda o aprendizaje automático (Data in Use), es necesario descifrar el cifrado y devolverlo a texto plano**. Si el servidor es hackeado en este momento de descifrado, o si un administrador malicioso interno husmea en los datos, esto conduce directamente a una fuga de información.
+Las tecnologías de cifrado tradicionales (como AES y [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)) son excelentes para proteger los datos almacenados en disco (Data at Rest) y los datos que fluyen por la red (Data in Transit). Sin embargo, **cuando el servidor realiza un procesamiento (cálculo) en los datos, como una búsqueda o aprendizaje automático (Data in Use), es necesario descifrar el cifrado y devolverlo a texto plano**. Si el servidor es hackeado en este momento de descifrado, o si un administrador malicioso interno husmea en los datos, esto conduce directamente a una fuga de información.
 
 La tecnología soñada para superar esta debilidad fundamental del "descifrado durante el procesamiento" es el **Cifrado Totalmente Homomórfico (Fully Homomorphic Encryption: FHE)**. Al usar FHE, es posible realizar cálculos en datos mientras permanecen cifrados, sin descifrarlos en absoluto, y devolver solo el texto cifrado resultante al cliente.
 
@@ -56,7 +56,7 @@ El cifrado homomórfico no alcanzó su forma "completa" actual de una sola vez. 
 
 El PHE es un esquema de cifrado que permite un número ilimitado de operaciones de suma **o** multiplicación, pero solo una de las dos. De hecho, los cifrados con esta propiedad han existido durante mucho tiempo.
 
-*   **Cifrado RSA (Propiedad homomórfica para la multiplicación)**
+*   **Cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) (Propiedad homomórfica para la multiplicación)**
     El cifrado RSA posee de forma no intencionada una propiedad homomórfica para la multiplicación. Dados los textos planos $m_1, m_2$ y la clave pública $(e, N)$:
     $$ E(m_1) = m_1^e \pmod N $$
     $$ E(m_2) = m_2^e \pmod N $$
@@ -269,7 +269,7 @@ A medida que el FHE se acerca a velocidades prácticas, se esperan innovaciones 
 
 ## 9. Conclusión: El futuro de la criptografía avanza hacia el "cálculo invisible"
 
-Al igual que la invención de la criptografía de clave pública (RSA) en la década de 1970 hizo posible la comunicación segura en Internet (como HTTPS), la invención del FHE por parte de Craig Gentry es uno de los hitos más importantes en la historia de la criptografía.
+Al igual que la invención de la criptografía de clave pública ([RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)) en la década de 1970 hizo posible la comunicación segura en Internet (como HTTPS), la invención del FHE por parte de Craig Gentry es uno de los hitos más importantes en la historia de la criptografía.
 
 Hoy en día, el cifrado totalmente homomórfico (FHE) ha saltado de la teoría de los laboratorios y ha entrado en una fase en la que Microsoft, IBM, Intel, Google y muchas startups compiten ferozmente por su aplicación práctica. Aunque los desafíos del coste computacional y el tamaño de los datos aún persisten, el rendimiento continúa mejorando a un ritmo que supera la Ley de Moore, gracias al refinamiento de los algoritmos y la evolución de los aceleradores de hardware.
 

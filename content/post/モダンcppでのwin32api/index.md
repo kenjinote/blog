@@ -26,7 +26,7 @@ Windows OSの基盤となる **Windows API (通称 Win32 API)** は、1990年代
 
 ## 2. 生のWin32 APIの危険性：リソースリークとエラー処理の罠
 
-まずは、旧来のCスタイルでWin32 APIを呼び出す一般的なコードを見てみましょう。一見すると問題ないように見えますが、現代のC++の観点からは致命的な脆弱性を抱えています。
+まずは、旧来のCスタイルでWin32 APIを呼び出す一般的なコードを見てみましょう。一見すると問題ないように見えますが、現代のC++の観点からは致命的な[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)を抱えています。
 
 ```cpp
 #include <windows.h>

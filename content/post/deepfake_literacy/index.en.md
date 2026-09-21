@@ -216,10 +216,10 @@ C2PA is a consortium established with the participation of major companies such 
 
 ## 5.1 How C2PA Works
 
-The core technologies of C2PA are digital signatures using Public Key Infrastructure (PKI) and content hash binding.
+The core technologies of C2PA are digital signatures using [Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Infrastructure (PKI) and content hash binding.
 
 1. **Manifest Generation (Manifest)**: The moment a photo is taken with a camera, or when it is edited with software, a metadata called a "Manifest" is generated, which includes the operation history, device information, and creator information.
-2. **[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic Signature (Digital Signature)**: A digital signature is applied to the Manifest and the hash value of the image itself (a summary of the pixel data) using a hardware or software private key.
+2. **[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic Signature ([Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/))**: A digital signature is applied to the Manifest and the hash value of the image itself (a summary of the pixel data) using a hardware or software private key.
 3. **Embedding in the Asset**: The signed Manifest (C2PA credential) is embedded in the header information of file formats like JPEG or MP4.
 
 If an attacker attempts to tamper with a part of the image or attach fake metadata to an AI-generated image, the hash value of the image itself will change, causing the digital signature verification to fail and instantly revealing the tampering.

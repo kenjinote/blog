@@ -11,7 +11,7 @@ tags: ["GNFS", "Integer Factorization", "RSA", "Algorithms"]
 
 ## 1. Introdução: A Fatoração de Inteiros e a Base da Criptografia Moderna
 
-A segurança das comunicações na Internet na sociedade moderna depende fortemente da segurança da criptografia de chave pública RSA. A segurança do RSA baseia-se na suposição matemática da "dificuldade de fatorar números compostos gigantes". Se um algoritmo de fatoração extremamente eficiente for descoberto, a infraestrutura de comunicação em todo o mundo desmoronaria desde a sua base.
+A segurança das comunicações na Internet na sociedade moderna depende fortemente da segurança da criptografia de chave pública [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/). A segurança do RSA baseia-se na suposição matemática da "dificuldade de fatorar números compostos gigantes". Se um algoritmo de fatoração extremamente eficiente for descoberto, a infraestrutura de comunicação em todo o mundo desmoronaria desde a sua base.
 
 Atualmente, o **Crivo Geral dos Campos de Números (GNFS - General Number Field Sieve)** reina como o algoritmo mais rápido e poderoso para a fatoração de números inteiros gigantes utilizando computadores clássicos. O GNFS nasceu como uma extensão do Crivo Especial dos Campos de Números (SNFS), proposto no final da década de 1980, e estabeleceu recordes de fatoração para números compostos enormes como o RSA-768 e RSA-250 até os dias de hoje.
 
@@ -124,7 +124,7 @@ $$ f_1(x), f_{2,1}(x), f_{2,2}(x), \dots, f_{2,V}(x) $$
 
 Ao usar múltiplos corpos algébricos, a probabilidade de "ser suave em qualquer um dos corpos algébricos" em cada etapa da crivagem aumenta drasticamente. Com essa abordagem, Coppersmith conseguiu reduzir ligeiramente a constante $c$ da complexidade $L_n[1/3, c]$.
 Especificamente, enquanto a constante no GNFS é $c = (64/9)^{1/3} \approx 1.923$, mostrou-se teoricamente que a complexidade pode ser reduzida até $c \approx 1.902$ ao otimizar o MNFS.
-No entanto, na prática, a sobrecarga de gerenciar múltiplos corpos é grande, e não houve grandes avanços definitivos em módulos RSA em escalas de uso no mundo real.
+No entanto, na prática, a sobrecarga de gerenciar múltiplos corpos é grande, e não houve grandes avanços definitivos em módulos [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) em escalas de uso no mundo real.
 
 ### 4.2 Algoritmos de classe $L_n[1/4]$ são possíveis?
 
@@ -160,7 +160,7 @@ graph LR
 
 A diferença entre essas duas classes de complexidade tem um significado decisivo na segurança de criptografias no mundo real.
 
-Por exemplo, considere a fatoração do RSA-2048 (um número composto de 2048 bits).
+Por exemplo, considere a fatoração do [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)-2048 (um número composto de 2048 bits).
 - **GNFS (Clássico)**: Substituindo $n \approx 2^{2048}$ em $L_n[1/3, 1.923]$, serão necessárias cerca de $2^{112}$ operações. Essa é uma quantidade de cálculos astronômica que demoraria mais que a idade do universo, mesmo se reuníssemos todos os recursos de computação do planeta.
 - **[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/) (Quântico)**: No algoritmo $O((\log n)^3)$, seriam necessárias apenas cerca de $2048^3 \approx 8.5 \times 10^9$ operações em portas lógicas. Isso significa que a computação poderia ser concluída de apenas algumas horas a alguns dias se houvesse o hardware adequado (um computador quântico universal capaz de corrigir erros com alguns milhões de qubits físicos).
 
@@ -173,7 +173,7 @@ A mudança de paradigma da complexidade subexponencial com "expoente $\alpha=1/3
 O consenso atual na comunidade científica em relação à pergunta "Existe algum algoritmo clássico que supere o GNFS?" é o seguinte:
 
 1. **Aprimoramentos práticos continuam, mas não há um grande salto assintótico**: As tentativas de melhorar o fator $c$ do GNFS através do MNFS, da otimização na seleção de polinômios, da paralelização do Método de Block Wiedemann, etc., seguem ocorrendo. Contudo, considera-se extremamente improvável que seja descoberto um algoritmo clássico abaixo de $\alpha = 1/3$.
-2. **A segurança do RSA em computadores clássicos permanece forte**: A complexidade computacional do GNFS continua enorme, e os RSA-2048 e RSA-4096 permanecerão protegidos contra ataques vindos de computadores clássicos durante as próximas décadas.
+2. **A segurança do [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) em computadores clássicos permanece forte**: A complexidade computacional do GNFS continua enorme, e os RSA-2048 e RSA-4096 permanecerão protegidos contra ataques vindos de computadores clássicos durante as próximas décadas.
 3. **A verdadeira ameaça é o algoritmo quântico**: O Algoritmo de Shor, baseado nos princípios da mecânica quântica, ultrapassou os limites da complexidade computacional. Como resultado, o mundo é obrigado a realizar a transição para a Criptografia Pós-Quântica (PQC). A fronteira da criptografia de hoje encontra-se em novos problemas matemáticos, como a criptografia baseada em reticulados e a criptografia baseada em hashes, as quais são consideradas difíceis de se decifrar até para computadores quânticos (ou seja, não possuem resolução no tempo polinomial).
 
 O Crivo Geral dos Campos de Números (GNFS) é uma das maiores conquistas matemáticas alcançadas pela humanidade ao desafiar os limites do design de algoritmos e matemática clássica. Compreender a profunda estrutura matemática do GNFS não é apenas aprender sobre a história da criptanálise, é também uma jornada de exploração intelectual que nos permite tocar na beleza da teoria da complexidade computacional e da teoria algébrica dos números. Até ao dia em que os computadores quânticos se tornarem práticos, o GNFS deverá manter a sua coroa como o algoritmo de fatoração de inteiros mais poderoso.

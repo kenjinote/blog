@@ -16,7 +16,7 @@ Die weltweite Pandemie Anfang der 2020er Jahre hat die Definition des "Arbeitspl
 
 Doch während die Pandemie abklingt, beginnt sich die Landschaft der Branche erneut zu verändern. Riesige Technologieunternehmen wie Amazon, Google und Meta begannen, ein "Hybridmodell" mit einigen obligatorischen Präsenztagen pro Woche oder sogar eine vollständige "Rückkehr ins Büro (Return to Office, RTO)" stark voranzutreiben. Diese von oben verordnete RTO-Direktive führt zu ernsthaften Spannungen mit vielen Ingenieuren (Individual Contributors: IC). Den Ingenieuren, die argumentieren: "In der ruhigen Umgebung zu Hause kann ich mich besser auf den Code konzentrieren" oder "Die Zeit für den Arbeitsweg ist verschwendete Lebenszeit", entgegnet die Führungsebene: "Innovation entsteht aus zufälligen Begegnungen" und "Für die Förderung der Unternehmenskultur ist persönliche Kommunikation unerlässlich".
 
-In diesem Artikel werden wir diese binäre Debatte "Remote-Work vs. Rückkehr ins Büro" nicht einfach als emotionale Argumentation oder Frage der persönlichen Vorliebe abtun, sondern sie gründlich durch die objektiven und technischen Linsen der Organisationssoziologie, der quantitativen Bewertung der Entwicklungsproduktivität (DORA-Metriken, SPACE-Framework) und der zugrunde liegenden Netzwerkarchitektur (VPN und Zero Trust) analysieren. Lassen Sie uns die "wahrhaft optimale Lösung" suchen, die moderne Entwicklungsorganisationen angesichts dieses komplexen Problems an der Schnittstelle von Technologie und menschlicher Gesellschaft anstreben sollten.
+In diesem Artikel werden wir diese binäre Debatte "Remote-Work vs. Rückkehr ins Büro" nicht einfach als emotionale Argumentation oder Frage der persönlichen Vorliebe abtun, sondern sie gründlich durch die objektiven und technischen Linsen der Organisationssoziologie, der quantitativen Bewertung der Entwicklungsproduktivität (DORA-Metriken, SPACE-Framework) und der zugrunde liegenden Netzwerkarchitektur (VPN und [Zero Trust](https://kenji.blog/de/p/zero-trust-network-architecture-beyond-corp/)) analysieren. Lassen Sie uns die "wahrhaft optimale Lösung" suchen, die moderne Entwicklungsorganisationen angesichts dieses komplexen Problems an der Schnittstelle von Technologie und menschlicher Gesellschaft anstreben sollten.
 
 ---
 
@@ -159,7 +159,7 @@ Bei der anfänglichen Architekturplanung oder bei Diskussionen über komplexe Al
 
 ---
 
-# Die technologische Grundlage der Remote-Arbeit: Von den Grenzen des VPN zu Zero Trust
+# Die technologische Grundlage der Remote-Arbeit: Von den Grenzen des VPN zu [Zero Trust](https://kenji.blog/de/p/zero-trust-network-architecture-beyond-corp/)
 
 Bisher haben wir aus der Perspektive von Soziologie und Produktivität diskutiert, aber ein weiteres wichtiges Element, das die Erfahrung der Remote-Arbeit bestimmt, ist die "Netzwerkarchitektur". Die Produktivität der Ingenieure hängt direkt von der Zugriffslatenz auf die Zugriffslatenz auf die Entwicklungsumgebung oder die Produktionsserver ab.
 
@@ -173,7 +173,7 @@ $$ T_{total} = \frac{D}{c} + \frac{L}{B} + T_{proc} $$
 
 Bei der Verwendung herkömmlicher VPNs entsteht beim Zugriff von Remote-Ingenieuren auf SaaS-Anwendungen in der Cloud (wie GitHub oder die AWS-Konsole) ein ineffizientes Routing, das als "Hairpin-NAT (Hairpinning)" bezeichnet wird, bei dem der gesamte Datenverkehr zunächst zum VPN-Gateway des Unternehmensnetzwerks gezogen und von dort ins Internet weitergeleitet wird. Dies erhöht unnötig die Distanz $D$ und treibt die Verarbeitungsverzögerung $T_{proc}$ durch Ver- und Entschlüsselung in der VPN-Appliance in die Höhe. Dies verschlechtert die Reaktionsfähigkeit beim Tippen der Ingenieure erheblich und zerstört den Flow-Zustand.
 
-## Paradigmenwechsel durch Zero Trust (BeyondCorp)
+## Paradigmenwechsel durch Zero Trust ([BeyondCorp](https://kenji.blog/de/p/zero-trust-network-architecture-beyond-corp/))
 
 Was diese netzwerktechnischen Grenzen durchbricht und eine wahrhaft "komfortable und sichere Arbeitsumgebung von überall aus" realisiert, ist die **Zero Trust Network Architecture (ZTNA)**, repräsentiert durch Googles Konzept "BeyondCorp".
 
@@ -230,7 +230,7 @@ Die Gesamtproduktivität eines Ingenieurs lässt sich als eine komplexe Funktion
 
 Die Debatte "Remote-Work vs. Rückkehr ins Büro" wird oft als Konflikt zwischen "Arbeitnehmerrechten vs. Kontrollbedürfnis des Managements" dargestellt, aber das Wesentliche liegt nicht darin.
 
-Die Führungsebene muss die Illusion aufgeben, dass "Innovationen wie von Zauberhand entstehen, wenn man nur Menschen im Büro versammelt". Bei der Entwicklung verteilter Systeme führt der bloße Zwang zur Anwesenheit, ohne Organisationsstrukturen zu schaffen, die Conways Gesetz unterstützen, und ohne in moderne Infrastruktur wie Zero Trust zu investieren, nur zu einem Rückgang von Engagement und Produktivität der Ingenieure.
+Die Führungsebene muss die Illusion aufgeben, dass "Innovationen wie von Zauberhand entstehen, wenn man nur Menschen im Büro versammelt". Bei der Entwicklung verteilter Systeme führt der bloße Zwang zur Anwesenheit, ohne Organisationsstrukturen zu schaffen, die Conways Gesetz unterstützen, und ohne in moderne Infrastruktur wie [Zero Trust](https://kenji.blog/de/p/zero-trust-network-architecture-beyond-corp/) zu investieren, nur zu einem Rückgang von Engagement und Produktivität der Ingenieure.
 
 Auf der anderen Seite müssen auch Ingenieure (insbesondere Senioren) die selbstgerechte Sichtweise korrigieren: "Ich bin produktiver, wenn ich alleine Code schreibe, also brauche ich kein Büro". Software-Engineering ist ein Teamsport und beinhaltet weitreichende Verantwortlichkeiten, nicht nur die Produktivität beim Codieren, sondern auch das Systemdesign der gesamten Organisation, die Ausbildung von Junior-Mitgliedern und die Zusammenarbeit in Notfällen. Es ist eine Tatsache, dass Kommunikation mit hoher Bandbreite im physischen Raum manchmal das gesamte Projekt retten kann.
 

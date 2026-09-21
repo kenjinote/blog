@@ -51,7 +51,7 @@ Notieren Sie sich die folgenden zwei Werte, die auf der Registerkarte "Übersich
 
 ---
 
-## 🔐 Zugriffstoken abrufen (OAuth2)
+## 🔐 Zugriffstoken abrufen ([OAuth](https://kenji.blog/de/p/oauth2-oidc-authentication-authorization-difference/)2)
 
 Für den Abruf verwenden wir den Ablauf `client_credentials`.  
 Führen Sie den folgenden Befehl mit curl aus, um ein Zugriffstoken zu erhalten.
@@ -180,7 +180,7 @@ curl -X GET ^
 | --------- | ----------------------------- |
 | Graph API | Offizielle API zur Interaktion mit Teams |
 | App-Registrierung | Notwendiges Authentifizierungsverfahren auf Azure |
-| Zugriffstoken | Wird über OAuth2 abgerufen und für Anfragen verwendet |
+| Zugriffstoken | Wird über [OAuth](https://kenji.blog/de/p/oauth2-oidc-authentication-authorization-difference/)2 abgerufen und für Anfragen verwendet |
 | C++-Implementierung | Ruft die Graph API mithilfe von WinHTTP auf |
 
 ## 🚀 Nächste Schritte

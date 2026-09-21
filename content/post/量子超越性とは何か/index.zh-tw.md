@@ -168,7 +168,7 @@ IBM在徹底降低錯誤率的同時，也致力於處理器的規模擴充。�
 ### Google的策略：提升邏輯量子位元品質
 Google的策略比起急遽增加物理量子位元的數量，更著重於將單個邏輯量子位元的錯誤率降低到極限（例如降至 $10^{-6}$）。在此基礎上，建立在模組之間傳輸量子狀態的技術（Quantum Interconnects），目標是打造能讓數千至數萬個物理量子位元平行運作的大規模系統。
 
-為了以容錯方式執行如魔法態蒸餾（Magic [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Distillation）等非克里福閘（Non-Clifford gates）的協定實作，也將是未來的重大技術障礙。據說若要執行實用的Shor演算法來破解2048位元的RSA密碼，大約需要數千個錯誤率在 $10^{-8}$ 以下的邏輯量子位元，換算成物理量子位元則需要數百萬至數千萬個，前方的道路依然漫長。
+為了以容錯方式執行如魔法態蒸餾（Magic [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Distillation）等非克里福閘（Non-Clifford gates）的協定實作，也將是未來的重大技術障礙。據說若要執行實用的Shor演算法來破解2048位元的[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)密碼，大約需要數千個錯誤率在 $10^{-8}$ 以下的邏輯量子位元，換算成物理量子位元則需要數百萬至數千萬個，前方的道路依然漫長。
 
 ---
 

@@ -17,7 +17,7 @@ En este artículo, explicaremos exhaustivamente con un volumen abrumador cómo f
 
 ---
 
-## 1. ¿Por qué la criptografía de curva elíptica? (Comparación con RSA)
+## 1. ¿Por qué la criptografía de curva elíptica? (Comparación con [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/))
 
 Cuando se hablaba de criptografía de clave pública, durante mucho tiempo el sinónimo era **RSA**. RSA basa su seguridad en la "dificultad de factorizar números compuestos enormes". Sin embargo, con el aumento de la capacidad computacional de los ordenadores, para mantener la seguridad ha surgido la necesidad de alargar continuamente el tamaño de la clave RSA (el número de bits del módulo). Hoy en día, se recomienda una longitud de clave de al menos 2048 bits, o 3072 y 4096 bits para mayor seguridad.
 
@@ -435,7 +435,7 @@ A primera vista, la criptografía de curva elíptica (ECC) puede parecer un mist
 
 En este artículo explicamos los siguientes puntos clave:
 
-1. **Ventaja sobre RSA**: Ofrece una seguridad robusta con longitudes de clave muy cortas, ideal para la era actual móvil e IoT.
+1. **Ventaja sobre [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)**: Ofrece una seguridad robusta con longitudes de clave muy cortas, ideal para la era actual móvil e IoT.
 2. **Fundamentos de teoría de grupos y campos finitos**: La estructura matemática que sirve como base para ECC.
 3. **Fórmulas de suma y duplicación**: Métodos de implementación de operaciones de grupo algebraicas usando la ecuación de Weierstrass.
 4. **La amenaza de los ataques de canal lateral**: Cómo las bifurcaciones condicionales que dependen de los bits de la clave privada crean vulnerabilidades fatales.
@@ -443,7 +443,7 @@ En este artículo explicamos los siguientes puntos clave:
 
 Crear por tu cuenta una biblioteca criptográfica para entornos de producción generalmente no se recomienda ("Don't roll your own crypto") debido a los riesgos de seguridad extremadamente altos. Sin embargo, comprender profundamente los algoritmos subyacentes y el contexto matemático puede ser una herramienta invaluable y poderosa para los ingenieros que diseñan y operan sistemas más seguros y eficientes.
 
-En el próximo artículo, nos gustaría profundizar más en el mecanismo de **ECDSA (Elliptic Curve Digital Signature Algorithm)**, un algoritmo de firma digital que utiliza esta curva elíptica, y en las **firmas de Schnorr** adoptadas en [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/).
+En el próximo artículo, nos gustaría profundizar más en el mecanismo de **ECDSA (Elliptic Curve [Digital Signature](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) Algorithm)**, un algoritmo de firma digital que utiliza esta curva elíptica, y en las **firmas de Schnorr** adoptadas en [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/).
 
 
 

@@ -10,7 +10,7 @@ description: 'Public key cryptography faces the risk of being decrypted in the f
 
 ## Introduction: The "Threat" Quantum Computers Pose to [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-Currently, many of the communications we conduct daily on the internet—such as online banking payments, website browsing (HTTPS), messaging app exchanges, and blockchain/crypto asset transactions—are protected by a technology called "Public Key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy". Specifically, algorithms like RSA and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC) form the foundation supporting the reliability of our modern digital society.
+Currently, many of the communications we conduct daily on the internet—such as online banking payments, website browsing (HTTPS), messaging app exchanges, and blockchain/crypto asset transactions—are protected by a technology called "[Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy". Specifically, algorithms like [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC) form the foundation supporting the reliability of our modern digital society.
 
 These cryptographic methods rely on mathematical hard problems, such as "prime factorization of large numbers" and the "discrete logarithm problem," which would take astronomical amounts of time for current classical computers (including supercomputers) to solve. However, when **"quantum computers,"** which have been making remarkable progress in recent years, become practically viable, this premise will be fundamentally overturned.
 
@@ -28,7 +28,7 @@ Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
 It is often confused with "Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" or "Quantum Key Distribution (QKD)," but these take entirely different approaches. Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (QKD) is a hardware-based technology that uses the physical laws of quantum mechanics (such as the property that observing a quantum state changes it) to make eavesdropping on communication paths physically impossible. It requires dedicated optical fibers and specialized equipment, posing challenges related to deployment costs and distance limitations.
 
-On the other hand, **PQC is strictly a software-based cryptographic technology based on "mathematics."** Therefore, it can be integrated into existing internet infrastructure, servers, smartphones, and browsers as software updates, making it highly applicable to the real world. IT companies and government agencies around the world consider replacing (migrating) the currently used RSA and ECC with PQC as an urgent priority.
+On the other hand, **PQC is strictly a software-based cryptographic technology based on "mathematics."** Therefore, it can be integrated into existing internet infrastructure, servers, smartphones, and browsers as software updates, making it highly applicable to the real world. IT companies and government agencies around the world consider replacing (migrating) the currently used [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) and ECC with PQC as an urgent priority.
 
 ---
 
@@ -64,7 +64,7 @@ Imagine countless points arranged in a grid within a very high-dimensional (hund
 
 **Pros:** 
 - Applicable to both Key Encapsulation Mechanisms (KEM) and digital signatures.
-- Extremely fast processing speeds (sometimes faster than RSA and ECC).
+- Extremely fast processing speeds (sometimes faster than [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) and ECC).
 - Well-balanced with relatively small key and ciphertext sizes.
 
 Many of the algorithms currently being standardized by NIST (such as ML-KEM and ML-DSA) adopt this lattice-based cryptography.
@@ -132,12 +132,12 @@ In 2024, NIST finally published the following three algorithms as official Feder
    - **Features:** It offers an excellent balance of key size and speed, serving as the default PQC key exchange for general internet use, such as web communications (TLS) and secure messaging apps.
 
 2. **FIPS 204: ML-DSA (Formerly: CRYSTALS-Dilithium)** 
-   - **Use Case:** Digital Signatures
+   - **Use Case:** [Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s
    - **Underlying Tech:** Lattice-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (Module-LWE)
    - **Features:** The primary standard for digital signatures. It allows for efficient processing and will become the new standard for all electronic signature applications, including software signing and document authentication.
 
 3. **FIPS 205: SLH-DSA (Formerly: SPHINCS+)** 
-   - **Use Case:** Digital Signatures
+   - **Use Case:** [Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s
    - **Underlying Tech:** Hash-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (Stateless)
    - **Features:** Plays a crucial role by serving as a backup in case vulnerabilities are ever found in lattice-based cryptography. Although the signature size is larger, it is suitable for applications requiring long-term reliability.
 
@@ -149,7 +149,7 @@ While NIST has completed the initial standardization process, it continues to ex
 
 ## PQC Migration Scenarios and Challenges: The Importance of "[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)-Agility"
 
-With the release of official standards from NIST, government agencies, financial institutions, and tech companies around the world will begin transitioning (migrating) from existing RSA/ECC to PQC in earnest. Guidelines from organizations like the NSA (National Security Agency) also recommend early completion of this migration.
+With the release of official standards from NIST, government agencies, financial institutions, and tech companies around the world will begin transitioning (migrating) from existing [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)/ECC to PQC in earnest. Guidelines from organizations like the NSA (National Security Agency) also recommend early completion of this migration.
 
 ### Adopting a Hybrid Approach
 

@@ -241,7 +241,7 @@ sequenceDiagram
     participant database
     user->>view: ID/PW Input
     view->>controller: ajax query
-    controller->>model: Authentication Request
+    controller->>model: [Authentication](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/) Request
     model->>database: Issue SQL
     database-->>model: Return SQL Result
     model-->>controller: Return Authentication Request Result

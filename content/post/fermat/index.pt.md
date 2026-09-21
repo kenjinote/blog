@@ -39,7 +39,7 @@ O maior interesse de [Fermat](https://kenji.blog/pt/p/fermat/) e o campo onde de
 
 ### 2.1. Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)
 
-Um teorema notavelmente importante que constitui a base da criptografia moderna (como a encriptação RSA) é o **Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)**. Revela uma propriedade surpreendente relativamente aos números primos e apoia silenciosamente a tecnologia de segurança na nossa moderna sociedade baseada na Internet.
+Um teorema notavelmente importante que constitui a base da criptografia moderna (como a encriptação [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)) é o **Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)**. Revela uma propriedade surpreendente relativamente aos números primos e apoia silenciosamente a tecnologia de segurança na nossa moderna sociedade baseada na Internet.
 
 O enunciado do teorema é o seguinte:
 Para qualquer número primo $p$ e qualquer número inteiro $a$ que seja coprimo de $p$ (o que significa que não é um múltiplo de $p$), verifica-se a seguinte congruência:

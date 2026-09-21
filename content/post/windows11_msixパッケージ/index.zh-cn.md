@@ -131,7 +131,7 @@ MakeAppx.exe pack /d "C:\Path\To\AppFolder" /p "C:\Path\To\Output\AwesomeApp_1.0
 
 为了深入理解为什么MSIX包需要签名，我们需要了解数字签名背后的密码学机制。数字签名保证了包“确实是由指定的发布者创建的（认证）”，并且“从创建后到目前为止没有被第三方篡改（完整性）”。
 
-MSIX的签名通常结合使用RSA加密和SHA-256（Secure Hash Algorithm 256-bit）。
+MSIX的签名通常结合使用[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密和SHA-256（Secure Hash Algorithm 256-bit）。
 
 ### 哈希函数的应用
 首先，将MSIX包的整个二进制数据（内容）作为消息 $M$。签名工具（SignTool.exe）对该消息 $M$ 应用密码学哈希函数SHA-256，计算出固定长度（256位）的哈希值 $H(M)$。
@@ -141,7 +141,7 @@ MSIX的签名通常结合使用RSA加密和SHA-256（Secure Hash Algorithm 256-b
 
 $$ \sigma \equiv (H(M))^d \pmod n $$
 
-这里的 $n$ 是RSA模数（两个巨大素数的乘积）。包含该签名 $\sigma$ 和发布者“公钥（Public Key）” $e$ 的证书（X.509格式）会被作为MSIX包的一部分（`AppxSignature.p7x`）嵌入其中。
+这里的 $n$ 是RSA模数（两个巨大素数的乘积）。包含该签名 $\sigma$ 和发布者“公钥（[Public Key](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)）” $e$ 的证书（X.509格式）会被作为MSIX包的一部分（`AppxSignature.p7x`）嵌入其中。
 
 ### 签名的验证（Windows操作系统）
 当用户尝试安装MSIX时，Windows操作系统会从包内的证书中提取公钥 $e$，进行以下计算以还原哈希值 $H'(M)$：

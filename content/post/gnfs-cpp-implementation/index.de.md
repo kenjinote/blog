@@ -11,7 +11,7 @@ description: 'Eine detaillierte Erklärung der Mechanismen des Faktorisierungsal
 
 # 【Komplette Anatomie】Den stärksten Kryptographie-Knack-Algorithmus „GNFS“ in C++ implementieren und verstehen
 
-Die "RSA-Verschlüsselung", die das heutige Internet grundlegend stützt. Ihre Robustheit beruht auf der mathematischen Überzeugung, dass "es für heutige Computer praktisch unmöglich ist, gigantische zusammengesetzte Zahlen in Primfaktoren zu zerlegen".
+Die "[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung", die das heutige Internet grundlegend stützt. Ihre Robustheit beruht auf der mathematischen Überzeugung, dass "es für heutige Computer praktisch unmöglich ist, gigantische zusammengesetzte Zahlen in Primfaktoren zu zerlegen".
 
 Aber die Menschheit hat nie aufgegeben. Gegenwärtig gibt es für klassische Computer (normale Computer, keine Quantencomputer) den ** stärksten und fortschrittlichsten Algorithmus der Menschheit ** zur Durchführung riesiger Primfaktorzerlegungen. Das ist das ** "General Number Field Sieve (GNFS, Allgemeines Zahlkörpersieb)" **.
 
@@ -431,7 +431,7 @@ Wenn wir das rationale $V$ einfach $X$ nennen, ist die ultimative Gleichung endl
 
 ** $$X^2 \equiv Y^2 \pmod N$$ **
 
-Jetzt müssen wir nur noch $\gcd(X-Y, N)$ berechnen. Sobald dieser 0,001-Sekunden-Prozess durchläuft und die nicht-trivialen Faktoren auf dem Bildschirm gedruckt werden, bricht die so unbezwingbar scheinende RSA-Verschlüsselung vollständig zusammen.
+Jetzt müssen wir nur noch $\gcd(X-Y, N)$ berechnen. Sobald dieser 0,001-Sekunden-Prozess durchläuft und die nicht-trivialen Faktoren auf dem Bildschirm gedruckt werden, bricht die so unbezwingbar scheinende [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung vollständig zusammen.
 
 ---
 

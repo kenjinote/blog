@@ -138,7 +138,7 @@ When you run this code, you can observe that as $x$ increases, the ratio $\pi(x)
 
 The properties of prime numbers are not just interesting subjects in pure mathematics, but they are also important elements that support the security infrastructure of modern society.
 
-Public-key cryptography systems, such as RSA cryptography, utilize the property that "the prime factorization of huge integers is extremely difficult." The [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) guarantees the probability of finding "primes of an appropriate size" necessary for generating cryptographic keys.
+Public-key cryptography systems, such as [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography, utilize the property that "the prime factorization of huge integers is extremely difficult." The [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/) guarantees the probability of finding "primes of an appropriate size" necessary for generating cryptographic keys.
 
 For example, the probability that a random 1024-bit odd number is prime is estimated to be approximately $1 / (1024 \times \ln(2) / 2) \approx 1 / 355$. This means that by performing a few hundred primality tests, you can find a necessary huge prime number with high probability, making the construction of an efficient cryptographic system impossible without the [Prime Number Theorem](https://kenji.blog/en/p/prime-number-theorem/).
 

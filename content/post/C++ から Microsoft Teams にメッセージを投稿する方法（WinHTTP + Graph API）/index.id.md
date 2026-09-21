@@ -51,7 +51,7 @@ Simpan dua nilai berikut yang ditampilkan di tab "Ikhtisar":
 
 ---
 
-## 🔐 Mendapatkan Token Akses (OAuth2)
+## 🔐 Mendapatkan Token Akses ([OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/)2)
 
 Kita akan menggunakan alur `client_credentials` untuk mendapatkan token.
 Jalankan perintah berikut dengan curl untuk mendapatkan token akses.
@@ -178,7 +178,7 @@ curl -X GET ^
 | --------- | ----------------------------- |
 | Graph API | API resmi untuk berinteraksi dengan Teams |
 | Registrasi Aplikasi | Prosedur otentikasi yang diperlukan di Azure |
-| Token Akses | Diperoleh melalui OAuth2 dan digunakan untuk permintaan |
+| Token Akses | Diperoleh melalui [OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/)2 dan digunakan untuk permintaan |
 | Implementasi C++ | Memanggil Graph API menggunakan WinHTTP |
 
 ## 🚀 Langkah Selanjutnya

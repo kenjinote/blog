@@ -113,7 +113,7 @@ def is_mersenne_prime(p):
     return s == 0
 ```
 
-Les gigantesques nombres premiers découverts jouent un rôle essentiel dans le soutien de la société de l'information, servant de fondement à l'évaluation de la sécurité des systèmes modernes de cryptographie à clé publique comme RSA, et des algorithmes de génération de nombres aléatoires (comme le [Mersenne](https://kenji.blog/fr/p/mersenne/) Twister).
+Les gigantesques nombres premiers découverts jouent un rôle essentiel dans le soutien de la société de l'information, servant de fondement à l'évaluation de la sécurité des systèmes modernes de cryptographie à clé publique comme [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), et des algorithmes de génération de nombres aléatoires (comme le [Mersenne](https://kenji.blog/fr/p/mersenne/) Twister).
 
 ## Contributions à l'acoustique et à la théorie musicale : les lois de [Mersenne](https://kenji.blog/fr/p/mersenne/)
 

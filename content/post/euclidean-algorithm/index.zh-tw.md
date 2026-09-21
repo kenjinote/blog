@@ -150,10 +150,10 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 # 驗證: 111 * 3 + 30 * (-11) = 333 - 330 = 3
 ```
 
-## 在現代社會中的應用（RSA加密等）
+## 在現代社會中的應用（[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密等）
 
 擴展[歐幾里得算法](https://kenji.blog/zh-tw/p/euclidean-algorithm/)不僅僅是一個數學難題，它還是支撐現代網際網路社會不可或缺的技術。
-一個典型的例子就是 **RSA加密** 。在RSA加密的金鑰生成過程中，對於某個數 $e$ 和歐拉函數 $\phi(N)$ ，需要求解滿足 $e d \equiv 1 \pmod{\phi(N)}$ 的私鑰 $d$ （模反元素）。
+一個典型的例子就是 **[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密** 。在RSA加密的金鑰生成過程中，對於某個數 $e$ 和歐拉函數 $\phi(N)$ ，需要求解滿足 $e d \equiv 1 \pmod{\phi(N)}$ 的私鑰 $d$ （模反元素）。
 因為它可以轉化為 $ed + k\phi(N) = 1$ 的形式，所以我們可以直接使用擴展[歐幾里得算法](https://kenji.blog/zh-tw/p/euclidean-algorithm/)以極快的速度計算出 $d$。
 
 ## 總結

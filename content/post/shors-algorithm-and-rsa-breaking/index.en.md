@@ -10,11 +10,11 @@ description: 'Explains how RSA encryption, which supports modern communication i
 
 ## Introduction: The Intersection of [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy and Quantum Computers
 
-In modern Internet society, "public-key cryptography" is the foundation for protecting the secrecy of communications. A representative example of this is "RSA encryption," developed in 1977 by Ron Rivest, Adi Shamir, and Leonard Adleman. From online shopping payments we use every day to website browsing (HTTPS) and email transmission/reception, RSA encryption functions as the heart of the Internet infrastructure.
+In modern Internet society, "public-key cryptography" is the foundation for protecting the secrecy of communications. A representative example of this is "[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption," developed in 1977 by Ron Rivest, Adi Shamir, and Leonard Adleman. From online shopping payments we use every day to website browsing (HTTPS) and email transmission/reception, RSA encryption functions as the heart of the Internet infrastructure.
 
 However, it has been pointed out that the advent of "quantum computers" could fundamentally overturn this security. Media outlets sometimes run sensational headlines like, "Once quantum computers are completed, passwords and codes worldwide will be decrypted in seconds." But is this really true?
 
-In this article, we delve deeply into the mechanisms of GNFS (General Number Field Sieve), a classical cryptanalysis method, and "[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)," the definitive cryptanalysis algorithm using a quantum computer. We will explain advanced concepts like Quantum Fourier Transform and period finding in an easy-to-understand manner, and examine in detail the current state of quantum hardware in the NISQ (Noisy Intermediate-Scale Quantum) era and the hurdles required to actually break RSA-2048.
+In this article, we delve deeply into the mechanisms of GNFS (General Number Field Sieve), a classical cryptanalysis method, and "[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)," the definitive cryptanalysis algorithm using a quantum computer. We will explain advanced concepts like Quantum Fourier Transform and period finding in an easy-to-understand manner, and examine in detail the current state of quantum hardware in the NISQ (Noisy Intermediate-Scale Quantum) era and the hurdles required to actually break [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)-2048.
 
 ---
 
@@ -121,7 +121,7 @@ When the first register is measured after applying QFT, an integer $ c $ close t
 
 By returning this measurement result $ c $ to a classical computer and creating a fraction $ \frac{c}{2^n} \approx \frac{j}{r} $, and then calculating an approximate value using a mathematical method called "Continued fraction expansion", the denominator, the period $ r $, can be successfully brought to light.
 
-Once $ r $ is known, the prime factors of $ N $ can be calculated using the formula from Step 1, and the RSA encryption is completely broken.
+Once $ r $ is known, the prime factors of $ N $ can be calculated using the formula from Step 1, and the [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption is completely broken.
 
 ---
 
@@ -182,5 +182,5 @@ Major software and platforms such as Google Chrome and Apple's iMessage have alr
 
 Quantum computers are transitioning from a pipe dream in the world of science fiction to a real engineering challenge. Shor's algorithm is a great intellectual achievement of humanity that merges mathematics and quantum mechanics, but at the same time, it harbors a "destructive power" that shakes the foundations of our digital society.
 
-RSA encryption will not suddenly become unusable tomorrow. However, considering the evolution of quantum technology and the risk of "Store Now, Decrypt Later," a large-scale migration that will remain in cryptographic history—the transition to PQC—has already begun. We are now witnessing the front lines of a paradigm shift in information security.
+[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption will not suddenly become unusable tomorrow. However, considering the evolution of quantum technology and the risk of "Store Now, Decrypt Later," a large-scale migration that will remain in cryptographic history—the transition to PQC—has already begun. We are now witnessing the front lines of a paradigm shift in information security.
 

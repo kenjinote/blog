@@ -12,7 +12,7 @@ description: 'Découvrez comment les ordinateurs quantiques pourraient briser le
 
 # 1. Introduction : La crise de la cryptographie provoquée par les ordinateurs quantiques
 
-Une grande partie de la sécurité dans notre société Internet moderne repose sur la **cryptographie à clé publique** (en particulier le chiffrement RSA). Lorsque nous transmettons nos informations de carte de crédit lors d'achats en ligne ou que nous échangeons des données hautement confidentielles, ces communications sont solidement protégées par le chiffrement RSA.
+Une grande partie de la sécurité dans notre société Internet moderne repose sur la **cryptographie à clé publique** (en particulier le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)). Lorsque nous transmettons nos informations de carte de crédit lors d'achats en ligne ou que nous échangeons des données hautement confidentielles, ces communications sont solidement protégées par le chiffrement RSA.
 
 La sécurité du chiffrement RSA repose sur un fait mathématique : « **la factorisation en nombres premiers de très grands entiers est extrêmement difficile pour les ordinateurs classiques (les PC ou supercalculateurs que nous utilisons habituellement)** ». Cependant, l'« **algorithme de Shor** » ([Shor's Algorithm](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/)), publié en 1994 par Peter Shor, a complètement remis en cause ce postulat. Il a été prouvé mathématiquement que si l'algorithme de Shor était exécuté sur un ordinateur quantique à grande échelle, il pourrait résoudre en quelques minutes ou quelques heures une factorisation qui prendrait plus de temps que l'âge de l'univers sur un ordinateur classique.
 
@@ -322,7 +322,7 @@ Nous avons réussi brillamment la factorisation de $15 = 3 \times 5$.
 
 # 6. Défis pour l'application pratique et les limites de l'ère NISQ
 
-Bien qu'il soit facile de factoriser $N=15$ sur un simulateur, factoriser le chiffrement RSA-2048 utilisé dans le monde réel (un nombre de 617 chiffres) se heurte encore à de nombreux obstacles avec les ordinateurs quantiques actuels.
+Bien qu'il soit facile de factoriser $N=15$ sur un simulateur, factoriser le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)-2048 utilisé dans le monde réel (un nombre de 617 chiffres) se heurte encore à de nombreux obstacles avec les ordinateurs quantiques actuels.
 
 L'époque dans laquelle nous vivons actuellement est appelée l'**ère NISQ (Noisy Intermediate-Scale Quantum : ordinateurs quantiques bruités de taille intermédiaire)**. Les qubits sont extrêmement sensibles au bruit ambiant et subissent de la « décohérence » pendant les calculs, ce qui détruit leur état.
 
@@ -341,7 +341,7 @@ Pour se préparer à l'arrivée du « Q-Day » (le jour où les ordinateurs quan
 
 La PQC est basée sur de nouveaux problèmes mathématiques (problèmes de réseaux euclidiens, polynômes multivariés, fonctions de hachage, etc.) que l'on considère impossibles à résoudre efficacement même avec l'algorithme de Shor (ou l'algorithme de Grover). Des algorithmes comme « CRYSTALS-Kyber » et « CRYSTALS-Dilithium » ont déjà été sélectionnés comme normes standards, et leur intégration commence progressivement dans les protocoles de communication des navigateurs web ou iMessage d'Apple.
 
-[Pour les ingénieurs](https://kenji.blog/fr/p/[エンジニア向け](https://kenji.blog/fr/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)プロンプトエンジニアリングの基本と開発への応用/) qui gèrent les infrastructures informatiques, intégrer l'« agilité cryptographique » (la capacité à changer rapidement de méthode de chiffrement) pour passer du RSA existant ou de la cryptographie sur les courbes elliptiques à la PQC, constituera une mission majeure dans le futur.
+[Pour les ingénieurs](https://kenji.blog/fr/p/[エンジニア向け](https://kenji.blog/fr/p/エンジニア向けプロンプトエンジニアリングの基本と開発への応用/)プロンプトエンジニアリングの基本と開発への応用/) qui gèrent les infrastructures informatiques, intégrer l'« agilité cryptographique » (la capacité à changer rapidement de méthode de chiffrement) pour passer du [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) existant ou de la cryptographie sur les courbes elliptiques à la PQC, constituera une mission majeure dans le futur.
 
 ---
 

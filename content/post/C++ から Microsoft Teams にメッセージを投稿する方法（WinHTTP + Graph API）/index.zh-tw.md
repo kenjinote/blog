@@ -51,7 +51,7 @@ description: '想將從C++自動發送訊息到Microsoft Teams功能實作出來
 
 ---
 
-## 🔐 取得存取權杖（OAuth2）
+## 🔐 取得存取權杖（[OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)2）
 
 取得時我們使用 `client_credentials` 流程。  
 使用 curl 執行以下命令，以取得存取權杖。
@@ -180,7 +180,7 @@ curl -X GET ^
 | --------- | ----------------------------- |
 | Graph API | 與 Teams 互動的官方 API |
 | 應用程式註冊 | Azure 上必要的認證手續 |
-| 存取權杖 | 透過 OAuth2 取得，並用於請求中 |
+| 存取權杖 | 透過 [OAuth](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)2 取得，並用於請求中 |
 | C++ 實作 | 使用 WinHTTP 呼叫 Graph API |
 
 ## 🚀 下一步

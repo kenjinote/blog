@@ -15,7 +15,7 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 Yang paling mendekati misteri bilangan prima ini adalah **"Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) ([Riemann](https://kenji.blog/id/p/riemann/) Hypothesis)"**, yang diusulkan oleh matematikawan Jerman, [Bernhard Riemann](https://kenji.blog/id/p/riemann/), pada tahun 1859. Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) adalah salah satu dari masalah terpenting dan belum terpecahkan dalam matematika modern, serta merupakan salah satu dari Masalah Hadiah Milenium (Millennium Prize Problems) yang ditetapkan oleh Clay Mathematics Institute dengan hadiah sebesar 1 juta dolar.
 
-Sekilas, masalah sulit matematika murni terkait distribusi bilangan prima mungkin terasa tidak ada hubungannya dengan kehidupan kita sehari-hari. Namun, keamanan internet yang menopang infrastruktur masyarakat modern, terutama **teknologi kriptografi modern seperti kriptografi RSA dan kriptografi kurva eliptik (ECC)**, sangat bergantung pada sifat-sifat bilangan prima yang sangat besar.
+Sekilas, masalah sulit matematika murni terkait distribusi bilangan prima mungkin terasa tidak ada hubungannya dengan kehidupan kita sehari-hari. Namun, keamanan internet yang menopang infrastruktur masyarakat modern, terutama **teknologi kriptografi modern seperti kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan kriptografi kurva eliptik (ECC)**, sangat bergantung pada sifat-sifat bilangan prima yang sangat besar.
 
 Dalam artikel ini, kita akan melakukan perjalanan matematis dari distribusi bilangan prima menuju Teorema Bilangan Prima, fungsi Zeta [Riemann](https://kenji.blog/id/p/riemann/), hingga ke inti dari Hipotesis [Riemann](https://kenji.blog/id/p/riemann/), lalu menggali lebih dalam dan detail tentang bagaimana hal tersebut terhubung dengan teknologi kriptografi modern, serta apa yang akan terjadi pada dunia jika Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) berhasil dibuktikan.
 
@@ -122,7 +122,7 @@ Dengan kata lain, **jika Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) t
 
 # 6. Hubungan yang Tak Terpisahkan Antara Teknologi Kriptografi Modern dan Bilangan Prima
 
-Sejauh ini kita berada di ranah matematika murni yang mendalam, namun sifat bilangan prima ini menjadi pondasi dasar bagi masyarakat digital modern. Contoh utamanya adalah kriptografi kunci publik seperti **Kriptografi RSA**.
+Sejauh ini kita berada di ranah matematika murni yang mendalam, namun sifat bilangan prima ini menjadi pondasi dasar bagi masyarakat digital modern. Contoh utamanya adalah kriptografi kunci publik seperti **Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)**.
 
 Keamanan dari berbagai komunikasi, mulai dari pembayaran kartu kredit di internet, pengiriman kata sandi, hingga tanda tangan digital pada blockchain, semuanya bergantung pada "bilangan prima".
 
@@ -152,7 +152,7 @@ graph LR
     F -.-> G["Tanpa mengetahui p dan q, d tidak dapat dihitung"]
 ```
 
-Untuk memecahkan kriptografi RSA, seseorang harus menemukan (melakukan faktorisasi prima) bilangan prima asli $p$ dan $q$ dari nilai $N$ yang sangat besar. Meskipun menggunakan algoritma arus utama saat ini (seperti General Number Field Sieve: GNFS), memfaktorkan angka dengan ratusan digit akan membutuhkan waktu jauh melampaui usia alam semesta, bahkan jika menggunakan superkomputer sekalipun.
+Untuk memecahkan kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), seseorang harus menemukan (melakukan faktorisasi prima) bilangan prima asli $p$ dan $q$ dari nilai $N$ yang sangat besar. Meskipun menggunakan algoritma arus utama saat ini (seperti General Number Field Sieve: GNFS), memfaktorkan angka dengan ratusan digit akan membutuhkan waktu jauh melampaui usia alam semesta, bahkan jika menggunakan superkomputer sekalipun.
 
 ---
 
@@ -161,7 +161,7 @@ Untuk memecahkan kriptografi RSA, seseorang harus menemukan (melakukan faktorisa
 Lalu, bagaimana "Hipotesis [Riemann](https://kenji.blog/id/p/riemann/)" yang berada di puncak matematika murni, bersinggungan dengan "teknologi kriptografi"?
 
 ### 7.1. Algoritma Pembangkitan Bilangan Prima (Pengujian Keprimaan) dan Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) yang Diperluas (GRH)
-Untuk mengoperasikan kriptografi RSA, pertama-tama kita perlu membangkitkan bilangan prima $p$ dan $q$ yang berukuran sangat besar. Akan tetapi, tidaklah mudah untuk memastikan dengan cepat dan pasti apakah "suatu bilangan merupakan bilangan prima atau bukan".
+Untuk mengoperasikan kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), pertama-tama kita perlu membangkitkan bilangan prima $p$ dan $q$ yang berukuran sangat besar. Akan tetapi, tidaklah mudah untuk memastikan dengan cepat dan pasti apakah "suatu bilangan merupakan bilangan prima atau bukan".
 
 Saat ini, metode yang digunakan secara praktis adalah algoritma probabilistik yang disebut **Uji Keprimaan Miller-Rabin (Miller-Rabin primality test)**. Algoritma ini sangat cepat, namun memiliki risiko bahwa bilangan komposit disalahartikan sebagai bilangan prima atau disebut "bilangan prima semu (pseudoprime)" dengan probabilitas yang sangat kecil.
 
@@ -179,7 +179,7 @@ Untuk mengevaluasi secara ketat seberapa sering bilangan mulus ini muncul, pemah
 
 # 8. Jika Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) Terbukti, Apakah Kriptografi Akan Terpecahkan?
 
-Terkadang muncul legenda urban yang mengatakan, "Jika Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) terpecahkan, kriptografi RSA akan runtuh seketika", tetapi **secara matematis hal ini tidaklah tepat**.
+Terkadang muncul legenda urban yang mengatakan, "Jika Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) terpecahkan, kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) akan runtuh seketika", tetapi **secara matematis hal ini tidaklah tepat**.
 
 Pembuktian Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) itu sendiri tidak serta merta akan langsung menghasilkan algoritma ajaib yang mempercepat faktorisasi prima secara drastis. Hipotesis [Riemann](https://kenji.blog/id/p/riemann/) pada dasarnya adalah teorema tentang "keteraturan distribusi bilangan prima secara makroskopis", dan hal ini tidak serta merta memberikan petunjuk langsung tentang bilangan prima manakah yang dapat membagi bilangan $N$ tertentu (sifat secara lokal).
 
@@ -189,7 +189,7 @@ Sebab, dalam proses pembuktian Hipotesis [Riemann](https://kenji.blog/id/p/riema
 Jika suatu metode geometri aljabar atau geometri non-komutatif yang belum diketahui dapat dimantapkan, di mana metode ini bisa mengontrol secara penuh sifat dari pembuat nol fungsi zeta [Riemann](https://kenji.blog/id/p/riemann/), bukan tidak mungkin hal itu pada akhirnya berujung pada penemuan algoritma faktorisasi prima yang revolusioner (contohnya, algoritma klasik yang dapat mereduksi kompleksitas komputasi menjadi waktu polinomial). Dalam artian tersebut, para ahli kriptografi tidak pernah bisa memalingkan pandangannya dari perkembangan Hipotesis [Riemann](https://kenji.blog/id/p/riemann/).
 
 ### Komputer Kuantum dan Algoritma Shor
-Ancaman yang lebih langsung dan nyata bagi teknologi kriptografi bukanlah pembuktian Hipotesis [Riemann](https://kenji.blog/id/p/riemann/), melainkan **komputer kuantum**. "Algoritma Shor", yang dipublikasikan oleh Peter Shor pada tahun 1994, membuktikan bahwa jika terdapat komputer kuantum dengan performa yang cukup, faktorisasi prima dapat dipecahkan dalam waktu polinomial. Hal ini secara mendasar akan mematahkan kriptografi RSA maupun kriptografi kurva eliptik.
+Ancaman yang lebih langsung dan nyata bagi teknologi kriptografi bukanlah pembuktian Hipotesis [Riemann](https://kenji.blog/id/p/riemann/), melainkan **komputer kuantum**. "Algoritma Shor", yang dipublikasikan oleh Peter Shor pada tahun 1994, membuktikan bahwa jika terdapat komputer kuantum dengan performa yang cukup, faktorisasi prima dapat dipecahkan dalam waktu polinomial. Hal ini secara mendasar akan mematahkan kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) maupun kriptografi kurva eliptik.
 
 Saat ini, transisi menuju "Kriptografi Pasca-Kuantum (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy, PQC)" (seperti kriptografi kisi/lattice-based cryptography), yang bahkan tidak dapat dipecahkan oleh komputer kuantum, sedang digalakkan di seluruh dunia. Teknologi kriptografi yang bergantung pada bilangan prima dalam beberapa artian mungkin sedang mendekati akhir masa keemasannya, namun nilai matematis dari bilangan prima itu sendiri tidak akan pernah pudar selamanya.
 

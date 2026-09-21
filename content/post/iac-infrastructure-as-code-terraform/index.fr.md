@@ -350,7 +350,7 @@ Lors de la conception d'un module avec Terraform, fournir une variable d'entrée
 
 ## Anti-patterns
 1. **Mélanger avec des modifications manuelles** : Modifier directement depuis le GUI des ressources gérées par Terraform. Cela conduit à des incohérences dans le State.
-2. **Codage en dur des identifiants (Credentials)** : Écrire des clés d'accès ou des clés secrètes directement dans le code. Veuillez utiliser des variables d'environnement ou des rôles IAM (comme la fédération OIDC).
+2. **Codage en dur des identifiants (Credentials)** : Écrire des clés d'accès ou des clés secrètes directement dans le code. Veuillez utiliser des variables d'environnement ou des rôles IAM (comme la fédération [OIDC](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/)).
 3. **Modules trop complexes** : Essayer de donner toutes les fonctionnalités à un module augmente le nombre de variables à des dizaines, ce qui diminue considérablement la lisibilité. Gardez à l'esprit "Un module a une seule responsabilité (Single Responsibility)".
 
 ---

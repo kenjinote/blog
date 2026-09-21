@@ -39,7 +39,7 @@ flowchart TD
 
 ### 2.1. Kleiner [Fermat](https://kenji.blog/de/p/fermat/)scher Satz
 
-Ein bemerkenswert wichtiger Satz, der die Grundlage der modernen Kryptographie (wie der RSA-Verschlüsselung) bildet, ist der **kleine [Fermat](https://kenji.blog/de/p/fermat/)sche Satz**. Er offenbart eine überraschende Eigenschaft in Bezug auf Primzahlen und unterstützt lautlos die Sicherheitstechnologie in unserer modernen Internetgesellschaft.
+Ein bemerkenswert wichtiger Satz, der die Grundlage der modernen Kryptographie (wie der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung) bildet, ist der **kleine [Fermat](https://kenji.blog/de/p/fermat/)sche Satz**. Er offenbart eine überraschende Eigenschaft in Bezug auf Primzahlen und unterstützt lautlos die Sicherheitstechnologie in unserer modernen Internetgesellschaft.
 
 Die Aussage des Satzes lautet wie folgt:
 Für jede Primzahl $p$ und jede ganze Zahl $a$, die teilerfremd zu $p$ ist (was bedeutet, dass sie kein Vielfaches von $p$ ist), gilt die folgende Kongruenz:

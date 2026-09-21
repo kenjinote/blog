@@ -11,7 +11,7 @@ tags: ["Big O Notation", "Prime Factorization", "Algorithms", "RSA"]
 
 # Introdução: Por que a fatoração de primos é "difícil"?
 
-Na sociedade moderna da internet, a razão pela qual podemos desfrutar de compras online e trocar informações confidenciais com segurança deve-se à existência da "tecnologia de criptografia". E a base da segurança dessa tecnologia (especialmente a criptografia RSA, amplamente utilizada) baseia-se no fato matemático de que "a fatoração de números inteiros gigantes em primos é extremamente difícil".
+Na sociedade moderna da internet, a razão pela qual podemos desfrutar de compras online e trocar informações confidenciais com segurança deve-se à existência da "tecnologia de criptografia". E a base da segurança dessa tecnologia (especialmente a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), amplamente utilizada) baseia-se no fato matemático de que "a fatoração de números inteiros gigantes em primos é extremamente difícil".
 
 À primeira vista, a fatoração de primos pode parecer uma tarefa simples, apenas "decompor um número em multiplicações de números primos", mas à medida que o número de dígitos aumenta, ela se transforma em um problema tão difícil que mesmo o supercomputador mais rápido do mundo não conseguiria resolvê-lo, mesmo se operasse por dezenas ou centenas de anos. A fatoração de primos que normalmente aprendemos na escola é, no máximo, o simples trabalho de dividir por $2$, $3$ ou $5$, mas quando confrontada com o produto de primos desconhecidos com centenas de dígitos, essa abordagem simples desmorona completamente.
 
@@ -94,7 +94,7 @@ Acredito que agora você entende o quão importante é a diferença na complexid
 
 ---
 
-# A Estrutura da Criptografia RSA e o Problema da Fatoração de Primos
+# A Estrutura da Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e o Problema da Fatoração de Primos
 
 Para entender por que a fatoração de primos é importante, vamos rever brevemente a estrutura da criptografia RSA. A criptografia RSA é um sistema de criptografia de chave pública desenvolvido em 1977 por três pessoas: Ronald Rivest, Adi Shamir e Leonard Adleman.
 
@@ -165,7 +165,7 @@ Expresso em termos do tamanho da entrada $n = \log_2 N$:
 $$ N^{1/4} = (2^n)^{1/4} = 2^{n/4} $$
 
 Portanto, a complexidade computacional é **$\mathcal{O}(2^{n/4})$**.
-Em comparação com $\mathcal{O}(2^{n/2})$ da divisão por tentativa, houve uma aceleração drástica e, na prática, é um algoritmo incrivelmente poderoso para decompor números de escala média (dezenas de dígitos). No entanto, ele ainda não superou a barreira do "tempo exponencial" em relação ao comprimento de bit $n$, sendo impotente contra números gigantescos de 2048 bits (cerca de 600 dígitos em base decimal), como os usados na criptografia RSA.
+Em comparação com $\mathcal{O}(2^{n/2})$ da divisão por tentativa, houve uma aceleração drástica e, na prática, é um algoritmo incrivelmente poderoso para decompor números de escala média (dezenas de dígitos). No entanto, ele ainda não superou a barreira do "tempo exponencial" em relação ao comprimento de bit $n$, sendo impotente contra números gigantescos de 2048 bits (cerca de 600 dígitos em base decimal), como os usados na criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/).
 
 ## 4. Crivo Quadrático de Múltiplos Polinômios (MPQS: Multiple Polynomial Quadratic Sieve)
 
@@ -186,7 +186,7 @@ O crivo quadrático era o algoritmo mais rápido do mundo antes do surgimento do
 
 Atualmente, aquele considerado "o mais rápido do mundo" na fatoração de primos para números gigantes com mais de 100 dígitos é o **Crivo do Corpo de Números Geral (GNFS)**. Foi concebido no final da década de 1980, e é um algoritmo muito avançado que utiliza descobertas profundas da teoria algébrica dos números (corpos de números), desenvolvendo ainda mais o crivo quadrático.
 
-Quando se trata de ataques à criptografia RSA (fatoração de primos a partir de chaves públicas), o GNFS é aquele que continua constantemente a quebrar recordes mundiais. Houve um relatório de que em 2020 foi bem-sucedida a fatoração em primos de um número composto de 829 bits (250 dígitos decimais) (RSA-250), mas isso exigiu o funcionamento em paralelo de uma rede de milhares de computadores por um longo período de tempo.
+Quando se trata de ataques à criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) (fatoração de primos a partir de chaves públicas), o GNFS é aquele que continua constantemente a quebrar recordes mundiais. Houve um relatório de que em 2020 foi bem-sucedida a fatoração em primos de um número composto de 829 bits (250 dígitos decimais) (RSA-250), mas isso exigiu o funcionamento em paralelo de uma rede de milhares de computadores por um longo período de tempo.
 
 ### Estrutura Matemática do Algoritmo
 O GNFS é bastante complexo, mas basicamente progride seguindo estas etapas:
@@ -240,11 +240,11 @@ Um dos maiores problemas não resolvidos da ciência da computação é a hipót
 O problema de fatoração de primos pertence a NP (uma classe de problemas onde, uma vez fornecida uma resposta, a corretude pode ser testada em tempo polinomial), no entanto, não está provado que ele seja [NP-complet](https://kenji.blog/pt/p/p-vs-np-problem/)o (a classe de problemas mais complexos da categoria NP).
 Adicionalmente, se ele pertence a P (uma classe de problemas solucionáveis em tempo polinomial, ou seja, onde existe um algoritmo em tempo polinomial), ainda não se sabe.
 
-Muitos estudiosos preveem que a fatoração de primos pertence a uma classe intermediária que não é P nem NP-completo (NP-intermediário). Se fosse descoberto um algoritmo em tempo polinomial (por exemplo, $\mathcal{O}(n^3)$) num computador clássico, seria um evento colossal que colapsaria sistemas de criptografia mundiais, mas até então tal algoritmo ainda não foi encontrado. Estima-se que decifrar a criptografia RSA-2048 exigiria mais tempo que o tempo de vida do universo, mesmo se o desempenho do computador clássico melhorasse consoante à lei de Moore.
+Muitos estudiosos preveem que a fatoração de primos pertence a uma classe intermediária que não é P nem NP-completo (NP-intermediário). Se fosse descoberto um algoritmo em tempo polinomial (por exemplo, $\mathcal{O}(n^3)$) num computador clássico, seria um evento colossal que colapsaria sistemas de criptografia mundiais, mas até então tal algoritmo ainda não foi encontrado. Estima-se que decifrar a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)-2048 exigiria mais tempo que o tempo de vida do universo, mesmo se o desempenho do computador clássico melhorasse consoante à lei de Moore.
 
 ## O Computador Quântico como um "Divisor de Águas": [Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)
 
-A criptografia RSA, robusta diante dos computadores clássicos, entra em um panorama diametralmente distinto com a viabilidade dos "computadores quânticos", que funcionam baseados em princípios inteiramente diversos.
+A criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), robusta diante dos computadores clássicos, entra em um panorama diametralmente distinto com a viabilidade dos "computadores quânticos", que funcionam baseados em princípios inteiramente diversos.
 O **"Algoritmo de Shor (Shor's algorithm)"**, revelado por Peter Shor em 1994, utiliza a transformada quântica de Fourier para solucionar de maneira notável o problema da fatoração de primos em **tempo polinomial $\mathcal{O}(n^3)$** (ou mais precisamente, requerendo no contexto das portas lógicas quânticas, cerca de $\mathcal{O}(n^2 \log n \log \log n)$).
 
 No diagrama Mermaid abaixo, note o contraste nas complexidades computacionais para algoritmos clássicos versus quânticos.
@@ -268,7 +268,7 @@ graph LR
 ```
 
 Com o algoritmo de Shor, o processo de "identificação de períodos", um gargalo severo em algoritmos clássicos, é resolvido quase de modo imediato e contíguo via o emprego do emaranhamento quântico (quantum entanglement) e da sobreposição quântica integrados à "Transformada Quântica de Fourier (QFT)".
-Se este puder ser posto em marcha utilizando um computador quântico de dimensão viável (pouco ruído e abundância de qubits lógicos), assevera-se que a criptografia RSA-2048, outrora percebida como impenetrável, estaria sucumbindo por inteiro de horas até poucos dias.
+Se este puder ser posto em marcha utilizando um computador quântico de dimensão viável (pouco ruído e abundância de qubits lógicos), assevera-se que a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)-2048, outrora percebida como impenetrável, estaria sucumbindo por inteiro de horas até poucos dias.
 
 Face a semelhante prenúncio, analistas criptográficos ao redor do globo, aliados ao NIST (Instituto Nacional de Padrões e Tecnologia dos EUA), correm rapidamente para conduzir tarefas de padronização orientadas para a "Criptografia Pós-Quântica (Post-Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy: PQC)", com o desafio de continuar sendo dificultoso de quebrar mesmo para os computadores quânticos. A Criptografia Baseada em Reticulados (Lattice-based cryptography) constitui um modelo preponderante disso, pois tem seus embasamentos protetivos calçados numa complexidade matemática fundamentalmente alheia à fatoração de primos (como no problema do vetor mais curto).
 
@@ -281,7 +281,7 @@ Neste compêndio, investigamos mais profundamente abordando desde o limiar da co
 * A **Notação Big O ($\mathcal{O}$)** exprime o crescimento do número das etapas computacionais quando confrontado ao desenvolvimento do tamanho de entrada $n$, sendo um indicativo crítico em que perdura uma colossal barreira que no terreno prático é insuperável dividindo o tempo polinomial ao exponencial.
 * O **método de divisão por tentativa** e o **algoritmo $\rho$ de Pollard** configuram-se algoritmos puros no estrato do "tempo exponencial" e demonstram incapacidade de lidar frente à números magnos.
 * O **Crivo do Corpo de Números Geral (GNFS)**, reputado o preeminente algoritmo clássico mais rápido do mundo até hoje, atinge um desempenho de "tempo subexponencial" servindo-se da intrincada Teoria Algébrica dos Números, não se qualificando ainda na ordem de tempo polinomial e resultando que números avantajados peçam de intervalos incrivelmente estratosféricos.
-* Esse exato preceito (altamente considerado verossímil) do qual **"Um algoritmo clássico com capacidade para desatar as dificuldades num ritmo de tempo polinomial de fato é inexistente"** afiança e atesta as engrenagens de segurança providas pelo RSA, amparando integralmente nosso atual tecido social e digital.
+* Esse exato preceito (altamente considerado verossímil) do qual **"Um algoritmo clássico com capacidade para desatar as dificuldades num ritmo de tempo polinomial de fato é inexistente"** afiança e atesta as engrenagens de segurança providas pelo [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), amparando integralmente nosso atual tecido social e digital.
 * Em contraponto a isso, atrelado com o vislumbramento propiciado por **computadores quânticos conjuntamente ao algoritmo de Shor**, a viabilidade técnica no tangente à fatoração em ritmo de ordem polinomial passa agora a ser imaginável na área teórica, fazendo com que as ferramentas cifradas estejam em vias de uma contundente migração a favor de um ciclo futurista (a criptografia pós-quântica).
 
 As circunstâncias ditando que um termo teórico peculiar qual a complexidade algorítmica detém implicações retas à segurança da vida ordinária e quotidiana é singularmente uma entre as facetas atrativas e formidáveis que englobam a Ciência da Informação e Matemática. Pedimos gentilmente sua plena atenção a respeito da jornada percorrida pelo seguimento inovador desses aparatos, em vista aos andamentos de construção pertinentes às computações quânticas com atrelações que delineiam os moldes evolutivos referentes a essa seara criptográfica.

@@ -14,7 +14,7 @@ tags:
   - "python"
 ---
 
-Sicherheit in der modernen Internetgesellschaft wird durch Public-Key-Kryptografie wie RSA geschützt. Diese Verschlüsselungsmethoden basieren auf der mathematischen Schwierigkeit, dass die Faktorisierung riesiger Zahlen für heutige Computer (klassische Computer) astronomisch viel Zeit in Anspruch nimmt.
+Sicherheit in der modernen Internetgesellschaft wird durch Public-Key-Kryptografie wie [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) geschützt. Diese Verschlüsselungsmethoden basieren auf der mathematischen Schwierigkeit, dass die Faktorisierung riesiger Zahlen für heutige Computer (klassische Computer) astronomisch viel Zeit in Anspruch nimmt.
 
 Ein **Quantencomputer** birgt jedoch das Potenzial, diese Prämisse grundlegend zu widerlegen. Insbesondere **Shors Algorithmus** (Shor's Algorithm), der 1994 von Peter Shor entdeckt wurde, hat mathematisch bewiesen, dass RSA-Kryptografie in realistischer Zeit geknackt werden kann, sobald Quantencomputer praktisch nutzbar sind.
 
@@ -110,7 +110,7 @@ graph LR
 
 ---
 
-## 3. Grundlagen der Kryptografie und RSA-Kryptografie
+## 3. Grundlagen der Kryptografie und [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptografie
 
 Um die Auswirkungen von Shors Algorithmus zu verstehen, müssen wir die Funktionsweise der derzeit vorherrschenden Public-Key-Kryptografie, der **RSA-Kryptografie**, kennen.
 
@@ -356,7 +356,7 @@ Sobald die Periode $r=4$ bekannt ist, lassen sich, wie zuvor erwähnt, aus $\gcd
 
 ---
 
-## 7. Warum ist die RSA-Kryptografie in Gefahr?
+## 7. Warum ist die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptografie in Gefahr?
 
 Der Rechenaufwand für die Primfaktorzerlegung auf einem klassischen Computer wächst exponentiell mit der Anzahl der Ziffern. Zum Beispiel dauert die Faktorisierung einer 100-stelligen Zahl wenige Sekunden, einer 200-stelligen Zahl mehrere Jahre, und für RSA-2048 (etwa 617 Ziffern) wird geschätzt, dass es länger dauert als die Lebensdauer des Universums.
 
@@ -380,7 +380,7 @@ Um dies zu erreichen, wird an der **Quantenfehlerkorrektur (Quantum Error Correc
 
 ## 9. Die nächste Generation der Kryptografie: Post-Quanten-Kryptografie (PQC)
 
-Um der Bedrohung durch Shors Algorithmus zu begegnen, treiben Organisationen weltweit, einschließlich des US-amerikanischen National Institute of Standards and Technology (NIST), die Standardisierung einer neuen kryptografischen Methode namens **Post-Quanten-Kryptografie (Post-Quantum Cryptography: PQC)** voran, die selbst von Quantencomputern nicht geknackt werden kann.
+Um der Bedrohung durch Shors Algorithmus zu begegnen, treiben Organisationen weltweit, einschließlich des US-amerikanischen National Institute of Standards and Technology (NIST), die Standardisierung einer neuen kryptografischen Methode namens **Post-Quanten-Kryptografie (Post-Quantum [Cryptography](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/): PQC)** voran, die selbst von Quantencomputern nicht geknackt werden kann.
 
 PQC verwendet keine Quantentechnologie, sondern basiert auf neuen mathematischen Problemen, die auf klassischen Computern ausgeführt werden können, aber nicht effizient durch Quantenalgorithmen gelöst werden können (bei denen Shors Algorithmus nicht anwendbar ist).
 

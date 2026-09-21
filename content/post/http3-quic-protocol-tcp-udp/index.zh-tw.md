@@ -413,7 +413,7 @@ QUIC 真正的價值，不僅止於實現 HTTP/3。「作為高效能且安全�
 
 在本文中，我們深入探討了解說 HTTP/3 與 QUIC 協定，從 TCP 的極限到轉向 UDP 的典範轉移、HoL Blocking 的解決、連線建立的高速化，甚至實作與營運上的課題。
 
-*   **TCP 的極限:** 順序保證所造成的 HoL Blocking、交握延遲、對 IP 位址變更的脆弱性。
+*   **TCP 的極限:** 順序保證所造成的 HoL Blocking、交握延遲、對 IP 位址變更的[脆弱性](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)。
 *   **QUIC 的創新:** 以 UDP 為基礎，在使用者空間實現串流多工、整合 TLS 1.3，以及透過連線 ID 進行轉移。
 *   **HTTP/3:** 針對 QUIC 特性進行最佳化，如 QPACK 等新的 HTTP 規格。
 

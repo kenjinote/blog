@@ -350,7 +350,7 @@ $$
 
 ## 反模式
 1. **與手動變更混雜** ：直接從 GUI 變更 Terraform 所管理的資源。這會導致 State 的不一致。
-2. **憑證的硬編碼** ：將存取金鑰 (Access Key) 或私密金鑰 (Secret Key) 直接寫在程式碼中。請使用環境變數或 IAM 角色（如 OIDC 整合）。
+2. **憑證的硬編碼** ：將存取金鑰 (Access Key) 或私密金鑰 (Secret Key) 直接寫在程式碼中。請使用環境變數或 IAM 角色（如 [OIDC](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) 整合）。
 3. **過度複雜的模組** ：試圖讓模組擁有所有功能的話，變數會多達數十個，可讀性將會顯著降低。請意識到「1 個模組只有 1 個關注點 (Single Responsibility)」。
 
 ---

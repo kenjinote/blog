@@ -11,7 +11,7 @@ tags: ["FHE", "Homomorphic Encryption", "Cloud Computing", "Privacy"]
 
 As cloud computing and AI technologies become established as societal infrastructure, the tradeoff between "data privacy" and "data utilization" has become one of the most critical challenges. While there is a growing demand to have AI analyze highly sensitive data—such as medical records, financial information, and personal biometric data—on the cloud, many companies hesitate to send data externally due to security concerns.
 
-Traditional encryption technologies (like AES and RSA) excel at protecting data stored in storage (Data at Rest) and data flowing over networks (Data in Transit). However, **when performing processing (computations) such as searching or machine learning on the server side (Data in Use), the ciphertext must first be decrypted back into plaintext**. If the server is hacked at this decrypted moment, or if a malicious internal administrator peeks at the data, it directly leads to information leakage.
+Traditional encryption technologies (like AES and [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)) excel at protecting data stored in storage (Data at Rest) and data flowing over networks (Data in Transit). However, **when performing processing (computations) such as searching or machine learning on the server side (Data in Use), the ciphertext must first be decrypted back into plaintext**. If the server is hacked at this decrypted moment, or if a malicious internal administrator peeks at the data, it directly leads to information leakage.
 
 The dream technology that overcomes this fundamental weakness of "decryption during processing" is **Fully Homomorphic Encryption (FHE)**. By using FHE, it becomes possible to perform computational processing while keeping the data encrypted, without ever decrypting it, and returning only the resulting ciphertext to the client.
 
@@ -55,7 +55,7 @@ Homomorphic encryption did not reach its current "fully" form all at once. It is
 ### Partially Homomorphic Encryption (PHE)
 PHE is an encryption scheme that can perform **only one of either** addition or multiplication indefinitely. In fact, ciphers with this property have existed for a long time.
 
-*   **RSA Encryption (Homomorphism for multiplication)**
+*   **[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Encryption (Homomorphism for multiplication)**
     RSA encryption unintentionally possessed a multiplicative homomorphic property. Given plaintexts $m_1, m_2$ and a public key $(e, N)$:
     $$ E(m_1) = m_1^e \pmod N $$
     $$ E(m_2) = m_2^e \pmod N $$
@@ -259,7 +259,7 @@ Now that FHE is approaching practical speeds, disruptive innovations are expecte
 
 ## 9. Conclusion: The Future of [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy is "Unseen Computation"
 
-Just as the invention of public key cryptography (RSA) in the 1970s enabled secure communication on the Internet (such as HTTPS), Craig Gentry's invention of FHE is one of the most important milestones in the history of cryptography.
+Just as the invention of public key cryptography ([RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)) in the 1970s enabled secure communication on the Internet (such as HTTPS), Craig Gentry's invention of FHE is one of the most important milestones in the history of cryptography.
 
 Today, Fully Homomorphic Encryption (FHE) has leapt from the theories of laboratories into the stage where Microsoft, IBM, Intel, Google, and many startups are fiercely competing toward practical application. While challenges regarding computational cost and data size still exist, thanks to the refinement of algorithms and the evolution of hardware accelerators, performance improvements continue at a pace exceeding Moore's Law.
 

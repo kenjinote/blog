@@ -350,7 +350,7 @@ When designing a module in Terraform, providing `az_count` as an input variable 
 
 ## Anti-Patterns
 1. **Mixing with manual changes**: Directly modifying resources managed by Terraform from a GUI. This leads to State inconsistencies.
-2. **Hardcoding credentials**: Writing access keys or secret keys directly in the code. Use environment variables or IAM roles (like OIDC federation).
+2. **Hardcoding credentials**: Writing access keys or secret keys directly in the code. Use environment variables or IAM roles (like [OIDC](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/) federation).
 3. **Overly complex modules**: Trying to give a module every possible feature results in dozens of variables, significantly reducing readability. Keep in mind "One module has a single responsibility".
 
 ---

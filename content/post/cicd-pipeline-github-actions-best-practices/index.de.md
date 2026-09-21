@@ -310,7 +310,7 @@ jobs:
       node-version: '20'
 ```
 
-## Sichere Cloud-Integration mit OIDC (OpenID Connect)
+## Sichere Cloud-Integration mit [OIDC](https://kenji.blog/de/p/oauth2-oidc-authentication-authorization-difference/) ([OpenID Connect](https://kenji.blog/de/p/oauth2-oidc-authentication-authorization-difference/))
 
 Beim Deployment in Cloud-Anbieter wie AWS, GCP oder Azure ist die Speicherung langfristiger Anmeldeinformationen (z. B. Secret Keys) in GitHub mit Sicherheitsrisiken verbunden.
 
@@ -364,6 +364,6 @@ In diesem Artikel haben wir die Grundlagen von CI/CD, den Aufbau praktischer Pip
 *   **Häufig integrieren:** Mergen Sie kleine Änderungen häufig, um Fehler frühzeitig zu erkennen.
 *   **Caches nutzen:** Verkürzen Sie die Ausführungszeit von Workflows und verbessern Sie die Entwicklererfahrung.
 *   **Qualität und Sicherheit automatisieren:** Integrieren Sie Lint, Tests und Schwachstellen-Scans in Ihre Pipeline.
-*   **OIDC verwenden:** Verwenden Sie für die Integration mit Cloud-Anbietern temporäre Token über OIDC anstelle von Secret Keys.
+*   **[OIDC](https://kenji.blog/de/p/oauth2-oidc-authentication-authorization-difference/) verwenden:** Verwenden Sie für die Integration mit Cloud-Anbietern temporäre Token über OIDC anstelle von Secret Keys.
 
 GitHub Actions ist ein äußerst flexibles und leistungsstarkes Tool. Wir empfehlen, mit kleinen Schritten wie der Lint-Automatisierung zu beginnen und die Pipeline mit dem Wachstum des Projekts schrittweise zu erweitern. Nutzen Sie die Automatisierung, um eine schnellere und qualitativ hochwertigere Softwareentwicklung zu erreichen.

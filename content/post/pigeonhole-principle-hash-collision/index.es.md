@@ -226,5 +226,5 @@ A lo largo de este compendio, hemos desgranado cómo la **"Regla del Palomar"**,
 * **Intimidación del lance de cumpleaños**: El espectro paródico de la conmemoración natalicia destapa que en un entorno perimétrico $N$, ya por el orden de los $\sqrt{N}$ intentos despunta una chance latente a colisionar.
 * **Directrices del cripto-desarrollo imperante**: Estando condenados a no mitigar los roces a un cero rotundo, el contraataque se cifra en extender las fronteras finales en cuantías extremas, frustrando su descubrimiento de cara a la fuerza física del cómputo.
 
-El asentar lúcidamente la mecánica latente de estos axiomas confluye directamente con desentrañar los engranajes nucleares del tejido protector, ora Blockchain, ora las rúbricas certificadas, o el mismo acopio de identidades secretas.
+El asentar lúcidamente la mecánica latente de estos axiomas confluye directamente con desentrañar los engranajes nucleares del tejido protector, ora [Blockchain](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/), ora las rúbricas certificadas, o el mismo acopio de identidades secretas.
 Es pasmoso concebir cómo lo que parece a un vistazo veloz una ciencia oscura se apuntala ni más ni menos que en reflexiones que concilian nidos aviares o felicitaciones de almanaque, conformando un retrato vivaz del rico folclore de la rama informática.

@@ -39,7 +39,7 @@ Minat terbesar [Fermat](https://kenji.blog/id/p/fermat/) dan bidang di mana ia m
 
 ### 2.1. [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)
 
-Sebuah teorema yang sangat penting dan membentuk dasar kriptografi modern (seperti enkripsi RSA) adalah **[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)**. Teorema ini mengungkapkan sifat yang mengejutkan mengenai bilangan prima dan secara diam-diam mendukung teknologi keamanan dalam masyarakat internet modern kita.
+Sebuah teorema yang sangat penting dan membentuk dasar kriptografi modern (seperti enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)) adalah **[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)**. Teorema ini mengungkapkan sifat yang mengejutkan mengenai bilangan prima dan secara diam-diam mendukung teknologi keamanan dalam masyarakat internet modern kita.
 
 Pernyataan teorema tersebut adalah sebagai berikut:
 Untuk sembarang bilangan prima $p$ dan sembarang bilangan bulat $a$ yang relatif prima terhadap $p$ (berarti bukan kelipatan dari $p$), kekongruenan berikut berlaku:

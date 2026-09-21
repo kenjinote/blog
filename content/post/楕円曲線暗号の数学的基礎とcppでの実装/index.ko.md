@@ -17,7 +17,7 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 ---
 
-## 1. 왜 타원곡선 암호인가? (RSA와의 비교)
+## 1. 왜 타원곡선 암호인가? ([RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)와의 비교)
 
 공개키 암호 방식의 대명사라고 하면 오랫동안 **RSA 암호** 를 떠올렸습니다. RSA 암호는 '거대한 합성수의 소인수분해의 어려움'을 안전성의 근거로 삼고 있습니다. 하지만 컴퓨터의 계산 능력이 향상됨에 따라 안전성을 유지하기 위해서는 RSA의 키 길이(모듈러스의 비트 수)를 지속적으로 늘려야 할 필요성이 생겼습니다. 현재는 최소 2048비트, 더 안전을 기한다면 3072비트나 4096비트의 키 길이가 권장되고 있습니다.
 
@@ -436,7 +436,7 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 
 본 기사에서는 다음의 중요한 요점들을 해설했습니다.
 
-1. **RSA 대비 우위성**: 매우 짧은 키 길이로 강력한 보안을 제공하며, 현대의 모바일·IoT 시대에 최적화되어 있습니다.
+1. **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 대비 우위성**: 매우 짧은 키 길이로 강력한 보안을 제공하며, 현대의 모바일·IoT 시대에 최적화되어 있습니다.
 2. **군론과 유한체의 기초**: ECC의 토대가 되는 수학적 구조.
 3. **덧셈과 2배 연산의 공식**: 바이어슈트라스 방정식을 이용한 대수적인 군 연산의 구현 방법.
 4. **부채널 공격의 위협**: 개인키의 비트에 의존하는 조건 분기가 치명적인 취약점을 발생시킨다는 점.
@@ -444,7 +444,7 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 
 실제 프로덕션 환경에서 동작하는 암호 라이브러리를 직접 만드는 것은 보안상 위험이 매우 높기 때문에 권장되지 않습니다("Don't roll your own crypto"). 하지만 그 내부에서 동작하고 있는 알고리즘과 수학적 배경을 깊이 이해하는 것은 더 안전하고 퍼포먼스가 높은 시스템을 설계 및 운영하는 엔지니어에게 둘도 없이 강력한 무기가 될 것입니다.
 
-다음 기사에서는 이 타원곡선을 이용한 디지털 서명 알고리즘인 **ECDSA(Elliptic Curve Digital Signature Algorithm)** 의 메커니즘이나, [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)에서 채택된 **Schnorr 서명(슈노르 서명)** 에 대해 한층 더 깊이 파고들어 보고자 합니다.
+다음 기사에서는 이 타원곡선을 이용한 디지털 서명 알고리즘인 **ECDSA(Elliptic Curve [Digital Signature](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) Algorithm)** 의 메커니즘이나, [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)에서 채택된 **Schnorr 서명(슈노르 서명)** 에 대해 한층 더 깊이 파고들어 보고자 합니다.
 
 
 

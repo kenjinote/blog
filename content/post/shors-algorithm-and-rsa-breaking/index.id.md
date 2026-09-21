@@ -10,11 +10,11 @@ description: 'Menjelaskan bagaimana kebangkitan komputer kuantum mengancam kript
 
 ## Pengantar: Persimpangan Kriptografi dan Komputer Kuantum
 
-Di masyarakat internet modern, dasar untuk melindungi rahasia komunikasi adalah "Kriptografi Kunci Publik". Yang paling representatif dari hal ini adalah "Enkripsi RSA" yang dikembangkan pada tahun 1977 oleh Ron Rivest, Adi Shamir, dan Leonard Adleman. Dari pembayaran belanja online, penelusuran situs web (HTTPS), hingga pengiriman dan penerimaan email, enkripsi RSA berfungsi sebagai jantung infrastruktur internet.
+Di masyarakat internet modern, dasar untuk melindungi rahasia komunikasi adalah "Kriptografi Kunci Publik". Yang paling representatif dari hal ini adalah "Enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)" yang dikembangkan pada tahun 1977 oleh Ron Rivest, Adi Shamir, dan Leonard Adleman. Dari pembayaran belanja online, penelusuran situs web (HTTPS), hingga pengiriman dan penerimaan email, enkripsi RSA berfungsi sebagai jantung infrastruktur internet.
 
 Namun, dengan munculnya "komputer kuantum", ada kemungkinan keamanan ini dihancurkan dari akarnya. Di media berita, kadang-kadang terdapat tajuk utama yang sensasional seperti "Setelah komputer kuantum selesai, semua kata sandi dan enkripsi di dunia akan didekripsi dalam hitungan detik". Apakah ini benar-benar terjadi?
 
-Artikel ini mendalami mekanisme GNFS (General Number Field Sieve) sebagai metode dekripsi kriptografi klasik, dan algoritma dekripsi definitif menggunakan komputer kuantum, yaitu "Algoritma Shor" ([Shor's Algorithm](https://kenji.blog/id/p/quantum-computing-shors-algorithm/)). Kita akan menjelaskan konsep lanjutan seperti Transformasi Fourier Kuantum dan penemuan periode dengan cara yang mudah dimengerti, serta menyelidiki kondisi perangkat keras kuantum saat ini di era NISQ (Noisy Intermediate-Scale Quantum) dan tantangan nyata untuk menghancurkan RSA-2048.
+Artikel ini mendalami mekanisme GNFS (General Number Field Sieve) sebagai metode dekripsi kriptografi klasik, dan algoritma dekripsi definitif menggunakan komputer kuantum, yaitu "Algoritma Shor" ([Shor's Algorithm](https://kenji.blog/id/p/quantum-computing-shors-algorithm/)). Kita akan menjelaskan konsep lanjutan seperti Transformasi Fourier Kuantum dan penemuan periode dengan cara yang mudah dimengerti, serta menyelidiki kondisi perangkat keras kuantum saat ini di era NISQ (Noisy Intermediate-Scale Quantum) dan tantangan nyata untuk menghancurkan [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)-2048.
 
 ---
 
@@ -121,7 +121,7 @@ Ketika register pertama diukur setelah menerapkan QFT, kemungkinan besar akan di
 
 Kembalikan hasil pengukuran $ c $ ini ke komputer klasik, dan buat pecahan $ \frac{c}{2^n} \approx \frac{j}{r} $. Kemudian, dengan menghitung pendekatan menggunakan metode matematika "Continued fraction expansion", kita berhasil mengekstraksi penyebut, yang merupakan periode $ r $.
 
-Jika $ r $ diketahui, sisanya adalah menghitung faktor dari $ N $ menggunakan rumus langkah 1, dan enkripsi RSA sepenuhnya hancur.
+Jika $ r $ diketahui, sisanya adalah menghitung faktor dari $ N $ menggunakan rumus langkah 1, dan enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) sepenuhnya hancur.
 
 ---
 
@@ -182,5 +182,5 @@ Platform perangkat lunak utama seperti Google Chrome dan Apple iMessage sudah mu
 
 Komputer kuantum sedang bergeser dari impian fiksi ilmiah menjadi tantangan teknik dunia nyata. Algoritma Shor adalah pencapaian intelektual umat manusia yang hebat yang menggabungkan matematika dan mekanika kuantum, tetapi pada saat yang sama memegang "kekuatan destruktif" untuk mengguncang fondasi masyarakat digital kita.
 
-Enkripsi RSA tidak akan berhenti menjadi tidak berguna besok. Namun, mengingat evolusi teknologi kuantum dan risiko "Store Now, Decrypt Later", migrasi skala besar dalam sejarah kriptografi ke PQC sudah dimulai. Kita sekarang menyaksikan garis depan pergeseran paradigma dalam keamanan informasi.
+Enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) tidak akan berhenti menjadi tidak berguna besok. Namun, mengingat evolusi teknologi kuantum dan risiko "Store Now, Decrypt Later", migrasi skala besar dalam sejarah kriptografi ke PQC sudah dimulai. Kita sekarang menyaksikan garis depan pergeseran paradigma dalam keamanan informasi.
 

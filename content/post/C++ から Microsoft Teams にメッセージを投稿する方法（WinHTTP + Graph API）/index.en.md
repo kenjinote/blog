@@ -17,7 +17,7 @@ In this article, I will introduce a **C++ code example using WinHTTP ** and the 
 
 ---
 
-## 🔧 Necessary Preparations (Microsoft Graph API Authentication Settings)
+## 🔧 Necessary Preparations (Microsoft Graph API [Authentication](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/) Settings)
 
 ### 1. Register App in Azure Portal
 First, to use the Microsoft Graph API, you need to register an app in Azure.
@@ -51,7 +51,7 @@ Make a note of the following two items displayed on the "Overview" tab:
 
 ---
 
-## 🔐 Obtaining an Access Token (OAuth2)
+## 🔐 Obtaining an Access Token ([OAuth](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/)2)
 
 Use the `client_credentials` flow to obtain it.  
 Run the following command with curl to obtain an access token.
@@ -180,7 +180,7 @@ curl -X GET ^
 | --------- | ----------------------------- |
 | Graph API | Official API to interact with Teams |
 | App Registration | Required authentication procedures on Azure |
-| Access Token | Obtained via OAuth2, used for requests |
+| Access Token | Obtained via [OAuth](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/)2, used for requests |
 | C++ Implementation | Call Graph API using WinHTTP |
 
 ## 🚀 Next Steps

@@ -12,7 +12,7 @@ description: 'Explicamos o mecanismo do General Number Field Sieve (GNFS), a mat
 # O que é o "General Number Field Sieve (GNFS)", a matemática mais poderosa da humanidade que quebra a criptografia da internet?
 
 A internet que usamos todos os dias. Mensagens no LINE, YouTube, compras na Amazon etc., todas as comunicações são protegidas por "criptografia".
-Atualmente, a criptografia mais utilizada em todo o mundo é a "Criptografia RSA".
+Atualmente, a criptografia mais utilizada em todo o mundo é a "Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)".
 
 O núcleo da defesa da Criptografia RSA é muito simples. Ele utiliza a propriedade matemática de que ** "a fatoração em números primos de números gigantescos não pode ser resolvida nem mesmo por computadores" ** .
 Por exemplo, para "15", sabemos imediatamente que é "3 × 5", mas no instante em que isso se torna um "número de 270 dígitos", levaria centenas de milhões de anos para ser resolvido, mesmo se conectássemos todos os supercomputadores do mundo.
@@ -133,7 +133,7 @@ Assim que a combinação for encontrada:
 Por fim, substitua $x$ na fórmula de letras $Y(x)$ por $m$, saltando de volta para o mundo real e unindo-os.
 Então, como que por magia matemática, a condição onde ** "os restos de $X^2$ e $Y^2$ são iguais" ** é estritamente alcançada!
 
-O resto, como no Capítulo 1, é apenas calcular o máximo divisor comum entre $X - Y$ e $N$, e a impenetrável criptografia RSA desmoronará, revelando os primos secretos.
+O resto, como no Capítulo 1, é apenas calcular o máximo divisor comum entre $X - Y$ e $N$, e a impenetrável criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) desmoronará, revelando os primos secretos.
 
 ---
 

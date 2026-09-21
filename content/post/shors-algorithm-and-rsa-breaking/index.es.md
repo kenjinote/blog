@@ -26,11 +26,11 @@ description: 'Explicamos cómo el auge de los ordenadores cuánticos amenaza el 
 
 ## Introducción: La intersección entre la criptografía y la computación cuántica
 
-En la sociedad de Internet moderna, la base para proteger el secreto de las comunicaciones es la "criptografía de clave pública". Entre ellas, un representante típico es el "cifrado RSA", desarrollado en 1977 por Ron Rivest, Adi Shamir y Leonard Adleman. Desde los pagos en compras en línea que utilizamos todos los días, la navegación de sitios web (HTTPS) hasta el envío y recepción de correos electrónicos, el cifrado RSA funciona como el corazón de la infraestructura de Internet.
+En la sociedad de Internet moderna, la base para proteger el secreto de las comunicaciones es la "criptografía de clave pública". Entre ellas, un representante típico es el "cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)", desarrollado en 1977 por Ron Rivest, Adi Shamir y Leonard Adleman. Desde los pagos en compras en línea que utilizamos todos los días, la navegación de sitios web (HTTPS) hasta el envío y recepción de correos electrónicos, el cifrado RSA funciona como el corazón de la infraestructura de Internet.
 
 Sin embargo, con la llegada de las "computadoras cuánticas", se ha señalado la posibilidad de que esta seguridad se vea socavada desde sus cimientos. A veces, en los medios de comunicación aparecen titulares sensacionalistas como: "Si se perfecciona la computadora cuántica, las contraseñas y códigos de todo el mundo serán descifrados en segundos". Pero, ¿es esto realmente cierto?
 
-En este artículo, profundizaremos en los mecanismos del GNFS (Criba General del Cuerpo de Números), que es un método clásico de criptoanálisis, y el "[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)" ([Shor's Algorithm](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)), que es la versión definitiva del algoritmo de descifrado utilizando computadoras cuánticas. Explicaremos de manera sencilla conceptos avanzados como la transformada cuántica de Fourier y el hallazgo de períodos, y examinaremos en detalle el estado actual del hardware cuántico en la era actual NISQ (Noisy Intermediate-Scale Quantum) y los obstáculos necesarios para romper realmente RSA-2048.
+En este artículo, profundizaremos en los mecanismos del GNFS (Criba General del Cuerpo de Números), que es un método clásico de criptoanálisis, y el "[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)" ([Shor's Algorithm](https://kenji.blog/es/p/quantum-computing-shors-algorithm/)), que es la versión definitiva del algoritmo de descifrado utilizando computadoras cuánticas. Explicaremos de manera sencilla conceptos avanzados como la transformada cuántica de Fourier y el hallazgo de períodos, y examinaremos en detalle el estado actual del hardware cuántico en la era actual NISQ (Noisy Intermediate-Scale Quantum) y los obstáculos necesarios para romper realmente [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)-2048.
 
 ---
 
@@ -139,7 +139,7 @@ Si se mide el primer registro después de aplicar la QFT, con una probabilidad m
 
 Este resultado de medición $ c $ se devuelve a la computadora clásica para crear una fracción $ \frac{c}{2^n} \approx \frac{j}{r} $. Luego, calculando una aproximación utilizando un método matemático llamado "expansión en fracciones continuas" (Continued fraction expansion), podemos extraer de manera brillante el período $ r $ que está en el denominador.
 
-Una vez que conocemos $ r $, todo lo que queda es usar la fórmula del Paso 1 para calcular los factores primos de $ N $ y el cifrado RSA estará completamente descifrado.
+Una vez que conocemos $ r $, todo lo que queda es usar la fórmula del Paso 1 para calcular los factores primos de $ N $ y el cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) estará completamente descifrado.
 
 ---
 
@@ -200,5 +200,5 @@ Ya se han iniciado las pruebas de implementación y las implementaciones híbrid
 
 Las computadoras cuánticas están pasando de ser el sueño del mundo de la ciencia ficción a un desafío de ingeniería en la realidad. El algoritmo de Shor es un gran logro intelectual de la humanidad que fusiona las matemáticas y la mecánica cuántica, pero al mismo tiempo tiene un "poder destructivo" oculto que puede sacudir los cimientos de nuestra sociedad digital.
 
-El cifrado RSA no quedará inutilizable inmediatamente mañana. Sin embargo, considerando la evolución de la tecnología cuántica y el riesgo de "Store Now, Decrypt Later", la migración masiva en la historia de la criptografía, que es la transición a PQC, ya ha comenzado. Ahora mismo somos testigos de la primera línea de un cambio de paradigma en la seguridad de la información.
+El cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) no quedará inutilizable inmediatamente mañana. Sin embargo, considerando la evolución de la tecnología cuántica y el riesgo de "Store Now, Decrypt Later", la migración masiva en la historia de la criptografía, que es la transición a PQC, ya ha comenzado. Ahora mismo somos testigos de la primera línea de un cambio de paradigma en la seguridad de la información.
 

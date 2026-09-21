@@ -9,7 +9,7 @@ categories: ["mathematics", "cryptography"]
 tags: ["RSA", "Prime Numbers", "Math", "Cryptography"]
 ---
 
-Eine der Technologien, die die Sicherheit der Internetgesellschaft grundlegend unterstützt, ist die „RSA-Verschlüsselung“. Viele der Kommunikationen, die wir jeden Tag beiläufig nutzen, wie Kreditkartenzahlungen beim Online-Shopping, der Austausch mit Freunden auf sozialen Netzwerken und das Senden und Empfangen vertraulicher Unternehmensinformationen, werden durch diese RSA-Verschlüsselung und ihre Nachfolgetechnologien geschützt.
+Eine der Technologien, die die Sicherheit der Internetgesellschaft grundlegend unterstützt, ist die „[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung“. Viele der Kommunikationen, die wir jeden Tag beiläufig nutzen, wie Kreditkartenzahlungen beim Online-Shopping, der Austausch mit Freunden auf sozialen Netzwerken und das Senden und Empfangen vertraulicher Unternehmensinformationen, werden durch diese RSA-Verschlüsselung und ihre Nachfolgetechnologien geschützt.
 
 Wenn man jedoch das Wort „Verschlüsselung“ hört, stellt man sich vielleicht komplexe Chiffriermaschinen wie in Spionagefilmen vor oder extrem fortgeschrittene Mathematik, die nur einige wenige Genies verstehen können. Es stimmt zwar, dass die moderne Kryptographie auf fortgeschrittener Mathematik basiert, aber **die grundlegende Funktionsweise der RSA-Verschlüsselung kann mit dem Wissen aus der Schulmathematik (Eigenschaften von ganzen Zahlen, Primzahlen, Kongruenzen usw.) gut verstanden werden**.
 
@@ -58,7 +58,7 @@ Um dieses revolutionäre System zu realisieren, ist eine Art **„Einwegfunktion
 
 ---
 
-## 2. Mathematische Grundlagen der RSA-Verschlüsselung Teil 1: Primzahlen und Primfaktorzerlegung
+## 2. Mathematische Grundlagen der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung Teil 1: Primzahlen und Primfaktorzerlegung
 
 Die Sicherheit der RSA-Verschlüsselung basiert auf der mathematischen Tatsache, dass **„die Primfaktorzerlegung riesiger Zahlen extrem schwierig ist“**.
 
@@ -153,7 +153,7 @@ $$ a^{\phi(N) + 1} \equiv a \pmod N $$
 Darüber hinaus ergibt $a^{k \cdot \phi(N)}$ für eine beliebige ganze Zahl $k$ ebenfalls $1^k = 1$, sodass die folgende Gleichung gilt:
 $$ a^{k \cdot \phi(N) + 1} \equiv a \pmod N $$
 
-Genau diese Gleichung ist das Grundprinzip, das die Magie der RSA-Verschlüsselung – **„nach dem Verschlüsseln und Entschlüsseln erhält man wieder das Original“** – möglich macht.
+Genau diese Gleichung ist das Grundprinzip, das die Magie der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung – **„nach dem Verschlüsseln und Entschlüsseln erhält man wieder das Original“** – möglich macht.
 
 ---
 
@@ -238,7 +238,7 @@ Da Alice $d$ nicht kennt und auch ein Abhörer $d$ nicht kennt, ist Bob mit sein
 
 ---
 
-## 7. Ein konkretes Beispiel: RSA mit kleinen Primzahlen per Hand ausprobieren
+## 7. Ein konkretes Beispiel: [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) mit kleinen Primzahlen per Hand ausprobieren
 
 Lassen Sie uns tatsächlich eine verschlüsselte Kommunikation von Alice an Bob unter Verwendung kleiner Zahlen (Primzahlen) durchführen.
 
@@ -281,7 +281,7 @@ $-17$ bedeutet in der Welt von Modulo $120$ dasselbe wie $120 - 17 = 103$. So l�
 
 ---
 
-## 9. Ein weiteres Gesicht der RSA-Verschlüsselung: Digitale Signaturen
+## 9. Ein weiteres Gesicht der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung: Digitale Signaturen
 
 Das Tolle an der RSA-Verschlüsselung ist, dass sie auch als **„digitale Signatur“** verwendet werden kann, indem man die Rollen des öffentlichen und privaten Schlüssels vertauscht.
 
@@ -302,7 +302,7 @@ Alice wandelt die Nachricht mit ihrem eigenen privaten Schlüssel $d$ um (das is
 
 ---
 
-## 10. Die RSA-Verschlüsselung durch Programmierung erfahren
+## 10. Die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung durch Programmierung erfahren
 
 Potenzberechnungen, die per Hand extrem mühsam sind, lassen sich in Python sehr einfach implementieren. Im Folgenden finden Sie einen Python-Code, mit dem Sie die Kernlogik der RSA-Verschlüsselung erleben können.
 
@@ -342,7 +342,7 @@ Die Python-Funktion `pow(base, exp, mod)` verwendet intern einen schnellen Algor
 
 ## 11. Zusammenfassung und zukünftige Kryptographietechnologien
 
-Basierend auf dem Wissen der Schulmathematik haben wir die Funktionsweise der RSA-Verschlüsselung aufgedeckt.
+Basierend auf dem Wissen der Schulmathematik haben wir die Funktionsweise der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung aufgedeckt.
 
 1. **Die Schwierigkeit der Primfaktorzerlegung:** $p \times q = N$ ist einfach, aber es ist sehr schwer, $p$ und $q$ aus $N$ zu finden.
 2. **Kongruenzen und der Satz von Euler:** Das Gesetz $a^{\phi(N)} \equiv 1 \pmod N$ vervollständigt die magische Trapdoor, bei der man „durch Potenzieren mit einer bestimmten Zahl zum Ursprung zurückkehrt“.
@@ -350,5 +350,5 @@ Basierend auf dem Wissen der Schulmathematik haben wir die Funktionsweise der RS
 
 Das $N$ der heute verwendeten RSA-Verschlüsselung hat mehr als 600 Ziffern. Selbst wenn alle Supercomputer der Welt zusammenarbeiten würden, würde die Primfaktorzerlegung länger dauern als das Alter des Universums. Wenn jedoch in Zukunft die derzeit in Entwicklung befindlichen „Quantencomputer“ in die Praxis umgesetzt werden, besteht die Möglichkeit, dass diese Primfaktorzerlegung durch den „[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)“ augenblicklich geknackt wird. Aus diesem Grund wird derzeit weltweit mit Hochdruck an der Entwicklung der „Post-Quanten-Kryptographie“ gearbeitet, die selbst von Quantencomputern nicht entschlüsselt werden kann.
 
-Fortgeschrittene Mathematik, die oft als „nutzlos“ abgetan wird, schützt in Wirklichkeit unseren Alltag grundlegend. Die RSA-Verschlüsselung ist das beste Lehrmaterial, um uns diese Tiefe und Schönheit der Mathematik zu zeigen. Ich hoffe, dass Sie durch diesen Artikel ein wenig von der Faszination für Kryptographie und Mathematik spüren konnten.
+Fortgeschrittene Mathematik, die oft als „nutzlos“ abgetan wird, schützt in Wirklichkeit unseren Alltag grundlegend. Die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung ist das beste Lehrmaterial, um uns diese Tiefe und Schönheit der Mathematik zu zeigen. Ich hoffe, dass Sie durch diesen Artikel ein wenig von der Faszination für Kryptographie und Mathematik spüren konnten.
 

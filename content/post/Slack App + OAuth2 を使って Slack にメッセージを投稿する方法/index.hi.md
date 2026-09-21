@@ -11,20 +11,20 @@ description: 'हम Slack App के OAuth टोकन का उपयोग 
 
 ## ✅ एक्सेस टोकन का उपयोग करके पोस्ट करने की विधि (Slack Web API)
 
-Slack का "OAuth Token (जैसे xoxb-...)" Slack के [Web API](https://api.slack.com/methods/chat.postMessage) का उपयोग करके पोस्ट करने के लिए एक कुंजी है।
+Slack का "[OAuth](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) Token (जैसे xoxb-...)" Slack के [Web API](https://api.slack.com/methods/chat.postMessage) का उपयोग करके पोस्ट करने के लिए एक कुंजी है।
 इस मामले में, Webhook के विपरीत, आप `Authorization: Bearer` हेडर के साथ **Slack API एंडपॉइंट** पर `POST` करते हैं।
 
 ---
 
 ## 🔑 आवश्यक शर्तें
 
-आपको Slack ऐप के **OAuth स्कोप में `chat:write`** शामिल करना होगा:
+आपको Slack ऐप के **[OAuth](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) स्कोप में `chat:write`** शामिल करना होगा:
 
 ### सेटअप प्रक्रिया
 
 1. [https://api.slack.com/apps](https://api.slack.com/apps) पर जाएं
 2. एक ऐप बनाएं या मौजूदा ऐप चुनें
-3. "OAuth & Permissions" > `Scopes` में
+3. "[OAuth](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/) & Permissions" > `Scopes` में
    → `chat:write` जोड़ें
 4. "Install to Workspace" या "Reinstall" पर जाएं और `Access Token` प्राप्त करें (उदा: `xoxb-xxxxxxxxxx`)
 

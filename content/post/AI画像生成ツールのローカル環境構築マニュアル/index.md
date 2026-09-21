@@ -172,7 +172,7 @@ Fooocusは、Midjourneyのような「短いプロンプトでも圧倒的に美
 AI画像生成の品質は、使用するモデル（学習済みデータ）に完全に依存します。
 
 ### 6.1 Checkpoints (Base Models)
-画像生成の核となるメインモデルです。以前は `.ckpt`（Pickle形式）が主流でしたが、これは任意のPythonコードを実行可能な脆弱性（Arbitrary Code Execution）を含んでいました。現在では、セキュリティが担保され、ディスクからメモリへのゼロコピーロード（mmap）が可能な **`.safetensors`** 形式が標準となっています。絶対に素性の知れない `.ckpt` ファイルはダウンロードしないでください。
+画像生成の核となるメインモデルです。以前は `.ckpt`（Pickle形式）が主流でしたが、これは任意のPythonコードを実行可能な[脆弱性](https://kenji.blog/p/web-application-vulnerability-owasp-top-10/)（Arbitrary Code Execution）を含んでいました。現在では、セキュリティが担保され、ディスクからメモリへのゼロコピーロード（mmap）が可能な **`.safetensors`** 形式が標準となっています。絶対に素性の知れない `.ckpt` ファイルはダウンロードしないでください。
 
 ### 6.2 LoRA (Low-Rank Adaptation) の数学的挙動
 LoRAは、フルモデルの微調整（ファインチューニング）に必要な膨大な計算資源を回避し、特定のキャラクターや画風を追加学習させる技術です。

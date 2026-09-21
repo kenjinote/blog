@@ -129,22 +129,22 @@ MakeAppx.exe pack /d "C:\Path\To\AppFolder" /p "C:\Path\To\Output\AwesomeApp_1.0
 
 ## 5. デジタル署名と暗号技術の数学的背景
 
-MSIXパッケージになぜ署名が必要なのかを深く理解するためには、デジタル署名の背後にある暗号学的なメカニズムを理解する必要があります。デジタル署名は、パッケージが「確実に指定された発行元によって作成されたこと（認証）」と、「作成後から現在までに第三者によって改ざんされていないこと（完全性）」を保証します。
+MSIXパッケージになぜ署名が必要なのかを深く理解するためには、デジタル署名の背後にある暗号学的なメカニズムを理解する必要があります。デジタル署名は、パッケージが「確実に指定された発行元によって作成されたこと（[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)）」と、「作成後から現在までに第三者によって改ざんされていないこと（完全性）」を保証します。
 
-MSIXの署名には通常、RSA暗号とSHA-256（Secure Hash Algorithm 256-bit）が組み合わされて使用されます。
+MSIXの署名には通常、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号とSHA-256（Secure Hash Algorithm 256-bit）が組み合わされて使用されます。
 
 ### ハッシュ関数の適用
 まず、MSIXパッケージのバイナリ全体（内容物）をメッセージ $M$ とします。署名ツール（SignTool.exe）は、このメッセージ $M$ に対して暗号学的ハッシュ関数であるSHA-256を適用し、固定長（256ビット）のハッシュ値 $H(M)$ を計算します。
 
 ### 署名の生成（発行元）
-次に、発行元は自身の「秘密鍵（Private Key）」 $d$ を使用してハッシュ値を暗号化し、デジタル署名 $\sigma$ を生成します。RSAアルゴリズムの文脈において、これはモジュラ・べき乗演算として以下のように表現されます。
+次に、発行元は自身の「秘密鍵（Private Key）」 $d$ を使用してハッシュ値を[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)し、デジタル署名 $\sigma$ を生成します。RSAアルゴリズムの文脈において、これはモジュラ・べき乗演算として以下のように表現されます。
 
 $$ \sigma \equiv (H(M))^d \pmod n $$
 
-ここで $n$ はRSAモジュラス（2つの巨大な素数の積）です。この署名 $\sigma$ と発行元の「公開鍵（Public Key）」 $e$ を含む証明書（X.509形式）が、MSIXパッケージの一部（`AppxSignature.p7x`）として埋め込まれます。
+ここで $n$ はRSAモジュラス（2つの巨大な素数の積）です。この署名 $\sigma$ と発行元の「[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)（[Public Key](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)）」 $e$ を含む証明書（X.509形式）が、MSIXパッケージの一部（`AppxSignature.p7x`）として埋め込まれます。
 
 ### 署名の検証（Windows OS）
-ユーザーがMSIXをインストールしようとした際、Windows OSはパッケージ内の証明書から公開鍵 $e$ を取り出し、以下の計算を行ってハッシュ値 $H'(M)$ を復元します。
+ユーザーがMSIXをインストールしようとした際、Windows OSはパッケージ内の証明書から[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) $e$ を取り出し、以下の計算を行ってハッシュ値 $H'(M)$ を復元します。
 
 $$ H'(M) \equiv \sigma^e \pmod n $$
 
@@ -194,7 +194,7 @@ sequenceDiagram
 
 この問題を解決するには、以下の2ステップを確実に実行する必要があります。
 1. 有効な自己署名証明書を作成し、秘密鍵を含むPFXファイルをエクスポートする。
-2. 作成した証明書の公開鍵部分（CERファイル）を、対象となる **すべてのPCの「信頼されたルート証明機関（Trusted Root Certification Authorities）」ストアにインストールする** 。
+2. 作成した証明書の[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)部分（CERファイル）を、対象となる **すべてのPCの「信頼されたルート証明機関（Trusted Root Certification Authorities）」ストアにインストールする** 。
 
 これらはPowerShellを使うことで、確実かつ自動的に処理することができます。
 
@@ -263,7 +263,7 @@ Write-Host "証明書を信頼されたルート証明機関にインストー�
 エンタープライズ環境でのベストプラクティスは以下の通りです。
 
 ### 1. Active Directory グループポリシー (GPO) の活用
-社内にActive Directoryが導入されている場合、GPOの「公開鍵ポリシー」を使用して、自己署名証明書（CERファイル）をドメイン参加しているすべてのPCの「信頼されたルート証明機関」へ自動的に配布することができます。これにより、社員は証明書について一切意識することなく、共有フォルダ上のMSIXファイルをダブルクリックするだけでインストールが可能になります。
+社内にActive Directoryが導入されている場合、GPOの「[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)ポリシー」を使用して、自己署名証明書（CERファイル）をドメイン参加しているすべてのPCの「信頼されたルート証明機関」へ自動的に配布することができます。これにより、社員は証明書について一切意識することなく、共有フォルダ上のMSIXファイルをダブルクリックするだけでインストールが可能になります。
 
 ### 2. Microsoft Intune (MDM) によるデプロイ
 モダンな環境ではMicrosoft Intuneを使用してデバイス管理を行っています。Intuneでは、「構成プロファイル」機能を使って信頼された証明書（.cer）をエンドポイントにプッシュ配信できます。その後、LOB (Line of Business) アプリケーションとしてMSIXパッケージ自体をサイレントインストールとしてデプロイすることが可能です。

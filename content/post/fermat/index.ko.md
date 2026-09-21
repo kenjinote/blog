@@ -39,7 +39,7 @@ flowchart TD
 
 ### 2.1. [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)
 
-현대 암호 이론(RSA 암호 등)의 근간을 이루는 매우 중요한 정리가 바로 **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)**입니다. 이는 소수에 관한 놀라운 성질을 보여주며, 현대 인터넷 사회의 보안 기술을 묵묵히 뒷받침하고 있습니다.
+현대 암호 이론([RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호 등)의 근간을 이루는 매우 중요한 정리가 바로 **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)**입니다. 이는 소수에 관한 놀라운 성질을 보여주며, 현대 인터넷 사회의 보안 기술을 묵묵히 뒷받침하고 있습니다.
 
 정리의 내용은 다음과 같습니다.
 임의의 소수 $p$와 $p$와 서로소인(즉, $p$의 배수가 아닌) 임의의 정수 $a$에 대해 다음 합동식이 성립합니다.

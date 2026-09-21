@@ -173,9 +173,9 @@ $$ T_{total} = \frac{D}{c} + \frac{L}{B} + T_{proc} $$
 
 전통적인 VPN을 사용할 경우, 원격 엔지니어가 클라우드 상의 SaaS(예: GitHub나 AWS 콘솔)에 접근할 때도 모든 트래픽을 한 번 사내 네트워크의 VPN 게이트웨이까지 끌어들인 다음 그곳에서 인터넷으로 빠져나가는 '헤어핀 NAT(Hairpinning)'라는 비효율적인 라우팅이 발생합니다. 이로 인해 거리 $D$가 무의미하게 증가하고, 또한 VPN 어플라이언스의 암호화 및 복호화 처리로 인한 $T_{proc}$가 치솟습니다. 이는 엔지니어의 타이핑 응답성을 현저히 악화시키고 플로우 상태를 파괴합니다.
 
-## 제로 트러스트(BeyondCorp)에 의한 패러다임 전환
+## 제로 트러스트([BeyondCorp](https://kenji.blog/ko/p/zero-trust-network-architecture-beyond-corp/))에 의한 패러다임 전환
 
-이러한 네트워크적 한계를 극복하고 진정한 "어디서나 쾌적하고 안전하게 일할 수 있는 환경"을 실현하는 것이 구글이 제창한 'BeyondCorp'로 대표되는 **제로 트러스트 아키텍처(Zero Trust Network Architecture: ZTNA)** 입니다.
+이러한 네트워크적 한계를 극복하고 진정한 "어디서나 쾌적하고 안전하게 일할 수 있는 환경"을 실현하는 것이 구글이 제창한 'BeyondCorp'로 대표되는 **제로 트러스트 아키텍처([Zero Trust](https://kenji.blog/ko/p/zero-trust-network-architecture-beyond-corp/) Network Architecture: ZTNA)** 입니다.
 
 제로 트러스트의 핵심은 "네트워크의 경계(사내인지 사외인지)를 신뢰의 근거로 삼지 않는다"는 것입니다.
 

@@ -15,7 +15,7 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 Am nächsten an dieses Rätsel der Primzahlen kam die 1859 von dem deutschen Mathematiker [Bernhard Riemann](https://kenji.blog/de/p/riemann/) aufgestellte **"[Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung" ([Riemann](https://kenji.blog/de/p/riemann/) Hypothesis)** heran. Die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung ist eines der wichtigsten und ungelösten Probleme der modernen Mathematik und als eines der Millennium-Probleme des Clay Mathematics Institute mit einem Preisgeld von einer Million Dollar dotiert.
 
-Auf den ersten Blick mag ein Problem der reinen Mathematik über die Verteilung von Primzahlen nichts mit unserem Alltag zu tun haben. Die Sicherheit des Internets, das die Infrastruktur der modernen Gesellschaft stützt, insbesondere **moderne Verschlüsselungstechnologien wie die RSA-Kryptographie und die Elliptische-Kurven-Kryptographie (ECC)**, hängt jedoch stark von den Eigenschaften riesiger Primzahlen ab.
+Auf den ersten Blick mag ein Problem der reinen Mathematik über die Verteilung von Primzahlen nichts mit unserem Alltag zu tun haben. Die Sicherheit des Internets, das die Infrastruktur der modernen Gesellschaft stützt, insbesondere **moderne Verschlüsselungstechnologien wie die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie und die Elliptische-Kurven-Kryptographie (ECC)**, hängt jedoch stark von den Eigenschaften riesiger Primzahlen ab.
 
 In diesem Artikel begeben wir uns auf eine mathematische Reise von der Verteilung der Primzahlen über den Primzahlsatz und die [Riemann](https://kenji.blog/de/p/riemann/)sche Zeta-Funktion bis hin zum Kern der [Riemann](https://kenji.blog/de/p/riemann/)schen Vermutung. Wir werden extrem detailliert und tiefgreifend erklären, wie all dies mit der modernen Kryptographie verbunden ist und was mit der Welt passieren würde, wenn die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung bewiesen werden sollte.
 
@@ -122,9 +122,9 @@ Das bedeutet: **Wenn die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutu
 
 # 6. Die untrennbare Beziehung zwischen der modernen Kryptographie und Primzahlen
 
-Bisher befanden wir uns in der Welt der tiefgründigen reinen Mathematik, aber diese Eigenschaften von Primzahlen stützen die moderne digitale Gesellschaft grundlegend. Der repräsentativste Vertreter dafür ist die Public-Key-Kryptographie wie die **RSA-Kryptographie**.
+Bisher befanden wir uns in der Welt der tiefgründigen reinen Mathematik, aber diese Eigenschaften von Primzahlen stützen die moderne digitale Gesellschaft grundlegend. Der repräsentativste Vertreter dafür ist die Public-Key-Kryptographie wie die **[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie**.
 
-Die Sicherheit jeglicher Kommunikation, von Kreditkartenzahlungen im Internet über das Senden von Passwörtern bis hin zu digitalen Signaturen der Blockchain, hängt von "Primzahlen" ab.
+Die Sicherheit jeglicher Kommunikation, von Kreditkartenzahlungen im Internet über das Senden von Passwörtern bis hin zu digitalen Signaturen der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/), hängt von "Primzahlen" ab.
 
 ### Funktionsweise der RSA-Kryptographie
 Die Sicherheit der RSA-Kryptographie beruht auf der mathematischen Tatsache, dass "die Primfaktorzerlegung großer zusammengesetzter Zahlen sehr schwierig ist" (Primfaktorzerlegungsproblem).
@@ -152,7 +152,7 @@ graph LR
     F -.-> G["Ohne p und q ist d unberechenbar"]
 ```
 
-Um die RSA-Kryptographie zu brechen, müssen aus dem riesigen $N$ die ursprünglichen Primzahlen $p$ und $q$ gefunden werden (Primfaktorzerlegung). Es wird geschätzt, dass selbst mit Supercomputern und der Verwendung derzeit gängiger Algorithmen (wie dem Zahlkörpersieb: GNFS) die Primfaktorzerlegung von Zahlen mit hunderten von Ziffern weitaus länger dauern würde als das Alter des Universums.
+Um die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie zu brechen, müssen aus dem riesigen $N$ die ursprünglichen Primzahlen $p$ und $q$ gefunden werden (Primfaktorzerlegung). Es wird geschätzt, dass selbst mit Supercomputern und der Verwendung derzeit gängiger Algorithmen (wie dem Zahlkörpersieb: GNFS) die Primfaktorzerlegung von Zahlen mit hunderten von Ziffern weitaus länger dauern würde als das Alter des Universums.
 
 ---
 
@@ -161,7 +161,7 @@ Um die RSA-Kryptographie zu brechen, müssen aus dem riesigen $N$ die ursprüngl
 Wie kreuzen sich also die "[Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung", der Gipfel der reinen Mathematik, und die "Kryptographie"?
 
 ### 7.1. Primzahlengenerierungsalgorithmen (Primzahltest) und die Erweiterte [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung (GRH)
-Um die RSA-Kryptographie zu betreiben, müssen zuerst die riesigen Primzahlen $p$ und $q$ generiert werden. Es ist jedoch nicht einfach, zuverlässig und schnell zu bestimmen, "ob eine bestimmte Zahl eine Primzahl ist".
+Um die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie zu betreiben, müssen zuerst die riesigen Primzahlen $p$ und $q$ generiert werden. Es ist jedoch nicht einfach, zuverlässig und schnell zu bestimmen, "ob eine bestimmte Zahl eine Primzahl ist".
 
 Gegenwärtig wird in der Praxis der **Miller-Rabin-Primzahltest (Miller-Rabin primality test)**, ein probabilistischer Algorithmus, verwendet. Dieser Algorithmus ist schnell, birgt jedoch das Risiko von "Pseudoprimzahlen", d.h., dass eine zusammengesetzte Zahl mit extrem geringer Wahrscheinlichkeit fälschlicherweise als Primzahl identifiziert wird.
 
@@ -179,7 +179,7 @@ Um genau beurteilen zu können, wie oft glatte Zahlen auftreten, ist ein tiefes 
 
 # 8. Wenn die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung bewiesen wird, wird die Kryptographie gebrochen?
 
-Wie eine urbane Legende wird oft erzählt: "Wenn die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung gelöst ist, wird die RSA-Kryptographie in einem Augenblick zusammenbrechen", aber **das ist mathematisch inkorrekt**.
+Wie eine urbane Legende wird oft erzählt: "Wenn die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung gelöst ist, wird die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie in einem Augenblick zusammenbrechen", aber **das ist mathematisch inkorrekt**.
 
 Der Beweis der [Riemann](https://kenji.blog/de/p/riemann/)schen Vermutung selbst wird nicht sofort einen magischen Algorithmus hervorbringen, der die Primfaktorzerlegung drastisch beschleunigt. Die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung ist nur ein Theorem über die "makroskopische Regelmäßigkeit der Verteilung" von Primzahlen und sagt uns nicht direkt, durch welche Primzahlen eine bestimmte Zahl $N$ teilbar ist (lokale Eigenschaften).
 
@@ -189,7 +189,7 @@ Es ist extrem wahrscheinlich, dass während des Prozesses des Beweises der [Riem
 Sollten unbekannte Methoden der algebraischen Geometrie oder der nichtkommutativen Geometrie etabliert werden, die die Eigenschaften der Nullstellen der [Riemann](https://kenji.blog/de/p/riemann/)schen Zeta-Funktion vollständig manipulieren können, lässt sich nicht leugnen, dass dies zur Entdeckung eines bahnbrechenden Algorithmus zur Primfaktorzerlegung führen könnte (z.B. ein klassischer Algorithmus, der die Komplexität auf Polynomzeit reduziert). In diesem Sinne können Kryptographen ihre Augen niemals von den Entwicklungen rund um die [Riemann](https://kenji.blog/de/p/riemann/)sche Vermutung abwenden.
 
 ### Quantencomputer und Shors Algorithmus
-Eine direktere und realistischere Bedrohung für die Kryptographie ist nicht der Beweis der [Riemann](https://kenji.blog/de/p/riemann/)schen Vermutung, sondern **Quantencomputer**. Der 1994 von Peter Shor veröffentlichte "[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)" bewies, dass ein Quantencomputer mit ausreichender Leistung die Primfaktorzerlegung in Polynomzeit lösen kann. Dies würde die RSA-Kryptographie und die Elliptische-Kurven-Kryptographie grundlegend brechen.
+Eine direktere und realistischere Bedrohung für die Kryptographie ist nicht der Beweis der [Riemann](https://kenji.blog/de/p/riemann/)schen Vermutung, sondern **Quantencomputer**. Der 1994 von Peter Shor veröffentlichte "[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)" bewies, dass ein Quantencomputer mit ausreichender Leistung die Primfaktorzerlegung in Polynomzeit lösen kann. Dies würde die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie und die Elliptische-Kurven-Kryptographie grundlegend brechen.
 
 Derzeit wird weltweit der Übergang zur "Post-Quanten-Kryptographie (Post-Quantum [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy, PQC)" (wie gitterbasierte Kryptographie) vorangetrieben, die selbst von Quantencomputern nicht geknackt werden kann. Die von Primzahlen abhängige Kryptographie könnte in gewissem Sinne ihr goldenes Zeitalter beenden, aber der mathematische Wert der Primzahlen selbst wird niemals verloren gehen.
 

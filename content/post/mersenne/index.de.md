@@ -113,7 +113,7 @@ def is_mersenne_prime(p):
     return s == 0
 ```
 
-Die entdeckten gigantischen Primzahlen spielen eine entscheidende Rolle bei der Unterstützung der Informationsgesellschaft und dienen als Grundlage für die Sicherheitsbewertung moderner Public-Key-Kryptographiesysteme wie RSA und von Algorithmen zur Zufallszahlengenerierung (wie dem [Mersenne](https://kenji.blog/de/p/mersenne/)-Twister).
+Die entdeckten gigantischen Primzahlen spielen eine entscheidende Rolle bei der Unterstützung der Informationsgesellschaft und dienen als Grundlage für die Sicherheitsbewertung moderner Public-Key-Kryptographiesysteme wie [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) und von Algorithmen zur Zufallszahlengenerierung (wie dem [Mersenne](https://kenji.blog/de/p/mersenne/)-Twister).
 
 ## Beiträge zur Akustik und Musiktheorie: [Mersenne](https://kenji.blog/de/p/mersenne/)-Gesetze
 

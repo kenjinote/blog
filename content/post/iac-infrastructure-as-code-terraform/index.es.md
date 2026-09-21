@@ -350,7 +350,7 @@ Al diseñar módulos en Terraform, establecer el número de `az_count` como vari
 
 ## Antipatrones
 1. **Mezclar con cambios manuales** : Modificar los recursos gestionados por Terraform directamente desde la GUI. Provocará inconsistencias en el State.
-2. **Hardcoding de credenciales** : Escribir claves de acceso o claves secretas directamente en el código. Utilice variables de entorno o roles de IAM (integración OIDC, etc.).
+2. **Hardcoding de credenciales** : Escribir claves de acceso o claves secretas directamente en el código. Utilice variables de entorno o roles de IAM (integración [OIDC](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/), etc.).
 3. **Módulos demasiado complejos** : Intentar incluir cada característica en un módulo da lugar a docenas de variables y reduce en gran medida la legibilidad. Mantenga en mente la regla de "un módulo tiene una sola responsabilidad (Single Responsibility)".
 
 ---

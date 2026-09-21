@@ -140,7 +140,7 @@ De plus, l'apprentissage de la structure de l'« index [B-Tree](https://kenji.bl
 
 L'enseignement de l'informatique aborde une éducation superficielle à la sécurité, du type « Utilisons des mots de passe complexes » ou « Ne cliquons pas sur des liens suspects », mais n'enseigne presque jamais les mathématiques de la « cryptographie » qui soutient fondamentalement la société d'Internet.
 
-Les communications HTTPS et les signatures numériques que nous utilisons quotidiennement sont protégées par la cryptographie à clé publique, comme le chiffrement RSA. La sécurité du chiffrement RSA repose sur la difficulté mathématique (considérée comme un problème NP-intermédiaire) qu'« il est impossible pour un ordinateur classique actuel de factoriser d'énormes nombres entiers en nombres premiers dans un délai raisonnable ».
+Les communications HTTPS et les signatures numériques que nous utilisons quotidiennement sont protégées par la cryptographie à clé publique, comme le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/). La sécurité du chiffrement RSA repose sur la difficulté mathématique (considérée comme un problème NP-intermédiaire) qu'« il est impossible pour un ordinateur classique actuel de factoriser d'énormes nombres entiers en nombres premiers dans un délai raisonnable ».
 
 Les formules mathématiques à la base du chiffrement RSA sont une belle application de la fonction indicatrice d'Euler et du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/).
 

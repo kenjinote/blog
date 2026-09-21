@@ -9,7 +9,7 @@ categories: ["mathematics", "cryptography"]
 tags: ["RSA", "Prime Numbers", "Math", "Cryptography"]
 ---
 
-L'une des technologies qui soutient fondamentalement la sécurité de la société Internet est la « cryptographie RSA ». La plupart des communications que nous utilisons négligemment chaque jour, telles que les paiements par carte de crédit lors des achats en ligne, les échanges sur les réseaux sociaux avec des amis, ou l'envoi et la réception d'informations confidentielles d'entreprise, sont protégées par cette cryptographie RSA ou par ses technologies successives.
+L'une des technologies qui soutient fondamentalement la sécurité de la société Internet est la « cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) ». La plupart des communications que nous utilisons négligemment chaque jour, telles que les paiements par carte de crédit lors des achats en ligne, les échanges sur les réseaux sociaux avec des amis, ou l'envoi et la réception d'informations confidentielles d'entreprise, sont protégées par cette cryptographie RSA ou par ses technologies successives.
 
 Cependant, lorsque l'on entend le mot « cryptographie », on peut imaginer des machines de chiffrement complexes comme celles des films d'espionnage, ou des mathématiques super avancées que seuls quelques génies peuvent comprendre. S'il est vrai que la théorie cryptographique moderne repose sur des mathématiques avancées, **le mécanisme fondamental de la cryptographie RSA peut être pleinement compris avec des connaissances mathématiques acquises au lycée (propriétés des entiers, nombres premiers, congruences, etc.)**.
 
@@ -19,7 +19,7 @@ Dans cet article, en partant des connaissances mathématiques du lycée, nous ex
 
 ## 1. [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie à clé symétrique et cryptographie à clé publique
 
-Avant d'aborder le mécanisme mathématique de la cryptographie RSA, passons d'abord en revue les concepts de base de la cryptographie. Les méthodes de chiffrement sont généralement divisées en deux types : la « cryptographie à clé symétrique » (ou clé secrète) et la « cryptographie à clé publique ».
+Avant d'aborder le mécanisme mathématique de la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), passons d'abord en revue les concepts de base de la cryptographie. Les méthodes de chiffrement sont généralement divisées en deux types : la « cryptographie à clé symétrique » (ou clé secrète) et la « cryptographie à clé publique ».
 
 ### 1.1 Les limites de la cryptographie à clé symétrique
 
@@ -31,7 +31,7 @@ Cette méthode pose un problème majeur : le « problème de distribution des cl
 
 ### 1.2 L'invention révolutionnaire : la « [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie à clé publique »
 
-La « cryptographie à clé publique » a été inventée pour résoudre ce problème de distribution des clés. La cryptographie RSA en est un type.
+La « cryptographie à clé publique » a été inventée pour résoudre ce problème de distribution des clés. La cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) en est un type.
 
 Dans la cryptographie à clé publique, **deux clés différentes sont utilisées : une « clé pour chiffrer (clé publique) » et une « clé pour déchiffrer (clé privée) »**.
 
@@ -58,7 +58,7 @@ Pour réaliser ce système révolutionnaire, une sorte de **« fonction à sens 
 
 ---
 
-## 2. Base mathématique de la cryptographie RSA 1 : Nombres premiers et décomposition en facteurs premiers
+## 2. Base mathématique de la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) 1 : Nombres premiers et décomposition en facteurs premiers
 
 La sécurité de la cryptographie RSA repose sur le fait mathématique que **« la décomposition en facteurs premiers de nombres gigantesques est extrêmement difficile »**.
 
@@ -135,7 +135,7 @@ $$ \phi(p) = p - 1 $$
 **【Propriété spéciale dans le cas du produit de deux nombres premiers】**
 Pour deux nombres premiers distincts $p$ et $q$, si on pose $N = p \times q$, $\phi(N)$ peut être facilement calculée avec la formule suivante.
 $$ \phi(N) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-Cette propriété agit comme la « porte dérobée secrète (trapdoor) » de la cryptographie RSA. La personne qui connaît $p$ et $q$ (le créateur de la clé) peut calculer $\phi(N)$ en un instant, mais une tierce personne qui ne connaît que $N$ ne peut pas trouver $\phi(N)$ sans factoriser $N$.
+Cette propriété agit comme la « porte dérobée secrète (trapdoor) » de la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/). La personne qui connaît $p$ et $q$ (le créateur de la clé) peut calculer $\phi(N)$ en un instant, mais une tierce personne qui ne connaît que $N$ ne peut pas trouver $\phi(N)$ sans factoriser $N$.
 
 ### 4.2 Le théorème d'Euler
 
@@ -153,7 +153,7 @@ $$ a^{\phi(N) + 1} \equiv a \pmod N $$
 De plus, pour tout entier $k$, comme $a^{k \cdot \phi(N)}$ sera également égal à $1^k = 1$, l'équation suivante est vraie :
 $$ a^{k \cdot \phi(N) + 1} \equiv a \pmod N $$
 
-Cette équation est le principe fondamental qui permet à la magie de la cryptographie RSA de fonctionner : **« chiffrer puis déchiffrer permet de revenir à l'original »**.
+Cette équation est le principe fondamental qui permet à la magie de la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) de fonctionner : **« chiffrer puis déchiffrer permet de revenir à l'original »**.
 
 ---
 
@@ -238,7 +238,7 @@ Alice ne connaît pas $d$, et les personnes sur écoute ne connaissent pas $d$ n
 
 ---
 
-## 7. Exemple concret : Faisons l'expérience de RSA par un calcul manuel avec de petits nombres premiers
+## 7. Exemple concret : Faisons l'expérience de [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) par un calcul manuel avec de petits nombres premiers
 
 Faisons une communication chiffrée d'Alice à Bob en utilisant de petits nombres (nombres premiers) en pratique.
 
@@ -281,7 +281,7 @@ $-17$ signifie la même chose que $120 - 17 = 103$ dans le monde du modulo $120$
 
 ---
 
-## 9. L'autre visage de la cryptographie RSA : Les signatures numériques
+## 9. L'autre visage de la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) : Les signatures numériques
 
 Ce qui est merveilleux avec la cryptographie RSA, c'est qu'en inversant les rôles de la clé publique et de la clé privée, on peut aussi l'utiliser comme **« signature numérique »**.
 
@@ -302,7 +302,7 @@ Alice convertit le message en utilisant sa propre clé privée $d$ (c'est la sig
 
 ---
 
-## 10. Expérimenter la cryptographie RSA avec la programmation
+## 10. Expérimenter la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) avec la programmation
 
 Même les calculs de puissance qui sont difficiles à faire à la main peuvent être très facilement implémentés avec Python. Voici un code Python qui vous permet d'expérimenter la logique de base de la cryptographie RSA.
 
@@ -342,7 +342,7 @@ La fonction `pow(base, exp, mod)` de Python utilise un algorithme rapide appelé
 
 ## 11. Résumé et avenir des technologies cryptographiques
 
-Nous avons percé les secrets du mécanisme de la cryptographie RSA, en nous basant sur les connaissances mathématiques du lycée.
+Nous avons percé les secrets du mécanisme de la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), en nous basant sur les connaissances mathématiques du lycée.
 
 1. **La difficulté de la décomposition en facteurs premiers :** Il est facile de calculer $p \times q = N$, mais il est très difficile de trouver $p, q$ à partir de $N$.
 2. **Congruence et théorème d'Euler :** Grâce à la règle $a^{\phi(N)} \equiv 1 \pmod N$, la porte dérobée magique « revenir à l'original lorsqu'on élève à une certaine puissance » est achevée.

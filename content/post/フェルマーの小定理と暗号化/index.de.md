@@ -11,11 +11,11 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 ## 1. Einführung: Das Geheimnis der Mathematik hinter der modernen Kryptographie
 
-In der modernen digitalen Gesellschaft, insbesondere bei der Kommunikation über das Internet, ist "Verschlüsselung" zu einer unverzichtbaren Basistechnologie geworden. Dass wir Websites über HTTPS sicher in einem Webbrowser durchsuchen, Finanztransaktionen im Online-Banking durchführen und privat in Messaging-Apps kommunizieren können, liegt daran, dass kryptographische Protokolle, die durch fortgeschrittene mathematische Theorien gestützt werden, im Hintergrund arbeiten. Eine besonders wichtige Rolle spielt dabei die "Public-Key-Kryptographie", deren prominentester Vertreter die **RSA-Verschlüsselung** ist.
+In der modernen digitalen Gesellschaft, insbesondere bei der Kommunikation über das Internet, ist "Verschlüsselung" zu einer unverzichtbaren Basistechnologie geworden. Dass wir Websites über HTTPS sicher in einem Webbrowser durchsuchen, Finanztransaktionen im Online-Banking durchführen und privat in Messaging-Apps kommunizieren können, liegt daran, dass kryptographische Protokolle, die durch fortgeschrittene mathematische Theorien gestützt werden, im Hintergrund arbeiten. Eine besonders wichtige Rolle spielt dabei die "Public-Key-Kryptographie", deren prominentester Vertreter die **[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung** ist.
 
 Die Sicherheit und Gültigkeit vieler kryptographischer Algorithmen, einschließlich RSA, hängt stark von einem sehr schönen und mächtigen Satz ab, der im 17. Jahrhundert vom französischen Mathematiker [Pierre de Fermat](https://kenji.blog/de/p/fermat/) entdeckt wurde. Das ist der **kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/)**. Darüber hinaus spielt der Satz von [Leonhard Euler](https://kenji.blog/de/p/euler/), der diesen verallgemeinert, eine entscheidende Rolle in der Kryptographietheorie.
 
-In diesem Artikel werden wir von Grund auf ausführlich erklären, wie die Entdeckung der reinen Mathematik, der kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/), in der modernen, praktischen Kryptographie, insbesondere beim "Primzahltest" und bei der "RSA-Verschlüsselung", Anwendung findet. Dies ist ein sehr detaillierter technischer Leitfaden, der mathematische Beweise, Ver- und Entschlüsselungsmechanismen sowie spezifische Algorithmus-Implementierungen in C++ und Python abdeckt.
+In diesem Artikel werden wir von Grund auf ausführlich erklären, wie die Entdeckung der reinen Mathematik, der kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/), in der modernen, praktischen Kryptographie, insbesondere beim "Primzahltest" und bei der "[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung", Anwendung findet. Dies ist ein sehr detaillierter technischer Leitfaden, der mathematische Beweise, Ver- und Entschlüsselungsmechanismen sowie spezifische Algorithmus-Implementierungen in C++ und Python abdeckt.
 
 ---
 
@@ -42,7 +42,7 @@ In der modularen Arithmetik gelten die üblichen vier Grundrechenarten (Addition
 3. **Multiplikation**: Wenn $a \equiv b \pmod n$ und $c \equiv d \pmod n$, dann $a \times c \equiv b \times d \pmod n$
 4. **Potenzieren**: Wenn $a \equiv b \pmod n$, dann $a^k \equiv b^k \pmod n$ für jede natürliche Zahl $k$
 
-Bei der **Division** ist jedoch Vorsicht geboten. Im Allgemeinen bedeutet $a \times c \equiv b \times c \pmod n$ nicht, dass wir beide Seiten durch $c$ teilen und $a \equiv b \pmod n$ erhalten können. Dies gilt nur, wenn $c$ und $n$ teilerfremd sind (ihr größter gemeinsamer Teiler ist 1). Dieses Konzept des "modularen Inversen" ist extrem wichtig bei der Schlüsselgenerierung der RSA-Verschlüsselung, die später beschrieben wird.
+Bei der **Division** ist jedoch Vorsicht geboten. Im Allgemeinen bedeutet $a \times c \equiv b \times c \pmod n$ nicht, dass wir beide Seiten durch $c$ teilen und $a \equiv b \pmod n$ erhalten können. Dies gilt nur, wenn $c$ und $n$ teilerfremd sind (ihr größter gemeinsamer Teiler ist 1). Dieses Konzept des "modularen Inversen" ist extrem wichtig bei der Schlüsselgenerierung der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung, die später beschrieben wird.
 
 ---
 
@@ -112,7 +112,7 @@ Dies ist der Beweis für den kleinen Satz von [Fermat](https://kenji.blog/de/p/f
 
 ## 4. Eulersche Phi-Funktion und der Satz von Euler
 
-[Der kleine Satz von Fermat](https://kenji.blog/de/p/fermats-little-theorem/) ist ein Satz über "Primzahlen $p$", aber [Leonhard Euler](https://kenji.blog/de/p/euler/) verallgemeinerte ihn für "beliebige positive ganze Zahlen $n$". Diese Erweiterung ist entscheidend, um die RSA-Verschlüsselung zu verstehen.
+[Der kleine Satz von Fermat](https://kenji.blog/de/p/fermats-little-theorem/) ist ein Satz über "Primzahlen $p$", aber [Leonhard Euler](https://kenji.blog/de/p/euler/) verallgemeinerte ihn für "beliebige positive ganze Zahlen $n$". Diese Erweiterung ist entscheidend, um die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung zu verstehen.
 
 ### 4.1 Die Eulersche Phi-Funktion $\phi(n)$
 
@@ -138,7 +138,7 @@ Wenn $n$ eine Primzahl $p$ ist, dann ist $\phi(p) = p - 1$, also ist dies genau 
 
 ## 5. Riesige Primzahlen finden: Der [Fermat](https://kenji.blog/de/p/fermat/)-Primzahltest
 
-In der Kryptographie (wie bei der RSA-Verschlüsselung und dem Diffie-Hellman-Schlüsselaustausch) ist es notwendig, schnell "riesige Primzahlen" mit hunderten von Ziffern zu finden. Um jedoch zu testen, ob eine riesige Zahl $N$ prim ist, würde die Methode der "Probedivision", bei der man versucht, durch alle Zahlen von $2$ bis $\sqrt{N}$ zu teilen, etwa so lange dauern wie das Alter des Universums.
+In der Kryptographie (wie bei der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung und dem Diffie-Hellman-Schlüsselaustausch) ist es notwendig, schnell "riesige Primzahlen" mit hunderten von Ziffern zu finden. Um jedoch zu testen, ob eine riesige Zahl $N$ prim ist, würde die Methode der "Probedivision", bei der man versucht, durch alle Zahlen von $2$ bis $\sqrt{N}$ zu teilen, etwa so lange dauern wie das Alter des Universums.
 
 Hier kommt der **[Fermat](https://kenji.blog/de/p/fermat/)-Primzahltest ([Fermat](https://kenji.blog/de/p/fermat/) Primality Test)** ins Spiel, ein "probabilistischer Primzahltest", der den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) umkehrt.
 
@@ -281,9 +281,9 @@ else:
 
 ---
 
-## 7. Anwendung auf die RSA-Verschlüsselung: Wo [Fermat](https://kenji.blog/de/p/fermat/) und Euler zusammenkommen
+## 7. Anwendung auf die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung: Wo [Fermat](https://kenji.blog/de/p/fermat/) und Euler zusammenkommen
 
-Die großartigste Anwendung des kleinen Satzes von [Fermat](https://kenji.blog/de/p/fermat/) (und des Satzes von Euler) ist die **RSA-Verschlüsselung**, die 1977 von Rivest, Shamir und Adleman entwickelt wurde.
+Die großartigste Anwendung des kleinen Satzes von [Fermat](https://kenji.blog/de/p/fermat/) (und des Satzes von Euler) ist die **[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung**, die 1977 von Rivest, Shamir und Adleman entwickelt wurde.
 Die RSA-Verschlüsselung ist ein revolutionäres "Public-Key-Kryptographie"-System, das es ermöglicht, den Schlüssel zur Verschlüsselung (öffentlicher Schlüssel) der ganzen Welt zugänglich zu machen, während nur der Empfänger den Schlüssel zur Entschlüsselung (privater Schlüssel) kennt.
 
 Diese Asymmetrie beruht auf der rechnerischen Sicherheit der Tatsache, dass "es extrem schwierig ist, eine riesige zusammengesetzte Zahl in ihre Primfaktoren zu zerlegen".
@@ -356,7 +356,7 @@ $$ e \cdot d = 1 + k \cdot \phi(N) $$
 Setzen wir dies in die obige Gleichung ein:
 $$ M^{ed} = M^{1 + k \cdot \phi(N)} = M \cdot M^{k \cdot \phi(N)} = M \cdot (M^{\phi(N)})^k \pmod N $$
 
-Hier kommt der **Satz von Euler** ($M^{\phi(N)} \equiv 1 \pmod N$) ins Spiel. (*Streng genommen müssen $M$ und $N$ teilerfremd sein, aber in RSA ist die Wahrscheinlichkeit, dass $M$ und $N$ nicht teilerfremd sind, astronomisch gering, und mithilfe des Chinesischen Restsatzes kann bewiesen werden, dass es auch gilt, wenn sie nicht teilerfremd sind*).
+Hier kommt der **Satz von Euler** ($M^{\phi(N)} \equiv 1 \pmod N$) ins Spiel. (*Streng genommen müssen $M$ und $N$ teilerfremd sein, aber in [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) ist die Wahrscheinlichkeit, dass $M$ und $N$ nicht teilerfremd sind, astronomisch gering, und mithilfe des Chinesischen Restsatzes kann bewiesen werden, dass es auch gilt, wenn sie nicht teilerfremd sind*).
 
 Wenden wir den Satz von Euler an, da $M^{\phi(N)} \equiv 1$ ist:
 $$ M \cdot (1)^k \equiv M \pmod N $$
@@ -365,7 +365,7 @@ Hervorragend, $M$ wurde wiederhergestellt! Die Eigenschaften von Zahlen, die von
 
 ---
 
-## 8. Spielzeug-Implementierung der RSA-Verschlüsselung (Python)
+## 8. Spielzeug-Implementierung der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung (Python)
 
 Da es schwer ist, ein Gefühl nur für die Theorie zu bekommen, verwenden wir Python, um den Prozess der RSA-Schlüsselgenerierung, Verschlüsselung und Entschlüsselung tatsächlich zu implementieren. Dies ist eine "Spielzeug-Implementierung" für Bildungszwecke, aber die verwendete Mathematik ist genau dieselbe wie bei der echten.
 
@@ -468,7 +468,7 @@ Wenn Sie diesen Code ausführen, können Sie sehen, wie ein Array von Zeichen in
 
 Als [Pierre de Fermat](https://kenji.blog/de/p/fermat/) im 17. Jahrhundert diesen "kleinen Satz" entdeckte, dachte niemand, dass er für irgendetwas nützlich sein würde. [Fermat](https://kenji.blog/de/p/fermat/) selbst betrieb zahlentheoretische Forschung aus reiner mathematischer Neugier.
 
-Etwa 300 Jahre später, in den 1970er Jahren, an den Anfängen von Computernetzwerken, feierte der Satz von [Fermat](https://kenji.blog/de/p/fermat/) jedoch ein dramatisches Comeback als unverzichtbare Verschlüsselungstechnologie zur Etablierung sicherer Kommunikationsprotokolle. Die Primzahltesttechnologie, die auf dem kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) basiert, und die RSA-Verschlüsselung, die auf dem Satz von Euler basiert, stützen buchstäblich die moderne Internet-Infrastruktur.
+Etwa 300 Jahre später, in den 1970er Jahren, an den Anfängen von Computernetzwerken, feierte der Satz von [Fermat](https://kenji.blog/de/p/fermat/) jedoch ein dramatisches Comeback als unverzichtbare Verschlüsselungstechnologie zur Etablierung sicherer Kommunikationsprotokolle. Die Primzahltesttechnologie, die auf dem kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) basiert, und die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung, die auf dem Satz von Euler basiert, stützen buchstäblich die moderne Internet-Infrastruktur.
 
 Die LINE-Nachrichten, die wir jeden Tag beiläufig senden, und unsere Einkäufe bei Amazon tanzen alle auf dieser einfachen und schönen Formel $a^{p-1} \equiv 1 \pmod p$. Egal wie abstrakt Mathematik ist, der kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/) lehrt uns, dass immer die Zeit kommen wird, in der sie für die Menschheit nützlich sein wird.
 

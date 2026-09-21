@@ -118,7 +118,7 @@ Unless this unit $u$ itself is the square of something (a square element), the l
 ## Stage 5: Adleman's Magic "Quadratic Characters"
 
 The obstruction of the ideal class group and the obstruction of the unit group. How do we overcome these two?
-Here, a genius method called **"Quadratic Characters"**, introduced by cryptographer Leonard Adleman (the "A" in RSA) and others, makes its appearance.
+Here, a genius method called **"Quadratic Characters"**, introduced by cryptographer Leonard Adleman (the "A" in [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)) and others, makes its appearance.
 
 To determine "whether a certain element is a perfect square in the algebraic number field", we use an algebraic number field version of the [Legendre](https://kenji.blog/en/p/legendre/) symbol (quadratic residue).
 To the giant matrix from earlier (the puzzle to make the count of prime ideals even), we secretly append dozens of additional conditions (columns) stating that **"the quadratic characters for some special prime ideals $\mathfrak{q}$ also all become $1$ (even)".**
@@ -157,7 +157,7 @@ Furthermore, because the original pairs $(a, b)$ were correspondingly created in
 All that is left is to pray that these $X$ and $Y$ are not trivial solutions ($X \equiv \pm Y$) and calculate:
 **$\gcd(X - Y, N)$**
 
-If it is a non-trivial solution, the [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm will race through in 0.001 seconds, and the secret primes $p$ and $q$, which are the heart of RSA encryption, will be printed on the output screen.
+If it is a non-trivial solution, the [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm will race through in 0.001 seconds, and the secret primes $p$ and $q$, which are the heart of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption, will be printed on the output screen.
 
 ---
 

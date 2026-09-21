@@ -18,13 +18,13 @@ tags:
 # Introdução
 As aplicações Web continuam a evoluir, transformando-se de meros visualizadores de documentos em sistemas de negócios avançados e plataformas de entretenimento. Consequentemente, os dados manipulados pelas aplicações Web tornaram-se cada vez mais confidenciais e mais suscetíveis a ataques cibernéticos.
 
-Neste artigo, explicaremos de forma abrangente e detalhada desde as vulnerabilidades clássicas que continuam a causar estragos hoje, como XSS e CSRF (a base da segurança na Web), até os mais recentes mecanismos de defesa essenciais no desenvolvimento Web moderno, como CORS, CSP e SameSite Cookie. Além disso, usaremos exemplos de código específicos e diagramas Mermaid para explicar claramente como essas tecnologias trabalham em conjunto para construir aplicações Web robustas.
+Neste artigo, explicaremos de forma abrangente e detalhada desde as vulnerabilidades clássicas que continuam a causar estragos hoje, como [XSS](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/) e [CSRF](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/) (a base da segurança na Web), até os mais recentes mecanismos de defesa essenciais no desenvolvimento Web moderno, como CORS, CSP e SameSite Cookie. Além disso, usaremos exemplos de código específicos e diagramas Mermaid para explicar claramente como essas tecnologias trabalham em conjunto para construir aplicações Web robustas.
 
 ---
 
 # 1. Vulnerabilidades Clássicas que Continuam a ser Ameaças Modernas
 
-Vulnerabilidades relacionadas a **injeção** e **falhas de controle de acesso** existem há muito tempo na história das aplicações Web e continuam a aparecer frequentemente no OWASP Top 10. Aqui, aprofundaremos nas mais representativas: Cross-Site Scripting (XSS) e Cross-Site Request Forgery (CSRF).
+Vulnerabilidades relacionadas a **injeção** e **falhas de controle de acesso** existem há muito tempo na história das aplicações Web e continuam a aparecer frequentemente no [OWASP](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/) Top 10. Aqui, aprofundaremos nas mais representativas: Cross-Site Scripting (XSS) e Cross-Site Request Forgery (CSRF).
 
 ## 1.1 Cross-Site Scripting (XSS)
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Victim->>Attacker: "Envia Cookie de sessão (roubo)"
 ```
 
-### 1.1.3 Exemplo Prático de Código e Medidas de Defesa contra XSS
+### 1.1.3 Exemplo Prático de Código e Medidas de Defesa contra [XSS](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/)
 
 **Exemplo de código vulnerável (Node.js / Express)**
 
@@ -76,7 +76,7 @@ Se um invasor acessar a URL com `?q=<script>alert('XSS')</script>`, o script ser
 
 **Medida de Defesa: Escapamento (Escaping)**
 
-A base da prevenção do XSS é neutralizar (escapar) as entradas do usuário para que não sejam interpretadas como HTML. Especificamente, os 5 caracteres especiais `<`, `>`, `&`, `"` e `'` são convertidos em entidades HTML.
+A base da prevenção do [XSS](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/) é neutralizar (escapar) as entradas do usuário para que não sejam interpretadas como HTML. Especificamente, os 5 caracteres especiais `<`, `>`, `&`, `"` e `'` são convertidos em entidades HTML.
 
 ```javascript
 function escapeHTML(str) {
@@ -98,11 +98,11 @@ app.get('/search', (req, res) => {
 });
 ```
 
-Atualmente, frameworks de front-end modernos como React e Vue.js executam o escape por padrão, fornecendo um certo nível de proteção contra XSS sem que os desenvolvedores precisem se preocupar com isso. No entanto, ainda é preciso ter cuidado ao usar `dangerouslySetInnerHTML` (React) ou `v-html` (Vue.js).
+Atualmente, frameworks de front-end modernos como React e Vue.js executam o escape por padrão, fornecendo um certo nível de proteção contra [XSS](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/) sem que os desenvolvedores precisem se preocupar com isso. No entanto, ainda é preciso ter cuidado ao usar `dangerouslySetInnerHTML` (React) ou `v-html` (Vue.js).
 
 ---
 
-## 1.2 Cross-Site Request Forgery (CSRF)
+## 1.2 Cross-Site Request Forgery ([CSRF](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/))
 
 Cross-Site Request Forgery (CSRF) é um ataque que força o usuário a enviar solicitações não intencionais (como transferência de fundos, alteração de senha, exclusão de conta, etc.) para um site autenticado através de um site malicioso preparado pelo invasor.
 
@@ -122,7 +122,7 @@ sequenceDiagram
     BankServer-->>AttackerSite: "Transferência concluída (identificada incorretamente como solicitação legítima)"
 ```
 
-Devido à especificação do navegador, solicitações para um domínio específico enviarão automaticamente os Cookies associados a esse domínio. O CSRF explora esse mecanismo.
+Devido à especificação do navegador, solicitações para um domínio específico enviarão automaticamente os Cookies associados a esse domínio. O [CSRF](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/) explora esse mecanismo.
 
 ### 1.2.2 Medidas de Defesa contra CSRF
 
@@ -143,7 +143,7 @@ A medida mais comum é gerar uma string aleatória e difícil de adivinhar (toke
 
 **2. Utilização do Atributo SameSite Cookie**
 
-Configurar o atributo **SameSite** no Cookie, discutido mais adiante, permite controlar os Cookies para que não sejam enviados em solicitações de sites de terceiros (cross-site), sendo muito eficaz como medida contra CSRF.
+Configurar o atributo **SameSite** no Cookie, discutido mais adiante, permite controlar os Cookies para que não sejam enviados em solicitações de sites de terceiros (cross-site), sendo muito eficaz como medida contra [CSRF](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/).
 
 ---
 
@@ -221,7 +221,7 @@ Desta forma, ao armazenar em cache o preflight, é possível reduzir a latência
 
 ## 2.2 Política de Segurança de Conteúdo (CSP)
 
-A **Content Security Policy (CSP - Política de Segurança de Conteúdo)** é um poderoso mecanismo de defesa em camadas para prevenir fundamentalmente ataques de injeção de dados e XSS. Ela define rigorosamente como uma lista de permissões (whitelist) do lado do servidor a origem dos recursos (scripts, imagens, folhas de estilo, etc.) que a página da Web tem permissão para carregar.
+A **Content Security Policy (CSP - Política de Segurança de Conteúdo)** é um poderoso mecanismo de defesa em camadas para prevenir fundamentalmente ataques de injeção de dados e [XSS](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/). Ela define rigorosamente como uma lista de permissões (whitelist) do lado do servidor a origem dos recursos (scripts, imagens, folhas de estilo, etc.) que a página da Web tem permissão para carregar.
 
 ### 2.2.1 Sintaxe Básica do CSP
 
@@ -235,9 +235,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.c
 - `script-src 'self' https://trusted.cdn.com`: Permite o carregamento de JavaScript apenas da própria origem e do CDN especificado.
 - `img-src *`: Imagens podem ser carregadas de qualquer lugar.
 
-### 2.2.2 Erradicação do XSS ao Proibir Scripts Inline
+### 2.2.2 Erradicação do [XSS](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/) ao Proibir Scripts Inline
 
-A principal característica da CSP é que ela, por padrão, **proíbe a execução de scripts inline (`<script>...</script>`) e o uso de `eval()`**. Portanto, mesmo que um invasor injete um script malicioso no HTML (Stored XSS ou Reflected XSS), o navegador bloqueará sua execução como uma violação da CSP.
+A principal característica da CSP é que ela, por padrão, **proíbe a execução de scripts inline (`<script>...</script>`) e o uso de `eval()`**. Portanto, mesmo que um invasor injete um script malicioso no HTML (Stored [XSS](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/) ou Reflected XSS), o navegador bloqueará sua execução como uma violação da CSP.
 
 ```mermaid
 flowchart TD
@@ -283,7 +283,7 @@ Content-Security-Policy: script-src 'sha256-B2yPHKaXnvFWtRChIbabYmUBFZdVfKKXHbWt
 
 ### 2.2.4 Função de Relatório de Violação de CSP
 
-A CSP tem uma função de enviar um relatório para um endpoint especificado a partir do navegador quando ocorre uma violação de política. Isso permite que os administradores identifiquem tentativas desconhecidas de XSS e erros de configuração.
+A CSP tem uma função de enviar um relatório para um endpoint especificado a partir do navegador quando ocorre uma violação de política. Isso permite que os administradores identifiquem tentativas desconhecidas de [XSS](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/) e erros de configuração.
 
 ```http
 Content-Security-Policy: default-src 'self'; report-uri /csp-violation-report-endpoint/
@@ -292,7 +292,7 @@ Content-Security-Policy: default-src 'self'; report-uri /csp-violation-report-en
 
 ---
 
-## 2.3 Defesa contra CSRF através de SameSite Cookie
+## 2.3 Defesa contra [CSRF](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/) através de SameSite Cookie
 
 Os Cookies são essenciais para o gerenciamento de sessões de usuários em aplicações Web, mas o fato de serem enviados automaticamente durante solicitações cross-site tem sido um terreno fértil para o CSRF. O atributo **SameSite** do Cookie resolve este problema.
 
@@ -317,15 +317,15 @@ Set-Cookie: session_id=abc123xyz; SameSite=Strict; Secure; HttpOnly
 
 A tabela a seguir mostra o comportamento do Cookie (quando configurado como SameSite=Lax) ao enviar uma solicitação de um site de domínio diferente (site armadilha) para o site do banco.
 
-| Ação do Usuário (No site armadilha) | Método HTTP | Tipo de Solicitação | Envio do Cookie | Impacto do CSRF |
+| Ação do Usuário (No site armadilha) | Método HTTP | Tipo de Solicitação | Envio do Cookie | Impacto do [CSRF](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/) |
 | :--- | :--- | :--- | :--- | :--- |
 | Clique em link (`<a>`) | GET | Navegação de nível superior | **Enviado** | GET não altera o estado, portanto é seguro |
 | Envio de formulário (`<form>`) | GET | Navegação de nível superior | **Enviado** | GET não altera o estado, portanto é seguro |
-| Envio de formulário (`<form>`) | POST | Navegação de nível superior | **Bloqueado** | **Previne ataque CSRF** |
+| Envio de formulário (`<form>`) | POST | Navegação de nível superior | **Bloqueado** | **Previne ataque [CSRF](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/)** |
 | Comunicação assíncrona (fetch, XHR) | GET/POST | Sub-solicitação | **Bloqueado** | **Previne ataque CSRF** |
 | Carregamento de imagem (`<img>`) | GET | Sub-solicitação | **Bloqueado** | Seguro |
 
-Desta forma, apenas ter o `SameSite=Lax` configurado (ou funcionando como padrão do navegador) neutraliza os ataques CSRF clássicos usando o método POST. No entanto, para uma defesa completa, recomenda-se o uso em conjunto com os tokens CSRF tradicionais.
+Desta forma, apenas ter o `SameSite=Lax` configurado (ou funcionando como padrão do navegador) neutraliza os ataques [CSRF](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/) clássicos usando o método POST. No entanto, para uma defesa completa, recomenda-se o uso em conjunto com os tokens CSRF tradicionais.
 
 ---
 
@@ -335,7 +335,7 @@ Ao introduzir medidas de segurança robustas, é preciso sempre considerar o tra
 
 ## 3.1 Segurança vs Conveniência
 
-Por exemplo, definir o atributo SameSite do Cookie como `Strict` é muito forte contra o CSRF, mas se um usuário acessar seu site clicando em um link em um e-mail promocional, ele será tratado como desconectado (não logado), o que pode prejudicar a UX (Experiência do Usuário). É necessário equilibrar escolhendo `Lax` conforme as características da aplicação e exigindo senhas de uso único (OTP) ou reautenticação para operações importantes.
+Por exemplo, definir o atributo SameSite do Cookie como `Strict` é muito forte contra o [CSRF](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/), mas se um usuário acessar seu site clicando em um link em um e-mail promocional, ele será tratado como desconectado (não logado), o que pode prejudicar a UX (Experiência do Usuário). É necessário equilibrar escolhendo `Lax` conforme as características da aplicação e exigindo senhas de uso único (OTP) ou reautenticação para operações importantes.
 
 ## 3.2 Segurança vs Desempenho
 
@@ -349,7 +349,7 @@ Como mencionado anteriormente, é essencial configurar um período de cache adeq
 
 Neste artigo, explicamos desde o conhecimento básico até as tecnologias mais recentes para proteger aplicações Web contra ameaças.
 
-*   **XSS e CSRF**: Vulnerabilidades clássicas que ainda causam danos fatais hoje. A defesa por meio de escape adequado e tokens é fundamental.
+*   **[XSS](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/) e [CSRF](https://kenji.blog/pt/p/web-application-vulnerability-owasp-top-10/)**: Vulnerabilidades clássicas que ainda causam danos fatais hoje. A defesa por meio de escape adequado e tokens é fundamental.
 *   **CORS**: Um mecanismo para realizar comunicações seguras entre origens na arquitetura Web moderna e cada vez mais complexa.
 *   **CSP**: Uma política poderosa para conter ataques de injeção como XSS no nível do navegador, eliminando scripts inline.
 *   **SameSite Cookie**: Uma barreira padrão do navegador contra o CSRF. Com o movimento para abolir os cookies de terceiros, sua importância está crescendo.

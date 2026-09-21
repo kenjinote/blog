@@ -14,7 +14,7 @@ tags:
   - "python"
 ---
 
-La seguridad en la sociedad de Internet moderna está protegida por sistemas de criptografía de clave pública, como la criptografía RSA. Estos métodos criptográficos basan su seguridad en la dificultad matemática de que "factorizar números enormes toma un tiempo astronómico en las computadoras actuales (computadoras clásicas)".
+La seguridad en la sociedad de Internet moderna está protegida por sistemas de criptografía de clave pública, como la criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/). Estos métodos criptográficos basan su seguridad en la dificultad matemática de que "factorizar números enormes toma un tiempo astronómico en las computadoras actuales (computadoras clásicas)".
 
 Sin embargo, la **computadora cuántica** tiene el potencial de revocar fundamentalmente esa premisa. En particular, el **algoritmo de Shor** (Shor's Algorithm), descubierto por Peter Shor en 1994, demostró matemáticamente que si las computadoras cuánticas se vuelven prácticas, podrán descifrar la criptografía RSA en un tiempo realista.
 
@@ -110,7 +110,7 @@ graph LR
 
 ---
 
-## 3. Fundamentos de la tecnología criptográfica y la criptografía RSA
+## 3. Fundamentos de la tecnología criptográfica y la criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)
 
 Para comprender el impacto del algoritmo de Shor, es necesario conocer el mecanismo de la **criptografía RSA**, que es la criptografía de clave pública principal en la actualidad.
 
@@ -356,7 +356,7 @@ Una vez que conocemos el período $r=4$, como se describió anteriormente, los f
 
 ---
 
-## 7. ¿Por qué la criptografía RSA está en peligro?
+## 7. ¿Por qué la criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) está en peligro?
 
 La cantidad de cálculos requeridos para la factorización en las computadoras clásicas aumenta exponencialmente a medida que aumenta el número de dígitos. Por ejemplo, se estima que factorizar un número de 100 dígitos toma varios segundos, 200 dígitos lleva varios años y RSA-2048 (alrededor de 617 dígitos) llevaría un tiempo mayor que la vida del universo.
 
@@ -380,7 +380,7 @@ La **corrección de errores cuánticos (Quantum Error Correction)** se investiga
 
 ## 9. Criptografía de próxima generación: Criptografía poscuántica (PQC)
 
-Para contrarrestar la amenaza del algoritmo de Shor, instituciones de todo el mundo, como el Instituto Nacional de Estándares y Tecnología de los Estados Unidos (NIST), están avanzando en la estandarización de nuevos métodos criptográficos que no pueden ser descifrados ni siquiera por computadoras cuánticas: la **criptografía poscuántica (Post-Quantum Cryptography: PQC)**.
+Para contrarrestar la amenaza del algoritmo de Shor, instituciones de todo el mundo, como el Instituto Nacional de Estándares y Tecnología de los Estados Unidos (NIST), están avanzando en la estandarización de nuevos métodos criptográficos que no pueden ser descifrados ni siquiera por computadoras cuánticas: la **criptografía poscuántica (Post-Quantum [Cryptography](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/): PQC)**.
 
 La PQC no utiliza tecnología cuántica, y se puede ejecutar en computadoras clásicas, pero se basa en nuevos problemas matemáticos (a los que no se puede aplicar el algoritmo de Shor) que no pueden resolverse eficientemente incluso utilizando algoritmos cuánticos.
 

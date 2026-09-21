@@ -11,7 +11,7 @@ description: 'Windows環境でC言語用暗号化通信ライブラリ「OpenSSL
 
 # OpenSSLとは
 
-暗号化通信をおこなう上で必要な処理を提供するオープンソースライブラリです。
+[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)通信をおこなう上で必要な処理を提供するオープンソースライブラリです。
 
 プログラムから使うには、C言語ソースコードが公開されているので、ビルドしてライブラリを作成する必要があります。
 

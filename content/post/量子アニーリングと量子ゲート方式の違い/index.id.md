@@ -184,7 +184,7 @@ Mari kita lihat area aplikasi spesifik yang menjadi keunggulan dari masing-masin
 
 ### 6.2. Contoh Penggunaan Model Quantum Gate
 - **Simulasi Kimia Kuantum**: Menyimulasikan tingkat energi molekul dan reaksi kimia dengan akurasi tinggi.
-- **Faktorisasi Prima (Algoritma Shor)**: Algoritma yang memfaktorkan bilangan komposit raksasa dalam waktu polinomial. Jika ini berhasil dipraktikkan, infrastruktur kriptografi kunci publik saat ini seperti enkripsi RSA akan hancur, sehingga transisi ke kriptografi pasca-kuantum (PQC) menjadi hal yang mendesak.
+- **Faktorisasi Prima (Algoritma Shor)**: Algoritma yang memfaktorkan bilangan komposit raksasa dalam waktu polinomial. Jika ini berhasil dipraktikkan, infrastruktur kriptografi kunci publik saat ini seperti enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) akan hancur, sehingga transisi ke kriptografi pasca-kuantum (PQC) menjadi hal yang mendesak.
 - **Pencarian Basis Data (Algoritma Grover)**: Saat mencari data yang diinginkan dari basis data yang tidak terstruktur, komputer klasik membutuhkan waktu $O(N)$ langkah, sedangkan dengan algoritma Grover, pencarian dapat diselesaikan dalam $O(\sqrt{N})$ langkah.
 
 ### 6.3. Algoritma Hibrida di Era NISQ: VQE dan QAOA

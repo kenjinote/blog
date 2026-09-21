@@ -134,7 +134,7 @@ $$ Cost_{cached} = (Tokens_{cache\_write} \times Rate_{cache\_write}) + (Tokens_
 SDKのインターフェースが洗練されており、TypeScriptの型定義などが非常に扱いやすいと評判です。特にMessage APIの構造が直感的で、複数画像を含めたマルチモーダルリクエストもシンプルに記述できます。
 
 ### 6.3 Google Gemini API
-Google Cloud Vertex AI経由のアクセスと、AI Studio経由のアクセス（Google Gen AI SDK）の2種類が存在し、初心者は少し混乱するかもしれません。しかし、エンタープライズ向けのVertex AI SDKは、GCPのIAM（認証認可システム）と完全に統合されており、セキュアな開発環境を構築できます。
+Google Cloud Vertex AI経由のアクセスと、AI Studio経由のアクセス（Google Gen AI SDK）の2種類が存在し、初心者は少し混乱するかもしれません。しかし、エンタープライズ向けのVertex AI SDKは、GCPのIAM（[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)[認可](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)システム）と完全に統合されており、セキュアな開発環境を構築できます。
 
 ---
 

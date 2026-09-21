@@ -49,7 +49,7 @@ description: '整理了可大幅提升開發效率的 Visual Studio (VS2022) 實
 | `Ctrl` + `Space` | 單字自動補齊 |
 | `Ctrl` + `Alt` + `L` | 開啟方案總管視窗 |
 | `Ctrl` + `Shift` + `E` | 開啟資源檢視視窗 |
-| `Ctrl` + `0` 後 `Ctrl` + `G` | 開啟 Git 認可視窗 |
+| `Ctrl` + `0` 後 `Ctrl` + `G` | 開啟 Git [認可](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)視窗 |
 
 ## 參考
 

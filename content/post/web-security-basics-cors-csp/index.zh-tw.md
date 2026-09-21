@@ -18,13 +18,13 @@ tags:
 # 前言
 Web應用程式持續演進，從單純的文件檢視器，蛻變為高度的業務系統與娛樂平台。伴隨而來的是，Web應用程式處理的資料變得越來越機密，也更容易成為網路攻擊的目標。
 
-本文將針對Web安全性的基礎，從XSS與CSRF等經典且至今仍具強大威脅的漏洞，到現代Web開發中不可或缺的CORS、CSP，以及SameSite Cookie等最新防禦機制，進行全面且詳細的解說。此外，我們也將透過具體的程式碼範例與Mermaid圖表，淺顯易懂地說明這些技術如何協同運作，以建構出堅固的Web應用程式。
+本文將針對Web安全性的基礎，從[XSS](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)與[CSRF](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)等經典且至今仍具強大威脅的漏洞，到現代Web開發中不可或缺的CORS、CSP，以及SameSite Cookie等最新防禦機制，進行全面且詳細的解說。此外，我們也將透過具體的程式碼範例與Mermaid圖表，淺顯易懂地說明這些技術如何協同運作，以建構出堅固的Web應用程式。
 
 ---
 
 # 1. 經典且在現代仍具威脅的漏洞
 
-在Web應用程式的歷史中， **隱碼攻擊** (Injection) 與 **存取控制缺陷** 等相關漏洞由來已久，且至今仍是OWASP Top 10的常客。在此，我們將深入探討其中的代表：跨站指令碼 (XSS) 與跨站請求偽造 (CSRF)。
+在Web應用程式的歷史中， **隱碼攻擊** (Injection) 與 **存取控制缺陷** 等相關漏洞由來已久，且至今仍是[OWASP](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/) Top 10的常客。在此，我們將深入探討其中的代表：跨站指令碼 (XSS) 與跨站請求偽造 (CSRF)。
 
 ## 1.1 跨站指令碼 (XSS)
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Victim->>Attacker: "傳送工作階段Cookie（竊取）"
 ```
 
-### 1.1.3 XSS的具體程式碼範例與防禦策略
+### 1.1.3 [XSS](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)的具體程式碼範例與防禦策略
 
 **有漏洞的程式碼範例（Node.js / Express）**
 
@@ -76,7 +76,7 @@ app.get('/search', (req, res) => {
 
 **防禦策略：跳脫處理 (Escape)**
 
-防禦XSS的基礎在於將使用者輸入無害化（跳脫），使其不被當作HTML來解析。特別是將 `<`, `>`, `&`, `"`, `'` 這五個特殊字元轉換為HTML實體。
+防禦[XSS](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)的基礎在於將使用者輸入無害化（跳脫），使其不被當作HTML來解析。特別是將 `<`, `>`, `&`, `"`, `'` 這五個特殊字元轉換為HTML實體。
 
 ```javascript
 function escapeHTML(str) {
@@ -98,11 +98,11 @@ app.get('/search', (req, res) => {
 });
 ```
 
-現在，像React或Vue.js等現代前端框架預設就會進行跳脫處理，因此即使開發者沒有特別注意，也能獲得一定程度的XSS防護。然而，在使用 `dangerouslySetInnerHTML` （React）或 `v-html` （Vue.js）時，仍需要特別小心。
+現在，像React或Vue.js等現代前端框架預設就會進行跳脫處理，因此即使開發者沒有特別注意，也能獲得一定程度的[XSS](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)防護。然而，在使用 `dangerouslySetInnerHTML` （React）或 `v-html` （Vue.js）時，仍需要特別小心。
 
 ---
 
-## 1.2 跨站請求偽造 (CSRF)
+## 1.2 跨站請求偽造 ([CSRF](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/))
 
 跨站請求偽造（CSRF）是一種攻擊方式，攻擊者利用使用者已驗證的網站，讓使用者經由攻擊者準備的陷阱網站，強制傳送使用者無意願的請求（如匯款、更改密碼、退會等）。
 
@@ -122,7 +122,7 @@ sequenceDiagram
     BankServer-->>AttackerSite: "匯款完成 (誤認為合法請求)"
 ```
 
-基於瀏覽器的規格，對特定網域發送請求時，會自動傳送與該網域相關聯的Cookie。CSRF就是濫用了這個機制。
+基於瀏覽器的規格，對特定網域發送請求時，會自動傳送與該網域相關聯的Cookie。[CSRF](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)就是濫用了這個機制。
 
 ### 1.2.2 CSRF的防禦策略
 
@@ -143,7 +143,7 @@ sequenceDiagram
 
 **2. 活用SameSite Cookie屬性**
 
-後文將提到的 **SameSite** 屬性設定在Cookie上，可以控制跨網站請求時不附加Cookie，這作為CSRF的對策非常有效。
+後文將提到的 **SameSite** 屬性設定在Cookie上，可以控制跨網站請求時不附加Cookie，這作為[CSRF](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)的對策非常有效。
 
 ---
 
@@ -221,7 +221,7 @@ $$
 
 ## 2.2 內容安全策略 (CSP)
 
-**內容安全策略 (Content Security Policy: CSP)** 是一種從根本上防禦XSS及資料注入攻擊的強大多層次防禦機制。它嚴格定義了伺服器端的白名單，以限制網頁可以載入的資源（腳本、圖片、樣式表等）來源。
+**內容安全策略 (Content Security Policy: CSP)** 是一種從根本上防禦[XSS](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)及資料注入攻擊的強大多層次防禦機制。它嚴格定義了伺服器端的白名單，以限制網頁可以載入的資源（腳本、圖片、樣式表等）來源。
 
 ### 2.2.1 CSP的基本語法
 
@@ -235,9 +235,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.c
 - `script-src 'self' https://trusted.cdn.com`: 僅允許從自身來源與指定的CDN載入JavaScript。
 - `img-src *`: 圖片可以從任何地方載入。
 
-### 2.2.2 藉由禁止內聯腳本來根絕XSS
+### 2.2.2 藉由禁止內聯腳本來根絕[XSS](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)
 
-CSP最大的特徵是，預設會 **禁止內聯腳本 ( `<script>...</script>` ) 的執行以及 `eval()` 的使用** 。因此，即使攻擊者在HTML中注入了惡意腳本（如儲存型XSS或反射型XSS），瀏覽器也會因為違反CSP而阻擋其執行。
+CSP最大的特徵是，預設會 **禁止內聯腳本 ( `<script>...</script>` ) 的執行以及 `eval()` 的使用** 。因此，即使攻擊者在HTML中注入了惡意腳本（如儲存型[XSS](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)或反射型XSS），瀏覽器也會因為違反CSP而阻擋其執行。
 
 ```mermaid
 flowchart TD
@@ -283,7 +283,7 @@ Content-Security-Policy: script-src 'sha256-B2yPHKaXnvFWtRChIbabYmUBFZdVfKKXHbWt
 
 ### 2.2.4 CSP違規的報告功能
 
-CSP提供了一種功能，當發生違反策略的情況時，可以讓瀏覽器將報告發送到指定的端點。如此一來，管理員就能察覺未知的XSS嘗試或設定錯誤。
+CSP提供了一種功能，當發生違反策略的情況時，可以讓瀏覽器將報告發送到指定的端點。如此一來，管理員就能察覺未知的[XSS](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)嘗試或設定錯誤。
 
 ```http
 Content-Security-Policy: default-src 'self'; report-uri /csp-violation-report-endpoint/
@@ -292,7 +292,7 @@ Content-Security-Policy: default-src 'self'; report-uri /csp-violation-report-en
 
 ---
 
-## 2.3 藉由 SameSite Cookie 防禦CSRF
+## 2.3 藉由 SameSite Cookie 防禦[CSRF](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)
 
 Cookie在Web應用程式中對於使用者的工作階段管理是不可或缺的，但跨網站請求時會自動傳送的規格，卻成為了CSRF的溫床。解決這個問題的就是Cookie的 **SameSite屬性** 。
 
@@ -317,15 +317,15 @@ Set-Cookie: session_id=abc123xyz; SameSite=Strict; Secure; HttpOnly
 
 下表顯示了從不同網域的網站（陷阱網站）向銀行網站傳送請求時，Cookie的行為（設定為SameSite=Lax時）。
 
-| 使用者的操作（在陷阱網站上） | HTTP方法 | 請求類型 | Cookie的傳送 | 對CSRF的影響 |
+| 使用者的操作（在陷阱網站上） | HTTP方法 | 請求類型 | Cookie的傳送 | 對[CSRF](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)的影響 |
 | :--- | :--- | :--- | :--- | :--- |
 | 點擊連結 (`<a>`) | GET | 頂層導覽 | **傳送** | GET不會改變狀態，因此安全 |
 | 傳送表單 (`<form>`) | GET | 頂層導覽 | **傳送** | GET不會改變狀態，因此安全 |
-| 傳送表單 (`<form>`) | POST | 頂層導覽 | **阻擋** | **防止CSRF攻擊** |
+| 傳送表單 (`<form>`) | POST | 頂層導覽 | **阻擋** | **防止[CSRF](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)攻擊** |
 | 非同步通訊 (fetch, XHR) | GET/POST | 子請求 | **阻擋** | **防止CSRF攻擊** |
 | 載入圖片 (`<img>`) | GET | 子請求 | **阻擋** | 安全 |
 
-如上所示，只要設定了 `SameSite=Lax` （或發揮其作為瀏覽器預設值的作用），使用POST方法的傳統CSRF攻擊就會失效。然而，為了達到完整的防禦，建議仍要與傳統的CSRF權杖搭配使用。
+如上所示，只要設定了 `SameSite=Lax` （或發揮其作為瀏覽器預設值的作用），使用POST方法的傳統[CSRF](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)攻擊就會失效。然而，為了達到完整的防禦，建議仍要與傳統的CSRF權杖搭配使用。
 
 ---
 
@@ -335,7 +335,7 @@ Set-Cookie: session_id=abc123xyz; SameSite=Strict; Secure; HttpOnly
 
 ## 3.1 安全性 vs 便利性
 
-例如，如果將Cookie的 SameSite 屬性設定為 `Strict` ，對抗CSRF會非常有效，但當使用者點擊促銷郵件的連結存取自家網站時，可能會被當作未登入狀態處理，進而損害UX（使用者體驗）。我們需要根據應用程式的特性選擇 `Lax` ，並在重要的操作時要求輸入一次性密碼或重新驗證，以取得平衡。
+例如，如果將Cookie的 SameSite 屬性設定為 `Strict` ，對抗[CSRF](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)會非常有效，但當使用者點擊促銷郵件的連結存取自家網站時，可能會被當作未登入狀態處理，進而損害UX（使用者體驗）。我們需要根據應用程式的特性選擇 `Lax` ，並在重要的操作時要求輸入一次性密碼或重新驗證，以取得平衡。
 
 ## 3.2 安全性 vs 效能
 
@@ -349,7 +349,7 @@ Set-Cookie: session_id=abc123xyz; SameSite=Strict; Secure; HttpOnly
 
 本文解說了為了保護Web應用程式免受威脅的基礎知識與最新技術。
 
-*   **XSS與CSRF**: 雖然古老，但至今仍會帶來致命損害的漏洞。適當的跳脫處理與權杖防禦是基礎。
+*   **[XSS](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)與[CSRF](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)**: 雖然古老，但至今仍會帶來致命損害的漏洞。適當的跳脫處理與權杖防禦是基礎。
 *   **CORS**: 在日益複雜的現代Web架構中，實現安全跨來源通訊的機制。
 *   **CSP**: 透過排除內聯腳本等方式，在瀏覽器層級封殺XSS等注入攻擊的強大策略。
 *   **SameSite Cookie**: 對抗CSRF的瀏覽器標準防禦壁壘。在廢除第三方Cookie的趨勢中，其重要性正與日俱增。

@@ -119,7 +119,7 @@ Lien magnifique entre les équations algébriques et la théorie des groupes.
 
 ## 9. Applications
 
-La cryptographie (RSA), la physique quantique, les codes correcteurs d'erreurs, la géométrie algébrique.
+La cryptographie ([RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)), la physique quantique, les codes correcteurs d'erreurs, la géométrie algébrique.
 
 ---
 

@@ -96,20 +96,20 @@ graph LR
 
 ここでは2つの具体例を通して、数式をコードに落とし込む過程を見てみましょう。
 
-### 4.1 実例1：RSA暗号の数学とPython実装
+### 4.1 実例1：[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の数学とPython実装
 
-公開鍵暗号方式の代表であるRSA暗号は、初等整数論（合同式、[オイラー](https://kenji.blog/p/euler/)の定理、拡張[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)）の美しい応用です。
+[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号方式の代表であるRSA暗号は、初等整数論（合同式、[オイラー](https://kenji.blog/p/euler/)の定理、拡張[[ユークリッド](https://kenji.blog/p/euclid/)の互除法](https://kenji.blog/p/euclidean-algorithm/)）の美しい応用です。
 
 #### 数学的背景
-RSA暗号の鍵生成と暗号化・復号のプロセスは以下の数式で表されます。
+[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の鍵生成と[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)・復号のプロセスは以下の数式で表されます。
 
 1. **鍵生成**:
    巨大な素数 $p, q$ を選び、$n = pq$ とする。
    [オイラー](https://kenji.blog/p/euler/)のトーティエント関数 $\phi(n) = (p-1)(q-1)$ を計算する。
-   $\phi(n)$ と互いに素な公開鍵 $e$ を選ぶ。
+   $\phi(n)$ と互いに素な[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) $e$ を選ぶ。
    $e \cdot d \equiv 1 \pmod{\phi(n)}$ となる秘密鍵 $d$ を求める。
 
-2. **暗号化**:
+2. **[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)**:
    平文 $m$ に対して、暗号文 $c$ を次のように計算する。
    $$ c \equiv m^e \pmod n $$
 

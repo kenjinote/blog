@@ -116,7 +116,7 @@ Incluso si 1 de las 4 personas es un traidor, la información correcta provenien
 
 En este modelo, es imposible alterar las órdenes emitidas por el comandante durante su trayecto. Como resultado, sin importar cuántos traidores haya, se ha demostrado que es posible llegar a un acuerdo si hay $n \ge m + 2$ generales (es decir, al menos 3 personas en total) para $m$ traidores. En los sistemas modernos, las firmas digitales mediante criptografía de clave pública cumplen esta función.
 
-## 4. Blockchain y la Tolerancia a Fallas Bizantinas
+## 4. [Blockchain](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/) y la Tolerancia a Fallas Bizantinas
 
 La resistencia al problema de los generales bizantinos se llama **Tolerancia a Fallas Bizantinas** (Byzantine Fault Tolerance, BFT). Es un indicador crucial para que un sistema distribuido pueda soportar fallas y ataques maliciosos y seguir operando con normalidad.
 
@@ -149,11 +149,11 @@ Al pasar por este proceso, incluso si hay $m$ nodos defectuosos o maliciosos en 
 
 ### Consenso de Nakamoto (Proof of Work)
 
-Satoshi Nakamoto, el creador de [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/), abordó este problema con un enfoque completamente nuevo. Este es el **Consenso de Nakamoto**, que combina el **Proof of Work** (Prueba de Trabajo, PoW) y la regla de considerar válida la cadena más larga.
+Satoshi Nakamoto, el creador de [Bitcoin](https://kenji.blog/es/p/cryptocurrency-and-bitcoin/), abordó este problema con un enfoque completamente nuevo. Este es el **Consenso de Nakamoto**, que combina el **Proof of Work** (Prueba de Trabajo, [PoW](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/)) y la regla de considerar válida la cadena más larga.
 
 En el Consenso de Nakamoto, solo el ganador de una competencia de cálculo matemático (minería) obtiene el derecho de proponer bloques. Para hacer que la red reconozca información falsa, sería necesario dominar la mayoría (más del 51%) de la capacidad de cálculo de toda la red, un diseño extremadamente difícil en la práctica. Por ello, se evalúa que resolvió de manera probabilística el problema de los generales bizantinos en una red abierta en la que participa un gran número de personas no identificadas.
 
-### Aplicación de BFT en PoS (Proof of Stake)
+### Aplicación de BFT en [PoS](https://kenji.blog/es/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Stake)
 
 El Consenso de Nakamoto fue revolucionario, pero tenía el problema de que la minería consumía una enorme cantidad de energía. Para solucionar esto surgió el **Proof of Stake** (Prueba de Participación, PoS), que otorga el derecho a proponer bloques en proporción a la cantidad de criptomonedas (participación o stake) en poder de los nodos.
 

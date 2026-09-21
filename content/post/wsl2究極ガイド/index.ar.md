@@ -321,7 +321,7 @@ sudo usermod -aG docker $USER
 
 تعد إدارة مفاتيح SSH المنفصلة على ويندوز و WSL لاستنساخ Git (Git clone) عبر SSH أو الاتصال بخوادم عن بُعد عبر SSH مهمة شاقة جدًا. لتحقيق التوازن بين الأمان والراحة، سنقوم بإعداد جسر (Bridge) لوكيل SSH (SSH Agent) الذي يعمل على جانب ويندوز (أو مدير كلمات مرور مثل 1Password) إلى جانب WSL.
 
-هنا، سنشرح الطريقة الأكثر أمانًا وحداثة باستخدام **ميزة وكيل SSH في 1Password** أو ** وكيل مصادقة OpenSSH في ويندوز (OpenSSH Authentication Agent)**، وإعادة توجيهها إلى مقبس نطاق UNIX (UNIX domain socket) الخاص بـ WSL2 باستخدام `npiperelay` أو `socat`.
+هنا، سنشرح الطريقة الأكثر أمانًا وحداثة باستخدام **ميزة وكيل SSH في 1Password** أو ** وكيل مصادقة OpenSSH في ويندوز (OpenSSH [Authentication](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) Agent)**، وإعادة توجيهها إلى مقبس نطاق UNIX (UNIX domain socket) الخاص بـ WSL2 باستخدام `npiperelay` أو `socat`.
 
 ### إعادة توجيه المقبس (Socket Forwarding) لوكيل ssh-agent
 

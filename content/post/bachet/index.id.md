@@ -79,7 +79,7 @@ $$
 ax + by = 1
 $$
 
-$x$ dan $y$ dapat dihitung secara konkret dengan memperluas algoritma [Euclide](https://kenji.blog/id/p/euclid/)an (algoritma [Euclide](https://kenji.blog/id/p/euclid/)an yang diperluas), yang telah menjadi teorema fundamental yang sangat diperlukan dalam kriptografi modern (seperti RSA). Dalam konteks yang menghargai keakuratan sejarah, ini kadang-kadang disebut **Teorema [Bachet](https://kenji.blog/id/p/bachet/)**.
+$x$ dan $y$ dapat dihitung secara konkret dengan memperluas algoritma [Euclide](https://kenji.blog/id/p/euclid/)an (algoritma [Euclide](https://kenji.blog/id/p/euclid/)an yang diperluas), yang telah menjadi teorema fundamental yang sangat diperlukan dalam kriptografi modern (seperti [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)). Dalam konteks yang menghargai keakuratan sejarah, ini kadang-kadang disebut **Teorema [Bachet](https://kenji.blog/id/p/bachet/)**.
 
 ## Kesimpulan
 

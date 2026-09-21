@@ -11,11 +11,11 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 ## 1. 시작하며: 현대 암호를 지탱하는 수학의 신비
 
-현대 디지털 사회, 특히 인터넷을 통한 통신에서 '암호화'는 필수 불가결한 기반 기술이 되었습니다. 우리가 웹 브라우저에서 HTTPS를 통해 안전하게 웹사이트를 탐색하고, 온라인 뱅킹으로 금융 거래를 하며, 메시징 앱으로 사적인 대화를 나눌 수 있는 것은 고도의 수학적 이론이 뒷받침된 암호 프로토콜이 배후에서 작동하고 있기 때문입니다. 그중에서도 특히 중요한 역할을 담당하고 있는 것이 '공개키 암호 방식'이며, 그 대표적인 예가 **RSA 암호** 입니다.
+현대 디지털 사회, 특히 인터넷을 통한 통신에서 '암호화'는 필수 불가결한 기반 기술이 되었습니다. 우리가 웹 브라우저에서 HTTPS를 통해 안전하게 웹사이트를 탐색하고, 온라인 뱅킹으로 금융 거래를 하며, 메시징 앱으로 사적인 대화를 나눌 수 있는 것은 고도의 수학적 이론이 뒷받침된 암호 프로토콜이 배후에서 작동하고 있기 때문입니다. 그중에서도 특히 중요한 역할을 담당하고 있는 것이 '공개키 암호 방식'이며, 그 대표적인 예가 **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호** 입니다.
 
 RSA 암호를 비롯한 많은 암호 알고리즘의 안전성과 정당성은 17세기 프랑스의 수학자 [피에르 드 페르마](https://kenji.blog/ko/p/fermat/)([Pierre de Fermat](https://kenji.blog/ko/p/fermat/))가 발견한 매우 아름답고 강력한 정리에 크게 의존하고 있습니다. 그것이 바로 **[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)([Fermat's Little Theorem](https://kenji.blog/ko/p/fermats-little-theorem/))** 입니다. 더 나아가 이를 일반화한 [레온하르트 오일러](https://kenji.blog/ko/p/euler/)([Leonhard Euler](https://kenji.blog/ko/p/euler/))의 정리 역시 암호 이론에서 결정적인 역할을 하고 있습니다.
 
-본 기사에서는 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)라는 순수 수학의 발견이 어떻게 현대의 실용적인 암호 기술, 특히 '소수 판별'과 'RSA 암호'에 응용되고 있는지를 기초부터 철저하게 해설합니다. 수학적인 증명, 암호화 및 복호화의 메커니즘, 그리고 C++와 Python을 활용한 구체적인 알고리즘 구현까지 모두 다루는 매우 상세한 기술 가이드가 될 것입니다.
+본 기사에서는 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)라는 순수 수학의 발견이 어떻게 현대의 실용적인 암호 기술, 특히 '소수 판별'과 '[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호'에 응용되고 있는지를 기초부터 철저하게 해설합니다. 수학적인 증명, 암호화 및 복호화의 메커니즘, 그리고 C++와 Python을 활용한 구체적인 알고리즘 구현까지 모두 다루는 매우 상세한 기술 가이드가 될 것입니다.
 
 ---
 
@@ -42,7 +42,7 @@ $$
 3. **곱셈**: $a \equiv b \pmod n$ 이고 $c \equiv d \pmod n$ 이면, $a \times c \equiv b \times d \pmod n$
 4. **거듭제곱**: $a \equiv b \pmod n$ 이면, 임의의 자연수 $k$에 대해 $a^k \equiv b^k \pmod n$
 
-단, **나눗셈** 에 대해서는 주의가 필요합니다. 일반적으로 $a \times c \equiv b \times c \pmod n$ 이라고 해서 양변을 $c$로 나누어 $a \equiv b \pmod n$ 으로 만들 수는 없습니다. 이것이 성립하는 것은 $c$와 $n$이 서로소(최대공약수가 1)인 경우에 한합니다. 이 '모듈러 역원'의 개념은 후술할 RSA 암호의 키 생성에서 극히 중요해집니다.
+단, **나눗셈** 에 대해서는 주의가 필요합니다. 일반적으로 $a \times c \equiv b \times c \pmod n$ 이라고 해서 양변을 $c$로 나누어 $a \equiv b \pmod n$ 으로 만들 수는 없습니다. 이것이 성립하는 것은 $c$와 $n$이 서로소(최대공약수가 1)인 경우에 한합니다. 이 '모듈러 역원'의 개념은 후술할 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호의 키 생성에서 극히 중요해집니다.
 
 ---
 
@@ -112,7 +112,7 @@ $$
 
 ## 4. 오일러의 피 함수와 오일러의 정리
 
-[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)는 '소수 $p$'에 관한 정리지만, 이를 '임의의 양의 정수 $n$'으로 일반화한 사람이 [레온하르트 오일러](https://kenji.blog/ko/p/euler/)입니다. RSA 암호를 이해하려면 이 확장이 필수적입니다.
+[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)는 '소수 $p$'에 관한 정리지만, 이를 '임의의 양의 정수 $n$'으로 일반화한 사람이 [레온하르트 오일러](https://kenji.blog/ko/p/euler/)입니다. [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호를 이해하려면 이 확장이 필수적입니다.
 
 ### 4.1 오일러의 피(토션트) 함수 $\phi(n)$
 
@@ -138,7 +138,7 @@ $$
 
 ## 5. 거대한 소수 찾기: 페르마의 소수 판별법
 
-암호 기술(RSA 암호나 Diffie-Hellman 키 교환 등)에서는 수백 자리에 달하는 '거대한 소수'를 고속으로 찾아낼 필요가 있습니다. 하지만 거대한 수 $N$이 소수인지 판별하기 위해 $2$부터 $\sqrt{N}$까지의 모든 수로 나누어 떨어지는지 시험하는 '시도 나눗셈법'으로는 우주의 수명만큼의 시간이 걸려 버립니다.
+암호 기술([RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호나 Diffie-Hellman 키 교환 등)에서는 수백 자리에 달하는 '거대한 소수'를 고속으로 찾아낼 필요가 있습니다. 하지만 거대한 수 $N$이 소수인지 판별하기 위해 $2$부터 $\sqrt{N}$까지의 모든 수로 나누어 떨어지는지 시험하는 '시도 나눗셈법'으로는 우주의 수명만큼의 시간이 걸려 버립니다.
 
 그래서 등장하는 것이 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)를 역으로 이용한 '확률적 소수 판별법'인 **페르마 테스트([Fermat](https://kenji.blog/ko/p/fermat/) Primality Test)** 입니다.
 
@@ -281,9 +281,9 @@ else:
 
 ---
 
-## 7. RSA 암호에의 응용: 페르마와 오일러가 결실을 맺는 곳
+## 7. [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호에의 응용: 페르마와 오일러가 결실을 맺는 곳
 
-[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)(및 오일러의 정리)의 가장 위대한 응용처가 1977년에 Rivest, Shamir, Adleman 세 사람에 의해 개발된 **RSA 암호** 입니다.
+[페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)(및 오일러의 정리)의 가장 위대한 응용처가 1977년에 Rivest, Shamir, Adleman 세 사람에 의해 개발된 **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호** 입니다.
 RSA 암호는 '공개키 암호'라는 획기적인 시스템으로, 암호화하기 위한 키(공개키)는 전 세계에 공개해 두면서, 복호화하기 위한 키(비밀키)는 수신자 본인만이 알고 있는 구조를 구현하고 있습니다.
 
 이 비대칭성은 '거대한 합성수의 소인수분해는 지극히 어렵다'라는 계산 복잡도 기반 안전성에 근거하고 있습니다.
@@ -356,7 +356,7 @@ $$ e \cdot d = 1 + k \cdot \phi(N) $$
 이것을 위의 식에 대입합니다.
 $$ M^{ed} = M^{1 + k \cdot \phi(N)} = M \cdot M^{k \cdot \phi(N)} = M \cdot (M^{\phi(N)})^k \pmod N $$
 
-여기서 **오일러의 정리** ($M^{\phi(N)} \equiv 1 \pmod N$)가 등장합니다. (※엄밀히는 $M$과 $N$이 서로소여야 하지만, RSA에서는 $M$과 $N$이 서로소가 아닐 확률이 천문학적으로 낮으며 중국인의 나머지 정리를 사용하면 서로소가 아니어도 성립함이 증명 가능합니다).
+여기서 **오일러의 정리** ($M^{\phi(N)} \equiv 1 \pmod N$)가 등장합니다. (※엄밀히는 $M$과 $N$이 서로소여야 하지만, [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)에서는 $M$과 $N$이 서로소가 아닐 확률이 천문학적으로 낮으며 중국인의 나머지 정리를 사용하면 서로소가 아니어도 성립함이 증명 가능합니다).
 
 오일러의 정리를 적용하면 $M^{\phi(N)} \equiv 1$ 이므로,
 $$ M \cdot (1)^k \equiv M \pmod N $$
@@ -468,7 +468,7 @@ if __name__ == '__main__':
 
 [피에르 드 페르마](https://kenji.blog/ko/p/fermat/)가 이 '소정리'를 발견한 17세기 당시, 이것이 어딘가에 쓸모가 있을 것이라고 생각한 사람은 아무도 없었습니다. 페르마 자신도 순수한 수학적 탐구심에서 정수론 연구를 하고 있었습니다.
 
-하지만 약 300년 후인 1970년대, 컴퓨터 네트워크의 여명기에 안전한 통신 프로토콜을 확립하기 위해 없어서는 안 될 암호 기술로서 페르마의 정리는 극적인 부활을 이뤘습니다. [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)에 기반한 소수 판별 기술과 오일러의 정리에 기반한 RSA 암호는 현대의 인터넷 인프라를 말 그대로 지탱하고 있습니다.
+하지만 약 300년 후인 1970년대, 컴퓨터 네트워크의 여명기에 안전한 통신 프로토콜을 확립하기 위해 없어서는 안 될 암호 기술로서 페르마의 정리는 극적인 부활을 이뤘습니다. [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)에 기반한 소수 판별 기술과 오일러의 정리에 기반한 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호는 현대의 인터넷 인프라를 말 그대로 지탱하고 있습니다.
 
 우리가 매일 무심코 보내는 메신저의 메시지도, 쇼핑몰에서의 물건 구매도, 모든 것은 이 $a^{p-1} \equiv 1 \pmod p$ 라는 심플하고 아름다운 수식 위에서 춤추고 있는 것입니다. 수학이 아무리 추상적이라 할지라도 언젠가는 반드시 인류에게 도움이 될 때가 온다는 것을 [페르마의 소정리](https://kenji.blog/ko/p/fermats-little-theorem/)는 가르쳐 주고 있습니다.
 

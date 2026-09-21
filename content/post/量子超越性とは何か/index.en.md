@@ -168,7 +168,7 @@ IBM is focusing on scaling up processors in parallel with drastically reducing e
 ### Google's Approach: Improving Logical Qubit Quality
 Google's strategy places greater emphasis on extremely lowering the error rate of a single logical qubit (e.g., down to $10^{-6}$) rather than rapidly increasing the number of physical qubits. Upon achieving this, they aim for a large-scale system that runs thousands to tens of thousands of physical qubits in parallel by establishing technologies for transferring quantum states between modules (Quantum Interconnects).
 
-Implementing protocols to fault-tolerantly execute non-Clifford gates, such as Magic [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Distillation, will also be a major technical hurdle in the future. To run a practical Shor's algorithm and crack a 2048-bit RSA cipher, it is said that thousands of logical qubits with an error rate of $10^{-8}$ or less are required, equating to millions to tens of millions of physical qubits, meaning the journey is still long.
+Implementing protocols to fault-tolerantly execute non-Clifford gates, such as Magic [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Distillation, will also be a major technical hurdle in the future. To run a practical Shor's algorithm and crack a 2048-bit [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cipher, it is said that thousands of logical qubits with an error rate of $10^{-8}$ or less are required, equating to millions to tens of millions of physical qubits, meaning the journey is still long.
 
 ---
 

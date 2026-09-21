@@ -14,7 +14,7 @@ tags:
   - "python"
 ---
 
-现代互联网社会中的安全性是由RSA密码等公钥密码体制来保障的。这些密码体制的安全性基础在于数学上的困难性，即“对极大的数进行素数分解，使用现有的计算机（经典计算机）需要花费天文数字般的时间”。
+现代互联网社会中的安全性是由[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码等公钥密码体制来保障的。这些密码体制的安全性基础在于数学上的困难性，即“对极大的数进行素数分解，使用现有的计算机（经典计算机）需要花费天文数字般的时间”。
 
 然而，有可能从根本上颠覆这一前提的正是 **量子计算机** 。特别是1994年由彼得·秀尔（Peter Shor）发现的 **Shor算法** （Shor's Algorithm），在数学上证明了如果量子计算机投入实用，就能在现实时间内破解RSA密码。
 
@@ -110,7 +110,7 @@ graph LR
 
 ---
 
-## 3. 密码技术基础与RSA密码
+## 3. 密码技术基础与[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码
 
 为了理解Shor算法所带来的冲击，我们需要了解目前主流的公钥密码算法—— **RSA密码** 的运作机制。
 
@@ -356,7 +356,7 @@ print(f"\n推测的相位(phase): {measured_phases[:4]} ...")
 
 ---
 
-## 7. 为什么RSA密码面临危机？
+## 7. 为什么[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)密码面临危机？
 
 在经典计算机中进行素因数分解，其计算量随着数字位数的增加呈指数级增长。例如，分解100位数字需要几秒，200位数字需要几年，而分解RSA-2048（约617位数字）估计需要比宇宙寿命还要长的时间。
 
@@ -380,7 +380,7 @@ Shor算法在数学上是完美的，但在物理实现上却面临着高墙。�
 
 ## 9. 下一代密码技术：后量子密码学（PQC）
 
-为了对抗Shor算法的威胁，以美国国家标准与技术研究院（NIST）为首的世界各地机构，正在推进既能防御量子计算机破解，又具备安全性的新密码体制—— **抗量子计算机密码（Post-Quantum Cryptography: PQC）** 的标准化进程。
+为了对抗Shor算法的威胁，以美国国家标准与技术研究院（NIST）为首的世界各地机构，正在推进既能防御量子计算机破解，又具备安全性的新密码体制—— **抗量子计算机密码（Post-Quantum [Cryptography](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/): PQC）** 的标准化进程。
 
 PQC 并不是指使用了量子技术，而是基于能够在经典计算机上执行，但即使用量子算法（如Shor算法）也无法高效求解的新数学难题。
 

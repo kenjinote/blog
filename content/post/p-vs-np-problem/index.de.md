@@ -281,9 +281,9 @@ Wenn die Anzahl der Städte $N=20$ überschreitet, benötigt die exakte Lösung 
 
 ## 7. Was wäre, wenn P = NP wäre?
 
-Heutzutage nutzen kryptographische Systeme weltweit (wie SSL/TLS für Online-Shopping oder Blockchains wie Bitcoin) die Asymmetrie aus: **„Das Lösen dauert extrem lange, aber die Überprüfung erfolgt sofort“** .
+Heutzutage nutzen kryptographische Systeme weltweit (wie SSL/TLS für Online-Shopping oder [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s wie Bitcoin) die Asymmetrie aus: **„Das Lösen dauert extrem lange, aber die Überprüfung erfolgt sofort“** .
 
-Die Primfaktorzerlegung, die die Grundlage der RSA-Verschlüsselung bildet, ist ein solches Beispiel.
+Die Primfaktorzerlegung, die die Grundlage der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung bildet, ist ein solches Beispiel.
 Nehmen wir an, jemand würde beweisen, dass $P = NP$, und einen magischen Algorithmus (konstruktiver Beweis) entwickeln, der NP-Probleme in polynomieller Zeit löst. Dies würde einen **Paradigmenwechsel für die menschliche Gesellschaft** auslösen:
 
 1. **Zusammenbruch der Kryptographie**: Moderne Public-Key-Kryptosysteme wie RSA oder elliptische Kurven wären sofort gebrochen, und die digitale Sicherheit würde vollständig zusammenbrechen.

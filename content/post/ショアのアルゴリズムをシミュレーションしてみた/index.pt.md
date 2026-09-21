@@ -12,7 +12,7 @@ description: 'Uma explicação detalhada de como os computadores quânticos pode
 
 # 1. Introdução: A Crise da Criptografia Trazida pelos Computadores Quânticos
 
-A maior parte da segurança na sociedade atual da internet depende de **sistemas de criptografia de chave pública** (especialmente a criptografia RSA). Quando enviamos informações de cartão de crédito em compras online ou trocamos dados altamente confidenciais, o conteúdo dessa comunicação é fortemente protegido pela criptografia RSA.
+A maior parte da segurança na sociedade atual da internet depende de **sistemas de criptografia de chave pública** (especialmente a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)). Quando enviamos informações de cartão de crédito em compras online ou trocamos dados altamente confidenciais, o conteúdo dessa comunicação é fortemente protegido pela criptografia RSA.
 
 A base da segurança da criptografia RSA reside no fato matemático de que "**fatorar números inteiros gigantescos em primos é extremamente difícil para computadores clássicos (os PCs e supercomputadores que normalmente usamos)**". No entanto, o "**[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/))**", publicado por Peter Shor em 1994, virou essa premissa de cabeça para baixo. Foi matematicamente provado que, se o algoritmo de Shor for executado em um computador quântico de grande escala, a fatoração de primos, que levaria mais tempo que a idade do universo em um computador clássico, poderia ser resolvida em apenas alguns minutos a algumas horas.
 
@@ -322,7 +322,7 @@ E assim, conseguimos fatorar magistralmente o número $15 = 3 \times 5$.
 
 # 6. Desafios para Aplicação Prática e os Limites da Era NISQ
 
-Embora tenha sido fácil fatorar $N=15$ em um simulador, fatorar o RSA-2048 (um número de 617 dígitos decimais) usado no mundo real ainda esbarra em várias barreiras para os computadores quânticos atuais.
+Embora tenha sido fácil fatorar $N=15$ em um simulador, fatorar o [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)-2048 (um número de 617 dígitos decimais) usado no mundo real ainda esbarra em várias barreiras para os computadores quânticos atuais.
 
 A época em que vivemos hoje é chamada de **Era NISQ (Noisy Intermediate-Scale Quantum: computadores quânticos de escala intermediária com ruído)**. Os qubits são extremamente vulneráveis a ruídos ambientais externos e frequentemente sofrem "descoerência" (decoherence) no meio dos cálculos, quebrando o estado quântico.
 
@@ -341,7 +341,7 @@ Em preparação para a chegada desse "Q-Day (O dia em que os computadores quânt
 
 A PQC se baseia em novos problemas matemáticos (como problemas de reticulados, polinômios multivariados, funções hash, etc.) que são matematicamente considerados como ineficientes de se resolver, mesmo utilizando o algoritmo de Shor (ou o algoritmo de Grover). Já foram escolhidos algoritmos como "CRYSTALS-Kyber" e "CRYSTALS-Dilithium" como normas padrão, e sua introdução gradual começou em serviços como o iMessage da Apple e em protocolos de comunicação de vários navegadores da web.
 
-Para os engenheiros que gerenciam a infraestrutura de TI, incorporar a "Cripto-Agilidade ([Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)-Agility: a capacidade de alterar o esquema de criptografia rapidamente)" em seus sistemas para fazer a transição da criptografia RSA e de curvas elípticas existente para a PQC será uma grande missão nos próximos anos.
+Para os engenheiros que gerenciam a infraestrutura de TI, incorporar a "Cripto-Agilidade ([Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)-Agility: a capacidade de alterar o esquema de criptografia rapidamente)" em seus sistemas para fazer a transição da criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) e de curvas elípticas existente para a PQC será uma grande missão nos próximos anos.
 
 ---
 

@@ -219,7 +219,7 @@ C2PA es un consorcio fundado por empresas líderes como Adobe, Microsoft, Intel,
 La tecnología central de C2PA es la firma digital mediante Infraestructura de Clave Pública (PKI) y el enlace (binding) de los hashes del contenido.
 
 1. **Generación de metadatos (Manifest)**: En el momento en que se toma una foto con una cámara, o cuando se edita con software, se genera un metadato llamado "Manifiesto (Manifest)" que incluye el historial de esas acciones, la información del dispositivo y la información del creador.
-2. **Firma criptográfica (Digital Signature)**: Se aplica una firma digital sobre el Manifiesto y sobre el valor hash de la propia imagen (un resumen de los datos de los píxeles), utilizando claves privadas de hardware o software.
+2. **Firma criptográfica ([Digital Signature](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/))**: Se aplica una firma digital sobre el Manifiesto y sobre el valor hash de la propia imagen (un resumen de los datos de los píxeles), utilizando claves privadas de hardware o software.
 3. **Incrustación en el activo (Asset)**: El manifiesto firmado (C2PA Credential) se incrusta en la información de la cabecera del formato del archivo, como JPEG o MP4.
 
 Si un atacante altera parte de la imagen o intenta añadir metadatos falsos a una imagen generada por IA, el valor hash de la propia imagen cambiará, por lo que fallará la verificación de la firma digital y la manipulación se detectará al instante.

@@ -50,7 +50,7 @@ flowchart TD
 2. **准标识符 (Quasi-Identifiers: QIs)** ：年龄、性别、邮政编码等单独无法识别个人，但组合起来可识别个人的信息。
 3. **敏感属性 (Sensitive Attributes)** ：疾病名称、年收入等需要保护的信息。
 
-k-匿名性保证了准标识符的组合（等价类：Equivalence Class）必然存在 $k$ 个以上。但是，k-匿名性对“同质性攻击（Homogeneity Attack）”和“背景知识攻击（Background Knowledge Attack）”具有脆弱性。例如，如果属于某个等价类的 $k$ 个人全部患有相同的疾病（敏感属性），即使保持了k-匿名性，疾病名称也会被确定。
+k-匿名性保证了准标识符的组合（等价类：Equivalence Class）必然存在 $k$ 个以上。但是，k-匿名性对“同质性攻击（Homogeneity Attack）”和“背景知识攻击（Background Knowledge Attack）”具有[脆弱性](https://kenji.blog/zh-cn/p/web-application-vulnerability-owasp-top-10/)。例如，如果属于某个等价类的 $k$ 个人全部患有相同的疾病（敏感属性），即使保持了k-匿名性，疾病名称也会被确定。
 
 为了克服这一问题，提出了以下扩展模型：
 

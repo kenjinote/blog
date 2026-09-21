@@ -140,7 +140,7 @@ Darüber hinaus ist das Erlernen der Struktur von „[B-Tree](https://kenji.blog
 
 In der Ausbildung zur Informationskompetenz wird zwar eine oberflächliche Sicherheitserziehung vermittelt („Mach dein Passwort komplexer“, „Klicke nicht auf verdächtige Links“), aber die Mathematik der „Kryptographie“, die die Internetgesellschaft grundlegend stützt, wird fast nie gelehrt.
 
-Die HTTPS-Kommunikation und die digitalen Signaturen, die wir täglich nutzen, werden durch asymmetrische Kryptosysteme wie RSA geschützt. Die Sicherheit der RSA-Verschlüsselung beruht auf der mathematischen Schwierigkeit (die als NP-intermediäres Problem gilt), dass „die Primfaktorzerlegung gigantischer ganzer Zahlen mit aktuellen klassischen Computern nicht in realistischer Zeit gelöst werden kann“.
+Die HTTPS-Kommunikation und die digitalen Signaturen, die wir täglich nutzen, werden durch asymmetrische Kryptosysteme wie [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) geschützt. Die Sicherheit der RSA-Verschlüsselung beruht auf der mathematischen Schwierigkeit (die als NP-intermediäres Problem gilt), dass „die Primfaktorzerlegung gigantischer ganzer Zahlen mit aktuellen klassischen Computern nicht in realistischer Zeit gelöst werden kann“.
 
 Die mathematischen Formeln, die der RSA-Verschlüsselung zugrunde liegen, sind schöne Anwendungen der Eulerschen Phi-Funktion und des kleinen Satzes von [Fermat](https://kenji.blog/de/p/fermat/).
 

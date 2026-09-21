@@ -138,7 +138,7 @@ Wenn Sie diesen Code ausführen, können Sie beobachten, dass sich das Verhältn
 
 Die Eigenschaften von Primzahlen sind nicht nur ein interessantes Objekt der reinen Mathematik, sondern auch ein wichtiges Element, das die Sicherheitsinfrastruktur der modernen Gesellschaft stützt.
 
-Public-Key-Verschlüsselungsverfahren wie RSA nutzen die Eigenschaft, dass "die Primfaktorzerlegung riesiger ganzer Zahlen extrem schwierig ist". Der Primzahlsatz garantiert uns, mit welcher Wahrscheinlichkeit wir "Primzahlen von angemessener Größe" finden, die zur Generierung kryptographischer Schlüssel erforderlich sind.
+Public-Key-Verschlüsselungsverfahren wie [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) nutzen die Eigenschaft, dass "die Primfaktorzerlegung riesiger ganzer Zahlen extrem schwierig ist". Der Primzahlsatz garantiert uns, mit welcher Wahrscheinlichkeit wir "Primzahlen von angemessener Größe" finden, die zur Generierung kryptographischer Schlüssel erforderlich sind.
 
 Beispielsweise wird die Wahrscheinlichkeit, dass eine zufällige ungerade 1024-Bit-Zahl eine Primzahl ist, auf etwa $1 / (1024 \times \ln(2) / 2) \approx 1 / 355$ geschätzt. Dies bedeutet, dass man nach ein paar hundert Primzahltests mit hoher Wahrscheinlichkeit eine benötigte riesige Primzahl findet, und ohne den Primzahlsatz wäre der Aufbau effizienter kryptographischer Systeme unmöglich.
 

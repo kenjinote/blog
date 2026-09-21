@@ -12,7 +12,7 @@ description: "A detailed explanation of how quantum computers could break modern
 
 # 1. Introduction: The [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic Crisis Brought by Quantum Computers
 
-Much of the security in modern internet society relies on **public-key cryptography** (especially RSA encryption). When we transmit credit card information for online shopping or exchange highly confidential data, the content of that communication is strongly protected by RSA encryption.
+Much of the security in modern internet society relies on **public-key cryptography** (especially [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption). When we transmit credit card information for online shopping or exchange highly confidential data, the content of that communication is strongly protected by RSA encryption.
 
 The basis for the security of RSA encryption relies on the mathematical fact that "**factoring huge integers is extremely difficult for classical computers (the PCs and supercomputers we use every day).**" However, **[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)**, published by Peter Shor in 1994, fundamentally overturned this premise. It was mathematically proven that if Shor's algorithm were executed on a large-scale quantum computer, it could solve factorization problems—which would take classical computers longer than the age of the universe—in just minutes to hours.
 
@@ -322,7 +322,7 @@ Brilliantly, we have successfully factorized $15 = 3 \times 5$.
 
 # 6. Challenges Toward Practical Application and the Limits of the NISQ Era
 
-While it was easy to factorize $N=15$ on a simulator, factoring RSA-2048 (a 617-digit decimal number) used in real-world applications still faces numerous walls for actual quantum computers.
+While it was easy to factorize $N=15$ on a simulator, factoring [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)-2048 (a 617-digit decimal number) used in real-world applications still faces numerous walls for actual quantum computers.
 
 The era we are currently living in is called the **NISQ (Noisy Intermediate-Scale Quantum) era**. Qubits are extremely vulnerable to noise from the external environment, and their states break down midway through computations due to "decoherence."
 
@@ -341,7 +341,7 @@ In preparation for the arrival of "Q-Day" (the day quantum computers break crypt
 
 PQC is based on new mathematical problems (such as lattice problems, multivariate polynomial problems, and hash-based functions) that are mathematically considered inefficient to solve even using Shor's algorithm (or Grover's algorithm). Algorithms like "CRYSTALS-Kyber" and "CRYSTALS-Dilithium" have already been selected as standard specifications, and their integration into Apple's iMessage and various web browser communication protocols is gradually beginning.
 
-For engineers managing IT infrastructure, building "crypto-agility" (the ability to quickly switch cryptographic methods) into systems to transition from existing RSA or elliptic curve cryptography to PQC will be a major mission going forward.
+For engineers managing IT infrastructure, building "crypto-agility" (the ability to quickly switch cryptographic methods) into systems to transition from existing [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) or elliptic curve cryptography to PQC will be a major mission going forward.
 
 ---
 

@@ -14,7 +14,7 @@ tags:
 
 In der modernen Internetgesellschaft verdanken wir unsere Fähigkeit zur sicheren Kommunikation der **Kryptographie**. An der eigentlichen Basis dieser Kryptographie liegt ein wunderschöner Satz, der im 17. Jahrhundert von dem Mathematiker [Pierre de Fermat](https://kenji.blog/de/p/fermat/) entdeckt wurde.
 
-In diesem Artikel werden wir **den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/)**, einen entscheidenden Grundstein der Zahlentheorie, auf leicht verständliche Weise erklären und dabei seine Bedeutung, seinen Beweis und seine Anwendung in der modernen RSA-Kryptographie behandeln.
+In diesem Artikel werden wir **den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/)**, einen entscheidenden Grundstein der Zahlentheorie, auf leicht verständliche Weise erklären und dabei seine Bedeutung, seinen Beweis und seine Anwendung in der modernen [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie behandeln.
 
 ## Was ist der kleine Satz von [Fermat](https://kenji.blog/de/p/fermat/)?
 
@@ -92,9 +92,9 @@ flowchart TD
 
 Da es jedoch Ausnahmezahlen gibt, die sogenannten **Carmichael-Zahlen**, die zusammengesetzte Zahlen sind, aber dennoch $a^{n-1} \equiv 1 \pmod n$ erfüllen, kann dieser Test allein die Primalität nicht definitiv beweisen. Daher werden in der Praxis Methoden wie der Miller-Rabin-Primzahltest verwendet.
 
-## Anwendung in der modernen Kryptographie: RSA-Kryptographie
+## Anwendung in der modernen Kryptographie: [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie
 
-Die wichtigste Anwendung des kleinen Satzes von [Fermat](https://kenji.blog/de/p/fermat/) (und seiner Verallgemeinerung, des **Satzes von Euler**) ist die **RSA-Kryptographie**, die der Internetsicherheit zugrunde liegt.
+Die wichtigste Anwendung des kleinen Satzes von [Fermat](https://kenji.blog/de/p/fermat/) (und seiner Verallgemeinerung, des **Satzes von Euler**) ist die **[RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie**, die der Internetsicherheit zugrunde liegt.
 
 Die RSA-Kryptographie beruht für ihre Sicherheit auf der Schwierigkeit, massive Zahlen zu faktorisieren. Innerhalb ihres Mechanismus spielt das Prinzip des "kleinen Satzes von [Fermat](https://kenji.blog/de/p/fermat/)" eine entscheidende Rolle bei den Schlüsselerzeugungs- und Entschlüsselungsprozessen.
 
@@ -111,7 +111,7 @@ sequenceDiagram
     Note over Receiver: "M = C^d mod n"
 ```
 
-In der RSA-Kryptographie werden zwei riesige Primzahlen, $p$ und $q$, vorbereitet, und wir setzen $n = p \times q$.
+In der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie werden zwei riesige Primzahlen, $p$ und $q$, vorbereitet, und wir setzen $n = p \times q$.
 Nach dem Satz von Euler werden die Schlüssel ($e$ und $d$) so konstruiert, dass $M^{ed} \equiv M \pmod n$ bei den Verschlüsselungs- und Entschlüsselungsprozessen gilt. Hierbei beruht das magische Phänomen, dass der Klartext $M$ in seine ursprüngliche Form zurückkehrt, im Wesentlichen auf den mathematischen Eigenschaften, die durch den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/) garantiert werden.
 
 ## Fazit

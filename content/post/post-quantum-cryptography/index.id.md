@@ -10,7 +10,7 @@ description: 'Kriptografi kunci publik memiliki risiko untuk didekripsi di masa 
 
 ## Pengantar: "Ancaman" terhadap Teknologi Kriptografi yang Dibawa oleh Komputer Kuantum
 
-Saat ini, komunikasi yang kita lakukan setiap hari di internet——pembayaran perbankan online, penjelajahan situs web (HTTPS), pertukaran pesan di aplikasi, hingga transaksi blockchain dan aset kripto——sebagian besar dilindungi oleh teknologi yang disebut "kriptografi kunci publik". Secara khusus, algoritma seperti kriptografi RSA dan Kriptografi Kurva Eliptik (ECC) menjadi dasar yang mendukung keandalan masyarakat digital modern.
+Saat ini, komunikasi yang kita lakukan setiap hari di internet——pembayaran perbankan online, penjelajahan situs web (HTTPS), pertukaran pesan di aplikasi, hingga transaksi blockchain dan aset kripto——sebagian besar dilindungi oleh teknologi yang disebut "kriptografi kunci publik". Secara khusus, algoritma seperti kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan Kriptografi Kurva Eliptik (ECC) menjadi dasar yang mendukung keandalan masyarakat digital modern.
 
 Metode kriptografi ini didasarkan pada masalah matematika yang sulit, seperti "faktorisasi bilangan prima besar" atau "masalah logaritma diskrit", yang membutuhkan waktu astronomis untuk dipecahkan oleh komputer klasik saat ini (termasuk superkomputer). Namun, seiring dengan kemajuan pesat **Komputer Kuantum** dalam beberapa tahun terakhir, premis ini akan runtuh secara mendasar jika komputer tersebut dipraktikkan.
 
@@ -28,7 +28,7 @@ Kriptografi Pasca-Kuantum (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptoc
 
 Teknologi yang sering dibingungkan adalah "Kriptografi Kuantum (Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)" dan "Distribusi Kunci Kuantum (QKD)", namun ini adalah pendekatan yang sama sekali berbeda. Kriptografi Kuantum (QKD) adalah teknologi berbasis perangkat keras yang menggunakan hukum fisika mekanika kuantum (seperti sifat di mana status berubah saat diamati) untuk membuat penyadapan di jalur komunikasi tidak mungkin secara fisik. Ini membutuhkan serat optik khusus atau peralatan khusus, dan memiliki tantangan seperti biaya implementasi serta batasan jarak.
 
-Di sisi lain, **PQC adalah teknologi kriptografi berbasis perangkat lunak yang murni berdasar pada "matematika"** . Oleh karena itu, ia dapat diintegrasikan sebagai pembaruan perangkat software ke infrastruktur internet yang ada, server, ponsel pintar, peramban, dan lainnya, sehingga memiliki penerapan yang sangat tinggi dalam dunia nyata. Perusahaan TI dan lembaga pemerintah di seluruh dunia kini menganggap penting dan mendesak untuk menggantikan (migrasi) RSA dan ECC yang saat ini digunakan dengan PQC ini.
+Di sisi lain, **PQC adalah teknologi kriptografi berbasis perangkat lunak yang murni berdasar pada "matematika"** . Oleh karena itu, ia dapat diintegrasikan sebagai pembaruan perangkat software ke infrastruktur internet yang ada, server, ponsel pintar, peramban, dan lainnya, sehingga memiliki penerapan yang sangat tinggi dalam dunia nyata. Perusahaan TI dan lembaga pemerintah di seluruh dunia kini menganggap penting dan mendesak untuk menggantikan (migrasi) [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan ECC yang saat ini digunakan dengan PQC ini.
 
 ---
 
@@ -62,7 +62,7 @@ Bayangkan titik-titik yang tak terhitung jumlahnya tersusun dalam pola kisi dala
 
 **Kelebihan:** 
 - Berlaku untuk pembagian kunci (KEM) maupun tanda tangan digital.
-- Kecepatan pemrosesan sangat tinggi (terkadang lebih cepat dari RSA atau ECC).
+- Kecepatan pemrosesan sangat tinggi (terkadang lebih cepat dari [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) atau ECC).
 - Ukuran kunci dan ciphertext relatif kecil, sehingga seimbang.
 
 Sebagian besar algoritma yang saat ini distandarisasi oleh NIST (seperti ML-KEM dan ML-DSA) mengadopsi kriptografi berbasis kisi ini.
@@ -147,7 +147,7 @@ Meskipun NIST telah menyelesaikan proses standardisasi awal, mereka terus mencar
 
 ## Skenario dan Tantangan Migrasi PQC: Pentingnya "Agility Kripto"
 
-Dengan dirilisnya standar resmi oleh NIST, lembaga pemerintah, lembaga keuangan, dan perusahaan teknologi di seluruh dunia akan mempercepat migrasi mereka dari RSA/ECC yang ada ke PQC. Pedoman dari Badan Keamanan Nasional AS (NSA) dan lainnya juga merekomendasikan penyelesaian migrasi sejak dini.
+Dengan dirilisnya standar resmi oleh NIST, lembaga pemerintah, lembaga keuangan, dan perusahaan teknologi di seluruh dunia akan mempercepat migrasi mereka dari [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)/ECC yang ada ke PQC. Pedoman dari Badan Keamanan Nasional AS (NSA) dan lainnya juga merekomendasikan penyelesaian migrasi sejak dini.
 
 ### Mengadopsi Pendekatan Hibrida
 

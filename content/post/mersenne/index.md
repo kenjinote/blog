@@ -113,7 +113,7 @@ def is_mersenne_prime(p):
     return s == 0
 ```
 
-発見された巨大な素数は、RSA暗号などの現代の公開鍵暗号システムの安全性評価や、乱数生成アルゴリズム（[メルセンヌ](https://kenji.blog/p/mersenne/)・ツイスタなど）の基盤として、情報化社会を支える重要な役割を果たしています。
+発見された巨大な素数は、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号などの現代の[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号システムの安全性評価や、乱数生成アルゴリズム（[メルセンヌ](https://kenji.blog/p/mersenne/)・ツイスタなど）の基盤として、情報化社会を支える重要な役割を果たしています。
 
 ## 音響学と音楽理論への貢献：[メルセンヌ](https://kenji.blog/p/mersenne/)の法則
 

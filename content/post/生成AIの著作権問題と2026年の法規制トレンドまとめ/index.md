@@ -132,7 +132,7 @@ AI産業の中心地である米国では、成文法による直接的なAI規�
 Webサイトのルートディレクトリに配置される `robots.txt` は、本来検索エンジンのクローラーを制御するためのプロトコルですが、2026年にはAI学習用のクローラー（例：OpenAIの `GPTBot`、Googleの `Google-Extended`、Anthropicの `ClaudeBot`）を一律にブロックするための標準的な手段として定着しています。
 しかし、`robots.txt` には法的拘束力がなく、悪意のある野良スクレイパーには容易に無視されるという根本的な欠陥があります。そのため、TDM（Text and Data Mining）オプトアウトの意思をHTTPヘッダーやHTMLのメタタグ（例：`<meta name="tdm-reservation" content="1">`）に直接埋め込み、機械可読な形で法的効力を持たせる標準化（W3C TDM Rep等）が世界的に普及しました。EU AI Act下では、このメタタグを無視してスクレイピングを行った場合、明確な違法行為として扱われます。
 
-### 5.2. C2PAとコンテンツ来歴認証のネイティブ実装
+### 5.2. C2PAとコンテンツ来歴[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)のネイティブ実装
 **C2PA（Coalition for Content Provenance and Authenticity）** は、画像や動画、音声などのデジタルコンテンツに、暗号学的に署名された改ざん不可能な「来歴メタデータ」を付与する技術標準です。2026年には、主要なデジタルカメラ（Sony, Leica, Nikon等）や画像編集ソフト（Adobe Photoshop等）、さらにはiOSやAndroidの標準カメラアプリにC2PAがネイティブ実装されています。
 
 ```mermaid
@@ -197,7 +197,7 @@ Nightshadeに汚染されたモデルでは、ユーザーが「可愛い犬の�
 
 ### 7.2. 巨額のライセンス契約とレベニューシェアモデル
 主要AIベンダー（OpenAI, Google, Anthropic, Meta等）は、メディア企業（The New York Times, Reddit, News Corp等）やストックフォトサービス、大手出版社、さらには音楽レーベルとの間で、年間数百億円規模のデータライセンス契約を締結することが一般化しました。
-また、AIが生成したコンテンツによって得られたサブスクリプション収益やAPI利用料を、学習データを提供した元のクリエイターに還元する「レベニューシェア・モデル」の構築が進んでいます。ブロックチェーン・Web3技術とC2PAを組み合わせたスマートコントラクトにより、AIがどのクリエイターのデータに「依拠」して出力を行ったかを貢献度ベースで算出し、マイクロペイメントで自動的に報酬を分配するシステムの社会実装実験が活発に行われています。
+また、AIが生成したコンテンツによって得られたサブスクリプション収益やAPI利用料を、学習データを提供した元のクリエイターに還元する「レベニューシェア・モデル」の構築が進んでいます。[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)・Web3技術とC2PAを組み合わせた[スマートコントラクト](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)により、AIがどのクリエイターのデータに「依拠」して出力を行ったかを貢献度ベースで算出し、マイクロペイメントで自動的に報酬を分配するシステムの社会実装実験が活発に行われています。
 
 ### 7.3. 合成データ（Synthetic Data）への依存と「モデル崩壊」のジレンマ
 人間のデータが法的に、あるいは物理的（ポイズニングにより）枯渇する現象、いわゆる「データウォール（Data Wall）」に直面したAI企業は、AI自身が生成したデータ（合成データ：Synthetic Data）を用いて次世代のAIモデルを自己学習させるアプローチを本格化させました。

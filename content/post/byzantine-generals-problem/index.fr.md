@@ -116,7 +116,7 @@ Et si le message envoyé contenait une « signature numérique infalsifiable » 
 
 Dans ce modèle, l'ordre émis par le commandant ne peut pas être altéré en cours de route. Par conséquent, quel que soit le nombre de traîtres, il est prouvé qu'un consensus peut être formé tant que le nombre total de généraux est $n \ge m + 2$ pour $m$ traîtres (soit au moins 3 personnes au total). Dans les systèmes modernes, les signatures numériques utilisant la cryptographie à clé publique jouent ce rôle.
 
-## 4. Blockchain et Tolérance aux pannes byzantines
+## 4. [Blockchain](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/) et Tolérance aux pannes byzantines
 
 La résistance au problème des généraux byzantins est appelée la **Tolérance aux pannes byzantines** (Byzantine Fault Tolerance, BFT). Il s'agit d'un indicateur clé permettant à un système distribué de continuer à fonctionner normalement même face à des pannes ou des attaques malveillantes.
 
@@ -147,13 +147,13 @@ end
 
 Grâce à ce processus, même s'il y a $m$ nœuds défaillants ou malveillants dans le réseau, les requêtes peuvent être traitées dans le bon ordre à condition que le nombre total de nœuds remplisse la condition $n \ge 3m + 1$. Le volume de communication entre les composants du PBFT augmente proportionnellement au carré du nombre de nœuds, ce qui le rend inadapté aux réseaux à grande échelle comme les blockchains publiques. Cependant, il est largement utilisé dans les blockchains de consortium où le nombre de nœuds est limité (par exemple Hyperledger Fabric) en raison de sa rapidité et du consensus déterministe qu'il offre.
 
-### Consensus de Nakamoto (Proof of Work)
+### [Consensus](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/) de Nakamoto (Proof of Work)
 
-Satoshi Nakamoto, le créateur de [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/), a abordé ce problème avec une approche complètement différente. Il s'agit du **Proof of Work** (PoW) associé à la règle selon laquelle la chaîne la plus longue est considérée comme la bonne, formant ainsi le **Consensus de Nakamoto**.
+Satoshi Nakamoto, le créateur de [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/), a abordé ce problème avec une approche complètement différente. Il s'agit du **Proof of Work** ([PoW](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/)) associé à la règle selon laquelle la chaîne la plus longue est considérée comme la bonne, formant ainsi le **[Consensus](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/) de Nakamoto**.
 
 Dans le Consensus de Nakamoto, seul celui qui remporte la compétition de calcul mathématique (minage) gagne le droit de proposer un bloc. Pour forcer le réseau à accepter de fausses informations, il faudrait contrôler la majorité de la puissance de calcul (plus de 51%) du réseau, ce qui est extrêmement difficile dans la réalité. C'est pourquoi on considère que cette approche résout le problème des généraux byzantins d'un point de vue probabiliste dans un réseau ouvert comptant de très nombreux participants.
 
-### Application de BFT au PoS (Proof of Stake)
+### Application de BFT au [PoS](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Stake)
 
 Si le Consensus de Nakamoto était révolutionnaire, il présentait néanmoins le problème de consommer d'énormes quantités d'électricité pour le minage. Pour y remédier, on a développé le **Proof of Stake** (PoS), qui accorde le droit de proposer des blocs en fonction du montant d'actifs cryptographiques (mise ou "stake") détenu par les nœuds.
 

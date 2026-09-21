@@ -27,7 +27,7 @@ tags:
 WebRTCは単一のプロトコルではなく、複数のプロトコルとAPIの集合体です。大きく分けて以下の3つの主要なAPIで構成されています。
 
 1.  **MediaStream** (getUserMedia): カメラやマイクから音声・映像ストリームを取得します。
-2.  **RTCPeerConnection**: ピア同士の接続を管理し、メディアストリームを送信します。帯域制御や暗号化なども担います。
+2.  **RTCPeerConnection**: ピア同士の接続を管理し、メディアストリームを送信します。帯域制御や[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)なども担います。
 3.  **RTCDataChannel**: 任意のバイナリデータやテキストデータを低遅延で双方向に送受信します。
 
 以下の図は、WebRTC通信を確立する際の全体像を示しています。
@@ -166,11 +166,11 @@ sequenceDiagram
 
 ---
 
-## 4. セキュリティと暗号化 (DTLS/SRTP)
+## 4. セキュリティと[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) (DTLS/SRTP)
 
 WebRTCのメディアストリームとデータチャネルは、必ず暗号化されなければなりません。
 
--  **DTLS (Datagram Transport Layer Security)** : [UDP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)上でTLSと同等のセキュリティを提供するプロトコルです。データチャネルの暗号化や、キー交換に使用されます。
+-  **DTLS (Datagram Transport Layer Security)** : [UDP](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)上でTLSと同等のセキュリティを提供するプロトコルです。データチャネルの[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)や、キー交換に使用されます。
 -  **SRTP (Secure Real-time Transport Protocol)** : 音声や映像といったメディアデータを暗号化して転送するためのプロトコルです。DTLSで交換された鍵を用いて暗号化されます。
 
 これにより、経路上の盗聴や改ざんを防止し、安全な **エンドツーエンド暗号化** (E2EE) が標準で実現されています。

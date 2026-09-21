@@ -11,11 +11,11 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 ## 1. Pendahuluan: Misteri Matematika yang Mendukung Kriptografi Modern
 
-Dalam masyarakat digital modern, khususnya dalam komunikasi melalui internet, "kriptografi" (enkripsi) telah menjadi teknologi dasar yang sangat penting. Kemampuan kita untuk menjelajahi situs web dengan aman melalui HTTPS di peramban, melakukan transaksi keuangan melalui perbankan daring, dan bertukar pesan pribadi di aplikasi perpesanan, semuanya dimungkinkan karena adanya protokol kriptografi yang didukung oleh teori matematika tingkat tinggi yang bekerja di latar belakang. Di antaranya, "kriptografi kunci publik" memainkan peran yang sangat penting, dan perwakilan utamanya adalah **Kriptografi RSA**.
+Dalam masyarakat digital modern, khususnya dalam komunikasi melalui internet, "kriptografi" (enkripsi) telah menjadi teknologi dasar yang sangat penting. Kemampuan kita untuk menjelajahi situs web dengan aman melalui HTTPS di peramban, melakukan transaksi keuangan melalui perbankan daring, dan bertukar pesan pribadi di aplikasi perpesanan, semuanya dimungkinkan karena adanya protokol kriptografi yang didukung oleh teori matematika tingkat tinggi yang bekerja di latar belakang. Di antaranya, "kriptografi kunci publik" memainkan peran yang sangat penting, dan perwakilan utamanya adalah **Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)**.
 
 Keamanan dan keabsahan banyak algoritma kriptografi, termasuk kriptografi RSA, sangat bergantung pada teorema yang sangat indah dan kuat yang ditemukan oleh ahli matematika Prancis abad ke-17, [Pierre de Fermat](https://kenji.blog/id/p/fermat/). Itulah **[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) ([Fermat's Little Theorem](https://kenji.blog/id/p/fermats-little-theorem/))**. Selanjutnya, Teorema Euler dari [Leonhard Euler](https://kenji.blog/id/p/euler/), yang merupakan generalisasi dari teorema ini, juga memainkan peran penting dalam teori kriptografi.
 
-Artikel ini akan membahas secara mendalam dari dasar bagaimana penemuan matematika murni berupa [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) diterapkan pada teknologi kriptografi praktis modern, khususnya dalam "pengujian primalitas" (primality test) dan "kriptografi RSA". Ini adalah panduan teknis yang sangat rinci yang mencakup pembuktian matematika, mekanisme enkripsi dan dekripsi, serta implementasi algoritma spesifik menggunakan C++ dan Python.
+Artikel ini akan membahas secara mendalam dari dasar bagaimana penemuan matematika murni berupa [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) diterapkan pada teknologi kriptografi praktis modern, khususnya dalam "pengujian primalitas" (primality test) dan "kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)". Ini adalah panduan teknis yang sangat rinci yang mencakup pembuktian matematika, mekanisme enkripsi dan dekripsi, serta implementasi algoritma spesifik menggunakan C++ dan Python.
 
 ---
 
@@ -42,7 +42,7 @@ Dalam aritmetika modular, empat operasi aritmetika dasar (penjumlahan, pengurang
 3. **Perkalian**: Jika $a \equiv b \pmod n$ dan $c \equiv d \pmod n$, maka $a \times c \equiv b \times d \pmod n$
 4. **Perpangkatan**: Jika $a \equiv b \pmod n$, maka untuk sembarang bilangan asli $k$, $a^k \equiv b^k \pmod n$
 
-Namun, perlu berhati-hati mengenai **pembagian**. Secara umum, meskipun $a \times c \equiv b \times c \pmod n$, kita tidak bisa begitu saja membagi kedua ruas dengan $c$ untuk mendapatkan $a \equiv b \pmod n$. Hal ini hanya berlaku jika $c$ dan $n$ saling prima (faktor persekutuan terbesarnya adalah 1). Konsep "invers modular" ini akan menjadi sangat penting dalam pembuatan kunci untuk kriptografi RSA yang akan dibahas nanti.
+Namun, perlu berhati-hati mengenai **pembagian**. Secara umum, meskipun $a \times c \equiv b \times c \pmod n$, kita tidak bisa begitu saja membagi kedua ruas dengan $c$ untuk mendapatkan $a \equiv b \pmod n$. Hal ini hanya berlaku jika $c$ dan $n$ saling prima (faktor persekutuan terbesarnya adalah 1). Konsep "invers modular" ini akan menjadi sangat penting dalam pembuatan kunci untuk kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) yang akan dibahas nanti.
 
 ---
 
@@ -112,7 +112,7 @@ Inilah pembuktian [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-
 
 ## 4. Fungsi Totient Euler dan Teorema Euler
 
-[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) adalah teorema tentang "bilangan prima $p$", namun [Leonhard Euler](https://kenji.blog/id/p/euler/) menggeneralisasinya menjadi berlaku untuk "sembarang bilangan bulat positif $n$". Generalisasi ini sangat penting untuk memahami kriptografi RSA.
+[Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) adalah teorema tentang "bilangan prima $p$", namun [Leonhard Euler](https://kenji.blog/id/p/euler/) menggeneralisasinya menjadi berlaku untuk "sembarang bilangan bulat positif $n$". Generalisasi ini sangat penting untuk memahami kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/).
 
 ### 4.1 Fungsi Totient Euler $\phi(n)$
 
@@ -138,7 +138,7 @@ Jika $n$ adalah bilangan prima $p$, karena $\phi(p) = p - 1$, ini menjadi tepat 
 
 ## 5. Menemukan Bilangan Prima Raksasa: Uji Primalitas [Fermat](https://kenji.blog/id/p/fermat/)
 
-Dalam teknologi kriptografi (seperti RSA dan pertukaran kunci Diffie-Hellman), kita perlu menemukan "bilangan prima raksasa" yang panjangnya bisa mencapai ratusan digit dengan sangat cepat. Namun, untuk menentukan apakah sebuah angka besar $N$ adalah bilangan prima, menggunakan metode "uji pembagian" yang mencoba membagi angka tersebut dengan semua bilangan dari $2$ hingga $\sqrt{N}$ akan memakan waktu selama umur alam semesta.
+Dalam teknologi kriptografi (seperti [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan pertukaran kunci Diffie-Hellman), kita perlu menemukan "bilangan prima raksasa" yang panjangnya bisa mencapai ratusan digit dengan sangat cepat. Namun, untuk menentukan apakah sebuah angka besar $N$ adalah bilangan prima, menggunakan metode "uji pembagian" yang mencoba membagi angka tersebut dengan semua bilangan dari $2$ hingga $\sqrt{N}$ akan memakan waktu selama umur alam semesta.
 
 Oleh karena itu, muncul "metode uji primalitas probabilistik" yang memanfaatkan [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/), yaitu **Uji [Fermat](https://kenji.blog/id/p/fermat/) ([Fermat](https://kenji.blog/id/p/fermat/) Primality Test)**.
 
@@ -281,9 +281,9 @@ else:
 
 ---
 
-## 7. Penerapan pada Kriptografi RSA: Tempat [Fermat](https://kenji.blog/id/p/fermat/) dan Euler Membuahkan Hasil
+## 7. Penerapan pada Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/): Tempat [Fermat](https://kenji.blog/id/p/fermat/) dan Euler Membuahkan Hasil
 
-Penerapan paling hebat dari [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) (dan Teorema Euler) adalah **Kriptografi RSA**, yang dikembangkan pada tahun 1977 oleh Rivest, Shamir, dan Adleman.
+Penerapan paling hebat dari [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) (dan Teorema Euler) adalah **Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)**, yang dikembangkan pada tahun 1977 oleh Rivest, Shamir, dan Adleman.
 Kriptografi RSA adalah sistem "kriptografi kunci publik" yang revolusioner, di mana kunci untuk mengenkripsi (kunci publik) dipublikasikan ke seluruh dunia, sementara kunci untuk mendekripsi (kunci privat) hanya diketahui oleh penerima.
 
 Asimetri ini didasarkan pada keamanan komputasional bahwa "memfaktorkan bilangan komposit raksasa menjadi faktor primanya adalah hal yang sangat sulit".
@@ -356,7 +356,7 @@ $$ e \cdot d = 1 + k \cdot \phi(N) $$
 Substitusikan ini ke dalam persamaan sebelumnya.
 $$ M^{ed} = M^{1 + k \cdot \phi(N)} = M \cdot M^{k \cdot \phi(N)} = M \cdot (M^{\phi(N)})^k \pmod N $$
 
-Di sini **Teorema Euler** ($M^{\phi(N)} \equiv 1 \pmod N$) berperan. (*Secara ketat, $M$ dan $N$ harus saling prima, tetapi dalam RSA, probabilitas $M$ dan $N$ tidak saling prima sangatlah kecil secara astronomis, dan menggunakan [Teorema Sisa Tiongkok ([Chinese Remainder Theorem](https://kenji.blog/id/p/chinese-remainder-theorem/))](https://kenji.blog/p/chinese-remainder-theorem/) dapat dibuktikan bahwa ini tetap berlaku meskipun tidak saling prima*).
+Di sini **Teorema Euler** ($M^{\phi(N)} \equiv 1 \pmod N$) berperan. (*Secara ketat, $M$ dan $N$ harus saling prima, tetapi dalam [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), probabilitas $M$ dan $N$ tidak saling prima sangatlah kecil secara astronomis, dan menggunakan [Teorema Sisa Tiongkok ([Chinese Remainder Theorem](https://kenji.blog/id/p/chinese-remainder-theorem/))](https://kenji.blog/p/chinese-remainder-theorem/) dapat dibuktikan bahwa ini tetap berlaku meskipun tidak saling prima*).
 
 Dengan menerapkan Teorema Euler, karena $M^{\phi(N)} \equiv 1$, maka:
 $$ M \cdot (1)^k \equiv M \pmod N $$
@@ -365,7 +365,7 @@ Luar biasa, $M$ berhasil dipulihkan! Sifat angka yang ditemukan oleh [Fermat](ht
 
 ---
 
-## 8. Implementasi Mainan Kriptografi RSA (Python)
+## 8. Implementasi Mainan Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) (Python)
 
 Karena hanya belajar teori rasanya belum lengkap, mari kita coba mengimplementasikan proses pembuatan kunci, enkripsi, dan dekripsi RSA secara langsung menggunakan Python. Ini hanyalah "implementasi mainan (toy)" untuk tujuan edukasi, tetapi matematika yang digunakan sama persis dengan aslinya.
 
@@ -468,7 +468,7 @@ Jika Anda menjalankan kode ini, Anda dapat melihat array karakter diubah menjadi
 
 Pada abad ke-17 ketika [Pierre de Fermat](https://kenji.blog/id/p/fermat/) menemukan "Teorema Kecil" ini, tidak ada yang berpikir bahwa ini akan berguna untuk sesuatu. [Fermat](https://kenji.blog/id/p/fermat/) sendiri melakukan penelitian pada teori bilangan murni karena rasa ingin tahunya terhadap matematika.
 
-Namun, sekitar 300 tahun kemudian, pada era awal jaringan komputer di tahun 1970-an, Teorema [Fermat](https://kenji.blog/id/p/fermat/) dibangkitkan kembali secara dramatis sebagai teknologi kriptografi yang mutlak diperlukan untuk membangun protokol komunikasi yang aman. Teknologi uji primalitas yang didasarkan pada [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) dan kriptografi RSA yang didasarkan pada Teorema Euler, benar-benar menjadi pilar yang menopang infrastruktur internet modern.
+Namun, sekitar 300 tahun kemudian, pada era awal jaringan komputer di tahun 1970-an, Teorema [Fermat](https://kenji.blog/id/p/fermat/) dibangkitkan kembali secara dramatis sebagai teknologi kriptografi yang mutlak diperlukan untuk membangun protokol komunikasi yang aman. Teknologi uji primalitas yang didasarkan pada [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) dan kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) yang didasarkan pada Teorema Euler, benar-benar menjadi pilar yang menopang infrastruktur internet modern.
 
 Pesan LINE yang kita kirimkan tanpa berpikir setiap harinya, atau belanja yang kita lakukan di Amazon, semuanya menari di atas persamaan matematika yang indah dan sederhana: $a^{p-1} \equiv 1 \pmod p$. [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/) mengajarkan kita bahwa betapa pun abstraknya sebuah konsep matematika, suatu saat nanti ia pasti akan berguna bagi umat manusia.
 

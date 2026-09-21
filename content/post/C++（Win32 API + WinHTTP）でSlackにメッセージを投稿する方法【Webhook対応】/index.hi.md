@@ -196,6 +196,6 @@ Hello from C++ :rocket:
 
 * **फ़ाइल संलग्न करना**
 * **बटन के साथ UI**
-* **Slack App + OAuth2 के माध्यम से लचीला API संचालन**
+* **Slack App + [OAuth](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/)2 के माध्यम से लचीला API संचालन**
 
 जैसे कुछ और उन्नत Slack एकीकरण भी प्रस्तुत कर सकते हैं!

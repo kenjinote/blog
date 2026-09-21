@@ -127,13 +127,13 @@ MakeAppx.exe pack /d "C:\Path\To\AppFolder" /p "C:\Path\To\Output\AwesomeApp_1.0
 ```
 This completes an unsigned MSIX file, but it cannot be installed on Windows in this state.
 
-## 5. Mathematical Background of Digital Signatures and [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
+## 5. Mathematical Background of [Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s and [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-To deeply understand why an MSIX package requires a signature, you need to understand the cryptographic mechanisms behind digital signatures. A digital signature guarantees that the package was "certainly created by the specified publisher (Authentication)" and that it "has not been tampered with by a third party between creation and the present (Integrity)".
+To deeply understand why an MSIX package requires a signature, you need to understand the cryptographic mechanisms behind digital signatures. A digital signature guarantees that the package was "certainly created by the specified publisher ([Authentication](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/))" and that it "has not been tampered with by a third party between creation and the present (Integrity)".
 
-RSA cryptography and SHA-256 (Secure Hash Algorithm 256-bit) are typically combined and used for MSIX signatures.
+[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography and SHA-256 (Secure Hash Algorithm 256-bit) are typically combined and used for MSIX signatures.
 
-### Application of Hash Functions
+### Application of [Hash Function](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s
 First, let the entire binary (contents) of the MSIX package be the message $M$. The signing tool (SignTool.exe) applies SHA-256, a cryptographic hash function, to this message $M$ to compute a fixed-length (256-bit) hash value $H(M)$.
 
 ### Generation of the Signature (Publisher)
@@ -141,7 +141,7 @@ Next, the publisher encrypts the hash value using their own "Private Key" $d$ to
 
 $$ \sigma \equiv (H(M))^d \pmod n $$
 
-Here, $n$ is the RSA modulus (the product of two huge prime numbers). A certificate (X.509 format) containing this signature $\sigma$ and the publisher's "Public Key" $e$ is embedded as part of the MSIX package (`AppxSignature.p7x`).
+Here, $n$ is the RSA modulus (the product of two huge prime numbers). A certificate (X.509 format) containing this signature $\sigma$ and the publisher's "[Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)" $e$ is embedded as part of the MSIX package (`AppxSignature.p7x`).
 
 ### Verification of the Signature (Windows OS)
 When a user attempts to install the MSIX, the Windows OS extracts the public key $e$ from the certificate inside the package and performs the following calculation to restore the hash value $H'(M)$:
@@ -263,7 +263,7 @@ For a developer's local testing, the above procedure is sufficient, but when dep
 Best practices in an enterprise environment are as follows:
 
 ### 1. Utilizing Active Directory Group Policy (GPO)
-If Active Directory is introduced in your company, you can use the "Public Key Policies" of a GPO to automatically distribute the self-signed certificate (CER file) to the "Trusted Root Certification Authorities" of all domain-joined PCs. This allows employees to install simply by double-clicking the MSIX file on a shared folder without being conscious of certificates at all.
+If Active Directory is introduced in your company, you can use the "[Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Policies" of a GPO to automatically distribute the self-signed certificate (CER file) to the "Trusted Root Certification Authorities" of all domain-joined PCs. This allows employees to install simply by double-clicking the MSIX file on a shared folder without being conscious of certificates at all.
 
 ### 2. Deployment via Microsoft Intune (MDM)
 In modern environments, device management is performed using Microsoft Intune. In Intune, you can push a trusted certificate (.cer) to endpoints using the "Configuration profile" feature. Afterward, it is possible to deploy the MSIX package itself as a Line of Business (LOB) application as a silent install.

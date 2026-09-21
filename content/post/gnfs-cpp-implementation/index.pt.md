@@ -11,7 +11,7 @@ description: 'Uma análise profunda com código em C++ do algoritmo de fatoraç�
 
 # 【Análise Completa】Entendendo e Implementando o Mais Forte Algoritmo de Quebra de Criptografia "GNFS" em C++
 
-A criptografia RSA, que sustenta a internet moderna, baseia-se na crença matemática de que "é virtualmente impossível para os computadores atuais fatorar números compostos gigantescos".
+A criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), que sustenta a internet moderna, baseia-se na crença matemática de que "é virtualmente impossível para os computadores atuais fatorar números compostos gigantescos".
 
 No entanto, a humanidade nunca desistiu. Atualmente, existe o **mais forte e avançado algoritmo** da humanidade para a fatoração de grandes números primos em computadores clássicos (não quânticos). É o **"General Number Field Sieve (GNFS - Crivo Geral do Corpo de Números)"**.
 
@@ -431,7 +431,7 @@ Quando colocamos o $V$ do lado racional para ser o $X$, a equação absoluta cob
 
 **$$X^2 \equiv Y^2 \pmod N$$** 
 
-O restante é somente resolver o $\gcd(X-Y, N)$. Em milissegundos o processo acaba e exibe o fator não trivial impresso na tela. Nesse instante, a criptografia impenetrável RSA é inteiramente derrubada.
+O restante é somente resolver o $\gcd(X-Y, N)$. Em milissegundos o processo acaba e exibe o fator não trivial impresso na tela. Nesse instante, a criptografia impenetrável [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) é inteiramente derrubada.
 
 ---
 

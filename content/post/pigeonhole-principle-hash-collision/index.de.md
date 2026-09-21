@@ -12,7 +12,7 @@ tags:
 slug: "pigeonhole-principle-hash-collision"
 ---
 
-Hash-Funktionen wie SHA-256 werden als fundamentale Technologie in allen Bereichen der IT eingesetzt, von Passwörtern über die Blockchain bis hin zu elektronischen Signaturen.
+Hash-Funktionen wie SHA-256 werden als fundamentale Technologie in allen Bereichen der IT eingesetzt, von Passwörtern über die [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) bis hin zu elektronischen Signaturen.
 
 Eine Hash-Funktion hat die Eigenschaft, „egal, wie groß die Eingabedaten sind, sie gibt immer einen Wert (Hash-Wert) mit einer festen Länge aus“. Was passiert jedoch, wenn die Eingabedaten unendlich viele Möglichkeiten haben, der Ausgabe-Hash-Wert jedoch eine begrenzte Anzahl an Kombinationen aufweist?
 

@@ -9,7 +9,7 @@ categories: ["mathematics", "cryptography"]
 tags: ["RSA", "Prime Numbers", "Math", "Cryptography"]
 ---
 
-インターネット社会の安全を根底から支えている技術の一つが「RSA暗号」です。オンラインショッピングでのクレジットカード決済、友人とのSNSのやり取り、会社の機密情報の送受信など、私たちが毎日何気なく使っている通信の多くは、このRSA暗号やその後継技術によって守られています。
+インターネット社会の安全を根底から支えている技術の一つが「[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号」です。オンラインショッピングでのクレジットカード決済、友人とのSNSのやり取り、会社の機密情報の送受信など、私たちが毎日何気なく使っている通信の多くは、このRSA暗号やその後継技術によって守られています。
 
 しかし、「暗号」と聞くと、スパイ映画に出てくるような複雑な暗号機や、一部の天才しか理解できない超高度な数学を想像するかもしれません。確かに現代の暗号理論は高度な数学に基づいていますが、 **RSA暗号の根本的な仕組みは、高校で習う数学（整数の性質、素数、合同式など）の知識があれば十分に理解できる** ものです。
 
@@ -17,13 +17,13 @@ tags: ["RSA", "Prime Numbers", "Math", "Cryptography"]
 
 ---
 
-## 1. 共通鍵暗号と公開鍵暗号
+## 1. 共通鍵暗号と[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号
 
 RSA暗号の数学的な仕組みに入る前に、まず暗号の基本的な考え方について整理しておきましょう。暗号方式は大きく分けて「共通鍵暗号」と「公開鍵暗号」の2種類があります。
 
 ### 1.1 共通鍵暗号方式の限界
 
-昔から使われている暗号の多くは「共通鍵暗号方式」と呼ばれるものです。これは、 **「暗号化（メッセージを秘密の暗号文に変換すること）」と「復号（暗号文を元のメッセージに戻すこと）」に同じ鍵を使う** 方式です。
+昔から使われている暗号の多くは「共通鍵暗号方式」と呼ばれるものです。これは、 **「[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)（メッセージを秘密の暗号文に変換すること）」と「復号（暗号文を元のメッセージに戻すこと）」に同じ鍵を使う** 方式です。
 
 例えば、アリスがボブに秘密の手紙を送るとします。アリスは南京錠（共通鍵）を使って箱に手紙を入れて鍵をかけます。ボブがその箱を開けるためには、アリスが使ったのと同じ鍵を持っている必要があります。
 
@@ -54,11 +54,11 @@ graph TD
     H --> I["ボブ (受信者)"]
 ```
 
-この画期的なシステムを実現するためには、「公開鍵で簡単に暗号化できるが、秘密鍵がないと絶対に復号できない」という、ある種の **「一方向性関数（一方通行の数学的パズル）」** が必要になります。そのパズルの部品として目をつけられたのが、私たちがよく知る「素数」でした。
+この画期的なシステムを実現するためには、「[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)で簡単に[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)できるが、秘密鍵がないと絶対に復号できない」という、ある種の **「一方向性関数（一方通行の数学的パズル）」** が必要になります。そのパズルの部品として目をつけられたのが、私たちがよく知る「素数」でした。
 
 ---
 
-## 2. RSA暗号を支える数学的基礎1：素数と素因数分解
+## 2. [RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号を支える数学的基礎1：素数と素因数分解
 
 RSA暗号の安全性は、 **「巨大な数の素因数分解は非常に難しい」** という数学的事実に基づいています。
 
@@ -118,7 +118,7 @@ $a \equiv b \pmod N$ かつ $c \equiv d \pmod N$ のとき、以下が成り立�
 
 ## 4. RSA暗号を支える数学的基礎3：[オイラー](https://kenji.blog/p/euler/)関数と[オイラー](https://kenji.blog/p/euler/)の定理
 
-ここからがRSA暗号の核心となる魔法の数学です。「[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)」の一般化である「[オイラー](https://kenji.blog/p/euler/)の定理」が登場します。
+ここからが[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の核心となる魔法の数学です。「[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)」の一般化である「[オイラー](https://kenji.blog/p/euler/)の定理」が登場します。
 
 ### 4.1 [オイラー](https://kenji.blog/p/euler/)のトーティエント関数 $\phi(N)$
 
@@ -136,7 +136,7 @@ $$ \phi(p) = p - 1 $$
 **【素数の積の場合の特別な性質】**
 2つの異なる素数 $p$ と $q$ について、$N = p \times q$ とした場合、$\phi(N)$ は以下の計算で簡単に求めることができます。
 $$ \phi(N) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-この性質が、RSA暗号の「秘密の裏口（トラップドア）」として機能します。$p$ と $q$ を知っている人（鍵の作成者）は $\phi(N)$ を一瞬で計算できますが、$N$ しか知らない第三者は、$N$ を素因数分解しない限り $\phi(N)$ を求めることができないのです。
+この性質が、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の「秘密の裏口（トラップドア）」として機能します。$p$ と $q$ を知っている人（鍵の作成者）は $\phi(N)$ を一瞬で計算できますが、$N$ しか知らない第三者は、$N$ を素因数分解しない限り $\phi(N)$ を求めることができないのです。
 
 ### 4.2 [オイラー](https://kenji.blog/p/euler/)の定理
 
@@ -154,7 +154,7 @@ $$ a^{\phi(N) + 1} \equiv a \pmod N $$
 さらに、任意の整数 $k$ に対して、$a^{k \cdot \phi(N)}$ も $1^k = 1$ になるため、次の式が成り立ちます。
 $$ a^{k \cdot \phi(N) + 1} \equiv a \pmod N $$
 
-この式こそが、RSA暗号の **「暗号化して復号すると元に戻る」** という魔法を成り立たせている根本原理なのです。
+この式こそが、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の **「[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)して復号すると元に戻る」** という魔法を成り立たせている根本原理なのです。
 
 ---
 
@@ -184,12 +184,12 @@ flowchart TD
 
 ### 5.1 鍵生成（Key Generation）
 
-受信者であるボブは、自分のための「公開鍵」と「秘密鍵」を生成します。
+受信者であるボブは、自分のための「[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)」と「秘密鍵」を生成します。
 
 1. **素数の選択:** 2つの大きな素数 $p$ と $q$ をランダムに選びます。
 2. **法 $N$ の計算:** $N = p \times q$ を計算します。この $N$ は公開されます。
 3. **$\phi(N)$ の計算:** [オイラー](https://kenji.blog/p/euler/)関数 $\phi(N) = (p - 1)(q - 1)$ を計算します。これはボブだけの秘密の数です。
-4. **公開鍵 $e$ の選択:** $1 < e < \phi(N)$ であり、かつ $\phi(N)$ と互いに素である整数 $e$ を選びます。
+4. **[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) $e$ の選択:** $1 < e < \phi(N)$ であり、かつ $\phi(N)$ と互いに素である整数 $e$ を選びます。
 5. **秘密鍵 $d$ の計算:** 次の条件を満たす整数 $d$ を見つけます。
    $$ e \times d \equiv 1 \pmod{\phi(N)} $$
    これはつまり、「$e \times d$ を $\phi(N)$ で割った余りが $1$ になるような数 $d$」です。
@@ -198,7 +198,7 @@ flowchart TD
 - **公開鍵:** $(N, e)$ のペア。全世界に公開します。
 - **秘密鍵:** $d$。絶対に誰にも教えません。
 
-### 5.2 暗号化（Encryption）
+### 5.2 [暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)（Encryption）
 
 アリスはボブに秘密のメッセージ $M$ を送りたいとします。（$M$ は文字を数値化したもので、$0 \le M < N$ とします）。アリスはボブの公開鍵 $(N, e)$ を使って次のように計算します。
 
@@ -220,7 +220,7 @@ $$ M \equiv C^d \pmod N $$
 
 「$C$ を $d$ 乗するだけで、どうして元の $M$ に戻るの？」と疑問に思うかもしれません。ここで、先ほどの「[オイラー](https://kenji.blog/p/euler/)の定理」が威力を発揮します。
 
-復号の計算式 $C^d \pmod N$ に、暗号化の式 $C = M^e$ を代入してみましょう。
+復号の計算式 $C^d \pmod N$ に、[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)の式 $C = M^e$ を代入してみましょう。
 $$ C^d \equiv (M^e)^d \equiv M^{ed} \pmod N $$
 
 ここで、鍵生成のステップ 5 を思い出してください。ボブは $d$ を作るときに、$e \times d \equiv 1 \pmod{\phi(N)}$ となるように選びました。これは「$ed$ は $\phi(N)$ の倍数に $1$ を足した数である」ということを意味します。整数 $k$ を使って次のように書けます。
@@ -239,7 +239,7 @@ $$ C^d \equiv M \pmod N $$
 
 ---
 
-## 7. 具体例：小さな素数を使って手計算でRSAを体験してみよう
+## 7. 具体例：小さな素数を使って手計算で[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)を体験してみよう
 
 実際に小さな数字（素数）を使って、アリスからボブへ暗号通信をしてみましょう。
 
@@ -247,7 +247,7 @@ $$ C^d \equiv M \pmod N $$
 1. 2つの素数 $p=11$, $q=13$ を選びます。
 2. $N = 11 \times 13 = 143$ を計算します。
 3. $\phi(N) = (11 - 1) \times (13 - 1) = 10 \times 12 = 120$ を計算します。
-4. $\phi(N)=120$ と互いに素な公開鍵 $e$ を選びます。ここでは $e=7$ にします。
+4. $\phi(N)=120$ と互いに素な[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) $e$ を選びます。ここでは $e=7$ にします。
 5. 秘密鍵 $d$ を求めます。$7 \times d \equiv 1 \pmod{120}$ となる $d$ を探します。
    方程式 $7d = 120k + 1$ において、$k=6$ のとき $721$ となり、$721 \div 7 = 103$。
    したがって、$d = 103$ となります。
@@ -255,7 +255,7 @@ $$ C^d \equiv M \pmod N $$
 - 公開鍵：$(N=143, e=7)$
 - 秘密鍵：$d=103$
 
-**【アリスの暗号化フェーズ】**
+**【アリスの[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)フェーズ】**
 メッセージ $M = 9$ を送りたいとします。
 式：$C \equiv 9^7 \pmod{143}$
 $9^7 = 4,782,969$。これを 143 で割ると $33447$ 余り $48$。
@@ -282,11 +282,11 @@ $-17$ は、法 $120$ の世界では $120 - 17 = 103$ と同じ意味になり�
 
 ---
 
-## 9. RSA暗号のもう一つの顔：デジタル署名
+## 9. [RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号のもう一つの顔：デジタル署名
 
-RSA暗号の素晴らしい点は、公開鍵と秘密鍵の役割を逆にすることで **「デジタル署名」** としても使えることです。
+RSA暗号の素晴らしい点は、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)と秘密鍵の役割を逆にすることで **「デジタル署名」** としても使えることです。
 
-暗号化のときは「公開鍵で暗号化 $\Rightarrow$ 秘密鍵で復号」でしたが、
+[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)のときは「公開鍵で暗号化 $\Rightarrow$ 秘密鍵で復号」でしたが、
 デジタル署名では「秘密鍵で暗号化 $\Rightarrow$ 公開鍵で復号」という手順を踏みます。
 
 ```mermaid
@@ -299,11 +299,11 @@ flowchart TD
     B2 --> B3["M' と M が一致するか確認"]
 ```
 
-アリスが自身の秘密鍵 $d$ を使ってメッセージを変換し（これが署名 $S$）、ボブに送ります。ボブはアリスの公開鍵 $e$ を使って検証計算をします。もし計算結果が元のメッセージと一致すれば、「アリスの秘密鍵でしか作れないデータである」ことと、「メッセージが途中で改ざんされていないこと」が同時に証明されるのです。
+アリスが自身の秘密鍵 $d$ を使ってメッセージを変換し（これが署名 $S$）、ボブに送ります。ボブはアリスの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) $e$ を使って検証計算をします。もし計算結果が元のメッセージと一致すれば、「アリスの秘密鍵でしか作れないデータである」ことと、「メッセージが途中で改ざんされていないこと」が同時に証明されるのです。
 
 ---
 
-## 10. プログラムで実感するRSA暗号
+## 10. プログラムで実感する[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号
 
 手計算では大変な累乗計算も、Pythonを使えば非常に簡単に実装できます。以下はRSA暗号のコアとなるロジックを体験できるPythonコードです。
 
@@ -343,13 +343,13 @@ Pythonの `pow(base, exp, mod)` 関数は内部で「繰り返し二乗法」と
 
 ## 11. まとめと未来の暗号技術
 
-高校数学の知識をベースに、RSA暗号の仕組みを解き明かしてきました。
+高校数学の知識をベースに、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の仕組みを解き明かしてきました。
 
 1. **素因数分解の困難性:** $p \times q = N$ は簡単だが、$N$ から $p, q$ を見つけるのは非常に難しい。
 2. **合同式と[オイラー](https://kenji.blog/p/euler/)の定理:** $a^{\phi(N)} \equiv 1 \pmod N$ という法則により、「ある数で累乗すると元に戻る」魔法のトラップドアが完成する。
-3. **公開鍵と秘密鍵:** 誰でも暗号化できるが、復号できるのは正当な受信者だけ。
+3. **[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)と秘密鍵:** 誰でも[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)できるが、復号できるのは正当な受信者だけ。
 
-現在使われているRSA暗号の $N$ は600桁以上あり、世界中のスーパーコンピュータを総動員しても素因数分解には宇宙の年齢以上の時間がかかります。しかし、近年研究が進んでいる「[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)」が将来実用化されると、「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)」によってこの素因数分解が一瞬で解かれてしまう可能性があります。そのため、現在は量子コンピュータでも解読できない「耐量子計算機暗号」の開発が世界中で急ピッチで進められています。
+現在使われている[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号の $N$ は600桁以上あり、世界中のスーパーコンピュータを総動員しても素因数分解には宇宙の年齢以上の時間がかかります。しかし、近年研究が進んでいる「[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)」が将来実用化されると、「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)」によってこの素因数分解が一瞬で解かれてしまう可能性があります。そのため、現在は量子コンピュータでも解読できない「耐量子計算機暗号」の開発が世界中で急ピッチで進められています。
 
-「役に立たない」と思われがちな高度な数学が、実は私たちの日常生活を根底から守っている。RSA暗号は、そんな数学の奥深さと美しさを教えてくれる最高の教材です。この記事を通して、暗号と数学の面白さを少しでも感じていただけたなら幸いです。
+「役に立たない」と思われがちな高度な数学が、実は私たちの日常生活を根底から守っている。[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号は、そんな数学の奥深さと美しさを教えてくれる最高の教材です。この記事を通して、暗号と数学の面白さを少しでも感じていただけたなら幸いです。
 

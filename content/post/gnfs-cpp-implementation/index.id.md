@@ -11,7 +11,7 @@ description: 'Penjelasan menyeluruh mengenai mekanisme ''General Number Field Si
 
 # [Bedah Lengkap] Memahami Algoritma Kriptanalisis Terkuat "GNFS" dengan Mengimplementasikannya di C++
 
-"Kriptografi RSA" mendukung dasar dari internet modern. Kekuatannya bergantung pada keyakinan matematis bahwa "memfaktorkan bilangan komposit yang sangat besar menjadi faktor prima secara praktis tidak mungkin dilakukan oleh komputer saat ini".
+"Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)" mendukung dasar dari internet modern. Kekuatannya bergantung pada keyakinan matematis bahwa "memfaktorkan bilangan komposit yang sangat besar menjadi faktor prima secara praktis tidak mungkin dilakukan oleh komputer saat ini".
 
 Namun, umat manusia tidak pernah menyerah. Saat ini, terdapat ** algoritma terkuat dan paling canggih buatan manusia ** untuk faktorisasi prima besar pada komputer klasik (komputer biasa, bukan komputer kuantum). Ini disebut ** "General Number Field Sieve (GNFS)" **.
 
@@ -430,7 +430,7 @@ Dengan menetapkan $V$ di sisi rasional sebagai $X$, maka persamaan mutlak yang k
 
 **$$X^2 \equiv Y^2 \pmod N$$** 
 
-Yang tersisa hanyalah menghitung $\gcd(X-Y, N)$. Hanya dalam 0,001 detik, ketika faktor non-trivial tercetak di layar, Kriptografi RSA yang dianggap tak tergoyahkan hancur sepenuhnya.
+Yang tersisa hanyalah menghitung $\gcd(X-Y, N)$. Hanya dalam 0,001 detik, ketika faktor non-trivial tercetak di layar, Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) yang dianggap tak tergoyahkan hancur sepenuhnya.
 
 ---
 

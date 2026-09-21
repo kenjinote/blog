@@ -10,9 +10,9 @@ tags: ["Blockchain", "PQC", "Quantum Computing", "Bitcoin", "Security"]
 description: "The arrival of 'Q-Day', where the astonishing computational power of quantum computers shakes the very foundations of blockchain. From the collapse of ECDSA due to Shor's algorithm to the transition strategy to Post-Quantum Cryptography (PQC), we thoroughly explain the technological future of crypto assets."
 ---
 
-## 1. Introduction: The Footsteps of the Post-Quantum Era and the Crisis of Blockchain
+## 1. Introduction: The Footsteps of the Post-Quantum Era and the Crisis of [Blockchain](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/)
 
-Since the birth of [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) by Satoshi Nakamoto in 2009, blockchain technology has grown to become the foundation of financial systems and applications worldwide as a "decentralized and tamper-proof ledger." This robust security is supported by modern cryptographic technologies: **Public Key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy** and **[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic Hash Functions**.
+Since the birth of [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) by Satoshi Nakamoto in 2009, blockchain technology has grown to become the foundation of financial systems and applications worldwide as a "decentralized and tamper-proof ledger." This robust security is supported by modern cryptographic technologies: **[Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy** and **[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s**.
 
 These cryptographic technologies guarantee security based on the mathematical "computational difficulty" that classical computers (the PCs and supercomputers we currently use) cannot decipher even if they took time equivalent to the lifespan of the universe.
 
@@ -22,7 +22,7 @@ In this article, we will thoroughly and deeply delve into what specific threats 
 
 ---
 
-## 2. Basics of Quantum Computers and Two Major Threats to Blockchain
+## 2. Basics of Quantum Computers and Two Major Threats to [Blockchain](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/)
 
 Current blockchain systems are primarily composed of the following two cryptographic elements, each of which is exposed to different threats from quantum algorithms.
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. Basics of Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECDSA) and Computational Difficulty
 
-Many blockchains, including [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) and Ethereum, employ the **Elliptic Curve Digital Signature Algorithm (ECDSA)** as their digital signature algorithm. Specifically, [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) uses an elliptic curve with the parameter `secp256k1`.
+Many blockchains, including [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) and Ethereum, employ the **Elliptic Curve [Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Algorithm (ECDSA)** as their digital signature algorithm. Specifically, [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) uses an elliptic curve with the parameter `secp256k1`.
 
 The security of elliptic curve cryptography relies on the computational difficulty of the **Elliptic Curve Discrete Logarithm Problem (ECDLP)**.
 An elliptic curve is defined by the following equation in the Weierstrass normal form:
@@ -62,7 +62,7 @@ Calculating the private key $k$ (finding the discrete logarithm) from the expose
 
 ### 2.2. Collapse by [Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)
 
-However, **Shor's Algorithm**, published by Peter Shor in 1994, completely destroyed this premise. Shor's algorithm was originally proposed to solve the prime factorization problem (the foundation of RSA cryptography) in polynomial time, but it can also be applied to the discrete logarithm problem and the elliptic curve discrete logarithm problem.
+However, **Shor's Algorithm**, published by Peter Shor in 1994, completely destroyed this premise. Shor's algorithm was originally proposed to solve the prime factorization problem (the foundation of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography) in polynomial time, but it can also be applied to the discrete logarithm problem and the elliptic curve discrete logarithm problem.
 
 The core of Shor's algorithm lies in rapidly finding the "Period" of a function using the **Quantum Fourier Transform (QFT)**.
 
@@ -108,11 +108,11 @@ When the first and second registers are measured, a value containing information
 
 The number of quantum gates required for this entire process is $\mathcal{O}(\log^3 N)$, uncovering the private key at ultra-high speeds completely incomparable to the $\mathcal{O}(\sqrt{N})$ search by classical computers.
 
-### 2.3. Grover's Algorithm and its Impact on Hash Functions
+### 2.3. Grover's Algorithm and its Impact on [Hash Function](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s
 
 Another threat is **Grover's Algorithm**, proposed by Lov Grover in 1996. This significantly impacts hash functions (e.g., SHA-256).
 
-In blockchain, hash functions are used to ensure data integrity, generate addresses, and serve as the foundation for **PoW (Proof of Work) mining** in [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/). Reversing a hash function (preimage computation) can be seen as an "unstructured database search problem" to find the input value $x$ such that $H(x) = y$ for a specific output value $y$.
+In blockchain, hash functions are used to ensure data integrity, generate addresses, and serve as the foundation for **[PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Work) mining** in [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/). Reversing a hash function (preimage computation) can be seen as an "unstructured database search problem" to find the input value $x$ such that $H(x) = y$ for a specific output value $y$.
 
 For classical computers, finding the correct answer out of $N$ possibilities requires an average of $\frac{N}{2}$ trials and a worst-case of $N$ trials. That is, the computational complexity is $\mathcal{O}(N)$.
 However, Grover's algorithm uses a quantum technique called "Amplitude Amplification." By iteratively amplifying the probability amplitude of the correct state from among all possibilities in a superposition state, it reduces the search time to its square root.
@@ -136,18 +136,18 @@ In conclusion, the quantum threat to hash functions is "minor and manageable," w
 
 In a world where ECDSA decryption by quantum computers is possible, what specific vulnerabilities will crypto asset networks face? Here, we provide a detailed analysis using [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)'s mechanism as an example, from the perspective of **"the timing of public key exposure."**
 
-### 3.1. Address Generation and the "Privacy" of Public Keys
+### 3.1. Address Generation and the "Privacy" of [Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s
 
 [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) addresses ([P2P](https://kenji.blog/en/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash or P2WPKH: Pay-to-Witness-Public-Key-Hash) use a public key hashed multiple times rather than the public key itself.
 
 $$
-\text{[Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
+\text{[Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{[Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)})))
 $$
 
 As mentioned earlier, since hash functions are resistant to quantum attacks (Grover's algorithm), reversing the original "public key" from the "address" (which is a hash value) is impossible even for a quantum computer.
 In other words, for **"unused addresses (those that have never sent funds),"** the public key is not exposed on the blockchain at all, and only the hash value is recorded. Therefore, as long as the public key is unknown, there is no target to execute Shor's algorithm, and the private key cannot be identified. Wallets in this state can be said to be Quantum-safe.
 
-### 3.2. Fatal Vulnerability During Transaction Transmission (Front-running Attack)
+### 3.2. Fatal [Vulnerability](https://kenji.blog/en/p/web-application-vulnerability-owasp-top-10/) During Transaction Transmission (Front-running Attack)
 
 The problem arises when users send funds.
 When broadcasting (sending) a transaction to the network, the user must **include their public key in the transaction data along with the digital signature and expose it to the entire network** for verification.
@@ -262,7 +262,7 @@ In actual algorithms used in blockchain and elsewhere (like Dilithium), **Ring-L
 
 ---
 
-## 5. Technical Challenges in Migrating Blockchains to PQC
+## 5. Technical Challenges in Migrating [Blockchain](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/)s to PQC
 
 Just because PQC algorithms (like Dilithium and SPHINCS+) exist doesn't mean they can be introduced to [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) or Ethereum tomorrow. There are several heavy challenges unique to decentralized systems.
 
@@ -291,7 +291,7 @@ However, the verification process of new lattice-based cryptographic algorithms 
 
 To avoid this, it is necessary to incorporate a new Precompiled Contract for PQC verification (e.g., assigning DilithiumVerify to `0x10`) into the EVM itself through a network hard fork. This requires a long-term process where core developers of each Ethereum client (Geth, Nethermind, Erigon, etc.) collaborate to optimally implement lattice cryptography verification logic at the language level (C++, Go, [Rust](https://kenji.blog/en/p/webassembly-wasm-current-future/), etc.) and conduct security audits.
 
-### 5.3. Difficulties in Consensus Building Through Hard Forks
+### 5.3. Difficulties in [Consensus](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) Building Through Hard Forks
 
 Changing the underlying signature algorithm inherently requires a **Hard Fork** that updates the entire network protocol. However, in communities like [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) that emphasize "not changing rules, being decentralized," the consensus-building process is politically very difficult. From the time a BIP ([Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/) Improvement Proposal) for migrating to PQC is proposed until it is implemented, years of discussion and testing will be required.
 
@@ -337,7 +337,7 @@ There is no need for everyday crypto asset users and investors to panic right no
 * **Avoid address reuse**: Thoroughly avoid keeping funds long-term in "used addresses (addresses that have sent funds even once, exposing their public key on the blockchain)" from a security perspective, not just a privacy one.
 * **Pay attention to technology trends**: Keep an antenna up for discussions on major networks' PQC transitions and hard fork news (like [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)'s BIPs and Ethereum's EIPs), so that you can appropriately transition your wallet when necessary.
 
-The history of blockchain is also a history of continuous upgrades and resilience against new technological threats. Just as it has overcome scalability issues and environmental problems (like the transition from PoW to PoS), the entire ecosystem will surely seek solutions and adapt to this unprecedented quantum threat.
+The history of blockchain is also a history of continuous upgrades and resilience against new technological threats. Just as it has overcome scalability issues and environmental problems (like the transition from [PoW](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/) to [PoS](https://kenji.blog/en/p/blockchain-technology-smart-contract-distributed-ledger/)), the entire ecosystem will surely seek solutions and adapt to this unprecedented quantum threat.
 We look forward to a future where the new human wisdom of quantum computers and the trusted technology of decentralized ledgers do not collapse through collision, but rather sublimate into a higher-dimension, robustly fused system.
 
 ---

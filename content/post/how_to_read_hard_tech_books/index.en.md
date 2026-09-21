@@ -96,12 +96,12 @@ In the world of mathematics, it's over once it's proved to "exist", but to code 
 
 Let's look at the process of dropping formulas into code through two concrete examples here.
 
-### 4.1 Example 1: The Mathematics and Python Implementation of RSA Encryption
+### 4.1 Example 1: The Mathematics and Python Implementation of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Encryption
 
 RSA encryption, the representative of public-key cryptography, is a beautiful application of elementary number theory (congruences, Euler's theorem, and the extended [[Euclid](https://kenji.blog/en/p/euclid/)e](https://kenji.blog/p/euclid/)an algorithm).
 
 #### Mathematical Background
-The key generation and encryption/decryption processes of RSA encryption are represented by the following formulas.
+The key generation and encryption/decryption processes of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption are represented by the following formulas.
 
 1. **Key Generation**:
    Choose huge primes $p, q$ and let $n = pq$.

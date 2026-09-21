@@ -321,7 +321,7 @@ sudo usermod -aG docker $USER
 
 При клонировании через SSH в Git или подключении к удаленным серверам управлять отдельными SSH-ключами для Windows и WSL очень неудобно. Чтобы совместить безопасность и удобство, мы настроим мост (переадресацию) от SSH-агента, работающего на стороне Windows (или менеджера паролей, такого как 1Password), в сторону WSL.
 
-Здесь мы рассмотрим самый современный и безопасный подход: использование **функции SSH-агента 1Password** или **OpenSSH Authentication Agent для Windows** и переадресацию их в UNIX-сокет домена в WSL2 с помощью `npiperelay` и `socat`.
+Здесь мы рассмотрим самый современный и безопасный подход: использование **функции SSH-агента 1Password** или **OpenSSH [Authentication](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/) Agent для Windows** и переадресацию их в UNIX-сокет домена в WSL2 с помощью `npiperelay` и `socat`.
 
 ### Переадресация сокета ssh-agent
 

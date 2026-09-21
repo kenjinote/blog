@@ -10,7 +10,7 @@ categories: ["math-cryptography-quantum"]
 description: 'Das Faktorisierungsproblem, das die Sicherheit der RSA-Verschlüsselung untermauert. Wir erklären detailliert mit mathematischen Formeln und Konzeptdiagrammen, vom mathematischen Mechanismus des stärksten klassischen Algorithmus, dem „Allgemeinen Zahlkörpersieb (GNFS)“, bis hin dazu, warum „Shors Algorithmus“ durch Quantencomputer dieses Problem lösen kann.'
 ---
 
-In der heutigen Internetgesellschaft wird die Informationssicherheit durch Public-Key-Kryptographie wie das RSA-Kryptosystem geschützt. Die Grundlage der Sicherheit des RSA-Kryptosystems beruht auf der Tatsache, dass **„die Primfaktorzerlegung riesiger zusammengesetzter Zahlen rechnerisch extrem schwierig ist“** .
+In der heutigen Internetgesellschaft wird die Informationssicherheit durch Public-Key-Kryptographie wie das [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptosystem geschützt. Die Grundlage der Sicherheit des RSA-Kryptosystems beruht auf der Tatsache, dass **„die Primfaktorzerlegung riesiger zusammengesetzter Zahlen rechnerisch extrem schwierig ist“** .
 
 In diesem Artikel entschlüsseln wir den mathematischen Mechanismus des **„Zahlkörpersiebs“ ** (General Number Field Sieve, GNFS), dem stärksten Algorithmus zur Primfaktorzerlegung für klassische Computer. Zugleich werden wir durch Formeln und Konzeptdiagramme detailliert ergründen, warum er durch den von Peter Shor entdeckten ** „[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/)“** vollständig besiegt wird und welchen Paradigmenwechsel dies darstellt.
 

@@ -51,7 +51,7 @@ description: 'يجب على من يرغب في تنفيذ النشر التلق�
 
 ---
 
-## 🔐 الحصول على رمز الوصول (OAuth2)
+## 🔐 الحصول على رمز الوصول ([OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/)2)
 
 سنستخدم تدفق `client_credentials` للحصول على الرمز.
 قم بتشغيل الأمر التالي باستخدام curl للحصول على رمز الوصول.
@@ -178,7 +178,7 @@ curl -X GET ^
 | --------- | ----------------------------- |
 | Graph API | واجهة برمجة التطبيقات الرسمية للتفاعل مع Teams |
 | تسجيل التطبيق | إجراءات المصادقة المطلوبة على Azure |
-| رمز الوصول | تم الحصول عليه عبر OAuth2 واستخدامه في الطلبات |
+| رمز الوصول | تم الحصول عليه عبر [OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/)2 واستخدامه في الطلبات |
 | تنفيذ C++ | استدعاء Graph API باستخدام WinHTTP |
 
 ## 🚀 الخطوات التالية

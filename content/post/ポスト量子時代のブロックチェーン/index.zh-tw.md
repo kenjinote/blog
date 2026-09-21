@@ -12,7 +12,7 @@ description: '量子電腦驚人的運算能力即將動搖區塊鏈的根基，
 
 ## 1. 簡介：後量子時代的腳步聲與區塊鏈的危機
 
-自2009年中本聰（Satoshi Nakamoto）創造[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)（[Bitcoin](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)）以來，區塊鏈技術作為「去中心化且不可篡改的帳本」，已發展成為全球金融系統與應用程式的基礎。支撐這種強大安全性的，正是 **公開金鑰密碼學（Public Key [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）** 與 **密碼雜湊函數（[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphic Hash Functions）** 等現代密碼技術。
+自2009年中本聰（Satoshi Nakamoto）創造[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)（[Bitcoin](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)）以來，區塊鏈技術作為「去中心化且不可篡改的帳本」，已發展成為全球金融系統與應用程式的基礎。支撐這種強大安全性的，正是 **公開金鑰密碼學（[Public Key](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）** 與 **密碼雜湊函數（[Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)s）** 等現代密碼技術。
 
 這些密碼技術的安全性，建立在數學上的「計算困難度」之上，即使是傳統電腦（我們目前使用的個人電腦或超級電腦）花費等同宇宙壽命的時間，也無法破解。
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. 橢圓曲線密碼學（ECDSA）的基礎與計算困難度
 
-包括[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)和以太坊（Ethereum）在內的許多區塊鏈，都採用 **橢圓曲線數位簽章演算法（ECDSA：Elliptic Curve Digital Signature Algorithm）** 作為數位簽章演算法。具體來說，[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)使用的是名為 `secp256k1` 參數的橢圓曲線。
+包括[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)和以太坊（Ethereum）在內的許多區塊鏈，都採用 **橢圓曲線數位簽章演算法（ECDSA：Elliptic Curve [Digital Signature](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) Algorithm）** 作為數位簽章演算法。具體來說，[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)使用的是名為 `secp256k1` 參數的橢圓曲線。
 
 橢圓曲線密碼學的安全性依賴於 **橢圓曲線離散對數問題（ECDLP：Elliptic Curve Discrete Logarithm Problem）** 的計算困難度。
 橢圓曲線由以下Weierstrass標準式的方程式定義：
@@ -62,7 +62,7 @@ $$
 
 ### 2.2. Shor演算法（[Shor's Algorithm](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/)）導致的崩潰
 
-然而，Peter Shor在1994年發表的 **Shor演算法** 徹底破壞了這個前提。Shor演算法最初是為了解決質因數分解問題（RSA密碼學的基礎）而在多項式時間內被提出，但它同樣適用於離散對數問題與橢圓曲線離散對數問題。
+然而，Peter Shor在1994年發表的 **Shor演算法** 徹底破壞了這個前提。Shor演算法最初是為了解決質因數分解問題（[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)密碼學的基礎）而在多項式時間內被提出，但它同樣適用於離散對數問題與橢圓曲線離散對數問題。
 
 Shor演算法的核心在於，利用 **量子傅立葉變換（QFT：Quantum Fourier Transform）** 高速找出函數的「週期（Period）」。
 
@@ -112,7 +112,7 @@ $$
 
 另一個威脅是Lov Grover在1996年提出的 **Grover演算法** 。這對雜湊函數（如：SHA-256）產生了巨大影響。
 
-在區塊鏈中，雜湊函數被用來確保資料完整性、產生地址，以及作為[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)中 **PoW（工作量證明）挖礦** 的基礎。雜湊函數的反推（原像計算）可以被視為在未結構化的資料庫中搜尋，也就是針對特定輸出值 $y$，尋找能使 $H(x) = y$ 的輸入值 $x$。
+在區塊鏈中，雜湊函數被用來確保資料完整性、產生地址，以及作為[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)中 **[PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)（工作量證明）挖礦** 的基礎。雜湊函數的反推（原像計算）可以被視為在未結構化的資料庫中搜尋，也就是針對特定輸出值 $y$，尋找能使 $H(x) = y$ 的輸入值 $x$。
 
 在傳統電腦中，為了從 $N$ 個可能性中找到正確答案，平均需要 $\frac{N}{2}$ 次嘗試，最壞的情況下需要 $N$ 次嘗試。換言之，運算複雜度為 $\mathcal{O}(N)$。
 然而，Grover演算法使用了稱為「振幅放大（Amplitude Amplification）」的量子技術。透過在疊加態的所有可能性中，反覆放大正確狀態的機率振幅，可將搜尋時間縮短至平方根。
@@ -141,7 +141,7 @@ $$
 [比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)的地址（如[P2P](https://kenji.blog/zh-tw/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash 或 P2WPKH: Pay-to-Witness-Public-Key-Hash）並非使用公鑰本身，而是將公鑰進行多次雜湊後生成。
 
 $$
-\text{[Bitcoin](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
+\text{[Bitcoin](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{[Public Key](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)})))
 $$
 
 如前所述，由於雜湊函數對量子攻擊（Grover演算法）具有抵抗力，即使是量子電腦也無法從身為雜湊值的「地址」反推回原始的「公鑰」。
@@ -311,7 +311,7 @@ pie title 區塊鏈中的簽章資料大小比較 (概念圖)
 ### 階段2：零知識證明（ZK-Rollups）的應用（2025年～）
 被寄予厚望用來解決PQC最大弱點「簽章資料膨脹」的王牌，是應用Layer 2技術的 **ZK-Rollups（零知識證明）** 。
 不將龐大的PQC簽章資料直接寫入Layer 1（主鏈），而是在Layer 2上驗證並彙總大量PQC交易。然後，使用ZK-SNARKs或ZK-STARKs將它們壓縮成一個極小的「證明資料（Proof）」，再記錄到Layer 1。
-需要注意的是，SNARKs的某些構造（如Groth16）本身具備量子脆弱性，因此採用僅依賴抗量子雜湊函數的 **ZK-STARKs** 將成為關鍵。
+需要注意的是，SNARKs的某些構造（如Groth16）本身具備量子[脆弱性](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)，因此採用僅依賴抗量子雜湊函數的 **ZK-STARKs** 將成為關鍵。
 
 ### 階段3：協定層級的硬分叉（2030年左右）
 當NIST的PQC標準化完全確立，業界標準函式庫齊備並經過充分測試後，預期[Bitcoin](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)或Ethereum等主流公鏈將執行硬分叉，把預設簽章方式全面過渡到PQC。在這個過渡期，將會對用戶發出大規模公告，「呼籲用戶將資金從舊錢包轉移到支援PQC的新錢包」。
@@ -328,7 +328,7 @@ pie title 區塊鏈中的簽章資料大小比較 (概念圖)
 
 「後量子時代」的到來已不再只是科幻小說中的空想領域，而是作為針對現實密碼系統的具體技術挑戰，逼近我們的眼前。
 
-Shor演算法和Grover演算法這兩把量子電腦的利劍，分別威脅著目前區塊鏈基礎的公開金鑰密碼學與雜湊函數。特別是ECDSA的脆弱性最為致命。為了避免遭受搶先交易攻擊導致資金被盜的風險，過渡到後量子密碼學（PQC）是絕對無法避免的道路。
+Shor演算法和Grover演算法這兩把量子電腦的利劍，分別威脅著目前區塊鏈基礎的公開金鑰密碼學與雜湊函數。特別是ECDSA的[脆弱性](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)最為致命。為了避免遭受搶先交易攻擊導致資金被盜的風險，過渡到後量子密碼學（PQC）是絕對無法避免的道路。
 
 然而，科技界與區塊鏈社群並非束手無策坐以待斃。包含晶格密碼學與雜湊簽章在內的PQC演算法選定及標準化正穩步推進。透過運用零知識證明（ZK-STARKs）與Layer 2擴容技術，克服導入PQC最大難關「資料大小膨脹」的道路也開始浮現。
 
@@ -337,7 +337,7 @@ Shor演算法和Grover演算法這兩把量子電腦的利劍，分別威脅著�
 * **避免重複使用地址** ：不僅基於隱私考量，基於安全考量更應嚴格遵守，不要將資金長時間存放在「已使用的地址（只要發送過一次資金，公鑰就暴露在區塊鏈上的地址）」。
 * **關注科技趨勢** ：留意[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)BIP或以太坊EIP等主要網路關於PQC過渡的討論及硬分叉新聞，在必要的時機，妥善進行錢包轉移操作。
 
-區塊鏈的歷史，一直都是一段面對新技術威脅不斷升級與展現韌性（回復力）的歷史。正如我們克服了可擴展性問題與環境問題（如PoW過渡到PoS），面對這場前所未見的量子威脅，整個生態系也將會探索出解決方案並加以適應。
+區塊鏈的歷史，一直都是一段面對新技術威脅不斷升級與展現韌性（回復力）的歷史。正如我們克服了可擴展性問題與環境問題（如[PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)過渡到[PoS](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)），面對這場前所未見的量子威脅，整個生態系也將會探索出解決方案並加以適應。
 我們期待，代表人類新智慧的量子電腦，與作為信任科技的去中心化分散式帳本，並不會在衝突中走向毀滅，而是能在更高層次上融合，昇華為一個更堅固的系統。
 
 ---

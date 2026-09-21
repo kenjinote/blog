@@ -138,7 +138,7 @@ Al ejecutar este código, se puede observar cómo a medida que $x$ crece, la pro
 
 Las propiedades de los números primos no son solo un objeto fascinante en las matemáticas puras, sino también un elemento crucial que sustenta la infraestructura de seguridad de la sociedad moderna.
 
-Los sistemas de criptografía de clave pública, como el cifrado RSA, aprovechan la propiedad de que "es extremadamente difícil factorizar números enteros enormes". El teorema de los números primos garantiza la probabilidad con la que se pueden encontrar "números primos de tamaño adecuado" necesarios para generar claves criptográficas.
+Los sistemas de criptografía de clave pública, como el cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/), aprovechan la propiedad de que "es extremadamente difícil factorizar números enteros enormes". El teorema de los números primos garantiza la probabilidad con la que se pueden encontrar "números primos de tamaño adecuado" necesarios para generar claves criptográficas.
 
 Por ejemplo, la probabilidad de que un número impar aleatorio de 1024 bits sea primo se estima en aproximadamente $1 / (1024 \times \ln(2) / 2) \approx 1 / 355$. Esto significa que con unos pocos cientos de pruebas de primalidad, existe una alta probabilidad de encontrar el número primo gigante necesario, y sin el teorema de los números primos, sería imposible construir sistemas criptográficos eficientes.
 

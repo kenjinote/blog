@@ -39,7 +39,7 @@ Banyak gagasan yang menjadi fondasi Bitcoin lahir dari komunitas ini, seperti "e
 
 Pada tahun 2008, terjadi krisis keuangan global yang dipicu oleh kebangkrutan Lehman Brothers. Ketidakpercayaan terhadap sistem keuangan yang ada mencapai puncaknya pada tahun yang sama, tepatnya pada tanggal 31 Oktober, ketika seseorang (atau kelompok) anonim dengan nama "Satoshi Nakamoto" mengunggah sebuah makalah ke milis kriptografi.
 
-Judulnya adalah 『Bitcoin: A Peer-to-Peer Electronic Cash System』 (Bitcoin: Sistem Uang Tunai Elektronik [P2P](https://kenji.blog/id/p/webrtc-realtime-communication-p2p/)). Makalah setebal 9 halaman ini menunjukkan cara menyelesaikan masalah pengeluaran ganda yang dialami oleh upaya uang elektronik sebelumnya, dengan cara yang sepenuhnya terdesentralisasi menggunakan mekanisme **Proof of Work (PoW)**.
+Judulnya adalah 『Bitcoin: A Peer-to-Peer Electronic Cash System』 (Bitcoin: Sistem Uang Tunai Elektronik [P2P](https://kenji.blog/id/p/webrtc-realtime-communication-p2p/)). Makalah setebal 9 halaman ini menunjukkan cara menyelesaikan masalah pengeluaran ganda yang dialami oleh upaya uang elektronik sebelumnya, dengan cara yang sepenuhnya terdesentralisasi menggunakan mekanisme **Proof of Work ([PoW](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/))**.
 
 ### Blok Genesis (Genesis Block)
 
@@ -50,9 +50,9 @@ Pada tanggal 3 Januari 2009, jaringan Bitcoin mulai beroperasi. Blok pertama yan
 
 Ini adalah tajuk utama surat kabar Inggris 『The Times』 pada saat itu, yang berfungsi sebagai ironi yang kuat terhadap kebijakan dana talangan keuangan oleh bank sentral, dan juga berfungsi sebagai stempel waktu untuk membuktikan bahwa sistem Bitcoin akan bertahan selamanya.
 
-## 3. Arsitektur Blockchain
+## 3. Arsitektur [Blockchain](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/)
 
-Teknologi inti yang mendukung Bitcoin adalah "Blockchain". Blockchain adalah bentuk dari Teknologi Buku Besar Terdistribusi (Distributed Ledger Technology: DLT), di mana data dikelompokkan ke dalam unit-unit yang disebut "blok", yang saling terhubung secara kriptografis menyerupai rantai (chain).
+Teknologi inti yang mendukung Bitcoin adalah "Blockchain". Blockchain adalah bentuk dari Teknologi Buku Besar Terdistribusi ([Distributed Ledger](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT), di mana data dikelompokkan ke dalam unit-unit yang disebut "blok", yang saling terhubung secara kriptografis menyerupai rantai (chain).
 
 ```mermaid
 flowchart TD
@@ -105,17 +105,17 @@ Fungsi hash $H$ harus memenuhi sifat-sifat berikut:
 
 Dalam Bitcoin, SHA-256 diterapkan dua kali dalam proses seperti menghitung hash blok dan membuat alamat dari kunci publik (ini disebut `SHA256(SHA256(x))` atau Hash256).
 
-### Kriptografi Kunci Publik (Public Key Cryptography) dan Tanda Tangan Digital
+### Kriptografi Kunci Publik ([Public Key](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) [Cryptography](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)) dan Tanda Tangan Digital
 
 Kepemilikan aset kripto dibuktikan oleh pasangan Kunci Privat (Private Key) dan Kunci Publik (Public Key).
 - **Kunci Privat** $k$: Bilangan bulat 256-bit yang dihasilkan secara acak. Tidak boleh diketahui oleh siapa pun.
 - **Kunci Publik** $K$: Kunci yang dihitung dari kunci privat menggunakan fungsi satu arah. Kunci ini dipublikasikan ke jaringan.
 
-Ketika Alice mentransfer Bitcoin ke Bob, Alice menggunakan kunci privatnya untuk membuat **Tanda Tangan Digital (Digital Signature)** pada data transaksi. Peserta jaringan dapat memverifikasi validitas tanda tangan (apakah Alice benar-benar membuatnya menggunakan kunci privatnya) menggunakan kunci publik Alice.
+Ketika Alice mentransfer Bitcoin ke Bob, Alice menggunakan kunci privatnya untuk membuat **Tanda Tangan Digital ([Digital Signature](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/))** pada data transaksi. Peserta jaringan dapat memverifikasi validitas tanda tangan (apakah Alice benar-benar membuatnya menggunakan kunci privatnya) menggunakan kunci publik Alice.
 
 ### Kriptografi Kurva Eliptik (Elliptic Curve Cryptography: ECC) dan secp256k1
 
-Bitcoin menggunakan **Kriptografi Kurva Eliptik (ECC)** alih-alih kriptografi RSA untuk menghasilkan kunci publik dan tanda tangan digital. ECC memiliki keuntungan menawarkan tingkat keamanan yang setara dengan RSA namun dengan panjang kunci yang jauh lebih pendek.
+Bitcoin menggunakan **Kriptografi Kurva Eliptik (ECC)** alih-alih kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) untuk menghasilkan kunci publik dan tanda tangan digital. ECC memiliki keuntungan menawarkan tingkat keamanan yang setara dengan RSA namun dengan panjang kunci yang jauh lebih pendek.
 
 Parameter kurva eliptik tertentu yang digunakan dalam Bitcoin disebut **secp256k1**. Kurva ini didefinisikan di atas medan berhingga (finite field) $\mathbb{F}_p$ dan diwakili oleh persamaan berikut:
 
@@ -153,7 +153,7 @@ Dalam proses verifikasi, perhitungan berikut dilakukan menggunakan kunci publik 
 3. Hitung titik $(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$.
 4. Jika $r \equiv x_2 \pmod{n}$, maka tanda tangan dianggap valid.
 
-## 5. Algoritma Konsensus dan Proof of Work (PoW)
+## 5. Algoritma Konsensus dan Proof of Work ([PoW](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/))
 
 Dalam jaringan terdesentralisasi, mekanisme untuk membuat semua orang menyetujui status buku besar yang sama disebut algoritma konsensus.
 
@@ -161,7 +161,7 @@ Dalam jaringan terdesentralisasi, mekanisme untuk membuat semua orang menyetujui
 
 Sebagai masalah klasik dalam komputasi terdistribusi, ada "Masalah Jenderal Bizantium". Beberapa jenderal mengepung kota musuh dan harus mencapai konsensus apakah akan menyerang atau mundur, tetapi mungkin ada pengkhianat di antara para jenderal yang mengirim pesan palsu. Masalahnya adalah bagaimana mencapai konsensus yang benar hanya di antara jenderal yang jujur dalam situasi seperti itu.
 
-Bitcoin secara praktis memecahkan masalah ini dengan menggabungkan **Proof of Work (PoW)** dan **Aturan Rantai Terpanjang (Longest Chain Rule)**.
+Bitcoin secara praktis memecahkan masalah ini dengan menggabungkan **Proof of Work ([PoW](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/))** dan **Aturan Rantai Terpanjang (Longest Chain Rule)**.
 
 ### Matematika Penambangan dan Nonce
 
@@ -226,9 +226,9 @@ Pendekatan menjanjikan untuk memecahkan masalah skalabilitas adalah Lightning Ne
 
 Dalam Lightning Network, para peserta membuka "Saluran Pembayaran (Payment Channel)" di luar blockchain (off-chain). Di dalam saluran tersebut, selama kedua belah pihak setuju, dana dapat ditransfer dalam sekejap dan hampir gratis berkali-kali tanpa harus mencatat transaksi di blockchain. Transaksi hanya dicatat di blockchain (Layer 1) pada saat penyelesaian akhir saldo.
 
-### Perbandingan dengan Proof of Stake (PoS)
+### Perbandingan dengan Proof of Stake ([PoS](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/))
 
-Masalah besar lain dengan PoW adalah konsumsi listrik yang sangat besar untuk penambangan. Sebagai solusi terhadap masalah lingkungan ini, Ethereum dan beberapa lainnya telah beralih ke algoritma konsensus yang berbeda yang disebut **Proof of Stake (PoS)**.
+Masalah besar lain dengan [PoW](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) adalah konsumsi listrik yang sangat besar untuk penambangan. Sebagai solusi terhadap masalah lingkungan ini, Ethereum dan beberapa lainnya telah beralih ke algoritma konsensus yang berbeda yang disebut **Proof of Stake (PoS)**.
 
 Dalam PoS, hak (validator) untuk menghasilkan blok berikutnya dialokasikan secara probabilistik berdasarkan jumlah aset kripto yang dimiliki (stake) dan durasi kepemilikan, bukan berdasarkan kekuatan komputasi (hashrate). Ini mengurangi konsumsi listrik lebih dari 99%, tetapi ada juga kritik bahwa ini adalah "sistem di mana orang kaya menjadi semakin kaya" atau bahwa "desentralisasi yang sebenarnya dapat terganggu". Bitcoin, tidak peduli seberapa banyak dikritik, terus mempertahankan filosofi PoW, yaitu "jaminan keamanan fisik melalui konsumsi energi".
 
@@ -248,13 +248,13 @@ Dalam secp256k1 Bitcoin, karena $p \approx 2^{256}$, dekripsi membutuhkan sekita
 ### Ancaman Komputer Kuantum dan Kriptografi Tahan Kuantum
 
 Namun, ada satu kekhawatiran besar mengenai keamanan komputasional. Yaitu munculnya **Komputer Kuantum (Quantum Computer)**.
-"Algoritma Shor ([Shor's Algorithm](https://kenji.blog/id/p/quantum-computing-shors-algorithm/))" yang diterbitkan oleh Peter Shor pada tahun 1994, secara matematis membuktikan bahwa jika komputer kuantum digunakan, masalah faktorisasi prima (dasar dari enkripsi RSA) dan masalah logaritma diskrit (dasar ECC) dapat diselesaikan dalam waktu polinomial $\mathcal{O}(n^3)$.
+"Algoritma Shor ([Shor's Algorithm](https://kenji.blog/id/p/quantum-computing-shors-algorithm/))" yang diterbitkan oleh Peter Shor pada tahun 1994, secara matematis membuktikan bahwa jika komputer kuantum digunakan, masalah faktorisasi prima (dasar dari enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)) dan masalah logaritma diskrit (dasar ECC) dapat diselesaikan dalam waktu polinomial $\mathcal{O}(n^3)$.
 
 Jika komputer kuantum skala besar yang praktis dengan Qubit (Qubits) yang cukup dan tingkat kesalahan yang rendah berhasil dikembangkan, ada risiko bahwa kunci privat dapat dihitung mundur dari kunci publik Bitcoin.
 Langkah-langkah pertahanan jaringan Bitcoin terhadap hal ini adalah sebagai berikut:
 
 1. **Perlindungan Fungsi Hash**: Alamat Bitcoin bukanlah kunci publik itu sendiri, melainkan hasil dari penerapan fungsi hash SHA-256 dan RIPEMD-160 ke kunci publik. Bahkan dengan komputer kuantum, menghitung mundur fungsi hash (bahkan menggunakan algoritma Grover, kompleksitas komputasinya adalah $\mathcal{O}(\sqrt{N})$) masih sulit. Oleh karena itu, alamat tersebut aman terhadap komputer kuantum hingga transaksi dilakukan dan kunci publik diekspos ke jaringan.
-2. **Transisi ke Kriptografi Pasca-Kuantum (Post-Quantum Cryptography: PQC)**: Sebelum komputer kuantum digunakan secara praktis, ada diskusi untuk melakukan hard fork pada protokol Bitcoin untuk beralih ke algoritma tanda tangan baru yang sulit dipecahkan bahkan oleh komputer kuantum, seperti kriptografi berbasis kisi (Lattice-based cryptography) atau kriptografi polinomial multivariat (Multivariate polynomial cryptography) yang dipilih oleh NIST (Institut Nasional Standar dan Teknologi AS).
+2. **Transisi ke Kriptografi Pasca-Kuantum (Post-Quantum [Cryptography](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/): PQC)**: Sebelum komputer kuantum digunakan secara praktis, ada diskusi untuk melakukan hard fork pada protokol Bitcoin untuk beralih ke algoritma tanda tangan baru yang sulit dipecahkan bahkan oleh komputer kuantum, seperti kriptografi berbasis kisi (Lattice-based cryptography) atau kriptografi polinomial multivariat (Multivariate polynomial cryptography) yang dipilih oleh NIST (Institut Nasional Standar dan Teknologi AS).
 
 ## 9. Topologi Jaringan dan Detail Protokol [P2P](https://kenji.blog/id/p/webrtc-realtime-communication-p2p/)
 
@@ -266,7 +266,7 @@ Komputer yang berpartisipasi dalam jaringan disebut "Node". Ada beberapa jenis n
 
 - **Full Node**: Node yang mengunduh dan memverifikasi semua data blockchain (ratusan GB atau lebih) dari Blok Genesis hingga blok terbaru. Node ini secara independen memeriksa validitas transaksi dan ada tidaknya pengeluaran ganda, sehingga memainkan peran inti dalam keamanan jaringan.
 - **Node SPV (Simplified Payment Verification Node)**: Node ringan yang hanya mengunduh header blok, bukan keseluruhan blockchain. Terutama digunakan dalam dompet untuk ponsel cerdas. Node ini dapat memeriksa apakah transaksinya sendiri termasuk dalam blok (verifikasi jalur Merkle), tetapi tidak memiliki kemampuan verifikasi setingkat Full Node.
-- **Node Penambangan (Mining Node)**: Node yang melakukan perhitungan PoW dan menghasilkan blok baru. Saat ini, "kolam penambangan (mining pool)" besar yang menyatukan perangkat keras khusus penambangan yang disebut ASIC (Application Specific Integrated Circuit) memainkan peran ini.
+- **Node Penambangan (Mining Node)**: Node yang melakukan perhitungan [PoW](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) dan menghasilkan blok baru. Saat ini, "kolam penambangan (mining pool)" besar yang menyatukan perangkat keras khusus penambangan yang disebut ASIC (Application Specific Integrated Circuit) memainkan peran ini.
 
 ### Proses Propagasi Transaksi (Gossip Protocol)
 
@@ -279,7 +279,7 @@ Ketika seorang pengguna (Alice) membuat transaksi untuk mengirim Bitcoin, bagaim
 
 Dengan ini, transaksi yang valid akan didistribusikan ke Mempool di seluruh node di seluruh dunia dalam hitungan detik. Penambang memprioritaskan pemilihan transaksi dengan biaya (Fee) tinggi dari Mempool ini dan mengemasnya ke dalam blok baru.
 
-## 10. Ekonomi Blockchain: Teori Permainan dan Desain Insentif
+## 10. Ekonomi [Blockchain](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/): Teori Permainan dan Desain Insentif
 
 Pencapaian terbesar Satoshi Nakamoto bukanlah hanya memecahkan teka-teki kriptografi, melainkan membangun **Desain Insentif (Incentive Design)** yang sempurna di mana "tindakan egois dari individu dan organisasi pada akhirnya meningkatkan keamanan seluruh jaringan".
 

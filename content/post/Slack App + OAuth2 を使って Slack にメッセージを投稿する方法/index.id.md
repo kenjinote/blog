@@ -11,20 +11,20 @@ description: 'Menjelaskan cara menggunakan token OAuth Aplikasi Slack untuk memp
 
 ## ✅ Cara Memposting Menggunakan Token Akses (Slack Web API)
 
-"OAuth Token (seperti xoxb- dst.)" dari Slack adalah kunci untuk memposting menggunakan [Web API](https://api.slack.com/methods/chat.postMessage) Slack.
+"[OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) Token (seperti xoxb- dst.)" dari Slack adalah kunci untuk memposting menggunakan [Web API](https://api.slack.com/methods/chat.postMessage) Slack.
 Dalam hal ini, tidak seperti Webhook, Anda melakukan `POST` ke **Slack API Endpoint** dengan header `Authorization: Bearer`.
 
 ---
 
 ## 🔑 Prasyarat yang Diperlukan
 
-Anda harus menyertakan **`chat:write` dalam cakupan OAuth** pada aplikasi Slack Anda:
+Anda harus menyertakan **`chat:write` dalam cakupan [OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/)** pada aplikasi Slack Anda:
 
 ### Langkah-langkah Pengaturan
 
 1. Kunjungi [https://api.slack.com/apps](https://api.slack.com/apps)
 2. Buat aplikasi atau pilih aplikasi yang sudah ada
-3. Di "OAuth & Permissions" > `Scopes`
+3. Di "[OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) & Permissions" > `Scopes`
    → Tambahkan `chat:write`
 4. "Install to Workspace" atau "Reinstall" untuk mendapatkan `Access Token` (contoh: `xoxb-xxxxxxxxxx`)
 

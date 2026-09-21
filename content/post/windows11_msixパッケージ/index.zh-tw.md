@@ -131,7 +131,7 @@ MakeAppx.exe pack /d "C:\Path\To\AppFolder" /p "C:\Path\To\Output\AwesomeApp_1.0
 
 為了深入理解為何 MSIX 套件需要簽章，我們必須了解數位簽章背後的密碼學機制。數位簽章保證了套件「確實是由指定的發行者所建立 (認證)」以及「建立後到目前為止未被第三方竄改 (完整性)」。
 
-MSIX 的簽章通常結合了 RSA 加密與 SHA-256 (Secure Hash Algorithm 256-bit)。
+MSIX 的簽章通常結合了 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密與 SHA-256 (Secure Hash Algorithm 256-bit)。
 
 ### 套用雜湊函數
 首先，將整個 MSIX 套件的二進位檔 (內容物) 視為訊息 $M$。簽章工具 (SignTool.exe) 會對此訊息 $M$ 套用密碼編譯雜湊函數 SHA-256，計算出固定長度 (256 位元) 的雜湊值 $H(M)$。
@@ -141,7 +141,7 @@ MSIX 的簽章通常結合了 RSA 加密與 SHA-256 (Secure Hash Algorithm 256-b
 
 $$ \sigma \equiv (H(M))^d \pmod n $$
 
-這裡的 $n$ 是 RSA 模數 (兩個巨大質數的乘積)。包含此簽章 $\sigma$ 與發行者「公鑰 (Public Key)」$e$ 的憑證 (X.509 格式)，將做為 MSIX 套件的一部分 (`AppxSignature.p7x`) 被嵌入其中。
+這裡的 $n$ 是 RSA 模數 (兩個巨大質數的乘積)。包含此簽章 $\sigma$ 與發行者「公鑰 ([Public Key](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/))」$e$ 的憑證 (X.509 格式)，將做為 MSIX 套件的一部分 (`AppxSignature.p7x`) 被嵌入其中。
 
 ### 驗證簽章 (Windows OS)
 當使用者嘗試安裝 MSIX 時，Windows OS 會從套件內的憑證中取出公鑰 $e$，並執行以下計算以還原雜湊值 $H'(M)$：

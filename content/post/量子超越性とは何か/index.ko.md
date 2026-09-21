@@ -182,7 +182,7 @@ IBM은 오류율을 철저히 낮추는 것과 병행하여 프로세서의 스�
 
 Google의 전략은 물리 양자 비트의 수를 급격히 늘리기보다는 1개의 논리 양자 비트 오류율을 극한까지 낮추는(예를 들어 $10^{-6}$ 까지 낮추는) 데 중점을 두고 있습니다. 그 바탕 위에 모듈 간 양자 상태를 전송하는 기술(Quantum Interconnects)을 확립하여, 수천~수만 개의 물리 양자 비트를 병렬로 동작시키는 대규모 시스템을 목표로 하고 있습니다.
 
-매직 상태 증류(Magic [State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) Distillation) 등 비클리포드 게이트를 결함 허용적으로 실행하기 위한 프로토콜 구현도 앞으로의 큰 기술적 장애물이 됩니다. 실용적인 Shor의 알고리즘을 실행하여 2048비트의 RSA 암호를 해독하려면 오류율 $10^{-8}$ 이하의 논리 양자 비트가 수천 개, 물리 양자 비트로 환산하면 수백만~수천만 개가 필요하다고 알려져 있어 아직 갈 길이 멉니다.
+매직 상태 증류(Magic [State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) Distillation) 등 비클리포드 게이트를 결함 허용적으로 실행하기 위한 프로토콜 구현도 앞으로의 큰 기술적 장애물이 됩니다. 실용적인 Shor의 알고리즘을 실행하여 2048비트의 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호를 해독하려면 오류율 $10^{-8}$ 이하의 논리 양자 비트가 수천 개, 물리 양자 비트로 환산하면 수백만~수천만 개가 필요하다고 알려져 있어 아직 갈 길이 멉니다.
 
 ---
 

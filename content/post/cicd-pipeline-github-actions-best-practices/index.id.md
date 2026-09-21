@@ -310,7 +310,7 @@ jobs:
       node-version: '20'
 ```
 
-## Integrasi Cloud Aman Menggunakan OIDC (OpenID Connect)
+## Integrasi Cloud Aman Menggunakan [OIDC](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) ([OpenID Connect](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/))
 
 Menyimpan kredensial berumur panjang (seperti *secret key*) di GitHub ketika men-deploy ke *cloud provider* seperti AWS, GCP, atau Azure membawa risiko keamanan.
 
@@ -364,6 +364,6 @@ Artikel ini telah menjelaskan dasar-dasar CI/CD, cara praktis membangun *pipelin
 *   **Sering Mengintegrasikan:** *Merge* perubahan kecil secara sering untuk menemukan bug lebih cepat.
 *   **Gunakan Cache:** Kurangi waktu pelaksanaan *workflow* Anda, dan tingkatkan pengalaman pengembangan.
 *   **Otomatisasi Kualitas dan Keamanan:** Sertakan pemindaian Lint, tes, dan kerentanan ke dalam *pipeline*.
-*   **Gunakan OIDC:** Hindari penggunaan *secret key* saat berintegrasi dengan penyedia *cloud*; gunakan token OIDC sementara sebagai gantinya.
+*   **Gunakan [OIDC](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/):** Hindari penggunaan *secret key* saat berintegrasi dengan penyedia *cloud*; gunakan token OIDC sementara sebagai gantinya.
 
 GitHub Actions adalah alat yang sangat kuat dan fleksibel. Kami menyarankan untuk memulainya dengan langkah-langkah kecil seperti mengotomatiskan Lint, lalu secara bertahap mengembangkan *pipeline* seiring pertumbuhan proyek Anda. Manfaatkan keajaiban otomatisasi demi mencapai pengembangan perangkat lunak yang lebih efisien dan berkualitas tinggi.

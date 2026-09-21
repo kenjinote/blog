@@ -134,7 +134,7 @@ $$\prod_{S} (a - b\alpha) = u \cdot \gamma^2$$
 ## 제5단계: 애들먼의 마법 「이차 잉여 지표(Quadratic Characters)」
 
 아이디얼 류군의 장애물과 단수군의 장애물. 이 두 가지를 어떻게 뛰어넘을 것인가?
-여기서 암호학자 레너드 애들먼(RSA의 "A") 등이 도입한 천재적인 수법 **「이차 잉여 지표(Quadratic Characters)」** 가 등장합니다.
+여기서 암호학자 레너드 애들먼([RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)의 "A") 등이 도입한 천재적인 수법 **「이차 잉여 지표(Quadratic Characters)」** 가 등장합니다.
 
 「어떤 요소가 대수체 안에서 완전히 제곱이 되어 있는가?」를 판정하기 위해, 르장드르 기호(이차 잉여)의 대수체 버전을 사용합니다.
 아까의 거대한 행렬(소 아이디얼의 개수를 짝수로 만들기 위한 퍼즐)에 **「몇 가지 특별한 소 아이디얼 $\mathfrak{q}$에 대한 이차 잉여 지표도 모두 $1$(짝수)이 된다」는 추가 조건(열)을 수십 개 정도 몰래 덧붙이는** 것입니다.
@@ -173,7 +173,7 @@ $$X = V \pmod N$$
 이제 이 $X$와 $Y$가 자명한 해($X \equiv \pm Y$)가 아니기를 기도하며,
 **$\gcd(X - Y, N)$** 을 계산합니다.
 
-비자명한 해라면, [[유클리드](https://kenji.blog/ko/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/)이 0.001초 만에 실행되며 RSA 암호의 심장부인 비밀 소수 $p$와 $q$가 출력 화면에 인쇄됩니다.
+비자명한 해라면, [[유클리드](https://kenji.blog/ko/p/euclid/) 호제법](https://kenji.blog/p/euclidean-algorithm/)이 0.001초 만에 실행되며 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호의 심장부인 비밀 소수 $p$와 $q$가 출력 화면에 인쇄됩니다.
 
 ---
 

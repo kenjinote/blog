@@ -12,7 +12,7 @@ description: 'Wie Quantencomputer aktuelle Kryptographie zerstören könnten: Ei
 
 # 1. Einführung: Die kryptographische Krise durch Quantencomputer
 
-Ein Großteil der Sicherheit in der modernen Internetgesellschaft hängt von **Public-Key-Kryptographie** (insbesondere RSA-Verschlüsselung) ab. Wenn wir beim Online-Shopping Kreditkarteninformationen senden oder hochsensible Daten austauschen, wird der Inhalt dieser Kommunikation stark durch RSA-Kryptographie geschützt.
+Ein Großteil der Sicherheit in der modernen Internetgesellschaft hängt von **Public-Key-Kryptographie** (insbesondere [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Verschlüsselung) ab. Wenn wir beim Online-Shopping Kreditkarteninformationen senden oder hochsensible Daten austauschen, wird der Inhalt dieser Kommunikation stark durch RSA-Kryptographie geschützt.
 
 Die Sicherheit der RSA-Verschlüsselung beruht auf der mathematischen Tatsache, dass "**die Primfaktorzerlegung riesiger ganzer Zahlen für klassische Computer (die PCs und Supercomputer, die wir normalerweise verwenden) extrem schwierig ist**". Der 1994 von Peter Shor vorgestellte "**[Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))**" stellte diese Prämisse jedoch grundlegend in Frage. Es wurde mathematisch bewiesen, dass der Shor-Algorithmus, wenn er auf einem großen Quantencomputer ausgeführt wird, die Primfaktorzerlegung, für die klassische Computer länger als das Alter des Universums benötigen würden, in nur wenigen Minuten bis Stunden lösen kann.
 
@@ -322,7 +322,7 @@ Wir haben erfolgreich die Primfaktorzerlegung $15 = 3 \times 5$ durchgeführt.
 
 # 6. Herausforderungen für die praktische Anwendung und die Grenzen der NISQ-Ära
 
-Obwohl es einfach war, $N=15$ auf einem Simulator zu faktorisieren, gibt es für reale Quantencomputer noch viele Hürden, um RSA-2048 (eine 617-stellige Dezimalzahl), wie es in der realen Welt verwendet wird, zu faktorisieren.
+Obwohl es einfach war, $N=15$ auf einem Simulator zu faktorisieren, gibt es für reale Quantencomputer noch viele Hürden, um [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-2048 (eine 617-stellige Dezimalzahl), wie es in der realen Welt verwendet wird, zu faktorisieren.
 
 Die Ära, in der wir derzeit leben, wird als **NISQ-Ära (Noisy Intermediate-Scale Quantum: verrauschtes, mittelgroßes Quanten-Computing)** bezeichnet. Qubits sind extrem anfällig für Umgebungsrauschen und unterliegen während der Berechnungen der "Dekohärenz", wodurch ihre Zustände zerstört werden.
 
@@ -341,7 +341,7 @@ In Vorbereitung auf die Ankunft eines solchen "Q-Day (der Tag, an dem Quantencom
 
 PQC basiert auf neuen mathematischen Problemen (Gitterprobleme, multivariate Polynome, hashbasiert usw.), von denen mathematisch angenommen wird, dass sie selbst mit Shors Algorithmus (oder Grovers Algorithmus) nicht effizient lösbar sind. Algorithmen wie "CRYSTALS-Kyber" und "CRYSTALS-Dilithium" wurden bereits als Standard ausgewählt und schrittweise in Apples iMessage und verschiedene Webbrowser-Kommunikationsprotokolle eingeführt.
 
-Für Ingenieure, die IT-Infrastrukturen verwalten, wird der Einbau von "[Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)-Agility (Krypto-Agilität: das Design zum schnellen Wechseln von Verschlüsselungsmethoden)" von bestehenden RSA- oder elliptischen Kurven zu PQC eine wichtige zukünftige Aufgabe sein.
+Für Ingenieure, die IT-Infrastrukturen verwalten, wird der Einbau von "[Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)-Agility (Krypto-Agilität: das Design zum schnellen Wechseln von Verschlüsselungsmethoden)" von bestehenden [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)- oder elliptischen Kurven zu PQC eine wichtige zukünftige Aufgabe sein.
 
 ---
 

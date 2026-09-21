@@ -321,7 +321,7 @@ sudo usermod -aG docker $USER
 
 在進行 Git 的 SSH 複製或 SSH 連線至遠端伺服器時，在 Windows 側和 WSL 側分別管理不同的 SSH 金鑰是一件非常麻煩的事。為了兼顧安全性與便利性，可以設定將 Windows 側執行的 SSH 代理（或是 1Password 等密碼管理工具）橋接至 WSL 側。
 
-這裡將解說作為最安全且現代的方法：利用 **1Password 的 SSH 代理功能 ** 或 **Windows 的 OpenSSH Authentication Agent** ，並使用 `npiperelay` 或 `socat` 將其轉發至 WSL2 的 UNIX 網域通訊端（Domain Socket）的方法。
+這裡將解說作為最安全且現代的方法：利用 **1Password 的 SSH 代理功能 ** 或 **Windows 的 OpenSSH [Authentication](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/) Agent** ，並使用 `npiperelay` 或 `socat` 將其轉發至 WSL2 的 UNIX 網域通訊端（Domain Socket）的方法。
 
 ### ssh-agent 的通訊端轉發
 

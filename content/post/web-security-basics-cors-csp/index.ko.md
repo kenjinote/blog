@@ -18,13 +18,13 @@ tags:
 # 시작하며
 웹 애플리케이션은 진화를 거듭하여 단순한 문서 뷰어에서 고도의 업무 시스템이나 엔터테인먼트 플랫폼으로 변모했습니다. 이에 따라 웹 애플리케이션이 다루는 데이터는 점점 더 기밀성이 높아져 사이버 공격의 표적이 되기 쉬워졌습니다.
 
-본 기사에서는 웹 보안의 기초인 XSS나 CSRF와 같은 고전적이면서도 현재까지 맹위를 떨치는 취약점부터, 현대 웹 개발에서 필수가 된 CORS, CSP, 그리고 SameSite Cookie와 같은 최신 방어 메커니즘까지 포괄적이고 상세하게 해설합니다. 또한, 이러한 기술들이 어떻게 연계하여 견고한 웹 애플리케이션을 구축하는지 구체적인 코드 예제와 Mermaid 도표를 사용하여 알기 쉽게 설명합니다.
+본 기사에서는 웹 보안의 기초인 [XSS](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/)나 [CSRF](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/)와 같은 고전적이면서도 현재까지 맹위를 떨치는 취약점부터, 현대 웹 개발에서 필수가 된 CORS, CSP, 그리고 SameSite Cookie와 같은 최신 방어 메커니즘까지 포괄적이고 상세하게 해설합니다. 또한, 이러한 기술들이 어떻게 연계하여 견고한 웹 애플리케이션을 구축하는지 구체적인 코드 예제와 Mermaid 도표를 사용하여 알기 쉽게 설명합니다.
 
 ---
 
 # 1. 고전적이면서도 현대에도 위협이 되는 취약점
 
-웹 애플리케이션의 역사 속에서 예전부터 존재하며 현재에도 OWASP Top 10의 단골이 된 것이 **인젝션** 과 **접근 제어의 미비** 와 관련된 취약점입니다. 여기서는 그 대표격인 크로스 사이트 스크립팅(XSS)과 크로스 사이트 요청 위조(CSRF)에 대해 깊이 파고들어 봅니다.
+웹 애플리케이션의 역사 속에서 예전부터 존재하며 현재에도 [OWASP](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/) Top 10의 단골이 된 것이 **인젝션** 과 **접근 제어의 미비** 와 관련된 취약점입니다. 여기서는 그 대표격인 크로스 사이트 스크립팅(XSS)과 크로스 사이트 요청 위조(CSRF)에 대해 깊이 파고들어 봅니다.
 
 ## 1.1 크로스 사이트 스크립팅 (XSS)
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Victim->>Attacker: "세션 Cookie를 전송 (탈취)"
 ```
 
-### 1.1.3 XSS의 구체적인 코드 예제와 방어책
+### 1.1.3 [XSS](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/)의 구체적인 코드 예제와 방어책
 
 **취약한 코드 예제 (Node.js / Express)**
 
@@ -76,7 +76,7 @@ app.get('/search', (req, res) => {
 
 **방어책: 이스케이프 처리**
 
-XSS를 방지하기 위한 기본은 사용자 입력이 HTML로 해석되지 않도록 무해화(이스케이프)하는 것입니다. 특히 `<`, `>`, `&`, `"`, `'` 의 5가지 특수문자를 HTML 엔티티로 변환합니다.
+[XSS](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/)를 방지하기 위한 기본은 사용자 입력이 HTML로 해석되지 않도록 무해화(이스케이프)하는 것입니다. 특히 `<`, `>`, `&`, `"`, `'` 의 5가지 특수문자를 HTML 엔티티로 변환합니다.
 
 ```javascript
 function escapeHTML(str) {
@@ -98,11 +98,11 @@ app.get('/search', (req, res) => {
 });
 ```
 
-현재는 React나 Vue.js와 같은 모던 프런트엔드 프레임워크가 기본적으로 이스케이프 처리를 수행해주기 때문에, 개발자가 의식하지 않아도 어느 정도 XSS 대책이 적용되어 있습니다. 하지만 `dangerouslySetInnerHTML` (React)이나 `v-html` (Vue.js)을 사용할 때는 여전히 주의가 필요합니다.
+현재는 React나 Vue.js와 같은 모던 프런트엔드 프레임워크가 기본적으로 이스케이프 처리를 수행해주기 때문에, 개발자가 의식하지 않아도 어느 정도 [XSS](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/) 대책이 적용되어 있습니다. 하지만 `dangerouslySetInnerHTML` (React)이나 `v-html` (Vue.js)을 사용할 때는 여전히 주의가 필요합니다.
 
 ---
 
-## 1.2 크로스 사이트 요청 위조 (CSRF)
+## 1.2 크로스 사이트 요청 위조 ([CSRF](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/))
 
 크로스 사이트 요청 위조(CSRF)는 사용자가 인증을 마친 웹 사이트에 대해, 공격자가 준비한 함정 사이트를 경유하여 사용자가 의도하지 않은 요청(송금, 비밀번호 변경, 탈퇴 등)을 강제로 전송하게 만드는 공격입니다.
 
@@ -122,7 +122,7 @@ sequenceDiagram
     BankServer-->>AttackerSite: "송금 완료 (정당한 요청으로 오인)"
 ```
 
-브라우저의 사양상, 특정 도메인에 대한 요청에는 해당 도메인과 연결된 Cookie가 자동으로 전송됩니다. CSRF는 이 메커니즘을 악용한 것입니다.
+브라우저의 사양상, 특정 도메인에 대한 요청에는 해당 도메인과 연결된 Cookie가 자동으로 전송됩니다. [CSRF](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/)는 이 메커니즘을 악용한 것입니다.
 
 ### 1.2.2 CSRF의 방어책
 
@@ -143,7 +143,7 @@ CSRF를 방지하기 위해서는 요청이 정말로 사용자가 의도한 조
 
 **2. SameSite Cookie 속성의 활용**
 
-후술할 **SameSite** 속성을 Cookie에 설정함으로써 크로스 사이트로부터의 요청에 Cookie를 부여하지 않도록 제어할 수 있어 CSRF 대책으로 매우 유효합니다.
+후술할 **SameSite** 속성을 Cookie에 설정함으로써 크로스 사이트로부터의 요청에 Cookie를 부여하지 않도록 제어할 수 있어 [CSRF](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/) 대책으로 매우 유효합니다.
 
 ---
 
@@ -221,7 +221,7 @@ $$
 
 ## 2.2 콘텐츠 보안 정책 (CSP)
 
-**콘텐츠 보안 정책 (Content Security Policy: CSP)** 은 XSS나 데이터 인젝션 공격을 근본부터 방지하기 위한 강력한 다계층 방어 메커니즘입니다. 웹 페이지가 로드할 수 있는 리소스(스크립트, 이미지, 스타일시트 등)의 출처(오리진)를 서버 측에서 화이트리스트로서 엄격하게 정의합니다.
+**콘텐츠 보안 정책 (Content Security Policy: CSP)** 은 [XSS](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/)나 데이터 인젝션 공격을 근본부터 방지하기 위한 강력한 다계층 방어 메커니즘입니다. 웹 페이지가 로드할 수 있는 리소스(스크립트, 이미지, 스타일시트 등)의 출처(오리진)를 서버 측에서 화이트리스트로서 엄격하게 정의합니다.
 
 ### 2.2.1 CSP의 기본 구문
 
@@ -235,9 +235,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.c
 - `script-src 'self' https://trusted.cdn.com`: JavaScript 로드를 자신의 출처와 지정한 CDN에서만 허용.
 - `img-src *`: 이미지는 어디에서나 로드 가능.
 
-### 2.2.2 인라인 스크립트 금지로 인한 XSS 근절
+### 2.2.2 인라인 스크립트 금지로 인한 [XSS](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/) 근절
 
-CSP의 가장 큰 특징은 기본적으로 **인라인 스크립트( `<script>...</script>` )의 실행이나 `eval()` 의 사용을 금지** 한다는 것입니다. 이를 통해 공격자가 HTML 내에 악의적인 스크립트를 주입(Stored XSS나 Reflected XSS)하더라도 브라우저는 CSP 위반으로 판단하여 실행을 차단합니다.
+CSP의 가장 큰 특징은 기본적으로 **인라인 스크립트( `<script>...</script>` )의 실행이나 `eval()` 의 사용을 금지** 한다는 것입니다. 이를 통해 공격자가 HTML 내에 악의적인 스크립트를 주입(Stored [XSS](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/)나 Reflected XSS)하더라도 브라우저는 CSP 위반으로 판단하여 실행을 차단합니다.
 
 ```mermaid
 flowchart TD
@@ -283,7 +283,7 @@ Content-Security-Policy: script-src 'sha256-B2yPHKaXnvFWtRChIbabYmUBFZdVfKKXHbWt
 
 ### 2.2.4 CSP 위반 리포트 기능
 
-CSP에는 정책 위반이 발생했을 때 브라우저에서 지정된 엔드포인트로 리포트를 전송하게 하는 기능이 있습니다. 이를 통해 관리자는 알지 못했던 XSS 시도나 설정 오류를 알아차릴 수 있습니다.
+CSP에는 정책 위반이 발생했을 때 브라우저에서 지정된 엔드포인트로 리포트를 전송하게 하는 기능이 있습니다. 이를 통해 관리자는 알지 못했던 [XSS](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/) 시도나 설정 오류를 알아차릴 수 있습니다.
 
 ```http
 Content-Security-Policy: default-src 'self'; report-uri /csp-violation-report-endpoint/
@@ -292,7 +292,7 @@ Content-Security-Policy: default-src 'self'; report-uri /csp-violation-report-en
 
 ---
 
-## 2.3 SameSite Cookie에 의한 CSRF 방어
+## 2.3 SameSite Cookie에 의한 [CSRF](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/) 방어
 
 Cookie는 웹 애플리케이션에서 사용자의 세션 관리에 필수적이지만, 크로스 사이트 요청 시 자동으로 전송되는 사양이 CSRF의 온상이 되었습니다. 이 문제를 해결하는 것이 Cookie의 **SameSite 속성** 입니다.
 
@@ -317,15 +317,15 @@ Set-Cookie: session_id=abc123xyz; SameSite=Strict; Secure; HttpOnly
 
 다음 표는 다른 도메인의 사이트(함정 사이트)에서 은행 사이트로 요청을 전송했을 때의 Cookie의 동작(SameSite=Lax 설정 시)을 보여줍니다.
 
-| 사용자의 조작 (함정 사이트 상) | HTTP 메서드 | 요청의 종류 | Cookie 전송 | CSRF에 대한 영향 |
+| 사용자의 조작 (함정 사이트 상) | HTTP 메서드 | 요청의 종류 | Cookie 전송 | [CSRF](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/)에 대한 영향 |
 | :--- | :--- | :--- | :--- | :--- |
 | 링크 ( `<a>` ) 클릭 | GET | 최상위 내비게이션 | **전송됨** | GET은 상태를 변경하지 않으므로 안전함 |
 | 폼 ( `<form>` ) 전송 | GET | 최상위 내비게이션 | **전송됨** | GET은 상태를 변경하지 않으므로 안전함 |
-| 폼 ( `<form>` ) 전송 | POST | 최상위 내비게이션 | **차단됨** | **CSRF 공격을 방지** |
+| 폼 ( `<form>` ) 전송 | POST | 최상위 내비게이션 | **차단됨** | **[CSRF](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/) 공격을 방지** |
 | 비동기 통신 (fetch, XHR) | GET/POST | 하위 요청 | **차단됨** | **CSRF 공격을 방지** |
 | 이미지 로드 ( `<img>` ) | GET | 하위 요청 | **차단됨** | 안전함 |
 
-이처럼 `SameSite=Lax` 가 설정되어 있는(또는 브라우저의 기본값으로 기능하고 있는) 것만으로 POST 메서드를 이용한 고전적인 CSRF 공격은 무력화됩니다. 하지만 완전한 방어를 위해서는 기존의 CSRF 토큰과의 병용이 권장됩니다.
+이처럼 `SameSite=Lax` 가 설정되어 있는(또는 브라우저의 기본값으로 기능하고 있는) 것만으로 POST 메서드를 이용한 고전적인 [CSRF](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/) 공격은 무력화됩니다. 하지만 완전한 방어를 위해서는 기존의 CSRF 토큰과의 병용이 권장됩니다.
 
 ---
 
@@ -335,7 +335,7 @@ Set-Cookie: session_id=abc123xyz; SameSite=Strict; Secure; HttpOnly
 
 ## 3.1 보안 vs 편의성
 
-예를 들어, Cookie의 SameSite 속성을 `Strict` 로 설정하면 CSRF에 대해 매우 강력하지만, 사용자가 프로모션 이메일의 링크를 클릭하여 자사 사이트에 접근했을 때 미로그인 상태로 취급되어 버려 UX(사용자 경험)를 저해할 가능성이 있습니다. 애플리케이션의 특성에 맞춰 `Lax` 를 선택하고, 중요한 조작에는 원타임 비밀번호나 재인증을 요구하는 등의 균형이 필요합니다.
+예를 들어, Cookie의 SameSite 속성을 `Strict` 로 설정하면 [CSRF](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/)에 대해 매우 강력하지만, 사용자가 프로모션 이메일의 링크를 클릭하여 자사 사이트에 접근했을 때 미로그인 상태로 취급되어 버려 UX(사용자 경험)를 저해할 가능성이 있습니다. 애플리케이션의 특성에 맞춰 `Lax` 를 선택하고, 중요한 조작에는 원타임 비밀번호나 재인증을 요구하는 등의 균형이 필요합니다.
 
 ## 3.2 보안 vs 성능
 
@@ -349,7 +349,7 @@ CSP의 도입은 보안을 극적으로 향상시키지만, 엄격한 정책을 
 
 본 기사에서는 웹 애플리케이션을 위협으로부터 보호하기 위한 기초 지식부터 최신 기술까지 해설했습니다.
 
-*   **XSS와 CSRF**: 고전적이면서도 현재까지 치명적인 피해를 주는 취약점. 적절한 이스케이프와 토큰을 통한 방어가 기본.
+*   **[XSS](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/)와 [CSRF](https://kenji.blog/ko/p/web-application-vulnerability-owasp-top-10/)**: 고전적이면서도 현재까지 치명적인 피해를 주는 취약점. 적절한 이스케이프와 토큰을 통한 방어가 기본.
 *   **CORS**: 복잡해지는 현대 웹 아키텍처에서 안전한 출처 간 통신을 실현하기 위한 메커니즘.
 *   **CSP**: 인라인 스크립트의 배제 등을 통해 XSS 등의 인젝션 공격을 브라우저 수준에서 차단하는 강력한 정책.
 *   **SameSite Cookie**: CSRF에 대한 브라우저 표준의 방벽. 서드파티 Cookie 폐지를 향한 움직임 속에서 그 중요성이 점점 커지고 있다.

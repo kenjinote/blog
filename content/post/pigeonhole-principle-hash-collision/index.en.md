@@ -41,9 +41,9 @@ $$
 
 This property is the exact mathematical formula that explains the fundamental cause of **"Hash Collisions"** in information science, which will be discussed later.
 
-## 2. Hash Functions and the Mechanism of Hash Collisions
+## 2. [Hash Function](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s and the Mechanism of Hash Collisions
 
-### What is a [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic Hash Function?
+### What is a [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)?
 
 A **Hash Function** is a function that takes input data of arbitrary length (messages, files, passwords, etc.) and converts it into output data of a fixed length (hash value, digest). Representative cryptographic hash functions include SHA-256 and SHA-3, which are widely used today.
 

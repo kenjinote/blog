@@ -168,7 +168,7 @@ IBM在致力于将错误率降至最低的同时，也专注于处理器的规�
 ### Google的方法：提升逻辑量子比特的质量
 Google的战略侧重于将单个逻辑量子比特的错误率降至极限（例如降至 $10^{-6}$），而不是急剧增加物理量子比特的数量。在此基础上，确立在模块之间传输量子态的技术（Quantum Interconnects），旨在打造能让数千至数万个物理量子比特并行运行的大规模系统。
 
-要以容错的方式执行魔法状态蒸馏（Magic [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) Distillation）等非克利福德门，相关的协议实现也将是未来重大的技术障碍。据说为了执行实用的Shor算法以破解2048位的RSA加密，需要数千个错误率在 $10^{-8}$ 以下的逻辑量子比特，换算成物理量子比特则需要数百万至数千万个，道路依然漫长。
+要以容错的方式执行魔法状态蒸馏（Magic [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) Distillation）等非克利福德门，相关的协议实现也将是未来重大的技术障碍。据说为了执行实用的Shor算法以破解2048位的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密，需要数千个错误率在 $10^{-8}$ 以下的逻辑量子比特，换算成物理量子比特则需要数百万至数千万个，道路依然漫长。
 
 ---
 

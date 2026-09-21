@@ -26,7 +26,7 @@ tags: ["C++", "Win32", "Windows API", "RAII"]
 
 ## 2. 原始Win32 API的危險性：資源外洩與錯誤處理的陷阱
 
-首先，讓我們來看看以傳統C風格呼叫Win32 API的一般程式碼。乍看之下似乎沒有問題，但從現代C++的觀點來看，卻抱有致命的脆弱性。
+首先，讓我們來看看以傳統C風格呼叫Win32 API的一般程式碼。乍看之下似乎沒有問題，但從現代C++的觀點來看，卻抱有致命的[脆弱性](https://kenji.blog/zh-tw/p/web-application-vulnerability-owasp-top-10/)。
 
 ```cpp
 #include <windows.h>

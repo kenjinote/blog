@@ -317,11 +317,11 @@ sudo usermod -aG docker $USER
 
 ---
 
-## 8. SSHキーの統合：WindowsとWSLでのシームレスな認証
+## 8. SSHキーの統合：WindowsとWSLでのシームレスな[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)
 
 GitのSSHクローンやリモートサーバーへのSSH接続を行う際、Windows側とWSL側で別々のSSHキーを管理するのは非常に手間です。セキュリティと利便性を両立させるため、Windows側で稼働しているSSHエージェント（または1Passwordなどのパスワードマネージャー）をWSL側にブリッジする設定を行います。
 
-ここでは、最もセキュアでモダンなアプローチとして、 **1PasswordのSSHエージェント機能** または **WindowsのOpenSSH Authentication Agent** を利用し、`npiperelay` や `socat` を使ってWSL2のUNIXドメインソケットに転送する方法を解説します。
+ここでは、最もセキュアでモダンなアプローチとして、 **1PasswordのSSHエージェント機能** または **WindowsのOpenSSH [Authentication](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/) Agent** を利用し、`npiperelay` や `socat` を使ってWSL2のUNIXドメインソケットに転送する方法を解説します。
 
 ### ssh-agentのソケットフォワーディング
 
@@ -345,7 +345,7 @@ fi
 ```
 ※事前にWindows側に `npiperelay.exe` のインストールとパスを通す作業が必要です。
 
-この設定が完了すると、WSLのターミナルから `ssh-add -l` を実行した際に、1PasswordやWindows側で登録したSSHキーの公開鍵一覧が表示されるようになります。これにより、秘密鍵のファイルをWSL内にコピーすることなく、安全に認証をパスできます。
+この設定が完了すると、WSLのターミナルから `ssh-add -l` を実行した際に、1PasswordやWindows側で登録したSSHキーの[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)一覧が表示されるようになります。これにより、秘密鍵のファイルをWSL内にコピーすることなく、安全に[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)をパスできます。
 
 ---
 

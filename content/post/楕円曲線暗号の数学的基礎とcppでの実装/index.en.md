@@ -17,13 +17,13 @@ In this article, we will thoroughly explain how elliptic curve cryptography work
 
 ---
 
-## 1. Why Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy? (Comparison with RSA)
+## 1. Why Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy? (Comparison with [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/))
 
 For a long time, **RSA cryptography** was synonymous with public-key cryptography. The security of RSA relies on the "difficulty of factoring large composite numbers." However, as the computational power of computers has increased, it has become necessary to continuously lengthen the RSA key size (number of modulus bits) to maintain security. Currently, a key size of at least 2048 bits is recommended, and 3072 or 4096 bits if greater security is desired.
 
 In contrast, Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC) bases its security on a different mathematical difficulty: the **"Elliptic Curve Discrete Logarithm Problem (ECDLP)"**. To this day, no efficient algorithms (such as sub-exponential time algorithms) for solving the ECDLP have been discovered, and even the most efficient known attack methods require exponential time.
 
-Because of this property, ECC has the decisive advantage of being able to **achieve security strength equivalent to RSA with significantly shorter key lengths**.
+Because of this property, ECC has the decisive advantage of being able to **achieve security strength equivalent to [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) with significantly shorter key lengths**.
 
 | Security Strength (bits) | RSA Key Length (bits) | ECC Key Length (bits) | Key Length Ratio |
 | :---: | :---: | :---: | :---: |
@@ -436,7 +436,7 @@ At first glance, Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-
 
 In this article, we covered the following key points:
 
-1. **Superiority over RSA**: Provides strong security with very short key lengths, making it ideal for the modern mobile and IoT era.
+1. **Superiority over [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)**: Provides strong security with very short key lengths, making it ideal for the modern mobile and IoT era.
 2. **Basics of Group Theory and Finite Fields**: The mathematical structure that forms the foundation of ECC.
 3. **Addition and Doubling Formulas**: Implementation methods of algebraic group operations using Weierstrass equations.
 4. **Threat of Side-Channel Attacks**: Conditional branches dependent on private key bits create fatal vulnerabilities.
@@ -444,7 +444,7 @@ In this article, we covered the following key points:
 
 Writing your own cryptographic library to run in a production environment is highly discouraged ("Don't roll your own crypto") because the security risks are extremely high. However, deeply understanding the underlying algorithms and mathematical background should serve as an invaluable and powerful weapon for engineers designing and operating more secure and performant systems.
 
-In the next article, we would like to dig even deeper into the mechanics of the **ECDSA (Elliptic Curve Digital Signature Algorithm)**, which is a digital signature algorithm using these elliptic curves, as well as **Schnorr signatures**, which are adopted in [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/).
+In the next article, we would like to dig even deeper into the mechanics of the **ECDSA (Elliptic Curve [Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Algorithm)**, which is a digital signature algorithm using these elliptic curves, as well as **Schnorr signatures**, which are adopted in [Bitcoin](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/).
 
 
 

@@ -113,7 +113,7 @@ def is_mersenne_prime(p):
     return s == 0
 ```
 
-Os primos gigantescos descobertos desempenham um papel crítico no apoio à sociedade da informação, servindo como base para a avaliação de segurança de sistemas modernos de criptografia de chave pública como o RSA, e algoritmos de geração de números aleatórios (como o [Mersenne](https://kenji.blog/pt/p/mersenne/) Twister).
+Os primos gigantescos descobertos desempenham um papel crítico no apoio à sociedade da informação, servindo como base para a avaliação de segurança de sistemas modernos de criptografia de chave pública como o [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), e algoritmos de geração de números aleatórios (como o [Mersenne](https://kenji.blog/pt/p/mersenne/) Twister).
 
 ## Contribuições para acústica e teoria musical: Leis de [Mersenne](https://kenji.blog/pt/p/mersenne/)
 

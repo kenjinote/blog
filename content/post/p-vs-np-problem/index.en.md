@@ -283,10 +283,10 @@ When the number of cities $N$ exceeds 20, the exact solution (brute-force) takes
 
 Currently, cryptography systems around the world (like SSL/TLS used in online shopping, or blockchains like Bitcoin) utilize the asymmetry that **"solving it takes an immense amount of time, but verifying it can be done instantly."**
 
-Integer factorization, the foundation of RSA encryption, is one of them.
+Integer factorization, the foundation of [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) encryption, is one of them.
 Suppose someone proved $P = NP$ and constructed a magic algorithm (constructive proof) that solves NP problems in polynomial time. That would trigger a **paradigm shift in human society** such as the following:
 
-1. **Collapse of Cryptography**: Modern public-key cryptography systems like RSA and elliptic-curve cryptography would all be instantly broken, and digital security would completely collapse.
+1. **Collapse of [Cryptography](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)**: Modern public-key cryptography systems like RSA and elliptic-curve cryptography would all be instantly broken, and digital security would completely collapse.
 2. **Ultimate Evolution of AI and Machine Learning**: Optimal weighting of neural networks and optimal strategies for reinforcement learning could be calculated instantly.
 3. **Leaps in Drug Discovery and Life Sciences**: Protein folding structures (which also reduce to NP-Hard problems) could be calculated instantly, and silver bullets for incurable diseases would be developed one after another by AI.
 4. **Perfect Optimization of Logistics and Production**: The ultimate supply chain with all waste eliminated would be constructed, resolving the majority of energy problems.

@@ -12,7 +12,7 @@ description: 'Se explica detalladamente cómo las computadoras cuánticas podrí
 
 # 1. Introducción: La crisis de la criptografía provocada por las computadoras cuánticas
 
-Gran parte de la seguridad en la sociedad de Internet moderna depende de la **criptografía de clave pública** (especialmente RSA). Cuando enviamos la información de nuestra tarjeta de crédito en compras en línea o intercambiamos datos altamente confidenciales, el contenido de esa comunicación está fuertemente protegido por la criptografía RSA.
+Gran parte de la seguridad en la sociedad de Internet moderna depende de la **criptografía de clave pública** (especialmente [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)). Cuando enviamos la información de nuestra tarjeta de crédito en compras en línea o intercambiamos datos altamente confidenciales, el contenido de esa comunicación está fuertemente protegido por la criptografía RSA.
 
 La base de la seguridad de la criptografía RSA radica en el hecho matemático de que "**la factorización de números enteros enormes es extremadamente difícil para las computadoras clásicas (las PC y supercomputadoras que usamos normalmente)**". Sin embargo, el "**[Algoritmo de Shor](https://kenji.blog/es/p/quantum-computing-shors-algorithm/) ([Shor's Algorithm](https://kenji.blog/es/p/quantum-computing-shors-algorithm/))**", publicado por Peter Shor en 1994, socavó esta premisa desde sus cimientos. Se demostró matemáticamente que, si se ejecuta el algoritmo de Shor en una computadora cuántica a gran escala, la factorización de números primos, que le tomaría a una computadora clásica más tiempo que la edad del universo, puede resolverse en solo unos minutos a unas horas.
 
@@ -322,7 +322,7 @@ Impresionantemente, hemos tenido éxito en la factorización de $15 = 3 \times 5
 
 # 6. Desafíos para la implementación práctica y los límites de la era NISQ
 
-Si bien fue fácil factorizar $N=15$ en un simulador, factorizar RSA-2048 (un número decimal de 617 dígitos) utilizado en el mundo real presenta numerosos obstáculos para las computadoras cuánticas actuales.
+Si bien fue fácil factorizar $N=15$ en un simulador, factorizar [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)-2048 (un número decimal de 617 dígitos) utilizado en el mundo real presenta numerosos obstáculos para las computadoras cuánticas actuales.
 
 La época en la que vivimos actualmente se llama la **era NISQ (Noisy Intermediate-Scale Quantum: Cuántica de Escala Intermedia Ruidosa)**. Los qubits son extremadamente vulnerables al ruido ambiental y sufren "decoherencia" durante los cálculos, lo que destruye su estado.
 
@@ -341,7 +341,7 @@ En preparación para la llegada de ese "Día Q (Q-Day)" (el día en que las comp
 
 La PQC se basa en nuevos problemas matemáticos (problemas basados en retículos, polinomios multivariantes, funciones hash, etc.) que se consideran matemáticamente difíciles de resolver de manera eficiente incluso utilizando el algoritmo de Shor (o el algoritmo de Grover). Algoritmos como "CRYSTALS-Kyber" y "CRYSTALS-Dilithium" ya han sido seleccionados como estándares y su implementación en protocolos de comunicación para navegadores web e iMessage de Apple está comenzando gradualmente.
 
-Para los ingenieros que gestionan la infraestructura de TI, incorporar "agilidad criptográfica (crypto-agility: la capacidad del diseño para cambiar rápidamente los esquemas criptográficos)" en sus sistemas para hacer la transición desde la actual RSA y la criptografía de curva elíptica a PQC será una misión importante en el futuro.
+Para los ingenieros que gestionan la infraestructura de TI, incorporar "agilidad criptográfica (crypto-agility: la capacidad del diseño para cambiar rápidamente los esquemas criptográficos)" en sus sistemas para hacer la transición desde la actual [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) y la criptografía de curva elíptica a PQC será una misión importante en el futuro.
 
 ---
 

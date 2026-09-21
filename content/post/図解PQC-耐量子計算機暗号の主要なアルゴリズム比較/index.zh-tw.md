@@ -12,7 +12,7 @@ description: '針對量子電腦崛起帶來的密碼學危機威脅，以及作
 
 ## 1. 前言：量子電腦帶來的「密碼危機」
 
-在現代的網際網路社會中，為了保護通訊的機密性與資料的完整性，公開金鑰密碼技術是不可或缺的基礎設施。目前廣泛使用的RSA密碼與橢圓曲線密碼（ECC），分別依賴於「大質數整數分解的困難度」與「橢圓曲線上的離散對數問題的困難度」等數學壁壘來確保安全性。在古典電腦（包含超級電腦在內，我們現在正在使用的電腦）上，要解開這些數學問題所需的時間被證明比宇宙的年齡還要長，這一直以來都是安全性的依據。
+在現代的網際網路社會中，為了保護通訊的機密性與資料的完整性，公開金鑰密碼技術是不可或缺的基礎設施。目前廣泛使用的[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)密碼與橢圓曲線密碼（ECC），分別依賴於「大質數整數分解的困難度」與「橢圓曲線上的離散對數問題的困難度」等數學壁壘來確保安全性。在古典電腦（包含超級電腦在內，我們現在正在使用的電腦）上，要解開這些數學問題所需的時間被證明比宇宙的年齡還要長，這一直以來都是安全性的依據。
 
 然而，這個堅固的前提正因為 **量子電腦** 的理論與實用化進展而面臨徹底被推翻的危機。1994年，密碼學家彼得·秀爾（Peter Shor）發表的「 **Shor演算法（秀爾演算法）** 」在理論上證明，只要在具備足夠效能的容錯通用量子電腦（CRQC: [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer）上執行，就能在「多項式時間」內破解整數分解問題與離散對數問題。這意味著目前使用的公開金鑰密碼將全部失效。
 
@@ -40,7 +40,7 @@ graph TD
 
 標準化的對象主要分為以下兩個類別：
 1. **公開金鑰密碼 / 金鑰封裝機制 (KEM: Key Encapsulation Mechanism)** ：在TLS連線等情境中，為了加密通訊路徑，安全地共享（配送）共同金鑰的機制。
-2. **數位簽章 (Digital Signatures)** ：在軟體更新或電子憑證中，證明資料未被竄改以及發送者未被冒用（真實性）的機制。
+2. **數位簽章 ([Digital Signature](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)s)** ：在軟體更新或電子憑證中，證明資料未被竄改以及發送者未被冒用（真實性）的機制。
 
 經歷了約6年非常激烈的評估、分析與密碼破解競爭（Round 1～Round 3）後，更針對部分演算法進行了Round 4的追加評估。其結果是，在2024年，以下演算法正式成為聯邦資訊處理標準（FIPS），並確立為未來的世界標準。
 
@@ -124,7 +124,7 @@ Module-LWE最大的優點在於，可以保持多項式的次數 $n$ 固定（�
 
 ### 5.1. KEM (Key Encapsulation Mechanism) 的架構
 
-在PQC時代，標準將不再是像RSA那樣「由客戶端建立共同金鑰並用伺服器的公開金鑰加密傳送」的直接作法，而是採用KEM這種封裝框架。
+在PQC時代，標準將不再是像[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)那樣「由客戶端建立共同金鑰並用伺服器的公開金鑰加密傳送」的直接作法，而是採用KEM這種封裝框架。
 
 ```mermaid
 sequenceDiagram
@@ -172,7 +172,7 @@ CPAPKE核心的加密與解密機制如下：
    - 剩下的部分為 $\lfloor q/2 \rceil \cdot m + (\vec{e}^T\vec{r} + e_2 - \vec{s}^T\vec{e_1})$ 。
    - 括號內的項目是「微小誤差之間的乘積與和」，所以整體來說也只是一個夠小的值（雜訊）。因此，只要透過閾值判定各係數是接近 $0$ 還是接近 $q/2$ ，就能完美、毫無錯誤地還原出原始訊息 $m$ 的位元（0或1）。
 
-Kyber最大的優勢在於其壓倒性的 **處理速度** 與 **適中的金鑰尺寸** 。以Kyber768為例，公開金鑰尺寸為1,184位元組，密文尺寸為1,088位元組，雖然與RSA-3072（金鑰尺寸約384位元組）等相比來得大，但可以不用切割封包，直接容納在現代網際網路通訊的MTU（Maximum Transmission Unit）內，對網路的延遲幾乎沒有不良影響。
+Kyber最大的優勢在於其壓倒性的 **處理速度** 與 **適中的金鑰尺寸** 。以Kyber768為例，公開金鑰尺寸為1,184位元組，密文尺寸為1,088位元組，雖然與[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)-3072（金鑰尺寸約384位元組）等相比來得大，但可以不用切割封包，直接容納在現代網際網路通訊的MTU（Maximum Transmission Unit）內，對網路的延遲幾乎沒有不良影響。
 
 ---
 
@@ -255,7 +255,7 @@ SPHINCS+唯一也是最大的弱點在於， **簽章尺寸非常巨大** 。依
 
 在NIST的標準化流程中，目前作為Round 4最終候選者持續接受評估的重要方法，是 **編碼基密碼** 的 **Classic McEliece** 。
 
-這個由Robert McEliece於1978年提出的演算法，在公開金鑰密碼的歷史中與RSA並列為最古老的演算法之一。它利用了被稱為「Goppa碼（戈帕碼）」的代數幾何碼，刻意在訊息中加入錯誤（雜訊向量）進行加密，只有擁有Goppa碼同位檢查矩陣作為秘密金鑰的人，才能利用強大的錯誤更正能力去除錯誤，解密出原始訊息，這是基於「 **症狀解碼問題 (Syndrome Decoding Problem)** 」。
+這個由Robert McEliece於1978年提出的演算法，在公開金鑰密碼的歷史中與[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)並列為最古老的演算法之一。它利用了被稱為「Goppa碼（戈帕碼）」的代數幾何碼，刻意在訊息中加入錯誤（雜訊向量）進行加密，只有擁有Goppa碼同位檢查矩陣作為秘密金鑰的人，才能利用強大的錯誤更正能力去除錯誤，解密出原始訊息，這是基於「 **症狀解碼問題 (Syndrome Decoding Problem)** 」。
 
 $$ \vec{c} = \vec{m} G + \vec{e} $$
 （$G$ 為公開金鑰，即打亂後的生成矩陣，$\vec{e}$ 為權重為 $t$ 的錯誤向量）
@@ -326,7 +326,7 @@ NIST完成 FIPS 203 (ML-KEM)、FIPS 204 (ML-DSA)、FIPS 205 (SLH-DSA) 的標準�
 *參考文獻 (References):*
 * *NIST Post-Quantum [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy Standardization Program*
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
-* *FIPS 204: Module-Lattice-Based Digital Signature Standard*
+* *FIPS 204: Module-Lattice-Based [Digital Signature](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
 
 

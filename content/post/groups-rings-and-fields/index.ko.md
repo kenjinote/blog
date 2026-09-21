@@ -117,7 +117,7 @@ flowchart TD
 
 ## 9. 응용
 
-암호 이론 (RSA), 물리학과 군론, 오류 정정 부호 등.
+암호 이론 ([RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)), 물리학과 군론, 오류 정정 부호 등.
 
 ---
 

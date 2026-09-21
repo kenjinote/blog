@@ -116,7 +116,7 @@ Bagaimana jika pesan yang dikirim dilengkapi dengan "tanda tangan digital yang t
 
 Dalam model ini, perintah yang dikeluarkan oleh komandan tidak dapat diubah di tengah jalan. Hasilnya, tidak peduli berapa banyak pengkhianat yang ada, telah dibuktikan bahwa kesepakatan dapat dicapai jika terdapat minimal $n \ge m + 2$ jenderal (artinya minimal 3 orang secara keseluruhan) untuk $m$ pengkhianat. Pada sistem modern, tanda tangan digital menggunakan kriptografi kunci publik memainkan peran ini.
 
-## 4. Blockchain dan Byzantine Fault Tolerance (BFT)
+## 4. [Blockchain](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) dan Byzantine Fault Tolerance (BFT)
 
 Ketahanan terhadap [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) disebut **Byzantine Fault Tolerance** (BFT). Ini adalah metrik penting bagi sistem terdistribusi untuk dapat bertahan dari kegagalan dan serangan berbahaya, serta terus beroperasi secara normal.
 
@@ -149,11 +149,11 @@ Dengan melalui proses ini, meskipun terdapat $m$ node yang gagal atau jahat di d
 
 ### Konsensus Nakamoto (Proof of Work)
 
-Pencipta [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/), Satoshi Nakamoto, menangani masalah ini dengan pendekatan yang sama sekali baru. Itulah **Konsensus Nakamoto**, yang menggabungkan **Proof of Work** (PoW) dengan aturan yang menganggap chain terpanjang sebagai yang valid.
+Pencipta [Bitcoin](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/), Satoshi Nakamoto, menangani masalah ini dengan pendekatan yang sama sekali baru. Itulah **Konsensus Nakamoto**, yang menggabungkan **Proof of Work** ([PoW](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/)) dengan aturan yang menganggap chain terpanjang sebagai yang valid.
 
 Dalam Konsensus Nakamoto, hanya mereka yang memenangkan kompetisi perhitungan matematis (penambangan/mining) yang mendapatkan hak untuk mengusulkan blok. Untuk membuat jaringan mengakui informasi palsu, seseorang harus menguasai lebih dari mayoritas (51% atau lebih) dari kekuatan komputasi seluruh jaringan, yang mana ini adalah desain yang sangat sulit diwujudkan di dunia nyata. Dengan ini, dinilai bahwa ia telah menyelesaikan [Masalah Jenderal Bizantium](https://kenji.blog/id/p/byzantine-generals-problem/) secara probabilistik di dalam jaringan terbuka di mana jumlah peserta tidak ditentukan.
 
-### Aplikasi BFT dalam PoS (Proof of Stake)
+### Aplikasi BFT dalam [PoS](https://kenji.blog/id/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Stake)
 
 Konsensus Nakamoto memang revolusioner, namun memiliki tantangan karena mengonsumsi daya listrik yang sangat besar untuk penambangan. Untuk menyelesaikan ini, munculah **Proof of Stake** (PoS), yang memberikan hak usulan blok berdasarkan jumlah aset kripto yang dipertaruhkan (stake) oleh node.
 

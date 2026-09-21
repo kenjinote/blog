@@ -310,7 +310,7 @@ jobs:
       node-version: '20'
 ```
 
-## Vinculación segura a la nube usando OIDC (OpenID Connect)
+## Vinculación segura a la nube usando [OIDC](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/) ([OpenID Connect](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/))
 
 Al desplegar en proveedores de la nube como AWS, GCP, Azure, etc., guardar credenciales a largo plazo (como claves secretas) en GitHub conlleva riesgos de seguridad.
 
@@ -364,6 +364,6 @@ En este artículo, explicamos detalladamente desde los conceptos básicos de CI/
 *   **Integrar frecuentemente:** Fusione pequeños cambios con frecuencia para detectar errores tempranamente.
 *   **Aprovechar la caché:** Reduzca el tiempo de ejecución de los flujos de trabajo y mejore la experiencia de desarrollo.
 *   **Automatizar la calidad y seguridad:** Integre Lint, pruebas y escaneos de vulnerabilidades en su pipeline.
-*   **Usar OIDC:** Para la vinculación con proveedores de la nube, use tokens temporales a través de OIDC en lugar de claves secretas.
+*   **Usar [OIDC](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/):** Para la vinculación con proveedores de la nube, use tokens temporales a través de OIDC en lugar de claves secretas.
 
 GitHub Actions es una herramienta muy flexible y poderosa. Le recomendamos comenzar con pequeños pasos, como automatizar el Lint, y expandir gradualmente el pipeline a medida que crece el proyecto. ¡Use el poder de la automatización para lograr un desarrollo de software más rápido y de mayor calidad!

@@ -12,7 +12,7 @@ description: 'Explication du fonctionnement de la mathématique la plus puissant
 # Qu'est-ce que le « Crible du corps de nombres généralisé (GNFS) », la mathématique la plus puissante de l'humanité qui brise le chiffrement d'Internet ?
 
 L'Internet que nous utilisons tous les jours. Les messages sur LINE, YouTube, les achats sur Amazon, toutes les communications sont protégées par le « chiffrement ».
-Actuellement, le chiffrement le plus utilisé dans le monde est le « Chiffrement RSA ».
+Actuellement, le chiffrement le plus utilisé dans le monde est le « Chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) ».
 
 La clé de la défense du chiffrement RSA est très simple. Elle utilise la propriété mathématique selon laquelle ** « la factorisation en nombres premiers de nombres gigantesques ne peut être résolue, même par des ordinateurs » ** .
 Par exemple, pour « 15 », nous savons tout de suite que c'est « 3 × 5 », mais dès que cela devient un « nombre à 270 chiffres », même si tous les superordinateurs du monde étaient combinés, cela prendrait des centaines de millions d'années à résoudre.
@@ -133,7 +133,7 @@ Une fois la combinaison trouvée :
 Enfin, remplacez le $x$ dans la formule littérale $Y(x)$ par $m$, en revenant au monde réel et en les rejoignant.
 Alors, comme par magie mathématique, la condition où ** « les restes de $X^2$ et $Y^2$ sont les mêmes » ** est strictement remplie !
 
-Le reste, comme au Chapitre 1, consiste simplement à calculer le plus grand commun diviseur de $X - Y$ et $N$, et le chiffrement RSA impénétrable s'effondrera, révélant les nombres premiers secrets.
+Le reste, comme au Chapitre 1, consiste simplement à calculer le plus grand commun diviseur de $X - Y$ et $N$, et le chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) impénétrable s'effondrera, révélant les nombres premiers secrets.
 
 ---
 

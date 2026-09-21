@@ -111,7 +111,7 @@ O verdadeiro valor de um computador quântico é demonstrado apenas para **"prob
 ### Especialidades dos Computadores Quânticos (Aplicativos Matadores)
 
 #### 1. Fatoração de Primos e Decodificação de Criptografia ([Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/))
-Atualmente, métodos como a criptografia RSA, que protegem comunicações seguras pela Internet (como transações com cartões de crédito), baseiam-se na premissa de que "é virtualmente impossível (leva uma quantidade enorme de tempo) para um computador clássico fatorar números inteiros massivos em números primos".
+Atualmente, métodos como a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), que protegem comunicações seguras pela Internet (como transações com cartões de crédito), baseiam-se na premissa de que "é virtualmente impossível (leva uma quantidade enorme de tempo) para um computador clássico fatorar números inteiros massivos em números primos".
 No entanto, ao usar o "Algoritmo de Shor" inventado pelo matemático Peter Shor em 1994, os computadores quânticos podem inteligentemente usar a interferência para resolver esse problema a uma velocidade formidável (tempo polinomial). Em virtude disso, existe o risco do colapso futuro dos sistemas criptográficos vigentes, forçando governos e bancos centrais em todo o mundo a se apressarem na transição para a "Criptografia Pós-Quântica" (Post-Quantum [Crypto](https://kenji.blog/pt/p/cryptocurrency-and-bitcoin/)graphy).
 
 #### 2. Cálculo de Química Quântica, Desenvolvimento de Novos Materiais e Remédios

@@ -96,12 +96,12 @@ graph LR
 
 這裡我們透過兩個具體範例，來看看將數學公式轉換為程式碼的過程。
 
-### 4.1 範例 1：RSA 加密的數學原理與 Python 實作
+### 4.1 範例 1：[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密的數學原理與 Python 實作
 
 作為公開金鑰加密技術代表的 RSA 加密，是初等整數論（同餘式、歐拉定理、擴展[歐幾里得](https://kenji.blog/zh-tw/p/euclid/)演算法）的完美應用。
 
 #### 數學背景
-RSA 加密的金鑰產生及加密與解密過程可由以下數學公式表示：
+[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密的金鑰產生及加密與解密過程可由以下數學公式表示：
 
 1. **金鑰產生** ：
    選擇巨大的質數 $p, q$，令 $n = pq$。

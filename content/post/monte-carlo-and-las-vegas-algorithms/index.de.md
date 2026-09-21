@@ -54,7 +54,7 @@ Dies ist kein Algorithmus zur Ermittlung der korrekten Lösung (der absolut exak
 
 #### Miller-Rabin-Primzahltest
 
-Bei der Generierung von Schlüsseln in der RSA-Kryptografie ist es notwendig festzustellen, ob eine riesige Zahl $n$ (mit hunderten von Stellen) eine Primzahl ist. Die deterministische Überprüfung würde eine astronomische Zeit in Anspruch nehmen.
+Bei der Generierung von Schlüsseln in der [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptografie ist es notwendig festzustellen, ob eine riesige Zahl $n$ (mit hunderten von Stellen) eine Primzahl ist. Die deterministische Überprüfung würde eine astronomische Zeit in Anspruch nehmen.
 Daher wird der **Miller-Rabin-Primzahltest** verwendet.
 
 Dieser Algorithmus wählt zufällig eine Basis $a$ und führt Berechnungen durch.

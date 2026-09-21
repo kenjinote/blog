@@ -151,7 +151,7 @@ Fusionó la teoría de grupos y la teoría de cuerpos para aclarar "cuándo las 
 
 ## 9. Aplicaciones: ¿Por qué abstraer?
 
-1. Criptografía y Cuerpos Finitos (RSA).
+1. Criptografía y Cuerpos Finitos ([RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)).
 2. Física y Teoría de Grupos (simetrías de partículas).
 3. Códigos de corrección de errores (DVD, QR).
 4. Geometría Algebraica (Teorema de [Fermat](https://kenji.blog/es/p/fermat/)).

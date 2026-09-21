@@ -196,6 +196,6 @@ Hello from C++ :rocket:
 
 * **Прикрепление файлов**
 * **Интерфейс с кнопками**
-* **Гибкая работа с API через Slack App + OAuth2**
+* **Гибкая работа с API через Slack App + [OAuth](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/)2**
 
 Мы также можем представить более продвинутую интеграцию со Slack, подобную этой!

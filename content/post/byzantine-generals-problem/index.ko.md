@@ -149,13 +149,13 @@ end
 
 ### 나카모토 컨센서스 (Proof of Work)
 
-[비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 창시자인 사토시 나카모토는 전혀 새로운 접근법으로 이 문제에 대처했습니다. 그것이 ** Proof of Work ** (PoW)와 가장 긴 체인을 정답으로 하는 규칙을 조합한 ** 나카모토 컨센서스 ** 입니다.
+[비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 창시자인 사토시 나카모토는 전혀 새로운 접근법으로 이 문제에 대처했습니다. 그것이 ** Proof of Work ** ([PoW](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/))와 가장 긴 체인을 정답으로 하는 규칙을 조합한 ** 나카모토 컨센서스 ** 입니다.
 
 나카모토 컨센서스에서는 수학적인 계산 경쟁(마이닝)에서 이긴 자만이 블록을 제안할 수 있는 권리를 얻습니다. 거짓 정보를 네트워크가 인식하게 하려면 네트워크 전체의 계산력 과반수(51% 이상)를 지배해야 하며, 현실적으로는 극히 어려운 설계로 되어 있습니다. 이를 통해 불특정 다수가 참가하는 오픈된 네트워크에서 확률적으로 [비잔틴 장군 문제](https://kenji.blog/ko/p/byzantine-generals-problem/)를 해결했다고 평가받고 있습니다.
 
-### PoS (Proof of Stake)에서의 BFT 응용
+### [PoS](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Stake)에서의 BFT 응용
 
-나카모토 컨센서스는 획기적이었지만 마이닝에 막대한 전력을 소비한다는 과제가 있었습니다. 이를 해결하기 위해 등장한 것이 노드가 보유한 [암호화폐](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 양(스테이크)에 따라 블록 제안권을 주는 ** Proof of Stake ** (PoS)입니다.
+나카모토 컨센서스는 획기적이었지만 마이닝에 막대한 전력을 소비한다는 과제가 있었습니다. 이를 해결하기 위해 등장한 것이 노드가 보유한 [암호화폐](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 양(스테이크)에 따라 블록 제안권을 주는 ** Proof of Stake ** ([PoS](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/))입니다.
 
 이더리움(Ethereum)의 캐스퍼나 코스모스(Cosmos)의 텐더민트 등 최신 PoS 알고리즘의 대부분은 이 BFT를 기반으로 설계되어 있습니다. 예를 들어 텐더민트는 앞서 언급한 PBFT의 사고방식을 더욱 세련되게 다듬어 스테이크 양에 의한 가중치를 도입한 '검증자(Validator)' 네트워크에서 합의를 형성합니다. 검증자의 2/3 이상의 서명이 모이지 않으면 다음 블록이 생성되지 않는 구조로 되어 있어, 바로 $n \ge 3m + 1$ 조건(배신자가 1/3 미만)을 현대의 퍼블릭 체인에서 실현한 좋은 예라고 할 수 있습니다.
 

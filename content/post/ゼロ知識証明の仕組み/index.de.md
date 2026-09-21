@@ -14,7 +14,7 @@ description: 'Von den mathematischen Grundlagen der Zero-Knowledge-Proofs (ZKP) 
 
 In der heutigen digitalen Gesellschaft sind Datenschutz und Skalierbarkeit zwei der wichtigsten Herausforderungen. Angesichts des steigenden Risikos von Datenlecks und dem unbefugten Missbrauch persönlicher Informationen besteht ein großer Bedarf an einer Technologie, mit der man "beweisen kann, dass man bestimmte Informationen besitzt, ohne diese Informationen dem Gegenüber preiszugeben". Dies wird durch **Zero-Knowledge-Proofs (ZKP)** (wörtlich: Null-Wissen-Beweise) ermöglicht.
 
-Zero-Knowledge-Proofs sind ein kryptographisches Konzept, das in den 1980er Jahren erstmals von Shafi Goldwasser, Silvio Micali und Charles Rackoff vorgeschlagen wurde, aber lange Zeit auf theoretische Forschung beschränkt blieb. Mit dem Aufstieg der Blockchain-Technologie und Web3 hat sich die Situation jedoch schlagartig geändert. ZKP ist als "Zauberstab" ins Rampenlicht gerückt, der gleichzeitig das Skalierbarkeitsproblem (die Grenzen der Verarbeitungskapazität) und das Datenschutzproblem (die Tatsache, dass alle Transaktionen öffentlich sind), mit denen öffentliche Blockchains wie Ethereum konfrontiert sind, löst.
+Zero-Knowledge-Proofs sind ein kryptographisches Konzept, das in den 1980er Jahren erstmals von Shafi Goldwasser, Silvio Micali und Charles Rackoff vorgeschlagen wurde, aber lange Zeit auf theoretische Forschung beschränkt blieb. Mit dem Aufstieg der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)-Technologie und Web3 hat sich die Situation jedoch schlagartig geändert. ZKP ist als "Zauberstab" ins Rampenlicht gerückt, der gleichzeitig das Skalierbarkeitsproblem (die Grenzen der Verarbeitungskapazität) und das Datenschutzproblem (die Tatsache, dass alle Transaktionen öffentlich sind), mit denen öffentliche Blockchains wie Ethereum konfrontiert sind, löst.
 
 In diesem Artikel werden wir von den grundlegenden Konzepten der Zero-Knowledge-Proofs über die tiefgreifenden mathematischen und kryptographischen Mechanismen der derzeit vorherrschenden **zk-SNARKs** und **zk-STARKs** bis hin zu den neuesten Web3- und Sicherheitsanwendungen wie ZK-Rollups und dezentralen Identitäten (DID) äußerst detailliert und technisch fundiert berichten.
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Note over Prover, Verifier: "※ Um die Sicherheit zu erhöhen, wird dies dutzende Male wiederholt"
 ```
 
-Diese Methode ist leistungsstark, erfordert jedoch, dass der Verifizierer online ist, was für asynchrone verteilte Systeme wie Blockchains unpraktisch ist. In einer Blockchain muss jeder in der Lage sein, vergangene Beweise jederzeit zu verifizieren.
+Diese Methode ist leistungsstark, erfordert jedoch, dass der Verifizierer online ist, was für asynchrone verteilte Systeme wie [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s unpraktisch ist. In einer Blockchain muss jeder in der Lage sein, vergangene Beweise jederzeit zu verifizieren.
 
 #### Fiat-Shamir-Heuristik und Nicht-Interaktivität
 
@@ -166,9 +166,9 @@ ZKP hat den Übergang von der Theorie zur Praxis vollzogen und revolutioniert de
 
 ### 1. Ultimative Skalierung von Ethereum durch ZK-Rollups
 
-L1 (Layer 1) Blockchains wie Ethereum haben aufgrund ihrer starken Ausrichtung auf Dezentralisierung und Sicherheit erhebliche Einschränkungen bei der Skalierbarkeit (das Trilemma). Die definitive L2 (Layer 2) Lösung für dieses Problem sind **ZK-Rollups**.
+L1 (Layer 1) [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s wie Ethereum haben aufgrund ihrer starken Ausrichtung auf Dezentralisierung und Sicherheit erhebliche Einschränkungen bei der Skalierbarkeit (das Trilemma). Die definitive L2 (Layer 2) Lösung für dieses Problem sind **ZK-Rollups**.
 
-Bei ZK-Rollups werden Tausende von Transaktionen off-chain (L2) ausgeführt und verarbeitet, und es wird "ein ZKP (Validity Proof)" generiert, das beweist, dass alle korrekt ausgeführt wurden. Der Smart Contract auf der L1-Chain muss lediglich diesen Beweis verifizieren.
+Bei ZK-Rollups werden Tausende von Transaktionen off-chain (L2) ausgeführt und verarbeitet, und es wird "ein ZKP (Validity Proof)" generiert, das beweist, dass alle korrekt ausgeführt wurden. Der [Smart Contract](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) auf der L1-Chain muss lediglich diesen Beweis verifizieren.
 
 ```mermaid
 flowchart LR
@@ -190,9 +190,9 @@ Mithilfe von ZKP ist es möglich, auf der Grundlage digitaler Zertifikate (Verif
 
 Auch Proof of Personhood-Projekte (Beweis der Menschlichkeit) wie Worldcoin speichern oder teilen keine Irisdaten direkt, sondern nutzen einen Mechanismus auf Basis von ZKP, um lediglich zu beweisen, dass man "ein einzigartiger Mensch ist".
 
-### 3. Vertrauliche Smart Contracts und Unternehmensnutzung
+### 3. Vertrauliche [Smart Contract](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s und Unternehmensnutzung
 
-Die Eigenschaft öffentlicher Blockchains, dass "alle Daten öffentlich sind", war ein großes Hindernis für Unternehmen, die vertrauliche Transaktionen oder Lieferketteninformationen auf der Blockchain verarbeiten wollen.
+Die Eigenschaft öffentlicher [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/)s, dass "alle Daten öffentlich sind", war ein großes Hindernis für Unternehmen, die vertrauliche Transaktionen oder Lieferketteninformationen auf der Blockchain verarbeiten wollen.
 
 Durch den Einsatz von ZKP-Technologie (wie bei datenschutzorientierten Netzwerken wie Aleo oder Aztec) können die Eingabewerte, die Ausgabewerte und sogar die Logik des ausgeführten Smart Contracts selbst verschlüsselt bleiben, während nur die Korrektheit der Zustandsaktualisierung auf der öffentlichen Blockchain festgehalten wird. Dies ermöglicht die Verhinderung von Front-Running (MEV) im DeFi-Bereich (Decentralized Finance) und den Aufbau vertraulicher Konsortium-Netzwerke zwischen Unternehmen, wobei gleichzeitig die hohe Sicherheit einer öffentlichen Blockchain genutzt wird.
 
@@ -209,7 +209,7 @@ ZKP ist zweifellos eine Basistechnologie der nächsten Generation, es bleiben je
 
 ## Fazit
 
-Zero-Knowledge-Proofs (ZKP) haben sich von einer reinen "Technologie zur Erhöhung der Anonymität von [Kryptowährung](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)en" zu einer "universellen Technologie, die das Vertrauen (Trust) im gesamten Internet neu definiert" entwickelt. Kleine Beweise, die tief in mathematischen Formeln und der Kryptographie berechnet werden, erweitern die Skalierbarkeit der Blockchain grenzenlos und dienen als robuster Schild zum Schutz unserer Privatsphäre.
+Zero-Knowledge-Proofs (ZKP) haben sich von einer reinen "Technologie zur Erhöhung der Anonymität von [Kryptowährung](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)en" zu einer "universellen Technologie, die das Vertrauen (Trust) im gesamten Internet neu definiert" entwickelt. Kleine Beweise, die tief in mathematischen Formeln und der Kryptographie berechnet werden, erweitern die Skalierbarkeit der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) grenzenlos und dienen als robuster Schild zum Schutz unserer Privatsphäre.
 
 Auf dem Weg zu einer echten Massenadaption von Web3 und dem Aufbau eines sicheren und privaten Internets der nächsten Generation wird das Zero-Knowledge-Proof weiterhin als wichtigstes Puzzleteil fungieren. Die zukünftige Entwicklung der ZKP-Technologie sollte man unbedingt im Auge behalten.
 

@@ -13,7 +13,7 @@ description: 'C++からMicrosoft Teamsへ自動メッセージ投稿を実装し
 
 Microsoft Teams のチャットに自動投稿したい――  
 そんなときに使えるのが **Microsoft Graph API** です。  
-この記事では、 **WinHTTP を使った C++ コード例 ** と、 ** 必要な API 認証の手順** をステップバイステップで紹介します。
+この記事では、 **WinHTTP を使った C++ コード例 ** と、 ** 必要な API [認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)の手順** をステップバイステップで紹介します。
 
 ---
 
@@ -51,7 +51,7 @@ Microsoft Teams のチャットに自動投稿したい――
 
 ---
 
-## 🔐 アクセストークンの取得（OAuth2）
+## 🔐 アクセストークンの取得（[OAuth](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)2）
 
 取得には `client_credentials` フローを使います。  
 curl で下記のコマンドを実行して、アクセストークンを取得します。
@@ -179,8 +179,8 @@ curl -X GET ^
 | 機能        | 概要                            |
 | --------- | ----------------------------- |
 | Graph API | Teams とやりとりする公式 API           |
-| アプリ登録     | Azure 上で必要な認証手続き              |
-| アクセストークン  | OAuth2 により取得し、リクエストに使用        |
+| アプリ登録     | Azure 上で必要な[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)手続き              |
+| アクセストークン  | [OAuth](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)2 により取得し、リクエストに使用        |
 | C++ 実装    | WinHTTP を利用して Graph API を呼び出す |
 
 ## 🚀 次のステップ

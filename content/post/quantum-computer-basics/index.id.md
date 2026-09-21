@@ -111,7 +111,7 @@ Komputer kuantum hanya menunjukkan nilai sebenarnya pada  **"masalah spesifik di
 ### Keahlian Komputer Kuantum (Aplikasi Pembunuh)
 
 #### 1. Faktorisasi Prima dan Dekripsi Kriptografi (Algoritma Shor)
-Saat ini, komunikasi aman di internet (seperti pembayaran kartu kredit dan pengiriman informasi pribadi) dilindungi oleh "kriptografi RSA", yang didasarkan pada premis bahwa "faktorisasi prima dari bilangan yang sangat besar secara praktis mustahil (membutuhkan waktu yang sangat lama) bagi komputer klasik".
+Saat ini, komunikasi aman di internet (seperti pembayaran kartu kredit dan pengiriman informasi pribadi) dilindungi oleh "kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)", yang didasarkan pada premis bahwa "faktorisasi prima dari bilangan yang sangat besar secara praktis mustahil (membutuhkan waktu yang sangat lama) bagi komputer klasik".
 Namun, dengan menggunakan "Algoritma Shor" yang ditemukan oleh matematikawan Peter Shor pada tahun 1994, komputer kuantum dapat menggunakan interferensi dengan cerdik untuk memecahkan ini dengan kecepatan dramatis (waktu polinomial). Akibatnya, ada risiko bahwa sistem kriptografi saat ini akan runtuh di masa depan, dan bank sentral serta lembaga pemerintah di seluruh dunia bergegas untuk beralih ke "Kriptografi Pasca-Kuantum".
 
 #### 2. Komputasi Kimia Kuantum serta Pengembangan Material & Obat Baru

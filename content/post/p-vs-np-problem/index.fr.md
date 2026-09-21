@@ -283,7 +283,7 @@ Lorsque le nombre de villes dépasse $N=20$, la solution exacte (force brute) pr
 
 Actuellement, les systèmes cryptographiques du monde entier (SSL/TLS utilisés dans les achats sur Internet, les blockchains comme le Bitcoin) utilisent l'asymétrie selon laquelle **"résoudre prend un temps énorme, mais vérifier peut se faire en un instant"**.
 
-La décomposition en facteurs premiers, qui est à la base de la cryptographie RSA, en est un exemple.
+La décomposition en facteurs premiers, qui est à la base de la cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), en est un exemple.
 Supposons que quelqu'un prouve que $P = NP$ et construise un algorithme magique (preuve constructive) qui résout des problèmes NP en temps polynomial. Cela déclencherait **un changement de paradigme dans la société humaine**, comme suit :
 
 1. **L'effondrement de la cryptographie** : Les systèmes de cryptographie à clé publique modernes, tels que la cryptographie RSA et la cryptographie sur les courbes elliptiques, seraient tous craqués instantanément, et la sécurité numérique s'effondrerait complètement.

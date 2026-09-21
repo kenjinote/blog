@@ -12,7 +12,7 @@ description: 'Penjelasan mendetail mengenai ancaman kompromi kriptografi akibat 
 
 ## 1. Pendahuluan: "Krisis Kriptografi" yang Dibawa oleh Komputer Kuantum
 
-Dalam masyarakat internet modern, teknologi kriptografi kunci publik sangat diperlukan sebagai infrastruktur untuk melindungi kerahasiaan komunikasi dan integritas data. Kriptografi RSA dan Kriptografi Kurva Eliptik (ECC) yang banyak digunakan saat ini, masing-masing bergantung pada penghalang matematis berupa "kesulitan pemfaktoran bilangan komposit besar" dan "kesulitan masalah logaritma diskrit pada kurva eliptik" untuk menjamin keamanannya. Pada komputer klasik (termasuk superkomputer yang kita gunakan saat ini), telah dibuktikan bahwa memecahkan masalah matematis ini membutuhkan waktu yang lebih lama dari usia alam semesta, yang mana hal ini menjadi dasar dari keamanan tersebut.
+Dalam masyarakat internet modern, teknologi kriptografi kunci publik sangat diperlukan sebagai infrastruktur untuk melindungi kerahasiaan komunikasi dan integritas data. Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan Kriptografi Kurva Eliptik (ECC) yang banyak digunakan saat ini, masing-masing bergantung pada penghalang matematis berupa "kesulitan pemfaktoran bilangan komposit besar" dan "kesulitan masalah logaritma diskrit pada kurva eliptik" untuk menjamin keamanannya. Pada komputer klasik (termasuk superkomputer yang kita gunakan saat ini), telah dibuktikan bahwa memecahkan masalah matematis ini membutuhkan waktu yang lebih lama dari usia alam semesta, yang mana hal ini menjadi dasar dari keamanan tersebut.
 
 Namun, premis yang kokoh ini akan dirobohkan oleh teori dan kemajuan praktis dari **komputer kuantum**. Pada tahun 1994, kriptografer Peter Shor menerbitkan "**Algoritma Shor**", yang secara teoretis membuktikan bahwa masalah pemfaktoran prima dan logaritma diskrit dapat dipecahkan dalam "waktu polinomial" dengan menjalankannya di atas komputer kuantum toleransi kesalahan tujuan umum (CRQC: [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer) dengan kinerja yang memadai. Ini berarti bahwa semua kriptografi kunci publik yang digunakan saat ini akan menjadi tidak berguna.
 
@@ -40,7 +40,7 @@ Transisi teknologi kriptografi membutuhkan waktu dari beberapa tahun hingga pulu
 
 Target standarisasi dibagi ke dalam dua kategori utama berikut:
 1. **Kriptografi Kunci Publik / Mekanisme Enkapsulasi Kunci (KEM: Key Encapsulation Mechanism)**: Mekanisme untuk membagikan (mendistribusikan) kunci simetris secara aman untuk mengenkripsi jalur komunikasi, seperti pada koneksi TLS.
-2. **Tanda Tangan Digital (Digital Signatures)**: Mekanisme untuk membuktikan bahwa tidak ada gangguan pada data dan tidak ada pemalsuan identitas pengirim (otentisitas) dalam pembaruan perangkat lunak atau sertifikat elektronik.
+2. **Tanda Tangan Digital ([Digital Signature](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)s)**: Mekanisme untuk membuktikan bahwa tidak ada gangguan pada data dan tidak ada pemalsuan identitas pengirim (otentisitas) dalam pembaruan perangkat lunak atau sertifikat elektronik.
 
 Setelah sekitar 6 tahun evaluasi, analisis, dan kompetisi kriptanalisis yang sangat ketat (Putaran 1 hingga Putaran 3), evaluasi tambahan pada Putaran 4 dilakukan untuk beberapa algoritma. Sebagai hasilnya, pada tahun 2024, algoritma berikut secara resmi diterbitkan sebagai Standar Pemrosesan Informasi Federal (FIPS) dan ditetapkan sebagai standar global di masa depan:
 
@@ -124,7 +124,7 @@ CRYSTALS-Kyber, yang secara resmi distandarisasi sebagai **FIPS 203 (ML-KEM)**, 
 
 ### 5.1. Arsitektur KEM (Key Encapsulation Mechanism)
 
-Di era PQC, alih-alih pendekatan langsung seperti RSA di mana "klien membuat kunci simetris dan mengenkripsinya dengan kunci publik server sebelum mengirim", kerangka kerja enkapsulasi KEM akan menjadi standar.
+Di era PQC, alih-alih pendekatan langsung seperti [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) di mana "klien membuat kunci simetris dan mengenkripsinya dengan kunci publik server sebelum mengirim", kerangka kerja enkapsulasi KEM akan menjadi standar.
 
 ```mermaid
 sequenceDiagram
@@ -172,7 +172,7 @@ Inti dari mekanisme enkripsi dan dekripsi CPAPKE adalah sebagai berikut:
    - Yang tersisa adalah $\lfloor q/2 \rceil \cdot m + (\vec{e}^T\vec{r} + e_2 - \vec{s}^T\vec{e_1})$.
    - Suku dalam tanda kurung adalah "perkalian atau penjumlahan dari kesalahan-kesalahan kecil", sehingga secara keseluruhan nilainya tetap cukup kecil (noise). Oleh karena itu, dengan memeriksa batas (threshold) untuk setiap koefisien apakah nilainya lebih dekat ke $0$ atau ke $q/2$, bit dari pesan asli $m$ (0 atau 1) dapat dipulihkan dengan sempurna tanpa kesalahan.
 
-Kekuatan terbesar Kyber terletak pada **kecepatan pemrosesan yang luar biasa** dan **ukuran kuncinya yang wajar**. Pada Kyber768, ukuran kunci publiknya adalah 1.184 bita, dan ukuran cipherteksnya 1.088 bita. Meski lebih besar bila dibandingkan dengan RSA-3072 (ukuran kunci sekitar 384 bita), ukurannya masih muat ke dalam MTU (Maximum Transmission Unit) jaringan internet modern tanpa perlunya memecah paket data, sehingga hampir tidak memengaruhi latensi jaringan.
+Kekuatan terbesar Kyber terletak pada **kecepatan pemrosesan yang luar biasa** dan **ukuran kuncinya yang wajar**. Pada Kyber768, ukuran kunci publiknya adalah 1.184 bita, dan ukuran cipherteksnya 1.088 bita. Meski lebih besar bila dibandingkan dengan [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)-3072 (ukuran kunci sekitar 384 bita), ukurannya masih muat ke dalam MTU (Maximum Transmission Unit) jaringan internet modern tanpa perlunya memecah paket data, sehingga hampir tidak memengaruhi latensi jaringan.
 
 ---
 
@@ -255,7 +255,7 @@ Satu-satunya sekaligus kelemahan terbesar dari SPHINCS+ adalah bahwa **ukuran ta
 
 Dalam proses standarisasi NIST, salah satu pendekatan penting yang saat ini masih terus dievaluasi sebagai kandidat akhir Putaran 4 adalah **Classic McEliece**, yaitu algoritma **Kriptografi Berbasis Kode**.
 
-Algoritma yang diusulkan oleh Robert McEliece pada tahun 1978 ini merupakan salah satu algoritma paling tua dalam sejarah kriptografi kunci publik, sejajar dengan RSA. Algoritma ini menggunakan kode geometri aljabar yang disebut "Kode Goppa", di mana pesan dienkripsi dengan sengaja menambahkan kesalahan (vektor noise). Dasar keamanannya bersandar pada "**Masalah Dekode Sindrom (Syndrome Decoding Problem)**", yang menetapkan bahwa hanya pemilik matriks uji paritas Kode Goppa sebagai kunci privatlah yang mampu menggunakan kekuatan koreksi kesalahan untuk menghapus noise tersebut dan memulihkan teks aslinya.
+Algoritma yang diusulkan oleh Robert McEliece pada tahun 1978 ini merupakan salah satu algoritma paling tua dalam sejarah kriptografi kunci publik, sejajar dengan [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/). Algoritma ini menggunakan kode geometri aljabar yang disebut "Kode Goppa", di mana pesan dienkripsi dengan sengaja menambahkan kesalahan (vektor noise). Dasar keamanannya bersandar pada "**Masalah Dekode Sindrom (Syndrome Decoding Problem)**", yang menetapkan bahwa hanya pemilik matriks uji paritas Kode Goppa sebagai kunci privatlah yang mampu menggunakan kekuatan koreksi kesalahan untuk menghapus noise tersebut dan memulihkan teks aslinya.
 
 $$ \vec{c} = \vec{m} G + \vec{e} $$
 (Di mana $G$ adalah kunci publik berupa matriks generator yang diacak, dan $\vec{e}$ adalah vektor kesalahan dengan bobot $t$)
@@ -326,7 +326,7 @@ Pertarungan antara komputer kuantum dan kriptografi merupakan area yang paling m
 *Referensi:*
 * *NIST Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy Standardization Program*
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
-* *FIPS 204: Module-Lattice-Based Digital Signature Standard*
+* *FIPS 204: Module-Lattice-Based [Digital Signature](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
 
 

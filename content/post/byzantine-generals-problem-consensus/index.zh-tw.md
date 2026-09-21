@@ -15,7 +15,7 @@ tags:
   - algorithm
 ---
 
-現代的雲端運算與區塊鏈技術背後的核心，存在著讓多台電腦（節點）之間共享並保持狀態一致的 **共識演算法** （Consensus Algorithm）。本文將從其理論基礎「拜占庭將軍問題」開始，深入探討在實際系統中廣泛採用的 **Paxos** 與 **Raft** ，甚至是在有惡意參與者的環境下依然能運作的 **BFT（Byzantine Fault Tolerance）** ，並結合數學證明與程式碼實作進行深入剖析。
+現代的雲端運算與區塊鏈技術背後的核心，存在著讓多台電腦（節點）之間共享並保持狀態一致的 **共識演算法** （[Consensus](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/) Algorithm）。本文將從其理論基礎「拜占庭將軍問題」開始，深入探討在實際系統中廣泛採用的 **Paxos** 與 **Raft** ，甚至是在有惡意參與者的環境下依然能運作的 **BFT（Byzantine Fault Tolerance）** ，並結合數學證明與程式碼實作進行深入剖析。
 
 ## 1. 分散式系統中的共識建立與挑戰
 
@@ -290,4 +290,4 @@ $ |Q_1 \cap Q_2| = 2Q - n = 2(2f + 1) - (3f + 1) = f + 1 $
 *   **Raft** ：追求易懂性與實作的便利性，成為現代分散式 KVS 的業界標準。
 *   **PBFT** ：在混雜惡意節點的環境中實現確定性共識，成為區塊鏈技術的基礎。
 
-時至今日，比特幣採用的 **Nakamoto Consensus (PoW)** ，以及 Tendermint、HotStuff 等新型 BFT 演算法不斷誕生，它們在減少 PBFT 通訊開銷的同時提升了擴展性。根據系統的需求（節點的可靠性、所需的吞吐量、延遲），選擇合適的共識演算法，正是建構穩健分散式系統的關鍵。
+時至今日，比特幣採用的 **Nakamoto [Consensus](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/) ([PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/))** ，以及 Tendermint、HotStuff 等新型 BFT 演算法不斷誕生，它們在減少 PBFT 通訊開銷的同時提升了擴展性。根據系統的需求（節點的可靠性、所需的吞吐量、延遲），選擇合適的共識演算法，正是建構穩健分散式系統的關鍵。

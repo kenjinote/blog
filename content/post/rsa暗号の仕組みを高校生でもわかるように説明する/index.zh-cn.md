@@ -9,7 +9,7 @@ categories: ["mathematics", "cryptography"]
 tags: ["RSA", "Prime Numbers", "Math", "Cryptography"]
 ---
 
-互联网社会安全的基础技术之一是“RSA加密”。在线购物的信用卡支付、与朋友的SNS交流、公司机密信息的收发等，我们每天都在不经意间使用的很多通信，都是由RSA加密或其后继技术保护着的。
+互联网社会安全的基础技术之一是“[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密”。在线购物的信用卡支付、与朋友的SNS交流、公司机密信息的收发等，我们每天都在不经意间使用的很多通信，都是由RSA加密或其后继技术保护着的。
 
 然而，一听到“密码（加密）”，你可能会想象出间谍电影中出现的复杂密码机，或者只有少数天才才能理解的超高级数学。确实，现代密码学基于高级数学，但 **RSA加密的根本原理，只要有高中学过的数学（整数的性质、素数、同余式等）知识就足以理解** 。
 
@@ -58,7 +58,7 @@ graph TD
 
 ---
 
-## 2. 支撑RSA加密的数学基础1：素数与素因数分解
+## 2. 支撑[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密的数学基础1：素数与素因数分解
 
 RSA加密的安全性基于 **“对巨大数字进行素因数分解非常困难”** 这一数学事实。
 
@@ -135,7 +135,7 @@ $$ \phi(p) = p - 1 $$
 **【素数乘积时的特殊性质】**
 对于两个不同的素数 $p$ 和 $q$，如果 $N = p \times q$，那么 $\phi(N)$ 可以通过以下计算轻松求出：
 $$ \phi(N) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-这个性质起到了RSA加密中“秘密后门（陷门）”的作用。知道 $p$ 和 $q$ 的人（密钥创建者）可以瞬间计算出 $\phi(N)$，而只知道 $N$ 的第三方，除非对 $N$ 进行素因数分解，否则无法求出 $\phi(N)$。
+这个性质起到了[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密中“秘密后门（陷门）”的作用。知道 $p$ 和 $q$ 的人（密钥创建者）可以瞬间计算出 $\phi(N)$，而只知道 $N$ 的第三方，除非对 $N$ 进行素因数分解，否则无法求出 $\phi(N)$。
 
 ### 4.2 欧拉定理
 
@@ -153,7 +153,7 @@ $$ a^{\phi(N) + 1} \equiv a \pmod N $$
 进一步地，对于任意整数 $k$，$a^{k \cdot \phi(N)}$ 也等于 $1^k = 1$，因此以下等式成立：
 $$ a^{k \cdot \phi(N) + 1} \equiv a \pmod N $$
 
-这个公式正是让RSA加密实现 **“加密后再解密就能恢复原状”** 这一魔法的根本原理。
+这个公式正是让[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密实现 **“加密后再解密就能恢复原状”** 这一魔法的根本原理。
 
 ---
 
@@ -238,7 +238,7 @@ $$ C^d \equiv M \pmod N $$
 
 ---
 
-## 7. 具体例子：用小素数手工计算体验RSA
+## 7. 具体例子：用小素数手工计算体验[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)
 
 让我们实际使用小数字（素数），来模拟一次爱丽丝向鲍勃发送加密通信的过程吧。
 
@@ -281,7 +281,7 @@ $-17$ 在模 $120$ 的世界里，与 $120 - 17 = 103$ 意义相同。因此，�
 
 ---
 
-## 9. RSA加密的另一面：数字签名
+## 9. [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密的另一面：数字签名
 
 RSA加密非常棒的一点是，通过反转公钥和私钥的作用，它还可以用作 **“数字签名”** 。
 
@@ -302,7 +302,7 @@ flowchart TD
 
 ---
 
-## 10. 通过程序感受RSA加密
+## 10. 通过程序感受[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密
 
 手工计算非常困难的乘方计算，如果使用Python就能非常轻松地实现。以下是可以体验RSA加密核心逻辑的Python代码。
 
@@ -342,7 +342,7 @@ Python 的 `pow(base, exp, mod)` 函数在内部使用了称为“快速幂（�
 
 ## 11. 总结与未来的密码技术
 
-我们以高中数学知识为基础，揭开了RSA加密原理的面纱。
+我们以高中数学知识为基础，揭开了[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密原理的面纱。
 
 1. **素因数分解的困难性:** $p \times q = N$ 很容易计算，但从 $N$ 找出 $p, q$ 却极其困难。
 2. **同余式与欧拉定理:** 根据 $a^{\phi(N)} \equiv 1 \pmod N$ 这一法则，完成了“乘方某次后恢复原状”的魔法陷门。

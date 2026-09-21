@@ -150,10 +150,10 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 # 확인: 111 * 3 + 30 * (-11) = 333 - 330 = 3
 ```
 
-## 현대 사회에서의 응용 (RSA 암호 등)
+## 현대 사회에서의 응용 ([RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호 등)
 
 확장 [유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)은 단순한 수학 퍼즐이 아니라, 현대의 인터넷 사회를 지탱하는 필수 불가결한 기술입니다.
-대표적인 예가 **RSA 암호** 입니다. RSA 암호의 키 생성 과정에서는 어떤 수 $e$ 와 오일러 피 함수 $\phi(N)$ 에 대해 $e d \equiv 1 \pmod{\phi(N)}$ 을 만족하는 비밀키 $d$ (모듈로 역원)를 구해야 합니다.
+대표적인 예가 **[RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호** 입니다. RSA 암호의 키 생성 과정에서는 어떤 수 $e$ 와 오일러 피 함수 $\phi(N)$ 에 대해 $e d \equiv 1 \pmod{\phi(N)}$ 을 만족하는 비밀키 $d$ (모듈로 역원)를 구해야 합니다.
 이는 $ed + k\phi(N) = 1$ 형태로 변형할 수 있으므로, 바로 확장 [유클리드 호제법](https://kenji.blog/ko/p/euclidean-algorithm/)을 이용하여 빠르게 $d$ 를 계산할 수 있습니다.
 
 ## 요약

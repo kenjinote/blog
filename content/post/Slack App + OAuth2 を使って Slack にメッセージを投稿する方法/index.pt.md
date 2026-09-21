@@ -11,20 +11,20 @@ description: 'Explicamos como postar mensagens via Slack Web API utilizando o to
 
 ## ✅ Método de postagem usando token de acesso (Slack Web API)
 
-O "OAuth Token" (como xoxb-...) do Slack é uma chave para postar usando a [Web API](https://api.slack.com/methods/chat.postMessage) do Slack.
+O "[OAuth](https://kenji.blog/pt/p/oauth2-oidc-authentication-authorization-difference/) Token" (como xoxb-...) do Slack é uma chave para postar usando a [Web API](https://api.slack.com/methods/chat.postMessage) do Slack.
 Neste caso, diferentemente do Webhook, você faz um `POST` no **Slack API Endpoint** com um cabeçalho `Authorization: Bearer`.
 
 ---
 
 ## 🔑 Pré-requisitos necessários
 
-É necessário incluir **`chat:write` no escopo OAuth** do aplicativo Slack:
+É necessário incluir **`chat:write` no escopo [OAuth](https://kenji.blog/pt/p/oauth2-oidc-authentication-authorization-difference/)** do aplicativo Slack:
 
 ### Procedimento de configuração
 
 1. Acesse [https://api.slack.com/apps](https://api.slack.com/apps)
 2. Crie um aplicativo ou selecione um aplicativo existente
-3. Em "OAuth & Permissions" > `Scopes`
+3. Em "[OAuth](https://kenji.blog/pt/p/oauth2-oidc-authentication-authorization-difference/) & Permissions" > `Scopes`
    → Adicione `chat:write`
 4. Vá em "Install to Workspace" ou "Reinstall" e obtenha o `Access Token` (ex: `xoxb-xxxxxxxxxx`)
 

@@ -149,11 +149,11 @@ end
 
 ### 中本聰共識 (Proof of Work)
 
-[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)的創始人中本聰以一種全新的方法應對了這個問題。那就是 **Proof of Work** (PoW) 結合以最長鏈為準的規則，也就是 **中本聰共識** 。
+[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)的創始人中本聰以一種全新的方法應對了這個問題。那就是 **Proof of Work** ([PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)) 結合以最長鏈為準的規則，也就是 **中本聰共識** 。
 
-在中本聰共識中，只有贏得數學計算競爭（挖礦）的人才能獲得提案區塊的權利。為了讓網路認可虛假資訊，必須控制網路整體一半以上（51%以上）的算力，這在現實中被設計得極其困難。因此，它被評價為在有不特定多數參與的開放網路中，以機率的方式解決了[拜占庭將軍問題](https://kenji.blog/zh-tw/p/byzantine-generals-problem/)。
+在中本聰共識中，只有贏得數學計算競爭（挖礦）的人才能獲得提案區塊的權利。為了讓網路[認可](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)虛假資訊，必須控制網路整體一半以上（51%以上）的算力，這在現實中被設計得極其困難。因此，它被評價為在有不特定多數參與的開放網路中，以機率的方式解決了[拜占庭將軍問題](https://kenji.blog/zh-tw/p/byzantine-generals-problem/)。
 
-### BFT 在 PoS (Proof of Stake) 中的應用
+### BFT 在 [PoS](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Stake) 中的應用
 
 中本聰共識雖然具突破性，但存在挖礦會消耗龐大電力的課題。為了解決這個問題，出現了根據節點持有的加密資產數量（權益）來給予區塊提案權的 **Proof of Stake** (PoS)。
 

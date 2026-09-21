@@ -14,7 +14,7 @@ tags:
   - "python"
 ---
 
-A segurança na sociedade da internet moderna é protegida por esquemas de criptografia de chave pública, como a criptografia RSA. Esses métodos de criptografia baseiam sua segurança na dificuldade matemática de que "a fatoração em números primos de números gigantescos leva um tempo astronômico nos computadores atuais (computadores clássicos)".
+A segurança na sociedade da internet moderna é protegida por esquemas de criptografia de chave pública, como a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/). Esses métodos de criptografia baseiam sua segurança na dificuldade matemática de que "a fatoração em números primos de números gigantescos leva um tempo astronômico nos computadores atuais (computadores clássicos)".
 
 No entanto, o que tem o potencial de reverter fundamentalmente essa premissa é o **computador quântico**. Em particular, o **Algoritmo de Shor** (Shor's Algorithm), descoberto por Peter Shor em 1994, provou matematicamente que se um computador quântico for colocado em uso prático, ele poderá quebrar a criptografia RSA em um tempo realista.
 
@@ -110,7 +110,7 @@ graph LR
 
 ---
 
-## 3. Fundamentos de Criptografia e Criptografia RSA
+## 3. Fundamentos de Criptografia e Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)
 
 Para entender o impacto do Algoritmo de Shor, é necessário conhecer o funcionamento da **criptografia RSA**, que é a principal criptografia de chave pública atual.
 
@@ -356,7 +356,7 @@ Uma vez conhecido o período $r=4$, os fatores primos $3$ e $5$ são derivados a
 
 ---
 
-## 7. Por que a Criptografia RSA está em Risco?
+## 7. Por que a Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) está em Risco?
 
 A complexidade computacional da fatoração de primos em computadores clássicos aumenta exponencialmente conforme o número de dígitos cresce. Por exemplo, estima-se que levaria alguns segundos para fatorar um número de 100 dígitos, vários anos para um de 200 dígitos e mais que a idade do universo para o RSA-2048 (cerca de 617 dígitos).
 
@@ -380,7 +380,7 @@ A tecnologia pesquisada para tornar isso realidade é a **Correção de Erro Qu�
 
 ## 9. Criptografia de Próxima Geração: Criptografia Pós-Quântica (PQC)
 
-Para combater a ameaça do Algoritmo de Shor, instituições em todo o mundo, incluindo o Instituto Nacional de Padrões e Tecnologia dos EUA (NIST), estão promovendo a padronização de um novo método de criptografia chamado **Criptografia Pós-Quântica (PQC: Post-Quantum Cryptography)**, que não pode ser quebrado mesmo por um computador quântico.
+Para combater a ameaça do Algoritmo de Shor, instituições em todo o mundo, incluindo o Instituto Nacional de Padrões e Tecnologia dos EUA (NIST), estão promovendo a padronização de um novo método de criptografia chamado **Criptografia Pós-Quântica (PQC: Post-Quantum [Cryptography](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/))**, que não pode ser quebrado mesmo por um computador quântico.
 
 O PQC não utiliza tecnologia quântica, mas sim novos problemas matemáticos (aos quais o algoritmo de Shor não se aplica) que podem ser executados num computador clássico e ainda assim não podem ser resolvidos de forma eficiente mesmo através do uso de algoritmos quânticos.
 

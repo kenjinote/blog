@@ -10,11 +10,11 @@ description: '解說隨著量子電腦的崛起，支撐現代通訊基礎設施
 
 ## 前言：密碼技術與量子電腦的交會點
 
-在現代網路社會中，保護通訊機密的基礎是「公開金鑰加密」。其中最具代表性的，是1977年由Ron Rivest、Adi Shamir和Leonard Adleman三位所開發的「RSA加密」。從我們每天使用的線上購物支付、網站瀏覽（HTTPS）到郵件收發，RSA加密一直扮演著網際網路基礎設施心臟的角色。
+在現代網路社會中，保護通訊機密的基礎是「公開金鑰加密」。其中最具代表性的，是1977年由Ron Rivest、Adi Shamir和Leonard Adleman三位所開發的「[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密」。從我們每天使用的線上購物支付、網站瀏覽（HTTPS）到郵件收發，RSA加密一直扮演著網際網路基礎設施心臟的角色。
 
 然而，隨著「量子電腦」的出現，有人指出這種安全性可能會從根本上被顛覆。媒體上偶爾會出現「只要量子電腦完成，全世界的密碼和加密都會在幾秒鐘內被破解」這樣聳動的標題。究竟這是不是真的呢？
 
-本文將深入探討傳統的密碼破解手法GNFS（普通數體篩法）以及使用量子電腦破解密碼的決定性演算法「Shor演算法（[Shor's Algorithm](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/)）」的運作原理。我們將用淺顯易懂的方式解說量子傅立葉變換與尋找週期等進階概念，並詳細驗證目前在NISQ（Noisy Intermediate-Scale Quantum）時代量子硬體的現狀，以及實際要破解RSA-2048所需克服的障礙。
+本文將深入探討傳統的密碼破解手法GNFS（普通數體篩法）以及使用量子電腦破解密碼的決定性演算法「Shor演算法（[Shor's Algorithm](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/)）」的運作原理。我們將用淺顯易懂的方式解說量子傅立葉變換與尋找週期等進階概念，並詳細驗證目前在NISQ（Noisy Intermediate-Scale Quantum）時代量子硬體的現狀，以及實際要破解[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)-2048所需克服的障礙。
 
 ---
 
@@ -122,7 +122,7 @@ $ |x, a^x \bmod N\rangle $
 
 將這個測量結果 $ c $ 送回傳統電腦，製造出 $ \frac{c}{2^n} \approx \frac{j}{r} $ 這個分數。然後，利用被稱為「連分數展開（Continued fraction expansion）」的數學方法來計算近似值，就能漂亮地找出作為分母的週期 $ r $。
 
-只要知道了 $ r $，接下來就能利用步驟1的公式計算出 $ N $ 的質因數，RSA加密也就被完全破解了。
+只要知道了 $ r $，接下來就能利用步驟1的公式計算出 $ N $ 的質因數，[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密也就被完全破解了。
 
 ---
 
@@ -183,6 +183,6 @@ PQC是一種基於即使用量子電腦也難以解開（也就是無法應用Sh
 
 量子電腦正從科幻世界的夢想，轉變為現實工程上的挑戰。Shor演算法是數學與量子力學融合的人類偉大智慧結晶，但同時也蘊含著動搖我們數位社會基礎的「破壞性力量」。
 
-RSA加密並不會明天馬上就無法使用。然而，考量到量子技術的進化以及「Store Now, Decrypt Later」的風險，轉向PQC這場將在密碼史留下紀錄的大規模轉移，已經悄悄開始了。我們現在正目睹資訊安全典範轉移的最前線。
+[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密並不會明天馬上就無法使用。然而，考量到量子技術的進化以及「Store Now, Decrypt Later」的風險，轉向PQC這場將在密碼史留下紀錄的大規模轉移，已經悄悄開始了。我們現在正目睹資訊安全典範轉移的最前線。
 
 

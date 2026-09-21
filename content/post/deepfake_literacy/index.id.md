@@ -220,7 +220,7 @@ C2PA adalah konsorsium yang didirikan oleh perusahaan-perusahaan besar seperti A
 Teknologi inti C2PA adalah tanda tangan digital menggunakan infrastruktur kunci publik (PKI) dan pengikatan (binding) hash konten.
 
 1. **Pembuatan Metadata (Manifest)**: Pada saat sebuah foto diambil dengan kamera atau disunting menggunakan perangkat lunak, sebuah metadata yang disebut "Manifest" dihasilkan, berisikan rekam jejak operasi, informasi perangkat, dan informasi pembuat.
-2. **Tanda Tangan Kriptografis (Digital Signature)**: Tanda tangan digital ditambahkan menggunakan perangkat keras ataupun kunci pribadi dari perangkat lunak pada manifest dan nilai hash gambar tersebut (ringkasan data piksel).
+2. **Tanda Tangan Kriptografis ([Digital Signature](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/))**: Tanda tangan digital ditambahkan menggunakan perangkat keras ataupun kunci pribadi dari perangkat lunak pada manifest dan nilai hash gambar tersebut (ringkasan data piksel).
 3. **Penyematan pada Aset**: Manifest yang ditandatangani (kredensial C2PA) disematkan di dalam informasi header format file seperti JPEG maupun MP4.
 
 Apabila ada penyerang yang memodifikasi sebagian gambar atau mencoba membubuhi metadata palsu pada gambar yang dihasilkan AI, nilai hash gambar tersebut akan berubah, sehingga tanda tangan digital gagal divalidasi, dan pemalsuan dapat langsung diketahui.

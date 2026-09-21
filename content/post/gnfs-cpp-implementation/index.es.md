@@ -27,7 +27,7 @@ description: 'Una explicación exhaustiva con código en C++ sobre cómo funcion
 
 # 【Análisis Completo】Entendiendo el algoritmo de descifrado más fuerte "GNFS" implementándolo en C++
 
-El cifrado "RSA" es la base que sostiene la Internet moderna. Su robustez depende de la creencia matemática de que "factorizar un número compuesto gigante en números primos es virtualmente imposible con las computadoras actuales".
+El cifrado "[RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/)" es la base que sostiene la Internet moderna. Su robustez depende de la creencia matemática de que "factorizar un número compuesto gigante en números primos es virtualmente imposible con las computadoras actuales".
 
 Sin embargo, la humanidad nunca se rinde. Actualmente, existe el **algoritmo más fuerte y avanzado de la humanidad ** para realizar factorizaciones gigantescas en computadoras clásicas (computadoras normales, no cuánticas). Este es el **"General Number Field Sieve (GNFS) o Criba General del Cuerpo de Números"**.
 
@@ -446,7 +446,7 @@ Si ponemos el $V$ del lado racional directamente como $X$, la ecuación absoluta
 
 **$$X^2 \equiv Y^2 \pmod N$$**
 
-Solo queda calcular $\gcd(X-Y, N)$. En el momento en que se ejecuta el proceso de 0.001 segundos y el factor no trivial se imprime en la pantalla, el cifrado RSA, que se jactaba de ser inexpugnable, colapsa por completo.
+Solo queda calcular $\gcd(X-Y, N)$. En el momento en que se ejecuta el proceso de 0.001 segundos y el factor no trivial se imprime en la pantalla, el cifrado [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/), que se jactaba de ser inexpugnable, colapsa por completo.
 
 ---
 

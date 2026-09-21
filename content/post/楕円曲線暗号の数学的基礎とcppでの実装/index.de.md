@@ -17,7 +17,7 @@ In diesem Artikel werden wir ausführlich erläutern, wie diese elliptische Kurv
 
 ---
 
-## 1. Warum Elliptische-Kurven-Kryptographie? (Vergleich mit RSA)
+## 1. Warum Elliptische-Kurven-Kryptographie? (Vergleich mit [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/))
 
 Lange Zeit war **RSA** das Synonym für Public-Key-Kryptographie. Die Sicherheit von RSA basiert auf der "Schwierigkeit der Primfaktorzerlegung riesiger zusammengesetzter Zahlen". Mit der steigenden Rechenleistung von Computern wurde es jedoch notwendig, die Schlüssellänge von RSA (die Bitlänge des Moduls) kontinuierlich zu erhöhen, um die Sicherheit aufrechtzuerhalten. Heutzutage wird eine Schlüssellänge von mindestens 2048 Bit empfohlen, für noch mehr Sicherheit sogar 3072 oder 4096 Bit.
 
@@ -435,7 +435,7 @@ Die Elliptische-Kurven-Kryptographie (ECC) mag auf den ersten Blick seltsam ersc
 
 Dieser Artikel hat die folgenden wichtigen Punkte behandelt:
 
-1. **Vorteile gegenüber RSA**: Es bietet starke Sicherheit mit sehr kurzen Schlüssellängen und ist ideal für das moderne Mobile- und IoT-Zeitalter.
+1. **Vorteile gegenüber [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)**: Es bietet starke Sicherheit mit sehr kurzen Schlüssellängen und ist ideal für das moderne Mobile- und IoT-Zeitalter.
 2. **Grundlagen der Gruppentheorie und endlicher Körper**: Die inneren mathematischen Strukturen, die das Fundament von ECC bilden.
 3. **Formeln für Addition und Verdopplung**: Wie algebraische Gruppenoperationen mit der Weierstraß-Gleichung implementiert werden.
 4. **Bedrohung durch Seitenkanalangriffe**: Wie bedingte Verzweigungen, die von den Bits eines privaten Schlüssels abhängen, fatale Schwachstellen schaffen.
@@ -443,7 +443,7 @@ Dieser Artikel hat die folgenden wichtigen Punkte behandelt:
 
 In einer Produktionsumgebung eine eigene Krypto-Bibliothek zu schreiben, birgt ein extrem hohes Sicherheitsrisiko und wird daher nicht empfohlen ("Don't roll your own crypto"). Die tiefgreifende Kenntnis der intern ablaufenden Algorithmen und mathematischen Hintergründe wird jedoch zu einer unschätzbaren und mächtigen Waffe für Ingenieure, die sicherere und leistungsfähigere Systeme entwerfen und betreiben wollen.
 
-Im nächsten Artikel werden wir noch tiefer auf den **ECDSA (Elliptic Curve Digital Signature Algorithm)**, einen digitalen Signaturalgorithmus auf Basis elliptischer Kurven, sowie auf die in [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) verwendeten **Schnorr-Signaturen** eingehen.
+Im nächsten Artikel werden wir noch tiefer auf den **ECDSA (Elliptic Curve [Digital Signature](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) Algorithm)**, einen digitalen Signaturalgorithmus auf Basis elliptischer Kurven, sowie auf die in [Bitcoin](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/) verwendeten **Schnorr-Signaturen** eingehen.
 
 
 

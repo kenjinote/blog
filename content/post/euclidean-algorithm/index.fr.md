@@ -150,10 +150,10 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 # Vérification : 111 * 3 + 30 * (-11) = 333 - 330 = 3
 ```
 
-## Applications dans la société moderne ([Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie RSA, etc.)
+## Applications dans la société moderne ([Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/), etc.)
 
 [L'algorithme d'Euclide](https://kenji.blog/fr/p/euclidean-algorithm/) étendu n'est pas qu'un puzzle mathématique, mais une technologie essentielle qui soutient la société Internet moderne.
-Un excellent exemple est la **cryptographie RSA** . Dans le processus de génération de clés du chiffrement RSA, il est nécessaire de trouver une clé privée $d$ (inverse modulaire) qui satisfait $e d \equiv 1 \pmod{\phi(N)}$ pour un nombre donné $e$ et la fonction indicatrice d'Euler $\phi(N)$ .
+Un excellent exemple est la **cryptographie [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)** . Dans le processus de génération de clés du chiffrement RSA, il est nécessaire de trouver une clé privée $d$ (inverse modulaire) qui satisfait $e d \equiv 1 \pmod{\phi(N)}$ pour un nombre donné $e$ et la fonction indicatrice d'Euler $\phi(N)$ .
 Étant donné que cela peut être réorganisé sous la forme $ed + k\phi(N) = 1$ , nous pouvons utiliser l'algorithme d'[Euclide](https://kenji.blog/fr/p/euclid/) étendu pour calculer $d$ à des vitesses extrêmement élevées.
 
 ## Conclusion

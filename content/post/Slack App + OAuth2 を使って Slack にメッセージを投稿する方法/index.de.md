@@ -11,20 +11,20 @@ description: 'Erklärt, wie man Nachrichten über die Slack Web API unter Verwen
 
 ## ✅ Methode zum Posten mit einem Access Token (Slack Web API)
 
-Das "OAuth Token" (wie xoxb-...) von Slack ist ein Schlüssel, um Nachrichten über die [Web API](https://api.slack.com/methods/chat.postMessage) von Slack zu posten.
+Das "[OAuth](https://kenji.blog/de/p/oauth2-oidc-authentication-authorization-difference/) Token" (wie xoxb-...) von Slack ist ein Schlüssel, um Nachrichten über die [Web API](https://api.slack.com/methods/chat.postMessage) von Slack zu posten.
 In diesem Fall senden Sie im Gegensatz zu einem Webhook eine `POST`-Anfrage an den **Slack API-Endpunkt** mit einem `Authorization: Bearer`-Header.
 
 ---
 
 ## 🔑 Notwendige Voraussetzungen
 
-Sie müssen **`chat:write` in den OAuth-Scopes** der Slack-App aufnehmen:
+Sie müssen **`chat:write` in den [OAuth](https://kenji.blog/de/p/oauth2-oidc-authentication-authorization-difference/)-Scopes** der Slack-App aufnehmen:
 
 ### Einrichtungsprozess
 
 1. Gehen Sie zu [https://api.slack.com/apps](https://api.slack.com/apps)
 2. Erstellen Sie eine App oder wählen Sie eine bestehende aus
-3. Unter "OAuth & Permissions" > `Scopes`
+3. Unter "[OAuth](https://kenji.blog/de/p/oauth2-oidc-authentication-authorization-difference/) & Permissions" > `Scopes`
    → Fügen Sie `chat:write` hinzu
 4. Klicken Sie auf "Install to Workspace" oder "Reinstall" und holen Sie sich das `Access Token` (z.B. `xoxb-xxxxxxxxxx`)
 

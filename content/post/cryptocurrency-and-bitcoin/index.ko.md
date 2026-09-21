@@ -39,7 +39,7 @@ tags: ["비트코인", "암호학", "블록체인"]
 
 2008년, 리먼 브라더스의 파산으로 촉발된 전 세계적인 금융위기가 발생했습니다. 기존 금융 시스템에 대한 불신이 극에 달했던 같은 해 10월 31일, '사토시 나카모토(Satoshi Nakamoto)'라고 자칭하는 익명의 인물(또는 그룹)이 암호학 메일링 리스트에 한 편의 논문을 게시했습니다.
 
-제목은 『Bitcoin: A Peer-to-Peer Electronic Cash System』(비트코인: [P2P](https://kenji.blog/ko/p/webrtc-realtime-communication-p2p/) 전자 화폐 시스템). 이 9페이지짜리 논문은 지금까지의 전자 화폐 시도들이 안고 있던 이중 지불 문제를 **작업 증명(Proof of Work: PoW)** 이라는 방식을 사용하여 완전히 분산화된 형태로 해결하는 방법을 제시하고 있었습니다.
+제목은 『Bitcoin: A Peer-to-Peer Electronic Cash System』(비트코인: [P2P](https://kenji.blog/ko/p/webrtc-realtime-communication-p2p/) 전자 화폐 시스템). 이 9페이지짜리 논문은 지금까지의 전자 화폐 시도들이 안고 있던 이중 지불 문제를 **작업 증명(Proof of Work: [PoW](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/))** 이라는 방식을 사용하여 완전히 분산화된 형태로 해결하는 방법을 제시하고 있었습니다.
 
 ### 제네시스 블록(Genesis Block)
 
@@ -52,7 +52,7 @@ tags: ["비트코인", "암호학", "블록체인"]
 
 ## 3. 블록체인의 아키텍처
 
-비트코인을 지탱하는 핵심 기술이 '블록체인(Blockchain)'입니다. 블록체인은 분산 원장 기술(Distributed Ledger Technology: DLT)의 한 형태로, 데이터가 '블록'이라는 단위로 묶이고 그것들이 암호학적으로 체인(사슬)처럼 연결된 구조를 하고 있습니다.
+비트코인을 지탱하는 핵심 기술이 '블록체인([Blockchain](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/))'입니다. 블록체인은 분산 원장 기술([Distributed Ledger](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT)의 한 형태로, 데이터가 '블록'이라는 단위로 묶이고 그것들이 암호학적으로 체인(사슬)처럼 연결된 구조를 하고 있습니다.
 
 ```mermaid
 flowchart TD
@@ -105,17 +105,17 @@ flowchart TD
 
 비트코인에서는 블록 해시 계산이나 공개키로부터 주소를 생성하는 과정 등에서 SHA-256이 이중으로 적용됩니다(이를 `SHA256(SHA256(x))` 또는 Hash256이라고 부릅니다).
 
-### 공개키 암호(Public Key Cryptography)와 디지털 서명
+### 공개키 암호([Public Key](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) [Cryptography](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/))와 디지털 서명
 
 암호화폐의 소유권은 개인키(Private Key)와 공개키(Public Key) 쌍에 의해 증명됩니다.
 - **개인키** $k$: 무작위로 생성된 256비트 정수. 절대로 타인에게 알려져서는 안 됩니다.
 - **공개키** $K$: 개인키로부터 일방향 함수를 사용해 계산되는 키. 네트워크 상에 공개됩니다.
 
-앨리스가 밥에게 비트코인을 송금할 경우, 앨리스는 자신의 개인키를 사용하여 트랜잭션 데이터에 대해 **디지털 서명(Digital Signature)** 을 생성합니다. 네트워크의 참여자들은 앨리스의 공개키를 사용하여 그 서명이 정당한 것인지(정말로 앨리스가 개인키를 사용해 생성한 것인지)를 검증할 수 있습니다.
+앨리스가 밥에게 비트코인을 송금할 경우, 앨리스는 자신의 개인키를 사용하여 트랜잭션 데이터에 대해 **디지털 서명([Digital Signature](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/))** 을 생성합니다. 네트워크의 참여자들은 앨리스의 공개키를 사용하여 그 서명이 정당한 것인지(정말로 앨리스가 개인키를 사용해 생성한 것인지)를 검증할 수 있습니다.
 
 ### 타원곡선 암호(Elliptic Curve Cryptography: ECC)와 secp256k1
 
-비트코인의 공개키 생성 및 디지털 서명에는 RSA 암호가 아닌 **타원곡선 암호(ECC)** 가 채택되었습니다. ECC는 RSA에 비해 훨씬 짧은 키 길이로 동등한 보안 수준을 제공할 수 있다는 장점이 있습니다.
+비트코인의 공개키 생성 및 디지털 서명에는 [RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호가 아닌 **타원곡선 암호(ECC)** 가 채택되었습니다. ECC는 RSA에 비해 훨씬 짧은 키 길이로 동등한 보안 수준을 제공할 수 있다는 장점이 있습니다.
 
 비트코인에서 사용되는 특정 타원곡선의 파라미터는 **secp256k1** 이라고 불립니다. 이 곡선은 유한체 $\mathbb{F}_p$ 위에서 정의되며, 다음 방정식으로 표현됩니다.
 
@@ -153,7 +153,7 @@ $$
 3. 점 $(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$ 를 계산한다.
 4. $r \equiv x_2 \pmod{n}$ 이면, 서명은 정당한 것으로 간주된다.
 
-## 5. 합의 알고리즘과 작업 증명(PoW)
+## 5. 합의 알고리즘과 작업 증명([PoW](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/))
 
 분산형 네트워크에서 모두가 동일한 원장 상태에 합의하기 위한 메커니즘이 합의 알고리즘입니다.
 
@@ -161,7 +161,7 @@ $$
 
 분산 컴퓨팅의 고전적인 문제로서 '비잔틴 장군 문제'가 있습니다. 여러 명의 장군이 적의 도시를 포위하고 있으며 공격할지 퇴각할지 의견을 일치시켜야 하지만, 장군 중에는 배신자가 섞여 있어 가짜 메시지를 보낼 가능성이 있습니다. 이런 상황에서 어떻게 정직한 장군들만으로 올바른 합의에 도달할 수 있는가 하는 문제입니다.
 
-비트코인은 **작업 증명(PoW)** 과 **가장 긴 체인의 규칙(Longest Chain Rule)** 을 결합함으로써 이 문제를 실질적으로 해결했습니다.
+비트코인은 **작업 증명([PoW](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/))** 과 **가장 긴 체인의 규칙(Longest Chain Rule)** 을 결합함으로써 이 문제를 실질적으로 해결했습니다.
 
 ### 채굴의 수리와 논스(Nonce)
 
@@ -226,9 +226,9 @@ $$
 
 라이트닝 네트워크에서는 참여자끼리 블록체인 외부(오프체인)에 '페이먼트 채널(Payment Channel)'을 개설합니다. 채널 내에서는 양측이 동의하는 한 블록체인에 트랜잭션을 기록하지 않고 순식간에, 그리고 거의 무료로 몇 번이든 자금을 주고받을 수 있습니다. 최종적인 잔고 정산 시에만 블록체인(레이어 1)에 트랜잭션을 기록합니다.
 
-### Proof of Stake(PoS)와의 비교
+### Proof of Stake([PoS](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/))와의 비교
 
-PoW의 또 다른 큰 과제는 채굴로 인한 막대한 전력 소비입니다. 이 환경 문제에 대한 대책으로 Ethereum 등은 **지분 증명(Proof of Stake: PoS)** 이라는 다른 합의 알고리즘으로 전환했습니다.
+[PoW](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/)의 또 다른 큰 과제는 채굴로 인한 막대한 전력 소비입니다. 이 환경 문제에 대한 대책으로 Ethereum 등은 **지분 증명(Proof of Stake: PoS)** 이라는 다른 합의 알고리즘으로 전환했습니다.
 
 PoS에서는 계산 능력(해시레이트)이 아니라 보유하고 있는 암호화폐의 양(지분)과 보유 기간에 따라 다음 블록을 생성할 권리(검증자)가 확률적으로 할당됩니다. 이로써 전력 소비는 99% 이상 감소하지만 "부자가 더 부자가 되는 시스템 아닌가", "완전한 분산화가 훼손되는 것 아닌가" 하는 비판도 존재합니다. 비트코인은 아무리 비판받더라도 '에너지를 소비하여 물리적인 보안을 담보한다'는 PoW의 철학을 굳건히 유지하고 있습니다.
 
@@ -248,13 +248,13 @@ PoS에서는 계산 능력(해시레이트)이 아니라 보유하고 있는 암
 ### 양자 컴퓨터의 위협과 양자 내성 암호
 
 하지만 계산적 안전성에는 하나의 큰 우려가 있습니다. 바로 **양자 컴퓨터(Quantum Computer)** 의 대두입니다.
-1994년 피터 쇼어(Peter Shor)가 발표한 '쇼어의 알고리즘([Shor's Algorithm](https://kenji.blog/ko/p/quantum-computing-shors-algorithm/))'은 양자 컴퓨터를 사용하면 소인수 분해 문제(RSA 암호의 기초)나 이산대수 문제(ECC의 기초)를 다항식 시간 $\mathcal{O}(n^3)$ 안에 풀 수 있다는 것을 수학적으로 증명했습니다.
+1994년 피터 쇼어(Peter Shor)가 발표한 '쇼어의 알고리즘([Shor's Algorithm](https://kenji.blog/ko/p/quantum-computing-shors-algorithm/))'은 양자 컴퓨터를 사용하면 소인수 분해 문제([RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호의 기초)나 이산대수 문제(ECC의 기초)를 다항식 시간 $\mathcal{O}(n^3)$ 안에 풀 수 있다는 것을 수학적으로 증명했습니다.
 
 만약 충분한 양자 비트(Qubits)와 낮은 오류율을 가진 실용적인 대규모 양자 컴퓨터가 완성된다면, 비트코인의 공개키로부터 개인키가 역산될 위험이 발생합니다.
 이에 대한 비트코인 네트워크의 방어책은 다음과 같습니다.
 
 1. **해시 함수의 보호**: 비트코인 주소는 공개키 자체가 아니라 공개키에 SHA-256과 RIPEMD-160이라는 해시 함수를 적용한 것입니다. 양자 컴퓨터를 사용해도 해시 함수의 역산(그로버의 알고리즘을 사용한다 해도 계산량은 $\mathcal{O}(\sqrt{N})$ )은 여전히 어렵습니다. 따라서 트랜잭션을 수행하여 공개키를 네트워크에 노출시키기 전까지는 주소의 내용은 양자 컴퓨터에 대해서도 안전하다고 할 수 있습니다.
-2. **양자 내성 암호(Post-Quantum Cryptography: PQC)로의 전환**: 양자 컴퓨터가 실용화되기 전에 비트코인의 프로토콜을 하드 포크하여, NIST(미국 국립표준기술연구소)가 선정하는 격자 기반 암호(Lattice-based cryptography)나 다변수 다항식 암호(Multivariate polynomial cryptography) 같은 양자 컴퓨터로도 해독이 어려운 새로운 서명 알고리즘으로 전환하는 것이 논의되고 있습니다.
+2. **양자 내성 암호(Post-Quantum [Cryptography](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/): PQC)로의 전환**: 양자 컴퓨터가 실용화되기 전에 비트코인의 프로토콜을 하드 포크하여, NIST(미국 국립표준기술연구소)가 선정하는 격자 기반 암호(Lattice-based cryptography)나 다변수 다항식 암호(Multivariate polynomial cryptography) 같은 양자 컴퓨터로도 해독이 어려운 새로운 서명 알고리즘으로 전환하는 것이 논의되고 있습니다.
 
 ## 9. 네트워크 토폴로지와 [P2P](https://kenji.blog/ko/p/webrtc-realtime-communication-p2p/) 프로토콜의 상세
 
@@ -266,7 +266,7 @@ PoS에서는 계산 능력(해시레이트)이 아니라 보유하고 있는 암
 
 - **풀 노드(Full Node)**: 제네시스 블록부터 최신 블록에 이르기까지 모든 블록체인 데이터(수백 GB 이상)를 다운로드하고 검증하는 노드입니다. 트랜잭션의 정당성이나 이중 지불 여부를 독립적으로 검사하기 때문에 네트워크 보안의 근간을 담당합니다.
 - **SPV 노드(Simplified Payment Verification Node)**: 블록체인 전체가 아니라 블록 헤더만을 다운로드하는 경량 노드입니다. 주로 스마트폰용 지갑 등에서 사용됩니다. 자신의 트랜잭션이 블록에 포함되어 있는지(머클 경로 검증)는 확인할 수 있지만 풀 노드만큼의 검증 능력은 없습니다.
-- **채굴 노드(Mining Node)**: PoW의 계산을 수행하여 새로운 블록을 생성하는 노드입니다. 현재는 ASIC(Application Specific Integrated Circuit)이라 불리는 채굴 전용 하드웨어를 묶은 거대한 '마이닝 풀'이 이 역할을 맡고 있습니다.
+- **채굴 노드(Mining Node)**: [PoW](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/)의 계산을 수행하여 새로운 블록을 생성하는 노드입니다. 현재는 ASIC(Application Specific Integrated Circuit)이라 불리는 채굴 전용 하드웨어를 묶은 거대한 '마이닝 풀'이 이 역할을 맡고 있습니다.
 
 ### 트랜잭션 전파 과정(Gossip Protocol)
 

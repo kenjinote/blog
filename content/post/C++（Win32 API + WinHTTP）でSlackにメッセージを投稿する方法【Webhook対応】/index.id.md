@@ -196,6 +196,6 @@ Jika Anda tertarik, lain kali:
 
 * **Lampiran File**
 * **UI dengan Tombol**
-* **Operasi API yang Fleksibel melalui Slack App + OAuth2**
+* **Operasi API yang Fleksibel melalui Slack App + [OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/)2**
 
 Kami juga dapat memperkenalkan integrasi Slack selangkah lebih maju seperti ini!

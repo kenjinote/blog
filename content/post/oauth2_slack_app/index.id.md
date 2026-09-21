@@ -10,11 +10,11 @@ tags: ["OAuth2.0", "Slack", "Node.js", "Authentication"]
 description: 'Mekanisme Authorization Code Grant Flow pada OAuth 2.0 divisualisasikan dan dijelaskan secara rinci melalui implementasi integrasi Slack App. Ini adalah panduan lengkap yang juga mencakup contoh kode konkret dalam Node.js dan praktik terbaik keamanan.'
 ---
 
-# Pendahuluan: Mengapa Belajar OAuth 2.0?
+# Pendahuluan: Mengapa Belajar [[OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/)?
 
-Dalam aplikasi Web modern, adalah pemandangan yang biasa melihat beberapa layanan bekerja sama. Misalnya, fitur-fitur seperti "Login dengan akun Google", "Mengirim notifikasi ke Slack ketika tugas Trello diperbarui", atau "Menambahkan tautan rapat Zoom ke Google Calendar secara otomatis". Di balik semua ini adalah framework otorisasi yang disebut **OAuth 2.0 (Open Authorization 2.0)**.
+Dalam aplikasi Web modern, adalah pemandangan yang biasa melihat beberapa layanan bekerja sama. Misalnya, fitur-fitur seperti "Login dengan akun Google", "Mengirim notifikasi ke Slack ketika tugas Trello diperbarui", atau "Menambahkan tautan rapat Zoom ke Google Calendar secara otomatis". Di balik semua ini adalah framework otorisasi yang disebut **OAuth 2.0 (Open [Authorization](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) 2.0)**.
 
-Di masa lalu, ketika bertukar data antar layanan yang berbeda, metode yang sangat berbahaya seperti "Otentikasi Dasar (Basic Authentication)" atau "Berbagi Kata Sandi (Password Sharing)", di mana pengguna memberikan ID dan kata sandi mereka secara langsung ke layanan terintegrasi, sering digunakan. Namun, metode ini memungkinkan layanan terintegrasi untuk memiliki kendali penuh atas pengguna, yang membawa risiko keamanan yang fatal.
+Di masa lalu, ketika bertukar data antar layanan yang berbeda, metode yang sangat berbahaya seperti "Otentikasi Dasar (Basic [Authentication](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/))" atau "Berbagi Kata Sandi (Password Sharing)", di mana pengguna memberikan ID dan kata sandi mereka secara langsung ke layanan terintegrasi, sering digunakan. Namun, metode ini memungkinkan layanan terintegrasi untuk memiliki kendali penuh atas pengguna, yang membawa risiko keamanan yang fatal.
 
 OAuth 2.0 lahir sebagai protokol standar (RFC 6749) untuk mendelegasikan "hanya hak istimewa (cakupan/scope) tertentu" selama "waktu yang terbatas" ke aplikasi pihak ketiga sambil menghindari "berbagi kata sandi" seperti itu.
 
@@ -22,7 +22,7 @@ Dalam artikel ini, kita akan menjelaskan mekanisme OAuth 2.0 dengan sangat rinci
 
 ---
 
-# 1. Konsep Dasar OAuth 2.0: 4 Peran (Roles)
+# 1. Konsep Dasar [[OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/): 4 Peran (Roles)
 
 Langkah pertama dalam memahami OAuth 2.0 adalah memahami dengan tepat tokoh-tokoh (Roles) yang terlibat. RFC 6749 mendefinisikan 4 peran berikut:
 
@@ -38,19 +38,19 @@ graph TD
 1. **Resource Owner (Pemilik Sumber Daya)**
    - Entitas yang memiliki wewenang untuk memberikan hak akses ke sumber daya. Biasanya mengacu pada "pengguna akhir (manusia)". Dalam contoh ini, itu adalah "Anda sendiri, yang merupakan anggota ruang kerja Slack dan memiliki wewenang untuk memposting pesan ke saluran (channel)".
 2. **Client (Klien)**
-   - Aplikasi yang mencoba mengakses server sumber daya dengan izin dari pemilik sumber daya. Dalam contoh ini, itu adalah "Aplikasi Node.js (Slack App) yang sedang Anda kembangkan". Meskipun disebut "klien", aplikasi Web yang berjalan di sisi server juga disebut "klien" dalam konteks OAuth.
-3. **Authorization Server (Server Otorisasi)**
+   - Aplikasi yang mencoba mengakses server sumber daya dengan izin dari pemilik sumber daya. Dalam contoh ini, itu adalah "Aplikasi Node.js (Slack App) yang sedang Anda kembangkan". Meskipun disebut "klien", aplikasi Web yang berjalan di sisi server juga disebut "klien" dalam konteks [OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/).
+3. **[Authorization](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) Server (Server Otorisasi)**
    - Server yang mengotentikasi pemilik sumber daya, mendapatkan otorisasi dari pemilik sumber daya, dan kemudian menerbitkan akses token ke klien. Dalam contoh ini, ini adalah infrastruktur otentikasi Slack yang menyediakan `slack.com/oauth/v2/authorize`.
 4. **Resource Server (Server Sumber Daya)**
    - Server yang meng-hosting sumber daya yang dilindungi, dan menerima serta merespons permintaan akses ke sumber daya menggunakan akses token. Dalam contoh ini, ini adalah titik akhir (endpoint) `slack.com/api/` yang menyediakan API seperti `chat.postMessage`.
 
-Secara singkat, alur OAuth adalah serangkaian prosedur di mana **"Client mendapatkan persetujuan dari Resource Owner, menerima akses token dari Authorization Server, dan menggunakannya untuk mengambil/memanipulasi data dari Resource Server."**
+Secara singkat, alur [OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) adalah serangkaian prosedur di mana **"Client mendapatkan persetujuan dari Resource Owner, menerima akses token dari [Authorization](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) Server, dan menggunakannya untuk mengambil/memanipulasi data dari Resource Server."**
 
 ---
 
 # 2. Anatomi Lengkap Authorization Code Grant (Pemberian Kode Otorisasi)
 
-Ada beberapa alur (grant types) di OAuth 2.0, tetapi yang paling direkomendasikan dan banyak digunakan di lingkungan seperti aplikasi Web di mana kunci rahasia (Client Secret) dapat disimpan dengan aman di sisi server adalah **Authorization Code Grant**.
+Ada beberapa alur (grant types) di [OAuth 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/), tetapi yang paling direkomendasikan dan banyak digunakan di lingkungan seperti aplikasi Web di mana kunci rahasia (Client Secret) dapat disimpan dengan aman di sisi server adalah **Authorization Code Grant**.
 
 Fitur terbesar dari Authorization Code Grant adalah pemisahan yang jelas antara **front channel (komunikasi melalui browser)** dan **back channel (komunikasi langsung antar server)**. Di saluran depan, hanya "kode otorisasi (Authorization Code)" sementara yang diteruskan, dan perolehan "akses token" akhir dilakukan di saluran belakang (back channel), secara drastis mengurangi risiko kebocoran token ke riwayat browser atau perujuk (referrer).
 
@@ -99,7 +99,7 @@ Sebelum menulis kode, Anda perlu mendaftarkan ke sistem Slack bahwa "ada klien b
 3. Di layar "Basic Information" setelah pembuatan, dapatkan dua kredensial penting berikut:
    - **Client ID**: ID yang secara publik dan unik mengidentifikasi aplikasi Anda. Tidak masalah untuk menyertakannya dalam permintaan yang melalui browser (saluran depan).
    - **Client Secret**: String rahasia yang hanya diketahui oleh aplikasi Anda. **Jangan pernah mengeksposnya ke sisi browser, dan jangan melakukan komit (commit) ke GitHub dll.**
-4. Buka layar "OAuth & Permissions" dan daftarkan URL callback di "Redirect URLs". Mengingat ini adalah pengembangan lokal, atur hal berikut:
+4. Buka layar "[OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) & Permissions" dan daftarkan URL callback di "Redirect URLs". Mengingat ini adalah pengembangan lokal, atur hal berikut:
    - `http://localhost:3000/slack/oauth_redirect`
 
 Sekarang persiapannya sudah selesai. Mari kita mulai mengimplementasikan server.
@@ -191,7 +191,7 @@ Location: https://slack.com/oauth/v2/authorize?client_id=123.456&scope=chat%3Awr
 Set-Cookie: connect.sid=...; Path=/; HttpOnly
 ```
 
-Browser pengguna akan segera berpindah ke `Location` yang ditentukan, layar Slack (Consent Screen) akan ditampilkan, dan layar familiar yang mengatakan "My First OAuth App meminta akses ke ruang kerja" akan muncul.
+Browser pengguna akan segera berpindah ke `Location` yang ditentukan, layar Slack (Consent Screen) akan ditampilkan, dan layar familiar yang mengatakan "My First [OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) App meminta akses ke ruang kerja" akan muncul.
 
 ---
 
@@ -291,7 +291,7 @@ String yang diawali dengan `xoxb-` adalah **Bot Access Token** di Slack. Selanju
 
 # 6. Cakupan Token (Token Scope) dan Prinsip Hak Istimewa Minimal (Principle of Least Privilege)
 
-Salah satu konsep terpenting dalam OAuth 2.0 adalah "Cakupan (Scope)". Scope mengacu pada rentang wewenang yang terikat pada akses token.
+Salah satu konsep terpenting dalam [[OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) adalah "Cakupan (Scope)". Scope mengacu pada rentang wewenang yang terikat pada akses token.
 
 Di Slack, wewenang diklasifikasikan dengan sangat detail, yang secara garis besar dibagi menjadi **Bot Token Scopes** dan **User Token Scopes**.
 - `chat:write` (Bot): Izin untuk memposting pesan ke saluran atas nama aplikasi (bot) itu sendiri.
@@ -305,9 +305,9 @@ Mengikuti "Prinsip Hak Istimewa Minimal (Principle of Least Privilege)", yang me
 
 # 7. Keamanan Lebih Lanjut: PKCE (Proof Key for Code Exchange)
 
-Akhir-akhir ini, sebagai mekanisme untuk lebih memperkuat keamanan OAuth 2.0, **PKCE (Proof Key for Code Exchange, RFC 7636, diucapkan "pixy")** telah distandarisasi dan digunakan secara luas.
+Akhir-akhir ini, sebagai mekanisme untuk lebih memperkuat keamanan [[OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/), **PKCE (Proof Key for Code Exchange, RFC 7636, diucapkan "pixy")** telah distandarisasi dan digunakan secara luas.
 
-Awalnya, PKCE dirancang untuk "klien publik" seperti aplikasi asli (iOS/Android) atau SPA (Single Page Application) yang tidak dapat menyimpan `client_secret` dengan aman. Namun saat ini, dalam praktik keamanan terbaik (Draf OAuth 2.1), penggunaan PKCE sangat direkomendasikan bahkan untuk "klien rahasia (confidential client)" di sisi server.
+Awalnya, PKCE dirancang untuk "klien publik" seperti aplikasi asli (iOS/Android) atau SPA (Single Page Application) yang tidak dapat menyimpan `client_secret` dengan aman. Namun saat ini, dalam praktik keamanan terbaik (Draf [OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) 2.1), penggunaan PKCE sangat direkomendasikan bahkan untuk "klien rahasia (confidential client)" di sisi server.
 
 ## Cara Kerja PKCE dan Latar Belakang Matematis
 
@@ -357,19 +357,19 @@ Akses token (`xoxb-...`) ibarat "kunci duplikat" ke ruang kerja Slack. Anda tida
 Pastikan untuk mengenkripsinya di lapisan aplikasi menggunakan kriptografi kunci simetris yang kuat seperti **AES-256-GCM** sebelum menyimpannya di DB. Kunci master (master key) untuk enkripsi/dekripsi harus dikelola secara ketat menggunakan layanan manajemen kunci yang aman seperti AWS KMS (Key Management [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)) atau GCP Cloud KMS.
 
 ## 2. Rotasi Token (Token Rotation)
-Terus menggunakan token yang berlaku lama membawa risiko. Pada implementasi OAuth terbaru, sangat disarankan untuk menerapkan mekanisme di mana token akses baru diterbitkan ulang setiap beberapa jam (Token Rotation) dengan menggunakan "Token Penyegaran (Refresh Token)". Di Slack API juga dimungkinkan untuk mengaktifkan rotasi token melalui pengaturan opsi.
+Terus menggunakan token yang berlaku lama membawa risiko. Pada implementasi [OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) terbaru, sangat disarankan untuk menerapkan mekanisme di mana token akses baru diterbitkan ulang setiap beberapa jam (Token Rotation) dengan menggunakan "Token Penyegaran (Refresh Token)". Di Slack API juga dimungkinkan untuk mengaktifkan rotasi token melalui pengaturan opsi.
 
 ---
 
 # Kesimpulan
 
-Artikel ini menjelaskan Authorization Code Grant Flow pada OAuth 2.0 secara detail dengan contoh kode implementasi Node.js spesifik untuk integrasi Slack App.
+Artikel ini menjelaskan [Authorization](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) Code Grant Flow pada [OAuth 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) secara detail dengan contoh kode implementasi Node.js spesifik untuk integrasi Slack App.
 
 1. Dengan memahami **4 peran (RO, Client, AS, RS)**, arsitektur keseluruhan sistem menjadi lebih jelas.
 2. **Authorization Code Grant** menjamin keamanan dengan memanfaatkan saluran komunikasi (front/back channel) secara cerdik antara browser dan server.
 3. Memahami mekanisme kriptografis di baliknya, seperti pertahanan [CSRF](https://kenji.blog/id/p/web-security-basics-cors-csp/) menggunakan parameter **`state`** dan pencegahan serangan intersep kode otorisasi menggunakan **PKCE**, adalah jalan pintas menuju implementasi yang aman.
 4. Desain cakupan (scope) berdasarkan **Prinsip Hak Istimewa Minimal (Principle of Least Privilege)** dan enkripsi saat menyimpan di DB adalah elemen yang sangat penting dalam pengoperasiannya.
 
-OAuth 2.0 sangat dalam, dengan sejumlah besar spesifikasi bahkan hanya di dalam RFC, tetapi dengan mempelajari dan mempraktikkannya langsung pada platform aktual (Slack) seperti ini, Anda pasti akan merasakan filosofi desainnya yang elegan dan mekanisme keamanannya yang kokoh. Semoga pengetahuan dalam artikel ini bermanfaat untuk pengembangan aplikasi Anda di masa depan dan implementasi integrasi API.
+[[OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) 2.0](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) sangat dalam, dengan sejumlah besar spesifikasi bahkan hanya di dalam RFC, tetapi dengan mempelajari dan mempraktikkannya langsung pada platform aktual (Slack) seperti ini, Anda pasti akan merasakan filosofi desainnya yang elegan dan mekanisme keamanannya yang kokoh. Semoga pengetahuan dalam artikel ini bermanfaat untuk pengembangan aplikasi Anda di masa depan dan implementasi integrasi API.
 
 

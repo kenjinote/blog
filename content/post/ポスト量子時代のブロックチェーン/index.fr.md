@@ -12,7 +12,7 @@ description: "L'arrivée du 'Q-Day', où la puissance de calcul phénoménale de
 
 ## 1. Introduction : L'approche de l'ère post-quantique et la crise de la blockchain
 
-Depuis la création du [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) par Satoshi Nakamoto en 2009, la technologie de la blockchain s'est développée pour devenir l'infrastructure des systèmes financiers et des applications à travers le monde, en tant que « registre décentralisé et infalsifiable ». Cette sécurité robuste repose sur des technologies cryptographiques modernes : la **cryptographie à clé publique (Public Key [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)** et les **fonctions de hachage cryptographique ([Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphic Hash Functions)**.
+Depuis la création du [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) par Satoshi Nakamoto en 2009, la technologie de la blockchain s'est développée pour devenir l'infrastructure des systèmes financiers et des applications à travers le monde, en tant que « registre décentralisé et infalsifiable ». Cette sécurité robuste repose sur des technologies cryptographiques modernes : la **cryptographie à clé publique ([Public Key](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphy)** et les **fonctions de hachage cryptographique ([Crypto](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)s)**.
 
 Ces technologies cryptographiques garantissent la sécurité en s'appuyant sur la « difficulté de calcul » mathématique, c'est-à-dire qu'un ordinateur classique (les PC ou supercalculateurs que nous utilisons aujourd'hui) mettrait un temps comparable à l'âge de l'univers pour les déchiffrer.
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. Les fondements de la cryptographie sur les courbes elliptiques (ECDSA) et la difficulté de calcul
 
-De nombreuses blockchains, dont le [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) et l'Ethereum, utilisent l'**algorithme de signature numérique sur courbe elliptique (ECDSA : Elliptic Curve Digital Signature Algorithm)** comme algorithme de signature numérique. Plus précisément, le [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) utilise une courbe elliptique avec le paramètre `secp256k1`.
+De nombreuses blockchains, dont le [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) et l'Ethereum, utilisent l'**algorithme de signature numérique sur courbe elliptique (ECDSA : Elliptic Curve [Digital Signature](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) Algorithm)** comme algorithme de signature numérique. Plus précisément, le [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) utilise une courbe elliptique avec le paramètre `secp256k1`.
 
 La sécurité de la cryptographie sur les courbes elliptiques dépend de la difficulté de calcul du **problème du logarithme discret sur courbe elliptique (ECDLP : Elliptic Curve Discrete Logarithm Problem)**.
 La courbe elliptique est définie par l'équation sous forme de Weierstrass suivante :
@@ -62,7 +62,7 @@ En utilisant un ordinateur classique, calculer la clé privée $k$ à partir de 
 
 ### 2.2. L'effondrement causé par l'algorithme de Shor ([Shor's Algorithm](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/))
 
-Cependant, l'**algorithme de Shor**, publié par Peter Shor en 1994, a complètement détruit cette hypothèse. L'algorithme de Shor a été initialement proposé pour résoudre le problème de la factorisation en nombres premiers (la base du chiffrement RSA) en temps polynomial, mais il s'applique également au problème du logarithme discret et au problème du logarithme discret sur courbe elliptique.
+Cependant, l'**algorithme de Shor**, publié par Peter Shor en 1994, a complètement détruit cette hypothèse. L'algorithme de Shor a été initialement proposé pour résoudre le problème de la factorisation en nombres premiers (la base du chiffrement [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)) en temps polynomial, mais il s'applique également au problème du logarithme discret et au problème du logarithme discret sur courbe elliptique.
 
 Le cœur de l'algorithme de Shor réside dans l'utilisation de la **transformée de Fourier quantique (QFT : Quantum Fourier Transform)** pour trouver rapidement la « période (Period) » d'une fonction.
 
@@ -112,7 +112,7 @@ Le nombre de portes quantiques requis pour l'ensemble de ce processus est $\math
 
 L'autre menace est l'**algorithme de Grover**, proposé par Lov Grover en 1996. Celui-ci a un impact majeur sur les fonctions de hachage (ex. : SHA-256).
 
-Dans la blockchain, les fonctions de hachage sont utilisées pour garantir l'intégrité des données, générer des adresses et servent de base au **minage PoW (Proof of Work)** du [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/). L'inversion d'une fonction de hachage (calcul de la préimage) peut être considérée comme un « problème de recherche dans une base de données non structurée », consistant à trouver une valeur d'entrée $x$ telle que $H(x) = y$ pour une valeur de sortie $y$ donnée.
+Dans la blockchain, les fonctions de hachage sont utilisées pour garantir l'intégrité des données, générer des adresses et servent de base au **minage [PoW](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/) (Proof of Work)** du [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/). L'inversion d'une fonction de hachage (calcul de la préimage) peut être considérée comme un « problème de recherche dans une base de données non structurée », consistant à trouver une valeur d'entrée $x$ telle que $H(x) = y$ pour une valeur de sortie $y$ donnée.
 
 Dans un ordinateur classique, pour trouver la bonne réponse parmi $N$ possibilités, il faut en moyenne $\frac{N}{2}$ essais, et $N$ essais dans le pire des cas. En d'autres termes, la complexité est $\mathcal{O}(N)$.
 Cependant, l'algorithme de Grover utilise une technique quantique appelée « amplification d'amplitude (Amplitude Amplification) ». En amplifiant itérativement l'amplitude de probabilité de l'état correspondant à la bonne réponse parmi toutes les possibilités dans un état de superposition, le temps de recherche est réduit à sa racine carrée.
@@ -141,7 +141,7 @@ Dans un monde où le déchiffrement de l'ECDSA par un ordinateur quantique devie
 Les adresses [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) ([P2P](https://kenji.blog/fr/p/webrtc-realtime-communication-p2p/)KH : Pay-to-Public-Key-Hash ou P2WPKH : Pay-to-Witness-Public-Key-Hash) n'utilisent pas la clé publique elle-même, mais un hachage multiple de la clé publique.
 
 $$
-\text{[Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
+\text{[Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{[Public Key](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)})))
 $$
 
 Comme mentionné précédemment, les fonctions de hachage résistent aux attaques quantiques (l'algorithme de Grover), il est donc impossible, même pour un ordinateur quantique, de retrouver la « clé publique » d'origine à partir de « l'adresse » (la valeur de hachage).
@@ -337,7 +337,7 @@ En tant qu'utilisateurs ordinaires de crypto-actifs et investisseurs, nous n'avo
 * **Éviter la réutilisation des adresses** : Pour des raisons non seulement de confidentialité mais aussi de sécurité, assurez-vous de ne pas conserver vos fonds à long terme sur des « adresses utilisées (des adresses ayant envoyé des fonds au moins une fois, dont la clé publique a été exposée sur la blockchain) ».
 * **Prêter attention aux tendances technologiques** : Restez à l'affût des actualités concernant les discussions sur la transition PQC et les hard forks des principaux réseaux, comme les BIP de [Bitcoin](https://kenji.blog/fr/p/cryptocurrency-and-bitcoin/) et les EIP d'Ethereum, afin de pouvoir procéder à la migration de votre portefeuille de manière appropriée lorsque cela sera nécessaire.
 
-L'histoire de la blockchain est aussi l'histoire d'améliorations constantes et de résilience (capacité de récupération) face aux nouvelles menaces technologiques. Tout comme l'écosystème a surmonté les problèmes de scalabilité et les problèmes environnementaux (par la transition du PoW au PoS, par exemple), il cherchera sans aucun doute des solutions et s'adaptera globalement à cette menace quantique sans précédent.
+L'histoire de la blockchain est aussi l'histoire d'améliorations constantes et de résilience (capacité de récupération) face aux nouvelles menaces technologiques. Tout comme l'écosystème a surmonté les problèmes de scalabilité et les problèmes environnementaux (par la transition du [PoW](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/) au [PoS](https://kenji.blog/fr/p/blockchain-technology-smart-contract-distributed-ledger/), par exemple), il cherchera sans aucun doute des solutions et s'adaptera globalement à cette menace quantique sans précédent.
 Plutôt que d'être détruites par leur confrontation, on peut s'attendre à ce que la nouvelle sagesse de l'humanité qu'est l'ordinateur quantique et la technologie de confiance qu'est le registre décentralisé soient sublimées en un système robuste fusionné à un niveau supérieur.
 
 ---

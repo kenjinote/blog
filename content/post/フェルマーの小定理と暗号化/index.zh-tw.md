@@ -11,11 +11,11 @@ tags: ["Fermat's Little Theorem", "RSA", "Primality Test", "Math", "Python", "C+
 
 ## 1. 簡介：支撐現代密碼學的數學奧秘
 
-在現代數位社會，特別是透過網際網路進行通訊時，「加密」已成為不可或缺的基礎技術。我們能透過網頁瀏覽器經由 HTTPS 安全地瀏覽網站、在網路銀行進行金融交易，以及在通訊應用程式中進行私密對話，全是因為有高度數學理論支持的加密協定在背後運作。其中扮演特別重要角色的就是「公開金鑰加密」，而其代表正是 **RSA 加密** 。
+在現代數位社會，特別是透過網際網路進行通訊時，「加密」已成為不可或缺的基礎技術。我們能透過網頁瀏覽器經由 HTTPS 安全地瀏覽網站、在網路銀行進行金融交易，以及在通訊應用程式中進行私密對話，全是因為有高度數學理論支持的加密協定在背後運作。其中扮演特別重要角色的就是「公開金鑰加密」，而其代表正是 **[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密** 。
 
 包含 RSA 加密在內的許多加密演算法，其安全性與正確性在很大程度上依賴於 17 世紀法國數學家皮耶·德·費馬（[Pierre de Fermat](https://kenji.blog/zh-tw/p/fermat/)）所發現的一個非常優美且強大的定理。這就是 **[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)（[Fermat's Little Theorem](https://kenji.blog/zh-tw/p/fermats-little-theorem/)）** 。此外，將其一般化的[李昂哈德·歐拉](https://kenji.blog/zh-tw/p/euler/)（[Leonhard Euler](https://kenji.blog/zh-tw/p/euler/)）定理，在密碼學理論中也發揮了決定性的作用。
 
-本篇文章將從基礎開始，徹底解說[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)這個純數學的發現，是如何應用於現代實用的加密技術，特別是「質數判定」與「RSA 加密」。這是一份非常詳細的技術指南，內容涵蓋數學證明、加密與解密機制，以及使用 C++ 與 Python 進行具體演算法實作。
+本篇文章將從基礎開始，徹底解說[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)這個純數學的發現，是如何應用於現代實用的加密技術，特別是「質數判定」與「[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密」。這是一份非常詳細的技術指南，內容涵蓋數學證明、加密與解密機制，以及使用 C++ 與 Python 進行具體演算法實作。
 
 ---
 
@@ -42,7 +42,7 @@ $$
 3. **乘法**: 若 $a \equiv b \pmod n$ 且 $c \equiv d \pmod n$，則 $a \times c \equiv b \times d \pmod n$
 4. **指數**: 若 $a \equiv b \pmod n$，則對於任意自然數 $k$，$a^k \equiv b^k \pmod n$ 成立
 
-不過，關於 **除法** 必須特別注意。一般來說，即使 $a \times c \equiv b \times c \pmod n$，也不能直接將兩邊除以 $c$ 得出 $a \equiv b \pmod n$。這只有在 $c$ 和 $n$ 互質（最大公因數為 1）的情況下才成立。這個「模反元素（模逆元）」的概念，在後文將提到的 RSA 加密金鑰生成中非常重要。
+不過，關於 **除法** 必須特別注意。一般來說，即使 $a \times c \equiv b \times c \pmod n$，也不能直接將兩邊除以 $c$ 得出 $a \equiv b \pmod n$。這只有在 $c$ 和 $n$ 互質（最大公因數為 1）的情況下才成立。這個「模反元素（模逆元）」的概念，在後文將提到的 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密金鑰生成中非常重要。
 
 ---
 
@@ -112,7 +112,7 @@ $$
 
 ## 4. 歐拉函數與歐拉定理
 
-[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)是關於「質數 $p$」的定理，而將其推廣至「任意正整數 $n$」的人，就是[李昂哈德·歐拉](https://kenji.blog/zh-tw/p/euler/)。為了理解 RSA 加密，這個推廣是不可或缺的。
+[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)是關於「質數 $p$」的定理，而將其推廣至「任意正整數 $n$」的人，就是[李昂哈德·歐拉](https://kenji.blog/zh-tw/p/euler/)。為了理解 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密，這個推廣是不可或缺的。
 
 ### 4.1 歐拉函數 $\phi(n)$
 
@@ -138,7 +138,7 @@ $$
 
 ## 5. 尋找巨大的質數：費馬質數判定法
 
-在加密技術（如 RSA 加密與 Diffie-Hellman 金鑰交換等）中，必須能高速找出長達數百位數的「巨大質數」。然而，如果要判定一個巨大數字 $N$ 是否為質數，若使用測試除以從 $2$ 到 $\sqrt{N}$ 的所有數字是否能整除的「試除法」，將會花費等同於宇宙壽命般漫長的時間。
+在加密技術（如 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密與 Diffie-Hellman 金鑰交換等）中，必須能高速找出長達數百位數的「巨大質數」。然而，如果要判定一個巨大數字 $N$ 是否為質數，若使用測試除以從 $2$ 到 $\sqrt{N}$ 的所有數字是否能整除的「試除法」，將會花費等同於宇宙壽命般漫長的時間。
 
 因此，反過來利用[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的「機率性質數判定法」，即 **費馬質數判定法（[Fermat](https://kenji.blog/zh-tw/p/fermat/) Primality Test）** 便應運而生。
 
@@ -281,9 +281,9 @@ else:
 
 ---
 
-## 7. 在 RSA 加密中的應用：費馬與歐拉結果的地方
+## 7. 在 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密中的應用：費馬與歐拉結果的地方
 
-[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)（以及歐拉定理）最偉大的應用領域，就是 1977 年由 Rivest、Shamir 與 Adleman 三人所開發的 **RSA 加密** 。
+[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)（以及歐拉定理）最偉大的應用領域，就是 1977 年由 Rivest、Shamir 與 Adleman 三人所開發的 **[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密** 。
 RSA 加密是一個名為「公開金鑰加密」的劃時代系統，它實現了一種機制：用來加密的金鑰（公開金鑰）對全世界公開，但用來解密的金鑰（私鑰）只有接收者本人知道。
 
 這種不對稱性，是基於「將巨大的合數進行質因數分解是極度困難的」這一計算複雜度上的安全性。
@@ -356,7 +356,7 @@ $$ e \cdot d = 1 + k \cdot \phi(N) $$
 將其代入上面的式子：
 $$ M^{ed} = M^{1 + k \cdot \phi(N)} = M \cdot M^{k \cdot \phi(N)} = M \cdot (M^{\phi(N)})^k \pmod N $$
 
-在這裡 **歐拉定理** ($M^{\phi(N)} \equiv 1 \pmod N$) 登場了。（※嚴格來說，$M$ 和 $N$ 必須互質，但在 RSA 中 $M$ 和 $N$ 不互質的機率是天文數字級別地低，且透過中國剩餘定理可以證明即使不互質也成立）。
+在這裡 **歐拉定理** ($M^{\phi(N)} \equiv 1 \pmod N$) 登場了。（※嚴格來說，$M$ 和 $N$ 必須互質，但在 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 中 $M$ 和 $N$ 不互質的機率是天文數字級別地低，且透過中國剩餘定理可以證明即使不互質也成立）。
 
 應用歐拉定理，$M^{\phi(N)} \equiv 1$，因此：
 $$ M \cdot (1)^k \equiv M \pmod N $$
@@ -468,7 +468,7 @@ if __name__ == '__main__':
 
 在 17 世紀，當皮耶·德·費馬發現這個「小定理」時，沒有人認為這會有什麼實際用途。費馬本人也是出於純粹的數學探求心在進行數論的研究。
 
-然而，大約 300 年後的 1970 年代，在電腦網路的黎明期，作為確立安全通訊協定不可或缺的加密技術，費馬定理實現了戲劇性的復活。基於[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的質數判定技術，以及基於歐拉定理的 RSA 加密，字面上支撐著現代的網際網路基礎設施。
+然而，大約 300 年後的 1970 年代，在電腦網路的黎明期，作為確立安全通訊協定不可或缺的加密技術，費馬定理實現了戲劇性的復活。基於[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的質數判定技術，以及基於歐拉定理的 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密，字面上支撐著現代的網際網路基礎設施。
 
 我們每天不經意發送的 LINE 訊息、在 Amazon 上的購物，全都是在這個 $a^{p-1} \equiv 1 \pmod p$ 簡單而優美的數學公式之上舞動著的。[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)告訴我們，無論數學多麼抽象，總有一天必定會派上用場。
 

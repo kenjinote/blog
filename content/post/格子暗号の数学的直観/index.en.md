@@ -11,7 +11,7 @@ tags: ["Lattice", "PQC", "LWE", "Cryptography", "Math"]
 
 # 1. Introduction: The Dawn of Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (PQC) and the Rise of Lattice-based [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy
 
-The digital infrastructure of modern society is supported by public-key cryptography technologies such as RSA cryptography and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC). These cryptographic schemes base their security on the mathematical difficulty of problems like the "prime factorization problem" and the "discrete logarithm problem," which are believed to be inefficient (requiring exponential time) to solve with conventional classical computers.
+The digital infrastructure of modern society is supported by public-key cryptography technologies such as [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC). These cryptographic schemes base their security on the mathematical difficulty of problems like the "prime factorization problem" and the "discrete logarithm problem," which are believed to be inefficient (requiring exponential time) to solve with conventional classical computers.
 
 However, "Shor's algorithm," published by Peter Shor in 1994, sent shockwaves through the cryptographic world. This algorithm mathematically proved that once a large-scale quantum computer is realized, it would be able to solve the prime factorization problem and the discrete logarithm problem in polynomial time. This means that the widely used public-key cryptography of today will become completely decipherable in the future.
 
@@ -152,7 +152,7 @@ Now that we understand the difficulty of the LWE problem, let's look at the basi
 3. Generate a random matrix $A \in \mathbb{Z}_q^{m \times n}$.
 4. Choose a small error vector $\mathbf{e} \in \mathbb{Z}_q^m$ from an error distribution such as a discrete Gaussian distribution.
 5. Calculate the vector $\mathbf{b} = A \mathbf{s} + \mathbf{e} \pmod q$.
-6. The Public Key will be $(A, \mathbf{b})$.
+6. The [Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) will be $(A, \mathbf{b})$.
 7. The Secret Key will be $\mathbf{s}$.
 
 The public key is exactly an "instance of the LWE problem." Finding the secret key $\mathbf{s}$ from the public key $(A, \mathbf{b})$ is equivalent to solving the Search LWE problem, thereby ensuring security.
@@ -312,7 +312,7 @@ Currently, "CRYSTALS-Kyber" (standardized name: ML-KEM), which NIST selected as 
 
 Finally, let's touch upon the core issue: "Why is lattice-based cryptography considered unbreakable even when using quantum computers?"
 
-Shor's algorithm, which allows quantum computers to break RSA cryptography and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy, is essentially an algorithm that solves the "Hidden Subgroup Problem (HSP)." The mathematical structure (finite abelian groups) behind RSA and ECC has periodicity, and by using a specific operation of quantum algorithms called the Quantum Fourier Transform (QFT), this period (hidden subgroup) can be extracted all at once.
+Shor's algorithm, which allows quantum computers to break [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy, is essentially an algorithm that solves the "Hidden Subgroup Problem (HSP)." The mathematical structure (finite abelian groups) behind [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) and ECC has periodicity, and by using a specific operation of quantum algorithms called the Quantum Fourier Transform (QFT), this period (hidden subgroup) can be extracted all at once.
 
 However, lattice problems are fundamentally different. Although lattices also have periodicity, what is required in SVP and CVP is a geometric, non-linear property such as "shortest distance" or "removal of noise." Even if a "Quantum Fourier Transform over an abelian group" like Shor's algorithm is applied directly, useful information that would be the answer to the lattice problem cannot be efficiently extracted. To date, no quantum algorithm that can solve SVP or LWE in polynomial time has been discovered, and it is widely believed that even with the parallel computing power of quantum computers, the only effective means is near-brute-force search (about the level of square root speedup by Grover's algorithm).
 

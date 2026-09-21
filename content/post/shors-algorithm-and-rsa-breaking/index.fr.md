@@ -10,11 +10,11 @@ description: 'Explique comment la cryptographie RSA, qui soutient l''infrastruct
 
 ## Introduction : À la croisée de la cryptographie et de l'informatique quantique
 
-Dans la société Internet moderne, la cryptographie à clé publique est la base de la protection du secret des communications. Le représentant le plus célèbre est le "cryptage RSA", développé en 1977 par Ron Rivest, Adi Shamir et Leonard Adleman. Du paiement des achats en ligne que nous utilisons tous les jours, à la navigation sur des sites Web (HTTPS), en passant par l'envoi et la réception d'e-mails, le cryptage RSA fonctionne comme le cœur de l'infrastructure Internet.
+Dans la société Internet moderne, la cryptographie à clé publique est la base de la protection du secret des communications. Le représentant le plus célèbre est le "cryptage [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)", développé en 1977 par Ron Rivest, Adi Shamir et Leonard Adleman. Du paiement des achats en ligne que nous utilisons tous les jours, à la navigation sur des sites Web (HTTPS), en passant par l'envoi et la réception d'e-mails, le cryptage RSA fonctionne comme le cœur de l'infrastructure Internet.
 
 Cependant, avec l'avènement de l'"ordinateur quantique", il a été souligné que cette sécurité pourrait être fondamentalement bouleversée. Dans les médias, on voit parfois des gros titres sensationnels comme : "Une fois l'ordinateur quantique achevé, les mots de passe et les cryptages du monde entier seront décryptés en quelques secondes". Est-ce vraiment le cas ?
 
-Cet article se penche sur les mécanismes de la méthode classique de décryptage GNFS (Crible du corps de nombres généralisé) et sur l'algorithme définitif de décryptage utilisant des ordinateurs quantiques, l'"[Algorithme de Shor](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/)" ([Shor's Algorithm](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/)). Nous expliquerons de manière simple des concepts avancés tels que la transformée de Fourier quantique et la recherche de période, et examinerons en détail l'état actuel du matériel quantique à l'ère NISQ (Noisy Intermediate-Scale Quantum) ainsi que les obstacles nécessaires pour briser réellement le RSA-2048.
+Cet article se penche sur les mécanismes de la méthode classique de décryptage GNFS (Crible du corps de nombres généralisé) et sur l'algorithme définitif de décryptage utilisant des ordinateurs quantiques, l'"[Algorithme de Shor](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/)" ([Shor's Algorithm](https://kenji.blog/fr/p/quantum-computing-shors-algorithm/)). Nous expliquerons de manière simple des concepts avancés tels que la transformée de Fourier quantique et la recherche de période, et examinerons en détail l'état actuel du matériel quantique à l'ère NISQ (Noisy Intermediate-Scale Quantum) ainsi que les obstacles nécessaires pour briser réellement le [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/)-2048.
 
 ---
 
@@ -122,7 +122,7 @@ Lorsque le premier registre est mesuré après l'application de la QFT, un entie
 
 Ce résultat de mesure $ c $ est renvoyé à l'ordinateur classique pour créer la fraction $ \frac{c}{2^n} \approx \frac{j}{r} $. Ensuite, en calculant une valeur approximative à l'aide d'une méthode mathématique appelée "expansion en fraction continue" (Continued fraction expansion), on peut brillamment extraire le dénominateur, la période $ r $.
 
-Une fois que l'on connaît $ r $, il suffit de calculer les facteurs premiers de $ N $ en utilisant la formule de l'étape 1, et le cryptage RSA est complètement déchiffré.
+Une fois que l'on connaît $ r $, il suffit de calculer les facteurs premiers de $ N $ en utilisant la formule de l'étape 1, et le cryptage [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) est complètement déchiffré.
 
 ---
 
@@ -183,5 +183,5 @@ Les principaux logiciels et plateformes tels que Google Chrome et Apple iMessage
 
 L'ordinateur quantique est passé d'un conte de fées de science-fiction à un véritable défi d'ingénierie. L'algorithme de Shor est une grande réalisation intellectuelle de l'humanité combinant les mathématiques et la mécanique quantique, mais en même temps, il cache un "pouvoir destructeur" qui ébranle les fondements de notre société numérique.
 
-Le cryptage RSA ne deviendra pas inutilisable dès demain. Cependant, compte tenu de l'évolution de la technologie quantique et du risque du "Store Now, Decrypt Later", une migration massive vers la PQC, qui restera dans l'histoire de la cryptographie, a déjà commencé. Nous sommes actuellement témoins d'un changement de paradigme en matière de sécurité de l'information.
+Le cryptage [RSA](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/) ne deviendra pas inutilisable dès demain. Cependant, compte tenu de l'évolution de la technologie quantique et du risque du "Store Now, Decrypt Later", une migration massive vers la PQC, qui restera dans l'histoire de la cryptographie, a déjà commencé. Nous sommes actuellement témoins d'un changement de paradigme en matière de sécurité de l'information.
 

@@ -11,7 +11,7 @@ tags: ["C++", "Miller-Rabin", "Prime Numbers", "Algorithm"]
 
 # Introduction: Why Do We Need Fast Primality Testing?
 
-In the worlds of computer science, cryptography, and competitive programming, determining whether a given number is prime quickly and accurately is an extremely important and fundamental task. For example, public-key cryptography such as RSA, which underpins the security of modern internet society, relies on the generation of massive prime numbers and the difficulty of factoring their product as the basis of its security. Therefore, it is no exaggeration to say that the technology to instantly identify whether a massive number is prime is a technology that supports the foundation of digital society.
+In the worlds of computer science, cryptography, and competitive programming, determining whether a given number is prime quickly and accurately is an extremely important and fundamental task. For example, public-key cryptography such as [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/), which underpins the security of modern internet society, relies on the generation of massive prime numbers and the difficulty of factoring their product as the basis of its security. Therefore, it is no exaggeration to say that the technology to instantly identify whether a massive number is prime is a technology that supports the foundation of digital society.
 
 Also, in competitive programming (such as AtCoder and Codeforces), primality testing is a frequently occurring theme. For massive inputs with constraints like $N \le 10^{18}$, in situations where you need to perform tens of thousands of primality tests within 1 second, traditional, naive algorithms will certainly result in a Time Limit Exceeded (TLE).
 

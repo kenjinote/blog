@@ -283,7 +283,7 @@ Ketika jumlah kota melampaui $N=20$, solusi eksak (brute-force) akan memakan wak
 
 Saat ini, sistem kriptografi di seluruh dunia (seperti SSL/TLS yang digunakan dalam belanja online, dan blockchain seperti Bitcoin) memanfaatkan asimetri **"butuh waktu yang sangat lama untuk dipecahkan, tetapi verifikasi dapat dilakukan dalam sekejap"** .
 
-Faktorisasi prima yang menjadi inti dari kriptografi RSA adalah salah satunya.
+Faktorisasi prima yang menjadi inti dari kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) adalah salah satunya.
 Misalkan seseorang membuktikan bahwa $P = NP$ dan membangun algoritma ajaib (pembuktian konstruktif) yang memecahkan masalah NP dalam waktu polinomial. Hal itu akan memicu **pergeseran paradigma dalam peradaban manusia** sebagai berikut.
 
 1. **Runtuhnya Kriptografi**: Kriptografi kunci publik modern seperti RSA dan kurva eliptik akan segera dapat ditembus, dan keamanan digital akan hancur lebur.

@@ -321,7 +321,7 @@ Setelah restart, `systemctl start docker` akan berfungsi persis seperti di lingk
 
 Saat melakukan kloning SSH dari Git atau koneksi SSH ke server jarak jauh, mengelola kunci SSH secara terpisah di sisi Windows dan sisi WSL sangatlah merepotkan. Untuk menyeimbangkan antara keamanan dan kenyamanan, kami akan mengonfigurasi jembatan untuk menghubungkan agen SSH (atau manajer kata sandi seperti 1Password) yang berjalan di Windows ke sisi WSL.
 
-Di sini, kita akan membahas pendekatan yang paling aman dan modern, yaitu menggunakan **fitur agen SSH 1Password** atau **OpenSSH Authentication Agent dari Windows** dan meneruskannya ke soket domain UNIX WSL2 menggunakan `npiperelay` atau `socat`.
+Di sini, kita akan membahas pendekatan yang paling aman dan modern, yaitu menggunakan **fitur agen SSH 1Password** atau **OpenSSH [Authentication](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/) Agent dari Windows** dan meneruskannya ke soket domain UNIX WSL2 menggunakan `npiperelay` atau `socat`.
 
 ### Penerusan Soket ssh-agent
 

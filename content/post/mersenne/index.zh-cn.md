@@ -113,7 +113,7 @@ def is_mersenne_prime(p):
     return s == 0
 ```
 
-发现的巨大素数在支持信息社会方面发挥着关键作用，可作为现代公钥密码系统（如RSA）安全性评估以及随机数生成算法（如梅森旋转算法）的基础。
+发现的巨大素数在支持信息社会方面发挥着关键作用，可作为现代公钥密码系统（如[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)）安全性评估以及随机数生成算法（如梅森旋转算法）的基础。
 
 ## 声学与音乐理论的贡献：梅森定律
 

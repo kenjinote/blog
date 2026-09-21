@@ -67,7 +67,7 @@ Quanto maior for a estipulação nas tentativas `num_samples`, maiores níveis d
 
 ### Exemplo Concreto 2: Testes à Primalidade de Miller-Rabin
 
-Este é um algoritmo que avalia num método ultrarrápido a existência de "primos" aplicados nos cômputos a grandes números. Para gerar chaves criptográficas (ex: RSA), são exigidos números primos de centenas de dígitos; Aplicando os moldes em divisão determinísticos das lógicas face testes iterativos progressivos a ($2, 3, 5, \dots$), nem as eras estelares chegariam até completar todos os cálculos no tempo em curso.
+Este é um algoritmo que avalia num método ultrarrápido a existência de "primos" aplicados nos cômputos a grandes números. Para gerar chaves criptográficas (ex: [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)), são exigidos números primos de centenas de dígitos; Aplicando os moldes em divisão determinísticos das lógicas face testes iterativos progressivos a ($2, 3, 5, \dots$), nem as eras estelares chegariam até completar todos os cálculos no tempo em curso.
 
 Aplica-se aqui um método em Monte Carlo chamado **"Teste de Primalidade de Miller-Rabin"**.
 Dada o número base a avaliar por via do $n$, recorre no processamento do modelo escolhendo pseudoraleatoriamente por seleção à base do argumento basilar - $a$, operando perante a lógica num limite das regras pelo pequeno Teorema estipulador nas expansões procedimentais face equações de [Fermat](https://kenji.blog/pt/p/fermat/).
@@ -128,7 +128,7 @@ Numa formatação deste tipo, o seu cômputo base é exato perante o postulado s
 
 ### Exemplo Concreto das atuações 2: Na Modelagem e base construtiva aos - Hash Tables 
 
-Mais um dos planos face à formulação basilar e metodologias Las Vegas. Traduz por aplicabilidades num pressuposto da constituição na via - "Perfect Hash Functions" (Construções das avaliações e funcões - Hash perfeitamente equilibradas perante colisão e anomalia).
+Mais um dos planos face à formulação basilar e metodologias Las Vegas. Traduz por aplicabilidades num pressuposto da constituição na via - "Perfect [Hash Function](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)s" (Construções das avaliações e funcões - Hash perfeitamente equilibradas perante colisão e anomalia).
 Assuma com parâmetro num data agrupado por definições que anseiam perante a premissa à constituições nas estruturas base ao armazenamento por matriz (Hash). Com garantias à abolição global da formulação sem colisões estruturais aos cômputos por igualdades sobre valores em 2 matrizes em dados base em cômputos num modelo à formatação na igual identidade do output de cômputo "Key - Hash").
 
 Nestas condicionalidades, é adotada num postulado em processos perante atuações algorítmicas o modelo avaliatório :  "Na estipulação pseudoaleatórias sobre a função e ao aplicar perante verificações em toda a malha no data contido em processamentos; No cômputo avaliatório em colisão num mínimo ocorrência base d'uma formatação; Rejeitar e reiniciar sobre novas abordagens nas atribuições da base com adoção pseudoaleatória - recomeçando perante zero d'uma nova volta funcional avaliatória ao matriz - das Hash Tables".

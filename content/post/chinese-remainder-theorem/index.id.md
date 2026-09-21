@@ -14,7 +14,7 @@ tags:
 
 ## Pendahuluan
 
-Teorema Sisa Tiongkok ([Chinese Remainder Theorem](https://kenji.blog/id/p/chinese-remainder-theorem/), disingkat CRT) adalah salah satu teorema yang paling penting dan indah dalam teori bilangan. Asal-usulnya berawal dari naskah matematika Tiongkok kuno "Sunzi Suanjing" yang diyakini disusun antara abad ke-3 hingga ke-5. Berawal dari masalah aritmatika sederhana di zaman kuno, teorema ini kini memainkan peran yang sangat penting dalam teknologi kriptografi kunci publik, seperti **Kriptografi RSA**, yang mengamankan komunikasi internet kita sehari-hari setelah ribuan tahun.
+Teorema Sisa Tiongkok ([Chinese Remainder Theorem](https://kenji.blog/id/p/chinese-remainder-theorem/), disingkat CRT) adalah salah satu teorema yang paling penting dan indah dalam teori bilangan. Asal-usulnya berawal dari naskah matematika Tiongkok kuno "Sunzi Suanjing" yang diyakini disusun antara abad ke-3 hingga ke-5. Berawal dari masalah aritmatika sederhana di zaman kuno, teorema ini kini memainkan peran yang sangat penting dalam teknologi kriptografi kunci publik, seperti **Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)**, yang mengamankan komunikasi internet kita sehari-hari setelah ribuan tahun.
 
 Pada artikel ini, kita akan membahas **Teorema Sisa Tiongkok** secara detail, mulai dari latar belakang sejarahnya, definisi matematis yang ketat, langkah-langkah komputasi konkret, hingga aplikasinya dalam teori kriptografi modern, disertai dengan ilustrasi dan contoh konkret.
 
@@ -103,7 +103,7 @@ $233 \equiv 23 \pmod{105}$
 
 Dengan demikian, solusi positif terkecilnya adalah **23**, yang secara sempurna sesuai dengan solusi Sunzi.
 
-## Aplikasi di Era Modern: Kriptografi RSA dan CRT
+## Aplikasi di Era Modern: Kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dan CRT
 
 Teka-teki kuno **Teorema Sisa Tiongkok** ini memiliki aplikasi praktis yang sangat berguna di masyarakat digital modern. Contoh utamanya adalah percepatan dekripsi dan pembuatan tanda tangan pada **Kriptografi RSA**.
 
@@ -140,7 +140,7 @@ graph TD
    $M_q = C^{d_q} \pmod q$
 3. CRT diterapkan pada $M_p$ dan $M_q$ untuk mendapatkan $M \pmod N$.
 
-Ketika modulus berukuran setengah (misalnya 1024 bit), biaya perhitungan eksponensial berkurang menjadi sekitar 1/8. Melakukan hal ini dua kali menjadikan total biayanya sekitar 1/4. Sehingga, penggunaan RSA-CRT dapat mempercepat dekripsi dan pembuatan tanda tangan **sekitar 4 kali lipat**. Pada perangkat dengan sumber daya komputasi terbatas seperti ponsel pintar atau kartu pintar, percepatan ini sangatlah penting.
+Ketika modulus berukuran setengah (misalnya 1024 bit), biaya perhitungan eksponensial berkurang menjadi sekitar 1/8. Melakukan hal ini dua kali menjadikan total biayanya sekitar 1/4. Sehingga, penggunaan [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)-CRT dapat mempercepat dekripsi dan pembuatan tanda tangan **sekitar 4 kali lipat**. Pada perangkat dengan sumber daya komputasi terbatas seperti ponsel pintar atau kartu pintar, percepatan ini sangatlah penting.
 
 ## Implementasi Pemrograman Teorema Sisa Tiongkok
 

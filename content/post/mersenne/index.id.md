@@ -113,7 +113,7 @@ def is_mersenne_prime(p):
     return s == 0
 ```
 
-Bilangan prima raksasa yang ditemukan memainkan peran penting dalam mendukung masyarakat informasi, berfungsi sebagai fondasi untuk evaluasi keamanan sistem kriptografi kunci publik modern seperti RSA, dan algoritma pembuatan angka acak (seperti [Mersenne](https://kenji.blog/id/p/mersenne/) Twister).
+Bilangan prima raksasa yang ditemukan memainkan peran penting dalam mendukung masyarakat informasi, berfungsi sebagai fondasi untuk evaluasi keamanan sistem kriptografi kunci publik modern seperti [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/), dan algoritma pembuatan angka acak (seperti [Mersenne](https://kenji.blog/id/p/mersenne/) Twister).
 
 ## Kontribusi pada Akustik dan Teori Musik: Hukum [Mersenne](https://kenji.blog/id/p/mersenne/)
 

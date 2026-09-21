@@ -18,13 +18,13 @@ tags:
 # Pendahuluan
 Aplikasi web terus berkembang, berubah dari sekadar penampil dokumen menjadi sistem bisnis yang canggih dan platform hiburan. Seiring dengan itu, data yang ditangani oleh aplikasi web menjadi semakin sensitif dan lebih rentan menjadi target serangan siber.
 
-Artikel ini membahas secara komprehensif dan mendetail mulai dari kerentanan klasik seperti XSS dan CSRF, yang masih menjadi ancaman hingga saat ini, hingga mekanisme pertahanan terbaru yang menjadi esensial dalam pengembangan web modern, seperti CORS, CSP, dan Cookie SameSite. Lebih lanjut, kami juga akan menjelaskan bagaimana teknologi-teknologi ini bekerja sama untuk membangun aplikasi web yang tangguh, menggunakan contoh kode dan diagram Mermaid agar mudah dipahami.
+Artikel ini membahas secara komprehensif dan mendetail mulai dari kerentanan klasik seperti [XSS](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) dan [CSRF](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/), yang masih menjadi ancaman hingga saat ini, hingga mekanisme pertahanan terbaru yang menjadi esensial dalam pengembangan web modern, seperti CORS, CSP, dan Cookie SameSite. Lebih lanjut, kami juga akan menjelaskan bagaimana teknologi-teknologi ini bekerja sama untuk membangun aplikasi web yang tangguh, menggunakan contoh kode dan diagram Mermaid agar mudah dipahami.
 
 ---
 
 # 1. Kerentanan Klasik yang Masih Menjadi Ancaman Saat Ini
 
-Kerentanan yang telah ada sejak lama dalam sejarah aplikasi web dan masih sering muncul di OWASP Top 10 adalah kerentanan yang terkait dengan **injeksi** dan **kelemahan kontrol akses**. Di sini, kita akan membahas lebih dalam mengenai dua di antaranya: Cross-Site Scripting (XSS) dan Cross-Site Request Forgery (CSRF).
+Kerentanan yang telah ada sejak lama dalam sejarah aplikasi web dan masih sering muncul di [OWASP](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) Top 10 adalah kerentanan yang terkait dengan **injeksi** dan **kelemahan kontrol akses**. Di sini, kita akan membahas lebih dalam mengenai dua di antaranya: Cross-Site Scripting (XSS) dan Cross-Site Request Forgery (CSRF).
 
 ## 1.1 Cross-Site Scripting (XSS)
 
@@ -60,7 +60,7 @@ sequenceDiagram
     Victim->>Attacker: "Kirim Cookie sesi (dicuri)"
 ```
 
-### 1.1.3 Contoh Kode dan Langkah Pencegahan XSS
+### 1.1.3 Contoh Kode dan Langkah Pencegahan [XSS](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/)
 
 **Contoh kode rentan (Node.js / Express)**
 
@@ -76,7 +76,7 @@ Jika penyerang mengakses dengan URL `?q=<script>alert('XSS')</script>`, skrip te
 
 **Pencegahan: Proses Escaping**
 
-Dasar untuk mencegah XSS adalah mensterilkan (melakukan escape) input pengguna agar tidak dievaluasi sebagai HTML. Khususnya, ubah 5 karakter khusus `<`, `>`, `&`, `"`, `'` menjadi entitas HTML.
+Dasar untuk mencegah [XSS](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) adalah mensterilkan (melakukan escape) input pengguna agar tidak dievaluasi sebagai HTML. Khususnya, ubah 5 karakter khusus `<`, `>`, `&`, `"`, `'` menjadi entitas HTML.
 
 ```javascript
 function escapeHTML(str) {
@@ -98,11 +98,11 @@ app.get('/search', (req, res) => {
 });
 ```
 
-Saat ini, framework frontend modern seperti React dan Vue.js secara default melakukan escape, sehingga pengembang mendapatkan tingkat pencegahan XSS tertentu tanpa perlu menyadarinya. Namun, tetap perlu berhati-hati saat menggunakan `dangerouslySetInnerHTML` (React) atau `v-html` (Vue.js).
+Saat ini, framework frontend modern seperti React dan Vue.js secara default melakukan escape, sehingga pengembang mendapatkan tingkat pencegahan [XSS](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) tertentu tanpa perlu menyadarinya. Namun, tetap perlu berhati-hati saat menggunakan `dangerouslySetInnerHTML` (React) atau `v-html` (Vue.js).
 
 ---
 
-## 1.2 Cross-Site Request Forgery (CSRF)
+## 1.2 Cross-Site Request Forgery ([CSRF](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/))
 
 Cross-Site Request Forgery (CSRF) adalah serangan di mana pengguna secara paksa mengirimkan permintaan yang tidak disengaja (seperti transfer uang, perubahan kata sandi, atau pembatalan akun) ke situs web terautentikasi melalui situs jebakan yang disiapkan oleh penyerang.
 
@@ -122,7 +122,7 @@ sequenceDiagram
     BankServer-->>AttackerSite: "Transfer selesai (dianggap permintaan sah)"
 ```
 
-Menurut spesifikasi browser, permintaan ke domain tertentu secara otomatis menyertakan Cookie yang terkait dengan domain tersebut. CSRF menyalahgunakan mekanisme ini.
+Menurut spesifikasi browser, permintaan ke domain tertentu secara otomatis menyertakan Cookie yang terkait dengan domain tersebut. [CSRF](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) menyalahgunakan mekanisme ini.
 
 ### 1.2.2 Langkah Pencegahan CSRF
 
@@ -143,7 +143,7 @@ Langkah paling umum adalah menghasilkan string acak yang sulit ditebak (token CS
 
 **2. Pemanfaatan Atribut Cookie SameSite**
 
-Dengan mengatur atribut **SameSite** yang akan dibahas nanti pada Cookie, Anda dapat mengontrol agar Cookie tidak disertakan dalam permintaan dari lintas situs, yang sangat efektif sebagai perlindungan CSRF.
+Dengan mengatur atribut **SameSite** yang akan dibahas nanti pada Cookie, Anda dapat mengontrol agar Cookie tidak disertakan dalam permintaan dari lintas situs, yang sangat efektif sebagai perlindungan [CSRF](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/).
 
 ---
 
@@ -221,7 +221,7 @@ Dengan menyimpan cache preflight dengan cara ini, latensi $2L$ dan waktu proses 
 
 ## 2.2 Content Security Policy (CSP)
 
-**Content Security Policy (CSP)** adalah mekanisme pertahanan berlapis yang kuat untuk mencegah XSS dan serangan injeksi data dari akar masalahnya. Mekanisme ini menentukan secara ketat sumber (origin) sumber daya yang dapat dimuat halaman web (skrip, gambar, stylesheet, dll.) sebagai whitelist dari sisi server.
+**Content Security Policy (CSP)** adalah mekanisme pertahanan berlapis yang kuat untuk mencegah [XSS](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) dan serangan injeksi data dari akar masalahnya. Mekanisme ini menentukan secara ketat sumber (origin) sumber daya yang dapat dimuat halaman web (skrip, gambar, stylesheet, dll.) sebagai whitelist dari sisi server.
 
 ### 2.2.1 Sintaks Dasar CSP
 
@@ -235,9 +235,9 @@ Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.c
 - `script-src 'self' https://trusted.cdn.com`: Mengizinkan skrip JavaScript dimuat hanya dari origin sendiri dan CDN yang ditentukan.
 - `img-src *`: Gambar dapat dimuat dari mana saja.
 
-### 2.2.2 Pemberantasan XSS Melalui Pelarangan Skrip Inline
+### 2.2.2 Pemberantasan [XSS](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) Melalui Pelarangan Skrip Inline
 
-Fitur utama dari CSP adalah bahwa secara default CSP **melarang eksekusi skrip inline ( `<script>...</script>` ) dan penggunaan `eval()`**. Dengan demikian, meskipun penyerang menyuntikkan skrip berbahaya ke dalam HTML (Stored XSS atau Reflected XSS), browser akan memblokir eksekusi tersebut sebagai pelanggaran CSP.
+Fitur utama dari CSP adalah bahwa secara default CSP **melarang eksekusi skrip inline ( `<script>...</script>` ) dan penggunaan `eval()`**. Dengan demikian, meskipun penyerang menyuntikkan skrip berbahaya ke dalam HTML (Stored [XSS](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) atau Reflected XSS), browser akan memblokir eksekusi tersebut sebagai pelanggaran CSP.
 
 ```mermaid
 flowchart TD
@@ -283,7 +283,7 @@ Content-Security-Policy: script-src 'sha256-B2yPHKaXnvFWtRChIbabYmUBFZdVfKKXHbWt
 
 ### 2.2.4 Fitur Laporan Pelanggaran CSP
 
-CSP memiliki fitur untuk membuat browser mengirimkan laporan ke titik akhir yang ditentukan ketika pelanggaran kebijakan terjadi. Hal ini memungkinkan administrator mendeteksi upaya XSS yang tidak diketahui atau kesalahan konfigurasi.
+CSP memiliki fitur untuk membuat browser mengirimkan laporan ke titik akhir yang ditentukan ketika pelanggaran kebijakan terjadi. Hal ini memungkinkan administrator mendeteksi upaya [XSS](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) yang tidak diketahui atau kesalahan konfigurasi.
 
 ```http
 Content-Security-Policy: default-src 'self'; report-uri /csp-violation-report-endpoint/
@@ -292,7 +292,7 @@ Content-Security-Policy: default-src 'self'; report-uri /csp-violation-report-en
 
 ---
 
-## 2.3 Perlindungan CSRF dengan Cookie SameSite
+## 2.3 Perlindungan [CSRF](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) dengan Cookie SameSite
 
 Meskipun Cookie sangat penting untuk manajemen sesi pengguna dalam aplikasi web, spesifikasi pengiriman otomatis selama permintaan lintas situs menjadi sarang serangan CSRF. **Atribut SameSite** pada Cookie menyelesaikan masalah ini.
 
@@ -317,15 +317,15 @@ Set-Cookie: session_id=abc123xyz; SameSite=Strict; Secure; HttpOnly
 
 Tabel berikut menunjukkan perilaku Cookie (dengan pengaturan SameSite=Lax) ketika permintaan dikirim dari situs domain yang berbeda (situs jebakan) ke situs bank.
 
-| Tindakan Pengguna (Di Situs Jebakan) | Metode HTTP | Jenis Permintaan | Pengiriman Cookie | Pengaruh pada CSRF |
+| Tindakan Pengguna (Di Situs Jebakan) | Metode HTTP | Jenis Permintaan | Pengiriman Cookie | Pengaruh pada [CSRF](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) |
 | :--- | :--- | :--- | :--- | :--- |
 | Klik Tautan (`<a>`) | GET | Navigasi Tingkat Atas | **Dikirim** | GET aman karena tidak mengubah keadaan |
 | Kirim Formulir (`<form>`) | GET | Navigasi Tingkat Atas | **Dikirim** | GET aman karena tidak mengubah keadaan |
-| Kirim Formulir (`<form>`) | POST | Navigasi Tingkat Atas | **Diblokir** | **Mencegah serangan CSRF** |
+| Kirim Formulir (`<form>`) | POST | Navigasi Tingkat Atas | **Diblokir** | **Mencegah serangan [CSRF](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/)** |
 | Komunikasi Asinkron (fetch, XHR) | GET/POST | Sub-permintaan | **Diblokir** | **Mencegah serangan CSRF** |
 | Pemuatan Gambar (`<img>`) | GET | Sub-permintaan | **Diblokir** | Aman |
 
-Dengan mengatur `SameSite=Lax` (atau dibiarkan sebagai fungsi default browser), serangan CSRF klasik yang menggunakan metode POST akan ditangkal. Namun, untuk perlindungan penuh, masih disarankan penggunaannya dikombinasikan dengan token CSRF tradisional.
+Dengan mengatur `SameSite=Lax` (atau dibiarkan sebagai fungsi default browser), serangan [CSRF](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) klasik yang menggunakan metode POST akan ditangkal. Namun, untuk perlindungan penuh, masih disarankan penggunaannya dikombinasikan dengan token CSRF tradisional.
 
 ---
 
@@ -335,7 +335,7 @@ Saat menerapkan tindakan keamanan yang kuat, Anda harus selalu mempertimbangkan 
 
 ## 3.1 Keamanan vs Kenyamanan
 
-Sebagai contoh, jika mengatur atribut SameSite dari Cookie ke `Strict`, perlindungan terhadap CSRF sangat kuat, namun jika pengguna mengklik tautan dari email promosi untuk mengakses situs Anda, mereka mungkin dianggap belum login, yang bisa merugikan pengalaman pengguna (UX). Penting untuk menyesuaikan dengan karakteristik aplikasi, seperti memilih `Lax` dan memerlukan kata sandi sekali pakai (OTP) atau otentikasi ulang untuk operasi penting.
+Sebagai contoh, jika mengatur atribut SameSite dari Cookie ke `Strict`, perlindungan terhadap [CSRF](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) sangat kuat, namun jika pengguna mengklik tautan dari email promosi untuk mengakses situs Anda, mereka mungkin dianggap belum login, yang bisa merugikan pengalaman pengguna (UX). Penting untuk menyesuaikan dengan karakteristik aplikasi, seperti memilih `Lax` dan memerlukan kata sandi sekali pakai (OTP) atau otentikasi ulang untuk operasi penting.
 
 ## 3.2 Keamanan vs Performa
 
@@ -349,7 +349,7 @@ Seperti yang disebutkan sebelumnya, dalam CORS, penting untuk meminimalkan penur
 
 Dalam artikel ini, kami telah menjelaskan mulai dari pengetahuan dasar hingga teknologi terkini untuk melindungi aplikasi web dari berbagai ancaman.
 
-*   **XSS dan CSRF**: Kerentanan klasik yang hingga saat ini masih menimbulkan kerusakan fatal. Pencegahan dasar meliputi penggunaan token dan escape yang tepat.
+*   **[XSS](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/) dan [CSRF](https://kenji.blog/id/p/web-application-vulnerability-owasp-top-10/)**: Kerentanan klasik yang hingga saat ini masih menimbulkan kerusakan fatal. Pencegahan dasar meliputi penggunaan token dan escape yang tepat.
 *   **CORS**: Sebuah mekanisme untuk memungkinkan komunikasi lintas asal secara aman dalam arsitektur web modern yang semakin kompleks.
 *   **CSP**: Kebijakan kuat yang menahan serangan injeksi seperti XSS pada tingkat browser melalui penghapusan skrip inline dan metode lainnya.
 *   **Cookie SameSite**: Benteng perlindungan bawaan browser terhadap CSRF. Semakin penting seiring pergerakan menuju penghentian Cookie pihak ketiga.

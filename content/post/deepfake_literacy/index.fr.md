@@ -219,7 +219,7 @@ La C2PA est un consortium fondé avec la participation d'entreprises majeures te
 La technologie centrale de la C2PA repose sur des signatures numériques utilisant une infrastructure à clé publique (PKI) et sur la liaison (binding) de hachages de contenu.
 
 1. **Génération de métadonnées (Manifest)** : Au moment où une photo est prise par un appareil, ou lorsqu'elle est modifiée par un logiciel, des métadonnées appelées "Manifeste (Manifest)" sont générées, contenant l'historique des opérations, les informations sur l'appareil et l'auteur.
-2. **Signature cryptographique (Digital Signature)** : Le manifeste, ainsi que la valeur de hachage de l'image elle-même (résumé des données de pixels), se voient appliquer une signature numérique à l'aide des clés privées du matériel ou du logiciel.
+2. **Signature cryptographique ([Digital Signature](https://kenji.blog/fr/p/modern-cryptography-public-key-hash-signature/))** : Le manifeste, ainsi que la valeur de hachage de l'image elle-même (résumé des données de pixels), se voient appliquer une signature numérique à l'aide des clés privées du matériel ou du logiciel.
 3. **Intégration à l'actif (Asset)** : Le manifeste signé (C2PA Credential) est intégré dans les informations d'en-tête de formats de fichiers tels que JPEG ou MP4.
 
 Si un attaquant tente de falsifier une partie de l'image ou d'ajouter de fausses métadonnées à une image générée par l'IA, la valeur de hachage de l'image elle-même change, la vérification de la signature numérique échoue, et la falsification est immédiatement découverte.

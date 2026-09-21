@@ -17,7 +17,7 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 ---
 
-## 1. 为什么选择椭圆曲线密码学？（与RSA的比较）
+## 1. 为什么选择椭圆曲线密码学？（与[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)的比较）
 
 说到公钥密码体制的代名词，长期以来一直非 **RSA密码** 莫属。RSA密码的安全性基于“大分解合成数的质因数分解的困难性”。然而，随着计算机计算能力的提高，为了维持安全性，必须不断增加RSA的密钥长度（模数的位数）。目前，建议的密钥长度至少为2048位，如果要求更安全，则推荐使用3072位或4096位。
 
@@ -436,7 +436,7 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 
 本文讲解了以下几个要点：
 
-1. **相对 RSA 的优势**: 能在非常短的密钥长度下提供强大的安全性，是现代移动互联网和物联网时代的最佳选择。
+1. **相对 [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) 的优势**: 能在非常短的密钥长度下提供强大的安全性，是现代移动互联网和物联网时代的最佳选择。
 2. **群论与有限体基础**: 构成 ECC 基础的数学结构。
 3. **加法和二倍算公式**: 使用魏尔斯特拉斯方程实现代数群运算的方法。
 4. **侧信道攻击的威胁**: 依赖于私钥位值的条件分支会导致致命漏洞。
@@ -444,7 +444,7 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 
 实际上，因为极高的安全风险，业界不建议（"Don't roll your own crypto"）自行编写用于生产环境的密码学库。然而，深入理解其内部运行的算法和数学背景，对于设计和运维更安全、高性能系统的工程师来说，必定是一件不可或缺的强大武器。
 
-在下一篇文章中，我们将进一步深入探讨使用这种椭圆曲线的数字签名算法—— **ECDSA（Elliptic Curve Digital Signature Algorithm）** 的机制，以及[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)中所采用的 **Schnorr 签名** 。
+在下一篇文章中，我们将进一步深入探讨使用这种椭圆曲线的数字签名算法—— **ECDSA（Elliptic Curve [Digital Signature](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/) Algorithm）** 的机制，以及[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)中所采用的 **Schnorr 签名** 。
 
 
 

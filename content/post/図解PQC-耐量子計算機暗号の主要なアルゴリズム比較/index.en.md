@@ -12,7 +12,7 @@ description: 'A comprehensive guide on the threat of cryptography compromise due
 
 ## 1. Introduction: The "[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy Crisis" Brought by Quantum Computers
 
-In modern internet society, public-key cryptography is indispensable infrastructure for protecting the confidentiality of communications and data integrity. The widely used RSA cryptography and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC) rely on the mathematical barriers of "the difficulty of factoring large composite numbers" and "the difficulty of the discrete logarithm problem on elliptic curves," respectively. It has been proven that classical computers (including the supercomputers we use today) would take longer than the age of the universe to solve these mathematical problems, which has been the basis of their security.
+In modern internet society, public-key cryptography is indispensable infrastructure for protecting the confidentiality of communications and data integrity. The widely used [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography and Elliptic Curve [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy (ECC) rely on the mathematical barriers of "the difficulty of factoring large composite numbers" and "the difficulty of the discrete logarithm problem on elliptic curves," respectively. It has been proven that classical computers (including the supercomputers we use today) would take longer than the age of the universe to solve these mathematical problems, which has been the basis of their security.
 
 However, this solid premise is about to be completely overturned by the theory and practical advancement of **quantum computers**. The "**[Shor's Algorithm](https://kenji.blog/en/p/quantum-computing-shors-algorithm/)**", published by cryptographer Peter Shor in 1994, theoretically proved that the integer factorization problem and the discrete logarithm problem can be solved in "polynomial time" by running it on a sufficiently capable [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphically Relevant Quantum Computer (CRQC). This means that all public-key cryptography currently in use will be rendered powerless.
 
@@ -40,7 +40,7 @@ Transitioning cryptographic technologies takes years to decades, including redes
 
 The targets for standardization were the following two main categories:
 1. **Public-Key [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy / Key Encapsulation Mechanism (KEM)**: A mechanism for securely sharing (distributing) a shared key to encrypt the communication path, such as in TLS connections.
-2. **Digital Signatures**: A mechanism to prove that data has not been tampered with and that there is no spoofing of the sender (authenticity) in software updates and electronic certificates.
+2. **[Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)s**: A mechanism to prove that data has not been tampered with and that there is no spoofing of the sender (authenticity) in software updates and electronic certificates.
 
 After a fierce competition of evaluation, analysis, and cryptanalysis spanning about 6 years (Round 1 to Round 3), further evaluation for Round 4 was conducted for some algorithms. As a result, the following algorithms were officially published as Federal Information Processing Standards (FIPS) in 2024 and established as the future global standards:
 
@@ -124,7 +124,7 @@ CRYSTALS-Kyber, officially standardized as **FIPS 203 (ML-KEM)**, is a Key Encap
 
 ### 5.1. Architecture of KEM (Key Encapsulation Mechanism)
 
-In the PQC era, instead of a direct approach like RSA where "the client creates a common key, encrypts it with the server's public key, and sends it," a KEM encapsulation framework becomes the standard.
+In the PQC era, instead of a direct approach like [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) where "the client creates a common key, encrypts it with the server's public key, and sends it," a KEM encapsulation framework becomes the standard.
 
 ```mermaid
 sequenceDiagram
@@ -172,11 +172,11 @@ The core encryption and decryption mechanisms of CPAPKE are as follows:
    - What remains is $\lfloor q/2 \rceil \cdot m + (\vec{e}^T\vec{r} + e_2 - \vec{s}^T\vec{e_1})$.
    - Since the terms in parentheses are "products and sums of small errors," they remain sufficiently small values (noise) as a whole. Therefore, by making a threshold judgment on whether each coefficient is close to $0$ or close to $q/2$, the bits (0 or 1) of the original message $m$ can be completely restored without error.
 
-Kyber's greatest strengths are its overwhelming **processing speed** and **moderate key size**. For Kyber768, the public key size is 1,184 bytes and the ciphertext size is 1,088 bytes. While larger compared to RSA-3072 (key size around 384 bytes), it can fit within the MTU (Maximum Transmission Unit) of modern internet communications without packet fragmentation, having almost no adverse effect on network latency.
+Kyber's greatest strengths are its overwhelming **processing speed** and **moderate key size**. For Kyber768, the public key size is 1,184 bytes and the ciphertext size is 1,088 bytes. While larger compared to [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)-3072 (key size around 384 bytes), it can fit within the MTU (Maximum Transmission Unit) of modern internet communications without packet fragmentation, having almost no adverse effect on network latency.
 
 ---
 
-## 6. CRYSTALS-Dilithium (ML-DSA): General-Purpose Lattice-Based Digital Signature
+## 6. CRYSTALS-Dilithium (ML-DSA): General-Purpose Lattice-Based [Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/)
 
 In the standardization of digital signatures, algorithms with different design philosophies within the same lattice cryptography approach competed against each stands. Among them, **CRYSTALS-Dilithium** was selected as **FIPS 204 (ML-DSA)** for general-purpose digital signatures.
 
@@ -255,7 +255,7 @@ The sole and greatest weakness of SPHINCS+ is that its **signature size is extre
 
 In the NIST standardization process, an important approach still being evaluated as a final candidate for Round 4 is **Classic McEliece** of **code-based cryptography**.
 
-Proposed by Robert McEliece in 1978, this algorithm is one of the oldest in the history of public-key cryptography, alongside RSA. It utilizes algebraic geometry codes called "Goppa codes," where a message is intentionally encrypted with an error (noise vector) added, and only the person holding the parity check matrix of the Goppa code as a secret key can remove the error using powerful error-correcting capabilities to decrypt the original message. This is based on the "**Syndrome Decoding Problem**".
+Proposed by Robert McEliece in 1978, this algorithm is one of the oldest in the history of public-key cryptography, alongside [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/). It utilizes algebraic geometry codes called "Goppa codes," where a message is intentionally encrypted with an error (noise vector) added, and only the person holding the parity check matrix of the Goppa code as a secret key can remove the error using powerful error-correcting capabilities to decrypt the original message. This is based on the "**Syndrome Decoding Problem**".
 
 $$ \vec{c} = \vec{m} G + \vec{e} $$
 (where $G$ is the scrambled generator matrix which is the public key, and $\vec{e}$ is the error vector of weight $t$)
@@ -272,12 +272,12 @@ For this reason, it cannot be applied at all to uses where the public key is tra
 
 The performance characteristics of the major algorithms explained so far at typical security levels (equivalent to NIST Level 2-3, AES-128-192 levels) are summarized in the table below.
 
-| Algorithm (Standard Name) | Category | Mathematical Basis | Public Key Size | Secret Key Size | Ciphertext/Signature Size | Processing Speed Trend | Main Features and Uses |
+| Algorithm (Standard Name) | Category | Mathematical Basis | [Public Key](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Size | Secret Key Size | Ciphertext/Signature Size | Processing Speed Trend | Main Features and Uses |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Kyber768**<br>(ML-KEM) | KEM | Module-LWE | 1,184 Bytes | 2,400 Bytes | 1,088 Bytes | Very fast | Best balance of key size and speed. General-purpose KEM standard such as TLS 1.3. |
 | **Dilithium3**<br>(ML-DSA) | Signature | Module-LWE | 1,952 Bytes | 4,032 Bytes | 3,309 Bytes | Fast for both generation and verification | Simple implementation. General-purpose digital signature standard. |
 | **FALCON-512**<br>(FN-DSA) | Signature | NTRU Lattice | 897 Bytes | 1,281 Bytes | 666 Bytes | Signature generation is slower, verification is ultra-fast | Minimal signature size. However, requires floating-point operations. For embedded/IoT. |
-| **SPHINCS+**<br>(SLH-DSA) | Signature | Hash Function | 32 Bytes | 64 Bytes | Approx. 17,000 Bytes | Generation is very slow | Mathematical failure risk is almost zero. High security uses like root certificates. |
+| **SPHINCS+**<br>(SLH-DSA) | Signature | [Hash Function](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) | 32 Bytes | 64 Bytes | Approx. 17,000 Bytes | Generation is very slow | Mathematical failure risk is almost zero. High security uses like root certificates. |
 | **Classic McEliece** | KEM | Goppa Code | **Approx. 1.04 MB** | 13,568 Bytes | **188 Bytes** | Encapsulation is fast | 40 years of security track record. Giant public key. For hardcodable environments. |
 
 ### Understanding the Trade-offs
@@ -326,7 +326,7 @@ The battle between quantum computers and cryptography is an exciting area where 
 *References:*
 * *NIST Post-Quantum [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy Standardization Program*
 * *FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard*
-* *FIPS 204: Module-Lattice-Based Digital Signature Standard*
+* *FIPS 204: Module-Lattice-Based [Digital Signature](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) Standard*
 * *FIPS 205: Stateless Hash-Based Digital Signature Standard*
 
 

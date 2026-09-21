@@ -11,7 +11,7 @@ description: 'A thorough explanation with C++ implementation code of the mechani
 
 # [Complete Anatomy] Understanding the Strongest Cryptanalysis Algorithm "GNFS" by Implementing it in C++
 
-The "RSA cryptography" fundamentally supports the modern Internet. Its robustness relies on the mathematical belief that "factoring huge composite numbers is practically impossible with current computers."
+The "[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography" fundamentally supports the modern Internet. Its robustness relies on the mathematical belief that "factoring huge composite numbers is practically impossible with current computers."
 
 However, humanity has never given up. Currently, for classical computers (regular computers, not quantum computers), there exists the **strongest and most advanced algorithm of humanity ** for performing giant prime factorizations. That is the **"General Number Field Sieve (GNFS)"**.
 
@@ -431,7 +431,7 @@ If we simply set the rational side $V$ as $X$, the absolute equation we have bee
 
 **$$X^2 \equiv Y^2 \pmod N$$**
 
-All that is left is to compute $\gcd(X-Y, N)$. Running through the 0.001-second process, the moment a non-trivial factor is printed on the screen, the proudly impregnable RSA cryptography completely collapses.
+All that is left is to compute $\gcd(X-Y, N)$. Running through the 0.001-second process, the moment a non-trivial factor is printed on the screen, the proudly impregnable [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography completely collapses.
 
 ---
 

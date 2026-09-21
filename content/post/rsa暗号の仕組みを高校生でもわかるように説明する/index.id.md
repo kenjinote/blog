@@ -9,7 +9,7 @@ categories: ["mathematics", "cryptography"]
 tags: ["RSA", "Bilangan Prima", "Matematika", "Kriptografi"]
 ---
 
-Salah satu teknologi yang mendasari keamanan masyarakat internet adalah "Enkripsi RSA". Sebagian besar komunikasi yang kita gunakan tanpa disadari setiap hari, seperti pembayaran kartu kredit dalam belanja online, interaksi di media sosial dengan teman, dan transmisi serta penerimaan informasi rahasia perusahaan, dilindungi oleh enkripsi RSA ini atau teknologi penerusnya.
+Salah satu teknologi yang mendasari keamanan masyarakat internet adalah "Enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/)". Sebagian besar komunikasi yang kita gunakan tanpa disadari setiap hari, seperti pembayaran kartu kredit dalam belanja online, interaksi di media sosial dengan teman, dan transmisi serta penerimaan informasi rahasia perusahaan, dilindungi oleh enkripsi RSA ini atau teknologi penerusnya.
 
 Namun, ketika mendengar kata "kriptografi", Anda mungkin membayangkan mesin sandi yang rumit seperti yang ada di film mata-mata, atau matematika tingkat sangat tinggi yang hanya dapat dipahami oleh sebagian kecil orang jenius. Memang benar bahwa teori kriptografi modern didasarkan pada matematika tingkat tinggi, tetapi **mekanisme dasar dari enkripsi RSA dapat dipahami dengan baik jika Anda memiliki pengetahuan matematika yang dipelajari di sekolah menengah atas (sifat bilangan bulat, bilangan prima, aritmetika modular (kongruensi), dll.)**.
 
@@ -58,7 +58,7 @@ Untuk mewujudkan sistem revolusioner ini, diperlukan semacam **"fungsi satu arah
 
 ---
 
-## 2. Dasar Matematika yang Mendukung Enkripsi RSA 1: Bilangan Prima dan Faktorisasi Prima
+## 2. Dasar Matematika yang Mendukung Enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) 1: Bilangan Prima dan Faktorisasi Prima
 
 Keamanan enkripsi RSA didasarkan pada fakta matematis bahwa **"faktorisasi prima dari bilangan yang sangat besar adalah sangat sulit"**.
 
@@ -135,7 +135,7 @@ $$ \phi(p) = p - 1 $$
 **【Sifat Khusus dalam Kasus Hasil Kali Bilangan Prima】**
 Untuk dua bilangan prima berbeda $p$ dan $q$, jika $N = p \times q$, $\phi(N)$ dapat dengan mudah dicari melalui perhitungan berikut.
 $$ \phi(N) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-Sifat ini berfungsi sebagai "pintu belakang rahasia (trapdoor)" dari enkripsi RSA. Seseorang yang mengetahui $p$ dan $q$ (pembuat kunci) dapat menghitung $\phi(N)$ dalam sekejap, tetapi pihak ketiga yang hanya tahu $N$ tidak akan bisa mencari $\phi(N)$ kecuali mereka memfaktorkan prima $N$.
+Sifat ini berfungsi sebagai "pintu belakang rahasia (trapdoor)" dari enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/). Seseorang yang mengetahui $p$ dan $q$ (pembuat kunci) dapat menghitung $\phi(N)$ dalam sekejap, tetapi pihak ketiga yang hanya tahu $N$ tidak akan bisa mencari $\phi(N)$ kecuali mereka memfaktorkan prima $N$.
 
 ### 4.2 Teorema Euler
 
@@ -153,7 +153,7 @@ $$ a^{\phi(N) + 1} \equiv a \pmod N $$
 Lebih lanjut, untuk sembarang bilangan bulat $k$, $a^{k \cdot \phi(N)}$ juga menjadi $1^k = 1$, sehingga persamaan berikut berlaku.
 $$ a^{k \cdot \phi(N) + 1} \equiv a \pmod N $$
 
-Persamaan inilah prinsip fundamental yang mewujudkan keajaiban enkripsi RSA yaitu **"setelah dienkripsi dan kemudian didekripsi akan kembali ke asalnya"**.
+Persamaan inilah prinsip fundamental yang mewujudkan keajaiban enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) yaitu **"setelah dienkripsi dan kemudian didekripsi akan kembali ke asalnya"**.
 
 ---
 
@@ -238,7 +238,7 @@ Alice tidak tahu $d$, dan penyadap juga tidak tahu $d$, jadi hanya Bob yang memi
 
 ---
 
-## 7. Contoh Konkret: Mari Mencoba RSA dengan Perhitungan Manual Menggunakan Bilangan Prima Kecil
+## 7. Contoh Konkret: Mari Mencoba [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) dengan Perhitungan Manual Menggunakan Bilangan Prima Kecil
 
 Mari kita gunakan angka-angka (bilangan prima) kecil untuk mempraktekkan komunikasi terenkripsi dari Alice ke Bob.
 
@@ -281,7 +281,7 @@ $-17$ memiliki makna yang sama dengan $120 - 17 = 103$ dalam dunia modulo $120$.
 
 ---
 
-## 9. Wajah Lain dari Enkripsi RSA: Tanda Tangan Digital
+## 9. Wajah Lain dari Enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/): Tanda Tangan Digital
 
 Hal hebat dari enkripsi RSA adalah, ia juga bisa digunakan sebagai **"tanda tangan digital"** dengan menukar peran kunci publik dan kunci privat.
 
@@ -302,7 +302,7 @@ Alice menggunakan kunci privatnya sendiri $d$ untuk mengubah pesan (ini adalah t
 
 ---
 
-## 10. Merasakan Enkripsi RSA Melalui Program
+## 10. Merasakan Enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) Melalui Program
 
 Perhitungan perpangkatan yang berat jika dihitung manual dapat diimplementasikan dengan sangat mudah menggunakan Python. Berikut adalah kode Python untuk mengalami logika inti dari enkripsi RSA.
 
@@ -342,7 +342,7 @@ Fungsi `pow(base, exp, mod)` pada Python secara internal menggunakan algoritma c
 
 ## 11. Kesimpulan dan Teknologi Kriptografi Masa Depan
 
-Berdasarkan pengetahuan matematika tingkat sekolah menengah atas, kita telah mengungkap cara kerja dari enkripsi RSA.
+Berdasarkan pengetahuan matematika tingkat sekolah menengah atas, kita telah mengungkap cara kerja dari enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/).
 
 1. **Kesulitan Faktorisasi Prima:** Mudah untuk menghitung $p \times q = N$, tetapi sangat sulit untuk menemukan $p, q$ dari $N$.
 2. **Kongruensi dan Teorema Euler:** Berkat aturan $a^{\phi(N)} \equiv 1 \pmod N$, sebuah trapdoor ajaib "memangkatkan dengan suatu bilangan mengembalikan ke bentuk asli" telah tercipta.
@@ -350,4 +350,4 @@ Berdasarkan pengetahuan matematika tingkat sekolah menengah atas, kita telah men
 
 Nilai $N$ pada enkripsi RSA yang digunakan saat ini lebih dari 600 digit, dan butuh waktu lebih lama dari usia alam semesta untuk memfaktorkan primanya meskipun dengan menggerakkan seluruh superkomputer di dunia. Namun, jika "komputer kuantum", yang penelitiannya sedang berkembang dalam beberapa tahun terakhir, berhasil dikomersialkan di masa depan, ada kemungkinan bahwa faktorisasi prima ini akan dipecahkan dalam sekejap oleh algoritma Shor. Oleh karena itu, pengembangan "Kriptografi Pasca Kuantum" (Post-Quantum [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy) yang tidak dapat dipecahkan bahkan oleh komputer kuantum saat ini sedang dikembangkan dengan sangat cepat di seluruh dunia.
 
-Matematika tingkat tinggi yang sering dianggap "tidak berguna", nyatanya melindungi kehidupan sehari-hari kita dari fondasinya. Enkripsi RSA merupakan materi pembelajaran terbaik yang mengajarkan kita kedalaman dan keindahan matematika tersebut. Kami harap melalui artikel ini, Anda sedikit banyak dapat merasakan betapa menariknya kriptografi dan matematika.
+Matematika tingkat tinggi yang sering dianggap "tidak berguna", nyatanya melindungi kehidupan sehari-hari kita dari fondasinya. Enkripsi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) merupakan materi pembelajaran terbaik yang mengajarkan kita kedalaman dan keindahan matematika tersebut. Kami harap melalui artikel ini, Anda sedikit banyak dapat merasakan betapa menariknya kriptografi dan matematika.

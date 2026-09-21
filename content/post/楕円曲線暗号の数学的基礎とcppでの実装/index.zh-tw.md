@@ -17,7 +17,7 @@ tags: ["ECC", "Cryptography", "C++", "Mathematics"]
 
 ---
 
-## 1. 為什麼選擇橢圓曲線密碼學？（與RSA的比較）
+## 1. 為什麼選擇橢圓曲線密碼學？（與[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)的比較）
 
 長期以來，公鑰密碼學的代名詞一直是 **RSA密碼** 。RSA密碼的安全性建立在「大整數質因數分解的困難度」之上。然而，隨著電腦運算能力的提升，為了維持安全性，必須不斷增加RSA的金鑰長度（模數的位元數）。如今，建議的最低金鑰長度為2048位元，若要追求更高的安全性，則建議使用3072位元或4096位元。
 
@@ -436,7 +436,7 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 
 本文解說了以下幾個重點：
 
-1. **對 RSA 的優勢**: 能以極短的金鑰長度提供強大的安全性，是現代行動裝置與物聯網（IoT）時代的最佳選擇。
+1. **對 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 的優勢**: 能以極短的金鑰長度提供強大的安全性，是現代行動裝置與物聯網（IoT）時代的最佳選擇。
 2. **群論與有限體基礎**: 構成 ECC 基礎的數學結構。
 3. **加法與二倍運算公式**: 使用魏爾斯特拉斯方程式的代數群運算實作方法。
 4. **旁路攻擊的威脅**: 依賴於私鑰位元的條件分支會造成致命的漏洞。
@@ -444,7 +444,7 @@ Point scalarMultiply(const Point& P, cpp_int k) {
 
 一般極不建議自行編寫應用於正式生產環境的密碼學函式庫（"Don't roll your own crypto"），因為這伴隨著極高的安全風險。然而，對於設計和維護高安全性、高效能系統的工程師來說，深入了解其內部運作的演算法及數學背景，無疑是一項極其寶貴且強大的武器。
 
-在下一篇文章中，我們將進一步探討利用這條橢圓曲線所建立的數位簽章演算法—— **ECDSA (Elliptic Curve Digital Signature Algorithm)** 的機制，以及[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)所採用的 **Schnorr 簽章** 。
+在下一篇文章中，我們將進一步探討利用這條橢圓曲線所建立的數位簽章演算法—— **ECDSA (Elliptic Curve [Digital Signature](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) Algorithm)** 的機制，以及[比特幣](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)所採用的 **Schnorr 簽章** 。
 
 
 

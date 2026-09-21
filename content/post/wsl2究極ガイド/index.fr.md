@@ -321,7 +321,7 @@ Après le redémarrage, `systemctl start docker` fonctionnera exactement comme d
 
 Lors de la réalisation de clones SSH Git ou de la connexion SSH à des serveurs distants, gérer des clés SSH séparées côté Windows et côté WSL est très fastidieux. Pour allier sécurité et commodité, nous allons configurer un pont pour transférer l'agent SSH en cours d'exécution côté Windows (ou un gestionnaire de mots de passe comme 1Password) vers le côté WSL.
 
-Ici, nous expliquerons l'approche la plus sécurisée et moderne consistant à utiliser la **fonctionnalité d'agent SSH de 1Password** ou **l'OpenSSH Authentication Agent de Windows**, et à la transférer vers un socket de domaine UNIX de WSL2 en utilisant `npiperelay` et `socat`.
+Ici, nous expliquerons l'approche la plus sécurisée et moderne consistant à utiliser la **fonctionnalité d'agent SSH de 1Password** ou **l'OpenSSH [Authentication](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/) Agent de Windows**, et à la transférer vers un socket de domaine UNIX de WSL2 en utilisant `npiperelay` et `socat`.
 
 ### Transfert de socket ssh-agent
 

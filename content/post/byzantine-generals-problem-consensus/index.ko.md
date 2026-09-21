@@ -290,4 +290,4 @@ $ |Q_1 \cap Q_2| = 2Q - n = 2(2f + 1) - (3f + 1) = f + 1 $
 *   **Raft** : 이해하기 쉬움과 구현의 용이성을 추구하여 현대 분산 KVS의 사실상 표준이 되었습니다.
 *   **PBFT** : 악의적인 노드가 섞여 있는 환경에서 확정적인 합의를 실현하여 블록체인 기술의 기반이 되었습니다.
 
-오늘날에는 비트코인이 채택한 **Nakamoto Consensus (PoW)** 나 Tendermint, HotStuff 등 PBFT의 통신 오버헤드를 줄이면서 확장성을 향상시킨 새로운 BFT 알고리즘이 속속 탄생하고 있습니다. 시스템의 요구사항(노드 신뢰성, 필요한 처리량, 대기 시간)에 따라 적절한 합의 알고리즘을 선택하는 것이 견고한 분산 시스템을 구축하는 데 있어 핵심이 됩니다.
+오늘날에는 비트코인이 채택한 **Nakamoto [Consensus](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/) ([PoW](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/))** 나 Tendermint, HotStuff 등 PBFT의 통신 오버헤드를 줄이면서 확장성을 향상시킨 새로운 BFT 알고리즘이 속속 탄생하고 있습니다. 시스템의 요구사항(노드 신뢰성, 필요한 처리량, 대기 시간)에 따라 적절한 합의 알고리즘을 선택하는 것이 견고한 분산 시스템을 구축하는 데 있어 핵심이 됩니다.

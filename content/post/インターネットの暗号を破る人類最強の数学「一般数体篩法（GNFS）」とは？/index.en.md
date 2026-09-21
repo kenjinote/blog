@@ -12,7 +12,7 @@ description: 'Explains the mechanism of ''General Number Field Sieve (GNFS)'', h
 # What is the "General Number Field Sieve (GNFS)", Humanity's Strongest Math that Breaks Internet [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy?
 
 The internet we use every day. LINE messages, YouTube, Amazon shopping—all communications are protected by "cryptography."
-Currently, the most widely used cryptography in the world is "RSA cryptography."
+Currently, the most widely used cryptography in the world is "[RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography."
 
 The cornerstone of RSA cryptography's defense is very simple. It utilizes the mathematical property that **"factoring a gigantic number into primes cannot be solved even by computers."**
 For example, for "15", we immediately know it's "3 × 5", but the moment this becomes a "270-digit number", even if we bundle all the supercomputers in the world, it would take hundreds of millions of years to solve.
@@ -134,7 +134,7 @@ Once the combination is found,
 Finally, substitute $m$ into $x$ of $Y(x)$ in the world of algebraic expressions to warp to the real world and merge them.
 Then, just like mathematical magic, a state where **"the remainders of $X^2$ and $Y^2$ are the same"** is strictly completed!
 
-After that, just like in Chapter 1, if you calculate the greatest common divisor of $X - Y$ and $N$, the impregnable RSA cryptography collapses with a crash, and the secret primes reveal themselves.
+After that, just like in Chapter 1, if you calculate the greatest common divisor of $X - Y$ and $N$, the impregnable [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography collapses with a crash, and the secret primes reveal themselves.
 
 ---
 

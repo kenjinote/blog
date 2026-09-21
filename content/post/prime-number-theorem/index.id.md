@@ -138,7 +138,7 @@ Dengan menjalankan kode ini, Anda dapat mengamati bahwa rasio $\pi(x) / (x/\ln(x
 
 Sifat-sifat bilangan prima tidak hanya menjadi objek menarik dalam matematika murni, tetapi juga merupakan elemen penting yang mendukung infrastruktur keamanan masyarakat modern.
 
-Metode kriptografi kunci publik seperti kriptografi RSA memanfaatkan sifat bahwa "faktorisasi bilangan bulat yang sangat besar adalah hal yang sangat sulit". Teorema Bilangan Prima menjamin probabilitas ditemukannya "bilangan prima dengan ukuran yang tepat" yang diperlukan untuk menghasilkan kunci kriptografi.
+Metode kriptografi kunci publik seperti kriptografi [RSA](https://kenji.blog/id/p/modern-cryptography-public-key-hash-signature/) memanfaatkan sifat bahwa "faktorisasi bilangan bulat yang sangat besar adalah hal yang sangat sulit". Teorema Bilangan Prima menjamin probabilitas ditemukannya "bilangan prima dengan ukuran yang tepat" yang diperlukan untuk menghasilkan kunci kriptografi.
 
 Sebagai contoh, probabilitas bahwa bilangan ganjil acak 1024-bit adalah bilangan prima diperkirakan sekitar $1 / (1024 \times \ln(2) / 2) \approx 1 / 355$. Ini berarti bahwa dengan melakukan pengujian keprimaan beberapa ratus kali, ada probabilitas tinggi untuk menemukan bilangan prima besar yang diperlukan. Tanpa Teorema Bilangan Prima, membangun sistem kriptografi yang efisien adalah hal yang mustahil.
 

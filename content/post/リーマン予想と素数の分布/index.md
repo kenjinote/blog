@@ -15,7 +15,7 @@ tags: ["Riemann Hypothesis", "Prime Numbers", "Cryptography", "Math"]
 
 その素数の謎に最も肉薄したのが、1859年にドイツの数学者[ベルンハルト・リーマン](https://kenji.blog/p/riemann/)（[Bernhard Riemann](https://kenji.blog/p/riemann/)）が提唱した **「[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)（[Riemann](https://kenji.blog/p/riemann/) Hypothesis）」** です。[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)は、現代数学において最も重要かつ未解決の難問の一つであり、クレイ数学研究所が定めるミレニアム懸賞問題の一つとして100万ドルの賞金が懸けられています。
 
-一見すると、素数の分布に関する純粋数学の難問は、私たちの日常生活とは無縁に思えるかもしれません。しかし、現代社会のインフラを支えるインターネットのセキュリティ、特に **RSA暗号や楕円曲線暗号（ECC）といった現代暗号技術** は、巨大な素数の性質に深く依存しています。
+一見すると、素数の分布に関する純粋数学の難問は、私たちの日常生活とは無縁に思えるかもしれません。しかし、現代社会のインフラを支えるインターネットのセキュリティ、特に **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や楕円曲線暗号（ECC）といった現代暗号技術** は、巨大な素数の性質に深く依存しています。
 
 本記事では、素数の分布から素数定理、[リーマン](https://kenji.blog/p/riemann/)ゼータ関数、そして[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の核心へと至る数学的な旅をし、それがどのようにして現代暗号技術と結びついているのか、そしてもし[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)が証明されたら世界はどうなるのかについて、極めて詳細かつ深く掘り下げて解説します。
 
@@ -122,9 +122,9 @@ $$ |\pi(x) - \text{Li}(x)| \le \frac{1}{8\pi} \sqrt{x} \ln x \quad \text{for} \q
 
 # 6. 現代暗号技術と素数の不可分な関係
 
-ここまでは深遠な純粋数学の世界でしたが、この素数の性質は現代のデジタル社会を根底から支えています。その代表が **RSA暗号** をはじめとする公開鍵暗号方式です。
+ここまでは深遠な純粋数学の世界でしたが、この素数の性質は現代のデジタル社会を根底から支えています。その代表が **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号** をはじめとする[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号方式です。
 
-インターネットでのクレジットカード決済、パスワードの送信、ブロックチェーンの電子署名など、あらゆる通信の安全性は「素数」に依存しています。
+インターネットでのクレジットカード決済、パスワードの送信、[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)の[電子署名](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)など、あらゆる通信の安全性は「素数」に依存しています。
 
 ### RSA暗号の仕組み
 RSA暗号の安全性は、「桁数の大きい合成数の素因数分解は非常に困難である」という数学的事実（素因数分解問題）に基づいています。
@@ -136,8 +136,8 @@ RSA暗号の安全性は、「桁数の大きい合成数の素因数分解は�
    
    $$ e \times d \equiv 1 \pmod{\phi(N)} $$
 
-2. **暗号化と復号**:
-   平文 $M$ は、公開鍵 $e, N$ を用いて暗号文 $C$ に変換されます。
+2. **[暗号化](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)と復号**:
+   平文 $M$ は、[公開鍵](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/) $e, N$ を用いて暗号文 $C$ に変換されます。
    $$ C \equiv M^e \pmod{N} $$
    秘密鍵 $d$ を持つ者だけが、復号できます。
    $$ M \equiv C^d \pmod{N} $$
@@ -152,7 +152,7 @@ graph LR
     F -.-> G["pとqが分からないとdは計算不能"]
 ```
 
-RSA暗号を破るためには、巨大な $N$ から元の素数 $p$ と $q$ を見つけ出す（素因数分解する）必要があります。現在主流のアルゴリズム（一般数体篩法：GNFSなど）を用いても、何百桁もの数を素因数分解するには、スーパーコンピュータを使っても宇宙の年齢をはるかに超える時間がかかるとされています。
+[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号を破るためには、巨大な $N$ から元の素数 $p$ と $q$ を見つけ出す（素因数分解する）必要があります。現在主流のアルゴリズム（一般数体篩法：GNFSなど）を用いても、何百桁もの数を素因数分解するには、スーパーコンピュータを使っても宇宙の年齢をはるかに超える時間がかかるとされています。
 
 ---
 
@@ -161,7 +161,7 @@ RSA暗号を破るためには、巨大な $N$ から元の素数 $p$ と $q$ �
 では、純粋数学の頂点にある「[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)」と「暗号技術」はどのように交差するのでしょうか？
 
 ### 7.1. 素数生成アルゴリズム（素数判定）と拡張[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)（GRH）
-RSA暗号を運用するためには、最初に巨大な素数 $p$ と $q$ を生成する必要があります。しかし、「ある数が素数かどうか」を確実かつ高速に判定するのは簡単ではありません。
+[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号を運用するためには、最初に巨大な素数 $p$ と $q$ を生成する必要があります。しかし、「ある数が素数かどうか」を確実かつ高速に判定するのは簡単ではありません。
 
 現在、実用的に使われているのは **ミラー・ラビン素数判定法（Miller-Rabin primality test）** という確率的アルゴリズムです。このアルゴリズムは高速ですが、極めて低い確率で合成数を素数と誤判定する「擬素数」のリスクがあります。
 
@@ -179,7 +179,7 @@ GRHが真であれば、ミラー・ラビン判定法におけるテスト回�
 
 # 8. もし[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)が証明されたら、暗号は破られるのか？
 
-都市伝説のように「[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)が解けたらRSA暗号は一瞬で崩壊する」と語られることがありますが、 **これは数学的には不正確** です。
+都市伝説のように「[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)が解けたら[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号は一瞬で崩壊する」と語られることがありますが、 **これは数学的には不正確** です。
 
 [リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の証明自体が、直ちに素因数分解を劇的に高速化する魔法のアルゴリズムを生み出すわけではありません。[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)はあくまで素数の「巨視的な分布の規則性」についての定理であり、個別の数 $N$ がどの素数で割り切れるか（局所的な性質）を直接教えてくれるものではないからです。
 
@@ -189,7 +189,7 @@ GRHが真であれば、ミラー・ラビン判定法におけるテスト回�
 もし[リーマン](https://kenji.blog/p/riemann/)ゼータ関数の零点の性質を完全に操作できる未知の代数幾何学的手法や、非可換幾何の手法が確立されれば、それが結果として素因数分解の画期的なアルゴリズム（例えば、計算量を多項式時間に落とし込むような古典アルゴリズム）の発見に繋がる可能性は否定できません。その意味で、暗号学者は[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の動向から決して目を離すことができないのです。
 
 ### [量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)と[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)
-暗号技術にとってより直接的で現実的な脅威は、[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の証明ではなく **[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)** です。1994年にピーター・ショア（Peter Shor）が発表した「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)」は、十分な性能を持つ量子コンピュータがあれば、素因数分解を多項式時間で解けることを証明しました。これにより、RSA暗号や楕円曲線暗号は根本的に破られることになります。
+暗号技術にとってより直接的で現実的な脅威は、[リーマン予想](https://kenji.blog/p/riemann-hypothesis/)の証明ではなく **[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)** です。1994年にピーター・ショア（Peter Shor）が発表した「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)」は、十分な性能を持つ量子コンピュータがあれば、素因数分解を多項式時間で解けることを証明しました。これにより、[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号や楕円曲線暗号は根本的に破られることになります。
 
 現在、世界中で量子コンピュータでも解読できない「耐量子計算機暗号（Post-Quantum [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy, PQC）」への移行（格子暗号など）が進められています。素数に依存した暗号技術は、ある意味で黄金期を終えようとしているのかもしれませんが、素数そのものの数学的価値が失われることは永遠にありません。
 

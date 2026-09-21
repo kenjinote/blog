@@ -96,12 +96,12 @@ En el mundo de las matemáticas, termina una vez que se demuestra que "existe", 
 
 Aquí, veamos el proceso de convertir fórmulas matemáticas en código a través de dos ejemplos específicos.
 
-### 4.1 Ejemplo práctico 1: Matemáticas de la criptografía RSA e implementación en Python
+### 4.1 Ejemplo práctico 1: Matemáticas de la criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) e implementación en Python
 
 La criptografía RSA, un representante de la criptografía de clave pública, es una hermosa aplicación de la teoría elemental de números (congruencias, teorema de Euler, algoritmo de [[[Euclid](https://kenji.blog/es/p/euclid/)e](https://kenji.blog/p/euclid/)s](https://kenji.blog/p/euclid/) extendido).
 
 #### Contexto matemático
-El proceso de generación de claves, cifrado y descifrado de la criptografía RSA se expresa mediante las siguientes fórmulas.
+El proceso de generación de claves, cifrado y descifrado de la criptografía [RSA](https://kenji.blog/es/p/modern-cryptography-public-key-hash-signature/) se expresa mediante las siguientes fórmulas.
 
 1. **Generación de claves**:
    Elige dos números primos enormes $p, q$ y establece $n = pq$.

@@ -29,7 +29,7 @@ description: '報告今年第 8 次榮獲 Microsoft MVP (2024-2025)。介紹 Mic
 「以幫助他人的方式分享自己所知」——這些腳踏實地的活動都會受到評估。
 
 獲獎者遍布全球，但每年人數有限，要再次獲獎也絕非易事。
-在這樣的情況下能再次獲得認可，我真的非常感激。
+在這樣的情況下能再次獲得[認可](https://kenji.blog/zh-tw/p/oauth2-oidc-authentication-authorization-difference/)，我真的非常感激。
 
 ---
 

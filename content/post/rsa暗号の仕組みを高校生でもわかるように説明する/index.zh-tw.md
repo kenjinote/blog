@@ -9,7 +9,7 @@ categories: ["mathematics", "cryptography"]
 tags: ["RSA", "Prime Numbers", "Math", "Cryptography"]
 ---
 
-互聯網社會安全的底層支柱技術之一就是「RSA加密」。線上購物的信用卡支付、與朋友在社群網路上的交流、公司機密資訊的收發等，我們每天不經意間使用的通訊，很多都是由RSA加密或其後續技術保護的。
+互聯網社會安全的底層支柱技術之一就是「[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密」。線上購物的信用卡支付、與朋友在社群網路上的交流、公司機密資訊的收發等，我們每天不經意間使用的通訊，很多都是由RSA加密或其後續技術保護的。
 
 然而，一聽到「加密」，可能會聯想到間諜電影裡那種複雜的密碼機，或是只有少數天才才能理解的超高深數學。雖然現代密碼學確實建立在高等數學的基礎上，但 **RSA加密的根本原理，只要具備高中數學（整數性質、質數、同餘等）的知識就足以理解** 。
 
@@ -58,7 +58,7 @@ graph TD
 
 ---
 
-## 2. 支撐RSA加密的數學基礎1：質數與質因數分解
+## 2. 支撐[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密的數學基礎1：質數與質因數分解
 
 RSA加密的安全性，建立在 **「巨大數字的質因數分解非常困難」** 這個數學事實上。
 
@@ -135,7 +135,7 @@ $$ \phi(p) = p - 1 $$
 **【質數相乘時的特殊性質】**
 對於兩個不同的質數 $p$ 和 $q$，當 $N = p \times q$ 時，$\phi(N)$ 可以很容易地用以下公式計算：
 $$ \phi(N) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-這個性質就是RSA加密中的「秘密後門（陷門函數）」。知道 $p$ 和 $q$ 的人（密鑰建立者）可以瞬間計算出 $\phi(N)$，但只知道 $N$ 的第三者，除非對 $N$ 進行質因數分解，否則無法求得 $\phi(N)$。
+這個性質就是[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密中的「秘密後門（陷門函數）」。知道 $p$ 和 $q$ 的人（密鑰建立者）可以瞬間計算出 $\phi(N)$，但只知道 $N$ 的第三者，除非對 $N$ 進行質因數分解，否則無法求得 $\phi(N)$。
 
 ### 4.2 歐拉定理
 
@@ -153,7 +153,7 @@ $$ a^{\phi(N) + 1} \equiv a \pmod N $$
 此外，對於任意整數 $k$，$a^{k \cdot \phi(N)}$ 也會是 $1^k = 1$，因此以下公式成立：
 $$ a^{k \cdot \phi(N) + 1} \equiv a \pmod N $$
 
-這個公式正是讓RSA加密中 **「加密後再解密就能還原」** 這種魔法得以成立的根本原理。
+這個公式正是讓[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密中 **「加密後再解密就能還原」** 這種魔法得以成立的根本原理。
 
 ---
 
@@ -238,7 +238,7 @@ $$ C^d \equiv M \pmod N $$
 
 ---
 
-## 7. 具體例子：用小質數手動計算體驗RSA
+## 7. 具體例子：用小質數手動計算體驗[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)
 
 讓我們實際用小數字（質數）來試試看愛麗絲給鮑勃的加密通訊。
 
@@ -281,7 +281,7 @@ $-17$ 在模 $120$ 的世界裡，與 $120 - 17 = 103$ 意義相同。因此，�
 
 ---
 
-## 9. RSA加密的另一面：數位簽章
+## 9. [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密的另一面：數位簽章
 
 RSA加密最棒的一點在於，如果將公鑰和私鑰的角色反過來，還能當作 **「數位簽章」** 使用。
 
@@ -302,7 +302,7 @@ flowchart TD
 
 ---
 
-## 10. 透過程式體驗RSA加密
+## 10. 透過程式體驗[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密
 
 手動計算很辛苦的次方運算，只要用Python就能非常簡單地實作出來。以下是能體驗RSA加密核心邏輯的Python程式碼。
 
@@ -342,7 +342,7 @@ Python的 `pow(base, exp, mod)` 函數在內部使用了名為「反覆平方法
 
 ## 11. 總結與未來的密碼技術
 
-我們以高中數學知識為基礎，解開了RSA加密的原理。
+我們以高中數學知識為基礎，解開了[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)加密的原理。
 
 1. **質因數分解的困難度:** $p \times q = N$ 很簡單，但從 $N$ 找出 $p, q$ 非常困難。
 2. **同餘與歐拉定理:** 根據 $a^{\phi(N)} \equiv 1 \pmod N$ 這個法則，完成了「用某個數做次方運算就能還原」的魔法陷門函數。

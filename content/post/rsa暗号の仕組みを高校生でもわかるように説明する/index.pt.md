@@ -9,7 +9,7 @@ categories: ["mathematics", "cryptography"]
 tags: ["RSA", "Prime Numbers", "Math", "Cryptography"]
 ---
 
-Uma das tecnologias que sustenta a segurança da nossa sociedade baseada na internet desde a sua base é a "Criptografia RSA". Muitas das comunicações que usamos casualmente todos os dias, como pagamentos com cartão de crédito em compras online, troca de mensagens em redes sociais com amigos, ou o envio e recebimento de informações confidenciais de empresas, são protegidas pela criptografia RSA e suas tecnologias sucessoras.
+Uma das tecnologias que sustenta a segurança da nossa sociedade baseada na internet desde a sua base é a "Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)". Muitas das comunicações que usamos casualmente todos os dias, como pagamentos com cartão de crédito em compras online, troca de mensagens em redes sociais com amigos, ou o envio e recebimento de informações confidenciais de empresas, são protegidas pela criptografia RSA e suas tecnologias sucessoras.
 
 No entanto, ao ouvir a palavra "criptografia", você pode imaginar máquinas de cifra complexas como as que aparecem em filmes de espionagem, ou uma matemática super avançada que apenas alguns gênios conseguem entender. É verdade que a teoria criptográfica moderna é baseada em matemática avançada, mas **o mecanismo fundamental da criptografia RSA pode ser plenamente compreendido com o conhecimento de matemática ensinado no ensino médio (propriedades de números inteiros, números primos, congruências, etc.)**.
 
@@ -58,7 +58,7 @@ Para implementar este sistema revolucionário, é necessária algum tipo de **"f
 
 ---
 
-## 2. Base Matemática 1 Sustentando a Criptografia RSA: Números Primos e Fatoração em Números Primos
+## 2. Base Matemática 1 Sustentando a Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/): Números Primos e Fatoração em Números Primos
 
 A segurança da criptografia RSA é baseada no fato matemático de que **"a fatoração de números gigantes em números primos é extremamente difícil"**.
 
@@ -135,7 +135,7 @@ $$ \phi(p) = p - 1 $$
 **[Propriedade especial no caso de um produto de números primos]**
 Para dois números primos distintos $p$ e $q$, quando se estabelece que $N = p \times q$, $\phi(N)$ pode ser facilmente obtido pelo seguinte cálculo:
 $$ \phi(N) = \phi(p) \times \phi(q) = (p - 1)(q - 1) $$
-Essa propriedade funciona como a "porta dos fundos secreta (alçapão)" na criptografia RSA. Alguém que conhece $p$ e $q$ (o criador das chaves) pode calcular $\phi(N)$ em um instante, mas um terceiro que conhece apenas $N$ não pode determinar $\phi(N)$ a menos que fatore $N$ em números primos.
+Essa propriedade funciona como a "porta dos fundos secreta (alçapão)" na criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/). Alguém que conhece $p$ e $q$ (o criador das chaves) pode calcular $\phi(N)$ em um instante, mas um terceiro que conhece apenas $N$ não pode determinar $\phi(N)$ a menos que fatore $N$ em números primos.
 
 ### 4.2 Teorema de Euler
 
@@ -153,7 +153,7 @@ $$ a^{\phi(N) + 1} \equiv a \pmod N $$
 Além disso, para qualquer número inteiro $k$, $a^{k \cdot \phi(N)}$ também será $1^k = 1$, de modo que a seguinte fórmula é válida:
 $$ a^{k \cdot \phi(N) + 1} \equiv a \pmod N $$
 
-Esta exata equação é o princípio fundamental que faz com que a mágica da criptografia RSA de **"retornar ao original quando descriptografada após criptografar"** funcione.
+Esta exata equação é o princípio fundamental que faz com que a mágica da criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) de **"retornar ao original quando descriptografada após criptografar"** funcione.
 
 ---
 
@@ -238,7 +238,7 @@ Como a Alice não conhece $d$, e o espião também não conhece $d$, apenas Bob,
 
 ---
 
-## 7. Exemplo Concreto: Vamos vivenciar o RSA calculando à mão usando pequenos números primos
+## 7. Exemplo Concreto: Vamos vivenciar o [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) calculando à mão usando pequenos números primos
 
 Vamos tentar enviar uma comunicação criptografada de Alice para Bob usando números pequenos (números primos) de fato.
 
@@ -281,7 +281,7 @@ No mundo do módulo $120$, $-17$ tem o mesmo significado que $120 - 17 = 103$. A
 
 ---
 
-## 9. Outra Face da Criptografia RSA: Assinatura Digital
+## 9. Outra Face da Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/): Assinatura Digital
 
 A parte fantástica da criptografia RSA é que, se invertermos as funções da chave pública e chave privada, ela também pode ser usada como uma **"Assinatura Digital"**.
 
@@ -302,7 +302,7 @@ A Alice transforma a mensagem usando sua própria chave privada $d$ (essa será 
 
 ---
 
-## 10. Sentindo a Criptografia RSA na Prática com Código
+## 10. Sentindo a Criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) na Prática com Código
 
 O cálculo de potências que seria difícil de fazer à mão pode ser implementado muito facilmente usando Python. A seguir, um código Python para você experienciar a lógica central da criptografia RSA.
 
@@ -342,7 +342,7 @@ Como a função `pow(base, exp, mod)` do Python usa internamente um algoritmo r�
 
 ## 11. Conclusão e Futuro das Tecnologias de Criptografia
 
-Nós desvendamos o mecanismo da criptografia RSA tendo como base a matemática do ensino médio.
+Nós desvendamos o mecanismo da criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) tendo como base a matemática do ensino médio.
 
 1. **A dificuldade da fatoração em números primos:** É fácil calcular $p \times q = N$, mas é extremamente difícil encontrar $p, q$ a partir de $N$.
 2. **Congruências e Teorema de Euler:** Devido à regra $a^{\phi(N)} \equiv 1 \pmod N$, completa-se o mágico alçapão onde "a exponenciação por um certo número retorna ao estado original".
@@ -350,4 +350,4 @@ Nós desvendamos o mecanismo da criptografia RSA tendo como base a matemática d
 
 O $N$ da criptografia RSA usada atualmente possui mais de 600 dígitos, e mesmo que todos os supercomputadores do mundo se juntassem para faturar esse número em primos, levaria um tempo maior do que a idade do universo. No entanto, se o "computador quântico", que vem sendo pesquisado ativamente nos últimos anos, se tornar prático no futuro, essa fatoração poderá ser resolvida em instantes pelo "[Algoritmo de Shor](https://kenji.blog/pt/p/quantum-computing-shors-algorithm/)". Por esse motivo, criptografias "resistentes a computadores quânticos", que não poderiam ser quebradas nem mesmo por eles, estão sendo desenvolvidas a um ritmo acelerado pelo mundo todo.
 
-A matemática avançada que costumamos considerar "inútil", na verdade, protege nosso dia a dia na sua essência mais profunda. A criptografia RSA é um excelente material didático que nos ensina essa profundidade e beleza da matemática. Ficaria muito feliz se através deste artigo você pudesse sentir um pouco do fascínio da criptografia e da matemática.
+A matemática avançada que costumamos considerar "inútil", na verdade, protege nosso dia a dia na sua essência mais profunda. A criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/) é um excelente material didático que nos ensina essa profundidade e beleza da matemática. Ficaria muito feliz se através deste artigo você pudesse sentir um pouco do fascínio da criptografia e da matemática.

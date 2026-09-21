@@ -39,7 +39,7 @@ tags: ["比特幣", "密碼學", "區塊鏈"]
 
 2008 年，發生了由雷曼兄弟破產引發的全球金融危機。在對現有金融系統的不信任感達到頂點的同年 10 月 31 日，一位化名為「中本聰（Satoshi Nakamoto）」的匿名人士（或團體）在密碼學郵件列表中發布了一篇論文。
 
-標題為《Bitcoin: A Peer-to-Peer Electronic Cash System》（比特幣：一種對等式的電子現金系統）。這篇 9 頁的論文展示了如何利用 **工作量證明（Proof of Work: PoW）** 機制，以完全去中心化的方式解決過去電子貨幣嘗試中所面臨的雙重支付問題。
+標題為《Bitcoin: A Peer-to-Peer Electronic Cash System》（比特幣：一種對等式的電子現金系統）。這篇 9 頁的論文展示了如何利用 **工作量證明（Proof of Work: [PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)）** 機制，以完全去中心化的方式解決過去電子貨幣嘗試中所面臨的雙重支付問題。
 
 ### 創世區塊（Genesis Block）
 
@@ -52,7 +52,7 @@ tags: ["比特幣", "密碼學", "區塊鏈"]
 
 ## 3. 區塊鏈的架構
 
-支撐比特幣的核心技術是「區塊鏈（Blockchain）」。區塊鏈是分散式帳本技術（Distributed Ledger Technology: DLT）的一種形式，數據被打包成稱為「區塊」的單位，並且它們以密碼學的方式像鏈條一樣連接在一起。
+支撐比特幣的核心技術是「區塊鏈（[Blockchain](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)）」。區塊鏈是分散式帳本技術（[Distributed Ledger](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/) Technology: DLT）的一種形式，數據被打包成稱為「區塊」的單位，並且它們以密碼學的方式像鏈條一樣連接在一起。
 
 ```mermaid
 flowchart TD
@@ -105,17 +105,17 @@ flowchart TD
 
 在比特幣中，計算區塊哈希以及從公開金鑰生成地址的過程中，會將 SHA-256 應用兩次（這被稱為 `SHA256(SHA256(x))`，或者 Hash256）。
 
-### 公開金鑰密碼學（Public Key Cryptography）與數位簽章
+### 公開金鑰密碼學（[Public Key](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) [Cryptography](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)）與數位簽章
 
 加密貨幣的所有權是透過私有金鑰（Private Key）與公開金鑰（Public Key）的配對來證明的。
 - **私有金鑰** $k$： 隨機生成的 256 位元整數。絕對不能讓其他人知道。
 - **公開金鑰** $K$： 從私有金鑰使用單向函數計算出來的金鑰。會在網路上公開。
 
-當愛麗絲要發送比特幣給鮑伯時，愛麗絲會使用她自己的私有金鑰為交易數據建立 **數位簽章（Digital Signature）**。網路參與者可以使用愛麗絲的公開金鑰來驗證該簽章是否合法（是否真的是愛麗絲使用私有金鑰建立的）。
+當愛麗絲要發送比特幣給鮑伯時，愛麗絲會使用她自己的私有金鑰為交易數據建立 **數位簽章（[Digital Signature](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/)）**。網路參與者可以使用愛麗絲的公開金鑰來驗證該簽章是否合法（是否真的是愛麗絲使用私有金鑰建立的）。
 
 ### 橢圓曲線密碼學（Elliptic Curve Cryptography: ECC）與 secp256k1
 
-在比特幣的公開金鑰生成與數位簽章中，採用的不是 RSA 加密，而是 **橢圓曲線密碼學（ECC）**。ECC 的優勢在於能以比 RSA 短得多的金鑰長度提供同等的安全級別。
+在比特幣的公開金鑰生成與數位簽章中，採用的不是 [RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密，而是 **橢圓曲線密碼學（ECC）**。ECC 的優勢在於能以比 RSA 短得多的金鑰長度提供同等的安全級別。
 
 比特幣中使用的特定橢圓曲線參數被稱為 **secp256k1**。此曲線定義在有限體 $\mathbb{F}_p$ 上，並以下列方程式表示：
 
@@ -153,7 +153,7 @@ $$
 3. 計算點 $(x_2, y_2) = u_1 \cdot G + u_2 \cdot K$。
 4. 如果 $r \equiv x_2 \pmod{n}$，則簽章被視為合法的。
 
-## 5. 共識演算法與工作量證明（PoW）
+## 5. 共識演算法與工作量證明（[PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)）
 
 在去中心化網路中，讓所有人對相同帳本狀態達成一致的機制就是共識演算法。
 
@@ -161,7 +161,7 @@ $$
 
 分散式計算中一個經典的問題是「拜占庭將軍問題」。多位將軍包圍了一座敵方城市，他們必須在攻擊或撤退上達成一致意見，但將軍中可能會有叛徒發送假訊息。在這種情況下，問題在於如何僅讓誠實的將軍們達成正確的共識。
 
-比特幣透過結合 **工作量證明（PoW）** 與 **最長鏈規則（Longest Chain Rule）**，實質上解決了這個問題。
+比特幣透過結合 **工作量證明（[PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)）** 與 **最長鏈規則（Longest Chain Rule）**，實質上解決了這個問題。
 
 ### 挖礦的數學原理與隨機數（Nonce）
 
@@ -226,9 +226,9 @@ $$
 
 在閃電網路中，參與者之間會在區塊鏈外（鏈下）開設「支付通道（Payment Channel）」。在通道內，只要雙方同意，就可以在不將交易記錄在區塊鏈上的情況下，瞬間且幾乎免費地進行無數次資金交換。只有在進行最終餘額結算時，才會將交易記錄在區塊鏈（第一層）上。
 
-### 與權益證明（PoS）的比較
+### 與權益證明（[PoS](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/)）的比較
 
-PoW 的另一個重大挑戰是挖礦造成的龐大電力消耗。作為對此環境問題的對策，以太坊等已經轉向被稱為 **權益證明（Proof of Stake: PoS）** 的另一種共識演算法。
+[PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/) 的另一個重大挑戰是挖礦造成的龐大電力消耗。作為對此環境問題的對策，以太坊等已經轉向被稱為 **權益證明（Proof of Stake: PoS）** 的另一種共識演算法。
 
 在 PoS 中，不是根據計算能力（算力），而是根據持有的加密貨幣數量（權益）與持有期間，以機率分配生成下一個區塊的權利（驗證者）。雖然這可以減少 99% 以上的電力消耗，但也存在著「這是否是一個讓富者更富的系統？」、「完全去中心化是否會受到損害？」的批評。而比特幣無論受到多少批評，仍堅持著「透過消耗能源來提供物理安全性保障」的 PoW 哲學。
 
@@ -248,13 +248,13 @@ PoW 的另一個重大挑戰是挖礦造成的龐大電力消耗。作為對此�
 ### 量子電腦的威脅與抗量子密碼學
 
 然而，計算複雜度安全性有一個巨大的隱憂。那就是 **量子電腦（Quantum Computer）** 的崛起。
-Peter Shor 於 1994 年發表的「Shor 演算法（[Shor's Algorithm](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/)）」在數學上證明了，如果使用量子電腦，就可以在多項式時間 $\mathcal{O}(n^3)$ 內解決質因數分解問題（RSA 加密的基礎）與離散對數問題（ECC 的基礎）。
+Peter Shor 於 1994 年發表的「Shor 演算法（[Shor's Algorithm](https://kenji.blog/zh-tw/p/quantum-computing-shors-algorithm/)）」在數學上證明了，如果使用量子電腦，就可以在多項式時間 $\mathcal{O}(n^3)$ 內解決質因數分解問題（[RSA](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/) 加密的基礎）與離散對數問題（ECC 的基礎）。
 
 如果完成具有足夠量子位元（Qubits）且錯誤率低的實用大規模量子電腦，就會產生從比特幣公開金鑰反推私有金鑰的風險。
 對此，比特幣網路的防禦對策如下：
 
 1. **哈希函數的保護**： 比特幣地址不是公開金鑰本身，而是將 SHA-256 與 RIPEMD-160 兩種哈希函數應用於公開金鑰的結果。即使使用量子電腦，逆向計算哈希函數（即使使用 Grover 演算法，計算量也為 $\mathcal{O}(\sqrt{N})$）仍然很困難。因此，在進行交易並將公開金鑰暴露給網路之前，地址的內容對於量子電腦來說仍然是安全的。
-2. **向抗量子密碼學（Post-Quantum Cryptography: PQC）過渡**： 目前正在討論，在量子電腦實用化之前，對比特幣協議進行硬分叉，轉向 NIST（美國國家標準暨技術研究院）所選定的基於格子的密碼學（Lattice-based cryptography）或多變量多項式密碼學（Multivariate polynomial cryptography）等，即使是量子電腦也難以破解的新簽章演算法。
+2. **向抗量子密碼學（Post-Quantum [Cryptography](https://kenji.blog/zh-tw/p/modern-cryptography-public-key-hash-signature/): PQC）過渡**： 目前正在討論，在量子電腦實用化之前，對比特幣協議進行硬分叉，轉向 NIST（美國國家標準暨技術研究院）所選定的基於格子的密碼學（Lattice-based cryptography）或多變量多項式密碼學（Multivariate polynomial cryptography）等，即使是量子電腦也難以破解的新簽章演算法。
 
 ## 9. 網路拓撲與 [P2P](https://kenji.blog/zh-tw/p/webrtc-realtime-communication-p2p/) 協議的詳細內容
 
@@ -266,7 +266,7 @@ Peter Shor 於 1994 年發表的「Shor 演算法（[Shor's Algorithm](https://k
 
 - **全節點（Full Node）**： 下載並驗證從創世區塊到最新區塊的所有區塊鏈數據（數百 GB 以上）的節點。因為它獨立檢查交易的合法性與是否存在雙重支付，所以擔負著網路安全的根基。
 - **SPV 節點（Simplified Payment Verification Node）**： 這是一種只下載區塊標頭而不下載整個區塊鏈的輕量節點。主要用於智慧型手機的錢包等。它可以確認自身的交易是否包含在區塊中（默克爾路徑的驗證），但沒有全節點那樣的驗證能力。
-- **挖礦節點（Mining Node）**： 執行 PoW 計算並生成新區塊的節點。現在，這項任務主要由整合了被稱為 ASIC（特殊應用積體電路）的挖礦專用硬體的巨大「礦池」來承擔。
+- **挖礦節點（Mining Node）**： 執行 [PoW](https://kenji.blog/zh-tw/p/blockchain-technology-smart-contract-distributed-ledger/) 計算並生成新區塊的節點。現在，這項任務主要由整合了被稱為 ASIC（特殊應用積體電路）的挖礦專用硬體的巨大「礦池」來承擔。
 
 ### 交易的傳播過程（Gossip Protocol）
 

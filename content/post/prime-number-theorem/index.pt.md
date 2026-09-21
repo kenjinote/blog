@@ -138,7 +138,7 @@ Quando você executa este código, pode observar como a razão $\pi(x) / (x/\ln(
 
 As propriedades dos números primos não são apenas assuntos interessantes na matemática pura, mas também elementos cruciais que sustentam a infraestrutura de segurança da sociedade moderna.
 
-Sistemas de criptografia de chave pública, como a criptografia RSA, utilizam a propriedade de que "a fatoração em números primos de inteiros enormes é extremamente difícil". O teorema dos números primos garante qual é a probabilidade de encontrar "números primos de tamanho apropriado" necessários para a geração de chaves criptográficas.
+Sistemas de criptografia de chave pública, como a criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), utilizam a propriedade de que "a fatoração em números primos de inteiros enormes é extremamente difícil". O teorema dos números primos garante qual é a probabilidade de encontrar "números primos de tamanho apropriado" necessários para a geração de chaves criptográficas.
 
 Por exemplo, a probabilidade de um número ímpar aleatório de 1024 bits ser um número primo é estimada em cerca de $1 / (1024 \times \ln(2) / 2) \approx 1 / 355$. Isso significa que, ao realizar centenas de testes de primalidade, podemos encontrar os enormes números primos necessários com alta probabilidade, e construir um sistema criptográfico eficiente seria impossível sem o teorema dos números primos.
 

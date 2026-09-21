@@ -149,11 +149,11 @@ end
 
 ### 中本聪共识 (Proof of Work)
 
-[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)的创始人中本聪采用了一种全新的方法来应对这个问题，那就是将 **工作量证明** (Proof of Work, PoW) 与“最长链有效”原则相结合的 **中本聪共识** 。
+[比特币](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)的创始人中本聪采用了一种全新的方法来应对这个问题，那就是将 **工作量证明** (Proof of Work, [PoW](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/)) 与“最长链有效”原则相结合的 **中本聪共识** 。
 
 在中本聪共识中，只有在数学计算竞争（挖矿）中获胜的人，才能获得提议区块的权利。为了让网络接受虚假信息，恶意者必须控制全网算力的过半数（51%以上），这在现实中是极其困难的设计。通过这种方式，它被评价为在不特定多数人参与的开放网络中，概率性地解决了[拜占庭将军问题](https://kenji.blog/zh-cn/p/byzantine-generals-problem/)。
 
-### PoS (权益证明) 中 BFT 的应用
+### [PoS](https://kenji.blog/zh-cn/p/blockchain-technology-smart-contract-distributed-ledger/) (权益证明) 中 BFT 的应用
 
 中本聪共识虽然具有划时代意义，但存在挖矿消耗大量电力的缺陷。为了解决这个问题，出现了根据节点持有的加密资产数量（权益，Stake）来分配区块提议权的 **权益证明** (Proof of Stake, PoS) 机制。
 

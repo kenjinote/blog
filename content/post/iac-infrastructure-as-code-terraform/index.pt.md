@@ -350,7 +350,7 @@ Ao projetar um módulo no Terraform, adicionar `az_count` como uma variável de 
 
 ## Anti-Padrões
 1. **Mistura com Alterações Manuais**: Modificar um recurso gerido pelo Terraform diretamente da GUI. Isso levará a inconsistências de estado.
-2. **Hardcoding de Credenciais**: Colocar diretamente chaves de acesso e chaves secretas no código. Use variáveis de ambiente e regras do IAM (OIDC e integrações semelhantes).
+2. **Hardcoding de Credenciais**: Colocar diretamente chaves de acesso e chaves secretas no código. Use variáveis de ambiente e regras do IAM ([OIDC](https://kenji.blog/pt/p/oauth2-oidc-authentication-authorization-difference/) e integrações semelhantes).
 3. **Módulos Demasiado Complexos**: Ao tentar incorporar todas as funcionalidades num módulo, há a possibilidade de criar dezenas de variáveis, degradando severamente a legibilidade. Tenha sempre em mente que "1 módulo deve ter 1 responsabilidade" (Single Responsibility).
 
 ---

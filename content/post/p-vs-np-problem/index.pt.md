@@ -283,7 +283,7 @@ Quando o número de cidades excede $N=20$, a solução exata (por força bruta) 
 
 Atualmente, todos os sistemas criptográficos no mundo (SSL/TLS usado em compras online ou blockchain, como Bitcoin) dependem da assimetria de que **"leva uma quantidade absurda de tempo para encontrar uma solução, mas a sua verificação é instantânea"**.
 
-A fatoração em números primos, que está na base da criptografia RSA, é um destes exemplos.
+A fatoração em números primos, que está na base da criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), é um destes exemplos.
 Suponhamos que alguém prove $P = NP$ e construa um algoritmo mágico (prova construtiva) para resolver problemas NP num tempo polinomial. Isso provocaria a seguinte **mudança de paradigma na sociedade humana**.
 
 1. **Colapso da criptografia**: Todos os modernos sistemas de criptografia de chave pública, tais como RSA e criptografia de curvas elípticas, seriam imediatamente destruídos e a segurança digital entraria num colapso total.

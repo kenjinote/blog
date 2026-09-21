@@ -140,7 +140,7 @@ Furthermore, learning the structure of the "[B-Tree](https://kenji.blog/en/p/b-t
 
 While superficial security education like "Let's make passwords complex" and "Don't click on suspicious links" is conducted in information literacy education, the mathematics of "[Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy" that fundamentally supports internet society is almost never taught.
 
-The HTTPS communications and digital signatures we use every day are protected by public-key cryptography, such as RSA cryptography. The security of RSA relies on the mathematical difficulty (considered an NP-intermediate problem) that "the prime factorization of massive integers cannot be solved within a realistic time frame by current classical computers."
+The HTTPS communications and digital signatures we use every day are protected by public-key cryptography, such as [RSA](https://kenji.blog/en/p/modern-cryptography-public-key-hash-signature/) cryptography. The security of RSA relies on the mathematical difficulty (considered an NP-intermediate problem) that "the prime factorization of massive integers cannot be solved within a realistic time frame by current classical computers."
 
 The mathematical formulas underlying RSA cryptography are beautiful applications of Euler's totient function and [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/).
 

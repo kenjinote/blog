@@ -150,10 +150,10 @@ print(f"gcd: {g}, x: {x}, y: {y}")
 # 確認: 111 * 3 + 30 * (-11) = 333 - 330 = 3
 ```
 
-## 現代社会における応用（RSA暗号など）
+## 現代社会における応用（[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号など）
 
 拡張[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)は、単なる数学パズルではなく、現代のインターネット社会を支える不可欠な技術です。
-代表的な例が **RSA暗号** です。RSA暗号の鍵生成プロセスでは、ある数 $e$ と、[オイラー](https://kenji.blog/p/euler/)関数 $\phi(N)$ に対して、 $e d \equiv 1 \pmod{\phi(N)}$ を満たす秘密鍵 $d$ （モジュラ逆元）を求める必要があります。
+代表的な例が **[RSA](https://kenji.blog/p/modern-cryptography-public-key-hash-signature/)暗号** です。RSA暗号の鍵生成プロセスでは、ある数 $e$ と、[オイラー](https://kenji.blog/p/euler/)関数 $\phi(N)$ に対して、 $e d \equiv 1 \pmod{\phi(N)}$ を満たす秘密鍵 $d$ （モジュラ逆元）を求める必要があります。
 これは $ed + k\phi(N) = 1$ という形に変形できるため、まさに拡張[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)を用いて高速に $d$ を計算することができます。
 
 ## まとめ

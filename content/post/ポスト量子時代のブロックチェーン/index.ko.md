@@ -12,7 +12,7 @@ description: "양자 컴퓨터의 경이적인 계산 능력이 블록체인의 
 
 ## 1. 인트로덕션: 포스트 양자 시대의 발소리와 블록체인의 위기
 
-2009년 사토시 나카모트에 의해 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)([Bitcoin](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/))이 탄생한 이래, 블록체인 기술은 '탈중앙화되고 위변조가 불가능한 원장'으로서 전 세계 금융 시스템과 애플리케이션의 기반으로 성장했습니다. 이러한 견고한 보안을 지탱하고 있는 것이 **공개키 암호(Public Key [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)** 와 **암호학적 해시 함수([Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphic Hash Functions)** 라는 현대 암호 기술입니다.
+2009년 사토시 나카모트에 의해 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)([Bitcoin](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/))이 탄생한 이래, 블록체인 기술은 '탈중앙화되고 위변조가 불가능한 원장'으로서 전 세계 금융 시스템과 애플리케이션의 기반으로 성장했습니다. 이러한 견고한 보안을 지탱하고 있는 것이 **공개키 암호([Public Key](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)** 와 **암호학적 해시 함수([Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphic [Hash Function](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)s)** 라는 현대 암호 기술입니다.
 
 이러한 암호 기술은 고전적인 컴퓨터(현재 우리가 사용하고 있는 PC나 슈퍼컴퓨터)로는 우주의 수명만큼의 시간을 들여도 해독할 수 없다는 수학적인 '계산 곤란성(Computational Hardness)'을 근거로 안전성을 보장하고 있습니다.
 
@@ -42,7 +42,7 @@ graph TD
 
 ### 2.1. 타원곡선 암호(ECDSA)의 기초와 계산 곤란성
 
-[비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)이나 이더리움(Ethereum)을 비롯한 많은 블록체인은 디지털 서명 알고리즘으로 **타원곡선 디지털 서명 알고리즘(ECDSA: Elliptic Curve Digital Signature Algorithm)** 을 채택하고 있습니다. 구체적으로 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)은 `secp256k1`이라는 매개변수의 타원곡선을 사용합니다.
+[비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)이나 이더리움(Ethereum)을 비롯한 많은 블록체인은 디지털 서명 알고리즘으로 **타원곡선 디지털 서명 알고리즘(ECDSA: Elliptic Curve [Digital Signature](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) Algorithm)** 을 채택하고 있습니다. 구체적으로 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)은 `secp256k1`이라는 매개변수의 타원곡선을 사용합니다.
 
 타원곡선 암호의 안전성은 **타원곡선 이산대수 문제(ECDLP: Elliptic Curve Discrete Logarithm Problem)** 의 계산 곤란성에 의존하고 있습니다.
 타원곡선은 아래의 바이어슈트라스(Weierstrass) 표준형으로 표현되는 방정식으로 정의됩니다.
@@ -62,7 +62,7 @@ $$
 
 ### 2.2. 쇼어의 알고리즘([Shor's Algorithm](https://kenji.blog/ko/p/quantum-computing-shors-algorithm/))에 의한 붕괴
 
-하지만 1994년에 피터 쇼어가 발표한 **쇼어의 알고리즘** 은 이 전제를 완전히 파괴했습니다. 쇼어의 알고리즘은 원래 소인수분해 문제(RSA 암호의 기반)를 다항식 시간에 풀기 위해 제안되었지만, 이산대수 문제나 타원곡선 이산대수 문제에도 적용 가능합니다.
+하지만 1994년에 피터 쇼어가 발표한 **쇼어의 알고리즘** 은 이 전제를 완전히 파괴했습니다. 쇼어의 알고리즘은 원래 소인수분해 문제([RSA](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/) 암호의 기반)를 다항식 시간에 풀기 위해 제안되었지만, 이산대수 문제나 타원곡선 이산대수 문제에도 적용 가능합니다.
 
 쇼어 알고리즘의 핵심은 **양자 푸리에 변환(QFT: Quantum Fourier Transform)** 을 사용하여 함수의 '주기(Period)'를 고속으로 찾아내는 데 있습니다.
 
@@ -112,7 +112,7 @@ $$
 
 또 다른 위협은 1996년 로브 그로버(Lov Grover)가 제안한 **그로버의 알고리즘** 입니다. 이는 해시 함수(예: SHA-256)에 큰 영향을 미칩니다.
 
-블록체인에서 해시 함수는 데이터 무결성 보장, 주소 생성, 그리고 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 **PoW(Proof of Work) 마이닝** 기반으로 사용되고 있습니다. 해시 함수의 역산(원상 계산)은 특정 출력값 $y$에 대해 $H(x) = y$가 되는 입력값 $x$를 찾는 '비구조화 데이터베이스 탐색 문제'로 간주할 수 있습니다.
+블록체인에서 해시 함수는 데이터 무결성 보장, 주소 생성, 그리고 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 **[PoW](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/)(Proof of Work) 마이닝** 기반으로 사용되고 있습니다. 해시 함수의 역산(원상 계산)은 특정 출력값 $y$에 대해 $H(x) = y$가 되는 입력값 $x$를 찾는 '비구조화 데이터베이스 탐색 문제'로 간주할 수 있습니다.
 
 고전 컴퓨터에서는 $N$개의 가능성 중에서 정답을 찾기 위해 평균적으로 $\frac{N}{2}$번, 최악의 경우 $N$번의 시도가 필요합니다. 즉, 계산량은 $\mathcal{O}(N)$입니다.
 하지만 그로버의 알고리즘은 '진폭 증폭(Amplitude Amplification)'이라 불리는 양자 기술을 사용합니다. 중첩 상태에 있는 모든 가능성 중에서 정답이 되는 상태의 확률 진폭을 반복적으로 증폭시킴으로써 탐색 시간을 제곱근으로 단축시킵니다.
@@ -141,7 +141,7 @@ SHA-256의 경우 $N = 2^{256}$이므로 고전적인 무차별 대입(Brute-for
 [비트코인](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 주소([P2P](https://kenji.blog/ko/p/webrtc-realtime-communication-p2p/)KH: Pay-to-Public-Key-Hash나 P2WPKH: Pay-to-Witness-Public-Key-Hash)는 공개키 그 자체가 아니라 공개키를 여러 번 해시화한 것을 사용합니다.
 
 $$
-\text{[Bitcoin](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{Public Key})))
+\text{[Bitcoin](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/) Address} = \text{Base58Check}(\text{RIPEMD160}(\text{SHA256}(\text{[Public Key](https://kenji.blog/ko/p/modern-cryptography-public-key-hash-signature/)})))
 $$
 
 앞서 언급했듯이 해시 함수는 양자 공격(그로버의 알고리즘)에 대해 내성을 가지므로, 해시값인 '주소'로부터 원래의 '공개키'를 역산하는 것은 양자 컴퓨터로도 불가능합니다.
@@ -337,7 +337,7 @@ NIST에 의한 PQC 표준화가 완전히 정착되고 업계 표준 라이브�
 * **주소 재사용을 피한다**: '사용된 주소(한 번이라도 자금을 송금하여 공개키가 블록체인 상에 노출된 주소)'에는 자금을 장기간 보관하지 않도록, 프라이버시 관점뿐만 아니라 보안 관점에서도 철저히 한다.
 * **기술 동향에 주목한다**: [Bitcoin](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)의 BIP나 Ethereum의 EIP 등 주요 네트워크의 PQC 전환에 관한 논의나 하드포크 뉴스에 촉각을 곤두세우고, 필요해진 타이밍에 적절히 지갑 전환 작업을 수행할 수 있도록 한다.
 
-블록체인의 역사는 항상 새로운 기술적 위협에 대한 업그레이드와 레질리언스(회복력)의 역사이기도 합니다. 확장성 문제나 환경 문제(PoW에서 PoS로의 전환 등)를 극복해 온 것처럼, 이 전대미문의 양자 위협에 대해서도 생태계 전체가 해결책을 모색하고 적응해 나갈 것입니다.
+블록체인의 역사는 항상 새로운 기술적 위협에 대한 업그레이드와 레질리언스(회복력)의 역사이기도 합니다. 확장성 문제나 환경 문제([PoW](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/)에서 [PoS](https://kenji.blog/ko/p/blockchain-technology-smart-contract-distributed-ledger/)로의 전환 등)를 극복해 온 것처럼, 이 전대미문의 양자 위협에 대해서도 생태계 전체가 해결책을 모색하고 적응해 나갈 것입니다.
 양자 컴퓨터라는 인류의 새로운 지혜와 탈중앙화된 분산 원장이라는 신뢰의 기술이 충돌로 인해 붕괴하는 것이 아니라, 더 높은 차원에서 융합된 견고한 시스템으로 승화되어 가는 미래를 기대해 봅니다.
 
 ---

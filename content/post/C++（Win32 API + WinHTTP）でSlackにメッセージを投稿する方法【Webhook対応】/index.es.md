@@ -212,6 +212,6 @@ Si te interesa, la próxima vez podríamos cubrir:
 
 * **Adjuntar archivos**
 * **Interfaz de usuario con botones**
-* **Operaciones API flexibles con Slack App + OAuth2**
+* **Operaciones API flexibles con Slack App + [OAuth](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/)2**
 
 ¡Podemos presentar una integración con Slack un paso más allá!

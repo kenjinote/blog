@@ -11,20 +11,20 @@ description: 'نشرح كيفية نشر الرسائل عبر Slack Web API ب�
 
 ## ✅ طريقة النشر باستخدام رمز الوصول (Slack Web API)
 
-يعد "OAuth Token (مثل xoxb- وما إلى ذلك)" من Slack هو المفتاح للنشر باستخدام [Web API](https://api.slack.com/methods/chat.postMessage) الخاص بـ Slack.
+يعد "[OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) Token (مثل xoxb- وما إلى ذلك)" من Slack هو المفتاح للنشر باستخدام [Web API](https://api.slack.com/methods/chat.postMessage) الخاص بـ Slack.
 في هذه الحالة، وعلى عكس Webhook، ستقوم بإجراء `POST` إلى **نقطة نهاية API في Slack** مع رأس `Authorization: Bearer`.
 
 ---
 
 ## 🔑 المتطلبات الأساسية
 
-يجب عليك تضمين **`chat:write` في نطاق OAuth** في تطبيق Slack الخاص بك:
+يجب عليك تضمين **`chat:write` في نطاق [OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/)** في تطبيق Slack الخاص بك:
 
 ### خطوات الإعداد
 
 1. قم بزيارة [https://api.slack.com/apps](https://api.slack.com/apps)
 2. قم بإنشاء تطبيق أو حدد تطبيقًا موجودًا
-3. في "OAuth & Permissions" > `Scopes`
+3. في "[OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/) & Permissions" > `Scopes`
    ← أضف `chat:write`
 4. قم بإجراء "Install to Workspace" أو "Reinstall" للحصول على `Access Token` (مثال: `xoxb-xxxxxxxxxx`)
 

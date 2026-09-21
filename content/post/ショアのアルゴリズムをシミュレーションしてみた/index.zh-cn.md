@@ -12,7 +12,7 @@ description: '我们将详细讲解量子计算机如何可能破坏当前的密
 
 # 1. 引言：量子计算机带来的密码危机
 
-现代互联网社会的大部分安全性都依赖于 **公钥密码体制** （尤其是RSA加密）。当我们在网上购物发送信用卡信息，或交换高度机密的数据时，这些通信内容都受到RSA加密的坚固保护。
+现代互联网社会的大部分安全性都依赖于 **公钥密码体制** （尤其是[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)加密）。当我们在网上购物发送信用卡信息，或交换高度机密的数据时，这些通信内容都受到RSA加密的坚固保护。
 
 RSA加密安全性的基础依赖于一个数学事实：“ **使用经典计算机（我们日常使用的PC或超级计算机）对巨大的整数进行质因数分解是极其困难的** ”。然而，彼得·秀尔（Peter Shor）在1994年发表的“ **秀尔算法（[Shor's Algorithm](https://kenji.blog/zh-cn/p/quantum-computing-shors-algorithm/)）** ”从根本上颠覆了这一前提。在数学上已经证明，如果在大型量子计算机上运行秀尔算法，可以在短短几分钟到几个小时内解开经典计算机需要花费超过宇宙年龄的时间才能完成的质因数分解。
 
@@ -322,7 +322,7 @@ $q = \gcd(7^2 + 1, 15) = \gcd(50, 15) = 5$
 
 # 6. 走向实用化的课题与 NISQ 时代的局限
 
-虽然在模拟器上可以轻松地对 $N=15$ 进行质因数分解，但要对现实社会中使用的 RSA-2048（617位的十进制数）进行质因数分解，现实的量子计算机还面临许多障碍。
+虽然在模拟器上可以轻松地对 $N=15$ 进行质因数分解，但要对现实社会中使用的 [RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)-2048（617位的十进制数）进行质因数分解，现实的量子计算机还面临许多障碍。
 
 我们现在所处的时代被称为 **NISQ（Noisy Intermediate-Scale Quantum：含噪声中等规模量子）时代** 。量子比特对外部环境的噪声极其敏感，在计算过程中会发生“退相干”导致状态破坏。
 
@@ -341,7 +341,7 @@ $q = \gcd(7^2 + 1, 15) = \gcd(50, 15) = 5$
 
 PQC基于新的数学问题（如格问题、多变量多项式问题、基于哈希函数等），在数学上被认为即使使用秀尔算法（或使用格罗弗算法）也无法高效求解。已经有诸如“CRYSTALS-Kyber”和“CRYSTALS-Dilithium”等算法被选为标准规范，并正逐步引入Apple的iMessage和各种Web浏览器的通信协议中。
 
-对于管理IT基础设施的工程师来说，将系统从现有的RSA或椭圆曲线加密向PQC过渡，并建立“密码敏捷性（[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)-Agility：能够快速切换加密方式的设计）”，将是未来的重要使命。
+对于管理IT基础设施的工程师来说，将系统从现有的[RSA](https://kenji.blog/zh-cn/p/modern-cryptography-public-key-hash-signature/)或椭圆曲线加密向PQC过渡，并建立“密码敏捷性（[Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)-Agility：能够快速切换加密方式的设计）”，将是未来的重要使命。
 
 ---
 

@@ -27,20 +27,20 @@ description: 'Slack 앱의 OAuth 토큰을 이용하여 Slack Web API를 통해 
 
 ## ✅ 액세스 토큰을 사용하는 게시 방법 (Slack Web API)
 
-Slack의 "OAuth Token(xoxb-～ 등)"은 Slack의 [Web API](https://api.slack.com/methods/chat.postMessage)를 사용하여 게시하기 위한 키입니다.
+Slack의 "[OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) Token(xoxb-～ 등)"은 Slack의 [Web API](https://api.slack.com/methods/chat.postMessage)를 사용하여 게시하기 위한 키입니다.
 이 경우 Webhook과는 달리 **Slack API 엔드포인트** 에 `Authorization: Bearer` 헤더와 함께 `POST`합니다.
 
 ---
 
 ## 🔑 필요한 전제 조건
 
-Slack 앱에서 **OAuth 범위(scope)에 `chat:write`** 를 포함해야 합니다:
+Slack 앱에서 **[OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) 범위(scope)에 `chat:write`** 를 포함해야 합니다:
 
 ### 설정 절차
 
 1. [https://api.slack.com/apps](https://api.slack.com/apps)에 접속
 2. 앱 생성 또는 기존 앱 선택
-3. "OAuth & Permissions" > `Scopes`에서
+3. "[OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/) & Permissions" > `Scopes`에서
    → `chat:write` 추가
 4. "Install to Workspace" 또는 "Reinstall"하여 `Access Token` 획득 (예: `xoxb-xxxxxxxxxx`)
 

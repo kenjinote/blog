@@ -14,7 +14,7 @@ description: 'Von der antiken Caesar-Chiffre über die Enigma und die Public-Key
 
 Die Kryptographie (Kryptographie) ist die Technologie zur Wahrung der Geheimhaltung von Informationen und hat sich zusammen mit der Geschichte der Menschheit entwickelt. Von der Übermittlung geheimer Befehle in antiken Kriegen bis zum Schutz von Kreditkarteninformationen im modernen Internet ist der Zweck der Kryptographie konsistent geblieben. Er besteht darin, sicherzustellen, "dass nur der beabsichtigte Empfänger die Informationen verstehen kann und sie für Dritte nicht entschlüsselbar sind".
 
-In der modernen Informationssicherheit spielt die Kryptographie nicht nur eine wichtige Rolle bei der "Geheimhaltung (Vertraulichkeit: Confidentiality)" von Informationen, sondern auch bei der "Integrität (Integrity)", "Authentifizierung (Authentication)" und der "Nichtabstreitbarkeit (Non-repudiation)" von Daten.
+In der modernen Informationssicherheit spielt die Kryptographie nicht nur eine wichtige Rolle bei der "Geheimhaltung (Vertraulichkeit: Confidentiality)" von Informationen, sondern auch bei der "Integrität (Integrity)", "Authentifizierung ([Authentication](https://kenji.blog/de/p/oauth2-oidc-authentication-authorization-difference/))" und der "Nichtabstreitbarkeit (Non-repudiation)" von Daten.
 
 In diesem Artikel werden wir die Geschichte der Entwicklung der Kryptographie aus einer technischen und mathematischen Perspektive detailliert entwirren, beginnend mit einfachen Substitutionschiffren der Antike über mechanische Chiffren, moderne symmetrische und asymmetrische Kryptographie bis hin zur Ära der "Post-Quanten-Kryptographie (PQC)", die mit der praktischen Anwendung von Quantencomputern anbrechen wird.
 
@@ -135,7 +135,7 @@ graph TD
 
 ---
 
-# 5. Die Revolution der Public-Key-Kryptographie: Von Diffie-Hellman zu RSA
+# 5. Die Revolution der Public-Key-Kryptographie: Von Diffie-Hellman zu [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)
 
 Die symmetrische Kryptographie hatte eine entscheidende Schwachstelle. Das war das "Schlüsselverteilungsproblem (Key Distribution Problem)". Es war das Problem, wie ein "gemeinsamer Schlüssel" sicher mit einer weit entfernten Partei geteilt werden konnte, bevor die verschlüsselte Kommunikation begann. Dieses Problem wurde durch die "Public-Key-Kryptographie" gelöst, die in den 1970er Jahren geboren wurde.
 
@@ -148,7 +148,7 @@ Die symmetrische Kryptographie hatte eine entscheidende Schwachstelle. Das war d
 4. Alice berechnet $K = B^a \pmod{p}$ und Bob berechnet $K = A^b \pmod{p}$.
 5. Durch die Potenzgesetze wird $K = (g^b)^a = (g^a)^b = g^{ab} \pmod{p}$, und sie können wunderbar denselben Schlüssel $K$ teilen.
 
-## RSA-Kryptographie
+## [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie
 Im folgenden Jahr, 1977, wurde die "RSA-Kryptographie" von Ron Rivest, Adi Shamir und Leonard Adleman entwickelt. Sie basiert auf der Eigenschaft, dass "die Primfaktorzerlegung einer riesigen zusammengesetzten Zahl schwierig ist".
 
 **Mathematischer Mechanismus von RSA:**
@@ -195,11 +195,11 @@ rsa_example()
 
 # 6. Der Aufstieg der elliptischen Kurvenkryptographie (ECC)
 
-Die RSA-Kryptographie ist mächtig, aber mit der Verbesserung der Computerleistung wurde es notwendig, die Schlüssellängen zu verlängern, um die Sicherheit aufrechtzuerhalten (derzeit 2048 Bit oder 3072 Bit), was zu dem Problem erhöhter Rechenkosten führte.
+Die [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/)-Kryptographie ist mächtig, aber mit der Verbesserung der Computerleistung wurde es notwendig, die Schlüssellängen zu verlängern, um die Sicherheit aufrechtzuerhalten (derzeit 2048 Bit oder 3072 Bit), was zu dem Problem erhöhter Rechenkosten führte.
 
 Daher wurde 1985 die "Elliptische Kurvenkryptographie (Elliptic Curve [Crypto](https://kenji.blog/de/p/cryptocurrency-and-bitcoin/)graphy: ECC)" vorgeschlagen. Sie nutzt die Addition von Punkten auf einer elliptischen Kurve über einem endlichen Körper (im Allgemeinen in der Form $y^2 = x^3 + ax + b$).
 
-Es ist bekannt, dass das Problem des diskreten Logarithmus auf elliptischen Kurven (ECDLP) noch schwerer zu lösen ist als das Primfaktorzerlegungsproblem, und **ECC kann dieselbe Sicherheit wie RSA mit 3072 Bit mit einer Schlüssellänge von nur 256 Bit erreichen**. Dies ermöglichte eine schnelle und sichere kryptographische Kommunikation (wie ECDSA und ECDH) auch in Umgebungen mit begrenzten Rechenressourcen, wie Smartphones und IoT-Geräten.
+Es ist bekannt, dass das Problem des diskreten Logarithmus auf elliptischen Kurven (ECDLP) noch schwerer zu lösen ist als das Primfaktorzerlegungsproblem, und **ECC kann dieselbe Sicherheit wie [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) mit 3072 Bit mit einer Schlüssellänge von nur 256 Bit erreichen**. Dies ermöglichte eine schnelle und sichere kryptographische Kommunikation (wie ECDSA und ECDH) auch in Umgebungen mit begrenzten Rechenressourcen, wie Smartphones und IoT-Geräten.
 
 ---
 
@@ -261,7 +261,7 @@ timeline
 
 Die Geschichte der Kryptographie ist eine Geschichte des endlosen Kampfes zwischen der Erfindung neuer Verschlüsselungsmethoden (Schilde) und neuen Entschlüsselungstechniken (Speere), um sie zu durchbrechen.
 
-Die Caesar-Chiffre wurde durch die Häufigkeitsanalyse besiegt, und die unbesiegbare Enigma wurde durch Turings geniales Gehirn und die Kraft der Maschinen besiegt. Und nun sind starke Chiffren wie RSA und ECC, die das Fundament der modernen Internetgesellschaft stützen, durch den neuen "Speer" der Quantencomputer bedroht.
+Die Caesar-Chiffre wurde durch die Häufigkeitsanalyse besiegt, und die unbesiegbare Enigma wurde durch Turings geniales Gehirn und die Kraft der Maschinen besiegt. Und nun sind starke Chiffren wie [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) und ECC, die das Fundament der modernen Internetgesellschaft stützen, durch den neuen "Speer" der Quantencomputer bedroht.
 
 Doch die Menschheit blickt bereits auf diese zukünftige Zeit und bereitet einen neuen "Schild" namens Post-Quanten-Kryptographie (PQC) vor. Gegenwärtig ist die Vorbereitung des Übergangs von bestehender Public-Key-Kryptographie zu PQC (Sicherstellung von Krypto-Agilität) eine dringende Aufgabe für IT-Infrastrukturen weltweit.
 

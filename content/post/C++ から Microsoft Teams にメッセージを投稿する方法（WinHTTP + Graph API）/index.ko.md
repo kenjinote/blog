@@ -67,7 +67,7 @@ Microsoft Teams 채팅에 자동으로 게시하고 싶을 때――
 
 ---
 
-## 🔐 액세스 토큰 획득 (OAuth2)
+## 🔐 액세스 토큰 획득 ([OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)2)
 
 획득에는 `client_credentials` 플로우를 사용합니다.  
 curl로 아래 명령어를 실행하여 액세스 토큰을 획득합니다.
@@ -196,7 +196,7 @@ curl -X GET ^
 | --------- | ----------------------------- |
 | Graph API | Teams와 통신하는 공식 API |
 | 앱 등록 | Azure에서 필요한 인증 절차 |
-| 액세스 토큰 | OAuth2로 획득하여 요청에 사용 |
+| 액세스 토큰 | [OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)2로 획득하여 요청에 사용 |
 | C++ 구현 | WinHTTP를 사용하여 Graph API 호출 |
 
 ## 🚀 다음 단계

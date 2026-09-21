@@ -184,7 +184,7 @@ Betrachten wir die spezifischen Anwendungsbereiche, in denen jede der beiden Met
 
 ### 6.2. Anwendungsfälle des Quantengatter-Modells
 - **Quantenchemiesimulation**: Hochpräzise Simulation von molekularen Energiezuständen und chemischen Reaktionen.
-- **Primfaktorzerlegung ([Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))**: Ein Algorithmus zur Zerlegung riesiger zusammengesetzter Zahlen in Polynomzeit. Wenn dieser praxistauglich wird, könnte er heutige Public-Key-Infrastrukturen wie RSA brechen, weshalb der Übergang zur Post-Quanten-Kryptographie (PQC) dringlich ist.
+- **Primfaktorzerlegung ([Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/))**: Ein Algorithmus zur Zerlegung riesiger zusammengesetzter Zahlen in Polynomzeit. Wenn dieser praxistauglich wird, könnte er heutige Public-Key-Infrastrukturen wie [RSA](https://kenji.blog/de/p/modern-cryptography-public-key-hash-signature/) brechen, weshalb der Übergang zur Post-Quanten-Kryptographie (PQC) dringlich ist.
 - **Datenbanksuche (Grover-Algorithmus)**: Bei der Suche nach bestimmten Daten in einer unsortierten Datenbank benötigen klassische Computer $O(N)$ Schritte, während der Grover-Algorithmus dies in $O(\sqrt{N})$ Schritten schafft.
 
 ### 6.3. Hybrid-Algorithmen der NISQ-Ära: VQE und QAOA

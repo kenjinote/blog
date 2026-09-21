@@ -182,7 +182,7 @@ jobs:
 
 In modern CI/CD, the **DevSecOps** approach of automating security checks is essential. By using GitHub Actions, you can easily incorporate security scans.
 
-### Dependency Vulnerability Scanning (npm audit)
+### Dependency [Vulnerability](https://kenji.blog/en/p/web-application-vulnerability-owasp-top-10/) Scanning (npm audit)
 
 ```yaml
       - name: Scan vulnerabilities
@@ -310,7 +310,7 @@ jobs:
       node-version: '20'
 ```
 
-## Secure Cloud Integration using OIDC (OpenID Connect)
+## Secure Cloud Integration using [OIDC](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/) ([OpenID Connect](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/))
 
 When deploying to cloud providers like AWS, GCP, or Azure, saving long-term credentials (such as secret keys) in GitHub entails security risks.
 
@@ -364,6 +364,6 @@ In this article, we detailed everything from the basics of CI/CD to how to build
 *   **Integrate frequently:** Merge small changes frequently to discover bugs early.
 *   **Utilize cache:** Shorten workflow execution time and improve the developer experience.
 *   **Automate quality and security:** Incorporate Lint, testing, and vulnerability scanning into the pipeline.
-*   **Use OIDC:** For cloud provider integration, use temporary tokens via OIDC instead of secret keys.
+*   **Use [OIDC](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/):** For cloud provider integration, use temporary tokens via OIDC instead of secret keys.
 
 GitHub Actions is a very flexible and powerful tool. We recommend starting with small steps, like automating Lint, and gradually expanding the pipeline as the project grows. Let's leverage the power of automation to achieve faster and higher-quality software development.

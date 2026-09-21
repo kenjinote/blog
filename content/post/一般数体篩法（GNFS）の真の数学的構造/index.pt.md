@@ -118,7 +118,7 @@ A menos que esta unidade $u$ em si seja o quadrado de algo, o lado esquerdo nunc
 ## Fase 5: A Magia de Adleman "Caracteres Quadráticos" (Quadratic Characters)
 
 O obstáculo do grupo de classes de ideais e o obstáculo do grupo de unidades. Como superar esses dois?
-Aqui entra o brilhante método dos **"Caracteres Quadráticos (Quadratic Characters)"** , introduzido pelo criptógrafo Leonard Adleman (o "A" do RSA) e outros.
+Aqui entra o brilhante método dos **"Caracteres Quadráticos (Quadratic Characters)"** , introduzido pelo criptógrafo Leonard Adleman (o "A" do [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/)) e outros.
 
 Para determinar "se um certo elemento é um quadrado perfeito no corpo algébrico", usamos a versão de corpos algébricos do Símbolo de [Legendre](https://kenji.blog/pt/p/legendre/) (resíduo quadratique).
 Naquela matriz gigante anterior (o quebra-cabeça para tornar pares as contagens de ideais primos), nós **furtivamente adicionamos algumas dezenas de condições extras (colunas) dizendo "os caracteres quadráticos para certos ideais primos especiais $\mathfrak{q}$ também devem ser todos $1$ (par)"** .
@@ -157,7 +157,7 @@ Além disso, como os pares originais $(a, b)$ foram feitos em correspondência n
 Tudo o que resta é rezar para que esses $X$ e $Y$ não sejam soluções triviais ($X \equiv \pm Y$) e calcular
 **$\gcd(X - Y, N)$** .
 
-Se for uma solução não trivial, o algoritmo euclidiano avança em 0.001 segundos, e os números primos secretos $p$ e $q$, que são o coração da criptografia RSA, são impressos na tela de saída.
+Se for uma solução não trivial, o algoritmo euclidiano avança em 0.001 segundos, e os números primos secretos $p$ e $q$, que são o coração da criptografia [RSA](https://kenji.blog/pt/p/modern-cryptography-public-key-hash-signature/), são impressos na tela de saída.
 
 ---
 
