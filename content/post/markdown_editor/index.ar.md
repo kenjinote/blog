@@ -59,8 +59,8 @@ $$
       "image: \"img/eyecatch.jpg\"",
       "math: true",
       "mermaid: true",
-      "categories: [\"${3:الفئة}\"]",
-      "tags: [\"${4:وسم1}\", \"${5:وسم2}\"]",
+      "categories: ["${3:الفئة}"]",
+      "tags: ["${4:وسم1}\", \"${5:وسم2}"]",
       "---",
       "",
       "${0}"
@@ -150,7 +150,7 @@ ls.add_snippets("markdown", {
     s("frontmatter", {
         t({"---", "title: \""}), i(1, "العنوان"), t({"\"", "slug: \""}), i(2, "اسم-الرابط"), t({"\"", "date: \""}),
         f(function() return {get_current_date_jst()} end, {}),
-        t({"\"", "image: \"img/eyecatch.jpg\"", "math: true", "mermaid: true", "categories: [\""}), i(3, "الفئة"), t({"\"]", "tags: [\""}), i(4, "الوسم"), t({"\"]", "---", "", ""}),
+        t({"\"", "image: \"img/eyecatch.jpg\"", "math: true", "mermaid: true", "categories: [""}), i(3, "الفئة"), t({""]", "tags: [""}), i(4, "الوسم"), t({""]", "---", "", ""}),
         i(0)
     }),
     s("mtable", {

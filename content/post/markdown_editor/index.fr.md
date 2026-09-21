@@ -59,8 +59,8 @@ Sélectionnez `Preferences: Configure User Snippets` dans la palette de commande
       "image: \"img/eyecatch.jpg\"",
       "math: true",
       "mermaid: true",
-      "categories: [\"${3:Catégorie}\"]",
-      "tags: [\"${4:Tag1}\", \"${5:Tag2}\"]",
+      "categories: ["${3:Catégorie}"]",
+      "tags: ["${4:Tag1}\", \"${5:Tag2}"]",
       "---",
       "",
       "${0}"
@@ -150,7 +150,7 @@ ls.add_snippets("markdown", {
     s("frontmatter", {
         t({"---", "title: \""}), i(1, "Titre"), t({"\"", "slug: \""}), i(2, "nom-du-slug"), t({"\"", "date: \""}),
         f(function() return {get_current_date_jst()} end, {}),
-        t({"\"", "image: \"img/eyecatch.jpg\"", "math: true", "mermaid: true", "categories: [\""}), i(3, "Catégorie"), t({"\"]", "tags: [\""}), i(4, "Tag"), t({"\"]", "---", "", ""}),
+        t({"\"", "image: \"img/eyecatch.jpg\"", "math: true", "mermaid: true", "categories: [""}), i(3, "Catégorie"), t({""]", "tags: [""}), i(4, "Tag"), t({""]", "---", "", ""}),
         i(0)
     }),
     s("mtable", {
