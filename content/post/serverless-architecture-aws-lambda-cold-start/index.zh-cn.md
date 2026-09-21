@@ -175,7 +175,7 @@ $ P_{warm} \approx 1 - e^{-\lambda \cdot T_w} $
 ### 5.2. 精简部署包
 
 Lambda 启动时会从 S3 下载代码。因此，保持较小的包体积是一项直接的优化。
-不包含不必要的依赖关系（如 DevDependencies 等），使用 Webpack / esbuild 等打包工具进行代码压缩（Minify）和树摇（Tree-shaking）非常重要。
+不包含不必要的依赖关系（如 DevDependencies 等），使用 Webpack / esbuild 等打包工具进行代码压缩（Minify）和树摇（[Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-shaking）非常重要。
 
 ### 5.3. 优化初始化处理与延迟计算 (Lazy Initialization)
 

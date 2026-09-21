@@ -521,7 +521,7 @@ Timsort 最大的设计理念是基于一个经验法则： **“现实世界的
 
 但是，那为什么还需要学习排序算法呢？
 
-1. **理解基础概念**: 复杂度（Big O Notation）、In-place/Out-of-place、稳定性等概念，不只是排序，更是所有算法设计和数据结构设计的基础。
+1. **理解基础概念**: 复杂度（[Big O](https://kenji.blog/zh-cn/p/time-space-complexity-big-o-notation-examples/) Notation）、In-place/Out-of-place、稳定性等概念，不只是排序，更是所有算法设计和数据结构设计的基础。
 2. **特殊限制下的系统**: 在嵌入式系统等内存受到极大限制的环境中，可能需要自己实现 $O(1)$ 空间的堆排序或 In-place 的快速排序。
 3. **利用数据的性质**: 如果要对“值的范围被限制在 1〜100 内的 100 万条数据”进行排序，自己实现一个计数排序（$O(n)$）会比使用标准的 Timsort（$O(n \log n)$）快上非常多。
 

@@ -9,7 +9,7 @@ categories: ["tools-development-environment"]
 description: 'Essencial para quem deseja implementar o envio automático de mensagens para o Microsoft Teams via C++! Explicamos o passo a passo com exemplos de código usando WinHTTP e Graph API, além do processo necessário de registro e autenticação de API no Azure.'
 ---
 
-# Como postar mensagens no Microsoft Teams a partir de C++ (WinHTTP + Graph API)
+# Como postar mensagens no Microsoft Teams a partir de C++ (WinHTTP + [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API)
 
 Quer postar automaticamente no chat do Microsoft Teams?  
 É aí que a **Microsoft Graph API** entra em ação.  
@@ -29,7 +29,7 @@ Primeiro, para usar a Microsoft Graph API, você precisa registrar um aplicativo
 ### 2. Adicionar permissões da API
 
 1. Vá para o menu esquerdo "Permissões de API"
-2. Em **"Microsoft Graph"** > **"Adicionar uma permissão"**, pesquise pelos seguintes escopos e clique em **"Atualizar permissões"**
+2. Em **"Microsoft [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)"** > **"Adicionar uma permissão"**, pesquise pelos seguintes escopos e clique em **"Atualizar permissões"**
 
 - Chat.ReadWrite
 - User.Read
@@ -77,7 +77,7 @@ curl -X POST ^
 }
 ```
 
-Usaremos este access_token para chamar a Microsoft Graph API.
+Usaremos este access_token para chamar a Microsoft [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API.
 
 ## 💬 Exemplo em C++ para postar no chat do Teams
 Aqui está um exemplo em C++ para postar no chat usando WinHTTP.
@@ -170,7 +170,7 @@ curl -X GET ^
   - Verificação de certificado HTTPS
   - Aprimoramento do tratamento de erros
 - Para postar em um canal, use teams/{team-id}/channels/{channel-id}/messages.
-- Enviar arquivos anexos requer processamento multipart ou a API do Graph Drive.
+- Enviar arquivos anexos requer processamento multipart ou a API do [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Drive.
 
 ## Resumo
 
@@ -181,7 +181,7 @@ curl -X GET ^
 | Graph API | API oficial para interagir com o Teams |
 | Registro do aplicativo | Procedimentos de autenticação necessários no Azure |
 | Token de acesso | Obtido via [OAuth](https://kenji.blog/pt/p/oauth2-oidc-authentication-authorization-difference/)2, usado para solicitações |
-| Implementação em C++ | Chama a Graph API usando WinHTTP |
+| Implementação em C++ | Chama a [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API usando WinHTTP |
 
 ## 🚀 Próximos passos
 

@@ -43,7 +43,7 @@ Il existe plusieurs classes représentatives de complexité algorithmique. Exami
    Un algorithme dont le temps d'exécution ne change pas, quelle que soit la taille de l'entrée $N$. Par exemple, l'accès à une valeur en spécifiant l'index d'un tableau, ou la recherche dans une table de hachage (dans le cas idéal).
 
 2. **$\mathcal{O}(\log N)$ : Temps logarithmique (Logarithmic time)**
-   Un algorithme très efficace où même si la taille de l'entrée double, le temps d'exécution n'augmente que d'une constante. La « recherche dichotomique (Binary Search) », qui recherche une valeur cible dans un tableau trié, en est un exemple typique. Même avec un milliard de données, il suffit d'environ 30 comparaisons pour trouver la donnée souhaitée.
+   Un algorithme très efficace où même si la taille de l'entrée double, le temps d'exécution n'augmente que d'une constante. La « recherche dichotomique ([Binary Search](https://kenji.blog/fr/p/search-algorithms-linear-binary-hash-table-principles/)) », qui recherche une valeur cible dans un tableau trié, en est un exemple typique. Même avec un milliard de données, il suffit d'environ 30 comparaisons pour trouver la donnée souhaitée.
 
 3. **$\mathcal{O}(N)$ : Temps linéaire (Linear time)**
    Le temps d'exécution augmente proportionnellement à la taille de l'entrée. Si les données sont multipliées par 10, le temps sera également multiplié par 10. La « recherche linéaire », qui vérifie tous les éléments d'un tableau dans l'ordre, correspond à ce cas.

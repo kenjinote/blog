@@ -77,7 +77,7 @@ No matter how intentionally you color the internal vertices, or how finely and c
 
 # 5. A Beautiful Proof Using [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)
 
-This theorem might seem magical intuitively, but it can be proven beautifully using the concepts of "Dual Graph" and "Handshaking Lemma". This approach is very easy to understand if we use the analogy of "rooms and doors".
+This theorem might seem magical intuitively, but it can be proven beautifully using the concepts of "Dual [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)" and "Handshaking Lemma". This approach is very easy to understand if we use the analogy of "rooms and doors".
 
 ## 5.1. Definition of Rooms and Doors
 

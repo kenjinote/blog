@@ -42,7 +42,7 @@ graph TD
 ```
 
 1. **Tensor-Management**: Verwaltet mehrdimensionale Array-Datenstrukturen und die Strides pro Dimension.
-2. **Berechnungsgraph (Computation Graph)**: Repräsentiert die Operationen jeder Schicht des neuronalen Netzes als gerichteten azyklischen Graphen (DAG).
+2. **Berechnungsgraph (Computation [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**: Repräsentiert die Operationen jeder Schicht des neuronalen Netzes als gerichteten azyklischen Graphen (DAG).
 3. **Memory Arena**: Ein Mechanismus zur vorab allokierten Speicherverwaltung, um den Overhead der dynamischen Speicherzuweisung (`malloc` oder `new`) zu vermeiden.
 4. **Backend**: Für bestimmte Hardware wie CPU oder GPU optimierte Implementierungen der Operationen (Kernel).
 
@@ -151,7 +151,7 @@ Durch die Nutzung dieses Konzepts können Operationen wie "Transponieren" (Trans
 
 ## 5. Aufbau des Berechnungsgraphen (DAG) und Lazy Evaluation
 
-Ähnlich wie PyTorch verwendet auch unsere Inferenz-Engine eine verzögerte Auswertung (Lazy Evaluation), die dem "Define-by-Run"-Konzept ähnelt. Das bedeutet, dass zum Zeitpunkt des Aufrufs einer mathematischen Funktion keine Berechnungen durchgeführt werden, sondern nur der Graph (die Abhängigkeiten zwischen den Knoten) aufgebaut wird.
+Ähnlich wie PyTorch verwendet auch unsere Inferenz-Engine eine verzögerte Auswertung (Lazy Evaluation), die dem "Define-by-Run"-Konzept ähnelt. Das bedeutet, dass zum Zeitpunkt des Aufrufs einer mathematischen Funktion keine Berechnungen durchgeführt werden, sondern nur der [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (die Abhängigkeiten zwischen den Knoten) aufgebaut wird.
 
 ```cpp
 Tensor* tensor_add(MemoryArena& arena, Tensor* a, Tensor* b) {

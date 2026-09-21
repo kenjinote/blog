@@ -417,7 +417,7 @@ graph TD
 
 ### 10.3 Signalsの数理モデル
 
-Signalsの背後にあるのは、状態と計算の依存関係を **有向非巡回グラフ (Directed Acyclic Graph: DAG)** としてモデル化し、グラフのトポロジカルソートを用いて効率的に更新順序を決定する「リアクティブプログラミング」の理論です。
+Signalsの背後にあるのは、状態と計算の依存関係を **有向非巡回[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Directed Acyclic [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/): DAG)** としてモデル化し、グラフのトポロジカルソートを用いて効率的に更新順序を決定する「リアクティブプログラミング」の理論です。
 
 ある派生状態（Computed） $ C $ が、Signal $ S_1, S_2 $ に依存している場合、エッジ $ S_1 	o C $, $ S_2 	o C $ が形成されます。
 値が更新された場合、グラフを辿って必要なノードのみを評価（Push / Pull ハイブリッド戦略など）することで、グリッチ（Glitch: 中間状態の不整合なUIが一瞬表示される現象）を防ぎ、トポロジカルな整合性を保証します。

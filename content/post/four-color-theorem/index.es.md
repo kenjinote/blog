@@ -28,7 +28,7 @@ Sin embargo, en 1890, Percy Heawood descubrió una falla fatal en la demostraci�
 
 ## 4. Conversión a la teoría de grafos
 
-Para tratar rigurosamente el problema de los cuatro colores matemáticamente, el problema se traduce al lenguaje de la teoría de grafos. Cada región del mapa se considera un "vértice (Vertex)", y las regiones que comparten un límite se conectan mediante una "arista (Edge)". El grafo creado de esta manera se llama "grafo plano (Planar Graph)".
+Para tratar rigurosamente el problema de los cuatro colores matemáticamente, el problema se traduce al lenguaje de la teoría de grafos. Cada región del mapa se considera un "vértice (Vertex)", y las regiones que comparten un límite se conectan mediante una "arista (Edge)". El grafo creado de esta manera se llama "grafo plano (Planar [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))".
 
 Un grafo plano es un grafo que se puede dibujar en un plano sin que sus aristas se crucen. El problema de los cuatro colores se reduce al problema de que "todos los vértices de un grafo plano se pueden colorear con **4 colores** de modo que los vértices adyacentes tengan colores diferentes".
 
@@ -85,7 +85,7 @@ Sin embargo, en 1890, Percy Heawood descubrió una falla fatal en la demostraci�
 
 ## 4. Conversión a la teoría de grafos
 
-Para tratar rigurosamente el problema de los cuatro colores matemáticamente, el problema se traduce al lenguaje de la teoría de grafos. Cada región del mapa se considera un "vértice (Vertex)", y las regiones que comparten un límite se conectan mediante una "arista (Edge)". El grafo creado de esta manera se llama "grafo plano (Planar Graph)".
+Para tratar rigurosamente el problema de los cuatro colores matemáticamente, el problema se traduce al lenguaje de la teoría de grafos. Cada región del mapa se considera un "vértice (Vertex)", y las regiones que comparten un límite se conectan mediante una "arista (Edge)". El grafo creado de esta manera se llama "grafo plano (Planar [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))".
 
 Un grafo plano es un grafo que se puede dibujar en un plano sin que sus aristas se crucen. El problema de los cuatro colores se reduce al problema de que "todos los vértices de un grafo plano se pueden colorear con **4 colores** de modo que los vértices adyacentes tengan colores diferentes".
 
@@ -142,7 +142,7 @@ Sin embargo, en 1890, Percy Heawood descubrió una falla fatal en la demostraci�
 
 ## 4. Conversión a la teoría de grafos
 
-Para tratar rigurosamente el problema de los cuatro colores matemáticamente, el problema se traduce al lenguaje de la teoría de grafos. Cada región del mapa se considera un "vértice (Vertex)", y las regiones que comparten un límite se conectan mediante una "arista (Edge)". El grafo creado de esta manera se llama "grafo plano (Planar Graph)".
+Para tratar rigurosamente el problema de los cuatro colores matemáticamente, el problema se traduce al lenguaje de la teoría de grafos. Cada región del mapa se considera un "vértice (Vertex)", y las regiones que comparten un límite se conectan mediante una "arista (Edge)". El grafo creado de esta manera se llama "grafo plano (Planar [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))".
 
 Un grafo plano es un grafo que se puede dibujar en un plano sin que sus aristas se crucen. El problema de los cuatro colores se reduce al problema de que "todos los vértices de un grafo plano se pueden colorear con **4 colores** de modo que los vértices adyacentes tengan colores diferentes".
 
@@ -199,7 +199,7 @@ Sin embargo, en 1890, Percy Heawood descubrió una falla fatal en la demostraci�
 
 ## 4. Conversión a la teoría de grafos
 
-Para tratar rigurosamente el problema de los cuatro colores matemáticamente, el problema se traduce al lenguaje de la teoría de grafos. Cada región del mapa se considera un "vértice (Vertex)", y las regiones que comparten un límite se conectan mediante una "arista (Edge)". El grafo creado de esta manera se llama "grafo plano (Planar Graph)".
+Para tratar rigurosamente el problema de los cuatro colores matemáticamente, el problema se traduce al lenguaje de la teoría de grafos. Cada región del mapa se considera un "vértice (Vertex)", y las regiones que comparten un límite se conectan mediante una "arista (Edge)". El grafo creado de esta manera se llama "grafo plano (Planar [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))".
 
 Un grafo plano es un grafo que se puede dibujar en un plano sin que sus aristas se crucen. El problema de los cuatro colores se reduce al problema de que "todos los vértices de un grafo plano se pueden colorear con **4 colores** de modo que los vértices adyacentes tengan colores diferentes".
 

@@ -17,7 +17,7 @@ description: 'نعرض قائمة بالإضافات الموصى بها الت�
 | إدارة الحاويات والأنظمة الوهمية | [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft  | يدعم إدارة حاويات Docker |
 | إدارة الكود | GitHub Pull Requests | GitHub | يدعم إدارة طلبات السحب (Pull Requests) الخاصة بـ GitHub داخل VSCode |
 | إدارة الكود | GitHub Copilot | GitHub | يدعم إكمال الكود باستخدام الذكاء الاصطناعي |
-| إدارة الكود | Git Graph | mhutchie | يعرض فروع وتاريخ Git بشكل رسومي |
+| إدارة الكود | Git [Graph](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) | mhutchie | يعرض فروع وتاريخ Git بشكل رسومي |
 | إدارة الكود | Git History | Don Jayamanne | يعرض تاريخ Git |
 | تطوير الويب والمتصفح | Debugger for Firefox | Firefox DevTools | يتيح استخدام مصحح أخطاء Firefox داخل VSCode |
 | تطوير الويب والمتصفح | Microsoft Edge Tool For VScode | Microsoft | يتيح استخدام أدوات المطورين لـ Edge داخل VSCode |

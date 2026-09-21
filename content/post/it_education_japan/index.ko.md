@@ -55,7 +55,7 @@ flowchart TD
 
 일본의 프로그래밍 교육 커리큘럼에 있어 최대의 약점이자 치명적인 결함이라고도 할 수 있는 것은 '코딩 기술'과 '수학·이산수학(Discrete Mathematics)' 연계의 압도적인 부족입니다. 미국이나 인도를 비롯한 톱 티어의 컴퓨터 사이언스 교육에서는 프로그래밍 언어의 문법 그 자체보다도 알고리즘의 효율성, 수리논리학, 그리고 수학적 증명에 비중을 둡니다. 코드는 수식의 번역에 불과하기 때문입니다.
 
-### 시간 복잡도와 공간 복잡도(Big O Notation)의 절대적 지배
+### 시간 복잡도와 공간 복잡도([Big O](https://kenji.blog/ko/p/time-space-complexity-big-o-notation-examples/) Notation)의 절대적 지배
 
 소프트웨어의 성능을 평가하고 설계하는 데 있어 시간 복잡도(Time Complexity)와 공간 복잡도(Space Complexity)의 개념은 피할 수 없습니다. 어떤 알고리즘에 입력되는 데이터의 크기를 $N$이라 했을 때, 실행 시간이나 소비 메모리가 어떻게 증대되어 가는지를 나타내는 것이 란다우의 점근 표기법(Big O Notation)입니다.
 
@@ -134,7 +134,7 @@ int main() {
 - 추출 (Projection, $\pi$): 특정 속성(열)의 추출
 - 조인 (Join, $\bowtie$): 복수 릴레이션의 조건부 교차
 
-더욱이 방대한 레코드에서 순식간에 목적하는 데이터를 검색하기 위한 '[B-Tree](https://kenji.blog/ko/p/b-tree-database-index-theory/)(B트리) 인덱스'의 구조를 배우는 것은 자료 구조 응용의 최고의 실천입니다. B-Tree는 디스크 I/O 횟수를 최소화하면서 $O(\log N)$의 검색 속도를 보장합니다. 트랜잭션의 [ACID](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/) 특성(Atomicity, [Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability)을 알지 못하고서는 견고한 시스템을 만들 수 없습니다.
+더욱이 방대한 레코드에서 순식간에 목적하는 데이터를 검색하기 위한 '[B-Tree](https://kenji.blog/ko/p/b-tree-database-index-theory/)(B트리) 인덱스'의 구조를 배우는 것은 자료 구조 응용의 최고의 실천입니다. B-[Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)는 디스크 I/O 횟수를 최소화하면서 $O(\log N)$의 검색 속도를 보장합니다. 트랜잭션의 [ACID](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/) 특성(Atomicity, [Consistency](https://kenji.blog/ko/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability)을 알지 못하고서는 견고한 시스템을 만들 수 없습니다.
 
 ## 6. 보안과 암호 이론: 소인수분해의 곤란성이 지탱하는 사회 인프라
 

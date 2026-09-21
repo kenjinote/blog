@@ -8,7 +8,7 @@ categories: ["computer-science", "databases"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 ---
 
-## 1. 資料庫索引與 B-Tree 的相遇
+## 1. 資料庫索引與 B-[Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 的相遇
 
 在現代系統中，資料庫是應用程式的核心。從數百萬、數億筆記錄中，以毫秒為單位搜尋並輸出目標資料的能力，是資料庫管理系統（DBMS）最重要的功能之一。支撐這種驚人搜尋速度的是 **索引** ，而其背後的資料結構是 **B-Tree** （B木）及其衍生出來的 **B+Tree** （B+木）。
 
@@ -26,7 +26,7 @@ tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 
 ### 2.2 二元搜尋樹（BST）的極限
 
-在記憶體上的搜尋中， **二元搜尋樹** （Binary Search Tree: BST）或 **紅黑樹** （Red-Black Tree）等平衡二元搜尋樹，能夠以 $ O(\log N) $ 的時間複雜度進行高速搜尋。然而，如果將其直接應用於磁碟上的資料庫，將會發生嚴重的問題。
+在記憶體上的搜尋中， **二元搜尋樹** （[Binary Search](https://kenji.blog/zh-tw/p/search-algorithms-linear-binary-hash-table-principles/) Tree: BST）或 **紅黑樹** （Red-Black Tree）等平衡二元搜尋樹，能夠以 $ O(\log N) $ 的時間複雜度進行高速搜尋。然而，如果將其直接應用於磁碟上的資料庫，將會發生嚴重的問題。
 
 二元樹的每個節點最多有 2 個子節點。當元素數量 $ N $ 增加時，樹的高度 $ h $ 會與 $ \log_2 N $ 成正比而變深。例如當 $ N = 1,000,000 $ 時，樹的高度大約是 20。如果假設每個節點都被配置在不同的磁碟頁面上，最壞的情況下將會發生 20 次的隨機磁碟 I/O。這對資料庫來說是致命的延遲。
 
@@ -73,7 +73,7 @@ $$
 
 ## 4. 資料庫的標準：向 B+Tree 的演進
 
-實際在 [RDBMS](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)（如 MySQL 的 InnoDB 或 PostgreSQL 等）中所使用的，是 B-Tree 的改良版 **B+Tree** 。
+實際在 [RDBMS](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)（如 MySQL 的 InnoDB 或 PostgreSQL 等）中所使用的，是 B-[Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 的改良版 **B+Tree** 。
 
 ### 4.1 B-Tree 與 B+Tree 的差異
 
@@ -86,7 +86,7 @@ $$
 
 由於排除了從內部節點指向實際資料的指標，1 個內部節點（頁面）中可以塞入更多的鍵值。這使得分支數（Fan-out）進一步增加，樹的高度 $ h $ 被壓得更低，進而減少了磁碟 I/O 次數。
 
-此外，在 SQL 中頻繁使用的範圍搜尋（如 `WHERE id BETWEEN 10 AND 100` ）中，B-Tree 需要多次遍歷樹狀結構，但如果是 **B+Tree** ，只要找到一次起始點的葉節點後，只需順著葉節點的連結，就能連續讀出資料。
+此外，在 SQL 中頻繁使用的範圍搜尋（如 `WHERE id BETWEEN 10 AND 100` ）中，B-[Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 需要多次遍歷樹狀結構，但如果是 **B+Tree** ，只要找到一次起始點的葉節點後，只需順著葉節點的連結，就能連續讀出資料。
 
 ```mermaid
 graph TD
@@ -114,7 +114,7 @@ graph TD
     style H fill:#f9f,stroke:#333,stroke-width:2px
     style I fill:#f9f,stroke:#333,stroke-width:2px
 ```
-*(圖: B+Tree 的結構。葉節點以鏈狀連結)*
+*(圖: B+[Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 的結構。葉節點以鏈狀連結)*
 
 ## 5. B-Tree 的實作範例（使用 Python 模擬）
 
@@ -211,7 +211,7 @@ else:
     print("找不到鍵值")
 ```
 
-從這個實作中也可以看出，B-Tree 的插入會根據需要從下到上地分割（Split）節點，藉此讓樹始終保持完全平衡（Balanced）。這確保了無論資料以何種順序插入，搜尋效能都不會劣化。
+從這個實作中也可以看出，B-[Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 的插入會根據需要從下到上地分割（Split）節點，藉此讓樹始終保持完全平衡（Balanced）。這確保了無論資料以何種順序插入，搜尋效能都不會劣化。
 
 ## 6. 總結與發展
 

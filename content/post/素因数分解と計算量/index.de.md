@@ -43,7 +43,7 @@ Es gibt einige typische Klassen für die Komplexität. Betrachten wir sie in der
    Ein Algorithmus, dessen Ausführungszeit sich nicht ändert, egal wie groß die Eingabegröße $N$ wird. Beispiele hierfür sind der Zugriff auf einen Wert in einem Array über seinen Index oder die Suche in einer Hash-Tabelle (im Idealfall).
 
 2. **$\mathcal{O}(\log N)$ : Logarithmische Zeit (Logarithmic time)**
-   Ein sehr effizienter Algorithmus, bei dem die Ausführungszeit nur um einen konstanten Betrag steigt, selbst wenn sich die Eingabegröße verdoppelt. Ein typisches Beispiel ist die „binäre Suche (Binary Search)“, bei der ein bestimmter Wert in einem sortierten Array gesucht wird. Selbst bei einer Datenmenge von einer Milliarde kann der gewünschte Wert mit nur etwa 30 Vergleichen gefunden werden.
+   Ein sehr effizienter Algorithmus, bei dem die Ausführungszeit nur um einen konstanten Betrag steigt, selbst wenn sich die Eingabegröße verdoppelt. Ein typisches Beispiel ist die „binäre Suche ([Binary Search](https://kenji.blog/de/p/search-algorithms-linear-binary-hash-table-principles/))“, bei der ein bestimmter Wert in einem sortierten Array gesucht wird. Selbst bei einer Datenmenge von einer Milliarde kann der gewünschte Wert mit nur etwa 30 Vergleichen gefunden werden.
 
 3. **$\mathcal{O}(N)$ : Lineare Zeit (Linear time)**
    Die Ausführungszeit steigt proportional zur Eingabegröße. Wenn sich die Datenmenge verzehnfacht, verzehnfacht sich auch die Zeit. Ein Beispiel ist die „lineare Suche“, bei der alle Elemente eines Arrays nacheinander überprüft werden.

@@ -142,7 +142,7 @@ description: 'Wir stellen eine sorgfältige Auswahl von Zitaten historischer Gr�
 
 > Einfachheit ist eine Voraussetzung für Zuverlässigkeit. (Edsger W. [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/))
 
-> In der Informatik geht es genauso wenig um Computer, wie in der Astronomie um Teleskope. (Edsger W. Dijkstra)
+> In der Informatik geht es genauso wenig um Computer, wie in der Astronomie um Teleskope. (Edsger W. [Dijkstra](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 > Es gibt nur zwei schwierige Dinge in der Informatik: Cache-Invalidierung und das Benennen von Dingen. (Phil Karlton)
 

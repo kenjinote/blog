@@ -9,15 +9,15 @@ categories: ["programming", "algorithms"]
 tags: ["Algorithm", "DP", "C++", "Python"]
 ---
 
-Dari competitive programming hingga desain algoritma di dunia nyata, **Pemrograman Dinamis (Dynamic Programming, biasa disebut DP)** sering muncul di banyak situasi dan menjadi hambatan bagi banyak programmer. "Tidak bisa menyusun relasi rekurensi (recurrence relation)", "Indeksnya selalu salah/bug", "Bahkan tidak bisa menilai apakah masalah tersebut bisa diselesaikan dengan DP atau tidak"...... Pasti banyak dari Anda yang memiliki kekhawatiran seperti ini.
+Dari competitive programming hingga desain algoritma di dunia nyata, **Pemrograman Dinamis ([Dynamic Programming](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/), biasa disebut [DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))** sering muncul di banyak situasi dan menjadi hambatan bagi banyak programmer. "Tidak bisa menyusun relasi rekurensi (recurrence relation)", "Indeksnya selalu salah/bug", "Bahkan tidak bisa menilai apakah masalah tersebut bisa diselesaikan dengan DP atau tidak"...... Pasti banyak dari Anda yang memiliki kekhawatiran seperti ini.
 
 Dalam artikel ini, kita akan membahas secara menyeluruh dari esensi pemrograman dinamis, pendekatan konkretnya (top-down dan bottom-up), hingga penjelasan praktis melalui 3 masalah representatif (Deret [Fibonacci](https://kenji.blog/id/p/fibonacci/), Masalah 0/1 Knapsack, dan Longest Common Subsequence). Kami akan menunjukkan contoh implementasi dalam C++ dan Python, serta memberikan panduan untuk "menguasainya sepenuhnya" menggunakan rumus matematika dan ilustrasi gambar. Ini akan menjadi artikel yang sangat panjang, tetapi ketika Anda selesai membacanya sampai akhir, kemampuan algoritma Anda pasti akan melonjak drastis.
 
 ---
 
-## 1. Apa itu Pemrograman Dinamis (DP)?
+## 1. Apa itu Pemrograman Dinamis ([DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))?
 
-Pemrograman Dinamis (Dynamic Programming) adalah metode desain algoritma yang secara drastis mengurangi kompleksitas komputasi dengan membagi masalah kompleks menjadi "sub-masalah" yang lebih kecil, lalu mencatat dan menggunakan kembali solusi dari sub-masalah tersebut.
+Pemrograman Dinamis ([Dynamic Programming](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) adalah metode desain algoritma yang secara drastis mengurangi kompleksitas komputasi dengan membagi masalah kompleks menjadi "sub-masalah" yang lebih kecil, lalu mencatat dan menggunakan kembali solusi dari sub-masalah tersebut.
 
 Metode ini, yang dirancang oleh Richard Bellman pada tahun 1950-an, menunjukkan kekuatan luar biasa dalam masalah optimasi. Tidak ada arti khusus dalam kata "Dinamis (Dynamic)", konon katanya pada waktu itu kata tersebut dipilih karena terdengar bagus untuk mendapatkan dana penelitian, tetapi saat ini ia telah membangun posisi yang kuat sebagai salah satu konsep terpenting dalam ilmu komputer.
 
@@ -27,7 +27,7 @@ Agar pemrograman dinamis dapat diterapkan, masalah yang menjadi target harus mem
 
 Ini adalah sifat di mana dalam proses menyelesaikan masalah besar, **sub-masalah yang sama muncul berulang kali**.
 
-Misalnya, dalam perhitungan deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) yang akan dibahas nanti, perhitungan "mencari suku ke-3" diperlukan baik saat mencari suku ke-5 maupun suku ke-4. Jika sub-masalah tidak tumpang tindih (contoh: metode divide and conquer seperti merge sort), tidak ada gunanya mencatat solusi, sehingga masalah tersebut bukan target penerapan DP. Justru karena saling tumpang tindih, menyimpan hasil perhitungan sekali ke dalam memori (memoisasi atau tabulasi) dan menggunakan kembali akan memungkinkan percepatan yang dramatis.
+Misalnya, dalam perhitungan deret [Fibonacci](https://kenji.blog/id/p/fibonacci/) yang akan dibahas nanti, perhitungan "mencari suku ke-3" diperlukan baik saat mencari suku ke-5 maupun suku ke-4. Jika sub-masalah tidak tumpang tindih (contoh: metode divide and conquer seperti merge sort), tidak ada gunanya mencatat solusi, sehingga masalah tersebut bukan target penerapan [DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/). Justru karena saling tumpang tindih, menyimpan hasil perhitungan sekali ke dalam memori (memoisasi atau tabulasi) dan menggunakan kembali akan memungkinkan percepatan yang dramatis.
 
 ### 1-2. Struktur Sub-optimal (Optimal Substructure)
 
@@ -212,7 +212,7 @@ Berapa total nilai maksimum yang bisa diperoleh jika kita memilih barang sedemik
 
 ### 4-2. Definisi [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) dan Persamaan Transisi State
 
-Langkah terpenting untuk memecahkan DP adalah mendefinisikan "state (keadaan)" dengan tepat.
+Langkah terpenting untuk memecahkan [DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) adalah mendefinisikan "state (keadaan)" dengan tepat.
 Dalam masalah ini, dua parameter akan berubah: "sampai barang mana yang telah dipertimbangkan" dan "sisa kapasitas knapsack". Oleh karena itu, kita mendefinisikan state sebagai berikut.
 
 **Definisi State:**
@@ -319,7 +319,7 @@ Dengan cara ini, kompleksitas ruang berkurang drastis dari $O(nW)$ menjadi $O(W)
 
 ## 5. Praktik 3: Longest Common Subsequence (LCS)
 
-Sebagai masalah DP yang representatif untuk memproses string, kita akan membahas LCS. LCS adalah algoritma yang secara luas diterapkan di dunia nyata, misalnya untuk mendeteksi perbedaan file (alat diff) atau menentukan kemiripan urutan DNA.
+Sebagai masalah [DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) yang representatif untuk memproses string, kita akan membahas LCS. LCS adalah algoritma yang secara luas diterapkan di dunia nyata, misalnya untuk mendeteksi perbedaan file (alat diff) atau menentukan kemiripan urutan DNA.
 
 ### 5-1. Pengaturan Masalah
 
@@ -430,7 +430,7 @@ Dalam masalah LCS sekalipun, pembaruan hanya membutuhkan baris sebelumnya (`dp[i
 
 ## 6. Proses Pemikiran untuk Menguasai Pemrograman Dinamis
 
-Kita telah melihat berbagai masalah, tetapi ketika dihadapkan pada masalah DP yang belum diketahui, bagaimana cara kita berpikir? Selalu perhatikan langkah-langkah berikut.
+Kita telah melihat berbagai masalah, tetapi ketika dihadapkan pada masalah [DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) yang belum diketahui, bagaimana cara kita berpikir? Selalu perhatikan langkah-langkah berikut.
 
 1. **Apakah masalah ini bisa diselesaikan dengan DP? (Mengecek kondisi)**
    Saat dipikirkan secara rekursif, apakah state yang sama muncul berulang kali (tumpang tindih sub-masalah)? Apakah menggabungkan pilihan optimal akan menghasilkan solusi optimal keseluruhan (struktur sub-optimal)?
@@ -451,6 +451,6 @@ Dalam artikel ini, kita telah membahas secara rinci teori dasar pemrograman dina
 - Jika rumus matematika (persamaan transisi state) sudah ditetapkan dengan benar, implementasinya akan menjadi sangat sederhana.
 - Teknik pengurangan kompleksitas ruang (seperti menjadikan array 1 dimensi atau rolling array) sangat diperlukan ketika kinerja dituntut pada tingkat profesional.
 
-Pemrograman Dinamis mungkin awalnya terasa rumit. Namun, dengan terus berlatih untuk menemukan "definisi state" dan "transisi" dalam berbagai macam masalah, perlahan-lahan pola tersebut akan mulai terlihat. Walaupun ada penerapan yang lebih tingkat lanjut seperti DP di Tree, DP digit, DP bitmask, maupun DP interval, semuanya terbangun di atas fondasi "tumpang tindih sub-masalah" dan "optimasi" yang kita pelajari kali ini.
+Pemrograman Dinamis mungkin awalnya terasa rumit. Namun, dengan terus berlatih untuk menemukan "definisi state" dan "transisi" dalam berbagai macam masalah, perlahan-lahan pola tersebut akan mulai terlihat. Walaupun ada penerapan yang lebih tingkat lanjut seperti [DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) di [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), DP digit, DP bitmask, maupun DP interval, semuanya terbangun di atas fondasi "tumpang tindih sub-masalah" dan "optimasi" yang kita pelajari kali ini.
 
 Jangan terburu-buru; perdalam pemahaman Anda dengan menuliskan langsung tabel DP (tabel perhitungan) menggunakan kertas dan pensil. Begitu Anda berhasil membuka kekuatan sejati dari algoritma ini, dunia pemrograman akan terbuka lebih luas bagi Anda.

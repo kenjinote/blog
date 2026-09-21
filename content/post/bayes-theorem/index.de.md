@@ -110,7 +110,7 @@ Er wird als "naiv" bezeichnet, weil er die starke Annahme trifft, dass jedes Mer
 
 ### 2. Bayessche Netze
 
-In Systemen, in denen mehrere Variablen kompliziert miteinander verflochten sind, drücken Bayessche Netze die Abhängigkeiten zwischen den Variablen als Graphenstruktur (Gerichteter azyklischer Graph) aus, um Schlussfolgerungen unter Unsicherheit durchzuführen.
+In Systemen, in denen mehrere Variablen kompliziert miteinander verflochten sind, drücken Bayessche Netze die Abhängigkeiten zwischen den Variablen als Graphenstruktur (Gerichteter azyklischer [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) aus, um Schlussfolgerungen unter Unsicherheit durchzuführen.
 
 Zum Beispiel wird in der medizinischen Diagnose-KI der probabilistische Einfluss von "Alter des Patienten", "Lebensgewohnheiten" und "genetischen Faktoren" auf eine "bestimmte Krankheit" modelliert und dann der Einfluss dieser Krankheit auf "auftretende Symptome" verknüpft. Jedes Mal, wenn ein neues Symptom (Beweis) eingegeben wird, werden die Wahrscheinlichkeiten im gesamten Netzwerk gemäß dem [Satz von Bayes](https://kenji.blog/de/p/bayes-theorem/) aktualisiert, wodurch auf den wahrscheinlichsten Namen der Krankheit geschlossen wird. Dies wird in einer Vielzahl von Bereichen eingesetzt, wie z. B. bei der Situationsbeurteilung in selbstfahrenden Autos und bei der Vorhersage von Finanzmärkten.
 

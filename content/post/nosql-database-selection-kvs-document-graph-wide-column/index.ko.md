@@ -235,7 +235,7 @@ graph TD
 ### 대표적인 그래프 데이터베이스
 
 - **Neo4j** : 전 세계에서 가장 많이 사용되는 그래프 데이터베이스. 독자적이고 강력한 쿼리 언어인 Cypher를 채택.
-- **Amazon Neptune** : AWS가 제공하는 완전 관리형 그래프 데이터베이스. Property Graph(Gremlin) 및 RDF(SPARQL) 지원.
+- **Amazon Neptune** : AWS가 제공하는 완전 관리형 그래프 데이터베이스. Property [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)(Gremlin) 및 RDF(SPARQL) 지원.
 - **ArangoDB** : 그래프, 문서, KVS를 지원하는 다중 모델 데이터베이스.
 
 ### 장점과 단점

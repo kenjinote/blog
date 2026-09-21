@@ -87,7 +87,7 @@ For example, for simple function definition completions or boilerplate generatio
 
 ---
 
-## 3. Decision Criteria for Usage: Decision Tree
+## 3. Decision Criteria for Usage: Decision [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)
 
 So, in the actual coding field, how should developers judge "which AI to use right now"? We define the decision flow visually using the decision tree below.
 

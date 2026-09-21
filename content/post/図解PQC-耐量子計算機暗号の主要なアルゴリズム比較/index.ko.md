@@ -235,7 +235,7 @@ SPHINCS+는 **해시 기반 서명** 으로 분류됩니다. 그 안전성의 �
 
 ### 8.1. WOTS+ 와 FORS에 의한 상태 비저장(Stateless) 아키텍처
 
-해시 기반 서명의 역사는 오래되어 1970년대의 램포트 서명(Lamport signature)이나 윈터니츠 일회용 서명(WOTS)으로 거슬러 올라갑니다. 이것들은 "단 1번만 안전하게 서명할 수 있다"는 일회용 키였습니다. 이를 여러 번 사용할 수 있도록 하기 위해 머클 트리(Merkle Tree)를 조합하여 무수한 일회용 키를 하나의 루트 해시로 관리하는 XMSS(eXtended Merkle Signature Scheme)나 LMS와 같은 알고리즘이 개발되었습니다.
+해시 기반 서명의 역사는 오래되어 1970년대의 램포트 서명(Lamport signature)이나 윈터니츠 일회용 서명(WOTS)으로 거슬러 올라갑니다. 이것들은 "단 1번만 안전하게 서명할 수 있다"는 일회용 키였습니다. 이를 여러 번 사용할 수 있도록 하기 위해 머클 트리(Merkle [Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))를 조합하여 무수한 일회용 키를 하나의 루트 해시로 관리하는 XMSS(eXtended Merkle Signature Scheme)나 LMS와 같은 알고리즘이 개발되었습니다.
 
 그러나 XMSS나 LMS에는 '**상태 저장형(Stateful)**'이라는 중대한 결점이 있었습니다. 서명할 때마다 "몇 번째 일회용 키를 사용했는가"라는 인덱스 상태를 비휘발성 메모리에 엄밀하게 계속 기록해야 하며, 만약 가상 머신의 스냅샷 복원 등으로 상태가 되돌아가 동일한 일회용 키를 두 번 사용해 버리면 비밀키가 즉시 유출되어 시스템이 붕괴하고 맙니다.
 

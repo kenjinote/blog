@@ -76,7 +76,7 @@ flowchart TD
 
 ### 默克尔树（Merkle Trees）
 
-在区块链中，为了在控制区块大小的同时高效检测数据篡改，使用了 **默克尔树（Merkle Tree）** 这种数据结构。默克尔树是一种二叉树，叶子节点包含每笔交易的哈希值，父节点则是通过连接子节点的哈希值并再次哈希而生成的。
+在区块链中，为了在控制区块大小的同时高效检测数据篡改，使用了 **默克尔树（Merkle [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）** 这种数据结构。默克尔树是一种二叉树，叶子节点包含每笔交易的哈希值，父节点则是通过连接子节点的哈希值并再次哈希而生成的。
 
 ```mermaid
 flowchart TD

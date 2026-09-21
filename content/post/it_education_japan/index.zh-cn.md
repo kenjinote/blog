@@ -55,7 +55,7 @@ flowchart TD
 
 日本编程教育课程体系中最大的弱点、甚至可以说是致命缺陷的，是“编码技术”与“数学・离散数学（Discrete Mathematics）”结合的极度匮乏。在以美国和印度为首的顶尖计算机科学教育中，相较于编程语言的语法本身，算法的效率、数理逻辑以及数学证明被赋予了更多的重要性。因为代码只不过是数学公式的翻译。
 
-### 时间复杂度与空间复杂度（Big O Notation）的绝对支配
+### 时间复杂度与空间复杂度（[Big O](https://kenji.blog/zh-cn/p/time-space-complexity-big-o-notation-examples/) Notation）的绝对支配
 
 在评估和设计软件性能时，时间复杂度（Time Complexity）和空间复杂度（Space Complexity）的概念是不可回避的。当某个算法输入的数据大小为 $N$ 时，执行时间或内存消耗将如何增长，这可以通过朗道渐近记号（Big O Notation）来表示。
 
@@ -134,7 +134,7 @@ int main() {
 - 投影（Projection, $\pi$）: 提取特定属性（列）
 - 连接（Join, $\bowtie$）: 多个关系的有条件交集
 
-此外，为了从海量记录中瞬间检索目标数据而学习“[B-Tree](https://kenji.blog/zh-cn/p/b-tree-database-index-theory/)（B树）索引”的结构，是数据结构应用的绝佳实践。B-Tree在确保将磁盘I/O次数降至最低的同时，保证了 $O(\log N)$ 的搜索速度。如果不了解事务的[ACID](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)特性（原子性、一致性、隔离性、持久性），就无法构建稳健的系统。
+此外，为了从海量记录中瞬间检索目标数据而学习“[B-Tree](https://kenji.blog/zh-cn/p/b-tree-database-index-theory/)（B树）索引”的结构，是数据结构应用的绝佳实践。B-[Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)在确保将磁盘I/O次数降至最低的同时，保证了 $O(\log N)$ 的搜索速度。如果不了解事务的[ACID](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)特性（原子性、一致性、隔离性、持久性），就无法构建稳健的系统。
 
 ## 6. 安全与密码学理论：因式分解的困难性支撑着社会基础设施
 

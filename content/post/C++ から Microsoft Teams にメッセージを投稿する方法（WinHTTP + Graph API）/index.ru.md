@@ -9,7 +9,7 @@ categories: ["tools-development-environment"]
 description: 'Обязательно к прочтению для тех, кто хочет реализовать автоматическую отправку сообщений в Microsoft Teams из C++! Мы пошагово и понятно объясним конкретные примеры кода на C++ с использованием WinHTTP и Graph API, а также необходимые процедуры регистрации приложения в Azure и аутентификации API.'
 ---
 
-# Как отправлять сообщения в Microsoft Teams из C++ (WinHTTP + Graph API)
+# Как отправлять сообщения в Microsoft Teams из C++ (WinHTTP + [Graph](https://kenji.blog/ru/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API)
 
 Хотите автоматически отправлять сообщения в чат Microsoft Teams?
 Для этого отлично подойдет ** Microsoft Graph API **.
@@ -29,7 +29,7 @@ description: 'Обязательно к прочтению для тех, кто
 ### 2. Добавление разрешений API
 
 1. В левом меню перейдите в «Разрешения API»
-2. Выберите ** "Microsoft Graph" ** > ** "Выбрать разрешения" **, найдите следующие области и нажмите ** "Обновить разрешения" **
+2. Выберите ** "Microsoft [Graph](https://kenji.blog/ru/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)" ** > ** "Выбрать разрешения" **, найдите следующие области и нажмите ** "Обновить разрешения" **
 
 - Chat.ReadWrite
 - User.Read
@@ -77,7 +77,7 @@ curl -X POST ^
 }
 ```
 
-Используйте этот `access_token` для вызова Microsoft Graph API.
+Используйте этот `access_token` для вызова Microsoft [Graph](https://kenji.blog/ru/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API.
 
 ## 💬 Пример на C++ для отправки сообщения в чат Teams
 Ниже приведен пример на C++ с использованием WinHTTP для публикации сообщения в чате.
@@ -170,7 +170,7 @@ curl -X GET ^
   - Проверка сертификата HTTPS
   - Улучшенная обработка ошибок
 - Для публикации в каналах используйте `teams/{team-id}/channels/{channel-id}/messages`.
-- Для отправки вложений требуется многокомпонентная обработка или Graph Drive API.
+- Для отправки вложений требуется многокомпонентная обработка или [Graph](https://kenji.blog/ru/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Drive API.
 
 ## 📎 Заключение
 
@@ -179,7 +179,7 @@ curl -X GET ^
 | Graph API | Официальный API для взаимодействия с Teams |
 | Регистрация приложения | Необходимые процедуры аутентификации в Azure |
 | Маркер доступа | Получен через [OAuth](https://kenji.blog/ru/p/oauth2-oidc-authentication-authorization-difference/)2, используется для запросов |
-| Реализация C++ | Вызов Graph API с использованием WinHTTP |
+| Реализация C++ | Вызов [Graph](https://kenji.blog/ru/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API с использованием WinHTTP |
 
 ## 🚀 Следующие шаги
 

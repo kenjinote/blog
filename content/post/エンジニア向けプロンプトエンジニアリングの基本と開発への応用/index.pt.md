@@ -165,7 +165,7 @@ graph TD
     F --> G["Geração do código otimizado final"]
 ```
 
-### 3.3 Tree of Thoughts (ToT)
+### 3.3 [Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) of Thoughts (ToT)
 
 O **Tree of Thoughts (ToT)** expande ainda mais o conceito de CoT. Enquanto o CoT segue um caminho de raciocínio unidirecional (linear), o ToT expande vários caminhos de raciocínio (ramificações) em paralelo como uma árvore de busca, fazendo o modelo avaliar por si próprio cada caminho e realizar retrocessos (backtracking) até chegar à solução ideal.
 
@@ -273,7 +273,7 @@ sequenceDiagram
     RAG_System-->>Engineer: "Apresenta a resposta e o link para a linha do código-fonte relevante"
 ```
 
-Uma técnica de engenharia de prompt importante ao criar um RAG para uma base de código é não dividir o código de forma simplória em "chunks" (blocos), mas aprimorar exponencialmente a precisão da pesquisa, incluindo na vetorização "um resumo gerado da Abstract Syntax Tree (AST) das classes ou da Docstring de cada função".
+Uma técnica de engenharia de prompt importante ao criar um RAG para uma base de código é não dividir o código de forma simplória em "chunks" (blocos), mas aprimorar exponencialmente a precisão da pesquisa, incluindo na vetorização "um resumo gerado da Abstract Syntax [Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (AST) das classes ou da Docstring de cada função".
 
 ---
 

@@ -111,7 +111,7 @@ PMP 考試時間為 230 分鐘，共 180 題，其中 5 題為不計分題，因
 - PESTLE (Political 政治, Economic 經濟, Social 社會, Technological 技術, Legal 法律, Environmental 環境)
 - VUCA (波動性、不確定性、複雜性、模糊性)
 - 蒙地卡羅法 (Monte Carlo Method)
-- 決策樹分析 (Decision Tree Analysis)
+- 決策樹分析 (Decision [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Analysis)
 - 期望貨幣價值 (EMV)
 - 淨推薦值 (NPS, Net Promoter Score)
 - 成本效益分析 (Cost-Benefit Analysis)

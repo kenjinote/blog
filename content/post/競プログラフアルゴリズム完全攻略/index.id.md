@@ -19,8 +19,8 @@ Pada artikel ini, kita akan membahas secara lengkap algoritma graf utama yang se
 
 Sebelum mempelajari algoritma, penting untuk memahami batasan umum dan perkiraan kompleksitas masalah graf dalam pemrograman kompetitif. Sebuah graf direpresentasikan dengan jumlah simpul $V$ (Vertices) dan jumlah sisi $E$ (Edges).
 
-*   $O(V + E)$ : Kompleksitas yang diperlukan untuk masalah dengan jumlah simpul $V, E \le 10^5 \sim 10^6$. Depth-First Search (DFS) dan Breadth-First Search (BFS) termasuk dalam kategori ini.
-*   $O((V + E) \log V)$ : Sering muncul pada masalah dengan $V, E \le 10^5 \sim 2 \cdot 10^5$. Ini merupakan kompleksitas algoritma Dijkstra atau Prim ketika menggunakan antrean prioritas (priority queue).
+*   $O(V + E)$ : Kompleksitas yang diperlukan untuk masalah dengan jumlah simpul $V, E \le 10^5 \sim 10^6$. Depth-First Search ([DFS](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) dan Breadth-First Search ([BFS](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) termasuk dalam kategori ini.
+*   $O((V + E) \log V)$ : Sering muncul pada masalah dengan $V, E \le 10^5 \sim 2 \cdot 10^5$. Ini merupakan kompleksitas algoritma [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) atau Prim ketika menggunakan antrean prioritas (priority queue).
 *   $O(V^2)$ : Diizinkan untuk graf padat (dense graph, $E \approx V^2$) dengan $V \le 2000 \sim 3000$.
 *   $O(V^3)$ : Masalah dengan $V \le 400 \sim 500$. Algoritma Floyd-Warshall adalah contoh paling umum.
 
@@ -32,7 +32,7 @@ Dalam pemrograman kompetitif, representasi graf yang umum digunakan adalah **Daf
 
 ### Topological Sort
 
-Topological Sort adalah algoritma untuk mengurutkan simpul-simpul pada Directed Acyclic Graph (DAG) secara linear sedemikian rupa sehingga semua sisi berarah menunjuk dari simpul depan ke simpul belakang. Ini digunakan untuk menyelesaikan dependensi tugas (contoh: Tugas B tidak dapat dimulai sebelum Tugas A selesai), atau menentukan urutan perhitungan pemrograman dinamis (DP) pada sebuah DAG.
+Topological Sort adalah algoritma untuk mengurutkan simpul-simpul pada Directed Acyclic [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (DAG) secara linear sedemikian rupa sehingga semua sisi berarah menunjuk dari simpul depan ke simpul belakang. Ini digunakan untuk menyelesaikan dependensi tugas (contoh: Tugas B tidak dapat dimulai sebelum Tugas A selesai), atau menentukan urutan perhitungan pemrograman dinamis ([DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) pada sebuah DAG.
 
 Kompleksitasnya adalah $O(V + E)$. Terdapat dua jenis implementasi: algoritma Kahn (berbasis BFS dengan in-degree) dan berbasis DFS menggunakan urutan kembali (post-order). Di sini, kami akan memperkenalkan algoritma Kahn yang juga dapat dengan mudah menentukan pengurutan topologis terkecil secara leksikografis.
 
@@ -102,7 +102,7 @@ vector<int> topological_sort(int V, const vector<vector<int>>& graph) {
 
 Ini adalah masalah untuk mencari rute terpendek dari suatu titik awal ke semua simpul lainnya. Algoritma yang diterapkan berbeda-beda tergantung pada apakah bobot sisi non-negatif atau terdapat bobot negatif.
 
-### Algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) (Dijkstra's Algorithm)
+### Algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) ([Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm)
 
 Algoritma Dijkstra merupakan algoritma rute terpendek yang cepat dan bisa digunakan saat **semua bobot sisi bernilai non-negatif**. Algoritma ini berdasarkan metode greedy: "Konfirmasikan simpul yang memiliki jarak terpendek yang diketahui saat ini, lalu perbarui jarak dari simpul tersebut ke simpul-simpul tetangganya (relaksasi)".
 
@@ -174,7 +174,7 @@ Pernyataan `if (dist[u] < d) continue;` sangat penting. Pada algoritma [Dijkstra
 
 ### Algoritma Bellman-Ford (Bellman-Ford Algorithm)
 
-Jika terdapat nilai negatif pada bobot sisi, algoritma Dijkstra tidak dapat menemukan jawaban yang benar. Dalam kasus ini, algoritma Bellman-Ford adalah solusi yang tepat. Dengan mengulang proses relaksasi terhadap semua sisi sebanyak $V - 1$ kali, rute terpendek akan dihitung secara benar meskipun terdapat bobot negatif.
+Jika terdapat nilai negatif pada bobot sisi, algoritma [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) tidak dapat menemukan jawaban yang benar. Dalam kasus ini, algoritma Bellman-Ford adalah solusi yang tepat. Dengan mengulang proses relaksasi terhadap semua sisi sebanyak $V - 1$ kali, rute terpendek akan dihitung secara benar meskipun terdapat bobot negatif.
 
 Jika masih terjadi pembaruan pada iterasi ke-$V$, ini menandakan adanya **siklus negatif (Negative Cycle)**. Masalah untuk mendeteksi siklus negatif juga sering muncul di competitive programming, dan algoritma Bellman-Ford sangat unggul sebagai algoritma pendeteksi hal tersebut.
 
@@ -230,7 +230,7 @@ pair<vector<long long>, bool> bellman_ford(int V, const vector<Edge>& edges, int
 
 ### Algoritma Floyd-Warshall (Floyd-Warshall Algorithm)
 
-Algoritma ini digunakan untuk mencari jarak terpendek antara semua pasangan simpul dalam sebuah graf. Algoritma ini didasarkan pada pemrograman dinamis (DP). Keunggulannya adalah logikanya yang sangat sederhana dan implementasinya yang sangat mudah.
+Algoritma ini digunakan untuk mencari jarak terpendek antara semua pasangan simpul dalam sebuah graf. Algoritma ini didasarkan pada pemrograman dinamis ([DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)). Keunggulannya adalah logikanya yang sangat sederhana dan implementasinya yang sangat mudah.
 
 Persamaan transisi state-nya adalah sebagai berikut. Kita memilih yang lebih pendek antara jalur yang melewati simpul $k$ dan yang tidak:
 $$ d[i][j] = \min(d[i][j], d[i][k] + d[k][j]) $$
@@ -271,7 +271,7 @@ Algoritma Floyd-Warshall juga dapat mendeteksi siklus negatif. Setelah iterasi s
 
 ---
 
-## 5. Minimum Spanning Tree (MST)
+## 5. Minimum Spanning [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (MST)
 
 Pada graf tidak berarah yang terhubung, subgraf tanpa siklus (pohon) yang menghubungkan seluruh simpul dan memiliki jumlah bobot sisi minimum disebut **Minimum Spanning Tree (MST)**. Ini secara langsung berhubungan dengan masalah seperti meminimalkan biaya pembangunan jaringan.
 
@@ -407,13 +407,13 @@ long long prim(int V, const vector<vector<Edge>>& graph) {
 
 ## 6. Lanjutan: Strongly Connected Components (SCC)
 
-Pada graf berarah, "himpunan simpul yang saling dapat dijangkau satu sama lain" disebut Komponen Terhubung Kuat (Strongly Connected Component / SCC). Jika kita mengelompokkan setiap SCC, graf berarah acak akan selalu berubah menjadi DAG (Directed Acyclic Graph) secara keseluruhan. Proses ini disebut **Strongly Connected Components Decomposition (Dekomposisi SCC)**. Ini adalah langkah pra-pemrosesan yang sangat penting untuk menyederhanakan struktur graf agar masalah lebih mudah dipecahkan.
+Pada graf berarah, "himpunan simpul yang saling dapat dijangkau satu sama lain" disebut Komponen Terhubung Kuat (Strongly Connected Component / SCC). Jika kita mengelompokkan setiap SCC, graf berarah acak akan selalu berubah menjadi DAG (Directed Acyclic [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) secara keseluruhan. Proses ini disebut **Strongly Connected Components Decomposition (Dekomposisi SCC)**. Ini adalah langkah pra-pemrosesan yang sangat penting untuk menyederhanakan struktur graf agar masalah lebih mudah dipecahkan.
 
-Dalam competitive programming, ini banyak digunakan untuk menyelesaikan masalah 2-SAT atau meringkas graf bersiklus menjadi DAG agar bisa diselesaikan dengan pemrograman dinamis (DP).
+Dalam competitive programming, ini banyak digunakan untuk menyelesaikan masalah 2-SAT atau meringkas graf bersiklus menjadi DAG agar bisa diselesaikan dengan pemrograman dinamis ([DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)).
 
 ### Algoritma Kosaraju (Kosaraju's Algorithm)
 
-Algoritma Kosaraju adalah metode yang indah dan efisien untuk membentuk SCC hanya dengan melakukan 2 kali DFS (Depth-First Search). Kompleksitasnya bekerja secara linear $O(V + E)$.
+Algoritma Kosaraju adalah metode yang indah dan efisien untuk membentuk SCC hanya dengan melakukan 2 kali [DFS](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Depth-First Search). Kompleksitasnya bekerja secara linear $O(V + E)$.
 
 Langkah-langkah algoritma:
 1. Lakukan DFS pada graf awal, dan catat simpul-simpul dalam array pada tahap kembali (post-order).
@@ -504,7 +504,7 @@ Pada array `comp`, akan tersimpan ID dari SCC tempat setiap simpul berada. ID in
 Dalam artikel ini, kita telah meninjau algoritma graf yang sering muncul pada pemrograman kompetitif.
 Kunci untuk mahir dalam masalah graf adalah **"mengimplementasikan berulang kali sampai menjadi kebiasaan"** dan **"melatih pikiran untuk merepresentasikan suatu masalah sebagai graf (apa saja simpulnya, apa saja sisinya)"**.
 
-1. Pertama-tama, pastikan bisa menulis DFS / BFS dengan cepat dan tanpa kesalahan.
+1. Pertama-tama, pastikan bisa menulis [DFS](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) / [BFS](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) dengan cepat dan tanpa kesalahan.
 2. Selanjutnya, pastikan bisa menulis algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) dan Kruskal di luar kepala (Wajib untuk sabuk cokelat hingga hijau di AtCoder).
 3. Terakhir, perluas wawasan dengan Bellman-Ford, Floyd-Warshall, Topological Sort, dan SCC (Berguna sebagai senjata ampuh di sabuk biru muda hingga biru di AtCoder).
 

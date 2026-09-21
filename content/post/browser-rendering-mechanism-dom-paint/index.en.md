@@ -14,7 +14,7 @@ tags:
 
 ---
 
-# Browser Rendering Mechanism: Complete Anatomy from DOM Tree to Paint
+# Browser Rendering Mechanism: Complete Anatomy from DOM [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) to Paint
 
 Web browsers are one of the most familiar and complex software we use on a daily basis. From the moment a URL is entered until the page is displayed on the screen, a vast amount of calculations and processing take place internally in milliseconds. This sequence of processing is called the **Rendering [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)** or **Critical Rendering Path**.
 
@@ -53,7 +53,7 @@ The processing steps are roughly classified into the following phases.
 
 Now, let's look at each step in detail.
 
-## 2. Parsing: Construction of DOM Tree and CSSOM Tree
+## 2. Parsing: Construction of DOM [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) and CSSOM Tree
 
 When the browser receives a byte stream (HTML data) from the server, the rendering engine starts converting it into a data structure that humans and programs can understand.
 
@@ -64,7 +64,7 @@ HTML analysis is performed according to the HTML parsing algorithm defined by W3
 1. **Conversion**: Converts the raw data byte stream received from the network into individual characters based on the specified character encoding (e.g., UTF-8).
 2. **Tokenization**: Converts strings into various "Tokens" specified by the W3C HTML5 standard. For example, start tags like `<html>` and `<body>`, end tags, attribute names, and attribute values.
 3. **Lexing**: Converts the generated tokens into "Nodes" that have properties and rules.
-4. **DOM Tree Construction**: Links the created objects into a tree-like data structure based on the nesting relationship of the tags. This is the **DOM (Document Object Model)**.
+4. **DOM [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Construction**: Links the created objects into a tree-like data structure based on the nesting relationship of the tags. This is the **DOM (Document Object Model)**.
 
 ```mermaid
 sequenceDiagram
@@ -84,7 +84,7 @@ sequenceDiagram
 
 The DOM tree completely represents the structure and content of the document. However, at this point, it does not have information on "how the elements should look".
 
-### 2.2 CSS Parsing and CSSOM Tree Construction
+### 2.2 CSS Parsing and CSSOM [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Construction
 
 When the HTML parser encounters information about CSS, such as `<link>` or `<style>` tags, the CSS parsing process begins. CSS parsing also follows very similar steps to HTML, ultimately generating a tree structure called the **CSSOM (CSS Object Model)**.
 
@@ -156,7 +156,7 @@ gantt
 ```
 *(※ The actual `async` executes immediately after download completes, so it interrupts parsing.)*
 
-## 3. Style: Construction of the Render Tree
+## 3. Style: Construction of the Render [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)
 
 Once the DOM tree and CSSOM tree are completed, the browser combines them to build the **Render Tree** or **Style Tree**.
 
@@ -270,7 +270,7 @@ Recently, it is common to use libraries like `FastDOM` or appropriately use `req
 
 Through the layout phase, the position (X, Y coordinates) and size (width, height) of each element's box have been determined. However, nothing has been drawn on the screen yet. The next step is the **Paint** phase.
 
-The goal of the Paint phase is to take the Layout Tree as input, create instructions (Paint Records) on how to paint the pixels on the screen, and finally Rasterize them.
+The goal of the Paint phase is to take the Layout [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) as input, create instructions (Paint Records) on how to paint the pixels on the screen, and finally Rasterize them.
 
 ### 5.1 Paint Order (Stacking Context)
 
@@ -322,7 +322,7 @@ Therefore, the browser divides the page into multiple independent **Graphics Lay
 
 Inside the browser, multiple tree structures are transformed:
 
-1. **DOM Tree**
+1. **DOM [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
 2. **Layout Tree (Render Tree)**: Geometry information for visual elements
 3. **Paint Tree (Layer Tree)**: Layer hierarchy based on stacking contexts, etc.
 4. **Graphics Layer Tree**: Independent layers actually composited by the GPU

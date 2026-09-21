@@ -436,7 +436,7 @@ Write-Host "---------------------------------"
 Write-Host "Aktualisierung aller Repositories abgeschlossen." -ForegroundColor Green
 ```
 
-Dieses Skript ist so konzipiert, dass auch bei einem Fehler in einem Repository dank `try / catch` und der `foreach`-Schleife die Verarbeitung der nächsten Repositories problemlos fortgesetzt wird. Darüber hinaus wird die Option `git status --porcelain`, die speziell für die Skriptverarbeitung gedacht ist, genutzt, um den "Sauberkeitszustand" (Cleanliness) des Arbeitsbaums (Working Tree) zuverlässig zu bestimmen. Wenn Sie dieses Skript im Autostart-Ordner ablegen oder es im Task-Scheduler beim Anmelden des Benutzers registrieren, sind all Ihre Entwicklungsumgebungen auf dem neuesten Stand, während Sie sich nach dem Booten des PCs einen Kaffee holen.
+Dieses Skript ist so konzipiert, dass auch bei einem Fehler in einem Repository dank `try / catch` und der `foreach`-Schleife die Verarbeitung der nächsten Repositories problemlos fortgesetzt wird. Darüber hinaus wird die Option `git status --porcelain`, die speziell für die Skriptverarbeitung gedacht ist, genutzt, um den "Sauberkeitszustand" (Cleanliness) des Arbeitsbaums (Working [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) zuverlässig zu bestimmen. Wenn Sie dieses Skript im Autostart-Ordner ablegen oder es im Task-Scheduler beim Anmelden des Benutzers registrieren, sind all Ihre Entwicklungsumgebungen auf dem neuesten Stand, während Sie sich nach dem Booten des PCs einen Kaffee holen.
 
 ---
 

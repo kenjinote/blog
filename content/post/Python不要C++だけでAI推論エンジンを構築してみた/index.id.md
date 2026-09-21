@@ -42,7 +42,7 @@ graph TD
 ```
 
 1. **Manajemen Tensor**: Mengelola struktur data array multidimensi dan stride untuk setiap dimensi.
-2. **Grafik Komputasi (Computation Graph)**: Merepresentasikan komputasi setiap lapisan pada neural network sebagai Directed Acyclic Graph (DAG).
+2. **Grafik Komputasi (Computation [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**: Merepresentasikan komputasi setiap lapisan pada neural network sebagai Directed Acyclic Graph (DAG).
 3. **Arena Memori (Memory Arena)**: Mekanisme manajemen memori pra-alokasi untuk menghindari overhead dari alokasi memori dinamis (`malloc` atau `new`).
 4. **Backend**: Implementasi komputasi (kernel) yang dioptimalkan untuk perangkat keras tertentu seperti CPU atau GPU.
 

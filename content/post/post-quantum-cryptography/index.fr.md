@@ -74,7 +74,7 @@ La plupart des algorithmes actuellement normalisés par le NIST (tels que ML-KEM
 La cryptographie fondée sur le hachage est un algorithme PQC spécialisé dans les signatures numériques. Sa sécurité repose uniquement sur la résistance aux collisions et l'unidirectionnalité de "fonctions de hachage cryptographiques" sûres comme SHA-2 ou SHA-3.
 
 **Aperçu du mécanisme :** 
-Le point de départ est un schéma de signature à usage unique appelé "signature de Lamport (Lamport Signature)". En les regroupant dans une structure de données arborescente appelée "arbre de Merkle (Merkle Tree)", il devient possible d'effectuer plusieurs signatures avec une seule paire de clés.
+Le point de départ est un schéma de signature à usage unique appelé "signature de Lamport (Lamport Signature)". En les regroupant dans une structure de données arborescente appelée "arbre de Merkle (Merkle [Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))", il devient possible d'effectuer plusieurs signatures avec une seule paire de clés.
 
 **Avantages :** 
 - Le fondement de la sécurité est extrêmement solide, avec une forte preuve que "c'est sûr tant que la fonction de hachage est sûre".

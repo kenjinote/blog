@@ -133,7 +133,7 @@ Por lo tanto, para obtener la mejor experiencia en macOS, la "solución óptima"
 
 ---
 
-## 4. Ancho de banda de conexión y Daisy Chain: Los límites de Thunderbolt 4 y DP MST
+## 4. Ancho de banda de conexión y Daisy Chain: Los límites de Thunderbolt 4 y [DP](https://kenji.blog/es/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) MST
 
 Al conectar múltiples monitores de alta resolución, la capacidad de transmisión de datos (ancho de banda) del cable se convierte en un cuello de botella. Problemas como "Compré un monitor, pero la frecuencia de actualización solo alcanza 30Hz" se deben a una falta de cálculo del ancho de banda.
 

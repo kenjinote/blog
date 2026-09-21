@@ -81,7 +81,7 @@ graph LR
 Ao memorizar livros técnicos, não faz sentido "decorar longas provas inteiras". Divida o conhecimento nas menores unidades (Atômicas) e crie cartões a partir delas.
 
 - **Cartão Ruim**: "Escreva toda a prova do Algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/)."
-- **Cartão Bom**: "No Algoritmo de Dijkstra, qual é a condição para que a distância mais curta de um certo vértice seja considerada determinada?" → "Quando você escolhe o vértice com a menor distância provisória do conjunto de vértices não determinados."
+- **Cartão Bom**: "No Algoritmo de [Dijkstra](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), qual é a condição para que a distância mais curta de um certo vértice seja considerada determinada?" → "Quando você escolhe o vértice com a menor distância provisória do conjunto de vértices não determinados."
 - **Cartão Bom**: "Qual é a fórmula do Pequeno Teorema de [Fermat](https://kenji.blog/pt/p/fermat/)?" → "Para um número primo $p$ e um inteiro $a$ coprimo a $p$, $a^{p-1} \equiv 1 \pmod p$"
 
 Mesmo ao memorizar fórmulas, é eficaz registrá-las no Anki no formato LaTeX e usar omissão de palavras (Cloze Deletion).
@@ -176,7 +176,7 @@ Para encontrar um $d$ que satisfaça a equação $e \cdot d \equiv 1 \pmod{\phi(
 
 ### 4.2 Exemplo Prático 2: Algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/) e Relaxamento (Relaxation)
 
-Considere o algoritmo de Dijkstra para resolver o Problema do Caminho Mais Curto de Origem Única (SSSP) na teoria dos grafos.
+Considere o algoritmo de [Dijkstra](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) para resolver o Problema do Caminho Mais Curto de Origem Única (SSSP) na teoria dos grafos.
 
 O núcleo matemático e algorítmico é uma operação chamada "Relaxamento" (Relaxation).
 Quando há uma aresta do vértice $u$ para o vértice $v$ com peso $w(u, v)$, nós atualizamos a distância mais curta provisória para o vértice $v$, $d[v]$, com a seguinte fórmula:

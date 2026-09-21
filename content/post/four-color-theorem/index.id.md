@@ -28,7 +28,7 @@ Namun, pada tahun 1890, Percy Heawood menemukan kelemahan fatal dalam bukti Kemp
 
 ## 4. Transformasi ke Teori Graf
 
-Untuk menangani Masalah Empat Warna secara matematis dan ketat, masalah ini diterjemahkan ke dalam bahasa teori graf. Setiap wilayah di peta direpresentasikan sebagai "Simpul (Vertex)", dan wilayah yang berbagi batas dihubungkan oleh "Sisi (Edge)". Graf yang terbentuk dengan cara ini disebut "Graf Planar (Planar Graph)".
+Untuk menangani Masalah Empat Warna secara matematis dan ketat, masalah ini diterjemahkan ke dalam bahasa teori graf. Setiap wilayah di peta direpresentasikan sebagai "Simpul (Vertex)", dan wilayah yang berbagi batas dihubungkan oleh "Sisi (Edge)". Graf yang terbentuk dengan cara ini disebut "Graf Planar (Planar [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))".
 
 Graf Planar adalah graf yang dapat digambar pada bidang datar tanpa ada sisi yang saling bersilangan. Masalah Empat Warna kemudian direduksi menjadi masalah bahwa "simpul dari semua graf planar dapat diwarnai dengan **4 warna** sedemikian rupa sehingga simpul yang berdekatan memiliki warna yang berbeda".
 
@@ -85,7 +85,7 @@ Namun, pada tahun 1890, Percy Heawood menemukan kelemahan fatal dalam bukti Kemp
 
 ## 4. Transformasi ke Teori Graf
 
-Untuk menangani Masalah Empat Warna secara matematis dan ketat, masalah ini diterjemahkan ke dalam bahasa teori graf. Setiap wilayah di peta direpresentasikan sebagai "Simpul (Vertex)", dan wilayah yang berbagi batas dihubungkan oleh "Sisi (Edge)". Graf yang terbentuk dengan cara ini disebut "Graf Planar (Planar Graph)".
+Untuk menangani Masalah Empat Warna secara matematis dan ketat, masalah ini diterjemahkan ke dalam bahasa teori graf. Setiap wilayah di peta direpresentasikan sebagai "Simpul (Vertex)", dan wilayah yang berbagi batas dihubungkan oleh "Sisi (Edge)". Graf yang terbentuk dengan cara ini disebut "Graf Planar (Planar [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))".
 
 Graf Planar adalah graf yang dapat digambar pada bidang datar tanpa ada sisi yang saling bersilangan. Masalah Empat Warna kemudian direduksi menjadi masalah bahwa "simpul dari semua graf planar dapat diwarnai dengan **4 warna** sedemikian rupa sehingga simpul yang berdekatan memiliki warna yang berbeda".
 
@@ -142,7 +142,7 @@ Namun, pada tahun 1890, Percy Heawood menemukan kelemahan fatal dalam bukti Kemp
 
 ## 4. Transformasi ke Teori Graf
 
-Untuk menangani Masalah Empat Warna secara matematis dan ketat, masalah ini diterjemahkan ke dalam bahasa teori graf. Setiap wilayah di peta direpresentasikan sebagai "Simpul (Vertex)", dan wilayah yang berbagi batas dihubungkan oleh "Sisi (Edge)". Graf yang terbentuk dengan cara ini disebut "Graf Planar (Planar Graph)".
+Untuk menangani Masalah Empat Warna secara matematis dan ketat, masalah ini diterjemahkan ke dalam bahasa teori graf. Setiap wilayah di peta direpresentasikan sebagai "Simpul (Vertex)", dan wilayah yang berbagi batas dihubungkan oleh "Sisi (Edge)". Graf yang terbentuk dengan cara ini disebut "Graf Planar (Planar [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))".
 
 Graf Planar adalah graf yang dapat digambar pada bidang datar tanpa ada sisi yang saling bersilangan. Masalah Empat Warna kemudian direduksi menjadi masalah bahwa "simpul dari semua graf planar dapat diwarnai dengan **4 warna** sedemikian rupa sehingga simpul yang berdekatan memiliki warna yang berbeda".
 

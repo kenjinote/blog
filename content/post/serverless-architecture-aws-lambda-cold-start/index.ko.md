@@ -175,7 +175,7 @@ $ P_{warm} \approx 1 - e^{-\lambda \cdot T_w} $
 ### 5.2. 배포 패키지 경량화
 
 Lambda는 시작 시 코드를 S3에서 다운로드합니다. 따라서 패키지 크기를 작게 유지하는 것이 직결되는 최적화가 됩니다.
-불필요한 종속성(DevDependencies 등)을 포함하지 않는 것이나, Webpack / esbuild 등의 번들러를 사용하여 코드를 최소화(Minify)하고 트리 셰이킹(Tree-shaking)하는 것이 매우 중요합니다.
+불필요한 종속성(DevDependencies 등)을 포함하지 않는 것이나, Webpack / esbuild 등의 번들러를 사용하여 코드를 최소화(Minify)하고 트리 셰이킹([Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-shaking)하는 것이 매우 중요합니다.
 
 ### 5.3. 초기화 처리 최적화 및 지연 평가 (Lazy Initialization)
 

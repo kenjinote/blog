@@ -19,8 +19,8 @@ Neste artigo, cobriremos de forma abrangente os principais algoritmos de grafos 
 
 Antes de aprender os algoritmos, é importante entender as restrições gerais e as estimativas de complexidade computacional dos problemas de grafos em programação competitiva. Um grafo é representado pelo número de vértices $V$ (Vertices) e pelo número de arestas $E$ (Edges).
 
-*   $O(V + E)$ : Esta é a complexidade computacional exigida para problemas com número de vértices $V, E \le 10^5 \sim 10^6$. Exemplos incluem a Busca em Profundidade (DFS) e a Busca em Largura (BFS).
-*   $O((V + E) \log V)$ : Muito frequente em problemas com $V, E \le 10^5 \sim 2 \cdot 10^5$. Esta é a complexidade quando se usa uma fila de prioridade em algoritmos como o de Dijkstra ou de Prim.
+*   $O(V + E)$ : Esta é a complexidade computacional exigida para problemas com número de vértices $V, E \le 10^5 \sim 10^6$. Exemplos incluem a Busca em Profundidade ([DFS](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) e a Busca em Largura ([BFS](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
+*   $O((V + E) \log V)$ : Muito frequente em problemas com $V, E \le 10^5 \sim 2 \cdot 10^5$. Esta é a complexidade quando se usa uma fila de prioridade em algoritmos como o de [Dijkstra](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) ou de Prim.
 *   $O(V^2)$ : Aceitável em grafos densos ($E \approx V^2$) onde $V \le 2000 \sim 3000$.
 *   $O(V^3)$ : Problemas onde $V \le 400 \sim 500$. O algoritmo de Floyd-Warshall é um exemplo representativo.
 
@@ -32,7 +32,7 @@ Na programação competitiva, é comum usar a **Lista de Adjacência (Adjacency 
 
 ### Ordenação Topológica (Topological Sort)
 
-A ordenação topológica é um algoritmo que alinha os vértices de um Grafo Direcionado Acíclico (DAG: Directed Acyclic Graph) em uma linha, de forma que todas as arestas direcionadas apontem de um vértice anterior para um vértice posterior. É usada ao resolver dependências de tarefas (por exemplo: a Tarefa B não pode começar até que a Tarefa A termine) ou para determinar a ordem de cálculo da Programação Dinâmica (DP) em um DAG.
+A ordenação topológica é um algoritmo que alinha os vértices de um Grafo Direcionado Acíclico (DAG: Directed Acyclic [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) em uma linha, de forma que todas as arestas direcionadas apontem de um vértice anterior para um vértice posterior. É usada ao resolver dependências de tarefas (por exemplo: a Tarefa B não pode começar até que a Tarefa A termine) ou para determinar a ordem de cálculo da Programação Dinâmica ([DP](https://kenji.blog/pt/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) em um DAG.
 
 A complexidade computacional é $O(V + E)$. Existem dois tipos de implementação: o Algoritmo de Kahn (baseado em BFS usando grau de entrada) e o baseado em DFS usando a ordem de pós-visita. Aqui, apresentaremos o Algoritmo de Kahn, que também permite obter facilmente a ordenação topológica lexicograficamente menor.
 
@@ -102,7 +102,7 @@ vector<int> topological_sort(int V, const vector<vector<int>>& graph) {
 
 Este é o problema de encontrar o caminho mais curto de um ponto de origem para todos os outros vértices. O algoritmo aplicável difere dependendo se os pesos das arestas são não-negativos ou se existem pesos negativos.
 
-### Algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/) (Dijkstra's Algorithm)
+### Algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/) ([Dijkstra](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm)
 
 O algoritmo de Dijkstra é um algoritmo de caminho mais curto rápido aplicável quando **todos os pesos das arestas são não-negativos**. Baseia-se em uma abordagem gulosa: "fixar o vértice com a menor distância atual conhecida e atualizar (relaxar) a distância para os vértices adjacentes a partir desse vértice".
 
@@ -174,7 +174,7 @@ A declaração `if (dist[u] < d) continue;` é extremamente importante. No algor
 
 ### Algoritmo de Bellman-Ford (Bellman-Ford Algorithm)
 
-Quando há valores negativos nos pesos das arestas, o algoritmo de Dijkstra não consegue derivar a resposta correta. É aqui que o algoritmo de Bellman-Ford se destaca. Repetindo o processo de relaxamento para todas as arestas $V - 1$ vezes, ele calcula corretamente o caminho mais curto mesmo que haja pesos negativos.
+Quando há valores negativos nos pesos das arestas, o algoritmo de [Dijkstra](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) não consegue derivar a resposta correta. É aqui que o algoritmo de Bellman-Ford se destaca. Repetindo o processo de relaxamento para todas as arestas $V - 1$ vezes, ele calcula corretamente o caminho mais curto mesmo que haja pesos negativos.
 
 Se uma atualização ocorrer na $V$-ésima iteração, isso significa que existe um **ciclo negativo (Negative Cycle)**. Em programação competitiva, problemas que pedem para "detectar um ciclo negativo" também são frequentes, e o algoritmo de Bellman-Ford é excelente como algoritmo de detecção para isso.
 
@@ -230,7 +230,7 @@ pair<vector<long long>, bool> bellman_ford(int V, const vector<Edge>& edges, int
 
 ### Algoritmo de Floyd-Warshall (Floyd-Warshall Algorithm)
 
-Este é um algoritmo que encontra as distâncias mais curtas entre todos os pares de vértices no grafo. É baseado em Programação Dinâmica (DP). É muito atraente porque o algoritmo é muito simples e extremamente fácil de implementar.
+Este é um algoritmo que encontra as distâncias mais curtas entre todos os pares de vértices no grafo. É baseado em Programação Dinâmica ([DP](https://kenji.blog/pt/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)). É muito atraente porque o algoritmo é muito simples e extremamente fácil de implementar.
 
 A equação de transição de estado é a seguinte. O mais curto entre o caminho que passa pelo vértice $k$ e o caminho que não passa é adotado.
 $$ d[i][j] = \min(d[i][j], d[i][k] + d[k][j]) $$
@@ -271,7 +271,7 @@ O algoritmo de Floyd-Warshall também pode detectar ciclos negativos. Após o t�
 
 ---
 
-## 5. Árvore Geradora Mínima (MST: Minimum Spanning Tree)
+## 5. Árvore Geradora Mínima (MST: Minimum Spanning [Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 Em um grafo não direcionado conectado, a árvore (subgrafo que não contém ciclos) que conecta todos os vértices e tem a menor soma dos pesos das arestas é chamada de **Árvore Geradora Mínima (MST)**. É diretamente questionada em problemas como a minimização do custo de implantação de uma rede.
 
@@ -409,11 +409,11 @@ long long prim(int V, const vector<vector<Edge>>& graph) {
 
 Em um grafo direcionado, um conjunto de vértices "que podem alcançar uns aos outros" é chamado de Componente Fortemente Conexo (SCC). Se os vértices de qualquer grafo direcionado forem agrupados por componentes fortemente conexos, o todo se tornará um DAG (Grafo Direcionado Acíclico). A isso se dá o nome de **Decomposição em Componentes Fortemente Conexos**. É um pré-processamento muito importante para simplificar a estrutura do grafo e tornar os problemas mais fáceis de resolver.
 
-Em programação competitiva, é frequentemente usado ao resolver problemas 2-SAT ou ao realizar DP condensando um grafo com ciclos em um DAG.
+Em programação competitiva, é frequentemente usado ao resolver problemas 2-SAT ou ao realizar [DP](https://kenji.blog/pt/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) condensando um grafo com ciclos em um DAG.
 
 ### Algoritmo de Kosaraju (Kosaraju's Algorithm)
 
-O algoritmo de Kosaraju é um método belo e eficiente que pode construir as SCCs simplesmente realizando uma DFS (Busca em Profundidade) duas vezes. A complexidade computacional é $O(V + E)$ operando em tempo linear.
+O algoritmo de Kosaraju é um método belo e eficiente que pode construir as SCCs simplesmente realizando uma [DFS](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Busca em Profundidade) duas vezes. A complexidade computacional é $O(V + E)$ operando em tempo linear.
 
 Passos do algoritmo:
 1. Realize uma DFS no grafo original e registre os vértices em um array na ordem de pós-visita (post-order).
@@ -504,7 +504,7 @@ O array `comp` armazenará o ID da SCC à qual cada vértice pertence. Este ID t
 Neste artigo, revisamos os algoritmos de grafos mais comuns que aparecem em programação competitiva.
 As dicas para melhorar na resolução de problemas de grafos são **"implementar repetidamente até se tornar um hábito"** e **"treinar para pensar em qual grafo este problema pode ser reduzido (o que são os vértices, o que são as arestas)"**.
 
-1. Primeiro, seja capaz de escrever DFS / BFS de forma rápida e sem erros.
+1. Primeiro, seja capaz de escrever [DFS](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) / [BFS](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) de forma rápida e sem erros.
 2. Em seguida, seja capaz de escrever o algoritmo de [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/) e o algoritmo de Kruskal de cor (essencial nas classificações Marrom a Verde do AtCoder).
 3. Por fim, expanda seu repertório com algoritmos como Bellman-Ford, Floyd-Warshall, Ordenação Topológica, SCC, etc. (uma arma nas classificações Azul claro a Azul do AtCoder).
 

@@ -87,7 +87,7 @@ Sebagai contoh, jika hanya untuk melengkapi definisi fungsi sederhana atau mengh
 
 ---
 
-## 3. Kriteria Pengambilan Keputusan: Pohon Keputusan (Decision Tree)
+## 3. Kriteria Pengambilan Keputusan: Pohon Keputusan (Decision [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 Lalu, dalam skenario pengkodean di dunia nyata, bagaimana pengembang seharusnya menentukan "AI mana yang harus digunakan sekarang"? Kami mendefinisikan alur pengambilan keputusan secara visual menggunakan pohon keputusan berikut.
 

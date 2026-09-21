@@ -51,7 +51,7 @@ La manifestation la plus remarquable du génie d'Euler résidait dans sa capacit
 1. Les **terres (îles et rives)** sont représentées comme de simples « points » sans dimension. C'est ce qu'on appelle aujourd'hui un **sommet** (Vertex) ou un **nœud** (Node).
 2. Les **ponts** sont représentés comme des « lignes » reliant les sommets. C'est ce qu'on appelle une **arête** (Edge) ou un **lien** (Link). La courbure ou la longueur des lignes n'a pas d'importance.
 
-Ainsi, une structure discrète représentée comme un ensemble fini de sommets et d'arêtes les reliant est appelée un **graphe** (Graph) en mathématiques. Ce fut le moment exact de la naissance de la discipline que nous appelons aujourd'hui la « théorie des graphes ».
+Ainsi, une structure discrète représentée comme un ensemble fini de sommets et d'arêtes les reliant est appelée un **graphe** ([Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) en mathématiques. Ce fut le moment exact de la naissance de la discipline que nous appelons aujourd'hui la « théorie des graphes ».
 
 Le diagramme Mermaid suivant montre comment la carte géographique de la ville de Königsberg a été transformée en une représentation graphique abstraite.
 

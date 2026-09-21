@@ -142,7 +142,7 @@ description: 'Apresentaremos cuidadosamente citações que tocam o coração, di
 
 > A simplicidade é um pré-requisito para a confiabilidade (Edsger [Dijkstra](https://kenji.blog/pt/p/graph-theory-dijkstra-a-star/))
 
-> A ciência da computação não é mais sobre computadores do que a astronomia é sobre telescópios (Edsger Dijkstra)
+> A ciência da computação não é mais sobre computadores do que a astronomia é sobre telescópios (Edsger [Dijkstra](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 > Existem apenas dois problemas difíceis na Ciência da Computação: invalidação de cache e nomear as coisas (Phil Karlton)
 

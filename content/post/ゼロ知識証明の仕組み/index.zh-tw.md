@@ -131,7 +131,7 @@ zk-STARKs不依賴橢圓曲線密碼學，而是將安全性基礎 **僅建立�
 
 計算的驗證會在轉換為被稱為AIR（Algebraic Intermediate Representation）的格式後，利用一維或多維多項式的性質來進行。STARKs的核心在於 **FRI（Fast Reed-Solomon Interactive Oracle Proof of Proximity）** 協定。
 
-FRI協定是一種用於驗證「某個函數是否足夠接近特定次數的多項式（Proximity）」的技術。證明者將多項式的值作為默克爾樹（Merkle Tree）的葉節點進行承諾（多項式承諾）。
+FRI協定是一種用於驗證「某個函數是否足夠接近特定次數的多項式（Proximity）」的技術。證明者將多項式的值作為默克爾樹（Merkle [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）的葉節點進行承諾（多項式承諾）。
 
 ```mermaid
 graph TD

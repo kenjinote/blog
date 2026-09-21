@@ -133,7 +133,7 @@ macOS 在設計上，歷史以來一直是以 110 PPI（非 Retina）或 220 PPI
 
 ---
 
-## 4. 連接頻寬與菊鏈連接：Thunderbolt 4 與 DP MST 的極限
+## 4. 連接頻寬與菊鏈連接：Thunderbolt 4 與 [DP](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) MST 的極限
 
 連接多台高解析度螢幕時，連接線的資料傳輸容量（頻寬）往往會成為瓶頸。「明明買了新螢幕，更新率卻只有 30Hz」這類問題，原因通常在於頻寬計算不足。
 

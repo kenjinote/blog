@@ -17,7 +17,7 @@ description: 'Visual Studio Code（VSCode）をさらに便利にするおすす
 | 仮想・コンテナ管理 | [Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft  | Dockerコンテナの管理をサポートする |
 | コード管理 | GitHub Pull Requests | GitHub | GitHubのPull RequestをVSCode上で管理する |
 | コード管理 | GitHub Copilot | GitHub | AIによるコード補完をサポートする |
-| コード管理 | Git Graph | mhutchie | Gitのブランチやコミットをグラフィカルに表示する |
+| コード管理 | Git [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) | mhutchie | Gitのブランチやコミットを[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィカルに表示する |
 | コード管理 | Git History | Don Jayamanne | Gitの履歴を表示する |
 | ブラウザ・Web開発 | Debugger for Firefox | Firefox DevTools | FirefoxのデバッガをVSCode上で利用する |
 | ブラウザ・Web開発 | Microsoft Edge Tool For VScode | Microsoft | EdgeのデベロッパーツールをVSCode上で利用する |

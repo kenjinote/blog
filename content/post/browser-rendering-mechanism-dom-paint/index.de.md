@@ -64,7 +64,7 @@ Die HTML-Analyse erfolgt gemäß dem vom W3C (heute WHATWG) definierten HTML-Par
 1.  **Conversion (Konvertierung)** : Die vom Netzwerk empfangene rohe Byte-Folge wird basierend auf der angegebenen Zeichenkodierung (z. B. UTF-8) in einzelne Zeichen (Characters) konvertiert.
 2.  **Tokenization (Lexikalische Analyse)** : Die Zeichenfolge wird in verschiedene vom W3C-HTML5-Standard definierte „Tokens“ umgewandelt. Zum Beispiel Start-Tags wie `<html>`, `<body>`, End-Tags, Attributnamen und Attributwerte.
 3.  **Lexing (Syntaxanalyse)** : Die generierten Tokens werden in „Objekte (Knoten)“ mit Eigenschaften und Regeln umgewandelt.
-4.  **DOM Tree Construction (Baumaufbau)** : Die erstellten Objekte werden basierend auf der Verschachtelung der Tags zu einer baumartigen Datenstruktur verknüpft. Das ist das **DOM (Document Object Model)**.
+4.  **DOM [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Construction (Baumaufbau)** : Die erstellten Objekte werden basierend auf der Verschachtelung der Tags zu einer baumartigen Datenstruktur verknüpft. Das ist das **DOM (Document Object Model)**.
 
 ```mermaid
 sequenceDiagram
@@ -158,7 +158,7 @@ gantt
 
 ## 3. Style (Stilberechnung): Aufbau des Render-Baums
 
-Sobald der DOM-Baum und der CSSOM-Baum fertiggestellt sind, kombiniert der Browser sie, um den **Render-Baum (Render Tree)** oder **Stil-Baum (Style Tree)** aufzubauen.
+Sobald der DOM-Baum und der CSSOM-Baum fertiggestellt sind, kombiniert der Browser sie, um den **Render-Baum (Render [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** oder **Stil-Baum (Style Tree)** aufzubauen.
 
 In dieser Phase berechnet er für jeden Knoten im DOM-Baum, welche Stilregeln aus dem CSSOM angewendet werden sollen, und bestimmt den endgültigen berechneten Stil (Computed Style).
 
@@ -270,7 +270,7 @@ Heutzutage ist es üblich, Bibliotheken wie `FastDOM` zu verwenden oder Lese-/Sc
 
 Durch die Layout-Phase wurden Position (X-, Y-Koordinaten) und Größe (Breite, Höhe) der Boxen jedes Elements festgelegt. Dennoch wurde noch nichts auf dem Bildschirm gezeichnet. Als Nächstes folgt die **Paint**-Phase.
 
-Das Ziel der Paint-Phase ist es, den Layout-Baum (Layout Tree) als Eingabe zu nehmen, eine Anleitung (Paint Records) zu erstellen, wie die Pixel auf dem Bildschirm gemalt werden sollen, und dies schließlich zu rastern (Rasterization).
+Das Ziel der Paint-Phase ist es, den Layout-Baum (Layout [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) als Eingabe zu nehmen, eine Anleitung (Paint Records) zu erstellen, wie die Pixel auf dem Bildschirm gemalt werden sollen, und dies schließlich zu rastern (Rasterization).
 
 ### 5.1 Zeichnungsreihenfolge (Stacking Context)
 
@@ -322,7 +322,7 @@ Daher teilt der Browser die Seite in mehrere unabhängige **Ebenen (Graphics Lay
 
 Im Inneren des Browsers werden mehrere Baumstrukturen transformiert.
 
-1.  **DOM Tree**
+1.  **DOM [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
 2.  **Layout Tree (Render Tree)** : Geometrieinformationen für visuelle Elemente
 3.  **Paint Tree (Layer Tree)** : Hierarchische Ebenenstruktur basierend auf Stacking Contexts usw.
 4.  **Graphics Layer Tree** : Unabhängige Ebenengruppen, die tatsächlich von der GPU zusammengesetzt werden

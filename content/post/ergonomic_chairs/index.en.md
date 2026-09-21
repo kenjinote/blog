@@ -102,7 +102,7 @@ On the other hand, the Sylphy has gained tremendous support from remote workers 
 
 ---
 
-## 4. How to Choose the Best Chair for You (Decision Tree)
+## 4. How to Choose the Best Chair for You (Decision [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 The best chair for you differs depending on your body size, work style, and budget. Find the best model for you by referring to the flowchart below.
 

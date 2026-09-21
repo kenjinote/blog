@@ -109,7 +109,7 @@ Terraform의 핵심은 이 **선언적 (Declarative)** 인 접근 방식에 있�
 
 절차형 스크립트에서는 리소스를 생성하는 순서를 인간이 정확하게 기술해야 합니다. 예를 들어, VPC를 생성한 후에 서브넷을 생성하고, 그 서브넷 내에 EC2를 배치한다는 절차입니다.
 
-Terraform에서는 코드 내에 나타나는 참조 관계(예를 들어 `aws_vpc.main.id` 를 서브넷 설정에서 참조함)로부터 Terraform Core가 자동으로 **의존 관계 그래프 (Dependency Graph)** 를 구축합니다.
+Terraform에서는 코드 내에 나타나는 참조 관계(예를 들어 `aws_vpc.main.id` 를 서브넷 설정에서 참조함)로부터 Terraform Core가 자동으로 **의존 관계 그래프 (Dependency [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** 를 구축합니다.
 
 ```mermaid
 graph TD

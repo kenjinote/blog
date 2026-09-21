@@ -19,8 +19,8 @@ tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 
 在学习算法之前，掌握竞程中图问题的常见限制和时间复杂度的基准是非常重要的。图由顶点数 $V$ (Vertices) 和边数 $E$ (Edges) 来表示。
 
-*   $O(V + E)$ : 顶点数 $V, E \le 10^5 \sim 10^6$ 的题目所要求的时间复杂度。深度优先搜索 (DFS) 和广度优先搜索 (BFS) 属于此类。
-*   $O((V + E) \log V)$ : 在 $V, E \le 10^5 \sim 2 \cdot 10^5$ 的题目中频繁出现。是Dijkstra算法和Prim算法等使用优先队列时的时间复杂度。
+*   $O(V + E)$ : 顶点数 $V, E \le 10^5 \sim 10^6$ 的题目所要求的时间复杂度。深度优先搜索 ([DFS](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 和广度优先搜索 ([BFS](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 属于此类。
+*   $O((V + E) \log V)$ : 在 $V, E \le 10^5 \sim 2 \cdot 10^5$ 的题目中频繁出现。是[Dijkstra](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)算法和Prim算法等使用优先队列时的时间复杂度。
 *   $O(V^2)$ : 允许在 $V \le 2000 \sim 3000$ 的稠密图（$E \approx V^2$）中使用。
 *   $O(V^3)$ : $V \le 400 \sim 500$ 的题目。Floyd-Warshall算法等是其代表。
 
@@ -32,7 +32,7 @@ tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 
 ### 拓扑排序 (Topological Sort)
 
-拓扑排序是一种将有向无环图 (DAG: Directed Acyclic Graph) 的顶点排成一列，使得所有有向边都从前面的顶点指向后面的顶点的算法。在解除任务依赖关系（例如：任务A不结束，任务B就无法开始），以及决定DAG上的动态规划 (DP) 的计算顺序时会用到。
+拓扑排序是一种将有向无环图 (DAG: Directed Acyclic [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 的顶点排成一列，使得所有有向边都从前面的顶点指向后面的顶点的算法。在解除任务依赖关系（例如：任务A不结束，任务B就无法开始），以及决定DAG上的动态规划 ([DP](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) 的计算顺序时会用到。
 
 时间复杂度为 $O(V + E)$。有Kahn算法（基于入度的BFS方式）和基于后序遍历的DFS方式这两种实现方法，这里我们将介绍不仅易于实现，还能轻松求出字典序最小拓扑排序的Kahn算法。
 
@@ -102,7 +102,7 @@ vector<int> topological_sort(int V, const vector<vector<int>>& graph) {
 
 求从某个起点到其他所有顶点的最短路径问题。根据边的权重是非负数，还是存在负权边，适用的算法会有所不同。
 
-### [Dijkstra](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/)算法 (Dijkstra's Algorithm)
+### [Dijkstra](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/)算法 ([Dijkstra](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm)
 
 Dijkstra算法是一种在 **所有边的权重均为非负数** 时适用的快速最短路径算法。它基于贪心法：“确定目前已知最短距离最小的顶点，并更新从该顶点到其相邻顶点的距离（松弛）”。
 
@@ -174,7 +174,7 @@ vector<long long> dijkstra(int V, const vector<vector<Edge>>& graph, int s) {
 
 ### Bellman-Ford算法 (Bellman-Ford Algorithm)
 
-当边的权重包含负数时，Dijkstra算法无法得出正确的答案。这时就要用到Bellman-Ford算法。通过对所有边重复进行 $V - 1$ 次松弛操作，即使有负权边也能正确计算最短路径。
+当边的权重包含负数时，[Dijkstra](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)算法无法得出正确的答案。这时就要用到Bellman-Ford算法。通过对所有边重复进行 $V - 1$ 次松弛操作，即使有负权边也能正确计算最短路径。
 
 如果在第 $V$ 次迭代时仍然发生了更新，这就意味着存在 **负环 (Negative Cycle)** 。在竞程中，“检测负环”的题目也很常见，而Bellman-Ford算法也是非常优秀的检测算法。
 
@@ -230,7 +230,7 @@ pair<vector<long long>, bool> bellman_ford(int V, const vector<Edge>& edges, int
 
 ### Floyd-Warshall算法 (Floyd-Warshall Algorithm)
 
-这是求图中所有顶点对之间最短距离的算法。它基于动态规划 (DP)。算法非常简洁，实现极其容易是它的魅力所在。
+这是求图中所有顶点对之间最短距离的算法。它基于动态规划 ([DP](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))。算法非常简洁，实现极其容易是它的魅力所在。
 
 状态转移方程如下所示。在“经过顶点 $k$ 的路径”与“不经过顶点 $k$ 的路径”中取较短者。
 $$ d[i][j] = \min(d[i][j], d[i][k] + d[k][j]) $$
@@ -271,7 +271,7 @@ Floyd-Warshall算法也能检测负环。在循环结束后，只要存在任何
 
 ---
 
-## 5. 最小生成树 (MST: Minimum Spanning Tree)
+## 5. 最小生成树 (MST: Minimum Spanning [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 在连通的无向图中，连接所有顶点且不包含环的子图（树）中，边权总和最小的那一个被称为 **最小生成树 (MST)** 。在要求最小化网络铺设成本等问题中会被直接考察。
 
@@ -409,11 +409,11 @@ long long prim(int V, const vector<vector<Edge>>& graph) {
 
 在有向图中，“可以相互到达的顶点集合”被称为强连通分量 (SCC)。如果把任意有向图按强连通分量进行合并缩点，整体必定会变成一个DAG（有向无环图）。这被称为 **强连通分量分解** 。这是一种简化图结构、使问题更易解决的非常重要的预处理手段。
 
-在竞程中，它常被用于解决2-SAT问题，以及将含有环的图缩点成DAG后再进行DP的情况。
+在竞程中，它常被用于解决2-SAT问题，以及将含有环的图缩点成DAG后再进行[DP](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)的情况。
 
 ### Kosaraju算法 (Kosaraju's Algorithm)
 
-Kosaraju算法是一种只需进行2次DFS（深度优先搜索）即可构建SCC的优美且高效的方法。它的时间复杂度为线性的 $O(V + E)$。
+Kosaraju算法是一种只需进行2次[DFS](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)（深度优先搜索）即可构建SCC的优美且高效的方法。它的时间复杂度为线性的 $O(V + E)$。
 
 算法步骤：
 1. 在原图上进行DFS，以后序遍历（post-order）的顺序将顶点记录到数组中。
@@ -504,7 +504,7 @@ struct SCC {
 本文对竞技编程中高频出现的图算法进行了全面梳理。
 提高解决图问题能力的诀窍在于 **“反复实现直到形成肌肉记忆”** ，以及 **“训练思考这个问题能归结为什么样的图（顶点是什么，边是什么）”** 。
 
-1. 首先要做到能准确迅速地写出 DFS / BFS。
+1. 首先要做到能准确迅速地写出 [DFS](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) / [BFS](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)。
 2. 其次，要做到能默写出 [Dijkstra](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/) 算法和 Kruskal 算法（在 AtCoder 茶色到绿色段位是必须的）。
 3. 最后，增加 Bellman-Ford、Floyd-Warshall、拓扑排序、SCC 等知识储备（在 AtCoder 水色到蓝色段位将成为有力武器）。
 

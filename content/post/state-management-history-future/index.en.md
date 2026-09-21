@@ -417,7 +417,7 @@ In other words, it skips the overhead of Virtual DOM diff calculation and direct
 
 ### 10.3 The Mathematical Model of Signals
 
-Behind Signals is the theory of "Reactive Programming," which models the dependencies of state and computations as a **Directed Acyclic Graph (DAG)**, and efficiently determines the update order using the topological sort of the graph.
+Behind Signals is the theory of "Reactive Programming," which models the dependencies of state and computations as a **Directed Acyclic [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (DAG)**, and efficiently determines the update order using the topological sort of the graph.
 
 If a certain derived state (Computed) $ C $ depends on Signals $ S_1, S_2 $, edges $ S_1 \to C $ and $ S_2 \to C $ are formed.
 When a value is updated, by tracing the graph and evaluating only the necessary nodes (using strategies like Push/Pull hybrids), it prevents glitches (the phenomenon where an inconsistent intermediate UI is momentarily displayed) and guarantees topological consistency.

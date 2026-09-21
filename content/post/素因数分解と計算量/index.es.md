@@ -15,7 +15,7 @@ En la sociedad de Internet actual, la razón por la que podemos disfrutar de las
 
 A primera vista, la factorización de números primos puede parecer una tarea simple de "simplemente descomponer un número en una multiplicación de números primos", pero a medida que aumenta el número de dígitos, se transforma en un problema sumamente difícil que ni las supercomputadoras más rápidas del mundo podrían resolver incluso si estuvieran funcionando durante décadas o siglos. La factorización de números primos que solemos aprender en la escuela es, en el mejor de los casos, la simple tarea de dividir por $2$, $3$ o $5$, pero frente al producto de números primos desconocidos de cientos de dígitos, ese enfoque simple colapsa por completo.
 
-En este artículo, comenzando desde el concepto de "complejidad temporal (notación Big O: $\mathcal{O}$)", que es la base de las ciencias de la información y la computación, explicaremos matemática y detalladamente cuánto tiempo de cálculo requieren varios algoritmos para resolver la factorización de números primos (división por tentativa, algoritmo $\rho$ de Pollard, criba general del cuerpo de números, etc.). Luego, desentrañaremos por qué la factorización en números primos de números gigantescos es prácticamente imposible para las computadoras clásicas, cómo esto protege nuestra información y privacidad, e incluso cómo las computadoras cuánticas cambiarán esta premisa.
+En este artículo, comenzando desde el concepto de "complejidad temporal (notación [Big O](https://kenji.blog/es/p/time-space-complexity-big-o-notation-examples/): $\mathcal{O}$)", que es la base de las ciencias de la información y la computación, explicaremos matemática y detalladamente cuánto tiempo de cálculo requieren varios algoritmos para resolver la factorización de números primos (división por tentativa, algoritmo $\rho$ de Pollard, criba general del cuerpo de números, etc.). Luego, desentrañaremos por qué la factorización en números primos de números gigantescos es prácticamente imposible para las computadoras clásicas, cómo esto protege nuestra información y privacidad, e incluso cómo las computadoras cuánticas cambiarán esta premisa.
 
 ---
 
@@ -43,7 +43,7 @@ Existen varias clases representativas de complejidad temporal. Veámoslas en ord
    Es un algoritmo cuyo tiempo de ejecución no cambia por mucho que aumente el tamaño de entrada $N$. Ejemplos de esto incluyen obtener un valor especificando el índice de un arreglo o buscar en una tabla hash (en el caso ideal).
 
 2. **$\mathcal{O}(\log N)$ : Tiempo logarítmico (Logarithmic time)**
-   Es un algoritmo altamente eficiente donde, incluso si el tamaño de la entrada se duplica, el tiempo de ejecución solo aumenta en una constante. La "búsqueda binaria (Binary Search)", que busca un valor objetivo en un arreglo ordenado, es un ejemplo representativo. Incluso con 1,000 millones de datos, el objetivo se puede encontrar con solo unas 30 comparaciones.
+   Es un algoritmo altamente eficiente donde, incluso si el tamaño de la entrada se duplica, el tiempo de ejecución solo aumenta en una constante. La "búsqueda binaria ([Binary Search](https://kenji.blog/es/p/search-algorithms-linear-binary-hash-table-principles/))", que busca un valor objetivo en un arreglo ordenado, es un ejemplo representativo. Incluso con 1,000 millones de datos, el objetivo se puede encontrar con solo unas 30 comparaciones.
 
 3. **$\mathcal{O}(N)$ : Tiempo lineal (Linear time)**
    El tiempo de ejecución aumenta proporcionalmente al tamaño de la entrada. Si los datos se multiplican por 10, el tiempo también se multiplica por 10. La "búsqueda lineal", que verifica todos los elementos de un arreglo uno por uno, pertenece a esta categoría.
@@ -276,7 +276,7 @@ Para prepararse para esta amenaza, criptógrafos de todo el mundo y el NIST (Ins
 
 # Resumen
 
-En este artículo, comenzando desde los conceptos básicos de la complejidad temporal (notación Big O), hemos profundizado en la evolución de los algoritmos de factorización de números primos y sus límites matemáticos.
+En este artículo, comenzando desde los conceptos básicos de la complejidad temporal (notación [Big O](https://kenji.blog/es/p/time-space-complexity-big-o-notation-examples/)), hemos profundizado en la evolución de los algoritmos de factorización de números primos y sus límites matemáticos.
 
 * La **notación Big O ($\mathcal{O}$)** es un indicador importante que muestra la tasa de aumento en el número de pasos computacionales con respecto a un aumento en el tamaño de la entrada $n$, y existe un muro enorme, prácticamente insuperable en la práctica, entre el tiempo polinómico y el tiempo exponencial.
 * La **división por tentativa** y el **algoritmo $\rho$ de Pollard** son algoritmos puros de "tiempo exponencial" y son impotentes frente a números gigantescos.

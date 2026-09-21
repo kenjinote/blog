@@ -16,7 +16,7 @@ slug: "pedigree-collapse"
 
 當我們思考自己的根源，也就是「族譜」時，必然會面臨一個奇妙的數學矛盾。這就是 **[祖先悖論](https://kenji.blog/zh-tw/p/pedigree-collapse/)** （[Ancestor Paradox](https://kenji.blog/zh-tw/p/pedigree-collapse/)）。
 
-人類的系譜基本上可以建模為單純的二元樹（Binary Tree）。您有 2 位雙親（父親與母親），他們各自又有 2 位雙親（祖父母）。更進一步，他們的雙親也各自有 2 位雙親（曾祖父母）。也就是說，如果將世代設為 $g$ （自己是第 0 代），那麼 $g$ 代之前的祖先數量應該是 $2^g$ 人。
+人類的系譜基本上可以建模為單純的二元樹（Binary [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）。您有 2 位雙親（父親與母親），他們各自又有 2 位雙親（祖父母）。更進一步，他們的雙親也各自有 2 位雙親（曾祖父母）。也就是說，如果將世代設為 $g$ （自己是第 0 代），那麼 $g$ 代之前的祖先數量應該是 $2^g$ 人。
 
 將這個公式計算下去，會得出一個非常有趣且違反直覺、難以理解的結果。
 

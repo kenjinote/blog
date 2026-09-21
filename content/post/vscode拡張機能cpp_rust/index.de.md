@@ -58,7 +58,7 @@ Eine der wichtigsten Entscheidungen für C++-Entwickler ist die Wahl der Erweite
 Da `clangd` direkt die Frontend-Technologien des Clang-Compilers (Parser und semantischer Analysator) integriert, ist die Genauigkeit der Codeanalyse extrem hoch. Die im Editor angezeigten Fehler und Warnungen stimmen exakt mit denen des tatsächlichen Compilers überein.
 
 #### Warum clangd anstelle von ms-vscode.cpptools?
-- **Hochpräzise Analyse**: Da es direkt mit dem AST (Abstract Syntax Tree) von Clang arbeitet, evaluiert es komplexe Template-Instanziierungen mit intensiver Nutzung von SFINAE (Substitution Failure Is Not An Error) und verschachtelte Makro-Erweiterungen korrekt.
+- **Hochpräzise Analyse**: Da es direkt mit dem AST (Abstract Syntax [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) von Clang arbeitet, evaluiert es komplexe Template-Instanziierungen mit intensiver Nutzung von SFINAE (Substitution Failure Is Not An Error) und verschachtelte Makro-Erweiterungen korrekt.
 - **Beschleunigung durch Hintergrund-Indizierung**: Die Symbolinformationen des gesamten Projekts werden im Hintergrund vorab berechnet (indiziert), sodass Vorgänge wie "Gehe zu Definition" oder "Finde alle Verweise" selbst in riesigen Projekten sofort ausgeführt werden.
 
 #### Die perfekte Konfiguration von compile_commands.json

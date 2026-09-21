@@ -338,7 +338,7 @@ La plus grande leçon que le **problème P vs NP** (et la théorie de la NP-comp
 2. **S'en remettre à la relaxation et à l'approximation** :
     - **Algorithmes d'approximation** : Résoudre en temps polynomial tout en garantissant que l'erreur par rapport à la solution optimale reste dans une certaine limite.
     - **Heuristiques** : Adopter des méthodes telles que les algorithmes génétiques ou le recuit simulé qui n'ont aucune garantie mathématique mais produisent rapidement des "solutions raisonnablement bonnes" de manière empirique.
-    - **Programmation dynamique (DP)** : S'il existe une solution qui dépend de la taille de la valeur numérique de l'entrée (temps pseudo-polynomial), comme le problème du sac à dos, utilisez les contraintes de l'entrée.
+    - **Programmation dynamique ([DP](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))** : S'il existe une solution qui dépend de la taille de la valeur numérique de l'entrée (temps pseudo-polynomial), comme le problème du sac à dos, utilisez les contraintes de l'entrée.
     - **Solveurs SAT / Solveurs MILP** : Les formuler et les confier à des solveurs d'optimisation mathématique à usage général, dont le développement a été remarquable ces dernières années. Comme les solveurs effectuent un élagage avancé en interne, ils peuvent souvent trouver des solutions exactes pour des tailles pratiques.
 
 ```python

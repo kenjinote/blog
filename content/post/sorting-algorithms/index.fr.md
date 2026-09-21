@@ -521,7 +521,7 @@ Tout se résume à ça. `.sort()` en Python ou `std::sort` en C++ sont implémen
 
 Mais alors, pourquoi avons-nous besoin d'apprendre les algorithmes de tri ?
 
-1. **Compréhension des concepts fondamentaux** : Les concepts de complexité (Big O Notation), de traitement In-place/Out-of-place et de stabilité sont les bases de la conception de tout algorithme et structure de données, pas seulement du tri.
+1. **Compréhension des concepts fondamentaux** : Les concepts de complexité ([Big O](https://kenji.blog/fr/p/time-space-complexity-big-o-notation-examples/) Notation), de traitement In-place/Out-of-place et de stabilité sont les bases de la conception de tout algorithme et structure de données, pas seulement du tri.
 2. **Systèmes sous contraintes spécifiques** : Dans un environnement où la mémoire est extrêmement restreinte comme les systèmes embarqués, il peut être nécessaire d'implémenter par soi-même un tri par tas avec un espace de $O(1)$ ou un tri rapide In-place.
 3. **Exploiter la nature des données** : Lors du tri de « 1 million de données dont la plage de valeurs est limitée de 1 à 100 », implémenter un tri par dénombrement ($O(n)$) sera considérablement plus rapide que d'utiliser le Timsort standard ($O(n \log n)$).
 

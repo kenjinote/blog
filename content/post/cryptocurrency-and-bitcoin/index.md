@@ -76,7 +76,7 @@ flowchart TD
 
 ### マークルツリー（Merkle Trees）
 
-[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)サイズを抑えつつ、データの改ざんを効率的に検出するために **マークルツリー（Merkle Tree）** というデータ構造を利用します。マークルツリーは二分木の一種で、葉ノードに各[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)のハッシュ値が入り、親ノードは子ノードのハッシュ値を連結して再度ハッシュ化したものになります。
+[ブロックチェーン](https://kenji.blog/p/blockchain-technology-smart-contract-distributed-ledger/)では、ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)サイズを抑えつつ、データの改ざんを効率的に検出するために **マークルツリー（Merkle [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）** というデータ構造を利用します。マークルツリーは二分木の一種で、葉ノードに各[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)のハッシュ値が入り、親ノードは子ノードのハッシュ値を連結して再度ハッシュ化したものになります。
 
 ```mermaid
 flowchart TD

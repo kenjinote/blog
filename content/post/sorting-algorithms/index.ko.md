@@ -521,7 +521,7 @@ Introspective Sort(인트로소트)는 C++의 STL인 `std::sort` 나 .NET (C#)�
 
 하지만, 그렇다면 왜 정렬 알고리즘을 배워야 할까요?
 
-1. **기초 개념의 이해**: 시간 복잡도(Big O Notation), In-place/Out-of-place, 안정성과 같은 개념은 정렬뿐만 아니라 모든 알고리즘 설계 및 데이터 구조 설계의 기초가 됩니다.
+1. **기초 개념의 이해**: 시간 복잡도([Big O](https://kenji.blog/ko/p/time-space-complexity-big-o-notation-examples/) Notation), In-place/Out-of-place, 안정성과 같은 개념은 정렬뿐만 아니라 모든 알고리즘 설계 및 데이터 구조 설계의 기초가 됩니다.
 2. **특수한 제약이 있는 시스템**: 임베디드 시스템 등 메모리가 극도로 제한된 환경에서는 $O(1)$ 공간의 힙 정렬이나 In-place 한 퀵 정렬을 직접 구현해야 할 수도 있습니다.
 3. **데이터의 성질 활용**: '값의 범위가 1~100으로 제한된 100만 건의 데이터'를 정렬할 경우, 표준 Timsort($O(n \log n)$)를 사용하는 것보다 계수 정렬($O(n)$)을 구현하는 것이 압도적으로 빠릅니다.
 

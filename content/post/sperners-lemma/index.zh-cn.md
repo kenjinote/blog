@@ -77,7 +77,7 @@ graph TD
 
 # 5. 使用图论的优美证明
 
-这个定理在直观上可能显得不可思议，但通过使用“对偶图 (Dual Graph)”和“握手引理 (Handshaking Lemma)”，可以像变魔术一样优美地证明它。如果使用“房间与门”的比喻，这种方法将非常容易理解。
+这个定理在直观上可能显得不可思议，但通过使用“对偶图 (Dual [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))”和“握手引理 (Handshaking Lemma)”，可以像变魔术一样优美地证明它。如果使用“房间与门”的比喻，这种方法将非常容易理解。
 
 ## 5.1. 房间与门的定义
 

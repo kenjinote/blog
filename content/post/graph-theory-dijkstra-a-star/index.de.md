@@ -17,9 +17,9 @@ tags:
 
 ## 1. Einleitung
 
-In der modernen Informatik bietet die **Graphentheorie** (Graph Theory) einen mächtigen mathematischen Rahmen zur Modellierung von Netzwerkstrukturen. In unserem Alltag wird die Technologie zur Berechnung des „kürzesten Weges“ in verschiedenen Situationen eingesetzt, etwa bei der Autonavigation, der Umsteigeauskunft bei der Bahn, dem Internet-Routing und sogar bei der Pfadfindung in der Spiel-KI.
+In der modernen Informatik bietet die **Graphentheorie** ([Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory) einen mächtigen mathematischen Rahmen zur Modellierung von Netzwerkstrukturen. In unserem Alltag wird die Technologie zur Berechnung des „kürzesten Weges“ in verschiedenen Situationen eingesetzt, etwa bei der Autonavigation, der Umsteigeauskunft bei der Bahn, dem Internet-Routing und sogar bei der Pfadfindung in der Spiel-KI.
 
-In diesem Artikel erklären wir umfassend die mathematische Definition der Graphentheorie, die die Grundlage dieser Pfadfindung bildet, sowie die Mechanismen, mathematischen Beweise und praktischen Implementierungsmethoden in Python für den **Dijkstra-Algorithmus** (Dijkstra's Algorithm), einen repräsentativen Suchalgorithmus, und den weiterentwickelten **A*-Algorithmus** (A-Star Algorithm).
+In diesem Artikel erklären wir umfassend die mathematische Definition der Graphentheorie, die die Grundlage dieser Pfadfindung bildet, sowie die Mechanismen, mathematischen Beweise und praktischen Implementierungsmethoden in Python für den **[Dijkstra](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-Algorithmus** (Dijkstra's Algorithm), einen repräsentativen Suchalgorithmus, und den weiterentwickelten **A*-Algorithmus** (A-Star Algorithm).
 
 ## 2. Grundlagen der Graphentheorie
 
@@ -76,7 +76,7 @@ Das **Kürzeste-Wege-Problem** (Shortest Path Problem) ist das Problem, unter al
 
 ---
 
-## 3. Dijkstra-Algorithmus (Dijkstra's Algorithm)
+## 3. [Dijkstra](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-Algorithmus (Dijkstra's Algorithm)
 
 Der von Edsger W. Dijkstra erdachte **Dijkstra-Algorithmus** ist ein Algorithmus, um in Graphen mit nicht-negativen Gewichten den kürzesten Weg von einem einzelnen Startknoten zu allen anderen Knoten zu finden.
 
@@ -98,7 +98,7 @@ $$
 d[v] = d[u] + w(u, v)
 $$
 
-### 3.3 Implementierung des Dijkstra-Algorithmus in Python
+### 3.3 Implementierung des [Dijkstra](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-Algorithmus in Python
 
 Für eine effiziente Implementierung verwenden wir eine Prioritätswarteschlange (Priority Queue) als Datenstruktur, um den minimalen Wert abzurufen. In Python kann das Modul `heapq` verwendet werden.
 
@@ -149,7 +149,7 @@ Daher beträgt die Zeitkomplexität $ O((|V| + |E|) \log |V|) $. Wenn ein Fibona
 
 ## 4. A*-Algorithmus (A-Star Algorithm)
 
-Der Dijkstra-Algorithmus ist zuverlässig, aber da er die Suche in alle Richtungen ausdehnt, ohne die Richtung des Ziels zu berücksichtigen, kann es zu vielen unnötigen Suchvorgängen kommen. Dies wird durch den **A*-Algorithmus** gelöst.
+Der [Dijkstra](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-Algorithmus ist zuverlässig, aber da er die Suche in alle Richtungen ausdehnt, ohne die Richtung des Ziels zu berücksichtigen, kann es zu vielen unnötigen Suchvorgängen kommen. Dies wird durch den **A*-Algorithmus** gelöst.
 
 ### 4.1 Einführung der Heuristikfunktion
 
@@ -254,7 +254,7 @@ def reconstruct_path(came_from, current):
     return path
 ```
 
-### 4.5 Vergleich zwischen Dijkstra-Algorithmus und A*
+### 4.5 Vergleich zwischen [Dijkstra](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-Algorithmus und A*
 
 Das folgende Mermaid-Diagramm ist ein visueller Vergleich der Suchbereiche zwischen Dijkstra und A*. Während der Dijkstra-Algorithmus die Suche konzentrisch ausdehnt, erweitert A* die Suche in einer elliptischen Form, die in Richtung des Ziels gestreckt ist.
 
@@ -283,7 +283,7 @@ graph TD
 
 ## 5. Anwendungen der Pfadfindung und zukünftige Perspektiven
 
-Obwohl der Dijkstra-Algorithmus und der A*-Algorithmus grundlegende Methoden sind, bilden sie die Basis für viele angewandte Technologien.
+Obwohl der [Dijkstra](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-Algorithmus und der A*-Algorithmus grundlegende Methoden sind, bilden sie die Basis für viele angewandte Technologien.
 
 1. **Bidirektionale Suche** (Bidirectional Search):
    Eine Methode, die die Suche gleichzeitig von Start- und Zielpunkt aus durchführt und in der Mitte zusammentrifft, wodurch der Suchraum drastisch reduziert wird.

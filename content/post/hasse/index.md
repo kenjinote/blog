@@ -59,7 +59,7 @@ $$
 
 ## 7. [ハッセ](https://kenji.blog/p/hasse/)図：順序構造の視覚化と代数学
 
-[ハッセ](https://kenji.blog/p/hasse/)の名前は、抽象代数学や離散数学で頻繁に用いられる **[ハッセ](https://kenji.blog/p/hasse/)図** (Hasse Diagram) にも残されています。これは、半順序集合を視覚的に表現するためのグラフです。[ハッセ](https://kenji.blog/p/hasse/)自身がこの図の最初の考案者というわけではありませんが、彼が代数的な構造を理解するために効果的に用いたことから、その名が冠されるようになりました。
+[ハッセ](https://kenji.blog/p/hasse/)の名前は、抽象代数学や離散数学で頻繁に用いられる **[ハッセ](https://kenji.blog/p/hasse/)図** (Hasse Diagram) にも残されています。これは、半順序集合を視覚的に表現するための[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)です。[ハッセ](https://kenji.blog/p/hasse/)自身がこの図の最初の考案者というわけではありませんが、彼が代数的な構造を理解するために効果的に用いたことから、その名が冠されるようになりました。
 
 以下は、30の約数の集合に「整除関係 (Divisibility)」の順序を入れた[ハッセ](https://kenji.blog/p/hasse/)図の例です。
 

@@ -126,7 +126,7 @@ print(f"排序结果: {sorted_data}")
 
 在这个实现中，排序结果绝对不可能出错。但是，如果随机数抽取极端地糟糕，总是持续选择最大值或最小值作为基准值的话，计算时间会显著增加。
 
-### 具体例子2：哈希表（Hash Table）的构建
+### 具体例子2：哈希表（[Hash Table](https://kenji.blog/zh-cn/p/search-algorithms-linear-binary-hash-table-principles/)）的构建
 
 拉斯维加斯方法的另一个例子是完美哈希函数的构建。
 假设我们想要为一个给定的数据集制作一个绝对不会发生冲突（不同的数据产生相同的哈希值）的哈希函数。

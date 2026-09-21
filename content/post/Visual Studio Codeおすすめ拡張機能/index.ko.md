@@ -31,7 +31,7 @@ description: 'Visual Studio Code(VSCode)를 더욱 편리하게 해주는 추천
 | 가상·컨테이너 관리 | [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | Docker 컨테이너 관리를 지원한다 |
 | 코드 관리 | GitHub Pull Requests | GitHub | GitHub의 Pull Request를 VSCode 상에서 관리한다 |
 | 코드 관리 | GitHub Copilot | GitHub | AI에 의한 코드 자동 완성을 지원한다 |
-| 코드 관리 | Git Graph | mhutchie | Git의 브랜치나 커밋을 그래픽으로 표시한다 |
+| 코드 관리 | Git [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) | mhutchie | Git의 브랜치나 커밋을 그래픽으로 표시한다 |
 | 코드 관리 | Git History | Don Jayamanne | Git의 히스토리를 표시한다 |
 | 브라우저·웹 개발 | Debugger for Firefox | Firefox DevTools | Firefox의 디버거를 VSCode 상에서 이용한다 |
 | 브라우저·웹 개발 | Microsoft Edge Tool For VScode | Microsoft | Edge의 개발자 도구를 VSCode 상에서 이용한다 |

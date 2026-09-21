@@ -131,7 +131,7 @@ zk-STARKs는 타원 곡선 암호가 아닌, **해시 함수에만** 보안의 �
 
 계산의 검증은 AIR(Algebraic Intermediate Representation)라는 형식으로 변환된 후, 1차원 또는 다차원 다항식의 성질을 이용하여 수행됩니다. STARKs의 핵심은 **FRI(Fast Reed-Solomon Interactive Oracle Proof of Proximity)** 프로토콜에 있습니다.
 
-FRI 프로토콜은 "어떤 함수가 특정 차수의 다항식에 충분히 가까운가(Proximity)"를 검증하는 기술입니다. 증명자는 다항식의 값을 머클 트리(Merkle Tree)의 리프(leaf)로 커밋(다항식 커미트먼트)합니다.
+FRI 프로토콜은 "어떤 함수가 특정 차수의 다항식에 충분히 가까운가(Proximity)"를 검증하는 기술입니다. 증명자는 다항식의 값을 머클 트리(Merkle [Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))의 리프(leaf)로 커밋(다항식 커미트먼트)합니다.
 
 ```mermaid
 graph TD

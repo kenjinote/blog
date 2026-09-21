@@ -109,7 +109,7 @@ resource "aws_instance" "web" {
 
 В процедурных скриптах человек должен точно описывать порядок создания ресурсов. Например, порядок создания VPC, затем подсети, и размещения EC2 в этой подсети.
 
-В Terraform ядро Terraform Core автоматически строит **граф зависимостей (Dependency Graph)** на основе связей (например, ссылки на `aws_vpc.main.id` в настройках подсети), которые появляются в коде.
+В Terraform ядро Terraform Core автоматически строит **граф зависимостей (Dependency [Graph](https://kenji.blog/ru/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** на основе связей (например, ссылки на `aws_vpc.main.id` в настройках подсети), которые появляются в коде.
 
 ```mermaid
 graph TD

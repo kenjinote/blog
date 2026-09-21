@@ -15,7 +15,7 @@ Dalam masyarakat internet modern, alasan kita dapat menikmati belanja online den
 
 Sekilas, faktorisasi prima mungkin terlihat seperti tugas sederhana yaitu "sekadar memecah bilangan menjadi perkalian bilangan-bilangan prima", tetapi ketika jumlah digitnya menjadi sangat besar, ini berubah menjadi masalah super sulit yang bahkan tidak dapat dipecahkan oleh superkomputer tercepat di dunia meskipun dijalankan selama puluhan atau ratusan tahun. Faktorisasi prima yang biasa kita pelajari di sekolah paling-paling hanyalah proses sederhana dengan membagi menggunakan $2$, $3$, atau $5$, namun ketika dihadapkan pada perkalian antara bilangan-bilangan prima tak dikenal yang panjangnya mencapai ratusan digit, pendekatan sederhana tersebut akan hancur sepenuhnya.
 
-Dalam artikel ini, kita akan berangkat dari konsep "kompleksitas waktu (Notasi Big O: $\mathcal{O}$)" yang merupakan dasar dari ilmu informasi dan ilmu komputer, dan menjelaskan secara rinci dan matematis berapa banyak waktu komputasi yang dibutuhkan oleh berbagai algoritma untuk memecahkan faktorisasi prima (Pembagian Percobaan, Algoritma $\rho$ Pollard, Saringan Medan Angka Umum, dll.). Kemudian, kita akan mengupas tuntas mengapa secara praktis tidak mungkin untuk memfaktorkan bilangan raksasa pada komputer klasik, dan bagaimana hal itu melindungi informasi dan privasi kita, serta bagaimana komputer kuantum akan menjungkirbalikkan asumsi tersebut.
+Dalam artikel ini, kita akan berangkat dari konsep "kompleksitas waktu (Notasi [Big O](https://kenji.blog/id/p/time-space-complexity-big-o-notation-examples/): $\mathcal{O}$)" yang merupakan dasar dari ilmu informasi dan ilmu komputer, dan menjelaskan secara rinci dan matematis berapa banyak waktu komputasi yang dibutuhkan oleh berbagai algoritma untuk memecahkan faktorisasi prima (Pembagian Percobaan, Algoritma $\rho$ Pollard, Saringan Medan Angka Umum, dll.). Kemudian, kita akan mengupas tuntas mengapa secara praktis tidak mungkin untuk memfaktorkan bilangan raksasa pada komputer klasik, dan bagaimana hal itu melindungi informasi dan privasi kita, serta bagaimana komputer kuantum akan menjungkirbalikkan asumsi tersebut.
 
 ---
 
@@ -43,7 +43,7 @@ Ada beberapa kelas kompleksitas waktu yang umum. Mari kita lihat dari urutan wak
    Algoritma yang waktu eksekusinya tidak berubah sebesar apa pun ukuran input $N$. Contohnya termasuk mengambil nilai dari sebuah array dengan menentukan indeksnya, atau pencarian pada tabel hash (dalam kasus ideal).
 
 2. **$\mathcal{O}(\log N)$ : Waktu logaritmik (Logarithmic time)**
-   Algoritma yang sangat efisien di mana meskipun ukuran input berlipat ganda, waktu eksekusinya hanya meningkat dengan jumlah yang konstan. "Pencarian Biner (Binary Search)" untuk mencari nilai target dari sebuah array yang sudah diurutkan adalah contoh yang representatif. Meskipun jumlah datanya 1 miliar, Anda dapat menemukan data target hanya dengan sekitar 30 perbandingan.
+   Algoritma yang sangat efisien di mana meskipun ukuran input berlipat ganda, waktu eksekusinya hanya meningkat dengan jumlah yang konstan. "Pencarian Biner ([Binary Search](https://kenji.blog/id/p/search-algorithms-linear-binary-hash-table-principles/))" untuk mencari nilai target dari sebuah array yang sudah diurutkan adalah contoh yang representatif. Meskipun jumlah datanya 1 miliar, Anda dapat menemukan data target hanya dengan sekitar 30 perbandingan.
 
 3. **$\mathcal{O}(N)$ : Waktu linear (Linear time)**
    Waktu eksekusi meningkat sebanding dengan ukuran input. Jika data bertambah 10 kali lipat, waktunya juga menjadi 10 kali lipat. "Pencarian Linear" yang memeriksa semua elemen array secara berurutan adalah salah satu contohnya.
@@ -276,7 +276,7 @@ Untuk bersiap menghadapi ancaman ini, ahli kriptografi di seluruh dunia dan NIST
 
 # Kesimpulan
 
-Dalam artikel ini, kita telah membahas secara mendalam dan terperinci, mulai dari dasar-dasar kompleksitas waktu (Notasi Big O), evolusi algoritma faktorisasi prima, hingga batasan-batasan matematisnya.
+Dalam artikel ini, kita telah membahas secara mendalam dan terperinci, mulai dari dasar-dasar kompleksitas waktu (Notasi [Big O](https://kenji.blog/id/p/time-space-complexity-big-o-notation-examples/)), evolusi algoritma faktorisasi prima, hingga batasan-batasan matematisnya.
 
 * **Notasi Big O ($\mathcal{O}$)** adalah indikator penting yang menunjukkan laju peningkatan jumlah langkah komputasi terhadap peningkatan ukuran input $n$, dan terdapat pembatas (dinding) raksasa yang praktis tidak dapat dilampaui di antara waktu polinomial dan waktu eksponensial.
 * **Pembagian Percobaan** dan **Algoritma $\rho$ Pollard** murni merupakan algoritma "waktu eksponensial", dan sama sekali tak berdaya ketika menghadapi angka yang sangat besar.

@@ -48,7 +48,7 @@ graph TD
 ```
 
 1. **レキサー（Lexer / Tokenizer）**: 入力された生の文字列（文字の配列）を先頭から読み込み、「意味のある最小単位（トークン）」に分割します。
-2. **パーサー（Parser）**: レキサーから受け取ったトークンの列を読み込み、文法規則に従って木構造（[DOMツリー](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/)：Document Object Model）を構築します。
+2. **パーサー（Parser）**: レキサーから受け取ったトークンの列を読み込み、文法規則に従って[木構造](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)（[DOMツリー](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/)：Document Object Model）を構築します。
 
 今回の実装では、メモリ効率を高めるために、レキサーは文字列のコピーを行わず、元の入力文字列に対するポインタと長さ（`std::string_view`）を保持するように設計します。
 
@@ -413,7 +413,7 @@ private:
 
 ### 6.2. 数値パースの最適化 (`std::from_chars`)
 標準の `std::stod` や `sscanf` は、現在のロケール（Locale）設定に依存して動作するため、内部で排他制御用の[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)を取得したり、ローカライゼーションのオーバーヘッドが発生したりします。
-C++17で導入された `std::from_chars` は、ロケール非依存かつメモリコピーを伴わないため、数値のパースにおいて圧倒的なパフォーマンスを誇ります。時間計算量は桁数を $M$ としたとき $O(M)$ となります。
+C++17で導入された `std::from_chars` は、ロケール非依存かつメモリコピーを伴わないため、数値のパースにおいて圧倒的なパフォーマンスを誇ります。[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は桁数を $M$ としたとき $O(M)$ となります。
 
 ### 6.3. メモリアロケーションと `std::pmr` (Polymorphic Memory Resources)
 ASTの構築時、`std::vector` や `std::map` のノード生成によって大量の小さなアロケーション（フラグメンテーション）が発生します。
@@ -429,14 +429,14 @@ ASTの構築時、`std::vector` や `std::map` のノード生成によって大
 本パーサーのアルゴリズム的な複雑性を評価します。
 入力されるJSON文字列の全体の長さを $N$ バイトとします。
 
-**時間計算量 (Time Complexity):**
+**[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) (Time Complexity):**
 レキサーは各文字を定数回（通常は1回）だけ参照し、パーサーは各トークンに対して定数回の処理を行います。バックトラッキング（再読み込み）は一切発生しません。したがって、全体的な時間計算量は線形時間となります。
 
 $$
 T(N) = O(N)
 $$
 
-**空間計算量 (Space Complexity):**
+**[空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) (Space Complexity):**
 AST（[DOMツリー](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/)）を構築するために確保されるメモリは、JSON文字列の要素数に比例します。最悪のケース（例：巨大なネスト配列 `[[[[...]]]]`）を考慮しても、必要なメモリ量は入力サイズ $N$ を超えない定数倍に収まります。
 
 $$

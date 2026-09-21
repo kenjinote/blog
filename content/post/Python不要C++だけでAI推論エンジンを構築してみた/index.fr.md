@@ -42,7 +42,7 @@ graph TD
 ```
 
 1. **Gestion des Tenseurs (Tensor Management)** : Gère la structure de données des tableaux multidimensionnels et le pas (Stride) pour chaque dimension.
-2. **Graphe de Calcul (Computation Graph)** : Représente les opérations de chaque couche du réseau de neurones sous la forme d'un graphe orienté acyclique (DAG).
+2. **Graphe de Calcul (Computation [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** : Représente les opérations de chaque couche du réseau de neurones sous la forme d'un graphe orienté acyclique (DAG).
 3. **Memory Arena** : Un mécanisme de gestion de mémoire pré-allouée pour éviter le surcoût de l'allocation dynamique de mémoire (`malloc` ou `new`).
 4. **Backend** : Implémentations d'opérations (kernels) optimisées pour un matériel spécifique, tel que CPU ou GPU.
 

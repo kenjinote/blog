@@ -14,7 +14,7 @@ Hugo is one of the world's fastest static site generators (SSG) written in Go. I
 
 To improve search rankings, increase diffusion power on social media, and consequently dramatically increase blog traffic, meticulous SEO (Search Engine Optimization) measures are essential. The heart of SEO in Hugo is the integration of the **Frontmatter**, which is written at the beginning of each markdown article, and the **[Layout](https://kenji.blog/en/p/browser-rendering-mechanism-dom-paint/)s** (templates), which interpret it and expand metadata into the `<head>` tag of the HTML.
 
-In this article, we will thoroughly explain in an overwhelming volume of over 10,000 characters how to maximize Hugo's functions and implement advanced SEO measures, ranging from frontmatter settings to various meta tags, OGP (Open Graph Protocol), Twitter Cards, and outputting structured data using JSON-LD.
+In this article, we will thoroughly explain in an overwhelming volume of over 10,000 characters how to maximize Hugo's functions and implement advanced SEO measures, ranging from frontmatter settings to various meta tags, OGP (Open [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol), Twitter Cards, and outputting structured data using JSON-LD.
 
 ---
 
@@ -122,7 +122,7 @@ By using Hugo's `.Summary` as a fallback, even if `description` is not set, the 
 
 ## 4. OGP and Twitter Cards: Maximizing CTR on Social Media
 
-To display articles in an attractive card format when shared on SNS like Twitter (X) and Facebook, Open Graph Protocol (OGP) and Twitter Cards settings are indispensable. This is also dynamically generated from the frontmatter.
+To display articles in an attractive card format when shared on SNS like Twitter (X) and Facebook, Open [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP) and Twitter Cards settings are indispensable. This is also dynamically generated from the frontmatter.
 
 ### 4.1. Issues with Built-in Templates
 

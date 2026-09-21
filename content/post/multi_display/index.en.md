@@ -133,7 +133,7 @@ For this reason, to get the best experience on macOS, the "optimal solution" is 
 
 ---
 
-## 4. Connection Bandwidth and Daisy Chaining: Limits of Thunderbolt 4 and DP MST
+## 4. Connection Bandwidth and Daisy Chaining: Limits of Thunderbolt 4 and [DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) MST
 
 When connecting multiple high-resolution monitors, the data transmission capacity (bandwidth) of the cables becomes a bottleneck. Problems like "I bought a monitor, but the refresh rate is only 30Hz" are caused by insufficient bandwidth calculations.
 

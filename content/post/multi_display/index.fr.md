@@ -133,7 +133,7 @@ Pour cette raison, afin d'obtenir la meilleure expérience sur macOS, la "soluti
 
 ---
 
-## 4. Bande passante de connexion et chaînage (Daisy Chain) : Les limites de Thunderbolt 4 et DP MST
+## 4. Bande passante de connexion et chaînage (Daisy Chain) : Les limites de Thunderbolt 4 et [DP](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) MST
 
 Lors de la connexion de plusieurs moniteurs haute résolution, la capacité de transmission de données (bande passante) du câble devient le goulot d'étranglement. Les problèmes tels que "J'ai acheté un moniteur mais le taux de rafraîchissement ne dépasse pas 30 Hz" sont dus à un mauvais calcul de la bande passante.
 

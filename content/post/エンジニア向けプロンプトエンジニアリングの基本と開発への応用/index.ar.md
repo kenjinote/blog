@@ -165,7 +165,7 @@ graph TD
     F --> G["توليد الكود النهائي المُحسّن"]
 ```
 
-### 3.3 Tree of Thoughts (ToT)
+### 3.3 [Tree](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) of Thoughts (ToT)
 
 امتداد لمفهوم CoT هو **Tree of Thoughts (ToT)**. في حين أن CoT يتبع مسار استدلالي ذو اتجاه واحد (خطي)، فإن ToT يقوم بتوسيع مسارات استدلالية (فروع) متعددة بالتوازي مثل شجرة البحث، ويجعل النموذج يُقيّم كل مسار ذاتياً، ويتراجع (Backtrack) للوصول إلى الحل الأمثل.
 

@@ -521,7 +521,7 @@ A resposta foca exclusivamente nisso. O `.sort()` no Python e o `std::sort` no C
 
 Logo, restam os questionamentos, então por que estudar algoritmos de ordenação?
 
-1. **Fixação dos Conceitos**: Ideias como o Notação Big O, estabilidade (Stability), além de In-place/Out-place, formam o âmago e raciocínio de quase todas as arquiteturas de algoritmos e arranjos estruturais, sem se prender restritamente à ordenação.
+1. **Fixação dos Conceitos**: Ideias como o Notação [Big O](https://kenji.blog/pt/p/time-space-complexity-big-o-notation-examples/), estabilidade (Stability), além de In-place/Out-place, formam o âmago e raciocínio de quase todas as arquiteturas de algoritmos e arranjos estruturais, sem se prender restritamente à ordenação.
 2. **Entornos Restritos de Hardware**: Para ecossistemas estritamente limitados sob a capacidade da memória (microcontroladores embarcados), existirá talvez o dever de codificar sua própria elaboração baseada no Heap Sort In-place $O(1)$ ou similares.
 3. **Explorando a Condição do Domínio**: Se a premissa consistir em arranjar "um milhão de elementos enjaulados no intervalo numérico entre 1 a 100", então fabricar um simples Counting Sort ($O(n)$) pode esmagar espetacularmente até o admirável Timsort (preso ao limite $O(n \log n)$).
 

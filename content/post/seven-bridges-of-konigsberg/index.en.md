@@ -109,7 +109,7 @@ Expressing this theorem more rigorously using mathematical formulas, for a conne
   In graph $G$, there exist "exactly two" vertices with an odd degree.
   $|\{v \in V \mid d(v) \equiv 1 \pmod 2\}| = 2$
 
-## Application to the Königsberg Graph and Conclusion
+## Application to the Königsberg [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) and Conclusion
 
 Now, let's apply this beautiful and perfect theorem deduced by Euler through deductive reasoning to the actual graph of the [Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/).
 
@@ -141,7 +141,7 @@ Euler himself later discovered an astonishing universal law regarding the number
 
 ## Applications and Expansion of [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/) in Modern Society
 
-Graph theory and topology, which originated from the pure intellectual exploration of an 18th-century mathematician, certainly did not remain confined to the ivory tower. Today, they are blooming as highly practical and indispensable tools that fundamentally support our highly information-oriented society and technology.
+[Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) theory and topology, which originated from the pure intellectual exploration of an 18th-century mathematician, certainly did not remain confined to the ivory tower. Today, they are blooming as highly practical and indispensable tools that fundamentally support our highly information-oriented society and technology.
 
 ### 1. Computer Networks and the Internet
 The physical and logical structure of the Internet that we use every day is exactly a gigantic graph on a global scale. Individual routers, servers, and computers act as vertices, and the optical fibers and wireless communication links connecting them are represented as edges. Routing protocols (e.g., [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm) to deliver packets of data to their destinations as quickly and efficiently as possible while avoiding congestion are all designed as algorithms on graph theory.
@@ -153,7 +153,7 @@ Route searches on smartphone map apps and car navigation systems perform calcula
 Social network analysis, which holds an important position in modern social sciences and informatics, is also based on graph theory. Human relationships on SNS like X (formerly Twitter) and Facebook are modeled as a "social graph" with users as vertices and follow relationships as edges. By analyzing this graph, it becomes possible to discover community structures and build models of how information spreads.
 
 ### 4. Life Sciences: Biology, Chemistry, and Medicine
-Graph theory is also active across various scales in natural sciences. In chemistry, when modeling molecular structures, a graph with atoms as vertices and chemical bonds as edges is used. In biology, to capture the complex interactions between proteins within cells as a network, or to understand how numerous neurons connect and process information in brain science (connectome analysis), the powerful analytical methods of graph theory have become indispensable.
+[Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) theory is also active across various scales in natural sciences. In chemistry, when modeling molecular structures, a graph with atoms as vertices and chemical bonds as edges is used. In biology, to capture the complex interactions between proteins within cells as a network, or to understand how numerous neurons connect and process information in brain science (connectome analysis), the powerful analytical methods of graph theory have become indispensable.
 
 ## Conclusion
 

@@ -55,7 +55,7 @@ flowchart TD
 
 जापान के प्रोग्रामिंग शिक्षा पाठ्यक्रम में सबसे बड़ी कमजोरी, और संभवतः एक घातक दोष, "कोडिंग कौशल" और "गणित/असतत गणित (Discrete Mathematics)" के बीच एकीकरण की भारी कमी है। संयुक्त राज्य अमेरिका और भारत सहित शीर्ष-स्तरीय कंप्यूटर विज्ञान शिक्षा में, प्रोग्रामिंग भाषा के व्याकरण की तुलना में एल्गोरिदम दक्षता, गणितीय तर्क और गणितीय प्रमाणों पर अधिक जोर दिया जाता है। कोड गणितीय सूत्रों के अनुवाद से ज्यादा कुछ नहीं है।
 
-### समय जटिलता और अंतरिक्ष जटिलता (Big O Notation) का पूर्ण प्रभुत्व
+### समय जटिलता और अंतरिक्ष जटिलता ([Big O](https://kenji.blog/hi/p/time-space-complexity-big-o-notation-examples/) Notation) का पूर्ण प्रभुत्व
 
 सॉफ्टवेयर प्रदर्शन का मूल्यांकन और डिजाइन करते समय समय जटिलता (Time Complexity) और अंतरिक्ष जटिलता (Space Complexity) की अवधारणाएं अपरिहार्य हैं। लैंडौ का स्पर्शोन्मुख संकेतन (Big O Notation) यह दर्शाता है कि जब किसी एल्गोरिदम में इनपुट किए गए डेटा का आकार $N$ होता है, तो निष्पादन समय और स्मृति की खपत कैसे बढ़ती है।
 
@@ -134,7 +134,7 @@ int main() {
 - प्रक्षेपण (Projection, $\pi$): विशिष्ट विशेषताओं (कॉलम) का निष्कर्षण
 - जुड़ाव (Join, $\bowtie$): कई संबंधों का सशर्त प्रतिच्छेदन
 
-इसके अलावा, "[B-Tree](https://kenji.blog/hi/p/b-tree-database-index-theory/) (B-ट्री) इंडेक्स" की संरचना सीखना, जो एक पल में बड़ी मात्रा में रिकॉर्ड से लक्षित डेटा की खोज करता है, डेटा संरचनाओं के अनुप्रयोग के रूप में सबसे अच्छा अभ्यास है। B-Tree डिस्क I/O की संख्या को कम करते हुए $O(\log N)$ की खोज गति की गारंटी देता है। आप लेनदेन (transaction) की [ACID](https://kenji.blog/hi/p/rdbms-transaction-acid-isolation-level-lock/) विशेषताओं (Atomicity, [Consistency](https://kenji.blog/hi/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability) को जाने बिना एक मजबूत प्रणाली नहीं बना सकते।
+इसके अलावा, "[B-Tree](https://kenji.blog/hi/p/b-tree-database-index-theory/) (B-ट्री) इंडेक्स" की संरचना सीखना, जो एक पल में बड़ी मात्रा में रिकॉर्ड से लक्षित डेटा की खोज करता है, डेटा संरचनाओं के अनुप्रयोग के रूप में सबसे अच्छा अभ्यास है। B-[Tree](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) डिस्क I/O की संख्या को कम करते हुए $O(\log N)$ की खोज गति की गारंटी देता है। आप लेनदेन (transaction) की [ACID](https://kenji.blog/hi/p/rdbms-transaction-acid-isolation-level-lock/) विशेषताओं (Atomicity, [Consistency](https://kenji.blog/hi/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability) को जाने बिना एक मजबूत प्रणाली नहीं बना सकते।
 
 ## 6. सुरक्षा और क्रिप्टोग्राफी: बुनियादी ढांचा जिसे प्रधान गुणनखंडन (Prime Factorization) की कठिनाई का समर्थन प्राप्त है
 

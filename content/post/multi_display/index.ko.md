@@ -133,7 +133,7 @@ macOS는 역사적으로 110 PPI(비 Retina) 또는 220 PPI(Retina)를 타깃으
 
 ---
 
-## 4. 연결 대역폭과 데이지 체인: Thunderbolt 4와 DP MST의 한계
+## 4. 연결 대역폭과 데이지 체인: Thunderbolt 4와 [DP](https://kenji.blog/ko/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) MST의 한계
 
 여러 대의 고해상도 모니터를 연결할 경우, 케이블의 데이터 전송 용량(대역폭)이 병목 현상을 일으킵니다. "모니터를 샀는데 주사율이 30Hz밖에 나오지 않는다"와 같은 문제는 대역폭 계산 부족이 원인입니다.
 

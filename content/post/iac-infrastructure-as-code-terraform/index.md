@@ -108,7 +108,7 @@ Terraformの核心は、この **宣言的（Declarative）** なアプローチ
 
 手続き型のスクリプトでは、リソースを作成する順番を人間が正確に記述する必要があります。例えば、VPCを作成した後にサブネットを作成し、そのサブネット内にEC2を配置する、という手順です。
 
-Terraformでは、コード内に現れる参照関係（例えば `aws_vpc.main.id` をサブネットの設定で参照する）から、Terraform Coreが自動的に **依存関係グラフ (Dependency Graph)** を構築します。
+Terraformでは、コード内に現れる参照関係（例えば `aws_vpc.main.id` をサブネットの設定で参照する）から、Terraform Coreが自動的に **依存関係[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Dependency [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** を構築します。
 
 ```mermaid
 graph TD
@@ -118,7 +118,7 @@ graph TD
     VPC --> SG
 ```
 
-このグラフ理論に基づくアプローチにより、Terraformは以下のことを実現します。
+この[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)理論に基づくアプローチにより、Terraformは以下のことを実現します。
 - 依存関係のないリソースの **並列作成** （高速化）。
 - 正しい順序でのリソース作成・更新・削除。
 
@@ -179,7 +179,7 @@ Terraformは、コード（理想の状態）と現実のインフラをマッ�
 なぜわざわざStateファイルが必要なのでしょうか？毎回クラウドAPIを叩いて全リソースを取得すれば良いようにも思えます。
 その理由は以下の通りです。
 
-1. **メタデータと依存関係の保存** ：クラウドAPIが返さないような、Terraform固有のメタデータや、リソース作成時の依存関係グラフをキャッシュしておくため。
+1. **メタデータと依存関係の保存** ：クラウドAPIが返さないような、Terraform固有のメタデータや、リソース作成時の依存関係[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)をキャッシュしておくため。
 2. **パフォーマンス** ：大規模なインフラでは、全リソースの状態をAPI経由で都度取得するとタイムアウトやAPIレートリミットに引っかかるため。
 3. **リソースの追跡** ：コード上からリソースの定義を削除した場合、Terraformは「Stateファイルには存在するがコードにはないリソース」を特定し、削除アクションを実行します。Stateがなければ、コードから消えたリソースは単に「放置」されてしまいます。
 

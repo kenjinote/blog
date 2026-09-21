@@ -164,7 +164,7 @@ Dengan demikian, seiring dengan terobosan matematika dan evolusi komputer, algor
 
 ## 5. Prinsip Sarang Merpati pada Struktur Data: Tabel Hash
 
-Di luar teknologi kriptografi, Prinsip Sarang Merpati dan kolisi hash juga menjadi tema penting. Salah satu contoh utamanya adalah **"Tabel Hash (Hash Table / Dictionary)"** yang sering digunakan dalam pemrograman.
+Di luar teknologi kriptografi, Prinsip Sarang Merpati dan kolisi hash juga menjadi tema penting. Salah satu contoh utamanya adalah **"Tabel Hash ([Hash Table](https://kenji.blog/id/p/search-algorithms-linear-binary-hash-table-principles/) / Dictionary)"** yang sering digunakan dalam pemrograman.
 
 Dalam tabel hash, nilai hash dihitung dari sebuah key (kunci), dan nilai hash tersebut digunakan sebagai indeks array untuk menyimpan suatu nilai (value). "Kolisi" tak terhindarkan terjadi di mana kunci yang berbeda akan mengarah ke indeks yang sama, baik ketika kita mencoba menyimpan lebih banyak data (merpati) daripada ukuran array (sarang), ataupun karena ada kecenderungan tertentu dalam fungsi hash itu sendiri.
 

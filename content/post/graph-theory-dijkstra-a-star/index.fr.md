@@ -17,9 +17,9 @@ tags:
 
 ## 1. Introduction
 
-Dans l'informatique moderne, la **théorie des graphes** (Graph Theory) fournit un cadre mathématique puissant pour modéliser les structures de réseaux. Dans notre vie quotidienne, les technologies de calcul du « plus court chemin » sont utilisées dans de nombreuses situations, comme la navigation automobile, les applications de guidage pour les correspondances ferroviaires, le routage sur Internet, ou encore la recherche de chemin par les IA dans les jeux vidéo.
+Dans l'informatique moderne, la **théorie des graphes** ([Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory) fournit un cadre mathématique puissant pour modéliser les structures de réseaux. Dans notre vie quotidienne, les technologies de calcul du « plus court chemin » sont utilisées dans de nombreuses situations, comme la navigation automobile, les applications de guidage pour les correspondances ferroviaires, le routage sur Internet, ou encore la recherche de chemin par les IA dans les jeux vidéo.
 
-Dans cet article, nous expliquerons de manière exhaustive les bases de la théorie des graphes qui sous-tend la recherche de chemin, depuis sa définition mathématique, en passant par le célèbre **algorithme de Dijkstra** (Dijkstra's Algorithm) et son évolution, l'**algorithme A*** (A-Star Algorithm), jusqu'à leurs mécanismes, leurs preuves mathématiques et leurs méthodes d'implémentation pratiques en Python.
+Dans cet article, nous expliquerons de manière exhaustive les bases de la théorie des graphes qui sous-tend la recherche de chemin, depuis sa définition mathématique, en passant par le célèbre **algorithme de [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** (Dijkstra's Algorithm) et son évolution, l'**algorithme A*** (A-Star Algorithm), jusqu'à leurs mécanismes, leurs preuves mathématiques et leurs méthodes d'implémentation pratiques en Python.
 
 ## 2. Bases de la théorie des graphes
 
@@ -76,7 +76,7 @@ Le **problème du plus court chemin** (Shortest Path Problem) est le problème d
 
 ---
 
-## 3. Algorithme de Dijkstra (Dijkstra's Algorithm)
+## 3. Algorithme de [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Dijkstra's Algorithm)
 
 Inventé par Edsger W. Dijkstra, l'**algorithme de Dijkstra** permet de trouver le plus court chemin depuis un seul sommet source vers tous les autres sommets dans un graphe avec des poids non négatifs.
 
@@ -98,7 +98,7 @@ $$
 d[v] = d[u] + w(u, v)
 $$
 
-### 3.3 Implémentation de l'algorithme de Dijkstra en Python
+### 3.3 Implémentation de l'algorithme de [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) en Python
 
 Pour une implémentation efficace, nous utilisons une file de priorité (Priority Queue) comme structure de données pour obtenir la valeur minimale. En Python, le module `heapq` peut être utilisé.
 
@@ -149,7 +149,7 @@ Par conséquent, la complexité temporelle est de $ O((|V| + |E|) \log |V|) $. S
 
 ## 4. Algorithme A* (A-Star Algorithm)
 
-Bien que l'algorithme de Dijkstra soit fiable, il étend sa recherche dans toutes les directions sans tenir compte de la direction de la destination, ce qui peut entraîner de nombreuses recherches inutiles. L'**algorithme A*** résout ce problème.
+Bien que l'algorithme de [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) soit fiable, il étend sa recherche dans toutes les directions sans tenir compte de la direction de la destination, ce qui peut entraîner de nombreuses recherches inutiles. L'**algorithme A*** résout ce problème.
 
 ### 4.1 Introduction de la fonction heuristique
 
@@ -254,7 +254,7 @@ def reconstruct_path(came_from, current):
     return path
 ```
 
-### 4.5 Comparaison entre l'algorithme de Dijkstra et A*
+### 4.5 Comparaison entre l'algorithme de [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) et A*
 
 Le diagramme Mermaid ci-dessous est une comparaison visuelle de l'étendue de la recherche entre l'algorithme de Dijkstra et A*. Alors que l'algorithme de Dijkstra étend sa recherche de manière concentrique, A* procède sous la forme d'une ellipse étirée en direction de l'objectif.
 
@@ -283,7 +283,7 @@ graph TD
 
 ## 5. Applications de la recherche de chemin et perspectives d'avenir
 
-L'algorithme de Dijkstra et l'algorithme A* sont des méthodes fondamentales qui servent de base à de nombreuses technologies appliquées.
+L'algorithme de [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) et l'algorithme A* sont des méthodes fondamentales qui servent de base à de nombreuses technologies appliquées.
 
 1. **Recherche bidirectionnelle** (Bidirectional Search) :
    Une méthode qui permet de réduire considérablement l'espace de recherche en effectuant des recherches simultanées depuis le départ et l'arrivée, puis en se rejoignant au milieu.

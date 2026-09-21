@@ -35,7 +35,7 @@ $$ (x - y)(x + y) \equiv 0 \pmod N $$
 
 ## 2. 古典最強のアルゴリズム：「一般数体ふるい法」（GNFS）の深淵
 
-**「GNFS」** は、今日知られている古典コンピュータ向けの素因数分解アルゴリズムの中で最も高速なものです。その時間計算量は、準指数関数的（Sub-exponential）な時間を要します。
+**「GNFS」** は、今日知られている古典コンピュータ向けの素因数分解アルゴリズムの中で最も高速なものです。その[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は、準指数関数的（Sub-exponential）な時間を要します。
 
 ### GNFSの計算量
 
@@ -94,7 +94,7 @@ GNFSが準指数関数的な時間を必要とするのに対し、1994年にピ
 
 ### Shorのアルゴリズムの計算量
 
-量子ビット数を $O(\log N)$ としたとき、時間計算量は次のようになります。
+量子ビット数を $O(\log N)$ としたとき、[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は次のようになります。
 
 $$ O((\log N)^3) $$
 

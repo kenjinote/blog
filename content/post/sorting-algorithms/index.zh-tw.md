@@ -521,7 +521,7 @@ Introspective Sort (內省排序) 被採用於 C++ 的 STL `std::sort`，以及 
 
 但是，那麼為什麼我們還需要學習排序演算法呢？
 
-1.  **基礎概念的理解** ：時間複雜度（Big O Notation）、In-place/Out-of-place、穩定性等概念，是不侷限於排序的所有演算法設計與資料結構設計的基礎。
+1.  **基礎概念的理解** ：時間複雜度（[Big O](https://kenji.blog/zh-tw/p/time-space-complexity-big-o-notation-examples/) Notation）、In-place/Out-of-place、穩定性等概念，是不侷限於排序的所有演算法設計與資料結構設計的基礎。
 2.  **特殊限制下的系統** ：在嵌入式系統等記憶體受到極度限制的環境下，或許會需要自己實作 $O(1)$ 空間的堆積排序或 In-place 的快速排序。
 3.  **活用資料的性質** ：在對「值的範圍被限制在 1～100 的 100 萬筆資料」進行排序時，自己實作計數排序（$O(n)$）會比使用標準的 Timsort（$O(n \log n)$）壓倒性地還要快。
 

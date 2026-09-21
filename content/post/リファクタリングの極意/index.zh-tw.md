@@ -19,7 +19,7 @@ tags: ["C++", "Refactoring", "Modern C++", "Legacy Code"]
 
 ## 1. 複雜度與技術債的數學模型
 
-為了讓重構正當化，必須將目前程式碼庫所擁有的問題予以量化。作為測量程式碼結構複雜度的指標，最常見的就是「循環複雜度 (Cyclomatic Complexity)」。這個複雜度是基於控制流程圖 (Control Flow Graph) 的圖論，以下列公式定義：
+為了讓重構正當化，必須將目前程式碼庫所擁有的問題予以量化。作為測量程式碼結構複雜度的指標，最常見的就是「循環複雜度 (Cyclomatic Complexity)」。這個複雜度是基於控制流程圖 (Control Flow [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 的圖論，以下列公式定義：
 
 $$ M = E - N + 2P $$
 

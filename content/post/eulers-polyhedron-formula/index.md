@@ -46,7 +46,7 @@ $$V - E + F = 2$$
 
 ## [オイラー](https://kenji.blog/p/euler/)の多面体定理の直感的な証明
 
-なぜ常に **$2$** になるのでしょうか？フランスの数学者[オーギュスタン＝ルイ・コーシー](https://kenji.blog/p/cauchy/)（[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)）による直感的な証明（1811年）を見てみましょう。この証明は、立体を「平面上のグラフ」に変換するという画期的なアプローチをとります。
+なぜ常に **$2$** になるのでしょうか？フランスの数学者[オーギュスタン＝ルイ・コーシー](https://kenji.blog/p/cauchy/)（[Augustin-Louis Cauchy](https://kenji.blog/p/cauchy/)）による直感的な証明（1811年）を見てみましょう。この証明は、立体を「平面上の[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)」に変換するという画期的なアプローチをとります。
 
 ### ステップ1：立体を平面に押しつぶす
 

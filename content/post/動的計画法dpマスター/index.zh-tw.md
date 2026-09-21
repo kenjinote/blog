@@ -9,7 +9,7 @@ categories: ["programming", "algorithms"]
 tags: ["Algorithm", "DP", "C++", "Python"]
 ---
 
-從競技程式設計到實務上的演算法設計，在許多場合都會出現，並且成為許多程式設計師障礙的就是 **動態規劃（Dynamic Programming，簡稱 DP）** 。「無法推導出遞迴式」、「索引值出錯」、「根本無法判斷這是不是能用 DP 解決的問題」……相信許多人都有這樣的煩惱。
+從競技程式設計到實務上的演算法設計，在許多場合都會出現，並且成為許多程式設計師障礙的就是 **動態規劃（[Dynamic Programming](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)，簡稱 [DP](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)）** 。「無法推導出遞迴式」、「索引值出錯」、「根本無法判斷這是不是能用 DP 解決的問題」……相信許多人都有這樣的煩惱。
 
 本文將從動態規劃的本質出發，涵蓋具體的方法（由上而下與由下而上），並透過 3 個具代表性的問題（費氏數列、0/1 背包問題、最長共同子序列）進行實務解說，為您提供最全面的指南。我們將提供 C++ 與 Python 雙語的實作範例，並交錯使用數學公式與圖解，提供您「完全掌握」的學習路徑。這將是一篇篇幅很長的文章，但當您讀到最後時，您的演算法能力必定會有飛躍性的提升。
 
@@ -212,7 +212,7 @@ def fib_optimized(n):
 
 ### 4-2. 狀態定義與狀態轉移方程式
 
-解決 DP 最重要的一個步驟就是適當地定義「狀態（[State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)）」。
+解決 [DP](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) 最重要的一個步驟就是適當地定義「狀態（[State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)）」。
 在這個問題中，有兩個參數會改變：「考慮到第幾個物品」以及「背包剩餘的容量」。因此，我們這樣定義狀態：
 
 **狀態定義:**
@@ -319,7 +319,7 @@ print("Max Value:", knapsack_1d(W, weight, value))
 
 ## 5. 實戰篇 3：最長共同子序列（LCS: Longest Common Subsequence）
 
-作為處理字串的代表性 DP 問題，我們來探討 LCS。LCS 是一種廣泛應用於現實社會中的演算法，例如檔案差異檢測（diff 工具）與 DNA 序列相似度判定等。
+作為處理字串的代表性 [DP](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) 問題，我們來探討 LCS。LCS 是一種廣泛應用於現實社會中的演算法，例如檔案差異檢測（diff 工具）與 DNA 序列相似度判定等。
 
 ### 5-1. 問題設定
 
@@ -430,7 +430,7 @@ int main() {
 
 ## 6. 掌握動態規劃的思考過程
 
-到目前為止我們看過了各種問題，但在面臨未知的 DP 問題時，應該如何思考呢？請隨時留意以下步驟。
+到目前為止我們看過了各種問題，但在面臨未知的 [DP](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) 問題時，應該如何思考呢？請隨時留意以下步驟。
 
 1. **這個問題能用 DP 解嗎？（確認條件）**
    用遞迴來思考時，相同的狀態是否會重複出現（重疊子問題）。組合最佳的選擇是否能導出整體的最佳結果（最佳子結構）。
@@ -451,7 +451,7 @@ int main() {
 - 只要能正確建立數學式（狀態轉移方程式），實作就會變得非常單純。
 - 減少空間複雜度的技巧（陣列一維化與滾動陣列），在實務層面要求效能時不可或缺。
 
-初次接觸動態規劃可能會覺得難以理解。然而，只要在各種問題中反覆訓練尋找「狀態定義」與「轉移」，漸漸就能看見模式。雖然還有樹狀 DP、數位 DP、位元 DP、區間 DP 等更進階的應用，但全都是建立在這次學到的「重疊子問題」與「最佳化」的基礎之上。
+初次接觸動態規劃可能會覺得難以理解。然而，只要在各種問題中反覆訓練尋找「狀態定義」與「轉移」，漸漸就能看見模式。雖然還有樹狀 [DP](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)、數位 DP、位元 DP、區間 DP 等更進階的應用，但全都是建立在這次學到的「重疊子問題」與「最佳化」的基礎之上。
 
 不要著急，一邊用紙筆實際畫出 DP 表格（表格），一邊加深理解吧。當您能夠引出演算法真正的力量時，程式設計的世界將會變得更加廣闊。
 

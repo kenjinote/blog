@@ -110,7 +110,7 @@ schätzen wir die Werte auf der linken Seite höher ein.
 - PESTLE (Political/Politisch, Economic/Wirtschaftlich, Social/Sozial, Technological/Technologisch, Legal/Rechtlich, Environmental/Ökologisch)
 - VUCA (Volatilität, Unsicherheit, Komplexität, Ambiguität)
 - Monte-Carlo-Simulation
-- Entscheidungsbaum-Analyse (Decision Tree Analysis)
+- Entscheidungsbaum-Analyse (Decision [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Analysis)
 - Erwarteter Geldwert (Expected Monetary Value, EMV)
 - Net Promoter Score
 - Kosten-Nutzen-Analyse

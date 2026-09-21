@@ -1,0 +1,1789 @@
+---
+title: "Поиск в структурах деревьев и графов (DFS, BFS, алгоритм Дейкстры)"
+description: "Структуры деревьев и графов, выражающие сложные взаимосвязи данных. Подробное руководство от поиска в глубину (DFS) и поиска в ширину (BFS) до задачи кратчайшего пути (алгоритм Дейкстры)."
+slug: "tree-graph-data-structures-search-dfs-bfs-dijkstra"
+date: 2026-09-22T03:00:00+09:00
+image: "eyecatch.jpg"
+categories: ["computer-science"]
+tags: ["algorithms", "graph", "tree", "dfs", "bfs", "dijkstra"]
+---
+
+# О поиске в структурах деревьев и графов
+
+## Введение
+В этой статье подробно рассматриваются такие важные для компьютерных наук структуры данных, как **деревья** (Tree) и **графы** (Graph), от их базовых концепций до алгоритмов поиска.
+
+В области структур данных и алгоритмов это неизбежные темы. В частности, **поиск в глубину** (DFS), **поиск в ширину** (BFS) и **алгоритм Дейкстры** (Dijkstra's Algorithm) для решения задачи поиска кратчайшего пути часто встречаются как в соревнованиях по программированию, так и на практике.
+
+
+## 1. Основы структуры дерева (Tree)
+Структура дерева — это структура данных, подходящая для представления данных с иерархическими связями. Она используется в различных ситуациях, таких как файловые системы, организационные диаграммы и DOM-деревья HTML.
+
+Структура дерева состоит из следующих элементов:
+- **Узел** (Node): элемент, хранящий данные
+- **Ребро** (Edge): линия, соединяющая узлы
+- **Корневой узел** (Root Node): самый верхний узел в дереве. Узел без родителя.
+- **Листовой узел** (Leaf Node): узел, не имеющий дочерних элементов.
+
+```mermaid
+graph TD
+  "Root" --> "NodeA"
+  "Root" --> "NodeB"
+  "NodeA" --> "Leaf1"
+  "NodeA" --> "Leaf2"
+  "NodeB" --> "Leaf3"
+```
+
+Основой поиска в древовидных структурах являются поиск в глубину (DFS) и поиск в ширину (BFS).
+
+## 1. Основы структуры дерева (Tree)
+Структура дерева — это структура данных, подходящая для представления данных с иерархическими связями. Она используется в различных ситуациях, таких как файловые системы, организационные диаграммы и DOM-деревья HTML.
+
+Структура дерева состоит из следующих элементов:
+- **Узел** (Node): элемент, хранящий данные
+- **Ребро** (Edge): линия, соединяющая узлы
+- **Корневой узел** (Root Node): самый верхний узел в дереве. Узел без родителя.
+- **Листовой узел** (Leaf Node): узел, не имеющий дочерних элементов.
+
+```mermaid
+graph TD
+  "Root" --> "NodeA"
+  "Root" --> "NodeB"
+  "NodeA" --> "Leaf1"
+  "NodeA" --> "Leaf2"
+  "NodeB" --> "Leaf3"
+```
+
+Основой поиска в древовидных структурах являются поиск в глубину (DFS) и поиск в ширину (BFS).
+
+## 1. Основы структуры дерева (Tree)
+Структура дерева — это структура данных, подходящая для представления данных с иерархическими связями. Она используется в различных ситуациях, таких как файловые системы, организационные диаграммы и DOM-деревья HTML.
+
+Структура дерева состоит из следующих элементов:
+- **Узел** (Node): элемент, хранящий данные
+- **Ребро** (Edge): линия, соединяющая узлы
+- **Корневой узел** (Root Node): самый верхний узел в дереве. Узел без родителя.
+- **Листовой узел** (Leaf Node): узел, не имеющий дочерних элементов.
+
+```mermaid
+graph TD
+  "Root" --> "NodeA"
+  "Root" --> "NodeB"
+  "NodeA" --> "Leaf1"
+  "NodeA" --> "Leaf2"
+  "NodeB" --> "Leaf3"
+```
+
+Основой поиска в древовидных структурах являются поиск в глубину (DFS) и поиск в ширину (BFS).
+
+## 1. Основы структуры дерева (Tree)
+Структура дерева — это структура данных, подходящая для представления данных с иерархическими связями. Она используется в различных ситуациях, таких как файловые системы, организационные диаграммы и DOM-деревья HTML.
+
+Структура дерева состоит из следующих элементов:
+- **Узел** (Node): элемент, хранящий данные
+- **Ребро** (Edge): линия, соединяющая узлы
+- **Корневой узел** (Root Node): самый верхний узел в дереве. Узел без родителя.
+- **Листовой узел** (Leaf Node): узел, не имеющий дочерних элементов.
+
+```mermaid
+graph TD
+  "Root" --> "NodeA"
+  "Root" --> "NodeB"
+  "NodeA" --> "Leaf1"
+  "NodeA" --> "Leaf2"
+  "NodeB" --> "Leaf3"
+```
+
+Основой поиска в древовидных структурах являются поиск в глубину (DFS) и поиск в ширину (BFS).
+
+## 1. Основы структуры дерева (Tree)
+Структура дерева — это структура данных, подходящая для представления данных с иерархическими связями. Она используется в различных ситуациях, таких как файловые системы, организационные диаграммы и DOM-деревья HTML.
+
+Структура дерева состоит из следующих элементов:
+- **Узел** (Node): элемент, хранящий данные
+- **Ребро** (Edge): линия, соединяющая узлы
+- **Корневой узел** (Root Node): самый верхний узел в дереве. Узел без родителя.
+- **Листовой узел** (Leaf Node): узел, не имеющий дочерних элементов.
+
+```mermaid
+graph TD
+  "Root" --> "NodeA"
+  "Root" --> "NodeB"
+  "NodeA" --> "Leaf1"
+  "NodeA" --> "Leaf2"
+  "NodeB" --> "Leaf3"
+```
+
+Основой поиска в древовидных структурах являются поиск в глубину (DFS) и поиск в ширину (BFS).
+
+## 1. Основы структуры дерева (Tree)
+Структура дерева — это структура данных, подходящая для представления данных с иерархическими связями. Она используется в различных ситуациях, таких как файловые системы, организационные диаграммы и DOM-деревья HTML.
+
+Структура дерева состоит из следующих элементов:
+- **Узел** (Node): элемент, хранящий данные
+- **Ребро** (Edge): линия, соединяющая узлы
+- **Корневой узел** (Root Node): самый верхний узел в дереве. Узел без родителя.
+- **Листовой узел** (Leaf Node): узел, не имеющий дочерних элементов.
+
+```mermaid
+graph TD
+  "Root" --> "NodeA"
+  "Root" --> "NodeB"
+  "NodeA" --> "Leaf1"
+  "NodeA" --> "Leaf2"
+  "NodeB" --> "Leaf3"
+```
+
+Основой поиска в древовидных структурах являются поиск в глубину (DFS) и поиск в ширину (BFS).
+
+## 1. Основы структуры дерева (Tree)
+Структура дерева — это структура данных, подходящая для представления данных с иерархическими связями. Она используется в различных ситуациях, таких как файловые системы, организационные диаграммы и DOM-деревья HTML.
+
+Структура дерева состоит из следующих элементов:
+- **Узел** (Node): элемент, хранящий данные
+- **Ребро** (Edge): линия, соединяющая узлы
+- **Корневой узел** (Root Node): самый верхний узел в дереве. Узел без родителя.
+- **Листовой узел** (Leaf Node): узел, не имеющий дочерних элементов.
+
+```mermaid
+graph TD
+  "Root" --> "NodeA"
+  "Root" --> "NodeB"
+  "NodeA" --> "Leaf1"
+  "NodeA" --> "Leaf2"
+  "NodeB" --> "Leaf3"
+```
+
+Основой поиска в древовидных структурах являются поиск в глубину (DFS) и поиск в ширину (BFS).
+
+## 1. Основы структуры дерева (Tree)
+Структура дерева — это структура данных, подходящая для представления данных с иерархическими связями. Она используется в различных ситуациях, таких как файловые системы, организационные диаграммы и DOM-деревья HTML.
+
+Структура дерева состоит из следующих элементов:
+- **Узел** (Node): элемент, хранящий данные
+- **Ребро** (Edge): линия, соединяющая узлы
+- **Корневой узел** (Root Node): самый верхний узел в дереве. Узел без родителя.
+- **Листовой узел** (Leaf Node): узел, не имеющий дочерних элементов.
+
+```mermaid
+graph TD
+  "Root" --> "NodeA"
+  "Root" --> "NodeB"
+  "NodeA" --> "Leaf1"
+  "NodeA" --> "Leaf2"
+  "NodeB" --> "Leaf3"
+```
+
+Основой поиска в древовидных структурах являются поиск в глубину (DFS) и поиск в ширину (BFS).
+
+## 1. Основы структуры дерева (Tree)
+Структура дерева — это структура данных, подходящая для представления данных с иерархическими связями. Она используется в различных ситуациях, таких как файловые системы, организационные диаграммы и DOM-деревья HTML.
+
+Структура дерева состоит из следующих элементов:
+- **Узел** (Node): элемент, хранящий данные
+- **Ребро** (Edge): линия, соединяющая узлы
+- **Корневой узел** (Root Node): самый верхний узел в дереве. Узел без родителя.
+- **Листовой узел** (Leaf Node): узел, не имеющий дочерних элементов.
+
+```mermaid
+graph TD
+  "Root" --> "NodeA"
+  "Root" --> "NodeB"
+  "NodeA" --> "Leaf1"
+  "NodeA" --> "Leaf2"
+  "NodeB" --> "Leaf3"
+```
+
+Основой поиска в древовидных структурах являются поиск в глубину (DFS) и поиск в ширину (BFS).
+
+## 1. Основы структуры дерева (Tree)
+Структура дерева — это структура данных, подходящая для представления данных с иерархическими связями. Она используется в различных ситуациях, таких как файловые системы, организационные диаграммы и DOM-деревья HTML.
+
+Структура дерева состоит из следующих элементов:
+- **Узел** (Node): элемент, хранящий данные
+- **Ребро** (Edge): линия, соединяющая узлы
+- **Корневой узел** (Root Node): самый верхний узел в дереве. Узел без родителя.
+- **Листовой узел** (Leaf Node): узел, не имеющий дочерних элементов.
+
+```mermaid
+graph TD
+  "Root" --> "NodeA"
+  "Root" --> "NodeB"
+  "NodeA" --> "Leaf1"
+  "NodeA" --> "Leaf2"
+  "NodeB" --> "Leaf3"
+```
+
+Основой поиска в древовидных структурах являются поиск в глубину (DFS) и поиск в ширину (BFS).
+
+## 2. Поиск в глубину (DFS: Depth-First Search)
+Поиск в глубину — это алгоритм, который начинается с определенного узла, уходит как можно глубже, а при достижении тупика возвращается к предыдущему узлу и продолжает поиск. Его можно очень просто реализовать с помощью рекурсивных функций. Иногда также используется структура данных, называемая стеком (Stack).
+
+### Пример реализации DFS для дерева на Python
+
+```python
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.children = []
+
+def dfs_tree(node):
+    if node is None:
+        return
+    print(f"Visiting {node.value}")
+    for child in node.children:
+        dfs_tree(child)
+
+# Построение дерева
+root = TreeNode("Root")
+node_a = TreeNode("A")
+node_b = TreeNode("B")
+root.children.extend([node_a, node_b])
+node_a.children.extend([TreeNode("C"), TreeNode("D")])
+
+print("DFS Traversal:")
+dfs_tree(root)
+```
+
+## 2. Поиск в глубину (DFS: Depth-First Search)
+Поиск в глубину — это алгоритм, который начинается с определенного узла, уходит как можно глубже, а при достижении тупика возвращается к предыдущему узлу и продолжает поиск. Его можно очень просто реализовать с помощью рекурсивных функций. Иногда также используется структура данных, называемая стеком (Stack).
+
+### Пример реализации DFS для дерева на Python
+
+```python
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.children = []
+
+def dfs_tree(node):
+    if node is None:
+        return
+    print(f"Visiting {node.value}")
+    for child in node.children:
+        dfs_tree(child)
+
+# Построение дерева
+root = TreeNode("Root")
+node_a = TreeNode("A")
+node_b = TreeNode("B")
+root.children.extend([node_a, node_b])
+node_a.children.extend([TreeNode("C"), TreeNode("D")])
+
+print("DFS Traversal:")
+dfs_tree(root)
+```
+
+## 2. Поиск в глубину (DFS: Depth-First Search)
+Поиск в глубину — это алгоритм, который начинается с определенного узла, уходит как можно глубже, а при достижении тупика возвращается к предыдущему узлу и продолжает поиск. Его можно очень просто реализовать с помощью рекурсивных функций. Иногда также используется структура данных, называемая стеком (Stack).
+
+### Пример реализации DFS для дерева на Python
+
+```python
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.children = []
+
+def dfs_tree(node):
+    if node is None:
+        return
+    print(f"Visiting {node.value}")
+    for child in node.children:
+        dfs_tree(child)
+
+# Построение дерева
+root = TreeNode("Root")
+node_a = TreeNode("A")
+node_b = TreeNode("B")
+root.children.extend([node_a, node_b])
+node_a.children.extend([TreeNode("C"), TreeNode("D")])
+
+print("DFS Traversal:")
+dfs_tree(root)
+```
+
+## 2. Поиск в глубину (DFS: Depth-First Search)
+Поиск в глубину — это алгоритм, который начинается с определенного узла, уходит как можно глубже, а при достижении тупика возвращается к предыдущему узлу и продолжает поиск. Его можно очень просто реализовать с помощью рекурсивных функций. Иногда также используется структура данных, называемая стеком (Stack).
+
+### Пример реализации DFS для дерева на Python
+
+```python
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.children = []
+
+def dfs_tree(node):
+    if node is None:
+        return
+    print(f"Visiting {node.value}")
+    for child in node.children:
+        dfs_tree(child)
+
+# Построение дерева
+root = TreeNode("Root")
+node_a = TreeNode("A")
+node_b = TreeNode("B")
+root.children.extend([node_a, node_b])
+node_a.children.extend([TreeNode("C"), TreeNode("D")])
+
+print("DFS Traversal:")
+dfs_tree(root)
+```
+
+## 2. Поиск в глубину (DFS: Depth-First Search)
+Поиск в глубину — это алгоритм, который начинается с определенного узла, уходит как можно глубже, а при достижении тупика возвращается к предыдущему узлу и продолжает поиск. Его можно очень просто реализовать с помощью рекурсивных функций. Иногда также используется структура данных, называемая стеком (Stack).
+
+### Пример реализации DFS для дерева на Python
+
+```python
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.children = []
+
+def dfs_tree(node):
+    if node is None:
+        return
+    print(f"Visiting {node.value}")
+    for child in node.children:
+        dfs_tree(child)
+
+# Построение дерева
+root = TreeNode("Root")
+node_a = TreeNode("A")
+node_b = TreeNode("B")
+root.children.extend([node_a, node_b])
+node_a.children.extend([TreeNode("C"), TreeNode("D")])
+
+print("DFS Traversal:")
+dfs_tree(root)
+```
+
+## 2. Поиск в глубину (DFS: Depth-First Search)
+Поиск в глубину — это алгоритм, который начинается с определенного узла, уходит как можно глубже, а при достижении тупика возвращается к предыдущему узлу и продолжает поиск. Его можно очень просто реализовать с помощью рекурсивных функций. Иногда также используется структура данных, называемая стеком (Stack).
+
+### Пример реализации DFS для дерева на Python
+
+```python
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.children = []
+
+def dfs_tree(node):
+    if node is None:
+        return
+    print(f"Visiting {node.value}")
+    for child in node.children:
+        dfs_tree(child)
+
+# Построение дерева
+root = TreeNode("Root")
+node_a = TreeNode("A")
+node_b = TreeNode("B")
+root.children.extend([node_a, node_b])
+node_a.children.extend([TreeNode("C"), TreeNode("D")])
+
+print("DFS Traversal:")
+dfs_tree(root)
+```
+
+## 2. Поиск в глубину (DFS: Depth-First Search)
+Поиск в глубину — это алгоритм, который начинается с определенного узла, уходит как можно глубже, а при достижении тупика возвращается к предыдущему узлу и продолжает поиск. Его можно очень просто реализовать с помощью рекурсивных функций. Иногда также используется структура данных, называемая стеком (Stack).
+
+### Пример реализации DFS для дерева на Python
+
+```python
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.children = []
+
+def dfs_tree(node):
+    if node is None:
+        return
+    print(f"Visiting {node.value}")
+    for child in node.children:
+        dfs_tree(child)
+
+# Построение дерева
+root = TreeNode("Root")
+node_a = TreeNode("A")
+node_b = TreeNode("B")
+root.children.extend([node_a, node_b])
+node_a.children.extend([TreeNode("C"), TreeNode("D")])
+
+print("DFS Traversal:")
+dfs_tree(root)
+```
+
+## 2. Поиск в глубину (DFS: Depth-First Search)
+Поиск в глубину — это алгоритм, который начинается с определенного узла, уходит как можно глубже, а при достижении тупика возвращается к предыдущему узлу и продолжает поиск. Его можно очень просто реализовать с помощью рекурсивных функций. Иногда также используется структура данных, называемая стеком (Stack).
+
+### Пример реализации DFS для дерева на Python
+
+```python
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.children = []
+
+def dfs_tree(node):
+    if node is None:
+        return
+    print(f"Visiting {node.value}")
+    for child in node.children:
+        dfs_tree(child)
+
+# Построение дерева
+root = TreeNode("Root")
+node_a = TreeNode("A")
+node_b = TreeNode("B")
+root.children.extend([node_a, node_b])
+node_a.children.extend([TreeNode("C"), TreeNode("D")])
+
+print("DFS Traversal:")
+dfs_tree(root)
+```
+
+## 2. Поиск в глубину (DFS: Depth-First Search)
+Поиск в глубину — это алгоритм, который начинается с определенного узла, уходит как можно глубже, а при достижении тупика возвращается к предыдущему узлу и продолжает поиск. Его можно очень просто реализовать с помощью рекурсивных функций. Иногда также используется структура данных, называемая стеком (Stack).
+
+### Пример реализации DFS для дерева на Python
+
+```python
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.children = []
+
+def dfs_tree(node):
+    if node is None:
+        return
+    print(f"Visiting {node.value}")
+    for child in node.children:
+        dfs_tree(child)
+
+# Построение дерева
+root = TreeNode("Root")
+node_a = TreeNode("A")
+node_b = TreeNode("B")
+root.children.extend([node_a, node_b])
+node_a.children.extend([TreeNode("C"), TreeNode("D")])
+
+print("DFS Traversal:")
+dfs_tree(root)
+```
+
+## 2. Поиск в глубину (DFS: Depth-First Search)
+Поиск в глубину — это алгоритм, который начинается с определенного узла, уходит как можно глубже, а при достижении тупика возвращается к предыдущему узлу и продолжает поиск. Его можно очень просто реализовать с помощью рекурсивных функций. Иногда также используется структура данных, называемая стеком (Stack).
+
+### Пример реализации DFS для дерева на Python
+
+```python
+class TreeNode:
+    def __init__(self, value):
+        self.value = value
+        self.children = []
+
+def dfs_tree(node):
+    if node is None:
+        return
+    print(f"Visiting {node.value}")
+    for child in node.children:
+        dfs_tree(child)
+
+# Построение дерева
+root = TreeNode("Root")
+node_a = TreeNode("A")
+node_b = TreeNode("B")
+root.children.extend([node_a, node_b])
+node_a.children.extend([TreeNode("C"), TreeNode("D")])
+
+print("DFS Traversal:")
+dfs_tree(root)
+```
+
+## 3. Поиск в ширину (BFS: Breadth-First Search)
+Поиск в ширину — это алгоритм, который начинается с корневого узла, исследует все узлы на одной глубине, прежде чем переходить к узлам следующего уровня. Он использует структуру данных, называемую очередью (Queue). Часто применяется для поиска кратчайшего пути.
+
+### Пример реализации BFS для дерева на Python
+
+```python
+from collections import deque
+
+def bfs_tree(root):
+    if root is None:
+        return
+    queue = deque([root])
+    while queue:
+        current = queue.popleft()
+        print(f"Visiting {current.value}")
+        for child in current.children:
+            queue.append(child)
+
+print("BFS Traversal:")
+bfs_tree(root)
+```
+
+## 3. Поиск в ширину (BFS: Breadth-First Search)
+Поиск в ширину — это алгоритм, который начинается с корневого узла, исследует все узлы на одной глубине, прежде чем переходить к узлам следующего уровня. Он использует структуру данных, называемую очередью (Queue). Часто применяется для поиска кратчайшего пути.
+
+### Пример реализации BFS для дерева на Python
+
+```python
+from collections import deque
+
+def bfs_tree(root):
+    if root is None:
+        return
+    queue = deque([root])
+    while queue:
+        current = queue.popleft()
+        print(f"Visiting {current.value}")
+        for child in current.children:
+            queue.append(child)
+
+print("BFS Traversal:")
+bfs_tree(root)
+```
+
+## 3. Поиск в ширину (BFS: Breadth-First Search)
+Поиск в ширину — это алгоритм, который начинается с корневого узла, исследует все узлы на одной глубине, прежде чем переходить к узлам следующего уровня. Он использует структуру данных, называемую очередью (Queue). Часто применяется для поиска кратчайшего пути.
+
+### Пример реализации BFS для дерева на Python
+
+```python
+from collections import deque
+
+def bfs_tree(root):
+    if root is None:
+        return
+    queue = deque([root])
+    while queue:
+        current = queue.popleft()
+        print(f"Visiting {current.value}")
+        for child in current.children:
+            queue.append(child)
+
+print("BFS Traversal:")
+bfs_tree(root)
+```
+
+## 3. Поиск в ширину (BFS: Breadth-First Search)
+Поиск в ширину — это алгоритм, который начинается с корневого узла, исследует все узлы на одной глубине, прежде чем переходить к узлам следующего уровня. Он использует структуру данных, называемую очередью (Queue). Часто применяется для поиска кратчайшего пути.
+
+### Пример реализации BFS для дерева на Python
+
+```python
+from collections import deque
+
+def bfs_tree(root):
+    if root is None:
+        return
+    queue = deque([root])
+    while queue:
+        current = queue.popleft()
+        print(f"Visiting {current.value}")
+        for child in current.children:
+            queue.append(child)
+
+print("BFS Traversal:")
+bfs_tree(root)
+```
+
+## 3. Поиск в ширину (BFS: Breadth-First Search)
+Поиск в ширину — это алгоритм, который начинается с корневого узла, исследует все узлы на одной глубине, прежде чем переходить к узлам следующего уровня. Он использует структуру данных, называемую очередью (Queue). Часто применяется для поиска кратчайшего пути.
+
+### Пример реализации BFS для дерева на Python
+
+```python
+from collections import deque
+
+def bfs_tree(root):
+    if root is None:
+        return
+    queue = deque([root])
+    while queue:
+        current = queue.popleft()
+        print(f"Visiting {current.value}")
+        for child in current.children:
+            queue.append(child)
+
+print("BFS Traversal:")
+bfs_tree(root)
+```
+
+## 3. Поиск в ширину (BFS: Breadth-First Search)
+Поиск в ширину — это алгоритм, который начинается с корневого узла, исследует все узлы на одной глубине, прежде чем переходить к узлам следующего уровня. Он использует структуру данных, называемую очередью (Queue). Часто применяется для поиска кратчайшего пути.
+
+### Пример реализации BFS для дерева на Python
+
+```python
+from collections import deque
+
+def bfs_tree(root):
+    if root is None:
+        return
+    queue = deque([root])
+    while queue:
+        current = queue.popleft()
+        print(f"Visiting {current.value}")
+        for child in current.children:
+            queue.append(child)
+
+print("BFS Traversal:")
+bfs_tree(root)
+```
+
+## 3. Поиск в ширину (BFS: Breadth-First Search)
+Поиск в ширину — это алгоритм, который начинается с корневого узла, исследует все узлы на одной глубине, прежде чем переходить к узлам следующего уровня. Он использует структуру данных, называемую очередью (Queue). Часто применяется для поиска кратчайшего пути.
+
+### Пример реализации BFS для дерева на Python
+
+```python
+from collections import deque
+
+def bfs_tree(root):
+    if root is None:
+        return
+    queue = deque([root])
+    while queue:
+        current = queue.popleft()
+        print(f"Visiting {current.value}")
+        for child in current.children:
+            queue.append(child)
+
+print("BFS Traversal:")
+bfs_tree(root)
+```
+
+## 3. Поиск в ширину (BFS: Breadth-First Search)
+Поиск в ширину — это алгоритм, который начинается с корневого узла, исследует все узлы на одной глубине, прежде чем переходить к узлам следующего уровня. Он использует структуру данных, называемую очередью (Queue). Часто применяется для поиска кратчайшего пути.
+
+### Пример реализации BFS для дерева на Python
+
+```python
+from collections import deque
+
+def bfs_tree(root):
+    if root is None:
+        return
+    queue = deque([root])
+    while queue:
+        current = queue.popleft()
+        print(f"Visiting {current.value}")
+        for child in current.children:
+            queue.append(child)
+
+print("BFS Traversal:")
+bfs_tree(root)
+```
+
+## 3. Поиск в ширину (BFS: Breadth-First Search)
+Поиск в ширину — это алгоритм, который начинается с корневого узла, исследует все узлы на одной глубине, прежде чем переходить к узлам следующего уровня. Он использует структуру данных, называемую очередью (Queue). Часто применяется для поиска кратчайшего пути.
+
+### Пример реализации BFS для дерева на Python
+
+```python
+from collections import deque
+
+def bfs_tree(root):
+    if root is None:
+        return
+    queue = deque([root])
+    while queue:
+        current = queue.popleft()
+        print(f"Visiting {current.value}")
+        for child in current.children:
+            queue.append(child)
+
+print("BFS Traversal:")
+bfs_tree(root)
+```
+
+## 3. Поиск в ширину (BFS: Breadth-First Search)
+Поиск в ширину — это алгоритм, который начинается с корневого узла, исследует все узлы на одной глубине, прежде чем переходить к узлам следующего уровня. Он использует структуру данных, называемую очередью (Queue). Часто применяется для поиска кратчайшего пути.
+
+### Пример реализации BFS для дерева на Python
+
+```python
+from collections import deque
+
+def bfs_tree(root):
+    if root is None:
+        return
+    queue = deque([root])
+    while queue:
+        current = queue.popleft()
+        print(f"Visiting {current.value}")
+        for child in current.children:
+            queue.append(child)
+
+print("BFS Traversal:")
+bfs_tree(root)
+```
+
+## 4. Основы структуры графа (Graph)
+Структура графа состоит из набора узлов (вершин: Vertex) и ребер (Edge). Дерево также является разновидностью графа (неориентированный или ориентированный граф без циклов), но общие графы могут иметь циклы (Cycle) и узлы могут иметь несколько родителей.
+
+Существуют следующие типы графов:
+- **Неориентированный граф** (Undirected Graph): граф, в котором ребра не имеют направления
+- **Ориентированный граф** (Directed Graph): граф, в котором ребра имеют направление
+- **Взвешенный граф** (Weighted Graph): граф, в котором ребрам задан вес (стоимость)
+
+```mermaid
+graph LR
+  "A" -- "5" --> "B"
+  "A" -- "2" --> "C"
+  "B" -- "1" --> "D"
+  "C" -- "8" --> "D"
+  "C" -- "4" --> "E"
+  "D" -- "3" --> "E"
+```
+
+## 4. Основы структуры графа (Graph)
+Структура графа состоит из набора узлов (вершин: Vertex) и ребер (Edge). Дерево также является разновидностью графа (неориентированный или ориентированный граф без циклов), но общие графы могут иметь циклы (Cycle) и узлы могут иметь несколько родителей.
+
+Существуют следующие типы графов:
+- **Неориентированный граф** (Undirected Graph): граф, в котором ребра не имеют направления
+- **Ориентированный граф** (Directed Graph): граф, в котором ребра имеют направление
+- **Взвешенный граф** (Weighted Graph): граф, в котором ребрам задан вес (стоимость)
+
+```mermaid
+graph LR
+  "A" -- "5" --> "B"
+  "A" -- "2" --> "C"
+  "B" -- "1" --> "D"
+  "C" -- "8" --> "D"
+  "C" -- "4" --> "E"
+  "D" -- "3" --> "E"
+```
+
+## 4. Основы структуры графа (Graph)
+Структура графа состоит из набора узлов (вершин: Vertex) и ребер (Edge). Дерево также является разновидностью графа (неориентированный или ориентированный граф без циклов), но общие графы могут иметь циклы (Cycle) и узлы могут иметь несколько родителей.
+
+Существуют следующие типы графов:
+- **Неориентированный граф** (Undirected Graph): граф, в котором ребра не имеют направления
+- **Ориентированный граф** (Directed Graph): граф, в котором ребра имеют направление
+- **Взвешенный граф** (Weighted Graph): граф, в котором ребрам задан вес (стоимость)
+
+```mermaid
+graph LR
+  "A" -- "5" --> "B"
+  "A" -- "2" --> "C"
+  "B" -- "1" --> "D"
+  "C" -- "8" --> "D"
+  "C" -- "4" --> "E"
+  "D" -- "3" --> "E"
+```
+
+## 4. Основы структуры графа (Graph)
+Структура графа состоит из набора узлов (вершин: Vertex) и ребер (Edge). Дерево также является разновидностью графа (неориентированный или ориентированный граф без циклов), но общие графы могут иметь циклы (Cycle) и узлы могут иметь несколько родителей.
+
+Существуют следующие типы графов:
+- **Неориентированный граф** (Undirected Graph): граф, в котором ребра не имеют направления
+- **Ориентированный граф** (Directed Graph): граф, в котором ребра имеют направление
+- **Взвешенный граф** (Weighted Graph): граф, в котором ребрам задан вес (стоимость)
+
+```mermaid
+graph LR
+  "A" -- "5" --> "B"
+  "A" -- "2" --> "C"
+  "B" -- "1" --> "D"
+  "C" -- "8" --> "D"
+  "C" -- "4" --> "E"
+  "D" -- "3" --> "E"
+```
+
+## 4. Основы структуры графа (Graph)
+Структура графа состоит из набора узлов (вершин: Vertex) и ребер (Edge). Дерево также является разновидностью графа (неориентированный или ориентированный граф без циклов), но общие графы могут иметь циклы (Cycle) и узлы могут иметь несколько родителей.
+
+Существуют следующие типы графов:
+- **Неориентированный граф** (Undirected Graph): граф, в котором ребра не имеют направления
+- **Ориентированный граф** (Directed Graph): граф, в котором ребра имеют направление
+- **Взвешенный граф** (Weighted Graph): граф, в котором ребрам задан вес (стоимость)
+
+```mermaid
+graph LR
+  "A" -- "5" --> "B"
+  "A" -- "2" --> "C"
+  "B" -- "1" --> "D"
+  "C" -- "8" --> "D"
+  "C" -- "4" --> "E"
+  "D" -- "3" --> "E"
+```
+
+## 4. Основы структуры графа (Graph)
+Структура графа состоит из набора узлов (вершин: Vertex) и ребер (Edge). Дерево также является разновидностью графа (неориентированный или ориентированный граф без циклов), но общие графы могут иметь циклы (Cycle) и узлы могут иметь несколько родителей.
+
+Существуют следующие типы графов:
+- **Неориентированный граф** (Undirected Graph): граф, в котором ребра не имеют направления
+- **Ориентированный граф** (Directed Graph): граф, в котором ребра имеют направление
+- **Взвешенный граф** (Weighted Graph): граф, в котором ребрам задан вес (стоимость)
+
+```mermaid
+graph LR
+  "A" -- "5" --> "B"
+  "A" -- "2" --> "C"
+  "B" -- "1" --> "D"
+  "C" -- "8" --> "D"
+  "C" -- "4" --> "E"
+  "D" -- "3" --> "E"
+```
+
+## 4. Основы структуры графа (Graph)
+Структура графа состоит из набора узлов (вершин: Vertex) и ребер (Edge). Дерево также является разновидностью графа (неориентированный или ориентированный граф без циклов), но общие графы могут иметь циклы (Cycle) и узлы могут иметь несколько родителей.
+
+Существуют следующие типы графов:
+- **Неориентированный граф** (Undirected Graph): граф, в котором ребра не имеют направления
+- **Ориентированный граф** (Directed Graph): граф, в котором ребра имеют направление
+- **Взвешенный граф** (Weighted Graph): граф, в котором ребрам задан вес (стоимость)
+
+```mermaid
+graph LR
+  "A" -- "5" --> "B"
+  "A" -- "2" --> "C"
+  "B" -- "1" --> "D"
+  "C" -- "8" --> "D"
+  "C" -- "4" --> "E"
+  "D" -- "3" --> "E"
+```
+
+## 4. Основы структуры графа (Graph)
+Структура графа состоит из набора узлов (вершин: Vertex) и ребер (Edge). Дерево также является разновидностью графа (неориентированный или ориентированный граф без циклов), но общие графы могут иметь циклы (Cycle) и узлы могут иметь несколько родителей.
+
+Существуют следующие типы графов:
+- **Неориентированный граф** (Undirected Graph): граф, в котором ребра не имеют направления
+- **Ориентированный граф** (Directed Graph): граф, в котором ребра имеют направление
+- **Взвешенный граф** (Weighted Graph): граф, в котором ребрам задан вес (стоимость)
+
+```mermaid
+graph LR
+  "A" -- "5" --> "B"
+  "A" -- "2" --> "C"
+  "B" -- "1" --> "D"
+  "C" -- "8" --> "D"
+  "C" -- "4" --> "E"
+  "D" -- "3" --> "E"
+```
+
+## 4. Основы структуры графа (Graph)
+Структура графа состоит из набора узлов (вершин: Vertex) и ребер (Edge). Дерево также является разновидностью графа (неориентированный или ориентированный граф без циклов), но общие графы могут иметь циклы (Cycle) и узлы могут иметь несколько родителей.
+
+Существуют следующие типы графов:
+- **Неориентированный граф** (Undirected Graph): граф, в котором ребра не имеют направления
+- **Ориентированный граф** (Directed Graph): граф, в котором ребра имеют направление
+- **Взвешенный граф** (Weighted Graph): граф, в котором ребрам задан вес (стоимость)
+
+```mermaid
+graph LR
+  "A" -- "5" --> "B"
+  "A" -- "2" --> "C"
+  "B" -- "1" --> "D"
+  "C" -- "8" --> "D"
+  "C" -- "4" --> "E"
+  "D" -- "3" --> "E"
+```
+
+## 4. Основы структуры графа (Graph)
+Структура графа состоит из набора узлов (вершин: Vertex) и ребер (Edge). Дерево также является разновидностью графа (неориентированный или ориентированный граф без циклов), но общие графы могут иметь циклы (Cycle) и узлы могут иметь несколько родителей.
+
+Существуют следующие типы графов:
+- **Неориентированный граф** (Undirected Graph): граф, в котором ребра не имеют направления
+- **Ориентированный граф** (Directed Graph): граф, в котором ребра имеют направление
+- **Взвешенный граф** (Weighted Graph): граф, в котором ребрам задан вес (стоимость)
+
+```mermaid
+graph LR
+  "A" -- "5" --> "B"
+  "A" -- "2" --> "C"
+  "B" -- "1" --> "D"
+  "C" -- "8" --> "D"
+  "C" -- "4" --> "E"
+  "D" -- "3" --> "E"
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+## 5. Алгоритм Дейкстры (Dijkstra's Algorithm)
+Алгоритм Дейкстры — это алгоритм поиска кратчайшего пути от заданной начальной вершины до всех остальных вершин во взвешенном графе. При этом веса ребер должны быть неотрицательными (0 и более).
+
+Используя очередь с приоритетом (Priority Queue), можно эффективно выполнять поиск. В математическом выражении, если $ d(v) $ — это кратчайшее расстояние от начальной точки до вершины $ v $, то для ребра $ (u, v) $ с весом $ w(u, v) $ оно обновляется как $ d(v) = \min(d(v), d(u) + w(u, v)) $. Как математическая формула, это удовлетворяет свойству  d(v) \le d(u) + w(u, v) . Здесь выбирается путь с минимальной $ \text{стоимость} $.
+
+### Пример реализации алгоритма Дейкстры на Python
+
+```python
+import heapq
+
+def dijkstra(graph, start):
+    # Инициализация кратчайшего расстояния бесконечностью
+    distances = {node: float('inf') for node in graph}
+    distances[start] = 0
+    priority_queue = [(0, start)]
+
+    while priority_queue:
+        current_distance, current_node = heapq.heappop(priority_queue)
+
+        if current_distance > distances[current_node]:
+            continue
+
+        for neighbor, weight in graph[current_node].items():
+            distance = current_distance + weight
+            if distance < distances[neighbor]:
+                distances[neighbor] = distance
+                heapq.heappush(priority_queue, (distance, neighbor))
+
+    return distances
+
+# Определение графа (формат списка смежности)
+graph = {
+    'A': {'B': 5, 'C': 2},
+    'B': {'D': 1},
+    'C': {'D': 8, 'E': 4},
+    'D': {'E': 3},
+    'E': {}
+}
+
+start_node = 'A'
+shortest_paths = dijkstra(graph, start_node)
+print(f"Shortest paths from {start_node}: {shortest_paths}")
+```
+
+Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.Дополнительные пояснения и примечания к алгоритму приведены ниже. Они крайне важны.

@@ -175,7 +175,7 @@ L'utilisation de **LLRT (Low Latency Runtime)**, un environnement d'exécution J
 ### 5.2. Allègement du package de déploiement
 
 Lambda télécharge le code depuis S3 au démarrage. Par conséquent, maintenir une petite taille de package est une optimisation directe.
-Il est extrêmement important de ne pas inclure de dépendances inutiles (comme les DevDependencies) et d'utiliser des bundlers comme Webpack / esbuild pour minimiser (Minify) et éliminer le code mort (Tree-shaking).
+Il est extrêmement important de ne pas inclure de dépendances inutiles (comme les DevDependencies) et d'utiliser des bundlers comme Webpack / esbuild pour minimiser (Minify) et éliminer le code mort ([Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-shaking).
 
 ### 5.3. Optimisation de l'initialisation et évaluation paresseuse (Lazy Initialization)
 

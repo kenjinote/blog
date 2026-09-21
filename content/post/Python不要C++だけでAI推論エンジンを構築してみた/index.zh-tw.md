@@ -42,7 +42,7 @@ graph TD
 ```
 
 1. **張量（Tensor）管理** ：管理多維陣列的資料結構以及各維度的步幅（Stride）。
-2. **計算圖（Computation Graph）** ：將神經網路各層的運算，表示為有向無環圖（DAG）。
+2. **計算圖（Computation [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）** ：將神經網路各層的運算，表示為有向無環圖（DAG）。
 3. **記憶體池（Memory Arena）** ：為了避免動態記憶體分配（`malloc`或`new`）的開銷，採用預先分配型的記憶體管理機制。
 4. **後端（Backend）** ：針對CPU或GPU等特定硬體最佳化的運算實作（Kernel）。
 

@@ -76,7 +76,7 @@ Der Block-Header enthält die folgenden Informationen:
 
 ### Merkle-Bäume (Merkle Trees)
 
-In der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) wird eine Datenstruktur namens **Merkle-Baum (Merkle Tree)** verwendet, um die Blockgröße klein zu halten und Datenmanipulationen effizient zu erkennen. Ein Merkle-Baum ist eine Art Binärbaum, bei dem die Blattknoten die Hash-Werte jeder Transaktion enthalten, und die Elternknoten entstehen, indem die Hash-Werte ihrer Kindknoten verkettet und erneut gehasht werden.
+In der [Blockchain](https://kenji.blog/de/p/blockchain-technology-smart-contract-distributed-ledger/) wird eine Datenstruktur namens **Merkle-Baum (Merkle [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** verwendet, um die Blockgröße klein zu halten und Datenmanipulationen effizient zu erkennen. Ein Merkle-Baum ist eine Art Binärbaum, bei dem die Blattknoten die Hash-Werte jeder Transaktion enthalten, und die Elternknoten entstehen, indem die Hash-Werte ihrer Kindknoten verkettet und erneut gehasht werden.
 
 ```mermaid
 flowchart TD

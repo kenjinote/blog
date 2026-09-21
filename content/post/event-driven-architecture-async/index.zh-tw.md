@@ -283,7 +283,7 @@ $ Balance = \sum_{i=1}^{n} (Deposit_i) - \sum_{j=1}^{m} (Withdrawal_j) $
    - 需要處理大量同時連線的 WebSocket 伺服器。
 2. **Actor 模型 ([Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/) / Akka)**: 
    - 帶有複雜狀態的並行處理（遊戲伺服器、即時追蹤）。
-   - 需要具備錯誤自我修復能力（Supervisor Tree）的高可用性系統。
+   - 需要具備錯誤自我修復能力（Supervisor [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）的高可用性系統。
 3. **CQRS / Event Sourcing**: 
    - 金融系統、電子商務的訂單管理等，必須具備稽核日誌與高擴展性的領域。
    - 讀寫負載不對稱的系統。

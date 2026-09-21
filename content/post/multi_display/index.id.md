@@ -133,7 +133,7 @@ Karena itu, untuk mendapatkan pengalaman terbaik di macOS, memilih monitor 5K pa
 
 ---
 
-## 4. Bandwidth Koneksi dan Daisy Chain: Keterbatasan Thunderbolt 4 dan DP MST
+## 4. Bandwidth Koneksi dan Daisy Chain: Keterbatasan Thunderbolt 4 dan [DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) MST
 
 Saat menghubungkan beberapa monitor beresolusi tinggi, kapasitas transmisi data (bandwidth) kabel dapat menjadi hambatan (bottleneck). Masalah seperti "sudah beli monitor tapi refresh rate mentok di 30Hz" seringkali diakibatkan oleh kurangnya perhitungan terhadap bandwidth.
 

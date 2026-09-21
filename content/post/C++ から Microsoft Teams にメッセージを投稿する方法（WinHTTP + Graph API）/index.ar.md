@@ -9,7 +9,7 @@ categories: ["tools-development-environment"]
 description: 'يجب على من يرغب في تنفيذ النشر التلقائي للرسائل من C++ إلى Microsoft Teams قراءة هذا! نشرح خطوة بخطوة وبطريقة سهلة الفهم أمثلة عملية لأكواد C++ باستخدام WinHTTP و Graph API، بالإضافة إلى خطوات تسجيل تطبيقات Azure ومصادقة واجهة برمجة التطبيقات (API) الضرورية.'
 ---
 
-# كيفية نشر رسائل إلى Microsoft Teams من C++ (WinHTTP + Graph API)
+# كيفية نشر رسائل إلى Microsoft Teams من C++ (WinHTTP + [Graph](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API)
 
 هل ترغب في النشر التلقائي في دردشة Microsoft Teams؟
 يمكنك استخدام ** Microsoft Graph API ** لذلك.
@@ -29,7 +29,7 @@ description: 'يجب على من يرغب في تنفيذ النشر التلق�
 ### 2. إضافة أذونات API
 
 1. انتقل إلى "أذونات API" في القائمة اليسرى
-2. في ** "Microsoft Graph" ** > ** "تحديد الأذونات" ** ، ابحث عن النطاقات التالية وانقر على ** "تحديث الأذونات" **
+2. في ** "Microsoft [Graph](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)" ** > ** "تحديد الأذونات" ** ، ابحث عن النطاقات التالية وانقر على ** "تحديث الأذونات" **
 
 - Chat.ReadWrite
 - User.Read
@@ -77,7 +77,7 @@ curl -X POST ^
 }
 ```
 
-استخدم `access_token` هذا لاستدعاء Microsoft Graph API.
+استخدم `access_token` هذا لاستدعاء Microsoft [Graph](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API.
 
 ## 💬 نموذج C++ للنشر في دردشة Teams
 فيما يلي مثال بلغة C++ للنشر في دردشة باستخدام WinHTTP.
@@ -170,7 +170,7 @@ curl -X GET ^
   - التحقق من شهادة HTTPS
   - تعزيز معالجة الأخطاء
 - للنشر في القنوات، استخدم `teams/{team-id}/channels/{channel-id}/messages`.
-- لإرسال المرفقات، ستحتاج إلى معالجة متعددة الأجزاء أو Graph Drive API.
+- لإرسال المرفقات، ستحتاج إلى معالجة متعددة الأجزاء أو [Graph](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Drive API.
 
 ## 📎 الخلاصة
 
@@ -179,7 +179,7 @@ curl -X GET ^
 | Graph API | واجهة برمجة التطبيقات الرسمية للتفاعل مع Teams |
 | تسجيل التطبيق | إجراءات المصادقة المطلوبة على Azure |
 | رمز الوصول | تم الحصول عليه عبر [OAuth](https://kenji.blog/ar/p/oauth2-oidc-authentication-authorization-difference/)2 واستخدامه في الطلبات |
-| تنفيذ C++ | استدعاء Graph API باستخدام WinHTTP |
+| تنفيذ C++ | استدعاء [Graph](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API باستخدام WinHTTP |
 
 ## 🚀 الخطوات التالية
 

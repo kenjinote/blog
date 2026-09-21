@@ -126,7 +126,7 @@ print(f"Sorted result: {sorted_data}")
 
 In this implementation, the sorted result is absolutely never wrong. However, if the random number draws are extremely poor, and the maximum or minimum value is consistently chosen as the pivot, the computation time will increase significantly.
 
-### Concrete Example 2: Construction of a Hash Table
+### Concrete Example 2: Construction of a [Hash Table](https://kenji.blog/en/p/search-algorithms-linear-binary-hash-table-principles/)
 
 Another example of a Las Vegas algorithm is the construction of a perfect hash function.
 Suppose you want to create a hash function for a given set of data where no collisions occur whatsoever (different data resulting in the same hash value).

@@ -131,7 +131,7 @@ zk-STARKs base their security entirely on **hash functions**, rather than ellipt
 
 Computation verification is performed by utilizing the properties of one-dimensional or multi-dimensional polynomials after being converted into a format called AIR (Algebraic Intermediate Representation). The core of STARKs lies in the **FRI (Fast Reed-Solomon Interactive Oracle Proof of Proximity)** protocol.
 
-The FRI protocol is a technique for verifying "whether a certain function is sufficiently close to a polynomial of a specific degree (Proximity)." The prover commits the polynomial's values as leaves of a Merkle Tree (Polynomial Commitment).
+The FRI protocol is a technique for verifying "whether a certain function is sufficiently close to a polynomial of a specific degree (Proximity)." The prover commits the polynomial's values as leaves of a Merkle [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Polynomial Commitment).
 
 ```mermaid
 graph TD

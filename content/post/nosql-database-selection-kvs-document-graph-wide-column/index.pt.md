@@ -235,7 +235,7 @@ graph TD
 ### Bancos de dados de grafos representativos
 
 - **Neo4j**: O banco de dados de grafos mais utilizado no mundo. Adota Cypher, sua própria poderosa linguagem de consulta.
-- **Amazon Neptune**: Um banco de dados de grafos totalmente gerenciado fornecido pela AWS. Suporta Property Graph (Gremlin) e RDF (SPARQL).
+- **Amazon Neptune**: Um banco de dados de grafos totalmente gerenciado fornecido pela AWS. Suporta Property [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Gremlin) e RDF (SPARQL).
 - **ArangoDB**: Um banco de dados multimodelo que suporta grafos, documentos e KVS.
 
 ### Vantagens e desvantagens

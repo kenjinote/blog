@@ -77,7 +77,7 @@ graph TD
 
 # 5. 그래프 이론을 이용한 아름다운 증명
 
-이 정리는 직관적으로는 신기하게 여겨질지 모르지만, '쌍대 그래프(Dual Graph)'와 '악수 보조정리(Handshaking Lemma)'를 사용하면 마술처럼 아름답게 증명할 수 있습니다. 이 접근법은 '방과 문'의 비유를 사용하면 매우 알기 쉽습니다.
+이 정리는 직관적으로는 신기하게 여겨질지 모르지만, '쌍대 그래프(Dual [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))'와 '악수 보조정리(Handshaking Lemma)'를 사용하면 마술처럼 아름답게 증명할 수 있습니다. 이 접근법은 '방과 문'의 비유를 사용하면 매우 알기 쉽습니다.
 
 ## 5.1. 방과 문의 정의
 

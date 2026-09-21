@@ -22,7 +22,7 @@ tags:
 
 $$ C_0 = 1, \quad C_1 = 1, \quad C_2 = 2, \quad C_3 = 5, \quad C_4 = 14, \quad C_5 = 42, \quad C_6 = 132, \quad C_7 = 429, \quad \dots $$
 
-이 수열은 놀랍게도 매우 다양한 조합 문제의 해답으로 등장합니다. 본 글에서는 [카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)가 등장하는 유명한 4가지 예시(올바른 괄호 배열, 이진 트리, 다각형의 삼각 분할, 디크 경로)를 소개하고, 왜 이것들이 완전히 같은 수열이 되는지, 그 이면에 있는 재귀적인 구조를 파헤쳐 봅니다. 또한 동적 계획법(DP)을 사용한 계산 알고리즘과 생성 함수를 이용한 수학적 도출에 대해서도 자세히 설명합니다.
+이 수열은 놀랍게도 매우 다양한 조합 문제의 해답으로 등장합니다. 본 글에서는 [카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)가 등장하는 유명한 4가지 예시(올바른 괄호 배열, 이진 트리, 다각형의 삼각 분할, 디크 경로)를 소개하고, 왜 이것들이 완전히 같은 수열이 되는지, 그 이면에 있는 재귀적인 구조를 파헤쳐 봅니다. 또한 동적 계획법([DP](https://kenji.blog/ko/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))을 사용한 계산 알고리즘과 생성 함수를 이용한 수학적 도출에 대해서도 자세히 설명합니다.
 
 ## 2. [카탈란 수](https://kenji.blog/ko/p/catalan-numbers/)가 나타나는 4가지 구체적인 예
 
@@ -185,7 +185,7 @@ def catalan_recursive(n):
     return res
 ```
 
-### 5.2. 동적 계획법 (Dynamic Programming)
+### 5.2. 동적 계획법 ([Dynamic Programming](https://kenji.blog/ko/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
 메모이제이션(또는 상향식 동적 계획법)을 활용하여 계산 결과를 배열에 저장함으로써 시간 복잡도를 $O(n^2)$ 으로 줄일 수 있습니다.
 

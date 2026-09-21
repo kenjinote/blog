@@ -24,7 +24,7 @@ tags: ["Reading", "Anki", "Feynman Technique", "Output"]
 2. **行間の広さ（Missing Intermediate Steps）**
    著者は紙面の都合上、あるいは「読者ならこの程度の式変形は自力でできるはずだ」という前提から、証明の途中計算を頻繁に省略します。この「行間」を自力で埋める作業（行間を埋める読書）を行わなければ、理解は全く進みません。
 3. **抽象度が高い（High Level of Abstraction）**
-   具体例を伴わずに $n$ 次元空間や任意のグラフ $G=(V, E)$ について語られるため、脳内に視覚的・具体的なメンタルモデルを構築するのに多大な認知負荷がかかります。
+   具体例を伴わずに $n$ 次元空間や任意の[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) $G=(V, E)$ について語られるため、脳内に視覚的・具体的なメンタルモデルを構築するのに多大な認知負荷がかかります。
 
 これらの困難を乗り越えるためには、「受動的な読書（ただ文字を追うだけ）」から「能動的な読書（脳に負荷をかけながら知識を再構築する）」へと読書のスタイルを根本から変える必要があります。
 
@@ -81,7 +81,7 @@ graph LR
 技術書の暗記においては、「長い証明を丸暗記する」ことは無意味です。知識を最小単位（Atomic）に分割してカード化します。
 
 - **悪いカード**: 「[Dijkstra](https://kenji.blog/p/graph-theory-dijkstra-a-star/)法の証明を全て書け」
-- **良いカード**: 「Dijkstra法で、ある頂点の最短距離が確定したとみなせる条件は何か？」→「未確定の頂点集合の中で、暫定距離が最小の頂点を選んだとき。」
+- **良いカード**: 「[Dijkstra](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)法で、ある頂点の最短距離が確定したとみなせる条件は何か？」→「未確定の頂点集合の中で、暫定距離が最小の頂点を選んだとき。」
 - **良いカード**: 「[フェルマーの小定理](https://kenji.blog/p/fermats-little-theorem/)の数式を答えよ」→「素数 $p$ と、互いに素な整数 $a$ について、 $a^{p-1} \equiv 1 \pmod p$」
 
 数式を覚える際も、LaTeX形式でAnkiに登録し、穴埋め問題（Cloze Deletion）を活用すると効果的です。
@@ -175,7 +175,7 @@ rsa_demo()
 
 ### 4.2 実例2：[ダイクストラ法](https://kenji.blog/p/graph-theory-dijkstra-a-star/)と緩和（Relaxation）
 
-[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)における単一始点最短経路問題（SSSP）を解くダイクストラ法を考えます。
+[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)における単一始点最短経路問題（SSSP）を解く[ダイクストラ法](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)を考えます。
 
 数学的・アルゴリズム的な核となるのは「緩和（Relaxation）」と呼ばれる操作です。
 頂点 $u$ から頂点 $v$ への重み $w(u, v)$ の辺があるとき、頂点 $v$ への暫定的な最短距離 $d[v]$ を以下の式で更新します。

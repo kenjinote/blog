@@ -417,7 +417,7 @@ En d'autres termes, ils sautent la surcharge du calcul différentiel du DOM virt
 
 ### 10.3 Le modèle mathématique des Signals
 
-Derrière les Signals se trouve la théorie de la « programmation réactive », qui modélise les dépendances entre l'état et les calculs sous la forme d'un **graphe orienté acyclique (Directed Acyclic Graph : DAG)** et détermine efficacement l'ordre de mise à jour en utilisant un tri topologique du graphe.
+Derrière les Signals se trouve la théorie de la « programmation réactive », qui modélise les dépendances entre l'état et les calculs sous la forme d'un **graphe orienté acyclique (Directed Acyclic [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) : DAG)** et détermine efficacement l'ordre de mise à jour en utilisant un tri topologique du graphe.
 
 Si un état dérivé (Computed) $ C $ dépend des signaux $ S_1, S_2 $ , des arêtes $ S_1 \to C $ , $ S_2 \to C $ sont formées.
 Lorsque la valeur est mise à jour, en parcourant le graphe et en évaluant uniquement les nœuds nécessaires (comme la stratégie hybride Push / Pull), on empêche les "Glitches" (phénomène où une interface utilisateur avec un état intermédiaire incohérent s'affiche momentanément) et on garantit la cohérence topologique.

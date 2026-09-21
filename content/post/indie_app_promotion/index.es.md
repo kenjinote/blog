@@ -17,7 +17,7 @@ Para el desarrollador independiente (Indie Hacker) moderno, uno de los canales d
 
 El SEO (Optimización de Motores de Búsqueda) en un blog técnico no se trata simplemente de esparcir palabras clave. Requiere un enfoque programático para transmitir con precisión la semántica (el significado) del contenido a los motores de búsqueda (Googlebot) y a los rastreadores de las redes sociales.
 
-### 1.1 Optimización del Protocolo Open Graph (OGP)
+### 1.1 Optimización del Protocolo Open [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (OGP)
 
 Para maximizar la tasa de clics (CTR) cuando un artículo técnico se comparte en X (anteriormente Twitter), Hacker News, Zenn, etc., la generación dinámica de OGP es esencial. Si estás utilizando el App Router de Next.js, puedes usar la función `generateMetadata` para generar un OGP optimizado para cada artículo.
 

@@ -165,7 +165,7 @@ graph TD
     F --> G["최종적인 최적화된 코드 생성"]
 ```
 
-### 3.3 Tree of Thoughts (ToT)
+### 3.3 [Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) of Thoughts (ToT)
 
 CoT의 개념을 한층 더 확장한 것이 **Tree of Thoughts (ToT)** 입니다. CoT가 외길(선형) 형태의 추론 경로를 따라가는 반면, ToT는 탐색 트리처럼 다수의 추론 경로(가지)를 병렬로 전개하고, 각 경로를 모델 스스로가 자체 평가하도록 하여 역추적(백트래킹)을 수행하며 최적의 해결책에 도달하는 기법입니다.
 

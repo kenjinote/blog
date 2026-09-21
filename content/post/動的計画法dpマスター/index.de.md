@@ -9,15 +9,15 @@ categories: ["programming", "algorithms"]
 tags: ["Algorithm", "DP", "C++", "Python"]
 ---
 
-Von der Wettbewerbsprogrammierung bis zum praktischen Algorithmus-Design taucht sie in vielen Situationen auf und wird für viele Programmierer zur Hürde: **die Dynamische Programmierung (Dynamic Programming, kurz DP)**. "Ich kann keine Rekursionsgleichung aufstellen", "Die Indizes sind fehlerhaft", "Ich kann nicht einmal beurteilen, ob es sich um ein Problem handelt, das mit DP gelöst werden kann"... Viele von Ihnen haben wahrscheinlich mit solchen Problemen zu kämpfen.
+Von der Wettbewerbsprogrammierung bis zum praktischen Algorithmus-Design taucht sie in vielen Situationen auf und wird für viele Programmierer zur Hürde: **die Dynamische Programmierung ([Dynamic Programming](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/), kurz [DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))**. "Ich kann keine Rekursionsgleichung aufstellen", "Die Indizes sind fehlerhaft", "Ich kann nicht einmal beurteilen, ob es sich um ein Problem handelt, das mit DP gelöst werden kann"... Viele von Ihnen haben wahrscheinlich mit solchen Problemen zu kämpfen.
 
 In diesem Artikel werden wir alles ausführlich behandeln: vom Wesen der dynamischen Programmierung über konkrete Ansätze (Top-Down und Bottom-Up) bis hin zu praktischen Erklärungen anhand von drei repräsentativen Problemen ([Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge, 0/1-Rucksackproblem und längste gemeinsame Teilfolge). Wir zeigen Implementierungsbeispiele sowohl in C++ als auch in Python und bieten einen Weg zur "vollständigen Beherrschung" mit Hilfe von mathematischen Formeln und Illustrationen. Es ist ein sehr langer Artikel, aber wenn Sie ihn bis zum Ende gelesen haben, wird Ihre Fähigkeit, Algorithmen zu verstehen, mit Sicherheit einen großen Sprung gemacht haben.
 
 ---
 
-## 1. Was ist Dynamische Programmierung (DP)?
+## 1. Was ist Dynamische Programmierung ([DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))?
 
-Die Dynamische Programmierung (Dynamic Programming) ist eine Entwurfstechnik für Algorithmen, bei der komplexe Probleme in kleinere "Teilprobleme" zerlegt werden und die Lösungen dieser Teilprobleme gespeichert und wiederverwendet werden, um den Rechenaufwand drastisch zu reduzieren.
+Die Dynamische Programmierung ([Dynamic Programming](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) ist eine Entwurfstechnik für Algorithmen, bei der komplexe Probleme in kleinere "Teilprobleme" zerlegt werden und die Lösungen dieser Teilprobleme gespeichert und wiederverwendet werden, um den Rechenaufwand drastisch zu reduzieren.
 
 Diese in den 1950er Jahren von Richard Bellman erfundene Methode zeigt bei Optimierungsproblemen eine überwältigende Stärke. Das Wort "dynamisch" (Dynamic) hat keine besondere Bedeutung; es gibt die Anekdote, dass er damals ein "gut klingendes Wort" wählte, um Forschungsgelder zu erhalten. Heute hat es jedoch seinen festen Platz als eines der wichtigsten Konzepte in der Informatik eingenommen.
 
@@ -27,7 +27,7 @@ Damit die Dynamische Programmierung angewendet werden kann, muss das zu lösende
 
 Diese Eigenschaft bedeutet, dass im Prozess der Lösung eines großen Problems **dieselben Teilprobleme immer wieder auftreten**.
 
-Zum Beispiel wird bei der später erläuterten Berechnung der [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge die Berechnung zur "Ermittlung des 3. Terms" sowohl bei der Ermittlung des 5. als auch des 4. Terms benötigt. Wenn sich Teilprobleme nicht überlappen (z. B. bei Divide-and-Conquer-Verfahren wie Merge Sort), gibt es keinen Vorteil, Lösungen zu speichern, weshalb DP dort nicht anwendbar ist. Gerade weil sie sich überlappen, wird durch das Speichern einmal berechneter Ergebnisse im Speicher (Memoisierung oder Tabellierung) und deren Wiederverwendung eine drastische Geschwindigkeitssteigerung möglich.
+Zum Beispiel wird bei der später erläuterten Berechnung der [Fibonacci](https://kenji.blog/de/p/fibonacci/)-Folge die Berechnung zur "Ermittlung des 3. Terms" sowohl bei der Ermittlung des 5. als auch des 4. Terms benötigt. Wenn sich Teilprobleme nicht überlappen (z. B. bei Divide-and-Conquer-Verfahren wie Merge Sort), gibt es keinen Vorteil, Lösungen zu speichern, weshalb [DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) dort nicht anwendbar ist. Gerade weil sie sich überlappen, wird durch das Speichern einmal berechneter Ergebnisse im Speicher (Memoisierung oder Tabellierung) und deren Wiederverwendung eine drastische Geschwindigkeitssteigerung möglich.
 
 ### 1-2. Optimale Teilstruktur (Optimal Substructure)
 
@@ -212,7 +212,7 @@ Wenn wir die Gegenstände so auswählen, dass die Kapazität des Rucksacks nicht
 
 ### 4-2. [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sdefinition und Zustandsübergangsgleichung
 
-Der wichtigste Schritt zur Lösung von DP-Problemen ist die korrekte Definition des "Zustands" ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)).
+Der wichtigste Schritt zur Lösung von [DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)-Problemen ist die korrekte Definition des "Zustands" ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)).
 Bei diesem Problem ändern sich zwei Parameter: "Bis zu welchem Gegenstand wir betrachtet haben" und "Die verbleibende Kapazität des Rucksacks". Daher definieren wir den [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) wie folgt:
 
 **Zustandsdefinition:**
@@ -319,7 +319,7 @@ Dadurch wird die Speicherkomplexität drastisch von $O(nW)$ auf $O(W)$ verbesser
 
 ## 5. Praxis Teil 3: Längste gemeinsame Teilfolge (LCS: Longest Common Subsequence)
 
-Als repräsentatives DP-Problem für Zeichenketten betrachten wir die LCS (Longest Common Subsequence). Die LCS ist ein Algorithmus, der in der Praxis weithin Anwendung findet, z.B. bei der Dateidifferenzerkennung (diff-Tools) und der Ähnlichkeitsprüfung von DNA-Sequenzen.
+Als repräsentatives [DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)-Problem für Zeichenketten betrachten wir die LCS (Longest Common Subsequence). Die LCS ist ein Algorithmus, der in der Praxis weithin Anwendung findet, z.B. bei der Dateidifferenzerkennung (diff-Tools) und der Ähnlichkeitsprüfung von DNA-Sequenzen.
 
 ### 5-1. Problemstellung
 
@@ -430,7 +430,7 @@ Auch beim LCS-Problem werden für die Aktualisierung nur die vorherige Zeile (`d
 
 ## 6. Denkprozess zur Beherrschung der Dynamischen Programmierung
 
-Bisher haben wir uns verschiedene Probleme angesehen, aber wie sollten Sie vorgehen, wenn Sie mit einem unbekannten DP-Problem konfrontiert werden? Behalten Sie immer die folgenden Schritte im Hinterkopf:
+Bisher haben wir uns verschiedene Probleme angesehen, aber wie sollten Sie vorgehen, wenn Sie mit einem unbekannten [DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)-Problem konfrontiert werden? Behalten Sie immer die folgenden Schritte im Hinterkopf:
 
 1. **Kann dieses Problem mit DP gelöst werden? (Überprüfung der Bedingungen)**
    Tritt derselbe [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) mehrfach auf, wenn wir rekursiv denken (Überlappende Teilprobleme)? Können wir durch Kombination der besten Entscheidungen zum Gesamtoplimum gelangen (Optimale Teilstruktur)?
@@ -451,6 +451,6 @@ In diesem Artikel haben wir detailliert erklärt, von den grundlegenden Theorien
 - Wenn die mathematische Formel (Zustandsübergangsgleichung) korrekt aufgestellt ist, wird die Implementierung sehr einfach.
 - Techniken zur Reduzierung der Speicherkomplexität (wie die Eindimensionalisierung von Arrays oder Rolling Arrays) sind unerlässlich, wenn auf praktischer Ebene hohe Leistung gefordert ist.
 
-Die dynamische Programmierung kann anfangs schwer verständlich erscheinen. Durch wiederholtes Training, "Zustandsdefinitionen" und "Übergänge" in verschiedenen Problemen zu finden, werden Sie jedoch allmählich Muster erkennen. Es gibt noch fortgeschrittenere Anwendungen wie Tree-DP, Digit-DP, Bitmask-DP oder Interval-DP, aber sie alle bauen auf dem Fundament der hier gelernten "überlappenden Teilprobleme" und der "Optimierung" auf.
+Die dynamische Programmierung kann anfangs schwer verständlich erscheinen. Durch wiederholtes Training, "Zustandsdefinitionen" und "Übergänge" in verschiedenen Problemen zu finden, werden Sie jedoch allmählich Muster erkennen. Es gibt noch fortgeschrittenere Anwendungen wie [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-[DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/), Digit-DP, Bitmask-DP oder Interval-DP, aber sie alle bauen auf dem Fundament der hier gelernten "überlappenden Teilprobleme" und der "Optimierung" auf.
 
 Beeilen Sie sich nicht, sondern vertiefen Sie Ihr Verständnis, indem Sie mit Papier und Stift DP-Tabellen tatsächlich aufzeichnen. Wenn Sie in der Lage sind, die wahre Kraft von Algorithmen zu entfesseln, wird sich die Welt des Programmierens für Sie noch weiter öffnen.

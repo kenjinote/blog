@@ -165,7 +165,7 @@ graph TD
     F --> G["Pembuatan kode akhir yang dioptimalkan"]
 ```
 
-### 3.3 Tree of Thoughts (ToT)
+### 3.3 [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) of Thoughts (ToT)
 
 **Tree of Thoughts (ToT)** adalah perluasan lebih lanjut dari konsep CoT. Sementara CoT mengikuti satu jalur (linier) penalaran, ToT adalah metode mengekspansikan beberapa jalur (cabang) penalaran secara paralel seperti pohon pencarian (search tree), meminta model untuk mengevaluasi sendiri setiap jalur, dan melakukan pelacakan mundur (backtracking) untuk mencapai solusi yang optimal.
 
@@ -273,7 +273,7 @@ sequenceDiagram
     RAG_System-->>Engineer: "Memberikan jawaban dan tautan ke baris kode sumber yang relevan"
 ```
 
-Sebagai teknik prompt engineering yang penting dalam membangun RAG untuk basis kode, tidak hanya membagi kode menjadi bagian-bagian kecil, tetapi juga menyertakan "ringkasan yang dihasilkan dari Docstring setiap fungsi atau Abstract Syntax Tree (AST) kelas" dalam target vektorisasi akan meningkatkan akurasi pencarian secara dramatis.
+Sebagai teknik prompt engineering yang penting dalam membangun RAG untuk basis kode, tidak hanya membagi kode menjadi bagian-bagian kecil, tetapi juga menyertakan "ringkasan yang dihasilkan dari Docstring setiap fungsi atau Abstract Syntax [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (AST) kelas" dalam target vektorisasi akan meningkatkan akurasi pencarian secara dramatis.
 
 ---
 

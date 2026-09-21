@@ -9,13 +9,13 @@ categories: ["programming", "algorithms"]
 tags: ["Algorithm", "DP", "C++", "Python"]
 ---
 
-From competitive programming to practical algorithm design in business, **Dynamic Programming (DP)** appears in many scenarios and often becomes a wall for many programmers. "I can't formulate the recurrence relation", "Indices get buggy", "I can't even judge if the problem can be solved by DP"... many people might have such concerns.
+From competitive programming to practical algorithm design in business, **[Dynamic Programming](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))** appears in many scenarios and often becomes a wall for many programmers. "I can't formulate the recurrence relation", "Indices get buggy", "I can't even judge if the problem can be solved by DP"... many people might have such concerns.
 
 In this article, we will thoroughly cover everything from the essence of dynamic programming to specific approaches (top-down and bottom-up), and provide practical explanations through three representative problems ([Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence, 0/1 Knapsack problem, and Longest Common Subsequence). We will provide implementation examples in both C++ and Python, offering a path to "completely master" it using formulas and diagrams. This will be a very lengthy article, but by the time you finish reading it to the end, your algorithm skills will surely have taken a leap forward.
 
 ---
 
-## 1. What is Dynamic Programming (DP)?
+## 1. What is [Dynamic Programming](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))?
 
 Dynamic Programming is an algorithm design technique that dramatically reduces computational complexity by dividing a complex problem into smaller "subproblems", and recording and reusing the solutions of those subproblems.
 
@@ -27,7 +27,7 @@ For dynamic programming to be established, the target problem needs to satisfy t
 
 This is the property where **the same subproblem repeatedly appears** in the process of solving a larger problem.
 
-For example, in the calculation of the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence described later, the computation "finding the 3rd term" is required both when finding the 5th term and when finding the 4th term. If subproblems do not overlap (e.g., in divide-and-conquer algorithms like merge sort), there is no benefit in recording the solutions, so DP is not applicable. Precisely because they overlap, dramatic speedups become possible by saving the results of calculations once performed in memory (memoization or tabulation) and reusing them.
+For example, in the calculation of the [Fibonacci](https://kenji.blog/en/p/fibonacci/) sequence described later, the computation "finding the 3rd term" is required both when finding the 5th term and when finding the 4th term. If subproblems do not overlap (e.g., in divide-and-conquer algorithms like merge sort), there is no benefit in recording the solutions, so [DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) is not applicable. Precisely because they overlap, dramatic speedups become possible by saving the results of calculations once performed in memory (memoization or tabulation) and reusing them.
 
 ### 1-2. Optimal Substructure
 
@@ -212,7 +212,7 @@ When selecting items so as not to exceed the knapsack's capacity, what is the ma
 
 ### 4-2. [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Definition and State Transition Equation
 
-The most important step for solving DP is to appropriately define the "State".
+The most important step for solving [DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) is to appropriately define the "State".
 In this problem, two parameters will change: "which item has been considered up to" and "the remaining capacity of the knapsack". Therefore, we define the state as follows.
 
 **State Definition:**
@@ -319,7 +319,7 @@ By doing this, the space complexity is drastically improved from $O(nW)$ to $O(W
 
 ## 5. Practical Part 3: Longest Common Subsequence (LCS)
 
-As a representative DP problem handling strings, we will take up LCS. LCS is an algorithm widely applied in the real world, such as in file difference detection (diff tools) and DNA sequence similarity judgments.
+As a representative [DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) problem handling strings, we will take up LCS. LCS is an algorithm widely applied in the real world, such as in file difference detection (diff tools) and DNA sequence similarity judgments.
 
 ### 5-1. Problem Setup
 
@@ -428,9 +428,9 @@ Even in the LCS problem, since only the previous row (`dp[i-1]`) and the current
 
 ---
 
-## 6. Thought Process for Mastering Dynamic Programming
+## 6. Thought Process for Mastering [Dynamic Programming](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)
 
-We have seen various problems so far, but when facing an unknown DP problem, how should we think about it? Please always keep the following steps in mind.
+We have seen various problems so far, but when facing an unknown [DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) problem, how should we think about it? Please always keep the following steps in mind.
 
 1. **Can this problem be solved with DP? (Condition Check)**
    When thinking recursively, do the same states appear over and over? (Overlapping Subproblems). Can the overall best be derived by combining the best choices? (Optimal Substructure).
@@ -451,6 +451,6 @@ In this article, we have explained in detail everything from the fundamental the
 - If you can properly set up the mathematical formulas (state transition equations), the implementation becomes very simple.
 - Space complexity reduction techniques (1D array conversion and rolling arrays) are indispensable when performance is demanded at a practical business level.
 
-Dynamic programming might feel esoteric at first. However, by repeating the training of finding the "state definition" and "transitions" in various problems, patterns will gradually begin to emerge. There are more advanced applications like Tree DP, Digit DP, Bit DP, and Interval DP, but all of them are built on the foundation of "overlapping subproblems" and "optimization" that you learned this time.
+Dynamic programming might feel esoteric at first. However, by repeating the training of finding the "state definition" and "transitions" in various problems, patterns will gradually begin to emerge. There are more advanced applications like [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) [DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/), Digit DP, Bit DP, and Interval DP, but all of them are built on the foundation of "overlapping subproblems" and "optimization" that you learned this time.
 
 Don't rush, deepen your understanding by actually writing out DP tables with paper and pen. When you become able to bring out the true power of this algorithm, the world of programming will expand even further.

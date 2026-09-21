@@ -9,18 +9,18 @@ categories: ["programming", "algorithms"]
 tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 ---
 
-競技プログラミング（競プロ）において、[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)とそのアルゴリズムは避けて通れない最重要テーマの一つです。AtCoderやCodeforces、トップコーダーなどのコンテストで出題される問題の多くは、背後にグラフの構造を持っています。道路網の最短経路、ネットワークの通信コスト最小化、タスクの依存関係の解消など、現実世界の問題を抽象化して解くための強力な武器となります。
+競技プログラミング（競プロ）において、[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)とそのアルゴリズムは避けて通れない最重要テーマの一つです。AtCoderやCodeforces、トップコーダーなどのコンテストで出題される問題の多くは、背後に[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)の構造を持っています。道路網の最短経路、ネットワークの通信コスト最小化、タスクの依存関係の解消など、現実世界の問題を抽象化して解くための強力な武器となります。
 
 本記事では、競技プログラミングで頻出となる主要なグラフアルゴリズム（トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)、[ダイクストラ法](https://kenji.blog/p/graph-theory-dijkstra-a-star/)、ベルマンフォード法、ワーシャルフロイド法、クラスカル法、プリム法、強連結成分分解）について、その理論的な背景、数式を用いた計算量評価、そしてモダンなC++（C++17/20）による高度に最適化された実装例を交えて完全に網羅します。約10,000文字の大ボリュームでお届けする、まさに「完全攻略」ガイドです。
 
 ---
 
-## 1. グラフアルゴリズムの基礎と制約
+## 1. [グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)アルゴリズムの基礎と制約
 
 アルゴリズムを学ぶ前に、競プロにおけるグラフ問題の一般的な制約と計算量の目安を把握しておくことが重要です。グラフは頂点数 $V$ (Vertices) と 辺数 $E$ (Edges) で表されます。
 
-*   $O(V + E)$ : 頂点数 $V, E \le 10^5 \sim 10^6$ の問題で要求される計算量です。深さ優先探索 (DFS) や 幅優先探索 (BFS) が該当します。
-*   $O((V + E) \log V)$ : $V, E \le 10^5 \sim 2 \cdot 10^5$ の問題で頻出です。ダイクストラ法やプリム法などで優先度付きキューを使用した場合の計算量です。
+*   $O(V + E)$ : 頂点数 $V, E \le 10^5 \sim 10^6$ の問題で要求される計算量です。深さ優先探索 ([DFS](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) や 幅優先探索 ([BFS](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) が該当します。
+*   $O((V + E) \log V)$ : $V, E \le 10^5 \sim 2 \cdot 10^5$ の問題で頻出です。[ダイクストラ法](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)やプリム法などで優先度付きキューを使用した場合の計算量です。
 *   $O(V^2)$ : $V \le 2000 \sim 3000$ の密グラフ（$E \approx V^2$）で許容されます。
 *   $O(V^3)$ : $V \le 400 \sim 500$ の問題。ワーシャルフロイド法などが代表的です。
 
@@ -32,9 +32,9 @@ tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 
 ### トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/) (Topological Sort)
 
-トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)は、有向非巡回グラフ (DAG: Directed Acyclic Graph) の頂点を、すべての有向辺が前方の頂点から後方の頂点へと向かうように一列に並べるアルゴリズムです。タスクの依存関係（例: タスクAが終わらないとタスクBを開始できない）を解消する際や、DAG上での動的計画法 (DP) の計算順序を決定するために用いられます。
+トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)は、有向非巡回[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (DAG: Directed Acyclic [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) の頂点を、すべての有向辺が前方の頂点から後方の頂点へと向かうように一列に並べるアルゴリズムです。タスクの依存関係（例: タスクAが終わらないとタスクBを開始できない）を解消する際や、DAG上での[動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) の計算順序を決定するために用いられます。
 
-計算量は $O(V + E)$ です。Kahnのアルゴリズム（入次数を用いたBFSベース）と、帰りがけ順を用いたDFSベースの2種類の実装がありますが、ここでは辞書順最小のトポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)も簡単に求められるKahnのアルゴリズムを紹介します。
+計算量は $O(V + E)$ です。Kahnのアルゴリズム（入次数を用いた[BFS](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ベース）と、帰りがけ順を用いた[DFS](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ベースの2種類の実装がありますが、ここでは辞書順最小のトポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)も簡単に求められるKahnのアルゴリズムを紹介します。
 
 ```mermaid
 graph LR
@@ -104,14 +104,14 @@ vector<int> topological_sort(int V, const vector<vector<int>>& graph) {
 
 ### [ダイクストラ法](https://kenji.blog/p/graph-theory-dijkstra-a-star/) ([Dijkstra](https://kenji.blog/p/graph-theory-dijkstra-a-star/)'s Algorithm)
 
-ダイクストラ法は、 **すべての辺の重みが非負** である場合に適用できる高速な最短経路アルゴリズムです。「現在わかっている最短距離が最も短い頂点を確定させ、その頂点から隣接する頂点への距離を更新する（緩和）」という貪欲法に基づいています。
+[ダイクストラ法](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)は、 **すべての辺の重みが非負** である場合に適用できる高速な最短経路アルゴリズムです。「現在わかっている最短距離が最も短い頂点を確定させ、その頂点から隣接する頂点への距離を更新する（緩和）」という貪欲法に基づいています。
 
 #### 緩和 (Relaxation) の数式
 始点を $s$ とし、頂点 $u$ までの最短距離を $d[u]$、辺 $(u, v)$ の重みを $w(u, v)$ とします。
 更新式は以下のようになります。
 $$ d[v] = \min(d[v], d[u] + w(u, v)) $$
 
-優先度付きキュー (`std::priority_queue`) を用いることで、距離が最小の未確定頂点を $O(\log V)$ で取り出すことができ、全体の時間計算量は $O((V + E) \log V)$ となります。空間計算量は $O(V + E)$ です。
+優先度付きキュー (`std::priority_queue`) を用いることで、距離が最小の未確定頂点を $O(\log V)$ で取り出すことができ、全体の[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は $O((V + E) \log V)$ となります。[空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は $O(V + E)$ です。
 
 ```mermaid
 graph TD
@@ -174,11 +174,11 @@ vector<long long> dijkstra(int V, const vector<vector<Edge>>& graph, int s) {
 
 ### ベルマンフォード法 (Bellman-Ford Algorithm)
 
-辺の重みに負の値が含まれる場合、ダイクストラ法は正しい答えを導き出せません。このとき活躍するのがベルマンフォード法です。すべての辺に対する緩和処理を $V - 1$ 回繰り返すことで、負の重みがあっても最短経路を正しく計算します。
+辺の重みに負の値が含まれる場合、[ダイクストラ法](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)は正しい答えを導き出せません。このとき活躍するのがベルマンフォード法です。すべての辺に対する緩和処理を $V - 1$ 回繰り返すことで、負の重みがあっても最短経路を正しく計算します。
 
 もし $V$ 回目の反復でも更新が発生した場合、それは **負の閉路 (Negative Cycle)** が存在することを意味します。競プロでは「負の閉路を検出せよ」という問題も頻出であり、ベルマンフォード法はその検出アルゴリズムとしても優れています。
 
-時間計算量は $O(V \times E)$ となり、ダイクストラ法より遅いため、$V \le 2000, E \le 5000$ 程度の制約でしか適用できない点に注意してください。
+[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は $O(V \times E)$ となり、ダイクストラ法より遅いため、$V \le 2000, E \le 5000$ 程度の制約でしか適用できない点に注意してください。
 
 #### C++ 実装例
 
@@ -230,12 +230,12 @@ pair<vector<long long>, bool> bellman_ford(int V, const vector<Edge>& edges, int
 
 ### ワーシャルフロイド法 (Floyd-Warshall Algorithm)
 
-グラフ内のすべての頂点のペア間の最短距離を求めるアルゴリズムです。動的計画法 (DP) をベースにしています。アルゴリズムが非常に簡潔であり、実装が極めて容易である点が魅力的です。
+[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)内のすべての頂点のペア間の最短距離を求めるアルゴリズムです。[動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) をベースにしています。アルゴリズムが非常に簡潔であり、実装が極めて容易である点が魅力的です。
 
 状態遷移の方程式は以下のようになります。頂点 $k$ を経由する経路としない経路で短い方を採用します。
 $$ d[i][j] = \min(d[i][j], d[i][k] + d[k][j]) $$
 
-三重ループを回すため、時間計算量は $O(V^3)$、空間計算量は $O(V^2)$ となります。頂点数が $V \le 400$ 程度であれば実行時間制限(通常2秒)に間に合います。
+三重ループを回すため、[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は $O(V^3)$、[空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は $O(V^2)$ となります。頂点数が $V \le 400$ 程度であれば実行時間制限(通常2秒)に間に合います。
 
 #### C++ 実装例
 
@@ -267,11 +267,11 @@ void floyd_warshall(int V, vector<vector<long long>>& dist) {
 }
 ```
 
-ワーシャルフロイド法でも負の閉路を検出できます。ループ終了後、`dist[i][i] < 0` となる頂点 `i` が一つでも存在すれば、グラフに負の閉路が含まれています。
+ワーシャルフロイド法でも負の閉路を検出できます。ループ終了後、`dist[i][i] < 0` となる頂点 `i` が一つでも存在すれば、[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)に負の閉路が含まれています。
 
 ---
 
-## 5. 最小全域木 (MST: Minimum Spanning Tree)
+## 5. 最小全域木 (MST: Minimum Spanning [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 連結な無向グラフにおいて、すべての頂点を結ぶ木（閉路を含まない部分グラフ）のうち、辺の重みの総和が最小となるものを **最小全域木 (MST)** と呼びます。ネットワークの敷設コストの最小化などで直接的に問われます。
 
@@ -279,7 +279,7 @@ void floyd_warshall(int V, vector<vector<long long>>& dist) {
 
 すべての辺を重みが小さい順に[ソート](https://kenji.blog/p/sorting-algorithms/)し、閉路を作らないように順番に辺を採用していく貪欲法です。閉路の判定には **素集合データ構造 (Union-Find, Disjoint Set)** を用いることで高速に処理できます。
 
-時間計算量は辺の[ソート](https://kenji.blog/p/sorting-algorithms/)がボトルネックとなり $O(E \log E)$ です。競プロで最も頻繁に用いられるMST構築アルゴリズムです。
+[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は辺の[ソート](https://kenji.blog/p/sorting-algorithms/)がボトルネックとなり $O(E \log E)$ です。競プロで最も頻繁に用いられるMST構築アルゴリズムです。
 
 ```mermaid
 graph TD
@@ -358,7 +358,7 @@ long long kruskal(int V, vector<Edge>& edges) {
 
 [ダイクストラ法](https://kenji.blog/p/graph-theory-dijkstra-a-star/)に非常に似たアプローチを取ります。ある1つの頂点から始めて、既に作られている木から直接繋がっている辺のうち、最も重みが小さいものを次々に選んで木を成長させていきます。
 
-優先度付きキューを使用した場合の計算量は $O((V + E) \log V)$ です。密グラフ (辺の数が多いグラフ) の場合、プリム法の配列ベース実装 $O(V^2)$ がクラスカル法よりも高速になることがあります。
+優先度付きキューを使用した場合の計算量は $O((V + E) \log V)$ です。密[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (辺の数が多いグラフ) の場合、プリム法の配列ベース実装 $O(V^2)$ がクラスカル法よりも高速になることがあります。
 
 #### C++ 実装例
 
@@ -407,13 +407,13 @@ long long prim(int V, const vector<vector<Edge>>& graph) {
 
 ## 6. 発展：強連結成分分解 (SCC: Strongly Connected Components)
 
-有向グラフにおいて、「互いに行き来できる頂点の集合」を強連結成分 (SCC) と呼びます。任意の有向グラフを強連結成分ごとにまとめると、全体としては必ずDAG (有向非巡回グラフ) になります。これを **強連結成分分解** と言います。グラフ構造を単純化して問題を解きやすくするための非常に重要な前処理です。
+有向[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)において、「互いに行き来できる頂点の集合」を強連結成分 (SCC) と呼びます。任意の有向グラフを強連結成分ごとにまとめると、全体としては必ずDAG (有向非巡回グラフ) になります。これを **強連結成分分解** と言います。グラフ構造を単純化して問題を解きやすくするための非常に重要な前処理です。
 
-競プロでは、2-SAT問題の解決や、サイクルを持つグラフをDAGに縮約してDPを行う場面で多用されます。
+競プロでは、2-SAT問題の解決や、サイクルを持つグラフをDAGに縮約して[DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)を行う場面で多用されます。
 
 ### コサラジュのアルゴリズム (Kosaraju's Algorithm)
 
-コサラジュのアルゴリズムは、DFS（深さ優先探索）を2回行うだけでSCCを構築できる美しく効率的な手法です。計算量は $O(V + E)$ と線形時間で動作します。
+コサラジュのアルゴリズムは、[DFS](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)（深さ優先探索）を2回行うだけでSCCを構築できる美しく効率的な手法です。計算量は $O(V + E)$ と線形時間で動作します。
 
 アルゴリズムの手順：
 1. 元のグラフでDFSを行い、帰りがけ順（post-order）で頂点を配列に記録する。
@@ -501,15 +501,15 @@ struct SCC {
 
 ## 7. まとめと学習のアドバイス
 
-本記事では、競技プログラミングで頻出のグラフアルゴリズムを総ざらいしました。
+本記事では、競技プログラミングで頻出の[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)アルゴリズムを総ざらいしました。
 グラフ問題上達のコツは、 **「手癖になるまで何度も実装すること」** と ** 「この問題はどのグラフに帰着できるか（頂点は何か、辺は何か）を考える訓練をすること」** です。
 
-1. まずは DFS / BFS をミスなく素早く書けるようにする。
+1. まずは [DFS](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) / [BFS](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) をミスなく素早く書けるようにする。
 2. 次に、[ダイクストラ法](https://kenji.blog/p/graph-theory-dijkstra-a-star/)とクラスカル法をそらで書けるようにする（AtCoder茶〜緑帯で必須）。
 3. 最後に、ベルマンフォードやワーシャルフロイド、トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)、SCCなどの引き出しを増やす（AtCoder水〜青帯で武器になる）。
 
 コードスニペットとしてライブラリ化（スニペットツールや自分のGitHubリポジトリに保存）しておき、コンテスト本番で迷わず呼び出せるように準備しておくことを強くおすすめします。
 
-競技プログラミングにおけるグラフアルゴリズムは、アルゴリズムの美しさと強力さを最も体感できる分野です。ぜひこの記事のコードを写経し、オンラインジャッジで過去問に挑んでみてください！
+競技プログラミングにおける[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)アルゴリズムは、アルゴリズムの美しさと強力さを最も体感できる分野です。ぜひこの記事のコードを写経し、オンラインジャッジで過去問に挑んでみてください！
 
 

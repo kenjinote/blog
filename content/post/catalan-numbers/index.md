@@ -22,7 +22,7 @@ tags:
 
 $$ C_0 = 1, \quad C_1 = 1, \quad C_2 = 2, \quad C_3 = 5, \quad C_4 = 14, \quad C_5 = 42, \quad C_6 = 132, \quad C_7 = 429, \quad \dots $$
 
-この数列は、驚くほど多種多様な組み合わせ問題の解として登場します。本記事では、[カタラン数](https://kenji.blog/p/catalan-numbers/)が登場する有名な4つの例（正しい括弧列、二分木、多角形の三角形分割、ディック路）を紹介し、なぜこれらが全く同じ数列になるのか、その背後にある再帰的な構造を紐解いていきます。さらに、動的計画法 (DP) を使った計算アルゴリズムや、[母関数](https://kenji.blog/p/generating-functions/)を用いた数学的な導出についても詳しく解説します。
+この数列は、驚くほど多種多様な組み合わせ問題の解として登場します。本記事では、[カタラン数](https://kenji.blog/p/catalan-numbers/)が登場する有名な4つの例（正しい括弧列、二分木、多角形の三角形分割、ディック路）を紹介し、なぜこれらが全く同じ数列になるのか、その背後にある再帰的な構造を紐解いていきます。さらに、[動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) を使った計算アルゴリズムや、[母関数](https://kenji.blog/p/generating-functions/)を用いた数学的な導出についても詳しく解説します。
 
 ## 2. [カタラン数](https://kenji.blog/p/catalan-numbers/)が現れる4つの具体例
 
@@ -171,7 +171,7 @@ $$ C(x) = \frac{1 - \sqrt{1 - 4x}}{2x} $$
 
 ### 5.1. 単純な再帰 (Naive Recursion)
 
-漸化式をそのまま実装する方法です。しかし、同じ計算を何度も繰り返すため、時間計算量は指数関数的になり、大きな $n$ には適していません。
+漸化式をそのまま実装する方法です。しかし、同じ計算を何度も繰り返すため、[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は指数関数的になり、大きな $n$ には適していません。
 
 ```python
 def catalan_recursive(n):
@@ -185,9 +185,9 @@ def catalan_recursive(n):
     return res
 ```
 
-### 5.2. 動的計画法 (Dynamic Programming)
+### 5.2. [動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([Dynamic Programming](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
-計算結果を配列に保存するメモ化（またはボトムアップの動的計画法）を用いることで、時間計算量を $O(n^2)$ に削減できます。
+計算結果を配列に保存するメモ化（またはボトムアップの動的計画法）を用いることで、[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)を $O(n^2)$ に削減できます。
 
 ```python
 def catalan_dp(n):
@@ -209,7 +209,7 @@ for i in range(7):
 
 ### 5.3. 閉じた式 (Closed-form formula)
 
-公式を使えば、階乗の計算を行うだけで $O(n)$ の時間計算量で求めることができます。
+公式を使えば、階乗の計算を行うだけで $O(n)$ の[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)で求めることができます。
 
 ```python
 import math
@@ -227,4 +227,4 @@ for i in range(7):
 
 [カタラン数](https://kenji.blog/p/catalan-numbers/) $C_n$ は、括弧の並べ方、二分木の形状、多角形の分割、ディック路など、一見異なる数多くの問題に共通して現れる魅惑的な数列です。これらの問題が同じ数になる理由は、すべてが **「全体を2つの部分問題に分割し、それらを組み合わせる」** という共通の再帰的構造を持っているからです。
 
-アルゴリズムやデータ構造を学ぶ際、このような数学的背景を理解しておくことで、問題の本質を見抜く力が養われます。動的計画法の練習問題としても非常に優秀なので、ぜひ自分でもコードを書いて実験してみてください。
+アルゴリズムやデータ構造を学ぶ際、このような数学的背景を理解しておくことで、問題の本質を見抜く力が養われます。[動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)の練習問題としても非常に優秀なので、ぜひ自分でもコードを書いて実験してみてください。

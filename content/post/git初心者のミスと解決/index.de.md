@@ -27,13 +27,13 @@ Wenn Sie diesen Artikel bis zum Ende gelesen haben, sollten Sie von der Angst vo
 
 Der erste Schritt zur Erleichterung vieler Fehlerbehebungen besteht darin, zu verstehen, wie Git Daten speichert. Der versteckte Ordner `.git` im Stammverzeichnis Ihres Projekts ist das Herzstück von Git. Git ist kein System, das einfach Dateidifferenzen (Patches) der Reihe nach aufzeichnet, sondern verwaltet die Daten als einen **Stream von Snapshots**.
 
-### 2.1 Das Objektmodell: Blob, Tree, Commit
+### 2.1 Das Objektmodell: Blob, [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), Commit
 
 Git verwendet hauptsächlich drei Objekte, um den Status des Repositorys darzustellen. Diese Objekte werden in `.git/objects` gespeichert.
 
 1. **Blob (Binary Large Object)**
    Dieses Objekt speichert den eigentlichen Inhalt der Datei. Informationen wie Dateinamen oder Berechtigungen sind hier nicht enthalten. Reine Bytefolgen werden mit zlib komprimiert und durch einen SHA-1-Hashwert (40-stellige hexadezimale Zahl) identifiziert.
-2. **Tree**
+2. **[Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
    Dieses Objekt stellt die Verzeichnisstruktur dar. Ein Tree-Objekt enthält Zeiger (SHA-1-Hashwerte) auf andere Tree-Objekte (Unterverzeichnisse) oder Blob-Objekte (Dateien) sowie deren Dateinamen und Zugriffsrechte. Es fungiert ähnlich wie ein UNIX-Verzeichnis.
 3. **Commit**
    Dies enthält einen Zeiger auf das oberste Tree-Objekt des gesamten Repositorys zu einem bestimmten Zeitpunkt, zusammen mit Metadaten (Autor, Commit-Datum, Commit-Nachricht) sowie einem Zeiger auf den vorherigen Commit (Eltern-Commit).
@@ -334,7 +334,7 @@ Der aktuelle `main`-Branch hat einen Bug, aber beim Release vor einem Monat funk
 
 ### Lösung: Bug-Suche durch binäre Suche (Bisektion)
 
-Git verfügt über ein integriertes Tool, das Fehler durch mathematische binäre Suche (Binary Search) findet. Da die Komplexität $\mathcal{O}(\log N)$ beträgt, können Sie den Fehler selbst bei 1000 Commits mit etwa 10 Tests identifizieren.
+Git verfügt über ein integriertes Tool, das Fehler durch mathematische binäre Suche ([Binary Search](https://kenji.blog/de/p/search-algorithms-linear-binary-hash-table-principles/)) findet. Da die Komplexität $\mathcal{O}(\log N)$ beträgt, können Sie den Fehler selbst bei 1000 Commits mit etwa 10 Tests identifizieren.
 
 ```bash
 # Die Suche starten

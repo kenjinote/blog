@@ -10,7 +10,7 @@ tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 
 ## 1. O Encontro dos Índices de Banco de Dados com a Árvore B
 
-Nos sistemas modernos, os bancos de dados são a espinha dorsal dos aplicativos. A capacidade de pesquisar e retornar os dados desejados a partir de milhões ou bilhões de registros em milissegundos é uma das funções mais importantes de um Sistema de Gerenciamento de Banco de Dados (SGBD). A base dessa incrível velocidade de busca é o **índice**, e a estrutura de dados por trás dele é a **Árvore B** (B-Tree) e sua derivada, a **Árvore B+** (B+Tree).
+Nos sistemas modernos, os bancos de dados são a espinha dorsal dos aplicativos. A capacidade de pesquisar e retornar os dados desejados a partir de milhões ou bilhões de registros em milissegundos é uma das funções mais importantes de um Sistema de Gerenciamento de Banco de Dados (SGBD). A base dessa incrível velocidade de busca é o **índice**, e a estrutura de dados por trás dele é a **Árvore B** (B-[Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) e sua derivada, a **Árvore B+** (B+Tree).
 
 Neste artigo, nos aprofundaremos nas razões pelas quais os bancos de dados relacionais escolhem a família da **Árvore B** em vez de árvores de busca binária ou tabelas hash, abordando a natureza de E/S de disco, a teoria das estruturas de dados, a análise matemática e a implementação de código na prática.
 
@@ -26,7 +26,7 @@ Quando o banco de dados pesquisa um índice, minimizar o número de vezes que um
 
 ### 2.2 As Limitações da Árvore de Busca Binária (BST)
 
-Para buscas na memória, árvores de busca binária balanceadas como a **Árvore de Busca Binária** (Binary Search Tree: BST) e a **Árvore Rubro-Negra** (Red-Black Tree) permitem buscas rápidas com uma complexidade de tempo de $ O(\log N) $. No entanto, se aplicarmos isso diretamente a um banco de dados em disco, um problema sério ocorrerá.
+Para buscas na memória, árvores de busca binária balanceadas como a **Árvore de Busca Binária** ([Binary Search](https://kenji.blog/pt/p/search-algorithms-linear-binary-hash-table-principles/) Tree: BST) e a **Árvore Rubro-Negra** (Red-Black Tree) permitem buscas rápidas com uma complexidade de tempo de $ O(\log N) $. No entanto, se aplicarmos isso diretamente a um banco de dados em disco, um problema sério ocorrerá.
 
 Uma árvore binária tem um nó com no máximo dois nós filhos. À medida que o número de elementos $ N $ aumenta, a altura da árvore $ h $ se aprofunda proporcionalmente a $ \log_2 N $. Por exemplo, quando $ N = 1.000.000 $, a altura da árvore será em torno de 20. Supondo que cada nó esteja alocado em uma página de disco diferente, ocorrerão até 20 E/S de disco aleatórias no pior dos casos. Este é um atraso fatal para um banco de dados.
 
@@ -73,7 +73,7 @@ Isso fundamenta matematicamente que a **Árvore B** é extremamente eficiente pa
 
 ## 4. O Padrão de Banco de Dados: Evolução para a Árvore B+
 
-Nos [RDBMS](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/) reais (como o InnoDB do MySQL e o PostgreSQL), a **Árvore B+** (B+Tree), uma versão melhorada da Árvore B, é utilizada.
+Nos [RDBMS](https://kenji.blog/pt/p/rdbms-transaction-acid-isolation-level-lock/) reais (como o InnoDB do MySQL e o PostgreSQL), a **Árvore B+** (B+[Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)), uma versão melhorada da Árvore B, é utilizada.
 
 ### 4.1 Diferenças entre a Árvore B e a Árvore B+
 
@@ -217,6 +217,6 @@ Como pode ser visto a partir desta implementação, a inserção na Árvore B di
 
 A **Árvore B** e a **Árvore B+** são estruturas de dados que podem ser descritas como obras-primas, projetadas para minimizar os custos de E/S em sistemas baseados em disco. Elas mesclam perfeitamente características de dispositivos físicos com algoritmos matemáticos, como a estrutura de árvore rasa devido ao alto número de ramificações, e a otimização do acesso sequencial.
 
-Nos últimos anos, com a disseminação dos SSDs, surgiram novas estruturas de dados como a **Árvore LSM** (Log-Structured Merge-Tree) para mitigar a amplificação de gravação (Write Amplification). No entanto, considerando o equilíbrio entre desempenho de leitura e buscas em faixa, bem como a estabilidade no processamento de transações, a **Árvore B+** continua reinando como a soberana absoluta em bancos de dados relacionais.
+Nos últimos anos, com a disseminação dos SSDs, surgiram novas estruturas de dados como a **Árvore LSM** (Log-Structured Merge-[Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) para mitigar a amplificação de gravação (Write Amplification). No entanto, considerando o equilíbrio entre desempenho de leitura e buscas em faixa, bem como a estabilidade no processamento de transações, a **Árvore B+** continua reinando como a soberana absoluta em bancos de dados relacionais.
 
 Compreender o que acontece internamente em um banco de dados está diretamente ligado à otimização de consultas e ao design adequado de índices. Recomendamos que você observe o comportamento dos índices em suas operações diárias de banco de dados, usando a teoria explicada neste artigo como base.

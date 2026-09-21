@@ -17,7 +17,7 @@ description: 'Stellt empfohlene Erweiterungen vor, die Visual Studio Code (VSCod
 | Virtuelle und Container-Verwaltung | [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | Unterstützt die Verwaltung von Docker-Containern |
 | Code-Verwaltung | GitHub Pull Requests | GitHub | Verwaltet GitHub Pull Requests in VSCode |
 | Code-Verwaltung | GitHub Copilot | GitHub | Unterstützt KI-gestützte Code-Vervollständigung |
-| Code-Verwaltung | Git Graph | mhutchie | Zeigt Git-Branches und Commits grafisch an |
+| Code-Verwaltung | Git [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) | mhutchie | Zeigt Git-Branches und Commits grafisch an |
 | Code-Verwaltung | Git History | Don Jayamanne | Zeigt den Git-Verlauf an |
 | Browser und Webentwicklung | Debugger for Firefox | Firefox DevTools | Verwendet den Firefox-Debugger in VSCode |
 | Browser und Webentwicklung | Microsoft Edge Tool For VScode | Microsoft | Verwendet die Edge-Entwicklertools in VSCode |

@@ -27,13 +27,13 @@ Pada saat Anda selesai membaca artikel ini, Anda seharusnya dapat melepaskan dir
 
 Langkah pertama untuk mempermudah pemecahan masalah adalah mengetahui bagaimana Git menyimpan data. Folder tersembunyi `.git` yang ada di direktori root proyek Anda adalah jantung dari Git. Git bukanlah sistem yang hanya merekam perbedaan file (patch) secara berurutan, melainkan mengelola data sebagai **aliran snapshot (snapshot stream)**.
 
-### 2.1 Model Objek: Blob, Tree, Commit
+### 2.1 Model Objek: Blob, [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), Commit
 
 Git pada dasarnya menggunakan 3 objek untuk merepresentasikan keadaan repositori. Objek-objek ini disimpan di `.git/objects`.
 
 1. **Blob (Binary Large Object)**
    Objek ini menyimpan isi file itu sendiri. Informasi tentang nama file atau izin tidak disertakan di sini. Urutan byte murni dikompresi dengan zlib dan diidentifikasi oleh nilai hash SHA-1 (40 karakter heksadesimal).
-2. **Tree**
+2. **[Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
    Objek ini merepresentasikan struktur direktori. Objek Tree berisi pointer (nilai hash SHA-1) ke objek Tree lainnya (subdirektori) atau objek Blob (file), beserta nama file dan izin aksesnya. Ini berfungsi mirip dengan direktori pada UNIX.
 3. **Commit**
    Menyimpan pointer ke objek Tree tingkat atas (top-level) dari seluruh repositori pada titik waktu tertentu, bersama dengan metadata (pembuat, tanggal dan waktu komit, pesan komit), dan pointer ke komit sebelumnya (komit induk).
@@ -334,7 +334,7 @@ Terdapat bug pada cabang `main` saat ini, namun saat rilis sebulan yang lalu sem
 
 ### Solusi: Identifikasi Bug dengan Pencarian Biner
 
-Git memiliki alat bawaan untuk menemukan komit penyebab bug dengan menggunakan pencarian biner matematis (Binary Search). Karena kompleksitasnya adalah $\mathcal{O}(\log N)$, meskipun ada 1000 komit, ia dapat mengidentifikasinya hanya dalam sekitar 10 pengujian.
+Git memiliki alat bawaan untuk menemukan komit penyebab bug dengan menggunakan pencarian biner matematis ([Binary Search](https://kenji.blog/id/p/search-algorithms-linear-binary-hash-table-principles/)). Karena kompleksitasnya adalah $\mathcal{O}(\log N)$, meskipun ada 1000 komit, ia dapat mengidentifikasinya hanya dalam sekitar 10 pengujian.
 
 ```bash
 # Mulai pencarian

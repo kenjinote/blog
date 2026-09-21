@@ -55,7 +55,7 @@ flowchart TD
 
 日本程式設計教育課程最大的弱點，甚至可以說是致命缺陷的，就是「寫碼技術」與「數學、離散數學（Discrete Mathematics）」之間的結合嚴重不足。在以美國和印度為首的頂級電腦科學教育中，比起程式語言的語法本身，更重視演算法的效率、數理邏輯以及數學證明。因為程式碼不過是數學公式的翻譯罷了。
 
-### 時間複雜度與空間複雜度（Big O Notation）的絕對支配
+### 時間複雜度與空間複雜度（[Big O](https://kenji.blog/zh-tw/p/time-space-complexity-big-o-notation-examples/) Notation）的絕對支配
 
 在評估與設計軟體效能時，時間複雜度（Time Complexity）和空間複雜度（Space Complexity）的概念是無法迴避的。當輸入某個演算法的資料規模為 $N$ 時，表示執行時間或記憶體消耗將如何增長的，就是蘭道漸近符號（Big O Notation，大 O 符號）。
 
@@ -134,7 +134,7 @@ int main() {
 - 投影（Projection, $\pi$）: 擷取特定的屬性（行）
 - 結合（Join, $\bowtie$）: 多個關聯的條件式交集
 
-此外，為了能從龐大的紀錄中瞬間搜尋出目標資料，學習「[B-Tree](https://kenji.blog/zh-tw/p/b-tree-database-index-theory/)（B樹）索引」的結構，是資料結構應用的最佳實踐。B-Tree 能將磁碟 I/O 的次數降至最低，同時保證 $O(\log N)$ 的搜尋速度。不了解交易（[Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)）的 [ACID](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) 特性（原子性、一致性、隔離性、持久性），是無法建立出強健的系統的。
+此外，為了能從龐大的紀錄中瞬間搜尋出目標資料，學習「[B-Tree](https://kenji.blog/zh-tw/p/b-tree-database-index-theory/)（B樹）索引」的結構，是資料結構應用的最佳實踐。B-[Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 能將磁碟 I/O 的次數降至最低，同時保證 $O(\log N)$ 的搜尋速度。不了解交易（[Transaction](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/)）的 [ACID](https://kenji.blog/zh-tw/p/rdbms-transaction-acid-isolation-level-lock/) 特性（原子性、一致性、隔離性、持久性），是無法建立出強健的系統的。
 
 ## 6. 安全性與密碼學：質因數分解困難性支撐著社會基礎設施
 

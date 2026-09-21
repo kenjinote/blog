@@ -346,7 +346,7 @@ operation UseMyOp(controlQubit: Qubit, targetQubits: Qubit[]) : Unit {
     Controlled Adjoint MyComplexSubroutine([controlQubit], targetQubits);
 }
 ```
-この機能により、グローバーの探索アルゴリズムのオラクル実装や、ショアの素因数分解アルゴリズムなど、複雑なサブルーチンとその逆演算（不要なもつれを解くためのアンコンピュテーション：Uncomputation）を頻繁に利用する高度なアルゴリズムの実装が、劇的に簡素化され、ヒューマンエラーやバグが入り込む余地を大幅に減らすことができます。これは、回路構築モデルであるQiskitなどと比較して、アルゴリズム記述言語であるQ#が持つ最大の強みの一つと言えるでしょう。
+この機能により、グローバーの[探索アルゴリズム](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)のオラクル実装や、ショアの素因数分解アルゴリズムなど、複雑なサブルーチンとその逆演算（不要なもつれを解くためのアンコンピュテーション：Uncomputation）を頻繁に利用する高度なアルゴリズムの実装が、劇的に簡素化され、ヒューマンエラーやバグが入り込む余地を大幅に減らすことができます。これは、回路構築モデルであるQiskitなどと比較して、アルゴリズム記述言語であるQ#が持つ最大の強みの一つと言えるでしょう。
 
 ### 8.2 リソース推定 (Resource Estimation) と未来への備え
 現在の[量子コンピュータ](https://kenji.blog/p/quantum-computing-shors-algorithm/)は「NISQ (Noisy Intermediate-Scale Quantum)」と呼ばれる発展途上の段階にあり、利用可能な量子ビット数も数十から数百程度と少なく、エラー率も高い状態です。しかし、将来的な誤り耐性量子コンピュータ（FTQC: Fault-Tolerant Quantum Computer）の時代を見据えると、ある新しいアルゴリズムを実行するのに「一体どれくらいの論理量子ビットが必要なのか」「誤り訂正においてコストが非常に高いTゲートやトフォリゲートが何回使われるのか」「実行時間はどれくらいになるか」を事前に正確に見積もることが極めて重要になります。

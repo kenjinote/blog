@@ -42,7 +42,7 @@ graph TD
 ```
 
 1. **テンソル（Tensor）管理**: 多次元配列のデータ構造と、次元ごとのストライド（Stride）を管理。
-2. **計算グラフ（Computation Graph）**: ニューラルネットワークの各層の演算を、有向非巡回グラフ（DAG）として表現。
+2. **計算[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)（Computation [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）**: ニューラルネットワークの各層の演算を、有向非巡回グラフ（DAG）として表現。
 3. **メモリアリーナ（Memory Arena）**: 動的メモリ確保（`malloc`や`new`）のオーバーヘッドを避けるための、事前確保型[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)機構。
 4. **バックエンド（Backend）**: CPUやGPUなど、特定のハードウェアに最適化された演算の実装（カーネル）。
 
@@ -149,7 +149,7 @@ struct Tensor {
 
 ---
 
-## 5. 計算グラフ（DAG）の構築と遅延評価
+## 5. 計算[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)（DAG）の構築と遅延評価
 
 PyTorchなどと同様に、我々の推論エンジンも「Define-by-Run」に近い遅延評価（Lazy Evaluation）を採用します。つまり、演算関数を呼び出した時点では計算を行わず、グラフ（ノード間の依存関係）だけを構築します。
 
@@ -183,7 +183,7 @@ graph LR
     D --> E["Execute Nodes In Order"]
 ```
 
-グラフを評価する際（フォワードパス）は、トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)を用いて依存関係のないノードから順に処理を実行します。推論のみであればバックプロパゲーション用の勾配を保持する必要がないため、[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)は非常にシンプルになります。
+[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)を評価する際（フォワードパス）は、トポロジカル[ソート](https://kenji.blog/p/sorting-algorithms/)を用いて依存関係のないノードから順に処理を実行します。推論のみであればバックプロパゲーション用の勾配を保持する必要がないため、[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)は非常にシンプルになります。
 
 ---
 
@@ -402,7 +402,7 @@ CPUを用いた推論を行う場合、マルチスレッド化は必須です�
 高度なC++推論エンジンでは、以下のテクニックを駆使します。
 1. **スレッドピンニング（Thread Pinning）**: 各スレッドを特定のCPUコアに固定（Affinityを設定）し、コンテキストスイッチによるキャッシュ破棄を防ぐ。
 2. **NUMAアウェアなアロケーション**: データを処理するスレッドと同じNUMAノード上にメモリを確保する。
-3. **ワークスティーリング型スレッドプール**: 計算グラフの各ノードを細かなタスクに分割し、空いているスレッドが自動的にタスクを奪取して実行する効率的なスケジューラを実装。
+3. **ワークスティーリング型スレッドプール**: 計算[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)の各ノードを細かなタスクに分割し、空いているスレッドが自動的にタスクを奪取して実行する効率的なスケジューラを実装。
 
 これらを駆使することで、CPU使用率を100%付近にピタリと張り付かせ、理論値に近いスループットを叩き出すことができます。
 

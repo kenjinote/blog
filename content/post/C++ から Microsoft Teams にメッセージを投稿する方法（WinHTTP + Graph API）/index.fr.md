@@ -9,7 +9,7 @@ categories: ["tools-development-environment"]
 description: 'Incontournable pour ceux qui souhaitent implémenter la publication automatique de messages sur Microsoft Teams depuis C++ ! Nous expliquons étape par étape et de manière claire des exemples concrets de code C++ utilisant WinHTTP et Graph API, ainsi que les procédures obligatoires d''enregistrement d''application Azure et d''authentification API.'
 ---
 
-# Comment publier un message dans Microsoft Teams depuis C++ (WinHTTP + Graph API)
+# Comment publier un message dans Microsoft Teams depuis C++ (WinHTTP + [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API)
 
 Vous souhaitez publier automatiquement dans une conversation Microsoft Teams —  
 C'est là que l' **API Microsoft Graph** s'avère utile.  
@@ -29,7 +29,7 @@ Tout d'abord, pour utiliser l'API Microsoft Graph, vous devez enregistrer une ap
 ### 2. Ajouter des autorisations d'API
 
 1. Allez dans le menu de gauche "Autorisations de l'API"
-2. **Microsoft Graph** > **Sélectionner les autorisations**, recherchez les portées ci-dessous et cliquez sur **Mettre à jour les autorisations**
+2. **Microsoft [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** > **Sélectionner les autorisations**, recherchez les portées ci-dessous et cliquez sur **Mettre à jour les autorisations**
 
 - Chat.ReadWrite
 - User.Read
@@ -77,7 +77,7 @@ curl -X POST ^
 }
 ```
 
-Utilisez cet access_token pour appeler l'API Microsoft Graph.
+Utilisez cet access_token pour appeler l'API Microsoft [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/).
 
 ## 💬 Exemple C++ pour publier dans une conversation Teams
 Voici un exemple C++ qui utilise WinHTTP pour publier dans une conversation.
@@ -170,7 +170,7 @@ curl -X GET ^
   - Vérification des certificats HTTPS
   - Amélioration de la gestion des erreurs
 - Les publications de canal utilisent teams/{team-id}/channels/{channel-id}/messages.
-- L'envoi de pièces jointes nécessite un traitement multipart ou l'API Graph Drive.
+- L'envoi de pièces jointes nécessite un traitement multipart ou l'API [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Drive.
 
 ## Résumé
 
@@ -181,7 +181,7 @@ curl -X GET ^
 | Graph API | API officielle pour interagir avec Teams |
 | Inscription de l'application | Procédures d'authentification requises sur Azure |
 | Jeton d'accès | Obtenu via [OAuth](https://kenji.blog/fr/p/oauth2-oidc-authentication-authorization-difference/)2 et utilisé pour les requêtes |
-| Implémentation C++ | Appelle l'API Graph en utilisant WinHTTP |
+| Implémentation C++ | Appelle l'API [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) en utilisant WinHTTP |
 
 ## 🚀 Prochaines étapes
 

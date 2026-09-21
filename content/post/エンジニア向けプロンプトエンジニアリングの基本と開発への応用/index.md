@@ -165,7 +165,7 @@ graph TD
     F --> G["最終的な最適化されたコードの生成"]
 ```
 
-### 3.3 Tree of Thoughts (ToT)
+### 3.3 [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) of Thoughts (ToT)
 
 CoTの概念をさらに拡張したのが **Tree of Thoughts (ToT)** です。CoTが一本道（線形）の推論パスをたどるのに対し、ToTは探索木のように複数の推論パス（枝）を並行して展開し、それぞれのパスをモデル自身に自己評価させ、バックトラック（引き返し）を行いながら最適な解決策に至るという手法です。
 

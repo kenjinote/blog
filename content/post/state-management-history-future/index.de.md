@@ -417,7 +417,7 @@ Das bedeutet, dass der Overhead der Differenzberechnung im Virtual DOM umgangen 
 
 ### 10.3 Das mathematische Modell von Signals
 
-Hinter Signals verbirgt sich die Theorie der "Reaktiven Programmierung", die Abhängigkeiten zwischen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) und Berechnungen als **Gerichteten Azyklischen Graphen (Directed Acyclic Graph: DAG)** modelliert und die Graphentopologie (Topological Sort) nutzt, um die Update-Reihenfolge effizient zu bestimmen.
+Hinter Signals verbirgt sich die Theorie der "Reaktiven Programmierung", die Abhängigkeiten zwischen [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/) und Berechnungen als **Gerichteten Azyklischen Graphen (Directed Acyclic [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/): DAG)** modelliert und die Graphentopologie (Topological Sort) nutzt, um die Update-Reihenfolge effizient zu bestimmen.
 
 Wenn ein abgeleiteter Zustand (Computed) $ C $ von den Signalen $ S_1, S_2 $ abhängt, werden die Kanten $ S_1 \to C $, $ S_2 \to C $ gebildet.
 Wenn ein Wert aktualisiert wird, wird der Graph durchlaufen und nur die erforderlichen Knoten werden ausgewertet (z. B. durch eine Push/Pull-Hybridstrategie). Dies verhindert Glitches (das kurze Aufblinken inkonsistenter UI in Zwischenzuständen) und garantiert topologische Konsistenz.

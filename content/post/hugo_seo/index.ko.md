@@ -14,7 +14,7 @@ Hugo는 Go 언어로 작성된 세계에서 가장 빠른 클래스의 정적 �
 
 검색 순위를 향상시키고, 소셜 미디어에서의 확산력을 높이며, 결과적으로 블로그의 방문자 수를 극적으로 늘리기 위해서는 치밀한 SEO(검색 엔진 최적화) 대책이 필수적입니다. Hugo에서 SEO 대책의 심장부가 되는 것은 각 마크다운 기사의 서두에 작성하는 **프론트매터(Frontmatter)** 와 이를 해석하여 HTML의 `<head>` 태그 내에 메타데이터를 전개하는 **템플릿([Layout](https://kenji.blog/ko/p/browser-rendering-mechanism-dom-paint/)s)** 의 연계입니다.
 
-본 기사에서는 Hugo의 기능을 최대한으로 끌어내고, 고도의 SEO 대책을 구현하기 위한 프론트매터 설정부터 각종 메타 태그, OGP(Open Graph Protocol), Twitter Cards, 그리고 JSON-LD를 활용한 구조화 데이터 출력에 이르기까지 약 1만 글자가 넘는 압도적인 분량으로 철저히 해설합니다.
+본 기사에서는 Hugo의 기능을 최대한으로 끌어내고, 고도의 SEO 대책을 구현하기 위한 프론트매터 설정부터 각종 메타 태그, OGP(Open [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol), Twitter Cards, 그리고 JSON-LD를 활용한 구조화 데이터 출력에 이르기까지 약 1만 글자가 넘는 압도적인 분량으로 철저히 해설합니다.
 
 ---
 
@@ -122,7 +122,7 @@ Hugo의 `.Summary`를 폴백으로 사용함으로써 `description`이 설정되
 
 ## 4. OGP와 Twitter Cards: 소셜 미디어에서의 CTR을 극대화
 
-Twitter(X)나 Facebook 등 SNS에서 기사가 공유되었을 때 매력적인 카드 형식으로 표시되게 하려면 Open Graph Protocol (OGP)과 Twitter Cards의 설정이 빠질 수 없습니다. 이것 역시 프론트매터에서 동적으로 생성합니다.
+Twitter(X)나 Facebook 등 SNS에서 기사가 공유되었을 때 매력적인 카드 형식으로 표시되게 하려면 Open [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP)과 Twitter Cards의 설정이 빠질 수 없습니다. 이것 역시 프론트매터에서 동적으로 생성합니다.
 
 ### 4.1. 내장 템플릿의 문제점
 

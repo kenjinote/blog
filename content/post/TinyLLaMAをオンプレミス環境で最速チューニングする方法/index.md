@@ -139,7 +139,7 @@ pip install transformers datasets peft trl accelerate bitsandbytes
 ただスクリプトを回すだけでなく、「最速」でチューニングを完了させるためには、以下の最適化手法を組み合わせる必要があります。
 
 ### 5.1 Flash Attention 2
-標準的なAttentionメカニズムは、シーケンス長 $N$ に対して時間・空間計算量が $O(N^2)$ となります。Flash Attention 2は、GPUのSRAMとHBM（High Bandwidth Memory）間のメモリアクセスを最適化することで、計算量を削減せずにIOネックを解消し、学習速度を数倍に引き上げ、メモリ消費を激減させます。
+標準的なAttentionメカニズムは、シーケンス長 $N$ に対して時間・[空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)が $O(N^2)$ となります。Flash Attention 2は、GPUのSRAMとHBM（High Bandwidth Memory）間のメモリアクセスを最適化することで、計算量を削減せずにIOネックを解消し、学習速度を数倍に引き上げ、メモリ消費を激減させます。
 
 ### 5.2 Gradient Checkpointing (勾配チェックポイント)
 フォワードパスで計算された中間アクティベーションをすべてVRAMに保存するのではなく、一部のみを保存し、バックワードパスで必要になった際に再計算する手法です。計算時間は約20%増加しますが、メモリ消費量を劇的に削減できるため、結果としてより大きなバッチサイズを設定でき、スループット全体が向上します。

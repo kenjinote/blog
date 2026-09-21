@@ -28,7 +28,7 @@ Cependant, en 1890, Percy Heawood découvrit un défaut fatal dans la preuve de 
 
 ## 4. Conversion à la théorie des graphes
 
-Afin de traiter le problème des quatre couleurs avec rigueur mathématique, le problème est traduit dans le langage de la théorie des graphes. Chaque région de la carte est un « Sommet » (Vertex) et les régions qui partagent une frontière sont reliées par une « Arête » (Edge). Le graphe ainsi créé est appelé un « graphe planaire » (Planar Graph).
+Afin de traiter le problème des quatre couleurs avec rigueur mathématique, le problème est traduit dans le langage de la théorie des graphes. Chaque région de la carte est un « Sommet » (Vertex) et les régions qui partagent une frontière sont reliées par une « Arête » (Edge). Le graphe ainsi créé est appelé un « graphe planaire » (Planar [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
 
 Un graphe planaire est un graphe qui peut être dessiné sur un plan sans que ses arêtes ne se croisent. Le problème des quatre couleurs se réduit au problème selon lequel « les sommets de tous les graphes planaires peuvent être coloriés avec **4 couleurs** de telle sorte que les sommets adjacents aient des couleurs différentes ».
 
@@ -85,7 +85,7 @@ Cependant, en 1890, Percy Heawood découvrit un défaut fatal dans la preuve de 
 
 ## 4. Conversion à la théorie des graphes
 
-Afin de traiter le problème des quatre couleurs avec rigueur mathématique, le problème est traduit dans le langage de la théorie des graphes. Chaque région de la carte est un « Sommet » (Vertex) et les régions qui partagent une frontière sont reliées par une « Arête » (Edge). Le graphe ainsi créé est appelé un « graphe planaire » (Planar Graph).
+Afin de traiter le problème des quatre couleurs avec rigueur mathématique, le problème est traduit dans le langage de la théorie des graphes. Chaque région de la carte est un « Sommet » (Vertex) et les régions qui partagent une frontière sont reliées par une « Arête » (Edge). Le graphe ainsi créé est appelé un « graphe planaire » (Planar [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
 
 Un graphe planaire est un graphe qui peut être dessiné sur un plan sans que ses arêtes ne se croisent. Le problème des quatre couleurs se réduit au problème selon lequel « les sommets de tous les graphes planaires peuvent être coloriés avec **4 couleurs** de telle sorte que les sommets adjacents aient des couleurs différentes ».
 
@@ -142,7 +142,7 @@ Cependant, en 1890, Percy Heawood découvrit un défaut fatal dans la preuve de 
 
 ## 4. Conversion à la théorie des graphes
 
-Afin de traiter le problème des quatre couleurs avec rigueur mathématique, le problème est traduit dans le langage de la théorie des graphes. Chaque région de la carte est un « Sommet » (Vertex) et les régions qui partagent une frontière sont reliées par une « Arête » (Edge). Le graphe ainsi créé est appelé un « graphe planaire » (Planar Graph).
+Afin de traiter le problème des quatre couleurs avec rigueur mathématique, le problème est traduit dans le langage de la théorie des graphes. Chaque région de la carte est un « Sommet » (Vertex) et les régions qui partagent une frontière sont reliées par une « Arête » (Edge). Le graphe ainsi créé est appelé un « graphe planaire » (Planar [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
 
 Un graphe planaire est un graphe qui peut être dessiné sur un plan sans que ses arêtes ne se croisent. Le problème des quatre couleurs se réduit au problème selon lequel « les sommets de tous les graphes planaires peuvent être coloriés avec **4 couleurs** de telle sorte que les sommets adjacents aient des couleurs différentes ».
 
@@ -199,7 +199,7 @@ Cependant, en 1890, Percy Heawood découvrit un défaut fatal dans la preuve de 
 
 ## 4. Conversion à la théorie des graphes
 
-Afin de traiter le problème des quatre couleurs avec rigueur mathématique, le problème est traduit dans le langage de la théorie des graphes. Chaque région de la carte est un « Sommet » (Vertex) et les régions qui partagent une frontière sont reliées par une « Arête » (Edge). Le graphe ainsi créé est appelé un « graphe planaire » (Planar Graph).
+Afin de traiter le problème des quatre couleurs avec rigueur mathématique, le problème est traduit dans le langage de la théorie des graphes. Chaque région de la carte est un « Sommet » (Vertex) et les régions qui partagent une frontière sont reliées par une « Arête » (Edge). Le graphe ainsi créé est appelé un « graphe planaire » (Planar [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
 
 Un graphe planaire est un graphe qui peut être dessiné sur un plan sans que ses arêtes ne se croisent. Le problème des quatre couleurs se réduit au problème selon lequel « les sommets de tous les graphes planaires peuvent être coloriés avec **4 couleurs** de telle sorte que les sommets adjacents aient des couleurs différentes ».
 

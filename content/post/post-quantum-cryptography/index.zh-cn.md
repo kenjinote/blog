@@ -74,7 +74,7 @@ graph LR
 基于哈希的密码是专注于数字签名的PQC算法。其安全性的基础仅仅依赖于安全的“密码学哈希函数”（如SHA-2或SHA-3）所具备的抗碰撞性和单向性。
 
 **机制概要：** 
-以只能使用一次的所谓“兰波特签名（Lamport Signature）”（一次性签名）为出发点，通过使用被称为“默克尔树（Merkle Tree）”的树状数据结构将其捆绑，从而使得一个密钥对能够进行多次签名。
+以只能使用一次的所谓“兰波特签名（Lamport Signature）”（一次性签名）为出发点，通过使用被称为“默克尔树（Merkle [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）”的树状数据结构将其捆绑，从而使得一个密钥对能够进行多次签名。
 
 **优点：** 
 - 安全基础极其坚固，有着“只要哈希函数安全则密码安全”的强力证明。

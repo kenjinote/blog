@@ -57,7 +57,7 @@ k-匿名性保证了准标识符的组合（等价类：Equivalence Class）必�
 - **l-多样性 (l-diversity)** ：在每个等价类中，保证敏感属性至少具有 $l$ 种不同的值。
 - **t-贴近性 (t-closeness)** ：使每个等价类中敏感属性的分布与整个数据集敏感属性分布之间的距离（如推土机距离 Earth Mover's Distance）小于等于阈值 $t$。
 
-### 2.2 差分隐私 (Differential Privacy: DP)
+### 2.2 差分隐私 (Differential Privacy: [DP](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
 克服了k-匿名性模型的局限性，并且作为目前最强大、数学上最严谨的隐私标准而被广泛采用的，是Cynthia Dwork等人在2006年提出的“差分隐私（Differential Privacy）”。Apple、Google、Microsoft等科技巨头在收集用户的遥测数据或统计数据时，都应用了这种 $\epsilon$-差分隐私。
 

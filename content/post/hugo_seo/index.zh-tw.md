@@ -14,7 +14,7 @@ Hugo 是一款以 Go 語言編寫、世界最快等級的靜態網站產生器 (
 
 為了提升搜尋排名、增強在社群媒體上的擴散力，進而大幅增加部落格的流量，縝密的 SEO (搜尋引擎最佳化) 策略是不可或缺的。Hugo 中 SEO 策略的核心，在於每篇 Markdown 文章開頭所撰寫的 **Frontmatter** ，與解析它並將中繼資料展開至 HTML `<head>` 標籤內的 **模板 ([Layout](https://kenji.blog/zh-tw/p/browser-rendering-mechanism-dom-paint/)s)** 之間的協作。
 
-本文將徹底解說如何將 Hugo 的功能發揮到極致，以實作進階 SEO 策略的 Frontmatter 設定，涵蓋各種 Meta 標籤、OGP (Open Graph Protocol)、Twitter Cards，以及使用 JSON-LD 輸出結構化資料。內容將以壓倒性的豐富度詳細說明。
+本文將徹底解說如何將 Hugo 的功能發揮到極致，以實作進階 SEO 策略的 Frontmatter 設定，涵蓋各種 Meta 標籤、OGP (Open [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol)、Twitter Cards，以及使用 JSON-LD 輸出結構化資料。內容將以壓倒性的豐富度詳細說明。
 
 ---
 
@@ -122,7 +122,7 @@ canonicalUrl: "https://example.com/post/hugo-seo-frontmatter-tips/" # 明確的�
 
 ## 4. OGP 與 Twitter Cards：將社群媒體的 CTR 最大化
 
-當文章在 Twitter (X) 或 Facebook 等社群網路服務 (SNS) 上被分享時，為了讓它以具吸引力的卡片格式顯示，Open Graph Protocol (OGP) 與 Twitter Cards 的設定是不可或缺的。這同樣可由 Frontmatter 動態產生。
+當文章在 Twitter (X) 或 Facebook 等社群網路服務 (SNS) 上被分享時，為了讓它以具吸引力的卡片格式顯示，Open [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP) 與 Twitter Cards 的設定是不可或缺的。這同樣可由 Frontmatter 動態產生。
 
 ### 4.1. 內建模板的挑戰
 

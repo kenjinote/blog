@@ -185,9 +185,9 @@ def insertion_sort(arr):
 
 ## 3. $O(n \log n)$ のアルゴリズム：分割統治と圧倒的な効率
 
-データ量 $n$ が大きくなると、$O(n^2)$ のアルゴリズムでは計算時間が爆発的に増大し、実用に耐えなくなります。そこで登場するのが、配列を分割して再帰的に処理する **分割統治法** (Divide and Conquer) などの高度なテクニックを用いたアルゴリズムです。比較ベースのソートアルゴリズムの理論的限界である $O(n \log n)$ を達成し、大規模データに対して圧倒的なパフォーマンスを発揮します。
+データ量 $n$ が大きくなると、$O(n^2)$ のアルゴリズムでは計算時間が爆発的に増大し、実用に耐えなくなります。そこで登場するのが、配列を分割して再帰的に処理する **分割統治法** (Divide and Conquer) などの高度なテクニックを用いたアルゴリズムです。比較ベースの[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)の理論的限界である $O(n \log n)$ を達成し、大規模データに対して圧倒的なパフォーマンスを発揮します。
 
-### 3.1 マージソート (Merge Sort)
+### 3.1 [マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/) (Merge Sort)
 
 マージソートは、ジョン・フォン・ノイマンによって1945年に考案された、美しく堅牢なアルゴリズムです。「分割統治法」の代表例であり、配列を半分、また半分と要素が1つになるまで分割し、その後ソートしながら「併合（マージ）」していくアプローチをとります。
 
@@ -212,9 +212,9 @@ graph TD
     I -.->|"併合"| J
 ```
 
-#### 時間・空間計算量と特徴
+#### 時間・[空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)と特徴
 
-*   **最悪・平均・最良時間計算量**: 全て $O(n \log n)$
+*   **最悪・平均・最良[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)**: 全て $O(n \log n)$
     *   常に半分に分割していくため、分割の深さは $\log_2 n$。各階層での併合処理は全体で $O(n)$ の時間がかかるため、乗算して $O(n \log n)$ となります。データの状態によらず計算量が一定であるため、非常に予測しやすく堅牢です。
 *   **空間計算量**: $O(n)$ （Out-of-place）
     *   併合を行う際に、元の配列と同じサイズの作業用配列を必要とするのが最大の弱点です。
@@ -261,9 +261,9 @@ def merge(left, right):
     return result
 ```
 
-### 3.2 クイックソート (Quick Sort)
+### 3.2 [クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/) (Quick Sort)
 
-トニー・ホアによって考案されたクイックソートは、名前の通り、実世界において最も高速に動作することが多い優れたアルゴリズムです。マージソートと同じく分割統治法を用いますが、アプローチが異なります。基準となる要素（**ピボット**）を選び、ピボットより小さいグループと大きいグループに振り分けることでソートを進めます。
+トニー・ホアによって考案されたクイックソートは、名前の通り、実世界において最も高速に動作することが多い優れたアルゴリズムです。[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)と同じく分割統治法を用いますが、アプローチが異なります。基準となる要素（**ピボット**）を選び、ピボットより小さいグループと大きいグループに振り分けることでソートを進めます。
 
 #### クイックソートの仕組み
 
@@ -273,9 +273,9 @@ def merge(left, right):
 
 ピボットの選び方や分割方法（Hoare方式、Lomuto方式）によって性能が大きく変わります。
 
-#### 時間・空間計算量と特徴
+#### 時間・[空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)と特徴
 
-*   **最悪時間計算量**: $O(n^2)$
+*   **最悪[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)**: $O(n^2)$
     *   これは致命的な弱点です。すでにソート済みの配列に対して、常に端の要素をピボットとして選んでしまうと、配列が「1つ」と「残り全部」に偏って分割され続け、最悪計算量に陥ります。これを回避するために「Median-of-three（先頭・中央・末尾の中央値をとる）」などのピボット選択の工夫が必須です。
 *   **平均時間計算量**: $O(n \log n)$
     *   実質的には定数係数が非常に小さく、キャッシュ効率が極めて良いため、マージソートやヒープソートよりも高速に動作します。
@@ -340,7 +340,7 @@ def partition(arr, low, high):
 
 ### 3.3 ヒープソート (Heap Sort)
 
-ヒープソートは、**二分ヒープ（Binary Heap）**という木構造のデータ構造を巧みに利用したソートアルゴリズムです。最悪計算量が $O(n \log n)$ でありながら、追加のメモリを使用しない In-place なソートであるという、マージソートとクイックソートの良いとこ取りのような特性を持ちます。
+ヒープソートは、**二分ヒープ（Binary Heap）**という[木構造](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)のデータ構造を巧みに利用した[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)です。最悪計算量が $O(n \log n)$ でありながら、追加のメモリを使用しない In-place なソートであるという、[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)と[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)の良いとこ取りのような特性を持ちます。
 
 #### ヒープソートの仕組み
 
@@ -359,9 +359,9 @@ graph TD
     C --> G["孫"]
 ```
 
-#### 時間・空間計算量と特徴
+#### 時間・[空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)と特徴
 
-*   **最悪・平均・最良時間計算量**: 全て $O(n \log n)$
+*   **最悪・平均・最良[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)**: 全て $O(n \log n)$
     *   ヒープの構築に $O(n)$、最大値の抽出と再構築（$O(\log n)$）を $n$ 回繰り返すため、全体で $O(n \log n)$ となります。いかなるデータの並びでもこの計算量が保証されるため、最悪ケースの回避が求められるシステムで重宝します。
 *   **空間計算量**: $O(1)$ （In-place）
     *   配列上でそのままヒープ木を表現するため、追加のメモリを必要としません。
@@ -412,7 +412,7 @@ def heap_sort(arr):
 
 ## 4. $O(n)$ の非比較ソート：比較限界の超越
 
-これまで見てきたソートアルゴリズムはすべて、要素同士の大小関係を比較演算（`<`, `>`, `==`）を用いて判断する「比較ベースのソート」でした。比較ベースのソートは数学的に $O(n \log n)$ より速くならないことが証明されています。
+これまで見てきた[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)はすべて、要素同士の大小関係を比較演算（`<`, `>`, `==`）を用いて判断する「比較ベースのソート」でした。比較ベースのソートは数学的に $O(n \log n)$ より速くならないことが証明されています。
 
 しかし、データの性質（整数である、桁数が決まっている、範囲が狭いなど）をうまく利用し、「比較」を一切行わない特殊なアルゴリズムを用いれば、線形時間 $O(n)$ での超高速ソートが可能になります。
 
@@ -420,8 +420,8 @@ def heap_sort(arr):
 
 計数ソートは、データの中に特定のキー値がいくつ存在するかを「カウント」することで、要素の正しい位置を計算するアルゴリズムです。主に、0から特定の最大値 $k$ までの狭い範囲の整数をソートする場合に劇的な効果を発揮します。
 
-#### 時間・空間計算量
-*   **時間計算量**: $O(n + k)$。データ数 $n$ と値の範囲 $k$ に依存します。$k$ が $n$ と同程度であれば $O(n)$ となりますが、$k$ が非常に大きい（例：1と10億しかない配列）場合は著しく非効率になります。
+#### 時間・[空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)
+*   **[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)**: $O(n + k)$。データ数 $n$ と値の範囲 $k$ に依存します。$k$ が $n$ と同程度であれば $O(n)$ となりますが、$k$ が非常に大きい（例：1と10億しかない配列）場合は著しく非効率になります。
 *   **空間計算量**: $O(n + k)$。カウント用配列と出力用配列を必要とします。
 
 #### Python実装のイメージ
@@ -463,7 +463,7 @@ def counting_sort(arr):
 
 ## 5. 現代の実用界を支配するハイブリッドアルゴリズム
 
-学術的な教科書ではクイックソートやマージソートまでが扱われることが多いですが、現在のプログラミング言語の裏側で実際に稼働しているのは、複数のアルゴリズムの長所を組み合わせた **ハイブリッドアルゴリズム** です。
+学術的な教科書では[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)や[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)までが扱われることが多いですが、現在のプログラミング言語の裏側で実際に稼働しているのは、複数のアルゴリズムの長所を組み合わせた **ハイブリッドアルゴリズム** です。
 
 ### 5.1 Timsort (Pythonのデフォルト)
 
@@ -472,7 +472,7 @@ Timsort（ティムソート）は、Tim Peters氏によって2002年にPython�
 Timsortの最大の設計思想は、 **「現実世界のデータは、完全にランダムなものは少なく、ある程度部分的にソートされている（連続した昇順や降順のブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)がある）ことが多い」** という経験則に基づいています。
 
 #### Timsortの特徴
-*   **マージソートと挿入ソートの融合**: 配列を一定のサイズ（通常は32〜64要素程度）のチャンクに分割し、それぞれを挿入ソートで高速に並べ替えます。その後、それらをマージソートの要領で併合していきます。
+*   **[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)と挿入ソートの融合**: 配列を一定のサイズ（通常は32〜64要素程度）のチャンクに分割し、それぞれを挿入ソートで高速に並べ替えます。その後、それらをマージソートの要領で併合していきます。
 *   **ラン(Run) の活用**: 配列をスキャンし、最初から連続して昇順（または降順）になっている部分（これを "Run" と呼びます）を検出します。降順の場合は反転させて昇順にし、それらをマージの単位として活用します。
 *   **適応的 (Adaptive) な計算量**: 完全にランダムなデータに対しては最悪 $O(n \log n)$ を保証しつつ、すでにソートされている、あるいは部分的にソートされているデータに対しては、最良で $O(n)$ という信じられない速度を叩き出します。
 *   **安定性**: 安定なアルゴリズムです。
@@ -481,7 +481,7 @@ Timsortの最大の設計思想は、 **「現実世界のデータは、完全�
 
 Introspective Sort (イントロソート) は、C++のSTLである `std::sort` や、.NET (C#) の標準ソートなどで採用されています。
 
-クイックソートは平均的に最も高速ですが、ピボットの選び方によっては最悪 $O(n^2)$ に陥る致命的な弱点がありました。Introsortはこの弱点を完全に克服したハイブリッド手法です。
+[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)は平均的に最も高速ですが、ピボットの選び方によっては最悪 $O(n^2)$ に陥る致命的な弱点がありました。Introsortはこの弱点を完全に克服したハイブリッド手法です。
 
 #### Introsortの特徴
 1. 基本的には高速な **クイックソート** を用いて配列を分割していきます。
@@ -495,14 +495,14 @@ Introspective Sort (イントロソート) は、C++のSTLである `std::sort` 
 
 ## 6. 総合比較テーブルまとめ
 
-本記事で解説した主要なソートアルゴリズムの性能を、表形式でまとめました。
+本記事で解説した主要な[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)の性能を、表形式でまとめました。
 
-| アルゴリズム (Algorithm) | 最良時間計算量 (Best Time) | 平均時間計算量 (Avg Time) | 最悪時間計算量 (Worst Time) | 空間計算量 (Space) | 安定性 (Stability) | 手法・特徴 |
+| アルゴリズム (Algorithm) | 最良[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) (Best Time) | 平均時間計算量 (Avg Time) | 最悪時間計算量 (Worst Time) | [空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) (Space) | 安定性 (Stability) | 手法・特徴 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **バブルソート (Bubble Sort)** | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | Yes | 交換。教育用。実用性は低い。 |
+| **[バブルソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/) (Bubble Sort)** | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | Yes | 交換。教育用。実用性は低い。 |
 | **選択ソート (Selection Sort)** | $O(n^2)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | No | 選択。常に全体の走査が必要。 |
 | **挿入ソート (Insertion Sort)** | $O(n)$ | $O(n^2)$ | $O(n^2)$ | $O(1)$ | Yes | 挿入。ほぼソート済みのデータに極めて強い。 |
-| **マージソート (Merge Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | 分割統治。堅牢な計算量だがメモリを食う。 |
+| **[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/) (Merge Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ | Yes | 分割統治。堅牢な計算量だがメモリを食う。 |
 | **クイックソート (Quick Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | $O(\log n)$ | No | 分割統治。平均最速だが最悪ケースに注意。 |
 | **ヒープソート (Heap Sort)** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ | No | 二分ヒープ。In-placeで堅牢。 |
 | **計数ソート (Counting Sort)** | $O(n+k)$ | $O(n+k)$ | $O(n+k)$ | $O(k)$ | Yes | 非比較。キー範囲が狭い場合に最強。 |
@@ -517,11 +517,11 @@ Introspective Sort (イントロソート) は、C++のSTLである `std::sort` 
 
 **「基本的に、言語組み込みの標準ソート関数を使用する」**
 
-これに尽きます。Pythonの `.sort()` や C++の `std::sort` は、本記事で紹介したTimsortやIntrosortなどの高度なハイブリッドアルゴリズムで実装されており、数え切れないほどの最適化（メモリのキャッシュ効率の向上、分岐予測の最適化など）が施されています。自作のクイックソートが標準ライブラリの速度に勝つことはまずありません。
+これに尽きます。Pythonの `.sort()` や C++の `std::sort` は、本記事で紹介したTimsortやIntrosortなどの高度なハイブリッドアルゴリズムで実装されており、数え切れないほどの最適化（メモリのキャッシュ効率の向上、分岐予測の最適化など）が施されています。自作の[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)が標準ライブラリの速度に勝つことはまずありません。
 
-しかし、ではなぜソートアルゴリズムを学ぶ必要があるのでしょうか？
+しかし、ではなぜ[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)を学ぶ必要があるのでしょうか？
 
-1. **基礎概念の理解**: 計算量（Big O Notation）、In-place/Out-of-place、安定性といった概念は、ソートに限らずあらゆるアルゴリズム設計・データ構造設計の基礎となります。
+1. **基礎概念の理解**: 計算量（[Big O](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) Notation）、In-place/Out-of-place、安定性といった概念は、ソートに限らずあらゆるアルゴリズム設計・データ構造設計の基礎となります。
 2. **特殊な制約下のシステム**: 組み込みシステムなどメモリが極度に制限された環境では、$O(1)$ 空間のヒープソートや In-place なクイックソートを自前で実装する必要があるかもしれません。
 3. **データの性質を活かす**: 「値の範囲が1〜100に限られている100万件のデータ」をソートする場合、標準のTimsort（$O(n \log n)$）を使うよりも、計数ソート（$O(n)$）を実装した方が圧倒的に高速になります。
 

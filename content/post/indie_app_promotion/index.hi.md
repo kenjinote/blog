@@ -17,7 +17,7 @@ tags: ["Growth Hacking", "GA4", "PostHog", "Conversion Rate"]
 
 तकनीकी ब्लॉग में SEO (Search Engine Optimization) का मतलब केवल कीवर्ड्स (keywords) बिखेरना नहीं है। सर्च इंजन (Googlebot) और सोशल मीडिया क्रॉलर्स को सामग्री के सिमेंटिक्स (अर्थ) को सटीक रूप से संप्रेषित करने के लिए एक प्रोग्रामेटिक दृष्टिकोण की आवश्यकता होती है।
 
-### 1.1 Open Graph Protocol (OGP) का अनुकूलन
+### 1.1 Open [Graph](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP) का अनुकूलन
 
 जब तकनीकी लेख X (पूर्व में Twitter), Hacker News, Zenn आदि पर साझा किए जाते हैं, तो क्लिक-थ्रू रेट (CTR) को अधिकतम करने के लिए OGP का डायनामिक जनरेशन आवश्यक है। यदि आप Next.js के App Router का उपयोग कर रहे हैं, तो प्रत्येक लेख के लिए अनुकूलित OGP आउटपुट करने के लिए `generateMetadata` फ़ंक्शन का उपयोग करें।
 

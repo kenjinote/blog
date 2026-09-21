@@ -27,13 +27,13 @@ By the time you finish reading this article, you should be free from the feeling
 
 The first step to making many troubleshooting tasks easier is knowing how Git stores data. The hidden folder `.git` that exists in the root directory of your project is exactly the heart of Git. Git is not a system that merely records file differences (patches) sequentially, but it manages data as a **stream of snapshots**.
 
-### 2.1 Object Model: Blob, Tree, Commit
+### 2.1 Object Model: Blob, [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), Commit
 
 Git mainly uses three objects to represent the state of a repository. These objects are saved in `.git/objects`.
 
 1. **Blob (Binary Large Object)**
    An object that stores the file content itself. File names and permission information are not included here. Pure byte sequences are compressed with zlib and identified by a SHA-1 hash value (a 40-character hexadecimal number).
-2. **Tree**
+2. **[Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
    An object that represents the structure of a directory. A Tree object contains pointers (SHA-1 hash values) to other Tree objects (subdirectories) and Blob objects (files), as well as their file names and access permissions. It plays a role similar to a UNIX directory.
 3. **Commit**
    Holds a pointer to the top-level Tree object of the entire repository at a given point in time, metadata (author, commit date and time, commit message), and a pointer to the immediately preceding commit (parent commit).
@@ -332,7 +332,7 @@ When you save and close, these three commits are beautifully integrated into one
 **[Situation]**
 There is a bug in the current `main` branch, but it was normal when released a month ago. I want to identify which commit introduced the bug, but there are over 100 commits, making it impossible to do manually!
 
-### Solution: Identifying Bugs via Binary Search
+### Solution: Identifying Bugs via [Binary Search](https://kenji.blog/en/p/search-algorithms-linear-binary-hash-table-principles/)
 
 Git has a built-in tool that finds the commit where a bug was introduced through a mathematical Binary Search. Since the time complexity is $\mathcal{O}(\log N)$, even with 1000 commits, it can be identified in about 10 tests.
 

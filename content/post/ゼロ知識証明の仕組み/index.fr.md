@@ -131,7 +131,7 @@ Les zk-STARKs fondent leur sécurité **uniquement sur des fonctions de hachage*
 
 La vérification du calcul est effectuée en utilisant les propriétés de polynômes unidimensionnels ou multidimensionnels, après que le calcul ait été converti dans un format appelé AIR (Algebraic Intermediate Representation). Le cœur des STARKs réside dans le protocole **FRI (Fast Reed-Solomon Interactive Oracle Proof of Proximity)**.
 
-Le protocole FRI est une technique permettant de vérifier « si une certaine fonction est suffisamment proche d'un polynôme d'un degré spécifique (Proximity) ». Le prouveur s'engage sur les valeurs du polynôme en tant que feuilles d'un arbre de Merkle (Merkle Tree) (engagement polynomial).
+Le protocole FRI est une technique permettant de vérifier « si une certaine fonction est suffisamment proche d'un polynôme d'un degré spécifique (Proximity) ». Le prouveur s'engage sur les valeurs du polynôme en tant que feuilles d'un arbre de Merkle (Merkle [Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) (engagement polynomial).
 
 ```mermaid
 graph TD

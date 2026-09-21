@@ -17,9 +17,9 @@ tags:
 
 ## 1. Introducción
 
-En la informática moderna, la **teoría de grafos** (Graph Theory) proporciona un potente marco matemático para modelar estructuras de redes. En nuestra vida diaria, la tecnología para calcular la "ruta más corta" se utiliza en diversas situaciones, como la navegación de automóviles, la información de transbordos de trenes, el enrutamiento de Internet e incluso la búsqueda de rutas en inteligencia artificial para videojuegos.
+En la informática moderna, la **teoría de grafos** ([Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory) proporciona un potente marco matemático para modelar estructuras de redes. En nuestra vida diaria, la tecnología para calcular la "ruta más corta" se utiliza en diversas situaciones, como la navegación de automóviles, la información de transbordos de trenes, el enrutamiento de Internet e incluso la búsqueda de rutas en inteligencia artificial para videojuegos.
 
-En este artículo, comenzando desde la definición matemática de la teoría de grafos, que es la base de la búsqueda de rutas, cubrimos de manera integral el funcionamiento, las demostraciones matemáticas y los métodos de implementación práctica en Python del **algoritmo de Dijkstra** (Dijkstra's Algorithm), un algoritmo de búsqueda representativo, y el **algoritmo A*** (A-Star Algorithm), que es una evolución del mismo.
+En este artículo, comenzando desde la definición matemática de la teoría de grafos, que es la base de la búsqueda de rutas, cubrimos de manera integral el funcionamiento, las demostraciones matemáticas y los métodos de implementación práctica en Python del **algoritmo de [Dijkstra](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** (Dijkstra's Algorithm), un algoritmo de búsqueda representativo, y el **algoritmo A*** (A-Star Algorithm), que es una evolución del mismo.
 
 ## 2. Fundamentos de la Teoría de Grafos
 
@@ -76,7 +76,7 @@ El **problema de la ruta más corta** (Shortest Path Problem) es el problema de 
 
 ---
 
-## 3. Algoritmo de Dijkstra (Dijkstra's Algorithm)
+## 3. Algoritmo de [Dijkstra](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Dijkstra's Algorithm)
 
 El **algoritmo de Dijkstra**, ideado por Edsger Dijkstra, es un algoritmo para encontrar las rutas más cortas desde un solo punto de inicio hasta todos los vértices en un grafo con pesos no negativos.
 
@@ -98,7 +98,7 @@ $$
 d[v] = d[u] + w(u, v)
 $$
 
-### 3.3 Implementación del Algoritmo de Dijkstra en Python
+### 3.3 Implementación del Algoritmo de [Dijkstra](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) en Python
 
 Para una implementación eficiente, utilizamos una cola de prioridad (Priority Queue) como estructura de datos para obtener el valor mínimo. En Python, podemos usar el módulo `heapq`.
 
@@ -149,7 +149,7 @@ Por lo tanto, la complejidad de tiempo es $ O((|V| + |E|) \log |V|) $. Si utiliz
 
 ## 4. Algoritmo A* (A-Star Algorithm)
 
-El algoritmo de Dijkstra es seguro, pero como expande la búsqueda en todas las direcciones sin considerar la dirección del destino, puede haber muchas búsquedas inútiles. El **algoritmo A*** resuelve esto.
+El algoritmo de [Dijkstra](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) es seguro, pero como expande la búsqueda en todas las direcciones sin considerar la dirección del destino, puede haber muchas búsquedas inútiles. El **algoritmo A*** resuelve esto.
 
 ### 4.1 Introducción de la Función Heurística
 
@@ -254,7 +254,7 @@ def reconstruct_path(came_from, current):
     return path
 ```
 
-### 4.5 Comparación entre el Algoritmo de Dijkstra y A*
+### 4.5 Comparación entre el Algoritmo de [Dijkstra](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) y A*
 
 El siguiente diagrama Mermaid es una comparación visual del área de búsqueda del algoritmo de Dijkstra y A*. Mientras que el algoritmo de Dijkstra expande la búsqueda de forma concéntrica, A* avanza la búsqueda en forma elíptica estirada hacia la dirección del objetivo.
 
@@ -283,7 +283,7 @@ graph TD
 
 ## 5. Aplicaciones de la Búsqueda de Rutas y Perspectivas Futuras
 
-El algoritmo de Dijkstra y el algoritmo A* son métodos fundamentales, pero sirven de base para muchas tecnologías aplicadas.
+El algoritmo de [Dijkstra](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) y el algoritmo A* son métodos fundamentales, pero sirven de base para muchas tecnologías aplicadas.
 
 1. **Búsqueda Bidireccional** (Bidirectional Search):
    Un método que reduce drásticamente el espacio de búsqueda avanzando la exploración desde el inicio y el destino simultáneamente, uniéndose en el medio.

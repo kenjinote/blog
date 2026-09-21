@@ -17,7 +17,7 @@ Bagi pengembang indie (Indie Hacker) modern, salah satu saluran promosi yang pal
 
 SEO (Search Engine Optimization) untuk blog teknologi bukan sekadar menaburkan kata kunci. Pendekatan terprogram (programmatic) diperlukan untuk mengomunikasikan semantik (makna) konten secara akurat ke mesin pencari (Googlebot) dan perayap media sosial.
 
-### 1.1 Optimisasi Open Graph Protocol (OGP)
+### 1.1 Optimisasi Open [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP)
 
 Untuk memaksimalkan rasio klik-tayang (CTR) saat artikel teknologi dibagikan di X (sebelumnya Twitter), Hacker News, Zenn, dan lainnya, pembuatan OGP secara dinamis sangatlah penting. Jika Anda menggunakan App Router di Next.js, Anda dapat menggunakan fungsi `generateMetadata` untuk menghasilkan OGP yang dioptimalkan untuk setiap artikel.
 

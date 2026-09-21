@@ -194,7 +194,7 @@ db.users.find({
 
 ### 資料模型與特徵
 
-圖形資料庫採用了基於數學「圖論 (Graph Theory)」的資料模型。構成資料的主要元素有以下三個：
+圖形資料庫採用了基於數學「圖論 ([Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory)」的資料模型。構成資料的主要元素有以下三個：
 
 1. **節點 (Node / Vertex)** : 資料的實體（例：人、公司、商品等）。相當於 RDBMS 的列 (Row)。
 2. **邊 (Edge / Relationship)** : 節點之間的關係性（例：是朋友、已購買、隸屬於等）。邊可以帶有方向性。
@@ -235,7 +235,7 @@ graph TD
 ### 代表性的圖形資料庫
 
 - **Neo4j** : 全球使用最廣泛的圖形資料庫。採用了獨有且強大的查詢語言 Cypher。
-- **Amazon Neptune** : AWS 提供的全託管圖形資料庫。支援 Property Graph (Gremlin) 與 RDF (SPARQL)。
+- **Amazon Neptune** : AWS 提供的全託管圖形資料庫。支援 Property [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Gremlin) 與 RDF (SPARQL)。
 - **ArangoDB** : 支援圖形、文件與 KVS 的多模型資料庫。
 
 ### 優點與缺點

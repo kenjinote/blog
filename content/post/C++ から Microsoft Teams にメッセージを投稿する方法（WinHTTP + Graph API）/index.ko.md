@@ -25,7 +25,7 @@ description: 'C++에서 Microsoft Teams로 자동 메시지 게시를 구현하�
 
 
 
-# C++에서 Microsoft Teams로 메시지를 게시하는 방법(WinHTTP + Graph API)
+# C++에서 Microsoft Teams로 메시지를 게시하는 방법(WinHTTP + [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API)
 
 Microsoft Teams 채팅에 자동으로 게시하고 싶을 때――  
 그럴 때 사용할 수 있는 것이 **Microsoft Graph API** 입니다.  
@@ -45,7 +45,7 @@ Microsoft Teams 채팅에 자동으로 게시하고 싶을 때――
 ### 2. API 권한 추가
 
 1. 왼쪽 메뉴의 「API 권한」으로 이동
-2. **「Microsoft Graph」 ** > ** 「권한 추가」 ** 에서 아래 스코프를 검색하여 ** 「권한 업데이트」**
+2. **「Microsoft [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)」 ** > ** 「권한 추가」 ** 에서 아래 스코프를 검색하여 ** 「권한 업데이트」**
 
 - Chat.ReadWrite
 - User.Read
@@ -93,7 +93,7 @@ curl -X POST ^
 }
 ```
 
-이 access_token을 사용하여 Microsoft Graph API를 호출합니다.
+이 access_token을 사용하여 Microsoft [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API를 호출합니다.
 
 ## 💬 Teams 채팅에 게시하는 C++ 샘플
 여기서는 WinHTTP를 사용하여 채팅에 게시하는 C++ 예제를 보여줍니다.
@@ -186,7 +186,7 @@ curl -X GET ^
   - HTTPS 인증서 검증
   - 오류 처리 강화
 - 채널에 게시할 때는 teams/{team-id}/channels/{channel-id}/messages 를 사용합니다.
-- 첨부 파일 전송에는 멀티파트 처리나 Graph 드라이브 API가 필요합니다.
+- 첨부 파일 전송에는 멀티파트 처리나 [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 드라이브 API가 필요합니다.
 
 ## 요약
 
@@ -197,7 +197,7 @@ curl -X GET ^
 | Graph API | Teams와 통신하는 공식 API |
 | 앱 등록 | Azure에서 필요한 인증 절차 |
 | 액세스 토큰 | [OAuth](https://kenji.blog/ko/p/oauth2-oidc-authentication-authorization-difference/)2로 획득하여 요청에 사용 |
-| C++ 구현 | WinHTTP를 사용하여 Graph API 호출 |
+| C++ 구현 | WinHTTP를 사용하여 [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API 호출 |
 
 ## 🚀 다음 단계
 

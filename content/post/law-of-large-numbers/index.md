@@ -144,7 +144,7 @@ plt.grid(True)
 plt.show()
 ```
 
-このコードを実行すると、最初の数回は平均値が大きくブレますが、試行回数が増えるにつれて赤い点線（期待値 3.5）にピタリと沿っていくグラフが得られます。これが[大数の法則](https://kenji.blog/p/law-of-large-numbers/)の視覚的な証明です。
+このコードを実行すると、最初の数回は平均値が大きくブレますが、試行回数が増えるにつれて赤い点線（期待値 3.5）にピタリと沿っていく[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)が得られます。これが[大数の法則](https://kenji.blog/p/law-of-large-numbers/)の視覚的な証明です。
 
 ## 7. [大数の法則](https://kenji.blog/p/law-of-large-numbers/)が成り立たないケース：[コーシー](https://kenji.blog/p/cauchy/)分布
 

@@ -19,7 +19,7 @@ tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 
 알고리즘을 배우기 전에, 경쟁 프로그래밍의 그래프 문제에서 일반적인 제약 조건과 시간 복잡도의 기준을 파악해 두는 것이 중요합니다. 그래프는 정점 수 $V$ (Vertices) 와 간선 수 $E$ (Edges) 로 나타냅니다.
 
-*   $O(V + E)$ : 정점 수 $V, E \le 10^5 \sim 10^6$ 인 문제에서 요구되는 시간 복잡도입니다. 깊이 우선 탐색 (DFS) 이나 너비 우선 탐색 (BFS) 이 이에 해당합니다.
+*   $O(V + E)$ : 정점 수 $V, E \le 10^5 \sim 10^6$ 인 문제에서 요구되는 시간 복잡도입니다. 깊이 우선 탐색 ([DFS](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 이나 너비 우선 탐색 ([BFS](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 이 이에 해당합니다.
 *   $O((V + E) \log V)$ : $V, E \le 10^5 \sim 2 \cdot 10^5$ 인 문제에서 자주 나옵니다. 다익스트라 알고리즘이나 프림 알고리즘 등에서 우선순위 큐를 사용할 경우의 시간 복잡도입니다.
 *   $O(V^2)$ : $V \le 2000 \sim 3000$ 인 밀집 그래프($E \approx V^2$)에서 허용됩니다.
 *   $O(V^3)$ : $V \le 400 \sim 500$ 인 문제. 플로이드-워셜 알고리즘이 대표적입니다.
@@ -32,7 +32,7 @@ tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 
 ### 위상 정렬 (Topological Sort)
 
-위상 정렬은 방향 비순환 그래프 (DAG: Directed Acyclic Graph) 의 정점들을, 모든 방향 간선이 앞쪽 정점에서 뒤쪽 정점을 향하도록 일렬로 나열하는 알고리즘입니다. 작업의 의존성(예: 작업 A가 끝나지 않으면 작업 B를 시작할 수 없음)을 해결할 때나 DAG 위에서의 동적 계획법 (DP) 계산 순서를 결정하기 위해 사용됩니다.
+위상 정렬은 방향 비순환 그래프 (DAG: Directed Acyclic [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 의 정점들을, 모든 방향 간선이 앞쪽 정점에서 뒤쪽 정점을 향하도록 일렬로 나열하는 알고리즘입니다. 작업의 의존성(예: 작업 A가 끝나지 않으면 작업 B를 시작할 수 없음)을 해결할 때나 DAG 위에서의 동적 계획법 ([DP](https://kenji.blog/ko/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) 계산 순서를 결정하기 위해 사용됩니다.
 
 시간 복잡도는 $O(V + E)$ 입니다. 칸(Kahn)의 알고리즘(진입 차수를 이용한 BFS 기반)과 후위 순회를 이용한 DFS 기반의 2가지 구현이 있습니다만, 여기서는 사전순으로 가장 앞서는 위상 정렬도 쉽게 구할 수 있는 칸의 알고리즘을 소개합니다.
 
@@ -230,7 +230,7 @@ pair<vector<long long>, bool> bellman_ford(int V, const vector<Edge>& edges, int
 
 ### 플로이드-워셜 알고리즘 (Floyd-Warshall Algorithm)
 
-그래프 내의 모든 정점 쌍 간의 최단 거리를 구하는 알고리즘입니다. 동적 계획법 (DP) 을 기반으로 합니다. 알고리즘이 매우 간결하고 구현이 극히 쉽다는 점이 매력적입니다.
+그래프 내의 모든 정점 쌍 간의 최단 거리를 구하는 알고리즘입니다. 동적 계획법 ([DP](https://kenji.blog/ko/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) 을 기반으로 합니다. 알고리즘이 매우 간결하고 구현이 극히 쉽다는 점이 매력적입니다.
 
 상태 전이 방정식은 다음과 같습니다. 정점 $k$ 를 거쳐가는 경로와 거치지 않는 경로 중 더 짧은 쪽을 채택합니다.
 $$ d[i][j] = \min(d[i][j], d[i][k] + d[k][j]) $$
@@ -271,7 +271,7 @@ void floyd_warshall(int V, vector<vector<long long>>& dist) {
 
 ---
 
-## 5. 최소 신장 트리 (MST: Minimum Spanning Tree)
+## 5. 최소 신장 트리 (MST: Minimum Spanning [Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 연결된 무방향 그래프에서 모든 정점을 연결하는 트리(사이클이 없는 부분 그래프) 중 간선 가중치의 총합이 최소가 되는 것을 **최소 신장 트리 (MST)** 라고 부릅니다. 네트워크 구축 비용의 최소화 등에서 직접적으로 출제됩니다.
 
@@ -409,11 +409,11 @@ long long prim(int V, const vector<vector<Edge>>& graph) {
 
 방향 그래프에서 '서로 왕래할 수 있는 정점들의 집합'을 강결합 컴포넌트 (SCC) 라고 부릅니다. 임의의 방향 그래프를 강결합 컴포넌트별로 묶으면 전체적으로 반드시 DAG (방향 비순환 그래프) 가 됩니다. 이것을 **강결합 컴포넌트 분해** 라고 합니다. 그래프 구조를 단순화하여 문제를 풀기 쉽게 하기 위한 매우 중요한 전처리 작업입니다.
 
-경쟁 프로그래밍에서는 2-SAT 문제 해결이나 사이클이 있는 그래프를 DAG로 축소하여 DP를 수행하는 상황에서 많이 쓰입니다.
+경쟁 프로그래밍에서는 2-SAT 문제 해결이나 사이클이 있는 그래프를 DAG로 축소하여 [DP](https://kenji.blog/ko/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)를 수행하는 상황에서 많이 쓰입니다.
 
 ### 코사라주 알고리즘 (Kosaraju's Algorithm)
 
-코사라주 알고리즘은 DFS(깊이 우선 탐색)를 2번 수행하는 것만으로 SCC를 구축할 수 있는 아름답고 효율적인 기법입니다. 시간 복잡도는 $O(V + E)$ 로 선형 시간에 동작합니다.
+코사라주 알고리즘은 [DFS](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)(깊이 우선 탐색)를 2번 수행하는 것만으로 SCC를 구축할 수 있는 아름답고 효율적인 기법입니다. 시간 복잡도는 $O(V + E)$ 로 선형 시간에 동작합니다.
 
 알고리즘 절차:
 1. 원래 그래프에서 DFS를 수행하여 후위 순회(post-order)로 정점을 배열에 기록합니다.
@@ -504,7 +504,7 @@ struct SCC {
 이 글에서는 경쟁 프로그래밍에 자주 등장하는 그래프 알고리즘을 총망라했습니다.
 그래프 문제의 실력을 높이는 요령은 **'손에 익을 때까지 여러 번 구현하는 것'** 과 **'이 문제는 어떤 그래프로 환원할 수 있을까(정점은 무엇인가, 간선은 무엇인가)를 생각하는 훈련을 하는 것'** 입니다.
 
-1. 먼저 DFS / BFS 를 실수 없이 빠르게 작성할 수 있도록 합니다.
+1. 먼저 [DFS](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) / [BFS](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 를 실수 없이 빠르게 작성할 수 있도록 합니다.
 2. 다음으로 다익스트라 알고리즘과 크루스칼 알고리즘을 안 보고 쓸 수 있도록 합니다(AtCoder 브라운~그린 구간에서 필수).
 3. 마지막으로 벨만-포드, 플로이드-워셜, 위상 정렬, SCC 등의 무기를 늘려나갑니다(AtCoder 시안~블루 구간에서 무기가 됩니다).
 

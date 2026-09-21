@@ -81,7 +81,7 @@ graph LR
 在记忆技术书时，“死记硬背长篇证明”是毫无意义的。应该将知识分割成最小单元（Atomic）制成卡片。
 
 - **糟糕的卡片**: “写下 [Dijkstra](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/) 算法的全部证明”
-- **优秀的卡片**: “在 Dijkstra 算法中，可以认为某个顶点的最短距离已经确定的条件是什么？”→“在未确定的顶点集合中，选择当前暂定距离最小的顶点时。”
+- **优秀的卡片**: “在 [Dijkstra](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 算法中，可以认为某个顶点的最短距离已经确定的条件是什么？”→“在未确定的顶点集合中，选择当前暂定距离最小的顶点时。”
 - **优秀的卡片**: “写出[费马小定理](https://kenji.blog/zh-cn/p/fermats-little-theorem/)的公式”→“对于素数 $p$ 和互素的整数 $a$， $a^{p-1} \equiv 1 \pmod p$”
 
 在记忆公式时，以 LaTeX 格式录入 Anki，并活用填空题（Cloze Deletion）会非常有效。
@@ -175,7 +175,7 @@ rsa_demo()
 
 ### 4.2 实例2：[Dijkstra](https://kenji.blog/zh-cn/p/graph-theory-dijkstra-a-star/) 算法与松弛（Relaxation）
 
-考虑图论中用于解决单源最短路径问题（SSSP）的 Dijkstra 算法。
+考虑图论中用于解决单源最短路径问题（SSSP）的 [Dijkstra](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 算法。
 
 其数学和算法的核心是称为“松弛（Relaxation）”的操作。
 当存在一条从顶点 $u$ 到顶点 $v$ 权重为 $w(u, v)$ 的边时，用以下公式更新到达顶点 $v$ 的暂定最短距离 $d[v]$。

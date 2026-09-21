@@ -114,7 +114,7 @@ int main() {
 > **ラメの定理**
 > 2つの自然数 $a, b$ （$a > b$）に対して[ユークリッドの互除法](https://kenji.blog/p/euclidean-algorithm/)を適用したときの割り算の回数は、 $b$ の十進法での桁数の $5$ 倍以下である。
 
-これにより、アルゴリズムの時間計算量は $O(\log(\min(a, b)))$ となります。
+これにより、アルゴリズムの[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は $O(\log(\min(a, b)))$ となります。
 
 最悪のケース（最も割り算の回数が多くなるケース）は、[フィボナッチ](https://kenji.blog/p/fibonacci/)数列の隣り合う2項を与えた場合です。例えば、 $F_{n+2}$ と $F_{n+1}$ の最大公約数を求める過程は、常に商が $1$ になり、次々に小さい[フィボナッチ](https://kenji.blog/p/fibonacci/)数へと移行していきます。
 

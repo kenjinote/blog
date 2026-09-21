@@ -338,7 +338,7 @@ Die größte Lektion, die das **P-vs-NP-Problem** (und die Theorie der NP-Vollst
 2. **Auf Relaxationen und Annäherungen ausweichen**:
     - **Näherungsalgorithmen**: In polynomieller Zeit lösen und dabei garantieren, dass der Fehler im Vergleich zur Optimallösung innerhalb eines bestimmten Bereichs bleibt.
     - **Heuristiken**: Mathematisch nicht garantierte, aber erfahrungsgemäß schnelle Methoden einsetzen, die eine „recht gute Lösung“ liefern, wie z. B. genetische Algorithmen oder Simulated Annealing.
-    - **Dynamische Programmierung (DP)**: Wenn es wie beim Rucksackproblem einen Lösungsansatz gibt, der von der Größe der Eingabewerte abhängt (pseudo-polynomielle Zeit), sollte man die Beschränkungen der Eingabe ausnutzen.
+    - **Dynamische Programmierung ([DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))**: Wenn es wie beim Rucksackproblem einen Lösungsansatz gibt, der von der Größe der Eingabewerte abhängt (pseudo-polynomielle Zeit), sollte man die Beschränkungen der Eingabe ausnutzen.
     - **SAT-Solver / MILP-Solver**: Das Problem formalisieren und an die sich rasant entwickelnden universellen mathematischen Optimierungssolver übergeben. Da diese Solver intern hochgradig optimiertes Pruning (Abschneiden von Ästen im Suchbaum) durchführen, können sie für praxisrelevante Größen oft exakte Lösungen liefern.
 
 ```python

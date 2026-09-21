@@ -63,7 +63,7 @@ graph TD
 
 根據邊是否具有方向，圖大致分為兩類。
 
-*   **無向圖 (Undirected Graph)** : 邊沒有方向的圖。用於表示始終是相互且雙向的關係，例如通訊線路、雙向道路或 Facebook 的「好友」關係。
+*   **無向圖 (Undirected [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** : 邊沒有方向的圖。用於表示始終是相互且雙向的關係，例如通訊線路、雙向道路或 Facebook 的「好友」關係。
 *   **有向圖 (Directed Graph)** : 邊有方向的圖。用於表達單向關係，例如水流、單行道或 Twitter (X) 的「跟隨」關係。在有向圖中，邊被清楚地畫成箭頭。
 
 ```mermaid
@@ -83,7 +83,7 @@ graph LR
 
 ### 3.3. 加權圖
 
-在對現實世界問題進行建模時，我們通常不僅想要表達「是否連接」，還想要表達「連接的容易程度」或「成本」。在這種情況下，會使用 **加權圖 (Weighted Graph)** ，其中每條邊都分配了一個數值（權重）。權重可以表示城市之間的距離、通訊延遲時間或旅行成本。
+在對現實世界問題進行建模時，我們通常不僅想要表達「是否連接」，還想要表達「連接的容易程度」或「成本」。在這種情況下，會使用 **加權圖 (Weighted [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** ，其中每條邊都分配了一個數值（權重）。權重可以表示城市之間的距離、通訊延遲時間或旅行成本。
 
 ### 3.4. 路徑與環
 
@@ -138,7 +138,7 @@ $$
 
 為了有效地解決圖上的問題，在電腦科學的歷史中設計了許多優秀的演算法。在這裡，我們介紹一些在現代軟體工程中被認為是不可或缺的代表性演算法。
 
-### 5.1. 廣度優先搜尋 (BFS) 與深度優先搜尋 (DFS)
+### 5.1. 廣度優先搜尋 ([BFS](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 與深度優先搜尋 ([DFS](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 系統地存取網路中所有頂點且沒有遺漏的最基本演算法是 **廣度優先搜尋 (Breadth-First Search, BFS)** 和 **深度優先搜尋 (Depth-First Search, DFS)** 。
 
@@ -189,7 +189,7 @@ bfs(graph_data, 'A')
 
 當在地圖應用程式上搜尋到達目的地的最快路線時，在系統核心運作的就是 **最短路徑演算法** 。路線具有諸如「距離」和「旅行時間」等成本（權重），目標是找到一條使從起點到終點的累積成本最小化的路徑。
 
-由荷蘭電腦科學家艾茲格·戴克斯特拉 (Edsger W. Dijkstra) 於1956年發明的 **戴克斯特拉演算法** ，是一個極其著名的演算法，用於在所有邊權重為非負數（0或更大）的條件下，有效地計算網路中從單一源點到所有其他頂點的最短路徑。
+由荷蘭電腦科學家艾茲格·戴克斯特拉 (Edsger W. [Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 於1956年發明的 **戴克斯特拉演算法** ，是一個極其著名的演算法，用於在所有邊權重為非負數（0或更大）的條件下，有效地計算網路中從單一源點到所有其他頂點的最短路徑。
 
 戴克斯特拉演算法的核心邏輯是重複「從距離起點最短距離已確定的頂點集合中，選出未確定距離最短的頂點，並透過經過該頂點的路線更新周圍頂點的最短距離資訊」的過程。透過使用優先佇列 (Priority Queue) ，可以大幅縮短執行時間。
 
@@ -242,7 +242,7 @@ print(dijkstra(weighted_graph, 'A'))
 
 想像一下，需要以盡可能低的總成本將巨大網路中的所有基地物理連接起來。例如，在建設電網以向新住宅區供電，或在多個城市之間鋪設光纖電纜時，這種情況要求最小化基礎設施建設成本。
 
-這樣，包含圖的所有頂點、絕對沒有環（即樹狀結構）且所使用邊的權重總和最小的子圖稱為 **最小生成樹 (Minimum Spanning Tree, MST)** 。
+這樣，包含圖的所有頂點、絕對沒有環（即樹狀結構）且所使用邊的權重總和最小的子圖稱為 **最小生成樹 (Minimum Spanning [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), MST)** 。
 
 尋找這個最小生成樹的代表性演算法之一是 **克魯斯克爾演算法** 。克魯斯克爾演算法是累積局部最佳解的「貪心演算法 (Greedy Algorithm)」的一個典型例子，遵循極其簡單直觀的步驟。
 
@@ -260,7 +260,7 @@ print(dijkstra(weighted_graph, 'A'))
 
 ## 6. 二分圖與匹配問題
 
-在圖論中佔據獨特地位的是 **二分圖 (Bipartite Graph)** 。二分圖是指，當所有頂點被劃分為兩組（例如，組 $U$ 和組 $V$）時，每條邊總是連接 $U$ 中的一個頂點和 $V$ 中的一個頂點，而絕對沒有連接同一組內頂點的邊的圖。
+在圖論中佔據獨特地位的是 **二分圖 (Bipartite [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** 。二分圖是指，當所有頂點被劃分為兩組（例如，組 $U$ 和組 $V$）時，每條邊總是連接 $U$ 中的一個頂點和 $V$ 中的一個頂點，而絕對沒有連接同一組內頂點的邊的圖。
 
 二分圖非常適合對具有不同屬性的兩個集合之間的關係進行建模，例如「求職者」和「招募公司」、「學生」和「實驗室」或「計程車」和「乘客」。
 

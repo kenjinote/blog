@@ -72,7 +72,7 @@ Sebagian besar algoritma yang saat ini distandarisasi oleh NIST (seperti ML-KEM 
 Kriptografi berbasis hash adalah algoritma PQC yang dikhususkan untuk tanda tangan digital. Keamanannya murni bergantung pada ketahanan terhadap benturan dan fungsi satu arah dari "fungsi hash kriptografis" yang aman, seperti SHA-2 atau SHA-3.
 
 **Ringkasan Mekanisme:** 
-Ini dimulai dengan skema tanda tangan sekali pakai (one-time signature) yang disebut "Tanda Tangan Lamport (Lamport Signature)", yang hanya dapat digunakan sekali. Dengan menggabungkannya ke dalam format data struktur pohon yang disebut "Merkle Tree", ia memungkinkan beberapa tanda tangan dengan satu pasang kunci.
+Ini dimulai dengan skema tanda tangan sekali pakai (one-time signature) yang disebut "Tanda Tangan Lamport (Lamport Signature)", yang hanya dapat digunakan sekali. Dengan menggabungkannya ke dalam format data struktur pohon yang disebut "Merkle [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)", ia memungkinkan beberapa tanda tangan dengan satu pasang kunci.
 
 **Kelebihan:** 
 - Dasar keamanannya sangat kokoh, dengan bukti kuat bahwa "selama fungsi hash aman, ini aman".

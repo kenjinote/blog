@@ -17,7 +17,7 @@ tags: ["Growth Hacking", "GA4", "PostHog", "Conversion Rate"]
 
 تحسين محركات البحث (SEO) في المدونات التقنية ليس مجرد تناثر للكلمات المفتاحية. يتطلب الأمر نهجًا برمجيًا لنقل دلالات (معنى) المحتوى بدقة إلى محركات البحث (Googlebot) وعناكب وسائل التواصل الاجتماعي.
 
-### 1.1 تحسين بروتوكول Open Graph (OGP)
+### 1.1 تحسين بروتوكول Open [Graph](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (OGP)
 
 لتعظيم نسبة النقر إلى الظهور (CTR) عند مشاركة المقالات التقنية على X (تويتر سابقًا)، و Hacker News، و Zenn، وغيرها، فإن التوليد الديناميكي لـ OGP يعد أمرًا ضروريًا. إذا كنت تستخدم App Router الخاص بـ Next.js، فاستخدم دالة `generateMetadata` لإخراج OGP مُحسَّن لكل مقال.
 

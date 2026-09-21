@@ -338,7 +338,7 @@ La lección más importante que el **problema P vs NP** (y la teoría de la comp
 2. **Refugiarse en la relajación y la aproximación**:
     - **Algoritmos de aproximación**: Resuelven en tiempo polinómico garantizando que el error de la solución óptima se mantenga dentro de un rango determinado.
     - **Heurísticas**: Emplean métodos, como algoritmos genéticos o de recocido simulado, que no tienen garantías matemáticas, pero que por experiencia proporcionan una «solución bastante buena» rápidamente.
-    - **Programación Dinámica (DP)**: Si, como en el problema de la mochila, existe una solución que depende del tamaño de los números de entrada (tiempo pseudopolinómico), se aprovechan las restricciones de la entrada.
+    - **Programación Dinámica ([DP](https://kenji.blog/es/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))**: Si, como en el problema de la mochila, existe una solución que depende del tamaño de los números de entrada (tiempo pseudopolinómico), se aprovechan las restricciones de la entrada.
     - **Solvers SAT / Solvers MILP**: Se formula el problema y se confía a un solver de optimización matemática de propósito general, los cuales han tenido un notable desarrollo en los últimos años. Como los solvers realizan podas avanzadas internamente, a menudo pueden arrojar una solución estricta si el tamaño es práctico.
 
 ```python

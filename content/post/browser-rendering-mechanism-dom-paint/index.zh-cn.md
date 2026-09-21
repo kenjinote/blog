@@ -64,7 +64,7 @@ HTML 的解析遵循 W3C（现在是 WHATWG）定义的 HTML 解析算法。这�
 1.  **Conversion (转换)** ：根据指定的字符编码（如 UTF-8），将从网络接收的原始数据字节流转换为单个字符（Characters）。
 2.  **Tokenization (词法解析)** ：将字符串转换为 W3C HTML5 标准规定的各种“标记（Tokens）”。例如 `<html>` 、 `<body>` 等起始标签、结束标签、属性名和属性值等。
 3.  **Lexing (语法解析)** ：将生成的标记转换为具有属性和规则的“对象（Nodes）”。
-4.  **DOM Tree Construction (树构建)** ：根据标签的嵌套关系，将创建的对象链接为树状数据结构。这就是 **DOM (Document Object Model)** 。
+4.  **DOM [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Construction (树构建)** ：根据标签的嵌套关系，将创建的对象链接为树状数据结构。这就是 **DOM (Document Object Model)** 。
 
 ```mermaid
 sequenceDiagram
@@ -158,7 +158,7 @@ gantt
 
 ## 3. Style（样式计算）：构建 Render 树
 
-当 DOM 树和 CSSOM 树完成后，浏览器将它们组合起来构建 **Render 树 (Render Tree)** 或 **样式树 (Style Tree)** 。
+当 DOM 树和 CSSOM 树完成后，浏览器将它们组合起来构建 **Render 树 (Render [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** 或 **样式树 (Style Tree)** 。
 
 在这个阶段，会针对 DOM 树的每个节点，计算应该应用 CSSOM 中的哪些样式规则，并决定最终的计算样式（Computed Style）。
 
@@ -270,7 +270,7 @@ for (let i = 0; i < elements.length; i++) {
 
 通过布局阶段，确定了每个元素的盒子的位置（X、Y 坐标）标记和大小（宽度、高度）。然而，此时屏幕上还没有绘制任何东西。接下来进行的就是 **Paint (绘制)** 阶段。
 
-Paint 阶段的目的是接收布局树（Layout Tree）作为输入，创建如何在屏幕上涂绘像素的步骤（Paint Records），并最终进行光栅化（Rasterization）。
+Paint 阶段的目的是接收布局树（Layout [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）作为输入，创建如何在屏幕上涂绘像素的步骤（Paint Records），并最终进行光栅化（Rasterization）。
 
 ### 5.1 绘制顺序 (Stacking Context)
 
@@ -322,7 +322,7 @@ Paint Record 是具体绘制指令的列表，比如“在这个坐标上用这�
 
 在浏览器内部，多个树结构会不断转换。
 
-1.  **DOM Tree**
+1.  **DOM [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
 2.  **Layout Tree (Render Tree)** : 视觉元素的几何信息
 3.  **Paint Tree (Layer Tree)** : 基于层叠上下文等的图层层次结构
 4.  **Graphics Layer Tree** : 实际上由 GPU 合成的独立图层组

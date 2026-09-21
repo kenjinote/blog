@@ -63,7 +63,7 @@ $$
 f(x) = \frac{1}{1-x} \cdot \frac{1}{1-x^2} \cdot \frac{1}{1-x^5}
 $$
 
-En d'autres termes, sans utiliser de relations de récurrence complexes ou de calculs en boucle, vous pouvez trouver le nombre de combinaisons pour tout $n$ simplement en trouvant les coefficients du développement de Taylor de cette fonction. En programmation, ce concept est une base importante de la programmation dynamique (DP).
+En d'autres termes, sans utiliser de relations de récurrence complexes ou de calculs en boucle, vous pouvez trouver le nombre de combinaisons pour tout $n$ simplement en trouvant les coefficients du développement de Taylor de cette fonction. En programmation, ce concept est une base importante de la programmation dynamique ([DP](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)).
 
 ### Convolution et multiplication de polynômes
 

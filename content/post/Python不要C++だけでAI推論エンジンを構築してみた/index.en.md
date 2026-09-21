@@ -42,7 +42,7 @@ graph TD
 ```
 
 1. **Tensor Management**: Manages multidimensional array data structures and strides for each dimension.
-2. **Computation Graph**: Represents the operations of each layer in the neural network as a Directed Acyclic Graph (DAG).
+2. **Computation [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**: Represents the operations of each layer in the neural network as a Directed Acyclic Graph (DAG).
 3. **Memory Arena**: A pre-allocated memory management mechanism to avoid the overhead of dynamic memory allocation (`malloc` or `new`).
 4. **Backend**: Operations (kernels) optimized for specific hardware such as CPUs and GPUs.
 
@@ -149,7 +149,7 @@ By utilizing this, operations such as "Transpose" and "View" can be achieved wit
 
 ---
 
-## 5. Building the Computation Graph (DAG) and Lazy Evaluation
+## 5. Building the Computation [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (DAG) and Lazy Evaluation
 
 Similar to PyTorch, our inference engine also adopts Lazy Evaluation, close to "Define-by-Run". That is, at the time the operation function is called, the calculation is not performed; only the graph (dependencies between nodes) is built.
 

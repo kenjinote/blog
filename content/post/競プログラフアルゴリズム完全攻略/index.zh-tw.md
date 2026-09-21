@@ -19,8 +19,8 @@ tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 
 在學習演算法之前，掌握競程中圖論問題的一般限制和時間複雜度標準是非常重要的。圖由頂點數 $V$ (Vertices) 和邊數 $E$ (Edges) 來表示。
 
-*   $O(V + E)$ : 這是頂點數 $V, E \le 10^5 \sim 10^6$ 的問題所要求的時間複雜度。深度優先搜尋 (DFS) 和廣度優先搜尋 (BFS) 即屬此類。
-*   $O((V + E) \log V)$ : 在 $V, E \le 10^5 \sim 2 \cdot 10^5$ 的問題中很常見。這是 Dijkstra 演算法或 Prim 演算法等在使用優先權佇列時的時間複雜度。
+*   $O(V + E)$ : 這是頂點數 $V, E \le 10^5 \sim 10^6$ 的問題所要求的時間複雜度。深度優先搜尋 ([DFS](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 和廣度優先搜尋 ([BFS](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 即屬此類。
+*   $O((V + E) \log V)$ : 在 $V, E \le 10^5 \sim 2 \cdot 10^5$ 的問題中很常見。這是 [Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 演算法或 Prim 演算法等在使用優先權佇列時的時間複雜度。
 *   $O(V^2)$ : 允許在 $V \le 2000 \sim 3000$ 的稠密圖（$E \approx V^2$）中使用。
 *   $O(V^3)$ : $V \le 400 \sim 500$ 的問題。Floyd-Warshall 演算法是其代表。
 
@@ -32,7 +32,7 @@ tags: ["C++", "Algorithms", "Competitive Programming", "Graph Theory"]
 
 ### 拓撲排序 (Topological Sort)
 
-拓撲排序是一種將有向無環圖 (DAG: Directed Acyclic Graph) 的頂點排成一列，使得所有有向邊都從前面的頂點指向後面的頂點的演算法。它通常用於解除任務的依賴關係（例如：任務 A 結束前無法開始任務 B），或決定 DAG 上動態規劃 (DP) 的計算順序。
+拓撲排序是一種將有向無環圖 (DAG: Directed Acyclic [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 的頂點排成一列，使得所有有向邊都從前面的頂點指向後面的頂點的演算法。它通常用於解除任務的依賴關係（例如：任務 A 結束前無法開始任務 B），或決定 DAG 上動態規劃 ([DP](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) 的計算順序。
 
 時間複雜度為 $O(V + E)$。實作方式有兩種：Kahn 演算法（基於入分度的 BFS 基礎）和使用離開順序的 DFS 基礎。這裡介紹 Kahn 演算法，它也很容易求得字典序最小的拓撲排序。
 
@@ -102,7 +102,7 @@ vector<int> topological_sort(int V, const vector<vector<int>>& graph) {
 
 這是一個求從某個起點到其他所有頂點的最短路徑的問題。根據邊的權重是非負數還是存在負權重，適用的演算法會有所不同。
 
-### [Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/) 演算法 (Dijkstra's Algorithm)
+### [Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/) 演算法 ([Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm)
 
 Dijkstra 演算法是一種在 **所有邊的權重皆為非負** 時適用的高速最短路徑演算法。它基於貪婪法：「確定目前已知最短距離最短的頂點，並更新從該頂點到相鄰頂點的距離（鬆弛）」。
 
@@ -174,7 +174,7 @@ vector<long long> dijkstra(int V, const vector<vector<Edge>>& graph, int s) {
 
 ### Bellman-Ford 演算法 (Bellman-Ford Algorithm)
 
-當邊的權重包含負值時，Dijkstra 演算法無法得出正確答案。這時就輪到 Bellman-Ford 演算法發揮作用了。藉由對所有邊重複進行 $V - 1$ 次的鬆弛處理，即使有負權重也能正確計算出最短路徑。
+當邊的權重包含負值時，[Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 演算法無法得出正確答案。這時就輪到 Bellman-Ford 演算法發揮作用了。藉由對所有邊重複進行 $V - 1$ 次的鬆弛處理，即使有負權重也能正確計算出最短路徑。
 
 如果在第 $V$ 次迭代中仍發生更新，這意味著存在 **負環 (Negative Cycle)** 。在競程中，「檢測負環」也是常見的問題，而 Bellman-Ford 演算法作為檢測演算法也非常優秀。
 
@@ -230,7 +230,7 @@ pair<vector<long long>, bool> bellman_ford(int V, const vector<Edge>& edges, int
 
 ### Floyd-Warshall 演算法 (Floyd-Warshall Algorithm)
 
-這是一種求圖中所有頂點對之間最短距離的演算法。它基於動態規劃 (DP)。該演算法非常簡潔，實作極其容易是其魅力所在。
+這是一種求圖中所有頂點對之間最短距離的演算法。它基於動態規劃 ([DP](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))。該演算法非常簡潔，實作極其容易是其魅力所在。
 
 狀態轉移方程式如下。選擇經過頂點 $k$ 的路徑和不經過的路徑中較短者。
 $$ d[i][j] = \min(d[i][j], d[i][k] + d[k][j]) $$
@@ -271,7 +271,7 @@ Floyd-Warshall 演算法也能檢測負環。在迴圈結束後，只要存在�
 
 ---
 
-## 5. 最小生成樹 (MST: Minimum Spanning Tree)
+## 5. 最小生成樹 (MST: Minimum Spanning [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 在連通的無向圖中，連接所有頂點的樹（不含環的子圖）中，邊權重總和最小的稱為 **最小生成樹 (MST)** 。通常在網路鋪設成本最小化等問題中被直接問到。
 
@@ -409,11 +409,11 @@ long long prim(int V, const vector<vector<Edge>>& graph) {
 
 在有向圖中，「彼此可以互相到達的頂點集合」稱為強連通分量 (SCC)。若將任意有向圖以強連通分量為單位進行縮點，整體必定會變成 DAG (有向無環圖)。這稱為 **強連通分量分解** 。這是為了簡化圖結構使問題更容易解決的極其重要的前置處理。
 
-在競程中，常被用於解決 2-SAT 問題，或是將有環的圖縮點成 DAG 後進行 DP。
+在競程中，常被用於解決 2-SAT 問題，或是將有環的圖縮點成 DAG 後進行 [DP](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)。
 
 ### Kosaraju 演算法 (Kosaraju's Algorithm)
 
-Kosaraju 演算法是一種優美且有效率的方法，只需執行 2 次 DFS（深度優先搜尋）即可建構 SCC。時間複雜度為 $O(V + E)$，在線性時間內運作。
+Kosaraju 演算法是一種優美且有效率的方法，只需執行 2 次 [DFS](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)（深度優先搜尋）即可建構 SCC。時間複雜度為 $O(V + E)$，在線性時間內運作。
 
 演算法步驟：
 1. 在原圖上進行 DFS，並以離開順序（post-order）將頂點記錄到陣列中。
@@ -504,7 +504,7 @@ struct SCC {
 本文全面介紹了競技程式設計中常見的圖論演算法。
 擅長圖論問題的秘訣在於 **「反覆實作直到變成反射動作」** ，以及 **「訓練自己思考這個問題可以歸約為哪種圖（頂點是什麼，邊是什麼）」** 。
 
-1. 首先要能無誤且快速地寫出 DFS / BFS。
+1. 首先要能無誤且快速地寫出 [DFS](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) / [BFS](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)。
 2. 接著要能默寫出 [Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/) 演算法和 Kruskal 演算法（AtCoder 棕色～綠色區間必備）。
 3. 最後，增加 Bellman-Ford、Floyd-Warshall、拓撲排序、SCC 等演算法的武器庫（在 AtCoder 水色～藍色區間將成為利器）。
 

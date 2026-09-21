@@ -17,7 +17,7 @@ For modern indie developers (Indie Hackers), one of the most powerful and sustai
 
 SEO (Search Engine Optimization) for a tech blog is not simply about sprinkling keywords. It requires a programmatic approach to accurately convey the semantics (meaning) of the content to search engines (Googlebot) and social media crawlers.
 
-### 1.1 Optimization of Open Graph Protocol (OGP)
+### 1.1 Optimization of Open [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP)
 
 When technical articles are shared on X (formerly Twitter), Hacker News, Zenn, etc., dynamically generating OGP is essential to maximize the click-through rate (CTR). If you are using the Next.js App Router, use the `generateMetadata` function to output optimized OGP for each article.
 

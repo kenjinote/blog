@@ -109,7 +109,7 @@ Terraform的核心在于这种 **声明式（Declarative）** 方法。为什么
 
 在命令式脚本中，人类必须准确描述创建资源的顺序。例如，先创建VPC，然后创建子网，并将EC2放置在该子网内。
 
-在Terraform中，从代码中出现的引用关系（例如在子网配置中引用 `aws_vpc.main.id`），Terraform Core会自动构建 **依赖关系图 (Dependency Graph)** 。
+在Terraform中，从代码中出现的引用关系（例如在子网配置中引用 `aws_vpc.main.id`），Terraform Core会自动构建 **依赖关系图 (Dependency [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** 。
 
 ```mermaid
 graph TD

@@ -175,7 +175,7 @@ A abordagem de usar tempos de execução JavaScript experimentais de baixo peso 
 ### 5.2. Redução do Pacote de Implantação
 
 O Lambda baixa o código do S3 durante a inicialização. Portanto, manter o tamanho do pacote pequeno é uma otimização direta.
-É de extrema importância não incluir dependências desnecessárias (como DevDependencies) e minimizar (Minify) e aplicar o sacudimento de árvores (Tree-shaking) no código usando empacotadores (bundlers) como Webpack / esbuild.
+É de extrema importância não incluir dependências desnecessárias (como DevDependencies) e minimizar (Minify) e aplicar o sacudimento de árvores ([Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-shaking) no código usando empacotadores (bundlers) como Webpack / esbuild.
 
 ### 5.3. Otimização do Processo de Inicialização e Avaliação Preguiçosa (Lazy Initialization)
 

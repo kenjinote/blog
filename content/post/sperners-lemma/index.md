@@ -77,7 +77,7 @@ graph TD
 
 # 5. [グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)を用いた美しい証明
 
-この定理は、直感的には不思議に思えるかもしれませんが、「双対グラフ (Dual Graph)」と「握手補題 (Handshaking Lemma)」を用いることで、魔法のように美しく証明できます。このアプローチは「部屋とドア」のアナロジーを使うと非常に分かりやすいです。
+この定理は、直感的には不思議に思えるかもしれませんが、「双対[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Dual [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))」と「握手補題 (Handshaking Lemma)」を用いることで、魔法のように美しく証明できます。このアプローチは「部屋とドア」のアナロジーを使うと非常に分かりやすいです。
 
 ## 5.1. 部屋とドアの定義
 

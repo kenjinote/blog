@@ -58,7 +58,7 @@ Salah satu pilihan terpenting bagi pengembang C++ adalah ekstensi yang menyediak
 Karena `clangd` secara langsung menggabungkan teknologi frontend dari compiler Clang (parser dan penganalisis semantik), akurasi analisis kodenya sangat tinggi, dan error serta peringatan yang ditampilkan pada editor sepenuhnya cocok dengan output dari compiler yang sebenarnya.
 
 #### Alasan Memilih clangd daripada ms-vscode.cpptools
-- **Analisis dengan Akurasi Tinggi**: Karena menangani AST (Abstract Syntax Tree) Clang secara langsung, ia mengevaluasi dengan akurat instansiasi template yang rumit yang menggunakan banyak SFINAE (Substitution Failure Is Not An Error) dan ekspansi makro yang bersarang.
+- **Analisis dengan Akurasi Tinggi**: Karena menangani AST (Abstract Syntax [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) Clang secara langsung, ia mengevaluasi dengan akurat instansiasi template yang rumit yang menggunakan banyak SFINAE (Substitution Failure Is Not An Error) dan ekspansi makro yang bersarang.
 - **Peningkatan Kecepatan oleh Indeks Latar Belakang**: Dengan melakukan pra-komputasi (indeksasi) informasi simbol dari seluruh proyek di latar belakang, fitur seperti "Buka Definisi" (Go to Definition) atau "Temukan Semua Referensi" (Find All References) dapat diselesaikan dalam sekejap bahkan pada proyek besar.
 
 #### Pengaturan Sempurna compile_commands.json

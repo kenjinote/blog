@@ -75,7 +75,7 @@ The Block Header includes the following information:
 
 ### Merkle Trees
 
-In a blockchain, a data structure called a **Merkle Tree** is used to efficiently detect data tampering while keeping the block size down. A Merkle Tree is a type of binary tree where the leaf nodes contain the hash values of each transaction, and parent nodes are created by concatenating and hashing the hash values of their child nodes.
+In a blockchain, a data structure called a **Merkle [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** is used to efficiently detect data tampering while keeping the block size down. A Merkle Tree is a type of binary tree where the leaf nodes contain the hash values of each transaction, and parent nodes are created by concatenating and hashing the hash values of their child nodes.
 
 ```mermaid
 flowchart TD

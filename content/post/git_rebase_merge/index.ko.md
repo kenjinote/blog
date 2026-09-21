@@ -25,7 +25,7 @@ Git이 이력을 어떻게 통합하는지 이해하기 위해서는 먼저 Git�
 
 Git의 각 커밋은 그 내용을 바탕으로 계산된 SHA-1(Secure Hash Algorithm 1) 해시 함수에 의한 40자리 16진수로 고유하게 식별됩니다. 커밋 객체는 다음 요소들로 구성됩니다:
 
-1. **Tree 객체에 대한 포인터**: 그 시점의 디렉토리 구조와 파일(Blob)의 스냅샷
+1. **[Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 객체에 대한 포인터**: 그 시점의 디렉토리 구조와 파일(Blob)의 스냅샷
 2. **부모 커밋에 대한 포인터**: 1개 이상의 부모 커밋의 해시값 (첫 커밋은 부모를 가지지 않으며, 병합 커밋은 2개 이상의 부모를 가집니다)
 3. **작성자 정보(Author)**: 코드를 작성한 사람과 일시
 4. **커미터 정보(Committer)**: 커밋을 생성하고 적용한 사람과 일시
@@ -51,7 +51,7 @@ $$
 
 # 3. 그래프 이론과 DAG：Git 이력의 수학적 모델
 
-Git의 커밋 이력은 그래프 이론의 "방향 비순환 그래프(Directed Acyclic Graph, DAG)"로 모델링됩니다.
+Git의 커밋 이력은 그래프 이론의 "방향 비순환 그래프(Directed Acyclic [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), DAG)"로 모델링됩니다.
 
 ## 3.1 DAG(방향 비순환 그래프)란
 

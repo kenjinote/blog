@@ -28,7 +28,7 @@ tags: ["四色定理", "圖論", "電腦輔助證明", "拓撲學"]
 
 ## 4. 轉換為圖論
 
-為了在數學上嚴謹地處理[四色定理](https://kenji.blog/zh-tw/p/four-color-theorem/)，問題被翻譯成圖論的語言。地圖上的每個區域作為「頂點（Vertex）」，而共享邊界線的區域則用「邊（Edge）」連接。這樣建立的圖被稱為「平面圖（Planar Graph）」。
+為了在數學上嚴謹地處理[四色定理](https://kenji.blog/zh-tw/p/four-color-theorem/)，問題被翻譯成圖論的語言。地圖上的每個區域作為「頂點（Vertex）」，而共享邊界線的區域則用「邊（Edge）」連接。這樣建立的圖被稱為「平面圖（Planar [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）」。
 
 平面圖是指可以在平面上繪製而邊不相交的圖。四色問題於是歸結為：「所有平面圖的頂點，都可以用 **4種顏色** 著色，使得相鄰的頂點顏色不同。」
 
@@ -85,7 +85,7 @@ graph TD
 
 ## 4. 轉換為圖論
 
-為了在數學上嚴謹地處理[四色定理](https://kenji.blog/zh-tw/p/four-color-theorem/)，問題被翻譯成圖論的語言。地圖上的每個區域作為「頂點（Vertex）」，而共享邊界線的區域則用「邊（Edge）」連接。這樣建立的圖被稱為「平面圖（Planar Graph）」。
+為了在數學上嚴謹地處理[四色定理](https://kenji.blog/zh-tw/p/four-color-theorem/)，問題被翻譯成圖論的語言。地圖上的每個區域作為「頂點（Vertex）」，而共享邊界線的區域則用「邊（Edge）」連接。這樣建立的圖被稱為「平面圖（Planar [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）」。
 
 平面圖是指可以在平面上繪製而邊不相交的圖。四色問題於是歸結為：「所有平面圖的頂點，都可以用 **4種顏色** 著色，使得相鄰的頂點顏色不同。」
 
@@ -142,7 +142,7 @@ graph TD
 
 ## 4. 轉換為圖論
 
-為了在數學上嚴謹地處理[四色定理](https://kenji.blog/zh-tw/p/four-color-theorem/)，問題被翻譯成圖論的語言。地圖上的每個區域作為「頂點（Vertex）」，而共享邊界線的區域則用「邊（Edge）」連接。這樣建立的圖被稱為「平面圖（Planar Graph）」。
+為了在數學上嚴謹地處理[四色定理](https://kenji.blog/zh-tw/p/four-color-theorem/)，問題被翻譯成圖論的語言。地圖上的每個區域作為「頂點（Vertex）」，而共享邊界線的區域則用「邊（Edge）」連接。這樣建立的圖被稱為「平面圖（Planar [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）」。
 
 平面圖是指可以在平面上繪製而邊不相交的圖。四色問題於是歸結為：「所有平面圖的頂點，都可以用 **4種顏色** 著色，使得相鄰的頂點顏色不同。」
 
@@ -199,7 +199,7 @@ graph TD
 
 ## 4. 轉換為圖論
 
-為了在數學上嚴謹地處理[四色定理](https://kenji.blog/zh-tw/p/four-color-theorem/)，問題被翻譯成圖論的語言。地圖上的每個區域作為「頂點（Vertex）」，而共享邊界線的區域則用「邊（Edge）」連接。這樣建立的圖被稱為「平面圖（Planar Graph）」。
+為了在數學上嚴謹地處理[四色定理](https://kenji.blog/zh-tw/p/four-color-theorem/)，問題被翻譯成圖論的語言。地圖上的每個區域作為「頂點（Vertex）」，而共享邊界線的區域則用「邊（Edge）」連接。這樣建立的圖被稱為「平面圖（Planar [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）」。
 
 平面圖是指可以在平面上繪製而邊不相交的圖。四色問題於是歸結為：「所有平面圖的頂點，都可以用 **4種顏色** 著色，使得相鄰的頂點顏色不同。」
 

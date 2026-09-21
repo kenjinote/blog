@@ -165,7 +165,7 @@ graph TD
     F --> G["Generierung des endgültigen, optimierten Codes"]
 ```
 
-### 3.3 Tree of Thoughts (ToT)
+### 3.3 [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) of Thoughts (ToT)
 
 Eine weitere Erweiterung des CoT-Konzepts ist der **Tree of Thoughts (ToT)**. Während CoT einem linearen Pfad (Einweg-Pfad) von Überlegungen folgt, ist ToT ein Ansatz, bei dem mehrere Denkpfade (Zweige) parallel wie in einem Suchbaum entwickelt werden. Jeder Pfad wird vom Modell selbst bewertet, und durch Backtracking wird die optimale Lösung ermittelt.
 

@@ -162,9 +162,9 @@ graph LR
 
 このように、暗号アル প্রক্রアルゴリズムは数学的なブレイクスルーや計算機の進化によって徐々に弱体化していく運命にあります。
 
-## 5. データ構造における鳩の巣原理：ハッシュテーブル
+## 5. データ構造における鳩の巣原理：[ハッシュテーブル](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)
 
-暗号技術以外の分野でも、[鳩の巣原理とハッシュ衝突](https://kenji.blog/p/pigeonhole-principle-hash-collision/)は重要なテーマです。プログラミングで頻繁に使用される 「 **ハッシュテーブル（連想配列や辞書型）** 」 がその代表例です。
+暗号技術以外の分野でも、[鳩の巣原理とハッシュ衝突](https://kenji.blog/p/pigeonhole-principle-hash-collision/)は重要なテーマです。プログラミングで頻繁に使用される 「 **[ハッシュテーブル](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)（連想配列や辞書型）** 」 がその代表例です。
 
 ハッシュテーブルでは、キーからハッシュ値を計算し、それを配列のインデックスとして値を格納します。配列のサイズ（巣）よりも多くのデータ（鳩）を格納しようとしたり、ハッシュ関数に偏りがあったりすると、異なるキーが同じインデックスを指してしまう「衝突」が必然的に発生します。
 

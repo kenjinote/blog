@@ -10,7 +10,7 @@ tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 
 ## 1. 데이터베이스 인덱스와 B-트리의 만남
 
-현대 시스템에서 데이터베이스는 애플리케이션의 근간을 이루는 존재입니다. 수백만, 수억 개의 레코드 중에서 목적하는 데이터를 밀리초 단위로 검색하여 출력하는 능력은 데이터베이스 관리 시스템(DBMS)의 가장 중요한 기능 중 하나입니다. 이 경이로운 검색 속도를 뒷받침하는 것이 **인덱스** (색인)이며, 그 이면에 있는 데이터 구조가 **B-트리** (B-Tree) 및 그 파생인 **B+트리** (B+Tree)입니다.
+현대 시스템에서 데이터베이스는 애플리케이션의 근간을 이루는 존재입니다. 수백만, 수억 개의 레코드 중에서 목적하는 데이터를 밀리초 단위로 검색하여 출력하는 능력은 데이터베이스 관리 시스템(DBMS)의 가장 중요한 기능 중 하나입니다. 이 경이로운 검색 속도를 뒷받침하는 것이 **인덱스** (색인)이며, 그 이면에 있는 데이터 구조가 **B-트리** (B-[Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 및 그 파생인 **B+트리** (B+Tree)입니다.
 
 본 기사에서는 왜 관계형 데이터베이스가 이진 탐색 트리나 해시 테이블이 아닌 **B-트리** 제품군을 선택하는지에 대해 디스크 I/O의 성질, 데이터 구조의 이론, 수학적 분석, 그리고 실제 코드 구현을 곁들여 깊이 파헤쳐 봅니다.
 
@@ -26,7 +26,7 @@ tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 
 ### 2.2 이진 탐색 트리(BST)의 한계
 
-메모리상에서의 검색에 있어서 **이진 탐색 트리** (Binary Search Tree: BST)나 **레드-블랙 트리** (Red-Black Tree) 등의 균형 이진 탐색 트리는 $ O(\log N) $ 의 계산 복잡도로 고속 검색이 가능합니다. 그러나 이를 그대로 디스크상의 데이터베이스에 적용하면 심각한 문제가 발생합니다.
+메모리상에서의 검색에 있어서 **이진 탐색 트리** ([Binary Search](https://kenji.blog/ko/p/search-algorithms-linear-binary-hash-table-principles/) Tree: BST)나 **레드-블랙 트리** (Red-Black Tree) 등의 균형 이진 탐색 트리는 $ O(\log N) $ 의 계산 복잡도로 고속 검색이 가능합니다. 그러나 이를 그대로 디스크상의 데이터베이스에 적용하면 심각한 문제가 발생합니다.
 
 이진 트리는 하나의 노드가 최대 2개의 자식 노드를 가집니다. 요소 수 $ N $ 이 증가하면 트리의 높이 $ h $ 는 $ \log_2 N $ 에 비례하여 깊어집니다. 예를 들어 $ N = 1,000,000 $ 인 경우, 트리의 높이는 약 20이 됩니다. 각 노드가 다른 디스크 페이지에 배치되어 있다고 가정하면, 최악의 경우 20번의 랜덤 디스크 I/O가 발생합니다. 이는 데이터베이스에 있어 치명적인 지연입니다.
 
@@ -73,7 +73,7 @@ $$
 
 ## 4. 데이터베이스의 표준: B+트리로의 진화
 
-실제 [RDBMS](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/)(MySQL의 InnoDB나 PostgreSQL 등)에서 사용되는 것은 B-트리의 개량판인 **B+트리** (B+Tree)입니다.
+실제 [RDBMS](https://kenji.blog/ko/p/rdbms-transaction-acid-isolation-level-lock/)(MySQL의 InnoDB나 PostgreSQL 등)에서 사용되는 것은 B-트리의 개량판인 **B+트리** (B+[Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))입니다.
 
 ### 4.1 B-트리와 B+트리의 차이
 
@@ -217,6 +217,6 @@ else:
 
 **B-트리** 및 **B+트리** 는 디스크 기반 시스템에서 I/O 비용의 최소화를 목적으로 설계된 걸작이라고 할 수 있는 데이터 구조입니다. 높은 분기 수로 인한 얕은 트리 구조, 순차 액세스의 최적화 등 물리적 디바이스의 특성과 수학적 알고리즘이 훌륭하게 융합되어 있습니다.
 
-최근에는 SSD의 보급으로 쓰기 증폭(Write Amplification)을 억제하기 위한 **LSM-트리** (Log-Structured Merge-Tree) 등 새로운 데이터 구조도 등장하고 있지만, 읽기 성능과 범위 검색의 균형, 트랜잭션 처리에서의 안정성에 있어서 여전히 **B+트리** 는 관계형 데이터베이스의 절대적인 제왕으로 군림하고 있습니다.
+최근에는 SSD의 보급으로 쓰기 증폭(Write Amplification)을 억제하기 위한 **LSM-트리** (Log-Structured Merge-[Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 등 새로운 데이터 구조도 등장하고 있지만, 읽기 성능과 범위 검색의 균형, 트랜잭션 처리에서의 안정성에 있어서 여전히 **B+트리** 는 관계형 데이터베이스의 절대적인 제왕으로 군림하고 있습니다.
 
 데이터베이스 내부에서 무슨 일이 일어나고 있는지를 이해하는 것은 쿼리의 최적화나 적절한 인덱스 설계와 직결됩니다. 본 기사에서 해설한 이론을 바탕으로, 꼭 일상적인 데이터베이스 조작에서의 인덱스 동작을 관찰해 보시길 바랍니다.

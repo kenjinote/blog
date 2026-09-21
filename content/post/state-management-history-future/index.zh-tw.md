@@ -417,7 +417,7 @@ graph TD
 
 ### 10.3 Signals 的數學模型
 
-Signals 背後的理論是「響應式程式設計（Reactive Programming）」，它將狀態與計算的依賴關係建模為 **有向無環圖（Directed Acyclic Graph: DAG）** ，並利用圖的拓撲排序來有效率地決定更新順序。
+Signals 背後的理論是「響應式程式設計（Reactive Programming）」，它將狀態與計算的依賴關係建模為 **有向無環圖（Directed Acyclic [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/): DAG）** ，並利用圖的拓撲排序來有效率地決定更新順序。
 
 如果某個衍生狀態（Computed） $ C $ 依賴於 Signal $ S_1, S_2 $，就會形成邊 $ S_1 \to C $, $ S_2 \to C $。
 當值更新時，透過追蹤圖只評估需要的節點（如推 / 拉混合策略等），防止出現故障（Glitch：瞬間顯示不一致的過渡狀態 UI 的現象），並保證拓撲一致性。

@@ -76,7 +76,7 @@ flowchart TD
 
 ### 默克爾樹（Merkle Trees）
 
-在區塊鏈中，為了在控制區塊大小的同時有效檢測數據篡改，使用了名為 **默克爾樹（Merkle Tree）** 的數據結構。默克爾樹是一種二元樹，葉節點包含每筆交易的哈希值，而父節點則是將子節點的哈希值連接並再次進行哈希計算而得。
+在區塊鏈中，為了在控制區塊大小的同時有效檢測數據篡改，使用了名為 **默克爾樹（Merkle [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）** 的數據結構。默克爾樹是一種二元樹，葉節點包含每筆交易的哈希值，而父節點則是將子節點的哈希值連接並再次進行哈希計算而得。
 
 ```mermaid
 flowchart TD

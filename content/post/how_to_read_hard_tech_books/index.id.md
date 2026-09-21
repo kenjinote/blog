@@ -81,7 +81,7 @@ graph LR
 Dalam menghafal buku teknis, "menghafal pembuktian panjang secara utuh" adalah hal yang sia-sia. Bagilah pengetahuan menjadi unit terkecil (Atomic) sebelum dijadikan kartu.
 
 - **Kartu yang buruk**: "Tulis seluruh pembuktian Algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/)."
-- **Kartu yang baik**: "Dalam Algoritma Dijkstra, apa syarat agar jarak terpendek sebuah simpul dianggap sudah pasti?" → "Ketika simpul dengan jarak sementara terkecil dipilih dari himpunan simpul yang belum pasti."
+- **Kartu yang baik**: "Dalam Algoritma [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), apa syarat agar jarak terpendek sebuah simpul dianggap sudah pasti?" → "Ketika simpul dengan jarak sementara terkecil dipilih dari himpunan simpul yang belum pasti."
 - **Kartu yang baik**: "Sebutkan rumus [Teorema Kecil Fermat](https://kenji.blog/id/p/fermats-little-theorem/)." → "Untuk bilangan prima $p$ dan bilangan bulat $a$ yang saling prima, $a^{p-1} \equiv 1 \pmod p$."
 
 Saat menghafal rumus matematika, sangat efektif jika Anda mendaftarkannya di Anki dalam format LaTeX dan memanfaatkan metode rumpang (Cloze Deletion).
@@ -175,7 +175,7 @@ Untuk menemukan $d$ yang memenuhi rumus $e \cdot d \equiv 1 \pmod{\phi(n)}$, kit
 
 ### 4.2 Contoh 2: Algoritma [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/) dan Relaksasi (Relaxation)
 
-Mari kita pertimbangkan Algoritma Dijkstra untuk menyelesaikan masalah lintasan terpendek dari sumber tunggal (SSSP) dalam teori graf.
+Mari kita pertimbangkan Algoritma [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) untuk menyelesaikan masalah lintasan terpendek dari sumber tunggal (SSSP) dalam teori graf.
 
 Inti matematis dan algoritmik dari metode ini adalah operasi yang disebut "Relaksasi" (Relaxation).
 Ketika terdapat sisi dari simpul $u$ ke simpul $v$ dengan bobot $w(u, v)$, jarak terpendek sementara $d[v]$ ke simpul $v$ diperbarui dengan rumus berikut.

@@ -34,7 +34,7 @@ C++26 aims to maximize the **self-descriptiveness of code (reflection)** and **r
 
 # 1. Reflection (Static Reflection): The True Revolution of Metaprogramming
 
-It is no exaggeration to say that the biggest highlight of C++26 is **Static Reflection** (based mainly on proposals like P2996). Previously in C++, to obtain information about the structure of a type or member variables from within a program, it was necessary to use complex template metaprogramming (TMP) or macros. However, with the reflection mechanism of C++26, it is now possible to safely and intuitively access the program's own structure (AST: Abstract Syntax Tree information) at compile time.
+It is no exaggeration to say that the biggest highlight of C++26 is **Static Reflection** (based mainly on proposals like P2996). Previously in C++, to obtain information about the structure of a type or member variables from within a program, it was necessary to use complex template metaprogramming (TMP) or macros. However, with the reflection mechanism of C++26, it is now possible to safely and intuitively access the program's own structure (AST: Abstract Syntax [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) information) at compile time.
 
 ## 1.1 Challenges up to C++23
 

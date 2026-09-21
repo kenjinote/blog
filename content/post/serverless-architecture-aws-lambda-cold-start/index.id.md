@@ -175,7 +175,7 @@ Pendekatan dengan menggunakan runtime JavaScript eksperimental yang ringan yang 
 ### 5.2. Peringanan Paket Penerapan (Deployment Package)
 
 Lambda mengunduh kode dari S3 saat diluncurkan. Oleh karena itu, menjaga agar ukuran paket tetap kecil merupakan optimisasi yang berdampak langsung.
-Sangat penting untuk tidak menyertakan dependensi yang tidak diperlukan (seperti DevDependencies), serta menggunakan bundler seperti Webpack / esbuild untuk meminifikasi (Minify) dan memangkas pohon (Tree-shaking) kode.
+Sangat penting untuk tidak menyertakan dependensi yang tidak diperlukan (seperti DevDependencies), serta menggunakan bundler seperti Webpack / esbuild untuk meminifikasi (Minify) dan memangkas pohon ([Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-shaking) kode.
 
 ### 5.3. Optimisasi Proses Inisialisasi dan Evaluasi Malas (Lazy Initialization)
 

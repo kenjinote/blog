@@ -159,7 +159,7 @@ When this code is compiled, `wasm-bindgen` automatically generates JavaScript gl
 
 Why is WebAssembly faster than JavaScript?
 
-1.  **Parsing Speed**: Since Wasm is a binary format, it can be decoded much faster than parsing text-based JS source code to build an Abstract Syntax Tree (AST).
+1.  **Parsing Speed**: Since Wasm is a binary format, it can be decoded much faster than parsing text-based JS source code to build an Abstract Syntax [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (AST).
 2.  **JIT Optimization**: Because JS is a dynamically typed language, the JIT compiler must perform type inference at runtime and undo optimizations (Deoptimization) if the inference is wrong. Wasm is statically typed, and powerful optimizations have already been performed at compile time by tools like LLVM, allowing the browser to focus directly on generating machine code.
 3.  **Avoidance of Garbage Collection (GC)**: Wasm written in C or Rust manages memory independently, so unexpected pauses (stop-the-world) caused by the JS engine's GC do not occur (*We will discuss Wasm GC specifications later).
 

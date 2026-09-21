@@ -142,7 +142,7 @@ description: 'Presentamos una cuidada selección de citas inspiradoras de person
 
 > La simplicidad es un requisito previo para la confiabilidad (Edsger [Dijkstra](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/))
 
-> La informática no trata sobre los ordenadores, al igual que la astronomía no trata sobre los telescopios (Edsger Dijkstra)
+> La informática no trata sobre los ordenadores, al igual que la astronomía no trata sobre los telescopios (Edsger [Dijkstra](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 > Solo hay dos cosas difíciles en informática: la invalidación de la caché y poner nombres a las cosas (Phil Karlton)
 

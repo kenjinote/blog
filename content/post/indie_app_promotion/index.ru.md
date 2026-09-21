@@ -17,7 +17,7 @@ tags: ["Growth Hacking", "GA4", "PostHog", "Conversion Rate"]
 
 SEO (поисковая оптимизация) для технического блога — это не просто расстановка ключевых слов. Требуется программный подход для точной передачи семантики (смысла) вашего контента поисковым системам (Googlebot) и краулерам социальных сетей.
 
-### 1.1 Оптимизация Open Graph Protocol (OGP)
+### 1.1 Оптимизация Open [Graph](https://kenji.blog/ru/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP)
 
 Для максимизации кликабельности (CTR), когда вашей технической статьей делятся в X (бывший Twitter), Hacker News, Zenn и т.д., динамическая генерация OGP просто необходима. При использовании App Router в Next.js используйте функцию `generateMetadata` для вывода оптимизированного OGP для каждой статьи.
 

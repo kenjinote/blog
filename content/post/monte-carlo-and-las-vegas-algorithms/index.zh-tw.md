@@ -126,7 +126,7 @@ print(f"排序結果: {sorted_data}")
 
 在這個實作中，排序結果絕對不可能出錯。不過，如果亂數的運氣極度不佳，總是持續選擇到最大值或最小值作為基準點，計算時間就會顯著增加。
 
-### 具體範例 2：建構雜湊表 (Hash Table)
+### 具體範例 2：建構雜湊表 ([Hash Table](https://kenji.blog/zh-tw/p/search-algorithms-linear-binary-hash-table-principles/))
 
 另一個拉斯維加斯法的例子是建構完美雜湊函數。
 假設對於給定的資料集合，我們希望建立一個完全不發生碰撞（不同的資料變成相同的雜湊值）的雜湊函數。

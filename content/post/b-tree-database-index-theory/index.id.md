@@ -8,7 +8,7 @@ categories: ["computer-science", "databases"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 ---
 
-## 1. Pertemuan Antara Indeks Basis Data dan B-Tree
+## 1. Pertemuan Antara Indeks Basis Data dan B-[Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)
 
 Dalam sistem modern, basis data adalah tulang punggung dari sebuah aplikasi. Kemampuan untuk mencari dan menghasilkan data yang diinginkan dalam hitungan milidetik dari jutaan bahkan ratusan juta rekaman adalah salah satu fungsi paling penting dari Sistem Manajemen Basis Data (DBMS). Kecepatan pencarian yang luar biasa ini didukung oleh **indeks**, dan struktur data di baliknya adalah **B-Tree** serta turunannya, yaitu **B+Tree**.
 
@@ -26,7 +26,7 @@ Ketika basis data melakukan pencarian pada indeks, meminimalkan jumlah halaman y
 
 ### 2.2 Keterbatasan Pohon Pencarian Biner (BST)
 
-Dalam pencarian di dalam memori, pohon pencarian biner seimbang (Balanced Binary Search Tree) seperti **Pohon Pencarian Biner** (Binary Search Tree: BST) atau **Pohon Merah-Hitam** (Red-Black Tree) memungkinkan pencarian cepat dengan kompleksitas $ O(\log N) $. Namun, jika diterapkan secara langsung pada basis data di disk, hal ini akan menimbulkan masalah serius.
+Dalam pencarian di dalam memori, pohon pencarian biner seimbang (Balanced [Binary Search](https://kenji.blog/id/p/search-algorithms-linear-binary-hash-table-principles/) Tree) seperti **Pohon Pencarian Biner** (Binary Search Tree: BST) atau **Pohon Merah-Hitam** (Red-Black Tree) memungkinkan pencarian cepat dengan kompleksitas $ O(\log N) $. Namun, jika diterapkan secara langsung pada basis data di disk, hal ini akan menimbulkan masalah serius.
 
 Pohon biner memiliki maksimal dua simpul anak untuk setiap simpulnya. Seiring bertambahnya jumlah elemen $ N $, tinggi pohon $ h $ akan semakin dalam secara proporsional terhadap $ \log_2 N $. Sebagai contoh, jika $ N = 1,000,000 $, tinggi pohon akan menjadi sekitar 20. Jika kita mengasumsikan setiap simpul ditempatkan pada halaman disk yang berbeda, dalam kasus terburuk akan terjadi 20 kali I/O disk secara acak. Ini merupakan keterlambatan yang fatal bagi basis data.
 
@@ -73,7 +73,7 @@ Hal ini membuktikan secara matematis bahwa **B-Tree** sangat efisien untuk penca
 
 ## 4. Standar Basis Data: Evolusi ke B+Tree
 
-Dalam praktiknya, [RDBMS](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/) (seperti InnoDB pada MySQL atau PostgreSQL) menggunakan versi perbaikan dari B-Tree, yaitu **B+Tree**.
+Dalam praktiknya, [RDBMS](https://kenji.blog/id/p/rdbms-transaction-acid-isolation-level-lock/) (seperti InnoDB pada MySQL atau PostgreSQL) menggunakan versi perbaikan dari B-[Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), yaitu **B+Tree**.
 
 ### 4.1 Perbedaan Antara B-Tree dan B+Tree
 
@@ -86,7 +86,7 @@ Pada B-Tree, data aktual (atau pointer menuju data) disimpan baik pada simpul in
 
 Dengan menghilangkan pointer ke data aktual dari simpul internal, sebuah simpul internal (halaman) dapat memuat lebih banyak kunci. Hal ini lebih lanjut meningkatkan jumlah percabangan (Fan-out), sehingga tinggi pohon $ h $ dapat ditekan menjadi lebih rendah, dan jumlah I/O disk semakin berkurang.
 
-Selain itu, pada pencarian rentang seperti `WHERE id BETWEEN 10 AND 100` yang sering digunakan dalam SQL, jika menggunakan B-Tree kita harus melintasi pohon berkali-kali. Namun dengan **B+Tree**, setelah menemukan simpul daun sebagai titik awal sebanyak satu kali, kita dapat membaca data secara berurutan hanya dengan menelusuri tautan antar simpul daun.
+Selain itu, pada pencarian rentang seperti `WHERE id BETWEEN 10 AND 100` yang sering digunakan dalam SQL, jika menggunakan B-[Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) kita harus melintasi pohon berkali-kali. Namun dengan **B+Tree**, setelah menemukan simpul daun sebagai titik awal sebanyak satu kali, kita dapat membaca data secara berurutan hanya dengan menelusuri tautan antar simpul daun.
 
 ```mermaid
 graph TD
@@ -114,7 +114,7 @@ graph TD
     style H fill:#f9f,stroke:#333,stroke-width:2px
     style I fill:#f9f,stroke:#333,stroke-width:2px
 ```
-*(Gambar: Struktur B+Tree. Simpul-simpul daun dihubungkan membentuk rantai)*
+*(Gambar: Struktur B+[Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/). Simpul-simpul daun dihubungkan membentuk rantai)*
 
 ## 5. Contoh Implementasi B-Tree (Simulasi dengan Python)
 
@@ -211,7 +211,7 @@ else:
     print("Kunci tidak ditemukan")
 ```
 
-Seperti yang bisa dilihat dari implementasi ini, proses penyisipan pada B-Tree akan memisahkan (Split) simpul dari bawah ke atas sesuai kebutuhan, sehingga pohon tersebut tetap terjaga keseimbangannya (Balanced). Dengan demikian, bagaimanapun urutan data yang disisipkan, performa pencarian tidak akan mengalami penurunan.
+Seperti yang bisa dilihat dari implementasi ini, proses penyisipan pada B-[Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) akan memisahkan (Split) simpul dari bawah ke atas sesuai kebutuhan, sehingga pohon tersebut tetap terjaga keseimbangannya (Balanced). Dengan demikian, bagaimanapun urutan data yang disisipkan, performa pencarian tidak akan mengalami penurunan.
 
 ## 6. Kesimpulan dan Perkembangan
 

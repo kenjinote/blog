@@ -235,7 +235,7 @@ SPHINCS+ 属于 **基于哈希的签名** 。其安全性的依据仅依赖于�
 
 ### 8.1. 利用WOTS+与FORS实现的无状态架构
 
-基于哈希的签名历史悠久，可以追溯到20世纪70年代的Lamport签名和Winternitz一次性签名（WOTS）。这些是“只能安全签名一次”的用后即弃密钥。为了能多次使用，开发出了结合默克尔树（Merkle Tree）将无数次一次性密钥统一由一个根哈希来管理的XMSS（eXtended Merkle Signature Scheme）和LMS等算法。
+基于哈希的签名历史悠久，可以追溯到20世纪70年代的Lamport签名和Winternitz一次性签名（WOTS）。这些是“只能安全签名一次”的用后即弃密钥。为了能多次使用，开发出了结合默克尔树（Merkle [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）将无数次一次性密钥统一由一个根哈希来管理的XMSS（eXtended Merkle Signature Scheme）和LMS等算法。
 
 但是，XMSS和LMS存在一个叫做“ **有状态（Stateful）** ”的严重缺陷。每次签名都必须在非易失性内存中严格记录“使用了第几个一次性密钥”的索引状态，如果因为虚拟机快照恢复等原因导致状态回溯，同一个一次性密钥被使用两次，私钥就会立刻泄露导致系统崩溃。
 

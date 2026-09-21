@@ -57,7 +57,7 @@ Um dies zu überwinden, wurden die folgenden erweiterten Modelle vorgeschlagen:
 - **l-Diversität (l-diversity)**: Garantiert, dass sensible Attribute in jeder Äquivalenzklasse mindestens $l$ verschiedene Werte aufweisen.
 - **t-Nähe (t-closeness)**: Stellt sicher, dass der Abstand (z. B. Earth Mover's Distance) zwischen der Verteilung sensibler Attribute in jeder Äquivalenzklasse und der Verteilung sensibler Attribute im gesamten Datensatz unter einem Schwellenwert $t$ liegt.
 
-### 2.2 Differentielle Privatsphäre (Differential Privacy: DP)
+### 2.2 Differentielle Privatsphäre (Differential Privacy: [DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
 Die derzeit am weitesten verbreitete und mächtigste, mathematisch strenge Datenschutzrichtlinie, die die Grenzen des k-Anonymitätsmodells überwindet, ist die 2006 von Cynthia Dwork und anderen vorgeschlagene „Differentielle Privatsphäre“ (Differential Privacy). Tech-Giganten wie Apple, Google und Microsoft wenden diese $\epsilon$-Differentielle Privatsphäre an, wenn sie Telemetrie- oder statistische Daten von Nutzern sammeln.
 

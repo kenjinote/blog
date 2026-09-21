@@ -14,7 +14,7 @@ Hugo adalah salah satu generator situs statis (SSG) tercepat di dunia, ditulis d
 
 Untuk meningkatkan peringkat pencarian, meningkatkan penyebaran di media sosial, dan pada akhirnya secara dramatis meningkatkan lalu lintas ke blog Anda, optimasi mesin pencari (SEO) yang cermat sangatlah penting. Inti dari strategi SEO di Hugo adalah kolaborasi antara **frontmatter** (yang ditulis di awal setiap artikel markdown) dan **template** ([Layout](https://kenji.blog/id/p/browser-rendering-mechanism-dom-paint/)s) yang menafsirkannya dan menyebarkan metadata di dalam tag `<head>` HTML.
 
-Dalam artikel ini, kami akan menjelaskan secara menyeluruh cara memaksimalkan fitur Hugo untuk mengimplementasikan strategi SEO tingkat lanjut, dengan volume yang melebihi 10.000 karakter, mulai dari pengaturan frontmatter hingga berbagai meta tag, OGP (Open Graph Protocol), Twitter Cards, dan output data terstruktur menggunakan JSON-LD.
+Dalam artikel ini, kami akan menjelaskan secara menyeluruh cara memaksimalkan fitur Hugo untuk mengimplementasikan strategi SEO tingkat lanjut, dengan volume yang melebihi 10.000 karakter, mulai dari pengaturan frontmatter hingga berbagai meta tag, OGP (Open [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol), Twitter Cards, dan output data terstruktur menggunakan JSON-LD.
 
 ---
 
@@ -122,7 +122,7 @@ Dengan menggunakan `.Summary` Hugo sebagai fallback, Anda dapat secara otomatis 
 
 ## 4. OGP dan Twitter Cards: Memaksimalkan CTR di Media Sosial
 
-Untuk membuat artikel Anda muncul dalam format kartu yang menarik saat dibagikan di SNS seperti Twitter (X) atau Facebook, pengaturan Open Graph Protocol (OGP) dan Twitter Cards sangatlah penting. Ini juga dibuat secara dinamis dari frontmatter.
+Untuk membuat artikel Anda muncul dalam format kartu yang menarik saat dibagikan di SNS seperti Twitter (X) atau Facebook, pengaturan Open [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP) dan Twitter Cards sangatlah penting. Ini juga dibuat secara dinamis dari frontmatter.
 
 ### 4.1. Masalah dengan Template Bawaan
 

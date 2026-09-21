@@ -10,7 +10,7 @@ tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 
 ## 1. Encounter Between Database Indexes and B-Trees
 
-In modern systems, databases are the backbone of applications. The ability to search and output desired data in milliseconds from millions or hundreds of millions of records is one of the most important features of a database management system (DBMS). Supporting this incredible search speed is the **index**, and the data structure behind it is the **B-Tree** and its derivative, the **B+Tree**.
+In modern systems, databases are the backbone of applications. The ability to search and output desired data in milliseconds from millions or hundreds of millions of records is one of the most important features of a database management system (DBMS). Supporting this incredible search speed is the **index**, and the data structure behind it is the **B-[Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** and its derivative, the **B+Tree**.
 
 In this article, we dive deeply into why relational databases choose the **B-Tree** family over binary search trees or hash tables, blending the characteristics of disk I/O, data structure theory, mathematical analysis, and actual code implementation.
 
@@ -24,7 +24,7 @@ Access to storage is overwhelmingly slow compared to access to memory (RAM). The
 
 When a database searches an index, minimizing the number of times pages are loaded from the disk to memory ( **disk I/O count** ) is the most significant factor determining search performance.
 
-### 2.2 Limits of Binary Search Trees (BST)
+### 2.2 Limits of [Binary Search](https://kenji.blog/en/p/search-algorithms-linear-binary-hash-table-principles/) Trees (BST)
 
 For searches in memory, balanced binary search trees like **Binary Search Trees** (BST) and **Red-Black Trees** enable fast searches with a time complexity of $ O(\log N) $. However, applying this directly to a database on disk causes serious problems.
 
@@ -73,7 +73,7 @@ This mathematically supports that the **B-Tree** is extremely efficient in searc
 
 ## 4. Database Standard: Evolution to B+Trees
 
-What is actually used in [RDBMS](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) (like MySQL's InnoDB and PostgreSQL) is the **B+Tree**, an improved version of the B-Tree.
+What is actually used in [RDBMS](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) (like MySQL's InnoDB and PostgreSQL) is the **B+[Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**, an improved version of the B-Tree.
 
 ### 4.1 Differences Between B-Trees and B+Trees
 
@@ -86,7 +86,7 @@ In a B-Tree, actual data (or pointers to data) is stored in both internal nodes 
 
 By eliminating pointers to actual data from internal nodes, more keys can be packed into a single internal node (page). This further increases the fan-out, keeps the tree height $ h $ lower, and reduces the number of disk I/Os.
 
-Furthermore, in range queries frequently used in SQL like `WHERE id BETWEEN 10 AND 100`, a B-Tree requires traversing the tree multiple times, but with a **B+Tree**, once the starting leaf node is found, data can be read continuously just by following the links of the leaf nodes.
+Furthermore, in range queries frequently used in SQL like `WHERE id BETWEEN 10 AND 100`, a B-[Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) requires traversing the tree multiple times, but with a **B+Tree**, once the starting leaf node is found, data can be read continuously just by following the links of the leaf nodes.
 
 ```mermaid
 graph TD
@@ -114,7 +114,7 @@ graph TD
     style H fill:#f9f,stroke:#333,stroke-width:2px
     style I fill:#f9f,stroke:#333,stroke-width:2px
 ```
-*(Figure: Structure of a B+Tree. Leaf nodes are linked in a chain)*
+*(Figure: Structure of a B+[Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/). Leaf nodes are linked in a chain)*
 
 ## 5. B-Tree Implementation Example (Simulation in Python)
 
@@ -211,7 +211,7 @@ else:
     print("Key not found")
 ```
 
-As can be seen from this implementation, insertion into a B-Tree splits nodes from bottom to top as needed, keeping the tree completely balanced. Thus, search performance does not degrade regardless of the order in which data is inserted.
+As can be seen from this implementation, insertion into a B-[Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) splits nodes from bottom to top as needed, keeping the tree completely balanced. Thus, search performance does not degrade regardless of the order in which data is inserted.
 
 ## 6. Conclusion and Future Directions
 

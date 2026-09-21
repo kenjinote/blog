@@ -74,7 +74,7 @@ graph LR
 ハッシュベース暗号は、デジタル署名に特化したPQCアルゴリズムです。安全性の根拠は、SHA-2やSHA-3といった安全な「暗号学的ハッシュ関数」が持つ衝突耐性や一方向性にのみ依存しています。
 
 **仕組みの概要：** 
-「ランポート署名（Lamport Signature）」と呼ばれる、1回しか使えない使い捨ての署名方式（ワンタイム署名）を出発点とします。これを「マークルツリー（Merkle Tree）」と呼ばれる木構造のデータ形式で束ねることで、1つの鍵ペアで複数回の署名を可能にしています。
+「ランポート署名（Lamport Signature）」と呼ばれる、1回しか使えない使い捨ての署名方式（ワンタイム署名）を出発点とします。これを「マークルツリー（Merkle [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）」と呼ばれる[木構造](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)のデータ形式で束ねることで、1つの鍵ペアで複数回の署名を可能にしています。
 
 **長所：** 
 - セキュリティの根拠が極めて堅牢であり、「ハッシュ関数が安全である限り安全」という強い証明がある。

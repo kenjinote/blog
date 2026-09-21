@@ -235,7 +235,7 @@ SPHINCS+ diklasifikasikan sebagai **tanda tangan berbasis hash**. Keamanannya se
 
 ### 8.1. Arsitektur Tanpa Status (Stateless) melalui WOTS+ dan FORS
 
-Sejarah tanda tangan berbasis hash cukup panjang, kembali ke Tanda Tangan Lamport dan Tanda Tangan Sekali Pakai Winternitz (WOTS) pada tahun 1970-an. Semua ini adalah kunci sekali pakai yang "hanya bisa ditandatangani secara aman satu kali". Agar kunci ini dapat digunakan berkali-kali, algoritma seperti XMSS (eXtended Merkle Signature Scheme) dan LMS dikembangkan dengan menggabungkan Pohon Merkle (Merkle Tree) guna mengelola jumlah kunci sekali pakai yang tidak terbatas dengan satu hash akar (root hash).
+Sejarah tanda tangan berbasis hash cukup panjang, kembali ke Tanda Tangan Lamport dan Tanda Tangan Sekali Pakai Winternitz (WOTS) pada tahun 1970-an. Semua ini adalah kunci sekali pakai yang "hanya bisa ditandatangani secara aman satu kali". Agar kunci ini dapat digunakan berkali-kali, algoritma seperti XMSS (eXtended Merkle Signature Scheme) dan LMS dikembangkan dengan menggabungkan Pohon Merkle (Merkle [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) guna mengelola jumlah kunci sekali pakai yang tidak terbatas dengan satu hash akar (root hash).
 
 Namun, XMSS dan LMS memiliki kelemahan yang fatal, yaitu bersifat "**Stateful (Mempertahankan Status)**". Setiap kali tanda tangan dibuat, status indeks mengenai "kunci sekali pakai ke berapa yang digunakan" harus direkam secara ketat ke dalam memori non-volatil. Jika status ini dikembalikan (rollback), misalnya melalui pemulihan snapshot mesin virtual, dan kunci sekali pakai yang sama digunakan dua kali, kunci privat akan segera bocor dan sistem akan runtuh.
 

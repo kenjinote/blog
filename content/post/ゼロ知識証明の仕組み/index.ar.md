@@ -131,7 +131,7 @@ $$ e(g_1^a, g_2^b) = e(g_1, g_2)^{ab} $$
 
 يتم التحقق من الحسابات بعد تحويلها إلى تنسيق يسمى AIR (Algebraic Intermediate Representation)، باستخدام خصائص متعددات الحدود أحادية أو متعددة الأبعاد. يكمن جوهر STARKs في بروتوكول **FRI (Fast Reed-Solomon Interactive Oracle Proof of Proximity)**.
 
-بروتوكول FRI هو تقنية للتحقق مما "إذا كانت دالة معينة قريبة بما فيه الكفاية من متعددة حدود بدرجة معينة (Proximity)". يلتزم المُثبِت بقيم متعددة الحدود كأوراق (Leaves) في شجرة ميركل (Merkle Tree) (وهو ما يعرف بالتزام متعددة الحدود).
+بروتوكول FRI هو تقنية للتحقق مما "إذا كانت دالة معينة قريبة بما فيه الكفاية من متعددة حدود بدرجة معينة (Proximity)". يلتزم المُثبِت بقيم متعددة الحدود كأوراق (Leaves) في شجرة ميركل (Merkle [Tree](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) (وهو ما يعرف بالتزام متعددة الحدود).
 
 ```mermaid
 graph TD

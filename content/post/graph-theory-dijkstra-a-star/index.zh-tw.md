@@ -17,9 +17,9 @@ tags:
 
 ## 1. 前言
 
-在現代計算機科學中， **圖論** (Graph Theory) 為了對網路結構建立模型，提供了強大的數學框架。在我們的日常生活中，無論是汽車導航、鐵路轉乘指南、網際網路路由，甚至是遊戲 AI 的路徑搜尋等各種場景，都運用了計算「最短路徑」的技術。
+在現代計算機科學中， **圖論** ([Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory) 為了對網路結構建立模型，提供了強大的數學框架。在我們的日常生活中，無論是汽車導航、鐵路轉乘指南、網際網路路由，甚至是遊戲 AI 的路徑搜尋等各種場景，都運用了計算「最短路徑」的技術。
 
-本文將從作為路徑搜尋基礎的圖論數學定義開始，網羅並徹底解說代表性的搜尋演算法 **Dijkstra 演算法** (Dijkstra's Algorithm) ，以及將其進一步發展的 **A* 演算法** (A-Star Algorithm) 的運作機制、數學證明，還有使用 Python 進行實作的方法。
+本文將從作為路徑搜尋基礎的圖論數學定義開始，網羅並徹底解說代表性的搜尋演算法 **[Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 演算法** (Dijkstra's Algorithm) ，以及將其進一步發展的 **A* 演算法** (A-Star Algorithm) 的運作機制、數學證明，還有使用 Python 進行實作的方法。
 
 ## 2. 圖論基礎
 
@@ -76,7 +76,7 @@ $$
 
 ---
 
-## 3. Dijkstra 演算法 (Dijkstra's Algorithm)
+## 3. [Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 演算法 (Dijkstra's Algorithm)
 
 由艾茲赫爾·戴克斯特拉 (Edsger W. Dijkstra) 提出的 **Dijkstra 演算法** ，是在擁有非負權重的圖中，求得單一起點到所有頂點的最短路徑之演算法。
 
@@ -98,7 +98,7 @@ $$
 d[v] = d[u] + w(u, v)
 $$
 
-### 3.3 Dijkstra 演算法的 Python 實作
+### 3.3 [Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 演算法的 Python 實作
 
 為了達到高效率實作，使用優先權佇列 (Priority Queue) 作為取得最小值的資料結構。在 Python 中可利用 `heapq` 模組。
 
@@ -149,7 +149,7 @@ def dijkstra(graph, start):
 
 ## 4. A* 演算法 (A-Star Algorithm)
 
-Dijkstra 演算法雖然穩當，但因為沒有考慮目的地的方向而向所有方向擴展搜尋，可能會產生許多無效的搜尋。為了解決這個問題，便有了 **A* 演算法** 。
+[Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 演算法雖然穩當，但因為沒有考慮目的地的方向而向所有方向擴展搜尋，可能會產生許多無效的搜尋。為了解決這個問題，便有了 **A* 演算法** 。
 
 ### 4.1 導入啟發式函數
 
@@ -254,7 +254,7 @@ def reconstruct_path(came_from, current):
     return path
 ```
 
-### 4.5 Dijkstra 演算法與 A* 的比較
+### 4.5 [Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 演算法與 A* 的比較
 
 以下的 Mermaid 圖表是 Dijkstra 演算法與 A* 搜尋範圍的概念比較。Dijkstra 演算法以同心圓狀擴展搜尋，而 A* 則是向目標方向拉長成橢圓狀進行搜尋。
 
@@ -283,7 +283,7 @@ graph TD
 
 ## 5. 路徑搜尋的應用與未來展望
 
-Dijkstra 演算法與 A* 演算法雖然是基礎手法，卻也是許多應用技術的基礎。
+[Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 演算法與 A* 演算法雖然是基礎手法，卻也是許多應用技術的基礎。
 
 1. **雙向搜尋** (Bidirectional Search)：
    從起點與終點同時進行搜尋，並在中途會合，藉此大幅減少搜尋空間的手法。

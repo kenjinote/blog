@@ -417,7 +417,7 @@ Singkatnya, hal ini melompati overhead perhitungan selisih pada Virtual DOM, dan
 
 ### 10.3 Model Matematika Signals
 
-Di balik Signals terdapat teori "Pemrograman Reaktif", yang memodelkan dependensi antara state dan komputasi sebagai **Directed Acyclic Graph (DAG)** dan menggunakan pengurutan topologi grafik untuk menentukan urutan pembaruan secara efisien.
+Di balik Signals terdapat teori "Pemrograman Reaktif", yang memodelkan dependensi antara state dan komputasi sebagai **Directed Acyclic [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (DAG)** dan menggunakan pengurutan topologi grafik untuk menentukan urutan pembaruan secara efisien.
 
 Jika suatu state turunan (Computed) $ C $ bergantung pada Signal $ S_1, S_2 $, maka sisi (edge) $ S_1 \to C $, $ S_2 \to C $ akan terbentuk.
 Saat nilai diperbarui, ia menelusuri grafik dan hanya mengevaluasi node yang diperlukan (seperti pada strategi hibrida Push / Pull), mencegah adanya glitch (fenomena di mana state perantara dari UI yang tidak konsisten ditampilkan sesaat) dan menjamin konsistensi topologi.

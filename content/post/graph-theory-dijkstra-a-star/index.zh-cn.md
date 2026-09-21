@@ -17,9 +17,9 @@ tags:
 
 ## 1. 引言
 
-在现代计算机科学中， **图论** (Graph Theory) 为对网络结构进行建模提供了强大的数学框架。在我们的日常生活中，汽车导航、铁路换乘指南、互联网路由，甚至游戏AI的路径搜索等各种场景中，都使用了计算“最短路径”的技术。
+在现代计算机科学中， **图论** ([Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory) 为对网络结构进行建模提供了强大的数学框架。在我们的日常生活中，汽车导航、铁路换乘指南、互联网路由，甚至游戏AI的路径搜索等各种场景中，都使用了计算“最短路径”的技术。
 
-本文将从作为路径搜索基础的图论数学定义开始，全面讲解代表性的搜索算法—— **Dijkstra算法** (Dijkstra's Algorithm)，以及对其进行进一步发展的 **A*算法** (A-Star Algorithm) 的原理、数学证明，以及使用Python进行实践的实现方法。
+本文将从作为路径搜索基础的图论数学定义开始，全面讲解代表性的搜索算法—— **[Dijkstra](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)算法** (Dijkstra's Algorithm)，以及对其进行进一步发展的 **A*算法** (A-Star Algorithm) 的原理、数学证明，以及使用Python进行实践的实现方法。
 
 ## 2. 图论基础
 
@@ -76,7 +76,7 @@ $$
 
 ---
 
-## 3. Dijkstra算法 (Dijkstra's Algorithm)
+## 3. [Dijkstra](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)算法 (Dijkstra's Algorithm)
 
 由艾兹格·迪科斯彻提出的 **Dijkstra算法** 是一种用于在具有非负权重的图中，求从单一起点到所有顶点的最短路径的算法。
 
@@ -98,7 +98,7 @@ $$
 d[v] = d[u] + w(u, v)
 $$
 
-### 3.3 使用 Python 实现 Dijkstra算法
+### 3.3 使用 Python 实现 [Dijkstra](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)算法
 
 为了高效地实现，我们使用优先队列 (Priority Queue) 作为获取最小值的数据结构。在 Python 中，可以使用 `heapq` 模块。
 
@@ -149,7 +149,7 @@ def dijkstra(graph, start):
 
 ## 4. A* 算法 (A-Star Algorithm)
 
-Dijkstra算法虽然可靠，但由于不考虑目的地的方向而向所有方向扩展搜索，因此往往会产生很多无效的搜索。解决这个问题的是 **A*算法**。
+[Dijkstra](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)算法虽然可靠，但由于不考虑目的地的方向而向所有方向扩展搜索，因此往往会产生很多无效的搜索。解决这个问题的是 **A*算法**。
 
 ### 4.1 引入启发式函数
 
@@ -254,7 +254,7 @@ def reconstruct_path(came_from, current):
     return path
 ```
 
-### 4.5 Dijkstra 算法与 A* 的比较
+### 4.5 [Dijkstra](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 算法与 A* 的比较
 
 以下的 Mermaid 图展示了 Dijkstra 算法和 A* 搜索范围的概念比较。Dijkstra 算法呈同心圆状向外扩展搜索，而 A* 则向终点方向呈拉长的椭圆形进行搜索。
 
@@ -283,7 +283,7 @@ graph TD
 
 ## 5. 路径搜索的应用与未来展望
 
-Dijkstra算法和A*算法虽然是基础方法，但却是许多应用技术的基础。
+[Dijkstra](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)算法和A*算法虽然是基础方法，但却是许多应用技术的基础。
 
 1. **双向搜索** (Bidirectional Search)：
    同时从起点和终点进行搜索，并在中间汇合，从而大幅减少搜索空间的方法。

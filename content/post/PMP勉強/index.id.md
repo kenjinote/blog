@@ -107,7 +107,7 @@ Artinya, sementara ada nilai pada item di sebelah kanan, kami lebih menghargai i
 - PESTLE (Political, Economic, Social, Technological, Legal, Environmental)
 - VUCA (Volatility, Uncertainty, Complexity, Ambiguity)
 - Metode Monte Carlo
-- Analisis Decision Tree
+- Analisis Decision [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)
 - Expected Monetary Value (EMV)
 - Net Promoter Score
 - Analisis Biaya-Manfaat (Cost-Benefit Analysis)

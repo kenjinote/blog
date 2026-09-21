@@ -24,7 +24,7 @@ description: 'Windows Terminalのカスタマイズ手法を極限まで深掘�
 
 # 1. Windows Terminalのレンダリングアーキテクチャと数理モデル
 
-Windows Terminalがこれほどまでに高速かつ滑らかに動作する背景には、Windowsのモダンなグラフィックススタックを最大限に活用した洗練されたレンダリング[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)が存在します。従来のGDI（Graphics Device Interface）に代わり、Windows TerminalはDirectWriteとDirectX（Direct2D/Direct3D）を活用したGPUベースのハードウェアアクセラレーションを採用しています。
+Windows Terminalがこれほどまでに高速かつ滑らかに動作する背景には、Windowsのモダンな[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィックススタックを最大限に活用した洗練されたレンダリング[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)が存在します。従来のGDI（Graphics Device Interface）に代わり、Windows TerminalはDirectWriteとDirectX（Direct2D/Direct3D）を活用したGPUベースのハードウェアアクセラレーションを採用しています。
 
 以下に、キー入力から画面に文字が描画されるまでのターミナルレンダリングパイプラインの概念図を示します。
 
@@ -450,7 +450,7 @@ oh-my-posh debug
 "softwareRendering": true
 ```
 
-これにより、GPUの代わりにCPUベース（WARP）での描画に切り替わります。パフォーマンスは低下しますが、描画の正確性を担保することができます。グラフィック関連の不具合の切り分けを行う際の強力な手段となります。
+これにより、GPUの代わりにCPUベース（WARP）での描画に切り替わります。パフォーマンスは低下しますが、描画の正確性を担保することができます。[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィック関連の不具合の切り分けを行う際の強力な手段となります。
 
 ---
 

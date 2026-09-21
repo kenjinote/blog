@@ -25,7 +25,7 @@ Git 是現代軟體開發中不可或缺的版本控制系統。當多位開發�
 
 Git 的每一個提交，都是透過 SHA-1（Secure Hash Algorithm 1）雜湊函數，根據其內容計算出一組 40 個字元的十六進位數字來唯一識別。提交物件（Commit Object）由以下元素組成：
 
-1. **指向 Tree 物件的指標** ：該時間點的目錄結構與檔案（Blob）的快照
+1. **指向 [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 物件的指標** ：該時間點的目錄結構與檔案（Blob）的快照
 2. **指向父提交的指標** ：一個或多個父提交的雜湊值（首次提交沒有父提交，而合併提交則有兩個以上的父提交）
 3. **作者資訊（Author）** ：撰寫程式碼的人與時間
 4. **提交者資訊（Committer）** ：建立與套用提交的人與時間
@@ -51,7 +51,7 @@ $$
 
 # 3. 圖論與 DAG：Git 歷史的數學模型
 
-Git 的提交歷史，在圖論中被模型化為「有向無環圖（Directed Acyclic Graph, DAG）」。
+Git 的提交歷史，在圖論中被模型化為「有向無環圖（Directed Acyclic [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), DAG）」。
 
 ## 3.1 什麼是 DAG（有向無環圖）
 

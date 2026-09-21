@@ -9,7 +9,7 @@ categories: ["tools-development-environment"]
 description: 'C++からMicrosoft Teamsへ自動メッセージ投稿を実装したい方必見！WinHTTPとGraph APIを用いたC++コードの具体例や、必須となるAzureのアプリ登録・API認証手順をステップバイステップで分かりやすく解説します。'
 ---
 
-# C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + Graph API）
+# C++ から Microsoft Teams にメッセージを投稿する方法（WinHTTP + [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API）
 
 Microsoft Teams のチャットに自動投稿したい――  
 そんなときに使えるのが **Microsoft Graph API** です。  
@@ -17,7 +17,7 @@ Microsoft Teams のチャットに自動投稿したい――
 
 ---
 
-## 🔧 必要な準備（Microsoft Graph API の認証設定）
+## 🔧 必要な準備（Microsoft [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API の認証設定）
 
 ### 1. Azure ポータルでアプリ登録
 まず、Microsoft Graph API を使うには、Azure にアプリを登録する必要があります。
@@ -29,7 +29,7 @@ Microsoft Teams のチャットに自動投稿したい――
 ### 2. API のアクセス許可を追加
 
 1. 左メニュー「API のアクセス許可」へ
-2. **「Microsoft Graph」 ** > ** 「アクセス許可を選択する」 ** で下記のスコープを検索して ** 「アクセス許可の更新」**
+2. **「Microsoft [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)」 ** > ** 「アクセス許可を選択する」 ** で下記のスコープを検索して ** 「アクセス許可の更新」**
 
 - Chat.ReadWrite
 - User.Read
@@ -77,7 +77,7 @@ curl -X POST ^
 }
 ```
 
-この access_token を使って Microsoft Graph API を呼び出します。
+この access_token を使って Microsoft [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API を呼び出します。
 
 ## 💬 Teams チャットに投稿する C++ サンプル
 ここでは WinHTTP を使ってチャットに投稿する C++ の例を示します。
@@ -170,7 +170,7 @@ curl -X GET ^
   - HTTPS 証明書の検証
   - エラー処理の強化
 - チャネル投稿は teams/{team-id}/channels/{channel-id}/messages を使います。
-- 添付ファイルの送信にはマルチパート処理や Graph ドライブ API が必要です。
+- 添付ファイルの送信にはマルチパート処理や [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) ドライブ API が必要です。
 
 ## まとめ
 
@@ -181,7 +181,7 @@ curl -X GET ^
 | Graph API | Teams とやりとりする公式 API           |
 | アプリ登録     | Azure 上で必要な[認証](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)手続き              |
 | アクセストークン  | [OAuth](https://kenji.blog/p/oauth2-oidc-authentication-authorization-difference/)2 により取得し、リクエストに使用        |
-| C++ 実装    | WinHTTP を利用して Graph API を呼び出す |
+| C++ 実装    | WinHTTP を利用して [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API を呼び出す |
 
 ## 🚀 次のステップ
 

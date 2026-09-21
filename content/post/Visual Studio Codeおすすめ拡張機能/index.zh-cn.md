@@ -17,7 +17,7 @@ description: '盘点能让Visual Studio Code（VSCode）更加好用的推荐扩
 | 虚拟·容器管理 | [Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft  | 支持Docker容器管理 |
 | 代码管理 | GitHub Pull Requests | GitHub | 在VSCode上管理GitHub的Pull Request |
 | 代码管理 | GitHub Copilot | GitHub | 支持AI代码补全 |
-| 代码管理 | Git Graph | mhutchie | 图形化显示Git分支和提交 |
+| 代码管理 | Git [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) | mhutchie | 图形化显示Git分支和提交 |
 | 代码管理 | Git History | Don Jayamanne | 显示Git历史记录 |
 | 浏览器·Web开发 | Debugger for Firefox | Firefox DevTools | 在VSCode上使用Firefox调试器 |
 | 浏览器·Web开发 | Microsoft Edge Tool For VScode | Microsoft | 在VSCode上使用Edge开发者工具 |

@@ -75,7 +75,7 @@ MacやWindowsで開発している際、ソースコード内で `#include "mycl
 
 ファイルシステムがファイルのパスを解決する際、内部でどのような処理が行われているか数学的に考えてみましょう。
 
-大文字・小文字を区別する ext4 の場合、ディレクトリ内のエントリはハッシュテーブルや[B-Tree](https://kenji.blog/p/b-tree-database-index-theory/)などの構造で管理されています。ディレクトリ内のファイル数を $N$、ファイル名の長さを $L$ とすると、単純なバイナリサーチやツリー探索の場合の計算量は以下のようになります。
+大文字・小文字を区別する ext4 の場合、ディレクトリ内のエントリは[ハッシュテーブル](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)や[B-Tree](https://kenji.blog/p/b-tree-database-index-theory/)などの構造で管理されています。ディレクトリ内のファイル数を $N$、ファイル名の長さを $L$ とすると、単純なバイナリサーチやツリー探索の場合の計算量は以下のようになります。
 
 $$ T_{search}(N) = O(L \log N) $$
 

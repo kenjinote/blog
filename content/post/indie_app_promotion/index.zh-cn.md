@@ -17,7 +17,7 @@ tags: ["Growth Hacking", "GA4", "PostHog", "Conversion Rate"]
 
 在技术博客中，SEO（搜索引擎优化）不仅仅是堆砌关键字。我们需要一种程序化的方法，向搜索引擎（Googlebot）和社交媒体的爬虫准确传达内容的语义（含义）。
 
-### 1.1 优化 Open Graph Protocol (OGP)
+### 1.1 优化 Open [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP)
 
 当技术文章在X（原Twitter）、Hacker News或Zenn等平台被分享时，为了最大化点击率（CTR），动态生成OGP是必不可少的。如果使用Next.js的App Router，可以利用`generateMetadata`函数为每篇文章输出优化过的OGP。
 

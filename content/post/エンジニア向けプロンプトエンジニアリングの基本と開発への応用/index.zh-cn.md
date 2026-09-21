@@ -165,7 +165,7 @@ graph TD
     F --> G["生成最终的优化代码"]
 ```
 
-### 3.3 思维树（Tree of Thoughts, ToT）
+### 3.3 思维树（[Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) of Thoughts, ToT）
 
 进一步扩展CoT概念的便是 **思维树（Tree of Thoughts, ToT）** 。与CoT沿着单向（线性）推理路径前进不同，ToT像探索树一样并行展开多个推理路径（分支），让模型自身对各条路径进行自我评估，并在必要时进行回溯（Backtracking），从而找到最佳的解决方案。
 

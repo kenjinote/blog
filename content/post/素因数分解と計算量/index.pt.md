@@ -19,7 +19,7 @@ Neste artigo, partiremos do conceito de "complexidade computacional (notação B
 
 ---
 
-# Definição Rigorosa de Complexidade Computacional e Notação Big O ($\mathcal{O}$)
+# Definição Rigorosa de Complexidade Computacional e Notação [Big O](https://kenji.blog/pt/p/time-space-complexity-big-o-notation-examples/) ($\mathcal{O}$)
 
 Ao avaliar o desempenho ou a eficiência de um algoritmo, não basta simplesmente medir o "tempo de execução do programa (em segundos)". Isso ocorre porque o tempo de execução depende fortemente do desempenho do computador utilizado (frequência do clock da CPU, velocidade da memória, etc.), da linguagem de programação e da otimização do compilador.
 
@@ -43,7 +43,7 @@ Existem várias classes representativas de complexidade computacional. Vamos ana
    Um algoritmo cujo tempo de execução não muda independentemente de quão grande o tamanho da entrada $N$ se torne. Exemplos incluem acessar um valor especificando um índice de matriz, ou pesquisar em uma tabela hash (no caso ideal).
 
 2. **$\mathcal{O}(\log N)$ : Tempo logarítmico (Logarithmic time)**
-   Um algoritmo altamente eficiente em que, mesmo que o tamanho da entrada dobre, o tempo de execução aumenta apenas por uma constante. A "Busca Binária (Binary Search)", que procura um valor desejado em uma matriz classificada, é um exemplo típico. Mesmo que a quantidade de dados seja de 1 bilhão, você pode encontrar os dados desejados com apenas cerca de 30 comparações.
+   Um algoritmo altamente eficiente em que, mesmo que o tamanho da entrada dobre, o tempo de execução aumenta apenas por uma constante. A "Busca Binária ([Binary Search](https://kenji.blog/pt/p/search-algorithms-linear-binary-hash-table-principles/))", que procura um valor desejado em uma matriz classificada, é um exemplo típico. Mesmo que a quantidade de dados seja de 1 bilhão, você pode encontrar os dados desejados com apenas cerca de 30 comparações.
 
 3. **$\mathcal{O}(N)$ : Tempo linear (Linear time)**
    O tempo de execução aumenta em proporção ao tamanho da entrada. Se os dados aumentarem 10 vezes, o tempo também aumentará 10 vezes. A "Busca Linear", que verifica todos os elementos de uma matriz sequencialmente, é um exemplo.
@@ -276,7 +276,7 @@ Face a semelhante prenúncio, analistas criptográficos ao redor do globo, aliad
 
 # Conclusão
 
-Neste compêndio, investigamos mais profundamente abordando desde o limiar da complexidade (notação Big O), prosseguindo por todo o processo evolutivo dos algoritmos para fatorar números primos e até seus constrangimentos restritivos matemáticos.
+Neste compêndio, investigamos mais profundamente abordando desde o limiar da complexidade (notação [Big O](https://kenji.blog/pt/p/time-space-complexity-big-o-notation-examples/)), prosseguindo por todo o processo evolutivo dos algoritmos para fatorar números primos e até seus constrangimentos restritivos matemáticos.
 
 * A **Notação Big O ($\mathcal{O}$)** exprime o crescimento do número das etapas computacionais quando confrontado ao desenvolvimento do tamanho de entrada $n$, sendo um indicativo crítico em que perdura uma colossal barreira que no terreno prático é insuperável dividindo o tempo polinomial ao exponencial.
 * O **método de divisão por tentativa** e o **algoritmo $\rho$ de Pollard** configuram-se algoritmos puros no estrato do "tempo exponencial" e demonstram incapacidade de lidar frente à números magnos.

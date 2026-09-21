@@ -17,7 +17,7 @@ tags:
 
 現代のシステム開発において、データの保存・管理手段としてデータベースの選定は極めて重要な意味を持ちます。かつてはリレーショナルデータベース（[RDBMS](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)）が一強の時代でしたが、現在ではデータの多様化、データ量の大規模化に伴い、 **NoSQL** （Not Only SQL）データベースが重要な役割を担うようになりました。
 
-NoSQLデータベースは単一の技術ではなく、特定のユースケースに最適化された様々なデータモデルの総称です。本記事では、RDBMSとNoSQLの決定的な違いを明らかにした上で、代表的なNoSQLの4つのデータモデルである **キー・バリュー型（KVS）** 、 **ドキュメント指向型** 、 **グラフ型** 、 **ワイドカラム型** それぞれの特性、長所短所、および適切なユースケースについて、詳細かつ網羅的に解説します。
+NoSQLデータベースは単一の技術ではなく、特定のユースケースに最適化された様々なデータモデルの総称です。本記事では、RDBMSとNoSQLの決定的な違いを明らかにした上で、代表的なNoSQLの4つのデータモデルである **キー・バリュー型（KVS）** 、 **ドキュメント指向型** 、 **[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)型** 、 **ワイドカラム型** それぞれの特性、長所短所、および適切なユースケースについて、詳細かつ網羅的に解説します。
 
 ---
 
@@ -187,9 +187,9 @@ db.users.find({
 
 ---
 
-## 4. グラフデータベース
+## 4. [グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)データベース
 
-グラフデータベースは、データそのものよりも「 **データとデータの間の関係性（つながり）** 」を重視して設計された特化型のデータベースです。[RDBMS](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の「リレーショナル」は実はテーブル間の関係性を扱うのにはコストがかかりますが、グラフデータベースは文字通り関係性を第一級のオブジェクトとして扱います。
+グラフデータベースは、データそのものよりも「 **データとデータの間の関係性（つながり）** 」を重視して設計された特化型のデータベースです。[RDBMS](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の「リレーショナル」は実はテーブル間の関係性を扱うのにはコストがかかりますが、[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)データベースは文字通り関係性を第一級のオブジェクトとして扱います。
 
 ### データモデルと特徴
 
@@ -231,10 +231,10 @@ graph TD
     class P1,P2 productNode;
 ```
 
-### 代表的なグラフデータベース
+### 代表的な[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)データベース
 
 - **Neo4j** : 世界で最も利用されているグラフデータベース。独自の強力なクエリ言語であるCypherを採用。
-- **Amazon Neptune** : AWSが提供するフルマネージドのグラフデータベース。Property Graph（Gremlin）やRDF（SPARQL）をサポート。
+- **Amazon Neptune** : AWSが提供するフルマネージドのグラフデータベース。Property [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)（Gremlin）やRDF（SPARQL）をサポート。
 - **ArangoDB** : グラフ、ドキュメント、KVSをサポートするマルチモデルデータベース。
 
 ### メリットとデメリット
@@ -245,7 +245,7 @@ graph TD
 
 **デメリット:**
 - **単一エンティティの全件スキャンに不向き** : 単純な集計処理（例：「全ユーザーの平均年齢を出す」）は、[RDBMS](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)やドキュメント型の方が高速な場合が多い。
-- **分散処理の難易度** : グラフは密結合なデータであるため、複数ノードにデータを分割（シャーディング）すると、ノード間をまたぐトラバーサルが発生しパフォーマンスが低下しやすい。
+- **分散処理の難易度** : [グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)は密結合なデータであるため、複数ノードにデータを分割（シャーディング）すると、ノード間をまたぐトラバーサルが発生しパフォーマンスが低下しやすい。
 
 ### ユースケース
 
@@ -358,7 +358,7 @@ erDiagram
 
 近年では、単一のデータベースエンジンで複数のNoSQLモデルやRDBMSの機能を統合して提供する **マルチモデルデータベース** も注目されています。
 
-例えば、PostgreSQLは強力なJSONB型のサポートによりドキュメント型としての機能を持ち合わせています。また、Azure Cosmos DBやArangoDBのように、一つのバックエンドでKVS、ドキュメント、グラフを透過的に扱える製品も存在します。これにより、プロジェクト内で複数のデータベースシステムを運用する運用コスト（ポリグロット・パーシステンスの複雑さ）を抑えつつ、要件に応じた柔軟なデータアクセスが可能になります。
+例えば、PostgreSQLは強力なJSONB型のサポートによりドキュメント型としての機能を持ち合わせています。また、Azure Cosmos DBやArangoDBのように、一つのバックエンドでKVS、ドキュメント、[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)を透過的に扱える製品も存在します。これにより、プロジェクト内で複数のデータベースシステムを運用する運用コスト（ポリグロット・パーシステンスの複雑さ）を抑えつつ、要件に応じた柔軟なデータアクセスが可能になります。
 
 ---
 

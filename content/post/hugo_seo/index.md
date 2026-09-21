@@ -14,7 +14,7 @@ Hugoは、Go言語で記述された世界最速クラスの静的サイトジ�
 
 検索順位を向上させ、ソーシャルメディアでの拡散力を高め、結果としてブログへのアクセス数を劇的に増やすためには、緻密なSEO（検索エンジン最適化）対策が不可欠です。HugoにおけるSEO対策の心臓部となるのが、各マークダウン記事の冒頭に記述する **フロントマター（Frontmatter）** と、それを解釈してHTMLの `<head>` タグ内にメタデータを展開する **テンプレート（[Layout](https://kenji.blog/p/browser-rendering-mechanism-dom-paint/)s）** の連携です。
 
-本記事では、Hugoの機能を最大限に引き出し、高度なSEO対策を実装するためのフロントマター設定から、各種メタタグ、OGP（Open Graph Protocol）、Twitter Cards、そしてJSON-LDを用いた構造化データの出力に至るまで、約1万文字を超える圧倒的なボリュームで徹底的に解説します。
+本記事では、Hugoの機能を最大限に引き出し、高度なSEO対策を実装するためのフロントマター設定から、各種メタタグ、OGP（Open [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol）、Twitter Cards、そしてJSON-LDを用いた構造化データの出力に至るまで、約1万文字を超える圧倒的なボリュームで徹底的に解説します。
 
 ---
 
@@ -122,7 +122,7 @@ Hugoの `.Summary` をフォールバックとして使用することで、`des
 
 ## 4. OGPとTwitter Cards：ソーシャルメディアでのCTRを最大化
 
-Twitter（X）やFacebookなどのSNSで記事がシェアされた際、魅力的なカード形式で表示させるためには、Open Graph Protocol (OGP) と Twitter Cards の設定が欠かせません。これもフロントマターから動的に生成します。
+Twitter（X）やFacebookなどのSNSで記事がシェアされた際、魅力的なカード形式で表示させるためには、Open [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP) と Twitter Cards の設定が欠かせません。これもフロントマターから動的に生成します。
 
 ### 4.1. 組み込みテンプレートの課題
 

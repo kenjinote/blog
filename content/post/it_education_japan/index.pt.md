@@ -55,7 +55,7 @@ Como fica claro neste fluxograma, simplesmente ganhar experiência em "escrever 
 
 A maior fraqueza e falha fatal no currículo de educação de programação do Japão é a esmagadora falta de integração entre a "técnica de codificação" e a "Matemática e Matemática Discreta (Discrete Mathematics)". Na educação em ciência da computação de alto nível nos Estados Unidos e na Índia, a eficiência algorítmica, a lógica matemática e as provas matemáticas recebem mais ênfase do que a própria sintaxe das linguagens de programação. Pois o código é simplesmente a tradução de fórmulas matemáticas.
 
-### O Domínio Absoluto da Complexidade de Tempo e Complexidade de Espaço (Notação Big O)
+### O Domínio Absoluto da Complexidade de Tempo e Complexidade de Espaço (Notação [Big O](https://kenji.blog/pt/p/time-space-complexity-big-o-notation-examples/))
 
 Ao avaliar e projetar o desempenho do software, é impossível evitar os conceitos de Complexidade de Tempo (Time Complexity) e Complexidade de Espaço (Space Complexity). A Notação Big O de Landau (Big O Notation) demonstra como o tempo de execução e o consumo de memória aumentam quando o tamanho de dados inserido em um determinado algoritmo é $N$.
 

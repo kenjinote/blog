@@ -42,7 +42,7 @@ graph TD
 ```
 
 1. **张量（Tensor）管理**: 管理多维数组的数据结构和各个维度的步长（Stride）。
-2. **计算图（Computation Graph）**: 将神经网络各层的运算表示为有向无环图（DAG）。
+2. **计算图（Computation [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）**: 将神经网络各层的运算表示为有向无环图（DAG）。
 3. **内存分配池（Memory Arena）**: 预先分配型内存管理机制，以避免动态内存分配（`malloc`或`new`）的开销。
 4. **后端（Backend）**: 针对CPU或GPU等特定硬件优化的运算实现（内核）。
 

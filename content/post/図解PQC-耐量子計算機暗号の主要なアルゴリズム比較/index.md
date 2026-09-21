@@ -66,7 +66,7 @@ PQCアルゴリズムは、その安全性の根拠となる数学的な問題�
 4. **多変数多項式暗号 (Multivariate Polynomial [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)**:
    有限体上の多変数連立二次方程式の解を求めること（MQ問題）の困難性に基づきます。主にデジタル署名（Rainbowなど）として提案されましたが、NISTの最終ラウンドの最中にパソコン1台で数日で解読されるという強力な攻撃手法が発見され、多くのアルゴリズムが標準化から脱落しました。
 5. **同種写像暗号 (Isogeny-based [Crypto](https://kenji.blog/p/cryptocurrency-and-bitcoin/)graphy)**:
-   楕円曲線の同種写像（Isogeny）グラフ上での[経路探索](https://kenji.blog/p/graph-theory-dijkstra-a-star/)問題に基づきます。鍵サイズが非常に小さく、ECCの正当な後継として期待されていましたが、最終候補であった「SIKE」が2022年に古典的な数学（Castryck-Decru攻撃など）を用いて通常のPCでわずか数時間で完全に解読されてしまい、PQC設計の難しさと恐ろしさを象徴する劇的な幕引きとなりました。
+   楕円曲線の同種写像（Isogeny）[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)上での[経路探索](https://kenji.blog/p/graph-theory-dijkstra-a-star/)問題に基づきます。鍵サイズが非常に小さく、ECCの正当な後継として期待されていましたが、最終候補であった「SIKE」が2022年に古典的な数学（Castryck-Decru攻撃など）を用いて通常のPCでわずか数時間で完全に解読されてしまい、PQC設計の難しさと恐ろしさを象徴する劇的な幕引きとなりました。
 
 ---
 
@@ -235,7 +235,7 @@ SPHINCS+は **ハッシュベース署名** に分類されます。その安全
 
 ### 8.1. WOTS+ と FORS によるステートレスアーキテクチャ
 
-ハッシュベース署名の歴史は古く、1970年代のLamport署名やWinternitzワンタイム署名（WOTS）に遡ります。これらは「1回だけ安全に署名できる」という使い捨ての鍵でした。これを複数回使えるようにするために、マークル木（Merkle Tree）を組み合わせて無数のワンタイム鍵を一つのルートハッシュで管理するXMSS（eXtended Merkle Signature Scheme）やLMSといったアルゴリズムが開発されました。
+ハッシュベース署名の歴史は古く、1970年代のLamport署名やWinternitzワンタイム署名（WOTS）に遡ります。これらは「1回だけ安全に署名できる」という使い捨ての鍵でした。これを複数回使えるようにするために、マークル木（Merkle [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）を組み合わせて無数のワンタイム鍵を一つのルートハッシュで管理するXMSS（eXtended Merkle Signature Scheme）やLMSといったアルゴリズムが開発されました。
 
 しかし、XMSSやLMSには「 **ステートフル（状態保持型）** 」であるという重大な欠点がありました。署名するたびに「何番目のワンタイム鍵を使用したか」というインデックス状態を不揮発性メモリに厳密に記録し続ける必要があり、もし仮想マシンのスナップショットの復元などで状態が巻き戻り、同じワンタイム鍵を二度使ってしまうと、秘密鍵が即座に漏洩してシステムが崩壊してしまいます。
 
@@ -243,7 +243,7 @@ SPHINCS+は、この[状態管理](https://kenji.blog/p/state-management-history
 その中核技術は以下の組み合わせです。
 1. **WOTS+ (Winternitz One-Time Signature Plus)**: 基本的なワンタイム署名。
 2. **FORS (Forest of Random Subsets)**: 少回数署名（Few-Time Signature）技術。同じ鍵を数回程度なら再利用しても安全性を保つ。
-3. **Hyper-Tree (巨大な木構造)**: マークル木を多層的に重ね合わせた巨大な構造。
+3. **Hyper-[Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (巨大な[木構造](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**: マークル木を多層的に重ね合わせた巨大な構造。
 
 SPHINCS+では、署名を行う際、状態を管理する代わりに、Hyper-Treeの底辺にある膨大な数のFORS鍵の中から、擬似乱数を用いてランダムに一つを選び出して署名します。木の葉の数が天文学的に多いため、同じ鍵を偶然二度選んでしまう確率（コリジョン）が無視できるほど小さくなり、結果としてステートレスを実現しています。
 

@@ -80,7 +80,7 @@ Hugo में Tailwind CSS को एकीकृत करने के लि
 
 PostCSS, JavaScript प्लगइन्स का उपयोग करके CSS को ट्रांसफॉर्म करने का एक टूल है। वास्तव में, Tailwind CSS खुद भी PostCSS के प्लगइन के रूप में काम करता है।
 
-### PostCSS द्वारा AST (Abstract Syntax Tree) ट्रांसफॉर्मेशन तंत्र
+### PostCSS द्वारा AST (Abstract Syntax [Tree](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) ट्रांसफॉर्मेशन तंत्र
 
 PostCSS किस तरह CSS को प्रोसेस करता है, यह समझना ट्रबलशूटिंग के समय बहुत मददगार होता है। नीचे दिया गया Mermaid आरेख दिखाता है कि PostCSS कैसे CSS फ़ाइल को पढ़ता है, प्लगइन्स के माध्यम से इसे ट्रांसफॉर्म करता है, और अंतिम CSS आउटपुट करता है।
 
@@ -93,7 +93,7 @@ flowchart TD
     E -->|"Stringifier"| F["कंपाइल और ऑप्टिमाइज़्ड CSS"]
 ```
 
-1. **Parser (पार्सर)**: इनपुट किए गए कच्चे CSS स्ट्रिंग का विश्लेषण करता है और इसे AST (Abstract Syntax Tree) में बदलता है, जो एक डेटा स्ट्रक्चर है जिसे प्रोग्राम द्वारा प्रोसेस किया जा सकता है।
+1. **Parser (पार्सर)**: इनपुट किए गए कच्चे CSS स्ट्रिंग का विश्लेषण करता है और इसे AST (Abstract Syntax [Tree](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) में बदलता है, जो एक डेटा स्ट्रक्चर है जिसे प्रोग्राम द्वारा प्रोसेस किया जा सकता है।
 2. **Plugins (प्लगइन्स)**:
    - **Tailwind CSS**: टेम्पलेट फाइलों (HTML या Markdown) को स्कैन करता है और उपयोग किए गए यूटिलिटी क्लासेस को नोड्स के रूप में AST पर जोड़ता है। इसके अलावा, यह `@tailwind` डायरेक्टिव्स का विस्तार करता है।
    - **Autoprefixer**: `Can I Use` के डेटाबेस का संदर्भ लेता है और आवश्यकतानुसार वेंडर प्रीफिक्स (`-webkit-`, `-moz-` आदि) को AST की प्रॉपर्टीज में जोड़ता है।

@@ -15,12 +15,12 @@ In this article, we will completely cover the major graph algorithms that freque
 
 ---
 
-## 1. Basics and Constraints of Graph Algorithms
+## 1. Basics and Constraints of [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Algorithms
 
 Before learning the algorithms, it is important to grasp the general constraints and computational complexity guidelines for graph problems in competitive programming. A graph is represented by the number of vertices $V$ (Vertices) and the number of edges $E$ (Edges).
 
-*   $O(V + E)$ : The computational complexity required for problems with a number of vertices $V, E \le 10^5 \sim 10^6$. Depth-First Search (DFS) and Breadth-First Search (BFS) fall into this category.
-*   $O((V + E) \log V)$ : Frequently appears in problems with $V, E \le 10^5 \sim 2 \cdot 10^5$. This is the computational complexity when using a priority queue in Dijkstra's algorithm or Prim's algorithm.
+*   $O(V + E)$ : The computational complexity required for problems with a number of vertices $V, E \le 10^5 \sim 10^6$. Depth-First Search ([DFS](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) and Breadth-First Search ([BFS](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) fall into this category.
+*   $O((V + E) \log V)$ : Frequently appears in problems with $V, E \le 10^5 \sim 2 \cdot 10^5$. This is the computational complexity when using a priority queue in [Dijkstra](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s algorithm or Prim's algorithm.
 *   $O(V^2)$ : Allowed for dense graphs ($E \approx V^2$) where $V \le 2000 \sim 3000$.
 *   $O(V^3)$ : Problems where $V \le 400 \sim 500$. The Floyd-Warshall algorithm is a typical example.
 
@@ -32,7 +32,7 @@ In competitive programming, it is common to use an **Adjacency List** to represe
 
 ### Topological Sort
 
-Topological sort is an algorithm that arranges the vertices of a Directed Acyclic Graph (DAG) in a line such that all directed edges point from earlier vertices to later vertices. It is used when resolving task dependencies (e.g., Task B cannot start until Task A is finished) and for determining the calculation order of Dynamic Programming (DP) on a DAG.
+Topological sort is an algorithm that arranges the vertices of a Directed Acyclic Graph (DAG) in a line such that all directed edges point from earlier vertices to later vertices. It is used when resolving task dependencies (e.g., Task B cannot start until Task A is finished) and for determining the calculation order of [Dynamic Programming](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) on a DAG.
 
 The computational complexity is $O(V + E)$. There are two types of implementations: Kahn's algorithm (BFS-based using in-degrees) and DFS-based using post-order traversal. Here, we introduce Kahn's algorithm, which can easily find the lexicographically smallest topological sort.
 
@@ -104,7 +104,7 @@ This is the problem of finding the shortest paths from a given source vertex to 
 
 ### [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s Algorithm
 
-Dijkstra's algorithm is a fast shortest path algorithm that can be applied when **all edge weights are non-negative**. It is based on a greedy approach: "finalize the vertex with the shortest currently known distance, and update (relax) the distances to its adjacent vertices from that vertex."
+[Dijkstra](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s algorithm is a fast shortest path algorithm that can be applied when **all edge weights are non-negative**. It is based on a greedy approach: "finalize the vertex with the shortest currently known distance, and update (relax) the distances to its adjacent vertices from that vertex."
 
 #### Mathematical Formula for Relaxation
 Let the source be $s$, the shortest distance to vertex $u$ be $d[u]$, and the weight of edge $(u, v)$ be $w(u, v)$.
@@ -174,7 +174,7 @@ The statement `if (dist[u] < d) continue;` is very important. In [Dijkstra](http
 
 ### Bellman-Ford Algorithm
 
-When edge weights include negative values, Dijkstra's algorithm cannot deduce the correct answer. This is where the Bellman-Ford algorithm comes into play. By repeating the relaxation process for all edges $V - 1$ times, it correctly calculates the shortest path even if there are negative weights.
+When edge weights include negative values, [Dijkstra](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s algorithm cannot deduce the correct answer. This is where the Bellman-Ford algorithm comes into play. By repeating the relaxation process for all edges $V - 1$ times, it correctly calculates the shortest path even if there are negative weights.
 
 If an update occurs even on the $V$-th iteration, it means a **Negative Cycle** exists. In competitive programming, problems asking to "detect a negative cycle" are frequent, and the Bellman-Ford algorithm is also excellent as a detection algorithm for this.
 
@@ -230,7 +230,7 @@ pair<vector<long long>, bool> bellman_ford(int V, const vector<Edge>& edges, int
 
 ### Floyd-Warshall Algorithm
 
-This is an algorithm to find the shortest distances between all pairs of vertices in a graph. It is based on Dynamic Programming (DP). It is attractive because the algorithm is very concise and extremely easy to implement.
+This is an algorithm to find the shortest distances between all pairs of vertices in a graph. It is based on [Dynamic Programming](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)). It is attractive because the algorithm is very concise and extremely easy to implement.
 
 The state transition equation is as follows. We adopt the shorter of the path going through vertex $k$ and the path not going through it.
 $$ d[i][j] = \min(d[i][j], d[i][k] + d[k][j]) $$
@@ -271,7 +271,7 @@ The Floyd-Warshall algorithm can also detect negative cycles. After the loop end
 
 ---
 
-## 5. Minimum Spanning Tree (MST)
+## 5. Minimum Spanning [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (MST)
 
 In a connected undirected graph, a tree that connects all vertices (a subgraph without cycles) and minimizes the total sum of edge weights is called a **Minimum Spanning Tree (MST)**. It is directly asked in scenarios like minimizing network construction costs.
 
@@ -407,13 +407,13 @@ long long prim(int V, const vector<vector<Edge>>& graph) {
 
 ## 6. Advanced: Strongly Connected Components (SCC)
 
-In a directed graph, a set of vertices that can mutually reach each other is called a Strongly Connected Component (SCC). If any directed graph is grouped by its strongly connected components, the entire graph will always become a DAG (Directed Acyclic Graph). This is called **Strongly Connected Component Decomposition**. It is a very important preprocessing step to simplify graph structures and make problems easier to solve.
+In a directed graph, a set of vertices that can mutually reach each other is called a Strongly Connected Component (SCC). If any directed graph is grouped by its strongly connected components, the entire graph will always become a DAG (Directed Acyclic [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)). This is called **Strongly Connected Component Decomposition**. It is a very important preprocessing step to simplify graph structures and make problems easier to solve.
 
-In competitive programming, it is heavily used in scenarios like solving 2-SAT problems or reducing a graph with cycles into a DAG to perform DP.
+In competitive programming, it is heavily used in scenarios like solving 2-SAT problems or reducing a graph with cycles into a DAG to perform [DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/).
 
 ### Kosaraju's Algorithm
 
-Kosaraju's algorithm is an elegant and efficient method that can construct an SCC with just two passes of DFS (Depth-First Search). The computational complexity operates in linear time, $O(V + E)$.
+Kosaraju's algorithm is an elegant and efficient method that can construct an SCC with just two passes of [DFS](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Depth-First Search). The computational complexity operates in linear time, $O(V + E)$.
 
 Algorithm steps:
 1. Perform DFS on the original graph and record the vertices in an array in post-order.
@@ -504,11 +504,11 @@ The `comp` array stores the ID of the SCC each vertex belongs to. This ID actual
 In this article, we comprehensively reviewed the graph algorithms that frequently appear in competitive programming.
 The key to improving in graph problems is **"implementing them repeatedly until they become muscle memory"** and **"training yourself to think about what kind of graph a problem can be reduced to (what are the vertices, and what are the edges)."**
 
-1. First, make sure you can quickly write DFS / BFS without making mistakes.
+1. First, make sure you can quickly write [DFS](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) / [BFS](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) without making mistakes.
 2. Next, be able to write [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm and Kruskal's algorithm from memory (essential for AtCoder Brown to Green tiers).
 3. Finally, expand your repertoire with Bellman-Ford, Floyd-Warshall, Topological Sort, SCC, etc. (these become powerful weapons in AtCoder Cyan to Blue tiers).
 
 We highly recommend modularizing them as code snippets (saving them in a snippet tool or your own GitHub repository) so that you can call them without hesitation during a real contest.
 
-Graph algorithms in competitive programming are a field where you can most feel the beauty and power of algorithms. Please try copying the code in this article by hand and tackling past problems on online judges!
+[Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) algorithms in competitive programming are a field where you can most feel the beauty and power of algorithms. Please try copying the code in this article by hand and tackling past problems on online judges!
 

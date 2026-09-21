@@ -440,7 +440,7 @@ int main() {
 ```
 
 **Detaillierte Erklärung**:
-Der größte Reiz der Newton-Methode liegt darin, dass sie bei Vorliegen der richtigen Bedingungen eine "quadratische Konvergenz" (Quadratic convergence) aufweist. Dies bedeutet eine erstaunliche Konvergenzgeschwindigkeit, bei der sich die Anzahl der korrekten Ziffern mit jeder Iteration etwa verdoppelt. Wenn man bedenkt, dass die binäre Suche (Binary Search) eine lineare Konvergenz hat, wird die Leistungsfähigkeit der Nutzung von Informationen über die Ableitung (winzige Steigungen) deutlich. Im Hack von "Quake III" wurde der anfängliche Schätzwert für dieses Newton-Verfahren mit erstaunlicher Genauigkeit abgeleitet, indem die IEEE 754-Gleitkommastruktur mithilfe der magischen Zahl `0x5f3759df` auf Bit-Ebene gehackt wurde.
+Der größte Reiz der Newton-Methode liegt darin, dass sie bei Vorliegen der richtigen Bedingungen eine "quadratische Konvergenz" (Quadratic convergence) aufweist. Dies bedeutet eine erstaunliche Konvergenzgeschwindigkeit, bei der sich die Anzahl der korrekten Ziffern mit jeder Iteration etwa verdoppelt. Wenn man bedenkt, dass die binäre Suche ([Binary Search](https://kenji.blog/de/p/search-algorithms-linear-binary-hash-table-principles/)) eine lineare Konvergenz hat, wird die Leistungsfähigkeit der Nutzung von Informationen über die Ableitung (winzige Steigungen) deutlich. Im Hack von "Quake III" wurde der anfängliche Schätzwert für dieses Newton-Verfahren mit erstaunlicher Genauigkeit abgeleitet, indem die IEEE 754-Gleitkommastruktur mithilfe der magischen Zahl `0x5f3759df` auf Bit-Ebene gehackt wurde.
 
 ---
 

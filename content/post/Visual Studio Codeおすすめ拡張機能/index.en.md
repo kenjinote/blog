@@ -17,7 +17,7 @@ description: 'Introduces a list of recommended extensions that make Visual Studi
 | Virtual / Container Management | [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | Supports management of Docker containers |
 | Code Management | GitHub Pull Requests | GitHub | Manage GitHub Pull Requests within VSCode |
 | Code Management | GitHub Copilot | GitHub | Supports AI-based code completion |
-| Code Management | Git Graph | mhutchie | Graphically displays Git branches and commits |
+| Code Management | Git [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) | mhutchie | Graphically displays Git branches and commits |
 | Code Management | Git History | Don Jayamanne | Displays Git history |
 | Browser / Web Development | Debugger for Firefox | Firefox DevTools | Use Firefox's debugger within VSCode |
 | Browser / Web Development | Microsoft Edge Tools for VS Code | Microsoft | Use Edge's developer tools within VSCode |

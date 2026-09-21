@@ -142,7 +142,7 @@ description: 'Nous présentons une sélection de citations inspirantes de grands
 
 > La simplicité est la condition préalable à la fiabilité (Edsger [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/))
 
-> L'informatique n'est pas plus la science des ordinateurs que l'astronomie n'est celle des télescopes (Edsger Dijkstra)
+> L'informatique n'est pas plus la science des ordinateurs que l'astronomie n'est celle des télescopes (Edsger [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 > Il n'y a que deux choses difficiles en informatique : l'invalidation du cache et nommer les choses (Phil Karlton)
 

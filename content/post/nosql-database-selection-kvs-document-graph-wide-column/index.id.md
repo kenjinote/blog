@@ -235,7 +235,7 @@ graph TD
 ### Database Graf Representatif
 
 - **Neo4j** : Database graf yang paling banyak digunakan di dunia. Mengadopsi bahasa kuerinya sendiri yang kuat bernama Cypher.
-- **Amazon Neptune** : Database graf fully-managed dari AWS. Mendukung Property Graph (Gremlin) dan RDF (SPARQL).
+- **Amazon Neptune** : Database graf fully-managed dari AWS. Mendukung Property [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Gremlin) dan RDF (SPARQL).
 - **ArangoDB** : Database multi-model yang mendukung graf, dokumen, dan KVS.
 
 ### Kelebihan dan Kekurangan
@@ -296,7 +296,7 @@ Strukturnya menyerupai tabel dalam [RDBMS](https://kenji.blog/id/p/rdbms-transac
 3. **Kolom (Column)** : Set dari "Nama Kolom (Key)", "Nilai (Value)", dan "Stempel Waktu (Timestamp)".
 
 Karakteristik paling utamanya adalah **jumlah maupun tipe kolom dapat berbeda pada setiap barisnya (schemaless)** dan **sebuah baris dapat memiliki jutaan kolom (sangat lebar)** .
-Ia juga mengadopsi arsitektur seperti LSM Tree (Log-Structured Merge-tree) untuk membuat operasi penulisan (Write) ke disk sangat cepat secara sekuensial. Sehingga model ini unggul jauh untuk pemakaian pencatatan data massif secara terus-menerus.
+Ia juga mengadopsi arsitektur seperti LSM [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Log-Structured Merge-tree) untuk membuat operasi penulisan (Write) ke disk sangat cepat secara sekuensial. Sehingga model ini unggul jauh untuk pemakaian pencatatan data massif secara terus-menerus.
 
 ### Diagram Model Kolom Lebar dengan Mermaid
 

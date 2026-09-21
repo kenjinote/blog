@@ -64,7 +64,7 @@ A análise do HTML é feita de acordo com o algoritmo de análise HTML definido 
 1.  **Conversion (Conversão)**: Converte os bytes brutos recebidos da rede em caracteres individuais (Characters) com base na codificação de caracteres especificada (como UTF-8).
 2.  **Tokenization (Tokenização)**: Converte a string em vários "tokens" especificados pelo padrão HTML5 da W3C. Por exemplo, tags de abertura como `<html>`, `<body>`, tags de fechamento, nomes de atributos e valores de atributos.
 3.  **Lexing (Análise Léxica)**: Converte os tokens gerados em "objetos" com propriedades e regras.
-4.  **DOM Tree Construction (Construção da Árvore)**: Vincula os objetos criados em uma estrutura de dados em forma de árvore com base nas relações de aninhamento das tags. Esse é o **DOM (Document Object Model)**.
+4.  **DOM [Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Construction (Construção da Árvore)**: Vincula os objetos criados em uma estrutura de dados em forma de árvore com base nas relações de aninhamento das tags. Esse é o **DOM (Document Object Model)**.
 
 ```mermaid
 sequenceDiagram
@@ -158,7 +158,7 @@ gantt
 
 ## 3. Style (Cálculo de Estilos): Construção da Árvore de Renderização
 
-Quando a árvore DOM e a árvore CSSOM são concluídas, o navegador as combina para construir a **Render Tree (Árvore de Renderização)** ou **Style Tree (Árvore de Estilos)**.
+Quando a árvore DOM e a árvore CSSOM são concluídas, o navegador as combina para construir a **Render [Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Árvore de Renderização)** ou **Style Tree (Árvore de Estilos)**.
 
 Nessa fase, para cada nó da árvore DOM, o navegador calcula quais regras de estilo do CSSOM se aplicam, determinando os estilos calculados finais (Computed Style).
 
@@ -270,7 +270,7 @@ Ultimamente, usar bibliotecas como `FastDOM` ou utilizar apropriadamente o `requ
 
 Devido à fase de layout, a posição (coordenadas X, Y) e tamanho (largura, altura) da caixa de cada elemento foram definidos. No entanto, ainda não há nada desenhado na tela. O que ocorre em seguida é a fase de **Paint (Pintura)**.
 
-O propósito da fase de Paint é receber a Árvore de Layout (Layout Tree) como entrada, criar instruções sobre como pintar os pixels na tela (Paint Records) e, por fim, rasterizar (Rasterization).
+O propósito da fase de Paint é receber a Árvore de Layout (Layout [Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) como entrada, criar instruções sobre como pintar os pixels na tela (Paint Records) e, por fim, rasterizar (Rasterization).
 
 ### 5.1 Ordem de Pintura (Stacking Context)
 
@@ -322,7 +322,7 @@ Portanto, o navegador gerencia a página dividindo-a em várias **Camadas Gráfi
 
 Várias estruturas em árvore são transformadas dentro do navegador.
 
-1.  **DOM Tree**
+1.  **DOM [Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
 2.  **Layout Tree (Render Tree)**: Informação da geometria visual dos elementos
 3.  **Paint Tree (Layer Tree)**: A estrutura hierárquica das camadas baseada em coisas como contexto de empilhamento
 4.  **Graphics Layer Tree**: Um grupo de camadas independentes que são de fato compostas na GPU

@@ -27,13 +27,13 @@ Dans cet article, nous classerons en de nombreux cas les "gaffes (erreurs couran
 
 La première étape pour faciliter le dépannage est de savoir comment Git stocke les données. Le dossier caché `.git` situé à la racine de votre projet est le cœur de Git. Git ne gère pas les données comme un simple système enregistrant séquentiellement les différences de fichiers (patchs), mais comme un **flux d'instantanés (snapshots)**.
 
-### 2.1 Modèle d'objet : Blob, Tree, Commit
+### 2.1 Modèle d'objet : Blob, [Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), Commit
 
 Git utilise principalement trois objets pour représenter l'état du dépôt. Ces objets sont stockés dans `.git/objects`.
 
 1. **Blob (Binary Large Object)**
    C'est l'objet qui stocke le contenu du fichier lui-même. Les noms de fichiers et les informations d'autorisation n'y sont pas inclus. Il s'agit d'une pure séquence d'octets compressée avec zlib et identifiée par une valeur de hachage SHA-1 (40 caractères hexadécimaux).
-2. **Tree**
+2. **[Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
    C'est l'objet qui représente la structure du répertoire. Un objet Tree contient des pointeurs (valeurs de hachage SHA-1) vers d'autres objets Tree (sous-répertoires) ou objets Blob (fichiers), ainsi que leurs noms de fichiers et autorisations d'accès. Il joue un rôle similaire à un répertoire UNIX.
 3. **Commit**
    Il contient un pointeur vers l'objet Tree de niveau supérieur de l'ensemble du dépôt à un moment donné, des métadonnées (auteur, date du commit, message de commit) et un pointeur vers le commit précédent (commit parent).
@@ -334,7 +334,7 @@ La branche `main` actuelle a un bug, mais tout était normal lors de la version 
 
 ### Solution : Identifier le bug par recherche dichotomique
 
-Git intègre un outil pour trouver le commit qui a introduit un bug en utilisant la recherche dichotomique (Binary Search) mathématique. La complexité de calcul étant de $\mathcal{O}(\log N)$, même s'il y a 1000 commits, vous pouvez l'identifier en environ 10 tests.
+Git intègre un outil pour trouver le commit qui a introduit un bug en utilisant la recherche dichotomique ([Binary Search](https://kenji.blog/fr/p/search-algorithms-linear-binary-hash-table-principles/)) mathématique. La complexité de calcul étant de $\mathcal{O}(\log N)$, même s'il y a 1000 commits, vous pouvez l'identifier en environ 10 tests.
 
 ```bash
 # Démarrer la recherche

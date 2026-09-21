@@ -76,7 +76,7 @@ Header blok berisi informasi berikut:
 
 ### Pohon Merkle (Merkle Trees)
 
-Di blockchain, **Pohon Merkle (Merkle Tree)** digunakan sebagai struktur data untuk secara efisien mendeteksi gangguan data sambil menjaga ukuran blok tetap kecil. Pohon Merkle adalah sejenis pohon biner, di mana nilai hash dari setiap transaksi ditempatkan di simpul daun (leaf nodes), dan simpul induk (parent nodes) adalah hash ulang dari gabungan nilai hash simpul anaknya.
+Di blockchain, **Pohon Merkle (Merkle [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** digunakan sebagai struktur data untuk secara efisien mendeteksi gangguan data sambil menjaga ukuran blok tetap kecil. Pohon Merkle adalah sejenis pohon biner, di mana nilai hash dari setiap transaksi ditempatkan di simpul daun (leaf nodes), dan simpul induk (parent nodes) adalah hash ulang dari gabungan nilai hash simpul anaknya.
 
 ```mermaid
 flowchart TD

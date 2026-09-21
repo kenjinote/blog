@@ -165,7 +165,7 @@ graph TD
     F --> G["Generation of Final Optimized Code"]
 ```
 
-### 3.3 Tree of Thoughts (ToT)
+### 3.3 [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) of Thoughts (ToT)
 
 A further extension of the CoT concept is **Tree of Thoughts (ToT)**. While CoT follows a single-path (linear) reasoning track, ToT is a technique that develops multiple reasoning paths (branches) in parallel like a search tree, has the model self-evaluate each path, and reaches the optimal solution while backtracking if necessary.
 
@@ -273,7 +273,7 @@ sequenceDiagram
     RAG_System-->>Engineer: "Present answers with links to the corresponding lines in the source code"
 ```
 
-As an important prompt engineering technique when building RAG for codebases, not only chunking the code but also including "summaries generated from each function's docstring or class's Abstract Syntax Tree (AST)" in the vectorization targets will drastically improve search accuracy.
+As an important prompt engineering technique when building RAG for codebases, not only chunking the code but also including "summaries generated from each function's docstring or class's Abstract Syntax [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (AST)" in the vectorization targets will drastically improve search accuracy.
 
 ---
 

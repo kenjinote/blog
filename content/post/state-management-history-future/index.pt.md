@@ -417,7 +417,7 @@ Em outras palavras, ele ignora a sobrecarga dos cálculos de diferença (diffing
 
 ### 10.3 O Modelo Matemático de Signals
 
-Por trás dos Signals está a teoria da "programação reativa", que modela a dependência entre estados e cálculos como um **Grafo Direcionado Acíclico (DAG: Directed Acyclic Graph)**, e usa ordenação topológica (topological sort) do grafo para determinar de forma eficiente a ordem de atualização.
+Por trás dos Signals está a teoria da "programação reativa", que modela a dependência entre estados e cálculos como um **Grafo Direcionado Acíclico (DAG: Directed Acyclic [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**, e usa ordenação topológica (topological sort) do grafo para determinar de forma eficiente a ordem de atualização.
 
 Se um estado derivado (Computed) $ C $ depende dos Sinais $ S_1, S_2 $, formam-se as arestas $ S_1 \to C $, $ S_2 \to C $.
 Quando o valor for atualizado, o framework percorre o grafo e avalia apenas os nós necessários (por exemplo, usando uma estratégia híbrida Push / Pull), evitando falhas (Glitch: o fenômeno onde um estado inconsistente e intermediário da UI aparece momentaneamente) e garantindo a consistência topológica.

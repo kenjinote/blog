@@ -64,7 +64,7 @@ HTML 的解析是依照 W3C（現在是 WHATWG）定義的 HTML 解析演算法�
 1.  **Conversion (轉換)** ：將從網路接收到的原始資料位元組序列，根據指定的字元編碼（如 UTF-8）轉換為個別的字元（Characters）。
 2.  **Tokenization (詞法解析)** ：將字串轉換為 W3C HTML5 標準中規定的各種「標記（Tokens）」。例如 `<html>` 、 `<body>` 等開始標籤、結束標籤、屬性名稱與屬性值等。
 3.  **Lexing (語法解析)** ：將產生的標記轉換為具有屬性與規則的「物件（Nodes）」。
-4.  **DOM Tree Construction (樹狀建構)** ：將建立的物件，根據標籤的巢狀關係連結成樹狀資料結構。這就是 **DOM (Document Object Model)** 。
+4.  **DOM [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Construction (樹狀建構)** ：將建立的物件，根據標籤的巢狀關係連結成樹狀資料結構。這就是 **DOM (Document Object Model)** 。
 
 ```mermaid
 sequenceDiagram
@@ -158,7 +158,7 @@ gantt
 
 ## 3. Style（樣式計算）：建構 Render 樹
 
-當 DOM 樹和 CSSOM 樹都完成後，瀏覽器會將它們結合起來建構 **Render 樹 (Render Tree)** 或 **樣式樹 (Style Tree)** 。
+當 DOM 樹和 CSSOM 樹都完成後，瀏覽器會將它們結合起來建構 **Render 樹 (Render [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** 或 **樣式樹 (Style Tree)** 。
 
 在這個階段，會計算 DOM 樹中的各個節點套用了哪些 CSSOM 的樣式規則，並決定最終的計算後樣式（Computed Style）。
 
@@ -270,7 +270,7 @@ for (let i = 0; i < elements.length; i++) {
 
 透過佈局階段，各個元素盒子的位置（X、Y 座標）與大小（寬、高）已經確定。然而，畫面上仍然沒有繪製任何東西。接下來進行的就是 **Paint (繪製)** 階段。
 
-Paint 階段的目的是接收佈局樹（Layout Tree）作為輸入，建立如何將畫面上的像素塗色的步驟（Paint Records），並最終進行光柵化（Rasterization）。
+Paint 階段的目的是接收佈局樹（Layout [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）作為輸入，建立如何將畫面上的像素塗色的步驟（Paint Records），並最終進行光柵化（Rasterization）。
 
 ### 5.1 繪製順序 (Stacking Context)
 
@@ -322,7 +322,7 @@ Paint Record 是如「在這個座標上，用這個顏色畫一個矩形」、�
 
 在瀏覽器內部，多個樹狀結構會進行轉換。
 
-1.  **DOM Tree**
+1.  **DOM [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
 2.  **Layout Tree (Render Tree)** : 視覺元素的幾何資訊
 3.  **Paint Tree (Layer Tree)** : 基於堆疊上下文等資訊的圖層階層結構
 4.  **Graphics Layer Tree** : 實際在 GPU 進行合成的獨立圖層群

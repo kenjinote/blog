@@ -9,7 +9,7 @@ categories: ["tools-development-environment"]
 description: 'जो कोई C++ से Microsoft Teams में स्वचालित संदेश पोस्टिंग लागू करना चाहता है, उसके लिए यह देखना आवश्यक है! हम WinHTTP और Graph API का उपयोग करके C++ कोड के विशिष्ट उदाहरणों और आवश्यक Azure ऐप पंजीकरण और API प्रमाणीकरण प्रक्रियाओं को चरण-दर-चरण स्पष्ट रूप से समझाएंगे।'
 ---
 
-# C++ से Microsoft Teams में संदेश कैसे भेजें (WinHTTP + Graph API)
+# C++ से Microsoft Teams में संदेश कैसे भेजें (WinHTTP + [Graph](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API)
 
 Microsoft Teams के चैट में स्वचालित रूप से पोस्ट करना चाहते हैं――  
 ऐसी स्थिति में आप **Microsoft Graph API** का उपयोग कर सकते हैं।  
@@ -29,7 +29,7 @@ Microsoft Teams के चैट में स्वचालित रूप �
 ### 2. API अनुमतियां जोड़ें
 
 1. बाएं मेनू में "API अनुमतियां (API permissions)" पर जाएं
-2. **"Microsoft Graph"** > **"अनुमतियां चुनें (Select permissions)"** में निम्नलिखित स्कोप खोजें और **"अनुमतियां अपडेट करें (Update permissions)"** पर क्लिक करें:
+2. **"Microsoft [Graph](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)"** > **"अनुमतियां चुनें (Select permissions)"** में निम्नलिखित स्कोप खोजें और **"अनुमतियां अपडेट करें (Update permissions)"** पर क्लिक करें:
 
 - Chat.ReadWrite
 - User.Read
@@ -77,7 +77,7 @@ curl -X POST ^
 }
 ```
 
-इस access_token का उपयोग करके Microsoft Graph API को कॉल किया जाता है।
+इस access_token का उपयोग करके Microsoft [Graph](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API को कॉल किया जाता है।
 
 ## 💬 Teams चैट में पोस्ट करने के लिए C++ उदाहरण
 यहाँ WinHTTP का उपयोग करके चैट में पोस्ट करने का एक C++ उदाहरण दिया गया है।
@@ -170,7 +170,7 @@ curl -X GET ^
   - HTTPS प्रमाणपत्र का सत्यापन
   - त्रुटि हैंडलिंग में सुधार
 - चैनल में पोस्ट करने के लिए teams/{team-id}/channels/{channel-id}/messages का उपयोग किया जाता है।
-- अटैचमेंट भेजने के लिए मल्टीपार्ट प्रोसेसिंग या Graph ड्राइव API की आवश्यकता होती है।
+- अटैचमेंट भेजने के लिए मल्टीपार्ट प्रोसेसिंग या [Graph](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) ड्राइव API की आवश्यकता होती है।
 
 ## निष्कर्ष
 
@@ -181,7 +181,7 @@ curl -X GET ^
 | Graph API | Teams के साथ संवाद करने के लिए आधिकारिक API |
 | ऐप पंजीकरण | Azure पर आवश्यक प्रमाणीकरण प्रक्रिया |
 | एक्सेस टोकन | [OAuth](https://kenji.blog/hi/p/oauth2-oidc-authentication-authorization-difference/)2 के माध्यम से प्राप्त किया जाता है, और अनुरोधों के लिए उपयोग किया जाता है |
-| C++ कार्यान्वयन | Graph API को कॉल करने के लिए WinHTTP का उपयोग करता है |
+| C++ कार्यान्वयन | [Graph](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API को कॉल करने के लिए WinHTTP का उपयोग करता है |
 
 ## 🚀 अगले कदम
 

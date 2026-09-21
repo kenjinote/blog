@@ -55,7 +55,7 @@ As is evident from this flowchart, merely accumulating the experience of "writin
 
 The greatest weakness and a potentially fatal flaw in Japan's programming education curriculum is the overwhelming lack of integration between "coding skills" and "mathematics / discrete mathematics." In top-tier computer science education, such as in the United States and India, the emphasis is placed on algorithm efficiency, mathematical logic, and mathematical proofs rather than the syntax of the programming language itself. This is because code is merely a translation of mathematical formulas.
 
-### The Absolute Dominance of Time Complexity and Space Complexity (Big O Notation)
+### The Absolute Dominance of Time Complexity and Space Complexity ([Big O](https://kenji.blog/en/p/time-space-complexity-big-o-notation-examples/) Notation)
 
 When evaluating and designing software performance, the concepts of Time Complexity and Space Complexity are unavoidable. Landau's asymptotic notation (Big O Notation) indicates how execution time and memory consumption increase when the input data size to an algorithm is $N$.
 
@@ -134,7 +134,7 @@ Database operations are defined by the following basic operations based on set t
 - Projection ($\pi$): Extracting specific attributes (columns)
 - Join ($\bowtie$): Conditional intersection of multiple relations
 
-Furthermore, learning the structure of the "[B-Tree](https://kenji.blog/en/p/b-tree-database-index-theory/) index" to instantly search for the desired data from a vast number of records is the best practical application of data structures. The B-Tree minimizes disk I/O operations while guaranteeing a search speed of $O(\log N)$. Without knowing the [ACID](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) properties (Atomicity, [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability) of a transaction, it is impossible to build robust systems.
+Furthermore, learning the structure of the "[B-Tree](https://kenji.blog/en/p/b-tree-database-index-theory/) index" to instantly search for the desired data from a vast number of records is the best practical application of data structures. The B-[Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) minimizes disk I/O operations while guaranteeing a search speed of $O(\log N)$. Without knowing the [ACID](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) properties (Atomicity, [Consistency](https://kenji.blog/en/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability) of a transaction, it is impossible to build robust systems.
 
 ## 6. Security and [Crypto](https://kenji.blog/en/p/cryptocurrency-and-bitcoin/)graphy: The Social Infrastructure Supported by the Difficulty of Prime Factorization
 

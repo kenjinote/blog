@@ -81,7 +81,7 @@ graph LR
 Beim Auswendiglernen von Fachbüchern ist es sinnlos, „lange Beweise auswendig zu lernen“. Unterteilen Sie das Wissen in kleinste Einheiten (atomar) und erstellen Sie daraus Karten.
 
 - **Schlechte Karte**: „Schreibe den gesamten Beweis für den [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus auf.“
-- **Gute Karte**: „Unter welcher Bedingung kann die kürzeste Distanz zu einem bestimmten Knoten im Dijkstra-Algorithmus als endgültig betrachtet werden?“ → „Wenn der Knoten mit der geringsten vorläufigen Distanz aus der Menge der noch nicht festgelegten Knoten ausgewählt wird.“
+- **Gute Karte**: „Unter welcher Bedingung kann die kürzeste Distanz zu einem bestimmten Knoten im [Dijkstra](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-Algorithmus als endgültig betrachtet werden?“ → „Wenn der Knoten mit der geringsten vorläufigen Distanz aus der Menge der noch nicht festgelegten Knoten ausgewählt wird.“
 - **Gute Karte**: „Wie lautet die Formel für den kleinen Satz von [Fermat](https://kenji.blog/de/p/fermat/)?“ → „Für eine Primzahl $p$ und eine dazu teilerfremde ganze Zahl $a$ gilt: $a^{p-1} \equiv 1 \pmod p$.“
 
 Beim Auswendiglernen von Formeln ist es effektiv, sie im LaTeX-Format in Anki einzugeben und Lückentexte (Cloze Deletion) zu verwenden.
@@ -176,7 +176,7 @@ Um $d$ zu finden, das die Formel $e \cdot d \equiv 1 \pmod{\phi(n)}$ erfüllt, m
 
 ### 4.2 Beispiel 2: [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus und Relaxation (Entspannung)
 
-Betrachten wir den Dijkstra-Algorithmus, der das Problem des kürzesten Pfades von einem Startknoten (Single-Source Shortest Path, SSSP) in der Graphentheorie löst.
+Betrachten wir den [Dijkstra](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-Algorithmus, der das Problem des kürzesten Pfades von einem Startknoten (Single-Source Shortest Path, SSSP) in der Graphentheorie löst.
 
 Der mathematische und algorithmische Kern ist eine Operation namens „Relaxation“.
 Wenn es eine Kante mit dem Gewicht $w(u, v)$ vom Knoten $u$ zum Knoten $v$ gibt, wird die vorläufige kürzeste Distanz $d[v]$ zum Knoten $v$ durch folgende Formel aktualisiert:

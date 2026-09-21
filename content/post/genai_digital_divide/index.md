@@ -63,7 +63,7 @@ $$
 \Delta P(t) = P_{AI}(t) - P_{human}(t)
 $$
 
-この乖離を視覚的に示したのが以下のグラフです。
+この乖離を視覚的に示したのが以下の[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)です。
 
 ```mermaid
 xychart-beta

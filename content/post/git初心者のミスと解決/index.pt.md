@@ -27,13 +27,13 @@ Ao terminar de ler este artigo, você deverá estar livre do sentimento de "o Gi
 
 O primeiro passo para facilitar muitas resoluções de problemas é saber como o Git armazena os dados. A pasta oculta `.git` presente no diretório raiz do seu projeto é o próprio coração do Git. O Git não é apenas um sistema que registra sequencialmente as diferenças (patches) de arquivos, mas gerencia os dados como um **fluxo de snapshots**.
 
-### 2.1 Modelo de objetos: Blob, Tree, Commit
+### 2.1 Modelo de objetos: Blob, [Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), Commit
 
 O Git usa principalmente três objetos para representar o estado do repositório. Esses objetos são armazenados em `.git/objects`.
 
 1. **Blob (Binary Large Object)**
    É o objeto que armazena o próprio conteúdo do arquivo. Informações como nome do arquivo ou permissões não estão incluídas aqui. Sequências de bytes puras são compactadas com zlib e identificadas por um valor de hash SHA-1 (40 caracteres hexadecimais).
-2. **Tree**
+2. **[Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
    É o objeto que representa a estrutura de diretórios. O objeto Tree contém ponteiros (valores de hash SHA-1) para outros objetos Tree (subdiretórios) ou objetos Blob (arquivos), bem como seus nomes de arquivos e permissões de acesso. Desempenha um papel semelhante a um diretório UNIX.
 3. **Commit**
    Mantém um ponteiro para o objeto Tree de nível superior do repositório em um determinado momento, metadados (autor, data e hora do commit, mensagem do commit) e um ponteiro para o commit imediatamente anterior (commit pai).
@@ -334,7 +334,7 @@ Há um bug na branch `main` atual, mas estava normal durante a versão lançada 
 
 ### Solução: Identificação de bugs usando busca binária
 
-O Git possui uma ferramenta embutida para encontrar o commit no qual um bug foi introduzido usando a busca binária matemática (Binary Search). A complexidade computacional é $\mathcal{O}(\log N)$, portanto, mesmo que você tenha 1000 commits, você pode identificá-lo em cerca de 10 testes.
+O Git possui uma ferramenta embutida para encontrar o commit no qual um bug foi introduzido usando a busca binária matemática ([Binary Search](https://kenji.blog/pt/p/search-algorithms-linear-binary-hash-table-principles/)). A complexidade computacional é $\mathcal{O}(\log N)$, portanto, mesmo que você tenha 1000 commits, você pode identificá-lo em cerca de 10 testes.
 
 ```bash
 # Inicie a busca

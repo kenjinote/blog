@@ -18,7 +18,7 @@ tags:
 
 In der modernen Systementwicklung ist die Auswahl einer Datenbank als Mittel zur Speicherung und Verwaltung von Daten von entscheidender Bedeutung. Es gab eine Zeit, in der relationale Datenbanken ([RDBMS](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/)) dominierten, aber heute spielen **NoSQL** (Not Only SQL) Datenbanken aufgrund der Diversifizierung und des enormen Wachstums der Datenmengen eine wichtige Rolle.
 
-NoSQL-Datenbanken sind nicht eine einzelne Technologie, sondern ein Sammelbegriff für verschiedene Datenmodelle, die für spezifische Anwendungsfälle optimiert sind. In diesem Artikel werden wir die entscheidenden Unterschiede zwischen RDBMS und NoSQL aufklären und die Eigenschaften, Vor- und Nachteile sowie geeigneten Anwendungsfälle der vier wichtigsten NoSQL-Datenmodelle detailliert und umfassend erläutern: **Key-Value Store (KVS)** , **Dokumentenorientiert** , **Graph** und **Wide-Column** .
+NoSQL-Datenbanken sind nicht eine einzelne Technologie, sondern ein Sammelbegriff für verschiedene Datenmodelle, die für spezifische Anwendungsfälle optimiert sind. In diesem Artikel werden wir die entscheidenden Unterschiede zwischen RDBMS und NoSQL aufklären und die Eigenschaften, Vor- und Nachteile sowie geeigneten Anwendungsfälle der vier wichtigsten NoSQL-Datenmodelle detailliert und umfassend erläutern: **Key-Value Store (KVS)** , **Dokumentenorientiert** , **[Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** und **Wide-Column** .
 
 ---
 
@@ -188,9 +188,9 @@ db.users.find({
 
 ---
 
-## 4. Graph-Datenbanken
+## 4. [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-Datenbanken
 
-Graph-Datenbanken sind spezialisierte Datenbanken, die entwickelt wurden, um sich mehr auf " **die Beziehungen (Verbindungen) zwischen Daten** " als auf die Daten selbst zu konzentrieren. Obwohl das "relational" in [RDBMS](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/) eigentlich teuer in der Handhabung von Beziehungen zwischen Tabellen ist, behandeln Graph-Datenbanken Beziehungen buchstäblich als erstklassige Objekte.
+Graph-Datenbanken sind spezialisierte Datenbanken, die entwickelt wurden, um sich mehr auf " **die Beziehungen (Verbindungen) zwischen Daten** " als auf die Daten selbst zu konzentrieren. Obwohl das "relational" in [RDBMS](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/) eigentlich teuer in der Handhabung von Beziehungen zwischen Tabellen ist, behandeln [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-Datenbanken Beziehungen buchstäblich als erstklassige Objekte.
 
 ### Datenmodell und Eigenschaften
 
@@ -232,7 +232,7 @@ graph TD
     class P1,P2 productNode;
 ```
 
-### Typische Graph-Datenbanken
+### Typische [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-Datenbanken
 
 - **Neo4j** : Die am weitesten verbreitete Graph-Datenbank der Welt. Verwendet Cypher, eine eigene leistungsstarke Abfragesprache.
 - **Amazon Neptune** : Eine vollständig verwaltete Graph-Datenbank von AWS. Unterstützt Property Graph (Gremlin) und RDF (SPARQL).
@@ -254,7 +254,7 @@ Unerlässlich für Systeme, in denen die Verbindungen zwischen Daten selbst wert
 
 - **SNS (Soziale Netzwerke)** : Verwaltung von Freundschaften und Follower-/Following-Beziehungen.
 - **Empfehlungs-Engines** : Echtzeit-Vorschläge für "Produkte, die von Benutzern mit ähnlichen Kaufgewohnheiten wie Sie gekauft wurden".
-- **Betrugserkennung (Fraud Detection)** : Visualisierung von Korrelationen zwischen verdächtigen IP-Adressen, Kreditkarten und Konten als Graph zur Identifizierung von Betrugsringen.
+- **Betrugserkennung (Fraud Detection)** : Visualisierung von Korrelationen zwischen verdächtigen IP-Adressen, Kreditkarten und Konten als [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) zur Identifizierung von Betrugsringen.
 - **Netzwerk- und IT-Infrastrukturmanagement** : Verwaltung von Abhängigkeiten zwischen Servern und Routern zur sofortigen Identifizierung der Auswirkungen bei Ausfällen.
 
 ### Neo4j Codebeispiel (Cypher-Abfrage)
@@ -296,7 +296,7 @@ Obwohl es der Tabellenstruktur aus Zeilen und Spalten wie bei [RDBMS](https://ke
 3. **Spalte (Column)** : Ein Satz aus "Spaltenname (Key)", "Wert (Value)" und "Zeitstempel (Timestamp)".
 
 Das größte Merkmal ist, **dass jede Zeile eine unterschiedliche Anzahl und Art von Spalten haben kann (schemalos)** und **dass eine extrem große (breite) Zeile mit Millionen von Spalten existieren kann** .
-Darüber hinaus verwendet es Architekturen wie den LSM-Tree (Log-Structured Merge-tree), sodass Schreiboperationen (Write) auf die Festplatte extrem schnell und sequentiell ausgeführt werden, was es bei der kontinuierlichen Aufzeichnung riesiger Datenmengen überwältigend stark macht.
+Darüber hinaus verwendet es Architekturen wie den LSM-[Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Log-Structured Merge-tree), sodass Schreiboperationen (Write) auf die Festplatte extrem schnell und sequentiell ausgeführt werden, was es bei der kontinuierlichen Aufzeichnung riesiger Datenmengen überwältigend stark macht.
 
 ### Diagramm des Wide-Column-Modells mit Mermaid
 
@@ -372,7 +372,7 @@ Wie wir bisher gesehen haben, gibt es bei NoSQL keine "Silberkugel". Der Schlüs
 2. **Ändert sich Ihre Datenstruktur häufig und möchten Sie komplexe JSON-Daten so wie sie sind speichern und durchsuchen?**
    👉 Wählen Sie **Dokumentenorientiert (MongoDB, Firestore)** .
 3. **Möchten Sie komplexe Beziehungen zwischen Daten, wie z. B. "Freunde von Freunden" oder "Empfehlungspfade", sofort durchsuchen und analysieren?**
-   👉 Wählen Sie **Graph (Neo4j)** .
+   👉 Wählen Sie **[Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Neo4j)** .
 4. **Möchten Sie Zehntausende von Protokollen oder IoT-Daten pro Sekunde schreiben und unendlich skalieren?**
    👉 Wählen Sie **Wide-Column (Cassandra, Bigtable)** .
 5. **Sind strenge Datenkonsistenz, komplexe Transaktionen und vielfältige Aggregationen (JOIN) unerlässlich?**

@@ -296,7 +296,7 @@ int main() {
 
 これまでの知識を総動員して、コンパイル時に素数判定を行うコードを記述してみましょう。ここでは、モダンなC++20の機能（`consteval`）を使用します。
 
-素数判定アルゴリズムの時間計算量は、愚直に調べると $O(N)$ ですが、$\sqrt{N}$ まで調べれば十分であるため、最適なアルゴリズムでは $O(\sqrt{N})$ となります。
+素数判定アルゴリズムの[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は、愚直に調べると $O(N)$ ですが、$\sqrt{N}$ まで調べれば十分であるため、最適なアルゴリズムでは $O(\sqrt{N})$ となります。
 
 ```cpp
 #include <iostream>

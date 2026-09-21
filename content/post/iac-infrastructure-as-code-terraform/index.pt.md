@@ -109,7 +109,7 @@ A essência do Terraform reside nesta abordagem **declarativa (Declarative)**. P
 
 Em scripts imperativos, é necessário que o ser humano escreva a ordem exata na qual os recursos devem ser criados. Por exemplo, criar uma VPC, criar uma sub-rede depois disso e, finalmente, colocar o EC2 dentro dessa sub-rede.
 
-No Terraform, o Terraform Core constrói automaticamente um **Grafo de Dependências (Dependency Graph)** a partir das relações de referência que aparecem no código (por exemplo, referenciar `aws_vpc.main.id` nas configurações de uma sub-rede).
+No Terraform, o Terraform Core constrói automaticamente um **Grafo de Dependências (Dependency [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** a partir das relações de referência que aparecem no código (por exemplo, referenciar `aws_vpc.main.id` nas configurações de uma sub-rede).
 
 ```mermaid
 graph TD

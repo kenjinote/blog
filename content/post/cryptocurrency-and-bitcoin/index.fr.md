@@ -76,7 +76,7 @@ L'en-tête de bloc contient les informations suivantes :
 
 ### Arbres de Merkle (Merkle Trees)
 
-Dans la blockchain, une structure de données appelée **arbre de Merkle (Merkle Tree)** est utilisée pour détecter efficacement la falsification des données tout en gardant la taille du bloc petite. Un arbre de Merkle est un type d'arbre binaire où les nœuds feuilles contiennent la valeur de hachage de chaque transaction, et les nœuds parents sont créés en concaténant les valeurs de hachage de leurs nœuds enfants et en les hachant à nouveau.
+Dans la blockchain, une structure de données appelée **arbre de Merkle (Merkle [Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** est utilisée pour détecter efficacement la falsification des données tout en gardant la taille du bloc petite. Un arbre de Merkle est un type d'arbre binaire où les nœuds feuilles contiennent la valeur de hachage de chaque transaction, et les nœuds parents sont créés en concaténant les valeurs de hachage de leurs nœuds enfants et en les hachant à nouveau.
 
 ```mermaid
 flowchart TD

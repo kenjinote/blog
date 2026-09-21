@@ -235,7 +235,7 @@ SPHINCS+被分類為 **雜湊基簽章** 。其安全性基礎僅依賴於「所
 
 ### 8.1. WOTS+ 與 FORS 的無狀態架構
 
-雜湊基簽章的歷史悠久，可追溯至1970年代的Lamport簽章與Winternitz單次簽章（WOTS）。這些都是「只能安全簽章1次」的拋棄式金鑰。為了使其能使用多次，開發了結合默克爾樹（Merkle Tree），將無數的單次金鑰透過一個根雜湊來管理的XMSS（eXtended Merkle Signature Scheme）與LMS等演算法。
+雜湊基簽章的歷史悠久，可追溯至1970年代的Lamport簽章與Winternitz單次簽章（WOTS）。這些都是「只能安全簽章1次」的拋棄式金鑰。為了使其能使用多次，開發了結合默克爾樹（Merkle [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)），將無數的單次金鑰透過一個根雜湊來管理的XMSS（eXtended Merkle Signature Scheme）與LMS等演算法。
 
 然而，XMSS與LMS有一個致命的缺點，那就是它們是「 **有狀態的 (Stateful)** 」。每次簽章時，都必須將「使用了第幾個單次金鑰」的索引狀態嚴格記錄在非揮發性記憶體中。如果因為虛擬機器的快照還原等原因導致狀態回溯，而不小心使用了同一個單次金鑰兩次，秘密金鑰就會立刻外洩，導致系統崩潰。
 

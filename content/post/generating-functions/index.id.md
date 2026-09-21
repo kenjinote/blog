@@ -63,7 +63,7 @@ $$
 f(x) = \frac{1}{1-x} \cdot \frac{1}{1-x^2} \cdot \frac{1}{1-x^5}
 $$
 
-Dengan kata lain, tanpa menggunakan relasi rekurensi yang kompleks atau perhitungan perulangan (loop), Anda dapat menemukan jumlah kombinasi untuk $n$ berapapun hanya dengan mencari koefisien ekspansi Taylor dari fungsi ini. Dalam pemrograman, konsep ini adalah dasar penting untuk Pemrograman Dinamis (Dynamic Programming/DP).
+Dengan kata lain, tanpa menggunakan relasi rekurensi yang kompleks atau perhitungan perulangan (loop), Anda dapat menemukan jumlah kombinasi untuk $n$ berapapun hanya dengan mencari koefisien ekspansi Taylor dari fungsi ini. Dalam pemrograman, konsep ini adalah dasar penting untuk Pemrograman Dinamis ([Dynamic Programming](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)/[DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)).
 
 ### Konvolusi dan Perkalian Polinomial
 

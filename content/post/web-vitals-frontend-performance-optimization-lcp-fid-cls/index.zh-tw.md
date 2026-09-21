@@ -36,7 +36,7 @@ flowchart TD
 ```
 
 1. **解析 (Parse)** ：瀏覽器在接收到 HTML 時，會由上而下進行解析（Parse），並建構 DOM（Document Object Model）樹。同時也會解析 CSS 並建構 CSSOM（CSS Object Model）樹。
-2. **樣式計算 (Style)** ：將 DOM 樹與 CSSOM 樹結合，計算出哪個節點應該套用哪種樣式，藉此生成渲染樹（Render Tree）。
+2. **樣式計算 (Style)** ：將 DOM 樹與 CSSOM 樹結合，計算出哪個節點應該套用哪種樣式，藉此生成渲染樹（Render [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）。
 3. **排版 (Layout / Reflow)** ：根據渲染樹，計算每個元素在螢幕上的位置以及大小。
 4. **繪製 (Paint)** ：根據排版資訊，將文字、顏色、圖片、邊框等視覺元素作為像素繪製到記憶體的圖層（Layer）上。
 5. **合成 (Composite)** ：將多個圖層以正確的順序疊加，並輸出為最終的畫面。

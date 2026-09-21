@@ -20,13 +20,13 @@ description: '2020年度の小学校におけるプログラミング教育必�
 
 ## 2. ビジュアルプログラミングの罠：Scratchからテキストコーディングへの深く険しい溝
 
-小学校のプログラミング教育においてデファクトスタンダードとして君臨しているのが、MITメディアラボが開発した「Scratch」に代表されるビジュアルプログラミング言語（ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)プログラミング）です。直感的なグラフィカルインターフェースを用いて、パズルのようにブロックを組み合わせることで、「順次（シーケンス）」「分岐（セレクション）」「反復（イテレーション）」というアルゴリズムの3つの基本制御構造を視覚的かつ直感的に学べる点は、導入教育として高く評価されるべき偉大な発明です。
+小学校のプログラミング教育においてデファクトスタンダードとして君臨しているのが、MITメディアラボが開発した「Scratch」に代表されるビジュアルプログラミング言語（ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)プログラミング）です。直感的な[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィカルインターフェースを用いて、パズルのようにブロックを組み合わせることで、「順次（シーケンス）」「分岐（セレクション）」「反復（イテレーション）」というアルゴリズムの3つの基本制御構造を視覚的かつ直感的に学べる点は、導入教育として高く評価されるべき偉大な発明です。
 
 しかし、ここには重大な落とし穴、いわば「抽象化の罠」が存在します。それは、「ビジュアルプログラミングからテキストベースの本格的なプログラミング言語（Python, JavaScript, C++, [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)など）への移行が極めて困難であり、多くの学習者がこの段階で挫折してしまう」という残酷な事実です。
 
 ### 抽象化の壁とコンピュータサイエンスのブラックボックス化
 
-Scratchをはじめとするビジュアルプログラミング環境は、プログラミングの複雑な構文（シンタックス）、厳密な型システム（タイプシステム）、メモリのライフサイクル管理といった、コンピュータサイエンスの根幹を成す重要要素を高度に抽象化し、意図的に隠蔽（カプセル化）しています。これは初学者の認知負荷を下げるためには優れていますが、次のステップである本物のエンジニアリングへ進む際の巨大な障壁となります。実際のソフトウェア開発現場では、変数のスコープ（ローカル変数とグローバル変数）、複雑なデータ構造（配列、連結リスト、ハッシュテーブル、二分探索木、グラフ）、ポインタ操作、そしてメモリのヒープ領域・スタック領域の理解が絶対に不可欠だからです。
+Scratchをはじめとするビジュアルプログラミング環境は、プログラミングの複雑な構文（シンタックス）、厳密な型システム（タイプシステム）、メモリのライフサイクル管理といった、コンピュータサイエンスの根幹を成す重要要素を高度に抽象化し、意図的に隠蔽（カプセル化）しています。これは初学者の認知負荷を下げるためには優れていますが、次のステップである本物のエンジニアリングへ進む際の巨大な障壁となります。実際のソフトウェア開発現場では、変数のスコープ（ローカル変数とグローバル変数）、複雑なデータ構造（配列、連結リスト、[ハッシュテーブル](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)、[二分探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)木、[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）、ポインタ操作、そしてメモリのヒープ領域・スタック領域の理解が絶対に不可欠だからです。
 
 以下のMermaid図は、初学者がビジュアルプログラミングから本格的なコンピュータサイエンスへと移行する過程で直面する、学習のハードルとドロップオフ（脱落）ポイントを視覚化したものです。
 
@@ -55,7 +55,7 @@ flowchart TD
 
 日本のプログラミング教育カリキュラムにおける最大の弱点であり、致命的な欠陥とも言えるのが、「コーディング技術」と「数学・離散数学（Discrete Mathematics）」の連携の圧倒的な不足です。米国やインドをはじめとするトップティアのコンピュータサイエンス教育では、プログラミング言語の文法そのものよりも、アルゴリズムの効率性、数理論理学、そして数学的証明に重きが置かれます。コードは数式の翻訳に過ぎないからです。
 
-### 時間計算量と空間計算量（Big O Notation）の絶対的支配
+### [時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)と[空間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)（[Big O](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) Notation）の絶対的支配
 
 ソフトウェアの性能を評価・設計する上で、時間計算量（Time Complexity）と空間計算量（Space Complexity）の概念は避けて通れません。あるアルゴリズムに入力されるデータサイズを $N$ としたとき、実行時間や消費メモリがどのように増大していくかを示すのが、ランダウの漸近記法（Big O Notation）です。
 
@@ -67,7 +67,7 @@ $$
 
 日本の情報教育において、例えばデータの並び替え（[ソート](https://kenji.blog/p/sorting-algorithms/)処理）を学ぶ際、単にPythonで `array.sort()` というビルトインメソッドを呼んで終わりにしてしまうケースが散見されます。しかし、情報工学として真に求められるのは、なぜ単純な[バブル[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)が実用領域で決して使われず、[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)、[マージ[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)、あるいは[ティム[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)（[Timsort](https://kenji.blog/p/sorting-algorithms/)）が標準ライブラリとして採用されているのかを、数学的に理解し証明することです。
 
-以下に代表的な[[ソート](https://kenji.blog/p/sorting-algorithms/)アルゴリズム](https://kenji.blog/p/sorting-algorithms/)の平均時間計算量を示します。
+以下に代表的な[[ソート](https://kenji.blog/p/sorting-algorithms/)アルゴリズム](https://kenji.blog/p/sorting-algorithms/)の平均[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)を示します。
 
 - [バブル[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/) (Bubble Sort): $O(N^2)$
 - 選択[ソート](https://kenji.blog/p/sorting-algorithms/) (Selection Sort): $O(N^2)$
@@ -76,7 +76,7 @@ $$
 - [クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/) (Quick Sort): $O(N \log N)$
 - [ヒープ[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/) (Heap Sort): $O(N \log N)$
 
-例えば、[マージ[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)の時間計算量 $T(N)$ は、分割統治法（Divide and Conquer）のパラダイムにより、以下の漸化式で表現されます。
+例えば、[マージ[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)の[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) $T(N)$ は、分割統治法（Divide and Conquer）のパラダイムにより、以下の漸化式で表現されます。
 
 $$
 T(N) = 2T\left(\frac{N}{2}\right) + O(N)
@@ -134,7 +134,7 @@ int main() {
 - 射影（Projection, $\pi$）: 特定の属性（列）の抽出
 - 結合（Join, $\bowtie$）: 複数のリレーションの条件付き交差
 
-さらに、膨大なレコードから一瞬で目的のデータを検索するための「[B-Tree](https://kenji.blog/p/b-tree-database-index-theory/)（[B木](https://kenji.blog/p/b-tree-database-index-theory/)）インデックス」の構造を学ぶことは、データ構造の応用として最高の実践です。B-Treeは、ディスクI/Oの回数を最小限に抑えつつ、$O(\log N)$ の検索速度を保証します。[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の[ACID](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)特性（Atomicity, [Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability）を知らずして、堅牢なシステムを作ることはできません。
+さらに、膨大なレコードから一瞬で目的のデータを検索するための「[B-Tree](https://kenji.blog/p/b-tree-database-index-theory/)（[B木](https://kenji.blog/p/b-tree-database-index-theory/)）インデックス」の構造を学ぶことは、データ構造の応用として最高の実践です。B-[Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)は、ディスクI/Oの回数を最小限に抑えつつ、$O(\log N)$ の検索速度を保証します。[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)の[ACID](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)特性（Atomicity, [Consistency](https://kenji.blog/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability）を知らずして、堅牢なシステムを作ることはできません。
 
 ## 6. セキュリティと暗号理論：素因数分解の困難性が支える社会インフラ
 
@@ -206,7 +206,7 @@ flowchart LR
 
 現代の産業界、特にグローバルに展開するメガベンチャーやテックジャイアント（GAFAM等）が新卒のソフトウェアエンジニアに求める要件は、年々恐ろしいスピードで高度化しています。クラウドネイティブインフラ（AWS, GCP, [Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)）の構築、[マイクロサービス](https://kenji.blog/p/microservices-architecture-bff-api-gateway/)アーキテクチャの[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)設計、機械学習[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の実装、そして高度なセキュリティ知識など、広範かつ深い専門性が求められます。
 
-以下のグラフは、現在の日本の学校教育で提供されているスキルの到達度と、最前線の産業界が要求するスキルの水準との絶望的な乖離を概念的に示しています。
+以下の[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)は、現在の日本の学校教育で提供されているスキルの到達度と、最前線の産業界が要求するスキルの水準との絶望的な乖離を概念的に示しています。
 
 ```mermaid
 xychart-beta

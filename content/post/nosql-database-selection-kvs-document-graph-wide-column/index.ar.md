@@ -235,7 +235,7 @@ graph TD
 ### قواعد بيانات الرسم البياني التمثيلية
 
 - **Neo4j** : قاعدة بيانات الرسم البياني الأكثر استخداماً في العالم. تستخدم لغة استعلام قوية وخاصة بها تُعرف باسم Cypher.
-- **Amazon Neptune** : قاعدة بيانات رسم بياني مدارة بالكامل من AWS. تدعم Property Graph (Gremlin) و RDF (SPARQL).
+- **Amazon Neptune** : قاعدة بيانات رسم بياني مدارة بالكامل من AWS. تدعم Property [Graph](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Gremlin) و RDF (SPARQL).
 - **ArangoDB** : قاعدة بيانات متعددة النماذج تدعم الرسوم البيانية والمستندات و KVS.
 
 ### المزايا والعيوب

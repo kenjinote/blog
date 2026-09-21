@@ -64,7 +64,7 @@ Analisis HTML dilakukan mengikuti algoritma penguraian HTML yang didefinisikan o
 1.  **Conversion (Konversi)** : Mengubah aliran byte data mentah yang diterima dari jaringan menjadi karakter individual (Characters) berdasarkan pengodean karakter yang ditentukan (seperti UTF-8).
 2.  **Tokenization (Analisis Leksikal)** : Mengubah string menjadi berbagai "token (Tokens)" yang ditentukan oleh standar HTML5 W3C. Contohnya termasuk tag pembuka seperti `<html>`, `<body>`, tag penutup, nama atribut, dan nilai atribut.
 3.  **Lexing (Analisis Sintaksis)** : Mengubah token yang dihasilkan menjadi "objek (Nodes)" yang memiliki properti dan aturan.
-4.  **DOM Tree Construction (Pembangunan Pohon)** : Menautkan objek yang dibuat ke dalam struktur data seperti pohon berdasarkan hubungan bersarang dari tag. Inilah yang disebut **DOM (Document Object Model)**.
+4.  **DOM [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Construction (Pembangunan Pohon)** : Menautkan objek yang dibuat ke dalam struktur data seperti pohon berdasarkan hubungan bersarang dari tag. Inilah yang disebut **DOM (Document Object Model)**.
 
 ```mermaid
 sequenceDiagram
@@ -158,7 +158,7 @@ gantt
 
 ## 3. Style (Perhitungan Gaya): Pembangunan Pohon Render
 
-Setelah pohon DOM dan pohon CSSOM selesai, peramban menggabungkan keduanya untuk membangun **Pohon Render (Render Tree)** atau **Pohon Gaya (Style Tree)**.
+Setelah pohon DOM dan pohon CSSOM selesai, peramban menggabungkan keduanya untuk membangun **Pohon Render (Render [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** atau **Pohon Gaya (Style Tree)**.
 
 Dalam fase ini, peramban menghitung aturan gaya CSSOM mana yang berlaku untuk setiap simpul di pohon DOM, dan menentukan gaya yang telah dihitung (Computed Style) secara akhir.
 
@@ -270,7 +270,7 @@ Baru-baru ini, pendekatan umum adalah menggunakan pustaka seperti `FastDOM` atau
 
 Melalui fase Layout, posisi kotak (koordinat X, Y) dan ukuran (lebar, tinggi) setiap elemen telah ditentukan. Namun, belum ada yang digambar di layar. Proses selanjutnya adalah fase **Paint (Pengecatan)**.
 
-Tujuan dari fase Paint adalah mengambil pohon tata letak (Layout Tree) sebagai input, membuat instruksi (Paint Records) tentang cara mengecat piksel di layar, dan akhirnya merasterisasinya (Rasterization).
+Tujuan dari fase Paint adalah mengambil pohon tata letak (Layout [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) sebagai input, membuat instruksi (Paint Records) tentang cara mengecat piksel di layar, dan akhirnya merasterisasinya (Rasterization).
 
 ### 5.1 Urutan Pengecatan (Stacking Context)
 
@@ -322,7 +322,7 @@ Untuk mengatasinya, peramban membagi halaman menjadi beberapa **Lapisan (Graphic
 
 Di dalam peramban, ada beberapa struktur pohon yang terus dikonversi.
 
-1.  **DOM Tree**
+1.  **DOM [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
 2.  **Layout Tree (Render Tree)** : Informasi geometri elemen visual
 3.  **Paint Tree (Layer Tree)** : Struktur hierarkis lapisan berdasarkan konteks penumpukan dan lain-lain
 4.  **Graphics Layer Tree** : Grup lapisan independen yang sebenarnya akan disintesis oleh GPU

@@ -48,7 +48,7 @@ Diese Entdeckung Eulers war der genaue Moment, in dem die **Graphentheorie** geb
 
 ## 3. Grundkonzepte und mathematische Definitionen der Graphentheorie
 
-In der Graphentheorie bezieht sich ein „Graph“ nicht auf Methoden zur Visualisierung statistischer Daten wie Liniendiagramme oder Kreisdiagramme. Es bezieht sich auf eine mathematische Struktur, die eine Menge von Objekten und die Beziehungen zwischen ihnen darstellt.
+In der Graphentheorie bezieht sich ein „[Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)“ nicht auf Methoden zur Visualisierung statistischer Daten wie Liniendiagramme oder Kreisdiagramme. Es bezieht sich auf eine mathematische Struktur, die eine Menge von Objekten und die Beziehungen zwischen ihnen darstellt.
 
 ### 3.1. Grundstruktur eines Graphen: Knoten und Kanten
 
@@ -83,7 +83,7 @@ graph LR
 
 ### 3.3. Gewichtete Graphen
 
-Bei der Modellierung realer Probleme möchten wir oft nicht nur ausdrücken, „ob sie verbunden sind“, sondern auch die „Leichtigkeit der Verbindung“ oder die „Kosten“. In solchen Fällen wird ein **Gewichteter Graph (Weighted Graph)** verwendet, bei dem jeder Kante ein numerischer Wert (Gewicht) zugewiesen wird. Das Gewicht kann die Entfernung zwischen Städten, die Kommunikationsverzögerungszeit oder die Reisekosten darstellen.
+Bei der Modellierung realer Probleme möchten wir oft nicht nur ausdrücken, „ob sie verbunden sind“, sondern auch die „Leichtigkeit der Verbindung“ oder die „Kosten“. In solchen Fällen wird ein **Gewichteter [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Weighted Graph)** verwendet, bei dem jeder Kante ein numerischer Wert (Gewicht) zugewiesen wird. Das Gewicht kann die Entfernung zwischen Städten, die Kommunikationsverzögerungszeit oder die Reisekosten darstellen.
 
 ### 3.4. Wege und Zyklen
 
@@ -138,7 +138,7 @@ Eine Adjazenzliste ist eine Methode, die für jeden Knoten eine „Liste benachb
 
 Um Probleme in Graphen effizient zu lösen, wurden im Laufe der Geschichte der Informatik viele hervorragende Algorithmen entwickelt. Hier stellen wir einige repräsentative Algorithmen vor, die in der modernen Softwareentwicklung als unerlässlich gelten.
 
-### 5.1. Breitensuche (BFS) und Tiefensuche (DFS)
+### 5.1. Breitensuche ([BFS](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) und Tiefensuche ([DFS](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 Die grundlegendsten Algorithmen, um alle Knoten in einem Netzwerk systematisch und lückenlos zu besuchen, sind die **Breitensuche (Breadth-First Search, BFS)** und die **Tiefensuche (Depth-First Search, DFS)**.
 
@@ -189,7 +189,7 @@ bfs(graph_data, 'A')
 
 Bei der Suche nach der schnellsten Route zu einem Ziel in einer Kartenanwendung ist das, was im Kern des Systems arbeitet, ein **Algorithmus für den kürzesten Weg**. Die Route hat Kosten (Gewichte) wie „Entfernung“ und „Reisezeit“, und das Ziel ist es, den Weg zu finden, der die kumulativen Kosten vom Startpunkt zum Ziel minimiert.
 
-Der 1956 vom niederländischen Informatiker Edsger W. Dijkstra erfundene **Dijkstra-Algorithmus** ist ein extrem berühmter Algorithmus zur effizienten Berechnung des kürzesten Weges von einer einzelnen Quelle zu allen anderen Knoten in einem Netzwerk, unter der Bedingung, dass alle Kantengewichte nicht-negativ (0 oder größer) sind.
+Der 1956 vom niederländischen Informatiker Edsger W. [Dijkstra](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) erfundene **Dijkstra-Algorithmus** ist ein extrem berühmter Algorithmus zur effizienten Berechnung des kürzesten Weges von einer einzelnen Quelle zu allen anderen Knoten in einem Netzwerk, unter der Bedingung, dass alle Kantengewichte nicht-negativ (0 oder größer) sind.
 
 Die Kernlogik des Dijkstra-Algorithmus besteht darin, den Prozess der „Auswahl des Knotens mit der kürzesten unbestätigten Entfernung aus der Menge der Knoten, deren kürzeste Entfernung vom Start bereits bestätigt ist, und der Aktualisierung der Kürzeste-Entfernung-Informationen der umliegenden Knoten über Routen, die durch diesen Knoten führen“ zu wiederholen. Durch die Verwendung einer Vorrangwarteschlange (Priority Queue) kann die Ausführungszeit erheblich verkürzt werden.
 
@@ -242,7 +242,7 @@ print(dijkstra(weighted_graph, 'A'))
 
 Stellen Sie sich die Notwendigkeit vor, alle Stützpunkte in einem riesigen Netzwerk mit den geringstmöglichen Gesamtkosten physisch zu verbinden. Beispielsweise beim Aufbau eines Stromnetzes zur Versorgung eines neuen Wohngebietes mit Elektrizität oder beim Verlegen von Glasfaserkabeln zwischen mehreren Städten erfordert die Situation eine Minimierung der Infrastrukturkosten.
 
-Auf diese Weise wird ein Teilgraph, der alle Knoten des Graphen umfasst, absolut keine Zyklen aufweist (d. h. eine Baumstruktur ist) und die Summe der Gewichte der verwendeten Kanten minimiert, als **Minimaler Spannbaum (Minimum Spanning Tree, MST)** bezeichnet.
+Auf diese Weise wird ein Teilgraph, der alle Knoten des Graphen umfasst, absolut keine Zyklen aufweist (d. h. eine Baumstruktur ist) und die Summe der Gewichte der verwendeten Kanten minimiert, als **Minimaler Spannbaum (Minimum Spanning [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), MST)** bezeichnet.
 
 Einer der repräsentativen Algorithmen, um diesen minimalen Spannbaum zu finden, ist der **Kruskal-Algorithmus**. Der Kruskal-Algorithmus ist ein typisches Beispiel für einen „Gierigen Algorithmus (Greedy Algorithm)“, der lokale optimale Lösungen akkumuliert und dabei äußerst einfachen und intuitiven Schritten folgt.
 
@@ -250,13 +250,13 @@ Einer der repräsentativen Algorithmen, um diesen minimalen Spannbaum zu finden,
 2.  Extrahieren Sie die Kanten nacheinander, beginnend mit der mit dem kleinsten Gewicht, und übernehmen Sie sie nur dann offiziell in den Spannbaum, wenn das Hinzufügen dieser Kante keinen „Zyklus (Schleife)“ bildet.
 3.  Beenden Sie den Algorithmus, wenn die Anzahl der in den Spannbaum übernommenen Kanten „Gesamtzahl der Knoten - 1“ erreicht.
 
-Eine spezielle Datenstruktur namens Disjunkte Mengen (Union-Find Tree) spielt eine aktive Rolle bei der schnellen Bestimmung, ob ein Zyklus gebildet wird.
+Eine spezielle Datenstruktur namens Disjunkte Mengen (Union-Find [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) spielt eine aktive Rolle bei der schnellen Bestimmung, ob ein Zyklus gebildet wird.
 
 ### 5.4. Netzwerkfluss und das Problem des maximalen Flusses
 
 In einem städtischen Wasserleitungsnetz oder den Backbone-Kommunikationsleitungen des Internets wird die Frage „Was ist die maximale Menge (an Wasser oder Datenpaketen), die gleichzeitig durch das gesamte System vom Startpunkt (Quelle) zum Endpunkt (Senke) fließen kann?“ als **Problem des maximalen Flusses (Maximum Flow Problem)** bezeichnet.
 
-Jede Kante (Rohr oder Kabel), aus der das Netzwerk besteht, hat eine streng definierte „Kapazität (Capacity)“, die die maximale Menge angibt, die pro Zeiteinheit fließen kann, und es ist physikalisch unmöglich, auf irgendeiner Route mehr als diese Kapazität fließen zu lassen. Dieses komplexe Problem kann mit Algorithmen wie dem Ford-Fulkerson-Algorithmus mathematisch genau gelöst werden, um die maximale Durchflussrate abzuleiten. Die Theorie des maximalen Flusses wird in erstaunlich vielen Bereichen angewendet, darunter bei der Modellierung und Linderung von Verkehrsstaus, der Beseitigung von Engpässen in Logistiknetzwerken und sogar bei der Objektextraktion (Graph Cuts) in der Bildverarbeitung.
+Jede Kante (Rohr oder Kabel), aus der das Netzwerk besteht, hat eine streng definierte „Kapazität (Capacity)“, die die maximale Menge angibt, die pro Zeiteinheit fließen kann, und es ist physikalisch unmöglich, auf irgendeiner Route mehr als diese Kapazität fließen zu lassen. Dieses komplexe Problem kann mit Algorithmen wie dem Ford-Fulkerson-Algorithmus mathematisch genau gelöst werden, um die maximale Durchflussrate abzuleiten. Die Theorie des maximalen Flusses wird in erstaunlich vielen Bereichen angewendet, darunter bei der Modellierung und Linderung von Verkehrsstaus, der Beseitigung von Engpässen in Logistiknetzwerken und sogar bei der Objektextraktion ([Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Cuts) in der Bildverarbeitung.
 
 ## 6. Bipartite Graphen und Matching-Probleme
 

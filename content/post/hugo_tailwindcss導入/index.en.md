@@ -80,7 +80,7 @@ To integrate Tailwind CSS into Hugo, you need to understand the asset processing
 
 PostCSS is a tool for transforming CSS using JavaScript plugins. Tailwind CSS itself actually operates as a PostCSS plugin.
 
-### AST (Abstract Syntax Tree) Transformation Mechanism by PostCSS
+### AST (Abstract Syntax [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) Transformation Mechanism by PostCSS
 
 Understanding how PostCSS processes CSS is highly useful for troubleshooting. The following Mermaid diagram shows the pipeline of how PostCSS reads a CSS file, transforms it through plugins, and outputs the final CSS.
 
@@ -93,7 +93,7 @@ flowchart TD
     E -->|"Stringifier"| F["Compiled & Optimized CSS"]
 ```
 
-1. **Parser**: Analyzes the inputted raw CSS string and converts it into an AST (Abstract Syntax Tree), a data structure that can be manipulated programmatically.
+1. **Parser**: Analyzes the inputted raw CSS string and converts it into an AST (Abstract Syntax [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)), a data structure that can be manipulated programmatically.
 2. **Plugins**:
    - **Tailwind CSS**: Scans template files (HTML or Markdown) and adds the used utility classes as nodes to the AST. It also expands the `@tailwind` directive.
    - **Autoprefixer**: References the `Can I Use` database and adds vendor prefixes (such as `-webkit-`, `-moz-`) to the AST properties as needed.

@@ -174,7 +174,7 @@ $$ P_{warm} \approx 1 - e^{-\lambda \cdot T_w} $$
 ### 5.2. デプロイパッケージの軽量化
 
 Lambdaは起動時にコードをS3からダウンロードします。したがって、パッケージサイズを小さく保つことが直結する最適化となります。
-不要な依存関係（DevDependencies等）を含めないことや、Webpack / esbuild などのバンドラーを用いてコードを最小化（Minify）およびツリーシェイキング（Tree-shaking）することが非常に重要です。
+不要な依存関係（DevDependencies等）を含めないことや、Webpack / esbuild などのバンドラーを用いてコードを最小化（Minify）およびツリーシェイキング（[Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-shaking）することが非常に重要です。
 
 ### 5.3. 初期化処理の最適化と遅延評価 (Lazy Initialization)
 

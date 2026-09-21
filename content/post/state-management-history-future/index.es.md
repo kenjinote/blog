@@ -417,7 +417,7 @@ Es decir, omite por completo la sobrecarga de calcular diferencias en el DOM Vir
 
 ### 10.3 El modelo matemático detrás de Signals
 
-Detrás de Signals se encuentra la teoría de "programación reactiva (Reactive Programming)", que modela las dependencias del estado y de la computación como un **grafo dirigido acíclico (Directed Acyclic Graph: DAG)**, utilizando la clasificación topológica del grafo para determinar eficientemente el orden de actualización.
+Detrás de Signals se encuentra la teoría de "programación reactiva (Reactive Programming)", que modela las dependencias del estado y de la computación como un **grafo dirigido acíclico (Directed Acyclic [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/): DAG)**, utilizando la clasificación topológica del grafo para determinar eficientemente el orden de actualización.
 
 Si un estado derivado (Computed) $ C $ depende de los Signals $ S_1, S_2 $, se forman las aristas $ S_1 \to C $, $ S_2 \to C $.
 Cuando se actualiza un valor, se sigue el grafo para evaluar únicamente los nodos necesarios (a través de una estrategia híbrida como Push / Pull, por ejemplo), evitando así el 'glitch' (el fenómeno por el cual una UI en estado intermedio e inconsistente se muestra temporalmente) y garantizando la consistencia topológica.

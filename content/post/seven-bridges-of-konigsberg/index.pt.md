@@ -51,7 +51,7 @@ A partir de um mapa detalhado da Königsberg real, ele ignorou completamente a f
 1. Representar as **massas de terra (ilhas e margens)** como meros "pontos" sem tamanho. Na terminologia moderna, isso é chamado de **vértice** (Vertex) ou **nó** (Node).
 2. Representar as **pontes** como "linhas" conectando os vértices. Isso é chamado de **aresta** (Edge) ou **ligação** (Link). A curvatura ou comprimento da linha não importa.
 
-Uma estrutura discreta representada dessa forma como um conjunto finito de vértices e arestas conectando-os é chamada de **grafo** (Graph) na matemática. Este foi precisamente o momento de nascimento do campo que hoje chamamos de "Teoria dos Grafos".
+Uma estrutura discreta representada dessa forma como um conjunto finito de vértices e arestas conectando-os é chamada de **grafo** ([Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) na matemática. Este foi precisamente o momento de nascimento do campo que hoje chamamos de "Teoria dos Grafos".
 
 O diagrama Mermaid a seguir mostra como o mapa geográfico da cidade de Königsberg foi convertido para uma representação gráfica abstrata.
 

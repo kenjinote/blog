@@ -112,7 +112,7 @@ C++で実装する場合、まず配列の二乗和をAVX2の `_mm256_fmadd_ps` 
 
 $$ \text{RoPE}(x, m) = \begin{pmatrix} x_{1} \cos(m\theta) - x_{2} \sin(m\theta) \\ x_{1} \sin(m\theta) + x_{2} \cos(m\theta) \end{pmatrix} $$
 
-ここで、$m$はトークンの絶対的な位置インデックス、$\theta$は事前に計算された基本周波数です。ggmlでは、推論グラフの構築中に `ggml_rope` オペレータを追加するだけで並列実行されます。
+ここで、$m$はトークンの絶対的な位置インデックス、$\theta$は事前に計算された基本周波数です。ggmlでは、推論[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)の構築中に `ggml_rope` オペレータを追加するだけで並列実行されます。
 
 ### 4.3 Grouped-Query Attention (GQA)
 
@@ -129,20 +129,20 @@ Feed-Forward Network (FFN) 層では、GELUの代わりにSwiGLUが用いられ�
 $$ \text{SwiGLU}(x) = \text{Swish}(x W_{\text{gate}}) \otimes (x W_{\text{up}}) $$
 $$ \text{Swish}(z) = z \cdot \sigma(z) = z \cdot \frac{1}{1 + e^{-z}} $$
 
-計算グラフでは `ggml_silu` オペレータと `ggml_mul` を組み合わせて表現します。
+計算[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)では `ggml_silu` オペレータと `ggml_mul` を組み合わせて表現します。
 
 ---
 
-## 5. ggmlによる計算グラフの構築と[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)
+## 5. ggmlによる計算[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)の構築と[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)
 
-ggmlは、推論のための静的な計算グラフを構築し、それを後から評価（evaluate）する「Define-and-Run」のアプローチを取ります。
+ggmlは、推論のための静的な計算[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)を構築し、それを後から評価（evaluate）する「Define-and-Run」のアプローチを取ります。
 
 ### 5.1 ggml_context とアリーナアロケータ
 
 ggmlの最もユニークな点は、推論ループ内で動的なメモリ確保（`malloc` や `new`）を一切行わない「アリーナアロケーション」です。
 初期化時に巨大な連続したメモリ領域（アリーナ）を確保し、`ggml_new_tensor` などを呼び出すたびに、この領域のポインタがインクリメントされます。推論の1ステップが完了したら、アロケーションポインタを初期位置にリセットするだけで、次の推論ステップのメモリ確保が即座に完了します。
 
-### 5.2 グラフ構築の具体例
+### 5.2 [グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)構築の具体例
 
 推論ステップごとに、以下のような計算グラフをメモリ上に組み立てます。
 

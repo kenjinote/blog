@@ -436,7 +436,7 @@ Write-Host "---------------------------------"
 Write-Host "所有儲存庫的更新處理已完成。" -ForegroundColor Green
 ```
 
-這個腳本在設計上，即使發生錯誤，也能透過 `try / catch` 和 `foreach` 迴圈繼續執行，而不會影響到下一個儲存庫的處理。此外，它利用了針對腳本處理設計的 `git status --porcelain` 選項，能確實判定工作樹（Working Tree）的乾淨程度。只要將此腳本放置在啟動資料夾中，或是註冊為使用者登入時執行的工作排程，當您開啟 PC 並去沖杯咖啡的空檔，所有的開發環境就能自動更新到最新狀態了。
+這個腳本在設計上，即使發生錯誤，也能透過 `try / catch` 和 `foreach` 迴圈繼續執行，而不會影響到下一個儲存庫的處理。此外，它利用了針對腳本處理設計的 `git status --porcelain` 選項，能確實判定工作樹（Working [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）的乾淨程度。只要將此腳本放置在啟動資料夾中，或是註冊為使用者登入時執行的工作排程，當您開啟 PC 並去沖杯咖啡的空檔，所有的開發環境就能自動更新到最新狀態了。
 
 ---
 

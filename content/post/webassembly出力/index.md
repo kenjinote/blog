@@ -293,7 +293,7 @@ graph TD
 
 **C++ / Emscripten を選ぶべきケース**:
 * 既存のC/C++ライブラリ（FFmpeg, OpenCV, SQLiteなど）をブラウザに移植したい場合。
-* OpenGL等のグラフィックスAPIをWebGLに変換する機能（EmscriptenのGLエミュレーション層）をそのまま活用したいゲーム移植プロジェクト。
+* OpenGL等の[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィックスAPIをWebGLに変換する機能（EmscriptenのGLエミュレーション層）をそのまま活用したいゲーム移植プロジェクト。
 * ファイルシステムのエミュレーション（MEMFS）など、仮想化されたOS機能が必要な場合。
 
 **Rust / wasm-pack を選ぶべきケース**:

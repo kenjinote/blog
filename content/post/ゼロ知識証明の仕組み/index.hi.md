@@ -131,7 +131,7 @@ zk-STARKs इलिप्टिक कर्व क्रिप्टोग्�
 
 गणना के सत्यापन को AIR (Algebraic Intermediate Representation) नामक प्रारूप में परिवर्तित किया जाता है, जिसके बाद एक-आयामी (1D) या बहु-आयामी (multidimensional) बहुपदों (polynomials) के गुणों का उपयोग करके सत्यापन किया जाता है। STARKs का मूल **FRI (Fast Reed-Solomon Interactive Oracle Proof of Proximity)** प्रोटोकॉल है।
 
-FRI प्रोटोकॉल एक ऐसी तकनीक है जो यह सत्यापित करती है कि "क्या कोई फलन (function) एक विशिष्ट डिग्री (degree) वाले बहुपद के काफी करीब (Proximity) है"। प्रोवर मर्कल ट्री (Merkle Tree) की पत्तियों (leaves) के रूप में बहुपद मानों को कमिट करता है (Polynomial Commitment)।
+FRI प्रोटोकॉल एक ऐसी तकनीक है जो यह सत्यापित करती है कि "क्या कोई फलन (function) एक विशिष्ट डिग्री (degree) वाले बहुपद के काफी करीब (Proximity) है"। प्रोवर मर्कल ट्री (Merkle [Tree](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) की पत्तियों (leaves) के रूप में बहुपद मानों को कमिट करता है (Polynomial Commitment)।
 
 ```mermaid
 graph TD

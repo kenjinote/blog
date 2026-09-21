@@ -338,7 +338,7 @@ Pelajaran terbesar yang diajarkan oleh **Masalah P vs NP** (dan teori kelengkapa
 2. **Beralih ke Relaksasi dan Aproksimasi**:
     - **Algoritma Aproksimasi**: Memecahkan dalam waktu polinomial dengan menjamin margin kesalahan dari solusi optimal berada dalam kisaran tertentu.
     - **Heuristik**: Mengadopsi metode seperti algoritma genetik atau *simulated annealing*, yang secara matematis tidak bergaransi tetapi secara empiris dapat dengan cepat memberikan "solusi yang cukup baik".
-    - **Pemrograman Dinamis (DP)**: Jika ada solusi yang bergantung pada ukuran numerik input (waktu polinomial semu) seperti pada Masalah Ransel, gunakan batasan inputnya.
+    - **Pemrograman Dinamis ([DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))**: Jika ada solusi yang bergantung pada ukuran numerik input (waktu polinomial semu) seperti pada Masalah Ransel, gunakan batasan inputnya.
     - **SAT Solver / MILP Solver**: Formulasikan dan lemparkan ke solver optimasi matematis umum yang berkembang pesat belakangan ini. Karena solver melakukan pemangkasan tingkat lanjut secara internal, ia sering kali dapat menghasilkan solusi eksak jika ukurannya dalam batas praktis.
 
 ```python

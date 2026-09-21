@@ -17,7 +17,7 @@ description: 'Список рекомендуемых расширений, ко
 | Управление вирт. машинами и контейнерами | [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft  | Поддерживает управление контейнерами Docker |
 | Управление кодом | GitHub Pull Requests | GitHub | Управляет Pull Requests из GitHub в VSCode |
 | Управление кодом | GitHub Copilot | GitHub | Поддерживает автодополнение кода с помощью ИИ |
-| Управление кодом | Git Graph | mhutchie | Графически отображает ветки и коммиты Git |
+| Управление кодом | Git [Graph](https://kenji.blog/ru/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) | mhutchie | Графически отображает ветки и коммиты Git |
 | Управление кодом | Git History | Don Jayamanne | Отображает историю Git |
 | Веб-разработка и браузер | Debugger for Firefox | Firefox DevTools | Позволяет использовать отладчик Firefox в VSCode |
 | Веб-разработка и браузер | Microsoft Edge Tool For VScode | Microsoft | Позволяет использовать инструменты разработчика Edge в VSCode |

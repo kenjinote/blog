@@ -57,7 +57,7 @@ Untuk mengatasi hal ini, model ekstensi berikut telah diusulkan:
 - **l-Keanekaragaman (l-diversity)**: Menjamin bahwa atribut sensitif di setiap kelas ekivalen memiliki setidaknya $l$ nilai berbeda.
 - **t-Kekedekatan (t-closeness)**: Memastikan bahwa jarak (seperti Earth Mover's Distance) antara distribusi atribut sensitif di setiap kelas ekivalen dan distribusi atribut sensitif di seluruh dataset kurang dari atau sama dengan ambang batas $t$.
 
-### 2.2 Privasi Diferensial (Differential Privacy: DP)
+### 2.2 Privasi Diferensial (Differential Privacy: [DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
 Mengatasi keterbatasan model k-anonimitas, "Privasi Diferensial" (Differential Privacy), yang diusulkan oleh Cynthia Dwork dan rekan-rekan pada tahun 2006, saat ini diadopsi secara luas sebagai standar privasi yang paling kuat dan ketat secara matematis. Raksasa teknologi seperti Apple, Google, dan Microsoft menerapkan $\epsilon$-Privasi Diferensial ini saat mengumpulkan data telemetri dan data statistik dari pengguna.
 

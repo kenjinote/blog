@@ -63,7 +63,7 @@ Misalnya, sisi yang menghubungkan simpul $u$ dan $v$ direpresentasikan sebagai $
 
 Graf diklasifikasikan secara luas menjadi dua jenis tergantung pada apakah sisinya memiliki arah.
 
-*   **Graf Tak Berarah (Undirected Graph)**: Graf di mana sisinya tidak memiliki arah. Digunakan saat hubungan selalu timbal balik dan dua arah, seperti jalur komunikasi, jalan dua arah, atau hubungan "teman" Facebook.
+*   **Graf Tak Berarah (Undirected [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**: Graf di mana sisinya tidak memiliki arah. Digunakan saat hubungan selalu timbal balik dan dua arah, seperti jalur komunikasi, jalan dua arah, atau hubungan "teman" Facebook.
 *   **Graf Berarah (Directed Graph)**: Graf di mana sisi memiliki arah. Digunakan untuk menyatakan hubungan satu arah, seperti aliran air, jalan satu arah, atau hubungan "mengikuti" (follow) Twitter (X). Dalam graf berarah, sisinya digambar dengan jelas sebagai panah.
 
 ```mermaid
@@ -83,7 +83,7 @@ graph LR
 
 ### 3.3. Graf Berbobot (Weighted Graphs)
 
-Saat memodelkan masalah dunia nyata, kita sering ingin mengekspresikan tidak hanya "apakah mereka terhubung" tetapi juga "kemudahan koneksi" atau "biaya". Dalam kasus seperti itu, digunakan **Graf Berbobot (Weighted Graph)**, di mana nilai numerik (bobot) ditetapkan ke setiap sisi. Bobot dapat mewakili jarak antar kota, waktu tunda komunikasi, atau biaya perjalanan.
+Saat memodelkan masalah dunia nyata, kita sering ingin mengekspresikan tidak hanya "apakah mereka terhubung" tetapi juga "kemudahan koneksi" atau "biaya". Dalam kasus seperti itu, digunakan **Graf Berbobot (Weighted [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**, di mana nilai numerik (bobot) ditetapkan ke setiap sisi. Bobot dapat mewakili jarak antar kota, waktu tunda komunikasi, atau biaya perjalanan.
 
 ### 3.4. Jalur (Paths) dan Siklus (Cycles)
 
@@ -138,7 +138,7 @@ Daftar ketetanggaan adalah metode yang memelihara "daftar simpul yang berdekatan
 
 Untuk memecahkan masalah pada graf secara efisien, banyak algoritma unggul telah dirancang sepanjang sejarah ilmu komputer. Di sini kami memperkenalkan beberapa algoritma representatif yang dianggap penting dalam rekayasa perangkat lunak modern.
 
-### 5.1. Pencarian Melebar-Pertama (BFS) dan Pencarian Mendalam-Pertama (DFS)
+### 5.1. Pencarian Melebar-Pertama ([BFS](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) dan Pencarian Mendalam-Pertama ([DFS](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 Algoritma paling mendasar untuk mengunjungi semua simpul dalam jaringan secara sistematis tanpa kelalaian adalah **Pencarian Melebar-Pertama (Breadth-First Search, BFS)** dan **Pencarian Mendalam-Pertama (Depth-First Search, DFS)**.
 
@@ -189,7 +189,7 @@ bfs(graph_data, 'A')
 
 Mencari rute tercepat ke tujuan pada aplikasi peta, apa yang beroperasi pada inti sistem adalah **Algoritma Jalur Terpendek**. Rute tersebut memiliki biaya (bobot) seperti "jarak" dan "waktu tempuh", dan tujuannya adalah menemukan jalur yang meminimalkan biaya kumulatif dari titik awal ke tujuan.
 
-Diciptakan oleh ilmuwan komputer Belanda Edsger W. Dijkstra pada tahun 1956, **Algoritma Dijkstra** merupakan algoritma yang sangat terkenal untuk menghitung secara efisien jalur terpendek dari satu sumber ke semua simpul lainnya di jaringan, di bawah syarat bahwa semua bobot sisi adalah non-negatif (0 atau lebih besar).
+Diciptakan oleh ilmuwan komputer Belanda Edsger W. [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) pada tahun 1956, **Algoritma Dijkstra** merupakan algoritma yang sangat terkenal untuk menghitung secara efisien jalur terpendek dari satu sumber ke semua simpul lainnya di jaringan, di bawah syarat bahwa semua bobot sisi adalah non-negatif (0 atau lebih besar).
 
 Logika inti dari algoritma Dijkstra adalah mengulangi proses "memilih simpul dengan jarak terpendek yang belum dikonfirmasi dari sekumpulan simpul yang jarak terpendeknya dari awal telah dikonfirmasi, dan memperbarui informasi jarak terpendek dari simpul-simpul di sekitarnya melalui rute yang melewati simpul tersebut". Dengan menggunakan Antrean Prioritas (Priority Queue), waktu eksekusi dapat dikurangi secara signifikan.
 
@@ -242,7 +242,7 @@ print(dijkstra(weighted_graph, 'A'))
 
 Bayangkan kebutuhan untuk menghubungkan secara fisik semua pangkalan di jaringan yang luas dengan total biaya serendah mungkin. Misalnya, ketika membangun jaringan listrik untuk mensuplai listrik ke daerah pemukiman baru, atau memasang kabel serat optik di antara beberapa kota, situasinya menuntut meminimalkan biaya pembangunan infrastruktur.
 
-Dengan cara ini, subgraf yang menyertakan semua simpul graf, sama sekali tidak memiliki siklus (yakni, struktur pohon), dan meminimalkan jumlah bobot tepi yang digunakan disebut **Pohon Rentang Minimum (Minimum Spanning Tree, MST)**.
+Dengan cara ini, subgraf yang menyertakan semua simpul graf, sama sekali tidak memiliki siklus (yakni, struktur pohon), dan meminimalkan jumlah bobot tepi yang digunakan disebut **Pohon Rentang Minimum (Minimum Spanning [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), MST)**.
 
 Salah satu algoritma representatif untuk menemukan pohon rentang minimum ini adalah **Algoritma Kruskal**. Algoritma Kruskal adalah contoh khas "Algoritma Serakah (Greedy Algorithm)" yang mengakumulasikan solusi optimal lokal, mengikuti langkah-langkah yang sangat sederhana dan intuitif.
 
@@ -260,7 +260,7 @@ Setiap sisi (pipa atau kabel) yang menyusun jaringan memiliki "Kapasitas (Capaci
 
 ## 6. Graf Bipartit dan Masalah Pencocokan (Matching)
 
-Menempati posisi unik dalam teori graf adalah **Graf Bipartit (Bipartite Graph)**. Graf bipartit adalah graf yang, ketika semua simpul dibagi menjadi dua kelompok (misalnya, kelompok $U$ dan kelompok $V$), setiap sisi selalu menghubungkan simpul di $U$ dan simpul di $V$, dan sama sekali tidak ada tepi yang menghubungkan simpul dalam grup yang sama.
+Menempati posisi unik dalam teori graf adalah **Graf Bipartit (Bipartite [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**. Graf bipartit adalah graf yang, ketika semua simpul dibagi menjadi dua kelompok (misalnya, kelompok $U$ dan kelompok $V$), setiap sisi selalu menghubungkan simpul di $U$ dan simpul di $V$, dan sama sekali tidak ada tepi yang menghubungkan simpul dalam grup yang sama.
 
 Graf bipartit ideal untuk memodelkan hubungan antara dua himpunan dengan properti berbeda, seperti "pencari kerja" dan "perusahaan perekrut", "siswa" dan "laboratorium", atau "taksi" dan "penumpang".
 

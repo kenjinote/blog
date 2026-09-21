@@ -80,7 +80,7 @@ Para integrar o Tailwind CSS ao Hugo, é necessário entender o pipeline de proc
 
 O PostCSS é uma ferramenta para transformar CSS usando plugins JavaScript. Na verdade, o próprio Tailwind CSS funciona como um plugin do PostCSS.
 
-### Mecanismo de Transformação de AST (Abstract Syntax Tree) pelo PostCSS
+### Mecanismo de Transformação de AST (Abstract Syntax [Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) pelo PostCSS
 
 Entender como o PostCSS processa o CSS é de grande ajuda ao solucionar problemas. O diagrama Mermaid abaixo ilustra o pipeline desde a leitura do arquivo CSS pelo PostCSS, sua transformação através de plugins, até a saída final do CSS.
 

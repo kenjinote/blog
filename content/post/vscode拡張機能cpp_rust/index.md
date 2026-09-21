@@ -224,7 +224,7 @@ reqwest = "0.11" # <- アップデートが必要な場合はワンクリック�
 
 システムプログラミングのプロジェクトは往々にして大規模であり、歴史の長いコードベースを扱うことが頻繁に発生します。「誰が、いつ、なぜこの難解なポインタ操作のコードを追加したのか？」を追跡することは、バグ修正において最も重要なステップの一つです。
 
-**`GitLens`** は、現在のカーソル位置にある行の `git blame` 情報をエディタ上にアノテーションとして薄く表示します。また、ファイル全体のコミット履歴をグラフィカルに探索する機能や、行単位での履歴（Line History）を辿る機能を備えています。
+**`GitLens`** は、現在のカーソル位置にある行の `git blame` 情報をエディタ上にアノテーションとして薄く表示します。また、ファイル全体のコミット履歴を[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィカルに探索する機能や、行単位での履歴（Line History）を辿る機能を備えています。
 
 [Rust](https://kenji.blog/p/webassembly-wasm-current-future/)の `unsafe` ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)やC++のトリッキーなキャスト処理に遭遇した際、そのコードがマージされた当時のPull Requestや詳細なコミットメッセージを即座に参照できることは、リバースエンジニアリングにおける強力な武器となります。
 

@@ -76,7 +76,7 @@ graph TD
 
 ローカルAI画像生成において、ハードウェアの選定は最も重要です。
 
-### 3.1 GPU（グラフィックボード）
+### 3.1 GPU（[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィックボード）
 AI処理の心臓部です。Windows環境でStable Diffusionを動かす場合、NVIDIA製のGPUが事実上の標準（デファクトスタンダード）です。AMDのRadeonでもROCmを利用して動かすことは可能ですが、Windows上での環境構築の難易度や、多くの拡張機能がCUDA（NVIDIAの並列コンピューティングアーキテクチャ）に依存していることを考慮すると、NVIDIA一択と言っても過言ではありません。
 
 *   **最低要件**: VRAM 6GB（GTX 1060 6GB / RTX 2060 など）。※ただし解像度や機能に大きな制限が出ます。

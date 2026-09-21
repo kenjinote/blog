@@ -19,8 +19,8 @@ Dans cet article, nous couvrirons de manière exhaustive les principaux algorith
 
 Avant d'étudier les algorithmes, il est important de comprendre les contraintes générales et les ordres de grandeur de la complexité temporelle pour les problèmes de graphes en programmation compétitive. Un graphe est représenté par son nombre de sommets $V$ (Vertices) et son nombre d'arêtes $E$ (Edges).
 
-*   $O(V + E)$ : Complexité requise pour des problèmes où $V, E \le 10^5 \sim 10^6$. Cela correspond au parcours en profondeur (DFS) et au parcours en largeur (BFS).
-*   $O((V + E) \log V)$ : Fréquent pour des problèmes où $V, E \le 10^5 \sim 2 \cdot 10^5$. C'est la complexité de l'algorithme de Dijkstra ou de Prim lorsqu'une file de priorité est utilisée.
+*   $O(V + E)$ : Complexité requise pour des problèmes où $V, E \le 10^5 \sim 10^6$. Cela correspond au parcours en profondeur ([DFS](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) et au parcours en largeur ([BFS](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
+*   $O((V + E) \log V)$ : Fréquent pour des problèmes où $V, E \le 10^5 \sim 2 \cdot 10^5$. C'est la complexité de l'algorithme de [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) ou de Prim lorsqu'une file de priorité est utilisée.
 *   $O(V^2)$ : Acceptable pour des graphes denses ($E \approx V^2$) où $V \le 2000 \sim 3000$.
 *   $O(V^3)$ : Pour des problèmes où $V \le 400 \sim 500$. L'algorithme de Floyd-Warshall en est un exemple représentatif.
 
@@ -32,9 +32,9 @@ En programmation compétitive, il est courant d'utiliser une **liste d'adjacence
 
 ### [Tri](https://kenji.blog/fr/p/sorting-algorithms/) topologique (Topological Sort)
 
-Le tri topologique est un algorithme qui aligne les sommets d'un graphe orienté acyclique (DAG : Directed Acyclic Graph) de sorte que chaque arête orientée aille d'un sommet précédent vers un sommet suivant. Il est utilisé pour résoudre les dépendances entre les tâches (par exemple : la tâche B ne peut commencer que lorsque la tâche A est terminée) ou pour déterminer l'ordre de calcul de la programmation dynamique (DP) sur un DAG.
+Le tri topologique est un algorithme qui aligne les sommets d'un graphe orienté acyclique (DAG : Directed Acyclic [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) de sorte que chaque arête orientée aille d'un sommet précédent vers un sommet suivant. Il est utilisé pour résoudre les dépendances entre les tâches (par exemple : la tâche B ne peut commencer que lorsque la tâche A est terminée) ou pour déterminer l'ordre de calcul de la programmation dynamique ([DP](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) sur un DAG.
 
-La complexité est de $O(V + E)$. Il existe deux implémentations : l'algorithme de Kahn (basé sur le parcours en largeur BFS en utilisant les degrés entrants) et celui basé sur le parcours en profondeur DFS avec post-ordre. Nous présenterons ici l'algorithme de Kahn, qui permet également de trouver facilement l'ordre topologique lexicographique minimal.
+La complexité est de $O(V + E)$. Il existe deux implémentations : l'algorithme de Kahn (basé sur le parcours en largeur [BFS](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) en utilisant les degrés entrants) et celui basé sur le parcours en profondeur [DFS](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) avec post-ordre. Nous présenterons ici l'algorithme de Kahn, qui permet également de trouver facilement l'ordre topologique lexicographique minimal.
 
 ```mermaid
 graph LR
@@ -104,7 +104,7 @@ Il s'agit du problème consistant à trouver le chemin le plus court depuis un s
 
 ### Algorithme de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/)
 
-L'algorithme de Dijkstra est un algorithme rapide de plus court chemin applicable lorsque **tous les poids des arêtes sont non négatifs**. Il est basé sur une approche gloutonne : « figer le sommet pour lequel la distance la plus courte est actuellement connue, et mettre à jour (relâcher) la distance vers les sommets adjacents à partir de ce sommet ».
+L'algorithme de [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) est un algorithme rapide de plus court chemin applicable lorsque **tous les poids des arêtes sont non négatifs**. Il est basé sur une approche gloutonne : « figer le sommet pour lequel la distance la plus courte est actuellement connue, et mettre à jour (relâcher) la distance vers les sommets adjacents à partir de ce sommet ».
 
 #### Formule de relâchement (Relaxation)
 Soit $s$ le sommet source, $d[u]$ la distance la plus courte jusqu'au sommet $u$, et $w(u, v)$ le poids de l'arête $(u, v)$.
@@ -174,7 +174,7 @@ L'instruction `if (dist[u] < d) continue;` est très importante. Dans l'algorith
 
 ### Algorithme de Bellman-Ford
 
-Si les poids des arêtes incluent des valeurs négatives, l'algorithme de Dijkstra ne peut pas déduire la bonne réponse. C'est là qu'intervient l'algorithme de Bellman-Ford. En répétant le processus de relâchement pour toutes les arêtes $V - 1$ fois, il calcule correctement le chemin le plus court même s'il y a des poids négatifs.
+Si les poids des arêtes incluent des valeurs négatives, l'algorithme de [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) ne peut pas déduire la bonne réponse. C'est là qu'intervient l'algorithme de Bellman-Ford. En répétant le processus de relâchement pour toutes les arêtes $V - 1$ fois, il calcule correctement le chemin le plus court même s'il y a des poids négatifs.
 
 Si une mise à jour se produit lors de la $V$-ème itération, cela signifie qu'il existe un **cycle négatif (Negative Cycle)**. En programmation compétitive, le problème "Détecter un cycle négatif" est très fréquent, et l'algorithme de Bellman-Ford est excellent pour cela.
 
@@ -230,7 +230,7 @@ pair<vector<long long>, bool> bellman_ford(int V, const vector<Edge>& edges, int
 
 ### Algorithme de Floyd-Warshall
 
-Il s'agit d'un algorithme permettant de trouver la plus courte distance entre toutes les paires de sommets d'un graphe. Il est basé sur la programmation dynamique (DP). Son attrait réside dans le fait qu'il est très concis et extrêmement facile à implémenter.
+Il s'agit d'un algorithme permettant de trouver la plus courte distance entre toutes les paires de sommets d'un graphe. Il est basé sur la programmation dynamique ([DP](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)). Son attrait réside dans le fait qu'il est très concis et extrêmement facile à implémenter.
 
 L'équation de transition d'état est la suivante. On choisit le plus court entre le chemin qui passe par le sommet $k$ et celui qui n'y passe pas :
 $$ d[i][j] = \min(d[i][j], d[i][k] + d[k][j]) $$
@@ -271,7 +271,7 @@ L'algorithme de Floyd-Warshall peut également détecter les cycles négatifs. A
 
 ---
 
-## 5. Arbre couvrant de poids minimum (MST : Minimum Spanning Tree)
+## 5. Arbre couvrant de poids minimum (MST : Minimum Spanning [Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 Dans un graphe non orienté connexe, on appelle **arbre couvrant de poids minimum (MST)** un arbre (sous-graphe sans cycle) reliant tous les sommets tel que la somme des poids de ses arêtes est minimale. Il est souvent demandé directement dans des problèmes de minimisation des coûts de construction de réseaux.
 
@@ -409,11 +409,11 @@ long long prim(int V, const vector<vector<Edge>>& graph) {
 
 Dans un graphe orienté, un ensemble de sommets qui peuvent s'atteindre mutuellement est appelé composante fortement connexe (SCC). Si l'on regroupe chaque composante fortement connexe d'un graphe orienté quelconque, l'ensemble devient toujours un DAG (graphe orienté acyclique). C'est ce qu'on appelle la **décomposition en composantes fortement connexes**. Il s'agit d'un prétraitement très important pour simplifier la structure du graphe et faciliter la résolution de problèmes.
 
-En programmation compétitive, cette méthode est souvent utilisée pour résoudre le problème 2-SAT ou pour contracter des graphes contenant des cycles en DAG afin d'appliquer la programmation dynamique (DP).
+En programmation compétitive, cette méthode est souvent utilisée pour résoudre le problème 2-SAT ou pour contracter des graphes contenant des cycles en DAG afin d'appliquer la programmation dynamique ([DP](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)).
 
 ### Algorithme de Kosaraju
 
-L'algorithme de Kosaraju est une méthode élégante et efficace qui permet de construire des SCC en n'effectuant que deux parcours en profondeur (DFS). Il fonctionne en temps linéaire avec une complexité de $O(V + E)$.
+L'algorithme de Kosaraju est une méthode élégante et efficace qui permet de construire des SCC en n'effectuant que deux parcours en profondeur ([DFS](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)). Il fonctionne en temps linéaire avec une complexité de $O(V + E)$.
 
 Étapes de l'algorithme :
 1. Effectuer un DFS sur le graphe d'origine et enregistrer les sommets dans un tableau dans l'ordre de post-visite (post-order).
@@ -504,7 +504,7 @@ Le tableau `comp` stocke l'ID de la SCC à laquelle appartient chaque sommet. Ce
 Dans cet article, nous avons passé en revue les algorithmes de graphes fréquemment rencontrés en programmation compétitive.
 Les clés pour s'améliorer sur les problèmes de graphes sont : **« implémenter l'algorithme à plusieurs reprises jusqu'à ce que cela devienne un réflexe » ** et ** « s'entraîner à réfléchir à quel type de graphe un problème peut être réduit (que représentent les sommets, que représentent les arêtes) »**.
 
-1. Tout d'abord, soyez capable d'écrire rapidement et sans erreur les algorithmes DFS / BFS.
+1. Tout d'abord, soyez capable d'écrire rapidement et sans erreur les algorithmes [DFS](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) / [BFS](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/).
 2. Ensuite, apprenez à coder de mémoire l'algorithme de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/) et l'algorithme de Kruskal (indispensable pour les rangs marron-vert sur AtCoder).
 3. Enfin, élargissez vos connaissances avec Bellman-Ford, Floyd-Warshall, le tri topologique et les SCC (ce qui constituera une arme pour les rangs cyan-bleu sur AtCoder).
 

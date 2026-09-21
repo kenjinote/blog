@@ -9,7 +9,7 @@ categories: ["tools-development-environment"]
 description: '想知道如何实现从C++向Microsoft Teams自动发送消息吗？本文将通俗易懂地讲解使用WinHTTP和Graph API的C++代码具体示例，以及必不可少的Azure应用注册和API认证步骤。'
 ---
 
-# 如何使用 C++ 向 Microsoft Teams 发送消息（WinHTTP + Graph API）
+# 如何使用 C++ 向 Microsoft Teams 发送消息（WinHTTP + [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API）
 
 想自动向 Microsoft Teams 聊天发送消息吗？  
 这时候就可以使用 **Microsoft Graph API** 。  
@@ -29,7 +29,7 @@ description: '想知道如何实现从C++向Microsoft Teams自动发送消息吗
 ### 2. 添加 API 权限
 
 1. 进入左侧菜单「API 权限」
-2. 在 **「Microsoft Graph」 ** > ** 「选择权限」 ** 中搜索以下作用域并点击 ** 「更新权限」**
+2. 在 **「Microsoft [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)」 ** > ** 「选择权限」 ** 中搜索以下作用域并点击 ** 「更新权限」**
 
 - Chat.ReadWrite
 - User.Read
@@ -77,7 +77,7 @@ curl -X POST ^
 }
 ```
 
-使用此 access_token 来调用 Microsoft Graph API。
+使用此 access_token 来调用 Microsoft [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API。
 
 ## 💬 向 Teams 聊天发布消息的 C++ 示例
 以下是使用 WinHTTP 向聊天发布消息的 C++ 示例。
@@ -170,7 +170,7 @@ curl -X GET ^
   - HTTPS 证书的验证
   - 增强错误处理
 - 频道发布请使用 `teams/{team-id}/channels/{channel-id}/messages`。
-- 发送附件需要多部分（multipart）处理或 Graph Drive API。
+- 发送附件需要多部分（multipart）处理或 [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Drive API。
 
 ## 总结
 
@@ -181,7 +181,7 @@ curl -X GET ^
 | Graph API | 与 Teams 交互的官方 API           |
 | 应用注册     | 在 Azure 上进行必要的认证手续              |
 | 访问令牌  | 通过 [OAuth](https://kenji.blog/zh-cn/p/oauth2-oidc-authentication-authorization-difference/)2 获取，并用于请求中        |
-| C++ 实现    | 使用 WinHTTP 调用 Graph API |
+| C++ 实现    | 使用 WinHTTP 调用 [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API |
 
 ## 🚀 后续步骤
 

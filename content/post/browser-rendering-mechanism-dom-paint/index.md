@@ -63,7 +63,7 @@ HTMLの解析は、W3C（現在はWHATWG）で定義されているHTMLパージ
 1.  **Conversion (変換)** : ネットワークから受け取った生データのバイト列を、指定された文字エンコーディング（UTF-8など）に基づいて個々の文字（Characters）に変換します。
 2.  **Tokenization (字句解析)** : 文字列をW3C HTML5標準で規定された様々な「トークン（Tokens）」に変換します。例えば、 `<html>` 、 `<body>` などの開始タグ、終了タグ、属性名と属性値などです。
 3.  **Lexing (構文解析)** : 生成されたトークンを、プロパティとルールを持つ「オブジェクト（Nodes）」に変換します。
-4.  **DOM Tree Construction (ツリー構築)** : 作成されたオブジェクトを、タグのネスト関係に基づいてツリー状のデータ構造にリンクさせます。これが **DOM (Document Object Model)** です。
+4.  **DOM [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Construction (ツリー構築)** : 作成されたオブジェクトを、タグのネスト関係に基づいてツリー状のデータ構造にリンクさせます。これが **DOM (Document Object Model)** です。
 
 ```mermaid
 sequenceDiagram
@@ -157,7 +157,7 @@ gantt
 
 ## 3. Style（スタイル計算）：Renderツリーの構築
 
-DOMツリーとCSSOMツリーが完成すると、ブラウザはそれらを組み合わせて **Renderツリー (Render Tree)** または **スタイルツリー (Style Tree)** を構築します。
+DOMツリーとCSSOMツリーが完成すると、ブラウザはそれらを組み合わせて **Renderツリー (Render [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** または **スタイルツリー (Style Tree)** を構築します。
 
 このフェーズでは、DOMツリーの各ノードに対して、CSSOMのどのスタイルルールが適用されるかを計算し、最終的な計算済みスタイル（Computed Style）を決定します。
 
@@ -269,7 +269,7 @@ for (let i = 0; i < elements.length; i++) {
 
 レイアウトフェーズによって、各要素のボックスの位置（X, Y座標）とサイズ（幅、高さ）が確定しました。しかし、まだ画面には何も描画されていません。次に行われるのが **Paint (ペイント)** フェーズです。
 
-Paintフェーズの目的は、レイアウトツリー（Layout Tree）を入力として受け取り、画面上のピクセルをどのように塗るかの手順（Paint Records）を作成し、最終的にラスタライズ（Rasterization）することです。
+Paintフェーズの目的は、レイアウトツリー（Layout [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）を入力として受け取り、画面上のピクセルをどのように塗るかの手順（Paint Records）を作成し、最終的にラスタライズ（Rasterization）することです。
 
 ### 5.1 ペイントの順序 (Stacking Context)
 
@@ -321,12 +321,12 @@ Paint Record は、「この座標に、この色で四角形を描く」「こ�
 
 ブラウザの内部では、複数のツリー構造が変換されていきます。
 
-1.  **DOM Tree**
+1.  **DOM [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
 2.  **Layout Tree (Render Tree)** : 視覚要素のジオメトリ情報
 3.  **Paint Tree (Layer Tree)** : スタッキングコンテキストなどに基づくレイヤーの階層構造
 4.  **Graphics Layer Tree** : 実際にGPUで合成される独立したレイヤー群
 
-特定のCSSプロパティを持つ要素は、ブラウザによって独立した「Graphics Layer（グラフィックスレイヤー）」に昇格（Promote）されます。
+特定のCSSプロパティを持つ要素は、ブラウザによって独立した「Graphics Layer（[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィックスレイヤー）」に昇格（Promote）されます。
 
 レイヤーが生成される主な条件（トリガー）は以下の通りです。
 

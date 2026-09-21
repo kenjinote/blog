@@ -25,7 +25,7 @@ description: '¡Imprescindible para quienes desean implementar publicaciones aut
 
 
 
-# Cómo publicar mensajes en Microsoft Teams desde C++ (WinHTTP + Graph API)
+# Cómo publicar mensajes en Microsoft Teams desde C++ (WinHTTP + [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API)
 
 ¿Quieres publicar mensajes automáticamente en el chat de Microsoft Teams?  
 Para eso puedes usar la **Microsoft Graph API**.  
@@ -45,7 +45,7 @@ Primero, para usar la Microsoft Graph API, debes registrar una aplicación en Az
 ### 2. Agregar permisos de API
 
 1. Ve al menú izquierdo "Permisos de API"
-2. En "**Microsoft Graph **" > "** Permisos delegados **" (o seleccionar permisos), busca los siguientes ámbitos (scopes) y haz clic en "** Actualizar permisos**" (o agregar permisos)
+2. En "**Microsoft [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) **" > "** Permisos delegados **" (o seleccionar permisos), busca los siguientes ámbitos (scopes) y haz clic en "** Actualizar permisos**" (o agregar permisos)
 
 - Chat.ReadWrite
 - User.Read
@@ -93,7 +93,7 @@ curl -X POST ^
 }
 ```
 
-Usaremos este access_token para llamar a la Microsoft Graph API.
+Usaremos este access_token para llamar a la Microsoft [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API.
 
 ## 💬 Ejemplo en C++ para publicar en el chat de Teams
 Aquí mostramos un ejemplo en C++ que usa WinHTTP para publicar en el chat.
@@ -186,7 +186,7 @@ curl -X GET ^
   - Verificación del certificado HTTPS
   - Mejora en el manejo de errores
 - Para publicaciones en canales se usa teams/{team-id}/channels/{channel-id}/messages.
-- Para enviar archivos adjuntos, se requiere procesamiento multiparte o la API de Graph Drive.
+- Para enviar archivos adjuntos, se requiere procesamiento multiparte o la API de [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Drive.
 
 ## Resumen
 
@@ -197,7 +197,7 @@ curl -X GET ^
 | Graph API | API oficial para interactuar con Teams |
 | Registro de aplicación | Procedimientos de autenticación necesarios en Azure |
 | Token de acceso | Obtenido a través de [OAuth](https://kenji.blog/es/p/oauth2-oidc-authentication-authorization-difference/)2 y usado para peticiones |
-| Implementación en C++ | Llama a la Graph API utilizando WinHTTP |
+| Implementación en C++ | Llama a la [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API utilizando WinHTTP |
 
 ## 🚀 Próximos pasos
 

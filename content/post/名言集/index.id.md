@@ -142,7 +142,7 @@ description: 'Kami akan memperkenalkan kutipan inspiratif pilihan dari tokoh sej
 
 > Kesederhanaan adalah prasyarat dari keandalan (Edsger W. [Dijkstra](https://kenji.blog/id/p/graph-theory-dijkstra-a-star/))
 
-> Ilmu komputer bukanlah tentang komputer, sama seperti astronomi bukan tentang teleskop (Edsger W. Dijkstra)
+> Ilmu komputer bukanlah tentang komputer, sama seperti astronomi bukan tentang teleskop (Edsger W. [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 > Hanya ada dua masalah sulit dalam ilmu komputer: pembatalan cache dan penamaan suatu hal (Phil Karlton)
 

@@ -57,7 +57,7 @@ k-익명성은 준식별자의 조합(동치류: Equivalence Class)이 반드시
 - **l-다양성 (l-diversity)**: 각 동치류에서 민감 속성이 최소한 $l$ 종류의 서로 다른 값을 가지도록 보장한다.
 - **t-근접성 (t-closeness)**: 각 동치류에서의 민감 속성 분포와 데이터셋 전체의 민감 속성 분포 간의 거리(Earth Mover's Distance 등)가 임계값 $t$ 이하가 되도록 한다.
 
-### 2.2 차분 프라이버시 (Differential Privacy: DP)
+### 2.2 차분 프라이버시 (Differential Privacy: [DP](https://kenji.blog/ko/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
 k-익명성 모델의 한계를 극복하고, 현재 가장 강력하며 수학적으로 엄밀한 프라이버시 기준으로 널리 채택되고 있는 것이 신시아 드워크(Cynthia Dwork) 등이 2006년에 제안한 '차분 프라이버시(Differential Privacy)'입니다. Apple, Google, Microsoft 등 거대 기술 기업들은 사용자로부터 원격 분석 데이터나 통계 데이터를 수집할 때 이 $\epsilon$-차분 프라이버시를 적용하고 있습니다.
 

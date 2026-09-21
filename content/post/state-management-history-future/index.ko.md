@@ -417,7 +417,7 @@ graph TD
 
 ### 10.3 Signals의 수리 모델
 
-Signals의 배경에 있는 것은 상태와 계산의 의존 관계를 **방향 비순환 그래프(Directed Acyclic Graph: DAG)** 로 모델링하고, 그래프의 위상 정렬(Topological Sort)을 이용해 효율적으로 업데이트 순서를 결정하는 '리액티브 프로그래밍' 이론입니다.
+Signals의 배경에 있는 것은 상태와 계산의 의존 관계를 **방향 비순환 그래프(Directed Acyclic [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/): DAG)** 로 모델링하고, 그래프의 위상 정렬(Topological Sort)을 이용해 효율적으로 업데이트 순서를 결정하는 '리액티브 프로그래밍' 이론입니다.
 
 어떤 파생 상태(Computed) $ C $ 가 Signal $ S_1, S_2 $ 에 의존하고 있는 경우, 엣지 $ S_1 \to C $, $ S_2 \to C $ 가 형성됩니다.
 값이 업데이트될 경우, 그래프를 따라 필요한 노드만을 평가(Push / Pull 하이브리드 전략 등)함으로써, 글리치(Glitch: 중간 상태의 불일치하는 UI가 잠깐 표시되는 현상)를 방지하고 위상적인 정합성을 보장합니다.

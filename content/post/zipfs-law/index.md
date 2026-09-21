@@ -60,7 +60,7 @@ $$
 \log f(r) = \log C - \alpha \log r
 $$
 
-これは、両対数グラフ（Log-Log Plot）上でプロットすると、傾きが $-\alpha$ の直線になることを意味しています。データセットが **[ジップの法則](https://kenji.blog/p/zipfs-law/)** に従っているかどうかを確認する最も簡単な方法は、両対数グラフを描いて直線になるかどうかを見ることです。直線であれば、その現象の背後には **べき乗則** （Power Law）が存在していると言えます。
+これは、両対数[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)（Log-Log Plot）上でプロットすると、傾きが $-\alpha$ の直線になることを意味しています。データセットが **[ジップの法則](https://kenji.blog/p/zipfs-law/)** に従っているかどうかを確認する最も簡単な方法は、両対数[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)を描いて直線になるかどうかを見ることです。直線であれば、その現象の背後には **べき乗則** （Power Law）が存在していると言えます。
 
 # 4. 現実世界における驚くべき実例
 
@@ -134,7 +134,7 @@ graph TD
 
 # 6. シミュレーションとPythonコード
 
-実際に Python を使って、テキストデータから **[ジップの法則](https://kenji.blog/p/zipfs-law/)** を確認するコードを書いてみましょう。以下のコードは、ランダムに生成されたテキスト、または既存のコーパスを用いて単語の頻度をカウントし、両対数グラフにプロットするものです。
+実際に Python を使って、テキストデータから **[ジップの法則](https://kenji.blog/p/zipfs-law/)** を確認するコードを書いてみましょう。以下のコードは、ランダムに生成されたテキスト、または既存のコーパスを用いて単語の頻度をカウントし、両対数[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)にプロットするものです。
 
 ```python
 import matplotlib.pyplot as plt

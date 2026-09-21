@@ -63,7 +63,7 @@ Por ejemplo, una arista que conecta el vértice $u$ y $v$ se representa como $e 
 
 Los grafos se clasifican ampliamente en dos tipos dependiendo de si las aristas tienen una dirección.
 
-*   **Grafo No Dirigido (Undirected Graph)**: Un grafo donde las aristas no tienen dirección. Se usa cuando la relación es siempre mutua y bidireccional, como líneas de comunicación, carreteras de doble sentido o las relaciones de "amigos" en Facebook.
+*   **Grafo No Dirigido (Undirected [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**: Un grafo donde las aristas no tienen dirección. Se usa cuando la relación es siempre mutua y bidireccional, como líneas de comunicación, carreteras de doble sentido o las relaciones de "amigos" en Facebook.
 *   **Grafo Dirigido (Directed Graph)**: Un grafo donde las aristas tienen una dirección. Se usa para expresar relaciones unidireccionales, como el flujo de agua, calles de un solo sentido o las relaciones de "seguir" en Twitter (X). En los grafos dirigidos, las aristas se dibujan claramente como flechas.
 
 ```mermaid
@@ -83,7 +83,7 @@ graph LR
 
 ### 3.3. Grafos Ponderados
 
-Al modelar problemas del mundo real, a menudo queremos expresar no solo "si están conectados" sino también la "facilidad de conexión" o el "costo". En tales casos, se utiliza un **Grafo Ponderado (Weighted Graph)**, donde se asigna un valor numérico (peso) a cada arista. El peso puede representar la distancia entre ciudades, el tiempo de retraso en la comunicación o el costo de viaje.
+Al modelar problemas del mundo real, a menudo queremos expresar no solo "si están conectados" sino también la "facilidad de conexión" o el "costo". En tales casos, se utiliza un **Grafo Ponderado (Weighted [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**, donde se asigna un valor numérico (peso) a cada arista. El peso puede representar la distancia entre ciudades, el tiempo de retraso en la comunicación o el costo de viaje.
 
 ### 3.4. Caminos y Ciclos
 
@@ -138,7 +138,7 @@ Una lista de adyacencia es un método que mantiene una "lista de vértices adyac
 
 Para resolver problemas en grafos de manera eficiente, se han diseñado muchos algoritmos excelentes a lo largo de la historia de las ciencias de la computación. Aquí presentamos algunos algoritmos representativos que se consideran esenciales en la ingeniería de software moderna.
 
-### 5.1. Búsqueda en Anchura (BFS) y Búsqueda en Profundidad (DFS)
+### 5.1. Búsqueda en Anchura ([BFS](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) y Búsqueda en Profundidad ([DFS](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 Los algoritmos más fundamentales para visitar sistemáticamente todos los vértices en una red sin omisión son la **Búsqueda en Anchura (Breadth-First Search, BFS)** y la **Búsqueda en Profundidad (Depth-First Search, DFS)**.
 
@@ -189,7 +189,7 @@ bfs(graph_data, 'A')
 
 Al buscar la ruta más rápida hacia un destino en una aplicación de mapas, lo que opera en el núcleo del sistema es un **Algoritmo del Camino Más Corto**. La ruta tiene costos (pesos) como "distancia" y "tiempo de viaje", y el objetivo es encontrar el camino que minimice el costo acumulado desde el punto de inicio hasta el destino.
 
-Inventado por el científico de la computación holandés Edsger W. Dijkstra en 1956, el **Algoritmo de Dijkstra** es un algoritmo extremadamente famoso para calcular eficientemente el camino más corto desde una única fuente hacia todos los demás vértices en una red, bajo la condición de que todos los pesos de las aristas sean no negativos (0 o mayores).
+Inventado por el científico de la computación holandés Edsger W. [Dijkstra](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) en 1956, el **Algoritmo de Dijkstra** es un algoritmo extremadamente famoso para calcular eficientemente el camino más corto desde una única fuente hacia todos los demás vértices en una red, bajo la condición de que todos los pesos de las aristas sean no negativos (0 o mayores).
 
 La lógica central del algoritmo de Dijkstra es repetir el proceso de "seleccionar el vértice con la distancia no confirmada más corta del conjunto de vértices cuya distancia más corta desde el inicio ya está confirmada, y actualizar la información de distancia más corta de los vértices circundantes a través de rutas que pasan por ese vértice". Al usar una Cola de Prioridad (Priority Queue), el tiempo de ejecución se puede reducir significativamente.
 
@@ -242,7 +242,7 @@ print(dijkstra(weighted_graph, 'A'))
 
 Imagine la necesidad de conectar físicamente todas las bases en una vasta red con el costo total más bajo posible. Por ejemplo, al construir una red eléctrica para suministrar electricidad a una nueva zona residencial, o tender cables de fibra óptica entre múltiples ciudades, la situación exige minimizar el costo de construcción de la infraestructura.
 
-De esta forma, un subgrafo que incluye todos los vértices del grafo, no tiene absolutamente ningún ciclo (es decir, una estructura de árbol), y minimiza la suma de los pesos de las aristas utilizadas se denomina **Árbol de Expansión Mínima (Minimum Spanning Tree, MST)**.
+De esta forma, un subgrafo que incluye todos los vértices del grafo, no tiene absolutamente ningún ciclo (es decir, una estructura de árbol), y minimiza la suma de los pesos de las aristas utilizadas se denomina **Árbol de Expansión Mínima (Minimum Spanning [Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), MST)**.
 
 Uno de los algoritmos representativos para encontrar este árbol de expansión mínima es el **Algoritmo de Kruskal**. El algoritmo de Kruskal es un ejemplo típico de un "Algoritmo Voraz (Greedy Algorithm)" que acumula soluciones óptimas locales, siguiendo pasos extremadamente simples e intuitivos.
 
@@ -260,7 +260,7 @@ Cada arista (tubería o cable) que compone la red tiene una "Capacidad (Capacity
 
 ## 6. Grafos Bipartitos y Problemas de Emparejamiento
 
-Ocupando una posición única dentro de la teoría de grafos está el **Grafo Bipartito (Bipartite Graph)**. Un grafo bipartito es un grafo en el que, cuando todos los vértices se dividen en dos grupos (por ejemplo, el grupo $U$ y el grupo $V$), toda arista siempre conecta un vértice en $U$ y un vértice en $V$, y no hay en absoluto aristas que conecten vértices dentro del mismo grupo.
+Ocupando una posición única dentro de la teoría de grafos está el **Grafo Bipartito (Bipartite [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**. Un grafo bipartito es un grafo en el que, cuando todos los vértices se dividen en dos grupos (por ejemplo, el grupo $U$ y el grupo $V$), toda arista siempre conecta un vértice en $U$ y un vértice en $V$, y no hay en absoluto aristas que conecten vértices dentro del mismo grupo.
 
 Los grafos bipartitos son ideales para modelar relaciones entre dos conjuntos con propiedades diferentes, como "buscadores de empleo" y "empresas reclutadoras", "estudiantes" y "laboratorios", o "taxis" y "pasajeros".
 

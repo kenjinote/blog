@@ -74,7 +74,7 @@ Muitos dos algoritmos atualmente sendo padronizados pelo NIST (como ML-KEM e ML-
 A criptografia baseada em hash é um algoritmo PQC especializado em assinaturas digitais. A base de sua segurança depende exclusivamente da resistência à colisão e da unidirecionalidade de "funções de hash criptográficas" seguras, como SHA-2 e SHA-3.
 
 **Visão geral do mecanismo:** 
-Ela tem como ponto de partida um esquema de assinatura descartável de uso único (assinatura de uso único) chamado "Assinatura Lamport (Lamport Signature)". Ao agrupar isso em um formato de dados em estrutura de árvore chamado "Árvore de Merkle (Merkle Tree)", possibilita múltiplas assinaturas com um único par de chaves.
+Ela tem como ponto de partida um esquema de assinatura descartável de uso único (assinatura de uso único) chamado "Assinatura Lamport (Lamport Signature)". Ao agrupar isso em um formato de dados em estrutura de árvore chamado "Árvore de Merkle (Merkle [Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))", possibilita múltiplas assinaturas com um único par de chaves.
 
 **Vantagens:** 
 - A base de segurança é extremamente robusta, com a forte prova de que "é segura desde que a função de hash seja segura".

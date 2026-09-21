@@ -110,7 +110,7 @@ It is called "naive" because it places a strong assumption that each feature (wo
 
 ### 2. Bayesian Networks
 
-In systems where multiple variables are intricately intertwined, Bayesian Networks express the dependencies between variables as a graph structure (Directed Acyclic Graph) to perform reasoning under uncertainty.
+In systems where multiple variables are intricately intertwined, Bayesian Networks express the dependencies between variables as a graph structure (Directed Acyclic [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) to perform reasoning under uncertainty.
 
 For instance, in medical diagnostic AI, the probabilistic influence from "patient's age", "lifestyle habits", and "genetic factors" on a "specific disease" is modeled, and the influence from that disease to "appearing symptoms" is linked. Every time a new symptom (evidence) is input, the probabilities across the entire network are updated according to [Bayes' Theorem](https://kenji.blog/en/p/bayes-theorem/), inferring the most likely disease name. This is utilized in a wide variety of fields, such as situation judgment in self-driving cars and financial market prediction.
 

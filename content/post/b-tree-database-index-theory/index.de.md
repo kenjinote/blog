@@ -10,7 +10,7 @@ tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 
 ## 1. Die Begegnung von Datenbankindizes und B-Bäumen
 
-In modernen Systemen bilden Datenbanken das Fundament von Anwendungen. Die Fähigkeit, aus Millionen oder Milliarden von Datensätzen in Millisekunden die gewünschten Daten zu suchen und auszugeben, ist eine der wichtigsten Funktionen eines Datenbankmanagementsystems (DBMS). Diese erstaunliche Suchgeschwindigkeit wird durch den **Index** unterstützt, und die dahinter stehende Datenstruktur ist der **B-Baum** (B-Tree) und dessen Ableitung, der **B+-Baum** (B+Tree).
+In modernen Systemen bilden Datenbanken das Fundament von Anwendungen. Die Fähigkeit, aus Millionen oder Milliarden von Datensätzen in Millisekunden die gewünschten Daten zu suchen und auszugeben, ist eine der wichtigsten Funktionen eines Datenbankmanagementsystems (DBMS). Diese erstaunliche Suchgeschwindigkeit wird durch den **Index** unterstützt, und die dahinter stehende Datenstruktur ist der **B-Baum** (B-[Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) und dessen Ableitung, der **B+-Baum** (B+Tree).
 
 In diesem Artikel befassen wir uns eingehend damit, warum relationale Datenbanken die **B-Baum**-Familie anstelle von binären Suchbäumen oder Hash-Tabellen wählen. Dabei beleuchten wir die Eigenschaften von Festplatten-I/O, die Theorie von Datenstrukturen, mathematische Analysen und tatsächliche Code-Implementierungen.
 
@@ -26,7 +26,7 @@ Wenn eine Datenbank in einem Index sucht, ist die Minimierung der Anzahl der Lad
 
 ### 2.2 Die Grenzen des binären Suchbaums (BST)
 
-Bei der Suche im Arbeitsspeicher ermöglichen balancierte binäre Suchbäume wie der **binäre Suchbaum** (Binary Search Tree: BST) oder der **Rot-Schwarz-Baum** (Red-Black Tree) eine schnelle Suche mit einer Zeitkomplexität von $ O(\log N) $. Wenn diese jedoch direkt auf eine Datenbank auf der Festplatte angewendet werden, treten schwerwiegende Probleme auf.
+Bei der Suche im Arbeitsspeicher ermöglichen balancierte binäre Suchbäume wie der **binäre Suchbaum** ([Binary Search](https://kenji.blog/de/p/search-algorithms-linear-binary-hash-table-principles/) Tree: BST) oder der **Rot-Schwarz-Baum** (Red-Black Tree) eine schnelle Suche mit einer Zeitkomplexität von $ O(\log N) $. Wenn diese jedoch direkt auf eine Datenbank auf der Festplatte angewendet werden, treten schwerwiegende Probleme auf.
 
 Ein Binärbaum hat maximal zwei untergeordnete Knoten (Kinder) pro Knoten. Wenn die Anzahl der Elemente $ N $ zunimmt, wächst die Höhe des Baumes $ h $ proportional zu $ \log_2 N $. Zum Beispiel bei $ N = 1.000.000 $ beträgt die Höhe des Baumes etwa 20. Nimmt man an, dass sich jeder Knoten auf einer anderen Festplattenseite befindet, kommt es im schlimmsten Fall zu 20 zufälligen Festplatten-I/Os. Dies ist eine fatale Verzögerung für eine Datenbank.
 
@@ -73,7 +73,7 @@ Dies untermauert mathematisch, dass der **B-Baum** bei der Suche in sehr großen
 
 ## 4. Der Datenbank-Standard: Die Evolution zum B+-Baum
 
-In tatsächlichen [RDBMS](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/) (wie MySQL InnoDB oder PostgreSQL) wird eine verbesserte Version des B-Baums, der **B+-Baum** (B+Tree), verwendet.
+In tatsächlichen [RDBMS](https://kenji.blog/de/p/rdbms-transaction-acid-isolation-level-lock/) (wie MySQL InnoDB oder PostgreSQL) wird eine verbesserte Version des B-Baums, der **B+-Baum** (B+[Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)), verwendet.
 
 ### 4.1 Unterschiede zwischen B-Baum und B+-Baum
 
@@ -217,6 +217,6 @@ Wie aus dieser Implementierung ersichtlich ist, wird der Baum beim Einfügen in 
 
 Der **B-Baum** und der **B+-Baum** sind Meisterwerke von Datenstrukturen, die darauf ausgelegt sind, die I/O-Kosten in plattenbasierten Systemen zu minimieren. Durch die Kombination einer flachen Baumstruktur aufgrund eines hohen Verzweigungsgrades, der Optimierung für sequenziellen Zugriff und mathematischer Algorithmen verschmelzen die physikalischen Eigenschaften von Geräten perfekt miteinander.
 
-In den letzten Jahren sind mit der Verbreitung von SSDs neue Datenstrukturen wie der **LSM-Baum** (Log-Structured Merge-Tree) entstanden, um die Schreibverstärkung (Write Amplification) zu unterdrücken. Doch aufgrund der Ausgewogenheit zwischen Leseleistung und Bereichssuchen sowie der Stabilität bei der Transaktionsverarbeitung bleibt der **B+-Baum** der absolute König unter den relationalen Datenbanken.
+In den letzten Jahren sind mit der Verbreitung von SSDs neue Datenstrukturen wie der **LSM-Baum** (Log-Structured Merge-[Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) entstanden, um die Schreibverstärkung (Write Amplification) zu unterdrücken. Doch aufgrund der Ausgewogenheit zwischen Leseleistung und Bereichssuchen sowie der Stabilität bei der Transaktionsverarbeitung bleibt der **B+-Baum** der absolute König unter den relationalen Datenbanken.
 
 Das Verständnis dessen, was im Inneren einer Datenbank vor sich geht, steht in direktem Zusammenhang mit der Abfrageoptimierung (Query Optimization) und dem richtigen Index-Design. Wir hoffen, dass Sie die in diesem Artikel erläuterte Theorie als Grundlage nutzen, um das Verhalten von Indizes bei Ihren alltäglichen Datenbankoperationen zu beobachten.

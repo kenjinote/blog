@@ -521,7 +521,7 @@ It boils down to this. Python's `.sort()` and C++'s `std::sort` are implemented 
 
 However, then why is it necessary to learn sorting algorithms?
 
-1. **Understanding of basic concepts**: Concepts such as complexity (Big O Notation), In-place/Out-of-place, and stability are the foundations of all algorithm design and data structure design, not limited to sorting.
+1. **Understanding of basic concepts**: Concepts such as complexity ([Big O](https://kenji.blog/en/p/time-space-complexity-big-o-notation-examples/) Notation), In-place/Out-of-place, and stability are the foundations of all algorithm design and data structure design, not limited to sorting.
 2. **Systems under special constraints**: In environments with extremely limited memory, such as embedded systems, you might need to implement your own heap sort with $O(1)$ space or an In-place quick sort.
 3. **Utilizing the properties of data**: When sorting "1 million pieces of data whose values are restricted to the range of 1 to 100", implementing a counting sort ($O(n)$) will be overwhelmingly faster than using the standard Timsort ($O(n \log n)$).
 

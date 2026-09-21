@@ -109,7 +109,7 @@ Terraform 的核心就在於這種 **宣告式 (Declarative)** 的方法。為�
 
 在程式型的指令碼中，人類必須精確地撰寫建立資源的順序。例如，建立 VPC 之後建立子網路，然後將 EC2 配置在該子網路內這樣的步驟。
 
-在 Terraform 中，從程式碼內出現的參照關係（例如在子網路的設定中參照 `aws_vpc.main.id`），Terraform Core 會自動建構 **相依性圖表 (Dependency Graph)** 。
+在 Terraform 中，從程式碼內出現的參照關係（例如在子網路的設定中參照 `aws_vpc.main.id`），Terraform Core 會自動建構 **相依性圖表 (Dependency [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** 。
 
 ```mermaid
 graph TD

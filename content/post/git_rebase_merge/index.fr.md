@@ -25,7 +25,7 @@ Pour comprendre comment Git intègre l'historique, il faut d'abord savoir commen
 
 Chaque commit dans Git est identifié de manière unique par un nombre hexadécimal de 40 caractères calculé à partir de son contenu à l'aide de la fonction de hachage SHA-1 (Secure Hash Algorithm 1). L'objet commit est composé des éléments suivants :
 
-1. **Pointeur vers l'objet Tree** : Un instantané de la structure des répertoires et des fichiers (Blob) à ce moment-là.
+1. **Pointeur vers l'objet [Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** : Un instantané de la structure des répertoires et des fichiers (Blob) à ce moment-là.
 2. **Pointeurs vers les commits parents** : Les valeurs de hachage d'un ou plusieurs commits parents (le premier commit n'a pas de parent, et un commit de fusion a deux parents ou plus).
 3. **Informations de l'auteur (Author)** : La personne qui a écrit le code et la date/heure.
 4. **Informations du validateur (Committer)** : La personne qui a créé/appliqué le commit et la date/heure.
@@ -51,7 +51,7 @@ Cette probabilité est extrêmement faible et, en pratique, il est presque impos
 
 # 3. Théorie des graphes et DAG : Modèle mathématique de l'historique Git
 
-L'historique des commits de Git est modélisé comme un "graphe orienté acyclique" (Directed Acyclic Graph, DAG) en théorie des graphes.
+L'historique des commits de Git est modélisé comme un "graphe orienté acyclique" (Directed Acyclic [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), DAG) en théorie des graphes.
 
 ## 3.1 Qu'est-ce qu'un DAG (graphe orienté acyclique) ?
 

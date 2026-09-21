@@ -110,7 +110,7 @@ the left, we value the items on the right more.
 - PESTLE (Political, Economic, Social, Technological, Legal, Environmental)
 - VUCA (Volatility, Uncertainty, Complexity, Ambiguity)
 - Monte Carlo Method
-- Decision Tree Analysis
+- Decision [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Analysis
 - Expected Monetary Value (EMV)
 - Net Promoter Score
 - Cost-Benefit Analysis

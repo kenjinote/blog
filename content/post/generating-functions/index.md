@@ -63,7 +63,7 @@ $$
 f(x) = \frac{1}{1-x} \cdot \frac{1}{1-x^2} \cdot \frac{1}{1-x^5}
 $$
 
-つまり、複雑な漸化式やループ計算を使わずに、この関数のテイラー展開の係数を求めるだけで、任意の $n$ に対する組合せの数がわかるのです。プログラミングの分野でも、この考え方は動的計画法 (DP) の基礎となる重要な概念です。
+つまり、複雑な漸化式やループ計算を使わずに、この関数のテイラー展開の係数を求めるだけで、任意の $n$ に対する組合せの数がわかるのです。プログラミングの分野でも、この考え方は[動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) の基礎となる重要な概念です。
 
 ### 畳み込みと多項式の積
 
@@ -160,7 +160,7 @@ $$
 現代の計算機科学や競技プログラミングにおいて、[母関数](https://kenji.blog/p/generating-functions/)は **形式的べき級数** (Formal Power Series, FPS) として実装されます。
 FPS では、$x$ に具体的な数値を代入して収束するかどうか（解析的な性質）は気にせず、単に「係数の列」を多項式として代数的に操作することに主眼を置きます。
 
-高速フーリエ変換 (FFT) や数論変換 (NTT) を用いることで、2つの $N$ 次の多項式の積（つまり、長さ $N$ の数列の畳み込み）を $\mathcal{O}(N \log N)$ の計算量で求めることができます。これにより、動的計画法で $\mathcal{O}(N^2)$ かかっていた計算を劇的に高速化することが可能になります。
+高速フーリエ変換 (FFT) や数論変換 (NTT) を用いることで、2つの $N$ 次の多項式の積（つまり、長さ $N$ の数列の畳み込み）を $\mathcal{O}(N \log N)$ の計算量で求めることができます。これにより、[動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)で $\mathcal{O}(N^2)$ かかっていた計算を劇的に高速化することが可能になります。
 
 ## 6. まとめ
 

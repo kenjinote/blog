@@ -106,7 +106,7 @@ graph TD
     K -. Auto-regressive loop .-> D
 ```
 
-テキスト生成は、1つのトークンが出力されるたびに、それが次の入力として KV Cache に追加され、再び計算グラフを通過する自己回帰的なループになっています。
+テキスト生成は、1つのトークンが出力されるたびに、それが次の入力として KV Cache に追加され、再び計算[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)を通過する自己回帰的なループになっています。
 
 ---
 

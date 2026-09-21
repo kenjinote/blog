@@ -306,7 +306,7 @@ Windows AI APIやDirectMLを活用して最上級のAIアプリケーション�
 ### 7.1 モデルの量子化 (Quantization) と Olive Toolkit
 NPUの真の力を発揮させるには、AIモデルの重みとアクティベーションをFP32（単精度浮動小数点）からINT8またはINT4へと **量子化（Quantization）** することが絶対条件です。NPUのアーキテクチャは整数演算に特化しており、FP32と比較してINT8では理論上4倍のスループットと大幅な省電力を実現します。
 
-Microsoftが提供する `Olive (ONNX Live)` ツールチェーンを使用することで、PyTorch等のモデルをWindows環境向けに自動最適化できます。Oliveは、Transformerモデルに対する特殊なアテンション最適化や、ハードウェアごとのグラフコンパイルを強力に支援します。
+Microsoftが提供する `Olive (ONNX Live)` ツールチェーンを使用することで、PyTorch等のモデルをWindows環境向けに自動最適化できます。Oliveは、Transformerモデルに対する特殊なアテンション最適化や、ハードウェアごとの[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)コンパイルを強力に支援します。
 
 ### 7.2 バッチ処理 vs 対話型ストリーミングのトレードオフ
 API呼び出しにおいて、複数の推論リクエストをまとめてバッチ処理することで、NPUの利用効率（Compute Utilization）を高めることができます。しかし、チャットボットのような対話型UIの場合、スループットよりも最初のトークンが表示されるまでの時間（TTFT: Time To First Token）がユーザー体験（UX）を決定づけます。

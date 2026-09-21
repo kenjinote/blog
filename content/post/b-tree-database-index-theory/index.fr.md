@@ -10,7 +10,7 @@ tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 
 ## 1. La rencontre entre les index de base de données et les arbres B
 
-Dans les systèmes modernes, la base de données constitue le cœur des applications. La capacité de rechercher et de renvoyer les données souhaitées parmi des millions, voire des centaines de millions d'enregistrements en quelques millisecondes est l'une des fonctions les plus importantes d'un système de gestion de base de données (SGBD). Ce qui permet cette vitesse de recherche fulgurante, c'est l' **index** , et la structure de données qui le sous-tend est l' **arbre B** (B-Tree) ainsi que son dérivé, l' **arbre B+** (B+Tree).
+Dans les systèmes modernes, la base de données constitue le cœur des applications. La capacité de rechercher et de renvoyer les données souhaitées parmi des millions, voire des centaines de millions d'enregistrements en quelques millisecondes est l'une des fonctions les plus importantes d'un système de gestion de base de données (SGBD). Ce qui permet cette vitesse de recherche fulgurante, c'est l' **index** , et la structure de données qui le sous-tend est l' **arbre B** (B-[Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) ainsi que son dérivé, l' **arbre B+** (B+Tree).
 
 Dans cet article, nous explorerons en profondeur pourquoi les bases de données relationnelles choisissent la famille des **arbres B** plutôt que les arbres binaires de recherche ou les tables de hachage, en examinant la nature des E/S disque, la théorie des structures de données, l'analyse mathématique, et des implémentations de code réelles.
 
@@ -26,7 +26,7 @@ Lorsqu'une base de données effectue une recherche dans un index, la réduction 
 
 ### 2.2 Les limites des arbres binaires de recherche (BST)
 
-Pour les recherches en mémoire, les arbres binaires de recherche équilibrés comme l' **arbre binaire de recherche** (Binary Search Tree : BST) ou l' **arbre rouge-noir** (Red-Black Tree) permettent une recherche rapide avec une complexité de $ O(\log N) $ . Cependant, si on les applique tels quels à une base de données sur disque, de graves problèmes surviennent.
+Pour les recherches en mémoire, les arbres binaires de recherche équilibrés comme l' **arbre binaire de recherche** ([Binary Search](https://kenji.blog/fr/p/search-algorithms-linear-binary-hash-table-principles/) Tree : BST) ou l' **arbre rouge-noir** (Red-Black Tree) permettent une recherche rapide avec une complexité de $ O(\log N) $ . Cependant, si on les applique tels quels à une base de données sur disque, de graves problèmes surviennent.
 
 Dans un arbre binaire, un nœud a au maximum deux nœuds enfants. Lorsque le nombre d'éléments $ N $ augmente, la hauteur de l'arbre $ h $ croît proportionnellement à $ \log_2 N $ . Par exemple, si $ N = 1,000,000 $ , la hauteur de l'arbre est d'environ 20. En supposant que chaque nœud est placé sur une page de disque différente, cela générerait au pire 20 E/S disque aléatoires. Il s'agit d'un délai fatal pour une base de données.
 
@@ -217,6 +217,6 @@ Comme on peut le voir dans cette implémentation, l'insertion dans un arbre B ma
 
 L' **arbre B** et l' **arbre B+** sont des chefs-d'œuvre de structures de données conçus dans le but de minimiser les coûts d'E/S dans les systèmes basés sur disques. Les caractéristiques des dispositifs physiques et les algorithmes mathématiques sont parfaitement fusionnés, tels qu'une structure d'arbre peu profonde due à un facteur de ramification élevé, et une optimisation des accès séquentiels.
 
-Récemment, avec la démocratisation des SSD, de nouvelles structures de données comme l' **arbre LSM** (Log-Structured Merge-Tree) sont apparues pour réduire l'amplification d'écriture (Write Amplification). Cependant, pour ce qui est du compromis entre les performances de lecture et de recherche par plage, ainsi que la stabilité dans le traitement des transactions, l' **arbre B+** continue de régner en maître absolu dans les bases de données relationnelles.
+Récemment, avec la démocratisation des SSD, de nouvelles structures de données comme l' **arbre LSM** (Log-Structured Merge-[Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) sont apparues pour réduire l'amplification d'écriture (Write Amplification). Cependant, pour ce qui est du compromis entre les performances de lecture et de recherche par plage, ainsi que la stabilité dans le traitement des transactions, l' **arbre B+** continue de régner en maître absolu dans les bases de données relationnelles.
 
 Comprendre ce qui se passe à l'intérieur d'une base de données est directement lié à l'optimisation des requêtes et à la conception d'index appropriés. En vous basant sur la théorie expliquée dans cet article, essayez d'observer le comportement des index dans vos opérations quotidiennes de base de données.

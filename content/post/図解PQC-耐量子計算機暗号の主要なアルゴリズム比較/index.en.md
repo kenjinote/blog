@@ -235,7 +235,7 @@ SPHINCS+ is classified as a **hash-based signature**. The basis of its security 
 
 ### 8.1. Stateless Architecture with WOTS+ and FORS
 
-The history of hash-based signatures is old, dating back to Lamport signatures and Winternitz One-Time Signatures (WOTS) in the 1970s. These were disposable keys that could "securely sign only once." To make them usable multiple times, algorithms like XMSS (eXtended Merkle Signature Scheme) and LMS were developed, combining a Merkle Tree to manage countless one-time keys with a single root hash.
+The history of hash-based signatures is old, dating back to Lamport signatures and Winternitz One-Time Signatures (WOTS) in the 1970s. These were disposable keys that could "securely sign only once." To make them usable multiple times, algorithms like XMSS (eXtended Merkle Signature Scheme) and LMS were developed, combining a Merkle [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) to manage countless one-time keys with a single root hash.
 
 However, XMSS and LMS had a fatal flaw of being "**stateful**". It was necessary to strictly record the index state of "which one-time key was used" in non-volatile memory every time a signature was made, and if the state rolled back due to something like restoring a virtual machine snapshot and the same one-time key was used twice, the secret key would leak immediately, and the system would collapse.
 

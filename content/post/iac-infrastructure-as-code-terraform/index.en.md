@@ -109,7 +109,7 @@ The core of Terraform is this **declarative** approach. Why is this approach sup
 
 In imperative scripts, humans must accurately describe the order in which resources are created. For example, the procedure is to create a VPC, then create a subnet, and place an EC2 instance in that subnet.
 
-In Terraform, Terraform Core automatically builds a **Dependency Graph** from reference relationships that appear in the code (for example, referring to `aws_vpc.main.id` in the subnet configuration).
+In Terraform, Terraform Core automatically builds a **Dependency [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** from reference relationships that appear in the code (for example, referring to `aws_vpc.main.id` in the subnet configuration).
 
 ```mermaid
 graph TD

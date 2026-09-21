@@ -9,7 +9,7 @@ categories: ["tools-development-environment"]
 description: 'A must-see for those who want to implement automated message posting to Microsoft Teams from C++! We provide a step-by-step, easy-to-understand explanation of specific C++ code examples using WinHTTP and Graph API, as well as the essential Azure app registration and API authentication steps.'
 ---
 
-# How to Post Messages to Microsoft Teams from C++ (WinHTTP + Graph API)
+# How to Post Messages to Microsoft Teams from C++ (WinHTTP + [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API)
 
 I want to automatically post to a Microsoft Teams chat --  
 **Microsoft Graph API** is exactly what you can use in such cases.  
@@ -20,7 +20,7 @@ In this article, I will introduce a **C++ code example using WinHTTP ** and the 
 ## 🔧 Necessary Preparations (Microsoft Graph API [Authentication](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/) Settings)
 
 ### 1. Register App in Azure Portal
-First, to use the Microsoft Graph API, you need to register an app in Azure.
+First, to use the Microsoft [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API, you need to register an app in Azure.
 
 1. Access the [Azure Portal](https://portal.azure.com)
 2. "**Microsoft Entra ID **" > "**+ Add **" > "** App registrations **" > "** New registration**"
@@ -29,7 +29,7 @@ First, to use the Microsoft Graph API, you need to register an app in Azure.
 ### 2. Add API Permissions
 
 1. Go to the "API permissions" left menu
-2. Under "**Microsoft Graph **" > "** Add a permission **", search for the following scopes and click "** Update permissions**"
+2. Under "**Microsoft [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) **" > "** Add a permission **", search for the following scopes and click "** Update permissions**"
 
 - Chat.ReadWrite
 - User.Read
@@ -77,7 +77,7 @@ curl -X POST ^
 }
 ```
 
-Call the Microsoft Graph API using this access_token.
+Call the Microsoft [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API using this access_token.
 
 ## 💬 C++ Sample for Posting to Teams Chat
 Here is a C++ example of posting to a chat using WinHTTP.
@@ -170,7 +170,7 @@ curl -X GET ^
   - HTTPS certificate validation
   - Enhanced error handling
 - For channel posting, use teams/{team-id}/channels/{channel-id}/messages.
-- Sending attachments requires multipart processing or the Graph Drive API.
+- Sending attachments requires multipart processing or the [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Drive API.
 
 ## Summary
 
@@ -181,7 +181,7 @@ curl -X GET ^
 | Graph API | Official API to interact with Teams |
 | App Registration | Required authentication procedures on Azure |
 | Access Token | Obtained via [OAuth](https://kenji.blog/en/p/oauth2-oidc-authentication-authorization-difference/)2, used for requests |
-| C++ Implementation | Call Graph API using WinHTTP |
+| C++ Implementation | Call [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API using WinHTTP |
 
 ## 🚀 Next Steps
 

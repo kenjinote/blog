@@ -175,7 +175,7 @@ $ P_{warm} \approx 1 - e^{-\lambda \cdot T_w} $
 ### 5.2. تخفيف حزمة النشر
 
 تقوم Lambda بتنزيل الكود من S3 عند بدء التشغيل. لذلك، يُعد الحفاظ على حجم الحزمة صغيرًا تحسينًا مباشرًا.
-من المهم للغاية عدم تضمين التبعيات غير الضرورية (مثل DevDependencies)، واستخدام حزم (Bundlers) مثل Webpack / esbuild لتصغير (Minify) و إزالة الأكواد غير المستخدمة (Tree-shaking).
+من المهم للغاية عدم تضمين التبعيات غير الضرورية (مثل DevDependencies)، واستخدام حزم (Bundlers) مثل Webpack / esbuild لتصغير (Minify) و إزالة الأكواد غير المستخدمة ([Tree](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-shaking).
 
 ### 5.3. تحسين عملية التهيئة والتقييم المؤجل (Lazy Initialization)
 

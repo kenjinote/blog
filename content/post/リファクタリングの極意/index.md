@@ -19,13 +19,13 @@ tags: ["C++", "Refactoring", "Modern C++", "Legacy Code"]
 
 ## 1. 複雑度と技術的負債の数学的モデル
 
-リファクタリングを正当化するためには、現在のコードベースが抱える問題を定量化する必要があります。コードの構造的な複雑さを測る指標として最も一般的なのが「サイクロマティック複雑度（Cyclomatic Complexity）」です。この複雑度は、コントロールフローグラフの[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)に基づいて以下の数式で定義されます。
+リファクタリングを正当化するためには、現在のコードベースが抱える問題を定量化する必要があります。コードの構造的な複雑さを測る指標として最も一般的なのが「サイクロマティック複雑度（Cyclomatic Complexity）」です。この複雑度は、コントロールフロー[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)の[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)に基づいて以下の数式で定義されます。
 
 $$ M = E - N + 2P $$
 
 ここで、
 - $M$ はサイクロマティック複雑度
-- $E$ はグラフのエッジ（処理の流れ、遷移）の数
+- $E$ は[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)のエッジ（処理の流れ、遷移）の数
 - $N$ はグラフのノード（処理の基本ブ[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)）の数
 - $P$ は連結成分の数（通常、単一の関数やメソッドでは $P=1$）
 

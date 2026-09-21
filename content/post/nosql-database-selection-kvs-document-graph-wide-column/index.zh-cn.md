@@ -235,7 +235,7 @@ graph TD
 ### 代表性的图数据库
 
 - **Neo4j** : 世界上使用最广泛的图数据库。采用了独特且强大的查询语言 Cypher。
-- **Amazon Neptune** : AWS 提供的全托管图数据库。支持 Property Graph (Gremlin) 和 RDF (SPARQL)。
+- **Amazon Neptune** : AWS 提供的全托管图数据库。支持 Property [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Gremlin) 和 RDF (SPARQL)。
 - **ArangoDB** : 支持图、文档、KVS 的多模型数据库。
 
 ### 优缺点

@@ -131,7 +131,7 @@ zk-STARKs tidak menggunakan kriptografi kurva eliptik, melainkan mendasarkan kea
 
 Verifikasi perhitungan dilakukan menggunakan sifat polinomial satu dimensi atau multi-dimensi setelah diubah menjadi format yang disebut AIR (Algebraic Intermediate Representation). Inti dari STARKs terletak pada protokol **FRI (Fast Reed-Solomon Interactive Oracle Proof of Proximity)**.
 
-Protokol FRI adalah teknologi untuk memverifikasi "apakah suatu fungsi cukup dekat dengan polinomial dengan derajat tertentu (Proximity)". Pembukti melakukan komitmen (komitmen polinomial) dengan menjadikan nilai-nilai polinomial sebagai daun (leaf) dari Pohon Merkle (Merkle Tree).
+Protokol FRI adalah teknologi untuk memverifikasi "apakah suatu fungsi cukup dekat dengan polinomial dengan derajat tertentu (Proximity)". Pembukti melakukan komitmen (komitmen polinomial) dengan menjadikan nilai-nilai polinomial sebagai daun (leaf) dari Pohon Merkle (Merkle [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
 
 ```mermaid
 graph TD

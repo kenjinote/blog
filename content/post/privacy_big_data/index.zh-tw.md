@@ -57,7 +57,7 @@ k-匿名性保證了準識別碼的組合（等價類：Equivalence Class）必�
 - **l-多樣性 (l-diversity)** ：確保各個等價類中，機密屬性至少擁有 $l$ 種不同的值。
 - **t-貼近性 (t-closeness)** ：確保各個等價類中機密屬性的分佈，與整體資料集機密屬性分佈之間的距離（如 Earth Mover's Distance）小於等於閾值 $t$。
 
-### 2.2 差分隱私 (Differential Privacy: DP)
+### 2.2 差分隱私 (Differential Privacy: [DP](https://kenji.blog/zh-tw/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
 克服 k-匿名性模型的限制，目前被廣泛採用作為最強大且數學上最嚴謹的隱私標準，是 2006 年由 Cynthia Dwork 等人提出的「差分隱私（Differential Privacy）」。Apple、Google、Microsoft 等科技巨頭在收集使用者的遙測資料或統計資料時，都會應用這種 $\epsilon$-差分隱私。
 

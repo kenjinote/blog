@@ -133,7 +133,7 @@ Um das beste Erlebnis unter macOS zu erzielen, ist die "optimale Lösung" daher 
 
 ---
 
-## 4. Verbindungsbandbreite und Daisy-Chaining: Die Grenzen von Thunderbolt 4 und DP MST
+## 4. Verbindungsbandbreite und Daisy-Chaining: Die Grenzen von Thunderbolt 4 und [DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) MST
 
 Beim Anschluss mehrerer hochauflösender Monitore wird die Datenübertragungskapazität (Bandbreite) des Kabels zum Flaschenhals. Probleme wie "Ich habe einen Monitor gekauft, aber die Bildwiederholfrequenz erreicht nur 30 Hz" werden durch unzureichende Bandbreitenberechnungen verursacht.
 

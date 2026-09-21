@@ -109,7 +109,7 @@ El núcleo de Terraform reside en este enfoque **declarativo (Declarative)**. ¿
 
 En los scripts imperativos, los humanos deben escribir con precisión el orden en el que se crean los recursos. Por ejemplo, el procedimiento de crear una VPC, luego crear una subred y ubicar una EC2 dentro de esa subred.
 
-En Terraform, a partir de las relaciones de referencia que aparecen en el código (por ejemplo, referenciar `aws_vpc.main.id` en la configuración de la subred), Terraform Core construye automáticamente un **Grafo de Dependencias (Dependency Graph)**.
+En Terraform, a partir de las relaciones de referencia que aparecen en el código (por ejemplo, referenciar `aws_vpc.main.id` en la configuración de la subred), Terraform Core construye automáticamente un **Grafo de Dependencias (Dependency [Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**.
 
 ```mermaid
 graph TD

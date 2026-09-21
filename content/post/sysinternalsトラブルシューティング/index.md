@@ -67,7 +67,7 @@ ProcExpのプロセスリスト最上部にある `Interrupts` や `DPCs` のCPU
 $$ U_{cpu} = \left( 1 - \frac{T_{idle}}{T_{total}} \right) \times 100 $$
 $$ T_{interrupt\_overhead} = \sum_{i=1}^{n} \left( T_{ISR(i)} + T_{DPC(i)} \right) $$
 
-もし $T_{interrupt\_overhead}$ がCPU時間の大部分を占める場合、NDISドライバ（ネットワーク）やStorportドライバ（ストレージ）、グラフィックスドライバのバグが疑われます。
+もし $T_{interrupt\_overhead}$ がCPU時間の大部分を占める場合、NDISドライバ（ネットワーク）やStorportドライバ（ストレージ）、[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィックスドライバのバグが疑われます。
 
 ---
 

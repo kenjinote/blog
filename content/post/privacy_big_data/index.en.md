@@ -57,7 +57,7 @@ To overcome this, the following extended models have been proposed:
 - **l-diversity**: Guarantees that sensitive attributes have at least $l$ different values in each equivalence class.
 - **t-closeness**: Ensures that the distance (such as Earth Mover's Distance) between the distribution of sensitive attributes in each equivalence class and the distribution of sensitive attributes in the entire dataset is less than or equal to a threshold $t$.
 
-### 2.2 Differential Privacy (DP)
+### 2.2 Differential Privacy ([DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
 Overcoming the limitations of the k-anonymity model, "Differential Privacy" proposed by Cynthia Dwork et al. in 2006 is now widely adopted as the strongest and most mathematically rigorous privacy standard. Tech giants such as Apple, Google, and Microsoft apply this $\epsilon$-differential privacy when collecting telemetry and statistical data from users.
 

@@ -42,7 +42,7 @@ graph TD
 ```
 
 1. **Gerenciamento de Tensores (Tensor)**: Gerencia a estrutura de dados de arrays multidimensionais e o passo (Stride) de cada dimensão.
-2. **Grafo de Computação (Computation Graph)**: Representa as operações de cada camada da rede neural como um Grafo Acíclico Dirigido (DAG).
+2. **Grafo de Computação (Computation [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**: Representa as operações de cada camada da rede neural como um Grafo Acíclico Dirigido (DAG).
 3. **Arena de Memória (Memory Arena)**: Um mecanismo de gerenciamento de memória pré-alocada para evitar o overhead de alocação dinâmica de memória (`malloc` ou `new`).
 4. **Backend**: A implementação de operações otimizadas para hardwares específicos, como CPU ou GPU (Kernels).
 

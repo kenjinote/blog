@@ -109,7 +109,7 @@ Der Kern von Terraform liegt in diesem **deklarativen (Declarative)** Ansatz. Wa
 
 In imperativen Skripten müssen Menschen die Reihenfolge der Ressourcenerstellung genau beschreiben. Beispielsweise das Verfahren zur Erstellung eines Subnetzes nach der Erstellung einer VPC und zur Platzierung einer EC2 innerhalb dieses Subnetzes.
 
-In Terraform erstellt der Terraform Core automatisch einen **Abhängigkeitsgraphen (Dependency Graph)** basierend auf den im Code vorkommenden Referenzbeziehungen (beispielsweise durch den Verweis auf `aws_vpc.main.id` in den Subnetzeinstellungen).
+In Terraform erstellt der Terraform Core automatisch einen **Abhängigkeitsgraphen (Dependency [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** basierend auf den im Code vorkommenden Referenzbeziehungen (beispielsweise durch den Verweis auf `aws_vpc.main.id` in den Subnetzeinstellungen).
 
 ```mermaid
 graph TD

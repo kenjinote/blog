@@ -175,7 +175,7 @@ También llama la atención el enfoque de acortar aún más el tiempo de inicio 
 ### 5.2. Reducción del paquete de despliegue
 
 Lambda descarga el código desde S3 al iniciarse. Por lo tanto, mantener un tamaño de paquete pequeño es una optimización directa.
-Es sumamente importante no incluir dependencias innecesarias (como DevDependencies) y utilizar bundlers como Webpack / esbuild para minimizar (Minify) y eliminar el código muerto (Tree-shaking).
+Es sumamente importante no incluir dependencias innecesarias (como DevDependencies) y utilizar bundlers como Webpack / esbuild para minimizar (Minify) y eliminar el código muerto ([Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-shaking).
 
 ### 5.3. Optimización de la inicialización y evaluación diferida (Lazy Initialization)
 

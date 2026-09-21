@@ -64,7 +64,7 @@ HTML का विश्लेषण W3C (अब WHATWG) द्वारा प�
 1. **Conversion (रूपांतरण)** : नेटवर्क से प्राप्त कच्चे डेटा बाइट्स को निर्दिष्ट वर्ण एन्कोडिंग (जैसे UTF-8) के आधार पर अलग-अलग वर्णों (Characters) में परिवर्तित किया जाता है।
 2. **Tokenization (टोकनाइजेशन)** : स्ट्रिंग को W3C HTML5 मानक द्वारा निर्दिष्ट विभिन्न "टोकन (Tokens)" में परिवर्तित किया जाता है। उदाहरण के लिए, `<html>` , `<body>` जैसे प्रारंभ टैग, अंत टैग, विशेषता नाम और विशेषता मान आदि।
 3. **Lexing (लेक्सिंग)** : जनरेट किए गए टोकन को "ऑब्जेक्ट्स (Nodes)" में परिवर्तित किया जाता है जिनमें गुण और नियम होते हैं।
-4. **DOM Tree Construction (ट्री निर्माण)** : बनाए गए ऑब्जेक्ट्स को टैग की नेस्टिंग संरचना के आधार पर एक ट्री जैसे डेटा संरचना में जोड़ा जाता है। यही **DOM (Document Object Model)** है।
+4. **DOM [Tree](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Construction (ट्री निर्माण)** : बनाए गए ऑब्जेक्ट्स को टैग की नेस्टिंग संरचना के आधार पर एक ट्री जैसे डेटा संरचना में जोड़ा जाता है। यही **DOM (Document Object Model)** है।
 
 ```mermaid
 sequenceDiagram
@@ -158,7 +158,7 @@ gantt
 
 ## 3. Style (स्टाइल गणना): Render ट्री का निर्माण
 
-जब DOM ट्री और CSSOM ट्री पूरे हो जाते हैं, तो ब्राउज़र उन्हें मिलाकर **Render ट्री (Render Tree)** या **स्टाइल ट्री (Style Tree)** बनाता है।
+जब DOM ट्री और CSSOM ट्री पूरे हो जाते हैं, तो ब्राउज़र उन्हें मिलाकर **Render ट्री (Render [Tree](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** या **स्टाइल ट्री (Style Tree)** बनाता है।
 
 इस चरण में, DOM ट्री के प्रत्येक नोड के लिए कौन से CSSOM स्टाइल नियम लागू होते हैं, इसकी गणना की जाती है, और अंतिम परिकलित स्टाइल (Computed Style) निर्धारित की जाती है।
 
@@ -322,7 +322,7 @@ Paint Record एक विशिष्ट ड्राइंग कमांड 
 
 ब्राउज़र के अंदर कई ट्री संरचनाओं को रूपांतरित किया जाता है।
 
-1. **DOM Tree**
+1. **DOM [Tree](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
 2. **Layout Tree (Render Tree)** : दृश्य तत्वों की ज्यामिति जानकारी
 3. **Paint Tree (Layer Tree)** : स्टैकिंग संदर्भ आदि के आधार पर पदानुक्रमित लेयर संरचना
 4. **Graphics Layer Tree** : स्वतंत्र लेयर्स जो वास्तव में GPU पर संयोजित की जाती हैं

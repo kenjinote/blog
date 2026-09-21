@@ -175,7 +175,7 @@ Auch der Ansatz, experimentelle, leichtgewichtige JavaScript-Laufzeitumgebungen 
 ### 5.2. Reduzierung der Bereitstellungspaketgröße
 
 Lambda lädt beim Start Code von S3 herunter. Daher ist das Kleinhalten der Paketgröße eine direkte Optimierung.
-Es ist äußerst wichtig, keine unnötigen Abhängigkeiten (wie DevDependencies) einzuschließen und Bundler wie Webpack oder esbuild zu verwenden, um den Code zu minimieren (Minify) und ungenutzten Code zu entfernen (Tree-shaking).
+Es ist äußerst wichtig, keine unnötigen Abhängigkeiten (wie DevDependencies) einzuschließen und Bundler wie Webpack oder esbuild zu verwenden, um den Code zu minimieren (Minify) und ungenutzten Code zu entfernen ([Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-shaking).
 
 ### 5.3. Optimierung der Initialisierungsverarbeitung und verzögerte Auswertung (Lazy Initialization)
 

@@ -133,7 +133,7 @@ In the computation graph, it is represented by combining the `ggml_silu` operato
 
 ---
 
-## 5. Computation Graph Construction and [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/) with ggml
+## 5. Computation [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Construction and [Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/) with ggml
 
 ggml uses a "Define-and-Run" approach, constructing a static computation graph for inference and evaluating it later.
 
@@ -142,7 +142,7 @@ ggml uses a "Define-and-Run" approach, constructing a static computation graph f
 The most unique aspect of ggml is "arena allocation," which avoids dynamic memory allocation (`malloc` or `new`) entirely within the inference loop.
 Upon initialization, a huge contiguous memory region (arena) is allocated, and the pointer to this region is incremented every time `ggml_new_tensor` or similar is called. Once one inference step is completed, simply resetting the allocation pointer to its initial position immediately finishes memory allocation for the next inference step.
 
-### 5.2 Specific Example of Graph Construction
+### 5.2 Specific Example of [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Construction
 
 For each inference step, a computation graph like the following is assembled in memory:
 

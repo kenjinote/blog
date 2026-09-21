@@ -521,7 +521,7 @@ Hanya itu. `.sort()` di Python dan `std::sort` di C++ diimplementasikan dengan a
 
 Namun, lalu mengapa kita perlu mempelajari algoritma pengurutan?
 
-1.  **Pemahaman Konsep Dasar** : Konsep seperti kompleksitas (Notasi Big O), In-place/Out-of-place, dan stabilitas, adalah dasar dari desain semua algoritma dan struktur data, tidak hanya pengurutan.
+1.  **Pemahaman Konsep Dasar** : Konsep seperti kompleksitas (Notasi [Big O](https://kenji.blog/id/p/time-space-complexity-big-o-notation-examples/)), In-place/Out-of-place, dan stabilitas, adalah dasar dari desain semua algoritma dan struktur data, tidak hanya pengurutan.
 2.  **Sistem Di Bawah Batasan Khusus** : Dalam lingkungan dengan memori yang sangat terbatas seperti sistem tersemat (embedded systems), mungkin perlu untuk mengimplementasikan sendiri heap sort dengan ruang $O(1)$ atau quick sort in-place.
 3.  **Memanfaatkan Karakteristik Data** : Saat mengurutkan "1 juta data yang nilainya terbatas pada rentang 1-100", mengimplementasikan counting sort ($O(n)$) akan menjadi jauh lebih cepat daripada menggunakan Timsort bawaan ($O(n \log n)$).
 

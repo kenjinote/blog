@@ -81,7 +81,7 @@ graph LR
 Lors de la mémorisation de livres techniques, il est inutile d'"apprendre de longues preuves par cœur". Divisez les connaissances dans leur unité minimale (Atomic) et créez des cartes.
 
 - **Mauvaise carte** : "Écrivez toute la preuve de l'algorithme de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/)"
-- **Bonne carte** : "Dans l'algorithme de Dijkstra, quelle est la condition pour considérer que la distance la plus courte d'un sommet est définitive ?" → "Lors du choix du sommet avec la distance provisoire minimale parmi l'ensemble des sommets non confirmés."
+- **Bonne carte** : "Dans l'algorithme de [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), quelle est la condition pour considérer que la distance la plus courte d'un sommet est définitive ?" → "Lors du choix du sommet avec la distance provisoire minimale parmi l'ensemble des sommets non confirmés."
 - **Bonne carte** : "Quelle est la formule du petit théorème de [Fermat](https://kenji.blog/fr/p/fermat/) ?" → "Pour un nombre premier $p$ et un entier $a$ premier avec $p$, $a^{p-1} \equiv 1 \pmod p$"
 
 Même lors de la mémorisation de formules, il est efficace de les enregistrer dans Anki au format LaTeX et d'utiliser des textes à trous (Cloze Deletion).
@@ -175,7 +175,7 @@ Pour trouver $d$ satisfaisant la formule $e \cdot d \equiv 1 \pmod{\phi(n)}$, il
 
 ### 4.2 Exemple 2 : Algorithme de [Dijkstra](https://kenji.blog/fr/p/graph-theory-dijkstra-a-star/) et Relâchement (Relaxation)
 
-Considérons l'algorithme de Dijkstra qui résout le problème du plus court chemin à origine unique (SSSP) dans la théorie des graphes.
+Considérons l'algorithme de [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) qui résout le problème du plus court chemin à origine unique (SSSP) dans la théorie des graphes.
 
 Le cœur mathématique et algorithmique est l'opération appelée "Relâchement (Relaxation)".
 Lorsqu'il y a une arête de poids $w(u, v)$ allant du sommet $u$ au sommet $v$, la plus courte distance provisoire $d[v]$ au sommet $v$ est mise à jour avec la formule suivante.

@@ -27,13 +27,13 @@ tags: ["Git", "Version Control", "Troubleshooting"]
 
 많은 트러블슈팅을 쉽게 하기 위한 첫걸음은 Git이 데이터를 어떻게 저장하고 있는지 아는 것입니다. 프로젝트의 루트 디렉토리에 존재하는 숨김 폴더 `.git`, 이것이야말로 Git의 심장부입니다. Git은 단순한 파일의 차이(패치)를 순서대로 기록해 나가는 시스템이 아니라, **스냅샷의 스트림** 으로서 데이터를 관리하고 있습니다.
 
-### 2.1 객체 모델: Blob, Tree, Commit
+### 2.1 객체 모델: Blob, [Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), Commit
 
 Git은 주로 3가지 객체를 사용하여 리포지토리의 상태를 표현합니다. 이 객체들은 `.git/objects`에 저장됩니다.
 
 1. **Blob (Binary Large Object)**
    파일의 내용 자체를 저장하는 객체입니다. 파일 이름이나 권한 정보는 여기에 포함되지 않습니다. 순수한 바이트 열이 zlib으로 압축되며, SHA-1 해시값(40자의 16진수)에 의해 식별됩니다.
-2. **Tree**
+2. **[Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
    디렉토리의 구조를 나타내는 객체입니다. Tree 객체는 다른 Tree 객체(하위 디렉토리)나 Blob 객체(파일)에 대한 포인터(SHA-1 해시값), 그리고 그 파일들의 이름, 접근 권한을 포함합니다. UNIX의 디렉토리와 같은 역할을 합니다.
 3. **Commit**
    어느 시점에서의 리포지토리 전체의 최상위 Tree 객체에 대한 포인터와, 메타데이터(작성자, 커밋 일시, 커밋 메시지), 그리고 직전 커밋(부모 커밋)에 대한 포인터를 유지합니다.
@@ -334,7 +334,7 @@ squash 3c4d5e6 테스트 추가
 
 ### 해결책: 이진 탐색을 통한 버그 특정
 
-Git에는 버그가 유입된 커밋을 수학적인 이진 탐색(Binary Search)으로 찾아내는 도구가 내장되어 있습니다. 계산량은 $\mathcal{O}(\log N)$이므로, 1000개의 커밋이 있어도 약 10번의 테스트로 특정할 수 있습니다.
+Git에는 버그가 유입된 커밋을 수학적인 이진 탐색([Binary Search](https://kenji.blog/ko/p/search-algorithms-linear-binary-hash-table-principles/))으로 찾아내는 도구가 내장되어 있습니다. 계산량은 $\mathcal{O}(\log N)$이므로, 1000개의 커밋이 있어도 약 10번의 테스트로 특정할 수 있습니다.
 
 ```bash
 # 탐색을 시작

@@ -14,7 +14,7 @@ Hugo هو أحد أسرع مولدات المواقع الثابتة (SSG) في 
 
 لتحسين ترتيب البحث، وزيادة القدرة على الانتشار في وسائل التواصل الاجتماعي، وبالتالي زيادة عدد الزيارات إلى المدونة بشكل كبير، فإن إجراءات تحسين محركات البحث (SEO) الدقيقة تعتبر أمرًا ضروريًا. يكمن قلب تحسين محركات البحث في Hugo في التعاون بين **Frontmatter** ، الذي يُكتب في بداية كل مقال بصيغة Markdown، و **القوالب ([Layout](https://kenji.blog/ar/p/browser-rendering-mechanism-dom-paint/)s)** التي تفسره وتنشر البيانات الوصفية داخل علامة `<head>` في HTML.
 
-في هذا المقال، سنشرح بالتفصيل وبحجم هائل يتجاوز 10,000 حرف كيفية تحقيق أقصى استفادة من ميزات Hugo وتنفيذ إجراءات SEO المتقدمة، بدءًا من إعدادات Frontmatter، ومرورًا بعلامات الميتا (Meta Tags) المختلفة، و OGP (Open Graph Protocol)، و Twitter Cards، وصولًا إلى إخراج البيانات المنظمة باستخدام JSON-LD.
+في هذا المقال، سنشرح بالتفصيل وبحجم هائل يتجاوز 10,000 حرف كيفية تحقيق أقصى استفادة من ميزات Hugo وتنفيذ إجراءات SEO المتقدمة، بدءًا من إعدادات Frontmatter، ومرورًا بعلامات الميتا (Meta Tags) المختلفة، و OGP (Open [Graph](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol)، و Twitter Cards، وصولًا إلى إخراج البيانات المنظمة باستخدام JSON-LD.
 
 ---
 
@@ -122,7 +122,7 @@ canonicalUrl: "https://example.com/post/hugo-seo-frontmatter-tips/" # رابط �
 
 ## 4. OGP و Twitter Cards: زيادة CTR على وسائل التواصل الاجتماعي إلى الحد الأقصى
 
-عند مشاركة مقال على منصات التواصل الاجتماعي مثل Twitter (X) أو Facebook، فإن إعدادات Open Graph Protocol (OGP) و Twitter Cards ضرورية لعرض المقال بتنسيق بطاقة جذابة. يتم إنشاء هذا أيضًا ديناميكيًا من Frontmatter.
+عند مشاركة مقال على منصات التواصل الاجتماعي مثل Twitter (X) أو Facebook، فإن إعدادات Open [Graph](https://kenji.blog/ar/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP) و Twitter Cards ضرورية لعرض المقال بتنسيق بطاقة جذابة. يتم إنشاء هذا أيضًا ديناميكيًا من Frontmatter.
 
 ### 4.1. تحديات القوالب المدمجة
 

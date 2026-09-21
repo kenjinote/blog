@@ -25,7 +25,7 @@ Git是现代软件开发中不可或缺的版本控制系统。当多名开发�
 
 Git的每个提交（Commit）都通过SHA-1（安全哈希算法1）哈希函数计算出一个40位的十六进制字符串来唯一标识。一个提交对象由以下元素构成：
 
-1. **指向Tree对象的指针**: 此时的目录结构和文件（Blob）的快照
+1. **指向[Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)对象的指针**: 此时的目录结构和文件（Blob）的快照
 2. **指向父提交的指针**: 一个或多个父提交的哈希值（首次提交没有父提交，合并提交有两个或以上的父提交）
 3. **作者信息（Author）**: 编写代码的人和时间
 4. **提交者信息（Committer）**: 创建并应用该提交的人和时间
@@ -51,7 +51,7 @@ $$
 
 # 3. 图论与DAG：Git历史的数学模型
 
-Git的提交历史可以被建模为图论中的“有向无环图（Directed Acyclic Graph, DAG）”。
+Git的提交历史可以被建模为图论中的“有向无环图（Directed Acyclic [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), DAG）”。
 
 ## 3.1 什么是DAG（有向无环图）
 

@@ -17,10 +17,10 @@ In diesem Artikel behandeln wir umfassend die wichtigsten Graphenalgorithmen, di
 
 ## 1. Grundlagen und Einschränkungen von Graphenalgorithmen
 
-Bevor wir Algorithmen lernen, ist es wichtig, die allgemeinen Einschränkungen und Richtwerte für die Zeitkomplexität von Graphenproblemen in der kompetitiven Programmierung zu verstehen. Ein Graph wird durch die Anzahl der Knoten $V$ (Vertices) und Kanten $E$ (Edges) dargestellt.
+Bevor wir Algorithmen lernen, ist es wichtig, die allgemeinen Einschränkungen und Richtwerte für die Zeitkomplexität von Graphenproblemen in der kompetitiven Programmierung zu verstehen. Ein [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) wird durch die Anzahl der Knoten $V$ (Vertices) und Kanten $E$ (Edges) dargestellt.
 
-*   $O(V + E)$ : Die erforderliche Zeitkomplexität für Probleme mit Knoten $V, E \le 10^5 \sim 10^6$. Dies gilt für Tiefensuche (DFS) und Breitensuche (BFS).
-*   $O((V + E) \log V)$ : Häufig in Problemen mit $V, E \le 10^5 \sim 2 \cdot 10^5$. Dies ist die Zeitkomplexität bei Verwendung einer Prioritätswarteschlange (Priority Queue) in Algorithmen wie Dijkstra oder Prim.
+*   $O(V + E)$ : Die erforderliche Zeitkomplexität für Probleme mit Knoten $V, E \le 10^5 \sim 10^6$. Dies gilt für Tiefensuche ([DFS](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) und Breitensuche ([BFS](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
+*   $O((V + E) \log V)$ : Häufig in Problemen mit $V, E \le 10^5 \sim 2 \cdot 10^5$. Dies ist die Zeitkomplexität bei Verwendung einer Prioritätswarteschlange (Priority Queue) in Algorithmen wie [Dijkstra](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) oder Prim.
 *   $O(V^2)$ : Zulässig für dichte Graphen ($E \approx V^2$) mit $V \le 2000 \sim 3000$.
 *   $O(V^3)$ : Probleme mit $V \le 400 \sim 500$. Der Floyd-Warshall-Algorithmus ist ein typisches Beispiel.
 
@@ -32,7 +32,7 @@ In der kompetitiven Programmierung ist es üblich, eine **Adjazenzliste (Adjacen
 
 ### Topologische Sortierung (Topological Sort)
 
-Die topologische Sortierung ist ein Algorithmus, der die Knoten eines gerichteten azyklischen Graphen (DAG: Directed Acyclic Graph) so in einer Linie anordnet, dass alle gerichteten Kanten von Knoten weiter vorne zu Knoten weiter hinten zeigen. Er wird verwendet, um Aufgabenabhängigkeiten aufzulösen (z.B. Aufgabe B kann nicht gestartet werden, bevor Aufgabe A beendet ist) oder um die Berechnungsreihenfolge in der dynamischen Programmierung (DP) auf einem DAG zu bestimmen.
+Die topologische Sortierung ist ein Algorithmus, der die Knoten eines gerichteten azyklischen Graphen (DAG: Directed Acyclic Graph) so in einer Linie anordnet, dass alle gerichteten Kanten von Knoten weiter vorne zu Knoten weiter hinten zeigen. Er wird verwendet, um Aufgabenabhängigkeiten aufzulösen (z.B. Aufgabe B kann nicht gestartet werden, bevor Aufgabe A beendet ist) oder um die Berechnungsreihenfolge in der dynamischen Programmierung ([DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) auf einem DAG zu bestimmen.
 
 Die Zeitkomplexität beträgt $O(V + E)$. Es gibt zwei Implementierungsarten: Kahns Algorithmus (basierend auf BFS mit Eingangsgrad) und eine DFS-basierte Methode mit Post-Order. Hier stellen wir Kahns Algorithmus vor, der es auch leicht macht, die lexikographisch kleinste topologische Sortierung zu finden.
 
@@ -102,7 +102,7 @@ vector<int> topological_sort(int V, const vector<vector<int>>& graph) {
 
 Ein Problem, bei dem der kürzeste Weg von einem Startknoten zu allen anderen Knoten gefunden wird. Der anwendbare Algorithmus hängt davon ab, ob die Kantengewichte nicht negativ sind oder ob negative Gewichte existieren.
 
-### [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus (Dijkstra's Algorithm)
+### [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)-Algorithmus ([Dijkstra](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm)
 
 Der Dijkstra-Algorithmus ist ein schneller Algorithmus für kürzeste Pfade, der anwendbar ist, wenn **alle Kantengewichte nicht negativ** sind. Er basiert auf einem Greedy-Ansatz: "Bestimme den Knoten mit dem kürzesten bekannten Abstand und aktualisiere die Abstände zu den benachbarten Knoten dieses Knotens (Relaxation)".
 
@@ -174,7 +174,7 @@ Die Zeile `if (dist[u] < d) continue;` ist sehr wichtig. Beim [Dijkstra](https:/
 
 ### Bellman-Ford-Algorithmus (Bellman-Ford Algorithm)
 
-Wenn Kantengewichte negative Werte enthalten, kann der Dijkstra-Algorithmus nicht die richtige Antwort finden. In diesem Fall kommt der Bellman-Ford-Algorithmus ins Spiel. Durch die Wiederholung des Relaxationsprozesses für alle Kanten $V - 1$ Mal berechnet er den kürzesten Pfad korrekt, auch wenn negative Gewichte existieren.
+Wenn Kantengewichte negative Werte enthalten, kann der [Dijkstra](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-Algorithmus nicht die richtige Antwort finden. In diesem Fall kommt der Bellman-Ford-Algorithmus ins Spiel. Durch die Wiederholung des Relaxationsprozesses für alle Kanten $V - 1$ Mal berechnet er den kürzesten Pfad korrekt, auch wenn negative Gewichte existieren.
 
 Wenn auch in der $V$-ten Iteration eine Aktualisierung auftritt, bedeutet dies, dass ein **negativer Zyklus (Negative Cycle)** existiert. Probleme, die das "Erkennen negativer Zyklen" fordern, sind in der kompetitiven Programmierung sehr häufig, und der Bellman-Ford-Algorithmus ist auch als Erkennungsalgorithmus dafür hervorragend geeignet.
 
@@ -230,7 +230,7 @@ pair<vector<long long>, bool> bellman_ford(int V, const vector<Edge>& edges, int
 
 ### Floyd-Warshall-Algorithmus (Floyd-Warshall Algorithm)
 
-Dies ist ein Algorithmus zum Finden der kürzesten Entfernungen zwischen allen Knotenpaaren in einem Graphen. Er basiert auf dynamischer Programmierung (DP). Er ist attraktiv, weil der Algorithmus sehr einfach und extrem leicht zu implementieren ist.
+Dies ist ein Algorithmus zum Finden der kürzesten Entfernungen zwischen allen Knotenpaaren in einem Graphen. Er basiert auf dynamischer Programmierung ([DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)). Er ist attraktiv, weil der Algorithmus sehr einfach und extrem leicht zu implementieren ist.
 
 Die [Zustand](https://kenji.blog/de/p/state-management-history-redux-context-recoil-zustand/)sübergangsgleichung lautet wie folgt. Er verwendet den kürzeren Pfad entweder durch den Knoten $k$ oder nicht:
 $$ d[i][j] = \min(d[i][j], d[i][k] + d[k][j]) $$
@@ -267,11 +267,11 @@ void floyd_warshall(int V, vector<vector<long long>>& dist) {
 }
 ```
 
-Der Floyd-Warshall-Algorithmus kann auch negative Zyklen erkennen. Wenn nach Abschluss der Schleifen auch nur ein Knoten `i` existiert, für den `dist[i][i] < 0` gilt, dann enthält der Graph einen negativen Zyklus.
+Der Floyd-Warshall-Algorithmus kann auch negative Zyklen erkennen. Wenn nach Abschluss der Schleifen auch nur ein Knoten `i` existiert, für den `dist[i][i] < 0` gilt, dann enthält der [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) einen negativen Zyklus.
 
 ---
 
-## 5. Minimaler Spannbaum (MST: Minimum Spanning Tree)
+## 5. Minimaler Spannbaum (MST: Minimum Spanning [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 In einem zusammenhängenden ungerichteten Graphen wird ein Baum (ein Teilgraph ohne Zyklen), der alle Knoten verbindet und die Summe der Kantengewichte minimiert, als **Minimaler Spannbaum (MST)** bezeichnet. Dies wird häufig in Problemen wie der Minimierung der Verlegungskosten eines Netzwerks direkt gefragt.
 
@@ -407,13 +407,13 @@ long long prim(int V, const vector<vector<Edge>>& graph) {
 
 ## 6. Fortgeschritten: Zerlegung in stark zusammenhängende Komponenten (SCC: Strongly Connected Components)
 
-In einem gerichteten Graphen wird eine "Menge von Knoten, die voneinander erreichbar sind" als stark zusammenhängende Komponente (SCC) bezeichnet. Wenn man einen beliebigen gerichteten Graphen in seine stark zusammenhängenden Komponenten gruppiert, wird das Ganze unweigerlich zu einem DAG (gerichteter azyklischer Graph). Dies wird als **Zerlegung in stark zusammenhängende Komponenten** bezeichnet. Es ist ein sehr wichtiger Vorverarbeitungsschritt, um die Graphenstruktur zu vereinfachen und das Problem leichter lösbar zu machen.
+In einem gerichteten Graphen wird eine "Menge von Knoten, die voneinander erreichbar sind" als stark zusammenhängende Komponente (SCC) bezeichnet. Wenn man einen beliebigen gerichteten Graphen in seine stark zusammenhängenden Komponenten gruppiert, wird das Ganze unweigerlich zu einem DAG (gerichteter azyklischer [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)). Dies wird als **Zerlegung in stark zusammenhängende Komponenten** bezeichnet. Es ist ein sehr wichtiger Vorverarbeitungsschritt, um die Graphenstruktur zu vereinfachen und das Problem leichter lösbar zu machen.
 
 In der kompetitiven Programmierung wird dies häufig zur Lösung von 2-SAT-Problemen verwendet, oder wenn ein Graph mit Zyklen zu einem DAG komprimiert wird, um dynamische Programmierung durchzuführen.
 
 ### Kosarajus Algorithmus (Kosaraju's Algorithm)
 
-Kosarajus Algorithmus ist eine schöne und effiziente Methode zur Konstruktion von SCCs durch nur zweimaliges Ausführen von DFS (Tiefensuche). Die Zeitkomplexität beträgt $O(V + E)$ und arbeitet somit in linearer Zeit.
+Kosarajus Algorithmus ist eine schöne und effiziente Methode zur Konstruktion von SCCs durch nur zweimaliges Ausführen von [DFS](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Tiefensuche). Die Zeitkomplexität beträgt $O(V + E)$ und arbeitet somit in linearer Zeit.
 
 Algorithmus-Schritte:
 1. Führe eine DFS im ursprünglichen Graphen durch und speichere die Knoten in Post-Order-Reihenfolge in einem Array.
@@ -504,7 +504,7 @@ Das Array `comp` speichert die ID der SCC, zu der jeder Knoten gehört. Diese ID
 In diesem Artikel haben wir die häufigsten Graphenalgorithmen in der kompetitiven Programmierung überprüft.
 Das Geheimnis zur Verbesserung bei Graphenproblemen besteht darin, **"sie immer wieder zu implementieren, bis sie zur Gewohnheit werden"** und **"zu trainieren, auf welchen Graphen das Problem reduziert werden kann (was sind die Knoten, was sind die Kanten)"**.
 
-1. Lernen Sie zunächst, DFS / BFS schnell und fehlerfrei zu schreiben.
+1. Lernen Sie zunächst, [DFS](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) / [BFS](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) schnell und fehlerfrei zu schreiben.
 2. Lernen Sie als Nächstes, den [Dijkstra](https://kenji.blog/de/p/graph-theory-dijkstra-a-star/)- und Kruskal-Algorithmus aus dem Gedächtnis zu schreiben (Pflicht für die braunen bis grünen Ränge bei AtCoder).
 3. Erweitern Sie schließlich Ihr Repertoire um Bellman-Ford, Floyd-Warshall, topologische Sortierung, SCC usw. (eine Waffe in den hellblauen bis blauen Rängen bei AtCoder).
 

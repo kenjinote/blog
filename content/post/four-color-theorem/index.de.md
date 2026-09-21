@@ -28,7 +28,7 @@ Im Jahr 1879 veröffentlichte ein Mathematiker namens Alfred Kempe einen Beweis 
 
 ## 4. Konvertierung in die Graphentheorie
 
-Um den Vier-Farben-Satz mathematisch streng zu behandeln, wird das Problem in die Sprache der Graphentheorie übersetzt. Jede Region auf der Karte wird als "Knoten (Vertex)" betrachtet, und Regionen, die eine Grenze teilen, werden durch eine "Kante (Edge)" verbunden. Ein auf diese Weise erstellter Graph wird als "planarer Graph (Planar Graph)" bezeichnet.
+Um den Vier-Farben-Satz mathematisch streng zu behandeln, wird das Problem in die Sprache der Graphentheorie übersetzt. Jede Region auf der Karte wird als "Knoten (Vertex)" betrachtet, und Regionen, die eine Grenze teilen, werden durch eine "Kante (Edge)" verbunden. Ein auf diese Weise erstellter [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) wird als "planarer Graph (Planar Graph)" bezeichnet.
 
 Ein planarer Graph ist ein Graph, der in einer Ebene gezeichnet werden kann, ohne dass sich die Kanten schneiden. Der Vier-Farben-Satz reduziert sich auf das Problem: "Alle Knoten jedes planaren Graphen können mit **4 Farben** so gefärbt werden, dass benachbarte Knoten unterschiedliche Farben haben."
 
@@ -85,7 +85,7 @@ Im Jahr 1879 veröffentlichte ein Mathematiker namens Alfred Kempe einen Beweis 
 
 ## 4. Konvertierung in die Graphentheorie
 
-Um den Vier-Farben-Satz mathematisch streng zu behandeln, wird das Problem in die Sprache der Graphentheorie übersetzt. Jede Region auf der Karte wird als "Knoten (Vertex)" betrachtet, und Regionen, die eine Grenze teilen, werden durch eine "Kante (Edge)" verbunden. Ein auf diese Weise erstellter Graph wird als "planarer Graph (Planar Graph)" bezeichnet.
+Um den Vier-Farben-Satz mathematisch streng zu behandeln, wird das Problem in die Sprache der Graphentheorie übersetzt. Jede Region auf der Karte wird als "Knoten (Vertex)" betrachtet, und Regionen, die eine Grenze teilen, werden durch eine "Kante (Edge)" verbunden. Ein auf diese Weise erstellter [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) wird als "planarer Graph (Planar Graph)" bezeichnet.
 
 Ein planarer Graph ist ein Graph, der in einer Ebene gezeichnet werden kann, ohne dass sich die Kanten schneiden. Der Vier-Farben-Satz reduziert sich auf das Problem: "Alle Knoten jedes planaren Graphen können mit **4 Farben** so gefärbt werden, dass benachbarte Knoten unterschiedliche Farben haben."
 
@@ -142,7 +142,7 @@ Im Jahr 1879 veröffentlichte ein Mathematiker namens Alfred Kempe einen Beweis 
 
 ## 4. Konvertierung in die Graphentheorie
 
-Um den Vier-Farben-Satz mathematisch streng zu behandeln, wird das Problem in die Sprache der Graphentheorie übersetzt. Jede Region auf der Karte wird als "Knoten (Vertex)" betrachtet, und Regionen, die eine Grenze teilen, werden durch eine "Kante (Edge)" verbunden. Ein auf diese Weise erstellter Graph wird als "planarer Graph (Planar Graph)" bezeichnet.
+Um den Vier-Farben-Satz mathematisch streng zu behandeln, wird das Problem in die Sprache der Graphentheorie übersetzt. Jede Region auf der Karte wird als "Knoten (Vertex)" betrachtet, und Regionen, die eine Grenze teilen, werden durch eine "Kante (Edge)" verbunden. Ein auf diese Weise erstellter [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) wird als "planarer Graph (Planar Graph)" bezeichnet.
 
 Ein planarer Graph ist ein Graph, der in einer Ebene gezeichnet werden kann, ohne dass sich die Kanten schneiden. Der Vier-Farben-Satz reduziert sich auf das Problem: "Alle Knoten jedes planaren Graphen können mit **4 Farben** so gefärbt werden, dass benachbarte Knoten unterschiedliche Farben haben."
 
@@ -199,7 +199,7 @@ Im Jahr 1879 veröffentlichte ein Mathematiker namens Alfred Kempe einen Beweis 
 
 ## 4. Konvertierung in die Graphentheorie
 
-Um den Vier-Farben-Satz mathematisch streng zu behandeln, wird das Problem in die Sprache der Graphentheorie übersetzt. Jede Region auf der Karte wird als "Knoten (Vertex)" betrachtet, und Regionen, die eine Grenze teilen, werden durch eine "Kante (Edge)" verbunden. Ein auf diese Weise erstellter Graph wird als "planarer Graph (Planar Graph)" bezeichnet.
+Um den Vier-Farben-Satz mathematisch streng zu behandeln, wird das Problem in die Sprache der Graphentheorie übersetzt. Jede Region auf der Karte wird als "Knoten (Vertex)" betrachtet, und Regionen, die eine Grenze teilen, werden durch eine "Kante (Edge)" verbunden. Ein auf diese Weise erstellter [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) wird als "planarer Graph (Planar Graph)" bezeichnet.
 
 Ein planarer Graph ist ein Graph, der in einer Ebene gezeichnet werden kann, ohne dass sich die Kanten schneiden. Der Vier-Farben-Satz reduziert sich auf das Problem: "Alle Knoten jedes planaren Graphen können mit **4 Farben** so gefärbt werden, dass benachbarte Knoten unterschiedliche Farben haben."
 

@@ -25,14 +25,14 @@ tags: ["complexity-theory", "p-vs-np", "np-complete", "millennium-prize", "pytho
 計算量を示す際によく使われるのが $O$ 記法です。これは入力サイズ $n$ に対する最悪計算量の上限を表します。
 
 - $O(1)$: 定数時間。入力サイズに依存しない。
-- $O(\log n)$: 対数時間。二分探索など。
+- $O(\log n)$: 対数時間。[二分探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)など。
 - $O(n)$: 線形時間。単純な探索など。
-- $O(n \log n)$: 効率的なソートアルゴリズム（クイックソート、マージソートなど）。
+- $O(n \log n)$: 効率的な[ソートアルゴリズム](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)（[クイックソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)、[マージソート](https://kenji.blog/p/sorting-algorithms-visualized-bubble-quick-merge/)など）。
 - $O(n^2), O(n^3)$: 多項式時間。二重ループ、三重ループなど。
 - $O(2^n)$: 指数時間。総当たりによる探索など。
 - $O(n!)$: 階乗時間。巡回セールスマン問題の単純な総当たりなど。
 
-以下のグラフは、入力サイズに対する計算ステップ数の増加度合いを視覚化したものです。
+以下の[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)は、入力サイズに対する計算ステップ数の増加度合いを視覚化したものです。
 
 ```mermaid
 xychart-beta
@@ -61,7 +61,7 @@ xychart-beta
 - **最短経路問題**: カーナビのように、2点間の最短ルートを見つける（[ダイクストラ法](https://kenji.blog/p/graph-theory-dijkstra-a-star/)で $O(E + V \log V)$ ）。
 - **素数判定問題**: ある数が素数かどうかを判定する（AKS素数判定法により多項式時間で解けることが証明されました）。
 
-以下はクラスPの代表例である、二分探索アルゴリズムのPython実装です。
+以下はクラスPの代表例である、二分[探索アルゴリズム](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)のPython実装です。
 
 ```python
 def binary_search(arr, target):
@@ -199,7 +199,7 @@ graph TD
 
 驚くべきことに、1971年にスティーブン・クックとレオニード・レビンによって、 **充足可能性問題（SAT）** がNP完全であることが証明されました（クック・レビンの定理）。
 
-その後、リチャード・カープによって、巡回セールスマン問題、ナップサック問題、グラフの彩色問題など、実社会の最適化問題の多くが **NP完全** であることが次々と証明されました（カープの21のNP完全問題）。
+その後、リチャード・カープによって、巡回セールスマン問題、[ナップサック問題](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)、[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)の彩色問題など、実社会の最適化問題の多くが **NP完全** であることが次々と証明されました（カープの21のNP完全問題）。
 
 **NP完全問題の最大の性質は、「NP完全問題のうちどれか1つでも多項式時間で解けるアルゴリズムが見つかれば、すべてのNP問題が多項式時間で解ける（つまり $P = NP$ となる）」という点です。** 
 これは計算機科学における究極のドミノ倒しと言えます。
@@ -302,7 +302,7 @@ print(f"近似解: 距離 {dist_greedy:.2f}, ルート {path_greedy}")
 計算複雑性理論においては、量子コンピュータが多項式時間で解ける問題のクラスを **BQP (Bounded-error Quantum Polynomial time)** と呼びます。ピーター・ショアが考案した「[ショアのアルゴリズム](https://kenji.blog/p/quantum-computing-shors-algorithm/)」により、素因数分解はBQPに属することが証明されました（量子コンピュータで素早く解ける）。
 
 しかし、現在の計算機科学界のコンセンサスでは、 **$NP完全 \subseteq BQP$ とは考えられていません**。
-つまり、量子コンピュータであっても、巡回セールスマン問題やナップサック問題のようなNP完全問題を多項式時間で解くことはできないと考えられています。量子コンピュータは魔法の杖ではなく、特定の数学的構造を持つ問題（周期性発見など）に対してのみ圧倒的なスピードを発揮する機械なのです。
+つまり、量子コンピュータであっても、巡回セールスマン問題や[ナップサック問題](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)のようなNP完全問題を多項式時間で解くことはできないと考えられています。量子コンピュータは魔法の杖ではなく、特定の数学的構造を持つ問題（周期性発見など）に対してのみ圧倒的なスピードを発揮する機械なのです。
 
 ```mermaid
 graph TD
@@ -338,7 +338,7 @@ graph TD
 2. **緩和と近似に逃げる**:
     - **近似アルゴリズム**: 最適解からの誤差が一定範囲内に収まることを保証しつつ、多項式時間で解く。
     - **ヒューリスティクス**: 遺伝的アルゴリズムや焼きなまし法など、数学的な保証はないが経験的に「そこそこ良い解」を高速に出す手法を採用する。
-    - **動的計画法 (DP)**: ナップサック問題のように、入力の数値の大きさに依存する（擬似多項式時間）解法が存在する場合は、入力の制約を利用する。
+    - **[動的計画法](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))**: [ナップサック問題](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)のように、入力の数値の大きさに依存する（擬似多項式時間）解法が存在する場合は、入力の制約を利用する。
     - **SATソルバー・MILPソルバー**: 近年発達が著しい汎用の数理最適化ソルバーに定式化して投げる。ソルバーは内部で高度な枝刈りを行ってくれるため、実用的なサイズなら厳密解が出せることも多い。
 
 ```python

@@ -27,13 +27,13 @@ tags: ["Git", "Version Control", "Troubleshooting"]
 
 要让许多故障排查变得简单，第一步就是了解Git是如何保存数据的。存在于你项目根目录中的隐藏文件夹 `.git`，正是Git的心脏。Git并不是顺次记录简单文件差异（补丁）的系统，而是将数据作为 **快照流（Stream of snapshots）** 来进行管理。
 
-### 2.1 对象模型：Blob, Tree, Commit
+### 2.1 对象模型：Blob, [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), Commit
 
 Git主要使用3种对象来表示仓库的状态。这些对象保存在 `.git/objects` 中。
 
 1. **Blob (Binary Large Object)**
    保存文件内容本身的对象。文件名和权限信息不包含在此处。纯字节流会经过zlib压缩，并通过SHA-1散列值（40个字符的十六进制数）来识别。
-2. **Tree**
+2. **[Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
    表示目录结构的对象。Tree对象包含指向其他Tree对象（子目录）或Blob对象（文件）的指针（SHA-1散列值），以及它们的文件名和访问权限。它扮演着类似UNIX目录的角色。
 3. **Commit**
    保存指向某一时点整个仓库顶层Tree对象的指针，以及元数据（作者、提交日期、提交信息），还有指向前一次提交（父提交）的指针。
@@ -334,7 +334,7 @@ squash 3c4d5e6 添加测试
 
 ### 解决方案：通过二分查找定位Bug
 
-Git内置了一个工具，可以通过数学上的二分查找（Binary Search）来找出混入Bug的提交。由于时间复杂度为 $\mathcal{O}(\log N)$，即使有1000个提交，只需大约10次测试就能定位出来。
+Git内置了一个工具，可以通过数学上的二分查找（[Binary Search](https://kenji.blog/zh-cn/p/search-algorithms-linear-binary-hash-table-principles/)）来找出混入Bug的提交。由于时间复杂度为 $\mathcal{O}(\log N)$，即使有1000个提交，只需大约10次测试就能定位出来。
 
 ```bash
 # 开始查找

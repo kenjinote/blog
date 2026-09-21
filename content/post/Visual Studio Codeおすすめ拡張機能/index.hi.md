@@ -17,7 +17,7 @@ description: 'Visual Studio Code (VSCode) को और अधिक सुव�
 | वर्चुअल और कंटेनर प्रबंधन | [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | Docker कंटेनरों के प्रबंधन का समर्थन करता है |
 | कोड प्रबंधन | GitHub Pull Requests | GitHub | VSCode पर GitHub के पुल रिक्वेस्ट का प्रबंधन करता है |
 | कोड प्रबंधन | GitHub Copilot | GitHub | AI द्वारा कोड पूरा करने का समर्थन करता है |
-| कोड प्रबंधन | Git Graph | mhutchie | Git की ब्रांच और कमिट्स को ग्राफिकल तरीके से प्रदर्शित करता है |
+| कोड प्रबंधन | Git [Graph](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) | mhutchie | Git की ब्रांच और कमिट्स को ग्राफिकल तरीके से प्रदर्शित करता है |
 | कोड प्रबंधन | Git History | Don Jayamanne | Git का इतिहास प्रदर्शित करता है |
 | ब्राउज़र और वेब विकास | Debugger for Firefox | Firefox DevTools | VSCode पर Firefox के डीबगर का उपयोग करता है |
 | ब्राउज़र और वेब विकास | Microsoft Edge Tool For VScode | Microsoft | VSCode पर Edge के डेवलपर टूल का उपयोग करता है |

@@ -17,9 +17,9 @@ tags:
 
 ## 1. Pendahuluan
 
-Dalam ilmu komputer modern, **Teori Graf** (Graph Theory) menyediakan kerangka matematis yang kuat untuk memodelkan struktur jaringan. Dalam kehidupan kita sehari-hari, teknologi untuk menghitung "jalur terpendek" digunakan dalam berbagai situasi, seperti navigasi mobil, panduan transfer kereta api, perutean internet, hingga pencarian jalur pada AI game.
+Dalam ilmu komputer modern, **Teori Graf** ([Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory) menyediakan kerangka matematis yang kuat untuk memodelkan struktur jaringan. Dalam kehidupan kita sehari-hari, teknologi untuk menghitung "jalur terpendek" digunakan dalam berbagai situasi, seperti navigasi mobil, panduan transfer kereta api, perutean internet, hingga pencarian jalur pada AI game.
 
-Artikel ini akan membahas secara komprehensif mulai dari definisi matematis teori graf yang menjadi dasar pencarian jalur ini, cara kerja algoritma pencarian perwakilan yaitu **Algoritma Dijkstra** (Dijkstra's Algorithm) dan pengembangannya yaitu **Algoritma A*** (A-Star Algorithm), bukti matematisnya, serta metode implementasi praktis menggunakan Python.
+Artikel ini akan membahas secara komprehensif mulai dari definisi matematis teori graf yang menjadi dasar pencarian jalur ini, cara kerja algoritma pencarian perwakilan yaitu **Algoritma [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** (Dijkstra's Algorithm) dan pengembangannya yaitu **Algoritma A*** (A-Star Algorithm), bukti matematisnya, serta metode implementasi praktis menggunakan Python.
 
 ## 2. Dasar Teori Graf
 
@@ -76,7 +76,7 @@ $$
 
 ---
 
-## 3. Algoritma Dijkstra (Dijkstra's Algorithm)
+## 3. Algoritma [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Dijkstra's Algorithm)
 
 **Algoritma Dijkstra**, yang dirancang oleh Edsger W. Dijkstra, adalah algoritma untuk menemukan jalur terpendek dari titik awal tunggal ke semua simpul dalam graf dengan bobot non-negatif.
 
@@ -98,7 +98,7 @@ $$
 d[v] = d[u] + w(u, v)
 $$
 
-### 3.3 Implementasi Algoritma Dijkstra dengan Python
+### 3.3 Implementasi Algoritma [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) dengan Python
 
 Untuk implementasi yang efisien, kita menggunakan antrean prioritas (Priority Queue) sebagai struktur data untuk mendapatkan nilai minimum. Dalam Python, kita dapat menggunakan modul `heapq`.
 
@@ -149,7 +149,7 @@ Oleh karena itu, kompleksitas waktunya menjadi $ O((|V| + |E|) \log |V|) $. Jika
 
 ## 4. Algoritma A* (A-Star Algorithm)
 
-Algoritma Dijkstra dapat diandalkan, namun karena memperluas pencarian ke segala arah tanpa mempertimbangkan arah tujuan, hal ini sering kali mengakibatkan pencarian yang sia-sia. Untuk menyelesaikan masalah ini, digunakanlah **Algoritma A***.
+Algoritma [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) dapat diandalkan, namun karena memperluas pencarian ke segala arah tanpa mempertimbangkan arah tujuan, hal ini sering kali mengakibatkan pencarian yang sia-sia. Untuk menyelesaikan masalah ini, digunakanlah **Algoritma A***.
 
 ### 4.1 Pengenalan Fungsi Heuristik
 
@@ -254,7 +254,7 @@ def reconstruct_path(came_from, current):
     return path
 ```
 
-### 4.5 Perbandingan antara Algoritma Dijkstra dan A*
+### 4.5 Perbandingan antara Algoritma [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) dan A*
 
 Diagram Mermaid berikut adalah gambaran perbandingan jangkauan pencarian algoritma Dijkstra dan A*. Sementara algoritma Dijkstra memperluas pencarian secara konsentris (melingkar), A* memajukan pencarian dalam bentuk elips yang meregang ke arah tujuan.
 
@@ -283,7 +283,7 @@ graph TD
 
 ## 5. Aplikasi Pencarian Jalur dan Prospek Masa Depan
 
-Algoritma Dijkstra dan algoritma A* adalah metode dasar, namun menjadi landasan bagi banyak teknologi terapan.
+Algoritma [Dijkstra](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) dan algoritma A* adalah metode dasar, namun menjadi landasan bagi banyak teknologi terapan.
 
 1. **Pencarian Dua Arah** (Bidirectional Search):
    Sebuah metode yang memajukan pencarian dari titik awal dan titik tujuan secara bersamaan, kemudian bertemu di tengah untuk secara drastis mengurangi ruang pencarian.

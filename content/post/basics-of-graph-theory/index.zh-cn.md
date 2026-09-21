@@ -63,7 +63,7 @@ graph TD
 
 根据边是否具有方向，图大致分为两类。
 
-*   **无向图 (Undirected Graph)** : 边没有方向的图。用于表示始终是相互且双向的关系，例如通信线路、双向道路或 Facebook 的“好友”关系。
+*   **无向图 (Undirected [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** : 边没有方向的图。用于表示始终是相互且双向的关系，例如通信线路、双向道路或 Facebook 的“好友”关系。
 *   **有向图 (Directed Graph)** : 边有方向的图。用于表达单向关系，例如水流、单行道或 Twitter (X) 的“关注”关系。在有向图中，边被清楚地画成箭头。
 
 ```mermaid
@@ -83,7 +83,7 @@ graph LR
 
 ### 3.3. 加权图
 
-在对现实世界问题进行建模时，我们通常不仅想要表达“是否连接”，还想要表达“连接的容易程度”或“成本”。在这种情况下，会使用 **加权图 (Weighted Graph)** ，其中每条边都分配了一个数值（权重）。权重可以表示城市之间的距离、通信延迟时间或旅行成本。
+在对现实世界问题进行建模时，我们通常不仅想要表达“是否连接”，还想要表达“连接的容易程度”或“成本”。在这种情况下，会使用 **加权图 (Weighted [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** ，其中每条边都分配了一个数值（权重）。权重可以表示城市之间的距离、通信延迟时间或旅行成本。
 
 ### 3.4. 路径与环
 
@@ -138,7 +138,7 @@ $$
 
 为了有效地解决图上的问题，在计算机科学的历史中设计了许多优秀的算法。在这里，我们介绍一些在现代软件工程中被认为是必不可少的代表性算法。
 
-### 5.1. 广度优先搜索 (BFS) 与深度优先搜索 (DFS)
+### 5.1. 广度优先搜索 ([BFS](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 与深度优先搜索 ([DFS](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 系统地访问网络中所有顶点且没有遗漏的最基本算法是 **广度优先搜索 (Breadth-First Search, BFS)** 和 **深度优先搜索 (Depth-First Search, DFS)** 。
 
@@ -189,7 +189,7 @@ bfs(graph_data, 'A')
 
 当在地图应用程序上搜索到达目的地的最快路线时，在系统核心运行的就是 **最短路径算法** 。路线具有诸如“距离”和“旅行时间”等成本（权重），目标是找到一条使从起点到终点的累积成本最小化的路径。
 
-由荷兰计算机科学家艾兹格·迪杰斯特拉 (Edsger W. Dijkstra) 于1956年发明的 **迪杰斯特拉算法** ，是一个极其著名的算法，用于在所有边权重为非负数（0或更大）的条件下，有效地计算网络中从单一源点到所有其他顶点的最短路径。
+由荷兰计算机科学家艾兹格·迪杰斯特拉 (Edsger W. [Dijkstra](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) 于1956年发明的 **迪杰斯特拉算法** ，是一个极其著名的算法，用于在所有边权重为非负数（0或更大）的条件下，有效地计算网络中从单一源点到所有其他顶点的最短路径。
 
 迪杰斯特拉算法的核心逻辑是重复“从距离起点最短距离已确定的顶点集合中，选出未确定距离最短的顶点，并通过经过该顶点的路线更新周围顶点的最短距离信息”的过程。通过使用优先队列 (Priority Queue) ，可以大幅缩短执行时间。
 
@@ -242,7 +242,7 @@ print(dijkstra(weighted_graph, 'A'))
 
 想象一下，需要以尽可能低的总成本将巨大网络中的所有基地物理连接起来。例如，在建设电网以向新住宅区供电，或在多个城市之间铺设光纤电缆时，这种情况要求最小化基础设施建设成本。
 
-这样，包含图的所有顶点、绝对没有环（即树结构）且所使用边的权重总和最小的子图称为 **最小生成树 (Minimum Spanning Tree, MST)** 。
+这样，包含图的所有顶点、绝对没有环（即树结构）且所使用边的权重总和最小的子图称为 **最小生成树 (Minimum Spanning [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), MST)** 。
 
 寻找这个最小生成树的代表性算法之一是 **克鲁斯卡尔算法** 。克鲁斯卡尔算法是积累局部最优解的“贪心算法 (Greedy Algorithm)”的一个典型例子，遵循极其简单直观的步骤。
 
@@ -260,7 +260,7 @@ print(dijkstra(weighted_graph, 'A'))
 
 ## 6. 二分图与匹配问题
 
-在图论中占据独特地位的是 **二分图 (Bipartite Graph)** 。二分图是指，当所有顶点被划分为两组（例如，组 $U$ 和组 $V$）时，每条边总是连接 $U$ 中的一个顶点和 $V$ 中的一个顶点，而绝对没有连接同一组内顶点的边的图。
+在图论中占据独特地位的是 **二分图 (Bipartite [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** 。二分图是指，当所有顶点被划分为两组（例如，组 $U$ 和组 $V$）时，每条边总是连接 $U$ 中的一个顶点和 $V$ 中的一个顶点，而绝对没有连接同一组内顶点的边的图。
 
 二分图非常适合对具有不同属性的两个集合之间的关系进行建模，例如“求职者”和“招聘公司”、“学生”和“实验室”或“出租车”和“乘客”。
 

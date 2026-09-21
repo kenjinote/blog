@@ -51,7 +51,7 @@ Dari peta detail Königsberg yang nyata, ia mengabaikan seluruh bentuk fisik dan
 1. Mewakili **daratan (pulau dan tepian)** sekadar sebagai "titik" tanpa ukuran. Dalam istilah modern, ini disebut **simpul** (Vertex) atau **node** (Node).
 2. Mewakili **jembatan** sebagai "garis" yang menghubungkan simpul dengan simpul lainnya. Ini disebut **sisi** (Edge) atau **tautan** (Link). Kelengkungan atau panjang garis tidak menjadi masalah.
 
-Struktur diskrit yang direpresentasikan sebagai himpunan simpul terhingga dan sisi-sisi yang menghubungkannya ini disebut sebagai **graf** (Graph) dalam matematika. Inilah momen lahirnya bidang yang sekarang kita sebut sebagai "Teori Graf".
+Struktur diskrit yang direpresentasikan sebagai himpunan simpul terhingga dan sisi-sisi yang menghubungkannya ini disebut sebagai **graf** ([Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) dalam matematika. Inilah momen lahirnya bidang yang sekarang kita sebut sebagai "Teori Graf".
 
 Diagram Mermaid berikut menunjukkan bagaimana peta geografis kota Königsberg diubah menjadi representasi graf abstrak.
 

@@ -521,7 +521,7 @@ Eso es todo. El `.sort()` de Python o el `std::sort` de C++ se implementan con a
 
 Pero, entonces, ¿por qué necesitamos aprender los algoritmos de ordenamiento?
 
-1. **Comprensión de conceptos fundamentales**: Conceptos como la complejidad computacional (Big O Notation), in-place/out-of-place y la estabilidad son la base para el diseño de cualquier algoritmo o estructura de datos, no solo para la ordenación.
+1. **Comprensión de conceptos fundamentales**: Conceptos como la complejidad computacional ([Big O](https://kenji.blog/es/p/time-space-complexity-big-o-notation-examples/) Notation), in-place/out-of-place y la estabilidad son la base para el diseño de cualquier algoritmo o estructura de datos, no solo para la ordenación.
 2. **Sistemas con restricciones especiales**: En entornos como sistemas embebidos donde la memoria es extremadamente limitada, puede ser necesario implementar un ordenamiento por montículos de espacio $O(1)$ o un ordenamiento rápido in-place por su cuenta.
 3. **Aprovechar las características de los datos**: Cuando se clasifican "un millón de datos cuyo rango de valores se limita del 1 al 100", la implementación de un ordenamiento por conteo ($O(n)$) será abrumadoramente más rápida que el uso del Timsort estándar ($O(n \log n)$).
 

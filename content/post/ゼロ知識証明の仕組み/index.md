@@ -131,7 +131,7 @@ zk-STARKsは楕円曲線暗号ではなく、 **ハッシュ関数のみ** に�
 
 計算の検証は、AIR（Algebraic Intermediate Representation）と呼ばれる形式に変換された後、一次元または多次元の多項式の性質を利用して行われます。STARKsの核心は、 **FRI（Fast Reed-Solomon Interactive Oracle Proof of Proximity）** プロトコルにあります。
 
-FRIプロトコルは、「ある関数が特定の次数の多項式に十分近いか（Proximity）」を検証する技術です。証明者は、多項式の値をマークルツリー（Merkle Tree）のリーフとしてコミット（多項式コミットメント）します。
+FRIプロトコルは、「ある関数が特定の次数の多項式に十分近いか（Proximity）」を検証する技術です。証明者は、多項式の値をマークルツリー（Merkle [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）のリーフとしてコミット（多項式コミットメント）します。
 
 ```mermaid
 graph TD

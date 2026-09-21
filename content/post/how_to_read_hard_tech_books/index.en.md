@@ -81,7 +81,7 @@ graph LR
 In memorizing technical books, "memorizing long proofs completely" is meaningless. Break down the knowledge into atomic units (Atomic) and turn them into cards.
 
 - **Bad Card**: "Write the entire proof of [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm."
-- **Good Card**: "In Dijkstra's algorithm, what is the condition for a vertex's shortest distance to be considered confirmed?" -> "When the vertex with the minimum provisional distance is selected from the set of unconfirmed vertices."
+- **Good Card**: "In [Dijkstra](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s algorithm, what is the condition for a vertex's shortest distance to be considered confirmed?" -> "When the vertex with the minimum provisional distance is selected from the set of unconfirmed vertices."
 - **Good Card**: "[State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) the formula for [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)." -> "For a prime $p$ and an integer $a$ coprime to $p$, $a^{p-1} \equiv 1 \pmod p$."
 
 When memorizing formulas, it is also effective to register them in Anki in LaTeX format and utilize Cloze Deletion questions.
@@ -175,7 +175,7 @@ To find $d$ satisfying the formula $e \cdot d \equiv 1 \pmod{\phi(n)}$, it is ne
 
 ### 4.2 Example 2: [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s Algorithm and Relaxation
 
-Consider Dijkstra's algorithm for solving the Single-Source Shortest Path (SSSP) problem in graph theory.
+Consider [Dijkstra](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s algorithm for solving the Single-Source Shortest Path (SSSP) problem in graph theory.
 
 The mathematical and algorithmic core is an operation called "Relaxation".
 When there is an edge from vertex $u$ to vertex $v$ with weight $w(u, v)$, we update the provisional shortest distance $d[v]$ to vertex $v$ with the following formula:

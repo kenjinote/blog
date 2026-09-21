@@ -304,7 +304,7 @@ sequenceDiagram
     Client-->>User: Display Insights
 ```
 
-- **OpenAI (GPT-4o)**: 画像認識精度が極めて高く、手書きの図面や複雑なグラフの読み取りに優れます。また、Realtime APIを利用した超低遅延（数百ミリ秒）のネイティブな音声対話も強力です。
+- **OpenAI (GPT-4o)**: 画像認識精度が極めて高く、手書きの図面や複雑な[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)の読み取りに優れます。また、Realtime APIを利用した超低遅延（数百ミリ秒）のネイティブな音声対話も強力です。
 - **Google (Gemini 1.5 Pro)**: ** 動画解析において他を圧倒しています。** 1時間の動画ファイル（フレーム群＋音声）をそのまま入力し、「12分45秒で画面右端に映った人物が持っている資料のタイトルは？」といったピンポイントな質問に回答可能です。
 - **Anthropic (Claude 3.5 Sonnet)**: 画像認識（Vision）能力はGPT-4oと同等レベルで非常に優秀です。UIのスクリーンショットを渡して「この画面のReactコンポーネントコードを生成して」といったフロントエンド開発支援において無類の強さを発揮します。
 

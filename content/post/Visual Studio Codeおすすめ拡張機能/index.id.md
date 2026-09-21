@@ -17,7 +17,7 @@ description: 'Memperkenalkan daftar ekstensi yang direkomendasikan yang membuat 
 | Manajemen Virtual & Kontainer | [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft  | Mendukung manajemen kontainer Docker |
 | Manajemen Kode | GitHub Pull Requests | GitHub | Mengelola Pull Request GitHub di VSCode |
 | Manajemen Kode | GitHub Copilot | GitHub | Mendukung penyelesaian kode menggunakan AI |
-| Manajemen Kode | Git Graph | mhutchie | Menampilkan cabang dan komit Git secara grafis |
+| Manajemen Kode | Git [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) | mhutchie | Menampilkan cabang dan komit Git secara grafis |
 | Manajemen Kode | Git History | Don Jayamanne | Menampilkan riwayat Git |
 | Browser & Pengembangan Web | Debugger for Firefox | Firefox DevTools | Menggunakan debugger Firefox di VSCode |
 | Browser & Pengembangan Web | Microsoft Edge Tool For VScode | Microsoft | Menggunakan alat pengembang Edge di VSCode |

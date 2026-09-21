@@ -75,7 +75,7 @@ tags: ['Windows', 'macOS', 'Git', 'CMake', 'Development']
 
 讓我們以數學的角度來思考一下，當檔案系統在解析檔案路徑時，內部進行了什麼處理。
 
-在區分大小寫的 ext4 中，目錄內的項目（Entry）是以雜湊表（Hash Table）或 [B-Tree](https://kenji.blog/zh-tw/p/b-tree-database-index-theory/) 等結構來管理的。假設目錄內的檔案數為 $N$，檔名的長度為 $L$，在單純的二元搜尋或樹狀搜尋下，時間複雜度如下：
+在區分大小寫的 ext4 中，目錄內的項目（Entry）是以雜湊表（[Hash Table](https://kenji.blog/zh-tw/p/search-algorithms-linear-binary-hash-table-principles/)）或 [B-Tree](https://kenji.blog/zh-tw/p/b-tree-database-index-theory/) 等結構來管理的。假設目錄內的檔案數為 $N$，檔名的長度為 $L$，在單純的二元搜尋或樹狀搜尋下，時間複雜度如下：
 
 $$ T_{search}(N) = O(L \log N) $$
 

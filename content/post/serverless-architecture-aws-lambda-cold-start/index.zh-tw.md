@@ -175,7 +175,7 @@ $ P_{warm} \approx 1 - e^{-\lambda \cdot T_w} $
 ### 5.2. 輕量化部署套件
 
 Lambda 啟動時會從 S3 下載程式碼。因此，保持套件大小的精簡是直接相關的最佳化手段。
-避免包含不必要的相依關係（如 DevDependencies 等），並使用 Webpack / esbuild 等打包工具進行程式碼縮小化（Minify）及 Tree-shaking，這是非常重要的。
+避免包含不必要的相依關係（如 DevDependencies 等），並使用 Webpack / esbuild 等打包工具進行程式碼縮小化（Minify）及 [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-shaking，這是非常重要的。
 
 ### 5.3. 最佳化初始化處理與延遲求值 (Lazy Initialization)
 

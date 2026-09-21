@@ -126,7 +126,7 @@ print(f"Hasil pengurutan: {sorted_data}")
 
 Pada implementasi ini, tidak ada kemungkinan bahwa hasil urutan akan salah. Namun, jika perolehan angka acaknya sangat buruk dan selalu terus memilih nilai maksimum atau minimum sebagai pivot, waktu komputasi akan meningkat drastis.
 
-### Contoh 2: Membangun Tabel Hash (Hash Table)
+### Contoh 2: Membangun Tabel Hash ([Hash Table](https://kenji.blog/id/p/search-algorithms-linear-binary-hash-table-principles/))
 
 Contoh metode Las Vegas lainnya adalah pembuatan fungsi hash yang sempurna (perfect hash function).
 Misalkan untuk himpunan data tertentu, kita ingin membuat sebuah fungsi hash yang sama sekali tidak mengalami *collision* (kejadian di mana data yang berbeda memiliki nilai hash yang sama).

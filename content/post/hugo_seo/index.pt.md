@@ -14,7 +14,7 @@ O Hugo é um dos geradores de sites estáticos (SSG) mais rápidos do mundo, esc
 
 Para melhorar as classificações de pesquisa, aumentar o poder de difusão nas mídias sociais e, consequentemente, aumentar dramaticamente o número de acessos ao blog, medidas meticulosas de SEO (Otimização para Motores de Busca) são essenciais. O coração do SEO no Hugo é a integração do **Frontmatter**, escrito no início de cada artigo em markdown, e os **Templates ([Layout](https://kenji.blog/pt/p/browser-rendering-mechanism-dom-paint/)s)**, que o interpretam para expandir metadados dentro da tag HTML `<head>`.
 
-Neste artigo, explicaremos de forma minuciosa, com um volume esmagador de mais de 10.000 caracteres, desde as configurações de frontmatter para extrair o máximo das funcionalidades do Hugo e implementar medidas avançadas de SEO, até várias meta tags, OGP (Open Graph Protocol), Twitter Cards, e a saída de dados estruturados usando JSON-LD.
+Neste artigo, explicaremos de forma minuciosa, com um volume esmagador de mais de 10.000 caracteres, desde as configurações de frontmatter para extrair o máximo das funcionalidades do Hugo e implementar medidas avançadas de SEO, até várias meta tags, OGP (Open [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol), Twitter Cards, e a saída de dados estruturados usando JSON-LD.
 
 ---
 
@@ -122,7 +122,7 @@ Ao usar o `.Summary` do Hugo como fallback, a frase inicial do artigo pode ser e
 
 ## 4. OGP e Twitter Cards: Maximizando o CTR nas Mídias Sociais
 
-Para que os artigos sejam exibidos em um formato de cartão atraente quando compartilhados em redes sociais como Twitter (X) e Facebook, a configuração do Open Graph Protocol (OGP) e do Twitter Cards é indispensável. Eles também são gerados dinamicamente a partir do frontmatter.
+Para que os artigos sejam exibidos em um formato de cartão atraente quando compartilhados em redes sociais como Twitter (X) e Facebook, a configuração do Open [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP) e do Twitter Cards é indispensável. Eles também são gerados dinamicamente a partir do frontmatter.
 
 ### 4.1. Desafios com Templates Integrados
 

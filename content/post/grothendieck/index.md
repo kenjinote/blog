@@ -112,7 +112,7 @@ graph TD
 
 1980年代に入り、彼は非常にシンプルで視覚的な概念から、数学の最も深い謎に迫る新しい理論を提唱しました。
 
-その一つが **「子供のデッサン（Dessins d'enfants）」** です。球面などの曲面上に描かれた単純なグラフから、絶対[ガロア](https://kenji.blog/p/galois/)群という神秘的な対象の作用を引き出せることを発見しました。
+その一つが **「子供のデッサン（Dessins d'enfants）」** です。球面などの曲面上に描かれた単純な[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)から、絶対[ガロア](https://kenji.blog/p/galois/)群という神秘的な対象の作用を引き出せることを発見しました。
 
 さらに彼は **「遠[アーベル](https://kenji.blog/p/abel/)幾何学（Anabelian Geometry）」** というプログラムを提唱しました。これは、ある種の代数多様体においては、その基本群と呼ばれる位相的な構造のデータだけで元の対象が完全に復元できるという驚くべき予想です。
 

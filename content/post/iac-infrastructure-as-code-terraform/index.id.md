@@ -109,7 +109,7 @@ Inti dari Terraform terletak pada pendekatan **Deklaratif** ini. Mengapa pendeka
 
 Dalam skrip imperatif, manusia harus mendeskripsikan secara akurat urutan pembuatan sumber daya. Misalnya, prosedur membuat VPC, kemudian membuat *subnet*, lalu menempatkan EC2 di dalam *subnet* tersebut.
 
-Di Terraform, *Terraform Core* secara otomatis membangun **Grafik Ketergantungan (Dependency Graph)** dari relasi referensi yang muncul dalam kode (misalnya, merujuk pada `aws_vpc.main.id` dalam pengaturan *subnet*).
+Di Terraform, *Terraform Core* secara otomatis membangun **Grafik Ketergantungan (Dependency [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** dari relasi referensi yang muncul dalam kode (misalnya, merujuk pada `aws_vpc.main.id` dalam pengaturan *subnet*).
 
 ```mermaid
 graph TD

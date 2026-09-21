@@ -34,7 +34,7 @@ C++26 dibangun di atas kelompok fitur berskala besar seperti Concepts dan Module
 
 # 1. Reflection (Static Reflection): Revolusi Sejati Metaprogramming
 
-Bisa dibilang fitur unggulan terbesar di C++26 adalah **Static Reflection (Refleksi Statis)** (terutama didasarkan pada proposal seperti P2996). Sebelumnya di C++, untuk mendapatkan informasi mengenai struktur tipe atau variabel anggota dari dalam program, diperlukan penggunaan Template Metaprogramming (TMP) yang kompleks atau makro. Namun, berkat mekanisme Reflection C++26, kini kita dapat mengakses struktur program itu sendiri (AST: Abstrak Syntax Tree) secara aman dan intuitif saat proses kompilasi.
+Bisa dibilang fitur unggulan terbesar di C++26 adalah **Static Reflection (Refleksi Statis)** (terutama didasarkan pada proposal seperti P2996). Sebelumnya di C++, untuk mendapatkan informasi mengenai struktur tipe atau variabel anggota dari dalam program, diperlukan penggunaan Template Metaprogramming (TMP) yang kompleks atau makro. Namun, berkat mekanisme Reflection C++26, kini kita dapat mengakses struktur program itu sendiri (AST: Abstrak Syntax [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) secara aman dan intuitif saat proses kompilasi.
 
 ## 1.1 Tantangan pada C++23 dan Sebelumnya
 

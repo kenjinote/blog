@@ -8,7 +8,7 @@ categories: ["computer-science", "databases"]
 tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 ---
 
-## 1. El encuentro entre los índices de bases de datos y los B-Tree
+## 1. El encuentro entre los índices de bases de datos y los B-[Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)
 
 En los sistemas modernos, las bases de datos son el núcleo de las aplicaciones. La capacidad de buscar y recuperar los datos deseados en milisegundos entre millones o miles de millones de registros es una de las funciones más importantes de un sistema de gestión de bases de datos (DBMS). Esta increíble velocidad de búsqueda está respaldada por los **índices** (índices), y la estructura de datos detrás de ellos es el **B-Tree** (Árbol B) y su derivado, el **B+Tree** (Árbol B+).
 
@@ -26,7 +26,7 @@ Cuando una base de datos busca en un índice, minimizar el número de veces que 
 
 ### 2.2 Los límites de los árboles de búsqueda binaria (BST)
 
-En la búsqueda en memoria, los árboles de búsqueda binaria equilibrada como el **Árbol de Búsqueda Binaria** (Binary Search Tree: BST) y el **Árbol Rojo-Negro** (Red-Black Tree) permiten búsquedas rápidas con una complejidad computacional de $ O(\log N) $. Sin embargo, si esto se aplica directamente a una base de datos en disco, surge un problema grave.
+En la búsqueda en memoria, los árboles de búsqueda binaria equilibrada como el **Árbol de Búsqueda Binaria** ([Binary Search](https://kenji.blog/es/p/search-algorithms-linear-binary-hash-table-principles/) Tree: BST) y el **Árbol Rojo-Negro** (Red-Black Tree) permiten búsquedas rápidas con una complejidad computacional de $ O(\log N) $. Sin embargo, si esto se aplica directamente a una base de datos en disco, surge un problema grave.
 
 Un árbol binario tiene un máximo de dos nodos hijos por nodo. A medida que aumenta el número de elementos $ N $, la altura del árbol $ h $ se vuelve proporcionalmente más profunda a $ \log_2 N $. Por ejemplo, si $ N = 1,000,000 $, la altura del árbol será de aproximadamente 20. Suponiendo que cada nodo está ubicado en una página de disco diferente, en el peor de los casos ocurrirán 20 operaciones de I/O de disco aleatorias. Este es un retraso fatal para una base de datos.
 
@@ -73,7 +73,7 @@ Esto prueba matemáticamente que el **B-Tree** es extremadamente eficiente en la
 
 ## 4. El estándar de la base de datos: La evolución hacia el B+Tree
 
-Lo que se usa en los [RDBMS](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/) reales (como InnoDB de MySQL y PostgreSQL) es el **B+Tree**, una versión mejorada del B-Tree.
+Lo que se usa en los [RDBMS](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/) reales (como InnoDB de MySQL y PostgreSQL) es el **B+[Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**, una versión mejorada del B-Tree.
 
 ### 4.1 Diferencias entre B-Tree y B+Tree
 
@@ -86,7 +86,7 @@ En un B-Tree, los datos reales (o punteros a los datos) se almacenan tanto en lo
 
 Al eliminar los punteros a datos reales de los nodos internos, es posible empaquetar más claves en un solo nodo interno (página). Esto incrementa aún más el número de ramificaciones (Fan-out), mantiene la altura del árbol $ h $ más baja y reduce la cantidad de I/O de disco.
 
-Además, en búsquedas de rango que se utilizan con frecuencia en SQL como `WHERE id BETWEEN 10 AND 100`, un B-Tree requiere atravesar el árbol muchas veces. Sin embargo, con un **B+Tree**, una vez que se encuentra el nodo hoja de inicio, los datos se pueden leer continuamente simplemente siguiendo los enlaces de los nodos hoja.
+Además, en búsquedas de rango que se utilizan con frecuencia en SQL como `WHERE id BETWEEN 10 AND 100`, un B-[Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) requiere atravesar el árbol muchas veces. Sin embargo, con un **B+Tree**, una vez que se encuentra el nodo hoja de inicio, los datos se pueden leer continuamente simplemente siguiendo los enlaces de los nodos hoja.
 
 ```mermaid
 graph TD
@@ -114,7 +114,7 @@ graph TD
     style H fill:#f9f,stroke:#333,stroke-width:2px
     style I fill:#f9f,stroke:#333,stroke-width:2px
 ```
-*(Figura: Estructura del B+Tree. Los nodos hoja están enlazados en forma de cadena)*
+*(Figura: Estructura del B+[Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/). Los nodos hoja están enlazados en forma de cadena)*
 
 ## 5. Ejemplo de implementación del B-Tree (Simulación en Python)
 
@@ -211,7 +211,7 @@ else:
     print("No se encontró la clave")
 ```
 
-Como puede verse en esta implementación, la inserción en un B-Tree mantiene el árbol perfectamente equilibrado (Balanced) al dividir (Split) los nodos de abajo hacia arriba según sea necesario. Como resultado, sin importar en qué orden se inserten los datos, el rendimiento de búsqueda no se degradará.
+Como puede verse en esta implementación, la inserción en un B-[Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) mantiene el árbol perfectamente equilibrado (Balanced) al dividir (Split) los nodos de abajo hacia arriba según sea necesario. Como resultado, sin importar en qué orden se inserten los datos, el rendimiento de búsqueda no se degradará.
 
 ## 6. Conclusión y desarrollo
 

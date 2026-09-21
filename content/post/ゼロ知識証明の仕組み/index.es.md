@@ -131,7 +131,7 @@ Las zk-STARKs no basan su seguridad en la criptografía de curva elíptica, sino
 
 La verificación del cálculo se realiza utilizando las propiedades de polinomios de una o múltiples dimensiones después de convertirse a un formato llamado AIR (Algebraic Intermediate Representation). El núcleo de las STARKs reside en el protocolo **FRI (Fast Reed-Solomon Interactive Oracle Proof of Proximity)**.
 
-El protocolo FRI es una técnica para verificar si "cierta función es lo suficientemente cercana (Proximity) a un polinomio de un grado específico". El probador compromete los valores del polinomio como hojas de un árbol de Merkle (Merkle Tree) (compromiso polinómico).
+El protocolo FRI es una técnica para verificar si "cierta función es lo suficientemente cercana (Proximity) a un polinomio de un grado específico". El probador compromete los valores del polinomio como hojas de un árbol de Merkle (Merkle [Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) (compromiso polinómico).
 
 ```mermaid
 graph TD

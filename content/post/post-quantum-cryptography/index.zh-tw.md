@@ -74,7 +74,7 @@ graph LR
 雜湊密碼學是專門用於數位簽章的 PQC 演算法。其安全性的基礎，僅依賴於 SHA-2 或 SHA-3 等安全的「密碼學雜湊函數」所具備的抗碰撞性與單向性。
 
 **機制概要：** 
-以被稱為「藍波簽章（Lamport Signature）」的只能使用一次的一次性簽章方式為起點。透過將其與被稱為「默克爾樹（Merkle Tree）」的樹狀資料結構綁定，實現了使用單一金鑰對進行多次簽章。
+以被稱為「藍波簽章（Lamport Signature）」的只能使用一次的一次性簽章方式為起點。透過將其與被稱為「默克爾樹（Merkle [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）」的樹狀資料結構綁定，實現了使用單一金鑰對進行多次簽章。
 
 **優點：** 
 - 安全性的基礎極其堅固，有著「只要雜湊函數安全就安全」的強力證明。

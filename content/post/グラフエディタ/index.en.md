@@ -8,7 +8,7 @@ image: "img.webp"
 categories: ["tools-development-environment"]
 description: 'Introduces handy web-based graph editors that let you easily create charts and graphs just by entering numbers in your browser. Details features like moving elements via mouse, creating directed graphs, and downloading created graphs as PNG images.'
 ---
-# Graph Editor
+# [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Editor
 
 This is an introduction to a web page where you can easily create simple graphs.
 

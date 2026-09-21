@@ -74,7 +74,7 @@ Many of the algorithms currently being standardized by NIST (such as ML-KEM and 
 Hash-based cryptography is a PQC algorithm specialized for digital signatures. Its security relies entirely on the collision resistance and one-wayness of secure "cryptographic hash functions" like SHA-2 and SHA-3.
 
 **Mechanism Overview:** 
-It starts with a one-time signature scheme called "Lamport Signature." By bundling this in a tree-structured data format called a "Merkle Tree," it allows for multiple signatures using a single key pair.
+It starts with a one-time signature scheme called "Lamport Signature." By bundling this in a tree-structured data format called a "Merkle [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)," it allows for multiple signatures using a single key pair.
 
 **Pros:** 
 - The foundation of its security is extremely solid, carrying a strong proof that it is "secure as long as the hash function is secure."

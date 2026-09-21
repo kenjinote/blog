@@ -81,7 +81,7 @@ graph LR
 En la memorización de libros técnicos, "memorizar de memoria una demostración larga" no tiene sentido. Divide el conocimiento en unidades mínimas (Atómicas) para crear tarjetas.
 
 - **Mala tarjeta**: "Escribe toda la demostración del algoritmo de [Dijkstra](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/)"
-- **Buena tarjeta**: "¿Cuál es la condición para considerar que la distancia más corta de un vértice está confirmada en el algoritmo de Dijkstra?" -> "Cuando se selecciona el vértice con la distancia provisional mínima entre el conjunto de vértices no confirmados."
+- **Buena tarjeta**: "¿Cuál es la condición para considerar que la distancia más corta de un vértice está confirmada en el algoritmo de [Dijkstra](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)?" -> "Cuando se selecciona el vértice con la distancia provisional mínima entre el conjunto de vértices no confirmados."
 - **Buena tarjeta**: "¿Cuál es la fórmula del pequeño teorema de [Fermat](https://kenji.blog/es/p/fermat/)?" -> "Para un número primo $p$ y un número entero $a$ coprimo con $p$, $a^{p-1} \equiv 1 \pmod p$"
 
 Al memorizar fórmulas matemáticas, también es efectivo registrarlas en Anki en formato LaTeX y utilizar preguntas de completar espacios en blanco (Cloze Deletion).
@@ -175,7 +175,7 @@ Para encontrar un $d$ que satisfaga la fórmula matemática $e \cdot d \equiv 1 
 
 ### 4.2 Ejemplo práctico 2: Algoritmo de [Dijkstra](https://kenji.blog/es/p/graph-theory-dijkstra-a-star/) y Relajación (Relaxation)
 
-Consideremos el algoritmo de Dijkstra para resolver el problema de la ruta más corta desde un único origen (SSSP) en la teoría de grafos.
+Consideremos el algoritmo de [Dijkstra](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) para resolver el problema de la ruta más corta desde un único origen (SSSP) en la teoría de grafos.
 
 El núcleo matemático y algorítmico es una operación llamada "Relajación (Relaxation)".
 Cuando hay una arista desde el vértice $u$ al vértice $v$ con peso $w(u, v)$, la distancia más corta provisional $d[v]$ al vértice $v$ se actualiza con la siguiente fórmula:

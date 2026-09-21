@@ -17,7 +17,7 @@ tags: ["Growth Hacking", "GA4", "PostHog", "Conversion Rate"]
 
 技術ブログにおけるSEO（検索エンジン最適化）は、単にキーワードを散りばめることではありません。検索エンジン（Googlebot）とソーシャルメディアのクローラーに対して、コンテンツのセマンティクス（意味）を正確に伝達するプログラマティックなアプローチが求められます。
 
-### 1.1 Open Graph Protocol (OGP) の最適化
+### 1.1 Open [Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP) の最適化
 
 技術記事がX（旧Twitter）やHacker News、Zennなどでシェアされた際、クリックスルーレート（CTR）を最大化するためには、OGPの動的生成が不可欠です。Next.jsのApp Routerを使用している場合、`generateMetadata`関数を用いて記事ごとに最適化されたOGPを出力します。
 
@@ -222,7 +222,7 @@ export async function middleware(request: NextRequest) {
 }
 ```
 
-ブログのページコンポーネント側では、`searchParams.variant` を受け取り、それに応じて「控えめなテキストリンク（A）」にするか、「目立つグラフィカルなバナー（B）」にするかをレンダリングします。
+ブログのページコンポーネント側では、`searchParams.variant` を受け取り、それに応じて「控えめなテキストリンク（A）」にするか、「目立つ[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィカルなバナー（B）」にするかをレンダリングします。
 
 ## 4. データ主導のグロースハック：GA4とPostHogの実装
 

@@ -27,13 +27,13 @@ tags: ["Git", "Version Control", "Troubleshooting"]
 
 許多疑難排解變得容易的第一步，是了解 Git 如何儲存資料。存在於你專案根目錄中的隱藏資料夾 `.git`，正是 Git 的心臟地帶。Git 並非只是一個依序記錄檔案差異（patch）的系統，而是將資料作為 **快照（snapshot）流** 來管理。
 
-### 2.1 物件模型：Blob, Tree, Commit
+### 2.1 物件模型：Blob, [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), Commit
 
 Git 主要使用 3 種物件來表示儲存庫的狀態。這些物件儲存在 `.git/objects` 中。
 
 1. **Blob (Binary Large Object)**
    這是儲存檔案內容本身的物件。檔案名稱或權限的資訊不包含在這裡。純粹的位元組陣列會被 zlib 壓縮，並由 SHA-1 雜湊值（40 個字元的十六進位數字）來識別。
-2. **Tree**
+2. **[Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
    表示目錄結構的物件。Tree 物件包含指向其他 Tree 物件（子目錄）或 Blob 物件（檔案）的指標（SHA-1 雜湊值），以及它們的檔案名稱、存取權限。它扮演類似 UNIX 目錄的角色。
 3. **Commit**
    包含指向特定時間點儲存庫整體頂層 Tree 物件的指標、元資料（作者、提交時間、提交訊息），以及指向前一個提交（父提交）的指標。
@@ -334,7 +334,7 @@ squash 3c4d5e6 新增測試
 
 ### 解決方案：使用二元搜尋來定位 bug
 
-Git 內建了一個能透過數學上的二元搜尋（Binary Search）來找出混入 bug 的提交的工具。因為時間複雜度是 $\mathcal{O}(\log N)$，即使有 1000 個提交，大約也只需要 10 次測試就能定位出來。
+Git 內建了一個能透過數學上的二元搜尋（[Binary Search](https://kenji.blog/zh-tw/p/search-algorithms-linear-binary-hash-table-principles/)）來找出混入 bug 的提交的工具。因為時間複雜度是 $\mathcal{O}(\log N)$，即使有 1000 個提交，大約也只需要 10 次測試就能定位出來。
 
 ```bash
 # 開始搜尋

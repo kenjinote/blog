@@ -81,7 +81,7 @@ graph LR
 在記憶技術書的內容時，「死記硬背長篇大論的證明」是毫無意義的。應該將知識分割為最小單位（Atomic）並製作成卡片。
 
 - **糟糕的卡片** ：「寫下 [Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/) 演算法的完整證明」
-- **好的卡片** ：「在 Dijkstra 演算法中，某個頂點的最短距離被視為確定的條件是什麼？」→「在未確定的頂點集合中，選出暫定距離最小的頂點時。」
+- **好的卡片** ：「在 [Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 演算法中，某個頂點的最短距離被視為確定的條件是什麼？」→「在未確定的頂點集合中，選出暫定距離最小的頂點時。」
 - **好的卡片** ：「寫出[費馬小定理](https://kenji.blog/zh-tw/p/fermats-little-theorem/)的公式」→「對於質數 $p$ 以及與其互質的整數 $a$，$a^{p-1} \equiv 1 \pmod p$」
 
 在記憶公式時，建議使用 LaTeX 格式將其登錄至 Anki，並活用填空題（Cloze Deletion）來提升效果。
@@ -175,7 +175,7 @@ rsa_demo()
 
 ### 4.2 範例 2：[Dijkstra](https://kenji.blog/zh-tw/p/graph-theory-dijkstra-a-star/) 演算法與鬆弛操作（Relaxation）
 
-讓我們思考用來解決圖論中單源最短路徑問題（SSSP）的 Dijkstra 演算法。
+讓我們思考用來解決圖論中單源最短路徑問題（SSSP）的 [Dijkstra](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) 演算法。
 
 在數學與演算法方面的核心，是稱為「鬆弛（Relaxation）」的操作。
 當存在一條從頂點 $u$ 到頂點 $v$ 且權重為 $w(u, v)$ 的邊時，我們透過以下公式更新到達頂點 $v$ 的暫定最短距離 $d[v]$：

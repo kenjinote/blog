@@ -17,7 +17,7 @@ Für moderne Indie-Entwickler (Indie Hacker) ist ein "Tech-Blog" einer der stär
 
 SEO (Suchmaschinenoptimierung) in einem Tech-Blog bedeutet nicht einfach nur, Schlüsselwörter einzustreuen. Es erfordert einen programmatischen Ansatz, um Suchmaschinen (Googlebot) und Social-Media-Crawlern die Semantik (Bedeutung) des Inhalts präzise zu vermitteln.
 
-### 1.1 Optimierung des Open Graph Protocol (OGP)
+### 1.1 Optimierung des Open [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP)
 
 Um die Click-Through-Rate (CTR) zu maximieren, wenn ein technischer Artikel auf X (ehemals Twitter), Hacker News, Zenn usw. geteilt wird, ist die dynamische Generierung von OGP unerlässlich. Wenn Sie den App Router von Next.js verwenden, nutzen Sie die Funktion `generateMetadata`, um für jeden Artikel ein optimiertes OGP auszugeben.
 

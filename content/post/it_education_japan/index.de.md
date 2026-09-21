@@ -55,7 +55,7 @@ Wie aus diesem Flussdiagramm deutlich wird, bringt das bloße Sammeln von Erfahr
 
 Die größte Schwäche und wohl auch der fatale Fehler im japanischen Lehrplan für die Programmierausbildung ist der überwältigende Mangel an Verbindung zwischen „Coding-Fähigkeiten“ und „Mathematik / diskreter Mathematik (Discrete Mathematics)“. In der hochkarätigen Informatikausbildung in Ländern wie den USA und Indien wird mehr Wert auf die Effizienz von Algorithmen, die mathematische Logik und mathematische Beweise gelegt als auf die Grammatik der Programmiersprache selbst. Denn Code ist nichts anderes als die Übersetzung mathematischer Formeln.
 
-### Die absolute Dominanz von Zeitkomplexität und Speicherkomplexität (Big O Notation)
+### Die absolute Dominanz von Zeitkomplexität und Speicherkomplexität ([Big O](https://kenji.blog/de/p/time-space-complexity-big-o-notation-examples/) Notation)
 
 Bei der Bewertung und dem Entwurf der Leistung von Software sind die Konzepte der Zeitkomplexität (Time Complexity) und Speicherkomplexität (Space Complexity) unvermeidlich. Die Landau-Notation (Big O Notation) gibt an, wie die Ausführungszeit und der Speicherverbrauch wachsen, wenn die Größe der Eingabedaten eines Algorithmus $N$ ist.
 

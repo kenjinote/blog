@@ -28,7 +28,7 @@ No entanto, em 1890, Percy Heawood descobriu uma falha fatal na prova de Kempe. 
 
 ## 4. Transformação em Teoria dos Grafos
 
-Para tratar matematicamente e com rigor o problema das quatro cores, o problema é traduzido para a linguagem da teoria dos grafos. Cada região no mapa é considerada um "Vértice" (Vertex), e regiões que compartilham uma fronteira são conectadas por uma "Aresta" (Edge). O grafo construído desta maneira é chamado de "Grafo Planar" (Planar Graph).
+Para tratar matematicamente e com rigor o problema das quatro cores, o problema é traduzido para a linguagem da teoria dos grafos. Cada região no mapa é considerada um "Vértice" (Vertex), e regiões que compartilham uma fronteira são conectadas por uma "Aresta" (Edge). O grafo construído desta maneira é chamado de "Grafo Planar" (Planar [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
 
 Um grafo planar é um grafo que pode ser desenhado num plano sem que as arestas se cruzem. O problema das quatro cores se reduz ao problema em que "os vértices de todos os grafos planares podem ser coloridos com **4 cores** de modo que vértices adjacentes tenham cores diferentes".
 
@@ -85,7 +85,7 @@ No entanto, em 1890, Percy Heawood descobriu uma falha fatal na prova de Kempe. 
 
 ## 4. Transformação em Teoria dos Grafos
 
-Para tratar matematicamente e com rigor o problema das quatro cores, o problema é traduzido para a linguagem da teoria dos grafos. Cada região no mapa é considerada um "Vértice" (Vertex), e regiões que compartilham uma fronteira são conectadas por uma "Aresta" (Edge). O grafo construído desta maneira é chamado de "Grafo Planar" (Planar Graph).
+Para tratar matematicamente e com rigor o problema das quatro cores, o problema é traduzido para a linguagem da teoria dos grafos. Cada região no mapa é considerada um "Vértice" (Vertex), e regiões que compartilham uma fronteira são conectadas por uma "Aresta" (Edge). O grafo construído desta maneira é chamado de "Grafo Planar" (Planar [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
 
 Um grafo planar é um grafo que pode ser desenhado num plano sem que as arestas se cruzem. O problema das quatro cores se reduz ao problema em que "os vértices de todos os grafos planares podem ser coloridos com **4 cores** de modo que vértices adjacentes tenham cores diferentes".
 
@@ -142,7 +142,7 @@ No entanto, em 1890, Percy Heawood descobriu uma falha fatal na prova de Kempe. 
 
 ## 4. Transformação em Teoria dos Grafos
 
-Para tratar matematicamente e com rigor o problema das quatro cores, o problema é traduzido para a linguagem da teoria dos grafos. Cada região no mapa é considerada um "Vértice" (Vertex), e regiões que compartilham uma fronteira são conectadas por uma "Aresta" (Edge). O grafo construído desta maneira é chamado de "Grafo Planar" (Planar Graph).
+Para tratar matematicamente e com rigor o problema das quatro cores, o problema é traduzido para a linguagem da teoria dos grafos. Cada região no mapa é considerada um "Vértice" (Vertex), e regiões que compartilham uma fronteira são conectadas por uma "Aresta" (Edge). O grafo construído desta maneira é chamado de "Grafo Planar" (Planar [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
 
 Um grafo planar é um grafo que pode ser desenhado num plano sem que as arestas se cruzem. O problema das quatro cores se reduz ao problema em que "os vértices de todos os grafos planares podem ser coloridos com **4 cores** de modo que vértices adjacentes tenham cores diferentes".
 
@@ -199,7 +199,7 @@ No entanto, em 1890, Percy Heawood descobriu uma falha fatal na prova de Kempe. 
 
 ## 4. Transformação em Teoria dos Grafos
 
-Para tratar matematicamente e com rigor o problema das quatro cores, o problema é traduzido para a linguagem da teoria dos grafos. Cada região no mapa é considerada um "Vértice" (Vertex), e regiões que compartilham uma fronteira são conectadas por uma "Aresta" (Edge). O grafo construído desta maneira é chamado de "Grafo Planar" (Planar Graph).
+Para tratar matematicamente e com rigor o problema das quatro cores, o problema é traduzido para a linguagem da teoria dos grafos. Cada região no mapa é considerada um "Vértice" (Vertex), e regiões que compartilham uma fronteira são conectadas por uma "Aresta" (Edge). O grafo construído desta maneira é chamado de "Grafo Planar" (Planar [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)).
 
 Um grafo planar é um grafo que pode ser desenhado num plano sem que as arestas se cruzem. O problema das quatro cores se reduz ao problema em que "os vértices de todos os grafos planares podem ser coloridos com **4 cores** de modo que vértices adjacentes tenham cores diferentes".
 

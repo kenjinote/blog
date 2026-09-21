@@ -27,13 +27,13 @@ tags: ["Git", "Version Control", "Troubleshooting"]
 
 多くのトラブルシューティングを容易にするための第一歩は、Gitがデータをどのように保存しているかを知ることです。あなたのプロジェクトのルートディレクトリに存在する隠しフォルダ `.git`、これこそがGitの心臓部です。Gitは、単なるファイルの差分（パッチ）を順に記録していくシステムではなく、 **スナップショットのストリーム** としてデータを管理しています。
 
-### 2.1 オブジェクトモデル：Blob, Tree, Commit
+### 2.1 オブジェクトモデル：Blob, [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), Commit
 
 Gitは主に3つのオブジェクトを使用してリポジトリの状態を表現します。これらのオブジェクトは `.git/objects` に保存されます。
 
 1. **Blob (Binary Large Object)**
    ファイルの内容そのものを保存するオブジェクトです。ファイル名や権限の情報はここには含まれません。純粋なバイト列がzlibで圧縮され、SHA-1ハッシュ値（40文字の16進数）によって識別されます。
-2. **Tree**
+2. **[Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
    ディレクトリの構造を表すオブジェクトです。Treeオブジェクトは、他のTreeオブジェクト（サブディレクトリ）やBlobオブジェクト（ファイル）へのポインタ（SHA-1ハッシュ値）、およびそれらのファイル名、アクセス権限を含みます。UNIXのディレクトリのような役割を果たします。
 3. **Commit**
    ある時点でのリポジトリ全体のトップレベルのTreeオブジェクトへのポインタと、メタデータ（作成者、コミット日時、コミットメッセージ）、そして直前のコミット（親コミット）へのポインタを保持します。
@@ -68,7 +68,7 @@ Gitがコンフリクトを検知したり、ファイルの差分を表示し�
 
 Gitのデフォルトの差分検出アルゴリズムは、Eugene W. Myersによって考案されたアルゴリズムです。2つのテキストファイル $A$ と $B$ があるとき、$A$ を $B$ に変換するための「最小の編集手順（挿入と削除）」を見つける問題は、[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)における最短経路問題としてモデル化できます。
 
-文字列の長さをそれぞれ $N, M$ とし、合計を $V = N + M$ とします。Myersのアルゴリズムでは、編集距離（Edit Distance） $D$ を探索します。このアルゴリズムの時間計算量は以下の式で表されます。
+文字列の長さをそれぞれ $N, M$ とし、合計を $V = N + M$ とします。Myersのアルゴリズムでは、編集距離（Edit Distance） $D$ を探索します。このアルゴリズムの[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は以下の式で表されます。
 
 $$ \mathcal{O}(V \cdot D) $$
 
@@ -332,9 +332,9 @@ squash 3c4d5e6 テスト追加
 **【状況】**
 現在の `main` ブランチにはバグがあるが、1ヶ月前のリリース時は正常だった。どのコミットでバグが混入したのか特定したいが、コミットが100個以上あって手作業では無理！
 
-### 解決策：二分探索によるバグ特定
+### 解決策：[二分探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)によるバグ特定
 
-Gitには、バグが混入したコミットを数学的な二分探索（Binary Search）で見つけ出すツールが組み込まれています。計算量は $\mathcal{O}(\log N)$ なので、1000個のコミットがあっても約10回のテストで特定できます。
+Gitには、バグが混入したコミットを数学的な二分探索（[Binary Search](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)）で見つけ出すツールが組み込まれています。計算量は $\mathcal{O}(\log N)$ なので、1000個のコミットがあっても約10回のテストで特定できます。
 
 ```bash
 # 探索を開始

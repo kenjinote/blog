@@ -17,7 +17,7 @@ description: 'Présente une liste d''extensions recommandées pour rendre Visual
 | Gestion de Machines Virtuelles et Conteneurs | [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | Prend en charge la gestion des conteneurs Docker |
 | Gestion de Code | GitHub Pull Requests | GitHub | Gère les Pull Requests GitHub dans VSCode |
 | Gestion de Code | GitHub Copilot | GitHub | Prend en charge la complétion de code par IA |
-| Gestion de Code | Git Graph | mhutchie | Affiche graphiquement les branches et commits Git |
+| Gestion de Code | Git [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) | mhutchie | Affiche graphiquement les branches et commits Git |
 | Gestion de Code | Git History | Don Jayamanne | Affiche l'historique Git |
 | Navigateur et Développement Web | Debugger for Firefox | Firefox DevTools | Utilise le débogueur Firefox dans VSCode |
 | Navigateur et Développement Web | Microsoft Edge Tool For VScode | Microsoft | Utilise les outils de développement Edge dans VSCode |

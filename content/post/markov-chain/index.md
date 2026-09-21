@@ -62,7 +62,7 @@ P = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-この状態遷移を Mermaid グラフで視覚化してみましょう。
+この状態遷移を Mermaid [グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)で視覚化してみましょう。
 
 ```mermaid
 graph TD

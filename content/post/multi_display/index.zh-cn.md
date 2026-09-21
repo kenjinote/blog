@@ -133,7 +133,7 @@ Windows 采用基于矢量的 UI 缩放（DPI 缩放），根据指定的百分�
 
 ---
 
-## 4. 连接带宽与菊花链：Thunderbolt 4 和 DP MST 的极限
+## 4. 连接带宽与菊花链：Thunderbolt 4 和 [DP](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) MST 的极限
 
 当连接多台高分辨率显示器时，线缆的数据传输容量（带宽）会成为瓶颈。“明明买了新显示器，刷新率却只有 30Hz”之类的故障，通常是因为带宽计算不足导致的。
 

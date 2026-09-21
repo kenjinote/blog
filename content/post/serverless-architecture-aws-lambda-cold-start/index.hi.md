@@ -175,7 +175,7 @@ $ P_{warm} \approx 1 - e^{-\lambda \cdot T_w} $
 ### 5.2. डिप्लॉयमेंट पैकेज को हल्का करना
 
 Lambda स्टार्ट-अप के दौरान S3 से कोड डाउनलोड करता है। इसलिए, पैकेज के आकार को छोटा रखना एक सीधा अनुकूलन है।
-अनावश्यक निर्भरताओं (जैसे DevDependencies) को शामिल न करना, और Webpack / esbuild जैसे बंडलर का उपयोग करके कोड को न्यूनतम (Minify) और ट्री-शेकिंग (Tree-shaking) करना बहुत महत्वपूर्ण है।
+अनावश्यक निर्भरताओं (जैसे DevDependencies) को शामिल न करना, और Webpack / esbuild जैसे बंडलर का उपयोग करके कोड को न्यूनतम (Minify) और ट्री-शेकिंग ([Tree](https://kenji.blog/hi/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-shaking) करना बहुत महत्वपूर्ण है।
 
 ### 5.3. आरंभीकरण प्रक्रिया का अनुकूलन और विलंबित मूल्यांकन (Lazy Initialization)
 

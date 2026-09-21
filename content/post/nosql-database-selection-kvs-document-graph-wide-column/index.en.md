@@ -18,7 +18,7 @@ tags:
 
 In modern system development, selecting a database as a means of data storage and management holds extremely important meaning. While relational databases ([RDBMS](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/)) once dominated, **NoSQL** (Not Only SQL) databases now play a crucial role as data diversifies and scales up.
 
-NoSQL databases are not a single technology, but a collective term for various data models optimized for specific use cases. In this article, we will clarify the decisive differences between RDBMS and NoSQL, and comprehensively explain the characteristics, pros and cons, and appropriate use cases of four typical NoSQL data models: **Key-Value Store (KVS)**, **Document-Oriented**, **Graph**, and **Wide-Column**.
+NoSQL databases are not a single technology, but a collective term for various data models optimized for specific use cases. In this article, we will clarify the decisive differences between RDBMS and NoSQL, and comprehensively explain the characteristics, pros and cons, and appropriate use cases of four typical NoSQL data models: **Key-Value Store (KVS)**, **Document-Oriented**, **[Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**, and **Wide-Column**.
 
 ---
 
@@ -188,13 +188,13 @@ db.users.find({
 
 ---
 
-## 4. Graph Database
+## 4. [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Database
 
 A graph database is a specialized database designed with an emphasis on " **relationships (connections) between data** " rather than the data itself. While the "relational" in [RDBMS](https://kenji.blog/en/p/rdbms-transaction-acid-isolation-level-lock/) actually incurs a cost to handle relationships between tables, graph databases literally treat relationships as first-class objects.
 
 ### Data Model and Characteristics
 
-Graph databases adopt a data model based on mathematical "graph theory". The main components that make up the data are the following three:
+[Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) databases adopt a data model based on mathematical "graph theory". The main components that make up the data are the following three:
 
 1. **Node (Vertex)** : Data entities (e.g., person, company, product). Equivalent to a row in an RDBMS.
 2. **Edge (Relationship)** : Relationships between nodes (e.g., is a friend of, purchased, belongs to). Edges can have a direction.
@@ -232,7 +232,7 @@ graph TD
     class P1,P2 productNode;
 ```
 
-### Representative Graph Databases
+### Representative [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Databases
 
 - **Neo4j** : The world's most widely used graph database. Adopts its own powerful query language, Cypher.
 - **Amazon Neptune** : A fully managed graph database provided by AWS. Supports Property Graph (Gremlin) and RDF (SPARQL).
@@ -359,7 +359,7 @@ Optimal for ultra-large-scale systems where writing massive amounts of data base
 
 In recent years, **multi-model databases**, which integrate and provide the functionalities of multiple NoSQL models or RDBMS on a single database engine, have also been gaining attention.
 
-For example, PostgreSQL has document-type functionality through its powerful support for the JSONB type. Also, products like Azure Cosmos DB or ArangoDB can transparently handle KVS, Document, and Graph with a single backend. This allows for flexible data access corresponding to requirements while keeping the operational cost of managing multiple database systems within a project (the complexity of polyglot persistence) low.
+For example, PostgreSQL has document-type functionality through its powerful support for the JSONB type. Also, products like Azure Cosmos DB or ArangoDB can transparently handle KVS, Document, and [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) with a single backend. This allows for flexible data access corresponding to requirements while keeping the operational cost of managing multiple database systems within a project (the complexity of polyglot persistence) low.
 
 ---
 

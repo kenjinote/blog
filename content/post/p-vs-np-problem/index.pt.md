@@ -338,7 +338,7 @@ A maior lição que o **problema P vs NP** (e a teoria da integridade NP) ensina
 2. **Recorra ao relaxamento e à aproximação**:
     - **Algoritmos de aproximação**: Resolve o problema em tempo polinomial garantindo que o erro em relação à solução ótima se encontre num determinado limite.
     - **Heurísticas**: Adota métodos onde não há garantias matemáticas, mas produz empiricamente e com alta velocidade "soluções razoavelmente boas", como algoritmos genéticos e *simulated annealing*.
-    - **Programação Dinâmica (DP)**: No caso de haver uma solução baseada na magnitude das entradas numéricas (tempo pseudo-polinomial), como no problema da mochila, as restrições da entrada podem ser utilizadas.
+    - **Programação Dinâmica ([DP](https://kenji.blog/pt/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))**: No caso de haver uma solução baseada na magnitude das entradas numéricas (tempo pseudo-polinomial), como no problema da mochila, as restrições da entrada podem ser utilizadas.
     - **Solucionadores SAT/MILP**: O problema é formulado e passado a modernos e versáteis solucionadores de otimização matemática que têm evoluído notavelmente nos últimos anos. Muitas vezes os solucionadores podem produzir soluções perfeitas num tamanho realista devido à sofisticada eliminação interna (poda/branch-and-bound).
 
 ```python

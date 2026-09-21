@@ -109,7 +109,7 @@ Le cœur de Terraform réside dans cette approche **déclarative (Declarative)**
 
 Avec des scripts de type impératif, un humain doit décrire précisément l'ordre dans lequel les ressources sont créées. Par exemple, la procédure consiste à créer un VPC, puis à créer un sous-réseau, et enfin à placer un EC2 dans ce sous-réseau.
 
-Dans Terraform, à partir des relations de référence apparaissant dans le code (par exemple, référencer `aws_vpc.main.id` dans la configuration du sous-réseau), Terraform Core construit automatiquement un **graphe de dépendances (Dependency Graph)**.
+Dans Terraform, à partir des relations de référence apparaissant dans le code (par exemple, référencer `aws_vpc.main.id` dans la configuration du sous-réseau), Terraform Core construit automatiquement un **graphe de dépendances (Dependency [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**.
 
 ```mermaid
 graph TD

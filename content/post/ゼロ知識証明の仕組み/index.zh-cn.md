@@ -131,7 +131,7 @@ zk-STARKs不使用椭圆曲线密码学，而是将安全性基础完全建立�
 
 计算的验证在被转化为名为AIR（Algebraic Intermediate Representation，代数中间表示）的格式后，利用一维或多维多项式的性质进行。STARKs的核心在于 **FRI（Fast Reed-Solomon Interactive Oracle Proof of Proximity，快速里德-所罗门交互式预言机近似证明）** 协议。
 
-FRI协议是一种验证“某函数是否足够接近特定次数的多项式（Proximity）”的技术。证明者将多项式的值作为默克尔树（Merkle Tree）的叶子节点进行承诺（多项式承诺）。
+FRI协议是一种验证“某函数是否足够接近特定次数的多项式（Proximity）”的技术。证明者将多项式的值作为默克尔树（Merkle [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）的叶子节点进行承诺（多项式承诺）。
 
 ```mermaid
 graph TD

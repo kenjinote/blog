@@ -94,13 +94,13 @@ mindmap
 レジストリはOSのパフォーマンス（特に起動時間とプロセスの初期化速度）に直結するため、内部的には「Cell Index」と呼ばれる[B-Tree](https://kenji.blog/p/b-tree-database-index-theory/)（[B木](https://kenji.blog/p/b-tree-database-index-theory/)）に似た高度なデータ構造を用いて最適化されています。
 
 ### 検索の計算量 (Time Complexity)
-レジストリ内の特定のキー（パス）を検索する際の時間計算量 $T_{\text{search}}$ は、ツリーの深さと各階層におけるノードの数に依存します。深さ $d$ のサブキー（例: `A\B\C\D` なら $d=4$）を探索する場合の計算量は、理論上次のようにモデル化できます。
+レジストリ内の特定のキー（パス）を検索する際の[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) $T_{\text{search}}$ は、ツリーの深さと各階層におけるノードの数に依存します。深さ $d$ のサブキー（例: `A\B\C\D` なら $d=4$）を探索する場合の計算量は、理論上次のようにモデル化できます。
 
 $$
 T_{\text{search}}(d, L) = \sum_{i=1}^{d} O(\log(C_i) \cdot L_i)
 $$
 
-ここで、$C_i$ は深さ $i$ における子ノード（サブキーまたは値）の数、$L_i$ は比較対象となる文字列の長さ（文字数）です。レジストリの実体であるハイブファイル内では、サブキーのリストは名前のハッシュ値またはアルファベット順で[ソート](https://kenji.blog/p/sorting-algorithms/)されたインデックスとして保持されています。そのため、単純な線形探索 $O(C_i)$ ではなく、二分探索 $O(\log(C_i))$ が可能であり、1つのキーの下に数万のサブキーが存在しても極めて高速なアクセスを実現しています。
+ここで、$C_i$ は深さ $i$ における子ノード（サブキーまたは値）の数、$L_i$ は比較対象となる文字列の長さ（文字数）です。レジストリの実体であるハイブファイル内では、サブキーのリストは名前のハッシュ値またはアルファベット順で[ソート](https://kenji.blog/p/sorting-algorithms/)されたインデックスとして保持されています。そのため、単純な[線形探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/) $O(C_i)$ ではなく、[二分探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/) $O(\log(C_i))$ が可能であり、1つのキーの下に数万のサブキーが存在しても極めて高速なアクセスを実現しています。
 
 ### ストレージフットプリント (Space Complexity)
 レジストリの全体のサイズ（物理ディスク上の占有量）は、各ハイブの合計として計算されます。

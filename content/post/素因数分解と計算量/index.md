@@ -23,7 +23,7 @@ tags: ["Big O Notation", "Prime Factorization", "Algorithms", "RSA"]
 
 アルゴリズムの性能や効率を評価する際、単純に「プログラムの実行時間（秒数）」を測るだけでは不十分です。なぜなら、実行時間は使用するコンピュータの性能（CPUのク[ロック](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)数やメモリの速度など）や、プログラミング言語、コンパイラの最適化に大きく依存するからです。
 
-そこで、ハードウェアや環境に依存しない普遍的な評価指標として用いられるのが **時間計算量（Time Complexity） ** であり、それを表現するための記法が ** ビッグオー表記（Big-O Notation）** です。ビッグオー表記は、入力データのサイズ $N$ が非常に大きくなったときに、アルゴリズムの実行時間（あるいは実行ステップ数）が $N$ に対してどのように増加していくか（漸近的な増加率）を表す数学的な記法です。
+そこで、ハードウェアや環境に依存しない普遍的な評価指標として用いられるのが **[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)（Time Complexity） ** であり、それを表現するための記法が ** ビッグオー表記（Big-O Notation）** です。ビッグオー表記は、入力データのサイズ $N$ が非常に大きくなったときに、アルゴリズムの実行時間（あるいは実行ステップ数）が $N$ に対してどのように増加していくか（漸近的な増加率）を表す数学的な記法です。
 
 ## 漸近的記法の数学的定義
 
@@ -40,13 +40,13 @@ $$ \exists c > 0, \exists n_0 > 0 \text{ s.t. } \forall n \ge n_0, 0 \le f(n) \l
 計算量にはいくつか代表的なクラスが存在します。実行時間が短い（効率が良い）順に見ていきましょう。
 
 1. **$\mathcal{O}(1)$ : 定数時間（Constant time）**
-   入力サイズ $N$ がどれだけ大きくなっても、実行時間が変わらないアルゴリズムです。例えば、配列のインデックスを指定して値を取得する操作や、ハッシュテーブルでの検索（理想的な場合）などが該当します。
+   入力サイズ $N$ がどれだけ大きくなっても、実行時間が変わらないアルゴリズムです。例えば、配列のインデックスを指定して値を取得する操作や、[ハッシュテーブル](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)での検索（理想的な場合）などが該当します。
 
 2. **$\mathcal{O}(\log N)$ : 対数時間（Logarithmic time）**
-   入力サイズが倍になっても、実行時間は定数しか増えない非常に効率の良いアルゴリズムです。[ソート](https://kenji.blog/p/sorting-algorithms/)済みの配列から目的の値を探す「二分探索（Binary Search）」が代表例です。データ量が10億であっても、わずか30回程度の比較で目的のデータを見つけることができます。
+   入力サイズが倍になっても、実行時間は定数しか増えない非常に効率の良いアルゴリズムです。[ソート](https://kenji.blog/p/sorting-algorithms/)済みの配列から目的の値を探す「[二分探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)（[Binary Search](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)）」が代表例です。データ量が10億であっても、わずか30回程度の比較で目的のデータを見つけることができます。
 
 3. **$\mathcal{O}(N)$ : 線形時間（Linear time）**
-   入力サイズに比例して実行時間が増加します。データが10倍になれば時間も10倍になります。配列のすべての要素を順番に確認する「線形探索」などが該当します。
+   入力サイズに比例して実行時間が増加します。データが10倍になれば時間も10倍になります。配列のすべての要素を順番に確認する「[線形探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)」などが該当します。
 
 4. **$\mathcal{O}(N \log N)$ : 準線形時間（Linearithmic time）**
    $\mathcal{O}(N)$ よりも少しだけ遅いですが、効率的な部類に入ります。[マージ[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)（Merge Sort）や[クイック[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)（Quick Sortの平均計算量）など、実用的な高速[[ソート](https://kenji.blog/p/sorting-algorithms/)アルゴリズム](https://kenji.blog/p/sorting-algorithms/)の多くがこの計算量を持ちます。
@@ -55,7 +55,7 @@ $$ \exists c > 0, \exists n_0 > 0 \text{ s.t. } \forall n \ge n_0, 0 \le f(n) \l
    入力サイズが2倍になると、実行時間は4倍に、10倍になれば100倍になります。二重ループを使った単純な処理や、[バブル[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)、[挿入[ソート](https://kenji.blog/p/sorting-algorithms/)](https://kenji.blog/p/sorting-algorithms/)などが該当します。データ量が数万を超えると、処理に時間がかかるようになります。これら $\mathcal{O}(N^k)$ の形で表される計算量を総称して **多項式時間（Polynomial time）** と呼びます。
 
 6. **$\mathcal{O}(2^N)$ : 指数時間（Exponential time）**
-   入力サイズが1増えるだけで実行時間が2倍になります。非常に効率が悪く、$N$ が40や50になるだけで、最先端のコンピュータでも現実的な時間で計算が終わらなくなります。ナップサック問題の全探索や、巡回セールスマン問題の単純な解法などが該当します。
+   入力サイズが1増えるだけで実行時間が2倍になります。非常に効率が悪く、$N$ が40や50になるだけで、最先端のコンピュータでも現実的な時間で計算が終わらなくなります。[ナップサック問題](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)の全探索や、巡回セールスマン問題の単純な解法などが該当します。
 
 7. **$\mathcal{O}(N!)$ : 階乗時間（Factorial time）**
    $\mathcal{O}(2^N)$ よりもさらに急速に増加します。巡回セールスマン問題の全ての順列を試すようなアルゴリズムです。
@@ -206,7 +206,7 @@ GNFSは非常に複雑ですが、大まかに以下のステップで進行し�
 ### 一般数体ふるい法の計算量：準指数時間（Sub-exponential time）
 
 GNFSの最大の功績は、素因数分解の計算量を「純粋な指数時間」から **「準指数時間（Sub-exponential time）」** へと引き下げたことです。
-GNFSの漸近的な時間計算量は、L記法（L-notation）と呼ばれる特別な記法を用いて次のように表されます。
+GNFSの漸近的な[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は、L記法（L-notation）と呼ばれる特別な記法を用いて次のように表されます。
 
 $$ L_N[\gamma, c] = \exp\left( (c + o(1)) (\ln N)^\gamma (\ln \ln N)^{1-\gamma} \right) $$
 

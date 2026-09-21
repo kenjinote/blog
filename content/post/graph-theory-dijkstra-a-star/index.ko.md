@@ -17,9 +17,9 @@ tags:
 
 ## 1. 시작하며
 
-현대 컴퓨터 과학에서 **그래프 이론** (Graph Theory) 은 네트워크 구조를 모델링하기 위한 강력한 수학적 프레임워크를 제공합니다. 우리의 일상생활에서 자동차 내비게이션이나 철도 환승 안내, 인터넷 라우팅, 나아가 게임 AI의 경로 탐색 등 다양한 상황에서 '최단 경로'를 계산하는 기술이 사용되고 있습니다.
+현대 컴퓨터 과학에서 **그래프 이론** ([Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory) 은 네트워크 구조를 모델링하기 위한 강력한 수학적 프레임워크를 제공합니다. 우리의 일상생활에서 자동차 내비게이션이나 철도 환승 안내, 인터넷 라우팅, 나아가 게임 AI의 경로 탐색 등 다양한 상황에서 '최단 경로'를 계산하는 기술이 사용되고 있습니다.
 
-본 기사에서는 이 경로 탐색의 기초가 되는 그래프 이론의 수학적 정의부터 시작하여 대표적인 탐색 알고리즘인 **다익스트라법** (Dijkstra's Algorithm) 과 이를 더욱 발전시킨 **A* 알고리즘** (A-Star Algorithm) 의 원리, 수학적 증명, 그리고 Python을 사용한 실천적인 구현 방법까지 포괄적으로 해설합니다.
+본 기사에서는 이 경로 탐색의 기초가 되는 그래프 이론의 수학적 정의부터 시작하여 대표적인 탐색 알고리즘인 **다익스트라법** ([Dijkstra](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm) 과 이를 더욱 발전시킨 **A* 알고리즘** (A-Star Algorithm) 의 원리, 수학적 증명, 그리고 Python을 사용한 실천적인 구현 방법까지 포괄적으로 해설합니다.
 
 ## 2. 그래프 이론의 기초
 
@@ -76,7 +76,7 @@ $$
 
 ---
 
-## 3. 다익스트라법 (Dijkstra's Algorithm)
+## 3. 다익스트라법 ([Dijkstra](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm)
 
 에츠허르 다익스트라가 고안한 **다익스트라법** 은 음이 아닌 가중치를 가진 그래프에서 단일 시점으로부터 모든 정점까지의 최단 경로를 구하기 위한 알고리즘입니다.
 

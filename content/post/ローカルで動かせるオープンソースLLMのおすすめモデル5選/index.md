@@ -213,7 +213,7 @@ graph TD
 
 ## パラメータ数とVRAM要件の関係（GGUF 4-bit 量子化時）
 
-以下のグラフは、各モデルのパラメータ数に対して、推論時に必要となるVRAMの目安（KVキャッシュのオーバーヘッドを含む）を示しています。
+以下の[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)は、各モデルのパラメータ数に対して、推論時に必要となるVRAMの目安（KVキャッシュのオーバーヘッドを含む）を示しています。
 
 ```mermaid
 xychart-beta

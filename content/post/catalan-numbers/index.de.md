@@ -22,7 +22,7 @@ Benannt nach dem belgischen Mathematiker Eugène Charles Catalan, beginnt die Ca
 
 $$ C_0 = 1, \quad C_1 = 1, \quad C_2 = 2, \quad C_3 = 5, \quad C_4 = 14, \quad C_5 = 42, \quad C_6 = 132, \quad C_7 = 429, \quad \dots $$
 
-Diese Folge taucht als Lösung für eine erstaunlich vielfältige Reihe von kombinatorischen Problemen auf. In diesem Artikel werden wir vier berühmte Beispiele vorstellen, bei denen [Catalan-Zahlen](https://kenji.blog/de/p/catalan-numbers/) eine Rolle spielen (gültige Klammern, Binärbäume, Polygon-Triangulierung und Dyck-Pfade). Wir werden die rekursive Struktur dahinter entschlüsseln, um zu verstehen, warum sie alle exakt auf dieselbe Folge abgebildet werden. Darüber hinaus werden wir uns mit Berechnungsalgorithmen unter Verwendung der dynamischen Programmierung (DP) und mathematischen Herleitungen mittels erzeugender Funktionen befassen.
+Diese Folge taucht als Lösung für eine erstaunlich vielfältige Reihe von kombinatorischen Problemen auf. In diesem Artikel werden wir vier berühmte Beispiele vorstellen, bei denen [Catalan-Zahlen](https://kenji.blog/de/p/catalan-numbers/) eine Rolle spielen (gültige Klammern, Binärbäume, Polygon-Triangulierung und Dyck-Pfade). Wir werden die rekursive Struktur dahinter entschlüsseln, um zu verstehen, warum sie alle exakt auf dieselbe Folge abgebildet werden. Darüber hinaus werden wir uns mit Berechnungsalgorithmen unter Verwendung der dynamischen Programmierung ([DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) und mathematischen Herleitungen mittels erzeugender Funktionen befassen.
 
 ## 2. Vier konkrete Beispiele für [Catalan-Zahlen](https://kenji.blog/de/p/catalan-numbers/)
 

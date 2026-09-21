@@ -10,9 +10,9 @@ tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 
 ## 1. データベースインデックスとB木の出会い
 
-現代のシステムにおいて、データベースはアプリケーションの根幹をなす存在です。数百万、数億というレコードの中から、目的のデータをミリ秒単位で検索し出力する能力は、データベース管理システム（DBMS）の最も重要な機能の一つです。この驚異的な検索速度を支えているのが **インデックス** （索引）であり、その背後にあるデータ構造が **B木** （B-Tree）およびその派生である **B+木** （B+Tree）です。
+現代のシステムにおいて、データベースはアプリケーションの根幹をなす存在です。数百万、数億というレコードの中から、目的のデータをミリ秒単位で検索し出力する能力は、データベース管理システム（DBMS）の最も重要な機能の一つです。この驚異的な検索速度を支えているのが **インデックス** （索引）であり、その背後にあるデータ構造が **B木** （B-[Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）およびその派生である **B+木** （B+Tree）です。
 
-本記事では、なぜリレーショナルデータベースが二分探索木やハッシュ表ではなく、 **B木** ファミリーを選択するのかについて、ディスクI/Oの性質、データ構造の理論、数学的解析、そして実際のコード実装を交えて深く掘り下げます。
+本記事では、なぜリレーショナルデータベースが[二分探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)木やハッシュ表ではなく、 **B木** ファミリーを選択するのかについて、ディスクI/Oの性質、データ構造の理論、数学的解析、そして実際のコード実装を交えて深く掘り下げます。
 
 ## 2. ディスクI/Oとメモリ階層の壁
 
@@ -24,9 +24,9 @@ tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 
 データベースがインデックスを検索するとき、ディスクからメモリへページをロードする回数（ **ディスクI/O回数** ）を最小限に抑えることが、検索パフォーマンスを決定づける最大の要因となります。
 
-### 2.2 二分探索木（BST）の限界
+### 2.2 [二分探索](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)木（BST）の限界
 
-メモリ上での検索において、 **二分探索木** （Binary Search Tree: BST）や **赤黒木** （Red-Black Tree）などの平衡二分探索木は $ O(\log N) $ の計算量で高速な検索が可能です。しかし、これをそのままディスク上のデータベースに適用すると、深刻な問題が発生します。
+メモリ上での検索において、 **二分探索木** （[Binary Search](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/) [Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/): BST）や **赤黒木** （Red-Black Tree）などの平衡二分探索木は $ O(\log N) $ の計算量で高速な検索が可能です。しかし、これをそのままディスク上のデータベースに適用すると、深刻な問題が発生します。
 
 二分木は1つのノードが最大2つの子ノードを持ちます。要素数 $ N $ が増えると、木の高さ $ h $ は $ \log_2 N $ に比例して深くなります。たとえば $ N = 1,000,000 $ の場合、木の高さは約20になります。各ノードが異なるディスクページに配置されていると仮定すると、最悪で20回のランダムディスクI/Oが発生します。これはデータベースにとって致命的な遅延です。
 
@@ -73,7 +73,7 @@ $$
 
 ## 4. データベースの標準: B+木への進化
 
-実際の[RDBMS](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)（MySQLのInnoDBやPostgreSQLなど）で使われているのは、B木の改良版である **B+木** （B+Tree）です。
+実際の[RDBMS](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)（MySQLのInnoDBやPostgreSQLなど）で使われているのは、B木の改良版である **B+木** （B+[Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）です。
 
 ### 4.1 B木とB+木の違い
 
@@ -215,8 +215,8 @@ else:
 
 ## 6. まとめと発展
 
-**B木** および **B+木** は、ディスクベースのシステムにおけるI/Oコストの最小化を目的として設計された傑作と言えるデータ構造です。高い分岐数による浅い木構造、順次アクセスの最適化など、物理的デバイスの特性と数学的アルゴリズムが見事に融合しています。
+**B木** および **B+木** は、ディスクベースのシステムにおけるI/Oコストの最小化を目的として設計された傑作と言えるデータ構造です。高い分岐数による浅い[木構造](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)、順次アクセスの最適化など、物理的デバイスの特性と数学的アルゴリズムが見事に融合しています。
 
-近年では、SSDの普及により書き込み増幅（Write Amplification）を抑えるための **LSM木** （Log-Structured Merge-Tree）など、新しいデータ構造も登場していますが、読み込み性能と範囲検索のバランス、[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)処理における安定性において、依然として **B+木** はリレーショナルデータベースにおける絶対的な王者として君臨し続けています。
+近年では、SSDの普及により書き込み増幅（Write Amplification）を抑えるための **LSM木** （Log-Structured Merge-[Tree](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）など、新しいデータ構造も登場していますが、読み込み性能と範囲検索のバランス、[トランザクション](https://kenji.blog/p/rdbms-transaction-acid-isolation-level-lock/)処理における安定性において、依然として **B+木** はリレーショナルデータベースにおける絶対的な王者として君臨し続けています。
 
 データベース内部で何が起きているのかを理解することは、クエリの最適化や適切なインデックス設計に直結します。本記事で解説した理論をベースに、ぜひ日常のデータベース操作におけるインデックスの挙動を観察してみてください。

@@ -57,7 +57,7 @@ Pour pallier ces faiblesses, les modèles étendus suivants ont été proposés 
 - **l-diversité (l-diversity)** : garantit que dans chaque classe d'équivalence, l'attribut sensible possède au moins $l$ valeurs distinctes.
 - **t-proximité (t-closeness)** : s'assure que la distance (comme la distance du cantonnier, Earth Mover's Distance) entre la distribution de l'attribut sensible dans chaque classe d'équivalence et sa distribution dans l'ensemble du jeu de données reste inférieure ou égale à un seuil $t$.
 
-### 2.2 Confidentialité différentielle (Differential Privacy : DP)
+### 2.2 Confidentialité différentielle (Differential Privacy : [DP](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
 Afin de surmonter les limites du modèle de k-anonymat, la « confidentialité différentielle (Differential Privacy) », proposée en 2006 par Cynthia Dwork et ses collègues, est aujourd'hui largement adoptée comme la norme de confidentialité la plus puissante et mathématiquement rigoureuse. Les géants de la technologie tels qu'Apple, Google et Microsoft appliquent cette $\epsilon$-confidentialité différentielle lors de la collecte de données de télémétrie et de statistiques auprès de leurs utilisateurs.
 

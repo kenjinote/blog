@@ -43,7 +43,7 @@ There are several typical classes of computational complexity. Let's look at the
    An algorithm whose execution time does not change no matter how large the input size $N$ becomes. Examples include retrieving a value by specifying an array index, or searching in a hash table (in the ideal case).
 
 2. **$\mathcal{O}(\log N)$ : Logarithmic time**
-   A highly efficient algorithm where even if the input size doubles, the execution time only increases by a constant. "Binary Search" for finding a target value in a sorted array is a typical example. Even with 1 billion pieces of data, the target data can be found in just about 30 comparisons.
+   A highly efficient algorithm where even if the input size doubles, the execution time only increases by a constant. "[Binary Search](https://kenji.blog/en/p/search-algorithms-linear-binary-hash-table-principles/)" for finding a target value in a sorted array is a typical example. Even with 1 billion pieces of data, the target data can be found in just about 30 comparisons.
 
 3. **$\mathcal{O}(N)$ : Linear time**
    The execution time increases in proportion to the input size. If the data increases 10 times, the time also increases 10 times. "Linear search," which checks all elements of an array in order, falls into this category.

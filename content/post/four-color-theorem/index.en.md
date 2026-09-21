@@ -28,7 +28,7 @@ However, in 1890, Percy Heawood discovered a fatal flaw in Kempe's proof. While 
 
 ## 4. Conversion to [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)
 
-To handle the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) mathematically strictly, the problem is translated into the language of graph theory. Each region on the map is treated as a "Vertex," and regions sharing a boundary line are connected by an "Edge." The graph created in this way is called a "Planar Graph."
+To handle the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) mathematically strictly, the problem is translated into the language of graph theory. Each region on the map is treated as a "Vertex," and regions sharing a boundary line are connected by an "Edge." The graph created in this way is called a "Planar [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)."
 
 A planar graph is a graph that can be drawn on a plane without edges crossing. The [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) reduces to the problem that "the vertices of every planar graph can be colored with **4 colors** such that adjacent vertices have different colors."
 
@@ -84,7 +84,7 @@ However, in 1890, Percy Heawood discovered a fatal flaw in Kempe's proof. While 
 
 ## 4. Conversion to [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)
 
-To handle the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) mathematically strictly, the problem is translated into the language of graph theory. Each region on the map is treated as a "Vertex," and regions sharing a boundary line are connected by an "Edge." The graph created in this way is called a "Planar Graph."
+To handle the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) mathematically strictly, the problem is translated into the language of graph theory. Each region on the map is treated as a "Vertex," and regions sharing a boundary line are connected by an "Edge." The graph created in this way is called a "Planar [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)."
 
 A planar graph is a graph that can be drawn on a plane without edges crossing. The [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) reduces to the problem that "the vertices of every planar graph can be colored with **4 colors** such that adjacent vertices have different colors."
 
@@ -140,7 +140,7 @@ However, in 1890, Percy Heawood discovered a fatal flaw in Kempe's proof. While 
 
 ## 4. Conversion to [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)
 
-To handle the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) mathematically strictly, the problem is translated into the language of graph theory. Each region on the map is treated as a "Vertex," and regions sharing a boundary line are connected by an "Edge." The graph created in this way is called a "Planar Graph."
+To handle the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) mathematically strictly, the problem is translated into the language of graph theory. Each region on the map is treated as a "Vertex," and regions sharing a boundary line are connected by an "Edge." The graph created in this way is called a "Planar [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)."
 
 A planar graph is a graph that can be drawn on a plane without edges crossing. The [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) reduces to the problem that "the vertices of every planar graph can be colored with **4 colors** such that adjacent vertices have different colors."
 
@@ -196,7 +196,7 @@ However, in 1890, Percy Heawood discovered a fatal flaw in Kempe's proof. While 
 
 ## 4. Conversion to [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)
 
-To handle the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) mathematically strictly, the problem is translated into the language of graph theory. Each region on the map is treated as a "Vertex," and regions sharing a boundary line are connected by an "Edge." The graph created in this way is called a "Planar Graph."
+To handle the [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) mathematically strictly, the problem is translated into the language of graph theory. Each region on the map is treated as a "Vertex," and regions sharing a boundary line are connected by an "Edge." The graph created in this way is called a "Planar [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)."
 
 A planar graph is a graph that can be drawn on a plane without edges crossing. The [Four Color Theorem](https://kenji.blog/en/p/four-color-theorem/) reduces to the problem that "the vertices of every planar graph can be colored with **4 colors** such that adjacent vertices have different colors."
 

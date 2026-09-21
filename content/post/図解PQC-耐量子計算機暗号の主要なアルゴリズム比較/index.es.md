@@ -243,7 +243,7 @@ SPHINCS+ es una firma basada en hash "**sin estado (Stateless)**" que resolvió 
 Su tecnología central es una combinación de lo siguiente:
 1. **WOTS+ (Winternitz One-Time Signature Plus)**: Una firma básica de un solo uso.
 2. **FORS (Forest of Random Subsets)**: Una tecnología de firma de pocas veces (Few-Time Signature). Mantiene la seguridad incluso si la misma clave se reutiliza unas cuantas veces.
-3. **Hyper-Tree (Estructura de árbol gigante)**: Una estructura gigantesca que superpone árboles de Merkle en múltiples capas.
+3. **Hyper-[Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Estructura de árbol gigante)**: Una estructura gigantesca que superpone árboles de Merkle en múltiples capas.
 
 En SPHINCS+, al realizar una firma, en lugar de mantener el estado, selecciona aleatoriamente una usando números pseudoaleatorios de un gran número de claves FORS en la base del Hyper-Tree para firmar. Como el número de hojas en el árbol es astronómicamente alto, la probabilidad de elegir la misma clave dos veces por accidente (colisión) es insignificantemente pequeña, lo que resulta en la realización de la falta de estado.
 

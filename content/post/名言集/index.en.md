@@ -142,7 +142,7 @@ description: 'We present a carefully selected collection of inspiring quotes fro
 
 > Simplicity is prerequisite for reliability. (Edsger W. [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/))
 
-> Computer science is no more about computers than astronomy is about telescopes. (Edsger W. Dijkstra)
+> Computer science is no more about computers than astronomy is about telescopes. (Edsger W. [Dijkstra](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 > There are only two hard things in Computer Science: cache invalidation and naming things. (Phil Karlton)
 

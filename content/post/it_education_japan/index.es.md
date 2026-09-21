@@ -55,7 +55,7 @@ Como se desprende claramente de este diagrama de flujo, el simple hecho de acumu
 
 La debilidad más grande y quizás un defecto fatal en el plan de estudios de la educación en programación de Japón, es la abrumadora falta de conexión entre las "habilidades de codificación" y las "matemáticas y matemáticas discretas". En la educación de ciencias de la computación de primer nivel en países como Estados Unidos e India, se hace mayor hincapié en la eficiencia algorítmica, la lógica matemática y las demostraciones matemáticas que en la propia gramática de los lenguajes de programación. Esto se debe a que el código no es más que una traducción de fórmulas matemáticas.
 
-### El dominio absoluto de la complejidad de tiempo y espacio (Notación Big O)
+### El dominio absoluto de la complejidad de tiempo y espacio (Notación [Big O](https://kenji.blog/es/p/time-space-complexity-big-o-notation-examples/))
 
 Al evaluar y diseñar el rendimiento del software, no se puede evitar el concepto de complejidad temporal (Time Complexity) y complejidad espacial (Space Complexity). La notación asintótica de Landau (Notación Big O) muestra cómo el tiempo de ejecución y el consumo de memoria aumentan cuando el tamaño de los datos de entrada de un algoritmo es $N$.
 
@@ -134,7 +134,7 @@ Las operaciones de bases de datos se definen por las siguientes operaciones bás
 - Proyección (Projection, $\pi$): Extracción de atributos específicos (columnas)
 - Reunión (Join, $\bowtie$): Intersección condicional de múltiples relaciones
 
-Además, aprender la estructura de los índices "[B-Tree](https://kenji.blog/es/p/b-tree-database-index-theory/) (Árbol B)" para buscar instantáneamente los datos deseados en grandes volúmenes de registros es la mejor práctica de aplicación de estructuras de datos. B-Tree garantiza una velocidad de búsqueda de $O(\log N)$ minimizando el número de E/S de disco. Uno no puede construir sistemas robustos sin conocer las propiedades [ACID](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/) de las transacciones (Atomicidad, Consistencia, Aislamiento, Durabilidad).
+Además, aprender la estructura de los índices "[B-Tree](https://kenji.blog/es/p/b-tree-database-index-theory/) (Árbol B)" para buscar instantáneamente los datos deseados en grandes volúmenes de registros es la mejor práctica de aplicación de estructuras de datos. B-[Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) garantiza una velocidad de búsqueda de $O(\log N)$ minimizando el número de E/S de disco. Uno no puede construir sistemas robustos sin conocer las propiedades [ACID](https://kenji.blog/es/p/rdbms-transaction-acid-isolation-level-lock/) de las transacciones (Atomicidad, Consistencia, Aislamiento, Durabilidad).
 
 ## 6. Seguridad y teoría criptográfica: La infraestructura social sustentada por la dificultad de la factorización prima
 

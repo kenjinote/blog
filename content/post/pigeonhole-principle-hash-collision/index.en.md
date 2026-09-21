@@ -162,7 +162,7 @@ graph LR
 
 In this way, cryptographic algorithms are destined to gradually weaken due to mathematical breakthroughs and the evolution of computers.
 
-## 5. The Pigeonhole Principle in Data Structures: Hash Tables
+## 5. The Pigeonhole Principle in Data Structures: [Hash Table](https://kenji.blog/en/p/search-algorithms-linear-binary-hash-table-principles/)s
 
 Outside of cryptography, the Pigeonhole Principle and hash collisions are important themes. **"Hash tables (associative arrays and dictionaries),"** frequently used in programming, are a representative example.
 

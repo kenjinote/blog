@@ -57,7 +57,7 @@ k-匿名性は、準識別子の組み合わせ（同値類：Equivalence Class�
 - **l-多様性 (l-diversity)** ：各同値類において、機密属性が少なくとも $l$ 種類の異なる値を持つことを保証する。
 - **t-近接性 (t-closeness)** ：各同値類における機密属性の分布と、データセット全体の機密属性の分布との距離（Earth Mover's Distanceなど）が、閾値 $t$ 以下になるようにする。
 
-### 2.2 差分プライバシー (Differential Privacy: DP)
+### 2.2 差分プライバシー (Differential Privacy: [DP](https://kenji.blog/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
 k-匿名性モデルの限界を克服し、現在最も強力で数学的に厳密なプライバシー基準として広く採用されているのが、Cynthia Dworkらによって2006年に提唱された「差分プライバシー（Differential Privacy）」です。Apple、Google、Microsoftなどのテックジャイアントは、ユーザーからテレメトリデータや統計データを収集する際に、この $\epsilon$-差分プライバシーを適用しています。
 

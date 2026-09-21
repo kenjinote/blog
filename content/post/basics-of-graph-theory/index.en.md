@@ -21,7 +21,7 @@ Providing a powerful framework to simply and mathematically represent and analyz
 
 This article will comprehensively and systematically explain graph theory, starting from its historical origins, covering basic mathematical definitions and data structures for computer programming, and introducing representative algorithms that support the foundation of modern technology.
 
-## 2. The Birth of Graph Theory: The [Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/)
+## 2. The Birth of [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory: The [Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/)
 
 The history of graph theory dates back to the 18th century. In 1736, the brilliant Swiss mathematician [Leonhard Euler](https://kenji.blog/en/p/euler/) elegantly solved a famous mathematical puzzle, marking the beginning of this field. This puzzle is known as the "[Seven Bridges of Königsberg](https://kenji.blog/en/p/seven-bridges-of-konigsberg/)".
 
@@ -46,7 +46,7 @@ In the abstract graph of the Königsberg bridges, the number of connected bridge
 
 This discovery by Euler was the exact moment **[Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)** was born. By discarding complex physical terrain and focusing solely on the connection relationships (topology) of points and lines, he opened up an entirely new field of mathematics.
 
-## 3. Basic Concepts and Mathematical Definitions of Graph Theory
+## 3. Basic Concepts and Mathematical Definitions of [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory
 
 In graph theory, a "graph" does not refer to statistical data visualization methods like line charts or pie charts. It refers to a mathematical structure that represents a set of objects and the relationships between them.
 
@@ -83,7 +83,7 @@ graph LR
 
 ### 3.3. Weighted Graphs
 
-When modeling real-world problems, we often want to express not just "whether they are connected" but also the "ease of connection" or "cost". In such cases, a **Weighted Graph** is used, where a numerical value (weight) is assigned to each edge. The weight can represent the distance between cities, communication delay time, or travel cost.
+When modeling real-world problems, we often want to express not just "whether they are connected" but also the "ease of connection" or "cost". In such cases, a **Weighted [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** is used, where a numerical value (weight) is assigned to each edge. The weight can represent the distance between cities, communication delay time, or travel cost.
 
 ### 3.4. Paths and Cycles
 
@@ -138,7 +138,7 @@ An adjacency list is a method that maintains a "list of adjacent vertices (like 
 
 To efficiently solve problems on graphs, many excellent algorithms have been devised throughout the history of computer science. Here we introduce some representative algorithms that are considered essential in modern software engineering.
 
-### 5.1. Breadth-First Search (BFS) and Depth-First Search (DFS)
+### 5.1. Breadth-First Search ([BFS](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) and Depth-First Search ([DFS](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 The most fundamental algorithms for systematically visiting all vertices in a network without omission are **Breadth-First Search (BFS)** and **Depth-First Search (DFS)**.
 
@@ -189,7 +189,7 @@ bfs(graph_data, 'A')
 
 When searching for the fastest route to a destination on a map application, what operates at the core of the system is a **Shortest Path Algorithm**. The route has costs (weights) such as "distance" and "travel time", and the objective is to find the path that minimizes the cumulative cost from the starting point to the destination.
 
-Invented by Dutch computer scientist Edsger W. Dijkstra in 1956, **Dijkstra's Algorithm** is an extremely famous algorithm for efficiently computing the shortest path from a single source to all other vertices in a network, under the condition that all edge weights are non-negative (0 or greater).
+Invented by Dutch computer scientist Edsger W. [Dijkstra](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) in 1956, **Dijkstra's Algorithm** is an extremely famous algorithm for efficiently computing the shortest path from a single source to all other vertices in a network, under the condition that all edge weights are non-negative (0 or greater).
 
 The core logic of Dijkstra's algorithm is to repeat the process of "selecting the vertex with the shortest unconfirmed distance from the set of vertices whose shortest distance from the start is already confirmed, and updating the shortest distance information of surrounding vertices via routes through that vertex". By using a Priority Queue, execution time can be significantly reduced.
 
@@ -238,7 +238,7 @@ print("\nDijkstra's algorithm execution result (shortest distance from vertex A)
 print(dijkstra(weighted_graph, 'A'))
 ```
 
-### 5.3. Minimum Spanning Tree Problem: Kruskal's Algorithm
+### 5.3. Minimum Spanning [Tree](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Problem: Kruskal's Algorithm
 
 Imagine the need to physically connect all bases in a vast network with the lowest possible total cost. For example, when building a power grid to supply electricity to a new residential area, or laying fiber optic cables between multiple cities, the situation demands minimizing the infrastructure construction cost.
 
@@ -260,7 +260,7 @@ Each edge (pipe or cable) making up the network has a strictly defined "Capacity
 
 ## 6. Bipartite Graphs and Matching Problems
 
-Occupying a unique position within graph theory is the **Bipartite Graph**. A bipartite graph is a graph where, when all vertices are divided into two groups (e.g., group $U$ and group $V$), every edge always connects a vertex in $U$ and a vertex in $V$, and there are absolutely no edges connecting vertices within the same group.
+Occupying a unique position within graph theory is the **Bipartite [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**. A bipartite graph is a graph where, when all vertices are divided into two groups (e.g., group $U$ and group $V$), every edge always connects a vertex in $U$ and a vertex in $V$, and there are absolutely no edges connecting vertices within the same group.
 
 Bipartite graphs are ideal for modeling relationships between two sets with different properties, such as "job seekers" and "recruiting companies," "students" and "laboratories," or "taxis" and "passengers."
 
@@ -268,7 +268,7 @@ One of the most important problems in bipartite graphs is the **Matching Problem
 
 ## 7. Applications of [Graph Theory](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/) in Modern Society
 
-Graph theory is not confined to abstract mathematics on a blackboard; it is utilized in a wide variety of domains as an infrastructure technology that fundamentally supports our daily lives.
+[Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) theory is not confined to abstract mathematics on a blackboard; it is utilized in a wide variety of domains as an infrastructure technology that fundamentally supports our daily lives.
 
 ### 7.1. Search Engines and the PageRank Algorithm
 

@@ -17,7 +17,7 @@ tags: ["Growth Hacking", "GA4", "PostHog", "Conversion Rate"]
 
 技術部落格的 SEO (搜尋引擎最佳化) 並不僅僅是散佈關鍵字而已。必須採用程式化的方法，向搜尋引擎 (Googlebot) 和社群媒體爬蟲準確地傳達內容的語義 (semantics)。
 
-### 1.1 Open Graph Protocol (OGP) 最佳化
+### 1.1 Open [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP) 最佳化
 
 當技術文章在 X (前 Twitter)、Hacker News 或 Zenn 等平台被分享時，為了將點閱率 (CTR) 最大化，動態生成 OGP 是不可或缺的。如果使用 Next.js 的 App Router，可以透過 `generateMetadata` 函式來為每篇文章輸出最佳化的 OGP。
 

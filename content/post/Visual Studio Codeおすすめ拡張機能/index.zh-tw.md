@@ -17,7 +17,7 @@ description: '表列介紹讓 Visual Studio Code (VSCode) 更便利的推薦擴�
 | 虛擬與容器管理 | [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | 支援 Docker 容器的管理 |
 | 程式碼管理 | GitHub Pull Requests | GitHub | 在 VSCode 上管理 GitHub 的 Pull Requests |
 | 程式碼管理 | GitHub Copilot | GitHub | 支援 AI 程式碼自動完成 |
-| 程式碼管理 | Git Graph | mhutchie | 以圖形化方式顯示 Git 分支與提交記錄 |
+| 程式碼管理 | Git [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) | mhutchie | 以圖形化方式顯示 Git 分支與提交記錄 |
 | 程式碼管理 | Git History | Don Jayamanne | 顯示 Git 歷史記錄 |
 | 瀏覽器與 Web 開發 | Debugger for Firefox | Firefox DevTools | 在 VSCode 上使用 Firefox 偵錯工具 |
 | 瀏覽器與 Web 開發 | Microsoft Edge Tool For VScode | Microsoft | 在 VSCode 上使用 Edge 開發人員工具 |

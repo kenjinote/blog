@@ -9,7 +9,7 @@ categories: ["programming", "algorithms"]
 tags: ['Algorithm', 'DP', 'C++', 'Python']
 ---
 
-从竞技编程到实际业务的算法设计，在许多场景中出现并成为许多程序员面前的一道墙的，就是 **动态规划（Dynamic Programming，简称 DP）** 。“列不出状态转移方程”、“下标老写错”、“根本无法判断是不是能用 DP 解决的问题”……很多人都有着这样的烦恼吧。
+从竞技编程到实际业务的算法设计，在许多场景中出现并成为许多程序员面前的一道墙的，就是 **动态规划（[Dynamic Programming](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)，简称 [DP](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)）** 。“列不出状态转移方程”、“下标老写错”、“根本无法判断是不是能用 DP 解决的问题”……很多人都有着这样的烦恼吧。
 
 本文将从动态规划的本质出发，详细介绍具体的方法（自顶向下和自底向上），并通过3个代表性的问题（斐波那契数列、0/1背包问题、最长公共子序列）进行实战讲解，进行彻底且全面的解析。我们将同时给出 C++ 和 Python 的代码实现，并结合公式与图解，为你提供一条“完全掌握”之路。虽然这是一篇非常长的文章，但当你读到最后时，你的算法能力一定会有飞跃性的提升。
 
@@ -212,7 +212,7 @@ def fib_optimized(n):
 
 ### 4-2. 状态的定义与状态转移方程
 
-用 DP 解题最重要的一步是正确地定义“状态（[State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)）”。
+用 [DP](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) 解题最重要的一步是正确地定义“状态（[State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)）”。
 在这个问题中，有两个参数在变化：“考虑到了第几个物品”和“背包剩余的容量”。因此，像下面这样定义状态：
 
 **状态定义:**
@@ -319,7 +319,7 @@ print("Max Value:", knapsack_1d(W, weight, value))
 
 ## 5. 实战篇3：最长公共子序列（LCS: Longest Common Subsequence）
 
-作为处理字符串的代表性 DP 问题，我们来介绍 LCS。LCS 算法在实际社会中有着广泛的应用，例如文件差异检测（diff工具）以及 DNA 序列的相似度判定等。
+作为处理字符串的代表性 [DP](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) 问题，我们来介绍 LCS。LCS 算法在实际社会中有着广泛的应用，例如文件差异检测（diff工具）以及 DNA 序列的相似度判定等。
 
 ### 5-1. 问题设定
 
@@ -430,7 +430,7 @@ int main() {
 
 ## 6. 掌握动态规划的思考过程
 
-虽然到目前为止我们看过了各种各样的问题，但是当面临未知的 DP 问题时，我们应该如何思考呢？请始终将以下步骤铭记在心。
+虽然到目前为止我们看过了各种各样的问题，但是当面临未知的 [DP](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) 问题时，我们应该如何思考呢？请始终将以下步骤铭记在心。
 
 1. **这个问题能用 DP 解决吗？（确认条件）**
    当递归地思考时，同一个状态是否会多次出现（重叠子问题）。通过组合最佳选择是否能够推导出整体的最佳选择（最优子结构）。
@@ -451,7 +451,7 @@ int main() {
 - 只要能够正确列出公式（状态转移方程），实现起来就会非常简单。
 - 当在实际业务中面临对性能有要求的场景时，空间复杂度的优化技巧（将数组一维化或滚动数组）是不可或缺的。
 
-一开始，你可能会觉得动态规划很难理解。但是，通过在各种问题中反复练习寻找“状态定义”和“转移”的过程，你就会逐渐看出其中的规律。树形 DP、数位 DP、状态压缩 DP（位运算 DP）、区间 DP 等等，虽然存在着更加高级的应用，但这些全都建立在本次我们学到的“重叠子问题”和“最优子结构”的基础之上。
+一开始，你可能会觉得动态规划很难理解。但是，通过在各种问题中反复练习寻找“状态定义”和“转移”的过程，你就会逐渐看出其中的规律。树形 [DP](https://kenji.blog/zh-cn/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)、数位 DP、状态压缩 DP（位运算 DP）、区间 DP 等等，虽然存在着更加高级的应用，但这些全都建立在本次我们学到的“重叠子问题”和“最优子结构”的基础之上。
 
 不要着急，请一边用纸笔实际写出 DP 表（Table），一边加深理解吧。当你能真正引导出算法的威力之时，编程世界将会变得更加广阔。
 

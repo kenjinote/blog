@@ -133,7 +133,7 @@ Portanto, para ter a melhor experiência no macOS, a "solução ideal" é seleci
 
 ---
 
-## 4. Largura de Banda de Conexão e Daisy Chain: Limitações do Thunderbolt 4 e DP MST
+## 4. Largura de Banda de Conexão e Daisy Chain: Limitações do Thunderbolt 4 e [DP](https://kenji.blog/pt/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) MST
 
 Ao conectar vários monitores de alta resolução, a capacidade de transmissão de dados (largura de banda) dos cabos torna-se um gargalo. Problemas como "Comprei um monitor, mas a taxa de atualização é de apenas 30Hz" são causados por cálculos incorretos de largura de banda.
 

@@ -236,7 +236,7 @@ H(s_i) \overset{?}{=} \text{pk}_{i, h_i} \quad (\text{for all } 1 \le i \le 256)
 $$
 
 이 프로세스는 수학적으로 지극히 단순하며, 양자 컴퓨터가 $H$의 역산을 할 수 없는 한 서명을 위조하는 것은 불가능합니다. 하지만 한 번 서명을 하면 비밀키의 절반이 네트워크에 노출되기 때문에 같은 키 쌍으로 다른 메시지에 서명하게 되면 노출된 비밀키들이 조합되어 공격자에게 위조의 여지를 주게 되므로, '단 한 번(One-Time)'밖에 쓸 수 없다는 강한 제약이 생깁니다.
-이를 실용화하기 위해 머클 트리(Merkle Tree)를 사용하여 다수의 원타임 키를 하나의 루트 공개키로 묶는 **XMSS** 나 상태 비저장(Stateless) 방식인 **SPHINCS+** 등의 기술이 개발되었으나, 서명 크기가 수십 킬로바이트에 달한다는 단점이 있습니다.
+이를 실용화하기 위해 머클 트리(Merkle [Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))를 사용하여 다수의 원타임 키를 하나의 루트 공개키로 묶는 **XMSS** 나 상태 비저장(Stateless) 방식인 **SPHINCS+** 등의 기술이 개발되었으나, 서명 크기가 수십 킬로바이트에 달한다는 단점이 있습니다.
 
 ### 4.2. 격자 기반 암호(Lattice-Based [Crypto](https://kenji.blog/ko/p/cryptocurrency-and-bitcoin/)graphy)
 

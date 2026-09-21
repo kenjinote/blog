@@ -63,7 +63,7 @@ $$
 f(x) = \frac{1}{1-x} \cdot \frac{1}{1-x^2} \cdot \frac{1}{1-x^5}
 $$
 
-Mit anderen Worten, ohne komplexe Rekursionsgleichungen oder Schleifenberechnungen zu verwenden, können Sie die Anzahl der Kombinationen für jedes $n$ ermitteln, indem Sie einfach die Koeffizienten der Taylor-Entwicklung dieser Funktion finden. In der Programmierung ist dieses Konzept eine wichtige Grundlage für die dynamische Programmierung (DP).
+Mit anderen Worten, ohne komplexe Rekursionsgleichungen oder Schleifenberechnungen zu verwenden, können Sie die Anzahl der Kombinationen für jedes $n$ ermitteln, indem Sie einfach die Koeffizienten der Taylor-Entwicklung dieser Funktion finden. In der Programmierung ist dieses Konzept eine wichtige Grundlage für die dynamische Programmierung ([DP](https://kenji.blog/de/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)).
 
 ### Faltung und Polynommultiplikation
 

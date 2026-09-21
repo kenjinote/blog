@@ -57,7 +57,7 @@ La plus grande faiblesse et le défaut fatal du programme d'enseignement de la p
 
 ### La domination absolue de la complexité temporelle et spatiale (Notation Grand O)
 
-Pour évaluer et concevoir les performances d'un logiciel, les concepts de complexité temporelle (Time Complexity) et de complexité spatiale (Space Complexity) sont incontournables. La notation asymptotique de Landau (Big O Notation) montre comment le temps d'exécution et la consommation de mémoire augmentent en fonction de la taille $N$ des données d'entrée d'un algorithme.
+Pour évaluer et concevoir les performances d'un logiciel, les concepts de complexité temporelle (Time Complexity) et de complexité spatiale (Space Complexity) sont incontournables. La notation asymptotique de Landau ([Big O](https://kenji.blog/fr/p/time-space-complexity-big-o-notation-examples/) Notation) montre comment le temps d'exécution et la consommation de mémoire augmentent en fonction de la taille $N$ des données d'entrée d'un algorithme.
 
 La définition mathématique stricte de $f(x) = O(g(x))$ est la suivante :
 
@@ -134,7 +134,7 @@ Les opérations sur les bases de données sont définies par les opérations fon
 - Projection (Projection, $\pi$) : Extraction d'attributs (colonnes) spécifiques
 - Jointure (Join, $\bowtie$) : Intersection conditionnelle de plusieurs relations
 
-De plus, l'apprentissage de la structure de l'« index [B-Tree](https://kenji.blog/fr/p/b-tree-database-index-theory/) », qui permet de rechercher instantanément les données cibles parmi un nombre massif d'enregistrements, constitue la meilleure application pratique des structures de données. Le B-Tree garantit une vitesse de recherche de $O(\log N)$ tout en minimisant le nombre d'E/S disque. Il est impossible de construire un système robuste sans connaître les propriétés [ACID](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/) (Atomicity, [Consistency](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability) des transactions.
+De plus, l'apprentissage de la structure de l'« index [B-Tree](https://kenji.blog/fr/p/b-tree-database-index-theory/) », qui permet de rechercher instantanément les données cibles parmi un nombre massif d'enregistrements, constitue la meilleure application pratique des structures de données. Le B-[Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) garantit une vitesse de recherche de $O(\log N)$ tout en minimisant le nombre d'E/S disque. Il est impossible de construire un système robuste sans connaître les propriétés [ACID](https://kenji.blog/fr/p/rdbms-transaction-acid-isolation-level-lock/) (Atomicity, [Consistency](https://kenji.blog/fr/p/cap-theorem-distributed-systems-tradeoff/), Isolation, Durability) des transactions.
 
 ## 6. Sécurité et cryptographie : La difficulté de la factorisation des nombres premiers, pilier des infrastructures sociales
 

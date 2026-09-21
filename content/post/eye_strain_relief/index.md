@@ -19,7 +19,7 @@ tags: ["Monitors", "Ergonomics", "E-ink", "Eye Strain"]
 
 # 第1章：眼精疲労（CVS）のメカニズムを物理と生化学から解き明かす
 
-コンピュータビジョン症候群（CVS）は単一の要因で引き起こされるわけではありません。以下の円グラフに示すように、様々な要素が複雑に絡み合って目の疲れ、痛み、ドライアイ、そして全身の疲労感へと繋がります。
+コンピュータビジョン症候群（CVS）は単一の要因で引き起こされるわけではありません。以下の円[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)に示すように、様々な要素が複雑に絡み合って目の疲れ、痛み、ドライアイ、そして全身の疲労感へと繋がります。
 
 ```mermaid
 pie title Causes of Computer Vision Syndrome (CVS)

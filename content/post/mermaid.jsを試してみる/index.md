@@ -12,7 +12,7 @@ description: 'テキストベースでフローチャートやガントチャー
 
 ## mermaid.jsとは
 
-mermaid.jsは、JavaScriptのライブラリで、テキストベースの独自の構文(Mermaid記法)を記述し、フローチャートやダイヤグラム、ガントチャートなど、複雑な図表をグラフィカルに表示できます。
+mermaid.jsは、JavaScriptのライブラリで、テキストベースの独自の構文(Mermaid記法)を記述し、フローチャートやダイヤグラム、ガントチャートなど、複雑な図表を[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィカルに表示できます。
 GitHubやQiita、Notionなど、いろいろなサービスでも採用されています。今回は、hugoでmermaid.jsを使えるようにしてみます。
 
 ## hugoでmermaid.jsを使えるようにする

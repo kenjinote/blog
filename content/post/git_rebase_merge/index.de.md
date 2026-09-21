@@ -13,7 +13,7 @@ tags: ["Git", "Version Control", "Rebase", "Merge"]
 
 Git ist ein unverzichtbares Versionskontrollsystem in der modernen Softwareentwicklung. Wenn mehrere Entwickler gleichzeitig die Codebasis ändern, spielt das leistungsstarke Branching-Modell von Git seine Stärken aus. In der Teamentwicklung ist die Diskussion darüber, ob man `merge` oder `rebase` verwenden sollte, jedoch eines der Themen, das Entwickler vom Anfänger bis zum Experten immer wieder beschäftigt.
 
-In diesem Artikel werden wir die Unterschiede im Mechanismus von `git merge` und `git rebase` tiefgehend untersuchen, indem wir die interne Struktur von Git, wie den DAG (gerichteter azyklischer Graph) und die mathematischen Eigenschaften von Commit-Hashes, entschlüsseln. Darüber hinaus werden wir anhand von konkreten [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s ausführlich erklären, wie man diese beiden in der Praxis richtig einsetzt. Indem Sie nicht nur die Befehle kennenlernen, sondern auch verstehen, welche Berechnungen Git im Hintergrund durchführt, verlieren Sie die Angst vor Konflikten und können eine saubere, nachvollziehbare Historie aufbauen.
+In diesem Artikel werden wir die Unterschiede im Mechanismus von `git merge` und `git rebase` tiefgehend untersuchen, indem wir die interne Struktur von Git, wie den DAG (gerichteter azyklischer [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) und die mathematischen Eigenschaften von Commit-Hashes, entschlüsseln. Darüber hinaus werden wir anhand von konkreten [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s ausführlich erklären, wie man diese beiden in der Praxis richtig einsetzt. Indem Sie nicht nur die Befehle kennenlernen, sondern auch verstehen, welche Berechnungen Git im Hintergrund durchführt, verlieren Sie die Angst vor Konflikten und können eine saubere, nachvollziehbare Historie aufbauen.
 
 ---
 
@@ -25,7 +25,7 @@ Um zu verstehen, wie Git die Historie integriert, müssen wir zunächst wissen, 
 
 Jeder Commit in Git wird durch eine 40-stellige Hexadezimalzahl, die mit der Hash-Funktion SHA-1 (Secure Hash Algorithm 1) basierend auf seinem Inhalt berechnet wird, eindeutig identifiziert. Ein Commit-Objekt besteht aus den folgenden Elementen:
 
-1. **Zeiger auf das Tree-Objekt**: Ein Schnappschuss der Verzeichnisstruktur und der Dateien (Blobs) zu diesem Zeitpunkt.
+1. **Zeiger auf das [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)-Objekt**: Ein Schnappschuss der Verzeichnisstruktur und der Dateien (Blobs) zu diesem Zeitpunkt.
 2. **Zeiger auf den Eltern-Commit**: Die Hash-Werte eines oder mehrerer Eltern-Commits (der erste Commit hat keinen Elternteil, ein Merge-Commit hat zwei oder mehr).
 3. **Autor-Informationen (Author)**: Die Person, die den Code geschrieben hat, und das Datum.
 4. **Committer-Informationen (Committer)**: Die Person, die den Commit erstellt/angewendet hat, und das Datum.
@@ -51,7 +51,7 @@ Diese Wahrscheinlichkeit ist extrem gering, und in der Praxis ist es nahezu unm�
 
 # 3. Graphentheorie und DAG: Das mathematische Modell der Git-Historie
 
-Die Commit-Historie von Git wird als „gerichteter azyklischer Graph“ (Directed Acyclic Graph, DAG) aus der Graphentheorie modelliert.
+Die Commit-Historie von Git wird als „gerichteter azyklischer [Graph](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)“ (Directed Acyclic Graph, DAG) aus der Graphentheorie modelliert.
 
 ## 3.1 Was ist ein DAG (gerichteter azyklischer Graph)?
 

@@ -17,9 +17,9 @@ tags:
 
 ## 1. はじめに
 
-現代のコンピュータサイエンスにおいて、 **グラフ理論** (Graph Theory) はネットワーク構造をモデル化するための強力な数学的枠組みを提供します。私たちの日常生活において、カーナビゲーションや鉄道の乗り換え案内、インターネットのルーティング、さらにはゲームAIの経路探索など、さまざまな場面で「最短経路」を計算する技術が使われています。
+現代のコンピュータサイエンスにおいて、 **[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)理論** ([Graph](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory) はネットワーク構造をモデル化するための強力な数学的枠組みを提供します。私たちの日常生活において、カーナビゲーションや鉄道の乗り換え案内、インターネットのルーティング、さらにはゲームAIの経路探索など、さまざまな場面で「最短経路」を計算する技術が使われています。
 
-本記事では、この経路探索の基礎となるグラフ理論の数学的定義から始まり、代表的な探索アルゴリズムである **ダイクストラ法** (Dijkstra's Algorithm) と、それをさらに発展させた **A*アルゴリズム** (A-Star Algorithm) の仕組み、数学的証明、そしてPythonを用いた実践的な実装方法までを網羅的に解説します。
+本記事では、この経路探索の基礎となるグラフ理論の数学的定義から始まり、代表的な[探索アルゴリズム](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)である **[ダイクストラ法](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)** ([Dijkstra](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm) と、それをさらに発展させた **A*アルゴリズム** (A-Star Algorithm) の仕組み、数学的証明、そしてPythonを用いた実践的な実装方法までを網羅的に解説します。
 
 ## 2. グラフ理論の基礎
 
@@ -61,7 +61,7 @@ graph LR
     E -- 3 --> Z
 ```
 
-上の図は、頂点 $ A $ から $ Z $ までの重み付き有向グラフの例です。エッジ上の数字がコスト（重み）を表しています。
+上の図は、頂点 $ A $ から $ Z $ までの重み付き有向[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)の例です。エッジ上の数字がコスト（重み）を表しています。
 
 ### 2.3 最短経路問題の定式化
 
@@ -76,7 +76,7 @@ $$
 
 ---
 
-## 3. ダイクストラ法 (Dijkstra's Algorithm)
+## 3. [ダイクストラ法](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) ([Dijkstra](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm)
 
 エドガー・ダイクストラによって考案された **ダイクストラ法** は、非負の重みを持つグラフにおいて、単一始点からすべての頂点への最短経路を求めるためのアルゴリズムです。
 
@@ -98,7 +98,7 @@ $$
 d[v] = d[u] + w(u, v)
 $$
 
-### 3.3 Python によるダイクストラ法の実装
+### 3.3 Python による[ダイクストラ法](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)の実装
 
 効率的な実装のために、最小値を取得するデータ構造として優先度付きキュー (Priority Queue) を使用します。Pythonでは `heapq` モジュールを利用できます。
 
@@ -143,13 +143,13 @@ def dijkstra(graph, start):
 ### 3.4 計算量について
 
 優先度付きキューとして二分ヒープ (Binary Heap) を用いた場合、各頂点はキューから1回取り出され、各辺は1回緩和されます。
-したがって、時間計算量は $ O((|V| + |E|) \log |V|) $ となります。フィボナッチヒープを用いれば $ O(|E| + |V| \log |V|) $ まで理論上改善されますが、実用上は二分ヒープが多く用いられます。
+したがって、[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は $ O((|V| + |E|) \log |V|) $ となります。フィボナッチヒープを用いれば $ O(|E| + |V| \log |V|) $ まで理論上改善されますが、実用上は二分ヒープが多く用いられます。
 
 ---
 
 ## 4. A* アルゴリズム (A-Star Algorithm)
 
-ダイクストラ法は確実ですが、目的地の方向を考慮せず全方向に探索を広げるため、無駄な探索が多くなることがあります。これを解決するのが **A*アルゴリズム** です。
+[ダイクストラ法](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)は確実ですが、目的地の方向を考慮せず全方向に探索を広げるため、無駄な探索が多くなることがあります。これを解決するのが **A*アルゴリズム** です。
 
 ### 4.1 ヒューリスティック関数の導入
 
@@ -254,7 +254,7 @@ def reconstruct_path(came_from, current):
     return path
 ```
 
-### 4.5 ダイクストラ法と A* の比較
+### 4.5 [ダイクストラ法](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)と A* の比較
 
 以下のMermaid図は、ダイクストラ法とA*の探索範囲のイメージ比較です。ダイクストラ法が同心円状に探索を広げるのに対し、A*はゴール方向に引き伸ばされた楕円状に探索を進めます。
 
@@ -283,7 +283,7 @@ graph TD
 
 ## 5. 経路探索の応用と今後の展望
 
-ダイクストラ法とA*アルゴリズムは、基礎的な手法でありながら、多くの応用技術のベースとなっています。
+[ダイクストラ法](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)とA*アルゴリズムは、基礎的な手法でありながら、多くの応用技術のベースとなっています。
 
 1. **双方向探索** (Bidirectional Search):
    始点と終点の両方から同時に探索を進め、中間で合流することで探索空間を劇的に削減する手法。
@@ -292,7 +292,7 @@ graph TD
 3. **JPS** (Jump Point Search):
    均一なグリッドマップ上で、A*の探索をさらに高速化するための手法。対称性を利用して不要なノードをスキップします。
 
-経路探索アルゴリズムは、グラフ理論の数学的な美しさと、コンピュータサイエンスのアルゴリズム的効率性が見事に融合した分野です。
+経路[探索アルゴリズム](https://kenji.blog/p/search-algorithms-linear-binary-hash-table-principles/)は、[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)理論の数学的な美しさと、コンピュータサイエンスのアルゴリズム的効率性が見事に融合した分野です。
 
 ## 6. まとめ
 

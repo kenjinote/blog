@@ -236,7 +236,7 @@ H(s_i) \overset{?}{=} \text{pk}_{i, h_i} \quad (\text{untuk semua } 1 \le i \le 
 $$
 
 Proses ini sangat sederhana secara matematis, dan tidak mungkin untuk memalsukan tanda tangan kecuali jika komputer kuantum dapat menghitung mundur $H$. Namun, karena setengah dari kunci privat diekspos ke jaringan setelah ditandatangani, terdapat kendala kuat bahwa ini hanya dapat digunakan "satu kali (One-Time)", karena menandatangani pesan lain dengan pasangan kunci yang sama akan menggabungkan kunci privat yang terekspos dan memberikan ruang bagi penyerang untuk melakukan pemalsuan.
-Untuk membuatnya praktis, teknologi seperti **XMSS**, yang menggunakan Merkle Tree untuk mengelompokkan sejumlah besar kunci sekali pakai ke dalam satu kunci publik root, dan **SPHINCS+** yang stateless, telah dikembangkan, tetapi mereka memiliki kelemahan ukuran tanda tangan mencapai puluhan kilobyte.
+Untuk membuatnya praktis, teknologi seperti **XMSS**, yang menggunakan Merkle [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) untuk mengelompokkan sejumlah besar kunci sekali pakai ke dalam satu kunci publik root, dan **SPHINCS+** yang stateless, telah dikembangkan, tetapi mereka memiliki kelemahan ukuran tanda tangan mencapai puluhan kilobyte.
 
 ### 4.2. Kriptografi Berbasis Kisi (Lattice-Based [Crypto](https://kenji.blog/id/p/cryptocurrency-and-bitcoin/)graphy)
 

@@ -10,7 +10,7 @@ tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 
 ## 1. 数据库索引与B树的相遇
 
-在现代系统中，数据库是应用程序的根基。从数百万、数亿条记录中，以毫秒级速度搜索并输出目标数据的能力，是数据库管理系统（DBMS）最重要的功能之一。支撑这种惊人搜索速度的是 **索引** （Index），而其背后的数据结构则是 **B树** （B-Tree）及其衍生出来的 **B+树** （B+Tree）。
+在现代系统中，数据库是应用程序的根基。从数百万、数亿条记录中，以毫秒级速度搜索并输出目标数据的能力，是数据库管理系统（DBMS）最重要的功能之一。支撑这种惊人搜索速度的是 **索引** （Index），而其背后的数据结构则是 **B树** （B-[Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）及其衍生出来的 **B+树** （B+Tree）。
 
 本文将结合磁盘I/O的性质、数据结构的理论、数学分析以及实际的代码实现，深入探讨为什么关系型数据库选择 **B树** 家族，而不是二叉搜索树或哈希表。
 
@@ -26,7 +26,7 @@ tags: ["b-tree", "data-structures", "algorithm", "performance-optimization"]
 
 ### 2.2 二叉搜索树（BST）的局限性
 
-在内存搜索中，诸如 **二叉搜索树** （Binary Search Tree: BST）和 **红黑树** （Red-Black Tree）等平衡二叉搜索树能够以 $ O(\log N) $ 的时间复杂度进行高速搜索。然而，如果将其直接应用于磁盘上的数据库，将会产生严重的问题。
+在内存搜索中，诸如 **二叉搜索树** （[Binary Search](https://kenji.blog/zh-cn/p/search-algorithms-linear-binary-hash-table-principles/) Tree: BST）和 **红黑树** （Red-Black Tree）等平衡二叉搜索树能够以 $ O(\log N) $ 的时间复杂度进行高速搜索。然而，如果将其直接应用于磁盘上的数据库，将会产生严重的问题。
 
 二叉树中一个节点最多有两个子节点。随着元素数量 $ N $ 的增加，树的高度 $ h $ 会与 $ \log_2 N $ 成正比变深。例如，当 $ N = 1,000,000 $ 时，树的高度约为20。假设每个节点被分配在不同的磁盘页上，最坏情况下会发生20次随机磁盘I/O。这对于数据库来说是致命的延迟。
 
@@ -73,7 +73,7 @@ $$
 
 ## 4. 数据库的标准：向B+树的进化
 
-实际的[RDBMS](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)（如MySQL的InnoDB或PostgreSQL等）使用的是B树的改进版，即 **B+树** （B+Tree）。
+实际的[RDBMS](https://kenji.blog/zh-cn/p/rdbms-transaction-acid-isolation-level-lock/)（如MySQL的InnoDB或PostgreSQL等）使用的是B树的改进版，即 **B+树** （B+[Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）。
 
 ### 4.1 B树与B+树的区别
 
@@ -217,6 +217,6 @@ else:
 
 可以说， **B树** 和 **B+树** 是为了最小化基于磁盘系统中的I/O成本而设计的杰作般的数据结构。通过高分支因子实现的浅层树结构、顺序访问的优化等，完美地将物理设备的特性与数学算法融合在了一起。
 
-近年来，随着SSD的普及，为了抑制写入放大（Write Amplification），出现了 **LSM树** （Log-Structured Merge-Tree）等新的数据结构；但在读取性能和范围查询的平衡性、以及事务处理的稳定性方面， **B+树** 依然作为关系型数据库中绝对的王者而继续君临天下。
+近年来，随着SSD的普及，为了抑制写入放大（Write Amplification），出现了 **LSM树** （Log-Structured Merge-[Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）等新的数据结构；但在读取性能和范围查询的平衡性、以及事务处理的稳定性方面， **B+树** 依然作为关系型数据库中绝对的王者而继续君临天下。
 
 理解数据库内部正在发生什么，直接关系到查询优化和合适的索引设计。希望你能以本文讲解的理论为基础，在日常的数据库操作中观察索引的行为了。

@@ -63,7 +63,7 @@ Par exemple, une arête reliant le sommet $u$ et $v$ est représentée par $e = 
 
 Les graphes sont globalement classés en deux types selon que les arêtes ont une direction ou non.
 
-*   **Graphe Non Orienté (Undirected Graph)** : Un graphe dont les arêtes n'ont pas de direction. Utilisé lorsque la relation est toujours mutuelle et bidirectionnelle, comme les lignes de communication, les routes à double sens ou les relations d'« amis » sur Facebook.
+*   **Graphe Non Orienté (Undirected [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** : Un graphe dont les arêtes n'ont pas de direction. Utilisé lorsque la relation est toujours mutuelle et bidirectionnelle, comme les lignes de communication, les routes à double sens ou les relations d'« amis » sur Facebook.
 *   **Graphe Orienté (Directed Graph)** : Un graphe dont les arêtes ont une direction. Utilisé pour exprimer des relations unidirectionnelles, comme l'écoulement de l'eau, les rues à sens unique ou les relations d'« abonnement » (follow) sur Twitter (X). Dans les graphes orientés, les arêtes sont clairement dessinées sous forme de flèches.
 
 ```mermaid
@@ -83,7 +83,7 @@ graph LR
 
 ### 3.3. Graphes Pondérés
 
-Lors de la modélisation de problèmes du monde réel, nous voulons souvent exprimer non seulement « s'ils sont connectés », mais aussi la « facilité de connexion » ou le « coût ». Dans de tels cas, un **Graphe Pondéré (Weighted Graph)** est utilisé, où une valeur numérique (poids) est attribuée à chaque arête. Le poids peut représenter la distance entre des villes, le temps de retard de communication ou le coût de déplacement.
+Lors de la modélisation de problèmes du monde réel, nous voulons souvent exprimer non seulement « s'ils sont connectés », mais aussi la « facilité de connexion » ou le « coût ». Dans de tels cas, un **Graphe Pondéré (Weighted [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** est utilisé, où une valeur numérique (poids) est attribuée à chaque arête. Le poids peut représenter la distance entre des villes, le temps de retard de communication ou le coût de déplacement.
 
 ### 3.4. Chemins et Cycles
 
@@ -138,7 +138,7 @@ Une liste d'adjacence est une méthode qui maintient une « liste de sommets adj
 
 Pour résoudre efficacement les problèmes sur les graphes, de nombreux excellents algorithmes ont été conçus tout au long de l'histoire de l'informatique. Nous présentons ici quelques algorithmes représentatifs considérés comme essentiels dans le génie logiciel moderne.
 
-### 5.1. Parcours en Largeur (BFS) et Parcours en Profondeur (DFS)
+### 5.1. Parcours en Largeur ([BFS](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) et Parcours en Profondeur ([DFS](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))
 
 Les algorithmes les plus fondamentaux pour visiter systématiquement tous les sommets d'un réseau sans omission sont le **Parcours en Largeur (Breadth-First Search, BFS)** et le **Parcours en Profondeur (Depth-First Search, DFS)**.
 
@@ -189,7 +189,7 @@ bfs(graph_data, 'A')
 
 Lors de la recherche de l'itinéraire le plus rapide vers une destination sur une application cartographique, ce qui opère au cœur du système est un **Algorithme du Plus Court Chemin**. L'itinéraire a des coûts (poids) tels que la « distance » et le « temps de trajet », et l'objectif est de trouver le chemin qui minimise le coût cumulé du point de départ à la destination.
 
-Inventé par l'informaticien néerlandais Edsger W. Dijkstra en 1956, l'**Algorithme de Dijkstra** est un algorithme extrêmement célèbre pour calculer efficacement le chemin le plus court à partir d'une seule source vers tous les autres sommets d'un réseau, à condition que tous les poids des arêtes soient non négatifs (0 ou plus).
+Inventé par l'informaticien néerlandais Edsger W. [Dijkstra](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) en 1956, l'**Algorithme de Dijkstra** est un algorithme extrêmement célèbre pour calculer efficacement le chemin le plus court à partir d'une seule source vers tous les autres sommets d'un réseau, à condition que tous les poids des arêtes soient non négatifs (0 ou plus).
 
 La logique centrale de l'algorithme de Dijkstra est de répéter le processus consistant à « sélectionner le sommet avec la distance non confirmée la plus courte parmi l'ensemble des sommets dont la distance la plus courte depuis le départ est déjà confirmée, et de mettre à jour les informations de distance la plus courte des sommets environnants via des itinéraires passant par ce sommet ». En utilisant une File de Priorité (Priority Queue), le temps d'exécution peut être considérablement réduit.
 
@@ -242,7 +242,7 @@ print(dijkstra(weighted_graph, 'A'))
 
 Imaginez la nécessité de connecter physiquement toutes les bases dans un vaste réseau avec le coût total le plus bas possible. Par exemple, lors de la construction d'un réseau électrique pour alimenter une nouvelle zone résidentielle, ou de la pose de câbles en fibre optique entre plusieurs villes, la situation exige de minimiser le coût de construction de l'infrastructure.
 
-Ainsi, un sous-graphe qui inclut tous les sommets du graphe, qui n'a absolument aucun cycle (c'est-à-dire une structure arborescente), et qui minimise la somme des poids des arêtes utilisées est appelé un **Arbre Couvrant de Poids Minimum (Minimum Spanning Tree, MST)**.
+Ainsi, un sous-graphe qui inclut tous les sommets du graphe, qui n'a absolument aucun cycle (c'est-à-dire une structure arborescente), et qui minimise la somme des poids des arêtes utilisées est appelé un **Arbre Couvrant de Poids Minimum (Minimum Spanning [Tree](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), MST)**.
 
 L'un des algorithmes représentatifs pour trouver cet arbre couvrant minimum est l'**Algorithme de Kruskal**. L'algorithme de Kruskal est un exemple typique d'un « Algorithme Glouton (Greedy Algorithm) » qui accumule des solutions optimales locales, en suivant des étapes extrêmement simples et intuitives.
 
@@ -260,7 +260,7 @@ Chaque arête (tuyau ou câble) composant le réseau possède une « Capacité (
 
 ## 6. Graphes Bipartis et Problèmes de Couplage
 
-Le **Graphe Biparti (Bipartite Graph)** occupe une position unique au sein de la théorie des graphes. Un graphe biparti est un graphe où, lorsque tous les sommets sont divisés en deux groupes (par exemple, le groupe $U$ et le groupe $V$), chaque arête relie toujours un sommet dans $U$ et un sommet dans $V$, et il n'y a absolument aucune arête reliant des sommets au sein du même groupe.
+Le **Graphe Biparti (Bipartite [Graph](https://kenji.blog/fr/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** occupe une position unique au sein de la théorie des graphes. Un graphe biparti est un graphe où, lorsque tous les sommets sont divisés en deux groupes (par exemple, le groupe $U$ et le groupe $V$), chaque arête relie toujours un sommet dans $U$ et un sommet dans $V$, et il n'y a absolument aucune arête reliant des sommets au sein du même groupe.
 
 Les graphes bipartis sont idéaux pour modéliser les relations entre deux ensembles ayant des propriétés différentes, tels que les « chercheurs d'emploi » et les « entreprises de recrutement », les « étudiants » et les « laboratoires », ou les « taxis » et les « passagers ».
 

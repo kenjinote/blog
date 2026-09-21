@@ -235,7 +235,7 @@ graph TD
 ### Представители графовых баз данных
 
 - **Neo4j**: Самая используемая графовая база данных в мире. Использует собственный мощный язык запросов Cypher.
-- **Amazon Neptune**: Полностью управляемая графовая база данных от AWS. Поддерживает Property Graph (Gremlin) и RDF (SPARQL).
+- **Amazon Neptune**: Полностью управляемая графовая база данных от AWS. Поддерживает Property [Graph](https://kenji.blog/ru/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (Gremlin) и RDF (SPARQL).
 - **ArangoDB**: Мультимодельная база данных, поддерживающая графы, документы и KVS.
 
 ### Преимущества и недостатки

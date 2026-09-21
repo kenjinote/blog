@@ -51,7 +51,7 @@ Ignoró por completo la forma y el tamaño físicos de la tierra firme, la anchu
 1. Representar las **áreas de tierra firme (islas y orillas)** simplemente como "puntos" sin tamaño. En la terminología moderna, esto se llama **vértice** (Vertex) o **nodo** (Node).
 2. Representar los **puentes** como "líneas" que conectan los vértices. A esto se le llama **arista** (Edge) o **enlace** (Link). La curvatura y la longitud de la línea no importan.
 
-De esta manera, una estructura discreta representada como un conjunto de un número finito de vértices y aristas que los conectan se llama **grafo** (Graph) en matemáticas. Este fue el momento exacto del nacimiento del campo que ahora llamamos "Teoría de grafos".
+De esta manera, una estructura discreta representada como un conjunto de un número finito de vértices y aristas que los conectan se llama **grafo** ([Graph](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) en matemáticas. Este fue el momento exacto del nacimiento del campo que ahora llamamos "Teoría de grafos".
 
 El siguiente diagrama de Mermaid muestra cómo el mapa geográfico de la ciudad de Königsberg se convirtió en una representación gráfica abstracta.
 

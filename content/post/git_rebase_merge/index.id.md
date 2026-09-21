@@ -13,7 +13,7 @@ tags: ["Git", "Version Control", "Rebase", "Merge"]
 
 Git adalah sistem pengontrol versi yang sangat penting dalam pengembangan perangkat lunak modern. Saat beberapa pengembang mengubah basis kode secara bersamaan, model cabang (branching) Git yang kuat akan sangat berguna. Namun, dalam pengembangan tim, perdebatan tentang "apakah harus menggunakan merge atau rebase" merupakan salah satu topik yang selalu membingungkan pengembang, mulai dari pemula hingga ahli.
 
-Artikel ini akan mengupas perbedaan mekanisme antara `git merge` dan `git rebase` secara mendalam, mulai dari struktur internal Git yaitu DAG (Directed Acyclic Graph) dan sifat matematis dari hash komit. Selain itu, artikel ini juga akan menjelaskan secara menyeluruh bagaimana cara menggunakan keduanya secara tepat dalam praktik, disertai dengan alur kerja (workflow) yang konkret. Dengan memahami tidak hanya sekadar pengenalan perintah, tetapi juga perhitungan apa yang dilakukan Git di balik layar, Anda akan menghilangkan ketakutan terhadap konflik dan mampu membangun riwayat yang bersih serta mudah dilacak.
+Artikel ini akan mengupas perbedaan mekanisme antara `git merge` dan `git rebase` secara mendalam, mulai dari struktur internal Git yaitu DAG (Directed Acyclic [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) dan sifat matematis dari hash komit. Selain itu, artikel ini juga akan menjelaskan secara menyeluruh bagaimana cara menggunakan keduanya secara tepat dalam praktik, disertai dengan alur kerja (workflow) yang konkret. Dengan memahami tidak hanya sekadar pengenalan perintah, tetapi juga perhitungan apa yang dilakukan Git di balik layar, Anda akan menghilangkan ketakutan terhadap konflik dan mampu membangun riwayat yang bersih serta mudah dilacak.
 
 ---
 
@@ -25,7 +25,7 @@ Untuk memahami bagaimana Git mengintegrasikan riwayat, pertama-tama kita perlu m
 
 Setiap komit Git diidentifikasi secara unik dengan 40 digit heksadesimal yang dihasilkan oleh fungsi hash SHA-1 (Secure Hash Algorithm 1) berdasarkan isinya. Objek komit terdiri dari elemen-elemen berikut:
 
-1. **Pointer ke objek Tree**: Cuplikan struktur direktori dan file (Blob) pada saat itu.
+1. **Pointer ke objek [Tree](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**: Cuplikan struktur direktori dan file (Blob) pada saat itu.
 2. **Pointer ke komit induk (parent)**: Nilai hash dari satu atau lebih komit induk (komit pertama tidak memiliki induk, sedangkan komit merge memiliki dua induk atau lebih).
 3. **Informasi pembuat (Author)**: Orang yang menulis kode beserta tanggal dan waktunya.
 4. **Informasi committer (Committer)**: Orang yang membuat/menerapkan komit beserta tanggal dan waktunya.
@@ -51,7 +51,7 @@ Probabilitas ini sangat rendah, sehingga secara praktis hampir tidak mungkin ter
 
 # 3. Teori Graf dan DAG: Model Matematis Riwayat Git
 
-Riwayat komit Git dimodelkan sebagai "Directed Acyclic Graph (DAG)" dalam teori graf.
+Riwayat komit Git dimodelkan sebagai "Directed Acyclic [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) (DAG)" dalam teori graf.
 
 ## 3.1 Apa itu DAG (Directed Acyclic Graph)?
 

@@ -27,13 +27,13 @@ Cuando termines de leer este artículo hasta el final, te liberarás del sentimi
 
 El primer paso para facilitar la resolución de muchos problemas es saber cómo Git guarda los datos. La carpeta oculta `.git` que se encuentra en el directorio raíz de tu proyecto es el corazón de Git. Git no es un sistema que simplemente registra las diferencias (parches) de los archivos en orden, sino que gestiona los datos como un **flujo de instantáneas (snapshots)**.
 
-### 2.1 Modelo de objetos: Blob, Tree, Commit
+### 2.1 Modelo de objetos: Blob, [Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/), Commit
 
 Git utiliza principalmente 3 objetos para representar el estado del repositorio. Estos objetos se guardan en `.git/objects`.
 
 1. **Blob (Binary Large Object)**
    Es el objeto que guarda el contenido del archivo en sí. La información como el nombre del archivo y los permisos no se incluyen aquí. Es puramente una secuencia de bytes comprimida con zlib y se identifica mediante un valor hash SHA-1 (un número hexadecimal de 40 caracteres).
-2. **Tree**
+2. **[Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
    Es el objeto que representa la estructura del directorio. Un objeto Tree contiene punteros (valores hash SHA-1) a otros objetos Tree (subdirectorios) y objetos Blob (archivos), así como sus nombres de archivo y permisos de acceso. Desempeña un papel similar a un directorio de UNIX.
 3. **Commit**
    Contiene un puntero al objeto Tree de nivel superior de todo el repositorio en un momento dado, metadatos (autor, fecha y hora del commit, mensaje del commit) y un puntero al commit inmediatamente anterior (commit padre).
@@ -334,7 +334,7 @@ Hay un error en la rama `main` actual, pero todo era normal en el lanzamiento de
 
 ### Solución: Identificar el error mediante búsqueda binaria
 
-Git tiene una herramienta incorporada para encontrar el commit donde se introdujo un error utilizando una búsqueda binaria matemática (Binary Search). La complejidad temporal es $\mathcal{O}(\log N)$, por lo que, aunque haya 1000 commits, se puede identificar con unas 10 pruebas.
+Git tiene una herramienta incorporada para encontrar el commit donde se introdujo un error utilizando una búsqueda binaria matemática ([Binary Search](https://kenji.blog/es/p/search-algorithms-linear-binary-hash-table-principles/)). La complejidad temporal es $\mathcal{O}(\log N)$, por lo que, aunque haya 1000 commits, se puede identificar con unas 10 pruebas.
 
 ```bash
 # Iniciar la búsqueda

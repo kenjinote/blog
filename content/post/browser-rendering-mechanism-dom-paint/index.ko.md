@@ -64,7 +64,7 @@ HTML의 해석은 W3C(현재는 WHATWG)에서 정의된 HTML 파싱 알고리즘
 1. **Conversion (변환)** : 네트워크에서 받은 원시 데이터의 바이트 열을 지정된 문자 인코딩(UTF-8 등)에 기반하여 개별 문자(Characters)로 변환합니다.
 2. **Tokenization (어휘 분석)** : 문자열을 W3C HTML5 표준에서 규정된 다양한 "토큰(Tokens)"으로 변환합니다. 예를 들어, `<html>` , `<body>` 등의 시작 태그, 종료 태그, 속성명과 속성값 등입니다.
 3. **Lexing (구문 분석)** : 생성된 토큰을 프로퍼티와 규칙을 가진 "객체(Nodes)"로 변환합니다.
-4. **DOM Tree Construction (트리 구축)** : 생성된 객체를 태그의 중첩 관계에 기반하여 트리 구조의 데이터 구조로 연결합니다. 이것이 **DOM (Document Object Model)** 입니다.
+4. **DOM [Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Construction (트리 구축)** : 생성된 객체를 태그의 중첩 관계에 기반하여 트리 구조의 데이터 구조로 연결합니다. 이것이 **DOM (Document Object Model)** 입니다.
 
 ```mermaid
 sequenceDiagram
@@ -158,7 +158,7 @@ gantt
 
 ## 3. Style (스타일 계산): Render 트리의 구축
 
-DOM 트리와 CSSOM 트리가 완성되면, 브라우저는 이들을 조합하여 **Render 트리 (Render Tree)** 또는 **스타일 트리 (Style Tree)** 를 구축합니다.
+DOM 트리와 CSSOM 트리가 완성되면, 브라우저는 이들을 조합하여 **Render 트리 (Render [Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** 또는 **스타일 트리 (Style Tree)** 를 구축합니다.
 
 이 페이즈에서는 DOM 트리의 각 노드에 대해 CSSOM의 어느 스타일 규칙이 적용될지를 계산하고, 최종적인 계산된 스타일(Computed Style)을 결정합니다.
 
@@ -270,7 +270,7 @@ for (let i = 0; i < elements.length; i++) {
 
 레이아웃 페이즈에 의해 각 요소의 박스 위치(X, Y 좌표)와 크기(너비, 높이)가 확정되었습니다. 그러나 아직 화면에는 아무것도 그려지지 않았습니다. 다음에 수행되는 것이 **Paint (페인트)** 페이즈입니다.
 
-Paint 페이즈의 목적은 레이아웃 트리(Layout Tree)를 입력으로 받아, 화면상의 픽셀을 어떻게 칠할지에 대한 절차(Paint Records)를 생성하고, 최종적으로 래스터화(Rasterization)하는 것입니다.
+Paint 페이즈의 목적은 레이아웃 트리(Layout [Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))를 입력으로 받아, 화면상의 픽셀을 어떻게 칠할지에 대한 절차(Paint Records)를 생성하고, 최종적으로 래스터화(Rasterization)하는 것입니다.
 
 ### 5.1 페인트의 순서 (Stacking Context)
 
@@ -322,7 +322,7 @@ Paint Record는 "이 좌표에 이 색으로 사각형을 그린다", "이 텍�
 
 브라우저의 내부에서는 여러 트리 구조가 변환되어 갑니다.
 
-1. **DOM Tree**
+1. **DOM [Tree](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**
 2. **Layout Tree (Render Tree)** : 시각 요소의 지오메트리 정보
 3. **Paint Tree (Layer Tree)** : 쌓임 문맥 등에 기반한 레이어의 계층 구조
 4. **Graphics Layer Tree** : 실제로 GPU에서 합성되는 독립적인 레이어군

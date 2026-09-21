@@ -76,7 +76,7 @@ La cabecera de bloque contiene la siguiente información:
 
 ### Árboles de Merkle (Merkle Trees)
 
-En blockchain, se utiliza una estructura de datos llamada **Árbol de Merkle (Merkle Tree)** para detectar eficientemente la manipulación de datos mientras se mantiene bajo el tamaño del bloque. El Árbol de Merkle es un tipo de árbol binario donde los nodos hoja contienen el valor hash de cada transacción, y los nodos padre son los valores hash concatenados de sus nodos hijos, aplicándoseles hash nuevamente.
+En blockchain, se utiliza una estructura de datos llamada **Árbol de Merkle (Merkle [Tree](https://kenji.blog/es/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))** para detectar eficientemente la manipulación de datos mientras se mantiene bajo el tamaño del bloque. El Árbol de Merkle es un tipo de árbol binario donde los nodos hoja contienen el valor hash de cada transacción, y los nodos padre son los valores hash concatenados de sus nodos hijos, aplicándoseles hash nuevamente.
 
 ```mermaid
 flowchart TD

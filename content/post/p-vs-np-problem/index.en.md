@@ -199,7 +199,7 @@ graph TD
 
 Amazingly, in 1971, Stephen Cook and Leonid Levin proved that the **Boolean Satisfiability Problem (SAT)** is NP-Complete (the Cook-Levin theorem).
 
-Subsequently, Richard Karp proved one after another that many real-world optimization problems, such as the Traveling Salesperson Problem, Knapsack Problem, and Graph Coloring Problem, are **NP-Complete** (Karp's 21 NP-complete problems).
+Subsequently, Richard Karp proved one after another that many real-world optimization problems, such as the Traveling Salesperson Problem, Knapsack Problem, and [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Coloring Problem, are **NP-Complete** (Karp's 21 NP-complete problems).
 
 **The greatest property of NP-Complete problems is that "if an algorithm is found that can solve even one NP-Complete problem in polynomial time, then all NP problems can be solved in polynomial time (i.e., $P = NP$)."** 
 This can be described as the ultimate domino effect in computer science.
@@ -338,7 +338,7 @@ The greatest lessons that the **P vs NP problem** (and the theory of NP-Complete
 2. **Escape to relaxation and approximation**:
     - **Approximation Algorithms**: Solve in polynomial time while guaranteeing the error from the optimal solution falls within a certain range.
     - **Heuristics**: Adopt methods like genetic algorithms or simulated annealing that have no mathematical guarantees but empirically produce "reasonably good solutions" quickly.
-    - **Dynamic Programming (DP)**: If a solution exists that depends on the magnitude of the input numbers (pseudo-polynomial time), such as in the Knapsack Problem, utilize the constraints of the input.
+    - **[Dynamic Programming](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) ([DP](https://kenji.blog/en/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))**: If a solution exists that depends on the magnitude of the input numbers (pseudo-polynomial time), such as in the Knapsack Problem, utilize the constraints of the input.
     - **SAT Solvers / MILP Solvers**: Formulate and throw it to general-purpose mathematical optimization solvers, which have been developing remarkably in recent years. Because solvers perform advanced pruning internally, they can often produce exact solutions if it is of a practical size.
 
 ```python

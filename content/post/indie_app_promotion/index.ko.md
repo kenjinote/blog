@@ -17,7 +17,7 @@ tags: ["Growth Hacking", "GA4", "PostHog", "Conversion Rate"]
 
 기술 블로그에서의 SEO(검색 엔진 최적화)는 단순히 키워드를 흩뿌리는 것이 아닙니다. 검색 엔진(Googlebot)과 소셜 미디어 크롤러에게 콘텐츠의 시맨틱스(의미)를 정확하게 전달하는 프로그래매틱한 접근이 요구됩니다.
 
-### 1.1 Open Graph Protocol (OGP) 최적화
+### 1.1 Open [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Protocol (OGP) 최적화
 
 기술 기사가 X(구 Twitter)나 Hacker News, Zenn 등에서 공유되었을 때, 클릭스루율(CTR)을 극대화하기 위해서는 OGP의 동적 생성이 필수적입니다. Next.js의 App Router를 사용하는 경우, `generateMetadata` 함수를 사용하여 기사마다 최적화된 OGP를 출력합니다.
 

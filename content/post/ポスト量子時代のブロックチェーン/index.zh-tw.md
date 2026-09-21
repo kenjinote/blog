@@ -236,7 +236,7 @@ H(s_i) \overset{?}{=} \text{pk}_{i, h_i} \quad (\text{對於所有 } 1 \le i \le
 $$
 
 這個過程在數學上極其簡單，只要量子電腦無法對 $H$ 進行反推，就不可能偽造簽章。然而，一旦進行簽章，一半的私鑰就會暴露在網路上。如果用同一對金鑰對另一則訊息進行簽章，暴露的私鑰組合起來就會給攻擊者提供偽造空間。這產生了強烈的「一次性（One-Time）」限制。
-為了使其能實際應用，人們開發了使用Merkle Tree將大量一次性金鑰綁定到單一根公鑰的 **XMSS** ，以及無狀態的 **SPHINCS+** 等技術，但它們都有簽章大小達到數十KB的缺點。
+為了使其能實際應用，人們開發了使用Merkle [Tree](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)將大量一次性金鑰綁定到單一根公鑰的 **XMSS** ，以及無狀態的 **SPHINCS+** 等技術，但它們都有簽章大小達到數十KB的缺點。
 
 ### 4.2. 晶格密碼學（Lattice-Based [Crypto](https://kenji.blog/zh-tw/p/cryptocurrency-and-bitcoin/)graphy）
 

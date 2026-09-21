@@ -236,7 +236,7 @@ H(s_i) \overset{?}{=} \text{pk}_{i, h_i} \quad (\text{对于所有 } 1 \le i \le
 $$
 
 这个过程在数学上极其简单，只要量子计算机无法对 $H$ 进行逆向计算，就不可能伪造签名。但是，由于一旦签名，一半的私钥就会暴露在网络上，如果使用同一个密钥对为另一条消息签名，暴露的私钥组件就会增加，从而给攻击者留下伪造的余地。因此产生了“只能使用一次（One-Time）”的强限制。
-为了使其能够投入实际应用，研究人员开发了使用默克尔树（Merkle Tree）将大量一次性密钥捆绑到一个根公钥上的 **XMSS** 技术，以及无状态的 **SPHINCS+** 等技术，但它们的缺点是签名大小动辄达到几十KB。
+为了使其能够投入实际应用，研究人员开发了使用默克尔树（Merkle [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）将大量一次性密钥捆绑到一个根公钥上的 **XMSS** 技术，以及无状态的 **SPHINCS+** 等技术，但它们的缺点是签名大小动辄达到几十KB。
 
 ### 4.2. 基于格的密码学（Lattice-Based [Crypto](https://kenji.blog/zh-cn/p/cryptocurrency-and-bitcoin/)graphy）
 

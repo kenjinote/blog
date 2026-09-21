@@ -24,7 +24,7 @@ RSA暗号の安全性の根拠は、「 **巨大な整数の素因数分解は�
 
 なぜ素因数分解が難しいのでしょうか？古典コンピュータにおける最良の素因数分解アルゴリズムとして知られる「一般数体ふるい法（General Number Field Sieve, GNFS）」を用いたとしても、その計算量は準指数関数的になります。
 
-桁数 $N$ の合成数を素因数分解するのにかかる時間計算量は、古典的な手法では以下のようになります。
+桁数 $N$ の合成数を素因数分解するのにかかる[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は、古典的な手法では以下のようになります。
 
 $$ O\left(\exp\left( c (\log N)^{1/3} (\log \log N)^{2/3} \right)\right) $$
 

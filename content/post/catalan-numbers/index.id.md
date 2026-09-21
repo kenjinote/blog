@@ -22,7 +22,7 @@ Dinamakan dari matematikawan Belgia Eugène Charles Catalan, deret Catalan dimul
 
 $$ C_0 = 1, \quad C_1 = 1, \quad C_2 = 2, \quad C_3 = 5, \quad C_4 = 14, \quad C_5 = 42, \quad C_6 = 132, \quad C_7 = 429, \quad \dots $$
 
-Deret ini muncul sebagai solusi untuk berbagai macam masalah kombinatorika yang sangat beragam. Dalam artikel ini, kita akan memperkenalkan empat contoh terkenal yang melibatkan bilangan Catalan (urutan kurung yang valid, pohon biner, triangulasi poligon, dan lintasan Dyck). Kita akan menguraikan struktur rekursif di baliknya untuk memahami mengapa semuanya menghasilkan deret yang sama persis. Selain itu, kita akan mendalami algoritma komputasi menggunakan Pemrograman Dinamis (DP) dan derivasi matematika melalui fungsi pembangkit.
+Deret ini muncul sebagai solusi untuk berbagai macam masalah kombinatorika yang sangat beragam. Dalam artikel ini, kita akan memperkenalkan empat contoh terkenal yang melibatkan bilangan Catalan (urutan kurung yang valid, pohon biner, triangulasi poligon, dan lintasan Dyck). Kita akan menguraikan struktur rekursif di baliknya untuk memahami mengapa semuanya menghasilkan deret yang sama persis. Selain itu, kita akan mendalami algoritma komputasi menggunakan Pemrograman Dinamis ([DP](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) dan derivasi matematika melalui fungsi pembangkit.
 
 ## 2. Empat Contoh Konkret [Bilangan Catalan](https://kenji.blog/id/p/catalan-numbers/)
 
@@ -185,7 +185,7 @@ def catalan_recursive(n):
     return res
 ```
 
-### 5.2. Pemrograman Dinamis (Dynamic Programming)
+### 5.2. Pemrograman Dinamis ([Dynamic Programming](https://kenji.blog/id/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
 Dengan memanfaatkan memoisasi (atau pemrograman dinamis bottom-up) untuk menyimpan hasil yang telah dihitung dalam array, kita dapat mengurangi kompleksitas waktu menjadi $O(n^2)$.
 

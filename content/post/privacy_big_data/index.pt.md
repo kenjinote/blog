@@ -57,7 +57,7 @@ Os seguintes modelos de extensão foram propostos para superar isso:
 - **l-diversidade (l-diversity)**: Garante que o atributo sensível tenha pelo menos $l$ valores distintos em cada classe de equivalência.
 - **t-proximidade (t-closeness)**: Garante que a distância (como a Earth Mover's Distance) entre a distribuição do atributo sensível em cada classe de equivalência e a distribuição no conjunto de dados como um todo seja igual ou inferior a um limite $t$.
 
-### 2.2 Privacidade Diferencial (Differential Privacy: DP)
+### 2.2 Privacidade Diferencial (Differential Privacy: [DP](https://kenji.blog/pt/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))
 
 Superando as limitações do modelo de k-anonimato, a "Privacidade Diferencial" (Differential Privacy), proposta por Cynthia Dwork e outros em 2006, é atualmente o padrão de privacidade mais forte e matematicamente rigoroso amplamente adotado. Gigantes da tecnologia como Apple, Google e Microsoft aplicam essa $\epsilon$-privacidade diferencial ao coletar dados de telemetria e dados estatísticos dos usuários.
 

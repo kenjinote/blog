@@ -9,7 +9,7 @@ categories: ["tools-development-environment"]
 description: 'Wajib dibaca bagi yang ingin mengimplementasikan posting pesan otomatis dari C++ ke Microsoft Teams! Kami menjelaskan langkah demi langkah secara mudah contoh kode C++ menggunakan WinHTTP dan Graph API, serta prosedur registrasi aplikasi Azure dan autentikasi API yang wajib dilakukan.'
 ---
 
-# Cara Memposting Pesan ke Microsoft Teams dari C++ (WinHTTP + Graph API)
+# Cara Memposting Pesan ke Microsoft Teams dari C++ (WinHTTP + [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API)
 
 Ingin memposting otomatis ke obrolan Microsoft Teams?
 Anda dapat menggunakan ** Microsoft Graph API ** untuk hal tersebut.
@@ -29,7 +29,7 @@ Pertama, untuk menggunakan Microsoft Graph API, Anda perlu mendaftarkan aplikasi
 ### 2. Tambahkan Izin API
 
 1. Buka menu kiri "Izin API"
-2. Pada ** "Microsoft Graph" ** > ** "Pilih Izin" **, cari cakupan berikut dan klik ** "Perbarui Izin" **
+2. Pada ** "Microsoft [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)" ** > ** "Pilih Izin" **, cari cakupan berikut dan klik ** "Perbarui Izin" **
 
 - Chat.ReadWrite
 - User.Read
@@ -77,7 +77,7 @@ curl -X POST ^
 }
 ```
 
-Gunakan `access_token` ini untuk memanggil Microsoft Graph API.
+Gunakan `access_token` ini untuk memanggil Microsoft [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API.
 
 ## 💬 Contoh C++ untuk Memposting ke Obrolan Teams
 Berikut adalah contoh C++ menggunakan WinHTTP untuk memposting pesan ke obrolan.
@@ -170,7 +170,7 @@ curl -X GET ^
   - Verifikasi sertifikat HTTPS
   - Peningkatan penanganan kesalahan
 - Untuk posting saluran, gunakan `teams/{team-id}/channels/{channel-id}/messages`.
-- Untuk mengirim lampiran, diperlukan pemrosesan multipart atau Graph Drive API.
+- Untuk mengirim lampiran, diperlukan pemrosesan multipart atau [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Drive API.
 
 ## 📎 Kesimpulan
 
@@ -179,7 +179,7 @@ curl -X GET ^
 | Graph API | API resmi untuk berinteraksi dengan Teams |
 | Registrasi Aplikasi | Prosedur otentikasi yang diperlukan di Azure |
 | Token Akses | Diperoleh melalui [OAuth](https://kenji.blog/id/p/oauth2-oidc-authentication-authorization-difference/)2 dan digunakan untuk permintaan |
-| Implementasi C++ | Memanggil Graph API menggunakan WinHTTP |
+| Implementasi C++ | Memanggil [Graph](https://kenji.blog/id/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) API menggunakan WinHTTP |
 
 ## 🚀 Langkah Selanjutnya
 

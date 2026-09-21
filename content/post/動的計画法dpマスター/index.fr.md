@@ -9,15 +9,15 @@ categories: ["programming", "algorithms"]
 tags: ["Algorithm", "DP", "C++", "Python"]
 ---
 
-De la programmation compétitive à la conception d'algorithmes en entreprise, la **programmation dynamique (Dynamic Programming, souvent abrégée en DP)** apparaît dans de nombreuses situations et constitue souvent un mur pour beaucoup de programmeurs. "Je n'arrive pas à formuler la relation de récurrence", "Les indices sont buggés", "Je ne sais même pas si le problème peut être résolu avec DP"... Vous êtes probablement nombreux à avoir ces doutes.
+De la programmation compétitive à la conception d'algorithmes en entreprise, la **programmation dynamique ([Dynamic Programming](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/), souvent abrégée en [DP](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/))** apparaît dans de nombreuses situations et constitue souvent un mur pour beaucoup de programmeurs. "Je n'arrive pas à formuler la relation de récurrence", "Les indices sont buggés", "Je ne sais même pas si le problème peut être résolu avec DP"... Vous êtes probablement nombreux à avoir ces doutes.
 
 Dans cet article, nous couvrirons tout en détail, de l'essence même de la programmation dynamique aux approches concrètes (descendante et ascendante), en passant par des explications pratiques à travers 3 problèmes représentatifs (suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/), problème du sac à dos 0/1, plus longue sous-séquence commune). En montrant des exemples d'implémentation en C++ et en Python, avec des formules mathématiques et des diagrammes, nous fournirons un chemin pour "maîtriser complètement" le sujet. Ce sera un article très long, mais lorsque vous l'aurez lu jusqu'à la fin, vos compétences en algorithmique auront certainement fait un bond en avant.
 
 ---
 
-## 1. Qu'est-ce que la programmation dynamique (DP) ?
+## 1. Qu'est-ce que la programmation dynamique ([DP](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) ?
 
-La programmation dynamique (Dynamic Programming) est une méthode de conception d'algorithmes qui permet de réduire considérablement la complexité des calculs en divisant un problème complexe en "sous-problèmes" plus petits, puis en enregistrant et en réutilisant les solutions de ces sous-problèmes.
+La programmation dynamique ([Dynamic Programming](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/)) est une méthode de conception d'algorithmes qui permet de réduire considérablement la complexité des calculs en divisant un problème complexe en "sous-problèmes" plus petits, puis en enregistrant et en réutilisant les solutions de ces sous-problèmes.
 
 Inventée dans les années 1950 par Richard Bellman, cette technique démontre une puissance écrasante dans les problèmes d'optimisation. Il n'y a pas de signification particulière au mot "dynamique" (Dynamic) ; une anecdote raconte qu'il a choisi ce terme parce qu'il "sonnait bien" pour obtenir des financements de recherche à l'époque. Cependant, aujourd'hui, elle s'est solidement établie comme l'un des concepts les plus importants de l'informatique.
 
@@ -27,7 +27,7 @@ Pour que la programmation dynamique soit applicable, le problème cible doit sat
 
 C'est la propriété selon laquelle **le même sous-problème apparaît de manière répétée** au cours du processus de résolution du problème plus vaste.
 
-Par exemple, dans le calcul de la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) que nous verrons plus loin, le calcul de "trouver le 3ème terme" est nécessaire à la fois pour trouver le 5ème terme et pour trouver le 4ème terme. Si les sous-problèmes ne se chevauchent pas (ex. : les méthodes diviser pour régner comme le tri fusion), il n'y a aucun avantage à enregistrer les solutions, ce qui ne justifie pas l'application de la DP. C'est précisément parce qu'il y a des chevauchements qu'il est possible d'accélérer considérablement le processus en sauvegardant le résultat d'un calcul dans la mémoire (mémoïsation ou tabulation) pour le réutiliser.
+Par exemple, dans le calcul de la suite de [Fibonacci](https://kenji.blog/fr/p/fibonacci/) que nous verrons plus loin, le calcul de "trouver le 3ème terme" est nécessaire à la fois pour trouver le 5ème terme et pour trouver le 4ème terme. Si les sous-problèmes ne se chevauchent pas (ex. : les méthodes diviser pour régner comme le tri fusion), il n'y a aucun avantage à enregistrer les solutions, ce qui ne justifie pas l'application de la [DP](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/). C'est précisément parce qu'il y a des chevauchements qu'il est possible d'accélérer considérablement le processus en sauvegardant le résultat d'un calcul dans la mémoire (mémoïsation ou tabulation) pour le réutiliser.
 
 ### 1-2. Sous-structure optimale (Optimal Substructure)
 
@@ -212,7 +212,7 @@ Si vous choisissez des objets sans dépasser la capacité du sac à dos, quelle 
 
 ### 4-2. Définition de l'état et équation de transition d'état
 
-L'étape la plus importante pour résoudre avec DP est de définir correctement l'"état" ([State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/)).
+L'étape la plus importante pour résoudre avec [DP](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) est de définir correctement l'"état" ([State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/)).
 Dans ce problème, deux paramètres varient. "Jusqu'à quel objet avons-nous considéré ?" et "Quelle est la capacité restante du sac à dos ?". Nous définissons donc l'état comme suit.
 
 **Définition de l'état :**
@@ -319,7 +319,7 @@ Grâce à cela, la complexité spatiale est considérablement améliorée de $O(
 
 ## 5. Pratique 3 : Plus Longue Sous-séquence Commune (LCS: Longest Common Subsequence)
 
-Comme problème DP représentatif traitant des chaînes de caractères, prenons le LCS. Le LCS est un algorithme largement appliqué dans le monde réel, par exemple pour la détection des différences entre fichiers (outil diff) ou l'évaluation de la similarité des séquences d'ADN.
+Comme problème [DP](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) représentatif traitant des chaînes de caractères, prenons le LCS. Le LCS est un algorithme largement appliqué dans le monde réel, par exemple pour la détection des différences entre fichiers (outil diff) ou l'évaluation de la similarité des séquences d'ADN.
 
 ### 5-1. Énoncé du problème
 
@@ -430,7 +430,7 @@ Pour le problème LCS également, puisque la mise à jour utilise seulement la l
 
 ## 6. Processus de réflexion pour maîtriser la programmation dynamique
 
-Jusqu'à présent, nous avons vu divers problèmes, mais face à un problème de DP inconnu, comment devriez-vous penser ? Gardez toujours à l'esprit les étapes suivantes.
+Jusqu'à présent, nous avons vu divers problèmes, mais face à un problème de [DP](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) inconnu, comment devriez-vous penser ? Gardez toujours à l'esprit les étapes suivantes.
 
 1. **Ce problème peut-il être résolu avec la DP ? (Vérification des conditions)**
    En pensant récursivement, le même état apparaît-il plusieurs fois ? (Chevauchement des sous-problèmes). Peut-on déduire l'optimum global en combinant les meilleurs choix ? (Sous-structure optimale).
@@ -451,6 +451,6 @@ Dans cet article, nous avons expliqué en détail les bases théoriques de la pr
 - Si l'on peut établir correctement la formule mathématique (équation de transition d'état), l'implémentation devient très simple.
 - Les techniques de réduction de la complexité spatiale (réduction du tableau à 1D ou tableau glissant) sont indispensables lorsqu'une performance de niveau professionnel est exigée.
 
-La programmation dynamique peut sembler difficile au début. Cependant, en s'entraînant à trouver la "définition de l'état" et la "transition" sur divers problèmes, vous commencerez progressivement à voir les motifs. Il existe des applications plus avancées telles que la DP sur les arbres, la DP sur les chiffres, la DP avec des masques de bits, la DP sur les intervalles, etc., mais toutes reposent sur la fondation du "chevauchement des sous-problèmes" et de "l'optimisation" que nous avons appris cette fois-ci.
+La programmation dynamique peut sembler difficile au début. Cependant, en s'entraînant à trouver la "définition de l'état" et la "transition" sur divers problèmes, vous commencerez progressivement à voir les motifs. Il existe des applications plus avancées telles que la [DP](https://kenji.blog/fr/p/dynamic-programming-dp-introduction-knapsack-fibonacci/) sur les arbres, la DP sur les chiffres, la DP avec des masques de bits, la DP sur les intervalles, etc., mais toutes reposent sur la fondation du "chevauchement des sous-problèmes" et de "l'optimisation" que nous avons appris cette fois-ci.
 
 Sans vous précipiter, prenez un papier et un stylo et dessinez vous-même un tableau de DP pour approfondir votre compréhension. Lorsque vous serez capable de libérer la véritable puissance de cet algorithme, votre monde de la programmation s'élargira encore plus.

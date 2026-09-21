@@ -57,7 +57,7 @@ a {
 }
 ```
 
-このように、レイアウトやタイポグラフィの指定と、色（テーマ）の指定を完全に分離することで、CSSの保守性は飛躍的に向上します。
+このように、レイアウトやタイポ[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)ィの指定と、色（テーマ）の指定を完全に分離することで、CSSの保守性は飛躍的に向上します。
 
 ### 1.2 @media (prefers-color-scheme: dark) の活用
 

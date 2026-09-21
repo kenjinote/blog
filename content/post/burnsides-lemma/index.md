@@ -256,6 +256,6 @@ $$
 *   **[バーンサイドの補題](https://kenji.blog/p/burnsides-lemma/)** を使えば、「各操作での不動点の数を平均する」という機械的な手順で、本質的に異なるパターンの数を計算できる。
 *   この定理は、軌道・安定化群の定理という群論の深い性質に基づいている。
 
-[バーンサイドの補題](https://kenji.blog/p/burnsides-lemma/)は、化学における分子の異性体（アイソマー）の数え上げ、[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)におけるグラフの同型判定、さらには物理学の統計力学など、幅広い分野で応用されている非常に実践的な定理です。
+[バーンサイドの補題](https://kenji.blog/p/burnsides-lemma/)は、化学における分子の異性体（アイソマー）の数え上げ、[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)における[グラフ](https://kenji.blog/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)の同型判定、さらには物理学の統計力学など、幅広い分野で応用されている非常に実践的な定理です。
 
 今回紹介した基礎を通じて、抽象的に見えがちな「群論」という数学の分野が、いかに現実の具体的な問題を鮮やかに解決するか、その一端を感じていただけたなら幸いです。

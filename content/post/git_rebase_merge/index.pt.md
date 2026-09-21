@@ -25,7 +25,7 @@ Para entender como o Git integra o histórico, primeiro precisamos saber como el
 
 Cada commit no Git é identificado de forma única por um número hexadecimal de 40 dígitos gerado pela função de hash SHA-1 (Secure Hash Algorithm 1), calculada com base no seu conteúdo. Um objeto de commit é composto pelos seguintes elementos:
 
-1. **Ponteiro para o objeto Tree**: O instantâneo da estrutura de diretórios e arquivos (Blob) naquele momento
+1. **Ponteiro para o objeto [Tree](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)**: O instantâneo da estrutura de diretórios e arquivos (Blob) naquele momento
 2. **Ponteiro para o commit pai**: O valor do hash de um ou mais commits pais (o primeiro commit não tem pai e um commit de merge tem dois ou mais pais)
 3. **Informações do autor (Author)**: A pessoa que escreveu o código e a data/hora
 4. **Informações do committer (Committer)**: A pessoa que criou/aplicou o commit e a data/hora
@@ -51,7 +51,7 @@ Essa probabilidade é extremamente baixa e, na prática, é quase impossível qu
 
 # 3. Teoria dos grafos e DAG: O modelo matemático do histórico do Git
 
-O histórico de commits do Git é modelado como um "Grafo Acíclico Direcionado (DAG - Directed Acyclic Graph)" na teoria dos grafos.
+O histórico de commits do Git é modelado como um "Grafo Acíclico Direcionado (DAG - Directed Acyclic [Graph](https://kenji.blog/pt/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))" na teoria dos grafos.
 
 ## 3.1 O que é um DAG (Grafo Acíclico Direcionado)
 

@@ -131,7 +131,7 @@ zk-STARKs basieren nicht auf elliptischer Kurven-Kryptographie, sondern stützen
 
 Die Überprüfung der Berechnung erfolgt unter Ausnutzung der Eigenschaften von ein- oder mehrdimensionalen Polynomen, nachdem sie in ein Format namens AIR (Algebraic Intermediate Representation) konvertiert wurde. Der Kern von STARKs liegt im **FRI (Fast Reed-Solomon Interactive Oracle Proof of Proximity)**-Protokoll.
 
-Das FRI-Protokoll ist eine Technik zur Überprüfung, "ob eine bestimmte Funktion ausreichend nahe (Proximity) an einem Polynom eines bestimmten Grades liegt". Der Beweiser bindet sich (Commitment) an die Werte des Polynoms als Blätter eines Merkle-Baums (Merkle Tree) (Polynom-Commitment).
+Das FRI-Protokoll ist eine Technik zur Überprüfung, "ob eine bestimmte Funktion ausreichend nahe (Proximity) an einem Polynom eines bestimmten Grades liegt". Der Beweiser bindet sich (Commitment) an die Werte des Polynoms als Blätter eines Merkle-Baums (Merkle [Tree](https://kenji.blog/de/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)) (Polynom-Commitment).
 
 ```mermaid
 graph TD

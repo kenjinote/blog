@@ -19,9 +19,9 @@ tags:
 
 In modern computer science, **graph theory** provides a powerful mathematical framework for modeling network structures. In our daily lives, technologies for calculating the "shortest path" are used in various scenarios, such as car navigation, railway transfer guidance, internet routing, and even pathfinding in game AI.
 
-This article comprehensively explains the mathematical definitions of graph theory, which form the foundation of pathfinding, followed by the mechanisms, mathematical proofs, and practical implementation methods using Python for the representative search algorithm, **Dijkstra's Algorithm**, and its further developed form, the **A* Algorithm** (A-Star Algorithm).
+This article comprehensively explains the mathematical definitions of graph theory, which form the foundation of pathfinding, followed by the mechanisms, mathematical proofs, and practical implementation methods using Python for the representative search algorithm, **[Dijkstra](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm**, and its further developed form, the **A* Algorithm** (A-Star Algorithm).
 
-## 2. Basics of Graph Theory
+## 2. Basics of [Graph](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/) Theory
 
 Before diving into the algorithms, let's first mathematically define the target data structure, which is the graph.
 
@@ -76,7 +76,7 @@ The **Shortest Path Problem** is the problem of finding a path $ P^* $ that mini
 
 ---
 
-## 3. Dijkstra's Algorithm
+## 3. [Dijkstra](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm
 
 Conceived by Edsger W. Dijkstra, **Dijkstra's Algorithm** is an algorithm for finding the shortest paths from a single source vertex to all other vertices in a graph with non-negative weights.
 
@@ -98,7 +98,7 @@ $$
 d[v] = d[u] + w(u, v)
 $$
 
-### 3.3 Implementation of Dijkstra's Algorithm in Python
+### 3.3 Implementation of [Dijkstra](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s Algorithm in Python
 
 For an efficient implementation, we use a priority queue as the data structure to retrieve the minimum value. In Python, the `heapq` module can be used.
 
@@ -149,7 +149,7 @@ Therefore, the time complexity is $ O((|V| + |E|) \log |V|) $. If a Fibonacci he
 
 ## 4. A* Algorithm (A-Star Algorithm)
 
-While Dijkstra's algorithm is reliable, it often results in unnecessary exploration because it expands the search in all directions without considering the direction of the destination. The **A* algorithm** solves this issue.
+While [Dijkstra](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s algorithm is reliable, it often results in unnecessary exploration because it expands the search in all directions without considering the direction of the destination. The **A* algorithm** solves this issue.
 
 ### 4.1 Introduction of the Heuristic Function
 
@@ -254,7 +254,7 @@ def reconstruct_path(came_from, current):
     return path
 ```
 
-### 4.5 Comparison between Dijkstra's and A*
+### 4.5 Comparison between [Dijkstra](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s and A*
 
 The Mermaid diagram below is a visual comparison of the search areas for Dijkstra's algorithm and A*. While Dijkstra's algorithm expands its search in concentric circles, A* proceeds with the search in an elliptical shape stretched towards the goal.
 
@@ -283,7 +283,7 @@ graph TD
 
 ## 5. Applications of Pathfinding and Future Prospects
 
-While Dijkstra's and the A* algorithms are fundamental techniques, they serve as the base for many applied technologies.
+While [Dijkstra](https://kenji.blog/en/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)'s and the A* algorithms are fundamental techniques, they serve as the base for many applied technologies.
 
 1. **Bidirectional Search**:
    A method that dramatically reduces the search space by simultaneously progressing the search from both the start and the end, meeting in the middle.

@@ -417,7 +417,7 @@ graph TD
 
 ### 10.3 Signals 的数学模型
 
-Signals 背后是“响应式编程”的理论，它将状态和计算之间的依赖关系建模为 **有向无环图（Directed Acyclic Graph: DAG）** ，并利用图的拓扑排序来高效地确定更新顺序。
+Signals 背后是“响应式编程”的理论，它将状态和计算之间的依赖关系建模为 **有向无环图（Directed Acyclic [Graph](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/): DAG）** ，并利用图的拓扑排序来高效地确定更新顺序。
 
 如果某个派生状态（Computed） $ C $ 依赖于 Signal $ S_1, S_2 $，则形成边 $ S_1 \to C $、$ S_2 \to C $。
 当值发生变化时，通过遍历图并仅评估必要的节点（采用 Push / Pull 混合策略等），可以防止故障（Glitch：一瞬间显示处于中间状态、不一致的 UI 的现象），并确保拓扑一致性。

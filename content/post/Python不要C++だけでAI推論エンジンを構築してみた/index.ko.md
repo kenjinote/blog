@@ -42,7 +42,7 @@ graph TD
 ```
 
 1. **텐서(Tensor) 관리**: 다차원 배열의 데이터 구조와 차원별 스트라이드(Stride)를 관리합니다.
-2. **계산 그래프(Computation Graph)**: 신경망 각 층의 연산을 방향성 비순환 그래프(DAG)로 표현합니다.
+2. **계산 그래프(Computation [Graph](https://kenji.blog/ko/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/))**: 신경망 각 층의 연산을 방향성 비순환 그래프(DAG)로 표현합니다.
 3. **메모리 아레나(Memory Arena)**: 동적 메모리 확보(`malloc`이나 `new`)의 오버헤드를 피하기 위한, 사전 확보형 메모리 관리 메커니즘입니다.
 4. **백엔드(Backend)**: CPU나 GPU 등, 특정 하드웨어에 최적화된 연산 구현(커널)입니다.
 

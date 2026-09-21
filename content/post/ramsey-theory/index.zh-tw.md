@@ -39,7 +39,7 @@ math: true
 | 藍色虛線 | 兩人彼此不認識 |
 | 由 3 條同色邊組成的三角形 | 我們正在尋找的 3 人小組 |
 
-由於所有人兩兩之間都連上了一條線，因此這在圖論中被稱為 **完全圖（Complete Graph）** 。頂點數為 $n$ 的完全圖記作 $K_n$，其邊的數量如下：
+由於所有人兩兩之間都連上了一條線，因此這在圖論中被稱為 **完全圖（Complete [Graph](https://kenji.blog/zh-tw/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）** 。頂點數為 $n$ 的完全圖記作 $K_n$，其邊的數量如下：
 
 $$
 \binom{n}{2}=\frac{n(n-1)}{2}

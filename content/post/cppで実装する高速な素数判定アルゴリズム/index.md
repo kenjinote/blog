@@ -281,12 +281,12 @@ int main() {
 
 実装したアルゴリズムの性能について考察します。
 
-## 時間計算量 (Time Complexity)
+## [時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/) (Time Complexity)
 * **試し割り法:** $O(\sqrt{N})$
 * **[フェルマー](https://kenji.blog/p/fermat/)テスト:** べき乗計算 $O(\log N) \times k$ （$k$ は試行回数）
 * **ミラー・ラビン法:** べき乗計算とループ $O(\log N) \times k$
 
-64ビット環境（$N \le 2^{64}$）において、上記の決定論的ミラー・ラビン法は、最大でも $7$ つのベースしか検証しません。したがって、$k \le 7$ の定数とみなすことができ、全体の時間計算量は厳密に $O(\log N)$ となります。
+64ビット環境（$N \le 2^{64}$）において、上記の決定論的ミラー・ラビン法は、最大でも $7$ つのベースしか検証しません。したがって、$k \le 7$ の定数とみなすことができ、全体の[時間計算量](https://kenji.blog/p/time-space-complexity-big-o-notation-examples/)は厳密に $O(\log N)$ となります。
 最大ケース（$N \approx 10^{19}$）であっても、実行ステップ数は高々 $7 \times 64 = 448$ ステップの基本演算に収まり、実行時間は数マイクロ秒（$10^{-6}$ 秒）以下です。試し割り法の $O(\sqrt{N})$ （ループ回数 $\approx 4 \times 10^9$ 回）と比較すると、 **数百万倍の高速化** が達成されています。
 
 ## さらなる最適化：モンゴメリ乗算 (Montgomery Multiplication)

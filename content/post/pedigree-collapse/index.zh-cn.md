@@ -16,7 +16,7 @@ slug: "pedigree-collapse"
 
 当我们思考自己的根源，即“家谱”时，必然会面临一个奇妙的数学矛盾。那就是 **[祖先悖论](https://kenji.blog/zh-cn/p/pedigree-collapse/)** （[Ancestor Paradox](https://kenji.blog/zh-cn/p/pedigree-collapse/)）。
 
-人类的系谱基本上可以建模为简单的二叉树（Binary Tree）。你有两个双亲（父亲和母亲），他们各自有两个双亲（祖父母）。此外，他们的双亲也各自有两个双亲（曾祖父母）。也就是说，假设世代为 $g$ （自己为第0代），那么 $g$ 代前的祖先数量应该是 $2^g$ 人。
+人类的系谱基本上可以建模为简单的二叉树（Binary [Tree](https://kenji.blog/zh-cn/p/tree-graph-data-structures-search-dfs-bfs-dijkstra/)）。你有两个双亲（父亲和母亲），他们各自有两个双亲（祖父母）。此外，他们的双亲也各自有两个双亲（曾祖父母）。也就是说，假设世代为 $g$ （自己为第0代），那么 $g$ 代前的祖先数量应该是 $2^g$ 人。
 
 计算下去，我们会得出一个非常有趣且违反直觉的不可思议的结果。
 
