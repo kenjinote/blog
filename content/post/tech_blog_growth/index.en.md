@@ -175,7 +175,7 @@ else:
     print("No data found.")
 ```
 
-By running this script as a cron job or a GitHub Actions scheduled job, you can continuously make data-driven decisions on "which article titles to rewrite." It's important to rely on data rather than intuition for continuous improvement (Continuous Content Improvement).
+By running this script as a cron job or a [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) scheduled job, you can continuously make data-driven decisions on "which article titles to rewrite." It's important to rely on data rather than intuition for continuous improvement (Continuous Content Improvement).
 
 ---
 
@@ -231,7 +231,7 @@ The great thing about tech blogs is that even if $Rev_{ad}$ is small, $Val_{bran
 
 ---
 
-## 5. Distribution via GitHub Actions and External Automation Tool Integration
+## 5. Distribution via [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) and External Automation Tool Integration
 
 After creating content, the challenge becomes how to efficiently deliver it to the target audience (distribution). Manually posting links to each SNS every time is inefficient and un-engineer-like.
 
@@ -253,9 +253,9 @@ flowchart TD
     C -->|"Actions Script"| K["Qiita / Zenn Cross-Post API"]
 ```
 
-### 5.2 Key Points for Building an Automation Pipeline
+### 5.2 Key Points for Building an Automation [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)
 
-1. **Build and Deploy with GitHub Actions**
+1. **Build and Deploy with [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)**
    If using a static site generator, automate the HTML generation and deployment to the hosting provider (Vercel, Netlify, Cloudflare Pages, etc.) using GitHub Actions. At this time, it is also effective to incorporate an image optimization process (such as auto-conversion to WebP) into the build pipeline as a Core Web Vitals countermeasure mentioned earlier.
 
 2. **SNS Integration with RSS Triggers Using Zapier/IFTTT**
@@ -275,7 +275,7 @@ To dramatically increase monthly traffic on a tech blog, the engineering approac
 2. Article design that understands the user's search intent (troubleshooting vs. systematic learning)
 3. Data analysis utilizing the Google Search Console API and Python
 4. Content lifecycle management and rewriting with ROI in mind
-5. Complete automation of distribution through CI/CD and Zapier integration
+5. Complete automation of distribution through [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) and Zapier integration
 
 If you can assemble these as a system, your tech blog will become the strongest asset to powerfully boost your own career. Engineers struggling with stagnant traffic should definitely start "blog growth hacking" today. The programming skills and architecture design abilities cultivated in development work will undoubtedly be your greatest weapons in blog management as well.
 

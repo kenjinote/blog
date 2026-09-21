@@ -238,13 +238,13 @@ def extract_missing_keywords(documents):
 # print(missing_keywords)
 ```
 
-Através dessa análise, você pode descobrir quantitativamente **lacunas de tópicos (lacunas de conteúdo)**, tais como "na verdade, os principais artigos mencionam sobre 'como implantar em contêineres Docker' e 'construir um pipeline CI/CD', mas não toco nisso no meu artigo".
+Através dessa análise, você pode descobrir quantitativamente **lacunas de tópicos (lacunas de conteúdo)**, tais como "na verdade, os principais artigos mencionam sobre 'como implantar em contêineres [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/)' e 'construir um pipeline [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)', mas não toco nisso no meu artigo".
 
 O conjunto de palavras-chave importantes descobertas não deve ser simplesmente espalhado no texto, mas sim adicionado como seções significativas como **cabeçalhos H2 e H3 (tags de Heading)**. Escrever explicações técnicas detalhadas e trechos de código para esses cabeçalhos pode melhorar drasticamente a avaliação do Google.
 
 ---
 
-## 7. Pipeline de dados e ciclo de melhoria contínua
+## 7. [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) de dados e ciclo de melhoria contínua
 
 O processo explicado até agora não acaba após uma única execução; transformá-lo num pipeline e executá-lo de forma contínua é a chave do sucesso em SEO. A arquitetura geral e o fluxo operacional são exibidos num fluxograma Mermaid abaixo.
 

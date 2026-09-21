@@ -120,7 +120,7 @@ Event Loop 的優點在於不需要對共用狀態進行鎖定管理。但是，
 
 ### 3.1 Actor 模型的基本概念
 
-在 Actor 模型中，處理的基本單位稱為「Actor」。每個 Actor 擁有獨立的狀態（State）與行為（Behavior），並且不會直接與其他 Actor 共用狀態。Actor 之間的溝通完全透過 **非同步的訊息傳遞** 來進行。
+在 Actor 模型中，處理的基本單位稱為「Actor」。每個 Actor 擁有獨立的狀態（[State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)）與行為（Behavior），並且不會直接與其他 Actor 共用狀態。Actor 之間的溝通完全透過 **非同步的訊息傳遞** 來進行。
 
 - **狀態的封裝**: Actor 內部的狀態無法從外部直接存取。
 - **訊息佇列（Mailbox）**: 接收到的訊息會被放入 Mailbox 佇列中，並依序進行處理。

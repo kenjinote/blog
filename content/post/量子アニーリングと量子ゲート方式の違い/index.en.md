@@ -98,7 +98,7 @@ Therefore, a process called **"Minor Embedding"** is required, which maps a prob
 
 The quantum gate model is a quantum mechanical extension of classical computer logic gates (AND, OR, NOT, etc.), and it is an architecture that enables **"Universal Quantum Computation"**. Many companies, such as IBM, Google, Rigetti, and IonQ, have adopted this method.
 
-### 3.1. Unitary Transformation and State Vector
+### 3.1. Unitary Transformation and [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Vector
 
 In the quantum gate model, the state of the entire system of qubits is represented as a "State Vector" $|\psi\rangle$. The state of one qubit is expressed as a linear combination of the basis states $|0\rangle$ and $|1\rangle$ as follows:
 $$ |\psi\rangle = \alpha |0\rangle + \beta |1\rangle $$

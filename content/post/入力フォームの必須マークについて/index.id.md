@@ -18,7 +18,7 @@ Kami merangkum informasi tentang tanda "wajib" pada UI layar (formulir) di luar 
 1. **Penggunaan Asterisk (\*)**
 
     * Ini adalah yang paling umum dan banyak digunakan, di mana bidang wajib ditandai dengan "\*".
-    * Namun, **penjelasan di awal formulir seperti "* adalah bidang wajib" sangat diperlukan** ([Nielsen Norman Group][1], [California State University, Northridge][2]).
+    * Namun, **penjelasan di awal formulir seperti "* adalah bidang wajib" sangat diperlukan** ([Nielsen Norman Group][1], [California [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) University, Northridge][2]).
     * Ada juga contoh penggunaan warna untuk penekanan (seperti teks merah).
 
 2. **Menyatakan "Required" atau "(required)" dengan Jelas pada Label**
@@ -72,7 +72,7 @@ Kami merangkum informasi tentang tanda "wajib" pada UI layar (formulir) di luar 
 
 ## 🔗 Tautan Referensi (Materi Pedoman UI)
 
-* NN/g: *Marking Required Fields in Forms* ([California State University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
+* NN/g: *Marking Required Fields in Forms* ([California [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
 * Deque: *Anatomy of Accessible Forms* ([Deque][3])
 * W3C Techniques: *H90 Indicating required form controls* ([W3C][5])
 * TPGi: *Indicating mandatory fields accessibly* ([TPGi][4])

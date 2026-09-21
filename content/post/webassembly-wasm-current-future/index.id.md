@@ -247,10 +247,10 @@ flowchart TD
     B -->|"Validasi Keamanan & Cek Izin"| C["OS Host e.g. Linux, Windows"]
 ```
 
-## 7.2 Alternatif dan Koeksistensi dengan Kontainer Docker
+## 7.2 Alternatif dan Koeksistensi dengan Kontainer [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)
 Solomon Hykes, penemu Docker, membuat komentar populer yang menyatakan: "Jika Wasm dan WASI sudah ada di tahun 2008, maka kami tidak perlu menciptakan Docker."
 Wasm memiliki kelebihan yang kuat yaitu jauh lebih ringan dibandingkan kontainer, waktu nyalanya lebih cepat (dalam hitungan milidetik), dan tidak bergantung pada OS atau arsitektur CPU tertentu.
-Saat ini, beberapa proyek (seperti Kwasm dan Spin) yang mendalangi eksekusi modul Wasm secara langsung sebagai pengganti kontainer Docker pada Kubernetes sedang aktif dikembangkan.
+Saat ini, beberapa proyek (seperti Kwasm dan Spin) yang mendalangi eksekusi modul Wasm secara langsung sebagai pengganti kontainer Docker pada [Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/) sedang aktif dikembangkan.
 
 ---
 

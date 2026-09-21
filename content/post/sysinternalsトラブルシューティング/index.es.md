@@ -60,7 +60,7 @@ Si encuentras un `svchost.exe` sospechoso, haz doble clic en el proceso y revisa
 ### 2.3 Interrupciones de hardware y análisis de picos del 100% en la CPU
 Si todo el sistema se congela durante unos segundos o si el audio se entrecorta (stuttering), al revisar el Administrador de tareas podrías notar que "System Interrupts" está consumiendo toda la CPU.
 
-En la programación de Windows, las interrupciones de hardware (ISR: Interrupt Service Routine) y las llamadas a procedimientos diferidos (DPC: Deferred Procedure Call) se ejecutan con una prioridad mayor (IRQL: Interrupt Request Level) que los subprocesos de usuario normales. Esto significa que, si un controlador defectuoso prolonga una DPC, la CPU no podrá ejecutar ninguna otra tarea en ese núcleo.
+En la programación de Windows, las interrupciones de hardware (ISR: Interrupt [Service](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/) Routine) y las llamadas a procedimientos diferidos (DPC: Deferred Procedure Call) se ejecutan con una prioridad mayor (IRQL: Interrupt Request Level) que los subprocesos de usuario normales. Esto significa que, si un controlador defectuoso prolonga una DPC, la CPU no podrá ejecutar ninguna otra tarea en ese núcleo.
 
 Si el uso de CPU por parte de `Interrupts` o `DPCs` en la parte superior de la lista de procesos de ProcExp es alto, puedes usarlo junto con Windows Performance Analyzer (WPA) para identificar el controlador causal (`.sys`). El cálculo del tiempo de CPU puede formularse de la siguiente manera:
 
@@ -141,7 +141,7 @@ flowchart LR
 ### 4.1 Pestañas importantes a revisar y funciones avanzadas
 *   **Logon**: Claves Run/RunOnce estándar, carpeta de inicio.
 *   **Scheduled Tasks**: Programador de tareas de Windows. El malware a menudo crea tareas falsificadas bajo nombres como "Adobe Update" o "Google Update".
-*   **Services / Drivers**: Controladores que se inician en el modo kernel. Aquí puedes deshabilitar los archivos `.sys` sospechosos que están causando el pico del 100% de CPU mencionado anteriormente.
+*   **[Service](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/)s / Drivers**: Controladores que se inician en el modo kernel. Aquí puedes deshabilitar los archivos `.sys` sospechosos que están causando el pico del 100% de CPU mencionado anteriormente.
 *   **WMI**: Ubicaciones de persistencia de malware sin archivos (Fileless Malware) que utilizan filtros de eventos y consumidores de WMI (Windows Management Instrumentation). Es un área que a menudo se pasa por alto.
 *   **AppInit_DLLs / KnownDLLs**: Listas de DLL que se inyectan forzosamente cada vez que se inicia una aplicación. Son un caldo de cultivo para hooks mediante la inyección de DLL.
 

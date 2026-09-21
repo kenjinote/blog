@@ -317,7 +317,7 @@ sequenceDiagram
 這3家公司都明言，透過API傳送的資料（提示詞與回應） **不會被用於模型訓練（Zero Data Retention / No Training on Customer Data）** （※免費的消費者用Web聊天介面不在此限）。
 
 若要求更高級別的安全性：
-- **OpenAI**: 透過Azure OpenAI Service，可利用Microsoft企業級的安全性、SLA，以及Azure Private Link所提供的封閉網路連線。
+- **OpenAI**: 透過Azure OpenAI [Service](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)，可利用Microsoft企業級的安全性、SLA，以及Azure Private Link所提供的封閉網路連線。
 - **Google**: 透過Google Cloud Vertex AI，可利用VPC Service Controls進行嚴密的網路隔離，並支援CMEK（客戶管理加密金鑰）的資料保護。
 - **Anthropic**: 透過AWS Bedrock或Google Cloud Vertex AI使用，可搭乘雲端供應商堅固的安全基礎設施。
 

@@ -318,7 +318,7 @@ constexpr double area = calculateCircleArea(10.0);
 
 - **Clang-Tidy**: 강력한 C++용 린터 및 정적 분석 도구. `modernize-*` 계열의 검사를 활성화하여 `auto`의 적용, `nullptr`로의 대체, `override` 부여 등을 자동으로 적용(Fix-it)해 줍니다.
 - **AddressSanitizer (ASan)**: 컴파일 옵션(`-fsanitize=address`)으로 통합하여 실행 시의 메모리 누수나 버퍼 오버런을 정확하게 식별합니다. 테스트 실행 시에는 반드시 활성화해야 합니다.
-- **CI/CD 파이프라인 구축**: GitHub Actions나 GitLab CI를 사용하여 모든 풀 리퀘스트에 대해 빌드와 자동 테스트, 정적 분석을 실행하고 새로운 기술 부채의 유입을 방지합니다.
+- **[CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인 구축**: [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)나 GitLab CI를 사용하여 모든 풀 리퀘스트에 대해 빌드와 자동 테스트, 정적 분석을 실행하고 새로운 기술 부채의 유입을 방지합니다.
 
 ---
 

@@ -26,7 +26,7 @@ Lo que ha sustentado la industria de TI japonesa durante muchos años fue el mod
 
 Sin embargo, a partir de 2026, este modelo ha llegado a su límite. Debido a que la esencia de la DX (Transformación Digital) pasó de "mera informatización" a "transformación del modelo de negocio", el desarrollo en cascada (waterfall), con su baja agilidad, ya no puede seguir el ritmo de los cambios del mercado.
 
-Los procesos de desarrollo modernos parten de la premisa de ser **nativos de la nube** y **basados en IA**. La contenerización (Docker/Kubernetes), la arquitectura de microservicios y la automatización de los procesos de CI/CD ya no son "tecnologías especiales", sino "infraestructura estándar".
+Los procesos de desarrollo modernos parten de la premisa de ser **nativos de la nube** y **basados en IA**. La contenerización ([Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/)), la arquitectura de microservicios y la automatización de los procesos de [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) ya no son "tecnologías especiales", sino "infraestructura estándar".
 
 ```mermaid
 graph TD
@@ -137,7 +137,7 @@ La IA puede escribir código, pero no puede "desentrañar las complejas especifi
 ### B. Arquitectura y Diseño de Requisitos No Funcionales
 Los "requisitos no funcionales" como la disponibilidad, escalabilidad, seguridad y rendimiento de los sistemas no son algo que la IA optimice automáticamente. Las decisiones arquitectónicas sobre "qué servicios en la nube combinar", "qué protocolos de comunicación usar entre microservicios" y "dónde establecer los límites de transacción de la base de datos" todavía dependen en gran medida de la experiencia e intuición humanas avanzadas.
 
-### C. MLOps y Construcción de Pipelines de Datos
+### C. MLOps y Construcción de [Pipeline](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/)s de Datos
 El concepto de "MLOps" para continuar operando IA generativa y modelos de aprendizaje automático en entornos de producción es cada vez más importante. Los talentos con estas habilidades que se encuentran en la intersección de la ingeniería de software y la ciencia de datos, tales como la supervisión de la deriva del modelo (pérdida de precisión), la canalización de entrenamiento continuo y la optimización de recursos de GPU, tienen una gran demanda.
 
 ---

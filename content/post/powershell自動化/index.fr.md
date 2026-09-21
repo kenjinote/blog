@@ -34,7 +34,7 @@ Les types de politiques d'exécution sont les suivants :
 - **AllSigned**: N'autorise l'exécution que des scripts signés par un éditeur de confiance.
 - **RemoteSigned**: Les scripts créés localement peuvent être exécutés tels quels, mais les scripts téléchargés depuis Internet nécessitent une signature.
 - **Unrestricted**: Tous les scripts peuvent être exécutés, mais un avertissement s'affichera lors de l'exécution d'un script téléchargé depuis Internet.
-- **Bypass**: Rien n'est bloqué et aucun avertissement n'est affiché. Souvent utilisé pour l'exécution temporaire de scripts (comme les pipelines CI/CD).
+- **Bypass**: Rien n'est bloqué et aucun avertissement n'est affiché. Souvent utilisé pour l'exécution temporaire de scripts (comme les pipelines [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/)).
 
 Lors de l'exécution de vos propres scripts via le Planificateur de tâches dans un environnement d'entreprise local, le paramètre le plus réaliste et le plus sûr est `RemoteSigned`. Lancez PowerShell avec les privilèges d'administrateur et exécutez la commande suivante :
 
@@ -108,7 +108,7 @@ En tirant parti de cette base, vous pouvez créer des scripts sûrs et traçable
 
 ## Intégration au Planificateur de tâches (Register-ScheduledTask)
 
-Une fois le script terminé, vous avez ensuite besoin d'un mécanisme pour l'exécuter régulièrement. Sous Windows, l'option la plus fiable est le « Planificateur de tâches ». Bien qu'il soit possible de le configurer via l'interface graphique (`taskschd.msc`), dans l'optique de coder les manuels d'infrastructure (Infrastructure as Code), nous expliquerons comment enregistrer des tâches à l'aide des applets de commande PowerShell.
+Une fois le script terminé, vous avez ensuite besoin d'un mécanisme pour l'exécuter régulièrement. Sous Windows, l'option la plus fiable est le « Planificateur de tâches ». Bien qu'il soit possible de le configurer via l'interface graphique (`taskschd.msc`), dans l'optique de coder les manuels d'infrastructure ([Infrastructure as Code](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/)), nous expliquerons comment enregistrer des tâches à l'aide des applets de commande PowerShell.
 
 PowerShell dispose du module `ScheduledTasks`, qui vous permet de définir de manière détaillée le déclencheur (quand l'exécuter), l'action (ce qu'il faut exécuter) et le principal (avec quels privilèges d'utilisateur l'exécuter).
 

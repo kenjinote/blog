@@ -12,7 +12,7 @@ description: 'Panduan teknis lengkap untuk menghosting situs statis menggunakan 
 
 Dalam mengelola situs web atau blog, kecepatan pemuatan (kinerja), biaya operasional, dan keamanan adalah faktor yang sangat penting. Di masa lalu, kombinasi CMS (Content Management System) dinamis seperti WordPress dan server sewaan adalah yang utama, tetapi saat ini, arsitektur yang disebut "Jamstack" menarik banyak perhatian. Di antaranya, menggabungkan "Hugo", generator situs statis (SSG) super cepat yang dibuat dalam bahasa Go, dengan layanan hosting modern seperti Cloudflare Pages atau GitHub Pages memungkinkan Anda membangun lingkungan blog yang **sepenuhnya gratis dan sangat cepat**.
 
-Artikel ini akan membahas secara mendalam dari perspektif teknis langkah-langkah spesifik untuk memublikasikan situs statis berbasis Hugo di Cloudflare Pages atau GitHub Pages, perbedaan arsitektur di setiap platform, pengaturan CI/CD (Continuous Integration / Continuous Deployment) menggunakan GitHub Actions, pengoptimalan DNS, strategi cache, hingga penerapan analisis akses yang mengutamakan privasi.
+Artikel ini akan membahas secara mendalam dari perspektif teknis langkah-langkah spesifik untuk memublikasikan situs statis berbasis Hugo di Cloudflare Pages atau GitHub Pages, perbedaan arsitektur di setiap platform, pengaturan [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) (Continuous Integration / Continuous Deployment) menggunakan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/), pengoptimalan DNS, strategi cache, hingga penerapan analisis akses yang mengutamakan privasi.
 
 ---
 
@@ -82,7 +82,7 @@ Dengan demikian, pengenalan CDN dapat secara dramatis mengurangi (sekitar 90%) r
 
 ---
 
-## 4. Membangun Pipeline CI/CD dengan GitHub Actions
+## 4. Membangun [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dengan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)
 
 Untuk mengotomatiskan proses pembaruan blog Hugo, kita akan membangun pipeline CI/CD menggunakan GitHub Actions. Melalui pengaturan ini, cukup dengan menulis artikel Markdown di lokal dan menjalankan `git push`, proses build akan berjalan otomatis dan langsung di-deploy ke Cloudflare Pages atau GitHub Pages.
 
@@ -108,7 +108,7 @@ sequenceDiagram
 
 ### 4.1 Konfigurasi Deployment untuk Cloudflare Pages (Direct Upload)
 
-Untuk Cloudflare Pages, terdapat dua metode: menghubungkan repositori GitHub dan membangunnya di infrastruktur Cloudflare, atau melakukan "Direct Upload (Unggah Langsung)" dari file statis yang di-build melalui GitHub Actions. Jika Anda ingin mengontrol versi Hugo lebih ketat dan mengintegrasikannya dengan pekerjaan lain (seperti pengujian atau optimasi gambar), disarankan untuk menggunakan metode Direct Upload setelah melakukan build di GitHub Actions.
+Untuk Cloudflare Pages, terdapat dua metode: menghubungkan repositori GitHub dan membangunnya di infrastruktur Cloudflare, atau melakukan "Direct Upload (Unggah Langsung)" dari file statis yang di-build melalui [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/). Jika Anda ingin mengontrol versi Hugo lebih ketat dan mengintegrasikannya dengan pekerjaan lain (seperti pengujian atau optimasi gambar), disarankan untuk menggunakan metode Direct Upload setelah melakukan build di GitHub Actions.
 
 Berikut adalah contoh praktis file `.github/workflows/deploy.yml` untuk deployment ke Cloudflare Pages.
 
@@ -248,7 +248,7 @@ Dengan menambahkan atribut `defer`, skrip akan dimuat secara asinkron tanpa memb
 
 Dalam mengoperasikan situs statis dengan Hugo, menggunakan platform hosting modern seperti Cloudflare Pages atau GitHub Pages menawarkan manfaat luar biasa dalam hal efektivitas biaya, kecepatan tampilan, dan keamanan.
 
-1. **Build Super Cepat**: Manfaatkan kecepatan Hugo untuk meminimalkan waktu eksekusi pipeline CI/CD (GitHub Actions).
+1. **Build Super Cepat**: Manfaatkan kecepatan Hugo untuk meminimalkan waktu eksekusi pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) ([GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)).
 2. **Distribusi di Edge**: Gunakan jaringan edge Cloudflare untuk mengirimkan konten kepada pengguna di seluruh dunia dengan latensi dalam hitungan milidetik.
 3. **Konfigurasi DNS yang Tepat**: Manfaatkan CNAME Flattening untuk mengelola Zone Apex (domain kustom) secara aman dan cepat.
 4. **Optimasi Strategi Cache**: Gunakan `_headers` untuk memisahkan cache browser dan cache edge berdasarkan jenis sumber dayanya dengan tepat.

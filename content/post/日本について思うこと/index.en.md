@@ -19,7 +19,7 @@ In addition, university tuition fees have been continuously increasing since 195
 
 On the other hand, it seems that the recent average total borrowing amount reaches 3.24 million yen.
 
-> For users of the Japan Student Services Organization scholarships, the average total borrowing amount is 3,243,000 yen. [Reference](https://magazine.aruhi-corp.co.jp/0000-5086/#:~:text=%E5%80%9F%E5%85%A5%E7%B7%8F%E9%A1%8D%E3%81%AA%E3%81%A9%E3%81%AE%E5%B9%B3%E5%9D%87%E9%A1%8D%E3%81%AF&text=%E6%97%A5%E6%9C%AC%E5%AD%A6%E7%94%9F%E6%94%AF%E6%8F%B4%E6%A9%9F%E6%A7%8B%E3%81%AE%E5%A5%A8%E5%AD%A6%E9%87%91%E5%88%A9%E7%94%A8%E8%80%85%E3%81%AB%E3%81%8A%E3%81%84%E3%81%A6,%E4%BB%A5%E4%B8%8A%E3%82%92%E5%8D%A0%E3%82%81%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82)
+> For users of the Japan Student [Service](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/)s Organization scholarships, the average total borrowing amount is 3,243,000 yen. [Reference](https://magazine.aruhi-corp.co.jp/0000-5086/#:~:text=%E5%80%9F%E5%85%A5%E7%B7%8F%E9%A1%8D%E3%81%AA%E3%81%A9%E3%81%AE%E5%B9%B3%E5%9D%87%E9%A1%8D%E3%81%AF&text=%E6%97%A5%E6%9C%AC%E5%AD%A6%E7%94%9F%E6%94%AF%E6%8F%B4%E6%A9%9F%E6%A7%8B%E3%81%AE%E5%A5%A8%E5%AD%A6%E9%87%91%E5%88%A9%E7%94%A8%E8%80%85%E3%81%AB%E3%81%8A%E3%81%84%E3%81%A6,%E4%BB%A5%E4%B8%8A%E3%82%92%E5%8D%A0%E3%82%81%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82)
 
 If someone is burdened with a debt of 3 million yen at the age of 22 when graduating from university, naturally, their marriage age will be delayed, and it will obviously become harder to have children. I think this is one of the causes of Japan's declining birthrate problem.
 

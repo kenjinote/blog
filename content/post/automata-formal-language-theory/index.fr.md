@@ -288,7 +288,7 @@ Les théories que nous avons vues jusqu'à présent ne se limitent en aucun cas 
 
 Les moteurs d'expressions régulières intégrés dans de nombreux langages de programmation ( Java, Python, Ruby, JavaScript, etc. ) ne sont pas de purs DFA théoriques, mais sont implémentés sur une base de NFA avec retour sur trace (ou moteur de backtracking).
 
-Pour cette raison, si une chaîne astucieuse est donnée à un modèle spécifique d'expression régulière (par exemple : `(a+)+$`), la complexité de calcul peut exploser exponentiellement et provoquer une vulnérabilité appelée **ReDoS** ( Regular Expression Denial of Service ) qui gèle le système. Si vous connaissez la théorie, vous pouvez comprendre logiquement pourquoi le retour sur trace se produit et comment réécrire le modèle pour l'adapter à un traitement équivalent à un DFA sûr.
+Pour cette raison, si une chaîne astucieuse est donnée à un modèle spécifique d'expression régulière (par exemple : `(a+)+$`), la complexité de calcul peut exploser exponentiellement et provoquer une vulnérabilité appelée **ReDoS** ( Regular Expression Denial of [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/) ) qui gèle le système. Si vous connaissez la théorie, vous pouvez comprendre logiquement pourquoi le retour sur trace se produit et comment réécrire le modèle pour l'adapter à un traitement équivalent à un DFA sûr.
 
 ---
 

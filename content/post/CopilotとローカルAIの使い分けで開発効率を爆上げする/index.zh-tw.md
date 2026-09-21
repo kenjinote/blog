@@ -179,7 +179,7 @@ $$ L_{local} = \frac{T_{in}}{S_{process\_local}} $$
 簡單介紹導入本機 AI 的具體步驟。目前最簡單且最強大的方法是使用 **Ollama** 或 **LM Studio** 。
 
 ### 6.1 導入 Ollama
-Ollama 是一個輕量級框架，用於在本機環境中運行 LLM。支援 MacOS、Windows 和 Linux，可以像使用 Docker 一樣直覺地管理模型。
+Ollama 是一個輕量級框架，用於在本機環境中運行 LLM。支援 MacOS、Windows 和 Linux，可以像使用 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 一樣直覺地管理模型。
 
 ```bash
 # MacOS 的情況

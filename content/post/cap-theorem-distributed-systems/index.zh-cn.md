@@ -272,7 +272,7 @@ stateDiagram-v2
 2.  **Leader Append-Only** ：领导者绝不会覆盖或删除其日志条目，只进行追加。
 3.  **Log Matching** ：如果两个日志包含具有相同索引和 Term 的条目，那么它们在此之前的所有条目都是相同的。
 
-通过这些机制，Raft 在数学和算法上彻底消除了分布式环境中的数据不一致问题。Kubernetes 的后端数据存储 `etcd` 也采用了 [Raft](https://kenji.blog/zh-cn/p/byzantine-generals-problem-consensus/)，以实现集群严格的状态管理。
+通过这些机制，Raft 在数学和算法上彻底消除了分布式环境中的数据不一致问题。[Kubernetes](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/) 的后端数据存储 `etcd` 也采用了 [Raft](https://kenji.blog/zh-cn/p/byzantine-generals-problem-consensus/)，以实现集群严格的状态管理。
 
 ## 8. 微服务与事务
 

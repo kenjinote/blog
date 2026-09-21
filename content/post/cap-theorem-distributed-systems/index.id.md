@@ -269,7 +269,7 @@ Keamanan [Raft](https://kenji.blog/id/p/byzantine-generals-problem-consensus/) b
 2.  **Leader Append-Only (Pemimpin Hanya Menambahkan)** : Pemimpin tidak pernah menimpa atau menghapus entri di log-nya sendiri; pemimpin hanya dapat menambahkan entri baru.
 3.  **Log Matching (Pencocokan Log)** : Jika dua log berisi entri dengan indeks dan Term yang sama, maka semua entri sebelumnya identik.
 
-Hal ini secara matematis dan algoritmik sepenuhnya menghilangkan inkonsistensi data di lingkungan terdistribusi. `etcd`, datastore backend dari Kubernetes, juga menggunakan [Raft](https://kenji.blog/id/p/byzantine-generals-problem-consensus/) untuk mencapai manajemen status (state management) klaster yang ketat.
+Hal ini secara matematis dan algoritmik sepenuhnya menghilangkan inkonsistensi data di lingkungan terdistribusi. `etcd`, datastore backend dari [Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/), juga menggunakan [Raft](https://kenji.blog/id/p/byzantine-generals-problem-consensus/) untuk mencapai manajemen status (state management) klaster yang ketat.
 
 ## 8. Layanan Mikro (Microservices) dan Transaksi
 

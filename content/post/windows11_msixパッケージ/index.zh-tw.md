@@ -70,7 +70,7 @@ flowchart TD
 
 ## 4. 方法 B：使用命令列 (MakeAppx.exe) 製作
 
-在 CI/CD 管線的自動化，或是手動將現有安裝程式的檔案群重新封裝時，就需要命令列工具。只要安裝了 Windows SDK 的環境，就能從開發人員命令提示字元存取以下工具。
+在 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線的自動化，或是手動將現有安裝程式的檔案群重新封裝時，就需要命令列工具。只要安裝了 Windows SDK 的環境，就能從開發人員命令提示字元存取以下工具。
 
 ### 1. 準備資訊清單檔案
 在套件的根目錄中，建立一個寫有最低限度資訊的 `AppxManifest.xml`。

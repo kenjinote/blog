@@ -37,7 +37,7 @@ $$ S(N) = \frac{1}{(1 - P) + \frac{P}{N}} $$
 
 ### 傳統的 `std::thread` (C++11)
 
-C++11 匯入的 `std::thread` 是用來在新的執行緒中執行函式或 Lambda 運算式的最基礎類別。
+C++11 匯入的 `std::thread` 是用來在新的執行緒中執行函式或 [Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/) 運算式的最基礎類別。
 
 ```cpp
 #include <iostream>

@@ -12,7 +12,7 @@ description: 'Panduan setup lengkap untuk WSL2 yang akan secara dramatis meningk
 
 "WSL2 (Windows Subsystem for Linux 2)", yang menyediakan lingkungan pengembangan native Linux di Windows, telah menjadi alat yang sangat penting dalam pengembangan perangkat lunak modern. Namun, ada perbedaan besar dalam kinerja dan pengalaman pengembangan antara menggunakannya dalam status default dan memahaminya serta menyesuaikan arsitekturnya dengan tepat.
 
-Artikel ini membahas segala hal mulai dari penjelasan arsitektur yang menjadi inti dari WSL2, hingga pengaturan untuk memaksimalkan kinerja, membangun lingkungan terminal yang nyaman, integrasi mulus dengan Docker dan VS Code, dan pengaturan jaringan lanjutan. Kami akan menjelaskan secara menyeluruh semua langkah untuk membangun "Lingkungan Pengembangan Ultimate" yang dibutuhkan oleh insinyur profesional dalam volume lebih dari 10.000 karakter.
+Artikel ini membahas segala hal mulai dari penjelasan arsitektur yang menjadi inti dari WSL2, hingga pengaturan untuk memaksimalkan kinerja, membangun lingkungan terminal yang nyaman, integrasi mulus dengan [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) dan VS Code, dan pengaturan jaringan lanjutan. Kami akan menjelaskan secara menyeluruh semua langkah untuk membangun "Lingkungan Pengembangan Ultimate" yang dibutuhkan oleh insinyur profesional dalam volume lebih dari 10.000 karakter.
 
 ---
 
@@ -256,7 +256,7 @@ VS Code di sisi Windows hanya berfungsi sebagai "klien tipis (UI)", dan semua tu
 Instal **"WSL" (ms-vscode-remote.remote-wsl)** dari "Extensions" di VS Code. Setelah itu, cukup pindah ke direktori proyek di terminal WSL dan jalankan `code .`, dan VS Code di sisi Windows akan diluncurkan dengan direktori tersebut terbuka.
 
 **Poin Penting (Masalah Kode Baris Baru):**
-Kode baris baru berbeda antara Windows dan Linux (Windows menggunakan `CRLF`, Linux menggunakan `LF`). Saat mengembangkan di WSL, pastikan untuk mengatur pengaturan `core.autocrlf` Git dan pengaturan default file VS Code ke `LF`. Jika Anda mengabaikan hal ini, Anda akan diganggu oleh kesalahan misterius saat menjalankan skrip shell atau kontainer Docker.
+Kode baris baru berbeda antara Windows dan Linux (Windows menggunakan `CRLF`, Linux menggunakan `LF`). Saat mengembangkan di WSL, pastikan untuk mengatur pengaturan `core.autocrlf` Git dan pengaturan default file VS Code ke `LF`. Jika Anda mengabaikan hal ini, Anda akan diganggu oleh kesalahan misterius saat menjalankan skrip shell atau kontainer [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ```bash
 # Pengaturan kode baris baru Git di sisi WSL
@@ -274,7 +274,7 @@ Tambahkan juga hal berikut ini ke `settings.json` (pengaturan remote) di VS Code
 
 ---
 
-## 7. Optimasi Docker Desktop dan Integrasi WSL2
+## 7. Optimasi [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop dan Integrasi WSL2
 
 Ada dua pendekatan utama untuk menggunakan Docker di lingkungan WSL2.
 
@@ -287,10 +287,10 @@ Ini sering kali direkomendasikan karena mudah dikelola dengan GUI dan akses tran
 - Centang `General` -> `Use the WSL 2 based engine`.
 - Centang `Resources` -> `WSL Integration` -> `Enable integration with my default WSL distro` dan nyalakan tombol geser untuk distribusi (Ubuntu) yang Anda gunakan.
 
-Ini memungkinkan Anda menjalankan perintah `docker` langsung dari terminal WSL2, dan komunikasi dengan daemon Docker akan dialihkan melalui VM ringan khusus (`docker-desktop` dan `docker-desktop-data`) yang dikelola oleh Docker Desktop.
+Ini memungkinkan Anda menjalankan perintah `docker` langsung dari terminal WSL2, dan komunikasi dengan daemon [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) akan dialihkan melalui VM ringan khusus (`docker-desktop` dan `docker-desktop-data`) yang dikelola oleh [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop.
 
 ### Pendekatan 2: Pengenalan Langsung Docker Engine Native
-Jika Anda memiliki batasan jaringan perusahaan (seperti menghindari versi berbayar Docker Desktop) atau ingin mengurangi overhead kinerja hingga batas ekstrem, aktifkan `systemd` di `/etc/wsl.conf` lalu instal Docker sebagai server Ubuntu murni.
+Jika Anda memiliki batasan jaringan perusahaan (seperti menghindari versi berbayar Docker Desktop) atau ingin mengurangi overhead kinerja hingga batas ekstrem, aktifkan `systemd` di `/etc/wsl.conf` lalu instal [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) sebagai server Ubuntu murni.
 
 ```bash
 # Kutipan dari prosedur instalasi resmi Docker di WSL2 Ubuntu dengan systemd diaktifkan
@@ -351,7 +351,7 @@ Setelah pengaturan ini selesai, ketika Anda menjalankan `ssh-add -l` dari termin
 
 ## 9. Pemeliharaan: Optimasi (Kompaksi) VHDX yang Membengkak
 
-Salah satu kelemahan terbesar WSL2 adalah bahwa "ukuran file dari disk virtual di sisi Windows (.vhdx) tidak menyusut secara otomatis bahkan jika Anda menghapus image Docker atau menghapus file". Jika Anda terus mengembangkan untuk jangka waktu yang lama, file ext4.vhdx dapat membengkak hingga puluhan atau ratusan GB.
+Salah satu kelemahan terbesar WSL2 adalah bahwa "ukuran file dari disk virtual di sisi Windows (.vhdx) tidak menyusut secara otomatis bahkan jika Anda menghapus image [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) atau menghapus file". Jika Anda terus mengembangkan untuk jangka waktu yang lama, file ext4.vhdx dapat membengkak hingga puluhan atau ratusan GB.
 
 Untuk mengosongkan ruang disk, Anda perlu mengoptimalkan (Compact) VHDX dari sisi Windows secara berkala.
 

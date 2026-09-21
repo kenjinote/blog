@@ -24,7 +24,7 @@ description: 'سنتعمق في طرق تخصيص Windows Terminal إلى أقص
 
 # 1. بنية تصيير Windows Terminal والنموذج الرياضي
 
-السبب وراء الأداء السريع والسلس بشكل استثنائي لـ Windows Terminal هو وجود مسار تصيير (Rendering Pipeline) متطور يستفيد لأقصى حد من حزمة الرسومات الحديثة في Windows. كبديل لـ GDI (Graphics Device Interface) التقليدي، يعتمد Windows Terminal على تسريع الأجهزة المستند إلى وحدة معالجة الرسومات (GPU) باستخدام DirectWrite و DirectX (Direct2D/Direct3D).
+السبب وراء الأداء السريع والسلس بشكل استثنائي لـ Windows Terminal هو وجود مسار تصيير (Rendering [Pipeline](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)) متطور يستفيد لأقصى حد من حزمة الرسومات الحديثة في Windows. كبديل لـ GDI (Graphics Device Interface) التقليدي، يعتمد Windows Terminal على تسريع الأجهزة المستند إلى وحدة معالجة الرسومات (GPU) باستخدام DirectWrite و DirectX (Direct2D/Direct3D).
 
 فيما يلي رسم توضيحي لمسار تصيير الطرفية منذ إدخال المفتاح وحتى رسم الحرف على الشاشة.
 
@@ -226,7 +226,7 @@ $$
 ]
 ```
 
-بإعداد روابط المفاتيح المذكورة أعلاه، يمكنك ضبط حجم اللوح باستخدام `Alt + Shift + مفاتيح الأسهم`، ونقل التركيز فوراً بين الألواح باستخدام `Alt + مفاتيح الأسهم`. يتيح لك هذا أداء مهام متوازية متقدمة بسلاسة، مثل تشغيل خادم Node.js محلي ومراقبة سجلاته في أحد الألواح، وتشغيل أوامر Git في لوح آخر، والتحقق من حالة حاوية Docker في لوح ثالث.
+بإعداد روابط المفاتيح المذكورة أعلاه، يمكنك ضبط حجم اللوح باستخدام `Alt + Shift + مفاتيح الأسهم`، ونقل التركيز فوراً بين الألواح باستخدام `Alt + مفاتيح الأسهم`. يتيح لك هذا أداء مهام متوازية متقدمة بسلاسة، مثل تشغيل خادم Node.js محلي ومراقبة سجلاته في أحد الألواح، وتشغيل أوامر Git في لوح آخر، والتحقق من حالة حاوية [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/) في لوح ثالث.
 
 ## 4.1 وضع Quake (الطرفية العالمية المنسدلة)
 
@@ -250,7 +250,7 @@ wt -p "PowerShell 7" -d "C:\Projects\MyApp" ; split-pane -p "Ubuntu-22.04" -d "/
 
 # 6. تطور الموجه 1: PowerShell و Oh My Posh
 
-تعد أداة "**Oh My Posh**" بمثابة تطور هائل لـ PowerShell، الصدفة القياسية في بيئة Windows (خاصة الإصدار الأحدث المتوافق مع مختلف المنصات، PowerShell 7 / PowerShell Core). Oh My Posh هو محرك موجه (Prompt) مخصص يدعم جميع أنواع الصدفات، ويقدم لك جميع الحالات اللازمة للتطوير بشكل مرئي وجذاب، مثل الدليل الحالي، وفرع Git وحالة التغيير، وإصدار Node.js أو Python، وسياق Kubernetes.
+تعد أداة "**Oh My Posh**" بمثابة تطور هائل لـ PowerShell، الصدفة القياسية في بيئة Windows (خاصة الإصدار الأحدث المتوافق مع مختلف المنصات، PowerShell 7 / PowerShell Core). Oh My Posh هو محرك موجه (Prompt) مخصص يدعم جميع أنواع الصدفات، ويقدم لك جميع الحالات اللازمة للتطوير بشكل مرئي وجذاب، مثل الدليل الحالي، وفرع Git وحالة التغيير، وإصدار Node.js أو Python، وسياق [Kubernetes](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/).
 
 يوضح الشكل التالي التسلسل الزمني لكيفية تحميل Oh My Posh وتصيير الموجه عند بدء تشغيل PowerShell.
 

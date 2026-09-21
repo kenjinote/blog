@@ -11,7 +11,7 @@ tags: ["Idea Generation", "Obsidian", "RSS", "Knowledge Management"]
 
 Sebagai seorang engineer atau researcher yang mengelola blog teknologi, ada satu rintangan yang hampir pasti akan Anda hadapi. Yaitu "kehabisan ide". Meskipun beberapa artikel pertama dapat ditulis dengan lancar, seiring berjalannya waktu, tidak jarang kita merasa tersiksa oleh kekhawatiran seperti "Saya tidak tahu apa yang harus ditulis selanjutnya" atau "Input saya sangat kurang untuk menghasilkan output". Menulis blog teknologi tidak hanya bergantung pada keterampilan menulis, tetapi juga sangat bergantung pada perancangan sistem yang mencakup pengumpulan pengetahuan harian, pengorganisasian, dan penggabungan elemen-elemen tersebut untuk menciptakan nilai baru.
 
-Dalam artikel ini, kami akan menjelaskan secara sangat rinci dan teknis tentang **pipeline input dan output yang disistematisasi** untuk terus menghasilkan ide artikel teknologi secara semi-permanen. Kita akan mulai dengan mekanisme untuk secara otomatis mengekstrak topik yang sedang tren menggunakan API dari sumber informasi luar negeri berkualitas tinggi seperti Hacker News dan Lobsters, serta menjalankannya secara rutin dengan GitHub Actions. Kemudian, informasi yang terkumpul akan disistematisasi sebagai pengetahuan menggunakan metode Zettelkasten dengan Obsidian, dan dikombinasikan dengan Embeddings API dari OpenAI serta Pinecone (database vektor) untuk memungkinkan pencarian semantik, membangun sistem Manajemen Pengetahuan Pribadi (PKM: Personal Knowledge Management) yang canggih.
+Dalam artikel ini, kami akan menjelaskan secara sangat rinci dan teknis tentang **pipeline input dan output yang disistematisasi** untuk terus menghasilkan ide artikel teknologi secara semi-permanen. Kita akan mulai dengan mekanisme untuk secara otomatis mengekstrak topik yang sedang tren menggunakan API dari sumber informasi luar negeri berkualitas tinggi seperti Hacker News dan Lobsters, serta menjalankannya secara rutin dengan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/). Kemudian, informasi yang terkumpul akan disistematisasi sebagai pengetahuan menggunakan metode Zettelkasten dengan Obsidian, dan dikombinasikan dengan Embeddings API dari OpenAI serta Pinecone (database vektor) untuk memungkinkan pencarian semantik, membangun sistem Manajemen Pengetahuan Pribadi (PKM: Personal Knowledge Management) yang canggih.
 
 Selain itu, untuk mengimbangi keterbatasan daya ingat manusia, kita akan mempraktikkan Pengulangan Berjarak (Spaced Repetition) menggunakan Anki berdasarkan kurva kelupaan Ebbinghaus, dan mendalami serangkaian proses untuk menyublimasikan pengetahuan yang telah melekat menjadi ide-ide baru melalui "Kreativitas Kombinatorial (Combinatorial Creativity)", lengkap dengan model matematis spesifik dan contoh implementasi skrip Python.
 
@@ -27,7 +27,7 @@ Di sini, $X$ adalah variabel acak dari topik yang diperoleh dari sumber informas
 
 Untuk menjaga entropi tetap tinggi, kita perlu secara sengaja memasukkan sumber informasi yang biasanya tidak kita akses sebagai noise, dan meratakan distribusi probabilitas dalam bersentuhan dengan topik-topik yang belum diketahui. Inilah alasan terbesar mengapa kita harus mengotomatisasi input dari berbagai sumber informasi.
 
-## 2. Membangun Pipeline Pengumpulan Informasi Otomatis: Hacker News & Lobsters API
+## 2. Membangun [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) Pengumpulan Informasi Otomatis: Hacker News & Lobsters API
 
 Untuk mendapatkan input yang berkualitas tinggi, akan sangat efektif untuk mengekstrak informasi tren dari komunitas engineer berkualitas baik dengan tingkat noise yang rendah. Hacker News (dioperasikan oleh Y Combinator) dan Lobsters adalah tempat terbaik di mana diskusi teknis yang mendalam berlangsung. Namun, menelusuri situs-situs ini setiap hari memakan waktu dan menghabiskan sumber daya kognitif.
 
@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
 Skrip ini memberikan nilai lebih dari sekadar pembaca RSS sederhana. Dengan memfilter berdasarkan skor, kita hanya mengekstrak topik teknis yang benar-benar diperhatikan oleh komunitas (sinyal tinggi dengan noise rendah).
 
-## 3. Penjadwalan dan Otomatisasi dengan GitHub Actions
+## 3. Penjadwalan dan Otomatisasi dengan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)
 
 Menjalankan skrip Python yang telah dibuat secara manual setiap hari sangat merepotkan. Dasar dari otomatisasi adalah mengurangi campur tangan manusia semaksimal mungkin. Kita akan membangun mekanisme untuk menjalankan skrip setiap hari pada waktu yang ditentukan dan mengkomit hasilnya secara otomatis ke repositori menggunakan fitur Cron dari GitHub Actions.
 
@@ -316,7 +316,7 @@ Untuk pola kombinasi dalam blog teknologi, matriks berikut bisa dipertimbangkan:
 
 1. **[Teknologi Lama] × [Paradigma Baru]**: Contoh "Belajar dari arsitektur COBOL tentang anti-pattern dalam desain arsitektur microservices modern"
 2. **[Frontend] × [Konsep Backend]**: Contoh "Menjelaskan algoritme pembaruan Virtual DOM React dari perspektif tingkat isolasi transaksi database"
-3. **[Matematika/Teori Abstrak] × [Implementasi Konkret]**: Contoh "Memahami optimasi penjadwalan Pod di Kubernetes melalui teori graf"
+3. **[Matematika/Teori Abstrak] × [Implementasi Konkret]**: Contoh "Memahami optimasi penjadwalan [Pod](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/) di [Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/) melalui teori graf"
 
 Untuk menciptakan kombinasi ini secara sengaja, kita dapat memanfaatkan sistem pencarian semantik Pinecone yang telah dibangun, mengekstrak konsep A dan konsep B secara acak, dan memberikan prompt ke AI (seperti ChatGPT), "Berikan 5 ide judul dan draf daftar isi untuk blog teknologi yang menggabungkan 2 konsep ini", sehingga mampu menghasilkan ide-ide artikel dari sudut pandang orisinal tanpa batas yang tidak pernah terpikirkan oleh kita sendiri.
 

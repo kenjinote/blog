@@ -69,7 +69,7 @@ Addresses:  185.199.108.153
 ## 在 Github 儲存庫中設定自訂網域
 1. 打開儲存庫頁面，然後點擊 Settings
 2. 點擊 Pages
-3. 如果您要直接發佈儲存庫的原始碼，請在 Source 中選擇「Deploy from a branch」。如果您要建置原始碼（如 HUGO），請選擇「GitHub Actions」。
+3. 如果您要直接發佈儲存庫的原始碼，請在 Source 中選擇「Deploy from a branch」。如果您要建置原始碼（如 HUGO），請選擇「[GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)」。
 4. 在 Branch 中選擇要發佈的分支，然後點擊 Save
 5. 在 Custom domain 中輸入您取得的網域，然後點擊 Save。
 6. 如果需要，請勾選「Enforce HTTPS」以啟用 HTTPS 支援

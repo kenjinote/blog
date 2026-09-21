@@ -356,7 +356,7 @@ def check_and_ventilate():
 ```
 이러한 스크립트를 Cron으로 정기적으로 실행하면 항상 최적의 산소 농도를 유지하는 자율형 환경 제어 시스템이 완성됩니다.
 
-## 13. 결론: 인체라는 시스템의 CI/CD
+## 13. 결론: 인체라는 시스템의 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)
 
 자신의 몸을 하나의 복잡한 분산 시스템으로 간주해 보십시오. 웨어러블 기기(Oura Ring)는 모니터링용 메트릭스 익스포터(Prometheus), Python/Pandas 스크립트는 로그 분석 파이프라인(Logstash/Fluentd), 그리고 매일의 컨디션 변화와 퍼포먼스는 대시보드(Grafana/Streamlit)에 표시되는 시스템의 건전성입니다.
 

@@ -408,7 +408,7 @@ Dengan menerapkan pengaturan ini, ukuran binary yang dihasilkan akan berkurang b
 
 ---
 
-## 12. CI/CD dan Distribusi (Publishing)
+## 12. [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dan Distribusi (Publishing)
 
 Ini adalah langkah-langkah untuk mendistribusikan tool yang telah Anda buat ke seluruh dunia.
 
@@ -421,8 +421,8 @@ cargo publish
 ```
 Setelah dipublikasikan, pengguna di seluruh dunia akan dapat menginstal tool Anda dengan satu perintah sederhana `cargo install gh-stats-fetcher`.
 
-### Rilis Otomatis menggunakan GitHub Actions
-Kita akan membangun pipeline CI/CD yang mengunggah (upload) binary hasil cross-compile secara otomatis ke GitHub Releases. Tulis konfigurasi berikut di `.github/workflows/release.yml`. Dengan ini, hanya dengan mem-push tag, binary untuk Linux, macOS, dan Windows akan secara otomatis di-build dan dilampirkan sebagai aset rilis (karena keterbatasan ruang, penulisan YAML secara detail akan dilewati di sini, namun memanfaatkan Action seperti `taiki-e/upload-rust-binary-action` adalah praktik terbaik saat ini).
+### Rilis Otomatis menggunakan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)
+Kita akan membangun pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) yang mengunggah (upload) binary hasil cross-compile secara otomatis ke GitHub Releases. Tulis konfigurasi berikut di `.github/workflows/release.yml`. Dengan ini, hanya dengan mem-push tag, binary untuk Linux, macOS, dan Windows akan secara otomatis di-build dan dilampirkan sebagai aset rilis (karena keterbatasan ruang, penulisan YAML secara detail akan dilewati di sini, namun memanfaatkan Action seperti `taiki-e/upload-rust-binary-action` adalah praktik terbaik saat ini).
 
 ---
 

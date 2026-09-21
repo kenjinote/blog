@@ -114,7 +114,7 @@ int main() {
 }
 ```
 
-如果使用函数指针或Lambda表达式作为自定义删除器，可能会增加 `unique_ptr` 的大小。但如上所述使用无状态的函数对象（Functor），借助C++的 **EBCO（Empty Base Class Optimization，空基类优化）** 或C++20的 `[[no_unique_address]]`，其大小不会比裸指针增加（维持了零开销）。
+如果使用函数指针或[Lambda](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/)表达式作为自定义删除器，可能会增加 `unique_ptr` 的大小。但如上所述使用无状态的函数对象（Functor），借助C++的 **EBCO（Empty Base Class Optimization，空基类优化）** 或C++20的 `[[no_unique_address]]`，其大小不会比裸指针增加（维持了零开销）。
 
 ## 3. `std::shared_ptr`：共享所有权与控制块
 

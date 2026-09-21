@@ -236,11 +236,11 @@ hugo --minify
 
 이 명령어에 의해 사이트 전체의 파일이 `public/` 디렉토리에 출력됩니다. `--minify` 옵션을 추가함으로써 불필요한 줄바꿈이나 공백이 삭제되어 파일 크기가 더욱 줄어듭니다. 앞서 언급한 수학적 모델에서의 네트워크 지연($T_{network}$) 감소에 직접적으로 기여합니다.
 
-### 5.3 배포의 자동화 (CI/CD)
+### 5.3 배포의 자동화 ([CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/))
 
 정적 파일의 생성을 매번 로컬 PC에서 수행하고 FTP 등으로 업로드하는 것은 비효율적입니다. 현대의 SSG 운영에서는 Git 레포지토리(GitHub 등)에 대한 푸시를 트리거로 하여, 자동으로 빌드와 배포를 수행하는 CI/CD 환경을 구축하는 것이 모범 사례(Best Practice)입니다.
 
-예를 들어, GitHub Actions를 이용하여 Cloudflare Pages나 GitHub Pages에 배포하는 설정(YAML 파일)의 기본 형태는 다음과 같습니다.
+예를 들어, [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)를 이용하여 Cloudflare Pages나 GitHub Pages에 배포하는 설정(YAML 파일)의 기본 형태는 다음과 같습니다.
 
 ```yaml
 # .github/workflows/hugo.yml 의 예

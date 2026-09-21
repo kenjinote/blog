@@ -28,7 +28,7 @@ Como propriedade de matrizes ortogonais, $U^T U = I$ e $V^T V = I$ se mantêm. E
 
 ## 2. Diferença para a Decomposição de Autovalores
 
-Para matrizes quadradas, a decomposição de autovalores $A = P \Lambda P^{-1}$ é bem conhecida. No entanto, essa decomposição tem as seguintes limitações:
+Para matrizes quadradas, a decomposição de autovalores $A = P \[Lambda](https://kenji.blog/pt/p/serverless-architecture-aws-lambda-cold-start/) P^{-1}$ é bem conhecida. No entanto, essa decomposição tem as seguintes limitações:
 - Ela só pode ser aplicada a matrizes quadradas ($n \times n$).
 - Mesmo que seja uma matriz quadrada, nem sempre é diagonalizável.
 

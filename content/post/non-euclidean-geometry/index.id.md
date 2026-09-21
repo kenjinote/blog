@@ -73,7 +73,7 @@ Kerangka matematis agung yang dibangun oleh [Riemann](https://kenji.blog/id/p/ri
 Einstein mengusulkan konsep "ruang-waktu" yang menyatukan ruang dan waktu dalam Teori Relativitas Khusus. Kemudian, dalam **Teori Relativitas Umum**, ia mencapai sebuah gagasan terobosan: "Gravitasi adalah distorsi (kelengkungan) ruang-waktu yang disebabkan oleh benda bermassa."
 
 $$
-R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
+R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \[Lambda](https://kenji.blog/id/p/serverless-architecture-aws-lambda-cold-start/) g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
 $$
 
 Dalam Persamaan Einstein di atas, sisi kiri mewakili struktur geometris (kelengkungan) ruang-waktu, dan sisi kanan mewakili distribusi materi dan energi. Dengan kata lain, **materi menentukan bagaimana ruang-waktu melengkung, dan ruang-waktu yang melengkung menentukan pergerakan materi**.

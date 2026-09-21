@@ -258,7 +258,7 @@ O fascínio da [Teoria de Ramsey](https://kenji.blog/pt/p/ramsey-theory/) não r
 
 ### Referências
 
-- Ohio State University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): Explicação sobre 2-coloração de arestas e pequenos números de Ramsey.
+- Ohio [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): Explicação sobre 2-coloração de arestas e pequenos números de Ramsey.
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf): Notas de aula sobre conceitos do tipo Ramsey, incluindo subsequências monótonas.
 
 Os diagramas deste artigo, a tabela de enumeração exaustiva e as distribuições de probabilidade e contagem foram gerados com o script Python incluído no repositório.

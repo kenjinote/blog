@@ -317,7 +317,7 @@ Saat perusahaan menggunakan API LLM di lingkungan produksi (production), kekhawa
 Ketiga penyedia secara tegas menyatakan bahwa data yang dikirim melalui API (prompt dan respons) **tidak digunakan untuk pelatihan model (Zero Data Retention / No Training on Customer Data)** (*Hal ini berbeda dari UI obrolan web gratis yang ditujukan untuk konsumen).
 
 Jika tingkat keamanan yang lebih tinggi diperlukan:
-- **OpenAI**: Melalui Azure OpenAI Service, Anda dapat memanfaatkan koneksi jaringan tertutup (private network) via Azure Private Link, tingkat SLA (Service Level Agreement), dan keamanan tingkat perusahaan dari Microsoft.
+- **OpenAI**: Melalui Azure OpenAI [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/), Anda dapat memanfaatkan koneksi jaringan tertutup (private network) via Azure Private Link, tingkat SLA (Service Level Agreement), dan keamanan tingkat perusahaan dari Microsoft.
 - **Google**: Melalui Google Cloud Vertex AI, Anda dapat mengaktifkan perlindungan data via CMEK (Customer-Managed Encryption Keys) dan pemisahan jaringan secara ketat menggunakan VPC Service Controls.
 - **Anthropic**: Dengan menggunakannya melalui AWS Bedrock atau Google Cloud Vertex AI, Anda dapat memanfaatkan infrastruktur keamanan yang kokoh dari penyedia cloud tersebut.
 

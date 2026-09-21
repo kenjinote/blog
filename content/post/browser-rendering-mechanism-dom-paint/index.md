@@ -15,7 +15,7 @@ tags:
 
 # ブラウザレンダリングの仕組み：DOMツリーからPaintまでの完全解剖
 
-Webブラウザは、私たちが日常的に利用する最も身近で、かつ最も複雑なソフトウェアの一つです。URLを入力してから画面にページが表示されるまで、その内部では膨大な計算と処理がミリ秒単位で行われています。この一連の処理の流れを **レンダリングパイプライン (Rendering Pipeline)** または **クリティカルレンダリングパス (Critical Rendering Path)** と呼びます。
+Webブラウザは、私たちが日常的に利用する最も身近で、かつ最も複雑なソフトウェアの一つです。URLを入力してから画面にページが表示されるまで、その内部では膨大な計算と処理がミリ秒単位で行われています。この一連の処理の流れを **レンダリング[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/) (Rendering [Pipeline](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/))** または **クリティカルレンダリングパス (Critical Rendering Path)** と呼びます。
 
 本記事では、ブラウザ（特にBlinkやWebKitなどのモダンなレンダリングエンジン）がHTML、CSS、JavaScriptをどのように解釈し、最終的にディスプレイ上のピクセルとして描画（Paint）するのか、その完全なメカニズムを解剖します。
 
@@ -353,11 +353,11 @@ Paint Record は、「この座標に、この色で四角形を描く」「こ�
 ### 6.3 CSS Trigger：アニメーションのパフォーマンス最適化
 
 Webパフォーマンス最適化において最も重要な概念の一つが **CSS Triggers** です。
-JavaScriptやCSSで要素のスタイルを変更したとき、ブラウザのレンダリングパイプラインのどのステップからやり直す必要があるか（Layoutからか、Paintからか、Compositeからか）は、変更するプロパティによって決まります。
+JavaScriptやCSSで要素のスタイルを変更したとき、ブラウザのレンダリング[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)のどのステップからやり直す必要があるか（Layoutからか、Paintからか、Compositeからか）は、変更するプロパティによって決まります。
 
 1.  **Layout (Reflow) をトリガーするプロパティ**
     *   `width` , `height` , `margin` , `padding` , `top` , `left` , `font-size` など。
-    *   ジオメトリ情報が変わるため、Layout → Paint → Composite の全てのパイプラインを再実行します。非常に重い処理です。アニメーションには不向きです。
+    *   ジオメトリ情報が変わるため、Layout → Paint → Composite の全ての[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を再実行します。非常に重い処理です。アニメーションには不向きです。
 2.  **Paint (Repaint) をトリガーするプロパティ**
     *   `color` , `background-color` , `box-shadow` など。
     *   要素のサイズや位置は変わりませんが、見た目が変わるため、Paint → Composite を再実行します。Layoutよりは軽いですが、ピクセルの再描画が発生するため負荷はかかります。
@@ -413,4 +413,4 @@ graph LR
 「なぜ `script` タグは `body` の閉じタグの直前に置く、あるいは `defer` を使うべきなのか？」
 「ReactやVueなどの仮想DOMがなぜ高速に動作するのか？（= DOMアクセスとLayout/Paintのバッチ化・最小化）」
 
-これらすべてに対する答えが、このレンダリングパイプラインの中に存在しています。仕組みを知ることで、よりパフォーマンスが高く、ユーザー体験の優れたWebアプリケーションを構築することができるようになるでしょう。
+これらすべてに対する答えが、このレンダリング[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の中に存在しています。仕組みを知ることで、よりパフォーマンスが高く、ユーザー体験の優れたWebアプリケーションを構築することができるようになるでしょう。

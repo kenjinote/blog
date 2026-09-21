@@ -19,7 +19,7 @@ However, on the other hand, the risk of privacy infringement associated with the
 
 To collect and utilize data efficiently, companies are adopting various data architectures. There is an ongoing paradigm shift from the once-mainstream "Data Warehouse" to a "Data Lake" that centrally manages all data, including unstructured data, and now to a "Data Mesh," which is a decentralized architecture.
 
-### Centralized Data Lakes and Anonymization Pipelines
+### Centralized Data Lakes and Anonymization [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)s
 
 A data lake is a storage repository that stores large amounts of raw data in its native format. However, using raw data containing PII (Personally Identifiable Information) directly for analysis causes serious compliance violations. Therefore, a strict "Anonymization Pipeline" is implemented between the data lake and the analysis environment.
 

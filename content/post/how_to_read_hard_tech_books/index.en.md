@@ -82,7 +82,7 @@ In memorizing technical books, "memorizing long proofs completely" is meaningles
 
 - **Bad Card**: "Write the entire proof of [Dijkstra](https://kenji.blog/en/p/graph-theory-dijkstra-a-star/)'s algorithm."
 - **Good Card**: "In Dijkstra's algorithm, what is the condition for a vertex's shortest distance to be considered confirmed?" -> "When the vertex with the minimum provisional distance is selected from the set of unconfirmed vertices."
-- **Good Card**: "State the formula for [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)." -> "For a prime $p$ and an integer $a$ coprime to $p$, $a^{p-1} \equiv 1 \pmod p$."
+- **Good Card**: "[State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) the formula for [Fermat's Little Theorem](https://kenji.blog/en/p/fermats-little-theorem/)." -> "For a prime $p$ and an integer $a$ coprime to $p$, $a^{p-1} \equiv 1 \pmod p$."
 
 When memorizing formulas, it is also effective to register them in Anki in LaTeX format and utilize Cloze Deletion questions.
 

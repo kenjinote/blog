@@ -12,7 +12,7 @@ description: 'Ein vollständiger technischer Leitfaden für das kostenlose und s
 
 Beim Betrieb einer Website oder eines Blogs sind die Ladegeschwindigkeit (Performance), die Betriebskosten und die Sicherheit äußerst wichtige Faktoren. Früher war die Kombination aus dynamischen CMS (Content Management System) wie WordPress und gemieteten Servern der Standard. Heute jedoch zieht eine Architektur namens „Jamstack“ große Aufmerksamkeit auf sich. Insbesondere durch die Kombination von „Hugo“, einem in Go geschriebenen, ultraschnellen Static Site Generator (SSG), mit modernen Hosting-Diensten wie Cloudflare Pages oder GitHub Pages ist es möglich, eine **völlig kostenlose und blitzschnelle** Blog-Umgebung aufzubauen.
 
-In diesem Artikel werden wir die konkreten Schritte zur Veröffentlichung einer statischen Website mit Hugo auf Cloudflare Pages oder GitHub Pages, die Unterschiede in den Architekturen der einzelnen Plattformen, den Aufbau von CI/CD (Continuous Integration / Continuous Deployment) mit GitHub Actions, die DNS-Optimierung, Caching-Strategien und die Einführung datenschutzfreundlicher Web-Analysen aus einer technischen Perspektive sehr detailliert erläutern.
+In diesem Artikel werden wir die konkreten Schritte zur Veröffentlichung einer statischen Website mit Hugo auf Cloudflare Pages oder GitHub Pages, die Unterschiede in den Architekturen der einzelnen Plattformen, den Aufbau von [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) (Continuous Integration / Continuous Deployment) mit [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/), die DNS-Optimierung, Caching-Strategien und die Einführung datenschutzfreundlicher Web-Analysen aus einer technischen Perspektive sehr detailliert erläutern.
 
 ---
 
@@ -24,11 +24,11 @@ Herkömmliche dynamische CMS (z. B. WordPress) senden bei jeder Benutzeranfrage 
 Andererseits generieren Static Site Generatoren (SSG), die die Jamstack-Architektur (JavaScript, APIs und Markup) verwenden, bereits im Voraus (zur Build-Zeit) alle HTML-Dateien, CSS und JavaScript. Bei Benutzeranfragen gibt der Webserver (oder das CDN) lediglich die bereits generierten statischen Dateien zurück. Dies ermöglicht eine überwältigende Geschwindigkeit und robuste Sicherheit.
 
 ### 1.2 Die Vorteile von Hugo
-Bei SSGs gibt es verschiedene Optionen wie Next.js, Gatsby, Jekyll oder Astro. Das herausragendste Merkmal von Hugo ist jedoch seine **Build-Geschwindigkeit**. Dank der gleichzeitigen Verarbeitung durch die Programmiersprache Go ist der Build selbst bei Websites mit Tausenden oder Zehntausenden von Seiten in nur wenigen Sekunden abgeschlossen. Dies reduziert die Wartezeiten in der CI/CD-Pipeline drastisch und führt direkt zu einer besseren Entwicklererfahrung (DX: Developer Experience).
+Bei SSGs gibt es verschiedene Optionen wie Next.js, Gatsby, Jekyll oder Astro. Das herausragendste Merkmal von Hugo ist jedoch seine **Build-Geschwindigkeit**. Dank der gleichzeitigen Verarbeitung durch die Programmiersprache Go ist der Build selbst bei Websites mit Tausenden oder Zehntausenden von Seiten in nur wenigen Sekunden abgeschlossen. Dies reduziert die Wartezeiten in der CI/CD-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) drastisch und führt direkt zu einer besseren Entwicklererfahrung (DX: Developer Experience).
 
 ---
 
-## 2. Vergleich der Hosting-Service-Architekturen
+## 2. Vergleich der Hosting-[Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)-Architekturen
 
 Wo die mit Hugo generierten statischen Dateien gehostet werden, ist die nächste Frage. Repräsentative Optionen sind Cloudflare Pages, GitHub Pages und Netlify, die jedoch jeweils über unterschiedliche zugrunde liegende Netzwerkarchitekturen verfügen.
 
@@ -49,7 +49,7 @@ graph TD
 GitHub Pages ist ein Dienst, mit dem HTML-, CSS- und JavaScript-Dateien direkt aus einem GitHub-Repository veröffentlicht werden können. Im Hintergrund werden CDNs wie Fastly verwendet, was eine solide Leistung bietet. Allerdings gibt es Einschränkungen bei der Anpassung von Headern (z. B. `Cache-Control` oder Sicherheitsheader), und Weiterleitungen sind auf HTML-Meta-Refresh oder Jekyll-Plugins angewiesen. Die rein infrastrukturellen Funktionen sind daher etwas eingeschränkt.
 
 ### 2.3 Cloudflare Pages
-Cloudflare Pages ist ein Hosting-Service für statische Websites, der auf Cloudflares weltweit größtem Anycast-Netzwerk (mit Präsenz in über 275 Städten) aufbaut.
+Cloudflare Pages ist ein Hosting-[Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/) für statische Websites, der auf Cloudflares weltweit größtem Anycast-Netzwerk (mit Präsenz in über 275 Städten) aufbaut.
 Er bietet Standardunterstützung für [HTTP/3](https://kenji.blog/de/p/http3-quic-protocol-tcp-udp/) ([QUIC](https://kenji.blog/de/p/http3-quic-protocol-tcp-udp/)), Bildoptimierung und die Integration von Edge-Funktionen (Cloudflare Workers), was ein überwältigendes Performance-Tuning ermöglicht. Ein großer Vorteil ist zudem, dass keine Gebühren für die Bandbreite anfallen, sodass die Website auch bei massiven Traffic-Spitzen kostenlos betrieben werden kann.
 
 ### 2.4 Netlify
@@ -82,7 +82,7 @@ Auf diese Weise ist es durch die Einführung eines CDNs möglich, die durchschni
 
 ---
 
-## 4. Aufbau einer CI/CD-Pipeline mit GitHub Actions
+## 4. Aufbau einer [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) mit [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)
 
 Um den Aktualisierungsprozess eines Hugo-Blogs zu automatisieren, richten wir eine CI/CD-Pipeline mit GitHub Actions ein. Auf diese Weise genügt es, lokal einen Markdown-Artikel zu schreiben und `git push` auszuführen; der Build wird automatisch gestartet und auf Cloudflare Pages oder GitHub Pages bereitgestellt.
 
@@ -108,7 +108,7 @@ sequenceDiagram
 
 ### 4.1 Bereitstellungseinstellungen für Cloudflare Pages (Direkter Upload)
 
-Bei Cloudflare Pages gibt es zwei Möglichkeiten: Sie können ein GitHub-Repository verknüpfen, um den Build auf der Infrastruktur von Cloudflare auszuführen, oder Sie laden die mit GitHub Actions erstellten statischen Dateien über „Direct Upload (Direkter Upload)“ hoch. Wenn Sie die Hugo-Versionierung strenger kontrollieren und mit anderen Jobs (wie Tests oder Bildoptimierung) verknüpfen möchten, empfiehlt sich die Methode, den Build in GitHub Actions auszuführen und einen Direct Upload durchzuführen.
+Bei Cloudflare Pages gibt es zwei Möglichkeiten: Sie können ein GitHub-Repository verknüpfen, um den Build auf der Infrastruktur von Cloudflare auszuführen, oder Sie laden die mit [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) erstellten statischen Dateien über „Direct Upload (Direkter Upload)“ hoch. Wenn Sie die Hugo-Versionierung strenger kontrollieren und mit anderen Jobs (wie Tests oder Bildoptimierung) verknüpfen möchten, empfiehlt sich die Methode, den Build in GitHub Actions auszuführen und einen Direct Upload durchzuführen.
 
 Nachfolgend finden Sie ein praktisches Beispiel für `.github/workflows/deploy.yml` zur Bereitstellung auf Cloudflare Pages.
 
@@ -153,7 +153,7 @@ jobs:
           branch: "main"
 ```
 
-In dieser Pipeline werden durch die Option `--minify` HTML, CSS und JS minimiert, und mit `--gc` werden nicht mehr benötigte Dateien gelöscht. Dies sind die Grundlagen der Performance-Optimierung.
+In dieser [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) werden durch die Option `--minify` HTML, CSS und JS minimiert, und mit `--gc` werden nicht mehr benötigte Dateien gelöscht. Dies sind die Grundlagen der Performance-Optimierung.
 
 ---
 
@@ -254,7 +254,7 @@ Durch das Hinzufügen des Attributs `defer` kann das Skript asynchron geladen we
 
 Beim Betrieb von statischen Websites mit Hugo bietet der Einsatz moderner Hosting-Plattformen wie Cloudflare Pages oder GitHub Pages überwältigende Vorteile in allen Bereichen: Kosteneffizienz, Ladegeschwindigkeit und Sicherheit.
 
-1. **Blitzschnelle Builds**: Nutzen Sie die Geschwindigkeit von Hugo, um die Ausführungszeit der CI/CD-Pipeline (GitHub Actions) zu minimieren.
+1. **Blitzschnelle Builds**: Nutzen Sie die Geschwindigkeit von Hugo, um die Ausführungszeit der [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) ([GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)) zu minimieren.
 2. **Bereitstellung am Edge**: Nutzen Sie das Edge-Netzwerk von Cloudflare, um Inhalte mit Latenzen im Millisekundenbereich an Benutzer auf der ganzen Welt auszuliefern.
 3. **Geeignete DNS-Konfiguration**: Nutzen Sie CNAME Flattening, um die Zone Apex (benutzerdefinierte Domain) sicher und schnell zu betreiben.
 4. **Optimierung der Caching-Strategie**: Verwenden Sie `_headers`, um Browser-Cache und Edge-Cache je nach Ressourcentyp angemessen zu trennen.

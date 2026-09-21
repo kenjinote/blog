@@ -34,7 +34,7 @@ $$
 \Delta = -16(4a^3 + 27b^2) \neq 0
 $$
 
-在幾何上，如果我們在複數體 $\mathbb{C}$ 上考慮這條曲線，它的形狀是一個環面（甜甜圈形狀）。這可以透過使用魏爾斯特拉斯 $\wp$ 函數與複環面 $\mathbb{C}/\Lambda$（$\Lambda$ 是格）的同構對應來證明。
+在幾何上，如果我們在複數體 $\mathbb{C}$ 上考慮這條曲線，它的形狀是一個環面（甜甜圈形狀）。這可以透過使用魏爾斯特拉斯 $\wp$ 函數與複環面 $\mathbb{C}/\[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)$（$\Lambda$ 是格）的同構對應來證明。
 
 ### 2.2. 有理點與群結構
 
@@ -139,7 +139,7 @@ flowchart LR
 身為模曲線意味著 $L(E, s)$ 完美等同於某個權重為2的模形式 $f$ 的L函數 $L(f, s)$。模形式的L函數藉由赫克（Hecke）的理論可以解析延拓到整個複平面，並滿足以下函數方程式。
 
 $$
-\Lambda(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
+\[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
 $$
 $$
 \Lambda(E, 2-s) = w \Lambda(E, s)

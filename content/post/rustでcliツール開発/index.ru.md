@@ -408,7 +408,7 @@ strip = true        # Удаление отладочных символов д�
 
 ---
 
-## 12. CI/CD и распространение (Publishing)
+## 12. [CI/CD](https://kenji.blog/ru/p/cicd-pipeline-github-actions-best-practices/) и распространение (Publishing)
 
 Это шаги для распространения созданного инструмента по всему миру.
 
@@ -421,8 +421,8 @@ cargo publish
 ```
 После публикации пользователи со всего мира смогут установить ваш инструмент с помощью простой команды `cargo install gh-stats-fetcher`.
 
-### Автоматические релизы с GitHub Actions
-Мы создадим конвейер CI/CD, который будет автоматически загружать кросс-компилированные бинарные файлы в GitHub Releases. Добавьте следующие настройки в `.github/workflows/release.yml`. Благодаря этому при пуше тега бинарные файлы для Linux, macOS и Windows будут собираться автоматически и прикрепляться как релизные ассеты (из-за ограничений формата здесь мы опускаем детальное описание YAML, но использование таких Actions, как `taiki-e/upload-rust-binary-action`, является текущей лучшей практикой).
+### Автоматические релизы с [GitHub Actions](https://kenji.blog/ru/p/cicd-pipeline-github-actions-best-practices/)
+Мы создадим конвейер [CI/CD](https://kenji.blog/ru/p/cicd-pipeline-github-actions-best-practices/), который будет автоматически загружать кросс-компилированные бинарные файлы в GitHub Releases. Добавьте следующие настройки в `.github/workflows/release.yml`. Благодаря этому при пуше тега бинарные файлы для Linux, macOS и Windows будут собираться автоматически и прикрепляться как релизные ассеты (из-за ограничений формата здесь мы опускаем детальное описание YAML, но использование таких Actions, как `taiki-e/upload-rust-binary-action`, является текущей лучшей практикой).
 
 ---
 

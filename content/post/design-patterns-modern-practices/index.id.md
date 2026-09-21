@@ -225,7 +225,7 @@ Praktik terbaik modern adalah sebagai berikut:
 - **Komposisi daripada pewarisan (Ini adalah kebenaran universal dari GoF)**
 - **Fungsi daripada kelas (Memanfaatkan fungsi kelas pertama)**
 - **Pencocokan pola dan ADT daripada pola Visitor**
-- **Container DI daripada Singleton**
+- **[Container](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/) DI daripada Singleton**
 - **Imutabilitas dan fungsi murni daripada mutasi status**
 
 Pola desain belum mati. Mereka hanya berubah wujud menjadi lebih elegan seiring dengan evolusi bahasa pemrograman.

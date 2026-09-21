@@ -317,7 +317,7 @@ sequenceDiagram
 3사 모두 API를 통해 전송된 데이터(프롬프트 및 응답)를 **모델 학습에 사용하지 않는다고(Zero Data Retention / No Training on Customer Data)** 명시하고 있습니다(※무료 소비자용 웹 채팅 UI는 예외입니다).
 
 더 높은 보안 수준이 요구될 경우:
-- **OpenAI**: Azure OpenAI Service를 경유함으로써 Microsoft의 엔터프라이즈급 보안, SLA, Azure Private Link를 통한 폐쇄망 연결을 이용할 수 있습니다.
+- **OpenAI**: Azure OpenAI [Service](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/)를 경유함으로써 Microsoft의 엔터프라이즈급 보안, SLA, Azure Private Link를 통한 폐쇄망 연결을 이용할 수 있습니다.
 - **Google**: Google Cloud Vertex AI를 경유함으로써 VPC Service Controls를 이용한 엄격한 네트워크 분리 및 CMEK(고객 관리 암호화 키)를 통한 데이터 보호가 가능합니다.
 - **Anthropic**: AWS Bedrock 또는 Google Cloud Vertex AI를 경유하여 클라우드 제공업체의 견고한 보안 기반을 함께 이용할 수 있습니다.
 

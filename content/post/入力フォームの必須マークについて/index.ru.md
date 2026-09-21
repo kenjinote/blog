@@ -18,7 +18,7 @@ description: 'Объясняем лучшие практики маркиров�
 1. **Использование звездочки (\*)**
 
     * Это наиболее распространенный и широко используемый способ, когда обязательные поля помечаются символом "\*".
-    * Однако **в начале формы обязательно должно быть пояснение, например, "* — обязательное поле"** ([Nielsen Norman Group][1], [California State University, Northridge][2]).
+    * Однако **в начале формы обязательно должно быть пояснение, например, "* — обязательное поле"** ([Nielsen Norman Group][1], [California [State](https://kenji.blog/ru/p/iac-infrastructure-as-code-terraform/) University, Northridge][2]).
     * Также есть примеры использования цвета для выделения (например, красный текст).
 
 2. **Явное указание "Required" или "(required)" в метке**
@@ -72,7 +72,7 @@ description: 'Объясняем лучшие практики маркиров�
 
 ## 🔗 Полезные ссылки (материалы руководств по UI)
 
-* NN/g: *Marking Required Fields in Forms* ([California State University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
+* NN/g: *Marking Required Fields in Forms* ([California [State](https://kenji.blog/ru/p/iac-infrastructure-as-code-terraform/) University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
 * Deque: *Anatomy of Accessible Forms* ([Deque][3])
 * W3C Techniques: *H90 Indicating required form controls* ([W3C][5])
 * TPGi: *Indicating mandatory fields accessibly* ([TPGi][4])

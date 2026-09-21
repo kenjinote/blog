@@ -28,7 +28,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 Ollama 是一個可以讓你在本機環境中，輕鬆執行與管理開源大型語言模型（如 Llama 3、Phi-3、Mistral、Gemma 等）的平台。過去要建置本機 LLM 環境，需要經過非常繁雜的步驟，例如設定 Python 環境、安裝 CUDA Toolkit、解決 PyTorch 的相依性、從 Hugging Face 下載龐大的模型檔案，以及進行格式轉換（例如將 Safetensors 轉換為 GGUF）等。
 
-Ollama 隱藏了這些複雜性，讓你能以類似 Docker 的使用體驗來操作 LLM。只要透過一個指令就能下載（`pull`）模型、執行（`run`），並將其啟動為 HTTP 伺服器。
+Ollama 隱藏了這些複雜性，讓你能以類似 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 的使用體驗來操作 LLM。只要透過一個指令就能下載（`pull`）模型、執行（`run`），並將其啟動為 HTTP 伺服器。
 
 ## 核心技術：llama.cpp 的包裝器
 
@@ -75,9 +75,9 @@ ollama --version
 ```
 如果顯示出版本資訊，就代表安裝成功了。
 
-## 使用 Docker 執行
+## 使用 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 執行
 
-如果你不想弄髒現有的環境，或者想將其整合到基於容器的基礎架構中，也可以使用官方的 Docker 映像檔。如果需要使用 GPU，則必須安裝 NVIDIA Container Toolkit。
+如果你不想弄髒現有的環境，或者想將其整合到基於容器的基礎架構中，也可以使用官方的 Docker 映像檔。如果需要使用 GPU，則必須安裝 NVIDIA [Container](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/) Toolkit。
 
 ```bash
 # 僅使用 CPU 執行的情況
@@ -93,7 +93,7 @@ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ol
 
 # 模型的管理與基本 CLI 指令
 
-Ollama 最大的魅力在於其模型管理非常直觀。你可以用操作 Docker 映像檔的感覺，來嘗試各種不同的模型。
+Ollama 最大的魅力在於其模型管理非常直觀。你可以用操作 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 映像檔的感覺，來嘗試各種不同的模型。
 
 ## 1. 執行模型 (`run`)
 
@@ -148,7 +148,7 @@ ollama rm phi3:instruct
 
 # 透過 Modelfile 客製化模型
 
-在 Ollama 中，你可以使用稱為「 **Modelfile** 」的機制，對現有的模型注入系統提示詞（System Prompt）或調整超參數，進而建立自己專屬的客製化模型。這個概念與 Docker 的 Dockerfile 完全相同。
+在 Ollama 中，你可以使用稱為「 **Modelfile** 」的機制，對現有的模型注入系統提示詞（System Prompt）或調整超參數，進而建立自己專屬的客製化模型。這個概念與 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 的 Dockerfile 完全相同。
 
 下圖展示了客製化模型是如何從基礎模型衍生出來的。
 
@@ -493,7 +493,7 @@ $$
 
 ## 結論
 
-隨著 Ollama 的出現，導入本機 LLM 的門檻大幅降低了。如同操作 Docker 容器般簡單的指令系統，加上外部應用程式能輕易使用的 REST API 的組合，可以毫不誇張地說是目前本機 AI 開發的業界標準（de facto standard）。
+隨著 Ollama 的出現，導入本機 LLM 的門檻大幅降低了。如同操作 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 容器般簡單的指令系統，加上外部應用程式能輕易使用的 REST API 的組合，可以毫不誇張地說是目前本機 AI 開發的業界標準（de facto standard）。
 
 如果你正在為了雲端 LLM 的成本或安全性限制而苦惱，請務必參考本文介紹的步驟，使用 Ollama 建置本機 LLM 環境，並將其整合到你自己的應用程式中。你一定能夠更自由、更切身地感受到 AI 所擁有的潛力。
 

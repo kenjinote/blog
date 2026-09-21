@@ -100,7 +100,7 @@ D-Wave의 양자 프로세서는 초전도 양자 간섭계(SQUID)를 사용하�
 
 ### 3.1. 유니터리 변환과 상태 벡터
 
-양자 게이트 방식에서는 양자 비트 시스템 전체의 상태를 '상태 벡터(State Vector)' $|\psi\rangle$ 로서 표현합니다. 1 양자 비트의 상태는 다음과 같이 바닥 상태 $|0\rangle$ 과 $|1\rangle$ 의 선형 결합으로 나타냅니다.
+양자 게이트 방식에서는 양자 비트 시스템 전체의 상태를 '상태 벡터([State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) Vector)' $|\psi\rangle$ 로서 표현합니다. 1 양자 비트의 상태는 다음과 같이 바닥 상태 $|0\rangle$ 과 $|1\rangle$ 의 선형 결합으로 나타냅니다.
 $$ |\psi\rangle = \alpha |0\rangle + \beta |1\rangle $$
 여기서, $\alpha$ 와 $\beta$ 는 복소 확률 진폭이며, $|\alpha|^2 + |\beta|^2 = 1$ 을 만족합니다. 이 상태는 기하학적으로 '블로흐 구(Bloch Sphere)' 상의 점으로 시각화됩니다.
 

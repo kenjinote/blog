@@ -11,7 +11,7 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 # 引言：系统编程的新黎明
 
-在现代软件工程中，C++和[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)是站在系统编程最前沿的两大巨头。多年来，在操作系统、嵌入式设备、游戏引擎、高频交易（HFT）系统等需要发挥硬件极限性能的领域，C++一直作为绝对的王者君临天下。作为一名资深C++工程师，我自己也是从C++98时代的裸指针丛林开始，经历了C++11的现代化浪潮（智能指针、Lambda表达式、`auto`的引入），并伴随着C++14/17/20规范的不断庞大，一直坚持编写代码至今。
+在现代软件工程中，C++和[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)是站在系统编程最前沿的两大巨头。多年来，在操作系统、嵌入式设备、游戏引擎、高频交易（HFT）系统等需要发挥硬件极限性能的领域，C++一直作为绝对的王者君临天下。作为一名资深C++工程师，我自己也是从C++98时代的裸指针丛林开始，经历了C++11的现代化浪潮（智能指针、[Lambda](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/)表达式、`auto`的引入），并伴随着C++14/17/20规范的不断庞大，一直坚持编写代码至今。
 
 然而近年来，作为C++结构性问题——特别是“缺乏内存安全”导致的安全漏洞（据说约70%的CVE源于内存问题）以及“无止境复杂化的规范和未定义行为（UB）”——的解决方案，[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)正在戏剧性地崛起。被Linux内核正式采用，以及微软、谷歌、AWS等科技巨头大规模向Rust迁移的项目，并不只是短暂的流行，而是意味着系统编程领域范式的转变。
 

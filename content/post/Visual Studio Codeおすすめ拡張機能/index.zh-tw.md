@@ -14,7 +14,7 @@ description: '表列介紹讓 Visual Studio Code (VSCode) 更便利的推薦擴�
 | 分類 | 名稱 | 提供者 | 說明 |
 |----|----|-----|-----|
 | 虛擬與容器管理 | Remote Devlopment | Microsoft | 支援透過 SSH 連接至虛擬容器/WSL 進行遠端開發 |
-| 虛擬與容器管理 | Docker | Microsoft | 支援 Docker 容器的管理 |
+| 虛擬與容器管理 | [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | 支援 Docker 容器的管理 |
 | 程式碼管理 | GitHub Pull Requests | GitHub | 在 VSCode 上管理 GitHub 的 Pull Requests |
 | 程式碼管理 | GitHub Copilot | GitHub | 支援 AI 程式碼自動完成 |
 | 程式碼管理 | Git Graph | mhutchie | 以圖形化方式顯示 Git 分支與提交記錄 |
@@ -24,7 +24,7 @@ description: '表列介紹讓 Visual Studio Code (VSCode) 更便利的推薦擴�
 | 瀏覽器與 Web 開發 | Vue Language Features(Volar) | Vue | 支援 Vue 的語言功能 |
 | 瀏覽器與 Web 開發 | JavaScript (ES6) code snippets | charalampos karypidis | 提供 JavaScript 程式碼片段 |
 | 瀏覽器與 Web 開發 | Tailwind CSS IntelliSense | Tailwind Labs | 提供 Tailwind CSS 程式碼片段 |
-| 雲端開發 | AWS Toolkit | Amazon Web Services | 支援 AWS 開發 |
+| 雲端開發 | AWS Toolkit | Amazon Web [Service](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)s | 支援 AWS 開發 |
 | 雲端開發 | Azure Tools | Microsoft | 支援 Azure 開發 |
 | 雲端開發 | Google Cloud Tools | Google Cloud | 支援 Google Cloud 開發 |
 | 資料庫 | MySQL | Jun Han | 支援 MySQL 開發 |

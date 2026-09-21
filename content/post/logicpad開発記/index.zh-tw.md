@@ -175,7 +175,7 @@ void MainWindow::InitializeCustomTitleBar()
 
 然而，在將使用 C++ 撰寫的原生應用程式以 MSIX 打包時，最需要注意的是 `Package.appxmanifest` (資訊清清單檔案) 的設定。
 
-LogicPad 需要讀寫儲存在本機檔案系統 (如使用者的文件資料夾等) 中的巨大專案檔案。在標準的 UWP 沙箱環境中，只能存取應用程式本身被隔離的資料資料夾 (AppContainer)。為了獲得作為原生桌面應用程式的完整存取權限，必須在資訊清單中宣告 `runFullTrust` 功能。
+LogicPad 需要讀寫儲存在本機檔案系統 (如使用者的文件資料夾等) 中的巨大專案檔案。在標準的 UWP 沙箱環境中，只能存取應用程式本身被隔離的資料資料夾 (App[Container](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/))。為了獲得作為原生桌面應用程式的完整存取權限，必須在資訊清單中宣告 `runFullTrust` 功能。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

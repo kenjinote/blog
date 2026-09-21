@@ -34,7 +34,7 @@ Debe ser Windows 11
 - Visual Studio Code (comando `winget install vscode`)
 - Slack (comando `winget install SlackTechnologies.Slack`)
 - Discord (comando `winget install Discord.Discord`)
-- Docker Desktop (comando `winget install Docker.DockerDesktop`)
+- [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (comando `winget install Docker.DockerDesktop`)
 - Git (comando `winget install Git`)
 - 7zip (comando `winget install 7zip`)
 - VLC (comando `winget install VideoLAN.VLC`)

@@ -18,7 +18,7 @@ Organizamos informações sobre a marca de "obrigatório" na interface do usuár
 1. **Uso do Asterisco (\*)**
 
     * Geralmente o mais difundido, adiciona-se "\*" aos campos obrigatórios.
-    * No entanto, **uma explicação como " * é um campo obrigatório" no início do formulário é obrigatória** ([Nielsen Norman Group][1], [California State University, Northridge][2]).
+    * No entanto, **uma explicação como " * é um campo obrigatório" no início do formulário é obrigatória** ([Nielsen Norman Group][1], [California [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) University, Northridge][2]).
     * Também existem exemplos que usam cor para dar ênfase (como texto em vermelho).
 
 2. **Especificar "Required" ou "(required)" no rótulo**
@@ -72,7 +72,7 @@ Organizamos informações sobre a marca de "obrigatório" na interface do usuár
 
 ## 🔗 Links de Referência (Materiais de Diretrizes de UI)
 
-* NN/g: *Marking Required Fields in Forms* ([California State University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
+* NN/g: *Marking Required Fields in Forms* ([California [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
 * Deque: *Anatomy of Accessible Forms* ([Deque][3])
 * W3C Techniques: *H90 Indicating required form controls* ([W3C][5])
 * TPGi: *Indicating mandatory fields accessibly* ([TPGi][4])

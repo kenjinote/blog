@@ -26,7 +26,7 @@ Yang menopang industri IT Jepang selama bertahun-tahun adalah model SIer (*Syste
 
 Namun, pada tahun 2026 saat ini, model tersebut telah mencapai batasnya. Esensi dari DX (*Digital Transformation*) telah bergeser dari sekadar "penerapan IT" menjadi "transformasi model bisnis", sehingga pengembangan *waterfall* yang memiliki ketangkasan (*agility*) rendah tidak lagi dapat mengikuti perubahan pasar.
 
-Proses pengembangan modern berasumsi bahwa sistem harus bersifat **cloud-native** dan **AI-driven**. Kontainerisasi (Docker/Kubernetes), arsitektur layanan mikro (*microservices*), dan otomatisasi *pipeline* CI/CD bukan lagi "teknologi khusus", melainkan "infrastruktur standar".
+Proses pengembangan modern berasumsi bahwa sistem harus bersifat **cloud-native** dan **AI-driven**. Kontainerisasi ([Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)), arsitektur layanan mikro (*microservices*), dan otomatisasi *pipeline* [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) bukan lagi "teknologi khusus", melainkan "infrastruktur standar".
 
 ```mermaid
 graph TD
@@ -137,7 +137,7 @@ AI memang bisa menulis kode, tetapi AI tidak bisa "mengurai spesifikasi bisnis y
 ### B. Perancangan Arsitektur dan Persyaratan Non-Fungsional
 "Persyaratan non-fungsional" seperti ketersediaan, skalabilitas, keamanan, dan kinerja sistem bukanlah hal-hal yang dapat dioptimalkan oleh AI secara otomatis. Keputusan arsitektural seperti "layanan cloud apa yang harus digabungkan", "protokol komunikasi antar *microservices* apa yang akan digunakan", dan "di mana batas transaksi DB harus ditarik" masih sangat bergantung pada pengalaman dan intuisi tingkat tinggi dari manusia.
 
-### C. MLOps dan Pembangunan *Data Pipeline*
+### C. MLOps dan Pembangunan *Data [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)*
 Konsep "MLOps" untuk terus mengoperasikan AI generatif dan model *machine learning* di lingkungan produksi (*production*) menjadi semakin penting. Talenta yang memiliki keterampilan di persimpangan antara rekayasa perangkat lunak dan ilmu data (*data science*), seperti pemantauan pergeseran model (*model drift*), pembuatan *pipeline* untuk pelatihan berkelanjutan (*continuous training*), dan optimalisasi sumber daya GPU, sedang berada dalam status yang sangat dicari.
 
 ---

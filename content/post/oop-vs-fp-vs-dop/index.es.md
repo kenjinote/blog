@@ -193,7 +193,7 @@ Cada paradigma tiene áreas en las que sobresale y áreas donde flaquea.
 | Paradigma | Ventajas | Desventajas | Casos de uso óptimos |
 | :--- | :--- | :--- | :--- |
 | **OOP** | Modelado intuitivo, ocultación a través del encapsulamiento | Complejidad por la herencia, errores por mutación implícita de estados | Frameworks de GUI, modelado del dominio de negocio |
-| **FP** | Resistencia al procesamiento concurrente, facilidad de pruebas, previsibilidad | Curva de aprendizaje pronunciada, rendimiento (carga de GC) | Pipelines de transformación de datos, sistemas concurrentes |
+| **FP** | Resistencia al procesamiento concurrente, facilidad de pruebas, previsibilidad | Curva de aprendizaje pronunciada, rendimiento (carga de GC) | [Pipeline](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/)s de transformación de datos, sistemas concurrentes |
 | **DOP** | Rendimiento abrumador, transparencia del estado | Menor cohesión de datos, tendencia a ser procedimental | Desarrollo de juegos, procesamiento de cálculos de alta carga, sistemas embebidos |
 
 ---

@@ -165,7 +165,7 @@ Viele der Endgeräte, die als Standard des GIGA School-Konzepts eingeführt wurd
 - Speicher (RAM): 4GB (gerade genug, um ein modernes OS zu betreiben)
 - Speicherplatz (eMMC): 32GB ~ 64GB (extrem langsame I/O-Geschwindigkeit)
 
-Aufgrund dieser dürftigen Hardware-Einschränkungen ist es praktisch unmöglich, eine „lokale Entwicklungsumgebung“ aufzubauen, wie sie professionelle Ingenieure täglich nutzen. Das Starten von Linux-Containern mit Docker, der Betrieb einer ressourcenintensiven IDE wie Visual Studio Code mit allen Funktionen oder das Starten von Node.js- oder Python-Lokalservern zur Installation schwerer Bibliotheken führt sofort zu Speichermangel und Systemabstürzen.
+Aufgrund dieser dürftigen Hardware-Einschränkungen ist es praktisch unmöglich, eine „lokale Entwicklungsumgebung“ aufzubauen, wie sie professionelle Ingenieure täglich nutzen. Das Starten von Linux-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n mit [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/), der Betrieb einer ressourcenintensiven IDE wie Visual Studio Code mit allen Funktionen oder das Starten von Node.js- oder Python-Lokalservern zur Installation schwerer Bibliotheken führt sofort zu Speichermangel und Systemabstürzen.
 
 Infolgedessen sind die Schulen in eine Situation gezwungen, in der sie sich vollständig auf browserbasierte Cloud-IDEs (Google Colaboratory, Replit oder leichtgewichtige Web-Tools von Schulbuchverlagen) verlassen müssen.
 
@@ -204,7 +204,7 @@ In den USA gibt es strenge Standardlehrpläne für K-12 (vom Kindergarten bis zu
 
 ### Die verzweifelte Diskrepanz zwischen geforderten und gelehrten Fähigkeiten
 
-Die Anforderungen, die die moderne Industrie – insbesondere global agierende Mega-Ventures und Tech-Giganten (GAFAM usw.) – an neue Software-Ingenieure stellt, steigen von Jahr zu Jahr in erschreckendem Tempo. Gefordert wird eine breite und tiefe Expertise, wie z.B. der Aufbau Cloud-nativer Infrastrukturen (AWS, GCP, Kubernetes), das Design verteilter Systeme mit Microservice-Architekturen, die Implementierung von Machine-Learning-Pipelines und fortgeschrittenes Sicherheitswissen.
+Die Anforderungen, die die moderne Industrie – insbesondere global agierende Mega-Ventures und Tech-Giganten (GAFAM usw.) – an neue Software-Ingenieure stellt, steigen von Jahr zu Jahr in erschreckendem Tempo. Gefordert wird eine breite und tiefe Expertise, wie z.B. der Aufbau Cloud-nativer Infrastrukturen (AWS, GCP, [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)), das Design verteilter Systeme mit Microservice-Architekturen, die Implementierung von Machine-Learning-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s und fortgeschrittenes Sicherheitswissen.
 
 Die folgende Grafik veranschaulicht konzeptionell die verzweifelte Diskrepanz zwischen dem Niveau der Fähigkeiten, die derzeit im japanischen Schulsystem vermittelt werden, und den Anforderungen der vordersten Industrie.
 

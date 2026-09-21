@@ -175,7 +175,7 @@ else:
     print("Data tidak ditemukan.")
 ```
 
-Dengan menjalankan skrip ini secara berkala menggunakan cron atau GitHub Actions, Anda dapat memutuskan "judul artikel mana yang perlu ditulis ulang" dengan pendekatan yang selalu didorong oleh data (data-driven). Sangat penting untuk melakukan peningkatan berkelanjutan berbasis data (Continuous Content Improvement seperti halnya CI/CD) dan bukan hanya mengandalkan intuisi.
+Dengan menjalankan skrip ini secara berkala menggunakan cron atau [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/), Anda dapat memutuskan "judul artikel mana yang perlu ditulis ulang" dengan pendekatan yang selalu didorong oleh data (data-driven). Sangat penting untuk melakukan peningkatan berkelanjutan berbasis data (Continuous Content Improvement seperti halnya [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)) dan bukan hanya mengandalkan intuisi.
 
 ---
 
@@ -231,7 +231,7 @@ Hal hebat dari memiliki blog teknologi adalah, meskipun $Rev_{ad}$ mungkin kecil
 
 ---
 
-## 5. Distribusi Melalui Integrasi GitHub Actions dan Alat Otomatisasi Eksternal
+## 5. Distribusi Melalui Integrasi [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dan Alat Otomatisasi Eksternal
 
 Setelah konten dibuat, tantangannya adalah bagaimana menyampaikannya kepada audiens target secara efisien (distribusi). Memublikasikan tautan ke setiap platform media sosial secara manual sangat tidak efisien dan sama sekali tidak mencerminkan cara kerja seorang engineer.
 
@@ -253,13 +253,13 @@ flowchart TD
     C -->|"Skrip Actions"| K["API Cross-Post Qiita / Zenn"]
 ```
 
-### 5.2 Poin-poin dalam Membangun Pipeline Otomatisasi
+### 5.2 Poin-poin dalam Membangun [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) Otomatisasi
 
-1. **Build dan Deployment dengan GitHub Actions**
+1. **Build dan Deployment dengan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)**
    Jika menggunakan static site generator, gunakan GitHub Actions untuk mengotomatiskan pembuatan HTML dan deployment ke layanan hosting (seperti Vercel, Netlify, Cloudflare Pages, dll.). Di sini, sangat efektif untuk memasukkan proses optimasi gambar (misalnya konversi otomatis ke WebP) ke dalam pipeline build sebagai bagian dari optimasi Core Web Vitals yang telah disebutkan sebelumnya.
 
 2. **Integrasi Media Sosial menggunakan Trigger RSS di Zapier/IFTTT**
-   Saat build dilakukan, generator situs akan membuat RSS feed terbaru (XML). Baca file ini di iPaaS (Integration Platform as a Service) seperti Zapier atau Make (sebelumnya Integromat) dan atur alur kerja seperti "Jika item baru ditambahkan di RSS, publikasikan judul dan URL-nya ke X (Twitter) dan LinkedIn". Dengan ini, notifikasi ke pengikut (followers) akan otomatis terkirim begitu artikel diterbitkan.
+   Saat build dilakukan, generator situs akan membuat RSS feed terbaru (XML). Baca file ini di iPaaS (Integration Platform as a [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)) seperti Zapier atau Make (sebelumnya Integromat) dan atur alur kerja seperti "Jika item baru ditambahkan di RSS, publikasikan judul dan URL-nya ke X (Twitter) dan LinkedIn". Dengan ini, notifikasi ke pengikut (followers) akan otomatis terkirim begitu artikel diterbitkan.
 
 3. **Cross-Posting ke Qiita/Zenn (Penggunaan Tag Canonical)**
    Saat otoritas domain (domain power) blog korporat atau pribadi Anda masih lemah, meminjam kekuatan platform teknis seperti Qiita atau Zenn untuk menarik pengunjung adalah ide yang patut dicoba. Namun, menyalin dan menempel begitu saja berisiko mendapatkan penalti SEO sebagai konten duplikat.
@@ -275,7 +275,7 @@ Untuk secara dramatis meningkatkan jumlah kunjungan bulanan ke blog teknologi An
 2. Desain artikel yang memahami niat pencarian pengguna (pemecahan masalah vs pembelajaran sistematis)
 3. Analisis data sepenuhnya memanfaatkan API Google Search Console dan Python
 4. Manajemen siklus hidup konten dan penulisan ulang dengan mempertimbangkan ROI
-5. Otomatisasi penuh dalam distribusi melalui integrasi CI/CD dan Zapier
+5. Otomatisasi penuh dalam distribusi melalui integrasi [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dan Zapier
 
 Jika Anda dapat mengintegrasikan semua hal ini sebagai sebuah sistem, blog teknologi akan menjadi aset (asset) paling kuat yang akan mendorong karier Anda. Bagi engineer yang khawatir tentang jumlah akses yang mandek, kami harap Anda mencoba memulai "growth hack blog" Anda mulai hari ini. Keahlian pemrograman dan kemampuan desain arsitektur yang Anda asah dalam tugas-tugas pengembangan niscaya akan menjadi senjata terbesar Anda dalam menjalankan blog.
 

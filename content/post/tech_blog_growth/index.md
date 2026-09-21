@@ -175,7 +175,7 @@ else:
     print("データが見つかりませんでした。")
 ```
 
-このスクリプトをcronやGitHub Actionsの定期ジョブで回すことで、「どの記事のタイトルをリライトすべきか」を常にデータドリブンで決定することができます。直感に頼るのではなく、データに基づく継続的改善（CI/CDならぬContinuous Content Improvement）が重要です。
+このスクリプトをcronや[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の定期ジョブで回すことで、「どの記事のタイトルをリライトすべきか」を常にデータドリブンで決定することができます。直感に頼るのではなく、データに基づく継続的改善（[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)ならぬContinuous Content Improvement）が重要です。
 
 ---
 
@@ -231,7 +231,7 @@ $$ ROI = \frac{\sum_{t=1}^{T} \left( Rev_{ad}(t) + Val_{brand}(t) + Val_{skill}(
 
 ---
 
-## 5. GitHub Actionsと外部自動化ツール連携によるディストリビューション
+## 5. [GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)と外部自動化ツール連携によるディストリビューション
 
 コンテンツを作成した後は、それをいかに効率よくターゲット層に届けるか（ディストリビューション）が課題となります。毎回手動で各SNSにリンクを投稿するのは非効率であり、エンジニアらしくありません。
 
@@ -253,9 +253,9 @@ flowchart TD
     C -->|"Actions Script"| K["Qiita / Zenn Cross-Post API"]
 ```
 
-### 5.2 自動化パイプラインの構築ポイント
+### 5.2 自動化[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の構築ポイント
 
-1. **GitHub Actionsによるビルドとデプロイ**
+1. **[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)によるビルドとデプロイ**
    静的サイトジェネレーターを利用している場合、GitHub Actionsを用いてHTMLの生成とホスティング先（Vercel, Netlify, Cloudflare Pagesなど）へのデプロイを自動化します。この際、前述のCore Web Vitals対策として、画像の最適化プロセス（WebPへの自動変換など）をビルドパイプラインに組み込むことも有効です。
 
 2. **Zapier/IFTTTを利用したRSSトリガーのSNS連携**
@@ -275,7 +275,7 @@ flowchart TD
 2. ユーザーの検索意図（エラー解決 vs 体系的学習）を理解した記事設計
 3. Google Search Console APIとPythonを駆使したデータ分析
 4. ROIを意識したコンテンツのライフサイクル管理とリライト
-5. CI/CDやZapier連携によるディストリビューションの完全自動化
+5. [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)やZapier連携によるディストリビューションの完全自動化
 
 これらをシステムとして組み上げることができれば、技術ブログはあなた自身のキャリアを強力に後押しする最強の資産（アセット）となります。アクセス数の停滞に悩んでいるエンジニアは、ぜひ今日から「ブログのグロースハック」を始めてみてください。開発業務で培ったプログラミングスキルとアーキテクチャ設計能力は、ブログ運営においても最大の武器となるはずです。
 

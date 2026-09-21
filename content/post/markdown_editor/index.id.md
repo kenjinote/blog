@@ -9,7 +9,7 @@ categories: ["blogging", "productivity", "editors"]
 tags: ["Markdown", "VS Code", "Neovim", "textlint"]
 ---
 
-Untuk terus menulis blog teknologi, pengoptimalan lingkungan penulisan sangatlah penting. Artikel ini akan membahas secara mendalam pengaturan editor tingkat lanjut yang dapat meningkatkan kecepatan penulisan blog teknologi menggunakan Markdown secara drastis. Kita akan membahas secara komprehensif mulai dari penyesuaian ekstrem Visual Studio Code (VS Code) dan Neovim, pemanfaatan snippet, pengenalan textlint sebagai alat pemeriksa tata bahasa hingga otomatisasi dalam pipeline CI/CD, dan teknik penulisan mutakhir memanfaatkan LLM seperti GitHub Copilot.
+Untuk terus menulis blog teknologi, pengoptimalan lingkungan penulisan sangatlah penting. Artikel ini akan membahas secara mendalam pengaturan editor tingkat lanjut yang dapat meningkatkan kecepatan penulisan blog teknologi menggunakan Markdown secara drastis. Kita akan membahas secara komprehensif mulai dari penyesuaian ekstrem Visual Studio Code (VS Code) dan Neovim, pemanfaatan snippet, pengenalan textlint sebagai alat pemeriksa tata bahasa hingga otomatisasi dalam pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/), dan teknik penulisan mutakhir memanfaatkan LLM seperti GitHub Copilot.
 
 ## 1. Model Matematis Peningkatan Kecepatan Menulis
 
@@ -227,9 +227,9 @@ Saat menggabungkan baris baru berturut-turut yang tidak perlu menjadi satu:
 
 Dengan menjalankan ini melalui fitur cari & ganti (mode ekspresi reguler) VS Code atau perintah `%s` Neovim (`:%s/<b>\(.*?\)<\/b>/**\1**/g`), Anda dapat menyatukan format dalam sekejap.
 
-### Pemeriksaan Otomatis oleh Pipeline CI/CD
+### Pemeriksaan Otomatis oleh [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)
 
-Selain itu, menggunakan GitHub Actions, kami membangun pipeline CI di mana textlint berjalan secara otomatis saat Anda melakukan push artikel blog. Hal ini dapat mencegah publikasi artikel yang memiliki pelanggaran aturan.
+Selain itu, menggunakan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/), kami membangun pipeline CI di mana textlint berjalan secara otomatis saat Anda melakukan push artikel blog. Hal ini dapat mencegah publikasi artikel yang memiliki pelanggaran aturan.
 
 ```mermaid
 flowchart TD
@@ -252,7 +252,7 @@ Dalam penulisan blog teknologi modern, pemanfaatan LLM (Large Language Model) ti
 
 Menggunakan GitHub Copilot Chat di VS Code atau `ChatGPT.nvim` dan `Copilot.vim` di Neovim, Anda dapat memberikan prompt seperti berikut tanpa meninggalkan editor.
 
-> "Buatkan kerangka struktur hierarki Markdown untuk pemula tentang elemen teknologi berikut: Docker, Kubernetes, CI/CD"
+> "Buatkan kerangka struktur hierarki Markdown untuk pemula tentang elemen teknologi berikut: [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)"
 
 Kemudian, Markdown untuk judul dan poin-poin akan dihasilkan seketika. Kita hanya perlu menambahkan detail ke dalam kerangka kerja tersebut.
 
@@ -265,7 +265,7 @@ Kami telah menjelaskan pengaturan editor yang dapat menggandakan kecepatan penul
 1. **Kesadaran akan model matematis**: Membasmi tugas berulang untuk memaksimalkan $T_{saved}$.
 2. **Pemanfaatan VS Code**: Menghemat input dengan ekstensi dan snippet `markdown.json`.
 3. **Penyesuaian ekstrem Neovim**: Snippet dinamis oleh `LuaSnip` dan operasi keyboard penuh.
-4. **textlint dan analisis statis**: Integrasi CI/CD dan Linter lokal untuk mendekati waktu koreksi ke nol.
+4. **textlint dan analisis statis**: Integrasi [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dan Linter lokal untuk mendekati waktu koreksi ke nol.
 5. **Integrasi LLM**: Membuat AI secara langsung menghasilkan struktur Markdown dan kode diagram di dalam editor.
 
 Dengan memasukkan pengaturan ini ke dalam lingkungan Anda sendiri, "kerepotan" menulis akan hilang, dan kuantitas serta kualitas output teknis akan meningkat secara dramatis. Bagaimana kalau memulainya bahkan dari satu pendaftaran snippet kecil?

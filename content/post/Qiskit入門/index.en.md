@@ -68,7 +68,7 @@ If you have 2 qubits, you can create a superposition of 4 states: $|00\rangle, |
 
 The most powerful and mysterious property in quantum computing is **Quantum Entanglement**. This phenomenon, which Einstein called "spooky action at a distance," is a property where two or more qubits become strongly linked to each other. When the state of one qubit is determined, the state of the other qubit is instantaneously determined, no matter how far apart they are physically.
 
-One of the most famous quantum entangled states, the "Bell State", specifically the $\Phi^+$ state, is expressed as follows:
+One of the most famous quantum entangled states, the "Bell [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)", specifically the $\Phi^+$ state, is expressed as follows:
 
 $$
 |\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}
@@ -186,7 +186,7 @@ graph TD
 
 ---
 
-## 5. Practice: Building a Circuit to Create a Bell State (Quantum Entanglement)
+## 5. Practice: Building a Circuit to Create a Bell [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) (Quantum Entanglement)
 
 Let's actually create the "Quantum Entanglement (Bell State)" we learned in theory using Qiskit. The target state is $|\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}$.
 

@@ -18,7 +18,7 @@ description: 'हम विदेशी यूआई दिशानिर्द
 1. **तारांकन (\*) का उपयोग**
 
     * यह आमतौर पर सबसे अधिक उपयोग किया जाता है, अनिवार्य फ़ील्ड में "\*" जोड़ा जाता है।
-    * हालाँकि, **फॉर्म के आरंभ में " * अनिवार्य है" जैसी व्याख्या आवश्यक है** ([Nielsen Norman Group][1], [California State University, Northridge][2])।
+    * हालाँकि, **फॉर्म के आरंभ में " * अनिवार्य है" जैसी व्याख्या आवश्यक है** ([Nielsen Norman Group][1], [California [State](https://kenji.blog/hi/p/iac-infrastructure-as-code-terraform/) University, Northridge][2])।
     * ऐसे उदाहरण भी हैं जहां जोर देने के लिए रंग का उपयोग किया जाता है (जैसे लाल पाठ)।
 
 2. **लेबल में "Required" या "(required)" निर्दिष्ट करना**
@@ -72,7 +72,7 @@ description: 'हम विदेशी यूआई दिशानिर्द
 
 ## 🔗 संदर्भ लिंक (UI दिशानिर्देश सामग्री)
 
-* NN/g: *Marking Required Fields in Forms* ([California State University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
+* NN/g: *Marking Required Fields in Forms* ([California [State](https://kenji.blog/hi/p/iac-infrastructure-as-code-terraform/) University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
 * Deque: *Anatomy of Accessible Forms* ([Deque][3])
 * W3C Techniques: *H90 Indicating required form controls* ([W3C][5])
 * TPGi: *Indicating mandatory fields accessibly* ([TPGi][4])

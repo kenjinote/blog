@@ -76,7 +76,7 @@ Addresses:  185.199.108.153
 ## Githubリポジトリにカスタムドメインを設定する
 1. リポジトリのページを開き、Settingsをクリックする
 2. Pagesをクリックする
-3. リポジトリのソースをそのまま公開する場合は、Sourceで「Deploy from a branch」を選択する。HUGOなどソースをビルドする場合は「GitHub Actions」を選択する。
+3. リポジトリのソースをそのまま公開する場合は、Sourceで「Deploy from a branch」を選択する。HUGOなどソースをビルドする場合は「[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)」を選択する。
 4. Branchで公開するブランチを選択してSaveをクリックする
 5. Custom domainに取得したドメインを入力して、Saveをクリックする。
 6. 必要に応じて「Enforce HTTPS」にチェックを入れてHTTPS対応を行う

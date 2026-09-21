@@ -14,7 +14,7 @@ description: '這是一份使用 PowerShell 完全自動化日常 Windows 工作
 
 在現代的 IT 基礎設施與開發環境中，對於使用 Windows OS 作為平台的用戶來說，「日常的例行工作」是無法避免的課題。諸如檔案備份、系統日誌監控、開發資源（Git 儲存庫）的更新與建置等，如果以手動方式進行，不僅容易成為人為失誤的溫床，更會導致寶貴時間的浪費。
 
-過去人們經常使用批次檔（`.bat` 或 `.cmd`）或 VBScript，但在現今，最佳的解決方案毫無疑問是 **PowerShell** 。PowerShell 不僅僅是個以文字為基礎的 shell，它更是建構於 .NET Framework（以及 .NET Core）強大的物件導向基礎之上。透過管線（Pipeline）傳遞的資料並非「字串」，而是「物件」，因此我們不需要自行實作複雜的文字解析（例如 grep、awk、sed 等處理），只需指定屬性就能輕鬆存取資料。
+過去人們經常使用批次檔（`.bat` 或 `.cmd`）或 VBScript，但在現今，最佳的解決方案毫無疑問是 **PowerShell** 。PowerShell 不僅僅是個以文字為基礎的 shell，它更是建構於 .NET Framework（以及 .NET Core）強大的物件導向基礎之上。透過管線（[Pipeline](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)）傳遞的資料並非「字串」，而是「物件」，因此我們不需要自行實作複雜的文字解析（例如 grep、awk、sed 等處理），只需指定屬性就能輕鬆存取資料。
 
 本文將介紹 3 個與實務直接相關、使用 PowerShell 撰寫的完全自動化腳本實例（備份至 NAS 與日誌輪替、事件日誌監控與 Slack 通知、多個 Git 儲存庫的批次更新與建置）。此外，在介紹這些實例之前，也會針對必要的基礎技術，如 PowerShell 的執行原則、模組化、與工作排程器的整合等，進行深入探討與解說。
 
@@ -34,7 +34,7 @@ description: '這是一份使用 PowerShell 完全自動化日常 Windows 工作
 - **AllSigned**: 僅允許執行由受信任發行者簽署的腳本。
 - **RemoteSigned**: 在本機建立的腳本可直接執行，但從網際網路下載的腳本則需要簽章。
 - **Unrestricted**: 可以執行所有腳本，但在執行從網際網路下載的腳本時，系統會顯示警告。
-- **Bypass**: 不會封鎖任何項目，也不會顯示警告。通常用於暫時性的腳本執行（例如 CI/CD 管線）。
+- **Bypass**: 不會封鎖任何項目，也不會顯示警告。通常用於暫時性的腳本執行（例如 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線）。
 
 在企業的本機環境中，如果要在工作排程器等工具中執行自製腳本，最務實且安全的設定是 `RemoteSigned`。請以系統管理員權限啟動 PowerShell，並執行以下指令。
 
@@ -108,7 +108,7 @@ try {
 
 ## 與工作排程器整合（Register-ScheduledTask）
 
-腳本完成後，接下來就需要一個能定期執行該腳本的機制。在 Windows 中，最可靠的就是「工作排程器」。雖然也可以透過 GUI（`taskschd.msc`）進行設定，但從基礎設施即程式碼（Infrastructure as Code）的觀點出發，我們將解說如何使用 PowerShell Cmdlet 來註冊工作。
+腳本完成後，接下來就需要一個能定期執行該腳本的機制。在 Windows 中，最可靠的就是「工作排程器」。雖然也可以透過 GUI（`taskschd.msc`）進行設定，但從基礎設施即程式碼（[Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)）的觀點出發，我們將解說如何使用 PowerShell Cmdlet 來註冊工作。
 
 PowerShell 提供了 `ScheduledTasks` 模組，透過使用它，我們可以詳細定義觸發程序（何時執行）、動作（執行什麼）以及主體（以哪個使用者權限執行）。
 

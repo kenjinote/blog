@@ -159,7 +159,7 @@ flowchart TD
 
 ## 8. 使用 PowerShell 进行可编程的安全编辑
 
-为了将手动编辑注册表的风险降到最低，现代的最佳实践是使用 PowerShell 脚本将操作代码化（Infrastructure as Code），以确保自动化、可重复性和可测试性。PowerShell 具备“Registry Provider”，让你能使用与操作文件系统（如 C: 驱动器等）完全相同的 Cmdlet（如 `Get-ChildItem`，`Get-ItemProperty`，`New-Item` 等）来透明地操作注册表。
+为了将手动编辑注册表的风险降到最低，现代的最佳实践是使用 PowerShell 脚本将操作代码化（[Infrastructure as Code](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)），以确保自动化、可重复性和可测试性。PowerShell 具备“Registry Provider”，让你能使用与操作文件系统（如 C: 驱动器等）完全相同的 Cmdlet（如 `Get-ChildItem`，`Get-ItemProperty`，`New-Item` 等）来透明地操作注册表。
 
 在 PowerShell 中，默认挂载了诸如 `HKLM:` 或 `HKCU:` 这样的专用 PSDrive（类似于驱动器盘符）。
 
@@ -398,7 +398,7 @@ $backup = Import-Clixml -Path "C:\backup\reg_backup.xml"
 
 ## 总结
 
-Windows注册表是一个强大且复杂的基础系统，它统一管理操作系统的各种行为以及应用程序的设置。缺乏秩序的手动修改伴随着极高的系统损坏风险，这一点在数学上也已得到证明。因此，利用 PowerShell 或 C# 等可编程手段，遵循 Infrastructure as Code 原则，以一种安全、可测试并具有重现性的方式进行配置管理，在现代的系统管理和开发中是不可或缺的。希望你能运用在本文中所讲解的深度架构理解和实现模式，去构建一个更加坚固且安全的 Windows 环境。
+Windows注册表是一个强大且复杂的基础系统，它统一管理操作系统的各种行为以及应用程序的设置。缺乏秩序的手动修改伴随着极高的系统损坏风险，这一点在数学上也已得到证明。因此，利用 PowerShell 或 C# 等可编程手段，遵循 [Infrastructure as Code](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) 原则，以一种安全、可测试并具有重现性的方式进行配置管理，在现代的系统管理和开发中是不可或缺的。希望你能运用在本文中所讲解的深度架构理解和实现模式，去构建一个更加坚固且安全的 Windows 环境。
 
 
 

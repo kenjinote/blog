@@ -165,7 +165,7 @@ int main() {
 - 内存 (RAM): 4GB （仅仅刚好足够运行现代操作系统）
 - 存储 (eMMC): 32GB ～ 64GB （I/O速度极慢）
 
-由于这种贫弱的硬件限制，要构建专业工程师日常使用的“本地开发环境”几乎是不可能的。使用Docker启动Linux容器，或是满血运行Visual Studio Code等重型IDE，又或是启动Node.js或Python的本地服务器并安装庞大的依赖库，会立刻导致内存耗尽和系统死机。
+由于这种贫弱的硬件限制，要构建专业工程师日常使用的“本地开发环境”几乎是不可能的。使用[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)启动Linux容器，或是满血运行Visual Studio Code等重型IDE，又或是启动Node.js或Python的本地服务器并安装庞大的依赖库，会立刻导致内存耗尽和系统死机。
 
 结果，教育现场被逼到了只能全面依赖在浏览器上运行的云端IDE（如Google Colaboratory、Replit，或教科书公司自带的轻量级Web工具等）的境地。
 
@@ -204,7 +204,7 @@ flowchart LR
 
 ### 要求技能与教授技能的绝望脱节
 
-现代产业界，特别是在全球布局的大型创企和科技巨头（如GAFAM等），对初级软件工程师的要求正以惊人的速度提高。无论是构建云原生基础设施（AWS, GCP, Kubernetes），设计微服务架构的分布式系统，实现机器学习流水线，还是掌握高级安全知识，都需要广泛而深厚的专业能力。
+现代产业界，特别是在全球布局的大型创企和科技巨头（如GAFAM等），对初级软件工程师的要求正以惊人的速度提高。无论是构建云原生基础设施（AWS, GCP, [Kubernetes](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/)），设计微服务架构的分布式系统，实现机器学习流水线，还是掌握高级安全知识，都需要广泛而深厚的专业能力。
 
 下图概念性地展示了目前日本学校教育提供的技能达成度与最前沿产业界所要求的技能水平之间令人绝望的脱节。
 

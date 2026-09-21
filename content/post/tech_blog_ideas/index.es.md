@@ -11,7 +11,7 @@ tags: ["Idea Generation", "Obsidian", "RSS", "Knowledge Management"]
 
 Al administrar un blog técnico como ingeniero o investigador, hay un obstáculo que casi siempre enfrentarás. Es el "quedarse sin ideas". Aunque los primeros artículos se escriban sin problemas, a medida que continúas, no es raro que te atormente la preocupación de "no sé sobre qué escribir a continuación" o "me falta abrumadoramente información de entrada (input) para poder generar salidas (output)". La escritura de un blog técnico no depende solo de la habilidad de redactar, sino en gran medida del diseño de un sistema continuo para recopilar conocimientos diarios, organizarlos y combinarlos para crear nuevo valor.
 
-En este artículo, explicaré de manera muy detallada y técnica sobre un **pipeline de entrada y salida sistematizado** para continuar generando ideas de artículos técnicos de forma semipermanente. Comenzaremos con un mecanismo para extraer automáticamente temas en tendencia utilizando APIs de fuentes de información extranjeras de alta calidad como Hacker News o Lobsters, y ejecutarlos periódicamente con GitHub Actions. Luego, construiremos un avanzado sistema de Gestión de Conocimiento Personal (PKM: Personal Knowledge Management) que sistematiza la información recopilada como conocimiento mediante el método Zettelkasten usando Obsidian, y que permite realizar búsquedas semánticas combinando la API de Embeddings de OpenAI y Pinecone (una base de datos vectorial).
+En este artículo, explicaré de manera muy detallada y técnica sobre un **pipeline de entrada y salida sistematizado** para continuar generando ideas de artículos técnicos de forma semipermanente. Comenzaremos con un mecanismo para extraer automáticamente temas en tendencia utilizando APIs de fuentes de información extranjeras de alta calidad como Hacker News o Lobsters, y ejecutarlos periódicamente con [GitHub Actions](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/). Luego, construiremos un avanzado sistema de Gestión de Conocimiento Personal (PKM: Personal Knowledge Management) que sistematiza la información recopilada como conocimiento mediante el método Zettelkasten usando Obsidian, y que permite realizar búsquedas semánticas combinando la API de Embeddings de OpenAI y Pinecone (una base de datos vectorial).
 
 Además, para compensar los límites de la memoria humana, profundizaremos en una serie de procesos para poner en práctica la repetición espaciada (Spaced Repetition) basada en la curva del olvido de Ebbinghaus utilizando Anki, y para elevar el conocimiento consolidado a nuevas ideas mediante la "creatividad combinatoria (Combinatorial Creativity)", acompañados de modelos matemáticos concretos y ejemplos de implementación de scripts en Python.
 
@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
 Este script proporciona un valor superior a un simple lector de RSS. Al realizar un filtrado por puntuación, puedes extraer solo los temas técnicos que realmente están llamando la atención en la comunidad (señal alta con poco ruido).
 
-## 3. Programación y automatización con GitHub Actions
+## 3. Programación y automatización con [GitHub Actions](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/)
 
 Ejecutar manualmente el script de Python creado todos los días es tedioso. La base de la automatización es reducir la intervención humana al mínimo. Utilizando la función Cron de GitHub Actions, construiremos un mecanismo para ejecutar el script a una hora designada todos los días y confirmar (commit) automáticamente los resultados en el repositorio.
 
@@ -316,7 +316,7 @@ Como patrones de combinación en blogs técnicos, se puede considerar la siguien
 
 1. **[Tecnología antigua] × [Nuevo paradigma]**: Ejemplo: "Aprendiendo de la arquitectura de COBOL: Antipatrones en el diseño de microservicios modernos".
 2. **[Frontend] × [Concepto de backend]**: Ejemplo: "Explicando el algoritmo de actualización del DOM virtual de React desde la perspectiva de los niveles de aislamiento de transacciones de bases de datos".
-3. **[Matemáticas abstractas y teorías] × [Implementación concreta]**: Ejemplo: "Descifrando la optimización de la programación (scheduling) de Pods en Kubernetes con la teoría de grafos".
+3. **[Matemáticas abstractas y teorías] × [Implementación concreta]**: Ejemplo: "Descifrando la optimización de la programación (scheduling) de Pods en [Kubernetes](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/) con la teoría de grafos".
 
 Para generar estas combinaciones intencionadamente, puedes usar el sistema de búsqueda semántica de Pinecone que construimos anteriormente para extraer dos conceptos aleatorios, A y B. Luego, pasándole a una IA (como ChatGPT) un prompt diciendo: "Propón 5 títulos y borradores de índice para un blog técnico que combine estos dos", podrás generar infinitamente ideas de artículos con enfoques novedosos que no se te habrían ocurrido por tu cuenta.
 

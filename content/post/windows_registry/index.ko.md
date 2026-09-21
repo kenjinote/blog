@@ -159,7 +159,7 @@ PowerShell 스크립트나 C# 애플리케이션에서 레지스트리를 편집
 
 ## 8. PowerShell을 통한 프로그래밍 가능한 안전한 편집
 
-레지스트리를 수동으로 편집하는 위험을 최소화하려면 PowerShell 스크립트를 사용하여 조작을 코드화(Infrastructure as Code)하고 자동화, 재현성, 테스트 가능성을 확보하는 것이 현대의 모범 사례입니다. PowerShell은 "Registry Provider"를 갖추고 있어 파일 시스템(C: 드라이브 등)을 조작하는 것과 완전히 동일한 cmdlet(`Get-ChildItem`, `Get-ItemProperty`, `New-Item` 등)으로 레지스트리를 투명하게 조작할 수 있습니다.
+레지스트리를 수동으로 편집하는 위험을 최소화하려면 PowerShell 스크립트를 사용하여 조작을 코드화([Infrastructure as Code](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/))하고 자동화, 재현성, 테스트 가능성을 확보하는 것이 현대의 모범 사례입니다. PowerShell은 "Registry Provider"를 갖추고 있어 파일 시스템(C: 드라이브 등)을 조작하는 것과 완전히 동일한 cmdlet(`Get-ChildItem`, `Get-ItemProperty`, `New-Item` 등)으로 레지스트리를 투명하게 조작할 수 있습니다.
 
 PowerShell에서는 기본적으로 `HKLM:`이나 `HKCU:`라는 전용 PSDrive(드라이브 문자 같은 것)가 마운트되어 있습니다.
 
@@ -398,7 +398,7 @@ Procmon을 사용하면 OS 상에서 발생하는 모든 레지스트리 API 호
 
 ## 요약
 
-Windows 레지스트리는 OS의 모든 동작과 애플리케이션 설정을 통합적으로 관리하는 강력하고 복잡한 기반 시스템입니다. 수동에 의한 무질서한 편집에는 수학적으로도 입증되는 높은 시스템 손상 위험이 따릅니다. 따라서 PowerShell이나 C# 등의 프로그래밍 가능한 수단을 사용하여 Infrastructure as Code의 원칙에 따라 안전하고 테스트 가능하며 재현성 있는 형태로 구성 관리를 수행하는 것이 현대의 시스템 관리와 개발에 있어 필수적입니다. 본 기사에서 해설한 깊은 아키텍처 이해와 구현 패턴을 활용하여 더욱 견고하고 안전한 Windows 환경 구축을 목표로 해 보세요.
+Windows 레지스트리는 OS의 모든 동작과 애플리케이션 설정을 통합적으로 관리하는 강력하고 복잡한 기반 시스템입니다. 수동에 의한 무질서한 편집에는 수학적으로도 입증되는 높은 시스템 손상 위험이 따릅니다. 따라서 PowerShell이나 C# 등의 프로그래밍 가능한 수단을 사용하여 [Infrastructure as Code](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)의 원칙에 따라 안전하고 테스트 가능하며 재현성 있는 형태로 구성 관리를 수행하는 것이 현대의 시스템 관리와 개발에 있어 필수적입니다. 본 기사에서 해설한 깊은 아키텍처 이해와 구현 패턴을 활용하여 더욱 견고하고 안전한 Windows 환경 구축을 목표로 해 보세요.
 
 
 

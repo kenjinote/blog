@@ -14,7 +14,7 @@ description: 'Memperkenalkan daftar ekstensi yang direkomendasikan yang membuat 
 | Kategori | Nama | Penyedia | Deskripsi |
 |----|----|-----|-----|
 | Manajemen Virtual & Kontainer | Remote Devlopment | Microsoft  | Mendukung pengembangan jarak jauh dengan menghubungkan ke kontainer virtual/WSL melalui SSH |
-| Manajemen Virtual & Kontainer | Docker | Microsoft  | Mendukung manajemen kontainer Docker |
+| Manajemen Virtual & Kontainer | [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft  | Mendukung manajemen kontainer Docker |
 | Manajemen Kode | GitHub Pull Requests | GitHub | Mengelola Pull Request GitHub di VSCode |
 | Manajemen Kode | GitHub Copilot | GitHub | Mendukung penyelesaian kode menggunakan AI |
 | Manajemen Kode | Git Graph | mhutchie | Menampilkan cabang dan komit Git secara grafis |
@@ -24,7 +24,7 @@ description: 'Memperkenalkan daftar ekstensi yang direkomendasikan yang membuat 
 | Browser & Pengembangan Web | Vue Language Features(Volar) | Vue |  Mendukung fitur bahasa Vue |
 | Browser & Pengembangan Web | JavaScript (ES6) code snippets | charalampos karypidis | Menyediakan potongan kode (snippet) JavaScript |
 | Browser & Pengembangan Web | Tailwind CSS IntelliSense | Tailwind Labs | Menyediakan potongan kode (snippet) Tailwind CSS |
-| Pengembangan Cloud | AWS Toolkit | Amazon Web Services | Mendukung pengembangan AWS |
+| Pengembangan Cloud | AWS Toolkit | Amazon Web [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)s | Mendukung pengembangan AWS |
 | Pengembangan Cloud | Azure Tools | Microsoft | Mendukung pengembangan Azure |
 | Pengembangan Cloud | Google Cloud Tools | Google Cloud | Mendukung pengembangan Google Cloud |
 | Database | MySQL | Jun Han | Mendukung pengembangan MySQL |

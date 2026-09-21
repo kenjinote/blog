@@ -249,7 +249,7 @@ Die Vektorsuche ist gut darin, "Bedeutung" zu erfassen, kann aber Schwierigkeite
 Indem man eine **semantische Suche** basierend auf der Vektorsuche parallel zu einer **Stichwortsuche** unter Verwendung von Algorithmen wie BM25 durchführt und die Ergebnisse beider bewertet und integriert (unter Verwendung von Methoden wie Reciprocal Rank Fusion; RRF), können Suchauslassungen drastisch reduziert werden.
 
 ## 5.2 Re-ranking (Neubewertung)
-Die Vektorsuche ist schnell, wertet aber nicht unbedingt die genaue kontextuelle Eignung des Kontexts aus. Eine gängige Pipeline zur Verbesserung der Suchgenauigkeit sieht wie folgt aus:
+Die Vektorsuche ist schnell, wertet aber nicht unbedingt die genaue kontextuelle Eignung des Kontexts aus. Eine gängige [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) zur Verbesserung der Suchgenauigkeit sieht wie folgt aus:
 1. **Initiale Suche (First-stage Retrieval)**: Etwa 20 bis 30 relevante Chunks werden breit und flach aus der Vektor-DB abgerufen.
 2. **Neubewertung (Re-ranking)**: Ein weiteres, schwereres maschinelles Lernmodell (z.B. `bge-reranker`), das als Cross-Encoder bezeichnet wird, wird verwendet, um das Paar aus der Benutzeranfrage und dem abgerufenen Chunk einzugeben und den semantischen Eignungsscore neu zu berechnen.
 3. **Auswahl**: Nur die Top 3 bis 5 mit den höchsten Scores werden an den LLM-Prompt als finaler Kontext weitergegeben.

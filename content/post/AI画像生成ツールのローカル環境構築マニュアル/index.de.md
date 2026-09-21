@@ -158,7 +158,7 @@ graph TD
     Nach einem Neustart erscheint unten rechts auf der Benutzeroberfläche eine "Manager"-Schaltfläche, über die Sie verschiedene benutzerdefinierte Knoten installieren können.
 
 ### 5.3 Aufbau von Fooocus: Hochwertige Generierung für Anfänger
-Fooocus ist eine Benutzeroberfläche, die mit dem Ziel entwickelt wurde, "mit kurzen Prompts überwältigend schöne Bilder auszugeben", ähnlich wie Midjourney. Sie ist speziell auf SDXL-Modelle abgestimmt und führt intern automatisch komplexe Pipelines wie GPT-2-basierte Prompt-Erweiterungen durch.
+Fooocus ist eine Benutzeroberfläche, die mit dem Ziel entwickelt wurde, "mit kurzen Prompts überwältigend schöne Bilder auszugeben", ähnlich wie Midjourney. Sie ist speziell auf SDXL-Modelle abgestimmt und führt intern automatisch komplexe [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s wie GPT-2-basierte Prompt-Erweiterungen durch.
 
 **Installationsschritte:**
 1.  Laden Sie das Windows-Release-Paket vom offiziellen Fooocus-GitHub herunter und entpacken Sie es.
@@ -268,4 +268,4 @@ Die Open-Source-Bewegung für die KI-Bildgenerierung, die mit Stable Diffusion b
 
 Lokale Optimierungstechnologien wie TensorRT, Quantisierungstechniken (Quantization) und GGUF beschleunigen sich jedoch gleichermaßen, und es bildet sich ein Ökosystem heraus, in dem eine ausreichende Inferenz sogar auf Hardware für den allgemeinen Verbraucher möglich wird.
 
-Die Einrichtung von CUDA-Umgebungen, die VRAM-Optimierung und das Verständnis von Pipelines wie ComfyUI, die in diesem Handbuch erläutert werden, bilden universelles Grundlagenwissen, das nützlich bleibt, egal wie sich KI-Technologie-Trends verändern. Wir hoffen, dass Ihre Kreativität in einer grenzenlosen lokalen Umgebung voll zur Geltung kommt.
+Die Einrichtung von CUDA-Umgebungen, die VRAM-Optimierung und das Verständnis von [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s wie ComfyUI, die in diesem Handbuch erläutert werden, bilden universelles Grundlagenwissen, das nützlich bleibt, egal wie sich KI-Technologie-Trends verändern. Wir hoffen, dass Ihre Kreativität in einer grenzenlosen lokalen Umgebung voll zur Geltung kommt.

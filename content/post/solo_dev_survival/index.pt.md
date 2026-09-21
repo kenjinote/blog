@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # Introdução: A Batalha dos "Despossuídos" Desafiando os Gigantes
 
-Na história do desenvolvimento de software, nunca houve uma era tão favorável para os desenvolvedores solo (indie developers) como agora. A democratização da infraestrutura em nuvem, como AWS e GCP, a ascensão do BaaS (Backend as a Service), como Vercel e Supabase, e, acima de tudo, a automação da codificação impulsionada pela evolução dos LLMs (Large Language Models). Tudo isso criou um terreno onde os indivíduos podem competir de frente com as gigantes empresas de tecnologia.
+Na história do desenvolvimento de software, nunca houve uma era tão favorável para os desenvolvedores solo (indie developers) como agora. A democratização da infraestrutura em nuvem, como AWS e GCP, a ascensão do BaaS (Backend as a [Service](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/)), como Vercel e Supabase, e, acima de tudo, a automação da codificação impulsionada pela evolução dos LLMs (Large Language Models). Tudo isso criou um terreno onde os indivíduos podem competir de frente com as gigantes empresas de tecnologia.
 
 No entanto, o fato de os recursos tecnológicos terem se nivelado não significa que você possa vencer adotando as mesmas estratégias que as grandes empresas. Em termos de capital, poder de marketing e força da marca, os indivíduos estão em esmagadora desvantagem. Para que os desenvolvedores solo sobrevivam e, em última análise, vençam, uma "estratégia de sobrevivência" única é essencial.
 
@@ -50,7 +50,7 @@ Os desenvolvedores solo devem focar deliberadamente em problemas altamente espec
 
 # 2. Design de Arquitetura que Gera uma Agilidade Esmagadora
 
-Os sistemas das grandes empresas são projetados com "estabilidade" e "escalabilidade" como prioridade máxima, razão pela qual adotam Kubernetes e arquiteturas de microsserviços. No entanto, se um desenvolvedor solo fizesse o mesmo, os recursos seriam esgotados apenas na manutenção da infraestrutura (Ops).
+Os sistemas das grandes empresas são projetados com "estabilidade" e "escalabilidade" como prioridade máxima, razão pela qual adotam [Kubernetes](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/) e arquiteturas de microsserviços. No entanto, se um desenvolvedor solo fizesse o mesmo, os recursos seriam esgotados apenas na manutenção da infraestrutura (Ops).
 
 A palavra de ordem para a stack de tecnologia de um desenvolvedor solo é **"No-Ops" (Zero Operações)**. Utilize a arquitetura serverless ao limite e concentre-se exclusivamente em escrever a lógica de negócios.
 
@@ -79,7 +79,7 @@ flowchart TD
 
 Na stack das grandes empresas, a adição de um novo recurso requer coordenação entre várias equipes e o desenvolvimento de pipelines de implantação DevOps. Por outro lado, na stack de um indivíduo (por exemplo, Next.js + Supabase + Vercel), um único `git push` implanta o código em uma rede global edge, e não há necessidade de provisionamento de banco de dados.
 
-## Aproveitando Serverless e Edge Computing
+## Aproveitando [Serverless](https://kenji.blog/pt/p/serverless-architecture-aws-lambda-cold-start/) e Edge Computing
 
 Ao utilizar runtimes edge como Vercel ou Cloudflare Workers, você pode eliminar o atraso do cold start e fornecer APIs com baixa latência para usuários em todo o mundo.
 
@@ -289,7 +289,7 @@ A estratégia de sobrevivência para os desenvolvedores solo competirem com gran
 
 1. **Escolha onde lutar (Teoria da Cauda Longa)**
    - Busque mercados de nicho com dores pequenas, mas profundas, nas quais as grandes empresas não podem entrar.
-2. **Use a tecnologia como alavanca (Serverless, BaaS, IA)**
+2. **Use a tecnologia como alavanca ([Serverless](https://kenji.blog/pt/p/serverless-architecture-aws-lambda-cold-start/), BaaS, IA)**
    - Terceirize completamente as operações (Ops) e escreva apenas código (lógica de negócios) para resolver os problemas do cliente, não a infraestrutura.
 3. **Maximize a agilidade (Custo de Comunicação Zero)**
    - Aproveite a "velocidade", a maior arma do desenvolvedor solo; implante instantaneamente as ideias à medida que elas surgem e obtenha feedback do mercado o mais rápido possível.

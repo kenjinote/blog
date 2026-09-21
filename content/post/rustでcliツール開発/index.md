@@ -408,7 +408,7 @@ strip = true        # シンボル情報を削除してバイナリサイズを�
 
 ---
 
-## 12. CI/CDと配布 (Publishing)
+## 12. [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)と配布 (Publishing)
 
 作成したツールを世界中に配布するためのステップです。
 
@@ -421,8 +421,8 @@ cargo publish
 ```
 公開後は、世界中のユーザーが `cargo install gh-stats-fetcher` コマンド一つであなたのツールをインストールできるようになります。
 
-### GitHub Actions による自動リリース
-クロスコンパイルされたバイナリをGitHub Releasesに自動アップロードするCI/CDパイプラインを構築します。`.github/workflows/release.yml` に以下のような設定を記述します。これにより、タグをプッシュするだけで、Linux, macOS, Windows用のバイナリが自動的にビルドされ、リリースアセットとして添付されます（ここでは紙面の都合上、詳細なYAMLの記述は割愛しますが、`taiki-e/upload-rust-binary-action` などのActionを利用するのが現在のベストプラクティスです）。
+### [GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/) による自動リリース
+クロスコンパイルされたバイナリをGitHub Releasesに自動アップロードする[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を構築します。`.github/workflows/release.yml` に以下のような設定を記述します。これにより、タグをプッシュするだけで、Linux, macOS, Windows用のバイナリが自動的にビルドされ、リリースアセットとして添付されます（ここでは紙面の都合上、詳細なYAMLの記述は割愛しますが、`taiki-e/upload-rust-binary-action` などのActionを利用するのが現在のベストプラクティスです）。
 
 ---
 

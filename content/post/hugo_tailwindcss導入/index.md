@@ -15,7 +15,7 @@ tags: ["Hugo", "Tailwind CSS", "CSS", "Frontend"]
 
 HugoはGo言語で記述されており、数千ページのサイトであってもわずか数秒、あるいはミリ秒単位でビルドを完了させる驚異的なパフォーマンスを持っています。一方、Tailwind CSSは事前に定義された無数のユーティリティクラス（`flex`, `text-center`, `mt-4`など）をHTMLに直接記述していくことで、CSSファイルとHTMLファイルの間を往復するコンテキストスイッチを無くし、デザインのイテレーションを高速化します。
 
-本記事では、HugoのテーマにTailwind CSSを導入し、さらにPostCSSを用いた高度なアセットパイプライン（Hugo Pipes）を構築する手順を、アーキテクチャの根幹から数学的なパフォーマンス最適化の観点に至るまで、徹底的にかつ詳細に解説します。
+本記事では、HugoのテーマにTailwind CSSを導入し、さらにPostCSSを用いた高度なアセット[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)（Hugo Pipes）を構築する手順を、アーキテクチャの根幹から数学的なパフォーマンス最適化の観点に至るまで、徹底的にかつ詳細に解説します。
 
 ---
 
@@ -76,7 +76,7 @@ Tailwind CSSは、これらの問題を「ユーティリティクラスの組�
 
 ## 2. Hugo PipesとPostCSSのアーキテクチャ
 
-HugoにTailwind CSSを統合するためには、 **Hugo Pipes** と呼ばれるアセット処理パイプラインを理解する必要があります。Hugo Pipesは、Sass/SCSSのコンパイル、JavaScriptのバンドルとMinify、そして今回使用する **PostCSS** の実行など、アセットに関するあらゆる処理をHugo内部で完結させる強力な機能です。
+HugoにTailwind CSSを統合するためには、 **Hugo Pipes** と呼ばれるアセット処理[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を理解する必要があります。Hugo Pipesは、Sass/SCSSのコンパイル、JavaScriptのバンドルとMinify、そして今回使用する **PostCSS** の実行など、アセットに関するあらゆる処理をHugo内部で完結させる強力な機能です。
 
 PostCSSは、JavaScriptプラグインを使用してCSSを変換するためのツールです。Tailwind CSS自体も、実はPostCSSのプラグインとして動作しています。
 
@@ -203,7 +203,7 @@ module.exports = {
 
 ---
 
-## 5. HugoでのCSSアセットパイプラインの構築
+## 5. HugoでのCSSアセット[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の構築
 
 設定が完了したら、いよいよHugoのテーマ側にTailwind CSSを組み込みます。
 
@@ -234,7 +234,7 @@ module.exports = {
 
 ### 5-2. レイアウトファイル（head.html）の編集
 
-次に、Hugoのテンプレートから上記のCSSファイルを読み込み、PostCSSで処理するパイプラインを記述します。一般的には `<head>` タグ内を定義しているパーシャルテンプレート（例：`layouts/partials/head.html`）を編集します。
+次に、Hugoのテンプレートから上記のCSSファイルを読み込み、PostCSSで処理する[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を記述します。一般的には `<head>` タグ内を定義しているパーシャルテンプレート（例：`layouts/partials/head.html`）を編集します。
 
 **ファイルパス: `layouts/partials/head.html`**
 
@@ -266,7 +266,7 @@ module.exports = {
 </head>
 ```
 
-#### パイプラインの解説とMermaid図解
+#### [パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の解説とMermaid図解
 
 上記のGoテンプレートコードがどのようにCSSファイルを処理していくのか、一連のパイプライン処理を図解します。
 
@@ -362,7 +362,7 @@ Markdownのコンテンツファイルや、Hugoのテンプレート（`layouts
 
 ## 8. 本番環境向けビルドとさらなる高度化
 
-サイトを本番サーバー（Netlify, Vercel, GitHub Pages, Cloudflare Pagesなど）にデプロイする際は、環境変数を設定して本番用の最適化パイプラインを走らせる必要があります。
+サイトを本番サーバー（Netlify, Vercel, GitHub Pages, Cloudflare Pagesなど）にデプロイする際は、環境変数を設定して本番用の最適化[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を走らせる必要があります。
 
 ```bash
 # 本番ビルドコマンドの例
@@ -391,7 +391,7 @@ Hugoのようなブログやドキュメントサイトでは、Markdownから�
    ```
 
 3. テンプレートでの適用
-   記事の本文を出力するコンテナ要素に `prose` クラス（およびお好みで色やサイズのバリアント）を付与するだけで、美しいデフォルトスタイルが適用されます。
+   記事の本文を出力する[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)要素に `prose` クラス（およびお好みで色やサイズのバリアント）を付与するだけで、美しいデフォルトスタイルが適用されます。
 
    ```go-html-template
    <article class="prose prose-lg prose-blue mx-auto mt-10">
@@ -405,7 +405,7 @@ Hugoのようなブログやドキュメントサイトでは、Markdownから�
 
 ## 9. まとめ：保守性の高いフロントエンドエコシステムの完成
 
-お疲れ様でした。これで、Hugoの超高速な静的サイト生成エンジンと、Tailwind CSSのモダンなスタイリング機能、そしてPostCSSの拡張性を備えた、完璧なWeb開発アセットパイプラインが完成しました。
+お疲れ様でした。これで、Hugoの超高速な静的サイト生成エンジンと、Tailwind CSSのモダンなスタイリング機能、そしてPostCSSの拡張性を備えた、完璧なWeb開発アセット[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)が完成しました。
 
 このアーキテクチャの優れた点は、 **「設定は最初の一回だけで済む」** ということです。一度パイプラインを構築してしまえば、開発者はCSSファイルを開くことなく、直感的なユーティリティクラスをHTMLやMarkdownテンプレートに記述するだけで、複雑なUIを驚異的なスピードで組み上げていくことができます。
 

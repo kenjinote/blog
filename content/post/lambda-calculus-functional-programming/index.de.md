@@ -18,7 +18,7 @@ tags:
 
 In der modernen Softwareentwicklung ist die **funktionale Programmierung** ([Functional Programming](https://kenji.blog/de/p/oop-vs-fp-vs-dop/)) nicht mehr nur ein Ansatz für einige wenige Enthusiasten, sondern ein weit verbreitetes Paradigma geworden. Von Frontend-Technologien wie React bis hin zu [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/), Scala und sogar objektorientierten Sprachen wie Java und C# wurden Konzepte wie die Behandlung von Funktionen als First-Class-Citizens und die Eliminierung von Seiteneffekten übernommen.
 
-Hinter diesem Paradigma verbirgt sich jedoch eine tiefgreifende mathematische Theorie, die in den 1930er Jahren aufgebaut wurde, noch bevor Computer physisch existierten. Dies ist das von Alonzo Church (Alonzo Church) vorgeschlagene **Lambda-Kalkül** ( $\lambda$-calculus ).
+Hinter diesem Paradigma verbirgt sich jedoch eine tiefgreifende mathematische Theorie, die in den 1930er Jahren aufgebaut wurde, noch bevor Computer physisch existierten. Dies ist das von Alonzo Church (Alonzo Church) vorgeschlagene **[Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)-Kalkül** ( $\lambda$-calculus ).
 
 In diesem Artikel werden wir im Detail untersuchen, wie sich das Lambda-Kalkül von seiner grundlegenden Theorie entwickelt hat, wie es die frühe Programmiersprache **Lisp** beeinflusst hat und welche historischen und theoretischen Entwicklungen bis hin zu **Haskell**, einer rein funktionalen Sprache, stattgefunden haben.
 
@@ -91,7 +91,7 @@ graph TD
 
 ## 4. Church-Codierung: Aus dem Nichts etwas erschaffen
 
-Im Lambda-Kalkül gibt es überhaupt keine eingebauten Datentypen (Zahlen, Wahrheitswerte, Listen usw.). Alles sind nur Funktionen. Church zeigte jedoch, dass man durch geschicktes Kombinieren von Funktionen jegliche Datenstrukturen oder Kontrollstrukturen darstellen kann. Dies wird als **Church-Codierung** (Church Encoding) bezeichnet.
+Im [Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)-Kalkül gibt es überhaupt keine eingebauten Datentypen (Zahlen, Wahrheitswerte, Listen usw.). Alles sind nur Funktionen. Church zeigte jedoch, dass man durch geschicktes Kombinieren von Funktionen jegliche Datenstrukturen oder Kontrollstrukturen darstellen kann. Dies wird als **Church-Codierung** (Church Encoding) bezeichnet.
 
 ### 4.1 Wahrheitswerte (Church-Booleans)
 
@@ -141,7 +141,7 @@ print(to_int(ADD(TWO)(SUCC(TWO)))) # 2 + 3 = 5
 
 ## 5. Festpunktkombinator und Turing-Vollständigkeit
 
-Im Lambda-Kalkül haben Funktionen keine Namen (anonyme Funktionen). Wie erreicht man also rekursive Aufrufe? Die Lösung für dieses Problem ist der **Festpunktkombinator** (Fixed-point combinator), insbesondere der berühmte **Y-Kombinator**.
+Im [Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)-Kalkül haben Funktionen keine Namen (anonyme Funktionen). Wie erreicht man also rekursive Aufrufe? Die Lösung für dieses Problem ist der **Festpunktkombinator** (Fixed-point combinator), insbesondere der berühmte **Y-Kombinator**.
 
 $$
 Y = \lambda f. (\lambda x. f \ (x \ x)) \ (\lambda x. f \ (x \ x))
@@ -164,7 +164,7 @@ Das wichtigste Merkmal von Lisp ist, dass der Code selbst als Daten (eine Liste)
 ;; Ergebnis: (1 4 9 16 25)
 ```
 
-Obwohl Lisp dynamisch typisiert ist und nicht genau dem theoretischen Lambda-Kalkül entspricht, war es der erste große Meilenstein, der den Geist der funktionalen Programmierung – „Funktionen als Daten behandeln“ und „Berechnung als Funktionsauswertung betrachten“ – auf realen Computern umsetzte.
+Obwohl Lisp dynamisch typisiert ist und nicht genau dem theoretischen [Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)-Kalkül entspricht, war es der erste große Meilenstein, der den Geist der funktionalen Programmierung – „Funktionen als Daten behandeln“ und „Berechnung als Funktionsauswertung betrachten“ – auf realen Computern umsetzte.
 
 ## 7. Getyptes Lambda-Kalkül und die Curry-Howard-Korrespondenz
 
@@ -204,7 +204,7 @@ In den späten 1980er Jahren gründeten Forscher funktionaler Sprachen ein Komit
 
 ### 8.1 Verzögerte Auswertung (Lazy Evaluation)
 
-Haskell verwendet standardmäßig eine **verzögerte Auswertung**, bei der Ausdrücke nicht ausgewertet werden, bis ihr Wert wirklich benötigt wird. Dadurch lassen sich Konzepte wie unendliche Listen natürlich darstellen. Dies entspricht der „Normalordnungsreduktion (Normal-order reduction)“ im Lambda-Kalkül.
+Haskell verwendet standardmäßig eine **verzögerte Auswertung**, bei der Ausdrücke nicht ausgewertet werden, bis ihr Wert wirklich benötigt wird. Dadurch lassen sich Konzepte wie unendliche Listen natürlich darstellen. Dies entspricht der „Normalordnungsreduktion (Normal-order reduction)“ im [Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)-Kalkül.
 
 ```haskell
 -- Beispiel für eine unendliche Liste in Haskell
@@ -225,8 +225,8 @@ Mit der IO-Monade ist es gelungen, „Berechnung“ und „Ausführung mit Seite
 
 ## 9. Fazit: Von der Mathematik zur Softwareentwicklung
 
-Das **Lambda-Kalkül**, das Alonzo Church in den 1930er Jahren nur mit Stift und Papier skizzierte, ist keineswegs eine veraltete Theorie. Es war ein Überdenken der Frage „Was ist Berechnung?“ aus einem anderen Blickwinkel als dem der Turingmaschine und wurde durch Lisp in die programmierbare Welt entlassen. Über die wunderschöne Verbindung zur Logik durch die Curry-Howard-Korrespondenz fand es seinen Niederschlag in modernen Sprachen mit robusten und mächtigen Typsystemen wie Haskell.
+Das **[Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)-Kalkül**, das Alonzo Church in den 1930er Jahren nur mit Stift und Papier skizzierte, ist keineswegs eine veraltete Theorie. Es war ein Überdenken der Frage „Was ist Berechnung?“ aus einem anderen Blickwinkel als dem der Turingmaschine und wurde durch Lisp in die programmierbare Welt entlassen. Über die wunderschöne Verbindung zur Logik durch die Curry-Howard-Korrespondenz fand es seinen Niederschlag in modernen Sprachen mit robusten und mächtigen Typsystemen wie Haskell.
 
-Wenn wir heute in React `map` und `filter` verwenden, in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) algebraische Datentypen einsetzen und in Python Lambda-Ausdrücke schreiben, profitieren wir alle von Churchs großartigem intellektuellen Erbe.
+Wenn wir heute in React `map` und `filter` verwenden, in [Rust](https://kenji.blog/de/p/webassembly-wasm-current-future/) algebraische Datentypen einsetzen und in Python [Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)-Ausdrücke schreiben, profitieren wir alle von Churchs großartigem intellektuellen Erbe.
 
 Die funktionale Programmierung ist nicht nur ein Programmierstil, sondern eine **mathematische Philosophie, die dem eigentlichen Kern der Berechnung näher kommt**.

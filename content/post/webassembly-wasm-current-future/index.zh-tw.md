@@ -247,10 +247,10 @@ flowchart TD
     B -->|"安全性驗證與權限檢查"| C["主機 OS (如 Linux, Windows)"]
 ```
 
-## 7.2 Docker 容器的替代與共存
+## 7.2 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 容器的替代與共存
 Docker 的發明者 Solomon Hykes 曾發表過引發熱議的言論：「如果在 2008 年就存在 Wasm 與 WASI，那我們就沒必要創造 Docker 了。」
 Wasm 具備比容器更輕量、啟動更快（僅需幾毫秒），且不依賴特定 OS 或 CPU 架構的強大優勢。
-目前，在 Kubernetes 上直接編排 Wasm 模組來取代 Docker 容器的專案（如 Kwasm 和 Spin 等）正活躍地開發中。
+目前，在 [Kubernetes](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/) 上直接編排 Wasm 模組來取代 Docker 容器的專案（如 Kwasm 和 Spin 等）正活躍地開發中。
 
 ---
 

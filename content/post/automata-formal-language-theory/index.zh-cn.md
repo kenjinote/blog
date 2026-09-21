@@ -288,7 +288,7 @@ flowchart LR
 
 许多编程语言（如 Java, Python, Ruby, JavaScript 等）内置的正则表达式引擎，并非理论上纯粹的 DFA，而是基于带有回溯的 NFA（或回溯引擎）来实现的。
 
-因此，当针对某些特定模式的正则表达式（如 `(a+)+$` 等）输入精心构造的字符串时，计算量会呈指数级爆炸，导致系统冻结，从而引发 **ReDoS** （ Regular Expression Denial of Service ）漏洞。如果了解这些理论，就能进行逻辑思考，弄明白为什么会发生回溯，以及该如何重写模式以退回到相当于安全 DFA 的处理方式。
+因此，当针对某些特定模式的正则表达式（如 `(a+)+$` 等）输入精心构造的字符串时，计算量会呈指数级爆炸，导致系统冻结，从而引发 **ReDoS** （ Regular Expression Denial of [Service](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/) ）漏洞。如果了解这些理论，就能进行逻辑思考，弄明白为什么会发生回溯，以及该如何重写模式以退回到相当于安全 DFA 的处理方式。
 
 ---
 

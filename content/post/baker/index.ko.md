@@ -59,7 +59,7 @@ tags: ["Alan Baker", "정수론", "필즈상", "초월수론"]
 **베이커의 정리(Baker's Theorem, 1966)** :
 $\alpha_1, \alpha_2, \ldots, \alpha_n$ 을 0이 아닌 대수적 수라 하고, $\log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ 이 유리수체 $\mathbb{Q}$ 위에서 일차독립이라고 가정하자. 이때, $1, \log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ 은 대수적 수체 $\overline{\mathbb{Q}}$ 위에서 일차독립이다.
 
-즉, 임의의 0이 아닌 대수적 수 $\beta_0, \beta_1, \ldots, \beta_n$ 에 대해 다음의 1차 형식 $\Lambda$ 는 결코 0이 되지 않음을 증명했습니다.
+즉, 임의의 0이 아닌 대수적 수 $\beta_0, \beta_1, \ldots, \beta_n$ 에 대해 다음의 1차 형식 $\[Lambda](https://kenji.blog/ko/p/serverless-architecture-aws-lambda-cold-start/)$ 는 결코 0이 되지 않음을 증명했습니다.
 
 $$ \Lambda = \beta_0 + \beta_1 \log \alpha_1 + \cdots + \beta_n \log \alpha_n \neq 0 $$
 

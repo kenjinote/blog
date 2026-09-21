@@ -256,7 +256,7 @@ Wenn String-Literale als Schlüssel für `std::unordered_map` in C++ oder `HashM
 
 ---
 
-## 3. Automatisierung der Build-Pipeline mit tasks.json
+## 3. Automatisierung der Build-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) mit tasks.json
 
 Um als IDE perfekt zu funktionieren, sollten Sie nicht nur die GUI des Editors nutzen, sondern auch die VSCode-Task-Funktionalität (`.vscode/tasks.json`). Damit können Sie den Build- und Test-Vorgang mit einer einzigen Tastenkombination (standardmäßig `Ctrl+Shift+B`) ausführen.
 

@@ -60,7 +60,7 @@ Jika menemukan `svchost.exe` yang mencurigakan, klik dua kali pada proses terseb
 ### 2.3 Menganalisis Interupsi Perangkat Keras dan Lonjakan CPU 100%
 Ketika seluruh sistem membeku selama beberapa detik atau audio terputus-putus (stuttering), jika Anda melihat ke Task Manager, "System Interrupts" mungkin sedang menguras CPU.
 
-Dalam penjadwalan Windows, interupsi perangkat keras (ISR: Interrupt Service Routine) dan DPC (Deferred Procedure Call) dieksekusi dengan prioritas yang lebih tinggi (IRQL: Interrupt Request Level) daripada thread pengguna normal. Artinya, jika sebuah driver yang buruk memperpanjang DPC, CPU tidak dapat mengeksekusi tugas lain sama sekali pada core tersebut.
+Dalam penjadwalan Windows, interupsi perangkat keras (ISR: Interrupt [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/) Routine) dan DPC (Deferred Procedure Call) dieksekusi dengan prioritas yang lebih tinggi (IRQL: Interrupt Request Level) daripada thread pengguna normal. Artinya, jika sebuah driver yang buruk memperpanjang DPC, CPU tidak dapat mengeksekusi tugas lain sama sekali pada core tersebut.
 
 Jika penggunaan CPU dari `Interrupts` atau `DPCs` di bagian atas daftar proses ProcExp tinggi, gunakan alat ini bersama dengan Windows Performance Analyzer (WPA) untuk mengidentifikasi driver penyebabnya (`.sys`). Perhitungan waktu CPU dapat dirumuskan sebagai berikut:
 
@@ -141,7 +141,7 @@ flowchart LR
 ### 4.1 Tab Penting untuk Diperiksa dan Fitur Lanjutan
 *   **Logon**: Kunci Run/RunOnce standar dan folder startup.
 *   **Scheduled Tasks**: Penjadwal Tugas (Task Scheduler) Windows. Malware sering kali membuat tugas palsu yang disamarkan sebagai "Adobe Update" atau "Google Update".
-*   **Services / Drivers**: Driver yang berjalan dalam mode kernel. Anda dapat menonaktifkan file `.sys` mencurigakan yang menyebabkan lonjakan CPU 100% di sini.
+*   **[Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)s / Drivers**: Driver yang berjalan dalam mode kernel. Anda dapat menonaktifkan file `.sys` mencurigakan yang menyebabkan lonjakan CPU 100% di sini.
 *   **WMI**: Lokasi persistensi untuk fileless malware yang menggunakan filter peristiwa WMI (Windows Management Instrumentation) atau konsumen. Sering kali terlewatkan.
 *   **AppInit_DLLs / KnownDLLs**: Daftar DLL yang disuntikkan secara paksa setiap kali aplikasi dimulai. Ini merupakan sarang untuk hook melalui DLL Injection.
 

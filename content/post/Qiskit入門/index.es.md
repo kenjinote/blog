@@ -68,7 +68,7 @@ Si tenemos 2 cúbits, podemos crear una superposición de 4 estados: $|00\rangle
 
 La propiedad más poderosa y misteriosa en la computación cuántica es el **entrelazamiento cuántico (Entanglement)**. Este fenómeno, que Einstein llamó "acción fantasmal a distancia", es una propiedad donde dos o más cúbits están fuertemente conectados entre sí, y cuando se determina el estado de uno de ellos, el estado del otro se determina instantáneamente, sin importar cuán lejos estén físicamente.
 
-Uno de los estados entrelazados más famosos, el estado $\Phi^+$ de los "estados de Bell (Bell State)", se expresa de la siguiente manera:
+Uno de los estados entrelazados más famosos, el estado $\Phi^+$ de los "estados de Bell (Bell [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/))", se expresa de la siguiente manera:
 
 $$
 |\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}

@@ -15,7 +15,7 @@ tags:
   - "리덕스"
 ---
 
-웹 프론트엔드 개발에서 가장 논쟁의 대상이 되고, 또 가장 계속해서 진화해 온 영역이 바로 '상태 관리(State Management)'입니다. 현대의 웹 애플리케이션은 단순한 문서 표시를 넘어 데스크톱 애플리케이션에 필적하는 복잡한 인터랙션을 가진 소프트웨어로 변모했습니다. 그에 따라 애플리케이션의 상태를 어떻게 관리하고 UI와 동기화할 것인지는 모든 프론트엔드 엔지니어가 직면하는 최대의 과제가 되었습니다.
+웹 프론트엔드 개발에서 가장 논쟁의 대상이 되고, 또 가장 계속해서 진화해 온 영역이 바로 '상태 관리([State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) Management)'입니다. 현대의 웹 애플리케이션은 단순한 문서 표시를 넘어 데스크톱 애플리케이션에 필적하는 복잡한 인터랙션을 가진 소프트웨어로 변모했습니다. 그에 따라 애플리케이션의 상태를 어떻게 관리하고 UI와 동기화할 것인지는 모든 프론트엔드 엔지니어가 직면하는 최대의 과제가 되었습니다.
 
 본 기사에서는 프론트엔드 상태 관리의 역사를 되돌아보고, 각 시대의 과제와 해결책, 그리고 미래를 향한 패러다임 전환(특히 Signals와 Reactivity의 진화)에 대해 깊고 상세하게 파헤쳐 보겠습니다.
 
@@ -140,7 +140,7 @@ Redux는 다음의 세 가지 엄격한 원칙을 바탕으로 합니다.
 
 1.  **Single source of truth (신뢰할 수 있는 단일 출처)**:
     애플리케이션 전체의 상태는 단일 스토어(Store) 내에 있는 객체 트리로서 보존된다.
-2.  **State is read-only (상태는 읽기 전용)**:
+2.  **[State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) is read-only (상태는 읽기 전용)**:
     상태를 변경하는 유일한 방법은 무슨 일이 일어났는지를 나타내는 Action 객체를 발행(Dispatch)하는 것이다.
 3.  **Changes are made with pure functions (변경은 순수 함수로 수행)**:
     Action에 의해 상태가 어떻게 변경될지를 지정하기 위해 Reducer라고 불리는 순수 함수를 작성한다.
@@ -237,7 +237,7 @@ React의 Context API에는 "Context의 값이 업데이트되면 해당 Context�
 
 React는 기본적으로 '탑다운(Top-down)' 렌더링 모델을 채택하고 있기 때문에 글로벌한 상태 변경이 트리 전체의 불필요한 재렌더링을 유발하기 쉽다는 본질적인 과제가 드러났습니다.
 
-## 7. 상태의 분리: Server State와 Client State
+## 7. 상태의 분리: Server [State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)와 Client State
 
 이 무렵부터 상태 관리에 있어서 중요한 패러다임 전환이 일어났습니다. 바로 "모든 상태를 단일 글로벌 스토어에 넣어서는 안 된다"라는 깨달음입니다.
 특히 서버에서 가져온 데이터(Server State)는 프론트엔드에서만 완결되는 UI 상태(Client State)와는 그 성질이 근본적으로 다릅니다.
@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 이 라이브러리들은 "서버의 상태를 로컬에 캐시하고 필요에 따라 동기화한다"라는 복잡한 처리를 추상화했습니다.
 그 결과 Redux 등의 글로벌 스토어에서 관리해야 할 데이터는 '순수한 클라이언트 상태'로 급감했고, 상태 관리에 대한 부담은 크게 줄어들었습니다.
 
-## 8. Atomic State Management: Recoil과 Jotai
+## 8. Atomic [State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) Management: Recoil과 Jotai
 
 Server State가 분리된 후, 남겨진 Client State를 어떻게 효율적으로 관리할 것인가 하는 새로운 경쟁이 시작되었습니다.
 React의 렌더링 모델(탑다운)과 Context API의 성능 문제를 해결하기 위해 탄생한 것이 **Atomic State Management** 라는 접근법입니다.
@@ -444,7 +444,7 @@ React Compiler는 빌드 시에 React 컴포넌트의 코드를 정적 분석하
 
 ## 13. 결론: 상태 관리는 어디로 향하고 있는가?
 
-MVC의 혼란에서 시작해 Flux/Redux로 인한 예측 가능성 획득, Hooks에 의한 단순화, Server State의 분리, Atomic이나 Proxy에 의한 효율화, 그리고 Signals에 의한 세립도 리액티비티에 이르기까지.
+MVC의 혼란에서 시작해 Flux/Redux로 인한 예측 가능성 획득, Hooks에 의한 단순화, Server [State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/)의 분리, Atomic이나 Proxy에 의한 효율화, 그리고 Signals에 의한 세립도 리액티비티에 이르기까지.
 
 약 15년에 걸친 프론트엔드 상태 관리의 역사를 돌아보면 하나의 명확한 트렌드가 보입니다. 그것은 **"보일러플레이트를 줄이고 개발자의 인지 부하를 낮추면서, 이면의 시스템(프레임워크나 컴파일러)이 성능을 자동으로 최적화하는 방향으로 진화하고 있다"** 는 것입니다.
 

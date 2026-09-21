@@ -354,7 +354,7 @@ sequenceDiagram
 ## 1. データベースへの保存は暗号化を必須とする
 アクセストークン（`xoxb-...`）は、Slackワークスペースへの「合鍵」そのものです。データベース（MySQL, PostgreSQL, MongoDBなど）に平文（プレーンテキスト）で保存してはいけません。万が一SQLインジェクションなどでデータベースが流出した場合、全顧客のSlackが乗っ取られる大惨事となります。
 
-必ずアプリケーションレイヤーで **AES-256-GCM** などの強力な対称鍵暗号を用いて暗号化してからDBに保存してください。暗号化/復号のためのマスターキーは、AWS KMS（Key Management Service）や GCP Cloud KMS などのセキュアな鍵管理サービスを利用して厳格に管理します。
+必ずアプリケーションレイヤーで **AES-256-GCM** などの強力な対称鍵暗号を用いて暗号化してからDBに保存してください。暗号化/復号のためのマスターキーは、AWS KMS（Key Management [Service](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)）や GCP Cloud KMS などのセキュアな鍵管理サービスを利用して厳格に管理します。
 
 ## 2. トークンローテーション（Token Rotation）
 長期有効なトークンを使い続けることはリスクを伴います。最新のOAuth実装では「リフレッシュトークン（Refresh Token）」を利用し、数時間ごとに新しいアクセストークンを発行し直す仕組み（Token Rotation）を取り入れることが推奨されます。Slack APIでもオプション設定でトークンローテーションを有効化することが可能です。

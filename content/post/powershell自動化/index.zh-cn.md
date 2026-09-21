@@ -34,7 +34,7 @@ description: '利用PowerShell完全自动化日常Windows任务的实用指南�
 - **AllSigned**: 仅允许执行由受信任的发布者签名的脚本。
 - **RemoteSigned**: 可以在本地直接执行本地创建的脚本，但从互联网下载的脚本需要签名。
 - **Unrestricted**: 可以执行所有脚本，但在执行从互联网下载的脚本时会显示警告。
-- **Bypass**: 没有任何阻止，也不显示警告。常用于临时脚本执行（如CI/CD流水线）。
+- **Bypass**: 没有任何阻止，也不显示警告。常用于临时脚本执行（如[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线）。
 
 在企业本地环境中通过任务计划程序等运行自制脚本时，最实用且最安全的设置是 `RemoteSigned`。以管理员权限启动PowerShell，然后执行以下命令。
 
@@ -108,7 +108,7 @@ try {
 
 ## 与任务计划程序的集成（Register-ScheduledTask）
 
-脚本完成后，接下来需要一种机制来定期执行该脚本。在Windows中，最可靠的机制是“任务计划程序”。虽然可以通过图形界面（`taskschd.msc`）进行设置，但从将基础设施指南作为代码（Infrastructure as Code）的角度来看，我们将讲解使用PowerShell cmdlet来注册任务的方法。
+脚本完成后，接下来需要一种机制来定期执行该脚本。在Windows中，最可靠的机制是“任务计划程序”。虽然可以通过图形界面（`taskschd.msc`）进行设置，但从将基础设施指南作为代码（[Infrastructure as Code](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)）的角度来看，我们将讲解使用PowerShell cmdlet来注册任务的方法。
 
 PowerShell提供了 `ScheduledTasks` 模块，使用它可以详细定义触发器（何时执行）、操作（执行什么）以及主体（以哪个用户权限执行）。
 

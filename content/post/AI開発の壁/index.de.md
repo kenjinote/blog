@@ -89,7 +89,7 @@ Kurz gesagt,
 Also, was sollen wir tun?
 
 * Im Moment ist der Bereich "oberhalb der 8. Station" noch das Terrain des Menschen, also lasst uns das verfeinern.
-* Konzentrieren Sie sich auf das wesentliche Benutzerverständnis und das Service-Design.
+* Konzentrieren Sie sich auf das wesentliche Benutzerverständnis und das [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)-Design.
 * Denken Sie über "was Wert hat" nach, anstatt über "was erstellt werden kann".
 * Erkunden Sie stattdessen Wege, um Wert zu liefern, "ohne auf das Format einer App beschränkt zu sein".
 

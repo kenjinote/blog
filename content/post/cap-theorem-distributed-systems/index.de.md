@@ -269,7 +269,7 @@ Die Sicherheit von [Raft](https://kenji.blog/de/p/byzantine-generals-problem-con
 2.  **Leader Append-Only**: Der Leader überschreibt oder löscht die Einträge in seinem eigenen Protokoll nicht, sondern fügt nur neue hinzu.
 3.  **Log Matching**: Wenn zwei Protokolle Einträge mit demselben Index und demselben Term enthalten, sind alle vorherigen Einträge identisch.
 
-Dies eliminiert mathematisch und algorithmisch Dateninkonsistenzen in einer verteilten Umgebung vollständig. Der Backend-Datenspeicher von Kubernetes, `etcd`, verwendet ebenfalls [Raft](https://kenji.blog/de/p/byzantine-generals-problem-consensus/), um eine strikte Zustandsverwaltung des Clusters zu realisieren.
+Dies eliminiert mathematisch und algorithmisch Dateninkonsistenzen in einer verteilten Umgebung vollständig. Der Backend-Datenspeicher von [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/), `etcd`, verwendet ebenfalls [Raft](https://kenji.blog/de/p/byzantine-generals-problem-consensus/), um eine strikte Zustandsverwaltung des Clusters zu realisieren.
 
 ## 8. Microservices und Transaktionen
 

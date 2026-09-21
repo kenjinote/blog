@@ -69,7 +69,7 @@ Sensitivitas huruf besar/kecil (Case Sensitivity) dalam sistem file juga merupak
 
 Saat mengembangkan di Mac atau Windows, meskipun Anda menentukannya dengan huruf kecil di kode sumber seperti `#include "myclass.h"` (atau `import "./myclass"`), jika file sebenarnya adalah `MyClass.h`, proses build akan berhasil karena OS lingkungan lokal tersebut bersifat Case-Insensitive.
 
-Namun, ketika Anda melakukan komit pada kode ini dan menjalankan build di server CI/CD (biasanya Linux seperti Ubuntu), itu akan menghasilkan kesalahan kompilasi "file tidak ditemukan" karena sistem file ext4 Linux bersifat Case-Sensitive.
+Namun, ketika Anda melakukan komit pada kode ini dan menjalankan build di server [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) (biasanya Linux seperti Ubuntu), itu akan menghasilkan kesalahan kompilasi "file tidak ditemukan" karena sistem file ext4 Linux bersifat Case-Sensitive.
 
 ### Perspektif Algoritmik: Kompleksitas Komputasi Pencarian File dan Normalisasi
 
@@ -302,11 +302,11 @@ Dengan mengisolasi kode spesifik platform di satu tempat (biasanya di direktori 
 
 ---
 
-## 8. Verifikasi Lintas Platform di CI/CD (Matrix Build)
+## 8. Verifikasi Lintas Platform di [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) (Matrix Build)
 
-Tidak peduli seberapa hati-hati pengembang menulis kode di lingkungan lokal, benteng pertahanan terakhir untuk kompatibilitas lintas platform adalah **Pipeline CI/CD (Continuous Integration / Continuous Deployment)**. Kasus di mana sebuah kode dapat berjalan di lingkungan lokal (seperti Mac) tetapi gagal dikompilasi di OS lain (Windows) masih sangat sering terjadi.
+Tidak peduli seberapa hati-hati pengembang menulis kode di lingkungan lokal, benteng pertahanan terakhir untuk kompatibilitas lintas platform adalah **[Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) CI/CD (Continuous Integration / Continuous Deployment)**. Kasus di mana sebuah kode dapat berjalan di lingkungan lokal (seperti Mac) tetapi gagal dikompilasi di OS lain (Windows) masih sangat sering terjadi.
 
-Manfaatkan alat CI modern seperti GitHub Actions atau GitLab CI, dan aturlah Matrix Build (Build Matriks) yang akan **mengeksekusi proses build dan pengujian (test) secara paralel di semua lingkungan Windows, macOS, dan Linux** setiap kali sebuah Pull Request dibuat.
+Manfaatkan alat CI modern seperti [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) atau GitLab CI, dan aturlah Matrix Build (Build Matriks) yang akan **mengeksekusi proses build dan pengujian (test) secara paralel di semua lingkungan Windows, macOS, dan Linux** setiap kali sebuah Pull Request dibuat.
 
 ```yaml
 # Contoh konfigurasi CI Lintas Platform menggunakan GitHub Actions
@@ -338,7 +338,7 @@ jobs:
       run: pytest -v
 ```
 
-Visualisasi alur kerja CI/CD ini dapat dilihat di bawah ini.
+Visualisasi alur kerja [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) ini dapat dilihat di bawah ini.
 
 ```mermaid
 sequenceDiagram
@@ -378,10 +378,10 @@ Pengembangan lintas platform untuk Mac dan Windows menghadirkan berbagai macam t
 2.  **Sensitivitas Huruf Besar/Kecil**: Jangan bergantung pada perilaku "tidak membedakan huruf besar/kecil" di macOS/Windows. Tetapkan konvensi penamaan file yang ketat, dan biasakan pencocokan huruf (case matching) yang ketat.
 3.  **Karakter Pemisah Jalur**: Gunakan API manipulasi jalur standar bahasa (`std::filesystem`, `pathlib`, modul `path`) untuk menyerap perbedaan OS.
 4.  **Pengkodean**: Selalu tentukan UTF-8, dan hilangkan sepenuhnya pengaruh CP932 yang merupakan perilaku default di Windows.
-5.  **Variabel Lingkungan & Shell**: Gunakan alat abstraksi seperti `cross-env`, atau satukan lingkungan eksekusi ke WSL/Docker dll.
+5.  **Variabel Lingkungan & Shell**: Gunakan alat abstraksi seperti `cross-env`, atau satukan lingkungan eksekusi ke WSL/[Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) dll.
 6.  **Sistem Build**: Untuk C/C++, gunakan meta build system seperti CMake untuk menghasilkan rantai alat pembangun asli (native toolchain) yang dioptimalkan untuk setiap OS.
 7.  **Kode Spesifik OS**: Desain Lapisan Abstraksi OS (OSAL) untuk memisahkan dan mengisolasi logika yang bergantung pada platform.
-8.  **CI/CD**: Terapkan Matrix Build, otomatiskan build yang bersih dan pengujian pada semua OS target, serta hilangkan ketergantungan pada individu.
+8.  **[CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)**: Terapkan Matrix Build, otomatiskan build yang bersih dan pengujian pada semua OS target, serta hilangkan ketergantungan pada individu.
 
 Saat ini, framework (kerangka kerja) canggih seperti Electron, Tauri, dan .NET dapat mengatasi banyak perbedaan ini. Namun, pemahaman yang kuat tentang perilaku bawaan OS yang mendasarinya (seperti sistem file dan pengkodean) masih sangat diperlukan ketika menyelesaikan masalah kinerja yang serius atau bug yang rumit. Dengan membagikan dan menerapkan praktik-praktik terbaik ini secara menyeluruh ke seluruh tim sejak tahap awal proyek, Anda dapat secara drastis mengurangi waktu debugging (pencarian bug) yang sia-sia akibat perbedaan OS, dan fokus pada penciptaan nilai perangkat lunak yang sesungguhnya.
 

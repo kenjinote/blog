@@ -59,7 +59,7 @@ Baker mencapai prestasi yang menakjubkan dengan menggeneralisasi hasil yang dibu
 **Teorema Baker (1966)**:
 Misalkan $\alpha_1, \alpha_2, \ldots, \alpha_n$ adalah bilangan aljabar tak nol, dan asumsikan bahwa $\log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ independen secara linier di atas lapangan rasional $\mathbb{Q}$. Maka, $1, \log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ independen secara linier di atas lapangan bilangan aljabar $\overline{\mathbb{Q}}$.
 
-Dengan kata lain, untuk sebarang bilangan aljabar tak nol $\beta_0, \beta_1, \ldots, \beta_n$, ia membuktikan bahwa bentuk linier berikut $\Lambda$ tidak pernah sama dengan $0$.
+Dengan kata lain, untuk sebarang bilangan aljabar tak nol $\beta_0, \beta_1, \ldots, \beta_n$, ia membuktikan bahwa bentuk linier berikut $\[Lambda](https://kenji.blog/id/p/serverless-architecture-aws-lambda-cold-start/)$ tidak pernah sama dengan $0$.
 
 $$ \Lambda = \beta_0 + \beta_1 \log \alpha_1 + \cdots + \beta_n \log \alpha_n \neq 0 $$
 

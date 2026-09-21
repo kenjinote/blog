@@ -103,7 +103,7 @@ Incluso después de la guerra, continuó teniendo una fuerte influencia como má
 Hay innumerables anécdotas en torno al cerebro sobrehumano de von Neumann.
 
 * **Velocidad de cálculo asombrosa**: Para verificar si los resultados calculados por ENIAC (una computadora electrónica temprana) eran correctos, von Neumann realizó cálculos mentales para comprobarlos, y la leyenda dice que von Neumann terminó de calcular más rápido.
-* **Memoria fotográfica perfecta**: Podía memorizar el contenido de libros y guías telefónicas palabra por palabra después de leerlos una vez. Cuando se le pidió que "recitara el comienzo de Historia de dos ciudades" décadas después, se dice que continuó recitándolo a la perfección durante decenas de minutos hasta que su amigo lo detuvo.
+* **Memoria fotográfica perfecta**: [Pod](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/)ía memorizar el contenido de libros y guías telefónicas palabra por palabra después de leerlos una vez. Cuando se le pidió que "recitara el comienzo de Historia de dos ciudades" décadas después, se dice que continuó recitándolo a la perfección durante decenas de minutos hasta que su amigo lo detuvo.
 * **Conducción y ruido**: Era un conductor muy malo y con frecuencia causaba accidentes. Hay una anécdota en la que dio la excusa: "Los árboles no se apartaron de mi camino". También prefería los entornos ruidosos al silencio y realizaba complejas investigaciones matemáticas mientras reproducía música de marcha alemana a un volumen alto en su oficina.
 * **Chiste marciano**: Sus compañeros físicos bromeaban medio en serio: "Von Neumann es un marciano que vive en la Tierra y finge ser humano. Sin embargo, es capaz de imitar perfectamente a un humano".
 

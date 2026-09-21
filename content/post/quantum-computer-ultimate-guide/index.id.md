@@ -45,7 +45,7 @@ $$
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
 $$
 
-Keadaan murni (Pure State) $|\Psi\rangle$ dari sistem ini direpresentasikan sebagai kombinasi linear (superposisi) dari $2^N$ vektor basis. Di sini, dengan menggunakan notasi Bra-ket dari Dirac (Bra-ket notation), keadaan kuantum arbitrer dapat diekspansi sebagai berikut.
+Keadaan murni (Pure [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/)) $|\Psi\rangle$ dari sistem ini direpresentasikan sebagai kombinasi linear (superposisi) dari $2^N$ vektor basis. Di sini, dengan menggunakan notasi Bra-ket dari Dirac (Bra-ket notation), keadaan kuantum arbitrer dapat diekspansi sebagai berikut.
 
 $$
 |\Psi\rangle = \sum_{x=0}^{2^N-1} c_x |x\rangle
@@ -537,7 +537,7 @@ $$
 
 ## 3.6 Keruntuhan Fungsi Gelombang akibat Pengukuran (Reduksi Keadaan) dan Dekoherensi
 
-Aksioma pengukuran mencakup langkah krusial dan paling diperdebatkan tentang apa yang terjadi pada keadaan sistem "setelah" pengukuran. Ini adalah fenomena yang disebut "Keruntuhan Fungsi Gelombang" (Wavefunction collapse) atau "Reduksi Keadaan" (State reduction). Proses ini, yang dikenal sebagai postulat proyeksi von Neumann (Projection postulate), dirumuskan sebagai berikut:
+Aksioma pengukuran mencakup langkah krusial dan paling diperdebatkan tentang apa yang terjadi pada keadaan sistem "setelah" pengukuran. Ini adalah fenomena yang disebut "Keruntuhan Fungsi Gelombang" (Wavefunction collapse) atau "Reduksi Keadaan" ([State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) reduction). Proses ini, yang dikenal sebagai postulat proyeksi von Neumann (Projection postulate), dirumuskan sebagai berikut:
 
  **Postulat Proyeksi** :
 Keadaan sistem **$| \psi' \rangle$** sesaat setelah pengukuran yang menghasilkan nilai eigen $a_k$, berubah seketika (runtuh) menjadi keadaan yang telah dikenai operator proyeksi $P_k$ yang sesuai pada vektor keadaan awal dan dinormalisasi kembali.
@@ -787,7 +787,7 @@ T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix} = \begin{pmatrix} 1 & 
 $$
 
 Jika kita mengeluarkan fase global **$e^{i\pi/8}$** , komponen diagonalnya menjadi **$e^{-i\pi/8}$** dan **$e^{i\pi/8}$** , sehingga secara historis gerbang ini juga disebut gerbang **$\pi/8$** .
-Gerbang T tidak termasuk dalam grup Clifford, dan menghancurkan efisiensi simulasi klasik. Namun, terdapat teorema yang sangat penting dalam teori komputasi kuantum bahwa dengan menambahkan satu saja gerbang T ini ke dalam grup Clifford, terbentuklah "Set Gerbang Kuantum Universal (Universal Quantum Gate Set)" yang dapat mengaproksimasi transformasi unitari apa pun pada qubit tunggal dengan presisi sembarang. Dalam komputasi kuantum yang toleran terhadap kesalahan (fault-tolerant), karena sulit untuk menjalankan gerbang T secara langsung pada kode koreksi kesalahan, ia diimplementasikan menggunakan metode yang sangat mahal yang disebut "Distilasi Keadaan Ajaib (Magic State Distillation)".
+Gerbang T tidak termasuk dalam grup Clifford, dan menghancurkan efisiensi simulasi klasik. Namun, terdapat teorema yang sangat penting dalam teori komputasi kuantum bahwa dengan menambahkan satu saja gerbang T ini ke dalam grup Clifford, terbentuklah "Set Gerbang Kuantum Universal (Universal Quantum Gate Set)" yang dapat mengaproksimasi transformasi unitari apa pun pada qubit tunggal dengan presisi sembarang. Dalam komputasi kuantum yang toleran terhadap kesalahan (fault-tolerant), karena sulit untuk menjalankan gerbang T secara langsung pada kode koreksi kesalahan, ia diimplementasikan menggunakan metode yang sangat mahal yang disebut "Distilasi Keadaan Ajaib (Magic [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Distillation)".
 
 ## 4.5 Representasi Fungsi Eksponensial dan Universalitas dari Gerbang Rotasi Sembarang
 
@@ -1000,7 +1000,7 @@ Berdasarkan linearitas, aksi ini diperluas ke keadaan superposisi sembarang.
 
 ## 5.2 Representasi Matematis Keadaan Bell (Keadaan Terikat Maksimal)
 
-Keadaan dalam sistem kuantum banyak-benda secara garis besar diklasifikasikan menjadi dua: "keadaan dapat terpisahkan (Separable State)" dan "keadaan terikat (Entangled State)".
+Keadaan dalam sistem kuantum banyak-benda secara garis besar diklasifikasikan menjadi dua: "keadaan dapat terpisahkan (Separable [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/))" dan "keadaan terikat (Entangled State)".
 Ketika suatu keadaan **$|\Psi\rangle$** dapat dideskripsikan semata-mata sebagai produk tensor dari keadaan masing-masing subsistem, yaitu
 
 $$
@@ -1070,7 +1070,7 @@ $$
 \rho_A = \frac{1}{2} (|0\rangle\langle0| + |1\rangle\langle1|) = \frac{1}{2} I
 $$
 
-Hal ini berarti jika hanya qubit A yang diamati, keadaannya adalah keadaan campuran sempurna (Completely Mixed State), dan entropi von Neumann $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ bernilai maksimum yaitu $1$. Dengan kata lain, esensi dari keterikatan kuantum maksimal adalah korelasi ekstrem yang sama sekali mustahil dalam mekanika klasik: "meskipun sistem secara keseluruhan memiliki informasi lengkap (keadaan murni), ketika setiap subsistem diamati secara terpisah, informasinya menjadi sepenuhnya tidak pasti (entropi maksimum)".
+Hal ini berarti jika hanya qubit A yang diamati, keadaannya adalah keadaan campuran sempurna (Completely Mixed [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/)), dan entropi von Neumann $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ bernilai maksimum yaitu $1$. Dengan kata lain, esensi dari keterikatan kuantum maksimal adalah korelasi ekstrem yang sama sekali mustahil dalam mekanika klasik: "meskipun sistem secara keseluruhan memiliki informasi lengkap (keadaan murni), ketika setiap subsistem diamati secara terpisah, informasinya menjadi sepenuhnya tidak pasti (entropi maksimum)".
 
 ---
 
@@ -1938,7 +1938,7 @@ Rumus ini sangat sugestif. Hal ini menunjukkan bahwa fase pada keadaan qubit ke-
 
 ## 8.4 Sirkuit Kuantum untuk Pencarian Periode Menggunakan Superposisi
 
-Setelah persiapan teoretis selesai, mari kita ikuti sirkuit kuantum dari keseluruhan Algoritma Shor dan evolusi keadaan (State Evolution) pada setiap langkahnya. Algoritma ini menggunakan dua register kuantum.
+Setelah persiapan teoretis selesai, mari kita ikuti sirkuit kuantum dari keseluruhan Algoritma Shor dan evolusi keadaan ([State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Evolution) pada setiap langkahnya. Algoritma ini menggunakan dua register kuantum.
 Register pertama terdiri dari $t \approx 2 \log_2 N$ qubit, dan dimensi ruang keadaannya adalah $M = 2^t$ (kita memilih $t$ sedemikian rupa sehingga memenuhi syarat $M \ge N^2$). Register kedua memiliki $L \approx \log_2 N$ qubit dan menyimpan hasil komputasi.
 
 ```mermaid
@@ -2551,7 +2551,7 @@ Sebagai contoh, gerbang CNOT yang digunakan untuk ekstraksi sindrom akan meramba
 Filosofi desain untuk mencegah rantai kehancuran ini adalah "Komputasi Kuantum Toleransi Kesalahan (FTQC)". Persyaratan mutlak FTQC adalah bahwa "satu kesalahan fisik yang timbul dalam sistem hanya boleh merambat menjadi paling banyak satu kesalahan di dalam satu blok kode logis".
 Untuk mewujudkan hal ini, eksekusi gerbang logis sangat menuntut diterapkannya "Operasi Transversal" (Transversal Operations). Ini adalah operasi gerbang yang aman di mana qubit fisik ke-$i$ hanya berinteraksi dengan qubit fisik ke-$i$ dari blok lain (tanpa kopling silang di dalam satu blok yang sama). Namun, berdasarkan "Teorema Eastin-Knill" (Eastin-Knill Theorem), telah dibuktikan secara matematis bahwa mustahil untuk membangun himpunan gerbang kontinu untuk komputasi kuantum universal hanya dengan menggunakan operasi transversal semata.
 
-Tongkat ajaib untuk mengatasi kendala teorema ini dan merealisasikan FTQC universal adalah "Distilasi Keadaan Ajaib" (Magic State Distillation). Sejumlah besar keadaan non-Clifford yang bising/berderau (misalnya, keadaan yang bersesuaian dengan gerbang $T$ ) dipersiapkan dalam jumlah besar, lalu melalui sirkuit pendeteksi kesalahan yang hanya menggunakan operasi Clifford transversal, diekstraksilah "keadaan ajaib" (magic state) dengan kemurnian yang sangat tinggi. Selanjutnya, dengan memanfaatkan prinsip teleportasi kuantum, gerbang non-Clifford (seperti gerbang $T$ ) diterapkan secara tidak langsung ke keadaan logis. Karena proses distilasi ini mengonsumsi sumber daya (qubit fisik) yang sangat masif, dalam algoritma era FTQC, "bagaimana menekan jumlah gerbang $T$" menjadi prioritas tertinggi.
+Tongkat ajaib untuk mengatasi kendala teorema ini dan merealisasikan FTQC universal adalah "Distilasi Keadaan Ajaib" (Magic [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Distillation). Sejumlah besar keadaan non-Clifford yang bising/berderau (misalnya, keadaan yang bersesuaian dengan gerbang $T$ ) dipersiapkan dalam jumlah besar, lalu melalui sirkuit pendeteksi kesalahan yang hanya menggunakan operasi Clifford transversal, diekstraksilah "keadaan ajaib" (magic state) dengan kemurnian yang sangat tinggi. Selanjutnya, dengan memanfaatkan prinsip teleportasi kuantum, gerbang non-Clifford (seperti gerbang $T$ ) diterapkan secara tidak langsung ke keadaan logis. Karena proses distilasi ini mengonsumsi sumber daya (qubit fisik) yang sangat masif, dalam algoritma era FTQC, "bagaimana menekan jumlah gerbang $T$" menjadi prioritas tertinggi.
 
 Puncak dari semua upaya teoretis ini adalah "Teorema Ambang Batas Kuantum" (Quantum Threshold Theorem).
 Teorema ini, yang dibuktikan oleh Dorit Aharonov, Michael Ben-Or, dan lainnya, menyatakan dengan tegas sebagai berikut:

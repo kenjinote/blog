@@ -50,7 +50,7 @@ WebAssemblyは以下の設計目標を掲げています。
 
 では、具体的にCやRustのコードがどのようにしてブラウザ上で実行されるのでしょうか。そのプロセスを段階的に見ていきましょう。
 
-## 2.1 コンパイルパイプライン
+## 2.1 コンパイル[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)
 
 CやRustのような言語は、通常、OSやCPUアーキテクチャに依存したマシン語にコンパイルされます。しかしWebAssemblyの場合、ターゲットアーキテクチャとして「wasm32」などのWasm用アーキテクチャを指定します。
 
@@ -246,10 +246,10 @@ flowchart TD
     B -->|安全性の検証・権限チェック| C[ホスト OS e.g. Linux, Windows]
 ```
 
-## 7.2 Dockerコンテナとの代替・共存
+## 7.2 [Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)との代替・共存
 Dockerの発明者であるSolomon Hykes氏は、「もし2008年にWasmとWASIが存在していたら、Dockerを作る必要はなかった」と発言し話題になりました。
 Wasmはコンテナよりもはるかに軽量で起動が速く（数ミリ秒）、OSやCPUアーキテクチャに依存しないという強力なメリットを持っています。
-現在では、Kubernetes上でDockerコンテナの代わりにWasmモジュールを直接オーケストレーションするプロジェクト（KwasmやSpinなど）が活発に開発されています。
+現在では、[Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)上でDockerコンテナの代わりにWasmモジュールを直接オーケストレーションするプロジェクト（KwasmやSpinなど）が活発に開発されています。
 
 ---
 

@@ -410,7 +410,7 @@ strip = true        # बाइनरी के आकार को नाटक
 
 ---
 
-## 12. CI/CD और वितरण (Publishing)
+## 12. [CI/CD](https://kenji.blog/hi/p/cicd-pipeline-github-actions-best-practices/) और वितरण (Publishing)
 
 आपके द्वारा बनाए गए टूल को दुनिया भर में वितरित करने के चरण।
 
@@ -424,9 +424,9 @@ cargo publish
 ```
 प्रकाशन के बाद, दुनिया भर के उपयोगकर्ता केवल एक कमांड `cargo install gh-stats-fetcher` के साथ आपके टूल को स्थापित करने में सक्षम होंगे।
 
-### GitHub Actions द्वारा स्वचालित रिलीज़
+### [GitHub Actions](https://kenji.blog/hi/p/cicd-pipeline-github-actions-best-practices/) द्वारा स्वचालित रिलीज़
 
-एक CI/CD पाइपलाइन बनाएं जो क्रॉस-कंपाइल की गई बाइनरी को स्वचालित रूप से GitHub रिलीज़ पर अपलोड करती है। `.github/workflows/release.yml` में निम्नलिखित कॉन्फ़िगरेशन जोड़ें। इसके साथ, केवल एक टैग को पुश करने से Linux, macOS, और Windows के लिए बाइनरी स्वचालित रूप से बन जाएगी और इसे रिलीज़ एसेट के रूप में संलग्न किया जाएगा (स्थान की कमी के कारण विस्तृत YAML विवरण यहाँ छोड़ दिया गया है, लेकिन वर्तमान में `taiki-e/upload-rust-binary-action` जैसे एक्शन का उपयोग करना सबसे अच्छा अभ्यास है)।
+एक [CI/CD](https://kenji.blog/hi/p/cicd-pipeline-github-actions-best-practices/) पाइपलाइन बनाएं जो क्रॉस-कंपाइल की गई बाइनरी को स्वचालित रूप से GitHub रिलीज़ पर अपलोड करती है। `.github/workflows/release.yml` में निम्नलिखित कॉन्फ़िगरेशन जोड़ें। इसके साथ, केवल एक टैग को पुश करने से Linux, macOS, और Windows के लिए बाइनरी स्वचालित रूप से बन जाएगी और इसे रिलीज़ एसेट के रूप में संलग्न किया जाएगा (स्थान की कमी के कारण विस्तृत YAML विवरण यहाँ छोड़ दिया गया है, लेकिन वर्तमान में `taiki-e/upload-rust-binary-action` जैसे एक्शन का उपयोग करना सबसे अच्छा अभ्यास है)।
 
 ---
 

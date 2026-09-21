@@ -68,7 +68,7 @@ Si vous avez deux qubits, vous pouvez créer une superposition de quatre états 
 
 La propriété la plus puissante et la plus mystérieuse du calcul quantique est **l'intrication quantique (Entanglement)**. Ce phénomène, appelé "action fantôme à distance" par Einstein, est la propriété selon laquelle deux ou plusieurs qubits sont si fortement liés que lorsque l'état de l'un d'eux est déterminé, l'état de l'autre est instantanément déterminé, quelle que soit la distance physique qui les sépare.
 
-L'un des états d'intrication quantique les plus célèbres, l'« état de Bell (Bell State) », l'état $\Phi^+$, est exprimé comme suit :
+L'un des états d'intrication quantique les plus célèbres, l'« état de Bell (Bell [State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/)) », l'état $\Phi^+$, est exprimé comme suit :
 
 $$
 |\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}

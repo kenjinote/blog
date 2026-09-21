@@ -317,7 +317,7 @@ sequenceDiagram
 तीनों कंपनियों ने स्पष्ट रूप से कहा है कि वे मॉडल को प्रशिक्षित करने के लिए API के माध्यम से भेजे गए डेटा (प्रॉम्प्ट और प्रतिक्रियाओं) का **उपयोग नहीं (Zero Data Retention / No Training on Customer Data)** करती हैं (※ध्यान दें कि मुफ्त उपभोक्ता-सामना (consumer-facing) वेब चैट UI के लिए नियम अलग हैं)।
 
 यदि सुरक्षा के और भी उच्च स्तर की आवश्यकता है:
-- **OpenAI**: Azure OpenAI Service के माध्यम से, आप Microsoft के एंटरप्राइज़-ग्रेड सुरक्षा, SLA और Azure Private Link का उपयोग करके एक निजी नेटवर्क कनेक्शन का लाभ उठा सकते हैं।
+- **OpenAI**: Azure OpenAI [Service](https://kenji.blog/hi/p/kubernetes-k8s-architecture-pod-service-ingress/) के माध्यम से, आप Microsoft के एंटरप्राइज़-ग्रेड सुरक्षा, SLA और Azure Private Link का उपयोग करके एक निजी नेटवर्क कनेक्शन का लाभ उठा सकते हैं।
 - **Google**: Google Cloud Vertex AI के माध्यम से, आप VPC सर्विस कंट्रोल्स का उपयोग करके सख्त नेटवर्क अलगाव और CMEK (Customer-Managed Encryption Keys) के साथ डेटा सुरक्षा का उपयोग कर सकते हैं।
 - **Anthropic**: AWS Bedrock या Google Cloud Vertex AI के माध्यम से उपयोग करके, आप क्लाउड प्रदाताओं के मजबूत सुरक्षा बुनियादी ढांचे का लाभ उठा सकते हैं।
 

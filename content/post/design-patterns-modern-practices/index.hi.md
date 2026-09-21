@@ -226,6 +226,6 @@ let result = divide(10.0, 2.0).and_then(|res| divide(res, 2.0));
 - **क्लास के बजाय फ़ंक्शंस (प्रथम-श्रेणी फ़ंक्शंस का उपयोग)**
 - **Visitor पैटर्न के बजाय पैटर्न मैचिंग और ADT**
 - **Singleton के बजाय DI कंटेनर**
-- **स्थिति परिवर्तन (State mutation) के बजाय अपरिवर्तनशीलता (Immutability) और शुद्ध फ़ंक्शन (Pure functions)**
+- **स्थिति परिवर्तन ([State](https://kenji.blog/hi/p/iac-infrastructure-as-code-terraform/) mutation) के बजाय अपरिवर्तनशीलता (Immutability) और शुद्ध फ़ंक्शन (Pure functions)**
 
 डिज़ाइन पैटर्न मरे नहीं हैं। प्रोग्रामिंग भाषाओं के विकास के साथ, वे बस अधिक परिष्कृत रूप में बदल गए हैं।

@@ -12,7 +12,7 @@ description: 'Полное руководство по настройке WSL2, 
 
 WSL2 (Windows Subsystem for Linux 2), предоставляющая нативную среду разработки Linux в Windows, стала незаменимым инструментом в современной разработке программного обеспечения. Однако существует огромная разница в производительности и удобстве разработки между использованием её по умолчанию и правильной настройкой с пониманием архитектуры.
 
-В этой статье мы подробно, в объёме более 10 000 символов, рассмотрим все этапы создания "идеальной среды разработки", востребованной профессиональными инженерами: начиная с объяснения архитектуры, лежащей в основе WSL2, и заканчивая настройками для максимальной производительности, созданием комфортной терминальной среды, бесшовной интеграцией с Docker и VS Code, а также расширенными сетевыми настройками.
+В этой статье мы подробно, в объёме более 10 000 символов, рассмотрим все этапы создания "идеальной среды разработки", востребованной профессиональными инженерами: начиная с объяснения архитектуры, лежащей в основе WSL2, и заканчивая настройками для максимальной производительности, созданием комфортной терминальной среды, бесшовной интеграцией с [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) и VS Code, а также расширенными сетевыми настройками.
 
 ---
 
@@ -256,7 +256,7 @@ VS Code на стороне Windows работает как простой "то
 Из раздела "Расширения" в VS Code установите **"WSL" (ms-vscode-remote.remote-wsl)**. После этого просто перейдите в директорию вашего проекта в терминале WSL и выполните `code .`, и VS Code на стороне Windows запустится с открытой директорией.
 
 **Важное замечание (проблема символов переноса строки):**
-Символы переноса строки в Windows и Linux отличаются (в Windows — `CRLF`, в Linux — `LF`). При разработке в WSL обязательно унифицируйте настройки `core.autocrlf` в Git и настройки файлов по умолчанию в VS Code на `LF`. Игнорирование этого приведет к загадочным ошибкам при выполнении скриптов оболочки или запуске контейнеров Docker.
+Символы переноса строки в Windows и Linux отличаются (в Windows — `CRLF`, в Linux — `LF`). При разработке в WSL обязательно унифицируйте настройки `core.autocrlf` в Git и настройки файлов по умолчанию в VS Code на `LF`. Игнорирование этого приведет к загадочным ошибкам при выполнении скриптов оболочки или запуске контейнеров [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ```bash
 # Настройка символов переноса строки Git на стороне WSL
@@ -274,7 +274,7 @@ git config --global core.autocrlf input
 
 ---
 
-## 7. Docker Desktop и оптимизация интеграции с WSL2
+## 7. [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop и оптимизация интеграции с WSL2
 
 В среде WSL2 существует два основных подхода к использованию Docker:
 
@@ -287,10 +287,10 @@ git config --global core.autocrlf input
 - Установите галочку `General` -> `Use the WSL 2 based engine`.
 - Перейдите в `Resources` -> `WSL Integration` -> установите галочку на `Enable integration with my default WSL distro` и включите переключатель для используемого дистрибутива (Ubuntu).
 
-Теперь команду `docker` можно будет вызывать прямо из терминала WSL2, а связь с демоном Docker будет осуществляться через специальную легковесную ВМ (`docker-desktop` и `docker-desktop-data`), управляемую Docker Desktop.
+Теперь команду `docker` можно будет вызывать прямо из терминала WSL2, а связь с демоном [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) будет осуществляться через специальную легковесную ВМ (`docker-desktop` и `docker-desktop-data`), управляемую [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop.
 
 ### Подход 2: Прямая установка нативного Docker Engine
-Если у вас есть корпоративные сетевые ограничения (например, чтобы избежать платы за Docker Desktop) или вы хотите минимизировать накладные расходы до предела, включите `systemd` в `/etc/wsl.conf` и установите Docker напрямую, как на обычном сервере Ubuntu.
+Если у вас есть корпоративные сетевые ограничения (например, чтобы избежать платы за Docker Desktop) или вы хотите минимизировать накладные расходы до предела, включите `systemd` в `/etc/wsl.conf` и установите [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) напрямую, как на обычном сервере Ubuntu.
 
 ```bash
 # Фрагмент официальной инструкции по установке Docker для WSL2 Ubuntu с включенным systemd
@@ -351,7 +351,7 @@ fi
 
 ## 9. Обслуживание: Оптимизация (сжатие) раздутого VHDX
 
-Один из самых больших недостатков WSL2 заключается в том, что "размер файла виртуального диска (.vhdx) в Windows не уменьшается автоматически даже после удаления образов Docker или удаления файлов". В течение длительной разработки размер файла ext4.vhdx может вырасти до десятков или сотен гигабайт.
+Один из самых больших недостатков WSL2 заключается в том, что "размер файла виртуального диска (.vhdx) в Windows не уменьшается автоматически даже после удаления образов [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) или удаления файлов". В течение длительной разработки размер файла ext4.vhdx может вырасти до десятков или сотен гигабайт.
 
 Чтобы освободить дисковое пространство, необходимо регулярно оптимизировать (Compact) VHDX со стороны Windows.
 

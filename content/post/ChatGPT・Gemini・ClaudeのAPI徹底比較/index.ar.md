@@ -317,7 +317,7 @@ sequenceDiagram
 الشركات الثلاث أعلنت صراحة أن البيانات المُرسلة عبر الـ API (المطالبات والاستجابات) **لا تُستخدم لتدريب النماذج (Zero Data Retention / No Training on Customer Data)** (ملاحظة: واجهة الدردشة المجانية للمستهلكين تختلف عن ذلك).
 
 للمتطلبات الأمنية الأعلى:
-- **OpenAI**: من خلال Azure OpenAI Service، يمكن الاستفادة من أمان مستوى المؤسسات من Microsoft، واتفاقيات مستوى الخدمة (SLA)، والاتصال بشبكة مغلقة عبر Azure Private Link.
+- **OpenAI**: من خلال Azure OpenAI [Service](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/)، يمكن الاستفادة من أمان مستوى المؤسسات من Microsoft، واتفاقيات مستوى الخدمة (SLA)، والاتصال بشبكة مغلقة عبر Azure Private Link.
 - **Google**: عبر Google Cloud Vertex AI، يمكن عزل الشبكة بصرامة باستخدام VPC Service Controls، وحماية البيانات عبر مفاتيح التشفير المدارة من قبل العميل (CMEK).
 - **Anthropic**: عبر AWS Bedrock أو Google Cloud Vertex AI، يمكن الاعتماد على البنية التحتية الأمنية القوية لموفري الخدمات السحابية.
 

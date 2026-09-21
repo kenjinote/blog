@@ -226,7 +226,7 @@ Windows Terminal 原生具备 tmux 或 screen 等终端复用器的基本功能�
 ]
 ```
 
-设置上述快捷键后，可通过 `Alt + Shift + 方向键` 调整窗格大小，通过 `Alt + 方向键` 瞬间在窗格间切换焦点。这样就可以实现高级的并行作业体验：在一个窗格中启动 Node.js 本地服务器并监控日志，在另一个窗格执行 Git 命令，同时还在第三个窗格检查 Docker 容器的状态。
+设置上述快捷键后，可通过 `Alt + Shift + 方向键` 调整窗格大小，通过 `Alt + 方向键` 瞬间在窗格间切换焦点。这样就可以实现高级的并行作业体验：在一个窗格中启动 Node.js 本地服务器并监控日志，在另一个窗格执行 Git 命令，同时还在第三个窗格检查 [Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/) 容器的状态。
 
 ## 4.1 Quake 模式（全局下拉终端）
 
@@ -250,7 +250,7 @@ wt -p "PowerShell 7" -d "C:\Projects\MyApp" ; split-pane -p "Ubuntu-22.04" -d "/
 
 # 6. 提示符进化论 1：PowerShell 与 Oh My Posh
 
-能让 Windows 环境下的标准 Shell PowerShell（特别是支持跨平台的最新版 PowerShell 7 / PowerShell Core）产生剧变的，便是“ **Oh My Posh** ”。Oh My Posh 是一款适用于各种 Shell 的自定义提示符引擎，它能以美观且直观的方式呈现当前目录、Git 分支及修改状态、Node.js 或 Python 版本、Kubernetes 上下文等开发所需的所有状态。
+能让 Windows 环境下的标准 Shell PowerShell（特别是支持跨平台的最新版 PowerShell 7 / PowerShell Core）产生剧变的，便是“ **Oh My Posh** ”。Oh My Posh 是一款适用于各种 Shell 的自定义提示符引擎，它能以美观且直观的方式呈现当前目录、Git 分支及修改状态、Node.js 或 Python 版本、[Kubernetes](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/) 上下文等开发所需的所有状态。
 
 下图展示了在启动 PowerShell 时，Oh My Posh 是如何被加载并渲染提示符的序列图。
 

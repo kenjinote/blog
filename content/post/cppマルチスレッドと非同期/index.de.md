@@ -37,7 +37,7 @@ Daher ist bei der Multithreading-Programmierung in C++ nicht nur das Hinzufügen
 
 ### Der klassische `std::thread` (C++11)
 
-Der in C++11 eingeführte `std::thread` ist die grundlegendste Klasse, um Funktionen oder Lambda-Ausdrücke in einem neuen Thread auszuführen.
+Der in C++11 eingeführte `std::thread` ist die grundlegendste Klasse, um Funktionen oder [Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)-Ausdrücke in einem neuen Thread auszuführen.
 
 ```cpp
 #include <iostream>

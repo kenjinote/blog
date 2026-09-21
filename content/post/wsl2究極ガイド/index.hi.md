@@ -12,7 +12,7 @@ description: 'विंडोज़ पर आपके डेवलपमें
 
 Windows पर Linux-नेटिव डेवलपमेंट एनवायरनमेंट प्रदान करने वाला "WSL2 (Windows Subsystem for Linux 2)" आधुनिक सॉफ्टवेयर डेवलपमेंट में एक अनिवार्य टूल बन गया है। हालाँकि, इसे डिफ़ॉल्ट स्थिति में उपयोग करने बनाम इसके आर्किटेक्चर को समझने और इसे ठीक से ट्यून करने के बीच परफॉरमेंस और डेवलपमेंट अनुभव में एक बड़ा अंतर है।
 
-इस लेख में, हम WSL2 के मूल आर्किटेक्चर की व्याख्या से शुरू करेंगे और "अल्टीमेट डेवलपमेंट एनवायरनमेंट" बनाने के लिए सभी चरणों को विस्तार से (10,000 से अधिक वर्णों में) समझाएंगे जिसकी पेशेवर इंजीनियरों को आवश्यकता होती है। इसमें परफॉरमेंस को अधिकतम करने के लिए सेटिंग्स, एक आरामदायक टर्मिनल एनवायरनमेंट का निर्माण, Docker और VS Code के साथ सहज एकीकरण और उन्नत नेटवर्क कॉन्फ़िगरेशन शामिल हैं।
+इस लेख में, हम WSL2 के मूल आर्किटेक्चर की व्याख्या से शुरू करेंगे और "अल्टीमेट डेवलपमेंट एनवायरनमेंट" बनाने के लिए सभी चरणों को विस्तार से (10,000 से अधिक वर्णों में) समझाएंगे जिसकी पेशेवर इंजीनियरों को आवश्यकता होती है। इसमें परफॉरमेंस को अधिकतम करने के लिए सेटिंग्स, एक आरामदायक टर्मिनल एनवायरनमेंट का निर्माण, [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) और VS Code के साथ सहज एकीकरण और उन्नत नेटवर्क कॉन्फ़िगरेशन शामिल हैं।
 
 ---
 
@@ -256,7 +256,7 @@ Windows पक्ष पर VS Code सिर्फ एक "पतले क्�
 VS Code के "एक्सटेंशन" से **"WSL" (ms-vscode-remote.remote-wsl)** इंस्टॉल करें। इसके बाद, बस WSL टर्मिनल में प्रोजेक्ट डायरेक्टरी में जाएं और `code .` चलाएं, और Windows पक्ष का VS Code उस डायरेक्टरी को खोले हुए प्रारंभ हो जाएगा।
 
 **महत्वपूर्ण नोट (लाइन ब्रेक कोड समस्या):**
-Windows और Linux के लाइन ब्रेक कोड अलग-अलग होते हैं (Windows `CRLF` है, Linux `LF` है)। WSL पर डेवलप करते समय, सुनिश्चित करें कि Git की `core.autocrlf` सेटिंग और VS Code की डिफ़ॉल्ट फ़ाइल सेटिंग दोनों को `LF` पर सेट किया गया है। यदि आप ऐसा करने में विफल रहते हैं, तो शेल स्क्रिप्ट या Docker कंटेनर चलाते समय आपको अजीब त्रुटियों का सामना करना पड़ सकता है।
+Windows और Linux के लाइन ब्रेक कोड अलग-अलग होते हैं (Windows `CRLF` है, Linux `LF` है)। WSL पर डेवलप करते समय, सुनिश्चित करें कि Git की `core.autocrlf` सेटिंग और VS Code की डिफ़ॉल्ट फ़ाइल सेटिंग दोनों को `LF` पर सेट किया गया है। यदि आप ऐसा करने में विफल रहते हैं, तो शेल स्क्रिप्ट या [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) कंटेनर चलाते समय आपको अजीब त्रुटियों का सामना करना पड़ सकता है।
 
 ```bash
 # WSL पर Git के लिए लाइन ब्रेक कोड सेटिंग
@@ -274,7 +274,7 @@ git config --global core.autocrlf input
 
 ---
 
-## 7. Docker Desktop और WSL2 एकीकरण का ऑप्टिमाइज़ेशन
+## 7. [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop और WSL2 एकीकरण का ऑप्टिमाइज़ेशन
 
 WSL2 एनवायरनमेंट में Docker का उपयोग करने के मुख्य रूप से दो तरीके हैं:
 
@@ -287,10 +287,10 @@ WSL2 एनवायरनमेंट में Docker का उपयोग �
 - `General` -> `Use the WSL 2 based engine` को चेक करें।
 - `Resources` -> `WSL Integration` -> `Enable integration with my default WSL distro` को चेक करें और जिस डिस्ट्रिब्यूशन का उपयोग करना है (Ubuntu) उसके लिए टॉगल चालू करें।
 
-यह आपको सीधे WSL2 टर्मिनल से `docker` कमांड चलाने की अनुमति देता है, और Docker डेमन के साथ संचार Docker Desktop द्वारा प्रबंधित समर्पित हल्के VM (`docker-desktop` और `docker-desktop-data`) के माध्यम से किया जाता है।
+यह आपको सीधे WSL2 टर्मिनल से `docker` कमांड चलाने की अनुमति देता है, और [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) डेमन के साथ संचार Docker Desktop द्वारा प्रबंधित समर्पित हल्के VM (`docker-desktop` और `docker-desktop-data`) के माध्यम से किया जाता है।
 
-### दृष्टिकोण 2: नेटिव Docker Engine की प्रत्यक्ष स्थापना
-यदि कॉर्पोरेट नेटवर्क प्रतिबंध (जैसे Docker Desktop के भुगतान से बचना) या यदि आप परफॉरमेंस ओवरहेड को पूरी तरह से समाप्त करना चाहते हैं, तो `/etc/wsl.conf` में `systemd` को सक्षम करें और Docker को एक शुद्ध Ubuntu सर्वर के रूप में इंस्टॉल करें।
+### दृष्टिकोण 2: नेटिव [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) Engine की प्रत्यक्ष स्थापना
+यदि कॉर्पोरेट नेटवर्क प्रतिबंध (जैसे Docker Desktop के भुगतान से बचना) या यदि आप परफॉरमेंस ओवरहेड को पूरी तरह से समाप्त करना चाहते हैं, तो `/etc/wsl.conf` में `systemd` को सक्षम करें और [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) को एक शुद्ध Ubuntu सर्वर के रूप में इंस्टॉल करें।
 
 ```bash
 # systemd के इनेबल होने पर WSL2 Ubuntu में Docker के आधिकारिक इंस्टॉलेशन चरणों का अंश
@@ -351,7 +351,7 @@ fi
 
 ## 9. रखरखाव: फूले हुए VHDX का ऑप्टिमाइज़ेशन (संपीड़न)
 
-WSL2 की सबसे बड़ी खामियों में से एक यह है कि "Docker इमेज को हटाने या फ़ाइलों को हटाने पर भी Windows की तरफ वर्चुअल डिस्क (.vhdx) का फ़ाइल आकार स्वचालित रूप से कम नहीं होता है।" यदि आप लंबे समय तक विकास करते हैं, तो ext4.vhdx फ़ाइल दसियों से लेकर सैकड़ों गीगाबाइट (GB) तक फूल सकती है।
+WSL2 की सबसे बड़ी खामियों में से एक यह है कि "[Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) इमेज को हटाने या फ़ाइलों को हटाने पर भी Windows की तरफ वर्चुअल डिस्क (.vhdx) का फ़ाइल आकार स्वचालित रूप से कम नहीं होता है।" यदि आप लंबे समय तक विकास करते हैं, तो ext4.vhdx फ़ाइल दसियों से लेकर सैकड़ों गीगाबाइट (GB) तक फूल सकती है।
 
 डिस्क स्पेस खाली करने के लिए, आपको समय-समय पर Windows की तरफ से VHDX को ऑप्टिमाइज़ (Compact) करना होगा।
 

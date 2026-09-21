@@ -18,7 +18,7 @@ However, in order to draw out this astonishing potential of quantum computers as
 
 In this article, among the many quantum programming environments, we will focus on the "Quantum Development Kit (QDK)", which is strongly promoted and developed as open-source by Microsoft, and its core, the dedicated programming language "Q#".
 
-Q# was designed from scratch as a Domain Specific Language (DSL) specialized for describing quantum algorithms, absorbing the best parts of C#, F#, and Python. It features powerful capabilities that seamlessly integrate classical control flow (like if statements and for loops) with quantum operations (like applying gates and measurements). In this article, starting from the foundational mathematical models of quantum computing, we will thoroughly and deeply explain the linguistic features of Q#, comparisons of design philosophies with Python's Qiskit, the actual coding to construct and measure a "Bell State (quantum entanglement)", and even methods of integration with classical languages (Python and C#). By the time you finish reading this article, you will have understood the basics of quantum programming and be ready to start writing Q# code in your own environment.
+Q# was designed from scratch as a Domain Specific Language (DSL) specialized for describing quantum algorithms, absorbing the best parts of C#, F#, and Python. It features powerful capabilities that seamlessly integrate classical control flow (like if statements and for loops) with quantum operations (like applying gates and measurements). In this article, starting from the foundational mathematical models of quantum computing, we will thoroughly and deeply explain the linguistic features of Q#, comparisons of design philosophies with Python's Qiskit, the actual coding to construct and measure a "Bell [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) (quantum entanglement)", and even methods of integration with classical languages (Python and C#). By the time you finish reading this article, you will have understood the basics of quantum programming and be ready to start writing Q# code in your own environment.
 
 ## 2. Mathematical Foundations of Quantum Computing: State, Superposition, and Entanglement
 
@@ -136,7 +136,7 @@ However, as mentioned earlier, qubits are required to be in the $|0\rangle$ stat
 Strongly influenced by functional programming, all variables in Q# are Immutable by default. A variable once bound with the `let` keyword cannot have its value changed thereafter. This helps reduce unintended side effects in parallel processing and quantum algorithms.
 If you need to declare a variable whose value needs to be updated, such as a loop counter or accumulator, you explicitly use the `mutable` keyword, and use the `set` keyword to update the value.
 
-## 6. Practice: Creating and Measuring a Bell State (Quantum Entanglement) in Q#
+## 6. Practice: Creating and Measuring a Bell [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) (Quantum Entanglement) in Q#
 
 Now, let's bring together all the knowledge we've learned so far and write a program in Q# to actually create and measure the "Bell State" explained in the math section. This is a very important step, essentially the "Hello World" of quantum programming.
 

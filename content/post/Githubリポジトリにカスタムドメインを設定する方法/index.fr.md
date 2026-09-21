@@ -69,7 +69,7 @@ Addresses:  185.199.108.153
 ## Configurer un domaine personnalisé sur un dépôt Github
 1. Ouvrez la page du dépôt et cliquez sur Settings
 2. Cliquez sur Pages
-3. Si vous publiez le code source du dépôt tel quel, sélectionnez « Deploy from a branch » dans Source. Si vous compilez le code source (comme HUGO), sélectionnez « GitHub Actions ».
+3. Si vous publiez le code source du dépôt tel quel, sélectionnez « Deploy from a branch » dans Source. Si vous compilez le code source (comme HUGO), sélectionnez « [GitHub Actions](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) ».
 4. Sélectionnez la branche à publier dans Branch et cliquez sur Save
 5. Entrez le domaine que vous avez obtenu dans Custom domain, puis cliquez sur Save.
 6. Si nécessaire, cochez la case « Enforce HTTPS » pour activer la prise en charge de HTTPS

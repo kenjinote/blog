@@ -73,7 +73,7 @@ A grandiosa estrutura matemática construída por [Riemann](https://kenji.blog/p
 Einstein propôs o conceito de "espaço-tempo", que integra tempo e espaço em sua teoria da relatividade especial. E na **teoria da relatividade geral**, ele chegou à ideia revolucionária de que "a gravidade é a distorção (curvatura) do espaço-tempo por objetos massivos".
 
 $$
-R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
+R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \[Lambda](https://kenji.blog/pt/p/serverless-architecture-aws-lambda-cold-start/) g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
 $$
 
 Na equação de Einstein acima, o lado esquerdo representa a estrutura geométrica (curvatura) do espaço-tempo e o lado direito representa a distribuição de matéria e energia. Em outras palavras, **a matéria determina como o espaço-tempo se curva, e o espaço-tempo curvo determina como a matéria se move**.

@@ -12,7 +12,7 @@ description: 'Windows上での開発体験を劇的に向上させるWSL2の完�
 
 Windows上でLinuxネイティブな開発環境を提供する「WSL2（Windows Subsystem for Linux 2）」は、現代のソフトウェア開発において不可欠なツールとなりました。しかし、デフォルトの状態で使い続けるのと、アーキテクチャを理解して適切にチューニングを施すのとでは、パフォーマンスや開発体験に雲泥の差が生まれます。
 
-本記事では、WSL2の根幹をなすアーキテクチャの解説から始まり、パフォーマンスを最大限に引き出すための設定、快適なターミナル環境の構築、DockerやVS Codeとのシームレスな連携、そして高度なネットワーク設定まで、プロフェッショナルなエンジニアが求める「究極の開発環境」を構築するための全手順を1万文字以上のボリュームで徹底的に解説します。
+本記事では、WSL2の根幹をなすアーキテクチャの解説から始まり、パフォーマンスを最大限に引き出すための設定、快適なターミナル環境の構築、[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)やVS Codeとのシームレスな連携、そして高度なネットワーク設定まで、プロフェッショナルなエンジニアが求める「究極の開発環境」を構築するための全手順を1万文字以上のボリュームで徹底的に解説します。
 
 ---
 
@@ -256,7 +256,7 @@ Windows側のVS Codeは単なる「薄いクライアント（UI）」として�
 VS Codeの「拡張機能」から **"WSL" (ms-vscode-remote.remote-wsl)** をインストールします。その後、WSLのターミナルでプロジェクトディレクトリに移動し、`code .` を実行するだけで、そのディレクトリを開いた状態でWindows側のVS Codeが起動します。
 
 **重要な注意点（改行コード問題）：**
-WindowsとLinuxでは改行コードが異なります（Windowsは `CRLF`、Linuxは `LF`）。WSL上で開発を行う場合、Gitの `core.autocrlf` 設定や、VS Codeのファイルのデフォルト設定を必ず `LF` に統一してください。これを怠ると、シェルスクリプトやDockerのコンテナ実行時に謎のエラーに悩まされることになります。
+WindowsとLinuxでは改行コードが異なります（Windowsは `CRLF`、Linuxは `LF`）。WSL上で開発を行う場合、Gitの `core.autocrlf` 設定や、VS Codeのファイルのデフォルト設定を必ず `LF` に統一してください。これを怠ると、シェルスクリプトや[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)の[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)実行時に謎のエラーに悩まされることになります。
 
 ```bash
 # WSL側でのGitの改行コード設定
@@ -274,7 +274,7 @@ VS Codeの `settings.json`（リモート設定）にも以下を追加します
 
 ---
 
-## 7. Docker DesktopとWSL2 Integrationの最適化
+## 7. [Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/) DesktopとWSL2 Integrationの最適化
 
 WSL2環境でDockerを利用するには、主に2つのアプローチがあります。
 
@@ -282,15 +282,15 @@ WSL2環境でDockerを利用するには、主に2つのアプローチがあり
 2. WSL2内部（Ubuntu等）に **ネイティブのDocker Engine** を直接インストールする
 
 ### アプローチ1：Docker Desktop（推奨）
-GUIでの管理やWindows/WSL間でのコンテナの透過的なアクセスが容易なため、多くの場合こちらが推奨されます。Docker Desktopの設定（Settings）から以下を確認します。
+GUIでの管理やWindows/WSL間での[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)の透過的なアクセスが容易なため、多くの場合こちらが推奨されます。Docker Desktopの設定（Settings）から以下を確認します。
 
 - `General` -> `Use the WSL 2 based engine` にチェックを入れる。
 - `Resources` -> `WSL Integration` -> `Enable integration with my default WSL distro` にチェックを入れ、トグルボタンで使用するディストリビューション（Ubuntu）をオンにする。
 
-これにより、WSL2のターミナルから直接 `docker` コマンドが実行できるようになり、Dockerデーモンとの通信はDocker Desktopが管理する専用の軽量VM（`docker-desktop` および `docker-desktop-data`）を通じて行われます。
+これにより、WSL2のターミナルから直接 `docker` コマンドが実行できるようになり、[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)デーモンとの通信はDocker Desktopが管理する専用の軽量VM（`docker-desktop` および `docker-desktop-data`）を通じて行われます。
 
-### アプローチ2：ネイティブDocker Engineの直接導入
-企業ネットワークの制約（Docker Desktopの有償化回避など）や、パフォーマンスのオーバーヘッドを極限まで削りたい場合は、`/etc/wsl.conf` で `systemd` を有効にした上で、純粋なUbuntuサーバーとしてDockerをインストールします。
+### アプローチ2：ネイティブ[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/) Engineの直接導入
+企業ネットワークの制約（Docker Desktopの有償化回避など）や、パフォーマンスのオーバーヘッドを極限まで削りたい場合は、`/etc/wsl.conf` で `systemd` を有効にした上で、純粋なUbuntuサーバーとして[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)をインストールします。
 
 ```bash
 # systemdが有効なWSL2 UbuntuでのDocker公式インストール手順の抜粋
@@ -351,7 +351,7 @@ fi
 
 ## 9. メンテナンス：肥大化したVHDXの最適化（圧縮）
 
-WSL2の最大の欠点の1つが、「Dockerイメージの削除やファイルを削除しても、Windows側の仮想ディスク（.vhdx）のファイルサイズが自動で縮小されない」という仕様です。長期間開発を続けていると、ext4.vhdxファイルが数十GB〜数百GBに膨れ上がります。
+WSL2の最大の欠点の1つが、「[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)イメージの削除やファイルを削除しても、Windows側の仮想ディスク（.vhdx）のファイルサイズが自動で縮小されない」という仕様です。長期間開発を続けていると、ext4.vhdxファイルが数十GB〜数百GBに膨れ上がります。
 
 ディスク容量を解放するためには、定期的にWindows側からVHDXを最適化（Compact）する必要があります。
 

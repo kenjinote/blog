@@ -258,7 +258,7 @@ $$
 
 ### 参考资料
 
-- 俄亥俄州立大学（Ohio State University）, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory)：关于边的双色着色与小型拉姆齐数的详细讲解。
+- 俄亥俄州立大学（Ohio [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) University）, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory)：关于边的双色着色与小型拉姆齐数的详细讲解。
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf)：涵盖单调子序列等拉姆齐思想的高校讲义资料。
 
 本文中的示意图、穷举表格、概率与数量分布数据，均由文章附带的Python脚本计算生成。

@@ -212,7 +212,7 @@ Al seleccionar artículos sin exceder la capacidad de la mochila, ¿cuál será 
 
 ### 4-2. Definición del estado y ecuación de transición de estado
 
-El paso más importante para resolver usando DP es definir adecuadamente el "Estado (State)".
+El paso más importante para resolver usando DP es definir adecuadamente el "Estado ([State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/))".
 En este problema, hay dos parámetros que cambian: "hasta qué artículo se ha considerado" y "la capacidad restante de la mochila". Por lo tanto, definimos el estado de la siguiente manera.
 
 **Definición del estado:**
@@ -434,7 +434,7 @@ Hasta aquí hemos visto varios problemas, pero ¿cómo deberíamos pensar al enf
 
 1. **¿Se puede resolver este problema con DP? (Verificación de condiciones)**
    Al pensar de forma recursiva, ¿aparece el mismo estado una y otra vez (superposición de subproblemas)? ¿Se puede derivar lo óptimo general combinando las mejores opciones (subestructura óptima)?
-2. **Definir el estado (State)**
+2. **Definir el estado ([State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/))**
    Identifica las variables que representan "dónde estamos ahora", "qué queda" y "cuáles son las restricciones hasta ahora". Verbalizar claramente el significado de los índices es la mayor defensa para prevenir errores.
 3. **Pensar en la ecuación de transición de estado (Transition)**
    ¿Cómo se pasa de un estado al siguiente estado? ¿Cuáles son las opciones? ¿Tomamos el máximo (o mínimo) entre ellas, o las sumamos? Este es el corazón del algoritmo.

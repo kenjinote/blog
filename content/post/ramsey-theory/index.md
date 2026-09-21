@@ -258,7 +258,7 @@ $$
 
 ### 参考資料
 
-- Ohio State University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory)：辺の2色分けと小さなラムゼー数の解説。
+- Ohio [State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/) University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory)：辺の2色分けと小さなラムゼー数の解説。
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf)：単調部分列を含むラムゼー的な考え方の講義資料。
 
 本記事の図、全列挙の表、確率と個数の分布は、付属のPythonスクリプトで生成しています。

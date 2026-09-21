@@ -15,7 +15,7 @@ description: 'GitHub Actions 워크플로 내에서 동적으로 환경 변수�
 
 
 
-GitHub Actions에서 동적으로 변수를 설정하려면, 아래와 같이 `$env:GITHUB_ENV`에 추가로 기록하면 됩니다.
+[GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)에서 동적으로 변수를 설정하려면, 아래와 같이 `$env:GITHUB_ENV`에 추가로 기록하면 됩니다.
 
 【Windows의 경우】
 ```

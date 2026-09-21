@@ -62,7 +62,7 @@ Con ese pensamiento, comencé a desarrollar el concepto de LogicPad. Fue hace un
 
 En mi trabajo, había mucha gente brillante.
 
-Podían construir lógica. Dominaban las funciones de Excel a voluntad y podían identificar la esencia de un problema.
+[Pod](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/)ían construir lógica. Dominaban las funciones de Excel a voluntad y podían identificar la esencia de un problema.
 Pero... se detenían en la etapa de "escribir código".
 
 "Este trabajo, lo hago cada vez siguiendo un manual, ¿no se podría automatizar?"

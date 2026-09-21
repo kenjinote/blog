@@ -163,7 +163,7 @@ Uma das ações mais repetitivas no terminal é **"pesquisar no histórico por u
 
 Isso é resolvido brilhantemente pela ferramenta ultrarrápida de busca aproximada (fuzzy search), **`fzf`**, desenvolvida em Go.
 
-## 4.1. O Pipeline de Busca Aproximada com fzf
+## 4.1. O [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) de Busca Aproximada com fzf
 
 Ao integrar o `fzf` na pesquisa do histórico de comandos, o seguinte fluxo ocorre:
 

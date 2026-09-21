@@ -110,7 +110,7 @@ flowchart TD
     D --> H["Shearing (せん断)"]
 ```
 
-## 5. Transformation Pipeline in CG
+## 5. Transformation [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) in CG
 
 In the 3DCG rendering pipeline, matrix multiplication is performed sequentially in stages to transform 3D vertex data into final 2D screen coordinates. Because the space is 3-dimensional here, the homogeneous coordinate system becomes 4-dimensional $(x, y, z, 1)$, and matrices of size $4 \times 4$ are used.
 

@@ -9,7 +9,7 @@ categories: ["programming", "devops"]
 tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 ---
 
-# 使用GitHub Actions构建C++项目的CI/CD流水线：完全指南
+# 使用[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)构建C++项目的[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线：完全指南
 
 在现代软件开发范式中，持续集成（Continuous Integration: CI）和持续交付/部署（Continuous Delivery/Deployment: CD）是敏捷开发过程和维持高质量软件不可或缺的要素。在众多编程语言中，相比于其他语言（例如Python、JavaScript、Go等），构建C++的CI/CD流水线伴随着独特的难度与复杂性。
 
@@ -17,7 +17,7 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 ## 1. C++项目中CI/CD的意义与特有问题
 
-在Web应用程序或使用脚本语言的开发中，通常在单个Docker容器上进行测试和构建就足够了。然而，C++作为一种本地编译语言，强烈依赖于运行环境的硬件架构和操作系统。
+在Web应用程序或使用脚本语言的开发中，通常在单个[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)容器上进行测试和构建就足够了。然而，C++作为一种本地编译语言，强烈依赖于运行环境的硬件架构和操作系统。
 
 在为C++项目引入CI/CD时，面临的主要挑战如下：
 
@@ -27,9 +27,9 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 4. **依赖管理** ：C++不存在像npm或pip那样绝对标准的包管理器。需要使用vcpkg、Conan或CMake的 `FetchContent` 等工具，在CI环境上每次都能正确解析依赖库。
 5. **内存管理与未定义行为** ：由于伴随着指针操作和手动内存管理，除了单纯的逻辑测试外，还需要自动化检测内存泄漏和未定义行为（Undefined Behavior）。
 
-为了解决这些问题，能够按需配置各种操作系统虚拟机，并通过代码定义复杂工作流（Configuration as Code）的GitHub Actions就成为了最佳解决方案。
+为了解决这些问题，能够按需配置各种操作系统虚拟机，并通过代码定义复杂工作流（Configuration as Code）的[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)就成为了最佳解决方案。
 
-## 2. CI/CD流水线架构概述
+## 2. [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线架构概述
 
 让我们来可视化即将构建的CI/CD流水线全貌。以下的Mermaid时序图展示了从代码Push到发布（Release）的工作流。
 
@@ -142,7 +142,7 @@ include(CPack)
 - **严格警告 (`-Werror` / `/WX`)**：在CI环境中将编译器警告视为错误，强制保持高质量的代码。
 - **GNUInstallDirs** ：自动解析各个操作系统的标准安装路径（如 `/usr/local/bin` 或 `C:\Program Files`）。
 
-## 4. GitHub Actions基础与矩阵策略
+## 4. [GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)基础与矩阵策略
 
 GitHub Actions由 `.github/workflows/` 目录下的YAML文件配置。
 在C++项目中，最强大的功能就是“矩阵策略（Matrix Strategy）”。借此可以动态生成操作系统和编译器的组合，并并行执行。
@@ -189,7 +189,7 @@ jobs:
 
 ## 5. 构建成本与利用阿姆达尔定律优化并行处理
 
-在云环境中，CI/CD是在与时间赛跑，构建时间直接关系到开发者的等待时间以及运行成本。
+在云环境中，[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)是在与时间赛跑，构建时间直接关系到开发者的等待时间以及运行成本。
 在这里，对于构建时间的优化，我们试着用计算机科学中的“阿姆达尔定律（Amdahl's Law）”来进行数学分析。
 
 阿姆达尔定律定义了，如果程序中可并行化的部分占比为 $P$，那么在使用 $N$ 个处理器时的理论最大加速比 $S(N)$ 如下：
@@ -199,7 +199,7 @@ $$ S(N) = \frac{1}{(1 - P) + \frac{P}{N}} $$
 在C++的构建过程中，源代码中各个翻译单元（Translation Unit，即 `.cpp` 文件）的编译是完全独立的，因此可以并行化。另一方面，CMake的配置（Configuration）以及最终的二进制链接阶段，基本上是串行执行的（不可并行化）。
 
 假设项目的整体构建时间中，80%为编译阶段（$P = 0.8$），20%为串行阶段（$1 - P = 0.2$）。
-GitHub Actions的标准运行器（Linux）提供2个核心（线程）。因此当 $N = 2$ 时：
+[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)的标准运行器（Linux）提供2个核心（线程）。因此当 $N = 2$ 时：
 
 $$ S(2) = \frac{1}{0.2 + \frac{0.8}{2}} = \frac{1}{0.2 + 0.4} = \frac{1}{0.6} \approx 1.67 $$
 
@@ -210,7 +210,7 @@ $$ S(2) = \frac{1}{0.2 + \frac{0.8}{2}} = \frac{1}{0.2 + 0.4} = \frac{1}{0.6} \a
       run: cmake --build build --config Release --parallel 2
 ```
 
-此外，我们还要考虑成本计算。GitHub Actions的使用成本 $C_{total}$ 是各项作业执行时间 $T_i$ 与运行器单价 $R_i$ 乘积的总和。
+此外，我们还要考虑成本计算。[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)的使用成本 $C_{total}$ 是各项作业执行时间 $T_i$ 与运行器单价 $R_i$ 乘积的总和。
 
 $$ C_{total} = \sum_{i=1}^{M} \left( T_i \times R_i \right) $$
 
@@ -266,7 +266,7 @@ if(ENABLE_COVERAGE AND CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
 endif()
 ```
 
-在GitHub Actions中定义一个独立作业来进行覆盖率测量：
+在[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)中定义一个独立作业来进行覆盖率测量：
 
 ```yaml
   coverage:
@@ -301,7 +301,7 @@ endif()
 
 ## 8. 通过GitHub Releases自动交付二进制文件 (CD)
 
-构建CI/CD中的“CD”部分。当开发者在Git中打上版本标签（例如：`v1.2.0`）并推送时，它会自动编译各个操作系统的可执行二进制文件，打包成ZIP或Tarball，并上传到GitHub Releases。
+构建[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)中的“CD”部分。当开发者在Git中打上版本标签（例如：`v1.2.0`）并推送时，它会自动编译各个操作系统的可执行二进制文件，打包成ZIP或Tarball，并上传到GitHub Releases。
 
 这一步我们将利用CMake自带的打包工具 `CPack`。
 
@@ -326,7 +326,7 @@ endif()
 
 通过此配置，只需执行 `git tag v1.0.0` 和 `git push origin v1.0.0`，面向Windows用户的ZIP文件以及面向Linux/macOS用户的Tarball，就会在无需手动干预的情况下，自动发布到Release页面。这在向用户交付软件时是一项极为强大的功能。
 
-## 9. 完整的 Workflow YAML 文件
+## 9. 完整的 [Workflow](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) YAML 文件
 
 下面展示了整合了前文讲解的所有要素、坚固且实用的 `.github/workflows/main.yml` 的完整代码：
 
@@ -440,17 +440,17 @@ jobs:
         fail_ci_if_error: false
 ```
 
-## 10. 迈向更高级的CI/CD（静态分析与格式化）
+## 10. 迈向更高级的[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)（静态分析与格式化）
 
 这里省略详细讲解，但在实际运维中，建议将更多的质量保证工具集成到流水线中：
 
 1. **强制执行 Clang-Format** ：为减轻代码审查的负担，将 `clang-format` 的代码风格检查集成到CI中，如果违反了格式化规则，则使流水线失败。
 2. **静态分析 (Clang-Tidy)** ：为了检测单靠编译器警告无法防备的潜在错误，或低效代码（如不必要的复制等），将 `clang-tidy` 集成到CMake中，并在CI上运行。
-3. **利用 vcpkg / Conan 缓存** ：如果使用了大量第三方库，构建依赖关系会花费大量时间。利用GitHub Actions的 `actions/cache`，通过保留vcpkg已安装目录或Conan缓存，可以大幅度缩短构建时间。
+3. **利用 vcpkg / Conan 缓存** ：如果使用了大量第三方库，构建依赖关系会花费大量时间。利用[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)的 `actions/cache`，通过保留vcpkg已安装目录或Conan缓存，可以大幅度缩短构建时间。
 
 ## 结论
 
-由于平台依赖性和构建工具的复杂性，在C++项目中构建CI/CD流水线乍看之下门槛很高。然而，通过正确结合GitHub Actions、现代CMake以及CTest/CPack的生态系统，就能获得极具威力且自动化的开发工作流。
+由于平台依赖性和构建工具的复杂性，在C++项目中构建[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线乍看之下门槛很高。然而，通过正确结合[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)、现代CMake以及CTest/CPack的生态系统，就能获得极具威力且自动化的开发工作流。
 
 本文所讲解的基于矩阵策略的跨平台验证、基于Sanitizer的运行时Bug检测、覆盖率测量，以及自动部署到GitHub Releases，都是在商业级开源项目中被广泛采用的最佳实践。
 

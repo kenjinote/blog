@@ -163,7 +163,7 @@ Dans les opérations du terminal, l'une des actions les plus fréquentes consist
 
 Ce problème est résolu de manière élégante par **`fzf`**, un outil de recherche approximative (fuzzy finder) générique et ultra-rapide écrit en langage Go.
 
-## 4.1. Pipeline de recherche approximative avec fzf
+## 4.1. [Pipeline](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) de recherche approximative avec fzf
 
 Lorsque `fzf` est intégré à la recherche dans l'historique des commandes, le processus se déroule selon le pipeline suivant.
 

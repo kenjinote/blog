@@ -28,7 +28,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 Ollama هي منصة تتيح التنفيذ والإدارة السهلة للنماذج اللغوية الكبيرة مفتوحة المصدر (مثل Llama 3 و Phi-3 و Mistral و Gemma) في بيئتك المحلية. في الماضي، كان إعداد بيئة LLM محلية يتطلب خطوات معقدة للغاية مثل إعداد بيئة Python، وتثبيت أدوات CUDA، وحل تبعيات PyTorch، وتنزيل ملفات النماذج الضخمة من Hugging Face وتحويل تنسيقها (مثل من Safetensors إلى GGUF).
 
-يقوم Ollama بإخفاء هذه التعقيدات ويتيح لك التعامل مع نماذج LLM بسهولة مماثلة لـ Docker. باستخدام أمر واحد، يمكنك تنزيل النموذج (`pull`)، وتشغيله (`run`)، وإطلاقه كخادم HTTP.
+يقوم Ollama بإخفاء هذه التعقيدات ويتيح لك التعامل مع نماذج LLM بسهولة مماثلة لـ [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/). باستخدام أمر واحد، يمكنك تنزيل النموذج (`pull`)، وتشغيله (`run`)، وإطلاقه كخادم HTTP.
 
 ## التكنولوجيا الأساسية: غلاف (Wrapper) لـ llama.cpp
 
@@ -75,9 +75,9 @@ ollama --version
 ```
 إذا تم عرض معلومات الإصدار، فقد تم التثبيت بنجاح.
 
-## التشغيل باستخدام Docker
+## التشغيل باستخدام [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/)
 
-إذا كنت لا ترغب في تلويث بيئتك الحالية أو كنت ترغب في دمجه في بنية أساسية قائمة على الحاويات، يمكنك أيضًا استخدام صورة Docker الرسمية. إذا كنت تستخدم وحدة معالجة رسومية (GPU)، فستحتاج إلى تثبيت NVIDIA Container Toolkit.
+إذا كنت لا ترغب في تلويث بيئتك الحالية أو كنت ترغب في دمجه في بنية أساسية قائمة على الحاويات، يمكنك أيضًا استخدام صورة Docker الرسمية. إذا كنت تستخدم وحدة معالجة رسومية (GPU)، فستحتاج إلى تثبيت NVIDIA [Container](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/) Toolkit.
 
 ```bash
 # للتشغيل باستخدام وحدة المعالجة المركزية (CPU) فقط
@@ -93,7 +93,7 @@ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ol
 
 # إدارة النماذج وأوامر CLI الأساسية
 
-أكبر جاذبية لـ Ollama هي أن إدارة النماذج بديهية للغاية. يمكنك تجربة نماذج مختلفة بنفس الشعور بالتعامل مع صور Docker.
+أكبر جاذبية لـ Ollama هي أن إدارة النماذج بديهية للغاية. يمكنك تجربة نماذج مختلفة بنفس الشعور بالتعامل مع صور [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ## 1. تشغيل النموذج (`run`)
 
@@ -148,7 +148,7 @@ ollama rm phi3:instruct
 
 # تخصيص النماذج باستخدام Modelfile
 
-في Ollama، يمكنك إنشاء نماذجك المخصصة عن طريق حقن مطالبات النظام (System Prompts) وضبط المعلمات الفائقة (Hyperparameters) للنماذج الحالية باستخدام آلية تسمى "**Modelfile**". هذا المفهوم مطابق تمامًا لـ Dockerfile في Docker.
+في Ollama، يمكنك إنشاء نماذجك المخصصة عن طريق حقن مطالبات النظام (System Prompts) وضبط المعلمات الفائقة (Hyperparameters) للنماذج الحالية باستخدام آلية تسمى "**Modelfile**". هذا المفهوم مطابق تمامًا لـ [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/)file في Docker.
 
 يوضح المخطط التالي كيف يُشتق النموذج المخصص من النموذج الأساسي.
 
@@ -493,7 +493,7 @@ $$
 
 ## الخاتمة
 
-مع ظهور Ollama، انخفض حاجز الاعتماد على نماذج LLM المحلية بشكل كبير. إن المزيج بين نظام الأوامر البسيط (يشبه التعامل مع حاويات Docker) وواجهة برمجة تطبيقات REST التي يمكن استخدامها بسهولة من التطبيقات الخارجية هو المعيار الواقعي الحالي في تطوير الذكاء الاصطناعي المحلي.
+مع ظهور Ollama، انخفض حاجز الاعتماد على نماذج LLM المحلية بشكل كبير. إن المزيج بين نظام الأوامر البسيط (يشبه التعامل مع حاويات [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/)) وواجهة برمجة تطبيقات REST التي يمكن استخدامها بسهولة من التطبيقات الخارجية هو المعيار الواقعي الحالي في تطوير الذكاء الاصطناعي المحلي.
 
 إذا كنت مطورًا يعاني من قيود التكلفة أو الأمان لـ LLM السحابي، فيرجى الرجوع إلى الخطوات المقدمة في هذه المقالة، وإعداد بيئة LLM محلية باستخدام Ollama، ومحاولة دمجها في تطبيقاتك. من المؤكد أنك ستتمكن من الشعور بإمكانيات الذكاء الاصطناعي بحرية وقرب أكبر.
 

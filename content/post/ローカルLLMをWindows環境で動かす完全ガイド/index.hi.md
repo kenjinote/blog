@@ -163,7 +163,7 @@ $V_{kv} = 2 \times 1 \times 8192 \times 32 \times 8 \times 128 \times 2 \div 10^
 # 5. अभ्यास 1: Ollama का उपयोग करके सबसे तेज़ और सबसे छोटा सेटअप
 
 अब जब हम थ्योरी समझ चुके हैं, तो आइए वास्तव में विंडोज़ वातावरण में LLM चलाएं।
-2026 तक, "Ollama" सबसे यूज़र-फ्रेंडली टूल है। यह Docker की तरह ही एक बहुत ही सहज (intuitive) CLI प्रदान करता है।
+2026 तक, "Ollama" सबसे यूज़र-फ्रेंडली टूल है। यह [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) की तरह ही एक बहुत ही सहज (intuitive) CLI प्रदान करता है।
 
 ## 5.1 इंस्टालेशन और रन (Installation and Execution)
 

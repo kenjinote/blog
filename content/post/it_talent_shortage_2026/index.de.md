@@ -26,7 +26,7 @@ Die japanische IT-Industrie stützte sich lange Zeit auf das SIer-Modell, das du
 
 Im Jahr 2026 stößt dieses Modell jedoch an seine Grenzen. Da sich das Wesen der digitalen Transformation (DX) von der "bloßen IT-isierung" hin zur "Transformation des Geschäftsmodells" verschoben hat, kann die wenig agile Wasserfall-Entwicklung nicht mehr mit den Marktveränderungen Schritt halten.
 
-Der moderne Entwicklungsprozess setzt **Cloud-Native** und **KI-gesteuerte** Ansätze voraus. Containerisierung (Docker/Kubernetes), Microservices-Architektur und die Automatisierung von CI/CD-Pipelines sind nicht länger "spezielle Technologien", sondern "Standardinfrastruktur".
+Der moderne Entwicklungsprozess setzt **Cloud-Native** und **KI-gesteuerte** Ansätze voraus. [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)isierung ([Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)), Microservices-Architektur und die Automatisierung von [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s sind nicht länger "spezielle Technologien", sondern "Standardinfrastruktur".
 
 ```mermaid
 graph TD
@@ -47,7 +47,7 @@ Unternehmen suchen nicht mehr nach "Codern", die einfach nur vorgegebene Spezifi
 
 Wie schon bei der "Klippe des Jahres 2025" gewarnt, betreiben viele japanische Unternehmen noch immer Mainframes oder lokale Legacy-Systeme (oft in COBOL geschrieben). Diese Systeme sind durch jahrelange Anpassungen zu einer Blackbox geworden. Mit dem Eintritt der Senior-Mitarbeiter, die diese betreuten, in den Ruhestand wird die Aufrechterhaltung extrem schwierig.
 
-Gleichzeitig gibt es von geschäftlicher Seite den starken Wunsch, "Daten zu nutzen, um KI-Modelle aufzubauen und personalisierte Kundenerlebnisse zu bieten". Hier klafft eine fatale Lücke. **Es gibt einen eklatanten Mangel an "Data Engineers", die isolierte, lokale Daten in eine Form bringen, die sie bereinigt, integriert und für moderne KI/ML-Pipelines nutzbar macht.**
+Gleichzeitig gibt es von geschäftlicher Seite den starken Wunsch, "Daten zu nutzen, um KI-Modelle aufzubauen und personalisierte Kundenerlebnisse zu bieten". Hier klafft eine fatale Lücke. **Es gibt einen eklatanten Mangel an "Data Engineers", die isolierte, lokale Daten in eine Form bringen, die sie bereinigt, integriert und für moderne KI/ML-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s nutzbar macht.**
 
 ### Mathematisches Modell: Kosten der Legacy-Wartung vs. Modernisierung
 
@@ -137,7 +137,7 @@ KI kann zwar Code schreiben, aber sie kann nicht "die komplexen Geschäftsspezif
 ### B. Architektur und Design von nicht-funktionalen Anforderungen
 "Nicht-funktionale Anforderungen" wie Systemverfügbarkeit, Skalierbarkeit, Sicherheit und Performance werden von der KI nicht automatisch optimiert. Architekturentscheidungen wie "Welche Cloud-Dienste sollen kombiniert werden?", "Welches Kommunikationsprotokoll wird zwischen Microservices verwendet?" oder "Wo werden die Transaktionsgrenzen der Datenbank gezogen?" hängen weiterhin stark von der umfassenden Erfahrung und Intuition von Menschen ab.
 
-### C. Aufbau von MLOps und Daten-Pipelines
+### C. Aufbau von MLOps und Daten-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s
 Das Konzept des "MLOps", um generative KI und maschinelle Lernmodelle in Produktionsumgebungen aufrechtzuerhalten, wird immer wichtiger. Fachkräfte, die sich an der Schnittstelle von Software Engineering und Data Science befinden – etwa in der Überwachung von Modellverschiebungen (Model Drift), der Automatisierung von kontinuierlichem Training und der Optimierung von GPU-Ressourcen –, sind stark gefragt.
 
 ---

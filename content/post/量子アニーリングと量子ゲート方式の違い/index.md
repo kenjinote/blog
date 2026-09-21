@@ -100,7 +100,7 @@ D-Waveの量子プロセッサは、超伝導量子干渉計（SQUID）を用い
 
 ### 3.1. ユニタリ変換と状態ベクトル
 
-量子ゲート方式では、量子ビットのシステム全体の状態を「状態ベクトル（State Vector）」 $|\psi\rangle$ として表現します。1量子ビットの状態は、以下のように基底状態 $|0\rangle$ と $|1\rangle$ の線形結合で表されます。
+量子ゲート方式では、量子ビットのシステム全体の状態を「状態ベクトル（[State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/) Vector）」 $|\psi\rangle$ として表現します。1量子ビットの状態は、以下のように基底状態 $|0\rangle$ と $|1\rangle$ の線形結合で表されます。
 $$ |\psi\rangle = \alpha |0\rangle + \beta |1\rangle $$
 ここで、$\alpha$ と $\beta$ は複素確率振幅であり、$|\alpha|^2 + |\beta|^2 = 1$ を満たします。この状態は幾何学的には「ブロッホ球（Bloch Sphere）」上の点として視覚化されます。
 

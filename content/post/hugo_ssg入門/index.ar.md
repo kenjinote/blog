@@ -236,11 +236,11 @@ hugo --minify
 
 يُخرج هذا الأمر ملفات الموقع بأكمله إلى دليل `public/`. تؤدي إضافة خيار `--minify` إلى إزالة الأسطر الجديدة والمسافات غير الضرورية، مما يقلل من حجم الملفات بشكل أكبر. ويساهم هذا بشكل مباشر في تقليل تأخير الشبكة ($T_{network}$) في النموذج الرياضي المذكور سابقاً.
 
-### 5.3 أتمتة النشر (CI/CD)
+### 5.3 أتمتة النشر ([CI/CD](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/))
 
 ليس من الفعال إنشاء الملفات الثابتة على جهاز كمبيوتر محلي في كل مرة وتحميلها عبر FTP أو ما شابه. في تشغيل SSG الحديث، من أفضل الممارسات بناء بيئة CI/CD تقوم تلقائياً بعمليات البناء والنشر باستخدام عملية الدفع (push) إلى مستودع Git (مثل GitHub) كمحفز (trigger).
 
-على سبيل المثال، يكون الشكل الأساسي للإعدادات (ملف YAML) للنشر على Cloudflare Pages أو GitHub Pages باستخدام GitHub Actions على النحو التالي.
+على سبيل المثال، يكون الشكل الأساسي للإعدادات (ملف YAML) للنشر على Cloudflare Pages أو GitHub Pages باستخدام [GitHub Actions](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/) على النحو التالي.
 
 ```yaml
 # مثال على .github/workflows/hugo.yml

@@ -71,7 +71,7 @@ Ao construir aplicações de IA usando APIs da OpenAI (como o GPT-4) ou APIs da 
 
 ### 2.1 Prompt do Sistema: Restrições Globais e Definição de Persona
 
-O System Prompt define **restrições globais, persona (papel) e regras comportamentais básicas** para o LLM. Em termos de design de software, atua como as "variáveis de ambiente" ou "classe base" da aplicação, ou ainda o "Dockerfile" de um contêiner.
+O System Prompt define **restrições globais, persona (papel) e regras comportamentais básicas** para o LLM. Em termos de design de software, atua como as "variáveis de ambiente" ou "classe base" da aplicação, ou ainda o "[Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/)file" de um contêiner.
 
 Um excelente System Prompt estabiliza drasticamente a qualidade e o formato da saída.
 
@@ -193,7 +193,7 @@ Para implementar o ToT em um prompt, você instrui: "Proponha várias abordagens
 
 ---
 
-## 4. Workflow Agentic e ReAct (Reasoning and Acting)
+## 4. [Workflow](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) Agentic e ReAct (Reasoning and Acting)
 
 As aplicações de LLM estão evoluindo rapidamente do processamento de texto de entrada e saída simples para a área de **Agentes de IA (AI Agents)**, que autonomamente elaboram planos e concluem tarefas enquanto interagem com ambientes externos. O paradigma central dessa arquitetura de agente é o **ReAct (Reasoning and Acting)**.
 
@@ -220,7 +220,7 @@ A interface padrão para integrar o ReAct em sistemas é o **Function Calling (C
 O engenheiro fornece ao LLM a "definição das ferramentas disponíveis (esquema JSON)" junto com o System Prompt. O LLM analisa o contexto do prompt e, se determinar que uma ferramenta deve ser usada, ele gera "o nome da função a ser chamada" e "seus argumentos JSON", em vez do texto normal. O loop se forma através do aplicativo que executa a função e devolve o resultado para o LLM.
 
 **Exemplo de aplicação de desenvolvimento (Agente de depuração autônomo):**
-Ao construir um agente que investiga as causas e gera patches quando um teste falha em um pipeline de CI/CD, as seguintes ferramentas são disponibilizadas ao LLM:
+Ao construir um agente que investiga as causas e gera patches quando um teste falha em um pipeline de [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/), as seguintes ferramentas são disponibilizadas ao LLM:
 
 1. `search_codebase(regex_pattern)`: Busca o código no repositório com uma expressão regular.
 2. `view_file_content(file_path, start_line, end_line)`: Lê o conteúdo de um arquivo especificado.
@@ -368,7 +368,7 @@ O padrão atual da indústria é o método **LLM-as-a-Judge**, onde um modelo po
 2. **Execução:** Gere as saídas contra o conjunto de testes com o modelo e o prompt sendo testados.
 3. **Avaliação:** Prepare um prompt de avaliação (meta-prompt) que instrui o Judge LLM: "Pontue a saída gerada em 1 a 5, com base no preenchimento ou não dos requisitos".
 
-Assim, torna-se possível detectar automaticamente regressões no pipeline de CI/CD ao modificar os prompts. A engenharia de prompt evoluiu de algo artesanal focado em "brincar com o prompt", para uma "Engenharia" baseada em dados reais e com reprodutibilidade.
+Assim, torna-se possível detectar automaticamente regressões no pipeline de [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) ao modificar os prompts. A engenharia de prompt evoluiu de algo artesanal focado em "brincar com o prompt", para uma "Engenharia" baseada em dados reais e com reprodutibilidade.
 
 ---
 

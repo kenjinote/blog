@@ -59,7 +59,7 @@ tags: ["Alan Baker", "數論", "菲爾茲獎", "超越數論"]
 **貝克定理（Baker's Theorem, 1966）** ：
 設 $\alpha_1, \alpha_2, \ldots, \alpha_n$ 為非零代數數，並假設 $\log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ 在有理數域 $\mathbb{Q}$ 上是線性無關的。那麼，$1, \log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ 在代數數域 $\overline{\mathbb{Q}}$ 上是線性無關的。
 
-換句話說，對於任何非零代數數 $\beta_0, \beta_1, \ldots, \beta_n$ ，他證明了以下線性形式 $\Lambda$ 永遠不等於 $0$ 。
+換句話說，對於任何非零代數數 $\beta_0, \beta_1, \ldots, \beta_n$ ，他證明了以下線性形式 $\[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)$ 永遠不等於 $0$ 。
 
 $$ \Lambda = \beta_0 + \beta_1 \log \alpha_1 + \cdots + \beta_n \log \alpha_n \neq 0 $$
 

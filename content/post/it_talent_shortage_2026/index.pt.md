@@ -26,7 +26,7 @@ O que sustentou a indústria de TI japonesa por muitos anos foi o modelo SIer (S
 
 No entanto, em 2026, esse modelo atingiu seu limite. Como a essência da DX (Transformação Digital) mudou de "simples informatização" para "transformação do modelo de negócios", o desenvolvimento em cascata (waterfall), com sua baixa agilidade, não consegue mais acompanhar as mudanças do mercado.
 
-O processo de desenvolvimento moderno pressupõe ser **nativo em nuvem** e **orientado por IA**. A conteinerização (Docker/Kubernetes), a arquitetura de microsserviços e a automação de pipelines de CI/CD não são mais "tecnologias especiais", mas sim "infraestrutura padrão".
+O processo de desenvolvimento moderno pressupõe ser **nativo em nuvem** e **orientado por IA**. A conteinerização ([Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/)), a arquitetura de microsserviços e a automação de pipelines de [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) não são mais "tecnologias especiais", mas sim "infraestrutura padrão".
 
 ```mermaid
 graph TD
@@ -137,7 +137,7 @@ A IA pode escrever códigos, mas não pode "desvendar as especificações comple
 ### B. Arquitetura e Design de Requisitos Não Funcionais
 Requisitos não funcionais como disponibilidade do sistema, escalabilidade, segurança e desempenho não são otimizados automaticamente pela IA. As decisões arquiteturais, como "quais serviços de nuvem combinar", "qual protocolo de comunicação entre microsserviços usar" e "onde traçar os limites das transações do banco de dados", ainda dependem da experiência intuitiva e altamente desenvolvida do ser humano.
 
-### C. MLOps e Construção de Pipelines de Dados
+### C. MLOps e Construção de [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)s de Dados
 O conceito de "MLOps", que consiste em manter continuamente a operação de IA generativa e modelos de machine learning em ambientes de produção, está se tornando cada vez mais importante. Talentos com habilidades na interseção da engenharia de software com a ciência de dados, como monitorar o desvio do modelo (queda de precisão), criar pipelines de treinamento contínuo e otimizar recursos de GPU, são muito procurados.
 
 ---

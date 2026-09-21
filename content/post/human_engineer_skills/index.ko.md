@@ -36,7 +36,7 @@ $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right
 
 $$ \text{Complexity} = O(N^2 \cdot d) $$
 
-최근에는 FlashAttention과 같은 하드웨어 수준의 최적화나, Sparse Attention, 나아가 Mamba(State Space Models) 등의 선형 시간 $O(N)$으로 처리 가능한 대체 아키텍처 연구가 진행되고 있지만, 여전히 "무한한 컨텍스트를 완전히 이해하고 전체적으로 최적화된 출력을 생성하는 것"은 매우 어렵습니다.
+최근에는 FlashAttention과 같은 하드웨어 수준의 최적화나, Sparse Attention, 나아가 Mamba([State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) Space Models) 등의 선형 시간 $O(N)$으로 처리 가능한 대체 아키텍처 연구가 진행되고 있지만, 여전히 "무한한 컨텍스트를 완전히 이해하고 전체적으로 최적화된 출력을 생성하는 것"은 매우 어렵습니다.
 
 더욱이 컨텍스트 윈도우를 물리적으로 확장할 수 있다고 해도, 'Lost in the Middle(중간 정보의 소실)'이라고 불리는 현상이 발생합니다. LLM은 프롬프트의 시작과 끝부분의 정보에 강하게 영향을 받기 쉬우며, 중간에 배치된 중요한 요건이나 제약을 무시해 버리는 경향이 있습니다. 수만 줄에 달하는 엔터프라이즈 시스템의 소스 코드 전체를 LLM에게 읽게 하고 "최적의 리팩터링을 해라"라고 지시해도, 국소적으로는 옳지만 전체적으로는 파탄 난 코드가 생성되는 이유가 바로 이 때문입니다.
 

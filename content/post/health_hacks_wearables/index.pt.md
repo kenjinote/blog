@@ -90,7 +90,7 @@ Onde,
 
 Para manter a performance de um engenheiro, é essencial minimizar a amplitude $\Delta G$. Especificamente, hacks como "comer vegetais (fibras) primeiro", "evitar carboidratos refinados", e "fazer uma caminhada leve de 15 minutos após as refeições (para ativar os transportadores GLUT4 e levar glicose aos músculos independentemente da insulina)" são muito eficazes.
 
-## 6. Design da Arquitetura: Construindo um Pipeline de Dados Local
+## 6. Design da Arquitetura: Construindo um [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) de Dados Local
 
 Vamos construir um pipeline de dados local para integrar e analisar dados biométricos e dados de produtividade.
 O fluxograma (diagrama Mermaid) abaixo ilustra o fluxo de obtenção de dados de APIs até a visualização em um painel (dashboard).
@@ -356,7 +356,7 @@ def check_and_ventilate():
 ```
 Se executarmos uma sequência cronológica em lote rodando via Cron e definirmos rotinas periódicas de execução sobre as lógicas desta estrutura de código perante temporizações programadas diárias, obteremos com toda certeza a implementação e formato base à via sistêmica focada em regulagem ambiental inteligente de escopo total autônomo. Isto proporcionará contínuos mantenimentos de sua moradia e habitação atinente às marcas otimizadas em saturações gasosas vinculadas a taxa na concentração perfeita e essencial do oxigênio interno sem a ocorrência indevida sob esquecimentos contidos no decurso ou passagem ao tempo; isto é, sua sala de ofício atuante sem prejuízo oxigenado em qualquer ponto do dia.
 
-## 13. Conclusão: O CI/CD do Sistema do Corpo Humano
+## 13. Conclusão: O [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) do Sistema do Corpo Humano
 
 Imagine tentar vislumbrar e considerar perante suas próprias e vitais complexidades sistêmicas corporais orgânicas sob a perspectiva na concepção equivalente referida a uma imensa matriz provida das formatações associadas com o viés num "Complexo Sistema Operacional e Sistêmico de Processamentos Distribuídos". Adotando a analogia para com os aparelhos biomédicos vestíveis atuando, em figurativo, relativas base com envios em referências ligadas à papéis relativos de instâncias (Metrics Exporters sob vias do tipo do Prometheus para coleta de logs/telemetria no Oura Ring), juntamente às ferramentas com roteiros com scripts a análises com via de suporte de formatação e base sob ecossistemas de tubos ligadas em linguagem Python aliada nas vias Pandas; assumindo referidas via nas tubulações da engenharia via Logs para destilar as avaliações no papel provindo emulados a instâncias tipo vias referentes Logstash/Fluentd e por remate base à conclusão culminam na formação sob o formato de resultados com os apurados diários a visualizarem em Dashboards análogos e focados nas formatações pautadas referentes as vias atuantes no papel de vias amparadas relativas à vias com exibições a la referidas do viés nas demonstrações analíticas de um (Grafana / e base no Streamlit) atestando sob relatórios expressos a referidas bases sobre a base em atestar perante toda a real saúde (integridade e a vitalidade sistêmica referida e atestada da total sua e inteira sistêmica vital Integridade Sistêmica orgânica perante o Escopo).
 

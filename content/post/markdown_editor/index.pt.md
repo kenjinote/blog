@@ -9,7 +9,7 @@ categories: ["blogging", "productivity", "editors"]
 tags: ["Markdown", "VS Code", "Neovim", "textlint"]
 ---
 
-Para continuar escrevendo um blog técnico, a otimização do ambiente de escrita é essencial. Neste artigo, vamos nos aprofundar nas configurações avançadas de editor para melhorar drasticamente a velocidade de escrita de blogs técnicos usando Markdown. Explicaremos tudo de forma abrangente, desde a customização extrema do Visual Studio Code (VS Code) e do Neovim, o uso de snippets, a introdução do textlint (uma ferramenta de verificação gramatical) e a automação através de pipelines de CI/CD, até as técnicas de escrita mais avançadas utilizando LLMs, como o GitHub Copilot.
+Para continuar escrevendo um blog técnico, a otimização do ambiente de escrita é essencial. Neste artigo, vamos nos aprofundar nas configurações avançadas de editor para melhorar drasticamente a velocidade de escrita de blogs técnicos usando Markdown. Explicaremos tudo de forma abrangente, desde a customização extrema do Visual Studio Code (VS Code) e do Neovim, o uso de snippets, a introdução do textlint (uma ferramenta de verificação gramatical) e a automação através de pipelines de [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/), até as técnicas de escrita mais avançadas utilizando LLMs, como o GitHub Copilot.
 
 ## 1. Modelo matemático para aumento da velocidade de escrita
 
@@ -227,9 +227,9 @@ Para consolidar quebras de linha consecutivas desnecessárias em apenas uma:
 
 Ao executar esses padrões utilizando o recurso de pesquisa e substituição do VS Code (modo de expressão regular) ou o comando `%s` do Neovim (`:%s/<b>\(.*?\)<\/b>/**\1**/g`), é possível unificar a formatação em um instante.
 
-### Verificação automática através de pipelines de CI/CD
+### Verificação automática através de pipelines de [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)
 
-Além disso, criaremos um pipeline de CI usando o GitHub Actions, para que o textlint seja executado automaticamente sempre que fizermos push de um artigo do blog. Isso previne preventivamente a implantação de artigos que violem as regras.
+Além disso, criaremos um pipeline de CI usando o [GitHub Actions](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/), para que o textlint seja executado automaticamente sempre que fizermos push de um artigo do blog. Isso previne preventivamente a implantação de artigos que violem as regras.
 
 ```mermaid
 flowchart TD
@@ -252,7 +252,7 @@ Na escrita de blogs técnicos de hoje, o uso de LLMs (Large Language Models) é 
 
 Você pode enviar os seguintes tipos de prompts sem sair do editor, utilizando o GitHub Copilot Chat no VS Code, ou o `ChatGPT.nvim` e `Copilot.vim` no Neovim.
 
-> "Crie um esboço em estrutura hierárquica Markdown, voltado para iniciantes, sobre os seguintes elementos técnicos: Docker, Kubernetes, CI/CD"
+> "Crie um esboço em estrutura hierárquica Markdown, voltado para iniciantes, sobre os seguintes elementos técnicos: [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)"
 
 Em seguida, os cabeçalhos e marcadores em Markdown são gerados instantaneamente. Precisamos apenas adicionar conteúdo a essa estrutura.
 
@@ -265,7 +265,7 @@ Explicamos sobre as configurações de editor que dobram a velocidade de escrita
 1. **Conscientização do modelo matemático**: Erradicar tarefas repetitivas para maximizar o $T_{saved}$.
 2. **Utilização do VS Code**: Omitir a digitação manual com extensões e snippets no `markdown.json`.
 3. **Customização extrema no Neovim**: Snippets dinâmicos com o `LuaSnip` e uso completo do teclado.
-4. **textlint e análise estática**: Integração do Linter local e CI/CD para reduzir o tempo de correção para perto de zero.
+4. **textlint e análise estática**: Integração do Linter local e [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) para reduzir o tempo de correção para perto de zero.
 5. **Integração de LLMs**: Fazer a IA gerar a estrutura do Markdown e o código de diagramas diretamente dentro do editor.
 
 Ao incorporar essas configurações no seu próprio ambiente, o "tédio" de escrever deve desaparecer, e a quantidade e qualidade da sua produção técnica melhorarão drasticamente. Que tal começar registrando apenas um pequeno snippet?

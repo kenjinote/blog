@@ -258,7 +258,7 @@ Die Faszination der [Ramsey-Theorie](https://kenji.blog/de/p/ramsey-theory/) lie
 
 ### Weiterführende Quellen
 
-- Ohio State University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): Einführung in 2-Kantenfärbungen und kleine Ramsey-Zahlen.
+- Ohio [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): Einführung in 2-Kantenfärbungen und kleine Ramsey-Zahlen.
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf): Vorlesungsskript zu Ramsey-artigen Fragestellungen einschließlich monotoner Teilfolgen.
 
 Die Abbildungen, Tabellen zur vollständigen Auszählung sowie die Wahrscheinlichkeits- und Häufigkeitsverteilungen in diesem Artikel wurden mit dem beiliegenden Python-Skript generiert.

@@ -146,7 +146,7 @@ Ada "Teorema Ambang Batas" dalam koreksi kesalahan kuantum. Jika tingkat kesalah
 Persamaan hampiran untuk tingkat kesalahan logis dinyatakan sebagai berikut:
 
 $$
-p_L \approx \Lambda \left( \frac{p}{p_{th}} \right)^{\frac{d+1}{2}}
+p_L \approx \[Lambda](https://kenji.blog/id/p/serverless-architecture-aws-lambda-cold-start/) \left( \frac{p}{p_{th}} \right)^{\frac{d+1}{2}}
 $$
 
 Di sini, $\Lambda$ adalah konstanta. Jika $p < p_{th}$, semakin besar $d$, maka semakin kecil $p_L$. Namun, jika $p > p_{th}$, menambahkan lebih banyak qubit fisik justru akan mengakumulasi noise, dan tingkat kesalahan logis akan memburuk.
@@ -168,7 +168,7 @@ Sejalan dengan usahanya untuk secara drastis menurunkan tingkat kesalahan, IBM j
 ### Pendekatan Google: Peningkatan Kualitas Qubit Logis
 Strategi Google lebih menekankan pada penurunan tingkat kesalahan satu qubit logis serendah mungkin (misalnya menurunkannya menjadi $10^{-6}$) daripada meningkatkan jumlah qubit fisik secara drastis. Berangkat dari titik tersebut, Google berupaya memapankan teknologi interkoneksi kuantum (Quantum Interconnects) untuk mentransfer keadaan kuantum antar modul, membidik sistem skala besar di mana ribuan hingga puluhan ribu qubit fisik dapat beroperasi secara paralel.
 
-Implementasi protokol untuk menjalankan gerbang non-Clifford dengan toleransi kesalahan, seperti penyulingan keadaan ajaib (Magic State Distillation), juga akan menjadi rintangan teknologi utama di masa mendatang. Untuk menjalankan algoritma Shor praktis dan memecahkan enkripsi RSA 2048-bit, kabarnya dibutuhkan ribuan qubit logis dengan tingkat kesalahan $10^{-8}$ atau lebih rendah, yang setara dengan jutaan hingga puluhan juta qubit fisik, menandakan bahwa perjalanan masih panjang.
+Implementasi protokol untuk menjalankan gerbang non-Clifford dengan toleransi kesalahan, seperti penyulingan keadaan ajaib (Magic [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Distillation), juga akan menjadi rintangan teknologi utama di masa mendatang. Untuk menjalankan algoritma Shor praktis dan memecahkan enkripsi RSA 2048-bit, kabarnya dibutuhkan ribuan qubit logis dengan tingkat kesalahan $10^{-8}$ atau lebih rendah, yang setara dengan jutaan hingga puluhan juta qubit fisik, menandakan bahwa perjalanan masih panjang.
 
 ---
 

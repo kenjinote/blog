@@ -13,8 +13,8 @@ description: 'Introduces a list of recommended extensions that make Visual Studi
 
 | Category | Name | Publisher | Description |
 |----|----|-----|-----|
-| Virtual / Container Management | Remote Development | Microsoft | Supports remote development by connecting to virtual containers / WSL via SSH |
-| Virtual / Container Management | Docker | Microsoft | Supports management of Docker containers |
+| Virtual / [Container](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/) Management | Remote Development | Microsoft | Supports remote development by connecting to virtual containers / WSL via SSH |
+| Virtual / Container Management | [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | Supports management of Docker containers |
 | Code Management | GitHub Pull Requests | GitHub | Manage GitHub Pull Requests within VSCode |
 | Code Management | GitHub Copilot | GitHub | Supports AI-based code completion |
 | Code Management | Git Graph | mhutchie | Graphically displays Git branches and commits |
@@ -24,7 +24,7 @@ description: 'Introduces a list of recommended extensions that make Visual Studi
 | Browser / Web Development | Vue Language Features (Volar) | Vue | Supports Vue language features |
 | Browser / Web Development | JavaScript (ES6) code snippets | charalampos karypidis | Provides JavaScript snippets |
 | Browser / Web Development | Tailwind CSS IntelliSense | Tailwind Labs | Provides Tailwind CSS snippets |
-| Cloud Development | AWS Toolkit | Amazon Web Services | Supports AWS development |
+| Cloud Development | AWS Toolkit | Amazon Web [Service](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/)s | Supports AWS development |
 | Cloud Development | Azure Tools | Microsoft | Supports Azure development |
 | Cloud Development | Google Cloud Tools | Google Cloud | Supports Google Cloud development |
 | Database | MySQL | Jun Han | Supports MySQL development |

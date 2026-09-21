@@ -19,7 +19,7 @@ Darüber hinaus steigen die Studiengebühren an Universitäten seit 1950 stetig 
 
 Andererseits scheint der durchschnittliche Gesamtkreditbetrag in letzter Zeit 3,24 Millionen Yen erreicht zu haben.
 
->Unter den Stipendiennutzern der Japan Student Services Organization beträgt der durchschnittliche Gesamtkreditbetrag 3.243.000 Yen. [Referenz](https://magazine.aruhi-corp.co.jp/0000-5086/#:~:text=%E5%80%9F%E5%85%A5%E7%B7%8F%E9%A1%8D%E3%81%AA%E3%81%A9%E3%81%AE%E5%B9%B3%E5%9D%87%E9%A1%8D%E3%81%AF&text=%E6%97%A5%E6%9C%AC%E5%AD%A6%E7%94%9F%E6%94%AF%E6%8F%B4%E6%A9%9F%E6%A7%8B%E3%81%AE%E5%A5%A8%E5%AD%A6%E9%87%91%E5%88%A9%E7%94%A8%E8%80%85%E3%81%AB%E3%81%8A%E3%81%84%E3%81%A6,%E4%BB%A5%E4%B8%8A%E3%82%92%E5%8D%A0%E3%82%81%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82)
+>Unter den Stipendiennutzern der Japan Student [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)s Organization beträgt der durchschnittliche Gesamtkreditbetrag 3.243.000 Yen. [Referenz](https://magazine.aruhi-corp.co.jp/0000-5086/#:~:text=%E5%80%9F%E5%85%A5%E7%B7%8F%E9%A1%8D%E3%81%AA%E3%81%A9%E3%81%AE%E5%B9%B3%E5%9D%87%E9%A1%8D%E3%81%AF&text=%E6%97%A5%E6%9C%AC%E5%AD%A6%E7%94%9F%E6%94%AF%E6%8F%B4%E6%A9%9F%E6%A7%8B%E3%81%AE%E5%A5%A8%E5%AD%A6%E9%87%91%E5%88%A9%E7%94%A8%E8%80%85%E3%81%AB%E3%81%8A%E3%81%84%E3%81%A6,%E4%BB%A5%E4%B8%8A%E3%82%92%E5%8D%A0%E3%82%81%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82)
 
 Wenn jemand im Alter von 22 Jahren mit Schulden in Höhe von bis zu 3 Millionen Yen seinen Universitätsabschluss macht, verzögert sich das Heiratsalter natürlich, und es wird schwieriger, Kinder zu bekommen, was meiner Meinung nach eine der Ursachen für das Problem der sinkenden Geburtenrate in Japan ist.
 

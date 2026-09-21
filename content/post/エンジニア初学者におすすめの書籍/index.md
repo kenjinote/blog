@@ -23,9 +23,9 @@ description: 'プログラミング初心者から中級者へステップアッ
 ![img_10.png](img_10.webp)
 7. 達人に学ぶSQL徹底指南書
 ![img_9.png](img_9.webp)
-8. Docker実践ガイド
+8. [Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)実践ガイド
 ![img_8.png](img_8.webp)
-9. Kubernetes完全ガイド
+9. [Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)完全ガイド
 ![img_7.png](img_7.webp)
 10. CODE COMPLETE 第2版
 ![img_5.png](img_5.webp)

@@ -253,7 +253,7 @@ This is a blistering speed that far exceeds human reading speeds. On the other h
 The software ecosystem for running these powerful open source LLMs in a local environment is currently very robust. We'll introduce 3 representative tools.
 
 ### 1. Ollama
-Currently the easiest and most popular tool. Like Docker, it downloads and runs models with a single command. It supports Mac, Windows, and Linux.
+Currently the easiest and most popular tool. Like [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/), it downloads and runs models with a single command. It supports Mac, Windows, and Linux.
 By opening a terminal and typing the following command, Llama 3 will start up.
 
 ```bash

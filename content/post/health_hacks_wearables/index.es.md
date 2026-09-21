@@ -356,7 +356,7 @@ def check_and_ventilate():
 ```
 Al ejecutar periódicamente un script de este tipo mediante Cron, se completa un sistema de control de entorno autónomo que mantiene siempre la concentración de oxígeno óptima.
 
-## 13. Conclusión: CI/CD del sistema que es el cuerpo humano
+## 13. Conclusión: [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) del sistema que es el cuerpo humano
 
 Intenta considerar tu propio cuerpo como un único sistema distribuido complejo. El dispositivo portátil (Oura Ring) es el exportador de métricas (Prometheus) para la monitorización, el script de Python/Pandas es el pipeline de análisis de registros (Logstash/Fluentd), y los cambios diarios en la condición física y el rendimiento son la salud del sistema mostrada en el panel de control (Grafana/Streamlit).
 

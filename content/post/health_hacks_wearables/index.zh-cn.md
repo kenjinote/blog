@@ -356,7 +356,7 @@ def check_and_ventilate():
 ```
 通过使用Cron定期执行这样的脚本，就可以打造一个始终维持最佳氧气浓度的自主环境控制系统。
 
-## 13. 结论：人体系统的CI/CD
+## 13. 结论：人体系统的[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)
 
 请试着将你自己的身体视为一个复杂的分布式系统。可穿戴设备（Oura Ring）是用于监控的指标导出器（Prometheus），Python/Pandas脚本是日志分析管道（Logstash/Fluentd），而每天身体状态的变化和表现则是展示在仪表盘（Grafana/Streamlit）上的系统健康度。
 

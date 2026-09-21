@@ -45,7 +45,7 @@ $$
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
 $$
 
-Um estado puro (*Pure State*) $|\Psi\rangle$ desse sistema é representado como uma combinação linear (superposição) de $2^N$ vetores de base. Utilizando a notação bra-ket de Dirac (*Bra-ket notation*), qualquer estado quântico pode ser expandido da seguinte forma:
+Um estado puro (*Pure [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/)*) $|\Psi\rangle$ desse sistema é representado como uma combinação linear (superposição) de $2^N$ vetores de base. Utilizando a notação bra-ket de Dirac (*Bra-ket notation*), qualquer estado quântico pode ser expandido da seguinte forma:
 
 $$
 |\Psi\rangle = \sum_{x=0}^{2^N-1} c_x |x\rangle
@@ -537,7 +537,7 @@ $$
 
 ## 3.6 Colapso do Pacote de Ondas (Redução do Estado) pela Medição e Decoerência
 
-O axioma da medição compreende uma etapa adicional que gerou extensos debates na fundamentação teórica: qual o estado do sistema "após" a medição. Esse fenômeno é conhecido como "colapso do pacote de ondas" (Wavefunction collapse) ou "redução do estado" (State reduction). Formalizado pelo postulado da projeção de von Neumann (Projection postulate), esse processo é descrito como:
+O axioma da medição compreende uma etapa adicional que gerou extensos debates na fundamentação teórica: qual o estado do sistema "após" a medição. Esse fenômeno é conhecido como "colapso do pacote de ondas" (Wavefunction collapse) ou "redução do estado" ([State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) reduction). Formalizado pelo postulado da projeção de von Neumann (Projection postulate), esse processo é descrito como:
 
  **Postulado da Projeção** :
 Imediatamente após a medição revelar o autovalor $a_k$, o estado do sistema **$| \psi' \rangle$** transforma-se (colapsa) instantaneamente para o estado resultante da aplicação do operador de projeção $P_k$ sobre o vetor original, devidamente renormalizado:
@@ -787,7 +787,7 @@ T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix} = \begin{pmatrix} 1 & 
 $$
 
 Se fatorarmos a fase global **$e^{i\pi/8}$** , os componentes diagonais tornam-se **$e^{-i\pi/8}$** e **$e^{i\pi/8}$** , por isso é historicamente chamada de porta **$\pi/8$** .
-A porta T não pertence ao grupo de Clifford e quebra a eficiência da simulação clássica. No entanto, ao adicionar mesmo uma única porta T ao grupo de Clifford, é possível aproximar qualquer transformação unitária em um único qubit com precisão arbitrária, completando o "Conjunto Universal de Portas Quânticas (Universal Quantum Gate Set)", que é um teorema de extrema importância na teoria da computação quântica. Na computação quântica tolerante a falhas (fault-tolerant), como é difícil executar a porta T diretamente nos códigos de correção de erros, ela é implementada usando uma técnica de custo muito alto chamada "Destilação de Estados Mágicos (Magic State Distillation)".
+A porta T não pertence ao grupo de Clifford e quebra a eficiência da simulação clássica. No entanto, ao adicionar mesmo uma única porta T ao grupo de Clifford, é possível aproximar qualquer transformação unitária em um único qubit com precisão arbitrária, completando o "Conjunto Universal de Portas Quânticas (Universal Quantum Gate Set)", que é um teorema de extrema importância na teoria da computação quântica. Na computação quântica tolerante a falhas (fault-tolerant), como é difícil executar a porta T diretamente nos códigos de correção de erros, ela é implementada usando uma técnica de custo muito alto chamada "Destilação de Estados Mágicos (Magic [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) Distillation)".
 
 ## 4.5 Representação Exponencial de Portas de Rotação Arbitrárias e Universalidade
 
@@ -1007,7 +1007,7 @@ $$
 |\Psi\rangle = |\psi\rangle_A \otimes |\phi\rangle_B
 $$
 
-diz-se que o estado é separável. Por outro lado, um estado que **não pode** ser expresso como o produto tensorial dos estados de nenhum subsistema é definido como um **estado emaranhado (Entangled State)** .
+diz-se que o estado é separável. Por outro lado, um estado que **não pode** ser expresso como o produto tensorial dos estados de nenhum subsistema é definido como um **estado emaranhado (Entangled [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/))** .
 
 Em um sistema de 2 qubits, os estados com o emaranhamento mais forte são chamados de **estados de Bell** (Bell States) ou pares EPR. Os estados de Bell consistem nos quatro estados puros ortogonais a seguir, formando uma base ortonormal completa (base de Bell) do espaço de [Hilbert](https://kenji.blog/pt/p/hilbert/) quadridimensional:
 
@@ -1070,7 +1070,7 @@ $$
 \rho_A = \frac{1}{2} (|0\rangle\langle0| + |1\rangle\langle1|) = \frac{1}{2} I
 $$
 
-Isso significa que, se observarmos apenas o qubit A, seu estado é um estado completamente misto (Completely Mixed State), e a entropia de von Neumann $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ atinge seu valor máximo de $1$. Em outras palavras, "embora o sistema como um todo possua informação completa (estado puro), quando olhamos para cada subsistema individualmente, a informação é completamente indeterminada (entropia máxima)". Essa correlação extrema, impensável na mecânica clássica, constitui a própria essência do emaranhamento quântico máximo.
+Isso significa que, se observarmos apenas o qubit A, seu estado é um estado completamente misto (Completely Mixed [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/)), e a entropia de von Neumann $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ atinge seu valor máximo de $1$. Em outras palavras, "embora o sistema como um todo possua informação completa (estado puro), quando olhamos para cada subsistema individualmente, a informação é completamente indeterminada (entropia máxima)". Essa correlação extrema, impensável na mecânica clássica, constitui a própria essência do emaranhamento quântico máximo.
 
 ---
 
@@ -1939,7 +1939,7 @@ Essa equação é extremamente reveladora. Ela demonstra que a fase do estado do
 
 ## 8.4 Circuito Quântico de Determinação de Período Utilizando Superposição
 
-Estabelecidas as bases teóricas, podemos analisar o circuito quântico global do algoritmo de Shor e a evolução temporal do estado quântico (State Evolution) em cada etapa. O algoritmo faz uso de dois registradores quânticos.
+Estabelecidas as bases teóricas, podemos analisar o circuito quântico global do algoritmo de Shor e a evolução temporal do estado quântico ([State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) Evolution) em cada etapa. O algoritmo faz uso de dois registradores quânticos.
 O primeiro registrador é composto por $t \approx 2 \log_2 N$ qubits, de modo que a dimensão do espaço de estados é $M = 2^t$ (escolhe-se $t$ de forma a satisfazer a condição $M \ge N^2$). O segundo registrador conta com $L \approx \log_2 N$ qubits e armazena os resultados computacionais.
 
 ```mermaid
@@ -2552,7 +2552,7 @@ Tomemos como exemplo uma porta CNOT utilizada na extração de síndrome: ela in
 Para blindar os sistemas contra essa propagação em cadeia, concebeu-se a doutrina da "Computação Quântica Tolerante a Falhas" (FTQC). O requisito inviolável da tolerância a falhas estabelece que um erro físico pontual jamais deve se desdobrar em múltiplos erros no interior do mesmo bloco de código lógico.
 Com essa finalidade, a realização de portas lógicas impõe prioritariamente o uso de "operações transversais" (Transversal Operations). Nessas arquiteturas, o $i$-ésimo qubit de um bloco interage exclusivamente com o $i$-ésimo qubit de outro bloco, excluindo conexões cruzadas dentro de um mesmo registrador. Todavia, pelo seminal "Teorema de Eastin-Knill" (Eastin-Knill Theorem), demonstra-se matematicamente que é impossível implementar um conjunto universal e contínuo de portas lógicas quânticas recorrendo exclusivamente a operações transversais.
 
-O artifício engenhoso que rompe esse impedimento estrutural e viabiliza a FTQC universal é o protocolo de "Destilação de Estados Mágicos" (Magic State Distillation). O método consiste em preparar múltiplos estados ruidosos de portas fora do grupo de Clifford (notadamente o estado associado à porta $T$) e, mediante circuitos de correção operados unicamente com portas transversais de Clifford, destilar estados de fidelidade e pureza extraordinárias — os chamados "estados mágicos". Posteriormente, com o auxílio do teletransporte quântico, injetam-se essas operações não-Clifford (como a porta $T$) diretamente no estado lógico. Dado que esse processo de destilação despende vastos recursos de hardware (milhares de qubits físicos adicionais), a minimização da contagem de portas $T$ ( $T$-count) converte-se no principal desafio de otimização algorítmica para a computação quântica prática.
+O artifício engenhoso que rompe esse impedimento estrutural e viabiliza a FTQC universal é o protocolo de "Destilação de Estados Mágicos" (Magic [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) Distillation). O método consiste em preparar múltiplos estados ruidosos de portas fora do grupo de Clifford (notadamente o estado associado à porta $T$) e, mediante circuitos de correção operados unicamente com portas transversais de Clifford, destilar estados de fidelidade e pureza extraordinárias — os chamados "estados mágicos". Posteriormente, com o auxílio do teletransporte quântico, injetam-se essas operações não-Clifford (como a porta $T$) diretamente no estado lógico. Dado que esse processo de destilação despende vastos recursos de hardware (milhares de qubits físicos adicionais), a minimização da contagem de portas $T$ ( $T$-count) converte-se no principal desafio de otimização algorítmica para a computação quântica prática.
 
 A convergência de todos esses alicerces teóricos cristaliza-se no magistral "Teorema do Limiar Quântico" (Quantum Threshold Theorem).
 Formulado e demonstrado originariamente por Dorit Aharonov, Michael Ben-Or e outros pesquisadores, o teorema postula de modo definitivo:

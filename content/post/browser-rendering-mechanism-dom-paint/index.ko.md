@@ -16,7 +16,7 @@ tags:
 
 # 브라우저 렌더링의 원리: DOM 트리부터 Paint까지의 완전 해부
 
-Web브라우저는 우리가 일상적으로 이용하는 가장 친숙하고, 또한 가장 복잡한 소프트웨어 중 하나입니다. URL을 입력한 후 화면에 페이지가 표시될 때까지, 그 내부에서는 방대한 계산과 처리가 밀리초 단위로 이루어지고 있습니다. 이 일련의 처리 흐름을 **렌더링 파이프라인 (Rendering Pipeline)** 또는 **크리티컬 렌더링 패스 (Critical Rendering Path)** 라고 부릅니다.
+Web브라우저는 우리가 일상적으로 이용하는 가장 친숙하고, 또한 가장 복잡한 소프트웨어 중 하나입니다. URL을 입력한 후 화면에 페이지가 표시될 때까지, 그 내부에서는 방대한 계산과 처리가 밀리초 단위로 이루어지고 있습니다. 이 일련의 처리 흐름을 **렌더링 파이프라인 (Rendering [Pipeline](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/))** 또는 **크리티컬 렌더링 패스 (Critical Rendering Path)** 라고 부릅니다.
 
 본 문서에서는 브라우저(특히 Blink나 WebKit 등의 모던 렌더링 엔진)가 HTML, CSS, JavaScript를 어떻게 해석하고, 최종적으로 디스플레이 상의 픽셀로서 그리기(Paint)를 하는지, 그 완전한 메커니즘을 해부합니다.
 

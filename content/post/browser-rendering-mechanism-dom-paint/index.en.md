@@ -16,7 +16,7 @@ tags:
 
 # Browser Rendering Mechanism: Complete Anatomy from DOM Tree to Paint
 
-Web browsers are one of the most familiar and complex software we use on a daily basis. From the moment a URL is entered until the page is displayed on the screen, a vast amount of calculations and processing take place internally in milliseconds. This sequence of processing is called the **Rendering Pipeline** or **Critical Rendering Path**.
+Web browsers are one of the most familiar and complex software we use on a daily basis. From the moment a URL is entered until the page is displayed on the screen, a vast amount of calculations and processing take place internally in milliseconds. This sequence of processing is called the **Rendering [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)** or **Critical Rendering Path**.
 
 In this article, we will completely dissect the mechanism of how a browser (especially modern rendering engines like Blink and WebKit) interprets HTML, CSS, and JavaScript, and finally draws (Paint) them as pixels on the display.
 

@@ -68,7 +68,7 @@ Jika ada 2 qubit, kita dapat membuat superposisi dari 4 keadaan: $|00\rangle, |0
 
 Sifat paling kuat dan misterius dalam komputasi kuantum adalah **Keterikatan Kuantum (Entanglement)**. Fenomena yang disebut Einstein sebagai "aksi seram dari kejauhan" ini adalah sifat di mana dua atau lebih qubit sangat terkait satu sama lain, sedemikian rupa sehingga ketika keadaan salah satu qubit ditentukan, keadaan qubit lainnya akan langsung ditentukan pula secara instan, tidak peduli seberapa jauh jarak fisiknya.
 
-Salah satu "Keadaan Bell (Bell State)", yang merupakan keadaan keterikatan kuantum paling terkenal, keadaan $\Phi^+$ dinyatakan sebagai berikut:
+Salah satu "Keadaan Bell (Bell [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/))", yang merupakan keadaan keterikatan kuantum paling terkenal, keadaan $\Phi^+$ dinyatakan sebagai berikut:
 
 $$
 |\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}

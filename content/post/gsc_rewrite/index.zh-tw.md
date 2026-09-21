@@ -238,7 +238,7 @@ def extract_missing_keywords(documents):
 # print(missing_keywords)
 ```
 
-透過這項分析，可以量化地發現 **主題的遺漏 (內容差距)** ，例如：「原來排名前面的文章也提到了『部署至 Docker 容器的方法』與『建置 CI/CD 流程』，但我的文章卻沒有觸及」。
+透過這項分析，可以量化地發現 **主題的遺漏 (內容差距)** ，例如：「原來排名前面的文章也提到了『部署至 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 容器的方法』與『建置 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 流程』，但我的文章卻沒有觸及」。
 
 發現的重要關鍵字群不能只是隨便散佈在內文中，而是必須將它們作為有意義的段落，以 **H2 或 H3 標題 (Heading 標籤)** 的形式加入，並針對標題撰寫詳細的技術解說與程式碼片段，如此一來便能大幅提升 Google 的評價。
 
@@ -246,7 +246,7 @@ def extract_missing_keywords(documents):
 
 ## 7. 數據管道與持續改善循環
 
-上述解說的流程並不是做一次就結束了，將其管道化 (Pipeline) 並持續執行，才是 SEO 成功的關鍵。以下使用 Mermaid 的流程圖來展示整體的架構與營運流程。
+上述解說的流程並不是做一次就結束了，將其管道化 ([Pipeline](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)) 並持續執行，才是 SEO 成功的關鍵。以下使用 Mermaid 的流程圖來展示整體的架構與營運流程。
 
 ```mermaid
 flowchart TD

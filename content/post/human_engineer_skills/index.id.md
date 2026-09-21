@@ -36,7 +36,7 @@ Kendala paling signifikan dalam perhitungan ini adalah kompleksitas komputasi ya
 
 $$ \text{Complexity} = O(N^2 \cdot d) $$
 
-Dalam beberapa tahun terakhir, penelitian tentang pengoptimalan di tingkat perangkat keras seperti FlashAttention, Sparse Attention, dan bahkan arsitektur alternatif yang dapat memproses dalam waktu linier $O(N)$ seperti Mamba (State Space Models) sedang berkembang, tetapi masih sangat sulit untuk "sepenuhnya memahami konteks yang tak terbatas dan menghasilkan output yang dioptimalkan secara keseluruhan."
+Dalam beberapa tahun terakhir, penelitian tentang pengoptimalan di tingkat perangkat keras seperti FlashAttention, Sparse Attention, dan bahkan arsitektur alternatif yang dapat memproses dalam waktu linier $O(N)$ seperti Mamba ([State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Space Models) sedang berkembang, tetapi masih sangat sulit untuk "sepenuhnya memahami konteks yang tak terbatas dan menghasilkan output yang dioptimalkan secara keseluruhan."
 
 Selain itu, bahkan jika jendela konteks (context window) secara fisik dapat diperluas, fenomena yang disebut "Lost in the Middle" (Kehilangan Informasi di Tengah) akan terjadi. LLM cenderung sangat dipengaruhi oleh informasi di awal dan akhir prompt, dan cenderung mengabaikan persyaratan atau kendala penting yang ditempatkan di tengah. Inilah sebabnya mengapa jika Anda meminta LLM untuk membaca seluruh kode sumber sistem perusahaan yang berjumlah puluhan ribu baris dan menginstruksikannya untuk "melakukan refactoring yang optimal", ia akan menghasilkan kode yang secara lokal benar tetapi secara keseluruhan berantakan.
 

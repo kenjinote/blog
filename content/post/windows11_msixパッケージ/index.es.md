@@ -70,7 +70,7 @@ Aunque es muy fluido, si utilizas el certificado autofirmado (Test Certificate) 
 
 ## 4. Enfoque B: Creación utilizando la línea de comandos (MakeAppx.exe)
 
-Las herramientas de línea de comandos son necesarias para la automatización en canalizaciones CI/CD o cuando se reempaquetan manualmente un conjunto de archivos desde un instalador existente. Si el Windows SDK está instalado, puedes acceder a las siguientes herramientas desde el Símbolo del sistema para desarrolladores.
+Las herramientas de línea de comandos son necesarias para la automatización en canalizaciones [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) o cuando se reempaquetan manualmente un conjunto de archivos desde un instalador existente. Si el Windows SDK está instalado, puedes acceder a las siguientes herramientas desde el Símbolo del sistema para desarrolladores.
 
 ### 1. Preparación del archivo de manifiesto
 En el directorio raíz del paquete, crea un `AppxManifest.xml` con la información mínima necesaria.

@@ -19,7 +19,7 @@ Auf der anderen Seite hat sich das Risiko von Datenschutzverletzungen im Zusamme
 
 Um Daten effizient zu sammeln und zu nutzen, setzen Unternehmen verschiedene Datenarchitekturen ein. Es gab einen Übergang vom einst vorherrschenden „Data Warehouse“ zum „Data Lake“, der alle Daten einschließlich unstrukturierter Daten zentral verwaltet, und heute erleben wir einen Paradigmenwechsel zum „Data Mesh“, einer verteilten Architektur.
 
-### Zentralisierter Data Lake und Anonymisierungs-Pipeline
+### Zentralisierter Data Lake und Anonymisierungs-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)
 
 Ein Data Lake ist ein Speicher-Repository, das riesige Mengen an Rohdaten in ihrem ursprünglichen Format speichert. Die direkte Verwendung von Rohdaten, die persönlich identifizierbare Informationen (PII) enthalten, für Analysen führt jedoch zu schwerwiegenden Compliance-Verstößen. Daher wird zwischen dem Data Lake und der Analyseumgebung eine strikte „Anonymisierungs-Pipeline“ (Anonymization Pipeline) implementiert.
 
@@ -35,7 +35,7 @@ flowchart TD
     C -->|"Audit-Protokolle"| G["Sicherheits- & Compliance-Hub"]
 ```
 
-In solch einer Pipeline werden Prozesse wie Hashing, Maskierung und Verschlüsselung automatisch bei der Dateneingabe angewendet. Wie jedoch später erläutert wird, kann eine einfache Maskierung oder Pseudonymisierung das Risiko der „Re-Identifizierung“ (Re-identification) durch Abgleich mit anderen Datenquellen nicht vollständig ausschließen.
+In solch einer [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) werden Prozesse wie Hashing, Maskierung und Verschlüsselung automatisch bei der Dateneingabe angewendet. Wie jedoch später erläutert wird, kann eine einfache Maskierung oder Pseudonymisierung das Risiko der „Re-Identifizierung“ (Re-identification) durch Abgleich mit anderen Datenquellen nicht vollständig ausschließen.
 
 ## 2. Tiefes Verständnis datenschutzverbessernder Technologien (PETs)
 

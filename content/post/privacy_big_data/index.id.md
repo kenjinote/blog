@@ -19,7 +19,7 @@ Namun, di sisi lain, risiko pelanggaran privasi yang menyertai pengumpulan dan p
 
 Untuk mengumpulkan dan memanfaatkan data secara efisien, perusahaan mengadopsi berbagai arsitektur data. Transisi telah terjadi dari "Data Warehouse" (Gudang Data) yang dulunya mainstream, menuju "Data Lake" (Danau Data) yang mengelola semua data secara terpusat termasuk data tidak terstruktur, dan saat ini sedang terjadi pergeseran paradigma menuju "Data Mesh" (Jaring Data) yang merupakan arsitektur terdistribusi.
 
-### Data Lake Terpusat dan Pipeline Anonimisasi
+### Data Lake Terpusat dan [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) Anonimisasi
 
 Data Lake adalah repositori penyimpanan yang menyimpan data mentah dalam jumlah besar dalam format aslinya. Namun, menggunakan data mentah yang mengandung informasi pengenal pribadi (PII: Personally Identifiable Information) langsung untuk analisis akan menyebabkan pelanggaran kepatuhan yang serius. Oleh karena itu, "Pipeline Anonimisasi" (Anonymization Pipeline) yang ketat diimplementasikan antara Data Lake dan lingkungan analisis.
 

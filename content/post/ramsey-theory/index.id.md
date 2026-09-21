@@ -258,7 +258,7 @@ Daya tarik [Teori Ramsey](https://kenji.blog/id/p/ramsey-theory/) bukanlah membu
 
 ### Referensi
 
-- Ohio State University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): Penjelasan tentang pewarnaan 2 warna pada sisi graf dan bilangan Ramsey berukuran kecil.
+- Ohio [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): Penjelasan tentang pewarnaan 2 warna pada sisi graf dan bilangan Ramsey berukuran kecil.
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf): Catatan kuliah mengenai cara berpikir ala Ramsey, termasuk subbarisan monoton.
 
 Diagram, tabel penelusuran lengkap, serta distribusi probabilitas dan kuantitas dalam artikel ini dihasilkan menggunakan skrip Python yang disertakan.

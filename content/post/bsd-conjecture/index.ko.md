@@ -34,7 +34,7 @@ $$
 \Delta = -16(4a^3 + 27b^2) \neq 0
 $$
 
-기하학적으로 이 곡선은 복소수체 $\mathbb{C}$ 상에서 생각하면 토러스(도넛 모양) 형태를 띠고 있습니다. 이는 바이어슈트라스의 $\wp$ 함수를 사용한 복소 토러스 $\mathbb{C}/\Lambda$($\Lambda$는 격자)와의 동형 대응으로부터 보여집니다.
+기하학적으로 이 곡선은 복소수체 $\mathbb{C}$ 상에서 생각하면 토러스(도넛 모양) 형태를 띠고 있습니다. 이는 바이어슈트라스의 $\wp$ 함수를 사용한 복소 토러스 $\mathbb{C}/\[Lambda](https://kenji.blog/ko/p/serverless-architecture-aws-lambda-cold-start/)$($\Lambda$는 격자)와의 동형 대응으로부터 보여집니다.
 
 ### 2.2. 유리점과 군 구조
 
@@ -139,7 +139,7 @@ BSD 추측을 서술하는 데 있어서 결정적으로 중요한 것은, $L(E,
 모듈러라는 것은, $L(E, s)$가 어떤 무게(weight) 2의 모듈러 형식 $f$의 L-함수 $L(f, s)$와 완전히 일치함을 의미합니다. 모듈러 형식의 L-함수는 헤케(Hecke)의 이론에 의해 전체 복소평면으로 해석적 연속이 되며, 다음과 같은 함수 등식을 만족합니다.
 
 $$
-\Lambda(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
+\[Lambda](https://kenji.blog/ko/p/serverless-architecture-aws-lambda-cold-start/)(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
 $$
 $$
 \Lambda(E, 2-s) = w \Lambda(E, s)

@@ -23,9 +23,9 @@ description: 'Un incontournable pour les ingénieurs souhaitant passer de début
 ![img_10.png](img_10.webp)
 7. Guide complet SQL par des experts
 ![img_9.png](img_9.webp)
-8. Guide pratique Docker
+8. Guide pratique [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/)
 ![img_8.png](img_8.webp)
-9. Guide complet Kubernetes
+9. Guide complet [Kubernetes](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/)
 ![img_7.png](img_7.webp)
 10. Code Complete 2ème édition
 ![img_5.png](img_5.webp)

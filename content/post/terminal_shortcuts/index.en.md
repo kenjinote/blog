@@ -163,7 +163,7 @@ One of the most frequent actions in terminal operations is **"finding a complex 
 
 The tool that elegantly solves this problem is **`fzf`**, an ultra-fast general-purpose fuzzy finder written in Go.
 
-## 4.1. Fuzzy Search Pipeline with fzf
+## 4.1. Fuzzy Search [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) with fzf
 
 When `fzf` is integrated into command history search, processing is done in a pipeline like the following.
 
@@ -264,7 +264,7 @@ If you launch one process (like a local server) in a single terminal window, you
 
 The solution to this is a **terminal multiplexer**, which can divide the screen into multiple panes and maintain multiple sessions in the background.
 
-## 6.1. tmux Architecture and State Transitions (Linux / macOS)
+## 6.1. tmux Architecture and [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Transitions (Linux / macOS)
 
 `tmux` is a powerful multiplexer with a server-client architecture. To prevent shortcut conflicts with other programs, tmux operations always require pressing a **prefix key (default is Ctrl+B)** first.
 
@@ -323,7 +323,7 @@ With this, simply pressing `Alt+Shift+D` within PowerShell splits the screen, an
 
 ---
 
-# 7. Practical Workflow Construction Example
+# 7. Practical [Workflow](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) Construction Example
 
 By combining the elements introduced so far (Emacs keybindings, PSReadLine, fzf, aliases, multiplexers), daily tasks are dramatically accelerated.
 

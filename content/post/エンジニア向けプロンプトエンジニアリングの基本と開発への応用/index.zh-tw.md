@@ -71,7 +71,7 @@ $$ p_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)} $$
 
 ### 2.1 系統提示詞：定義全域限制與角色
 
-系統提示詞是用來定義給 LLM 的 **全域限制、角色 (Persona)、以及基本行為規則** 。如果用軟體設計來比喻的話，它扮演著應用程式的「環境變數」或「基礎類別」，或是容器的「Dockerfile」般的角色。
+系統提示詞是用來定義給 LLM 的 **全域限制、角色 (Persona)、以及基本行為規則** 。如果用軟體設計來比喻的話，它扮演著應用程式的「環境變數」或「基礎類別」，或是容器的「[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/)file」般的角色。
 
 優秀的系統提示詞能戲劇性地穩定輸出的品質與格式。
 
@@ -193,7 +193,7 @@ graph TD
 
 ---
 
-## 4. Agentic Workflow 與 ReAct (Reasoning and Acting)
+## 4. Agentic [Workflow](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 與 ReAct (Reasoning and Acting)
 
 LLM 的應用正從單一文字的輸入輸出，急速進化到能自主制定計畫、一邊與外部環境互動一邊完成任務的 **AI 代理 (AI Agents)** 領域。構成這個代理架構核心的範式便是 **ReAct (Reasoning and Acting)** 。
 
@@ -220,7 +220,7 @@ graph LR
 工程師會在提供系統提示詞的同時，交給 LLM「可用工具群的定義 (JSON 綱要)」。LLM 會解析提示詞的上下文，當它判斷應該使用工具時，便不會輸出一般文字，而是輸出「應呼叫的函式名稱」與「該引數的 JSON」。應用程式端在執行該函式後，將結果再次回傳給 LLM，這樣就形成了迴圈。
 
 **在開發上的應用實例 (自主型除錯代理)：**
-當 CI/CD 流程中測試失敗時，若要建立一個會調查原因並生成 Patch 的代理，我們會提供 LLM 以下的工具。
+當 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 流程中測試失敗時，若要建立一個會調查原因並生成 Patch 的代理，我們會提供 LLM 以下的工具。
 
 1. `search_codebase(regex_pattern)`: 在版本庫內的程式碼中使用正規表示式搜尋。
 2. `view_file_content(file_path, start_line, end_line)`: 讀取指定檔案的內容。
@@ -368,7 +368,7 @@ def is_valid_ipv4(ip_str):
 2. **執行**: 用待評估的提示詞與模型，針對測試集生成輸出。
 3. **評估**: 準備好評估用的提示詞 (Meta-prompt)，指示 Judge LLM：「生成的輸出是否有滿足需求，請給出 1 到 5 分的評分」。
 
-藉由這種方法，便能在 CI/CD 流程上自動偵測修改提示詞時發生的效能退化。提示工程正從講求手感的「調整提示詞」，進化為由資料驅動並具有重現性的「工程學」。
+藉由這種方法，便能在 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 流程上自動偵測修改提示詞時發生的效能退化。提示工程正從講求手感的「調整提示詞」，進化為由資料驅動並具有重現性的「工程學」。
 
 ---
 

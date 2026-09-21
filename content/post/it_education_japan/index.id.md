@@ -165,7 +165,7 @@ Sebagian besar perangkat yang digunakan sebagai spesifikasi standar Konsep GIGA 
 - Memori (RAM): 4GB (Kapasitas ini hampir tidak cukup untuk menjalankan OS modern)
 - Penyimpanan (eMMC): 32GB ~ 64GB (Kecepatan I/O yang sangat lambat)
 
-Akibat kendala perangkat keras yang sangat minim ini, pada praktiknya mustahil untuk membangun "lingkungan pengembangan lokal" yang biasa digunakan sehari-hari oleh perekayasa (engineer) profesional. Menggunakan Docker untuk menjalankan container Linux, menjalankan IDE yang berat seperti Visual Studio Code dengan fitur penuh, atau memulai server lokal seperti Node.js atau Python dan menginstal library yang berat, akan langsung menyebabkan memori habis dan sistem berhenti (freeze).
+Akibat kendala perangkat keras yang sangat minim ini, pada praktiknya mustahil untuk membangun "lingkungan pengembangan lokal" yang biasa digunakan sehari-hari oleh perekayasa (engineer) profesional. Menggunakan [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) untuk menjalankan container Linux, menjalankan IDE yang berat seperti Visual Studio Code dengan fitur penuh, atau memulai server lokal seperti Node.js atau Python dan menginstal library yang berat, akan langsung menyebabkan memori habis dan sistem berhenti (freeze).
 
 Sebagai akibatnya, sekolah-sekolah terpaksa harus bergantung sepenuhnya pada Cloud IDE yang berjalan pada browser (seperti Google Colaboratory, Replit, atau alat web ringan yang disediakan oleh penerbit buku pelajaran).
 
@@ -204,7 +204,7 @@ Di Amerika Serikat, terdapat standar kurikulum K-12 yang ketat (dari taman kanak
 
 ### Jurang Kesempatan antara Keterampilan yang Dituntut dan yang Diajarkan
 
-Persyaratan yang dibutuhkan oleh industri modern, khususnya dari mega-venture dan perusahaan teknologi raksasa (seperti GAFAM) untuk lulusan perekayasa perangkat lunak yang baru lulus, semakin meningkat dengan sangat pesat setiap tahunnya. Mereka menuntut keahlian profesional yang mendalam dan luas, seperti pengembangan infrastruktur cloud-native (AWS, GCP, Kubernetes), arsitektur sistem terdistribusi menggunakan layanan mikro (microservices), implementasi alur (pipeline) pembelajaran mesin (machine learning), dan pengetahuan keamanan siber tingkat tinggi.
+Persyaratan yang dibutuhkan oleh industri modern, khususnya dari mega-venture dan perusahaan teknologi raksasa (seperti GAFAM) untuk lulusan perekayasa perangkat lunak yang baru lulus, semakin meningkat dengan sangat pesat setiap tahunnya. Mereka menuntut keahlian profesional yang mendalam dan luas, seperti pengembangan infrastruktur cloud-native (AWS, GCP, [Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)), arsitektur sistem terdistribusi menggunakan layanan mikro (microservices), implementasi alur (pipeline) pembelajaran mesin (machine learning), dan pengetahuan keamanan siber tingkat tinggi.
 
 Grafik berikut ini menggambarkan secara konseptual betapa jauhnya kesenjangan antara tingkat keterampilan yang disediakan dalam pendidikan sekolah di Jepang dengan apa yang dibutuhkan di garis depan dunia industri saat ini.
 

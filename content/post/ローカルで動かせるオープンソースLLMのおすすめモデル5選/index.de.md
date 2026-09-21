@@ -253,7 +253,7 @@ Dies ist eine enorme Geschwindigkeit, die die Lesegeschwindigkeit von Menschen b
 Das Software-Ökosystem zur Ausführung dieser leistungsstarken Open-Source-LLMs in einer lokalen Umgebung ist heute ebenfalls sehr ausgereift. Hier sind drei repräsentative Tools.
 
 ### 1. Ollama
-Dies ist derzeit das einfachste und beliebteste Tool. Ähnlich wie bei Docker übernimmt es mit einem einzigen Befehl alles vom Herunterladen des Modells bis zur Ausführung. Es unterstützt Mac, Windows und Linux.
+Dies ist derzeit das einfachste und beliebteste Tool. Ähnlich wie bei [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) übernimmt es mit einem einzigen Befehl alles vom Herunterladen des Modells bis zur Ausführung. Es unterstützt Mac, Windows und Linux.
 Öffnen Sie das Terminal und geben Sie einfach den folgenden Befehl ein, um Llama 3 zu starten:
 
 ```bash

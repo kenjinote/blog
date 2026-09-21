@@ -73,7 +73,7 @@ Der großartige mathematische Rahmen, den [Riemann](https://kenji.blog/de/p/riem
 Einstein schlug in der speziellen Relativitätstheorie das Konzept der „Raumzeit“ vor, in dem Zeit und Raum integriert wurden. Und in der **allgemeinen Relativitätstheorie** gelangte er zu der bahnbrechenden Idee: „Gravitation ist die Krümmung (Verzerrung) der Raumzeit durch massereiche Objekte.“
 
 $$
-R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
+R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \[Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/) g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
 $$
 
 In der obigen Einstein-Gleichung repräsentiert die linke Seite die geometrische Struktur (Krümmung) der Raumzeit und die rechte Seite die Verteilung von Materie und Energie. Mit anderen Worten: **Materie bestimmt, wie sich die Raumzeit krümmt, und die gekrümmte Raumzeit bestimmt die Bewegung der Materie**.

@@ -34,7 +34,7 @@ $$
 \Delta = -16(4a^3 + 27b^2) \neq 0
 $$
 
-Geometrically, when considered over the field of complex numbers $\mathbb{C}$, this curve has the shape of a torus (doughnut). This is shown from the isomorphic correspondence with the complex torus $\mathbb{C}/\Lambda$ ($\Lambda$ is a lattice) using the Weierstrass $\wp$-function.
+Geometrically, when considered over the field of complex numbers $\mathbb{C}$, this curve has the shape of a torus (doughnut). This is shown from the isomorphic correspondence with the complex torus $\mathbb{C}/\[Lambda](https://kenji.blog/en/p/serverless-architecture-aws-lambda-cold-start/)$ ($\Lambda$ is a lattice) using the Weierstrass $\wp$-function.
 
 ### 2.2. Rational Points and Group Structure
 
@@ -139,7 +139,7 @@ This problem was completely solved by the **Modularity Theorem** (formerly the T
 Being modular means that $L(E, s)$ completely matches the L-function $L(f, s)$ of a certain modular form $f$ of weight 2. The L-function of a modular form is analytically continued to the entire complex plane by Hecke's theory, and satisfies the following functional equations:
 
 $$
-\Lambda(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
+\[Lambda](https://kenji.blog/en/p/serverless-architecture-aws-lambda-cold-start/)(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
 $$
 $$
 \Lambda(E, 2-s) = w \Lambda(E, s)

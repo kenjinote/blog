@@ -11,7 +11,7 @@ tags: ["PowerShell", "Bash", "Shortcuts", "PSReadLine", "fzf"]
 
 # Einführung: Überwältigende Produktivitätssteigerungen durch effiziente Terminal-Bedienung
 
-In der modernen Softwareentwicklung ist das Terminal (Command Line Interface) das wichtigste Werkzeug, das als die "Hände und Füße" des Entwicklers fungiert. Es ist keine Übertreibung zu sagen, dass Entwickler den Großteil ihres Tages im Terminal verbringen, sei es für die Verwaltung von Cloud-Infrastrukturen, das Erstellen von Containern, die Versionskontrolle mit Git oder die Ausführung verschiedener Skripte.
+In der modernen Softwareentwicklung ist das Terminal (Command Line Interface) das wichtigste Werkzeug, das als die "Hände und Füße" des Entwicklers fungiert. Es ist keine Übertreibung zu sagen, dass Entwickler den Großteil ihres Tages im Terminal verbringen, sei es für die Verwaltung von Cloud-Infrastrukturen, das Erstellen von [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n, die Versionskontrolle mit Git oder die Ausführung verschiedener Skripte.
 
 Obwohl viele Entwickler die grundlegenden Befehle des Terminals (`cd`, `ls`, `git`, `docker` usw.) beherrschen, übersehen sie oft die Perspektive, **"die Eingabe in das Terminal selbst zu optimieren"**. Zur Maus greifen, den Cursor bewegen, wiederholt die Pfeiltasten drücken, um Tippfehler in Befehlen zu korrigieren... Die Anhäufung dieser kleinen Verluste führt über einen langen Zeitraum zu einer enormen Zeitverschwendung und kognitiven Belastung.
 
@@ -163,9 +163,9 @@ Eine der häufigsten Aktionen bei der Terminal-Bedienung ist das **"Suchen und e
 
 Eine elegante Lösung für dieses Problem ist das in Go geschriebene, ultraschnelle, universelle Fuzzy-Suchwerkzeug **`fzf`**.
 
-## 4.1. Die Pipeline der Fuzzy-Suche mit fzf
+## 4.1. Die [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) der Fuzzy-Suche mit fzf
 
-Wenn `fzf` in die Suche des Befehlsverlaufs integriert wird, läuft die Verarbeitung in der folgenden Pipeline ab.
+Wenn `fzf` in die Suche des Befehlsverlaufs integriert wird, läuft die Verarbeitung in der folgenden [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) ab.
 
 ```mermaid
 flowchart TD
@@ -323,7 +323,7 @@ Dadurch wird der Bildschirm einfach durch Drücken von `Alt+Shift+D` innerhalb v
 
 ---
 
-# 7. Beispiel für den Aufbau eines praktischen Workflows
+# 7. Beispiel für den Aufbau eines praktischen [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s
 
 Durch die Kombination der bisher vorgestellten Elemente (Emacs-Keybindings, PSReadLine, fzf, Aliase, Multiplexer) werden alltägliche Aufgaben drastisch beschleunigt.
 

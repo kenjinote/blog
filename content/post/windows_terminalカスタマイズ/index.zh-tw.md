@@ -226,7 +226,7 @@ Windows Terminal 原生具備類似 tmux 或 screen 等終端機多工器（Term
 ]
 ```
 
-設定上述的按鍵繫結後，您可以使用 `Alt + Shift + 方向鍵` 調整窗格大小，使用 `Alt + 方向鍵` 在窗格之間瞬間移動焦點。藉此，您可以在一個窗格中啟動 Node.js 本機伺服器並監控日誌，同時在另一個窗格執行 Git 指令，還能在另一個窗格確認 Docker 容器的狀態，流暢地進行進階的並行作業。
+設定上述的按鍵繫結後，您可以使用 `Alt + Shift + 方向鍵` 調整窗格大小，使用 `Alt + 方向鍵` 在窗格之間瞬間移動焦點。藉此，您可以在一個窗格中啟動 Node.js 本機伺服器並監控日誌，同時在另一個窗格執行 Git 指令，還能在另一個窗格確認 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 容器的狀態，流暢地進行進階的並行作業。
 
 ## 4.1 Quake Mode（全域下拉式終端機）
 
@@ -250,7 +250,7 @@ wt -p "PowerShell 7" -d "C:\Projects\MyApp" ; split-pane -p "Ubuntu-22.04" -d "/
 
 # 6. 提示字元的演化論 1：PowerShell 與 Oh My Posh
 
-能讓 Windows 環境中的標準殼層 PowerShell（特別是支援跨平台的最新版 PowerShell 7 / PowerShell Core）發生戲劇性進化的，就是「 **Oh My Posh** 」。Oh My Posh 是一款支援所有殼層的自訂提示字元引擎，它能優美且視覺化地呈現開發所需的所有狀態，如目前的目錄、Git 分支與變更狀態、Node.js 或 Python 的版本、Kubernetes 的上下文（Context）等。
+能讓 Windows 環境中的標準殼層 PowerShell（特別是支援跨平台的最新版 PowerShell 7 / PowerShell Core）發生戲劇性進化的，就是「 **Oh My Posh** 」。Oh My Posh 是一款支援所有殼層的自訂提示字元引擎，它能優美且視覺化地呈現開發所需的所有狀態，如目前的目錄、Git 分支與變更狀態、Node.js 或 Python 的版本、[Kubernetes](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/) 的上下文（Context）等。
 
 下圖展示了在啟動 PowerShell 時，Oh My Posh 是如何被載入，以及提示字元是如何渲染的序列圖。
 

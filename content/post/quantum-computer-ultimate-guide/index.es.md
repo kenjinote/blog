@@ -45,7 +45,7 @@ $$
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
 $$
 
-El estado puro (Pure State) $|\Psi\rangle$ de este sistema se expresa como una combinación lineal (superposición) de $2^N$ vectores de la base. Utilizando la notación bra-ket de Dirac, cualquier estado cuántico se puede desarrollar de la siguiente manera:
+El estado puro (Pure [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/)) $|\Psi\rangle$ de este sistema se expresa como una combinación lineal (superposición) de $2^N$ vectores de la base. Utilizando la notación bra-ket de Dirac, cualquier estado cuántico se puede desarrollar de la siguiente manera:
 
 $$
 |\Psi\rangle = \sum_{x=0}^{2^N-1} c_x |x\rangle
@@ -537,7 +537,7 @@ $$
 
 ## 3.6 Colapso de la Función de Onda (Reducción del Estado) por Observación y Decoherencia
 
-El axioma de la observación incluye el paso más polémico de qué le sucede al estado del sistema "después" de la observación. Este es el fenómeno conocido como "colapso de la función de onda" (Wavefunction collapse) o "reducción del estado" (State reduction). Este proceso, conocido como el postulado de proyección de von Neumann (Projection postulate), se formula de la siguiente manera:
+El axioma de la observación incluye el paso más polémico de qué le sucede al estado del sistema "después" de la observación. Este es el fenómeno conocido como "colapso de la función de onda" (Wavefunction collapse) o "reducción del estado" ([State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) reduction). Este proceso, conocido como el postulado de proyección de von Neumann (Projection postulate), se formula de la siguiente manera:
 
  **Postulado de Proyección** :
 Inmediatamente después de obtener el valor propio $a_k$ mediante observación, el estado del sistema **$| \psi' \rangle$** cambia (colapsa) instantáneamente aplicando el operador de proyección $P_k$ correspondiente al vector de estado original y volviéndolo a normalizar.
@@ -787,7 +787,7 @@ T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix} = \begin{pmatrix} 1 & 
 $$
 
 Si factorizamos la fase global **$e^{i\pi/8}$** , las componentes diagonales se convierten en **$e^{-i\pi/8}$** y **$e^{i\pi/8}$** , por lo que históricamente también se la llama puerta **$\pi/8$** .
-La puerta T no pertenece al grupo de Clifford, y destruye la eficiencia de la simulación clásica. Sin embargo, existe un teorema extremadamente importante en la teoría de la computación cuántica que establece que al añadir incluso una sola puerta T al grupo de Clifford, se completa un "Conjunto Universal de Puertas Cuánticas" (Universal Quantum Gate Set), que puede aproximar cualquier transformación unitaria sobre un solo qubit con cualquier precisión deseada. En la computación cuántica tolerante a fallos, debido a que es difícil ejecutar la puerta T directamente sobre códigos de corrección de errores, se implementa utilizando un método de coste muy alto llamado "destilación de estados mágicos" (Magic State Distillation).
+La puerta T no pertenece al grupo de Clifford, y destruye la eficiencia de la simulación clásica. Sin embargo, existe un teorema extremadamente importante en la teoría de la computación cuántica que establece que al añadir incluso una sola puerta T al grupo de Clifford, se completa un "Conjunto Universal de Puertas Cuánticas" (Universal Quantum Gate Set), que puede aproximar cualquier transformación unitaria sobre un solo qubit con cualquier precisión deseada. En la computación cuántica tolerante a fallos, debido a que es difícil ejecutar la puerta T directamente sobre códigos de corrección de errores, se implementa utilizando un método de coste muy alto llamado "destilación de estados mágicos" (Magic [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) Distillation).
 
 ## 4.5 Representación Exponencial y Universalidad de las Puertas de Rotación Arbitrarias
 
@@ -1007,7 +1007,7 @@ $$
 |\Psi\rangle = |\psi\rangle_A \otimes |\phi\rangle_B
 $$
 
-se dice que dicho estado es separable. Por el contrario, un estado que **no** puede expresarse como el producto tensorial de ningún estado de sus subsistemas se define como un **estado entrelazado (Entangled State)** .
+se dice que dicho estado es separable. Por el contrario, un estado que **no** puede expresarse como el producto tensorial de ningún estado de sus subsistemas se define como un **estado entrelazado (Entangled [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/))** .
 
 En un sistema de dos cúbits, los estados que presentan el entrelazamiento cuántico más fuerte se denominan **estados de Bell** (Bell States) o pares EPR. Los estados de Bell están formados por los siguientes cuatro estados puros ortogonales y constituyen una base ortonormal completa (la base de Bell) del espacio de [Hilbert](https://kenji.blog/es/p/hilbert/) de 4 dimensiones:
 
@@ -1070,7 +1070,7 @@ $$
 \rho_A = \frac{1}{2} (|0\rangle\langle0| + |1\rangle\langle1|) = \frac{1}{2} I
 $$
 
-Esto significa que, si se observa únicamente el cúbit A, su estado es un estado completamente mezclado (Completely Mixed State), en el cual la entropía de von Neumann $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ alcanza su valor máximo de $1$. En otras palabras, la esencia del entrelazamiento cuántico máximo radica en esta correlación extrema imposible en la mecánica clásica: «a pesar de que el sistema en su totalidad posee información completa (un estado puro), al observar cada subsistema individual la información es totalmente indeterminada (entropía máxima)».
+Esto significa que, si se observa únicamente el cúbit A, su estado es un estado completamente mezclado (Completely Mixed [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/)), en el cual la entropía de von Neumann $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ alcanza su valor máximo de $1$. En otras palabras, la esencia del entrelazamiento cuántico máximo radica en esta correlación extrema imposible en la mecánica clásica: «a pesar de que el sistema en su totalidad posee información completa (un estado puro), al observar cada subsistema individual la información es totalmente indeterminada (entropía máxima)».
 
 ---
 
@@ -1939,7 +1939,7 @@ Esta formulación resulta sumamente reveladora. Muestra que la fase del estado d
 
 ## 8.4 El circuito cuántico para la búsqueda del período mediante superposición
 
-Habiendo establecido los fundamentos teóricos, examinemos en detalle el circuito cuántico completo del algoritmo de Shor y la evolución temporal del estado cuántico (State Evolution) en cada una de sus etapas. El algoritmo utiliza dos registros cuánticos.
+Habiendo establecido los fundamentos teóricos, examinemos en detalle el circuito cuántico completo del algoritmo de Shor y la evolución temporal del estado cuántico ([State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) Evolution) en cada una de sus etapas. El algoritmo utiliza dos registros cuánticos.
 El primer registro consta de $t \approx 2 \log_2 N$ cúbits, con una dimensión en su espacio de estados de $M = 2^t$ (se escoge $t$ de forma que se cumpla la condición $M \ge N^2$). El segundo registro consta de $L \approx \log_2 N$ cúbits y almacena el resultado del cómputo.
 
 ```mermaid
@@ -2552,7 +2552,7 @@ Por ejemplo, una compuerta CNOT utilizada para la extracción del síndrome prop
 La filosofía de diseño concebida para evitar esta cadena catastrófica es la "computación cuántica tolerante a fallos (FTQC)". La condición indispensable de la FTQC es que "un único error físico generado en el sistema no debe propagarse a más de un error dentro de un mismo bloque lógico".
 Para lograr esto, en la ejecución de compuertas lógicas se exige rigurosamente el uso de "operaciones transversales (Transversal Operations)". Se trata de una operación de compuerta segura en la que el $i$-ésimo cúbit físico interactúa únicamente con el $i$-ésimo cúbit físico de otro bloque (sin presentar acoplamientos cruzados dentro del mismo bloque). No obstante, el "teorema de Eastin-Knill (Eastin-Knill Theorem)" demuestra matemáticamente que es imposible construir un conjunto universal de compuertas continuas para la computación cuántica recurriendo exclusivamente a operaciones transversales.
 
-La varita mágica para eludir las restricciones de este teorema y lograr una FTQC universal es la "destilación de estados mágicos (Magic State Distillation)". Se prepara una gran cantidad de estados no Clifford ruidosos (por ejemplo, estados correspondientes a la compuerta $T$) y, a través de circuitos de corrección de errores que emplean exclusivamente operaciones de Clifford transversales, se extraen "estados mágicos" de pureza extremadamente alta. A continuación, aprovechando el principio de la teletransportación cuántica, se aplican indirectamente compuertas no Clifford (como la compuerta $T$) al estado lógico. Dado que este proceso de destilación consume una cantidad descomunal de recursos (cúbits físicos), en los algoritmos de la era FTQC "cómo minimizar el número de compuertas $T$" se convierte en un imperativo primordial.
+La varita mágica para eludir las restricciones de este teorema y lograr una FTQC universal es la "destilación de estados mágicos (Magic [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) Distillation)". Se prepara una gran cantidad de estados no Clifford ruidosos (por ejemplo, estados correspondientes a la compuerta $T$) y, a través de circuitos de corrección de errores que emplean exclusivamente operaciones de Clifford transversales, se extraen "estados mágicos" de pureza extremadamente alta. A continuación, aprovechando el principio de la teletransportación cuántica, se aplican indirectamente compuertas no Clifford (como la compuerta $T$) al estado lógico. Dado que este proceso de destilación consume una cantidad descomunal de recursos (cúbits físicos), en los algoritmos de la era FTQC "cómo minimizar el número de compuertas $T$" se convierte en un imperativo primordial.
 
 La culminación de todos estos esfuerzos teóricos es el "teorema del umbral cuántico (Quantum Threshold Theorem)".
 Este teorema, demostrado por Dorit Aharonov y Michael Ben-Or, declara rotundamente lo siguiente:

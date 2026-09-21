@@ -159,7 +159,7 @@ PowerShellスクリプトやC#アプリケーションからレジストリを�
 
 ## 8. PowerShellによるプログラマブルな安全な編集
 
-レジストリを手動で編集するリスクを極小化するためには、PowerShellスクリプトを用いて操作をコード化（Infrastructure as Code）し、自動化・再現性・テスト可能性を確保することが現代のベストプラクティスです。PowerShellは「Registry Provider」を備えており、ファイルシステム（C:ドライブなど）を操作するのと全く同じコマンドレット（`Get-ChildItem`, `Get-ItemProperty`, `New-Item` など）でレジストリを透過的に操作できます。
+レジストリを手動で編集するリスクを極小化するためには、PowerShellスクリプトを用いて操作をコード化（[Infrastructure as Code](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)）し、自動化・再現性・テスト可能性を確保することが現代のベストプラクティスです。PowerShellは「Registry Provider」を備えており、ファイルシステム（C:ドライブなど）を操作するのと全く同じコマンドレット（`Get-ChildItem`, `Get-ItemProperty`, `New-Item` など）でレジストリを透過的に操作できます。
 
 PowerShellではデフォルトで `HKLM:` や `HKCU:` という専用のPSDrive（ドライブレターのようなもの）がマウントされています。
 
@@ -398,7 +398,7 @@ Procmonを使用すると、OS上で発生するすべてのレジストリAPI�
 
 ## まとめ
 
-Windowsレジストリは、OSのあらゆる挙動とアプリケーションの設定を統合的に管理する強力で複雑な基盤システムです。手動による無秩序な編集には、数理的にも実証される高いシステム破損リスクが伴います。そのため、PowerShellやC#などのプログラマブルな手段を用いて、Infrastructure as Codeの原則に則り、安全かつテスト可能・再現性のある形で構成管理を行うことが現代のシステム管理と開発において不可欠です。本記事で解説した深いアーキテクチャの理解と実装パターンを活用し、より堅牢でセキュアなWindows環境の構築を目指してください。
+Windowsレジストリは、OSのあらゆる挙動とアプリケーションの設定を統合的に管理する強力で複雑な基盤システムです。手動による無秩序な編集には、数理的にも実証される高いシステム破損リスクが伴います。そのため、PowerShellやC#などのプログラマブルな手段を用いて、[Infrastructure as Code](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)の原則に則り、安全かつテスト可能・再現性のある形で構成管理を行うことが現代のシステム管理と開発において不可欠です。本記事で解説した深いアーキテクチャの理解と実装パターンを活用し、より堅牢でセキュアなWindows環境の構築を目指してください。
 
 
 

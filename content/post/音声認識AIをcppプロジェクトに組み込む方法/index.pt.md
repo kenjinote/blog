@@ -66,7 +66,7 @@ No modelo Whisper, geralmente são usados um tamanho de janela $N = 400$ (25ms),
 
 ---
 
-## 3. Arquitetura e Design do Pipeline
+## 3. Arquitetura e Design do [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)
 
 Vamos projetar o pipeline de processamento de áudio em uma aplicação C++. O fluxo começa com a entrada a partir de um arquivo ou microfone, passa pelo pré-processamento, pela inferência usando o `whisper.cpp` e culmina na saída de texto.
 

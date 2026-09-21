@@ -23,7 +23,7 @@ $$
 T \approx \exp \left( - \frac{2}{\hbar} \int_{0}^{a} \sqrt{2m(V_0 - E)} \, dx \right)
 $$
 
-Hier ist $\hbar$ das reduzierte Plancksche Wirkungsquantum. Nimmt die Breite der Barriere $a$ durch Miniaturisierung ab, steigt die Transmissionswahrscheinlichkeit $T$ exponentiell an. Folglich nimmt der sogenannte „Leckstrom“ (Leakage Current), der selbst im ausgeschalteten Zustand (Off-State) fließt, ein Ausmaß an, das nicht mehr vernachlässigt werden kann. Dies führt zu einem erhöhten Stromverbrauch sowie zu einer Wärmeentwicklung und bedeutet das Scheitern der Funktion als klassisches, deterministisches Schaltelement.
+Hier ist $\hbar$ das reduzierte Plancksche Wirkungsquantum. Nimmt die Breite der Barriere $a$ durch Miniaturisierung ab, steigt die Transmissionswahrscheinlichkeit $T$ exponentiell an. Folglich nimmt der sogenannte „Leckstrom“ (Leakage Current), der selbst im ausgeschalteten Zustand (Off-[State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) fließt, ein Ausmaß an, das nicht mehr vernachlässigt werden kann. Dies führt zu einem erhöhten Stromverbrauch sowie zu einer Wärmeentwicklung und bedeutet das Scheitern der Funktion als klassisches, deterministisches Schaltelement.
 
 Darüber hinaus darf die thermodynamische Grenze der Informationsverarbeitung nicht ignoriert werden. 1961 zeigte Rolf Landauer, dass beim Löschen von Informationen (bei Durchführung irreversibler logischer Operationen) unweigerlich Wärme erzeugt wird (Landauer-Prinzip). Die minimale Wärmemenge $\Delta Q$, die beim Löschen von 1 Bit an Information an die Umgebung abgegeben wird, wird wie folgt ausgedrückt:
 
@@ -45,7 +45,7 @@ $$
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
 $$
 
-Ein reiner Zustand (Pure State) $|\Psi\rangle$ dieses Systems wird als Linearkombination (Superposition) von $2^N$ Basisvektoren dargestellt. Bei Verwendung der Diracschen Bra-Ket-Notation (Bra-ket notation) kann ein beliebiger Quantenzustand wie folgt entwickelt werden:
+Ein reiner Zustand (Pure [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) $|\Psi\rangle$ dieses Systems wird als Linearkombination (Superposition) von $2^N$ Basisvektoren dargestellt. Bei Verwendung der Diracschen Bra-Ket-Notation (Bra-ket notation) kann ein beliebiger Quantenzustand wie folgt entwickelt werden:
 
 $$
 |\Psi\rangle = \sum_{x=0}^{2^N-1} c_x |x\rangle
@@ -537,7 +537,7 @@ $$
 
 ## 3.6 Kollaps des Wellenpakets durch Messung (Zustandsreduktion) und Dekohärenz
 
-Das Axiom der Messung enthält einen entscheidenden und vieldiskutierten Schritt: die Frage, was mit dem Zustand des Systems „nach“ der Messung geschieht. Dies ist das als „Kollaps des Wellenpakets (Wavefunction collapse)“ oder „Zustandsreduktion (State reduction)“ bekannte Phänomen. Dieser als von-Neumannsches Projektionspostulat (Projection postulate) bekannte Prozess wird wie folgt formuliert:
+Das Axiom der Messung enthält einen entscheidenden und vieldiskutierten Schritt: die Frage, was mit dem Zustand des Systems „nach“ der Messung geschieht. Dies ist das als „Kollaps des Wellenpakets (Wavefunction collapse)“ oder „Zustandsreduktion ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) reduction)“ bekannte Phänomen. Dieser als von-Neumannsches Projektionspostulat (Projection postulate) bekannte Prozess wird wie folgt formuliert:
 
  **Projektionspostulat** :
 Unmittelbar nachdem durch die Messung der Eigenwert $a_k$ erhalten wurde, verändert sich (kollabiert) der Zustand des Systems **$| \psi' \rangle$** instantan zu jenem Zustand, der durch Anwenden des entsprechenden Projektionsoperators $P_k$ auf den ursprünglichen Zustandsvektor und anschließende Renormierung entsteht:
@@ -787,7 +787,7 @@ T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix} = \begin{pmatrix} 1 & 
 $$
 
 Wenn man die globale Phase **$e^{i\pi/8}$** ausklammert, werden die Diagonalkomponenten **$e^{-i\pi/8}$** und **$e^{i\pi/8}$** , weshalb es historisch auch als **$\pi/8$** -Gatter bezeichnet wird.
-Das T-Gatter gehört nicht zur Clifford-Gruppe und zerstört die Effizienz der klassischen Simulation. Es existiert jedoch ein äußerst wichtiges Theorem in der Quantenberechnungstheorie, das besagt, dass das Hinzufügen von nur einem T-Gatter zur Clifford-Gruppe ein "Universelles Quantengatter-Set (Universal Quantum Gate Set)" vervollständigt, das in der Lage ist, jede unitäre Transformation auf einem einzelnen Qubit mit beliebiger Genauigkeit anzunähern. Im fehlertoleranten Quantencomputing ist es schwierig, das T-Gatter direkt auf einem fehlerkorrigierenden Code auszuführen, weshalb es mit einer sehr kostenintensiven Methode namens "Magische Zustandsdestillation (Magic State Distillation)" implementiert wird.
+Das T-Gatter gehört nicht zur Clifford-Gruppe und zerstört die Effizienz der klassischen Simulation. Es existiert jedoch ein äußerst wichtiges Theorem in der Quantenberechnungstheorie, das besagt, dass das Hinzufügen von nur einem T-Gatter zur Clifford-Gruppe ein "Universelles Quantengatter-Set (Universal Quantum Gate Set)" vervollständigt, das in der Lage ist, jede unitäre Transformation auf einem einzelnen Qubit mit beliebiger Genauigkeit anzunähern. Im fehlertoleranten Quantencomputing ist es schwierig, das T-Gatter direkt auf einem fehlerkorrigierenden Code auszuführen, weshalb es mit einer sehr kostenintensiven Methode namens "Magische Zustandsdestillation (Magic [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Distillation)" implementiert wird.
 
 ## 4.5 Exponentialdarstellung beliebiger Rotationsgatter und Universalität
 
@@ -1007,7 +1007,7 @@ $$
 |\Psi\rangle = |\psi\rangle_A \otimes |\phi\rangle_B
 $$
 
-beschrieben werden kann, bezeichnet man diesen Zustand als separierbar. Im Gegensatz dazu wird ein Zustand, der **nicht** als Tensorprodukt irgendwelcher Teilsystemzustände dargestellt werden kann, als **verschränkter Zustand (Entangled State)** definiert.
+beschrieben werden kann, bezeichnet man diesen Zustand als separierbar. Im Gegensatz dazu wird ein Zustand, der **nicht** als Tensorprodukt irgendwelcher Teilsystemzustände dargestellt werden kann, als **verschränkter Zustand (Entangled [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/))** definiert.
 
 In einem 2-Qubit-System werden die Zustände mit der stärksten Quantenverschränkung als **Bell-Zustände** (Bell States) oder EPR-Paare bezeichnet. Die Bell-Zustände bestehen aus den folgenden vier orthogonalen reinen Zuständen und bilden eine vollständige Orthonormalbasis (Bell-Basis) im vierdimensionalen [Hilbert](https://kenji.blog/de/p/hilbert/)raum:
 
@@ -1070,7 +1070,7 @@ $$
 \rho_A = \frac{1}{2} (|0\rangle\langle0| + |1\rangle\langle1|) = \frac{1}{2} I
 $$
 
-Dies bedeutet, dass, wenn nur Qubit A beobachtet wird, sich dessen Zustand in einem vollständig gemischten Zustand (Completely Mixed State) befindet und die Von-Neumann-Entropie $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ ihren Maximalwert von $1$ annimmt. Das heißt, die Essenz der maximalen Quantenverschränkung liegt in dieser extremen Korrelation, die in der klassischen Mechanik völlig undenkbar ist: "Obwohl das System als Ganzes vollständige Information (einen reinen Zustand) besitzt, ist die Information, wenn man jedes Teilsystem betrachtet, vollkommen unbestimmt (maximale Entropie)."
+Dies bedeutet, dass, wenn nur Qubit A beobachtet wird, sich dessen Zustand in einem vollständig gemischten Zustand (Completely Mixed [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) befindet und die Von-Neumann-Entropie $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ ihren Maximalwert von $1$ annimmt. Das heißt, die Essenz der maximalen Quantenverschränkung liegt in dieser extremen Korrelation, die in der klassischen Mechanik völlig undenkbar ist: "Obwohl das System als Ganzes vollständige Information (einen reinen Zustand) besitzt, ist die Information, wenn man jedes Teilsystem betrachtet, vollkommen unbestimmt (maximale Entropie)."
 
 ---
 
@@ -1939,7 +1939,7 @@ Diese Formel ist äußerst aufschlussreich. Sie zeigt, dass die Phase des Zustan
 
 ## 8.4 Der Quantenschaltkreis zur Periodenfindung mittels Superposition
 
-Nachdem die theoretischen Vorbereitungen abgeschlossen sind, wollen wir nun den gesamten Quantenschaltkreis für Shors Algorithmus und die Zeitentwicklung des Quantenzustands (State Evolution) in jedem Schritt im Detail verfolgen. Der Algorithmus verwendet zwei Quantenregister:
+Nachdem die theoretischen Vorbereitungen abgeschlossen sind, wollen wir nun den gesamten Quantenschaltkreis für Shors Algorithmus und die Zeitentwicklung des Quantenzustands ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Evolution) in jedem Schritt im Detail verfolgen. Der Algorithmus verwendet zwei Quantenregister:
 Das erste Register besteht aus $t \approx 2 \log_2 N$ Qubits, und die Dimension des Zustandsraums ist $M = 2^t$ (wobei $t$ so gewählt wird, dass $M \ge N^2$ erfüllt ist). Das zweite Register umfasst $L \approx \log_2 N$ Qubits und dient zur Speicherung der Berechnungsergebnisse.
 
 ```mermaid
@@ -2552,7 +2552,7 @@ Ein CNOT-Gatter zur Syndromextraktion propagiert beispielsweise einen $X$-Fehler
 Die Designphilosophie, um diese katastrophale Kettenreaktion zu verhindern, ist das "fehlertolerante Quantenrechnen (FTQC)". Die absolute Bedingung für FTQC ist: "Ein einzelner physikalischer Fehler, der im System auftritt, darf sich innerhalb eines logischen Fehlerblocks auf höchstens einen Fehler ausbreiten."
 Um dies zu erreichen, sind für die Ausführung logischer Gatter "Transversale Operationen" (Transversal Operations) dringend erforderlich. Dies ist eine sichere Gatteroperation, bei der das $i$-te physikalische Qubit nur mit dem $i$-ten physikalischen Qubit eines anderen Blocks interagiert (keine Querkreuzkopplung innerhalb des Blocks). Durch das "Eastin-Knill-Theorem" (Eastin-Knill Theorem) ist jedoch mathematisch bewiesen worden, dass es unmöglich ist, einen kontinuierlichen Gatter-Satz für universelles Quantenrechnen allein mit transversalen Operationen zu konstruieren.
 
-Der Zauberstab, um die Einschränkung dieses Theorems zu umgehen und universelles FTQC zu realisieren, ist die "Magic-State-Destillation" (Magic State Distillation). Man bereitet eine große Anzahl rauschender Nicht-Clifford-Zustände (z. B. Zustände, die einem $T$-Gatter entsprechen) vor und extrahiert durch Fehlerkorrekturschaltungen, die nur transversale Clifford-Operationen verwenden, einen "Magic-State" von extrem hoher Reinheit. Dann nutzt man das Prinzip der Quantenteleportation, um indirekt Nicht-Clifford-Gatter (wie das $T$-Gatter) auf logische Zustände anzuwenden. Da dieser Destillationsprozess enorme Ressourcen (physikalische Qubits) verbraucht, wird es in Algorithmen der FTQC-Ära zum obersten Gebot, "die Anzahl der $T$-Gatter so weit wie möglich zu reduzieren".
+Der Zauberstab, um die Einschränkung dieses Theorems zu umgehen und universelles FTQC zu realisieren, ist die "Magic-[State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)-Destillation" (Magic State Distillation). Man bereitet eine große Anzahl rauschender Nicht-Clifford-Zustände (z. B. Zustände, die einem $T$-Gatter entsprechen) vor und extrahiert durch Fehlerkorrekturschaltungen, die nur transversale Clifford-Operationen verwenden, einen "Magic-State" von extrem hoher Reinheit. Dann nutzt man das Prinzip der Quantenteleportation, um indirekt Nicht-Clifford-Gatter (wie das $T$-Gatter) auf logische Zustände anzuwenden. Da dieser Destillationsprozess enorme Ressourcen (physikalische Qubits) verbraucht, wird es in Algorithmen der FTQC-Ära zum obersten Gebot, "die Anzahl der $T$-Gatter so weit wie möglich zu reduzieren".
 
 Die Krönung all dieser theoretischen Bemühungen ist das "Quantenschwellenwerttheorem" (Quantum Threshold Theorem).
 Dieses von Dorit Aharonov und Michael Ben-Or et al. bewiesene Theorem verkündet lautstark Folgendes:
@@ -2709,7 +2709,7 @@ graph TD
 Da ausschließlich die Topologie der von den Teilchentrajektorien gebildeten „Knoten“ das Rechenergebnis bestimmt, wird die unitäre Transformation $ \hat{U} $ exakt fehlerfrei ausgeführt, selbst wenn die Trajektorien leichten Schwankungen unterliegen – solange die Topologie unverändert bleibt. Dies ist Fehlertoleranz (Fault-tolerance) auf Hardware-Ebene.
 
  **Herausforderungen und Grenzen** 
-Ein zweifelsfreier experimenteller Nachweis für die Existenz von Majorana-Nullmoden ist nach wie vor Gegenstand intensiver Debatten, und die physikalische Demonstration des Braidings steht noch aus. Da das Braiding von Ising-Anyonen allein zudem keinen universellen Quantengattersatz bilden kann, sind nicht-topologische Zusatzoperationen wie die Magic-State-Destillation erforderlich.
+Ein zweifelsfreier experimenteller Nachweis für die Existenz von Majorana-Nullmoden ist nach wie vor Gegenstand intensiver Debatten, und die physikalische Demonstration des Braidings steht noch aus. Da das Braiding von Ising-Anyonen allein zudem keinen universellen Quantengattersatz bilden kann, sind nicht-topologische Zusatzoperationen wie die Magic-[State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)-Destillation erforderlich.
 
 ## 11.4 Photonische Qubits: Lineare Optik und messungsinduzierte Verschränkung
 

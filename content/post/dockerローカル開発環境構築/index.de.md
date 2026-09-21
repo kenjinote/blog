@@ -13,7 +13,7 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 In der Softwareentwicklung ist das Problem "Auf meiner Maschine funktioniert es" (It works on my machine), das auf unterschiedliche Umgebungen zwischen Entwicklern zurückzuführen ist, seit langem ein Faktor, der in vielen Projekten Zeit verschwendet. Aufgrund von Unterschieden im Betriebssystem, Versionen installierter Sprachen, Bibliotheksabhängigkeiten und Konflikten zwischen global installierten Tools ist die lokale Umgebung ständig einer "Zustandsunsicherheit" ausgesetzt.
 
-Was diese Probleme von Grund auf löst, sind Container-Technologien wie **Docker** und das Paradigma von **Infrastructure as Code (IaC)**. Durch die Containerisierung der lokalen Entwicklungsumgebung wird eine Isolierung auf Betriebssystemebene erreicht, was es ermöglicht, die Umgebung selbst zusammen mit der Codebasis zu versionieren.
+Was diese Probleme von Grund auf löst, sind [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-Technologien wie **[Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)** und das Paradigma von **[Infrastructure as Code](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/))**. Durch die Containerisierung der lokalen Entwicklungsumgebung wird eine Isolierung auf Betriebssystemebene erreicht, was es ermöglicht, die Umgebung selbst zusammen mit der Codebasis zu versionieren.
 
 In diesem Artikel erklären wir ausführlich die Schritte zum Aufbau einer **"reproduzierbaren lokalen Entwicklungsumgebung, die immer in exakt demselben Zustand startet, unabhängig davon, wer sie wann und auf welcher Maschine startet"**, unter Verwendung von Docker, Docker Compose und VSCode DevContainers. Wir beleuchten auch die tiefgreifenden technischen Mechanismen dahinter, einschließlich einer mathematischen Perspektive.
 
@@ -31,13 +31,13 @@ Infrastructure as Code (IaC) ist ein Ansatz zur Verwaltung der Konfiguration und
 
 Die Umsetzung von IaC in einer lokalen Entwicklungsumgebung bedeutet, den "idealen Zustand" der Entwicklungsumgebung mit `Dockerfile`, `docker-compose.yml` und `devcontainer.json` in Code zu fassen. Dadurch wird ein Onboarding-Erlebnis geschaffen, bei dem neue Teammitglieder einfach das Repository klonen und einen einzigen Befehl ausführen können, um sofort mit der Entwicklung zu beginnen.
 
-### Kernel-Funktionen, die die Container-Technologie unterstützen
+### Kernel-Funktionen, die die [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-Technologie unterstützen
 
 Im Gegensatz zur Hypervisor-basierten Virtualisierung wie bei virtuellen Maschinen (VMs) ist die Container-Technologie eine leichtgewichtige Virtualisierungstechnik, die Prozesse isoliert, während sie den Kernel des Host-Betriebssystems teilt. Um dies zu erreichen, werden hauptsächlich die folgenden Funktionen des Linux-Kernels verwendet:
 
-- **Namespaces**: Bieten eine isolierte Sicht auf Systemressourcen (PID, Netzwerk, Mount-Punkte, Benutzer usw.) für jeden Prozess.
+- **[Namespace](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)s**: Bieten eine isolierte Sicht auf Systemressourcen (PID, Netzwerk, Mount-Punkte, Benutzer usw.) für jeden Prozess.
 - **Cgroups (Control Groups)**: Begrenzen und weisen physische Ressourcen (CPU, Speicher, Festplatten-I/O usw.) zu, die von Prozessen verwendet werden können.
-- **UnionFS (Union File System)**: Eine Technologie, die mehrere Verzeichnisbäume (Ebenen) transparent überlagert, sodass sie als ein einziges Dateisystem erscheinen. Die Image-Ebenen von Docker basieren auf dieser Technologie.
+- **UnionFS (Union File System)**: Eine Technologie, die mehrere Verzeichnisbäume (Ebenen) transparent überlagert, sodass sie als ein einziges Dateisystem erscheinen. Die Image-Ebenen von [Docker](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) basieren auf dieser Technologie.
 
 Betrachten wir ein mathematisches Modell der Ressourcenbegrenzung. Sei $M_{\text{total}}$ die Gesamtspeicherkapazität der Host-Maschine und $m_i$ die Speicherbegrenzung von $n$ Containern, die auf dem Host laufen. Unter Berücksichtigung des Basisspeichers $M_{\text{os}}$, der vom Host-Betriebssystem und anderen Prozessen verbraucht wird, kann die notwendige Bedingung für den stabilen Betrieb des Systems durch folgende Ungleichung ausgedrückt werden:
 
@@ -49,11 +49,11 @@ Indem $m_i$ für jeden Container mithilfe von Cgroups strikt definiert wird, kan
 
 ## 3. Effizientes Dockerfile-Design: Multi-Stage-Builds meistern
 
-Der erste Schritt zu einer reproduzierbaren Umgebung ist das Design des `Dockerfile`, das die Ausführungsumgebung der Anwendung definiert. Hier erklären wir am Beispiel von Python (FastAPI) die Best Practices für ein sicheres und leichtgewichtiges Dockerfile unter Verwendung von **Multi-Stage-Builds**.
+Der erste Schritt zu einer reproduzierbaren Umgebung ist das Design des `Dockerfile`, das die Ausführungsumgebung der Anwendung definiert. Hier erklären wir am Beispiel von Python (FastAPI) die Best Practices für ein sicheres und leichtgewichtiges [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)file unter Verwendung von **Multi-Stage-Builds**.
 
 Ein Multi-Stage-Build ist eine Technik, die mehrere `FROM`-Anweisungen in einem einzigen `Dockerfile` verwendet, um die Build-Umgebung (eine schwere Umgebung, die Compiler und Entwicklungstools enthält) von der Laufzeitumgebung (einer leichtgewichtigen Umgebung, die nur die notwendigen Artefakte enthält) zu trennen.
 
-### Praktisches Dockerfile für Python FastAPI
+### Praktisches [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)file für Python FastAPI
 
 Der folgende Code ist ein Beispiel für ein fortgeschrittenes `Dockerfile`, das Abhängigkeitsmanagement mit Poetry und Multi-Stage-Builds kombiniert.
 
@@ -127,7 +127,7 @@ Wie gezeigt, kann durch die Einführung von Multi-Stage-Builds die Image-Größe
 
 ---
 
-## 4. Orchestrierung mehrerer Container mit Docker Compose
+## 4. Orchestrierung mehrerer [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) mit [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) Compose
 
 In der modernen Entwicklung von Webanwendungen ist eine Microservices-Architektur üblich, in der mehrere Komponenten wie Webserver, Datenbanken und Cache-Server zusammenarbeiten. Um diese in einer lokalen Umgebung zentral zu verwalten, wird `docker-compose.yml` verwendet.
 
@@ -135,7 +135,7 @@ In diesem Fall werden wir ein 3-Schicht-System bestehend aus "Web (FastAPI)", "D
 
 ### Architekturdiagramm (Mermaid)
 
-Das folgende Diagramm ist ein Blockdiagramm, das die Beziehungen zwischen den einzelnen Containern, dem Netzwerk und den Volumes auf dem lokalen Rechner darstellt.
+Das folgende Diagramm ist ein Blockdiagramm, das die Beziehungen zwischen den einzelnen [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n, dem Netzwerk und den Volumes auf dem lokalen Rechner darstellt.
 
 ```mermaid
 graph TD
@@ -224,21 +224,21 @@ networks:
 
 ### Volumes und Datenpersistenz
 
-Container sind grundsätzlich "zustandslos (stateless)" und "kurzlebig (ephemeral)". Wenn ein Container zerstört wird, gehen auch die internen Daten verloren. Um Datenbankdaten oder Caches beizubehalten, muss ein Bereich des Dateisystems der Host-Maschine im Container gemountet werden.
+[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) sind grundsätzlich "zustandslos (stateless)" und "kurzlebig (ephemeral)". Wenn ein Container zerstört wird, gehen auch die internen Daten verloren. Um Datenbankdaten oder Caches beizubehalten, muss ein Bereich des Dateisystems der Host-Maschine im Container gemountet werden.
 
-- **Bind Mount**: Das `./src:/app/src:ro` im obigen `web`-Service ist ein Beispiel dafür. Ein bestimmtes Verzeichnis auf dem Host wird direkt in den Container gemappt. Dies wird verwendet, um lokale Code-Änderungen sofort im Container widerzuspiegeln (Hot Reloading). Aus Sicherheitsgründen ist es eine Best Practice, die Option `:ro` (Read-Only) hinzuzufügen, um zu verhindern, dass der Host-Quellcode vom Container aus geändert wird.
-- **Benanntes Volume (Named Volume)**: Hierunter fallen `postgres_data` und `redis_data`. Es handelt sich um Bereiche, die Docker intern verwaltet (z.B. `/var/lib/docker/volumes/`). Sie bieten eine bessere I/O-Leistung als Bind Mounts und verbergen die Unterschiede zwischen den Dateisystemen verschiedener Betriebssysteme. Für die Persistenz von Datenbanken sollte immer diese Methode verwendet werden.
+- **Bind Mount**: Das `./src:/app/src:ro` im obigen `web`-[Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/) ist ein Beispiel dafür. Ein bestimmtes Verzeichnis auf dem Host wird direkt in den [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) gemappt. Dies wird verwendet, um lokale Code-Änderungen sofort im Container widerzuspiegeln (Hot Reloading). Aus Sicherheitsgründen ist es eine Best Practice, die Option `:ro` (Read-Only) hinzuzufügen, um zu verhindern, dass der Host-Quellcode vom [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) aus geändert wird.
+- **Benanntes Volume (Named Volume)**: Hierunter fallen `postgres_data` und `redis_data`. Es handelt sich um Bereiche, die [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) intern verwaltet (z.B. `/var/lib/docker/volumes/`). Sie bieten eine bessere I/O-Leistung als Bind Mounts und verbergen die Unterschiede zwischen den Dateisystemen verschiedener Betriebssysteme. Für die Persistenz von Datenbanken sollte immer diese Methode verwendet werden.
 
-### Netzwerk (Networking) und Service Discovery
+### Netzwerk (Networking) und [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/) Discovery
 
-Docker Compose erstellt standardmäßig für jedes Projekt ein eigenes Bridge-Netzwerk, wie das obige `app-network`.
-Container, die zum selben Netzwerk gehören, können einander über den "Service-Namen (z. B. `db`, `redis`)" als Hostnamen auflösen (DNS-Auflösung) anstatt über IP-Adressen.
-Zum Beispiel kann der Web-Container über die URL `postgresql://postgres:password@db:5432/mydb` auf die Datenbank zugreifen. Dies ermöglicht es, das Verbindungsziel transparent über Umgebungsvariablen umzuschalten, sowohl in lokalen Umgebungen als auch in Produktionsumgebungen.
+[Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) Compose erstellt standardmäßig für jedes Projekt ein eigenes Bridge-Netzwerk, wie das obige `app-network`.
+[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/), die zum selben Netzwerk gehören, können einander über den "[Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)-Namen (z. B. `db`, `redis`)" als Hostnamen auflösen (DNS-Auflösung) anstatt über IP-Adressen.
+Zum Beispiel kann der Web-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) über die URL `postgresql://postgres:password@db:5432/mydb` auf die Datenbank zugreifen. Dies ermöglicht es, das Verbindungsziel transparent über Umgebungsvariablen umzuschalten, sowohl in lokalen Umgebungen als auch in Produktionsumgebungen.
 
 ### Health Checks und Steuerung der Startreihenfolge
 
-Die Direktive `depends_on` steuert die Startreihenfolge von Containern, aber wenn Sie nur `depends_on` angeben, wird der Web-Container gestartet, sobald "der DB-Container gestartet ist". In der Realität dauert es jedoch einige Sekunden, bis der Initialisierungsprozess der Datenbank (Start des PostgreSQL-Prozesses und Vorbereitung der Tabellen) abgeschlossen ist, was dazu führen kann, dass die DB-Verbindung vom Web-Container aus fehlschlägt.
-Um dies zu verhindern, kann man einen `healthcheck` definieren und `condition: service_healthy` festlegen. Dadurch wird sichergestellt, dass der Web-Container erst gestartet wird, nachdem verifiziert wurde, dass "die Datenbank bereit ist, Verbindungsanfragen anzunehmen".
+Die Direktive `depends_on` steuert die Startreihenfolge von [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n, aber wenn Sie nur `depends_on` angeben, wird der Web-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) gestartet, sobald "der DB-Container gestartet ist". In der Realität dauert es jedoch einige Sekunden, bis der Initialisierungsprozess der Datenbank (Start des PostgreSQL-Prozesses und Vorbereitung der Tabellen) abgeschlossen ist, was dazu führen kann, dass die DB-Verbindung vom Web-Container aus fehlschlägt.
+Um dies zu verhindern, kann man einen `healthcheck` definieren und `condition: service_healthy` festlegen. Dadurch wird sichergestellt, dass der Web-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) erst gestartet wird, nachdem verifiziert wurde, dass "die Datenbank bereit ist, Verbindungsanfragen anzunehmen".
 
 ---
 
@@ -255,13 +255,13 @@ POSTGRES_DB=devdb
 API_SECRET_KEY=dev_secret_key_12345
 ```
 
-Docker Compose liest standardmäßig die `.env`-Datei im Ausführungsverzeichnis und erweitert die Platzhalter `${VAR_NAME}` in der YAML-Datei. Diese Methode ermöglicht es, unterschiedliche Konfigurationswerte für Umgebungen wie lokal, Staging und Produktion sicher zu verwalten, ohne den Infrastrukturcode zu ändern.
+[Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) Compose liest standardmäßig die `.env`-Datei im Ausführungsverzeichnis und erweitert die Platzhalter `${VAR_NAME}` in der YAML-Datei. Diese Methode ermöglicht es, unterschiedliche Konfigurationswerte für Umgebungen wie lokal, Staging und Produktion sicher zu verwalten, ohne den Infrastrukturcode zu ändern.
 
 ---
 
-## 6. Das ultimative Entwicklungserlebnis mit VSCode DevContainers
+## 6. Das ultimative Entwicklungserlebnis mit VSCode Dev[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)s
 
-Bis hierhin haben wir eine robuste Backend-Umgebung mit Docker aufgebaut. Wir können jedoch noch einen Schritt weiter gehen. Durch die Nutzung der Funktion **VSCode DevContainers (Remote - Containers)** ist es möglich, das Backend des Editors (VSCode) selbst innerhalb des Containers auszuführen.
+Bis hierhin haben wir eine robuste Backend-Umgebung mit [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) aufgebaut. Wir können jedoch noch einen Schritt weiter gehen. Durch die Nutzung der Funktion **VSCode DevContainers (Remote - Containers)** ist es möglich, das Backend des Editors (VSCode) selbst innerhalb des Containers auszuführen.
 
 Dadurch müssen weder Python noch Node.js auf der lokalen Maschine installiert werden. Alles, von Lintern (flake8/eslint) und Formattern (black/prettier) bis hin zu IDE-Erweiterungen, kann innerhalb der Codebasis definiert und mit dem gesamten Team geteilt werden.
 
@@ -297,7 +297,7 @@ Erstellen Sie im Projektstammverzeichnis ein `.devcontainer`-Verzeichnis und pla
 }
 ```
 
-Indem Sie diese Datei in das Repository aufnehmen, wird sofort nach dem Öffnen des Projekts in VSCode die Aufforderung "Reopen in Container" angezeigt. Mit nur einem Klick werden alle notwendigen Container gestartet, Erweiterungen installiert und Sie sind sofort bereit, mit dem Coden zu beginnen. Es ist wahrlich ein magisches Erlebnis.
+Indem Sie diese Datei in das Repository aufnehmen, wird sofort nach dem Öffnen des Projekts in VSCode die Aufforderung "Reopen in [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)" angezeigt. Mit nur einem Klick werden alle notwendigen Container gestartet, Erweiterungen installiert und Sie sind sofort bereit, mit dem Coden zu beginnen. Es ist wahrlich ein magisches Erlebnis.
 
 ---
 
@@ -346,7 +346,7 @@ sequenceDiagram
 
 Wir modellieren mathematisch die durchschnittliche Anforderungsverarbeitungszeit $T_{\text{total}}$ im obigen System.
 Wir definieren die Latenz jeder Verarbeitung wie folgt:
-- $T_{\text{net}}$: Netzwerklatenz zwischen Client und Web-Container
+- $T_{\text{net}}$: Netzwerklatenz zwischen Client und Web-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)
 - $T_{\text{app}}$: Reine Verarbeitungszeit auf Anwendungsseite (Serialisierung usw.)
 - $T_{\text{cache}}$: Lese-/Schreibzeit von/nach Redis
 - $T_{\text{db}}$: Ausführungszeit für Abfragen an PostgreSQL
@@ -356,7 +356,7 @@ Dann wird die durchschnittliche Antwortzeit durch die folgende Erwartungswertfor
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-In einer lokalen Entwicklungsumgebung (innerhalb von Docker) liegt $T_{\text{net}}$ nahe bei 0. Beachtenswert ist jedoch die **I/O-Leistung bei Bind Mounts**. Insbesondere bei der Verwendung von Docker Desktop auf Windows/macOS tendiert $T_{\text{app}}$ (wie z. B. die Zeit zum Laden von Code) dazu, aufgrund des Overhead bei der Dateifreigabe zwischen dem Host-Betriebssystem und der VM (Container) anzusteigen. Um diesen Engpass zu beheben, wird dringend eine Architektur empfohlen, bei der entweder die gesamten Quellcodes in einem benannten Volume mit den zuvor erwähnten DevContainers abgelegt werden oder die Docker-Engine nativ in einer WSL2-Umgebung (Windows Subsystem for Linux 2) ausgeführt wird.
+In einer lokalen Entwicklungsumgebung (innerhalb von [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)) liegt $T_{\text{net}}$ nahe bei 0. Beachtenswert ist jedoch die **I/O-Leistung bei Bind Mounts**. Insbesondere bei der Verwendung von Docker Desktop auf Windows/macOS tendiert $T_{\text{app}}$ (wie z. B. die Zeit zum Laden von Code) dazu, aufgrund des Overhead bei der Dateifreigabe zwischen dem Host-Betriebssystem und der VM (Container) anzusteigen. Um diesen Engpass zu beheben, wird dringend eine Architektur empfohlen, bei der entweder die gesamten Quellcodes in einem benannten Volume mit den zuvor erwähnten DevContainers abgelegt werden oder die Docker-Engine nativ in einer WSL2-Umgebung (Windows Subsystem for Linux 2) ausgeführt wird.
 
 ---
 
@@ -401,21 +401,21 @@ Hier sind einige häufige Probleme und Lösungen beim Betrieb einer lokalen Umge
    Wenn ein Fehler wie `Bind for 0.0.0.0:8000 failed: port is already allocated` auftritt, verwendet ein anderer Prozess auf dem lokalen Rechner diesen Port. Sie können dies vermeiden, indem Sie die hostseitige Portnummer ändern, z. B. auf `ports: - "8080:8000"`.
 
 2. **Erschöpfung des Festplattenspeichers**
-   Wenn Sie Docker über einen längeren Zeitraum verwenden, können sich ungenutzte Images und Volumes (Dangling Images / Volumes) ansammeln und zig Gigabyte Festplattenspeicherplatz belegen. Es wird empfohlen, das System regelmäßig mit dem folgenden Befehl zu bereinigen:
+   Wenn Sie [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) über einen längeren Zeitraum verwenden, können sich ungenutzte Images und Volumes (Dangling Images / Volumes) ansammeln und zig Gigabyte Festplattenspeicherplatz belegen. Es wird empfohlen, das System regelmäßig mit dem folgenden Befehl zu bereinigen:
    ```bash
    docker system prune -a --volumes
    ```
 
 3. **Probleme mit Dateiberechtigungen**
-   Wenn Sie Bind Mounts in einer Linux-Umgebung verwenden, kann der Eigentümer der innerhalb des Containers erstellten Dateien zu `root` werden, was die Bearbeitung auf der Host-Seite unmöglich macht. Dieses Problem kann gelöst werden, indem ein nicht privilegierter Benutzer im Dockerfile erstellt wird, dessen UID/GID mit der Ihres eigenen Host-Betriebssystems (z. B. 1000:1000) übereinstimmt.
+   Wenn Sie Bind Mounts in einer Linux-Umgebung verwenden, kann der Eigentümer der innerhalb des [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)s erstellten Dateien zu `root` werden, was die Bearbeitung auf der Host-Seite unmöglich macht. Dieses Problem kann gelöst werden, indem ein nicht privilegierter Benutzer im [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)file erstellt wird, dessen UID/GID mit der Ihres eigenen Host-Betriebssystems (z. B. 1000:1000) übereinstimmt.
 
 ---
 
 ## 10. Fazit: Steigerung der Entwicklungsgeschwindigkeit durch Reproduzierbarkeit
 
-Durch die Kombination von Docker, Docker Compose und VSCode DevContainers wird eine robuste lokale Entwicklungsumgebung realisiert, bei der "unabhängig davon, wer die Umgebung startet, immer exakt derselbe Zustand erreicht wird".
+Durch die Kombination von Docker, Docker Compose und VSCode Dev[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)s wird eine robuste lokale Entwicklungsumgebung realisiert, bei der "unabhängig davon, wer die Umgebung startet, immer exakt derselbe Zustand erreicht wird".
 
-Das Einbringen des IaC-Paradigmas in die lokale Umgebung verkürzt nicht nur die anfängliche Einrichtungszeit. Es steigert die Geschwindigkeit und Qualität des gesamten Entwicklungszyklus dramatisch, indem es die Angst vor Änderungen an der Infrastrukturkonfiguration nimmt, das Experimentieren mit neuen Technologie-Stacks erleichtert und einen reibungslosen Übergang zu CI/CD-Pipelines ermöglicht.
+Das Einbringen des [IaC](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)-Paradigmas in die lokale Umgebung verkürzt nicht nur die anfängliche Einrichtungszeit. Es steigert die Geschwindigkeit und Qualität des gesamten Entwicklungszyklus dramatisch, indem es die Angst vor Änderungen an der Infrastrukturkonfiguration nimmt, das Experimentieren mit neuen Technologie-Stacks erleichtert und einen reibungslosen Übergang zu [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s ermöglicht.
 
 Bitte nutzen Sie die in diesem Artikel erläuterten Best Practices, wie z. B. die Optimierung der Image-Größe durch Multi-Stage-Builds, die Steuerung von Abhängigkeiten mithilfe von Health Checks und das Schreiben eines Dockerfiles unter Berücksichtigung des Layer-Caches, und führen Sie unbedingt das beste Entwicklungserlebnis (DX: Developer Experience) in Ihren eigenen Projekten ein.
 

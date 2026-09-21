@@ -12,7 +12,7 @@ description: 'Um guia de configuração completo do WSL2 que melhora drasticamen
 
 O "WSL2 (Windows Subsystem for Linux 2)", que fornece um ambiente de desenvolvimento nativo do Linux no Windows, tornou-se uma ferramenta indispensável no desenvolvimento de software moderno. No entanto, há uma diferença imensa em desempenho e experiência de desenvolvimento entre usá-lo em seu estado padrão e ajustá-lo adequadamente após entender sua arquitetura.
 
-Neste artigo, explicaremos detalhadamente todo o processo para construir o "ambiente de desenvolvimento definitivo" exigido por engenheiros profissionais. Começando com uma explicação da arquitetura fundamental do WSL2, abordaremos configurações para maximizar o desempenho, a construção de um ambiente de terminal confortável, a integração perfeita com Docker e VS Code, e configurações avançadas de rede.
+Neste artigo, explicaremos detalhadamente todo o processo para construir o "ambiente de desenvolvimento definitivo" exigido por engenheiros profissionais. Começando com uma explicação da arquitetura fundamental do WSL2, abordaremos configurações para maximizar o desempenho, a construção de um ambiente de terminal confortável, a integração perfeita com [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/) e VS Code, e configurações avançadas de rede.
 
 ---
 
@@ -256,7 +256,7 @@ O VS Code no lado do Windows funciona como um mero "cliente fino (IU)", e todos 
 Instale a extensão **"WSL" (ms-vscode-remote.remote-wsl)** a partir de "Extensões" no VS Code. Em seguida, navegue até o diretório do seu projeto no terminal do WSL e simplesmente execute `code .` para iniciar o VS Code no lado do Windows com esse diretório aberto.
 
 **Nota importante (Problema com o código de quebra de linha):**
-Windows e Linux usam códigos de quebra de linha diferentes (Windows usa `CRLF`, Linux usa `LF`). Ao desenvolver no WSL, certifique-se de unificar a configuração `core.autocrlf` do Git e as configurações padrão de arquivos do VS Code para `LF`. Se não fizer isso, você poderá sofrer com erros misteriosos ao executar scripts de shell ou contêineres Docker.
+Windows e Linux usam códigos de quebra de linha diferentes (Windows usa `CRLF`, Linux usa `LF`). Ao desenvolver no WSL, certifique-se de unificar a configuração `core.autocrlf` do Git e as configurações padrão de arquivos do VS Code para `LF`. Se não fizer isso, você poderá sofrer com erros misteriosos ao executar scripts de shell ou contêineres [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ```bash
 # Configuração do código de quebra de linha do Git no lado do WSL
@@ -274,7 +274,7 @@ Adicione também o seguinte ao `settings.json` (configurações remotas) do VS C
 
 ---
 
-## 7. Otimização do Docker Desktop e Integração WSL2
+## 7. Otimização do [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop e Integração WSL2
 
 Para usar o Docker no ambiente WSL2, existem principalmente duas abordagens:
 
@@ -287,10 +287,10 @@ Esta abordagem é recomendada na maioria dos casos porque facilita o gerenciamen
 - Em `General`, marque a opção `Use the WSL 2 based engine`.
 - Em `Resources` -> `WSL Integration`, marque a opção `Enable integration with my default WSL distro` e ligue a chave seletora para a distribuição (Ubuntu) a ser usada.
 
-Isso permite que o comando `docker` seja executado diretamente do terminal do WSL2, e a comunicação com o daemon do Docker ocorra por meio de uma VM leve dedicada (`docker-desktop` e `docker-desktop-data`) gerenciada pelo Docker Desktop.
+Isso permite que o comando `docker` seja executado diretamente do terminal do WSL2, e a comunicação com o daemon do [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/) ocorra por meio de uma VM leve dedicada (`docker-desktop` e `docker-desktop-data`) gerenciada pelo [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop.
 
 ### Abordagem 2: Instalação Direta do Docker Engine Nativo
-Se houver restrições de rede corporativa (como evitar taxas de licenciamento do Docker Desktop) ou se você quiser reduzir ao máximo a sobrecarga de desempenho, ative o `systemd` em `/etc/wsl.conf` e instale o Docker como um servidor Ubuntu puro.
+Se houver restrições de rede corporativa (como evitar taxas de licenciamento do Docker Desktop) ou se você quiser reduzir ao máximo a sobrecarga de desempenho, ative o `systemd` em `/etc/wsl.conf` e instale o [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/) como um servidor Ubuntu puro.
 
 ```bash
 # Trecho do procedimento oficial de instalação do Docker no Ubuntu WSL2 com systemd ativado
@@ -351,7 +351,7 @@ Quando essa configuração estiver concluída, a execução de `ssh-add -l` a pa
 
 ## 9. Manutenção: Otimização (Compactação) de VHDX Inchado
 
-Uma das maiores falhas do WSL2 é a especificação de que "mesmo se você excluir imagens do Docker ou arquivos, o tamanho do arquivo do disco virtual do lado do Windows (.vhdx) não será reduzido automaticamente". Após um longo período de desenvolvimento, o arquivo ext4.vhdx pode inchar para dezenas a centenas de gigabytes.
+Uma das maiores falhas do WSL2 é a especificação de que "mesmo se você excluir imagens do [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/) ou arquivos, o tamanho do arquivo do disco virtual do lado do Windows (.vhdx) não será reduzido automaticamente". Após um longo período de desenvolvimento, o arquivo ext4.vhdx pode inchar para dezenas a centenas de gigabytes.
 
 Para liberar espaço em disco, você deve otimizar (Compactar) periodicamente o VHDX no lado do Windows.
 

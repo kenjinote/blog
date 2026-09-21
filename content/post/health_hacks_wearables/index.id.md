@@ -90,7 +90,7 @@ Di mana,
 
 Untuk mempertahankan performa insinyur, meminimalkan $\Delta G$ (amplitudo) sangatlah penting. Secara konkret, beberapa "hack" yang efektif antara lain "makan sayur (serat) terlebih dahulu", "menghindari karbohidrat olahan", dan "berjalan santai selama 15 menit setelah makan (mengaktifkan transporter GLUT4 untuk menyerap glukosa darah ke dalam otot tanpa bergantung pada insulin)".
 
-## 6. Desain Arsitektur: Membangun Pipa Data Lokal (Local Data Pipeline)
+## 6. Desain Arsitektur: Membangun Pipa Data Lokal (Local Data [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/))
 
 Kita akan membangun sebuah pipa data lokal untuk menganalisis dan mengintegrasikan data biometrik dengan data produktivitas.
 Diagram Mermaid (diagram alir) di bawah ini menunjukkan alur mulai dari pengambilan data dari API hingga visualisasinya di dasbor.
@@ -356,7 +356,7 @@ def check_and_ventilate():
 ```
 Dengan mengeksekusi skrip semacam ini secara berkala menggunakan Cron, sebuah sistem pengendalian lingkungan otonom yang selalu menjaga konsentrasi oksigen optimal pun akan terbentuk.
 
-## 13. Kesimpulan: CI/CD pada Sistem Tubuh Manusia
+## 13. Kesimpulan: [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) pada Sistem Tubuh Manusia
 
 Cobalah untuk menganggap tubuh Anda sendiri sebagai sebuah sistem terdistribusi yang kompleks. Perangkat wearable (Oura Ring) adalah metrics exporter (Prometheus) untuk pemantauan, skrip Python/Pandas adalah pipa analisis log (Logstash/Fluentd), dan perubahan kondisi fisik serta performa sehari-hari adalah kesehatan sistem yang ditampilkan di dasbor (Grafana/Streamlit).
 

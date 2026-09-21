@@ -11,7 +11,7 @@ tags: ["Idea Generation", "Obsidian", "RSS", "Knowledge Management"]
 
 Ao gerenciar um blog técnico como engenheiro ou pesquisador, há uma barreira que você quase certamente enfrentará: a "falta de ideias". Mesmo que você consiga escrever os primeiros artigos sem problemas, não é incomum ser atormentado por dúvidas como "Não sei sobre o que escrever a seguir" ou "Falta uma quantidade esmagadora de 'inputs' para poder gerar 'outputs'" à medida que você continua. A escrita de blogs técnicos depende muito não apenas da habilidade de escrever, mas também do design de um sistema de coleta de conhecimentos diários, sua organização e a combinação deles para criar novos valores.
 
-Neste artigo, explicarei detalhadamente e de forma bastante técnica sobre um **pipeline sistematizado de input e output** para gerar ideias para artigos técnicos de forma quase permanente. Começaremos com um mecanismo que extrai automaticamente tópicos de tendência usando APIs de fontes internacionais de alta qualidade, como Hacker News e Lobsters, sendo executados regularmente através do GitHub Actions. Em seguida, sistematizaremos as informações coletadas como conhecimento usando o método Zettelkasten com Obsidian e construiremos um sistema avançado de Gestão de Conhecimento Pessoal (PKM - Personal Knowledge Management) que possibilita buscas semânticas combinando a API Embeddings da OpenAI com o Pinecone (um banco de dados vetorial).
+Neste artigo, explicarei detalhadamente e de forma bastante técnica sobre um **pipeline sistematizado de input e output** para gerar ideias para artigos técnicos de forma quase permanente. Começaremos com um mecanismo que extrai automaticamente tópicos de tendência usando APIs de fontes internacionais de alta qualidade, como Hacker News e Lobsters, sendo executados regularmente através do [GitHub Actions](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/). Em seguida, sistematizaremos as informações coletadas como conhecimento usando o método Zettelkasten com Obsidian e construiremos um sistema avançado de Gestão de Conhecimento Pessoal (PKM - Personal Knowledge Management) que possibilita buscas semânticas combinando a API Embeddings da OpenAI com o Pinecone (um banco de dados vetorial).
 
 Além disso, para compensar as limitações da memória humana, nos aprofundaremos no processo de transformar o conhecimento retido em novas ideias através da "Criatividade Combinatória" (Combinatorial Creativity). Isso é feito aplicando a Repetição Espaçada (Spaced Repetition) com base na curva de esquecimento de Ebbinghaus usando o Anki, juntamente com modelos matemáticos concretos e exemplos de implementação em scripts Python.
 
@@ -27,7 +27,7 @@ Aqui, $X$ é a variável aleatória dos tópicos obtidos da fonte de informaçã
 
 Para manter uma entropia alta, é necessário introduzir intencionalmente fontes de informação com as quais você não tem contato usual como ruído, para nivelar a distribuição de probabilidade de encontrar tópicos desconhecidos. Essa é a principal razão para automatizar os inputs de diversas fontes.
 
-## 2. Construção de um Pipeline Automatizado de Coleta de Informações: Hacker News & Lobsters API
+## 2. Construção de um [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) Automatizado de Coleta de Informações: Hacker News & Lobsters API
 
 Para obter inputs de alta qualidade, é eficaz extrair informações sobre tendências de boas comunidades de engenharia, que têm pouco ruído. O Hacker News (operado pela Y Combinator) e o Lobsters são os lugares ideais por apresentarem discussões técnicas profundas. No entanto, visitar esses sites diariamente toma tempo e consome recursos cognitivos.
 
@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
 Este script oferece mais valor do que um simples leitor de RSS. Ao filtrar as pontuações, é possível extrair apenas os tópicos técnicos que realmente estão chamando a atenção da comunidade (sinal alto e pouco ruído).
 
-## 3. Agendamento e Automação com GitHub Actions
+## 3. Agendamento e Automação com [GitHub Actions](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)
 
 Executar manualmente o script em Python todos os dias é tedioso. O princípio básico da automação é reduzir a intervenção humana ao máximo. Usando o recurso Cron do GitHub Actions, construiremos um mecanismo para executar o script em um horário especificado todos os dias, fazendo commit automaticamente dos resultados no repositório.
 
@@ -316,7 +316,7 @@ Os padrões para formar matrizes com relação à produção de textos para blog
 
 1. **[Tecnologia Antiga] × [Novo Paradigma]**: Ex. "Aprendendo sobre os antipadrões do design moderno de microsserviços com a arquitetura do COBOL"
 2. **[Front-end] × [Conceitos do Back-end]**: Ex. "Compreendendo os algoritmos de atualização do DOM virtual do React sob a perspectiva dos níveis de isolamento de transação em bancos de dados"
-3. **[Fórmulas Abstratas de Matemática / Teoria] × [Implementações Concretas]**: Ex. "Usando a Teoria dos Grafos para interpretar a otimização do escalonamento de Pods no Kubernetes"
+3. **[Fórmulas Abstratas de Matemática / Teoria] × [Implementações Concretas]**: Ex. "Usando a Teoria dos Grafos para interpretar a otimização do escalonamento de Pods no [Kubernetes](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/)"
 
 Para gerar essas combinações intencionalmente, utilize o mecanismo de busca semântica Pinecone configurado anteriormente para extrair um conceito aleatório A e um conceito B e, em seguida, envie um prompt para uma IA (como o ChatGPT): "Proponha 5 títulos e estruturas para blogs técnicos combinando estes 2 conceitos". Dessa forma, você poderá gerar um número infinito de ideias de artigos inovadores, com perspectivas que você talvez nunca pensasse sozinho.
 

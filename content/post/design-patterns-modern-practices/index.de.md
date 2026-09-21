@@ -169,7 +169,7 @@ graph TD
     E["Dienst B"] -->|"Hängt ab von"| B
 ```
 
-Da DI-Container wie das Spring Framework (Java), NestJS (TypeScript) oder Dagger/Hilt (Android) die Erstellung und Zerstörung von Instanzen verwalten, sollte man keine Singleton-Logik (`getInstance()` oder `private constructor`) in die Klasse selbst schreiben.
+Da DI-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) wie das Spring Framework (Java), NestJS (TypeScript) oder Dagger/Hilt (Android) die Erstellung und Zerstörung von Instanzen verwalten, sollte man keine Singleton-Logik (`getInstance()` oder `private constructor`) in die Klasse selbst schreiben.
 
 ## 4. Design-Muster in der funktionalen Programmierung
 
@@ -225,7 +225,7 @@ Die heutigen Best Practices sind wie folgt:
 - **Komposition statt Vererbung (dies ist eine universelle Wahrheit aus GoF)**
 - **Funktionen statt Klassen (Nutzung von First-Class-Funktionen)**
 - **Pattern Matching und ADTs statt des Visitor-Musters**
-- **DI-Container statt Singletons**
+- **DI-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) statt Singletons**
 - **Unveränderlichkeit (Immutability) und reine Funktionen statt Zustandsmutationen**
 
 Design-Muster sind nicht tot. Sie haben mit der Evolution der Programmiersprachen lediglich eine verfeinertere Form angenommen.

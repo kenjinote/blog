@@ -252,7 +252,7 @@ Now that FHE is approaching practical speeds, disruptive innovations are expecte
     By having a cloud AI learn from patients' medical records and DNA data held by multiple hospitals while keeping it encrypted with FHE, highly accurate cancer diagnostic models and new drug development can be performed without violating privacy laws (like HIPAA or GDPR).
 2.  **Fraud Detection and Anti-Money Laundering (AML) for Financial Institutions**:
     Competing banks can cross-analyze data in an encrypted state to detect massive illegal money transfer networks, without revealing customer account information or transaction histories to each other.
-3.  **Secure AI Inference APIs (MaaS: Model as a Service)**:
+3.  **Secure AI Inference APIs (MaaS: Model as a [Service](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/))**:
     Users encrypt their voice, facial images, and prompts before sending them to AI services (like LLMs such as ChatGPT). The AI provider generates the answer without ever knowing the user's input and returns it as a ciphertext. This completely dispels the concern of "AI learning or peeking at personal information."
 
 ---

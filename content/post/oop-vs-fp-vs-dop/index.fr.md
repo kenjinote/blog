@@ -193,7 +193,7 @@ Chaque paradigme a ses propres forces et faiblesses claires.
 | Paradigme | Avantages | Inconvénients | Cas d'utilisation optimaux |
 | :--- | :--- | :--- | :--- |
 | **POO** | Modélisation intuitive, masquage par encapsulation | Complexité de l'héritage, bugs dus à la mutation implicite de l'état | Frameworks GUI, modélisation du domaine métier |
-| **PF** | Tolérance à la concurrence, facilité de test, prévisibilité | Courbe d'apprentissage abrupte, performances (charge du GC) | Pipelines de transformation de données, systèmes concurrents |
+| **PF** | Tolérance à la concurrence, facilité de test, prévisibilité | Courbe d'apprentissage abrupte, performances (charge du GC) | [Pipeline](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/)s de transformation de données, systèmes concurrents |
 | **POD** | Performances exceptionnelles, transparence de l'état | Diminution de la cohésion des données, tendance à devenir procédural | Développement de jeux, opérations intensives, systèmes embarqués |
 
 ---

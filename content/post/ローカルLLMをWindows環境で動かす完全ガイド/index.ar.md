@@ -67,7 +67,7 @@ wsl --update
 
 من المفيد جدًا في استكشاف الأخطاء وإصلاحها وتحسين الأداء فهم كيفية قيام النموذج بإنشاء النص في بيئة محلية، وهيكله الداخلي.
 
-يوضح مخطط Mermaid التالي خط أنابيب (Pipeline) الاستدلال النموذجي لـ LLM المحلي.
+يوضح مخطط Mermaid التالي خط أنابيب ([Pipeline](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)) الاستدلال النموذجي لـ LLM المحلي.
 
 ```mermaid
 graph TD
@@ -163,7 +163,7 @@ $V_{kv} = 2 \times 1 \times 8192 \times 32 \times 8 \times 128 \times 2 \div 10^
 # 5. الممارسة 1: إعداد أسرع وأقصر باستخدام Ollama
 
 بمجرد فهم النظرية، دعنا نقم بتشغيل LLM فعليًا على بيئة ويندوز.
-اعتبارًا من عام 2026، فإن الأداة الأكثر سهولة في الاستخدام هي "Ollama". فهي توفر واجهة سطر أوامر (CLI) بديهية تشبه Docker.
+اعتبارًا من عام 2026، فإن الأداة الأكثر سهولة في الاستخدام هي "Ollama". فهي توفر واجهة سطر أوامر (CLI) بديهية تشبه [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ## 5.1 التثبيت والتشغيل
 

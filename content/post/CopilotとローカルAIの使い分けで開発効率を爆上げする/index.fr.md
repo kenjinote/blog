@@ -179,7 +179,7 @@ Puisque le délai réseau $L_{network\_rtt}$ et le délai de file d'attente clou
 Nous présentons brièvement les étapes spécifiques pour introduire une IA locale. L'approche la plus simple et la plus puissante actuellement est d'utiliser **Ollama** ou **LM Studio**.
 
 ### 6.1 Introduction d'Ollama
-Ollama est un framework léger pour exécuter des LLMs dans un environnement local. Compatible avec MacOS, Windows et Linux, il permet de gérer intuitivement les modèles, à la manière de Docker.
+Ollama est un framework léger pour exécuter des LLMs dans un environnement local. Compatible avec MacOS, Windows et Linux, il permet de gérer intuitivement les modèles, à la manière de [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ```bash
 # Pour MacOS

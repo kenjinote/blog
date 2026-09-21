@@ -165,7 +165,7 @@ Many of the devices introduced as standard under the GIGA School Concept are ext
 - Memory (RAM): 4GB (barely enough to run a modern OS)
 - Storage (eMMC): 32GB to 64GB (extremely slow I/O speeds)
 
-Due to these weak hardware constraints, it is virtually impossible to set up the "local development environments" that professional engineers use daily. Attempting to launch Linux containers using Docker, running heavy IDEs like Visual Studio Code with full features, or starting local Node.js or Python servers to install heavy libraries will immediately lead to memory exhaustion and system freezes.
+Due to these weak hardware constraints, it is virtually impossible to set up the "local development environments" that professional engineers use daily. Attempting to launch Linux containers using [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/), running heavy IDEs like Visual Studio Code with full features, or starting local Node.js or Python servers to install heavy libraries will immediately lead to memory exhaustion and system freezes.
 
 As a result, educational frontlines are forced to rely entirely on cloud IDEs that run in the browser (such as Google Colaboratory, Replit, or lightweight web tools proprietary to textbook publishers).
 
@@ -204,7 +204,7 @@ In the US, there are rigorous standard K-12 curriculums established by the CSTA 
 
 ### The Despairing Disconnect Between Required Skills and Taught Skills
 
-The requirements that modern industries—especially globally expanding mega-ventures and tech giants (like GAFAM)—demand of new graduate software engineers are advancing at a terrifying speed every year. Extensive and deep expertise is required, including the construction of cloud-native infrastructure (AWS, GCP, Kubernetes), the design of distributed systems using microservice architectures, the implementation of machine learning pipelines, and advanced security knowledge.
+The requirements that modern industries—especially globally expanding mega-ventures and tech giants (like GAFAM)—demand of new graduate software engineers are advancing at a terrifying speed every year. Extensive and deep expertise is required, including the construction of cloud-native infrastructure (AWS, GCP, [Kubernetes](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/)), the design of distributed systems using microservice architectures, the implementation of machine learning pipelines, and advanced security knowledge.
 
 The graph below conceptually illustrates the despairing gap between the skill attainment levels provided by Japan's current school education and the skill levels demanded by the frontline industry.
 

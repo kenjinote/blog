@@ -36,7 +36,7 @@ $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right
 
 $$ \text{Complexity} = O(N^2 \cdot d) $$
 
-近年来，尽管出现了像FlashAttention这样的硬件级优化，以及Sparse Attention，甚至是Mamba（状态空间模型，State Space Models）等可以在线性时间 $O(N)$ 内处理的替代架构的研究，但要“完全理解无限的上下文并生成全局最优化的输出”仍然极其困难。
+近年来，尽管出现了像FlashAttention这样的硬件级优化，以及Sparse Attention，甚至是Mamba（状态空间模型，[State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) Space Models）等可以在线性时间 $O(N)$ 内处理的替代架构的研究，但要“完全理解无限的上下文并生成全局最优化的输出”仍然极其困难。
 
 此外，即使能够物理上扩大上下文窗口，也会发生所谓的“迷失在中间（Lost in the Middle）”现象。LLM很容易受到提示词开头和结尾信息的强烈影响，而倾向于忽略放置在中间的重要需求或约束。如果让LLM读取数万行的企业级系统源代码并指示它“进行最佳重构”，生成的代码往往局部正确但在全局上却是崩溃的，这就是原因所在。
 

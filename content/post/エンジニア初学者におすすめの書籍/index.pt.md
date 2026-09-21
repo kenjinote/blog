@@ -23,9 +23,9 @@ description: 'Leitura obrigatória para engenheiros que querem passar de inician
 ![img_10.png](img_10.webp)
 7. Guia Completo de SQL por Especialistas
 ![img_9.png](img_9.webp)
-8. Guia Prático do Docker
+8. Guia Prático do [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/)
 ![img_8.png](img_8.webp)
-9. Guia Completo do Kubernetes
+9. Guia Completo do [Kubernetes](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/)
 ![img_7.png](img_7.webp)
 10. Code Complete 2ª Edição
 ![img_5.png](img_5.webp)

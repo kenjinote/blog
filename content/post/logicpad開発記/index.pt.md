@@ -175,7 +175,7 @@ Para distribuir a versão final do LogicPad, é necessário criar um instalador.
 
 No entanto, ao empacotar um aplicativo nativo escrito em C++ no formato MSIX, a coisa mais crítica a observar é a configuração do arquivo `Package.appxmanifest` (arquivo de manifesto).
 
-O LogicPad precisa ler e gravar enormes arquivos de projetos de circuitos lógicos salvos no sistema de arquivos local (como na pasta Documentos do usuário). O ambiente sandbox normal de UWP pode acessar somente a pasta de dados do próprio aplicativo (AppContainer). Para obter direitos totais de acesso como um aplicativo de desktop nativo, a capacidade `runFullTrust` deve ser declarada no manifesto.
+O LogicPad precisa ler e gravar enormes arquivos de projetos de circuitos lógicos salvos no sistema de arquivos local (como na pasta Documentos do usuário). O ambiente sandbox normal de UWP pode acessar somente a pasta de dados do próprio aplicativo (App[Container](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)). Para obter direitos totais de acesso como um aplicativo de desktop nativo, a capacidade `runFullTrust` deve ser declarada no manifesto.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

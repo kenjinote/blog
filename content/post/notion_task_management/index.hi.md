@@ -232,7 +232,7 @@ if __name__ == "__main__":
         create_notion_task(sys.argv[1], sys.argv[2])
 ```
 
-इस स्क्रिप्ट को GitHub Actions वर्कफ़्लो (`.github/workflows/issue_to_notion.yml`) में शामिल करके, रिपॉजिटरी में Issue बनाए जाने पर Notion में एक कार्य स्वचालित रूप से उत्पन्न हो जाएगा। डेवलपर्स को GitHub और Notion के बीच आगे-पीछे जाने की परेशानी से मुक्ति मिल जाएगी।
+इस स्क्रिप्ट को [GitHub Actions](https://kenji.blog/hi/p/cicd-pipeline-github-actions-best-practices/) वर्कफ़्लो (`.github/workflows/issue_to_notion.yml`) में शामिल करके, रिपॉजिटरी में Issue बनाए जाने पर Notion में एक कार्य स्वचालित रूप से उत्पन्न हो जाएगा। डेवलपर्स को GitHub और Notion के बीच आगे-पीछे जाने की परेशानी से मुक्ति मिल जाएगी।
 
 ### cURL का उपयोग करके ब्लॉग प्रकाशन स्थिति का स्वचालित अद्यतन
 
@@ -256,7 +256,7 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
   }'
 ```
 
-इस API कॉल को CI/CD पाइपलाइन के अंतिम चरण में एकीकृत करके, "कोड पुश करें → स्वचालित रूप से डिप्लॉय होता है → Notion में कार्य स्वचालित रूप से पूर्ण हो जाता है" का पूर्ण स्वचालन पूरा हो जाएगा।
+इस API कॉल को [CI/CD](https://kenji.blog/hi/p/cicd-pipeline-github-actions-best-practices/) पाइपलाइन के अंतिम चरण में एकीकृत करके, "कोड पुश करें → स्वचालित रूप से डिप्लॉय होता है → Notion में कार्य स्वचालित रूप से पूर्ण हो जाता है" का पूर्ण स्वचालन पूरा हो जाएगा।
 
 ---
 

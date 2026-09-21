@@ -66,7 +66,7 @@ Model Whisper biasanya menggunakan ukuran jendela $N = 400$ (25ms), ukuran hop $
 
 ---
 
-## 3. Arsitektur dan Desain Pipeline
+## 3. Arsitektur dan Desain [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)
 
 Mari kita merancang pipeline pemrosesan audio dalam aplikasi C++. Prosesnya dimulai dari input file atau mikrofon, berlanjut ke prapemrosesan, inferensi oleh `whisper.cpp`, hingga menghasilkan output teks.
 

@@ -185,7 +185,7 @@ public:
 };
 ```
 
-Als Nächstes erstellen wir eine Service-Klasse (das Testziel), die von dieser Schnittstelle abhängt. Die Abhängigkeit wird über den Konstruktor injiziert (Constructor Injection).
+Als Nächstes erstellen wir eine [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)-Klasse (das Testziel), die von dieser Schnittstelle abhängt. Die Abhängigkeit wird über den Konstruktor injiziert (Constructor Injection).
 
 ```cpp
 // include/UserService.h

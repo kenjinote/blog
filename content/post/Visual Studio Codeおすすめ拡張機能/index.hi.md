@@ -14,7 +14,7 @@ description: 'Visual Studio Code (VSCode) को और अधिक सुव�
 | श्रेणी | नाम | प्रदाता | विवरण |
 |----|----|-----|-----|
 | वर्चुअल और कंटेनर प्रबंधन | Remote Devlopment | Microsoft | SSH कनेक्शन के माध्यम से वर्चुअल कंटेनर/WSL से जुड़कर रिमोट विकास का समर्थन करता है |
-| वर्चुअल और कंटेनर प्रबंधन | Docker | Microsoft | Docker कंटेनरों के प्रबंधन का समर्थन करता है |
+| वर्चुअल और कंटेनर प्रबंधन | [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | Docker कंटेनरों के प्रबंधन का समर्थन करता है |
 | कोड प्रबंधन | GitHub Pull Requests | GitHub | VSCode पर GitHub के पुल रिक्वेस्ट का प्रबंधन करता है |
 | कोड प्रबंधन | GitHub Copilot | GitHub | AI द्वारा कोड पूरा करने का समर्थन करता है |
 | कोड प्रबंधन | Git Graph | mhutchie | Git की ब्रांच और कमिट्स को ग्राफिकल तरीके से प्रदर्शित करता है |
@@ -24,7 +24,7 @@ description: 'Visual Studio Code (VSCode) को और अधिक सुव�
 | ब्राउज़र और वेब विकास | Vue Language Features(Volar) | Vue | Vue की भाषा सुविधाओं का समर्थन करता है |
 | ब्राउज़र और वेब विकास | JavaScript (ES6) code snippets | charalampos karypidis | JavaScript के स्निपेट प्रदान करता है |
 | ब्राउज़र और वेब विकास | Tailwind CSS IntelliSense | Tailwind Labs | Tailwind CSS के स्निपेट प्रदान करता है |
-| क्लाउड विकास | AWS Toolkit | Amazon Web Services | AWS विकास का समर्थन करता है |
+| क्लाउड विकास | AWS Toolkit | Amazon Web [Service](https://kenji.blog/hi/p/kubernetes-k8s-architecture-pod-service-ingress/)s | AWS विकास का समर्थन करता है |
 | क्लाउड विकास | Azure Tools | Microsoft | Azure विकास का समर्थन करता है |
 | क्लाउड विकास | Google Cloud Tools | Google Cloud | Google Cloud विकास का समर्थन करता है |
 | डेटाबेस | MySQL | Jun Han | MySQL विकास का समर्थन करता है |

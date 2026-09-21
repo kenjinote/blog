@@ -60,7 +60,7 @@ Process Explorer是一款“超强版任务管理器”。它不仅能可视化C
 ### 2.3 硬件中断与 100% CPU 占用率峰值分析
 当整个系统冻结数秒或出现音频卡顿（Stutter）现象时，查看任务管理器可能会发现“System Interrupts（系统中断）”占满了CPU。
 
-在Windows调度中，硬件中断（ISR: Interrupt Service Routine）和DPC（Deferred Procedure Call）的执行优先级（IRQL: Interrupt Request Level）高于普通的用户线程。也就是说，如果存在缺陷的驱动程序延长了DPC的时间，CPU将在该核心上完全无法执行其他任何任务。
+在Windows调度中，硬件中断（ISR: Interrupt [Service](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/) Routine）和DPC（Deferred Procedure Call）的执行优先级（IRQL: Interrupt Request Level）高于普通的用户线程。也就是说，如果存在缺陷的驱动程序延长了DPC的时间，CPU将在该核心上完全无法执行其他任何任务。
 
 如果在ProcExp进程列表顶部的 `Interrupts` 或 `DPCs` 的CPU使用率居高不下，可以结合 Windows Performance Analyzer (WPA) 来找出导致问题的驱动程序（`.sys`）。CPU时间的计算可以公式化如下：
 
@@ -141,7 +141,7 @@ flowchart LR
 ### 4.1 需要检查的重要选项卡与高级功能
 *   **Logon**: 标准的 Run/RunOnce 键、启动文件夹。
 *   **Scheduled Tasks**: Windows任务计划程序。恶意软件常常创建伪装成“Adobe Update”或“Google Update”的虚假任务。
-*   **Services / Drivers**: 在内核模式下启动的驱动程序。之前提到的导致100% CPU峰值的可疑 `.sys` 文件，可以在这里禁用。
+*   **[Service](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/)s / Drivers**: 在内核模式下启动的驱动程序。之前提到的导致100% CPU峰值的可疑 `.sys` 文件，可以在这里禁用。
 *   **WMI**: 利用WMI (Windows Management Instrumentation) 事件过滤器或消费者的无文件恶意软件（Fileless Malware）的持久化位置。这非常容易被忽略。
 *   **AppInit_DLLs / KnownDLLs**: 每次应用程序启动时强制注入的DLL列表。这里是DLL注入劫持的温床。
 

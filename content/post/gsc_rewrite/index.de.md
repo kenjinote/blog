@@ -238,7 +238,7 @@ def extract_missing_keywords(documents):
 # print(missing_keywords)
 ```
 
-Durch diese Analyse können Sie **fehlende Themen (Inhaltslücken)** quantitativ aufdecken, wie z. B.: "Eigentlich erwähnen die Top-Artikel auch 'Wie man in Docker-Containern deployt' oder 'Aufbau einer CI/CD-Pipeline', aber mein eigener Artikel behandelt diese nicht."
+Durch diese Analyse können Sie **fehlende Themen (Inhaltslücken)** quantitativ aufdecken, wie z. B.: "Eigentlich erwähnen die Top-Artikel auch 'Wie man in [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n deployt' oder 'Aufbau einer [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)', aber mein eigener Artikel behandelt diese nicht."
 
 Die entdeckten wichtigen Schlüsselwörter sollten nicht nur im Text verstreut werden, sondern als bedeutungsvolle Abschnitte in **H2- oder H3-Überschriften (Heading-Tags)** hinzugefügt werden. Indem Sie detaillierte technische Erklärungen und Code-Snippets für die Überschriften verfassen, können Sie die Bewertung durch Google drastisch verbessern.
 

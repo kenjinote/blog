@@ -184,7 +184,7 @@ Basierend auf den bisherigen Architektur- und Leistungsunterschieden definieren 
 
 WSL2 ist speziell zur "Steigerung der Produktivität von Entwicklern" konzipiert. Es ist ideal für folgende Zwecke:
 
-*   **Webentwicklung und Cloud-native Entwicklung**: Containerentwicklung mit Docker Desktop (WSL2-Backend) oder Podman.
+*   **Webentwicklung und Cloud-native Entwicklung**: [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)entwicklung mit [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (WSL2-Backend) oder Podman.
 *   **Verwendung von dedizierten Linux-Tools**: Bei der täglichen Verwendung von bash, grep, awk, sed oder GCC/Clang-Compilern für Linux.
 *   **GUI-Anwendungen (WSLg)**: Wenn Sie Linux-X11/Wayland-Anwendungen nahtlos auf dem Windows-Desktop ausführen möchten.
 *   **Machine Learning und KI-Entwicklung**: Schnelles Training mit TensorFlow oder PyTorch unter Verwendung von GPU-Passthrough-Funktionen (NVIDIA CUDA on WSL).

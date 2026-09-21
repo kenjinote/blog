@@ -68,7 +68,7 @@ $$
 
 在量子计算中，最强大且最神奇的特性是 **量子纠缠（Entanglement）** 。爱因斯坦将其称为“幽灵般的超距作用”，这种现象是指两个或多个量子比特之间产生强烈的联系，一旦其中一个量子比特的状态被确定，无论物理距离有多远，另一个量子比特的状态也会瞬间确定。
 
-最著名的量子纠缠态之一“贝尔态（Bell State）”的 $\Phi^+$ 态表示如下：
+最著名的量子纠缠态之一“贝尔态（Bell [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)）”的 $\Phi^+$ 态表示如下：
 
 $$
 |\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}

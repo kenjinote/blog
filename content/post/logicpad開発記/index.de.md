@@ -175,7 +175,7 @@ Um das fertiggestellte LogicPad zu vertreiben, muss ein Installer erstellt werde
 
 Wenn man jedoch eine in C++ geschriebene native App mit MSIX verpackt, ist die Konfiguration der `Package.appxmanifest` (Manifest-Datei) der wichtigste Punkt, auf den man achten muss.
 
-LogicPad muss große Projektdateien lesen und schreiben können, die im lokalen Dateisystem gespeichert sind (z. B. im Dokumente-Ordner des Benutzers). In der standardmäßigen UWP-Sandbox-Umgebung ist nur der Zugriff auf den isolierten Datenordner der App (AppContainer) erlaubt. Um vollen Zugriff als native Desktop-Anwendung zu erhalten, muss im Manifest die Funktion `runFullTrust` deklariert werden.
+LogicPad muss große Projektdateien lesen und schreiben können, die im lokalen Dateisystem gespeichert sind (z. B. im Dokumente-Ordner des Benutzers). In der standardmäßigen UWP-Sandbox-Umgebung ist nur der Zugriff auf den isolierten Datenordner der App (App[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)) erlaubt. Um vollen Zugriff als native Desktop-Anwendung zu erhalten, muss im Manifest die Funktion `runFullTrust` deklariert werden.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

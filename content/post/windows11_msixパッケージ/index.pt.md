@@ -70,7 +70,7 @@ O método mais fácil e comum é usar o "Windows Application Packaging Project (
 
 ## 4. Abordagem B: Criando usando a linha de comando (MakeAppx.exe)
 
-As ferramentas de linha de comando são necessárias para automação em pipelines CI/CD ou ao reempacotar manualmente arquivos de um instalador existente. Se o Windows SDK estiver instalado no seu ambiente, você pode acessar as seguintes ferramentas através do prompt de comando do desenvolvedor.
+As ferramentas de linha de comando são necessárias para automação em pipelines [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) ou ao reempacotar manualmente arquivos de um instalador existente. Se o Windows SDK estiver instalado no seu ambiente, você pode acessar as seguintes ferramentas através do prompt de comando do desenvolvedor.
 
 ### 1. Preparação do arquivo de manifesto
 Crie um `AppxManifest.xml` com as informações mínimas necessárias no diretório raiz do pacote.

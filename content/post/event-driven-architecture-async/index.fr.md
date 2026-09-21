@@ -120,7 +120,7 @@ Si l'Event Loop est une approche visant à repousser les limites du single-threa
 
 ### 3.1 Concepts fondamentaux du modèle Acteur
 
-Dans le modèle Acteur, l'unité de base du traitement est appelée « Acteur » (Actor). Chaque Acteur possède un état indépendant (State) et un comportement (Behavior), et ne partage pas directement son état avec d'autres Acteurs. La communication entre les Acteurs s'effectue exclusivement par **passage de messages asynchrone**.
+Dans le modèle Acteur, l'unité de base du traitement est appelée « Acteur » (Actor). Chaque Acteur possède un état indépendant ([State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/)) et un comportement (Behavior), et ne partage pas directement son état avec d'autres Acteurs. La communication entre les Acteurs s'effectue exclusivement par **passage de messages asynchrone**.
 
 - **Encapsulation de l'état** : L'état interne de l'Acteur n'est pas directement accessible de l'extérieur.
 - **File d'attente de messages (Mailbox)** : Les messages reçus sont mis en file d'attente dans la Mailbox et traités séquentiellement.

@@ -256,7 +256,7 @@ C++の `std::unordered_map` や[Rust](https://kenji.blog/p/webassembly-wasm-curr
 
 ---
 
-## 3. tasks.json を用いたビルドパイプラインの自動化
+## 3. tasks.json を用いたビルド[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の自動化
 
 IDEとしての機能を完結させるためには、エディタのGUI機能だけでなく、VSCodeのTask機能（`.vscode/tasks.json`）を活用して、ショートカットキー（デフォルトでは `Ctrl+Shift+B`）一つでビルドやテストを実行できるように設定することが重要です。
 

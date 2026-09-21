@@ -67,7 +67,7 @@ wsl --update
 
 了解模型在本地环境中是如何生成文本的内部结构，对于故障排除和优化非常有用。
 
-以下Mermaid图展示了典型的本地LLM推理流水线（Pipeline）。
+以下Mermaid图展示了典型的本地LLM推理流水线（[Pipeline](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)）。
 
 ```mermaid
 graph TD
@@ -163,7 +163,7 @@ $V_{kv} = 2 \times 1 \times 8192 \times 32 \times 8 \times 128 \times 2 \div 10^
 # 5. 实践1：使用Ollama进行最快、最短的设置
 
 了解了理论之后，让我们实际在Windows环境中运行LLM。
-在2026年，对用户最友好的工具是“Ollama”。它提供了一个类似于Docker的直观命令行界面（CLI）。
+在2026年，对用户最友好的工具是“Ollama”。它提供了一个类似于[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)的直观命令行界面（CLI）。
 
 ## 5.1 安装与运行
 

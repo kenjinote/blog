@@ -32,7 +32,7 @@ A Turing machine consists of the following elements:
 
 1. **Infinitely long tape**: Divided into cells, where symbols (e.g., `0`, `1`, blank, etc.) are written in each cell. This corresponds to memory in a modern computer.
 2. **Head**: A device that can read and write to a specific cell on the tape and move left or right.
-3. **State register**: Remembers the current **state** of the machine.
+3. **[State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) register**: Remembers the current **state** of the machine.
 4. **State transition function**: A rule (program) that determines the next symbol to write, the direction the head should move (right or left), and the next state, based on the current "state" and the "symbol" read by the head.
 
 Below is a Mermaid diagram illustrating the conceptual operation of a Turing machine.
@@ -46,7 +46,7 @@ graph TD
     D -.-> B
 ```
 
-### 2.2 Mathematical Definition of State Transitions
+### 2.2 Mathematical Definition of [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Transitions
 
 A Turing machine $M$ is mathematically defined as the following 7-tuple:
 

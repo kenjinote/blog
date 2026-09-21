@@ -256,7 +256,7 @@ reqwest = "0.11" # <- यदि अपडेट आवश्यक है, त�
 
 ---
 
-## 3. tasks.json का उपयोग करके बिल्ड पाइपलाइन को स्वचालित करना (Automating the Build Pipeline using tasks.json)
+## 3. tasks.json का उपयोग करके बिल्ड पाइपलाइन को स्वचालित करना (Automating the Build [Pipeline](https://kenji.blog/hi/p/cicd-pipeline-github-actions-best-practices/) using tasks.json)
 
 एक IDE के रूप में पूरी तरह से काम करने के लिए, न केवल एडिटर के GUI फीचर्स का उपयोग करना महत्वपूर्ण है, बल्कि VSCode के Task फीचर (`.vscode/tasks.json`) का लाभ उठाकर एक सिंगल शॉर्टकट की (shortcut key) (डिफ़ॉल्ट रूप से `Ctrl+Shift+B`) के साथ बिल्ड या टेस्ट चलाने के लिए इसे कॉन्फ़िगर करना भी महत्वपूर्ण है।
 

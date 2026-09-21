@@ -172,7 +172,7 @@ This is the most important part. We record the destination of the $5 cash held b
 | :--- | :--- |
 | Refund to Guests: $3<br>Embezzlement Loss: $2 | Clerk (Cash): $5 |
 
-### Final Integrated State of Balance Sheet (B/S) and Profit & Loss (P/L)
+### Final Integrated [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) of Balance Sheet (B/S) and Profit & Loss (P/L)
 As a result of the whole process, we summarize where the cash is and under what name.
 
 ```mermaid
@@ -182,7 +182,7 @@ pie title Final location of the initial $30 (Assets side)
     "Waiter's Pocket (Embezzlement $2)" : 2
 ```
 
-**[Confirmation of Final State]**
+**[Confirmation of Final [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)]**
 *   **Source of funds (Guests' expense)**: $30
 *   **Location of funds (Result)**: 
     *   $25 in the hotel register

@@ -269,7 +269,7 @@ stateDiagram-v2
 2.  **領導者僅附加（Leader Append-Only）** ：領導者不會覆寫或刪除自己日誌中的條目，只會進行附加。
 3.  **日誌比對（Log Matching）** ：如果兩份日誌包含了擁有相同索引與 Term 的條目，則在該條目之前的所有條目都必然相同。
 
-這樣一來，便從數學與演算法的層面完全排除了分散式環境中的資料不一致性。Kubernetes 的後端資料儲存系統 `etcd` 也採用了 [Raft](https://kenji.blog/zh-tw/p/byzantine-generals-problem-consensus/)，實現了叢集的嚴密狀態管理。
+這樣一來，便從數學與演算法的層面完全排除了分散式環境中的資料不一致性。[Kubernetes](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/) 的後端資料儲存系統 `etcd` 也採用了 [Raft](https://kenji.blog/zh-tw/p/byzantine-generals-problem-consensus/)，實現了叢集的嚴密狀態管理。
 
 ## 8. 微服務與交易處理
 

@@ -22,7 +22,7 @@ Namun, di balik paradigma ini, terdapat teori matematika mendalam yang dibangun 
 
 Dalam artikel ini, kita akan menjelajahi secara rinci sejarah dan perkembangan teoretis dari teori dasar kalkulus lambda, bagaimana ia memengaruhi **Lisp** sebagai bahasa pemrograman awal, hingga mencapai **Haskell** sebagai bahasa fungsional murni.
 
-## 2. Lahirnya Kalkulus Lambda: Alonzo Church dan Definisi Komputasi
+## 2. Lahirnya Kalkulus [Lambda](https://kenji.blog/id/p/serverless-architecture-aws-lambda-cold-start/): Alonzo Church dan Definisi Komputasi
 
 ### 2.1 Tantangan terhadap Masalah Keputusan (Entscheidungsproblem)
 
@@ -166,7 +166,7 @@ Fitur terbesar Lisp adalah bahwa kodenya sendiri direpresentasikan sebagai data 
 
 Lisp diketik secara dinamis (dynamically typed) dan tidak sepenuhnya sama dengan kalkulus lambda secara teoretis, tetapi ia menjadi tonggak sejarah hebat pertama yang mewujudkan semangat pemrograman fungsional seperti "memperlakukan fungsi sebagai data" dan "memandang komputasi sebagai evaluasi fungsi" pada komputer nyata.
 
-## 7. Kalkulus Lambda Berjenis (Typed Lambda Calculus) dan Korespondensi Curry-Howard
+## 7. Kalkulus [Lambda](https://kenji.blog/id/p/serverless-architecture-aws-lambda-cold-start/) Berjenis (Typed Lambda Calculus) dan Korespondensi Curry-Howard
 
 Kalkulus lambda murni (kalkulus lambda tanpa tipe) memang kuat, tetapi karena argumen apa pun dapat diteruskan ke fungsi apa pun, hal itu dapat menyebabkan paradoks melalui aplikasi diri (contoh: Paradoks Russell). Untuk mencegah hal ini, Church kemudian memperkenalkan **Kalkulus Lambda Berjenis Sederhana** (Simply Typed Lambda Calculus).
 

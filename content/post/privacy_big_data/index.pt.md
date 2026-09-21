@@ -19,7 +19,7 @@ No entanto, por outro lado, o risco de violação de privacidade associado à co
 
 Para coletar e utilizar dados de forma eficiente, as empresas adotam várias arquiteturas de dados. Houve uma transição do "Data Warehouse" (Armazém de Dados), que costumava ser o principal, para o "Data Lake" (Lago de Dados), que gerencia centralmente todos os dados, incluindo dados não estruturados, e atualmente está ocorrendo uma mudança de paradigma em direção a uma arquitetura distribuída, o "Data Mesh" (Malha de Dados).
 
-### Data Lake Centralizado e Pipeline de Anonimização
+### Data Lake Centralizado e [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) de Anonimização
 
 Um data lake é um repositório de armazenamento que guarda grandes volumes de dados brutos em seu formato original. No entanto, o uso direto de dados brutos contendo informações pessoais (PII: Personally Identifiable Information) para análise resulta em sérias violações de conformidade. Portanto, um rigoroso "Pipeline de Anonimização" (Anonymization Pipeline) é implementado entre o data lake e o ambiente de análise.
 

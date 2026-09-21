@@ -28,7 +28,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 Ollama是一个可以让你在本地环境中轻松运行和管理开源大型语言模型（如Llama 3, Phi-3, Mistral, Gemma等）的平台。以前，为了搭建本地LLM环境，需要极其繁琐的步骤，比如配置Python环境、安装CUDA工具包、解决PyTorch的依赖关系，以及从Hugging Face下载巨大的模型文件并进行格式转换（例如从Safetensors转换为GGUF）等。
 
-Ollama隐藏了这些复杂性，让你可以像使用Docker一样方便地处理LLM。只需一条命令，即可下载（`pull`）、运行（`run`）模型，并将其作为HTTP服务器启动。
+Ollama隐藏了这些复杂性，让你可以像使用[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)一样方便地处理LLM。只需一条命令，即可下载（`pull`）、运行（`run`）模型，并将其作为HTTP服务器启动。
 
 ## 核心技术：llama.cpp的包装器
 
@@ -75,9 +75,9 @@ ollama --version
 ```
 如果显示版本信息，则表示安装成功。
 
-## 使用Docker运行
+## 使用[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)运行
 
-如果不想污染现有环境，或者想将其集成到基于容器的基础设施中，也可以使用官方的Docker镜像。如果要使用GPU，则需要安装NVIDIA Container Toolkit。
+如果不想污染现有环境，或者想将其集成到基于容器的基础设施中，也可以使用官方的Docker镜像。如果要使用GPU，则需要安装NVIDIA [Container](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/) Toolkit。
 
 ```bash
 # 仅使用CPU运行
@@ -93,7 +93,7 @@ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ol
 
 # 模型管理与基本CLI命令
 
-Ollama最大的魅力在于模型管理非常直观。你可以像操作Docker镜像一样，尝试各种模型。
+Ollama最大的魅力在于模型管理非常直观。你可以像操作[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)镜像一样，尝试各种模型。
 
 ## 1. 运行模型 (`run`)
 
@@ -148,7 +148,7 @@ ollama rm phi3:instruct
 
 # 使用Modelfile自定义模型
 
-在Ollama中，可以通过使用名为“ **Modelfile** ”的机制，为现有模型注入系统提示词或调整超参数，从而创建自己的自定义模型。这与Docker中Dockerfile的概念完全相同。
+在Ollama中，可以通过使用名为“ **Modelfile** ”的机制，为现有模型注入系统提示词或调整超参数，从而创建自己的自定义模型。这与[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)中Dockerfile的概念完全相同。
 
 下图展示了自定义模型是如何从基础模型派生而来的。
 
@@ -497,7 +497,7 @@ $$
 
 ## 结论
 
-Ollama 的出现，极大地降低了引入本地 LLM 的门槛。类似操作 Docker 容器的简单命令体系，加上能从外部应用程序轻松调用的 REST API，这种组合可以说是当今本地 AI 开发事实上的标准。
+Ollama 的出现，极大地降低了引入本地 LLM 的门槛。类似操作 [Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/) 容器的简单命令体系，加上能从外部应用程序轻松调用的 REST API，这种组合可以说是当今本地 AI 开发事实上的标准。
 
 如果您是一位正苦恼于云端 LLM 的成本或安全限制的开发者，请务必参考本文介绍的步骤，使用 Ollama 搭建本地 LLM 环境，并将其集成到您的应用程序中。您一定会感受到 AI 带来的无限可能，而且这种体验会变得更加自由和触手可及。
 

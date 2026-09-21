@@ -85,7 +85,7 @@ xychart-beta
 대규모 언어 모델을 이용하려면 주로 2가지 접근 방식이 있습니다. '클라우드 API를 이용하는 것'과 '로컬에서 모델을 추론(Inference)하는 것'입니다. 둘 다 일장일단이 있으며, 이것이 새로운 경제적·물리적인 장벽이 되고 있습니다.
 
 ### 클라우드 API의 한계와 유지 비용
-OpenAI나 Anthropic, Google이 제공하는 최첨단 프론티어 모델(GPT-4o, Claude 3.5 Sonnet 등)은 API를 통해 접근하는 것이 일반적입니다. 하지만 고도화된 자율형 에이전트(Agentic Workflow)를 구축하고 하루에 수만 번의 API 호출을 발생시키면 비용은 폭발적으로 증가하게 됩니다.
+OpenAI나 Anthropic, Google이 제공하는 최첨단 프론티어 모델(GPT-4o, Claude 3.5 Sonnet 등)은 API를 통해 접근하는 것이 일반적입니다. 하지만 고도화된 자율형 에이전트(Agentic [Workflow](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/))를 구축하고 하루에 수만 번의 API 호출을 발생시키면 비용은 폭발적으로 증가하게 됩니다.
 
 API의 총비용 $C_{cloud}$ 는 입력 토큰과 출력 토큰의 양에 따라 달라집니다.
 

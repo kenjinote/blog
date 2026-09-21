@@ -212,7 +212,7 @@ Si vous choisissez des objets sans dépasser la capacité du sac à dos, quelle 
 
 ### 4-2. Définition de l'état et équation de transition d'état
 
-L'étape la plus importante pour résoudre avec DP est de définir correctement l'"état" (State).
+L'étape la plus importante pour résoudre avec DP est de définir correctement l'"état" ([State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/)).
 Dans ce problème, deux paramètres varient. "Jusqu'à quel objet avons-nous considéré ?" et "Quelle est la capacité restante du sac à dos ?". Nous définissons donc l'état comme suit.
 
 **Définition de l'état :**
@@ -434,7 +434,7 @@ Jusqu'à présent, nous avons vu divers problèmes, mais face à un problème de
 
 1. **Ce problème peut-il être résolu avec la DP ? (Vérification des conditions)**
    En pensant récursivement, le même état apparaît-il plusieurs fois ? (Chevauchement des sous-problèmes). Peut-on déduire l'optimum global en combinant les meilleurs choix ? (Sous-structure optimale).
-2. **Définir l'état (State)**
+2. **Définir l'état ([State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/))**
    Identifiez les variables qui expriment "Où suis-je actuellement ?", "Que reste-t-il ?", "Quelles sont les contraintes jusqu'à présent ?". Exprimer clairement la signification des indices en mots est la meilleure défense contre les bugs.
 3. **Penser à l'équation de transition d'état (Transition)**
    Comment passe-t-on d'un état à l'état suivant ? Quelles sont les options ? Parmi celles-ci, prend-on le maximum (ou le minimum), ou les additionne-t-on ? C'est le cœur de l'algorithme.

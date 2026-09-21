@@ -21,9 +21,9 @@ Bitte genießen Sie das Mysterium der Mathematik und die rohe Kraft der Informat
 
 ---
 
-## 1. GNFS State-of-the-Art Logik-Framework (Gesamter Quellcode)
+## 1. GNFS [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)-of-the-Art Logik-Framework (Gesamter Quellcode)
 
-Zunächst zeigen wir das vollständige Bild der GNFS-C++-Implementierung, die wir diesmal erläutern. Das eigentliche Zahlkörpersieb (wie CADO-NFS) ist ein riesiges verteiltes System, das in die Hunderttausende von Zeilen geht, aber dieser Code extrahiert die ** "5 wesentlichen Pipelines (Phasen)" ** , die GNFS ausmachen, entwirft sie als Klassen und modelliert sie in einer Minimalkonfiguration, ohne die mathematische Bedeutung zu verlieren.
+Zunächst zeigen wir das vollständige Bild der GNFS-C++-Implementierung, die wir diesmal erläutern. Das eigentliche Zahlkörpersieb (wie CADO-NFS) ist ein riesiges verteiltes System, das in die Hunderttausende von Zeilen geht, aber dieser Code extrahiert die ** "5 wesentlichen [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s (Phasen)" ** , die GNFS ausmachen, entwirft sie als Klassen und modelliert sie in einer Minimalkonfiguration, ohne die mathematische Bedeutung zu verlieren.
 
 ```cpp
 #include <iostream>

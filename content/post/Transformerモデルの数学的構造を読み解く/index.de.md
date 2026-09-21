@@ -330,7 +330,7 @@ Wenn sich diese einfachen Matrixoperationen jedoch in unzähligen Schichten übe
 
 Wie der provokante Titel „Attention Is All You Need“ andeutet, liegt die Schönheit dieser Architektur, die komplexe rekurrente und konvolutionale Verarbeitungen verworfen und sich auf die reinrassige Berechnung von „Attention (Relevanz)“ spezialisiert hat, gerade in ihrer mathematischen Einfachheit.
 
-In Zukunft könnten zwar neue Architekturen auftauchen, die den Transformer übertreffen (wie z. B. Mamba, ein State Space Model), aber der mathematische Rahmen des „Kontextverständnisses durch Attention“, den der Transformer geschaffen hat, wird für immer in der Geschichte der KI verankert bleiben.
+In Zukunft könnten zwar neue Architekturen auftauchen, die den Transformer übertreffen (wie z. B. Mamba, ein [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Space Model), aber der mathematische Rahmen des „Kontextverständnisses durch Attention“, den der Transformer geschaffen hat, wird für immer in der Geschichte der KI verankert bleiben.
 
 Wenn Sie künftig die Gelegenheit haben, LLMs wie ChatGPT oder Claude zu nutzen, stellen Sie sich vor, wie im Hintergrund jede Sekunde Billionen von Matrixmultiplikationen von $Q K^T$ berechnet werden und die Softmax-Funktion Wahrscheinlichkeiten ausspuckt. Ihr Verständnis für die Technologie wird sich vertiefen, und die Welt der KI wird Ihnen noch faszinierender erscheinen.
 

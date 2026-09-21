@@ -100,7 +100,7 @@ D-Wave 的量子處理器是利用超導量子干涉儀（SQUID）來實現的�
 
 ### 3.1. 么正變換與狀態向量
 
-在量子閘模型中，整個量子位元系統的狀態被表示為一個「狀態向量（State Vector）」 $|\psi\rangle$。1 個量子位元的狀態可以表示為基態 $|0\rangle$ 與 $|1\rangle$ 的線性組合：
+在量子閘模型中，整個量子位元系統的狀態被表示為一個「狀態向量（[State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Vector）」 $|\psi\rangle$。1 個量子位元的狀態可以表示為基態 $|0\rangle$ 與 $|1\rangle$ 的線性組合：
 $$ |\psi\rangle = \alpha |0\rangle + \beta |1\rangle $$
 這裡，$\alpha$ 與 $\beta$ 是複數機率幅，並且滿足 $|\alpha|^2 + |\beta|^2 = 1$。在幾何學上，這個狀態可以視覺化為「布洛赫球面（Bloch Sphere）」上的一點。
 

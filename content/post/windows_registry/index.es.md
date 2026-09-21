@@ -159,7 +159,7 @@ Cuando se edita el registro desde un script de PowerShell o una aplicación C#, 
 
 ## 8. Edición programable y segura con PowerShell
 
-Para minimizar el riesgo de editar manualmente el registro, la mejor práctica en la actualidad es codificar las operaciones (Infrastructure as Code) usando un script de PowerShell para asegurar la automatización, reproducibilidad y facilidad de prueba. PowerShell cuenta con un "Proveedor de Registro" (Registry Provider), lo que permite manipular el registro de manera transparente utilizando exactamente los mismos cmdlets (como `Get-ChildItem`, `Get-ItemProperty`, `New-Item`) que se usan para manipular el sistema de archivos (como la unidad C:).
+Para minimizar el riesgo de editar manualmente el registro, la mejor práctica en la actualidad es codificar las operaciones ([Infrastructure as Code](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/)) usando un script de PowerShell para asegurar la automatización, reproducibilidad y facilidad de prueba. PowerShell cuenta con un "Proveedor de Registro" (Registry Provider), lo que permite manipular el registro de manera transparente utilizando exactamente los mismos cmdlets (como `Get-ChildItem`, `Get-ItemProperty`, `New-Item`) que se usan para manipular el sistema de archivos (como la unidad C:).
 
 En PowerShell, unidades PSDrive (similares a las letras de unidad) dedicadas como `HKLM:` y `HKCU:` están montadas por defecto.
 
@@ -398,7 +398,7 @@ Para terminar, aquí tienes un resumen de principios de diseño y mejores práct
 
 ## Conclusión
 
-El Registro de Windows es un sistema base poderoso y complejo que gestiona de manera integrada todos los comportamientos del sistema operativo y las configuraciones de las aplicaciones. La edición manual desordenada conlleva un alto riesgo de corrupción del sistema que ha sido comprobado matemáticamente. Por lo tanto, en el desarrollo y la administración de sistemas modernos es esencial realizar una gestión de la configuración de forma segura, verificable y reproducible siguiendo el principio de Infrastructure as Code, empleando medios programables como PowerShell o C#. Utiliza la profunda comprensión de la arquitectura y los patrones de implementación explicados en este artículo para intentar construir entornos de Windows más sólidos y seguros.
+El Registro de Windows es un sistema base poderoso y complejo que gestiona de manera integrada todos los comportamientos del sistema operativo y las configuraciones de las aplicaciones. La edición manual desordenada conlleva un alto riesgo de corrupción del sistema que ha sido comprobado matemáticamente. Por lo tanto, en el desarrollo y la administración de sistemas modernos es esencial realizar una gestión de la configuración de forma segura, verificable y reproducible siguiendo el principio de [Infrastructure as Code](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/), empleando medios programables como PowerShell o C#. Utiliza la profunda comprensión de la arquitectura y los patrones de implementación explicados en este artículo para intentar construir entornos de Windows más sólidos y seguros.
 
 
 

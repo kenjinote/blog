@@ -165,7 +165,7 @@ int main() {
 - 記憶體 (RAM): 4GB （僅能勉強運行現代 OS 的容量）
 - 儲存空間 (eMMC): 32GB ～ 64GB （極端緩慢的 I/O 速度）
 
-受限於這樣貧乏的硬體限制，要建置專業工程師日常使用的「本機開發環境（Local Development Environment）」實際上是不可能的。使用 Docker 啟動 Linux 容器、以全功能執行 Visual Studio Code 等重量級 IDE，或是啟動 Node.js 及 Python 的本機伺服器並安裝龐大的函式庫，都會立刻導致記憶體枯竭和系統凍結。
+受限於這樣貧乏的硬體限制，要建置專業工程師日常使用的「本機開發環境（Local Development Environment）」實際上是不可能的。使用 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 啟動 Linux 容器、以全功能執行 Visual Studio Code 等重量級 IDE，或是啟動 Node.js 及 Python 的本機伺服器並安裝龐大的函式庫，都會立刻導致記憶體枯竭和系統凍結。
 
 結果就是，教育現場被迫陷入只能完全依賴在瀏覽器上運行的雲端 IDE（如 Google Colaboratory, Replit，或是教科書出版商自己開發的輕量 Web 工具等）的狀況。
 
@@ -204,7 +204,7 @@ flowchart LR
 
 ### 需求的技能與教授的技能之間的絕望落差
 
-現代產業界，特別是全球化的大型新創企業與科技巨頭（如 GAFAM 等），對剛畢業的軟體工程師所要求的能力，正以驚人的速度逐年提高。建立雲端原生基礎設施（AWS, GCP, Kubernetes）、微服務架構的分散式系統設計、機器學習工作流程的實作，以及進階的安全知識等，都需要廣泛且深厚的專業性。
+現代產業界，特別是全球化的大型新創企業與科技巨頭（如 GAFAM 等），對剛畢業的軟體工程師所要求的能力，正以驚人的速度逐年提高。建立雲端原生基礎設施（AWS, GCP, [Kubernetes](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)）、微服務架構的分散式系統設計、機器學習工作流程的實作，以及進階的安全知識等，都需要廣泛且深厚的專業性。
 
 以下圖表概念性地展示了目前日本學校教育所提供的技能達成度，與最前線產業界要求技能水準之間令人絕望的差距。
 

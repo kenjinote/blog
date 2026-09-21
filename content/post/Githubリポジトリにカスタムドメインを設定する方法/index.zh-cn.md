@@ -76,7 +76,7 @@ Addresses:  185.199.108.153
 ## 为 Github 仓库配置自定义域名
 1. 打开仓库页面，点击 Settings
 2. 点击 Pages
-3. 如果直接发布仓库源码，在 Source 中选择“Deploy from a branch”。如果需要编译源码（如 HUGO），则选择“GitHub Actions”。
+3. 如果直接发布仓库源码，在 Source 中选择“Deploy from a branch”。如果需要编译源码（如 HUGO），则选择“[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)”。
 4. 在 Branch 中选择要发布的分支，然后点击 Save
 5. 在 Custom domain 中输入已获取的域名，然后点击 Save。
 6. 根据需要勾选“Enforce HTTPS”以启用 HTTPS 支持

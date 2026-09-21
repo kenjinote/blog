@@ -179,7 +179,7 @@ $$ L_{local} = \frac{T_{in}}{S_{process\_local}} $$
 سنقدم باختصار الخطوات المحددة لإدخال الذكاء الاصطناعي المحلي. النهج الأسهل والأقوى حالياً هو استخدام **Ollama** أو **LM Studio**.
 
 ### 6.1 تثبيت Ollama
-Ollama هو إطار عمل خفيف الوزن لتشغيل نماذج اللغة الكبيرة (LLM) في بيئة محلية. يدعم أنظمة MacOS و Windows و Linux، ويسمح بإدارة النماذج بشكل بديهي مثل Docker.
+Ollama هو إطار عمل خفيف الوزن لتشغيل نماذج اللغة الكبيرة (LLM) في بيئة محلية. يدعم أنظمة MacOS و Windows و Linux، ويسمح بإدارة النماذج بشكل بديهي مثل [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ```bash
 # لنظام MacOS

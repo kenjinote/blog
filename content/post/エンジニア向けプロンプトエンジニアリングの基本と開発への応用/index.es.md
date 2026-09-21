@@ -71,7 +71,7 @@ Al construir aplicaciones de IA utilizando la API de OpenAI (GPT-4, etc.) o la A
 
 ### 2.1 Prompt del sistema: Restricciones globales y definición de la persona
 
-El prompt del sistema define las **restricciones globales, la persona (rol) y las reglas básicas de comportamiento** para el LLM. Si lo comparamos con el diseño de software, juega un papel similar a las "variables de entorno" o la "clase base" de una aplicación, o el "Dockerfile" de un contenedor.
+El prompt del sistema define las **restricciones globales, la persona (rol) y las reglas básicas de comportamiento** para el LLM. Si lo comparamos con el diseño de software, juega un papel similar a las "variables de entorno" o la "clase base" de una aplicación, o el "[Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/)file" de un contenedor.
 
 Un buen prompt del sistema estabiliza drásticamente la calidad y el formato de la salida.
 
@@ -193,7 +193,7 @@ Para implementar ToT en un prompt, puedes instruir: "Propón múltiples enfoques
 
 ---
 
-## 4. Flujo de trabajo Agente (Agentic Workflow) y ReAct (Reasoning and Acting)
+## 4. Flujo de trabajo Agente (Agentic [Workflow](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/)) y ReAct (Reasoning and Acting)
 
 La aplicación de los LLM está evolucionando rápidamente de simples entradas y salidas de texto a la era de los **Agentes de IA (AI Agents)**, que planifican de manera autónoma e interactúan con entornos externos para completar tareas. El paradigma central de esta arquitectura de agentes es **ReAct (Reasoning and Acting)**.
 
@@ -220,7 +220,7 @@ La interfaz estándar para integrar ReAct en sistemas es el **Function Calling (
 El ingeniero proporciona al LLM "una definición de las herramientas disponibles (esquema JSON)" junto con el prompt del sistema. El LLM analiza el contexto del prompt, y si decide que debe usar una herramienta, emite el "nombre de la función a llamar" y el "JSON de sus argumentos" en lugar de texto normal. La aplicación ejecuta esa función y devuelve el resultado al LLM, cerrando así el ciclo.
 
 **Ejemplo de aplicación en desarrollo (Agente de depuración autónomo):**
-Si quieres construir un agente que investigue la causa y genere un parche cuando falla una prueba en un pipeline de CI/CD, proporcionarías las siguientes herramientas al LLM:
+Si quieres construir un agente que investigue la causa y genere un parche cuando falla una prueba en un pipeline de [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/), proporcionarías las siguientes herramientas al LLM:
 
 1. `search_codebase(regex_pattern)`: Busca en el código del repositorio con una expresión regular.
 2. `view_file_content(file_path, start_line, end_line)`: Lee el contenido de un archivo especificado.
@@ -368,7 +368,7 @@ El estándar actual de la industria es utilizar un modelo potente (por ejemplo, 
 2. **Ejecución**: Genera las salidas contra el conjunto de pruebas usando el prompt y el modelo a evaluar.
 3. **Evaluación**: Prepara un prompt de evaluación (meta-prompt) e instruye al Judge LLM a "calificar en una escala de 1 a 5 si la salida generada cumple con los requisitos".
 
-Esto permite detectar regresiones de rendimiento (degradación) de forma automática en la canalización CI/CD al modificar el prompt. La ingeniería de prompts está evolucionando de un "ajuste artesanal de prompts" a una "ingeniería" estructurada, impulsada por datos y reproducible.
+Esto permite detectar regresiones de rendimiento (degradación) de forma automática en la canalización [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) al modificar el prompt. La ingeniería de prompts está evolucionando de un "ajuste artesanal de prompts" a una "ingeniería" estructurada, impulsada por datos y reproducible.
 
 ---
 

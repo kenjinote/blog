@@ -34,7 +34,7 @@ $$
 \Delta = -16(4a^3 + 27b^2) \neq 0
 $$
 
-Secara geometris, jika dipertimbangkan di atas lapangan bilangan kompleks $\mathbb{C}$, kurva ini berbentuk torus (seperti donat). Hal ini ditunjukkan oleh isomorfisme dengan torus kompleks $\mathbb{C}/\Lambda$ ($\Lambda$ adalah kisi) yang menggunakan fungsi $\wp$ dari Weierstrass.
+Secara geometris, jika dipertimbangkan di atas lapangan bilangan kompleks $\mathbb{C}$, kurva ini berbentuk torus (seperti donat). Hal ini ditunjukkan oleh isomorfisme dengan torus kompleks $\mathbb{C}/\[Lambda](https://kenji.blog/id/p/serverless-architecture-aws-lambda-cold-start/)$ ($\Lambda$ adalah kisi) yang menggunakan fungsi $\wp$ dari Weierstrass.
 
 ### 2.2. Titik Rasional dan Struktur Grup
 
@@ -139,7 +139,7 @@ Masalah ini diselesaikan oleh **Teorema Modularitas** (sebelumnya Konjektur Tani
 Modular berarti bahwa $L(E, s)$ sepenuhnya setara dengan fungsi L $L(f, s)$ dari sebuah bentuk modular $f$ dengan bobot 2. Melalui teori Hecke, fungsi L dari bentuk modular dapat diperluas secara analitik ke seluruh bidang kompleks dan memenuhi persamaan fungsional berikut:
 
 $$
-\Lambda(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
+\[Lambda](https://kenji.blog/id/p/serverless-architecture-aws-lambda-cold-start/)(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
 $$
 $$
 \Lambda(E, 2-s) = w \Lambda(E, s)

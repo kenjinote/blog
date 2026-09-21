@@ -12,7 +12,7 @@ description: 'Dies ist der komplette Setup-Leitfaden für WSL2, der Ihre Entwick
 
 „WSL2 (Windows Subsystem for Linux 2)“, das eine native Linux-Entwicklungsumgebung unter Windows bietet, ist zu einem unverzichtbaren Werkzeug in der modernen Softwareentwicklung geworden. Es gibt jedoch einen himmelweiten Unterschied in Leistung und Entwicklungserfahrung zwischen der weiteren Nutzung im Standardzustand und dem Verständnis der Architektur zur entsprechenden Optimierung.
 
-Dieser Artikel beginnt mit einer Erklärung der Architektur, die das Fundament von WSL2 bildet. Er behandelt ausführlich alle Schritte zum Aufbau der „ultimativen Entwicklungsumgebung“, die professionelle Ingenieure verlangen, einschließlich Konfigurationen zur Maximierung der Leistung, Aufbau einer komfortablen Terminalumgebung, nahtlose Integration mit Docker und VS Code sowie erweiterte Netzwerkeinstellungen, mit einem Umfang von über 10.000 Zeichen.
+Dieser Artikel beginnt mit einer Erklärung der Architektur, die das Fundament von WSL2 bildet. Er behandelt ausführlich alle Schritte zum Aufbau der „ultimativen Entwicklungsumgebung“, die professionelle Ingenieure verlangen, einschließlich Konfigurationen zur Maximierung der Leistung, Aufbau einer komfortablen Terminalumgebung, nahtlose Integration mit [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) und VS Code sowie erweiterte Netzwerkeinstellungen, mit einem Umfang von über 10.000 Zeichen.
 
 ---
 
@@ -256,7 +256,7 @@ Der VS Code auf der Windows-Seite fungiert als reiner „Thin Client (UI)“, un
 Installieren Sie **"WSL" (ms-vscode-remote.remote-wsl)** aus den "Erweiterungen" von VS Code. Navigieren Sie dann im WSL-Terminal zum Projektverzeichnis und führen Sie einfach `code .` aus, um den VS Code auf der Windows-Seite mit dem geöffneten Verzeichnis zu starten.
 
 **Wichtiger Hinweis (Problem mit dem Zeilenumbruchcode):**
-Windows und Linux haben unterschiedliche Zeilenumbruchcodes (Windows verwendet `CRLF`, Linux verwendet `LF`). Bei der Entwicklung in WSL stellen Sie bitte sicher, dass die Git-Einstellung `core.autocrlf` und die Standarddateieinstellungen von VS Code auf `LF` vereinheitlicht werden. Wenn Sie dies versäumen, werden Sie von mysteriösen Fehlern bei der Ausführung von Shell-Skripten oder Docker-Containern geplagt.
+Windows und Linux haben unterschiedliche Zeilenumbruchcodes (Windows verwendet `CRLF`, Linux verwendet `LF`). Bei der Entwicklung in WSL stellen Sie bitte sicher, dass die Git-Einstellung `core.autocrlf` und die Standarddateieinstellungen von VS Code auf `LF` vereinheitlicht werden. Wenn Sie dies versäumen, werden Sie von mysteriösen Fehlern bei der Ausführung von Shell-Skripten oder [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n geplagt.
 
 ```bash
 # Git-Zeilenumbruchcode-Einstellung auf der WSL-Seite
@@ -274,7 +274,7 @@ Fügen Sie der `settings.json` (Remote-Einstellung) von VS Code auch Folgendes h
 
 ---
 
-## 7. Optimierung von Docker Desktop und WSL2 Integration
+## 7. Optimierung von [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop und WSL2 Integration
 
 Es gibt hauptsächlich zwei Ansätze zur Verwendung von Docker in einer WSL2-Umgebung.
 
@@ -282,15 +282,15 @@ Es gibt hauptsächlich zwei Ansätze zur Verwendung von Docker in einer WSL2-Umg
 2. Installieren Sie die **native Docker Engine** direkt innerhalb von WSL2 (z. B. Ubuntu)
 
 ### Ansatz 1: Docker Desktop (Empfohlen)
-Dies wird in den meisten Fällen empfohlen, da es ein einfaches Management mit einer GUI und einen transparenten Zugriff auf Container zwischen Windows und WSL ermöglicht. Überprüfen Sie Folgendes in den Einstellungen von Docker Desktop (Settings).
+Dies wird in den meisten Fällen empfohlen, da es ein einfaches Management mit einer GUI und einen transparenten Zugriff auf [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/) zwischen Windows und WSL ermöglicht. Überprüfen Sie Folgendes in den Einstellungen von Docker Desktop (Settings).
 
 - Aktivieren Sie `General` -> `Use the WSL 2 based engine`.
 - Aktivieren Sie `Resources` -> `WSL Integration` -> `Enable integration with my default WSL distro` und aktivieren Sie die zu verwendende Distribution (Ubuntu) mit der Umschaltfläche.
 
-Dies ermöglicht es Ihnen, den `docker`-Befehl direkt aus dem WSL2-Terminal auszuführen, und die Kommunikation mit dem Docker-Daemon erfolgt über dedizierte Lightweight-VMs (`docker-desktop` und `docker-desktop-data`), die von Docker Desktop verwaltet werden.
+Dies ermöglicht es Ihnen, den `docker`-Befehl direkt aus dem WSL2-Terminal auszuführen, und die Kommunikation mit dem [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-Daemon erfolgt über dedizierte Lightweight-VMs (`docker-desktop` und `docker-desktop-data`), die von [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop verwaltet werden.
 
 ### Ansatz 2: Direkte Installation der nativen Docker Engine
-Wenn Sie Unternehmensnetzwerkeinschränkungen haben (z. B. um die Kosten für Docker Desktop zu vermeiden) oder den Leistungs-Overhead so weit wie möglich reduzieren möchten, aktivieren Sie `systemd` in `/etc/wsl.conf` und installieren Sie Docker als reinen Ubuntu-Server.
+Wenn Sie Unternehmensnetzwerkeinschränkungen haben (z. B. um die Kosten für Docker Desktop zu vermeiden) oder den Leistungs-Overhead so weit wie möglich reduzieren möchten, aktivieren Sie `systemd` in `/etc/wsl.conf` und installieren Sie [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) als reinen Ubuntu-Server.
 
 ```bash
 # Auszug aus dem offiziellen Docker-Installationsverfahren auf WSL2 Ubuntu mit aktiviertem systemd
@@ -351,7 +351,7 @@ Nach Abschluss dieser Konfiguration wird bei Ausführung von `ssh-add -l` aus de
 
 ## 9. Wartung: Optimierung (Komprimierung) von aufgeblähten VHDX
 
-Einer der größten Nachteile von WSL2 ist die Tatsache, dass die Dateigröße der virtuellen Festplatte (.vhdx) auf der Windows-Seite nicht automatisch reduziert wird, selbst wenn Sie Docker-Images oder Dateien löschen. Wenn Sie lange Zeit weiterentwickeln, bläht sich die Datei ext4.vhdx auf Dutzende bis Hunderte von GB auf.
+Einer der größten Nachteile von WSL2 ist die Tatsache, dass die Dateigröße der virtuellen Festplatte (.vhdx) auf der Windows-Seite nicht automatisch reduziert wird, selbst wenn Sie [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-Images oder Dateien löschen. Wenn Sie lange Zeit weiterentwickeln, bläht sich die Datei ext4.vhdx auf Dutzende bis Hunderte von GB auf.
 
 Um Speicherplatz freizugeben, müssen Sie VHDX regelmäßig von der Windows-Seite aus optimieren (komprimieren).
 

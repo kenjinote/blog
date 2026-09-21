@@ -71,7 +71,7 @@ Addresses:  185.199.108.153
 ## Set a custom domain in the Github repository
 1. Open the repository page and click Settings
 2. Click Pages
-3. If you want to publish the repository source as is, select "Deploy from a branch" in Source. If you want to build the source using HUGO or similar, select "GitHub Actions".
+3. If you want to publish the repository source as is, select "Deploy from a branch" in Source. If you want to build the source using HUGO or similar, select "[GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)".
 4. Select the branch to publish in Branch and click Save
 5. Enter the acquired domain in Custom domain and click Save.
 6. Check "Enforce HTTPS" as necessary to support HTTPS

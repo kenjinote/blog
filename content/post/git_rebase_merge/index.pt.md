@@ -230,7 +230,7 @@ git rebase --abort
 
 ---
 
-# 8. Uso correto na prática (Workflow prático)
+# 8. Uso correto na prática ([Workflow](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) prático)
 
 Então, como devemos escolher entre `merge` e `rebase` no desenvolvimento real? Aqui apresentamos a abordagem mais padrão e segura.
 

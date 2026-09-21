@@ -13,8 +13,8 @@ description: 'Visual Studio Code（VSCode）をさらに便利にするおすす
 
 | 分類 | 名称 | 提供元 | 説明 |
 |----|----|-----|-----|
-| 仮想・コンテナ管理| Remote Devlopment | Microsoft  | SSH接続にて仮想コンテナ/WSLに接続して、リモート開発をサポートする |
-| 仮想・コンテナ管理 | Docker | Microsoft  | Dockerコンテナの管理をサポートする |
+| 仮想・[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)管理| Remote Devlopment | Microsoft  | SSH接続にて仮想コンテナ/WSLに接続して、リモート開発をサポートする |
+| 仮想・コンテナ管理 | [Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft  | Dockerコンテナの管理をサポートする |
 | コード管理 | GitHub Pull Requests | GitHub | GitHubのPull RequestをVSCode上で管理する |
 | コード管理 | GitHub Copilot | GitHub | AIによるコード補完をサポートする |
 | コード管理 | Git Graph | mhutchie | Gitのブランチやコミットをグラフィカルに表示する |
@@ -24,7 +24,7 @@ description: 'Visual Studio Code（VSCode）をさらに便利にするおすす
 | ブラウザ・Web開発 | Vue Language Features(Volar) | Vue |  Vueの言語機能をサポートする |
 | ブラウザ・Web開発 | JavaScript (ES6) code snippets | charalampos karypidis | JavaScriptのスニペットを提供する |
 | ブラウザ・Web開発 | Tailwind CSS IntelliSense | Tailwind Labs | Tailwind CSSのスニペットを提供する |
-| クラウド開発 | AWS Toolkit | Amazon Web Services | AWSの開発をサポートする |
+| クラウド開発 | AWS Toolkit | Amazon Web [Service](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)s | AWSの開発をサポートする |
 | クラウド開発 | Azure Tools | Microsoft | Azureの開発をサポートする |
 | クラウド開発 | Google Cloud Tools | Google Cloud | Google Cloudの開発をサポートする |
 | データベース | MySQL | Jun Han | MySQLの開発をサポートする |

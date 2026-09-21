@@ -100,7 +100,7 @@ D-Wave的量子处理器是使用超导量子干涉器件（SQUID）实现的。
 
 ### 3.1. 酉变换与状态向量
 
-在量子门模型中，整个量子比特系统的状态用“状态向量（State Vector）” $|\psi\rangle$ 来表示。一个量子比特的状态可以表示为基态 $|0\rangle$ 和 $|1\rangle$ 的线性组合：
+在量子门模型中，整个量子比特系统的状态用“状态向量（[State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) Vector）” $|\psi\rangle$ 来表示。一个量子比特的状态可以表示为基态 $|0\rangle$ 和 $|1\rangle$ 的线性组合：
 $$ |\psi\rangle = \alpha |0\rangle + \beta |1\rangle $$
 这里，$\alpha$ 和 $\beta$ 是复概率幅，且满足 $|\alpha|^2 + |\beta|^2 = 1$。从几何学上看，这种状态可以可视化为“布洛赫球面（Bloch Sphere）”上的一个点。
 

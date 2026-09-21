@@ -14,7 +14,7 @@ description: 'Apresentamos em formato de lista as extensões recomendadas para t
 | Categoria | Nome | Fornecedor | Descrição |
 |----|----|-----|-----|
 | Gestão de Máquinas Virtuais e Contentores | Remote Devlopment | Microsoft | Suporta desenvolvimento remoto ao conectar a contentores virtuais/WSL via SSH |
-| Gestão de Máquinas Virtuais e Contentores | Docker | Microsoft | Suporta a gestão de contentores Docker |
+| Gestão de Máquinas Virtuais e Contentores | [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | Suporta a gestão de contentores Docker |
 | Gestão de Código | GitHub Pull Requests | GitHub | Gere os Pull Requests do GitHub no VSCode |
 | Gestão de Código | GitHub Copilot | GitHub | Suporta a conclusão de código por IA |
 | Gestão de Código | Git Graph | mhutchie | Exibe graficamente os ramos e commits do Git |
@@ -24,7 +24,7 @@ description: 'Apresentamos em formato de lista as extensões recomendadas para t
 | Navegador e Desenvolvimento Web | Vue Language Features(Volar) | Vue | Suporta as funcionalidades de linguagem do Vue |
 | Navegador e Desenvolvimento Web | JavaScript (ES6) code snippets | charalampos karypidis | Fornece snippets de JavaScript |
 | Navegador e Desenvolvimento Web | Tailwind CSS IntelliSense | Tailwind Labs | Fornece snippets de Tailwind CSS |
-| Desenvolvimento na Cloud | AWS Toolkit | Amazon Web Services | Suporta o desenvolvimento na AWS |
+| Desenvolvimento na Cloud | AWS Toolkit | Amazon Web [Service](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/)s | Suporta o desenvolvimento na AWS |
 | Desenvolvimento na Cloud | Azure Tools | Microsoft | Suporta o desenvolvimento no Azure |
 | Desenvolvimento na Cloud | Google Cloud Tools | Google Cloud | Suporta o desenvolvimento no Google Cloud |
 | Base de Dados | MySQL | Jun Han | Suporta o desenvolvimento em MySQL |

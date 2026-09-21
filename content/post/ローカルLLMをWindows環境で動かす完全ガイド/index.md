@@ -67,7 +67,7 @@ wsl --update
 
 ローカル環境でモデルがどのようにテキストを生成するのか、その内部構造を理解することは、トラブルシューティングや最適化において非常に有用です。
 
-以下のMermaid図は、典型的なローカルLLMの推論パイプラインを示しています。
+以下のMermaid図は、典型的なローカルLLMの推論[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を示しています。
 
 ```mermaid
 graph TD
@@ -163,7 +163,7 @@ $V_{kv} = 2 \times 1 \times 8192 \times 32 \times 8 \times 128 \times 2 \div 10^
 # 5. 実践1：Ollamaを用いた最速・最短セットアップ
 
 理論を理解したところで、実際にWindows環境でLLMを動かしてみましょう。
-2026年現在、最もユーザーフレンドリーなツールが「Ollama」です。Dockerライクな直感的なCLIを提供します。
+2026年現在、最もユーザーフレンドリーなツールが「Ollama」です。[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)ライクな直感的なCLIを提供します。
 
 ## 5.1 インストールと実行
 

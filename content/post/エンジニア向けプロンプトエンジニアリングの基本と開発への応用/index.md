@@ -71,7 +71,7 @@ OpenAIのAPI（GPT-4など）やAnthropicのAPI（Claudeなど）を利用して
 
 ### 2.1 システムプロンプト：グローバルな制約とペルソナの定義
 
-システムプロンプトは、LLMに対する **グローバルな制約、ペルソナ（役割）、および基本となる振る舞いのルール** を定義するものです。ソフトウェア設計に例えるなら、アプリケーションの「環境変数」や「ベースクラス」、あるいはコンテナの「Dockerfile」のような役割を果たします。
+システムプロンプトは、LLMに対する **グローバルな制約、ペルソナ（役割）、および基本となる振る舞いのルール** を定義するものです。ソフトウェア設計に例えるなら、アプリケーションの「環境変数」や「ベースクラス」、あるいは[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)の「[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)file」のような役割を果たします。
 
 優れたシステムプロンプトは、出力の品質とフォーマットを劇的に安定させます。
 
@@ -193,7 +193,7 @@ ToTをプロンプトで実現するには、「複数のアプローチを提�
 
 ---
 
-## 4. Agentic Workflow と ReAct（Reasoning and Acting）
+## 4. Agentic [Workflow](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/) と ReAct（Reasoning and Acting）
 
 LLMの応用は、単一のテキスト入出力から、自律的に計画を立て、外部環境と相互作用しながらタスクを完遂する **AIエージェント（AI Agents） ** の領域へと急速に進化しています。このエージェントアーキテクチャの中核をなすパラダイムが **ReAct (Reasoning and Acting)** です。
 
@@ -220,7 +220,7 @@ ReActをシステムに組み込むための標準的なインターフェース
 エンジニアはLLMに対し、システムプロンプトと共に「利用可能なツール群の定義（JSONスキーマ）」を渡します。LLMはプロンプトのコンテキストを解析し、ツールを使うべきだと判断した場合、通常のテキストではなく「呼び出すべき関数名」と「その引数のJSON」を出力します。アプリケーション側でその関数を実行し、結果を再びLLMに返すことでループが形成されます。
 
 **開発への応用例（自律型デバッグエージェント）：**
-CI/CDパイプラインでテストが落ちた際、原因を調査してパッチを生成するエージェントを構築する場合、以下のようなツールをLLMに提供します。
+[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)でテストが落ちた際、原因を調査してパッチを生成するエージェントを構築する場合、以下のようなツールをLLMに提供します。
 
 1. `search_codebase(regex_pattern)`: リポジトリ内のコードを正規表現で検索する。
 2. `view_file_content(file_path, start_line, end_line)`: 指定したファイルの内容を読み込む。
@@ -283,7 +283,7 @@ sequenceDiagram
 
 ### 6.1 コードレビューの自動化と静的解析の補完
 
-CIパイプラインにLLMを組み込み、Pull Request (PR) の作成時に自動でコードレビューを行わせます。Lintツールや静的解析ツールでは検知できない、ビジネスロジックの不整合や設計上のアンチパターンを指摘させることが目的です。
+CI[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)にLLMを組み込み、Pull Request (PR) の作成時に自動でコードレビューを行わせます。Lintツールや静的解析ツールでは検知できない、ビジネスロジックの不整合や設計上のアンチパターンを指摘させることが目的です。
 
 **プロンプト例（構造化出力の要求）：**
 ```text
@@ -368,7 +368,7 @@ def is_valid_ipv4(ip_str):
 2. **実行**: 評価対象のプロンプトとモデルで、テストセットに対して出力を生成させます。
 3. **評価**: 評価用のプロンプト（メタプロンプト）を用意し、Judge LLMに「生成された出力が要件を満たしているか、1〜5点でスコアリングせよ」と指示します。
 
-これにより、プロンプトを修正した際のリグレッション（性能退行）をCI/CDパイプライン上で自動検知することが可能になります。プロンプトエンジニアリングは、職人芸的な「プロンプトいじり」から、データ駆動で再現性のある「エンジニアリング（工学）」へと進化を遂げています。
+これにより、プロンプトを修正した際のリグレッション（性能退行）を[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)上で自動検知することが可能になります。プロンプトエンジニアリングは、職人芸的な「プロンプトいじり」から、データ駆動で再現性のある「エンジニアリング（工学）」へと進化を遂げています。
 
 ---
 

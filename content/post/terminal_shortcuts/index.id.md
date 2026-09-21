@@ -163,7 +163,7 @@ Dalam operasi terminal, salah satu tindakan yang paling sering dilakukan adalah 
 
 Alat yang dapat menyelesaikan masalah ini secara elegan adalah alat pencarian samar (fuzzy) serbaguna yang sangat cepat yang ditulis dalam Go, yaitu **`fzf`**.
 
-## 4.1. Pipeline Pencarian Samar dengan fzf
+## 4.1. [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) Pencarian Samar dengan fzf
 
 Saat Anda mengintegrasikan `fzf` ke dalam pencarian riwayat perintah, proses akan dilakukan melalui pipeline berikut.
 

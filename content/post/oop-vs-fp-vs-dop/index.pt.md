@@ -193,7 +193,7 @@ Cada paradigma tem áreas de especialização claras e áreas de fraqueza.
 | Paradigma | Vantagens | Desvantagens | Casos de Uso Ideais |
 | :--- | :--- | :--- | :--- |
 | **OOP** | Modelação intuitiva, ocultação através de encapsulamento | Complexidade da herança, bugs por mutação de estado implícito | Frameworks de GUI, modelação de domínios de negócio |
-| **FP** | Resiliência à concorrência, facilidade de teste, previsibilidade | Curva de aprendizagem acentuada, desempenho (carga do GC) | Pipelines de transformação de dados, sistemas simultâneos |
+| **FP** | Resiliência à concorrência, facilidade de teste, previsibilidade | Curva de aprendizagem acentuada, desempenho (carga do GC) | [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)s de transformação de dados, sistemas simultâneos |
 | **DOP** | Desempenho esmagador, transparência de estado | Redução da coesão dos dados, tendência a ser processual | Desenvolvimento de jogos, processamento computacional pesado, sistemas embutidos |
 
 ---

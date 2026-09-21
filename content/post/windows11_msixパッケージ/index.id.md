@@ -73,7 +73,7 @@ Proses ini sangat mulus, namun jika Anda menggunakan sertifikat yang ditandatang
 
 ## 4. Pendekatan B: Membuat dengan Baris Perintah (MakeAppx.exe)
 
-Untuk otomatisasi dalam alur CI/CD atau saat Anda mempaketkan ulang sekumpulan file secara manual dari penginstal yang sudah ada, diperlukan alat baris perintah. Jika Windows SDK telah diinstal pada lingkungan Anda, Anda dapat mengakses alat-alat berikut dari Prompt Perintah Pengembang (Developer Command Prompt).
+Untuk otomatisasi dalam alur [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) atau saat Anda mempaketkan ulang sekumpulan file secara manual dari penginstal yang sudah ada, diperlukan alat baris perintah. Jika Windows SDK telah diinstal pada lingkungan Anda, Anda dapat mengakses alat-alat berikut dari Prompt Perintah Pengembang (Developer Command Prompt).
 
 ### 1. Mempersiapkan File Manifes
 
@@ -311,7 +311,7 @@ Terakhir, saya akan merangkum kesalahan umum lainnya dan solusi yang mungkin ter
 
 - **0x800B0101**: Sertifikat yang digunakan untuk menandatangani telah kedaluwarsa. Tolong keluarkan sertifikat baru lagi, atau gunakan server stempel waktu (misalnya, `http://timestamp.digicert.com`) pada saat penandatanganan untuk dapat membuktikan bahwa penandatanganan dilakukan selama masa berlaku sertifikat (Jika Anda menambahkan stempel waktu, tanda tangan dianggap sah meskipun sertifikat itu sendiri kedaluwarsa).
 - **0x80080204**: Nilai `Publisher` yang tertulis di `AppxManifest.xml` dan nilai `Subject` di sertifikat tidak sepenuhnya sama. Silakan periksa dengan saksama apakah string karakter cocok persis, seperti ada atau tidaknya spasi setelah koma.
-- **Pemeriksaan Event Viewer (Peraga Peristiwa)**: Untuk menyelidiki penyebab kesalahan yang lebih detail, sangat penting untuk membuka Windows Event Viewer dan memeriksa log di bawah "Log Aplikasi dan Layanan" (Applications and Services Logs) -> "Microsoft" -> "Windows" -> "AppxPackagingOM" atau "AppXDeployment-Server".
+- **Pemeriksaan Event Viewer (Peraga Peristiwa)**: Untuk menyelidiki penyebab kesalahan yang lebih detail, sangat penting untuk membuka Windows Event Viewer dan memeriksa log di bawah "Log Aplikasi dan Layanan" (Applications and [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)s Logs) -> "Microsoft" -> "Windows" -> "AppxPackagingOM" atau "AppXDeployment-Server".
 
 ## 10. Kesimpulan
 

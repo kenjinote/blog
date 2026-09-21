@@ -15,7 +15,7 @@ tags:
   - redux
 ---
 
-在 Web 前端開發中，最受爭議且不斷進化的領域就是「狀態管理（State Management）」。現代 Web 應用程式已從單純的文件顯示，蛻變為擁有媲美桌面應用程式複雜互動的軟體。隨之而來的是，如何管理應用程式的狀態並與 UI 同步，成為了所有前端工程師面臨的最大挑戰。
+在 Web 前端開發中，最受爭議且不斷進化的領域就是「狀態管理（[State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Management）」。現代 Web 應用程式已從單純的文件顯示，蛻變為擁有媲美桌面應用程式複雜互動的軟體。隨之而來的是，如何管理應用程式的狀態並與 UI 同步，成為了所有前端工程師面臨的最大挑戰。
 
 本文將回顧前端狀態管理的歷史，深入探討每個時代的挑戰與解決方案，以及未來的典範轉移（特別是 Signals 與 Reactivity 的進化）。
 
@@ -140,7 +140,7 @@ Redux 基於以下三個嚴格的原則：
 
 1.  **單一事實來源（Single source of truth）**:
     整個應用程式的狀態，作為一個物件樹保存在單一的 Store 中。
-2.  **狀態是唯讀的（State is read-only）**:
+2.  **狀態是唯讀的（[State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) is read-only）**:
     改變狀態的唯一方法是發出（Dispatch）一個描述發生了什麼事的 Action 物件。
 3.  **變更使用純函數進行（Changes are made with pure functions）**:
     為了指定狀態如何因 Action 而改變，需要撰寫稱為 Reducer 的純函數。
@@ -237,7 +237,7 @@ React 的 Context API 有一個規範：「當 Context 的值更新時，訂閱�
 
 由於 React 預設採用「由上而下（Top-down）」的渲染模型，因此浮現了全域狀態變更容易導致整個元件樹不必要重新渲染的本質性挑戰。
 
-## 7. 狀態的分離：Server State 與 Client State
+## 7. 狀態的分離：Server [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) 與 Client State
 
 大約從這個時候開始，狀態管理發生了重要的典範轉移。那就是「不應該將所有狀態都放入單一的全域 Store 中」的認知。
 特別是從伺服器取得的資料（Server State），與僅在前端完成的 UI 狀態（Client State）在本質上具有根本的不同。
@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 這些函式庫抽象化了「將伺服器狀態快取到本地，並在需要時同步」的複雜處理。
 這樣一來，應該由 Redux 等全域 Store 管理的資料銳減至「純粹的客戶端狀態」，大幅減輕了狀態管理的負擔。
 
-## 8. 原子狀態管理（Atomic State Management）：Recoil 與 Jotai
+## 8. 原子狀態管理（Atomic [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Management）：Recoil 與 Jotai
 
 在 Server State 被分離出來之後，一場關於如何有效管理剩餘的 Client State 的新競爭開始了。
 為了解決 React 的渲染模型（由上而下）和 Context API 的效能問題而誕生的，就是 **原子狀態管理（Atomic State Management）** 方法。
@@ -444,7 +444,7 @@ React Compiler 會在編譯時靜態分析 React 元件的程式碼，並 **自�
 
 ## 13. 結論：狀態管理將走向何方？
 
-從 MVC 的混亂開始，透過 Flux/Redux 獲得可預測性，透過 Hooks 實現簡化，分離 Server State，透過 Atomic 和 Proxy 提高效率，再到 Signals 的細粒度反應性。
+從 MVC 的混亂開始，透過 Flux/Redux 獲得可預測性，透過 Hooks 實現簡化，分離 Server [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)，透過 Atomic 和 Proxy 提高效率，再到 Signals 的細粒度反應性。
 
 回顧約 15 年來前端狀態管理的歷史，可以看出一個明確的趨勢。那就是 **「在減少樣板程式碼、降低開發者認知負擔的同時，背後的系統（框架或編譯器）正朝著自動最佳化效能的方向進化」** 。
 

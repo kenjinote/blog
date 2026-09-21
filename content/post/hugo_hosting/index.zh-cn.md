@@ -12,7 +12,7 @@ description: '这是一份关于如何利用Cloudflare Pages和GitHub Pages免�
 
 在运营网站或博客时，页面加载速度（性能）、运营成本以及安全性是至关重要的因素。过去，动态CMS（内容管理系统，如WordPress）与租用服务器的组合是主流，但现在，被称为“Jamstack”的架构受到了极大的关注。其中，将由Go语言编写的超高速静态网站生成器（SSG）“Hugo”与Cloudflare Pages或GitHub Pages等现代托管服务相结合，可以构建 **完全免费且极速** 的博客环境。
 
-本文将从技术角度深入探讨，为您详细讲解将Hugo生成的静态网站发布到Cloudflare Pages和GitHub Pages的具体步骤、各平台在架构上的差异、如何使用GitHub Actions构建CI/CD（持续集成/持续部署）、DNS优化、缓存策略，以及如何引入注重隐私的访问分析工具。
+本文将从技术角度深入探讨，为您详细讲解将Hugo生成的静态网站发布到Cloudflare Pages和GitHub Pages的具体步骤、各平台在架构上的差异、如何使用[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)构建[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)（持续集成/持续部署）、DNS优化、缓存策略，以及如何引入注重隐私的访问分析工具。
 
 ---
 
@@ -82,7 +82,7 @@ $$ L_{new} = 10 + (1 - 0.95) \times 200 = 10 + 0.05 \times 200 = 10 + 10 = 20 \t
 
 ---
 
-## 4. 使用GitHub Actions构建CI/CD流水线
+## 4. 使用[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)构建[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线
 
 为了自动化Hugo博客的更新流程，我们利用GitHub Actions构建CI/CD流水线。这样一来，只需在本地编写Markdown文章并执行 `git push`，就会自动触发构建，并部署到Cloudflare Pages或GitHub Pages。
 
@@ -108,7 +108,7 @@ sequenceDiagram
 
 ### 4.1 针对Cloudflare Pages的部署设置（直接上传）
 
-Cloudflare Pages提供了两种方法：一是绑定GitHub仓库并在Cloudflare的基础设施上进行构建；二是将在GitHub Actions中构建好的静态文件进行“直接上传（Direct Upload）”。如果想更严格地管理Hugo的版本，并与其他任务（如测试和图像优化）联动，推荐在GitHub Actions上构建并使用直接上传的方式。
+Cloudflare Pages提供了两种方法：一是绑定GitHub仓库并在Cloudflare的基础设施上进行构建；二是将在[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)中构建好的静态文件进行“直接上传（Direct Upload）”。如果想更严格地管理Hugo的版本，并与其他任务（如测试和图像优化）联动，推荐在GitHub Actions上构建并使用直接上传的方式。
 
 以下是一个用于部署到Cloudflare Pages的 `.github/workflows/deploy.yml` 实用示例：
 
@@ -248,7 +248,7 @@ Cloudflare Web Analytics只需嵌入一个非常轻量的JavaScript片段即可�
 
 在使用Hugo运营静态网站时，采用像Cloudflare Pages和GitHub Pages这样现代的托管平台，在性价比、加载速度和安全性方面都具有压倒性的优势。
 
-1. **极速构建**: 发挥Hugo的高速特性，将CI/CD流水线（GitHub Actions）的执行时间降至最低。
+1. **极速构建**: 发挥Hugo的高速特性，将[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线（[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)）的执行时间降至最低。
 2. **边缘分发**: 利用Cloudflare的边缘网络，以毫秒级的延迟将内容分发给全球用户。
 3. **适当的DNS配置**: 运用CNAME Flattening安全且高速地运营Zone Apex（自定义域名）。
 4. **优化缓存策略**: 使用 `_headers` 针对各类资源合理分离浏览器缓存和边缘缓存。

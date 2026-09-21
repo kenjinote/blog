@@ -9,7 +9,7 @@ categories: ["tools-development-environment"]
 description: '本文讲解如何在GitHub Actions工作流中动态设置环境变量。以Windows环境为例，介绍写入“$env:GITHUB_ENV”的步骤，以及在后续步骤中引用该变量用于创建发布的具体示例。'
 ---
 
-要在 GitHub Actions 中动态设置变量，可以通过如下所示向 $env:GITHUB_ENV 中追加写入来实现。
+要在 [GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 中动态设置变量，可以通过如下所示向 $env:GITHUB_ENV 中追加写入来实现。
 
 【Windows 的情况】
 ```

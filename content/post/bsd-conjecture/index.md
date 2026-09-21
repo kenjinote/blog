@@ -34,7 +34,7 @@ $$
 \Delta = -16(4a^3 + 27b^2) \neq 0
 $$
 
-幾何学的には、この曲線は複素数体 $\mathbb{C}$ 上で考えると、トーラス（ドーナツ型）の形をしています。このことは、ワイエルシュトラスの $\wp$ 関数を用いた複素トーラス $\mathbb{C}/\Lambda$（$\Lambda$ は格子）との同型対応から示されます。
+幾何学的には、この曲線は複素数体 $\mathbb{C}$ 上で考えると、トーラス（ドーナツ型）の形をしています。このことは、ワイエルシュトラスの $\wp$ 関数を用いた複素トーラス $\mathbb{C}/\[Lambda](https://kenji.blog/p/serverless-architecture-aws-lambda-cold-start/)$（$\Lambda$ は格子）との同型対応から示されます。
 
 ### 2.2. 有理点と群構造
 
@@ -139,7 +139,7 @@ BSD予想を述べる上で決定的に重要なのは、$L(E, s)$ を全複素�
 モジュラーであるとは、$L(E, s)$ がある重さ2のモジュラー形式 $f$ のL関数 $L(f, s)$ と完全に一致することを意味します。モジュラー形式のL関数はヘッケの理論により全複素平面へ解析接続され、次のような関数等式を満たします。
 
 $$
-\Lambda(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
+\[Lambda](https://kenji.blog/p/serverless-architecture-aws-lambda-cold-start/)(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
 $$
 $$
 \Lambda(E, 2-s) = w \Lambda(E, s)

@@ -179,7 +179,7 @@ $$ L_{local} = \frac{T_{in}}{S_{process\_local}} $$
 Мы кратко опишем конкретные шаги по внедрению локального ИИ. В настоящее время наиболее простым и мощным подходом является использование **Ollama** или **LM Studio**.
 
 ### 6.1 Установка Ollama
-Ollama — это легковесный фреймворк для запуска LLM в локальной среде. Он поддерживает MacOS, Windows и Linux и позволяет управлять моделями интуитивно понятно, как в Docker.
+Ollama — это легковесный фреймворк для запуска LLM в локальной среде. Он поддерживает MacOS, Windows и Linux и позволяет управлять моделями интуитивно понятно, как в [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ```bash
 # Для MacOS

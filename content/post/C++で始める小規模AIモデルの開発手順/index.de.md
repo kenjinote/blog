@@ -31,7 +31,7 @@ In der Trainingsphase von KI ist Python mit seiner Flexibilität und seinem umfa
 
 ## 2. Gesamtbild der Architektur
 
-Der Fluss der gesamten Inferenz-Pipeline ist im folgenden Mermaid-Diagramm dargestellt. Dies ist der Prozess vom Eingabetext des Benutzers bis zur endgültigen Generierung des nächsten Tokens.
+Der Fluss der gesamten Inferenz-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) ist im folgenden Mermaid-Diagramm dargestellt. Dies ist der Prozess vom Eingabetext des Benutzers bis zur endgültigen Generierung des nächsten Tokens.
 
 ```mermaid
 graph TD

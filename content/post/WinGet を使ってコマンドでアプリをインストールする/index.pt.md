@@ -26,7 +26,7 @@ Ter o Windows 11 instalado
 - Visual Studio Code (Comando `winget install vscode`)
 - Slack (Comando `winget install SlackTechnologies.Slack`)
 - Discord (Comando `winget install Discord.Discord`)
-- Docker Desktop (Comando `winget install Docker.DockerDesktop`)
+- [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (Comando `winget install Docker.DockerDesktop`)
 - Git (Comando `winget install Git`)
 - 7zip (Comando `winget install 7zip`)
 - VLC (Comando `winget install VideoLAN.VLC`)

@@ -34,7 +34,7 @@ $$
 \Delta = -16(4a^3 + 27b^2) \neq 0
 $$
 
-Geométricamente, si consideramos esta curva sobre el cuerpo de los números complejos $\mathbb{C}$, tiene la forma de un toro (una rosquilla). Esto se demuestra por su isomorfismo con el toro complejo $\mathbb{C}/\Lambda$ ($\Lambda$ es una red) utilizando la función $\wp$ de Weierstrass.
+Geométricamente, si consideramos esta curva sobre el cuerpo de los números complejos $\mathbb{C}$, tiene la forma de un toro (una rosquilla). Esto se demuestra por su isomorfismo con el toro complejo $\mathbb{C}/\[Lambda](https://kenji.blog/es/p/serverless-architecture-aws-lambda-cold-start/)$ ($\Lambda$ es una red) utilizando la función $\wp$ de Weierstrass.
 
 ### 2.2. Puntos racionales y estructura de grupo
 
@@ -139,7 +139,7 @@ Este problema fue resuelto mediante el **teorema de la modularidad** (anteriorme
 Ser modular significa que $L(E, s)$ coincide exactamente con la función L $L(f, s)$ de cierta forma modular $f$ de peso 2. Por la teoría de Hecke, la función L de una forma modular se extiende analíticamente a todo el plano complejo y satisface una ecuación funcional del siguiente tipo:
 
 $$
-\Lambda(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
+\[Lambda](https://kenji.blog/es/p/serverless-architecture-aws-lambda-cold-start/)(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
 $$
 $$
 \Lambda(E, 2-s) = w \Lambda(E, s)

@@ -12,7 +12,7 @@ description: 'Windows 상에서의 개발 경험을 극적으로 향상시키는
 
 Windows 상에서 Linux 네이티브 개발 환경을 제공하는 'WSL2(Windows Subsystem for Linux 2)'는 현대 소프트웨어 개발에서 필수 불가결한 도구가 되었습니다. 하지만 기본 상태로 계속 사용하는 것과 아키텍처를 이해하고 적절하게 튜닝을 적용하는 것은 성능과 개발 경험에 엄청난 차이를 가져옵니다.
 
-본 문서에서는 WSL2의 근간을 이루는 아키텍처 해설을 시작으로, 성능을 최대한으로 끌어올리기 위한 설정, 쾌적한 터미널 환경 구축, Docker 및 VS Code와의 원활한 연동, 그리고 고급 네트워크 설정까지 전문 엔지니어가 요구하는 '궁극의 개발 환경'을 구축하기 위한 모든 절차를 1만 자 이상의 분량으로 철저하게 해설합니다.
+본 문서에서는 WSL2의 근간을 이루는 아키텍처 해설을 시작으로, 성능을 최대한으로 끌어올리기 위한 설정, 쾌적한 터미널 환경 구축, [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 및 VS Code와의 원활한 연동, 그리고 고급 네트워크 설정까지 전문 엔지니어가 요구하는 '궁극의 개발 환경'을 구축하기 위한 모든 절차를 1만 자 이상의 분량으로 철저하게 해설합니다.
 
 ---
 
@@ -256,7 +256,7 @@ Windows 측의 VS Code는 단순한 '얇은 클라이언트(UI)'로 기능하며
 VS Code의 '확장 기능'에서 **"WSL" (ms-vscode-remote.remote-wsl)** 을 설치합니다. 그 후 WSL의 터미널에서 프로젝트 디렉토리로 이동하여 `code .` 를 실행하기만 하면, 해당 디렉토리가 열린 상태로 Windows 측의 VS Code가 시작됩니다.
 
 **중요한 주의점(줄바꿈 코드 문제):**
-Windows와 Linux는 줄바꿈 코드가 다릅니다(Windows는 `CRLF`, Linux는 `LF`). WSL 상에서 개발을 진행할 경우, Git의 `core.autocrlf` 설정이나 VS Code의 파일 기본 설정을 반드시 `LF` 로 통일해야 합니다. 이를 소홀히 하면 쉘 스크립트나 Docker 컨테이너 실행 시 알 수 없는 오류로 고생하게 됩니다.
+Windows와 Linux는 줄바꿈 코드가 다릅니다(Windows는 `CRLF`, Linux는 `LF`). WSL 상에서 개발을 진행할 경우, Git의 `core.autocrlf` 설정이나 VS Code의 파일 기본 설정을 반드시 `LF` 로 통일해야 합니다. 이를 소홀히 하면 쉘 스크립트나 [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 컨테이너 실행 시 알 수 없는 오류로 고생하게 됩니다.
 
 ```bash
 # WSL 측에서의 Git 줄바꿈 코드 설정
@@ -274,7 +274,7 @@ VS Code의 `settings.json`(원격 설정)에도 다음을 추가합니다.
 
 ---
 
-## 7. Docker Desktop과 WSL2 Integration 최적화
+## 7. [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop과 WSL2 Integration 최적화
 
 WSL2 환경에서 Docker를 이용하려면 주로 2가지 접근 방식이 있습니다.
 
@@ -287,10 +287,10 @@ GUI를 통한 관리나 Windows/WSL 간의 투명한 컨테이너 접근이 용�
 - `General` -> `Use the WSL 2 based engine` 에 체크합니다.
 - `Resources` -> `WSL Integration` -> `Enable integration with my default WSL distro` 에 체크하고, 토글 버튼으로 사용할 배포판(Ubuntu)을 켭니다.
 
-이를 통해 WSL2의 터미널에서 직접 `docker` 명령어를 실행할 수 있게 되며, Docker 데몬과의 통신은 Docker Desktop이 관리하는 전용 경량 VM(`docker-desktop` 및 `docker-desktop-data`)을 통해 이루어집니다.
+이를 통해 WSL2의 터미널에서 직접 `docker` 명령어를 실행할 수 있게 되며, [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 데몬과의 통신은 Docker Desktop이 관리하는 전용 경량 VM(`docker-desktop` 및 `docker-desktop-data`)을 통해 이루어집니다.
 
-### 접근 방식 2: 네이티브 Docker Engine 직접 도입
-기업 네트워크의 제약(Docker Desktop 유료화 회피 등)이나 성능 오버헤드를 극한까지 줄이고 싶은 경우에는, `/etc/wsl.conf` 에서 `systemd` 를 활성화한 뒤, 순수한 Ubuntu 서버로서 Docker를 설치합니다.
+### 접근 방식 2: 네이티브 [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) Engine 직접 도입
+기업 네트워크의 제약(Docker Desktop 유료화 회피 등)이나 성능 오버헤드를 극한까지 줄이고 싶은 경우에는, `/etc/wsl.conf` 에서 `systemd` 를 활성화한 뒤, 순수한 Ubuntu 서버로서 [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)를 설치합니다.
 
 ```bash
 # systemd가 활성화된 WSL2 Ubuntu에서의 Docker 공식 설치 절차 발췌
@@ -351,7 +351,7 @@ fi
 
 ## 9. 유지 보수: 비대해진 VHDX 최적화(압축)
 
-WSL2의 가장 큰 단점 중 하나가 "Docker 이미지를 삭제하거나 파일을 삭제해도 Windows 측 가상 디스크(.vhdx)의 파일 크기가 자동으로 축소되지 않는다"는 사양입니다. 장기간 개발을 계속하다 보면 ext4.vhdx 파일이 수십 GB에서 수백 GB까지 부풀어 오릅니다.
+WSL2의 가장 큰 단점 중 하나가 "[Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 이미지를 삭제하거나 파일을 삭제해도 Windows 측 가상 디스크(.vhdx)의 파일 크기가 자동으로 축소되지 않는다"는 사양입니다. 장기간 개발을 계속하다 보면 ext4.vhdx 파일이 수십 GB에서 수백 GB까지 부풀어 오릅니다.
 
 디스크 용량을 확보하기 위해서는 주기적으로 Windows 측에서 VHDX를 최적화(Compact)해야 합니다.
 

@@ -14,7 +14,7 @@ description: 'Ein praktischer Leitfaden zur vollständigen Automatisierung allt�
 
 In modernen IT-Infrastrukturen und Entwicklungsumgebungen, in denen Windows OS als Plattform genutzt wird, sind "tägliche Routineaufgaben" eine unvermeidliche Herausforderung für Nutzer. Die manuelle Durchführung von Aufgaben wie Dateisicherungen, Überwachung von Systemprotokollen und Aktualisierung sowie Erstellung von Entwicklungsressourcen (Git-Repositories) ist eine Brutstätte für menschliche Fehler und führt zu wertvoller Zeitverschwendung.
 
-Früher wurden Batch-Dateien (`.bat` und `.cmd`) oder VBScript verwendet, aber heutzutage ist die optimale Lösung zweifellos **PowerShell**. PowerShell ist nicht nur eine textbasierte Shell, sondern baut auf der leistungsstarken objektorientierten Basis des .NET Frameworks (und .NET Core) auf. Da die über die Pipeline übergebenen Daten keine "Strings" (Zeichenketten), sondern "Objekte" sind, ist es nicht notwendig, eine komplexe Textanalyse (wie mit grep, awk, sed) selbst zu implementieren, und Sie können leicht auf Daten zugreifen, indem Sie einfach Eigenschaften angeben.
+Früher wurden Batch-Dateien (`.bat` und `.cmd`) oder VBScript verwendet, aber heutzutage ist die optimale Lösung zweifellos **PowerShell**. PowerShell ist nicht nur eine textbasierte Shell, sondern baut auf der leistungsstarken objektorientierten Basis des .NET Frameworks (und .NET Core) auf. Da die über die [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) übergebenen Daten keine "Strings" (Zeichenketten), sondern "Objekte" sind, ist es nicht notwendig, eine komplexe Textanalyse (wie mit grep, awk, sed) selbst zu implementieren, und Sie können leicht auf Daten zugreifen, indem Sie einfach Eigenschaften angeben.
 
 In diesem Artikel stellen wir drei praktische Beispiele für vollständige Automatisierungsskripte mit PowerShell vor, die direkt mit der praktischen Arbeit verknüpft sind (Backup auf ein NAS und Log-Rotation, Ereignisprotokollüberwachung und Slack-Benachrichtigungen, Batch-Update und Build mehrerer Git-Repositories). Vorab werden wir zudem grundlegende Technologien, die dafür erforderlich sind, wie PowerShell-Ausführungsrichtlinien, Modularisierung und die Integration in die Aufgabenplanung (Task Scheduler), eingehend erläutern.
 
@@ -34,7 +34,7 @@ Es gibt folgende Arten von Ausführungsrichtlinien:
 - **AllSigned**: Erlaubt nur die Ausführung von Skripten, die von einem vertrauenswürdigen Herausgeber signiert wurden.
 - **RemoteSigned**: Lokal erstellte Skripte können wie gewohnt ausgeführt werden, aber Skripte, die aus dem Internet heruntergeladen wurden, erfordern eine Signatur.
 - **Unrestricted**: Alle Skripte können ausgeführt werden, jedoch wird bei der Ausführung von aus dem Internet heruntergeladenen Skripten eine Warnung angezeigt.
-- **Bypass**: Nichts wird blockiert und es werden keine Warnungen angezeigt. Wird häufig für temporäre Skriptausführungen (wie CI/CD-Pipelines) verwendet.
+- **Bypass**: Nichts wird blockiert und es werden keine Warnungen angezeigt. Wird häufig für temporäre Skriptausführungen (wie [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s) verwendet.
 
 Wenn Sie selbst erstellte Skripte über die Aufgabenplanung in der lokalen Umgebung eines Unternehmens ausführen, ist die praktischste und sicherste Einstellung `RemoteSigned`. Starten Sie PowerShell mit Administratorrechten und führen Sie den folgenden Befehl aus.
 
@@ -108,7 +108,7 @@ Durch Nutzung dieser Basis können Sie Skripte erstellen, die sicher und nachvol
 
 ## Integration in die Aufgabenplanung (Task Scheduler) (Register-ScheduledTask)
 
-Sobald das Skript fertig ist, benötigen Sie einen Mechanismus, um es regelmäßig auszuführen. In Windows ist die "Aufgabenplanung" (Task Scheduler) am zuverlässigsten. Es ist zwar möglich, dies über die GUI (`taskschd.msc`) einzurichten, aber aus Sicht von Infrastructure as Code erklären wir hier, wie Aufgaben mithilfe von PowerShell-Cmdlets registriert werden.
+Sobald das Skript fertig ist, benötigen Sie einen Mechanismus, um es regelmäßig auszuführen. In Windows ist die "Aufgabenplanung" (Task Scheduler) am zuverlässigsten. Es ist zwar möglich, dies über die GUI (`taskschd.msc`) einzurichten, aber aus Sicht von [Infrastructure as Code](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) erklären wir hier, wie Aufgaben mithilfe von PowerShell-Cmdlets registriert werden.
 
 PowerShell bietet das Modul `ScheduledTasks`, mit dem Sie Trigger (wann es ausgeführt werden soll), Aktionen (was ausgeführt werden soll) und Prinzipale (unter welchen Benutzerrechten es ausgeführt werden soll) im Detail definieren können.
 
@@ -331,7 +331,7 @@ try {
 }
 ```
 
-Der technische Kern dieses Skripts ist die Verwendung von `Get-WinEvent -FilterXml`. Herkömmliche Cmdlets wie `Get-EventLog` oder die Filterung mit `Where-Object` über Pipelines sind extrem langsam, da sie alle Ereignisobjekte zuerst in den Arbeitsspeicher laden und dann verarbeiten. Durch die Verwendung von XML-Filtern wird die Filterung auf Seiten des Windows-Ereignisprotokolldienstes durchgeführt. Dies führt zu einer drastischen Leistungssteigerung, bei der die Ausführungszeit meist im Bereich von wenigen Sekunden liegt.
+Der technische Kern dieses Skripts ist die Verwendung von `Get-WinEvent -FilterXml`. Herkömmliche Cmdlets wie `Get-EventLog` oder die Filterung mit `Where-Object` über [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s sind extrem langsam, da sie alle Ereignisobjekte zuerst in den Arbeitsspeicher laden und dann verarbeiten. Durch die Verwendung von XML-Filtern wird die Filterung auf Seiten des Windows-Ereignisprotokolldienstes durchgeführt. Dies führt zu einer drastischen Leistungssteigerung, bei der die Ausführungszeit meist im Bereich von wenigen Sekunden liegt.
 
 ---
 

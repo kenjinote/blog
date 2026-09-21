@@ -256,7 +256,7 @@ In design patterns where string literals are used as keys for C++'s `std::unorde
 
 ---
 
-## 3. Automating the Build Pipeline Using tasks.json
+## 3. Automating the Build [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) Using tasks.json
 
 To complete the experience as an IDE, it is important to utilize not just the editor's GUI features, but also VSCode's Task feature (`.vscode/tasks.json`) so that you can execute builds and tests with a single keyboard shortcut (default is `Ctrl+Shift+B`).
 

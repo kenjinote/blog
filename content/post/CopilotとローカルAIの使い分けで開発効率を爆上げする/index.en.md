@@ -9,7 +9,7 @@ categories: ["programming", "ai", "productivity"]
 tags: ["GitHub Copilot", "Local AI", "Workflow", "Developer Productivity"]
 ---
 
-# [Boosting Development Efficiency by Combining Copilot and Local AI](https://kenji.blog/en/p/hybrid-ai-development-workflow/): A Complete Guide to the Hybrid AI Development Workflow
+# [Boosting Development Efficiency by Combining Copilot and Local AI](https://kenji.blog/en/p/hybrid-ai-development-workflow/): A Complete Guide to the Hybrid AI Development [Workflow](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)
 
 In modern software development, the utilization of AI assistants has evolved from a "nice-to-have" tool to an "indispensable" infrastructure. Particularly since the advent of GitHub Copilot, the coding experience for developers has changed dramatically. However, relying on cloud-based AI for all tasks is not always the optimal solution.
 
@@ -179,7 +179,7 @@ Since the network latency $L_{network\_rtt}$ and cloud queue latency $L_{queue}$
 Here is a brief introduction to specific steps for introducing local AI. The easiest and most powerful approach right now is to use **Ollama** or **LM Studio**.
 
 ### 6.1 Installing Ollama
-Ollama is a lightweight framework for running LLMs in a local environment. It supports MacOS, Windows, and Linux, allowing you to intuitively manage models like Docker.
+Ollama is a lightweight framework for running LLMs in a local environment. It supports MacOS, Windows, and Linux, allowing you to intuitively manage models like [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ```bash
 # For MacOS

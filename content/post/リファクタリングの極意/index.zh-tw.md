@@ -318,7 +318,7 @@ constexpr double area = calculateCircleArea(10.0);
 
 - **Clang-Tidy**: 強大的 C++ Linter 與靜態分析工具。啟用 `modernize-*` 系列的檢查，它可以自動套用 (Fix-it) 如應用 `auto`、替換為 `nullptr`、添加 `override` 等操作。
 - **AddressSanitizer (ASan)**: 作為編譯選項 (`-fsanitize=address`) 納入，可以在執行期準確地定位出記憶體洩漏與緩衝區溢位 (Buffer Overrun)。執行測試時務必啟用它。
-- **建構 CI/CD 管線**: 使用 GitHub Actions 或 GitLab CI，對所有的 Pull Request 執行建置、自動測試與靜態分析，以防止新的技術債侵入。
+- **建構 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線**: 使用 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 或 GitLab CI，對所有的 Pull Request 執行建置、自動測試與靜態分析，以防止新的技術債侵入。
 
 ---
 

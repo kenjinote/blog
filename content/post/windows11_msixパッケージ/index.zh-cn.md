@@ -70,7 +70,7 @@ flowchart TD
 
 ## 4. 方法B：使用命令行（MakeAppx.exe）创建
 
-在CI/CD流水线中进行自动化，或者从现有安装程序手动重新打包文件时，需要使用命令行工具。只要安装了Windows SDK，就可以从开发者命令提示符访问以下工具。
+在[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线中进行自动化，或者从现有安装程序手动重新打包文件时，需要使用命令行工具。只要安装了Windows SDK，就可以从开发者命令提示符访问以下工具。
 
 ### 1. 准备清单文件
 在包的根目录下，创建一个包含最基本信息的`AppxManifest.xml`。

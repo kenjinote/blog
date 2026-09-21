@@ -73,7 +73,7 @@ El magnífico marco matemático construido por [Riemann](https://kenji.blog/es/p
 En su teoría de la relatividad especial, Einstein propuso el concepto de "espacio-tiempo", que integra el tiempo y el espacio. Y en la **teoría de la relatividad general**, llegó a la idea revolucionaria de que "la gravedad es la curvatura (deformación) del espacio-tiempo causada por objetos con masa".
 
 $$
-R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
+R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \[Lambda](https://kenji.blog/es/p/serverless-architecture-aws-lambda-cold-start/) g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
 $$
 
 En la ecuación de Einstein anterior, el lado izquierdo representa la estructura geométrica (curvatura) del espacio-tiempo, y el lado derecho representa la distribución de la materia y la energía. En otras palabras, **la materia determina cómo se curva el espacio-tiempo, y el espacio-tiempo curvo determina el movimiento de la materia**.

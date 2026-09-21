@@ -32,7 +32,7 @@ Uma Máquina de Turing é composta pelos seguintes elementos:
 
 1.  **Fita infinitamente longa** : Dividida em células, onde cada célula contém um símbolo (por exemplo, `0`, `1`, em branco, etc.). Isso corresponde à memória em computadores modernos.
 2.  **Cabeçote** : Um dispositivo que pode ler e escrever em uma célula específica da fita e mover-se para a esquerda ou direita.
-3.  **Registrador de estado** : Memoriza em que **estado** (State) a máquina se encontra atualmente.
+3.  **Registrador de estado** : Memoriza em que **estado** ([State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/)) a máquina se encontra atualmente.
 4.  **Função de transição de estado** : Um conjunto de regras (programa) que determina o próximo símbolo a ser escrito, a direção do movimento do cabeçote (direita ou esquerda) e o próximo estado, com base no "estado" atual e no "símbolo" lido pelo cabeçote.
 
 Abaixo está um diagrama Mermaid ilustrando o conceito de operação de uma Máquina de Turing.

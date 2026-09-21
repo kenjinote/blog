@@ -11,7 +11,7 @@ tags: ["Idea Generation", "Obsidian", "RSS", "Knowledge Management"]
 
 Wenn man als Ingenieur oder Forscher einen Technik-Blog betreibt, stößt man fast unweigerlich auf eine bestimmte Hürde: das "Ausgehen der Ideen". Während sich die ersten Artikel oft noch problemlos schreiben lassen, ist es nicht ungewöhnlich, dass man im Laufe der Zeit von Sorgen wie "Ich weiß nicht, was ich als Nächstes schreiben soll" oder "Mir fehlt massiv der Input für meinen Output" geplagt wird. Das Schreiben für einen Technik-Blog hängt nicht nur von der Fähigkeit ab, Texte zu verfassen, sondern maßgeblich von einem Systemdesign, das das tägliche Sammeln, Strukturieren und Kombinieren von Wissen zu neuem Wert umfasst.
 
-In diesem Artikel werde ich äußerst detailliert und technisch eine **systematisierte Input- und Output-Pipeline** erläutern, mit der sich nahezu unbegrenzt neue Ideen für technische Artikel generieren lassen. Wir beginnen mit einem Mechanismus, der mithilfe von APIs automatisch Trendthemen aus hochwertigen internationalen Informationsquellen wie Hacker News oder Lobsters extrahiert und regelmäßig über GitHub Actions ausgeführt wird. Anschließend bauen wir ein fortschrittliches System für persönliches Wissensmanagement (PKM) auf. Dabei werden die gesammelten Informationen mit der Zettelkasten-Methode in Obsidian als Wissen systematisiert und durch die Kombination der Embeddings-API von OpenAI mit Pinecone (einer Vektordatenbank) eine semantische Suche ermöglicht.
+In diesem Artikel werde ich äußerst detailliert und technisch eine **systematisierte Input- und Output-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)** erläutern, mit der sich nahezu unbegrenzt neue Ideen für technische Artikel generieren lassen. Wir beginnen mit einem Mechanismus, der mithilfe von APIs automatisch Trendthemen aus hochwertigen internationalen Informationsquellen wie Hacker News oder Lobsters extrahiert und regelmäßig über [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) ausgeführt wird. Anschließend bauen wir ein fortschrittliches System für persönliches Wissensmanagement (PKM) auf. Dabei werden die gesammelten Informationen mit der Zettelkasten-Methode in Obsidian als Wissen systematisiert und durch die Kombination der Embeddings-API von OpenAI mit Pinecone (einer Vektordatenbank) eine semantische Suche ermöglicht.
 
 Um die Grenzen des menschlichen Gedächtnisses auszugleichen, setzen wir zudem auf die sogenannte verteilte Wiederholung (Spaced Repetition) auf Basis der Ebbinghaus'schen Vergessenskurve, welche wir mit Anki praktizieren. Den gesamten Prozess – von der Verankerung des Wissens bis hin zur Sublimierung in neue Ideen durch "kombinatorische Kreativität" – werden wir anhand konkreter mathematischer Modelle und Implementierungsbeispiele von Python-Skripten tiefgehend untersuchen.
 
@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
 Dieses Skript bietet mehr Mehrwert als ein einfacher RSS-Reader. Durch die Filterung nach dem Score ist es möglich, nur die technischen Themen zu extrahieren, die in der Community wirklich Aufmerksamkeit erregen (hohes Signal bei geringem Rauschen).
 
-## 3. Planung und Automatisierung mit GitHub Actions
+## 3. Planung und Automatisierung mit [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)
 
 Das erstellte Python-Skript jeden Tag manuell auszuführen, wäre mühsam. Die Grundidee der Automatisierung ist es, menschliche Eingriffe auf ein absolutes Minimum zu reduzieren. Mithilfe der Cron-Funktion von GitHub Actions bauen wir einen Mechanismus auf, der das Skript täglich zu einer festgelegten Zeit ausführt und die Ergebnisse automatisch in das Repository committet.
 
@@ -306,7 +306,7 @@ Sie können beispielsweise grundlegende technische Fragen in Anki aufnehmen, wie
 
 ## 7. Kombinatorische Kreativität (Combinatorial Creativity)
 
-Mit der bisherigen Pipeline haben wir den "Input von vielfältigen Informationen", die "Organisation und KI-Suche mittels Zettelkasten" sowie die "Verankerung im Langzeitgedächtnis durch Anki" realisiert. Der letzte Schritt ist die "kombinatorische Kreativität" (Combinatorial Creativity), bei der diese Elemente miteinander verbunden werden, um völlig neuartige Ideen für technische Artikel zu entwickeln.
+Mit der bisherigen [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) haben wir den "Input von vielfältigen Informationen", die "Organisation und KI-Suche mittels Zettelkasten" sowie die "Verankerung im Langzeitgedächtnis durch Anki" realisiert. Der letzte Schritt ist die "kombinatorische Kreativität" (Combinatorial Creativity), bei der diese Elemente miteinander verbunden werden, um völlig neuartige Ideen für technische Artikel zu entwickeln.
 
 Innovation und Kreativität entstehen selten aus dem Nichts, sondern durch neue Kombinationen bereits bestehender Elemente. Ein berühmtes Zitat von Steve Jobs lautet dazu: "Creativity is just connecting things."
 
@@ -314,7 +314,7 @@ Für technische Blogs ist beispielsweise folgende Matrix als Kombinationsmuster 
 
 1. **[Alte Technologien] × [Neue Paradigmen]**: Beispiel: "Anti-Patterns im modernen Microservice-Design – gelernt aus der Architektur von COBOL"
 2. **[Frontend] × [Backend-Konzepte]**: Beispiel: "Erklärung des virtuellen DOM-Aktualisierungsalgorithmus von React aus der Perspektive von Transaktionsisolationsstufen in Datenbanken"
-3. **[Abstrakte Mathematik/Theorie] × [Konkrete Implementierung]**: Beispiel: "Optimierung des Pod-Schedulings in Kubernetes durch Graphentheorie"
+3. **[Abstrakte Mathematik/Theorie] × [Konkrete Implementierung]**: Beispiel: "Optimierung des [Pod](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)-Schedulings in [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/) durch Graphentheorie"
 
 Um solche Kombinationen gezielt herbeizuführen, können Sie das zuvor aufgebaute semantische Suchsystem mit Pinecone nutzen, um ein zufälliges Konzept A und ein zufälliges Konzept B zu extrahieren. Geben Sie einer KI (wie ChatGPT) dann folgenden Prompt: "Schlage mir 5 Titel- und Gliederungsideen für einen Technik-Blog vor, die diese beiden Konzepte kombinieren." Dadurch können Sie unendlich viele frische Artikel-Ideen generieren, auf die Sie alleine vielleicht nicht gekommen wären.
 
@@ -364,7 +364,7 @@ stateDiagram-v2
     Published["Published (Blog-Veröffentlichung)"] --> [*]
 ```
 
-Indem man sich dieses Workflows bewusst wird, wird auch klarer, "in welcher Phase man gerade feststeckt". Wenn Ihnen die Ideen ausgehen, kehren Sie einfach zu den Phasen "Capture" oder "Permanent" zurück und überprüfen, ob Ihre Input-Pipeline ordnungsgemäß funktioniert.
+Indem man sich dieses [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s bewusst wird, wird auch klarer, "in welcher Phase man gerade feststeckt". Wenn Ihnen die Ideen ausgehen, kehren Sie einfach zu den Phasen "Capture" oder "Permanent" zurück und überprüfen, ob Ihre Input-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) ordnungsgemäß funktioniert.
 
 ## Fazit: Schreiben ist ein "System"
 

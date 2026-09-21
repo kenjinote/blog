@@ -262,7 +262,7 @@ Maintenant que le FHE atteint des vitesses pratiques, des innovations disruptive
     En utilisant le FHE pour former l'IA dans le cloud sur des dossiers médicaux et des données ADN de patients provenant de plusieurs hôpitaux tout en conservant les données chiffrées, il est possible de développer des modèles de diagnostic du cancer très précis et de nouveaux médicaments sans violer les lois sur la vie privée (comme HIPAA ou le RGPD).
 2.  **Détection des fraudes et lutte contre le blanchiment d'argent (AML) dans les institutions financières** :
     Des banques concurrentes pourraient effectuer des analyses interbancaires en croisant leurs données à l'état chiffré, sans révéler les informations des comptes de leurs clients ou l'historique de leurs transactions, ce qui permettrait de détecter d'énormes réseaux de transferts frauduleux.
-3.  **API d'inférence d'IA sécurisée (MaaS : Model as a Service)** :
+3.  **API d'inférence d'IA sécurisée (MaaS : Model as a [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/))** :
     Les utilisateurs chiffrent leur propre voix, l'image de leur visage ou leurs requêtes avant de les envoyer à des services d'IA (tels que des LLM comme ChatGPT). Le fournisseur d'IA génère une réponse sans jamais connaître l'entrée de l'utilisateur, et la renvoie sous forme de texte chiffré. Cela dissipe complètement la crainte que « l'IA apprenne ou s'approprie des informations personnelles ».
 
 ---

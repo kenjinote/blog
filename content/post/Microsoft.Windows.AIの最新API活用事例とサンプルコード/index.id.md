@@ -346,7 +346,7 @@ API `Microsoft.Windows.AI` dan Copilot Runtime terus berkembang pesat secara pro
 
 - **Integrasi OS asali untuk API multimoda**: Memproses secara sinkron dan tanpa hambatan bukan hanya teks, tetapi juga audio, gambar, dan bahkan siaran video langsung, untuk menyediakan inferensi AI lintas moda secara standar di tingkat OS.
 - **Dukungan tingkat sistem untuk RAG (Retrieval-Augmented Generation)**: Menghubungkan kumpulan dokumen pribadi dalam PC lokal atau indeks Pencarian Windows (Windows Search) dengan model AI di dalam kotak pasir OS yang aman, untuk membangun asisten AI pribadi yang sangat mutakhir dengan perlindungan privasi yang sempurna.
-- **Penskalaan sumber daya NPU yang dinamis**: Ketika beberapa aplikasi AI berjalan secara bersamaan (misalnya, pembatalan kebisingan di latar belakang dan pembuatan kode di latar depan), penjadwal *kernel* Windows akan mengganti konteks eksekusi NPU secara dinamis untuk menjamin *Quality of Service* (QoS).
+- **Penskalaan sumber daya NPU yang dinamis**: Ketika beberapa aplikasi AI berjalan secara bersamaan (misalnya, pembatalan kebisingan di latar belakang dan pembuatan kode di latar depan), penjadwal *kernel* Windows akan mengganti konteks eksekusi NPU secara dinamis untuk menjamin *Quality of [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)* (QoS).
 
 ## 9. Kesimpulan: Masa Depan Aplikasi yang Diubah oleh AI Lokal
 

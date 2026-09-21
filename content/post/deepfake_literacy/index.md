@@ -144,7 +144,7 @@ flowchart LR
     H --> A["真偽判定・異常検知 (Fake/Real Classification)"]
 ```
 
-以下は、Pythonを用いて映像からrPPG信号を抽出するパイプラインの概念的な実装例です。
+以下は、Pythonを用いて映像からrPPG信号を抽出する[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の概念的な実装例です。
 
 ```python
 import cv2

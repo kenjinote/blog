@@ -18,7 +18,7 @@ description: '根據海外UI指南，解說網頁表單中「必填項目」標�
 1. **使用星號 (\*)**
 
     * 最常見且普及的方式，在必填欄位加上「\*」。
-    * 然而， **在表單開頭必須加上「* 為必填項目」等說明** ([Nielsen Norman Group][1], [California State University, Northridge][2])。
+    * 然而， **在表單開頭必須加上「* 為必填項目」等說明** ([Nielsen Norman Group][1], [California [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) University, Northridge][2])。
     * 也有使用顏色來強調的例子（如紅字）。
 
 2. **在標籤中明確標示 "Required" 或 "(required)"**
@@ -72,7 +72,7 @@ description: '根據海外UI指南，解說網頁表單中「必填項目」標�
 
 ## 🔗 參考連結（UI 設計指南資料）
 
-* NN/g: *Marking Required Fields in Forms* ([California State University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
+* NN/g: *Marking Required Fields in Forms* ([California [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
 * Deque: *Anatomy of Accessible Forms* ([Deque][3])
 * W3C Techniques: *H90 Indicating required form controls* ([W3C][5])
 * TPGi: *Indicating mandatory fields accessibly* ([TPGi][4])

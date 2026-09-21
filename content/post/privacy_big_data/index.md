@@ -19,9 +19,9 @@ tags: ["Privacy", "Big Data", "Differential Privacy", "Federated Learning"]
 
 データを効率的に収集・活用するため、企業は様々なデータアーキテクチャを採用しています。かつて主流であった「データウェアハウス（Data Warehouse）」から、非構造化データを含むあらゆるデータを一元管理する「データレイク（Data Lake）」への移行が進み、現在では分散型アーキテクチャである「データメッシュ（Data Mesh）」へのパラダイムシフトが起きています。
 
-### 中央集権型データレイクと匿名化パイプライン
+### 中央集権型データレイクと匿名化[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)
 
-データレイクは、生データをそのままのフォーマットで大量に保存するストレージリポジトリです。しかし、個人情報（PII: Personally Identifiable Information）を含む生データをそのまま分析に利用することは、重大なコンプライアンス違反を引き起こします。そのため、データレイクと分析環境の間には、厳格な「匿名化パイプライン（Anonymization Pipeline）」が実装されます。
+データレイクは、生データをそのままのフォーマットで大量に保存するストレージリポジトリです。しかし、個人情報（PII: Personally Identifiable Information）を含む生データをそのまま分析に利用することは、重大なコンプライアンス違反を引き起こします。そのため、データレイクと分析環境の間には、厳格な「匿名化パイプライン（Anonymization [Pipeline](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)）」が実装されます。
 
 以下の図は、一般的な中央集権型データレイクにおける匿名化パイプラインのフローを示しています。
 
@@ -35,7 +35,7 @@ flowchart TD
     C -->|"Audit Logs"| G["Security & Compliance Hub"]
 ```
 
-このようなパイプラインでは、データの流入時にハッシュ化、マスキング、暗号化などの処理が自動的に適用されます。しかし、後述するように、単純なマスキングや仮名化（Pseudonymization）だけでは、他のデータソースとの突き合わせによる「再識別化（Re-identification）」のリスクを完全に排除することはできません。
+このような[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)では、データの流入時にハッシュ化、マスキング、暗号化などの処理が自動的に適用されます。しかし、後述するように、単純なマスキングや仮名化（Pseudonymization）だけでは、他のデータソースとの突き合わせによる「再識別化（Re-identification）」のリスクを完全に排除することはできません。
 
 ## 2. プライバシー保護技術（PETs）の深い理解
 

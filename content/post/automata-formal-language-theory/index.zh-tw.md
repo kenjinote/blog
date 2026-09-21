@@ -292,7 +292,7 @@ flowchart LR
 
 許多程式語言（如 Java, Python, Ruby, JavaScript 等）內建的正規表示式引擎，並非理論上純粹的 DFA，而是以伴隨回溯的 NFA 為基礎（或稱回溯引擎）來實作。
 
-因此，如果對特定模式的正規表示式（例如： `(a+)+$` 等）提供經過精心設計的字串，計算量就會呈指數級爆炸，從而引發讓系統凍結的 **ReDoS** （ Regular Expression Denial of Service ）漏洞。如果了解理論，就能以邏輯思考為什麼會發生回溯，以及該如何重寫模式才能轉換成等同於安全 DFA 的處理方式。
+因此，如果對特定模式的正規表示式（例如： `(a+)+$` 等）提供經過精心設計的字串，計算量就會呈指數級爆炸，從而引發讓系統凍結的 **ReDoS** （ Regular Expression Denial of [Service](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/) ）漏洞。如果了解理論，就能以邏輯思考為什麼會發生回溯，以及該如何重寫模式才能轉換成等同於安全 DFA 的處理方式。
 
 ---
 

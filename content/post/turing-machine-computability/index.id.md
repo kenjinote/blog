@@ -32,7 +32,7 @@ Mesin Turing terdiri dari elemen-elemen berikut:
 
 1.  **Pita tak terhingga** (Infinite tape): Terbagi menjadi sel-sel, setiap sel ditulis dengan simbol (misalnya `0`, `1`, spasi kosong, dll.). Ini setara dengan memori pada komputer modern.
 2.  **Kepala** (Head): Perangkat yang dapat membaca dan menulis sel tertentu pada pita dan bergerak ke kiri dan ke kanan.
-3.  **Register keadaan** (State register): Menyimpan **keadaan** (State) mesin saat ini.
+3.  **Register keadaan** ([State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) register): Menyimpan **keadaan** (State) mesin saat ini.
 4.  **Fungsi transisi keadaan** (State transition function): Aturan (program) yang menentukan simbol yang akan ditulis selanjutnya, arah gerakan kepala (kanan atau kiri), dan keadaan selanjutnya berdasarkan "keadaan" saat ini dan "simbol" yang dibaca oleh kepala.
 
 Berikut adalah diagram Mermaid yang menunjukkan konsep operasi Mesin Turing.

@@ -60,7 +60,7 @@ Si vous trouvez un `svchost.exe` suspect, double-cliquez sur le processus pour v
 ### 2.3 Analyse des interruptions matérielles et des pics d'utilisation du processeur à 100 %
 Si le système tout entier gèle pendant quelques secondes ou si le son saute (stuttering), vous remarquerez peut-être dans le Gestionnaire des tâches que les "System Interrupts" (Interruptions système) consomment le CPU.
 
-Dans l'ordonnancement de Windows, les interruptions matérielles (ISR : Interrupt Service Routine) et les DPC (Deferred Procedure Call) s'exécutent avec une priorité (IRQL : Interrupt Request Level) plus élevée que les threads utilisateur classiques. Par conséquent, si un pilote défectueux prolonge un DPC, le CPU ne peut plus exécuter aucune autre tâche sur ce cœur.
+Dans l'ordonnancement de Windows, les interruptions matérielles (ISR : Interrupt [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/) Routine) et les DPC (Deferred Procedure Call) s'exécutent avec une priorité (IRQL : Interrupt Request Level) plus élevée que les threads utilisateur classiques. Par conséquent, si un pilote défectueux prolonge un DPC, le CPU ne peut plus exécuter aucune autre tâche sur ce cœur.
 
 Si l'utilisation du CPU par `Interrupts` ou `DPCs` en haut de la liste des processus de ProcExp est élevée, utilisez-le conjointement avec Windows Performance Analyzer (WPA) pour identifier le pilote en cause (`.sys`). Le calcul du temps CPU peut être formulé comme suit :
 
@@ -141,7 +141,7 @@ flowchart LR
 ### 4.1 Onglets importants à vérifier et fonctionnalités avancées
 *   **Logon** : Clés Run/RunOnce standards, dossier de démarrage.
 *   **Scheduled Tasks** : Planificateur de tâches Windows. Les malwares créent souvent de fausses tâches camouflées sous des noms tels que "Adobe Update" ou "Google Update".
-*   **Services / Drivers** : Pilotes démarrés en mode noyau. C'est ici que vous pouvez désactiver les fichiers `.sys` suspects causant les pics de CPU à 100 % mentionnés précédemment.
+*   **[Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/)s / Drivers** : Pilotes démarrés en mode noyau. C'est ici que vous pouvez désactiver les fichiers `.sys` suspects causant les pics de CPU à 100 % mentionnés précédemment.
 *   **WMI** : Emplacements de persistance pour les malwares sans fichier (Fileless Malware) exploitant les filtres d'événements et les consommateurs WMI (Windows Management Instrumentation). Ils sont très souvent négligés.
 *   **AppInit_DLLs / KnownDLLs** : Liste de DLL injectées de force à chaque lancement d'une application. Elles constituent un terrain propice pour les hooks par injection de DLL.
 

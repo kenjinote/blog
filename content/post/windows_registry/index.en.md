@@ -168,7 +168,7 @@ When editing the registry from PowerShell scripts or C# applications, you must b
 
 ## 8. Programmable and Safe Editing with PowerShell
 
-To minimize the risk of manually editing the registry, the modern best practice is to codify operations (Infrastructure as Code) using PowerShell scripts to ensure automation, reproducibility, and testability. PowerShell features a "Registry Provider," allowing transparent manipulation of the registry using exactly the same cmdlets (like `Get-ChildItem`, `Get-ItemProperty`, `New-Item`) used to manipulate the file system (e.g., the C: drive).
+To minimize the risk of manually editing the registry, the modern best practice is to codify operations ([Infrastructure as Code](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)) using PowerShell scripts to ensure automation, reproducibility, and testability. PowerShell features a "Registry Provider," allowing transparent manipulation of the registry using exactly the same cmdlets (like `Get-ChildItem`, `Get-ItemProperty`, `New-Item`) used to manipulate the file system (e.g., the C: drive).
 
 In PowerShell, dedicated PSDrives (similar to drive letters) like `HKLM:` and `HKCU:` are mounted by default.
 
@@ -413,7 +413,7 @@ Finally, we summarize the important design principles and best practices for han
 
 ## Conclusion
 
-The Windows Registry is a powerful and complex foundational system that integrally manages every behavior of the OS and application settings. Disorderly manual editing carries a high, mathematically proven risk of system corruption. Therefore, using programmable means such as PowerShell and C# to manage configurations securely, testably, and reproducibly, in accordance with the principles of Infrastructure as Code, is essential in modern system administration and development. Utilize the deep architectural understanding and implementation patterns explained in this article to aim for building a more robust and secure Windows environment.
+The Windows Registry is a powerful and complex foundational system that integrally manages every behavior of the OS and application settings. Disorderly manual editing carries a high, mathematically proven risk of system corruption. Therefore, using programmable means such as PowerShell and C# to manage configurations securely, testably, and reproducibly, in accordance with the principles of [Infrastructure as Code](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/), is essential in modern system administration and development. Utilize the deep architectural understanding and implementation patterns explained in this article to aim for building a more robust and secure Windows environment.
 
 
 

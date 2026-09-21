@@ -131,7 +131,7 @@ $$
 |\delta Z(t)| \approx e^{\lambda t} |\delta Z_0|
 $$
 
-Hierbei ist $\lambda$ (Lambda) der Ljapunow-Exponent.
+Hierbei ist $\lambda$ ([Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)) der Ljapunow-Exponent.
 Der Ljapunow-Exponent repräsentiert die durchschnittliche Rate, mit der benachbarte Trajektorien sich voneinander trennen (oder sich einander annähern).
 
 - $\lambda < 0$: Trajektorien nähern sich einander an und konvergieren zu einem Fixpunkt oder Grenzzyklus (kein Chaos).

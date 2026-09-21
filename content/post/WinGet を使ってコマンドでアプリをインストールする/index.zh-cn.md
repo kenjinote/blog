@@ -26,7 +26,7 @@ description: '讲解如何使用Windows 11的包管理器“WinGet”，通过�
 - Visual Studio Code (命令`winget install vscode`)
 - Slack (命令`winget install SlackTechnologies.Slack`)
 - Discord (命令`winget install Discord.Discord`)
-- Docker Desktop (命令`winget install Docker.DockerDesktop`)
+- [Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (命令`winget install Docker.DockerDesktop`)
 - Git (命令`winget install Git`)
 - 7zip (命令`winget install 7zip`)
 - VLC (命令`winget install VideoLAN.VLC`)

@@ -24,7 +24,7 @@ Wir hoffen, dass dies den Lesern dabei hilft, ihre eigene beste Terminalumgebung
 
 # 1. Die Rendering-Architektur und das mathematische Modell von Windows Terminal
 
-Hinter dem schnellen und flüssigen Betrieb des Windows Terminals verbirgt sich eine raffinierte Rendering-Pipeline, die den modernen Grafik-Stack von Windows voll ausnutzt. Anstelle des traditionellen GDI (Graphics Device Interface) verwendet das Windows Terminal hardwarebeschleunigtes GPU-Rendering auf Basis von DirectWrite und DirectX (Direct2D/Direct3D).
+Hinter dem schnellen und flüssigen Betrieb des Windows Terminals verbirgt sich eine raffinierte Rendering-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/), die den modernen Grafik-Stack von Windows voll ausnutzt. Anstelle des traditionellen GDI (Graphics Device Interface) verwendet das Windows Terminal hardwarebeschleunigtes GPU-Rendering auf Basis von DirectWrite und DirectX (Direct2D/Direct3D).
 
 Das folgende Diagramm veranschaulicht das konzeptionelle Modell der Terminal-Rendering-Pipeline von der Tastatureingabe bis zum Zeichnen der Zeichen auf dem Bildschirm.
 
@@ -226,7 +226,7 @@ Durch die Anpassung des `actions`-Abschnitts können Sie den Bildschirm völlig 
 ]
 ```
 
-Durch das Konfigurieren der obigen Tastenkombinationen können Sie die Größe der Panes mit `Alt + Shift + Pfeiltasten` anpassen und den Fokus sofort zwischen den Panes mit `Alt + Pfeiltasten` verschieben. Dies ermöglicht nahtlose, hochgradig parallele Arbeit, z. B. das Starten eines lokalen Node.js-Servers in einem Pane zur Überwachung von Protokollen, das Ausführen von Git-Befehlen in einem anderen und das Überprüfen des Status von Docker-Containern in noch einem weiteren.
+Durch das Konfigurieren der obigen Tastenkombinationen können Sie die Größe der Panes mit `Alt + Shift + Pfeiltasten` anpassen und den Fokus sofort zwischen den Panes mit `Alt + Pfeiltasten` verschieben. Dies ermöglicht nahtlose, hochgradig parallele Arbeit, z. B. das Starten eines lokalen Node.js-Servers in einem Pane zur Überwachung von Protokollen, das Ausführen von Git-Befehlen in einem anderen und das Überprüfen des Status von [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n in noch einem weiteren.
 
 ## 4.1 Quake Mode (Globales Dropdown-Terminal)
 
@@ -250,7 +250,7 @@ Wenn Sie diesen Befehl als Windows-Verknüpfung oder Batch-Datei speichern, kann
 
 # 6. Evolution des Prompts 1: PowerShell und Oh My Posh
 
-Was PowerShell, die Standard-Shell in Windows-Umgebungen (insbesondere die neueste plattformübergreifende PowerShell 7 / PowerShell Core), drastisch weiterentwickelt, ist „ **Oh My Posh** “. Oh My Posh ist eine benutzerdefinierte Prompt-Engine für jede Shell, die alle für die Entwicklung notwendigen Zustände wunderschön und visuell darstellt, wie z.B. das aktuelle Verzeichnis, Git-Branches und Änderungsstatus, Node.js- oder Python-Versionen und Kubernetes-Kontexte.
+Was PowerShell, die Standard-Shell in Windows-Umgebungen (insbesondere die neueste plattformübergreifende PowerShell 7 / PowerShell Core), drastisch weiterentwickelt, ist „ **Oh My Posh** “. Oh My Posh ist eine benutzerdefinierte Prompt-Engine für jede Shell, die alle für die Entwicklung notwendigen Zustände wunderschön und visuell darstellt, wie z.B. das aktuelle Verzeichnis, Git-Branches und Änderungsstatus, Node.js- oder Python-Versionen und [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)-Kontexte.
 
 Das folgende Diagramm zeigt den Ablauf, wie Oh My Posh beim Start von PowerShell geladen wird und der Prompt gerendert wird.
 

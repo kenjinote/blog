@@ -68,7 +68,7 @@ $$
 
 量子運算中最強大且奇妙的特性就是 **量子糾纏（Entanglement）** 。愛因斯坦稱這個現象為「鬼魅般的超距作用」，其性質是兩個以上的量子位元彼此強烈連結，當其中一個量子位元的狀態被決定時，無論物理距離有多遠，另一個量子位元的狀態也會瞬間被決定。
 
-最著名的量子糾纏態「貝爾態（Bell State）」之一，$\Phi^+$ 狀態表示如下：
+最著名的量子糾纏態「貝爾態（Bell [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)）」之一，$\Phi^+$ 狀態表示如下：
 
 $$
 |\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}

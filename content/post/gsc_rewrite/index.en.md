@@ -238,13 +238,13 @@ def extract_missing_keywords(documents):
 # print(missing_keywords)
 ```
 
-Through this analysis, you can quantitatively discover **topic omissions (content gaps)**, such as "Top-ranking articles actually mention 'How to deploy to a Docker container' and 'Building a CI/CD pipeline', but my article doesn't touch on them".
+Through this analysis, you can quantitatively discover **topic omissions (content gaps)**, such as "Top-ranking articles actually mention 'How to deploy to a [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/) container' and 'Building a [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) pipeline', but my article doesn't touch on them".
 
 The discovered important keywords shouldn't just be scattered throughout the text. Instead, they should be added as meaningful sections using **H2 or H3 headings (Heading tags)**, and by writing detailed technical explanations and code snippets for these headings, you can dramatically improve your Google evaluation.
 
 ---
 
-## 7. Data Pipelines and Continuous Improvement Cycle
+## 7. Data [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)s and Continuous Improvement Cycle
 
 The processes explained so far are not meant to be executed just once. Building them into a pipeline for continuous execution is key to SEO success. Below is a Mermaid flowchart showing the overall architecture and operational flow.
 

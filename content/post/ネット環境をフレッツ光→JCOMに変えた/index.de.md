@@ -34,7 +34,7 @@ es ist vielleicht kein gutes Zeichen. Es ist noch nicht einmal eine Woche seit d
 
 Als Randnotiz: Da J:COM [P2P](https://kenji.blog/de/p/webrtc-realtime-communication-p2p/)-Kommunikation einschränkt, scheint die Geschwindigkeit von P2P-Apps nicht gut zu sein. Wer P2P nutzt, sollte vorsichtig sein.
 
-# Über den Service
+# Über den [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)
 Beim Vertragsabschluss erhält man bei einer Anmeldung bei Netflix oder Disney+ eine QUO-Karte im Wert von 40.000 Yen, was die jeweiligen Service-Vertragsgebühren ausgleicht und die monatlichen Gebühren
 im Durchschnitt etwas günstiger macht, also habe ich die Services gleichzeitig mit dem Vertrag abonniert. Netflix hat einen 1-Jahres-Vertrag, Disney+ einen Halbjahresvertrag, und es scheint, dass man die Kündigung selbst vornehmen muss.
 

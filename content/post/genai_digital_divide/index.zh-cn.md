@@ -82,7 +82,7 @@ xychart-beta
 使用大型语言模型主要有两种途径：一是“使用云API”，二是“在本地进行模型推理（Inference）”。两者各有利弊，这也成为了新的经济和物理壁垒。
 
 ### 云API的局限性与运行成本
-OpenAI、Anthropic和Google等提供的前沿模型（如GPT-4o、Claude 3.5 Sonnet等），通常通过API进行访问。然而，一旦构建了高度自主的智能体（Agentic Workflow）并产生每天数万次的API调用，成本就会爆炸性增长。
+OpenAI、Anthropic和Google等提供的前沿模型（如GPT-4o、Claude 3.5 Sonnet等），通常通过API进行访问。然而，一旦构建了高度自主的智能体（Agentic [Workflow](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)）并产生每天数万次的API调用，成本就会爆炸性增长。
 
 API的总成本 $C_{cloud}$ 取决于输入和输出的Token数量。
 

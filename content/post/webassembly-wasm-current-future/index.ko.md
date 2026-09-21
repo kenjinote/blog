@@ -247,10 +247,10 @@ flowchart TD
     B -->|"안전성 검증・권한 체크"| C["호스트 OS e.g. Linux, Windows"]
 ```
 
-## 7.2 Docker 컨테이너와의 대체 및 공존
+## 7.2 [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 컨테이너와의 대체 및 공존
 Docker의 발명자인 Solomon Hykes는 "만약 2008년에 Wasm과 WASI가 존재했더라면 Docker를 만들 필요는 없었을 것이다"라고 발언하여 화제가 되었습니다.
 Wasm은 컨테이너보다 훨씬 가볍고 시작이 빠르며(수 밀리초), OS나 CPU 아키텍처에 의존하지 않는다는 강력한 장점을 가지고 있습니다.
-현재는 Kubernetes 상에서 Docker 컨테이너 대신 Wasm 모듈을 직접 오케스트레이션하는 프로젝트(Kwasm이나 Spin 등)가 활발하게 개발되고 있습니다.
+현재는 [Kubernetes](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/) 상에서 Docker 컨테이너 대신 Wasm 모듈을 직접 오케스트레이션하는 프로젝트(Kwasm이나 Spin 등)가 활발하게 개발되고 있습니다.
 
 ---
 

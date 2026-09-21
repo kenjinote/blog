@@ -330,7 +330,7 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 正如“Attention Is All You Need”这个带有挑衅性的标题所示，彻底抛弃复杂的循环处理和卷积处理，专注于纯粹的“Attention（相关度）”计算，这种架构的美，正是在于其数学上的简洁性。
 
-未来，也许会出现超越Transformer的全新架构（例如State Space Model的Mamba等），但Transformer所建立的“通过Attention理解上下文”的数学框架，必将被永远铭刻在AI的历史中。
+未来，也许会出现超越Transformer的全新架构（例如[State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) Space Model的Mamba等），但Transformer所建立的“通过Attention理解上下文”的数学框架，必将被永远铭刻在AI的历史中。
 
 如果你今后有机会使用ChatGPT或Claude等LLM，请想象一下在它们的后台中，每秒正进行着数万亿次 $Q K^T$ 的矩阵乘法运算，以及Softmax函数正在计算着概率的情景。这样你对技术的清晰度会提升，也一定能感受到AI的世界更加有趣。
 

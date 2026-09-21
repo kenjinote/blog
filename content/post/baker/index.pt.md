@@ -59,7 +59,7 @@ Baker alcançou a surpreendente proeza de generalizar o resultado provado por Ge
 **Teorema de Baker (1966)**:
 Sejam $\alpha_1, \alpha_2, \ldots, \alpha_n$ números algébricos não nulos, e suponhamos que $\log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ sejam linearmente independentes sobre o corpo dos racionais $\mathbb{Q}$. Então, $1, \log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ são linearmente independentes sobre o corpo dos números algébricos $\overline{\mathbb{Q}}$.
 
-Em outras palavras, para quaisquer números algébricos não nulos $\beta_0, \beta_1, \ldots, \beta_n$, ele provou que a seguinte forma linear $\Lambda$ nunca é igual a $0$.
+Em outras palavras, para quaisquer números algébricos não nulos $\beta_0, \beta_1, \ldots, \beta_n$, ele provou que a seguinte forma linear $\[Lambda](https://kenji.blog/pt/p/serverless-architecture-aws-lambda-cold-start/)$ nunca é igual a $0$.
 
 $$ \Lambda = \beta_0 + \beta_1 \log \alpha_1 + \cdots + \beta_n \log \alpha_n \neq 0 $$
 

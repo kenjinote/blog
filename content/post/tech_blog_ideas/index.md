@@ -11,7 +11,7 @@ tags: ["Idea Generation", "Obsidian", "RSS", "Knowledge Management"]
 
 エンジニアやリサーチャーとして技術ブログを運営していると、必ずと言っていいほど直面する壁があります。それが「ネタ切れ」です。最初の数記事は順調に書けても、継続していくうちに「次に何を書けばいいのか分からない」「アウトプットするためのインプットが圧倒的に足りない」という悩みに苛まれることは珍しくありません。技術ブログの執筆は、単に文章を書く技術だけでなく、日々の知識の収集、整理、そしてそれらを組み合わせて新しい価値を生み出す一連のシステム設計に大きく依存しています。
 
-本記事では、技術記事のアイデアを半永久的に生み出し続けるための、 **システム化されたインプットとアウトプットのパイプライン** について、極めて詳細かつ技術的に解説します。Hacker NewsやLobstersといった海外の高品質な情報源からAPIを用いて自動でトレンドトピックを抽出し、GitHub Actionsで定期実行する仕組みから始めます。そして、収集した情報をObsidianを用いたZettelkasten（ツェッテルカステン）メソッドで知識として体系化し、OpenAIのEmbeddings APIとPinecone（ベクトルデータベース）を組み合わせてセマンティック検索を可能にする、高度な個人的知識管理（PKM: Personal Knowledge Management）システムを構築します。
+本記事では、技術記事のアイデアを半永久的に生み出し続けるための、 **システム化されたインプットとアウトプットの[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)** について、極めて詳細かつ技術的に解説します。Hacker NewsやLobstersといった海外の高品質な情報源からAPIを用いて自動でトレンドトピックを抽出し、[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)で定期実行する仕組みから始めます。そして、収集した情報をObsidianを用いたZettelkasten（ツェッテルカステン）メソッドで知識として体系化し、OpenAIのEmbeddings APIとPinecone（ベクトルデータベース）を組み合わせてセマンティック検索を可能にする、高度な個人的知識管理（PKM: Personal Knowledge Management）システムを構築します。
 
 さらに、人間の記憶の限界を補うために、エビングハウスの忘却曲線に基づいた間隔反復（Spaced Repetition）をAnkiを用いて実践し、定着した知識を「組み合わせの創造性（Combinatorial Creativity）」によって新しいアイデアへと昇華させる一連のプロセスを、具体的な数学的モデルやPythonスクリプトの実装例とともに深く掘り下げていきます。
 
@@ -27,7 +27,7 @@ $$ H(X) = - \sum_{i=1}^{n} P(x_i) \log_2 P(x_i) $$
 
 エントロピーを高く保つためには、意図的に普段接しない情報源をノイズとして取り入れ、未知のトピックに触れる確率分布を平準化する必要があります。これが、多様な情報源からのインプットを自動化する最大の理由です。
 
-## 2. 自動化された情報収集パイプラインの構築：Hacker News & Lobsters API
+## 2. 自動化された情報収集[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の構築：Hacker News & Lobsters API
 
 質の高いインプットを得るためには、ノイズの少ない良質なエンジニアコミュニティからトレンド情報を抽出するのが効果的です。Hacker News（Y Combinator運営）やLobstersは、技術的な議論が深く行われる場所として最適です。しかし、毎日これらのサイトを巡回するのは時間がかかり、認知リソースを消費します。
 
@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
 このスクリプトは、単純なRSSリーダー以上の価値を提供します。スコアによるフィルタリングを行うことで、コミュニティで本当に注目されている技術的トピック（ノイズの少ない高いシグナル）のみを抽出できるからです。
 
-## 3. GitHub Actionsによるスケジューリングと自動化
+## 3. [GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)によるスケジューリングと自動化
 
 作成したPythonスクリプトを手動で毎日実行するのは面倒です。自動化の基本は、人間の介入を極限まで減らすことです。GitHub ActionsのCron機能を用いて、毎日指定した時刻にスクリプトを実行し、結果をリポジトリに自動コミットする仕組みを構築します。
 
@@ -308,7 +308,7 @@ $$ R = e^{-\frac{t}{S}} $$
 
 ## 7. 組み合わせの創造性 (Combinatorial Creativity)
 
-これまでのパイプラインで、「多様な情報のインプット」「Zettelkastenによる整理とAI検索」「Ankiによる長期記憶への定着」を実現しました。最後のステップは、これらの要素を掛け合わせて全く新しい技術記事のアイデアを生成する「組み合わせの創造性（Combinatorial Creativity）」です。
+これまでの[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)で、「多様な情報のインプット」「Zettelkastenによる整理とAI検索」「Ankiによる長期記憶への定着」を実現しました。最後のステップは、これらの要素を掛け合わせて全く新しい技術記事のアイデアを生成する「組み合わせの創造性（Combinatorial Creativity）」です。
 
 イノベーションや創造性は、無から有を生み出すのではなく、既存の要素の新しい組み合わせによって生まれるとされています。スティーブ・ジョブズの「Creativity is just connecting things.」という言葉が有名です。
 
@@ -316,7 +316,7 @@ $$ R = e^{-\frac{t}{S}} $$
 
 1. **[古い技術] × [新しいパラダイム]**: 例「COBOLのアーキテクチャから学ぶ、現代のマイクロサービス設計のアンチパターン」
 2. **[フロントエンド] × [バックエンドの概念]**: 例「Reactの仮想DOM更新アルゴリズムを、データベースのトランザクション分離レベルの視点で解説する」
-3. **[抽象的な数学・理論] × [具体的な実装]**: 例「[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)で読み解く、KubernetesのPodスケジューリングの最適化」
+3. **[抽象的な数学・理論] × [具体的な実装]**: 例「[グラフ理論](https://kenji.blog/p/graph-theory-dijkstra-a-star/)で読み解く、[Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)の[Pod](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)スケジューリングの最適化」
 
 この組み合わせを意図的に発生させるため、先ほど構築したPineconeのセマンティック検索システムを利用し、ランダムな概念Aと概念Bを抽出し、AI（ChatGPTなど）に「これら2つを組み合わせた技術ブログのタイトルと目次案を5つ提案して」とプロンプトを投げることで、自分では思いつかないような斬新な切り口の記事アイデアを無限に生成することができます。
 
@@ -366,7 +366,7 @@ stateDiagram-v2
     Published["Published (ブログ公開)"] --> [*]
 ```
 
-このワークフローを意識することで、「今自分がどのフェーズで詰まっているのか」が明確になります。ネタが出ないときは「Capture」や「Permanent」のフェーズに戻り、インプットパイプラインが正常に稼働しているかを確認すれば良いのです。
+このワークフローを意識することで、「今自分がどのフェーズで詰まっているのか」が明確になります。ネタが出ないときは「Capture」や「Permanent」のフェーズに戻り、インプット[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)が正常に稼働しているかを確認すれば良いのです。
 
 ## まとめ：執筆は「システム」である
 

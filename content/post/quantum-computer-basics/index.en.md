@@ -27,7 +27,7 @@ To understand how a quantum computer works, we first need to review how the "cla
 | Item | Classical Computer | Quantum Computer |
 | --- | --- | --- |
 | **Basic Unit** | Bit (0 or 1) | Qubit (superposition of 0 and 1) |
-| **State Representation** | Deterministic | Probabilistic (undetermined until observed) |
+| **[State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Representation** | Deterministic | Probabilistic (undetermined until observed) |
 | **Calculation Method** | Sequential processing (requires physical cores for parallelization) | Quantum parallelism (manipulates exponential states simultaneously) |
 | **Excels at** | Arithmetic operations, everyday data processing | Prime factorization, quantum chemistry calculations |
 | **Error Tolerance** | Very strong | Very weak (requires cryogenic environments and error correction) |

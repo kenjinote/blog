@@ -288,7 +288,7 @@ Las teorías que hemos visto hasta ahora no se quedan para nada en una torre de 
 
 Los motores de expresiones regulares integrados en muchos lenguajes de programación (Java, Python, Ruby, JavaScript, etc.) no están implementados como DFA puros en teoría, sino basándose en NFA que conllevan retroceso (backtracking engine).
 
-Por este motivo, si se proporciona una cadena ingeniosamente construida frente a un patrón de expresión regular específico (ej.: `(a+)+$`), la complejidad computacional estalla de forma exponencial, lo que puede provocar una vulnerabilidad conocida como **ReDoS** (Regular Expression Denial of Service) que llega a congelar el sistema. Si se conoce la teoría, se puede pensar lógicamente por qué ocurre el retroceso y cómo se puede reescribir el patrón para reducirlo a un procesamiento equivalente al de un DFA seguro.
+Por este motivo, si se proporciona una cadena ingeniosamente construida frente a un patrón de expresión regular específico (ej.: `(a+)+$`), la complejidad computacional estalla de forma exponencial, lo que puede provocar una vulnerabilidad conocida como **ReDoS** (Regular Expression Denial of [Service](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/)) que llega a congelar el sistema. Si se conoce la teoría, se puede pensar lógicamente por qué ocurre el retroceso y cómo se puede reescribir el patrón para reducirlo a un procesamiento equivalente al de un DFA seguro.
 
 ---
 

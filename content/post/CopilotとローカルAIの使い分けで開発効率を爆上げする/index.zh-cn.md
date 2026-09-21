@@ -179,7 +179,7 @@ $$ L_{local} = \frac{T_{in}}{S_{process\_local}} $$
 这里简单介绍引入本地AI的具体步骤。目前最简便且强大的方法是使用 **Ollama** 或 **LM Studio** 。
 
 ### 6.1 引入 Ollama
-Ollama 是一个用于在本地环境中运行 LLM 的轻量级框架。它支持 MacOS、Windows 和 Linux，可以像 Docker 一样直观地管理模型。
+Ollama 是一个用于在本地环境中运行 LLM 的轻量级框架。它支持 MacOS、Windows 和 Linux，可以像 [Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/) 一样直观地管理模型。
 
 ```bash
 # MacOS 的情况

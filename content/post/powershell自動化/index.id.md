@@ -34,7 +34,7 @@ Terdapat berbagai jenis kebijakan eksekusi sebagai berikut:
 - **AllSigned**: Hanya mengizinkan eksekusi skrip yang ditandatangani oleh penerbit tepercaya.
 - **RemoteSigned**: Skrip yang dibuat secara lokal dapat dieksekusi apa adanya, tetapi skrip yang diunduh dari internet memerlukan tanda tangan (signature).
 - **Unrestricted**: Semua skrip dapat dieksekusi, tetapi peringatan akan ditampilkan saat mengeksekusi skrip yang diunduh dari internet.
-- **Bypass**: Tidak ada yang diblokir dan tidak ada peringatan yang ditampilkan. Sering digunakan untuk eksekusi skrip sementara (seperti dalam pipeline CI/CD).
+- **Bypass**: Tidak ada yang diblokir dan tidak ada peringatan yang ditampilkan. Sering digunakan untuk eksekusi skrip sementara (seperti dalam pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)).
 
 Jika Anda menjalankan skrip buatan sendiri melalui Task Scheduler di lingkungan lokal perusahaan, pengaturan yang paling realistis dan aman adalah `RemoteSigned`. Jalankan PowerShell dengan hak administrator, dan jalankan perintah berikut:
 
@@ -108,7 +108,7 @@ Dengan memanfaatkan fondasi ini, Anda dapat membangun skrip yang aman dan dapat 
 
 ## Integrasi dengan Task Scheduler (Register-ScheduledTask)
 
-Setelah skrip selesai, selanjutnya diperlukan mekanisme untuk mengeksekusi skrip tersebut secara berkala. Di Windows, yang paling andal adalah "Task Scheduler". Meskipun dimungkinkan untuk mengonfigurasinya dari GUI (`taskschd.msc`), dari perspektif pengodean manual infrastruktur (Infrastructure as Code), kami akan menjelaskan cara mendaftarkan tugas menggunakan cmdlet PowerShell.
+Setelah skrip selesai, selanjutnya diperlukan mekanisme untuk mengeksekusi skrip tersebut secara berkala. Di Windows, yang paling andal adalah "Task Scheduler". Meskipun dimungkinkan untuk mengonfigurasinya dari GUI (`taskschd.msc`), dari perspektif pengodean manual infrastruktur ([Infrastructure as Code](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/)), kami akan menjelaskan cara mendaftarkan tugas menggunakan cmdlet PowerShell.
 
 PowerShell menyediakan modul `ScheduledTasks`, yang dengannya Anda dapat mendefinisikan pemicu (kapan dieksekusi), tindakan (apa yang dieksekusi), dan prinsipal (dengan hak pengguna mana skrip dieksekusi) secara mendetail.
 

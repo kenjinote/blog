@@ -258,7 +258,7 @@ The fascination of Ramsey theory lies not in simplifying a complex whole, but in
 
 ### References
 
-- Ohio State University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): Explanation of 2-colorings of edges and small Ramsey numbers.
+- Ohio [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): Explanation of 2-colorings of edges and small Ramsey numbers.
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf): Lecture notes on Ramsey-type thinking, including monotone subsequences.
 
 The diagrams, exhaustive enumeration tables, and probability/count distributions in this article were generated using the accompanying Python script.

@@ -75,7 +75,7 @@ Addresses:  185.199.108.153
 ## Mengatur Domain Kustom di Repositori Github
 1. Buka halaman repositori dan klik Settings (Pengaturan)
 2. Klik Pages (Halaman)
-3. Jika Anda mempublikasikan sumber repositori apa adanya, pilih "Deploy from a branch" di bagian Source. Jika Anda membangun sumber seperti HUGO, pilih "GitHub Actions".
+3. Jika Anda mempublikasikan sumber repositori apa adanya, pilih "Deploy from a branch" di bagian Source. Jika Anda membangun sumber seperti HUGO, pilih "[GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)".
 4. Pilih cabang yang akan dipublikasikan di bawah Branch dan klik Save (Simpan)
 5. Masukkan domain yang Anda peroleh di Custom domain (Domain kustom) dan klik Save.
 6. Jika perlu, centang kotak "Enforce HTTPS" untuk mengaktifkan dukungan HTTPS

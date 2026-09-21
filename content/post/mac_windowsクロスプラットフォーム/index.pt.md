@@ -69,7 +69,7 @@ A distinção entre maiúsculas e minúsculas (Case Sensitivity) no sistema de a
 
 Durante o desenvolvimento no Mac ou Windows, se você especificar o código-fonte em letras minúsculas com `#include "myclass.h"` (ou `import "./myclass"`), mas o arquivo real for `MyClass.h`, a compilação será bem-sucedida porque o SO do ambiente local é Case-Insensitive.
 
-No entanto, se você submeter este código e executar uma compilação em um servidor CI/CD (geralmente Linux, como o Ubuntu), o sistema de arquivos ext4 do Linux é Case-Sensitive, o que resultará em um erro de compilação de "arquivo não encontrado".
+No entanto, se você submeter este código e executar uma compilação em um servidor [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) (geralmente Linux, como o Ubuntu), o sistema de arquivos ext4 do Linux é Case-Sensitive, o que resultará em um erro de compilação de "arquivo não encontrado".
 
 ### Perspectiva algorítmica: Complexidade computacional e normalização da pesquisa de arquivos
 
@@ -304,11 +304,11 @@ Ao isolar o código específico da plataforma num único local desta forma (norm
 
 ---
 
-## 8. Validação multiplataforma no CI/CD (Matrix Build)
+## 8. Validação multiplataforma no [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) (Matrix Build)
 
 A última linha de defesa para a compatibilidade multiplataforma é o **pipeline de CI/CD (Integração Contínua / Implantação Contínua)**, por mais que os desenvolvedores codifiquem cuidadosamente em seus ambientes locais. Mesmo funcionando no ambiente local (por exemplo, Mac), as falhas de compilação no SO oposto (Windows) são intermináveis.
 
-Usando ferramentas modernas de CI, como GitHub Actions ou GitLab CI, configure o Matrix Build para **executar compilação e teste em todos os ambientes do Windows, macOS, e Linux em paralelo** toda vez que um Pull Request for criado.
+Usando ferramentas modernas de CI, como [GitHub Actions](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) ou GitLab CI, configure o Matrix Build para **executar compilação e teste em todos os ambientes do Windows, macOS, e Linux em paralelo** toda vez que um Pull Request for criado.
 
 ```yaml
 # Exemplo de configuração de CI multiplataforma pelo GitHub Actions
@@ -340,7 +340,7 @@ jobs:
       run: pytest -v
 ```
 
-Isso visualiza o fluxo de CI/CD abaixo.
+Isso visualiza o fluxo de [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) abaixo.
 
 ```mermaid
 sequenceDiagram
@@ -380,10 +380,10 @@ O desenvolvimento multiplataforma entre Mac e Windows possui muitos desafios enr
 2.  **Maiúsculas/Minúsculas**: Não depender do comportamento de "não distinguir" do macOS/Windows. Estabelecer convenções de nomenclatura de arquivos bem estritas e garantir correspondência exata das caixas.
 3.  **Separadores de Caminho**: Fazer uso das APIs padrão de operação de caminhos da linguagem (módulos `std::filesystem`, `pathlib`, `path`) para absorver as diferenças nos SOs.
 4.  **Codificação**: Sempre especificar o UTF-8 e excluir completamente os impactos do comportamento padrão CP932 no Windows.
-5.  **Variáveis de Ambiente / Shell**: Usar ferramentas de abstração como `cross-env` ou padronizar o ambiente de execução em ferramentas como WSL/Docker.
+5.  **Variáveis de Ambiente / Shell**: Usar ferramentas de abstração como `cross-env` ou padronizar o ambiente de execução em ferramentas como WSL/[Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/).
 6.  **Sistemas de Build**: Para C/C++, utilizar um sistema de meta-build, como CMake, de modo a gerar a toolchain nativa ideal para cada SO.
 7.  **Código Dependente do SO**: Projetar uma Camada de Abstração do SO (OSAL) e isolar/separar lógicas que dependem de plataforma.
-8.  **CI/CD**: Inserir o Matrix Build, automatizando testes e compilações limpas de todos os SOs em uso e remover dependências centradas no indivíduo (pessoais).
+8.  **[CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)**: Inserir o Matrix Build, automatizando testes e compilações limpas de todos os SOs em uso e remover dependências centradas no indivíduo (pessoais).
 
 Atualmente, frameworks de peso como o Electron, Tauri, .NET absorvem a maior parte destas disparidades, mas o domínio do comportamento nativo do SO da base (como sistemas de arquivos e codificações) ainda é essencial para desvendar bugs obscuros e solucionar falhas de performance complexas. Compartilhando e aplicando firmemente as melhores práticas por toda a equipe, desde a fase embrionária do projeto, é possível abater os períodos ociosos decorrentes do debug entre SOs e concentrar os esforços na essencial geração de valor do software.
 

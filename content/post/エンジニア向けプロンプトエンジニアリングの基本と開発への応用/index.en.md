@@ -71,7 +71,7 @@ When building AI applications using OpenAI's API (such as GPT-4) or Anthropic's 
 
 ### 2.1 System Prompt: Global Constraints and Persona Definition
 
-The system prompt defines **global constraints, persona (role), and fundamental behavior rules** for the LLM. To compare it to software design, it plays a role like the application's "environment variables" or "base class," or a container's "Dockerfile."
+The system prompt defines **global constraints, persona (role), and fundamental behavior rules** for the LLM. To compare it to software design, it plays a role like the application's "environment variables" or "base class," or a container's "[Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/)file."
 
 An excellent system prompt dramatically stabilizes output quality and format.
 
@@ -193,7 +193,7 @@ To implement ToT in a prompt, you instruct it: "Propose multiple approaches, eva
 
 ---
 
-## 4. Agentic Workflow and ReAct (Reasoning and Acting)
+## 4. Agentic [Workflow](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) and ReAct (Reasoning and Acting)
 
 The application of LLMs is rapidly evolving from single text input/output to the realm of **AI Agents**, which autonomously make plans and interact with external environments to accomplish tasks. The core paradigm of this agent architecture is **ReAct (Reasoning and Acting)**.
 
@@ -220,7 +220,7 @@ The standard interface for incorporating ReAct into a system is **Function Calli
 The engineer passes the "definition of available tools (JSON schema)" to the LLM along with the system prompt. The LLM analyzes the prompt's context, and if it determines that a tool should be used, it outputs the "name of the function to call" and its "arguments in JSON" instead of normal text. The loop is formed by executing the function on the application side and returning the result to the LLM.
 
 **Application Example in Development (Autonomous Debugging Agent):**
-When building an agent that investigates the cause and generates a patch when a test fails in the CI/CD pipeline, provide the LLM with tools like the following.
+When building an agent that investigates the cause and generates a patch when a test fails in the [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) pipeline, provide the LLM with tools like the following.
 
 1. `search_codebase(regex_pattern)`: Search code in the repository using regular expressions.
 2. `view_file_content(file_path, start_line, end_line)`: Read the contents of a specified file.
@@ -254,7 +254,7 @@ $$ \text{Cosine Similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|} = \frac{\sum_{
 
 The top few code snippets or documents with high similarity (semantically close) are retrieved, and these are dynamically injected into the user prompt as "context."
 
-### 5.2 Application of RAG to Development Workflows
+### 5.2 Application of RAG to Development [Workflow](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)s
 
 By incorporating RAG into development tools, powerful features like the following are realized within the IDE.
 
@@ -368,7 +368,7 @@ The current industry standard is the **LLM-as-a-Judge** approach, which uses pow
 2. **Execution**: Generate outputs against the test set using the prompt and model being evaluated.
 3. **Evaluation**: Prepare an evaluation prompt (meta-prompt) and instruct the Judge LLM to "score on a scale of 1-5 whether the generated output meets the requirements."
 
-This makes it possible to automatically detect regressions (performance degradation) when modifying prompts on the CI/CD pipeline. Prompt engineering is evolving from artisanal "prompt tweaking" to data-driven, reproducible "engineering."
+This makes it possible to automatically detect regressions (performance degradation) when modifying prompts on the [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) pipeline. Prompt engineering is evolving from artisanal "prompt tweaking" to data-driven, reproducible "engineering."
 
 ---
 

@@ -22,7 +22,7 @@ In diesem Artikel werden wir die wahre Natur dieser neuen digitalen Kluft, die d
 
 Software-Tools der Vergangenheit waren im Wesentlichen "passive Werkzeuge". Die Grenze herkömmlicher Software bestand darin, dass sie auf explizite Eingaben des Benutzers deterministische Ergebnisse lieferte (z. B. Eingabe einer Formel in eine Tabellenkalkulation, um ein Berechnungsergebnis zu erhalten). Die heutige generative KI, insbesondere die auf der Transformer-Architektur basierenden LLMs (GPT-4, Claude 3.5, Llama 3 usw.), verhält sich jedoch wie ein "aktives Fragment von Intelligenz".
 
-Durch diesen Paradigmenwechsel hat sich das von Menschen geforderte Skillset drastisch von der "Fähigkeit, Werkzeuge zu bedienen" zur "Fähigkeit, mehrere KI-Agenten und -Tools zu kombinieren und autonome Workflows zu entwerfen und zu steuern (AI Orchestration)" verändert. Dies kann als "KI-Orchestrierungskompetenz" bezeichnet werden.
+Durch diesen Paradigmenwechsel hat sich das von Menschen geforderte Skillset drastisch von der "Fähigkeit, Werkzeuge zu bedienen" zur "Fähigkeit, mehrere KI-Agenten und -Tools zu kombinieren und autonome [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s zu entwerfen und zu steuern (AI Orchestration)" verändert. Dies kann als "KI-Orchestrierungskompetenz" bezeichnet werden.
 
 Nachfolgend ist die Entwicklung der digitalen Kluft von der Vergangenheit bis zur Gegenwart dargestellt.
 
@@ -51,7 +51,7 @@ P_{human}(t) = P_0 (1 + r_{human})^t
 $$
 Hierbei ist $P_0$ die anfängliche Produktivität und $r_{human}$ die natürliche Lernrate des Menschen (Wachstumsrate basierend auf der Erfahrungskurve). Im Allgemeinen ist $r_{human}$ sehr klein, und das Wachstum tendiert dazu, arithmetisch zu verlaufen.
 
-Andererseits kombiniert die Produktivität von Benutzern, die KI voll ausschöpfen, die Leistungssteigerungsrate $r_{model}$ des verwendeten KI-Modells mit dem Zinseszinseffekt $\alpha$ der Automatisierung von KI-Workflows.
+Andererseits kombiniert die Produktivität von Benutzern, die KI voll ausschöpfen, die Leistungssteigerungsrate $r_{model}$ des verwendeten KI-Modells mit dem Zinseszinseffekt $\alpha$ der Automatisierung von KI-[Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s.
 
 $$
 P_{AI}(t) = P_0 \cdot \exp\left( \int_0^t (r_{human} + \alpha \cdot r_{model}(\tau)) d\tau \right)
@@ -75,7 +75,7 @@ xychart-beta
 ```
 *(Anmerkung: Die blaue Linie repräsentiert die Produktivität des KI-Orchestrators, die untere Linie die Produktivität des Nicht-KI-Nutzers)*
 
-Im ersten Jahr mag der Unterschied gering erscheinen, aber jedes Mal, wenn sich das KI-Modell von GPT-3 zu GPT-4 und weiter zu seiner nächsten Generation entwickelt, profitieren KI-Nutzer von einer dramatischen Produktivitätssteigerung, indem sie einfach das neue Modell in ihre bestehenden Automatisierungs-Pipelines einstecken (plug-in). Für Nicht-KI-Nutzer wird es mit der Zeit mathematisch nahezu unmöglich, diese Lücke zu schließen.
+Im ersten Jahr mag der Unterschied gering erscheinen, aber jedes Mal, wenn sich das KI-Modell von GPT-3 zu GPT-4 und weiter zu seiner nächsten Generation entwickelt, profitieren KI-Nutzer von einer dramatischen Produktivitätssteigerung, indem sie einfach das neue Modell in ihre bestehenden Automatisierungs-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s einstecken (plug-in). Für Nicht-KI-Nutzer wird es mit der Zeit mathematisch nahezu unmöglich, diese Lücke zu schließen.
 
 ## 4. Hardware-Kluft: Die Barriere der lokalen Inferenz und die Falle der Cloud-APIs
 
@@ -84,7 +84,7 @@ Die dritte digitale Kluft schafft nicht nur Unterschiede bei Software-Fähigkeit
 Es gibt hauptsächlich zwei Ansätze, um große Sprachmodelle zu nutzen: "Verwendung von Cloud-APIs" oder "lokale Ausführung der Modellinferenz (Inference)". Beide haben ihre Vor- und Nachteile, was eine neue wirtschaftliche und physische Barriere darstellt.
 
 ### Grenzen von Cloud-APIs und laufende Kosten
-Die fortschrittlichsten Frontier-Modelle (GPT-4o, Claude 3.5 Sonnet usw.), die von OpenAI, Anthropic und Google bereitgestellt werden, sind in der Regel über APIs zugänglich. Wenn man jedoch einen hochgradig autonomen Agenten (Agentic Workflow) aufbaut und zehntausende API-Aufrufe pro Tag generiert, explodieren die Kosten.
+Die fortschrittlichsten Frontier-Modelle (GPT-4o, Claude 3.5 Sonnet usw.), die von OpenAI, Anthropic und Google bereitgestellt werden, sind in der Regel über APIs zugänglich. Wenn man jedoch einen hochgradig autonomen Agenten (Agentic [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)) aufbaut und zehntausende API-Aufrufe pro Tag generiert, explodieren die Kosten.
 
 Die Gesamtkosten der API $C_{cloud}$ hängen von der Menge der Eingabe- und Ausgabetokens ab.
 
@@ -137,7 +137,7 @@ Um diese Schleife durchlaufen zu können, reicht es nicht aus, nur zu wissen, wi
 In einer Zukunft, in der diese Ungleichheiten extrem voranschreiten (oder in der sich entfaltenden Realität der Gegenwart), wird sich der Arbeitsmarkt auf beispiellose Weise polarisieren.
 
 **1. KI-Orchestratoren (Die obersten 1–5 %)**
-Sie bauen in ihren jeweiligen Fachgebieten Workflows auf, die mehrere KI-Agenten autonom steuern. Sie delegieren den Großteil von Prozessen wie Recherche, Programmierung, Datenanalyse und Berichtserstellung an die KI und spezialisieren sich auf das "Prozessdesign", die "Ausnahmebehandlung" (Exception Handling) und die "endgültige Entscheidungsfindung". Ihre Produktivität übersteigt die traditioneller Arbeitnehmer um das Dutzend- bis Hundertfache, was enorme wirtschaftliche Werte schafft.
+Sie bauen in ihren jeweiligen Fachgebieten [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s auf, die mehrere KI-Agenten autonom steuern. Sie delegieren den Großteil von Prozessen wie Recherche, Programmierung, Datenanalyse und Berichtserstellung an die KI und spezialisieren sich auf das "Prozessdesign", die "Ausnahmebehandlung" (Exception Handling) und die "endgültige Entscheidungsfindung". Ihre Produktivität übersteigt die traditioneller Arbeitnehmer um das Dutzend- bis Hundertfache, was enorme wirtschaftliche Werte schafft.
 
 **2. Traditionelle Wissensarbeiter und manuelle Arbeiter**
 Dies sind die Menschen, die immer noch Code von Hand schreiben, Excel manuell bedienen und Texte selbst verfassen. Ihre Arbeit wird nach und nach von KI ersetzt, oder sie werden an den Rand gedrängt, um die von den KI-Orchestratoren geschaffenen Systeme zu "überwachen und warten" oder um "körperliche Arbeit im physischen Raum" zu verrichten. Intellektuelle Arbeit, die keine KI nutzt, ist dem Risiko ausgesetzt, ihre Wettbewerbsfähigkeit am Markt völlig zu verlieren.

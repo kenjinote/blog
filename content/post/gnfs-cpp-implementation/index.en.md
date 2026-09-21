@@ -21,7 +21,7 @@ Please enjoy the mystery of mathematics and the brute force of computer science 
 
 ---
 
-## 1. GNFS State-of-the-Art Logic Framework (Full Source Code)
+## 1. GNFS [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)-of-the-Art Logic Framework (Full Source Code)
 
 First, here is the full picture of the C++ implementation of GNFS that we will explain this time. The actual number field sieve (such as CADO-NFS) is an ultra-massive distributed system spanning hundreds of thousands of lines, but this code extracts the **"5 essential pipelines (phases)"** that make up GNFS, designs them as classes, and models them in a minimal configuration without losing their mathematical meaning.
 

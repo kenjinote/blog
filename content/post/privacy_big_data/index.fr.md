@@ -21,7 +21,7 @@ Pour collecter et exploiter efficacement les données, les entreprises adoptent 
 
 ### Lac de données centralisé et pipeline d'anonymisation
 
-Un lac de données est un référentiel de stockage qui conserve de grandes quantités de données brutes dans leur format d'origine. Cependant, utiliser des données brutes contenant des informations personnellement identifiables (PII) telles quelles pour l'analyse entraînerait de graves violations de conformité. Par conséquent, un « pipeline d'anonymisation (Anonymization Pipeline) » strict est implémenté entre le lac de données et l'environnement d'analyse.
+Un lac de données est un référentiel de stockage qui conserve de grandes quantités de données brutes dans leur format d'origine. Cependant, utiliser des données brutes contenant des informations personnellement identifiables (PII) telles quelles pour l'analyse entraînerait de graves violations de conformité. Par conséquent, un « pipeline d'anonymisation (Anonymization [Pipeline](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/)) » strict est implémenté entre le lac de données et l'environnement d'analyse.
 
 Le schéma ci-dessous illustre le flux du pipeline d'anonymisation dans un lac de données centralisé classique.
 

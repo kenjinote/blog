@@ -317,7 +317,7 @@ Lorsque les entreprises utilisent des API LLM dans un environnement de productio
 Les trois sociétés déclarent explicitement qu'elles **n'utilisent pas les données (prompts et réponses) envoyées via l'API pour former leurs modèles (Zero Data Retention / No Training on Customer Data)** (*cela diffère pour les interfaces de discussion Web gratuites destinées aux consommateurs).
 
 Si un niveau de sécurité encore plus élevé est requis :
-- **OpenAI** : En passant par Azure OpenAI Service, vous pouvez bénéficier de la sécurité de niveau entreprise de Microsoft, de son SLA et d'une connexion réseau fermée via Azure Private Link.
+- **OpenAI** : En passant par Azure OpenAI [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/), vous pouvez bénéficier de la sécurité de niveau entreprise de Microsoft, de son SLA et d'une connexion réseau fermée via Azure Private Link.
 - **Google** : En passant par Google Cloud Vertex AI, il est possible d'avoir une isolation réseau stricte en utilisant VPC Service Controls et une protection des données via CMEK (clés de chiffrement gérées par le client).
 - **Anthropic** : En l'utilisant via AWS Bedrock ou Google Cloud Vertex AI, vous pouvez vous appuyer sur l'infrastructure de sécurité robuste de ces fournisseurs de cloud.
 

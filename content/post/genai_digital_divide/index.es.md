@@ -84,7 +84,7 @@ La tercera brecha digital está creando no solo una desigualdad en las habilidad
 Existen principalmente dos enfoques para usar grandes modelos de lenguaje: "utilizar API en la nube" o "realizar inferencias (Inference) del modelo de forma local". Ambos tienen sus pros y sus contras, lo que constituye un nuevo muro económico y físico.
 
 ### Los límites y los costos operativos de las API en la nube
-Por lo general, se accede a los modelos de frontera más avanzados (como GPT-4o, Claude 3.5 Sonnet, etc.) proporcionados por OpenAI, Anthropic y Google a través de una API. Sin embargo, al construir agentes autónomos avanzados (Agentic Workflow) que generan decenas de miles de llamadas API por día, los costos aumentan de manera explosiva.
+Por lo general, se accede a los modelos de frontera más avanzados (como GPT-4o, Claude 3.5 Sonnet, etc.) proporcionados por OpenAI, Anthropic y Google a través de una API. Sin embargo, al construir agentes autónomos avanzados (Agentic [Workflow](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/)) que generan decenas de miles de llamadas API por día, los costos aumentan de manera explosiva.
 
 El costo total de la API $C_{cloud}$ depende del volumen de tokens de entrada y salida.
 

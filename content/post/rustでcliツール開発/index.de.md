@@ -408,7 +408,7 @@ Durch die Anwendung dieser Einstellungen wird die generierte Binary-Größe um m
 
 ---
 
-## 12. CI/CD und Verteilung (Publishing)
+## 12. [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) und Verteilung (Publishing)
 
 Dies sind die Schritte, um das erstellte Tool weltweit zu verteilen.
 
@@ -421,8 +421,8 @@ cargo publish
 ```
 Nach der Veröffentlichung können Benutzer auf der ganzen Welt Ihr Tool mit einem einzigen Befehl installieren: `cargo install gh-stats-fetcher`.
 
-### Automatisierte Releases mit GitHub Actions
-Wir richten eine CI/CD-Pipeline ein, die automatisch cross-kompilierte Binaries zu GitHub Releases hochlädt. Wir fügen eine Konfiguration wie die folgende in `.github/workflows/release.yml` ein. Dadurch werden automatisch Binaries für Linux, macOS und Windows erstellt und als Release-Assets angehängt, wenn Sie nur einen Tag pushen (aus Platzgründen lassen wir die detaillierte YAML-Konfiguration hier weg, aber die Verwendung von Actions wie `taiki-e/upload-rust-binary-action` ist die aktuelle Best Practice).
+### Automatisierte Releases mit [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)
+Wir richten eine [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) ein, die automatisch cross-kompilierte Binaries zu GitHub Releases hochlädt. Wir fügen eine Konfiguration wie die folgende in `.github/workflows/release.yml` ein. Dadurch werden automatisch Binaries für Linux, macOS und Windows erstellt und als Release-Assets angehängt, wenn Sie nur einen Tag pushen (aus Platzgründen lassen wir die detaillierte YAML-Konfiguration hier weg, aber die Verwendung von Actions wie `taiki-e/upload-rust-binary-action` ist die aktuelle Best Practice).
 
 ---
 

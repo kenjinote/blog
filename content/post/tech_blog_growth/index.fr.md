@@ -175,7 +175,7 @@ else:
     print("Aucune donnée trouvée.")
 ```
 
-En exécutant ce script via des tâches planifiées avec cron ou GitHub Actions, vous pouvez toujours décider de manière axée sur les données « quels titres d'articles doivent être réécrits ». Au lieu de se fier à l'intuition, une amélioration continue basée sur les données (une sorte de Continuous Content Improvement plutôt que CI/CD) est primordiale.
+En exécutant ce script via des tâches planifiées avec cron ou [GitHub Actions](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/), vous pouvez toujours décider de manière axée sur les données « quels titres d'articles doivent être réécrits ». Au lieu de se fier à l'intuition, une amélioration continue basée sur les données (une sorte de Continuous Content Improvement plutôt que [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/)) est primordiale.
 
 ---
 
@@ -231,7 +231,7 @@ Le point fort d'un blog technique est que même si $Rev_{ad}$ est faible, $Val_{
 
 ---
 
-## 5. Distribution via GitHub Actions et l'intégration d'outils d'automatisation externes
+## 5. Distribution via [GitHub Actions](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) et l'intégration d'outils d'automatisation externes
 
 Après avoir créé du contenu, le défi est de savoir comment le diffuser efficacement à votre public cible (distribution). Publier manuellement des liens sur chaque réseau social à chaque fois est inefficace et indigne d'un ingénieur.
 
@@ -255,7 +255,7 @@ flowchart TD
 
 ### 5.2 Points clés pour la mise en place d'un pipeline automatisé
 
-1. **Compilation et déploiement via GitHub Actions**
+1. **Compilation et déploiement via [GitHub Actions](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/)**
    Si vous utilisez un générateur de site statique, automatisez la génération HTML et le déploiement vers votre hébergeur (Vercel, Netlify, Cloudflare Pages, etc.) à l'aide de GitHub Actions. À cette occasion, pour répondre aux exigences des Signaux Web Essentiels mentionnées précédemment, il est également efficace d'intégrer un processus d'optimisation des images (comme la conversion automatique en WebP) dans le pipeline de compilation.
 
 2. **Intégration des réseaux sociaux déclenchée par RSS via Zapier/IFTTT**
@@ -275,7 +275,7 @@ Pour augmenter drastiquement le trafic mensuel d'un blog technique, au-delà de 
 2. Conception d'articles prenant en compte l'intention de recherche de l'utilisateur (résolution d'erreur vs apprentissage systématique)
 3. Analyse de données à l'aide de l'API Google Search Console et de Python
 4. Gestion du cycle de vie du contenu et réécriture en tenant compte du ROI
-5. Automatisation complète de la distribution via le CI/CD et l'intégration de Zapier
+5. Automatisation complète de la distribution via le [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) et l'intégration de Zapier
 
 Si vous parvenez à assembler ces éléments en un système, votre blog technique deviendra l'actif (asset) le plus puissant pour propulser votre propre carrière. Ingénieurs souffrant d'une stagnation de trafic, n'hésitez pas à commencer le « Growth Hacking de votre blog » dès aujourd'hui. Vos compétences en programmation et votre capacité de conception d'architecture, cultivées lors de vos activités de développement, seront assurément vos meilleures armes dans la gestion de votre blog.
 

@@ -34,7 +34,7 @@ $$
 \Delta = -16(4a^3 + 27b^2) \neq 0
 $$
 
-Géométriquement, si l'on considère cette courbe sur le corps des nombres complexes $\mathbb{C}$, elle a la forme d'un tore (en forme de beignet). Cela est démontré par la correspondance isomorphique avec le tore complexe $\mathbb{C}/\Lambda$ ($\Lambda$ étant un réseau) à l'aide de la fonction $\wp$ de Weierstrass.
+Géométriquement, si l'on considère cette courbe sur le corps des nombres complexes $\mathbb{C}$, elle a la forme d'un tore (en forme de beignet). Cela est démontré par la correspondance isomorphique avec le tore complexe $\mathbb{C}/\[Lambda](https://kenji.blog/fr/p/serverless-architecture-aws-lambda-cold-start/)$ ($\Lambda$ étant un réseau) à l'aide de la fonction $\wp$ de Weierstrass.
 
 ### 2.2. Points rationnels et structure de groupe
 
@@ -138,7 +138,7 @@ Ce problème a été résolu par le **théorème de modularité** (anciennement 
 Être modulaire signifie que $L(E, s)$ correspond parfaitement à la fonction L $L(f, s)$ d'une forme modulaire $f$ de poids 2. La fonction L d'une forme modulaire est prolongée analytiquement à l'ensemble du plan complexe par la théorie de Hecke, et satisfait l'équation fonctionnelle suivante :
 
 $$
-\Lambda(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
+\[Lambda](https://kenji.blog/fr/p/serverless-architecture-aws-lambda-cold-start/)(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
 $$
 $$
 \Lambda(E, 2-s) = w \Lambda(E, s)

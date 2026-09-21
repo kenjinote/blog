@@ -60,7 +60,7 @@ Wenn eine verdächtige `svchost.exe` gefunden wird, doppelklicken Sie auf den Pr
 ### 2.3 Analyse von Hardware-Interrupts und 100% CPU-Spitzen
 Wenn das gesamte System für einige Sekunden einfriert oder der Ton stottert (Stottern), zeigt der Task-Manager manchmal, dass "System Interrupts" die CPU verbrauchen.
 
-Im Windows-Scheduling werden Hardware-Interrupts (ISR: Interrupt Service Routine) und DPCs (Deferred Procedure Call) mit höherer Priorität (IRQL: Interrupt Request Level) ausgeführt als normale Benutzer-Threads. Das heißt, wenn ein fehlerhafter Treiber einen DPC in die Länge zieht, kann die CPU keine anderen Aufgaben auf diesem Kern ausführen.
+Im Windows-Scheduling werden Hardware-Interrupts (ISR: Interrupt [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/) Routine) und DPCs (Deferred Procedure Call) mit höherer Priorität (IRQL: Interrupt Request Level) ausgeführt als normale Benutzer-Threads. Das heißt, wenn ein fehlerhafter Treiber einen DPC in die Länge zieht, kann die CPU keine anderen Aufgaben auf diesem Kern ausführen.
 
 Wenn die CPU-Auslastung von `Interrupts` oder `DPCs` ganz oben in der Prozessliste von ProcExp hoch ist, verwenden Sie den Windows Performance Analyzer (WPA) in Kombination, um den verursachenden Treiber (`.sys`) zu identifizieren. Die Berechnung der CPU-Zeit kann wie folgt formuliert werden:
 
@@ -77,7 +77,7 @@ Process Monitor zeichnet Dateisystem-, Registrierungs-, Netzwerk- und Prozess-/T
 
 ### 3.1 Methodik der fortgeschrittenen Filterung
 
-Der grundlegende Workflow zur Beherrschung von ProcMon ist im folgenden Mermaid-Diagramm dargestellt.
+Der grundlegende [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) zur Beherrschung von ProcMon ist im folgenden Mermaid-Diagramm dargestellt.
 
 ```mermaid
 flowchart TD
@@ -143,7 +143,7 @@ flowchart LR
 ### 4.1 Wichtige zu überprüfende Reiter und erweiterte Funktionen
 *   **Logon**: Standardmäßige Run/RunOnce-Schlüssel und der Autostart-Ordner.
 *   **Scheduled Tasks**: Der Windows-Aufgabenplaner. Malware erstellt oft gefälschte Aufgaben, die als "Adobe Update" oder "Google Update" getarnt sind.
-*   **Services / Drivers**: Treiber, die im Kernel-Modus starten. Hier können Sie verdächtige `.sys`-Dateien deaktivieren, die für die oben genannten 100% CPU-Spitzen verantwortlich sind.
+*   **[Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)s / Drivers**: Treiber, die im Kernel-Modus starten. Hier können Sie verdächtige `.sys`-Dateien deaktivieren, die für die oben genannten 100% CPU-Spitzen verantwortlich sind.
 *   **WMI**: Orte für die Persistenz von dateiloser Malware (Fileless Malware) über WMI (Windows Management Instrumentation)-Ereignisfilter und -Consumer. Wird extrem oft übersehen.
 *   **AppInit_DLLs / KnownDLLs**: Eine Liste von DLLs, die bei jedem Start einer Anwendung zwangsweise injiziert werden. Ein Nährboden für Hooks durch DLL-Injection.
 

@@ -330,7 +330,7 @@ However, when these simple matrix operations are layered over and over, learning
 
 As the provocative title "Attention Is All You Need" suggests, the beauty of this architecture, which discards complex recurrent or convolutional processing and specializes purely in calculating "attention (relevance)", lies exactly in its mathematical simplicity.
 
-While there is a possibility that new architectures surpassing the Transformer (such as Mamba, a State Space Model) may appear in the future, the mathematical framework of "context understanding through Attention" built by the Transformer will surely be etched in the history of AI forever.
+While there is a possibility that new architectures surpassing the Transformer (such as Mamba, a [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Space Model) may appear in the future, the mathematical framework of "context understanding through Attention" built by the Transformer will surely be etched in the history of AI forever.
 
 If you have the opportunity to use LLMs like ChatGPT or Claude in the future, imagine the trillions of $Q K^T$ matrix multiplications being calculated per second in the background, with the Softmax function spitting out probabilities. Your resolution regarding the technology will increase, and you should find the world of AI even more fascinating.
 

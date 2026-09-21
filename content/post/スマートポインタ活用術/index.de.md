@@ -114,7 +114,7 @@ int main() {
 }
 ```
 
-Die Verwendung von Funktionszeigern oder Lambda-Ausdrücken als benutzerdefinierte Deleter kann die Größe von `unique_ptr` erhöhen. Wenn man jedoch, wie oben gezeigt, zustandslose Funktionsobjekte (Funktoren) verwendet, erhöht sich die Größe durch **EBCO (Empty Base Class Optimization)** in C++ oder `[[no_unique_address]]` in C++20 nicht gegenüber einem rohen Zeiger (der Zero-Overhead bleibt erhalten).
+Die Verwendung von Funktionszeigern oder [Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)-Ausdrücken als benutzerdefinierte Deleter kann die Größe von `unique_ptr` erhöhen. Wenn man jedoch, wie oben gezeigt, zustandslose Funktionsobjekte (Funktoren) verwendet, erhöht sich die Größe durch **EBCO (Empty Base Class Optimization)** in C++ oder `[[no_unique_address]]` in C++20 nicht gegenüber einem rohen Zeiger (der Zero-Overhead bleibt erhalten).
 
 ## 3. `std::shared_ptr`: Gemeinsames Eigentum und Kontrollblock
 

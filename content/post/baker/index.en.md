@@ -59,7 +59,7 @@ Baker achieved the astonishing feat of generalizing the result proved by Gelfond
 **Baker's Theorem (1966)**:
 Let $\alpha_1, \alpha_2, \ldots, \alpha_n$ be non-zero algebraic numbers, and assume that $\log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ are linearly independent over the rational field $\mathbb{Q}$. Then, $1, \log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ are linearly independent over the algebraic number field $\overline{\mathbb{Q}}$.
 
-In other words, for any non-zero algebraic numbers $\beta_0, \beta_1, \ldots, \beta_n$, he proved that the following linear form $\Lambda$ is never equal to $0$.
+In other words, for any non-zero algebraic numbers $\beta_0, \beta_1, \ldots, \beta_n$, he proved that the following linear form $\[Lambda](https://kenji.blog/en/p/serverless-architecture-aws-lambda-cold-start/)$ is never equal to $0$.
 
 $$ \Lambda = \beta_0 + \beta_1 \log \alpha_1 + \cdots + \beta_n \log \alpha_n \neq 0 $$
 

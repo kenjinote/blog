@@ -13,7 +13,7 @@ tags: ["Git", "Version Control", "Rebase", "Merge"]
 
 Git ist ein unverzichtbares Versionskontrollsystem in der modernen Softwareentwicklung. Wenn mehrere Entwickler gleichzeitig die Codebasis ändern, spielt das leistungsstarke Branching-Modell von Git seine Stärken aus. In der Teamentwicklung ist die Diskussion darüber, ob man `merge` oder `rebase` verwenden sollte, jedoch eines der Themen, das Entwickler vom Anfänger bis zum Experten immer wieder beschäftigt.
 
-In diesem Artikel werden wir die Unterschiede im Mechanismus von `git merge` und `git rebase` tiefgehend untersuchen, indem wir die interne Struktur von Git, wie den DAG (gerichteter azyklischer Graph) und die mathematischen Eigenschaften von Commit-Hashes, entschlüsseln. Darüber hinaus werden wir anhand von konkreten Workflows ausführlich erklären, wie man diese beiden in der Praxis richtig einsetzt. Indem Sie nicht nur die Befehle kennenlernen, sondern auch verstehen, welche Berechnungen Git im Hintergrund durchführt, verlieren Sie die Angst vor Konflikten und können eine saubere, nachvollziehbare Historie aufbauen.
+In diesem Artikel werden wir die Unterschiede im Mechanismus von `git merge` und `git rebase` tiefgehend untersuchen, indem wir die interne Struktur von Git, wie den DAG (gerichteter azyklischer Graph) und die mathematischen Eigenschaften von Commit-Hashes, entschlüsseln. Darüber hinaus werden wir anhand von konkreten [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s ausführlich erklären, wie man diese beiden in der Praxis richtig einsetzt. Indem Sie nicht nur die Befehle kennenlernen, sondern auch verstehen, welche Berechnungen Git im Hintergrund durchführt, verlieren Sie die Angst vor Konflikten und können eine saubere, nachvollziehbare Historie aufbauen.
 
 ---
 
@@ -230,7 +230,7 @@ git rebase --abort
 
 ---
 
-# 8. Der richtige Einsatz in der Praxis (Workflow-Praxis)
+# 8. Der richtige Einsatz in der Praxis ([Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-Praxis)
 
 Wie sollten Sie nun in der tatsächlichen Entwicklungsumgebung zwischen `merge` und `rebase` wählen? Hier stellen wir den standardmäßigsten und sichersten Ansatz vor.
 

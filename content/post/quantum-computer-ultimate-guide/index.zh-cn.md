@@ -45,7 +45,7 @@ $$
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
 $$
 
-该系统的纯态（Pure State） $|\Psi\rangle$ 可表示为 $2^N$ 个基底向量的线性组合（叠加）。在此，使用狄拉克符号（Bra-ket notation），任意量子态均可展开如下：
+该系统的纯态（Pure [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)） $|\Psi\rangle$ 可表示为 $2^N$ 个基底向量的线性组合（叠加）。在此，使用狄拉克符号（Bra-ket notation），任意量子态均可展开如下：
 
 $$
 |\Psi\rangle = \sum_{x=0}^{2^N-1} c_x |x\rangle
@@ -537,7 +537,7 @@ $$
 
 ## 3.6 观测引起的波包塌缩（态的归约）与退相干
 
-观测公理中包含了一个引发最多争论的重大步骤，即观测“之后”系统的状态究竟会如何。这就是被称为“波包塌缩（Wavefunction collapse）”或“态的归约（State reduction）”的现象。这一被称为冯·诺依曼投影假设（Projection postulate）的过程形式化如下：
+观测公理中包含了一个引发最多争论的重大步骤，即观测“之后”系统的状态究竟会如何。这就是被称为“波包塌缩（Wavefunction collapse）”或“态的归约（[State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) reduction）”的现象。这一被称为冯·诺依曼投影假设（Projection postulate）的过程形式化如下：
 
  **投影假设** ：
 因观测获得本征值 $a_k$ 后瞬间系统的状态 **$| \psi' \rangle$** ，将瞬间转变（塌缩）为对原有态向量作用对应的投影算子 $P_k$ 并重新归一化后的状态：
@@ -787,7 +787,7 @@ T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix} = \begin{pmatrix} 1 & 
 $$
 
 如果提取出全局相位 **$e^{i\pi/8}$** ，对角线元素将变为 **$e^{-i\pi/8}$** 和 **$e^{i\pi/8}$** ，因此历史上也被称为 **$\pi/8$** 门。
-T门不属于克利福德群，它打破了经典模拟的高效性。然而，量子计算理论中存在一个极其重要的定理：只要在克利福德群中加入哪怕一个T门，就能完成可以以任意精度近似单量子比特上所有酉变换的“通用量子门集合（Universal Quantum Gate Set）”。在容错（纠错）量子计算中，由于很难直接在纠错码上执行T门，因此它通过被称为“魔术态蒸馏（Magic State Distillation）”这种成本非常高昂的方法来实现。
+T门不属于克利福德群，它打破了经典模拟的高效性。然而，量子计算理论中存在一个极其重要的定理：只要在克利福德群中加入哪怕一个T门，就能完成可以以任意精度近似单量子比特上所有酉变换的“通用量子门集合（Universal Quantum Gate Set）”。在容错（纠错）量子计算中，由于很难直接在纠错码上执行T门，因此它通过被称为“魔术态蒸馏（Magic [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) Distillation）”这种成本非常高昂的方法来实现。
 
 ## 4.5 任意旋转门的指数函数表示与通用性
 
@@ -1000,7 +1000,7 @@ $$
 
 ## 5.2 贝尔态（最大量子纠缠态）的数学表达
 
-多体量子系统中的状态主要被划分为两类：“可分态（Separable State）”与“纠缠态（Entangled State）”。
+多体量子系统中的状态主要被划分为两类：“可分态（Separable [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)）”与“纠缠态（Entangled State）”。
 当状态 **$|\Psi\rangle$** 可以描述为各个子系统状态的简单张量积，即
 
 $$
@@ -1938,7 +1938,7 @@ $$
 
 ## 8.4 利用叠加态进行周期寻找的量子线路
 
-理论准备就绪后，我们来追踪Shor算法整体的量子线路以及各个步骤中量子态的时间演化（State Evolution）。该算法使用两个量子寄存器。
+理论准备就绪后，我们来追踪Shor算法整体的量子线路以及各个步骤中量子态的时间演化（[State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) Evolution）。该算法使用两个量子寄存器。
 第1寄存器由 $t \approx 2 \log_2 N$ 个量子比特组成，其状态空间维度为 $M = 2^t$（选取 $t$ 时需满足 $M \ge N^2$ 的条件）。第2寄存器包含 $L \approx \log_2 N$ 个量子比特，用于存储计算结果。
 
 ```mermaid
@@ -2551,7 +2551,7 @@ $$
 为了防止这种毁灭性的连锁反应而提出的设计思想就是“容错量子计算（FTQC）”。FTQC的绝对条件是：“系统内发生的 1 个物理错误，在一个逻辑错误块内最多只能传播成 1 个错误”。
 为了实现这一点，逻辑门的执行被强烈要求使用“横向操作（Transversal Operations）”。这是一种安全的门操作，即第 $i$ 个物理量子比特只与其他块的第 $i$ 个物理量子比特发生相互作用（在块内没有交叉耦合）。然而，根据“伊斯廷-尼尔定理（Eastin-Knill Theorem）”，在数学上已经证明，仅通过横向操作是不可能构建出通用量子计算所需的连续门集合的。
 
-为了规避该定理的限制，实现通用的FTQC，其魔法杖便是“魔术态蒸馏（Magic State Distillation）”。准备大量含有噪声的非克利福德状态（例如：相当于 $T$ 门的状态），然后通过仅使用横向克利福德运算的纠错电路，提取出纯度极高的“魔术态”。接着，利用量子隐形传态的原理，间接地将非克利福德门（如 $T$ 门等）应用到逻辑状态上。由于这个蒸馏过程会消耗庞大资源（物理量子比特），所以在FTQC时代的算法中，“如何减少 $T$ 门的数量”成为了至高无上的命题。
+为了规避该定理的限制，实现通用的FTQC，其魔法杖便是“魔术态蒸馏（Magic [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) Distillation）”。准备大量含有噪声的非克利福德状态（例如：相当于 $T$ 门的状态），然后通过仅使用横向克利福德运算的纠错电路，提取出纯度极高的“魔术态”。接着，利用量子隐形传态的原理，间接地将非克利福德门（如 $T$ 门等）应用到逻辑状态上。由于这个蒸馏过程会消耗庞大资源（物理量子比特），所以在FTQC时代的算法中，“如何减少 $T$ 门的数量”成为了至高无上的命题。
 
 所有这些理论努力的集大成者就是“量子阈值定理（Quantum Threshold Theorem）”。
 由多里特·阿哈罗诺夫（Dorit Aharonov）和迈克尔·本-奥尔（Michael Ben-Or）等人证明的这一定理，高声宣告如下：

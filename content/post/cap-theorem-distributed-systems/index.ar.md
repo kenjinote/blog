@@ -269,7 +269,7 @@ stateDiagram-v2
 2. **إضافة القائد فقط (Leader Append-Only)** : لا يكتب القائد فوق إدخالات سجله أو يحذفها، بل يضيفها فقط.
 3. **مطابقة السجل (Log Matching)** : إذا كان هناك سجلان يحتويان على إدخال بنفس الفهرس والفترة، فإن جميع الإدخالات السابقة متطابقة.
 
-وهذا يقضي تمامًا على عدم اتساق البيانات في بيئة موزعة رياضيًا وخوارزميًا. يستخدم `etcd`، وهو مخزن البيانات الخلفي لـ Kubernetes، أيضًا [Raft](https://kenji.blog/ar/p/byzantine-generals-problem-consensus/) لتحقيق إدارة حالة صارمة للمجموعة.
+وهذا يقضي تمامًا على عدم اتساق البيانات في بيئة موزعة رياضيًا وخوارزميًا. يستخدم `etcd`، وهو مخزن البيانات الخلفي لـ [Kubernetes](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/)، أيضًا [Raft](https://kenji.blog/ar/p/byzantine-generals-problem-consensus/) لتحقيق إدارة حالة صارمة للمجموعة.
 
 ## 8. الخدمات المصغرة والمعاملات (Transactions)
 

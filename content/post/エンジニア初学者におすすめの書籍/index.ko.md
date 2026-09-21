@@ -37,9 +37,9 @@ description: '프로그래밍 초보자에서 중급자로 도약하고 싶은 �
 ![img_10.png](img_10.webp)
 7. 달인에게 배우는 SQL 철저 지침서
 ![img_9.png](img_9.webp)
-8. Docker 실전 가이드
+8. [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 실전 가이드
 ![img_8.png](img_8.webp)
-9. Kubernetes 완전 가이드
+9. [Kubernetes](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/) 완전 가이드
 ![img_7.png](img_7.webp)
 10. CODE COMPLETE 제2판
 ![img_5.png](img_5.webp)

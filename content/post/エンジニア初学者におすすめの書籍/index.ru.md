@@ -23,9 +23,9 @@ description: 'Обязательно к прочтению инженерам, �
 ![img_10.png](img_10.webp)
 7. Исчерпывающее руководство по SQL от экспертов
 ![img_9.png](img_9.webp)
-8. Практическое руководство по Docker
+8. Практическое руководство по [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/)
 ![img_8.png](img_8.webp)
-9. Полное руководство по Kubernetes
+9. Полное руководство по [Kubernetes](https://kenji.blog/ru/p/kubernetes-k8s-architecture-pod-service-ingress/)
 ![img_7.png](img_7.webp)
 10. CODE COMPLETE Второе издание
 ![img_5.png](img_5.webp)

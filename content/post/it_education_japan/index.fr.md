@@ -165,7 +165,7 @@ La plupart des terminaux déployés comme normes du concept GIGA School sont des
 - Mémoire (RAM) : 4 Go (À peine suffisant pour faire tourner un OS moderne)
 - Stockage (eMMC) : 32 Go à 64 Go (Vitesse d'E/S extrêmement lente)
 
-Avec ces contraintes matérielles dérisoires, il est pratiquement impossible de mettre en place un « environnement de développement local » comme le font quotidiennement les ingénieurs professionnels. Lancer des conteneurs Linux avec Docker, exécuter un IDE lourd comme Visual Studio Code avec toutes ses fonctionnalités, ou démarrer un serveur local Node.js ou Python et installer de lourdes bibliothèques provoque instantanément un épuisement de la mémoire et un gel du système.
+Avec ces contraintes matérielles dérisoires, il est pratiquement impossible de mettre en place un « environnement de développement local » comme le font quotidiennement les ingénieurs professionnels. Lancer des conteneurs Linux avec [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/), exécuter un IDE lourd comme Visual Studio Code avec toutes ses fonctionnalités, ou démarrer un serveur local Node.js ou Python et installer de lourdes bibliothèques provoque instantanément un épuisement de la mémoire et un gel du système.
 
 En conséquence, les établissements scolaires se retrouvent acculés à dépendre entièrement des IDE cloud qui fonctionnent dans le navigateur (Google Colaboratory, Replit, ou des outils Web légers propriétaires des éditeurs de manuels).
 
@@ -204,7 +204,7 @@ Aux États-Unis, il existe un programme standard strict allant de la maternelle 
 
 ### Le décalage désespérant entre les compétences requises et les compétences enseignées
 
-Les exigences de l'industrie moderne, en particulier des méga-entreprises mondiales (comme les GAFAM), envers les nouveaux ingénieurs logiciels nouvellement diplômés se durcissent à une vitesse effrayante d'année en année. Une expertise vaste et approfondie est requise, allant de la construction d'infrastructures cloud natives (AWS, GCP, Kubernetes) à la conception de systèmes distribués à base de microservices, l'implémentation de pipelines de Machine Learning et des connaissances pointues en sécurité.
+Les exigences de l'industrie moderne, en particulier des méga-entreprises mondiales (comme les GAFAM), envers les nouveaux ingénieurs logiciels nouvellement diplômés se durcissent à une vitesse effrayante d'année en année. Une expertise vaste et approfondie est requise, allant de la construction d'infrastructures cloud natives (AWS, GCP, [Kubernetes](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/)) à la conception de systèmes distribués à base de microservices, l'implémentation de pipelines de Machine Learning et des connaissances pointues en sécurité.
 
 Le graphique ci-dessous illustre conceptuellement le gouffre désespérant entre le niveau de compétences fourni par l'enseignement scolaire actuel au Japon et le niveau exigé par la ligne de front de l'industrie.
 

@@ -28,7 +28,7 @@ Como propiedad de las matrices ortogonales, se cumple que $U^T U = I$ y $V^T V =
 
 ## 2. Diferencia con la Descomposición de Valores Propios
 
-Para matrices cuadradas, la descomposición de valores propios $A = P \Lambda P^{-1}$ es bien conocida. Sin embargo, esta descomposición tiene las siguientes limitaciones:
+Para matrices cuadradas, la descomposición de valores propios $A = P \[Lambda](https://kenji.blog/es/p/serverless-architecture-aws-lambda-cold-start/) P^{-1}$ es bien conocida. Sin embargo, esta descomposición tiene las siguientes limitaciones:
 - Solo se puede aplicar a matrices cuadradas ($n \times n$).
 - Incluso si es una matriz cuadrada, no siempre es diagonalizable.
 

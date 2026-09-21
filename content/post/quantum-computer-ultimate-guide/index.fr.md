@@ -45,7 +45,7 @@ $$
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
 $$
 
-L'état pur (Pure State) $|\Psi\rangle$ de ce système s'exprime comme une combinaison linéaire (superposition) de $2^N$ vecteurs de base. En utilisant la notation bra-ket de Dirac (Bra-ket notation), tout état quantique peut être décomposé comme suit :
+L'état pur (Pure [State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/)) $|\Psi\rangle$ de ce système s'exprime comme une combinaison linéaire (superposition) de $2^N$ vecteurs de base. En utilisant la notation bra-ket de Dirac (Bra-ket notation), tout état quantique peut être décomposé comme suit :
 
 $$
 |\Psi\rangle = \sum_{x=0}^{2^N-1} c_x |x\rangle
@@ -537,7 +537,7 @@ $$
 
 ## 3.6 Effondrement du paquet d'ondes par observation (réduction de l'état) et décohérence
 
-L'axiome de l'observation inclut l'étape la plus controversée : que devient l'état du système « après » l'observation. C'est le phénomène appelé « effondrement du paquet d'ondes » (Wavefunction collapse) ou « réduction de l'état » (State reduction). Ce processus, connu sous le nom de postulat de projection (Projection postulate) de von Neumann, est formulé comme suit :
+L'axiome de l'observation inclut l'étape la plus controversée : que devient l'état du système « après » l'observation. C'est le phénomène appelé « effondrement du paquet d'ondes » (Wavefunction collapse) ou « réduction de l'état » ([State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) reduction). Ce processus, connu sous le nom de postulat de projection (Projection postulate) de von Neumann, est formulé comme suit :
 
  **Postulat de projection** :
 L'état **$| \psi' \rangle$** du système immédiatement après avoir obtenu la valeur propre $a_k$ par observation, change (s'effondre) instantanément en appliquant l'opérateur de projection $P_k$ correspondant au vecteur d'état d'origine et en le renormalisant :
@@ -787,7 +787,7 @@ T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix} = \begin{pmatrix} 1 & 
 $$
 
 Si l'on factorise la phase globale **$e^{i\pi/8}$** , les éléments diagonaux deviennent **$e^{-i\pi/8}$** et **$e^{i\pi/8}$** , c'est pourquoi elle est aussi historiquement appelée la porte **$\pi/8$** .
-La porte T n'appartient pas au groupe de Clifford et détruit l'efficacité de la simulation classique. Cependant, il existe un théorème extrêmement important dans la théorie du calcul quantique stipulant qu'en ajoutant ne serait-ce qu'une seule porte T au groupe de Clifford, on obtient un "ensemble de portes quantiques universel (Universal Quantum Gate Set)" capable d'approximer n'importe quelle transformation unitaire sur un seul qubit avec une précision arbitraire. Dans le calcul quantique tolérant aux pannes (fault-tolerant), puisqu'il est difficile d'exécuter la porte T directement sur les codes de correction d'erreurs, elle est implémentée en utilisant une méthode très coûteuse appelée "distillation d'états magiques (Magic State Distillation)".
+La porte T n'appartient pas au groupe de Clifford et détruit l'efficacité de la simulation classique. Cependant, il existe un théorème extrêmement important dans la théorie du calcul quantique stipulant qu'en ajoutant ne serait-ce qu'une seule porte T au groupe de Clifford, on obtient un "ensemble de portes quantiques universel (Universal Quantum Gate Set)" capable d'approximer n'importe quelle transformation unitaire sur un seul qubit avec une précision arbitraire. Dans le calcul quantique tolérant aux pannes (fault-tolerant), puisqu'il est difficile d'exécuter la porte T directement sur les codes de correction d'erreurs, elle est implémentée en utilisant une méthode très coûteuse appelée "distillation d'états magiques (Magic [State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) Distillation)".
 
 ## 4.5 Représentation exponentielle et universalité des portes de rotation arbitraires
 
@@ -998,7 +998,7 @@ Par linéarité, cette action s'étend également à tout état de superposition
 
 ## 5.2 Formulation mathématique des états de Bell (états d'intrication maximale)
 
-Les états d'un système quantique à plusieurs corps se divisent principalement en deux grandes catégories : les « états séparables » (Separable State) et les « états intriqués » (Entangled State).
+Les états d'un système quantique à plusieurs corps se divisent principalement en deux grandes catégories : les « états séparables » (Separable [State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/)) et les « états intriqués » (Entangled State).
 Lorsqu'un état **$|\Psi\rangle$** peut être décrit comme le simple produit tensoriel des états de ses sous-systèmes respectifs, c'est-à-dire :
 
 $$
@@ -1068,7 +1068,7 @@ $$
 \rho_A = \frac{1}{2} (|0\rangle\langle0| + |1\rangle\langle1|) = \frac{1}{2} I
 $$
 
-Cela signifie que si l'on observe uniquement le qubit A, son état est un état complètement mélangé (Completely Mixed State), et son entropie de von Neumann $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ prend la valeur maximale de $1$. En d'autres termes, l'essence même de l'intrication quantique maximale réside dans cette corrélation extrême, absolument impossible en physique classique : « bien que le système possède une information complète dans sa globalité (état pur), l'information est totalement indéterminée (entropie maximale) dès lors que l'on examine chaque sous-système individuellement ».
+Cela signifie que si l'on observe uniquement le qubit A, son état est un état complètement mélangé (Completely Mixed [State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/)), et son entropie de von Neumann $S(\rho_A) = -\text{Tr}(\rho_A \log_2 \rho_A)$ prend la valeur maximale de $1$. En d'autres termes, l'essence même de l'intrication quantique maximale réside dans cette corrélation extrême, absolument impossible en physique classique : « bien que le système possède une information complète dans sa globalité (état pur), l'information est totalement indéterminée (entropie maximale) dès lors que l'on examine chaque sous-système individuellement ».
 
 ---
 
@@ -1936,7 +1936,7 @@ Cette formule est très suggestive. Elle indique que la phase de l'état du $m$-
 
 ## 8.4 Circuit quantique pour la recherche de période utilisant la superposition
 
-Les préparations théoriques étant terminées, suivons à présent le circuit quantique de l'ensemble de l'algorithme de Shor et l'évolution temporelle (State Evolution) de l'état quantique à chaque étape. L'algorithme utilise deux registres quantiques.
+Les préparations théoriques étant terminées, suivons à présent le circuit quantique de l'ensemble de l'algorithme de Shor et l'évolution temporelle ([State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) Evolution) de l'état quantique à chaque étape. L'algorithme utilise deux registres quantiques.
 Le premier registre est composé de $t \approx 2 \log_2 N$ qubits, et la dimension de l'espace des états est $M = 2^t$ (on choisit $t$ pour satisfaire la condition $M \ge N^2$). Le second registre possède $L \approx \log_2 N$ qubits et stocke le résultat du calcul.
 
 ```mermaid
@@ -2549,7 +2549,7 @@ Par exemple, une porte CNOT utilisée pour l'extraction du syndrome propage une 
 La philosophie de conception élaborée pour prévenir cette réaction en chaîne catastrophique est le « calcul quantique tolérant aux pannes (FTQC) ». La condition absolue du FTQC est qu'« une erreur physique se produisant dans le système ne se propage qu'en au plus une erreur au sein d'un même bloc d'erreur logique ».
 Pour y parvenir, l'exécution des portes logiques requiert impérativement des « opérations transversales (Transversal Operations) ». Il s'agit d'opérations de portes sûres où le $i$-ème qubit physique n'interagit qu'avec le $i$-ème qubit physique d'un autre bloc (sans aucun couplage croisé au sein d'un même bloc). Cependant, d'après le « théorème d'Eastin-Knill » (Eastin-Knill Theorem), il est mathématiquement prouvé qu'il est impossible de construire un ensemble continu universel de portes pour le calcul quantique en utilisant uniquement des opérations transversales.
 
-La baguette magique permettant de contourner les contraintes de ce théorème et de réaliser un FTQC universel est la « distillation d'états magiques (Magic State Distillation) ». Une grande quantité d'états non-Clifford bruités (par exemple, des états correspondant à la porte $T$ ) est préparée, puis, à travers des circuits de correction d'erreurs n'utilisant que des opérations transversales de Clifford, des « états magiques » d'une pureté extrêmement élevée sont extraits. Ensuite, en utilisant le principe de la téléportation quantique, des portes non-Clifford (telles que la porte $T$ ) sont appliquées indirectement aux états logiques. Étant donné que ce processus de distillation consomme d'immenses ressources (qubits physiques), dans les algorithmes de l'ère du FTQC, « comment réduire le nombre de portes $T$ » devient un impératif suprême.
+La baguette magique permettant de contourner les contraintes de ce théorème et de réaliser un FTQC universel est la « distillation d'états magiques (Magic [State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) Distillation) ». Une grande quantité d'états non-Clifford bruités (par exemple, des états correspondant à la porte $T$ ) est préparée, puis, à travers des circuits de correction d'erreurs n'utilisant que des opérations transversales de Clifford, des « états magiques » d'une pureté extrêmement élevée sont extraits. Ensuite, en utilisant le principe de la téléportation quantique, des portes non-Clifford (telles que la porte $T$ ) sont appliquées indirectement aux états logiques. Étant donné que ce processus de distillation consomme d'immenses ressources (qubits physiques), dans les algorithmes de l'ère du FTQC, « comment réduire le nombre de portes $T$ » devient un impératif suprême.
 
 L'aboutissement de tous ces efforts théoriques est le « théorème du seuil quantique (Quantum Threshold Theorem) ».
 Prouvé notamment par Dorit Aharonov et Michael Ben-Or, ce théorème proclame solennellement :

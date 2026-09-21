@@ -36,7 +36,7 @@ $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right
 
 $$ \text{Complexity} = O(N^2 \cdot d) $$
 
-近年では、FlashAttentionのようなハードウェアレベルの最適化や、Sparse Attention、さらにはMamba（State Space Models）などの線形時間 $O(N)$ で処理可能な代替アーキテクチャの研究が進んでいますが、依然として「無限のコンテキストを完全に理解し、全体最適化された出力を生成する」ことは極めて困難です。
+近年では、FlashAttentionのようなハードウェアレベルの最適化や、Sparse Attention、さらにはMamba（[State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/) Space Models）などの線形時間 $O(N)$ で処理可能な代替アーキテクチャの研究が進んでいますが、依然として「無限のコンテキストを完全に理解し、全体最適化された出力を生成する」ことは極めて困難です。
 
 さらに、コンテキストウィンドウを物理的に拡大できたとしても、「Lost in the Middle（中間情報の喪失）」と呼ばれる現象が発生します。LLMはプロンプトの先頭と末尾の情報に強く影響を受けやすく、中間に配置された重要な要件や制約を無視してしまう傾向があります。数万行に及ぶエンタープライズシステムのソースコード全体をLLMに読み込ませて「最適なリファクタリングをせよ」と指示しても、局所的には正しいが全体としては破綻しているコードが生成されるのはこのためです。
 

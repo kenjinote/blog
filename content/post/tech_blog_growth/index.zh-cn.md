@@ -175,7 +175,7 @@ else:
     print("未找到数据。")
 ```
 
-通过在cron或GitHub Actions的定时任务中运行这个脚本，你就可以始终以数据驱动的方式决定“该重写哪篇文章的标题”。不再依赖直觉，基于数据的持续改进（Continuous Content Improvement）才是关键。
+通过在cron或[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)的定时任务中运行这个脚本，你就可以始终以数据驱动的方式决定“该重写哪篇文章的标题”。不再依赖直觉，基于数据的持续改进（Continuous Content Improvement）才是关键。
 
 ---
 
@@ -231,7 +231,7 @@ $$ ROI = \frac{\sum_{t=1}^{T} \left( Rev_{ad}(t) + Val_{brand}(t) + Val_{skill}(
 
 ---
 
-## 5. 通过 GitHub Actions 与外部自动化工具集成进行分发
+## 5. 通过 [GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 与外部自动化工具集成进行分发
 
 内容创作完成后，接下来的挑战是如何将其高效地送达到目标群体手中。每次都手动向各个SNS发链接效率极低，也不符合工程师的作风。
 
@@ -255,7 +255,7 @@ flowchart TD
 
 ### 5.2 自动化流水线的构建要点
 
-1. **基于 GitHub Actions 的构建与部署**
+1. **基于 [GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 的构建与部署**
    如果正在使用静态网站生成器，可以利用GitHub Actions自动化生成HTML并部署到托管服务（Vercel, Netlify, Cloudflare Pages等）。此时，作为上文提到的Core Web Vitals对策，将图片优化流程（如自动转换为WebP格式）加入构建流水线也非常有效。
 
 2. **利用 Zapier/IFTTT 结合 RSS 触发 SNS 同步**
@@ -275,7 +275,7 @@ flowchart TD
 2. 理解用户搜索意图（解决错误 vs 系统学习）并以此进行文章设计
 3. 熟练运用 Google Search Console API 和 Python 进行数据分析
 4. 有ROI意识的内容生命周期管理与重写
-5. 通过 CI/CD 和 Zapier 联动实现分发的完全自动化
+5. 通过 [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 和 Zapier 联动实现分发的完全自动化
 
 如果能将这些构建为一个系统，那么技术博客将成为强有力推动你个人职业发展的最强资产。对于正为访问量停滞而苦恼的工程师们，请务必从今天开始尝试“博客的增长黑客”。在开发业务中积累的编程技能和架构设计能力，必将成为你运营博客的最大武器。
 

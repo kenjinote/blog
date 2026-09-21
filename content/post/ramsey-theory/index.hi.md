@@ -258,7 +258,7 @@ $$
 
 ### संदर्भ सामग्री
 
-- Ohio State University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): किनारों के 2-रंग विभाजन और छोटी रामसे संख्याओं की व्याख्या।
+- Ohio [State](https://kenji.blog/hi/p/iac-infrastructure-as-code-terraform/) University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): किनारों के 2-रंग विभाजन और छोटी रामसे संख्याओं की व्याख्या।
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf): एकदिष्ट उप-अनुक्रमों सहित रामसे-शैली के विचारों पर व्याख्यान सामग्री।
 
 इस लेख के आरेख, संपूर्ण गणना तालिका, प्रायिकता और त्रिभुज वितरण संलग्न Python स्क्रिप्ट द्वारा उत्पन्न किए गए हैं।

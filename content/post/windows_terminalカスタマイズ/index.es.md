@@ -226,7 +226,7 @@ Al personalizar la sección de `actions`, puedes dividir, mover y redimensionar 
 ]
 ```
 
-Al configurar los atajos de teclado anteriores, puedes ajustar el tamaño de los paneles con `Alt + Shift + Flecha` y cambiar rápidamente el enfoque entre paneles con `Alt + Flecha`. De esta forma, puedes ejecutar un servidor local de Node.js en un panel para monitorear los registros, mientras usas comandos de Git en otro panel y verificas el estado de los contenedores Docker en un tercer panel, logrando un trabajo en paralelo avanzado y fluido.
+Al configurar los atajos de teclado anteriores, puedes ajustar el tamaño de los paneles con `Alt + Shift + Flecha` y cambiar rápidamente el enfoque entre paneles con `Alt + Flecha`. De esta forma, puedes ejecutar un servidor local de Node.js en un panel para monitorear los registros, mientras usas comandos de Git en otro panel y verificas el estado de los contenedores [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/) en un tercer panel, logrando un trabajo en paralelo avanzado y fluido.
 
 ## 4.1 Modo Quake (Terminal desplegable global)
 
@@ -250,7 +250,7 @@ Si guardas este comando como un acceso directo o archivo por lotes en Windows, l
 
 # 6. La evolución del prompt 1: PowerShell y Oh My Posh
 
-"Oh My Posh" es lo que hace que PowerShell, el shell predeterminado en entornos Windows (especialmente la versión más reciente multiplataforma, PowerShell 7 / PowerShell Core), evolucione drásticamente. Oh My Posh es un motor de personalización de consola (prompt) para cualquier shell. Te presenta visualmente todos los estados que necesitas para el desarrollo, como tu directorio actual, las ramas y estados de modificación de Git, las versiones de Node.js o Python, o el contexto de Kubernetes.
+"Oh My Posh" es lo que hace que PowerShell, el shell predeterminado en entornos Windows (especialmente la versión más reciente multiplataforma, PowerShell 7 / PowerShell Core), evolucione drásticamente. Oh My Posh es un motor de personalización de consola (prompt) para cualquier shell. Te presenta visualmente todos los estados que necesitas para el desarrollo, como tu directorio actual, las ramas y estados de modificación de Git, las versiones de Node.js o Python, o el contexto de [Kubernetes](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/).
 
 El siguiente diagrama de secuencia muestra cómo se carga Oh My Posh al iniciar PowerShell y cómo se renderiza la consola.
 

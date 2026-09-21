@@ -23,9 +23,9 @@ description: 'Wajib dibaca bagi insinyur yang ingin naik kelas dari pemula ke ti
 ![img_10.png](img_10.webp)
 7. Panduan Lengkap SQL dari Para Ahli
 ![img_9.png](img_9.webp)
-8. Panduan Praktis Docker
+8. Panduan Praktis [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)
 ![img_8.png](img_8.webp)
-9. Panduan Lengkap Kubernetes
+9. Panduan Lengkap [Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)
 ![img_7.png](img_7.webp)
 10. CODE COMPLETE Edisi Kedua
 ![img_5.png](img_5.webp)

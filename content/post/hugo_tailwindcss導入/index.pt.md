@@ -203,7 +203,7 @@ Com esta configuração, quando o Hugo chamar o PostCSS, primeiro será processa
 
 ---
 
-## 5. Construção do Pipeline de Assets CSS no Hugo
+## 5. Construção do [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) de Assets CSS no Hugo
 
 Com a configuração concluída, finalmente integraremos o Tailwind CSS no lado do tema do Hugo.
 
@@ -266,7 +266,7 @@ A seguir, a partir dos templates do Hugo, leremos o arquivo CSS acima e descreve
 </head>
 ```
 
-#### Explicação do Pipeline e Diagrama Mermaid
+#### Explicação do [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) e Diagrama Mermaid
 
 Para entender como o código do template Go processa o arquivo CSS, ilustramos abaixo o processo do pipeline.
 

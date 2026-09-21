@@ -44,7 +44,7 @@ $$ |\psi\rangle = \alpha_{00}|00\rangle + \alpha_{01}|01\rangle + \alpha_{10}|10
 
 Auch hier gilt die Normierungsbedingung $\sum_{i,j} |\alpha_{ij}|^2 = 1$. Der wichtige Punkt ist, dass zur vollständigen Beschreibung eines Systems von n Qubits $2^n$ komplexe Amplituden benötigt werden. Selbst für ein System von nur 50 Qubits werden zur Darstellung seines Zustands $2^{50} \approx 10^{15}$ komplexe Zahlen benötigt, was die Speicherkapazität der schnellsten Supercomputer der Welt bei weitem übersteigt. Dies ist einer der Gründe, warum Quantencomputer einen exponentiellen Vorteil gegenüber klassischen Computern haben.
 
-"Quantenverschränkung" (Entanglement) bezeichnet in solchen Zuständen mehrerer Qubits einen Zustand, der nicht einfach als Tensorprodukt der Zustände der einzelnen Qubits zerlegt (faktorisiert) werden kann. Einer der bekanntesten und wichtigsten verschränkten Zustände ist der folgende "Bell-Zustand" (Bell State):
+"Quantenverschränkung" (Entanglement) bezeichnet in solchen Zuständen mehrerer Qubits einen Zustand, der nicht einfach als Tensorprodukt der Zustände der einzelnen Qubits zerlegt (faktorisiert) werden kann. Einer der bekanntesten und wichtigsten verschränkten Zustände ist der folgende "Bell-Zustand" (Bell [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)):
 
 $$ |\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle) $$
 
@@ -79,7 +79,7 @@ Das QDK enthält die folgenden Hauptelemente:
 3. **Umfangreiche Bibliothek**: Die Q#-Standardbibliothek (Standard Library) stellt verschiedene fortschrittliche Bausteine zur Verfügung, die von grundlegenden Quantengattern (H, X, Y, Z, CNOT usw.) über komplexe arithmetische Operationen (wie Quanten-Addierer) bis hin zu Amplification-Algorithmen (Amplitude Amplification) und dem Quanten-Phasenschätzungs-Algorithmus (Quantum Phase Estimation) reichen. Dadurch wird verhindert, dass Entwickler das Rad neu erfinden müssen.
 4. **Integration mit Entwicklungsumgebungen (IDE)**: Erweiterungen für Visual Studio und Visual Studio Code sind verfügbar, die wesentliche Funktionen für die moderne Softwareentwicklung bieten, wie Syntaxhervorhebung, Code-Vervollständigung (IntelliSense), leistungsstarkes Debugging und die Integration mit Test-Frameworks.
 
-Im Folgenden sehen Sie ein Mermaid-Diagramm, das den Workflow von der Erstellung eines Q#-Programms bis zu dessen Ausführung auf der Hardware zeigt.
+Im Folgenden sehen Sie ein Mermaid-Diagramm, das den [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) von der Erstellung eines Q#-Programms bis zu dessen Ausführung auf der Hardware zeigt.
 
 ```mermaid
 graph TD
@@ -138,7 +138,7 @@ Wenn Sie eine Variable deklarieren müssen, deren Wert aktualisiert werden muss,
 
 ## 6. Praxis: Einen Bell-Zustand (Quantenverschränkung) mit Q# erstellen und messen
 
-Lassen Sie uns nun all das bisher gelernte Wissen zusammenführen und tatsächlich ein Programm schreiben, um mit Q# den im Mathematik-Abschnitt erklärten "Bell-Zustand" (Bell State) zu erstellen und ihn dann zu messen. Dies ist ein sehr wichtiger Schritt, der als das "Hello World" der Quantenprogrammierung bezeichnet werden kann.
+Lassen Sie uns nun all das bisher gelernte Wissen zusammenführen und tatsächlich ein Programm schreiben, um mit Q# den im Mathematik-Abschnitt erklärten "Bell-Zustand" (Bell [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) zu erstellen und ihn dann zu messen. Dies ist ein sehr wichtiger Schritt, der als das "Hello World" der Quantenprogrammierung bezeichnet werden kann.
 
 ### Design und Erklärung der Quantenschaltung
 Die standardmäßigen Verfahren für Quantenschaltungen zur Erzeugung des Bell-Zustands $\frac{1}{\sqrt{2}}(|00\rangle + |11\rangle)$ sind wie folgt:
@@ -236,7 +236,7 @@ namespace Quantum.BellState {
 ```
 
 ### Codeerklärung und Funktionsprüfung
-- `namespace`: Wie in Java oder C# handelt es sich hierbei um eine Namespace-Deklaration, um das Programm logisch zu strukturieren und Namenskonflikte zu vermeiden.
+- `namespace`: Wie in Java oder C# handelt es sich hierbei um eine [Namespace](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-Deklaration, um das Programm logisch zu strukturieren und Namenskonflikte zu vermeiden.
 - `open`: Importiert die benötigten Bibliotheken (Module). `Microsoft.Quantum.Intrinsic` enthält grundlegende Quantengatter wie H, X, Y, Z und CNOT, und `Microsoft.Quantum.Measurement` enthält praktische messbezogene Funktionen wie `MResetZ`.
 - `use (q1, q2) = (Qubit(), Qubit());`: Weist dynamisch 2 Qubits zu.
 - `H(q1); CNOT(q1, q2);`: Diese zwei Zeilen sind der Kernbestandteil, der genau die Quantenverschränkung erzeugt. Sie sind sehr einfach und intuitiv geschrieben.
@@ -351,7 +351,7 @@ Mit dieser Funktion wird die Implementierung fortschrittlicher Algorithmen, die 
 ### 8.2 Ressourcenschätzung (Resource Estimation) und die Vorbereitung auf die Zukunft
 Aktuelle Quantencomputer befinden sich in einer Entwicklungsphase, die "NISQ (Noisy Intermediate-Scale Quantum)" genannt wird, bei der die Anzahl der verfügbaren Qubits mit wenigen Dutzend bis Hunderten gering und die Fehlerrate hoch ist. Wenn wir jedoch auf die Ära der zukünftigen fehlertoleranten Quantencomputer (FTQC: Fault-Tolerant Quantum Computer) blicken, wird es enorm wichtig, genau im Voraus abzuschätzen: "Wie viele logische Qubits werden benötigt, um einen neuen Algorithmus auszuführen?", "Wie oft werden T-Gatter und Toffoli-Gatter verwendet, deren Fehlerkorrekturkosten sehr hoch sind?" und "Wie lang wird die Ausführungszeit sein?".
 
-Das QDK enthält einen "Resource Estimator" als eines der Ausführungsziele. Mit diesem können die logischen Pfade des Codes analysiert und die Ressourcenanforderungen für große Algorithmen sofort berechnet und ausgegeben werden, ohne dass der Code auf einer echten Maschine oder einem schwerfälligen Full-State-Simulator ausgeführt werden muss. Dadurch wird es für Algorithmenentwickler und Forscher möglich, schnell Iterationen für die Optimierung nicht nur der theoretischen Komplexität, sondern auf der Ebene der konkreten Gatteranzahl durchzuführen, selbst bei zukünftigen Algorithmen, die Tausende oder Zehntausende von Qubits erfordern.
+Das QDK enthält einen "Resource Estimator" als eines der Ausführungsziele. Mit diesem können die logischen Pfade des Codes analysiert und die Ressourcenanforderungen für große Algorithmen sofort berechnet und ausgegeben werden, ohne dass der Code auf einer echten Maschine oder einem schwerfälligen Full-[State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)-Simulator ausgeführt werden muss. Dadurch wird es für Algorithmenentwickler und Forscher möglich, schnell Iterationen für die Optimierung nicht nur der theoretischen Komplexität, sondern auf der Ebene der konkreten Gatteranzahl durchzuführen, selbst bei zukünftigen Algorithmen, die Tausende oder Zehntausende von Qubits erfordern.
 
 ## 9. Schlusswort: Erwartungen an die nächste Generation von Software-Ingenieuren
 

@@ -21,7 +21,7 @@ tags: ["Privacy", "Big Data", "Differential Privacy", "Federated Learning"]
 
 ### 集中式資料湖與匿名化管線
 
-資料湖是一種將原始數據以其原始格式大量儲存的儲存庫。然而，將包含個人識別資訊（PII: Personally Identifiable Information）的原始數據直接用於分析，會導致嚴重的違規行為。因此，在資料湖與分析環境之間，會實作嚴格的「匿名化管線（Anonymization Pipeline）」。
+資料湖是一種將原始數據以其原始格式大量儲存的儲存庫。然而，將包含個人識別資訊（PII: Personally Identifiable Information）的原始數據直接用於分析，會導致嚴重的違規行為。因此，在資料湖與分析環境之間，會實作嚴格的「匿名化管線（Anonymization [Pipeline](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)）」。
 
 下圖展示了一般集中式資料湖中的匿名化管線流程。
 

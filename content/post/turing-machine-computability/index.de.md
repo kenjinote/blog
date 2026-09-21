@@ -32,7 +32,7 @@ Eine Turingmaschine besteht aus den folgenden Elementen:
 
 1. **Unendlich langes Band** : Es ist in Zellen unterteilt, in die jeweils Symbole (z.B. `0`, `1`, Leerzeichen usw.) geschrieben werden. Dies entspricht dem Speicher in modernen Computern.
 2. **Kopf** : Ein Gerät, das bestimmte Zellen auf dem Band lesen und schreiben und sich nach links und rechts bewegen kann.
-3. **Zustandsregister** : Speichert den **Zustand** (State), in dem sich die Maschine derzeit befindet.
+3. **Zustandsregister** : Speichert den **Zustand** ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)), in dem sich die Maschine derzeit befindet.
 4. **Zustandsübergangsfunktion** : Eine Regel (Programm), die auf der Grundlage des aktuellen „Zustands“ und des vom Kopf gelesenen „Symbols“ das nächste zu schreibende Symbol, die Bewegungsrichtung des Kopfes (rechts oder links) und den nächsten Zustand bestimmt.
 
 Das Folgende ist ein Mermaid-Diagramm, das das Betriebskonzept einer Turingmaschine zeigt.

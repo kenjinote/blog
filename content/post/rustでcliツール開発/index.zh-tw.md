@@ -408,7 +408,7 @@ strip = true        # 移除符號資訊，大幅縮減執行檔容量
 
 ---
 
-## 12. CI/CD 與發佈 (Publishing)
+## 12. [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 與發佈 (Publishing)
 
 這是將製作好的工具發佈到全世界的步驟。
 
@@ -421,8 +421,8 @@ cargo publish
 ```
 發佈後，全世界的使用者都能透過 `cargo install gh-stats-fetcher` 一行指令，輕鬆安裝你的工具。
 
-### 透過 GitHub Actions 自動釋出
-建構一個 CI/CD 流程，將交叉編譯的執行檔自動上傳到 GitHub Releases。在 `.github/workflows/release.yml` 寫入以下設定。這樣一來，只要推播 (Push) Tag，就會自動建置 Linux、macOS、Windows 用的執行檔，並作為 Release 附件上傳（由於篇幅限制，這裡省略詳細的 YAML 撰寫方式，不過目前最佳實踐是利用 `taiki-e/upload-rust-binary-action` 等 Action）。
+### 透過 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 自動釋出
+建構一個 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 流程，將交叉編譯的執行檔自動上傳到 GitHub Releases。在 `.github/workflows/release.yml` 寫入以下設定。這樣一來，只要推播 (Push) Tag，就會自動建置 Linux、macOS、Windows 用的執行檔，並作為 Release 附件上傳（由於篇幅限制，這裡省略詳細的 YAML 撰寫方式，不過目前最佳實踐是利用 `taiki-e/upload-rust-binary-action` 等 Action）。
 
 ---
 

@@ -13,9 +13,9 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 在軟體開發的現場，因為開發者之間環境不同而導致的「在我的環境裡明明就能跑（It works on my machine）」這個問題，長久以來一直是讓許多專案浪費時間的要因。作業系統的差異、已安裝語言的版本、函式庫的相依性、全域安裝工具的衝突等，本地環境總是暴露在「狀態不確定性」之中。
 
-能從根本解決這些課題的，就是以 **Docker** 為首的容器技術，以及 **Infrastructure as Code (IaC)** 的典範。透過將本地開發環境容器化，可實現在作業系統層級的隔離，並使環境本身能與程式碼庫一起進行版本控制。
+能從根本解決這些課題的，就是以 **[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/)** 為首的容器技術，以及 **[Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/))** 的典範。透過將本地開發環境容器化，可實現在作業系統層級的隔離，並使環境本身能與程式碼庫一起進行版本控制。
 
-本文將運用 Docker、Docker Compose 以及 VSCode DevContainers，為您徹底解說建構 **「無論是誰、在何時、用哪台機器啟動，都能獲得分毫不差的相同狀態之可重現本地開發環境」** 的步驟，以及其背後深層的技術機制，並會適時穿插數理角度的探討。
+本文將運用 Docker、Docker Compose 以及 VSCode Dev[Container](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)s，為您徹底解說建構 **「無論是誰、在何時、用哪台機器啟動，都能獲得分毫不差的相同狀態之可重現本地開發環境」** 的步驟，以及其背後深層的技術機制，並會適時穿插數理角度的探討。
 
 ---
 
@@ -35,9 +35,9 @@ Infrastructure as Code (IaC) 是一種透過機器可讀的定義檔，而非手
 
 容器技術與虛擬機器（VM）等 Hypervisor 類型的虛擬化不同，它是一種共享主機作業系統核心（Kernel）同時將行程隔離（Isolation）的輕量級虛擬化技術。為了實現這一點，主要利用了 Linux 核心的以下功能：
 
-- **Namespaces（命名空間）** ：為每個行程提供系統資源（PID、網路、掛載點、使用者等）的獨立視圖。
+- **[Namespace](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/)s（命名空間）** ：為每個行程提供系統資源（PID、網路、掛載點、使用者等）的獨立視圖。
 - **Cgroups (Control Groups, 控制群組)** ：對行程可使用的實體資源（CPU、記憶體、磁碟 I/O 等）進行限制與分配。
-- **UnionFS (Union File System, 聯合檔案系統)** ：將多個目錄樹（層）透明地疊加起來，呈現為單一檔案系統的技術。Docker 的映像檔分層便是依賴此技術。
+- **UnionFS (Union File System, 聯合檔案系統)** ：將多個目錄樹（層）透明地疊加起來，呈現為單一檔案系統的技術。[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/) 的映像檔分層便是依賴此技術。
 
 讓我們來思考資源限制的數學模型。假設主機的總記憶體容量為 $M_{\text{total}}$，並假設在主機上執行的 $n$ 個容器的記憶體限制為 $m_i$。考量主機作業系統及其他行程所消耗的基礎記憶體 $M_{\text{os}}$，系統穩定運作的必要條件可以用以下不等式表示：
 
@@ -49,11 +49,11 @@ $$ \sum_{i=1}^{n} m_i \le M_{\text{total}} - M_{\text{os}} $$
 
 ## 3. 高效的 Dockerfile 設計：將多階段建置發揮到極致
 
-打造可重現環境的第一步，是設計用來定義應用程式執行環境的 `Dockerfile`。在此將以 Python（FastAPI）為例，解說活用 **多階段建置（Multi-stage Build）** 的安全且輕量的 Dockerfile 最佳實踐。
+打造可重現環境的第一步，是設計用來定義應用程式執行環境的 `Dockerfile`。在此將以 Python（FastAPI）為例，解說活用 **多階段建置（Multi-stage Build）** 的安全且輕量的 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/)file 最佳實踐。
 
 多階段建置是在單一 `Dockerfile` 中使用多個 `FROM` 指令，將建置環境（包含編譯器與開發工具的龐大環境）與執行環境（僅包含必要產物的輕量環境）分離的手法。
 
-### 實戰 Python FastAPI 用 Dockerfile
+### 實戰 Python FastAPI 用 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/)file
 
 以下程式碼是結合了使用 Poetry 進行相依性管理與多階段建置的進階 `Dockerfile` 範例：
 
@@ -127,7 +127,7 @@ $$ R = \left( 1 - \frac{195}{385} \right) \times 100 \approx 49.35\% $$
 
 ---
 
-## 4. 使用 Docker Compose 進行多容器的編排 (Orchestration)
+## 4. 使用 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) Compose 進行多容器的編排 (Orchestration)
 
 在現代的 Web 應用程式開發中，Web 伺服器、資料庫、快取伺服器等多個元件協同運作的微服務架構已經非常普遍。為了在本地環境集中管理這些元件，我們使用 `docker-compose.yml`。
 
@@ -227,11 +227,11 @@ networks:
 容器原則上是「無狀態（Stateless）」且「短暫（Ephemeral）」的存在。一旦銷毀容器，內部的資料也會隨之消失。為了保留資料庫的資料或快取，必須將主機機器的檔案系統區域掛載到容器中。
 
 - **綁定掛載 (Bind Mount)** ：上述 `web` 服務中的 `./src:/app/src:ro` 即屬此類。將主機的特定目錄直接對映到容器內。用於讓本地程式碼的編輯能立即反映在容器中（熱重載）。從安全的觀點來看，附加 `:ro` (Read-Only, 唯讀) 選項，以防止容器端修改主機的原始碼是最佳實踐。
-- **具名 Volume (Named Volume)** ：如 `postgres_data` 與 `redis_data` 屬此類。這是 Docker 內部（例如 `/var/lib/docker/volumes/`）管理的區域，擁有比綁定掛載更優秀的 I/O 效能，並能吸收作業系統之間檔案系統的差異。對於資料庫的持久化，務必使用此方式。
+- **具名 Volume (Named Volume)** ：如 `postgres_data` 與 `redis_data` 屬此類。這是 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 內部（例如 `/var/lib/docker/volumes/`）管理的區域，擁有比綁定掛載更優秀的 I/O 效能，並能吸收作業系統之間檔案系統的差異。對於資料庫的持久化，務必使用此方式。
 
-### 網路 (Networking) 與服務探索 (Service Discovery)
+### 網路 (Networking) 與服務探索 ([Service](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/) Discovery)
 
-Docker Compose 預設會為每個專案建立專屬的橋接網路。即是上述的 `app-network`。
+[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) Compose 預設會為每個專案建立專屬的橋接網路。即是上述的 `app-network`。
 屬於同一個網路的容器之間，可以使用「服務名稱（例：`db`, `redis`）」作為主機名稱來進行名稱解析（DNS 解析），而不是使用 IP 位址。
 例如，從 Web 容器能以 `postgresql://postgres:password@db:5432/mydb` 這個 URL 存取資料庫。藉由這種方式，無論是在本地環境還是正式環境，都能透過環境變數透明地切換連線目標。
 
@@ -255,13 +255,13 @@ POSTGRES_DB=devdb
 API_SECRET_KEY=dev_secret_key_12345
 ```
 
-Docker Compose 預設會讀取執行目錄下的 `.env` 檔案，並將 YAML 檔案中的 `${VAR_NAME}` 佔位符展開。透過這個方法，我們就能針對本地、測試（Staging）及正式等不同環境，安全地管理不同的設定值，而無須修改基礎設施的程式碼。
+[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) Compose 預設會讀取執行目錄下的 `.env` 檔案，並將 YAML 檔案中的 `${VAR_NAME}` 佔位符展開。透過這個方法，我們就能針對本地、測試（Staging）及正式等不同環境，安全地管理不同的設定值，而無須修改基礎設施的程式碼。
 
 ---
 
-## 6. VSCode DevContainers 帶來的終極開發體驗
+## 6. VSCode Dev[Container](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)s 帶來的終極開發體驗
 
-到目前為止，我們已經建構了使用 Docker 的穩健後端環境。然而，我們還能更進一步。使用 **VSCode DevContainers (Remote - Containers)** 功能，便能將編輯器（VSCode）本身的後端執行於容器內部。
+到目前為止，我們已經建構了使用 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 的穩健後端環境。然而，我們還能更進一步。使用 **VSCode DevContainers (Remote - Containers)** 功能，便能將編輯器（VSCode）本身的後端執行於容器內部。
 
 這樣一來，本地機器連 Python 或 Node.js 都不需要安裝，從 Linter（flake8/eslint）與格式化工具（black/prettier），到 IDE 的擴充功能，全都可以定義在程式碼庫中讓團隊所有人共享。
 
@@ -297,7 +297,7 @@ Docker Compose 預設會讀取執行目錄下的 `.env` 檔案，並將 YAML 檔
 }
 ```
 
-只要將這個檔案包含在儲存庫中，在用 VSCode 開啟專案的瞬間就會顯示「Reopen in Container」的提示，只需點擊它，所有需要的容器就會啟動、擴充功能也會安裝完畢，立刻進入可以開始撰寫程式碼的狀態。這簡直是如魔法般的體驗。
+只要將這個檔案包含在儲存庫中，在用 VSCode 開啟專案的瞬間就會顯示「Reopen in [Container](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)」的提示，只需點擊它，所有需要的容器就會啟動、擴充功能也會安裝完畢，立刻進入可以開始撰寫程式碼的狀態。這簡直是如魔法般的體驗。
 
 ---
 
@@ -356,7 +356,7 @@ sequenceDiagram
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-在本地開發環境（Docker 內），$T_{\text{net}}$ 幾乎接近 0，但值得注意的是 **綁定掛載時的 I/O 效能** 。尤其是在 Windows/macOS 上使用 Docker Desktop 的情況下，因為主機作業系統與 VM（容器）之間的檔案共享額外開銷 (Overhead)，$T_{\text{app}}$（程式碼讀取時間等）往往會有變得龐大的趨勢。為了解決這個效能瓶頸，強烈建議利用前述的 DevContainers 將整個原始碼配置到具名 Volume 中，或是採用在 WSL2（Windows Subsystem for Linux 2）環境中原生執行 Docker 引擎的架構。
+在本地開發環境（[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 內），$T_{\text{net}}$ 幾乎接近 0，但值得注意的是 **綁定掛載時的 I/O 效能** 。尤其是在 Windows/macOS 上使用 Docker Desktop 的情況下，因為主機作業系統與 VM（容器）之間的檔案共享額外開銷 (Overhead)，$T_{\text{app}}$（程式碼讀取時間等）往往會有變得龐大的趨勢。為了解決這個效能瓶頸，強烈建議利用前述的 Dev[Container](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)s 將整個原始碼配置到具名 Volume 中，或是採用在 WSL2（Windows Subsystem for Linux 2）環境中原生執行 Docker 引擎的架構。
 
 ---
 
@@ -399,21 +399,21 @@ COPY ./src /app/src
    如果出現類似 `Bind for 0.0.0.0:8000 failed: port is already allocated` 的錯誤，表示本地機器上有其他行程正在使用該連接埠。可以透過將主機端的連接埠號碼修改為類似 `ports: - "8080:8000"` 來避免此問題。
 
 2. **磁碟空間耗盡**
-   若長時間使用 Docker，未使用的映像檔或 Volume（Dangling Images / Volumes）會不斷累積，甚至可能佔用數十 GB 的磁碟空間。建議定期使用以下指令清理系統：
+   若長時間使用 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/)，未使用的映像檔或 Volume（Dangling Images / Volumes）會不斷累積，甚至可能佔用數十 GB 的磁碟空間。建議定期使用以下指令清理系統：
    ```bash
    docker system prune -a --volumes
    ```
 
 3. **檔案權限問題**
-   在 Linux 環境使用綁定掛載時，容器內建立的檔案擁有者會變成 `root`，有時會導致主機端無法編輯。這可以透過在 Dockerfile 中建立非特權使用者，並使其與主機作業系統自身的 UID/GID（例：1000:1000）一致來解決。
+   在 Linux 環境使用綁定掛載時，容器內建立的檔案擁有者會變成 `root`，有時會導致主機端無法編輯。這可以透過在 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/)file 中建立非特權使用者，並使其與主機作業系統自身的 UID/GID（例：1000:1000）一致來解決。
 
 ---
 
 ## 10. 結語：可重現性所帶來的開發速度提升
 
-透過結合 Docker、Docker Compose 以及 VSCode DevContainers，便能實現「無論是誰啟動環境，都會是完全相同狀態」的穩健本地開發環境。
+透過結合 Docker、Docker Compose 以及 VSCode Dev[Container](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)s，便能實現「無論是誰啟動環境，都會是完全相同狀態」的穩健本地開發環境。
 
-將 IaC 的典範引進本地環境，不僅僅是縮短了最初的環境設置時間而已。它消除了對更改基礎設施設定的擔憂，讓測試新技術堆疊變得更加容易，並能順利過渡到 CI/CD 管道等，讓整個開發週期的速度與品質都獲得飛躍性的提升。
+將 [IaC](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) 的典範引進本地環境，不僅僅是縮短了最初的環境設置時間而已。它消除了對更改基礎設施設定的擔憂，讓測試新技術堆疊變得更加容易，並能順利過渡到 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管道等，讓整個開發週期的速度與品質都獲得飛躍性的提升。
 
 敬請活用本文所解說的最佳實踐，如透過多階段建置將映像檔大小最佳化、使用健康檢查控制相依性，以及意識到分層快取來撰寫 Dockerfile 等，為您自己的專案也引進最棒的開發者體驗（DX: Developer Experience）吧。
 

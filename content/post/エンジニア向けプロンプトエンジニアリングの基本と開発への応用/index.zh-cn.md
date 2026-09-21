@@ -71,7 +71,7 @@ $$ p_i = \frac{\exp(z_i / T)}{\sum_j \exp(z_j / T)} $$
 
 ### 2.1 系统提示词：全局约束与人设定义
 
-系统提示词负责为LLM定义 **全局的约束、人设（角色）以及基本的行为规则** 。如果将其比作软件设计，它就相当于应用程序的“环境变量”、“基类”，或者是容器中的“Dockerfile”。
+系统提示词负责为LLM定义 **全局的约束、人设（角色）以及基本的行为规则** 。如果将其比作软件设计，它就相当于应用程序的“环境变量”、“基类”，或者是容器中的“[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)file”。
 
 优秀的系统提示词能够显著稳定输出的质量和格式。
 
@@ -193,7 +193,7 @@ graph TD
 
 ---
 
-## 4. 智能体工作流（Agentic Workflow）与 ReAct（Reasoning and Acting）
+## 4. 智能体工作流（Agentic [Workflow](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)）与 ReAct（Reasoning and Acting）
 
 LLM的应用已经从单一的文本输入输出，迅速演变为能够自主规划并与外部环境交互以完成任务的 **AI智能体（AI Agents） ** 领域。而构成这一智能体架构核心的范式便是 **ReAct (Reasoning and Acting，推理与行动)** 。
 
@@ -220,7 +220,7 @@ graph LR
 工程师向LLM传递系统提示词的同时，也传递“可用工具群的定义（JSON结构）”。LLM解析提示词的上下文，若判断需要使用工具，就不会输出普通文本，而是输出“应该调用的函数名称”及“其对应的JSON参数”。应用程序侧执行该函数，将结果再次返回给LLM，从而形成一个循环。
 
 **开发应用示例（自主调试智能体）：**
-例如构建一个在CI/CD流水线中测试失败时，能够自动调查原因并生成补丁的智能体，我们可以为LLM提供如下工具：
+例如构建一个在[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线中测试失败时，能够自动调查原因并生成补丁的智能体，我们可以为LLM提供如下工具：
 
 1. `search_codebase(regex_pattern)`：使用正则表达式搜索仓库中的代码。
 2. `view_file_content(file_path, start_line, end_line)`：读取指定文件的内容。
@@ -368,7 +368,7 @@ def is_valid_ipv4(ip_str):
 2. **执行** ：使用待评估的提示词与模型，针对测试集生成输出结果。
 3. **评估** ：准备用于评估的提示词（元提示词，Meta-prompt），指示裁判模型（Judge LLM）：“生成的输出是否满足需求，请以1~5分进行评分”。
 
-借此，我们可以在CI/CD流水线上自动检测出修改提示词时造成的回归（性能退化）。提示词工程正从手工艺般的“调试提示词”进化为数据驱动且具备可复现性的真正“工程学（Engineering）”。
+借此，我们可以在[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)流水线上自动检测出修改提示词时造成的回归（性能退化）。提示词工程正从手工艺般的“调试提示词”进化为数据驱动且具备可复现性的真正“工程学（Engineering）”。
 
 ---
 

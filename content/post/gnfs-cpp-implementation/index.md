@@ -23,7 +23,7 @@ description: 'RSA暗号の解読に使われる素因数分解アルゴリズム
 
 ## 1. GNFS 最先端ロジック・フレームワーク（全ソースコード）
 
-まずは、今回解説するGNFSのC++実装の全貌を掲載します。実際の数体篩法（CADO-NFSなど）は数十万行に及ぶ超巨大な[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)ですが、本コードはGNFSを構成する **「5つの必須パイプライン（フェーズ）」** を抽出してクラス設計し、数学的な意味を失わずに最小構成でモデル化したものです。
+まずは、今回解説するGNFSのC++実装の全貌を掲載します。実際の数体篩法（CADO-NFSなど）は数十万行に及ぶ超巨大な[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)ですが、本コードはGNFSを構成する **「5つの必須[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)（フェーズ）」** を抽出してクラス設計し、数学的な意味を失わずに最小構成でモデル化したものです。
 
 ```cpp
 #include <iostream>

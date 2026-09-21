@@ -73,7 +73,7 @@ graph LR
 愛因斯坦在狹義相對論中，提出了統合時間與空間的「時空」概念。接著在 **廣義相對論** 中，他得出了一個劃時代的想法：「重力，就是由具有質量的物體所造成的時空扭曲（彎曲）」。
 
 $$
-R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
+R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/) g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
 $$
 
 在上述的愛因斯坦方程式中，左邊代表時空的幾何結構（曲率），右邊代表物質與能量的分布。也就是說， **物質決定了時空如何彎曲，而彎曲的時空決定了物質如何運動** 。

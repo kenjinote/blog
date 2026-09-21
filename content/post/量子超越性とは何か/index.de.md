@@ -146,7 +146,7 @@ In der Quantenfehlerkorrektur gibt es den "Schwellenwertsatz". Wenn die Fehlerra
 Eine Näherungsgleichung für die logische Fehlerrate wird wie folgt dargestellt:
 
 $$
-p_L \approx \Lambda \left( \frac{p}{p_{th}} \right)^{\frac{d+1}{2}}
+p_L \approx \[Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/) \left( \frac{p}{p_{th}} \right)^{\frac{d+1}{2}}
 $$
 
 Hierbei ist $\Lambda$ eine Konstante. Solange $p < p_{th}$ ist, wird $p_L$ umso kleiner, je größer $d$ wird. Wenn jedoch $p > p_{th}$ ist, sammelt sich umso mehr Rauschen an, je mehr physikalische Qubits hinzugefügt werden, und die logische Fehlerrate verschlechtert sich.
@@ -168,7 +168,7 @@ IBM konzentriert sich darauf, die Prozessorgröße zu skalieren und gleichzeitig
 ### Der Ansatz von Google: Qualitätsverbesserung logischer Qubits
 Die Strategie von Google legt weniger Wert auf eine rasante Erhöhung der Anzahl physikalischer Qubits, sondern konzentriert sich darauf, die Fehlerrate eines einzigen logischen Qubits bis zum Äußersten zu minimieren (z. B. auf $10^{-6}$). Darauf aufbauend streben sie die Etablierung von Technologien zum Transfer von Quantenzuständen zwischen Modulen (Quantum Interconnects) an, um ein groß angelegtes System zu schaffen, das Tausende bis Zehntausende physikalische Qubits parallel betreibt.
 
-Die fehlertolerante Implementierung von Protokollen für Nicht-Clifford-Gatter, wie etwa die Destillation magischer Zustände (Magic State Distillation), stellt ebenfalls eine große zukünftige technische Hürde dar. Es wird geschätzt, dass für die Ausführung eines praktischen [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) zum Knacken einer 2048-Bit-RSA-Verschlüsselung Tausende logischer Qubits mit einer Fehlerrate von unter $10^{-8}$ erforderlich sind, was in Millionen bis zig Millionen physikalischer Qubits resultiert. Der Weg dorthin ist noch lang.
+Die fehlertolerante Implementierung von Protokollen für Nicht-Clifford-Gatter, wie etwa die Destillation magischer Zustände (Magic [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Distillation), stellt ebenfalls eine große zukünftige technische Hürde dar. Es wird geschätzt, dass für die Ausführung eines praktischen [Shor-Algorithmus](https://kenji.blog/de/p/quantum-computing-shors-algorithm/) zum Knacken einer 2048-Bit-RSA-Verschlüsselung Tausende logischer Qubits mit einer Fehlerrate von unter $10^{-8}$ erforderlich sind, was in Millionen bis zig Millionen physikalischer Qubits resultiert. Der Weg dorthin ist noch lang.
 
 ---
 

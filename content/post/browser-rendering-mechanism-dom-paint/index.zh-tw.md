@@ -16,7 +16,7 @@ tags:
 
 # 瀏覽器渲染機制：從 DOM 樹到 Paint 的完全解剖
 
-Web 瀏覽器是我們日常使用中最熟悉且最複雜的軟體之一。從輸入 URL 到頁面顯示在畫面上，其內部以毫秒為單位進行著龐大的運算與處理。這整個處理流程被稱為 **渲染管線 (Rendering Pipeline)** 或 **關鍵渲染路徑 (Critical Rendering Path)** 。
+Web 瀏覽器是我們日常使用中最熟悉且最複雜的軟體之一。從輸入 URL 到頁面顯示在畫面上，其內部以毫秒為單位進行著龐大的運算與處理。這整個處理流程被稱為 **渲染管線 (Rendering [Pipeline](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/))** 或 **關鍵渲染路徑 (Critical Rendering Path)** 。
 
 本文將徹底解剖瀏覽器（尤其是 Blink 和 WebKit 等現代渲染引擎）如何解析 HTML、CSS、JavaScript，並最終將其作為顯示器上的像素繪製（Paint）出來的完整機制。
 

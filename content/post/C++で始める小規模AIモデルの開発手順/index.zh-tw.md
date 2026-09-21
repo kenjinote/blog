@@ -31,7 +31,7 @@ description: '本文詳細解說如何使用C++與ggml，在本地環境中針�
 
 ## 2. 架構全貌
 
-推論管線（Pipeline）整體的流程如下方 Mermaid 圖表所示。這是一連串從使用者的輸入文字開始，直到最終生成下一個 Token 的過程。
+推論管線（[Pipeline](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)）整體的流程如下方 Mermaid 圖表所示。這是一連串從使用者的輸入文字開始，直到最終生成下一個 Token 的過程。
 
 ```mermaid
 graph TD

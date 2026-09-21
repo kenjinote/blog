@@ -59,7 +59,7 @@ Baker a accompli l'exploit étonnant de généraliser le résultat prouvé par G
 **Théorème de Baker (1966)** :
 Soient $\alpha_1, \alpha_2, \ldots, \alpha_n$ des nombres algébriques non nuls, et supposons que $\log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ sont linéairement indépendants sur le corps des rationnels $\mathbb{Q}$. Alors, $1, \log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ sont linéairement indépendants sur le corps des nombres algébriques $\overline{\mathbb{Q}}$.
 
-En d'autres termes, pour tous nombres algébriques non nuls $\beta_0, \beta_1, \ldots, \beta_n$, il a prouvé que la forme linéaire suivante $\Lambda$ n'est jamais égale à $0$.
+En d'autres termes, pour tous nombres algébriques non nuls $\beta_0, \beta_1, \ldots, \beta_n$, il a prouvé que la forme linéaire suivante $\[Lambda](https://kenji.blog/fr/p/serverless-architecture-aws-lambda-cold-start/)$ n'est jamais égale à $0$.
 
 $$ \Lambda = \beta_0 + \beta_1 \log \alpha_1 + \cdots + \beta_n \log \alpha_n \neq 0 $$
 

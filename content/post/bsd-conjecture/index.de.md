@@ -34,7 +34,7 @@ $$
 \Delta = -16(4a^3 + 27b^2) \neq 0
 $$
 
-Geometrisch betrachtet hat diese Kurve, wenn man sie über dem Körper der komplexen Zahlen $\mathbb{C}$ betrachtet, die Form eines Torus (Donut-Form). Dies wird durch den Isomorphismus zum komplexen Torus $\mathbb{C}/\Lambda$ ($\Lambda$ ist ein Gitter) unter Verwendung der Weierstraßschen $\wp$-Funktion gezeigt.
+Geometrisch betrachtet hat diese Kurve, wenn man sie über dem Körper der komplexen Zahlen $\mathbb{C}$ betrachtet, die Form eines Torus (Donut-Form). Dies wird durch den Isomorphismus zum komplexen Torus $\mathbb{C}/\[Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)$ ($\Lambda$ ist ein Gitter) unter Verwendung der Weierstraßschen $\wp$-Funktion gezeigt.
 
 ### 2.2. Rationale Punkte und Gruppenstruktur
 
@@ -139,7 +139,7 @@ Dieses Problem wurde durch den **Modularitätssatz** (ehemals Taniyama-Shimura-V
 Modular zu sein bedeutet, dass $L(E, s)$ vollständig mit der L-Funktion $L(f, s)$ einer Modulform $f$ vom Gewicht 2 übereinstimmt. Die L-Funktion der Modulform wird durch die Hecke-Theorie auf die gesamte komplexe Ebene analytisch fortgesetzt und erfüllt die folgende Funktionalgleichung:
 
 $$
-\Lambda(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
+\[Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)(E, s) = (2\pi)^{-s} N^{s/2} \Gamma(s) L(E, s)
 $$
 $$
 \Lambda(E, 2-s) = w \Lambda(E, s)

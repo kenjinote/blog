@@ -184,13 +184,13 @@ namespace WindowsAI.Sample
 ### 5.1 C#実装におけるアーキテクチャの解説
 このコードの核心は、`LanguageModel.CheckAvailabilityAsync()` による実行前検証と、`GenerateResponseStreamAsync` による非同期ストリーミングです。OSのバックグラウンドで動作するCopilot Runtimeは、このAPI呼び出しを受け取ると、内部的にONNX Runtimeを起動し、システムの構成に応じて最適なExecution Provider（多くの最新PCではDirectML + NPU）を選択します。
 
-開発者は、モデルのテンソル形状、トークナイザーの実装、KVキャッシュの[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)などを一切意識することなく、数行のC#コードで最先端のAI推論パイプラインをアプリケーションに統合できます。
+開発者は、モデルのテンソル形状、トークナイザーの実装、KVキャッシュの[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)などを一切意識することなく、数行のC#コードで最先端のAI推論[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)をアプリケーションに統合できます。
 
 ## 6. 【Deep Dive 2】C++とDirectMLによるカスタムモデルの高速推論
 
 OS標準の言語モデルだけではカバーできない特定のドメイン（独自の画像セグメンテーション、音声認識、カスタムの物体検出モデルなど）を扱う場合、開発者は `Microsoft.Windows.AI` の低レイヤーに位置するONNX RuntimeとDirectMLを直接操作する必要があります。
 
-C++を用いることで、メモリの割り当てを極限まで最適化し、NPU/GPUのピークパフォーマンスを引き出すことができます。以下は、ONNX形式のカスタムモデル（例：YOLOv8）をDirectMLを用いてC++で実行するための、高度な初期化および推論パイプラインのコア実装です。
+C++を用いることで、メモリの割り当てを極限まで最適化し、NPU/GPUのピークパフォーマンスを引き出すことができます。以下は、ONNX形式のカスタムモデル（例：YOLOv8）をDirectMLを用いてC++で実行するための、高度な初期化および推論[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)のコア実装です。
 
 ```cpp
 #include <iostream>
@@ -345,7 +345,7 @@ sequenceDiagram
 
 - **マルチモーダルAPIのOSネイティブ統合**: テキストだけでなく、音声、画像、さらにはライブビデオフィードをシームレスに同時処理し、クロスモーダルなAI推論をOSレベルで標準提供。
 - **RAG（Retrieval-Augmented Generation）のシステムレベル対応**: ローカルPC内のパーソナルなドキュメント群やWindows SearchのインデックスとAIモデルをOSの安全なサンドボックス内で連携させ、ユーザーのプライバシーを完全に保護した状態での超高度なパーソナルAIアシスタントの構築。
-- **NPUの動的リソーススケーリング**: 複数のAIアプリケーション（例えば、バックグラウンドでのノイズキャンセリングと、フォアグラウンドでのコード生成）が同時に稼働する際、WindowsのカーネルスケジューラがNPUの実行コンテキストを動的に切り替え、QoS（Quality of Service）を保証する仕組み。
+- **NPUの動的リソーススケーリング**: 複数のAIアプリケーション（例えば、バックグラウンドでのノイズキャンセリングと、フォアグラウンドでのコード生成）が同時に稼働する際、WindowsのカーネルスケジューラがNPUの実行コンテキストを動的に切り替え、QoS（Quality of [Service](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)）を保証する仕組み。
 
 ## 9. 結論：ローカルAIが変えるアプリケーションの未来
 

@@ -159,7 +159,7 @@ Lorsque vous modifiez le registre à l'aide d'un script PowerShell ou d'une appl
 
 ## 8. Édition programmable et sécurisée avec PowerShell
 
-Pour minimiser les risques liés à la modification manuelle du registre, la meilleure pratique moderne consiste à coder les opérations (Infrastructure as Code) à l'aide de scripts PowerShell, garantissant ainsi l'automatisation, la reproductibilité et la testabilité. PowerShell dispose d'un « Fournisseur de Registre » (Registry Provider), vous permettant de manipuler le registre de manière transparente avec les mêmes applets de commande (`Get-ChildItem`, `Get-ItemProperty`, `New-Item`, etc.) que celles utilisées pour manipuler le système de fichiers (comme le lecteur C:).
+Pour minimiser les risques liés à la modification manuelle du registre, la meilleure pratique moderne consiste à coder les opérations ([Infrastructure as Code](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/)) à l'aide de scripts PowerShell, garantissant ainsi l'automatisation, la reproductibilité et la testabilité. PowerShell dispose d'un « Fournisseur de Registre » (Registry Provider), vous permettant de manipuler le registre de manière transparente avec les mêmes applets de commande (`Get-ChildItem`, `Get-ItemProperty`, `New-Item`, etc.) que celles utilisées pour manipuler le système de fichiers (comme le lecteur C:).
 
 Dans PowerShell, par défaut, des PSDrives dédiés (similaires à des lettres de lecteur) tels que `HKLM:` et `HKCU:` sont montés.
 
@@ -398,7 +398,7 @@ Enfin, voici un résumé des principes de conception et des bonnes pratiques imp
 
 ## Résumé
 
-Le Registre Windows est un système fondamental puissant et complexe qui gère de manière intégrée tous les comportements du système d'exploitation et les paramètres des applications. Les modifications manuelles non structurées comportent un risque très élevé de corruption du système, prouvé mathématiquement. C'est pourquoi, dans la gestion système et le développement modernes, il est essentiel de configurer et de gérer l'infrastructure de manière sûre, testable et reproductible à l'aide de méthodes programmables telles que PowerShell et C#, en adhérant aux principes de l'Infrastructure as Code. Utilisez la compréhension approfondie de l'architecture et les modèles d'implémentation expliqués dans cet article pour vous orienter vers la construction d'environnements Windows plus robustes et sécurisés.
+Le Registre Windows est un système fondamental puissant et complexe qui gère de manière intégrée tous les comportements du système d'exploitation et les paramètres des applications. Les modifications manuelles non structurées comportent un risque très élevé de corruption du système, prouvé mathématiquement. C'est pourquoi, dans la gestion système et le développement modernes, il est essentiel de configurer et de gérer l'infrastructure de manière sûre, testable et reproductible à l'aide de méthodes programmables telles que PowerShell et C#, en adhérant aux principes de l'[Infrastructure as Code](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/). Utilisez la compréhension approfondie de l'architecture et les modèles d'implémentation expliqués dans cet article pour vous orienter vers la construction d'environnements Windows plus robustes et sécurisés.
 
 
 

@@ -12,7 +12,7 @@ description: '這是一份能大幅提升 Windows 上開發體驗的 WSL2 完整
 
 在 Windows 上提供原生 Linux 開發環境的「WSL2（Windows Subsystem for Linux 2）」已成為現代軟體開發中不可或缺的工具。然而，維持預設狀態使用，與了解架構並進行適當的調校相比，兩者在效能和開發體驗上會有天壤之別。
 
-本文將從 WSL2 核心的架構解說開始，徹底解說能將效能發揮到極致的設定、建構舒適的終端機環境、與 Docker 和 VS Code 的無縫整合，以及進階的網路設定。為了建構專業工程師所追求的「終極開發環境」，我們將以超過一萬字以上的篇幅為您詳細說明所有的步驟。
+本文將從 WSL2 核心的架構解說開始，徹底解說能將效能發揮到極致的設定、建構舒適的終端機環境、與 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 和 VS Code 的無縫整合，以及進階的網路設定。為了建構專業工程師所追求的「終極開發環境」，我們將以超過一萬字以上的篇幅為您詳細說明所有的步驟。
 
 ---
 
@@ -256,7 +256,7 @@ Windows 側的 VS Code 僅作為一個單純的「精簡型用戶端（UI）」�
 從 VS Code 的「擴充功能」中安裝 **"WSL" (ms-vscode-remote.remote-wsl)** 。之後，只要在 WSL 的終端機切換至專案目錄，並執行 `code .`，就能在開啟該目錄的狀態下啟動 Windows 側的 VS Code。
 
 **重要的注意事項（換行字元問題）：**
-Windows 與 Linux 的換行字元不同（Windows 是 `CRLF`，Linux 是 `LF`）。在 WSL 上進行開發時，請務必將 Git 的 `core.autocrlf` 設定，以及 VS Code 的檔案預設設定統一為 `LF`。如果忽略這一點，在執行 Shell Script 或 Docker 容器時將會遇到莫名其妙的錯誤。
+Windows 與 Linux 的換行字元不同（Windows 是 `CRLF`，Linux 是 `LF`）。在 WSL 上進行開發時，請務必將 Git 的 `core.autocrlf` 設定，以及 VS Code 的檔案預設設定統一為 `LF`。如果忽略這一點，在執行 Shell Script 或 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 容器時將會遇到莫名其妙的錯誤。
 
 ```bash
 # 在 WSL 側設定 Git 的換行字元
@@ -274,7 +274,7 @@ git config --global core.autocrlf input
 
 ---
 
-## 7. Docker Desktop 與 WSL2 Integration 的最佳化
+## 7. [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop 與 WSL2 Integration 的最佳化
 
 在 WSL2 環境中使用 Docker，主要有兩種方法。
 
@@ -287,10 +287,10 @@ git config --global core.autocrlf input
 - 勾選 `General` -> `Use the WSL 2 based engine`。
 - 勾選 `Resources` -> `WSL Integration` -> `Enable integration with my default WSL distro`，並將要使用的發行版（Ubuntu）的開關切換為開啟。
 
-如此一來，就能從 WSL2 的終端機直接執行 `docker` 指令，並透過由 Docker Desktop 管理的專屬輕量級 VM（`docker-desktop` 與 `docker-desktop-data`）來與 Docker 守護行程進行通訊。
+如此一來，就能從 WSL2 的終端機直接執行 `docker` 指令，並透過由 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop 管理的專屬輕量級 VM（`docker-desktop` 與 `docker-desktop-data`）來與 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 守護行程進行通訊。
 
 ### 方法 2：直接匯入原生 Docker Engine
-如果是受到企業網路的限制（為了避免 Docker Desktop 的收費等），或是想要將效能負擔降到極限，可以在 `/etc/wsl.conf` 中啟用 `systemd` 後，將其當作純粹的 Ubuntu 伺服器來安裝 Docker。
+如果是受到企業網路的限制（為了避免 Docker Desktop 的收費等），或是想要將效能負擔降到極限，可以在 `/etc/wsl.conf` 中啟用 `systemd` 後，將其當作純粹的 Ubuntu 伺服器來安裝 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/)。
 
 ```bash
 # 啟用 systemd 的 WSL2 Ubuntu 上的 Docker 官方安裝步驟摘錄
@@ -351,7 +351,7 @@ fi
 
 ## 9. 維護：膨脹的 VHDX 最佳化（壓縮）
 
-WSL2 最大的缺點之一是「即使刪除 Docker 映像檔或檔案，Windows 側虛擬磁碟（.vhdx）的檔案大小也不會自動縮小」的規格。長期開發下來，ext4.vhdx 檔案可能會膨脹到數十 GB 到數百 GB。
+WSL2 最大的缺點之一是「即使刪除 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 映像檔或檔案，Windows 側虛擬磁碟（.vhdx）的檔案大小也不會自動縮小」的規格。長期開發下來，ext4.vhdx 檔案可能會膨脹到數十 GB 到數百 GB。
 
 為了釋放磁碟空間，必須定期從 Windows 側將 VHDX 最佳化（Compact）。
 

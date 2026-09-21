@@ -212,7 +212,7 @@ Wenn wir die Gegenstände so auswählen, dass die Kapazität des Rucksacks nicht
 
 ### 4-2. Zustandsdefinition und Zustandsübergangsgleichung
 
-Der wichtigste Schritt zur Lösung von DP-Problemen ist die korrekte Definition des "Zustands" (State).
+Der wichtigste Schritt zur Lösung von DP-Problemen ist die korrekte Definition des "Zustands" ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)).
 Bei diesem Problem ändern sich zwei Parameter: "Bis zu welchem Gegenstand wir betrachtet haben" und "Die verbleibende Kapazität des Rucksacks". Daher definieren wir den Zustand wie folgt:
 
 **Zustandsdefinition:**
@@ -434,7 +434,7 @@ Bisher haben wir uns verschiedene Probleme angesehen, aber wie sollten Sie vorge
 
 1. **Kann dieses Problem mit DP gelöst werden? (Überprüfung der Bedingungen)**
    Tritt derselbe Zustand mehrfach auf, wenn wir rekursiv denken (Überlappende Teilprobleme)? Können wir durch Kombination der besten Entscheidungen zum Gesamtoplimum gelangen (Optimale Teilstruktur)?
-2. **Den Zustand (State) definieren**
+2. **Den Zustand ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) definieren**
    Identifizieren Sie Variablen, die darstellen: "Wo bin ich jetzt?", "Was ist übrig?", "Was sind die bisherigen Einschränkungen?". Die klare Formulierung der Bedeutung von Indizes ist der beste Schutz gegen Bugs.
 3. **Die Zustandsübergangsgleichung (Transition) überlegen**
    Wie bewege ich mich von einem Zustand zum nächsten? Was sind die Optionen? Nehme ich das Maximum (oder Minimum) davon, oder summiere ich sie? Dies ist das Herzstück des Algorithmus.

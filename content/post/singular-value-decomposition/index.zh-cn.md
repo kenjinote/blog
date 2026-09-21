@@ -28,7 +28,7 @@ $$A = U \Sigma V^T \quad (\text{矩阵的奇异值分解})$$
 
 ## 2. 与特征值分解的区别
 
-对于方阵，特征值分解 $A = P \Lambda P^{-1}$ 广为人知。然而，特征值分解有以下局限性：
+对于方阵，特征值分解 $A = P \[Lambda](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/) P^{-1}$ 广为人知。然而，特征值分解有以下局限性：
 - 只能应用于方阵（$n \times n$）。
 - 即使是方阵，也不总是可对角化的。
 

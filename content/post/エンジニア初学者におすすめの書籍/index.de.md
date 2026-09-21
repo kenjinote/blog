@@ -23,9 +23,9 @@ description: 'Ein Muss für Ingenieure, die vom Anfänger- zum Mittelstufenprogr
 ![img_10.png](img_10.webp)
 7. Umfassendes SQL-Handbuch von Experten
 ![img_9.png](img_9.webp)
-8. Praktischer Docker-Leitfaden
+8. Praktischer [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-Leitfaden
 ![img_8.png](img_8.webp)
-9. Vollständiges Kubernetes-Handbuch
+9. Vollständiges [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)-Handbuch
 ![img_7.png](img_7.webp)
 10. Code Complete 2. Auflage
 ![img_5.png](img_5.webp)

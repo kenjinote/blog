@@ -163,7 +163,7 @@ $V_{kv} = 2 \times 1 \times 8192 \times 32 \times 8 \times 128 \times 2 \div 10^
 # 5. 실전 1: Ollama를 이용한 가장 빠르고 짧은 설정
 
 이론을 이해했으니, 실제로 Windows 환경에서 LLM을 구동해 봅시다.
-2026년 현재 가장 사용자 친화적인 도구가 'Ollama'입니다. Docker와 유사한 직관적인 CLI를 제공합니다.
+2026년 현재 가장 사용자 친화적인 도구가 'Ollama'입니다. [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)와 유사한 직관적인 CLI를 제공합니다.
 
 ## 5.1 설치 및 실행
 

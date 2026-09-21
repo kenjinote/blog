@@ -163,7 +163,7 @@ Perhatikan bahwa semakin panjang panjang konteks $s$, VRAM yang dibutuhkan akan 
 # 5. Praktik 1: Pengaturan Tercepat & Tersingkat Menggunakan Ollama
 
 Setelah memahami teorinya, mari kita coba menjalankan LLM di lingkungan Windows secara nyata.
-Hingga tahun 2026, alat yang paling ramah pengguna adalah "Ollama". Ia menyediakan CLI intuitif yang mirip Docker.
+Hingga tahun 2026, alat yang paling ramah pengguna adalah "Ollama". Ia menyediakan CLI intuitif yang mirip [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ## 5.1 Instalasi dan Eksekusi
 

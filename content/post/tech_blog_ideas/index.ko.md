@@ -11,7 +11,7 @@ tags: ["Idea Generation", "Obsidian", "RSS", "Knowledge Management"]
 
 엔지니어나 리서처로서 기술 블로그를 운영하다 보면 거의 반드시 직면하게 되는 벽이 있습니다. 그것이 바로 '소재 고갈'입니다. 처음 몇 개의 기사는 순조롭게 쓸 수 있더라도, 계속하다 보면 '다음에 무엇을 쓰면 좋을지 모르겠다', '아웃풋을 위한 인풋이 압도적으로 부족하다'라는 고민에 시달리는 일은 드물지 않습니다. 기술 블로그 작성은 단순히 글을 쓰는 기술뿐만 아니라, 매일매일의 지식 수집, 정리, 그리고 그것들을 조합하여 새로운 가치를 창출하는 일련의 시스템 설계에 크게 의존하고 있습니다.
 
-본 기사에서는 기술 기사의 아이디어를 반영구적으로 계속해서 만들어내기 위한, **시스템화된 인풋과 아웃풋의 파이프라인** 에 대해 매우 상세하고 기술적으로 해설합니다. Hacker News나 Lobsters와 같은 해외의 고품질 정보원으로부터 API를 사용하여 자동으로 트렌드 토픽을 추출하고, GitHub Actions로 정기 실행하는 구조부터 시작합니다. 그리고 수집한 정보를 Obsidian을 사용한 제텔카스텐(Zettelkasten) 방식으로 지식으로서 체계화하고, OpenAI의 Embeddings API와 Pinecone(벡터 데이터베이스)을 조합하여 시맨틱 검색을 가능하게 하는 고도화된 개인 지식 관리(PKM: Personal Knowledge Management) 시스템을 구축합니다.
+본 기사에서는 기술 기사의 아이디어를 반영구적으로 계속해서 만들어내기 위한, **시스템화된 인풋과 아웃풋의 파이프라인** 에 대해 매우 상세하고 기술적으로 해설합니다. Hacker News나 Lobsters와 같은 해외의 고품질 정보원으로부터 API를 사용하여 자동으로 트렌드 토픽을 추출하고, [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)로 정기 실행하는 구조부터 시작합니다. 그리고 수집한 정보를 Obsidian을 사용한 제텔카스텐(Zettelkasten) 방식으로 지식으로서 체계화하고, OpenAI의 Embeddings API와 Pinecone(벡터 데이터베이스)을 조합하여 시맨틱 검색을 가능하게 하는 고도화된 개인 지식 관리(PKM: Personal Knowledge Management) 시스템을 구축합니다.
 
 나아가, 인간 기억의 한계를 보완하기 위해 에빙하우스의 망각 곡선에 기반한 간격 반복(Spaced Repetition)을 Anki를 사용하여 실천하고, 정착된 지식을 '조합의 창조성(Combinatorial Creativity)'을 통해 새로운 아이디어로 승화시키는 일련의 과정을 구체적인 수학적 모델 및 Python 스크립트 구현 예시와 함께 깊이 파헤쳐 보겠습니다.
 
@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
 이 스크립트는 단순한 RSS 리더 이상의 가치를 제공합니다. 점수를 통한 필터링을 수행함으로써, 커뮤니티에서 정말로 주목받고 있는 기술적 토픽(노이즈가 적은 높은 시그널)만을 추출할 수 있기 때문입니다.
 
-## 3. GitHub Actions를 활용한 스케줄링 및 자동화
+## 3. [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)를 활용한 스케줄링 및 자동화
 
 작성한 Python 스크립트를 매일 수동으로 실행하는 것은 번거롭습니다. 자동화의 기본은 인간의 개입을 극한까지 줄이는 것입니다. GitHub Actions의 Cron 기능을 사용하여 매일 지정된 시간에 스크립트를 실행하고, 결과를 리포지토리에 자동 커밋하는 구조를 구축합니다.
 
@@ -316,7 +316,7 @@ $$ R = e^{-\frac{t}{S}} $$
 
 1. **[오래된 기술] × [새로운 패러다임]**: 예) 'COBOL의 아키텍처에서 배우는 현대 마이크로서비스 설계의 안티 패턴'
 2. **[프론트엔드] × [백엔드 개념]**: 예) 'React의 가상 DOM 업데이트 알고리즘을 데이터베이스 트랜잭션 격리 수준의 관점에서 해설하기'
-3. **[추상적인 수학/이론] × [구체적 구현]**: 예) '그래프 이론으로 풀어보는 Kubernetes Pod 스케줄링의 최적화'
+3. **[추상적인 수학/이론] × [구체적 구현]**: 예) '그래프 이론으로 풀어보는 [Kubernetes](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/) [Pod](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/) 스케줄링의 최적화'
 
 이러한 조합을 의도적으로 발생시키기 위해, 앞서 구축한 Pinecone의 시맨틱 검색 시스템을 이용하여 무작위로 개념 A와 개념 B를 추출하고, AI(ChatGPT 등)에게 '이 두 가지를 조합한 기술 블로그 제목과 목차 초안을 5개 제안해 줘'라고 프롬프트를 던짐으로써, 혼자서는 떠올리기 힘든 참신한 시각의 기사 아이디어를 무한히 생성할 수 있습니다.
 

@@ -79,7 +79,7 @@ Addresses:  185.199.108.153
 ## Configurar un dominio personalizado en un repositorio de Github
 1. Abre la página del repositorio y haz clic en "Settings" (Configuración).
 2. Haz clic en "Pages".
-3. Si vas a publicar el código fuente del repositorio tal cual, selecciona "Deploy from a branch" en Source. Si vas a compilar el código fuente con HUGO u otro generador, selecciona "GitHub Actions".
+3. Si vas a publicar el código fuente del repositorio tal cual, selecciona "Deploy from a branch" en Source. Si vas a compilar el código fuente con HUGO u otro generador, selecciona "[GitHub Actions](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/)".
 4. En Branch, selecciona la rama que deseas publicar y haz clic en "Save".
 5. En "Custom domain", ingresa el dominio que adquiriste y haz clic en "Save".
 6. Si es necesario, marca la casilla "Enforce HTTPS" para habilitar el soporte HTTPS.

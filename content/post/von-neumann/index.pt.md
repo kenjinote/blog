@@ -125,7 +125,7 @@ Os livros e artigos que von Neumann deixou para trás durante sua vida são dive
 A seguir, uma linha do tempo detalhada resumindo a vida e as principais realizações de John von Neumann.
 
 * **1903**: Nasce em Budapeste, Reino da Hungria.
-* **1911**: Ingressa em um ginásio luterano.
+* **1911**: [Ingress](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/)a em um ginásio luterano.
 * **1921**: Ingressa na Universidade de Budapeste, com especialização em matemática. Estuda simultaneamente química na Universidade de Berlim e no ETH de Zurique.
 * **1926**: Obtém o doutorado em matemática pela Universidade de Budapeste.
 * **1928**: Prova o teorema minimax, lançando as bases da teoria dos jogos.

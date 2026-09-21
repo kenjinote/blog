@@ -36,7 +36,7 @@ The most critical constraint in this calculation is the computational complexity
 
 $$ \text{Complexity} = O(N^2 \cdot d) $$
 
-In recent years, research on hardware-level optimizations like FlashAttention, Sparse Attention, and even alternative architectures capable of linear time $O(N)$ processing such as Mamba (State Space Models) has been advancing. Still, "perfectly comprehending an infinite context and generating globally optimized outputs" remains extremely difficult.
+In recent years, research on hardware-level optimizations like FlashAttention, Sparse Attention, and even alternative architectures capable of linear time $O(N)$ processing such as Mamba ([State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Space Models) has been advancing. Still, "perfectly comprehending an infinite context and generating globally optimized outputs" remains extremely difficult.
 
 Furthermore, even if the context window can be physically expanded, a phenomenon called "Lost in the Middle" occurs. LLMs are highly susceptible to information at the beginning and end of a prompt, and tend to ignore important requirements and constraints placed in the middle. This is why, if you load the entire source code of a tens-of-thousands-of-lines enterprise system into an LLM and instruct it to "perform optimal refactoring", it generates code that is locally correct but globally broken.
 

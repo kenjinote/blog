@@ -318,7 +318,7 @@ Memperbaiki basis kode legacy yang berskala besar secara manual adalah hal yang 
 
 - **Clang-Tidy**: Linter dan alat analisis statis yang kuat untuk C++. Dengan mengaktifkan pemeriksaan berbasis `modernize-*`, ini dapat secara otomatis menerapkan (Fix-it) hal-hal seperti penerapan `auto`, penggantian ke `nullptr`, penambahan `override`, dll.
 - **AddressSanitizer (ASan)**: Dengan memasukkannya sebagai opsi kompilasi (`-fsanitize=address`), ini secara akurat mengidentifikasi kebocoran memori atau buffer overrun selama runtime. Ini harus selalu diaktifkan saat menjalankan pengujian.
-- **Membangun pipeline CI/CD**: Menggunakan GitHub Actions atau GitLab CI untuk menjalankan build, pengujian otomatis, dan analisis statis pada semua pull request (PR) guna mencegah masuknya utang teknis baru.
+- **Membangun pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)**: Menggunakan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) atau GitLab CI untuk menjalankan build, pengujian otomatis, dan analisis statis pada semua pull request (PR) guna mencegah masuknya utang teknis baru.
 
 ---
 

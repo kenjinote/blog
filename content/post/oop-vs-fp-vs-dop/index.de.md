@@ -243,7 +243,7 @@ Auch in der Frontend-Entwicklung (wie React) mit TypeScript ist die Verschmelzun
 
 - Das UI-Rendering von Komponenten ist **funktional** (gibt die UI als reine Funktion zurück).
 - Datenabruf und Cache-Verwaltung sind **datenorientiert** (normalisierter Zustandsbaum mit [Redux](https://kenji.blog/de/p/state-management-history-future/) oder Zustand).
-- Ein Teil der komplexen Domänenlogik ist **objektorientiert** (klassenbasierte Serviceschicht).
+- Ein Teil der komplexen Domänenlogik ist **objektorientiert** (klassenbasierte [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)schicht).
 
 ---
 

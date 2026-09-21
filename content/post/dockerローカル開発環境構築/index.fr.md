@@ -13,9 +13,9 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 Dans le développement logiciel, le problème du « Ça marche sur ma machine » (It works on my machine), dû aux différences d'environnements entre les développeurs, est depuis longtemps un facteur de perte de temps dans de nombreux projets. En raison des différences de systèmes d'exploitation, de versions de langages installées, des dépendances de bibliothèques, ou des conflits d'outils installés globalement, l'environnement local est toujours exposé à une « incertitude d'état ».
 
-Ce qui résout fondamentalement ces défis, c'est la technologie des conteneurs, notamment **Docker**, et le paradigme d'**Infrastructure as Code (IaC)**. Conteneuriser l'environnement de développement local permet une isolation au niveau du système d'exploitation et de versionner l'environnement lui-même avec la base de code.
+Ce qui résout fondamentalement ces défis, c'est la technologie des conteneurs, notamment **[Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/)**, et le paradigme d'**[Infrastructure as Code](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/))**. Conteneuriser l'environnement de développement local permet une isolation au niveau du système d'exploitation et de versionner l'environnement lui-même avec la base de code.
 
-Cet article explique en détail, avec des perspectives mathématiques, la méthode pour construire **« un environnement de développement local reproductible qui reste exactement le même peu importe qui, quand, et sur quelle machine il est lancé »**, en tirant parti de Docker, Docker Compose, et VSCode DevContainers.
+Cet article explique en détail, avec des perspectives mathématiques, la méthode pour construire **« un environnement de développement local reproductible qui reste exactement le même peu importe qui, quand, et sur quelle machine il est lancé »**, en tirant parti de Docker, Docker Compose, et VSCode Dev[Container](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)s.
 
 ---
 
@@ -35,9 +35,9 @@ Pratiquer l'IaC dans un environnement de développement local signifie coder « 
 
 Contrairement à la virtualisation par hyperviseur comme les machines virtuelles (VM), la technologie des conteneurs est une technologie de virtualisation légère qui isole les processus tout en partageant le noyau du système d'exploitation hôte. Pour y parvenir, les fonctionnalités suivantes du noyau Linux sont principalement utilisées :
 
-- **Namespaces** : Fournissent une vue isolée des ressources système (PID, réseau, points de montage, utilisateurs, etc.) pour chaque processus.
+- **[Namespace](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/)s** : Fournissent une vue isolée des ressources système (PID, réseau, points de montage, utilisateurs, etc.) pour chaque processus.
 - **Cgroups (Control Groups)** : Limitent et allouent les ressources physiques (CPU, mémoire, E/S disque, etc.) qu'un processus peut utiliser.
-- **UnionFS (Union File System)** : Technologie permettant de superposer de manière transparente plusieurs arborescences de répertoires (couches) et de les présenter comme un système de fichiers unique. Les couches d'images Docker reposent sur cette technologie.
+- **UnionFS (Union File System)** : Technologie permettant de superposer de manière transparente plusieurs arborescences de répertoires (couches) et de les présenter comme un système de fichiers unique. Les couches d'images [Docker](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/) reposent sur cette technologie.
 
 Considérons un modèle mathématique de limitation de ressources. Soit $M_{\text{total}}$ la capacité de mémoire totale de la machine hôte et $m_i$ la limite de mémoire pour $n$ conteneurs s'exécutant sur l'hôte. En tenant compte de la mémoire de base $M_{\text{os}}$ consommée par l'OS hôte et d'autres processus, la condition nécessaire au fonctionnement stable du système peut être exprimée par l'inégalité suivante :
 
@@ -49,11 +49,11 @@ En définissant strictement $m_i$ pour chaque conteneur à l'aide de Cgroups, m�
 
 ## 3. Conception efficace de Dockerfile : Maîtriser les builds multi-étapes
 
-La première étape vers un environnement reproductible est la conception du `Dockerfile`, qui définit l'environnement d'exécution de l'application. Ici, en utilisant Python (FastAPI) comme exemple, nous expliquons les meilleures pratiques pour des Dockerfiles sécurisés et légers utilisant des **builds multi-étapes** (multi-stage builds).
+La première étape vers un environnement reproductible est la conception du `Dockerfile`, qui définit l'environnement d'exécution de l'application. Ici, en utilisant Python (FastAPI) comme exemple, nous expliquons les meilleures pratiques pour des [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/)files sécurisés et légers utilisant des **builds multi-étapes** (multi-stage builds).
 
 Le build multi-étapes est une technique qui utilise plusieurs instructions `FROM` dans un seul `Dockerfile` pour séparer l'environnement de construction (un environnement lourd avec compilateurs et outils de développement) de l'environnement d'exécution (un environnement léger avec seulement les artefacts nécessaires).
 
-### Dockerfile pratique pour Python FastAPI
+### [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/)file pratique pour Python FastAPI
 
 Le code suivant est un exemple de `Dockerfile` avancé combinant la gestion des dépendances avec Poetry et les builds multi-étapes.
 
@@ -127,7 +127,7 @@ Ainsi, en introduisant le build multi-étapes, la taille de l'image peut être r
 
 ---
 
-## 4. Orchestration de plusieurs conteneurs avec Docker Compose
+## 4. Orchestration de plusieurs conteneurs avec [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/) Compose
 
 Dans le développement d'applications Web modernes, il est courant d'avoir une architecture de microservices où plusieurs composants tels qu'un serveur Web, une base de données, et un serveur de cache interagissent. Pour gérer cela de manière centralisée dans un environnement local, nous utilisons `docker-compose.yml`.
 
@@ -227,11 +227,11 @@ networks:
 En principe, les conteneurs sont « stateless » (sans état) et « éphémères » (à courte durée de vie). Lorsqu'un conteneur est détruit, ses données internes sont également perdues. Pour conserver les données de base de données ou le cache, un espace système de fichiers de la machine hôte doit être monté dans le conteneur.
 
 - **Bind Mount (Montage lié)** : Dans le service `web` ci-dessus, `./src:/app/src:ro` y correspond. Il mappe directement un répertoire spécifique de l'hôte à l'intérieur du conteneur. Il est utilisé pour refléter immédiatement les modifications de code locales dans le conteneur (rechargement à chaud). Pour des raisons de sécurité, la meilleure pratique est d'ajouter l'option `:ro` (Read-Only) afin que le conteneur ne puisse pas modifier le code source de l'hôte.
-- **Named Volume (Volume nommé)** : C'est le cas de `postgres_data` ou `redis_data`. C'est une zone gérée en interne par Docker (comme `/var/lib/docker/volumes/`), qui a de meilleures performances d'E/S qu'un bind mount et qui absorbe les différences de systèmes de fichiers entre les OS. Il faut toujours l'utiliser pour la persistance de base de données.
+- **Named Volume (Volume nommé)** : C'est le cas de `postgres_data` ou `redis_data`. C'est une zone gérée en interne par [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/) (comme `/var/lib/docker/volumes/`), qui a de meilleures performances d'E/S qu'un bind mount et qui absorbe les différences de systèmes de fichiers entre les OS. Il faut toujours l'utiliser pour la persistance de base de données.
 
 ### Réseau (Networking) et découverte de services
 
-Docker Compose crée par défaut un réseau pont (bridge) distinct pour chaque projet. Il s'agit du `app-network` ci-dessus.
+[Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/) Compose crée par défaut un réseau pont (bridge) distinct pour chaque projet. Il s'agit du `app-network` ci-dessus.
 Les conteneurs appartenant au même réseau peuvent se résoudre (résolution DNS) via leur « nom de service » (par exemple : `db`, `redis`) plutôt que par leur adresse IP.
 Par exemple, le conteneur Web peut accéder à la base de données via l'URL `postgresql://postgres:password@db:5432/mydb`. Cela permet de changer de manière transparente de cible de connexion via des variables d'environnement entre les environnements locaux, de pré-production, et de production sans modifier le code de l'infrastructure.
 
@@ -255,13 +255,13 @@ POSTGRES_DB=devdb
 API_SECRET_KEY=dev_secret_key_12345
 ```
 
-Docker Compose charge par défaut le fichier `.env` dans le répertoire d'exécution et développe les espaces réservés `${VAR_NAME}` dans les fichiers YAML. Cette méthode permet de gérer en toute sécurité différentes valeurs de configuration pour des environnements tels que le local, la pré-production, et la production, sans modifier le code de l'infrastructure.
+[Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/) Compose charge par défaut le fichier `.env` dans le répertoire d'exécution et développe les espaces réservés `${VAR_NAME}` dans les fichiers YAML. Cette méthode permet de gérer en toute sécurité différentes valeurs de configuration pour des environnements tels que le local, la pré-production, et la production, sans modifier le code de l'infrastructure.
 
 ---
 
-## 6. L'expérience de développement ultime avec VSCode DevContainers
+## 6. L'expérience de développement ultime avec VSCode Dev[Container](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)s
 
-À ce stade, nous avons construit un environnement backend robuste à l'aide de Docker. Cependant, nous pouvons aller encore plus loin. En utilisant la fonctionnalité **VSCode DevContainers (Remote - Containers)**, il est possible d'exécuter le backend de l'éditeur (VSCode) lui-même à l'intérieur du conteneur.
+À ce stade, nous avons construit un environnement backend robuste à l'aide de [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/). Cependant, nous pouvons aller encore plus loin. En utilisant la fonctionnalité **VSCode DevContainers (Remote - Containers)**, il est possible d'exécuter le backend de l'éditeur (VSCode) lui-même à l'intérieur du conteneur.
 
 Cela élimine le besoin d'installer Python ou Node.js sur la machine locale. Les linters (flake8/eslint), les formateurs (black/prettier) et même les extensions de l'IDE, tout peut être défini dans la base de code et partagé avec tous les membres de l'équipe.
 
@@ -297,7 +297,7 @@ Créez un répertoire `.devcontainer` à la racine du projet, et placez-y le fic
 }
 ```
 
-En incluant ce fichier dans le dépôt, dès l'ouverture du projet dans VSCode, une invite « Reopen in Container » (Rouvrir dans le conteneur) apparaît. D'un simple clic, tous les conteneurs nécessaires démarrent, les extensions sont installées, et vous êtes immédiatement prêt à coder. C'est une expérience véritablement magique.
+En incluant ce fichier dans le dépôt, dès l'ouverture du projet dans VSCode, une invite « Reopen in [Container](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/) » (Rouvrir dans le conteneur) apparaît. D'un simple clic, tous les conteneurs nécessaires démarrent, les extensions sont installées, et vous êtes immédiatement prêt à coder. C'est une expérience véritablement magique.
 
 ---
 
@@ -356,7 +356,7 @@ Le temps de réponse moyen est exprimé par l'équation d'espérance mathématiq
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-Dans l'environnement de développement local (dans Docker), $T_{\text{net}}$ est proche de 0, mais ce qui requiert notre attention, ce sont **les performances d'E/S du bind mount**. En particulier, lors de l'utilisation de Docker Desktop sous Windows/macOS, la surcharge de partage de fichiers entre l'OS hôte et la VM (conteneur) a tendance à gonfler $T_{\text{app}}$ (comme les temps de lecture du code). Pour résoudre ce goulot d'étranglement, il est fortement recommandé d'utiliser DevContainers pour placer l'intégralité du code source dans un volume nommé, ou d'adopter une architecture exécutant le moteur Docker de manière native dans l'environnement WSL2 (Windows Subsystem for Linux 2).
+Dans l'environnement de développement local (dans [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/)), $T_{\text{net}}$ est proche de 0, mais ce qui requiert notre attention, ce sont **les performances d'E/S du bind mount**. En particulier, lors de l'utilisation de Docker Desktop sous Windows/macOS, la surcharge de partage de fichiers entre l'OS hôte et la VM (conteneur) a tendance à gonfler $T_{\text{app}}$ (comme les temps de lecture du code). Pour résoudre ce goulot d'étranglement, il est fortement recommandé d'utiliser Dev[Container](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)s pour placer l'intégralité du code source dans un volume nommé, ou d'adopter une architecture exécutant le moteur Docker de manière native dans l'environnement WSL2 (Windows Subsystem for Linux 2).
 
 ---
 
@@ -399,21 +399,21 @@ Voici des problèmes fréquents rencontrés lors de l'utilisation d'un environne
    Si vous obtenez une erreur telle que `Bind for 0.0.0.0:8000 failed: port is already allocated`, c'est qu'un autre processus sur la machine locale utilise ce port. Vous pouvez éviter cela en changeant le numéro de port côté hôte, comme `ports: - "8080:8000"`.
 
 2. **Épuisement de l'espace disque**
-   L'utilisation de Docker sur une longue période peut accumuler des images et volumes inutilisés (Dangling Images / Volumes), occupant parfois des dizaines de Go d'espace disque. Il est recommandé de nettoyer périodiquement le système avec la commande suivante :
+   L'utilisation de [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/) sur une longue période peut accumuler des images et volumes inutilisés (Dangling Images / Volumes), occupant parfois des dizaines de Go d'espace disque. Il est recommandé de nettoyer périodiquement le système avec la commande suivante :
    ```bash
    docker system prune -a --volumes
    ```
 
 3. **Problème de permissions de fichiers**
-   Lors de l'utilisation de bind mounts sous Linux, le propriétaire des fichiers créés dans le conteneur peut devenir `root`, les rendant non modifiables côté hôte. Vous pouvez résoudre cela en créant un utilisateur non privilégié dans le Dockerfile dont l'UID/GID (par ex. 1000:1000) correspond à celui de votre système d'exploitation hôte.
+   Lors de l'utilisation de bind mounts sous Linux, le propriétaire des fichiers créés dans le conteneur peut devenir `root`, les rendant non modifiables côté hôte. Vous pouvez résoudre cela en créant un utilisateur non privilégié dans le [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/)file dont l'UID/GID (par ex. 1000:1000) correspond à celui de votre système d'exploitation hôte.
 
 ---
 
 ## 10. Conclusion : L'amélioration de la vitesse de développement grâce à la reproductibilité
 
-La combinaison de Docker, Docker Compose et VSCode DevContainers permet de créer un environnement de développement local robuste, de sorte que « peu importe qui lance l'environnement, l'état sera exactement le même ».
+La combinaison de Docker, Docker Compose et VSCode Dev[Container](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)s permet de créer un environnement de développement local robuste, de sorte que « peu importe qui lance l'environnement, l'état sera exactement le même ».
 
-Apporter le paradigme de l'IaC à l'environnement local ne se limite pas à raccourcir le temps de configuration initial. Il élimine les craintes liées aux modifications de la configuration de l'infrastructure, facilite l'expérimentation de nouvelles piles technologiques et permet une transition en douceur vers les pipelines CI/CD, améliorant considérablement la vitesse et la qualité globales du cycle de développement.
+Apporter le paradigme de l'[IaC](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) à l'environnement local ne se limite pas à raccourcir le temps de configuration initial. Il élimine les craintes liées aux modifications de la configuration de l'infrastructure, facilite l'expérimentation de nouvelles piles technologiques et permet une transition en douceur vers les pipelines [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/), améliorant considérablement la vitesse et la qualité globales du cycle de développement.
 
 N'hésitez pas à introduire les meilleures pratiques abordées dans cet article, telles que l'optimisation de la taille de l'image via le build multi-étapes, le contrôle des dépendances avec les bilans de santé, et l'écriture de Dockerfile tenant compte du cache des couches, afin d'offrir la meilleure expérience de développement (DX: Developer Experience) à vos propres projets.
 

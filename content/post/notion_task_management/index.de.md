@@ -141,7 +141,7 @@ Die Grundregeln des Zettelkastens sind „Schreibe nur eine Idee pro Notiz (atom
 - `Related Notes` (Relation: Verknüpfung mit der Notes-Datenbank selbst)
 - `Tasks` (Relation: Verknüpfung mit Aufgaben zum Schreiben von Blogs)
 
-### Workflow für das Schreiben von Blogs
+### [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) für das Schreiben von Blogs
 1. Sammeln Sie kontinuierlich Erkenntnisse und Ideen, die Sie in Ihrer täglichen Entwicklung gewonnen haben, als fragmentarische „Notes“.
 2. Wenn es gemeinsame Themen zwischen diesen Notizen gibt, verwenden Sie die Eigenschaft `Related Notes`, um sie zu verknüpfen (bidirektionale Links).
 3. Wenn Sie mit der Aufgabe des Schreibens eines Blogs (Tasks) beginnen, rufen Sie die verknüpfte Datenbank auf der Aufgabenseite auf und ordnen die relevanten Notes an.
@@ -232,7 +232,7 @@ if __name__ == "__main__":
         create_notion_task(sys.argv[1], sys.argv[2])
 ```
 
-Indem Sie dieses Skript in den GitHub Actions Workflow (`.github/workflows/issue_to_notion.yml`) einbinden, werden Aufgaben in Notion automatisch generiert, wann immer ein Issue im Repository erstellt wird. Entwickler werden von dem Aufwand befreit, zwischen GitHub und Notion hin und her zu wechseln.
+Indem Sie dieses Skript in den [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) (`.github/workflows/issue_to_notion.yml`) einbinden, werden Aufgaben in Notion automatisch generiert, wann immer ein Issue im Repository erstellt wird. Entwickler werden von dem Aufwand befreit, zwischen GitHub und Notion hin und her zu wechseln.
 
 ### Automatische Aktualisierung des Blog-Publishing-Status mit cURL
 
@@ -256,7 +256,7 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
   }'
 ```
 
-Indem Sie diesen API-Aufruf in den letzten Schritt der CI/CD-Pipeline einbinden, vervollständigen Sie eine Vollautomatisierung: „Code pushen → automatisch bereitgestellt werden → Notion-Aufgabe automatisch abgeschlossen“.
+Indem Sie diesen API-Aufruf in den letzten Schritt der [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) einbinden, vervollständigen Sie eine Vollautomatisierung: „Code pushen → automatisch bereitgestellt werden → Notion-Aufgabe automatisch abgeschlossen“.
 
 ---
 

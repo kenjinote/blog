@@ -170,7 +170,7 @@ Es gibt hauptsächlich zwei Ansätze:
 1. **Prozessstart (`CreateProcess` / `_popen`)**: Eine Methode, bei der `powershell.exe` als unabhängiger Prozess gestartet und die Standard-Ein-/Ausgabe über eine Pipe verbunden wird.
 2. **PowerShell Hosting API (über C++/CLI)**: Eine Methode, bei der die PowerShell-Laufzeitumgebung innerhalb desselben Prozesses gehostet wird.
 
-In diesem Artikel erläutern wir die Methode mit **CreateProcess und einer Pipeline**, da diese in der Systemprogrammierung am robustesten und universellsten ist.
+In diesem Artikel erläutern wir die Methode mit **CreateProcess und einer [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)**, da diese in der Systemprogrammierung am robustesten und universellsten ist.
 
 ### Ausführung mit CreateProcess und Anonymous Pipe
 
@@ -309,7 +309,7 @@ Die am häufigsten auftretenden Fehler bei der Integration sind **Speicherlecks 
 
 Die Integration von PowerShell und C++ ist die stärkste Kombination, um die Einfachheit von Skriptsprachen mit der Leistungsfähigkeit von nativen Sprachen bei der Automatisierung der Systemverwaltung zu vereinen.
 
-Durch den Aufruf von C++-DLLs mithilfe von P/Invoke können rechenintensive Aufgaben ausgelagert und die Ausführungszeit drastisch verkürzt werden. Umgekehrt können Entwicklungskosten erheblich gesenkt werden, indem die umfangreichen PowerShell-Systemverwaltungsmodule über Prozessstarts oder Pipelines von C++-Anwendungen aus genutzt werden.
+Durch den Aufruf von C++-DLLs mithilfe von P/Invoke können rechenintensive Aufgaben ausgelagert und die Ausführungszeit drastisch verkürzt werden. Umgekehrt können Entwicklungskosten erheblich gesenkt werden, indem die umfangreichen PowerShell-Systemverwaltungsmodule über Prozessstarts oder [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s von C++-Anwendungen aus genutzt werden.
 
 Obwohl Vorsicht bei der Speicherverwaltung und Zeichenfolgenkonvertierung an den Grenzen geboten ist, werden Sie durch die Beherrschung der in diesem Artikel vorgestellten Architekturmuster und Implementierungstechniken in der Lage sein, fortschrittlichere und robustere Tools für die Windows-Systemverwaltung zu entwickeln.
 

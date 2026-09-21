@@ -179,7 +179,7 @@ $$ L_{local} = \frac{T_{in}}{S_{process\_local}} $$
 ローカルAIを導入するための具体的なステップを簡単に紹介します。現在最も手軽かつ強力なアプローチは、 **Ollama** や **LM Studio** を使用することです。
 
 ### 6.1 Ollamaの導入
-Ollamaは、ローカル環境でLLMを動作させるための軽量なフレームワークです。MacOS、Windows、Linuxに対応しており、Dockerのように直感的にモデルを管理できます。
+Ollamaは、ローカル環境でLLMを動作させるための軽量なフレームワークです。MacOS、Windows、Linuxに対応しており、[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)のように直感的にモデルを管理できます。
 
 ```bash
 # MacOSの場合

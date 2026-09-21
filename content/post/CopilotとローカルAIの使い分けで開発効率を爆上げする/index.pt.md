@@ -179,7 +179,7 @@ Como o atraso da rede $L_{network\_rtt}$ e o atraso da fila na nuvem $L_{queue}$
 Apresentaremos brevemente etapas específicas para introduzir a IA local. Atualmente, a abordagem mais fácil e poderosa é usar o **Ollama** ou **LM Studio**.
 
 ### 6.1 Instalando o Ollama
-O Ollama é um framework leve para rodar LLMs em ambientes locais. Ele suporta MacOS, Windows e Linux, e permite gerenciar modelos de forma intuitiva, semelhante ao Docker.
+O Ollama é um framework leve para rodar LLMs em ambientes locais. Ele suporta MacOS, Windows e Linux, e permite gerenciar modelos de forma intuitiva, semelhante ao [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ```bash
 # Para MacOS

@@ -59,7 +59,7 @@ tags: ["Alan Baker", "संख्या सिद्धांत", "फील�
 **बेकर का प्रमेय (1966)**:
 मान लीजिए $\alpha_1, \alpha_2, \ldots, \alpha_n$ गैर-शून्य बीजीय संख्याएं हैं, और मान लें कि $\log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ परिमेय क्षेत्र $\mathbb{Q}$ पर रैखिक रूप से स्वतंत्र हैं। तब, $1, \log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ बीजीय संख्या क्षेत्र $\overline{\mathbb{Q}}$ पर रैखिक रूप से स्वतंत्र हैं।
 
-दूसरे शब्दों में, किसी भी गैर-शून्य बीजीय संख्याओं $\beta_0, \beta_1, \ldots, \beta_n$ के लिए, उन्होंने साबित कर दिया कि निम्नलिखित रैखिक रूप $\Lambda$ कभी भी $0$ के बराबर नहीं होता है।
+दूसरे शब्दों में, किसी भी गैर-शून्य बीजीय संख्याओं $\beta_0, \beta_1, \ldots, \beta_n$ के लिए, उन्होंने साबित कर दिया कि निम्नलिखित रैखिक रूप $\[Lambda](https://kenji.blog/hi/p/serverless-architecture-aws-lambda-cold-start/)$ कभी भी $0$ के बराबर नहीं होता है।
 
 $$ \Lambda = \beta_0 + \beta_1 \log \alpha_1 + \cdots + \beta_n \log \alpha_n \neq 0 $$
 

@@ -120,7 +120,7 @@ Si el Event Loop es un enfoque que desafía los límites de un solo hilo, el **m
 
 ### 3.1 Conceptos básicos del modelo de Actores
 
-En el modelo de Actores, la unidad básica de procesamiento se llama "Actor". Cada Actor tiene un estado (State) y comportamiento (Behavior) independientes, y no comparte su estado directamente con otros Actores. Toda comunicación entre Actores se realiza mediante el **paso de mensajes asíncronos (message passing)**.
+En el modelo de Actores, la unidad básica de procesamiento se llama "Actor". Cada Actor tiene un estado ([State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/)) y comportamiento (Behavior) independientes, y no comparte su estado directamente con otros Actores. Toda comunicación entre Actores se realiza mediante el **paso de mensajes asíncronos (message passing)**.
 
 - **Encapsulación del estado**: El estado interno del Actor no es accesible directamente desde el exterior.
 - **Cola de mensajes (Mailbox)**: Los mensajes recibidos se encolan en el Mailbox y se procesan secuencialmente.

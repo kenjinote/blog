@@ -26,7 +26,7 @@ Harus Windows 11
 - Visual Studio Code (perintah `winget install vscode`)
 - Slack (perintah `winget install SlackTechnologies.Slack`)
 - Discord (perintah `winget install Discord.Discord`)
-- Docker Desktop (perintah `winget install Docker.DockerDesktop`)
+- [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (perintah `winget install Docker.DockerDesktop`)
 - Git (perintah `winget install Git`)
 - 7zip (perintah `winget install 7zip`)
 - VLC (perintah `winget install VideoLAN.VLC`)

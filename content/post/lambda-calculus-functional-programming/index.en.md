@@ -22,7 +22,7 @@ However, behind this paradigm lies a profound mathematical theory constructed in
 
 This article explores the historical and theoretical development in detail, starting from the foundational theory of lambda calculus, how it influenced **Lisp**, an early programming language, and leading up to **Haskell**, a purely functional language.
 
-## 2. The Birth of Lambda Calculus: Alonzo Church and the Definition of Computation
+## 2. The Birth of [Lambda](https://kenji.blog/en/p/serverless-architecture-aws-lambda-cold-start/) Calculus: Alonzo Church and the Definition of Computation
 
 ### 2.1 The Challenge of the Decision Problem (Entscheidungsproblem)
 
@@ -91,7 +91,7 @@ graph TD
 
 ## 4. Church Encoding: Creating Something from Nothing
 
-Lambda calculus does not have any built-in data types (such as numbers, booleans, or lists). Everything is just a function. However, Church showed that by cleverly combining functions, any data structure or control structure can be expressed. This is called **Church Encoding**.
+[Lambda](https://kenji.blog/en/p/serverless-architecture-aws-lambda-cold-start/) calculus does not have any built-in data types (such as numbers, booleans, or lists). Everything is just a function. However, Church showed that by cleverly combining functions, any data structure or control structure can be expressed. This is called **Church Encoding**.
 
 ### 4.1 Booleans (Church Booleans)
 
@@ -166,7 +166,7 @@ The greatest feature of Lisp is that the code itself is represented as data (lis
 
 Lisp was dynamically typed and was not the theoretical lambda calculus as is, but it became the first great milestone to realize the spirit of functional programming—"treating functions as data" and "viewing computation as the evaluation of functions"—on real computers.
 
-## 7. Typed Lambda Calculus and the Curry-Howard Correspondence
+## 7. Typed [Lambda](https://kenji.blog/en/p/serverless-architecture-aws-lambda-cold-start/) Calculus and the Curry-Howard Correspondence
 
 Pure lambda calculus (untyped lambda calculus) is powerful, but because any argument can be passed to any function, it could cause paradoxes due to self-application (e.g., Russell's paradox). To prevent this, Church later introduced the **Simply Typed Lambda Calculus**.
 

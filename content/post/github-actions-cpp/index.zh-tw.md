@@ -9,7 +9,7 @@ categories: ["programming", "devops"]
 tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 ---
 
-# 使用 GitHub Actions 建構 C++ 專案的 CI/CD 管線：完整指南
+# 使用 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 建構 C++ 專案的 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線：完整指南
 
 在現代軟體開發典範中，持續整合（Continuous Integration: CI）與持續交付/部署（Continuous Delivery/Deployment: CD）是維持敏捷開發流程與高品質軟體不可或缺的要素。在眾多的程式語言中，為 C++ 建構 CI/CD 管線與其他語言（例如 Python、JavaScript、Go 等）相比，伴隨著獨特的困難與複雜性。
 
@@ -17,7 +17,7 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 ## 1. C++ 專案中 CI/CD 的意義與特有挑戰
 
-在開發 Web 應用程式或使用腳本語言時，大多只需在單一 Docker 容器上進行測試和建置就足夠了。然而，C++ 是原生編譯的語言，強烈依賴執行環境的硬體架構和作業系統。
+在開發 Web 應用程式或使用腳本語言時，大多只需在單一 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 容器上進行測試和建置就足夠了。然而，C++ 是原生編譯的語言，強烈依賴執行環境的硬體架構和作業系統。
 
 在為 C++ 專案導入 CI/CD 時，主要會面臨以下挑戰：
 
@@ -27,9 +27,9 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 4. **相依性管理**: C++ 並不存在像 npm 或 pip 那樣絕對標準的套件管理器。需要使用 vcpkg、Conan 或 CMake 的 `FetchContent` 等，在 CI 環境上每次都正確地解析函式庫。
 5. **記憶體管理與未定義行為**: 由於伴隨著指標操作和手動記憶體管理，不僅是單純的邏輯測試，還必須將記憶體流失和未定義行為（Undefined Behavior）的偵測自動化。
 
-為了解決這些挑戰，能夠依需求配置各種 OS 虛擬機器，並將複雜的工作流程以程式碼定義（Configuration as Code）的 GitHub Actions 便成為了最佳解決方案。
+為了解決這些挑戰，能夠依需求配置各種 OS 虛擬機器，並將複雜的工作流程以程式碼定義（Configuration as Code）的 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 便成為了最佳解決方案。
 
-## 2. CI/CD 管線的架構概觀
+## 2. [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線的架構概觀
 
 讓我們將接下來要建構的 CI/CD 管線全貌視覺化。以下的 Mermaid 循序圖展示了從程式碼 Push 到發布的工作流程。
 
@@ -142,7 +142,7 @@ include(CPack)
 - **嚴格化警告 (`-Werror` / `/WX`)**: 在 CI 環境中將編譯器警告視為錯誤，強制保持較高的程式碼品質。
 - **GNUInstallDirs**: 自動解析各 OS 專屬的標準安裝路徑（如 `/usr/local/bin` 或 `C:\Program Files`）。
 
-## 4. GitHub Actions 基礎與矩陣策略
+## 4. [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 基礎與矩陣策略
 
 GitHub Actions 是透過 `.github/workflows/` 目錄內的 YAML 檔案來配置。
 在 C++ 專案中最強大的功能是「矩陣策略（Matrix Strategy）」。這使得我們能動態產生 OS 與編譯器的組合，並並列執行。
@@ -189,7 +189,7 @@ jobs:
 
 ## 5. 運用阿姆達爾定律 (Amdahl's Law) 最佳化建置成本與並列處理
 
-雲端環境的 CI/CD 是一場與時間的賽跑，建置時間直接關乎開發者的等待時間與營運成本。
+雲端環境的 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 是一場與時間的賽跑，建置時間直接關乎開發者的等待時間與營運成本。
 在這裡，關於建置時間的最佳化，我們試著使用電腦科學中的「阿姆達爾定律 (Amdahl's Law)」來進行數學上的探討。
 
 阿姆達爾定律指出，若程式中可並列化部分的比例為 $P$，則在使用 $N$ 個處理器時，理論上的最大加速比 $S(N)$ 定義如下：
@@ -199,7 +199,7 @@ $$ S(N) = \frac{1}{(1 - P) + \frac{P}{N}} $$
 在 C++ 的建置過程中，原始碼的各個翻譯單元（Translation Unit: `.cpp` 檔案）的編譯是完全獨立且可並列化的。另一方面，CMake 的組態設定以及最終二進位檔案的連結階段則基本上是序列執行（無法並列化）。
 
 假設專案整體的建置時間中，有 80% 是編譯階段（$P = 0.8$），20% 是序列階段（$1 - P = 0.2$）。
-GitHub Actions 的標準執行器（Linux）提供 2 個核心（執行緒）。因此當 $N = 2$ 時：
+[GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 的標準執行器（Linux）提供 2 個核心（執行緒）。因此當 $N = 2$ 時：
 
 $$ S(2) = \frac{1}{0.2 + \frac{0.8}{2}} = \frac{1}{0.2 + 0.4} = \frac{1}{0.6} \approx 1.67 $$
 
@@ -210,7 +210,7 @@ $$ S(2) = \frac{1}{0.2 + \frac{0.8}{2}} = \frac{1}{0.2 + 0.4} = \frac{1}{0.6} \a
       run: cmake --build build --config Release --parallel 2
 ```
 
-此外，也必須考慮成本計算。GitHub Actions 的使用成本 $C_{total}$ 是作業執行時間 $T_i$ 與執行器單價 $R_i$ 乘積的總和。
+此外，也必須考慮成本計算。[GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 的使用成本 $C_{total}$ 是作業執行時間 $T_i$ 與執行器單價 $R_i$ 乘積的總和。
 
 $$ C_{total} = \sum_{i=1}^{M} \left( T_i \times R_i \right) $$
 
@@ -266,7 +266,7 @@ if(ENABLE_COVERAGE AND CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
 endif()
 ```
 
-在 GitHub Actions 中定義一個獨立的作業用於涵蓋率測量。
+在 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 中定義一個獨立的作業用於涵蓋率測量。
 
 ```yaml
   coverage:
@@ -301,7 +301,7 @@ endif()
 
 ## 8. 透過 GitHub Releases 自動交付二進位檔案 (CD)
 
-接著建構 CI/CD 中 "CD" 的部分。當開發者在 Git 中加上版本標籤（例: `v1.2.0`）並推送時，會自動為各 OS 編譯可執行檔，並打包成 ZIP 或 Tarball，然後上傳至 GitHub Releases。
+接著建構 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 中 "CD" 的部分。當開發者在 Git 中加上版本標籤（例: `v1.2.0`）並推送時，會自動為各 OS 編譯可執行檔，並打包成 ZIP 或 Tarball，然後上傳至 GitHub Releases。
 
 這個步驟將使用隨附於 CMake 的打包工具 `CPack`。
 
@@ -326,7 +326,7 @@ endif()
 
 透過這個設定，只要執行 `git tag v1.0.0` 與 `git push origin v1.0.0`，就能在無須手動介入的情況下，自動將供 Windows 使用者的 ZIP 檔，以及供 Linux/macOS 使用者的 Tarball 公開到發布頁面。這對於向使用者傳遞軟體而言是極為強大的功能。
 
-## 9. 完整的 Workflow YAML 檔案
+## 9. 完整的 [Workflow](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) YAML 檔案
 
 以下展示整合了前面解說的所有要素，強健且實用的 `.github/workflows/main.yml` 完整程式碼。
 
@@ -440,17 +440,17 @@ jobs:
         fail_ci_if_error: false
 ```
 
-## 10. 邁向更進階的 CI/CD（靜態分析與格式化）
+## 10. 邁向更進階的 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)（靜態分析與格式化）
 
 在此省略詳細解說，但在實際運用上，建議將進階的品質保證工具整合進管線中。
 
 1. **強制 Clang-Format**: 為了減輕程式碼審查的負擔，將透過 `clang-format` 的程式碼風格檢查整合進 CI，當違反格式規則時便讓管線失敗。
 2. **靜態分析 (Clang-Tidy)**: 為了偵測單靠編譯器警告無法防範的潛在 Bug，或是無效率的程式碼（如不必要的複製等），將 `clang-tidy` 整合至 CMake 並在 CI 上執行。
-3. **活用 vcpkg / Conan 快取**: 若使用大量第三方函式庫，建置相依套件將會花費大量時間。利用 GitHub Actions 的 `actions/cache` 來保留 vcpkg 的安裝目錄或 Conan 的快取，能戲劇性地縮減建置時間。
+3. **活用 vcpkg / Conan 快取**: 若使用大量第三方函式庫，建置相依套件將會花費大量時間。利用 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 的 `actions/cache` 來保留 vcpkg 的安裝目錄或 Conan 的快取，能戲劇性地縮減建置時間。
 
 ## 結論
 
-在 C++ 專案中建構 CI/CD 管線，由於平台相依性及建置工具的複雜度，乍看之下門檻似乎很高。然而，只要正確地結合 GitHub Actions、現代化 CMake 以及 CTest/CPack 生態系，就能獲得極其強大且自動化的開發流程。
+在 C++ 專案中建構 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線，由於平台相依性及建置工具的複雜度，乍看之下門檻似乎很高。然而，只要正確地結合 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)、現代化 CMake 以及 CTest/CPack 生態系，就能獲得極其強大且自動化的開發流程。
 
 本文所解說的：運用矩陣策略進行跨平台驗證、運用 Sanitizer 偵測執行期 Bug、測量涵蓋率，以及自動部署至 GitHub Releases 等，都是在商業級別的開源專案中被廣泛採用的最佳實踐。
 

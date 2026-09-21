@@ -175,7 +175,7 @@ else:
     print("데이터를 찾을 수 없습니다.")
 ```
 
-이 스크립트를 cron이나 GitHub Actions의 정기 작업으로 돌림으로써 "어떤 문서의 제목을 다시 작성할지"를 항상 데이터 기반으로 결정할 수 있습니다. 직감에 의존하는 것이 아니라, 데이터에 기반한 지속적 개선(CI/CD가 아닌 Continuous Content Improvement)이 중요합니다.
+이 스크립트를 cron이나 [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)의 정기 작업으로 돌림으로써 "어떤 문서의 제목을 다시 작성할지"를 항상 데이터 기반으로 결정할 수 있습니다. 직감에 의존하는 것이 아니라, 데이터에 기반한 지속적 개선([CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)가 아닌 Continuous Content Improvement)이 중요합니다.
 
 ---
 
@@ -229,7 +229,7 @@ $$ ROI = \frac{\sum_{t=1}^{T} \left( Rev_{ad}(t) + Val_{brand}(t) + Val_{skill}(
 
 ---
 
-## 5. GitHub Actions와 외부 자동화 도구 연동을 통한 배포(디스트리뷰션)
+## 5. [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)와 외부 자동화 도구 연동을 통한 배포(디스트리뷰션)
 
 콘텐츠를 작성한 후에는 그것을 얼마나 타겟층에게 효율적으로 전달할지(배포)가 과제가 됩니다. 매번 수동으로 각 SNS에 링크를 올리는 것은 비효율적이며 엔지니어답지 않습니다.
 
@@ -253,7 +253,7 @@ flowchart TD
 
 ### 5.2 자동화 파이프라인 구축 포인트
 
-1. **GitHub Actions를 이용한 빌드 및 배포**
+1. **[GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)를 이용한 빌드 및 배포**
    정적 사이트 생성기를 이용하고 있는 경우, GitHub Actions를 사용하여 HTML 생성과 호스팅 위치(Vercel, Netlify, Cloudflare Pages 등)로의 배포를 자동화합니다. 이때 앞서 언급한 Core Web Vitals에 대한 대책으로 이미지 최적화 프로세스(WebP 자동 변환 등)를 빌드 파이프라인에 포함하는 것도 효과적입니다.
 
 2. **Zapier/IFTTT를 이용한 RSS 트리거 SNS 연동**
@@ -273,7 +273,7 @@ flowchart TD
 2. 사용자의 검색 의도(오류 해결 vs 체계적 학습)를 이해한 문서 설계
 3. Google Search Console API와 Python을 활용한 데이터 분석
 4. ROI를 고려한 콘텐츠의 라이프사이클 관리 및 리라이트
-5. CI/CD 및 Zapier 연동을 통한 배포 완전 자동화
+5. [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 및 Zapier 연동을 통한 배포 완전 자동화
 
 이러한 요소들을 하나의 시스템으로 구성할 수 있다면, 기술 블로그는 여러분의 커리어를 강력하게 뒷받침하는 최고의 자산(Asset)이 될 것입니다. 조회수 정체로 고민하고 있는 엔지니어라면 오늘부터라도 꼭 "블로그 그로스 해킹"을 시작해 보시기 바랍니다. 개발 업무에서 쌓은 프로그래밍 역량과 아키텍처 설계 능력은 블로그 운영에 있어서도 최고의 무기가 될 것입니다.
 

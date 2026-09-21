@@ -28,7 +28,7 @@ En tant que propriété des matrices orthogonales, on a $U^T U = I$ et $V^T V = 
 
 ## 2. Différence avec la Décomposition en Valeurs Propres
 
-Pour les matrices carrées, la décomposition en valeurs propres $A = P \Lambda P^{-1}$ est bien connue. Cependant, cette décomposition a les limitations suivantes :
+Pour les matrices carrées, la décomposition en valeurs propres $A = P \[Lambda](https://kenji.blog/fr/p/serverless-architecture-aws-lambda-cold-start/) P^{-1}$ est bien connue. Cependant, cette décomposition a les limitations suivantes :
 - Elle ne peut être appliquée qu'aux matrices carrées ($n \times n$).
 - Même si c'est une matrice carrée, elle n'est pas toujours diagonalisable.
 

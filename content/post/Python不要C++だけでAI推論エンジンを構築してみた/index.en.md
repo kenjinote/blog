@@ -346,7 +346,7 @@ In the Apple Silicon environment, an optimized library for matrix multiplication
 
 ## 8. Transformer Model Specific Processing: Attention and KV Cache
 
-State-of-the-art LLMs such as LLaMA 2/3 and GPT are based on the Transformer architecture. To implement this in C++, it is essential to construct "Scaled Dot-Product Attention," represented by the following formula.
+[State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)-of-the-art LLMs such as LLaMA 2/3 and GPT are based on the Transformer architecture. To implement this in C++, it is essential to construct "Scaled Dot-Product Attention," represented by the following formula.
 
 $$
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V

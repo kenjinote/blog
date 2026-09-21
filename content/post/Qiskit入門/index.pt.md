@@ -68,7 +68,7 @@ Se tivermos 2 qubits, podemos criar uma sobreposição de 4 estados: $|00\rangle
 
 A propriedade mais poderosa e misteriosa da computação quântica é o **emaranhamento quântico (Entanglement)**. Este fenômeno, que Einstein chamou de "ação fantasmagórica à distância", é a propriedade em que dois ou mais qubits se tornam fortemente interligados, de modo que quando o estado de um qubit é determinado, o estado do outro qubit é determinado instantaneamente, independentemente da distância física que os separe.
 
-Um dos mais famosos estados de emaranhamento quântico, o "Estado de Bell (Bell State)" $\Phi^+$, é expresso da seguinte forma:
+Um dos mais famosos estados de emaranhamento quântico, o "Estado de Bell (Bell [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/))" $\Phi^+$, é expresso da seguinte forma:
 
 $$
 |\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}

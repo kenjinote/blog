@@ -274,7 +274,7 @@ Map[#^(1/2)&, {1, 4, 9}]
 {1, 2, 3}
 ```
 
-## 使用Lambda表达式定义函数
+## 使用[Lambda](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/)表达式定义函数
 ```
 f = Function[x, x^2]
 f[3]

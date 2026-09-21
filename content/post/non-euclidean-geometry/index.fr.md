@@ -73,7 +73,7 @@ Le grand cadre mathématique construit par [Riemann](https://kenji.blog/fr/p/rie
 Einstein a proposé le concept d'« espace-temps » unifiant l'espace et le temps dans sa théorie de la relativité restreinte. Puis, dans sa **théorie de la relativité générale**, il a abouti à l'idée révolutionnaire que « la gravité est la distorsion (courbure) de l'espace-temps par des objets massifs ».
 
 $$
-R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
+R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \[Lambda](https://kenji.blog/fr/p/serverless-architecture-aws-lambda-cold-start/) g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
 $$
 
 Dans l'équation d'Einstein ci-dessus, le côté gauche représente la structure géométrique (courbure) de l'espace-temps, et le côté droit représente la distribution de la matière et de l'énergie. En d'autres termes, **la matière dicte à l'espace-temps comment se courber, et l'espace-temps courbé dicte à la matière comment se déplacer**.

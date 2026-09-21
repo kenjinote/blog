@@ -165,7 +165,7 @@ GIGAスクール構想の標準仕様として導入された端末の多くは�
 - メモリ (RAM): 4GB （現代のOSを動かすだけでギリギリの容量）
 - ストレージ (eMMC): 32GB ～ 64GB （極端に遅いI/O速度）
 
-この貧弱なハードウェア制約により、プロのエンジニアが日常的に行う「ローカル開発環境」を構築することは事実上不可能です。Dockerを用いてLinuxコンテナを立ち上げたり、Visual Studio Code等の重厚なIDEをフル機能で動作させたり、Node.jsやPythonのローカルサーバーを起動して重いライブラリをインストールすることは、メモリの枯渇とシステムフリーズを直ちに招きます。
+この貧弱なハードウェア制約により、プロのエンジニアが日常的に行う「ローカル開発環境」を構築することは事実上不可能です。[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)を用いてLinuxコンテナを立ち上げたり、Visual Studio Code等の重厚なIDEをフル機能で動作させたり、Node.jsやPythonのローカルサーバーを起動して重いライブラリをインストールすることは、メモリの枯渇とシステムフリーズを直ちに招きます。
 
 結果として、教育現場ではブラウザ上で動作するクラウドIDE（Google Colaboratory, Replit, あるいは教科書会社独自の軽量Webツールなど）に全面的に依存せざるを得ない状況に追い込まれています。
 
@@ -204,7 +204,7 @@ flowchart LR
 
 ### 要求されるスキルと教えられるスキルの絶望的な乖離
 
-現代の産業界、特にグローバルに展開するメガベンチャーやテックジャイアント（GAFAM等）が新卒のソフトウェアエンジニアに求める要件は、年々恐ろしいスピードで高度化しています。クラウドネイティブインフラ（AWS, GCP, Kubernetes）の構築、マイクロサービスアーキテクチャの[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)設計、機械学習パイプラインの実装、そして高度なセキュリティ知識など、広範かつ深い専門性が求められます。
+現代の産業界、特にグローバルに展開するメガベンチャーやテックジャイアント（GAFAM等）が新卒のソフトウェアエンジニアに求める要件は、年々恐ろしいスピードで高度化しています。クラウドネイティブインフラ（AWS, GCP, [Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)）の構築、マイクロサービスアーキテクチャの[分散システム](https://kenji.blog/p/cap-theorem-distributed-systems/)設計、機械学習[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の実装、そして高度なセキュリティ知識など、広範かつ深い専門性が求められます。
 
 以下のグラフは、現在の日本の学校教育で提供されているスキルの到達度と、最前線の産業界が要求するスキルの水準との絶望的な乖離を概念的に示しています。
 

@@ -408,7 +408,7 @@ strip = true        # 심볼 정보를 삭제하여 바이너리 크기를 극�
 
 ---
 
-## 12. CI/CD 및 배포 (Publishing)
+## 12. [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 및 배포 (Publishing)
 
 작성한 도구를 전 세계에 배포하기 위한 단계입니다.
 
@@ -421,8 +421,8 @@ cargo publish
 ```
 공개 후에는 전 세계의 사용자가 `cargo install gh-stats-fetcher` 명령어 하나로 당신의 도구를 설치할 수 있게 됩니다.
 
-### GitHub Actions를 통한 자동 릴리스
-크로스 컴파일된 바이너리를 GitHub Releases에 자동으로 업로드하는 CI/CD 파이프라인을 구축합니다. `.github/workflows/release.yml`에 다음과 같은 설정을 작성합니다. 이를 통해 태그를 푸시하는 것만으로 Linux, macOS, Windows용 바이너리가 자동으로 빌드되어 릴리스 자산으로 첨부됩니다(여기서는 지면 관계상 상세한 YAML 작성은 생략하지만, `taiki-e/upload-rust-binary-action` 등의 Action을 이용하는 것이 현재의 모범 사례입니다).
+### [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)를 통한 자동 릴리스
+크로스 컴파일된 바이너리를 GitHub Releases에 자동으로 업로드하는 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인을 구축합니다. `.github/workflows/release.yml`에 다음과 같은 설정을 작성합니다. 이를 통해 태그를 푸시하는 것만으로 Linux, macOS, Windows용 바이너리가 자동으로 빌드되어 릴리스 자산으로 첨부됩니다(여기서는 지면 관계상 상세한 YAML 작성은 생략하지만, `taiki-e/upload-rust-binary-action` 등의 Action을 이용하는 것이 현재의 모범 사례입니다).
 
 ---
 

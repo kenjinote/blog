@@ -247,10 +247,10 @@ flowchart TD
     B -->|"Проверка безопасности и прав доступа"| C["ОС хоста, напр. Linux, Windows"]
 ```
 
-## 7.2 Альтернатива и сосуществование с Docker контейнерами
+## 7.2 Альтернатива и сосуществование с [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) контейнерами
 Создатель Docker, Соломон Хайкс (Solomon Hykes), вызвал бурные обсуждения своим заявлением: «Если бы Wasm и WASI существовали в 2008 году, нам бы не пришлось создавать Docker».
 Wasm намного легче контейнеров, запускается быстрее (за считанные миллисекунды) и имеет огромное преимущество в виде независимости от ОС и архитектуры процессора.
-В настоящее время активно развиваются проекты (такие как Kwasm и Spin) по прямой оркестрации модулей Wasm в Kubernetes вместо контейнеров Docker.
+В настоящее время активно развиваются проекты (такие как Kwasm и Spin) по прямой оркестрации модулей Wasm в [Kubernetes](https://kenji.blog/ru/p/kubernetes-k8s-architecture-pod-service-ingress/) вместо контейнеров Docker.
 
 ---
 

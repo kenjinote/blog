@@ -146,7 +146,7 @@ Existe um "Teorema do Limiar" para a correção quântica de erros. Quando a tax
 A fórmula de aproximação para a taxa de erro lógico é expressa da seguinte forma:
 
 $$
-p_L \approx \Lambda \left( \frac{p}{p_{th}} \right)^{\frac{d+1}{2}}
+p_L \approx \[Lambda](https://kenji.blog/pt/p/serverless-architecture-aws-lambda-cold-start/) \left( \frac{p}{p_{th}} \right)^{\frac{d+1}{2}}
 $$
 
 Onde $\Lambda$ é uma constante. Se $p < p_{th}$, quanto maior o valor de $d$, menor será $p_L$. No entanto, se $p > p_{th}$, o aumento do número de qubits físicos acumula mais ruído, piorando a taxa de erro lógico.
@@ -168,7 +168,7 @@ A IBM está se concentrando em aumentar a escala de seus processadores em parale
 ### A Abordagem do Google: Melhoria da Qualidade dos Qubits Lógicos
 A estratégia do Google dá maior ênfase em reduzir drasticamente a taxa de erro de um único qubit lógico (por exemplo, reduzindo para $10^{-6}$), em vez de aumentar rapidamente o número de qubits físicos. Com base nisso, eles visam estabelecer tecnologia de transferência de estados quânticos entre módulos (Interconexões Quânticas) em direção a um sistema em grande escala que opera milhares a dezenas de milhares de qubits físicos em paralelo.
 
-A implementação de protocolos para executar portas não Clifford, como a destilação de estados mágicos (Magic State Distillation), de maneira tolerante a falhas será um grande obstáculo tecnológico no futuro. Diz-se que a execução do algoritmo de Shor na prática para decifrar a criptografia RSA de 2048 bits exigirá milhares de qubits lógicos com uma taxa de erro de $10^{-8}$ ou inferior, o que se traduz em milhões a dezenas de milhões de qubits físicos, o que indica que o caminho ainda é longo.
+A implementação de protocolos para executar portas não Clifford, como a destilação de estados mágicos (Magic [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) Distillation), de maneira tolerante a falhas será um grande obstáculo tecnológico no futuro. Diz-se que a execução do algoritmo de Shor na prática para decifrar a criptografia RSA de 2048 bits exigirá milhares de qubits lógicos com uma taxa de erro de $10^{-8}$ ou inferior, o que se traduz em milhões a dezenas de milhões de qubits físicos, o que indica que o caminho ainda é longo.
 
 ---
 

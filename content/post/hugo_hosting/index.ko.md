@@ -12,7 +12,7 @@ description: 'Hugo를 사용한 정적 사이트를 Cloudflare Pages나 GitHub P
 
 웹사이트나 블로그를 운영하는 데 있어서 표시 속도(퍼포먼스), 운영 비용, 그리고 보안은 매우 중요한 요소입니다. 예전에는 WordPress와 같은 동적 CMS(Content Management System)와 렌탈 서버의 조합이 주류를 이루었지만, 현재는 'Jamstack'이라고 불리는 아키텍처가 큰 주목을 받고 있습니다. 그 중에서도 Go 언어로 만들어진 초고속 정적 사이트 생성기(SSG)인 'Hugo'와, Cloudflare Pages나 GitHub Pages 같은 모던 호스팅 서비스를 조합하면 **완전 무료이면서 초고속** 인 블로그 환경을 구축할 수 있습니다.
 
-이 글에서는 Hugo를 사용한 정적 사이트를 Cloudflare Pages나 GitHub Pages에 공개하기 위한 구체적인 절차, 각 플랫폼의 아키텍처 차이, GitHub Actions를 이용한 CI/CD(지속적 통합/지속적 배포) 구축, DNS 최적화, 캐시 전략, 그리고 프라이버시를 고려한 접속 분석 도입에 이르기까지 기술적인 관점에서 매우 깊이 있게 설명합니다.
+이 글에서는 Hugo를 사용한 정적 사이트를 Cloudflare Pages나 GitHub Pages에 공개하기 위한 구체적인 절차, 각 플랫폼의 아키텍처 차이, [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)를 이용한 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)(지속적 통합/지속적 배포) 구축, DNS 최적화, 캐시 전략, 그리고 프라이버시를 고려한 접속 분석 도입에 이르기까지 기술적인 관점에서 매우 깊이 있게 설명합니다.
 
 ---
 
@@ -82,7 +82,7 @@ $$ L_{new} = 10 + (1 - 0.95) \times 200 = 10 + 0.05 \times 200 = 10 + 10 = 20 \t
 
 ---
 
-## 4. GitHub Actions를 이용한 CI/CD 파이프라인 구축
+## 4. [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)를 이용한 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인 구축
 
 Hugo 블로그의 업데이트 프로세스를 자동화하기 위해, GitHub Actions를 이용한 CI/CD 파이프라인을 구축합니다. 이를 통해 로컬에서 Markdown 글을 작성하고 `git push` 하기만 하면, 자동으로 빌드가 실행되어 Cloudflare Pages나 GitHub Pages에 배포됩니다.
 
@@ -108,7 +108,7 @@ sequenceDiagram
 
 ### 4.1 Cloudflare Pages를 위한 배포 설정 (Direct Upload)
 
-Cloudflare Pages에는 GitHub 저장소를 연동시켜 Cloudflare의 인프라 위에서 빌드하는 방법과, GitHub Actions에서 빌드한 정적 파일을 'Direct Upload(직접 업로드)'하는 방법이 있습니다. Hugo의 버전 관리를 더 엄격하게 하고 다른 작업(테스트나 이미지 최적화 등)과 연동하고 싶다면, GitHub Actions에서 빌드하고 Direct Upload 하는 방식을 추천합니다.
+Cloudflare Pages에는 GitHub 저장소를 연동시켜 Cloudflare의 인프라 위에서 빌드하는 방법과, [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)에서 빌드한 정적 파일을 'Direct Upload(직접 업로드)'하는 방법이 있습니다. Hugo의 버전 관리를 더 엄격하게 하고 다른 작업(테스트나 이미지 최적화 등)과 연동하고 싶다면, GitHub Actions에서 빌드하고 Direct Upload 하는 방식을 추천합니다.
 
 다음은 Cloudflare Pages에 배포하기 위한 `.github/workflows/deploy.yml` 의 실전 예시입니다.
 
@@ -248,7 +248,7 @@ Hugo에서의 구현도 매우 간단합니다. `layouts/partials/head.html` 이
 
 Hugo를 이용한 정적 사이트 운영에 있어, Cloudflare Pages나 GitHub Pages와 같은 모던 호스팅 플랫폼을 채택하는 것은 가성비, 표시 속도, 보안의 모든 측면에서 압도적인 장점이 있습니다.
 
-1. **초고속 빌드**: Hugo의 고속성을 살려 CI/CD 파이프라인(GitHub Actions)의 실행 시간을 최소화한다.
+1. **초고속 빌드**: Hugo의 고속성을 살려 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인([GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/))의 실행 시간을 최소화한다.
 2. **엣지 전송**: Cloudflare의 엣지 네트워크를 이용하여 전 세계 사용자에게 밀리초 단위의 지연 시간으로 콘텐츠를 전달한다.
 3. **적절한 DNS 구성**: CNAME Flattening을 활용하여 Zone Apex(독자 도메인)를 안전하고 빠르게 운영한다.
 4. **캐시 전략 최적화**: `_headers` 를 사용하여 브라우저 캐시와 엣지 캐시를 리소스 종류에 따라 적절하게 분리한다.

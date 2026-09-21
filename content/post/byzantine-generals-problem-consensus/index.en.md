@@ -188,7 +188,7 @@ stateDiagram-v2
 
 Raft uses a logical clock called a **Term**. Each follower has a randomized **Election Timeout**. If heartbeats from the leader stop and a timeout occurs, the node becomes a Candidate and requests votes for itself (RequestVote). The node that receives a majority of votes becomes the new Leader. By randomizing timeouts, Raft prevents split votes.
 
-### 4.3 Type Definition of Raft Node State in Haskell
+### 4.3 Type Definition of Raft Node [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) in Haskell
 
 Modeling Raft state transitions using a functional programming language clarifies its robustness. Below is an example of simplified type definitions in Haskell.
 

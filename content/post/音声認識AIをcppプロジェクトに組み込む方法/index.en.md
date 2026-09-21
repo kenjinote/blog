@@ -66,7 +66,7 @@ The Whisper model typically uses a window size $N = 400$ (25ms), a hop size $H =
 
 ---
 
-## 3. Architecture and Pipeline Design
+## 3. Architecture and [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) Design
 
 Let's design the audio processing pipeline in a C++ application. The flow starts from a file or microphone input, goes through preprocessing, inference via `whisper.cpp`, and finally reaches the text output.
 

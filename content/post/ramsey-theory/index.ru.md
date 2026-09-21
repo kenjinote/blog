@@ -258,7 +258,7 @@ $$
 
 ### Литература и источники
 
-- Университет штата Огайо (Ohio State University), [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): разбор двухцветных раскрасок ребер и малых чисел Рамсея.
+- Университет штата Огайо (Ohio [State](https://kenji.blog/ru/p/iac-infrastructure-as-code-terraform/) University), [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): разбор двухцветных раскрасок ребер и малых чисел Рамсея.
 - Юваль Вигдерсон (Yuval Wigderson), PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf): лекционные заметки о методах теории Рамсея и монотонных подпоследовательностях.
 
 Графики, сводные таблицы полного перебора, а также расчеты распределений вероятностей и количеств в этой статье получены с помощью прилагаемого скрипта на Python.

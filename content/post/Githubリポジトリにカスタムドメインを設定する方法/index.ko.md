@@ -82,7 +82,7 @@ Addresses:  185.199.108.153
 ## Github 저장소에 커스텀 도메인 설정하기
 1. 저장소 페이지를 열고 Settings를 클릭합니다.
 2. Pages를 클릭합니다.
-3. 저장소 소스를 그대로 공개하려면 Source에서 「Deploy from a branch」를 선택합니다. HUGO 등 소스를 빌드하는 경우에는 「GitHub Actions」를 선택합니다.
+3. 저장소 소스를 그대로 공개하려면 Source에서 「Deploy from a branch」를 선택합니다. HUGO 등 소스를 빌드하는 경우에는 「[GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)」를 선택합니다.
 4. Branch에서 공개할 브랜치를 선택하고 Save를 클릭합니다.
 5. Custom domain에 발급받은 도메인을 입력하고 Save를 클릭합니다.
 6. 필요에 따라 「Enforce HTTPS」에 체크하여 HTTPS 통신을 지원하도록 설정합니다.

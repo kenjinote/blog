@@ -18,7 +18,7 @@ Wir haben Informationen über die "Pflicht"-Markierung in Benutzeroberflächen (
 1. **Verwendung des Sternchens (\*)**
 
     * Es ist am weitesten verbreitet; Pflichtfelder werden mit einem "\*" versehen.
-    * Jedoch ist **eine Erklärung wie " * ist ein Pflichtfeld" am Anfang des Formulars erforderlich** ([Nielsen Norman Group][1], [California State University, Northridge][2]).
+    * Jedoch ist **eine Erklärung wie " * ist ein Pflichtfeld" am Anfang des Formulars erforderlich** ([Nielsen Norman Group][1], [California [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) University, Northridge][2]).
     * Es gibt auch Beispiele, die Farbe zur Hervorhebung verwenden (wie roten Text).
 
 2. **"Required" oder "(required)" im Label angeben**
@@ -72,7 +72,7 @@ Wir haben Informationen über die "Pflicht"-Markierung in Benutzeroberflächen (
 
 ## 🔗 Referenzlinks (UI-Richtlinienmaterialien)
 
-* NN/g: *Marking Required Fields in Forms* ([California State University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
+* NN/g: *Marking Required Fields in Forms* ([California [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
 * Deque: *Anatomy of Accessible Forms* ([Deque][3])
 * W3C Techniques: *H90 Indicating required form controls* ([W3C][5])
 * TPGi: *Indicating mandatory fields accessibly* ([TPGi][4])

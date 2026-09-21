@@ -36,7 +36,7 @@ La contrainte la plus importante dans ce calcul est la complexité de calcul ass
 
 $$ \text{Complexity} = O(N^2 \cdot d) $$
 
-Récemment, des recherches ont progressé sur des optimisations au niveau matériel telles que FlashAttention, ainsi que sur Sparse Attention et des architectures alternatives capables de traiter en temps linéaire $O(N)$ comme Mamba (State Space Models). Néanmoins, "comprendre parfaitement un contexte infini et générer une sortie globalement optimisée" reste extrêmement difficile.
+Récemment, des recherches ont progressé sur des optimisations au niveau matériel telles que FlashAttention, ainsi que sur Sparse Attention et des architectures alternatives capables de traiter en temps linéaire $O(N)$ comme Mamba ([State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) Space Models). Néanmoins, "comprendre parfaitement un contexte infini et générer une sortie globalement optimisée" reste extrêmement difficile.
 
 De plus, même si la fenêtre de contexte pouvait être physiquement agrandie, un phénomène appelé "Lost in the Middle (perte d'informations au milieu)" se produit. Les LLM sont fortement influencés par les informations au début et à la fin du prompt, et ont tendance à ignorer les exigences et contraintes importantes placées au milieu. C'est pourquoi, même si vous demandez à un LLM de lire l'intégralité du code source d'un système d'entreprise de plusieurs dizaines de milliers de lignes et de "faire un refactoring optimal", le code généré sera correct localement, mais s'effondrera dans son ensemble.
 

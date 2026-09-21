@@ -84,7 +84,7 @@ Kesenjangan digital ketiga tidak hanya menciptakan kesenjangan keterampilan pera
 Ada dua pendekatan utama untuk menggunakan model bahasa besar: "Menggunakan API cloud" atau "Melakukan inferensi (Inference) model secara lokal". Keduanya memiliki kelebihan dan kekurangan, dan hal ini menjadi dinding fisik dan ekonomi baru.
 
 ### Keterbatasan API Cloud dan Biaya Operasional
-Model perintis (frontier models) paling mutakhir (seperti GPT-4o, Claude 3.5 Sonnet, dll.) yang disediakan oleh OpenAI, Anthropic, dan Google umumnya diakses melalui API. Namun, jika Anda membangun agen otonom tingkat lanjut (Agentic Workflow) yang menghasilkan puluhan ribu panggilan API sehari, biayanya akan meledak.
+Model perintis (frontier models) paling mutakhir (seperti GPT-4o, Claude 3.5 Sonnet, dll.) yang disediakan oleh OpenAI, Anthropic, dan Google umumnya diakses melalui API. Namun, jika Anda membangun agen otonom tingkat lanjut (Agentic [Workflow](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)) yang menghasilkan puluhan ribu panggilan API sehari, biayanya akan meledak.
 
 Total biaya API $C_{cloud}$ bergantung pada jumlah token masukan dan token keluaran.
 

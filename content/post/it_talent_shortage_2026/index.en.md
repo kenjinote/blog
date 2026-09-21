@@ -26,7 +26,7 @@ For many years, the Japanese IT industry was supported by the SIer (System Integ
 
 However, as of 2026, this model has reached its limit. Because the essence of DX (Digital Transformation) has shifted from "mere IT implementation" to "business model transformation," low-agility waterfall development can no longer keep up with market changes.
 
-Modern development processes are built on the premise of being **cloud-native** and **AI-driven**. Containerization (Docker/Kubernetes), microservices architecture, and CI/CD pipeline automation are no longer "special technologies" but "standard infrastructure."
+Modern development processes are built on the premise of being **cloud-native** and **AI-driven**. [Container](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)ization ([Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/)), microservices architecture, and [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) pipeline automation are no longer "special technologies" but "standard infrastructure."
 
 ```mermaid
 graph TD
@@ -137,7 +137,7 @@ AI can write code, but it cannot "unravel the complex specifications of a busine
 ### B. Architecture and Non-Functional Requirement Design
 "Non-functional requirements" such as system availability, scalability, security, and performance are not automatically optimized by AI. Architectural decisions like "which cloud services should be combined," "what the communication protocol between microservices should be," or "where to draw DB transaction boundaries" still rely heavily on advanced human experience and intuition.
 
-### C. MLOps and Data Pipeline Construction
+### C. MLOps and Data [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) Construction
 The concept of "MLOps" for continually operating generative AI and machine learning models in production environments is becoming increasingly important. Talent with skills located at the intersection of software engineering and data science—such as monitoring model drift (accuracy degradation), pipelining continuous training, and optimizing GPU resources—is in high demand.
 
 ---

@@ -11,7 +11,7 @@ tags: ["Idea Generation", "Obsidian", "RSS", "Knowledge Management"]
 
 作為工程師或研究人員經營技術部落格時，幾乎無可避免會面臨到一道牆，那就是「靈感枯竭 (ネタ切れ)」。即使最初的幾篇文章能順利寫出，在持續更新的過程中，往往會陷入「不知道接下來該寫什麼」、「為了輸出的輸入量壓倒性不足」等煩惱之中。撰寫技術部落格不僅僅是寫作技巧，更大幅依賴於日常知識的收集、整理，以及將它們組合以創造新價值的一系列系統設計。
 
-本文將極度詳細且具技術性地解說，如何建立一套 **系統化的輸入與輸出管道 (Pipeline)** ，以半永久地持續產生技術文章的點子。我們將從使用 API 自動從 Hacker News 與 Lobsters 等海外高品質資訊來源擷取趨勢話題，並透過 GitHub Actions 定期執行的機制開始。接著，利用 Obsidian 的卡片盒筆記法（Zettelkasten）將收集到的資訊體系化為知識，並結合 OpenAI 的 Embeddings API 與 Pinecone（向量資料庫）實現語意搜尋，建構出一套進階的個人知識管理（PKM: Personal Knowledge Management）系統。
+本文將極度詳細且具技術性地解說，如何建立一套 **系統化的輸入與輸出管道 ([Pipeline](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/))** ，以半永久地持續產生技術文章的點子。我們將從使用 API 自動從 Hacker News 與 Lobsters 等海外高品質資訊來源擷取趨勢話題，並透過 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 定期執行的機制開始。接著，利用 Obsidian 的卡片盒筆記法（Zettelkasten）將收集到的資訊體系化為知識，並結合 OpenAI 的 Embeddings API 與 Pinecone（向量資料庫）實現語意搜尋，建構出一套進階的個人知識管理（PKM: Personal Knowledge Management）系統。
 
 此外，為了彌補人類記憶的極限，我們將使用 Anki 來實踐基於艾賓浩斯遺忘曲線的間隔重複（Spaced Repetition），並將鞏固的知識透過「組合的創造力（Combinatorial Creativity）」昇華為新點子。我們將搭配具體的數學模型與 Python 腳本實作範例，深入探討這一連串的過程。
 
@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
 這個腳本提供了超越單純 RSS 閱讀器的價值。因為透過分數進行過濾，我們只能擷取出社群真正關注的技術話題（低雜訊、高訊號）。
 
-## 3. 透過 GitHub Actions 進行排程與自動化
+## 3. 透過 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 進行排程與自動化
 
 每天手動執行撰寫好的 Python 腳本非常麻煩。自動化的基本原則就是盡可能減少人類的介入。我們將利用 GitHub Actions 的 Cron 功能，建立一個每天在指定時間執行腳本，並將結果自動提交 (commit) 到儲存庫的機制。
 
@@ -316,7 +316,7 @@ $$ R = e^{-\frac{t}{S}} $$
 
 1. **[舊技術] × [新典範]** ：例「從 COBOL 架構中學習現代微服務設計的反模式」
 2. **[前端] × [後端概念]** ：例「從資料庫交易隔離級別的視角，解說 React 虛擬 DOM 更新演算法」
-3. **[抽象的數學與理論] × [具體實作]** ：例「用圖論解讀 Kubernetes Pod 排程最佳化」
+3. **[抽象的數學與理論] × [具體實作]** ：例「用圖論解讀 [Kubernetes](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/) [Pod](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/) 排程最佳化」
 
 為了刻意產生這種組合，可以利用剛才建構的 Pinecone 語意搜尋系統，隨機擷取概念 A 與概念 B，並對 AI（如 ChatGPT）丟出提示詞 (Prompt)：「請提出 5 個結合這兩者的技術部落格標題與大綱草案」，藉此能無限產生出自己想不到的嶄新切入點文章點子。
 

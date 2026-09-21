@@ -11,7 +11,7 @@ tags: ["Idea Generation", "Obsidian", "RSS", "Knowledge Management"]
 
 作为一名工程师或研究人员运营技术博客，几乎肯定会面临一个障碍。那就是“灵感枯竭”。即使前几篇文章写得很顺利，但在坚持写作的过程中，经常会被“接下来该写什么？”“用于输出的输入量严重不足”等烦恼所困扰。技术博客的撰写不仅依赖于写作技巧，在很大程度上更依赖于日常知识的收集、整理，以及将这些知识组合起来创造新价值的一整套系统设计。
 
-在本文中，我将极其详细且从技术的角度，为你讲解一套能半永久性地持续产生技术文章创意的 **系统化输入和输出管道** 。我们将从利用 API 从 Hacker News 和 Lobsters 等海外高质量信息源中自动提取趋势话题，并通过 GitHub Actions 定期执行的机制开始。然后，利用 Obsidian 的卡片盒笔记法（Zettelkasten）将收集到的信息体系化为知识，并结合 OpenAI 的 Embeddings API 和 Pinecone（向量数据库）实现语义搜索，从而构建一个高级的个人知识管理（PKM: Personal Knowledge Management）系统。
+在本文中，我将极其详细且从技术的角度，为你讲解一套能半永久性地持续产生技术文章创意的 **系统化输入和输出管道** 。我们将从利用 API 从 Hacker News 和 Lobsters 等海外高质量信息源中自动提取趋势话题，并通过 [GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 定期执行的机制开始。然后，利用 Obsidian 的卡片盒笔记法（Zettelkasten）将收集到的信息体系化为知识，并结合 OpenAI 的 Embeddings API 和 Pinecone（向量数据库）实现语义搜索，从而构建一个高级的个人知识管理（PKM: Personal Knowledge Management）系统。
 
 此外，为了弥补人类记忆的局限性，我们将使用 Anki 实践基于艾宾浩斯遗忘曲线的间隔重复（Spaced Repetition），并将沉淀的知识通过“组合创造力（Combinatorial Creativity）”升华为新创意的这一系列过程，结合具体的数学模型和 Python 脚本实现示例进行深入探讨。
 
@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
 这个脚本提供了比简单的 RSS 阅读器更高的价值。因为通过分数过滤，可以仅提取出社区中真正受到关注的技术话题（高信噪比）。
 
-## 3. 使用 GitHub Actions 进行定时调度与自动化
+## 3. 使用 [GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 进行定时调度与自动化
 
 每天手动运行编写的 Python 脚本非常麻烦。自动化的基本原则就是将人为干预降到最低。利用 GitHub Actions 的 Cron 功能，构建一个每天在指定时间运行脚本，并将结果自动提交到仓库的机制。
 
@@ -316,7 +316,7 @@ $$ R = e^{-\frac{t}{S}} $$
 
 1. **[旧技术] × [新范式]**: 例如“从 COBOL 架构中学习现代微服务设计的反模式”
 2. **[前端] × [后端概念]**: 例如“从数据库事务隔离级别的视角解读 React 的虚拟 DOM 更新算法”
-3. **[抽象数学与理论] × [具体实现]**: 例如“用图论解读 Kubernetes Pod 调度的优化”
+3. **[抽象数学与理论] × [具体实现]**: 例如“用图论解读 [Kubernetes](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/) [Pod](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/) 调度的优化”
 
 为了有意识地诱发这种组合，我们可以利用之前构建的 Pinecone 语义搜索系统，随机提取概念 A 和概念 B，然后向 AI（如 ChatGPT 等）发出提示词：“请将这两个概念结合，提出 5 个技术博客的标题和目录大纲草案”，通过这种方式，你可以无限生成自己无法想到的新颖视角的文章灵感。
 

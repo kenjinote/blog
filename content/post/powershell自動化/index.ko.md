@@ -34,7 +34,7 @@ Windows에서는 기본 상태에서 악의적인 스크립트가 잘못 실행�
 - **AllSigned**: 신뢰할 수 있는 게시자가 서명한 스크립트만 실행을 허용합니다.
 - **RemoteSigned**: 로컬에서 작성된 스크립트는 그대로 실행할 수 있지만, 인터넷에서 다운로드한 스크립트에는 서명이 필요합니다.
 - **Unrestricted**: 모든 스크립트를 실행할 수 있지만, 인터넷에서 다운로드한 스크립트를 실행할 때는 경고가 표시됩니다.
-- **Bypass**: 아무것도 차단되지 않으며 경고도 표시되지 않습니다. 일시적인 스크립트 실행(CI/CD 파이프라인 등)에서 자주 사용됩니다.
+- **Bypass**: 아무것도 차단되지 않으며 경고도 표시되지 않습니다. 일시적인 스크립트 실행([CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인 등)에서 자주 사용됩니다.
 
 기업의 로컬 환경에서 자체 제작 스크립트를 작업 스케줄러 등을 통해 실행할 경우, 가장 현실적이고 안전한 설정은 `RemoteSigned`입니다. 관리자 권한으로 PowerShell을 실행하고 아래 명령을 실행합니다.
 
@@ -108,7 +108,7 @@ try {
 
 ## 작업 스케줄러 연동(Register-ScheduledTask)
 
-스크립트가 완성되면 다음으로 그 스크립트를 주기적으로 실행하는 메커니즘이 필요합니다. Windows에서 가장 신뢰성이 높은 것은 '작업 스케줄러'입니다. GUI(`taskschd.msc`)를 통해 설정할 수도 있지만, 인프라의 절차서를 코드화(Infrastructure as Code)하는 관점에서 PowerShell cmdlet을 사용하여 작업을 등록하는 방법을 설명합니다.
+스크립트가 완성되면 다음으로 그 스크립트를 주기적으로 실행하는 메커니즘이 필요합니다. Windows에서 가장 신뢰성이 높은 것은 '작업 스케줄러'입니다. GUI(`taskschd.msc`)를 통해 설정할 수도 있지만, 인프라의 절차서를 코드화([Infrastructure as Code](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/))하는 관점에서 PowerShell cmdlet을 사용하여 작업을 등록하는 방법을 설명합니다.
 
 PowerShell에는 `ScheduledTasks` 모듈이 준비되어 있으며, 이를 사용하면 트리거(언제 실행할지), 액션(무엇을 실행할지), 주체(어떤 사용자 권한으로 실행할지)를 상세하게 정의할 수 있습니다.
 

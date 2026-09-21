@@ -163,7 +163,7 @@ Tenga en cuenta que cuanto mayor sea la longitud del contexto $s$, la VRAM reque
 # 5. Práctica 1: Configuración más rápida y corta usando Ollama
 
 Una vez entendida la teoría, ejecutemos un LLM en el entorno Windows.
-En 2026, la herramienta más amigable para el usuario es "Ollama". Proporciona una CLI intuitiva tipo Docker.
+En 2026, la herramienta más amigable para el usuario es "Ollama". Proporciona una CLI intuitiva tipo [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ## 5.1 Instalación y ejecución
 

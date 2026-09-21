@@ -15,7 +15,7 @@ tags:
   - redux
 ---
 
-Dalam pengembangan frontend web, area yang paling banyak diperdebatkan dan terus berevolusi adalah "Manajemen State" (State Management). Aplikasi web modern telah bertransformasi dari sekadar menampilkan dokumen menjadi perangkat lunak dengan interaksi kompleks yang sebanding dengan aplikasi desktop. Seiring dengan hal itu, bagaimana mengelola state aplikasi dan menyinkronkannya dengan UI telah menjadi tantangan terbesar yang dihadapi oleh semua insinyur frontend.
+Dalam pengembangan frontend web, area yang paling banyak diperdebatkan dan terus berevolusi adalah "Manajemen [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/)" (State Management). Aplikasi web modern telah bertransformasi dari sekadar menampilkan dokumen menjadi perangkat lunak dengan interaksi kompleks yang sebanding dengan aplikasi desktop. Seiring dengan hal itu, bagaimana mengelola state aplikasi dan menyinkronkannya dengan UI telah menjadi tantangan terbesar yang dihadapi oleh semua insinyur frontend.
 
 Pada artikel ini, kita akan melihat kembali sejarah manajemen state frontend, menelusuri tantangan dan solusi di setiap era, dan menggali secara mendalam serta terperinci tentang pergeseran paradigma menuju masa depan (terutama evolusi Signals dan Reactivity).
 
@@ -139,7 +139,7 @@ Redux menggabungkan konsep pemrograman fungsional (terutama arsitektur Elm) ke d
 Redux didasarkan pada tiga prinsip ketat berikut:
 
 1.  **Single source of truth (Satu sumber kebenaran tunggal)**:
-    State seluruh aplikasi disimpan sebagai pohon objek di dalam satu Store (penyimpanan) tunggal.
+    [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) seluruh aplikasi disimpan sebagai pohon objek di dalam satu Store (penyimpanan) tunggal.
 2.  **State is read-only (State bersifat hanya baca)**:
     Satu-satunya cara untuk mengubah state adalah dengan menerbitkan (Dispatch) objek Action yang menunjukkan apa yang terjadi.
 3.  **Changes are made with pure functions (Perubahan dilakukan dengan fungsi murni)**:
@@ -192,7 +192,7 @@ Suara-suara yang mempertanyakan "Bukankah Redux itu berlebihan (overkill)?" sema
 
 Pembaruan Context API pada React 16.3 di tahun 2018, dan pengenalan **React Hooks** pada React 16.8 di tahun 2019, menjadi titik balik utama dalam sejarah manajemen state.
 
-### 6.1 Berbagi State dengan Fitur Bawaan
+### 6.1 Berbagi [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) dengan Fitur Bawaan
 
 Dengan menggunakan Context API, data dapat diteruskan secara langsung ke komponen yang berada jauh di dalam pohon komponen, tanpa perlu melakukan oper-operan properti (Prop Drilling).
 Selanjutnya, dengan menggabungkan Hook `useReducer`, menjadi mungkin untuk mengimplementasikan manajemen state seperti Redux hanya dengan fitur bawaan React.
@@ -237,7 +237,7 @@ Untuk mencegah hal ini, Anda harus memecah Context menjadi bagian-bagian kecil b
 
 Karena React mengadopsi model rendering "top-down" (dari atas ke bawah) secara default, masalah mendasar pun mencuat: perubahan state global sangat rentan memicu rerender yang tidak perlu di seluruh pohon.
 
-## 7. Pemisahan State: Server State dan Client State
+## 7. Pemisahan [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/): Server State dan Client State
 
 Sekitar waktu ini, terjadi pergeseran paradigma yang penting dalam manajemen state. Yaitu, kesadaran bahwa "tidak semua state harus dimasukkan ke dalam satu store global tunggal".
 Khususnya, data yang diambil dari server (Server State) memiliki sifat yang pada dasarnya berbeda dari state UI (Client State) yang hanya diselesaikan di frontend.
@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 Pustaka-pustaka ini mengabstraksi proses rumit dari "mencache state server secara lokal dan menyinkronkannya sesuai kebutuhan".
 Sebagai hasilnya, data yang perlu dikelola dalam store global seperti Redux berkurang drastis menjadi hanya "client state murni", yang secara signifikan meringankan beban manajemen state.
 
-## 8. Atomic State Management: Recoil dan Jotai
+## 8. Atomic [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Management: Recoil dan Jotai
 
 Setelah Server State dipisahkan, perlombaan baru dimulai untuk melihat bagaimana mengelola sisa Client State secara efisien.
 Pendekatan yang disebut **Atomic State Management** lahir untuk memecahkan masalah performa Context API dan model rendering (top-down) React.
@@ -341,7 +341,7 @@ function Counter() {
 
 Zustand telah mengukuhkan posisinya sebagai "Redux versi modern" yang memadukan kekokohan Redux dengan kesederhanaan Hooks.
 
-### 9.2 Valtio: Manajemen State yang Mutable melalui Proxy
+### 9.2 Valtio: Manajemen [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) yang Mutable melalui Proxy
 
 Dalam dunia React, aturan bahwa "state harus diperlakukan secara immutable (tidak dapat diubah)" dipandang sebagai sesuatu yang mutlak. Namun, memperbarui objek JavaScript secara immutable memakan waktu (terutama ketika nesting-nya dalam).
 
@@ -440,7 +440,7 @@ Dalam SSR konvensional (seperti Next.js), setelah mengirimkan HTML yang dihasilk
 
 Kerangka kerja generasi berikutnya seperti **Qwik** meninjau ulang manajemen state dan pemuatan JavaScript secara mendasar. Mereka mengusulkan konsep yang disebut **Resumability (Kemampuan untuk Dilanjutkan)**.
 
-State yang di-render di server akan diserialisasi dan ditanamkan di dalam HTML, lalu pada klien, alih-alih "memulai" eksekusi JavaScript dari nol, ia "melanjutkan (Resume)" dari status di mana server dijeda. Hal ini mengurangi ukuran JavaScript pada pemuatan awal ke batas ekstrem, dan menjadikan overhead Hydration menjadi nol.
+[State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) yang di-render di server akan diserialisasi dan ditanamkan di dalam HTML, lalu pada klien, alih-alih "memulai" eksekusi JavaScript dari nol, ia "melanjutkan (Resume)" dari status di mana server dijeda. Hal ini mengurangi ukuran JavaScript pada pemuatan awal ke batas ekstrem, dan menjadikan overhead Hydration menjadi nol.
 
 ## 13. Kesimpulan: Ke Arah Mana Manajemen State Menuju?
 

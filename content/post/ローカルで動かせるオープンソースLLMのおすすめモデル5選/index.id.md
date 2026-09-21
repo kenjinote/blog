@@ -250,7 +250,7 @@ Ini adalah sebuah pergerakan ekstrim di atas ambang kenormalan batas laju pembac
 Ekosistem perangkat lunak yang memungkinkan pengoperasian LLM open source berkemampuan tinggi secara lokal saat ini juga sangat beragam. Berikut kami perkenalkan 3 aplikasi / alat pengembang utamanya.
 
 ### 1. Ollama
-Saat ini piranti inilah yang terpopuler dan paling mudah dipakai. Sama seperti layanan Docker yang tinggal ketik perintah baris lantas proses pengunduhan berikut dengan tahap eksekusinya bisa jalan hanya dengan satu entakan belaka. Sistem bisa dinikmati melintasi sistem piranti semacam Mac, Windows, maupun Linux secara holistik.
+Saat ini piranti inilah yang terpopuler dan paling mudah dipakai. Sama seperti layanan [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) yang tinggal ketik perintah baris lantas proses pengunduhan berikut dengan tahap eksekusinya bisa jalan hanya dengan satu entakan belaka. Sistem bisa dinikmati melintasi sistem piranti semacam Mac, Windows, maupun Linux secara holistik.
 Buka program terminal kalian dan hantamkan isyarat perintah bawah ini buat membangkitkan kejeniusan dari model Llama 3:
 
 ```bash

@@ -26,7 +26,7 @@ description: 'Объясняем, как устанавливать прилож
 - Visual Studio Code (команда `winget install vscode`)
 - Slack (команда `winget install SlackTechnologies.Slack`)
 - Discord (команда `winget install Discord.Discord`)
-- Docker Desktop (команда `winget install Docker.DockerDesktop`)
+- [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (команда `winget install Docker.DockerDesktop`)
 - Git (команда `winget install Git`)
 - 7zip (команда `winget install 7zip`)
 - VLC (команда `winget install VideoLAN.VLC`)

@@ -18,7 +18,7 @@ tags:
 
 在现代软件开发中， **函数式编程** （[Functional Programming](https://kenji.blog/zh-cn/p/oop-vs-fp-vs-dop/)）早已不再是仅面向部分狂热爱好者的方案，而是成为了广泛普及的范式。从React等前端技术，到[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)和Scala，甚至Java和C#等面向对象语言，都引入了将函数作为一等公民对待以及消除副作用等概念。
 
-然而，在这个范式的背后，存在着在计算机被物理制造出来之前的1930年代所构建的深奥数学理论。那就是由阿隆佐·邱奇（Alonzo Church）提出的 **Lambda演算** （ $\lambda$-calculus ）。
+然而，在这个范式的背后，存在着在计算机被物理制造出来之前的1930年代所构建的深奥数学理论。那就是由阿隆佐·邱奇（Alonzo Church）提出的 **[Lambda](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/)演算** （ $\lambda$-calculus ）。
 
 本文将从Lambda演算的基础理论开始，深入探讨它如何影响了早期的编程语言 **Lisp** ，并最终发展到纯函数式语言 **Haskell** 的历史与理论发展过程。
 
@@ -91,7 +91,7 @@ graph TD
 
 ## 4. 邱奇编码：无中生有
 
-在Lambda演算中，完全不存在内置的数据类型（数字、布尔值、列表等）。一切都只是函数。然而，邱奇证明了通过巧妙地组合函数，可以表示任何数据结构和控制结构。这被称为 **邱奇编码** （Church Encoding）。
+在[Lambda](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/)演算中，完全不存在内置的数据类型（数字、布尔值、列表等）。一切都只是函数。然而，邱奇证明了通过巧妙地组合函数，可以表示任何数据结构和控制结构。这被称为 **邱奇编码** （Church Encoding）。
 
 ### 4.1 布尔值（邱奇布尔值）
 
@@ -141,7 +141,7 @@ print(to_int(ADD(TWO)(SUCC(TWO)))) # 2 + 3 = 5
 
 ## 5. 不动点组合子与图灵完备性
 
-在Lambda演算中，函数没有名字（匿名函数）。那么，如何实现递归调用呢？解决这个问题的是 **不动点组合子** （Fixed-point combinator），特别是著名的 **Y组合子** 。
+在[Lambda](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/)演算中，函数没有名字（匿名函数）。那么，如何实现递归调用呢？解决这个问题的是 **不动点组合子** （Fixed-point combinator），特别是著名的 **Y组合子** 。
 
 $$
 Y = \lambda f. (\lambda x. f \ (x \ x)) \ (\lambda x. f \ (x \ x))
@@ -164,7 +164,7 @@ Lisp最大的特点是代码本身被表示为数据（列表）（同像性：H
 ;; 结果: (1 4 9 16 25)
 ```
 
-尽管Lisp是动态类型的，并非完全是理论上的Lambda演算，但它成为了在实际计算机上实现“将函数作为数据处理”“将计算视为函数的评估”这一函数式编程精神的第一个伟大里程碑。
+尽管Lisp是动态类型的，并非完全是理论上的[Lambda](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/)演算，但它成为了在实际计算机上实现“将函数作为数据处理”“将计算视为函数的评估”这一函数式编程精神的第一个伟大里程碑。
 
 ## 7. 简单类型Lambda演算与柯里-霍华德同构
 
@@ -204,7 +204,7 @@ graph LR
 
 ### 8.1 惰性求值（Lazy Evaluation）
 
-Haskell默认采用 **惰性求值** ，即表达式只有在其值真正被需要时才会被评估。通过这种方式，可以自然地表示无限列表等概念。这对应于Lambda演算中的“正则序归约（Normal-order reduction）”。
+Haskell默认采用 **惰性求值** ，即表达式只有在其值真正被需要时才会被评估。通过这种方式，可以自然地表示无限列表等概念。这对应于[Lambda](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/)演算中的“正则序归约（Normal-order reduction）”。
 
 ```haskell
 -- Haskell中无限列表的示例
@@ -225,8 +225,8 @@ firstTenEvens = take 10 (map (*2) naturals)
 
 ## 9. 总结：从数学到软件工程
 
-在20世纪30年代，仅凭纸笔，阿隆佐·邱奇描绘的 **Lambda演算** 绝不是一门过时的理论。它是从与图灵机不同的角度重新审视“计算是什么”，并通过Lisp将其释放到可编程的世界中。然后，经过与逻辑学的完美结合——柯里-霍华德同构，最终结出了像Haskell这样具有强大而健壮类型系统的现代语言的果实。
+在20世纪30年代，仅凭纸笔，阿隆佐·邱奇描绘的 **[Lambda](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/)演算** 绝不是一门过时的理论。它是从与图灵机不同的角度重新审视“计算是什么”，并通过Lisp将其释放到可编程的世界中。然后，经过与逻辑学的完美结合——柯里-霍华德同构，最终结出了像Haskell这样具有强大而健壮类型系统的现代语言的果实。
 
-今天，当我们在React中使用 `map` 或 `filter` ，在[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)中利用代数数据类型，在Python中编写Lambda表达式时，我们都受益于邱奇伟大的知识遗产。
+今天，当我们在React中使用 `map` 或 `filter` ，在[Rust](https://kenji.blog/zh-cn/p/webassembly-wasm-current-future/)中利用代数数据类型，在Python中编写[Lambda](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/)表达式时，我们都受益于邱奇伟大的知识遗产。
 
 函数式编程不仅仅是一种编码风格，它是 **逼近计算本质的数学哲学** 。

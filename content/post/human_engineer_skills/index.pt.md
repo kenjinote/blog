@@ -36,7 +36,7 @@ A restrição mais grave nesse cálculo é a complexidade computacional associad
 
 $$ \text{Complexity} = O(N^2 \cdot d) $$
 
-Nos últimos anos, avanços têm sido feitos em otimizações no nível de hardware, como FlashAttention, e na pesquisa de arquiteturas alternativas capazes de processamento em tempo linear $O(N)$, como Sparse Attention e Mamba (State Space Models). No entanto, continua sendo extremamente difícil "compreender perfeitamente um contexto infinito e gerar uma saída otimizada globalmente".
+Nos últimos anos, avanços têm sido feitos em otimizações no nível de hardware, como FlashAttention, e na pesquisa de arquiteturas alternativas capazes de processamento em tempo linear $O(N)$, como Sparse Attention e Mamba ([State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) Space Models). No entanto, continua sendo extremamente difícil "compreender perfeitamente um contexto infinito e gerar uma saída otimizada globalmente".
 
 Além disso, mesmo que a janela de contexto possa ser expandida fisicamente, ocorre um fenômeno chamado "Lost in the Middle (Perda de informação no meio)". Os LLMs são fortemente influenciados pelas informações no início e no final do prompt, e tendem a ignorar requisitos e restrições importantes localizados no meio. É por isso que, ao fornecer o código-fonte inteiro de um sistema corporativo de dezenas de milhares de linhas a um LLM e pedir "Faça a refatoração ideal", o resultado muitas vezes é um código localmente correto, mas quebrado no contexto geral.
 

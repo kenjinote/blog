@@ -100,7 +100,7 @@ Das Quantengatter-Modell ist eine quantenmechanische Erweiterung klassischer Log
 
 ### 3.1. Unitäre Transformationen und Zustandsvektor
 
-Beim Quantengatter-Modell wird der Gesamtzustand des Qubit-Systems als "Zustandsvektor" (State Vector) $|\psi\rangle$ dargestellt. Der Zustand eines einzelnen Qubits wird als Linearkombination der Basiszustände $|0\rangle$ und $|1\rangle$ wie folgt beschrieben:
+Beim Quantengatter-Modell wird der Gesamtzustand des Qubit-Systems als "Zustandsvektor" ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Vector) $|\psi\rangle$ dargestellt. Der Zustand eines einzelnen Qubits wird als Linearkombination der Basiszustände $|0\rangle$ und $|1\rangle$ wie folgt beschrieben:
 $$ |\psi\rangle = \alpha |0\rangle + \beta |1\rangle $$
 Hierbei sind $\alpha$ und $\beta$ komplexe Wahrscheinlichkeitsamplituden, für die $|\alpha|^2 + |\beta|^2 = 1$ gilt. Dieser Zustand wird geometrisch oft als Punkt auf der "Bloch-Kugel" (Bloch Sphere) veranschaulicht.
 

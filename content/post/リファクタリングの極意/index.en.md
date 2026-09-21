@@ -318,7 +318,7 @@ It is unrealistic to manually modify a large-scale legacy codebase. Enlisting th
 
 - **Clang-Tidy**: A powerful linter and static analysis tool for C++. By enabling the `modernize-*` checks, it can automatically apply (Fix-it) things like applying `auto`, replacing with `nullptr`, adding `override`, etc.
 - **AddressSanitizer (ASan)**: By integrating it as a compilation option (`-fsanitize=address`), it accurately pinpoints runtime memory leaks and buffer overruns. You should definitely enable it when running tests.
-- **Building a CI/CD Pipeline**: Use GitHub Actions or GitLab CI to run builds, automated testing, and static analysis for every pull request, preventing the intrusion of new technical debt.
+- **Building a [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)**: Use [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) or GitLab CI to run builds, automated testing, and static analysis for every pull request, preventing the intrusion of new technical debt.
 
 ---
 

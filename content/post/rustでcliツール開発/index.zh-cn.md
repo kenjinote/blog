@@ -408,7 +408,7 @@ strip = true        # 移除符号信息，极大地减小二进制文件的体�
 
 ---
 
-## 12. CI/CD 与分发 (Publishing)
+## 12. [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 与分发 (Publishing)
 
 这是将创建的工具分发到世界各地的步骤。
 
@@ -421,8 +421,8 @@ cargo publish
 ```
 发布后，世界各地的用户只需通过一条 `cargo install gh-stats-fetcher` 命令就能安装你的工具了。
 
-### 借助 GitHub Actions 自动发布
-构建 CI/CD 流水线，将交叉编译后的二进制文件自动上传到 GitHub Releases。在 `.github/workflows/release.yml` 中写入如下设置。这样一来，只需推送标签（tag），就能自动构建适用于 Linux、macOS、Windows 的二进制文件，并作为发布资产附加（受篇幅限制，这里省略了详细的 YAML 描述，但目前最佳实践是使用诸如 `taiki-e/upload-rust-binary-action` 的 Action）。
+### 借助 [GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 自动发布
+构建 [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 流水线，将交叉编译后的二进制文件自动上传到 GitHub Releases。在 `.github/workflows/release.yml` 中写入如下设置。这样一来，只需推送标签（tag），就能自动构建适用于 Linux、macOS、Windows 的二进制文件，并作为发布资产附加（受篇幅限制，这里省略了详细的 YAML 描述，但目前最佳实践是使用诸如 `taiki-e/upload-rust-binary-action` 的 Action）。
 
 ---
 

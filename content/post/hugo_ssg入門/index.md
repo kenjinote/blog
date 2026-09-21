@@ -168,7 +168,7 @@ Hugoはデフォルトで `categories` と `tags` というタクソノミーを
 
 WordPressからHugoへの移行は、データベース内の動的コンテンツをいかにクリーンな静的ファイル（Markdown + Front Matter）に変換し、既存のURL構造を維持するかが成功の鍵となります。
 
-以下に、一般的な移行パイプラインのフローを示します。
+以下に、一般的な移行[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)のフローを示します。
 
 ```mermaid
 flowchart LR
@@ -236,11 +236,11 @@ hugo --minify
 
 このコマンドにより、サイト全体のファイルが `public/` ディレクトリに出力されます。`--minify` オプションを付与することで、不要な改行やスペースが削除され、ファイルサイズがさらに削減されます。前述した数学モデルにおけるネットワーク遅延（$T_{network}$）の削減に直接寄与します。
 
-### 5.3 デプロイの自動化（CI/CD）
+### 5.3 デプロイの自動化（[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)）
 
 静的ファイルの生成を毎回ローカルのPCで行い、FTP等でアップロードするのは非効率的です。現代のSSG運用では、Gitリポジトリ（GitHub等）へのプッシュをトリガーとして、自動的にビルドとデプロイを行うCI/CD環境を構築するのがベストプラクティスです。
 
-例えば、GitHub Actionsを利用してCloudflare PagesやGitHub Pagesへデプロイする設定（YAMLファイル）の基本形は以下のようになります。
+例えば、[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を利用してCloudflare PagesやGitHub Pagesへデプロイする設定（YAMLファイル）の基本形は以下のようになります。
 
 ```yaml
 # .github/workflows/hugo.yml の例
@@ -292,7 +292,7 @@ jobs:
         uses: actions/deploy-pages@v2
 ```
 
-このように設定することで、「Markdownで記事を書いてGitHubへPushする」というアクションだけで、数分後には最新のサイトが本番環境へ公開される自動化パイプラインが完成します。
+このように設定することで、「Markdownで記事を書いてGitHubへPushする」というアクションだけで、数分後には最新のサイトが本番環境へ公開される自動化[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)が完成します。
 
 ---
 

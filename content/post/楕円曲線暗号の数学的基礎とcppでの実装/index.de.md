@@ -130,7 +130,7 @@ Alle Operationen werden über dem **endlichen Körper $\mathbb{F}_p$ (modulo $p$
 Seien die Punkte $P = (x_1, y_1)$ und $Q = (x_2, y_2)$.
 Zudem sei der berechnete Ergebnispunkt $R = P + Q = (x_3, y_3)$.
 
-Die Steigung der Geraden nennen wir $\lambda$ (Lambda).
+Die Steigung der Geraden nennen wir $\lambda$ ([Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)).
 
 **[Fall 1: Wenn $P \neq Q$ (Punktaddition)]**
 Die Steigung $\lambda$ ist die Änderungsrate zwischen den beiden Punkten.

@@ -26,7 +26,7 @@ description: 'IT 업계의 「2026년 문제」의 진실. 생성 AI의 대두�
 
 하지만 2026년 현재 이 모델은 한계에 다다랐습니다. DX(디지털 트랜스포메이션)의 본질이 '단순한 IT화'에서 '비즈니스 모델의 변혁'으로 이동하면서, 민첩성(Agility)이 낮은 워터폴 개발로는 시장의 변화를 따라잡을 수 없게 되었습니다.
 
-현대의 개발 프로세스는 **클라우드 네이티브 ** 이며, **AI 주도** 인 것을 전제로 합니다. 컨테이너화(Docker/Kubernetes), 마이크로서비스 아키텍처, CI/CD 파이프라인의 자동화는 더 이상 '특별한 기술'이 아니라 '표준적인 인프라'입니다.
+현대의 개발 프로세스는 **클라우드 네이티브 ** 이며, **AI 주도** 인 것을 전제로 합니다. 컨테이너화([Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/)), 마이크로서비스 아키텍처, [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인의 자동화는 더 이상 '특별한 기술'이 아니라 '표준적인 인프라'입니다.
 
 ```mermaid
 graph TD

@@ -236,11 +236,11 @@ hugo --minify
 
 Perintah ini menampilkan file seluruh situs ke dalam direktori `public/`. Dengan menambahkan opsi `--minify`, baris baru dan spasi yang tidak perlu akan dihapus, sehingga ukuran file akan semakin dikurangi. Ini berkontribusi langsung pada pengurangan latensi jaringan ($T_{network}$) dalam model matematika yang disebutkan sebelumnya.
 
-### 5.3 Otomatisasi Deploy (CI/CD)
+### 5.3 Otomatisasi Deploy ([CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/))
 
 Menghasilkan file statis setiap kali di PC lokal dan mengunggahnya melalui FTP dll. tidaklah efisien. Dalam operasi SSG modern, praktik terbaik adalah membangun lingkungan CI/CD yang secara otomatis melakukan build dan deploy dengan memanfaatkan push ke repositori Git (seperti GitHub) sebagai pemicu (trigger).
 
-Sebagai contoh, bentuk dasar pengaturan (file YAML) untuk men-deploy ke Cloudflare Pages atau GitHub Pages menggunakan GitHub Actions adalah sebagai berikut.
+Sebagai contoh, bentuk dasar pengaturan (file YAML) untuk men-deploy ke Cloudflare Pages atau GitHub Pages menggunakan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) adalah sebagai berikut.
 
 ```yaml
 # Contoh .github/workflows/hugo.yml

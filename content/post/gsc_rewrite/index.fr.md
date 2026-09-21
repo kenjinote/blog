@@ -238,13 +238,13 @@ def extract_missing_keywords(documents):
 # print(missing_keywords)
 ```
 
-Grâce à cette analyse, vous pouvez découvrir quantitativement **des omissions de sujets (lacunes de contenu)**, comme « En fait, les meilleurs articles mentionnent également 'comment déployer sur des conteneurs Docker' et 'la construction de pipelines CI/CD', mais mon article ne l'aborde pas ».
+Grâce à cette analyse, vous pouvez découvrir quantitativement **des omissions de sujets (lacunes de contenu)**, comme « En fait, les meilleurs articles mentionnent également 'comment déployer sur des conteneurs [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/)' et 'la construction de pipelines [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/)', mais mon article ne l'aborde pas ».
 
 Au lieu de simplement disperser les mots-clés importants découverts dans le texte, l'ajout de sections significatives en tant que **titres H2 ou H3 (balises de titre)** et la rédaction d'explications techniques détaillées et d'extraits de code pour ces titres peuvent améliorer considérablement l'évaluation de Google.
 
 ---
 
-## 7. Pipeline de données et cycle d'amélioration continue
+## 7. [Pipeline](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) de données et cycle d'amélioration continue
 
 Les processus expliqués jusqu'à présent ne sont pas quelque chose que vous faites une fois et que vous terminez. En faire un pipeline et l'exécuter en continu est la clé du succès SEO. L'architecture globale et le flux opérationnel sont présentés ci-dessous dans un organigramme Mermaid.
 

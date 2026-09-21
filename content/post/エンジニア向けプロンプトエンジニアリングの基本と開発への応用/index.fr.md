@@ -71,7 +71,7 @@ Lors de la création d'applications d'IA à l'aide des API d'OpenAI (GPT-4, etc.
 
 ### 2.1 Prompt système : Contraintes globales et définition du persona
 
-Le prompt système définit **les contraintes globales, le persona (rôle) et les règles de comportement de base** pour le LLM. Pour faire une analogie avec la conception logicielle, il joue le rôle de « variable d'environnement » ou de « classe de base » de l'application, ou encore de « Dockerfile » d'un conteneur.
+Le prompt système définit **les contraintes globales, le persona (rôle) et les règles de comportement de base** pour le LLM. Pour faire une analogie avec la conception logicielle, il joue le rôle de « variable d'environnement » ou de « classe de base » de l'application, ou encore de « [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/)file » d'un conteneur.
 
 Un bon prompt système stabilise de manière spectaculaire la qualité et le format de la sortie.
 
@@ -193,7 +193,7 @@ Pour réaliser un ToT avec un prompt, vous donnez pour instruction : « Veuillez
 
 ---
 
-## 4. Agentic Workflow et ReAct (Reasoning and Acting)
+## 4. Agentic [Workflow](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) et ReAct (Reasoning and Acting)
 
 Les applications des LLM évoluent rapidement, passant d'une simple entrée/sortie de texte au domaine des **Agents d'IA (AI Agents)** qui planifient de manière autonome et interagissent avec l'environnement externe pour accomplir des tâches. Le paradigme central de cette architecture d'agents est **ReAct (Reasoning and Acting)**.
 
@@ -220,7 +220,7 @@ L'interface standard pour intégrer ReAct dans un système est le **Function Cal
 L'ingénieur fournit au LLM la « définition des outils disponibles (schéma JSON) » avec le prompt système. Le LLM analyse le contexte du prompt et, s'il détermine qu'il doit utiliser un outil, il produit « le nom de la fonction à appeler » et « le JSON de ses arguments » au lieu du texte normal. L'application exécute alors cette fonction et renvoie les résultats au LLM, formant ainsi la boucle.
 
 **Exemple d'application au développement (Agent de débogage autonome) :**
-Si vous construisez un agent qui étudie la cause et génère un patch lorsqu'un test échoue dans le pipeline CI/CD, vous fournirez les outils suivants au LLM :
+Si vous construisez un agent qui étudie la cause et génère un patch lorsqu'un test échoue dans le pipeline [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/), vous fournirez les outils suivants au LLM :
 
 1. `search_codebase(regex_pattern)` : Recherche dans le code du dépôt avec une expression régulière.
 2. `view_file_content(file_path, start_line, end_line)` : Lit le contenu du fichier spécifié.
@@ -368,7 +368,7 @@ La norme industrielle actuelle est d'utiliser un modèle puissant (par exemple, 
 2. **Exécution** : Demandez au prompt et au modèle à évaluer de générer des sorties pour l'ensemble de tests.
 3. **Évaluation** : Préparez un prompt d'évaluation (méta-prompt) et demandez au LLM Juge de « noter de 1 à 5 si la sortie générée répond aux exigences ».
 
-Cela permet de détecter automatiquement les régressions (baisse de performance) lors de la modification d'un prompt, via le pipeline CI/CD. L'ingénierie des prompts évolue d'un « bricolage de prompts » artisanal vers une véritable « ingénierie » pilotée par les données et reproductible.
+Cela permet de détecter automatiquement les régressions (baisse de performance) lors de la modification d'un prompt, via le pipeline [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/). L'ingénierie des prompts évolue d'un « bricolage de prompts » artisanal vers une véritable « ingénierie » pilotée par les données et reproductible.
 
 ---
 

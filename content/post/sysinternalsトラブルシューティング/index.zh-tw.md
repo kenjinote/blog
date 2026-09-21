@@ -60,7 +60,7 @@ Process Explorer是一款「超強工作管理員」。它不僅顯示CPU/記憶
 ### 2.3 分析硬體中斷與100% CPU突波
 當整個系統凍結數秒，或者出現聲音斷斷續續（卡頓）的現象時，查看工作管理員可能會發現「系統中斷（System Interrupts）」耗盡了CPU資源。
 
-在Windows的排程中，硬體中斷（ISR: Interrupt Service Routine）與DPC（Deferred Procedure Call，延遲程序呼叫）會以高於一般使用者執行緒的優先順序（IRQL: Interrupt Request Level）來執行。也就是說，如果不良的驅動程式拖長了DPC的執行時間，CPU在該核心上將無法執行任何其他工作。
+在Windows的排程中，硬體中斷（ISR: Interrupt [Service](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/) Routine）與DPC（Deferred Procedure Call，延遲程序呼叫）會以高於一般使用者執行緒的優先順序（IRQL: Interrupt Request Level）來執行。也就是說，如果不良的驅動程式拖長了DPC的執行時間，CPU在該核心上將無法執行任何其他工作。
 
 如果在ProcExp的處理程序列表最上方的 `Interrupts` 或 `DPCs` 的CPU使用率很高，可以搭配Windows效能分析器（WPA）來找出肇事的驅動程式（`.sys`）。CPU時間的計算可以用以下公式表示：
 
@@ -141,7 +141,7 @@ flowchart LR
 ### 4.1 應確認的重要索引標籤與進階功能
 *   **Logon** ：標準的 Run/RunOnce 機碼、啟動資料夾。
 *   **Scheduled Tasks** ：Windows工作排程器。惡意軟體經常會建立偽裝成「Adobe Update」或「Google Update」等的假工作。
-*   **Services / Drivers** ：在核心模式啟動的驅動程式。可以在這裡停用前述導致100% CPU突波且可疑的 `.sys` 檔案。
+*   **[Service](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/)s / Drivers** ：在核心模式啟動的驅動程式。可以在這裡停用前述導致100% CPU突波且可疑的 `.sys` 檔案。
 *   **WMI** ：利用WMI（Windows Management Instrumentation）事件過濾器或取用者來維持無檔案惡意軟體（Fileless Malware）持續性的地方。這個位置非常容易被忽略。
 *   **AppInit_DLLs / KnownDLLs** ：每次應用程式啟動時都會被強制注入的DLL清單。這裡是進行DLL注入掛鉤的溫床。
 

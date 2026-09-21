@@ -272,7 +272,7 @@ stateDiagram-v2
 2. **Leader Append-Only** : A leader never overwrites or deletes entries in its log; it only appends new entries.
 3. **Log Matching** : If two logs contain an entry with the same index and Term, then all entries up through that given index are identical.
 
-By doing so, data inconsistencies in a distributed environment are completely mathematically and algorithmically eliminated. `etcd`, the backend datastore for Kubernetes, also achieves strict state management of the cluster by adopting this [Raft](https://kenji.blog/en/p/byzantine-generals-problem-consensus/).
+By doing so, data inconsistencies in a distributed environment are completely mathematically and algorithmically eliminated. `etcd`, the backend datastore for [Kubernetes](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/), also achieves strict state management of the cluster by adopting this [Raft](https://kenji.blog/en/p/byzantine-generals-problem-consensus/).
 
 ## 8. Microservices and Transactions
 

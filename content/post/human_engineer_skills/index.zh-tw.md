@@ -36,7 +36,7 @@ $$ \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right
 
 $$ \text{Complexity} = O(N^2 \cdot d) $$
 
-近年來，雖然像是 FlashAttention 這種硬體層級的最佳化、Sparse Attention，甚至是 Mamba (State Space Models) 等能以線性時間 $O(N)$ 處理的替代架構研究正在進行，但要「完全理解無限的上下文，並生成整體最佳化的輸出」依然是非常困難的。
+近年來，雖然像是 FlashAttention 這種硬體層級的最佳化、Sparse Attention，甚至是 Mamba ([State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Space Models) 等能以線性時間 $O(N)$ 處理的替代架構研究正在進行，但要「完全理解無限的上下文，並生成整體最佳化的輸出」依然是非常困難的。
 
 此外，即使物理上擴大了上下文視窗 (Context Window)，也會發生被稱為「Lost in the Middle（中間資訊流失）」的現象。LLM 很容易受到提示詞 (Prompt) 開頭與結尾資訊的強烈影響，而傾向於忽略配置在中間的重要需求或限制。如果讓 LLM 讀取高達數萬行的企業級系統完整原始碼，並指示它「進行最佳的重構」，最終往往會生成局部正確、但整體邏輯崩潰的程式碼，原因就在於此。
 

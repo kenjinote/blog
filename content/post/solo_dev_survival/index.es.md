@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # Introducción: Cómo luchan los "desposeídos" para desafiar a los gigantes
 
-En la historia del desarrollo de software, ha llegado una era sin precedentes y favorable para los desarrolladores individuales (desarrolladores independientes). La democratización de la infraestructura en la nube como AWS y GCP, el surgimiento de BaaS (Backend as a Service) como Vercel y Supabase, y sobre todo, la automatización de la codificación gracias a la evolución de los LLM (Modelos de Lenguaje Grande). Todo esto ha creado un terreno donde los individuos pueden competir directamente con las grandes empresas tecnológicas, los verdaderos "gigantes".
+En la historia del desarrollo de software, ha llegado una era sin precedentes y favorable para los desarrolladores individuales (desarrolladores independientes). La democratización de la infraestructura en la nube como AWS y GCP, el surgimiento de BaaS (Backend as a [Service](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/)) como Vercel y Supabase, y sobre todo, la automatización de la codificación gracias a la evolución de los LLM (Modelos de Lenguaje Grande). Todo esto ha creado un terreno donde los individuos pueden competir directamente con las grandes empresas tecnológicas, los verdaderos "gigantes".
 
 Sin embargo, el hecho de que los recursos técnicos se hayan nivelado no significa que puedas ganar adoptando la misma estrategia que una gran empresa. En términos de capital, capacidad de marketing y poder de marca, los individuos se encuentran en una desventaja abrumadora. Para que un desarrollador en solitario sobreviva y gane, es esencial una "estrategia de supervivencia" única.
 
@@ -50,7 +50,7 @@ Los desarrolladores en solitario deben apuntar deliberadamente a problemas de ni
 
 # 2. Diseño de arquitectura que genera una agilidad abrumadora
 
-Los sistemas corporativos están diseñados con la "estabilidad" y la "escalabilidad" como máximas prioridades, por lo que a menudo se adoptan arquitecturas de Kubernetes y microservicios. Sin embargo, si un desarrollador independiente hace lo mismo, sus recursos se agotarán solo con el mantenimiento de la infraestructura (Ops).
+Los sistemas corporativos están diseñados con la "estabilidad" y la "escalabilidad" como máximas prioridades, por lo que a menudo se adoptan arquitecturas de [Kubernetes](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/) y microservicios. Sin embargo, si un desarrollador independiente hace lo mismo, sus recursos se agotarán solo con el mantenimiento de la infraestructura (Ops).
 
 La consigna del stack tecnológico de un desarrollador en solitario es **"No-Ops" (Cero Operaciones)**. Utiliza la arquitectura serverless (sin servidor) al máximo y concéntrate únicamente en escribir la lógica de negocio.
 
@@ -79,7 +79,7 @@ flowchart TD
 
 En el stack de las grandes empresas, añadir una nueva funcionalidad requiere coordinación entre múltiples equipos y la configuración de pipelines de despliegue DevOps. Por otro lado, en el stack de un individuo (ej: Next.js + Supabase + Vercel), un solo `git push` lo despliega en una red global en el edge (borde), y tampoco es necesario el aprovisionamiento de bases de datos.
 
-## Uso de Serverless y Edge Computing
+## Uso de [Serverless](https://kenji.blog/es/p/serverless-architecture-aws-lambda-cold-start/) y Edge Computing
 
 Al utilizar runtimes en el edge como Vercel o Cloudflare Workers, puedes eliminar la latencia del inicio en frío (cold start) y proporcionar APIs de baja latencia a usuarios de todo el mundo.
 
@@ -288,7 +288,7 @@ La estrategia de supervivencia para que los desarrolladores independientes compi
 
 1. **Elegir dónde luchar (Teoría del Long Tail)**
    - Apuntar a mercados nicho pequeños pero con dolores (pain points) profundos, en los que las grandes empresas no pueden entrar.
-2. **Aprovechar las palancas tecnológicas (Serverless, BaaS, IA)**
+2. **Aprovechar las palancas tecnológicas ([Serverless](https://kenji.blog/es/p/serverless-architecture-aws-lambda-cold-start/), BaaS, IA)**
    - Externalizar completamente las operaciones (Ops) y escribir únicamente código (lógica de negocio) para resolver los problemas del cliente, y no para la infraestructura.
 3. **Maximizar la agilidad (Costo de comunicación cero)**
    - Aprovechar la mayor arma del desarrollo en solitario, que es la "velocidad", desplegando instantáneamente cuando surge una idea e iterando con los comentarios del mercado lo más rápido posible.

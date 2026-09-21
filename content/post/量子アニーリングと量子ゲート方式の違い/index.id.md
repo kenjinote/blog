@@ -100,7 +100,7 @@ Model Quantum Gate adalah perluasan secara mekanika kuantum dari gerbang logika 
 
 ### 3.1. Transformasi Uniter dan Vektor Keadaan
 
-Pada Model Quantum Gate, keadaan seluruh sistem qubit direpresentasikan sebagai "Vektor Keadaan" (State Vector) $|\psi\rangle$. Keadaan 1 qubit dinyatakan sebagai kombinasi linear dari basis keadaan $|0\rangle$ dan $|1\rangle$ sebagai berikut:
+Pada Model Quantum Gate, keadaan seluruh sistem qubit direpresentasikan sebagai "Vektor Keadaan" ([State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Vector) $|\psi\rangle$. Keadaan 1 qubit dinyatakan sebagai kombinasi linear dari basis keadaan $|0\rangle$ dan $|1\rangle$ sebagai berikut:
 $$ |\psi\rangle = \alpha |0\rangle + \beta |1\rangle $$
 Di mana $\alpha$ dan $\beta$ adalah amplitudo probabilitas kompleks yang memenuhi $|\alpha|^2 + |\beta|^2 = 1$. Keadaan ini dapat divisualisasikan secara geometris sebagai sebuah titik pada "Bloch Sphere" (Bola Bloch).
 

@@ -34,7 +34,7 @@ Existen los siguientes tipos de políticas de ejecución:
 - **AllSigned**: Solo permite la ejecución de scripts firmados por un editor de confianza.
 - **RemoteSigned**: Los scripts creados localmente se pueden ejecutar tal cual, pero los scripts descargados de Internet requieren una firma.
 - **Unrestricted**: Se pueden ejecutar todos los scripts, pero se mostrará una advertencia al ejecutar scripts descargados de Internet.
-- **Bypass**: No se bloquea nada y no se muestran advertencias. A menudo se utiliza para ejecuciones temporales de scripts (como canales CI/CD).
+- **Bypass**: No se bloquea nada y no se muestran advertencias. A menudo se utiliza para ejecuciones temporales de scripts (como canales [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/)).
 
 Al ejecutar scripts de creación propia en un entorno corporativo local usando el Programador de tareas, la configuración más realista y segura es `RemoteSigned`. Abra PowerShell con privilegios de administrador y ejecute el siguiente comando:
 

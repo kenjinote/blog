@@ -28,7 +28,7 @@ As a property of orthogonal matrices, $U^T U = I$ and $V^T V = I$ hold. This is 
 
 ## 2. Difference from Eigendecomposition
 
-For square matrices, eigendecomposition $A = P \Lambda P^{-1}$ is well known. However, eigendecomposition has the following limitations:
+For square matrices, eigendecomposition $A = P \[Lambda](https://kenji.blog/en/p/serverless-architecture-aws-lambda-cold-start/) P^{-1}$ is well known. However, eigendecomposition has the following limitations:
 - It can only be applied to square matrices ($n \times n$).
 - Even if it is a square matrix, it is not always diagonalizable.
 

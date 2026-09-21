@@ -258,7 +258,7 @@ $$
 
 ### 참고 자료
 
-- Ohio State University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): 변의 2색 색칠과 작은 램지 수에 대한 해설.
+- Ohio [State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): 변의 2색 색칠과 작은 램지 수에 대한 해설.
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf): 단조 부분수열을 포함한 램지적 사고방식에 대한 강의 자료.
 
 본 기사의 그림, 전수 조사 표, 확률 및 개수 분포는 첨부된 Python 스크립트로 생성되었습니다.

@@ -236,11 +236,11 @@ hugo --minify
 
 Com este comando, todos os arquivos do site serão exportados para o diretório `public/`. Ao adicionar a opção `--minify`, quebras de linha e espaços desnecessários são removidos, e o tamanho do arquivo é ainda mais reduzido. Isso contribui diretamente para a redução da latência da rede ($T_{network}$) no modelo matemático mencionado anteriormente.
 
-### 5.3 Automação de deploy (CI/CD)
+### 5.3 Automação de deploy ([CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/))
 
 Gerar os arquivos estáticos em um PC local a cada vez e fazer upload via FTP é ineficiente. Na operação moderna de SSG, a melhor prática é construir um ambiente CI/CD que realize build e deploy automaticamente, usando um push para um repositório Git (como GitHub) como gatilho.
 
-Por exemplo, a forma básica de uma configuração (arquivo YAML) para fazer o deploy para o Cloudflare Pages ou GitHub Pages usando o GitHub Actions é a seguinte:
+Por exemplo, a forma básica de uma configuração (arquivo YAML) para fazer o deploy para o Cloudflare Pages ou GitHub Pages usando o [GitHub Actions](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) é a seguinte:
 
 ```yaml
 # Exemplo de .github/workflows/hugo.yml

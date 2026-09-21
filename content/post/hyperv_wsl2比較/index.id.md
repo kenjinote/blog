@@ -184,7 +184,7 @@ Mempertimbangkan perbedaan arsitektur dan performa sejauh ini, mari kita tentuka
 
 WSL2 dirancang khusus untuk "meningkatkan produktivitas pengembang". WSL2 paling ideal untuk penggunaan berikut:
 
-*   **Pengembangan Web dan Cloud-Native**: Pengembangan kontainer menggunakan Docker Desktop (backend WSL2) atau Podman.
+*   **Pengembangan Web dan Cloud-Native**: Pengembangan kontainer menggunakan [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (backend WSL2) atau Podman.
 *   **Penggunaan Perangkat/Alat Khusus Linux**: Jika Anda sehari-hari menggunakan bash, grep, awk, sed, atau kompilator GCC dan Clang yang dikhususkan untuk Linux.
 *   **Aplikasi GUI (WSLg)**: Jika Anda ingin menjalankan aplikasi X11/Wayland Linux secara mulus di atas desktop Windows.
 *   **Pengembangan Machine Learning dan AI**: Pembelajaran (training) TensorFlow atau PyTorch yang cepat dengan memanfaatkan fitur GPU Passthrough (NVIDIA CUDA di WSL).

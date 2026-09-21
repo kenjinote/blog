@@ -9,7 +9,7 @@ categories: ["it-technology"]
 description: 'Nous présentons le service « FONTPLUS (fontplus.jp) », qui permet d''introduire des polices Web payantes de haute qualité. Le fait que toutes les polices soient disponibles pour 1 100 yens par mois et qu''il soit possible de l''utiliser sur plusieurs sites est très attractif.'
 ---
 
-# Service pour utiliser des polices Web payantes fontplus.jp
+# [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/) pour utiliser des polices Web payantes fontplus.jp
 
 [https://fontplus.jp/](https://fontplus.jp/)
 

@@ -9,7 +9,7 @@ categories: ["programming", "devops"]
 tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 ---
 
-# GitHub Actions를 사용한 C++ 프로젝트의 CI/CD 파이프라인 구축: 완전 가이드
+# [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)를 사용한 C++ 프로젝트의 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인 구축: 완전 가이드
 
 현대 소프트웨어 개발 패러다임에서 지속적 통합(Continuous Integration: CI)과 지속적 제공/배포(Continuous Delivery/Deployment: CD)는 애자일한 개발 프로세스와 고품질 소프트웨어를 유지하는 데 필수적인 요소입니다. 수많은 프로그래밍 언어가 존재하지만, C++에서의 CI/CD 파이프라인 구축은 다른 언어(예: Python, JavaScript, Go 등)에 비해 독특한 어려움과 복잡성을 수반합니다.
 
@@ -17,7 +17,7 @@ tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 
 ## 1. C++ 프로젝트에서 CI/CD의 의미와 특유의 과제
 
-웹 애플리케이션이나 스크립트 언어를 사용한 개발에서는 단일 Docker 컨테이너에서의 테스트 및 빌드로 충분한 경우가 대부분입니다. 그러나 C++는 네이티브로 컴파일되는 언어이며, 실행 환경의 하드웨어 아키텍처나 운영 체제에 강하게 의존합니다.
+웹 애플리케이션이나 스크립트 언어를 사용한 개발에서는 단일 [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 컨테이너에서의 테스트 및 빌드로 충분한 경우가 대부분입니다. 그러나 C++는 네이티브로 컴파일되는 언어이며, 실행 환경의 하드웨어 아키텍처나 운영 체제에 강하게 의존합니다.
 
 C++ 프로젝트에 CI/CD를 도입할 때 직면하는 주요 과제는 다음과 같습니다.
 
@@ -27,9 +27,9 @@ C++ 프로젝트에 CI/CD를 도입할 때 직면하는 주요 과제는 다음�
 4. **의존성 관리**: C++에는 npm이나 pip 같은 절대적인 표준 패키지 관리자가 존재하지 않습니다. vcpkg, Conan 또는 CMake의 `FetchContent` 등을 사용하여 CI 환경에서 매번 올바르게 라이브러리를 해결해야 합니다.
 5. **메모리 관리와 미정의 동작**: 포인터 조작이나 수동 메모리 관리가 수반되므로, 단순한 로직 테스트뿐만 아니라 메모리 누수나 미정의 동작(Undefined Behavior)의 감지도 자동화해야 합니다.
 
-이러한 과제를 해결하기 위해서는 다양한 OS 가상 머신을 온디맨드로 프로비저닝할 수 있고, 복잡한 워크플로우를 코드로 정의(Configuration as Code)할 수 있는 GitHub Actions가 최적의 솔루션이 됩니다.
+이러한 과제를 해결하기 위해서는 다양한 OS 가상 머신을 온디맨드로 프로비저닝할 수 있고, 복잡한 워크플로우를 코드로 정의(Configuration as Code)할 수 있는 [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)가 최적의 솔루션이 됩니다.
 
-## 2. CI/CD 파이프라인의 아키텍처 개요
+## 2. [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인의 아키텍처 개요
 
 이제 구축할 CI/CD 파이프라인의 전체적인 모습을 시각화해 보겠습니다. 아래의 Mermaid 시퀀스 다이어그램은 코드 Push부터 배포까지의 워크플로우를 보여줍니다.
 
@@ -142,7 +142,7 @@ include(CPack)
 - **경고 엄격화 (`-Werror` / `/WX`)**: CI 환경에서 컴파일러 경고를 에러로 취급하여 코드 품질을 강제로 높게 유지합니다.
 - **GNUInstallDirs**: OS별 표준 설치 경로(`/usr/local/bin`이나 `C:\Program Files` 등)를 자동으로 해결합니다.
 
-## 4. GitHub Actions의 기초와 매트릭스 전략
+## 4. [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)의 기초와 매트릭스 전략
 
 GitHub Actions는 `.github/workflows/` 디렉토리 내의 YAML 파일로 구성됩니다.
 C++ 프로젝트에서 가장 강력한 기능이 "매트릭스 전략(Matrix Strategy)"입니다. 이를 통해 OS와 컴파일러의 조합을 동적으로 생성하고 병렬로 실행할 수 있습니다.
@@ -189,7 +189,7 @@ jobs:
 
 ## 5. 빌드 비용과 암달의 법칙을 이용한 병렬 처리 최적화
 
-클라우드 환경에서의 CI/CD는 시간과의 싸움이며, 빌드 시간은 그대로 개발자의 대기 시간 및 운영 비용과 직결됩니다.
+클라우드 환경에서의 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)는 시간과의 싸움이며, 빌드 시간은 그대로 개발자의 대기 시간 및 운영 비용과 직결됩니다.
 여기서 빌드 시간 최적화에 대해 컴퓨터 과학의 "암달의 법칙(Amdahl's Law)"을 사용하여 수학적으로 접근해 보겠습니다.
 
 암달의 법칙은 프로그램 중 병렬화 가능한 부분의 비율을 $P$라고 할 때, $N$개의 프로세서를 사용했을 때의 이론상 최대 속도 향상률 $S(N)$을 다음과 같이 정의합니다.
@@ -199,7 +199,7 @@ $$ S(N) = \frac{1}{(1 - P) + \frac{P}{N}} $$
 C++ 빌드 프로세스에서 소스 코드의 각 번역 단위(Translation Unit: `.cpp` 파일) 컴파일은 완전히 독립적이며 병렬화가 가능합니다. 반면, CMake 구성이나 최종 바이너리 링크 단계는 기본적으로 직렬 실행(병렬화 불가)이 됩니다.
 
 만약 프로젝트의 전체 빌드 시간 중 80%가 컴파일 단계($P = 0.8$), 20%가 직렬 단계($1 - P = 0.2$)라고 가정합시다.
-GitHub Actions의 표준 러너(Linux)는 2코어(스레드)를 제공합니다. 따라서 $N = 2$인 경우:
+[GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)의 표준 러너(Linux)는 2코어(스레드)를 제공합니다. 따라서 $N = 2$인 경우:
 
 $$ S(2) = \frac{1}{0.2 + \frac{0.8}{2}} = \frac{1}{0.2 + 0.4} = \frac{1}{0.6} \approx 1.67 $$
 
@@ -210,7 +210,7 @@ $$ S(2) = \frac{1}{0.2 + \frac{0.8}{2}} = \frac{1}{0.2 + 0.4} = \frac{1}{0.6} \a
       run: cmake --build build --config Release --parallel 2
 ```
 
-더 나아가 비용 계산도 고려합니다. GitHub Actions의 이용 비용 $C_{total}$은 작업의 실행 시간 $T_i$와 러너의 단가 $R_i$의 곱의 총합입니다.
+더 나아가 비용 계산도 고려합니다. [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)의 이용 비용 $C_{total}$은 작업의 실행 시간 $T_i$와 러너의 단가 $R_i$의 곱의 총합입니다.
 
 $$ C_{total} = \sum_{i=1}^{M} \left( T_i \times R_i \right) $$
 
@@ -266,7 +266,7 @@ if(ENABLE_COVERAGE AND CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
 endif()
 ```
 
-커버리지 측정용 독립적인 작업을 GitHub Actions에 정의합니다.
+커버리지 측정용 독립적인 작업을 [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)에 정의합니다.
 
 ```yaml
   coverage:
@@ -302,7 +302,7 @@ endif()
 
 ## 8. GitHub Releases를 통한 바이너리 자동 배포 (CD)
 
-CI/CD의 "CD" 부분을 구축합니다. 개발자가 Git에서 버전 태그(예: `v1.2.0`)를 부여하여 푸시했을 때, 자동으로 각 OS용 실행 가능한 바이너리를 컴파일하고 ZIP이나 Tarball로 패키징하여 GitHub Releases에 업로드합니다.
+[CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)의 "CD" 부분을 구축합니다. 개발자가 Git에서 버전 태그(예: `v1.2.0`)를 부여하여 푸시했을 때, 자동으로 각 OS용 실행 가능한 바이너리를 컴파일하고 ZIP이나 Tarball로 패키징하여 GitHub Releases에 업로드합니다.
 
 이 단계에서는 CMake에 포함된 패키징 도구 `CPack`을 이용합니다.
 
@@ -327,7 +327,7 @@ CI/CD의 "CD" 부분을 구축합니다. 개발자가 Git에서 버전 태그(�
 
 이 설정을 통해 `git tag v1.0.0`과 `git push origin v1.0.0`을 실행하는 것만으로, Windows 사용자용으로는 ZIP 파일이, Linux/macOS 사용자용으로는 Tarball이 수동 개입 없이 자동으로 릴리스 페이지에 공개됩니다. 이것은 사용자에게 소프트웨어를 제공하는 데 있어 매우 강력한 기능입니다.
 
-## 9. 완전한 Workflow YAML 파일
+## 9. 완전한 [Workflow](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) YAML 파일
 
 지금까지 설명한 모든 요소를 통합한, 견고하고 실용적인 `.github/workflows/main.yml`의 완전한 코드를 아래에 보여줍니다.
 
@@ -441,17 +441,17 @@ jobs:
         fail_ci_if_error: false
 ```
 
-## 10. 더 높은 수준의 CI/CD를 향하여 (정적 분석과 포맷팅)
+## 10. 더 높은 수준의 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)를 향하여 (정적 분석과 포맷팅)
 
 여기서는 자세한 설명은 생략하지만, 실제 운용에 있어서는 추가적인 품질 보증 도구를 파이프라인에 통합하는 것을 권장합니다.
 
 1. **Clang-Format 강제**: 코드 리뷰의 부담을 줄이기 위해 `clang-format`을 통한 코드 스타일 검사를 CI에 통합하고, 포맷 규칙을 위반하는 경우 파이프라인을 실패시킵니다.
 2. **정적 분석 (Clang-Tidy)**: 컴파일러 경고만으로는 막을 수 없는 잠재적 버그나 비효율적인 코드(불필요한 복사 등)를 감지하기 위해, `clang-tidy`를 CMake에 통합하고 CI상에서 실행합니다.
-3. **vcpkg / Conan 캐시 활용**: 서드파티 라이브러리를 다수 사용하는 경우, 의존성 빌드에 엄청난 시간이 소요됩니다. GitHub Actions의 `actions/cache`를 이용하여 vcpkg의 설치된 디렉토리나 Conan의 캐시를 유지함으로써 빌드 시간을 획기적으로 줄일 수 있습니다.
+3. **vcpkg / Conan 캐시 활용**: 서드파티 라이브러리를 다수 사용하는 경우, 의존성 빌드에 엄청난 시간이 소요됩니다. [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)의 `actions/cache`를 이용하여 vcpkg의 설치된 디렉토리나 Conan의 캐시를 유지함으로써 빌드 시간을 획기적으로 줄일 수 있습니다.
 
 ## 결론
 
-C++ 프로젝트에서 CI/CD 파이프라인 구축은 플랫폼 의존성이나 빌드 도구의 복잡성 때문에 언뜻 보기에 진입 장벽이 높게 느껴집니다. 하지만 GitHub Actions, 모던 CMake, 그리고 CTest/CPack 생태계를 올바르게 조합함으로써, 매우 강력하고 자동화된 개발 흐름을 얻을 수 있습니다.
+C++ 프로젝트에서 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인 구축은 플랫폼 의존성이나 빌드 도구의 복잡성 때문에 언뜻 보기에 진입 장벽이 높게 느껴집니다. 하지만 [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/), 모던 CMake, 그리고 CTest/CPack 생태계를 올바르게 조합함으로써, 매우 강력하고 자동화된 개발 흐름을 얻을 수 있습니다.
 
 본 문서에서 설명한 매트릭스 전략을 이용한 크로스 플랫폼 검증, 새니타이저를 이용한 런타임 버그 감지, 커버리지 측정, 그리고 GitHub Releases로의 자동 배포는 상용 수준의 오픈 소스 프로젝트에서도 널리 채택하고 있는 모범 사례입니다.
 

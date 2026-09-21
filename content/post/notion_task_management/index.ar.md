@@ -232,7 +232,7 @@ if __name__ == "__main__":
         create_notion_task(sys.argv[1], sys.argv[2])
 ```
 
-من خلال دمج هذا النص البرمجي في سير عمل GitHub Actions (`.github/workflows/issue_to_notion.yml`)، سيتم إنشاء مهمة تلقائيًا في Notion في كل مرة يتم فيها فتح Issue في المستودع. يتحرر المطورون من عناء التنقل ذهابًا وإيابًا بين GitHub و Notion.
+من خلال دمج هذا النص البرمجي في سير عمل [GitHub Actions](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/) (`.github/workflows/issue_to_notion.yml`)، سيتم إنشاء مهمة تلقائيًا في Notion في كل مرة يتم فيها فتح Issue في المستودع. يتحرر المطورون من عناء التنقل ذهابًا وإيابًا بين GitHub و Notion.
 
 ### التحديث التلقائي لحالة نشر المدونة باستخدام cURL
 
@@ -256,7 +256,7 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
   }'
 ```
 
-من خلال دمج استدعاء API هذا في الخطوة الأخيرة من مسار CI/CD، يتم تحقيق أتمتة كاملة حيث "دفع الكود ← نشر تلقائي ← تكتمل مهمة Notion تلقائيًا".
+من خلال دمج استدعاء API هذا في الخطوة الأخيرة من مسار [CI/CD](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)، يتم تحقيق أتمتة كاملة حيث "دفع الكود ← نشر تلقائي ← تكتمل مهمة Notion تلقائيًا".
 
 ---
 

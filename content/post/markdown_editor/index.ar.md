@@ -9,7 +9,7 @@ categories: ["blogging", "productivity", "editors"]
 tags: ["Markdown", "VS Code", "Neovim", "textlint"]
 ---
 
-من أجل الاستمرار في كتابة مدونة تقنية، من الضروري تحسين بيئة الكتابة. في هذا المقال، سنتعمق في إعدادات المحرر المتقدمة لتحسين سرعة كتابة المدونات التقنية باستخدام Markdown بشكل كبير. سنشرح بشكل شامل التخصيص الأقصى لكل من Visual Studio Code (VS Code) و Neovim، واستخدام المقتطفات (snippets)، وإدخال أداة فحص القواعد textlint، وصولاً إلى الأتمتة باستخدام خطوط أنابيب CI/CD، وأحدث تقنيات الكتابة باستخدام النماذج اللغوية الكبيرة (LLMs) مثل GitHub Copilot.
+من أجل الاستمرار في كتابة مدونة تقنية، من الضروري تحسين بيئة الكتابة. في هذا المقال، سنتعمق في إعدادات المحرر المتقدمة لتحسين سرعة كتابة المدونات التقنية باستخدام Markdown بشكل كبير. سنشرح بشكل شامل التخصيص الأقصى لكل من Visual Studio Code (VS Code) و Neovim، واستخدام المقتطفات (snippets)، وإدخال أداة فحص القواعد textlint، وصولاً إلى الأتمتة باستخدام خطوط أنابيب [CI/CD](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)، وأحدث تقنيات الكتابة باستخدام النماذج اللغوية الكبيرة (LLMs) مثل GitHub Copilot.
 
 ## 1. النموذج الرياضي لتحسين سرعة الكتابة
 
@@ -227,9 +227,9 @@ rules:
 
 من خلال تنفيذ هذه العمليات باستخدام ميزة البحث والاستبدال في VS Code (في وضع التعبيرات النمطية) أو باستخدام الأمر `%s` في Neovim (مثل `:%s/<b>\(.*?\)<\/b>/**\1**/g`)، يمكنك توحيد التنسيق في لحظة.
 
-### التحقق التلقائي من خلال خط أنابيب CI/CD
+### التحقق التلقائي من خلال خط أنابيب [CI/CD](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)
 
-علاوة على ذلك، باستخدام GitHub Actions، يمكننا بناء خط أنابيب CI يقوم بتشغيل textlint تلقائيًا عند دفع (push) مقالات المدونة. يتيح لك هذا منع نشر المقالات التي تحتوي على انتهاكات للقواعد مسبقًا.
+علاوة على ذلك، باستخدام [GitHub Actions](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)، يمكننا بناء خط أنابيب CI يقوم بتشغيل textlint تلقائيًا عند دفع (push) مقالات المدونة. يتيح لك هذا منع نشر المقالات التي تحتوي على انتهاكات للقواعد مسبقًا.
 
 ```mermaid
 flowchart TD
@@ -252,7 +252,7 @@ flowchart TD
 
 باستخدام GitHub Copilot Chat في VS Code، أو `ChatGPT.nvim` أو `Copilot.vim` في Neovim، يمكنك إرسال مطالبات (prompts) مثل التالية دون مغادرة المحرر.
 
-> "قم بإنشاء مخطط تفصيلي للمبتدئين باستخدام البنية الهرمية لـ Markdown حول العناصر التقنية التالية: Docker, Kubernetes, CI/CD"
+> "قم بإنشاء مخطط تفصيلي للمبتدئين باستخدام البنية الهرمية لـ Markdown حول العناصر التقنية التالية: [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)"
 
 عندئذٍ، سيتم إنشاء عناوين Markdown وقوائم نقطية على الفور. كل ما علينا فعله هو إضافة التفاصيل إلى هذا الهيكل.
 
@@ -265,7 +265,7 @@ flowchart TD
 1. **الوعي بالنموذج الرياضي**: القضاء على المهام المتكررة لزيادة $T_{saved}$ إلى أقصى حد.
 2. **استخدام VS Code**: توفير وقت الإدخال عن طريق الإضافات ومقتطفات `markdown.json`.
 3. **التخصيص الأقصى لـ Neovim**: استخدام المقتطفات الديناميكية مع `LuaSnip` والتشغيل الكامل من خلال لوحة المفاتيح.
-4. **textlint والتحليل الثابت**: دمج Linter المحلي و CI/CD لتقليل وقت التدقيق والمراجعة ليقترب من الصفر.
+4. **textlint والتحليل الثابت**: دمج Linter المحلي و [CI/CD](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/) لتقليل وقت التدقيق والمراجعة ليقترب من الصفر.
 5. **دمج LLM**: جعل الذكاء الاصطناعي يخرج بنية Markdown وأكواد المخططات مباشرة داخل المحرر.
 
 من خلال تطبيق هذه الإعدادات في بيئتك الخاصة، سيختفي "العبء" المرتبط بالكتابة، ومن المفترض أن تتحسن كمية وجودة مخرجاتك التقنية بشكل كبير. لماذا لا تبدأ أولاً بتسجيل مقتطف واحد بسيط؟

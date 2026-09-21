@@ -232,7 +232,7 @@ if __name__ == "__main__":
         create_notion_task(sys.argv[1], sys.argv[2])
 ```
 
-En intégrant ce script dans un workflow GitHub Actions (`.github/workflows/issue_to_notion.yml`), une tâche sera automatiquement générée dans Notion chaque fois qu'un problème (Issue) est soulevé dans le référentiel. Les développeurs sont libérés des allers-retours entre GitHub et Notion.
+En intégrant ce script dans un workflow [GitHub Actions](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) (`.github/workflows/issue_to_notion.yml`), une tâche sera automatiquement générée dans Notion chaque fois qu'un problème (Issue) est soulevé dans le référentiel. Les développeurs sont libérés des allers-retours entre GitHub et Notion.
 
 ### Mise à jour automatique du statut de publication du blog à l'aide de cURL
 
@@ -256,7 +256,7 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
   }'
 ```
 
-En intégrant cet appel API à la dernière étape de votre pipeline CI/CD, vous obtenez une automatisation complète : "Pousser le code → Déploiement automatique → La tâche Notion est automatiquement terminée".
+En intégrant cet appel API à la dernière étape de votre pipeline [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/), vous obtenez une automatisation complète : "Pousser le code → Déploiement automatique → La tâche Notion est automatiquement terminée".
 
 ---
 

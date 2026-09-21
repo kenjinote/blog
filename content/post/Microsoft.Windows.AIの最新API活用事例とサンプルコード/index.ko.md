@@ -345,7 +345,7 @@ sequenceDiagram
 
 - **멀티모달 API의 OS 네이티브 통합**: 텍스트뿐만 아니라 음성, 이미지, 나아가 라이브 비디오 피드를 매끄럽게 동시 처리하여 크로스모달 AI 추론을 OS 수준에서 기본 제공.
 - **RAG(Retrieval-Augmented Generation) 시스템 수준 지원**: 로컬 PC 내의 개인 문서들이나 Windows Search의 인덱스와 AI 모델을 OS의 안전한 샌드박스 내에서 연동시켜, 사용자의 프라이버시를 완벽히 보호한 상태에서의 초고도 개인 AI 어시스턴트 구축.
-- **NPU의 동적 리소스 스케일링**: 여러 AI 애플리케이션(예를 들어, 백그라운드에서의 노이즈 캔슬링과 포그라운드에서의 코드 생성)이 동시에 가동될 때, Windows 커널 스케줄러가 NPU의 실행 컨텍스트를 동적으로 전환하여 QoS(Quality of Service)를 보장하는 메커니즘.
+- **NPU의 동적 리소스 스케일링**: 여러 AI 애플리케이션(예를 들어, 백그라운드에서의 노이즈 캔슬링과 포그라운드에서의 코드 생성)이 동시에 가동될 때, Windows 커널 스케줄러가 NPU의 실행 컨텍스트를 동적으로 전환하여 QoS(Quality of [Service](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/))를 보장하는 메커니즘.
 
 ## 9. 결론: 로컬 AI가 바꾸는 애플리케이션의 미래
 

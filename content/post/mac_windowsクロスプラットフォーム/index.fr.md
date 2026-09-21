@@ -69,7 +69,7 @@ La sensibilité à la casse (Case Sensitivity) des systèmes de fichiers est ég
 
 Lors du développement sur Mac ou Windows, si vous spécifiez `#include "myclass.h"` (ou `import "./myclass"`) en minuscules dans le code source alors que le fichier réel est `MyClass.h`, la compilation réussira car l'OS de l'environnement local est Case-Insensitive.
 
-Cependant, lorsque vous commitez ce code et exécutez le build sur un serveur CI/CD (généralement Linux comme Ubuntu), le système de fichiers ext4 de Linux étant Case-Sensitive, cela provoquera une erreur de compilation "fichier introuvable".
+Cependant, lorsque vous commitez ce code et exécutez le build sur un serveur [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) (généralement Linux comme Ubuntu), le système de fichiers ext4 de Linux étant Case-Sensitive, cela provoquera une erreur de compilation "fichier introuvable".
 
 ### Perspective algorithmique : Complexité de la recherche de fichiers et normalisation
 
@@ -302,11 +302,11 @@ De cette manière, en isolant le code spécifique à la plateforme à un seul en
 
 ---
 
-## 8. Validation multiplateforme en CI/CD (Build matriciel)
+## 8. Validation multiplateforme en [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) (Build matriciel)
 
 Quel que soit le soin avec lequel un développeur code dans son environnement local, le bastion final de la compatibilité multiplateforme est le **pipeline CI/CD (Intégration Continue / Déploiement Continu)**. Les cas où le code fonctionne dans un environnement local (comme sur Mac) mais entraîne des erreurs de compilation sur d'autres OS (Windows) sont innombrables.
 
-Utilisez les derniers outils CI tels que GitHub Actions ou GitLab CI, et configurez un build matriciel (Matrix Build) pour **exécuter en parallèle les builds et les tests dans tous les environnements (Windows, macOS, Linux)** à chaque création de Pull Request.
+Utilisez les derniers outils CI tels que [GitHub Actions](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) ou GitLab CI, et configurez un build matriciel (Matrix Build) pour **exécuter en parallèle les builds et les tests dans tous les environnements (Windows, macOS, Linux)** à chaque création de Pull Request.
 
 ```yaml
 # Exemple de configuration CI multiplateforme via GitHub Actions
@@ -338,7 +338,7 @@ jobs:
       run: pytest -v
 ```
 
-La visualisation de ce flux CI/CD donne le résultat suivant.
+La visualisation de ce flux [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) donne le résultat suivant.
 
 ```mermaid
 sequenceDiagram
@@ -378,10 +378,10 @@ Le développement multiplateforme pour Mac et Windows présente de nombreux déf
 2.  **Majuscules et minuscules** : Ne pas se reposer sur le comportement "insensible à la casse" de macOS/Windows ; établir des règles strictes de nommage des fichiers et veiller à une correspondance exacte de la casse.
 3.  **Séparateurs de chemin** : Utiliser les API standard de manipulation de chemins des langages (modules `std::filesystem`, `pathlib`, `path`) pour masquer les différences entre les OS.
 4.  **Encodage** : Toujours spécifier UTF-8 et éliminer systématiquement les effets du comportement par défaut de Windows (CP932).
-5.  **Variables d'environnement et shell** : Utiliser des outils d'abstraction tels que `cross-env`, ou unifier les environnements d'exécution avec WSL/Docker, etc.
+5.  **Variables d'environnement et shell** : Utiliser des outils d'abstraction tels que `cross-env`, ou unifier les environnements d'exécution avec WSL/[Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/), etc.
 6.  **Systèmes de build** : Dans le cas de C/C++, exploiter des systèmes de méta-build comme CMake pour générer la chaîne d'outils native optimale pour chaque OS.
 7.  **Code dépendant de l'OS** : Concevoir une couche d'abstraction de l'OS (OSAL) afin de séparer et isoler la logique dépendante de la plateforme.
-8.  **CI/CD** : Introduire des builds matriciels, automatiser les builds propres et les tests sur tous les OS cibles, et éliminer la dépendance aux environnements individuels.
+8.  **[CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/)** : Introduire des builds matriciels, automatiser les builds propres et les tests sur tous les OS cibles, et éliminer la dépendance aux environnements individuels.
 
 Bien qu'aujourd'hui de puissants frameworks tels que Electron, Tauri et .NET absorbent bon nombre de ces différences, la connaissance du comportement natif de l'OS sous-jacent (systèmes de fichiers, encodage) reste indispensable pour résoudre les problèmes graves de performances et les bugs complexes. En partageant et en appliquant ces meilleures pratiques avec toute l'équipe dès les premières étapes d'un projet, vous pourrez réduire considérablement le temps de débogage inutile lié aux différences d'OS, et vous concentrer sur la création essentielle de valeur logicielle.
 

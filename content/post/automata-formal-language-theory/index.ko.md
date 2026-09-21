@@ -289,7 +289,7 @@ flowchart LR
 
 많은 프로그래밍 언어(Java, Python, Ruby, JavaScript 등)에 내장된 정규 표현식 엔진은 이론상의 순수한 DFA가 아니라 백트래킹을 동반하는 NFA 기반(또는 백트래킹 엔진)으로 구현되어 있습니다.
 
-이 때문에 특정 패턴의 정규 표현식(예: `(a+)+$` 등)에 대해 교묘한 문자열을 주면 계산량이 지수함수적으로 폭발하여 시스템이 멈춰버리는 **ReDoS** (Regular Expression Denial of Service)라는 취약점을 일으킬 수 있습니다. 이론을 알고 있으면 왜 백트래킹이 일어나는지, 어떻게 패턴을 다시 작성해야 안전한 DFA에 상당하는 처리로 귀결시킬 수 있는지 논리적으로 생각할 수 있습니다.
+이 때문에 특정 패턴의 정규 표현식(예: `(a+)+$` 등)에 대해 교묘한 문자열을 주면 계산량이 지수함수적으로 폭발하여 시스템이 멈춰버리는 **ReDoS** (Regular Expression Denial of [Service](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/))라는 취약점을 일으킬 수 있습니다. 이론을 알고 있으면 왜 백트래킹이 일어나는지, 어떻게 패턴을 다시 작성해야 안전한 DFA에 상당하는 처리로 귀결시킬 수 있는지 논리적으로 생각할 수 있습니다.
 
 ---
 

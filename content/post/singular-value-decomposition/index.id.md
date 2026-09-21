@@ -28,7 +28,7 @@ Sebagai properti dari matriks ortogonal, berlaku $U^T U = I$ dan $V^T V = I$. In
 
 ## 2. Perbedaan dari Dekomposisi Nilai Eigen
 
-Untuk matriks persegi, dekomposisi nilai eigen $A = P \Lambda P^{-1}$ sangat dikenal. Namun, dekomposisi ini memiliki keterbatasan sebagai berikut:
+Untuk matriks persegi, dekomposisi nilai eigen $A = P \[Lambda](https://kenji.blog/id/p/serverless-architecture-aws-lambda-cold-start/) P^{-1}$ sangat dikenal. Namun, dekomposisi ini memiliki keterbatasan sebagai berikut:
 - Hanya dapat diterapkan pada matriks persegi ($n \times n$).
 - Sekalipun merupakan matriks persegi, belum tentu selalu dapat didiagonalisasi.
 

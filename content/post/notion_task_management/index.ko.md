@@ -232,7 +232,7 @@ if __name__ == "__main__":
         create_notion_task(sys.argv[1], sys.argv[2])
 ```
 
-이 스크립트를 GitHub Actions의 워크플로우(`.github/workflows/issue_to_notion.yml`)에 포함시킴으로써, 리포지토리에 Issue가 등록될 때마다 Notion에 태스크가 자동 생성되게 됩니다. 개발자는 GitHub와 Notion을 오가는 수고에서 해방됩니다.
+이 스크립트를 [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)의 워크플로우(`.github/workflows/issue_to_notion.yml`)에 포함시킴으로써, 리포지토리에 Issue가 등록될 때마다 Notion에 태스크가 자동 생성되게 됩니다. 개발자는 GitHub와 Notion을 오가는 수고에서 해방됩니다.
 
 ### cURL을 이용한 블로그 공개 상태의 자동 갱신
 
@@ -256,7 +256,7 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
   }'
 ```
 
-이 API 호출을 CI/CD 파이프라인의 마지막 단계에 조립해 넣으면, '코드를 푸시한다 → 자동 배포된다 → Notion 태스크가 자동으로 완료(Done)된다'는 풀 오토메이션이 완성됩니다.
+이 API 호출을 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인의 마지막 단계에 조립해 넣으면, '코드를 푸시한다 → 자동 배포된다 → Notion 태스크가 자동으로 완료(Done)된다'는 풀 오토메이션이 완성됩니다.
 
 ---
 

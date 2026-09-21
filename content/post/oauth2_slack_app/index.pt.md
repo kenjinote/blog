@@ -354,7 +354,7 @@ Finalmente, uma breve discussão sobre as melhores práticas para guardar tokens
 ## 1. O armazenamento em banco de dados deve ser criptografado
 Um token de acesso (`xoxb-...`) é basicamente a "chave mestra" do workspace do Slack. Você nunca deve guardá-lo como texto simples num banco de dados (MySQL, PostgreSQL, MongoDB, etc.). Na eventualidade improvável de que o banco de dados seja exposto em um ataque de Injeção de SQL, resultaria em um desastre massivo em que o Slack de todos os clientes seria tomado.
 
-Você sempre deve criptografá-lo primeiro na camada de aplicação usando criptografia simétrica forte como **AES-256-GCM** antes de salvar no DB. A chave mestre para criptografia/descriptografia será gerenciada de forma estrita usando serviços seguros de gerenciamento de chaves, como AWS KMS (Key Management Service) ou GCP Cloud KMS.
+Você sempre deve criptografá-lo primeiro na camada de aplicação usando criptografia simétrica forte como **AES-256-GCM** antes de salvar no DB. A chave mestre para criptografia/descriptografia será gerenciada de forma estrita usando serviços seguros de gerenciamento de chaves, como AWS KMS (Key Management [Service](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/)) ou GCP Cloud KMS.
 
 ## 2. Rotação de Tokens (Token Rotation)
 Continuar usando tokens com uma validade longa de vida carrega riscos. As implementações mais recentes do OAuth recomendam a adoção de um mecanismo (Token Rotation) para reemitir um novo token de acesso a cada poucas horas usando "Refresh Tokens". É possível ativar a rotação de tokens nas definições opcionais da API do Slack também.

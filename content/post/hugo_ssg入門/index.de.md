@@ -168,7 +168,7 @@ Dies ermöglicht es, Inhalte auf vielfältige Weise zu organisieren und aufzulis
 
 Der Schlüssel zu einer erfolgreichen Migration von WordPress zu Hugo liegt darin, wie man die dynamischen Inhalte in der Datenbank sauber in statische Dateien (Markdown + Front Matter) konvertiert und dabei die vorhandene URL-Struktur beibehält.
 
-Im Folgenden ist der Ablauf einer typischen Migrations-Pipeline dargestellt.
+Im Folgenden ist der Ablauf einer typischen Migrations-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) dargestellt.
 
 ```mermaid
 flowchart LR
@@ -236,11 +236,11 @@ hugo --minify
 
 Mit diesem Befehl werden alle Dateien der gesamten Website im `public/`-Verzeichnis ausgegeben. Durch Hinzufügen der Option `--minify` werden unnötige Zeilenumbrüche und Leerzeichen entfernt, was die Dateigröße weiter reduziert. Dies trägt direkt zur Reduzierung der Netzwerkverzögerung ($T_{network}$) im zuvor erwähnten mathematischen Modell bei.
 
-### 5.3 Bereitstellungsautomatisierung (CI/CD)
+### 5.3 Bereitstellungsautomatisierung ([CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/))
 
 Es ist ineffizient, jedes Mal statische Dateien auf einem lokalen PC zu generieren und per FTP oder Ähnlichem hochzuladen. Im modernen SSG-Betrieb ist es die beste Vorgehensweise (Best Practice), eine CI/CD-Umgebung aufzubauen, die automatisch Builds und Bereitstellungen (Deployments) durchführt, ausgelöst durch einen Push in ein Git-Repository (wie GitHub).
 
-Die Grundform einer Konfiguration (YAML-Datei) für die Bereitstellung auf Cloudflare Pages oder GitHub Pages mithilfe von GitHub Actions sieht beispielsweise wie folgt aus.
+Die Grundform einer Konfiguration (YAML-Datei) für die Bereitstellung auf Cloudflare Pages oder GitHub Pages mithilfe von [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) sieht beispielsweise wie folgt aus.
 
 ```yaml
 # Beispiel für .github/workflows/hugo.yml
@@ -292,7 +292,7 @@ jobs:
         uses: actions/deploy-pages@v2
 ```
 
-Durch diese Einrichtung wird eine automatisierte Pipeline erstellt, bei der allein die Aktion "Einen Artikel in Markdown schreiben und zu GitHub pushen" ausreicht, um die neueste Website in wenigen Minuten in der Produktionsumgebung zu veröffentlichen.
+Durch diese Einrichtung wird eine automatisierte [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) erstellt, bei der allein die Aktion "Einen Artikel in Markdown schreiben und zu GitHub pushen" ausreicht, um die neueste Website in wenigen Minuten in der Produktionsumgebung zu veröffentlichen.
 
 ---
 

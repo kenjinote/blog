@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # Introduction: The Battle of the "Have-nots" Challenging the Giants
 
-In the history of software development, there has never been a time more advantageous for solo developers (indie developers) than now. The democratization of cloud infrastructure like AWS and GCP, the rise of BaaS (Backend as a Service) like Vercel and Supabase, and above all, the automation of coding through the evolution of LLMs (Large Language Models). All of these have created an environment where individuals can compete head-on with the "giants," the major tech companies.
+In the history of software development, there has never been a time more advantageous for solo developers (indie developers) than now. The democratization of cloud infrastructure like AWS and GCP, the rise of BaaS (Backend as a [Service](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/)) like Vercel and Supabase, and above all, the automation of coding through the evolution of LLMs (Large Language Models). All of these have created an environment where individuals can compete head-on with the "giants," the major tech companies.
 
 However, just because technical resources have flattened does not mean you can win by adopting the same strategies as major companies. Individuals are overwhelmingly disadvantaged in terms of capital, marketing power, and brand power. For solo developers to survive and win, a unique "survival strategy" is essential.
 
@@ -50,7 +50,7 @@ Solo developers should intentionally target specific niche problems (such as wor
 
 # 2. Architecture Design for Overwhelming Agility
 
-Enterprise systems are designed with "stability" and "scalability" as top priorities, which is why Kubernetes and microservice architectures are adopted. However, if a solo developer does the same thing, their resources will be depleted just by maintaining the infrastructure (Ops).
+Enterprise systems are designed with "stability" and "scalability" as top priorities, which is why [Kubernetes](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/) and microservice architectures are adopted. However, if a solo developer does the same thing, their resources will be depleted just by maintaining the infrastructure (Ops).
 
 The watchword for a solo developer's tech stack is **"No-Ops" (Zero Operations)**. You must leverage serverless architectures to the absolute limit and focus solely on writing business logic.
 
@@ -79,7 +79,7 @@ flowchart TD
 
 In an enterprise stack, adding new features requires coordination between multiple teams and setting up DevOps deployment pipelines. On the other hand, in an individual's stack (e.g., Next.js + Supabase + Vercel), a single `git push` deploys to a global edge network, and there is no need for DB provisioning.
 
-## Leveraging Serverless and Edge Computing
+## Leveraging [Serverless](https://kenji.blog/en/p/serverless-architecture-aws-lambda-cold-start/) and Edge Computing
 
 By using edge runtimes like Vercel or Cloudflare Workers, you can eliminate cold start delays and provide low-latency APIs to users around the world.
 
@@ -288,7 +288,7 @@ The survival strategy for solo developers to fight against tech giants and globa
 
 1. **Choose Where to Fight (Long Tail Theory)**
    - Target niche markets with deep pain points, even if they are small, where large enterprises cannot enter.
-2. **Leverage Technological Leverage (Serverless, BaaS, AI)**
+2. **Leverage Technological Leverage ([Serverless](https://kenji.blog/en/p/serverless-architecture-aws-lambda-cold-start/), BaaS, AI)**
    - Completely externalize operations (Ops) and write only the code (business logic) that solves customer problems, not infrastructure.
 3. **Maximize Agility (Zero Communication Cost)**
    - Capitalize on the solo developer's greatest weapon, "speed," by deploying ideas immediately and iterating on market feedback as fast as possible.

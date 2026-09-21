@@ -16,7 +16,7 @@ tags:
 
 # Mecanismo de Renderização do Navegador: Uma Dissecação Completa do DOM até o Paint
 
-O navegador web é um dos softwares mais próximos e complexos que usamos diariamente. Desde a inserção de uma URL até a exibição de uma página na tela, uma quantidade enorme de cálculos e processamentos ocorre internamente em milissegundos. Esse fluxo de processamento é chamado de **Pipeline de Renderização (Rendering Pipeline)** ou **Caminho Crítico de Renderização (Critical Rendering Path)**.
+O navegador web é um dos softwares mais próximos e complexos que usamos diariamente. Desde a inserção de uma URL até a exibição de uma página na tela, uma quantidade enorme de cálculos e processamentos ocorre internamente em milissegundos. Esse fluxo de processamento é chamado de **[Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) de Renderização (Rendering Pipeline)** ou **Caminho Crítico de Renderização (Critical Rendering Path)**.
 
 Neste artigo, dissecaremos o mecanismo completo de como os navegadores (especialmente motores de renderização modernos como Blink e WebKit) interpretam HTML, CSS e JavaScript, e, por fim, os desenham (Paint) como pixels no display.
 

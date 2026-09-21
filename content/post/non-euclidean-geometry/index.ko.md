@@ -73,7 +73,7 @@ graph LR
 아인슈타인은 특수 상대성이론에서 시간과 공간을 통합한 "시공간" 개념을 제창했습니다. 그리고 **일반 상대성이론** 에서 그는 "중력이란 질량을 가진 물체에 의해 시공간이 왜곡(커브)되는 것이다"라는 획기적인 아이디어에 도달했습니다.
 
 $$
-R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
+R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \[Lambda](https://kenji.blog/ko/p/serverless-architecture-aws-lambda-cold-start/) g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
 $$
 
 위의 아인슈타인 방정식에서 좌변은 시공간의 기하학적 구조(곡률)를 나타내고, 우변은 물질·에너지의 분포를 나타냅니다. 즉, **물질이 시공간의 휘어지는 방식을 결정하고, 휘어진 시공간이 물질의 운동을 결정하는** 것입니다.

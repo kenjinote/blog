@@ -354,7 +354,7 @@ Abschließend hier die Best Practices zum Speichern der abgerufenen Access Token
 ## 1. Verschlüsselung ist für die Speicherung in der Datenbank obligatorisch
 Das Access Token (`xoxb-...`) ist sozusagen der "Master-Schlüssel" zu Ihrem Slack-Workspace. Es darf nicht als Klartext in Datenbanken (MySQL, PostgreSQL, MongoDB etc.) gespeichert werden. Sollte es durch SQL-Injection oder Ähnliches zu einem Datenleck kommen, wäre dies eine Katastrophe, bei der alle Slack-Workspaces der Kunden kompromittiert würden.
 
-Achten Sie darauf, es auf Anwendungsebene mit einer starken symmetrischen Verschlüsselung wie **AES-256-GCM** zu verschlüsseln, bevor Sie es in der DB speichern. Der Master Key für die Verschlüsselung/Entschlüsselung sollte mit einem sicheren Schlüsselverwaltungsdienst wie AWS KMS (Key Management Service) oder GCP Cloud KMS streng verwaltet werden.
+Achten Sie darauf, es auf Anwendungsebene mit einer starken symmetrischen Verschlüsselung wie **AES-256-GCM** zu verschlüsseln, bevor Sie es in der DB speichern. Der Master Key für die Verschlüsselung/Entschlüsselung sollte mit einem sicheren Schlüsselverwaltungsdienst wie AWS KMS (Key Management [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)) oder GCP Cloud KMS streng verwaltet werden.
 
 ## 2. Token-Rotation
 Es ist riskant, langlebige Token kontinuierlich zu verwenden. In neueren OAuth-Implementierungen wird empfohlen, ein "Refresh Token" zu verwenden und alle paar Stunden ein neues Access Token auszustellen (Token Rotation). Die Slack API ermöglicht es Ihnen ebenfalls, Token Rotation durch Optionseinstellungen zu aktivieren.

@@ -15,7 +15,7 @@ In der modernen Web-Frontend-Entwicklung ist die Vereinbarkeit von Leistung und 
 
 Hugo ist in Go geschrieben und bietet eine unglaubliche Leistung, mit der Builds selbst für Websites mit Tausenden von Seiten in nur wenigen Sekunden oder Millisekunden abgeschlossen werden. Andererseits ermöglicht Tailwind CSS das direkte Schreiben unzähliger vordefinierter Utility-Klassen (z. B. `flex`, `text-center`, `mt-4`) in HTML, wodurch der Kontextwechsel zwischen CSS- und HTML-Dateien entfällt und Design-Iterationen beschleunigt werden.
 
-In diesem Artikel werden wir die Schritte zur Integration von Tailwind CSS in ein Hugo-Theme und zum Aufbau einer fortschrittlichen Asset-Pipeline (Hugo Pipes) mit PostCSS im Detail erläutern – von den Grundlagen der Architektur bis hin zu mathematischen Leistungsoptimierungen.
+In diesem Artikel werden wir die Schritte zur Integration von Tailwind CSS in ein Hugo-Theme und zum Aufbau einer fortschrittlichen Asset-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) (Hugo Pipes) mit PostCSS im Detail erläutern – von den Grundlagen der Architektur bis hin zu mathematischen Leistungsoptimierungen.
 
 ---
 
@@ -76,7 +76,7 @@ Da die Klassennamen selbst spezifische Stilwerte darstellen (`p-6` steht z. B. f
 
 ## 2. Die Architektur von Hugo Pipes und PostCSS
 
-Um Tailwind CSS in Hugo zu integrieren, muss man die Asset-Verarbeitungs-Pipeline namens **Hugo Pipes** verstehen. Hugo Pipes ist eine leistungsstarke Funktion, die alle assetbezogenen Prozesse – wie die Kompilierung von Sass/SCSS, das Bündeln und Minifizieren von JavaScript und die Ausführung von **PostCSS**, das wir hier verwenden werden – innerhalb von Hugo selbst abschließt.
+Um Tailwind CSS in Hugo zu integrieren, muss man die Asset-Verarbeitungs-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) namens **Hugo Pipes** verstehen. Hugo Pipes ist eine leistungsstarke Funktion, die alle assetbezogenen Prozesse – wie die Kompilierung von Sass/SCSS, das Bündeln und Minifizieren von JavaScript und die Ausführung von **PostCSS**, das wir hier verwenden werden – innerhalb von Hugo selbst abschließt.
 
 PostCSS ist ein Tool zum Transformieren von CSS mithilfe von JavaScript-Plugins. Tatsächlich funktioniert auch Tailwind CSS selbst als PostCSS-Plugin.
 
@@ -203,7 +203,7 @@ Mit dieser Konfiguration führt Hugo, wenn es PostCSS aufruft, zuerst die Verarb
 
 ---
 
-## 5. Aufbau der CSS-Asset-Pipeline in Hugo
+## 5. Aufbau der CSS-Asset-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) in Hugo
 
 Sobald die Konfiguration abgeschlossen ist, ist es an der Zeit, Tailwind CSS in das Hugo-Theme zu integrieren.
 
@@ -234,7 +234,7 @@ Erstellen Sie eine CSS-Datei als Einstiegspunkt im Verzeichnis `assets/css/` (er
 
 ### 5-2. Bearbeiten der [Layout](https://kenji.blog/de/p/browser-rendering-mechanism-dom-paint/)-Datei (head.html)
 
-Als Nächstes weisen wir Hugos Template an, die oben genannte CSS-Datei zu laden, und definieren die Pipeline, um sie mit PostCSS zu verarbeiten. Im Allgemeinen wird das Partial-Template, das das `<head>`-Tag definiert, (z. B. `layouts/partials/head.html`) bearbeitet.
+Als Nächstes weisen wir Hugos Template an, die oben genannte CSS-Datei zu laden, und definieren die [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/), um sie mit PostCSS zu verarbeiten. Im Allgemeinen wird das Partial-Template, das das `<head>`-Tag definiert, (z. B. `layouts/partials/head.html`) bearbeitet.
 
 **Dateipfad: `layouts/partials/head.html`**
 
@@ -266,7 +266,7 @@ Als Nächstes weisen wir Hugos Template an, die oben genannte CSS-Datei zu laden
 </head>
 ```
 
-#### Erläuterung der Pipeline und Mermaid-Diagramm
+#### Erläuterung der [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) und Mermaid-Diagramm
 
 Im Folgenden wird erläutert, wie der obige Go-Template-Code die CSS-Datei verarbeitet, illustriert durch eine Reihe von Pipeline-Prozessen.
 
@@ -391,7 +391,7 @@ Auf Blog- oder Dokumentationsseiten wie bei Hugo können Klassen nicht direkt an
    ```
 
 3. Anwendung im Template
-   Durch einfaches Hinzufügen der Klasse `prose` (sowie optionaler Farb- und Größenvarianten) zum Container-Element, das den Artikelinhalt ausgibt, werden schöne Standardstile angewendet.
+   Durch einfaches Hinzufügen der Klasse `prose` (sowie optionaler Farb- und Größenvarianten) zum [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-Element, das den Artikelinhalt ausgibt, werden schöne Standardstile angewendet.
 
    ```go-html-template
    <article class="prose prose-lg prose-blue mx-auto mt-10">
@@ -405,7 +405,7 @@ Dadurch müssen keine komplexen CSS-Selektoren (z. B. `.article-content h2 { ...
 
 ## 9. Fazit: Vollendung eines hochgradig wartbaren Frontend-Ökosystems
 
-Gut gemacht! Damit ist die perfekte Webentwicklungs-Asset-Pipeline fertiggestellt, die die extrem schnelle Engine zur Generierung statischer Webseiten von Hugo mit den modernen Styling-Funktionen von Tailwind CSS und der Erweiterbarkeit von PostCSS vereint.
+Gut gemacht! Damit ist die perfekte Webentwicklungs-Asset-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) fertiggestellt, die die extrem schnelle Engine zur Generierung statischer Webseiten von Hugo mit den modernen Styling-Funktionen von Tailwind CSS und der Erweiterbarkeit von PostCSS vereint.
 
 Das Tolle an dieser Architektur ist, **"dass Sie sie nur einmal einrichten müssen"**. Sobald die Pipeline eingerichtet ist, können Entwickler komplexe Benutzeroberflächen in rasanter Geschwindigkeit erstellen, ohne jemals eine CSS-Datei öffnen zu müssen, indem sie einfach intuitive Utility-Klassen in ihre HTML- oder Markdown-Templates schreiben.
 

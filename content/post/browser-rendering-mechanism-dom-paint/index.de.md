@@ -16,7 +16,7 @@ tags:
 
 # Funktionsweise des Browser-Renderings: Vollständige Analyse vom DOM-Baum bis zum Paint
 
-Webbrowser gehören zu der uns am nächsten stehenden und gleichzeitig komplexesten Software, die wir täglich nutzen. Von der Eingabe einer URL bis zur Anzeige der Seite auf dem Bildschirm finden intern innerhalb von Millisekunden enorme Berechnungen und Verarbeitungen statt. Dieser Verarbeitungsfluss wird als **Rendering Pipeline** oder **Critical Rendering Path** bezeichnet.
+Webbrowser gehören zu der uns am nächsten stehenden und gleichzeitig komplexesten Software, die wir täglich nutzen. Von der Eingabe einer URL bis zur Anzeige der Seite auf dem Bildschirm finden intern innerhalb von Millisekunden enorme Berechnungen und Verarbeitungen statt. Dieser Verarbeitungsfluss wird als **Rendering [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)** oder **Critical Rendering Path** bezeichnet.
 
 In diesem Artikel analysieren wir den vollständigen Mechanismus, wie Browser (insbesondere moderne Rendering-Engines wie Blink und WebKit) HTML, CSS und JavaScript interpretieren und schließlich als Pixel auf dem Bildschirm zeichnen (Paint).
 
@@ -354,11 +354,11 @@ Dies lässt sich am besten bei Animationen mit `transform` und `opacity` nutzen.
 ### 6.3 CSS Trigger: Leistungsoptimierung bei Animationen
 
 Eines der wichtigsten Konzepte der Web-Performance-Optimierung sind die **CSS Triggers**.
-Wenn der Stil eines Elements mit JavaScript oder CSS geändert wird, hängt es von der geänderten Eigenschaft ab, an welcher Stelle der Rendering-Pipeline des Browsers die Verarbeitung erneut beginnen muss (ab Layout, Paint oder Composite).
+Wenn der Stil eines Elements mit JavaScript oder CSS geändert wird, hängt es von der geänderten Eigenschaft ab, an welcher Stelle der Rendering-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) des Browsers die Verarbeitung erneut beginnen muss (ab Layout, Paint oder Composite).
 
 1.  **Eigenschaften, die Layout (Reflow) auslösen**
     *   `width`, `height`, `margin`, `padding`, `top`, `left`, `font-size` usw.
-    *   Da sich die Geometrieinformationen ändern, wird die gesamte Pipeline Layout → Paint → Composite erneut ausgeführt. Dies ist eine sehr ressourcenintensive Verarbeitung und ungeeignet für Animationen.
+    *   Da sich die Geometrieinformationen ändern, wird die gesamte [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) Layout → Paint → Composite erneut ausgeführt. Dies ist eine sehr ressourcenintensive Verarbeitung und ungeeignet für Animationen.
 2.  **Eigenschaften, die Paint (Repaint) auslösen**
     *   `color`, `background-color`, `box-shadow` usw.
     *   Größe und Position des Elements ändern sich nicht, aber das Aussehen. Daher werden Paint → Composite erneut ausgeführt. Es ist leichter als das Layout, erfordert jedoch ein Neuzeichnen der Pixel und verursacht daher Last.
@@ -414,4 +414,4 @@ Dieses tiefe Verständnis des Mechanismus ist für Frontend-Entwickler mehr als 
 „Warum sollte das `script`-Tag direkt vor dem schließenden `body`-Tag stehen oder `defer` verwendet werden?“
 „Warum arbeiten virtuelle DOMs wie in React oder Vue so schnell? (= Batching und Minimierung von DOM-Zugriffen und Layout/Paint)“
 
-Die Antworten auf all diese Fragen liegen innerhalb dieser Rendering-Pipeline. Wenn Sie diesen Mechanismus verstehen, können Sie leistungsstärkere Webanwendungen mit einem besseren Benutzererlebnis entwickeln.
+Die Antworten auf all diese Fragen liegen innerhalb dieser Rendering-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/). Wenn Sie diesen Mechanismus verstehen, können Sie leistungsstärkere Webanwendungen mit einem besseren Benutzererlebnis entwickeln.

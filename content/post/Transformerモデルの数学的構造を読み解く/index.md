@@ -330,7 +330,7 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 「Attention Is All You Need」という挑発的なタイトルが示す通り、複雑なリカレント処理や畳み込み処理を捨て去り、純粋な「アテンション（関連度）」の計算に特化したこのアーキテクチャの美しさは、その数学的なシンプルさにこそあると言えるでしょう。
 
-今後、Transformerを超える新たなアーキテクチャ（State Space ModelであるMambaなど）が登場する可能性もありますが、Transformerが築き上げた「Attentionによる文脈理解」の数学的枠組みは、AIの歴史に永遠に刻まれるはずです。
+今後、Transformerを超える新たなアーキテクチャ（[State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/) Space ModelであるMambaなど）が登場する可能性もありますが、Transformerが築き上げた「Attentionによる文脈理解」の数学的枠組みは、AIの歴史に永遠に刻まれるはずです。
 
 もしあなたが今後、ChatGPTやClaudeなどのLLMを使う機会があれば、そのバックグラウンドで毎秒何兆回もの $Q K^T$ の行列積が計算され、Softmax関数が確率を弾き出している様子を想像してみてください。技術に対する解像度が上がり、よりAIの世界が面白く感じられるはずです。
 

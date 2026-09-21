@@ -258,7 +258,7 @@ $$
 
 ### 參考資料
 
-- Ohio State University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory)：邊的雙色著色與小型拉姆齊數的詳細解析。
+- Ohio [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory)：邊的雙色著色與小型拉姆齊數的詳細解析。
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf)：涵蓋單調子序列等拉姆齊思維的專題講義。
 
 本文章中的圖表、全排列窮舉數據表、機率與數量分佈，均由隨附的 Python 腳本生成。

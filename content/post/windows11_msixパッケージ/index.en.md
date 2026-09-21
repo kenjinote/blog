@@ -24,13 +24,13 @@ MSI and EXE, which have long been used as standard installation formats for Wind
 2. **DLL Hell**: When multiple applications try to install DLLs with the same name (but different versions) into a shared system directory, the app installed later overwrites the existing DLL, causing the previously installed app to stop working properly.
 3. **Instability from Custom Actions**: MSI packages can run arbitrary scripts or code called "custom actions" with system privileges during installation and uninstallation. This carried the risk of the installer crashing midway or causing unexpected system configuration changes.
 
-### Solutions through MSIX Containerization Architecture
+### Solutions through MSIX [Container](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)ization Architecture
 MSIX solves these issues by running applications inside a lightweight "container". This containerization approach offers the following tremendous benefits:
 
 - **Clean Uninstalls**: Apps installed via MSIX perform file system and registry writes virtually (VFS: Virtual File System, VReg: Virtual Registry). Therefore, when uninstalled, this virtualized container is deleted entirely, leaving zero garbage (remnants) on the system. It completely prevents Win Rot.
 - **Isolation and Security**: Each app runs within its own environment and does not directly corrupt the DLLs or resources of other apps. This frees you from DLL Hell.
 - **Network Bandwidth Optimization**: The MSIX update mechanism is highly excellent and supports block-level differential updates. Since it only downloads the few blocks of binary data that have changed, it minimizes the load on the network even when updating large applications.
-- **Reliable Installation State**: The package includes a manifest file (`AppxManifest.xml`), and the installation transaction is strictly managed at the OS level. If it fails, it is completely rolled back to its original state.
+- **Reliable Installation [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)**: The package includes a manifest file (`AppxManifest.xml`), and the installation transaction is strictly managed at the OS level. If it fails, it is completely rolled back to its original state.
 
 ## 2. Overview of MSIX Package Creation and Toolchain
 
@@ -70,7 +70,7 @@ It is very seamless, but if you use the automatically generated self-signed cert
 
 ## 4. Approach B: Creating using the Command Line (MakeAppx.exe)
 
-Command-line tools are required for automation in CI/CD pipelines or when manually repackaging a set of files from an existing installer. If the Windows SDK is installed in your environment, you can access the following tools from the Developer Command Prompt.
+Command-line tools are required for automation in [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) pipelines or when manually repackaging a set of files from an existing installer. If the Windows SDK is installed in your environment, you can access the following tools from the Developer Command Prompt.
 
 ### 1. Preparing the Manifest File
 Create an `AppxManifest.xml` describing minimal information in the root directory of the package.
@@ -296,7 +296,7 @@ Finally, let's summarize other common errors and solutions related to certificat
 
 - **0x800B0101**: The certificate used for signing has expired. Reissue a new certificate, or use a timestamp server (e.g., `http://timestamp.digicert.com`) during signing to prove that it was signed within the certificate's validity period (if a timestamp is attached, the signature is considered valid even if the certificate itself expires).
 - **0x80080204**: The `Publisher` value listed in `AppxManifest.xml` does not perfectly match the `Subject` value of the certificate. Strictly check whether they are an exact string match, including the presence or absence of spaces after commas.
-- **Checking the Event Viewer**: To investigate the detailed cause of an error, it is very important to open the Windows Event Viewer and check the logs under "Applications and Services Logs" -> "Microsoft" -> "Windows" -> "AppxPackagingOM" or "AppXDeployment-Server".
+- **Checking the Event Viewer**: To investigate the detailed cause of an error, it is very important to open the Windows Event Viewer and check the logs under "Applications and [Service](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/)s Logs" -> "Microsoft" -> "Windows" -> "AppxPackagingOM" or "AppXDeployment-Server".
 
 ## 10. Conclusion
 

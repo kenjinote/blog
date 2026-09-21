@@ -23,9 +23,9 @@ description: 'للمهندسين الذين يرغبون في الانتقال �
 ![img_10.png](img_10.webp)
 7. الدليل الشامل لـ SQL من الخبراء
 ![img_9.png](img_9.webp)
-8. الدليل العملي لـ Docker
+8. الدليل العملي لـ [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/)
 ![img_8.png](img_8.webp)
-9. الدليل الكامل لـ Kubernetes
+9. الدليل الكامل لـ [Kubernetes](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/)
 ![img_7.png](img_7.webp)
 10. CODE COMPLETE الإصدار الثاني
 ![img_5.png](img_5.webp)

@@ -26,7 +26,7 @@ description: 'نشرح كيفية تثبيت التطبيقات من سطر ال
 - Visual Studio Code (الأمر `winget install vscode`)
 - Slack (الأمر `winget install SlackTechnologies.Slack`)
 - Discord (الأمر `winget install Discord.Discord`)
-- Docker Desktop (الأمر `winget install Docker.DockerDesktop`)
+- [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (الأمر `winget install Docker.DockerDesktop`)
 - Git (الأمر `winget install Git`)
 - 7zip (الأمر `winget install 7zip`)
 - VLC (الأمر `winget install VideoLAN.VLC`)

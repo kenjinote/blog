@@ -258,7 +258,7 @@ La fascinación de la teoría de Ramsey no radica en que un todo complejo se vue
 
 ### Referencias
 
-- Ohio State University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): Explicación sobre la 2-coloración de aristas y números de Ramsey pequeños.
+- Ohio [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory): Explicación sobre la 2-coloración de aristas y números de Ramsey pequeños.
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf): Material de cátedra sobre el pensamiento de Ramsey, incluyendo subsecuencias monótonas.
 
 Las figuras, la tabla de enumeración exhaustiva y las distribuciones de probabilidad y recuento de este artículo fueron generadas con el script en Python adjunto.

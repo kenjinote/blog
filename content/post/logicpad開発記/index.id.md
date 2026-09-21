@@ -175,7 +175,7 @@ Untuk mendistribusikan LogicPad setelah proyeknya selesai, saya harus membuat in
 
 Akan tetapi, poin utama di antara hal krusial saat memaketkan aplikasi native C++ menjadi paket MSIX terletak di dalam file manifest yaitu `Package.appxmanifest`.
 
-LogicPad perlu membaca dan menulis file proyek sirkuit berskala raksasa pada sistem file lokal pengguna (misalnya dokumen lokal). Dalam standar isolasi (sandbox) platform UWP, aplikasi hanya diberi akses membaca data pada bilik terisolasinya sendiri (AppContainer). Maka sebab itu, demi mendapatkan hak akses penuh selayaknya aplikasi desktop native, pengembang harus mendaftarkan perizinan `runFullTrust` di dalam file manifest.
+LogicPad perlu membaca dan menulis file proyek sirkuit berskala raksasa pada sistem file lokal pengguna (misalnya dokumen lokal). Dalam standar isolasi (sandbox) platform UWP, aplikasi hanya diberi akses membaca data pada bilik terisolasinya sendiri (App[Container](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)). Maka sebab itu, demi mendapatkan hak akses penuh selayaknya aplikasi desktop native, pengembang harus mendaftarkan perizinan `runFullTrust` di dalam file manifest.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

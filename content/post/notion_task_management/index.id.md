@@ -232,7 +232,7 @@ if __name__ == "__main__":
         create_notion_task(sys.argv[1], sys.argv[2])
 ```
 
-Dengan memasukkan skrip ini ke dalam alur kerja GitHub Actions (`.github/workflows/issue_to_notion.yml`), tugas akan dibuat secara otomatis di Notion setiap kali ada Issue di repositori. Pengembang akan terbebas dari kerumitan bolak-balik antara GitHub dan Notion.
+Dengan memasukkan skrip ini ke dalam alur kerja [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) (`.github/workflows/issue_to_notion.yml`), tugas akan dibuat secara otomatis di Notion setiap kali ada Issue di repositori. Pengembang akan terbebas dari kerumitan bolak-balik antara GitHub dan Notion.
 
 ### Pembaruan Otomatis Status Publikasi Blog Menggunakan cURL
 
@@ -256,7 +256,7 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
   }'
 ```
 
-Dengan mengintegrasikan panggilan API ini ke dalam langkah terakhir saluran (pipeline) CI/CD, Anda dapat menyelesaikan otomatisasi penuh: "Push kode → Di-deploy secara otomatis → Tugas Notion secara otomatis selesai".
+Dengan mengintegrasikan panggilan API ini ke dalam langkah terakhir saluran (pipeline) [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/), Anda dapat menyelesaikan otomatisasi penuh: "Push kode → Di-deploy secara otomatis → Tugas Notion secara otomatis selesai".
 
 ---
 

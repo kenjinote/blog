@@ -59,7 +59,7 @@ Baker logró la asombrosa hazaña de generalizar el resultado demostrado por Gel
 **Teorema de Baker (1966)**:
 Sean $\alpha_1, \alpha_2, \ldots, \alpha_n$ números algebraicos no nulos, y supongamos que $\log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ son linealmente independientes sobre el cuerpo de los racionales $\mathbb{Q}$. Entonces, $1, \log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ son linealmente independientes sobre el cuerpo de los números algebraicos $\overline{\mathbb{Q}}$.
 
-En otras palabras, para cualesquiera números algebraicos no nulos $\beta_0, \beta_1, \ldots, \beta_n$, demostró que la siguiente forma lineal $\Lambda$ nunca es igual a $0$.
+En otras palabras, para cualesquiera números algebraicos no nulos $\beta_0, \beta_1, \ldots, \beta_n$, demostró que la siguiente forma lineal $\[Lambda](https://kenji.blog/es/p/serverless-architecture-aws-lambda-cold-start/)$ nunca es igual a $0$.
 
 $$ \Lambda = \beta_0 + \beta_1 \log \alpha_1 + \cdots + \beta_n \log \alpha_n \neq 0 $$
 

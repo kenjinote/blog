@@ -69,7 +69,7 @@ Git에는 `core.autocrlf`라는 설정이 있지만, 여기에 의존하는 것�
 
 Mac이나 Windows에서 개발할 때 소스 코드 내에서 `#include "myclass.h"` (또는 `import "./myclass"`)와 같이 소문자로 지정했더라도, 실제 파일이 `MyClass.h`인 경우 로컬 환경의 OS는 Case-Insensitive이기 때문에 빌드가 성공해버립니다.
 
-하지만 이 코드를 커밋하고 CI/CD 서버(보통 Ubuntu 등의 Linux)에서 빌드를 실행하면, Linux의 ext4 파일 시스템은 Case-Sensitive이기 때문에 "파일을 찾을 수 없음"이라는 컴파일 에러가 발생합니다.
+하지만 이 코드를 커밋하고 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 서버(보통 Ubuntu 등의 Linux)에서 빌드를 실행하면, Linux의 ext4 파일 시스템은 Case-Sensitive이기 때문에 "파일을 찾을 수 없음"이라는 컴파일 에러가 발생합니다.
 
 ### 알고리즘적 관점: 파일 검색의 계산 복잡도와 정규화
 
@@ -302,11 +302,11 @@ classDiagram
 
 ---
 
-## 8. CI/CD에서의 크로스 플랫폼 검증 (매트릭스 빌드)
+## 8. [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)에서의 크로스 플랫폼 검증 (매트릭스 빌드)
 
 개발자가 로컬 환경에서 아무리 주의 깊게 코딩하더라도, 크로스 플랫폼 대응의 최종 관문이 되는 것은 **CI/CD (Continuous Integration / Continuous Deployment) 파이프라인** 입니다. 로컬 환경(예: Mac)에서는 동작하더라도, 다른 OS(Windows)에서는 컴파일 에러가 되는 경우가 끊임없이 발생합니다.
 
-GitHub Actions나 GitLab CI 등 최신 CI 도구를 활용하여, Pull Request가 생성될 때마다 **Windows, macOS, Linux의 모든 환경에서 병렬로 빌드와 테스트를 실행하는** 매트릭스 빌드(Matrix Build)를 설정합시다.
+[GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)나 GitLab CI 등 최신 CI 도구를 활용하여, Pull Request가 생성될 때마다 **Windows, macOS, Linux의 모든 환경에서 병렬로 빌드와 테스트를 실행하는** 매트릭스 빌드(Matrix Build)를 설정합시다.
 
 ```yaml
 # GitHub Actions를 통한 크로스 플랫폼 CI 설정 예시
@@ -338,7 +338,7 @@ jobs:
       run: pytest -v
 ```
 
-이 CI/CD 플로우를 시각화하면 다음과 같습니다.
+이 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 플로우를 시각화하면 다음과 같습니다.
 
 ```mermaid
 sequenceDiagram
@@ -378,10 +378,10 @@ Mac과 Windows의 크로스 플랫폼 개발에는 역사적 배경에 뿌리를
 2.  **대소문자 구분**: macOS/Windows의 "구분하지 않는" 동작에 안주하지 말고, 파일 명명 규칙을 엄격하게 정하고 철저한 케이스 매칭을 명심합니다.
 3.  **경로 구분자**: 언어 표준의 경로 조작 API(`std::filesystem`, `pathlib`, `path` 모듈)를 이용하여 OS 차이를 흡수합니다.
 4.  **인코딩**: 항상 UTF-8을 지정하고, Windows의 기본 동작인 CP932의 영향을 철저히 배제합니다.
-5.  **환경 변수 및 쉘**: `cross-env` 등의 추상화 도구를 사용하거나 실행 환경을 WSL/Docker 등으로 통일합니다.
+5.  **환경 변수 및 쉘**: `cross-env` 등의 추상화 도구를 사용하거나 실행 환경을 WSL/[Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 등으로 통일합니다.
 6.  **빌드 시스템**: C/C++의 경우 CMake 등의 메타 빌드 시스템을 활용하여 OS별로 최적화된 네이티브 툴체인을 생성합니다.
 7.  **OS 종속 코드**: OS 추상화 계층(OSAL)을 설계하여 플랫폼에 종속된 로직을 분리 및 격리합니다.
-8.  **CI/CD**: 매트릭스 빌드를 도입하여 모든 대상 OS에서의 깨끗한 빌드와 테스트를 자동화하고, 사람에 의존하는 작업을 배제합니다.
+8.  **[CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)**: 매트릭스 빌드를 도입하여 모든 대상 OS에서의 깨끗한 빌드와 테스트를 자동화하고, 사람에 의존하는 작업을 배제합니다.
 
 현재는 Electron, Tauri, .NET 등의 강력한 프레임워크가 이러한 차이의 대부분을 흡수해주지만, 기반이 되는 OS의 네이티브 동작(파일 시스템이나 인코딩)에 대한 지식은 심각한 성능 문제나 난해한 버그를 해결할 때 여전히 필수적입니다. 이러한 모범 사례를 프로젝트의 초기 단계부터 팀 전체가 공유하고 철저히 준수함으로써, OS 차이로 인한 불필요한 디버깅 시간을 대폭 줄이고 본질적인 소프트웨어 가치 창출에 집중할 수 있을 것입니다.
 

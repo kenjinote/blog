@@ -318,7 +318,7 @@ Modificar manualmente una gran base de código heredado es poco realista. Apoyar
 
 - **Clang-Tidy**: Un potente linter de C++ y herramienta de análisis estático. Al habilitar comprobaciones `modernize-*`, aplica automáticamente (Fix-it) implementaciones de `auto`, reemplazos de `nullptr` y adiciones de `override`, etc.
 - **AddressSanitizer (ASan)**: Integrándolo como opción de compilación (`-fsanitize=address`), identifica con precisión fugas de memoria y desbordamientos de búfer en tiempo de ejecución. Debería habilitarse siempre durante la ejecución de las pruebas.
-- **Construcción de pipeline CI/CD**: Utilizando GitHub Actions o GitLab CI, ejecuta la compilación, las pruebas automáticas y el análisis estático en cada pull request para evitar la introducción de nueva deuda técnica.
+- **Construcción de pipeline [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/)**: Utilizando [GitHub Actions](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) o GitLab CI, ejecuta la compilación, las pruebas automáticas y el análisis estático en cada pull request para evitar la introducción de nueva deuda técnica.
 
 ---
 

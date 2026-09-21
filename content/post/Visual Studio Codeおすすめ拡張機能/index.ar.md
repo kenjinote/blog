@@ -14,7 +14,7 @@ description: 'نعرض قائمة بالإضافات الموصى بها الت�
 | التصنيف | الاسم | المصدر | الوصف |
 |----|----|-----|-----|
 | إدارة الحاويات والأنظمة الوهمية | Remote Devlopment | Microsoft  | يدعم التطوير عن بُعد عبر الاتصال بالحاويات الوهمية/WSL باستخدام SSH |
-| إدارة الحاويات والأنظمة الوهمية | Docker | Microsoft  | يدعم إدارة حاويات Docker |
+| إدارة الحاويات والأنظمة الوهمية | [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft  | يدعم إدارة حاويات Docker |
 | إدارة الكود | GitHub Pull Requests | GitHub | يدعم إدارة طلبات السحب (Pull Requests) الخاصة بـ GitHub داخل VSCode |
 | إدارة الكود | GitHub Copilot | GitHub | يدعم إكمال الكود باستخدام الذكاء الاصطناعي |
 | إدارة الكود | Git Graph | mhutchie | يعرض فروع وتاريخ Git بشكل رسومي |
@@ -24,7 +24,7 @@ description: 'نعرض قائمة بالإضافات الموصى بها الت�
 | تطوير الويب والمتصفح | Vue Language Features(Volar) | Vue |  يدعم ميزات لغة Vue |
 | تطوير الويب والمتصفح | JavaScript (ES6) code snippets | charalampos karypidis | يوفر مقتطفات برمجية لـ JavaScript |
 | تطوير الويب والمتصفح | Tailwind CSS IntelliSense | Tailwind Labs | يوفر مقتطفات برمجية لـ Tailwind CSS |
-| التطوير السحابي | AWS Toolkit | Amazon Web Services | يدعم تطوير AWS |
+| التطوير السحابي | AWS Toolkit | Amazon Web [Service](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/)s | يدعم تطوير AWS |
 | التطوير السحابي | Azure Tools | Microsoft | يدعم تطوير Azure |
 | التطوير السحابي | Google Cloud Tools | Google Cloud | يدعم تطوير Google Cloud |
 | قواعد البيانات | MySQL | Jun Han | يدعم تطوير MySQL |

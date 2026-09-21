@@ -322,7 +322,7 @@ print("Model merged and saved successfully!")
 
 Um den Inferenzdurchsatz (Tokens per second) in On-Premises-Umgebungen zu maximieren, wird dringend empfohlen, **vLLM** oder **TGI (Text Generation Inference)** anstelle der Standard-`pipeline` von Hugging Face zu verwenden. vLLM verwendet die PagedAttention-Technologie, um Speicherfragmentierung der GPU zu verhindern und die Verarbeitungskapazität für gleichzeitige Anfragen drastisch zu verbessern.
 
-Das folgende Mermaid-Diagramm zeigt die Pipeline vom Training bis zur Bereitstellung auf dem Inferenzserver.
+Das folgende Mermaid-Diagramm zeigt die [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) vom Training bis zur Bereitstellung auf dem Inferenzserver.
 
 ```mermaid
 graph TD

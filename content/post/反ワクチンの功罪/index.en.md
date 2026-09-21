@@ -132,7 +132,7 @@ We must look at statistically correct data and possess the intelligence to **cho
 ### References / Data Sources
 
 * **Ministry of Health, Labour and Welfare**: "Human Papillomavirus Infection ~ Cervical Cancer and the HPV Vaccine ~"
-* **National Cancer Center**: Cancer Information Service "Cervical Cancer" Statistical Data
+* **National Cancer Center**: Cancer Information [Service](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/) "Cervical Cancer" Statistical Data
 * **BBC News (Japanese)**: "US CDC Calls for Vaccination Amid Measles Outbreak; Global Infections on the Rise" (2024) and related original articles
 * **Osaka University Research Team (Yagi A, et al. Lancet Public Health. 2020)**: Research on estimating excess morbidity and mortality due to the suspension of proactive recommendation for routine HPV vaccination
 * **Nagoya Study (Suzuki S, et al. Papillomavirus Res. 2018)**

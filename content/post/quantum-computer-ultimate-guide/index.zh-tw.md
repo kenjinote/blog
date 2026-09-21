@@ -45,7 +45,7 @@ $$
 \mathcal{H} = \bigotimes_{i=1}^{N} \mathbb{C}^2 = \mathbb{C}^{2^N}
 $$
 
-此系統的純態（Pure State） $|\Psi\rangle$ 可表示為 $2^N$ 個基底向量的線性組合（疊加態）。在此，若採用狄拉克符號（Bra-ket notation），任何量子態皆可展開如下：
+此系統的純態（Pure [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)） $|\Psi\rangle$ 可表示為 $2^N$ 個基底向量的線性組合（疊加態）。在此，若採用狄拉克符號（Bra-ket notation），任何量子態皆可展開如下：
 
 $$
 |\Psi\rangle = \sum_{x=0}^{2^N-1} c_x |x\rangle
@@ -537,7 +537,7 @@ $$
 
 ## 3.6 觀測所致的波包塌縮（狀態還原）與退相干
 
-觀測公理中，包含了一個引發最多爭論的重大步驟：觀測「後」系統的狀態會變成如何。這就是被稱為「波包塌縮（Wavefunction collapse）」或「狀態還原（State reduction）」的現象。作為馮·紐曼的投影假說（Projection postulate）而為人所知的這個過程，被公式化如下：
+觀測公理中，包含了一個引發最多爭論的重大步驟：觀測「後」系統的狀態會變成如何。這就是被稱為「波包塌縮（Wavefunction collapse）」或「狀態還原（[State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) reduction）」的現象。作為馮·紐曼的投影假說（Projection postulate）而為人所知的這個過程，被公式化如下：
 
  **投影假說** ：
 透過觀測獲得本徵值 $a_k$ 直後系統的狀態 **$| \psi' \rangle$** ，將會瞬間變化（塌縮）為：將對應的投影算符 $P_k$ 作用於原狀態向量並重新歸一化後的結果。
@@ -787,7 +787,7 @@ T = \begin{pmatrix} 1 & 0 \\ 0 & e^{i\pi/4} \end{pmatrix} = \begin{pmatrix} 1 & 
 $$
 
 若將全域相位 **$e^{i\pi/8}$** 提出，對角成分會變成 **$e^{-i\pi/8}$** 與 **$e^{i\pi/8}$** ，因此在歷史上也被稱為 **$\pi/8$** 閘。
-T 閘不屬於克里福群，會破壞古典模擬的高效性。然而，量子計算理論中有一個極為重要的定理指出，只要在克里福群中加入哪怕一個 T 閘，就能完成「通用量子閘集合（Universal Quantum Gate Set）」，它可以以任意精度近似單一量子位元上的所有么正變換。在容錯（Fault-tolerant）量子計算中，由於難以直接在錯誤更正碼上執行 T 閘，因此它是使用被稱為「魔術態蒸餾（Magic State Distillation）」這種成本極高的手法來實作的。
+T 閘不屬於克里福群，會破壞古典模擬的高效性。然而，量子計算理論中有一個極為重要的定理指出，只要在克里福群中加入哪怕一個 T 閘，就能完成「通用量子閘集合（Universal Quantum Gate Set）」，它可以以任意精度近似單一量子位元上的所有么正變換。在容錯（Fault-tolerant）量子計算中，由於難以直接在錯誤更正碼上執行 T 閘，因此它是使用被稱為「魔術態蒸餾（Magic [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Distillation）」這種成本極高的手法來實作的。
 
 ## 4.5 任意旋轉閘的指數函數表示與通用性
 
@@ -1000,7 +1000,7 @@ $$
 
 ## 5.2 貝爾態（最大量子纏結態）的數學表達式
 
-多體量子系統中的狀態，可大致分類為「可分離態（Separable State）」與「纏結態（Entangled State）」兩種。
+多體量子系統中的狀態，可大致分類為「可分離態（Separable [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)）」與「纏結態（Entangled State）」兩種。
 當狀態 **$|\Psi\rangle$** 可以被描述為各個子系統狀態的單純張量積時，亦即：
 
 $$
@@ -1938,7 +1938,7 @@ $$
 
 ## 8.4 利用疊加態進行週期尋找的量子電路
 
-理論上的準備就緒後，讓我們來追蹤整個秀爾演算法的量子電路，以及各個步驟中量子態的時間演化（State Evolution）。演算法使用了兩個量子暫存器。
+理論上的準備就緒後，讓我們來追蹤整個秀爾演算法的量子電路，以及各個步驟中量子態的時間演化（[State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Evolution）。演算法使用了兩個量子暫存器。
 第1個暫存器由 $t \approx 2 \log_2 N$ 個量子位元組成，狀態空間的維度為 $M = 2^t$ （條件是選擇 $t$ 使得滿足 $M \ge N^2$ ）。第2個暫存器擁有 $L \approx \log_2 N$ 個量子位元，用來儲存計算結果。
 
 ```mermaid
@@ -2551,7 +2551,7 @@ $$
 為防止這種毀滅性連鎖的設計理念，便是「容錯量子計算（FTQC）」。FTQC 的絕對條件是：「系統內發生的單一物理錯誤，在一個邏輯錯誤區塊內最多只能傳播成一個錯誤」。
 為了實現這一點，在執行邏輯閘時強烈要求使用「橫向操作（Transversal Operations）」。這是一種安全的閘操作，第 $i$ 個物理量子位元只會與其他區塊的第 $i$ 個物理量子位元產生交互作用（不具有區塊內的交叉耦合）。然而，透過「伊士廷-克尼爾定理（Eastin-Knill Theorem）」在數學上已經證明，僅靠橫向操作是不可能建構出用於通用量子計算的連續閘集合（Gate Set）。
 
-規避這項定理的限制以實現通用 FTQC 的魔法棒，便是「魔術態蒸餾（Magic State Distillation）」。準備大量包含雜訊的非克里福態（Non-Clifford State，例如相當於 $T$ 閘的狀態），透過僅使用橫向克里福運算的錯誤更正電路，萃取出純度極高的「魔術態」。然後，利用量子遙傳（Quantum Teleportation）原理，間接地將非克里福閘（如 $T$ 閘等）套用至邏輯態上。這項蒸餾過程會消耗龐大資源（物理量子位元），因此在 FTQC 時代的演算法中，「如何減少 $T$ 閘的數量」成為了至高無上的命題。
+規避這項定理的限制以實現通用 FTQC 的魔法棒，便是「魔術態蒸餾（Magic [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Distillation）」。準備大量包含雜訊的非克里福態（Non-Clifford State，例如相當於 $T$ 閘的狀態），透過僅使用橫向克里福運算的錯誤更正電路，萃取出純度極高的「魔術態」。然後，利用量子遙傳（Quantum Teleportation）原理，間接地將非克里福閘（如 $T$ 閘等）套用至邏輯態上。這項蒸餾過程會消耗龐大資源（物理量子位元），因此在 FTQC 時代的演算法中，「如何減少 $T$ 閘的數量」成為了至高無上的命題。
 
 所有這些理論努力的集大成，便是「量子閾值定理（Quantum Threshold Theorem）」。
 由多麗特·阿哈羅諾夫（Dorit Aharonov）與麥克·本-奧爾（Michael Ben-Or）等人所證明的此定理，高聲宣告了以下結論：

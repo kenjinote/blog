@@ -184,7 +184,7 @@ Get-NetNat
 
 WSL2 是專為「提升開發者生產力」而設計的。最適合以下用途：
 
-*   **網頁開發與雲端原生開發**: 使用 Docker Desktop（WSL2 後端）或 Podman 的容器開發。
+*   **網頁開發與雲端原生開發**: 使用 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop（WSL2 後端）或 Podman 的容器開發。
 *   **使用 Linux 專用工具**: 日常使用 bash、grep、awk、sed，或是 Linux 平台的 GCC 或 Clang 編譯器時。
 *   **GUI 應用程式 (WSLg)**: 想在 Windows 桌面環境上無縫執行 Linux 的 X11/Wayland 應用程式時。
 *   **機器學習與 AI 開發**: 利用 GPU 穿透功能（NVIDIA CUDA on WSL）來進行 TensorFlow 或 PyTorch 的高速訓練。

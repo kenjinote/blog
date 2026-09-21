@@ -12,7 +12,7 @@ description: 'دليل إعداد شامل لنظام WSL2 يحسن بشكل ك�
 
 يوفر "WSL2" (نظام ويندوز الفرعي لنظام لينكس 2)، والذي يقدم بيئة تطوير أصلية للينكس على ويندوز، أداة لا غنى عنها في تطوير البرمجيات الحديثة. ومع ذلك، هناك فرق شاسع في الأداء وتجربة التطوير بين الاستمرار في استخدامه في حالته الافتراضية، وبين فهم بنيته المعمارية وإجراء الضبط المناسب.
 
-في هذه المقالة، سنشرح بالتفصيل الشامل (بأكثر من 10,000 حرف) جميع الخطوات اللازمة لبناء "بيئة التطوير المطلوبة (المثالية)" التي يبحث عنها المهندسون المحترفون. بدءًا من شرح البنية المعمارية التي تشكل أساس WSL2، وصولاً إلى الإعدادات اللازمة لاستخراج أقصى أداء، وبناء بيئة طرفية (Terminal) مريحة، والتكامل السلس مع Docker و VS Code، وإعدادات الشبكة المتقدمة.
+في هذه المقالة، سنشرح بالتفصيل الشامل (بأكثر من 10,000 حرف) جميع الخطوات اللازمة لبناء "بيئة التطوير المطلوبة (المثالية)" التي يبحث عنها المهندسون المحترفون. بدءًا من شرح البنية المعمارية التي تشكل أساس WSL2، وصولاً إلى الإعدادات اللازمة لاستخراج أقصى أداء، وبناء بيئة طرفية (Terminal) مريحة، والتكامل السلس مع [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/) و VS Code، وإعدادات الشبكة المتقدمة.
 
 ---
 
@@ -256,7 +256,7 @@ sequenceDiagram
 من "الإضافات" (Extensions) في VS Code، قم بتثبيت **"WSL" (ms-vscode-remote.remote-wsl)**. بعد ذلك، ببساطة انتقل إلى دليل المشروع في محطة WSL وقم بتنفيذ `code .`، وسيتم تشغيل VS Code على جانب ويندوز مع فتح ذلك الدليل.
 
 **ملاحظة هامة (مشكلة رمز نهاية السطر (Line Ending)):**
-رموز نهاية السطر تختلف بين ويندوز ولينكس (ويندوز يستخدم `CRLF`، ولينكس يستخدم `LF`). عند التطوير على WSL، تأكد من توحيد إعداد `core.autocrlf` في Git وإعداد الملف الافتراضي في VS Code إلى `LF`. سيؤدي الفشل في القيام بذلك إلى التسبب في أخطاء غامضة عند تشغيل نصوص الصدفة (Shell scripts) أو حاويات Docker.
+رموز نهاية السطر تختلف بين ويندوز ولينكس (ويندوز يستخدم `CRLF`، ولينكس يستخدم `LF`). عند التطوير على WSL، تأكد من توحيد إعداد `core.autocrlf` في Git وإعداد الملف الافتراضي في VS Code إلى `LF`. سيؤدي الفشل في القيام بذلك إلى التسبب في أخطاء غامضة عند تشغيل نصوص الصدفة (Shell scripts) أو حاويات [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ```bash
 # إعداد رمز نهاية السطر (Line Ending) لـ Git في WSL
@@ -274,7 +274,7 @@ git config --global core.autocrlf input
 
 ---
 
-## 7. تحسين Docker Desktop وتكامله مع WSL2
+## 7. تحسين [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop وتكامله مع WSL2
 
 هناك طريقتان رئيسيتان لاستخدام Docker في بيئة WSL2.
 
@@ -282,15 +282,15 @@ git config --global core.autocrlf input
 2. تثبيت **محرك Docker الأصلي (Docker Engine)** مباشرة داخل WSL2 (مثل Ubuntu).
 
 ### النهج 1: Docker Desktop (موصى به)
-يُوصى بهذا النهج غالبًا لأنه يسهل الإدارة عبر واجهة المستخدم الرسومية (GUI) والوصول الشفاف إلى الحاويات (Containers) بين ويندوز و WSL. تحقق من التالي في إعدادات Docker Desktop (Settings).
+يُوصى بهذا النهج غالبًا لأنه يسهل الإدارة عبر واجهة المستخدم الرسومية (GUI) والوصول الشفاف إلى الحاويات ([Container](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)s) بين ويندوز و WSL. تحقق من التالي في إعدادات Docker Desktop (Settings).
 
 - في `General` -> ضع علامة اختيار على `Use the WSL 2 based engine`.
 - في `Resources` -> `WSL Integration` -> ضع علامة اختيار على `Enable integration with my default WSL distro`، وقم بتشغيل مفتاح التبديل للتوزيعة التي تستخدمها (Ubuntu).
 
-يسمح لك ذلك بتنفيذ أوامر `docker` مباشرة من محطة WSL2، ويتم الاتصال ببرنامج Docker الخفي (Daemon) من خلال أجهزة افتراضية خفيفة الوزن مخصصة يديرها Docker Desktop (`docker-desktop` و `docker-desktop-data`).
+يسمح لك ذلك بتنفيذ أوامر `docker` مباشرة من محطة WSL2، ويتم الاتصال ببرنامج [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/) الخفي (Daemon) من خلال أجهزة افتراضية خفيفة الوزن مخصصة يديرها Docker Desktop (`docker-desktop` و `docker-desktop-data`).
 
-### النهج 2: التثبيت المباشر لمحرك Docker الأصلي (Native Docker Engine)
-إذا كان هناك قيود على شبكة الشركة (مثل تجنب الإصدار المدفوع من Docker Desktop) أو كنت ترغب في تقليل عبء الأداء إلى أدنى حد ممكن، فقم بتمكين `systemd` في `/etc/wsl.conf` وقم بتثبيت Docker كخادم Ubuntu نقي.
+### النهج 2: التثبيت المباشر لمحرك [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/) الأصلي (Native Docker Engine)
+إذا كان هناك قيود على شبكة الشركة (مثل تجنب الإصدار المدفوع من Docker Desktop) أو كنت ترغب في تقليل عبء الأداء إلى أدنى حد ممكن، فقم بتمكين `systemd` في `/etc/wsl.conf` وقم بتثبيت [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/) كخادم Ubuntu نقي.
 
 ```bash
 # مقتطف من خطوات التثبيت الرسمية لـ Docker في WSL2 Ubuntu مع تفعيل systemd
@@ -351,7 +351,7 @@ fi
 
 ## 9. الصيانة: تحسين (ضغط) ملفات VHDX المتضخمة
 
-أحد أكبر عيوب WSL2 هو أن "حجم ملف القرص الافتراضي على جانب ويندوز (.vhdx) لا يتقلص تلقائيًا حتى لو قمت بحذف صور Docker أو الملفات". إذا واصلت التطوير لفترة طويلة، سيتضخم ملف ext4.vhdx إلى عشرات أو مئات الجيجابايت.
+أحد أكبر عيوب WSL2 هو أن "حجم ملف القرص الافتراضي على جانب ويندوز (.vhdx) لا يتقلص تلقائيًا حتى لو قمت بحذف صور [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/) أو الملفات". إذا واصلت التطوير لفترة طويلة، سيتضخم ملف ext4.vhdx إلى عشرات أو مئات الجيجابايت.
 
 لتحرير مساحة على القرص، يجب عليك تحسين (Compact) ملف VHDX من جانب ويندوز بانتظام.
 

@@ -317,7 +317,7 @@ When enterprises use LLM APIs in production environments, their biggest concerns
 All three companies clearly state that data sent via API (prompts and responses) **will not be used for model training (Zero Data Retention / No Training on Customer Data)** (*This does not apply to free consumer web chat UIs).
 
 When an even higher level of security is required:
-- **OpenAI**: By using the Azure OpenAI Service, you can utilize Microsoft's enterprise-grade security, SLAs, and closed-network connections via Azure Private Link.
+- **OpenAI**: By using the Azure OpenAI [Service](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/), you can utilize Microsoft's enterprise-grade security, SLAs, and closed-network connections via Azure Private Link.
 - **Google**: By using Google Cloud Vertex AI, strict network isolation using VPC Service Controls and data protection with CMEK (Customer-Managed Encryption Keys) are possible.
 - **Anthropic**: By using it via AWS Bedrock or Google Cloud Vertex AI, you can piggyback on the robust security infrastructure of cloud providers.
 

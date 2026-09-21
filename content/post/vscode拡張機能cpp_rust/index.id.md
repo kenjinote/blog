@@ -256,7 +256,7 @@ Saat menggunakan literal string sebagai kunci di dalam fitur seperti `std::unord
 
 ---
 
-## 3. Otomatisasi Pipeline Build Menggunakan tasks.json
+## 3. Otomatisasi [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) Build Menggunakan tasks.json
 
 Agar fungsionalitasnya benar-benar lengkap sebagai IDE, selain fungsi GUI editor, sangat penting juga untuk memanfaatkan fungsi Task di VSCode (`.vscode/tasks.json`) agar dapat mengeksekusi build atau test hanya dengan satu tombol shortcut (default-nya adalah `Ctrl+Shift+B`).
 

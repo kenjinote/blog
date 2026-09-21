@@ -69,7 +69,7 @@ Gitには `core.autocrlf` という設定がありますが、これに依存す
 
 MacやWindowsで開発している際、ソースコード内で `#include "myclass.h"` （または `import "./myclass"`）と小文字で指定していても、実際のファイルが `MyClass.h` である場合、ローカル環境のOSはCase-Insensitiveであるためビルドが成功してしまいます。
 
-しかし、このコードをコミットし、CI/CDサーバー（通常はUbuntuなどのLinux）でビルドを実行すると、Linuxのext4ファイルシステムはCase-Sensitiveであるため「ファイルが見つからない」というコンパイルエラーになります。
+しかし、このコードをコミットし、[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)サーバー（通常はUbuntuなどのLinux）でビルドを実行すると、Linuxのext4ファイルシステムはCase-Sensitiveであるため「ファイルが見つからない」というコンパイルエラーになります。
 
 ### アルゴリズム的視点: ファイル検索の計算量と正規化
 
@@ -187,8 +187,8 @@ with open("data.txt", "w", encoding="utf-8") as f:
 
 ビルドスクリプトや開発用ツールを実行する際のシェル（コマンドラインインタプリタ）の違いも、クロスプラットフォームにおける大きな壁です。
 
-*   **macOS / Linux**: `bash` または `zsh` が主流。テキストベースのパイプライン処理を行います。
-*   **Windows**: コマンドプロンプト (`cmd.exe`) または `PowerShell`。PowerShellは.NETベースであり、強力な[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)パイプラインを持ちますが、文法がPOSIXシェルと全く異なります。
+*   **macOS / Linux**: `bash` または `zsh` が主流。テキストベースの[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)処理を行います。
+*   **Windows**: コマンドプロンプト (`cmd.exe`) または `PowerShell`。PowerShellは.NETベースであり、強力な[オブジェクト指向](https://kenji.blog/p/oop-vs-fp-vs-dop/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を持ちますが、文法がPOSIXシェルと全く異なります。
 
 環境変数の参照方法や設定方法が異なるため、Node.jsの `package.json` の `scripts` 領域などでOS依存の書き方をすると、他の環境で動かなくなります。
 
@@ -302,11 +302,11 @@ classDiagram
 
 ---
 
-## 8. CI/CDでのクロスプラットフォーム検証 (マトリックスビルド)
+## 8. [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)でのクロスプラットフォーム検証 (マトリックスビルド)
 
-開発者がローカル環境でどれだけ注意深くコーディングしても、クロスプラットフォーム対応の最終的な砦となるのは **CI/CD (Continuous Integration / Continuous Deployment) パイプライン** です。ローカル環境（例えばMac）では動いても、他のOS（Windows）ではコンパイルエラーになるケースは後を絶ちません。
+開発者がローカル環境でどれだけ注意深くコーディングしても、クロスプラットフォーム対応の最終的な砦となるのは **CI/CD (Continuous Integration / Continuous Deployment) [パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)** です。ローカル環境（例えばMac）では動いても、他のOS（Windows）ではコンパイルエラーになるケースは後を絶ちません。
 
-GitHub ActionsやGitLab CIなどの最新のCIツールを活用し、Pull Requestが作成されるたびに **Windows, macOS, Linuxの全環境で並列してビルドとテストを実行する** マトリックスビルド（Matrix Build）を設定しましょう。
+[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)やGitLab CIなどの最新のCIツールを活用し、Pull Requestが作成されるたびに **Windows, macOS, Linuxの全環境で並列してビルドとテストを実行する** マトリックスビルド（Matrix Build）を設定しましょう。
 
 ```yaml
 # GitHub Actions によるクロスプラットフォームCIの設定例
@@ -338,7 +338,7 @@ jobs:
       run: pytest -v
 ```
 
-このCI/CDのフローを視覚化すると以下のようになります。
+この[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)のフローを視覚化すると以下のようになります。
 
 ```mermaid
 sequenceDiagram
@@ -378,10 +378,10 @@ MacとWindowsのクロスプラットフォーム開発には、歴史的背景�
 2.  **大文字・小文字**: macOS/Windowsの「区別しない」挙動に甘えず、ファイル命名規則を厳格に定め、厳密なケースマッチングを心がける。
 3.  **パス区切り**: 言語標準のパス操作API（`std::filesystem`, `pathlib`, `path`モジュール）を利用し、OSの違いを吸収する。
 4.  **エンコーディング**: 常に UTF-8 を指定し、Windowsのデフォルト動作であるCP932の影響を徹底的に排除する。
-5.  **環境変数・シェル**: `cross-env` などの抽象化ツールを使うか、実行環境をWSL/Docker等に統一する。
+5.  **環境変数・シェル**: `cross-env` などの抽象化ツールを使うか、実行環境をWSL/[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)等に統一する。
 6.  **ビルドシステム**: C/C++の場合は CMake 等のメタビルドシステムを活用し、OSごとに最適なネイティブツールチェーンを生成する。
 7.  **OS依存コード**: OS抽象化層 (OSAL) を設計し、プラットフォーム依存のロジックを分離・隔離する。
-8.  **CI/CD**: マトリックスビルドを導入し、全対象OSでのクリーンなビルドとテストを自動化し、属人性を排除する。
+8.  **[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)**: マトリックスビルドを導入し、全対象OSでのクリーンなビルドとテストを自動化し、属人性を排除する。
 
 現在では Electron, Tauri, .NET などの強力なフレームワークがこれらの差異の多くを吸収してくれますが、基盤となるOSのネイティブな挙動（ファイルシステムやエンコーディング）の知識は、深刻なパフォーマンス問題や難解なバグを解決する際に依然として不可欠です。これらのベストプラクティスをプロジェクトの初期段階からチーム全体で共有・徹底することで、OSの違いによる不毛なデバッグ時間を大幅に削減し、本質的なソフトウェアの価値創造に集中することができるでしょう。
 

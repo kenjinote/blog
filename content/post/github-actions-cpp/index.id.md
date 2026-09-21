@@ -9,7 +9,7 @@ categories: ["programming", "devops"]
 tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 ---
 
-# Panduan Lengkap: Membangun Pipeline CI/CD untuk Proyek C++ menggunakan GitHub Actions
+# Panduan Lengkap: Membangun [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) untuk Proyek C++ menggunakan [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)
 
 Dalam paradigma pengembangan perangkat lunak modern, Integrasi Berkelanjutan (Continuous Integration: CI) dan Pengiriman/Penerapan Berkelanjutan (Continuous Delivery/Deployment: CD) adalah elemen penting untuk mempertahankan proses pengembangan yang gesit (agile) dan perangkat lunak yang berkualitas tinggi. Di antara sekian banyak bahasa pemrograman yang ada, membangun pipeline CI/CD di C++ melibatkan kesulitan dan kompleksitas tersendiri dibandingkan dengan bahasa lain (seperti Python, JavaScript, Go, dll.).
 
@@ -17,7 +17,7 @@ Pada artikel ini, kita akan membahas secara sangat detail tentang cara memanfaat
 
 ## 1. Signifikansi dan Tantangan Khusus CI/CD pada Proyek C++
 
-Dalam pengembangan aplikasi Web atau yang menggunakan bahasa skrip, sering kali menguji atau membangun di atas sebuah kontainer Docker tunggal sudah cukup. Namun, C++ adalah bahasa yang dikompilasi secara native dan sangat bergantung pada arsitektur perangkat keras dan sistem operasi dari lingkungan eksekusinya.
+Dalam pengembangan aplikasi Web atau yang menggunakan bahasa skrip, sering kali menguji atau membangun di atas sebuah kontainer [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) tunggal sudah cukup. Namun, C++ adalah bahasa yang dikompilasi secara native dan sangat bergantung pada arsitektur perangkat keras dan sistem operasi dari lingkungan eksekusinya.
 
 Berikut adalah tantangan utama yang dihadapi ketika menerapkan CI/CD ke dalam proyek C++:
 
@@ -27,9 +27,9 @@ Berikut adalah tantangan utama yang dihadapi ketika menerapkan CI/CD ke dalam pr
 4. **Manajemen Dependensi**: C++ tidak memiliki manajer paket standar mutlak seperti npm atau pip. Anda harus selalu menyelesaikan library dengan benar di lingkungan CI menggunakan alat seperti vcpkg, Conan, atau `FetchContent` dari CMake.
 5. **Manajemen Memori dan Perilaku Tak Terdefinisi (Undefined Behavior)**: Karena melibatkan operasi pointer dan manajemen memori manual, Anda perlu mengotomatiskan tidak hanya pengujian logika, tetapi juga deteksi kebocoran memori (memory leak) dan perilaku tak terdefinisi (Undefined Behavior).
 
-Untuk mengatasi tantangan ini, GitHub Actions, yang dapat memprovisikan berbagai mesin virtual OS sesuai permintaan (on-demand) dan mendefinisikan alur kerja yang kompleks dengan kode (Configuration as Code), adalah solusi yang optimal.
+Untuk mengatasi tantangan ini, [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/), yang dapat memprovisikan berbagai mesin virtual OS sesuai permintaan (on-demand) dan mendefinisikan alur kerja yang kompleks dengan kode (Configuration as Code), adalah solusi yang optimal.
 
-## 2. Gambaran Arsitektur Pipeline CI/CD
+## 2. Gambaran Arsitektur [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/)
 
 Mari kita visualisasikan gambaran keseluruhan dari pipeline CI/CD yang akan kita bangun. Diagram urutan (sequence diagram) Mermaid berikut menunjukkan alur kerja dari push kode hingga rilis.
 
@@ -142,7 +142,7 @@ include(CPack)
 - **Memperketat Peringatan (`-Werror` / `/WX`)**: Secara paksa menjaga kualitas kode agar tetap tinggi dengan memperlakukan peringatan kompiler sebagai kesalahan (error) di lingkungan CI.
 - **GNUInstallDirs**: Secara otomatis menyelesaikan jalur instalasi standar untuk setiap OS (misalnya, `/usr/local/bin` atau `C:\Program Files`).
 
-## 4. Dasar-dasar GitHub Actions dan Strategi Matriks
+## 4. Dasar-dasar [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dan Strategi Matriks
 
 GitHub Actions dikonfigurasikan menggunakan file YAML di dalam direktori `.github/workflows/`.
 Fitur paling kuat untuk proyek C++ adalah "Strategi Matriks (Matrix Strategy)". Fitur ini memungkinkan Anda menghasilkan kombinasi OS dan kompiler secara dinamis dan menjalankannya secara paralel.
@@ -189,7 +189,7 @@ jobs:
 
 ## 5. Mengoptimalkan Proses Paralel Menggunakan Hukum Amdahl dan Biaya Build
 
-CI/CD di lingkungan komputasi awan (cloud) adalah pertarungan melawan waktu, dan waktu build berhubungan langsung dengan waktu tunggu pengembang dan biaya operasional (running cost).
+[CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) di lingkungan komputasi awan (cloud) adalah pertarungan melawan waktu, dan waktu build berhubungan langsung dengan waktu tunggu pengembang dan biaya operasional (running cost).
 Mari kita lakukan pendekatan matematis untuk mengoptimalkan waktu build menggunakan "Hukum Amdahl (Amdahl's Law)" dalam ilmu komputer.
 
 Hukum Amdahl mendefinisikan peningkatan kecepatan maksimum teoritis $S(N)$ saat menggunakan $N$ prosesor, dengan persentase bagian dari program yang dapat diparalelkan diasumsikan sebagai $P$, seperti berikut:
@@ -199,7 +199,7 @@ $$ S(N) = \frac{1}{(1 - P) + \frac{P}{N}} $$
 Dalam proses build C++, kompilasi dari setiap unit terjemahan (Translation Unit: file `.cpp`) dari kode sumber sepenuhnya independen dan dapat diparalelkan. Di sisi lain, konfigurasi CMake dan fase penautan (link) binary akhir pada dasarnya dieksekusi secara serial (tidak dapat diparalelkan).
 
 Misalkan, dari total waktu build proyek, 80% adalah fase kompilasi ($P = 0.8$) dan 20% adalah fase serial ($1 - P = 0.2$).
-Runner standar GitHub Actions (Linux) menyediakan 2 core (utas/thread). Oleh karena itu, untuk $N = 2$:
+Runner standar [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) (Linux) menyediakan 2 core (utas/thread). Oleh karena itu, untuk $N = 2$:
 
 $$ S(2) = \frac{1}{0.2 + \frac{0.8}{2}} = \frac{1}{0.2 + 0.4} = \frac{1}{0.6} \approx 1.67 $$
 
@@ -210,7 +210,7 @@ Hanya dengan menggunakan 2 core, kita bisa mendapatkan peningkatan kecepatan sek
       run: cmake --build build --config Release --parallel 2
 ```
 
-Selain itu, kita juga harus mempertimbangkan perhitungan biaya. Total biaya GitHub Actions $C_{total}$ adalah jumlah dari produk waktu eksekusi pekerjaan $T_i$ dan harga satuan runner $R_i$.
+Selain itu, kita juga harus mempertimbangkan perhitungan biaya. Total biaya [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) $C_{total}$ adalah jumlah dari produk waktu eksekusi pekerjaan $T_i$ dan harga satuan runner $R_i$.
 
 $$ C_{total} = \sum_{i=1}^{M} \left( T_i \times R_i \right) $$
 
@@ -266,7 +266,7 @@ if(ENABLE_COVERAGE AND CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
 endif()
 ```
 
-Tentukan tugas (job) terpisah untuk pengukuran cakupan di GitHub Actions.
+Tentukan tugas (job) terpisah untuk pengukuran cakupan di [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/).
 
 ```yaml
   coverage:
@@ -301,7 +301,7 @@ Menggunakan perintah `lcov --remove`, sistem header, library pihak ketiga, dan k
 
 ## 8. Pengiriman Otomatis (CD) Binary melalui GitHub Releases
 
-Mari kita bangun bagian "CD" (Continuous Delivery) dari pipeline CI/CD. Ketika pengembang menambahkan tag versi (misalnya `v1.2.0`) di Git dan melakukan push, binary yang dapat dieksekusi (executable) untuk setiap OS akan dikompilasi secara otomatis, dikemas menjadi file ZIP atau Tarball, dan diunggah ke GitHub Releases.
+Mari kita bangun bagian "CD" (Continuous Delivery) dari pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/). Ketika pengembang menambahkan tag versi (misalnya `v1.2.0`) di Git dan melakukan push, binary yang dapat dieksekusi (executable) untuk setiap OS akan dikompilasi secara otomatis, dikemas menjadi file ZIP atau Tarball, dan diunggah ke GitHub Releases.
 
 Pada langkah ini, kita menggunakan alat pemaketan (packaging tool) `CPack` yang disertakan di dalam CMake.
 
@@ -326,7 +326,7 @@ Pada langkah ini, kita menggunakan alat pemaketan (packaging tool) `CPack` yang 
 
 Dengan konfigurasi ini, cukup dengan mengeksekusi `git tag v1.0.0` dan `git push origin v1.0.0`, pengguna Windows akan mendapatkan file ZIP, dan pengguna Linux/macOS akan mendapatkan file Tarball, yang secara otomatis dipublikasikan ke halaman rilis tanpa campur tangan manual. Ini adalah fitur yang sangat hebat untuk mendistribusikan perangkat lunak kepada pengguna.
 
-## 9. File YAML Workflow Lengkap
+## 9. File YAML [Workflow](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) Lengkap
 
 Di bawah ini adalah kode lengkap untuk `.github/workflows/main.yml` yang kuat dan praktis, yang mengintegrasikan semua elemen yang telah dibahas sebelumnya.
 
@@ -440,18 +440,18 @@ jobs:
         fail_ci_if_error: false
 ```
 
-## 10. Menuju CI/CD yang Lebih Lanjut (Analisis Statis dan Pemformatan)
+## 10. Menuju [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) yang Lebih Lanjut (Analisis Statis dan Pemformatan)
 
 Meskipun kita melewatkan penjelasan rinci di sini, sangat disarankan untuk memasukkan lebih banyak alat jaminan kualitas ke dalam pipeline pada penggunaan praktis (production).
 
 1. **Memaksakan Clang-Format**: Untuk mengurangi beban ulasan (review) kode, integrasikan pengecekan gaya penulisan kode menggunakan `clang-format` ke dalam CI, dan buat pipeline gagal jika melanggar aturan format.
 2. **Analisis Statis (Clang-Tidy)**: Untuk mendeteksi bug tersembunyi yang tidak dapat dicegah oleh peringatan kompiler saja, atau kode yang tidak efisien (seperti penyalinan yang tidak perlu), integrasikan `clang-tidy` ke dalam CMake dan jalankan di atas CI.
-3. **Memanfaatkan Cache vcpkg / Conan**: Saat menggunakan banyak library pihak ketiga, membangun dependensi memakan banyak waktu. Memanfaatkan `actions/cache` dari GitHub Actions untuk menyimpan direktori instalasi vcpkg atau cache Conan dapat secara drastis mengurangi waktu build.
+3. **Memanfaatkan Cache vcpkg / Conan**: Saat menggunakan banyak library pihak ketiga, membangun dependensi memakan banyak waktu. Memanfaatkan `actions/cache` dari [GitHub Actions](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) untuk menyimpan direktori instalasi vcpkg atau cache Conan dapat secara drastis mengurangi waktu build.
 
 ## Kesimpulan
 
-Membangun pipeline CI/CD untuk proyek C++ sekilas mungkin tampak sangat sulit karena ketergantungan pada platform dan kompleksitas alat build-nya. Namun, dengan menggabungkan ekosistem GitHub Actions, CMake Modern, dan CTest/CPack dengan benar, Anda bisa mendapatkan alur pengembangan (workflow) yang sangat kuat dan otomatis.
+Membangun pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) untuk proyek C++ sekilas mungkin tampak sangat sulit karena ketergantungan pada platform dan kompleksitas alat build-nya. Namun, dengan menggabungkan ekosistem GitHub Actions, CMake Modern, dan CTest/CPack dengan benar, Anda bisa mendapatkan alur pengembangan (workflow) yang sangat kuat dan otomatis.
 
 Validasi lintas platform (cross-platform) menggunakan strategi matriks, deteksi bug pada saat runtime (waktu eksekusi) menggunakan pembersih (sanitizers), pengukuran cakupan (code coverage), dan penerapan otomatis (auto deployment) ke GitHub Releases yang dibahas dalam artikel ini adalah praktik terbaik yang banyak diadopsi bahkan dalam proyek open-source komersial.
 
-Pipeline CI/CD otomatis meminimalkan waktu yang dihabiskan pengembang untuk "mencari bug" atau "tugas build dan rilis manual", menjadikannya senjata yang luar biasa untuk membantu mereka fokus pada kegiatan pembuatan kode yang sebenarnya (coding kreatif). Jangan ragu untuk menerapkannya pada proyek C++ Anda sendiri demi mencapai kehidupan pengembangan yang lebih lincah dan bebas dari rasa khawatir.
+[Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) CI/CD otomatis meminimalkan waktu yang dihabiskan pengembang untuk "mencari bug" atau "tugas build dan rilis manual", menjadikannya senjata yang luar biasa untuk membantu mereka fokus pada kegiatan pembuatan kode yang sebenarnya (coding kreatif). Jangan ragu untuk menerapkannya pada proyek C++ Anda sendiri demi mencapai kehidupan pengembangan yang lebih lincah dan bebas dari rasa khawatir.

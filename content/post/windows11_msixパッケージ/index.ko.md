@@ -70,7 +70,7 @@ flowchart TD
 
 ## 4. 접근 방식 B: 커맨드 라인(MakeAppx.exe)을 이용한 생성
 
-CI/CD 파이프라인에서의 자동화나, 기존 인스톨러에서 수동으로 파일들을 재패키징하는 경우 등에는 커맨드 라인 툴이 필요합니다. Windows SDK가 설치된 환경이라면 개발자 명령 프롬프트에서 다음의 툴에 접근할 수 있습니다.
+[CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인에서의 자동화나, 기존 인스톨러에서 수동으로 파일들을 재패키징하는 경우 등에는 커맨드 라인 툴이 필요합니다. Windows SDK가 설치된 환경이라면 개발자 명령 프롬프트에서 다음의 툴에 접근할 수 있습니다.
 
 ### 1. 매니페스트 파일 준비
 패키지의 루트 디렉터리에 최소한의 정보를 기술한 `AppxManifest.xml`을 생성합니다.

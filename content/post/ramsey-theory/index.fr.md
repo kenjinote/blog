@@ -258,7 +258,7 @@ L'élégance de la théorie de Ramsey ne réside pas dans une simplification mag
 
 ### Références et lectures complémentaires
 
-- Ohio State University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory) : Introduction au 2-coloriage des arêtes et aux petits nombres de Ramsey (en anglais).
+- Ohio [State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) University, [Ramsey Theory](https://ximera.osu.edu/math/combinatorics/combinatoricsBook/combinatoricsBook/combinatorics/ramseyTheory/ramseyTheory) : Introduction au 2-coloriage des arêtes et aux petits nombres de Ramsey (en anglais).
 - Yuval Wigderson, PCMI 2025, [Extremal graph theory and Ramsey theory: Lecture 10](https://ywigderson.math.ethz.ch/math/static/pcmi2025/Notes10.pdf) : Support de cours sur la combinatoire extrémale et les approches de type Ramsey, incluant les sous-suites monotones (en anglais).
 
 Les graphiques, les tableaux d'énumération exhaustive et les distributions de probabilités présentés dans cet article ont été générés à l'aide du script Python fourni.

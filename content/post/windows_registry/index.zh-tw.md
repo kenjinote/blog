@@ -159,7 +159,7 @@ flowchart TD
 
 ## 8. 透過 PowerShell 進行可程式化的安全編輯
 
-為了將手動編輯登錄檔的風險降到最低，現代的最佳實務是使用 PowerShell 指令碼將操作程式碼化（基礎架構即程式碼，Infrastructure as Code），以確保自動化、可重現性與可測試性。PowerShell 具備了「Registry Provider（登錄檔提供者）」，能以操作檔案系統（如 C: 磁碟機）完全相同的 Cmdlet（例如 `Get-ChildItem`、`Get-ItemProperty`、`New-Item` 等）來透通地操作登錄檔。
+為了將手動編輯登錄檔的風險降到最低，現代的最佳實務是使用 PowerShell 指令碼將操作程式碼化（基礎架構即程式碼，[Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/)），以確保自動化、可重現性與可測試性。PowerShell 具備了「Registry Provider（登錄檔提供者）」，能以操作檔案系統（如 C: 磁碟機）完全相同的 Cmdlet（例如 `Get-ChildItem`、`Get-ItemProperty`、`New-Item` 等）來透通地操作登錄檔。
 
 PowerShell 預設已經掛載了 `HKLM:` 與 `HKCU:` 這種專屬的 PSDrive（類似於磁碟機代號）。
 
@@ -398,7 +398,7 @@ $backup = Import-Clixml -Path "C:\backup\reg_backup.xml"
 
 ## 總結
 
-Windows 登錄檔是個強大且複雜的基礎系統，統整管理了作業系統的所有行為與應用程式設定。手動且無序的編輯將伴隨極高的系統損毀風險，這在數學上也是可以被證實的。因此，使用 PowerShell 和 C# 等可程式化的手段，遵循「基礎架構即程式碼 (Infrastructure as Code)」的原則，以安全、可測試且可重現的方式進行組態管理，在現代的系統管理與開發中是不可或缺的。請活用本文所解說的深層架構理解與實作模式，目標是建構出更堅固且安全的 Windows 環境。
+Windows 登錄檔是個強大且複雜的基礎系統，統整管理了作業系統的所有行為與應用程式設定。手動且無序的編輯將伴隨極高的系統損毀風險，這在數學上也是可以被證實的。因此，使用 PowerShell 和 C# 等可程式化的手段，遵循「基礎架構即程式碼 ([Infrastructure as Code](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/))」的原則，以安全、可測試且可重現的方式進行組態管理，在現代的系統管理與開發中是不可或缺的。請活用本文所解說的深層架構理解與實作模式，目標是建構出更堅固且安全的 Windows 環境。
 
 
 

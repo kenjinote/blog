@@ -71,7 +71,7 @@ Saat membangun aplikasi AI menggunakan API OpenAI (seperti GPT-4) atau API Anthr
 
 ### 2.1 System Prompt: Batasan Global dan Definisi Persona
 
-System Prompt digunakan untuk mendefinisikan **batasan global, persona (peran), dan aturan perilaku dasar** untuk LLM. Jika dianalogikan dengan desain perangkat lunak, ia bertindak sebagai "variabel lingkungan" atau "kelas dasar" dari sebuah aplikasi, atau "Dockerfile" dari sebuah container.
+System Prompt digunakan untuk mendefinisikan **batasan global, persona (peran), dan aturan perilaku dasar** untuk LLM. Jika dianalogikan dengan desain perangkat lunak, ia bertindak sebagai "variabel lingkungan" atau "kelas dasar" dari sebuah aplikasi, atau "[Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)file" dari sebuah container.
 
 System prompt yang baik secara drastis akan menstabilkan kualitas dan format output.
 
@@ -193,7 +193,7 @@ Untuk mengimplementasikan ToT menggunakan prompt, Anda dapat menginstruksikan: "
 
 ---
 
-## 4. Agentic Workflow dan ReAct (Reasoning and Acting)
+## 4. Agentic [Workflow](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dan ReAct (Reasoning and Acting)
 
 Penerapan LLM berkembang pesat dari sekadar input dan output teks tunggal menjadi bidang **Agen AI (AI Agents)**, yang secara mandiri merencanakan dan menyelesaikan tugas sambil berinteraksi dengan lingkungan eksternal. Paradigma inti dari arsitektur agen ini adalah **ReAct (Reasoning and Acting)**.
 
@@ -220,7 +220,7 @@ Antarmuka standar untuk mengintegrasikan ReAct ke dalam sebuah sistem adalah **F
 Engineer memberikan LLM "definisi set alat yang tersedia (Skema JSON)" bersama dengan System Prompt. LLM mem-parsing konteks prompt, dan jika memutuskan untuk menggunakan sebuah alat, ia akan menghasilkan "nama fungsi yang akan dipanggil" dan "JSON argumen-argumennya" daripada teks biasa. Sebuah loop terbentuk saat aplikasi mengeksekusi fungsi dan mengembalikan hasilnya kembali ke LLM.
 
 **Contoh aplikasi dalam pengembangan (Agen debug mandiri):**
-Saat membangun agen yang menyelidiki penyebab gagalnya pengujian dalam pipeline CI/CD dan membuat patch, kami menyediakan alat-alat berikut untuk LLM.
+Saat membangun agen yang menyelidiki penyebab gagalnya pengujian dalam pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dan membuat patch, kami menyediakan alat-alat berikut untuk LLM.
 
 1. `search_codebase(regex_pattern)`: Mencari kode dalam repositori menggunakan ekspresi reguler.
 2. `view_file_content(file_path, start_line, end_line)`: Membaca konten file yang ditentukan.
@@ -368,7 +368,7 @@ Standar industri saat ini adalah menggunakan model canggih (misalnya: GPT-4o ata
 2. **Eksekusi**: Biarkan prompt dan model yang dievaluasi menghasilkan output untuk set pengujian.
 3. **Evaluasi**: Siapkan prompt untuk evaluasi (metaprompt) dan instruksikan Judge LLM untuk "menilai apakah output yang dihasilkan memenuhi persyaratan dengan skor 1 hingga 5".
 
-Ini memungkinkan deteksi otomatis dari regresi (penurunan kinerja) saat prompt dimodifikasi dalam pipeline CI/CD. Prompt engineering berevolusi dari sekadar "mengutak-atik prompt" ala pengrajin menjadi "rekayasa (engineering)" berbasis data dan dapat direproduksi.
+Ini memungkinkan deteksi otomatis dari regresi (penurunan kinerja) saat prompt dimodifikasi dalam pipeline [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/). Prompt engineering berevolusi dari sekadar "mengutak-atik prompt" ala pengrajin menjadi "rekayasa (engineering)" berbasis data dan dapat direproduksi.
 
 ---
 

@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # Pengantar: Cara Bertarung "Si Tak Berpunya" Menantang Para Raksasa
 
-Dalam sejarah pengembangan perangkat lunak, belum pernah ada era yang begitu menguntungkan bagi pengembang individu (indie developer) seperti saat ini. Demokratisasi infrastruktur cloud seperti AWS dan GCP, munculnya BaaS (Backend as a Service) seperti Vercel dan Supabase, serta yang terpenting, otomatisasi pengkodean berkat evolusi LLM (Large Language Models). Semua ini telah menciptakan fondasi di mana individu dapat bersaing langsung dengan perusahaan teknologi besar yang bertindak sebagai "raksasa".
+Dalam sejarah pengembangan perangkat lunak, belum pernah ada era yang begitu menguntungkan bagi pengembang individu (indie developer) seperti saat ini. Demokratisasi infrastruktur cloud seperti AWS dan GCP, munculnya BaaS (Backend as a [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)) seperti Vercel dan Supabase, serta yang terpenting, otomatisasi pengkodean berkat evolusi LLM (Large Language Models). Semua ini telah menciptakan fondasi di mana individu dapat bersaing langsung dengan perusahaan teknologi besar yang bertindak sebagai "raksasa".
 
 Namun, hanya karena sumber daya teknis telah menjadi merata, bukan berarti Anda bisa menang dengan mengambil strategi yang sama dengan perusahaan besar. Dalam hal kekuatan modal, kekuatan pemasaran, dan kekuatan merek, individu berada pada kerugian yang sangat besar. Agar pengembang solo dapat bertahan dan menang, strategi bertahan hidup yang unik sangatlah penting.
 
@@ -50,7 +50,7 @@ Pengembang solo harus dengan sengaja menargetkan masalah niche yang spesifik (se
 
 # 2. Desain Arsitektur yang Menghasilkan Agilitas Luar Biasa
 
-Sistem perusahaan besar dirancang dengan memprioritaskan "stabilitas" dan "skalabilitas", sehingga arsitektur layanan mikro atau Kubernetes diadopsi. Namun, jika pengembang solo melakukan hal yang sama, sumber daya akan habis hanya untuk pemeliharaan infrastruktur (Ops).
+Sistem perusahaan besar dirancang dengan memprioritaskan "stabilitas" dan "skalabilitas", sehingga arsitektur layanan mikro atau [Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/) diadopsi. Namun, jika pengembang solo melakukan hal yang sama, sumber daya akan habis hanya untuk pemeliharaan infrastruktur (Ops).
 
 Slogan tumpukan teknologi (tech stack) dari pengembang solo adalah **"No-Ops" (Tanpa Operasi)**. Maksimalkan penggunaan arsitektur tanpa server (serverless) dan fokuslah hanya pada penulisan logika bisnis.
 
@@ -79,7 +79,7 @@ flowchart TD
 
 Pada tumpukan teknologi perusahaan besar, koordinasi antara beberapa tim dan penyiapan alur (pipeline) penerapan DevOps diperlukan untuk menambahkan fitur baru. Di sisi lain, dengan tumpukan teknologi individu (contoh: Next.js + Supabase + Vercel), penyebaran ke jaringan edge global dapat dilakukan hanya dengan satu `git push`, dan provisi database tidak diperlukan.
 
-## Pemanfaatan Serverless dan Edge Computing
+## Pemanfaatan [Serverless](https://kenji.blog/id/p/serverless-architecture-aws-lambda-cold-start/) dan Edge Computing
 
 Dengan menggunakan runtime edge seperti Vercel atau Cloudflare Workers, latensi cold start dapat dihilangkan, dan API dapat disediakan dengan latensi rendah kepada pengguna di seluruh dunia.
 
@@ -288,7 +288,7 @@ Strategi bertahan hidup bagi pengembang solo untuk melawan perusahaan besar dan 
 
 1. **Pilih Tempat Bertarung (Teori Long Tail)**
    - Targetkan pasar niche dengan titik nyeri (pain points) yang dalam meskipun skalanya kecil, yang tidak bisa dimasuki oleh perusahaan besar.
-2. **Manfaatkan Daya Ungkit Teknologi (Serverless, BaaS, AI)**
+2. **Manfaatkan Daya Ungkit Teknologi ([Serverless](https://kenji.blog/id/p/serverless-architecture-aws-lambda-cold-start/), BaaS, AI)**
    - Eksternalkan operasi (Ops) sepenuhnya, dan tuliskan saja kode (logika bisnis) untuk menyelesaikan masalah pelanggan, alih-alih mengelola infrastruktur.
 3. **Maksimalkan Agilitas (Biaya Komunikasi Nol)**
    - Manfaatkan "kecepatan", yang merupakan senjata terkuat dari pengembang solo, lakukan penerapan (deploy) segera setelah mendapatkan ide, dan jalankan putaran umpan balik pasar secepat mungkin.

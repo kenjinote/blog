@@ -28,7 +28,7 @@ Als Eigenschaft orthogonaler Matrizen gilt $U^T U = I$ und $V^T V = I$. Dies ist
 
 ## 2. Unterschied zur Eigenwertzerlegung
 
-Für quadratische Matrizen ist die Eigenwertzerlegung $A = P \Lambda P^{-1}$ bekannt. Diese Zerlegung hat jedoch die folgenden Einschränkungen:
+Für quadratische Matrizen ist die Eigenwertzerlegung $A = P \[Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/) P^{-1}$ bekannt. Diese Zerlegung hat jedoch die folgenden Einschränkungen:
 - Sie kann nur auf quadratische Matrizen ($n \times n$) angewendet werden.
 - Auch wenn es sich um eine quadratische Matrix handelt, ist sie nicht immer diagonalisierbar.
 

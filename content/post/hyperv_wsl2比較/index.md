@@ -184,7 +184,7 @@ Get-NetNat
 
 WSL2は、「開発者の生産性向上」に特化して設計されています。以下のような用途に最適です。
 
-*   **Web開発およびクラウドネイティブ開発**: Docker Desktop（WSL2バックエンド）やPodmanを使用したコンテナ開発。
+*   **Web開発およびクラウドネイティブ開発**: [Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop（WSL2バックエンド）やPodmanを使用した[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)開発。
 *   **Linux専用ツールの利用**: bash、grep、awk、sed、またはLinux向けのGCCやClangコンパイラを日常的に使用する場合。
 *   **GUIアプリケーション (WSLg)**: LinuxのX11/WaylandアプリケーションをWindowsデスクトップ上でシームレスに動かしたい場合。
 *   **機械学習とAI開発**: GPUパススルー機能（NVIDIA CUDA on WSL）を利用したTensorFlowやPyTorchの高速な学習。

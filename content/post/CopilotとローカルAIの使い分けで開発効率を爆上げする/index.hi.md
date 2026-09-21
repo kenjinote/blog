@@ -179,7 +179,7 @@ $$ L_{local} = \frac{T_{in}}{S_{process\_local}} $$
 हम लोकल एआई को पेश करने के लिए विशिष्ट चरणों का संक्षेप में परिचय देंगे। वर्तमान में सबसे आसान और सबसे शक्तिशाली तरीका **Ollama** या **LM Studio** का उपयोग करना है।
 
 ### 6.1 Ollama का परिचय
-Ollama लोकल वातावरण में एलएलएम (LLM) चलाने के लिए एक हल्का फ्रेमवर्क है। यह MacOS, Windows और Linux का समर्थन करता है और आपको Docker की तरह सहज रूप से मॉडल प्रबंधित करने की अनुमति देता है।
+Ollama लोकल वातावरण में एलएलएम (LLM) चलाने के लिए एक हल्का फ्रेमवर्क है। यह MacOS, Windows और Linux का समर्थन करता है और आपको [Docker](https://kenji.blog/hi/p/docker-container-namespace-[cgroups](https://kenji.blog/hi/p/docker-container-namespace-cgroups-layers/)-layers/) की तरह सहज रूप से मॉडल प्रबंधित करने की अनुमति देता है।
 
 ```bash
 # MacOS के लिए

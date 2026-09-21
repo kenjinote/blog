@@ -179,7 +179,7 @@ Dado que el retraso de la red $L_{network\_rtt}$ y el retraso de la cola en la n
 Aquí presentaremos brevemente los pasos específicos para introducir una IA local. Actualmente, los enfoques más sencillos y poderosos son usar **Ollama** o **LM Studio**.
 
 ### 6.1 Introducción de Ollama
-Ollama es un marco ligero para ejecutar LLM en su entorno local. Es compatible con MacOS, Windows y Linux, y permite administrar modelos de manera intuitiva, al igual que Docker.
+Ollama es un marco ligero para ejecutar LLM en su entorno local. Es compatible con MacOS, Windows y Linux, y permite administrar modelos de manera intuitiva, al igual que [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ```bash
 # Para MacOS

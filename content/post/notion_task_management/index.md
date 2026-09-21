@@ -232,7 +232,7 @@ if __name__ == "__main__":
         create_notion_task(sys.argv[1], sys.argv[2])
 ```
 
-このスクリプトをGitHub Actionsのワークフロー（`.github/workflows/issue_to_notion.yml`）に組み込むことで、リポジトリにIssueが立つたびにNotionにタスクが自動生成されるようになります。開発者はGitHubとNotionを往復する手間から解放されます。
+このスクリプトを[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)のワークフロー（`.github/workflows/issue_to_notion.yml`）に組み込むことで、リポジトリにIssueが立つたびにNotionにタスクが自動生成されるようになります。開発者はGitHubとNotionを往復する手間から解放されます。
 
 ### cURLを用いたブログ公開ステータスの自動更新
 
@@ -256,7 +256,7 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
   }'
 ```
 
-このAPIコールをCI/CDパイプラインの最終ステップに組み込むことで、「コードをプッシュする → 自動デプロイされる → Notionのタスクが自動的に完了になる」というフルオートメーションが完成します。
+このAPIコールを[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の最終ステップに組み込むことで、「コードをプッシュする → 自動デプロイされる → Notionのタスクが自動的に完了になる」というフルオートメーションが完成します。
 
 ---
 

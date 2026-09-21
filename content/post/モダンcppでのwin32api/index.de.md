@@ -541,7 +541,7 @@ Die Win32 API ist ein altbewährtes Erbe, das aus historischen Gründen im Parad
 
 Fassen wir die wichtigen Punkte dieses Artikels noch einmal zusammen:
 
-1.  **Schreiben Sie niemals manuell `CloseHandle` oder `DeleteObject`.** Kapseln Sie alles in RAII-Containern wie `std::unique_ptr`.
+1.  **Schreiben Sie niemals manuell `CloseHandle` oder `DeleteObject`.** Kapseln Sie alles in RAII-[Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)n wie `std::unique_ptr`.
 2.  **Verstehen Sie die Falle von `INVALID_HANDLE_VALUE`.** Implementieren Sie spezielle benutzerdefinierte Deleter und Zeiger-Traits oder verwenden Sie `wil::unique_handle` aus WIL.
 3.  **Modernisieren Sie die Fehlerbehandlung.** Werfen Sie `GetLastError()` oder `HRESULT` als `std::system_error`-Ausnahme oder verwenden Sie `std::expected` aus C++23 für eine typsichere Behandlung.
 4.  **Stehen Sie auf den Schultern von Riesen.** Setzen Sie aktiv offizielle Tools von Microsoft wie WIL und C++/WinRT ein, um das Rad nicht neu erfinden zu müssen.

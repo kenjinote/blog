@@ -420,7 +420,7 @@ During AST construction, a massive amount of small allocations (fragmentation) o
 To avoid this, adopting `std::pmr::monotonic_buffer_resource` from C++17 as a custom allocator is effective. By pre-allocating a large memory block once and merely advancing a pointer to carve out memory, allocation cost drops to near zero.
 
 ### 6.4. Utilizing SIMD (Advanced)
-State-of-the-art parsers like `simdjson` use SIMD instructions like AVX2 or NEON to scan 32 bytes or 64 bytes of strings at once. This drastically speeds up whitespace skipping and quotation searching. The implementation in this article scans character by character, but if you aim for the absolute extreme, branchless programming and SIMD become essential.
+[State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)-of-the-art parsers like `simdjson` use SIMD instructions like AVX2 or NEON to scan 32 bytes or 64 bytes of strings at once. This drastically speeds up whitespace skipping and quotation searching. The implementation in this article scans character by character, but if you aim for the absolute extreme, branchless programming and SIMD become essential.
 
 ---
 

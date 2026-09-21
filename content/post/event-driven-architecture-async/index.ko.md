@@ -120,7 +120,7 @@ Event Loop가 단일 스레드의 한계에 도전하는 접근 방식이라면,
 
 ### 3.1 Actor 모델의 기본 개념
 
-Actor 모델에서는 처리의 기본 단위를 'Actor(액터)'라고 부릅니다. 각 Actor는 독립적인 상태(State)와 행위(Behavior)를 가지며, 다른 Actor와 직접 상태를 공유하지 않습니다. Actor 간의 통신은 모두 **비동기적인 메시지 패싱** 에 의해 이루어집니다.
+Actor 모델에서는 처리의 기본 단위를 'Actor(액터)'라고 부릅니다. 각 Actor는 독립적인 상태([State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/))와 행위(Behavior)를 가지며, 다른 Actor와 직접 상태를 공유하지 않습니다. Actor 간의 통신은 모두 **비동기적인 메시지 패싱** 에 의해 이루어집니다.
 
 - **상태의 캡슐화** : Actor 내부의 상태는 외부에서 직접 접근할 수 없습니다.
 - **메시지 큐(Mailbox)** : 수신한 메시지는 Mailbox에 큐잉되어 순차적으로 처리됩니다.

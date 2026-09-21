@@ -34,7 +34,7 @@ Os tipos de políticas de execução são os seguintes:
 - **AllSigned**: Permite apenas a execução de scripts assinados por um editor confiável.
 - **RemoteSigned**: Scripts criados localmente podem ser executados como estão, mas os scripts baixados da Internet exigem uma assinatura.
 - **Unrestricted**: Pode executar todos os scripts, mas exibe um aviso ao executar scripts baixados da Internet.
-- **Bypass**: Nada é bloqueado e nenhum aviso é exibido. Freqüentemente usado para execuções temporárias de scripts (como em pipelines de CI/CD).
+- **Bypass**: Nada é bloqueado e nenhum aviso é exibido. Freqüentemente usado para execuções temporárias de scripts (como em pipelines de [CI/CD](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)).
 
 Ao executar seus próprios scripts com o Agendador de Tarefas em um ambiente corporativo local, a configuração mais prática e segura é `RemoteSigned`. Inicie o PowerShell com privilégios de administrador e execute o seguinte comando:
 
@@ -108,7 +108,7 @@ Ao aproveitar esta base, você pode construir scripts seguros e rastreáveis que
 
 ## Integração com o Agendador de Tarefas (Register-ScheduledTask)
 
-Quando o script estiver concluído, o próximo passo é ter um mecanismo para executá-lo regularmente. A ferramenta mais confiável no Windows é o "Agendador de Tarefas" (Task Scheduler). É possível configurá-lo pela GUI (`taskschd.msc`), mas, do ponto de vista de codificar o manual de infraestrutura (Infrastructure as Code), explicaremos como registrar tarefas usando os cmdlets do PowerShell.
+Quando o script estiver concluído, o próximo passo é ter um mecanismo para executá-lo regularmente. A ferramenta mais confiável no Windows é o "Agendador de Tarefas" (Task Scheduler). É possível configurá-lo pela GUI (`taskschd.msc`), mas, do ponto de vista de codificar o manual de infraestrutura ([Infrastructure as Code](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/)), explicaremos como registrar tarefas usando os cmdlets do PowerShell.
 
 O PowerShell inclui o módulo `ScheduledTasks`, que permite definir detalhadamente os gatilhos (quando executar), ações (o que executar) e a entidade (com quais privilégios de usuário executar).
 

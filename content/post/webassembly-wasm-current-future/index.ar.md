@@ -51,7 +51,7 @@ WebAssembly هي تنسيق ثنائي (binary format) جديد يمكن تنف�
 
 دعونا نرى تدريجياً كيف يتم تنفيذ كود C أو Rust فعلياً على المتصفح.
 
-## 2.1 خط أنابيب التجميع (Compilation Pipeline)
+## 2.1 خط أنابيب التجميع (Compilation [Pipeline](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/))
 
 عادةً ما تُترجم اللغات مثل C أو Rust إلى لغة الآلة المعتمدة على نظام التشغيل أو بنية وحدة المعالجة المركزية (CPU). ولكن في حالة WebAssembly، يتم تحديد بنية Wasm مثل "wasm32" كبنية مستهدفة (target architecture).
 
@@ -247,10 +247,10 @@ flowchart TD
     B -->|"التحقق من الأمان وفحص الصلاحيات"| C["نظام التشغيل المضيف مثل Linux, Windows"]
 ```
 
-## 7.2 الاستبدال والتعايش مع حاويات Docker
+## 7.2 الاستبدال والتعايش مع حاويات [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/)
 أثار السيد Solomon Hykes، مخترع Docker، ضجة عندما قال: "لو كانت Wasm و WASI موجودتين في عام 2008، لما كنا بحاجة إلى إنشاء Docker".
 تتمتع Wasm بمزايا قوية تتمثل في كونها أخف وزناً من الحاويات (containers)، أسرع في بدء التشغيل (بضع ميلي ثانية)، ولا تعتمد على نظام التشغيل أو بنية وحدة المعالجة المركزية.
-حالياً، هناك مشاريع نشطة (مثل Kwasm و Spin) لتنسيق وحدات Wasm مباشرة على Kubernetes كبديل لحاويات Docker.
+حالياً، هناك مشاريع نشطة (مثل Kwasm و Spin) لتنسيق وحدات Wasm مباشرة على [Kubernetes](https://kenji.blog/ar/p/kubernetes-k8s-architecture-pod-service-ingress/) كبديل لحاويات Docker.
 
 ---
 

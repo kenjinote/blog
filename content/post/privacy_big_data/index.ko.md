@@ -21,7 +21,7 @@ tags: ["Privacy", "Big Data", "Differential Privacy", "Federated Learning"]
 
 ### 중앙 집중형 데이터 레이크와 익명화 파이프라인
 
-데이터 레이크는 원시 데이터(Raw Data)를 원래의 포맷 그대로 대량으로 저장하는 스토리지 리포지토리입니다. 그러나 개인 식별 정보(PII: Personally Identifiable Information)를 포함한 원시 데이터를 분석에 그대로 사용하는 것은 심각한 컴플라이언스 위반을 초래합니다. 따라서 데이터 레이크와 분석 환경 사이에는 엄격한 '익명화 파이프라인(Anonymization Pipeline)'이 구현됩니다.
+데이터 레이크는 원시 데이터(Raw Data)를 원래의 포맷 그대로 대량으로 저장하는 스토리지 리포지토리입니다. 그러나 개인 식별 정보(PII: Personally Identifiable Information)를 포함한 원시 데이터를 분석에 그대로 사용하는 것은 심각한 컴플라이언스 위반을 초래합니다. 따라서 데이터 레이크와 분석 환경 사이에는 엄격한 '익명화 파이프라인(Anonymization [Pipeline](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/))'이 구현됩니다.
 
 다음 그림은 일반적인 중앙 집중형 데이터 레이크의 익명화 파이프라인 흐름을 보여줍니다.
 

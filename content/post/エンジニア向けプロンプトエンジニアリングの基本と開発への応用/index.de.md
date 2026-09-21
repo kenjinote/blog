@@ -17,7 +17,7 @@ Mit der Verbreitung von KI-Assistenten-Tools wie GitHub Copilot, Cursor oder ver
 
 Die wichtigste Fähigkeit in dieser neuen Entwicklungsmethode ist das **Prompt Engineering**. Prompt Engineering wird oft als Schlagwort für Nicht-Ingenieure im Sinne von "geschicktem Plaudern mit der KI" abgetan, aber im Kern ist es eine **neue Art von Programmiersprache für nicht-deterministische (Non-deterministic) Rechensysteme**.
 
-In diesem Artikel, der sich an Software-Ingenieure und Architekten richtet, wird auf etwa 10.000 Zeichen sehr detailliert auf die mathematischen und architektonischen Grundlagen von LLMs, fortgeschrittene Prompt-Engineering-Methoden wie Few-Shot, Chain-of-Thought und ReAct sowie deren Einbindung in tatsächliche Entwicklungs-Workflows und APIs eingegangen.
+In diesem Artikel, der sich an Software-Ingenieure und Architekten richtet, wird auf etwa 10.000 Zeichen sehr detailliert auf die mathematischen und architektonischen Grundlagen von LLMs, fortgeschrittene Prompt-Engineering-Methoden wie Few-Shot, Chain-of-Thought und ReAct sowie deren Einbindung in tatsächliche Entwicklungs-[Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s und APIs eingegangen.
 
 ---
 
@@ -71,7 +71,7 @@ Beim Aufbau von KI-Anwendungen unter Verwendung von APIs von OpenAI (wie GPT-4) 
 
 ### 2.1 System Prompt: Definition globaler Einschränkungen und Personas
 
-Der System Prompt definiert die **globalen Einschränkungen, die Persona (Rolle) und die grundlegenden Verhaltensregeln** für das LLM. Um es mit Softwaredesign zu vergleichen, spielt er eine Rolle wie „Umgebungsvariablen“ oder „Basisklasse“ einer Anwendung oder wie ein „Dockerfile“ eines Containers.
+Der System Prompt definiert die **globalen Einschränkungen, die Persona (Rolle) und die grundlegenden Verhaltensregeln** für das LLM. Um es mit Softwaredesign zu vergleichen, spielt er eine Rolle wie „Umgebungsvariablen“ oder „Basisklasse“ einer Anwendung oder wie ein „[Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)file“ eines [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)s.
 
 Ein hervorragender System Prompt stabilisiert die Ausgabqualität und das Format drastisch.
 
@@ -193,7 +193,7 @@ Um ToT im Prompt umzusetzen, geben Sie die Anweisung: „Bitte schlage mehrere A
 
 ---
 
-## 4. Agentic Workflow und ReAct (Reasoning and Acting)
+## 4. Agentic [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) und ReAct (Reasoning and Acting)
 
 Die Anwendung von LLMs entwickelt sich rasant weiter – von einfachen Textein- und -ausgaben hin zu **KI-Agenten (AI Agents)**, die autonom planen und Aufgaben erledigen, indem sie mit ihrer Umgebung interagieren. Das Kernparadigma dieser Agentenarchitektur ist **ReAct (Reasoning and Acting)**.
 
@@ -220,7 +220,7 @@ Die Standard-Schnittstelle zur Einbindung von ReAct in Systeme ist das **Functio
 Ingenieure stellen dem LLM zusammen mit dem System Prompt „Definitionen der verfügbaren Werkzeuge (JSON-Schema)“ zur Verfügung. Das LLM analysiert den Kontext des Prompts und wenn es entscheidet, dass ein Werkzeug verwendet werden soll, gibt es nicht normalen Text aus, sondern den „aufzurufenden Funktionsnamen“ und die „zugehörigen Argumente als JSON“. Die Anwendung führt diese Funktion aus, gibt das Ergebnis an das LLM zurück und so wird eine Schleife gebildet.
 
 **Anwendungsbeispiel für die Entwicklung (Autonomer Debugging-Agent):**
-Wenn ein Agent erstellt wird, der bei einem fehlgeschlagenen Test in einer CI/CD-Pipeline die Ursache untersucht und einen Patch generiert, stellt man dem LLM folgende Tools zur Verfügung:
+Wenn ein Agent erstellt wird, der bei einem fehlgeschlagenen Test in einer [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) die Ursache untersucht und einen Patch generiert, stellt man dem LLM folgende Tools zur Verfügung:
 
 1. `search_codebase(regex_pattern)`: Durchsucht den Code im Repository mit regulären Ausdrücken.
 2. `view_file_content(file_path, start_line, end_line)`: Liest den Inhalt einer angegebenen Datei.
@@ -254,7 +254,7 @@ $$ \text{Cosine Similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|} = \frac{\sum_{
 
 Die relevantesten (semantisch ähnlichsten) Code-Snippets oder Dokumente werden als „Kontext“ dynamisch in den User-Prompt eingefügt.
 
-### 5.2 Anwendung von RAG im Entwicklungs-Workflow
+### 5.2 Anwendung von RAG im Entwicklungs-[Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)
 
 Durch die Einbindung von RAG in Entwicklungstools lassen sich sehr leistungsstarke Funktionen direkt in der IDE realisieren.
 
@@ -283,7 +283,7 @@ Im Folgenden werden praktische Anwendungsfälle und Prompt-Techniken vorgestellt
 
 ### 6.1 Automatisierung von Code-Reviews und Ergänzung der statischen Analyse
 
-Binden Sie LLMs in CI-Pipelines ein, um automatische Code-Reviews bei der Erstellung von Pull Requests (PR) durchzuführen. Ziel ist es, Geschäftsanforderungs-Inkonsistenzen und Design-Anti-Pattern aufzuzeigen, die von Linter- oder statischen Analysetools nicht erkannt werden können.
+Binden Sie LLMs in CI-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s ein, um automatische Code-Reviews bei der Erstellung von Pull Requests (PR) durchzuführen. Ziel ist es, Geschäftsanforderungs-Inkonsistenzen und Design-Anti-Pattern aufzuzeigen, die von Linter- oder statischen Analysetools nicht erkannt werden können.
 
 **Prompt-Beispiel (Anforderung von strukturierten Ausgaben):**
 ```text
@@ -368,7 +368,7 @@ Der aktuelle Industriestandard ist eine Methode namens **LLM-as-a-Judge**, bei d
 2. **Ausführung**: Lassen Sie das zu bewertende Modell und den Prompt Ausgaben für das Testset generieren.
 3. **Bewertung**: Verwenden Sie einen Bewertungsprompt (Meta-Prompt), um das Judge-LLM anzuweisen: „Bewerte die generierte Ausgabe mit 1 bis 5 Punkten, basierend darauf, ob sie die Anforderungen erfüllt.“
 
-Dies ermöglicht es, Leistungsrückgänge (Regressionen) beim Anpassen von Prompts in CI/CD-Pipelines automatisch zu erkennen. Das Prompt Engineering entwickelt sich von der handwerklichen „Prompt-Bastelei“ hin zum datengesteuerten, reproduzierbaren „Engineering“.
+Dies ermöglicht es, Leistungsrückgänge (Regressionen) beim Anpassen von Prompts in [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s automatisch zu erkennen. Das Prompt Engineering entwickelt sich von der handwerklichen „Prompt-Bastelei“ hin zum datengesteuerten, reproduzierbaren „Engineering“.
 
 ---
 
@@ -383,7 +383,7 @@ In der Vergangenheit haben wir den Übergang von der Assemblersprache zu C und d
 3. **Agentenhaftes Denken und Werkzeugintegration**: Das ReAct-Paradigma voll ausschöpfen und LLMs als Orchestratoren des Systems nutzen.
 4. **Kontinuierliche Evaluation**: Versionierung von Prompts als Teil des Codes und deren testgetriebene kontinuierliche Verbesserung durch Eval.
 
-Indem Sie diese Prinzipien meistern, werden Prompts nicht mehr nur Zeichenfolgen sein, sondern robuste, skalierbare Softwarekomponenten. Ich hoffe, dass Sie die in diesem Artikel erläuterten fortgeschrittenen Prompt-Engineering-Methoden in Ihre Entwicklungs-Workflows und Produkte einbinden und so eine führende Rolle in der nächsten Generation von „Software 3.0“ spielen werden.
+Indem Sie diese Prinzipien meistern, werden Prompts nicht mehr nur Zeichenfolgen sein, sondern robuste, skalierbare Softwarekomponenten. Ich hoffe, dass Sie die in diesem Artikel erläuterten fortgeschrittenen Prompt-Engineering-Methoden in Ihre Entwicklungs-[Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s und Produkte einbinden und so eine führende Rolle in der nächsten Generation von „Software 3.0“ spielen werden.
 
 ---
 *Generated using Prompt Engineering Techniques.*

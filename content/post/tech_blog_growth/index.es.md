@@ -175,7 +175,7 @@ else:
     print("No se encontraron datos.")
 ```
 
-Al ejecutar este script periódicamente a través de un cron o un job de GitHub Actions, siempre podrá decidir basado en datos "qué título de artículo debe reescribirse". En lugar de depender de la intuición, la mejora continua basada en datos (Mejora Continua de Contenido en lugar de CI/CD) es importante.
+Al ejecutar este script periódicamente a través de un cron o un job de [GitHub Actions](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/), siempre podrá decidir basado en datos "qué título de artículo debe reescribirse". En lugar de depender de la intuición, la mejora continua basada en datos (Mejora Continua de Contenido en lugar de [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/)) es importante.
 
 ---
 
@@ -231,7 +231,7 @@ Lo grandioso de los blogs técnicos es que, incluso si $Rev_{ad}$ es pequeño, $
 
 ---
 
-## 5. Distribución mediante GitHub Actions y la integración de herramientas de automatización externas
+## 5. Distribución mediante [GitHub Actions](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) y la integración de herramientas de automatización externas
 
 Una vez creado el contenido, el desafío es cómo entregarlo eficientemente a su público objetivo (distribución). Publicar enlaces manualmente en cada red social cada vez es ineficiente y no es digno de un ingeniero.
 
@@ -255,7 +255,7 @@ flowchart TD
 
 ### 5.2 Puntos clave en la construcción de pipelines de automatización
 
-1. **Compilación y despliegue usando GitHub Actions**
+1. **Compilación y despliegue usando [GitHub Actions](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/)**
    Si utiliza un generador de sitios estáticos, automatice la generación de HTML y el despliegue al destino de alojamiento (Vercel, Netlify, Cloudflare Pages, etc.) utilizando GitHub Actions. En este punto, también es eficaz integrar procesos de optimización de imágenes (como la conversión automática a WebP) en su pipeline de compilación como medida para los Core Web Vitals mencionados anteriormente.
 
 2. **Integración en redes sociales disparada por RSS utilizando Zapier/IFTTT**
@@ -275,7 +275,7 @@ Para aumentar drásticamente el tráfico mensual de un blog técnico, además de
 2. Diseño de artículos que comprenda la intención de búsqueda del usuario (resolución de errores vs aprendizaje sistemático)
 3. Análisis de datos aprovechando la API de Google Search Console y Python
 4. Gestión del ciclo de vida del contenido y reescritura considerando el ROI
-5. Automatización total de la distribución mediante integración con CI/CD y Zapier
+5. Automatización total de la distribución mediante integración con [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) y Zapier
 
 Si logra integrar todo esto como un sistema, su blog técnico se convertirá en el activo (asset) más poderoso para impulsar fuertemente su propia carrera. A los ingenieros que sufren por el estancamiento del tráfico, les instamos a que comiencen hoy el "growth hacking para su blog". Las habilidades de programación y diseño de arquitectura que han cultivado en sus tareas de desarrollo serán, sin duda, su mejor arma en la gestión de su blog.
 

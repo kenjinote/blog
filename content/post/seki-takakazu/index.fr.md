@@ -39,7 +39,7 @@ L'année exacte de naissance de [Takakazu Seki](https://kenji.blog/fr/p/seki-tak
 
 On dit qu'il a montré une passion et un talent extraordinaires pour les mathématiques (arithmétique) dès son plus jeune âge. Au Japon, à cette époque, le « Suanxue Qimeng » susmentionné et d'autres étaient étudiés, mais Seki a déchiffré ces livres en autodidacte et a approfondi leur contenu. Selon la légende, il pouvait effectuer des calculs complexes de tête dès son plus jeune âge, surprenant les adultes qui l'entouraient. Il avait la capacité d'explorer les vérités mathématiques en autodidacte et de générer de nouvelles idées non limitées par les cadres existants.
 
-## 3.2 Service dans le domaine de Kofu et en tant que vassal direct du Shogun
+## 3.2 [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/) dans le domaine de Kofu et en tant que vassal direct du Shogun
 
 [Takakazu Seki](https://kenji.blog/fr/p/seki-takakazu/) n'était pas seulement un mathématicien, mais aussi un samouraï à part entière. Il a servi Tsunatoyo Tokugawa (plus tard le 6e Shogun, Ienobu Tokugawa), le seigneur du domaine de Kofu, et a occupé des postes administratifs pratiques tels qu'auditeur financier (Kanjo Ginmi-yaku). Cela suggère qu'il possédait d'excellentes capacités pratiques non seulement en mathématiques, mais aussi en science du calendrier (calcul calendaire), en arpentage et en cartographie.
 

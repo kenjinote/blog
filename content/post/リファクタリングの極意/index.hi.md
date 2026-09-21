@@ -318,7 +318,7 @@ constexpr double area = calculateCircleArea(10.0);
 
 - **Clang-Tidy**: एक शक्तिशाली C++ लिंटर और स्टैटिक एनालिसिस टूल। `modernize-*` चेक को सक्षम करके, यह स्वचालित रूप से `auto` लागू करता है, `nullptr` से बदलता है, `override` जोड़ता है आदि (Fix-it)।
 - **AddressSanitizer (ASan)**: कंपाइल विकल्प (`-fsanitize=address`) के रूप में शामिल करके, यह निष्पादन के दौरान मेमोरी लीक और बफर ओवररन्स की सटीक पहचान करता है। परीक्षण चलाते समय इसे हमेशा सक्षम किया जाना चाहिए।
-- **CI/CD पाइपलाइन का निर्माण**: GitHub Actions या GitLab CI का उपयोग करके सभी पुल अनुरोधों (Pull Requests) के लिए बिल्ड, स्वचालित परीक्षण और स्थिर विश्लेषण (static analysis) चलाएं, ताकि नए तकनीकी ऋण को प्रवेश करने से रोका जा सके।
+- **[CI/CD](https://kenji.blog/hi/p/cicd-pipeline-github-actions-best-practices/) पाइपलाइन का निर्माण**: [GitHub Actions](https://kenji.blog/hi/p/cicd-pipeline-github-actions-best-practices/) या GitLab CI का उपयोग करके सभी पुल अनुरोधों (Pull Requests) के लिए बिल्ड, स्वचालित परीक्षण और स्थिर विश्लेषण (static analysis) चलाएं, ताकि नए तकनीकी ऋण को प्रवेश करने से रोका जा सके।
 
 ---
 

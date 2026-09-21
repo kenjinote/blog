@@ -84,7 +84,7 @@ xychart-beta
 要使用大型語言模型，主要有兩種途徑：使用「雲端 API」或「在本機推論（Inference）模型」。兩者皆有優缺點，這也成為了新的經濟與實體障礙。
 
 ### 雲端 API 的極限與營運成本
-OpenAI、Anthropic、Google 等提供的最先進前沿模型（GPT-4o、Claude 3.5 Sonnet 等），通常透過 API 來存取。然而，如果建構高度自主的代理（Agentic Workflow）並每天產生數萬次 API 呼叫，成本將會爆炸性地增加。
+OpenAI、Anthropic、Google 等提供的最先進前沿模型（GPT-4o、Claude 3.5 Sonnet 等），通常透過 API 來存取。然而，如果建構高度自主的代理（Agentic [Workflow](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)）並每天產生數萬次 API 呼叫，成本將會爆炸性地增加。
 
 API 的總成本 $C_{cloud}$ 取決於輸入和輸出 Token 的數量。
 

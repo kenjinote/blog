@@ -274,7 +274,7 @@ Ausgabe
 {1, 2, 3}
 ```
 
-## Funktion mit Lambda-Ausdrücken definieren
+## Funktion mit [Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)-Ausdrücken definieren
 ```
 f = Function[x, x^2]
 f[3]

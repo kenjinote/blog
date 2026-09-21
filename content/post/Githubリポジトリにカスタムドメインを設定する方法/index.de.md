@@ -69,7 +69,7 @@ Addresses:  185.199.108.153
 ## Eine benutzerdefinierte Domain in einem Github-Repository einrichten
 1. Öffnen Sie die Repository-Seite und klicken Sie auf Settings
 2. Klicken Sie auf Pages
-3. Wenn Sie den Quellcode des Repositories wie besehen veröffentlichen, wählen Sie unter Source „Deploy from a branch“. Wenn Sie den Quellcode erstellen (z. B. HUGO), wählen Sie „GitHub Actions“.
+3. Wenn Sie den Quellcode des Repositories wie besehen veröffentlichen, wählen Sie unter Source „Deploy from a branch“. Wenn Sie den Quellcode erstellen (z. B. HUGO), wählen Sie „[GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)“.
 4. Wählen Sie in Branch den zu veröffentlichenden Branch aus und klicken Sie auf Save
 5. Geben Sie die von Ihnen erhaltene Domain unter Custom domain ein und klicken Sie auf Save.
 6. Aktivieren Sie bei Bedarf das Kontrollkästchen „Enforce HTTPS“, um die HTTPS-Unterstützung zu aktivieren

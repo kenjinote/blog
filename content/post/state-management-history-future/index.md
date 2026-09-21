@@ -15,7 +15,7 @@ tags:
   - redux
 ---
 
-Webフロントエンド開発において、最も議論の的となり、そして最も進化を続けてきた領域が「状態管理（State Management）」です。現代のWebアプリケーションは単なるドキュメントの表示から、デスクトップアプリケーションに匹敵する複雑なインタラクションを持つソフトウェアへと変貌を遂げました。それに伴い、アプリケーションの状態をどのように管理し、UIと同期させるかは、すべてのフロントエンドエンジニアが直面する最大の課題となっています。
+Webフロントエンド開発において、最も議論の的となり、そして最も進化を続けてきた領域が「状態管理（[State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/) Management）」です。現代のWebアプリケーションは単なるドキュメントの表示から、デスクトップアプリケーションに匹敵する複雑なインタラクションを持つソフトウェアへと変貌を遂げました。それに伴い、アプリケーションの状態をどのように管理し、UIと同期させるかは、すべてのフロントエンドエンジニアが直面する最大の課題となっています。
 
 本記事では、フロントエンドの状態管理の歴史を振り返り、それぞれの時代における課題と解決策、そして未来に向けたパラダイムシフト（特にSignalsとReactivityの進化）について、深く、そして詳細に掘り下げていきます。
 
@@ -140,7 +140,7 @@ Reduxは以下の3つの厳格な原則に基づいています。
 
 1.  **Single source of truth（信頼できる唯一の情報源）**:
     アプリケーション全体の状態は、単一のストア（Store）内にあるオブジェクトツリーとして保持される。
-2.  **State is read-only（状態は読み取り専用）**:
+2.  **[State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/) is read-only（状態は読み取り専用）**:
     状態を変更する唯一の方法は、何が起こったかを示すActionオブジェクトを発行（Dispatch）することである。
 3.  **Changes are made with pure functions（変更は純粋関数で行う）**:
     Actionによって状態がどのように変更されるかを指定するために、Reducerと呼ばれる純粋関数を記述する。
@@ -237,7 +237,7 @@ ReactのContext APIには、「Contextの値が更新されると、そのContex
 
 Reactはデフォルトで「トップダウン」のレンダリングモデルを採用しているため、グローバルな状態変更がツリー全体の不要な再レンダリングを引き起こしやすいという本質的な課題が浮き彫りになりました。
 
-## 7. 状態の分離：Server StateとClient State
+## 7. 状態の分離：Server [State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)とClient State
 
 この頃から、状態管理において重要なパラダイムシフトが起きました。それは「すべての状態を単一のグローバルストアに入れるべきではない」という気づきです。
 特に、サーバーから取得したデータ（Server State）は、フロントエンドのみで完結するUIの状態（Client State）とは性質が根本的に異なります。
@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 これらのライブラリは、「サーバーの状態をローカルにキャッシュし、必要に応じて同期する」という複雑な処理を抽象化しました。
 これにより、Reduxなどのグローバルストアで管理すべきデータは「純粋なクライアント状態のみ」に激減し、状態管理の負担は大幅に軽減されました。
 
-## 8. Atomic State Management：RecoilとJotai
+## 8. Atomic [State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/) Management：RecoilとJotai
 
 Server Stateが切り離された後、残されたClient Stateをいかに効率的に管理するかという新たな競争が始まりました。
 Reactのレンダリングモデル（トップダウン）と、Context APIのパフォーマンス問題を解決するために生まれたのが、 **Atomic State Management** というアプローチです。
@@ -444,7 +444,7 @@ React Compilerは、ビルド時にReactコンポーネントのコードを静�
 
 ## 13. 結論：状態管理はどこへ向かうのか？
 
-MVCの混乱から始まり、Flux/Reduxによる予測可能性の獲得、Hooksによるシンプル化、Server Stateの分離、AtomicやProxyによる効率化、そしてSignalsによる細粒度リアクティビティへ。
+MVCの混乱から始まり、Flux/Reduxによる予測可能性の獲得、Hooksによるシンプル化、Server [State](https://kenji.blog/p/iac-infrastructure-as-code-terraform/)の分離、AtomicやProxyによる効率化、そしてSignalsによる細粒度リアクティビティへ。
 
 約15年にわたるフロントエンドの状態管理の歴史を振り返ると、一つの明確なトレンドが見えてきます。それは **「ボイラープレートを減らし、開発者の認知負荷を下げながら、裏側のシステム（フレームワークやコンパイラ）がパフォーマンスを自動的に最適化する方向へ進化している」** ということです。
 

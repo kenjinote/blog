@@ -11,7 +11,7 @@ tags: ["Idea Generation", "Obsidian", "RSS", "Knowledge Management"]
 
 When running a tech blog as an engineer or researcher, you almost certainly face a wall. That is "running out of ideas". Even if the first few articles go smoothly, as you continue, it is not uncommon to be tormented by the worry of "I don't know what to write next" or "I am overwhelmingly lacking the input to produce output". Writing a tech blog relies heavily not just on the skill of writing sentences, but on an entire system design of daily knowledge collection, organization, and combining them to create new value.
 
-In this article, we will explain in extreme detail and technically a **systematized input and output pipeline** to semi-permanently generate tech article ideas. We start with a mechanism that automatically extracts trending topics from high-quality overseas information sources like Hacker News and Lobsters using APIs, and runs them periodically via GitHub Actions. Then, we systematize the collected information as knowledge using the Zettelkasten method with Obsidian, and build an advanced Personal Knowledge Management (PKM) system that enables semantic search by combining OpenAI's Embeddings API and Pinecone (a vector database).
+In this article, we will explain in extreme detail and technically a **systematized input and output pipeline** to semi-permanently generate tech article ideas. We start with a mechanism that automatically extracts trending topics from high-quality overseas information sources like Hacker News and Lobsters using APIs, and runs them periodically via [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/). Then, we systematize the collected information as knowledge using the Zettelkasten method with Obsidian, and build an advanced Personal Knowledge Management (PKM) system that enables semantic search by combining OpenAI's Embeddings API and Pinecone (a vector database).
 
 Furthermore, to supplement the limits of human memory, we practice spaced repetition based on the Ebbinghaus forgetting curve using Anki, and we will deeply delve into a series of processes that sublimate established knowledge into new ideas through "Combinatorial Creativity", along with concrete mathematical models and Python script implementation examples.
 
@@ -27,7 +27,7 @@ Here, $X$ is a random variable of topics obtained from an information source, an
 
 To keep entropy high, you intentionally need to incorporate information sources you don't usually encounter as noise, leveling the probability distribution of encountering unknown topics. This is the biggest reason to automate input from diverse information sources.
 
-## 2. Building an [Automate](https://kenji.blog/en/p/automata-formal-language-theory/)d Information Gathering Pipeline: Hacker News & Lobsters API
+## 2. Building an [Automate](https://kenji.blog/en/p/automata-formal-language-theory/)d Information Gathering [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/): Hacker News & Lobsters API
 
 To obtain high-quality input, it is effective to extract trend information from high-quality engineer communities with low noise. Hacker News (operated by Y Combinator) and Lobsters are optimal places where deep technical discussions take place. However, patrolling these sites every day takes time and consumes cognitive resources.
 
@@ -124,7 +124,7 @@ if __name__ == "__main__":
 
 This script provides more value than a simple RSS reader. This is because by filtering by score, you can extract only the technical topics that are truly attracting attention in the community (high signal with low noise).
 
-## 3. Scheduling and Automation with GitHub Actions
+## 3. Scheduling and Automation with [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)
 
 Manually running the created Python script every day is tedious. The basis of automation is to minimize human intervention as much as possible. Using the Cron feature of GitHub Actions, we build a mechanism to run the script at a specified time every day and automatically commit the results to the repository.
 
@@ -316,7 +316,7 @@ As a matrix of combinations for tech blogs, patterns like the following can be c
 
 1. **[Old Technology] × [New Paradigm]**: e.g., "Anti-patterns of modern microservices design learned from COBOL architecture"
 2. **[Frontend] × [Backend Concepts]**: e.g., "Explaining React's virtual DOM update algorithm from the perspective of database transaction isolation levels"
-3. **[Abstract Mathematics / Theory] × [Concrete Implementation]**: e.g., "Deciphering Kubernetes Pod scheduling optimization with graph theory"
+3. **[Abstract Mathematics / Theory] × [Concrete Implementation]**: e.g., "Deciphering [Kubernetes](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/) [Pod](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/) scheduling optimization with graph theory"
 
 To intentionally cause these combinations, you can use the Pinecone semantic search system built earlier to extract a random concept A and concept B, and throw a prompt to an AI (like ChatGPT) saying "Propose 5 tech blog titles and outline ideas combining these two", allowing you to infinitely generate article ideas from novel angles you wouldn't come up with yourself.
 
@@ -342,7 +342,7 @@ flowchart TD
 
 The feature of this system is that **"intellectual tasks to be done manually (summarization, consideration, writing)" and "tasks to be delegated to machines (collection, search, spaced repetition scheduling)" are completely separated**. This allows the writer to focus on the highest value-added activities of "thinking" and "combining".
 
-## 9. State Transition Model from Idea to Publication
+## 9. [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Transition Model from Idea to Publication
 
 The lifecycle from ideas accumulated in Zettelkasten to ultimately being published as blog articles can be expressed as the following state transition diagram. You use appropriate tools and approaches in each state.
 

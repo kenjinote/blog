@@ -226,7 +226,7 @@ By customizing the `actions` section, you can freely split, move, and resize scr
 ]
 ```
 
-By setting the keybindings above, you can adjust pane sizes with `Alt + Shift + Arrow keys` and instantly shift focus between panes with `Alt + Arrow keys`. This enables seamless advanced concurrent work, such as starting a Node.js local server in one pane to monitor logs, executing Git commands in another pane, and checking the status of Docker containers in yet another pane.
+By setting the keybindings above, you can adjust pane sizes with `Alt + Shift + Arrow keys` and instantly shift focus between panes with `Alt + Arrow keys`. This enables seamless advanced concurrent work, such as starting a Node.js local server in one pane to monitor logs, executing Git commands in another pane, and checking the status of [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/) containers in yet another pane.
 
 ## 4.1 Quake Mode (Global Dropdown Terminal)
 
@@ -250,7 +250,7 @@ By saving this command as a Windows shortcut or batch file, you can instantly re
 
 # 6. The Evolution of Prompts 1: PowerShell and Oh My Posh
 
-"**Oh My Posh**" dramatically evolves PowerShell (especially the cross-platform latest version PowerShell 7 / PowerShell Core), the standard shell in Windows environments. Oh My Posh is a custom prompt engine that supports all shells, beautifully and visually presenting all the states necessary for development, such as the current directory, Git branch and change status, Node.js and Python versions, Kubernetes contexts, and more.
+"**Oh My Posh**" dramatically evolves PowerShell (especially the cross-platform latest version PowerShell 7 / PowerShell Core), the standard shell in Windows environments. Oh My Posh is a custom prompt engine that supports all shells, beautifully and visually presenting all the states necessary for development, such as the current directory, Git branch and change status, Node.js and Python versions, [Kubernetes](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/) contexts, and more.
 
 The diagram below shows the sequence of how Oh My Posh is loaded and the prompt is rendered when PowerShell starts.
 

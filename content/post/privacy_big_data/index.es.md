@@ -21,7 +21,7 @@ Para recopilar y utilizar datos de manera eficiente, las empresas adoptan divers
 
 ### Lago de datos centralizado y tubería de anonimización
 
-Un lago de datos es un repositorio de almacenamiento que guarda grandes volúmenes de datos sin procesar en su formato original. Sin embargo, utilizar datos sin procesar que incluyen información de identificación personal (PII) directamente para el análisis causa graves violaciones de cumplimiento. Por lo tanto, se implementa una estricta "tubería de anonimización (Anonymization Pipeline)" entre el lago de datos y el entorno de análisis.
+Un lago de datos es un repositorio de almacenamiento que guarda grandes volúmenes de datos sin procesar en su formato original. Sin embargo, utilizar datos sin procesar que incluyen información de identificación personal (PII) directamente para el análisis causa graves violaciones de cumplimiento. Por lo tanto, se implementa una estricta "tubería de anonimización (Anonymization [Pipeline](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/))" entre el lago de datos y el entorno de análisis.
 
 El siguiente diagrama muestra el flujo de la tubería de anonimización en un lago de datos centralizado típico.
 

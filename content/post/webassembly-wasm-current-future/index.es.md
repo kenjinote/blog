@@ -51,7 +51,7 @@ WebAssembly tiene los siguientes objetivos de diseño:
 
 Entonces, ¿cómo se ejecuta exactamente el código de C o Rust en el navegador? Veamos este proceso paso a paso.
 
-## 2.1 La Tubería de Compilación (Compilation Pipeline)
+## 2.1 La Tubería de Compilación (Compilation [Pipeline](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/))
 
 Los lenguajes como C y Rust normalmente se compilan a código máquina dependiente del sistema operativo o la arquitectura de la CPU. Sin embargo, en el caso de WebAssembly, se especifica una arquitectura para Wasm como destino, por ejemplo, "wasm32".
 
@@ -247,10 +247,10 @@ flowchart TD
     B -->|"Verificación de Seguridad / Control de Permisos"| C["SO Anfitrión (ej. Linux, Windows)"]
 ```
 
-## 7.2 Alternativa y Coexistencia con Contenedores Docker
+## 7.2 Alternativa y Coexistencia con Contenedores [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/)
 El creador de Docker, Solomon Hykes, causó revuelo cuando dijo: "Si Wasm y WASI hubieran existido en 2008, no habríamos necesitado crear Docker".
 Wasm es mucho más ligero que los contenedores, se inicia más rápido (en unos pocos milisegundos) y tiene la gran ventaja de ser independiente del sistema operativo y de la arquitectura de la CPU.
-Hoy en día, se están desarrollando activamente proyectos (como Kwasm y Spin) para orquestar módulos Wasm directamente en Kubernetes como alternativa a los contenedores Docker.
+Hoy en día, se están desarrollando activamente proyectos (como Kwasm y Spin) para orquestar módulos Wasm directamente en [Kubernetes](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/) como alternativa a los contenedores Docker.
 
 ---
 

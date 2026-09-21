@@ -15,7 +15,7 @@ tags:
   - redux
 ---
 
-In der Web-Frontend-Entwicklung ist der am meisten diskutierte und sich am stärksten entwickelnde Bereich das "State Management" (Zustandsverwaltung). Moderne Webanwendungen haben sich von einfachen Dokumentenanzeigen zu Software mit komplexen Interaktionen entwickelt, die Desktop-Anwendungen in nichts nachstehen. Dementsprechend ist die Frage, wie der Zustand einer Anwendung verwaltet und mit der Benutzeroberfläche (UI) synchronisiert wird, zur größten Herausforderung für jeden Frontend-Ingenieur geworden.
+In der Web-Frontend-Entwicklung ist der am meisten diskutierte und sich am stärksten entwickelnde Bereich das "[State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Management" (Zustandsverwaltung). Moderne Webanwendungen haben sich von einfachen Dokumentenanzeigen zu Software mit komplexen Interaktionen entwickelt, die Desktop-Anwendungen in nichts nachstehen. Dementsprechend ist die Frage, wie der Zustand einer Anwendung verwaltet und mit der Benutzeroberfläche (UI) synchronisiert wird, zur größten Herausforderung für jeden Frontend-Ingenieur geworden.
 
 In diesem Artikel werden wir auf die Geschichte des State Managements im Frontend zurückblicken, die Herausforderungen und Lösungen jeder Epoche betrachten und einen tiefen, detaillierten Blick auf den Paradigmenwechsel (insbesondere die Entwicklung von Signals und Reactivity) werfen, der auf die Zukunft ausgerichtet ist.
 
@@ -126,7 +126,7 @@ Die Flux-Architektur hat strenge Regeln:
 3.  **Store**: Der Ort, der den Anwendungszustand und die Geschäftslogik enthält. Der Store registriert Callbacks beim Dispatcher, empfängt Actions und aktualisiert seinen eigenen Zustand.
 4.  **View**: Empfängt den Zustand vom Store und rendert ihn. Generiert neue Actions basierend auf Benutzerinteraktionen.
 
-Wichtig ist, dass **die View den Zustand des Stores niemals direkt ändern kann**. Um den Zustand zu ändern, muss man den Einbahnstraßen-Zyklus durchlaufen, bei dem immer eine Action ausgegeben und über den Dispatcher geleitet wird. Dies machte den Datenfluss extrem vorhersehbar (Predictable) und verbesserte die Stabilität des State Managements in großen Anwendungen dramatisch.
+Wichtig ist, dass **die View den Zustand des Stores niemals direkt ändern kann**. Um den Zustand zu ändern, muss man den Einbahnstraßen-Zyklus durchlaufen, bei dem immer eine Action ausgegeben und über den Dispatcher geleitet wird. Dies machte den Datenfluss extrem vorhersehbar (Predictable) und verbesserte die Stabilität des [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Managements in großen Anwendungen dramatisch.
 
 ## 5. Die Vorherrschaft und Grenzen von Redux
 
@@ -186,7 +186,7 @@ Selbst für einen einfachen Prozess wie das Hochzählen einer Zahl musste man di
 
 Um asynchrone Prozesse (wie API-Kommunikation) zu handhaben, musste man zudem Middleware wie `redux-thunk` oder `redux-saga` einführen, wodurch die Lernkurve steil anstieg.
 
-Stimmen wurden laut, die fragten: "Ist Redux nicht ein Overkill?", und die Suche nach neuen Ansätzen für das State Management begann.
+Stimmen wurden laut, die fragten: "Ist Redux nicht ein Overkill?", und die Suche nach neuen Ansätzen für das [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Management begann.
 
 ## 6. Context API und Hooks: Die Bewegung "Weg von Redux"
 
@@ -195,7 +195,7 @@ Die Erneuerung der Context API in React 16.3 (2018) und die Einführung von **Re
 ### 6.1 Statusfreigabe mit integrierten Funktionen
 
 Die Context API ermöglicht es, Daten direkt an Komponenten tief unten im Komponentenbaum weiterzugeben, ohne Prop-Drilling (das Weiterreichen von Props durch jede Ebene) betreiben zu müssen.
-Durch die Kombination mit dem `useReducer` Hook wurde es möglich, ein Redux-ähnliches State Management allein mit den integrierten Funktionen von React zu realisieren.
+Durch die Kombination mit dem `useReducer` Hook wurde es möglich, ein Redux-ähnliches [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Management allein mit den integrierten Funktionen von React zu realisieren.
 
 ```javascript
 // State Management mit Context und useReducer
@@ -237,7 +237,7 @@ Um dies zu verhindern, muss man den Context entweder in kleinere Funktionen auft
 
 Da React standardmäßig ein "Top-Down"-Renderingmodell verwendet, wurde deutlich, dass globale Statusänderungen tendenziell zu unnötigem Re-Rendering des gesamten Baums führen – ein fundamentales Problem.
 
-## 7. Trennung der Zustände: Server State und Client State
+## 7. Trennung der Zustände: Server [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) und Client State
 
 Zu dieser Zeit fand ein wichtiger Paradigmenwechsel im State Management statt. Es war die Erkenntnis: "Nicht jeder Zustand sollte in einem einzigen globalen Store gespeichert werden".
 Insbesondere Daten, die vom Server abgerufen werden (Server State), haben grundlegend andere Eigenschaften als UI-Zustände (Client State), die ausschließlich im Frontend existieren.
@@ -265,7 +265,7 @@ function UserProfile({ userId }) {
 ```
 
 Diese Bibliotheken abstrahierten den komplexen Prozess, "den Zustand des Servers lokal im Cache zu speichern und ihn bei Bedarf zu synchronisieren".
-Infolgedessen reduzierten sich die Daten, die in einem globalen Store wie Redux verwaltet werden mussten, drastisch auf "nur noch reine Client-Zustände", was den Aufwand für das State Management erheblich verringerte.
+Infolgedessen reduzierten sich die Daten, die in einem globalen Store wie Redux verwaltet werden mussten, drastisch auf "nur noch reine Client-Zustände", was den Aufwand für das [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Management erheblich verringerte.
 
 ## 8. Atomic State Management: Recoil und Jotai
 
@@ -341,7 +341,7 @@ function Counter() {
 
 Zustand hat sich als "modernes Redux" etabliert, das die Robustheit von Redux mit der Einfachheit von Hooks verbindet.
 
-### 9.2 Valtio: Mutables State Management mit Proxies
+### 9.2 Valtio: Mutables [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Management mit Proxies
 
 In der React-Welt galt lange die absolute Regel: "Zustand sollte immer unveränderlich (immutable) behandelt werden." Allerdings ist es mühsam, JavaScript-Objekte immutable zu aktualisieren (besonders wenn sie tief verschachtelt sind).
 
@@ -370,7 +370,7 @@ Valtio bietet in Sachen Entwicklererfahrung ein Höchstmaß an Intuitivität. Es
 
 ## 10. Der Paradigmenwechsel: Signals und Fine-Grained Reactivity
 
-Das derzeit größte Buzzword im Bereich Frontend State Management lautet **Signals** und **Fine-Grained Reactivity** (Feingranulare Reaktivität).
+Das derzeit größte Buzzword im Bereich Frontend [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Management lautet **Signals** und **Fine-Grained Reactivity** (Feingranulare Reaktivität).
 
 React verwendet das Virtual DOM (virtuelles DOM), wobei "die Komponentenfunktion erneut ausgeführt wird, um einen neuen UI-Baum zu erstellen, ihn mit dem vorherigen Baum zu vergleichen (Diffing) und dann das DOM zu aktualisieren".
 Frameworks, die Signals verwenden (SolidJS, Vue 3, Svelte 5 (Runes), Preact, Angular usw.), verfolgen einen völlig anderen Ansatz.
@@ -434,7 +434,7 @@ Das heißt, Entwickler müssen keine neue Signal-API erlernen oder manuelle `use
 
 ## 12. Das Paradigma der nächsten Generation: Weg von der Hydration hin zu Resumability
 
-Was man in der Zukunft des State Managements auf keinen Fall übersehen darf, ist das Problem der "Hydration" bei der Zusammenarbeit zwischen serverseitigem Rendering (SSR) und dem Client.
+Was man in der Zukunft des [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Managements auf keinen Fall übersehen darf, ist das Problem der "Hydration" bei der Zusammenarbeit zwischen serverseitigem Rendering (SSR) und dem Client.
 
 Beim traditionellen SSR (wie bei Next.js) generiert der Server HTML, sendet es an den Browser, wo dann ein schwerer Prozess namens "Hydration" stattfinden muss: JavaScript wird geladen, ausgeführt, Event Listener werden angehängt und der Zustand wird rekonstruiert. In dieser Zeit ist die Benutzerinteraktion blockiert.
 

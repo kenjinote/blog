@@ -18,7 +18,7 @@ description: 'نشرح أفضل الممارسات لعلامات "الخانا�
 1. **استخدام علامة النجمة (\*)**
 
     * هو الأكثر شيوعًا وانتشارًا، حيث يتم وضع "\*" على الحقول المطلوبة.
-    * ومع ذلك، **من الضروري وجود شرح في بداية النموذج مثل "* حقل مطلوب"** ([Nielsen Norman Group][1], [California State University, Northridge][2]).
+    * ومع ذلك، **من الضروري وجود شرح في بداية النموذج مثل "* حقل مطلوب"** ([Nielsen Norman Group][1], [California [State](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/) University, Northridge][2]).
     * هناك أيضًا أمثلة تستخدم الألوان للتأكيد (مثل النص الأحمر).
 
 2. **تحديد "Required" أو "(required)" بوضوح في التسمية**
@@ -72,7 +72,7 @@ description: 'نشرح أفضل الممارسات لعلامات "الخانا�
 
 ## 🔗 روابط مرجعية (مواد إرشادات واجهة المستخدم)
 
-* NN/g: *Marking Required Fields in Forms* ([California State University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
+* NN/g: *Marking Required Fields in Forms* ([California [State](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/) University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
 * Deque: *Anatomy of Accessible Forms* ([Deque][3])
 * W3C Techniques: *H90 Indicating required form controls* ([W3C][5])
 * TPGi: *Indicating mandatory fields accessibly* ([TPGi][4])

@@ -15,7 +15,7 @@ tags:
   - redux
 ---
 
-No desenvolvimento web frontend, a área que tem sido alvo de mais debates e continuou a evoluir mais é o "gerenciamento de estado" (State Management). As aplicações web modernas se transformaram de simples exibições de documentos em softwares com interações complexas comparáveis a aplicativos de desktop. Com isso, como gerenciar e sincronizar o estado da aplicação com a UI tornou-se o maior desafio enfrentado por todos os engenheiros frontend.
+No desenvolvimento web frontend, a área que tem sido alvo de mais debates e continuou a evoluir mais é o "gerenciamento de estado" ([State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) Management). As aplicações web modernas se transformaram de simples exibições de documentos em softwares com interações complexas comparáveis a aplicativos de desktop. Com isso, como gerenciar e sincronizar o estado da aplicação com a UI tornou-se o maior desafio enfrentado por todos os engenheiros frontend.
 
 Neste artigo, refletiremos sobre a história do gerenciamento de estado no frontend, os desafios e soluções em cada era, e exploraremos profunda e detalhadamente a mudança de paradigma em direção ao futuro (especialmente a evolução de Signals e Reactivity).
 
@@ -140,7 +140,7 @@ O Redux é baseado em três princípios estritos:
 
 1.  **Single source of truth (Única fonte de verdade)**:
     O estado de toda a aplicação é mantido como uma árvore de objetos em uma única loja (Store).
-2.  **State is read-only (O estado é somente leitura)**:
+2.  **[State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) is read-only (O estado é somente leitura)**:
     A única maneira de mudar o estado é emitir (Dispatch) um objeto Action indicando o que aconteceu.
 3.  **Changes are made with pure functions (Mudanças são feitas com funções puras)**:
     Para especificar como a árvore de estado é transformada por Actions, você escreve funções puras chamadas Reducers.
@@ -237,7 +237,7 @@ Para prevenir isso, você precisa dividir o Context em partes menores por recurs
 
 Como o React usa um modelo de renderização "top-down" por padrão, foi revelado o problema inerente de que mudanças de estado globais podem facilmente causar re-renderizações desnecessárias em toda a árvore.
 
-## 7. Separação de estados: Server State e Client State
+## 7. Separação de estados: Server [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) e Client State
 
 Por volta dessa época, uma mudança de paradigma significativa ocorreu no gerenciamento de estado. Foi a percepção de que "nem todos os estados devem ser colocados em uma única store global".
 Em particular, dados obtidos do servidor (Server State) têm características fundamentalmente diferentes do estado da UI que é restrito apenas ao frontend (Client State).
@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 Essas bibliotecas abstraíram o complexo processo de "armazenar em cache os estados do servidor localmente e sincronizá-los sob demanda".
 Como resultado, os dados que deveriam ser gerenciados em uma loja global como o Redux caíram drasticamente para "apenas estados puramente do cliente", o que reduziu muito o fardo do gerenciamento de estado.
 
-## 8. Atomic State Management: Recoil e Jotai
+## 8. Atomic [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) Management: Recoil e Jotai
 
 Após a separação do Server State, começou uma nova corrida sobre como gerenciar eficientemente o Client State remanescente.
 Foi a abordagem de **Gerenciamento de Estado Atômico (Atomic State Management)** que nasceu para resolver o modelo de renderização do React (top-down) e os problemas de desempenho da Context API.
@@ -444,7 +444,7 @@ O estado renderizado pelo servidor é serializado e incorporado no HTML, e o cli
 
 ## 13. Conclusão: Para onde está indo o gerenciamento de estado?
 
-Começando com a confusão do MVC, conquistamos previsibilidade através de Flux/Redux, a simplificação pelos Hooks, a separação do Server State, eficiência via Atômica e Proxies, e finalmente, a Reatividade de Grão Fino por Signals.
+Começando com a confusão do MVC, conquistamos previsibilidade através de Flux/Redux, a simplificação pelos Hooks, a separação do Server [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/), eficiência via Atômica e Proxies, e finalmente, a Reatividade de Grão Fino por Signals.
 
 Refletindo sobre cerca de 15 anos de história no gerenciamento de estado de frontends, uma tendência clara surge. Que é: **"Evoluir para reduzir o código boilerplate e reduzir a carga cognitiva dos desenvolvedores, enquanto os sistemas nos bastidores (frameworks e compiladores) otimizam o desempenho automaticamente"**.
 

@@ -9,7 +9,7 @@ categories: ["blogging", "productivity", "editors"]
 tags: ["Markdown", "VS Code", "Neovim", "textlint"]
 ---
 
-为了能够持续撰写技术博客，优化写作环境是必不可少的。本文将深入探讨如何通过高级编辑器设置，在使用 Markdown 撰写技术博客时使写作速度得到飞跃性的提升。我们将全面介绍 Visual Studio Code (VS Code) 和 Neovim 的极限自定义、代码片段的运用、引入日语（中文）语法检查工具 textlint 以及在 CI/CD 流水线中实现自动化，最后还会介绍利用 GitHub Copilot 等 LLM 的最前沿写作技巧。
+为了能够持续撰写技术博客，优化写作环境是必不可少的。本文将深入探讨如何通过高级编辑器设置，在使用 Markdown 撰写技术博客时使写作速度得到飞跃性的提升。我们将全面介绍 Visual Studio Code (VS Code) 和 Neovim 的极限自定义、代码片段的运用、引入日语（中文）语法检查工具 textlint 以及在 [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 流水线中实现自动化，最后还会介绍利用 GitHub Copilot 等 LLM 的最前沿写作技巧。
 
 ## 1. 提高写作速度的数学模型
 
@@ -227,9 +227,9 @@ rules:
 
 通过在 VS Code 的搜索替换功能（正则表达式模式）或 Neovim 的 `%s` 命令（`:%s/<b>\(.*?\)<\/b>/**\1**/g`）中执行这些操作，可以瞬间统一格式。
 
-### 通过 CI/CD 流水线进行自动检查
+### 通过 [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 流水线进行自动检查
 
-此外，利用 GitHub Actions 构建 CI 流水线，在 push 博客文章时自动运行 textlint。这样可以防患于未然，避免部署存在违规的文章。
+此外，利用 [GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 构建 CI 流水线，在 push 博客文章时自动运行 textlint。这样可以防患于未然，避免部署存在违规的文章。
 
 ```mermaid
 flowchart TD
@@ -252,7 +252,7 @@ flowchart TD
 
 使用 VS Code 的 GitHub Copilot Chat，或者 Neovim 的 `ChatGPT.nvim` 和 `Copilot.vim` 等工具，无需离开编辑器即可发出如下提示词：
 
-> “请针对以下技术要素，为初学者以 Markdown 的层级结构编写大纲：Docker, Kubernetes, CI/CD”
+> “请针对以下技术要素，为初学者以 Markdown 的层级结构编写大纲：[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)”
 
 这样，AI 会立即生成带有标题和项目符号的 Markdown。我们只需要在这些骨架上填充血肉即可。
 
@@ -265,7 +265,7 @@ flowchart TD
 1. **建立数学模型的意识** ：为了将 $T_{saved}$ 最大化，消除所有重复性工作。
 2. **活用 VS Code** ：通过扩展插件和 `markdown.json` 中的代码片段来省略输入。
 3. **Neovim 的极限自定义** ：利用 `LuaSnip` 实现动态代码片段和纯键盘操作。
-4. **textlint 与静态分析** ：整合本地 Linter 与 CI/CD，将校对时间逼近于零。
+4. **textlint 与静态分析** ：整合本地 Linter 与 [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)，将校对时间逼近于零。
 5. **整合 LLM** ：直接在编辑器中让 AI 输出 Markdown 的结构和图表代码。
 
 将这些设置引入到自己的环境中，就能消除写作的“麻烦感”，极大提高技术输出的数量与质量。不妨从注册一个小小的代码片段开始尝试一下吧。

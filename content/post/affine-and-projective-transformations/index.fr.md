@@ -110,7 +110,7 @@ flowchart TD
     D --> H["Shearing (Cisaillement)"]
 ```
 
-## 5. Le Pipeline de Transformation en CG
+## 5. Le [Pipeline](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) de Transformation en CG
 
 Dans le pipeline de rendu 3DCG, afin de transformer les données des sommets 3D en coordonnées d'écran 2D finales, des multiplications matricielles sont effectuées de manière progressive et continue. L'espace étant ici tridimensionnel, le système de coordonnées homogènes devient en 4 dimensions $(x, y, z, 1)$ et des matrices de taille $4 \times 4$ sont utilisées.
 

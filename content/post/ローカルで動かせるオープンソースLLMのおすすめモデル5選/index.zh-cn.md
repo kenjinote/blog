@@ -250,7 +250,7 @@ $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 如今，用于在本地环境中运行这些强大开源LLM的软件生态系统也已经非常完善。下面介绍3款代表性的工具。
 
 ### 1. Ollama
-目前最简单也最受欢迎的工具。就像Docker一样，只需输入一条命令就能完成模型的下载和运行。全面支持Mac、Windows和Linux。
+目前最简单也最受欢迎的工具。就像[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)一样，只需输入一条命令就能完成模型的下载和运行。全面支持Mac、Windows和Linux。
 打开终端，只需输入以下命令即可启动Llama 3。
 
 ```bash

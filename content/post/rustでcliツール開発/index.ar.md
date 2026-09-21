@@ -408,7 +408,7 @@ strip = true        # حذف معلومات الرموز لتقليل حجم ا�
 
 ---
 
-## 12. التكامل المستمر/النشر المستمر (CI/CD) والتوزيع (Publishing)
+## 12. التكامل المستمر/النشر المستمر ([CI/CD](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)) والتوزيع (Publishing)
 
 هذه هي الخطوات لتوزيع أداتك المبنية للعالم.
 
@@ -421,8 +421,8 @@ cargo publish
 ```
 بعد النشر، سيتمكن المستخدمون حول العالم من تثبيت أداتك باستخدام أمر واحد `cargo install gh-stats-fetcher`.
 
-### الإصدار التلقائي عبر GitHub Actions
-قم بإنشاء مسار CI/CD الذي يقوم بتحميل الملفات التنفيذية المترجمة تلقائيًا إلى إصدارات GitHub. اكتب إعدادات مثل الإعدادات التالية في `.github/workflows/release.yml`. سيؤدي هذا إلى بناء ملفات تنفيذية لأنظمة Linux و macOS و Windows تلقائيًا بمجرد دفع علامة (Tag)، وإرفاقها كأصول إصدار (نحن نحذف وصف YAML التفصيلي هنا لضيق المساحة، ولكن استخدام إجراء مثل `taiki-e/upload-rust-binary-action` هو أفضل الممارسات الحالية).
+### الإصدار التلقائي عبر [GitHub Actions](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)
+قم بإنشاء مسار [CI/CD](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/) الذي يقوم بتحميل الملفات التنفيذية المترجمة تلقائيًا إلى إصدارات GitHub. اكتب إعدادات مثل الإعدادات التالية في `.github/workflows/release.yml`. سيؤدي هذا إلى بناء ملفات تنفيذية لأنظمة Linux و macOS و Windows تلقائيًا بمجرد دفع علامة (Tag)، وإرفاقها كأصول إصدار (نحن نحذف وصف YAML التفصيلي هنا لضيق المساحة، ولكن استخدام إجراء مثل `taiki-e/upload-rust-binary-action` هو أفضل الممارسات الحالية).
 
 ---
 

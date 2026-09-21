@@ -28,7 +28,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 Ollama는 로컬 환경에서 오픈소스 대규모 언어 모델(Llama 3, Phi-3, Mistral, Gemma 등)을 쉽게 실행하고 관리하기 위한 플랫폼입니다. 그동안 로컬 LLM 환경을 구축하기 위해서는 Python 환경 설정, CUDA 툴킷 설치, PyTorch 의존성 해결, Hugging Face로부터의 거대한 모델 파일 다운로드 및 포맷 변환(Safetensors에서 GGUF로 등)과 같은 매우 번거로운 절차가 필요했습니다.
 
-Ollama는 이러한 복잡성을 숨기고, Docker와 같은 사용 편의성으로 LLM을 다룰 수 있게 해줍니다. 명령어 하나로 모델을 다운로드(`pull`)하고, 실행(`run`)하며, HTTP 서버로 구동할 수 있습니다.
+Ollama는 이러한 복잡성을 숨기고, [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)와 같은 사용 편의성으로 LLM을 다룰 수 있게 해줍니다. 명령어 하나로 모델을 다운로드(`pull`)하고, 실행(`run`)하며, HTTP 서버로 구동할 수 있습니다.
 
 ## 핵심 기술: llama.cpp의 래퍼(Wrapper)
 
@@ -75,9 +75,9 @@ ollama --version
 ```
 버전 정보가 표시되면 정상적으로 설치된 것입니다.
 
-## Docker를 사용한 실행
+## [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)를 사용한 실행
 
-기존 환경을 어지럽히고 싶지 않거나, 컨테이너 기반 인프라에 통합하고 싶은 경우에는 공식 Docker 이미지를 사용하는 것도 가능합니다. GPU를 이용할 경우에는 NVIDIA Container Toolkit의 설치가 필요합니다.
+기존 환경을 어지럽히고 싶지 않거나, 컨테이너 기반 인프라에 통합하고 싶은 경우에는 공식 Docker 이미지를 사용하는 것도 가능합니다. GPU를 이용할 경우에는 NVIDIA [Container](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/) Toolkit의 설치가 필요합니다.
 
 ```bash
 # CPU만으로 실행할 경우
@@ -93,7 +93,7 @@ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ol
 
 # 모델 관리 및 기본적인 CLI 명령어
 
-Ollama의 가장 큰 매력은 모델 관리가 매우 직관적이라는 점입니다. Docker 이미지를 다루는 감각으로 다양한 모델을 테스트해 볼 수 있습니다.
+Ollama의 가장 큰 매력은 모델 관리가 매우 직관적이라는 점입니다. [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 이미지를 다루는 감각으로 다양한 모델을 테스트해 볼 수 있습니다.
 
 ## 1. 모델 실행 (`run`)
 
@@ -148,7 +148,7 @@ ollama rm phi3:instruct
 
 # Modelfile을 통한 모델 커스터마이즈
 
-Ollama에서는 '**Modelfile**'이라는 메커니즘을 사용하여 기존 모델에 시스템 프롬프트를 주입하거나 하이퍼파라미터를 조정하여 자신만의 맞춤형 모델을 만들 수 있습니다. 이것은 Docker의 Dockerfile 개념과 완전히 동일합니다.
+Ollama에서는 '**Modelfile**'이라는 메커니즘을 사용하여 기존 모델에 시스템 프롬프트를 주입하거나 하이퍼파라미터를 조정하여 자신만의 맞춤형 모델을 만들 수 있습니다. 이것은 [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)의 Dockerfile 개념과 완전히 동일합니다.
 
 다음 다이어그램은 기본 모델에서 커스텀 모델이 어떻게 파생되는지를 보여줍니다.
 
@@ -493,7 +493,7 @@ Python이나 셸 스크립트에 Ollama의 API 요청을 통합하여, 로그의
 
 ## 결론
 
-Ollama의 등장으로 로컬 LLM의 도입 장벽은 극적으로 낮아졌습니다. Docker 컨테이너를 조작하는 듯한 단순한 명령어 체계와 외부 애플리케이션에서 쉽게 이용할 수 있는 REST API의 조합은 로컬 AI 개발에 있어 현재의 데팩토 스탠더드(사실상의 표준)라고 해도 과언이 아닙니다.
+Ollama의 등장으로 로컬 LLM의 도입 장벽은 극적으로 낮아졌습니다. [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 컨테이너를 조작하는 듯한 단순한 명령어 체계와 외부 애플리케이션에서 쉽게 이용할 수 있는 REST API의 조합은 로컬 AI 개발에 있어 현재의 데팩토 스탠더드(사실상의 표준)라고 해도 과언이 아닙니다.
 
 클라우드 LLM의 비용이나 보안 제약으로 고민하고 있는 개발자라면, 꼭 본 기사에서 소개한 절차를 참고하여 Ollama를 이용한 로컬 LLM 환경을 구축하고 자신의 애플리케이션에 통합해 보시기 바랍니다. AI가 가진 가능성을 더욱 자유롭고 가깝게 느낄 수 있을 것입니다.
 

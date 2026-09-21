@@ -252,7 +252,7 @@ Sekarang setelah FHE mendekati kecepatan yang praktis, inovasi destruktif dihara
     Dengan membiarkan AI di cloud melatih data rekam medis pasien atau data DNA yang dimiliki oleh banyak rumah sakit sambil tetap terenkripsi dengan FHE, pengembangan model diagnosis kanker akurasi tinggi atau penemuan obat baru dapat dilakukan tanpa melanggar undang-undang privasi (seperti HIPAA atau GDPR).
 2.  **Deteksi Penipuan dan Anti-Pencucian Uang (AML) untuk Institusi Keuangan**:
     Bank-bank yang saling bersaing dapat mencocokkan data masing-masing dalam keadaan terenkripsi tanpa mengungkapkan informasi rekening pelanggan atau riwayat transaksi, sehingga memungkinkan analisis antar bank (cross-bank) untuk mendeteksi jaringan transfer penipuan yang besar.
-3.  **API Inferensi AI yang Aman (MaaS: Model as a Service)**:
+3.  **API Inferensi AI yang Aman (MaaS: Model as a [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/))**:
     Pengguna dapat mengenkripsi audio, gambar wajah, atau prompt mereka sendiri dan mengirimkannya ke layanan AI (seperti LLM seperti ChatGPT). Penyedia AI menghasilkan respons tanpa mengetahui input pengguna sama sekali, dan mengembalikannya sebagai ciphertext. Dengan ini, kekhawatiran tentang "AI yang mempelajari atau mengintip informasi pribadi" dapat sepenuhnya dihilangkan.
 
 ---

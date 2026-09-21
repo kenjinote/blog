@@ -12,7 +12,7 @@ description: 'Hugoを用いた静的サイトをCloudflare PagesやGitHub Pages�
 
 Webサイトやブログを運営するにあたり、表示速度（パフォーマンス）、運用コスト、そしてセキュリティは極めて重要な要素です。かつてはWordPressなどの動的CMS（Content Management System）とレンタルサーバーの組み合わせが主流でしたが、現在では「Jamstack」と呼ばれるアーキテクチャが大きな注目を集めています。その中でも、Go言語で作られた超高速な静的サイトジェネレーター（SSG）である「Hugo」と、Cloudflare PagesやGitHub Pagesのようなモダンなホスティングサービスを組み合わせることで、 **完全無料かつ爆速** のブログ環境を構築することが可能です。
 
-本記事では、Hugoを用いた静的サイトをCloudflare PagesやGitHub Pagesで公開するための具体的な手順、各プラットフォームのアーキテクチャの違い、GitHub Actionsを用いたCI/CD（継続的インテグレーション／継続的デプロイメント）の構築、DNSの最適化、キャッシュ戦略、そしてプライバシーに配慮したアクセス解析の導入に至るまで、技術的な観点から非常に深く掘り下げて解説します。
+本記事では、Hugoを用いた静的サイトをCloudflare PagesやGitHub Pagesで公開するための具体的な手順、各プラットフォームのアーキテクチャの違い、[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を用いた[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)（継続的インテグレーション／継続的デプロイメント）の構築、DNSの最適化、キャッシュ戦略、そしてプライバシーに配慮したアクセス解析の導入に至るまで、技術的な観点から非常に深く掘り下げて解説します。
 
 ---
 
@@ -24,7 +24,7 @@ Webサイトやブログを運営するにあたり、表示速度（パフォ�
 一方、Jamstack（JavaScript, APIs, and Markup）アーキテクチャを採用した静的サイトジェネレーター（SSG）では、事前に（ビルド時に）すべてのHTMLファイル、CSS、JavaScriptを生成しておきます。ユーザーのリクエストに対しては、すでに生成済みの静的ファイルをWebサーバー（またはCDN）がそのまま返すだけであるため、圧倒的な高速性と堅牢なセキュリティを実現できます。
 
 ### 1.2 Hugoの優位性
-SSGにはNext.js、Gatsby、Jekyll、Astroなど様々な選択肢がありますが、Hugoの最大の特徴はその **ビルド速度** です。Go言語による並行処理の恩恵を受け、数千から数万ページのサイトであってもわずか数秒でビルドが完了します。これは、CI/CDパイプラインにおける待ち時間を大幅に削減し、開発者体験（DX: Developer Experience）の向上に直結します。
+SSGにはNext.js、Gatsby、Jekyll、Astroなど様々な選択肢がありますが、Hugoの最大の特徴はその **ビルド速度** です。Go言語による並行処理の恩恵を受け、数千から数万ページのサイトであってもわずか数秒でビルドが完了します。これは、CI/CD[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)における待ち時間を大幅に削減し、開発者体験（DX: Developer Experience）の向上に直結します。
 
 ---
 
@@ -53,7 +53,7 @@ Cloudflare Pagesは、Cloudflareが誇る世界最大規模のAnycastネット�
 [HTTP/3](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)（[QUIC](https://kenji.blog/p/http3-quic-protocol-tcp-udp/)）の標準サポート、画像最適化、エッジ関数（Cloudflare Workers）の統合など、圧倒的なパフォーマンスチューニングが可能です。また、帯域幅に対する課金がなく、どれだけトラフィックが急増しても無料で運用できる点が大きなメリットです。
 
 ### 2.4 Netlify
-NetlifyはJamstackのパイオニア的存在であり、フォーム機能、認証（Identity）、サーバーレス関数などを統合したオールインワンのDXを提供します。しかし、無料枠の帯域幅（月間100GB）を超えると高額な従量課金が発生するため、画像や動画を多用するブログではコスト管理に注意が必要です。
+NetlifyはJamstackのパイオニア的存在であり、フォーム機能、認証（Identity）、[サーバーレス](https://kenji.blog/p/serverless-architecture-aws-lambda-cold-start/)関数などを統合したオールインワンのDXを提供します。しかし、無料枠の帯域幅（月間100GB）を超えると高額な従量課金が発生するため、画像や動画を多用するブログではコスト管理に注意が必要です。
 
 ---
 
@@ -82,7 +82,7 @@ $$ L_{new} = 10 + (1 - 0.95) \times 200 = 10 + 0.05 \times 200 = 10 + 10 = 20 \t
 
 ---
 
-## 4. GitHub Actionsを用いたCI/CDパイプラインの構築
+## 4. [GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を用いた[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)の構築
 
 Hugoブログの更新プロセスを自動化するために、GitHub Actionsを利用したCI/CDパイプラインを構築します。これにより、ローカルでMarkdown記事を書いて `git push` するだけで、自動的にビルドが走り、Cloudflare PagesやGitHub Pagesにデプロイされるようになります。
 
@@ -108,7 +108,7 @@ sequenceDiagram
 
 ### 4.1 Cloudflare Pages向けのデプロイ設定（Direct Upload）
 
-Cloudflare Pagesには、GitHubリポジトリを連携させてCloudflareのインフラ上でビルドさせる方法と、GitHub Actionsでビルドした静的ファイルを「Direct Upload（直接アップロード）」する方法があります。Hugoのバージョン管理をより厳密に行い、他のジョブ（テストや画像の最適化）と連動させたい場合は、GitHub Actions上でビルドし、Direct Uploadする方式がおすすめです。
+Cloudflare Pagesには、GitHubリポジトリを連携させてCloudflareのインフラ上でビルドさせる方法と、[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)でビルドした静的ファイルを「Direct Upload（直接アップロード）」する方法があります。Hugoのバージョン管理をより厳密に行い、他のジョブ（テストや画像の最適化）と連動させたい場合は、GitHub Actions上でビルドし、Direct Uploadする方式がおすすめです。
 
 以下は、Cloudflare Pagesへデプロイするための `.github/workflows/deploy.yml` の実践的な例です。
 
@@ -153,7 +153,7 @@ jobs:
           branch: "main"
 ```
 
-このパイプラインでは、`--minify` オプションによってHTML/CSS/JSを最小化し、`--gc` によって不要なファイルを削除しています。これらはパフォーマンス最適化の基本です。
+この[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)では、`--minify` オプションによってHTML/CSS/JSを最小化し、`--gc` によって不要なファイルを削除しています。これらはパフォーマンス最適化の基本です。
 
 ---
 
@@ -248,7 +248,7 @@ Hugoでの実装も非常に簡単です。`layouts/partials/head.html` や `lay
 
 Hugoを用いた静的サイトの運用において、Cloudflare PagesやGitHub Pagesといったモダンなホスティングプラットフォームを採用することは、コストパフォーマンス、表示速度、セキュリティのすべての面で圧倒的なメリットがあります。
 
-1. **爆速のビルド**: Hugoの高速性を活かし、CI/CDパイプライン（GitHub Actions）の実行時間を最小化する。
+1. **爆速のビルド**: Hugoの高速性を活かし、[CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)（[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)）の実行時間を最小化する。
 2. **エッジでの配信**: Cloudflareのエッジネットワークを利用し、世界中のユーザーへミリ秒単位の遅延でコンテンツを届ける。
 3. **適切なDNS構成**: CNAME Flatteningを活用してZone Apex（独自ドメイン）を安全かつ高速に運用する。
 4. **キャッシュ戦略の最適化**: `_headers` を用いて、ブラウザキャッシュとエッジキャッシュをリソースの種類ごとに適切に分離する。

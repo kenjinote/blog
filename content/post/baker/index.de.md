@@ -59,7 +59,7 @@ Baker vollbrachte die erstaunliche Leistung, das von Gelfond und Schneider für 
 **Bakers Satz (1966)**:
 Seien $\alpha_1, \alpha_2, \ldots, \alpha_n$ algebraische Zahlen ungleich Null, und nehmen wir an, dass $\log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ über dem Körper der rationalen Zahlen $\mathbb{Q}$ linear unabhängig sind. Dann sind $1, \log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ über dem Körper der algebraischen Zahlen $\overline{\mathbb{Q}}$ linear unabhängig.
 
-Mit anderen Worten bewies er für beliebige von Null verschiedene algebraische Zahlen $\beta_0, \beta_1, \ldots, \beta_n$, dass die folgende Linearform $\Lambda$ niemals gleich $0$ ist.
+Mit anderen Worten bewies er für beliebige von Null verschiedene algebraische Zahlen $\beta_0, \beta_1, \ldots, \beta_n$, dass die folgende Linearform $\[Lambda](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/)$ niemals gleich $0$ ist.
 
 $$ \Lambda = \beta_0 + \beta_1 \log \alpha_1 + \cdots + \beta_n \log \alpha_n \neq 0 $$
 

@@ -184,7 +184,7 @@ Get-NetNat
 
 WSL2 специально разработан для «повышения продуктивности разработчиков». Он идеально подходит для следующих целей:
 
-*   **Веб-разработка и облачная (cloud-native) разработка**: Разработка контейнеров с использованием Docker Desktop (бэкенд WSL2) или Podman.
+*   **Веб-разработка и облачная (cloud-native) разработка**: Разработка контейнеров с использованием [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (бэкенд WSL2) или Podman.
 *   **Использование инструментов только для Linux**: Если вы повседневно используете bash, grep, awk, sed или компиляторы GCC / Clang для Linux.
 *   **GUI-приложения (WSLg)**: Если вы хотите бесшовно запускать приложения X11/Wayland для Linux на рабочем столе Windows.
 *   **Машинное обучение и разработка ИИ**: Быстрое обучение в TensorFlow или PyTorch с использованием функции проброса GPU (NVIDIA CUDA на WSL).

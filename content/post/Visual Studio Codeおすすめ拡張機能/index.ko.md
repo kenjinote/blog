@@ -28,7 +28,7 @@ description: 'Visual Studio Code(VSCode)를 더욱 편리하게 해주는 추천
 | 분류 | 명칭 | 제공자 | 설명 |
 |----|----|-----|-----|
 | 가상·컨테이너 관리 | Remote Development | Microsoft | SSH 접속으로 가상 컨테이너/WSL에 연결하여 원격 개발을 지원한다 |
-| 가상·컨테이너 관리 | Docker | Microsoft | Docker 컨테이너 관리를 지원한다 |
+| 가상·컨테이너 관리 | [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | Docker 컨테이너 관리를 지원한다 |
 | 코드 관리 | GitHub Pull Requests | GitHub | GitHub의 Pull Request를 VSCode 상에서 관리한다 |
 | 코드 관리 | GitHub Copilot | GitHub | AI에 의한 코드 자동 완성을 지원한다 |
 | 코드 관리 | Git Graph | mhutchie | Git의 브랜치나 커밋을 그래픽으로 표시한다 |
@@ -38,7 +38,7 @@ description: 'Visual Studio Code(VSCode)를 더욱 편리하게 해주는 추천
 | 브라우저·웹 개발 | Vue Language Features(Volar) | Vue | Vue의 언어 기능을 지원한다 |
 | 브라우저·웹 개발 | JavaScript (ES6) code snippets | charalampos karypidis | JavaScript 스니펫을 제공한다 |
 | 브라우저·웹 개발 | Tailwind CSS IntelliSense | Tailwind Labs | Tailwind CSS 스니펫을 제공한다 |
-| 클라우드 개발 | AWS Toolkit | Amazon Web Services | AWS 개발을 지원한다 |
+| 클라우드 개발 | AWS Toolkit | Amazon Web [Service](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/)s | AWS 개발을 지원한다 |
 | 클라우드 개발 | Azure Tools | Microsoft | Azure 개발을 지원한다 |
 | 클라우드 개발 | Google Cloud Tools | Google Cloud | Google Cloud 개발을 지원한다 |
 | 데이터베이스 | MySQL | Jun Han | MySQL 개발을 지원한다 |

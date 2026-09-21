@@ -32,7 +32,7 @@ Une machine de Turing se compose des éléments suivants :
 
 1.  **Ruban de longueur infinie** : Divisé en cellules, et chaque cellule est inscrite avec un symbole (par exemple, `0`, `1`, espace, etc.). Cela correspond à la mémoire des ordinateurs modernes.
 2.  **Tête** : Un appareil qui peut lire et écrire sur des cellules spécifiques du ruban et se déplacer vers la gauche et la droite.
-3.  **Registre d'état** : Mémorise l'**état** (State) actuel dans lequel se trouve la machine.
+3.  **Registre d'état** : Mémorise l'**état** ([State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/)) actuel dans lequel se trouve la machine.
 4.  **Fonction de transition d'état** : Une règle (programme) qui détermine le prochain symbole à écrire, la direction du mouvement de la tête (droite ou gauche), et l'état suivant, en fonction de l'« état » actuel et du « symbole » lu par la tête.
 
 Voici un diagramme Mermaid montrant le concept de fonctionnement de la machine de Turing :

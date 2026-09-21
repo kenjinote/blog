@@ -24,7 +24,7 @@ MSI und EXE, die seit vielen Jahren als Standardinstallationsformate unter Windo
 2. **DLL-Höllen (DLL Hell)**: Wenn mehrere Anwendungen versuchen, DLLs mit demselben Namen (aber unterschiedlichen Versionen) im gemeinsamen Systemverzeichnis zu installieren, überschreibt die später installierte App die vorhandene DLL, wodurch die zuvor installierte App nicht mehr richtig funktioniert.
 3. **Instabilität durch benutzerdefinierte Aktionen**: In MSI-Paketen können beliebige Skripte und Codes, die als „benutzerdefinierte Aktionen“ bezeichnet werden, während der Installation und Deinstallation mit Systemrechten ausgeführt werden. Dies barg das Risiko, dass der Installer auf halbem Weg abstürzt oder unerwartete Einstellungsänderungen am System verursacht.
 
-### Lösungen durch die Containerisierungsarchitektur von MSIX
+### Lösungen durch die [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)isierungsarchitektur von MSIX
 MSIX löst diese Probleme, indem Anwendungen in leichtgewichtigen „Containern“ ausgeführt werden. Dieser Containerisierungsansatz bietet folgende enorme Vorteile:
 
 - **Saubere Deinstallation**: Mit MSIX installierte Apps schreiben in das Dateisystem und die Registrierung auf virtualisierte Weise (VFS: Virtual File System, VReg: Virtual Registry). Daher wird bei der Deinstallation dieser gesamte virtualisierte Container gelöscht, sodass keine Überreste (Müll) im System verbleiben. Es verhindert Win Rot vollständig.
@@ -70,7 +70,7 @@ Das ist sehr nahtlos, aber wenn Sie das von Visual Studio automatisch generierte
 
 ## 4. Ansatz B: Erstellung über die Kommandozeile (MakeAppx.exe)
 
-Für die Automatisierung in CI/CD-Pipelines oder für die manuelle Neuverpackung von Dateien aus vorhandenen Installern sind Kommandozeilenwerkzeuge erforderlich. Wenn das Windows SDK installiert ist, können Sie über die Eingabeaufforderung für Entwickler auf die folgenden Tools zugreifen.
+Für die Automatisierung in [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s oder für die manuelle Neuverpackung von Dateien aus vorhandenen Installern sind Kommandozeilenwerkzeuge erforderlich. Wenn das Windows SDK installiert ist, können Sie über die Eingabeaufforderung für Entwickler auf die folgenden Tools zugreifen.
 
 ### 1. Vorbereitung der Manifestdatei
 Erstellen Sie im Stammverzeichnis des Pakets eine `AppxManifest.xml`, die die grundlegenden Informationen enthält.

@@ -322,7 +322,7 @@ print("Model merged and saved successfully!")
 
 在本地環境部署時，為了將推論速度 (Tokens per second) 最大化，強烈建議使用 **vLLM** 或 **TGI (Text Generation Inference)** ，而不是 Hugging Face 標準的 `pipeline`。vLLM 使用了 PagedAttention 技術，可防止 GPU 記憶體碎片化，並大幅提升平行請求的處理能力。
 
-以下的 Mermaid 圖表展示了從訓練到部署推論伺服器的管線 (Pipeline)。
+以下的 Mermaid 圖表展示了從訓練到部署推論伺服器的管線 ([Pipeline](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/))。
 
 ```mermaid
 graph TD

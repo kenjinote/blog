@@ -12,7 +12,7 @@ description: '这是一份能显著提升Windows平台开发体验的WSL2完整�
 
 在Windows上提供Linux原生开发环境的“WSL2（Windows Subsystem for Linux 2）”，已经成为现代软件开发中不可或缺的工具。然而，是继续在默认状态下使用，还是在理解架构的基础上进行适当的调优，这在性能和开发体验上将会产生天壤之别。
 
-在本文中，我们将从WSL2核心架构的解析开始，到最大化发挥性能的设置、舒适的终端环境的构建、与Docker和VS Code的无缝协同，以及高级网络配置，以超过1万字的篇幅，彻底为您讲解专业工程师所追求的“终极开发环境”的完整构建步骤。
+在本文中，我们将从WSL2核心架构的解析开始，到最大化发挥性能的设置、舒适的终端环境的构建、与[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)和VS Code的无缝协同，以及高级网络配置，以超过1万字的篇幅，彻底为您讲解专业工程师所追求的“终极开发环境”的完整构建步骤。
 
 ---
 
@@ -256,7 +256,7 @@ Windows端的VS Code仅仅作为一个“瘦客户端（UI）”发挥作用，�
 从VS Code的“扩展”中安装 **"WSL" (ms-vscode-remote.remote-wsl)** 。之后，在WSL终端中进入项目目录，只需执行 `code .`，就能在Windows端以打开该目录的状态启动VS Code。
 
 **重要注意事项（换行符问题）：**
-Windows和Linux的换行符不同（Windows是 `CRLF`，Linux是 `LF`）。在WSL上进行开发时，请务必将Git的 `core.autocrlf` 设置以及VS Code中文件的默认设置统一为 `LF`。如果忽略这一点，您在执行Shell脚本或Docker容器时可能会被莫名其妙的错误所困扰。
+Windows和Linux的换行符不同（Windows是 `CRLF`，Linux是 `LF`）。在WSL上进行开发时，请务必将Git的 `core.autocrlf` 设置以及VS Code中文件的默认设置统一为 `LF`。如果忽略这一点，您在执行Shell脚本或[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)容器时可能会被莫名其妙的错误所困扰。
 
 ```bash
 # 在WSL端设置Git的换行符
@@ -274,7 +274,7 @@ git config --global core.autocrlf input
 
 ---
 
-## 7. Docker Desktop与WSL2 Integration的优化
+## 7. [Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop与WSL2 Integration的优化
 
 在WSL2环境中使用Docker，主要有两种方式。
 
@@ -287,10 +287,10 @@ git config --global core.autocrlf input
 - 勾选 `General` -> `Use the WSL 2 based engine`。
 - 勾选 `Resources` -> `WSL Integration` -> `Enable integration with my default WSL distro`，并打开要使用的发行版（如Ubuntu）的开关。
 
-如此一来，您就可以直接在WSL2的终端执行 `docker` 命令，与Docker守护进程的通信将通过Docker Desktop管理的专用轻量级VM（`docker-desktop` 以及 `docker-desktop-data`）来进行。
+如此一来，您就可以直接在WSL2的终端执行 `docker` 命令，与[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)守护进程的通信将通过Docker Desktop管理的专用轻量级VM（`docker-desktop` 以及 `docker-desktop-data`）来进行。
 
-### 方式2：直接安装原生的Docker Engine
-由于企业网络的限制（例如规避Docker Desktop的商业收费）或想要将性能开销降到最低的情况，可以在 `/etc/wsl.conf` 中启用 `systemd` 后，像在纯粹的Ubuntu服务器上一样安装Docker。
+### 方式2：直接安装原生的[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/) Engine
+由于企业网络的限制（例如规避Docker Desktop的商业收费）或想要将性能开销降到最低的情况，可以在 `/etc/wsl.conf` 中启用 `systemd` 后，像在纯粹的Ubuntu服务器上一样安装[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)。
 
 ```bash
 # 在启用了systemd的WSL2 Ubuntu上，Docker官方安装步骤的摘要
@@ -351,7 +351,7 @@ fi
 
 ## 9. 维护：膨胀的VHDX的优化（压缩）
 
-WSL2最大的缺点之一就是其设计机制：“即使删除了Docker镜像或文件，Windows端的虚拟磁盘（.vhdx）的文件大小也不会自动缩小”。如果长时间进行开发，ext4.vhdx文件可能会膨胀到几十GB甚至几百GB。
+WSL2最大的缺点之一就是其设计机制：“即使删除了[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)镜像或文件，Windows端的虚拟磁盘（.vhdx）的文件大小也不会自动缩小”。如果长时间进行开发，ext4.vhdx文件可能会膨胀到几十GB甚至几百GB。
 
 为了释放磁盘空间，需要定期从Windows端对VHDX进行优化（Compact）。
 

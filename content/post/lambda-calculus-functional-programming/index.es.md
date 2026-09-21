@@ -168,7 +168,7 @@ Lisp usaba tipado dinámico y no era exactamente el cálculo lambda teórico, pe
 
 ## 7. Cálculo lambda tipado e isomorfismo de Curry-Howard
 
-El cálculo lambda puro (cálculo lambda no tipado) es poderoso, pero como se puede pasar cualquier argumento a cualquier función, podría causar paradojas por auto-aplicación (ej: Paradoja de Russell). Para evitar esto, Church introdujo más tarde el **cálculo lambda simplemente tipado** (Simply Typed Lambda Calculus).
+El cálculo lambda puro (cálculo lambda no tipado) es poderoso, pero como se puede pasar cualquier argumento a cualquier función, podría causar paradojas por auto-aplicación (ej: Paradoja de Russell). Para evitar esto, Church introdujo más tarde el **cálculo lambda simplemente tipado** (Simply Typed [Lambda](https://kenji.blog/es/p/serverless-architecture-aws-lambda-cold-start/) Calculus).
 
 ### 7.1 Isomorfismo de Curry-Howard
 

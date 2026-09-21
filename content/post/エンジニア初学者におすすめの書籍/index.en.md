@@ -23,9 +23,9 @@ description: 'A must-see for engineers looking to step up from programming begin
 ![img_10.png](img_10.webp)
 7. Thorough SQL Guide Learned from Masters
 ![img_9.png](img_9.webp)
-8. Docker Practical Guide
+8. [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/) Practical Guide
 ![img_8.png](img_8.webp)
-9. Kubernetes Complete Guide
+9. [Kubernetes](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/) Complete Guide
 ![img_7.png](img_7.webp)
 10. Code Complete 2nd Edition
 ![img_5.png](img_5.webp)

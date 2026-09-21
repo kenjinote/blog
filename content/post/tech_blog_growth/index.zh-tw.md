@@ -175,7 +175,7 @@ else:
     print("找不到數據。")
 ```
 
-透過 cron 或 GitHub Actions 的定期任務來執行這個腳本，就能持續以數據驅動來決定「應該重寫哪篇文章的標題」。不依賴直覺，而是基於數據的持續改善（不是 CI/CD 而是 Continuous Content Improvement）是非常重要的。
+透過 cron 或 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 的定期任務來執行這個腳本，就能持續以數據驅動來決定「應該重寫哪篇文章的標題」。不依賴直覺，而是基於數據的持續改善（不是 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 而是 Continuous Content Improvement）是非常重要的。
 
 ---
 
@@ -231,7 +231,7 @@ $$ ROI = \frac{\sum_{t=1}^{T} \left( Rev_{ad}(t) + Val_{brand}(t) + Val_{skill}(
 
 ---
 
-## 5. 結合 GitHub Actions 與外部自動化工具的發布機制
+## 5. 結合 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 與外部自動化工具的發布機制
 
 建立內容後，如何有效率地傳遞給目標受眾（發布與分發）就成了一個課題。每次都手動將連結貼到各個 SNS 是沒有效率的，也不像工程師的作風。
 
@@ -255,7 +255,7 @@ flowchart TD
 
 ### 5.2 自動化管道的建置重點
 
-1. **透過 GitHub Actions 進行建置與部署**
+1. **透過 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 進行建置與部署**
    如果使用靜態網站生成器，可利用 GitHub Actions 將 HTML 的生成與部署到主機服務（Vercel, Netlify, Cloudflare Pages 等）自動化。這時，作為前述 Core Web Vitals 的對策，將圖片最佳化流程（例如自動轉換為 WebP）納入建置管道也是非常有效的。
 
 2. **利用 Zapier/IFTTT 搭配 RSS 觸發的 SNS 串接**
@@ -275,7 +275,7 @@ flowchart TD
 2. 規劃能理解使用者搜尋意圖（錯誤解決 vs 系統性學習）的文章
 3. 充分運用 Google Search Console API 與 Python 進行數據分析
 4. 意識到 ROI 的內容生命週期管理與重寫
-5. 透過 CI/CD 與 Zapier 串接，實現發布的完全自動化
+5. 透過 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 與 Zapier 串接，實現發布的完全自動化
 
 如果能將這些組合成一個系統，技術部落格將會成為強力推動你個人職涯的最強資產（Asset）。如果工程師正為了流量停滯而煩惱，請務必從今天開始嘗試「部落格的成長駭客」。在開發業務中培養出的程式設計技能與架構設計能力，在經營部落格時也一定會成為最強大的武器。
 

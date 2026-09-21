@@ -322,7 +322,7 @@ print("Model merged and saved successfully!")
 
 オンプレミス環境での展開において、推論速度（Tokens per second）を最大化するためには、Hugging Faceの標準の `pipeline` ではなく、 **vLLM** や **TGI (Text Generation Inference)** の使用を強く推奨します。vLLMはPagedAttention技術を用いて、GPUメモリの断片化を防ぎ、並行リクエストの処理能力を劇的に向上させます。
 
-以下のMermaid図は、学習から推論サーバー展開までのパイプラインを示しています。
+以下のMermaid図は、学習から推論サーバー展開までの[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を示しています。
 
 ```mermaid
 graph TD

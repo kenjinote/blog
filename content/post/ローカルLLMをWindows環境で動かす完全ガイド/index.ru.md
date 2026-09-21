@@ -163,7 +163,7 @@ $V_{kv} = 2 \times 1 \times 8192 \times 32 \times 8 \times 128 \times 2 \div 10^
 # 5. Практика 1: Самая быстрая и короткая настройка с использованием Ollama
 
 Теперь, поняв теорию, давайте действительно запустим LLM в среде Windows.
-По состоянию на 2026 год, самым удобным инструментом является «Ollama». Он предоставляет интуитивно понятный CLI в стиле Docker.
+По состоянию на 2026 год, самым удобным инструментом является «Ollama». Он предоставляет интуитивно понятный CLI в стиле [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ## 5.1 Установка и запуск
 

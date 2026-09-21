@@ -288,7 +288,7 @@ Teori yang telah kita lihat sejauh ini sama sekali bukan hanya menara gading aka
 
 Mesin ekspresi reguler yang terpasang di banyak bahasa pemrograman (Java, Python, Ruby, JavaScript, dll.) bukanlah DFA murni secara teoretis, melainkan diimplementasikan berbasis NFA (atau mesin back-tracking) yang disertai dengan backtracking.
 
-Karena itu, jika string licik diberikan pada ekspresi reguler dengan pola tertentu (contoh: `(a+)+$`), kompleksitas komputasi dapat meledak secara eksponensial, dan menyebabkan kerentanan **ReDoS** (Regular Expression Denial of Service) yang membuat sistem membeku (freeze). Jika Anda mengetahui teorinya, Anda dapat berpikir secara logis tentang mengapa backtracking terjadi dan bagaimana menulis ulang pola untuk menurunkannya ke pemrosesan yang setara dengan DFA yang aman.
+Karena itu, jika string licik diberikan pada ekspresi reguler dengan pola tertentu (contoh: `(a+)+$`), kompleksitas komputasi dapat meledak secara eksponensial, dan menyebabkan kerentanan **ReDoS** (Regular Expression Denial of [Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/)) yang membuat sistem membeku (freeze). Jika Anda mengetahui teorinya, Anda dapat berpikir secara logis tentang mengapa backtracking terjadi dan bagaimana menulis ulang pola untuk menurunkannya ke pemrosesan yang setara dengan DFA yang aman.
 
 ---
 

@@ -356,9 +356,9 @@ def check_and_ventilate():
 ```
 Durch die regelmäßige Ausführung eines solchen Skripts über Cron wird ein autonomes Umgebungskontrollsystem vervollständigt, das stets einen optimalen Sauerstoffgehalt aufrechterhält.
 
-## 13. Fazit: CI/CD des menschlichen Körpers als System
+## 13. Fazit: [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) des menschlichen Körpers als System
 
-Betrachten Sie Ihren eigenen Körper als ein komplexes, verteiltes System. Wearables (Oura Ring) sind Metrik-Exporter (Prometheus) zur Überwachung, Python-/Pandas-Skripte sind die Log-Analyse-Pipeline (Logstash/Fluentd), und die täglichen Veränderungen Ihrer körperlichen Verfassung und Leistung sind die Systemgesundheit, die auf einem Dashboard (Grafana/Streamlit) angezeigt wird.
+Betrachten Sie Ihren eigenen Körper als ein komplexes, verteiltes System. Wearables (Oura Ring) sind Metrik-Exporter (Prometheus) zur Überwachung, Python-/Pandas-Skripte sind die Log-Analyse-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) (Logstash/Fluentd), und die täglichen Veränderungen Ihrer körperlichen Verfassung und Leistung sind die Systemgesundheit, die auf einem Dashboard (Grafana/Streamlit) angezeigt wird.
 
 "Schlaf kürzen, um zu arbeiten" ist das Gleiche wie das Erzwingen von Funktionserweiterungen, während man technische Schulden (Technical Debt) ignoriert. Kurzfristig mögen Sie die Deadline einhalten, aber langfristig wird es unweigerlich zu einem Systemausfall (Burnout, ernsthafte Gesundheitsprobleme, Depressionen) führen.
 

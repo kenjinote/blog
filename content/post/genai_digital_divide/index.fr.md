@@ -84,7 +84,7 @@ La 3e fracture numérique ne concerne pas seulement les compétences logicielles
 Il existe principalement deux approches pour utiliser les grands modèles de langage : « utiliser l'API cloud » ou « faire l'inférence (Inference) du modèle localement ». Les deux présentent des avantages et des inconvénients, ce qui constitue une nouvelle barrière économique et physique.
 
 ### Les limites et les coûts de fonctionnement des API cloud
-Il est courant d'accéder via une API aux modèles frontières de pointe (tels que GPT-4o, Claude 3.5 Sonnet, etc.) proposés par OpenAI, Anthropic et Google. Cependant, si l'on construit un agent autonome avancé (Agentic Workflow) générant des dizaines de milliers d'appels API par jour, les coûts augmentent de manière explosive.
+Il est courant d'accéder via une API aux modèles frontières de pointe (tels que GPT-4o, Claude 3.5 Sonnet, etc.) proposés par OpenAI, Anthropic et Google. Cependant, si l'on construit un agent autonome avancé (Agentic [Workflow](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/)) générant des dizaines de milliers d'appels API par jour, les coûts augmentent de manière explosive.
 
 Le coût total du cloud $C_{cloud}$ dépend de la quantité de tokens d'entrée et de sortie.
 

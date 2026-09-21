@@ -318,7 +318,7 @@ Las tres empresas han declarado claramente que **los datos (prompts y respuestas
 
 Para casos donde se requieran niveles de seguridad aún más altos:
 - **OpenAI**: A través del servicio de Azure OpenAI, se puede aprovechar la seguridad de nivel empresarial y los SLA de Microsoft, y realizar conexiones de red cerradas mediante Azure Private Link.
-- **Google**: Al usar Google Cloud Vertex AI, es posible realizar un aislamiento de red estricto utilizando VPC Service Controls, y proteger los datos mediante CMEK (Claves de Cifrado Gestionadas por el Cliente).
+- **Google**: Al usar Google Cloud Vertex AI, es posible realizar un aislamiento de red estricto utilizando VPC [Service](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/) Controls, y proteger los datos mediante CMEK (Claves de Cifrado Gestionadas por el Cliente).
 - **Anthropic**: Al utilizarse a través de AWS Bedrock o Google Cloud Vertex AI, se puede aprovechar la robusta infraestructura de seguridad subyacente de estos proveedores de la nube.
 
 ---

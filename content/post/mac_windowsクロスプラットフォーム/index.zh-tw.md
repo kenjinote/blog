@@ -69,7 +69,7 @@ tags: ['Windows', 'macOS', 'Git', 'CMake', 'Development']
 
 在 Mac 或 Windows 上開發時，如果在原始碼中以小寫指定 `#include "myclass.h"`（或 `import "./myclass"`），而實際的檔案是 `MyClass.h`，由於本機環境的 OS 是不區分大小寫的，所以建置（Build）會成功。
 
-然而，當把這段程式碼 Commit 上去，並在 CI/CD 伺服器（通常是 Ubuntu 等 Linux）執行建置時，因為 Linux 的 ext4 檔案系統區分大小寫，就會導致「找不到檔案」的編譯錯誤。
+然而，當把這段程式碼 Commit 上去，並在 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 伺服器（通常是 Ubuntu 等 Linux）執行建置時，因為 Linux 的 ext4 檔案系統區分大小寫，就會導致「找不到檔案」的編譯錯誤。
 
 ### 從演算法角度看待：檔案搜尋的時間複雜度與正規化
 
@@ -187,7 +187,7 @@ with open("data.txt", "w", encoding="utf-8") as f:
 
 執行建置腳本或開發用工具時，Shell（命令列直譯器）的差異也是跨平台的一大障礙。
 
-*   **macOS / Linux** ：以 `bash` 或 `zsh` 為主流。執行基於文字的管線（Pipeline）處理。
+*   **macOS / Linux** ：以 `bash` 或 `zsh` 為主流。執行基於文字的管線（[Pipeline](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)）處理。
 *   **Windows** ：命令提示字元 (`cmd.exe`) 或 `PowerShell`。PowerShell 建立於 .NET 之上，擁有強大的物件導向管線，但語法與 POSIX Shell 完全不同。
 
 由於參照和設定環境變數的方法不同，如果在 Node.js 的 `package.json` 中的 `scripts` 區域寫出依賴 OS 的寫法，在其他環境下就會無法運作。
@@ -302,11 +302,11 @@ classDiagram
 
 ---
 
-## 8. 在 CI/CD 中的跨平台驗證 (矩陣建置)
+## 8. 在 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 中的跨平台驗證 (矩陣建置)
 
 無論開發者在本機環境多麼謹慎地編寫程式碼，跨平台支援的最後一道防線仍是 **CI/CD (Continuous Integration / Continuous Deployment) 管線** 。在本機環境（例如 Mac）可以順利運作，但在其他 OS（Windows）上出現編譯錯誤的情況層出不窮。
 
-活用 GitHub Actions 或 GitLab CI 等最新的 CI 工具，在每次建立 Pull Request 時設定 **同時在 Windows, macOS, Linux 的所有環境下並行執行建置與測試** 的矩陣建置（Matrix Build）吧。
+活用 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 或 GitLab CI 等最新的 CI 工具，在每次建立 Pull Request 時設定 **同時在 Windows, macOS, Linux 的所有環境下並行執行建置與測試** 的矩陣建置（Matrix Build）吧。
 
 ```yaml
 # GitHub Actions 的跨平台 CI 設定範例
@@ -338,7 +338,7 @@ jobs:
       run: pytest -v
 ```
 
-將此 CI/CD 的流程視覺化後如下圖所示。
+將此 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 的流程視覺化後如下圖所示。
 
 ```mermaid
 sequenceDiagram
@@ -378,10 +378,10 @@ Mac 與 Windows 的跨平台開發，存在許多根植於歷史背景的廣泛�
 2.  **大小寫區分** ：不要依賴 macOS/Windows「不區分大小寫」的行為，應嚴格制定檔案命名規則，並致力於嚴謹的大小寫配對。
 3.  **路徑分隔符號** ：利用語言標準的路徑操作 API（`std::filesystem`, `pathlib`, `path` 模組）來吸收 OS 差異。
 4.  **編碼** ：永遠指定 UTF-8，徹底排除 Windows 預設行為 CP932 的影響。
-5.  **環境變數與 Shell** ：使用 `cross-env` 等抽象化工具，或將執行環境統一為 WSL/Docker 等。
+5.  **環境變數與 Shell** ：使用 `cross-env` 等抽象化工具，或將執行環境統一為 WSL/[Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 等。
 6.  **建置系統** ：若為 C/C++ 則活用 CMake 等元建置系統，為每個 OS 產生最佳的原生工具鏈。
 7.  **OS 依賴程式碼** ：設計 OS 抽象層 (OSAL)，分離並隔離依賴平台的邏輯。
-8.  **CI/CD** ：導入矩陣建置，自動化所有目標 OS 上的乾淨建置與測試，排除依賴個人的狀況。
+8.  **[CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)** ：導入矩陣建置，自動化所有目標 OS 上的乾淨建置與測試，排除依賴個人的狀況。
 
 現今雖然有 Electron, Tauri, .NET 等強大的框架能吸收許多差異，但基底 OS 原生行為（檔案系統與編碼）的知識，在解決嚴重的效能問題或艱深的 Bug 時，仍然是不可或缺的。從專案初期階段就讓整個團隊共享並徹底落實這些最佳實踐，將能大幅減少因 OS 差異所導致且毫無意義的除錯時間，讓我們能集中精力創造軟體的本質價值。
 

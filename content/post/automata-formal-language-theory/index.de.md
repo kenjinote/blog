@@ -288,7 +288,7 @@ Die Theorien, die wir bisher betrachtet haben, bleiben keineswegs in akademische
 
 Die in vielen Programmiersprachen (Java, Python, Ruby, JavaScript usw.) integrierten Engines für reguläre Ausdrücke sind keine reinen DFAs im theoretischen Sinne, sondern basieren auf NFAs mit Backtracking (oder Backtracking-Engines).
 
-Wenn man solchen regulären Ausdrücken mit bestimmten Mustern (z.B. `(a+)+$`) raffinierte Zeichenketten übergibt, kann die Berechnungszeit exponentiell ansteigen und das System zum Einfrieren bringen, was zu einer Schwachstelle führt, die als **ReDoS** (Regular Expression Denial of Service) bezeichnet wird. Wenn man die Theorie kennt, kann man logisch nachvollziehen, warum Backtracking auftritt und wie man das Muster umschreiben muss, um es auf eine sichere DFA-äquivalente Verarbeitung zu reduzieren.
+Wenn man solchen regulären Ausdrücken mit bestimmten Mustern (z.B. `(a+)+$`) raffinierte Zeichenketten übergibt, kann die Berechnungszeit exponentiell ansteigen und das System zum Einfrieren bringen, was zu einer Schwachstelle führt, die als **ReDoS** (Regular Expression Denial of [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)) bezeichnet wird. Wenn man die Theorie kennt, kann man logisch nachvollziehen, warum Backtracking auftritt und wie man das Muster umschreiben muss, um es auf eine sichere DFA-äquivalente Verarbeitung zu reduzieren.
 
 ---
 

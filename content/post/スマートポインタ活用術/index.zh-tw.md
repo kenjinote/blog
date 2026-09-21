@@ -114,7 +114,7 @@ int main() {
 }
 ```
 
-若將函式指標或 Lambda 運算式作為自訂刪除器使用，可能會增加 `unique_ptr` 的大小；但如果像上述一樣使用無狀態的函式物件 (Functor)，受惠於 C++ 的 **EBCO (Empty Base Class Optimization)** 或 C++20 的 `[[no_unique_address]]`，其大小不會比原生指標增加 (保持零開銷)。
+若將函式指標或 [Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/) 運算式作為自訂刪除器使用，可能會增加 `unique_ptr` 的大小；但如果像上述一樣使用無狀態的函式物件 (Functor)，受惠於 C++ 的 **EBCO (Empty Base Class Optimization)** 或 C++20 的 `[[no_unique_address]]`，其大小不會比原生指標增加 (保持零開銷)。
 
 ## 3. `std::shared_ptr`：共享所有權與控制區塊
 

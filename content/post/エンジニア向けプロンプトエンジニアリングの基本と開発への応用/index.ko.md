@@ -71,7 +71,7 @@ OpenAI의 API(GPT-4 등)나 Anthropic의 API(Claude 등)를 이용하여 AI 애�
 
 ### 2.1 시스템 프롬프트: 글로벌 제약과 페르소나의 정의
 
-시스템 프롬프트는 LLM에 대한 **글로벌 제약, 페르소나(역할), 그리고 기본이 되는 행동 규칙** 을 정의하는 것입니다. 소프트웨어 설계에 비유하자면, 애플리케이션의 '환경 변수'나 '베이스 클래스', 혹은 컨테이너의 'Dockerfile'과 같은 역할을 수행합니다.
+시스템 프롬프트는 LLM에 대한 **글로벌 제약, 페르소나(역할), 그리고 기본이 되는 행동 규칙** 을 정의하는 것입니다. 소프트웨어 설계에 비유하자면, 애플리케이션의 '환경 변수'나 '베이스 클래스', 혹은 컨테이너의 '[Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)file'과 같은 역할을 수행합니다.
 
 뛰어난 시스템 프롬프트는 출력의 품질과 포맷을 극적으로 안정화시킵니다.
 
@@ -193,7 +193,7 @@ ToT를 프롬프트로 구현하려면, "여러 접근 방식을 제안하고, �
 
 ---
 
-## 4. Agentic Workflow와 ReAct (Reasoning and Acting)
+## 4. Agentic [Workflow](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)와 ReAct (Reasoning and Acting)
 
 LLM의 응용은 단일 텍스트 입출력에서 자율적으로 계획을 세우고 외부 환경과 상호작용하면서 태스크를 완수하는 **AI 에이전트(AI Agents)** 의 영역으로 급속히 진화하고 있습니다. 이 에이전트 아키텍처의 핵심을 이루는 패러다임이 **ReAct (Reasoning and Acting)** 입니다.
 
@@ -220,7 +220,7 @@ ReAct를 시스템에 편입하기 위한 표준적인 인터페이스가 OpenAI
 엔지니어는 LLM에게 시스템 프롬프트와 함께 '사용 가능한 툴 그룹의 정의(JSON 스키마)'를 전달합니다. LLM은 프롬프트의 컨텍스트를 분석하여 툴을 사용해야 한다고 판단할 경우, 일반적인 텍스트가 아닌 '호출할 함수명'과 '해당 인자의 JSON'을 출력합니다. 애플리케이션 측에서 그 함수를 실행하고 그 결과를 다시 LLM에 반환함으로써 루프가 형성됩니다.
 
 **개발에의 응용 예 (자율형 디버깅 에이전트):**
-CI/CD 파이프라인에서 테스트가 실패했을 때 원인을 조사하고 패치를 생성하는 에이전트를 구축할 경우, 다음과 같은 툴을 LLM에 제공합니다.
+[CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인에서 테스트가 실패했을 때 원인을 조사하고 패치를 생성하는 에이전트를 구축할 경우, 다음과 같은 툴을 LLM에 제공합니다.
 
 1. `search_codebase(regex_pattern)`: 저장소 내의 코드를 정규 표현식으로 검색한다.
 2. `view_file_content(file_path, start_line, end_line)`: 지정한 파일의 내용을 읽어온다.
@@ -368,7 +368,7 @@ def is_valid_ipv4(ip_str):
 2. **실행**: 평가 대상 프롬프트와 모델을 사용하여 테스트 셋에 대한 출력을 생성하게 합니다.
 3. **평가**: 평가용 프롬프트(메타 프롬프트)를 준비하여 Judge LLM에게 "생성된 출력이 요구사항을 충족하는지 1~5점으로 점수를 매기시오"라고 지시합니다.
 
-이를 통해 프롬프트를 수정했을 때의 성능 퇴행(Regression)을 CI/CD 파이프라인 상에서 자동 감지할 수 있게 됩니다. 프롬프트 엔지니어링은 장인 정신의 '프롬프트 만지작거리기'에서, 데이터 기반의 재현성 있는 '엔지니어링(공학)'으로 진화하고 있습니다.
+이를 통해 프롬프트를 수정했을 때의 성능 퇴행(Regression)을 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인 상에서 자동 감지할 수 있게 됩니다. 프롬프트 엔지니어링은 장인 정신의 '프롬프트 만지작거리기'에서, 데이터 기반의 재현성 있는 '엔지니어링(공학)'으로 진화하고 있습니다.
 
 ---
 

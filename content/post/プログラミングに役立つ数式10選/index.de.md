@@ -402,7 +402,7 @@ flowchart LR
 ```
 
 ### Anwendung in der Programmierung
-Wird in der Rendering-Pipeline von Grafik-Engines, bei Kollisionserkennungen in physikalischen Simulationen und bei Optimierungsproblemen verwendet. Ein bemerkenswertes Beispiel ist die "Schnelle inverse Quadratwurzel" (Fast Inverse Square Root), die im Quellcode des legendären FPS-Spiels "Quake III Arena" eingebettet war. Dies war ein Hack, der die Newton-Methode nur einmal anwandte, um $1/\sqrt{x}$ extrem schnell zu berechnen, was für die Vektornormalisierung unerlässlich war.
+Wird in der Rendering-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) von Grafik-Engines, bei Kollisionserkennungen in physikalischen Simulationen und bei Optimierungsproblemen verwendet. Ein bemerkenswertes Beispiel ist die "Schnelle inverse Quadratwurzel" (Fast Inverse Square Root), die im Quellcode des legendären FPS-Spiels "Quake III Arena" eingebettet war. Dies war ein Hack, der die Newton-Methode nur einmal anwandte, um $1/\sqrt{x}$ extrem schnell zu berechnen, was für die Vektornormalisierung unerlässlich war.
 
 ### Implementierungsbeispiel (C++)
 Hier ist ein leicht verständliches Beispiel zur Berechnung der quadratischen Standardwurzel $\sqrt{N}$ (also der Lösung von $x^2 - N = 0$) mit dem Newton-Verfahren. Es ist $f(x) = x^2 - N$ und $f'(x) = 2x$.

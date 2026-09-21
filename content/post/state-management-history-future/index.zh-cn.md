@@ -15,7 +15,7 @@ tags:
   - redux
 ---
 
-在 Web 前端开发中，最具争议且不断演进的领域便是“状态管理（State Management）”。现代的 Web 应用程序已经从单纯的文档显示，蜕变为拥有媲美桌面应用程序的复杂交互软件。随之而来的是，如何管理应用程序的状态并将其与 UI 同步，成为了所有前端工程师面临的最大挑战。
+在 Web 前端开发中，最具争议且不断演进的领域便是“状态管理（[State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) Management）”。现代的 Web 应用程序已经从单纯的文档显示，蜕变为拥有媲美桌面应用程序的复杂交互软件。随之而来的是，如何管理应用程序的状态并将其与 UI 同步，成为了所有前端工程师面临的最大挑战。
 
 本文将回顾前端状态管理的历史，深入且详细地探讨各个时代的挑战与解决方案，以及面向未来的范式转变（尤其是 Signals 和 Reactivity 的演进）。
 
@@ -140,7 +140,7 @@ Redux 基于以下三个严格的原则：
 
 1.  **单一数据源（Single source of truth）**:
     整个应用程序的状态保存在单个存储（Store）中的对象树中。
-2.  **状态是只读的（State is read-only）**:
+2.  **状态是只读的（[State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) is read-only）**:
     更改状态的唯一方法是发出（Dispatch）一个描述发生什么事情的 Action 对象。
 3.  **使用纯函数执行修改（Changes are made with pure functions）**:
     为了指定状态树如何由 Action 转换，需要编写被称为 Reducer 的纯函数。
@@ -237,7 +237,7 @@ React 的 Context API 有一个规范：“当 Context 的值更新时，所有�
 
 由于 React 默认采用“自顶向下”的渲染模型，这暴露了一个本质问题，即全局状态更改很容易引发整个树的不必要重新渲染。
 
-## 7. 状态分离：Server State 与 Client State
+## 7. 状态分离：Server [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) 与 Client State
 
 从这个时候开始，状态管理发生了一个重要的范式转变。那就是认识到“不应该将所有的状态都放入单一的全局存储中”。
 特别是从服务器获取的数据（Server State）与仅在前端完成的 UI 状态（Client State）在性质上根本不同。
@@ -269,7 +269,7 @@ function UserProfile({ userId }) {
 
 ## 8. 原子化状态管理：Recoil 与 Jotai
 
-在 Server State 分离之后，如何高效管理剩下的 Client State 展开了新的竞争。
+在 Server [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) 分离之后，如何高效管理剩下的 Client State 展开了新的竞争。
 为了解决 React 的渲染模型（自顶向下）和 Context API 的性能问题，诞生了 **原子化状态管理（Atomic State Management）** 的方法。
 
 2020 年 Facebook 团队发布了 **Recoil** ，受其影响，出现了 **Jotai** 等库。
@@ -444,7 +444,7 @@ React Compiler 会在构建时对 React 组件代码进行静态分析，并 **�
 
 ## 13. 结论：状态管理将走向何方？
 
-从 MVC 的混乱开始，经历 Flux/Redux 带来的可预测性、Hooks 带来的简化、Server State 的分离、通过 Atomic 和 Proxy 带来的效率提升，再到基于 Signals 的细粒度响应式。
+从 MVC 的混乱开始，经历 Flux/Redux 带来的可预测性、Hooks 带来的简化、Server [State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/) 的分离、通过 Atomic 和 Proxy 带来的效率提升，再到基于 Signals 的细粒度响应式。
 
 回顾过去约 15 年前端状态管理的历史，我们可以清晰地看到一个趋势： **“在减少样板代码并降低开发者认知负担的同时，系统底层（框架和编译器）正在朝着自动优化性能的方向演进。”** 
 

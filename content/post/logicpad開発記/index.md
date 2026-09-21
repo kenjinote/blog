@@ -175,7 +175,7 @@ void MainWindow::InitializeCustomTitleBar()
 
 しかし、C++で記述されたネイティブアプリをMSIXでパッケージングする際、最も注意すべきなのが `Package.appxmanifest`（マニフェストファイル）の設定です。
 
-LogicPadはローカルのファイルシステム（ユーザーのドキュメントフォルダ等）に保存された巨大なプロジェクトファイルを読み書きする必要があります。標準のUWPのサンドボックス環境では、アプリ自身の隔離されたデータフォルダ（AppContainer）しかアクセスできません。ネイティブデスクトップアプリとしてフルアクセス権限を得るためには、マニフェストで `runFullTrust` 機能を宣言する必要があります。
+LogicPadはローカルのファイルシステム（ユーザーのドキュメントフォルダ等）に保存された巨大なプロジェクトファイルを読み書きする必要があります。標準のUWPのサンドボックス環境では、アプリ自身の隔離されたデータフォルダ（App[Container](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)）しかアクセスできません。ネイティブデスクトップアプリとしてフルアクセス権限を得るためには、マニフェストで `runFullTrust` 機能を宣言する必要があります。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

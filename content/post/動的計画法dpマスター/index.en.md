@@ -210,7 +210,7 @@ You have a knapsack with capacity $W$. There are also $n$ items, and each item $
 When selecting items so as not to exceed the knapsack's capacity, what is the maximum total value you can obtain?
 (* "0/1" means that for each item, there are only 2 choices: "do not choose (0)" or "choose (1)". You cannot divide items.)
 
-### 4-2. State Definition and State Transition Equation
+### 4-2. [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Definition and State Transition Equation
 
 The most important step for solving DP is to appropriately define the "State".
 In this problem, two parameters will change: "which item has been considered up to" and "the remaining capacity of the knapsack". Therefore, we define the state as follows.
@@ -327,7 +327,7 @@ You are given two strings $S$ and $T$. Among the common subsequences (strings fo
 
 Example: When $S = \text{"ABCBDAB"}$ and $T = \text{"BDCABA"}$, the LCS is $\text{"BCBA"}$, $\text{"BDAB"}$, etc., and its length is 4.
 
-### 5-2. State Definition and State Transition Equation
+### 5-2. [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Definition and State Transition Equation
 
 Let the lengths of the strings be $m$ and $n$ respectively. In this case as well, we set the lengths of the prefixes (substrings starting from the beginning) for the two strings as the state.
 
@@ -434,7 +434,7 @@ We have seen various problems so far, but when facing an unknown DP problem, how
 
 1. **Can this problem be solved with DP? (Condition Check)**
    When thinking recursively, do the same states appear over and over? (Overlapping Subproblems). Can the overall best be derived by combining the best choices? (Optimal Substructure).
-2. **Define the State**
+2. **Define the [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)**
    Identify the variables that represent "where am I now", "what is left", and "what are the constraints so far". Clearly verbalizing the meaning of the indices is the greatest defense against bugs.
 3. **Think of the State Transition Equation**
    How do you move from one state to the next? What are the choices? Among them, do you take the maximum (or minimum), or add them together? This is the heart of the algorithm.

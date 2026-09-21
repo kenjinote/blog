@@ -14,7 +14,7 @@ description: '盘点能让Visual Studio Code（VSCode）更加好用的推荐扩
 | 分类 | 名称 | 提供者 | 说明 |
 |----|----|-----|-----|
 | 虚拟·容器管理 | Remote Devlopment | Microsoft  | 通过SSH连接到虚拟容器/WSL，支持远程开发 |
-| 虚拟·容器管理 | Docker | Microsoft  | 支持Docker容器管理 |
+| 虚拟·容器管理 | [Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft  | 支持Docker容器管理 |
 | 代码管理 | GitHub Pull Requests | GitHub | 在VSCode上管理GitHub的Pull Request |
 | 代码管理 | GitHub Copilot | GitHub | 支持AI代码补全 |
 | 代码管理 | Git Graph | mhutchie | 图形化显示Git分支和提交 |
@@ -24,7 +24,7 @@ description: '盘点能让Visual Studio Code（VSCode）更加好用的推荐扩
 | 浏览器·Web开发 | Vue Language Features(Volar) | Vue |  支持Vue的语言功能 |
 | 浏览器·Web开发 | JavaScript (ES6) code snippets | charalampos karypidis | 提供JavaScript代码片段 |
 | 浏览器·Web开发 | Tailwind CSS IntelliSense | Tailwind Labs | 提供Tailwind CSS智能提示及代码片段 |
-| 云开发 | AWS Toolkit | Amazon Web Services | 支持AWS开发 |
+| 云开发 | AWS Toolkit | Amazon Web [Service](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/)s | 支持AWS开发 |
 | 云开发 | Azure Tools | Microsoft | 支持Azure开发 |
 | 云开发 | Google Cloud Tools | Google Cloud | 支持Google Cloud开发 |
 | 数据库 | MySQL | Jun Han | 支持MySQL开发 |

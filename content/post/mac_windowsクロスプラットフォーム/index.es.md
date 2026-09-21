@@ -69,7 +69,7 @@ La distinción entre mayúsculas y minúsculas (Case Sensitivity) en los sistema
 
 Al desarrollar en Mac o Windows, incluso si especificas `#include "myclass.h"` (o `import "./myclass"`) en minúsculas en tu código fuente, si el archivo real es `MyClass.h`, la compilación tendrá éxito porque el SO del entorno local es Case-Insensitive.
 
-Sin embargo, si haces commit de este código y ejecutas la compilación en un servidor CI/CD (normalmente un Linux como Ubuntu), el sistema de archivos ext4 de Linux es Case-Sensitive, lo que resultará en un error de compilación de "archivo no encontrado".
+Sin embargo, si haces commit de este código y ejecutas la compilación en un servidor [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) (normalmente un Linux como Ubuntu), el sistema de archivos ext4 de Linux es Case-Sensitive, lo que resultará en un error de compilación de "archivo no encontrado".
 
 ### Perspectiva algorítmica: Complejidad de búsqueda de archivos y normalización
 
@@ -302,11 +302,11 @@ Al aislar el código específico de la plataforma de esta manera en un solo luga
 
 ---
 
-## 8. Verificación multiplataforma en CI/CD (Construcción Matricial)
+## 8. Verificación multiplataforma en [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) (Construcción Matricial)
 
 No importa cuán cuidadosamente programe un desarrollador en un entorno local, el último bastión del soporte multiplataforma es la **cadena (pipeline) de CI/CD (Integración Continua / Despliegue Continuo)**. Son interminables los casos en los que funciona en un entorno local (por ejemplo, Mac) pero provoca errores de compilación en otro SO (Windows).
 
-Utilicemos herramientas modernas de CI como GitHub Actions o GitLab CI, para configurar una construcción matricial (Matrix Build) que **ejecuta compilaciones y pruebas en paralelo en todos los entornos: Windows, macOS y Linux**, cada vez que se crea un Pull Request.
+Utilicemos herramientas modernas de CI como [GitHub Actions](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/) o GitLab CI, para configurar una construcción matricial (Matrix Build) que **ejecuta compilaciones y pruebas en paralelo en todos los entornos: Windows, macOS y Linux**, cada vez que se crea un Pull Request.
 
 ```yaml
 # Ejemplo de configuración CI multiplataforma con GitHub Actions
@@ -338,7 +338,7 @@ jobs:
       run: pytest -v
 ```
 
-Si visualizamos este flujo de CI/CD, sería así:
+Si visualizamos este flujo de [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/), sería así:
 
 ```mermaid
 sequenceDiagram
@@ -378,10 +378,10 @@ Existen una amplia gama de desafíos arraigados en los antecedentes históricos 
 2.  **Sensibilidad a mayúsculas y minúsculas**: No confiar en el comportamiento que "no distingue" de macOS/Windows; establecer reglas estrictas de nomenclatura de archivos y procurar que el emparejamiento (matching) de casos sea estricto.
 3.  **Separador de rutas**: Utilizar las APIs estándar del lenguaje para manejar rutas (`std::filesystem`, `pathlib`, módulo `path`) para absorber las diferencias de los SO.
 4.  **Codificación**: Especificar siempre UTF-8 de manera explícita y eliminar completamente la influencia del comportamiento predeterminado de Windows que es CP932.
-5.  **Variables de entorno / shell**: Usar herramientas de abstracción como `cross-env`, o estandarizar el entorno de ejecución como WSL/Docker, etc.
+5.  **Variables de entorno / shell**: Usar herramientas de abstracción como `cross-env`, o estandarizar el entorno de ejecución como WSL/[Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/), etc.
 6.  **Sistema de construcción (Build system)**: En caso de C/C++, aprovechar un sistema de meta-construcción como CMake para generar las cadenas de herramientas nativas óptimas para cada SO.
 7.  **Código dependiente del SO**: Diseñar una Capa de Abstracción del SO (OSAL) para separar y aislar la lógica dependiente de la plataforma.
-8.  **CI/CD**: Introducir construcciones matriciales (Matrix build) para automatizar una construcción limpia y la realización de pruebas en todos los SO objetivo, y así eliminar dependencias en personas específicas.
+8.  **[CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/)**: Introducir construcciones matriciales (Matrix build) para automatizar una construcción limpia y la realización de pruebas en todos los SO objetivo, y así eliminar dependencias en personas específicas.
 
 En la actualidad, potentes frameworks como Electron, Tauri, .NET, etc. absorben muchas de estas diferencias, pero el conocimiento del comportamiento nativo del sistema operativo subyacente (como el sistema de archivos y codificación) sigue siendo indispensable a la hora de solucionar problemas graves de rendimiento y errores complejos. Compartiendo y reforzando rigurosamente estas mejores prácticas en todo el equipo desde las fases iniciales de un proyecto, se puede reducir de manera significativa la pérdida de tiempo depurando a causa de diferencias en los SO, y enfocarse en la creación de valor intrínseco del software.
 

@@ -12,7 +12,7 @@ description: '使用 Cloudflare Pages 或 GitHub Pages 免費且高速地代管 
 
 在營運網站或部落格時，載入速度（效能）、營運成本以及安全性是極為重要的因素。過去，像 WordPress 這樣的動態 CMS（內容管理系統）與虛擬主機的組合是主流，但現在被稱為「Jamstack」的架構正受到極大關注。其中，將以 Go 語言編寫的超高速靜態網站產生器（SSG）「Hugo」與 Cloudflare Pages 或 GitHub Pages 等現代代管服務結合，即可建構出 **完全免費且極速** 的部落格環境。
 
-本文將從技術觀點進行非常深入的探討，說明如何將使用 Hugo 產生的靜態網站在 Cloudflare Pages 或 GitHub Pages 上發布的具體步驟、各平台架構的差異、使用 GitHub Actions 建構 CI/CD（持續整合／持續部署）、DNS 的最佳化、快取策略，以及如何導入兼顧隱私的流量分析工具。
+本文將從技術觀點進行非常深入的探討，說明如何將使用 Hugo 產生的靜態網站在 Cloudflare Pages 或 GitHub Pages 上發布的具體步驟、各平台架構的差異、使用 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 建構 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)（持續整合／持續部署）、DNS 的最佳化、快取策略，以及如何導入兼顧隱私的流量分析工具。
 
 ---
 
@@ -82,7 +82,7 @@ $$ L_{new} = 10 + (1 - 0.95) \times 200 = 10 + 0.05 \times 200 = 10 + 10 = 20 \t
 
 ---
 
-## 4. 使用 GitHub Actions 建構 CI/CD 流程
+## 4. 使用 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 建構 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 流程
 
 為了將 Hugo 部落格的更新流程自動化，我們將使用 GitHub Actions 建構 CI/CD 流程。如此一來，只需在本地端撰寫 Markdown 文章並執行 `git push`，就會自動進行建置，並部署到 Cloudflare Pages 或 GitHub Pages 上。
 
@@ -108,7 +108,7 @@ sequenceDiagram
 
 ### 4.1 針對 Cloudflare Pages 的部署設定（Direct Upload）
 
-Cloudflare Pages 有兩種方式：一種是連結 GitHub 儲存庫並在 Cloudflare 的基礎設施上建置，另一種是將透過 GitHub Actions 建置好的靜態檔案「直接上傳（Direct Upload）」。如果您想要更嚴謹地進行 Hugo 的版本控制，並與其他作業（測試或圖片最佳化）連動，建議採用在 GitHub Actions 上建置並 Direct Upload 的方式。
+Cloudflare Pages 有兩種方式：一種是連結 GitHub 儲存庫並在 Cloudflare 的基礎設施上建置，另一種是將透過 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 建置好的靜態檔案「直接上傳（Direct Upload）」。如果您想要更嚴謹地進行 Hugo 的版本控制，並與其他作業（測試或圖片最佳化）連動，建議採用在 GitHub Actions 上建置並 Direct Upload 的方式。
 
 以下是部署到 Cloudflare Pages 的 `.github/workflows/deploy.yml` 實務範例。
 
@@ -248,7 +248,7 @@ Cloudflare Web Analytics 只要嵌入非常輕量的 JavaScript 程式碼片段�
 
 在使用 Hugo 營運靜態網站時，採用 Cloudflare Pages 或 GitHub Pages 等現代代管平台，在成本效益、載入速度以及安全性等各方面都具有壓倒性的優勢。
 
-1. **極速的建置** ：善用 Hugo 的高速特性，將 CI/CD 流程（GitHub Actions）的執行時間最小化。
+1. **極速的建置** ：善用 Hugo 的高速特性，將 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 流程（[GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)）的執行時間最小化。
 2. **在邊緣節點傳遞** ：利用 Cloudflare 的邊緣網路，以毫秒級的延遲將內容傳遞給全球使用者。
 3. **適當的 DNS 架構** ：活用 CNAME Flattening 安全且高速地營運 Zone Apex（自訂網域）。
 4. **快取策略最佳化** ：使用 `_headers`，針對不同資源類型適當地分離瀏覽器快取與邊緣快取。

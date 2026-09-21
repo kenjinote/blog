@@ -238,11 +238,11 @@ hugo --minify
 
 该命令将整个站点的文件输出到 `public/` 目录。添加 `--minify` 选项后，不必要的换行和空格将被删除，从而进一步缩减文件大小。这直接有助于降低前文数学模型中所述的网络延迟（$T_{network}$）。
 
-### 5.3 部署自动化（CI/CD）
+### 5.3 部署自动化（[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)）
 
 每次都在本地PC生成静态文件然后通过FTP等方式上传是非常低效的。在现代SSG运营中，最佳实践是构建一个以推送到Git仓库（如GitHub等）为触发条件，自动进行构建和部署的CI/CD环境。
 
-例如，使用GitHub Actions部署到Cloudflare Pages或GitHub Pages的配置（YAML文件）基本形式如下所示：
+例如，使用[GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)部署到Cloudflare Pages或GitHub Pages的配置（YAML文件）基本形式如下所示：
 
 ```yaml
 # .github/workflows/hugo.yml 示例

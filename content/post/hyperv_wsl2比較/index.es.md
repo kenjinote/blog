@@ -184,7 +184,7 @@ Con base en las diferencias de arquitectura y rendimiento discutidas hasta ahora
 
 WSL2 está diseñado específicamente para "mejorar la productividad de los desarrolladores". Es ideal para los siguientes usos:
 
-*   **Desarrollo web y desarrollo cloud-native**: Desarrollo de contenedores utilizando Docker Desktop (backend WSL2) o Podman.
+*   **Desarrollo web y desarrollo cloud-native**: Desarrollo de contenedores utilizando [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (backend WSL2) o Podman.
 *   **Uso de herramientas exclusivas de Linux**: Cuando se utilizan a diario bash, grep, awk, sed, o compiladores GCC o Clang para Linux.
 *   **Aplicaciones GUI (WSLg)**: Cuando se desea ejecutar aplicaciones X11/Wayland de Linux de forma transparente en el escritorio de Windows.
 *   **Aprendizaje automático y desarrollo de IA**: Entrenamiento rápido de TensorFlow o PyTorch utilizando la función de paso de GPU (NVIDIA CUDA on WSL).

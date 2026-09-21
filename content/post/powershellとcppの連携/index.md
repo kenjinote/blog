@@ -170,7 +170,7 @@ sequenceDiagram
 1. **プロセス起動（`CreateProcess` / `_popen`）**：独立したプロセスとして `powershell.exe` を起動し、標準入出力をパイプでつなぐ方法。
 2. **PowerShell Hosting API（C++/CLI経由）** ：同一プロセス内でPowerShellのランタイムをホストする方法。
 
-本記事では、システムプログラミングにおいて最も堅牢で汎用的な **パイプラインを用いたCreateProcess** の手法を解説します。
+本記事では、システムプログラミングにおいて最も堅牢で汎用的な **[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を用いたCreateProcess** の手法を解説します。
 
 ### CreateProcessと無名パイプによる実行
 
@@ -309,7 +309,7 @@ WMI（Windows Management Instrumentation）やCIM（Common Information Model）�
 
 [PowerShellとC++の連携](https://kenji.blog/p/powershellとcppの連携/)は、システム管理の自動化において、スクリプト言語の手軽さとネイティブ言語のパワーを両立させる最強の組み合わせです。
 
-P/Invokeを用いたC++ DLLの呼び出しにより、計算負荷の高いタスクをオフロードし、実行時間を劇的に短縮できます。逆に、C++アプリケーションからプロセス起動やパイプラインを通じてPowerShellの豊富なシステム管理モジュールを活用することで、開発コストを大幅に削減できます。
+P/Invokeを用いたC++ DLLの呼び出しにより、計算負荷の高いタスクをオフロードし、実行時間を劇的に短縮できます。逆に、C++アプリケーションからプロセス起動や[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)を通じてPowerShellの豊富なシステム管理モジュールを活用することで、開発コストを大幅に削減できます。
 
 境界部分での[メモリ管理](https://kenji.blog/p/memory-management-garbage-collection/)や文字列変換には注意が必要ですが、本記事で紹介したアーキテクチャパターンと実装テクニックをマスターすることで、より高度で堅牢なWindowsシステム管理ツールを構築できるようになるでしょう。
 

@@ -168,7 +168,7 @@ Bien que Lisp soit à typage dynamique et ne soit pas exactement le lambda-calcu
 
 ## 7. Le lambda-calcul typé et la correspondance de Curry-Howard
 
-Le lambda-calcul pur (lambda-calcul non typé) est puissant, mais comme toute fonction peut prendre n'importe quel argument, il pouvait entraîner des paradoxes par auto-application (ex. : le paradoxe de Russell). Pour éviter cela, Church a par la suite introduit le **lambda-calcul simplement typé** (Simply Typed Lambda Calculus).
+Le lambda-calcul pur (lambda-calcul non typé) est puissant, mais comme toute fonction peut prendre n'importe quel argument, il pouvait entraîner des paradoxes par auto-application (ex. : le paradoxe de Russell). Pour éviter cela, Church a par la suite introduit le **lambda-calcul simplement typé** (Simply Typed [Lambda](https://kenji.blog/fr/p/serverless-architecture-aws-lambda-cold-start/) Calculus).
 
 ### 7.1 La correspondance de Curry-Howard
 

@@ -36,7 +36,7 @@ Windows 11 일 것
 - Visual Studio Code (명령어 `winget install vscode`)
 - Slack (명령어 `winget install SlackTechnologies.Slack`)
 - Discord (명령어 `winget install Discord.Discord`)
-- Docker Desktop (명령어 `winget install Docker.DockerDesktop`)
+- [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (명령어 `winget install Docker.DockerDesktop`)
 - Git (명령어 `winget install Git`)
 - 7zip (명령어 `winget install 7zip`)
 - VLC (명령어 `winget install VideoLAN.VLC`)

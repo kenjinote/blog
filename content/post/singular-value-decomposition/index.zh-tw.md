@@ -28,7 +28,7 @@ $$A = U \Sigma V^T \quad (\text{矩陣的奇異值分解})$$
 
 ## 2. 與特徵值分解的區別
 
-對於方陣，特徵值分解 $A = P \Lambda P^{-1}$ 廣為人知。然而，特徵值分解有以下侷限性：
+對於方陣，特徵值分解 $A = P \[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/) P^{-1}$ 廣為人知。然而，特徵值分解有以下侷限性：
 - 只能應用於方陣（$n \times n$）。
 - 即使是方陣，也不總是可對角化的。
 

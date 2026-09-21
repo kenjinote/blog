@@ -203,7 +203,7 @@ Dengan konfigurasi ini, ketika Hugo memanggil PostCSS, proses Tailwind CSS akan 
 
 ---
 
-## 5. Membangun Asset Pipeline CSS di Hugo
+## 5. Membangun Asset [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) CSS di Hugo
 
 Setelah konfigurasi selesai, mari integrasikan Tailwind CSS ke sisi tema Hugo.
 
@@ -266,7 +266,7 @@ Selanjutnya, ambil file CSS di atas dari template Hugo dan tulis pipeline untuk 
 </head>
 ```
 
-#### Penjelasan Pipeline dan Diagram Mermaid
+#### Penjelasan [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/) dan Diagram Mermaid
 
 Kami akan menggambarkan bagaimana kode template Go di atas memproses file CSS secara terstruktur melalui pipeline.
 

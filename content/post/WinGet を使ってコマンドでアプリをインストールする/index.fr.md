@@ -26,7 +26,7 @@ description: 'Nous expliquons comment installer des applications à partir d''un
 - Visual Studio Code (Commande `winget install vscode`)
 - Slack (Commande `winget install SlackTechnologies.Slack`)
 - Discord (Commande `winget install Discord.Discord`)
-- Docker Desktop (Commande `winget install Docker.DockerDesktop`)
+- [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (Commande `winget install Docker.DockerDesktop`)
 - Git (Commande `winget install Git`)
 - 7zip (Commande `winget install 7zip`)
 - VLC (Commande `winget install VideoLAN.VLC`)

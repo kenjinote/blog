@@ -44,7 +44,7 @@ $$ |\psi\rangle = \alpha_{00}|00\rangle + \alpha_{01}|01\rangle + \alpha_{10}|10
 
 Aqui também a condição de normalização $\sum_{i,j} |\alpha_{ij}|^2 = 1$ é válida. O ponto importante é que, para descrever completamente um sistema de n qubits, são necessárias $2^n$ amplitudes complexas. Por exemplo, mesmo em um sistema de apenas 50 qubits, a representação de seu estado exigirá aproximadamente $2^{50} \approx 10^{15}$ números complexos, o que excede em muito a capacidade de memória do supercomputador mais rápido do mundo atual. Essa é uma das razões pelas quais o computador quântico possui superioridade exponencial sobre os computadores clássicos.
 
-O "Emaranhamento Quântico (Entanglement)" refere-se a um estado de múltiplos qubits que não pode ser decomposto de maneira simples (fatorado) como o produto tensorial dos estados individuais dos qubits. Um dos estados emaranhados mais famosos e importantes é o seguinte "Estado de Bell (Bell State)":
+O "Emaranhamento Quântico (Entanglement)" refere-se a um estado de múltiplos qubits que não pode ser decomposto de maneira simples (fatorado) como o produto tensorial dos estados individuais dos qubits. Um dos estados emaranhados mais famosos e importantes é o seguinte "Estado de Bell (Bell [State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/))":
 
 $$ |\Phi^+\rangle = \frac{1}{\sqrt{2}}(|00\rangle + |11\rangle) $$
 

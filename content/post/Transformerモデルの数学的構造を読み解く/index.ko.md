@@ -330,7 +330,7 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 'Attention Is All You Need'라는 도발적인 제목이 보여주듯 복잡한 순환 처리나 합성곱 처리를 버리고 순수한 '어텐션(연관도)' 계산에 특화된 이 아키텍처의 아름다움은 바로 그 수학적인 단순함에 있다고 할 수 있을 것입니다.
 
-앞으로 Transformer를 뛰어넘는 새로운 아키텍처(State Space Model인 Mamba 등)가 등장할 가능성도 있지만, Transformer가 구축한 'Attention을 통한 문맥 이해'의 수학적 프레임워크는 AI의 역사에 영원히 새겨질 것입니다.
+앞으로 Transformer를 뛰어넘는 새로운 아키텍처([State](https://kenji.blog/ko/p/iac-infrastructure-as-code-terraform/) Space Model인 Mamba 등)가 등장할 가능성도 있지만, Transformer가 구축한 'Attention을 통한 문맥 이해'의 수학적 프레임워크는 AI의 역사에 영원히 새겨질 것입니다.
 
 만약 여러분이 앞으로 ChatGPT나 Claude 등의 LLM을 사용할 기회가 있다면, 그 백그라운드에서 초당 수조 번의 $Q K^T$ 행렬곱이 계산되고 Softmax 함수가 확률을 산출해 내는 모습을 상상해 보세요. 기술에 대한 해상도가 높아져 AI의 세계가 더욱 흥미롭게 느껴질 것입니다.
 

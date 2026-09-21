@@ -32,7 +32,7 @@ Una máquina de Turing consta de los siguientes elementos:
 
 1.  **Cinta infinitamente larga** : Está dividida en celdas, y en cada celda se escribe un símbolo (por ejemplo, `0`, `1`, espacio en blanco, etc.). Esto equivale a la memoria en una computadora moderna.
 2.  **Cabezal** : Es un dispositivo que puede leer y escribir celdas específicas en la cinta y moverse hacia la izquierda y hacia la derecha.
-3.  **Registro de estado** : Recuerda el **estado** (State) actual en el que se encuentra la máquina.
+3.  **Registro de estado** : Recuerda el **estado** ([State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/)) actual en el que se encuentra la máquina.
 4.  **Función de transición de estado** : Son reglas (programa) que determinan el siguiente símbolo a escribir, la dirección de movimiento del cabezal (derecha o izquierda) y el siguiente estado en función del "estado" actual y el "símbolo" leído por el cabezal.
 
 A continuación, se muestra un diagrama Mermaid que ilustra el concepto operativo de una máquina de Turing.

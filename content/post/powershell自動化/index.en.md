@@ -34,7 +34,7 @@ The execution policies include the following types:
 - **AllSigned**: Allows execution only for scripts signed by a trusted publisher.
 - **RemoteSigned**: Scripts created locally can be run as is, but scripts downloaded from the internet require a signature.
 - **Unrestricted**: All scripts can be run, but a warning will be displayed when running scripts downloaded from the internet.
-- **Bypass**: Nothing is blocked, and no warnings are displayed. Often used for temporary script execution (such as CI/CD pipelines).
+- **Bypass**: Nothing is blocked, and no warnings are displayed. Often used for temporary script execution (such as [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) pipelines).
 
 When running your own scripts locally in a corporate environment using the Task Scheduler, the most realistic and safe setting is `RemoteSigned`. Launch PowerShell with administrator privileges and run the following command:
 
@@ -108,7 +108,7 @@ By leveraging this foundation, you can build scripts that operate safely and tra
 
 ## Task Scheduler Integration (Register-ScheduledTask)
 
-Once the script is complete, the next thing needed is a mechanism to run the script on a regular basis. The most reliable method in Windows is the "Task Scheduler". While it can be configured from the GUI (`taskschd.msc`), we will explain how to register tasks using PowerShell cmdlets from the perspective of coding infrastructure procedures (Infrastructure as Code).
+Once the script is complete, the next thing needed is a mechanism to run the script on a regular basis. The most reliable method in Windows is the "Task Scheduler". While it can be configured from the GUI (`taskschd.msc`), we will explain how to register tasks using PowerShell cmdlets from the perspective of coding infrastructure procedures ([Infrastructure as Code](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)).
 
 PowerShell provides the `ScheduledTasks` module, which allows you to define triggers (when to run), actions (what to run), and principals (under which user privileges to run) in detail.
 

@@ -11,7 +11,7 @@ tags: ["C++", "Rust", "Programming", "Career"]
 
 # 前言：系統程式設計的新黎明
 
-在現代軟體工程中，C++與[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)是站在系統程式設計最前線的兩大巨頭。長年以來，C++在作業系統、嵌入式裝置、遊戲引擎、高頻交易（HFT）系統等需要發揮硬體極限效能的領域中，一直以絕對王者的姿態君臨天下。我本身也是一位資深C++工程師，從C++98時代的原始指標叢林開始，一路伴隨著C++11現代化浪潮（引進智慧指標、Lambda表達式、`auto`），以及C++14/17/20不斷龐大化的規範編寫著程式碼。
+在現代軟體工程中，C++與[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)是站在系統程式設計最前線的兩大巨頭。長年以來，C++在作業系統、嵌入式裝置、遊戲引擎、高頻交易（HFT）系統等需要發揮硬體極限效能的領域中，一直以絕對王者的姿態君臨天下。我本身也是一位資深C++工程師，從C++98時代的原始指標叢林開始，一路伴隨著C++11現代化浪潮（引進智慧指標、[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)表達式、`auto`），以及C++14/17/20不斷龐大化的規範編寫著程式碼。
 
 然而近年來，為了解決C++所面臨的結構性問題——特別是因「缺乏記憶體安全性」造成的安全漏洞（據說約7成的CVE起因於記憶體問題）以及「無止盡複雜化的規範與未定義行為（UB）」——[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)的強勢崛起提供了解決方案。Linux核心正式採用Rust，以及Microsoft、Google、AWS等科技巨頭進行的大規模Rust轉移專案，這不僅僅是一時的流行，更意味著系統程式設計正經歷典範轉移。
 

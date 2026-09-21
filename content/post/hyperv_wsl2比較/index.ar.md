@@ -184,7 +184,7 @@ Get-NetNat
 
 تم تصميم WSL2 خصيصاً لـ "تحسين إنتاجية المطورين". إنه مثالي للاستخدامات التالية:
 
-*   **تطوير الويب وتطوير السحابة الأصلية (Cloud-Native)**: تطوير الحاويات باستخدام Docker Desktop (نهاية WSL2 الخلفية - Backend) أو Podman.
+*   **تطوير الويب وتطوير السحابة الأصلية (Cloud-Native)**: تطوير الحاويات باستخدام [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (نهاية WSL2 الخلفية - Backend) أو Podman.
 *   **استخدام الأدوات المخصصة لنظام Linux**: إذا كنت تستخدم بشكل يومي bash و grep و awk و sed، أو مجمعات GCC أو Clang لنظام Linux.
 *   **تطبيقات واجهة المستخدم الرسومية (WSLg)**: عندما تريد تشغيل تطبيقات X11/Wayland الخاصة بـ Linux بسلاسة على سطح مكتب Windows.
 *   **التعلم الآلي وتطوير الذكاء الاصطناعي**: التدريب السريع للنماذج باستخدام TensorFlow أو PyTorch مع الاستفادة من ميزة التمرير المباشر لوحدة معالجة الرسومات (GPU Passthrough) (مثل NVIDIA CUDA على WSL).

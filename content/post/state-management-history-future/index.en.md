@@ -15,7 +15,7 @@ tags:
   - redux
 ---
 
-In web frontend development, the most debated and continuously evolving area is "State Management". Modern web applications have transformed from mere document displays into software with complex interactions rivaling desktop applications. Consequently, how to manage the application's state and synchronize it with the UI has become the greatest challenge every frontend engineer faces.
+In web frontend development, the most debated and continuously evolving area is "[State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Management". Modern web applications have transformed from mere document displays into software with complex interactions rivaling desktop applications. Consequently, how to manage the application's state and synchronize it with the UI has become the greatest challenge every frontend engineer faces.
 
 In this article, we will look back at the history of frontend state management, the challenges and solutions in each era, and deeply explore the paradigm shifts toward the future (especially the evolution of Signals and Reactivity).
 
@@ -140,7 +140,7 @@ Redux is based on three strict principles:
 
 1. **Single source of truth**:
    The entire application's state is stored in an object tree within a single store.
-2. **State is read-only**:
+2. **[State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) is read-only**:
    The only way to change the state is to dispatch an Action object describing what happened.
 3. **Changes are made with pure functions**:
    To specify how the state tree is transformed by Actions, you write pure functions called Reducers.
@@ -192,7 +192,7 @@ Voices arguing "Isn't Redux overkill?" grew louder, and a search for new approac
 
 The revamping of the Context API in React 16.3 in 2018, and the introduction of **React Hooks** in React 16.8 in 2019, marked a major turning point in the history of state management.
 
-### 6.1 State Sharing with Built-in Features
+### 6.1 [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Sharing with Built-in Features
 
 By using the Context API, data can be passed directly to components deep within the component tree without prop drilling.
 Furthermore, by combining it with the `useReducer` Hook, it became possible to achieve Redux-like state management using only React's built-in features.
@@ -237,7 +237,7 @@ To prevent this, you had to either split the Context into smaller, feature-speci
 
 Because React adopts a "top-down" rendering model by default, it highlighted a fundamental issue where global state changes easily triggered unnecessary re-renders across the entire tree.
 
-## 7. Separation of State: Server State and Client State
+## 7. Separation of [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/): Server State and Client State
 
 Around this time, an important paradigm shift occurred in state management. It was the realization that "not all state should be put into a single global store."
 In particular, data fetched from a server (Server State) is fundamentally different in nature from UI state that is contained entirely on the frontend (Client State).
@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 These libraries abstracted away the complex process of "caching server state locally and synchronizing it as needed."
 As a result, the data that needed to be managed in a global store like Redux dropped drastically to "purely client state only," significantly reducing the burden of state management.
 
-## 8. Atomic State Management: Recoil and Jotai
+## 8. Atomic [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Management: Recoil and Jotai
 
 After Server State was separated out, a new race began over how to efficiently manage the remaining Client State.
 Born to solve React's rendering model (top-down) and the Context API's performance issues was an approach called **Atomic State Management**.
@@ -341,7 +341,7 @@ function Counter() {
 
 Zustand has established its position as a "modern Redux," combining the robustness of Redux with the simplicity of Hooks.
 
-### 9.2 Valtio: Mutable State Management with Proxies
+### 9.2 Valtio: Mutable [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Management with Proxies
 
 In the React world, the rule that "state should be treated immutably" has been treated as an absolute. However, immutably updating JavaScript objects takes effort (especially when they are deeply nested).
 
@@ -442,7 +442,7 @@ Next-generation frameworks like **Qwik** completely rethought state management a
 
 The state rendered on the server is serialized and embedded in the HTML, and on the client, instead of "booting up" JavaScript execution from scratch, it "resumes" from the state paused by the server. As a result, the initial load JavaScript size is drastically reduced to the absolute minimum, and the overhead of Hydration becomes zero.
 
-## 13. Conclusion: Where is State Management Heading?
+## 13. Conclusion: Where is [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Management Heading?
 
 Starting from the chaos of MVC, acquiring predictability with Flux/Redux, simplification with Hooks, the separation of Server State, optimization with Atomic and Proxy approaches, and onto Fine-grained Reactivity with Signals.
 

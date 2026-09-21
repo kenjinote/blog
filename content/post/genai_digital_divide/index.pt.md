@@ -84,7 +84,7 @@ A 3ª exclusão digital está criando não apenas uma lacuna em habilidades de s
 Existem principalmente duas abordagens para usar Grandes Modelos de Linguagem: "usar APIs em nuvem" ou "fazer a inferência do modelo localmente". Ambas têm prós e contras, e isso se tornou uma nova barreira econômica e física.
 
 ### Os Limites e os Custos Contínuos da API em Nuvem
-O acesso aos modelos de fronteira mais avançados (GPT-4o, Claude 3.5 Sonnet, etc.) fornecidos pela OpenAI, Anthropic e Google geralmente é feito via API. No entanto, se você construir um fluxo de trabalho avançado com agentes autônomos (Agentic Workflow) que gera dezenas de milhares de chamadas de API por dia, o custo aumentará de forma explosiva.
+O acesso aos modelos de fronteira mais avançados (GPT-4o, Claude 3.5 Sonnet, etc.) fornecidos pela OpenAI, Anthropic e Google geralmente é feito via API. No entanto, se você construir um fluxo de trabalho avançado com agentes autônomos (Agentic [Workflow](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/)) que gera dezenas de milhares de chamadas de API por dia, o custo aumentará de forma explosiva.
 
 O custo total da API $C_{cloud}$ depende da quantidade de tokens de entrada e de tokens de saída.
 

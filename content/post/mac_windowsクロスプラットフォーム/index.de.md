@@ -69,7 +69,7 @@ Die Unterscheidung zwischen Groß- und Kleinschreibung (Case Sensitivity) im Dat
 
 Wenn Sie unter Mac oder Windows entwickeln und im Quellcode Kleinbuchstaben wie `#include "myclass.h"` (oder `import "./myclass"`) angeben, während die tatsächliche Datei `MyClass.h` lautet, ist der Build erfolgreich, da das Betriebssystem in der lokalen Umgebung Case-Insensitive ist.
 
-Wenn Sie diesen Code jedoch committen und den Build auf einem CI/CD-Server (normalerweise Linux wie Ubuntu) ausführen, führt dies zu einem Kompilierungsfehler „Datei nicht gefunden“, da das ext4-Dateisystem von Linux Case-Sensitive ist.
+Wenn Sie diesen Code jedoch committen und den Build auf einem [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-Server (normalerweise Linux wie Ubuntu) ausführen, führt dies zu einem Kompilierungsfehler „Datei nicht gefunden“, da das ext4-Dateisystem von Linux Case-Sensitive ist.
 
 ### Algorithmische Perspektive: Rechenaufwand der Dateisuche und Normalisierung
 
@@ -187,8 +187,8 @@ Um die UTF-8-Ausgabe im Windows-Terminal (Eingabeaufforderung oder PowerShell) k
 
 Der Unterschied in den Shells (Kommandozeileninterpretern) beim Ausführen von Build-Skripten und Entwicklungstools stellt ebenfalls eine große Hürde auf verschiedenen Plattformen dar.
 
-*   **macOS / Linux**: `bash` oder `zsh` sind der Mainstream. Sie führen textbasierte Pipeline-Verarbeitungen durch.
-*   **Windows**: Eingabeaufforderung (`cmd.exe`) oder `PowerShell`. PowerShell ist .NET-basiert und verfügt über eine leistungsstarke objektorientierte Pipeline, hat jedoch eine völlig andere Syntax als die POSIX-Shell.
+*   **macOS / Linux**: `bash` oder `zsh` sind der Mainstream. Sie führen textbasierte [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-Verarbeitungen durch.
+*   **Windows**: Eingabeaufforderung (`cmd.exe`) oder `PowerShell`. PowerShell ist .NET-basiert und verfügt über eine leistungsstarke objektorientierte [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/), hat jedoch eine völlig andere Syntax als die POSIX-Shell.
 
 Da sich die Art und Weise, wie auf Umgebungsvariablen verwiesen wird und wie sie festgelegt werden, unterscheidet, funktioniert ein betriebssystemabhängiger Code, z. B. im Abschnitt `scripts` der `package.json` in Node.js, in anderen Umgebungen nicht mehr.
 
@@ -300,11 +300,11 @@ Durch das Isolieren von plattformspezifischem Code an einem einzigen Ort (normal
 
 ---
 
-## 8. Plattformübergreifende Verifizierung in CI/CD (Matrix-Build)
+## 8. Plattformübergreifende Verifizierung in [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) (Matrix-Build)
 
-Egal wie sorgfältig Entwickler in ihrer lokalen Umgebung programmieren, die letzte Bastion für die plattformübergreifende Unterstützung ist die **CI/CD-Pipeline (Continuous Integration / Continuous Deployment)**. Es kommt ständig vor, dass Code zwar in einer lokalen Umgebung (z. B. Mac) funktioniert, auf einem anderen Betriebssystem (Windows) jedoch zu Kompilierungsfehlern führt.
+Egal wie sorgfältig Entwickler in ihrer lokalen Umgebung programmieren, die letzte Bastion für die plattformübergreifende Unterstützung ist die **CI/CD-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) (Continuous Integration / Continuous Deployment)**. Es kommt ständig vor, dass Code zwar in einer lokalen Umgebung (z. B. Mac) funktioniert, auf einem anderen Betriebssystem (Windows) jedoch zu Kompilierungsfehlern führt.
 
-Nutzen Sie moderne CI-Tools wie GitHub Actions oder GitLab CI, um einen Matrix-Build (Matrix Build) einzurichten, der **Builds und Tests in allen Umgebungen (Windows, macOS, Linux) parallel ausführt**, sobald ein Pull Request erstellt wird.
+Nutzen Sie moderne CI-Tools wie [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) oder GitLab CI, um einen Matrix-Build (Matrix Build) einzurichten, der **Builds und Tests in allen Umgebungen (Windows, macOS, Linux) parallel ausführt**, sobald ein Pull Request erstellt wird.
 
 ```yaml
 # Beispiel für ein plattformübergreifendes CI-Setup mit GitHub Actions
@@ -336,7 +336,7 @@ jobs:
       run: pytest -v
 ```
 
-Die Visualisierung dieses CI/CD-Ablaufs sieht folgendermaßen aus.
+Die Visualisierung dieses [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-Ablaufs sieht folgendermaßen aus.
 
 ```mermaid
 sequenceDiagram
@@ -376,10 +376,10 @@ Die plattformübergreifende Entwicklung für Mac und Windows bringt eine Vielzah
 2.  **Groß-/Kleinschreibung**: Sich nicht auf das „unterscheidungslose“ Verhalten von macOS/Windows verlassen, sondern strikte Dateibenennungsregeln festlegen und auf strenges Case-Matching achten.
 3.  **Pfadtrennzeichen**: Standardmäßige Pfad-Operations-APIs der Sprache verwenden (`std::filesystem`, `pathlib`, `path`-Modul), um die Unterschiede der Betriebssysteme auszugleichen.
 4.  **Codierung**: Immer UTF-8 angeben, um die Auswirkungen von CP932, dem Standardverhalten von Windows, vollständig zu eliminieren.
-5.  **Umgebungsvariablen/Shell**: Abstraktionstools wie `cross-env` verwenden oder die Ausführungsumgebung auf WSL/Docker usw. vereinheitlichen.
+5.  **Umgebungsvariablen/Shell**: Abstraktionstools wie `cross-env` verwenden oder die Ausführungsumgebung auf WSL/[Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) usw. vereinheitlichen.
 6.  **Build-System**: Im Fall von C/C++ ein Meta-Build-System wie CMake nutzen, um die optimale native Toolchain für jedes Betriebssystem zu generieren.
 7.  **OS-abhängiger Code**: Eine OS-Abstraktionsschicht (OSAL) entwerfen, um plattformabhängige Logik zu trennen und zu isolieren.
-8.  **CI/CD**: Einen Matrix-Build einführen, um saubere Builds und Tests auf allen Zielbetriebssystemen zu automatisieren und die Abhängigkeit von Einzelpersonen zu beseitigen.
+8.  **[CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)**: Einen Matrix-Build einführen, um saubere Builds und Tests auf allen Zielbetriebssystemen zu automatisieren und die Abhängigkeit von Einzelpersonen zu beseitigen.
 
 Heutzutage fangen leistungsstarke Frameworks wie Electron, Tauri und .NET viele dieser Unterschiede ab. Das Wissen über das native Verhalten des zugrunde liegenden Betriebssystems (Dateisysteme und Codierungen) ist jedoch nach wie vor unerlässlich, wenn schwerwiegende Leistungsprobleme und komplexe Fehler behoben werden müssen. Durch das Teilen und konsequente Umsetzen dieser Best Practices im gesamten Team von den frühen Phasen des Projekts an können unproduktive Debugging-Zeiten, die durch OS-Unterschiede entstehen, drastisch reduziert und sich auf die wesentliche Wertschöpfung der Software konzentriert werden.
 

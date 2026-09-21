@@ -110,7 +110,7 @@ flowchart TD
     D --> H["Shearing (Cisalhamento)"]
 ```
 
-## 5. O Pipeline de Transformação em CG
+## 5. O [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) de Transformação em CG
 
 No pipeline de renderização da 3DCG, para transformar dados de vértices 3D nas coordenadas finais da tela 2D, as multiplicações de matriz são realizadas progressiva e continuamente. Como o espaço aqui é tridimensional, o sistema de coordenadas homogêneas torna-se em 4 dimensões $(x, y, z, 1)$ e são utilizadas matrizes de tamanho $4 \times 4$.
 

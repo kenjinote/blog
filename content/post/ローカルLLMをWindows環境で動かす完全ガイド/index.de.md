@@ -67,7 +67,7 @@ Führen Sie nach der Installation `nvidia-smi` im WSL2-Terminal aus. Wenn die GP
 
 Das Verständnis der internen Struktur, wie ein Modell in einer lokalen Umgebung Text generiert, ist für die Fehlerbehebung und Optimierung äußerst nützlich.
 
-Das folgende Mermaid-Diagramm zeigt eine typische Inferenz-Pipeline eines lokalen LLMs.
+Das folgende Mermaid-Diagramm zeigt eine typische Inferenz-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) eines lokalen LLMs.
 
 ```mermaid
 graph TD
@@ -163,7 +163,7 @@ Beachten Sie, dass der erforderliche VRAM linear ansteigt, je länger die Kontex
 # 5. Praxis 1: Schnellstes und kürzestes Setup mit Ollama
 
 Da wir nun die Theorie verstehen, lassen Sie uns ein LLM tatsächlich in einer Windows-Umgebung ausführen.
-Im Jahr 2026 ist das benutzerfreundlichste Tool "Ollama". Es bietet ein Docker-ähnliches, intuitives CLI.
+Im Jahr 2026 ist das benutzerfreundlichste Tool "Ollama". Es bietet ein [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/)-ähnliches, intuitives CLI.
 
 ## 5.1 Installation und Ausführung
 

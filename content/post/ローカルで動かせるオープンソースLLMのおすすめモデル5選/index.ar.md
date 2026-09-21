@@ -253,7 +253,7 @@ $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 يوجد حالياً نظام بيئي قوي من البرمجيات المتاحة لتشغيل نماذج LLM مفتوحة المصدر القوية هذه في بيئة محلية. سنعرض ثلاث من أبرز الأدوات.
 
 ### 1. Ollama
-إنها الأداة الأسهل والأكثر شعبية حالياً. مثل Docker، يتيح لك تنزيل النماذج وتشغيلها بأمر واحد. يدعم أنظمة Mac و Windows و Linux.
+إنها الأداة الأسهل والأكثر شعبية حالياً. مثل [Docker](https://kenji.blog/ar/p/docker-container-namespace-[cgroups](https://kenji.blog/ar/p/docker-container-namespace-cgroups-layers/)-layers/)، يتيح لك تنزيل النماذج وتشغيلها بأمر واحد. يدعم أنظمة Mac و Windows و Linux.
 بمجرد فتح الجهاز الطرفي (Terminal) وكتابة الأمر التالي، سيبدأ تشغيل Llama 3:
 
 ```bash

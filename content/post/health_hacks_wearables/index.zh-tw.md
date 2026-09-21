@@ -356,7 +356,7 @@ def check_and_ventilate():
 ```
 透過 Cron 定期執行這樣的腳本，就能完成一個隨時維持最佳氧氣濃度的自主環境控制系統。
 
-## 13. 結論：將人體視為系統的 CI/CD
+## 13. 結論：將人體視為系統的 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/)
 
 試著將自己的身體視為一個複雜的分散式系統。穿戴式裝置（Oura Ring）是用於監控的指標匯出器（Prometheus）；Python/Pandas 腳本是日誌分析管線（Logstash/Fluentd）；而每天的身體變化與表現，就是顯示在儀表板（Grafana/Streamlit）上的系統健康狀態。
 

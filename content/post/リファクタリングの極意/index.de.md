@@ -318,7 +318,7 @@ Die manuelle Korrektur einer großen Legacy-Codebasis ist unrealistisch. Die Nut
 
 - **Clang-Tidy**: Ein leistungsstarker Linter und statisches Analysetool für C++. Durch Aktivieren der `modernize-*`-Prüfungen können Sie automatisch (Fix-it) `auto` anwenden, durch `nullptr` ersetzen, `override` hinzufügen und vieles mehr.
 - **AddressSanitizer (ASan)**: Die Einbindung als Kompilierungsoption (`-fsanitize=address`) lokalisiert Speicherlecks und Pufferüberläufe zur Laufzeit genau. Es sollte während der Testausführung immer aktiviert sein.
-- **Aufbau einer CI/CD-Pipeline**: Verwenden Sie GitHub Actions oder GitLab CI, um Builds, automatisierte Tests und statische Analysen für alle Pull Requests auszuführen und so das Einschleichen neuer technischer Schulden zu verhindern.
+- **Aufbau einer [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)**: Verwenden Sie [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) oder GitLab CI, um Builds, automatisierte Tests und statische Analysen für alle Pull Requests auszuführen und so das Einschleichen neuer technischer Schulden zu verhindern.
 
 ---
 

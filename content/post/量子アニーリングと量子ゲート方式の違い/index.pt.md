@@ -100,7 +100,7 @@ O modelo de porta quântica é uma extensão quântica das portas lógicas de co
 
 ### 3.1. Transformações Unitárias e Vetores de Estado
 
-No modelo de porta quântica, o estado de todo o sistema de qubits é expresso como um "Vetor de Estado" (State Vector) $|\psi\rangle$. O estado de 1 qubit é expresso como uma combinação linear dos estados base $|0\rangle$ e $|1\rangle$, como mostrado abaixo:
+No modelo de porta quântica, o estado de todo o sistema de qubits é expresso como um "Vetor de Estado" ([State](https://kenji.blog/pt/p/iac-infrastructure-as-code-terraform/) Vector) $|\psi\rangle$. O estado de 1 qubit é expresso como uma combinação linear dos estados base $|0\rangle$ e $|1\rangle$, como mostrado abaixo:
 $$ |\psi\rangle = \alpha |0\rangle + \beta |1\rangle $$
 Onde $\alpha$ e $\beta$ são amplitudes de probabilidade complexas, e satisfazem $|\alpha|^2 + |\beta|^2 = 1$. Esse estado é visualizado geometricamente como um ponto na "Esfera de Bloch" (Bloch Sphere).
 

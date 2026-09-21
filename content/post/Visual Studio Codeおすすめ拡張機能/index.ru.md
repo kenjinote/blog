@@ -14,7 +14,7 @@ description: 'Список рекомендуемых расширений, ко
 | Категория | Название | Разработчик | Описание |
 |----|----|-----|-----|
 | Управление вирт. машинами и контейнерами | Remote Devlopment | Microsoft  | Поддерживает удаленную разработку путем подключения к виртуальным контейнерам/WSL через SSH |
-| Управление вирт. машинами и контейнерами | Docker | Microsoft  | Поддерживает управление контейнерами Docker |
+| Управление вирт. машинами и контейнерами | [Docker](https://kenji.blog/ru/p/docker-container-namespace-[cgroups](https://kenji.blog/ru/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft  | Поддерживает управление контейнерами Docker |
 | Управление кодом | GitHub Pull Requests | GitHub | Управляет Pull Requests из GitHub в VSCode |
 | Управление кодом | GitHub Copilot | GitHub | Поддерживает автодополнение кода с помощью ИИ |
 | Управление кодом | Git Graph | mhutchie | Графически отображает ветки и коммиты Git |
@@ -24,7 +24,7 @@ description: 'Список рекомендуемых расширений, ко
 | Веб-разработка и браузер | Vue Language Features(Volar) | Vue |  Поддерживает языковые функции Vue |
 | Веб-разработка и браузер | JavaScript (ES6) code snippets | charalampos karypidis | Предоставляет сниппеты для JavaScript |
 | Веб-разработка и браузер | Tailwind CSS IntelliSense | Tailwind Labs | Предоставляет сниппеты для Tailwind CSS |
-| Облачная разработка | AWS Toolkit | Amazon Web Services | Поддерживает разработку для AWS |
+| Облачная разработка | AWS Toolkit | Amazon Web [Service](https://kenji.blog/ru/p/kubernetes-k8s-architecture-pod-service-ingress/)s | Поддерживает разработку для AWS |
 | Облачная разработка | Azure Tools | Microsoft | Поддерживает разработку для Azure |
 | Облачная разработка | Google Cloud Tools | Google Cloud | Поддерживает разработку для Google Cloud |
 | Базы данных | MySQL | Jun Han | Поддерживает разработку для MySQL |

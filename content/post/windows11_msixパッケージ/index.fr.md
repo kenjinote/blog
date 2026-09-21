@@ -70,7 +70,7 @@ C'est très fluide, mais c'est ici que si vous utilisez le certificat auto-sign�
 
 ## 4. Approche B : Création via la ligne de commande (MakeAppx.exe)
 
-Les outils en ligne de commande sont nécessaires pour l'automatisation dans des pipelines CI/CD ou lors du réempaquetage manuel de fichiers à partir d'un installateur existant. Si le SDK Windows est installé, vous pouvez accéder aux outils suivants depuis l'invite de commandes du développeur.
+Les outils en ligne de commande sont nécessaires pour l'automatisation dans des pipelines [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) ou lors du réempaquetage manuel de fichiers à partir d'un installateur existant. Si le SDK Windows est installé, vous pouvez accéder aux outils suivants depuis l'invite de commandes du développeur.
 
 ### 1. Préparation du fichier manifeste
 Créez un `AppxManifest.xml` à la racine du package avec les informations minimales requises.

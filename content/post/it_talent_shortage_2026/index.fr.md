@@ -26,7 +26,7 @@ Pendant de nombreuses années, l'industrie informatique japonaise a été souten
 
 Cependant, en cette année 2026, ce modèle a atteint ses limites. L'essence de la transformation numérique (DX) étant passée d'une 'simple informatisation' à une 'transformation du modèle commercial', le développement en cascade (waterfall) avec sa faible agilité n'a pas pu suivre les changements du marché.
 
-Le processus de développement moderne suppose d'être **Cloud Native** et **axé sur l'IA**. La conteneurisation (Docker/Kubernetes), l'architecture de microservices et l'automatisation des pipelines CI/CD ne sont plus des 'technologies spéciales' mais une 'infrastructure standard'.
+Le processus de développement moderne suppose d'être **Cloud Native** et **axé sur l'IA**. La conteneurisation ([Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/)/[Kubernetes](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/)), l'architecture de microservices et l'automatisation des pipelines [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) ne sont plus des 'technologies spéciales' mais une 'infrastructure standard'.
 
 ```mermaid
 graph TD

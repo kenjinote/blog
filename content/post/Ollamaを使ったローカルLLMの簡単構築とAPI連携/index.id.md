@@ -28,7 +28,7 @@ Pada artikel ini, kita akan membahas secara menyeluruh tentang "**Ollama**", seb
 
 Ollama adalah sebuah platform yang memudahkan eksekusi dan pengelolaan large language models (LLM) open source (seperti Llama 3, Phi-3, Mistral, Gemma, dll.) di lingkungan lokal. Sebelumnya, untuk membangun lingkungan LLM lokal, diperlukan langkah-langkah yang sangat rumit seperti menyiapkan lingkungan Python, menginstal toolkit CUDA, menyelesaikan dependensi PyTorch, mengunduh file model besar dari Hugging Face, dan mengonversi format (misalnya dari Safetensors ke GGUF).
 
-Ollama menyembunyikan kompleksitas ini dan memungkinkan Anda untuk menangani LLM dengan kemudahan seperti Docker. Hanya dengan satu perintah, Anda dapat mengunduh model (`pull`), menjalankannya (`run`), dan menyiapkannya sebagai server HTTP.
+Ollama menyembunyikan kompleksitas ini dan memungkinkan Anda untuk menangani LLM dengan kemudahan seperti [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/). Hanya dengan satu perintah, Anda dapat mengunduh model (`pull`), menjalankannya (`run`), dan menyiapkannya sebagai server HTTP.
 
 ## Teknologi Inti: Wrapper untuk llama.cpp
 
@@ -75,9 +75,9 @@ ollama --version
 ```
 Jika informasi versi ditampilkan, berarti instalasi telah berhasil.
 
-## Menjalankan dengan Docker
+## Menjalankan dengan [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)
 
-Jika Anda tidak ingin mengotori lingkungan Anda saat ini atau ingin mengintegrasikannya ke dalam infrastruktur berbasis container, Anda dapat menggunakan image Docker resminya. Jika Anda menggunakan GPU, instalasi NVIDIA Container Toolkit diperlukan.
+Jika Anda tidak ingin mengotori lingkungan Anda saat ini atau ingin mengintegrasikannya ke dalam infrastruktur berbasis container, Anda dapat menggunakan image Docker resminya. Jika Anda menggunakan GPU, instalasi NVIDIA [Container](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/) Toolkit diperlukan.
 
 ```bash
 # Untuk menjalankan hanya dengan CPU
@@ -93,7 +93,7 @@ Secara default, server Ollama akan mendengarkan di `http://localhost:11434`.
 
 # Manajemen Model dan Perintah Dasar CLI
 
-Daya tarik terbesar Ollama adalah manajemen modelnya yang sangat intuitif. Anda dapat mencoba berbagai model dengan nuansa layaknya menangani image Docker.
+Daya tarik terbesar Ollama adalah manajemen modelnya yang sangat intuitif. Anda dapat mencoba berbagai model dengan nuansa layaknya menangani image [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ## 1. Menjalankan Model (`run`)
 
@@ -148,7 +148,7 @@ ollama rm phi3:instruct
 
 # Kustomisasi Model dengan Modelfile
 
-Di Ollama, Anda dapat menggunakan mekanisme yang disebut "**Modelfile**" untuk membuat model kustom (custom model) Anda sendiri dengan menyuntikkan system prompt atau menyesuaikan hyperparameter ke model yang sudah ada. Ini sama persis dengan konsep Dockerfile di Docker.
+Di Ollama, Anda dapat menggunakan mekanisme yang disebut "**Modelfile**" untuk membuat model kustom (custom model) Anda sendiri dengan menyuntikkan system prompt atau menyesuaikan hyperparameter ke model yang sudah ada. Ini sama persis dengan konsep [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)file di Docker.
 
 Diagram di bawah menunjukkan bagaimana model kustom diturunkan dari model dasar.
 
@@ -494,7 +494,7 @@ Dengan mencangkokkan fungsi request API Ollama terhadap pemrograman shell (shell
 
 ## Kesimpulan
 
-Melalui kehadiran dari instalasi Ollama, rintangan introduksi perangkat LLM bertaraf pribadi telah ditekan habis. Struktur komando dasar semudah memainkan wujud program pada kontainer sekelas Docker digabung API basis peladen mandiri seperti integrasi API eksternal REST yang mudah untuk dijembatani oleh modul luar apa pun, memang bukan perumpamaan main-main bahwa kini hal ini sedang diangkat layaknya wujud arsitektur standar saat ini (de facto standard) dalam perancangan pemrograman berbasis AI pada lingkup privat (lokal).
+Melalui kehadiran dari instalasi Ollama, rintangan introduksi perangkat LLM bertaraf pribadi telah ditekan habis. Struktur komando dasar semudah memainkan wujud program pada kontainer sekelas [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) digabung API basis peladen mandiri seperti integrasi API eksternal REST yang mudah untuk dijembatani oleh modul luar apa pun, memang bukan perumpamaan main-main bahwa kini hal ini sedang diangkat layaknya wujud arsitektur standar saat ini (de facto standard) dalam perancangan pemrograman berbasis AI pada lingkup privat (lokal).
 
 Apabila sebagian pihak saat sekarang dirundung perkara privasi atau hambatan operasional dari penerapan fasilitas peladen awan (cloud), mohon perkenan mempraktikkan proses perangkaian wujud infrastruktur pangkalan LLM secara personal (lokal) dengan fasilitas instrumen seperti penjabaran tahap demi tahap melalui Ollama dalam lembar rujukan bacaan tulisan ini. Tentu, nantinya Anda bisa langsung mencicipi lebih berlimpah kemungkinan yang diproyeksikan oleh Kecerdasan Buatan dalam posisi kian intim dengan kebebasan yang lebih mutlak.
 

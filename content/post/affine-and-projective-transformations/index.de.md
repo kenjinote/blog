@@ -112,7 +112,7 @@ flowchart TD
 
 ## 5. Die Transformationspipeline in der CG
 
-In der 3DCG-Rendering-Pipeline werden Matrixmultiplikationen sukzessive und kontinuierlich durchgeführt, um 3D-Vertex-Daten in finale 2D-Bildschirmkoordinaten umzuwandeln. Da der Raum hier dreidimensional ist, wird das homogene Koordinatensystem 4-dimensional $(x, y, z, 1)$ und es werden Matrizen der Größe $4 \times 4$ verwendet.
+In der 3DCG-Rendering-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) werden Matrixmultiplikationen sukzessive und kontinuierlich durchgeführt, um 3D-Vertex-Daten in finale 2D-Bildschirmkoordinaten umzuwandeln. Da der Raum hier dreidimensional ist, wird das homogene Koordinatensystem 4-dimensional $(x, y, z, 1)$ und es werden Matrizen der Größe $4 \times 4$ verwendet.
 
 ```mermaid
 sequenceDiagram

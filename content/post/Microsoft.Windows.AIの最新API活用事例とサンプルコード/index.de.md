@@ -345,7 +345,7 @@ Die `Microsoft.Windows.AI`-API und die Copilot Runtime entwickeln sich rasant we
 
 - **OS-native Integration multimodaler APIs**: Nahtlose, gleichzeitige Verarbeitung nicht nur von Text, sondern auch von Audio, Bildern und sogar Live-Video-Feeds, wodurch cross-modale KI-Inferenzen standardmäßig auf OS-Ebene bereitgestellt werden.
 - **RAG (Retrieval-Augmented Generation) auf Systemebene**: Die Verknüpfung persönlicher Dokumente und des Windows-Suchindex auf dem lokalen PC mit KI-Modellen innerhalb der sicheren OS-Sandbox. Dies ermöglicht den Aufbau hochentwickelter, persönlicher KI-Assistenten, die die Privatsphäre des Benutzers vollständig wahren.
-- **Dynamische Ressourcenskalierung der NPU**: Ein Mechanismus, bei dem der Windows-Kernel-Scheduler den Ausführungskontext der NPU dynamisch umschaltet, um QoS (Quality of Service) zu gewährleisten, wenn mehrere KI-Anwendungen (z. B. Rauschunterdrückung im Hintergrund und Codegenerierung im Vordergrund) gleichzeitig ausgeführt werden.
+- **Dynamische Ressourcenskalierung der NPU**: Ein Mechanismus, bei dem der Windows-Kernel-Scheduler den Ausführungskontext der NPU dynamisch umschaltet, um QoS (Quality of [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)) zu gewährleisten, wenn mehrere KI-Anwendungen (z. B. Rauschunterdrückung im Hintergrund und Codegenerierung im Vordergrund) gleichzeitig ausgeführt werden.
 
 ## 9. Fazit: Die Zukunft von Anwendungen durch lokale KI
 

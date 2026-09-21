@@ -159,7 +159,7 @@ Saat mengedit Registry dari skrip PowerShell atau aplikasi C#, Anda harus sangat
 
 ## 8. Pengeditan Aman secara Terprogram dengan PowerShell
 
-Untuk meminimalkan risiko dari pengeditan Registry secara manual, praktik terbaik modern adalah mengubah operasi tersebut menjadi kode (Infrastructure as Code) menggunakan skrip PowerShell untuk memastikan otomatisasi, reproduktifitas, dan kemudahan pengujian. PowerShell dilengkapi dengan "Registry Provider", sehingga Anda dapat memanipulasi Registry secara transparan menggunakan cmdlet yang sama persis seperti saat memanipulasi sistem file (seperti drive C:), contohnya `Get-ChildItem`, `Get-ItemProperty`, `New-Item`, dll.
+Untuk meminimalkan risiko dari pengeditan Registry secara manual, praktik terbaik modern adalah mengubah operasi tersebut menjadi kode ([Infrastructure as Code](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/)) menggunakan skrip PowerShell untuk memastikan otomatisasi, reproduktifitas, dan kemudahan pengujian. PowerShell dilengkapi dengan "Registry Provider", sehingga Anda dapat memanipulasi Registry secara transparan menggunakan cmdlet yang sama persis seperti saat memanipulasi sistem file (seperti drive C:), contohnya `Get-ChildItem`, `Get-ItemProperty`, `New-Item`, dll.
 
 Di PowerShell, PSDrive khusus (sejenis huruf drive) seperti `HKLM:` dan `HKCU:` telah terpasang secara default.
 
@@ -398,7 +398,7 @@ Terakhir, berikut adalah rangkuman prinsip desain yang penting dan praktik terba
 
 ## Kesimpulan
 
-Registry Windows adalah sistem berbasis yang tangguh namun kompleks untuk mengelola seluruh perilaku OS serta pengaturan aplikasi secara terpadu. Pengeditan manual yang tidak beraturan menyimpan risiko kerusakan sistem yang sangat tinggi yang dapat dibuktikan secara matematis. Karenanya, dalam pengembangan dan administrasi sistem modern, Anda harus melakukan pengelolaan konfigurasi dalam bentuk yang dapat direproduksi, dapat diuji, dan aman, yang berpegang pada prinsip Infrastructure as Code. Hal tersebut bisa dicapai dengan menggunakan metode yang dapat diprogram seperti PowerShell atau C#. Dengan memahami arsitektur mendalam dan memanfaatkan pola-pola implementasi yang telah dibahas dalam artikel ini, bangunlah lingkungan Windows yang lebih tangguh dan aman.
+Registry Windows adalah sistem berbasis yang tangguh namun kompleks untuk mengelola seluruh perilaku OS serta pengaturan aplikasi secara terpadu. Pengeditan manual yang tidak beraturan menyimpan risiko kerusakan sistem yang sangat tinggi yang dapat dibuktikan secara matematis. Karenanya, dalam pengembangan dan administrasi sistem modern, Anda harus melakukan pengelolaan konfigurasi dalam bentuk yang dapat direproduksi, dapat diuji, dan aman, yang berpegang pada prinsip [Infrastructure as Code](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/). Hal tersebut bisa dicapai dengan menggunakan metode yang dapat diprogram seperti PowerShell atau C#. Dengan memahami arsitektur mendalam dan memanfaatkan pola-pola implementasi yang telah dibahas dalam artikel ini, bangunlah lingkungan Windows yang lebih tangguh dan aman.
 
 
 

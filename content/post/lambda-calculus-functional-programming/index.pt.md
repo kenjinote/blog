@@ -22,7 +22,7 @@ No entanto, por trás desse paradigma, existe uma profunda teoria matemática co
 
 Neste artigo, exploraremos em detalhes o desenvolvimento histórico e teórico a partir da teoria fundamental do cálculo lambda, passando por como ele influenciou o **Lisp**, uma das primeiras linguagens de programação, até chegar ao **Haskell**, uma linguagem puramente funcional.
 
-## 2. O Nascimento do Cálculo Lambda: Alonzo Church e a Definição de Computação
+## 2. O Nascimento do Cálculo [Lambda](https://kenji.blog/pt/p/serverless-architecture-aws-lambda-cold-start/): Alonzo Church e a Definição de Computação
 
 ### 2.1 O Desafio do Problema de Decisão (Entscheidungsproblem)
 
@@ -166,7 +166,7 @@ As maiores características do Lisp são que o próprio código é expresso como
 
 O Lisp tinha tipagem dinâmica e não era o cálculo lambda teórico em si, mas tornou-se o primeiro grande marco na materialização do espírito da programação funcional — "tratando funções como dados" e "entendendo o cálculo como a avaliação de funções" — em um computador real.
 
-## 7. Cálculo Lambda Tipado e o Isomorfismo de Curry-Howard
+## 7. Cálculo [Lambda](https://kenji.blog/pt/p/serverless-architecture-aws-lambda-cold-start/) Tipado e o Isomorfismo de Curry-Howard
 
 Embora o cálculo lambda puro (cálculo lambda não tipado) seja poderoso, ele permitia passar qualquer argumento para qualquer função, o que poderia levar a paradoxos devido à autoaplicação (ex: Paradoxo de Russell). Para evitar isso, Church introduziu mais tarde o **Cálculo Lambda Simplesmente Tipado** (Simply Typed Lambda Calculus).
 

@@ -59,12 +59,12 @@ tags: ["Alan Baker", "نظرية الأعداد", "وسام فيلدز", "نظر
 **[مبرهنة بيك](https://kenji.blog/ar/p/picks-theorem/)ر (1966)**:
 لتكن $\alpha_1, \alpha_2, \ldots, \alpha_n$ أعداداً جبرية غير صفرية، ولنفترض أن $\log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ مستقلة خطياً على حقل الأعداد الكسرية $\mathbb{Q}$. إذن، $1, \log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ مستقلة خطياً على حقل الأعداد الجبرية $\overline{\mathbb{Q}}$.
 
-بعبارة أخرى، لأي أعداد جبرية غير صفرية $\beta_0, \beta_1, \ldots, \beta_n$، أثبت أن الشكل الخطي التالي $\Lambda$ لا يساوي $0$ أبداً.
+بعبارة أخرى، لأي أعداد جبرية غير صفرية $\beta_0, \beta_1, \ldots, \beta_n$، أثبت أن الشكل الخطي التالي $\[Lambda](https://kenji.blog/ar/p/serverless-architecture-aws-lambda-cold-start/)$ لا يساوي $0$ أبداً.
 
 $$ \Lambda = \beta_0 + \beta_1 \log \alpha_1 + \cdots + \beta_n \log \alpha_n \neq 0 $$
 
 ### 3.4 استنتاج حدود سفلية "فعالة"
-الجانب الثوري حقاً في [مبرهنة بيك](https://kenji.blog/ar/p/picks-theorem/)ر لم يكن مجرد إثبات أن $\Lambda \neq 0$، بل استنتاجه لـ **حد سفلي فعال (effective lower bound)** لـ $|\Lambda|$.
+الجانب الثوري حقاً في [مبرهنة بيك](https://kenji.blog/ar/p/picks-theorem/)ر لم يكن مجرد إثبات أن $\[Lambda](https://kenji.blog/ar/p/serverless-architecture-aws-lambda-cold-start/) \neq 0$، بل استنتاجه لـ **حد سفلي فعال (effective lower bound)** لـ $|\Lambda|$.
 كانت العديد من المبرهنات السابقة في نظرية الأعداد (مثل مبرهنة روث) "غير فعالة"؛ كان بإمكانها إظهار أن "عدداً محدوداً فقط من الحلول موجود" لكنها لم تستطع الإشارة إلى "مدى كبر الحل الأكبر الممكن".
 
 قدم بيكر حداً قابلاً للحساب لمدى اقتراب $|\Lambda|$ من $0$، باستخدام ثابت موجب محدد $C$ يعتمد على "ارتفاع" (مقياس متعلق بالمعامل الأقصى لأصغر متعددة حدود لها ذلك العدد كجذر) ودرجة الأعداد الجبرية $\alpha_i$ و $\beta_i$.

@@ -256,7 +256,7 @@ Num padrão de projeto em que literais de string são usados como chaves em um `
 
 ---
 
-## 3. Automatização do Pipeline de Build usando o tasks.json
+## 3. Automatização do [Pipeline](https://kenji.blog/pt/p/cicd-pipeline-github-actions-best-practices/) de Build usando o tasks.json
 
 Para usar todo o potencial de um IDE, além das interfaces gráficas, é essencial usar o recurso de Tarefas (`.vscode/tasks.json`) para conseguir construir e testar seu software com o uso de um único atalho (por padrão, `Ctrl+Shift+B`).
 

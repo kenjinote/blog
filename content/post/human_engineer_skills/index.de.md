@@ -36,7 +36,7 @@ Die größte Einschränkung bei dieser Berechnung ist der Rechenaufwand, der mit
 
 $$ \text{Complexity} = O(N^2 \cdot d) $$
 
-In den letzten Jahren wurden Fortschritte bei Hardware-Optimierungen wie FlashAttention, Sparse Attention und sogar alternativen Architekturen wie Mamba (State Space Models) erzielt, die in linearer Zeit $O(N)$ verarbeitet werden können. Dennoch bleibt es extrem schwierig, „einen unendlichen Kontext vollständig zu verstehen und eine global optimierte Ausgabe zu generieren“.
+In den letzten Jahren wurden Fortschritte bei Hardware-Optimierungen wie FlashAttention, Sparse Attention und sogar alternativen Architekturen wie Mamba ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) Space Models) erzielt, die in linearer Zeit $O(N)$ verarbeitet werden können. Dennoch bleibt es extrem schwierig, „einen unendlichen Kontext vollständig zu verstehen und eine global optimierte Ausgabe zu generieren“.
 
 Selbst wenn das Kontextfenster physisch vergrößert werden könnte, tritt das Phänomen „Lost in the Middle“ (Verlust mittlerer Informationen) auf. LLMs lassen sich stark von den Informationen am Anfang und Ende eines Prompts beeinflussen und neigen dazu, in der Mitte platzierte wichtige Anforderungen oder Einschränkungen zu ignorieren. Dies ist der Grund, warum eine KI, der man den gesamten Quellcode eines Unternehmenssystems mit Zehntausenden von Zeilen übergibt und die angewiesen wird, „ein optimales Refactoring durchzuführen“, lokal korrekten, aber im Gesamtsystem fehlerhaften Code generiert.
 

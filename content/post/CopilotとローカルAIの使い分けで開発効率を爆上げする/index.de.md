@@ -50,7 +50,7 @@ Lokale KI bezieht sich auf Modelle, die direkt auf der lokalen Maschine des Entw
 
 ---
 
-## 2. Architekturdesign des hybriden KI-Workflows
+## 2. Architekturdesign des hybriden KI-[Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s
 
 Um die bestmögliche Entwicklungserfahrung zu erzielen, müssen diese Tools in einer einzigen IDE (z. B. VS Code, Cursor, Neovim) integriert und eine Architektur aufgebaut werden, die einen nahtlosen Wechsel ermöglicht.
 
@@ -120,7 +120,7 @@ Für Prompts wie "Lies alle Dateien in diesem Repository und organisiere die Abh
 
 ## 4. Mathematische Analyse von Kosten und Verzögerung (Mathematical Analysis)
 
-Lassen Sie uns die Vorteile des hybriden Workflows anhand von mathematischen Formeln quantitativ analysieren.
+Lassen Sie uns die Vorteile des hybriden [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s anhand von mathematischen Formeln quantitativ analysieren.
 
 ### 4.1 Kostenberechnungsmodell
 Wir formulieren die Kosten für die ausschließliche Nutzung einer Cloud-API (z. B. GPT-4). Die Gesamtkosten pro Tag in einem Entwicklungsprojekt $C_{total}$ sind die Summe der Anzahl der Eingabe- und Ausgabe-Tokens für jeden Prompt multipliziert mit dem jeweiligen Stückpreis.
@@ -179,7 +179,7 @@ Da die Netzwerkverzögerung $L_{network\_rtt}$ und die Cloud-Warteschlangenverz�
 Hier stellen wir kurz die konkreten Schritte zur Einführung von lokaler KI vor. Derzeit ist der einfachste und leistungsfähigste Ansatz die Nutzung von **Ollama** oder **LM Studio**.
 
 ### 6.1 Installation von Ollama
-Ollama ist ein leichtgewichtiges Framework zum Ausführen von LLMs in lokalen Umgebungen. Es unterstützt MacOS, Windows und Linux und ermöglicht die Verwaltung von Modellen auf intuitive Weise, ähnlich wie Docker.
+Ollama ist ein leichtgewichtiges Framework zum Ausführen von LLMs in lokalen Umgebungen. Es unterstützt MacOS, Windows und Linux und ermöglicht die Verwaltung von Modellen auf intuitive Weise, ähnlich wie [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ```bash
 # Für MacOS
@@ -228,7 +228,7 @@ Durch diese Konfiguration können Entwickler bei Bedarf über ein Dropdown-Menü
 
 ## 7. Die Zukunft der KI-gestützten Entwicklung: Der Aufstieg autonomer Agenten
 
-Der aktuelle hybride Workflow basiert auf dem Paradigma eines Co-Piloten (Copilot), bei dem "der Mensch der KI Anweisungen gibt". In einigen Jahren wird sich dies jedoch weiterentwickeln, und wir werden in die Ära **hierarchischer autonomer KI-Agenten** eintreten. Dann wird ein leichtgewichtiges lokales Modell kontinuierlich die Codebasis überwachen und im Hintergrund Tests ausführen, und nur wenn es komplexe Fehler erkennt, wird es autonom ein riesiges Cloud-Modell aufrufen, um Lösungen zu generieren.
+Der aktuelle hybride [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) basiert auf dem Paradigma eines Co-Piloten (Copilot), bei dem "der Mensch der KI Anweisungen gibt". In einigen Jahren wird sich dies jedoch weiterentwickeln, und wir werden in die Ära **hierarchischer autonomer KI-Agenten** eintreten. Dann wird ein leichtgewichtiges lokales Modell kontinuierlich die Codebasis überwachen und im Hintergrund Tests ausführen, und nur wenn es komplexe Fehler erkennt, wird es autonom ein riesiges Cloud-Modell aufrufen, um Lösungen zu generieren.
 
 In diesem Fall wird der lokale PC des Entwicklers nicht mehr nur ein Bildschirm zum Ausführen eines Editors sein, sondern eine starke Rolle als Frontlinie einer Inferenz-Engine (Edge-KI) übernehmen. Die kontinuierliche Aufrüstung des Speichers (VRAM / Unified Memory) bei Entwicklermaschinen durch Unternehmen wie NVIDIA und Apple geschieht im Hinblick auf genau diese Zukunft.
 

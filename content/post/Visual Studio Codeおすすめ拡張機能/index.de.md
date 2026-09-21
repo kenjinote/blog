@@ -13,8 +13,8 @@ description: 'Stellt empfohlene Erweiterungen vor, die Visual Studio Code (VSCod
 
 | Kategorie | Name | Anbieter | Beschreibung |
 |----|----|-----|-----|
-| Virtuelle und Container-Verwaltung | Remote Devlopment | Microsoft | Unterstützt Remote-Entwicklung durch Verbindung mit virtuellen Containern/WSL über SSH |
-| Virtuelle und Container-Verwaltung | Docker | Microsoft | Unterstützt die Verwaltung von Docker-Containern |
+| Virtuelle und [Container](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-Verwaltung | Remote Devlopment | Microsoft | Unterstützt Remote-Entwicklung durch Verbindung mit virtuellen Containern/WSL über SSH |
+| Virtuelle und Container-Verwaltung | [Docker](https://kenji.blog/de/p/docker-container-namespace-[cgroups](https://kenji.blog/de/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | Unterstützt die Verwaltung von Docker-Containern |
 | Code-Verwaltung | GitHub Pull Requests | GitHub | Verwaltet GitHub Pull Requests in VSCode |
 | Code-Verwaltung | GitHub Copilot | GitHub | Unterstützt KI-gestützte Code-Vervollständigung |
 | Code-Verwaltung | Git Graph | mhutchie | Zeigt Git-Branches und Commits grafisch an |
@@ -24,7 +24,7 @@ description: 'Stellt empfohlene Erweiterungen vor, die Visual Studio Code (VSCod
 | Browser und Webentwicklung | Vue Language Features(Volar) | Vue | Unterstützt Vue-Sprachfunktionen |
 | Browser und Webentwicklung | JavaScript (ES6) code snippets | charalampos karypidis | Bietet JavaScript-Snippets |
 | Browser und Webentwicklung | Tailwind CSS IntelliSense | Tailwind Labs | Bietet Tailwind CSS-Snippets |
-| Cloud-Entwicklung | AWS Toolkit | Amazon Web Services | Unterstützt die AWS-Entwicklung |
+| Cloud-Entwicklung | AWS Toolkit | Amazon Web [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)s | Unterstützt die AWS-Entwicklung |
 | Cloud-Entwicklung | Azure Tools | Microsoft | Unterstützt die Azure-Entwicklung |
 | Cloud-Entwicklung | Google Cloud Tools | Google Cloud | Unterstützt die Google Cloud-Entwicklung |
 | Datenbank | MySQL | Jun Han | Unterstützt die MySQL-Entwicklung |

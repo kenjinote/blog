@@ -146,7 +146,7 @@ La correction d'erreurs quantiques s'appuie sur le « Théorème du seuil ». Si
 La formule approximative du taux d'erreur logique s'exprime comme suit :
 
 $$
-p_L \approx \Lambda \left( \frac{p}{p_{th}} \right)^{\frac{d+1}{2}}
+p_L \approx \[Lambda](https://kenji.blog/fr/p/serverless-architecture-aws-lambda-cold-start/) \left( \frac{p}{p_{th}} \right)^{\frac{d+1}{2}}
 $$
 
 Ici, $\Lambda$ est une constante. Si $p < p_{th}$, plus $d$ est grand, plus $p_L$ diminue. Cependant, si $p > p_{th}$, l'ajout de qubits physiques entraîne une accumulation de bruit, détériorant le taux d'erreur logique.
@@ -168,7 +168,7 @@ IBM se concentre sur la mise à l'échelle de ses processeurs tout en cherchant 
 ### L'approche de Google : Amélioration de la qualité des qubits logiques
 La stratégie de Google met davantage l'accent sur la réduction extrême du taux d'erreur d'un seul qubit logique (par exemple, jusqu'à $10^{-6}$) plutôt que sur l'augmentation rapide du nombre de qubits physiques. Sur cette base, ils visent à établir une technologie de transfert des états quantiques entre les modules (Quantum Interconnects) et à créer un système à grande échelle faisant fonctionner plusieurs milliers à plusieurs dizaines de milliers de qubits physiques en parallèle.
 
-La mise en œuvre de protocoles permettant d'exécuter des portes non-Clifford avec une tolérance aux pannes, comme la distillation d'états magiques (Magic State Distillation), constituera également un obstacle technique majeur à l'avenir. Pour exécuter un algorithme de Shor pratique capable de casser un chiffrement RSA de 2048 bits, il faudrait des milliers de qubits logiques avec un taux d'erreur inférieur à $10^{-8}$, ce qui équivaut à plusieurs millions ou dizaines de millions de qubits physiques, ce qui indique que le chemin est encore long.
+La mise en œuvre de protocoles permettant d'exécuter des portes non-Clifford avec une tolérance aux pannes, comme la distillation d'états magiques (Magic [State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) Distillation), constituera également un obstacle technique majeur à l'avenir. Pour exécuter un algorithme de Shor pratique capable de casser un chiffrement RSA de 2048 bits, il faudrait des milliers de qubits logiques avec un taux d'erreur inférieur à $10^{-8}$, ce qui équivaut à plusieurs millions ou dizaines de millions de qubits physiques, ce qui indique que le chemin est encore long.
 
 ---
 

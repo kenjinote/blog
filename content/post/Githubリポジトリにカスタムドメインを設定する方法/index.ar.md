@@ -75,7 +75,7 @@ Addresses:  185.199.108.153
 ## إعداد نطاق مخصص لمستودع Github
 1. افتح صفحة المستودع وانقر على Settings (الإعدادات)
 2. انقر على Pages (الصفحات)
-3. إذا كنت تنشر مصدر المستودع كما هو، فحدد "Deploy from a branch" ضمن Source. إذا كنت تبني المصدر مثل HUGO، فحدد "GitHub Actions".
+3. إذا كنت تنشر مصدر المستودع كما هو، فحدد "Deploy from a branch" ضمن Source. إذا كنت تبني المصدر مثل HUGO، فحدد "[GitHub Actions](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)".
 4. حدد الفرع الذي سيتم نشره ضمن Branch وانقر على Save
 5. أدخل النطاق الذي حصلت عليه في Custom domain (نطاق مخصص) وانقر على Save.
 6. إذا لزم الأمر، حدد المربع "Enforce HTTPS" لتمكين دعم HTTPS

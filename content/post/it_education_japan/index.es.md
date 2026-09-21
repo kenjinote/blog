@@ -165,7 +165,7 @@ Muchos de los dispositivos introducidos como especificaciones estándar bajo la 
 - Memoria (RAM): 4GB (Una capacidad apenas suficiente para ejecutar un sistema operativo moderno)
 - Almacenamiento (eMMC): 32GB a 64GB (Velocidades de E/S extremadamente lentas)
 
-Debido a esta pobre restricción de hardware, es prácticamente imposible construir un "entorno de desarrollo local" que los ingenieros profesionales usan a diario. Iniciar contenedores Linux con Docker, ejecutar IDE pesados como Visual Studio Code con todas sus funciones, o iniciar servidores locales de Node.js o Python e instalar bibliotecas pesadas conducirá inmediatamente al agotamiento de la memoria y la congelación del sistema.
+Debido a esta pobre restricción de hardware, es prácticamente imposible construir un "entorno de desarrollo local" que los ingenieros profesionales usan a diario. Iniciar contenedores Linux con [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/), ejecutar IDE pesados como Visual Studio Code con todas sus funciones, o iniciar servidores locales de Node.js o Python e instalar bibliotecas pesadas conducirá inmediatamente al agotamiento de la memoria y la congelación del sistema.
 
 Como resultado, la primera línea educativa se ve obligada a depender completamente de los IDE en la nube basados en el navegador (Google Colaboratory, Replit o herramientas web ligeras propias de los editores de libros de texto, etc.).
 
@@ -204,7 +204,7 @@ En Estados Unidos, existe un riguroso plan de estudios estándar K-12 (desde jar
 
 ### La brecha desesperada entre las habilidades demandadas y las habilidades enseñadas
 
-Los requisitos que la industria moderna, en particular las megacorporaciones y gigantes tecnológicos que operan globalmente (GAFAM, etc.), demandan a los ingenieros de software recién graduados se vuelven más sofisticados a una velocidad aterradora cada año. Se requiere una experiencia amplia y profunda, como la construcción de infraestructura nativa de la nube (AWS, GCP, Kubernetes), el diseño de sistemas distribuidos con arquitecturas de microservicios, la implementación de canalizaciones de aprendizaje automático y un alto nivel de conocimiento de seguridad.
+Los requisitos que la industria moderna, en particular las megacorporaciones y gigantes tecnológicos que operan globalmente (GAFAM, etc.), demandan a los ingenieros de software recién graduados se vuelven más sofisticados a una velocidad aterradora cada año. Se requiere una experiencia amplia y profunda, como la construcción de infraestructura nativa de la nube (AWS, GCP, [Kubernetes](https://kenji.blog/es/p/kubernetes-k8s-architecture-pod-service-ingress/)), el diseño de sistemas distribuidos con arquitecturas de microservicios, la implementación de canalizaciones de aprendizaje automático y un alto nivel de conocimiento de seguridad.
 
 El siguiente gráfico muestra conceptualmente la desconexión desesperada entre los niveles de habilidades proporcionados por la educación escolar japonesa actual y los niveles de habilidades exigidos por la vanguardia de la industria.
 

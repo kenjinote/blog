@@ -330,7 +330,7 @@ def scaled_dot_product_attention(q, k, v, mask=None):
 
 正如《Attention Is All You Need》這個充滿挑釁意味的標題所示，捨棄了複雜的遞歸處理與卷積處理，專注於純粹「注意力（關聯度）」計算的這種架構之美，可以說正是存在於其數學的簡潔性之中。
 
-未來，或許會出現超越Transformer的全新架構（例如基於狀態空間模型 State Space Model 的 Mamba 等），但Transformer所建立的「透過 Attention 進行上下文理解」的數學框架，想必會永遠銘刻在人工智慧的歷史中。
+未來，或許會出現超越Transformer的全新架構（例如基於狀態空間模型 [State](https://kenji.blog/zh-tw/p/iac-infrastructure-as-code-terraform/) Space Model 的 Mamba 等），但Transformer所建立的「透過 Attention 進行上下文理解」的數學框架，想必會永遠銘刻在人工智慧的歷史中。
 
 如果你未來有機會使用 ChatGPT 或 Claude 等 LLM，請試著想像在它們的背景運作中，每秒正進行著數兆次的 $Q K^T$ 矩陣乘積計算，並由 Softmax 函數計算出機率的模樣。相信你對技術的解析度會隨之提升，也會覺得 AI 的世界更加有趣。
 

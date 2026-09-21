@@ -131,7 +131,7 @@ graph TD
 設點 $P = (x_1, y_1)$，點 $Q = (x_2, y_2)$。
 並設計算結果的點為 $R = P + Q = (x_3, y_3)$。
 
-設直線的斜率為 $\lambda$（Lambda）。
+設直線的斜率為 $\lambda$（[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)）。
 
 **【情況1：當 $P \neq Q$ 時（點的加法）】**
 斜率 $\lambda$ 是兩點間的變化率。

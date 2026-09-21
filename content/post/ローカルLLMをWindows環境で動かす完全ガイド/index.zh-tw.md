@@ -163,7 +163,7 @@ $V_{kv} = 2 \times 1 \times 8192 \times 32 \times 8 \times 128 \times 2 \div 10^
 # 5. 實踐 1：使用 Ollama 進行最快、最短的環境建置
 
 理解了理論之後，讓我們實際在 Windows 環境中運行 LLM 看看。
-在 2026 年的今天，最對使用者友善的工具非「Ollama」莫屬。它提供了類似 Docker 般直覺的 CLI（命令列介面）。
+在 2026 年的今天，最對使用者友善的工具非「Ollama」莫屬。它提供了類似 [Docker](https://kenji.blog/zh-tw/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-tw/p/docker-container-namespace-cgroups-layers/)-layers/) 般直覺的 CLI（命令列介面）。
 
 ## 5.1 安裝與執行
 

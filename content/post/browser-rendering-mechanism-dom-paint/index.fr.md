@@ -16,7 +16,7 @@ tags:
 
 # Mécanisme de rendu du navigateur : Anatomie complète de l'arbre DOM jusqu'au Paint
 
-Le navigateur web est l'un des logiciels les plus familiers et les plus complexes que nous utilisons quotidiennement. Depuis la saisie d'une URL jusqu'à l'affichage de la page à l'écran, une quantité massive de calculs et de traitements est effectuée en quelques millisecondes en interne. Cette série d'étapes de traitement est appelée le **Pipeline de rendu (Rendering Pipeline)** ou le **Chemin critique de rendu (Critical Rendering Path)**.
+Le navigateur web est l'un des logiciels les plus familiers et les plus complexes que nous utilisons quotidiennement. Depuis la saisie d'une URL jusqu'à l'affichage de la page à l'écran, une quantité massive de calculs et de traitements est effectuée en quelques millisecondes en interne. Cette série d'étapes de traitement est appelée le **[Pipeline](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) de rendu (Rendering Pipeline)** ou le **Chemin critique de rendu (Critical Rendering Path)**.
 
 Dans cet article, nous allons disséquer le mécanisme complet de la façon dont le navigateur (en particulier les moteurs de rendu modernes tels que Blink et WebKit) interprète le HTML, CSS et JavaScript, pour finalement les dessiner (Paint) en tant que pixels sur l'écran.
 

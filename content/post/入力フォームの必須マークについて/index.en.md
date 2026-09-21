@@ -18,7 +18,7 @@ I have summarized information about the "required" mark in overseas screen UI (f
 1. **Using an Asterisk (\*)**
 
     * This is generally the most widespread method, adding "\*" to required fields.
-    * However, **an explanation such as "\* indicates a required field" at the beginning of the form is essential** ([Nielsen Norman Group][1], [California State University, Northridge][2]).
+    * However, **an explanation such as "\* indicates a required field" at the beginning of the form is essential** ([Nielsen Norman Group][1], [California [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) University, Northridge][2]).
     * There are also examples that use color for emphasis (such as red text).
 
 2. **Clearly Stating "Required" or "(required)" in the Label**
@@ -72,7 +72,7 @@ I have summarized information about the "required" mark in overseas screen UI (f
 
 ## 🔗 Reference Links (UI Guideline Materials)
 
-* NN/g: *Marking Required Fields in Forms* ([California State University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
+* NN/g: *Marking Required Fields in Forms* ([California [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) University, Northridge][2], [Nielsen Norman Group][1], [Deque][3])
 * Deque: *Anatomy of Accessible Forms* ([Deque][3])
 * W3C Techniques: *H90 Indicating required form controls* ([W3C][5])
 * TPGi: *Indicating mandatory fields accessibly* ([TPGi][4])

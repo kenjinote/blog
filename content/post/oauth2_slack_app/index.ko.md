@@ -354,7 +354,7 @@ sequenceDiagram
 ## 1. 데이터베이스 저장 시 암호화 필수
 액세스 토큰(`xoxb-...`)은 Slack 워크스페이스로 가는 "마스터 키" 그 자체입니다. 데이터베이스(MySQL, PostgreSQL, MongoDB 등)에 평문(플레인 텍스트)으로 저장해서는 안 됩니다. 만에 하나 SQL 인젝션 등으로 데이터베이스가 유출될 경우, 모든 고객의 Slack이 탈취되는 대참사가 발생합니다.
 
-반드시 애플리케이션 레이어에서 **AES-256-GCM** 등의 강력한 대칭키 암호를 사용하여 암호화한 뒤 DB에 저장해야 합니다. 암호화/복호화를 위한 마스터 키는 AWS KMS(Key Management 경Service)나 GCP Cloud KMS 같은 안전한 키 관리 서비스를 이용하여 엄격하게 관리합니다.
+반드시 애플리케이션 레이어에서 **AES-256-GCM** 등의 강력한 대칭키 암호를 사용하여 암호화한 뒤 DB에 저장해야 합니다. 암호화/복호화를 위한 마스터 키는 AWS KMS(Key Management 경[Service](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/))나 GCP Cloud KMS 같은 안전한 키 관리 서비스를 이용하여 엄격하게 관리합니다.
 
 ## 2. 토큰 로테이션 (Token Rotation)
 장기적으로 유효한 토큰을 계속 사용하는 것은 위험이 따릅니다. 최신 OAuth 구현에서는 "리프레시 토큰(Refresh Token)"을 이용해 몇 시간마다 새로운 액세스 토큰을 다시 발급받는 메커니즘(Token Rotation)을 도입할 것을 권장합니다. Slack API에서도 옵션 설정으로 토큰 로테이션을 활성화할 수 있습니다.

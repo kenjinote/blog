@@ -26,7 +26,7 @@ Windows 11 であること
 - Visual Studio Code (コマンド`winget install vscode`)
 - Slack (コマンド`winget install SlackTechnologies.Slack`)
 - Discord (コマンド`winget install Discord.Discord`)
-- Docker Desktop (コマンド`winget install Docker.DockerDesktop`)
+- [Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/) Desktop (コマンド`winget install Docker.DockerDesktop`)
 - Git (コマンド`winget install Git`)
 - 7zip (コマンド`winget install 7zip`)
 - VLC (コマンド`winget install VideoLAN.VLC`)

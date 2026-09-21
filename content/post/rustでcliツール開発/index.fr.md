@@ -408,7 +408,7 @@ En appliquant ces paramètres, la taille du binaire généré sera réduite de p
 
 ---
 
-## 12. CI/CD et publication (Publishing)
+## 12. [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) et publication (Publishing)
 
 Ce sont les étapes pour distribuer l'outil que vous avez créé dans le monde entier.
 
@@ -421,8 +421,8 @@ cargo publish
 ```
 Après la publication, les utilisateurs du monde entier pourront installer votre outil avec la simple commande `cargo install gh-stats-fetcher`.
 
-### Publication automatique avec GitHub Actions
-Construisez un pipeline CI/CD qui téléverse automatiquement les binaires compilés de manière croisée sur GitHub Releases. Décrivez une configuration comme la suivante dans `.github/workflows/release.yml`. Ainsi, simplement en poussant une étiquette (tag), les binaires pour Linux, macOS et Windows seront automatiquement compilés et joints en tant qu'actifs de publication (bien que la description YAML détaillée soit omise ici par manque de place, l'utilisation d'Actions telles que `taiki-e/upload-rust-binary-action` est la meilleure pratique actuelle).
+### Publication automatique avec [GitHub Actions](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/)
+Construisez un pipeline [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) qui téléverse automatiquement les binaires compilés de manière croisée sur GitHub Releases. Décrivez une configuration comme la suivante dans `.github/workflows/release.yml`. Ainsi, simplement en poussant une étiquette (tag), les binaires pour Linux, macOS et Windows seront automatiquement compilés et joints en tant qu'actifs de publication (bien que la description YAML détaillée soit omise ici par manque de place, l'utilisation d'Actions telles que `taiki-e/upload-rust-binary-action` est la meilleure pratique actuelle).
 
 ---
 

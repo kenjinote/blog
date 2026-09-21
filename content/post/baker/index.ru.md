@@ -59,7 +59,7 @@ tags: ["Alan Baker", "Теория чисел", "Филдсовская прем
 **Теорема Бейкера (1966)**:
 Пусть $\alpha_1, \alpha_2, \ldots, \alpha_n$ — ненулевые алгебраические числа, и предположим, что $\log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ линейно независимы над полем рациональных чисел $\mathbb{Q}$. Тогда $1, \log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ линейно независимы над полем алгебраических чисел $\overline{\mathbb{Q}}$.
 
-Другими словами, для любых ненулевых алгебраических чисел $\beta_0, \beta_1, \ldots, \beta_n$ он доказал, что следующая линейная форма $\Lambda$ никогда не равна $0$.
+Другими словами, для любых ненулевых алгебраических чисел $\beta_0, \beta_1, \ldots, \beta_n$ он доказал, что следующая линейная форма $\[Lambda](https://kenji.blog/ru/p/serverless-architecture-aws-lambda-cold-start/)$ никогда не равна $0$.
 
 $$ \Lambda = \beta_0 + \beta_1 \log \alpha_1 + \cdots + \beta_n \log \alpha_n \neq 0 $$
 

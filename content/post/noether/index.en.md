@@ -128,7 +128,7 @@ She respected her students' ideas, sometimes generously offering them her own un
 
 Entering the 1930s, Noether's research progressed into non-commutative algebra and representation theory, reaching even greater heights. In 1932, she gave a plenary address at the International Congress of Mathematicians in Zurich, and her fame became globally unshakable.
 
-However, when the Nazi Party led by Adolf Hitler seized power in Germany in 1933, the situation changed drastically. The "Law for the Restoration of the Professional Civil Service" was enacted, leading to the immediate dismissal of civil servants and university faculty of Jewish descent. Noether was expelled from the University of Göttingen and deprived of her place of research.
+However, when the Nazi Party led by Adolf Hitler seized power in Germany in 1933, the situation changed drastically. The "Law for the Restoration of the Professional Civil [Service](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/)" was enacted, leading to the immediate dismissal of civil servants and university faculty of Jewish descent. Noether was expelled from the University of Göttingen and deprived of her place of research.
 
 Scientists from all over the world, including Hermann Weyl and Albert Einstein, made strenuous efforts to save her. As a result, she secured a position as a visiting professor at Bryn Mawr College, a women's college in Pennsylvania, USA, and went into exile. She also lectured at the Institute for Advanced Study in Princeton, providing tremendous inspiration to young mathematicians in her new home, America. In the United States, she finally received the rightful recognition and respect she deserved as a female researcher.
 

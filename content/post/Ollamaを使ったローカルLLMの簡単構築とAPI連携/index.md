@@ -28,7 +28,7 @@ tags: ["Ollama", "Local LLM", "Python", "Node.js"]
 
 Ollamaは、ローカル環境でオープンソースの大規模言語モデル（Llama 3, Phi-3, Mistral, Gemmaなど）を簡単に実行・管理するためのプラットフォームです。これまでローカルLLM環境を構築するためには、Python環境のセットアップ、CUDAツールキットのインストール、PyTorchの依存関係の解決、Hugging Faceからの巨大なモデルファイルのダウンロードとフォーマット変換（SafetensorsからGGUFへなど）といった、非常に煩雑な手順が必要でした。
 
-Ollamaは、これらの複雑さを隠蔽し、Dockerのような使い勝手でLLMを扱えるようにします。コマンド一つでモデルをダウンロード（`pull`）し、実行（`run`）し、HTTPサーバーとして立ち上げることができます。
+Ollamaは、これらの複雑さを隠蔽し、[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)のような使い勝手でLLMを扱えるようにします。コマンド一つでモデルをダウンロード（`pull`）し、実行（`run`）し、HTTPサーバーとして立ち上げることができます。
 
 ## コア・テクノロジー：llama.cppのラッパー
 
@@ -75,9 +75,9 @@ ollama --version
 ```
 バージョン情報が表示されれば、正常にインストールされています。
 
-## Dockerを使用した実行
+## [Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)を使用した実行
 
-既存の環境を汚したくない場合や、コンテナベースのインフラストラクチャに統合したい場合は、公式のDockerイメージを使用することも可能です。GPUを利用する場合は、NVIDIA Container Toolkitのインストールが必要です。
+既存の環境を汚したくない場合や、[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)ベースのインフラストラクチャに統合したい場合は、公式のDockerイメージを使用することも可能です。GPUを利用する場合は、NVIDIA [Container](https://kenji.blog/p/docker-container-namespace-cgroups-layers/) Toolkitのインストールが必要です。
 
 ```bash
 # CPUのみで実行する場合
@@ -93,7 +93,7 @@ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ol
 
 # モデルの管理と基本的なCLIコマンド
 
-Ollamaの最大の魅力は、モデルの管理が非常に直感的であることです。Dockerイメージを扱う感覚で、様々なモデルを試すことができます。
+Ollamaの最大の魅力は、モデルの管理が非常に直感的であることです。[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)イメージを扱う感覚で、様々なモデルを試すことができます。
 
 ## 1. モデルの実行 (`run`)
 
@@ -148,7 +148,7 @@ ollama rm phi3:instruct
 
 # Modelfileによるモデルのカスタマイズ
 
-Ollamaでは「 **Modelfile** 」という仕組みを使って、既存のモデルに対してシステムプロンプトの注入やハイパーパラメータの調整を行い、独自のカスタムモデルを作成することができます。これはDockerのDockerfileの概念と全く同じです。
+Ollamaでは「 **Modelfile** 」という仕組みを使って、既存のモデルに対してシステムプロンプトの注入やハイパーパラメータの調整を行い、独自のカスタムモデルを作成することができます。これは[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)のDockerfileの概念と全く同じです。
 
 以下の図は、ベースモデルからカスタムモデルがどのように派生するかを示しています。
 
@@ -493,7 +493,7 @@ PythonやシェルスクリプトにOllamaのAPIリクエストを組み込む�
 
 ## 結論
 
-Ollamaの登場により、ローカルLLMの導入ハードルは劇的に下がりました。Dockerコンテナを操作するようなシンプルなコマンド体系と、外部アプリケーションから容易に利用できるREST APIの組み合わせは、ローカルAI開発における現在のデファクトスタンダードと言っても過言ではありません。
+Ollamaの登場により、ローカルLLMの導入ハードルは劇的に下がりました。[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/)[コンテナ](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)を操作するようなシンプルなコマンド体系と、外部アプリケーションから容易に利用できるREST APIの組み合わせは、ローカルAI開発における現在のデファクトスタンダードと言っても過言ではありません。
 
 クラウドLLMのコストやセキュリティの制約に悩まされている開発者の方は、ぜひ本記事で紹介した手順を参考に、Ollamaを用いたローカルLLM環境を構築し、自身のアプリケーションに統合してみてください。AIの持つ可能性を、より自由に、より身近に感じることができるはずです。
 

@@ -252,7 +252,7 @@ print(f"解密後的乘法結果: {res_mul}")
     在不違反隱私法規（如 HIPAA 或 GDPR）的情況下，能將多家醫院所擁有的病患病歷或 DNA 資料，在以 FHE 加密的狀態下交由雲端 AI 進行訓練，藉此建立出高準確度的癌症診斷模型或進行新藥開發。
 2.  **金融機構的防詐欺與洗錢防制 (AML)**:
     互相競爭的銀行之間，可以在不公開客戶帳戶資訊或交易紀錄的情況下，以加密狀態比對彼此的資料，進行跨銀行的分析以偵測出龐大的非法匯款網路。
-3.  **安全的 AI 推論 API (MaaS: Model as a Service)**:
+3.  **安全的 AI 推論 API (MaaS: Model as a [Service](https://kenji.blog/zh-tw/p/kubernetes-k8s-architecture-pod-service-ingress/))**:
     使用者可以將自己的聲音、臉部影像或提示詞加密後，再傳送給 AI 服務（如 ChatGPT 等 LLM）。AI 提供商能在完全不知道使用者輸入內容的情況下生成回答，並以密文形式傳回。這將徹底消除人們對於「個人資料會被 AI 學習或偷窺」的疑慮。
 
 ---

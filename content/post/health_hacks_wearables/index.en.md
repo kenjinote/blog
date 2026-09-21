@@ -90,7 +90,7 @@ Here,
 
 To maintain engineer performance, it is crucial to minimize the amplitude $\Delta G$. Specifically, hacks like "eating vegetables (dietary fiber) first", "avoiding refined carbohydrates", and "taking a light 15-minute walk after a meal (activating GLUT4 transporters to take glucose into muscles independently of insulin)" are effective.
 
-## 6. Architecture Design: Building a Local Data Pipeline
+## 6. Architecture Design: Building a Local Data [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)
 
 We will build a local data pipeline to integrate and analyze biological data and productivity data.
 The following Mermaid diagram (flowchart) shows the flow from acquiring data from the API to visualizing it on a dashboard.
@@ -356,7 +356,7 @@ def check_and_ventilate():
 ```
 By periodically executing such a script with Cron, an autonomous environment control system that always maintains optimal oxygen concentration is completed.
 
-## 13. Conclusion: CI/CD of the System Called the Human Body
+## 13. Conclusion: [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) of the System Called the Human Body
 
 Try viewing your own body as a complex distributed system. Wearable devices (Oura Ring) are metrics exporters for monitoring (Prometheus), Python/Pandas scripts are log analysis pipelines (Logstash/Fluentd), and daily changes in physical condition and performance are the system health displayed on the dashboard (Grafana/Streamlit).
 

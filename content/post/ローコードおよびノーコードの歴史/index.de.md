@@ -77,7 +77,7 @@ In den letzten Jahren haben sich cloudbasierte Low-Code- / No-Code-Tools rasant 
   Die App-Entwicklungsbasis des CRM Salesforce. Geschäfts-Apps können über GUI erstellt werden, und die Integration in andere Salesforce-Dienste ist einfach.
 
 * **Zapier / IFTTT**
-  Automatisierungstools, mit denen Verbindungen zwischen mehreren Cloud-Diensten ohne Codierung hergestellt werden können. Beispielsweise können Workflows wie "Slack benachrichtigen, wenn etwas in Google Forms eingegeben wird" einfach implementiert werden.
+  Automatisierungstools, mit denen Verbindungen zwischen mehreren Cloud-Diensten ohne Codierung hergestellt werden können. Beispielsweise können [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s wie "Slack benachrichtigen, wenn etwas in Google Forms eingegeben wird" einfach implementiert werden.
 
 * **Notion (2010er Jahre)**
   Ein All-in-One-Arbeitsbereich, der Dokumentenmanagement, Aufgabenmanagement, Wiki usw. integriert. Es verfügt auch über eine benutzerdefinierte Datenbankfunktion, die für geschäftliche Verbesserungen ohne Code nützlich ist.

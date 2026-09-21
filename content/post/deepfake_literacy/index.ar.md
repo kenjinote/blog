@@ -144,7 +144,7 @@ flowchart LR
     H --> A["تحديد الصحة وكشف الشذوذ (Fake/Real Classification)"]
 ```
 
-فيما يلي مثال مفاهيمي لتنفيذ خط أنابيب (Pipeline) لاستخراج إشارة rPPG من فيديو باستخدام Python.
+فيما يلي مثال مفاهيمي لتنفيذ خط أنابيب ([Pipeline](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)) لاستخراج إشارة rPPG من فيديو باستخدام Python.
 
 ```python
 import cv2

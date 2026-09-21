@@ -68,7 +68,7 @@ Wenn zwei Qubits vorhanden sind, können wir eine Superposition der vier Zustän
 
 Die stärkste und mysteriöseste Eigenschaft im Quantencomputing ist die **Quantenverschränkung (Entanglement)**. Dieses Phänomen, das Einstein als "spukhafte Fernwirkung" bezeichnete, beschreibt die Eigenschaft, dass zwei oder mehr Qubits so stark miteinander verbunden sind, dass die Bestimmung des Zustands des einen Qubits sofort auch den Zustand des anderen bestimmt, ganz gleich, wie weit sie physisch voneinander entfernt sind.
 
-Einer der bekanntesten verschränkten Quantenzustände, der „Bell-Zustand (Bell State)“, der $\Phi^+$-Zustand, wird wie folgt ausgedrückt:
+Einer der bekanntesten verschränkten Quantenzustände, der „Bell-Zustand (Bell [State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/))“, der $\Phi^+$-Zustand, wird wie folgt ausgedrückt:
 
 $$
 |\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}

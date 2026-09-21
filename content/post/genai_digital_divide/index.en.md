@@ -84,7 +84,7 @@ The 3rd Digital Divide creates a new hardware gap not just in software skills, b
 To utilize Large Language Models, there are mainly two approaches: "using Cloud APIs" or "running the model locally for inference." Both have their pros and cons, which are forming a new economic and physical wall.
 
 ### Limitations and Running Costs of Cloud APIs
-State-of-the-art frontier models provided by OpenAI, Anthropic, and Google (GPT-4o, Claude 3.5 Sonnet, etc.) are generally accessed via API. However, if you build a highly autonomous agent (Agentic Workflow) that generates tens of thousands of API calls per day, the costs explode.
+[State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)-of-the-art frontier models provided by OpenAI, Anthropic, and Google (GPT-4o, Claude 3.5 Sonnet, etc.) are generally accessed via API. However, if you build a highly autonomous agent (Agentic [Workflow](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)) that generates tens of thousands of API calls per day, the costs explode.
 
 The total cost of the API, $C_{cloud}$, depends on the volume of input and output tokens.
 

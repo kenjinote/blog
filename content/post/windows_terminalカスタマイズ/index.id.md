@@ -226,7 +226,7 @@ Dengan menyesuaikan bagian `actions`, Anda akan dapat membagi, memindahkan, dan 
 ]
 ```
 
-Dengan mengatur pengikatan tombol di atas, Anda dapat menyesuaikan ukuran panel dengan `Alt + Shift + Panah`, dan menggeser fokus antar panel secara instan dengan `Alt + Panah`. Hal ini memungkinkan kerja paralel tingkat lanjut dengan mulus, seperti memulai server lokal Node.js dan memantau log di satu panel, menjalankan perintah Git di panel lain, dan memeriksa status kontainer Docker di panel lainnya.
+Dengan mengatur pengikatan tombol di atas, Anda dapat menyesuaikan ukuran panel dengan `Alt + Shift + Panah`, dan menggeser fokus antar panel secara instan dengan `Alt + Panah`. Hal ini memungkinkan kerja paralel tingkat lanjut dengan mulus, seperti memulai server lokal Node.js dan memantau log di satu panel, menjalankan perintah Git di panel lain, dan memeriksa status kontainer [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) di panel lainnya.
 
 ## 4.1 Mode Quake (Terminal Drop-down Global)
 
@@ -250,7 +250,7 @@ Jika Anda menyimpan perintah ini sebagai pintasan Windows atau file batch, tata 
 
 # 6. Teori Evolusi Prompt 1: PowerShell dan Oh My Posh
 
-"**Oh My Posh**" secara drastis mengembangkan PowerShell (khususnya versi terbaru, PowerShell 7 / PowerShell Core, yang lintas platform), yang merupakan shell standar di lingkungan Windows. Oh My Posh adalah mesin prompt kustom untuk semua shell yang secara visual dan indah menyajikan setiap status yang diperlukan untuk pengembangan, seperti direktori saat ini, cabang Git dan status perubahannya, versi Node.js atau Python, dan konteks Kubernetes.
+"**Oh My Posh**" secara drastis mengembangkan PowerShell (khususnya versi terbaru, PowerShell 7 / PowerShell Core, yang lintas platform), yang merupakan shell standar di lingkungan Windows. Oh My Posh adalah mesin prompt kustom untuk semua shell yang secara visual dan indah menyajikan setiap status yang diperlukan untuk pengembangan, seperti direktori saat ini, cabang Git dan status perubahannya, versi Node.js atau Python, dan konteks [Kubernetes](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/).
 
 Diagram di bawah ini menunjukkan urutan bagaimana Oh My Posh dimuat saat PowerShell dihidupkan, dan bagaimana prompt dirender.
 

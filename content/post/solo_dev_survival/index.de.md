@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # Einführung: Wie "die Habenichtse" gegen die Giganten kämpfen
 
-In der Geschichte der Softwareentwicklung gab es noch nie eine so vorteilhafte Zeit für Einzelentwickler (Indie-Entwickler). Die Demokratisierung der Cloud-Infrastruktur wie AWS und GCP, der Aufstieg von BaaS (Backend as a Service) wie Vercel und Supabase und vor allem die Automatisierung der Programmierung durch die Entwicklung von LLMs (Large Language Models). All dies hat einen Boden geschaffen, auf dem Einzelpersonen direkt mit den "Giganten", den großen Technologieunternehmen, konkurrieren können.
+In der Geschichte der Softwareentwicklung gab es noch nie eine so vorteilhafte Zeit für Einzelentwickler (Indie-Entwickler). Die Demokratisierung der Cloud-Infrastruktur wie AWS und GCP, der Aufstieg von BaaS (Backend as a [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)) wie Vercel und Supabase und vor allem die Automatisierung der Programmierung durch die Entwicklung von LLMs (Large Language Models). All dies hat einen Boden geschaffen, auf dem Einzelpersonen direkt mit den "Giganten", den großen Technologieunternehmen, konkurrieren können.
 
 Allerdings bedeutet die Einebnung der technischen Ressourcen nicht, dass man gewinnen kann, indem man dieselbe Strategie wie große Unternehmen verfolgt. Bei Kapital, Marketing und Markenmacht sind Einzelpersonen im absoluten Nachteil. Damit Einzelentwickler überleben und gewinnen können, ist eine einzigartige "Überlebensstrategie" unerlässlich.
 
@@ -44,13 +44,13 @@ xychart-beta
   line [95, 60, 20, 10, 5, 3, 2]
 ```
 
-Einzelentwickler sollten gezielt auf nischenspezifische und spezialisierte Probleme abzielen (z. B. Workflow-Automatisierungstools für bestimmte Branchen oder Nischen-Analysetools, die bestimmte APIs kombinieren). Je nischenhafter der Markt, desto einfacher ist es, die Zielnutzer zu erreichen, und die CAC (Customer Acquisition Cost) sinken.
+Einzelentwickler sollten gezielt auf nischenspezifische und spezialisierte Probleme abzielen (z. B. [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-Automatisierungstools für bestimmte Branchen oder Nischen-Analysetools, die bestimmte APIs kombinieren). Je nischenhafter der Markt, desto einfacher ist es, die Zielnutzer zu erreichen, und die CAC (Customer Acquisition Cost) sinken.
 
 ---
 
 # 2. Architekturdesign für überwältigende Agilität
 
-Unternehmenssysteme werden mit "Stabilität" und "Skalierbarkeit" als oberste Priorität entwickelt, weshalb Kubernetes und Microservices-Architekturen verwendet werden. Wenn jedoch ein Einzelentwickler dasselbe tut, werden seine Ressourcen allein durch die Wartung und Verwaltung der Infrastruktur (Ops) aufgebraucht.
+Unternehmenssysteme werden mit "Stabilität" und "Skalierbarkeit" als oberste Priorität entwickelt, weshalb [Kubernetes](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/) und Microservices-Architekturen verwendet werden. Wenn jedoch ein Einzelentwickler dasselbe tut, werden seine Ressourcen allein durch die Wartung und Verwaltung der Infrastruktur (Ops) aufgebraucht.
 
 Das Motto für den Tech-Stack des Einzelentwicklers lautet **"No-Ops" (Null Betrieb)**. Nutzen Sie serverlose Architekturen bis an die Grenzen aus und konzentrieren Sie sich ausschließlich auf das Schreiben der Geschäftslogik.
 
@@ -77,9 +77,9 @@ flowchart TD
     end
 ```
 
-Im Stack großer Unternehmen sind Koordinationen zwischen mehreren Teams und die Einrichtung von DevOps-Deployment-Pipelines erforderlich, um neue Funktionen hinzuzufügen. Im Gegensatz dazu wird der Stack eines Einzelnen (z. B. Next.js + Supabase + Vercel) mit einem einzigen `git push` im globalen Edge-Netzwerk bereitgestellt, und auch die DB-Bereitstellung ist nicht erforderlich.
+Im Stack großer Unternehmen sind Koordinationen zwischen mehreren Teams und die Einrichtung von DevOps-Deployment-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)s erforderlich, um neue Funktionen hinzuzufügen. Im Gegensatz dazu wird der Stack eines Einzelnen (z. B. Next.js + Supabase + Vercel) mit einem einzigen `git push` im globalen Edge-Netzwerk bereitgestellt, und auch die DB-Bereitstellung ist nicht erforderlich.
 
-## Nutzung von Serverless und Edge-Computing
+## Nutzung von [Serverless](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/) und Edge-Computing
 
 Durch die Verwendung von Edge-Runtimes wie Vercel oder Cloudflare Workers können Kaltstartverzögerungen eliminiert und Benutzern weltweit APIs mit geringer Latenz bereitgestellt werden.
 
@@ -211,7 +211,7 @@ Mit diesen wenigen Codezeilen können Sie sofort Kreditkartenzahlungen von Benut
 
 # 6. Vermeidung von Infrastruktur-Lock-ins und Portabilität
 
-In einer Strategie, die stark auf BaaS und Managed Services setzt, ist das Risiko eines "Vendor-Lock-in" ein ständiges Diskussionsthema. Wenn man sich beispielsweise zu sehr auf Firebase Firestore verlässt, wird es extrem schwierig, später auf eine RDB (relationale Datenbank) umzusteigen.
+In einer Strategie, die stark auf BaaS und Managed [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/)s setzt, ist das Risiko eines "Vendor-Lock-in" ein ständiges Diskussionsthema. Wenn man sich beispielsweise zu sehr auf Firebase Firestore verlässt, wird es extrem schwierig, später auf eine RDB (relationale Datenbank) umzusteigen.
 
 Die optimale Überlebensstrategie ist der Ansatz: **"Infrastruktur ist gebunden, aber Daten und Geschäftslogik behalten ihre Portabilität"**.
 
@@ -288,7 +288,7 @@ Die Überlebensstrategie für Einzelentwickler, um mit großen Unternehmen und R
 
 1. **Wählen Sie, wo Sie kämpfen (Long-Tail-Theorie)**
    - Zielen Sie auf Nischenmärkte mit tiefen "Pain Points", auch wenn sie klein sind, in die große Unternehmen nicht eintreten können.
-2. **Nutzen Sie den Hebel der Technologie (Serverless, BaaS, AI)**
+2. **Nutzen Sie den Hebel der Technologie ([Serverless](https://kenji.blog/de/p/serverless-architecture-aws-lambda-cold-start/), BaaS, AI)**
    - Lagern Sie den Betrieb (Ops) komplett aus und schreiben Sie nur Code (Geschäftslogik) zur Lösung der Kundenprobleme anstelle von Infrastrukturcode.
 3. **Maximieren Sie die Agilität (Null Kommunikationskosten)**
    - Nutzen Sie die größte Waffe des Einzelentwicklers, die "Geschwindigkeit", um Ideen sofort nach der Konzeption zu deployen und das Marktfeedback so schnell wie möglich zu iterieren.

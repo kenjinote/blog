@@ -23,9 +23,9 @@ description: '想从编程初学者进阶为中级工程师的必看指南！精
 ![img_10.png](img_10.webp)
 7. SQL进阶教程
 ![img_9.png](img_9.webp)
-8. Docker实践指南
+8. [Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/)实践指南
 ![img_8.png](img_8.webp)
-9. Kubernetes完全指南
+9. [Kubernetes](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/)完全指南
 ![img_7.png](img_7.webp)
 10. CODE COMPLETE 代码大全 第2版
 ![img_5.png](img_5.webp)

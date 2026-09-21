@@ -322,7 +322,7 @@ print("Model merged and saved successfully!")
 
 عند النشر في بيئة محلية، ولتحقيق أقصى قدر من سرعة الاستنتاج (الرموز في الثانية - Tokens per second)، يوصى بشدة باستخدام **vLLM** أو **TGI (Text Generation Inference)** بدلاً من خط الأنابيب القياسي (`pipeline`) الخاص بـ Hugging Face. يستخدم vLLM تقنية PagedAttention لمنع تجزئة ذاكرة GPU، مما يحسن من قدرة معالجة الطلبات المتزامنة بشكل كبير.
 
-يوضح مخطط Mermaid أدناه مسار العمل (Pipeline) من التدريب إلى نشر خادم الاستنتاج.
+يوضح مخطط Mermaid أدناه مسار العمل ([Pipeline](https://kenji.blog/ar/p/cicd-pipeline-github-actions-best-practices/)) من التدريب إلى نشر خادم الاستنتاج.
 
 ```mermaid
 graph TD

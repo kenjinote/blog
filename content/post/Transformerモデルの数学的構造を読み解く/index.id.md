@@ -330,7 +330,7 @@ Namun, ketika operasi matriks sederhana ini ditumpuk menjadi banyak lapisan dan 
 
 Seperti judul provokatif "Attention Is All You Need", keindahan dari arsitektur yang membuang pemrosesan recurrent yang rumit maupun pemrosesan konvolusional dan berfokus murni pada perhitungan "Attention" (tingkat relevansi) ini, bisa dikatakan justru terletak pada kesederhanaan matematisnya.
 
-Di masa depan, mungkin akan muncul arsitektur baru yang melampaui Transformer (seperti Mamba yang merupakan State Space Model), tetapi kerangka kerja matematis "pemahaman konteks oleh Attention" yang dibangun oleh Transformer pasti akan terukir selamanya dalam sejarah AI.
+Di masa depan, mungkin akan muncul arsitektur baru yang melampaui Transformer (seperti Mamba yang merupakan [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) Space Model), tetapi kerangka kerja matematis "pemahaman konteks oleh Attention" yang dibangun oleh Transformer pasti akan terukir selamanya dalam sejarah AI.
 
 Jika Anda memiliki kesempatan untuk menggunakan LLM seperti ChatGPT atau Claude di masa mendatang, cobalah bayangkan bahwa di latar belakangnya terdapat triliunan kali perkalian matriks $Q K^T$ yang dihitung setiap detiknya, dan fungsi Softmax yang memunculkan probabilitas-probabilitasnya. Pemahaman (resolusi) terhadap teknologi ini akan meningkat, dan dunia AI akan terasa jauh lebih menarik bagi Anda.
 

@@ -141,7 +141,7 @@ The basic rules of Zettelkasten are "write only one idea per note (Atomic proper
 - `Related Notes` (Relation: Linked with the Notes database itself)
 - `Tasks` (Relation: Linked with blogging tasks)
 
-### Blogging Workflow
+### Blogging [Workflow](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)
 1. Rapidly accumulate knowledge gained from daily development and ideas you come up with as fragmented "Notes."
 2. If there are common themes among these notes, link them (bidirectional links) using the `Related Notes` property.
 3. When you actually start the blog writing task (Tasks), invoke a linked database within that task page and line up the related Notes.
@@ -232,7 +232,7 @@ if __name__ == "__main__":
         create_notion_task(sys.argv[1], sys.argv[2])
 ```
 
-By incorporating this script into a GitHub Actions workflow (`.github/workflows/issue_to_notion.yml`), tasks will be automatically generated in Notion every time an Issue is created in the repository. Developers are freed from the hassle of going back and forth between GitHub and Notion.
+By incorporating this script into a [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) workflow (`.github/workflows/issue_to_notion.yml`), tasks will be automatically generated in Notion every time an Issue is created in the repository. Developers are freed from the hassle of going back and forth between GitHub and Notion.
 
 ### Automatically Updating Blog Publishing Status using cURL
 
@@ -256,7 +256,7 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
   }'
 ```
 
-By integrating this API call into the final step of your CI/CD pipeline, you complete full automation: "Push code -> Automatically deployed -> Notion task automatically completed".
+By integrating this API call into the final step of your [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) pipeline, you complete full automation: "Push code -> Automatically deployed -> Notion task automatically completed".
 
 ---
 

@@ -21,7 +21,7 @@ tags: ["隐私", "大数据", "差分隐私", "联邦学习"]
 
 ### 集中式数据湖与匿名化流水线
 
-数据湖是一种以原始格式大量保存原始数据的存储库。但是，将包含个人信息（PII: Personally Identifiable Information）的原始数据直接用于分析，将导致严重的合规违规行为。因此，在数据湖和分析环境之间，会部署严格的“匿名化流水线（Anonymization Pipeline）”。
+数据湖是一种以原始格式大量保存原始数据的存储库。但是，将包含个人信息（PII: Personally Identifiable Information）的原始数据直接用于分析，将导致严重的合规违规行为。因此，在数据湖和分析环境之间，会部署严格的“匿名化流水线（Anonymization [Pipeline](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)）”。
 
 下图展示了一般集中式数据湖中匿名化流水线的流程。
 

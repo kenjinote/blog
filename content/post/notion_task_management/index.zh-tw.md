@@ -232,7 +232,7 @@ if __name__ == "__main__":
         create_notion_task(sys.argv[1], sys.argv[2])
 ```
 
-只要將這個腳本整合進 GitHub Actions 的工作流程（`.github/workflows/issue_to_notion.yml`）中，每次在儲存庫建立 Issue 時，Notion 就會自動產生任務。開發者就能從在 GitHub 與 Notion 之間來回奔波的麻煩中解放出來。
+只要將這個腳本整合進 [GitHub Actions](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 的工作流程（`.github/workflows/issue_to_notion.yml`）中，每次在儲存庫建立 Issue 時，Notion 就會自動產生任務。開發者就能從在 GitHub 與 Notion 之間來回奔波的麻煩中解放出來。
 
 ### 使用 cURL 自動更新部落格發布狀態
 
@@ -256,7 +256,7 @@ curl -X PATCH 'https://api.notion.com/v1/pages/PAGE_ID' \
   }'
 ```
 
-將這個 API 呼叫整合進 CI/CD 管線的最後一個步驟，就能完成「推送程式碼 → 自動部署 → Notion 任務自動完成」的全自動化。
+將這個 API 呼叫整合進 [CI/CD](https://kenji.blog/zh-tw/p/cicd-pipeline-github-actions-best-practices/) 管線的最後一個步驟，就能完成「推送程式碼 → 自動部署 → Notion 任務自動完成」的全自動化。
 
 ---
 

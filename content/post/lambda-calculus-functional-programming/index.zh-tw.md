@@ -18,7 +18,7 @@ tags:
 
 在現代軟體開發中， **函數式編程** （[Functional Programming](https://kenji.blog/zh-tw/p/oop-vs-fp-vs-dop/)）早已不再是少數狂熱者的方法，而是成為了廣泛普及的範式。從React等前端技術，到[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)、Scala，甚至Java與C#等物件導向語言，都引入了將函數視為一等公民（第一級物件）的處理方式以及消除副作用等概念。
 
-然而，在這個範式的背後，存在著在電腦實體誕生之前的1930年代所建構的深奧數學理論。那就是由阿隆佐·邱奇（Alonzo Church）所提出的 **Lambda演算** （ $\lambda$-calculus ）。
+然而，在這個範式的背後，存在著在電腦實體誕生之前的1930年代所建構的深奧數學理論。那就是由阿隆佐·邱奇（Alonzo Church）所提出的 **[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)演算** （ $\lambda$-calculus ）。
 
 本文將從Lambda演算的基礎理論開始，詳細探討它是如何影響早期的程式語言 **Lisp** ，並最終演變至純函數式語言 **Haskell** ，經歷了怎樣的歷史與理論發展。
 
@@ -91,7 +91,7 @@ graph TD
 
 ## 4. 邱奇編碼：無中生有
 
-在Lambda演算中，完全不存在內建的資料型別（如數值、布林值、串列等）。一切都只是函數。然而，邱奇展示了透過巧妙地組合函數，可以表達所有的資料結構與控制結構。這被稱為 **邱奇編碼** （Church Encoding）。
+在[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)演算中，完全不存在內建的資料型別（如數值、布林值、串列等）。一切都只是函數。然而，邱奇展示了透過巧妙地組合函數，可以表達所有的資料結構與控制結構。這被稱為 **邱奇編碼** （Church Encoding）。
 
 ### 4.1 布林值（邱奇布林值）
 
@@ -141,7 +141,7 @@ print(to_int(ADD(TWO)(SUCC(TWO)))) # 2 + 3 = 5
 
 ## 5. 不動點組合子與圖靈完備性
 
-在Lambda演算中，函數是沒有名稱的（匿名函數）。那麼，究竟該如何實現遞迴呼叫呢？解決這個問題的是 **不動點組合子** （Fixed-point combinator），特別是著名的 **Y組合子** 。
+在[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)演算中，函數是沒有名稱的（匿名函數）。那麼，究竟該如何實現遞迴呼叫呢？解決這個問題的是 **不動點組合子** （Fixed-point combinator），特別是著名的 **Y組合子** 。
 
 $$
 Y = \lambda f. (\lambda x. f \ (x \ x)) \ (\lambda x. f \ (x \ x))
@@ -164,7 +164,7 @@ Lisp最大的特色在於，程式碼本身被表示為資料（串列）（同�
 ;; 結果: (1 4 9 16 25)
 ```
 
-Lisp是動態型別，雖然並不完全等同於理論上的Lambda演算，但它成為了在現實的電腦上實現「將函數視為資料處理」「將計算視為函數評估」等函數式編程精神的第一個偉大里程碑。
+Lisp是動態型別，雖然並不完全等同於理論上的[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)演算，但它成為了在現實的電腦上實現「將函數視為資料處理」「將計算視為函數評估」等函數式編程精神的第一個偉大里程碑。
 
 ## 7. 具型別Lambda演算與柯里-霍華德同構
 
@@ -204,7 +204,7 @@ graph LR
 
 ### 8.1 惰性求值（Lazy Evaluation）
 
-Haskell預設採用 **惰性求值** ，亦即表達式在真正需要其值之前不會被評估。這使得無限串列等概念得以自然地表達。這對應於Lambda演算中的「正常順序歸約（Normal-order reduction）」。
+Haskell預設採用 **惰性求值** ，亦即表達式在真正需要其值之前不會被評估。這使得無限串列等概念得以自然地表達。這對應於[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)演算中的「正常順序歸約（Normal-order reduction）」。
 
 ```haskell
 -- Haskell中無限串列的範例
@@ -225,8 +225,8 @@ firstTenEvens = take 10 (map (*2) naturals)
 
 ## 9. 總結：從數學到軟體工程
 
-阿隆佐·邱奇在1930年代僅憑紙筆描繪的 **Lambda演算** ，絕不是過時的理論。它從與圖靈機不同的角度重新審視了「計算是什麼」，並透過Lisp被釋放到可程式化的世界。然後，經過與邏輯學完美結合的柯里-霍華德同構，最終結出了如Haskell這樣具備堅固且強大型別系統的現代語言之果實。
+阿隆佐·邱奇在1930年代僅憑紙筆描繪的 **[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)演算** ，絕不是過時的理論。它從與圖靈機不同的角度重新審視了「計算是什麼」，並透過Lisp被釋放到可程式化的世界。然後，經過與邏輯學完美結合的柯里-霍華德同構，最終結出了如Haskell這樣具備堅固且強大型別系統的現代語言之果實。
 
-今天，當我們在React中使用 `map` 或 `filter` ，在[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)中活用代數資料型別，或是在Python中撰寫Lambda表達式時，我們都受惠於邱奇偉大的智慧遺產。
+今天，當我們在React中使用 `map` 或 `filter` ，在[Rust](https://kenji.blog/zh-tw/p/webassembly-wasm-current-future/)中活用代數資料型別，或是在Python中撰寫[Lambda](https://kenji.blog/zh-tw/p/serverless-architecture-aws-lambda-cold-start/)表達式時，我們都受惠於邱奇偉大的智慧遺產。
 
 函數式編程不僅僅是一種編碼風格，更是 **直逼計算本身本質的數學哲學** 。

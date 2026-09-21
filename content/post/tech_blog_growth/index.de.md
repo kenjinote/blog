@@ -175,7 +175,7 @@ else:
     print("Es wurden keine Daten gefunden.")
 ```
 
-Indem Sie dieses Skript regelmäßig über cron oder GitHub Actions ausführen, können Sie stets datengesteuert entscheiden, "welchen Artikel-Titel Sie umschreiben sollten". Es ist wichtig, sich nicht auf die Intuition zu verlassen, sondern sich auf kontinuierliche, datenbasierte Verbesserung zu konzentrieren (Continuous Content Improvement anstelle von CI/CD).
+Indem Sie dieses Skript regelmäßig über cron oder [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) ausführen, können Sie stets datengesteuert entscheiden, "welchen Artikel-Titel Sie umschreiben sollten". Es ist wichtig, sich nicht auf die Intuition zu verlassen, sondern sich auf kontinuierliche, datenbasierte Verbesserung zu konzentrieren (Continuous Content Improvement anstelle von [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)).
 
 ---
 
@@ -229,7 +229,7 @@ Das Großartige an Tech-Blogs ist, dass selbst wenn $Rev_{ad}$ gering ist, $Val_
 
 ---
 
-## 5. Verteilung (Distribution) durch Integration von GitHub Actions und externen Automatisierungstools
+## 5. Verteilung (Distribution) durch Integration von [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) und externen Automatisierungstools
 
 Nachdem die Inhalte erstellt wurden, besteht die Herausforderung darin, diese effizient an die Zielgruppe zu verteilen (Distribution). Es ist ineffizient und unpassend für einen Ingenieur, Links jedes Mal manuell in jedem sozialen Netzwerk zu posten.
 
@@ -253,11 +253,11 @@ flowchart TD
 
 ### 5.2 Wichtige Punkte beim Aufbau der Automatisierungspipeline
 
-1. **Build und Deploy mit GitHub Actions**
-   Wenn Sie einen Static Site Generator verwenden, nutzen Sie GitHub Actions, um die HTML-Generierung und das Deployment auf das Hosting-Ziel (Vercel, Netlify, Cloudflare Pages usw.) zu automatisieren. Dabei ist es auch effektiv, als Maßnahme für die zuvor erwähnten Core Web Vitals Bildoptimierungsprozesse (wie automatische Konvertierung zu WebP) in die Build-Pipeline zu integrieren.
+1. **Build und Deploy mit [GitHub Actions](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)**
+   Wenn Sie einen Static Site Generator verwenden, nutzen Sie GitHub Actions, um die HTML-Generierung und das Deployment auf das Hosting-Ziel (Vercel, Netlify, Cloudflare Pages usw.) zu automatisieren. Dabei ist es auch effektiv, als Maßnahme für die zuvor erwähnten Core Web Vitals Bildoptimierungsprozesse (wie automatische Konvertierung zu WebP) in die Build-[Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) zu integrieren.
 
 2. **SNS-Integration durch RSS-Trigger mithilfe von Zapier/IFTTT**
-   Der Site-Generator erstellt beim Builden den neuesten RSS-Feed (XML). Diesen lassen Sie von einem iPaaS wie Zapier oder Make (ehemals Integromat) einlesen und richten einen Workflow ein, der besagt: "Wenn ein neues Element zum RSS hinzugefügt wird, poste Titel und URL auf X (Twitter) und LinkedIn." Dadurch erhalten Ihre Follower im Moment der Veröffentlichung des Artikels automatisch eine Benachrichtigung.
+   Der Site-Generator erstellt beim Builden den neuesten RSS-Feed (XML). Diesen lassen Sie von einem iPaaS wie Zapier oder Make (ehemals Integromat) einlesen und richten einen [Workflow](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) ein, der besagt: "Wenn ein neues Element zum RSS hinzugefügt wird, poste Titel und URL auf X (Twitter) und LinkedIn." Dadurch erhalten Ihre Follower im Moment der Veröffentlichung des Artikels automatisch eine Benachrichtigung.
 
 3. **Crossposting auf Qiita/Zenn (Nutzung von Canonical-Tags)**
    Solange die Domain-Autorität Ihres Firmen- oder persönlichen Blogs schwach ist, kann es hilfreich sein, sich die Anziehungskraft von Technologieplattformen wie Qiita oder Zenn zunutze zu machen. Ein bloßes Kopieren und Einfügen birgt jedoch das Risiko, als "Duplicate Content" SEO-Strafen zu erleiden.
@@ -273,7 +273,7 @@ Um die monatlichen Zugriffe auf einem Tech-Blog drastisch zu steigern, ist zusä
 2. Artikeldesign, das die Suchintention der Nutzer versteht (Fehlerbehebung vs. systematisches Lernen)
 3. Datenanalyse mithilfe der Google Search Console API und Python
 4. ROI-bewusstes Content-Lifecycle-Management und Rewriting
-5. Vollständige Automatisierung der Distribution durch CI/CD und Zapier-Integration
+5. Vollständige Automatisierung der Distribution durch [CI/CD](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) und Zapier-Integration
 
 Wenn Sie dies als System aufbauen können, wird Ihr Tech-Blog zu Ihrem stärksten Kapital (Asset), das Ihre eigene Karriere massiv vorantreibt. Ingenieure, die unter stagnierenden Zugriffszahlen leiden, sollten noch heute mit dem "Growth Hacking für Blogs" beginnen. Die Programmierfähigkeiten und architektonischen Designfähigkeiten, die Sie in Ihrer Entwicklungsarbeit erworben haben, werden auch beim Betreiben eines Blogs Ihre stärkste Waffe sein.
 

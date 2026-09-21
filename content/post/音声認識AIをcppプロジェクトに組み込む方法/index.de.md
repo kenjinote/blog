@@ -66,7 +66,7 @@ Das Whisper-Modell verwendet typischerweise eine Fenstergröße $N = 400$ (25 ms
 
 ---
 
-## 3. Architektur und Pipeline-Design
+## 3. Architektur und [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/)-Design
 
 Lassen Sie uns eine Audioverarbeitungs-Pipeline in einer C++-Anwendung entwerfen. Der Ablauf beginnt mit einer Datei- oder Mikrofoneingabe, durchläuft die Vorverarbeitung, gefolgt von der Inferenz durch `whisper.cpp`, und endet mit der Textausgabe.
 

@@ -28,7 +28,7 @@ En este artículo, explicaremos exhaustivamente "**Ollama**", una herramienta qu
 
 Ollama es una plataforma que facilita la ejecución y gestión de grandes modelos de lenguaje de código abierto (Llama 3, Phi-3, Mistral, Gemma, etc.) en entornos locales. Anteriormente, para configurar un entorno de LLM local, se requerían pasos muy tediosos: configurar el entorno de Python, instalar el kit de herramientas CUDA, resolver las dependencias de PyTorch, descargar archivos de modelos enormes de Hugging Face y convertir formatos (por ejemplo, de Safetensors a GGUF).
 
-Ollama oculta estas complejidades, permitiéndole manejar LLMs con una usabilidad similar a Docker. Con un solo comando, puede descargar (`pull`), ejecutar (`run`) e iniciar un modelo como un servidor HTTP.
+Ollama oculta estas complejidades, permitiéndole manejar LLMs con una usabilidad similar a [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/). Con un solo comando, puede descargar (`pull`), ejecutar (`run`) e iniciar un modelo como un servidor HTTP.
 
 ## Tecnología central: Envoltorio (wrapper) de llama.cpp
 
@@ -75,9 +75,9 @@ ollama --version
 ```
 Si se muestra la información de la versión, se ha instalado correctamente.
 
-## Ejecución usando Docker
+## Ejecución usando [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/)
 
-Si no desea alterar su entorno existente o desea integrarlo en una infraestructura basada en contenedores, también es posible utilizar la imagen oficial de Docker. Si utiliza una GPU, es necesario instalar NVIDIA Container Toolkit.
+Si no desea alterar su entorno existente o desea integrarlo en una infraestructura basada en contenedores, también es posible utilizar la imagen oficial de Docker. Si utiliza una GPU, es necesario instalar NVIDIA [Container](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/) Toolkit.
 
 ```bash
 # Para ejecutar solo con CPU
@@ -93,7 +93,7 @@ Por defecto, el servidor Ollama escucha en `http://localhost:11434`.
 
 # Gestión de modelos y comandos CLI básicos
 
-El mayor atractivo de Ollama es que la gestión de modelos es muy intuitiva. Puede probar varios modelos con la misma sensación de manejar imágenes de Docker.
+El mayor atractivo de Ollama es que la gestión de modelos es muy intuitiva. Puede probar varios modelos con la misma sensación de manejar imágenes de [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ## 1. Ejecutar un modelo (`run`)
 
@@ -148,7 +148,7 @@ ollama rm phi3:instruct
 
 # Personalización de modelos con Modelfile
 
-En Ollama, puede usar un mecanismo llamado "**Modelfile**" para inyectar un prompt del sistema o ajustar hiperparámetros en un modelo existente para crear su propio modelo personalizado. Este concepto es exactamente el mismo que el Dockerfile en Docker.
+En Ollama, puede usar un mecanismo llamado "**Modelfile**" para inyectar un prompt del sistema o ajustar hiperparámetros en un modelo existente para crear su propio modelo personalizado. Este concepto es exactamente el mismo que el [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/)file en Docker.
 
 El siguiente diagrama muestra cómo un modelo personalizado se deriva de un modelo base.
 
@@ -493,7 +493,7 @@ Al incorporar solicitudes API de Ollama en scripts de Python o Shell, puede inye
 
 ## Conclusión
 
-Con la llegada de Ollama, el obstáculo para introducir LLMs locales ha disminuido drásticamente. No es una exageración decir que la combinación de su sistema de comandos simple (similar al manejo de contenedores Docker) y una API REST que puede usarse fácilmente desde aplicaciones externas, es el estándar de facto actual en el desarrollo de IA local.
+Con la llegada de Ollama, el obstáculo para introducir LLMs locales ha disminuido drásticamente. No es una exageración decir que la combinación de su sistema de comandos simple (similar al manejo de contenedores [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/)) y una API REST que puede usarse fácilmente desde aplicaciones externas, es el estándar de facto actual en el desarrollo de IA local.
 
 A los desarrolladores que luchan con las restricciones de costos y seguridad de los LLMs en la nube, los invito a configurar un entorno de LLM local usando Ollama y a integrarlo en sus propias aplicaciones, utilizando los pasos presentados en este artículo. Sin duda, podrá sentir el potencial de la IA de una manera más libre y accesible.
 

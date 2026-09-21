@@ -120,7 +120,7 @@ Event Loop 的优势在于无需对共享状态进行锁管理。然而，如果
 
 ### 3.1 Actor模型的基本概念
 
-在 Actor模型中，处理的基本单位被称为“Actor（参与者）”。每个 Actor 拥有独立的状态（State）和行为（Behavior），不与其他 Actor 直接共享状态。Actor 之间的通信全部通过 **异步的消息传递** 来进行。
+在 Actor模型中，处理的基本单位被称为“Actor（参与者）”。每个 Actor 拥有独立的状态（[State](https://kenji.blog/zh-cn/p/iac-infrastructure-as-code-terraform/)）和行为（Behavior），不与其他 Actor 直接共享状态。Actor 之间的通信全部通过 **异步的消息传递** 来进行。
 
 - **状态封装**: 外部无法直接访问 Actor 内部的状态。
 - **消息队列（Mailbox）**: 接收到的消息会在 Mailbox 中排队，并被依次处理。

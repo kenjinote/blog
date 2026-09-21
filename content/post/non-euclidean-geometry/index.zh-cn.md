@@ -73,7 +73,7 @@ graph LR
 爱因斯坦在狭义相对论中提出了将时间与空间统一的“时空”概念。随后在 **广义相对论** 中，他得出了“引力是由于具有质量的物体导致时空发生扭曲（弯曲）”的划时代思想。
 
 $$
-R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
+R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \[Lambda](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/) g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
 $$
 
 在上述爱因斯坦场方程中，左边表示时空的几何结构（曲率），右边表示物质与能量的分布。也就是说， **物质决定了时空的弯曲方式，而弯曲的时空决定了物质的运动** 。

@@ -120,7 +120,7 @@ Jika Event Loop adalah pendekatan yang menantang batas thread tunggal, **model A
 
 ### 3.1 Konsep Dasar Model Actor
 
-Dalam model Actor, unit dasar pemrosesan disebut "Actor" (aktor). Setiap Actor memiliki keadaan (State) dan perilaku (Behavior) yang independen, dan tidak membagikan keadaan secara langsung dengan Actor lain. Komunikasi antar Actor sepenuhnya dilakukan melalui **pengiriman pesan asinkron**.
+Dalam model Actor, unit dasar pemrosesan disebut "Actor" (aktor). Setiap Actor memiliki keadaan ([State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/)) dan perilaku (Behavior) yang independen, dan tidak membagikan keadaan secara langsung dengan Actor lain. Komunikasi antar Actor sepenuhnya dilakukan melalui **pengiriman pesan asinkron**.
 
 - **Enkapsulasi Keadaan**: Keadaan internal Actor tidak dapat diakses secara langsung dari luar.
 - **Antrean Pesan (Mailbox)**: Pesan yang diterima akan diantrekan di Mailbox dan diproses secara berurutan.

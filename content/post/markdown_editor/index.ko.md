@@ -9,7 +9,7 @@ categories: ["blogging", "productivity", "editors"]
 tags: ["Markdown", "VS Code", "Neovim", "textlint"]
 ---
 
-기술 블로그를 지속적으로 집필하기 위해서는 집필 환경의 최적화가 필수불가결합니다. 본 기사에서는 Markdown을 사용한 기술 블로그의 집필 속도를 극적으로 향상시키기 위한 고급 에디터 설정에 대해 깊이 파헤쳐 봅니다. Visual Studio Code (VS Code)나 Neovim의 극한의 커스터마이징, 스니펫 활용, 문법 체크 툴인 textlint의 도입부터 CI/CD 파이프라인에서의 자동화, 그리고 GitHub Copilot 등 LLM을 활용한 최첨단 집필술까지 망라하여 해설합니다.
+기술 블로그를 지속적으로 집필하기 위해서는 집필 환경의 최적화가 필수불가결합니다. 본 기사에서는 Markdown을 사용한 기술 블로그의 집필 속도를 극적으로 향상시키기 위한 고급 에디터 설정에 대해 깊이 파헤쳐 봅니다. Visual Studio Code (VS Code)나 Neovim의 극한의 커스터마이징, 스니펫 활용, 문법 체크 툴인 textlint의 도입부터 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인에서의 자동화, 그리고 GitHub Copilot 등 LLM을 활용한 최첨단 집필술까지 망라하여 해설합니다.
 
 ## 1. 집필 속도 향상의 수리 모델
 
@@ -227,9 +227,9 @@ rules:
 
 이들을 VS Code의 검색 및 치환 기능(정규 표현식 모드)이나 Neovim의 `%s` 명령 (`:%s/<b>\(.*?\)<\/b>/**\1**/g`)으로 실행함으로써 순식간에 포맷을 통일할 수 있습니다.
 
-### CI/CD 파이프라인을 통한 자동 체크
+### [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/) 파이프라인을 통한 자동 체크
 
-나아가 GitHub Actions를 사용하여 블로그 기사를 push했을 때 자동으로 textlint가 실행되는 CI 파이프라인을 구축합니다. 이를 통해 규칙 위반이 있는 기사의 배포를 미연에 방지할 수 있습니다.
+나아가 [GitHub Actions](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)를 사용하여 블로그 기사를 push했을 때 자동으로 textlint가 실행되는 CI 파이프라인을 구축합니다. 이를 통해 규칙 위반이 있는 기사의 배포를 미연에 방지할 수 있습니다.
 
 ```mermaid
 flowchart TD
@@ -252,7 +252,7 @@ flowchart TD
 
 VS Code의 GitHub Copilot Chat이나 Neovim의 `ChatGPT.nvim`, `Copilot.vim` 등을 사용하여 에디터를 벗어나지 않고 다음과 같은 프롬프트를 던집니다.
 
-> "다음 기술 요소에 대해 초보자를 위한 마크다운 계층 구조로 개요를 작성해 줘: Docker, Kubernetes, CI/CD"
+> "다음 기술 요소에 대해 초보자를 위한 마크다운 계층 구조로 개요를 작성해 줘: [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)"
 
 그러면 즉시 제목이나 글머리 기호 형태의 마크다운이 생성됩니다. 우리는 그 뼈대에 살을 붙여 나가기만 하면 됩니다.
 
@@ -265,7 +265,7 @@ Markdown으로 기술 블로그를 작성할 때의 집필 속도를 배가시�
 1. **수리 모델의 인식**: $T_{saved}$를 극대화하기 위해 반복 작업을 근절한다.
 2. **VS Code의 활용**: 확장 기능과 `markdown.json` 스니펫으로 입력을 생략.
 3. **Neovim의 극한 커스터마이징**: `LuaSnip`을 통한 동적 스니펫과 완벽한 키보드 조작.
-4. **textlint와 정적 분석**: 교정 시간을 제로에 가깝게 만들기 위한 CI/CD와 로컬 Linter의 통합.
+4. **textlint와 정적 분석**: 교정 시간을 제로에 가깝게 만들기 위한 [CI/CD](https://kenji.blog/ko/p/cicd-pipeline-github-actions-best-practices/)와 로컬 Linter의 통합.
 5. **LLM의 통합**: 에디터 내에서 직접 AI에게 마크다운 구성이나 도표 코드를 출력하게 한다.
 
 이러한 설정들을 자신의 환경에 도입함으로써 집필의 "귀찮음"이 사라지고, 기술적 아웃풋의 양과 질이 극적으로 향상될 것입니다. 우선 작은 스니펫 등록 하나부터라도 시작해 보는 것은 어떨까요?

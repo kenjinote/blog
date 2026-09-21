@@ -60,7 +60,7 @@ ProcExp에서는 다음 설정을 활성화하여 악성 프로세스를 부각�
 ### 2.3 하드웨어 인터럽트 및 100% CPU 스파이크 분석
 시스템 전체가 수 초간 프리징(Freeze)되거나 오디오가 끊기는(Stutter) 현상이 발생했을 때, 작업 관리자를 보면 'System Interrupts'가 CPU를 잠식하고 있는 경우가 있습니다.
 
-Windows의 스케줄링에서 하드웨어 인터럽트(ISR: Interrupt Service Routine)와 DPC(Deferred Procedure Call)는 일반 유저 스레드보다 높은 우선순위(IRQL: Interrupt Request Level)로 실행됩니다. 즉, 불량 드라이버가 DPC를 길게 지연시키면 CPU는 해당 코어에서 다른 작업을 전혀 수행할 수 없게 됩니다.
+Windows의 스케줄링에서 하드웨어 인터럽트(ISR: Interrupt [Service](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/) Routine)와 DPC(Deferred Procedure Call)는 일반 유저 스레드보다 높은 우선순위(IRQL: Interrupt Request Level)로 실행됩니다. 즉, 불량 드라이버가 DPC를 길게 지연시키면 CPU는 해당 코어에서 다른 작업을 전혀 수행할 수 없게 됩니다.
 
 ProcExp의 프로세스 목록 최상단에 있는 `Interrupts`나 `DPCs`의 CPU 사용률이 높은 경우, Windows Performance Analyzer (WPA)와 병용하여 원인이 되는 드라이버(`.sys`)를 특정합니다. CPU 시간의 계산은 다음과 같이 수식화할 수 있습니다.
 
@@ -141,7 +141,7 @@ flowchart LR
 ### 4.1 확인해야 할 중요한 탭과 고급 기능
 *   **Logon**: 표준 Run/RunOnce 키, 시작 프로그램 폴더.
 *   **Scheduled Tasks**: Windows 작업 스케줄러. 악성코드는 종종 "Adobe Update"나 "Google Update" 등으로 위장한 가짜 작업을 생성합니다.
-*   **Services / Drivers**: 커널 모드에서 실행되는 드라이버. 앞서 언급한 100% CPU 스파이크의 원인이 되는 의심스러운 `.sys` 파일을 여기서 비활성화할 수 있습니다.
+*   **[Service](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/)s / Drivers**: 커널 모드에서 실행되는 드라이버. 앞서 언급한 100% CPU 스파이크의 원인이 되는 의심스러운 `.sys` 파일을 여기서 비활성화할 수 있습니다.
 *   **WMI**: WMI (Windows Management Instrumentation)의 이벤트 필터나 컨슈머를 이용한 파일리스 악성코드(Fileless Malware)의 지속성 확보 위치. 매우 간과되기 쉽습니다.
 *   **AppInit_DLLs / KnownDLLs**: 애플리케이션이 실행될 때마다 강제로 인젝트되는 DLL 목록. DLL 인젝션에 의한 후킹의 온상이 됩니다.
 

@@ -120,7 +120,7 @@ Wenn die Event Loop ein Ansatz ist, der die Grenzen von Single-Threading herausf
 
 ### 3.1 Grundkonzepte des Actor-Modells
 
-Im Actor-Modell wird die grundlegende Verarbeitungseinheit als "Actor" bezeichnet. Jeder Actor hat seinen eigenen unabhängigen Zustand (State) und sein eigenes Verhalten (Behavior) und teilt seinen Zustand nicht direkt mit anderen Actors. Die Kommunikation zwischen Actors erfolgt vollständig durch **asynchrones Message Passing**.
+Im Actor-Modell wird die grundlegende Verarbeitungseinheit als "Actor" bezeichnet. Jeder Actor hat seinen eigenen unabhängigen Zustand ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) und sein eigenes Verhalten (Behavior) und teilt seinen Zustand nicht direkt mit anderen Actors. Die Kommunikation zwischen Actors erfolgt vollständig durch **asynchrones Message Passing**.
 
 - **Kapselung des Zustands**: Auf den internen Zustand eines Actors kann von außen nicht direkt zugegriffen werden.
 - **Nachrichtenwarteschlange (Mailbox)**: Eingehende Nachrichten werden in einer Mailbox in die Warteschlange gestellt und sequenziell verarbeitet.

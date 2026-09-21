@@ -16,7 +16,7 @@ tags:
 
 # Mekanisme Perenderan Peramban: Anatomi Lengkap dari Pohon DOM hingga Paint
 
-Peramban web adalah salah satu perangkat lunak paling umum dan paling kompleks yang kita gunakan setiap hari. Dari saat Anda memasukkan URL hingga halaman ditampilkan di layar, komputasi dan pemrosesan dalam jumlah besar terjadi di dalamnya dalam hitungan milidetik. Rangkaian aliran pemrosesan ini disebut **Pipa Perenderan (Rendering Pipeline)** atau **Jalur Perenderan Kritis (Critical Rendering Path)**.
+Peramban web adalah salah satu perangkat lunak paling umum dan paling kompleks yang kita gunakan setiap hari. Dari saat Anda memasukkan URL hingga halaman ditampilkan di layar, komputasi dan pemrosesan dalam jumlah besar terjadi di dalamnya dalam hitungan milidetik. Rangkaian aliran pemrosesan ini disebut **Pipa Perenderan (Rendering [Pipeline](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/))** atau **Jalur Perenderan Kritis (Critical Rendering Path)**.
 
 Dalam artikel ini, kita akan membedah mekanisme lengkap tentang bagaimana peramban (terutama mesin perenderan modern seperti Blink dan WebKit) menafsirkan HTML, CSS, dan JavaScript, dan pada akhirnya menggambarnya (Paint) sebagai piksel pada layar.
 

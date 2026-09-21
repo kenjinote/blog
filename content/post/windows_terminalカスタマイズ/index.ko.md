@@ -226,7 +226,7 @@ Windows Terminal은 tmux나 screen 같은 터미널 멀티플렉서가 가지는
 ]
 ```
 
-위의 키 바인딩을 설정하면 `Alt + Shift + 방향키` 로 창 크기를 조절하고, `Alt + 방향키` 로 창 간 포커스를 즉시 이동할 수 있습니다. 이를 통해 하나의 창에서 Node.js의 로컬 서버를 실행하여 로그를 모니터링하면서, 다른 창에서 Git 명령어를 실행하고, 또 다른 창에서 Docker 컨테이너의 상태를 확인하는 등의 고도의 병렬 작업을 원활하게 수행할 수 있습니다.
+위의 키 바인딩을 설정하면 `Alt + Shift + 방향키` 로 창 크기를 조절하고, `Alt + 방향키` 로 창 간 포커스를 즉시 이동할 수 있습니다. 이를 통해 하나의 창에서 Node.js의 로컬 서버를 실행하여 로그를 모니터링하면서, 다른 창에서 Git 명령어를 실행하고, 또 다른 창에서 [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/) 컨테이너의 상태를 확인하는 등의 고도의 병렬 작업을 원활하게 수행할 수 있습니다.
 
 ## 4.1 Quake Mode (글로벌 드롭다운 터미널)
 
@@ -250,7 +250,7 @@ wt -p "PowerShell 7" -d "C:\Projects\MyApp" ; split-pane -p "Ubuntu-22.04" -d "/
 
 # 6. 프롬프트 진화론 1: PowerShell과 Oh My Posh
 
-Windows 환경의 표준 셸인 PowerShell(특히 크로스 플랫폼을 지원하는 최신 버전 PowerShell 7 / PowerShell Core)을 극적으로 진화시키는 것이 바로 '**Oh My Posh**'입니다. Oh My Posh는 모든 셸을 지원하는 커스텀 프롬프트 엔진으로, 현재 디렉토리, Git 브랜치와 변경 상태, Node.js나 Python의 버전, Kubernetes의 컨텍스트 등 개발에 필요한 모든 상태를 아름답고 시각적으로 제시해 줍니다.
+Windows 환경의 표준 셸인 PowerShell(특히 크로스 플랫폼을 지원하는 최신 버전 PowerShell 7 / PowerShell Core)을 극적으로 진화시키는 것이 바로 '**Oh My Posh**'입니다. Oh My Posh는 모든 셸을 지원하는 커스텀 프롬프트 엔진으로, 현재 디렉토리, Git 브랜치와 변경 상태, Node.js나 Python의 버전, [Kubernetes](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/)의 컨텍스트 등 개발에 필요한 모든 상태를 아름답고 시각적으로 제시해 줍니다.
 
 다음 다이어그램은 PowerShell 시작 시 Oh My Posh가 어떻게 로드되고 프롬프트가 렌더링되는지의 시퀀스를 보여줍니다.
 

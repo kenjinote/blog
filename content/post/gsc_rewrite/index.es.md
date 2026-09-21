@@ -238,7 +238,7 @@ def extract_missing_keywords(documents):
 # print(missing_keywords)
 ```
 
-A través de este análisis, puede descubrir cuantitativamente **omisiones temáticas (brechas de contenido)** como: "En realidad, los principales artículos mencionan 'cómo implementar en contenedores Docker' o 'cómo construir canalizaciones CI/CD', pero mi artículo no lo aborda".
+A través de este análisis, puede descubrir cuantitativamente **omisiones temáticas (brechas de contenido)** como: "En realidad, los principales artículos mencionan 'cómo implementar en contenedores [Docker](https://kenji.blog/es/p/docker-container-namespace-[cgroups](https://kenji.blog/es/p/docker-container-namespace-cgroups-layers/)-layers/)' o 'cómo construir canalizaciones [CI/CD](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/)', pero mi artículo no lo aborda".
 
 Las palabras clave importantes descubiertas no solo deben dispersarse en el cuerpo principal, sino que al agregarlas como secciones significativas como **títulos H2 o H3 (etiquetas de encabezado)** y escribir explicaciones técnicas detalladas y fragmentos de código para ellas, puede mejorar drásticamente su calificación en Google.
 

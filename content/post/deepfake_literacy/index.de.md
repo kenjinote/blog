@@ -144,7 +144,7 @@ flowchart LR
     H --> A["Authentizitätsprüfung & Anomalieerkennung (Fake/Real Classification)"]
 ```
 
-Im Folgenden finden Sie ein konzeptionelles Implementierungsbeispiel einer Pipeline zur Extraktion von rPPG-Signalen aus Videos mit Python:
+Im Folgenden finden Sie ein konzeptionelles Implementierungsbeispiel einer [Pipeline](https://kenji.blog/de/p/cicd-pipeline-github-actions-best-practices/) zur Extraktion von rPPG-Signalen aus Videos mit Python:
 
 ```python
 import cv2

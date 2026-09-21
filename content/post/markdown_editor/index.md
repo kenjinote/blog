@@ -9,7 +9,7 @@ categories: ["blogging", "productivity", "editors"]
 tags: ["Markdown", "VS Code", "Neovim", "textlint"]
 ---
 
-技術ブログを継続して執筆するためには、執筆環境の最適化が必要不可欠です。本記事では、Markdownを用いた技術ブログの執筆スピードを劇的に向上させるための、高度なエディタ設定について深く掘り下げます。Visual Studio Code (VS Code) や Neovim の極限までのカスタマイズ、スニペットの活用、日本語の文法チェックツールである textlint の導入から CI/CD パイプラインでの自動化、そして GitHub Copilot などの LLM を活用した最先端の執筆術まで、網羅的に解説します。
+技術ブログを継続して執筆するためには、執筆環境の最適化が必要不可欠です。本記事では、Markdownを用いた技術ブログの執筆スピードを劇的に向上させるための、高度なエディタ設定について深く掘り下げます。Visual Studio Code (VS Code) や Neovim の極限までのカスタマイズ、スニペットの活用、日本語の文法チェックツールである textlint の導入から [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/) [パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)での自動化、そして GitHub Copilot などの LLM を活用した最先端の執筆術まで、網羅的に解説します。
 
 ## 1. 執筆スピード向上の数理モデル
 
@@ -227,9 +227,9 @@ rules:
 
 これらをVS Codeの検索・置換機能（正規表現モード）やNeovimの `%s` コマンド (`:%s/<b>\(.*?\)<\/b>/**\1**/g`) で実行することで、一瞬でフォーマットを統一できます。
 
-### CI/CDパイプラインによる自動チェック
+### [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)[パイプライン](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)による自動チェック
 
-さらに、GitHub Actions を用いて、ブログ記事を push した際に自動で textlint が走る CI パイプラインを構築します。これにより、ルール違反がある記事のデプロイを未然に防ぐことができます。
+さらに、[GitHub Actions](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/) を用いて、ブログ記事を push した際に自動で textlint が走る CI パイプラインを構築します。これにより、ルール違反がある記事のデプロイを未然に防ぐことができます。
 
 ```mermaid
 flowchart TD
@@ -252,7 +252,7 @@ flowchart TD
 
 VS Code の GitHub Copilot Chat や、Neovim の `ChatGPT.nvim` や `Copilot.vim` などを使い、エディタを離れることなく以下のようなプロンプトを投げます。
 
-> 「以下の技術要素について、初学者向けにMarkdownの階層構造でアウトラインを作成して：Docker, Kubernetes, CI/CD」
+> 「以下の技術要素について、初学者向けにMarkdownの階層構造でアウトラインを作成して：[Docker](https://kenji.blog/p/docker-container-namespace-[cgroups](https://kenji.blog/p/docker-container-namespace-cgroups-layers/)-layers/), [Kubernetes](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/), [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/)」
 
 すると、即座に見出しや箇条書きのマークダウンが生成されます。私たちはその骨組みに肉付けをしていくだけで済みます。
 
@@ -265,7 +265,7 @@ Markdownで技術ブログを書く際の執筆スピードを倍増させるエ
 1. **数理モデルの意識**: $T_{saved}$ を最大化するために、繰り返しの作業を撲滅する。
 2. **VS Codeの活用**: 拡張機能と `markdown.json` のスニペットで入力を省略。
 3. **Neovimの極限カスタマイズ**: `LuaSnip` による動的スニペットと完全なキーボード操作。
-4. **textlintと静的解析**: 校正時間をゼロに近づけるための CI/CD とローカル Linter の統合。
+4. **textlintと静的解析**: 校正時間をゼロに近づけるための [CI/CD](https://kenji.blog/p/cicd-pipeline-github-actions-best-practices/) とローカル Linter の統合。
 5. **LLMの統合**: エディタ内で直接 AI にマークダウンの構成や図表のコードを出力させる。
 
 これらの設定を自身の環境に取り入れることで、執筆の「面倒くささ」がなくなり、技術的なアウトプットの量と質が劇的に向上するはずです。まずは小さなスニペット登録一つからでも始めてみてはいかがでしょうか。

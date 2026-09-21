@@ -12,7 +12,7 @@ description: 'Un guide technique complet sur la façon d''héberger gratuitement
 
 Lors de la gestion d'un site web ou d'un blog, la vitesse d'affichage (performances), les coûts d'exploitation et la sécurité sont des éléments cruciaux. Autrefois, la combinaison d'un CMS dynamique (comme WordPress) et d'un serveur d'hébergement partagé était la norme, mais aujourd'hui, l'architecture appelée "Jamstack" attire beaucoup l'attention. Parmi ses solutions, l'association de "Hugo", un générateur de sites statiques (SSG) ultra-rapide écrit en langage Go, avec des services d'hébergement modernes comme Cloudflare Pages ou GitHub Pages, permet de construire un environnement de blog **totalement gratuit et extrêmement rapide**.
 
-Dans cet article, nous plongerons profondément dans les détails techniques : les étapes concrètes pour publier un site statique utilisant Hugo sur Cloudflare Pages ou GitHub Pages, les différences d'architecture entre ces plateformes, la mise en place d'une CI/CD (Intégration Continue / Déploiement Continu) avec GitHub Actions, l'optimisation des DNS, les stratégies de cache, et enfin l'intégration d'une analyse d'audience respectueuse de la vie privée.
+Dans cet article, nous plongerons profondément dans les détails techniques : les étapes concrètes pour publier un site statique utilisant Hugo sur Cloudflare Pages ou GitHub Pages, les différences d'architecture entre ces plateformes, la mise en place d'une [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) (Intégration Continue / Déploiement Continu) avec [GitHub Actions](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/), l'optimisation des DNS, les stratégies de cache, et enfin l'intégration d'une analyse d'audience respectueuse de la vie privée.
 
 ---
 
@@ -82,7 +82,7 @@ Ainsi, l'introduction d'un CDN permet de réduire de façon spectaculaire (d'env
 
 ---
 
-## 4. Mise en place d'un pipeline CI/CD avec GitHub Actions
+## 4. Mise en place d'un pipeline [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) avec [GitHub Actions](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/)
 
 Pour automatiser le processus de mise à jour de notre blog Hugo, nous allons configurer un pipeline CI/CD utilisant GitHub Actions. De cette façon, il suffira de rédiger un article en Markdown localement et de faire un `git push` pour lancer automatiquement le build et le déployer sur Cloudflare Pages ou GitHub Pages.
 
@@ -108,7 +108,7 @@ sequenceDiagram
 
 ### 4.1 Configuration du déploiement pour Cloudflare Pages (Direct Upload)
 
-Avec Cloudflare Pages, il existe deux méthodes : lier un dépôt GitHub pour effectuer le build sur l'infrastructure de Cloudflare, ou utiliser « Direct Upload » pour transférer directement les fichiers statiques générés par GitHub Actions. Si vous souhaitez gérer plus strictement la version de Hugo et la combiner avec d'autres tâches (comme les tests ou l'optimisation des images), il est recommandé de compiler sur GitHub Actions et d'utiliser la méthode Direct Upload.
+Avec Cloudflare Pages, il existe deux méthodes : lier un dépôt GitHub pour effectuer le build sur l'infrastructure de Cloudflare, ou utiliser « Direct Upload » pour transférer directement les fichiers statiques générés par [GitHub Actions](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/). Si vous souhaitez gérer plus strictement la version de Hugo et la combiner avec d'autres tâches (comme les tests ou l'optimisation des images), il est recommandé de compiler sur GitHub Actions et d'utiliser la méthode Direct Upload.
 
 Voici un exemple pratique de fichier `.github/workflows/deploy.yml` pour un déploiement vers Cloudflare Pages.
 
@@ -248,7 +248,7 @@ L'ajout de l'attribut `defer` permet de charger le script de manière asynchrone
 
 Dans le cadre de l'exploitation d'un site statique utilisant Hugo, l'adoption de plateformes d'hébergement modernes telles que Cloudflare Pages ou GitHub Pages offre d'énormes avantages en termes de rapport coût-performance, de vitesse d'affichage et de sécurité.
 
-1. **Build ultra-rapide** : Tirer parti de la rapidité de Hugo pour minimiser le temps d'exécution des pipelines CI/CD (GitHub Actions).
+1. **Build ultra-rapide** : Tirer parti de la rapidité de Hugo pour minimiser le temps d'exécution des pipelines [CI/CD](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/) ([GitHub Actions](https://kenji.blog/fr/p/cicd-pipeline-github-actions-best-practices/)).
 2. **Distribution via l'Edge** : Utiliser le réseau Edge de Cloudflare pour distribuer le contenu aux utilisateurs du monde entier avec une latence de l'ordre de la milliseconde.
 3. **Configuration DNS appropriée** : Exploiter le CNAME Flattening pour exploiter la Zone Apex (domaine personnalisé) de manière sécurisée et rapide.
 4. **Optimisation des stratégies de cache** : Utiliser `_headers` pour séparer correctement le cache du navigateur et l'Edge Cache en fonction du type de ressource.

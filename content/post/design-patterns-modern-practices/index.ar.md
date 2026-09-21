@@ -157,7 +157,7 @@ fn calculate_area(shape: &Shape) -> f64 {
 
 ### 3.4. نمط Singleton: هل هو أسوأ نمط مضاد (Anti-pattern)؟
 
-غالباً ما يُعتبر نمط `Singleton` اليوم **نمطاً مضاداً**، لأنه يخلق حالة عامة (Global State)، ويجعل الاختبار صعباً، ويشكل مرتعاً للأخطاء في بيئات متعددة الخيوط (Multi-threaded).
+غالباً ما يُعتبر نمط `Singleton` اليوم **نمطاً مضاداً**، لأنه يخلق حالة عامة (Global [State](https://kenji.blog/ar/p/iac-infrastructure-as-code-terraform/))، ويجعل الاختبار صعباً، ويشكل مرتعاً للأخطاء في بيئات متعددة الخيوط (Multi-threaded).
 
 في أفضل الممارسات الحديثة، تُستخدم **حقن التبعية (Dependency Injection: DI)** لإدارة دورة الحياة.
 

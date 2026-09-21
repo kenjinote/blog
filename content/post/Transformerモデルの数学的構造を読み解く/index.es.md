@@ -330,7 +330,7 @@ Sin embargo, cuando estas simples operaciones matriciales se apilan en numerosas
 
 Como sugiere el provocador título "Attention Is All You Need", la belleza de esta arquitectura, que descarta los complejos procesamientos recurrentes o convolucionales y se especializa en el puro cálculo de "Atención" (grado de relación), reside precisamente en su simplicidad matemática.
 
-En el futuro, podrían surgir nuevas arquitecturas que superen a Transformer (como los State Space Models, por ejemplo, Mamba), pero el marco matemático de "comprensión del contexto mediante Attention" forjado por Transformer quedará grabado para siempre en la historia de la IA.
+En el futuro, podrían surgir nuevas arquitecturas que superen a Transformer (como los [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) Space Models, por ejemplo, Mamba), pero el marco matemático de "comprensión del contexto mediante Attention" forjado por Transformer quedará grabado para siempre en la historia de la IA.
 
 Si en el futuro tienes la oportunidad de usar LLMs como ChatGPT o Claude, imagina los billones de multiplicaciones de matrices de $Q K^T$ por segundo y las funciones Softmax calculando probabilidades en segundo plano. Esto aumentará tu resolución sobre la tecnología y hará que el mundo de la IA te parezca aún más fascinante.
 

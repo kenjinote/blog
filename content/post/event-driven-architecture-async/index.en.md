@@ -122,7 +122,7 @@ If the Event Loop is an approach that challenges the limits of a single thread, 
 
 In the Actor model, the basic unit of processing is called an "Actor". Each Actor has an independent state and behavior, and does not directly share state with other Actors. Communication between Actors is entirely done through **asynchronous message passing**.
 
-- **State Encapsulation**: The internal state of an Actor cannot be accessed directly from the outside.
+- **[State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Encapsulation**: The internal state of an Actor cannot be accessed directly from the outside.
 - **Message Queue (Mailbox)**: Received messages are queued in the Mailbox and processed sequentially.
 - **Lock-free**: Because states are not shared, lock mechanisms like mutexes are unnecessary.
 

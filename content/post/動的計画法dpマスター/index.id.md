@@ -210,7 +210,7 @@ Ada sebuah knapsack (ransel) berkapasitas $W$. Ada juga $n$ barang, dan setiap b
 Berapa total nilai maksimum yang bisa diperoleh jika kita memilih barang sedemikian rupa sehingga tidak melebihi kapasitas knapsack?
 (※ "0/1" berarti untuk setiap barang kita punya dua pilihan: "tidak memilih(0)" atau "memilih(1)". Kita tidak bisa membagi barang sebagian.)
 
-### 4-2. Definisi State dan Persamaan Transisi State
+### 4-2. Definisi [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) dan Persamaan Transisi State
 
 Langkah terpenting untuk memecahkan DP adalah mendefinisikan "state (keadaan)" dengan tepat.
 Dalam masalah ini, dua parameter akan berubah: "sampai barang mana yang telah dipertimbangkan" dan "sisa kapasitas knapsack". Oleh karena itu, kita mendefinisikan state sebagai berikut.
@@ -327,7 +327,7 @@ Diberikan dua string $S$ dan $T$. Carilah panjang dari longest common subsequenc
 
 Contoh: Jika $S = \text{"ABCBDAB"}$, $T = \text{"BDCABA"}$, maka LCS-nya adalah $\text{"BCBA"}$ atau $\text{"BDAB"}$ dan lainnya, dan panjangnya adalah 4.
 
-### 5-2. Definisi State dan Persamaan Transisi State
+### 5-2. Definisi [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) dan Persamaan Transisi State
 
 Misalkan panjang string masing-masing adalah $m$ dan $n$. Dalam hal ini kita menjadikan panjang dari prefiks (substring dari awal) dari kedua string tersebut sebagai state.
 
@@ -434,7 +434,7 @@ Kita telah melihat berbagai masalah, tetapi ketika dihadapkan pada masalah DP ya
 
 1. **Apakah masalah ini bisa diselesaikan dengan DP? (Mengecek kondisi)**
    Saat dipikirkan secara rekursif, apakah state yang sama muncul berulang kali (tumpang tindih sub-masalah)? Apakah menggabungkan pilihan optimal akan menghasilkan solusi optimal keseluruhan (struktur sub-optimal)?
-2. **Mendefinisikan State (Keadaan)**
+2. **Mendefinisikan [State](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) (Keadaan)**
    Tentukan variabel yang merepresentasikan "di mana kita sekarang", "apa yang tersisa", "apa batasannya sejauh ini". Mendefinisikan secara verbal apa makna indeks merupakan bentuk pertahanan terbaik untuk mencegah bug.
 3. **Memikirkan Persamaan Transisi State (Transition)**
    Bagaimana cara berpindah dari suatu state ke state berikutnya? Apa saja opsinya? Di antara opsi tersebut, apakah kita mencari nilai maksimum/minimum, atau kita menjumlahkannya? Ini adalah inti dari algoritma.

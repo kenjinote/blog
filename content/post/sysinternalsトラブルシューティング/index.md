@@ -60,7 +60,7 @@ ProcExpでは、以下の設定を有効化することで不正なプロセス�
 ### 2.3 ハードウェア割り込みと100% CPUスパイクの解析
 システム全体が数秒間フリーズしたり、音声が途切れる（スタッター）現象が発生した場合、タスクマネージャーを見ると「System Interrupts」がCPUを食いつぶしていることがあります。
 
-Windowsのスケジューリングにおいて、ハードウェア割り込み（ISR: Interrupt Service Routine）とDPC（Deferred Procedure Call）は、通常のユーザースレッドよりも高い優先度（IRQL: Interrupt Request Level）で実行されます。つまり、不良なドライバがDPCを長引かせると、CPUはそのコアで他のタスクを一切実行できなくなります。
+Windowsのスケジューリングにおいて、ハードウェア割り込み（ISR: Interrupt [Service](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/) Routine）とDPC（Deferred Procedure Call）は、通常のユーザースレッドよりも高い優先度（IRQL: Interrupt Request Level）で実行されます。つまり、不良なドライバがDPCを長引かせると、CPUはそのコアで他のタスクを一切実行できなくなります。
 
 ProcExpのプロセスリスト最上部にある `Interrupts` や `DPCs` のCPU使用率が高い場合、Windows Performance Analyzer (WPA) と併用して原因のドライバ（ `.sys` ）を特定します。CPU時間の計算は以下のように定式化できます。
 
@@ -141,7 +141,7 @@ flowchart LR
 ### 4.1 確認すべき重要なタブと高度な機能
 *   **Logon**: 標準的な Run/RunOnce キー、スタートアップフォルダ。
 *   **Scheduled Tasks**: Windowsタスクスケジューラ。マルウェアはしばしば「Adobe Update」や「Google Update」などを装った偽装タスクを作成します。
-*   **Services / Drivers**: カーネルモードで起動するドライバ。前述の 100% CPU スパイクの原因となっている不審な `.sys` ファイルをここで無効化できます。
+*   **[Service](https://kenji.blog/p/kubernetes-k8s-architecture-pod-service-ingress/)s / Drivers**: カーネルモードで起動するドライバ。前述の 100% CPU スパイクの原因となっている不審な `.sys` ファイルをここで無効化できます。
 *   **WMI**: WMI (Windows Management Instrumentation) のイベントフィルターやコンシューマーを利用したファイルレスマルウェア（Fileless Malware）の永続化場所。非常に見落とされがちです。
 *   **AppInit_DLLs / KnownDLLs**: アプリケーションが起動するたびに強制的にインジェクトされるDLLリスト。DLLインジェクションによるフックの温床になります。
 

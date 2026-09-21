@@ -11,7 +11,7 @@ tags: ["Solo Developer", "Micro-SaaS", "Serverless", "Agility"]
 
 # Introduction : La bataille de "ceux qui n'ont rien" défiant les géants
 
-Dans l'histoire du développement logiciel, il n'y a jamais eu d'époque aussi favorable aux développeurs solos (développeurs indépendants). La démocratisation des infrastructures cloud comme AWS et GCP, l'essor des BaaS (Backend as a Service) tels que Vercel et Supabase, et surtout, l'automatisation du codage grâce à l'évolution des LLM (Grands Modèles de Langage). Tout cela a créé un terrain où un individu peut rivaliser de front avec les "géants" que sont les grandes entreprises technologiques.
+Dans l'histoire du développement logiciel, il n'y a jamais eu d'époque aussi favorable aux développeurs solos (développeurs indépendants). La démocratisation des infrastructures cloud comme AWS et GCP, l'essor des BaaS (Backend as a [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/)) tels que Vercel et Supabase, et surtout, l'automatisation du codage grâce à l'évolution des LLM (Grands Modèles de Langage). Tout cela a créé un terrain où un individu peut rivaliser de front avec les "géants" que sont les grandes entreprises technologiques.
 
 Cependant, le fait que les ressources technologiques se soient aplanies ne signifie pas que vous pouvez gagner en adoptant la même stratégie que les grandes entreprises. En termes de capital, de puissance marketing et de force de marque, l'individu est massivement désavantagé. Pour qu'un développeur solo survive et gagne, une "stratégie de survie" unique est indispensable.
 
@@ -50,7 +50,7 @@ Les développeurs solos devraient délibérément cibler des problèmes spécial
 
 # 2. Une conception architecturale produisant une agilité écrasante
 
-Les systèmes des grandes entreprises sont conçus en donnant la priorité absolue à la "stabilité" et à l'"évolutivité", d'où l'adoption de Kubernetes ou d'architectures de microservices. Cependant, si un développeur solo fait de même, ses ressources seront épuisées rien que par la maintenance de l'infrastructure (Ops).
+Les systèmes des grandes entreprises sont conçus en donnant la priorité absolue à la "stabilité" et à l'"évolutivité", d'où l'adoption de [Kubernetes](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/) ou d'architectures de microservices. Cependant, si un développeur solo fait de même, ses ressources seront épuisées rien que par la maintenance de l'infrastructure (Ops).
 
 Le mot d'ordre pour la pile technologique du développeur solo est **"No-Ops" (Zéro Opération)**. Il faut exploiter au maximum l'architecture serverless et se concentrer uniquement sur l'écriture de la logique métier.
 
@@ -288,7 +288,7 @@ La stratégie de survie pour qu'un développeur solo rivalise avec les grandes e
 
 1. **Choisir son champ de bataille (Théorie de la longue traîne)**
    - Cibler des marchés de niche, même petits, avec des problèmes profonds, où les grandes entreprises ne peuvent pas entrer.
-2. **Faire levier sur la technologie (Serverless, BaaS, IA)**
+2. **Faire levier sur la technologie ([Serverless](https://kenji.blog/fr/p/serverless-architecture-aws-lambda-cold-start/), BaaS, IA)**
    - Externaliser complètement les opérations (Ops) et écrire uniquement du code pour résoudre les problèmes des clients (logique métier) plutôt que de gérer l'infrastructure.
 3. **Maximiser l'agilité (Coût de communication nul)**
    - Utiliser la plus grande arme du développement solo, la "vitesse" : déployer une idée immédiatement et itérer avec les retours du marché le plus rapidement possible.

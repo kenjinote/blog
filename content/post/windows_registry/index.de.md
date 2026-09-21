@@ -159,7 +159,7 @@ Beim Bearbeiten der Registrierung über ein PowerShell-Skript oder eine C#-Anwen
 
 ## 8. Programmierbare sichere Bearbeitung mit PowerShell
 
-Um das Risiko der manuellen Bearbeitung der Registrierung zu minimieren, besteht die moderne Best Practice darin, Vorgänge mit PowerShell-Skripten zu codieren (Infrastructure as Code) und Automatisierung, Reproduzierbarkeit und Testbarkeit sicherzustellen. PowerShell verfügt über einen „Registry Provider“, mit dem Sie die Registrierung transparent mit genau denselben Cmdlets (`Get-ChildItem`, `Get-ItemProperty`, `New-Item` usw.) bearbeiten können, mit denen Sie auch Dateisysteme (wie das Laufwerk C:) bearbeiten.
+Um das Risiko der manuellen Bearbeitung der Registrierung zu minimieren, besteht die moderne Best Practice darin, Vorgänge mit PowerShell-Skripten zu codieren ([Infrastructure as Code](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) und Automatisierung, Reproduzierbarkeit und Testbarkeit sicherzustellen. PowerShell verfügt über einen „Registry Provider“, mit dem Sie die Registrierung transparent mit genau denselben Cmdlets (`Get-ChildItem`, `Get-ItemProperty`, `New-Item` usw.) bearbeiten können, mit denen Sie auch Dateisysteme (wie das Laufwerk C:) bearbeiten.
 
 In PowerShell sind dedizierte PSDrives (ähnlich wie Laufwerksbuchstaben) wie `HKLM:` und `HKCU:` standardmäßig gemountet.
 
@@ -398,7 +398,7 @@ Abschließend fassen wir wichtige Designprinzipien und Best Practices im Umgang 
 
 ## Fazit
 
-Die Windows-Registrierung ist ein leistungsstarkes und komplexes Basissystem, das alle Verhaltensweisen des Betriebssystems und der Anwendungseinstellungen integriert verwaltet. Chaotisches manuelles Bearbeiten birgt ein hohes mathematisch nachgewiesenes Risiko für Systembeschädigungen. Daher ist es im modernen Systemmanagement und in der Entwicklung unerlässlich, programmierbare Mittel wie PowerShell oder C# zu verwenden, um das Konfigurationsmanagement nach den Prinzipien von Infrastructure as Code auf sichere, testbare und reproduzierbare Weise durchzuführen. Bitte nutzen Sie das in diesem Artikel erläuterte tiefe Verständnis der Architektur und die Implementierungsmuster, um eine robustere und sicherere Windows-Umgebung aufzubauen.
+Die Windows-Registrierung ist ein leistungsstarkes und komplexes Basissystem, das alle Verhaltensweisen des Betriebssystems und der Anwendungseinstellungen integriert verwaltet. Chaotisches manuelles Bearbeiten birgt ein hohes mathematisch nachgewiesenes Risiko für Systembeschädigungen. Daher ist es im modernen Systemmanagement und in der Entwicklung unerlässlich, programmierbare Mittel wie PowerShell oder C# zu verwenden, um das Konfigurationsmanagement nach den Prinzipien von [Infrastructure as Code](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/) auf sichere, testbare und reproduzierbare Weise durchzuführen. Bitte nutzen Sie das in diesem Artikel erläuterte tiefe Verständnis der Architektur und die Implementierungsmuster, um eine robustere und sicherere Windows-Umgebung aufzubauen.
 
 
 

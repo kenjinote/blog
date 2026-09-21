@@ -69,7 +69,7 @@ Git中有一个名为 `core.autocrlf` 的设置，但依赖它是危险的。因
 
 在Mac或Windows上开发时，如果源代码中写的是小写字母的 `#include "myclass.h"`（或 `import "./myclass"`），而实际文件是 `MyClass.h`，由于本地环境的操作系统是Case-Insensitive的，编译依然会成功。
 
-然而，将这段代码提交并在CI/CD服务器（通常是Ubuntu等Linux系统）上执行编译时，由于Linux的ext4文件系统是Case-Sensitive的，就会出现“找不到文件”的编译错误。
+然而，将这段代码提交并在[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)服务器（通常是Ubuntu等Linux系统）上执行编译时，由于Linux的ext4文件系统是Case-Sensitive的，就会出现“找不到文件”的编译错误。
 
 ### 算法视角：文件搜索的时间复杂度与规范化
 
@@ -302,11 +302,11 @@ classDiagram
 
 ---
 
-## 8. 在 CI/CD 中进行跨平台验证 (矩阵构建)
+## 8. 在 [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 中进行跨平台验证 (矩阵构建)
 
 无论开发者在本地环境中编码多么谨慎，跨平台兼容性的最终防线都是 **CI/CD (Continuous Integration / Continuous Deployment) 流水线** 。在本地环境（例如 Mac）中能够运行，但在其他操作系统（Windows）下出现编译错误的情况层出不穷。
 
-我们应该活用 GitHub Actions 或 GitLab CI 等现代 CI 工具，并在每次创建 Pull Request 时，设置能够 **在 Windows、macOS、Linux 等所有环境中并行执行构建和测试** 的矩阵构建（Matrix Build）。
+我们应该活用 [GitHub Actions](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 或 GitLab CI 等现代 CI 工具，并在每次创建 Pull Request 时，设置能够 **在 Windows、macOS、Linux 等所有环境中并行执行构建和测试** 的矩阵构建（Matrix Build）。
 
 ```yaml
 # GitHub Actions 中的跨平台 CI 设置示例
@@ -338,7 +338,7 @@ jobs:
       run: pytest -v
 ```
 
-如果将这个 CI/CD 的流程可视化，如下所示。
+如果将这个 [CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/) 的流程可视化，如下所示。
 
 ```mermaid
 sequenceDiagram
@@ -378,10 +378,10 @@ sequenceDiagram
 2.  **大小写区分** ：不要依赖 macOS/Windows “不区分大小写” 的行为，应当严格规定文件命名规则，时刻注意严格的大小写匹配。
 3.  **路径分隔符** ：利用语言标准中的路径操作 API（如 `std::filesystem`、`pathlib`、`path` 模块）来消除操作系统的差异。
 4.  **字符编码** ：永远指定 UTF-8，彻底消除 Windows 默认行为 CP932 所带来的影响。
-5.  **环境变量与 Shell** ：使用 `cross-env` 等抽象工具，或者将执行环境统一为 WSL/Docker 等。
+5.  **环境变量与 Shell** ：使用 `cross-env` 等抽象工具，或者将执行环境统一为 WSL/[Docker](https://kenji.blog/zh-cn/p/docker-container-namespace-[cgroups](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)-layers/) 等。
 6.  **构建系统** ：对于 C/C++，活用 CMake 等元构建系统，为各个操作系统生成最佳的原生工具链。
 7.  **平台相关代码** ：设计操作系统抽象层 (OSAL)，将依赖于平台的逻辑分离并隔离起来。
-8.  **CI/CD** ：引入矩阵构建，对所有目标操作系统的洁净构建和测试进行自动化，从而消除人为的不可靠性。
+8.  **[CI/CD](https://kenji.blog/zh-cn/p/cicd-pipeline-github-actions-best-practices/)** ：引入矩阵构建，对所有目标操作系统的洁净构建和测试进行自动化，从而消除人为的不可靠性。
 
 如今，Electron、Tauri、.NET 等强大的框架已经为我们屏蔽了其中的许多差异，但对于底层操作系统原生行为（如文件系统和编码）的了解，在解决严重的性能问题和棘手的 Bug 时依然不可或缺。通过在项目的初始阶段将这些最佳实践在整个团队中共享并贯彻执行，就能大幅减少由于操作系统差异导致的毫无意义的调试时间，从而集中精力进行实质性的软件价值创造。
 

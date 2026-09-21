@@ -50,9 +50,9 @@ xychart-beta
 
 # 2. 创造压倒性敏捷度的架构设计
 
-大企业的系统设计将“稳定性”和“可扩展性”放在首位，因此会采用Kubernetes和微服务架构。但如果个人开发者效仿这种做法，光是基础设施的维护管理（Ops）就会耗尽资源。
+大企业的系统设计将“稳定性”和“可扩展性”放在首位，因此会采用[Kubernetes](https://kenji.blog/zh-cn/p/kubernetes-k8s-architecture-pod-service-ingress/)和微服务架构。但如果个人开发者效仿这种做法，光是基础设施的维护管理（Ops）就会耗尽资源。
 
-个人开发者的技术栈口号是 **"No-Ops"（零运维）** 。将无服务器（Serverless）架构利用到极致，从而能够专注于编写业务逻辑。
+个人开发者的技术栈口号是 **"No-Ops"（零运维）** 。将无服务器（[Serverless](https://kenji.blog/zh-cn/p/serverless-architecture-aws-lambda-cold-start/)）架构利用到极致，从而能够专注于编写业务逻辑。
 
 ## 大企业 vs 个人开发者的架构对比
 

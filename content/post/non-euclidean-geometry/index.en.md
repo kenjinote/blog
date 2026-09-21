@@ -73,7 +73,7 @@ The magnificent mathematical framework constructed by [Riemann](https://kenji.bl
 Einstein proposed the concept of "spacetime", which integrated time and space in the special theory of relativity. And in the **general theory of relativity**, he reached the groundbreaking idea that "gravity is the distortion (curve) of spacetime by objects with mass."
 
 $$
-R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
+R_{\mu\nu} - \frac{1}{2}Rg_{\mu\nu} + \[Lambda](https://kenji.blog/en/p/serverless-architecture-aws-lambda-cold-start/) g_{\mu\nu} = \frac{8\pi G}{c^4}T_{\mu\nu}
 $$
 
 In the above Einstein equation, the left side represents the geometric structure (curvature) of spacetime, and the right side represents the distribution of matter and energy. In other words, **matter determines how spacetime curves, and curved spacetime determines the motion of matter**.

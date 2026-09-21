@@ -175,7 +175,7 @@ void MainWindow::InitializeCustomTitleBar()
 
 하지만 C++로 작성된 네이티브 앱을 MSIX로 패키징할 때 가장 주의해야 할 것은 `Package.appxmanifest`(매니페스트 파일)의 설정입니다.
 
-LogicPad는 로컬 파일 시스템(사용자의 문서 폴더 등)에 저장된 거대한 프로젝트 파일을 읽고 써야 합니다. 표준 UWP의 샌드박스 환경에서는 앱 자체의 격리된 데이터 폴더(AppContainer)에만 접근할 수 있습니다. 네이티브 데스크톱 앱으로서 전체 접근 권한을 얻기 위해서는 매니페스트에 `runFullTrust` 기능을 선언해야 합니다.
+LogicPad는 로컬 파일 시스템(사용자의 문서 폴더 등)에 저장된 거대한 프로젝트 파일을 읽고 써야 합니다. 표준 UWP의 샌드박스 환경에서는 앱 자체의 격리된 데이터 폴더(App[Container](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/))에만 접근할 수 있습니다. 네이티브 데스크톱 앱으로서 전체 접근 권한을 얻기 위해서는 매니페스트에 `runFullTrust` 기능을 선언해야 합니다.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

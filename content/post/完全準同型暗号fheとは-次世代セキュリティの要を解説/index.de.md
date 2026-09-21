@@ -252,7 +252,7 @@ Da FHE mittlerweile praktische Geschwindigkeiten erreicht, werden bahnbrechende 
     Indem die von mehreren Krankenhäusern gehaltenen Patientenakten und DNA-Daten mit FHE verschlüsselt und von der Cloud-KI trainiert werden, können hochpräzise Krebsdiagnosemodelle und die Entwicklung neuer Medikamente durchgeführt werden, ohne gegen Datenschutzgesetze (wie HIPAA oder DSGVO) zu verstoßen.
 2.  **Betrugserkennung und Anti-Geldwäsche (AML) für Finanzinstitute**:
     Konkurrierende Banken können gegenseitig ihre Daten in verschlüsselter Form abgleichen, um riesige illegale Überweisungsnetzwerke zu erkennen (Cross-Bank-Analyse), ohne Kundenkontoinformationen oder Transaktionshistorien preiszugeben.
-3.  **Sichere KI-Inferenz-API (MaaS: Model as a Service)**:
+3.  **Sichere KI-Inferenz-API (MaaS: Model as a [Service](https://kenji.blog/de/p/kubernetes-k8s-architecture-pod-service-ingress/))**:
     Benutzer verschlüsseln ihre eigene Stimme, Gesichtsbilder oder Prompts und senden sie an einen KI-Dienst (z.B. ein LLM wie ChatGPT). Der KI-Anbieter generiert Antworten, ohne die Eingabe des Benutzers jemals zu kennen, und gibt sie als Geheimtext zurück. Dies beseitigt vollständig die Sorge, dass "die KI persönliche Informationen lernt oder einsehen kann".
 
 ---

@@ -175,7 +175,7 @@ void MainWindow::InitializeCustomTitleBar()
 
 然而，在使用MSIX打包用C++编写的原生应用时，最需要注意的是 `Package.appxmanifest`（清单文件）的设置。
 
-LogicPad需要读写保存在本地文件系统（如用户的文档文件夹）中的庞大项目文件。在标准UWP的沙盒环境中，只能访问应用自身隔离的数据文件夹（AppContainer）。为了作为原生桌面应用获得完全访问权限，必须在清单中声明 `runFullTrust` 功能。
+LogicPad需要读写保存在本地文件系统（如用户的文档文件夹）中的庞大项目文件。在标准UWP的沙盒环境中，只能访问应用自身隔离的数据文件夹（App[Container](https://kenji.blog/zh-cn/p/docker-container-namespace-cgroups-layers/)）。为了作为原生桌面应用获得完全访问权限，必须在清单中声明 `runFullTrust` 功能。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

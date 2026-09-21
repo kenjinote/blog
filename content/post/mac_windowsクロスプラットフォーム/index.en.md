@@ -69,7 +69,7 @@ Case sensitivity in file systems is also one of the biggest hurdles in cross-pla
 
 When developing on Mac or Windows, even if you specify `#include "myclass.h"` (or `import "./myclass"`) in lowercase in the source code, if the actual file is `MyClass.h`, the build will succeed because the local OS is Case-Insensitive.
 
-However, if you commit this code and run the build on a CI/CD server (usually Linux such as Ubuntu), you will get a "file not found" compilation error because the ext4 file system of Linux is Case-Sensitive.
+However, if you commit this code and run the build on a [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) server (usually Linux such as Ubuntu), you will get a "file not found" compilation error because the ext4 file system of Linux is Case-Sensitive.
 
 ### Algorithmic Perspective: File Search Complexity and Normalization
 
@@ -302,11 +302,11 @@ By isolating platform-specific code in one place (usually directories like `src/
 
 ---
 
-## 8. Cross-Platform Verification in CI/CD (Matrix Build)
+## 8. Cross-Platform Verification in [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) (Matrix Build)
 
 No matter how carefully developers code in their local environment, the ultimate stronghold for cross-platform support is the **CI/CD (Continuous Integration / Continuous Deployment) pipeline**. There is no end to cases where code runs in the local environment (e.g., Mac) but results in compilation errors on other OSs (Windows).
 
-Utilize modern CI tools such as GitHub Actions or GitLab CI, and set up a Matrix Build that **executes builds and tests in parallel on all Windows, macOS, and Linux environments** every time a Pull Request is created.
+Utilize modern CI tools such as [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) or GitLab CI, and set up a Matrix Build that **executes builds and tests in parallel on all Windows, macOS, and Linux environments** every time a Pull Request is created.
 
 ```yaml
 # Example cross-platform CI setup with GitHub Actions
@@ -338,7 +338,7 @@ jobs:
       run: pytest -v
 ```
 
-Visualizing this CI/CD flow looks like the following.
+Visualizing this [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) flow looks like the following.
 
 ```mermaid
 sequenceDiagram
@@ -378,10 +378,10 @@ Cross-platform development for Mac and Windows has a wide variety of challenges 
 2.  **Case Sensitivity**: Do not rely on the "case-insensitive" behavior of macOS/Windows; establish strict file naming conventions and practice strict case matching.
 3.  **Path Separators**: Utilize standard language path manipulation APIs (`std::filesystem`, `pathlib`, `path` module) to absorb OS differences.
 4.  **Encoding**: Always specify UTF-8 and thoroughly eliminate the influence of CP932, the default behavior in Windows.
-5.  **Environment Variables & Shells**: Use abstraction tools like `cross-env` or unify the execution environment to WSL/Docker, etc.
+5.  **Environment Variables & Shells**: Use abstraction tools like `cross-env` or unify the execution environment to WSL/[Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/), etc.
 6.  **Build Systems**: For C/C++, utilize meta-build systems like CMake to generate the optimal native toolchain for each OS.
 7.  **OS-Dependent Code**: Design an OS Abstraction Layer (OSAL) to separate and isolate platform-dependent logic.
-8.  **CI/CD**: Introduce matrix builds to automate clean builds and testing across all target OSs, eliminating person-dependency.
+8.  **[CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)**: Introduce matrix builds to automate clean builds and testing across all target OSs, eliminating person-dependency.
 
 Today, powerful frameworks such as Electron, Tauri, and .NET absorb many of these differences, but knowledge of the native behavior of the underlying OS (file systems and encoding) remains indispensable when resolving severe performance issues or obscure bugs. By sharing and strictly enforcing these best practices across the team from the early stages of a project, you can significantly reduce unproductive debugging time caused by OS differences and focus on essential software value creation.
 

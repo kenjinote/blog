@@ -165,7 +165,7 @@ A maioria dos terminais introduzidos sob a especificação padrão do GIGA Schoo
 - Memória (RAM): 4GB (apenas o suficiente para rodar o sistema operacional moderno)
 - Armazenamento (eMMC): 32GB ~ 64GB (Velocidades de I/O extremamente baixas)
 
-Devido a essa fragilidade no hardware, é praticamente impossível construir os "ambientes de desenvolvimento local" usados diariamente por engenheiros profissionais. Lançar containers Linux usando Docker, rodar IDEs pesados como o Visual Studio Code com todas as funcionalidades, inicializar servidores locais em Node.js ou Python e instalar bibliotecas pesadas invariavelmente leva à exaustão de memória e ao congelamento do sistema.
+Devido a essa fragilidade no hardware, é praticamente impossível construir os "ambientes de desenvolvimento local" usados diariamente por engenheiros profissionais. Lançar containers Linux usando [Docker](https://kenji.blog/pt/p/docker-container-namespace-[cgroups](https://kenji.blog/pt/p/docker-container-namespace-cgroups-layers/)-layers/), rodar IDEs pesados como o Visual Studio Code com todas as funcionalidades, inicializar servidores locais em Node.js ou Python e instalar bibliotecas pesadas invariavelmente leva à exaustão de memória e ao congelamento do sistema.
 
 Como resultado, os locais de ensino são forçados a depender exclusivamente de IDEs baseados em nuvem que rodam em navegadores web (como Google Colaboratory, Replit ou ferramentas leves proprietárias dos fabricantes de livros didáticos).
 
@@ -204,7 +204,7 @@ Nos Estados Unidos, há um padrão curricular rígido K-12 (Jardim de Infância 
 
 ### Desconexão Abismal Entre as Habilidades Requeridas e as Ensinadas
 
-As exigências para engenheiros de software recém-formados em busca de emprego na indústria atual, especialmente as exigidas globalmente por megaventures e gigantes da tecnologia (como GAFAM), crescem a taxas aterradoramente altas anualmente. Requer-se um profundo grau de especialização com largo espectro: configuração de infraestrutura cloud-native (AWS, GCP, Kubernetes), design de sistemas distribuídos baseados em arquitetura de microsserviços, implementação de dutos de Machine Learning, além de amplos conhecimentos sobre segurança.
+As exigências para engenheiros de software recém-formados em busca de emprego na indústria atual, especialmente as exigidas globalmente por megaventures e gigantes da tecnologia (como GAFAM), crescem a taxas aterradoramente altas anualmente. Requer-se um profundo grau de especialização com largo espectro: configuração de infraestrutura cloud-native (AWS, GCP, [Kubernetes](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/)), design de sistemas distribuídos baseados em arquitetura de microsserviços, implementação de dutos de Machine Learning, além de amplos conhecimentos sobre segurança.
 
 O gráfico a seguir descreve conceitualmente as enormes discrepâncias entre o nível de aprendizado da formação entregue na escola japonesa atualmente em oposição ao nível imposto pelas exigentes fronteiras industriais.
 

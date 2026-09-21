@@ -16,7 +16,7 @@ tags:
 
 # Mecanismo de renderizado del navegador: Una anatomía completa desde el árbol DOM hasta Paint
 
-El navegador web es uno de los programas de software más cercanos a nuestro uso diario y, al mismo tiempo, uno de los más complejos. Desde que introduces una URL hasta que la página aparece en la pantalla, internamente se llevan a cabo enormes cálculos y procesos en cuestión de milisegundos. A esta secuencia de procesamiento se le llama **Tubería de renderizado (Rendering Pipeline)** o **Ruta de renderizado crítica (Critical Rendering Path)**.
+El navegador web es uno de los programas de software más cercanos a nuestro uso diario y, al mismo tiempo, uno de los más complejos. Desde que introduces una URL hasta que la página aparece en la pantalla, internamente se llevan a cabo enormes cálculos y procesos en cuestión de milisegundos. A esta secuencia de procesamiento se le llama **Tubería de renderizado (Rendering [Pipeline](https://kenji.blog/es/p/cicd-pipeline-github-actions-best-practices/))** o **Ruta de renderizado crítica (Critical Rendering Path)**.
 
 En este artículo, analizaremos el mecanismo completo de cómo los navegadores (especialmente los motores de renderizado modernos como Blink y WebKit) interpretan HTML, CSS y JavaScript, y finalmente los dibujan (Paint) como píxeles en la pantalla.
 

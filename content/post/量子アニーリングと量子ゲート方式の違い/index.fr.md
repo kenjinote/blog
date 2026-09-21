@@ -100,7 +100,7 @@ Le modèle à portes quantiques est une extension mécanique quantique des porte
 
 ### 3.1. Transformation unitaire et vecteur d'état
 
-Dans le modèle à portes quantiques, l'état de l'ensemble du système de qubits est représenté comme un "Vecteur d'état (State Vector)" $|\psi\rangle$. L'état d'un qubit unique est exprimé par la combinaison linéaire des états de base $|0\rangle$ et $|1\rangle$ comme suit.
+Dans le modèle à portes quantiques, l'état de l'ensemble du système de qubits est représenté comme un "Vecteur d'état ([State](https://kenji.blog/fr/p/iac-infrastructure-as-code-terraform/) Vector)" $|\psi\rangle$. L'état d'un qubit unique est exprimé par la combinaison linéaire des états de base $|0\rangle$ et $|1\rangle$ comme suit.
 $$ |\psi\rangle = \alpha |0\rangle + \beta |1\rangle $$
 Ici, $\alpha$ et $\beta$ sont des amplitudes de probabilité complexes, satisfaisant $|\alpha|^2 + |\beta|^2 = 1$. Cet état est géométriquement visualisé comme un point sur la "Sphère de Bloch (Bloch Sphere)".
 

@@ -100,7 +100,7 @@ El modelo de puertas cuánticas es una extensión en mecánica cuántica de las 
 
 ### 3.1. Transformación unitaria y vector de estado
 
-En el modelo de puertas cuánticas, el estado completo del sistema de cúbits se representa como un "vector de estado" (State Vector) $|\psi\rangle$. El estado de 1 cúbit se expresa como una combinación lineal de los estados fundamentales $|0\rangle$ y $|1\rangle$ de la siguiente manera:
+En el modelo de puertas cuánticas, el estado completo del sistema de cúbits se representa como un "vector de estado" ([State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) Vector) $|\psi\rangle$. El estado de 1 cúbit se expresa como una combinación lineal de los estados fundamentales $|0\rangle$ y $|1\rangle$ de la siguiente manera:
 $$ |\psi\rangle = \alpha |0\rangle + \beta |1\rangle $$
 Aquí, $\alpha$ y $\beta$ son amplitudes de probabilidad complejas y satisfacen $|\alpha|^2 + |\beta|^2 = 1$. Geométricamente, este estado se visualiza como un punto en la "esfera de Bloch" (Bloch Sphere).
 

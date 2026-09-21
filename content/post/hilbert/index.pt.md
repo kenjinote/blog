@@ -157,7 +157,7 @@ Na sua lápide estão gravadas as famosas palavras que encerraram o seu discurso
 ## Cronologia
 
 * **1862**: Nasce em Wehlau, perto de Königsberg, Prússia Oriental.
-* **1880**: Ingressa na Universidade de Königsberg. Conhece Minkowski e Hurwitz.
+* **1880**: [Ingress](https://kenji.blog/pt/p/kubernetes-k8s-architecture-pod-service-ingress/)a na Universidade de Königsberg. Conhece Minkowski e Hurwitz.
 * **1885**: Obtém o seu Doutorado pela Universidade de Königsberg.
 * **1888**: Prova o "teorema da base de [Hilbert](https://kenji.blog/pt/p/hilbert/)" na teoria dos invariantes.
 * **1895**: Nomeado professor na Universidade de Göttingen a convite de Klein.

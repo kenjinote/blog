@@ -53,7 +53,7 @@ flowchart TD
 
 When an engineer codes for a long time, if this $E$ (actuation energy) is too large, the fingers get tired easily, and if it is too small, mistypes (accidental hits) increase. Generally, a switch with an actuation force of about 45g to 55g is considered to have a good balance of fatigue reduction and accuracy, and is preferred by many engineers.
 
-### 1.3 State-of-the-Art Switch Technology: Electrostatic Capacitive Non-Contact and Hall Effect
+### 1.3 [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)-of-the-Art Switch Technology: Electrostatic Capacitive Non-Contact and Hall Effect
 
 There are also more advanced switch technologies that do not have physical metal contacts.
 

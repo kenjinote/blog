@@ -250,7 +250,7 @@ $$ T \approx \frac{800}{4.5} \approx 177 \text{ Tokens/sec} $$
 이러한 강력한 오픈소스 LLM을 로컬 환경에서 구동하기 위한 소프트웨어 생태계도 현재 매우 잘 갖춰져 있습니다. 대표적인 도구 3가지를 소개합니다.
 
 ### 1. Ollama
-현재 가장 쉽고 가장 인기 있는 도구입니다. Docker처럼 명령어 한 줄로 모델의 다운로드부터 실행까지 진행해 줍니다. Mac, Windows, Linux 모두를 지원합니다.
+현재 가장 쉽고 가장 인기 있는 도구입니다. [Docker](https://kenji.blog/ko/p/docker-container-namespace-[cgroups](https://kenji.blog/ko/p/docker-container-namespace-cgroups-layers/)-layers/)처럼 명령어 한 줄로 모델의 다운로드부터 실행까지 진행해 줍니다. Mac, Windows, Linux 모두를 지원합니다.
 터미널을 열고 다음 명령어를 입력하기만 하면 Llama 3가 실행됩니다.
 
 ```bash

@@ -59,15 +59,15 @@ tags: ["Alan Baker", "Number Theory", "Fields Medal", "Transcendental Number The
 **[ベーカー](https://kenji.blog/p/baker/)の定理（Baker's Theorem, 1966）** :
 $\alpha_1, \alpha_2, \ldots, \alpha_n$ を $0$ 以外の代数的数とし、$\log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ が有理数体 $\mathbb{Q}$ 上で一次独立であると仮定する。このとき、$1, \log \alpha_1, \log \alpha_2, \ldots, \log \alpha_n$ は代数的数体 $\overline{\mathbb{Q}}$ 上で一次独立である。
 
-すなわち、任意の $0$ でない代数的数 $\beta_0, \beta_1, \ldots, \beta_n$ に対して、次の一次形式 $\Lambda$ は決して $0$ にならないことを証明しました。
+すなわち、任意の $0$ でない代数的数 $\beta_0, \beta_1, \ldots, \beta_n$ に対して、次の一次形式 $\[Lambda](https://kenji.blog/p/serverless-architecture-aws-lambda-cold-start/)$ は決して $0$ にならないことを証明しました。
 
 $$ \Lambda = \beta_0 + \beta_1 \log \alpha_1 + \cdots + \beta_n \log \alpha_n \neq 0 $$
 
 ### 3.4 「有効な（Effective）」下界の導出
-[ベーカー](https://kenji.blog/p/baker/)の定理の真に革新的な点は、$\Lambda \neq 0$ を証明しただけでなく、$|\Lambda|$ の **有効な（effective）下界** を導き出したことにあります。
+[ベーカー](https://kenji.blog/p/baker/)の定理の真に革新的な点は、$\[Lambda](https://kenji.blog/p/serverless-architecture-aws-lambda-cold-start/) \neq 0$ を証明しただけでなく、$|\Lambda|$ の **有効な（effective）下界** を導き出したことにあります。
 それまでの数論における多くの定理（例えばロスの定理）は、「解は有限個しか存在しない」ことを示せても、「最大の解がどのくらいの大きさか」を示すことができない「非有効的（ineffective）」なものでした。
 
-[ベーカー](https://kenji.blog/p/baker/)は、代数的数 $\alpha_i$ や $\beta_i$ の「高さ（height）」（その数を根に持つ最小多項式の係数の最大値に関連する指標）や次数に依存する具体的な正の定数 $C$ を用いて、$|\Lambda|$ がどれだけ $0$ に近づき得るかの限界を計算可能な形で提示しました。
+[ベーカー](https://kenji.blog/p/baker/)は、代数的数 $\alpha_i$ や $\beta_i$ の「高さ（height）」（その数を根に持つ最小多項式の係数の最大値に関連する指標）や次数に依存する具体的な正の定数 $C$ を用いて、$|\[Lambda](https://kenji.blog/p/serverless-architecture-aws-lambda-cold-start/)|$ がどれだけ $0$ に近づき得るかの限界を計算可能な形で提示しました。
 
 $$ |\Lambda| > C > 0 $$
 

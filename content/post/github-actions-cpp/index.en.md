@@ -9,7 +9,7 @@ categories: ["programming", "devops"]
 tags: ['GitHub Actions', 'CI/CD', 'C++', 'CMake']
 ---
 
-# Building a CI/CD Pipeline for C++ Projects Using GitHub Actions: A Complete Guide
+# Building a [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) for C++ Projects Using [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/): A Complete Guide
 
 In the modern software development paradigm, Continuous Integration (CI) and Continuous Delivery/Deployment (CD) are essential elements for maintaining agile development processes and high-quality software. While there are numerous programming languages, building a CI/CD pipeline in C++ involves unique difficulties and complexities compared to other languages (such as Python, JavaScript, Go, etc.).
 
@@ -17,7 +17,7 @@ In this article, we will explain in extreme detail how to build a robust and pra
 
 ## 1. The Significance of CI/CD in C++ Projects and Its Specific Challenges
 
-For development involving web applications and scripting languages, testing and building on a single Docker container is often sufficient. However, C++ is a natively compiled language and heavily depends on the hardware architecture and operating system of the execution environment.
+For development involving web applications and scripting languages, testing and building on a single [Docker](https://kenji.blog/en/p/docker-container-namespace-[cgroups](https://kenji.blog/en/p/docker-container-namespace-cgroups-layers/)-layers/) container is often sufficient. However, C++ is a natively compiled language and heavily depends on the hardware architecture and operating system of the execution environment.
 
 When introducing CI/CD into a C++ project, the main challenges faced are as follows:
 
@@ -27,9 +27,9 @@ When introducing CI/CD into a C++ project, the main challenges faced are as foll
 4. **Dependency Management**: C++ lacks an absolute standard package manager like npm or pip. You need to correctly resolve libraries in the CI environment every time using tools like vcpkg, Conan, or CMake's `FetchContent`.
 5. **[Memory Management](https://kenji.blog/en/p/memory-management-garbage-collection/) and Undefined Behavior**: Since pointer operations and manual memory management are involved, it is necessary to automate the detection of memory leaks and undefined behaviors, not just test the logic.
 
-To solve these challenges, GitHub Actions is the optimal solution, as it allows you to provision various OS virtual machines on-demand and define complex workflows as code (Configuration as Code).
+To solve these challenges, [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) is the optimal solution, as it allows you to provision various OS virtual machines on-demand and define complex workflows as code (Configuration as Code).
 
-## 2. CI/CD Pipeline Architecture Overview
+## 2. [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) [Pipeline](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) Architecture Overview
 
 Let's visualize the overall picture of the CI/CD pipeline we are about to build. The following Mermaid sequence diagram shows the workflow from code push to release.
 
@@ -142,7 +142,7 @@ include(CPack)
 - **Stricter warnings (`-Werror` / `/WX`)**: Treating compiler warnings as errors in the CI environment forces a high level of code quality.
 - **GNUInstallDirs**: Automatically resolves standard installation paths for each OS (such as `/usr/local/bin` and `C:\Program Files`).
 
-## 4. GitHub Actions Basics and Matrix Strategy
+## 4. [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) Basics and Matrix Strategy
 
 GitHub Actions are configured using YAML files in the `.github/workflows/` directory.
 The most powerful feature for C++ projects is the "Matrix Strategy". This allows you to dynamically generate combinations of operating systems and compilers and run them in parallel.
@@ -189,7 +189,7 @@ jobs:
 
 ## 5. Build Costs and Parallel Processing Optimization Using Amdahl's Law
 
-CI/CD in a cloud environment is a race against time, and build times directly translate to developer wait times and running costs.
+[CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) in a cloud environment is a race against time, and build times directly translate to developer wait times and running costs.
 Here, let's take a mathematical approach to build time optimization using "Amdahl's Law" from computer science.
 
 Amdahl's law defines the theoretical maximum speedup $S(N)$ when using $N$ processors, given the proportion of a program that can be parallelized as $P$, as follows:
@@ -199,7 +199,7 @@ $$ S(N) = \frac{1}{(1 - P) + \frac{P}{N}} $$
 In the C++ build process, compiling each translation unit (`.cpp` file) of the source code is completely independent and can be parallelized. On the other hand, CMake configuration and the final binary linking phase are fundamentally executed serially (cannot be parallelized).
 
 Suppose that out of the total build time of a project, 80% is the compilation phase ($P = 0.8$) and 20% is the serial phase ($1 - P = 0.2$).
-The standard GitHub Actions runner (Linux) provides 2 cores (threads). Therefore, when $N = 2$:
+The standard [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) runner (Linux) provides 2 cores (threads). Therefore, when $N = 2$:
 
 $$ S(2) = \frac{1}{0.2 + \frac{0.8}{2}} = \frac{1}{0.2 + 0.4} = \frac{1}{0.6} \approx 1.67 $$
 
@@ -210,7 +210,7 @@ Using just 2 cores yields a speedup of about 1.67 times. To achieve this, it is 
       run: cmake --build build --config Release --parallel 2
 ```
 
-Furthermore, let's consider cost calculations. The total usage cost $C_{total}$ of GitHub Actions is the sum of the products of each job's execution time $T_i$ and the runner's unit price $R_i$.
+Furthermore, let's consider cost calculations. The total usage cost $C_{total}$ of [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) is the sum of the products of each job's execution time $T_i$ and the runner's unit price $R_i$.
 
 $$ C_{total} = \sum_{i=1}^{M} \left( T_i \times R_i \right) $$
 
@@ -266,7 +266,7 @@ if(ENABLE_COVERAGE AND CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
 endif()
 ```
 
-Define an independent job for coverage measurement in GitHub Actions.
+Define an independent job for coverage measurement in [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/).
 
 ```yaml
   coverage:
@@ -302,7 +302,7 @@ The `lcov --remove` command is used to exclude system headers, third-party libra
 
 ## 8. [Automate](https://kenji.blog/en/p/automata-formal-language-theory/)d Binary Delivery (CD) via GitHub Releases
 
-We will now build the "CD" part of CI/CD. When a developer adds and pushes a version tag in Git (e.g., `v1.2.0`), it will automatically compile the executable binaries for each OS, package them into ZIPs or Tarballs, and upload them to GitHub Releases.
+We will now build the "CD" part of [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/). When a developer adds and pushes a version tag in Git (e.g., `v1.2.0`), it will automatically compile the executable binaries for each OS, package them into ZIPs or Tarballs, and upload them to GitHub Releases.
 
 In this step, we will use `CPack`, a packaging tool bundled with CMake.
 
@@ -327,7 +327,7 @@ In this step, we will use `CPack`, a packaging tool bundled with CMake.
 
 With this configuration, simply running `git tag v1.0.0` and `git push origin v1.0.0` will automatically publish ZIP files for Windows users and Tarballs for Linux/macOS users to the release page without manual intervention. This is an extremely powerful feature for delivering software to users.
 
-## 9. Complete Workflow YAML File
+## 9. Complete [Workflow](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) YAML File
 
 Below is the complete code for a robust and practical `.github/workflows/main.yml`, integrating all the elements discussed so far.
 
@@ -441,17 +441,17 @@ jobs:
         fail_ci_if_error: false
 ```
 
-## 10. Towards More Advanced CI/CD (Static Analysis and Formatting)
+## 10. Towards More Advanced [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) (Static Analysis and Formatting)
 
 Although detailed explanations are omitted here, in practical operations, it is recommended to incorporate further quality assurance tools into the pipeline.
 
 1. **Enforcing Clang-Format**: To reduce the burden of code review, integrate code style checks using `clang-format` into CI, failing the pipeline if formatting rules are violated.
 2. **Static Analysis (Clang-Tidy)**: To detect potential bugs and inefficient code (such as unnecessary copies) that compiler warnings alone cannot prevent, integrate `clang-tidy` into CMake and run it on CI.
-3. **Leveraging vcpkg / Conan Caches**: If you use many third-party libraries, building dependencies takes a significant amount of time. By utilizing GitHub Actions' `actions/cache` to retain vcpkg installed directories or Conan caches, you can drastically reduce build times.
+3. **Leveraging vcpkg / Conan Caches**: If you use many third-party libraries, building dependencies takes a significant amount of time. By utilizing [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/)' `actions/cache` to retain vcpkg installed directories or Conan caches, you can drastically reduce build times.
 
 ## Conclusion
 
-Building a CI/CD pipeline for a C++ project might seem like a high hurdle at first glance due to platform dependencies and the complexity of build tools. However, by correctly combining the ecosystems of GitHub Actions, Modern CMake, and CTest/CPack, you can achieve an extremely powerful and automated development flow.
+Building a [CI/CD](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/) pipeline for a C++ project might seem like a high hurdle at first glance due to platform dependencies and the complexity of build tools. However, by correctly combining the ecosystems of [GitHub Actions](https://kenji.blog/en/p/cicd-pipeline-github-actions-best-practices/), Modern CMake, and CTest/CPack, you can achieve an extremely powerful and automated development flow.
 
 The cross-platform verification using a matrix strategy, runtime bug detection with sanitizers, coverage measurement, and automated deployment to GitHub Releases explained in this article are best practices widely adopted even in commercial-grade open-source projects.
 

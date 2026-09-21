@@ -413,7 +413,7 @@ This axiomatic system is constructed on the stage of complex linear algebra, ext
 
 In this chapter, we will strictly formulate the processes ranging from the description of quantum states and time evolution to "observation," which has sparked the most philosophical debates, without any compromise. Readers will realize how seemingly counter-intuitive quantum phenomena are built upon a consistent and beautiful mathematical structure. This very mathematical structure serves as the direct "language" that describes quantum computer algorithms.
 
-## 3.2 The First Axiom: State Space ([Hilbert](https://kenji.blog/en/p/hilbert/) Space and State Vectors)
+## 3.2 The First Axiom: [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Space ([Hilbert](https://kenji.blog/en/p/hilbert/) Space and [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Vectors)
 
 The first axiom in quantum mechanics determines how the "state" of a physical system is represented mathematically.
 
@@ -535,7 +535,7 @@ $$
 \langle A \rangle = \sum_i a_i p(a_i) = \sum_i a_i \langle \psi | P_i | \psi \rangle = \langle \psi | \left( \sum_i a_i P_i \right) | \psi \rangle = \langle \psi | A | \psi \rangle
 $$
 
-## 3.6 Wavefunction Collapse (State Reduction) and Decoherence via Observation
+## 3.6 Wavefunction Collapse ([State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Reduction) and Decoherence via Observation
 
 The axiom of observation contains a crucial step that has sparked the most debate: what happens to the state of the system "after" the observation. This is the phenomenon known as "Wavefunction collapse" or "State reduction". This process, known as von Neumann's Projection postulate, is formulated as follows:
 
@@ -834,7 +834,7 @@ $$
 
 This theorem physically guarantees that as long as rotations about the Z-axis and Y-axis can be implemented with high fidelity at the hardware level, any arbitrary complex algorithm on a single qubit can be executed.
 
-## 4.6 Diagrammatic Illustration: Single-Qubit Gate Circuits and State Transitions
+## 4.6 Diagrammatic Illustration: Single-Qubit Gate Circuits and [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Transitions
 
 Arranging these gates in chronological order forms a quantum circuit. The state evolves in time from left to right.
 
@@ -1122,7 +1122,7 @@ $$
 H = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}
 $$
 
-### Step-by-Step State Evolution Calculation
+### Step-by-Step [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Evolution Calculation
 
  **Step 1:** Initialization
 The system starts in the initial state of the computational basis:
@@ -1345,7 +1345,7 @@ From the no-cloning theorem, we learned that quantum states cannot be copied. Ho
 
 It should be noted here that the physical particle itself does not move through space; rather, the "state (information)" is transferred. Since the state residing in the original particle is destroyed, this does not violate the No-Cloning theorem.
 
-### Protocol Setup and Initial State
+### Protocol Setup and Initial [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)
 
 Let the sender be Alice and the receiver be Bob.
 Alice holds an unknown single-qubit state **$|\psi\rangle$** that she wants to send to Bob.
@@ -1660,7 +1660,7 @@ graph LR
     q1["|1⟩ (1 qubit)"] --> H_anc["H"] --> Uf --> Discard["Discard"]
 ```
 
-### Step 1: Preparation of the Initial State
+### Step 1: Preparation of the Initial [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)
 
 We initialize the $n$ qubits of the input register to $|0\rangle^{\otimes n}$ and the 1 qubit of the target register to $|1\rangle$:
 
@@ -1939,7 +1939,7 @@ This formula is highly suggestive. It indicates that the state of the $m$-th qub
 
 ## 8.4 Quantum Circuit for Period Finding Using Superposition
 
-Now that the theoretical preparations are complete, let's follow the entire quantum circuit of Shor's algorithm and the time evolution (State Evolution) of the quantum state at each step. The algorithm uses two quantum registers.
+Now that the theoretical preparations are complete, let's follow the entire quantum circuit of Shor's algorithm and the time evolution ([State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Evolution) of the quantum state at each step. The algorithm uses two quantum registers.
 The first register consists of $t \approx 2 \log_2 N$ qubits, and the dimension of the state space is $M = 2^t$ (we choose $t$ to satisfy the condition $M \ge N^2$). The second register has $L \approx \log_2 N$ qubits and stores the computation result.
 
 ```mermaid
@@ -2063,7 +2063,7 @@ However, **Grover's algorithm** , discovered in 1996 by Bell Labs physicist Lov 
 
 In this chapter, we will unpack the profound mechanism of **"amplitude amplification"** , which lies at the core of Grover's algorithm, in rigorous detail from both an intuitive geometric perspective and an uncompromising, exact linear-algebraic framework, offering deep insights even for experts.
 
-## 9.1 Problem Formulation and Preparation of the Initial Superposition State
+## 9.1 Problem Formulation and Preparation of the Initial Superposition [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)
 
 First, let us formulate the search problem to be solved with mathematical rigor. Suppose we have an unstructured database of size $N = 2^n$, where each element is encoded as a computational basis state $|x\rangle$ represented by $n$ qubits (where $x \in \{0, 1\}^n$, i.e., $x = 0, 1, \dots, N-1$). We assume that within this vast database space, there exists exactly one specific state that we wish to find (the target or "correct" state), denoted by $|w\rangle$.
 
@@ -2552,7 +2552,7 @@ For instance, a CNOT gate used for syndrome extraction propagates an $X$ error o
 The design philosophy developed to prevent this catastrophic cascade is "Fault-Tolerant Quantum Computation (FTQC)." The imperative condition of FTQC is: "A single physical error occurring within the system must propagate to at most one error within a single logical error block."
 To achieve this, the execution of logical gates strictly demands "Transversal Operations." These are safe gate operations where the $i$-th physical qubit interacts only with the $i$-th physical qubit of another block (possessing no cross-couplings within the block). However, by the "Eastin-Knill Theorem," it is mathematically proven that it is impossible to construct a universal quantum computing continuous gate set using transversal operations alone.
 
-The magic wand that circumvents the constraints of this theorem to realize universal FTQC is "Magic State Distillation." By preparing a large number of noisy non-Clifford states (e.g., states corresponding to the $T$ gate) and passing them through an error-detecting circuit that uses only transversal Clifford operations, extraordinarily pure "magic states" are extracted. Then, using the principle of quantum teleportation, non-Clifford gates (such as the $T$ gate) are applied indirectly to the logical state. Because this distillation process consumes vast resources (physical qubits), in the era of FTQC algorithms, "how to reduce the number of $T$ gates" becomes a paramount objective.
+The magic wand that circumvents the constraints of this theorem to realize universal FTQC is "Magic [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) Distillation." By preparing a large number of noisy non-Clifford states (e.g., states corresponding to the $T$ gate) and passing them through an error-detecting circuit that uses only transversal Clifford operations, extraordinarily pure "magic states" are extracted. Then, using the principle of quantum teleportation, non-Clifford gates (such as the $T$ gate) are applied indirectly to the logical state. Because this distillation process consumes vast resources (physical qubits), in the era of FTQC algorithms, "how to reduce the number of $T$ gates" becomes a paramount objective.
 
 The culmination of all these theoretical efforts is the "Quantum Threshold Theorem."
 Proved by Dorit Aharonov, Michael Ben-Or, and others, this theorem resoundingly proclaims:
@@ -2727,7 +2727,7 @@ In 2001, Knill, Laflamme, and Milburn proposed the "KLM protocol," proving that 
 In recent years, not only discrete variables based on single photons but also Continuous Variable (CV) quantum computing schemes utilizing the optical quadrature amplitudes of light have shown explosive progress.
 By using time-domain multiplexing techniques and squeezed light, a massive "cluster state" consisting of tens of thousands to millions of entangled photon pulses is generated. Utilizing this state as a resource and proceeding with calculations by sequentially performing appropriate measurements on each node, the "Measurement-based quantum computation (MBQC)" architecture is becoming the mainstream in photonic quantum computers.
 
-## 11.5 The Current State of the NISQ Era and the Steps Toward Logical Qubits
+## 11.5 The Current [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) of the NISQ Era and the Steps Toward Logical Qubits
 
 As indicated by the concept of **NISQ (Noisy Intermediate-Scale Quantum)** advocated by John Preskill, the quantum hardware currently in humanity's hands is "intermediate-scale" with tens to hundreds of physical qubits, but it is still dominated by noise, and the accumulation of errors cannot be avoided.
 

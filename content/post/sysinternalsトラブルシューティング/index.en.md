@@ -60,7 +60,7 @@ If a suspicious `svchost.exe` is found, double-click the process, check the **St
 ### 2.3 Analyzing Hardware Interrupts and 100% CPU Spikes
 If the entire system freezes for a few seconds or audio stutters, checking the Task Manager might show "System Interrupts" consuming the CPU.
 
-In Windows scheduling, hardware interrupts (ISR: Interrupt Service Routine) and DPCs (Deferred Procedure Call) execute at a higher priority (IRQL: Interrupt Request Level) than normal user threads. In other words, if a faulty driver prolongs a DPC, the CPU cannot execute any other tasks on that core.
+In Windows scheduling, hardware interrupts (ISR: Interrupt [Service](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/) Routine) and DPCs (Deferred Procedure Call) execute at a higher priority (IRQL: Interrupt Request Level) than normal user threads. In other words, if a faulty driver prolongs a DPC, the CPU cannot execute any other tasks on that core.
 
 If the CPU usage of `Interrupts` or `DPCs` at the top of the ProcExp process list is high, use it in conjunction with the Windows Performance Analyzer (WPA) to identify the driver (`.sys`) causing it. CPU time calculation can be formulated as follows:
 
@@ -141,7 +141,7 @@ flowchart LR
 ### 4.1 Important Tabs to Check and Advanced Features
 *   **Logon**: Standard Run/RunOnce keys and the Startup folder.
 *   **Scheduled Tasks**: Windows Task Scheduler. Malware often creates fake tasks disguised as "Adobe Update" or "Google Update."
-*   **Services / Drivers**: Drivers that start in kernel mode. Here, you can disable the suspicious `.sys` files causing the 100% CPU spikes mentioned earlier.
+*   **[Service](https://kenji.blog/en/p/kubernetes-k8s-architecture-pod-service-ingress/)s / Drivers**: Drivers that start in kernel mode. Here, you can disable the suspicious `.sys` files causing the 100% CPU spikes mentioned earlier.
 *   **WMI**: Persistence locations for Fileless Malware utilizing WMI (Windows Management Instrumentation) event filters and consumers. These are very often overlooked.
 *   **AppInit_DLLs / KnownDLLs**: A list of DLLs forcibly injected every time an application launches. It becomes a hotbed for hooks via DLL injection.
 

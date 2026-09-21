@@ -15,7 +15,7 @@ tags:
   - redux
 ---
 
-En el desarrollo frontend web, el área que ha sido el mayor centro de debate y que ha evolucionado continuamente es la "gestión de estado (State Management)". Las aplicaciones web modernas han pasado de ser simples visualizaciones de documentos a convertirse en software con interacciones complejas comparables a las aplicaciones de escritorio. Como resultado, cómo gestionar el estado de una aplicación y sincronizarlo con la interfaz de usuario (UI) se ha convertido en el mayor desafío que enfrentan todos los ingenieros frontend.
+En el desarrollo frontend web, el área que ha sido el mayor centro de debate y que ha evolucionado continuamente es la "gestión de estado ([State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) Management)". Las aplicaciones web modernas han pasado de ser simples visualizaciones de documentos a convertirse en software con interacciones complejas comparables a las aplicaciones de escritorio. Como resultado, cómo gestionar el estado de una aplicación y sincronizarlo con la interfaz de usuario (UI) se ha convertido en el mayor desafío que enfrentan todos los ingenieros frontend.
 
 En este artículo, repasaremos la historia de la gestión de estado en el frontend, los desafíos y soluciones de cada era, y profundizaremos de manera detallada en los cambios de paradigma hacia el futuro (especialmente la evolución de Signals y la reactividad).
 
@@ -140,7 +140,7 @@ Redux se basa en tres principios estrictos:
 
 1.  **Single source of truth (Única fuente de la verdad)**:
     El estado completo de la aplicación se mantiene en un árbol de objetos dentro de un único Store (tienda).
-2.  **State is read-only (El estado es de solo lectura)**:
+2.  **[State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) is read-only (El estado es de solo lectura)**:
     La única forma de cambiar el estado es emitir (Dispatch) un objeto Action que indique lo que sucedió.
 3.  **Changes are made with pure functions (Los cambios se realizan mediante funciones puras)**:
     Para especificar cómo se transforma el estado por la Action, se escriben funciones puras llamadas Reducers (reductores).
@@ -237,7 +237,7 @@ Para prevenir esto, es necesario dividir finamente el Context por funcionalidad,
 
 Dado que React adopta por defecto un modelo de renderizado "de arriba hacia abajo (top-down)", quedó en evidencia el problema fundamental de que los cambios de estado global tienden a desencadenar re-renderizados innecesarios en todo el árbol de componentes.
 
-## 7. Separación del estado: Server State y Client State
+## 7. Separación del estado: Server [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) y Client State
 
 A partir de este período, ocurrió un importante cambio de paradigma en la gestión de estado. Fue el descubrimiento de que "no se debe poner todos los estados en un único almacén (store) global".
 En particular, los datos obtenidos de un servidor (Server State) son fundamentalmente diferentes en naturaleza del estado de la UI (Client State), que se completa únicamente dentro del frontend.
@@ -267,7 +267,7 @@ function UserProfile({ userId }) {
 Estas bibliotecas abstrajeron procesos complejos como "almacenar en caché el estado del servidor localmente y sincronizarlo cuando sea necesario".
 Como resultado, los datos que se deben gestionar en un almacén (store) global como Redux se redujeron drásticamente solo al "estado del cliente puro", aligerando significativamente la carga de la gestión de estado.
 
-## 8. Gestión del estado atómico (Atomic State Management): Recoil y Jotai
+## 8. Gestión del estado atómico (Atomic [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/) Management): Recoil y Jotai
 
 Después de aislar el Server State, comenzó una nueva competencia sobre cómo gestionar el Client State restante de manera eficiente.
 Para resolver el modelo de renderizado de React (top-down) y los problemas de rendimiento de la Context API, surgió un enfoque llamado **Gestión del estado atómico (Atomic State Management)**.
@@ -444,7 +444,7 @@ El estado renderizado en el servidor es serializado e integrado en el HTML, y el
 
 ## 13. Conclusión: ¿Hacia dónde se dirige la gestión de estado?
 
-Empezando con la confusión del modelo MVC, logrando un estado predecible gracias a Flux/Redux, su simplificación a través de los Hooks, la separación del Server State, la eficiencia de los Atomic y Proxy, y terminando con Signals, y su reactividad de grano fino.
+Empezando con la confusión del modelo MVC, logrando un estado predecible gracias a Flux/Redux, su simplificación a través de los Hooks, la separación del Server [State](https://kenji.blog/es/p/iac-infrastructure-as-code-terraform/), la eficiencia de los Atomic y Proxy, y terminando con Signals, y su reactividad de grano fino.
 
 Al observar estos quince años de historia en la gestión de estado en frontend, se hace evidente una tendencia: **"se evoluciona en la dirección de reducir el código repetitivo y la carga cognitiva de los desarrolladores, a la vez que el sistema subyacente (frameworks o compiladores) optimiza automáticamente el rendimiento"**.
 

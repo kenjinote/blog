@@ -13,9 +13,9 @@ tags: ["Docker", "Docker Compose", "DevContainers", "IaC"]
 
 Dalam dunia pengembangan perangkat lunak, masalah "Di lingkungan saya berjalan normal (It works on my machine)" yang disebabkan oleh perbedaan lingkungan antar pengembang, telah lama menjadi faktor yang membuang-buang waktu dalam banyak proyek. Perbedaan OS, versi bahasa yang diinstal, dependensi pustaka, konflik dengan alat yang diinstal secara global, dll. membuat lingkungan lokal selalu dihadapkan pada "ketidakpastian status".
 
-Hal yang dapat menyelesaikan masalah ini dari akarnya adalah teknologi kontainer seperti **Docker**, dan paradigma **Infrastructure as Code (IaC)**. Dengan mengontainerisasi lingkungan pengembangan lokal, kita dapat mewujudkan isolasi di tingkat OS, serta memungkinkan sistem kontrol versi pada lingkungan itu sendiri bersama dengan basis kode.
+Hal yang dapat menyelesaikan masalah ini dari akarnya adalah teknologi kontainer seperti **[Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)**, dan paradigma **[Infrastructure as Code](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) ([IaC](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/))**. Dengan mengontainerisasi lingkungan pengembangan lokal, kita dapat mewujudkan isolasi di tingkat OS, serta memungkinkan sistem kontrol versi pada lingkungan itu sendiri bersama dengan basis kode.
 
-Dalam artikel ini, kita akan membahas secara mendalam, lengkap dengan perspektif matematis dan mekanisme teknis yang mendasarinya, mengenai langkah-langkah membangun **"lingkungan pengembangan lokal yang dapat direproduksi, sehingga siapa pun, kapan pun, dan di mesin mana pun ketika dihidupkan, akan menghasilkan kondisi yang persis sama"**, dengan memanfaatkan Docker, Docker Compose, dan VSCode DevContainers.
+Dalam artikel ini, kita akan membahas secara mendalam, lengkap dengan perspektif matematis dan mekanisme teknis yang mendasarinya, mengenai langkah-langkah membangun **"lingkungan pengembangan lokal yang dapat direproduksi, sehingga siapa pun, kapan pun, dan di mesin mana pun ketika dihidupkan, akan menghasilkan kondisi yang persis sama"**, dengan memanfaatkan Docker, Docker Compose, dan VSCode Dev[Container](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)s.
 
 ---
 
@@ -35,9 +35,9 @@ Mempraktikkan IaC dalam lingkungan pengembangan lokal berarti mengodekan "bentuk
 
 Berbeda dengan virtualisasi tipe hypervisor seperti Mesin Virtual (VM), teknologi kontainer adalah teknologi virtualisasi ringan yang mengisolasi proses sambil berbagi kernel OS host. Untuk mewujudkan hal ini, fungsi-fungsi kernel Linux berikut ini banyak digunakan:
 
-- **Namespaces**: Menyediakan tampilan yang independen dari sumber daya sistem (PID, jaringan, titik pemasangan (mount points), pengguna, dll.) untuk setiap proses.
+- **[Namespace](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)s**: Menyediakan tampilan yang independen dari sumber daya sistem (PID, jaringan, titik pemasangan (mount points), pengguna, dll.) untuk setiap proses.
 - **Cgroups (Control Groups)**: Melakukan pembatasan dan alokasi sumber daya fisik yang dapat digunakan oleh proses (CPU, memori, I/O disk, dll.).
-- **UnionFS (Union File System)**: Teknologi yang memungkinkan tumpang tindih secara transparan dari beberapa struktur direktori (lapisan/layer) agar tampak sebagai satu sistem file tunggal. Lapisan citra (image layer) Docker bergantung pada teknologi ini.
+- **UnionFS (Union File System)**: Teknologi yang memungkinkan tumpang tindih secara transparan dari beberapa struktur direktori (lapisan/layer) agar tampak sebagai satu sistem file tunggal. Lapisan citra (image layer) [Docker](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/) bergantung pada teknologi ini.
 
 Mari pertimbangkan model matematika dari pembatasan sumber daya. Misalkan total kapasitas memori mesin host adalah $M_{\text{total}}$, dan batas memori untuk $n$ buah kontainer yang berjalan di host adalah $m_i$. Kondisi yang diperlukan agar sistem dapat berjalan stabil, dengan memperhitungkan basis memori $M_{\text{os}}$ yang dikonsumsi oleh OS host dan proses lainnya, dapat direpresentasikan oleh pertidaksamaan berikut:
 
@@ -49,11 +49,11 @@ Dengan menggunakan Cgroups untuk mendefinisikan $m_i$ secara ketat bagi setiap k
 
 ## 3. Desain Dockerfile yang Efisien: Menguasai Build Multi-tahap (Multi-stage Build)
 
-Langkah pertama menuju lingkungan yang dapat direproduksi adalah mendesain `Dockerfile` yang mendefinisikan lingkungan eksekusi aplikasi. Di sini, dengan mengambil Python (FastAPI) sebagai contoh, kita akan membahas praktik terbaik untuk Dockerfile yang aman dan ringan dengan memanfaatkan **build multi-tahap**.
+Langkah pertama menuju lingkungan yang dapat direproduksi adalah mendesain `Dockerfile` yang mendefinisikan lingkungan eksekusi aplikasi. Di sini, dengan mengambil Python (FastAPI) sebagai contoh, kita akan membahas praktik terbaik untuk [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)file yang aman dan ringan dengan memanfaatkan **build multi-tahap**.
 
 Build multi-tahap adalah teknik yang memisahkan lingkungan build (lingkungan berat yang mencakup kompiler dan alat pengembangan) dari lingkungan eksekusi (lingkungan ringan yang hanya berisi hasil akhir yang diperlukan) dengan menggunakan beberapa perintah `FROM` di dalam sebuah `Dockerfile` tunggal.
 
-### Dockerfile Praktis untuk Python FastAPI
+### [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)file Praktis untuk Python FastAPI
 
 Kode berikut ini merupakan contoh `Dockerfile` tingkat lanjut yang menggabungkan pengelolaan dependensi menggunakan Poetry dengan build multi-tahap.
 
@@ -127,7 +127,7 @@ Dengan menerapkan build multi-tahap seperti ini, kita dapat mengurangi ukuran ci
 
 ---
 
-## 4. Orkestrasi Berbagai Kontainer Menggunakan Docker Compose
+## 4. Orkestrasi Berbagai Kontainer Menggunakan [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) Compose
 
 Dalam pengembangan aplikasi web modern, arsitektur layanan mikro yang menggabungkan banyak komponen seperti server Web, basis data, dan server cache adalah hal yang umum. Untuk mengelola semua ini secara terpusat di lingkungan lokal, kita menggunakan `docker-compose.yml`.
 
@@ -227,11 +227,11 @@ networks:
 Secara prinsip, kontainer bersifat "stateless (tanpa status)" dan "ephemeral (berumur pendek)". Saat kontainer dihancurkan, data di dalamnya juga akan hilang. Untuk menyimpan data basis data atau cache, kita perlu melakukan mount ke area sistem file mesin host pada kontainer.
 
 - **Bind Mount**: Pada layanan `web` di atas, pengaturan `./src:/app/src:ro` merupakan Bind Mount. Direktori spesifik di host dipetakan secara langsung ke dalam kontainer. Ini digunakan untuk langsung mencerminkan pengeditan kode lokal ke dalam kontainer (hot reload). Praktik terbaik dari perspektif keamanan adalah dengan memberikan opsi `:ro` (Read-Only) sehingga kontainer tidak dapat mengubah kode sumber pada host.
-- **Volume Bernama (Named Volume)**: Contohnya adalah `postgres_data` dan `redis_data`. Ini adalah area yang dikelola secara internal oleh Docker (seperti `/var/lib/docker/volumes/`), memiliki performa I/O yang lebih baik daripada bind mount, dan dapat menyerap perbedaan sistem file di berbagai OS. Untuk memastikan keberlangsungan basis data, pastikan untuk menggunakan opsi ini.
+- **Volume Bernama (Named Volume)**: Contohnya adalah `postgres_data` dan `redis_data`. Ini adalah area yang dikelola secara internal oleh [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) (seperti `/var/lib/docker/volumes/`), memiliki performa I/O yang lebih baik daripada bind mount, dan dapat menyerap perbedaan sistem file di berbagai OS. Untuk memastikan keberlangsungan basis data, pastikan untuk menggunakan opsi ini.
 
-### Jaringan (Networking) dan Penemuan Layanan (Service Discovery)
+### Jaringan (Networking) dan Penemuan Layanan ([Service](https://kenji.blog/id/p/kubernetes-k8s-architecture-pod-service-ingress/) Discovery)
 
-Docker Compose secara default akan membuat jaringan bridge sendiri untuk tiap proyek. Inilah jaringan `app-network` pada contoh di atas.
+[Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) Compose secara default akan membuat jaringan bridge sendiri untuk tiap proyek. Inilah jaringan `app-network` pada contoh di atas.
 Kontainer-kontainer yang berada di jaringan yang sama dapat saling meresolusi nama (resolusi DNS) bukan dengan alamat IP, melainkan dengan nama layanannya (contoh: `db`, `redis`) sebagai nama host.
 Misalnya, dari kontainer Web, kita bisa mengakses basis data menggunakan URL `postgresql://postgres:password@db:5432/mydb`. Hal ini memungkinkan pergantian tujuan koneksi secara transparan dengan menggunakan variabel lingkungan, baik di lingkungan lokal maupun lingkungan produksi, tanpa perlu mengubah kode infrastruktur.
 
@@ -255,13 +255,13 @@ POSTGRES_DB=devdb
 API_SECRET_KEY=dev_secret_key_12345
 ```
 
-Docker Compose secara default akan membaca file `.env` yang berada di direktori eksekusi dan mengekspansi *placeholder* `${VAR_NAME}` di dalam file YAML. Pendekatan ini memungkinkan pengelolaan yang aman dari nilai-nilai konfigurasi yang berbeda untuk berbagai lingkungan, seperti lokal, staging, dan lingkungan produksi, tanpa perlu memodifikasi kode infrastruktur.
+[Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) Compose secara default akan membaca file `.env` yang berada di direktori eksekusi dan mengekspansi *placeholder* `${VAR_NAME}` di dalam file YAML. Pendekatan ini memungkinkan pengelolaan yang aman dari nilai-nilai konfigurasi yang berbeda untuk berbagai lingkungan, seperti lokal, staging, dan lingkungan produksi, tanpa perlu memodifikasi kode infrastruktur.
 
 ---
 
-## 6. Pengalaman Pengembangan Terbaik melalui VSCode DevContainers
+## 6. Pengalaman Pengembangan Terbaik melalui VSCode Dev[Container](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)s
 
-Sampai di sini, kita telah sukses membangun ekosistem backend yang kokoh memakai Docker. Meski begitu, masih ada langkah ekstra yang bisa dilakukan. Dengan memanfaatkan fitur **VSCode DevContainers (Remote - Containers)**, kita dapat menjalankan bagian backend dari editor (VSCode) secara langsung dari dalam kontainer.
+Sampai di sini, kita telah sukses membangun ekosistem backend yang kokoh memakai [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/). Meski begitu, masih ada langkah ekstra yang bisa dilakukan. Dengan memanfaatkan fitur **VSCode DevContainers (Remote - Containers)**, kita dapat menjalankan bagian backend dari editor (VSCode) secara langsung dari dalam kontainer.
 
 Melalui hal ini, kita bahkan tidak perlu menginstal Python maupun Node.js ke mesin lokal. Seluruh komponen, mulai dari Linter (flake8/eslint), formatters (black/prettier), hingga ekstensi IDE, bisa didefinisikan ke dalam basis kode (codebase) dan dibagikan ke seluruh tim.
 
@@ -297,7 +297,7 @@ Buatlah direktori bernama `.devcontainer` di akar proyek, lalu letakkan file kon
 }
 ```
 
-Dengan menyertakan file tersebut di repositori, begitu VSCode dipakai untuk membuka proyek, akan muncul dialog "Reopen in Container". Cukup satu klik, seluruh kontainer yang diperlukan bakal aktif, ekstensi akan dipasang, dan kita siap memulai kegiatan koding secara instan. Ini benar-benar mirip sebuah sihir.
+Dengan menyertakan file tersebut di repositori, begitu VSCode dipakai untuk membuka proyek, akan muncul dialog "Reopen in [Container](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)". Cukup satu klik, seluruh kontainer yang diperlukan bakal aktif, ekstensi akan dipasang, dan kita siap memulai kegiatan koding secara instan. Ini benar-benar mirip sebuah sihir.
 
 ---
 
@@ -356,14 +356,14 @@ Dengan begitu, nilai harapan untuk waktu respon rerata bisa dirumuskan menjadi:
 
 $$ T_{\text{total}} = T_{\text{net}} + T_{\text{app}} + T_{\text{cache}} + p_{\text{miss}} \times (T_{\text{db}} + T_{\text{cache\_write}}) $$
 
-Untuk lingkungan pengembangan lokal (di dalam Docker), $T_{\text{net}}$ nilainya akan nyaris 0. Namun, ada aspek yang butuh perhatian serius: **performa I/O saat melakukan Bind Mount**. Pada Docker Desktop versi Windows atau macOS, waktu tunda (overhead) akibat aktivitas berbagi file antara host OS dan mesin virtual (kontainer) berisiko membengkakkan $T_{\text{app}}$ (waktu bacaan kode dll.). Sebagai solusi atas masalah ini, kami sangat merekomendasikan pemakaian DevContainers seperti dibahas di atas agar seluruh kode sumber ditampung pada named volume, atau memosisikan Docker Engine supaya berjalan secara asli pada sistem WSL2 (Windows Subsystem for Linux 2).
+Untuk lingkungan pengembangan lokal (di dalam [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/)), $T_{\text{net}}$ nilainya akan nyaris 0. Namun, ada aspek yang butuh perhatian serius: **performa I/O saat melakukan Bind Mount**. Pada Docker Desktop versi Windows atau macOS, waktu tunda (overhead) akibat aktivitas berbagi file antara host OS dan mesin virtual (kontainer) berisiko membengkakkan $T_{\text{app}}$ (waktu bacaan kode dll.). Sebagai solusi atas masalah ini, kami sangat merekomendasikan pemakaian Dev[Container](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)s seperti dibahas di atas agar seluruh kode sumber ditampung pada named volume, atau memosisikan Docker Engine supaya berjalan secara asli pada sistem WSL2 (Windows Subsystem for Linux 2).
 
 ---
 
 ## 8. Mengoptimalkan Kinerja Build Docker: Strategi Lapisan Cache (Layer Cache)
 
 Saat menulis Dockerfile, durasi penyusunan (build time) bisa berubah secara drastis apabila kita memahami cara kerja sistem "layer cache".
-Untuk tiap baris instruksi yang ada di Dockerfile (contoh: `FROM`, `RUN`, `COPY`), Docker akan membuat sistem file pembanding (lapisan/layer), kemudian mempertahankannya sebagai cache. Ketika dilakukan penyusunan ulang, ia akan memakai kembali layer dari cache yang tiada perubahan.
+Untuk tiap baris instruksi yang ada di Dockerfile (contoh: `FROM`, `RUN`, `COPY`), [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) akan membuat sistem file pembanding (lapisan/layer), kemudian mempertahankannya sebagai cache. Ketika dilakukan penyusunan ulang, ia akan memakai kembali layer dari cache yang tiada perubahan.
 
 Prinsip pentingnya: **"Tuliskan berurutan mulai dari yang paling jarang mengalami perubahan"**.
 
@@ -399,7 +399,7 @@ Berikut daftar masalah dan solusi yang lazim ditemukan sewaktu menjalankan ekosi
    Jika terjadi pesan error layaknya `Bind for 0.0.0.0:8000 failed: port is already allocated`, kemungkinan besar port tersebut sedang dipakai di mesin lokal. Solusi ringkasnya adalah mengganti angka pada port host, dengan menjadikannya `ports: - "8080:8000"`.
 
 2. **Kapasitas disk habis**
-   Pemakaian Docker dalam kurun waktu lama tanpa dirawat bisa membuat berbagai volume dan citra yang tidak penting lagi (Dangling Images/Volumes) kian menumpuk. Disk bahkan bisa termakan sampai belasan GB. Cobalah sering-sering mengeksekusi ini guna menata ulang sistem:
+   Pemakaian [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/) dalam kurun waktu lama tanpa dirawat bisa membuat berbagai volume dan citra yang tidak penting lagi (Dangling Images/Volumes) kian menumpuk. Disk bahkan bisa termakan sampai belasan GB. Cobalah sering-sering mengeksekusi ini guna menata ulang sistem:
    ```bash
    docker system prune -a --volumes
    ```
@@ -411,9 +411,9 @@ Berikut daftar masalah dan solusi yang lazim ditemukan sewaktu menjalankan ekosi
 
 ## 10. Penutup: Peran Penjaminan Keberulangan demi Efisiensi Perkembangan Proyek
 
-Pemaduan Docker, Docker Compose, serta VSCode DevContainers berhasil menciptakan ruang kerja lokal tangguh dan kebal masalah, sebuah metode sempurna yang membuat **"siapa pun yang merilis lingkungan, kondisinya akan tetap sama dengan sebelumnya"**.
+Pemaduan [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/), Docker Compose, serta VSCode Dev[Container](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)s berhasil menciptakan ruang kerja lokal tangguh dan kebal masalah, sebuah metode sempurna yang membuat **"siapa pun yang merilis lingkungan, kondisinya akan tetap sama dengan sebelumnya"**.
 
-Hadirnya pendekatan IaC (Infrastructure as Code) di ekosistem pengembangan tidak melulu demi mempersingkat langkah-langkah pengaturan pada tahap pertama. Konsep ini justru berfungsi sebagai tameng yang menghapus kecemasan terhadap resiko yang menyertai tiap perubahan setup, membuat eksplorasi teknologi baru bertambah gampang, memfasilitasi peralihan secara mulus ke proses CI/CD, dan secara menakjubkan mendongkrak laju sekaligus standar siklus proyek.
+Hadirnya pendekatan [IaC](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/) ([Infrastructure as Code](https://kenji.blog/id/p/iac-infrastructure-as-code-terraform/)) di ekosistem pengembangan tidak melulu demi mempersingkat langkah-langkah pengaturan pada tahap pertama. Konsep ini justru berfungsi sebagai tameng yang menghapus kecemasan terhadap resiko yang menyertai tiap perubahan setup, membuat eksplorasi teknologi baru bertambah gampang, memfasilitasi peralihan secara mulus ke proses [CI/CD](https://kenji.blog/id/p/cicd-pipeline-github-actions-best-practices/), dan secara menakjubkan mendongkrak laju sekaligus standar siklus proyek.
 
 Praktikkan segala panduan mengenai penyederhanaan kapasitas citra dengan build multi-tahap, pengelolaan status via healthcheck, ataupun pemanfaatan cache di Dockerfile yang semuanya sudah terjabarkan di dalam esai ini. Cobalah secepatnya untuk menciptakan pengalaman pengembangan (DX: Developer Experience) bermutu tinggi bagi karya-karyamu.
 

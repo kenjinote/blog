@@ -204,7 +204,7 @@ When you execute `git stash`, Git internally generates two special commit object
 
 ---
 
-## 7. Case Study 4: The Terrifying "Detached HEAD" State
+## 7. Case Study 4: The Terrifying "Detached HEAD" [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/)
 
 **[Situation]**
 I wanted to check the code at a specific point in the past, so I executed `git checkout 9f8a7b6`. Then, `You are in 'detached HEAD' state.` was displayed. I committed as it was, but when I switched branches, the commit disappeared!

@@ -179,7 +179,7 @@ Karena latensi jaringan $L_{network\_rtt}$ dan antrean cloud $L_{queue}$ bernila
 Berikut ini adalah langkah-langkah konkret dan mudah untuk memperkenalkan AI lokal. Pendekatan yang paling praktis dan kuat saat ini adalah dengan menggunakan **Ollama** atau **LM Studio**.
 
 ### 6.1 Instalasi Ollama
-Ollama adalah kerangka kerja ringan untuk menjalankan LLM di lingkungan lokal. Ini mendukung MacOS, Windows, dan Linux, serta memungkinkan Anda mengelola model secara intuitif seperti halnya Docker.
+Ollama adalah kerangka kerja ringan untuk menjalankan LLM di lingkungan lokal. Ini mendukung MacOS, Windows, dan Linux, serta memungkinkan Anda mengelola model secara intuitif seperti halnya [Docker](https://kenji.blog/id/p/docker-container-namespace-[cgroups](https://kenji.blog/id/p/docker-container-namespace-cgroups-layers/)-layers/).
 
 ```bash
 # Untuk MacOS

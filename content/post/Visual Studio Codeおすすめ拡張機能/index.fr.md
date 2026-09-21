@@ -14,7 +14,7 @@ description: 'Présente une liste d''extensions recommandées pour rendre Visual
 | Catégorie | Nom | Fournisseur | Description |
 |----|----|-----|-----|
 | Gestion de Machines Virtuelles et Conteneurs | Remote Devlopment | Microsoft | Prend en charge le développement à distance en se connectant aux conteneurs virtuels/WSL via SSH |
-| Gestion de Machines Virtuelles et Conteneurs | Docker | Microsoft | Prend en charge la gestion des conteneurs Docker |
+| Gestion de Machines Virtuelles et Conteneurs | [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/) | Microsoft | Prend en charge la gestion des conteneurs Docker |
 | Gestion de Code | GitHub Pull Requests | GitHub | Gère les Pull Requests GitHub dans VSCode |
 | Gestion de Code | GitHub Copilot | GitHub | Prend en charge la complétion de code par IA |
 | Gestion de Code | Git Graph | mhutchie | Affiche graphiquement les branches et commits Git |
@@ -24,7 +24,7 @@ description: 'Présente une liste d''extensions recommandées pour rendre Visual
 | Navigateur et Développement Web | Vue Language Features(Volar) | Vue | Prend en charge les fonctionnalités linguistiques de Vue |
 | Navigateur et Développement Web | JavaScript (ES6) code snippets | charalampos karypidis | Fournit des snippets JavaScript |
 | Navigateur et Développement Web | Tailwind CSS IntelliSense | Tailwind Labs | Fournit des snippets Tailwind CSS |
-| Développement Cloud | AWS Toolkit | Amazon Web Services | Prend en charge le développement AWS |
+| Développement Cloud | AWS Toolkit | Amazon Web [Service](https://kenji.blog/fr/p/kubernetes-k8s-architecture-pod-service-ingress/)s | Prend en charge le développement AWS |
 | Développement Cloud | Azure Tools | Microsoft | Prend en charge le développement Azure |
 | Développement Cloud | Google Cloud Tools | Google Cloud | Prend en charge le développement Google Cloud |
 | Base de Données | MySQL | Jun Han | Prend en charge le développement MySQL |

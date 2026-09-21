@@ -250,7 +250,7 @@ C'est une vitesse fulgurante qui dépasse de loin la vitesse de lecture d'un êt
 L'écosystème logiciel permettant d'exécuter ces puissants LLM open source dans un environnement local est également très développé aujourd'hui. Voici trois outils représentatifs.
 
 ### 1. Ollama
-C'est actuellement l'outil le plus simple et le plus populaire. Tout comme Docker, il télécharge et exécute le modèle avec une seule commande. Il est compatible avec Mac, Windows et Linux.
+C'est actuellement l'outil le plus simple et le plus populaire. Tout comme [Docker](https://kenji.blog/fr/p/docker-container-namespace-[cgroups](https://kenji.blog/fr/p/docker-container-namespace-cgroups-layers/)-layers/), il télécharge et exécute le modèle avec une seule commande. Il est compatible avec Mac, Windows et Linux.
 Il vous suffit d'ouvrir le terminal et de taper la commande suivante pour lancer Llama 3.
 
 ```bash

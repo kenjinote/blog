@@ -114,7 +114,7 @@ int main() {
 }
 ```
 
-إذا استخدمنا مؤشر دالة أو تعبير لامبدا (Lambda) كحاذف مخصص، فقد يزداد حجم `unique_ptr`، ولكن استخدام كائن دالي عديم الحالة (Stateless Functor) كما هو موضح أعلاه يحافظ على الحجم ليكون مساويًا للمؤشر الخام بفضل **EBCO (Empty Base Class Optimization)** في C++ أو السمة `[[no_unique_address]]` في C++20 (مما يحافظ على التكلفة الصفرية).
+إذا استخدمنا مؤشر دالة أو تعبير لامبدا ([Lambda](https://kenji.blog/ar/p/serverless-architecture-aws-lambda-cold-start/)) كحاذف مخصص، فقد يزداد حجم `unique_ptr`، ولكن استخدام كائن دالي عديم الحالة (Stateless Functor) كما هو موضح أعلاه يحافظ على الحجم ليكون مساويًا للمؤشر الخام بفضل **EBCO (Empty Base Class Optimization)** في C++ أو السمة `[[no_unique_address]]` في C++20 (مما يحافظ على التكلفة الصفرية).
 
 ## 3. `std::shared_ptr`: الملكية المشتركة وكتلة التحكم
 

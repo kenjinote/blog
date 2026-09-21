@@ -19,7 +19,7 @@ Im Kern der modernen Cloud-Computing- und Blockchain-Technologien gibt es **Kons
 
 ## 1. Konsensbildung und Herausforderungen in verteilten Systemen
 
-In verteilten Systemen treten verschiedene Fehler auf, die auf einem einzelnen Computer nicht möglich sind, wie Netzwerkverzögerungen, Paketverluste, Knotenabstürze oder sogar böswillige Manipulationen. Der Konsensalgorithmus ist ein Mechanismus, um trotz dieser Fehler einen konsistenten Zustand (State) im gesamten System aufrechtzuerhalten.
+In verteilten Systemen treten verschiedene Fehler auf, die auf einem einzelnen Computer nicht möglich sind, wie Netzwerkverzögerungen, Paketverluste, Knotenabstürze oder sogar böswillige Manipulationen. Der Konsensalgorithmus ist ein Mechanismus, um trotz dieser Fehler einen konsistenten Zustand ([State](https://kenji.blog/de/p/iac-infrastructure-as-code-terraform/)) im gesamten System aufrechtzuerhalten.
 
 Die Fehlertoleranz des Systems wird hauptsächlich in die folgenden zwei Kategorien eingeteilt:
 

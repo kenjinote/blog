@@ -269,7 +269,7 @@ stateDiagram-v2
 2.  **Leader Append-Only** : 리더는 자신의 로그 엔트리를 덮어쓰거나 삭제하지 않으며, 추가만을 수행한다.
 3.  **Log Matching** : 두 로그가 같은 인덱스와 Term을 가진 엔트리를 포함하고 있는 경우, 그 이전의 엔트리는 모두 동일하다.
 
-이를 통해 분산 환경에서의 데이터 불일치를 수학적·알고리즘적으로 완전히 배제하고 있습니다. Kubernetes의 백엔드 데이터스토어인 `etcd`도 이 [Raft](https://kenji.blog/ko/p/byzantine-generals-problem-consensus/)를 채택함으로써 클러스터의 엄밀한 상태 관리를 실현하고 있습니다.
+이를 통해 분산 환경에서의 데이터 불일치를 수학적·알고리즘적으로 완전히 배제하고 있습니다. [Kubernetes](https://kenji.blog/ko/p/kubernetes-k8s-architecture-pod-service-ingress/)의 백엔드 데이터스토어인 `etcd`도 이 [Raft](https://kenji.blog/ko/p/byzantine-generals-problem-consensus/)를 채택함으로써 클러스터의 엄밀한 상태 관리를 실현하고 있습니다.
 
 ## 8. 마이크로서비스와 트랜잭션
 

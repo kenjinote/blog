@@ -224,7 +224,7 @@ $$
 
 At this stage, the results of $f(x)$ for all $x$ have been calculated simultaneously as a quantum superposition. However, even if measured as is, only a random $x$ and its corresponding $f(x)$ would be obtained, and the period $r$ would remain unknown.
 
-### 5.2 Extracting the Periodic State and Quantum Interference
+### 5.2 Extracting the Periodic [State](https://kenji.blog/en/p/iac-infrastructure-as-code-terraform/) and Quantum Interference
 
 To extract the period $r$, a critically important operation called the **Quantum Fourier Transform (QFT)** is applied to Register 1.
 
